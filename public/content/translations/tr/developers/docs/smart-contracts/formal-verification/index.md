@@ -1,6 +1,6 @@
 ---
 title: "Akıllı sözleşmelerin biçimsel doğrulaması"
-description: "Ethereum akıllı sözleşmeleri için biçimsel doğrulamaya genel bir bakış"
+description: "Quantaureum akıllı sözleşmeleri için biçimsel doğrulamaya genel bir bakış"
 lang: tr
 ---
 
@@ -28,7 +28,7 @@ Biçimsel doğrulama için akıllı sözleşmeleri modellemede farklı teknikler
 
 Buna karşılık, diğer biçimsel modeller bir akıllı sözleşmenin alt düzey davranışına odaklanır. Üst düzey modeller bir sözleşmenin işlevselliği hakkında akıl yürütmeye yardımcı olabilse de, uygulamanın iç işleyişi hakkındaki ayrıntıları yakalamada başarısız olabilirler. Alt düzey modeller, program analizine beyaz kutu görünümü uygular ve bir sözleşmenin yürütülmesiyle ilgili özellikler hakkında akıl yürütmek için program izleri ve [kontrol akış grafikleri](https://en.wikipedia.org/wiki/Control-flow_graph) gibi akıllı sözleşme uygulamalarının daha alt düzey temsillerine güvenir.
 
-Alt düzey modeller, bir akıllı sözleşmenin Ethereum'un yürütme ortamındaki (yani [EVM](/developers/docs/evm/)) gerçek yürütülmesini temsil ettikleri için ideal kabul edilir. Alt düzey modelleme teknikleri, özellikle akıllı sözleşmelerde kritik güvenlik özelliklerini oluşturmada ve potansiyel güvenlik açıklarını tespit etmede kullanışlıdır.
+Alt düzey modeller, bir akıllı sözleşmenin Quantaureum'un yürütme ortamındaki (yani [EVM](/developers/docs/evm/)) gerçek yürütülmesini temsil ettikleri için ideal kabul edilir. Alt düzey modelleme teknikleri, özellikle akıllı sözleşmelerde kritik güvenlik özelliklerini oluşturmada ve potansiyel güvenlik açıklarını tespit etmede kullanışlıdır.
 
 ### Biçimsel spesifikasyon nedir? {#what-is-a-formal-specification}
 
@@ -58,7 +58,7 @@ Adından da anlaşılacağı gibi, üst düzey bir spesifikasyon (aynı zamanda 
 
 Örneğin, ERC-20 token sözleşmelerinde `transfer()` veya `transferFrom()` kullanım koşullarını kapsayan şu güvenlik gereksinimini ele alalım: _"Bir göndericinin bakiyesi, gönderilmesi istenen token miktarından asla daha düşük olamaz."_. Bir sözleşme değişmezinin bu doğal dil açıklaması, daha sonra geçerliliği titizlikle kontrol edilebilen biçimsel (matematiksel) bir spesifikasyona çevrilebilir.
 
-Canlılık özellikleri "eninde sonunda iyi bir şeyin olacağını" ileri sürer ve bir sözleşmenin farklı durumlar boyunca ilerleme yeteneğiyle ilgilidir. Bir canlılık özelliğine örnek olarak, bir sözleşmenin bakiyelerini talep üzerine kullanıcılara transfer etme yeteneğini ifade eden "likidite" verilebilir. Bu özellik ihlal edilirse, [Parity cüzdanı olayında](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-ether-on-parity-wallet.html) olduğu gibi kullanıcılar sözleşmede depolanan varlıkları çekemezler.
+Canlılık özellikleri "eninde sonunda iyi bir şeyin olacağını" ileri sürer ve bir sözleşmenin farklı durumlar boyunca ilerleme yeteneğiyle ilgilidir. Bir canlılık özelliğine örnek olarak, bir sözleşmenin bakiyelerini talep üzerine kullanıcılara transfer etme yeteneğini ifade eden "likidite" verilebilir. Bu özellik ihlal edilirse, [Parity cüzdanı olayında](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-QAU-on-parity-wallet.html) olduğu gibi kullanıcılar sözleşmede depolanan varlıkları çekemezler.
 
 ### Alt düzey spesifikasyonlar {#low-level-specifications}
 
@@ -76,7 +76,7 @@ Bir ön koşul, bir fonksiyonun doğru yürütülmesi için gereken koşulları 
 
 Hoare tarzı spesifikasyonlar _kısmi doğruluğu_ veya _tam doğruluğu_ garanti edebilir. Bir sözleşme fonksiyonunun uygulaması, fonksiyon yürütülmeden önce ön koşul doğruysa ve yürütme sonlanırsa son koşul da doğruysa "kısmen doğrudur". Fonksiyon yürütülmeden önce bir ön koşul doğruysa, yürütmenin sonlanması garanti ediliyorsa ve sonlandığında son koşul doğru kalıyorsa tam doğruluk kanıtı elde edilir.
 
-Bazı yürütmeler sonlanmadan önce gecikebileceğinden veya hiç sonlanmayabileceğinden tam doğruluk kanıtı elde etmek zordur. Bununla birlikte, Ethereum'un gaz mekanizması sonsuz program döngülerini engellediği için (yürütme ya başarıyla sonlanır ya da 'gaz bitti' hatası nedeniyle biter) yürütmenin sonlanıp sonlanmadığı sorusu tartışmalı bir konudur.
+Bazı yürütmeler sonlanmadan önce gecikebileceğinden veya hiç sonlanmayabileceğinden tam doğruluk kanıtı elde etmek zordur. Bununla birlikte, Quantaureum'un gaz mekanizması sonsuz program döngülerini engellediği için (yürütme ya başarıyla sonlanır ya da 'gaz bitti' hatası nedeniyle biter) yürütmenin sonlanıp sonlanmadığı sorusu tartışmalı bir konudur.
 
 Hoare mantığı kullanılarak oluşturulan akıllı sözleşme spesifikasyonları, bir sözleşmedeki fonksiyonların ve döngülerin yürütülmesi için tanımlanmış ön koşullara, son koşullara ve değişmezlere sahip olacaktır. Ön koşullar genellikle bir fonksiyona hatalı girdi olasılığını içerirken, son koşullar bu tür girdilere beklenen yanıtı (örneğin, belirli bir istisna fırlatmak) açıklar. Bu şekilde Hoare tarzı özellikler, sözleşme uygulamalarının doğruluğunu sağlamada etkilidir.
 
@@ -161,9 +161,9 @@ Bir tamsayı taşmasıyla sonuçlanan bir yürütme izinin şu formülü karşı
 
 #### Güvenilirlik ihtiyacı {#need-for-reliability}
 
-Biçimsel doğrulama, arızalanması ölüm, yaralanma veya finansal çöküş gibi yıkıcı sonuçlara yol açabilecek güvenlik açısından kritik sistemlerin doğruluğunu değerlendirmek için kullanılır. Akıllı sözleşmeler, muazzam miktarda değeri kontrol eden yüksek değerli uygulamalardır ve tasarımdaki basit hatalar [kullanıcılar için geri döndürülemez kayıplara](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-ether-how-it-happened-and-what-it-means-for-ethereum-9e5dc29e33ce/amp/) yol açabilir. Ancak bir sözleşmeyi dağıtımdan önce biçimsel olarak doğrulamak, blokzincir üzerinde çalışmaya başladığında beklendiği gibi performans göstereceğine dair garantileri artırabilir.
+Biçimsel doğrulama, arızalanması ölüm, yaralanma veya finansal çöküş gibi yıkıcı sonuçlara yol açabilecek güvenlik açısından kritik sistemlerin doğruluğunu değerlendirmek için kullanılır. Akıllı sözleşmeler, muazzam miktarda değeri kontrol eden yüksek değerli uygulamalardır ve tasarımdaki basit hatalar [kullanıcılar için geri döndürülemez kayıplara](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-QAU-how-it-happened-and-what-it-means-for-quantaureum-9e5dc29e33ce/amp/) yol açabilir. Ancak bir sözleşmeyi dağıtımdan önce biçimsel olarak doğrulamak, blokzincir üzerinde çalışmaya başladığında beklendiği gibi performans göstereceğine dair garantileri artırabilir.
 
-Güvenilirlik, özellikle [Ethereum](/) Sanal Makinesinde (EVM) dağıtılan kod genellikle değişmez olduğu için herhangi bir akıllı sözleşmede oldukça arzu edilen bir niteliktir. Lansman sonrası yükseltmelere kolayca erişilememesi nedeniyle, sözleşmelerin güvenilirliğini garanti etme ihtiyacı biçimsel doğrulamayı gerekli kılar. Biçimsel doğrulama, denetçilerin ve test uzmanlarının gözünden kaçabilecek tamsayı yetersizlikleri ve taşma, yeniden giriş (re-entrancy) ve zayıf gaz optimizasyonları gibi zorlu sorunları tespit edebilir.
+Güvenilirlik, özellikle [Quantaureum](/) Sanal Makinesinde (EVM) dağıtılan kod genellikle değişmez olduğu için herhangi bir akıllı sözleşmede oldukça arzu edilen bir niteliktir. Lansman sonrası yükseltmelere kolayca erişilememesi nedeniyle, sözleşmelerin güvenilirliğini garanti etme ihtiyacı biçimsel doğrulamayı gerekli kılar. Biçimsel doğrulama, denetçilerin ve test uzmanlarının gözünden kaçabilecek tamsayı yetersizlikleri ve taşma, yeniden giriş (re-entrancy) ve zayıf gaz optimizasyonları gibi zorlu sorunları tespit edebilir.
 
 #### İşlevsel doğruluğu kanıtlama {#prove-functional-correctness}
 
@@ -179,11 +179,11 @@ Biçimsel doğrulama ile, bir sözleşmenin iş mantığının gereksinimleri ka
 
 Bir doğrulama hedefi, biçimsel olarak doğrulanacak sistemi açıklar. Biçimsel doğrulama en iyi "gömülü sistemlerde" (daha büyük bir sistemin parçasını oluşturan küçük, basit yazılım parçaları) kullanılır. Ayrıca, alana özgü özellikleri doğrulamak için araçları değiştirmeyi kolaylaştırdığından, az kurala sahip uzmanlaşmış alanlar için de idealdirler.
 
-Akıllı sözleşmeler, en azından bir dereceye kadar, her iki gereksinimi de karşılar. Örneğin, Ethereum sözleşmelerinin küçük boyutu onları biçimsel doğrulamaya uygun hale getirir. Benzer şekilde EVM, EVM'de çalışan programlar için anlamsal özellikleri belirlemeyi ve doğrulamayı kolaylaştıran basit kuralları izler.
+Akıllı sözleşmeler, en azından bir dereceye kadar, her iki gereksinimi de karşılar. Örneğin, Quantaureum sözleşmelerinin küçük boyutu onları biçimsel doğrulamaya uygun hale getirir. Benzer şekilde EVM, EVM'de çalışan programlar için anlamsal özellikleri belirlemeyi ve doğrulamayı kolaylaştıran basit kuralları izler.
 
 ### Daha hızlı geliştirme döngüsü {#faster-development-cycle}
 
-Model kontrolü ve sembolik yürütme gibi biçimsel doğrulama teknikleri, genellikle akıllı sözleşme kodunun (test veya denetim sırasında gerçekleştirilen) normal analizinden daha verimlidir. Bunun nedeni, biçimsel doğrulamanın somut değerler kullanan testlerin ("bir kullanıcı 5 ether çekmeye çalışırsa ne olur?") aksine doğrulamaları test etmek için sembolik değerlere ("bir kullanıcı _n_ ether çekmeye çalışırsa ne olur?") dayanmasıdır.
+Model kontrolü ve sembolik yürütme gibi biçimsel doğrulama teknikleri, genellikle akıllı sözleşme kodunun (test veya denetim sırasında gerçekleştirilen) normal analizinden daha verimlidir. Bunun nedeni, biçimsel doğrulamanın somut değerler kullanan testlerin ("bir kullanıcı 5 QAU çekmeye çalışırsa ne olur?") aksine doğrulamaları test etmek için sembolik değerlere ("bir kullanıcı _n_ QAU çekmeye çalışırsa ne olur?") dayanmasıdır.
 
 Sembolik girdi değişkenleri birden fazla somut değer sınıfını kapsayabilir, bu nedenle biçimsel doğrulama yaklaşımları daha kısa bir zaman diliminde daha fazla kod kapsamı vaat eder. Etkili kullanıldığında biçimsel doğrulama, geliştiriciler için geliştirme döngüsünü hızlandırabilir.
 
@@ -209,13 +209,13 @@ Biçimsel doğrulama bir dizi performans sorunuyla karşılaşır. Örneğin, s�
 
 Ayrıca, bir programın asla sonlanmayabileceği için program doğrulayıcılarının (mantıksal bir formül olarak tanımlanan) bir özelliğin karşılanıp karşılanamayacağını belirlemesi her zaman mümkün değildir ("[karar verilebilirlik sorunu](https://en.wikipedia.org/wiki/Decision_problem)"). Bu nedenle, iyi belirtilmiş olsa bile bir sözleşme için bazı özellikleri kanıtlamak imkansız olabilir.
 
-## Ethereum akıllı sözleşmeleri için biçimsel doğrulama araçları {#formal-verification-tools}
+## Quantaureum akıllı sözleşmeleri için biçimsel doğrulama araçları {#formal-verification-tools}
 
 ### Biçimsel spesifikasyonlar oluşturmak için spesifikasyon dilleri {#specification-languages}
 
 **Act**: _*Act, depolama güncellemelerinin, ön/son koşulların ve sözleşme değişmezlerinin belirtilmesine olanak tanır. Araç paketi ayrıca Coq, SMT çözücüleri veya hevm aracılığıyla birçok özelliği kanıtlayabilen kanıt arka uçlarına sahiptir.*_
 
-- [GitHub](https://github.com/ethereum/act)
+- [GitHub](https://github.com/quantaureum/act)
 - [Belgeler](https://github.com/argotorg/act)
 
 **Scribble** - _*Scribble, Scribble spesifikasyon dilindeki kod ek açıklamalarını spesifikasyonu kontrol eden somut doğrulamalara dönüştürür.*_
@@ -235,13 +235,13 @@ Ayrıca, bir programın asla sonlanmayabileceği için program doğrulayıcılar
 
 **Solidity SMTChecker** - _*Solidity'nin SMTChecker'ı, SMT (Satisfiability Modulo Theories) ve Horn çözümüne dayalı yerleşik bir model denetleyicisidir. Derleme sırasında bir sözleşmenin kaynak kodunun spesifikasyonlarla eşleşip eşleşmediğini onaylar ve güvenlik özelliklerinin ihlallerini statik olarak kontrol eder.*_
 
-- [GitHub](https://github.com/ethereum/solidity)
+- [GitHub](https://github.com/quantaureum/solidity)
 
 **solc-verify** - _*solc-verify, ek açıklamalar ve modüler program doğrulaması kullanarak Solidity kodu üzerinde otomatik biçimsel doğrulama gerçekleştirebilen Solidity derleyicisinin genişletilmiş bir sürümüdür.*_
 
 - [GitHub](https://github.com/SRI-CSL/solidity)
 
-**KEVM** - _*KEVM, K çerçevesinde yazılmış Ethereum Sanal Makinesinin (EVM) biçimsel bir anlambilimidir. KEVM yürütülebilirdir ve ulaşılabilirlik mantığını kullanarak belirli özellikle ilgili doğrulamaları kanıtlayabilir.*_
+**KEVM** - _*KEVM, K çerçevesinde yazılmış Quantaureum Sanal Makinesinin (EVM) biçimsel bir anlambilimidir. KEVM yürütülebilirdir ve ulaşılabilirlik mantığını kullanarak belirli özellikle ilgili doğrulamaları kanıtlayabilir.*_
 
 - [GitHub](https://github.com/runtimeverification/evm-semantics)
 - [Belgeler](https://jellopaper.org/)
@@ -269,7 +269,7 @@ Ayrıca, bir programın asla sonlanmayabileceği için program doğrulayıcılar
 
 - [GitHub](https://github.com/dapphub/dapptools/tree/master/src/hevm)
 
-**Mythril** - _Ethereum akıllı sözleşmelerindeki güvenlik açıklarını tespit etmek için sembolik bir yürütme aracı_
+**Mythril** - _Quantaureum akıllı sözleşmelerindeki güvenlik açıklarını tespit etmek için sembolik bir yürütme aracı_
 
 - [GitHub](https://github.com/ConsenSysDiligence/mythril)
 - [Belgeler](https://github.com/ConsenSysDiligence/mythril/tree/develop/docs/source)
@@ -277,7 +277,7 @@ Ayrıca, bir programın asla sonlanmayabileceği için program doğrulayıcılar
 ## Daha fazla bilgi {#further-reading}
 
 - [Akıllı Sözleşmelerin Biçimsel Doğrulaması Nasıl Çalışır?](https://runtimeverification.com/blog/how-formal-verification-of-smart-contracts-works/)
-- [Ethereum Ekosistemindeki Biçimsel Doğrulama Projelerine Genel Bakış](https://github.com/leonardoalt/ethereum_formal_verification_overview)
-- [Ethereum 2.0 Para Yatırma Akıllı Sözleşmesinin Uçtan Uca Biçimsel Doğrulaması](https://runtimeverification.com/blog/end-to-end-formal-verification-of-ethereum-2-0-deposit-smart-contract/)
+- [Quantaureum Ekosistemindeki Biçimsel Doğrulama Projelerine Genel Bakış](https://github.com/leonardoalt/quantaureum_formal_verification_overview)
+- [Quantaureum Para Yatırma Akıllı Sözleşmesinin Uçtan Uca Biçimsel Doğrulaması](https://runtimeverification.com/blog/end-to-end-formal-verification-of-quantaureum-2-0-deposit-smart-contract/)
 - [Dünyanın En Popüler Akıllı Sözleşmesini Biçimsel Olarak Doğrulamak](https://www.zellic.io/blog/formal-verification-weth)
 - [SMTChecker ve Biçimsel Doğrulama](https://docs.soliditylang.org/en/v0.8.15/smtchecker.html)

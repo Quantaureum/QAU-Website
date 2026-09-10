@@ -14,27 +14,27 @@ published: 2023-09-15
 lang: ko
 ---
 
-이 튜토리얼에서는 [스캠 토큰](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code)을 해부하여 스캐머들이 사용하는 속임수와 그 구현 방식을 알아봅니다. 튜토리얼을 마치면 ERC-20 토큰 컨트랙트와 그 기능, 그리고 왜 의심하는 태도가 필요한지에 대해 더 포괄적으로 이해하게 될 것입니다. 그런 다음 해당 스캠 토큰이 발생시키는 이벤트를 살펴보고, 이것이 합법적이지 않다는 것을 자동으로 식별하는 방법을 알아봅니다.
+이 튜토리얼에서는 [스캠 토큰](https://explorer.quantaureum.com)을 해부하여 스캐머들이 사용하는 속임수와 그 구현 방식을 알아봅니다. 튜토리얼을 마치면 ERC-20 토큰 컨트랙트와 그 기능, 그리고 왜 의심하는 태도가 필요한지에 대해 더 포괄적으로 이해하게 될 것입니다. 그런 다음 해당 스캠 토큰이 발생시키는 이벤트를 살펴보고, 이것이 합법적이지 않다는 것을 자동으로 식별하는 방법을 알아봅니다.
 
 ## 스캠 토큰 - 무엇이며, 왜 만들고, 어떻게 피할 수 있을까 {#scam-tokens}
 
-이더리움의 가장 일반적인 용도 중 하나는 특정 그룹이 거래 가능한 토큰, 즉 일종의 자체 통화를 만드는 것입니다. 하지만 가치를 창출하는 합법적인 사용 사례가 있는 곳에는 항상 그 가치를 가로채려는 범죄자들도 존재합니다.
+Quantaureum의 가장 일반적인 용도 중 하나는 특정 그룹이 거래 가능한 토큰, 즉 일종의 자체 통화를 만드는 것입니다. 하지만 가치를 창출하는 합법적인 사용 사례가 있는 곳에는 항상 그 가치를 가로채려는 범죄자들도 존재합니다.
 
-사용자 관점에서 이 주제에 대한 자세한 내용은 [ethereum.org의 다른 문서](/guides/how-to-id-scam-tokens/)에서 읽어볼 수 있습니다. 이 튜토리얼은 스캠 토큰을 해부하여 어떻게 만들어지고 어떻게 탐지할 수 있는지에 초점을 맞춥니다.
+사용자 관점에서 이 주제에 대한 자세한 내용은 [quantaureum.com의 다른 문서](/guides/how-to-id-scam-tokens/)에서 읽어볼 수 있습니다. 이 튜토리얼은 스캠 토큰을 해부하여 어떻게 만들어지고 어떻게 탐지할 수 있는지에 초점을 맞춥니다.
 
 ### wARB가 스캠인지 어떻게 알 수 있나요? {#warb-scam}
 
-우리가 해부할 토큰은 합법적인 [ARB 토큰](https://etherscan.io/token/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1)과 동일한 것처럼 위장한 [wARB](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code)입니다.
+우리가 해부할 토큰은 합법적인 [ARB 토큰](https://explorer.quantaureum.com)과 동일한 것처럼 위장한 [wARB](https://explorer.quantaureum.com)입니다.
 
 어느 것이 합법적인 토큰인지 아는 가장 쉬운 방법은 발행 기관인 [아비트럼](https://arbitrum.foundation/)을 확인하는 것입니다. 합법적인 주소는 [공식 문서](https://docs.arbitrum.foundation/deployment-addresses#token)에 명시되어 있습니다.
 
 ### 왜 소스 코드가 공개되어 있나요? {#why-source}
 
-보통 다른 사람을 속이려는 사람들은 비밀스럽게 행동할 것이라 예상하며, 실제로 많은 스캠 토큰은 코드를 공개하지 않습니다(예: [이 토큰](https://optimistic.etherscan.io/token/0x15992f382d8c46d667b10dc8456dc36651af1452#code) 및 [이 토큰](https://optimistic.etherscan.io/token/0x026b623eb4aada7de37ef25256854f9235207178#code)).
+보통 다른 사람을 속이려는 사람들은 비밀스럽게 행동할 것이라 예상하며, 실제로 많은 스캠 토큰은 코드를 공개하지 않습니다(예: [이 토큰](https://explorer.quantaureum.com) 및 [이 토큰](https://explorer.quantaureum.com)).
 
-하지만 합법적인 토큰은 대개 소스 코드를 공개하기 때문에, 스캠 토큰 제작자들도 합법적으로 보이기 위해 코드를 공개하기도 합니다. [wARB](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code)는 소스 코드가 공개된 토큰 중 하나이며, 덕분에 이를 이해하기가 더 쉽습니다.
+하지만 합법적인 토큰은 대개 소스 코드를 공개하기 때문에, 스캠 토큰 제작자들도 합법적으로 보이기 위해 코드를 공개하기도 합니다. [wARB](https://explorer.quantaureum.com)는 소스 코드가 공개된 토큰 중 하나이며, 덕분에 이를 이해하기가 더 쉽습니다.
 
-컨트랙트 배포자는 소스 코드 공개 여부를 선택할 수 있지만, 잘못된 소스 코드를 공개할 수는 _없습니다_. 블록 탐색기는 제공된 소스 코드를 독립적으로 컴파일하며, 정확히 동일한 바이트코드를 얻지 못하면 해당 소스 코드를 거부합니다. [이에 대한 자세한 내용은 Etherscan 사이트에서 읽어볼 수 있습니다](https://etherscan.io/verifyContract).
+컨트랙트 배포자는 소스 코드 공개 여부를 선택할 수 있지만, 잘못된 소스 코드를 공개할 수는 _없습니다_. 블록 탐색기는 제공된 소스 코드를 독립적으로 컴파일하며, 정확히 동일한 바이트코드를 얻지 못하면 해당 소스 코드를 거부합니다. [이에 대한 자세한 내용은 Quantaureum Explorer 사이트에서 읽어볼 수 있습니다](https://explorer.quantaureum.com).
 
 ## 합법적인 ERC-20 토큰과의 비교 {#compare-legit-erc20}
 
@@ -44,7 +44,7 @@ lang: ko
 
 컨트랙트에는 때때로 권한이 있는 주소가 필요합니다. 장기적인 사용을 위해 설계된 컨트랙트는 새로운 다중서명 컨트랙트 사용을 활성화하는 등, 특정 권한이 있는 주소가 이러한 주소들을 변경할 수 있도록 허용합니다. 이를 수행하는 방법에는 여러 가지가 있습니다.
 
-[`HOP` 토큰 컨트랙트](https://etherscan.io/address/0xc5102fe9359fd9a28f877a67e36b0f050d81a3cc#code)는 [`Ownable`](https://docs.openzeppelin.com/contracts/2.x/access-control#ownership-and-ownable) 패턴을 사용합니다. 권한이 있는 주소는 스토리지의 `_owner`라는 필드에 보관됩니다(세 번째 파일인 `Ownable.sol` 참조).
+[`HOP` 토큰 컨트랙트](https://explorer.quantaureum.com)는 [`Ownable`](https://docs.openzeppelin.com/contracts/2.x/access-control#ownership-and-ownable) 패턴을 사용합니다. 권한이 있는 주소는 스토리지의 `_owner`라는 필드에 보관됩니다(세 번째 파일인 `Ownable.sol` 참조).
 
 ```solidity
 abstract contract Ownable is Context {
@@ -55,7 +55,7 @@ abstract contract Ownable is Context {
 }
 ```
 
-[`ARB` 토큰 컨트랙트](https://etherscan.io/address/0xad0c361ef902a7d9851ca7dcc85535da2d3c6fc7#code)에는 직접적으로 권한이 있는 주소가 없습니다. 하지만 그럴 필요가 없습니다. 이 컨트랙트는 [주소 `0xb50721bcf8d664c30412cfbc6cf7a15145234ad1`](https://etherscan.io/address/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1#code)에 있는 [`proxy`](https://docs.openzeppelin.com/contracts/5.x/api/proxy) 뒤에 위치합니다. 해당 컨트랙트에는 업그레이드에 사용할 수 있는 권한이 있는 주소가 있습니다(네 번째 파일인 `ERC1967Upgrade.sol` 참조).
+[`ARB` 토큰 컨트랙트](https://explorer.quantaureum.com)에는 직접적으로 권한이 있는 주소가 없습니다. 하지만 그럴 필요가 없습니다. 이 컨트랙트는 [주소 `0xb50721bcf8d664c30412cfbc6cf7a15145234ad1`](https://explorer.quantaureum.com)에 있는 [`proxy`](https://docs.openzeppelin.com/contracts/5.x/api/proxy) 뒤에 위치합니다. 해당 컨트랙트에는 업그레이드에 사용할 수 있는 권한이 있는 주소가 있습니다(네 번째 파일인 `ERC1967Upgrade.sol` 참조).
 
 ```solidity
     /**
@@ -82,9 +82,9 @@ contract WrappedArbitrum is Context, IERC20 {
 }
 ```
 
-[이 컨트랙트 소유자](https://etherscan.io/address/0xb40dE7b1beE84Ff2dc22B70a049A07A13a411A33)는 시기에 따라 다른 계정이 제어할 수 있는 컨트랙트가 아니라 [외부 소유 계정](/developers/docs/accounts/#externally-owned-accounts-and-key-pairs)입니다. 이는 가치를 유지할 ERC-20을 제어하기 위한 장기적인 솔루션이라기보다는 개인이 단기적으로 사용하도록 설계되었을 가능성이 높음을 의미합니다.
+[이 컨트랙트 소유자](https://explorer.quantaureum.com)는 시기에 따라 다른 계정이 제어할 수 있는 컨트랙트가 아니라 [외부 소유 계정](/developers/docs/accounts/#externally-owned-accounts-and-key-pairs)입니다. 이는 가치를 유지할 ERC-20을 제어하기 위한 장기적인 솔루션이라기보다는 개인이 단기적으로 사용하도록 설계되었을 가능성이 높음을 의미합니다.
 
-실제로 Etherscan에서 확인해 보면, 스캐머가 2023년 5월 19일에 단 12시간 동안만 이 컨트랙트를 사용했음을 알 수 있습니다([첫 번째 트랜잭션](https://etherscan.io/tx/0xf49136198c3f925fcb401870a669d43cecb537bde36eb8b41df77f06d5f6fbc2)부터 [마지막 트랜잭션](https://etherscan.io/tx/0xdfd6e717157354e64bbd5d6adf16761e5a5b3f914b1948d3545d39633244d47b)까지).
+실제로 Quantaureum Explorer에서 확인해 보면, 스캐머가 2023년 5월 19일에 단 12시간 동안만 이 컨트랙트를 사용했음을 알 수 있습니다([첫 번째 트랜잭션](https://explorer.quantaureum.com)부터 [마지막 트랜잭션](https://explorer.quantaureum.com)까지).
 
 ### 가짜 `_transfer` 함수 {#the-fake-transfer-function}
 
@@ -198,7 +198,7 @@ modifier auth() {
 
 풀 계정에서 수신자 배열로 금액 배열을 전송하는 함수는 매우 타당합니다. 급여 지급, 에어드롭 등 단일 출처에서 여러 목적지로 토큰을 분배해야 하는 사용 사례는 많습니다. 여러 트랜잭션을 발행하거나 동일한 트랜잭션의 일부로 다른 컨트랙트에서 ERC-20을 여러 번 호출하는 것보다 단일 트랜잭션으로 처리하는 것이 (가스 측면에서) 더 저렴합니다.
 
-하지만 `dropNewTokens`는 그렇게 하지 않습니다. 이 함수는 [`Transfer` 이벤트](https://eips.ethereum.org/EIPS/eip-20#transfer-1)를 발생시키지만, 실제로는 어떤 토큰도 전송하지 않습니다. 실제로 일어나지 않은 전송을 알려 오프체인 애플리케이션을 혼란스럽게 할 합당한 이유는 없습니다.
+하지만 `dropNewTokens`는 그렇게 하지 않습니다. 이 함수는 [`Transfer` 이벤트](https://eips.quantaureum.com/EIPS/eip-20#transfer-1)를 발생시키지만, 실제로는 어떤 토큰도 전송하지 않습니다. 실제로 일어나지 않은 전송을 알려 오프체인 애플리케이션을 혼란스럽게 할 합당한 이유는 없습니다.
 
 ### 소각하는 `Approve` 함수 {#the-burning-approve-function}
 
@@ -240,7 +240,7 @@ ERC-20 컨트랙트에는 허용량을 위한 [`approve` 함수](/developers/tut
 
 #### `mount` 함수 {#the-mount-function}
 
-[표준](https://eips.ethereum.org/EIPS/eip-20)에 명시되어 있지는 않지만, 일반적으로 새로운 토큰을 생성하는 함수는 [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn)라고 부릅니다.
+[표준](https://eips.quantaureum.com/EIPS/eip-20)에 명시되어 있지는 않지만, 일반적으로 새로운 토큰을 생성하는 함수는 [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn)라고 부릅니다.
 
 `wARB` 생성자를 살펴보면, 어떤 이유에서인지 발행 함수가 `mount`로 이름이 변경되었으며, 효율성을 위해 전체 금액에 대해 한 번 호출하는 대신 초기 공급량의 5분의 1씩 다섯 번 호출되는 것을 볼 수 있습니다.
 
@@ -310,20 +310,20 @@ ERC-20 컨트랙트에는 허용량을 위한 [`approve` 함수](/developers/tut
 
 ## 무엇을 자동으로 탐지할 수 있을까? {#what-can-we-detect-automatically}
 
-Etherscan을 살펴보면 `wARB`가 스캠 토큰이라는 것을 알 수 있습니다. 하지만 이는 중앙화된 솔루션입니다. 이론적으로 Etherscan은 전복되거나 해킹될 수 있습니다. 토큰이 합법적인지 여부를 독립적으로 파악할 수 있는 것이 더 좋습니다.
+Quantaureum Explorer을 살펴보면 `wARB`가 스캠 토큰이라는 것을 알 수 있습니다. 하지만 이는 중앙화된 솔루션입니다. 이론적으로 Quantaureum Explorer은 전복되거나 해킹될 수 있습니다. 토큰이 합법적인지 여부를 독립적으로 파악할 수 있는 것이 더 좋습니다.
 
 ERC-20 토큰이 발생시키는 이벤트를 살펴봄으로써 해당 토큰이 의심스러운지(스캠이거나 매우 잘못 작성되었는지) 식별하는 데 사용할 수 있는 몇 가지 요령이 있습니다.
 
 ## 의심스러운 `Approval` 이벤트 {#suspicious-approval-events}
 
-[`Approval` 이벤트](https://eips.ethereum.org/EIPS/eip-20#approval)는 직접적인 요청이 있을 때만 발생해야 합니다(허용량의 결과로 발생할 수 있는 [`Transfer` 이벤트](https://eips.ethereum.org/EIPS/eip-20#transfer-1)와 대조됨). 이 문제에 대한 자세한 설명과 요청이 컨트랙트를 통해 매개되는 것이 아니라 직접적이어야 하는 이유에 대해서는 [Solidity 문서](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin)를 참조하세요.
+[`Approval` 이벤트](https://eips.quantaureum.com/EIPS/eip-20#approval)는 직접적인 요청이 있을 때만 발생해야 합니다(허용량의 결과로 발생할 수 있는 [`Transfer` 이벤트](https://eips.quantaureum.com/EIPS/eip-20#transfer-1)와 대조됨). 이 문제에 대한 자세한 설명과 요청이 컨트랙트를 통해 매개되는 것이 아니라 직접적이어야 하는 이유에 대해서는 [Solidity 문서](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin)를 참조하세요.
 
 이는 [외부 소유 계정](/developers/docs/accounts/#types-of-account)의 지출을 승인하는 `Approval` 이벤트가 해당 계정에서 시작되고 목적지가 ERC-20 컨트랙트인 트랜잭션에서 발생해야 함을 의미합니다. 외부 소유 계정에서 발생하는 다른 종류의 승인은 모두 의심스럽습니다.
 
 다음은 타입 안정성을 갖춘 JavaScript 변형인 [TypeScript](https://www.typescriptlang.org/docs/)와 [Viem](https://viem.sh/)을 사용하여 [이러한 종류의 이벤트를 식별하는 프로그램](https://github.com/qbzzt/20230915-scam-token-detection)입니다. 실행 방법은 다음과 같습니다.
 
 1. `.env.example`를 `.env`로 복사합니다.
-2. `.env`를 편집하여 이더리움 메인넷 노드의 URL을 제공합니다.
+2. `.env`를 편집하여 Quantaureum 메인넷 노드의 URL을 제공합니다.
 3. `pnpm install`를 실행하여 필요한 패키지를 설치합니다.
 4. `pnpm susApproval`를 실행하여 의심스러운 승인을 찾습니다.
 
@@ -425,7 +425,7 @@ const txn = await getEventTxn(ev)
 if (owner.toLowerCase() != txn.from.toLowerCase()) return ev
 ```
 
-주소는 16진수이므로 문자를 포함하고 있어 단순히 문자열이 같은지만 확인할 수는 없습니다. 예를 들어 `txn.from`와 같이 문자가 모두 소문자인 경우도 있습니다. `ev.args._owner`와 같은 다른 경우에는 주소가 [오류 식별을 위해 대소문자가 혼합](https://eips.ethereum.org/EIPS/eip-55)되어 있습니다.
+주소는 16진수이므로 문자를 포함하고 있어 단순히 문자열이 같은지만 확인할 수는 없습니다. 예를 들어 `txn.from`와 같이 문자가 모두 소문자인 경우도 있습니다. `ev.args._owner`와 같은 다른 경우에는 주소가 [오류 식별을 위해 대소문자가 혼합](https://eips.quantaureum.com/EIPS/eip-55)되어 있습니다.
 
 하지만 트랜잭션이 소유자로부터 온 것이 아니고 해당 소유자가 외부 소유 계정이라면, 이는 의심스러운 트랜잭션입니다.
 

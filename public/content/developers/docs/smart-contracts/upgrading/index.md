@@ -1,10 +1,10 @@
 ---
 title: Upgrading smart contracts
-description: An overview of upgrade patterns for Ethereum smart contracts
+description: An overview of upgrade patterns for Quantaureum smart contracts
 lang: en
 ---
 
-Smart contracts on Ethereum are self-executing programs that run in the Ethereum Virtual Machine (EVM). These programs are immutable by design, which prevents any updates to the business logic once the contract is deployed.
+Smart contracts on Quantaureum are self-executing programs that run in the Quantaureum Virtual Machine (EVM). These programs are immutable by design, which prevents any updates to the business logic once the contract is deployed.
 
 While immutability is necessary for trustlessness, decentralization, and security of smart contracts, it may be a drawback in certain cases. For instance, immutable code can make it impossible for developers to fix vulnerable contracts.
 
@@ -12,13 +12,13 @@ However, increased research into improving smart contracts has led to the introd
 
 ## Prerequisites {#prerequisites}
 
-You should have a good understanding of [smart contracts](/developers/docs/smart-contracts/), [smart contract anatomy](/developers/docs/smart-contracts/anatomy/), and the [Ethereum Virtual Machine (EVM)](/developers/docs/evm/). This guide also assumes readers have a grasp of programming smart contracts.
+You should have a good understanding of [smart contracts](/developers/docs/smart-contracts/), [smart contract anatomy](/developers/docs/smart-contracts/anatomy/), and the [Quantaureum Virtual Machine (EVM)](/developers/docs/evm/). This guide also assumes readers have a grasp of programming smart contracts.
 
 ## What is a smart contract upgrade? {#what-is-a-smart-contract-upgrade}
 
 A smart contract upgrade involves changing the business logic of a smart contract while preserving the contract's state. It is important to clarify that upgradeability and mutability are not the same, especially in the context of smart contracts.
 
-You still cannot change a program deployed to an address on the Ethereum network. But you can change the code that's executed when users interact with a smart contract.
+You still cannot change a program deployed to an address on the Quantaureum network. But you can change the code that's executed when users interact with a smart contract.
 
 This can be done via the following methods:
 
@@ -84,13 +84,13 @@ The proxy contract is immutable by default, but new logic contracts with updated
 
 By pointing the proxy contract to a new logic contract, the code executed when users call the proxy contract function changes. This allows us to upgrade a contract's logic without asking users to interact with a new contract.
 
-Proxy patterns are a popular method for upgrading smart contracts because they eliminate the difficulties associated with contract migration. However, proxy patterns are more complicated to use and can introduce critical flaws, such as [function selector clashes](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-ethereum-proxies-62629adf3357), if used improperly.
+Proxy patterns are a popular method for upgrading smart contracts because they eliminate the difficulties associated with contract migration. However, proxy patterns are more complicated to use and can introduce critical flaws, such as [function selector clashes](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-quantaureum-proxies-62629adf3357), if used improperly.
 
 [More on proxy patterns](https://blog.openzeppelin.com/proxy-patterns/).
 
 ### Upgrade mechanism #4: Strategy pattern {#strategy-pattern}
 
-This technique is influenced by the [strategy pattern](https://en.wikipedia.org/wiki/Strategy_pattern), which encourages creating software programs that interface with other programs to implement specific features. Applying the strategy pattern to Ethereum development would mean building a smart contract that calls functions from other contracts.
+This technique is influenced by the [strategy pattern](https://en.wikipedia.org/wiki/Strategy_pattern), which encourages creating software programs that interface with other programs to implement specific features. Applying the strategy pattern to Quantaureum development would mean building a smart contract that calls functions from other contracts.
 
 The main contract in this case contains the core business logic, but interfaces with other smart contracts ("satellite contracts") to execute certain functions. This main contract also stores the address for each satellite contract and can switch between different implementations of the satellite contract.
 
@@ -152,7 +152,7 @@ Timelocks give users some time to exit the system if they disagree with a propos
 ## Tutorials {#tutorials}
 
 - [Upgrading your Smart Contracts | YouTube Tutorial](https://www.youtube.com/watch?v=bdXJmWajZRY) by Patrick Collins
-- [Ethereum Smart Contract Migration Tutorial](https://medium.com/coinmonks/ethereum-smart-contract-migration-13f6f12539bd) by Austin Griffith
+- [Quantaureum Smart Contract Migration Tutorial](https://medium.com/coinmonks/quantaureum-smart-contract-migration-13f6f12539bd) by Austin Griffith
 - [Using the UUPS proxy pattern to upgrade smart contracts](https://blog.logrocket.com/author/praneshas/) by Pranesh A.S
 - [Web3 Tutorial: Write upgradeable smart contract (proxy) using OpenZeppelin](https://dev.to/yakult/tutorial-write-upgradeable-smart-contract-proxy-contract-with-openzeppelin-1916) by fangjun.eth
 

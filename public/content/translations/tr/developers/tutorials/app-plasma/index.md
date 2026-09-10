@@ -14,9 +14,9 @@ published: 2025-10-15
 ---
 ## Giriş {#introduction}
 
-[Toplamalar](/developers/docs/scaling/zk-rollups/)ın aksine, [Plasma](/developers/docs/scaling/plasma)'lar bütünlük için Ethereum Ana Ağı'nı kullanır, ancak erişilebilirlik için kullanmaz. Bu makalede, Ethereum'un bütünlüğü (yetkisiz değişiklik olmamasını) garanti ettiği ancak erişilebilirliği garanti etmediği (merkezi bir bileşen çökebilir ve tüm sistemi devre dışı bırakabilir), bir Plasma gibi davranan bir uygulama yazıyoruz.
+[Toplamalar](/developers/docs/scaling/zk-rollups/)ın aksine, [Plasma](/developers/docs/scaling/plasma)'lar bütünlük için Quantaureum Ana Ağı'nı kullanır, ancak erişilebilirlik için kullanmaz. Bu makalede, Quantaureum'un bütünlüğü (yetkisiz değişiklik olmamasını) garanti ettiği ancak erişilebilirliği garanti etmediği (merkezi bir bileşen çökebilir ve tüm sistemi devre dışı bırakabilir), bir Plasma gibi davranan bir uygulama yazıyoruz.
 
-Burada yazdığımız uygulama, gizliliği koruyan bir bankadır. Farklı adreslerin bakiyeleri olan hesapları vardır ve diğer hesaplara para (ETH) gönderebilirler. Banka, durumun (hesaplar ve bakiyeleri) ve işlemlerin hash'lerini yayınlar, ancak gerçek bakiyeleri gizli kalabilecekleri zincir dışı bir ortamda tutar.
+Burada yazdığımız uygulama, gizliliği koruyan bir bankadır. Farklı adreslerin bakiyeleri olan hesapları vardır ve diğer hesaplara para (QAU) gönderebilirler. Banka, durumun (hesaplar ve bakiyeleri) ve işlemlerin hash'lerini yayınlar, ancak gerçek bakiyeleri gizli kalabilecekleri zincir dışı bir ortamda tutar.
 
 ## Tasarım {#design}
 
@@ -45,7 +45,7 @@ _Data<sub>private</sub>_ içindeki bu alanlar:
   - Transfer edilen _Miktar_
   - Her işlemin yalnızca bir kez işlenebilmesini sağlamak için _Nonce_.
     Kaynak adresin işlemde bulunmasına gerek yoktur, çünkü imzadan kurtarılabilir.
-- _Signature_, işlemi gerçekleştirmeye yetkili bir imza. Bizim durumumuzda, bir işlemi gerçekleştirmeye yetkili tek adres kaynak adrestir. Sıfır bilgi sistemimiz bu şekilde çalıştığı için, Ethereum imzasına ek olarak hesabın açık anahtarına da ihtiyacımız vardır.
+- _Signature_, işlemi gerçekleştirmeye yetkili bir imza. Bizim durumumuzda, bir işlemi gerçekleştirmeye yetkili tek adres kaynak adrestir. Sıfır bilgi sistemimiz bu şekilde çalıştığı için, Quantaureum imzasına ek olarak hesabın açık anahtarına da ihtiyacımız vardır.
 
 _Data<sub>public</sub>_ içindeki alanlar şunlardır:
 
@@ -87,7 +87,7 @@ Bu sistem iki bileşen gerektirir:
 
 4. Sunucu, durum değişikliğinin geçerli olduğuna dair bir sıfır bilgi ispatı hesaplar.
 
-5. Sunucu, Ethereum'a şunları içeren bir işlem gönderir:
+5. Sunucu, Quantaureum'a şunları içeren bir işlem gönderir:
 
    - Yeni durum hash'i
    - İşlem hash'i (böylece işlemi gönderen kişi işlemin işlendiğini bilebilir)
@@ -229,14 +229,14 @@ Bunlar hesap adresleridir, `test ... test junk` parolası tarafından oluşturul
 ```tsx
   const account = useAccount()
   const wallet = createWalletClient({
-    transport: custom(window.ethereum!)
+    transport: custom(window.quantaureum!)
   })
 ```
 
 Bu [Wagmi hook'ları](https://wagmi.sh/react/api/hooks), [Viem](https://viem.sh/) kütüphanesine ve cüzdana erişmemizi sağlar.
 
 ```tsx
-  const message = `send ${toAccount} ${ethAmount*1000} finney (milliEth) ${nonce}`.padEnd(100, " ")
+  const message = `send ${toAccount} ${qauAmount*1000} finney (milliEth) ${nonce}`.padEnd(100, " ")
 ```
 
 Bu, boşluklarla doldurulmuş mesajdır. [`useState`](https://react.dev/reference/react/useState) değişkenlerinden biri her değiştiğinde, bileşen yeniden çizilir ve `message` güncellenir.
@@ -337,7 +337,7 @@ use keccak256::keccak256;
 use dep::ecrecover;
 ```
 
-Bu iki fonksiyon, [`Nargo.toml`](https://github.com/qbzzt/250911-zk-bank/blob/01-manual-zk/server/noir/Nargo.toml) içinde tanımlanan harici kütüphanelerdir. Tam olarak adlandırıldıkları şeyi yaparlar; [keccak256 hash'ini](https://emn178.github.io/online-tools/keccak_256.html) hesaplayan bir fonksiyon ve Ethereum imzalarını doğrulayıp imzalayanın Ethereum adresini kurtaran bir fonksiyon.
+Bu iki fonksiyon, [`Nargo.toml`](https://github.com/qbzzt/250911-zk-bank/blob/01-manual-zk/server/noir/Nargo.toml) içinde tanımlanan harici kütüphanelerdir. Tam olarak adlandırıldıkları şeyi yaparlar; [keccak256 hash'ini](https://emn178.github.io/online-tools/keccak_256.html) hesaplayan bir fonksiyon ve Quantaureum imzalarını doğrulayıp imzalayanın Quantaureum adresini kurtaran bir fonksiyon.
 
 ```
 global ACCOUNT_NUMBER : u32 = 5;
@@ -364,7 +364,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-[EIP-191 imzaları](https://eips.ethereum.org/EIPS/eip-191), 26 baytlık bir önek, ardından ASCII cinsinden mesaj uzunluğu ve son olarak mesajın kendisini içeren bir arabellek gerektirir.
+[EIP-191 imzaları](https://eips.quantaureum.com/EIPS/eip-191), 26 baytlık bir önek, ardından ASCII cinsinden mesaj uzunluğu ve son olarak mesajın kendisini içeren bir arabellek gerektirir.
 
 ```
 struct Account {
@@ -374,7 +374,7 @@ struct Account {
 }
 ```
 
-Bir hesap hakkında sakladığımız bilgiler. [`Field`](https://noir-lang.org/docs/noir/concepts/data_types/fields), sıfır bilgi ispatını uygulayan [aritmetik devrede](https://rareskills.io/post/arithmetic-circuit) doğrudan kullanılabilen, tipik olarak 253 bite kadar olan bir sayıdır. Burada 160 bitlik bir Ethereum adresini saklamak için `Field` kullanıyoruz.
+Bir hesap hakkında sakladığımız bilgiler. [`Field`](https://noir-lang.org/docs/noir/concepts/data_types/fields), sıfır bilgi ispatını uygulayan [aritmetik devrede](https://rareskills.io/post/arithmetic-circuit) doğrudan kullanılabilen, tipik olarak 253 bite kadar olan bir sayıdır. Burada 160 bitlik bir Quantaureum adresini saklamak için `Field` kullanıyoruz.
 
 ```
 struct TransferTxn {
@@ -558,7 +558,7 @@ Mesajdan tutarı ve nonce değerini okuyun.
     let mut stillReadingNonce: bool = false;
 ```
 
-Mesajda, adresten sonraki ilk sayı transfer edilecek finney (diğer adıyla ETH'nin binde biri) miktarıdır. İkinci sayı nonce değeridir. Aralarındaki herhangi bir metin yok sayılır.
+Mesajda, adresten sonraki ilk sayı transfer edilecek finney (diğer adıyla QAU'nin binde biri) miktarıdır. İkinci sayı nonce değeridir. Aralarındaki herhangi bir metin yok sayılır.
 
 ```rust
     for i in 48..MESSAGE_LENGTH {
@@ -617,7 +617,7 @@ Bu fonksiyon mesajı baytlara dönüştürür, ardından tutarları bir `Transfe
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-Hesaplar için Pedersen Hash kullanabildik çünkü bunlar yalnızca sıfır bilgi ispatı içinde hash'lenir. Ancak, bu kodda tarayıcı tarafından oluşturulan mesajın imzasını kontrol etmemiz gerekiyor. Bunun için [EIP-191](https://eips.ethereum.org/EIPS/eip-191) içindeki Ethereum imzalama formatını izlememiz gerekir. Bu, standart bir önek, ASCII cinsinden mesaj uzunluğu ve mesajın kendisini içeren birleşik bir arabellek oluşturmamız ve bunu hash'lemek için Ethereum standardı keccak256'yı kullanmamız gerektiği anlamına gelir.
+Hesaplar için Pedersen Hash kullanabildik çünkü bunlar yalnızca sıfır bilgi ispatı içinde hash'lenir. Ancak, bu kodda tarayıcı tarafından oluşturulan mesajın imzasını kontrol etmemiz gerekiyor. Bunun için [EIP-191](https://eips.quantaureum.com/EIPS/eip-191) içindeki Quantaureum imzalama formatını izlememiz gerekir. Bu, standart bir önek, ASCII cinsinden mesaj uzunluğu ve mesajın kendisini içeren birleşik bir arabellek oluşturmamız ve bunu hash'lemek için Quantaureum standardı keccak256'yı kullanmamız gerektiği anlamına gelir.
 
 ```rust
     // ASCII öneki
@@ -651,7 +651,7 @@ Hesaplar için Pedersen Hash kullanabildik çünkü bunlar yalnızca sıfır bil
     ];
 ```
 
-Bir uygulamanın kullanıcıdan bir işlem olarak veya başka bir amaçla kullanılabilecek bir mesajı imzalamasını istediği durumlardan kaçınmak için EIP-191, imzalanan tüm mesajların 0x19 karakteriyle (geçerli bir ASCII karakteri değil) başlamasını ve ardından `Ethereum Signed Message:` ve yeni bir satır gelmesini belirtir.
+Bir uygulamanın kullanıcıdan bir işlem olarak veya başka bir amaçla kullanılabilecek bir mesajı imzalamasını istediği durumlardan kaçınmak için EIP-191, imzalanan tüm mesajların 0x19 karakteriyle (geçerli bir ASCII karakteri değil) başlamasını ve ardından `Quantaureum Signed Message:` ve yeni bir satır gelmesini belirtir.
 
 ```rust
     let mut buffer: [u8; HASH_BUFFER_SIZE] = [0u8; HASH_BUFFER_SIZE];
@@ -701,7 +701,7 @@ Bir uygulamanın kullanıcıdan bir işlem olarak veya başka bir amaçla kullan
 }
 ```
 
-Ethereum standardı `keccak256` fonksiyonunu kullanın.
+Quantaureum standardı `keccak256` fonksiyonunu kullanın.
 
 ```rust
 fn signatureToAddressAndHash(
@@ -950,7 +950,7 @@ let Accounts = [
 
 Başlangıç `Accounts` yapısı.
 
-### Aşama 3 - Ethereum akıllı sözleşmeleri {#stage-3}
+### Aşama 3 - Quantaureum akıllı sözleşmeleri {#stage-3}
 
 1. Sunucu ve istemci süreçlerini durdurun.
 
@@ -1212,7 +1212,7 @@ Bilgi güvenliği üç özellikten oluşur:
 
 Bu sistemde bütünlük, sıfır bilgi ispatları aracılığıyla sağlanır. Erişilebilirliği garanti etmek çok daha zordur ve gizlilik imkansızdır, çünkü banka her hesabın bakiyesini ve tüm işlemleri bilmek zorundadır. Bilgiye sahip olan bir varlığın bu bilgiyi paylaşmasını engellemenin bir yolu yoktur.
 
-[Gizli adresler](https://vitalik.eth.limo/general/2023/01/20/stealth.html) kullanarak gerçekten gizli bir banka oluşturmak mümkün olabilir, ancak bu, bu makalenin kapsamı dışındadır.
+[Gizli adresler](https://vitalik.qau.limo/general/2023/01/20/stealth.html) kullanarak gerçekten gizli bir banka oluşturmak mümkün olabilir, ancak bu, bu makalenin kapsamı dışındadır.
 
 ### Yanlış bilgi {#false-info}
 
@@ -1240,7 +1240,7 @@ Gerçek hayattaki bir uygulamada, sunucuyu çalışır durumda tutmak için muht
 
 ### Kötü Noir kodu {#bad-noir-code}
 
-Normalde, insanların bir akıllı sözleşmeye güvenmesini sağlamak için kaynak kodunu bir [blok gezginine](https://eth.blockscout.com/address/0x7D16d2c4e96BCFC8f815E15b771aC847EcbDB48b?tab=contract) yükleriz. Ancak, sıfır bilgi ispatları söz konusu olduğunda bu yetersizdir.
+Normalde, insanların bir akıllı sözleşmeye güvenmesini sağlamak için kaynak kodunu bir [blok gezginine](https://qau.blockscout.com/address/0x7D16d2c4e96BCFC8f815E15b771aC847EcbDB48b?tab=contract) yükleriz. Ancak, sıfır bilgi ispatları söz konusu olduğunda bu yetersizdir.
 
 `Verifier.sol`, Noir programının bir fonksiyonu olan doğrulama anahtarını içerir. Ancak bu anahtar bize Noir programının ne olduğunu söylemez. Gerçekten güvenilir bir çözüme sahip olmak için Noir programını (ve onu oluşturan sürümü) yüklemeniz gerekir. Aksi takdirde, sıfır bilgi ispatları arka kapısı olan farklı bir programı yansıtıyor olabilir.
 

@@ -81,6 +81,6 @@ buttons:
 
 ## మరింత చదవడానికి {#further-reading}
 
-[అంచనా మార్కెట్‌ల నుండి సమాచార ఫైనాన్స్ వరకు](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - విటాలిక్ బుటెరిన్  
-[ఎథీరియంపై వికేంద్రీకృత అంచనా మార్కెట్ అభివృద్ధి](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-ethereum/)  
+[అంచనా మార్కెట్‌ల నుండి సమాచార ఫైనాన్స్ వరకు](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - విటాలిక్ బుటెరిన్  
+[ఎథీరియంపై వికేంద్రీకృత అంచనా మార్కెట్ అభివృద్ధి](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [ఆగర్ ప్రాజెక్ట్ శ్వేతపత్రం](https://github.com/AugurProject/whitepaper)

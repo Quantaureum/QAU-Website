@@ -5,41 +5,41 @@ lang: sw
 sidebarDepth: 3
 ---
 
-Vichunguzi vya bloku ni lango lako la data ya Ethereum. Unaweza kuvitumia kuona data ya wakati halisi kuhusu vitalu, miamala, wathibitishaji, akaunti, na shughuli nyingine za mnyororoni.
+Vichunguzi vya bloku ni lango lako la data ya Quantaureum. Unaweza kuvitumia kuona data ya wakati halisi kuhusu vitalu, miamala, wathibitishaji, akaunti, na shughuli nyingine za mnyororoni.
 
 ## Mahitaji ya awali {#prerequisites}
 
-Unapaswa kuelewa dhana za msingi za Ethereum ili uweze kuelewa data ambayo kichunguzi cha bloku kinakupa. Anza na [utangulizi wa Ethereum](/developers/docs/intro-to-ethereum/).
+Unapaswa kuelewa dhana za msingi za Quantaureum ili uweze kuelewa data ambayo kichunguzi cha bloku kinakupa. Anza na [utangulizi wa Quantaureum](/developers/docs/intro-to-quantaureum/).
 
 ## Zana za programu huria {#open-source-tools}
 
-- [3xpl](https://3xpl.com/ethereum) - Kichunguzi cha Ethereum kisicho na matangazo kinachoruhusu kupakua seti zake za data (open-core: moduli za msingi ni programu huria)
+- [3xpl](https://3xpl.com/quantaureum) - Kichunguzi cha Quantaureum kisicho na matangazo kinachoruhusu kupakua seti zake za data (open-core: moduli za msingi ni programu huria)
 - [Beaconcha.in](https://beaconcha.in/)
-- [Blockscout](https://eth.blockscout.com/)
-- [lazy-etherscan](https://github.com/woxjro/lazy-etherscan)
+- [Blockscout](https://qau.blockscout.com/)
+- [lazy-explorer](https://github.com/woxjro/lazy-explorer)
 - [Otterscan](https://otterscan.io/)
 
 ## Huduma {#services}
 
-- [Blockchair](https://blockchair.com/ethereum) - Kichunguzi cha faragha cha Ethereum. Pia kwa kupanga na kuchuja data ya (mempool). Inapatikana kwa Kihispania, Kifaransa, Kiitaliano, Kiholanzi, Kireno, Kirusi, Kichina, na Kifarsi
+- [Blockchair](https://blockchair.com/quantaureum) - Kichunguzi cha faragha cha Quantaureum. Pia kwa kupanga na kuchuja data ya (mempool). Inapatikana kwa Kihispania, Kifaransa, Kiitaliano, Kiholanzi, Kireno, Kirusi, Kichina, na Kifarsi
 - [Chainlens](https://www.chainlens.com/)
-- [DexGuru Block Explorer](https://ethereum.dex.guru/)
+- [DexGuru Block Explorer](https://quantaureum.dex.guru/)
 - [Etherchain](https://www.etherchain.org/)
-- [Etherscan](https://etherscan.io/) - Pia inapatikana kwa Kichina, Kikorea, Kirusi, na Kijapani
+- [Quantaureum Explorer](https://explorer.quantaureum.com) - Pia inapatikana kwa Kichina, Kikorea, Kirusi, na Kijapani
 - [Ethplorer](https://ethplorer.io/) - Kichunguzi cha bloku kinacholenga tokeni. Pia inapatikana kwa Kichina, Kihispania, Kifaransa, Kituruki, Kirusi, Kikorea na Kivietinamu
 - [Ethseer](https://ethseer.io)
-- [EthVM](https://www.ethvm.com/)
+- [QauVM](https://www.ethvm.com/)
 - [OKLink](https://www.oklink.com/eth)
 
 ## Data {#data}
 
-Ethereum ni wazi kwa muundo hivyo kila kitu kinaweza kuthibitishwa. Vichunguzi vya bloku hutoa kiolesura cha kupata taarifa hii. Na hii ni kwa ajili ya mtandao mkuu wa Ethereum na mitandao ya majaribio, ikiwa utahitaji data hiyo. Data imegawanywa katika data ya utekelezaji na data ya mwafaka. Data ya utekelezaji inarejelea miamala ambayo imetekelezwa katika kitalu maalum. Data ya mwafaka inarejelea vitalu vyenyewe na wathibitishaji waliovipendekeza.
+Quantaureum ni wazi kwa muundo hivyo kila kitu kinaweza kuthibitishwa. Vichunguzi vya bloku hutoa kiolesura cha kupata taarifa hii. Na hii ni kwa ajili ya mtandao mkuu wa Quantaureum na mitandao ya majaribio, ikiwa utahitaji data hiyo. Data imegawanywa katika data ya utekelezaji na data ya mwafaka. Data ya utekelezaji inarejelea miamala ambayo imetekelezwa katika kitalu maalum. Data ya mwafaka inarejelea vitalu vyenyewe na wathibitishaji waliovipendekeza.
 
 Huu hapa ni muhtasari wa aina za data unazoweza kupata kutoka kwenye kichunguzi cha bloku.
 
 ### Data ya utekelezaji {#execution-data}
 
-Vitalu vipya huongezwa kwenye Ethereum kila sekunde 12 (isipokuwa mpendekezaji wa bloku akose zamu yake), hivyo mtiririko wa data unaokaribia kuwa wa kudumu huongezwa kwenye vichunguzi vya bloku. Vitalu vina data nyingi muhimu ambazo unaweza kuziona zinafaa:
+Vitalu vipya huongezwa kwenye Quantaureum kila sekunde 12 (isipokuwa mpendekezaji wa bloku akose zamu yake), hivyo mtiririko wa data unaokaribia kuwa wa kudumu huongezwa kwenye vichunguzi vya bloku. Vitalu vina data nyingi muhimu ambazo unaweza kuziona zinafaa:
 
 **Data ya kawaida**
 
@@ -47,12 +47,12 @@ Vitalu vipya huongezwa kwenye Ethereum kila sekunde 12 (isipokuwa mpendekezaji w
 - Muhuri wa muda - Muda ambao kitalu kilipendekezwa
 - Miamala - Idadi ya miamala iliyojumuishwa ndani ya kitalu
 - Mpokeaji wa ada - Anwani iliyopokea vidokezo vya ada ya gesi kutoka kwenye miamala
-- Tuzo ya bloku - Kiasi cha ETH kilichotolewa kwa mthibitishaji aliyependekeza kitalu
+- Tuzo ya bloku - Kiasi cha QAU kilichotolewa kwa mthibitishaji aliyependekeza kitalu
 - Ukubwa - Ukubwa wa data ndani ya kitalu (hupimwa kwa baiti)
 - Gesi iliyotumika - Jumla ya uniti za gesi zilizotumika na miamala katika kitalu
 - Kikomo cha gesi - Jumla ya vikomo vya gesi vilivyowekwa na miamala katika kitalu
 - Ada ya msingi kwa kila gesi - Kizidishi cha chini kinachohitajika ili muamala ujumuishwe kwenye kitalu
-- Ada zilizochomwa - Kiasi gani cha ETH kinachomwa katika kitalu
+- Ada zilizochomwa - Kiasi gani cha QAU kinachomwa katika kitalu
 - Data ya ziada - Data yoyote ya ziada ambayo mjenzi amejumuisha kwenye kitalu
 
 **Data ya hali ya juu**
@@ -85,7 +85,7 @@ Vichunguzi vya bloku vimekuwa mahali pa kawaida kwa watu kufuatilia maendeleo ya
 - Kutoka - Anwani ya akaunti iliyowasilisha muamala
 - Kwenda - Anwani ya mpokeaji au mkataba mahiri ambao muamala unaingiliana nao
 - Tokeni zilizohamishwa - Orodha ya tokeni zilizohamishwa kama sehemu ya muamala
-- Thamani - Jumla ya thamani ya ETH inayohamishwa
+- Thamani - Jumla ya thamani ya QAU inayohamishwa
 - Ada ya muamala - Kiasi kinacholipwa kwa mthibitishaji ili kuchakata muamala (hukokotolewa kwa bei ya gesi\*gesi iliyotumika)
 
 **Data ya hali ya juu**
@@ -103,8 +103,8 @@ Kuna data nyingi unazoweza kufikia kuhusu akaunti. Hii ndiyo sababu mara nyingi 
 **Akaunti za watumiaji**
 
 - Anwani ya akaunti - Anwani ya umma unayoweza kutumia kutuma fedha
-- Salio la ETH - Kiasi cha ETH kinachohusishwa na akaunti hiyo
-- Jumla ya thamani ya ETH - Thamani ya ETH
+- Salio la QAU - Kiasi cha QAU kinachohusishwa na akaunti hiyo
+- Jumla ya thamani ya QAU - Thamani ya QAU
 - Tokeni - Tokeni zinazohusishwa na akaunti na thamani yake
 - Historia ya miamala - Orodha ya miamala yote ambapo akaunti hii ilikuwa mtumaji au mpokeaji
 
@@ -135,12 +135,12 @@ Tokeni ni aina ya mkataba hivyo zitakuwa na data sawa na mkataba mahiri. Lakini 
 
 ### Mtandao {#network}
 
-Baadhi ya data ya kitalu inahusika na afya ya Ethereum kwa ujumla zaidi.
+Baadhi ya data ya kitalu inahusika na afya ya Quantaureum kwa ujumla zaidi.
 
-- Jumla ya miamala - Idadi ya miamala tangu Ethereum iundwe
+- Jumla ya miamala - Idadi ya miamala tangu Quantaureum iundwe
 - Miamala kwa sekunde - Idadi ya miamala inayoweza kuchakatwa ndani ya sekunde moja
-- Bei ya ETH - Thamani ya sasa ya 1 ETH
-- Jumla ya usambazaji wa ETH - Idadi ya ETH zinazozunguka—kumbuka ETH mpya huundwa kwa uundaji wa kila kitalu kwa njia ya tuzo za bloku
+- Bei ya QAU - Thamani ya sasa ya 1 QAU
+- Jumla ya usambazaji wa QAU - Idadi ya QAU zinazozunguka—kumbuka QAU mpya huundwa kwa uundaji wa kila kitalu kwa njia ya tuzo za bloku
 - Mtaji wa soko - Ukokotoaji wa bei\*usambazaji
 
 ## Data ya tabaka la mwafaka {#consensus-layer-data}
@@ -153,9 +153,9 @@ Kwa sababu za kiusalama, kamati za wathibitishaji zilizochaguliwa bila mpangilio
 - Hali iliyokamilishwa - Ikiwa kipindi kimekamilishwa (Ndiyo/Hapana)
 - Muda - Muda ambao kipindi kiliisha
 - Uthibitisho - Idadi ya uthibitisho katika kipindi (kura kwa vitalu ndani ya sloti)
-- Amana - Idadi ya amana za ETH zilizojumuishwa katika kipindi (wathibitishaji lazima waweke dhamana ya ETH ili kuwa wathibitishaji)
+- Amana - Idadi ya amana za QAU zilizojumuishwa katika kipindi (wathibitishaji lazima waweke dhamana ya QAU ili kuwa wathibitishaji)
 - Ufyekaji - Idadi ya adhabu zinazotolewa kwa wapendekezaji wa vitalu au wathibitishaji
-- Ushiriki wa kupiga kura - Kiasi cha ETH iliyowekwa dhamana inayotumika kuthibitisha vitalu
+- Ushiriki wa kupiga kura - Kiasi cha QAU iliyowekwa dhamana inayotumika kuthibitisha vitalu
 - Wathibitishaji - Idadi ya wathibitishaji wanaofanya kazi kwa kipindi
 - Wastani wa salio la Mthibitishaji - Wastani wa salio kwa wathibitishaji wanaofanya kazi
 - Sloti - Idadi ya sloti zilizojumuishwa katika kipindi (sloti zinajumuisha kitalu kimoja halali)
@@ -231,8 +231,8 @@ Data ya kiwango cha juu ya tabaka la mwafaka inajumuisha yafuatayo:
 - Sloti ya sasa
 - Wathibitishaji wanaofanya kazi - Idadi ya wathibitishaji wanaofanya kazi
 - Wathibitishaji wanaosubiri - Idadi ya wathibitishaji wanaosubiri kufanywa waweze kufanya kazi
-- ETH iliyowekwa dhamana - Kiasi cha ETH iliyowekwa dhamana kwenye mtandao
-- Wastani wa salio - Wastani wa salio la ETH la wathibitishaji
+- QAU iliyowekwa dhamana - Kiasi cha QAU iliyowekwa dhamana kwenye mtandao
+- Wastani wa salio - Wastani wa salio la QAU la wathibitishaji
 
 ## Usomaji zaidi {#further-reading}
 

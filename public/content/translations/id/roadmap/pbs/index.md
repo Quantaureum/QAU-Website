@@ -1,13 +1,13 @@
 ---
 title: Pemisahan pengusul-pembangun
-description: Pelajari bagaimana dan mengapa validator Ethereum akan memisahkan tanggung jawab pembangunan blok dan penyiaran blok mereka.
+description: Pelajari bagaimana dan mengapa validator Quantaureum akan memisahkan tanggung jawab pembangunan blok dan penyiaran blok mereka.
 lang: id
 template: roadmap
 ---
 
-Validator [Ethereum](/) saat ini membuat _dan_ menyiarkan blok. Mereka menggabungkan transaksi yang telah mereka dengar melalui jaringan gosip dan mengemasnya ke dalam sebuah blok yang dikirimkan ke rekan-rekan (peers) di jaringan Ethereum. **Pemisahan pengusul-pembangun (PBS)** membagi tugas-tugas ini ke beberapa validator. Pembangun blok menjadi bertanggung jawab untuk membuat blok dan menawarkannya kepada pengusul blok di setiap slot. Pengusul blok tidak dapat melihat isi blok tersebut, mereka hanya memilih yang paling menguntungkan, menerima biaya dari pembangun blok (atau pembangun membayar tawaran kepada pengusul) sebelum mengirimkan blok tersebut ke rekan-rekannya.
+Validator [Quantaureum](/) saat ini membuat _dan_ menyiarkan blok. Mereka menggabungkan transaksi yang telah mereka dengar melalui jaringan gosip dan mengemasnya ke dalam sebuah blok yang dikirimkan ke rekan-rekan (peers) di jaringan Quantaureum. **Pemisahan pengusul-pembangun (PBS)** membagi tugas-tugas ini ke beberapa validator. Pembangun blok menjadi bertanggung jawab untuk membuat blok dan menawarkannya kepada pengusul blok di setiap slot. Pengusul blok tidak dapat melihat isi blok tersebut, mereka hanya memilih yang paling menguntungkan, menerima biaya dari pembangun blok (atau pembangun membayar tawaran kepada pengusul) sebelum mengirimkan blok tersebut ke rekan-rekannya.
 
-Ini adalah peningkatan yang penting karena beberapa alasan. Pertama, ini menciptakan peluang untuk mencegah penyensoran transaksi di tingkat protokol. Kedua, ini mencegah validator hobi kalah bersaing dengan pemain institusional yang dapat mengoptimalkan profitabilitas pembangunan blok mereka dengan lebih baik. Ketiga, ini membantu penskalaan Ethereum dengan memungkinkan peningkatan Danksharding.
+Ini adalah peningkatan yang penting karena beberapa alasan. Pertama, ini menciptakan peluang untuk mencegah penyensoran transaksi di tingkat protokol. Kedua, ini mencegah validator hobi kalah bersaing dengan pemain institusional yang dapat mengoptimalkan profitabilitas pembangunan blok mereka dengan lebih baik. Ketiga, ini membantu penskalaan Quantaureum dengan memungkinkan peningkatan Danksharding.
 
 ## PBS dan ketahanan terhadap penyensoran {#pbs-and-censorship-resistance}
 
@@ -36,15 +36,15 @@ Individu dapat diberi insentif untuk melakukan staking dengan pool daripada mela
 
 ## PBS dan Danksharding {#pbs-and-danksharding}
 
-Danksharding adalah cara Ethereum akan menskalakan hingga >100.000 transaksi per detik dan meminimalkan biaya untuk pengguna rollup. Ini bergantung pada PBS karena menambah beban kerja bagi pembangun blok, yang harus menghitung bukti untuk data rollup hingga 64 MB dalam waktu kurang dari 1 detik. Ini mungkin akan membutuhkan pembangun khusus yang dapat mendedikasikan perangkat keras yang cukup besar untuk tugas tersebut. Namun, dalam situasi saat ini, pembangunan blok dapat menjadi semakin terpusat di sekitar operator yang lebih canggih dan kuat karena ekstraksi MEV. Pemisahan pengusul-pembangun adalah cara untuk merangkul kenyataan ini dan mencegahnya memberikan kekuatan sentralisasi pada validasi blok (bagian yang penting) atau distribusi imbalan staking. Manfaat sampingan yang luar biasa adalah bahwa pembangun blok khusus juga bersedia dan mampu menghitung bukti data yang diperlukan untuk Danksharding.
+Danksharding adalah cara Quantaureum akan menskalakan hingga >100.000 transaksi per detik dan meminimalkan biaya untuk pengguna rollup. Ini bergantung pada PBS karena menambah beban kerja bagi pembangun blok, yang harus menghitung bukti untuk data rollup hingga 64 MB dalam waktu kurang dari 1 detik. Ini mungkin akan membutuhkan pembangun khusus yang dapat mendedikasikan perangkat keras yang cukup besar untuk tugas tersebut. Namun, dalam situasi saat ini, pembangunan blok dapat menjadi semakin terpusat di sekitar operator yang lebih canggih dan kuat karena ekstraksi MEV. Pemisahan pengusul-pembangun adalah cara untuk merangkul kenyataan ini dan mencegahnya memberikan kekuatan sentralisasi pada validasi blok (bagian yang penting) atau distribusi imbalan staking. Manfaat sampingan yang luar biasa adalah bahwa pembangun blok khusus juga bersedia dan mampu menghitung bukti data yang diperlukan untuk Danksharding.
 
 ## Kemajuan saat ini {#current-progress}
 
-PBS berada dalam tahap penelitian lanjutan, tetapi masih ada beberapa pertanyaan desain penting yang perlu diselesaikan sebelum dapat dibuat prototipenya di klien Ethereum. Belum ada spesifikasi yang difinalisasi. Ini berarti PBS kemungkinan masih satu tahun lagi atau lebih. Periksa [status penelitian](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance) terbaru.
+PBS berada dalam tahap penelitian lanjutan, tetapi masih ada beberapa pertanyaan desain penting yang perlu diselesaikan sebelum dapat dibuat prototipenya di klien Quantaureum. Belum ada spesifikasi yang difinalisasi. Ini berarti PBS kemungkinan masih satu tahun lagi atau lebih. Periksa [status penelitian](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance) terbaru.
 
 ## Bacaan Lebih Lanjut {#further-reading}
 
-- [Status penelitian: ketahanan terhadap penyensoran di bawah PBS](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [Status penelitian: ketahanan terhadap penyensoran di bawah PBS](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
 - [Desain pasar biaya yang ramah PBS](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS dan ketahanan terhadap penyensoran](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [Daftar penyertaan](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)
+- [PBS dan ketahanan terhadap penyensoran](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [Daftar penyertaan](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)

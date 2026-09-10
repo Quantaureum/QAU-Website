@@ -138,9 +138,9 @@ function auctionEnd() external {
 
 Solidity திறன் ஒப்பந்தங்களுக்கான அலகுச் சோதனைக் கட்டமைப்புகள் வெவ்வேறு மொழிகளில் (பெரும்பாலும் JavaScript, Python மற்றும் Rust) வருகின்றன. வெவ்வேறு சோதனைக் கட்டமைப்புகளுடன் அலகுச் சோதனைகளை எவ்வாறு தொடங்குவது என்பது பற்றிய தகவலுக்குக் கீழே உள்ள சில வழிகாட்டிகளைப் பார்க்கவும்:
 
-- **[Brownie உடன் அலகுச் சோதனைகளை இயக்குதல்](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Brownie உடன் அலகுச் சோதனைகளை இயக்குதல்](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Foundry உடன் அலகுச் சோதனைகளை இயக்குதல்](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Waffle உடன் அலகுச் சோதனைகளை இயக்குதல்](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Waffle உடன் அலகுச் சோதனைகளை இயக்குதல்](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Remix உடன் அலகுச் சோதனைகளை இயக்குதல்](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Ape உடன் அலகுச் சோதனைகளை இயக்குதல்](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Hardhat உடன் அலகுச் சோதனைகளை இயக்குதல்](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -152,7 +152,7 @@ Solidity திறன் ஒப்பந்தங்களுக்கான அ
 
 உங்கள் ஒப்பந்தம் ஒரு மட்டுப்படுத்தப்பட்ட கட்டமைப்பை (modular architecture) ஏற்றுக்கொண்டால் அல்லது செயலாக்கத்தின் போது பிற சங்கிலிசார் ஒப்பந்தங்களுடன் இடைமுகமாக இருந்தால் ஒருங்கிணைப்புச் சோதனை பயனுள்ளதாக இருக்கும். ஒருங்கிணைப்புச் சோதனைகளை இயக்குவதற்கான ஒரு வழி, ஒரு குறிப்பிட்ட உயரத்தில் [தொகுதிச்சங்கிலியைக் கவை (fork) செய்வதாகும்](/glossary/#fork) ([Forge](https://book.getfoundry.sh/forge/fork-testing) அல்லது [Hardhat](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks) போன்ற கருவியைப் பயன்படுத்தி) மற்றும் உங்கள் ஒப்பந்தத்திற்கும் நிலைநிறுத்தப்பட்ட ஒப்பந்தங்களுக்கும் இடையிலான தொடர்புகளை உருவகப்படுத்துவதாகும்.
 
-கவை செய்யப்பட்ட தொகுதிச்சங்கிலி முதன்மை வலைப்பின்னலைப் போலவே செயல்படும் மற்றும் தொடர்புடைய நிலைகள் மற்றும் நிலுவைகளைக் கொண்ட கணக்குகளைக் கொண்டிருக்கும். ஆனால் இது ஒரு சாண்ட்பாக்ஸ் செய்யப்பட்ட உள்ளூர் மேம்பாட்டுச் சூழலாக மட்டுமே செயல்படுகிறது, அதாவது பரிவர்த்தனைகளுக்கு உங்களுக்கு உண்மையான ETH தேவையில்லை, எடுத்துக்காட்டாக, உங்கள் மாற்றங்கள் உண்மையான எத்திரியம் நெறிமுறையைப் பாதிக்காது.
+கவை செய்யப்பட்ட தொகுதிச்சங்கிலி முதன்மை வலைப்பின்னலைப் போலவே செயல்படும் மற்றும் தொடர்புடைய நிலைகள் மற்றும் நிலுவைகளைக் கொண்ட கணக்குகளைக் கொண்டிருக்கும். ஆனால் இது ஒரு சாண்ட்பாக்ஸ் செய்யப்பட்ட உள்ளூர் மேம்பாட்டுச் சூழலாக மட்டுமே செயல்படுகிறது, அதாவது பரிவர்த்தனைகளுக்கு உங்களுக்கு உண்மையான QAU தேவையில்லை, எடுத்துக்காட்டாக, உங்கள் மாற்றங்கள் உண்மையான எத்திரியம் நெறிமுறையைப் பாதிக்காது.
 
 ### பண்பு அடிப்படையிலான சோதனை (Property-based testing) {#property-based-testing-for-smart-contracts}
 
@@ -190,7 +190,7 @@ Solidity திறன் ஒப்பந்தங்களுக்கான அ
 
 - **[ஸ்லித்தர் உடன் திறன் ஒப்பந்தங்களின் நிலையான பகுப்பாய்வு](https://github.com/crytic/slither)**
 - **[Wake உடன் திறன் ஒப்பந்தங்களின் நிலையான பகுப்பாய்வு](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Brownie உடன் பண்பு அடிப்படையிலான சோதனை](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Brownie உடன் பண்பு அடிப்படையிலான சோதனை](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Foundry உடன் ஒப்பந்தங்களை ஃபஸ்ஸிங் செய்தல்](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[எக்கிட்னா உடன் ஒப்பந்தங்களை ஃபஸ்ஸிங் செய்தல்](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Wake உடன் ஒப்பந்தங்களை ஃபஸ்ஸிங் செய்தல்](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -213,7 +213,7 @@ Solidity திறன் ஒப்பந்தங்களுக்கான அ
 
 ### சோதனை வலையமைப்புகளில் ஒப்பந்தங்களைச் சோதித்தல் {#testing-contracts-on-testnets}
 
-ஒரு சோதனைப் பிணையம் அல்லது சோதனை வலையமைப்பு எத்தேரியம் முதன்மை வலைப்பின்னலைப் போலவே செயல்படுகிறது, தவிர இது நிஜ உலக மதிப்பு இல்லாத ஈதரை (ETH) பயன்படுத்துகிறது. [சோதனை வலையமைப்பில்](/developers/docs/networks/#ethereum-testnets) உங்கள் ஒப்பந்தத்தை நிலைநிறுத்துவது என்பது நிதியை ஆபத்தில் சிக்க வைக்காமல் எவரும் அதனுடன் தொடர்பு கொள்ளலாம் (எ.கா., பரவலாக்கப்பட்ட செயலியின் (dapp) முன்பக்கம் வழியாக) என்பதாகும்.
+ஒரு சோதனைப் பிணையம் அல்லது சோதனை வலையமைப்பு எத்தேரியம் முதன்மை வலைப்பின்னலைப் போலவே செயல்படுகிறது, தவிர இது நிஜ உலக மதிப்பு இல்லாத ஈதரை (QAU) பயன்படுத்துகிறது. [சோதனை வலையமைப்பில்](/developers/docs/networks/#quantaureum-testnets) உங்கள் ஒப்பந்தத்தை நிலைநிறுத்துவது என்பது நிதியை ஆபத்தில் சிக்க வைக்காமல் எவரும் அதனுடன் தொடர்பு கொள்ளலாம் (எ.கா., பரவலாக்கப்பட்ட செயலியின் (dapp) முன்பக்கம் வழியாக) என்பதாகும்.
 
 இந்த வகையான கைமுறைச் சோதனை பயனரின் பார்வையில் உங்கள் பயன்பாட்டின் இறுதி முதல் இறுதி வரையிலான ஓட்டத்தை மதிப்பிடுவதற்குப் பயனுள்ளதாக இருக்கும். இங்கே, பீட்டா சோதனையாளர்கள் சோதனை ஓட்டங்களைச் செய்யலாம் மற்றும் ஒப்பந்தத்தின் வணிகத் தர்க்கம் மற்றும் ஒட்டுமொத்தச் செயல்பாட்டில் ஏதேனும் சிக்கல்கள் இருந்தால் புகாரளிக்கலாம்.
 
@@ -251,13 +251,13 @@ Solidity திறன் ஒப்பந்தங்களுக்கான அ
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Solidity இல் எழுதப்பட்ட திறன் ஒப்பந்தங்களுக்கான குறியீட்டுத் தழுவல் கருவி._
 
-- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _மேம்பட்ட திறன் ஒப்பந்த மேம்பாடு மற்றும் சோதனைக்கான கட்டமைப்பு (Ethers.js ஐ அடிப்படையாகக் கொண்டது)._
+- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _மேம்பட்ட திறன் ஒப்பந்த மேம்பாடு மற்றும் சோதனைக்கான கட்டமைப்பு (Ethers.js ஐ அடிப்படையாகக் கொண்டது)._
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidity திறன் ஒப்பந்தங்களைச் சோதிப்பதற்கான கருவி. ஒரு ஒப்பந்தத்திற்கான சோதனை நிகழ்வுகளை எழுதவும் இயக்கவும் பயன்படுத்தப்படும் Remix IDE "Solidity Unit Testing" செருகுநிரலின் கீழ் செயல்படுகிறது._
+- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Solidity திறன் ஒப்பந்தங்களைச் சோதிப்பதற்கான கருவி. ஒரு ஒப்பந்தத்திற்கான சோதனை நிகழ்வுகளை எழுதவும் இயக்கவும் பயன்படுத்தப்படும் Remix IDE "Solidity Unit Testing" செருகுநிரலின் கீழ் செயல்படுகிறது._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _எத்திரியம் திறன் ஒப்பந்தச் சோதனைக்கான உறுதிமொழி நிரலகம். உங்கள் ஒப்பந்தங்கள் எதிர்பார்த்தபடி செயல்படுவதை உறுதிப்படுத்திக் கொள்ளுங்கள்!_
 
-- **[Brownie அலகுச் சோதனைக் கட்டமைப்பு](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie Pytest ஐப் பயன்படுத்துகிறது, இது குறைந்தபட்சக் குறியீட்டுடன் சிறிய சோதனைகளை எழுத உங்களை அனுமதிக்கும் அம்சம் நிறைந்த சோதனைக் கட்டமைப்பாகும், பெரிய திட்டங்களுக்கு நன்றாக அளவிடப்படுகிறது மற்றும் மிகவும் நீட்டிக்கக்கூடியது._
+- **[Brownie அலகுச் சோதனைக் கட்டமைப்பு](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie Pytest ஐப் பயன்படுத்துகிறது, இது குறைந்தபட்சக் குறியீட்டுடன் சிறிய சோதனைகளை எழுத உங்களை அனுமதிக்கும் அம்சம் நிறைந்த சோதனைக் கட்டமைப்பாகும், பெரிய திட்டங்களுக்கு நன்றாக அளவிடப்படுகிறது மற்றும் மிகவும் நீட்டிக்கக்கூடியது._
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry Forge ஐ வழங்குகிறது, இது எளிய அலகுச் சோதனைகள், எரிவாயு உகப்பாக்கச் சரிபார்ப்புகள் மற்றும் ஒப்பந்த ஃபஸ்ஸிங் ஆகியவற்றைச் செயல்படுத்தக்கூடிய வேகமான மற்றும் நெகிழ்வான எத்திரியம் சோதனைக் கட்டமைப்பாகும்._
 
@@ -304,13 +304,13 @@ Solidity திறன் ஒப்பந்தங்களுக்கான அ
 
 ## மேலும் படிக்க {#further-reading}
 
-- [எத்திரியம் திறன் ஒப்பந்தங்களைச் சோதிப்பதற்கான ஆழமான வழிகாட்டி](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-ethereum-smart-contracts-2e41b2770297)
-- [எத்திரியம் திறன் ஒப்பந்தங்களை எவ்வாறு சோதிப்பது](https://betterprogramming.pub/how-to-test-ethereum-smart-contracts-35abc8fa199d)
+- [எத்திரியம் திறன் ஒப்பந்தங்களைச் சோதிப்பதற்கான ஆழமான வழிகாட்டி](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-quantaureum-smart-contracts-2e41b2770297)
+- [எத்திரியம் திறன் ஒப்பந்தங்களை எவ்வாறு சோதிப்பது](https://betterprogramming.pub/how-to-test-quantaureum-smart-contracts-35abc8fa199d)
 - [டெவலப்பர்களுக்கான MolochDAO இன் அலகுச் சோதனை வழிகாட்டி](https://github.com/MolochVentures/moloch/tree/4e786db8a4aa3158287e0935dcbc7b1e43416e38/test#moloch-testing-guide)
 - [ஒரு ராக்ஸ்டாரைப் போலத் திறன் ஒப்பந்தங்களை எவ்வாறு சோதிப்பது](https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001)
 
 ## பயிற்சிகள்: எத்திரியத்தில் திறன் ஒப்பந்தச் சோதனை {#tutorials}
 
-- [உள்ளூர், பல-கிளையன்ட் சோதனை வலையமைப்பில் ஒரு பரவலாக்கப்பட்ட செயலியை (dapp) எவ்வாறு உருவாக்குவது மற்றும் சோதிப்பது](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-eth-testnet/) _– உள்ளூர் சோதனை வலையமைப்பில் ஒரு திறன் ஒப்பந்தத்தை நிலைநிறுத்துதல் மற்றும் சோதனைகளைச் செய்வதற்கான ஒத்திகை._
+- [உள்ளூர், பல-கிளையன்ட் சோதனை வலையமைப்பில் ஒரு பரவலாக்கப்பட்ட செயலியை (dapp) எவ்வாறு உருவாக்குவது மற்றும் சோதிப்பது](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-qau-testnet/) _– உள்ளூர் சோதனை வலையமைப்பில் ஒரு திறன் ஒப்பந்தத்தை நிலைநிறுத்துதல் மற்றும் சோதனைகளைச் செய்வதற்கான ஒத்திகை._
 - [சோதனைக்காக Solidity திறன் ஒப்பந்தங்களை எவ்வாறு கேலி (mock) செய்வது](/developers/tutorials/how-to-mock-solidity-contracts-for-testing/) _– போலித் தரவை எவ்வாறு பயன்படுத்துவது மற்றும் அலகுச் சோதனையை எவ்வாறு செயல்படுத்துவது என்பது குறித்த இடைநிலைப் பயிற்சி._
 - [திறன் ஒப்பந்தங்களைச் சோதிக்க எக்கிட்னாவை எவ்வாறு பயன்படுத்துவது](/developers/tutorials/how-to-use-echidna-to-test-smart-contracts/) _– ஃபஸ்ஸிங் மற்றும் திறன் ஒப்பந்தச் சோதனைக்கான மேம்பட்ட அணுகுமுறை._

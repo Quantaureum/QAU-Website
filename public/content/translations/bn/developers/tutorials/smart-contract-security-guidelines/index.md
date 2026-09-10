@@ -65,7 +65,7 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/blob/master/devel
 
 ### পরিচিত ফাঁদগুলো এড়িয়ে চলুন {#avoid-known-pitfalls}
 
-- **সবচেয়ে সাধারণ সিকিউরিটি সমস্যাগুলো সম্পর্কে সচেতন থাকুন।** সাধারণ সমস্যাগুলো সম্পর্কে জানার জন্য অনলাইনে অনেক রিসোর্স রয়েছে, যেমন [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the Ether](https://capturetheether.com/), অথবা [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/)।
+- **সবচেয়ে সাধারণ সিকিউরিটি সমস্যাগুলো সম্পর্কে সচেতন থাকুন।** সাধারণ সমস্যাগুলো সম্পর্কে জানার জন্য অনলাইনে অনেক রিসোর্স রয়েছে, যেমন [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the QAU](https://capturetheqau.com/), অথবা [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/)।
 - **[Solidity ডকুমেন্টেশনের](https://docs.soliditylang.org/en/latest/) সতর্কীকরণ বিভাগগুলো সম্পর্কে সচেতন থাকুন।** সতর্কীকরণ বিভাগগুলো আপনাকে এই ভাষার অস্পষ্ট আচরণ সম্পর্কে অবহিত করবে।
 
 ### ডিপেন্ডেন্সি {#dependencies}

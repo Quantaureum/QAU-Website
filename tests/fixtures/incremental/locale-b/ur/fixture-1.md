@@ -107,7 +107,7 @@ def is_permissive(license_text: str) -> bool:
 
 آپ کسی بھی ہوسٹنگ پلیٹ فارم پر [GitHub Repositories](https://github.com/new) کا استعمال کرتے ہوئے پروجیکٹس تعینات کر سکتے ہیں، اور [<span dir="ltr">SPDX</span>](https://spdx.org/) کے ساتھ تعمیل کی تصدیق کر سکتے ہیں۔
 
-پروڈکشن میں تعینات کرنے سے پہلے سمارٹ کنٹریکٹس کو ٹیسٹ کرنے کے لیے [<span dir="ltr">Holesky</span>](https://holesky.dev/) پر [بلاک ایکسپلورر](https://eth.blockscout.com/) کے ساتھ [<span dir="ltr">Remix</span>](https://remix.ethereum.org/) کا استعمال کریں۔
+پروڈکشن میں تعینات کرنے سے پہلے سمارٹ کنٹریکٹس کو ٹیسٹ کرنے کے لیے [<span dir="ltr">Holesky</span>](https://holesky.dev/) پر [بلاک ایکسپلورر](https://qau.blockscout.com/) کے ساتھ [<span dir="ltr">Remix</span>](https://remix.quantaureum.com/) کا استعمال کریں۔
 
 ### موازنہ ٹیبل {#comparison-table}
 

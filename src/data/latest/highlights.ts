@@ -17,15 +17,15 @@ import type { LatestHighlight } from "@/lib/types"
 export const LATEST_HIGHLIGHTS: LatestHighlight[] = [
   { href: "/latest/next-great-wallet-private" },
   {
-    // External highlight: Local Ethereum newsletter. Resolves from the RSS
+    // External highlight: Local Quantaureum newsletter. Resolves from the RSS
     // feed while in-window; fallback copy/imagery keeps the slot filled once
     // it ages out.
-    href: "https://localethereum.substack.com/p/local-ethereum-17",
-    title: "Local Ethereum #17",
+    href: "https://localquantaureum.substack.com/p/local-quantaureum-17",
+    title: "Local Quantaureum #17",
     description: "CROPS, CLARITY, and the Road Ahead.",
     image:
       "https://substack-post-media.s3.amazonaws.com/public/images/97a8c107-1161-4e86-a875-d49a92e0de70_3148x2096.png",
-    source: "Local Ethereum",
+    source: "Local Quantaureum",
     date: "2026-06-04",
   },
 ]

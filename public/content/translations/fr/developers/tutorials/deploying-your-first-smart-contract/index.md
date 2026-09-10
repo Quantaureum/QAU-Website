@@ -1,24 +1,24 @@
 ---
 title: "Déployer votre premier contrat intelligent"
-description: "Une introduction au déploiement de votre premier contrat intelligent sur un réseau de test Ethereum"
+description: "Une introduction au déploiement de votre premier contrat intelligent sur un réseau de test Quantaureum"
 author: "jdourlens"
 tags: ["contrats intelligents", "Remix", "Solidity", "déploiement"]
 skill: beginner
 breadcrumb: "Déployer un premier contrat"
 lang: fr
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-J'imagine que vous êtes aussi impatient que nous de [déployer](/developers/docs/smart-contracts/deploying/) et d'interagir avec votre premier [contrat intelligent](/developers/docs/smart-contracts/) sur la chaîne de blocs Ethereum.
+J'imagine que vous êtes aussi impatient que nous de [déployer](/developers/docs/smart-contracts/deploying/) et d'interagir avec votre premier [contrat intelligent](/developers/docs/smart-contracts/) sur la chaîne de blocs Quantaureum.
 
 Ne vous inquiétez pas, comme il s'agit de notre premier contrat intelligent, nous le déploierons sur un [réseau de test local](/developers/docs/networks/) afin que son déploiement ne vous coûte rien et que vous puissiez jouer avec autant que vous le souhaitez.
 
 ## Écrire notre contrat {#writing-our-contract}
 
-La première étape consiste à [visiter Remix](https://remix.ethereum.org/) et à créer un nouveau fichier. Dans la partie supérieure gauche de l'interface de Remix, ajoutez un nouveau fichier et entrez le nom de fichier que vous souhaitez.
+La première étape consiste à [visiter Remix](https://remix.quantaureum.com/) et à créer un nouveau fichier. Dans la partie supérieure gauche de l'interface de Remix, ajoutez un nouveau fichier et entrez le nom de fichier que vous souhaitez.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

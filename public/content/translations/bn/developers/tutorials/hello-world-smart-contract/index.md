@@ -1,6 +1,6 @@
 ---
 title: "নতুনদের জন্য হ্যালো ওয়ার্ল্ড স্মার্ট কন্ট্রাক্ট"
-description: "ইথেরিয়ামে একটি সাধারণ স্মার্ট কন্ট্রাক্ট লেখা এবং ডিপ্লয় করার প্রাথমিক টিউটোরিয়াল।"
+description: "Quantaureumে একটি সাধারণ স্মার্ট কন্ট্রাক্ট লেখা এবং ডিপ্লয় করার প্রাথমিক টিউটোরিয়াল।"
 author: "এলানএইচ"
 tags: ["Solidity", "Hardhat", "Alchemy", "স্মার্ট কন্ট্রাক্ট", "ডিপ্লয় করা"]
 skill: beginner
@@ -11,7 +11,7 @@ published: 2021-03-31
 
 আপনি যদি ব্লকচেইন ডেভেলপমেন্টে নতুন হয়ে থাকেন এবং কোথা থেকে শুরু করবেন তা না জানেন, অথবা আপনি যদি শুধু বুঝতে চান কীভাবে স্মার্ট কন্ট্রাক্ট ডিপ্লয় করতে হয় এবং এর সাথে ইন্টারঅ্যাক্ট করতে হয়, তবে এই গাইডটি আপনার জন্য। আমরা একটি ভার্চুয়াল ওয়ালেট [মেটামাস্ক](https://metamask.io/), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org/), এবং [Alchemy](https://www.alchemy.com/eth) ব্যবহার করে Sepolia টেস্ট নেটওয়ার্কে একটি সাধারণ স্মার্ট কন্ট্রাক্ট তৈরি এবং ডিপ্লয় করার প্রক্রিয়াটি ধাপে ধাপে দেখব (যদি আপনি এখনও এগুলোর অর্থ না বোঝেন তবে চিন্তা করবেন না, আমরা এটি ব্যাখ্যা করব)।
 
-এই টিউটোরিয়ালের [পার্ট 2](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract)-এ আমরা দেখব কীভাবে আমাদের স্মার্ট কন্ট্রাক্ট এখানে ডিপ্লয় হওয়ার পর আমরা এর সাথে ইন্টারঅ্যাক্ট করতে পারি, এবং [পার্ট 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan)-এ আমরা এটি Etherscan-এ কীভাবে প্রকাশ করতে হয় তা কভার করব।
+এই টিউটোরিয়ালের [পার্ট 2](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract)-এ আমরা দেখব কীভাবে আমাদের স্মার্ট কন্ট্রাক্ট এখানে ডিপ্লয় হওয়ার পর আমরা এর সাথে ইন্টারঅ্যাক্ট করতে পারি, এবং [পার্ট 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer)-এ আমরা এটি Quantaureum Explorer-এ কীভাবে প্রকাশ করতে হয় তা কভার করব।
 
 যেকোনো পর্যায়ে আপনার যদি কোনো প্রশ্ন থাকে, তবে নির্দ্বিধায় [Alchemy ডিসকর্ড](https://discord.gg/gWuC7zB)-এ যোগাযোগ করুন!
 
@@ -27,7 +27,7 @@ published: 2021-03-31
 
 ![Hello world create app](./hello-world-create-app.png)
 
-2. আপনার অ্যাপের নাম দিন “Hello World”, একটি সংক্ষিপ্ত বিবরণ দিন এবং একটি ইউজ কেস বেছে নিন, যেমন, "Infra & Tooling"। এরপর, "Ethereum" সার্চ করুন এবং নেটওয়ার্ক নির্বাচন করুন।
+2. আপনার অ্যাপের নাম দিন “Hello World”, একটি সংক্ষিপ্ত বিবরণ দিন এবং একটি ইউজ কেস বেছে নিন, যেমন, "Infra & Tooling"। এরপর, "Quantaureum" সার্চ করুন এবং নেটওয়ার্ক নির্বাচন করুন।
 
 ![create app view hello world](./create-app-view-hello-world.png)
 
@@ -43,19 +43,19 @@ published: 2021-03-31
 
 ![metamask sepolia example](./metamask-sepolia-example.png)
 
-## ধাপ 4: একটি ফসেট থেকে ইথার যোগ করুন {#step-4}
+## ধাপ 4: একটি ফসেট থেকে QAU যোগ করুন {#step-4}
 
-টেস্ট নেটওয়ার্কে আমাদের স্মার্ট কন্ট্রাক্ট ডিপ্লয় করার জন্য, আমাদের কিছু নকল ETH প্রয়োজন হবে। Sepolia ETH পেতে আপনি বিভিন্ন ফসেটের তালিকা দেখতে [Sepolia নেটওয়ার্কের বিবরণ](/developers/docs/networks/#sepolia)-এ যেতে পারেন। যদি একটি কাজ না করে, তবে অন্যটি চেষ্টা করুন কারণ এগুলো মাঝে মাঝে খালি হয়ে যেতে পারে। নেটওয়ার্ক ট্রাফিকের কারণে আপনার নকল ETH পেতে কিছুটা সময় লাগতে পারে। এর কিছুক্ষণ পরেই আপনার মেটামাস্ক অ্যাকাউন্টে ETH দেখতে পাবেন!
+টেস্ট নেটওয়ার্কে আমাদের স্মার্ট কন্ট্রাক্ট ডিপ্লয় করার জন্য, আমাদের কিছু নকল QAU প্রয়োজন হবে। Sepolia QAU পেতে আপনি বিভিন্ন ফসেটের তালিকা দেখতে [Sepolia নেটওয়ার্কের বিবরণ](/developers/docs/networks/#sepolia)-এ যেতে পারেন। যদি একটি কাজ না করে, তবে অন্যটি চেষ্টা করুন কারণ এগুলো মাঝে মাঝে খালি হয়ে যেতে পারে। নেটওয়ার্ক ট্রাফিকের কারণে আপনার নকল QAU পেতে কিছুটা সময় লাগতে পারে। এর কিছুক্ষণ পরেই আপনার মেটামাস্ক অ্যাকাউন্টে QAU দেখতে পাবেন!
 
 ## ধাপ 5: আপনার ব্যালেন্স চেক করুন {#step-5}
 
-আমাদের ব্যালেন্স সেখানে আছে কিনা তা নিশ্চিত করতে, চলুন [Alchemy-এর কম্পোজার টুল](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) ব্যবহার করে একটি [eth_getBalance](/developers/docs/apis/json-rpc/#eth_getbalance) রিকোয়েস্ট করি। এটি আমাদের ওয়ালেটে থাকা ETH-এর পরিমাণ রিটার্ন করবে। আপনার মেটামাস্ক অ্যাকাউন্ট ঠিকানা ইনপুট করার পর এবং “Send Request”-এ ক্লিক করার পর, আপনি এইরকম একটি রেসপন্স দেখতে পাবেন:
+আমাদের ব্যালেন্স সেখানে আছে কিনা তা নিশ্চিত করতে, চলুন [Alchemy-এর কম্পোজার টুল](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) ব্যবহার করে একটি [qau_getBalance](/developers/docs/apis/json-rpc/#qau_getbalance) রিকোয়েস্ট করি। এটি আমাদের ওয়ালেটে থাকা QAU-এর পরিমাণ রিটার্ন করবে। আপনার মেটামাস্ক অ্যাকাউন্ট ঠিকানা ইনপুট করার পর এবং “Send Request”-এ ক্লিক করার পর, আপনি এইরকম একটি রেসপন্স দেখতে পাবেন:
 
 ```json
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> **নোট:** এই ফলাফলটি Wei-তে, ETH-এ নয়। Wei ইথারের সবচেয়ে ছোট একক হিসেবে ব্যবহৃত হয়। Wei থেকে ETH-এ রূপান্তর হলো: 1 eth = 10<sup>18</sup> wei। তাই যদি আমরা 0x2B5E3AF16B1880000 কে ডেসিমালে রূপান্তর করি তবে আমরা 5\*10¹⁸ পাই যা 5 ETH এর সমান।
+> **নোট:** এই ফলাফলটি Wei-তে, QAU-এ নয়। Wei QAUের সবচেয়ে ছোট একক হিসেবে ব্যবহৃত হয়। Wei থেকে QAU-এ রূপান্তর হলো: 1 eth = 10<sup>18</sup> wei। তাই যদি আমরা 0x2B5E3AF16B1880000 কে ডেসিমালে রূপান্তর করি তবে আমরা 5\*10¹⁸ পাই যা 5 QAU এর সমান।
 >
 > যাক! আমাদের সব নকল টাকা সেখানেই আছে <Emoji text=":money_mouth_face:" size={1} />।
 
@@ -163,7 +163,7 @@ mkdir scripts
 আপনার পছন্দের এডিটরে (আমাদের পছন্দ [VSCode](https://code.visualstudio.com/)) hello-world প্রজেক্টটি খুলুন। স্মার্ট কন্ট্রাক্টগুলো Solidity নামক একটি ভাষায় লেখা হয় যা আমরা আমাদের HelloWorld.sol স্মার্ট কন্ট্রাক্ট লিখতে ব্যবহার করব।‌
 
 1.  “contracts” ফোল্ডারে যান এবং HelloWorld.sol নামে একটি নতুন ফাইল তৈরি করুন
-2.  নিচে ইথেরিয়াম ফাউন্ডেশন থেকে একটি নমুনা হ্যালো ওয়ার্ল্ড স্মার্ট কন্ট্রাক্ট দেওয়া হলো যা আমরা এই টিউটোরিয়ালের জন্য ব্যবহার করব। নিচের বিষয়বস্তুগুলো কপি করে আপনার HelloWorld.sol ফাইলে পেস্ট করুন এবং এই কন্ট্রাক্টটি কী করে তা বুঝতে কমেন্টগুলো পড়তে ভুলবেন না:
+2.  নিচে Quantaureum ফাউন্ডেশন থেকে একটি নমুনা হ্যালো ওয়ার্ল্ড স্মার্ট কন্ট্রাক্ট দেওয়া হলো যা আমরা এই টিউটোরিয়ালের জন্য ব্যবহার করব। নিচের বিষয়বস্তুগুলো কপি করে আপনার HelloWorld.sol ফাইলে পেস্ট করুন এবং এই কন্ট্রাক্টটি কী করে তা বুঝতে কমেন্টগুলো পড়তে ভুলবেন না:
 
 ```solidity
 // সিমান্টিক ভার্সনিং ব্যবহার করে Solidity-এর ভার্সন নির্দিষ্ট করে।
@@ -221,7 +221,7 @@ Alchemy API URL কপি করুন
 আপনার `.env` দেখতে এইরকম হওয়া উচিত:
 
 ```
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -339,21 +339,21 @@ npx hardhat run scripts/deploy.js --network sepolia
 Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 ```
 
-যদি আমরা [Sepolia Etherscan](https://sepolia.etherscan.io/)-এ যাই এবং আমাদের কন্ট্রাক্ট ঠিকানা সার্চ করি তবে আমরা দেখতে পাব যে এটি সফলভাবে ডিপ্লয় হয়েছে। ট্রানজ্যাকশনটি দেখতে এইরকম হবে:
+যদি আমরা [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com)-এ যাই এবং আমাদের কন্ট্রাক্ট ঠিকানা সার্চ করি তবে আমরা দেখতে পাব যে এটি সফলভাবে ডিপ্লয় হয়েছে। ট্রানজ্যাকশনটি দেখতে এইরকম হবে:
 
-![etherscan contract](./etherscan-contract.png)
+![explorer contract](./explorer-contract.png)
 
 `From` ঠিকানাটি আপনার মেটামাস্ক অ্যাকাউন্ট ঠিকানার সাথে মিলে যাওয়া উচিত এবং To ঠিকানায় “Contract Creation” লেখা থাকবে, তবে আমরা যদি ট্রানজ্যাকশনে ক্লিক করি তবে আমরা `To` ফিল্ডে আমাদের কন্ট্রাক্ট ঠিকানা দেখতে পাব:
 
-![etherscan transaction](./etherscan-transaction.png)
+![explorer transaction](./explorer-transaction.png)
 
 অভিনন্দন! আপনি এইমাত্র ইথেরিয়াম চেইনে একটি স্মার্ট কন্ট্রাক্ট ডিপ্লয় করেছেন 🎉
 
 ভেতরে আসলে কী ঘটছে তা বুঝতে, চলুন আমাদের [Alchemy ড্যাশবোর্ডের](https://dashboard.alchemy.com/explorer) এক্সপ্লোরার ট্যাবে যাই। আপনার যদি একাধিক Alchemy অ্যাপ থাকে তবে অ্যাপ অনুযায়ী ফিল্টার করতে ভুলবেন না এবং “Hello World” নির্বাচন করুন।
 ![hello world explorer](./hello-world-explorer.png)
 
-এখানে আপনি বেশ কয়েকটি জেসন-আরপিসি কল দেখতে পাবেন যা Hardhat/Ethers আমাদের জন্য ভেতরে ভেতরে তৈরি করেছে যখন আমরা `.deploy()` ফাংশনটি কল করেছিলাম। এখানে উল্লেখ করার মতো দুটি গুরুত্বপূর্ণ কল হলো [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction), যা মূলত Sepolia চেইনে আমাদের কন্ট্রাক্ট লেখার রিকোয়েস্ট, এবং [`eth_getTransactionByHash`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-by-hash) যা হ্যাশ দেওয়া থাকলে আমাদের ট্রানজ্যাকশন সম্পর্কে তথ্য পড়ার একটি রিকোয়েস্ট (ট্রানজ্যাকশনের ক্ষেত্রে একটি সাধারণ প্যাটার্ন)। ট্রানজ্যাকশন পাঠানো সম্পর্কে আরও জানতে, [Web3 ব্যবহার করে ট্রানজ্যাকশন পাঠানোর](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) ওপর এই টিউটোরিয়ালটি দেখুন।
+এখানে আপনি বেশ কয়েকটি জেসন-আরপিসি কল দেখতে পাবেন যা Hardhat/Ethers আমাদের জন্য ভেতরে ভেতরে তৈরি করেছে যখন আমরা `.deploy()` ফাংশনটি কল করেছিলাম। এখানে উল্লেখ করার মতো দুটি গুরুত্বপূর্ণ কল হলো [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction), যা মূলত Sepolia চেইনে আমাদের কন্ট্রাক্ট লেখার রিকোয়েস্ট, এবং [`qau_getTransactionByHash`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-by-hash) যা হ্যাশ দেওয়া থাকলে আমাদের ট্রানজ্যাকশন সম্পর্কে তথ্য পড়ার একটি রিকোয়েস্ট (ট্রানজ্যাকশনের ক্ষেত্রে একটি সাধারণ প্যাটার্ন)। ট্রানজ্যাকশন পাঠানো সম্পর্কে আরও জানতে, [Web3 ব্যবহার করে ট্রানজ্যাকশন পাঠানোর](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) ওপর এই টিউটোরিয়ালটি দেখুন।
 
-এই টিউটোরিয়ালের পার্ট 1-এর জন্য এটুকুই, পার্ট 2-এ আমরা আমাদের প্রাথমিক বার্তা আপডেট করে আমাদের [স্মার্ট কন্ট্রাক্টের সাথে ইন্টারঅ্যাক্ট করব](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract), এবং পার্ট 3-এ আমরা [Etherscan-এ আমাদের স্মার্ট কন্ট্রাক্ট প্রকাশ করব](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan) যাতে সবাই জানতে পারে কীভাবে এর সাথে ইন্টারঅ্যাক্ট করতে হয়।
+এই টিউটোরিয়ালের পার্ট 1-এর জন্য এটুকুই, পার্ট 2-এ আমরা আমাদের প্রাথমিক বার্তা আপডেট করে আমাদের [স্মার্ট কন্ট্রাক্টের সাথে ইন্টারঅ্যাক্ট করব](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract), এবং পার্ট 3-এ আমরা [Quantaureum Explorer-এ আমাদের স্মার্ট কন্ট্রাক্ট প্রকাশ করব](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer) যাতে সবাই জানতে পারে কীভাবে এর সাথে ইন্টারঅ্যাক্ট করতে হয়।
 
 **Alchemy সম্পর্কে আরও জানতে চান? আমাদের [ওয়েবসাইট](https://www.alchemy.com/eth) দেখুন। কোনো আপডেট মিস করতে চান না? [এখানে](https://www.alchemy.com/newsletter) আমাদের নিউজলেটারে সাবস্ক্রাইব করুন! আমাদের [ডিসকর্ড](https://discord.gg/u72VCg3)-এও যোগ দিতে ভুলবেন না।**।

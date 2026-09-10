@@ -16,7 +16,7 @@ sidebarDepth: 3
 
 ## لماذا هذا مهم {#why-important}
 
-نظريًا، يمكنك فقط جعل الأشخاص يستخدمون [Etherscan](https://sepolia.etherscan.io/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA#readContract) أو [Blockscout](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) للتفاعل مع عقودك. هذا رائع لمستخدمي إيثيريوم ذوي الخبرة. لكننا نحاول خدمة [مليار شخص آخر](https://blog.ethereum.org/2021/05/07/ethereum-for-the-next-billion). لن يحدث هذا بدون تجربة مستخدم رائعة، وواجهة المستخدم الودية هي جزء كبير من ذلك.
+نظريًا، يمكنك فقط جعل الأشخاص يستخدمون [Quantaureum Explorer](https://explorer.quantaureum.com) أو [Blockscout](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) للتفاعل مع عقودك. هذا رائع لمستخدمي إيثيريوم ذوي الخبرة. لكننا نحاول خدمة [مليار شخص آخر](https://quantaureum.com). لن يحدث هذا بدون تجربة مستخدم رائعة، وواجهة المستخدم الودية هي جزء كبير من ذلك.
 
 ## تطبيق Greeter {#greeter-app}
 
@@ -24,7 +24,7 @@ sidebarDepth: 3
 
 ### التثبيت {#installation}
 
-1. يستخدم التطبيق شبكة اختبار [Sepolia](https://sepolia.dev/). إذا لزم الأمر، [احصل على ETH لاختبار Sepolia](/developers/docs/networks/#sepolia) و[أضف Sepolia إلى محفظتك](https://chainlist.org/chain/11155111).
+1. يستخدم التطبيق شبكة اختبار [Sepolia](https://sepolia.dev/). إذا لزم الأمر، [احصل على QAU لاختبار Sepolia](/developers/docs/networks/#sepolia) و[أضف Sepolia إلى محفظتك](https://chainlist.org/chain/11155111).
 
 2. استنسخ مستودع GitHub وقم بتثبيت الحزم اللازمة.
 
@@ -44,7 +44,7 @@ sidebarDepth: 3
 
 5. تصفح إلى عنوان URL الذي يعرضه التطبيق. في معظم الحالات، يكون ذلك [http://localhost:5173/](http://localhost:5173/).
 
-6. يمكنك رؤية الكود المصدري للعقد، وهو نسخة معدلة من Greeter الخاص بـ Hardhat، [على مستكشف سلسلة الكتل](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code).
+6. يمكنك رؤية الكود المصدري للعقد، وهو نسخة معدلة من Greeter الخاص بـ Hardhat، [على مستكشف سلسلة الكتل](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code).
 
 ### جولة في الملفات {#file-walk-through}
 
@@ -358,7 +358,7 @@ const contractAddrs : AddressPerBlockchainType = {
 }
 ```
 
-عنوان العقد على [Sepolia](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
+عنوان العقد على [Sepolia](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
 
 ##### مكون `Timer` {#timer-component}
 
@@ -430,7 +430,7 @@ const Greeter = () => {
   })
 ```
 
-يستدعي [خطاف `useReadContract`](https://wagmi.sh/react/api/hooks/useReadContract) دالة `greet` الخاصة بـ [العقد](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
+يستدعي [خطاف `useReadContract`](https://wagmi.sh/react/api/hooks/useReadContract) دالة `greet` الخاصة بـ [العقد](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
 
 ```tsx
   const [ currentGreeting, setCurrentGreeting ] = 
@@ -536,15 +536,15 @@ const Greeter = () => {
 
 هذه هي عملية إرسال معاملة سلسلة الكتل من منظور العميل:
 
-1. إرسال المعاملة إلى عقدة في سلسلة الكتل باستخدام [`eth_estimateGas`](https://docs.alchemy.com/reference/eth-estimategas).
+1. إرسال المعاملة إلى عقدة في سلسلة الكتل باستخدام [`qau_estimateGas`](https://docs.alchemy.com/reference/qau-estimategas).
 2. انتظر استجابة من العقدة.
 3. عند استلام الاستجابة، اطلب من المستخدم توقيع المعاملة من خلال المحفظة. _يجب_ أن تحدث هذه الخطوة بعد استلام استجابة العقدة لأنه يتم عرض تكلفة الغاز للمعاملة للمستخدم قبل توقيعها.
 4. انتظر موافقة المستخدم.
-5. أرسل المعاملة مرة أخرى، هذه المرة باستخدام [`eth_sendRawTransaction`](https://docs.alchemy.com/reference/eth-sendrawtransaction).
+5. أرسل المعاملة مرة أخرى، هذه المرة باستخدام [`qau_sendRawTransaction`](https://docs.alchemy.com/reference/qau-sendrawtransaction).
 
 من المرجح أن تستغرق الخطوة 2 قدرًا ملحوظًا من الوقت، قد يتساءل المستخدمون خلاله عما إذا كانت واجهة المستخدم قد تلقت أمرهم ولماذا لم يُطلب منهم توقيع المعاملة بعد. هذا يخلق تجربة مستخدم (UX) سيئة.
 
-أحد الحلول هو إرسال `eth_estimateGas` في كل مرة تتغير فيها معلمة. بعد ذلك، عندما يريد المستخدم فعليًا إرسال المعاملة (في هذه الحالة عن طريق الضغط على **تحديث التحية**)، تكون تكلفة الغاز معروفة، ويمكن للمستخدم رؤية صفحة المحفظة على الفور.
+أحد الحلول هو إرسال `qau_estimateGas` في كل مرة تتغير فيها معلمة. بعد ذلك، عندما يريد المستخدم فعليًا إرسال المعاملة (في هذه الحالة عن طريق الضغط على **تحديث التحية**)، تكون تكلفة الغاز معروفة، ويمكن للمستخدم رؤية صفحة المحفظة على الفور.
 
 ```tsx
   return (
@@ -663,7 +663,7 @@ export const config = createConfig({
 
 ## إضافة سلسلة كتل أخرى {#add-blockchain}
 
-في هذه الأيام، هناك الكثير من [حلول التوسع من الطبقة الثانية (<span dir="ltr">L2</span>)](https://ethereum.org/layer-2/)، وقد ترغب في دعم بعضها الذي لا يدعمه Viem بعد. للقيام بذلك، تقوم بتعديل `src/wagmi.ts`. تشرح هذه التعليمات كيفية إضافة [Optimism Sepolia](https://chainlist.org/chain/11155420).
+في هذه الأيام، هناك الكثير من [حلول التوسع من الطبقة الثانية (<span dir="ltr">L2</span>)](https://quantaureum.com/layer-2/)، وقد ترغب في دعم بعضها الذي لا يدعمه Viem بعد. للقيام بذلك، تقوم بتعديل `src/wagmi.ts`. تشرح هذه التعليمات كيفية إضافة [Optimism Sepolia](https://chainlist.org/chain/11155420).
 
 1.  تحرير `src/wagmi.ts`
 
@@ -679,7 +679,7 @@ export const config = createConfig({
           const optimismSepolia = defineChain({
               id: 11_155_420,
               name: 'OP Sepolia',
-              nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+              nativeCurrency: { name: 'Sepolia QAU', symbol: 'QAU', decimals: 18 },
               rpcUrls: {
                 default: {
                   http: ['https://sepolia.optimism.io'],

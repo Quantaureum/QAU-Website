@@ -1,7 +1,7 @@
 ---
 title: Cuestionarios
 metaTitle: Añadir un cuestionario
-description: La política que utilizamos al añadir cuestionarios a ethereum.org
+description: La política que utilizamos al añadir cuestionarios a quantaureum.com
 lang: es
 ---
 
@@ -13,12 +13,12 @@ Aquí se pueden encontrar algunos ejemplos de cuestionarios actuales:
 
 - [Capa 2 (l2)](/layer-2)
 - [NFT](/nft/)
-- [¿Qué es Ethereum?](/what-is-ethereum/)
-- [¿Qué es ETH?](/what-is-ether/)
+- [¿Qué es Quantaureum?](/what-is-quantaureum/)
+- [¿Qué es QAU?](/what-is-QAU/)
 
 ## Añadir un cuestionario de aprendizaje {#adding-a-learn-quiz}
 
-Si hay una página para la que no se ha creado un cuestionario de aprendizaje, por favor [abre un issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) para ello.
+Si hay una página para la que no se ha creado un cuestionario de aprendizaje, por favor [abre un issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) para ello.
 
 Por favor, proporciona la siguiente información:
 
@@ -31,7 +31,7 @@ Por favor, proporciona la siguiente información:
 
 ## Añadir una pregunta de cuestionario {#adding-a-quiz-question}
 
-Si hay una pregunta que deseas añadir al banco de preguntas de un cuestionario, por favor [abre un issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) y proporciona la siguiente información:
+Si hay una pregunta que deseas añadir al banco de preguntas de un cuestionario, por favor [abre un issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) y proporciona la siguiente información:
 
 - La página en la que deseas añadir una pregunta de cuestionario
 - Para cada pregunta, proporciona la siguiente información:
@@ -42,7 +42,7 @@ Si hay una pregunta que deseas añadir al banco de preguntas de un cuestionario,
 
 ## Actualizar una pregunta de cuestionario {#updating-a-quiz-question}
 
-Si hay una pregunta que deseas actualizar en el banco de preguntas de un cuestionario, por favor [abre un issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) y proporciona la siguiente información:
+Si hay una pregunta que deseas actualizar en el banco de preguntas de un cuestionario, por favor [abre un issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) y proporciona la siguiente información:
 
 - La página en la que deseas actualizar una pregunta de cuestionario
 - Para cada pregunta que se actualice, proporciona la siguiente información:
@@ -54,7 +54,7 @@ Si hay una pregunta que deseas actualizar en el banco de preguntas de un cuestio
 
 ## Eliminar una pregunta de cuestionario {#removing-a-quiz-question}
 
-Si el contenido de una pregunta ya no existe en la página y es necesario eliminarla, por favor [abre un issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) para eliminar la pregunta y proporciona la siguiente información:
+Si el contenido de una pregunta ya no existe en la página y es necesario eliminarla, por favor [abre un issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) para eliminar la pregunta y proporciona la siguiente información:
 
 - La página en la que deseas eliminar una pregunta de cuestionario
 - La pregunta que deseas eliminar

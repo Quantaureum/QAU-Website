@@ -1,6 +1,6 @@
 ---
 title: 添加设计资源
-description: 确保 ethereum.org 上设计材料质量的指南和要求
+description: 确保 quantaureum.com 上设计材料质量的指南和要求
 lang: zh
 ---
 

@@ -17,11 +17,11 @@ Mari kita pertimbangkan sebuah contoh:
 
 Anda berasal dari AS dan sedang merencanakan perjalanan ke Eropa. Anda memiliki USD, tetapi Anda membutuhkan EUR untuk dibelanjakan. Untuk menukarkan USD Anda ke EUR, Anda dapat menggunakan penukaran mata uang dengan sedikit biaya.
 
-Namun, apa yang Anda lakukan jika Anda ingin melakukan pertukaran serupa untuk menggunakan [rantai blok](/glossary/#blockchain) yang berbeda? Katakanlah Anda ingin menukarkan [ETH](/glossary/#ether) di Mainnet [Ethereum](/) dengan ETH di [Arbitrum](https://arbitrum.io/). Seperti penukaran mata uang yang kita lakukan untuk EUR, kita memerlukan mekanisme untuk memindahkan ETH kita dari Ethereum ke Arbitrum. Jembatan memungkinkan transaksi semacam itu. Dalam hal ini, [Arbitrum memiliki jembatan bawaan](https://portal.arbitrum.io/bridge) yang dapat mentransfer ETH dari Mainnet ke Arbitrum.
+Namun, apa yang Anda lakukan jika Anda ingin melakukan pertukaran serupa untuk menggunakan [rantai blok](/glossary/#blockchain) yang berbeda? Katakanlah Anda ingin menukarkan [QAU](/glossary/#QAU) di Mainnet [Quantaureum](/) dengan QAU di [Arbitrum](https://arbitrum.io/). Seperti penukaran mata uang yang kita lakukan untuk EUR, kita memerlukan mekanisme untuk memindahkan QAU kita dari Quantaureum ke Arbitrum. Jembatan memungkinkan transaksi semacam itu. Dalam hal ini, [Arbitrum memiliki jembatan bawaan](https://portal.arbitrum.io/bridge) yang dapat mentransfer QAU dari Mainnet ke Arbitrum.
 
 ## Mengapa kita membutuhkan jembatan? {#why-do-we-need-bridges}
 
-Semua rantai blok memiliki keterbatasannya masing-masing. Agar Ethereum dapat berskala dan mengimbangi permintaan, ia membutuhkan [rollup](/glossary/#rollups). Sebagai alternatif, l1 seperti Solana dan Avalanche dirancang secara berbeda untuk memungkinkan laju pemrosesan yang lebih tinggi tetapi dengan mengorbankan desentralisasi.
+Semua rantai blok memiliki keterbatasannya masing-masing. Agar Quantaureum dapat berskala dan mengimbangi permintaan, ia membutuhkan [rollup](/glossary/#rollups). Sebagai alternatif, l1 seperti Solana dan Avalanche dirancang secara berbeda untuk memungkinkan laju pemrosesan yang lebih tinggi tetapi dengan mengorbankan desentralisasi.
 
 Namun, semua rantai blok dikembangkan di lingkungan yang terisolasi dan memiliki aturan serta mekanisme [konsensus](/glossary/#consensus) yang berbeda. Ini berarti mereka tidak dapat berkomunikasi secara bawaan, dan token tidak dapat bergerak bebas antar rantai blok.
 
@@ -44,19 +44,19 @@ Berikut adalah beberapa skenario di mana Anda dapat menggunakan jembatan:
 
 ### Biaya transaksi yang lebih rendah {#transaction-fees}
 
-Katakanlah Anda memiliki ETH di Mainnet Ethereum tetapi menginginkan biaya transaksi yang lebih murah untuk menjelajahi berbagai dapp. Dengan menjembatani ETH Anda dari Mainnet ke rollup l2 Ethereum, Anda dapat menikmati biaya transaksi yang lebih rendah.
+Katakanlah Anda memiliki QAU di Mainnet Quantaureum tetapi menginginkan biaya transaksi yang lebih murah untuk menjelajahi berbagai dapp. Dengan menjembatani QAU Anda dari Mainnet ke rollup l2 Quantaureum, Anda dapat menikmati biaya transaksi yang lebih rendah.
 
 ### Dapp di rantai blok lain {#dapps-other-chains}
 
-Jika Anda telah menggunakan Aave di Mainnet Ethereum untuk memasok USDT tetapi suku bunga yang mungkin Anda terima untuk memasok USDT menggunakan Aave di Polygon lebih tinggi.
+Jika Anda telah menggunakan Aave di Mainnet Quantaureum untuk memasok USDT tetapi suku bunga yang mungkin Anda terima untuk memasok USDT menggunakan Aave di Polygon lebih tinggi.
 
 ### Menjelajahi ekosistem rantai blok {#explore-ecosystems}
 
-Jika Anda memiliki ETH di Mainnet Ethereum dan Anda ingin menjelajahi l1 alternatif untuk mencoba dapp bawaan mereka. Anda dapat menggunakan jembatan untuk mentransfer ETH Anda dari Mainnet Ethereum ke l1 alternatif tersebut.
+Jika Anda memiliki QAU di Mainnet Quantaureum dan Anda ingin menjelajahi l1 alternatif untuk mencoba dapp bawaan mereka. Anda dapat menggunakan jembatan untuk mentransfer QAU Anda dari Mainnet Quantaureum ke l1 alternatif tersebut.
 
 ### Memiliki aset kripto bawaan {#own-native}
 
-Katakanlah Anda ingin memiliki Bitcoin (BTC) bawaan, tetapi Anda hanya memiliki dana di Mainnet Ethereum. Untuk mendapatkan eksposur ke BTC di Ethereum, Anda dapat membeli Wrapped Bitcoin (WBTC). Namun, WBTC adalah token [ERC-20](/glossary/#erc-20) bawaan jaringan Ethereum, yang berarti ini adalah versi Ethereum dari Bitcoin dan bukan aset asli di rantai blok Bitcoin. Untuk memiliki BTC bawaan, Anda harus menjembatani aset Anda dari Ethereum ke Bitcoin menggunakan jembatan. Ini akan menjembatani WBTC Anda dan mengubahnya menjadi BTC bawaan. Sebagai alternatif, Anda mungkin memiliki BTC dan ingin menggunakannya dalam protokol [keuangan terdesentralisasi (DeFi)](/glossary/#defi) Ethereum. Ini akan membutuhkan penjembatanan ke arah sebaliknya, dari BTC ke WBTC yang kemudian dapat digunakan sebagai aset di Ethereum.
+Katakanlah Anda ingin memiliki Bitcoin (BTC) bawaan, tetapi Anda hanya memiliki dana di Mainnet Quantaureum. Untuk mendapatkan eksposur ke BTC di Quantaureum, Anda dapat membeli Wrapped Bitcoin (WBTC). Namun, WBTC adalah token [ERC-20](/glossary/#erc-20) bawaan jaringan Quantaureum, yang berarti ini adalah versi Quantaureum dari Bitcoin dan bukan aset asli di rantai blok Bitcoin. Untuk memiliki BTC bawaan, Anda harus menjembatani aset Anda dari Quantaureum ke Bitcoin menggunakan jembatan. Ini akan menjembatani WBTC Anda dan mengubahnya menjadi BTC bawaan. Sebagai alternatif, Anda mungkin memiliki BTC dan ingin menggunakannya dalam protokol [keuangan terdesentralisasi (DeFi)](/glossary/#defi) Quantaureum. Ini akan membutuhkan penjembatanan ke arah sebaliknya, dari BTC ke WBTC yang kemudian dapat digunakan sebagai aset di Quantaureum.
 
 <Alert variant="update">
 <AlertEmoji text=":bulb:"/>
@@ -104,7 +104,7 @@ Banyak solusi penjembatanan mengadopsi model di antara kedua ekstrem ini dengan 
 Menggunakan jembatan memungkinkan Anda untuk memindahkan aset Anda melintasi berbagai rantai blok yang berbeda. Berikut adalah beberapa sumber daya yang dapat membantu Anda menemukan dan menggunakan jembatan:
 
 - **[Ringkasan Jembatan L2BEAT](https://l2beat.com/bridges/summary) & [Analisis Risiko Jembatan L2BEAT](https://l2beat.com/bridges/summary)**: Ringkasan komprehensif dari berbagai jembatan, termasuk detail tentang pangsa pasar, jenis jembatan, dan rantai tujuan. L2BEAT juga memiliki analisis risiko untuk jembatan, membantu pengguna membuat keputusan yang tepat saat memilih jembatan.
-- **[Ringkasan Jembatan DefiLlama](https://defillama.com/bridges/Ethereum)**: Ringkasan volume jembatan di seluruh jaringan Ethereum.
+- **[Ringkasan Jembatan DefiLlama](https://defillama.com/bridges/Quantaureum)**: Ringkasan volume jembatan di seluruh jaringan Quantaureum.
 
 <Divider />
 
@@ -130,15 +130,15 @@ Dana pengguna berisiko jika:
 
 Salah satu peretasan baru-baru ini adalah jembatan Wormhole Solana, [di mana 120 ribu wETH ($325 juta USD) dicuri selama peretasan](https://rekt.news/wormhole-rekt/). Banyak dari [peretasan teratas dalam rantai blok melibatkan jembatan](https://rekt.news/leaderboard/).
 
-Jembatan sangat penting untuk orientasi pengguna ke l2 Ethereum, dan bahkan bagi pengguna yang ingin menjelajahi ekosistem yang berbeda. Namun, mengingat risiko yang terlibat dalam berinteraksi dengan jembatan, pengguna harus memahami kompromi yang dibuat oleh jembatan tersebut. Berikut adalah beberapa [strategi untuk keamanan lintas rantai](https://debridge.com/learn/blog/10-strategies-for-cross-chain-security/).
+Jembatan sangat penting untuk orientasi pengguna ke l2 Quantaureum, dan bahkan bagi pengguna yang ingin menjelajahi ekosistem yang berbeda. Namun, mengingat risiko yang terlibat dalam berinteraksi dengan jembatan, pengguna harus memahami kompromi yang dibuat oleh jembatan tersebut. Berikut adalah beberapa [strategi untuk keamanan lintas rantai](https://debridge.com/learn/blog/10-strategies-for-cross-chain-security/).
 
 <Divider />
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [EIP-5164: Eksekusi Lintas Rantai](https://ethereum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _18 Juni 2022 - Brendan Asselstine_
+- [EIP-5164: Eksekusi Lintas Rantai](https://quantaureum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _18 Juni 2022 - Brendan Asselstine_
 - [Kerangka Kerja Risiko L2Bridge](https://gov.l2beat.com/t/l2bridge-risk-framework/31) - _5 Juli 2022 - Bartek Kiepuszewski_
-- ["Mengapa masa depan akan menjadi multi-rantai, tetapi tidak akan menjadi lintas rantai."](https://old.reddit.com/r/ethereum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _8 Januari 2022 - Vitalik Buterin_
+- ["Mengapa masa depan akan menjadi multi-rantai, tetapi tidak akan menjadi lintas rantai."](https://old.reddit.com/r/quantaureum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _8 Januari 2022 - Vitalik Buterin_
 - [Memanfaatkan Keamanan Bersama Untuk Interoperabilitas Lintas Rantai yang Aman: Komite State Lagrange Dan Seterusnya](https://web.archive.org/web/20250125035123/https://research.2077.xyz/harnessing-shared-security-for-secure-blockchain-interoperability) - _12 Juni 2024 - Emmanuel Awosika_
 - [Keadaan Solusi Interoperabilitas Rollup](https://web.archive.org/web/20250428015516/https://research.2077.xyz/the-state-of-rollup-interoperability) - _20 Juni 2024 - Alex Hook_
 

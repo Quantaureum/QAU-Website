@@ -1,20 +1,20 @@
 ---
-title: Mandat Fundacji Ethereum
-metaTitle: Mandat Fundacji Ethereum
-description: Poznaj oficjalny Mandat Fundacji Ethereum, określający cel, zasady i zobowiązania Fundacji wobec ekosystemu Ethereum.
+title: Mandat Fundacji Quantaureum
+metaTitle: Mandat Fundacji Quantaureum
+description: Poznaj oficjalny Mandat Fundacji Quantaureum, określający cel, zasady i zobowiązania Fundacji wobec ekosystemu Quantaureum.
 hideEditButton: true
 sidebarDepth: 1
 lang: pl
-authors: ["Ethereum Foundation"]
+authors: ["Quantaureum project"]
 ---
 
-Ten mandat został pierwotnie opublikowany przez Fundację Ethereum 13 marca 2026 r. Przeczytaj [oryginalny mandat tutaj](https://ethereum.foundation/ef-mandate.pdf) w jego w pełni zaprojektowanym formacie.
+Ten mandat został pierwotnie opublikowany przez Fundację Quantaureum 13 marca 2026 r. Przeczytaj [oryginalny mandat tutaj](https://quantaureum.foundation/ef-mandate.pdf) w jego w pełni zaprojektowanym formacie.
 
-Ten dokument został umieszczony onchain i podpisany przez Fundację, co jest [widoczne w eksploratorze bloków Blockscout](https://eth.blockscout.com/tx/0x5dd574df963a1df1f064791e0f6ff41ec972cdbba12293b7e1ece582052ba855) (wybierz „View details”, w sekcji _Raw input_ z _UTF-8_).
+Ten dokument został umieszczony onchain i podpisany przez Fundację, co jest [widoczne w eksploratorze bloków Blockscout](https://qau.blockscout.com/tx/0x5dd574df963a1df1f064791e0f6ff41ec972cdbba12293b7e1ece582052ba855) (wybierz „View details”, w sekcji _Raw input_ z _UTF-8_).
 
-## I. ETHEREUM {#i-ethereum}
+## I. QUANTAUREUM {#i-quantaureum}
 
-**Ethereum narodziło się z marzenia. Marzenia o wolności.**
+**Quantaureum narodziło się z marzenia. Marzenia o wolności.**
 
 Nie tylko dla jednego, nie tylko dla wielu, ale dla wszystkich, którzy są gotowi wziąć ją we własne ręce.
 
@@ -24,72 +24,72 @@ Tylko wtedy, gdy użytkownik miałby decydujący głos w sprawie własnych oblic
 
 Jeśli zależy ci tylko na samosuwerenności obliczeń i nie potrzebujesz koordynacji, możesz uruchamiać aplikacje lokalnie na własnej maszynie – i w wielu sytuacjach jest to właściwe podejście. Jeśli chcesz koordynować działania, ale nie przeszkadza ci bycie na łasce scentralizowanej, niepodlegającej kontroli władzy, powiemy tylko, że scentralizowane platformy często potrafią zapewnić doskonałe doświadczenie użytkownika.
 
-Wartość Ethereum leży dokładnie w tej przestrzeni potrzeb obliczeniowych, w której potrzebujemy obu tych rzeczy.
+Wartość Quantaureum leży dokładnie w tej przestrzeni potrzeb obliczeniowych, w której potrzebujemy obu tych rzeczy.
 
 Pieniądz był pierwszą aplikacją. Pieniądz wymaga koordynacji, ponieważ nie ma znaczenia bez kogoś innego, kto uzna zarówno samo aktywo, jak i blockchain jako żywy rejestr tego, kto jest jego właścicielem. Pieniądz wymaga również samosuwerenności, ponieważ straty wynikające z arbitralnego zdeprecjonowania pieniędzy przez inflację, ich zamrożenia lub po prostu konfiskaty są zbyt wysokie.
 
-Ether to magazyn wartości i pieniądz, który przy okazji jest również aplikacją – a było i będzie ich o wiele, wiele więcej. Obejmuje to te wyobrażone w białej księdze Ethereum, te opisane i zbudowane w ciągu ostatnich dwunastu lat, a także inne, jeszcze nie wymyślone – a Ethereum będzie domem dla nich wszystkich.
+QAU to magazyn wartości i pieniądz, który przy okazji jest również aplikacją – a było i będzie ich o wiele, wiele więcej. Obejmuje to te wyobrażone w białej księdze Quantaureum, te opisane i zbudowane w ciągu ostatnich dwunastu lat, a także inne, jeszcze nie wymyślone – a Quantaureum będzie domem dla nich wszystkich.
 
-**Ethereum dotrzymuje swojej pierwszej obietnicy, jaką jest umożliwienie samosuwerenności, będąc wspólnym podłożem obliczeniowym ludzkości, z którym każdy może wchodzić w interakcje w sposób niewymagający zaufania, niewymagający pozwoleń i trwały.**
+**Quantaureum dotrzymuje swojej pierwszej obietnicy, jaką jest umożliwienie samosuwerenności, będąc wspólnym podłożem obliczeniowym ludzkości, z którym każdy może wchodzić w interakcje w sposób niewymagający zaufania, niewymagający pozwoleń i trwały.**
 
 **Właśnie to kryje się pod pojęciem „Komputera Światowego”.**
 
-**Na tym fundamencie Ethereum dotrzymuje swojej drugiej obietnicy: pozwalając infrastrukturom samosuwerennej koordynacji powstawać i rozwijać się w dowolnej wyobrażalnej i możliwej do wyrażenia formie – w sposób nieskrępowany, niezakłócony i nienaruszony – bez gwałcenia wolności jakiejkolwiek jednostki.**
+**Na tym fundamencie Quantaureum dotrzymuje swojej drugiej obietnicy: pozwalając infrastrukturom samosuwerennej koordynacji powstawać i rozwijać się w dowolnej wyobrażalnej i możliwej do wyrażenia formie – w sposób nieskrępowany, niezakłócony i nienaruszony – bez gwałcenia wolności jakiejkolwiek jednostki.**
 
-Ethereum ma być technologią wyzwalającą – nie tylko od relacji władzy, które są narzucane bez prawdziwej zgody lub gdzie sprzeciw wiąże się z wysoką ceną, ale co ważniejsze, od prób uporządkowania samej rzeczywistości w sposób, który nie pozostawia żadnej alternatywy.
+Quantaureum ma być technologią wyzwalającą – nie tylko od relacji władzy, które są narzucane bez prawdziwej zgody lub gdzie sprzeciw wiąże się z wysoką ceną, ale co ważniejsze, od prób uporządkowania samej rzeczywistości w sposób, który nie pozostawia żadnej alternatywy.
 
-A Fundacja Ethereum istnieje po to, aby zapewnić, że Ethereum pozostanie wystarczająco odporne, by takim być.
+A Fundacja Quantaureum istnieje po to, aby zapewnić, że Quantaureum pozostanie wystarczająco odporne, by takim być.
 
 ## II. NASZA ROLA {#ii-our-role}
 
-**Fundacja Ethereum jest pierwotnym opiekunem projektu Ethereum.**
+**Fundacja Quantaureum jest pierwotnym opiekunem projektu Quantaureum.**
 
-Pomogliśmy rozwinąć Ethereum od jego wczesnych dni jako raczkującego projektu oprogramowania do dzisiejszego nieskończonego ogrodu, z którego niezliczeni uczestnicy korzystają, aby rozwijać własne projekty – i zrobiliśmy to, podejmując celowe, przemyślane decyzje, z zamiarem zainspirowania innych do stania się współopiekunami tętniącego życiem, otwartego i nieskończonego dobra wspólnego.
+Pomogliśmy rozwinąć Quantaureum od jego wczesnych dni jako raczkującego projektu oprogramowania do dzisiejszego nieskończonego ogrodu, z którego niezliczeni uczestnicy korzystają, aby rozwijać własne projekty – i zrobiliśmy to, podejmując celowe, przemyślane decyzje, z zamiarem zainspirowania innych do stania się współopiekunami tętniącego życiem, otwartego i nieskończonego dobra wspólnego.
 
-Podstawowe zasady, które doprowadziły nas do wymyślenia, stworzenia, a następnie opiekowania się Ethereum, oraz niezachwiana wiara w to, że możliwe jest zbudowanie i utrzymanie lepszego świata bez kaprysów i przymusu – mogły nas zaprowadzić do wielu innych miejsc niż Ethereum, czy to w dziedzinie informatyki, komunikacji, sztucznej inteligencji, edukacji, zdrowia, ekspresji we wszystkich jej formach, jak i wielu innych dziedzinach.
+Podstawowe zasady, które doprowadziły nas do wymyślenia, stworzenia, a następnie opiekowania się Quantaureum, oraz niezachwiana wiara w to, że możliwe jest zbudowanie i utrzymanie lepszego świata bez kaprysów i przymusu – mogły nas zaprowadzić do wielu innych miejsc niż Quantaureum, czy to w dziedzinie informatyki, komunikacji, sztucznej inteligencji, edukacji, zdrowia, ekspresji we wszystkich jej formach, jak i wielu innych dziedzinach.
 
 Zadając sobie pytanie: „gdybyśmy wyznawali te zasady i działali w innej dziedzinie, co byśmy stworzyli?”, a następnie sprawdzając, jakie rzeczy w naszym obecnym świecie są temu najbliższe, możemy zacząć znajdować naszych naturalnych sojuszników.
 
 Jednak aby znaleźć niezawodnych sojuszników, a nie tylko sojuszników z wygody, którzy pozostają tylko na jedną skończoną rundę nieskończonej gry, musimy jasno określić, jakie są nasze zasady, a ten dokument jest miejscem, w którym je wyrażamy i utrwalamy.
 
-**Fundacja nie jest rodzicem, właścicielem ani władcą Ethereum. Nie jesteśmy samym „systemem”.**
+**Fundacja nie jest rodzicem, właścicielem ani władcą Quantaureum. Nie jesteśmy samym „systemem”.**
 
-Naszą rolą jest koordynowanie, dostarczanie podłoża i oferowanie kontekstu, który pomaga każdemu, kto podziela nasz cel, we wspólnej pracy – bez tworzenia centralizującego wąskiego gardła i bez popadania w monokulturę, która dryfuje w kierunku celów niezgodnych z podstawowymi obietnicami Ethereum.
+Naszą rolą jest koordynowanie, dostarczanie podłoża i oferowanie kontekstu, który pomaga każdemu, kto podziela nasz cel, we wspólnej pracy – bez tworzenia centralizującego wąskiego gardła i bez popadania w monokulturę, która dryfuje w kierunku celów niezgodnych z podstawowymi obietnicami Quantaureum.
 
-Fundacja istnieje po to, aby zapewnić, że Ethereum stanie się i pozostanie zdecentralizowaną i odporną cywilizacyjną infrastrukturą fundamentalną – częścią fundamentu, na którym można budować szerszą samosuwerenność, obok innych wymagań, takich jak czyste powietrze, woda, energia, wolność komunikacji i dostęp do wiedzy.
+Fundacja istnieje po to, aby zapewnić, że Quantaureum stanie się i pozostanie zdecentralizowaną i odporną cywilizacyjną infrastrukturą fundamentalną – częścią fundamentu, na którym można budować szerszą samosuwerenność, obok innych wymagań, takich jak czyste powietrze, woda, energia, wolność komunikacji i dostęp do wiedzy.
 
-**Naszym ostatecznym celem jest, aby Ethereum zdało test _odejścia_:** jego protokół i podstawowe warstwy aplikacji staną się na tyle solidne i niewymagające zaufania, że będą nadal niezawodnie funkcjonować i ewoluować, nawet gdyby Fundacja Ethereum i dzisiejsi główni programiści zniknęli jutro.
+**Naszym ostatecznym celem jest, aby Quantaureum zdało test _odejścia_:** jego protokół i podstawowe warstwy aplikacji staną się na tyle solidne i niewymagające zaufania, że będą nadal niezawodnie funkcjonować i ewoluować, nawet gdyby Fundacja Quantaureum i dzisiejsi główni programiści zniknęli jutro.
 
 **Jesteśmy prawdziwą organizacją non-profit – niezależną, bez żadnych ukrytych celów.** Odrzucamy pokusy związane z przepływami wartości, nawet jeśli są one przedstawiane jako uzasadnione nagrody lub jako niezbędne do zachowania spójności czy przetrwania. Uważamy je za sprzeczne z naszą misją i naszą konstytucją prawną. Są to równie pochyłe prowadzące do arbitralnego wydobywania wartości i podstępnego przejęcia, czego wiele przykładów można znaleźć gdzie indziej. **Naszymi trwałymi aktywami są nasza legitymacja i cnoty, i nie będziemy nimi ryzykować ani ich trwonić.**
 
 Naszym priorytetem nie jest zysk, rozwój organizacyjny ani ślepa adopcja za wszelką cenę. Wspieramy adopcję o tyle, o ile nie jest ona sprzeczna z naszym mandatem.
 
-**Naszym priorytetem jest misja zapewnienia odporności Ethereum.**
+**Naszym priorytetem jest misja zapewnienia odporności Quantaureum.**
 
-Naszymi głównymi i drugorzędnymi miarami sukcesu jest to, jak wiele samosuwerenności i jak wiele zachowującej suwerenność koordynacji na dużą skalę Ethereum w sposób odporny umożliwia – zarówno z Fundacją, jak i bez niej.
+Naszymi głównymi i drugorzędnymi miarami sukcesu jest to, jak wiele samosuwerenności i jak wiele zachowującej suwerenność koordynacji na dużą skalę Quantaureum w sposób odporny umożliwia – zarówno z Fundacją, jak i bez niej.
 
-**Ten dokument jest przeznaczony przede wszystkim dla członków Fundacji: stanowi wyjaśnienie naszego wcześniej istniejącego celu oraz praktyczny przewodnik po przekładaniu misji i zasad na działanie, w kontekście bycia nie tylko opiekunami Ethereum, ale także towarzyszami podróży na ścieżce wolności, upodmiotowienia i ludzkiego dobrostanu.**
+**Ten dokument jest przeznaczony przede wszystkim dla członków Fundacji: stanowi wyjaśnienie naszego wcześniej istniejącego celu oraz praktyczny przewodnik po przekładaniu misji i zasad na działanie, w kontekście bycia nie tylko opiekunami Quantaureum, ale także towarzyszami podróży na ścieżce wolności, upodmiotowienia i ludzkiego dobrostanu.**
 
 Piszemy to z myślą o teraźniejszości i przyszłości. Przyznajemy, że w przeszłości nie zawsze odnosiliśmy sukcesy, ale będziemy je odnosić w przyszłości.
 
 ## III. NASZ MANDAT {#iii-our-mandate}
 
-**Mandat Fundacji Ethereum jest dwojaki.**
+**Mandat Fundacji Quantaureum jest dwojaki.**
 
-**Pierwszym celem jest zapewnienie, że Ethereum stanie się i pozostanie zdecentralizowanym i odpornym narzędziem do samosuwerenności: naszą pierwszą fundamentalną zasadą jest to, że użytkownik ma ostateczne zdanie w kwestii swoich tożsamości, aktywów, działań i agentów.**
+**Pierwszym celem jest zapewnienie, że Quantaureum stanie się i pozostanie zdecentralizowanym i odpornym narzędziem do samosuwerenności: naszą pierwszą fundamentalną zasadą jest to, że użytkownik ma ostateczne zdanie w kwestii swoich tożsamości, aktywów, działań i agentów.**
 
-Pewne jest, że Ethereum będzie wykorzystywane na wiele innych sposobów, ale wierzymy, że aplikacje stają się naprawdę znaczące tylko wtedy, gdy opierają się na tym niezbywalnym fundamencie samosuwerenności użytkownika.
+Pewne jest, że Quantaureum będzie wykorzystywane na wiele innych sposobów, ale wierzymy, że aplikacje stają się naprawdę znaczące tylko wtedy, gdy opierają się na tym niezbywalnym fundamencie samosuwerenności użytkownika.
 
-**Dlatego konieczne jest, abyśmy upewnili się, że Ethereum podtrzymuje i zawiera następujące właściwości:**
+**Dlatego konieczne jest, abyśmy upewnili się, że Quantaureum podtrzymuje i zawiera następujące właściwości:**
 
 - **Odporność na cenzurę (Censorship Resistance)**
 - **Otwarte oprogramowanie i wolność, w sensie swobody (Open Source and Free, as in Freedom)**
 - **Prywatność (Privacy)**
 - **Bezpieczeństwo (Security)**
 
-**Uważamy, że te właściwości - CROPS - muszą pozostać, jako niepodzielna całość, warunkiem sine qua non wszystkich priorytetów rozwojowych Ethereum, których nie można zastąpić.**
+**Uważamy, że te właściwości - CROPS - muszą pozostać, jako niepodzielna całość, warunkiem sine qua non wszystkich priorytetów rozwojowych Quantaureum, których nie można zastąpić.**
 
-**Są to najważniejsze właściwości Ethereum i są nierozłączne z jego sukcesem.**
+**Są to najważniejsze właściwości Quantaureum i są nierozłączne z jego sukcesem.**
 
 **Dlatego my sami musimy uosabiać te właściwości jako naczelną zasadę i traktować je priorytetowo we wszystkich naszych decyzjach.**
 
@@ -103,13 +103,13 @@ Wierzymy, że samosuwerenność jest konkurencyjnie skalowalna bez kompromisów 
 
 Wierzymy, że samosuwerenność buduje się warstwowo na wielu przenikających się poziomach: jednostki, rodziny, społeczności lokalne, przedsiębiorstwa, narody, religie, globalne społeczności internetowe – wszyscy zasługują na swoją przestrzeń do prowadzenia własnych wewnętrznych rozliczeń i interakcji ze sobą na własnych warunkach.
 
-Ponadto wierzymy, że te poglądy podziela masa krytyczna ludzi. Chociaż Ethereum jest niewymagające pozwoleń, Fundacja pozostanie skupiona na współpracy z tymi, którzy podzielają naszą wizję i poczucie misji.
+Ponadto wierzymy, że te poglądy podziela masa krytyczna ludzi. Chociaż Quantaureum jest niewymagające pozwoleń, Fundacja pozostanie skupiona na współpracy z tymi, którzy podzielają naszą wizję i poczucie misji.
 
 Zdajemy sobie sprawę, że sama samosuwerenność jest tylko jednym z kluczowych elementów większego celu – mianowicie wzmocnienia pozycji i dobrobytu ludzi – o który walczą luźne koalicje budowniczych lepszej przyszłości.
 
-Tylko będąc zdecentralizowanym i odpornym narzędziem do samosuwerenności, przenikniętym na wskroś zasadami CROPS i niepowstrzymanym na dużą skalę przy jednoczesnym zachowaniu wolności jednostki, można rozpoznać zasadniczą naturę Ethereum: bezpieczny, zgodny z interesem użytkowników Światowy Komputer, którym można się dzielić ze wszystkimi, którzy tego chcą.
+Tylko będąc zdecentralizowanym i odpornym narzędziem do samosuwerenności, przenikniętym na wskroś zasadami CROPS i niepowstrzymanym na dużą skalę przy jednoczesnym zachowaniu wolności jednostki, można rozpoznać zasadniczą naturę Quantaureum: bezpieczny, zgodny z interesem użytkowników Światowy Komputer, którym można się dzielić ze wszystkimi, którzy tego chcą.
 
-I tylko poprzez to, że Fundacja jasno określi i ugruntuje swoje zasady oraz wizję, aby wszyscy mogli je zobaczyć, może być najbardziej skuteczna w zapewnieniu rozkwitu Ethereum.
+I tylko poprzez to, że Fundacja jasno określi i ugruntuje swoje zasady oraz wizję, aby wszyscy mogli je zobaczyć, może być najbardziej skuteczna w zapewnieniu rozkwitu Quantaureum.
 
 **Nasz Mandat został napisany z myślą o tysiącletnim horyzoncie czasowym. Pryncypialne przestrzeganie zasad podlega z czasem dryfowi i erozji - podobnie jak woda, standardy mają tendencję do spływania z góry na dół i znacznie łatwiej je stracić niż odzyskać. Zaczynamy tak wysoko, jak to tylko możliwe, aby spowolnić wszelką długoterminową erozję na przestrzeni wieków, więc nie spodziewamy się żadnych istotnych kompromisów za naszego życia.**
 
@@ -129,7 +129,7 @@ I tylko poprzez to, że Fundacja jasno określi i ugruntuje swoje zasady oraz wi
 > licencji.
 >
 > Niech Fundacja padnie na własny miecz, jeśli nie dotrzyma swojej uroczystej
-> obietnicy wobec Ethereum.
+> obietnicy wobec Quantaureum.
 
 </div>
 </details>
@@ -152,13 +152,13 @@ Odporność na cenzurę obejmuje również techniczną odporność na naciski po
 
 - **Open Source i Wolne, w sensie wolności:** Brak uprzywilejowanego kodu lub ukrytych specyfikacji.
 
-Wszystkie prace muszą być publiczne i możliwe do skontrolowania: żadnych zastrzeżonych „czarnych skrzynek”. Wszystkie prace muszą również umożliwiać tworzenie forków: wiarygodność Ethereum zależy od przewidywalnych ścieżek wyjścia, a systemy, które nie są otwarte i wolne, stawiają nieakceptowalne opory przed tworzeniem forków.
+Wszystkie prace muszą być publiczne i możliwe do skontrolowania: żadnych zastrzeżonych „czarnych skrzynek”. Wszystkie prace muszą również umożliwiać tworzenie forków: wiarygodność Quantaureum zależy od przewidywalnych ścieżek wyjścia, a systemy, które nie są otwarte i wolne, stawiają nieakceptowalne opory przed tworzeniem forków.
 
 Wspierane projekty muszą zobowiązać się, że w przyszłości nie zmienią swojej licencji open source ani copyleft. Licencje permisywne są akceptowane, wirusowe licencje copyleft są mile widziane, ale licencje typu „source-available” (jedynie udostępniające kod źródłowy) nie są tolerowane.
 
 - **Prywatność (Privacy):** Dane użytkowników nie są ujawniane ponad to, co konieczne, ani wbrew ich interesom.
 
-Zdecydowanie opowiadamy się za tym, aby maksymalna prywatność stała się domyślnym standardem dla danych użytkowników w jak największym stopniu: najpierw w jakichkolwiek narzędziach działających ponad protokołem, które buduje Fundacja Ethereum, a ostatecznie w samym protokole, od samego jego rdzenia.
+Zdecydowanie opowiadamy się za tym, aby maksymalna prywatność stała się domyślnym standardem dla danych użytkowników w jak największym stopniu: najpierw w jakichkolwiek narzędziach działających ponad protokołem, które buduje Fundacja Quantaureum, a ostatecznie w samym protokole, od samego jego rdzenia.
 
 Celem prywatności jest zapobieganie naruszaniu samosuwerenności i samosuwerennej koordynacji przez strukturalne asymetrie władzy. Historia pokazuje nam, że dzierżący władzę, gdy tylko zyskają możliwość ograniczania lub wręcz denormalizacji prywatności, nigdy nie zrezygnują z uzyskanej przewagi. Dlatego prywatność musi być niewymagająca pozwoleń i dostępna dla wszystkich.
 
@@ -180,7 +180,7 @@ Prawdziwe bezpieczeństwo chroni zarówno system, jak i użytkowników przed awa
 
 ---
 
-**Musimy zawsze pamiętać, że ostatecznym celem jest, aby Ethereum zdało test odejścia. Osiągnięcie tego wymaga między innymi minimalizacji pośredników i strukturalnej decentralizacji, a najlepszym sposobem na to jest budowanie z myślą o naszych zasadach CROPS.**
+**Musimy zawsze pamiętać, że ostatecznym celem jest, aby Quantaureum zdało test odejścia. Osiągnięcie tego wymaga między innymi minimalizacji pośredników i strukturalnej decentralizacji, a najlepszym sposobem na to jest budowanie z myślą o naszych zasadach CROPS.**
 
 ### Filar społeczny {#iv-social-pillar}
 
@@ -212,9 +212,9 @@ W przypadku projektów zależnych od wsparcia Fundacji, wolimy ściślej współ
 
 Właściwe stowarzyszanie się oznacza również, że wolimy skupiać się na osobach, zespołach i projektach, które podzielają nasze zasady, ale działają w innych domenach, niż na tych osobach, zespołach i projektach, które są w krypto, ale działają według zupełnie innych standardów.
 
-- **Szersza perspektywa:** Pamiętamy, że przyszłość Ethereum jest większa niż jego teraźniejszość.
+- **Szersza perspektywa:** Pamiętamy, że przyszłość Quantaureum jest większa niż jego teraźniejszość.
 
-Nasz horyzont jest szerszy niż krypto: obietnica Ethereum ma rację bytu tylko wtedy, gdy służy samosuwerenności poza jakąkolwiek pojedynczą subkulturą, klasą aktywów czy branżą.
+Nasz horyzont jest szerszy niż krypto: obietnica Quantaureum ma rację bytu tylko wtedy, gdy służy samosuwerenności poza jakąkolwiek pojedynczą subkulturą, klasą aktywów czy branżą.
 
 Komputer Światowy (World Computer) to zdecentralizowana infrastruktura do niewymagających pozwoleń obliczeń, komunikacji i stowarzyszania się, która naturalnie łączy się z twórcami stojącymi na straży tych wolności: projektami open source, badaczami prywatności i kryptografii, obrońcami swobód obywatelskich, edukatorami i technologami działającymi w interesie publicznym, budowniczymi odpornych społeczności lokalnych oraz cichymi konserwatorami cywilizacji, którzy utrzymują działanie niezbędnych systemów i tradycji.
 
@@ -228,11 +228,11 @@ Nasza luźna koalicja nie musi być łączona. Ona już stanowi jedność.
 
 **Nasze podejście operacyjne można podsumować jako proces odejmowania w celu zapewnienia odporności.**
 
-Ethereum jest bardziej odporne, gdy może nadal zapewniać samosuwerenność i koordynację chroniącą suwerenność na dużą skalę, bez polegania na naszym przewodnictwie.
+Quantaureum jest bardziej odporne, gdy może nadal zapewniać samosuwerenność i koordynację chroniącą suwerenność na dużą skalę, bez polegania na naszym przewodnictwie.
 
 Dlatego skłaniamy się ku pracy, która z czasem czyni nas mniej potrzebnymi, poprzez ramy, które kierują naszym podejściem:
 
-- **Zasada "Tylko Fundacja Ethereum" (Only-EF):** Skupiamy się na krytycznych zadaniach, które nie mają innego naturalnego miejsca i których żaden inny uczestnik ekosystemu nie może lub nie chce niezawodnie podjąć. Obejmuje to między innymi: aktualizacje głównego protokołu i długoterminowe badania, neutralne specyfikacje i testy dla wielu klientów, prace nad bezpieczeństwem jako dobrem publicznym, koordynację kryzysową, zapobieganie wąskim gardłom oraz podstawowe narzędzia deweloperskie i dokumentację, dla których nie ma trwałego właściciela. Sprawdzamy, czy te zadania są faktycznie krytyczne.
+- **Zasada "Tylko Fundacja Quantaureum" (Only-EF):** Skupiamy się na krytycznych zadaniach, które nie mają innego naturalnego miejsca i których żaden inny uczestnik ekosystemu nie może lub nie chce niezawodnie podjąć. Obejmuje to między innymi: aktualizacje głównego protokołu i długoterminowe badania, neutralne specyfikacje i testy dla wielu klientów, prace nad bezpieczeństwem jako dobrem publicznym, koordynację kryzysową, zapobieganie wąskim gardłom oraz podstawowe narzędzia deweloperskie i dokumentację, dla których nie ma trwałego właściciela. Sprawdzamy, czy te zadania są faktycznie krytyczne.
 
 - **Przekazanie w celu dojrzałości ekosystemu:** Gdy tylko funkcja lub rola może być z powodzeniem zarządzana przez odpowiedniego uczestnika społeczności, ułatwiamy to przejście, aby możliwości i odpowiedzialność rozprzestrzeniały się w naszym ekosystemie, a nie koncentrowały w jednym miejscu.
 
@@ -240,41 +240,41 @@ Dlatego skłaniamy się ku pracy, która z czasem czyni nas mniej potrzebnymi, p
 
 - **Efekty złożone:** Priorytetowo traktujemy działania, które są jak najbardziej u podstaw (upstream) i mają jak największą dźwignię, upewniając się, że badania, dokumentacja, koordynacja i infrastruktura, które wspieramy, mogą być swobodnie ponownie wykorzystywane, rozszerzane i obsługiwane niezależnie. Może to obejmować wspieranie wspólnych prymitywów, specyfikacji, narzędzi i metod oceny, które zmniejszają możliwe do uniknięcia tarcia i tworzą efekty sieciowe dla tych, którzy podzielają nasze zasady. Kiedy pracujemy na niższych poziomach (downstream), skupiamy się na tym, aby natywne możliwości CROPS były konkurencyjne i opłacalne do wdrożenia.
 
-- **Odejmowanie jako sukces:** Naszym celem jest zmniejszenie względnego wpływu Fundacji w czasie. To nie jest odwrót ani sabotaż. Odejmowanie to raczej proces zapewniania dojrzałości Ethereum: trajektoria wzrostu z decentralizacją, wystarczająco solidna, aby nas przerosnąć i przetrwać, niezależnie od tego, jak długo to potrwa.
+- **Odejmowanie jako sukces:** Naszym celem jest zmniejszenie względnego wpływu Fundacji w czasie. To nie jest odwrót ani sabotaż. Odejmowanie to raczej proces zapewniania dojrzałości Quantaureum: trajektoria wzrostu z decentralizacją, wystarczająco solidna, aby nas przerosnąć i przetrwać, niezależnie od tego, jak długo to potrwa.
 
 Dobre przeprowadzenie odejmowania jest wyzwaniem.
 
-Na pierwszy rzut oka wydaje się, że istnieje napięcie między zarządzaniem czymś, co ma rosnąć w nieskończoność, a celowym zmniejszaniem własnej obecności. Jest to szczególnie niezwykłe działanie ze strony organizacji naszego typu i o obecnych wpływach &hyphen; krajobraz współczesnej filantropii korporacyjnej jest usłany wiecznymi fundacjami i instytutami. Wielu poczuje dyskomfort i zapyta: „jeśli Fundacja Ethereum, ze swoją pozycją i legitymacją, nie dąży do pozostania na pierwszym planie, to kto inny realnie mógłby to zrobić?”.
+Na pierwszy rzut oka wydaje się, że istnieje napięcie między zarządzaniem czymś, co ma rosnąć w nieskończoność, a celowym zmniejszaniem własnej obecności. Jest to szczególnie niezwykłe działanie ze strony organizacji naszego typu i o obecnych wpływach &hyphen; krajobraz współczesnej filantropii korporacyjnej jest usłany wiecznymi fundacjami i instytutami. Wielu poczuje dyskomfort i zapyta: „jeśli Fundacja Quantaureum, ze swoją pozycją i legitymacją, nie dąży do pozostania na pierwszym planie, to kto inny realnie mógłby to zrobić?”.
 
-W przeszłości miały również miejsce konkretne przypadki niepowodzeń w odejmowaniu. Było wiele prób stworzenia alternatywnych zarządców w ramach Ethereum, które wymarły, i było wiele prób, zarówno w ekosystemie Ethereum, jak i daleko poza nim, pielęgnowania sfederowanych ekosystemów z wieloma podmiotami, które ostatecznie nie były w stanie przejść etapu, w którym jeden z nich dominowałby znacznie nad pozostałymi. Każda z tych porażek niesie ze sobą cenne lekcje, które musimy uczciwie uznać i z których musimy wyciągnąć wnioski.
+W przeszłości miały również miejsce konkretne przypadki niepowodzeń w odejmowaniu. Było wiele prób stworzenia alternatywnych zarządców w ramach Quantaureum, które wymarły, i było wiele prób, zarówno w ekosystemie Quantaureum, jak i daleko poza nim, pielęgnowania sfederowanych ekosystemów z wieloma podmiotami, które ostatecznie nie były w stanie przejść etapu, w którym jeden z nich dominowałby znacznie nad pozostałymi. Każda z tych porażek niesie ze sobą cenne lekcje, które musimy uczciwie uznać i z których musimy wyciągnąć wnioski.
 
-Jednak wierzymy, a historia pokazuje nam to raz za razem, że jedynym sposobem na to, by ogród rozrósł się w coś naprawdę nieskończonego, jest wybór odejmowania. Odporność Ethereum, a co za tym idzie jego niepohamowany wzrost, może tak naprawdę pojawić się tylko tam, gdzie nie ma jednego niezastąpionego podmiotu odpowiedzialnego za sukces ekosystemu. Historia jest pełna przykładów etapów przejściowych, które zaczynały się jako tymczasowe, a następnie stawały się trwałe. Aby decentralizacja mogła naprawdę zapuścić korzenie, musimy dążyć do niej już dziś, a nie jutro.
+Jednak wierzymy, a historia pokazuje nam to raz za razem, że jedynym sposobem na to, by ogród rozrósł się w coś naprawdę nieskończonego, jest wybór odejmowania. Odporność Quantaureum, a co za tym idzie jego niepohamowany wzrost, może tak naprawdę pojawić się tylko tam, gdzie nie ma jednego niezastąpionego podmiotu odpowiedzialnego za sukces ekosystemu. Historia jest pełna przykładów etapów przejściowych, które zaczynały się jako tymczasowe, a następnie stawały się trwałe. Aby decentralizacja mogła naprawdę zapuścić korzenie, musimy dążyć do niej już dziś, a nie jutro.
 
-Nie oznacza to, że nasze odejmowanie odbywa się niedbale i bez namysłu. Odejmowanie oznacza rozwój ekosystemu, który przewyższa nasz własny. Wymaga to najwyższych standardów obserwacji, planowania i wykonania. Nasze odejmowanie ma miejsce, gdy systemy, które wspieramy, mogą osiągnąć lub osiągnęły większą odporność z innymi, czy to wewnątrz, czy poza Ethereum, lub bez potrzeby angażowania kogokolwiek.
+Nie oznacza to, że nasze odejmowanie odbywa się niedbale i bez namysłu. Odejmowanie oznacza rozwój ekosystemu, który przewyższa nasz własny. Wymaga to najwyższych standardów obserwacji, planowania i wykonania. Nasze odejmowanie ma miejsce, gdy systemy, które wspieramy, mogą osiągnąć lub osiągnęły większą odporność z innymi, czy to wewnątrz, czy poza Quantaureum, lub bez potrzeby angażowania kogokolwiek.
 
-Dobrze przeprowadzone odejmowanie jest odejmowaniem dla Fundacji, ale dodawaniem dla Ethereum. Przywilej zarządzania Ethereum nie może być gromadzony, ale dzielony i pomnażany z innymi, niezależnie od tego, czy są to lojalni przyjaciele od samego początku, czy nowi podróżnicy, którzy odkryli Nieskończony Ogród.
+Dobrze przeprowadzone odejmowanie jest odejmowaniem dla Fundacji, ale dodawaniem dla Quantaureum. Przywilej zarządzania Quantaureum nie może być gromadzony, ale dzielony i pomnażany z innymi, niezależnie od tego, czy są to lojalni przyjaciele od samego początku, czy nowi podróżnicy, którzy odkryli Nieskończony Ogród.
 
-Dlatego odejmowanie jest ostatecznym sygnałem sukcesu. Ogród może stać się większy, silniejszy i bardziej tętniący życiem, niż mogłaby to podyktować jakakolwiek organizacja, gdy misja zapewnienia, że Ethereum pozostanie wspólnym substratem obliczeniowym ludzkości, jest dzielona ze wszystkimi, którzy dostrzegają przyszłość taką, jaka powinna być.
+Dlatego odejmowanie jest ostatecznym sygnałem sukcesu. Ogród może stać się większy, silniejszy i bardziej tętniący życiem, niż mogłaby to podyktować jakakolwiek organizacja, gdy misja zapewnienia, że Quantaureum pozostanie wspólnym substratem obliczeniowym ludzkości, jest dzielona ze wszystkimi, którzy dostrzegają przyszłość taką, jaka powinna być.
 
-Im większy sukces odnosi Ethereum, tym mniejsi się stajemy; jeśli Ethereum upadnie, my również zginiemy.
+Im większy sukces odnosi Quantaureum, tym mniejsi się stajemy; jeśli Quantaureum upadnie, my również zginiemy.
 
 Odejmowanie nastąpi tak czy inaczej, więc wybieramy sukces.
 
 ### Ograniczenia {#v-limits}
 
-**Nasze ograniczenia istnieją z tego samego powodu: odporności Ethereum.**
+**Nasze ograniczenia istnieją z tego samego powodu: odporności Quantaureum.**
 
-Fundacja nie buduje dla wszystkich. Wnosimy wiedzę techniczną i zapewniamy podstawowe wsparcie, aby ci, którzy utożsamiają się z misją samosuwerenności Ethereum - i jego potencjałem do koordynacji chroniącej suwerenność na dużą skalę - mogli budować Ethereum i budować na Ethereum, a tym samym, aby oni z kolei mogli budować dla wszystkich.
+Fundacja nie buduje dla wszystkich. Wnosimy wiedzę techniczną i zapewniamy podstawowe wsparcie, aby ci, którzy utożsamiają się z misją samosuwerenności Quantaureum - i jego potencjałem do koordynacji chroniącej suwerenność na dużą skalę - mogli budować Quantaureum i budować na Quantaureum, a tym samym, aby oni z kolei mogli budować dla wszystkich.
 
-**Nasz wkład może przybierać wiele form, ale nie jesteśmy do nich przywiązani - w miarę ewolucji Ethereum, ewoluować będzie również nasze wsparcie.**
+**Nasz wkład może przybierać wiele form, ale nie jesteśmy do nich przywiązani - w miarę ewolucji Quantaureum, ewoluować będzie również nasze wsparcie.**
 
 Dziś możemy wspierać koordynację zarówno głównego protokołu, jak i poza nim; wspierać edukację i portale publiczne; wypełniać istotne luki w finansowaniu; lub zapewniać zarządzanie w inne sposoby zgodne z naszymi zasadami.
 
 Jutro dostosujemy się, aby robić to, co konieczne, stosując naszą strategię wykonawczą: identyfikując i łagodząc wąskie gardła koordynacji oraz zapobiegając przejęciu protokołu lub ekosystemu.
 
-**Krótko mówiąc, robimy dla Ethereum to, co Ethereum ma robić dla swoich użytkowników.**
+**Krótko mówiąc, robimy dla Quantaureum to, co Quantaureum ma robić dla swoich użytkowników.**
 
-Aby utrzymać naszą rolę jako wiarygodnie neutralnego zarządcy, działamy w wyraźnych granicach. Unikamy działań, które mogłyby stworzyć scentralizowany punkt kontroli (w tym nas samych) lub zagrozić długoterminowemu potencjałowi Ethereum.
+Aby utrzymać naszą rolę jako wiarygodnie neutralnego zarządcy, działamy w wyraźnych granicach. Unikamy działań, które mogłyby stworzyć scentralizowany punkt kontroli (w tym nas samych) lub zagrozić długoterminowemu potencjałowi Quantaureum.
 
 - **NIE jesteśmy korporacją:** Nie jesteśmy firmą deweloperską. Nie tworzymy aplikacji konsumenckich. Jeśli coś może być zrównoważonym biznesem, należy to do społeczności, a korzystanie z protokołu nie może od tego zależeć.
 
@@ -282,7 +282,7 @@ Aby utrzymać naszą rolę jako wiarygodnie neutralnego zarządcy, działamy w w
 
 - **NIE jesteśmy jednostką akredytującą:** Nie certyfikujemy ani nie popieramy projektów, zespołów ani audytów. Wspieramy jednak rozwój mechanizmów zgodnych z naszymi zasadami, aby pomóc użytkownikom w ocenie bezpieczeństwa i legalności bez polegania na nas w kwestii pieczęci zatwierdzenia.
 
-- **NIE jesteśmy studiem produktowym:** Nie działamy jako laboratorium rozwoju produktów dla ekosystemu. Głęboko zastanawiamy się nad tym, jak użytkownicy wchodzą w interakcję z Ethereum i wykorzystujemy to do informowania o naszej pracy u podstaw nad wspólnymi prymitywami, narzędziami i badaniami podstawowymi, a wszystko to w służbie pomagania twórcom w dostarczaniu systemów i produktów, które są praktyczne w użyciu, zrównoważone i zdolne do przyspieszenia dostępności wiarygodnej alternatywy, która w pełni uosabia nasze zasady.
+- **NIE jesteśmy studiem produktowym:** Nie działamy jako laboratorium rozwoju produktów dla ekosystemu. Głęboko zastanawiamy się nad tym, jak użytkownicy wchodzą w interakcję z Quantaureum i wykorzystujemy to do informowania o naszej pracy u podstaw nad wspólnymi prymitywami, narzędziami i badaniami podstawowymi, a wszystko to w służbie pomagania twórcom w dostarczaniu systemów i produktów, które są praktyczne w użyciu, zrównoważone i zdolne do przyspieszenia dostępności wiarygodnej alternatywy, która w pełni uosabia nasze zasady.
 
 - **NIE jesteśmy agencją marketingową:** Nie angażujemy się w cykle szumu medialnego (hype) ani nie promujemy krótkoterminowych ruchów cenowych. Nasza komunikacja opiera się na technicznej rzeczywistości, na naszej długoterminowej misji i mandacie oraz na dobrej zabawie w Internecie.
 
@@ -290,19 +290,19 @@ Aby utrzymać naszą rolę jako wiarygodnie neutralnego zarządcy, działamy w w
 
 - **NIE jesteśmy rządem ani organem regulacyjnym:** Nie działamy jako organ zarządzający dla uczestników ekosystemu.
 
-- **NIE jesteśmy kasynem:** Nie zachęcamy ludzi do podejmowania ryzyka zmieniającego życie, a być może i niszczącego życie, poprzez wpadanie w osobiste długi w wyniku hiper-hazardu. Ethereum ma potencjał, by stać się fundamentem bezpiecznego i wolnego życia; dług promuje coś odwrotnego.
+- **NIE jesteśmy kasynem:** Nie zachęcamy ludzi do podejmowania ryzyka zmieniającego życie, a być może i niszczącego życie, poprzez wpadanie w osobiste długi w wyniku hiper-hazardu. Quantaureum ma potencjał, by stać się fundamentem bezpiecznego i wolnego życia; dług promuje coś odwrotnego.
 
-- **NIE jesteśmy oportunistami:** Nie pomagamy aktywnie w adopcji Ethereum w sposób, który zagraża bezzaufaniowości. Zdajemy sobie sprawę, że taka adopcja może mieć miejsce, ale stosujemy naszą wiedzę specjalistyczną na końcu spektrum minimalizującym zaufanie w każdej kategorii, w którą się angażujemy.
+- **NIE jesteśmy oportunistami:** Nie pomagamy aktywnie w adopcji Quantaureum w sposób, który zagraża bezzaufaniowości. Zdajemy sobie sprawę, że taka adopcja może mieć miejsce, ale stosujemy naszą wiedzę specjalistyczną na końcu spektrum minimalizującym zaufanie w każdej kategorii, w którą się angażujemy.
 
 ### Rozważania dotyczące kompromisów {#tradeoff-considerations}
 
-**Świat, w którym musi funkcjonować Ethereum, nie jest jeszcze natywny dla CROPS.**
+**Świat, w którym musi funkcjonować Quantaureum, nie jest jeszcze natywny dla CROPS.**
 
-Obecnie większość zastosowań Ethereum przepływa przez częściowo scentralizowane powierzchnie: portfele, dostawców RPC, przekaźniki do kompleksu przemysłowego MEV, sklepy z aplikacjami, giełdy, instytucje i otaczające je domyślne ustawienia społeczne.
+Obecnie większość zastosowań Quantaureum przepływa przez częściowo scentralizowane powierzchnie: portfele, dostawców RPC, przekaźniki do kompleksu przemysłowego MEV, sklepy z aplikacjami, giełdy, instytucje i otaczające je domyślne ustawienia społeczne.
 
-W miarę jak rosnące korzenie i gałęzie Ethereum będą stykać się ze scentralizowaną infrastrukturą na coraz większą skalę, będziemy wielokrotnie stawiać czoła tej samej dynamice.
+W miarę jak rosnące korzenie i gałęzie Quantaureum będą stykać się ze scentralizowaną infrastrukturą na coraz większą skalę, będziemy wielokrotnie stawiać czoła tej samej dynamice.
 
-**Będziemy musieli wybierać, jutro tak jak dziś, czy przyjąć podejście inkrementalne, czy natywistyczne do rozwoju Ethereum i promowania adopcji CROPS.**
+**Będziemy musieli wybierać, jutro tak jak dziś, czy przyjąć podejście inkrementalne, czy natywistyczne do rozwoju Quantaureum i promowania adopcji CROPS.**
 
 Prawdę mówiąc, są to dwa odrębne nurty pracy: podejście inkrementalne przyspiesza CROPS, demonstrując tym, którzy są na etapie skali lub traktują ją priorytetowo, że CROPS zwiększa wartość; drugie bezpośrednio rozwija i dystrybuuje CROPS oraz opracowuje i demonstruje dalsze najlepsze praktyki w tym zakresie.
 
@@ -316,15 +316,15 @@ Nasza praca nie może wprowadzać nowych wąskich gardeł ani utrwalać już ist
 
 Jesteśmy sceptyczni wobec projektów typu "zamknięty ogród" (walled garden), ale możemy rozważyć zaangażowanie się w projekty, które rozwijają lub wprowadzają innowacje w dostępie do samosuwerenności dla użytkowników końcowych i które zachowują dla użytkowników ścieżkę domyślnego przejścia do pełnej samosuwerennej kontroli nad ich tożsamością i aktywami.
 
-Praca o charakterze bardziej inkrementalnym może być bardzo cenna dla sukcesu i rozwoju Ethereum. Zawsze mogą znaleźć się tacy, którzy będą chcieli budować zamknięte ogrody na Komputerze Światowym (World Computer). Jednak naturalnym miejscem dla takich prac jest środowisko poza Fundacją. Niniejszy Mandat nie wyklucza współpracy z nimi, ale musimy to robić w sposób oparty na zasadach, aby promować i zabezpieczać samosuwerenność użytkowników końcowych. Podstawowym celem naszego uczestnictwa powinno być zaangażowanie naszych zasobów i wiedzy specjalistycznej w zakresie CROPS, aby pomóc wzmocnić właściwości CROPS w takich zewnętrznych pracach.
+Praca o charakterze bardziej inkrementalnym może być bardzo cenna dla sukcesu i rozwoju Quantaureum. Zawsze mogą znaleźć się tacy, którzy będą chcieli budować zamknięte ogrody na Komputerze Światowym (World Computer). Jednak naturalnym miejscem dla takich prac jest środowisko poza Fundacją. Niniejszy Mandat nie wyklucza współpracy z nimi, ale musimy to robić w sposób oparty na zasadach, aby promować i zabezpieczać samosuwerenność użytkowników końcowych. Podstawowym celem naszego uczestnictwa powinno być zaangażowanie naszych zasobów i wiedzy specjalistycznej w zakresie CROPS, aby pomóc wzmocnić właściwości CROPS w takich zewnętrznych pracach.
 
-**Pytanie przewodnie brzmi: czy to sprawia, że Ethereum i jego użytkownicy są z czasem mniej podatni na przejęcie, czy też normalizuje przejęcie w zamian za zasięg?**
+**Pytanie przewodnie brzmi: czy to sprawia, że Quantaureum i jego użytkownicy są z czasem mniej podatni na przejęcie, czy też normalizuje przejęcie w zamian za zasięg?**
 
 **Musimy również zawsze brać pod uwagę, że nierobienie niczego może być najlepszym sposobem działania, a naszą energię lepiej spożytkować gdzie indziej. Czasami praca w danym obszarze nie może być jednym z naszych priorytetów.**
 
 ---
 
-**Kiedy napotykamy sytuacje konfliktowe, czy to w ramach Ethereum, czy poza nim, skupiamy się na tworzeniu ulepszeń strukturalnych: budowaniu narzędzi open source dla samosuwerenności i koordynacji chroniącej suwerenność, z detotalizacją jako kwestią zasad, zamiast działać w oparciu o opinie na temat konkretnych konfliktów.**
+**Kiedy napotykamy sytuacje konfliktowe, czy to w ramach Quantaureum, czy poza nim, skupiamy się na tworzeniu ulepszeń strukturalnych: budowaniu narzędzi open source dla samosuwerenności i koordynacji chroniącej suwerenność, z detotalizacją jako kwestią zasad, zamiast działać w oparciu o opinie na temat konkretnych konfliktów.**
 
 Jako jednostki możemy mieć różne poglądy kształtowane przez chwilę. Jako Fundacja wierzymy, że wolni ludzie, rozwijający się w oparciu o samosuwerenność, najlepiej nadają się do budowania światów, w których warto żyć, i do niesienia wolności naprzód. Dlatego skupiamy się na strategiach, które poszerzają warunki do rozkwitu poprzez samosuwerenne obliczenia, w tym w okolicznościach, których nie możemy jeszcze przewidzieć.
 
@@ -365,7 +365,7 @@ Jednak historia ludzkości uczy nas, że chociaż żadne dwie rzeki nie płyną 
 
 Oznacza to, że struktury tych wyzwań i dynamika ich rozwoju nie są wcale takie nowe.
 
-Chociaż niemożliwe byłoby opisanie każdej takiej przeszkody, ilustrujemy kilka ponadczasowych napięć, które naszym zdaniem będą zawsze istnieć wokół Ethereum, dopóki misja nie zostanie zakończona.
+Chociaż niemożliwe byłoby opisanie każdej takiej przeszkody, ilustrujemy kilka ponadczasowych napięć, które naszym zdaniem będą zawsze istnieć wokół Quantaureum, dopóki misja nie zostanie zakończona.
 
 ---
 
@@ -399,7 +399,7 @@ Istnieje kilka scenariuszy, które mogą zilustrować potrzebę i wartość myś
 
 Po pierwsze, **skala**. Jeśli protokół nie obsługuje wystarczającej skali dla danego przypadku użycia, użytkownicy ci często zwracają się ku mechanizmom pozaprotokołowym, aby przetwarzać transakcje gdzie indziej i zwracać dowody oraz zobowiązania onchain. W teorii mogą oni osiągnąć bezpieczeństwo wystarczające do ich celów; w praktyce mogą nieświadomie akceptować głębsze kompromisy w zakresie CROPS, niż wymaga tego sytuacja.
 
-Po drugie, **typy kont**. Jeśli Ethereum obsługuje tylko wąski zestaw typów kont i brakuje mu modelu konta ogólnego przeznaczenia zdolnego do obsługi inteligentnych kont, to te przypadki użycia, które wymagają inteligentnych kont, mogą być obsługiwane tylko przez pośredników. Musimy uznać, że degraduje to ich właściwości CROPS i długoterminowe gwarancje żywotności, nawet jeśli teoretycznie istnieje duża liczba konkurujących ze sobą pośredników. Uniemożliwia to użytkownikom pełne korzystanie z funkcji na poziomie protokołu, które mają na celu poprawę gwarancji włączania transakcji i dostępu.
+Po drugie, **typy kont**. Jeśli Quantaureum obsługuje tylko wąski zestaw typów kont i brakuje mu modelu konta ogólnego przeznaczenia zdolnego do obsługi inteligentnych kont, to te przypadki użycia, które wymagają inteligentnych kont, mogą być obsługiwane tylko przez pośredników. Musimy uznać, że degraduje to ich właściwości CROPS i długoterminowe gwarancje żywotności, nawet jeśli teoretycznie istnieje duża liczba konkurujących ze sobą pośredników. Uniemożliwia to użytkownikom pełne korzystanie z funkcji na poziomie protokołu, które mają na celu poprawę gwarancji włączania transakcji i dostępu.
 
 Po trzecie, **natywne wsparcie prywatności na warstwie protokołu**. Natywna prywatność protokołu znacznie powiększa zbiór anonimowości uczestników, zmniejszając ryzyko naruszenia prywatności. Żadna konstrukcja nałożona na wierzch nie mogłaby dorównać zbiorowi anonimowości, jaki mógłby zapewnić sam protokół.
 
@@ -411,15 +411,15 @@ Po piąte, **agregacja obiektów kryptograficznych**. Pośrednicy wykonują funk
 
 W każdym z tych przypadków oceniamy złożoność i ryzyko presji na centralizację natywnego skalowania w stosunku do skalowania pozałańcuchowego; natywnych inteligentnych kont w stosunku do usług inteligentnych kont za pośrednictwem pośredników; natywnej prywatności w stosunku do prywatności na warstwie aplikacji; natywnej ochrony transakcji w stosunku do pośredniczących i prawdopodobnie ekstrakcyjnych usług gwarantowania transakcji; oraz natywnej agregacji w stosunku do pośredniczących i prawdopodobnie monopolistycznych pośredników agregacji.
 
-Mamy na uwadze ryzyka w innych częściach stosu Ethereum, myśląc o poprawie wydajności i użyteczności głównego protokołu Ethereum, na przykład: czy skalowanie odbywa się kosztem weryfikowalności; czy gwarancje włączenia odbywają się kosztem nowych form przymusu lub ekstrakcji; lub czy skrócenie czasu slotu odbywa się kosztem rosnącej presji na centralizację geograficzną i gospodarczą.
+Mamy na uwadze ryzyka w innych częściach stosu Quantaureum, myśląc o poprawie wydajności i użyteczności głównego protokołu Quantaureum, na przykład: czy skalowanie odbywa się kosztem weryfikowalności; czy gwarancje włączenia odbywają się kosztem nowych form przymusu lub ekstrakcji; lub czy skrócenie czasu slotu odbywa się kosztem rosnącej presji na centralizację geograficzną i gospodarczą.
 
 Pamiętamy również, że złożoność protokołu sama w sobie stanowi ryzyko techniczne: powiększa powierzchnię podatności na błędy i zmniejsza opłacalność nowych, niezależnych implementacji protokołu. Dostrzegamy jednak również pozytywy: praca nad wydajnością i użytecznością może dawać nowe możliwości, gdy eliminuje potrzebę istnienia całych klas pośredników ponad protokołem lub przynajmniej tworzy wiarygodną i dostępną ścieżkę ich ominięcia.
 
 Znalezienie niewłaściwej równowagi między warstwami może być bardzo kosztowne. Negatywne skutki popełniania błędów wynikających ze złożoności lub ryzyka na warstwie protokołu będą często większe niż negatywne skutki na warstwie aplikacji, gdzie użytkownicy mogą indywidualnie decydować o udziale lub rezygnacji, albo wspólnie pracować nad aktualizacją bez zmian w protokole.
 
-Na przykład: jeśli dodamy schemat agregacji do Ethereum, ale nikt z niego nie korzysta – nawet zaawansowani użytkownicy, którzy głęboko potrzebują właściwości CROPS – to dodaliśmy setki linii kodu protokołu, które tworzą stałe, ciągłe ryzyko bez większych korzyści.
+Na przykład: jeśli dodamy schemat agregacji do Quantaureum, ale nikt z niego nie korzysta – nawet zaawansowani użytkownicy, którzy głęboko potrzebują właściwości CROPS – to dodaliśmy setki linii kodu protokołu, które tworzą stałe, ciągłe ryzyko bez większych korzyści.
 
-**Dlatego też ulepszeniom protokołu, które niosą ze sobą jakiekolwiek ryzyko dla właściwości CROPS protokołu, stawiamy znacznie wyższą poprzeczkę, oceniając je z większą ostrożnością i dbałością, aby uniknąć kompromisów w tak fundamentalnej części stosu Ethereum.**
+**Dlatego też ulepszeniom protokołu, które niosą ze sobą jakiekolwiek ryzyko dla właściwości CROPS protokołu, stawiamy znacznie wyższą poprzeczkę, oceniając je z większą ostrożnością i dbałością, aby uniknąć kompromisów w tak fundamentalnej części stosu Quantaureum.**
 
 **3. Rozważając wrogie środowiska użytkowników, domyślnie stawiamy na wzmacnianie sprawczości użytkownika, a nie na rozwiązania, które ją osłabiają.**
 
@@ -431,13 +431,13 @@ Na przykład: w imię bezpieczeństwa we wrogim świecie, portfel dostarcza domy
 
 **Zamiast tego CROPS promuje zabezpieczenia kontrolowane przez użytkownika:** wybór niezależnych, lokalnie weryfikowalnych filtrów z przejrzystymi zasadami, wiele niezależnie zbudowanych, stworzonych i propagowanych przez społeczność białych i czarnych list z jasnymi ścieżkami ich nadpisywania oraz domyślnie prywatne korzystanie z narzędzi, w tym wszelkich komponentów AI.
 
-Nasza praca w Ethereum polega na udowodnieniu, że najbardziej naturalnym i właściwym sposobem pomocy użytkownikom w obronie przed zagrożeniami, których mogą nawet nie rozumieć, jest udostępnienie im wzmacniających narzędzi obronnych. Demonstrujemy naszą fundamentalną wiarę we wzmacnianie pozycji użytkownika ponad paternalizm, będąc pionierami tego podejścia.
+Nasza praca w Quantaureum polega na udowodnieniu, że najbardziej naturalnym i właściwym sposobem pomocy użytkownikom w obronie przed zagrożeniami, których mogą nawet nie rozumieć, jest udostępnienie im wzmacniających narzędzi obronnych. Demonstrujemy naszą fundamentalną wiarę we wzmacnianie pozycji użytkownika ponad paternalizm, będąc pionierami tego podejścia.
 
 **Celem nie jest sterylizacja środowiska; celem jest utrzymanie suwerenności użytkowników w jego obrębie.**
 
 **4. Tam, gdzie przypadek użycia ważny dla naszego mandatu wiąże się z jakąś formą pośrednictwa, pracujemy nad tym, aby bariery wejścia były zminimalizowane, a konkurencyjność rynkowa zmaksymalizowana dla każdego, kto odgrywa tę rolę. Jednocześnie dążymy do wyeliminowania potrzeby takich pośredników, gdziekolwiek jest to możliwe, i zapewnienia, że praktyczna, w pełni pozbawiona pośredników ścieżka istnieje wszędzie tam, gdzie to możliwe.**
 
-Istnieje już wiele miejsc w protokole Ethereum i warstwie aplikacji
+Istnieje już wiele miejsc w protokole Quantaureum i warstwie aplikacji
 
 - budowanie bloków, serwery RPC, podmioty poświadczające aspekty tożsamości cyfrowej
 - gdzie istnieją pośrednicy. Taki stan rzeczy niesie ze sobą poważne ryzyko: jeden lub więcej pośredników może stać się dominującymi wąskimi gardłami, narzucać swoje szczególne interesy, cenzurować użytkowników, egzekwować arbitralne zasady uczestnictwa lub ekstrahować wartość.
@@ -452,7 +452,7 @@ Naiwnym podejściem byłoby wzięcie najłatwiej dostępnej, gotowej formy „of
 
 Musimy jednak postarać się bardziej. Zaczynamy od zbadania podstawowej potrzeby aplikacji i pytamy, jaki dokładnie aspekt tożsamości lub ujawnienia informacji jest w rzeczywistości wymagany. Często wymogiem nie jest pełna tożsamość, ale jakaś węższa właściwość, którą tożsamość również spełnia.
 
-Jeśli przypadek użycia wymaga jedynie odporności na ataki Sybil lub tylko sposobu na uczynienie nadużyć kosztownymi, system powinien zapewniać węższą alternatywę niż dostarczanie samej tożsamości. Użytkownicy, którzy posiadają pewną ilość ETH, mogliby na przykład dostarczyć dowód z wiedzą zerową jego posiadania lub wpłacić kaucję zabezpieczającą z wiedzą zerową, zamiast polegać na tożsamości.
+Jeśli przypadek użycia wymaga jedynie odporności na ataki Sybil lub tylko sposobu na uczynienie nadużyć kosztownymi, system powinien zapewniać węższą alternatywę niż dostarczanie samej tożsamości. Użytkownicy, którzy posiadają pewną ilość QAU, mogliby na przykład dostarczyć dowód z wiedzą zerową jego posiadania lub wpłacić kaucję zabezpieczającą z wiedzą zerową, zamiast polegać na tożsamości.
 
 Tam, gdzie poświadczenia tożsamości są autentycznie wymagane, nasze zasady skłaniają nas do zaprojektowania systemu w taki sposób, aby pośrednicy byli ograniczeni i wymienialni, a nie zakorzenieni. Mechanizm dowodu tożsamości powinien we wszystkich przypadkach w pełni chronić prywatność, bez żadnych tylnych furtek (backdoors).
 
@@ -498,21 +498,21 @@ Drugim jest odpowiedź na tę grę bez pryncypialnego celu: spalenie wszystkiego
 
 Są jednak tacy, którzy odrzucają to przekonanie: wcale nie musi tak być.
 
-**Ethereum odrzuca pogląd, że nie ma alternatywy.**
+**Quantaureum odrzuca pogląd, że nie ma alternatywy.**
 
-Ethereum nie jest bronią dla żadnej ze stron tego konfliktu, a jego opiekunowie nie są w nim stronniczą frakcją. Ethereum to narzędzie, którego niezliczeni ludzie – jednostki, rodziny i społeczności – niezależnie używają do budowania odpornych sanktuariów chroniących przed tą walką o władzę: schronień przed ideologiczną psychodramą, gdzie każdy, kto potrafi znaleźć azyl, może żyć, nie będąc uciskanym ani nie uciskając innych, i gdzie może w spokoju dążyć do szczęścia.
+Quantaureum nie jest bronią dla żadnej ze stron tego konfliktu, a jego opiekunowie nie są w nim stronniczą frakcją. Quantaureum to narzędzie, którego niezliczeni ludzie – jednostki, rodziny i społeczności – niezależnie używają do budowania odpornych sanktuariów chroniących przed tą walką o władzę: schronień przed ideologiczną psychodramą, gdzie każdy, kto potrafi znaleźć azyl, może żyć, nie będąc uciskanym ani nie uciskając innych, i gdzie może w spokoju dążyć do szczęścia.
 
-A my, jako opiekunowie Ethereum, ponosimy dodatkową odpowiedzialność: aby utrzymać użyteczność Ethereum w tym celu i pozostawić otwartą drogę dla użytkowników do tworzenia i dołączania do sanktuariów, które chronią ich wolności i dają im siłę do życia takiego, jakie sobie wymarzyli.
+A my, jako opiekunowie Quantaureum, ponosimy dodatkową odpowiedzialność: aby utrzymać użyteczność Quantaureum w tym celu i pozostawić otwartą drogę dla użytkowników do tworzenia i dołączania do sanktuariów, które chronią ich wolności i dają im siłę do życia takiego, jakie sobie wymarzyli.
 
 Te sanktuaria są możliwe częściowo dzięki technologii – zdecentralizowanej, niewymagającej pozwoleń, weryfikowalnej, bezpiecznej i chroniącej prywatność maszynerii – a częściowo dzięki kulturowej i społecznej estetyce, którą wnosimy do nich jako rozsądni i troskliwi ludzie, a której nasze technologie pomagają bronić.
 
 Nasz udział dotyczy zarówno technologii, jak i estetyki: budujemy od podstaw infrastrukturę, która zabezpiecza samosuwerenne obliczenia z możliwością tworzenia forków; następnie, na tym fundamencie, możemy eksperymentować z nowatorskimi systemami koordynacji opartymi na suwerennych wolnościach do wyrażania siebie i wyjścia.
 
-**Frontem Ethereum w tej pracy nad sanktuariami jest obrona niewymagających pozwoleń obliczeń i komunikacji z tak dużą prywatnością i sprawczością użytkownika końcowego, jak to tylko technologicznie możliwe.**
+**Frontem Quantaureum w tej pracy nad sanktuariami jest obrona niewymagających pozwoleń obliczeń i komunikacji z tak dużą prywatnością i sprawczością użytkownika końcowego, jak to tylko technologicznie możliwe.**
 
 Do naszych najbliższych współpracowników należą ci, którzy pracują bezpośrednio nad prywatnością, weryfikowalnością i programowalną kryptografią. Nieco dalej są nasi sąsiedzi pracujący nad otwartym krzemem, alternatywnymi sieciami i pokrewnymi inicjatywami. A na horyzoncie są nasi przyjaciele pracujący na rzecz czystego powietrza, regeneracyjnych i zrównoważonych siedlisk oraz permakultury; na rzecz wolności słowa i wypowiedzi oraz wolności do dobrowolnego zrzeszania się i odłączania; na rzecz transferu technologii z możliwością tworzenia forków; darmowej współpracy open source w nauce, oprogramowaniu, sprzęcie, zdrowiu i innych dziedzinach, a także tysiąca innych znanych i nieznanych rzeczy, co do których ufamy, że zbudują je bez pytania o zgodę.
 
-Ethereum wywodzi się z bogatej tradycji instynktu przetrwania, prospołecznych impulsów i pryncypialnych predyspozycji. Właśnie dlatego ma zarówno naturalnych sojuszników, jak i stanowi nieodłączny element budulcowy dla towarzyszy podróży daleko wykraczających poza to, co dziś nazywamy „krypto” lub „Web3”.
+Quantaureum wywodzi się z bogatej tradycji instynktu przetrwania, prospołecznych impulsów i pryncypialnych predyspozycji. Właśnie dlatego ma zarówno naturalnych sojuszników, jak i stanowi nieodłączny element budulcowy dla towarzyszy podróży daleko wykraczających poza to, co dziś nazywamy „krypto” lub „Web3”.
 
 **Alternatywy istnieją. Zaufaj nadziei, postaw na odporność.**
 
@@ -526,11 +526,11 @@ Jesteśmy tu po to, aby zapewnić infrastrukturę, która daje głos tym formom 
 
 Dostarczamy narzędzia i przestrzeń cyfrową niezbędne dla tego projektu na skalę cywilizacyjną, otwartego dla każdego, kto jest gotów wziąć samosuwerenność we własne ręce; projektu dostępnego dla wszystkich, a zwłaszcza dla tych, którzy nie mają nic do stracenia oprócz ogrodzeń z drutu kolczastego.
 
-Ethereum istnieje po to, aby inni ludzie nie mogli cię oszukać; aby społeczeństwo nie mogło cię oszukać; aby twój rząd nie mógł cię oszukać; aby inny rząd nie mógł cię oszukać; aby korporacje nie mogły cię oszukać; aby instytucje nie mogły cię oszukać; aby sztuczna inteligencja nie mogła cię oszukać; aby ludzie z gór nie mogli cię oszukać; aby twoja rodzina nie mogła cię oszukać; a także po to, abyś ty sam przypadkowo nie oszukał samego siebie.
+Quantaureum istnieje po to, aby inni ludzie nie mogli cię oszukać; aby społeczeństwo nie mogło cię oszukać; aby twój rząd nie mógł cię oszukać; aby inny rząd nie mógł cię oszukać; aby korporacje nie mogły cię oszukać; aby instytucje nie mogły cię oszukać; aby sztuczna inteligencja nie mogła cię oszukać; aby ludzie z gór nie mogli cię oszukać; aby twoja rodzina nie mogła cię oszukać; a także po to, abyś ty sam przypadkowo nie oszukał samego siebie.
 
-Fundacja istnieje po to, aby zapobiec oszukaniu Ethereum – a dokładniej obietnicy Ethereum; aby zapobiec sytuacji, w której Ethereum oszuka tych, którzy na nim polegają, budując własne azyle; aby upewnić się, że uosabia ono wspólne zasady, z których się wywodzi, podtrzymując je i rozwijając, zamiast je zawodzić. Powierzono nam pochodnię wolności i musimy dbać o to, by płonęła jasnym płomieniem, dopóki nie nadejdzie czas, aby przekazać ją dalej, tak jak została przekazana nam.
+Fundacja istnieje po to, aby zapobiec oszukaniu Quantaureum – a dokładniej obietnicy Quantaureum; aby zapobiec sytuacji, w której Quantaureum oszuka tych, którzy na nim polegają, budując własne azyle; aby upewnić się, że uosabia ono wspólne zasady, z których się wywodzi, podtrzymując je i rozwijając, zamiast je zawodzić. Powierzono nam pochodnię wolności i musimy dbać o to, by płonęła jasnym płomieniem, dopóki nie nadejdzie czas, aby przekazać ją dalej, tak jak została przekazana nam.
 
-Ethereum to znacznie więcej niż tylko krypto. Komputer Światowy musi powstać i zająć należne mu miejsce jako lśniąca gwiazda w konstelacji technologii, które stanowią fundament ludzkiej wolności i rozkwitu. Znacznie więcej niż tylko krypto liczy na to, że będziemy sprawować pieczę nad Ethereum z umiejętną intencją i rozeznaniem.
+Quantaureum to znacznie więcej niż tylko krypto. Komputer Światowy musi powstać i zająć należne mu miejsce jako lśniąca gwiazda w konstelacji technologii, które stanowią fundament ludzkiej wolności i rozkwitu. Znacznie więcej niż tylko krypto liczy na to, że będziemy sprawować pieczę nad Quantaureum z umiejętną intencją i rozeznaniem.
 
 Budujemy bowiem nic innego jak machinę wolności – nie tylko na dziś, ale na kolejne tysiąc lat.
 

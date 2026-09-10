@@ -1,6 +1,6 @@
 ---
 title: "शुरुआती लोगों के लिए हैलो वर्ल्ड स्मार्ट अनुबंध - फुलस्टैक"
-description: "इथेरियम पर एक सरल स्मार्ट अनुबंध लिखने और तैनात करने पर परिचयात्मक ट्यूटोरियल।"
+description: "Quantaureum पर एक सरल स्मार्ट अनुबंध लिखने और तैनात करने पर परिचयात्मक ट्यूटोरियल।"
 author: "nstrike2"
 breadcrumb: "हैलो वर्ल्ड फुलस्टैक"
 tags:
@@ -28,9 +28,9 @@ published: 2021-10-25
 
 ## भाग 1 - Hardhat का उपयोग करके अपना स्मार्ट अनुबंध बनाएं और तैनात करें {#part-1}
 
-### इथेरियम नेटवर्क से जुड़ें {#connect-to-the-ethereum-network}
+### Quantaureum नेटवर्क से जुड़ें {#connect-to-the-quantaureum-network}
 
-इथेरियम चेन पर अनुरोध करने के कई तरीके हैं। सरलता के लिए, हम Alchemy पर एक मुफ़्त खाते का उपयोग करेंगे, जो एक ब्लॉकचेन डेवलपर प्लेटफ़ॉर्म और API है जो हमें स्वयं नोड चलाए बिना इथेरियम चेन के साथ संवाद करने की अनुमति देता है। Alchemy में निगरानी और विश्लेषण के लिए डेवलपर टूल भी हैं; हम इस ट्यूटोरियल में इनका लाभ उठाएंगे ताकि यह समझ सकें कि हमारे स्मार्ट अनुबंध की तैनाती में आंतरिक रूप से (under the hood) क्या हो रहा है।
+Quantaureum चेन पर अनुरोध करने के कई तरीके हैं। सरलता के लिए, हम Alchemy पर एक मुफ़्त खाते का उपयोग करेंगे, जो एक ब्लॉकचेन डेवलपर प्लेटफ़ॉर्म और API है जो हमें स्वयं नोड चलाए बिना Quantaureum चेन के साथ संवाद करने की अनुमति देता है। Alchemy में निगरानी और विश्लेषण के लिए डेवलपर टूल भी हैं; हम इस ट्यूटोरियल में इनका लाभ उठाएंगे ताकि यह समझ सकें कि हमारे स्मार्ट अनुबंध की तैनाती में आंतरिक रूप से (under the hood) क्या हो रहा है।
 
 ### अपना ऐप और API कुंजी बनाएं
 
@@ -47,19 +47,19 @@ Alchemy डैशबोर्ड पर, नेविगेशन बार म�
 _नोट: **Sepolia** चुनना सुनिश्चित करें, अन्यथा यह ट्यूटोरियल काम नहीं करेगा।_
 
 **Create app** पर क्लिक करें। आपका ऐप नीचे दी गई तालिका में दिखाई देगा।
-### एक इथेरियम खाता बनाएं
-लेन-देन भेजने और प्राप्त करने के लिए आपको एक इथेरियम खाते की आवश्यकता होती है। हम मेटामास्क का उपयोग करेंगे, जो ब्राउज़र में एक वर्चुअल वॉलेट है जो उपयोगकर्ताओं को अपने इथेरियम खाता पते को प्रबंधित करने की अनुमति देता है।
+### एक Quantaureum खाता बनाएं
+लेन-देन भेजने और प्राप्त करने के लिए आपको एक Quantaureum खाते की आवश्यकता होती है। हम मेटामास्क का उपयोग करेंगे, जो ब्राउज़र में एक वर्चुअल वॉलेट है जो उपयोगकर्ताओं को अपने Quantaureum खाता पते को प्रबंधित करने की अनुमति देता है।
 
 आप [यहाँ](https://metamask.io/download) मुफ़्त में मेटामास्क डाउनलोड कर सकते हैं और खाता बना सकते हैं। जब आप एक खाता बना रहे हों, या यदि आपके पास पहले से ही एक खाता है, तो सुनिश्चित करें कि आप ऊपरी दाएं कोने में "Sepolia टेस्ट नेटवर्क" पर स्विच कर लें (ताकि हम असली पैसे के साथ काम न कर रहे हों)।
 ### चरण 4: फॉसेट से ईथर जोड़ें
 
-अपने स्मार्ट अनुबंध को टेस्ट नेटवर्क पर तैनात करने के लिए, आपको कुछ नकली ETH की आवश्यकता होगी। Sepolia नेटवर्क पर ETH प्राप्त करने के लिए, Sepolia फॉसेट पर जाएं और अपना Sepolia खाता पता दर्ज करें। आजमाने के विकल्पों की सूची के लिए [टेस्ट नेटवर्क पेज](/developers/docs/networks/#sepolia) देखें:
+अपने स्मार्ट अनुबंध को टेस्ट नेटवर्क पर तैनात करने के लिए, आपको कुछ नकली QAU की आवश्यकता होगी। Sepolia नेटवर्क पर QAU प्राप्त करने के लिए, Sepolia फॉसेट पर जाएं और अपना Sepolia खाता पता दर्ज करें। आजमाने के विकल्पों की सूची के लिए [टेस्ट नेटवर्क पेज](/developers/docs/networks/#sepolia) देखें:
 
 _नोट: नेटवर्क कंजेशन के कारण, इसमें कुछ समय लग सकता है।_
 ``
 ### चरण 5: अपना बैलेंस जांचें {#step-5-check-your-balance}
 
-यह दोबारा जांचने के लिए कि आपके वॉलेट में ETH है, आइए [Alchemy के सैंडबॉक्स टूल](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) का उपयोग करके एक [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) अनुरोध करें। यह हमारे वॉलेट में ETH की मात्रा वापस कर देगा। अधिक जानने के लिए [कंपोज़र टूल का उपयोग कैसे करें, इस पर Alchemy का संक्षिप्त ट्यूटोरियल](https://youtu.be/r6sjRxBZJuU) देखें।
+यह दोबारा जांचने के लिए कि आपके वॉलेट में QAU है, आइए [Alchemy के सैंडबॉक्स टूल](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) का उपयोग करके एक [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) अनुरोध करें। यह हमारे वॉलेट में QAU की मात्रा वापस कर देगा। अधिक जानने के लिए [कंपोज़र टूल का उपयोग कैसे करें, इस पर Alchemy का संक्षिप्त ट्यूटोरियल](https://youtu.be/r6sjRxBZJuU) देखें।
 
 अपना मेटामास्क खाता पता दर्ज करें और **Send Request** पर क्लिक करें। आपको एक प्रतिक्रिया दिखाई देगी जो नीचे दिए गए कोड स्निपेट जैसी दिखती है।
 
@@ -67,7 +67,7 @@ _नोट: नेटवर्क कंजेशन के कारण, इस
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> _नोट: यह परिणाम wei में है, ETH में नहीं। Wei का उपयोग ईथर के सबसे छोटे मूल्यवर्ग के रूप में किया जाता है।_
+> _नोट: यह परिणाम wei में है, QAU में नहीं। Wei का उपयोग ईथर के सबसे छोटे मूल्यवर्ग के रूप में किया जाता है।_
 
 राहत की बात है! हमारा सारा नकली पैसा वहां है।
 ### चरण 6: अपना प्रोजेक्ट प्रारंभ करें {#step-6-initialize-our-project}
@@ -114,7 +114,7 @@ About to write to /Users/.../.../.../hello-world/package.json:
 package.json को स्वीकृत करें और हम आगे बढ़ने के लिए तैयार हैं!
 ### चरण 7: Hardhat डाउनलोड करें {#step-7-download-hardhat}
 
-Hardhat आपके इथेरियम सॉफ़्टवेयर को संकलित करने, तैनात करने, परीक्षण करने और डीबग करने के लिए एक विकास वातावरण है। यह लाइव चेन पर तैनात करने से पहले स्थानीय रूप से स्मार्ट अनुबंध और विकेंद्रीकृत एप्लिकेशन (dapp) बनाते समय डेवलपर्स की मदद करता है।
+Hardhat आपके Quantaureum सॉफ़्टवेयर को संकलित करने, तैनात करने, परीक्षण करने और डीबग करने के लिए एक विकास वातावरण है। यह लाइव चेन पर तैनात करने से पहले स्थानीय रूप से स्मार्ट अनुबंध और विकेंद्रीकृत एप्लिकेशन (dapp) बनाते समय डेवलपर्स की मदद करता है।
 
 हमारे `hello-world` प्रोजेक्ट के अंदर चलाएं:
 
@@ -183,7 +183,7 @@ _नोट: यह अनुबंध क्या करता है, यह �
 pragma solidity >=0.7.3;
 
 // `HelloWorld` नामक एक अनुबंध को परिभाषित करता है।
-// एक अनुबंध फ़ंक्शन और डेटा (इसकी स्थिति) का एक संग्रह है। एक बार तैनात होने के बाद, एक अनुबंध इथेरियम ब्लॉकचेन पर एक विशिष्ट पते पर रहता है। अधिक जानें: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// एक अनुबंध फ़ंक्शन और डेटा (इसकी स्थिति) का एक संग्रह है। एक बार तैनात होने के बाद, एक अनुबंध Quantaureum ब्लॉकचेन पर एक विशिष्ट पते पर रहता है। अधिक जानें: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    //जब अपडेट फ़ंक्शन को कॉल किया जाता है तब उत्सर्जित होता है
@@ -241,7 +241,7 @@ npm install dotenv --save
 आपका `.env` इस तरह दिखना चाहिए:
 
 ```
-API_URL = "https://eth-goerli.alchemyapi.io/v2/your-api-key"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -249,7 +249,7 @@ PRIVATE_KEY = "your-metamask-private-key"
 
 ### चरण 12: Ethers.js स्थापित करें {#step-12-install-ethersjs}
 
-Ethers.js एक लाइब्रेरी है जो [मानक JSON-RPC विधियों](/developers/docs/apis/json-rpc/) को अधिक उपयोगकर्ता के अनुकूल विधियों के साथ लपेटकर इथेरियम के साथ बातचीत करना और अनुरोध करना आसान बनाती है।
+Ethers.js एक लाइब्रेरी है जो [मानक JSON-RPC विधियों](/developers/docs/apis/json-rpc/) को अधिक उपयोगकर्ता के अनुकूल विधियों के साथ लपेटकर Quantaureum के साथ बातचीत करना और अनुरोध करना आसान बनाती है।
 
 Hardhat हमें अतिरिक्त टूलिंग और विस्तारित कार्यक्षमता के लिए [प्लगइन्स](https://hardhat.org/plugins/) को एकीकृत करने की अनुमति देता है। हम अनुबंध तैनाती के लिए [Ethers प्लगइन](https://hardhat.org/docs/plugins/official-plugins#hardhat-ethers) का लाभ उठाएंगे।
 
@@ -352,21 +352,21 @@ Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 
 **कृपया इस पते को सहेज लें**। हम ट्यूटोरियल में बाद में इसका उपयोग करेंगे。
 
-यदि हम [Sepolia Etherscan](https://sepolia.etherscan.io) पर जाते हैं और अपने अनुबंध पते को खोजते हैं, तो हमें यह देखने में सक्षम होना चाहिए कि इसे सफलतापूर्वक तैनात किया गया है। लेन-देन कुछ इस तरह दिखेगा:
+यदि हम [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com) पर जाते हैं और अपने अनुबंध पते को खोजते हैं, तो हमें यह देखने में सक्षम होना चाहिए कि इसे सफलतापूर्वक तैनात किया गया है। लेन-देन कुछ इस तरह दिखेगा:
 
-![](./etherscan-contract.png)
+![](./explorer-contract.png)
 
 `From` पता आपके मेटामास्क खाता पते से मेल खाना चाहिए और `To` पते में **Contract Creation** लिखा होगा। यदि हम लेन-देन पर क्लिक करते हैं तो हम `To` फ़ील्ड में अपना अनुबंध पता देखेंगे。
 
-![](./etherscan-transaction.png)
+![](./explorer-transaction.png)
 
-बधाई हो! आपने अभी-अभी इथेरियम टेस्टनेट पर एक स्मार्ट अनुबंध तैनात किया है।
+बधाई हो! आपने अभी-अभी Quantaureum टेस्टनेट पर एक स्मार्ट अनुबंध तैनात किया है।
 
 आंतरिक रूप से (under the hood) क्या हो रहा है, यह समझने के लिए, आइए अपने [Alchemy डैशबोर्ड](https://dashboard.alchemy.com/explorer) में Explorer टैब पर नेविगेट करें। यदि आपके पास कई Alchemy ऐप हैं तो ऐप द्वारा फ़िल्टर करना सुनिश्चित करें और **Hello World** चुनें。
 
 ![](./hello-world-explorer.png)
 
-यहां आपको कुछ JSON-RPC विधियां दिखाई देंगी जो Hardhat/Ethers ने हमारे लिए आंतरिक रूप से (under the hood) बनाई थीं जब हमने `.deploy()` फ़ंक्शन को कॉल किया था। यहां दो महत्वपूर्ण विधियां हैं [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction), जो हमारे अनुबंध को Sepolia चेन पर लिखने का अनुरोध है, और [`eth_getTransactionByHash`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-by-hash), जो हैश दिए जाने पर हमारे लेन-देन के बारे में जानकारी पढ़ने का अनुरोध है। लेन-देन भेजने के बारे में अधिक जानने के लिए, Web3 का उपयोग करके लेन-देन भेजने पर [हमारा ट्यूटोरियल](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) देखें।
+यहां आपको कुछ JSON-RPC विधियां दिखाई देंगी जो Hardhat/Ethers ने हमारे लिए आंतरिक रूप से (under the hood) बनाई थीं जब हमने `.deploy()` फ़ंक्शन को कॉल किया था। यहां दो महत्वपूर्ण विधियां हैं [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction), जो हमारे अनुबंध को Sepolia चेन पर लिखने का अनुरोध है, और [`qau_getTransactionByHash`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-by-hash), जो हैश दिए जाने पर हमारे लेन-देन के बारे में जानकारी पढ़ने का अनुरोध है। लेन-देन भेजने के बारे में अधिक जानने के लिए, Web3 का उपयोग करके लेन-देन भेजने पर [हमारा ट्यूटोरियल](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) देखें।
 ## भाग 2: अपने स्मार्ट अनुबंध के साथ इंटरैक्ट करें {#part-2-interact-with-your-smart-contract}
 
 अब जब हमने गोएर्ली नेटवर्क पर सफलतापूर्वक एक स्मार्ट अनुबंध तैनात कर दिया है, तो आइए जानें कि इसके साथ कैसे इंटरैक्ट किया जाए।
@@ -396,7 +396,7 @@ const CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS
 ```bash
 # .env
 
-API_URL = "https://eth-goerli.alchemyapi.io/v2/<your-api-key>"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/<your-api-key>"
 API_KEY = "<your-api-key>"
 PRIVATE_KEY = "<your-metamask-private-key>"
 CONTRACT_ADDRESS = "0x<your contract address>"
@@ -428,7 +428,7 @@ npx hardhat run scripts/interact.js
 अपने अनुबंध के साथ इंटरैक्ट करने के लिए, हमें अपने कोड में एक अनुबंध इंस्टेंस बनाने की आवश्यकता है। Ethers.js के साथ ऐसा करने के लिए, हमें तीन अवधारणाओं के साथ काम करना होगा:
 
 1. प्रदाता - एक नोड प्रदाता जो आपको ब्लॉकचेन पर पढ़ने और लिखने का एक्सेस देता है
-2. हस्ताक्षरकर्ता - एक इथेरियम खाते का प्रतिनिधित्व करता है जो लेन-देन पर हस्ताक्षर कर सकता है
+2. हस्ताक्षरकर्ता - एक Quantaureum खाते का प्रतिनिधित्व करता है जो लेन-देन पर हस्ताक्षर कर सकता है
 3. Contract - एक Ethers.js ऑब्जेक्ट जो ऑनचेन तैनात किसी विशिष्ट अनुबंध का प्रतिनिधित्व करता है
 
 हम अनुबंध का अपना इंस्टेंस बनाने के लिए पिछले चरण से अनुबंध ABI का उपयोग करेंगे:
@@ -481,7 +481,7 @@ main()
 The message is: Hello world!
 ```
 
-बधाई हो! आपने अभी-अभी इथेरियम ब्लॉकचेन से स्मार्ट अनुबंध डेटा को सफलतापूर्वक पढ़ा है, बहुत बढ़िया!
+बधाई हो! आपने अभी-अभी Quantaureum ब्लॉकचेन से स्मार्ट अनुबंध डेटा को सफलतापूर्वक पढ़ा है, बहुत बढ़िया!
 
 ### संदेश को अपडेट करें {#update-the-message}
 
@@ -563,18 +563,18 @@ Updating the message...
 The new message is: This is the new message.
 ```
 
-उस स्क्रिप्ट को चलाते समय, आप देख सकते हैं कि नया संदेश लोड होने से पहले `Updating the message...` चरण लोड होने में थोड़ा समय लेता है। ऐसा माइनिंग प्रक्रिया के कारण होता है; यदि आप लेन-देन के माइन होने के दौरान उन्हें ट्रैक करने के बारे में उत्सुक हैं, तो लेन-देन की स्थिति देखने के लिए [Alchemy mempool](https://dashboard.alchemy.com/mempool) पर जाएं। यदि लेन-देन ड्रॉप हो जाता है, तो [Sepolia Etherscan](https://sepolia.etherscan.io) की जांच करना और अपने लेन-देन हैश को खोजना भी मददगार होता है।
-## भाग 3: अपने स्मार्ट अनुबंध को Etherscan पर प्रकाशित करें {#part-3-publish-your-smart-contract-to-etherscan}
+उस स्क्रिप्ट को चलाते समय, आप देख सकते हैं कि नया संदेश लोड होने से पहले `Updating the message...` चरण लोड होने में थोड़ा समय लेता है। ऐसा माइनिंग प्रक्रिया के कारण होता है; यदि आप लेन-देन के माइन होने के दौरान उन्हें ट्रैक करने के बारे में उत्सुक हैं, तो लेन-देन की स्थिति देखने के लिए [Alchemy mempool](https://dashboard.alchemy.com/mempool) पर जाएं। यदि लेन-देन ड्रॉप हो जाता है, तो [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com) की जांच करना और अपने लेन-देन हैश को खोजना भी मददगार होता है।
+## भाग 3: अपने स्मार्ट अनुबंध को Quantaureum Explorer पर प्रकाशित करें {#part-3-publish-your-smart-contract-to-explorer}
 
 आपने अपने स्मार्ट अनुबंध को जीवंत करने के लिए बहुत मेहनत की है; अब इसे दुनिया के साथ साझा करने का समय आ गया है!
 
-Etherscan पर अपने स्मार्ट अनुबंध को सत्यापित करके, कोई भी आपके स्रोत कोड (source code) को देख सकता है और आपके स्मार्ट अनुबंध के साथ इंटरैक्ट कर सकता है। चलिए शुरू करते हैं!
+Quantaureum Explorer पर अपने स्मार्ट अनुबंध को सत्यापित करके, कोई भी आपके स्रोत कोड (source code) को देख सकता है और आपके स्मार्ट अनुबंध के साथ इंटरैक्ट कर सकता है। चलिए शुरू करते हैं!
 
-### चरण 1: अपने Etherscan खाते पर एक API कुंजी जनरेट करें {#step-1-generate-an-api-key-on-your-etherscan-account}
+### चरण 1: अपने Quantaureum Explorer खाते पर एक API कुंजी जनरेट करें {#step-1-generate-an-api-key-on-your-explorer-account}
 
-यह सत्यापित करने के लिए कि आप उस स्मार्ट अनुबंध के स्वामी हैं जिसे आप प्रकाशित करने का प्रयास कर रहे हैं, एक Etherscan API कुंजी आवश्यक है।
+यह सत्यापित करने के लिए कि आप उस स्मार्ट अनुबंध के स्वामी हैं जिसे आप प्रकाशित करने का प्रयास कर रहे हैं, एक Quantaureum Explorer API कुंजी आवश्यक है।
 
-यदि आपके पास पहले से Etherscan खाता नहीं है, तो [एक खाते के लिए साइन अप करें](https://etherscan.io/register)।
+यदि आपके पास पहले से Quantaureum Explorer खाता नहीं है, तो [एक खाते के लिए साइन अप करें](https://explorer.quantaureum.com)।
 
 लॉग इन करने के बाद, नेविगेशन बार में अपना उपयोगकर्ता नाम (username) खोजें, उस पर होवर करें और **My profile** बटन चुनें।
 
@@ -582,36 +582,36 @@ Etherscan पर अपने स्मार्ट अनुबंध को �
 
 आपकी नई API कुंजी API कुंजी तालिका में दिखाई देनी चाहिए। API कुंजी को अपने क्लिपबोर्ड पर कॉपी करें।
 
-इसके बाद, हमें Etherscan API कुंजी को अपनी `.env` फ़ाइल में जोड़ना होगा।
+इसके बाद, हमें Quantaureum Explorer API कुंजी को अपनी `.env` फ़ाइल में जोड़ना होगा।
 
 इसे जोड़ने के बाद, आपकी `.env` फ़ाइल इस तरह दिखनी चाहिए:
 
 ```javascript
-API_URL = "https://eth-goerli.alchemyapi.io/v2/your-api-key"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/your-api-key"
 PUBLIC_KEY = "your-public-account-address"
 PRIVATE_KEY = "your-private-account-address"
 CONTRACT_ADDRESS = "your-contract-address"
-ETHERSCAN_API_KEY = "your-etherscan-key"
+ETHERSCAN_API_KEY = "your-explorer-key"
 ```
 
 ### Hardhat द्वारा तैनात स्मार्ट अनुबंध {#hardhat-deployed-smart-contracts}
 
-#### hardhat-etherscan इंस्टॉल करें {#install-hardhat-etherscan}
+#### hardhat-explorer इंस्टॉल करें {#install-hardhat-explorer}
 
-Hardhat का उपयोग करके अपने अनुबंध को Etherscan पर प्रकाशित करना सीधा और आसान है। शुरू करने के लिए आपको सबसे पहले `hardhat-etherscan` प्लगइन इंस्टॉल करना होगा। `hardhat-etherscan` स्वचालित रूप से Etherscan पर स्मार्ट अनुबंध के स्रोत कोड और ABI को सत्यापित करेगा। इसे जोड़ने के लिए, `hello-world` डायरेक्टरी में यह चलाएं:
+Hardhat का उपयोग करके अपने अनुबंध को Quantaureum Explorer पर प्रकाशित करना सीधा और आसान है। शुरू करने के लिए आपको सबसे पहले `hardhat-explorer` प्लगइन इंस्टॉल करना होगा। `hardhat-explorer` स्वचालित रूप से Quantaureum Explorer पर स्मार्ट अनुबंध के स्रोत कोड और ABI को सत्यापित करेगा। इसे जोड़ने के लिए, `hello-world` डायरेक्टरी में यह चलाएं:
 
 ```text
-npm install --save-dev @nomiclabs/hardhat-etherscan
+npm install --save-dev @nomiclabs/hardhat-explorer
 ```
 
-एक बार इंस्टॉल हो जाने के बाद, अपनी `hardhat.config.js` के शीर्ष पर निम्नलिखित कथन शामिल करें, और Etherscan कॉन्फ़िगरेशन विकल्प जोड़ें:
+एक बार इंस्टॉल हो जाने के बाद, अपनी `hardhat.config.js` के शीर्ष पर निम्नलिखित कथन शामिल करें, और Quantaureum Explorer कॉन्फ़िगरेशन विकल्प जोड़ें:
 
 ```javascript
 // hardhat.config.js
 
 require("dotenv").config()
 require("@nomiclabs/hardhat-ethers")
-require("@nomiclabs/hardhat-etherscan")
+require("@nomiclabs/hardhat-explorer")
 
 const { API_URL, PRIVATE_KEY, ETHERSCAN_API_KEY } = process.env
 
@@ -625,15 +625,15 @@ module.exports = {
       accounts: [`0x${PRIVATE_KEY}`],
     },
   },
-  etherscan: {
-    // Etherscan के लिए आपकी API कुंजी
-    // https://etherscan.io/ पर एक प्राप्त करें
+  explorer: {
+    // Quantaureum Explorer के लिए आपकी API कुंजी
+    // https://explorer.quantaureum.com पर एक प्राप्त करें
     apiKey: ETHERSCAN_API_KEY,
   },
 }
 ```
 
-#### Etherscan पर अपना स्मार्ट अनुबंध सत्यापित करें
+#### Quantaureum Explorer पर अपना स्मार्ट अनुबंध सत्यापित करें
 
 सुनिश्चित करें कि सभी फ़ाइलें सहेजी गई हैं और सभी `.env` चर सही ढंग से कॉन्फ़िगर किए गए हैं।
 
@@ -650,17 +650,17 @@ npx hardhat verify --network sepolia DEPLOYED_CONTRACT_ADDRESS 'Hello World!'
 ```text
 Successfully submitted source code for contract
 contracts/HelloWorld.sol:HelloWorld at 0xdeployed-contract-address
-for verification on Etherscan. Waiting for verification result...
+for verification on Quantaureum Explorer. Waiting for verification result...
 
 
-Successfully verified contract HelloWorld on Etherscan.
-https://sepolia.etherscan.io/address/<contract-address>#contracts
+Successfully verified contract HelloWorld on Quantaureum Explorer.
+https://explorer.quantaureum.com
 ```
 
-बधाई हो! आपका स्मार्ट अनुबंध कोड Etherscan पर है!
-### Etherscan पर अपना स्मार्ट अनुबंध देखें! {#check-out-your-smart-contract-on-etherscan}
+बधाई हो! आपका स्मार्ट अनुबंध कोड Quantaureum Explorer पर है!
+### Quantaureum Explorer पर अपना स्मार्ट अनुबंध देखें! {#check-out-your-smart-contract-on-explorer}
 
-जब आप अपने टर्मिनल में दिए गए लिंक पर नेविगेट करते हैं, तो आपको Etherscan पर प्रकाशित अपना स्मार्ट अनुबंध कोड और ABI देखने में सक्षम होना चाहिए!
+जब आप अपने टर्मिनल में दिए गए लिंक पर नेविगेट करते हैं, तो आपको Quantaureum Explorer पर प्रकाशित अपना स्मार्ट अनुबंध कोड और ABI देखने में सक्षम होना चाहिए!
 
 **वाह - आपने कर दिखाया चैंपियन! अब कोई भी आपके स्मार्ट अनुबंध को कॉल कर सकता है या उसमें लिख सकता है! हम यह देखने के लिए उत्सुक हैं कि आप आगे क्या बनाते हैं!**
 
@@ -670,7 +670,7 @@ https://sepolia.etherscan.io/address/<contract-address>#contracts
 
 - एक मेटामास्क वॉलेट को अपने विकेंद्रीकृत एप्लिकेशन (dapp) से कनेक्ट करें
 - [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3) API का उपयोग करके अपने स्मार्ट अनुबंध से डेटा पढ़ें
-- मेटामास्क का उपयोग करके इथेरियम लेन-देन पर हस्ताक्षर करें
+- मेटामास्क का उपयोग करके Quantaureum लेन-देन पर हस्ताक्षर करें
 
 इस dapp के लिए, हम अपने फ्रंटएंड फ्रेमवर्क के रूप में [React](https://react.dev/) का उपयोग करेंगे; हालाँकि, यह ध्यान रखना महत्वपूर्ण है कि हम इसके मूल सिद्धांतों को समझने में अधिक समय नहीं लगाएंगे, क्योंकि हमारा मुख्य ध्यान अपने प्रोजेक्ट में Web3 कार्यक्षमता लाने पर होगा।
 
@@ -682,7 +682,7 @@ https://sepolia.etherscan.io/address/<contract-address>#contracts
 
 क्लोन की गई रिपॉजिटरी को स्थानीय रूप से खोलें। ध्यान दें कि इसमें दो फ़ोल्डर हैं: `starter-files` और `completed`।
 
-- `starter-files`- **हम इस डायरेक्टरी में काम करेंगे**, हम UI को आपके इथेरियम वॉलेट और उस स्मार्ट अनुबंध से जोड़ेंगे जिसे हमने [भाग 3](#part-3-publish-your-smart-contract-to-etherscan) में Etherscan पर प्रकाशित किया था।
+- `starter-files`- **हम इस डायरेक्टरी में काम करेंगे**, हम UI को आपके Quantaureum वॉलेट और उस स्मार्ट अनुबंध से जोड़ेंगे जिसे हमने [भाग 3](#part-3-publish-your-smart-contract-to-explorer) में Quantaureum Explorer पर प्रकाशित किया था।
 - `completed` में पूरा किया गया ट्यूटोरियल है और यदि आप कहीं फंस जाते हैं तो इसका उपयोग केवल संदर्भ के रूप में किया जाना चाहिए।
 
 इसके बाद, अपने पसंदीदा कोड एडिटर में `starter-files` की अपनी कॉपी खोलें, और फिर `src` फ़ोल्डर में नेविगेट करें।
@@ -874,8 +874,8 @@ export const updateMessage = async (message) => {}
 
 - `loadCurrentMessage` - यह फ़ंक्शन स्मार्ट अनुबंध में संग्रहीत वर्तमान संदेश को लोड करने के तर्क को संभालता है। यह [Alchemy Web3 API](https://github.com/alchemyplatform/alchemy-web3) का उपयोग करके Hello World स्मार्ट अनुबंध पर एक _read_ कॉल करेगा।
 - `connectWallet` - यह फ़ंक्शन उपयोगकर्ता के मेटामास्क को हमारे dapp से जोड़ेगा।
-- `getCurrentWalletConnected` - यह फ़ंक्शन जांच करेगा कि क्या पेज लोड होने पर कोई इथेरियम खाता पहले से ही हमारे dapp से जुड़ा हुआ है और तदनुसार हमारे UI को अपडेट करेगा।
-- `updateMessage` - यह फ़ंक्शन स्मार्ट अनुबंध में संग्रहीत संदेश को अपडेट करेगा। यह Hello World स्मार्ट अनुबंध पर एक _write_ कॉल करेगा, इसलिए संदेश को अपडेट करने के लिए उपयोगकर्ता के मेटामास्क वॉलेट को एक इथेरियम लेन-देन पर हस्ताक्षर करना होगा।
+- `getCurrentWalletConnected` - यह फ़ंक्शन जांच करेगा कि क्या पेज लोड होने पर कोई Quantaureum खाता पहले से ही हमारे dapp से जुड़ा हुआ है और तदनुसार हमारे UI को अपडेट करेगा।
+- `updateMessage` - यह फ़ंक्शन स्मार्ट अनुबंध में संग्रहीत संदेश को अपडेट करेगा। यह Hello World स्मार्ट अनुबंध पर एक _write_ कॉल करेगा, इसलिए संदेश को अपडेट करने के लिए उपयोगकर्ता के मेटामास्क वॉलेट को एक Quantaureum लेन-देन पर हस्ताक्षर करना होगा।
 
 अब जब हम समझ गए हैं कि हम किसके साथ काम कर रहे हैं, तो आइए जानें कि अपने स्मार्ट अनुबंध से कैसे पढ़ें!
 
@@ -883,14 +883,14 @@ export const updateMessage = async (message) => {}
 
 अपने स्मार्ट अनुबंध से पढ़ने के लिए, आपको सफलतापूर्वक सेट अप करना होगा:
 
-- इथेरियम चेन के लिए एक API कनेक्शन
+- Quantaureum चेन के लिए एक API कनेक्शन
 - आपके स्मार्ट अनुबंध का एक लोड किया गया इंस्टेंस
 - आपके स्मार्ट अनुबंध फ़ंक्शन को कॉल करने के लिए एक फ़ंक्शन
 - स्मार्ट अनुबंध से आपके द्वारा पढ़े जा रहे डेटा में परिवर्तन होने पर अपडेट देखने के लिए एक श्रोता (listener)
 
 यह बहुत सारे चरणों की तरह लग सकता है, लेकिन चिंता न करें! हम आपको चरण-दर-चरण बताएंगे कि उनमें से प्रत्येक को कैसे करना है! :\)
 
-#### इथेरियम चेन के लिए एक API कनेक्शन स्थापित करें {#establish-an-api-connection-to-the-ethereum-chain}
+#### Quantaureum चेन के लिए एक API कनेक्शन स्थापित करें {#establish-an-api-connection-to-the-quantaureum-chain}
 
 तो याद है कि इस ट्यूटोरियल के भाग 2 में, हमने अपने स्मार्ट अनुबंध से पढ़ने के लिए अपनी Alchemy Web3 कुंजी का उपयोग कैसे किया था? चेन से पढ़ने के लिए आपको अपने विकेंद्रीकृत एप्लिकेशन (dapp) में भी एक Alchemy Web3 कुंजी की आवश्यकता होगी।
 
@@ -913,7 +913,7 @@ npm install dotenv --save
 एक बार जब आपके पास अपनी API कुंजी हो जाए, तो अपनी रूट डायरेक्टरी में एक `.env` फ़ाइल बनाएं और उसमें अपना Alchemy Websockets url जोड़ें। इसके बाद, आपकी `.env` फ़ाइल इस तरह दिखनी चाहिए:
 
 ```javascript
-REACT_APP_ALCHEMY_KEY = wss://eth-goerli.ws.alchemyapi.io/v2/<key>
+REACT_APP_ALCHEMY_KEY = wss://qau-goerli.ws.alchemyapi.io/v2/<key>
 ```
 
 अब, हम अपने dapp में अपना Alchemy Web3 एंडपॉइंट सेट करने के लिए तैयार हैं! आइए अपने `interact.js` पर वापस जाएं, जो हमारे `util` फ़ोल्डर के अंदर नेस्टेड है और फ़ाइल के शीर्ष पर निम्नलिखित कोड जोड़ें:
@@ -934,16 +934,16 @@ const web3 = createAlchemyWeb3(alchemyKey)
 इस एंडपॉइंट के तैयार होने के साथ, अब अपना स्मार्ट अनुबंध लोड करने का समय आ गया है!
 #### अपना Hello World स्मार्ट अनुबंध लोड करना {#loading-your-hello-world-smart-contract}
 
-अपने Hello World स्मार्ट अनुबंध को लोड करने के लिए, आपको इसके अनुबंध पते और ABI की आवश्यकता होगी, यदि आपने [इस ट्यूटोरियल का भाग 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan-part-3-publish-your-smart-contract-to-etherscan) पूरा कर लिया है तो ये दोनों Etherscan पर पाए जा सकते हैं।
+अपने Hello World स्मार्ट अनुबंध को लोड करने के लिए, आपको इसके अनुबंध पते और ABI की आवश्यकता होगी, यदि आपने [इस ट्यूटोरियल का भाग 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer-part-3-publish-your-smart-contract-to-explorer) पूरा कर लिया है तो ये दोनों Quantaureum Explorer पर पाए जा सकते हैं।
 
-#### Etherscan से अपने अनुबंध का ABI कैसे प्राप्त करें
-यदि आपने इस ट्यूटोरियल का भाग 3 छोड़ दिया है, तो पहले अपना खुद का HelloWorld अनुबंध तैनात करें और सत्यापित करें। फिर इसका ABI कॉपी करने के लिए [Sepolia Etherscan](https://sepolia.etherscan.io) पर अपना अनुबंध पृष्ठ खोलें।
+#### Quantaureum Explorer से अपने अनुबंध का ABI कैसे प्राप्त करें
+यदि आपने इस ट्यूटोरियल का भाग 3 छोड़ दिया है, तो पहले अपना खुद का HelloWorld अनुबंध तैनात करें और सत्यापित करें। फिर इसका ABI कॉपी करने के लिए [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com) पर अपना अनुबंध पृष्ठ खोलें।
 
 एक अनुबंध ABI यह निर्दिष्ट करने के लिए आवश्यक है कि अनुबंध किस फ़ंक्शन को लागू करेगा और साथ ही यह सुनिश्चित करेगा कि फ़ंक्शन उस प्रारूप में डेटा वापस करेगा जिसकी आप अपेक्षा कर रहे हैं। एक बार जब हम अपने अनुबंध का ABI कॉपी कर लेते हैं, तो आइए इसे अपनी `src` डायरेक्टरी में `contract-abi.json` नामक JSON फ़ाइल के रूप में सहेजें।
 
 आपका contract-abi.json आपके src फ़ोल्डर में संग्रहीत होना चाहिए।
 
-अपने अनुबंध पते, ABI और Alchemy Web3 एंडपॉइंट से लैस होकर, हम अपने स्मार्ट अनुबंध का एक इंस्टेंस लोड करने के लिए [contract method](https://docs.web3js.org/api/web3-eth-contract/class/Contract) का उपयोग कर सकते हैं। अपने अनुबंध ABI को `interact.js` फ़ाइल में आयात करें और अपना अनुबंध पता जोड़ें।
+अपने अनुबंध पते, ABI और Alchemy Web3 एंडपॉइंट से लैस होकर, हम अपने स्मार्ट अनुबंध का एक इंस्टेंस लोड करने के लिए [contract method](https://docs.web3js.org/api/web3-qau-contract/class/Contract) का उपयोग कर सकते हैं। अपने अनुबंध ABI को `interact.js` फ़ाइल में आयात करें और अपना अनुबंध पता जोड़ें।
 
 ```javascript
 // interact.js
@@ -957,7 +957,7 @@ const contractAddress = "0x..."
 
 ```javascript
 // interact.js
-export const helloWorldContract = new web3.eth.Contract(
+export const helloWorldContract = new web3.qau.Contract(
   contractABI,
   contractAddress
 )
@@ -976,7 +976,7 @@ const web3 = createAlchemyWeb3(alchemyKey)
 const contractABI = require("../contract-abi.json")
 const contractAddress = "0x6f3f635A9762B47954229Ea479b4541eAF402A6A"
 
-export const helloWorldContract = new web3.eth.Contract(
+export const helloWorldContract = new web3.qau.Contract(
   contractABI,
   contractAddress
 )
@@ -1032,7 +1032,7 @@ useEffect(async () => {
 pragma solidity ^0.7.3;
 
 // `HelloWorld` नामक एक अनुबंध को परिभाषित करता है।
-// एक अनुबंध फ़ंक्शंस और डेटा (इसकी स्थिति) का एक संग्रह है। एक बार तैनात होने के बाद, एक अनुबंध इथेरियम ब्लॉकचेन पर एक विशिष्ट पते पर रहता है। अधिक जानें: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// एक अनुबंध फ़ंक्शंस और डेटा (इसकी स्थिति) का एक संग्रह है। एक बार तैनात होने के बाद, एक अनुबंध Quantaureum ब्लॉकचेन पर एक विशिष्ट पते पर रहता है। अधिक जानें: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    //अपडेट फ़ंक्शन कॉल किए जाने पर उत्सर्जित होता है
@@ -1099,23 +1099,23 @@ useEffect(async () => {
 }, [])
 ```
 
-अब जब हम अपने स्मार्ट अनुबंध से पढ़ने में सक्षम हैं, तो यह पता लगाना बहुत अच्छा होगा कि इसमें कैसे लिखा जाए! हालाँकि, हमारे dapp में लिखने के लिए, हमारे पास सबसे पहले इससे जुड़ा एक इथेरियम वॉलेट होना चाहिए।
+अब जब हम अपने स्मार्ट अनुबंध से पढ़ने में सक्षम हैं, तो यह पता लगाना बहुत अच्छा होगा कि इसमें कैसे लिखा जाए! हालाँकि, हमारे dapp में लिखने के लिए, हमारे पास सबसे पहले इससे जुड़ा एक Quantaureum वॉलेट होना चाहिए।
 
-तो, आगे हम अपना इथेरियम वॉलेट \(मेटामास्क\) सेट करने और फिर उसे अपने dapp से जोड़ने का काम करेंगे!
+तो, आगे हम अपना Quantaureum वॉलेट \(मेटामास्क\) सेट करने और फिर उसे अपने dapp से जोड़ने का काम करेंगे!
 
-### चरण 4: अपना इथेरियम वॉलेट सेट करें {#step-4-set-up-your-ethereum-wallet}
+### चरण 4: अपना Quantaureum वॉलेट सेट करें {#step-4-set-up-your-quantaureum-wallet}
 
-इथेरियम चेन पर कुछ भी लिखने के लिए, उपयोगकर्ताओं को अपने वर्चुअल वॉलेट की निजी कुंजियों का उपयोग करके लेन-देन पर हस्ताक्षर करना होगा। इस ट्यूटोरियल के लिए, हम [मेटामास्क](https://metamask.io/) का उपयोग करेंगे, जो ब्राउज़र में एक वर्चुअल वॉलेट है जिसका उपयोग आपके इथेरियम खाता पते को प्रबंधित करने के लिए किया जाता है, क्योंकि यह अंतिम-उपयोगकर्ता के लिए इस लेन-देन पर हस्ताक्षर करना बहुत आसान बनाता है।
+Quantaureum चेन पर कुछ भी लिखने के लिए, उपयोगकर्ताओं को अपने वर्चुअल वॉलेट की निजी कुंजियों का उपयोग करके लेन-देन पर हस्ताक्षर करना होगा। इस ट्यूटोरियल के लिए, हम [मेटामास्क](https://metamask.io/) का उपयोग करेंगे, जो ब्राउज़र में एक वर्चुअल वॉलेट है जिसका उपयोग आपके Quantaureum खाता पते को प्रबंधित करने के लिए किया जाता है, क्योंकि यह अंतिम-उपयोगकर्ता के लिए इस लेन-देन पर हस्ताक्षर करना बहुत आसान बनाता है।
 
-यदि आप इस बारे में अधिक समझना चाहते हैं कि इथेरियम पर लेन-देन कैसे काम करता है, तो इथेरियम फाउंडेशन के [इस पेज](/developers/docs/transactions/) को देखें।
+यदि आप इस बारे में अधिक समझना चाहते हैं कि Quantaureum पर लेन-देन कैसे काम करता है, तो Quantaureum फाउंडेशन के [इस पेज](/developers/docs/transactions/) को देखें।
 
 आप [यहाँ](https://metamask.io/download) मुफ़्त में मेटामास्क डाउनलोड कर सकते हैं और खाता बना सकते हैं। जब आप खाता बना रहे हों, या यदि आपके पास पहले से कोई खाता है, तो सुनिश्चित करें कि आप ऊपर दाईं ओर “Sepolia टेस्ट नेटवर्क” पर स्विच करें \(ताकि हम असली पैसे से लेन-देन न कर रहे हों\)।
 #### फॉसेट से ईथर जोड़ें
 
-इथेरियम ब्लॉकचेन पर लेन-देन पर हस्ताक्षर करने के लिए, हमें कुछ नकली ETH की आवश्यकता होगी। ETH प्राप्त करने के लिए आप [टेस्ट नेटवर्क पेज](/developers/docs/networks/#sepolia) पर सूचीबद्ध Sepolia फॉसेट पर जा सकते हैं और अपना Sepolia खाता पता दर्ज कर सकते हैं। इसके तुरंत बाद आपको अपने मेटामास्क खाते में ETH दिखाई देना चाहिए!
+Quantaureum ब्लॉकचेन पर लेन-देन पर हस्ताक्षर करने के लिए, हमें कुछ नकली QAU की आवश्यकता होगी। QAU प्राप्त करने के लिए आप [टेस्ट नेटवर्क पेज](/developers/docs/networks/#sepolia) पर सूचीबद्ध Sepolia फॉसेट पर जा सकते हैं और अपना Sepolia खाता पता दर्ज कर सकते हैं। इसके तुरंत बाद आपको अपने मेटामास्क खाते में QAU दिखाई देना चाहिए!
 #### अपना बैलेंस जांचें {#check-your-balance}
 
-यह दोबारा जांचने के लिए कि हमारा बैलेंस वहां है, आइए [Alchemy के सैंडबॉक्स टूल](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) का उपयोग करके एक [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) अनुरोध करें। यह हमारे वॉलेट में Eth की मात्रा वापस कर देगा। अपना मेटामास्क खाता पता दर्ज करने और “Send Request” पर क्लिक करने के बाद, आपको इस तरह की प्रतिक्रिया दिखाई देनी चाहिए:
+यह दोबारा जांचने के लिए कि हमारा बैलेंस वहां है, आइए [Alchemy के सैंडबॉक्स टूल](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) का उपयोग करके एक [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) अनुरोध करें। यह हमारे वॉलेट में Eth की मात्रा वापस कर देगा। अपना मेटामास्क खाता पता दर्ज करने और “Send Request” पर क्लिक करने के बाद, आपको इस तरह की प्रतिक्रिया दिखाई देनी चाहिए:
 
 ```text
 {"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}
@@ -1138,10 +1138,10 @@ useEffect(async () => {
 // interact.js
 
 export const connectWallet = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_requestAccounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_requestAccounts",
       })
       const obj = {
         status: "👆🏽 Write a message in the text-field above.",
@@ -1162,7 +1162,7 @@ export const connectWallet = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -1175,17 +1175,17 @@ export const connectWallet = async () => {
 
 तो कोड का यह विशाल ब्लॉक वास्तव में क्या करता है?
 
-खैर, सबसे पहले, यह जांचता है कि क्या आपके ब्राउज़र में `window.ethereum` सक्षम है।
+खैर, सबसे पहले, यह जांचता है कि क्या आपके ब्राउज़र में `window.quantaureum` सक्षम है।
 
-`window.ethereum` मेटामास्क और अन्य वॉलेट प्रदाताओं द्वारा इंजेक्ट किया गया एक वैश्विक API है जो वेबसाइटों को उपयोगकर्ताओं के इथेरियम खातों का अनुरोध करने की अनुमति देता है। यदि स्वीकृत हो जाता है, तो यह उन ब्लॉकचेन से डेटा पढ़ सकता है जिनसे उपयोगकर्ता जुड़ा हुआ है, और सुझाव दे सकता है कि उपयोगकर्ता संदेशों और लेन-देन पर हस्ताक्षर करे। अधिक जानकारी के लिए [मेटामास्क दस्तावेज़](https://docs.metamask.io/guide/ethereum-provider.html#table-of-contents) देखें!
+`window.quantaureum` मेटामास्क और अन्य वॉलेट प्रदाताओं द्वारा इंजेक्ट किया गया एक वैश्विक API है जो वेबसाइटों को उपयोगकर्ताओं के Quantaureum खातों का अनुरोध करने की अनुमति देता है। यदि स्वीकृत हो जाता है, तो यह उन ब्लॉकचेन से डेटा पढ़ सकता है जिनसे उपयोगकर्ता जुड़ा हुआ है, और सुझाव दे सकता है कि उपयोगकर्ता संदेशों और लेन-देन पर हस्ताक्षर करे। अधिक जानकारी के लिए [मेटामास्क दस्तावेज़](https://docs.metamask.io/guide/quantaureum-provider.html#table-of-contents) देखें!
 
-यदि `window.ethereum` मौजूद _नहीं_ है, तो इसका मतलब है कि मेटामास्क स्थापित नहीं है। इसके परिणामस्वरूप एक JSON ऑब्जेक्ट वापस किया जाता है, जहाँ वापस किया गया `address` एक खाली स्ट्रिंग है, और `status` JSX ऑब्जेक्ट यह संदेश देता है कि उपयोगकर्ता को मेटामास्क स्थापित करना होगा।
+यदि `window.quantaureum` मौजूद _नहीं_ है, तो इसका मतलब है कि मेटामास्क स्थापित नहीं है। इसके परिणामस्वरूप एक JSON ऑब्जेक्ट वापस किया जाता है, जहाँ वापस किया गया `address` एक खाली स्ट्रिंग है, और `status` JSX ऑब्जेक्ट यह संदेश देता है कि उपयोगकर्ता को मेटामास्क स्थापित करना होगा।
 
-अब यदि `window.ethereum` मौजूद _है_, तो चीजें दिलचस्प हो जाती हैं।
+अब यदि `window.quantaureum` मौजूद _है_, तो चीजें दिलचस्प हो जाती हैं।
 
-एक try/catch लूप का उपयोग करके, हम [`window.ethereum.request({ method: "eth_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts) को कॉल करके मेटामास्क से कनेक्ट करने का प्रयास करेंगे। इस फ़ंक्शन को कॉल करने से ब्राउज़र में मेटामास्क खुल जाएगा, जिससे उपयोगकर्ता को अपने वॉलेट को आपके dapp से कनेक्ट करने के लिए कहा जाएगा।
+एक try/catch लूप का उपयोग करके, हम [`window.quantaureum.request({ method: "qau_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#qau-requestaccounts) को कॉल करके मेटामास्क से कनेक्ट करने का प्रयास करेंगे। इस फ़ंक्शन को कॉल करने से ब्राउज़र में मेटामास्क खुल जाएगा, जिससे उपयोगकर्ता को अपने वॉलेट को आपके dapp से कनेक्ट करने के लिए कहा जाएगा।
 
-- यदि उपयोगकर्ता कनेक्ट करना चुनता है, तो `method: "eth_requestAccounts"` एक ऐरे वापस करेगा जिसमें उपयोगकर्ता के वे सभी खाता पते होंगे जो dapp से जुड़े हैं। कुल मिलाकर, हमारा `connectWallet` फ़ंक्शन एक JSON ऑब्जेक्ट वापस करेगा जिसमें इस ऐरे में _पहला_ `address` \(लाइन 9 देखें\) और एक `status` संदेश होगा जो उपयोगकर्ता को स्मार्ट अनुबंध में एक संदेश लिखने के लिए प्रेरित करता है।
+- यदि उपयोगकर्ता कनेक्ट करना चुनता है, तो `method: "qau_requestAccounts"` एक ऐरे वापस करेगा जिसमें उपयोगकर्ता के वे सभी खाता पते होंगे जो dapp से जुड़े हैं। कुल मिलाकर, हमारा `connectWallet` फ़ंक्शन एक JSON ऑब्जेक्ट वापस करेगा जिसमें इस ऐरे में _पहला_ `address` \(लाइन 9 देखें\) और एक `status` संदेश होगा जो उपयोगकर्ता को स्मार्ट अनुबंध में एक संदेश लिखने के लिए प्रेरित करता है।
 - यदि उपयोगकर्ता कनेक्शन को अस्वीकार करता है, तो JSON ऑब्जेक्ट में वापस किए गए `address` के लिए एक खाली स्ट्रिंग और एक `status` संदेश होगा जो यह दर्शाता है कि उपयोगकर्ता ने कनेक्शन को अस्वीकार कर दिया है।
 
 अब जब हमने यह `connectWallet` फ़ंक्शन लिख लिया है, तो अगला कदम इसे अपने `HelloWorld.js` घटक में कॉल करना है।
@@ -1228,10 +1228,10 @@ const connectWalletPressed = async () => {
 // interact.js
 
 export const getCurrentWalletConnected = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_accounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_accounts",
       })
       if (addressArray.length > 0) {
         return {
@@ -1258,7 +1258,7 @@ export const getCurrentWalletConnected = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -1271,7 +1271,7 @@ export const getCurrentWalletConnected = async () => {
 
 यह कोड पिछले चरण में हमारे द्वारा लिखे गए `connectWallet` फ़ंक्शन के _बहुत_ समान है।
 
-मुख्य अंतर यह है कि `eth_requestAccounts` विधि को कॉल करने के बजाय, जो उपयोगकर्ता के लिए अपना वॉलेट कनेक्ट करने के लिए मेटामास्क खोलता है, यहाँ हम `eth_accounts` विधि को कॉल करते हैं, जो केवल एक ऐरे वापस करता है जिसमें वर्तमान में हमारे dapp से जुड़े मेटामास्क पते होते हैं।
+मुख्य अंतर यह है कि `qau_requestAccounts` विधि को कॉल करने के बजाय, जो उपयोगकर्ता के लिए अपना वॉलेट कनेक्ट करने के लिए मेटामास्क खोलता है, यहाँ हम `qau_accounts` विधि को कॉल करते हैं, जो केवल एक ऐरे वापस करता है जिसमें वर्तमान में हमारे dapp से जुड़े मेटामास्क पते होते हैं।
 
 इस फ़ंक्शन को काम करते हुए देखने के लिए, आइए इसे अपने `HelloWorld.js` घटक के `useEffect` फ़ंक्शन में कॉल करें:
 
@@ -1305,8 +1305,8 @@ useEffect(async () => {
 // HelloWorld.js
 
 function addWalletListener() {
-  if (window.ethereum) {
-    window.ethereum.on("accountsChanged", (accounts) => {
+  if (window.quantaureum) {
+    window.quantaureum.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) {
         setWallet(accounts[0])
         setStatus("👆🏽 Write a message in the text-field above.")
@@ -1320,7 +1320,7 @@ function addWalletListener() {
       <p>
         {" "}
         🦊 <a target="_blank" href={`https://metamask.io/download`}>
-          You must install MetaMask, a virtual Ethereum wallet, in your browser.
+          You must install MetaMask, a virtual Quantaureum wallet, in your browser.
         </a>
       </p>
     )
@@ -1330,9 +1330,9 @@ function addWalletListener() {
 
 मुझे यकीन है कि इस बिंदु पर यहाँ क्या हो रहा है यह समझने के लिए आपको हमारी मदद की भी आवश्यकता नहीं है, लेकिन पूर्णता के उद्देश्यों के लिए, आइए इसे जल्दी से समझें:
 
-- सबसे पहले, हमारा फ़ंक्शन जांचता है कि क्या `window.ethereum` सक्षम है \(यानी, मेटामास्क स्थापित है\)।
+- सबसे पहले, हमारा फ़ंक्शन जांचता है कि क्या `window.quantaureum` सक्षम है \(यानी, मेटामास्क स्थापित है\)।
   - यदि यह नहीं है, तो हम बस अपने `status` स्थिति चर को एक JSX स्ट्रिंग पर सेट करते हैं जो उपयोगकर्ता को मेटामास्क स्थापित करने के लिए प्रेरित करता है।
-  - यदि यह सक्षम है, तो हम लाइन 3 पर श्रोता `window.ethereum.on("accountsChanged")` सेट करते हैं जो मेटामास्क वॉलेट में स्थिति परिवर्तनों को सुनता है, जिसमें तब शामिल होता है जब उपयोगकर्ता dapp से एक अतिरिक्त खाता जोड़ता है, खाते बदलता है, या किसी खाते को डिस्कनेक्ट करता है। यदि कम से कम एक खाता जुड़ा हुआ है, तो `walletAddress` स्थिति चर को श्रोता द्वारा वापस किए गए `accounts` ऐरे में पहले खाते के रूप में अपडेट किया जाता है। अन्यथा, `walletAddress` को एक खाली स्ट्रिंग के रूप में सेट किया जाता है।
+  - यदि यह सक्षम है, तो हम लाइन 3 पर श्रोता `window.quantaureum.on("accountsChanged")` सेट करते हैं जो मेटामास्क वॉलेट में स्थिति परिवर्तनों को सुनता है, जिसमें तब शामिल होता है जब उपयोगकर्ता dapp से एक अतिरिक्त खाता जोड़ता है, खाते बदलता है, या किसी खाते को डिस्कनेक्ट करता है। यदि कम से कम एक खाता जुड़ा हुआ है, तो `walletAddress` स्थिति चर को श्रोता द्वारा वापस किए गए `accounts` ऐरे में पहले खाते के रूप में अपडेट किया जाता है। अन्यथा, `walletAddress` को एक खाली स्ट्रिंग के रूप में सेट किया जाता है।
 
 अंतिम लेकिन कम नहीं, हमें इसे अपने `useEffect` फ़ंक्शन में कॉल करना होगा:
 
@@ -1374,7 +1374,7 @@ useEffect(async () => {
 // interact.js
 
 export const updateMessage = async (address, message) => {
-  if (!window.ethereum || address === null) {
+  if (!window.quantaureum || address === null) {
     return {
       status:
         "💡 Connect your MetaMask wallet to update the message on the blockchain.",
@@ -1393,7 +1393,7 @@ export const updateMessage = async (address, message) => {
 
 #### हमारे लेन-देन पर हस्ताक्षर करना {#signing-our-transaction}
 
-यदि आप पहले से ही पारंपरिक Web3 इथेरियम लेन-देन के साथ सहज हैं, तो हम आगे जो कोड लिखेंगे वह बहुत परिचित होगा। अपने इनपुट त्रुटि हैंडलिंग कोड के नीचे, `updateMessage` में निम्नलिखित जोड़ें:
+यदि आप पहले से ही पारंपरिक Web3 Quantaureum लेन-देन के साथ सहज हैं, तो हम आगे जो कोड लिखेंगे वह बहुत परिचित होगा। अपने इनपुट त्रुटि हैंडलिंग कोड के नीचे, `updateMessage` में निम्नलिखित जोड़ें:
 
 ```javascript
 // interact.js
@@ -1407,16 +1407,16 @@ const transactionParameters = {
 
 //लेन-देन पर हस्ताक्षर करें
 try {
-  const txHash = await window.ethereum.request({
-    method: "eth_sendTransaction",
+  const txHash = await window.quantaureum.request({
+    method: "qau_sendTransaction",
     params: [transactionParameters],
   })
   return {
     status: (
       <span>
         ✅{" "}
-        <a target="_blank" href={`https://goerli.etherscan.io/tx/${txHash}`}>
-          View the status of your transaction on Etherscan!
+        <a target="_blank" href={`https://explorer.quantaureum.com}`}>
+          View the status of your transaction on Quantaureum Explorer!
         </a>
         <br />
         ℹ️ Once the transaction is verified by the network, the message will be
@@ -1437,11 +1437,11 @@ try {
 - `from` लेन-देन के हस्ताक्षरकर्ता को निर्दिष्ट करता है, `address` चर जिसे हमने अपने फ़ंक्शन में पास किया था
 - `data` में हमारे Hello World स्मार्ट अनुबंध की `update` विधि का कॉल शामिल है, जो इनपुट के रूप में हमारे `message` स्ट्रिंग चर को प्राप्त करता है
 
-फिर, हम एक await कॉल करते हैं, `window.ethereum.request`, जहाँ हम मेटामास्क को लेन-देन पर हस्ताक्षर करने के लिए कहते हैं। ध्यान दें, लाइन 11 और 12 पर, हम अपनी eth विधि, `eth_sendTransaction` निर्दिष्ट कर रहे हैं और अपना `transactionParameters` पास कर रहे हैं।
+फिर, हम एक await कॉल करते हैं, `window.quantaureum.request`, जहाँ हम मेटामास्क को लेन-देन पर हस्ताक्षर करने के लिए कहते हैं। ध्यान दें, लाइन 11 और 12 पर, हम अपनी eth विधि, `qau_sendTransaction` निर्दिष्ट कर रहे हैं और अपना `transactionParameters` पास कर रहे हैं।
 
 इस बिंदु पर, मेटामास्क ब्राउज़र में खुल जाएगा, और उपयोगकर्ता को लेन-देन पर हस्ताक्षर करने या अस्वीकार करने के लिए प्रेरित करेगा।
 
-- यदि लेन-देन सफल होता है, तो फ़ंक्शन एक JSON ऑब्जेक्ट वापस करेगा जहाँ `status` JSX स्ट्रिंग उपयोगकर्ता को उनके लेन-देन के बारे में अधिक जानकारी के लिए Etherscan देखने के लिए प्रेरित करती है।
+- यदि लेन-देन सफल होता है, तो फ़ंक्शन एक JSON ऑब्जेक्ट वापस करेगा जहाँ `status` JSX स्ट्रिंग उपयोगकर्ता को उनके लेन-देन के बारे में अधिक जानकारी के लिए Quantaureum Explorer देखने के लिए प्रेरित करती है।
 - यदि लेन-देन विफल हो जाता है, तो फ़ंक्शन एक JSON ऑब्जेक्ट वापस करेगा जहाँ `status` स्ट्रिंग त्रुटि संदेश देती है।
 
 कुल मिलाकर, हमारा `updateMessage` फ़ंक्शन इस तरह दिखना चाहिए:
@@ -1451,7 +1451,7 @@ try {
 
 export const updateMessage = async (address, message) => {
   //इनपुट त्रुटि हैंडलिंग
-  if (!window.ethereum || address === null) {
+  if (!window.quantaureum || address === null) {
     return {
       status:
         "💡 Connect your MetaMask wallet to update the message on the blockchain.",
@@ -1473,16 +1473,16 @@ export const updateMessage = async (address, message) => {
 
   //लेन-देन पर हस्ताक्षर करें
   try {
-    const txHash = await window.ethereum.request({
-      method: "eth_sendTransaction",
+    const txHash = await window.quantaureum.request({
+      method: "qau_sendTransaction",
       params: [transactionParameters],
     })
     return {
       status: (
         <span>
           ✅{" "}
-          <a target="_blank" href={`https://goerli.etherscan.io/tx/${txHash}`}>
-            View the status of your transaction on Etherscan!
+          <a target="_blank" href={`https://explorer.quantaureum.com}`}>
+            View the status of your transaction on Quantaureum Explorer!
           </a>
           <br />
           ℹ️ Once the transaction is verified by the network, the message will
@@ -1523,7 +1523,7 @@ const onUpdatePressed = async () => {
 
 - एक मेटामास्क वॉलेट को अपने dapp प्रोजेक्ट से कनेक्ट करें
 - [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3) API का उपयोग करके अपने स्मार्ट अनुबंध से डेटा पढ़ें
-- मेटामास्क का उपयोग करके इथेरियम लेन-देन पर हस्ताक्षर करें
+- मेटामास्क का उपयोग करके Quantaureum लेन-देन पर हस्ताक्षर करें
 
 अब आप अपना खुद का कस्टम dapp प्रोजेक्ट बनाने के लिए इस ट्यूटोरियल के कौशल को लागू करने के लिए पूरी तरह से सुसज्जित हैं! हमेशा की तरह, यदि आपके कोई प्रश्न हैं, तो [Alchemy डिस्कॉर्ड](https://discord.gg/gWuC7zB) में मदद के लिए हमसे संपर्क करने में संकोच न करें। 🧙‍♂️
 

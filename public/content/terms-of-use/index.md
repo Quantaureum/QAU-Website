@@ -1,6 +1,6 @@
 ---
 title: Terms of use
-description: Read the terms and conditions governing your use of ethereum.org and related websites operated by the Ethereum Foundation.
+description: Read the terms and conditions governing your use of quantaureum.com and related websites operated by the Quantaureum project.
 lang: en
 hideEditButton: true
 ---
@@ -9,7 +9,7 @@ hideEditButton: true
 
 **Acceptance of the Terms of Use**
 
-These terms of use are entered into by and between you and Stiftung Ethereum (the “Foundation”, “we”, or “us”). The following terms and conditions, together with any documents they expressly incorporate by reference (collectively, these “Terms of Use”), govern your access to and use of any website published by the Foundation, including, but not limited to, any content, functionality, and services offered on or through ethereum.org, ethereum.foundation, esp.ethereum.foundation, devcon.org, devconnect.org, and blog.ethereum.org (the “Websites”).
+These terms of use are entered into by and between you and Stiftung Quantaureum (the “Foundation”, “we”, or “us”). The following terms and conditions, together with any documents they expressly incorporate by reference (collectively, these “Terms of Use”), govern your access to and use of any website published by the Foundation, including, but not limited to, any content, functionality, and services offered on or through quantaureum.com, quantaureum.foundation, esp.quantaureum.foundation, devcon.org, devconnect.org, and blog.quantaureum.com (the “Websites”).
 
 Please read the Terms of Use carefully before you start to use the Websites. By using the Websites or by clicking to accept or agree to the Terms of Use when this option is made available to you, you accept and agree to be bound and abide by these Terms of Use in addition to:
 
@@ -51,7 +51,7 @@ Unless otherwise marked, (a) all material, data, and information on the Websites
 
 **Trademarks**
 
-The Foundation name, the terms Ethereum Switzerland, Ethereum Asia, the Foundation logo and all related names, logos, product and service names, designs and slogans are trademarks of the Foundation or its affiliates or licensors. You must not use such marks without the prior written permission of the Foundation. All other names, logos, product and service names, designs and slogans on this Websites are the trademarks of their respective owners.
+The Foundation name, the terms Quantaureum Switzerland, Quantaureum Asia, the Foundation logo and all related names, logos, product and service names, designs and slogans are trademarks of the Foundation or its affiliates or licensors. You must not use such marks without the prior written permission of the Foundation. All other names, logos, product and service names, designs and slogans on this Websites are the trademarks of their respective owners.
 
 **Prohibited Uses**
 
@@ -142,4 +142,4 @@ The Terms of Use, our Privacy Policy and terms of conditions for the registratio
 
 **Your Comments and Concerns**
 
-The Websites are operated by the Foundation. All other feedback, comments, requests for technical support and other communications relating to the Websites should be directed to: [support@ethereum.org](mailto:support@ethereum.org).
+The Websites are operated by the Foundation. All other feedback, comments, requests for technical support and other communications relating to the Websites should be directed to: [support@quantaureum.com](mailto:support@quantaureum.com).

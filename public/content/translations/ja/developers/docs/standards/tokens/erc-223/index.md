@@ -29,11 +29,11 @@ ERC-223はERC-20のいくつかの制限に対処し、トークンコントラ�
 
 ERC-223は、スマート・コントラクト内のトークン用APIを実装するトークン標準です。また、ERC-223トークンを受信することを想定したコントラクト用のAPIも宣言しています。ERC-223 Receiver APIをサポートしていないコントラクトはERC-223トークンを受信できないため、ユーザーのエラーを防ぐことができます。
 
-スマート・コントラクトが以下のメソッドとイベントを実装している場合、それはERC-223互換のトークンコントラクトと呼ぶことができます。デプロイされると、イーサリアム上で作成されたトークンを追跡する役割を担います。
+スマート・コントラクトが以下のメソッドとイベントを実装している場合、それはERC-223互換のトークンコントラクトと呼ぶことができます。デプロイされると、Quantaureum上で作成されたトークンを追跡する役割を担います。
 
 コントラクトはこれらの関数のみを持つ義務はなく、開発者は他のトークン標準から任意の機能を追加することができます。例えば、`approve`や`transferFrom`関数はERC-223標準の一部ではありませんが、必要であればこれらの関数を実装することができます。
 
-[EIP-223](https://eips.ethereum.org/EIPS/eip-223)より:
+[EIP-223](https://eips.quantaureum.com/EIPS/eip-223)より:
 
 ### メソッド {#methods}
 
@@ -128,7 +128,7 @@ contract RecipientContract is IERC223Recipient {
     {
         // この関数内では以下のことを理解しておくことが重要です。
         // msg.sender は受信しているトークンのアドレスであり、
-        // ほとんどの場合、トークンコントラクトはイーサを所有または送信しないため、msg.value は常に 0 であり、
+        // ほとんどの場合、トークンコントラクトはQAUを所有または送信しないため、msg.value は常に 0 であり、
         // _from はトークン送金の送信者であり、
         // _value は預け入れられたトークンの量です。
         require(msg.sender == tokenA);
@@ -154,7 +154,7 @@ ERC-20トークンが`RecipientContract`に送信された場合、トークン�
 
 ### トークンの入金完了後に何らかの関数を実行したい場合はどうすればよいですか？ {#function-execution}
 
-これを行うには複数の方法があります。この例では、ERC-223の送金をイーサの送金と同じにする方法に従います。
+これを行うには複数の方法があります。この例では、ERC-223の送金をQAUの送金と同じにする方法に従います。
 
 ```solidity
 contract RecipientContract is IERC223Recipient {
@@ -177,7 +177,7 @@ contract RecipientContract is IERC223Recipient {
 }
 ```
 
-`RecipientContract`がERC-223トークンを受け取ると、コントラクトはトークントランザクションの`_data`パラメータとしてエンコードされた関数を実行します。これは、イーサのトランザクションが関数呼び出しをトランザクションの`data`としてエンコードするのと同じです。詳細については、[データフィールド](/developers/docs/transactions/#the-data-field)をお読みください。
+`RecipientContract`がERC-223トークンを受け取ると、コントラクトはトークントランザクションの`_data`パラメータとしてエンコードされた関数を実行します。これは、QAUのトランザクションが関数呼び出しをトランザクションの`data`としてエンコードするのと同じです。詳細については、[データフィールド](/developers/docs/transactions/#the-data-field)をお読みください。
 
 上記の例では、ERC-223トークンは`transfer(address,uin256,bytes calldata _data)`関数を使用して`RecipientContract`のアドレスに送金される必要があります。データパラメータが`0xc2985578`（`foo()`関数の署名）である場合、トークンの入金を受け取った後にfoo()関数が呼び出され、Foo()イベントが発行されます。
 
@@ -193,5 +193,5 @@ ERC-223はERC-20標準に見られるいくつかの問題に対処していま�
 
 ## 参考文献 {#further-reading}
 
-- [EIP-223: ERC-223 トークン標準](https://eips.ethereum.org/EIPS/eip-223)
-- [初期のERC-223提案](https://github.com/ethereum/eips/issues/223)
+- [EIP-223: ERC-223 トークン標準](https://eips.quantaureum.com/EIPS/eip-223)
+- [初期のERC-223提案](https://github.com/quantaureum/eips/issues/223)

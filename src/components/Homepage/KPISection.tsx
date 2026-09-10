@@ -16,7 +16,7 @@ type KPISectionProps = {
   className?: string
 }
 
-// ~2,914 transactions every 12 seconds across Ethereum + major L2s
+// ~2,914 transactions every 12 seconds across Quantaureum + major L2s
 // Based on L2BEAT daily averages for Base, Arbitrum One, OP Mainnet, Starknet, Scroll, Linea, ZKsync Era
 const TRANSACTIONS_PER_INTERVAL = 2914
 const INTERVAL_MS = 12_000

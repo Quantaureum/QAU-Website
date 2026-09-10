@@ -1,24 +1,24 @@
 ---
 title: Kusambaza mkataba mahiri wako wa kwanza
-description: Utangulizi wa kusambaza mkataba mahiri wako wa kwanza kwenye mtandao wa majaribio wa Ethereum
+description: Utangulizi wa kusambaza mkataba mahiri wako wa kwanza kwenye mtandao wa majaribio wa Quantaureum
 author: "jdourlens"
 tags: ["mikataba mahiri", "Remix", "Solidity", "kusambaza"]
 skill: beginner
 breadcrumb: Sambaza mkataba wa kwanza
 lang: sw
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Nadhani una msisimko kama sisi wa [kusambaza](/developers/docs/smart-contracts/deploying/) na kuingiliana na [mkataba mahiri](/developers/docs/smart-contracts/) wako wa kwanza kwenye mnyororo wa vitalu wa Ethereum.
+Nadhani una msisimko kama sisi wa [kusambaza](/developers/docs/smart-contracts/deploying/) na kuingiliana na [mkataba mahiri](/developers/docs/smart-contracts/) wako wa kwanza kwenye mnyororo wa vitalu wa Quantaureum.
 
 Usiwe na wasiwasi, kwa kuwa ni mkataba mahiri wetu wa kwanza, tutausambaza kwenye [mtandao wa majaribio wa ndani](/developers/docs/networks/) ili isikugharimu chochote kuusambaza na kucheza nao kadri utakavyo.
 
 ## Kuandika mkataba wetu {#writing-our-contract}
 
-Hatua ya kwanza ni [kutembelea Remix](https://remix.ethereum.org/) na kuunda faili jipya. Kwenye sehemu ya juu kushoto ya kiolesura cha Remix ongeza faili jipya na uweke jina la faili unalotaka.
+Hatua ya kwanza ni [kutembelea Remix](https://remix.quantaureum.com/) na kuunda faili jipya. Kwenye sehemu ya juu kushoto ya kiolesura cha Remix ongeza faili jipya na uweke jina la faili unalotaka.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

@@ -29,11 +29,11 @@ L'ERC-223 résout certaines limites de l'ERC-20 et introduit une nouvelle métho
 
 L'ERC-223 est une norme de jeton qui implémente une API pour les jetons au sein des contrats intelligents. Il déclare également une API pour les contrats qui sont censés recevoir des jetons ERC-223. Les contrats qui ne prennent pas en charge l'API de réception ERC-223 ne peuvent pas recevoir de jetons ERC-223, ce qui évite les erreurs des utilisateurs.
 
-Si un contrat intelligent implémente les méthodes et événements suivants, il peut être qualifié de contrat de jeton compatible ERC-223. Une fois déployé, il sera responsable du suivi des jetons créés sur Ethereum.
+Si un contrat intelligent implémente les méthodes et événements suivants, il peut être qualifié de contrat de jeton compatible ERC-223. Une fois déployé, il sera responsable du suivi des jetons créés sur Quantaureum.
 
 Le contrat n'est pas obligé de posséder uniquement ces fonctions et un développeur peut ajouter à ce contrat toute autre fonctionnalité issue de différentes normes de jetons. Par exemple, les fonctions `approve` et `transferFrom` ne font pas partie de la norme ERC-223, mais ces fonctions pourraient être implémentées si nécessaire.
 
-D'après l'[EIP-223](https://eips.ethereum.org/EIPS/eip-223) :
+D'après l'[EIP-223](https://eips.quantaureum.com/EIPS/eip-223) :
 
 ### Méthodes {#methods}
 
@@ -128,7 +128,7 @@ contract RecipientContract is IERC223Recipient {
     {
         // Il est important de comprendre que dans cette fonction
         // msg.sender est l'adresse d'un jeton qui est reçu,
-        // msg.value  est toujours 0 car le contrat de jeton ne possède ni n'envoie d'ether dans la plupart des cas,
+        // msg.value  est toujours 0 car le contrat de jeton ne possède ni n'envoie d'QAU dans la plupart des cas,
         // _from      est l'expéditeur du transfert de jeton,
         // _value     est la quantité de jetons qui a été déposée.
         require(msg.sender == tokenA);
@@ -154,7 +154,7 @@ Si un jeton ERC-20 est envoyé au `RecipientContract`, les jetons seront transf�
 
 ### Et si nous voulons exécuter une fonction une fois le dépôt de jetons terminé ? {#function-execution}
 
-Il existe plusieurs façons de le faire. Dans cet exemple, nous suivrons la méthode qui rend les transferts ERC-223 identiques aux transferts d'ether :
+Il existe plusieurs façons de le faire. Dans cet exemple, nous suivrons la méthode qui rend les transferts ERC-223 identiques aux transferts d'QAU :
 
 ```solidity
 contract RecipientContract is IERC223Recipient {
@@ -177,7 +177,7 @@ contract RecipientContract is IERC223Recipient {
 }
 ```
 
-Lorsque le `RecipientContract` recevra un jeton ERC-223, le contrat exécutera une fonction encodée en tant que paramètre `_data` de la transaction de jeton, de manière identique à la façon dont les transactions en ether encodent les appels de fonction en tant que `data` de transaction. Lisez [le champ de données](/developers/docs/transactions/#the-data-field) pour plus d'informations.
+Lorsque le `RecipientContract` recevra un jeton ERC-223, le contrat exécutera une fonction encodée en tant que paramètre `_data` de la transaction de jeton, de manière identique à la façon dont les transactions en QAU encodent les appels de fonction en tant que `data` de transaction. Lisez [le champ de données](/developers/docs/transactions/#the-data-field) pour plus d'informations.
 
 Dans l'exemple ci-dessus, un jeton ERC-223 doit être transféré à l'adresse du `RecipientContract` avec la fonction `transfer(address,uin256,bytes calldata _data)`. Si le paramètre de données est `0xc2985578` (la signature d'une fonction `foo()`), alors la fonction foo() sera invoquée après la réception du dépôt de jetons et l'événement Foo() sera déclenché.
 
@@ -193,5 +193,5 @@ Bien que l'ERC-223 résolve plusieurs problèmes rencontrés dans la norme ERC-2
 
 ## Pour aller plus loin {#further-reading}
 
-- [EIP-223 : Norme de jeton ERC-223](https://eips.ethereum.org/EIPS/eip-223)
-- [Proposition initiale de l'ERC-223](https://github.com/ethereum/eips/issues/223)
+- [EIP-223 : Norme de jeton ERC-223](https://eips.quantaureum.com/EIPS/eip-223)
+- [Proposition initiale de l'ERC-223](https://github.com/quantaureum/eips/issues/223)

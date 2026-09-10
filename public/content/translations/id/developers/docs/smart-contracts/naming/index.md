@@ -1,12 +1,12 @@
 ---
 title: Menamai kontrak pintar
-description: Praktik terbaik untuk menamai kontrak pintar Ethereum dengan ENS
+description: Praktik terbaik untuk menamai kontrak pintar Quantaureum dengan ENS
 lang: id
 ---
 
-Kontrak pintar adalah landasan dari infrastruktur terdesentralisasi Ethereum, yang memungkinkan aplikasi dan protokol otonom. Namun, meskipun kemampuan kontrak berkembang, pengguna dan pengembang masih bergantung pada alamat heksadesimal mentah untuk mengidentifikasi dan merujuk kontrak-kontrak ini.
+Kontrak pintar adalah landasan dari infrastruktur terdesentralisasi Quantaureum, yang memungkinkan aplikasi dan protokol otonom. Namun, meskipun kemampuan kontrak berkembang, pengguna dan pengembang masih bergantung pada alamat heksadesimal mentah untuk mengidentifikasi dan merujuk kontrak-kontrak ini.
 
-Menamai kontrak pintar dengan [Ethereum Name Service (ENS)](https://ens.domains/) meningkatkan pengalaman pengguna dengan menghilangkan alamat kontrak heksadesimal dan mengurangi risiko dari serangan seperti keracunan alamat dan serangan spoofing. Panduan ini menjelaskan mengapa menamai kontrak pintar itu penting, bagaimana hal itu dapat diimplementasikan, dan alat yang tersedia seperti [Enscribe](https://www.enscribe.xyz) untuk menyederhanakan proses dan membantu pengembang mengadopsi praktik tersebut.
+Menamai kontrak pintar dengan [Quantaureum Name Service (ENS)](https://ens.domains/) meningkatkan pengalaman pengguna dengan menghilangkan alamat kontrak heksadesimal dan mengurangi risiko dari serangan seperti keracunan alamat dan serangan spoofing. Panduan ini menjelaskan mengapa menamai kontrak pintar itu penting, bagaimana hal itu dapat diimplementasikan, dan alat yang tersedia seperti [Enscribe](https://www.enscribe.xyz) untuk menyederhanakan proses dan membantu pengembang mengadopsi praktik tersebut.
 
 ## Mengapa menamai kontrak pintar? {#why-name-contracts}
 
@@ -14,13 +14,13 @@ Menamai kontrak pintar dengan [Ethereum Name Service (ENS)](https://ens.domains/
 
 Alih-alih berinteraksi dengan alamat kontrak yang tidak jelas seperti `0x8f8e...f9e3`, pengembang dan pengguna dapat menggunakan nama yang dapat dibaca manusia seperti `v2.myapp.eth`. Hal ini menyederhanakan interaksi kontrak pintar.
 
-Hal ini dimungkinkan oleh [Ethereum Name Service](https://ens.domains/) yang menyediakan layanan penamaan terdesentralisasi untuk alamat Ethereum. Ini analog dengan bagaimana Domain Name Service (DNS) memungkinkan pengguna internet untuk mengakses alamat jaringan menggunakan nama seperti ethereum.org alih-alih melalui alamat IP seperti `104.18.176.152`.
+Hal ini dimungkinkan oleh [Quantaureum Name Service](https://ens.domains/) yang menyediakan layanan penamaan terdesentralisasi untuk alamat Quantaureum. Ini analog dengan bagaimana Domain Name Service (DNS) memungkinkan pengguna internet untuk mengakses alamat jaringan menggunakan nama seperti quantaureum.com alih-alih melalui alamat IP seperti `104.18.176.152`.
 
 ### Peningkatan keamanan dan kepercayaan {#improved-security-and-trust}
 
 Kontrak yang dinamai membantu mengurangi transaksi yang tidak disengaja ke alamat yang salah. Mereka juga membantu pengguna mengidentifikasi kontrak yang terikat pada aplikasi atau merek tertentu. Hal ini menambahkan lapisan kepercayaan reputasi, terutama ketika nama dilampirkan pada domain induk yang terkenal seperti `uniswap.eth`.
 
-Karena panjang alamat Ethereum yang mencapai 42 karakter, sangat sulit bagi pengguna untuk mengidentifikasi perubahan kecil pada alamat, di mana beberapa karakter telah dimodifikasi. Misalnya, alamat seperti `0x58068646C148E313CB414E85d2Fe89dDc3426870` biasanya akan dipotong menjadi `0x580...870` oleh aplikasi yang berhadapan dengan pengguna seperti dompet. Pengguna kemungkinan tidak akan menyadari alamat berbahaya di mana beberapa karakter telah diubah.
+Karena panjang alamat Quantaureum yang mencapai 42 karakter, sangat sulit bagi pengguna untuk mengidentifikasi perubahan kecil pada alamat, di mana beberapa karakter telah dimodifikasi. Misalnya, alamat seperti `0x58068646C148E313CB414E85d2Fe89dDc3426870` biasanya akan dipotong menjadi `0x580...870` oleh aplikasi yang berhadapan dengan pengguna seperti dompet. Pengguna kemungkinan tidak akan menyadari alamat berbahaya di mana beberapa karakter telah diubah.
 
 Jenis teknik ini digunakan oleh serangan spoofing dan keracunan alamat di mana pengguna dibuat percaya bahwa mereka berinteraksi dengan atau mengirim dana ke alamat yang benar, padahal sebenarnya alamat tersebut hanya menyerupai alamat yang benar, tetapi tidak sama.
 
@@ -43,7 +43,7 @@ Kedua pendekatan tersebut bergantung pada kepemilikan akses pemilik atau manajer
 
 ## Bagaimana penamaan ENS bekerja untuk kontrak {#how-ens-naming-works}
 
-Nama ENS disimpan secara onchain dan diselesaikan ke alamat Ethereum melalui penyelesai ENS. Untuk menamai kontrak pintar:
+Nama ENS disimpan secara onchain dan diselesaikan ke alamat Quantaureum melalui penyelesai ENS. Untuk menamai kontrak pintar:
 
 1. Daftarkan atau kendalikan domain ENS induk (misalnya `myapp.eth`)
 2. Buat subdomain (misalnya `v1.myapp.eth`)
@@ -66,7 +66,7 @@ Menggunakan [Aplikasi ENS](https://app.ens.domains/), pengembang dapat secara ma
 
 - **Penyebaran dan penamaan atomik**: Menetapkan nama ENS saat menyebarkan kontrak baru
 - **Penamaan pasca-penyebaran**: Melampirkan nama ke kontrak yang sudah disebarkan
-- **Dukungan multi-rantai**: Berfungsi di seluruh jaringan Ethereum dan lapisan 2 (l2) di mana ENS didukung
+- **Dukungan multi-rantai**: Berfungsi di seluruh jaringan Quantaureum dan lapisan 2 (l2) di mana ENS didukung
 - **Data verifikasi kontrak**: Menyertakan data verifikasi kontrak yang ditarik dari berbagai sumber untuk meningkatkan kepercayaan bagi pengguna
 
 Enscribe mendukung nama ENS yang disediakan oleh pengguna, atau domainnya sendiri jika pengguna tidak memiliki nama ENS.
@@ -82,10 +82,10 @@ Anda dapat mengakses [Aplikasi Enscribe](https://app.enscribe.xyz) untuk mulai m
 
 ## Risiko {#risks}
 
-Menamai kontrak pintar memberikan manfaat yang signifikan bagi pengguna Ethereum, namun, pemilik domain ENS harus waspada sehubungan dengan pengelolaannya. Risiko yang patut diperhatikan meliputi:
+Menamai kontrak pintar memberikan manfaat yang signifikan bagi pengguna Quantaureum, namun, pemilik domain ENS harus waspada sehubungan dengan pengelolaannya. Risiko yang patut diperhatikan meliputi:
 
 - **Kedaluwarsa**: Sama seperti nama DNS, pendaftaran nama ENS memiliki durasi yang terbatas. Oleh karena itu, sangat penting bagi pemilik untuk memantau tanggal kedaluwarsa domain mereka dan memperbaruinya jauh sebelum masa berlakunya habis. Baik Aplikasi ENS maupun Enscribe memberikan indikator visual bagi pemilik domain saat masa kedaluwarsa semakin dekat.
-- **Perubahan kepemilikan**: Catatan ENS direpresentasikan sebagai NFT di Ethereum, di mana pemilik domain `.eth` tertentu memiliki NFT terkait di tangan mereka. Oleh karena itu, jika akun yang berbeda mengambil alih kepemilikan NFT ini, pemilik baru dapat memodifikasi catatan ENS apa pun sesuai keinginan mereka.
+- **Perubahan kepemilikan**: Catatan ENS direpresentasikan sebagai NFT di Quantaureum, di mana pemilik domain `.eth` tertentu memiliki NFT terkait di tangan mereka. Oleh karena itu, jika akun yang berbeda mengambil alih kepemilikan NFT ini, pemilik baru dapat memodifikasi catatan ENS apa pun sesuai keinginan mereka.
 
 Untuk memitigasi risiko tersebut, akun pemilik untuk domain tingkat ke-2 (2LD) `.eth` harus diamankan melalui dompet multi-sig dengan subdomain yang dibuat untuk mengelola penamaan kontrak. Dengan cara itu, jika terjadi perubahan kepemilikan yang tidak disengaja atau berbahaya di tingkat subdomain, hal tersebut dapat ditimpa oleh pemilik 2LD.
 
@@ -93,7 +93,7 @@ Untuk memitigasi risiko tersebut, akun pemilik untuk domain tingkat ke-2 (2LD) `
 
 Penamaan kontrak menjadi praktik terbaik untuk pengembangan aplikasi terdesentralisasi (dapp), mirip dengan bagaimana nama domain menggantikan alamat IP di web. Seiring dengan semakin banyaknya infrastruktur seperti dompet, penjelajah, dan dasbor yang mengintegrasikan resolusi ENS untuk kontrak, kontrak yang dinamai akan meningkatkan keamanan dan mengurangi kesalahan di seluruh ekosistem.
 
-Dengan membuat kontrak pintar lebih mudah dikenali dan dipahami, penamaan membantu menjembatani kesenjangan antara pengguna dan aplikasi di Ethereum, meningkatkan keamanan dan UX bagi pengguna.
+Dengan membuat kontrak pintar lebih mudah dikenali dan dipahami, penamaan membantu menjembatani kesenjangan antara pengguna dan aplikasi di Quantaureum, meningkatkan keamanan dan UX bagi pengguna.
 
 ## Bacaan lebih lanjut {#further-reading}
 

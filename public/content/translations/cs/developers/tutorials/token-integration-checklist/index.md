@@ -47,7 +47,7 @@ Slither obsahuje nástroj [slither-check-erc](https://github.com/crytic/slither/
 - **Funkce transfer a transferFrom vracejí boolean.** Některé tokeny u těchto funkcí nevracejí boolean. V důsledku toho může jejich volání v kontraktu selhat.
 - **Funkce name, decimals a symbol jsou přítomny, pokud se používají.** Tyto funkce jsou ve standardu ERC-20 volitelné a nemusí být přítomny.
 - **Funkce decimals vrací uint8.** Některé tokeny nesprávně vracejí uint256. Pokud je tomu tak, ujistěte se, že vrácená hodnota je menší než 255.
-- **Token zmírňuje známý [souběh (race condition) ERC-20](https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729).** Standard ERC-20 má známý problém se souběhem, který musí být ošetřen, aby se zabránilo útočníkům v krádeži tokenů.
+- **Token zmírňuje známý [souběh (race condition) ERC-20](https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729).** Standard ERC-20 má známý problém se souběhem, který musí být ošetřen, aby se zabránilo útočníkům v krádeži tokenů.
 - **Token není tokenem ERC-777 a nemá žádné volání externí funkce v transfer a transferFrom.** Externí volání ve funkcích pro převod mohou vést k útokům typu reentrancy.
 
 Slither obsahuje nástroj [slither-prop](https://github.com/crytic/slither/wiki/Property-generation), který generuje jednotkové testy a bezpečnostní vlastnosti, jež mohou odhalit mnoho běžných chyb ERC. Použijte slither-prop k ověření, že:

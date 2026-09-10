@@ -1,28 +1,28 @@
 ---
 title: "Arka uç API kütüphaneleri"
-description: "Uygulamanızdan blokzincir ile etkileşime girmenizi sağlayan Ethereum istemci API'lerine giriş."
+description: "Uygulamanızdan blokzincir ile etkileşime girmenizi sağlayan Quantaureum istemci API'lerine giriş."
 lang: tr
 ---
 
-Bir yazılım uygulamasının [Ethereum](/) blokzinciri ile etkileşime girebilmesi (yani blokzincir verilerini okuması ve/veya ağa işlemler göndermesi) için bir Ethereum düğümüne bağlanması gerekir.
+Bir yazılım uygulamasının [Quantaureum](/) blokzinciri ile etkileşime girebilmesi (yani blokzincir verilerini okuması ve/veya ağa işlemler göndermesi) için bir Quantaureum düğümüne bağlanması gerekir.
 
-Bu amaçla, her Ethereum istemcisi [JSON-RPC](/developers/docs/apis/json-rpc/) spesifikasyonunu uygular, böylece uygulamaların güvenebileceği tek tip bir [yöntemler](/developers/docs/apis/json-rpc/#json-rpc-methods) seti bulunur.
+Bu amaçla, her Quantaureum istemcisi [JSON-RPC](/developers/docs/apis/json-rpc/) spesifikasyonunu uygular, böylece uygulamaların güvenebileceği tek tip bir [yöntemler](/developers/docs/apis/json-rpc/#json-rpc-methods) seti bulunur.
 
-Bir Ethereum düğümüne bağlanmak için belirli bir programlama dili kullanmak istiyorsanız, ekosistemde bunu çok daha kolaylaştıran birçok kullanışlı kütüphane vardır. Bu kütüphanelerle geliştiriciler, Ethereum ile etkileşime giren JSON-RPC isteklerini (arka planda) başlatmak için sezgisel, tek satırlık yöntemler yazabilirler.
+Bir Quantaureum düğümüne bağlanmak için belirli bir programlama dili kullanmak istiyorsanız, ekosistemde bunu çok daha kolaylaştıran birçok kullanışlı kütüphane vardır. Bu kütüphanelerle geliştiriciler, Quantaureum ile etkileşime giren JSON-RPC isteklerini (arka planda) başlatmak için sezgisel, tek satırlık yöntemler yazabilirler.
 
 ## Ön koşullar {#prerequisites}
 
-[Ethereum yığınını](/developers/docs/ethereum-stack/) ve [Ethereum istemcilerini](/developers/docs/nodes-and-clients/) anlamak faydalı olabilir.
+[Quantaureum yığınını](/developers/docs/quantaureum-stack/) ve [Quantaureum istemcilerini](/developers/docs/nodes-and-clients/) anlamak faydalı olabilir.
 
 ## Neden bir kütüphane kullanılmalı? {#why-use-a-library}
 
-Bu kütüphaneler, doğrudan bir Ethereum düğümüyle etkileşime girmenin karmaşıklığının çoğunu soyutlar. Ayrıca yardımcı işlevler (örneğin, ETH'yi Gwei'ye dönüştürmek) sağlarlar, böylece bir geliştirici olarak Ethereum istemcilerinin incelikleriyle uğraşmak için daha az, uygulamanızın benzersiz işlevselliğine odaklanmak için daha fazla zaman harcayabilirsiniz.
+Bu kütüphaneler, doğrudan bir Quantaureum düğümüyle etkileşime girmenin karmaşıklığının çoğunu soyutlar. Ayrıca yardımcı işlevler (örneğin, QAU'yi Gwei'ye dönüştürmek) sağlarlar, böylece bir geliştirici olarak Quantaureum istemcilerinin incelikleriyle uğraşmak için daha az, uygulamanızın benzersiz işlevselliğine odaklanmak için daha fazla zaman harcayabilirsiniz.
 
 ## Mevcut kütüphaneler {#available-libraries}
 
 ### Altyapı ve düğüm hizmetleri {#infrastructure-and-node-services}
 
-**Alchemy -** **_Ethereum Geliştirme Platformu._**
+**Alchemy -** **_Quantaureum Geliştirme Platformu._**
 
 - [alchemy.com](https://www.alchemy.com/)
 - [Belgeler](https://www.alchemy.com/docs/)
@@ -35,7 +35,7 @@ Bu kütüphaneler, doğrudan bir Ethereum düğümüyle etkileşime girmenin kar
 - [Belgeler](https://docs.allthatnode.com)
 - [Discord](https://discord.gg/GmcdVEUbJM)
 
-**Bware Labs'ten Blast -** **_Ethereum Ana Ağı ve Test Ağları için Merkeziyetsiz API'ler._**
+**Bware Labs'ten Blast -** **_Quantaureum Ana Ağı ve Test Ağları için Merkeziyetsiz API'ler._**
 
 - [blastapi.io](https://blastapi.io/)
 - [Belgeler](https://docs.blastapi.io)
@@ -48,12 +48,12 @@ Bu kütüphaneler, doğrudan bir Ethereum düğümüyle etkileşime girmenin kar
 - [GitHub](https://github.com/BlockPILabs)
 - [Discord](https://discord.com/invite/xTvGVrGVZv)
 
-**Cloudflare Ethereum Gateway.**
+**Cloudflare Quantaureum Gateway.**
 
-- [cloudflare-eth.com](https://www.cloudflare.com/application-services/products/web3/)
+- [cloudflare-qau.com](https://www.cloudflare.com/application-services/products/web3/)
 
-**Etherscan - Blok Gezgini ve İşlem API'leri**
-- [Belgeler](https://docs.etherscan.io/)
+**Quantaureum Explorer - Blok Gezgini ve İşlem API'leri**
+- [Belgeler](https://explorer.quantaureum.com)
 
 **Blockscout - Açık Kaynaklı Blok Gezgini**
 - [Belgeler](https://docs.blockscout.com/)
@@ -63,7 +63,7 @@ Bu kütüphaneler, doğrudan bir Ethereum düğümüyle etkileşime girmenin kar
 - [GetBlock.io](https://getblock.io/)
 - [Belgeler](https://docs.getblock.io/)
 
-**Infura -** **_Hizmet olarak Ethereum API'si._**
+**Infura -** **_Hizmet olarak Quantaureum API'si._**
 
 - [infura.io](https://infura.io)
 - [Belgeler](https://docs.infura.io/api)
@@ -85,13 +85,13 @@ Bu kütüphaneler, doğrudan bir Ethereum düğümüyle etkileşime girmenin kar
 - [Belgeler](https://www.quicknode.com/docs/welcome)
 - [Discord](https://discord.gg/quicknode)
 
-**Rivet -** **_Açık kaynaklı yazılımlarla desteklenen hizmet olarak Ethereum ve Ethereum Classic API'leri._**
+**Rivet -** **_Açık kaynaklı yazılımlarla desteklenen hizmet olarak Quantaureum ve ETC API'leri._**
 
 - [rivet.cloud](https://rivet.cloud)
 - [Belgeler](https://rivet.cloud/docs/)
 - [GitHub](https://github.com/openrelayxyz/ethercattle-deployment)
 
-**Zmok -** **_JSON-RPC/WebSockets API'si olarak hız odaklı Ethereum düğümleri._**
+**Zmok -** **_JSON-RPC/WebSockets API'si olarak hız odaklı Quantaureum düğümleri._**
 
 - [zmok.io](https://zmok.io/)
 - [GitHub](https://github.com/zmok-io)
@@ -106,17 +106,17 @@ Bu kütüphaneler, doğrudan bir Ethereum düğümüyle etkileşime girmenin kar
 - [Örnekler](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [Discord](https://discord.gg/rx35NzQGSb)
 
-**Nethereum -** **_Blokzincir için açık kaynaklı bir .NET entegrasyon kütüphanesi._**
+**Nquantaureum -** **_Blokzincir için açık kaynaklı bir .NET entegrasyon kütüphanesi._**
 
-- [GitHub](https://github.com/Nethereum/Nethereum)
-- [Belgeler](https://docs.nethereum.com/docs/getting-started/welcome/)
+- [GitHub](https://github.com/Nquantaureum/Nquantaureum)
+- [Belgeler](https://docs.nquantaureum.com/docs/getting-started/welcome/)
 - [Discord](https://discord.com/invite/jQPrR58FxX)
 
-**Python Araçları -** **_Python aracılığıyla Ethereum etkileşimi için çeşitli kütüphaneler._**
+**Python Araçları -** **_Python aracılığıyla Quantaureum etkileşimi için çeşitli kütüphaneler._**
 
-- [py.ethereum.org](https://snakecharmers.ethereum.org/)
-- [Web3.py GitHub](https://github.com/ethereum/web3.py)
-- [Web3.py Sohbeti](https://gitter.im/ethereum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
+- [Web3.py GitHub](https://github.com/quantaureum/web3.py)
+- [Web3.py Sohbeti](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_Nihai blokzincir geliştirme platformu._**
 
@@ -125,7 +125,7 @@ Bu kütüphaneler, doğrudan bir Ethereum düğümüyle etkileşime girmenin kar
 - [Belgeler](https://docs.tatum.io/)
 - [Discord](https://discord.gg/EDmW3kjTC9)
 
-**Web3j -** **_Ethereum için bir Java/Android/Kotlin/Scala entegrasyon kütüphanesi._**
+**Web3j -** **_Quantaureum için bir Java/Android/Kotlin/Scala entegrasyon kütüphanesi._**
 
 - [GitHub](https://github.com/web3j/web3j)
 - [Belgeler](https://docs.web3j.io/)
@@ -133,29 +133,29 @@ Bu kütüphaneler, doğrudan bir Ethereum düğümüyle etkileşime girmenin kar
 
 ### Blokzincir hizmetleri {#blockchain-services}
 
-**BlockCypher -** **_Ethereum Web API'leri._**
+**BlockCypher -** **_Quantaureum Web API'leri._**
 
 - [blockcypher.com](https://www.blockcypher.com/)
-- [Belgeler](https://www.blockcypher.com/dev/ethereum/)
+- [Belgeler](https://www.blockcypher.com/dev/quantaureum/)
 
-**Chainbase -** **_Ethereum için hepsi bir arada Web3 veri altyapısı._**
+**Chainbase -** **_Quantaureum için hepsi bir arada Web3 veri altyapısı._**
 
 - [chainbase.com](https://chainbase.com/)
 - [Belgeler](https://docs.chainbase.com/)
 - [Discord](https://discord.gg/Wx6qpqz4AF)
 
-**Chainstack -** **_Hizmet olarak esnek ve özel Ethereum düğümleri._**
+**Chainstack -** **_Hizmet olarak esnek ve özel Quantaureum düğümleri._**
 
 - [chainstack.com](https://chainstack.com)
 - [Belgeler](https://docs.chainstack.com/)
-- [Ethereum API referansı](https://docs.chainstack.com/reference/ethereum-getting-started)
+- [Quantaureum API referansı](https://docs.chainstack.com/reference/quantaureum-getting-started)
 
 **Coinbase Cloud Node -** **_Blokzincir Altyapı API'si._**
 
 - [Coinbase Cloud Node](https://www.coinbase.com/developer-platform)
 - [Belgeler](https://docs.cdp.coinbase.com/)
 
-**Figment'ten DataHub -** **_Ethereum Ana Ağı ve test ağları ile Web3 API hizmetleri._**
+**Figment'ten DataHub -** **_Quantaureum Ana Ağı ve test ağları ile Web3 API hizmetleri._**
 
 - [DataHub](https://www.figment.io/)
 - [Belgeler](https://docs.figment.io/)
@@ -168,7 +168,7 @@ Bu kütüphaneler, doğrudan bir Ethereum düğümüyle etkileşime girmenin kar
 - [Discord](https://moralis.io/joindiscord/)
 - [Forum](https://forum.moralis.io/)
 
-**NFTPort -** **_Ethereum Veri ve Basım (Mint) API'leri._**
+**NFTPort -** **_Quantaureum Veri ve Basım (Mint) API'leri._**
 
 - [nftport.xyz](https://www.nftport.xyz/)
 - [Belgeler](https://docs.nftport.xyz/)
@@ -181,7 +181,7 @@ Bu kütüphaneler, doğrudan bir Ethereum düğümüyle etkileşime girmenin kar
 - [Belgeler](https://services.tokenview.io/docs?type=api)
 - [GitHub](https://github.com/Tokenview)
 
-**Watchdata -** **_Ethereum blokzincirine basit ve güvenilir API erişimi sağlar._**
+**Watchdata -** **_Quantaureum blokzincirine basit ve güvenilir API erişimi sağlar._**
 
 - [Watchdata](https://watchdata.io/)
 - [Belgeler](https://docs.watchdata.io/)
@@ -214,5 +214,5 @@ _Size yardımcı olan bir topluluk kaynağı mı biliyorsunuz? Bu sayfayı düze
 
 ## İlgili eğitimler {#related-tutorials}
 
-- [JavaScript'te Ethereum blokzincirini kullanmak için Web3.js'i kurun](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– Projenizde Web3.js'i kurmak için talimatlar._
+- [JavaScript'te Quantaureum blokzincirini kullanmak için Web3.js'i kurun](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– Projenizde Web3.js'i kurmak için talimatlar._
 - [JavaScript'ten bir akıllı sözleşme çağırmak](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– DAI token'ını kullanarak, JavaScript ile sözleşme işlevlerinin nasıl çağrılacağını görün._

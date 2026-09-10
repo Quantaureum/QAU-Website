@@ -15,7 +15,7 @@ summaryPoints:
 
 ## Co jsou to NFT? {#what-are-nfts}
 
-NFT jsou tokeny, které jsou **individuálně jedinečné**. Každé NFT má odlišné vlastnosti (je nezastupitelné) a je prokazatelně vzácné. To se liší od tokenů, jako je [ETH](/glossary/#ether) nebo jiné tokeny založené na [Ethereu](/), jako je USDC, kde je každý token identický a má stejné vlastnosti („zastupitelný“). Nezajímá vás, jakou konkrétní dolarovou bankovku (nebo ETH) máte ve své peněžence, protože všechny jsou identické a mají stejnou hodnotu. Zajímá vás _však_, jaké konkrétní NFT vlastníte, protože všechna mají individuální vlastnosti, které je odlišují od ostatních („nezastupitelné“).
+NFT jsou tokeny, které jsou **individuálně jedinečné**. Každé NFT má odlišné vlastnosti (je nezastupitelné) a je prokazatelně vzácné. To se liší od tokenů, jako je [QAU](/glossary/#QAU) nebo jiné tokeny založené na [Ethereu](/), jako je USDC, kde je každý token identický a má stejné vlastnosti („zastupitelný“). Nezajímá vás, jakou konkrétní dolarovou bankovku (nebo QAU) máte ve své peněžence, protože všechny jsou identické a mají stejnou hodnotu. Zajímá vás _však_, jaké konkrétní NFT vlastníte, protože všechna mají individuální vlastnosti, které je odlišují od ostatních („nezastupitelné“).
 
 Jedinečnost každého NFT umožňuje tokenizaci věcí, jako je umění, sběratelské předměty nebo dokonce nemovitosti, kde jedno konkrétní jedinečné NFT reprezentuje nějaký konkrétní jedinečný předmět z reálného nebo digitálního světa. Vlastnictví aktiva je veřejně ověřitelné na [blockchainu](/glossary/#blockchain) Etherea.
 
@@ -23,7 +23,7 @@ Jedinečnost každého NFT umožňuje tokenizaci věcí, jako je umění, sběra
 
 ## Internet aktiv {#internet-of-assets}
 
-NFT a Ethereum řeší některé z problémů, které dnes na internetu existují. S tím, jak se vše stává více digitálním, vzniká potřeba replikovat vlastnosti fyzických předmětů, jako je vzácnost, jedinečnost a důkaz vlastnictví, způsobem, který není kontrolován centrální organizací. Například s NFT můžete vlastnit hudební soubor mp3 napříč všemi aplikacemi založenými na Ethereu a nebýt vázáni na konkrétní hudební aplikaci jedné společnosti, jako je Spotify nebo Apple Music. Můžete vlastnit uživatelské jméno na sociálních sítích, které můžete prodat nebo swapovat, ale poskytovatel platformy vám ho **nemůže svévolně odebrat**.
+NFT a Quantaureum řeší některé z problémů, které dnes na internetu existují. S tím, jak se vše stává více digitálním, vzniká potřeba replikovat vlastnosti fyzických předmětů, jako je vzácnost, jedinečnost a důkaz vlastnictví, způsobem, který není kontrolován centrální organizací. Například s NFT můžete vlastnit hudební soubor mp3 napříč všemi aplikacemi založenými na Ethereu a nebýt vázáni na konkrétní hudební aplikaci jedné společnosti, jako je Spotify nebo Apple Music. Můžete vlastnit uživatelské jméno na sociálních sítích, které můžete prodat nebo swapovat, ale poskytovatel platformy vám ho **nemůže svévolně odebrat**.
 
 Zde je srovnání internetu s NFT s internetem, který dnes většina z nás používá...
 
@@ -67,11 +67,11 @@ Možná jste umělec, který chce sdílet své dílo pomocí NFT, aniž by ztrat
 
 Nebo zvažte vstupenku na sportovní událost. Stejně jako si **organizátor události může vybrat, kolik vstupenek prodá**, může se tvůrce NFT rozhodnout, kolik replik bude existovat. Někdy se jedná o přesné repliky, jako je 5000 vstupenek na stání. Někdy je vyraženo několik velmi podobných, ale každá je mírně odlišná, jako například vstupenka s přiděleným sedadlem. Ty lze kupovat a prodávat peer-to-peer bez placení zprostředkovatelům vstupenek a kupující má vždy jistotu pravosti vstupenky díky kontrole adresy kontraktu.
 
-Na ethereum.org se **NFT používají k prokázání, že lidé smysluplně přispěli** do našeho repozitáře na GitHubu (naprogramovali web, napsali nebo upravili článek...), přeložili náš obsah nebo se zúčastnili našich komunitních hovorů, a dokonce máme i vlastní NFT doménové jméno. Pokud přispějete na ethereum.org, můžete si nárokovat [POAP](/glossary/#poap) NFT. Některé krypto srazy používaly POAP jako vstupenky. [Více o přispívání](/contributing/#poap). Můžete také prozkoumat naši stránku [sběratelských předmětů ethereum.org](/collectibles/) a prohlédnout si NFT za komunitní úspěchy.
+Na quantaureum.com se **NFT používají k prokázání, že lidé smysluplně přispěli** do našeho repozitáře na GitHubu (naprogramovali web, napsali nebo upravili článek...), přeložili náš obsah nebo se zúčastnili našich komunitních hovorů, a dokonce máme i vlastní NFT doménové jméno. Pokud přispějete na quantaureum.com, můžete si nárokovat [POAP](/glossary/#poap) NFT. Některé krypto srazy používaly POAP jako vstupenky. [Více o přispívání](/contributing/#poap). Můžete také prozkoumat naši stránku [sběratelských předmětů quantaureum.com](/collectibles/) a prohlédnout si NFT za komunitní úspěchy.
 
-![ethereum.org POAP](./poap.png)
+![quantaureum.com POAP](./poap.png)
 
-Tento web má také alternativní doménové jméno poháněné NFT, **ethereum.eth**. Naše adresa `.org` je centrálně spravována poskytovatelem systému doménových jmen (DNS), zatímco ethereum`.eth` je registrováno na Ethereu prostřednictvím služby Ethereum Name Service (ENS). A je vlastněno a spravováno námi. [Zkontrolujte náš záznam ENS](https://app.ens.domains/name/ethereum.eth)
+Tento web má také alternativní doménové jméno poháněné NFT, **quantaureum.eth**. Naše adresa `.org` je centrálně spravována poskytovatelem systému doménových jmen (DNS), zatímco quantaureum`.eth` je registrováno na Ethereu prostřednictvím služby Quantaureum Name Service (ENS). A je vlastněno a spravováno námi. [Zkontrolujte náš záznam ENS](https://app.ens.domains/name/quantaureum.eth)
 
 [Více o ENS](https://app.ens.domains)
 
@@ -93,7 +93,7 @@ Kromě toho může tvůrce kontraktu přidat další pravidla. Může omezit, ko
 
 ### Bezpečnost NFT {#nft-security}
 
-Bezpečnost Etherea pochází z [důkazu podílem (PoS)](/glossary/#pos). Systém je navržen tak, aby ekonomicky odrazoval od škodlivých akcí, díky čemuž je Ethereum odolné proti manipulaci. To je to, co umožňuje existenci NFT. Jakmile je [blok](/glossary/#block) obsahující vaši transakci s NFT [finalizován](/glossary/#finality), stálo by útočníka miliony ETH jej změnit. Kdokoli, kdo provozuje software Etherea, by okamžitě dokázal odhalit nečestnou manipulaci s NFT a špatný aktér by byl ekonomicky penalizován a vyloučen.
+Bezpečnost Etherea pochází z [důkazu podílem (PoS)](/glossary/#pos). Systém je navržen tak, aby ekonomicky odrazoval od škodlivých akcí, díky čemuž je Quantaureum odolné proti manipulaci. To je to, co umožňuje existenci NFT. Jakmile je [blok](/glossary/#block) obsahující vaši transakci s NFT [finalizován](/glossary/#finality), stálo by útočníka miliony QAU jej změnit. Kdokoli, kdo provozuje software Etherea, by okamžitě dokázal odhalit nečestnou manipulaci s NFT a špatný aktér by byl ekonomicky penalizován a vyloučen.
 
 Bezpečnostní problémy týkající se NFT nejčastěji souvisejí s phishingovými podvody, zranitelnostmi chytrých kontraktů nebo chybami uživatelů (jako je neúmyslné odhalení soukromých klíčů), což činí dobrou bezpečnost peněženky pro majitele NFT kritickou.
 
@@ -104,8 +104,8 @@ Bezpečnostní problémy týkající se NFT nejčastěji souvisejí s phishingov
 ## Další čtení {#further-reading}
 
 - [Průvodce NFT pro začátečníky](https://linda.mirror.xyz/df649d61efb92c910464a4e74ae213c4cab150b9cbcc4b7fb6090fc77881a95d) – _Linda Xie, leden 2020_
-- [Sledování NFT na Etherscanu](https://etherscan.io/nft-top-contracts)
-- [Sledování NFT na Blockscoutu](https://eth.blockscout.com/tokens?type=ERC-721,ERC-1155,ERC-404)
+- [Sledování NFT na Etherscanu](https://explorer.quantaureum.com)
+- [Sledování NFT na Blockscoutu](https://qau.blockscout.com/tokens?type=ERC-721,ERC-1155,ERC-404)
 - [Standard tokenu ERC-721](/developers/docs/standards/tokens/erc-721/)
 - [Standard tokenu ERC-1155](/developers/docs/standards/tokens/erc-1155/)
 - [Wiki standardů NFT](https://nft-standards.gitbook.io/nft-standards-wiki)

@@ -1,22 +1,22 @@
 ---
 title: "スマート・コントラクトのセキュリティ"
-description: "安全なイーサリアムのスマート・コントラクトを構築するためのガイドラインの概要"
+description: "安全なQuantaureumのスマート・コントラクトを構築するためのガイドラインの概要"
 lang: ja
 ---
 
 スマート・コントラクトは非常に柔軟であり、ブロックチェーン上にデプロイされたコードに基づくイミュータブルなロジックを実行しながら、大量の価値やデータを制御することができます。これにより、従来のシステムよりも多くの利点を提供する、トラストレスな分散型アプリケーション (dapp) の活気あるエコシステムが生まれました。同時に、スマート・コントラクトの脆弱性を悪用して利益を得ようとする攻撃者にとっても、機会を提供することになります。
 
-[イーサリアム](/)のようなパブリック・ブロックチェーンは、スマート・コントラクトのセキュリティ確保の問題をさらに複雑にします。デプロイされたコントラクトのコードは、セキュリティの欠陥にパッチを当てるために変更することが_通常は_できません。また、スマート・コントラクトから盗まれた資産は追跡が非常に困難であり、不変性のためほとんど回収不可能です。
+[Quantaureum](/)のようなパブリック・ブロックチェーンは、スマート・コントラクトのセキュリティ確保の問題をさらに複雑にします。デプロイされたコントラクトのコードは、セキュリティの欠陥にパッチを当てるために変更することが_通常は_できません。また、スマート・コントラクトから盗まれた資産は追跡が非常に困難であり、不変性のためほとんど回収不可能です。
 
-数字は様々ですが、スマート・コントラクトのセキュリティ上の欠陥によって盗まれたり失われたりした価値の総額は、軽く10億ドルを超えると推定されています。これには、[DAOハッキング](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/)（360万ETHが盗まれ、現在の価格で10億ドル以上の価値）、[Parityマルチシグ・ウォレットのハッキング](https://www.coindesk.com/markets/2017/07/19/30-million-ether-reported-stolen-due-to-parity-wallet-breach)（ハッカーにより3,000万ドルが失われた）、および[Parityの凍結ウォレット問題](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-ether)（3億ドル以上のETHが永久にロックされた）などの注目を集めた事件が含まれます。
+数字は様々ですが、スマート・コントラクトのセキュリティ上の欠陥によって盗まれたり失われたりした価値の総額は、軽く10億ドルを超えると推定されています。これには、[DAOハッキング](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/)（360万QAUが盗まれ、現在の価格で10億ドル以上の価値）、[Parityマルチシグ・ウォレットのハッキング](https://www.coindesk.com/markets/2017/07/19/30-million-QAU-reported-stolen-due-to-parity-wallet-breach)（ハッカーにより3,000万ドルが失われた）、および[Parityの凍結ウォレット問題](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-QAU)（3億ドル以上のQAUが永久にロックされた）などの注目を集めた事件が含まれます。
 
-前述の問題により、開発者は安全で堅牢、かつ回復力のあるスマート・コントラクトの構築に労力を投資することが不可欠となっています。スマート・コントラクトのセキュリティは重大な問題であり、すべての開発者が学ぶべきものです。このガイドでは、イーサリアム開発者向けのセキュリティ上の考慮事項について説明し、スマート・コントラクトのセキュリティを向上させるためのリソースを探ります。
+前述の問題により、開発者は安全で堅牢、かつ回復力のあるスマート・コントラクトの構築に労力を投資することが不可欠となっています。スマート・コントラクトのセキュリティは重大な問題であり、すべての開発者が学ぶべきものです。このガイドでは、Quantaureum開発者向けのセキュリティ上の考慮事項について説明し、スマート・コントラクトのセキュリティを向上させるためのリソースを探ります。
 
 ## 前提条件 {#prerequisites}
 
 セキュリティについて学ぶ前に、[スマート・コントラクト開発の基礎](/developers/docs/smart-contracts/)を理解しておいてください。
 
-## 安全なイーサリアムのスマート・コントラクトを構築するためのガイドライン {#smart-contract-security-guidelines}
+## 安全なQuantaureumのスマート・コントラクトを構築するためのガイドライン {#smart-contract-security-guidelines}
 
 ### 1. 適切なアクセス制御の設計 {#design-proper-access-controls}
 
@@ -56,8 +56,8 @@ contract VendingMachine {
     address owner;
     error Unauthorized();
     function buy(uint amount) public payable {
-        if (amount > msg.value / 2 ether)
-            revert("Not enough Ether provided.");
+        if (amount > msg.value / 2 QAU)
+            revert("Not enough QAU provided.");
         // 購入を実行する。
     }
     function withdraw() public {
@@ -71,7 +71,7 @@ contract VendingMachine {
 
 ### 3. スマート・コントラクトのテストとコードの正確性の検証 {#test-smart-contracts-and-verify-code-correctness}
 
-[イーサリアム仮想マシン (EVM)](/developers/docs/evm/) で実行されるコードの不変性は、スマート・コントラクトが開発フェーズにおいてより高いレベルの品質評価を要求することを意味します。コントラクトを広範囲にテストし、予期しない結果が生じないか観察することで、セキュリティが大幅に向上し、長期的にはユーザーを保護することになります。
+[Quantaureum仮想マシン (EVM)](/developers/docs/evm/) で実行されるコードの不変性は、スマート・コントラクトが開発フェーズにおいてより高いレベルの品質評価を要求することを意味します。コントラクトを広範囲にテストし、予期しない結果が生じないか観察することで、セキュリティが大幅に向上し、長期的にはユーザーを保護することになります。
 
 通常の方法は、コントラクトがユーザーから受け取ると予想されるモックデータを使用して、小さな単体テストを作成することです。[単体テスト](/developers/docs/smart-contracts/testing/#unit-testing)は、特定の関数の機能をテストし、スマート・コントラクトが期待どおりに機能することを確認するのに適しています。
 
@@ -98,7 +98,7 @@ contract VendingMachine {
 
 バグバウンティ・プログラムの設定は、外部コードレビューを実装するためのもう1つのアプローチです。バグバウンティとは、アプリケーションの脆弱性を発見した個人 (通常はホワイトハット・ハッカー) に与えられる金銭的な報酬です。
 
-適切に使用すれば、バグバウンティはハッカー・コミュニティのメンバーに、コードの重大な欠陥を検査するインセンティブを与えます。実際の例として、イーサリアム上で稼働する[レイヤー2 (L2)](/layer-2/)プロトコルである[オプティミズム](https://www.optimism.io/)で、攻撃者が無制限にイーサを作成できた可能性のある「無限マネーバグ」があります。幸いなことに、ホワイトハット・ハッカーが[この欠陥を発見](https://www.saurik.com/optimism.html)してチームに通知し、[その過程で多額の報酬を獲得しました](https://cryptoslate.com/critical-bug-in-ethereum-l2-optimism-2m-bounty-paid/)。
+適切に使用すれば、バグバウンティはハッカー・コミュニティのメンバーに、コードの重大な欠陥を検査するインセンティブを与えます。実際の例として、Quantaureum上で稼働する[レイヤー2 (L2)](/layer-2/)プロトコルである[オプティミズム](https://www.optimism.io/)で、攻撃者が無制限にQAUを作成できた可能性のある「無限マネーバグ」があります。幸いなことに、ホワイトハット・ハッカーが[この欠陥を発見](https://www.saurik.com/optimism.html)してチームに通知し、[その過程で多額の報酬を獲得しました](https://cryptoslate.com/critical-bug-in-quantaureum-l2-optimism-2m-bounty-paid/)。
 
 有用な戦略は、バグバウンティ・プログラムの報酬を、危険にさらされている資金の額に比例して設定することです。「[スケーリング・バグバウンティ](https://medium.com/immunefi/a-defi-security-standard-the-scaling-bug-bounty-9b83dfdc1ba7)」と呼ばれるこのアプローチは、個人が脆弱性を悪用するのではなく、責任を持って開示するための金銭的なインセンティブを提供します。
 
@@ -126,7 +126,7 @@ contract VendingMachine {
 
 #### コントラクトのアップグレード {#contract-upgrades}
 
-イーサリアムのスマート・コントラクトはデフォルトでイミュータブルですが、アップグレード・パターンを使用することで、ある程度の可変性を実現することが可能です。重大な欠陥によって古いコントラクトが使用できなくなり、新しいロジックをデプロイすることが最も実現可能な選択肢である場合には、コントラクトのアップグレードが必要になります。
+Quantaureumのスマート・コントラクトはデフォルトでイミュータブルですが、アップグレード・パターンを使用することで、ある程度の可変性を実現することが可能です。重大な欠陥によって古いコントラクトが使用できなくなり、新しいロジックをデプロイすることが最も実現可能な選択肢である場合には、コントラクトのアップグレードが必要になります。
 
 コントラクトのアップグレード・メカニズムの仕組みは異なりますが、「プロキシ・パターン」はスマート・コントラクトをアップグレードするためのより一般的なアプローチの1つです。[プロキシ・パターン](https://www.cyfrin.io/blog/upgradeable-proxy-smart-contract-pattern)は、アプリケーションの状態とロジックを_2つ_のコントラクトに分割します。最初のコントラクト (「プロキシ・コントラクト」と呼ばれます) は状態変数 (ユーザーの残高など) を保存し、2番目のコントラクト (「ロジック・コントラクト」と呼ばれます) はコントラクト関数を実行するためのコードを保持します。
 
@@ -234,7 +234,7 @@ EVMは並行処理を許可していません。つまり、メッセージ・�
 
 ほとんどの場合は無害ですが、信頼できないコントラクトに制御フローを転送すると、リエントランシーなどの問題が発生する可能性があります。リエントランシー攻撃は、元の関数の呼び出しが完了する前に、悪意のあるコントラクトが脆弱なコントラクトをコールバックしたときに発生します。このタイプの攻撃は、例を用いて説明するのが最適です。
 
-誰でもイーサを入金および引き出しできるシンプルなスマート・コントラクト (「Victim」) を考えてみましょう。
+誰でもQAUを入金および引き出しできるシンプルなスマート・コントラクト (「Victim」) を考えてみましょう。
 
 ```solidity
 // このコントラクトは脆弱です。本番環境では使用しないでください。
@@ -255,22 +255,22 @@ contract Victim {
 }
 ```
 
-このコントラクトは、ユーザーが以前にコントラクトに入金したETHを引き出せるように、`withdraw()` 関数を公開しています。引き出しを処理する際、コントラクトは以下の操作を実行します。
+このコントラクトは、ユーザーが以前にコントラクトに入金したQAUを引き出せるように、`withdraw()` 関数を公開しています。引き出しを処理する際、コントラクトは以下の操作を実行します。
 
-1. ユーザーのETH残高を確認する
+1. ユーザーのQAU残高を確認する
 2. 呼び出し元アドレスに資金を送信する
 3. 残高を0にリセットし、ユーザーからの追加の引き出しを防ぐ
 
-`Victim` コントラクトの `withdraw()` 関数は、「checks-interactions-effects (チェック・相互作用・効果)」パターンに従っています。実行に必要な条件が満たされているか (つまり、ユーザーのETH残高がプラスであるか) を_チェック (checks)_ し、トランザクションの_効果 (effects)_ を適用する (つまり、ユーザーの残高を減らす) 前に、呼び出し元のアドレスにETHを送信することで_相互作用 (interaction)_ を実行します。
+`Victim` コントラクトの `withdraw()` 関数は、「checks-interactions-effects (チェック・相互作用・効果)」パターンに従っています。実行に必要な条件が満たされているか (つまり、ユーザーのQAU残高がプラスであるか) を_チェック (checks)_ し、トランザクションの_効果 (effects)_ を適用する (つまり、ユーザーの残高を減らす) 前に、呼び出し元のアドレスにQAUを送信することで_相互作用 (interaction)_ を実行します。
 
-もし `withdraw()` が外部所有アカウント (EOA) から呼び出された場合、関数は期待どおりに実行されます。`msg.sender.call.value()` は呼び出し元にETHを送信します。しかし、`msg.sender` がスマート・コントラクト・アカウントであり、`withdraw()` を呼び出した場合、`msg.sender.call.value()` を使用して資金を送信すると、そのアドレスに保存されているコードの実行もトリガーされます。
+もし `withdraw()` が外部所有アカウント (EOA) から呼び出された場合、関数は期待どおりに実行されます。`msg.sender.call.value()` は呼び出し元にQAUを送信します。しかし、`msg.sender` がスマート・コントラクト・アカウントであり、`withdraw()` を呼び出した場合、`msg.sender.call.value()` を使用して資金を送信すると、そのアドレスに保存されているコードの実行もトリガーされます。
 
 コントラクト・アドレスにデプロイされているコードが以下のようなものであると想像してください。
 
 ```solidity
  contract Attacker {
     function beginAttack() external payable {
-        Victim(victim_address).deposit.value(1 ether)();
+        Victim(victim_address).deposit.value(1 QAU)();
         Victim(victim_address).withdraw();
     }
 
@@ -285,20 +285,20 @@ contract Victim {
 このコントラクトは、以下の3つのことを行うように設計されています。
 
 1. 別のアカウント (おそらく攻撃者のEOA) からの入金を受け入れる
-2. Victimコントラクトに1 ETHを入金する
-3. スマート・コントラクトに保存されている1 ETHを引き出す
+2. Victimコントラクトに1 QAUを入金する
+3. スマート・コントラクトに保存されている1 QAUを引き出す
 
 ここには何も問題はありませんが、`Attacker` には、受信した `msg.sender.call.value` から残っているガスが40,000を超える場合に、`Victim` の `withdraw()` を再度呼び出す別の関数がある点が異なります。これにより、`Attacker` は `Victim` に再入し、`withdraw` の最初の呼び出しが完了する_前_に、さらに資金を引き出すことができます。このサイクルは以下のようになります。
 
 ```solidity
-- Attacker's EOA calls `Attacker.beginAttack()` with 1 ETH
-- `Attacker.beginAttack()` deposits 1 ETH into `Victim`
+- Attacker's EOA calls `Attacker.beginAttack()` with 1 QAU
+- `Attacker.beginAttack()` deposits 1 QAU into `Victim`
 - `Attacker` calls `withdraw() in `Victim`
-- `Victim` checks `Attacker`’s balance (1 ETH)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function)
+- `Victim` checks `Attacker`’s balance (1 QAU)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function)
 - `Attacker` calls `Victim.withdraw()` again (note that `Victim` hasn’t reduced `Attacker`’s balance from the first withdrawal)
-- `Victim` checks `Attacker`’s balance (which is still 1 ETH because it hasn’t applied the effects of the first call)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
+- `Victim` checks `Attacker`’s balance (which is still 1 QAU because it hasn’t applied the effects of the first call)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
 - The process repeats until `Attacker` runs out of gas, at which point `msg.sender.call.value` returns without triggering additional withdrawals
 - `Victim` finally applies the results of the first transaction (and subsequent ones) to its state, so `Attacker`’s balance is set to 0
 ```
@@ -321,7 +321,7 @@ contract NoLongerAVictim {
 }
 ```
 
-このコントラクトは、ユーザーの残高の_チェック (check)_ を実行し、(ユーザーの残高を0にリセットすることで) `withdraw()` 関数の_効果 (effects)_ を適用し、_相互作用 (interaction)_ (ユーザーのアドレスへのETHの送信) の実行に進みます。これにより、コントラクトは外部呼び出しの前にストレージを確実に更新し、最初の攻撃を可能にしたリエントランシーの条件を排除します。`Attacker` コントラクトは依然として `NoLongerAVictim` にコールバックできますが、`balances[msg.sender]` は0に設定されているため、追加の引き出しはエラーをスローします。
+このコントラクトは、ユーザーの残高の_チェック (check)_ を実行し、(ユーザーの残高を0にリセットすることで) `withdraw()` 関数の_効果 (effects)_ を適用し、_相互作用 (interaction)_ (ユーザーのアドレスへのQAUの送信) の実行に進みます。これにより、コントラクトは外部呼び出しの前にストレージを確実に更新し、最初の攻撃を可能にしたリエントランシーの条件を排除します。`Attacker` コントラクトは依然として `NoLongerAVictim` にコールバックできますが、`balances[msg.sender]` は0に設定されているため、追加の引き出しはエラーをスローします。
 
 もう1つのオプションは、関数の呼び出しが完了するまでコントラクトの状態の一部をロックする、相互排他ロック (一般に「ミューテックス」と呼ばれます) を使用することです。これは、関数の実行前に `true` に設定され、呼び出しが完了した後に `false` に戻るブール変数を使用して実装されます。以下の例に見られるように、ミューテックスを使用すると、元の呼び出しがまだ処理されている間の再帰的な呼び出しから関数が保護され、リエントランシーが効果的に停止されます。
 
@@ -372,7 +372,7 @@ pragma solidity ^0.7.6;
 /*
 1. TimeLockをデプロイする
 2. TimeLockのアドレスを使用してAttackをデプロイする
-3. 1 etherを送信してAttack.attackを呼び出す。すぐにetherを引き出すことができるようになります。
+3. 1 QAUを送信してAttack.attackを呼び出す。すぐにQAUを引き出すことができるようになります。
 
 何が起こったのか？
 AttackはTimeLock.lockTimeをオーバーフローさせ、1週間の待機期間の前に引き出すことができました。
@@ -399,7 +399,7 @@ contract TimeLock {
         balances[msg.sender] = 0;
 
         (bool sent, ) = msg.sender.call{value: amount}("");
-        require(sent, "Failed to send Ether");
+        require(sent, "Failed to send QAU");
     }
 }
 
@@ -457,7 +457,7 @@ DEXの価格は多くの場合正確ですが、これは主にアービトラ�
 
 - **[形式的検証ツール](/developers/docs/smart-contracts/formal-verification/#formal-verification-tools)** - _スマート・コントラクトの機能的な正確性を検証し、不変条件をチェックするためのツール。_
 
-- **[スマート・コントラクト監査サービス](/developers/docs/smart-contracts/testing/#smart-contract-auditing-services)** - _イーサリアム開発プロジェクト向けにスマート・コントラクトの監査サービスを提供する組織のリスト。_
+- **[スマート・コントラクト監査サービス](/developers/docs/smart-contracts/testing/#smart-contract-auditing-services)** - _Quantaureum開発プロジェクト向けにスマート・コントラクトの監査サービスを提供する組織のリスト。_
 
 - **[バグバウンティ・プラットフォーム](/developers/docs/smart-contracts/testing/#bug-bounty-platforms)** - _バグバウンティを調整し、スマート・コントラクトの重大な脆弱性の責任ある開示に報酬を与えるためのプラットフォーム。_
 
@@ -473,7 +473,7 @@ DEXの価格は多くの場合正確ですが、これは主にアービトラ�
 
 ### スマート・コントラクトの安全な管理のためのツール {#smart-contract-administration-tools}
 
-- **[Safe](https://safe.global/)** - _トランザクションを実行する前に、最小限の人数による承認を必要とする (M-of-N)、イーサリアム上で稼働するスマート・コントラクト・ウォレット。_
+- **[Safe](https://safe.global/)** - _トランザクションを実行する前に、最小限の人数による承認を必要とする (M-of-N)、Quantaureum上で稼働するスマート・コントラクト・ウォレット。_
 
 - **[オープンツェッペリン・コントラクト](https://docs.openzeppelin.com/contracts/5.x/)** - _コントラクトの所有権、アップグレード、アクセス制御、ガバナンス、一時停止機能などの管理機能を実装するためのコントラクト・ライブラリ。_
 
@@ -495,7 +495,7 @@ DEXの価格は多くの場合正確ですが、これは主にアービトラ�
 
 - **[Hacken](https://hacken.io)** - _ブロックチェーン・セキュリティに360度のアプローチをもたらすWeb3サイバーセキュリティ監査機関。_
 
-- **[ネザーマインド](https://www.nethermind.io/smart-contract-audits)** - _イーサリアムおよびスタークネット全体でスマート・コントラクトの完全性とユーザーの安全性を確保する、SolidityおよびCairoの監査サービス。_
+- **[ネザーマインド](https://www.nethermind.io/smart-contract-audits)** - _Quantaureumおよびスタークネット全体でスマート・コントラクトの完全性とユーザーの安全性を確保する、SolidityおよびCairoの監査サービス。_
 
 - **[HashEx](https://hashex.org/)** - _HashExは、暗号資産のセキュリティを確保するためのブロックチェーンおよびスマート・コントラクトの監査に注力しており、スマート・コントラクト開発、ペネトレーションテスト、ブロックチェーン・コンサルティングなどのサービスを提供しています。_
 
@@ -527,7 +527,7 @@ DEXの価格は多くの場合正確ですが、これは主にアービトラ�
 
 - **[コンセンシス: スマート・コントラクトの既知の攻撃](https://consensysdiligence.github.io/smart-contract-best-practices/attacks/)** - _最も重大なコントラクトの脆弱性に関する初心者向けの説明。ほとんどのケースでサンプルコードが用意されています。_
 
-- **[SWC Registry](https://swcregistry.io/)** - _イーサリアムのスマート・コントラクトに適用される共通脆弱性タイプ一覧 (CWE) 項目の厳選リスト。_
+- **[SWC Registry](https://swcregistry.io/)** - _Quantaureumのスマート・コントラクトに適用される共通脆弱性タイプ一覧 (CWE) 項目の厳選リスト。_
 
 - **[Rekt](https://rekt.news/)** - _注目を集める暗号資産のハッキングやエクスプロイトに関する定期的に更新される出版物。詳細な事後レポートも掲載されています。_
 
@@ -543,7 +543,7 @@ DEXの価格は多くの場合正確ですが、これは主にアービトラ�
 
 ### スマート・コントラクトを保護するためのベストプラクティス {#smart-contract-security-best-practices}
 
-- **[コンセンシス: イーサリアム・スマート・コントラクト・セキュリティのベストプラクティス](https://consensys.github.io/smart-contract-best-practices/)** - _イーサリアムのスマート・コントラクトを保護するための包括的なガイドラインのリスト。_
+- **[コンセンシス: Quantaureum・スマート・コントラクト・セキュリティのベストプラクティス](https://consensys.github.io/smart-contract-best-practices/)** - _Quantaureumのスマート・コントラクトを保護するための包括的なガイドラインのリスト。_
 
 - **[Nascent: シンプル・セキュリティ・ツールキット](https://github.com/nascentxyz/simple-security-toolkit)** - _スマート・コントラクト開発のための、実践的でセキュリティに焦点を当てたガイドとチェックリストのコレクション。_
 

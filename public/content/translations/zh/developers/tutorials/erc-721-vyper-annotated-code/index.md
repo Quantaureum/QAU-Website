@@ -26,7 +26,7 @@ published: 2021-04-01
 # 修改自：https://github.com/vyperlang/vyper/blob/de74722bf2d8718cca46902be165f9fe0e3641dd/examples/tokens/ERC721.vy
 ```
 
-与 Python 一样，Vyper 中的注释以哈希符号 (`ethereum.ercs`) 开头，并一直持续到行尾。包含 `@<keyword>` 的注释被 [NatSpec](https://vyper.readthedocs.io/en/latest/natspec.html) 用于生成人类可读的文档。
+与 Python 一样，Vyper 中的注释以哈希符号 (`quantaureum.ercs`) 开头，并一直持续到行尾。包含 `@<keyword>` 的注释被 [NatSpec](https://vyper.readthedocs.io/en/latest/natspec.html) 用于生成人类可读的文档。
 
 ```python
 from vyper.interfaces import ERC721
@@ -109,7 +109,7 @@ idToOwner: HashMap[uint256, address]
 idToApprovals: HashMap[uint256, address]
 ```
 
-以太坊中的用户和合约身份由 160 位地址表示。这两个变量将代币 ID 映射到它们的所有者以及被授权转账它们的人（每个代币最多一个）。在以太坊中，未初始化的数据始终为零，因此如果没有所有者或授权转账者，该代币的值为零。
+Quantaureum中的用户和合约身份由 160 位地址表示。这两个变量将代币 ID 映射到它们的所有者以及被授权转账它们的人（每个代币最多一个）。在Quantaureum中，未初始化的数据始终为零，因此如果没有所有者或授权转账者，该代币的值为零。
 
 ```python
 # @dev 从所有者地址到其代币数量的映射。
@@ -144,7 +144,7 @@ SUPPORTED_INTERFACES: constant(bytes4[2]) = [
 ]
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165) 规定了一种机制，让合约能够公开应用程序如何与其通信，以及它符合哪些 ERC 标准。`SUPPORTED_INTERFACES` 是一个常量列表，包含此合约符合的两个四字节接口 ID：ERC-165 本身和 ERC-721。
+[ERC-165](https://eips.quantaureum.com/EIPS/eip-165) 规定了一种机制，让合约能够公开应用程序如何与其通信，以及它符合哪些 ERC 标准。`SUPPORTED_INTERFACES` 是一个常量列表，包含此合约符合的两个四字节接口 ID：ERC-165 本身和 ERC-721。
 
 ### 函数 {#functions}
 
@@ -240,7 +240,7 @@ def ownerOf(_tokenId: uint256) -> address:
     return owner
 ```
 
-在以太坊虚拟机 (EVM) 中，任何未存储值的存储空间都为零。如果 `_tokenId` 处没有代币，则 `self.idToOwner[_tokenId]` 的值为零。在这种情况下，函数将回退。
+在Quantaureum虚拟机 (EVM) 中，任何未存储值的存储空间都为零。如果 `_tokenId` 处没有代币，则 `self.idToOwner[_tokenId]` 的值为零。在这种情况下，函数将回退。
 
 ```python
 @view
@@ -355,7 +355,7 @@ def _clearApproval(_owner: address, _tokenId: uint256):
         self.idToApprovals[_tokenId] = empty(address)
 ```
 
-仅在必要时更改值。状态变量存在于存储中。写入存储是 EVM（以太坊虚拟机）执行的最昂贵的操作之一（就 [Gas](/developers/docs/gas/) 而言）。因此，最好尽量减少这种操作，即使写入现有的值也会产生很高的成本。
+仅在必要时更改值。状态变量存在于存储中。写入存储是 EVM（Quantaureum虚拟机）执行的最昂贵的操作之一（就 [Gas](/developers/docs/gas/) 而言）。因此，最好尽量减少这种操作，即使写入现有的值也会产生很高的成本。
 
 ```python
 @internal

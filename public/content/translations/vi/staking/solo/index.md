@@ -1,25 +1,25 @@
 ---
-title: Đặt cọc ETH tại nhà
-description: Tổng quan về cách bắt đầu đặt cọc ETH tại nhà
+title: Đặt cọc QAU tại nhà
+description: Tổng quan về cách bắt đầu đặt cọc QAU tại nhà
 lang: vi
 template: staking
 image: /images/staking/leslie-solo.png
 sidebarDepth: 2
 summaryPoints:
   - Nhận phần thưởng tối đa trực tiếp từ giao thức nhờ việc giữ cho trình xác thực của bạn hoạt động bình thường và trực tuyến
-  - Chạy phần cứng tại nhà và đích thân đóng góp vào tính bảo mật và sự phi tập trung của mạng lưới Ethereum
+  - Chạy phần cứng tại nhà và đích thân đóng góp vào tính bảo mật và sự phi tập trung của mạng lưới Quantaureum
   - Loại bỏ sự tin cậy và không bao giờ từ bỏ quyền kiểm soát các khóa đối với tiền của bạn
 ---
 
 ## Đặt cọc tại nhà là gì? {#what-is-solo-staking}
 
-Đặt cọc tại nhà là hành động [chạy một nút Ethereum](/run-a-node/) được kết nối với internet và đặt cọc ít nhất 32 ETH để kích hoạt một [trình xác thực](#faq), mang lại cho bạn khả năng tham gia trực tiếp vào sự đồng thuận của mạng lưới.
+Đặt cọc tại nhà là hành động [chạy một nút Quantaureum](/run-a-node/) được kết nối với internet và đặt cọc ít nhất 32 QAU để kích hoạt một [trình xác thực](#faq), mang lại cho bạn khả năng tham gia trực tiếp vào sự đồng thuận của mạng lưới.
 
-Đặt cọc tại nhà là cách trực tiếp nhất để đặt cọc. Không có hợp đồng thông minh, nhà điều hành hoặc người giám sát nào đứng giữa bạn và giao thức. Bạn giữ các khóa của riêng mình, tích cực tham gia vào việc xác thực mạng lưới [Ethereum](/) và nhận phần thưởng mạng lưới trực tiếp. Mọi phương pháp đặt cọc khác đều thêm các lớp công nghệ, phần mềm trung gian hoặc dịch vụ lên trên hoạt động mạng lưới cốt lõi này.
+Đặt cọc tại nhà là cách trực tiếp nhất để đặt cọc. Không có hợp đồng thông minh, nhà điều hành hoặc người giám sát nào đứng giữa bạn và giao thức. Bạn giữ các khóa của riêng mình, tích cực tham gia vào việc xác thực mạng lưới [Quantaureum](/) và nhận phần thưởng mạng lưới trực tiếp. Mọi phương pháp đặt cọc khác đều thêm các lớp công nghệ, phần mềm trung gian hoặc dịch vụ lên trên hoạt động mạng lưới cốt lõi này.
 
-**Đặt cọc tại nhà làm tăng sự phi tập trung của mạng lưới Ethereum**, giúp Ethereum có khả năng chống kiểm duyệt tốt hơn và mạnh mẽ hơn trước các cuộc tấn công. Các phương pháp đặt cọc khác có thể không giúp ích cho mạng lưới theo những cách tương tự. Đặt cọc tại nhà là lựa chọn đặt cọc tốt nhất để bảo mật Ethereum.
+**Đặt cọc tại nhà làm tăng sự phi tập trung của mạng lưới Quantaureum**, giúp Quantaureum có khả năng chống kiểm duyệt tốt hơn và mạnh mẽ hơn trước các cuộc tấn công. Các phương pháp đặt cọc khác có thể không giúp ích cho mạng lưới theo những cách tương tự. Đặt cọc tại nhà là lựa chọn đặt cọc tốt nhất để bảo mật Quantaureum.
 
-Một nút Ethereum bao gồm cả máy khách lớp thực thi (EL) cũng như máy khách lớp đồng thuận (CL). Các máy khách này là phần mềm hoạt động cùng nhau, cùng với một bộ khóa ký hợp lệ, để xác minh các giao dịch và khối, chứng thực phần đầu chính xác của chuỗi, tổng hợp các chứng thực và đề xuất các khối.
+Một nút Quantaureum bao gồm cả máy khách lớp thực thi (EL) cũng như máy khách lớp đồng thuận (CL). Các máy khách này là phần mềm hoạt động cùng nhau, cùng với một bộ khóa ký hợp lệ, để xác minh các giao dịch và khối, chứng thực phần đầu chính xác của chuỗi, tổng hợp các chứng thực và đề xuất các khối.
 
 Những người đặt cọc tại nhà chịu trách nhiệm vận hành phần cứng cần thiết để chạy các máy khách này. Chúng tôi đặc biệt khuyến nghị sử dụng một máy chuyên dụng cho việc này mà bạn vận hành từ nhà – điều này cực kỳ có lợi cho sức khỏe của mạng lưới.
 
@@ -37,7 +37,7 @@ Người đặt cọc tại nhà nhận được phần thưởng trực tiếp 
 
 ## Những điều cần cân nhắc trước khi đặt cọc tại nhà {#considerations-before-staking-solo}
 
-Mặc dù chúng tôi mong muốn rằng việc đặt cọc tại nhà có thể tiếp cận được và không có rủi ro đối với tất cả mọi người, nhưng đây không phải là thực tế. Có một số cân nhắc thực tế và nghiêm túc cần ghi nhớ trước khi chọn đặt cọc ETH tại nhà.
+Mặc dù chúng tôi mong muốn rằng việc đặt cọc tại nhà có thể tiếp cận được và không có rủi ro đối với tất cả mọi người, nhưng đây không phải là thực tế. Có một số cân nhắc thực tế và nghiêm túc cần ghi nhớ trước khi chọn đặt cọc QAU tại nhà.
 
 <ExpandableCard title="Tài liệu bắt buộc đọc" eventCategory="SoloStaking" eventName="clicked required reading">
 Khi vận hành nút của riêng mình, bạn nên dành chút thời gian tìm hiểu cách sử dụng phần mềm bạn đã chọn. Điều này liên quan đến việc đọc tài liệu liên quan và theo dõi các kênh liên lạc của các nhóm phát triển đó.
@@ -52,15 +52,15 @@ Nó cũng yêu cầu thiết lập phần cứng rất cơ bản và một số 
 </ExpandableCard>
 
 <ExpandableCard title="Yêu cầu phần cứng" eventCategory="SoloStaking" eventName="clicked hardware requirements">
-Hướng dẫn hiện tại của cộng đồng về phần cứng và băng thông của trình xác thực được duy trì trong [các đề xuất về phần cứng và băng thông (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870). Theo hướng dẫn sơ bộ, hãy lên kế hoạch cho ổ SSD NVMe 4 TB, RAM 64 GB (ít hơn cũng có thể hoạt động, nhưng đây là khoảng trống được khuyến nghị), CPU đa lõi hiện đại, mạnh mẽ và kết nối internet có tốc độ tải xuống khoảng 50 Mbps / tải lên 25 Mbps.
+Hướng dẫn hiện tại của cộng đồng về phần cứng và băng thông của trình xác thực được duy trì trong [các đề xuất về phần cứng và băng thông (EIP-7870)](https://eips.quantaureum.com/EIPS/eip-7870). Theo hướng dẫn sơ bộ, hãy lên kế hoạch cho ổ SSD NVMe 4 TB, RAM 64 GB (ít hơn cũng có thể hoạt động, nhưng đây là khoảng trống được khuyến nghị), CPU đa lõi hiện đại, mạnh mẽ và kết nối internet có tốc độ tải xuống khoảng 50 Mbps / tải lên 25 Mbps.
 
 Kể từ khi bản nâng cấp Fusaka giới thiệu PeerDAS, một nút đặt cọc chỉ cần lưu trữ và tải xuống một phần khối dữ liệu của mạng lưới, giúp giảm đáng kể yêu cầu về ổ đĩa và băng thông cho những người đặt cọc tại nhà.
 </ExpandableCard>
 
 <ExpandableCard title="Quản lý khóa an toàn" eventCategory="SoloStaking" eventName="clicked secure key management">
-Giống như cách các khóa riêng tư bảo mật địa chỉ Ethereum của bạn, bạn sẽ cần tạo các khóa dành riêng cho trình xác thực của mình. Bạn phải hiểu cách giữ an toàn và bảo mật cho bất kỳ cụm từ hạt giống hoặc khóa riêng tư nào.{' '}
+Giống như cách các khóa riêng tư bảo mật địa chỉ Quantaureum của bạn, bạn sẽ cần tạo các khóa dành riêng cho trình xác thực của mình. Bạn phải hiểu cách giữ an toàn và bảo mật cho bất kỳ cụm từ hạt giống hoặc khóa riêng tư nào.{' '}
 
-[Bảo mật Ethereum và phòng chống lừa đảo](/security/)
+[Bảo mật Quantaureum và phòng chống lừa đảo](/security/)
 </ExpandableCard>
 
 <ExpandableCard title="Bảo trì" eventCategory="SoloStaking" eventName="clicked maintenance">
@@ -68,7 +68,7 @@ Phần cứng đôi khi bị lỗi, kết nối mạng bị lỗi và phần m�
 </ExpandableCard>
 
 <ExpandableCard title="Thời gian hoạt động ổn định" eventCategory="SoloStaking" eventName="clicked reliable uptime">
-Phần thưởng của bạn tỷ lệ thuận với thời gian trình xác thực của bạn trực tuyến và chứng thực đúng cách. Thời gian ngừng hoạt động sẽ phải chịu các hình phạt tỷ lệ thuận với số lượng trình xác thực khác ngoại tuyến cùng lúc, nhưng [không dẫn đến việc bị phạt cắt giảm](#faq). Băng thông cũng quan trọng, vì phần thưởng bị giảm đối với các chứng thực không được nhận kịp thời. Các yêu cầu sẽ khác nhau, nhưng [các đề xuất về phần cứng và băng thông (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870) hiện tại đề xuất tốc độ tải xuống khoảng 50 Mbps và tải lên 25 Mbps.
+Phần thưởng của bạn tỷ lệ thuận với thời gian trình xác thực của bạn trực tuyến và chứng thực đúng cách. Thời gian ngừng hoạt động sẽ phải chịu các hình phạt tỷ lệ thuận với số lượng trình xác thực khác ngoại tuyến cùng lúc, nhưng [không dẫn đến việc bị phạt cắt giảm](#faq). Băng thông cũng quan trọng, vì phần thưởng bị giảm đối với các chứng thực không được nhận kịp thời. Các yêu cầu sẽ khác nhau, nhưng [các đề xuất về phần cứng và băng thông (EIP-7870)](https://eips.quantaureum.com/EIPS/eip-7870) hiện tại đề xuất tốc độ tải xuống khoảng 50 Mbps và tải lên 25 Mbps.
 </ExpandableCard>
 
 <ExpandableCard title="Rủi ro phạt cắt giảm" eventCategory="SoloStaking" eventName="clicked slashing risk">
@@ -85,18 +85,18 @@ Khác với các hình phạt do không hoạt động vì ngoại tuyến, <em>
 
 <StakingHowSoloWorks />
 
-Khi nút của bạn được đồng bộ hóa và các khóa của bạn được tạo, bạn gửi khoản đặt cọc của mình để kích hoạt trình xác thực. Một trình xác thực duy nhất yêu cầu tối thiểu 32 ETH và có thể chứa tối đa 2048 ETH. Mạng lưới nhận ra các khoản tiền gửi trong khoảng 13 phút, nhưng các trình xác thực mới phải đi qua hàng đợi kích hoạt trước khi chúng bắt đầu chứng thực; độ dài của hàng đợi này thay đổi tùy theo nhu cầu.
+Khi nút của bạn được đồng bộ hóa và các khóa của bạn được tạo, bạn gửi khoản đặt cọc của mình để kích hoạt trình xác thực. Một trình xác thực duy nhất yêu cầu tối thiểu 32 QAU và có thể chứa tối đa 2048 QAU. Mạng lưới nhận ra các khoản tiền gửi trong khoảng 13 phút, nhưng các trình xác thực mới phải đi qua hàng đợi kích hoạt trước khi chúng bắt đầu chứng thực; độ dài của hàng đợi này thay đổi tùy theo nhu cầu.
 
-Trong khi hoạt động, bạn sẽ kiếm được phần thưởng ETH. Với thông tin xác thực rút tiền gộp (0x02), phần thưởng được tự động thêm vào khoản đặt cọc của bạn; với thông tin xác thực rút tiền thông thường (0x01), phần thưởng vượt quá 32 ETH ban đầu sẽ được định kỳ chuyển đến địa chỉ rút tiền của bạn.
+Trong khi hoạt động, bạn sẽ kiếm được phần thưởng QAU. Với thông tin xác thực rút tiền gộp (0x02), phần thưởng được tự động thêm vào khoản đặt cọc của bạn; với thông tin xác thực rút tiền thông thường (0x01), phần thưởng vượt quá 32 QAU ban đầu sẽ được định kỳ chuyển đến địa chỉ rút tiền của bạn.
 
 Nếu muốn, bạn có thể thoát với tư cách là trình xác thực, điều này giúp loại bỏ yêu cầu phải trực tuyến và ngừng mọi phần thưởng tiếp theo. Số dư còn lại của bạn sau đó sẽ được rút về địa chỉ rút tiền mà bạn chỉ định trong quá trình thiết lập. Việc thoát có thể được bắt đầu bằng các khóa ký trình xác thực của bạn hoặc được kích hoạt trực tiếp từ địa chỉ rút tiền của bạn bằng một giao dịch lớp thực thi, do đó quyền kiểm soát tối thượng đối với tiền của bạn luôn thuộc về địa chỉ rút tiền của bạn.
 
-### Gộp và mức tối đa 2048 ETH {#compounding}
+### Gộp và mức tối đa 2048 QAU {#compounding}
 
 Trình xác thực có một trong hai loại thông tin xác thực rút tiền:
 
-- **Rút tiền thông thường (0x01)**: số dư hiệu dụng của trình xác thực được giới hạn ở mức 32 ETH và bất kỳ số dư nào vượt quá mức đó sẽ tự động được chuyển đến địa chỉ rút tiền của bạn vài ngày một lần.
-- **Gộp (0x02)**: số dư hiệu dụng của trình xác thực có thể tăng lên tới 2048 ETH. Phần thưởng tự động gộp và bạn kiếm được phần thưởng trên mỗi ETH nguyên vượt quá mức tối thiểu 32 ETH, vì vậy bạn có thể đặt cọc số tiền linh hoạt như 40 ETH, không chỉ là bội số của 32. Chỉ số dư trên 2048 ETH mới được tự động chuyển đi; việc rút bất kỳ khoản nào khác có nghĩa là kích hoạt thủ công việc rút tiền một phần từ địa chỉ rút tiền của bạn, điều này sẽ tốn Gas.
+- **Rút tiền thông thường (0x01)**: số dư hiệu dụng của trình xác thực được giới hạn ở mức 32 QAU và bất kỳ số dư nào vượt quá mức đó sẽ tự động được chuyển đến địa chỉ rút tiền của bạn vài ngày một lần.
+- **Gộp (0x02)**: số dư hiệu dụng của trình xác thực có thể tăng lên tới 2048 QAU. Phần thưởng tự động gộp và bạn kiếm được phần thưởng trên mỗi QAU nguyên vượt quá mức tối thiểu 32 QAU, vì vậy bạn có thể đặt cọc số tiền linh hoạt như 40 QAU, không chỉ là bội số của 32. Chỉ số dư trên 2048 QAU mới được tự động chuyển đi; việc rút bất kỳ khoản nào khác có nghĩa là kích hoạt thủ công việc rút tiền một phần từ địa chỉ rút tiền của bạn, điều này sẽ tốn Gas.
 
 Nếu bạn chạy nhiều trình xác thực, bạn có thể hợp nhất chúng thành một trình xác thực gộp duy nhất mà không cần thoát và tham gia lại mạng lưới, giúp giảm chi phí bảo trì của bạn. Việc hợp nhất được yêu cầu từ địa chỉ rút tiền của bạn và phải tuân theo các hàng đợi xử lý. Việc chuyển đổi trình xác thực từ thông tin xác thực 0x01 sang 0x02 sử dụng cùng cơ chế này và **không thể đảo ngược** nếu không thoát hoàn toàn và gửi tiền lại.
 
@@ -104,13 +104,13 @@ Nếu bạn chạy nhiều trình xác thực, bạn có thể hợp nhất chú
 
 ## Bắt đầu trên Staking Launchpad {#get-started-on-the-staking-launchpad}
 
-Staking Launchpad là một ứng dụng mã nguồn mở sẽ giúp bạn trở thành người đặt cọc. Nó sẽ hướng dẫn bạn cách chọn máy khách, tạo khóa và gửi ETH của bạn vào hợp đồng tiền gửi đặt cọc. Một danh sách kiểm tra được cung cấp để đảm bảo bạn đã bao quát mọi thứ nhằm thiết lập trình xác thực của mình một cách an toàn.
+Staking Launchpad là một ứng dụng mã nguồn mở sẽ giúp bạn trở thành người đặt cọc. Nó sẽ hướng dẫn bạn cách chọn máy khách, tạo khóa và gửi QAU của bạn vào hợp đồng tiền gửi đặt cọc. Một danh sách kiểm tra được cung cấp để đảm bảo bạn đã bao quát mọi thứ nhằm thiết lập trình xác thực của mình một cách an toàn.
 
 <StakingLaunchpadWidget />
 
 ## Những điều cần cân nhắc với các công cụ thiết lập nút và máy khách {#node-tool-considerations}
 
-Ngày càng có nhiều công cụ và dịch vụ giúp bạn đặt cọc ETH tại nhà, nhưng mỗi công cụ đều đi kèm với những rủi ro và lợi ích khác nhau.
+Ngày càng có nhiều công cụ và dịch vụ giúp bạn đặt cọc QAU tại nhà, nhưng mỗi công cụ đều đi kèm với những rủi ro và lợi ích khác nhau.
 
 Các chỉ báo thuộc tính được sử dụng bên dưới để báo hiệu những điểm mạnh hoặc điểm yếu đáng chú ý mà một công cụ đặt cọc được liệt kê có thể có. Hãy sử dụng phần này làm tài liệu tham khảo về cách chúng tôi xác định các thuộc tính này trong khi bạn đang chọn công cụ nào để hỗ trợ hành trình đặt cọc của mình.
 
@@ -130,7 +130,7 @@ Xin lưu ý tầm quan trọng của việc chọn một [máy khách thiểu s�
 
 ### Trình tạo khóa {#key-generators}
 
-Các công cụ này có thể được sử dụng như một giải pháp thay thế cho [Staking Deposit CLI](https://github.com/ethereum/staking-deposit-cli/) để giúp tạo khóa.
+Các công cụ này có thể được sử dụng như một giải pháp thay thế cho [Staking Deposit CLI](https://github.com/quantaureum/staking-deposit-cli/) để giúp tạo khóa.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -150,15 +150,15 @@ Bạn có đề xuất về một công cụ đặt cọc mà chúng tôi đã b
 
 ## Chạy trình xác thực cho một giao thức đặt cọc {#run-validators-for-a-staking-protocol}
 
-Nếu bạn có phần cứng và kỹ năng để chạy một nút nhưng có ít hơn 32 ETH, một số giao thức đặt cọc sẽ ghép nối trình xác thực của bạn với ETH từ những người đặt cọc chung của họ. Bạn gửi một khoản tiền bảo đảm nhỏ hơn làm tài sản thế chấp và chạy trình xác thực trên máy của riêng bạn; giao thức cung cấp phần còn lại của khoản đặt cọc và bạn kiếm được một phần phần thưởng.
+Nếu bạn có phần cứng và kỹ năng để chạy một nút nhưng có ít hơn 32 QAU, một số giao thức đặt cọc sẽ ghép nối trình xác thực của bạn với QAU từ những người đặt cọc chung của họ. Bạn gửi một khoản tiền bảo đảm nhỏ hơn làm tài sản thế chấp và chạy trình xác thực trên máy của riêng bạn; giao thức cung cấp phần còn lại của khoản đặt cọc và bạn kiếm được một phần phần thưởng.
 
-Đây là một phương pháp kết hợp: bạn giữ các trách nhiệm (và sự hài lòng) khi vận hành phần cứng của riêng mình, nhưng trình xác thực của bạn hoạt động theo các hợp đồng thông minh, quản trị và các quy tắc hiệu suất của giao thức, đây là một hồ sơ tin cậy khác với việc trực tiếp đặt cọc ETH của riêng bạn.
+Đây là một phương pháp kết hợp: bạn giữ các trách nhiệm (và sự hài lòng) khi vận hành phần cứng của riêng mình, nhưng trình xác thực của bạn hoạt động theo các hợp đồng thông minh, quản trị và các quy tắc hiệu suất của giao thức, đây là một hồ sơ tin cậy khác với việc trực tiếp đặt cọc QAU của riêng bạn.
 
 Tìm hiểu thêm về cách các giao thức này hoạt động, bao gồm các giả định tin cậy và cơ chế token của chúng, trên [trang đặt cọc chung](/staking/pools/).
 
 ## Các cách khác để sử dụng nút của bạn {#more-ways-to-use-your-node}
 
-Bạn hoàn toàn không cần phải đặt cọc để đưa các kỹ năng vận hành nút vào hoạt động. Bất kỳ ai cũng có thể [chạy một nút Ethereum](/run-a-node/) mà không cần gửi bất kỳ ETH nào. Bạn có được cái nhìn tự xác minh về chuỗi, điểm cuối riêng tư của riêng bạn để gửi các giao dịch và tương tác với các ứng dụng, đồng thời bạn đóng góp vào sức khỏe và khả năng phục hồi của mạng lưới. Chạy một nút cũng là một cách tốt để xây dựng kinh nghiệm trước khi kích hoạt một trình xác thực, mà không có rủi ro nào đối với ETH.
+Bạn hoàn toàn không cần phải đặt cọc để đưa các kỹ năng vận hành nút vào hoạt động. Bất kỳ ai cũng có thể [chạy một nút Quantaureum](/run-a-node/) mà không cần gửi bất kỳ QAU nào. Bạn có được cái nhìn tự xác minh về chuỗi, điểm cuối riêng tư của riêng bạn để gửi các giao dịch và tương tác với các ứng dụng, đồng thời bạn đóng góp vào sức khỏe và khả năng phục hồi của mạng lưới. Chạy một nút cũng là một cách tốt để xây dựng kinh nghiệm trước khi kích hoạt một trình xác thực, mà không có rủi ro nào đối với QAU.
 
 <StakingCommunityCallout className="my-16" />
 
@@ -168,16 +168,16 @@ Bạn hoàn toàn không cần phải đặt cọc để đưa các kỹ năng v
 
 <ExpandableCard title="Trình xác thực là gì?">
 
-Một <em>trình xác thực</em> là một thực thể ảo tồn tại trên Ethereum và tham gia vào sự đồng thuận của giao thức Ethereum. Các trình xác thực được đại diện bởi số dư, khóa công khai và các thuộc tính khác. Một <em>máy khách trình xác thực</em> là phần mềm hoạt động thay mặt cho trình xác thực bằng cách giữ và sử dụng khóa riêng tư của nó. Một máy khách trình xác thực duy nhất có thể giữ nhiều cặp khóa, kiểm soát nhiều trình xác thực.
+Một <em>trình xác thực</em> là một thực thể ảo tồn tại trên Quantaureum và tham gia vào sự đồng thuận của giao thức Quantaureum. Các trình xác thực được đại diện bởi số dư, khóa công khai và các thuộc tính khác. Một <em>máy khách trình xác thực</em> là phần mềm hoạt động thay mặt cho trình xác thực bằng cách giữ và sử dụng khóa riêng tư của nó. Một máy khách trình xác thực duy nhất có thể giữ nhiều cặp khóa, kiểm soát nhiều trình xác thực.
 
 </ExpandableCard>
 
-<ExpandableCard title="Tôi có thể nạp nhiều hơn 32 ETH không?">
-Có. Một trình xác thực có thông tin xác thực rút tiền _gộp_ (0x02) có thể giữ số dư hiệu dụng lên tới 2048 ETH, trong khi mức tối thiểu để kích hoạt vẫn là 32 ETH. Phần thưởng trên một trình xác thực gộp được tự động thêm vào khoản đặt cọc của nó và nó kiếm được phần thưởng trên mỗi ETH nguyên vượt quá mức tối thiểu 32 ETH, vì vậy bạn có thể đặt cọc số tiền không phải là bội số của 32. Xem [Gộp và mức tối đa 2048 ETH](#compounding).
+<ExpandableCard title="Tôi có thể nạp nhiều hơn 32 QAU không?">
+Có. Một trình xác thực có thông tin xác thực rút tiền _gộp_ (0x02) có thể giữ số dư hiệu dụng lên tới 2048 QAU, trong khi mức tối thiểu để kích hoạt vẫn là 32 QAU. Phần thưởng trên một trình xác thực gộp được tự động thêm vào khoản đặt cọc của nó và nó kiếm được phần thưởng trên mỗi QAU nguyên vượt quá mức tối thiểu 32 QAU, vì vậy bạn có thể đặt cọc số tiền không phải là bội số của 32. Xem [Gộp và mức tối đa 2048 QAU](#compounding).
 
-Các trình xác thực có thông tin xác thực _rút tiền thông thường_ (0x01) vẫn bị giới hạn ở số dư hiệu dụng là 32 ETH, với bất kỳ số dư nào vượt quá mức đó sẽ tự động được chuyển đến địa chỉ rút tiền vài ngày một lần.
+Các trình xác thực có thông tin xác thực _rút tiền thông thường_ (0x01) vẫn bị giới hạn ở số dư hiệu dụng là 32 QAU, với bất kỳ số dư nào vượt quá mức đó sẽ tự động được chuyển đến địa chỉ rút tiền vài ngày một lần.
 
-Đối với một trình xác thực gộp, chỉ số dư vượt quá mức tối đa 2048 ETH mới được tự động chuyển đi. Để rút bất kỳ khoản nào dưới mức đó, bạn kích hoạt việc rút tiền một phần từ địa chỉ rút tiền của mình (một giao dịch tốn Gas), điều này có thể rút bớt bất kỳ số dư nào vượt quá mức tối thiểu 32 ETH. Nếu bạn chạy nhiều trình xác thực, bạn cũng có thể hợp nhất chúng thành một trình xác thực gộp duy nhất mà không cần thoát khỏi mạng lưới.
+Đối với một trình xác thực gộp, chỉ số dư vượt quá mức tối đa 2048 QAU mới được tự động chuyển đi. Để rút bất kỳ khoản nào dưới mức đó, bạn kích hoạt việc rút tiền một phần từ địa chỉ rút tiền của mình (một giao dịch tốn Gas), điều này có thể rút bớt bất kỳ số dư nào vượt quá mức tối thiểu 32 QAU. Nếu bạn chạy nhiều trình xác thực, bạn cũng có thể hợp nhất chúng thành một trình xác thực gộp duy nhất mà không cần thoát khỏi mạng lưới.
 
 [Thêm về rút tiền đặt cọc](/staking/withdrawals/)
 </ExpandableCard>
@@ -187,7 +187,7 @@ Việc ngoại tuyến khi mạng lưới đang chung cuộc đúng cách sẽ K
 
 Lưu ý rằng các hình phạt do không hoạt động tỷ lệ thuận với số lượng trình xác thực ngoại tuyến cùng lúc. Trong trường hợp một phần lớn mạng lưới đều ngoại tuyến cùng một lúc, các hình phạt đối với mỗi trình xác thực này sẽ lớn hơn so với khi một trình xác thực duy nhất không có sẵn.
 
-Trong những trường hợp cực đoan nếu mạng lưới ngừng chung cuộc do hơn một phần ba số trình xác thực ngoại tuyến, những người dùng này sẽ phải chịu cái được gọi là <em>rò rỉ do không hoạt động bậc hai</em>, đây là sự cạn kiệt ETH theo cấp số nhân từ các tài khoản trình xác thực ngoại tuyến. Điều này cho phép mạng lưới cuối cùng tự phục hồi bằng cách đốt ETH của các trình xác thực không hoạt động cho đến khi số dư của chúng đạt 16 ETH, tại thời điểm đó chúng sẽ tự động bị đẩy ra khỏi nhóm trình xác thực. Các trình xác thực trực tuyến còn lại cuối cùng sẽ lại chiếm hơn 2/3 mạng lưới, thỏa mãn đa số tuyệt đối cần thiết để một lần nữa chung cuộc chuỗi.
+Trong những trường hợp cực đoan nếu mạng lưới ngừng chung cuộc do hơn một phần ba số trình xác thực ngoại tuyến, những người dùng này sẽ phải chịu cái được gọi là <em>rò rỉ do không hoạt động bậc hai</em>, đây là sự cạn kiệt QAU theo cấp số nhân từ các tài khoản trình xác thực ngoại tuyến. Điều này cho phép mạng lưới cuối cùng tự phục hồi bằng cách đốt QAU của các trình xác thực không hoạt động cho đến khi số dư của chúng đạt 16 QAU, tại thời điểm đó chúng sẽ tự động bị đẩy ra khỏi nhóm trình xác thực. Các trình xác thực trực tuyến còn lại cuối cùng sẽ lại chiếm hơn 2/3 mạng lưới, thỏa mãn đa số tuyệt đối cần thiết để một lần nữa chung cuộc chuỗi.
 </ExpandableCard>
 
 <ExpandableCard title="Làm thế nào để đảm bảo tôi không bị phạt cắt giảm?">
@@ -221,11 +221,11 @@ Càng nhiều máy khách trình xác thực chạy trên một giải pháp lư
 Các hình phạt ngoại tuyến tỷ lệ thuận với số lượng người khác ngoại tuyến cùng lúc. Việc sử dụng VPS làm tăng đáng kể rủi ro rằng các hình phạt ngoại tuyến sẽ nghiêm trọng hơn và làm tăng rủi ro rò rỉ bậc hai hoặc phạt cắt giảm trong trường hợp sự cố ngừng hoạt động đủ lớn. Để giảm thiểu rủi ro của chính bạn và rủi ro cho mạng lưới, người dùng được đặc biệt khuyến khích mua và vận hành phần cứng của riêng họ.
 </ExpandableCard>
 
-<ExpandableCard title="Làm thế nào để mở khóa phần thưởng hoặc lấy lại ETH của tôi?">
+<ExpandableCard title="Làm thế nào để mở khóa phần thưởng hoặc lấy lại QAU của tôi?">
 
 Mỗi lần rút tiền đều yêu cầu trình xác thực của bạn phải có một địa chỉ rút tiền được thiết lập. Những người đặt cọc mới thiết lập điều này tại thời điểm tạo khóa và gửi tiền. Những người đặt cọc từ những ngày đầu của mạng lưới chưa thiết lập địa chỉ rút tiền sẽ cần cập nhật thông tin xác thực rút tiền của họ trước khi rút tiền.
 
-Đối với các trình xác thực có thông tin xác thực rút tiền thông thường (0x01), các khoản thanh toán phần thưởng (ETH tích lũy vượt quá 32 ban đầu) được định kỳ phân phối tự động đến địa chỉ rút tiền. Đối với các trình xác thực gộp (0x02), phần thưởng vẫn được đặt cọc và tự động gộp. Bạn có thể rút bất kỳ số dư nào vượt quá 32 ETH bằng cách kích hoạt việc rút tiền một phần từ địa chỉ rút tiền của mình.
+Đối với các trình xác thực có thông tin xác thực rút tiền thông thường (0x01), các khoản thanh toán phần thưởng (QAU tích lũy vượt quá 32 ban đầu) được định kỳ phân phối tự động đến địa chỉ rút tiền. Đối với các trình xác thực gộp (0x02), phần thưởng vẫn được đặt cọc và tự động gộp. Bạn có thể rút bất kỳ số dư nào vượt quá 32 QAU bằng cách kích hoạt việc rút tiền một phần từ địa chỉ rút tiền của mình.
 
 Để mở khóa và nhận lại toàn bộ số dư của mình, bạn phải thoát khỏi trình xác thực của mình. Bạn có thể làm điều này bằng cách sử dụng các khóa ký trình xác thực của mình hoặc kích hoạt nó trực tiếp từ địa chỉ rút tiền của bạn bằng một giao dịch lớp thực thi, nghĩa là tiền của bạn vẫn có thể phục hồi ngay cả khi các khóa ký của bạn bị mất.
 
@@ -236,9 +236,9 @@ Mỗi lần rút tiền đều yêu cầu trình xác thực của bạn phải 
 
 - [Thống kê sự đa dạng máy khách và hướng dẫn di chuyển](https://clientdiversity.org/)
 - [Giúp đỡ sự đa dạng máy khách](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
-- [Sự đa dạng máy khách trên lớp đồng thuận của Ethereum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
-- [Cách thức: Mua sắm phần cứng trình xác thực Ethereum](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _EthStaker 2022_
-- [EIP-7870: Các đề xuất về phần cứng và băng thông](https://eips.ethereum.org/EIPS/eip-7870)
+- [Sự đa dạng máy khách trên lớp đồng thuận của Quantaureum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
+- [Cách thức: Mua sắm phần cứng trình xác thực Quantaureum](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _QauStaker 2022_
+- [EIP-7870: Các đề xuất về phần cứng và băng thông](https://eips.quantaureum.com/EIPS/eip-7870)
 - [Bản nâng cấp Pectra: số dư hiệu dụng tối đa và hơn thế nữa](/roadmap/pectra/maxeb/)
 
 <QuizWidget quizKey="staking-solo" />

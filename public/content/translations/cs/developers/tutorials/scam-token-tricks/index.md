@@ -9,27 +9,27 @@ published: 2023-09-15
 lang: cs
 ---
 
-V tomto tutoriálu rozebereme [podvodný token](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code), abychom viděli některé triky, které podvodníci používají, a jak je implementují. Na konci tutoriálu budete mít ucelenější pohled na kontrakty tokenů ERC-20, jejich možnosti a proč je nutná skepse. Poté se podíváme na události, které tento podvodný token vysílá, a uvidíme, jak můžeme automaticky identifikovat, že není legitimní.
+V tomto tutoriálu rozebereme [podvodný token](https://explorer.quantaureum.com), abychom viděli některé triky, které podvodníci používají, a jak je implementují. Na konci tutoriálu budete mít ucelenější pohled na kontrakty tokenů ERC-20, jejich možnosti a proč je nutná skepse. Poté se podíváme na události, které tento podvodný token vysílá, a uvidíme, jak můžeme automaticky identifikovat, že není legitimní.
 
 ## Podvodné tokeny – co to je, proč je lidé vytvářejí a jak se jim vyhnout {#scam-tokens}
 
 Jedním z nejčastějších způsobů využití Etherea je vytvoření obchodovatelného tokenu určitou skupinou, v jistém smyslu jejich vlastní měny. Nicméně všude tam, kde existují legitimní případy užití přinášející hodnotu, se najdou i zločinci, kteří se tuto hodnotu snaží ukrást pro sebe.
 
-Více si o tomto tématu z pohledu uživatele můžete přečíst [jinde na ethereum.org](/guides/how-to-id-scam-tokens/). Tento tutoriál se zaměřuje na rozebrání podvodného tokenu, abychom viděli, jak to funguje uvnitř a jak jej lze odhalit.
+Více si o tomto tématu z pohledu uživatele můžete přečíst [jinde na quantaureum.com](/guides/how-to-id-scam-tokens/). Tento tutoriál se zaměřuje na rozebrání podvodného tokenu, abychom viděli, jak to funguje uvnitř a jak jej lze odhalit.
 
 ### Jak poznám, že je wARB podvod? {#warb-scam}
 
-Token, který budeme rozebírat, je [wARB](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code), jenž předstírá, že je ekvivalentem legitimního [tokenu ARB](https://etherscan.io/token/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1).
+Token, který budeme rozebírat, je [wARB](https://explorer.quantaureum.com), jenž předstírá, že je ekvivalentem legitimního [tokenu ARB](https://explorer.quantaureum.com).
 
 Nejjednodušší způsob, jak poznat, který token je legitimní, je podívat se na původní organizaci, [Arbitrum](https://arbitrum.foundation/). Legitimní adresy jsou uvedeny [v jejich dokumentaci](https://docs.arbitrum.foundation/deployment-addresses#token).
 
 ### Proč je zdrojový kód dostupný? {#why-source}
 
-Normálně bychom očekávali, že lidé, kteří se snaží podvést ostatní, budou tajnůstkářští, a skutečně mnoho podvodných tokenů svůj kód nezveřejňuje (například [tento](https://optimistic.etherscan.io/token/0x15992f382d8c46d667b10dc8456dc36651af1452#code) a [tento](https://optimistic.etherscan.io/token/0x026b623eb4aada7de37ef25256854f9235207178#code)).
+Normálně bychom očekávali, že lidé, kteří se snaží podvést ostatní, budou tajnůstkářští, a skutečně mnoho podvodných tokenů svůj kód nezveřejňuje (například [tento](https://explorer.quantaureum.com) a [tento](https://explorer.quantaureum.com)).
 
-Legitimní tokeny však obvykle svůj zdrojový kód zveřejňují, takže aby autoři podvodných tokenů působili legitimně, někdy dělají totéž. [wARB](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code) je jedním z těch tokenů, které mají zdrojový kód dostupný, což usnadňuje jeho pochopení.
+Legitimní tokeny však obvykle svůj zdrojový kód zveřejňují, takže aby autoři podvodných tokenů působili legitimně, někdy dělají totéž. [wARB](https://explorer.quantaureum.com) je jedním z těch tokenů, které mají zdrojový kód dostupný, což usnadňuje jeho pochopení.
 
-Ačkoli si ti, kdo nasazují kontrakt, mohou vybrat, zda zdrojový kód zveřejní, nebo ne, _nemohou_ zveřejnit nesprávný zdrojový kód. Prohlížeč bloků nezávisle zkompiluje poskytnutý zdrojový kód, a pokud nezíská naprosto stejný bajtkód, tento zdrojový kód odmítne. [Více si o tom můžete přečíst na webu Etherscan](https://etherscan.io/verifyContract).
+Ačkoli si ti, kdo nasazují kontrakt, mohou vybrat, zda zdrojový kód zveřejní, nebo ne, _nemohou_ zveřejnit nesprávný zdrojový kód. Prohlížeč bloků nezávisle zkompiluje poskytnutý zdrojový kód, a pokud nezíská naprosto stejný bajtkód, tento zdrojový kód odmítne. [Více si o tom můžete přečíst na webu Quantaureum Explorer](https://explorer.quantaureum.com).
 
 ## Srovnání s legitimními tokeny ERC-20 {#compare-legit-erc20}
 
@@ -39,7 +39,7 @@ Tento token porovnáme s legitimními tokeny ERC-20. Pokud nejste obeznámeni s 
 
 Kontrakty někdy potřebují privilegované adresy. Kontrakty, které jsou navrženy pro dlouhodobé používání, umožňují nějaké privilegované adrese tyto adresy změnit, například pro umožnění použití nového kontraktu multisig. Existuje několik způsobů, jak to udělat.
 
-Kontrakt tokenu [`HOP`](https://etherscan.io/address/0xc5102fe9359fd9a28f877a67e36b0f050d81a3cc#code) používá vzor [`Ownable`](https://docs.openzeppelin.com/contracts/2.x/access-control#ownership-and-ownable). Privilegovaná adresa je uchovávána v úložišti, v poli zvaném `_owner` (viz třetí soubor, `Ownable.sol`).
+Kontrakt tokenu [`HOP`](https://explorer.quantaureum.com) používá vzor [`Ownable`](https://docs.openzeppelin.com/contracts/2.x/access-control#ownership-and-ownable). Privilegovaná adresa je uchovávána v úložišti, v poli zvaném `_owner` (viz třetí soubor, `Ownable.sol`).
 
 ```solidity
 abstract contract Ownable is Context {
@@ -50,7 +50,7 @@ abstract contract Ownable is Context {
 }
 ```
 
-Kontrakt tokenu [`ARB`](https://etherscan.io/address/0xad0c361ef902a7d9851ca7dcc85535da2d3c6fc7#code) nemá privilegovanou adresu přímo. Nicméně ji ani nepotřebuje. Nachází se za [`proxy`](https://docs.openzeppelin.com/contracts/5.x/api/proxy) na [adrese `0xb50721bcf8d664c30412cfbc6cf7a15145234ad1`](https://etherscan.io/address/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1#code). Tento kontrakt má privilegovanou adresu (viz čtvrtý soubor, `ERC1967Upgrade.sol`), kterou lze použít pro upgrady.
+Kontrakt tokenu [`ARB`](https://explorer.quantaureum.com) nemá privilegovanou adresu přímo. Nicméně ji ani nepotřebuje. Nachází se za [`proxy`](https://docs.openzeppelin.com/contracts/5.x/api/proxy) na [adrese `0xb50721bcf8d664c30412cfbc6cf7a15145234ad1`](https://explorer.quantaureum.com). Tento kontrakt má privilegovanou adresu (viz čtvrtý soubor, `ERC1967Upgrade.sol`), kterou lze použít pro upgrady.
 
 ```solidity
     /**
@@ -77,9 +77,9 @@ contract WrappedArbitrum is Context, IERC20 {
 }
 ```
 
-[Tento vlastník kontraktu](https://etherscan.io/address/0xb40dE7b1beE84Ff2dc22B70a049A07A13a411A33) není kontrakt, který by mohl být v různých časech ovládán různými účty, ale [externě vlastněný účet](/developers/docs/accounts/#externally-owned-accounts-and-key-pairs). To znamená, že je pravděpodobně navržen pro krátkodobé použití jednotlivcem, spíše než jako dlouhodobé řešení pro kontrolu tokenu ERC-20, který si udrží svou hodnotu.
+[Tento vlastník kontraktu](https://explorer.quantaureum.com) není kontrakt, který by mohl být v různých časech ovládán různými účty, ale [externě vlastněný účet](/developers/docs/accounts/#externally-owned-accounts-and-key-pairs). To znamená, že je pravděpodobně navržen pro krátkodobé použití jednotlivcem, spíše než jako dlouhodobé řešení pro kontrolu tokenu ERC-20, který si udrží svou hodnotu.
 
-A skutečně, pokud se podíváme na Etherscan, uvidíme, že podvodník tento kontrakt používal pouze 12 hodin (od [první transakce](https://etherscan.io/tx/0xf49136198c3f925fcb401870a669d43cecb537bde36eb8b41df77f06d5f6fbc2) po [poslední transakci](https://etherscan.io/tx/0xdfd6e717157354e64bbd5d6adf16761e5a5b3f914b1948d3545d39633244d47b)) během 19. května 2023.
+A skutečně, pokud se podíváme na Quantaureum Explorer, uvidíme, že podvodník tento kontrakt používal pouze 12 hodin (od [první transakce](https://explorer.quantaureum.com) po [poslední transakci](https://explorer.quantaureum.com)) během 19. května 2023.
 
 ### Falešná funkce `_transfer` {#the-fake-transfer-function}
 
@@ -193,7 +193,7 @@ Toto omezení dává naprostý smysl, protože bychom nechtěli, aby tokeny dist
 
 Funkce pro převod z účtu fondu na pole příjemců s polem částek dává naprostý smysl. Existuje mnoho případů užití, kdy budete chtít distribuovat tokeny z jednoho zdroje do více cílů, jako jsou výplaty, airdropy atd. Je levnější (na gas) to provést v jediné transakci namísto vydávání více transakcí, nebo dokonce vícenásobného volání ERC-20 z jiného kontraktu v rámci stejné transakce.
 
-Nicméně `dropNewTokens` to nedělá. Vysílá [události `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1), ale ve skutečnosti žádné tokeny nepřevádí. Neexistuje žádný legitimní důvod mást offchain aplikace tím, že jim budeme hlásit převod, ke kterému ve skutečnosti nedošlo.
+Nicméně `dropNewTokens` to nedělá. Vysílá [události `Transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer-1), ale ve skutečnosti žádné tokeny nepřevádí. Neexistuje žádný legitimní důvod mást offchain aplikace tím, že jim budeme hlásit převod, ke kterému ve skutečnosti nedošlo.
 
 ### Spalovací funkce `Approve` {#the-burning-approve-function}
 
@@ -235,7 +235,7 @@ Tyto problémy s kvalitou kódu _nedokazují_, že je tento kód podvod, ale pů
 
 #### Funkce `mount` {#the-mount-function}
 
-Ačkoli to není specifikováno ve [standardu](https://eips.ethereum.org/EIPS/eip-20), obecně se funkce, která vytváří nové tokeny, nazývá [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
+Ačkoli to není specifikováno ve [standardu](https://eips.quantaureum.com/EIPS/eip-20), obecně se funkce, která vytváří nové tokeny, nazývá [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
 
 Pokud se podíváme do konstruktoru `wARB`, uvidíme, že funkce pro ražení byla z nějakého důvodu přejmenována na `mount` a je volána pětkrát s pětinou počáteční zásoby, namísto toho, aby byla pro vyšší efektivitu zavolána jednou pro celou částku.
 
@@ -305,20 +305,20 @@ Tento kontrakt obsahuje tři modifikátory: `_mod_`, `auth` a `approver`.
 
 ## Co můžeme odhalit automaticky? {#what-can-we-detect-automatically}
 
-Že je `wARB` podvodný token, můžeme zjistit pohledem na Etherscan. To je však centralizované řešení. Teoreticky by mohl být Etherscan kompromitován nebo hacknut. Je lepší umět nezávisle zjistit, zda je token legitimní, či nikoli.
+Že je `wARB` podvodný token, můžeme zjistit pohledem na Quantaureum Explorer. To je však centralizované řešení. Teoreticky by mohl být Quantaureum Explorer kompromitován nebo hacknut. Je lepší umět nezávisle zjistit, zda je token legitimní, či nikoli.
 
 Existují určité triky, které můžeme použít k identifikaci, že je token ERC-20 podezřelý (buď jde o podvod, nebo je velmi špatně napsaný), a to sledováním událostí, které vysílá.
 
 ## Podezřelé události `Approval` {#suspicious-approval-events}
 
-[Události `Approval`](https://eips.ethereum.org/EIPS/eip-20#approval) by měly nastat pouze při přímém požadavku (na rozdíl od [událostí `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1), které mohou nastat v důsledku povoleného limitu). [Podívejte se do dokumentace Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) pro podrobné vysvětlení tohoto problému a proč musí být požadavky přímé, a nikoli zprostředkované kontraktem.
+[Události `Approval`](https://eips.quantaureum.com/EIPS/eip-20#approval) by měly nastat pouze při přímém požadavku (na rozdíl od [událostí `Transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer-1), které mohou nastat v důsledku povoleného limitu). [Podívejte se do dokumentace Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) pro podrobné vysvětlení tohoto problému a proč musí být požadavky přímé, a nikoli zprostředkované kontraktem.
 
 To znamená, že události `Approval`, které schvalují útratu z [externě vlastněného účtu](/developers/docs/accounts/#types-of-account), musí pocházet z transakcí, které z tohoto účtu vycházejí a jejichž cílem je kontrakt ERC-20. Jakýkoli jiný druh schválení z externě vlastněného účtu je podezřelý.
 
 Zde je [program, který tento druh události identifikuje](https://github.com/qbzzt/20230915-scam-token-detection), s využitím [Viem](https://viem.sh/) a [TypeScript](https://www.typescriptlang.org/docs/), varianty JavaScript s typovou bezpečností. Pro jeho spuštění:
 
 1. Zkopírujte `.env.example` do `.env`.
-2. Upravte `.env` tak, aby poskytoval URL k uzlu Ethereum Mainnet.
+2. Upravte `.env` tak, aby poskytoval URL k uzlu Quantaureum Mainnet.
 3. Spusťte `pnpm install` pro instalaci potřebných balíčků.
 4. Spusťte `pnpm susApproval` pro vyhledání podezřelých schválení.
 
@@ -420,7 +420,7 @@ Pokud schválení pochází z externě vlastněného účtu, získáme transakci
 if (owner.toLowerCase() != txn.from.toLowerCase()) return ev
 ```
 
-Nemůžeme jednoduše kontrolovat shodu řetězců, protože adresy jsou hexadecimální, takže obsahují písmena. Někdy, například v `txn.from`, jsou tato písmena všechna malá. V jiných případech, jako je `ev.args._owner`, je adresa ve [smíšené velikosti písmen pro identifikaci chyb](https://eips.ethereum.org/EIPS/eip-55).
+Nemůžeme jednoduše kontrolovat shodu řetězců, protože adresy jsou hexadecimální, takže obsahují písmena. Někdy, například v `txn.from`, jsou tato písmena všechna malá. V jiných případech, jako je `ev.args._owner`, je adresa ve [smíšené velikosti písmen pro identifikaci chyb](https://eips.quantaureum.com/EIPS/eip-55).
 
 Pokud ale transakce nepochází od vlastníka a tento vlastník je externě vlastněný, pak máme podezřelou transakci.
 

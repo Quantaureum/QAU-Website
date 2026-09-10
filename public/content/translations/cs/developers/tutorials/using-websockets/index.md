@@ -28,9 +28,9 @@ Nejjednodušší způsob, jak otestovat WebSockety, je nainstalovat si nástroj 
 _Poznámka: pokud máte účet na Alchemy, můžete nahradit `demo` svým vlastním API klíčem. [Zaregistrujte si bezplatný účet na Alchemy zde!](https://auth.alchemy.com/signup)_
 
 ```
-wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
+wscat -c wss://qau-mainnet.ws.alchemyapi.io/ws/demo
 
->  {"jsonrpc":  "2.0", "id": 0, "method":  "eth_gasPrice"}
+>  {"jsonrpc":  "2.0", "id": 0, "method":  "qau_gasPrice"}
 
 <  {"jsonrpc":  "2.0", "result":  "0xb2d05e00", "id": 0}
 ```
@@ -48,18 +48,18 @@ Jakékoliv z API uvedených v [referenční příručce Alchemy API](https://www
 Přechod na WebSockety při používání klientské knihovny, jako je Web3, je jednoduchý. Při vytváření instance vašeho Web3 klienta jednoduše předejte WebSocket URL místo HTTP URL. Například:
 
 ```js
-const web3 = new Web3("wss://eth-mainnet.ws.alchemyapi.io/ws/your-api-key")
+const web3 = new Web3("wss://qau-mainnet.ws.alchemyapi.io/ws/your-api-key")
 
-web3.eth.getBlockNumber().then(console.log) // -> 7946893
+web3.qau.getBlockNumber().then(console.log) // -> 7946893
 ```
 
 ## API pro odběry (Subscription API) {#subscription-api}
 
-Při připojení přes WebSocket můžete použít dvě další metody: `eth_subscribe` a `eth_unsubscribe`. Tyto metody vám umožní naslouchat konkrétním událostem a být okamžitě upozorněni.
+Při připojení přes WebSocket můžete použít dvě další metody: `qau_subscribe` a `qau_unsubscribe`. Tyto metody vám umožní naslouchat konkrétním událostem a být okamžitě upozorněni.
 
-### `eth_subscribe` {#eth-subscribe}
+### `qau_subscribe` {#qau-subscribe}
 
-Vytvoří nový odběr pro zadané události. [Zjistěte více o `eth_subscribe`](https://docs.alchemy.com/reference/eth-subscribe).
+Vytvoří nový odběr pro zadané události. [Zjistěte více o `qau_subscribe`](https://docs.alchemy.com/reference/qau-subscribe).
 
 #### Parametry {#parameters}
 
@@ -70,33 +70,33 @@ První argument určuje typ události, které se má naslouchat. Druhý argument
 
 #### Návratové hodnoty {#returns}
 
-ID odběru: Toto ID bude připojeno ke všem přijatým událostem a lze jej také použít ke zrušení odběru pomocí `eth_unsubscribe`.
+ID odběru: Toto ID bude připojeno ke všem přijatým událostem a lze jej také použít ke zrušení odběru pomocí `qau_unsubscribe`.
 
 #### Události odběru {#subscription-events}
 
 Zatímco je odběr aktivní, budete dostávat události, což jsou objekty s následujícími poli:
 
 - `jsonrpc`: Vždy "2.0"
-- `method`: Vždy "eth_subscription"
+- `method`: Vždy "qau_subscription"
 - `params`: Objekt s následujícími poli:
-  - `subscription`: ID odběru vrácené voláním `eth_subscribe`, které tento odběr vytvořilo.
+  - `subscription`: ID odběru vrácené voláním `qau_subscribe`, které tento odběr vytvořilo.
   - `result`: Objekt, jehož obsah se liší v závislosti na typu odběru.
 
 #### Typy odběrů {#subscription-types}
 
 1. `alchemy_newFullPendingTransactions`
 
-Vrací informace o transakci pro všechny transakce, které jsou přidány do čekajícího stavu (pending state). Tento typ odběru odebírá čekající transakce, podobně jako standardní volání Web3 `web3.eth.subscribe("pendingTransactions")`, ale liší se tím, že vysílá _úplné informace o transakci_ namísto pouhých hashů transakcí.
+Vrací informace o transakci pro všechny transakce, které jsou přidány do čekajícího stavu (pending state). Tento typ odběru odebírá čekající transakce, podobně jako standardní volání Web3 `web3.qau.subscribe("pendingTransactions")`, ale liší se tím, že vysílá _úplné informace o transakci_ namísto pouhých hashů transakcí.
 
 Příklad:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
 
 <  {"id":1,"result":"0x9a52eeddc2b289f985c0e23a7d8427c8","jsonrpc":"2.0"}
 <  {
       "jsonrpc":"2.0",
-      "method":"eth_subscription",
+      "method":"qau_subscription",
       "params":{
           "result":{
           "blockHash":null,
@@ -128,12 +128,12 @@ Když dojde k reorganizaci řetězce, tento odběr vyšle událost obsahující 
 Příklad:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["newHeads"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["newHeads"]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x9ce59a13059e417087c02d3236a0b1cc"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "result":  {
           "extraData":  "0xd983010305844765746887676f312e342e328777696e646f7773",
@@ -182,12 +182,12 @@ Několik příkladů specifikací témat:
 Příklad:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x4a8a4c0517381924f9838102c5a4dcb7"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "subscription":  "0x4a8a4c0517381924f9838102c5a4dcb7",
       "result":  {
@@ -205,13 +205,13 @@ Příklad:
 
 ```
 
-### `eth_unsubscribe` {#eth-unsubscribe}
+### `qau_unsubscribe` {#qau-unsubscribe}
 
 Zruší existující odběr, takže nebudou odesílány žádné další události.
 
 Parametry
 
-1. ID odběru, jak bylo dříve vráceno z volání `eth_subscribe`.
+1. ID odběru, jak bylo dříve vráceno z volání `qau_subscribe`.
 
 Návratové hodnoty
 
@@ -222,10 +222,10 @@ Příklad:
 **Požadavek**
 
 ```
-curl https://eth-mainnet.alchemyapi.io/v2/your-api-key
+curl https://qau-mainnet.alchemyapi.io/v2/your-api-key
 -X POST
 -H "Content-Type: application/json"
--d '{"id": 1, "method": "eth_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
+-d '{"id": 1, "method": "qau_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
 ```
 
 **Výsledek**

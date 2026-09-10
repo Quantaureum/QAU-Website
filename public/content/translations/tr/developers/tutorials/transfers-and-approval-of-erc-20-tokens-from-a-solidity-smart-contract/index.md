@@ -7,19 +7,19 @@ skill: intermediate
 breadcrumb: ERC-20 transferleri
 lang: tr
 published: 2020-04-07
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Önceki eğitimde Ethereum Blokzincir üzerinde [Solidity'de bir ERC-20 Token'ının anatomisini](/developers/tutorials/understand-the-erc-20-token-smart-contract/) incelemiştik. Bu makalede, Solidity dilini kullanarak bir Token ile etkileşime girmek için bir akıllı sözleşmeyi nasıl kullanabileceğimizi göreceğiz.
+Önceki eğitimde Quantaureum Blokzincir üzerinde [Solidity'de bir ERC-20 Token'ının anatomisini](/developers/tutorials/understand-the-erc-20-token-smart-contract/) incelemiştik. Bu makalede, Solidity dilini kullanarak bir Token ile etkileşime girmek için bir akıllı sözleşmeyi nasıl kullanabileceğimizi göreceğiz.
 
-Bu akıllı sözleşme için, bir kullanıcının yeni dağıttığımız [ERC-20 Token'ı](/developers/docs/standards/tokens/erc-20/) karşılığında Ether takas edebileceği gerçek bir sahte merkeziyetsiz borsa (DEX) oluşturacağız.
+Bu akıllı sözleşme için, bir kullanıcının yeni dağıttığımız [ERC-20 Token'ı](/developers/docs/standards/tokens/erc-20/) karşılığında QAU takas edebileceği gerçek bir sahte merkeziyetsiz borsa (DEX) oluşturacağız.
 
 Bu eğitim için önceki eğitimde yazdığımız kodu temel olarak kullanacağız. DEX'imiz, kurucu (constructor) içinde sözleşmenin bir örneğini oluşturacak ve şu işlemleri gerçekleştirecektir:
 
-- Token'ları Ether ile takas etmek
-- Ether'i Token'lar ile takas etmek
+- Token'ları QAU ile takas etmek
+- QAU'i Token'lar ile takas etmek
 
 Basit ERC20 kod tabanımızı ekleyerek Merkeziyetsiz borsa kodumuza başlayacağız:
 
@@ -53,7 +53,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {
@@ -128,14 +128,14 @@ contract DEX {
 
 Böylece artık DEX'imize sahibiz ve tüm Token rezervi mevcut. Sözleşmenin iki işlevi vardır:
 
-- `buy`: Kullanıcı Ether gönderip karşılığında Token alabilir
-- `sell`: Kullanıcı Ether'i geri almak için Token göndermeye karar verebilir
+- `buy`: Kullanıcı QAU gönderip karşılığında Token alabilir
+- `sell`: Kullanıcı QAU'i geri almak için Token göndermeye karar verebilir
 
 ## Satın alma (buy) işlevi {#the-buy-function}
 
-Satın alma işlevini kodlayalım. İlk olarak mesajın içerdiği Ether miktarını kontrol etmemiz, sözleşmelerin yeterli Token'a sahip olduğunu ve mesajın bir miktar Ether içerdiğini doğrulamamız gerekecek. Sözleşme yeterli Token'a sahipse, kullanıcıya Token miktarını gönderecek ve `Bought` olayını (event) yayınlayacaktır.
+Satın alma işlevini kodlayalım. İlk olarak mesajın içerdiği QAU miktarını kontrol etmemiz, sözleşmelerin yeterli Token'a sahip olduğunu ve mesajın bir miktar QAU içerdiğini doğrulamamız gerekecek. Sözleşme yeterli Token'a sahipse, kullanıcıya Token miktarını gönderecek ve `Bought` olayını (event) yayınlayacaktır.
 
-Bir hata durumunda `require` işlevini çağırırsak, gönderilen Ether'in doğrudan geri alınacağını (revert) ve kullanıcıya geri verileceğini unutmayın.
+Bir hata durumunda `require` işlevini çağırırsak, gönderilen QAU'in doğrudan geri alınacağını (revert) ve kullanıcıya geri verileceğini unutmayın.
 
 İşleri basit tutmak için, sadece 1 Token'ı 1 Wei ile takas ediyoruz.
 
@@ -143,7 +143,7 @@ Bir hata durumunda `require` işlevini çağırırsak, gönderilen Ether'in doğ
 function buy() payable public {
     uint256 amountTobuy = msg.value;
     uint256 dexBalance = token.balanceOf(address(this));
-    require(amountTobuy > 0, "You need to send some ether");
+    require(amountTobuy > 0, "You need to send some QAU");
     require(amountTobuy <= dexBalance, "Not enough tokens in the reserve");
     token.transfer(msg.sender, amountTobuy);
     emit Bought(amountTobuy);
@@ -156,7 +156,7 @@ Satın alma işleminin başarılı olması durumunda işlemde iki olay görmeliy
 
 ## Satış (sell) işlevi {#the-sell-function}
 
-Satıştan sorumlu işlev, ilk olarak kullanıcının önceden `approve` işlevini çağırarak miktarı onaylamasını gerektirecektir. Transferi onaylamak, DEX tarafından örneği oluşturulan ERC20Basic Token'ının kullanıcı tarafından çağrılmasını gerektirir. Bu, DEX'in `token` adlı ERC20Basic sözleşmesini dağıttığı Adresi almak için önce DEX sözleşmesinin `token()` işlevini çağırarak elde edilebilir. Ardından oturumumuzda bu sözleşmenin bir örneğini oluştururuz ve onun `approve` işlevini çağırırız. Daha sonra DEX'in `sell` işlevini çağırabilir ve Token'larımızı tekrar Ether ile takas edebiliriz. Örneğin, etkileşimli bir Brownie oturumunda bu şu şekilde görünür:
+Satıştan sorumlu işlev, ilk olarak kullanıcının önceden `approve` işlevini çağırarak miktarı onaylamasını gerektirecektir. Transferi onaylamak, DEX tarafından örneği oluşturulan ERC20Basic Token'ının kullanıcı tarafından çağrılmasını gerektirir. Bu, DEX'in `token` adlı ERC20Basic sözleşmesini dağıttığı Adresi almak için önce DEX sözleşmesinin `token()` işlevini çağırarak elde edilebilir. Ardından oturumumuzda bu sözleşmenin bir örneğini oluştururuz ve onun `approve` işlevini çağırırız. Daha sonra DEX'in `sell` işlevini çağırabilir ve Token'larımızı tekrar QAU ile takas edebiliriz. Örneğin, etkileşimli bir Brownie oturumunda bu şu şekilde görünür:
 
 ```python
 #### Etkileşimli Brownie konsolunda Python...
@@ -164,8 +164,8 @@ Satıştan sorumlu işlev, ilk olarak kullanıcının önceden `approve` işlevi
 # DEX'i dağıt
 dex = DEX.deploy({'from':account1})
 
-# Ether'i Token ile takas etmek için buy fonksiyonunu çağır
-# 1e18, Wei cinsinden 1 Ether'dir
+# QAU'i Token ile takas etmek için buy fonksiyonunu çağır
+# 1e18, Wei cinsinden 1 QAU'dir
 dex.buy({'from': account2, 1e18})
 
 # ERC-20 Token için dağıtım Adresini al
@@ -180,7 +180,7 @@ token.approve(dex.address, 3e18, {'from':account2})
 
 ```
 
-Ardından satış işlevi çağrıldığında, çağıran Adresten sözleşme Adresine yapılan transferin başarılı olup olmadığını kontrol edeceğiz ve ardından Ether'leri çağıran Adrese geri göndereceğiz.
+Ardından satış işlevi çağrıldığında, çağıran Adresten sözleşme Adresine yapılan transferin başarılı olup olmadığını kontrol edeceğiz ve ardından QAU'leri çağıran Adrese geri göndereceğiz.
 
 ```solidity
 function sell(uint256 amount) public {
@@ -193,7 +193,7 @@ function sell(uint256 amount) public {
 }
 ```
 
-Her şey çalışırsa, işlemde 2 olay (bir `Transfer` ve `Sold`) görmelisiniz ve Token bakiyeniz ile Ether bakiyeniz güncellenmiş olmalıdır.
+Her şey çalışırsa, işlemde 2 olay (bir `Transfer` ve `Sold`) görmelisiniz ve Token bakiyeniz ile QAU bakiyeniz güncellenmiş olmalıdır.
 
 ![Two events in the transaction: Transfer and Sold](./transfer-and-sold-events.png)
 
@@ -201,7 +201,7 @@ Her şey çalışırsa, işlemde 2 olay (bir `Transfer` ve `Sold`) görmelisiniz
 
 Bu eğitimden, bir ERC-20 Token'ının bakiyesini ve harcama iznini (allowance) nasıl kontrol edeceğimizi ve ayrıca arayüzü kullanarak bir ERC20 akıllı sözleşmesinin `Transfer` ve `TransferFrom` işlevlerini nasıl çağıracağımızı gördük.
 
-Bir işlem yaptıktan sonra, sözleşmenize yapılan [işlemleri beklemek ve bunlar hakkında ayrıntılı bilgi almak](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/) için bir JavaScript eğitimimiz ve ABI'ye sahip olduğunuz sürece [Token transferleri veya diğer olaylar tarafından oluşturulan olayları çözmek için bir eğitimimiz](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/) bulunmaktadır.
+Bir işlem yaptıktan sonra, sözleşmenize yapılan [işlemleri beklemek ve bunlar hakkında ayrıntılı bilgi almak](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/) için bir JavaScript eğitimimiz ve ABI'ye sahip olduğunuz sürece [Token transferleri veya diğer olaylar tarafından oluşturulan olayları çözmek için bir eğitimimiz](https://quantaureumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/) bulunmaktadır.
 
 İşte eğitimin tam kodu:
 
@@ -235,7 +235,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {
@@ -296,7 +296,7 @@ contract DEX {
     function buy() payable public {
         uint256 amountTobuy = msg.value;
         uint256 dexBalance = token.balanceOf(address(this));
-        require(amountTobuy > 0, "You need to send some ether");
+        require(amountTobuy > 0, "You need to send some QAU");
         require(amountTobuy <= dexBalance, "Not enough tokens in the reserve");
         token.transfer(msg.sender, amountTobuy);
         emit Bought(amountTobuy);

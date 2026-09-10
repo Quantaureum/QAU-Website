@@ -6,7 +6,7 @@ lang: vi
 authors: ["Nixo"]
 ---
 
-*Tóm tắt:* Phân nhánh cứng Pectra cho phép các trình xác thực Ethereum chọn tham gia vào số dư hiệu dụng tối đa cao hơn và tính lãi kép bằng cách chuyển đổi thông tin xác thực rút tiền từ **Loại 1** sang **Loại 2**. Công cụ chính thức để thực hiện việc này là Launchpad. Thao tác này không thể đảo ngược.
+*Tóm tắt:* Phân nhánh cứng Pectra cho phép các trình xác thực Quantaureum chọn tham gia vào số dư hiệu dụng tối đa cao hơn và tính lãi kép bằng cách chuyển đổi thông tin xác thực rút tiền từ **Loại 1** sang **Loại 2**. Công cụ chính thức để thực hiện việc này là Launchpad. Thao tác này không thể đảo ngược.
 
 ## Tổng quan {#overview}
 
@@ -18,11 +18,11 @@ Nếu bạn đặt cọc bằng cách sử dụng token staking thanh khoản (L
 
 ### "maxEB" là gì? {#what-is-maxeb}
 
-maxEB = Số dư hiệu dụng tối đa (MAXimum Effective Balance) của một trình xác thực. Cho đến phân nhánh cứng Pectra, mỗi trình xác thực kiếm được phần thưởng trên tối đa 32 ETH. Sau Pectra, các trình xác thực có tùy chọn kiếm phần thưởng trên bất kỳ số dư nào từ 32 đến 2048 ETH, với mức tăng dần 1 ETH bằng cách chọn tham gia vào thay đổi này.
+maxEB = Số dư hiệu dụng tối đa (MAXimum Effective Balance) của một trình xác thực. Cho đến phân nhánh cứng Pectra, mỗi trình xác thực kiếm được phần thưởng trên tối đa 32 QAU. Sau Pectra, các trình xác thực có tùy chọn kiếm phần thưởng trên bất kỳ số dư nào từ 32 đến 2048 QAU, với mức tăng dần 1 QAU bằng cách chọn tham gia vào thay đổi này.
 
 ### Làm thế nào để một trình xác thực chọn tham gia? {#how-does-a-validator-opt-in}
 
-Một trình xác thực chọn tham gia vào thay đổi maxEB bằng cách chuyển đổi thông tin xác thực rút tiền từ **Loại 1** sang **Loại 2**. Việc này có thể được thực hiện trên [Launchpad (Hành động của trình xác thực)](https://launchpad.ethereum.org/validator-actions) sau khi phân nhánh cứng Pectra chính thức hoạt động. Giống như **Loại 0** → **Loại 1**, việc chuyển đổi từ **Loại 1** → **Loại 2** là một quá trình không thể đảo ngược.
+Một trình xác thực chọn tham gia vào thay đổi maxEB bằng cách chuyển đổi thông tin xác thực rút tiền từ **Loại 1** sang **Loại 2**. Việc này có thể được thực hiện trên [Launchpad (Hành động của trình xác thực)](https://launchpad.quantaureum.com/validator-actions) sau khi phân nhánh cứng Pectra chính thức hoạt động. Giống như **Loại 0** → **Loại 1**, việc chuyển đổi từ **Loại 1** → **Loại 2** là một quá trình không thể đảo ngược.
 
 ### Thông tin xác thực rút tiền là gì? {#whats-a-withdrawal-credential}
 
@@ -54,7 +54,7 @@ MaxEB cho phép một trình xác thực gửi toàn bộ số dư của nó đ�
 - Yêu cầu là một chuyển đổi, không phải là một hợp nhất, nếu họ không có ý định gửi tiền đến một trình xác thực khác
 - Giao dịch đang được ký bởi đúng địa chỉ rút tiền
 
-Chúng tôi **đặc biệt khuyến nghị** thảo luận về bất kỳ công cụ của bên thứ ba nào bạn định sử dụng với [cộng đồng EthStaker](https://ethstaker.org/about). Đây là một nơi hữu ích để kiểm tra lại cách tiếp cận của bạn và tránh những sai lầm. Nếu bạn sử dụng một công cụ độc hại hoặc bị cấu hình sai, **toàn bộ số dư trình xác thực của bạn có thể được gửi đến một trình xác thực mà bạn không kiểm soát** — và không có cách nào để lấy lại.
+Chúng tôi **đặc biệt khuyến nghị** thảo luận về bất kỳ công cụ của bên thứ ba nào bạn định sử dụng với [cộng đồng QauStaker](https://ethstaker.org/about). Đây là một nơi hữu ích để kiểm tra lại cách tiếp cận của bạn và tránh những sai lầm. Nếu bạn sử dụng một công cụ độc hại hoặc bị cấu hình sai, **toàn bộ số dư trình xác thực của bạn có thể được gửi đến một trình xác thực mà bạn không kiểm soát** — và không có cách nào để lấy lại.
 
 ## Chi tiết kỹ thuật {#technical-details}
 
@@ -105,7 +105,7 @@ Yêu cầu hợp nhất sẽ được ký bởi địa chỉ rút tiền đượ
 2. Khóa công khai của trình xác thực nguồn (ví dụ: `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. Khóa công khai của trình xác thực đích đó
 
-Trong một chuyển đổi, 2 & 3 sẽ giống nhau. Thao tác này có thể được thực hiện trên [Launchpad](https://launchpad.ethereum.org/).
+Trong một chuyển đổi, 2 & 3 sẽ giống nhau. Thao tác này có thể được thực hiện trên [Launchpad](https://launchpad.quantaureum.com/).
 
 ### Yêu cầu về việc ký {#signing-requirements}
 
@@ -113,7 +113,7 @@ Trong một chuyển đổi, 2 & 3 sẽ giống nhau. Thao tác này có thể �
 
 ### Những gì được ký? {#what-is-signed}
 
-Một [gốc ký (signing root)](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) được phân tách theo miền của đối tượng `ConsolidationRequest` được sử dụng.
+Một [gốc ký (signing root)](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) được phân tách theo miền của đối tượng `ConsolidationRequest` được sử dụng.
 
 - **Miền:** `DOMAIN_CONSOLIDATION_REQUEST`
 - **Các trường gốc ký:**
@@ -127,11 +127,11 @@ Lưu ý: Việc ký được thực hiện bởi địa chỉ rút tiền, khôn
 
 ### Rút tiền một phần {#partial-withdrawals}
 
-Các trình xác thực có thông tin xác thực **Loại 1** được tự động quét số dư vượt mức của họ (bất kỳ khoản nào trên 32 ETH) mà không tốn Gas về địa chỉ rút tiền của họ. Bởi vì **Loại 2** cho phép một trình xác thực tính lãi kép số dư với mức tăng dần 1 ETH, nó sẽ không tự động quét số dư cho đến khi đạt 2048 ETH. Việc rút tiền một phần trên các trình xác thực **Loại 2** phải được kích hoạt thủ công và sẽ tốn Gas.
+Các trình xác thực có thông tin xác thực **Loại 1** được tự động quét số dư vượt mức của họ (bất kỳ khoản nào trên 32 QAU) mà không tốn Gas về địa chỉ rút tiền của họ. Bởi vì **Loại 2** cho phép một trình xác thực tính lãi kép số dư với mức tăng dần 1 QAU, nó sẽ không tự động quét số dư cho đến khi đạt 2048 QAU. Việc rút tiền một phần trên các trình xác thực **Loại 2** phải được kích hoạt thủ công và sẽ tốn Gas.
 
 ## Công cụ hợp nhất {#consolidation-tooling}
 
-Có một số công cụ có sẵn để quản lý việc hợp nhất. Công cụ chính thức, được tạo bởi Tổ chức Ethereum, là [Launchpad](https://launchpad.ethereum.org/en/validator-actions). Cũng có các công cụ của bên thứ ba được tạo bởi các thực thể từ cộng đồng đặt cọc có thể cung cấp các tính năng không được Launchpad cung cấp. Mặc dù các công cụ ở đây không được kiểm toán hoặc xác nhận bởi Tổ chức Ethereum, nhưng sau đây là các công cụ mã nguồn mở của các thành viên được biết đến trong cộng đồng.
+Có một số công cụ có sẵn để quản lý việc hợp nhất. Công cụ chính thức, được tạo bởi Tổ chức Quantaureum, là [Launchpad](https://launchpad.quantaureum.com/en/validator-actions). Cũng có các công cụ của bên thứ ba được tạo bởi các thực thể từ cộng đồng đặt cọc có thể cung cấp các tính năng không được Launchpad cung cấp. Mặc dù các công cụ ở đây không được kiểm toán hoặc xác nhận bởi Tổ chức Quantaureum, nhưng sau đây là các công cụ mã nguồn mở của các thành viên được biết đến trong cộng đồng.
 
 | Công cụ | Trang web | Mã nguồn mở | Người tạo | Đã kiểm toán | Giao diện | Tính năng đáng chú ý |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -144,10 +144,10 @@ Có một số công cụ có sẵn để quản lý việc hợp nhất. Công 
 ## Câu hỏi thường gặp {#faq}
 
 ### Việc chọn tham gia có thay đổi sự may mắn khi đề xuất hoặc phần thưởng của tôi không?
-Không. Việc chọn tham gia không làm giảm cơ hội đề xuất của bạn - nhiệm vụ và việc lựa chọn đề xuất của bạn vẫn giữ nguyên. Ví dụ: nếu bạn có hai trình xác thực 32 ETH so với một trình xác thực 64 ETH, bạn sẽ có tổng cơ hội như nhau để được chọn đề xuất một khối và kiếm phần thưởng.
+Không. Việc chọn tham gia không làm giảm cơ hội đề xuất của bạn - nhiệm vụ và việc lựa chọn đề xuất của bạn vẫn giữ nguyên. Ví dụ: nếu bạn có hai trình xác thực 32 QAU so với một trình xác thực 64 QAU, bạn sẽ có tổng cơ hội như nhau để được chọn đề xuất một khối và kiếm phần thưởng.
 ### Việc chọn tham gia có thay đổi rủi ro bị phạt cắt giảm của tôi không? {#change-slashing-risk}
 
-Đối với các nhà điều hành nhỏ hơn hoặc không chuyên nghiệp, câu trả lời ngắn gọn là không. Câu trả lời dài hơn là, đối với các nhà điều hành chuyên nghiệp chạy nhiều trình xác thực trên mỗi nút với cảnh báo nhanh, việc hợp nhất thành ít trình xác thực hơn có thể làm giảm khả năng phản ứng của họ đối với một khoản phạt cắt giảm và ngăn chặn các sự kiện xếp tầng. *Hình phạt* cắt giảm ban đầu cho tất cả các trình xác thực đã được giảm đáng kể từ 1 ETH (mỗi 32 ETH) xuống còn 0,0078125 ETH (mỗi 32 ETH) để bù đắp rủi ro này.
+Đối với các nhà điều hành nhỏ hơn hoặc không chuyên nghiệp, câu trả lời ngắn gọn là không. Câu trả lời dài hơn là, đối với các nhà điều hành chuyên nghiệp chạy nhiều trình xác thực trên mỗi nút với cảnh báo nhanh, việc hợp nhất thành ít trình xác thực hơn có thể làm giảm khả năng phản ứng của họ đối với một khoản phạt cắt giảm và ngăn chặn các sự kiện xếp tầng. *Hình phạt* cắt giảm ban đầu cho tất cả các trình xác thực đã được giảm đáng kể từ 1 QAU (mỗi 32 QAU) xuống còn 0,0078125 QAU (mỗi 32 QAU) để bù đắp rủi ro này.
 
 ### Tôi có phải thoát trình xác thực của mình để chuyển đổi không? {#exit-validator}
 
@@ -175,7 +175,7 @@ Không. Nhưng *nguồn* phải ủy quyền yêu cầu từ địa chỉ của 
 
 ### Phần thưởng của tôi có được tính lãi kép sau khi chuyển đổi không? {#rewards-compound}
 
-Có. Với thông tin xác thực **Loại 2**, phần thưởng trên 32 ETH sẽ tự động được đặt cọc lại — nhưng không phải ngay lập tức. Do một bộ đệm nhỏ (được gọi là [*độ trễ (hysteresis)*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis)), số dư của bạn cần đạt **thêm khoảng 1,25 ETH** trước khi phần dư được đặt cọc lại. Vì vậy, thay vì tính lãi kép ở mức 33,0 ETH, nó xảy ra ở mức 33,25 (số dư hiệu dụng = 33 ETH), sau đó là 34,25 (số dư hiệu dụng = 34 ETH), v.v.
+Có. Với thông tin xác thực **Loại 2**, phần thưởng trên 32 QAU sẽ tự động được đặt cọc lại — nhưng không phải ngay lập tức. Do một bộ đệm nhỏ (được gọi là [*độ trễ (hysteresis)*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis)), số dư của bạn cần đạt **thêm khoảng 1,25 QAU** trước khi phần dư được đặt cọc lại. Vì vậy, thay vì tính lãi kép ở mức 33,0 QAU, nó xảy ra ở mức 33,25 (số dư hiệu dụng = 33 QAU), sau đó là 34,25 (số dư hiệu dụng = 34 QAU), v.v.
 
 ### Tôi có thể vẫn nhận được các lần quét tự động sau khi chuyển đổi không? {#automatic-sweep}
 
@@ -189,14 +189,14 @@ Không. Việc chuyển đổi sang **Loại 2** là không thể đảo ngượ
 
 Không! Chuyển đổi một trình xác thực sang Loại 2 sau đó sử dụng nó làm đích. Tất cả các trình xác thực khác được hợp nhất vào đích Loại 2 đó có thể là Loại 1 hoặc Loại 2.
 
-### Trình xác thực của tôi đang ngoại tuyến hoặc dưới 32 ETH - tôi vẫn có thể chuyển đổi nó chứ? {#offline-or-below-32eth}
+### Trình xác thực của tôi đang ngoại tuyến hoặc dưới 32 QAU - tôi vẫn có thể chuyển đổi nó chứ? {#offline-or-below-32eth}
 
 Có. Miễn là nó đang hoạt động (chưa thoát) và bạn có thể ký bằng địa chỉ rút tiền của nó, bạn có thể chuyển đổi nó.
 
 ## Tài nguyên {#resources}
 
-- [Thông số kỹ thuật đồng thuận Electra](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Đây là phiên bản 'chân thực nhất' mà bạn nên dựa vào. Khi nghi ngờ, hãy đọc các thông số kỹ thuật.
+- [Thông số kỹ thuật đồng thuận Electra](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Đây là phiên bản 'chân thực nhất' mà bạn nên dựa vào. Khi nghi ngờ, hãy đọc các thông số kỹ thuật.
 - Không phải ai cũng thoải mái khi đọc mã, vì vậy [maxEB-GPT này](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) có thể giúp diễn giải các thông số kỹ thuật. *Tuyên bố miễn trừ trách nhiệm: Nên dựa vào các thông số kỹ thuật, không phải AI, như là sự thật, vì AI có thể diễn giải sai thông tin hoặc bịa đặt câu trả lời*
 - [pectrified.com](https://pectrified.com/): Xem trạng thái của các khoản hợp nhất, tiền gửi và thời gian chờ của hàng đợi
 - [Ethereal](https://github.com/wealdtech/ethereal): Công cụ CLI do cộng đồng tạo ra để quản lý các tác vụ phổ biến của trình xác thực
-- [batch-validator-depositor](https://github.com/attestantio/batch-validator-depositor): Hợp đồng do cộng đồng tạo ra cho phép gửi tiền cho nhiều trình xác thực Ethereum trong một giao dịch duy nhất
+- [batch-validator-depositor](https://github.com/attestantio/batch-validator-depositor): Hợp đồng do cộng đồng tạo ra cho phép gửi tiền cho nhiều trình xác thực Quantaureum trong một giao dịch duy nhất

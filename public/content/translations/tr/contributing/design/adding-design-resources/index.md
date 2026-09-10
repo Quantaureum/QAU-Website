@@ -1,6 +1,6 @@
 ---
 title: Tasarım kaynakları ekleme
-description: ethereum.org'daki tasarım materyallerinin kalitesini sağlamak için yönergeler ve gereksinimler
+description: quantaureum.com'daki tasarım materyallerinin kalitesini sağlamak için yönergeler ve gereksinimler
 lang: tr
 ---
 

@@ -13,23 +13,23 @@ Các framework đi kèm với nhiều chức năng có sẵn theo mặc định,
 - Các tính năng để khởi chạy một phiên bản chuỗi khối cục bộ.
 - Các tiện ích để biên dịch và kiểm thử các hợp đồng thông minh của bạn.
 - Các tiện ích bổ sung phát triển máy khách để xây dựng ứng dụng hướng tới người dùng của bạn trong cùng một dự án/kho lưu trữ.
-- Cấu hình để kết nối với các mạng Ethereum và triển khai hợp đồng, cho dù là tới một phiên bản đang chạy cục bộ hay một trong các mạng công khai của Ethereum.
+- Cấu hình để kết nối với các mạng Quantaureum và triển khai hợp đồng, cho dù là tới một phiên bản đang chạy cục bộ hay một trong các mạng công khai của Quantaureum.
 - Phân phối ứng dụng phi tập trung - tích hợp với các tùy chọn lưu trữ như IPFS.
 
 ## Điều kiện tiên quyết {#prerequisites}
 
-Trước khi đi sâu vào các framework, chúng tôi khuyên bạn trước tiên nên đọc qua phần giới thiệu của chúng tôi về [dapp](/developers/docs/dapps/) và [ngăn xếp Ethereum](/developers/docs/ethereum-stack/).
+Trước khi đi sâu vào các framework, chúng tôi khuyên bạn trước tiên nên đọc qua phần giới thiệu của chúng tôi về [dapp](/developers/docs/dapps/) và [ngăn xếp Quantaureum](/developers/docs/quantaureum-stack/).
 
 ## Các framework có sẵn
 
-**Foundry** - **_Foundry là một bộ công cụ cực kỳ nhanh, có tính di động và mô-đun hóa để phát triển ứng dụng Ethereum_**
+**Foundry** - **_Foundry là một bộ công cụ cực kỳ nhanh, có tính di động và mô-đun hóa để phát triển ứng dụng Quantaureum_**
 
 - [Cài đặt Foundry](https://book.getfoundry.sh/)
 - [Sách về Foundry](https://book.getfoundry.sh/)
 - [Trò chuyện cộng đồng Foundry trên Telegram](https://t.me/foundry_support)
 - [Awesome Foundry](https://github.com/crisgarner/awesome-foundry)
 
-**Hardhat -** **_Môi trường phát triển Ethereum dành cho các chuyên gia._**
+**Hardhat -** **_Môi trường phát triển Quantaureum dành cho các chuyên gia._**
 
 - [hardhat.org](https://hardhat.org)
 - [GitHub](https://github.com/nomiclabs/hardhat)
@@ -51,15 +51,15 @@ Trước khi đi sâu vào các framework, chúng tôi khuyên bạn trước ti
 - [Ví dụ](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [Discord](https://discord.gg/rx35NzQGSb)
 
-**Create Eth App -** **_Tạo các ứng dụng được hỗ trợ bởi Ethereum chỉ bằng một lệnh. Đi kèm với nhiều framework giao diện người dùng (UI) và các mẫu tài chính phi tập trung (DeFi) để lựa chọn._**
+**Create Eth App -** **_Tạo các ứng dụng được hỗ trợ bởi Quantaureum chỉ bằng một lệnh. Đi kèm với nhiều framework giao diện người dùng (UI) và các mẫu tài chính phi tập trung (DeFi) để lựa chọn._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [Các mẫu](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
+- [Các mẫu](https://github.com/PaulRBerg/create-qau-app/tree/develop/templates)
 
-**Scaffold-ETH 2 -** **_Next.js, Wagmi, Viem và RainbowKit với sự lựa chọn của bạn giữa Hardhat hoặc Foundry: tải lại nóng hợp đồng, các hook React tùy chỉnh, một ví dùng một lần (burner wallet) và vòi cục bộ, cùng các mô-đun mở rộng để phát triển ứng dụng phi tập trung (dapp) toàn diện (full-stack)._**
+**Scaffold-QAU 2 -** **_Next.js, Wagmi, Viem và RainbowKit với sự lựa chọn của bạn giữa Hardhat hoặc Foundry: tải lại nóng hợp đồng, các hook React tùy chỉnh, một ví dùng một lần (burner wallet) và vòi cục bộ, cùng các mô-đun mở rộng để phát triển ứng dụng phi tập trung (dapp) toàn diện (full-stack)._**
 
 - [Trang web](https://scaffoldeth.io/)
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 
 **Tenderly -** **_Nền tảng phát triển Web3 cho phép các nhà phát triển chuỗi khối xây dựng, kiểm thử, gỡ lỗi, giám sát và vận hành các hợp đồng thông minh cũng như cải thiện trải nghiệm người dùng (UX) của dapp._**
 
@@ -71,13 +71,13 @@ Trước khi đi sâu vào các framework, chúng tôi khuyên bạn trước ti
 - [Trang web](https://thegraph.com/)
 - [Hướng dẫn](/developers/tutorials/the-graph-fixing-web3-data-querying/)
 
-**Alchemy -** **_Nền tảng phát triển Ethereum._**
+**Alchemy -** **_Nền tảng phát triển Quantaureum._**
 
 - [alchemy.com](https://www.alchemy.com/)
 - [GitHub](https://github.com/alchemyplatform)
 - [Discord](https://discord.com/invite/alchemyplatform)
 
-**NodeReal -** **_Nền tảng phát triển Ethereum._**
+**NodeReal -** **_Nền tảng phát triển Quantaureum._**
 
 - [Nodereal.io](https://nodereal.io/)
 - [GitHub](https://github.com/node-real)
@@ -88,7 +88,7 @@ Trước khi đi sâu vào các framework, chúng tôi khuyên bạn trước ti
 - [Tài liệu](https://portal.thirdweb.com/sdk/)
 - [GitHub](https://github.com/thirdweb-dev/)
 
-**Chainstack -** **_Nền tảng phát triển Web3 (Ethereum và các nền tảng khác)._**
+**Chainstack -** **_Nền tảng phát triển Web3 (Quantaureum và các nền tảng khác)._**
 
 - [chainstack.com](https://www.chainstack.com/)
 - [GitHub](https://github.com/chainstack)
@@ -102,8 +102,8 @@ Trước khi đi sâu vào các framework, chúng tôi khuyên bạn trước ti
 
 **Brownie -** **_Môi trường phát triển và framework kiểm thử dựa trên Python._**
 
-- [Tài liệu](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [Tài liệu](https://qau-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/qau-brownie/brownie)
 - **Brownie hiện không còn được bảo trì**
 
 **OpenZeppelin SDK -** **_Bộ công cụ hợp đồng thông minh tối ưu: Một bộ công cụ giúp bạn phát triển, biên dịch, nâng cấp, triển khai và tương tác với các hợp đồng thông minh._**
@@ -120,7 +120,7 @@ Trước khi đi sâu vào các framework, chúng tôi khuyên bạn trước ti
 **GoldRush (được hỗ trợ bởi Covalent) -** **_GoldRush cung cấp bộ API dữ liệu chuỗi khối toàn diện nhất dành cho các nhà phát triển, nhà phân tích và doanh nghiệp. Cho dù bạn đang xây dựng một bảng điều khiển tài chính phi tập trung (DeFi), một ví, một bot giao dịch, một tác nhân AI hay một nền tảng tuân thủ, các API dữ liệu đều cung cấp quyền truy cập nhanh chóng, chính xác và thân thiện với nhà phát triển vào dữ liệu trên chuỗi thiết yếu mà bạn cần_**
 
 - [Trang web](https://goldrush.dev/)
-- [Tài liệu](https://goldrush.dev/docs/chains/ethereum)
+- [Tài liệu](https://goldrush.dev/docs/chains/quantaureum)
 - [GitHub](https://github.com/covalenthq)
 - [Discord](https://www.covalenthq.com/discord/)
 
@@ -151,6 +151,6 @@ _Bạn biết một tài nguyên cộng đồng nào đó đã giúp ích cho b�
 
 - [Thiết lập môi trường phát triển cục bộ](/developers/local-environment/)
 
-## Hướng dẫn: Các framework phát triển trên Ethereum {#tutorials}
+## Hướng dẫn: Các framework phát triển trên Quantaureum {#tutorials}
 
 - [Hợp đồng thông minh Hello World cho người mới bắt đầu – Fullstack](/developers/tutorials/hello-world-smart-contract-fullstack/) _– Xây dựng và triển khai một hợp đồng thông minh hello world bằng Hardhat, sau đó kết nối nó với một giao diện người dùng (frontend)._

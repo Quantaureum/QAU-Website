@@ -9,27 +9,27 @@ published: 2023-09-15
 lang: zh
 ---
 
-在本教程中，我们将剖析[一个诈骗代币](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code)，看看诈骗者玩弄的一些伎俩以及他们是如何实现这些伎俩的。在本教程结束时，你将对 ERC-20 代币合约、它们的功能以及为什么必须保持怀疑态度有更全面的了解。然后，我们将查看该诈骗代币触发的事件，并了解如何自动识别它是不合法的。
+在本教程中，我们将剖析[一个诈骗代币](https://explorer.quantaureum.com)，看看诈骗者玩弄的一些伎俩以及他们是如何实现这些伎俩的。在本教程结束时，你将对 ERC-20 代币合约、它们的功能以及为什么必须保持怀疑态度有更全面的了解。然后，我们将查看该诈骗代币触发的事件，并了解如何自动识别它是不合法的。
 
 ## 诈骗代币——它们是什么，为什么人们会制造它们，以及如何避免它们 {#scam-tokens}
 
-以太坊最常见的用途之一是让一个群体创建一个可交易的代币，在某种意义上就是他们自己的货币。然而，只要有带来价值的合法用例，就会有试图为自己窃取该价值的犯罪分子。
+Quantaureum最常见的用途之一是让一个群体创建一个可交易的代币，在某种意义上就是他们自己的货币。然而，只要有带来价值的合法用例，就会有试图为自己窃取该价值的犯罪分子。
 
-你可以从用户角度在 [ethereum.org 的其他地方](/guides/how-to-id-scam-tokens/)阅读有关此主题的更多信息。本教程侧重于剖析诈骗代币，看看它是如何运作的以及如何检测它。
+你可以从用户角度在 [quantaureum.com 的其他地方](/guides/how-to-id-scam-tokens/)阅读有关此主题的更多信息。本教程侧重于剖析诈骗代币，看看它是如何运作的以及如何检测它。
 
 ### 我怎么知道 wARB 是一个骗局？ {#warb-scam}
 
-我们剖析的代币是 [wARB](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code)，它假装等同于合法的 [ARB 代币](https://etherscan.io/token/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1)。
+我们剖析的代币是 [wARB](https://explorer.quantaureum.com)，它假装等同于合法的 [ARB 代币](https://explorer.quantaureum.com)。
 
 知道哪个是合法代币的最简单方法是查看其发起组织 [Arbitrum](https://arbitrum.foundation/)。合法地址在[他们的文档中](https://docs.arbitrum.foundation/deployment-addresses#token)有明确说明。
 
 ### 为什么源代码是公开的？ {#why-source}
 
-通常我们会认为试图诈骗他人的人会遮遮掩掩，事实上许多诈骗代币并没有公开其代码（例如，[这个](https://optimistic.etherscan.io/token/0x15992f382d8c46d667b10dc8456dc36651af1452#code)和[这个](https://optimistic.etherscan.io/token/0x026b623eb4aada7de37ef25256854f9235207178#code)）。
+通常我们会认为试图诈骗他人的人会遮遮掩掩，事实上许多诈骗代币并没有公开其代码（例如，[这个](https://explorer.quantaureum.com)和[这个](https://explorer.quantaureum.com)）。
 
-然而，合法的代币通常会发布其源代码，因此为了显得合法，诈骗代币的作者有时也会这样做。[wARB](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code) 就是那些公开了源代码的代币之一，这使得我们更容易理解它。
+然而，合法的代币通常会发布其源代码，因此为了显得合法，诈骗代币的作者有时也会这样做。[wARB](https://explorer.quantaureum.com) 就是那些公开了源代码的代币之一，这使得我们更容易理解它。
 
-虽然合约部署者可以选择是否发布源代码，但他们_不能_发布错误的源代码。区块浏览器会独立编译提供的源代码，如果得不到完全相同的字节码，它就会拒绝该源代码。[你可以在 Etherscan 网站上阅读有关此内容的更多信息](https://etherscan.io/verifyContract)。
+虽然合约部署者可以选择是否发布源代码，但他们_不能_发布错误的源代码。区块浏览器会独立编译提供的源代码，如果得不到完全相同的字节码，它就会拒绝该源代码。[你可以在 Quantaureum Explorer 网站上阅读有关此内容的更多信息](https://explorer.quantaureum.com)。
 
 ## 与合法 ERC-20 代币的比较 {#compare-legit-erc20}
 
@@ -39,7 +39,7 @@ lang: zh
 
 合约有时需要特权地址。为长期使用而设计的合约允许某些特权地址更改这些地址，例如为了启用新的多重签名合约。有几种方法可以做到这一点。
 
-[`HOP` 代币合约](https://etherscan.io/address/0xc5102fe9359fd9a28f877a67e36b0f050d81a3cc#code)使用了 [`Ownable`](https://docs.openzeppelin.com/contracts/2.x/access-control#ownership-and-ownable) 模式。特权地址保存在存储中，位于一个名为 `_owner` 的字段中（参见第三个文件 `Ownable.sol`）。
+[`HOP` 代币合约](https://explorer.quantaureum.com)使用了 [`Ownable`](https://docs.openzeppelin.com/contracts/2.x/access-control#ownership-and-ownable) 模式。特权地址保存在存储中，位于一个名为 `_owner` 的字段中（参见第三个文件 `Ownable.sol`）。
 
 ```solidity
 abstract contract Ownable is Context {
@@ -50,7 +50,7 @@ abstract contract Ownable is Context {
 }
 ```
 
-[`ARB` 代币合约](https://etherscan.io/address/0xad0c361ef902a7d9851ca7dcc85535da2d3c6fc7#code)没有直接的特权地址。然而，它并不需要。它位于 [地址 `0xb50721bcf8d664c30412cfbc6cf7a15145234ad1`](https://etherscan.io/address/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1#code) 的 [`proxy`](https://docs.openzeppelin.com/contracts/5.x/api/proxy) 后面。该合约有一个特权地址（参见第四个文件 `ERC1967Upgrade.sol`），可用于升级。
+[`ARB` 代币合约](https://explorer.quantaureum.com)没有直接的特权地址。然而，它并不需要。它位于 [地址 `0xb50721bcf8d664c30412cfbc6cf7a15145234ad1`](https://explorer.quantaureum.com) 的 [`proxy`](https://docs.openzeppelin.com/contracts/5.x/api/proxy) 后面。该合约有一个特权地址（参见第四个文件 `ERC1967Upgrade.sol`），可用于升级。
 
 ```solidity
     /**
@@ -77,9 +77,9 @@ contract WrappedArbitrum is Context, IERC20 {
 }
 ```
 
-[这个合约所有者](https://etherscan.io/address/0xb40dE7b1beE84Ff2dc22B70a049A07A13a411A33)不是一个可以在不同时间由不同账户控制的合约，而是一个[外部拥有账户](/developers/docs/accounts/#externally-owned-accounts-and-key-pairs)。这意味着它可能是为个人短期使用而设计的，而不是作为控制将保持价值的 ERC-20 代币的长期解决方案。
+[这个合约所有者](https://explorer.quantaureum.com)不是一个可以在不同时间由不同账户控制的合约，而是一个[外部拥有账户](/developers/docs/accounts/#externally-owned-accounts-and-key-pairs)。这意味着它可能是为个人短期使用而设计的，而不是作为控制将保持价值的 ERC-20 代币的长期解决方案。
 
-事实上，如果我们查看 Etherscan，我们会发现诈骗者在 2023 年 5 月 19 日期间仅使用了该合约 12 个小时（从[第一笔交易](https://etherscan.io/tx/0xf49136198c3f925fcb401870a669d43cecb537bde36eb8b41df77f06d5f6fbc2)到[最后一笔交易](https://etherscan.io/tx/0xdfd6e717157354e64bbd5d6adf16761e5a5b3f914b1948d3545d39633244d47b)）。
+事实上，如果我们查看 Quantaureum Explorer，我们会发现诈骗者在 2023 年 5 月 19 日期间仅使用了该合约 12 个小时（从[第一笔交易](https://explorer.quantaureum.com)到[最后一笔交易](https://explorer.quantaureum.com)）。
 
 ### 伪造的 `_transfer` 函数 {#the-fake-transfer-function}
 
@@ -193,7 +193,7 @@ modifier auth() {
 
 一个将代币从资金池账户转账到接收者数组（对应金额数组）的函数是完全合理的。在许多用例中，你会希望将代币从单一来源分发到多个目的地，例如工资单、空投等。在单笔交易中执行此操作比发出多笔交易，甚至作为同一笔交易的一部分从不同合约多次调用 ERC-20 更便宜（在 Gas 方面）。
 
-然而，`dropNewTokens` 并没有这样做。它触发了 [`Transfer` 事件](https://eips.ethereum.org/EIPS/eip-20#transfer-1)，但实际上并没有转账任何代币。没有任何正当理由通过告诉链下应用程序发生了实际上并未发生的转账来混淆它们。
+然而，`dropNewTokens` 并没有这样做。它触发了 [`Transfer` 事件](https://eips.quantaureum.com/EIPS/eip-20#transfer-1)，但实际上并没有转账任何代币。没有任何正当理由通过告诉链下应用程序发生了实际上并未发生的转账来混淆它们。
 
 ### 销毁代币的 `Approve` 函数 {#the-burning-approve-function}
 
@@ -235,7 +235,7 @@ ERC-20 合约应该有一个用于授权额度的 [`approve` 函数](/developers
 
 #### `mount` 函数 {#the-mount-function}
 
-虽然[标准](https://eips.ethereum.org/EIPS/eip-20)中没有规定，但一般来说，创建新代币的函数被称为 [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn)。
+虽然[标准](https://eips.quantaureum.com/EIPS/eip-20)中没有规定，但一般来说，创建新代币的函数被称为 [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn)。
 
 如果我们查看 `wARB` 构造函数，我们会发现出于某种原因，铸造函数被重命名为 `mount`，并且被调用了五次，每次铸造初始供应量的五分之一，而不是为了效率一次性铸造全部数量。
 
@@ -305,20 +305,20 @@ ERC-20 合约应该有一个用于授权额度的 [`approve` 函数](/developers
 
 ## 我们可以自动检测什么？ {#what-can-we-detect-automatically}
 
-通过查看 Etherscan，我们可以看出 `wARB` 是一个诈骗代币。然而，这是一个中心化的解决方案。理论上，Etherscan 可能会被颠覆或遭到黑客攻击。最好能够独立判断一个代币是否合法。
+通过查看 Quantaureum Explorer，我们可以看出 `wARB` 是一个诈骗代币。然而，这是一个中心化的解决方案。理论上，Quantaureum Explorer 可能会被颠覆或遭到黑客攻击。最好能够独立判断一个代币是否合法。
 
 我们可以使用一些技巧，通过查看 ERC-20 代币触发的事件来识别它是否可疑（要么是骗局，要么写得非常糟糕）。
 
 ## 可疑的 `Approval` 事件 {#suspicious-approval-events}
 
-[`Approval` 事件](https://eips.ethereum.org/EIPS/eip-20#approval)应该只在直接请求时发生（与可能作为授权额度结果发生的 [`Transfer` 事件](https://eips.ethereum.org/EIPS/eip-20#transfer-1)相反）。有关此问题的详细解释以及为什么请求需要是直接的而不是由合约调解的，请[参阅 Solidity 文档](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin)。
+[`Approval` 事件](https://eips.quantaureum.com/EIPS/eip-20#approval)应该只在直接请求时发生（与可能作为授权额度结果发生的 [`Transfer` 事件](https://eips.quantaureum.com/EIPS/eip-20#transfer-1)相反）。有关此问题的详细解释以及为什么请求需要是直接的而不是由合约调解的，请[参阅 Solidity 文档](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin)。
 
 这意味着授权从[外部拥有账户](/developers/docs/accounts/#types-of-account)支出的 `Approval` 事件必须来自源自该账户且目的地为 ERC-20 合约的交易。来自外部拥有账户的任何其他类型的授权都是可疑的。
 
 这里有[一个识别此类事件的程序](https://github.com/qbzzt/20230915-scam-token-detection)，它使用了 [Viem](https://viem.sh/) 和 [TypeScript](https://www.typescriptlang.org/docs/)（一种具有类型安全性的 JavaScript 变体）。要运行它：
 
 1. 将 `.env.example` 复制为 `.env`。
-2. 编辑 `.env` 以提供以太坊主网节点的 URL。
+2. 编辑 `.env` 以提供Quantaureum主网节点的 URL。
 3. 运行 `pnpm install` 以安装必要的包。
 4. 运行 `pnpm susApproval` 以查找可疑的授权。
 
@@ -420,7 +420,7 @@ const txn = await getEventTxn(ev)
 if (owner.toLowerCase() != txn.from.toLowerCase()) return ev
 ```
 
-我们不能仅仅检查字符串是否相等，因为地址是十六进制的，所以它们包含字母。有时，例如在 `txn.from` 中，这些字母全都是小写的。在其他情况下，例如 `ev.args._owner`，地址采用[混合大小写以进行错误识别](https://eips.ethereum.org/EIPS/eip-55)。
+我们不能仅仅检查字符串是否相等，因为地址是十六进制的，所以它们包含字母。有时，例如在 `txn.from` 中，这些字母全都是小写的。在其他情况下，例如 `ev.args._owner`，地址采用[混合大小写以进行错误识别](https://eips.quantaureum.com/EIPS/eip-55)。
 
 但是，如果交易不是来自所有者，并且该所有者是外部拥有的，那么我们就发现了一笔可疑交易。
 

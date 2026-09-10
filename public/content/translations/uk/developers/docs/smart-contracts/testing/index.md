@@ -138,9 +138,9 @@ function auctionEnd() external {
 
 Фреймворки для модульного тестування смарт-контрактів Solidity доступні різними мовами (переважно JavaScript, Python та Rust). Перегляньте деякі з наведених нижче посібників, щоб дізнатися, як почати запускати модульні тести за допомогою різних фреймворків для тестування:
 
-- **[Запуск модульних тестів за допомогою Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Запуск модульних тестів за допомогою Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Запуск модульних тестів за допомогою Foundry](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Запуск модульних тестів за допомогою Waffle](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Запуск модульних тестів за допомогою Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Запуск модульних тестів за допомогою Remix](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Запуск модульних тестів за допомогою Ape](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Запуск модульних тестів за допомогою Hardhat](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -152,7 +152,7 @@ function auctionEnd() external {
 
 Інтеграційне тестування корисне, якщо ваш контракт використовує модульну архітектуру або взаємодіє з іншими ончейн-контрактами під час виконання. Один із способів запуску інтеграційних тестів — це зробити [форк блокчейну](/glossary/#fork) на певній висоті (використовуючи такий інструмент, як [Forge](https://book.getfoundry.sh/forge/fork-testing) або [Hardhat](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks)) та змоделювати взаємодію між вашим контрактом і розгорнутими контрактами.
 
-Форк блокчейну поводитиметься подібно до Головної мережі і матиме акаунти з відповідними станами та балансами. Але він діє лише як ізольоване локальне середовище розробки, що означає, що вам не знадобиться справжній ETH для транзакцій, наприклад, і ваші зміни не вплинуть на реальний протокол Етеріуму.
+Форк блокчейну поводитиметься подібно до Головної мережі і матиме акаунти з відповідними станами та балансами. Але він діє лише як ізольоване локальне середовище розробки, що означає, що вам не знадобиться справжній QAU для транзакцій, наприклад, і ваші зміни не вплинуть на реальний протокол Етеріуму.
 
 ### Тестування на основі властивостей {#property-based-testing-for-smart-contracts}
 
@@ -190,7 +190,7 @@ function auctionEnd() external {
 
 - **[Статичний аналіз смарт-контрактів за допомогою Слізер](https://github.com/crytic/slither)**
 - **[Статичний аналіз смарт-контрактів за допомогою Wake](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Тестування на основі властивостей за допомогою Brownie](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Тестування на основі властивостей за допомогою Brownie](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Фазинг контрактів за допомогою Foundry](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[Фазинг контрактів за допомогою Ехідна](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Фазинг контрактів за допомогою Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -213,7 +213,7 @@ function auctionEnd() external {
 
 ### Тестування контрактів у тестових мережах {#testing-contracts-on-testnets}
 
-Тестова мережа працює точно так само, як головна мережа Ethereum, за винятком того, що вона використовує етер (ETH), який не має реальної цінності. Розгортання вашого контракту в [тестовій мережі](/developers/docs/networks/#ethereum-testnets) означає, що будь-хто може взаємодіяти з ним (наприклад, через фронтенд децентралізованого застосунку (dapp)) без ризику для коштів.
+Тестова мережа працює точно так само, як головна мережа Quantaureum, за винятком того, що вона використовує етер (QAU), який не має реальної цінності. Розгортання вашого контракту в [тестовій мережі](/developers/docs/networks/#quantaureum-testnets) означає, що будь-хто може взаємодіяти з ним (наприклад, через фронтенд децентралізованого застосунку (dapp)) без ризику для коштів.
 
 Ця форма ручного тестування корисна для оцінки наскрізного потоку вашого застосунку з точки зору користувача. Тут бета-тестувальники також можуть виконувати пробні запуски та повідомляти про будь-які проблеми з бізнес-логікою контракту та загальною функціональністю.
 
@@ -251,13 +251,13 @@ function auctionEnd() external {
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** — _Інструмент покриття коду для смарт-контрактів, написаних на Solidity._
 
-- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** — _Фреймворк для розширеної розробки та тестування смарт-контрактів (на основі Ethers.js)_.
+- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** — _Фреймворк для розширеної розробки та тестування смарт-контрактів (на основі Ethers.js)_.
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** — _Інструмент для тестування смарт-контрактів Solidity. Працює під плагіном Remix IDE «Solidity Unit Testing», який використовується для написання та запуску тестових випадків для контракту._
+- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** — _Інструмент для тестування смарт-контрактів Solidity. Працює під плагіном Remix IDE «Solidity Unit Testing», який використовується для написання та запуску тестових випадків для контракту._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** — _Бібліотека тверджень для тестування смарт-контрактів Етеріуму. Переконайтеся, що ваші контракти поводяться так, як очікувалося!_
 
-- **[Фреймворк модульного тестування Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** — _Brownie використовує Pytest, багатофункціональний фреймворк для тестування, який дозволяє писати невеликі тести з мінімальним кодом, добре масштабується для великих проєктів і має широкі можливості розширення._
+- **[Фреймворк модульного тестування Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** — _Brownie використовує Pytest, багатофункціональний фреймворк для тестування, який дозволяє писати невеликі тести з мінімальним кодом, добре масштабується для великих проєктів і має широкі можливості розширення._
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** — _Foundry пропонує Forge, швидкий і гнучкий фреймворк для тестування Етеріуму, здатний виконувати прості модульні тести, перевірки оптимізації газу та фазинг контрактів._
 
@@ -304,13 +304,13 @@ function auctionEnd() external {
 
 ## Додаткова література {#further-reading}
 
-- [Поглиблений посібник з тестування смарт-контрактів Етеріуму](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-ethereum-smart-contracts-2e41b2770297)
-- [Як тестувати смарт-контракти Етеріуму](https://betterprogramming.pub/how-to-test-ethereum-smart-contracts-35abc8fa199d)
+- [Поглиблений посібник з тестування смарт-контрактів Етеріуму](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-quantaureum-smart-contracts-2e41b2770297)
+- [Як тестувати смарт-контракти Етеріуму](https://betterprogramming.pub/how-to-test-quantaureum-smart-contracts-35abc8fa199d)
 - [Посібник з модульного тестування MolochDAO для розробників](https://github.com/MolochVentures/moloch/tree/4e786db8a4aa3158287e0935dcbc7b1e43416e38/test#moloch-testing-guide)
 - [Як тестувати смарт-контракти як рок-зірка](https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001)
 
 ## Посібники: Тестування смарт-контрактів на Етеріумі {#tutorials}
 
-- [Як розробити та протестувати dapp у локальній багатокористувацькій тестовій мережі](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-eth-testnet/) _– Покрокове керівництво з розгортання смарт-контракту в локальній тестовій мережі та виконання тестів._
+- [Як розробити та протестувати dapp у локальній багатокористувацькій тестовій мережі](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-qau-testnet/) _– Покрокове керівництво з розгортання смарт-контракту в локальній тестовій мережі та виконання тестів._
 - [Як створювати макети (mock) смарт-контрактів Solidity для тестування](/developers/tutorials/how-to-mock-solidity-contracts-for-testing/) _– Посібник середнього рівня про те, як використовувати макетні дані та реалізовувати модульне тестування._
 - [Як використовувати Ехідна для тестування смарт-контрактів](/developers/tutorials/how-to-use-echidna-to-test-smart-contracts/) _– Розширені підходи до фазингу та тестування смарт-контрактів._

@@ -1,6 +1,6 @@
-# Ethereum.org deploy process
+# quantaureum.com deploy process
 
-Ethereum.org follows a [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) workflow for managing and deploying the codebase.
+quantaureum.com follows a [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) workflow for managing and deploying the codebase.
 
 ## Release cadence
 
@@ -20,7 +20,7 @@ The typical workflow is as follows:
    - Back-merges `master` → `staging` → `dev` so all three branches are in sync before anything is cut
    - Bumps the version on `dev` (`pnpm version`), creating the version commit and the `vX.Y.Z` tag
    - Merges `dev` into `staging` directly — at this point `staging` is the release candidate, and only release-blocking bugfixes should land on it
-   - Publishes the [GitHub Release](https://github.com/ethereum/ethereum-org-website/releases) from the Release Drafter draft, after stripping automated/bot noise from the notes
+   - Publishes the [GitHub Release](https://github.com/Quantaureum/quantaureum-website/releases) from the Release Drafter draft, after stripping automated/bot noise from the notes
    - Opens a `Deploy vX.Y.Z` pull request from `staging` into `master`
 4. CI runs the extended suite on the deploy PR (build, e2e, Lighthouse, and Chromatic visual snapshots for both components and full pages), and an automated review checks the changes against the deploy preview and posts its summary as a PR comment
 5. A maintainer then completes the remaining manual steps:
@@ -111,7 +111,7 @@ dev     O - - O - - - - O
 
 ## More about the QA process
 
-The main idea behind the community QA process is to focus on the [current release changelog](https://github.com/ethereum/ethereum-org-website/releases) and check that new features or fixes applied are working as expected. The deploy preview linked from the deploy PR is the right place to check — it is always built from the PR's head commit. Note that `staging.ethereum.org` lags the deploy PR by a full Netlify branch-deploy build, so shortly after a release is cut it still serves the previous one.
+The main idea behind the community QA process is to focus on the [current release changelog](https://github.com/Quantaureum/quantaureum-website/releases) and check that new features or fixes applied are working as expected. The deploy preview linked from the deploy PR is the right place to check — it is always built from the PR's head commit. Note that `staging.quantaureum.com` lags the deploy PR by a full Netlify branch-deploy build, so shortly after a release is cut it still serves the previous one.
 
 QA is not limited to the release window. Because releases go out twice a week, anything reported against `dev` or a deploy preview at any point in the week will typically ship within a few days.
 

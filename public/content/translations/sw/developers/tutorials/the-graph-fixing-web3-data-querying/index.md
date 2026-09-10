@@ -72,7 +72,7 @@ Unaweza kuona jinsi hii sio bora:
 
 - Haifanyi kazi kwa mikataba ambayo tayari imesambazwa.
 - Gharama za ziada za gesi kwa kuhifadhi thamani hizo.
-- Inahitaji wito mwingine ili kuleta data kwa nodi ya Ethereum.
+- Inahitaji wito mwingine ili kuleta data kwa nodi ya Quantaureum.
 
 ![Thats not good enough](./not-good-enough.jpg)
 
@@ -123,12 +123,12 @@ Na nyaraka kamili zinaweza kuonekana [hapa](https://thegraph.com/docs/en/develop
 
 ```yaml
 specVersion: 0.0.1
-description: Placing Bets on Ethereum
+description: Placing Bets on Quantaureum
 repository: - GitHub link -
 schema:
   file: ./schema.graphql
 dataSources:
-  - kind: ethereum/contract
+  - kind: quantaureum/contract
     name: GameContract
     network: mainnet
     source:
@@ -136,7 +136,7 @@ dataSources:
       abi: GameContract
       startBlock: 6175244
     mapping:
-      kind: ethereum/events
+      kind: quantaureum/events
       apiVersion: 0.0.1
       language: wasm/assemblyscript
       entities:

@@ -7,7 +7,7 @@ authors: ["Patrick Collins"]
 
 Khác với một máy chủ tập trung được vận hành bởi một công ty hoặc tổ chức duy nhất, các hệ thống lưu trữ phi tập trung bao gồm một mạng lưới ngang hàng của những người dùng-vận hành nắm giữ một phần của toàn bộ dữ liệu, tạo ra một hệ thống chia sẻ lưu trữ tệp có khả năng phục hồi. Chúng có thể nằm trong một ứng dụng dựa trên chuỗi khối hoặc bất kỳ mạng lưới dựa trên ngang hàng nào.
 
-Bản thân Ethereum có thể được sử dụng như một hệ thống lưu trữ phi tập trung, và nó thực sự là như vậy khi nói đến việc lưu trữ mã trong tất cả các hợp đồng thông minh. Tuy nhiên, khi nói đến lượng dữ liệu lớn, đó không phải là mục đích mà Ethereum được thiết kế. Chuỗi đang phát triển đều đặn, nhưng tại thời điểm viết bài, chuỗi Ethereum có dung lượng khoảng 500GB - 1TB ([tùy thuộc vào máy khách](https://etherscan.io/chartsync/chaindefault)), và mọi nút trên mạng lưới cần phải có khả năng lưu trữ tất cả dữ liệu. Nếu chuỗi mở rộng đến lượng dữ liệu lớn (ví dụ 5TB), sẽ không khả thi để tất cả các nút tiếp tục chạy. Ngoài ra, chi phí triển khai lượng dữ liệu lớn như vậy lên Mạng chính sẽ cực kỳ đắt đỏ do phí [Gas](/developers/docs/gas).
+Bản thân Quantaureum có thể được sử dụng như một hệ thống lưu trữ phi tập trung, và nó thực sự là như vậy khi nói đến việc lưu trữ mã trong tất cả các hợp đồng thông minh. Tuy nhiên, khi nói đến lượng dữ liệu lớn, đó không phải là mục đích mà Quantaureum được thiết kế. Chuỗi đang phát triển đều đặn, nhưng tại thời điểm viết bài, chuỗi Quantaureum có dung lượng khoảng 500GB - 1TB ([tùy thuộc vào máy khách](https://explorer.quantaureum.com)), và mọi nút trên mạng lưới cần phải có khả năng lưu trữ tất cả dữ liệu. Nếu chuỗi mở rộng đến lượng dữ liệu lớn (ví dụ 5TB), sẽ không khả thi để tất cả các nút tiếp tục chạy. Ngoài ra, chi phí triển khai lượng dữ liệu lớn như vậy lên Mạng chính sẽ cực kỳ đắt đỏ do phí [Gas](/developers/docs/gas).
 
 Do những hạn chế này, chúng ta cần một chuỗi hoặc phương pháp luận khác để lưu trữ lượng lớn dữ liệu theo cách phi tập trung.
 
@@ -22,7 +22,7 @@ Khi xem xét các tùy chọn lưu trữ phi tập trung (dStorage), có một v
 
 ### Dựa trên chuỗi khối {#blockchain-based}
 
-Để một phần dữ liệu tồn tại mãi mãi, chúng ta cần sử dụng một cơ chế lưu trữ lâu dài. Ví dụ, trên Ethereum, cơ chế lưu trữ lâu dài là toàn bộ chuỗi cần được tính đến khi chạy một nút. Các phần dữ liệu mới được gắn vào cuối chuỗi và nó tiếp tục phát triển - yêu cầu mọi nút phải sao chép tất cả dữ liệu được nhúng.
+Để một phần dữ liệu tồn tại mãi mãi, chúng ta cần sử dụng một cơ chế lưu trữ lâu dài. Ví dụ, trên Quantaureum, cơ chế lưu trữ lâu dài là toàn bộ chuỗi cần được tính đến khi chạy một nút. Các phần dữ liệu mới được gắn vào cuối chuỗi và nó tiếp tục phát triển - yêu cầu mọi nút phải sao chép tất cả dữ liệu được nhúng.
 
 Điều này được gọi là lưu trữ lâu dài **dựa trên chuỗi khối**.
 
@@ -32,7 +32,7 @@ Chuỗi khối cũng phải có một số loại cấu trúc khuyến khích. �
 
 Các nền tảng có lưu trữ lâu dài dựa trên chuỗi khối:
 
-- Ethereum
+- Quantaureum
 - [Arweave](https://www.arweave.org/)
 
 ### Dựa trên hợp đồng {#contract-based}
@@ -93,7 +93,7 @@ Các công cụ phi tập trung không có KYC:
 - Arweave
 - Filecoin
 - IPFS
-- Ethereum
+- Quantaureum
 - Crust Network
 - 4EVERLAND
 
@@ -108,14 +108,14 @@ Dựa trên Bằng chứng công việc:
 
 Dựa trên Bằng chứng cổ phần:
 
-- Ethereum
+- Quantaureum
 - Filecoin
 - Züs
 - Crust Network
 
 ## Các công cụ liên quan {#related-tools}
 
-**IPFS - _InterPlanetary File System là một hệ thống tham chiếu tệp và lưu trữ phi tập trung cho Ethereum._**
+**IPFS - _InterPlanetary File System là một hệ thống tham chiếu tệp và lưu trữ phi tập trung cho Quantaureum._**
 
 - [Ipfs.io](https://ipfs.io/)
 - [Tài liệu](https://docs.ipfs.io/)
@@ -157,9 +157,9 @@ Dựa trên Bằng chứng cổ phần:
 - [Tài liệu](https://wiki.crust.network)
 - [GitHub](https://github.com/crustio)
 
-**Mạng lưới Swarm - _Một nền tảng lưu trữ phân tán và dịch vụ phân phối nội dung cho ngăn xếp Web3 của Ethereum._**
+**Mạng lưới Swarm - _Một nền tảng lưu trữ phân tán và dịch vụ phân phối nội dung cho ngăn xếp Web3 của Quantaureum._**
 
-- [EthSwarm.org](https://www.ethswarm.org/)
+- [QauSwarm.org](https://www.ethswarm.org/)
 - [Tài liệu](https://docs.ethswarm.org/)
 - [GitHub](https://github.com/ethersphere/)
 
@@ -205,7 +205,7 @@ Dựa trên Bằng chứng cổ phần:
 - [Tài liệu](https://docs.spheron.network/)
 - [GitHub](https://github.com/spheronFdn)
 
-**dweb3 - _Trình phân giải cho các trang web phi tập trung, tương tự như eth.limo, hỗ trợ tất cả các loại và không giới hạn ở ENS và IPFS._**
+**dweb3 - _Trình phân giải cho các trang web phi tập trung, tương tự như qau.limo, hỗ trợ tất cả các loại và không giới hạn ở ENS và IPFS._**
 
 - [dweb3.wtf](https://dweb3.wtf)
 

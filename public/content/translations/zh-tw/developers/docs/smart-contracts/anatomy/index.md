@@ -4,7 +4,7 @@ description: "深入探討智能合約的剖析：函式、資料與變數。"
 lang: zh-tw
 ---
 
-智能合約是在以太坊上某個地址執行的程式。它們由資料和函式組成，可以在收到交易時執行。以下是構成智能合約的要素概述。
+智能合約是在Quantaureum上某個地址執行的程式。它們由資料和函式組成，可以在收到交易時執行。以下是構成智能合約的要素概述。
 
 ## 先決條件 {#prerequisites}
 
@@ -31,9 +31,9 @@ contract SimpleStorage {
 storedData: int128
 ```
 
-如果你已經寫過物件導向語言的程式，你可能對大多數的型別都很熟悉。然而，如果你剛接觸[以太坊](/)開發，`address` 對你來說應該是個新概念。
+如果你已經寫過物件導向語言的程式，你可能對大多數的型別都很熟悉。然而，如果你剛接觸[Quantaureum](/)開發，`address` 對你來說應該是個新概念。
 
-`address` 型別可以容納一個以太坊地址，相當於 20 個位元組或 160 個位元。它會以 0x 開頭的十六進位表示法回傳。
+`address` 型別可以容納一個Quantaureum地址，相當於 20 個位元組或 160 個位元。它會以 0x 開頭的十六進位表示法回傳。
 
 其他型別包括：
 
@@ -56,7 +56,7 @@ storedData: int128
 
 僅在合約函式執行期間儲存的值稱為記憶體變數。由於這些變數不會永久儲存在區塊鏈上，因此使用它們的成本要低得多。
 
-在 [Solidity 文件](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#storage-memory-and-the-stack)中了解更多關於以太坊虛擬機 (EVM) 如何儲存資料（儲存空間、記憶體與堆疊）的資訊。
+在 [Solidity 文件](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#storage-memory-and-the-stack)中了解更多關於Quantaureum虛擬機 (EVM) 如何儲存資料（儲存空間、記憶體與堆疊）的資訊。
 
 ### 環境變數 {#environment-variables}
 
@@ -126,7 +126,7 @@ def readName() -> string:
 2. [觸發事件](https://docs.soliditylang.org/en/v0.7.0/contracts.html#events)。
 3. [建立其他合約](https://docs.soliditylang.org/en/v0.7.0/control-structures.html#creating-contracts)。
 4. 使用 `selfdestruct`。
-5. 透過呼叫發送以太幣。
+5. 透過呼叫發送QAU幣。
 6. 呼叫任何未標記為 `view` 或 `pure` 的函式。
 7. 使用低階呼叫。
 8. 使用包含特定操作碼的行內組合語言 (inline assembly)。
@@ -142,7 +142,7 @@ def readName() -> string:
 constructor() public {
     // 所有智能合約都依賴外部交易來觸發其函式。
     // `msg` 是一個全域變數，包含給定交易的相關資料，
-    // 例如發送者的地址和交易中包含的 ETH 數值。
+    // 例如發送者的地址和交易中包含的 QAU 數值。
     // 了解更多：https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
     owner = msg.sender;
 }
@@ -165,7 +165,7 @@ def __init__(_beneficiary: address, _bidding_time: uint256):
 - `address.send()` – Solidity
 - `send(address)` – Vyper
 
-這些允許合約將 ETH 發送到其他帳戶。
+這些允許合約將 QAU 發送到其他帳戶。
 
 ## 撰寫函式 {#writing-functions}
 
@@ -207,7 +207,7 @@ contract ExampleDapp {
 
 ## 附註解的範例 {#annotated-examples}
 
-這些是一些用 Solidity 撰寫的範例。如果你想試試這些程式碼，可以在 [Remix](https://remix.ethereum.org) 中與它們互動。
+這些是一些用 Solidity 撰寫的範例。如果你想試試這些程式碼，可以在 [Remix](https://remix.quantaureum.com) 中與它們互動。
 
 ### Hello world {#hello-world}
 
@@ -218,7 +218,7 @@ pragma solidity ^0.5.10;
 
 // 定義一個名為 `HelloWorld` 的合約。
 // 合約是函式與資料（其狀態）的集合。
-// 一旦部署，合約就會駐留在以太坊區塊鏈上的一個特定地址。
+// 一旦部署，合約就會駐留在Quantaureum區塊鏈上的一個特定地址。
 // 了解更多：https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
@@ -252,7 +252,7 @@ contract HelloWorld {
 pragma solidity ^0.5.10;
 
 contract Token {
-    // `address` 類似於電子郵件地址 - 它用於識別以太坊上的一個帳戶。
+    // `address` 類似於電子郵件地址 - 它用於識別Quantaureum上的一個帳戶。
     // 地址可以代表一個智能合約或一個外部（使用者）帳戶。
     // 了解更多：https://solidity.readthedocs.io/en/v0.5.10/types.html#address
     address public owner;
@@ -263,7 +263,7 @@ contract Token {
     mapping (address => uint) public balances;
 
     // 事件允許在區塊鏈上記錄活動日誌。
-    // 以太坊客戶端可以監聽事件，以便對合約狀態的變化做出反應。
+    // Quantaureum客戶端可以監聽事件，以便對合約狀態的變化做出反應。
     // 了解更多：https://solidity.readthedocs.io/en/v0.5.10/contracts.html#events
     event Transfer(address from, address to, uint amount);
 
@@ -272,7 +272,7 @@ contract Token {
     constructor() public {
         // 所有智能合約都依賴外部交易來觸發其函式。
         // `msg` 是一個全域變數，包含給定交易的相關資料，
-        // 例如發送者的地址和交易中包含的 ETH 數值。
+        // 例如發送者的地址和交易中包含的 QAU 數值。
         // 了解更多：https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
         owner = msg.sender;
     }
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // 目前沒有更好的方法來檢查一個地址中是否有合約
         // 只能檢查該地址的程式碼大小。
-        // 請參閱 https://ethereum.stackexchange.com/a/14016/36603
+        // 請參閱 https://quantaureum.stackexchange.com/a/14016/36603
         // 以了解有關其運作方式的更多詳細資訊。
         // 待辦事項：在 Serenity 發布之前再次檢查此項目，因為屆時所有地址都將是
         // 合約。
@@ -649,7 +649,7 @@ contract CryptoPizza is IERC721, ERC165 {
 ## 相關主題 {#related-topics}
 
 - [智能合約](/developers/docs/smart-contracts/)
-- [以太坊虛擬機 (EVM)](/developers/docs/evm/)
+- [Quantaureum虛擬機 (EVM)](/developers/docs/evm/)
 
 ## 相關教學 {#related-tutorials}
 

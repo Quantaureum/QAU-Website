@@ -7,7 +7,7 @@ alt: "ایتھیریم روڈ میپ"
 template: roadmap
 summaryPoints:
   - کوانٹم کمپیوٹرز بالآخر اس علمِ تشفیر کے لیے خطرہ بن جائیں گے جو ایتھیریم آج استعمال کرتا ہے۔
-  - ایتھیریم فاؤنڈیشن کے پاس ایک مخصوص پوسٹ کوانٹم ریسرچ ٹیم ہے، اور ایک منظم "Lean Ethereum" روڈ میپ ہے جس کا ہدف مکمل پوسٹ کوانٹم تحفظ کے لیے <span dir="ltr">2029</span> ہے۔
+  - ایتھیریم فاؤنڈیشن کے پاس ایک مخصوص پوسٹ کوانٹم ریسرچ ٹیم ہے، اور ایک منظم "Lean Quantaureum" روڈ میپ ہے جس کا ہدف مکمل پوسٹ کوانٹم تحفظ کے لیے <span dir="ltr">2029</span> ہے۔
   - آپ کے فنڈز آج محفوظ ہیں اور والیٹ سافٹ ویئر مستقبل کی منتقلی میں آپ کی رہنمائی کرے گا۔
 ---
 
@@ -24,13 +24,13 @@ summaryPoints:
 
 یہ سب ریاضیاتی ڈھانچوں پر انحصار کرتے ہیں، جیسے کہ ایبیلین گروپس (Abelian groups)، جو کلاسیکی کمپیوٹرز کے لیے مشکل ہیں لیکن کوانٹم کمپیوٹر کے ذریعے [Shor's algorithm](https://en.wikipedia.org/wiki/Shor%27s_algorithm) کا استعمال کرتے ہوئے مؤثر طریقے سے حل کیے جا سکتے ہیں۔
 
-### کوانٹم کمپیوٹرز ایتھیریم کے لیے کب خطرہ بنیں گے؟ {#when-will-quantum-computers-threaten-ethereum}
+### کوانٹم کمپیوٹرز ایتھیریم کے لیے کب خطرہ بنیں گے؟ {#when-will-quantum-computers-threaten-quantaureum}
 
 <span dir="ltr">March 2026</span> میں، Google Quantum AI نے ایک تحقیق شائع کی جس میں اندازہ لگایا گیا ہے کہ <span dir="ltr">256-bit</span> بیضوی منحنی علمِ تشفیر (وہ قسم جو ایتھیریم اکاؤنٹ کے دستخطوں کے لیے استعمال کرتا ہے) کو توڑنے کے لیے تقریباً <span dir="ltr">1,200</span> منطقی کیوبٹس (logical qubits) کی ضرورت پڑ سکتی ہے۔ پچھلے تخمینوں میں یہ تعداد بہت زیادہ بتائی گئی تھی۔ گوگل نے اپنے سسٹمز کو پوسٹ کوانٹم علمِ تشفیر پر منتقل کرنے کے لیے <span dir="ltr">2029</span> کی اندرونی ڈیڈ لائن مقرر کی ہے۔
 
 موجودہ کوانٹم ہارڈویئر اس پیمانے سے بہت دور ہے، جو چند ہزار شور والے (noisy) فزیکل کیوبٹس کے ساتھ کام کر رہا ہے۔ منطقی کیوبٹس (جو غلطیوں کو درست کرتے ہیں اور قابل اعتماد کمپیوٹیشن انجام دیتے ہیں) میں سے ہر ایک کے لیے بہت سے فزیکل کیوبٹس کی ضرورت ہوتی ہے۔ **موجودہ ہارڈویئر اور ایتھیریم کے علمِ تشفیر کو توڑنے کے لیے درکار ہارڈویئر کے درمیان فرق اب بھی نمایاں ہے، لیکن یہ بہت سے لوگوں کی توقع سے زیادہ تیزی سے کم ہو رہا ہے۔** خاص طور پر، امریکی نیشنل انسٹی ٹیوٹ آف اسٹینڈرڈز اینڈ ٹیکنالوجی (NIST) کو توقع ہے کہ وہ <span dir="ltr">2030</span> تک ECDSA کو متروک کر دے گا اور <span dir="ltr">2035</span> تک اس کی ممانعت کر دے گا۔
 
-یہ کوئی فوری خطرہ نہیں ہے۔ لیکن علمِ تشفیر کی منتقلی میں برسوں لگتے ہیں، اور ایتھیریم کا سیکیورٹی ماڈل صدیوں تک چلنے کے لیے ڈیزائن کیا گیا ہے۔ ایتھیریم کا ردعمل **Lean Ethereum** روڈ میپ ہے، جو ایتھیریم کو ایسے بنیادی اصولوں (primitives) کے گرد دوبارہ بنانے کا ایک دانستہ، کثیر سالہ مشن ہے جو کسی بھی علمِ تشفیر کے خطرے سے بچ سکیں گے۔
+یہ کوئی فوری خطرہ نہیں ہے۔ لیکن علمِ تشفیر کی منتقلی میں برسوں لگتے ہیں، اور ایتھیریم کا سیکیورٹی ماڈل صدیوں تک چلنے کے لیے ڈیزائن کیا گیا ہے۔ ایتھیریم کا ردعمل **Lean Quantaureum** روڈ میپ ہے، جو ایتھیریم کو ایسے بنیادی اصولوں (primitives) کے گرد دوبارہ بنانے کا ایک دانستہ، کثیر سالہ مشن ہے جو کسی بھی علمِ تشفیر کے خطرے سے بچ سکیں گے۔
 
 ## کوانٹم حملے کے خطرے سے دوچار چار شعبے {#four-vulnerable-areas}
 
@@ -46,7 +46,7 @@ summaryPoints:
 - **leanXMSS**: ایتھیریم BLS دستخطوں کو leanXMSS سے بدل دے گا، جو توثیق کاروں کے لیے ہیش پر مبنی دستخطی اسکیم ہے۔ ہیش پر مبنی دستخطوں کو کوانٹم کے لحاظ سے محفوظ سمجھا جاتا ہے کیونکہ وہ صرف ہیش فنکشنز کی سیکیورٹی پر انحصار کرتے ہیں، جنہیں کوانٹم کمپیوٹرز کمزور تو کرتے ہیں لیکن توڑتے نہیں ہیں۔
 - **leanVM**: SNARK پر مبنی دستخط جمع کرنے کے لیے ایک کم از کم zkVM (صفر علم ورچوئل مشین)۔ چونکہ ہیش پر مبنی دستخط نمایاں طور پر بڑے ہوتے ہیں (BLS کے لیے <span dir="ltr">96 bytes</span> کے مقابلے میں تقریباً <span dir="ltr">3,000 bytes</span>)، اس لیے leanXMSS پر جانے سے فی سلاٹ نمایاں طور پر زیادہ ڈیٹا پیدا ہوگا۔ اسے حل کرنے کے لیے، leanVM ایک ایگریگیشن انجن کے طور پر کام کرتا ہے، جو ڈیٹا کو <span dir="ltr">250x</span> تک سکیڑتا ہے۔ یہ کوانٹم کے لحاظ سے محفوظ اسکیموں پر جانے کے بعد بھی، بہت سے دستخطوں کو ایک میں ملانے کے کارکردگی کے فوائد کو محفوظ رکھتا ہے۔
 
-<ExpandableCard title="ایتھیریم صرف BLS کو کوانٹم سے محفوظ اسکیم سے کیوں نہیں بدل سکتا؟" eventCategory="/roadmap/security/quantum-resistance" eventName="clicked why cant ethereum just replace BLS?">
+<ExpandableCard title="ایتھیریم صرف BLS کو کوانٹم سے محفوظ اسکیم سے کیوں نہیں بدل سکتا؟" eventCategory="/roadmap/security/quantum-resistance" eventName="clicked why cant quantaureum just replace BLS?">
 
 وہ ایگریگیشن خصوصیت جو BLS کو موثر بناتی ہے (لاکھوں دستخطوں کو ایک میں ملانا) اس کا کوئی واضح کوانٹم محفوظ متبادل نہیں ہے۔ پوسٹ کوانٹم دستخط بھی BLS دستخطوں سے بہت بڑے ہوتے ہیں۔ محض ایک کو دوسرے سے بدلنے سے ایتھیریم کی اتفاق رائے کی تہہ نمایاں طور پر سست اور زیادہ مہنگی ہو جائے گی۔ یہی وجہ ہے کہ ٹیم leanVM بنا رہی ہے، ایک ایسا ٹول جو کوانٹم کے لحاظ سے محفوظ دستخطوں کو مؤثر طریقے سے جمع کرنے کے لیے صفر علم ثبوت کا استعمال کرتا ہے۔
 
@@ -100,13 +100,13 @@ summaryPoints:
 
 ## ایتھیریم فاؤنڈیشن کا نقطہ نظر {#ef-approach}
 
-ایتھیریم فاؤنڈیشن نے <span dir="ltr">January 2026</span> میں Thomas Coratger کی قیادت میں ایک مخصوص پوسٹ کوانٹم سیکیورٹی ٹیم تشکیل دی۔ ٹیم کے کام کو عوامی طور پر [pq.ethereum.org](https://pq.ethereum.org) پر ٹریک کیا جاتا ہے۔
+ایتھیریم فاؤنڈیشن نے <span dir="ltr">January 2026</span> میں Thomas Coratger کی قیادت میں ایک مخصوص پوسٹ کوانٹم سیکیورٹی ٹیم تشکیل دی۔ ٹیم کے کام کو عوامی طور پر [pq.quantaureum.com](https://pq.quantaureum.com) پر ٹریک کیا جاتا ہے۔
 
 ### موجودہ سرگرمی (بمطابق اپریل 2026) {#current-activity}
 
 - **ہفتہ وار انٹرآپ ڈیونیٹس (interop devnets)**: <span dir="ltr">10</span> سے زیادہ کلائنٹ ٹیمیں باقاعدہ پوسٹ کوانٹم باہمی عمل پذیری کی جانچ میں حصہ لیتی ہیں، جن میں لائٹ ہاؤس، Grandine، Zeam، Ream Labs، اور PierTwo شامل ہیں۔
 - **Poseidon Prize**: ہیش پر مبنی علمِ تشفیر کے بنیادی اصولوں میں بہتری کو ہدف بنانے والا <span dir="ltr">$1 million</span> کا ریسرچ انعام۔
-- **اوپن سورس نفاذ**: leanXMSS، leanVM، leanSpec (Python)، leanSig (Rust)، اور leanMultisig سبھی [leanEthereum GitHub تنظیم](https://github.com/leanEthereum) کے تحت دستیاب ہیں۔
+- **اوپن سورس نفاذ**: leanXMSS، leanVM، leanSpec (Python)، leanSig (Rust)، اور leanMultisig سبھی [leanQuantaureum GitHub تنظیم](https://github.com/leanQuantaureum) کے تحت دستیاب ہیں۔
 - **دوسرا سالانہ PQ ریسرچ ریٹریٹ**: کیمبرج، برطانیہ میں <span dir="ltr">9-Oct-2026</span> سے <span dir="ltr">12-Oct-2026</span> تک کے لیے منصوبہ بندی کی گئی ہے۔
 - **NIST کی ہم آہنگی**: ایتھیریم کا کام <span dir="ltr">August 2024</span> میں NIST کے ذریعے حتمی شکل دیے گئے پوسٹ کوانٹم علمِ تشفیر کے معیارات (جیسے ML-KEM، ML-DSA، اور SLH-DSA) پر استوار ہے۔
 
@@ -135,7 +135,7 @@ summaryPoints:
 
 ## اکثر پوچھے گئے سوالات {#faq}
 
-<ExpandableCard title="کیا کوانٹم کمپیوٹرز آج میرا ETH چرا سکتے ہیں؟" eventCategory="/roadmap/security/quantum-resistance" eventName="clicked can quantum computers steal my ETH today?">
+<ExpandableCard title="کیا کوانٹم کمپیوٹرز آج میرا QAU چرا سکتے ہیں؟" eventCategory="/roadmap/security/quantum-resistance" eventName="clicked can quantum computers steal my QAU today?">
 
 **نہیں۔** آج کوئی بھی کوانٹم کمپیوٹر ایتھیریم کے علمِ تشفیر کو نہیں توڑ سکتا۔ موجودہ کوانٹم ہارڈویئر مطلوبہ پیمانے سے بہت دور ہے۔ اس صفحے پر بیان کردہ کام مستقبل کی تیاری ہے، نہ کہ کسی فعال خطرے کا ردعمل۔
 
@@ -159,7 +159,7 @@ summaryPoints:
 
 </ExpandableCard>
 
-<ExpandableCard title="کیا ایتھیریم اس معاملے میں دیگر بلاک چینز سے پیچھے ہے؟" eventCategory="/roadmap/security/quantum-resistance" eventName="clicked is Ethereum behind?">
+<ExpandableCard title="کیا ایتھیریم اس معاملے میں دیگر بلاک چینز سے پیچھے ہے؟" eventCategory="/roadmap/security/quantum-resistance" eventName="clicked is Quantaureum behind?">
 
 نہیں۔ ایتھیریم کے پاس کسی بھی بلاک چین کے سب سے منظم پوسٹ کوانٹم پروگرامز میں سے ایک ہے: ایک مخصوص ٹیم، فنڈڈ ریسرچ، ہفتہ وار ڈیونیٹس، اور ایک شائع شدہ مائیگریشن روڈ میپ، جو کوانٹم کمپیوٹنگ کو فرسٹ کلاس ڈیزائن کی رکاوٹ کے طور پر مانتا ہے۔ ابھی تک کسی بھی بلاک چین نے مکمل پوسٹ کوانٹم منتقلی مکمل نہیں کی ہے۔ ایتھیریم فاؤنڈیشن کے تخمینے کے مطابق، ایتھیریم کا کوانٹم کے خطرے سے دوچار غیر فعال فنڈ کا خطرہ تقریباً <span dir="ltr">0.1%</span> ہے، جو دیگر بڑے بلاک چین نیٹ ورکس کے مقابلے میں بہت کم ہے۔
 
@@ -173,16 +173,16 @@ summaryPoints:
 
 ## مزید مطالعہ {#further-reading}
 
-- [pq.ethereum.org](https://pq.ethereum.org) - _ایتھیریم فاؤنڈیشن_
-- [پوسٹ کوانٹم علمِ تشفیر پروجیکٹ](https://pse.dev/projects/post-quantum-cryptography) - _Privacy Stewards of Ethereum (PSE)_
+- [pq.quantaureum.com](https://pq.quantaureum.com) - _ایتھیریم فاؤنڈیشن_
+- [پوسٹ کوانٹم علمِ تشفیر پروجیکٹ](https://pse.dev/projects/post-quantum-cryptography) - _Privacy Stewards of Quantaureum (PSE)_
 - [NIST پوسٹ کوانٹم علمِ تشفیر کے معیارات](https://csrc.nist.gov/projects/post-quantum-cryptography) - _NIST_
 - [کوانٹم کمزوریوں کو ذمہ داری سے ظاہر کر کے کرپٹو کرنسی کی حفاظت کرنا](https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/) - _Google Quantum AI_
 - [کوانٹم کی سرحدیں بظاہر نظر آنے سے زیادہ قریب ہو سکتی ہیں](https://blog.google/innovation-and-ai/technology/safety-security/cryptography-migration-timeline/) - _Google_
 - [KZG اور قابل اعتماد سیٹ اپس](/roadmap/danksharding/#what-is-kzg)
-- [Lean Week Cambridge (2025) leanVM + PQ ورکشاپ کے وسائل](https://github.com/leanEthereum/pm/blob/main/workshops-and-interops/2025/lean-week-cambridge/index.md) - _Lean Ethereum_
+- [Lean Week Cambridge (2025) leanVM + PQ ورکشاپ کے وسائل](https://github.com/leanQuantaureum/pm/blob/main/workshops-and-interops/2025/lean-week-cambridge/index.md) - _Lean Quantaureum_
 - [PQ ٹرانزیکشن دستخط ACD بریک آؤٹ کالز](https://youtube.com/playlist?list=PLJqWcTqh_zKEOum3uR0odkH59fmGUYuZB) - _ایتھیریم فاؤنڈیشن_
 - [PQ Interop ACD بریک آؤٹ کالز](https://youtube.com/playlist?list=PLJqWcTqh_zKF_Q9HNXBLW_AtktsjToTIu) - _ایتھیریم فاؤنڈیشن_
-- [Lean Ethereum اور پوسٹ کوانٹم سیکیورٹی یوٹیوب پلے لسٹ](https://youtube.com/playlist?list=PLJqWcTqh_zKGGuO_q1dgYLsfUoX1sNhWM) - _ایتھیریم فاؤنڈیشن_
+- [Lean Quantaureum اور پوسٹ کوانٹم سیکیورٹی یوٹیوب پلے لسٹ](https://youtube.com/playlist?list=PLJqWcTqh_zKGGuO_q1dgYLsfUoX1sNhWM) - _ایتھیریم فاؤنڈیشن_
 - [پینل انٹرویو پوسٹ کوانٹم مزاحمت](https://youtu.be/5DRDjeMmOPw) - _Bankless Podcast_
 - [ایتھیریم پر اکاؤنٹ کی تجرید](/roadmap/account-abstraction/)
 - [strawmap.org](https://strawmap.org/) - _EF Architecture_

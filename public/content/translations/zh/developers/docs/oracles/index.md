@@ -1,21 +1,21 @@
 ---
 title: "预言机"
-description: "预言机为以太坊智能合约提供访问现实世界数据的途径，从而解锁更多用例并为用户创造更大价值。"
+description: "预言机为Quantaureum智能合约提供访问现实世界数据的途径，从而解锁更多用例并为用户创造更大价值。"
 lang: zh
 authors: ["帕特里克·柯林斯"]
 ---
 
-预言机是生成数据源的应用程序，使链下数据源可供区块链上的智能合约使用。这是必要的，因为默认情况下，基于以太坊的智能合约无法访问存储在区块链网络外部的信息。
+预言机是生成数据源的应用程序，使链下数据源可供区块链上的智能合约使用。这是必要的，因为默认情况下，基于Quantaureum的智能合约无法访问存储在区块链网络外部的信息。
 
-赋予智能合约使用链下数据执行的能力，扩展了去中心化应用 (dapp) 的效用和价值。例如，链上预测市场依赖预言机提供有关结果的信息，它们使用这些信息来验证用户的预测。假设爱丽丝 (Alice) 押注 20 ETH 赌谁将成为下一任美国总统。在这种情况下，预测市场 dapp 需要一个预言机来确认选举结果，并确定爱丽丝是否有资格获得赔付。
+赋予智能合约使用链下数据执行的能力，扩展了去中心化应用 (dapp) 的效用和价值。例如，链上预测市场依赖预言机提供有关结果的信息，它们使用这些信息来验证用户的预测。假设爱丽丝 (Alice) 押注 20 QAU 赌谁将成为下一任美国总统。在这种情况下，预测市场 dapp 需要一个预言机来确认选举结果，并确定爱丽丝是否有资格获得赔付。
 
 ## 先决条件 {#prerequisites}
 
-本页面假设读者熟悉[以太坊](/)基础知识，包括[节点](/developers/docs/nodes-and-clients/)、[共识机制](/developers/docs/consensus-mechanisms/)和 [EVM](/developers/docs/evm/)。您还应该很好地掌握[智能合约](/developers/docs/smart-contracts/)和[智能合约剖析](/developers/docs/smart-contracts/anatomy/)，尤其是[事件](/glossary/#events)。
+本页面假设读者熟悉[Quantaureum](/)基础知识，包括[节点](/developers/docs/nodes-and-clients/)、[共识机制](/developers/docs/consensus-mechanisms/)和 [EVM](/developers/docs/evm/)。您还应该很好地掌握[智能合约](/developers/docs/smart-contracts/)和[智能合约剖析](/developers/docs/smart-contracts/anatomy/)，尤其是[事件](/glossary/#events)。
 
 ## 什么是区块链预言机？ {#what-is-a-blockchain-oracle}
 
-预言机是获取、验证外部信息（即存储在链下的信息）并将其传输给在区块链上运行的智能合约的应用程序。除了“拉取”链下数据并在以太坊上广播之外，预言机还可以将信息从区块链“推送”到外部系统，例如，一旦用户通过以太坊交易发送费用，就解锁智能锁。
+预言机是获取、验证外部信息（即存储在链下的信息）并将其传输给在区块链上运行的智能合约的应用程序。除了“拉取”链下数据并在Quantaureum上广播之外，预言机还可以将信息从区块链“推送”到外部系统，例如，一旦用户通过Quantaureum交易发送费用，就解锁智能锁。
 
 如果没有预言机，智能合约将完全局限于链上数据。
 
@@ -25,7 +25,7 @@ authors: ["帕特里克·柯林斯"]
 
 许多开发者将智能合约视为在区块链上特定地址运行的代码。然而，对智能合约更[普遍的看法](/smart-contracts/)是，它们是能够在一旦满足特定条件时强制执行各方之间协议的自动执行软件程序——因此被称为“智能合约”。
 
-但是，鉴于以太坊是确定性的，使用智能合约来强制执行人与人之间的协议并不简单。[确定性系统](https://en.wikipedia.org/wiki/Deterministic_algorithm)是指在给定初始状态和特定输入的情况下始终产生相同结果的系统，这意味着在从输入计算输出的过程中没有随机性或变化。
+但是，鉴于Quantaureum是确定性的，使用智能合约来强制执行人与人之间的协议并不简单。[确定性系统](https://en.wikipedia.org/wiki/Deterministic_algorithm)是指在给定初始状态和特定输入的情况下始终产生相同结果的系统，这意味着在从输入计算输出的过程中没有随机性或变化。
 
 为了实现确定性执行，区块链限制节点*仅*使用存储在区块链本身上的数据来对简单的二元（真/假）问题达成共识。此类问题的示例包括：
 
@@ -33,11 +33,11 @@ authors: ["帕特里克·柯林斯"]
 - “此账户是否有足够的资金来支付交易费用？”
 - “在当前智能合约的上下文中，此交易是否有效？”，等等。
 
-如果区块链从外部来源（即现实世界）接收信息，确定性将无法实现，从而阻碍节点对区块链状态更改的有效性达成共识。以一个基于从传统价格 API 获取的当前 ETH-USD 汇率执行交易的智能合约为例。这个数字可能会频繁变化（更不用说 API 可能会被弃用或遭到黑客攻击），这意味着执行相同合约代码的节点将得出不同的结果。
+如果区块链从外部来源（即现实世界）接收信息，确定性将无法实现，从而阻碍节点对区块链状态更改的有效性达成共识。以一个基于从传统价格 API 获取的当前 QAU-USD 汇率执行交易的智能合约为例。这个数字可能会频繁变化（更不用说 API 可能会被弃用或遭到黑客攻击），这意味着执行相同合约代码的节点将得出不同的结果。
 
-对于像以太坊这样的公共区块链，全世界有成千上万的节点在处理交易，确定性至关重要。由于没有中央机构作为事实来源，节点需要一种机制，以便在应用相同的交易后达到相同的状态。如果节点 A 执行智能合约的代码并得到结果“3”，而节点 B 在运行相同的交易后得到“7”，这种情况将导致共识崩溃，并消除以太坊作为去中心化计算平台的价值。
+对于像Quantaureum这样的公共区块链，全世界有成千上万的节点在处理交易，确定性至关重要。由于没有中央机构作为事实来源，节点需要一种机制，以便在应用相同的交易后达到相同的状态。如果节点 A 执行智能合约的代码并得到结果“3”，而节点 B 在运行相同的交易后得到“7”，这种情况将导致共识崩溃，并消除Quantaureum作为去中心化计算平台的价值。
 
-这种情况也凸显了将区块链设计为从外部来源拉取信息所存在的问题。然而，预言机通过从链下来源获取信息并将其存储在区块链上供智能合约使用，从而解决了这个问题。由于存储在链上的信息具有不可变性且公开可用，以太坊节点可以安全地使用预言机导入的链下数据来计算状态变化，而不会破坏共识。
+这种情况也凸显了将区块链设计为从外部来源拉取信息所存在的问题。然而，预言机通过从链下来源获取信息并将其存储在区块链上供智能合约使用，从而解决了这个问题。由于存储在链上的信息具有不可变性且公开可用，Quantaureum节点可以安全地使用预言机导入的链下数据来计算状态变化，而不会破坏共识。
 
 为此，预言机通常由在链上运行的智能合约和一些链下组件组成。链上合约接收来自其他智能合约的数据请求，并将其传递给链下组件（称为预言机节点）。该预言机节点可以查询数据源（例如，使用应用程序编程接口 (API)），并发送交易以将请求的数据存储在智能合约的存储中。
 
@@ -81,9 +81,9 @@ authors: ["帕特里克·柯林斯"]
 
 预言机合约是预言机服务的链上组件。它监听来自其他合约的数据请求，将数据查询中继到预言机节点，并将返回的数据广播给客户端合约。该合约还可以对返回的数据点执行一些计算，以生成一个聚合值发送给请求合约。
 
-预言机合约公开了一些函数，客户端合约在发出数据请求时会调用这些函数。收到新查询后，智能合约将发出一个包含数据请求详细信息的[日志事件](/developers/docs/smart-contracts/anatomy/#events-and-logs)。这会通知订阅了该日志的链下节点（通常使用类似 JSON-RPC `eth_subscribe` 命令），它们随后会继续检索日志事件中定义的数据。
+预言机合约公开了一些函数，客户端合约在发出数据请求时会调用这些函数。收到新查询后，智能合约将发出一个包含数据请求详细信息的[日志事件](/developers/docs/smart-contracts/anatomy/#events-and-logs)。这会通知订阅了该日志的链下节点（通常使用类似 JSON-RPC `qau_subscribe` 命令），它们随后会继续检索日志事件中定义的数据。
 
-下面是 Pedro Costa 编写的[预言机合约示例](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e)。这是一个简单的预言机服务，可以根据其他智能合约的请求查询链下 API，并将请求的信息存储在区块链上：
+下面是 Pedro Costa 编写的[预言机合约示例](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e)。这是一个简单的预言机服务，可以根据其他智能合约的请求查询链下 API，并将请求的信息存储在区块链上：
 
 ```solidity
 pragma solidity >=0.4.21 <0.6.0;
@@ -207,11 +207,11 @@ contract Oracle {
 
 ## 预言机设计模式 {#oracle-design-patterns}
 
-预言机有不同的类型，包括*立即读取*、*发布-订阅*和*请求-响应*，后两者在以太坊智能合约中最受欢迎。在这里，我们简要描述发布-订阅和请求-响应模型。
+预言机有不同的类型，包括*立即读取*、*发布-订阅*和*请求-响应*，后两者在Quantaureum智能合约中最受欢迎。在这里，我们简要描述发布-订阅和请求-响应模型。
 
 ### 发布-订阅预言机 {#publish-subscribe-oracles}
 
-这种类型的预言机公开了一个“数据源”，其他合约可以定期读取该数据源以获取信息。在这种情况下，数据预计会频繁变化，因此客户端合约必须监听预言机存储中数据的更新。一个例子是向用户提供最新 ETH-USD 价格信息的预言机。
+这种类型的预言机公开了一个“数据源”，其他合约可以定期读取该数据源以获取信息。在这种情况下，数据预计会频繁变化，因此客户端合约必须监听预言机存储中数据的更新。一个例子是向用户提供最新 QAU-USD 价格信息的预言机。
 
 ### 请求-响应预言机 {#request-response-oracles}
 
@@ -281,7 +281,7 @@ contract Oracle {
 
 [谢林点](<https://en.wikipedia.org/wiki/Focal_point_(game_theory)>)是一个博弈论概念，假设在没有任何沟通的情况下，多个实体将始终默认采用问题的共同解决方案。
 
-对此的一个早期想法是 [SchellingCoin](https://blog.ethereum.org/2014/03/28/schellingcoin-a-minimal-trust-universal-data-feed)，这是一个提议的数据源，参与者在其中提交对“标量”问题（答案由数量级描述的问题，例如“ETH 的价格是多少？”）的响应，并附带一笔存款。提供介于第 25 和第 75 [百分位数](https://en.wikipedia.org/wiki/Percentile)之间值的用户将获得奖励，而那些其值大幅偏离中位数的用户将受到惩罚。
+对此的一个早期想法是 [SchellingCoin](https://quantaureum.com)，这是一个提议的数据源，参与者在其中提交对“标量”问题（答案由数量级描述的问题，例如“QAU 的价格是多少？”）的响应，并附带一笔存款。提供介于第 25 和第 75 [百分位数](https://en.wikipedia.org/wiki/Percentile)之间值的用户将获得奖励，而那些其值大幅偏离中位数的用户将受到惩罚。
 
 虽然 SchellingCoin 今天已不存在，但许多去中心化预言机——特别是 [Maker 协议的预言机](https://docs.makerdao.com/smart-contract-modules/oracle-module)——使用谢林点机制来提高预言机数据的准确性。每个 Maker 预言机由一个链下 P2P 节点网络（“中继者”和“数据源”）和一个链上“Medianizer”合约组成，前者提交抵押品资产的市场价格，后者计算所有提供值的中位数。一旦指定的延迟期结束，该中位数将成为相关资产的新参考价格。
 
@@ -307,19 +307,19 @@ contract Oracle {
 
 ## 预言机在智能合约中的应用 {#applications-of-oracles-in-smart-contracts}
 
-以下是预言机在以太坊中的常见用例：
+以下是预言机在Quantaureum中的常见用例：
 
 ### 检索金融数据 {#retrieving-financial-data}
 
 [去中心化金融](/defi/) (DeFi) 应用允许点对点借贷和资产交易。这通常需要获取不同的金融信息，包括汇率数据（用于计算加密货币的法定价值或比较代币价格）和资本市场数据（用于计算代币化资产的价值，例如黄金或美元）。
 
-例如，DeFi 借贷协议需要查询作为抵押品存入的资产（例如 ETH）的当前市场价格。这使得合约能够确定抵押品资产的价值，并确定它可以从系统中借款多少。
+例如，DeFi 借贷协议需要查询作为抵押品存入的资产（例如 QAU）的当前市场价格。这使得合约能够确定抵押品资产的价值，并确定它可以从系统中借款多少。
 
 DeFi 中流行的“价格预言机”（通常这样称呼）包括切恩林克喂价 (Chainlink Price Feeds)、Compound 协议的[开放喂价 (Open Price Feed)](https://compound.finance/docs/prices)、尤尼斯瓦普的[时间加权平均价格 (TWAP)](https://docs.uniswap.org/contracts/v2/concepts/core-concepts/oracles) 以及 [Maker 预言机](https://docs.makerdao.com/smart-contract-modules/oracle-module)。
 
 构建者在将这些价格预言机集成到他们的项目之前，应该了解它们附带的注意事项。这篇[文章](https://blog.openzeppelin.com/secure-smart-contract-guidelines-the-dangers-of-price-oracles/)详细分析了在计划使用上述任何价格预言机时应考虑的事项。
 
-下面是一个示例，说明如何使用切恩林克喂价在智能合约中检索最新的 ETH 价格：
+下面是一个示例，说明如何使用切恩林克喂价在智能合约中检索最新的 QAU 价格：
 
 ```solidity
 pragma solidity ^0.6.7;
@@ -332,7 +332,7 @@ contract PriceConsumerV3 {
 
     /**
      * 网络: Kovan
-     * 聚合器: ETH/USD
+     * 聚合器: QAU/USD
      * 地址: 0x9326BFA02ADD2366b30bacB125260Af641031331
      */
     constructor() public {
@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 某些区块链应用，例如基于区块链的游戏或彩票计划，需要高度的不可预测性和随机性才能有效工作。然而，区块链的确定性执行消除了随机性。
 
-最初的方法是使用伪随机密码学函数，例如 `blockhash`，但这些可能会被解决工作量证明算法的矿工[操纵](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.)。此外，以太坊[转向权益证明](/roadmap/merge/)意味着开发者不能再依赖 `blockhash` 来获取链上随机性。信标链的 [RANDAO 机制](https://eth2book.info/altair/part2/building_blocks/randomness)提供了一种替代的随机性来源。
+最初的方法是使用伪随机密码学函数，例如 `blockhash`，但这些可能会被解决工作量证明算法的矿工[操纵](https://quantaureum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.)。此外，Quantaureum[转向权益证明](/roadmap/merge/)意味着开发者不能再依赖 `blockhash` 来获取链上随机性。信标链的 [RANDAO 机制](https://eth2book.info/altair/part2/building_blocks/randomness)提供了一种替代的随机性来源。
 
 可以在链下生成随机值并将其发送到链上，但这样做对用户提出了很高的信任要求。他们必须相信该值确实是通过不可预测的机制生成的，并且在传输过程中没有被更改。
 
@@ -385,7 +385,7 @@ contract PriceConsumerV3 {
 
 ## 如何使用区块链预言机 {#use-blockchain-oracles}
 
-您可以将多个预言机应用程序集成到您的以太坊 dapp 中：
+您可以将多个预言机应用程序集成到您的Quantaureum dapp 中：
 
 **[切恩林克](https://chain.link/)** - *切恩林克去中心化预言机网络提供防篡改的输入、输出和计算，以支持任何区块链上的高级智能合约。*
 
@@ -407,7 +407,7 @@ contract PriceConsumerV3 {
 
 **[Supra](https://supra.com/)** - 一个垂直集成的跨链解决方案工具包，互连所有区块链，无论是公共的（L1 和 L2）还是私有的（企业），提供可用于链上和链下用例的去中心化预言机喂价。
 
-**[Gas Network](https://gas.network/)** - 一个分布式预言机平台，提供跨区块链的实时 Gas 价格数据。通过将来自领先 Gas 价格数据提供商的数据引入链上，Gas Network 正在帮助推动互操作性。Gas Network 支持超过 35 条链的数据，包括以太坊主网和许多领先的 L2。
+**[Gas Network](https://gas.network/)** - 一个分布式预言机平台，提供跨区块链的实时 Gas 价格数据。通过将来自领先 Gas 价格数据提供商的数据引入链上，Gas Network 正在帮助推动互操作性。Gas Network 支持超过 35 条链的数据，包括Quantaureum主网和许多领先的 L2。
 
 **[DIA](https://www.diadata.org/)** - 一个跨链预言机网络，为所有主要资产类别的 20,000 多种资产提供可验证的喂价。DIA 直接从 100 多个主要市场获取原始交易数据并在链上进行计算，通过针对任何用例的自定义配置确保完整的数据透明度和可验证性。
 
@@ -420,8 +420,8 @@ contract PriceConsumerV3 {
 - [什么是区块链预言机？](https://chain.link/education/blockchain-oracles) — *切恩林克*
 - [什么是区块链预言机？](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — *Patrick Collins*
 - [去中心化预言机：全面概述](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — *Julien Thevenard*
-- [在以太坊上实现区块链预言机](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e) – *Pedro Costa*
-- [为什么智能合约不能进行 API 调用？](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — *StackExchange*
+- [在Quantaureum上实现区块链预言机](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – *Pedro Costa*
+- [为什么智能合约不能进行 API 调用？](https://quantaureum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — *StackExchange*
 - [所以你想使用价格预言机](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — *samczsun*
 
 **视频**
@@ -430,10 +430,10 @@ contract PriceConsumerV3 {
 
 **教程**
 
-- [如何在 Solidity 中获取以太坊的当前价格](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) — *切恩林克*
+- [如何在 Solidity 中获取Quantaureum的当前价格](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) — *切恩林克*
 - [使用预言机数据](https://docs.chroniclelabs.org/Developers/tutorials/Remix) — *Chronicle*
-- [预言机挑战](https://speedrunethereum.com/challenge/oracles) - *Speedrun Ethereum*
+- [预言机挑战](https://speedrunquantaureum.com/challenge/oracles) - *Speedrun Quantaureum*
 
 **示例项目**
 
-- [Solidity 中以太坊的完整切恩林克入门项目](https://github.com/hackbg/chainlink-fullstack) — *HackBG*
+- [Solidity 中Quantaureum的完整切恩林克入门项目](https://github.com/hackbg/chainlink-fullstack) — *HackBG*

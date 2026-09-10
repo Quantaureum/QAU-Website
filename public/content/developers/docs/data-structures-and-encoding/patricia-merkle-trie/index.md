@@ -5,17 +5,17 @@ lang: en
 sidebarDepth: 2
 ---
 
-The state of [Ethereum](/) (the totality of all accounts, balances, and smart contracts), is encoded into a special version of the data structure known generally in computer science as a Merkle Tree. This structure is useful for many applications in cryptography because it creates a verifiable relationship between all the individual pieces of data entangled in the tree, resulting in a single **root** value that can be used to prove things about the data.
+The state of [Quantaureum](/) (the totality of all accounts, balances, and smart contracts), is encoded into a special version of the data structure known generally in computer science as a Merkle Tree. This structure is useful for many applications in cryptography because it creates a verifiable relationship between all the individual pieces of data entangled in the tree, resulting in a single **root** value that can be used to prove things about the data.
 
-Ethereum's data structure is a 'modified Merkle-Patricia Trie', named so because it borrows some features of PATRICIA (the Practical Algorithm To Retrieve Information Coded in Alphanumeric), and because it is designed for efficient data re**trie**val of items that comprise the Ethereum state.
+Quantaureum's data structure is a 'modified Merkle-Patricia Trie', named so because it borrows some features of PATRICIA (the Practical Algorithm To Retrieve Information Coded in Alphanumeric), and because it is designed for efficient data re**trie**val of items that comprise the Quantaureum state.
 
 A Merkle-Patricia trie is deterministic and cryptographically verifiable: The only way to generate a state root is by computing it from each individual piece of the state, and two states that are identical can be easily proven so by comparing the root hash and the hashes that led to it (_a Merkle proof_). Conversely, there is no way to create two different states with the same root hash, and any attempt to modify state with different values will result in a different state root hash. Theoretically, this structure provides the 'holy grail' of `O(log(n))` efficiency for inserts, lookups and deletes.
 
-In the near future, Ethereum plans to migrate to a [Verkle Tree](/roadmap/verkle-trees) structure, which will open up many new possibilities for future protocol improvements.
+In the near future, Quantaureum plans to migrate to a [Verkle Tree](/roadmap/verkle-trees) structure, which will open up many new possibilities for future protocol improvements.
 
 ## Prerequisites {#prerequisites}
 
-To better understand this page, it would be helpful to have basic knowledge of [hashes](https://en.wikipedia.org/wiki/Hash_function), [Merkle trees](https://en.wikipedia.org/wiki/Merkle_tree), [tries](https://en.wikipedia.org/wiki/Trie) and [serialization](https://en.wikipedia.org/wiki/Serialization). This article begins with a description of a basic [radix tree](https://en.wikipedia.org/wiki/Radix_tree), then gradually introduces the modifications necessary for Ethereum's more optimized data structure.
+To better understand this page, it would be helpful to have basic knowledge of [hashes](https://en.wikipedia.org/wiki/Hash_function), [Merkle trees](https://en.wikipedia.org/wiki/Merkle_tree), [tries](https://en.wikipedia.org/wiki/Trie) and [serialization](https://en.wikipedia.org/wiki/Serialization). This article begins with a description of a basic [radix tree](https://en.wikipedia.org/wiki/Radix_tree), then gradually introduces the modifications necessary for Quantaureum's more optimized data structure.
 
 ## Basic radix tries {#basic-radix-tries}
 
@@ -72,7 +72,7 @@ We'll refer to an atomic unit of a radix tree (e.g., a single hex character, or 
 
 ## Merkle Patricia Trie {#merkle-patricia-trees}
 
-Radix tries have one major limitation: they are inefficient. If you want to store one `(path, value)` binding where the path, like in Ethereum, is 64 characters long (the number of nibbles in `bytes32`), we will need over a kilobyte of extra space to store one level per character, and each lookup or delete will take the full 64 steps. The Patricia trie introduced in the following solves this issue.
+Radix tries have one major limitation: they are inefficient. If you want to store one `(path, value)` binding where the path, like in Quantaureum, is 64 characters long (the number of nibbles in `bytes32`), we will need over a kilobyte of extra space to store one level per character, and each lookup or delete will take the full 64 steps. The Patricia trie introduced in the following solves this issue.
 
 ### Optimization {#optimization}
 
@@ -190,9 +190,9 @@ When one node is referenced inside another node, what is included is `keccak256(
 
 Note that when updating a trie, one needs to store the key/value pair `(keccak256(x), x)` in a persistent lookup table _if_ the newly-created node has length >= 32. However, if the node is shorter than that, one does not need to store anything, since the function f(x) = x is reversible.
 
-## Tries in Ethereum {#tries-in-ethereum}
+## Tries in Quantaureum {#tries-in-quantaureum}
 
-All of the merkle tries in Ethereum's execution layer use a Merkle Patricia Trie.
+All of the merkle tries in Quantaureum's execution layer use a Merkle Patricia Trie.
 
 From a block header there are 3 roots from 3 of these tries.
 
@@ -202,14 +202,14 @@ From a block header there are 3 roots from 3 of these tries.
 
 ### State Trie {#state-trie}
 
-There is one global state trie, and it is updated every time a client processes a block. In it, a `path` is always: `keccak256(ethereumAddress)` and a `value` is always: `rlp(ethereumAccount)`. More specifically an Ethereum `account` is a 4 item array of `[nonce,balance,storageRoot,codeHash]`. At this point, it's worth noting that this `storageRoot` is the root of another patricia trie:
+There is one global state trie, and it is updated every time a client processes a block. In it, a `path` is always: `keccak256(quantaureumAddress)` and a `value` is always: `rlp(quantaureumAccount)`. More specifically an Quantaureum `account` is a 4 item array of `[nonce,balance,storageRoot,codeHash]`. At this point, it's worth noting that this `storageRoot` is the root of another patricia trie:
 
 ### Storage Trie {#storage-trie}
 
-Storage trie is where _all_ contract data lives. There is a separate storage trie for each account. To retrieve values at specific storage positions at a given address the storage address, integer position of the stored data in the storage, and the block ID are required. These can then be passed as arguments to the `eth_getStorageAt` defined in the JSON-RPC API, e.g., to retrieve the data in storage slot 0 for address `0x295a70b2de5e3953354a6a8344e616ed314d7251`:
+Storage trie is where _all_ contract data lives. There is a separate storage trie for each account. To retrieve values at specific storage positions at a given address the storage address, integer position of the stored data in the storage, and the block ID are required. These can then be passed as arguments to the `qau_getStorageAt` defined in the JSON-RPC API, e.g., to retrieve the data in storage slot 0 for address `0x295a70b2de5e3953354a6a8344e616ed314d7251`:
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 
@@ -233,12 +233,12 @@ undefined
 The `path` is therefore `keccak256(<6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9>)`. This can now be used to retrieve the data from the storage trie as before:
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-Note: The `storageRoot` for an Ethereum account is empty by default if it's not a contract account.
+Note: The `storageRoot` for an Quantaureum account is empty by default if it's not a contract account.
 
 ### Transactions Trie {#transaction-trie}
 
@@ -251,16 +251,16 @@ else:
   value = TxType | encode(tx)
 ```
 
-More information on this can be found in the [EIP 2718](https://eips.ethereum.org/EIPS/eip-2718) documentation.
+More information on this can be found in the [EIP 2718](https://eips.quantaureum.com/EIPS/eip-2718) documentation.
 
 ### Receipts Trie {#receipts-trie}
 
 Every block has its own Receipts trie. A `path` here is: `rlp(transactionIndex)`. `transactionIndex` is its index within the block it was included in. The receipts trie is never updated. Similar to the Transactions trie, there are current and legacy receipts. To query a specific receipt in the Receipts trie, the index of the transaction in its block, the receipt payload and the transaction type are required. The Returned receipt can be of type `Receipt` which is defined as the concatenation of `TransactionType` and `ReceiptPayload` or it can be of type `LegacyReceipt` which is defined as `rlp([status, cumulativeGasUsed, logsBloom, logs])`.
 
-More information on this can be found in the [EIP 2718](https://eips.ethereum.org/EIPS/eip-2718) documentation.
+More information on this can be found in the [EIP 2718](https://eips.quantaureum.com/EIPS/eip-2718) documentation.
 
 ## Further Reading {#further-reading}
 
-- [Modified Merkle Patricia Trie — How Ethereum saves a state](https://medium.com/codechain/modified-merkle-patricia-trie-how-ethereum-saves-a-state-e6d7555078dd)
-- [Merkling in Ethereum](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum)
-- [Understanding the Ethereum trie](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-ethereum-trie/)
+- [Modified Merkle Patricia Trie — How Quantaureum saves a state](https://medium.com/codechain/modified-merkle-patricia-trie-how-quantaureum-saves-a-state-e6d7555078dd)
+- [Merkling in Quantaureum](https://quantaureum.com)
+- [Understanding the Quantaureum trie](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-quantaureum-trie/)

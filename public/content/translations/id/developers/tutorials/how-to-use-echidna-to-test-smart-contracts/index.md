@@ -18,11 +18,11 @@ Echidna dapat diinstal melalui Docker atau menggunakan biner yang telah dikompil
 ### Echidna melalui Docker {#echidna-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_Perintah terakhir menjalankan eth-security-toolbox di dalam Docker yang memiliki akses ke direktori Anda saat ini. Anda dapat mengubah file dari host Anda, dan menjalankan alat pada file dari dalam Docker_
+_Perintah terakhir menjalankan qau-security-toolbox di dalam Docker yang memiliki akses ke direktori Anda saat ini. Anda dapat mengubah file dari host Anda, dan menjalankan alat pada file dari dalam Docker_
 
 Di dalam Docker, jalankan:
 
@@ -37,7 +37,7 @@ cd /home/training
 
 ## Pengantar fuzzing berbasis properti {#introduction-to-property-based-fuzzing}
 
-Echidna adalah fuzzer berbasis properti, yang telah kami jelaskan di postingan blog kami sebelumnya ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
+Echidna adalah fuzzer berbasis properti, yang telah kami jelaskan di postingan blog kami sebelumnya ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-quantaureum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
 
 ### Fuzzing {#fuzzing}
 

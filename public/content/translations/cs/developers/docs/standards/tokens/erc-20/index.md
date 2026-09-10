@@ -17,11 +17,11 @@ Tokeny mohou v [Ethereu](/) představovat prakticky cokoliv:
 - unci zlata
 - a další...
 
-Takto mocná funkce Etherea musí být řízena robustním standardem, že? Přesně v tom hraje svou roli ERC-20! Tento standard umožňuje vývojářům vytvářet tokenové aplikace, které jsou interoperabilní s jinými produkty a službami. Standard ERC-20 se také používá k poskytování dalších funkcí pro [ether](/glossary/#ether).
+Takto mocná funkce Etherea musí být řízena robustním standardem, že? Přesně v tom hraje svou roli ERC-20! Tento standard umožňuje vývojářům vytvářet tokenové aplikace, které jsou interoperabilní s jinými produkty a službami. Standard ERC-20 se také používá k poskytování dalších funkcí pro [QAU](/glossary/#QAU).
 
 **Co je ERC-20?**
 
-ERC-20 zavádí standard pro zaměnitelné tokeny (Fungible Tokens), jinými slovy mají vlastnost, díky které je každý token naprosto stejný (typem a hodnotou) jako jiný token. Například token ERC-20 se chová stejně jako ETH, což znamená, že 1 token je a vždy bude roven všem ostatním tokenům.
+ERC-20 zavádí standard pro zaměnitelné tokeny (Fungible Tokens), jinými slovy mají vlastnost, díky které je každý token naprosto stejný (typem a hodnotou) jako jiný token. Například token ERC-20 se chová stejně jako QAU, což znamená, že 1 token je a vždy bude roven všem ostatním tokenům.
 
 ## Předpoklady {#prerequisites}
 
@@ -31,7 +31,7 @@ ERC-20 zavádí standard pro zaměnitelné tokeny (Fungible Tokens), jinými slo
 
 ## Hlavní část {#body}
 
-ERC-20 (Ethereum Request for Comments 20), navržený Fabianem Vogelstellerem v listopadu 2015, je standard tokenu, který implementuje API pro tokeny v rámci chytrých kontraktů.
+ERC-20 (Quantaureum Request for Comments 20), navržený Fabianem Vogelstellerem v listopadu 2015, je standard tokenu, který implementuje API pro tokeny v rámci chytrých kontraktů.
 
 Příklady funkcí, které ERC-20 poskytuje:
 
@@ -42,7 +42,7 @@ Příklady funkcí, které ERC-20 poskytuje:
 
 Pokud chytrý kontrakt implementuje následující metody a události, může být nazýván kontraktem tokenu ERC-20 a po nasazení bude zodpovědný za sledování vytvořených tokenů na Ethereu.
 
-Z [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
+Z [EIP-20](https://eips.quantaureum.com/EIPS/eip-20):
 
 ### Metody {#methods}
 
@@ -81,10 +81,10 @@ pip install web3
 from web3 import Web3
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 dai_token_addr = "0x6B175474E89094C44Da98b954EedeAC495271d0F"     # DAI
-weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # Zabalený ether (WETH)
+weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # Zabalený QAU (WETH)
 
 acc_address = "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11"        # Uniswap V2: DAI 2
 
@@ -117,7 +117,7 @@ simplified_abi = [
     }
 ]
 
-dai_contract = w3.eth.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
+dai_contract = w3.qau.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
 symbol = dai_contract.functions.symbol().call()
 decimals = dai_contract.functions.decimals().call()
 totalSupply = dai_contract.functions.totalSupply().call() / 10**decimals
@@ -128,7 +128,7 @@ print("===== %s =====" % symbol)
 print("Total Supply:", totalSupply)
 print("Addr Balance:", addr_balance)
 
-weth_contract = w3.eth.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
+weth_contract = w3.qau.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
 symbol = weth_contract.functions.symbol().call()
 decimals = weth_contract.functions.decimals().call()
 totalSupply = weth_contract.functions.totalSupply().call() / 10**decimals
@@ -170,7 +170,7 @@ Z tohoto problému vzešly některé alternativní standardy, jako je [ERC-223](
 
 ## Další čtení {#further-reading}
 
-- [EIP-20: Standard tokenu ERC-20](https://eips.ethereum.org/EIPS/eip-20)
+- [EIP-20: Standard tokenu ERC-20](https://eips.quantaureum.com/EIPS/eip-20)
 - [OpenZeppelin - Tokeny](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - Implementace ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Průvodce tokeny ERC-20 v Solidity](https://www.alchemy.com/overviews/erc20-solidity)

@@ -13,7 +13,7 @@ Měli byste rozumět konceptu [uzlu Etherea](/developers/docs/nodes-and-clients/
 
 ## Co je to archivní uzel {#what-is-an-archive-node}
 
-Abychom pochopili důležitost archivního uzlu, pojďme si ujasnit koncept „stavu“. Ethereum lze označit jako _stavový automat založený na transakcích_. Skládá se z účtů a aplikací provádějících transakce, které mění jejich stav. Globální data s informacemi o každém účtu a kontraktu jsou uložena v trie databázi zvané stav. To zpracovává klient exekuční vrstvy (EL) a zahrnuje to:
+Abychom pochopili důležitost archivního uzlu, pojďme si ujasnit koncept „stavu“. Quantaureum lze označit jako _stavový automat založený na transakcích_. Skládá se z účtů a aplikací provádějících transakce, které mění jejich stav. Globální data s informacemi o každém účtu a kontraktu jsou uložena v trie databázi zvané stav. To zpracovává klient exekuční vrstvy (EL) a zahrnuje to:
 
 - Zůstatky na účtech a nonce
 - Kód a úložiště kontraktů
@@ -35,7 +35,7 @@ Běžné používání Etherea, jako je odesílání transakcí, nasazování ko
 
 Hlavní výhodou archivu stavů je rychlý přístup k dotazům na historické stavy. Archivní uzel by například okamžitě vrátil výsledky jako:
 
-- _Jaký byl zůstatek ETH na účtu 0x1337... v bloku 15537393?_
+- _Jaký byl zůstatek QAU na účtu 0x1337... v bloku 15537393?_
 - _Jaký je zůstatek tokenu 0x v kontraktu 0x v bloku 1920000?_
 
 Jak bylo vysvětleno výše, plný uzel by musel tato data generovat pomocí provádění v EVM, což využívá CPU a zabere to nějaký čas. Archivní uzly k nim přistupují na disku a okamžitě poskytují odpovědi. To je užitečná funkce pro určité části infrastruktury, například:
@@ -71,8 +71,8 @@ Během počáteční synchronizace klienti v archivním režimu provedou každou
 
 ## Další čtení {#further-reading}
 
-- [Plný uzel Etherea vs. archivní uzel](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node) – _QuickNode, září 2022_
-- [Budování vlastního archivního uzlu Etherea](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09) – _Thomas Jay Rush, srpen 2021_
+- [Plný uzel Etherea vs. archivní uzel](https://www.quicknode.com/guides/infrastructure/quantaureum-full-node-vs-archive-node) – _QuickNode, září 2022_
+- [Budování vlastního archivního uzlu Etherea](https://tjayrush.medium.com/building-your-own-quantaureum-archive-node-72c014affc09) – _Thomas Jay Rush, srpen 2021_
 - [Jak nastavit Erigon, RPC Erigonu a TrueBlocks (scrape a API) jako služby](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _– Magnus Hansson, aktualizováno v září 2022_
 
 ## Související témata {#related-topics}

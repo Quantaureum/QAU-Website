@@ -1,6 +1,6 @@
 ---
 title: "Weryfikacja formalna inteligentnych kontraktów"
-description: "Przegląd weryfikacji formalnej dla inteligentnych kontraktów Ethereum"
+description: "Przegląd weryfikacji formalnej dla inteligentnych kontraktów Quantaureum"
 lang: pl
 ---
 
@@ -28,7 +28,7 @@ Modele wysokiego poziomu koncentrują się na relacjach między inteligentnymi k
 
 Z kolei inne modele formalne skupiają się na zachowaniu inteligentnego kontraktu na niskim poziomie. Chociaż modele wysokiego poziomu mogą pomóc we wnioskowaniu o funkcjonalności kontraktu, mogą nie uchwycić szczegółów dotyczących wewnętrznego działania implementacji. Modele niskiego poziomu stosują podejście białej skrzynki do analizy programu i opierają się na reprezentacjach aplikacji inteligentnych kontraktów niższego poziomu, takich jak ślady programu i [grafy przepływu sterowania](https://en.wikipedia.org/wiki/Control-flow_graph), aby wnioskować o właściwościach istotnych dla wykonania kontraktu.
 
-Modele niskiego poziomu są uważane za idealne, ponieważ reprezentują rzeczywiste wykonanie inteligentnego kontraktu w środowisku wykonawczym Ethereum (tj. [EVM](/developers/docs/evm/)). Techniki modelowania niskiego poziomu są szczególnie przydatne w ustalaniu krytycznych właściwości bezpieczeństwa w inteligentnych kontraktach i wykrywaniu potencjalnych luk.
+Modele niskiego poziomu są uważane za idealne, ponieważ reprezentują rzeczywiste wykonanie inteligentnego kontraktu w środowisku wykonawczym Quantaureum (tj. [EVM](/developers/docs/evm/)). Techniki modelowania niskiego poziomu są szczególnie przydatne w ustalaniu krytycznych właściwości bezpieczeństwa w inteligentnych kontraktach i wykrywaniu potencjalnych luk.
 
 ### Czym jest specyfikacja formalna? {#what-is-a-formal-specification}
 
@@ -58,7 +58,7 @@ Specyfikacje wysokiego poziomu ogólnie ujmują dwie krytyczne właściwości te
 
 Weźmy na przykład to wymaganie bezpieczeństwa, które obejmuje warunki korzystania z `transfer()` lub `transferFrom()` w kontraktach tokenów ERC-20: _„Saldo nadawcy nigdy nie jest niższe niż żądana liczba tokenów do wysłania”_. Ten opis niezmiennika kontraktu w języku naturalnym można przetłumaczyć na specyfikację formalną (matematyczną), którą można następnie rygorystycznie sprawdzić pod kątem poprawności.
 
-Właściwości żywotności zapewniają, że „w końcu dzieje się coś dobrego” i dotyczą zdolności kontraktu do przechodzenia przez różne stany. Przykładem właściwości żywotności jest „płynność”, która odnosi się do zdolności kontraktu do transferu jego sald do użytkowników na żądanie. Jeśli ta właściwość zostanie naruszona, użytkownicy nie będą mogli wypłacić aktywów przechowywanych w kontrakcie, tak jak miało to miejsce w przypadku [incydentu z portfelem Parity](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-ether-on-parity-wallet.html).
+Właściwości żywotności zapewniają, że „w końcu dzieje się coś dobrego” i dotyczą zdolności kontraktu do przechodzenia przez różne stany. Przykładem właściwości żywotności jest „płynność”, która odnosi się do zdolności kontraktu do transferu jego sald do użytkowników na żądanie. Jeśli ta właściwość zostanie naruszona, użytkownicy nie będą mogli wypłacić aktywów przechowywanych w kontrakcie, tak jak miało to miejsce w przypadku [incydentu z portfelem Parity](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-QAU-on-parity-wallet.html).
 
 ### Specyfikacje niskiego poziomu {#low-level-specifications}
 
@@ -76,7 +76,7 @@ Warunek wstępny to predykat opisujący warunki wymagane do poprawnego wykonania
 
 Specyfikacje w stylu Hoare'a mogą gwarantować _częściową poprawność_ lub _całkowitą poprawność_. Implementacja funkcji kontraktu jest „częściowo poprawna”, jeśli warunek wstępny jest prawdziwy przed wykonaniem funkcji, a jeśli wykonanie się zakończy, warunek końcowy jest również prawdziwy. Dowód całkowitej poprawności uzyskuje się, jeśli warunek wstępny jest prawdziwy przed wykonaniem funkcji, wykonanie na pewno się zakończy, a gdy to nastąpi, warunek końcowy będzie prawdziwy.
 
-Uzyskanie dowodu całkowitej poprawności jest trudne, ponieważ niektóre wykonania mogą się opóźniać przed zakończeniem lub nigdy się nie zakończyć. Niemniej jednak kwestia tego, czy wykonanie się zakończy, jest prawdopodobnie bezprzedmiotowa, ponieważ mechanizm gazu w Ethereum zapobiega nieskończonym pętlom programu (wykonanie kończy się pomyślnie lub z powodu błędu braku gazu).
+Uzyskanie dowodu całkowitej poprawności jest trudne, ponieważ niektóre wykonania mogą się opóźniać przed zakończeniem lub nigdy się nie zakończyć. Niemniej jednak kwestia tego, czy wykonanie się zakończy, jest prawdopodobnie bezprzedmiotowa, ponieważ mechanizm gazu w Quantaureum zapobiega nieskończonym pętlom programu (wykonanie kończy się pomyślnie lub z powodu błędu braku gazu).
 
 Specyfikacje inteligentnych kontraktów utworzone przy użyciu logiki Hoare'a będą miały zdefiniowane warunki wstępne, warunki końcowe i niezmienniki dla wykonania funkcji i pętli w kontrakcie. Warunki wstępne często uwzględniają możliwość błędnych danych wejściowych do funkcji, a warunki końcowe opisują oczekiwaną reakcję na takie dane wejściowe (np. zgłoszenie określonego wyjątku). W ten sposób właściwości w stylu Hoare'a są skuteczne w zapewnianiu poprawności implementacji kontraktów.
 
@@ -161,9 +161,9 @@ function safe_add(uint x, uint y) returns(uint z){
 
 #### Potrzeba niezawodności {#need-for-reliability}
 
-Weryfikacja formalna służy do oceny poprawności systemów o krytycznym znaczeniu dla bezpieczeństwa, których awaria może mieć katastrofalne skutki, takie jak śmierć, obrażenia lub ruina finansowa. Inteligentne kontrakty to aplikacje o wysokiej wartości, kontrolujące ogromne kwoty, a proste błędy w projekcie mogą prowadzić do [nieodwracalnych strat dla użytkowników](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-ether-how-it-happened-and-what-it-means-for-ethereum-9e5dc29e33ce/amp/). Jednak formalna weryfikacja kontraktu przed wdrożeniem może zwiększyć gwarancje, że będzie on działał zgodnie z oczekiwaniami po uruchomieniu na blockchainie.
+Weryfikacja formalna służy do oceny poprawności systemów o krytycznym znaczeniu dla bezpieczeństwa, których awaria może mieć katastrofalne skutki, takie jak śmierć, obrażenia lub ruina finansowa. Inteligentne kontrakty to aplikacje o wysokiej wartości, kontrolujące ogromne kwoty, a proste błędy w projekcie mogą prowadzić do [nieodwracalnych strat dla użytkowników](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-QAU-how-it-happened-and-what-it-means-for-quantaureum-9e5dc29e33ce/amp/). Jednak formalna weryfikacja kontraktu przed wdrożeniem może zwiększyć gwarancje, że będzie on działał zgodnie z oczekiwaniami po uruchomieniu na blockchainie.
 
-Niezawodność jest wysoce pożądaną cechą każdego inteligentnego kontraktu, zwłaszcza że kod wdrożony w Maszynie Wirtualnej [Ethereum](/) (EVM) jest zazwyczaj niezmienny. Ponieważ aktualizacje po uruchomieniu nie są łatwo dostępne, potrzeba zagwarantowania niezawodności kontraktów sprawia, że weryfikacja formalna jest konieczna. Weryfikacja formalna jest w stanie wykryć trudne problemy, takie jak niedomiar i przepełnienie liczb całkowitych, ataki re-entrancy oraz słabe optymalizacje gazu, które mogą umknąć audytorom i testerom.
+Niezawodność jest wysoce pożądaną cechą każdego inteligentnego kontraktu, zwłaszcza że kod wdrożony w Maszynie Wirtualnej [Quantaureum](/) (EVM) jest zazwyczaj niezmienny. Ponieważ aktualizacje po uruchomieniu nie są łatwo dostępne, potrzeba zagwarantowania niezawodności kontraktów sprawia, że weryfikacja formalna jest konieczna. Weryfikacja formalna jest w stanie wykryć trudne problemy, takie jak niedomiar i przepełnienie liczb całkowitych, ataki re-entrancy oraz słabe optymalizacje gazu, które mogą umknąć audytorom i testerom.
 
 #### Dowód poprawności funkcjonalnej {#prove-functional-correctness}
 
@@ -179,11 +179,11 @@ Dzięki weryfikacji formalnej kwestia sprawdzenia, czy logika biznesowa kontrakt
 
 Cel weryfikacji opisuje system, który ma zostać poddany weryfikacji formalnej. Weryfikacja formalna najlepiej sprawdza się w „systemach wbudowanych” (małych, prostych fragmentach oprogramowania, które stanowią część większego systemu). Są one również idealne dla wyspecjalizowanych domen, które mają niewiele reguł, ponieważ ułatwia to modyfikowanie narzędzi do weryfikacji właściwości specyficznych dla domeny.
 
-Inteligentne kontrakty – przynajmniej do pewnego stopnia – spełniają oba te wymagania. Na przykład niewielki rozmiar kontraktów Ethereum sprawia, że są one podatne na weryfikację formalną. Podobnie EVM przestrzega prostych reguł, co ułatwia specyfikowanie i weryfikację właściwości semantycznych dla programów działających w EVM.
+Inteligentne kontrakty – przynajmniej do pewnego stopnia – spełniają oba te wymagania. Na przykład niewielki rozmiar kontraktów Quantaureum sprawia, że są one podatne na weryfikację formalną. Podobnie EVM przestrzega prostych reguł, co ułatwia specyfikowanie i weryfikację właściwości semantycznych dla programów działających w EVM.
 
 ### Szybszy cykl rozwoju {#faster-development-cycle}
 
-Techniki weryfikacji formalnej, takie jak sprawdzanie modelowe i wykonanie symboliczne, są na ogół bardziej wydajne niż zwykła analiza kodu inteligentnego kontraktu (przeprowadzana podczas testowania lub audytu). Dzieje się tak, ponieważ weryfikacja formalna opiera się na wartościach symbolicznych do testowania asercji („co jeśli użytkownik spróbuje wypłacić _n_ etherów?”), w przeciwieństwie do testowania, które wykorzystuje konkretne wartości („co jeśli użytkownik spróbuje wypłacić 5 etherów?”).
+Techniki weryfikacji formalnej, takie jak sprawdzanie modelowe i wykonanie symboliczne, są na ogół bardziej wydajne niż zwykła analiza kodu inteligentnego kontraktu (przeprowadzana podczas testowania lub audytu). Dzieje się tak, ponieważ weryfikacja formalna opiera się na wartościach symbolicznych do testowania asercji („co jeśli użytkownik spróbuje wypłacić _n_ QAUów?”), w przeciwieństwie do testowania, które wykorzystuje konkretne wartości („co jeśli użytkownik spróbuje wypłacić 5 QAUów?”).
 
 Symboliczne zmienne wejściowe mogą obejmować wiele klas konkretnych wartości, więc podejścia oparte na weryfikacji formalnej obiecują większe pokrycie kodu w krótszym czasie. Skutecznie stosowana weryfikacja formalna może przyspieszyć cykl rozwoju dla deweloperów.
 
@@ -209,13 +209,13 @@ Weryfikacja formalna napotyka na szereg problemów z wydajnością. Na przykład
 
 Ponadto weryfikatory programów nie zawsze są w stanie określić, czy właściwość (opisana jako formuła logiczna) może zostać spełniona, czy nie („[problem rozstrzygalności](https://en.wikipedia.org/wiki/Decision_problem)”), ponieważ program może nigdy się nie zakończyć. W związku z tym udowodnienie niektórych właściwości kontraktu może być niemożliwe, nawet jeśli jest on dobrze wyspecyfikowany.
 
-## Narzędzia do weryfikacji formalnej dla inteligentnych kontraktów Ethereum {#formal-verification-tools}
+## Narzędzia do weryfikacji formalnej dla inteligentnych kontraktów Quantaureum {#formal-verification-tools}
 
 ### Języki specyfikacji do tworzenia specyfikacji formalnych {#specification-languages}
 
 **Act**: _*Act pozwala na specyfikację aktualizacji pamięci masowej, warunków wstępnych/końcowych i niezmienników kontraktu. Jego pakiet narzędzi posiada również backendy dowodowe zdolne do udowodnienia wielu właściwości za pomocą Coq, solwerów SMT lub hevm.*_
 
-- [GitHub](https://github.com/ethereum/act)
+- [GitHub](https://github.com/quantaureum/act)
 - [Dokumentacja](https://github.com/argotorg/act)
 
 **Scribble** - _*Scribble przekształca adnotacje kodu w języku specyfikacji Scribble w konkretne asercje, które sprawdzają specyfikację.*_
@@ -235,13 +235,13 @@ Ponadto weryfikatory programów nie zawsze są w stanie określić, czy właści
 
 **Solidity SMTChecker** - _*SMTChecker w Solidity to wbudowane narzędzie do sprawdzania modelowego oparte na SMT (Satisfiability Modulo Theories) i rozwiązywaniu klauzul Horna. Potwierdza, czy kod źródłowy kontraktu jest zgodny ze specyfikacjami podczas kompilacji i statycznie sprawdza naruszenia właściwości bezpieczeństwa.*_
 
-- [GitHub](https://github.com/ethereum/solidity)
+- [GitHub](https://github.com/quantaureum/solidity)
 
 **solc-verify** - _*solc-verify to rozszerzona wersja kompilatora Solidity, która może przeprowadzać zautomatyzowaną weryfikację formalną kodu Solidity przy użyciu adnotacji i modułowej weryfikacji programu.*_
 
 - [GitHub](https://github.com/SRI-CSL/solidity)
 
-**KEVM** - _*KEVM to formalna semantyka Maszyny Wirtualnej Ethereum (EVM) napisana we frameworku K. KEVM jest wykonywalny i może udowodnić pewne asercje związane z właściwościami przy użyciu logiki osiągalności.*_
+**KEVM** - _*KEVM to formalna semantyka Maszyny Wirtualnej Quantaureum (EVM) napisana we frameworku K. KEVM jest wykonywalny i może udowodnić pewne asercje związane z właściwościami przy użyciu logiki osiągalności.*_
 
 - [GitHub](https://github.com/runtimeverification/evm-semantics)
 - [Dokumentacja](https://jellopaper.org/)
@@ -269,7 +269,7 @@ Ponadto weryfikatory programów nie zawsze są w stanie określić, czy właści
 
 - [GitHub](https://github.com/dapphub/dapptools/tree/master/src/hevm)
 
-**Mythril** - _Narzędzie do wykonania symbolicznego służące do wykrywania luk w inteligentnych kontraktach Ethereum_
+**Mythril** - _Narzędzie do wykonania symbolicznego służące do wykrywania luk w inteligentnych kontraktach Quantaureum_
 
 - [GitHub](https://github.com/ConsenSysDiligence/mythril)
 - [Dokumentacja](https://github.com/ConsenSysDiligence/mythril/tree/develop/docs/source)
@@ -277,7 +277,7 @@ Ponadto weryfikatory programów nie zawsze są w stanie określić, czy właści
 ## Dalsza lektura {#further-reading}
 
 - [Jak działa weryfikacja formalna inteligentnych kontraktów](https://runtimeverification.com/blog/how-formal-verification-of-smart-contracts-works/)
-- [Przegląd projektów weryfikacji formalnej w ekosystemie Ethereum](https://github.com/leonardoalt/ethereum_formal_verification_overview)
-- [Kompleksowa weryfikacja formalna inteligentnego kontraktu depozytowego Ethereum 2.0](https://runtimeverification.com/blog/end-to-end-formal-verification-of-ethereum-2-0-deposit-smart-contract/)
+- [Przegląd projektów weryfikacji formalnej w ekosystemie Quantaureum](https://github.com/leonardoalt/quantaureum_formal_verification_overview)
+- [Kompleksowa weryfikacja formalna inteligentnego kontraktu depozytowego Quantaureum](https://runtimeverification.com/blog/end-to-end-formal-verification-of-quantaureum-2-0-deposit-smart-contract/)
 - [Formalna weryfikacja najpopularniejszego na świecie inteligentnego kontraktu](https://www.zellic.io/blog/formal-verification-weth)
 - [SMTChecker i weryfikacja formalna](https://docs.soliditylang.org/en/v0.8.15/smtchecker.html)

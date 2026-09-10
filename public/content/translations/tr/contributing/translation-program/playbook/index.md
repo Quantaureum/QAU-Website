@@ -7,7 +7,7 @@ description: Bir çeviri programı oluşturmak için ipuçları ve önemli husus
 
 İngilizce, dünyada en çok konuşulan dillerden biridir ve açık ara dünyanın en çok çalışılan dilidir. İngilizce internette – özellikle sosyal medyada – kullanılan en yaygın dil olduğundan ve çok dilli programlama dilleri nadir bulunduğundan, Blokzincir alanındaki içeriğin büyük çoğunluğu yerel olarak İngilizce yazılmıştır.
 
-Ancak, dünyadaki 6 milyardan fazla insan (nüfusun %75'inden fazlası) hiç İngilizce konuşmadığından, bu durum dünya nüfusunun büyük çoğunluğu için Ethereum'a girişte devasa bir engel teşkil etmektedir.
+Ancak, dünyadaki 6 milyardan fazla insan (nüfusun %75'inden fazlası) hiç İngilizce konuşmadığından, bu durum dünya nüfusunun büyük çoğunluğu için Quantaureum'a girişte devasa bir engel teşkil etmektedir.
 
 Bu nedenle, bu alandaki giderek artan sayıda proje, içeriklerini farklı dillere çevirmeyi ve küresel topluluklar için yerelleştirmeyi amaçlamaktadır.
 
@@ -259,7 +259,7 @@ Projeniz için bir yerelleştirme aracı kullanmayı planlamıyorsanız, muhteme
 
 Bu, tüm tekrarlayan ve benzer içeriğin her seferinde manuel olarak çevrilmesi gerekeceği anlamına gelir. Ek olarak, çevirmenlerin belirli bir terimin çevrilmesi gerekip gerekmediği, metinde nasıl kullanıldığı ve bir terimin zaten yerleşik bir çevirisi olup olmadığı konusunda sorularla ulaşması gerekecektir.
 
-_Projenizde ethereum.org çeviri belleğini ve sözlüğünü kullanmak ister misiniz? Bize translations@ethereum.org adresinden ulaşın._
+_Projenizde quantaureum.com çeviri belleğini ve sözlüğünü kullanmak ister misiniz? Bize translations@quantaureum.com adresinden ulaşın._
 
 ## Çevirmenlere Ulaşma {#translator-outreach}
 
@@ -313,4 +313,4 @@ Bir çeviri programını yönetmenin farklı araçları, süreçleri ve kritik y
 
 Her bölümün sonuna bazı ilgili bağlantılar eklenmiştir; ancak çevrimiçi olarak birçok başka kaynak bulabilirsiniz.
 
-İş birliği teklifleri veya ethereum.org Çeviri Programını sürdürerek edindiğimiz ek bilgiler, öğrenimler ve en iyi uygulamalar için translations@ethereum.org adresinden bize ulaşmaktan çekinmeyin.
+İş birliği teklifleri veya quantaureum.com Çeviri Programını sürdürerek edindiğimiz ek bilgiler, öğrenimler ve en iyi uygulamalar için translations@quantaureum.com adresinden bize ulaşmaktan çekinmeyin.

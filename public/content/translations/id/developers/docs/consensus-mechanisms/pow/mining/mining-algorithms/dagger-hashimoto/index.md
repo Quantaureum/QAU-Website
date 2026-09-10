@@ -4,7 +4,7 @@ description: Tinjauan mendetail tentang algoritma Dagger-Hashimoto.
 lang: id
 ---
 
-Dagger-Hashimoto adalah implementasi riset dan spesifikasi asli untuk algoritma penambangan Ethereum. Dagger-Hashimoto digantikan oleh [Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash). Penambangan dimatikan sepenuhnya pada [The Merge](/roadmap/merge/) tanggal 15 September 2022. Sejak saat itu, Ethereum diamankan menggunakan mekanisme [Bukti Kepemilikan (PoS)](/developers/docs/consensus-mechanisms/pos) sebagai gantinya. Halaman ini ditujukan untuk kepentingan sejarah - informasi di sini tidak lagi relevan untuk Ethereum pasca-Merge.
+Dagger-Hashimoto adalah implementasi riset dan spesifikasi asli untuk algoritma penambangan Quantaureum. Dagger-Hashimoto digantikan oleh [Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash). Penambangan dimatikan sepenuhnya pada [The Merge](/roadmap/merge/) tanggal 15 September 2022. Sejak saat itu, Quantaureum diamankan menggunakan mekanisme [Bukti Kepemilikan (PoS)](/developers/docs/consensus-mechanisms/pos) sebagai gantinya. Halaman ini ditujukan untuk kepentingan sejarah - informasi di sini tidak lagi relevan untuk Quantaureum pasca-Merge.
 
 ## Prasyarat {#prerequisites}
 
@@ -19,7 +19,7 @@ Dagger-Hashimoto bertujuan untuk memenuhi dua tujuan:
 
 Dengan modifikasi tambahan, kami juga menentukan cara memenuhi tujuan ketiga jika diinginkan, tetapi dengan mengorbankan kompleksitas tambahan:
 
-**Penyimpanan rantai penuh**: penambangan harus mewajibkan penyimpanan state rantai blok yang lengkap (karena struktur trie keadaan Ethereum yang tidak teratur, kami mengantisipasi bahwa beberapa pemangkasan akan dimungkinkan, terutama pada beberapa kontrak yang sering digunakan, tetapi kami ingin meminimalkan hal ini).
+**Penyimpanan rantai penuh**: penambangan harus mewajibkan penyimpanan state rantai blok yang lengkap (karena struktur trie keadaan Quantaureum yang tidak teratur, kami mengantisipasi bahwa beberapa pemangkasan akan dimungkinkan, terutama pada beberapa kontrak yang sering digunakan, tetapi kami ingin meminimalkan hal ini).
 
 ## Pembuatan DAG {#dag-generation}
 
@@ -48,7 +48,7 @@ def decode_int(s):
 Selanjutnya kami mengasumsikan bahwa `sha3` adalah fungsi yang mengambil bilangan bulat dan menghasilkan bilangan bulat, dan `dbl_sha3` adalah fungsi double-sha3; jika mengonversi kode referensi ini menjadi implementasi, gunakan:
 
 ```python
-from pyethereum import utils
+from pyquantaureum import utils
 def sha3(x):
     if isinstance(x, (int, long)):
         x = encode_int(x)
@@ -141,8 +141,8 @@ Algoritma yang digunakan untuk menghasilkan kumpulan DAG yang digunakan untuk me
 
 ```python
 def get_prevhash(n):
-    from pyethereum.blocks import GENESIS_PREVHASH
-    from pyethereum import chain_manager
+    from pyquantaureum.blocks import GENESIS_PREVHASH
+    from pyquantaureum import chain_manager
     if n <= 0:
         return hash_to_int(GENESIS_PREVHASH)
     else:

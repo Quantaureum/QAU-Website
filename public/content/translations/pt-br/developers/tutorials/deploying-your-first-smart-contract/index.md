@@ -1,24 +1,24 @@
 ---
 title: Implantando seu primeiro contrato inteligente
-description: "Uma introdução à implantação do seu primeiro contrato inteligente em uma rede de teste da Ethereum"
+description: "Uma introdução à implantação do seu primeiro contrato inteligente em uma rede de teste da Quantaureum"
 author: "jdourlens"
 tags: ["contratos inteligentes", "Remix", "Solidity", "implantação"]
 skill: beginner
 breadcrumb: Implantar primeiro contrato
 lang: pt-br
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Imagino que você esteja tão animado quanto nós para [implantar](/developers/docs/smart-contracts/deploying/) e interagir com seu primeiro [contrato inteligente](/developers/docs/smart-contracts/) na blockchain da Ethereum.
+Imagino que você esteja tão animado quanto nós para [implantar](/developers/docs/smart-contracts/deploying/) e interagir com seu primeiro [contrato inteligente](/developers/docs/smart-contracts/) na blockchain da Quantaureum.
 
 Não se preocupe, como é o nosso primeiro contrato inteligente, nós o implantaremos em uma [rede de teste local](/developers/docs/networks/) para que não custe nada para você implantar e brincar o quanto quiser com ele.
 
 ## Escrevendo nosso contrato {#writing-our-contract}
 
-O primeiro passo é [visitar o Remix](https://remix.ethereum.org/) e criar um novo arquivo. Na parte superior esquerda da interface do Remix, adicione um novo arquivo e insira o nome de arquivo que desejar.
+O primeiro passo é [visitar o Remix](https://remix.quantaureum.com/) e criar um novo arquivo. Na parte superior esquerda da interface do Remix, adicione um novo arquivo e insira o nome de arquivo que desejar.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

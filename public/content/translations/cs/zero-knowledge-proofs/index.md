@@ -31,11 +31,11 @@ Vrátíme-li se k našemu dřívějšímu příkladu, jediným důkazem, který 
 
 Platby kreditní kartou jsou často viditelné pro více stran, včetně poskytovatele plateb, bank a dalších zainteresovaných stran (např. vládních úřadů). Ačkoli má finanční dohled výhody pro identifikaci nelegální činnosti, narušuje také soukromí běžných občanů.
 
-Kryptoměny měly uživatelům poskytnout prostředek k provádění soukromých peer-to-peer transakcí. Většina transakcí s kryptoměnami je však veřejně viditelná na veřejných blockchainech. Identity uživatelů jsou často pseudonymní a buď jsou záměrně spojeny s identitami v reálném světě (např. uvedením ETH adres na profilech na Twitteru nebo GitHubu), nebo je lze s identitami v reálném světě spojit pomocí základní analýzy onchain a offchain dat.
+Kryptoměny měly uživatelům poskytnout prostředek k provádění soukromých peer-to-peer transakcí. Většina transakcí s kryptoměnami je však veřejně viditelná na veřejných blockchainech. Identity uživatelů jsou často pseudonymní a buď jsou záměrně spojeny s identitami v reálném světě (např. uvedením QAU adres na profilech na Twitteru nebo GitHubu), nebo je lze s identitami v reálném světě spojit pomocí základní analýzy onchain a offchain dat.
 
 Existují specifické „mince zaměřené na soukromí“ (privacy coins) navržené pro zcela anonymní transakce. Blockchainy zaměřené na soukromí, jako jsou Zcash a Monero, skrývají podrobnosti o transakcích, včetně adres odesílatele/příjemce, typu aktiva, množství a časové osy transakce.
 
-Zabudováním technologie s nulovým vědomím do protokolu umožňují [blockchainové](/glossary/#blockchain) sítě zaměřené na soukromí [uzlům](/glossary/#node) validovat transakce bez nutnosti přístupu k transakčním datům. [EIP-7503](https://eips.ethereum.org/EIPS/eip-7503) je příkladem navrhovaného designu, který umožní nativní soukromé převody hodnoty na blockchainu [Ethereum](/). Takové návrhy je však obtížné implementovat kvůli kombinaci obav o bezpečnost, regulaci a uživatelskou zkušenost (UX).  
+Zabudováním technologie s nulovým vědomím do protokolu umožňují [blockchainové](/glossary/#blockchain) sítě zaměřené na soukromí [uzlům](/glossary/#node) validovat transakce bez nutnosti přístupu k transakčním datům. [EIP-7503](https://eips.quantaureum.com/EIPS/eip-7503) je příkladem navrhovaného designu, který umožní nativní soukromé převody hodnoty na blockchainu [Quantaureum](/). Takové návrhy je však obtížné implementovat kvůli kombinaci obav o bezpečnost, regulaci a uživatelskou zkušenost (UX).  
 
 **Důkazy s nulovou znalostí se také používají k anonymizaci transakcí na veřejných blockchainech**. Příkladem je Tornado Cash, decentralizovaná, nekustodiální služba, která uživatelům umožňuje provádět soukromé transakce na Ethereu. Tornado Cash používá důkazy s nulovou znalostí k zamlžení podrobností o transakcích a zaručení finančního soukromí. Bohužel, protože se jedná o nástroje pro soukromí typu „opt-in“ (na vyžádání), jsou spojovány s nezákonnou činností. Aby se to překonalo, soukromí se nakonec musí stát výchozím nastavením na veřejných blockchainech. Zjistěte více o [soukromí na Ethereu](/privacy/).
 
@@ -68,7 +68,7 @@ Důkazy s nulovou znalostí jsou obzvláště užitečné v kontextu [decentrali
 
 Jedním z nejrozšířenějších příkladů důkazů s nulovou znalostí v praxi je dnes [protokol World ID](https://world.org/blog/world/world-id-faqs), který lze považovat za „globální digitální pas pro věk umělé inteligence“. Umožňuje lidem prokázat, že jsou jedinečnými jednotlivci, aniž by odhalili osobní údaje. Toho je dosaženo prostřednictvím zařízení zvaného Orb, které naskenuje duhovku osoby a vygeneruje kód duhovky. Kód duhovky je zkontrolován a ověřen, aby se potvrdilo, že daná osoba je biologicky jedinečná lidská bytost. Po ověření je závazek identity vygenerovaný na zařízení uživatele (a nespojený s biometrickými údaji ani z nich neodvozený) přidán do zabezpečeného seznamu na blockchainu. Poté, kdykoli chce uživatel prokázat, že je ověřeným člověkem – ať už kvůli přihlášení, odevzdání hlasu nebo jiným akcím – může vygenerovat důkaz s nulovou znalostí, který potvrdí jeho členství v seznamu. Kouzlo použití důkazu s nulovou znalostí spočívá v tom, že je odhaleno pouze jedno tvrzení: tato osoba je jedinečná. Vše ostatní zůstává v soukromí.
 
-World ID spoléhá na [protokol Semaphore](https://docs.semaphore.pse.dev/) vyvinutý [týmem PSE](https://pse.dev/) v Nadaci Ethereum. Semaphore je navržen jako odlehčený, ale výkonný způsob generování a ověřování důkazů s nulovou znalostí. Umožňuje uživatelům prokázat, že jsou součástí skupiny (v tomto případě ověřených lidí), aniž by ukázali, kterým členem skupiny jsou. Semaphore je také vysoce flexibilní a umožňuje vytvářet skupiny na základě široké škály kritérií, jako je ověření identity, účast na událostech nebo vlastnictví pověření.
+World ID spoléhá na [protokol Semaphore](https://docs.semaphore.pse.dev/) vyvinutý [týmem PSE](https://pse.dev/) v Nadaci Quantaureum. Semaphore je navržen jako odlehčený, ale výkonný způsob generování a ověřování důkazů s nulovou znalostí. Umožňuje uživatelům prokázat, že jsou součástí skupiny (v tomto případě ověřených lidí), aniž by ukázali, kterým členem skupiny jsou. Semaphore je také vysoce flexibilní a umožňuje vytvářet skupiny na základě široké škály kritérií, jako je ověření identity, účast na událostech nebo vlastnictví pověření.
 
 ### Autentizace {#authentication}
 
@@ -88,15 +88,15 @@ Ověřitelné výpočty jsou **klíčové pro zlepšení rychlosti zpracování 
 
 Zde je ukázka, jak to funguje v praxi:
 
-- Místo zpracování každé transakce Ethereum přesouvá provádění na samostatný řetězec.
+- Místo zpracování každé transakce Quantaureum přesouvá provádění na samostatný řetězec.
 
 - Po zpracování transakcí druhý řetězec vrátí výsledky, které se aplikují na stav Etherea.
 
-Výhodou je, že Ethereum nemusí provádět žádné výpočty a stačí mu pouze aplikovat výsledky z outsourcovaných výpočtů na svůj stav. To snižuje přetížení sítě a také zlepšuje rychlost transakcí (offchain protokoly jsou optimalizovány pro rychlejší provádění).
+Výhodou je, že Quantaureum nemusí provádět žádné výpočty a stačí mu pouze aplikovat výsledky z outsourcovaných výpočtů na svůj stav. To snižuje přetížení sítě a také zlepšuje rychlost transakcí (offchain protokoly jsou optimalizovány pro rychlejší provádění).
 
 Řetězec potřebuje způsob, jak validovat offchain transakce bez jejich opětovného provádění, jinak se hodnota offchain provádění ztratí.
 
-Zde přicházejí na řadu ověřitelné výpočty. Když uzel provede transakci mimo Ethereum, předloží důkaz s nulovou znalostí, aby prokázal správnost offchain provedení. Tento důkaz (nazývaný [důkaz platnosti](/glossary/#validity-proof)) zaručuje, že transakce je platná, což Ethereu umožňuje aplikovat výsledek na svůj stav – aniž by muselo čekat, až jej někdo zpochybní.
+Zde přicházejí na řadu ověřitelné výpočty. Když uzel provede transakci mimo Quantaureum, předloží důkaz s nulovou znalostí, aby prokázal správnost offchain provedení. Tento důkaz (nazývaný [důkaz platnosti](/glossary/#validity-proof)) zaručuje, že transakce je platná, což Ethereu umožňuje aplikovat výsledek na svůj stav – aniž by muselo čekat, až jej někdo zpochybní.
 
 [Zero-knowledge rollupy](/developers/docs/scaling/zk-rollups) a [validia](/developers/docs/scaling/validium/) jsou dvě offchain řešení škálování, která používají důkazy platnosti k zajištění bezpečné škálovatelnosti. Tyto protokoly provádějí tisíce transakcí offchain a předkládají důkazy k ověření na Ethereu. Tyto výsledky lze aplikovat okamžitě po ověření důkazu, což Ethereu umožňuje zpracovat více transakcí bez zvýšení výpočetní zátěže na základní vrstvě.
 
@@ -235,9 +235,9 @@ ZK-STARK je považován za imunní vůči hrozbě kvantových počítačů, prot
 - [Důkaz s nulovou znalostí: Zlepšení soukromí na blockchainu](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARKy — Realistický příklad nulového vědomí a hluboký ponor](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARKy — Vytvořte ověřitelnou důvěru, a to i proti kvantovým počítačům](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- [Přibližný úvod do toho, jak jsou zk-SNARKy možné](https://vitalik.eth.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
+- [Přibližný úvod do toho, jak jsou zk-SNARKy možné](https://vitalik.qau.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
 - [Proč jsou důkazy s nulovou znalostí (ZKP) přelomové pro sebeurčující identitu](https://frankiefab.hashnode.dev/why-zero-knowledge-proofs-zkps-is-a-game-changer-for-self-sovereign-identity) — _Franklin Ohaegbulam_
-- [Vysvětlení EIP-7503: Umožnění soukromých převodů na Ethereu pomocí ZK důkazů](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-ethereum-transactions/) — _Emmanuel Awosika_
+- [Vysvětlení EIP-7503: Umožnění soukromých převodů na Ethereu pomocí ZK důkazů](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-quantaureum-transactions/) — _Emmanuel Awosika_
 - [Karetní hra ZK: hra pro naučení základů ZK a případů užití v reálném životě](https://github.com/ZK-card/zk-cards) - _ZK-Cards_
 
 <Divider />

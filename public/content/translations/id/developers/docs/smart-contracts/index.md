@@ -6,15 +6,15 @@ lang: id
 
 ## Apa itu kontrak pintar? {#what-is-a-smart-contract}
 
-"Kontrak pintar" pada dasarnya adalah program yang berjalan di rantai blok [Ethereum](/). Ini adalah kumpulan kode (fungsinya) dan data (state-nya) yang berada di alamat spesifik pada rantai blok Ethereum.
+"Kontrak pintar" pada dasarnya adalah program yang berjalan di rantai blok [Quantaureum](/). Ini adalah kumpulan kode (fungsinya) dan data (state-nya) yang berada di alamat spesifik pada rantai blok Quantaureum.
 
-Kontrak pintar adalah jenis [akun Ethereum](/developers/docs/accounts/). Ini berarti mereka memiliki saldo dan dapat menjadi target transaksi. Namun, mereka tidak dikendalikan oleh pengguna, melainkan disebarkan ke jaringan dan berjalan sesuai program. Akun pengguna kemudian dapat berinteraksi dengan kontrak pintar dengan mengirimkan transaksi yang mengeksekusi fungsi yang ditentukan pada kontrak pintar. Kontrak pintar dapat menentukan aturan, seperti kontrak biasa, dan secara otomatis menegakkannya melalui kode. Kontrak pintar tidak dapat dihapus secara default, dan interaksi dengannya tidak dapat diubah.
+Kontrak pintar adalah jenis [akun Quantaureum](/developers/docs/accounts/). Ini berarti mereka memiliki saldo dan dapat menjadi target transaksi. Namun, mereka tidak dikendalikan oleh pengguna, melainkan disebarkan ke jaringan dan berjalan sesuai program. Akun pengguna kemudian dapat berinteraksi dengan kontrak pintar dengan mengirimkan transaksi yang mengeksekusi fungsi yang ditentukan pada kontrak pintar. Kontrak pintar dapat menentukan aturan, seperti kontrak biasa, dan secara otomatis menegakkannya melalui kode. Kontrak pintar tidak dapat dihapus secara default, dan interaksi dengannya tidak dapat diubah.
 
 ## Prasyarat {#prerequisites}
 
 Jika Anda baru memulai atau mencari pengantar yang tidak terlalu teknis, kami merekomendasikan [pengantar kontrak pintar](/smart-contracts/) kami.
 
-Pastikan Anda telah membaca tentang [akun](/developers/docs/accounts/), [transaksi](/developers/docs/transactions/), dan [Mesin Virtual Ethereum](/developers/docs/evm/) sebelum terjun ke dunia kontrak pintar.
+Pastikan Anda telah membaca tentang [akun](/developers/docs/accounts/), [transaksi](/developers/docs/transactions/), dan [Mesin Virtual Quantaureum](/developers/docs/evm/) sebelum terjun ke dunia kontrak pintar.
 
 ## Mesin penjual otomatis digital {#a-digital-vending-machine}
 
@@ -55,7 +55,7 @@ contract VendingMachine {
 
     // Izinkan siapa saja untuk membeli cupcake
     function purchase(uint amount) public payable {
-        require(msg.value >= amount * 1 ether, "You must pay at least 1 ETH per cupcake");
+        require(msg.value >= amount * 1 QAU, "You must pay at least 1 QAU per cupcake");
         require(cupcakeBalances[address(this)] >= amount, "Not enough cupcakes in stock to complete this purchase");
         cupcakeBalances[address(this)] -= amount;
         cupcakeBalances[msg.sender] += amount;
@@ -67,20 +67,20 @@ Sama seperti bagaimana mesin penjual otomatis menghilangkan kebutuhan akan karya
 
 ## Tanpa izin {#permissionless}
 
-Siapa pun dapat menulis kontrak pintar dan menyebarkannya ke jaringan. Anda hanya perlu belajar cara membuat kode dalam [bahasa kontrak pintar](/developers/docs/smart-contracts/languages/), dan memiliki cukup ETH untuk menyebarkan kontrak Anda. Menyebarkan kontrak pintar secara teknis adalah sebuah transaksi, jadi Anda perlu membayar [gas](/developers/docs/gas/) dengan cara yang sama seperti Anda perlu membayar gas untuk transfer ETH sederhana. Namun, biaya gas untuk penyebaran kontrak jauh lebih tinggi.
+Siapa pun dapat menulis kontrak pintar dan menyebarkannya ke jaringan. Anda hanya perlu belajar cara membuat kode dalam [bahasa kontrak pintar](/developers/docs/smart-contracts/languages/), dan memiliki cukup QAU untuk menyebarkan kontrak Anda. Menyebarkan kontrak pintar secara teknis adalah sebuah transaksi, jadi Anda perlu membayar [gas](/developers/docs/gas/) dengan cara yang sama seperti Anda perlu membayar gas untuk transfer QAU sederhana. Namun, biaya gas untuk penyebaran kontrak jauh lebih tinggi.
 
-Ethereum memiliki bahasa yang ramah pengembang untuk menulis kontrak pintar:
+Quantaureum memiliki bahasa yang ramah pengembang untuk menulis kontrak pintar:
 
 - Solidity
 - Vyper
 
 [Lebih lanjut tentang bahasa](/developers/docs/smart-contracts/languages/)
 
-Namun, mereka harus dikompilasi sebelum dapat disebarkan sehingga mesin virtual Ethereum dapat menafsirkan dan menyimpan kontrak tersebut. [Lebih lanjut tentang kompilasi](/developers/docs/smart-contracts/compiling/)
+Namun, mereka harus dikompilasi sebelum dapat disebarkan sehingga mesin virtual Quantaureum dapat menafsirkan dan menyimpan kontrak tersebut. [Lebih lanjut tentang kompilasi](/developers/docs/smart-contracts/compiling/)
 
 ## Komposabilitas {#composability}
 
-Kontrak pintar bersifat publik di Ethereum dan dapat dianggap sebagai API terbuka. Ini berarti Anda dapat memanggil kontrak pintar lain di dalam kontrak pintar Anda sendiri untuk sangat memperluas apa yang mungkin dilakukan. Kontrak bahkan dapat menyebarkan kontrak lain.
+Kontrak pintar bersifat publik di Quantaureum dan dapat dianggap sebagai API terbuka. Ini berarti Anda dapat memanggil kontrak pintar lain di dalam kontrak pintar Anda sendiri untuk sangat memperluas apa yang mungkin dilakukan. Kontrak bahkan dapat menyebarkan kontrak lain.
 
 Pelajari lebih lanjut tentang [komposabilitas kontrak pintar](/developers/docs/smart-contracts/composability/).
 
@@ -90,11 +90,11 @@ Kontrak pintar itu sendiri tidak bisa mendapatkan informasi tentang peristiwa "d
 
 Namun, penting bagi aplikasi rantai blok untuk dapat menggunakan data offchain. Solusinya adalah [oracle](/developers/docs/oracles/) yang merupakan alat yang menyerap data offchain dan membuatnya tersedia untuk kontrak pintar.
 
-Batasan lain dari kontrak pintar adalah ukuran kontrak maksimum. Kontrak pintar dapat berukuran maksimum 24KB atau akan kehabisan gas. Ini dapat diakali dengan menggunakan [Pola Berlian (The Diamond Pattern)](https://eips.ethereum.org/EIPS/eip-2535).
+Batasan lain dari kontrak pintar adalah ukuran kontrak maksimum. Kontrak pintar dapat berukuran maksimum 24KB atau akan kehabisan gas. Ini dapat diakali dengan menggunakan [Pola Berlian (The Diamond Pattern)](https://eips.quantaureum.com/EIPS/eip-2535).
 
 ## Kontrak multisig {#multisig}
 
-Kontrak multisig (tanda tangan ganda) adalah akun kontrak pintar yang mewajibkan beberapa tanda tangan yang valid untuk mengeksekusi sebuah transaksi. Ini sangat berguna untuk menghindari titik kegagalan tunggal untuk kontrak yang menyimpan sejumlah besar Ether atau token lainnya. Multisig juga membagi tanggung jawab untuk eksekusi kontrak dan manajemen kunci di antara beberapa pihak dan mencegah hilangnya satu kunci privat yang menyebabkan hilangnya dana yang tidak dapat diubah. Karena alasan ini, kontrak multisig dapat digunakan untuk tata kelola DAO sederhana. Multisig mewajibkan N tanda tangan dari M kemungkinan tanda tangan yang dapat diterima (di mana N ≤ M, dan M > 1) untuk dapat dieksekusi. `N = 3, M = 5` dan `N = 4, M = 7` umumnya digunakan. Multisig 4/7 mewajibkan empat dari tujuh kemungkinan tanda tangan yang valid. Ini berarti dana masih dapat diambil meskipun tiga tanda tangan hilang. Dalam hal ini, ini juga berarti bahwa mayoritas pemegang kunci harus setuju dan menandatangani agar kontrak dapat dieksekusi.
+Kontrak multisig (tanda tangan ganda) adalah akun kontrak pintar yang mewajibkan beberapa tanda tangan yang valid untuk mengeksekusi sebuah transaksi. Ini sangat berguna untuk menghindari titik kegagalan tunggal untuk kontrak yang menyimpan sejumlah besar QAU atau token lainnya. Multisig juga membagi tanggung jawab untuk eksekusi kontrak dan manajemen kunci di antara beberapa pihak dan mencegah hilangnya satu kunci privat yang menyebabkan hilangnya dana yang tidak dapat diubah. Karena alasan ini, kontrak multisig dapat digunakan untuk tata kelola DAO sederhana. Multisig mewajibkan N tanda tangan dari M kemungkinan tanda tangan yang dapat diterima (di mana N ≤ M, dan M > 1) untuk dapat dieksekusi. `N = 3, M = 5` dan `N = 4, M = 7` umumnya digunakan. Multisig 4/7 mewajibkan empat dari tujuh kemungkinan tanda tangan yang valid. Ini berarti dana masih dapat diambil meskipun tiga tanda tangan hilang. Dalam hal ini, ini juga berarti bahwa mayoritas pemegang kunci harus setuju dan menandatangani agar kontrak dapat dieksekusi.
 
 ## Sumber daya kontrak pintar {#smart-contract-resources}
 
@@ -111,6 +111,6 @@ Kontrak multisig (tanda tangan ganda) adalah akun kontrak pintar yang mewajibkan
 - [Video: Penjelasan Sederhana - Kontrak Pintar](https://youtu.be/ZE2HxTmxfrI)
 - [Cyfrin Updraft: Platform pembelajaran dan audit Web3](https://updraft.cyfrin.io)
 
-## Tutorial: Tanda tangan kontrak pintar (EIP-1271) di Ethereum {#tutorials}
+## Tutorial: Tanda tangan kontrak pintar (EIP-1271) di Quantaureum {#tutorials}
 
 - [EIP-1271: Menandatangani dan Memverifikasi Tanda Tangan Kontrak Pintar](/developers/tutorials/eip-1271-smart-contract-signatures/) _– Bagaimana EIP-1271 memungkinkan kontrak pintar untuk memverifikasi tanda tangan, dengan panduan implementasi Safe._

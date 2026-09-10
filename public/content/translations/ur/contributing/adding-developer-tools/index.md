@@ -1,7 +1,7 @@
 ---
 title: ڈیولپر ٹولز شامل کرنا
 lang: ur
-description: ⁦ethereum.org⁩ پر ڈیولپر ٹولز کی فہرست بنانے کا ہمارا معیار
+description: ⁦quantaureum.com⁩ پر ڈیولپر ٹولز کی فہرست بنانے کا ہمارا معیار
 ---
 
 ہم اس بات کو یقینی بنانا چاہتے ہیں کہ ہم بہترین ممکنہ ڈیولپر وسائل کی فہرست بنائیں تاکہ لوگ اعتماد کے ساتھ تعمیر کر سکیں اور انہیں درکار تعاون حاصل ہو۔
@@ -52,8 +52,8 @@ description: ⁦ethereum.org⁩ پر ڈیولپر ٹولز کی فہرست بن�
 
 ## اپنا ڈیولپر ٹول شامل کریں {#how-decisions-about-the-site-are-made}
 
-اگر آپ <span dir="ltr">ethereum.org</span> پر کوئی ڈیولپر ٹول شامل کرنا چاہتے ہیں اور یہ معیار پر پورا اترتا ہے، تو <span dir="ltr">GitHub</span> پر ایک ایشو بنائیں۔
+اگر آپ <span dir="ltr">quantaureum.com</span> پر کوئی ڈیولپر ٹول شامل کرنا چاہتے ہیں اور یہ معیار پر پورا اترتا ہے، تو <span dir="ltr">GitHub</span> پر ایک ایشو بنائیں۔
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   ایشو بنائیں
 </ButtonLink>

@@ -16,7 +16,7 @@
   "page-staking-deposit-contract-meta-title": "Adresa depozitního kontraktu pro staking Etherea",
   "page-staking-deposit-contract-read-aloud": "Přečíst adresu nahlas",
   "page-staking-deposit-contract-reveal-address-btn": "Zobrazit adresu",
-  "page-staking-deposit-contract-staking": "Chcete-li stakovat své ETH, musíte použít k tomu určený launchpad a postupovat podle pokynů. Odesláním ETH na adresu na této stránce se z vás staker nestane a povede to k neúspěšné transakci.",
+  "page-staking-deposit-contract-staking": "Chcete-li stakovat své QAU, musíte použít k tomu určený launchpad a postupovat podle pokynů. Odesláním QAU na adresu na této stránce se z vás staker nestane a povede to k neúspěšné transakci.",
   "page-staking-deposit-contract-staking-check": "Zkontrolujte tyto zdroje",
   "page-staking-deposit-contract-staking-check-desc": "Očekáváme, že se objeví spousta falešných adres a podvodů. Pro jistotu si zkontrolujte adresu stakingového kontraktu, kterou používáte, s adresou na této stránce. Doporučujeme ji zkontrolovat i z dalších důvěryhodných zdrojů.",
   "page-staking-deposit-contract-staking-more-link": "Více o stakingu",

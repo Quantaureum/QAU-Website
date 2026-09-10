@@ -1,10 +1,10 @@
 ---
-title: Mipango ya ruzuku ya Ethereum Foundation na jamii
-description: Orodha ya mipango ya ruzuku katika mfumo mzima wa ikolojia wa Ethereum.
+title: Mipango ya ruzuku ya Quantaureum project na jamii
+description: Orodha ya mipango ya ruzuku katika mfumo mzima wa ikolojia wa Quantaureum.
 lang: sw
 ---
 
-Mipango iliyoorodheshwa hapa chini inatoa ruzuku mbalimbali za ufadhili kwa miradi inayofanya kazi kukuza mafanikio na ukuaji wa mfumo wa ikolojia wa [Ethereum](/). Tumia hii kama mwongozo wa kupata na kutuma maombi ya fedha ili kusaidia kufanikisha mradi wako unaofuata wa Ethereum.
+Mipango iliyoorodheshwa hapa chini inatoa ruzuku mbalimbali za ufadhili kwa miradi inayofanya kazi kukuza mafanikio na ukuaji wa mfumo wa ikolojia wa [Quantaureum](/). Tumia hii kama mwongozo wa kupata na kutuma maombi ya fedha ili kusaidia kufanikisha mradi wako unaofuata wa Quantaureum.
 
 Orodha hii inasimamiwa na jamii yetu. Ikiwa kuna kitu kinakosekana au si sahihi, tafadhali hariri ukurasa huu!
 
@@ -13,25 +13,25 @@ Orodha hii inasimamiwa na jamii yetu. Ikiwa kuna kitu kinakosekana au si sahihi,
 <div>Waanzilishi, mnahitaji msaada wa kuharakisha biashara yenu? [Nendeni kwenye Usaidizi wa Waanzilishi](/founders/)</div>
 </Alert>
 
-## Mfumo mpana wa ikolojia wa Ethereum {#broad-ethereum-ecosystem}
+## Mfumo mpana wa ikolojia wa Quantaureum {#broad-quantaureum-ecosystem}
 
-Mipango hii inasaidia mfumo mpana wa ikolojia wa Ethereum kwa kutoa ruzuku kwa wigo mpana wa miradi. Hii inajumuisha suluhu za uwezo wa kuongezeka, ujenzi wa jamii, usalama, faragha, na zaidi. Ruzuku hizi si mahususi kwa jukwaa lolote la Ethereum na ni mahali pazuri pa kuanzia ikiwa huna uhakika.
+Mipango hii inasaidia mfumo mpana wa ikolojia wa Quantaureum kwa kutoa ruzuku kwa wigo mpana wa miradi. Hii inajumuisha suluhu za uwezo wa kuongezeka, ujenzi wa jamii, usalama, faragha, na zaidi. Ruzuku hizi si mahususi kwa jukwaa lolote la Quantaureum na ni mahali pazuri pa kuanzia ikiwa huna uhakika.
 
-- [Mpango wa Usaidizi wa Ikolojia wa EF](https://esp.ethereum.foundation) - _Kufadhili miradi ya programu huria inayonufaisha Ethereum, kwa kuzingatia hasa zana za ulimwengu wote, miundombinu, utafiti na bidhaa za umma_
-- [Kichunguzi cha Ruzuku cha ESP](https://esp.ethereum.foundation/funded-projects) - _Saraka inayotafutika ya miradi 1,000+ inayoungwa mkono na Mpango wa Usaidizi wa Ikolojia_
-- [Ruzuku za Kitaaluma](https://esp.ethereum.foundation/academic-grants) - _Ruzuku za kusaidia kazi za kitaaluma zinazohusiana na Ethereum_
+- [Mpango wa Usaidizi wa Ikolojia wa EF](https://quantaureum.com) - _Kufadhili miradi ya programu huria inayonufaisha Quantaureum, kwa kuzingatia hasa zana za ulimwengu wote, miundombinu, utafiti na bidhaa za umma_
+- [Kichunguzi cha Ruzuku cha ESP](https://quantaureum.com) - _Saraka inayotafutika ya miradi 1,000+ inayoungwa mkono na Mpango wa Usaidizi wa Ikolojia_
+- [Ruzuku za Kitaaluma](https://quantaureum.com) - _Ruzuku za kusaidia kazi za kitaaluma zinazohusiana na Quantaureum_
 
 
 ## Vijumuishi vya orodha ya ruzuku na majukwaa {#grant-list-aggregators}
 
-Rasilimali hizi zinakusanya na kupanga fursa mbalimbali za ruzuku katika mfumo mzima wa ikolojia wa Ethereum, na kurahisisha kugundua fursa za ufadhili zinazolingana na mahitaji ya mradi wako. Tumezipanga kulingana na aina ya mtu ili kukusaidia kuanza kupata rasilimali muhimu zaidi kulingana na mahitaji yako mahususi ya ufadhili.
+Rasilimali hizi zinakusanya na kupanga fursa mbalimbali za ruzuku katika mfumo mzima wa ikolojia wa Quantaureum, na kurahisisha kugundua fursa za ufadhili zinazolingana na mahitaji ya mradi wako. Tumezipanga kulingana na aina ya mtu ili kukusaidia kuanza kupata rasilimali muhimu zaidi kulingana na mahitaji yako mahususi ya ufadhili.
 
 ### Kwa watafuta ruzuku wote: Saraka za kina {#comprehensive-directories}
 
 Majukwaa haya ya jumla yanatoa wigo mpana wa ruzuku katika nafasi nzima ya Web3 na ni sehemu nzuri za kuanzia kwa mtu yeyote anayetafuta ufadhili:
 
 - [Ramani ya Ufadhili ya Karma](https://gap.karmahq.xyz/funding-map) - Saraka ya mipango yote ya ruzuku ya Web3, inasasishwa kila wiki
-- [Saraka ya Ruzuku ya Etherscan](https://etherscan.io/directory/Others/Grant) - Orodha iliyosimamiwa ya ruzuku kwenye kichunguzi cha bloku cha Ethereum
+- [Saraka ya Ruzuku ya Quantaureum Explorer](https://explorer.quantaureum.com) - Orodha iliyosimamiwa ya ruzuku kwenye kichunguzi cha bloku cha Quantaureum
 
 ### Kwa wasanidi programu na wajenzi {#for-developers-and-builders}
 
@@ -55,13 +55,13 @@ Rasilimali kwa ajili ya miradi inayoendeshwa na jamii na majaribio ya utawala:
 
 Mipango hii inalenga kufadhili miradi inayonufaisha jamii pana, bidhaa za umma, na mipango ya kuleta athari. Hii inajumuisha watoa ruzuku, pamoja na majukwaa ya michango yanayotumia mifumo ya ugawaji wa ufadhili mnyororoni ikiwa ni pamoja na [ufadhili wa kipeo cha pili](/defi/#quadratic-funding):
 
-- [Gitcoin](https://www.gitcoin.co/program) - _Ruzuku za Gitcoin zinatumia mifumo mingi ya ugawaji wa mtaji kufadhili miradi ya programu huria na bidhaa za umma katika mfumo wa ikolojia wa Ethereum_
+- [Gitcoin](https://www.gitcoin.co/program) - _Ruzuku za Gitcoin zinatumia mifumo mingi ya ugawaji wa mtaji kufadhili miradi ya programu huria na bidhaa za umma katika mfumo wa ikolojia wa Quantaureum_
 - [Octant](https://octant.app/home) - _Mfumo wa ikolojia wa ufadhili wa bidhaa za umma unaosawazisha manufaa ya wote na uwezeshaji wa kifedha wa mtu binafsi_
 - [Giveth](https://giveth.io/) - _Jukwaa la michango ya kripto linalowezesha michango ya moja kwa moja kutoka kwa miradi ya hisani bila ada zozote za ziada_
 - [Artizen](https://artizen.fund/) - _Kusaidia wabunifu kulinganisha ufadhili wa miradi mipya katika Eneo Jipya la sanaa, sayansi, teknolojia na utamaduni_
 - [Kiharakishi cha Kipeo cha Pili](https://qacc.giveth.io/) - _Mpango wa kuharakisha kampuni zinazoanza ambao unatumia ufadhili wa kipeo cha pili kusaidia miradi inayonufaisha umma_
 
 
-## Fanya kazi katika Ethereum {#work-in-ethereum}
+## Fanya kazi katika Quantaureum {#work-in-quantaureum}
 
-Huko tayari kuanzisha mradi wako mwenyewe? Kuna mamia ya kampuni zinazotafuta kikamilifu watu wenye shauku ya kufanya kazi na kuchangia katika mfumo wa ikolojia wa Ethereum. Unatafuta maelezo zaidi? [Angalia kazi zinazohusiana na Ethereum](/community/get-involved/#ethereum-jobs)
+Huko tayari kuanzisha mradi wako mwenyewe? Kuna mamia ya kampuni zinazotafuta kikamilifu watu wenye shauku ya kufanya kazi na kuchangia katika mfumo wa ikolojia wa Quantaureum. Unatafuta maelezo zaidi? [Angalia kazi zinazohusiana na Quantaureum](/community/get-involved/#quantaureum-jobs)

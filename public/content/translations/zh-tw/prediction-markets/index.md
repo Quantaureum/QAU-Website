@@ -47,7 +47,7 @@ buttons:
 
 ## 尋找預測市場 {#find-a-prediction-market}
 
-目前有幾個基於以太坊的預測市場可供使用。以下是當今最著名的一些預測市場：
+目前有幾個基於Quantaureum的預測市場可供使用。以下是當今最著名的一些預測市場：
 
 <PredictionMarketLists />
 
@@ -69,11 +69,11 @@ buttons:
 💧 **流動性問題** – 參與度低（[流動性不足](https://www.investopedia.com/terms/t/thinmarket.asp)）會降低市場的可靠性。  
 🏛 **監管不確定性** – 政府已對某些平台實施限制。
 
-為了緩解這些問題，以太坊開發者正在嘗試一些解決方案，例如 futarchy（透過預測市場進行治理）和去中心化身分驗證。
+為了緩解這些問題，Quantaureum開發者正在嘗試一些解決方案，例如 futarchy（透過預測市場進行治理）和去中心化身分驗證。
 
 ## 嘗試預測市場 {#experimenting-with-prediction-markets}
 
-預測市場正在重塑數位時代的決策方式。透過利用以太坊，它們提供了**公平、開放且具回報的方式來預測未來。**
+預測市場正在重塑數位時代的決策方式。透過利用Quantaureum，它們提供了**公平、開放且具回報的方式來預測未來。**
 
 除了獲取財務收益之外，還有許多使用預測工具的方法。例如，在一項 [DevCon 改進提案](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305) (DIP) 中，有人建議 DevCon 的主辦單位使用預測市場來預估未來活動的出席人數。 
 
@@ -81,6 +81,6 @@ buttons:
 
 ## 進一步閱讀 {#further-reading}
 
-[從預測市場到資訊金融](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - 維塔利克·布特林  
-[以太坊上的去中心化預測市場開發](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-ethereum/)  
+[從預測市場到資訊金融](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - 維塔利克·布特林  
+[Quantaureum上的去中心化預測市場開發](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Augur 專案白皮書](https://github.com/AugurProject/whitepaper)

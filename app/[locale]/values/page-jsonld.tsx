@@ -42,8 +42,8 @@ export default async function ValuesPageJsonLD({
         url,
         inLanguage: locale,
         contributor: contributorList,
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
@@ -61,8 +61,8 @@ export default async function ValuesPageJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        reviewedBy: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
         mainEntity: articleId,
       },
       {
@@ -71,9 +71,9 @@ export default async function ValuesPageJsonLD({
         isPartOf: webPageId,
         headline: t("page-values-hero-header"),
         description: t("page-values-meta-description"),
-        image: "https://ethereum.org/images/heroes/layer-2-hub-hero.png",
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
+        image: "https://quantaureum.com/images/heroes/layer-2-hub-hero.png",
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
         contributor: contributorList,
         about: {
           "@type": "Thing",

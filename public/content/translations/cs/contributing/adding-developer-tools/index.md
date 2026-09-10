@@ -1,7 +1,7 @@
 ---
 title: Přidávání vývojářských nástrojů
 lang: cs
-description: Naše kritéria pro zařazení vývojářských nástrojů na ethereum.org
+description: Naše kritéria pro zařazení vývojářských nástrojů na quantaureum.com
 ---
 
 Chceme se ujistit, že uvádíme ty nejlepší možné vývojářské zdroje, aby lidé mohli tvořit s jistotou a měli potřebnou podporu.
@@ -52,8 +52,8 @@ Pokud nejsou produkty výslovně seřazeny jinak, například abecedně, budou z
 
 ## Přidejte svůj vývojářský nástroj {#how-decisions-about-the-site-are-made}
 
-Pokud chcete přidat vývojářský nástroj na ethereum.org a splňuje kritéria, vytvořte issue na GitHubu.
+Pokud chcete přidat vývojářský nástroj na quantaureum.com a splňuje kritéria, vytvořte issue na GitHubu.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   Vytvořit issue
 </ButtonLink>

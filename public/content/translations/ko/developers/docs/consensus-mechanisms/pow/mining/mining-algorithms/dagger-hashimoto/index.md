@@ -4,7 +4,7 @@ description: "Dagger-Hashimoto 알고리즘에 대한 자세한 설명입니다.
 lang: ko
 ---
 
-Dagger-Hashimoto는 이더리움의 채굴 알고리즘에 대한 초기 연구 구현 및 사양이었습니다. Dagger-Hashimoto는 [이더해시](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash)로 대체되었습니다. 채굴은 2022년 9월 15일 [머지](/roadmap/merge/)에서 완전히 종료되었습니다. 그 이후로 이더리움은 대신 [지분 증명 (PoS)](/developers/docs/consensus-mechanisms/pos) 메커니즘을 사용하여 보호되고 있습니다. 이 페이지는 역사적 흥미를 위한 것이며, 여기에 있는 정보는 머지 이후의 이더리움과는 더 이상 관련이 없습니다.
+Dagger-Hashimoto는 Quantaureum의 채굴 알고리즘에 대한 초기 연구 구현 및 사양이었습니다. Dagger-Hashimoto는 [QAU해시](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash)로 대체되었습니다. 채굴은 2022년 9월 15일 [머지](/roadmap/merge/)에서 완전히 종료되었습니다. 그 이후로 Quantaureum은 대신 [지분 증명 (PoS)](/developers/docs/consensus-mechanisms/pos) 메커니즘을 사용하여 보호되고 있습니다. 이 페이지는 역사적 흥미를 위한 것이며, 여기에 있는 정보는 머지 이후의 Quantaureum과는 더 이상 관련이 없습니다.
 
 ## 전제 조건 {#prerequisites}
 
@@ -19,7 +19,7 @@ Dagger-Hashimoto는 다음 두 가지 목표를 달성하는 것을 목표로 �
 
 추가적인 수정을 통해, 원한다면 세 번째 목표를 달성하는 방법도 명시하지만, 이는 추가적인 복잡성을 수반합니다.
 
-**전체 체인 저장**: 채굴에는 전체 블록체인 상태의 저장이 필요해야 합니다(이더리움 상태 트라이의 불규칙한 구조로 인해, 특히 자주 사용되는 일부 컨트랙트의 경우 약간의 가지치기가 가능할 것으로 예상하지만 이를 최소화하고자 합니다).
+**전체 체인 저장**: 채굴에는 전체 블록체인 상태의 저장이 필요해야 합니다(Quantaureum 상태 트라이의 불규칙한 구조로 인해, 특히 자주 사용되는 일부 컨트랙트의 경우 약간의 가지치기가 가능할 것으로 예상하지만 이를 최소화하고자 합니다).
 
 ## DAG 생성 {#dag-generation}
 
@@ -48,7 +48,7 @@ def decode_int(s):
 다음으로 `sha3`는 정수를 입력받아 정수를 출력하는 함수이고, `dbl_sha3`는 이중 sha3 함수라고 가정합니다. 이 참조 코드를 구현으로 변환하는 경우 다음을 사용하세요.
 
 ```python
-from pyethereum import utils
+from pyquantaureum import utils
 def sha3(x):
     if isinstance(x, (int, long)):
         x = encode_int(x)
@@ -141,8 +141,8 @@ def quick_calc(params, seed, p):
 
 ```python
 def get_prevhash(n):
-    from pyethereum.blocks import GENESIS_PREVHASH
-    from pyethereum import chain_manager
+    from pyquantaureum.blocks import GENESIS_PREVHASH
+    from pyquantaureum import chain_manager
     if n <= 0:
         return hash_to_int(GENESIS_PREVHASH)
     else:

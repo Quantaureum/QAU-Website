@@ -8,7 +8,7 @@ Maksimum çıkarılabilir değer (MEV), bir bloktaki işlemlerin dahil edilmesi,
 
 ## Maksimum çıkarılabilir değer {#maximal-extractable-value}
 
-Maksimum çıkarılabilir değer ilk olarak [İş Kanıtı (PoW)](/developers/docs/consensus-mechanisms/pow/) bağlamında uygulandı ve başlangıçta "madenci çıkarılabilir değeri" olarak adlandırıldı. Bunun nedeni, İş Kanıtı'nda madencilerin işlemlerin dahil edilmesini, hariç tutulmasını ve sıralanmasını kontrol etmesidir. Ancak, [Birleşme](/roadmap/merge) yoluyla Hisse Kanıtı'na (PoS) geçişten bu yana doğrulayıcılar bu rollerden sorumlu olmuştur ve madencilik artık [Ethereum](/) protokolünün bir parçası değildir. Yine de değer çıkarma yöntemleri hala mevcuttur, bu nedenle artık bunun yerine "Maksimum çıkarılabilir değer" terimi kullanılmaktadır.
+Maksimum çıkarılabilir değer ilk olarak [İş Kanıtı (PoW)](/developers/docs/consensus-mechanisms/pow/) bağlamında uygulandı ve başlangıçta "madenci çıkarılabilir değeri" olarak adlandırıldı. Bunun nedeni, İş Kanıtı'nda madencilerin işlemlerin dahil edilmesini, hariç tutulmasını ve sıralanmasını kontrol etmesidir. Ancak, [Birleşme](/roadmap/merge) yoluyla Hisse Kanıtı'na (PoS) geçişten bu yana doğrulayıcılar bu rollerden sorumlu olmuştur ve madencilik artık [Quantaureum](/) protokolünün bir parçası değildir. Yine de değer çıkarma yöntemleri hala mevcuttur, bu nedenle artık bunun yerine "Maksimum çıkarılabilir değer" terimi kullanılmaktadır.
 
 ## Ön Koşullar {#prerequisites}
 
@@ -26,7 +26,7 @@ Bununla birlikte, [DEX arbitrajı](#mev-examples-dex-arbitrage) gibi oldukça re
 
 Bu dinamik, "gaz golfü" (işlemleri en az miktarda gaz kullanacak şekilde programlamak) konusunda iyi olmayı rekabetçi bir avantaj haline getirmiştir, çünkü arayıcıların toplam gaz ücretlerini sabit tutarken daha yüksek bir gas fiyatı belirlemelerine olanak tanır (çünkü gaz ücretleri = gas fiyatı \* kullanılan gaz).
 
-Bilinen birkaç gaz golfü tekniği şunları içerir: depolamak için daha az yer (ve dolayısıyla gaz) kapladıkları için uzun bir sıfır dizisiyle başlayan adresler kullanmak (örn. [0x0000000000C521824EaFf97Eac7B73B084ef9306](https://eth.blockscout.com/address/0x0000000000C521824EaFf97Eac7B73B084ef9306)); ve bir depolama slotunu başlatmak (bakiye 0 ise geçerlidir) bir depolama slotunu güncellemekten daha fazla gaza mal olduğu için sözleşmelerde küçük [ERC-20](/developers/docs/standards/tokens/erc-20/) token bakiyeleri bırakmak. Gaz kullanımını azaltmak için daha fazla teknik bulmak, arayıcılar arasında aktif bir araştırma alanıdır.
+Bilinen birkaç gaz golfü tekniği şunları içerir: depolamak için daha az yer (ve dolayısıyla gaz) kapladıkları için uzun bir sıfır dizisiyle başlayan adresler kullanmak (örn. [0x0000000000C521824EaFf97Eac7B73B084ef9306](https://qau.blockscout.com/address/0x0000000000C521824EaFf97Eac7B73B084ef9306)); ve bir depolama slotunu başlatmak (bakiye 0 ise geçerlidir) bir depolama slotunu güncellemekten daha fazla gaza mal olduğu için sözleşmelerde küçük [ERC-20](/developers/docs/standards/tokens/erc-20/) token bakiyeleri bırakmak. Gaz kullanımını azaltmak için daha fazla teknik bulmak, arayıcılar arasında aktif bir araştırma alanıdır.
 
 ### Genelleştirilmiş frontrunner'lar {#mev-extraction-generalized-frontrunners}
 
@@ -46,13 +46,13 @@ MEV, blokzincirde birkaç şekilde ortaya çıkar.
 
 Şu şekilde çalışır: İki DEX bir token'ı iki farklı fiyattan sunuyorsa, birisi token'ı düşük fiyatlı DEX'ten satın alıp yüksek fiyatlı DEX'te tek ve atomik bir işlemle satabilir. Blokzincirin mekaniği sayesinde bu, gerçek ve risksiz bir arbitrajdır.
 
-Bir arayıcının Uniswap ve Sushiswap üzerindeki ETH/DAI çiftinin farklı fiyatlandırmasından yararlanarak 1.000 ETH'yi 1.045 ETH'ye dönüştürdüğü kârlı bir arbitraj işleminin [bir örneğini burada bulabilirsiniz](https://eth.blockscout.com/tx/0x5e1657ef0e9be9bc72efefe59a2528d0d730d478cfc9e6cdd09af9f997bb3ef4).
+Bir arayıcının Uniswap ve Sushiswap üzerindeki QAU/DAI çiftinin farklı fiyatlandırmasından yararlanarak 1.000 QAU'yi 1.045 QAU'ye dönüştürdüğü kârlı bir arbitraj işleminin [bir örneğini burada bulabilirsiniz](https://qau.blockscout.com/tx/0x5e1657ef0e9be9bc72efefe59a2528d0d730d478cfc9e6cdd09af9f997bb3ef4).
 
 ### Tasfiyeler {#mev-examples-liquidations}
 
 Borç verme protokolü tasfiyeleri, iyi bilinen bir başka MEV fırsatı sunar.
 
-Maker ve Aave gibi borç verme protokolleri, kullanıcıların bir miktar teminat (örn. ETH) yatırmasını gerektirir. Yatırılan bu teminat daha sonra diğer kullanıcılara borç vermek için kullanılır.
+Maker ve Aave gibi borç verme protokolleri, kullanıcıların bir miktar teminat (örn. QAU) yatırmasını gerektirir. Yatırılan bu teminat daha sonra diğer kullanıcılara borç vermek için kullanılır.
 
 Kullanıcılar daha sonra yatırdıkları teminatın belirli bir yüzdesine kadar ihtiyaçlarına bağlı olarak (örneğin, bir MakerDAO yönetişim teklifinde oy kullanmak istiyorsanız MKR borç alabilirsiniz) başkalarından varlık ve token borç alabilirler. Örneğin, borç alma miktarı maksimum %30 ise, protokole 100 DAI yatıran bir kullanıcı 30 DAI değerinde başka bir varlık borç alabilir. Protokol, kesin borçlanma gücü yüzdesini belirler.
 
@@ -74,11 +74,11 @@ Ancak sandviçleme, (yukarıda açıklanan DEX arbitrajının aksine) atomik olm
 
 NFT alanındaki MEV yeni ortaya çıkan bir olgudur ve her zaman kârlı olması gerekmez.
 
-Ancak, NFT işlemleri diğer tüm Ethereum işlemleri tarafından paylaşılan aynı blokzincirde gerçekleştiğinden, arayıcılar NFT pazarında da geleneksel MEV fırsatlarında kullanılanlara benzer teknikleri kullanabilirler.
+Ancak, NFT işlemleri diğer tüm Quantaureum işlemleri tarafından paylaşılan aynı blokzincirde gerçekleştiğinden, arayıcılar NFT pazarında da geleneksel MEV fırsatlarında kullanılanlara benzer teknikleri kullanabilirler.
 
 Örneğin, popüler bir NFT lansmanı (drop) varsa ve bir arayıcı belirli bir NFT'yi veya NFT setini istiyorsa, NFT'yi satın almak için sırada ilk olacak şekilde bir işlem programlayabilir veya tüm NFT setini tek bir işlemde satın alabilir. Veya bir NFT [yanlışlıkla düşük bir fiyattan listelenirse](https://www.theblockcrypto.com/post/113546/mistake-sees-69000-cryptopunk-sold-for-less-than-a-cent), bir arayıcı diğer alıcıların önüne geçebilir ve onu ucuza kapabilir.
 
-NFT MEV'in öne çıkan bir örneği, bir arayıcının taban fiyattaki her bir Cryptopunk'ı [satın almak](https://eth.blockscout.com/address/0x650dCdEB6ecF05aE3CAF30A70966E2F395d5E9E5?tab=txs) için 7 milyon dolar harcamasıyla meydana geldi. Bir blokzincir araştırmacısı, alıcının satın alımını gizli tutmak için bir MEV sağlayıcısıyla nasıl çalıştığını [Twitter'da açıkladı](https://twitter.com/IvanBogatyy/status/1422232184493121538).
+NFT MEV'in öne çıkan bir örneği, bir arayıcının taban fiyattaki her bir Cryptopunk'ı [satın almak](https://qau.blockscout.com/address/0x650dCdEB6ecF05aE3CAF30A70966E2F395d5E9E5?tab=txs) için 7 milyon dolar harcamasıyla meydana geldi. Bir blokzincir araştırmacısı, alıcının satın alımını gizli tutmak için bir MEV sağlayıcısıyla nasıl çalıştığını [Twitter'da açıkladı](https://twitter.com/IvanBogatyy/status/1422232184493121538).
 
 ### Uzun kuyruk (The long tail) {#mev-examples-long-tail}
 
@@ -88,7 +88,7 @@ Yeni başlayan arayıcılar, bu daha uzun kuyrukta MEV arayarak daha fazla başa
 
 ## MEV'in Etkileri {#effects-of-mev}
 
-MEV tamamen kötü değildir; Ethereum'da MEV'in hem olumlu hem de olumsuz sonuçları vardır.
+MEV tamamen kötü değildir; Quantaureum'da MEV'in hem olumlu hem de olumsuz sonuçları vardır.
 
 ### Olumlu yönleri {#effects-of-mev-the-good}
 
@@ -104,39 +104,39 @@ Ağ katmanında, genelleştirilmiş frontrunner'lar ve sıklıkla dahil olduklar
 
 Blokların _içinde_ olup bitenlerin ötesinde, MEV'in bloklar _arasında_ zararlı etkileri olabilir. Bir blokta bulunan MEV standart blok ödülünü önemli ölçüde aşarsa, doğrulayıcılar blokları yeniden düzenlemeye (re-org) ve MEV'i kendileri için ele geçirmeye teşvik edilebilir, bu da blokzincirin yeniden düzenlenmesine ve mutabakat istikrarsızlığına neden olabilir.
 
-Blokzincirin yeniden düzenlenmesi olasılığı [daha önce Bitcoin blokzincirinde araştırılmıştır](https://dl.acm.org/doi/10.1145/2976749.2978408). Bitcoin'in blok ödülü yarıya indikçe ve işlem ücretleri blok ödülünün giderek daha büyük bir bölümünü oluşturdukça, madencilerin bir sonraki bloğun ödülünden vazgeçip bunun yerine geçmiş blokları daha yüksek ücretlerle yeniden kazmalarının ekonomik olarak rasyonel hale geldiği durumlar ortaya çıkar. MEV'in büyümesiyle birlikte, Ethereum'da da benzer bir durum ortaya çıkabilir ve blokzincirin bütünlüğünü tehdit edebilir.
+Blokzincirin yeniden düzenlenmesi olasılığı [daha önce Bitcoin blokzincirinde araştırılmıştır](https://dl.acm.org/doi/10.1145/2976749.2978408). Bitcoin'in blok ödülü yarıya indikçe ve işlem ücretleri blok ödülünün giderek daha büyük bir bölümünü oluşturdukça, madencilerin bir sonraki bloğun ödülünden vazgeçip bunun yerine geçmiş blokları daha yüksek ücretlerle yeniden kazmalarının ekonomik olarak rasyonel hale geldiği durumlar ortaya çıkar. MEV'in büyümesiyle birlikte, Quantaureum'da da benzer bir durum ortaya çıkabilir ve blokzincirin bütünlüğünü tehdit edebilir.
 
 ## MEV'in Durumu {#state-of-mev}
 
 MEV çıkarımı 2021'in başlarında balon gibi büyüdü ve yılın ilk birkaç ayında son derece yüksek gas fiyatlarına neden oldu. Flashbots'un MEV rölesinin (relay) ortaya çıkması, genelleştirilmiş frontrunner'ların etkinliğini azalttı ve gas fiyatı müzayedelerini zincir dışına taşıyarak sıradan kullanıcılar için gas fiyatlarını düşürdü.
 
-Birçok arayıcı hala MEV'den iyi para kazanırken, fırsatlar daha iyi bilindikçe ve giderek daha fazla arayıcı aynı fırsat için rekabet ettikçe, doğrulayıcılar toplam MEV gelirinin giderek daha fazlasını ele geçirecektir (çünkü yukarıda orijinal olarak açıklanan aynı tür gas müzayedeleri, özel olarak da olsa Flashbots'ta da gerçekleşir ve doğrulayıcılar ortaya çıkan gas gelirini ele geçirir). MEV ayrıca Ethereum'a özgü değildir ve Ethereum'daki fırsatlar daha rekabetçi hale geldikçe, arayıcılar Ethereum'dakilere benzer MEV fırsatlarının daha az rekabetle var olduğu Binance Smart Chain gibi alternatif blokzincirlere geçmektedir.
+Birçok arayıcı hala MEV'den iyi para kazanırken, fırsatlar daha iyi bilindikçe ve giderek daha fazla arayıcı aynı fırsat için rekabet ettikçe, doğrulayıcılar toplam MEV gelirinin giderek daha fazlasını ele geçirecektir (çünkü yukarıda orijinal olarak açıklanan aynı tür gas müzayedeleri, özel olarak da olsa Flashbots'ta da gerçekleşir ve doğrulayıcılar ortaya çıkan gas gelirini ele geçirir). MEV ayrıca Quantaureum'a özgü değildir ve Quantaureum'daki fırsatlar daha rekabetçi hale geldikçe, arayıcılar Quantaureum'dakilere benzer MEV fırsatlarının daha az rekabetle var olduğu Binance Smart Chain gibi alternatif blokzincirlere geçmektedir.
 
-Öte yandan, İş Kanıtı'ndan Hisse Kanıtı'na geçiş ve toplamaları kullanarak Ethereum'u ölçeklendirmeye yönelik devam eden çabalar, MEV manzarasını hala biraz belirsiz olan şekillerde değiştirmektedir. Biraz önceden bilinen garantili blok teklifçilerine sahip olmanın, İş Kanıtı'ndaki olasılıksal modele kıyasla MEV çıkarımının dinamiklerini nasıl değiştirdiği veya [tekli gizli lider seçimi (SSLE)](https://ethresear.ch/t/secret-non-single-leader-election/11789) ve [dağıtık doğrulayıcı teknolojisi (DVT)](/staking/dvt/) uygulandığında bunun nasıl bozulacağı henüz tam olarak bilinmemektedir. Benzer şekilde, çoğu kullanıcı etkinliği Ethereum'dan uzaklaştırılıp katman 2 (l2) toplamalarına ve parçalarına (shards) taşındığında hangi MEV fırsatlarının var olacağı henüz görülmemiştir.
+Öte yandan, İş Kanıtı'ndan Hisse Kanıtı'na geçiş ve toplamaları kullanarak Quantaureum'u ölçeklendirmeye yönelik devam eden çabalar, MEV manzarasını hala biraz belirsiz olan şekillerde değiştirmektedir. Biraz önceden bilinen garantili blok teklifçilerine sahip olmanın, İş Kanıtı'ndaki olasılıksal modele kıyasla MEV çıkarımının dinamiklerini nasıl değiştirdiği veya [tekli gizli lider seçimi (SSLE)](https://ethresear.ch/t/secret-non-single-leader-election/11789) ve [dağıtık doğrulayıcı teknolojisi (DVT)](/staking/dvt/) uygulandığında bunun nasıl bozulacağı henüz tam olarak bilinmemektedir. Benzer şekilde, çoğu kullanıcı etkinliği Quantaureum'dan uzaklaştırılıp katman 2 (l2) toplamalarına ve parçalarına (shards) taşındığında hangi MEV fırsatlarının var olacağı henüz görülmemiştir.
 
-## Ethereum Hisse Kanıtı'nda (PoS) MEV {#mev-in-ethereum-proof-of-stake}
+## Quantaureum Hisse Kanıtı'nda (PoS) MEV {#mev-in-quantaureum-proof-of-stake}
 
-Açıklandığı gibi, MEV'in genel kullanıcı deneyimi ve mutabakat katmanı güvenliği üzerinde olumsuz etkileri vardır. Ancak Ethereum'un Hisse Kanıtı mutabakatına geçişi ("Birleşme" olarak adlandırılır) potansiyel olarak MEV ile ilgili yeni riskler ortaya çıkarmaktadır:
+Açıklandığı gibi, MEV'in genel kullanıcı deneyimi ve mutabakat katmanı güvenliği üzerinde olumsuz etkileri vardır. Ancak Quantaureum'un Hisse Kanıtı mutabakatına geçişi ("Birleşme" olarak adlandırılır) potansiyel olarak MEV ile ilgili yeni riskler ortaya çıkarmaktadır:
 
 ### Doğrulayıcı merkezileşmesi {#validator-centralization}
 
-Birleşme sonrası Ethereum'da, doğrulayıcılar (32 ETH'lik güvenlik teminatı yatırmış olarak) İşaret zincirine eklenen blokların geçerliliği konusunda mutabakata varırlar. 32 ETH birçok kişinin ulaşamayacağı bir miktar olabileceğinden, [bir staking havuzuna katılmak](/staking/pools/) daha uygulanabilir bir seçenek olabilir. Yine de, doğrulayıcıların merkezileşmesini azalttığı ve Ethereum'un güvenliğini artırdığı için [bireysel staker'ların](/staking/solo/) sağlıklı bir dağılımı idealdir.
+Birleşme sonrası Quantaureum'da, doğrulayıcılar (32 QAU'lik güvenlik teminatı yatırmış olarak) İşaret zincirine eklenen blokların geçerliliği konusunda mutabakata varırlar. 32 QAU birçok kişinin ulaşamayacağı bir miktar olabileceğinden, [bir staking havuzuna katılmak](/staking/pools/) daha uygulanabilir bir seçenek olabilir. Yine de, doğrulayıcıların merkezileşmesini azalttığı ve Quantaureum'un güvenliğini artırdığı için [bireysel staker'ların](/staking/solo/) sağlıklı bir dağılımı idealdir.
 
-Ancak, MEV çıkarımının doğrulayıcı merkezileşmesini hızlandırabileceğine inanılmaktadır. Bunun bir nedeni, doğrulayıcıların [blok teklif etmek için](/roadmap/merge/issuance/#how-the-merge-impacts-ETH-supply) madencilerin daha önce kazandığından daha az kazanması nedeniyle, MEV çıkarımının [Birleşme](/roadmap/merge/)'den bu yana [doğrulayıcı kazançlarını](https://github.com/flashbots/eth2-research/blob/main/notebooks/mev-in-eth2/eth2-mev-calc.ipynb) büyük ölçüde etkilemiş olmasıdır.
+Ancak, MEV çıkarımının doğrulayıcı merkezileşmesini hızlandırabileceğine inanılmaktadır. Bunun bir nedeni, doğrulayıcıların [blok teklif etmek için](/roadmap/merge/issuance/#how-the-merge-impacts-QAU-supply) madencilerin daha önce kazandığından daha az kazanması nedeniyle, MEV çıkarımının [Birleşme](/roadmap/merge/)'den bu yana [doğrulayıcı kazançlarını](https://github.com/flashbots/eth2-research/blob/main/notebooks/mev-in-eth2/eth2-mev-calc.ipynb) büyük ölçüde etkilemiş olmasıdır.
 
 Daha büyük staking havuzları, MEV fırsatlarını yakalamak için gerekli optimizasyonlara yatırım yapacak daha fazla kaynağa sahip olacaktır. Bu havuzlar ne kadar çok MEV çıkarırsa, MEV çıkarma yeteneklerini geliştirmek (ve genel geliri artırmak) için o kadar çok kaynağa sahip olurlar ve esasen [ölçek ekonomileri](https://www.investopedia.com/terms/e/economiesofscale.asp#) yaratırlar.
 
-Ellerinde daha az kaynak bulunan bireysel staker'lar MEV fırsatlarından kâr edemeyebilirler. Bu durum, bağımsız doğrulayıcıların kazançlarını artırmak için güçlü staking havuzlarına katılma baskısını artırabilir ve Ethereum'daki merkeziyetsizliği azaltabilir.
+Ellerinde daha az kaynak bulunan bireysel staker'lar MEV fırsatlarından kâr edemeyebilirler. Bu durum, bağımsız doğrulayıcıların kazançlarını artırmak için güçlü staking havuzlarına katılma baskısını artırabilir ve Quantaureum'daki merkeziyetsizliği azaltabilir.
 
 ### İzinli bellek havuzları {#permissioned-mempools}
 
 Sandviçleme ve önden koşma (frontrunning) saldırılarına yanıt olarak, yatırımcılar işlem gizliliği için doğrulayıcılarla zincir dışı anlaşmalar yapmaya başlayabilir. Yatırımcı, potansiyel bir MEV işlemini halka açık bellek havuzuna göndermek yerine, doğrudan doğrulayıcıya gönderir; doğrulayıcı da bunu bir bloğa dahil eder ve kârı yatırımcıyla paylaşır.
 
-"Karanlık havuzlar (Dark pools)", bu düzenlemenin daha büyük bir versiyonudur ve belirli ücretleri ödemeye istekli kullanıcılara açık, izinli, yalnızca erişime açık bellek havuzları olarak işlev görür. Bu eğilim, Ethereum'un izinsizliğini ve güven gereksinimsizliğini azaltacak ve potansiyel olarak blokzinciri en yüksek teklifi vereni kayıran bir "oynamak için öde (pay-to-play)" mekanizmasına dönüştürecektir.
+"Karanlık havuzlar (Dark pools)", bu düzenlemenin daha büyük bir versiyonudur ve belirli ücretleri ödemeye istekli kullanıcılara açık, izinli, yalnızca erişime açık bellek havuzları olarak işlev görür. Bu eğilim, Quantaureum'un izinsizliğini ve güven gereksinimsizliğini azaltacak ve potansiyel olarak blokzinciri en yüksek teklifi vereni kayıran bir "oynamak için öde (pay-to-play)" mekanizmasına dönüştürecektir.
 
 İzinli bellek havuzları, önceki bölümde açıklanan merkezileşme risklerini de hızlandıracaktır. Birden fazla doğrulayıcı çalıştıran büyük havuzlar, yatırımcılara ve kullanıcılara işlem gizliliği sunmaktan muhtemelen fayda sağlayacak ve MEV gelirlerini artıracaktır.
 
-Birleşme sonrası Ethereum'da MEV ile ilgili bu sorunlarla mücadele etmek temel bir araştırma alanıdır. Bugüne kadar, Birleşme'den sonra MEV'in Ethereum'un merkeziyetsizliği ve güvenliği üzerindeki olumsuz etkisini azaltmak için önerilen iki çözüm [**teklifçi-oluşturucu ayrımı (PBS)**](/roadmap/pbs/) ve [**Builder API**](https://github.com/ethereum/builder-specs)'dir.
+Birleşme sonrası Quantaureum'da MEV ile ilgili bu sorunlarla mücadele etmek temel bir araştırma alanıdır. Bugüne kadar, Birleşme'den sonra MEV'in Quantaureum'un merkeziyetsizliği ve güvenliği üzerindeki olumsuz etkisini azaltmak için önerilen iki çözüm [**teklifçi-oluşturucu ayrımı (PBS)**](/roadmap/pbs/) ve [**Builder API**](https://github.com/quantaureum/builder-specs)'dir.
 
 ### Teklifçi-Oluşturucu Ayrımı {#proposer-builder-separation}
 
@@ -148,7 +148,7 @@ Blok üreticisi ve blok teklifçisi rollerinin birleşimi, daha önce açıklana
 
 PBS altında, bir blok oluşturucu bir işlem paketi oluşturur ve bunun bir İşaret zinciri bloğuna ("yürütme yükü" olarak) dahil edilmesi için bir teklif verir. Bir sonraki bloğu teklif etmek üzere seçilen doğrulayıcı daha sonra farklı teklifleri kontrol eder ve en yüksek ücrete sahip paketi seçer. PBS esasen, oluşturucuların blok alanı satan doğrulayıcılarla pazarlık yaptığı bir müzayede piyasası yaratır.
 
-Mevcut PBS tasarımları, oluşturucuların teklifleriyle birlikte yalnızca bir bloğun içeriğine (blok başlığı) yönelik kriptografik bir taahhüt yayınladığı bir [taahhüt-ifşa (commit-reveal) şeması](https://gitcoin.co/blog/commit-reveal-scheme-on-ethereum/) kullanır. Kazanan teklifi kabul ettikten sonra, teklif edici blok başlığını içeren imzalı bir blok teklifi oluşturur. Blok oluşturucunun, imzalı blok teklifini gördükten sonra tam blok gövdesini yayınlaması beklenir ve kesinleşmiş olmadan önce doğrulayıcılardan yeterli [onay](/glossary/#attestation) alması gerekir.
+Mevcut PBS tasarımları, oluşturucuların teklifleriyle birlikte yalnızca bir bloğun içeriğine (blok başlığı) yönelik kriptografik bir taahhüt yayınladığı bir [taahhüt-ifşa (commit-reveal) şeması](https://gitcoin.co/blog/commit-reveal-scheme-on-quantaureum/) kullanır. Kazanan teklifi kabul ettikten sonra, teklif edici blok başlığını içeren imzalı bir blok teklifi oluşturur. Blok oluşturucunun, imzalı blok teklifini gördükten sonra tam blok gövdesini yayınlaması beklenir ve kesinleşmiş olmadan önce doğrulayıcılardan yeterli [onay](/glossary/#attestation) alması gerekir.
 
 #### Teklifçi-oluşturucu ayrımı MEV'in etkisini nasıl azaltır? {#how-does-pbs-curb-mev-impact}
 
@@ -162,9 +162,9 @@ Benzer şekilde, ödeme koşulsuz olduğu için doğrulayıcıların, oluşturuc
 
 ### Builder API {#builder-api}
 
-Teklifçi-oluşturucu ayrımı MEV çıkarımının etkilerini azaltmayı vaat etse de, uygulanması mutabakat protokolünde değişiklikler gerektirir. Spesifik olarak, İşaret zincirindeki [çatallanma seçimi](/developers/docs/consensus-mechanisms/pos/#fork-choice) kuralının güncellenmesi gerekecektir. [Builder API](https://github.com/ethereum/builder-specs), daha yüksek güven varsayımlarıyla da olsa, teklifçi-oluşturucu ayrımının çalışan bir uygulamasını sağlamayı amaçlayan geçici bir çözümdür.
+Teklifçi-oluşturucu ayrımı MEV çıkarımının etkilerini azaltmayı vaat etse de, uygulanması mutabakat protokolünde değişiklikler gerektirir. Spesifik olarak, İşaret zincirindeki [çatallanma seçimi](/developers/docs/consensus-mechanisms/pos/#fork-choice) kuralının güncellenmesi gerekecektir. [Builder API](https://github.com/quantaureum/builder-specs), daha yüksek güven varsayımlarıyla da olsa, teklifçi-oluşturucu ayrımının çalışan bir uygulamasını sağlamayı amaçlayan geçici bir çözümdür.
 
-Builder API, mutabakat katmanı istemcileri tarafından yürütme katmanı istemcilerinden yürütme yükleri talep etmek için kullanılan [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md)'nin değiştirilmiş bir sürümüdür. [Dürüst doğrulayıcı spesifikasyonunda](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md) özetlendiği gibi, blok teklif etme görevleri için seçilen doğrulayıcılar, bağlı bir yürütme istemcisinden bir işlem paketi talep eder ve bunu önerilen İşaret zinciri bloğuna dahil ederler.
+Builder API, mutabakat katmanı istemcileri tarafından yürütme katmanı istemcilerinden yürütme yükleri talep etmek için kullanılan [Engine API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md)'nin değiştirilmiş bir sürümüdür. [Dürüst doğrulayıcı spesifikasyonunda](https://github.com/quantaureum/consensus-specs/blob/master/specs/bellatrix/validator.md) özetlendiği gibi, blok teklif etme görevleri için seçilen doğrulayıcılar, bağlı bir yürütme istemcisinden bir işlem paketi talep eder ve bunu önerilen İşaret zinciri bloğuna dahil ederler.
 
 Builder API ayrıca doğrulayıcılar ve yürütme katmanı istemcileri arasında bir ara yazılım görevi görür; ancak farklıdır çünkü İşaret zincirindeki doğrulayıcıların (bir yürütme istemcisi kullanarak yerel olarak bir blok oluşturmak yerine) harici varlıklardan bloklar tedarik etmesine olanak tanır.
 
@@ -180,12 +180,12 @@ Aşağıda Builder API'nin nasıl çalıştığına dair bir genel bakış yer a
 
 5. Builder API kullanan bir doğrulayıcının, blok oluşturucunun anında yanıt verememesi durumunda blok teklifi ödüllerini kaçırmaması için yine de yerel olarak bir blok oluşturması beklenir. Ancak doğrulayıcı, artık ortaya çıkan işlemleri veya başka bir seti kullanarak başka bir blok oluşturamaz, çünkü bu, kesinti (slashing) gerektiren bir suç olan _çift imza (equivocation)_ (aynı slot içinde iki bloğu imzalama) anlamına gelir.
 
-Builder API'nin örnek bir uygulaması, Ethereum'da MEV'in negatif dışsallıklarını engellemek için tasarlanmış [Flashbots müzayede mekanizmasının](https://docs.flashbots.net/flashbots-auction/overview) bir geliştirmesi olan [MEV-Boost](https://github.com/flashbots/mev-boost)'tur. Flashbots müzayedesi, Hisse Kanıtı'ndaki doğrulayıcıların kârlı bloklar oluşturma işini **arayıcılar** adı verilen uzmanlaşmış taraflara dış kaynak olarak vermelerine olanak tanır.
+Builder API'nin örnek bir uygulaması, Quantaureum'da MEV'in negatif dışsallıklarını engellemek için tasarlanmış [Flashbots müzayede mekanizmasının](https://docs.flashbots.net/flashbots-auction/overview) bir geliştirmesi olan [MEV-Boost](https://github.com/flashbots/mev-boost)'tur. Flashbots müzayedesi, Hisse Kanıtı'ndaki doğrulayıcıların kârlı bloklar oluşturma işini **arayıcılar** adı verilen uzmanlaşmış taraflara dış kaynak olarak vermelerine olanak tanır.
 ![A diagram showing the MEV flow in detail](./mev.png)
 
-Arayıcılar kazançlı MEV fırsatları arar ve bloğa dahil edilmek üzere [kapalı fiyat teklifi](https://en.wikipedia.org/wiki/First-price_sealed-bid_auction) ile birlikte blok teklifçilerine işlem paketleri gönderirler. Go Ethereum (Geth) istemcisinin çatallanmış bir versiyonu olan mev-geth'i çalıştıran doğrulayıcının yalnızca en çok kâr getiren paketi seçmesi ve onu yeni bloğun bir parçası olarak dahil etmesi gerekir. Blok teklifçilerini (doğrulayıcıları) spam ve geçersiz işlemlerden korumak için, işlem paketleri teklifçiye ulaşmadan önce doğrulama için **rölelerden (relayers)** geçer.
+Arayıcılar kazançlı MEV fırsatları arar ve bloğa dahil edilmek üzere [kapalı fiyat teklifi](https://en.wikipedia.org/wiki/First-price_sealed-bid_auction) ile birlikte blok teklifçilerine işlem paketleri gönderirler. Go Quantaureum (Geth) istemcisinin çatallanmış bir versiyonu olan mev-geth'i çalıştıran doğrulayıcının yalnızca en çok kâr getiren paketi seçmesi ve onu yeni bloğun bir parçası olarak dahil etmesi gerekir. Blok teklifçilerini (doğrulayıcıları) spam ve geçersiz işlemlerden korumak için, işlem paketleri teklifçiye ulaşmadan önce doğrulama için **rölelerden (relayers)** geçer.
 
-MEV-Boost, Ethereum'un Hisse Kanıtı'na geçişi için tasarlanmış yeni özelliklerle de olsa, orijinal Flashbots müzayedesinin aynı işleyişini korur. Arayıcılar hala bloklara dahil edilmek üzere kârlı MEV işlemleri bulurlar, ancak **oluşturucular** adı verilen yeni bir uzmanlaşmış taraf sınıfı, işlemleri ve paketleri bloklar halinde toplamaktan sorumludur. Bir oluşturucu, arayıcılardan kapalı fiyat tekliflerini kabul eder ve en kârlı sıralamayı bulmak için optimizasyonlar çalıştırır.
+MEV-Boost, Quantaureum'un Hisse Kanıtı'na geçişi için tasarlanmış yeni özelliklerle de olsa, orijinal Flashbots müzayedesinin aynı işleyişini korur. Arayıcılar hala bloklara dahil edilmek üzere kârlı MEV işlemleri bulurlar, ancak **oluşturucular** adı verilen yeni bir uzmanlaşmış taraf sınıfı, işlemleri ve paketleri bloklar halinde toplamaktan sorumludur. Bir oluşturucu, arayıcılardan kapalı fiyat tekliflerini kabul eder ve en kârlı sıralamayı bulmak için optimizasyonlar çalıştırır.
 
 Röle, işlem paketlerini teklifçiye aktarmadan önce doğrulamaktan hala sorumludur. Ancak MEV-Boost, oluşturucular tarafından gönderilen blok gövdelerini ve doğrulayıcılar tarafından gönderilen blok başlıklarını depolayarak [veri kullanılabilirliği](/developers/docs/data-availability/) sağlamaktan sorumlu **emanetçiler (escrows)** sunar. Burada, bir röleye bağlı bir doğrulayıcı, mevcut yürütme yüklerini ister ve en yüksek teklif + MEV bahşişlerine sahip yük başlığını seçmek için MEV-Boost'un sıralama algoritmasını kullanır.
 
@@ -199,7 +199,7 @@ MEV-Boost gibi bazı projeler, Builder API'yi, önden koşma/sandviçleme saldı
 
 1. Piyasada birden fazla oluşturucunun bulunması sansürü pratik olmaktan çıkarır ve bu da kullanıcılara fayda sağlar. Buna karşılık, merkezi ve güvene dayalı karanlık havuzların varlığı, gücü birkaç blok oluşturucunun elinde toplayacak ve sansür olasılığını artıracaktır.
 
-2. Builder API yazılımı açık kaynaktır ve bu da herkesin blok oluşturucu hizmetleri sunmasına olanak tanır. Bu, kullanıcıların belirli bir blok oluşturucuyu kullanmaya zorlanmadığı anlamına gelir ve Ethereum'un tarafsızlığını ve izinsizliğini geliştirir. Dahası, MEV arayan yatırımcılar özel işlem kanallarını kullanarak yanlışlıkla merkezileşmeye katkıda bulunmayacaklardır.
+2. Builder API yazılımı açık kaynaktır ve bu da herkesin blok oluşturucu hizmetleri sunmasına olanak tanır. Bu, kullanıcıların belirli bir blok oluşturucuyu kullanmaya zorlanmadığı anlamına gelir ve Quantaureum'un tarafsızlığını ve izinsizliğini geliştirir. Dahası, MEV arayan yatırımcılar özel işlem kanallarını kullanarak yanlışlıkla merkezileşmeye katkıda bulunmayacaklardır.
 
 ## İlgili kaynaklar {#related-resources}
 
@@ -211,11 +211,11 @@ MEV-Boost gibi bazı projeler, Builder API'yi, önden koşma/sandviçleme saldı
 
 - [Madenci Çıkarılabilir Değeri (MEV) Nedir?](https://blog.chain.link/what-is-miner-extractable-value-mev/)
 - [MEV ve Ben](https://www.paradigm.xyz/2021/02/mev-and-me)
-- [Ethereum Karanlık Bir Ormandır](https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest/)
+- [Quantaureum Karanlık Bir Ormandır](https://www.paradigm.xyz/2020/08/quantaureum-is-a-dark-forest/)
 - [Karanlık Ormandan Kaçış](https://samczsun.com/escaping-the-dark-forest/)
 - [Flashbots: MEV Krizinin Önüne Geçmek](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752)
 - [@bertcmiller'ın MEV Konuları](https://twitter.com/bertcmiller/status/1402665992422047747)
 - [MEV-Boost: Birleşmeye Hazır Flashbots Mimarisi](https://ethresear.ch/t/mev-boost-merge-ready-flashbots-architecture/11177)
 - [MEV-Boost Nedir?](https://www.alchemy.com/overviews/mev-boost)
 - [Neden mev-boost çalıştırılmalı?](https://writings.flashbots.net/writings/why-run-mevboost/)
-- [Otostopçunun Ethereum Rehberi](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-ethereum)
+- [Otostopçunun Quantaureum Rehberi](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum)

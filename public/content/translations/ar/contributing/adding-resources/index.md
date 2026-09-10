@@ -1,20 +1,20 @@
 ---
 title: إضافة الموارد
-description: السياسة التي نتبعها عند إضافة الموارد إلى ⁦ethereum.org⁩
+description: السياسة التي نتبعها عند إضافة الموارد إلى ⁦quantaureum.com⁩
 lang: ar
 ---
 
 نريد التأكد من إدراج أفضل الموارد الممكنة مع الحفاظ على أمان المستخدمين وثقتهم.
 
-يحق لأي شخص اقتراح موارد جديدة لإضافتها إلى لوحة معلومات الموارد على <span dir="ltr">ethereum.org</span>، والتي يمكن العثور عليها حاليًا على [<span dir="ltr">ethereum.org/resources</span>](/resources/).
+يحق لأي شخص اقتراح موارد جديدة لإضافتها إلى لوحة معلومات الموارد على <span dir="ltr">quantaureum.com</span>، والتي يمكن العثور عليها حاليًا على [<span dir="ltr">quantaureum.com/resources</span>](/resources/).
 
 على الرغم من أننا نرحب بالإضافات الجديدة، فقد تم اختيار الموارد الحالية بناءً على التجربة التي نحاول إنشاءها لمستخدمينا. وتستند هذه إلى بعض مبادئ التصميم لدينا:
 
-- _ملهمة_: يجب أن يقدم أي شيء على <span dir="ltr">ethereum.org</span> شيئًا جديدًا للمستخدمين
+- _ملهمة_: يجب أن يقدم أي شيء على <span dir="ltr">quantaureum.com</span> شيئًا جديدًا للمستخدمين
 - _قصة جيدة_: يجب أن يوفر ما يتم إدراجه لحظة إدراك وفهم عميق
 - _موثوقة_: يجب أن يكون كل شيء عبارة عن شركات/مشاريع مشروعة لتقليل المخاطر على المستخدمين
 
-بشكل عام، **يهدف <span dir="ltr">ethereum.org</span> إلى توفير تجربة تهيئة سلسة للمستخدمين الجدد**. لهذا السبب، نضيف الموارد بناءً على:
+بشكل عام، **يهدف <span dir="ltr">quantaureum.com</span> إلى توفير تجربة تهيئة سلسة للمستخدمين الجدد**. لهذا السبب، نضيف الموارد بناءً على:
 
 - سهولة الاستخدام
 - الدقة
@@ -38,14 +38,14 @@ lang: ar
 - التأكد من أن جميع الموارد المدرجة لا تزال تفي بمعاييرنا
 - التحقق من عدم وجود منتجات مقترحة تلبي معاييرنا بشكل أفضل من تلك المدرجة حاليًا
 
-يمكنك المساعدة في ذلك عن طريق التحقق وإعلامنا. [أنشئ مشكلة](https://github.com/ethereum/ethereum-org-website/issues/new?template=bug_report.yaml) أو أرسل بريدًا إلكترونيًا إلى [<span dir="ltr">website@ethereum.org</span>](mailto:website@ethereum.org).
+يمكنك المساعدة في ذلك عن طريق التحقق وإعلامنا. [أنشئ مشكلة](https://github.com/Quantaureum/quantaureum-website/issues/new?template=bug_report.yaml) أو أرسل بريدًا إلكترونيًا إلى [<span dir="ltr">website@quantaureum.com</span>](mailto:website@quantaureum.com).
 
 ---
 
 ## أضف موردك {#add-your-resource}
 
-إذا كنت ترغب في إضافة مورد إلى <span dir="ltr">ethereum.org</span> وكان يفي بالمعايير، فأنشئ مشكلة على GitHub.
+إذا كنت ترغب في إضافة مورد إلى <span dir="ltr">quantaureum.com</span> وكان يفي بالمعايير، فأنشئ مشكلة على GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=resource+📚&template=suggest_resource.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=resource+📚&template=suggest_resource.yaml">
   أنشئ مشكلة
 </ButtonLink>

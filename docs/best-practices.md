@@ -34,7 +34,7 @@ Markdown will be translated as whole pages of content, so no specific action is 
 
   ```tsx
   <p>
-    All Ethereum transactions require a fee, known as Gas, that gets paid to the
+    All Quantaureum transactions require a fee, known as Gas, that gets paid to the
     miner. <Link href="link">More on Gas</Link>
   </p>
   ```

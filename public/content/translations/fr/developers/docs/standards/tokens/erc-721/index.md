@@ -1,6 +1,6 @@
 ---
 title: Norme de jeton non fongible ERC-721
-description: "Découvrez l'ERC-721, la norme pour les jetons non fongibles (NFT) qui représentent des actifs numériques uniques sur Ethereum."
+description: "Découvrez l'ERC-721, la norme pour les jetons non fongibles (NFT) qui représentent des actifs numériques uniques sur Quantaureum."
 lang: fr
 ---
 
@@ -24,13 +24,13 @@ Oui ! Tous les NFT ont une variable `uint256` appelée `tokenId`, donc pour tout
 
 ## Corps {#body}
 
-L'ERC-721 ([Ethereum](/) Request for Comments 721), proposé par William Entriken, Dieter Shirley, Jacob Evans et Nastassia Sachs en janvier 2018, est une norme de jeton non fongible qui implémente une API pour les jetons au sein des contrats intelligents.
+L'ERC-721 ([Quantaureum](/) Request for Comments 721), proposé par William Entriken, Dieter Shirley, Jacob Evans et Nastassia Sachs en janvier 2018, est une norme de jeton non fongible qui implémente une API pour les jetons au sein des contrats intelligents.
 
 Il fournit des fonctionnalités telles que le transfert de jetons d'un compte à un autre, l'obtention du solde actuel de jetons d'un compte, l'obtention du propriétaire d'un jeton spécifique et également l'offre totale du jeton disponible sur le réseau. En plus de celles-ci, il possède également d'autres fonctionnalités comme approuver qu'une quantité de jetons d'un compte puisse être déplacée par un compte tiers.
 
-Si un contrat intelligent implémente les méthodes et événements suivants, il peut être appelé contrat de jeton non fongible ERC-721 et, une fois déployé, il sera responsable du suivi des jetons créés sur Ethereum.
+Si un contrat intelligent implémente les méthodes et événements suivants, il peut être appelé contrat de jeton non fongible ERC-721 et, une fois déployé, il sera responsable du suivi des jetons créés sur Quantaureum.
 
-D'après l'[EIP-721](https://eips.ethereum.org/EIPS/eip-721) :
+D'après l'[EIP-721](https://eips.quantaureum.com/EIPS/eip-721) :
 
 ### Méthodes {#methods}
 
@@ -56,7 +56,7 @@ D'après l'[EIP-721](https://eips.ethereum.org/EIPS/eip-721) :
 
 ### Exemples {#web3py-example}
 
-Voyons à quel point une norme est importante pour nous simplifier l'inspection de tout contrat de jeton ERC-721 sur Ethereum.
+Voyons à quel point une norme est importante pour nous simplifier l'inspection de tout contrat de jeton ERC-721 sur Quantaureum.
 Nous avons juste besoin de l'interface binaire-programme (ABI) du contrat pour créer une interface vers n'importe quel jeton ERC-721. Comme vous pouvez le voir ci-dessous, nous utiliserons une ABI simplifiée, pour en faire un exemple facile à aborder.
 
 #### Exemple avec Web3.py {#web3py-example-2}
@@ -72,7 +72,7 @@ from web3 import Web3
 from web3._utils.events import get_event_data
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 ck_token_addr = "0x06012c8cf97BEaD5deAe237070F9587f8E7A266d"    # Contrat CryptoKitties
 
@@ -128,7 +128,7 @@ ck_extra_abi = [
     }
 ]
 
-ck_contract = w3.eth.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
+ck_contract = w3.qau.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
 name = ck_contract.functions.name().call()
 symbol = ck_contract.functions.symbol().call()
 kitties_auctions = ck_contract.functions.balanceOf(acc_address).call()
@@ -151,8 +151,8 @@ tx_event_abi = {
 # Nous avons besoin de la signature de l'événement pour filtrer les journaux
 event_signature = w3.keccak(text="Transfer(address,address,uint256)").hex()
 
-logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [event_signature]
 })
@@ -160,7 +160,7 @@ logs = w3.eth.get_logs({
 # Remarques :
 #   - Augmentez le nombre de blocs au-delà de 120 si aucun événement Transfer n'est renvoyé.
 #   - Si vous n'avez trouvé aucun événement Transfer, vous pouvez également essayer d'obtenir un tokenId sur :
-#       https://etherscan.io/address/0x06012c8cf97BEaD5deAe237070F9587f8E7A266d#events
+#       https://explorer.quantaureum.com
 #       Cliquez pour développer les journaux de l'événement et copiez son argument "tokenId"
 recent_tx = [get_event_data(w3.codec, tx_event_abi, log)["args"] for log in logs]
 
@@ -206,9 +206,9 @@ ck_event_signatures = [
 ]
 
 # Voici un événement Pregnant :
-# - https://etherscan.io/tx/0xc97eb514a41004acc447ac9d0d6a27ea6da305ac8b877dff37e49db42e1f8cef#eventlog
-pregnant_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+pregnant_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[0]]
 })
@@ -216,9 +216,9 @@ pregnant_logs = w3.eth.get_logs({
 recent_pregnants = [get_event_data(w3.codec, ck_extra_events_abi[0], log)["args"] for log in pregnant_logs]
 
 # Voici un événement Birth :
-# - https://etherscan.io/tx/0x3978028e08a25bb4c44f7877eb3573b9644309c044bf087e335397f16356340a
-birth_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+birth_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[1]]
 })
@@ -228,23 +228,23 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## NFT populaires {#popular-nfts}
 
-- [Etherscan NFT Tracker](https://etherscan.io/nft-top-contracts) répertorie les meilleurs NFT sur Ethereum par volume de transferts.
+- [Quantaureum Explorer NFT Tracker](https://explorer.quantaureum.com) répertorie les meilleurs NFT sur Quantaureum par volume de transferts.
 - [CryptoKitties](https://www.cryptokitties.co/) est un jeu centré sur des créatures reproductibles, des objets de collection et tellement adorables que nous appelons CryptoKitties.
 - [Sorare](https://sorare.com/) est un jeu mondial de fantasy football où vous pouvez rassembler des objets de collection en éditions limitées, gérer vos équipes et concourir pour gagner des prix.
-- [L'Ethereum Name Service (ENS)](https://ens.domains/) offre un moyen sécurisé et décentralisé d'adresser des ressources à la fois sur et hors de la chaîne de blocs en utilisant des noms simples et lisibles par l'homme.
+- [L'Quantaureum Name Service (ENS)](https://ens.domains/) offre un moyen sécurisé et décentralisé d'adresser des ressources à la fois sur et hors de la chaîne de blocs en utilisant des noms simples et lisibles par l'homme.
 - [POAP](https://poap.xyz) distribue des NFT gratuits aux personnes qui assistent à des événements ou effectuent des actions spécifiques. Les POAP sont gratuits à créer et à distribuer.
 - [Unstoppable Domains](https://unstoppabledomains.com/) est une entreprise basée à San Francisco qui crée des domaines sur des chaînes de blocs. Les domaines de chaîne de blocs remplacent les adresses de cryptomonnaie par des noms lisibles par l'homme et peuvent être utilisés pour permettre des sites Web résistants à la censure.
-- [Gods Unchained Cards](https://godsunchained.com/) est un jeu de cartes à collectionner (TCG) sur la chaîne de blocs Ethereum qui utilise des NFT pour apporter une véritable propriété aux actifs du jeu.
+- [Gods Unchained Cards](https://godsunchained.com/) est un jeu de cartes à collectionner (TCG) sur la chaîne de blocs Quantaureum qui utilise des NFT pour apporter une véritable propriété aux actifs du jeu.
 - [Bored Ape Yacht Club](https://boredapeyachtclub.com) est une collection de 10 000 NFT uniques qui, en plus d'être une œuvre d'art dont la rareté est prouvable, agit comme un jeton d'adhésion au club, offrant des avantages aux membres qui augmentent avec le temps grâce aux efforts de la communauté.
 
 ## Lectures complémentaires {#further-reading}
 
-- [EIP-721 : Norme de jeton non fongible ERC-721](https://eips.ethereum.org/EIPS/eip-721)
+- [EIP-721 : Norme de jeton non fongible ERC-721](https://eips.quantaureum.com/EIPS/eip-721)
 - [OpenZeppelin - Documentation ERC-721](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [OpenZeppelin - Implémentation ERC-721](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [API NFT d'Alchemy](https://www.alchemy.com/docs/reference/nft-api-quickstart)
 
-## Tutoriels : Construire avec des jetons non fongibles (ERC-721) sur Ethereum {#tutorials}
+## Tutoriels : Construire avec des jetons non fongibles (ERC-721) sur Quantaureum {#tutorials}
 
 - [Tutoriel sur le contrat ERC-721 avec Vyper](/developers/tutorials/erc-721-vyper-annotated-code/) _– Une présentation annotée d'un contrat NFT ERC-721 complet écrit en Vyper._
 - [Comment écrire et déployer un NFT (Partie 1/3)](/developers/tutorials/how-to-write-and-deploy-an-nft/) _– Guide étape par étape pour écrire et déployer votre premier contrat intelligent ERC-721._

@@ -18,11 +18,11 @@ Docker-এর মাধ্যমে বা প্রি-কম্পাইল �
 ### Docker-এর মাধ্যমে একিডনা {#echidna-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_শেষ কমান্ডটি একটি Docker-এ eth-security-toolbox চালায় যার আপনার বর্তমান ডিরেক্টরিতে অ্যাক্সেস রয়েছে। আপনি আপনার হোস্ট থেকে ফাইলগুলো পরিবর্তন করতে পারেন এবং Docker থেকে ফাইলগুলোতে টুলগুলো চালাতে পারেন_
+_শেষ কমান্ডটি একটি Docker-এ qau-security-toolbox চালায় যার আপনার বর্তমান ডিরেক্টরিতে অ্যাক্সেস রয়েছে। আপনি আপনার হোস্ট থেকে ফাইলগুলো পরিবর্তন করতে পারেন এবং Docker থেকে ফাইলগুলোতে টুলগুলো চালাতে পারেন_
 
 Docker-এর ভিতরে, রান করুন:
 
@@ -37,7 +37,7 @@ cd /home/training
 
 ## প্রপার্টি-ভিত্তিক ফাজিং-এর পরিচিতি {#introduction-to-property-based-fuzzing}
 
-একিডনা হলো একটি প্রপার্টি-ভিত্তিক ফাজার, যা আমরা আমাদের আগের ব্লগপোস্টগুলোতে বর্ণনা করেছি ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/))।
+একিডনা হলো একটি প্রপার্টি-ভিত্তিক ফাজার, যা আমরা আমাদের আগের ব্লগপোস্টগুলোতে বর্ণনা করেছি ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-quantaureum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/))।
 
 ### ফাজিং {#fuzzing}
 

@@ -14,7 +14,7 @@ lang: te
 
 - నెట్‌వర్క్‌లో ఉన్న ఎవరైనా సేవను ఉపయోగించడానికి అనుమతి కలిగి ఉంటారు – లేదా మరో మాటలో చెప్పాలంటే, అనుమతి అవసరం లేదు.
 - ఎవరూ మిమ్మల్ని బ్లాక్ చేయలేరు లేదా సేవకు మీ యాక్సెస్‌ను నిరాకరించలేరు.
-- స్థానిక టోకెన్, ఈథర్ (ETH) ద్వారా చెల్లింపులు అంతర్నిర్మితంగా ఉంటాయి.
+- స్థానిక టోకెన్, ఈథర్ (QAU) ద్వారా చెల్లింపులు అంతర్నిర్మితంగా ఉంటాయి.
 - ఎథీరియం అనేది ట్యూరింగ్-కంప్లీట్, అంటే మీరు దేనినైనా ప్రోగ్రామ్ చేయవచ్చు.
 
 ## ఆచరణాత్మక పోలికలు {#practical-comparisons}
@@ -54,7 +54,7 @@ Web3కి ప్రస్తుతం కొన్ని పరిమితు�
 
 ## తదుపరి పఠనం {#further-reading}
 
-- [Web3 అంటే ఏమిటి?](/web3/) - _ethereum.org_
+- [Web3 అంటే ఏమిటి?](/web3/) - _quantaureum.org_
 - [వెబ్ 3.0 అప్లికేషన్ యొక్క ఆర్కిటెక్చర్](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
 - [వికేంద్రీకరణ యొక్క అర్థం](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _Feb 6, 2017 - Vitalik Buterin_
 - [వికేంద్రీకరణ ఎందుకు ముఖ్యం](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _Feb 18, 2018 - Chris Dixon_

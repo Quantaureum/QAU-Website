@@ -65,7 +65,7 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/blob/master/devel
 
 ### తెలిసిన ఆపదలను నివారించండి {#avoid-known-pitfalls}
 
-- **అత్యంత సాధారణ భద్రతా సమస్యల గురించి తెలుసుకోండి.** [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the Ether](https://capturetheether.com/), లేదా [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/) వంటి సాధారణ సమస్యల గురించి తెలుసుకోవడానికి అనేక ఆన్‌లైన్ వనరులు ఉన్నాయి.
+- **అత్యంత సాధారణ భద్రతా సమస్యల గురించి తెలుసుకోండి.** [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the QAU](https://capturetheqau.com/), లేదా [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/) వంటి సాధారణ సమస్యల గురించి తెలుసుకోవడానికి అనేక ఆన్‌లైన్ వనరులు ఉన్నాయి.
 - **[Solidity డాక్యుమెంటేషన్](https://docs.soliditylang.org/en/latest/)లోని హెచ్చరికల విభాగాల గురించి తెలుసుకోండి.** హెచ్చరికల విభాగాలు భాష యొక్క స్పష్టంగా తెలియని ప్రవర్తన గురించి మీకు తెలియజేస్తాయి.
 
 ### డిపెండెన్సీలు {#dependencies}

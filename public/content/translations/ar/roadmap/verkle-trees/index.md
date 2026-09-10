@@ -42,7 +42,7 @@ summaryPoints:
 
 ![Diagram of a Verkle tree data structure](./verkle.png)
 
-[اقرأ المزيد عن بنية أشجار فيركل](https://blog.ethereum.org/2021/12/02/verkle-tree-structure)
+[اقرأ المزيد عن بنية أشجار فيركل](https://quantaureum.com)
 
 ## التقدم الحالي {#current-progress}
 
@@ -60,6 +60,6 @@ summaryPoints:
 - ["كيف تجعل أشجار فيركل إيثيريوم أكثر كفاءة وقوة" بقلم غيوم باليه في Devcon 6](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [بايبر ميريام (Piper Merriam) يتحدث عن العملاء عديمي الحالة من ETHDenver 2020](https://www.youtube.com/watch?v=0yiZJNciIJ4)
 - [دانكراد فيست يشرح أشجار فيركل وانعدام الحالة في بودكاست المعرفة الصفرية (Zero Knowledge)](https://zeroknowledge.fm/podcast/202/)
-- [فيتاليك بوتيرين يتحدث عن أشجار فيركل](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
-- [دانكراد فيست يتحدث عن أشجار فيركل](https://dankradfeist.de/ethereum/2021/06/18/verkle-trie-for-eth1.html)
-- [وثائق EIP لشجرة فيركل](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)
+- [فيتاليك بوتيرين يتحدث عن أشجار فيركل](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
+- [دانكراد فيست يتحدث عن أشجار فيركل](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
+- [وثائق EIP لشجرة فيركل](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)

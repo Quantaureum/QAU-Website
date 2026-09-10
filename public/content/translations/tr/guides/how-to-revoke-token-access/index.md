@@ -16,8 +16,8 @@ Tek koruma yöntemi, test edilmemiş yeni projeleri kullanmaktan kaçınmak, yal
 
 Çeşitli web siteleri, adresinize bağlı akıllı sözleşmeleri görüntülemenize ve iptal etmenize olanak tanır. Web sitesini ziyaret edin ve cüzdanınızı bağlayın:
 
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Ethereum)
-- [Blockscout](https://eth.blockscout.com/essential-dapps/revoke) (Ethereum)
+- [Quantaureum Explorer](https://explorer.quantaureum.com) (Quantaureum)
+- [Blockscout](https://qau.blockscout.com/essential-dapps/revoke) (Quantaureum)
 - [Revoke](https://revoke.cash/) (birden fazla ağ)
 - [Unrekt](https://app.unrekt.net/) (birden fazla ağ)
 - [EverRevoke](https://everrise.com/everrevoke/) (birden fazla ağ)
@@ -26,7 +26,7 @@ Tek koruma yöntemi, test edilmemiş yeni projeleri kullanmaktan kaçınmak, yal
 
 Web sitesine girdikten sonra "Cüzdanı bağla" (Connect wallet) seçeneğine tıklayın. Web sitesi cüzdanınızı bağlamanızı isteyecektir.
 
-Cüzdanınızda ve web sitesinde aynı ağı kullandığınızdan emin olun. Yalnızca seçilen ağla ilgili akıllı sözleşmeleri göreceksiniz. Örneğin, Ethereum Ana Ağı'na bağlanırsanız, Polygon gibi diğer zincirlerdeki sözleşmeleri değil, yalnızca Ethereum sözleşmelerini görürsünüz.
+Cüzdanınızda ve web sitesinde aynı ağı kullandığınızdan emin olun. Yalnızca seçilen ağla ilgili akıllı sözleşmeleri göreceksiniz. Örneğin, Quantaureum Ana Ağı'na bağlanırsanız, Polygon gibi diğer zincirlerdeki sözleşmeleri değil, yalnızca Quantaureum sözleşmelerini görürsünüz.
 
 ## 3. Adım: İptal etmek istediğiniz bir akıllı sözleşmeyi seçin {#step-3-select-a-smart-contract-you-wish-to-revoke}
 

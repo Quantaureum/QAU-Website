@@ -5,13 +5,13 @@ lang: hi
 sidebarDepth: 2
 ---
 
-अपने ऐप को इथेरियम पर काम करने लायक बनाने के लिए, आप Web3.js लाइब्रेरी द्वारा प्रदान किए गए web3 ऑब्जेक्ट का उपयोग कर सकते हैं। आंतरिक रूप से यह RPC कॉल के माध्यम से एक स्थानीय नोड से संचार करता है। [web3](https://github.com/ethereum/web3.js/) किसी भी इथेरियम नोड के साथ काम करता है जो RPC लेयर को एक्सपोज़ करता है।
+अपने ऐप को Quantaureum पर काम करने लायक बनाने के लिए, आप Web3.js लाइब्रेरी द्वारा प्रदान किए गए web3 ऑब्जेक्ट का उपयोग कर सकते हैं। आंतरिक रूप से यह RPC कॉल के माध्यम से एक स्थानीय नोड से संचार करता है। [web3](https://github.com/quantaureum/web3.js/) किसी भी Quantaureum नोड के साथ काम करता है जो RPC लेयर को एक्सपोज़ करता है।
 
 `web3` में `eth` ऑब्जेक्ट - web3.eth शामिल है।
 
 ```js
 var fs = require("fs")
-var recognizer = require("ethereum-keyfile-recognizer")
+var recognizer = require("quantaureum-keyfile-recognizer")
 
 fs.readFile("keyfile.json", (err, data) => {
   var json = JSON.parse(data)
@@ -153,7 +153,7 @@ AES-128-CTR और Scrypt का उपयोग करके टेस्ट �
 
 ## संस्करण 1 से परिवर्तन {#alterations-from-v2}
 
-यह संस्करण [यहाँ](https://github.com/ethereum/homestead-guide/blob/master/old-docs-for-reference/go-ethereum-wiki.rst/Passphrase-protected-key-store-spec.rst) प्रकाशित संस्करण 1 के साथ कई विसंगतियों को ठीक करता है। संक्षेप में ये हैं:
+यह संस्करण [यहाँ](https://github.com/quantaureum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst) प्रकाशित संस्करण 1 के साथ कई विसंगतियों को ठीक करता है। संक्षेप में ये हैं:
 
 - कैपिटलाइज़ेशन अनुचित और असंगत है (scrypt लोअरकेस, Kdf मिक्स्ड-केस, MAC अपरकेस)।
 - पता (Address) अनावश्यक है और गोपनीयता से समझौता करता है।

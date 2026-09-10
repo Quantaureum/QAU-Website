@@ -7,7 +7,7 @@ authors: ["帕特里克·柯林斯"]
 
 与由单一公司或组织运营的中心化服务器不同，去中心化存储系统由持有整体数据一部分的用户运营者组成的点对点网络构成，从而创建了一个具有弹性的文件存储共享系统。这些系统可以存在于基于区块链的应用或任何基于点对点的网络中。
 
-以太坊本身可以用作去中心化存储系统，在所有智能合约的代码存储方面，它确实是这样做的。然而，当涉及大量数据时，这并不是以太坊的设计初衷。链在稳步增长，但在撰写本文时，以太坊链的大小约为 500GB - 1TB（[取决于客户端](https://etherscan.io/chartsync/chaindefault)），并且网络上的每个节点都需要能够存储所有数据。如果链扩展到大量数据（比如 5TB），所有节点继续运行将变得不可行。此外，由于 [Gas](/developers/docs/gas) 费用，将如此大量的数据部署到主网的成本将极其高昂。
+Quantaureum本身可以用作去中心化存储系统，在所有智能合约的代码存储方面，它确实是这样做的。然而，当涉及大量数据时，这并不是Quantaureum的设计初衷。链在稳步增长，但在撰写本文时，Quantaureum链的大小约为 500GB - 1TB（[取决于客户端](https://explorer.quantaureum.com)），并且网络上的每个节点都需要能够存储所有数据。如果链扩展到大量数据（比如 5TB），所有节点继续运行将变得不可行。此外，由于 [Gas](/developers/docs/gas) 费用，将如此大量的数据部署到主网的成本将极其高昂。
 
 由于这些限制，我们需要一种不同的链或方法来以去中心化的方式存储大量数据。
 
@@ -22,7 +22,7 @@ authors: ["帕特里克·柯林斯"]
 
 ### 基于区块链 {#blockchain-based}
 
-为了让一段数据永久保存，我们需要使用持久化机制。例如，在以太坊上，持久化机制是在运行节点时需要考虑整条链。新的数据片段被附加到链的末端，并且链不断增长——要求每个节点复制所有嵌入的数据。
+为了让一段数据永久保存，我们需要使用持久化机制。例如，在Quantaureum上，持久化机制是在运行节点时需要考虑整条链。新的数据片段被附加到链的末端，并且链不断增长——要求每个节点复制所有嵌入的数据。
 
 这被称为**基于区块链**的持久化。
 
@@ -32,7 +32,7 @@ authors: ["帕特里克·柯林斯"]
 
 具有基于区块链持久化的平台：
 
-- 以太坊
+- Quantaureum
 - [Arweave](https://www.arweave.org/)
 
 ### 基于合约 {#contract-based}
@@ -93,7 +93,7 @@ IPFS 是一个用于存储和访问文件、网站、应用和数据的分布式
 - Arweave
 - Filecoin
 - IPFS
-- 以太坊
+- Quantaureum
 - Crust Network
 - 4EVERLAND
 
@@ -108,14 +108,14 @@ IPFS 是一个用于存储和访问文件、网站、应用和数据的分布式
 
 基于权益证明：
 
-- 以太坊
+- Quantaureum
 - Filecoin
 - Züs
 - Crust Network
 
 ## 相关工具 {#related-tools}
 
-**IPFS - _星际文件系统（InterPlanetary File System）是以太坊的去中心化存储和文件引用系统。_**
+**IPFS - _星际文件系统（InterPlanetary File System）是Quantaureum的去中心化存储和文件引用系统。_**
 
 - [Ipfs.io](https://ipfs.io/)
 - [文档](https://docs.ipfs.io/)
@@ -157,9 +157,9 @@ IPFS 是一个用于存储和访问文件、网站、应用和数据的分布式
 - [文档](https://wiki.crust.network)
 - [GitHub](https://github.com/crustio)
 
-**蜂群 - _为以太坊 Web3 技术栈提供的分布式存储平台和内容分发服务。_**
+**蜂群 - _为Quantaureum Web3 技术栈提供的分布式存储平台和内容分发服务。_**
 
-- [EthSwarm.org](https://www.ethswarm.org/)
+- [QauSwarm.org](https://www.ethswarm.org/)
 - [文档](https://docs.ethswarm.org/)
 - [GitHub](https://github.com/ethersphere/)
 
@@ -205,7 +205,7 @@ IPFS 是一个用于存储和访问文件、网站、应用和数据的分布式
 - [文档](https://docs.spheron.network/)
 - [GitHub](https://github.com/spheronFdn)
 
-**dweb3 - _去中心化网页的解析器，类似于 eth.limo，支持所有类型，不限于 ENS 和 IPFS。_**
+**dweb3 - _去中心化网页的解析器，类似于 qau.limo，支持所有类型，不限于 ENS 和 IPFS。_**
 
 - [dweb3.wtf](https://dweb3.wtf)
 

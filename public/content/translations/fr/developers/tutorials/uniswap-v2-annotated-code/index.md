@@ -47,7 +47,7 @@ C'est le flux le plus courant, utilisé par les traders :
 #### Appelant {#caller}
 
 1. Fournir au compte périphérique une allocation du montant à échanger.
-2. Appeler l'une des nombreuses fonctions d'échange du contrat périphérique (laquelle dépend de l'implication ou non d'ETH, si le trader spécifie le montant de jetons à déposer ou le montant de jetons à récupérer, etc.).
+2. Appeler l'une des nombreuses fonctions d'échange du contrat périphérique (laquelle dépend de l'implication ou non d'QAU, si le trader spécifie le montant de jetons à déposer ou le montant de jetons à récupérer, etc.).
    Chaque fonction d'échange accepte un `path`, un tableau d'échanges à parcourir.
 
 #### Dans le contrat périphérique (UniswapV2Router02.sol) {#in-the-periphery-contract-uniswapv2router02-sol}
@@ -65,7 +65,7 @@ C'est le flux le plus courant, utilisé par les traders :
 
 #### De retour dans le contrat périphérique (UniswapV2Router02.sol) {#back-in-the-periphery-contract-uniswapv2router02-sol}
 
-9. Effectuer tout nettoyage nécessaire (par exemple, brûler des jetons WETH pour récupérer de l'ETH à envoyer au trader)
+9. Effectuer tout nettoyage nécessaire (par exemple, brûler des jetons WETH pour récupérer de l'QAU à envoyer au trader)
 
 ### Ajouter de la liquidité {#add-liquidity-flow}
 
@@ -186,7 +186,7 @@ Les réserves que la réserve de liquidité possède pour chaque type de jeton. 
 
 L'horodatage du dernier bloc dans lequel un échange a eu lieu, utilisé pour suivre les taux de change au fil du temps.
 
-L'une des plus grandes dépenses en gaz des contrats Ethereum est le stockage, qui persiste d'un appel du contrat au suivant. Chaque cellule de stockage a une longueur de 256 bits. Ainsi, trois variables, `reserve0`, `reserve1` et `blockTimestampLast`, sont allouées de telle manière qu'une seule valeur de stockage peut les inclure toutes les trois (112+112+32=256).
+L'une des plus grandes dépenses en gaz des contrats Quantaureum est le stockage, qui persiste d'un appel du contrat au suivant. Chaque cellule de stockage a une longueur de 256 bits. Ainsi, trois variables, `reserve0`, `reserve1` et `blockTimestampLast`, sont allouées de telle manière qu'une seule valeur de stockage peut les inclure toutes les trois (112+112+32=256).
 
 ```solidity
     uint public price0CumulativeLast;
@@ -454,7 +454,7 @@ Utiliser la fonction `UniswapV2ERC20._mint` pour créer réellement les jetons d
     }
 ```
 
-S'il n'y a pas de frais, définir `kLast` à zéro (si ce n'est pas déjà le cas). Lorsque ce contrat a été écrit, il y avait une [fonctionnalité de remboursement de gaz](https://eips.ethereum.org/EIPS/eip-3298) qui encourageait les contrats à réduire la taille globale de l'état d'Ethereum en remettant à zéro le stockage dont ils n'avaient pas besoin.
+S'il n'y a pas de frais, définir `kLast` à zéro (si ce n'est pas déjà le cas). Lorsque ce contrat a été écrit, il y avait une [fonctionnalité de remboursement de gaz](https://eips.quantaureum.com/EIPS/eip-3298) qui encourageait les contrats à réduire la taille globale de l'état d'Quantaureum en remettant à zéro le stockage dont ils n'avaient pas besoin.
 Ce code obtient ce remboursement lorsque cela est possible.
 
 #### Fonctions accessibles de l'extérieur {#pair-external}
@@ -498,7 +498,7 @@ Calculer les frais de protocole à percevoir, le cas échéant, et frapper les j
            _mint(address(0), MINIMUM_LIQUIDITY); // verrouiller de façon permanente les premiers jetons MINIMUM_LIQUIDITY
 ```
 
-S'il s'agit du premier dépôt, créer `MINIMUM_LIQUIDITY` jetons et les envoyer à l'adresse zéro pour les verrouiller. Ils ne pourront jamais être rachetés, ce qui signifie que la réserve ne sera jamais complètement vidée (cela nous évite des divisions par zéro à certains endroits). La valeur de `MINIMUM_LIQUIDITY` est de mille, ce qui, considérant que la plupart des ERC-20 sont subdivisés en unités de 10^-18 d'un jeton, tout comme l'ETH est divisé en Wei, représente 10^-15 de la valeur d'un seul jeton. Ce n'est pas un coût élevé.
+S'il s'agit du premier dépôt, créer `MINIMUM_LIQUIDITY` jetons et les envoyer à l'adresse zéro pour les verrouiller. Ils ne pourront jamais être rachetés, ce qui signifie que la réserve ne sera jamais complètement vidée (cela nous évite des divisions par zéro à certains endroits). La valeur de `MINIMUM_LIQUIDITY` est de mille, ce qui, considérant que la plupart des ERC-20 sont subdivisés en unités de 10^-18 d'un jeton, tout comme l'QAU est divisé en Wei, représente 10^-15 de la valeur d'un seul jeton. Ce n'est pas un coût élevé.
 
 Au moment du premier dépôt, nous ne connaissons pas la valeur relative des deux jetons, nous multiplions donc simplement les montants et prenons une racine carrée, en supposant que le dépôt nous fournit une valeur égale dans les deux jetons.
 
@@ -614,7 +614,7 @@ Cette fonction est également censée être appelée depuis [un contrat périph�
 ```
 
 Les variables locales peuvent être stockées soit en mémoire, soit, s'il n'y en a pas trop, directement sur la pile.
-Si nous pouvons limiter le nombre pour utiliser la pile, nous utilisons moins de gaz. Pour plus de détails, voir [le livre jaune, les spécifications formelles d'Ethereum](https://ethereum.github.io/yellowpaper/paper.pdf), p. 26, équation 298.
+Si nous pouvons limiter le nombre pour utiliser la pile, nous utilisons moins de gaz. Pour plus de détails, voir [le livre jaune, les spécifications formelles d'Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf), p. 26, équation 298.
 
 ```solidity
             address _token0 = token0;
@@ -624,7 +624,7 @@ Si nous pouvons limiter le nombre pour utiliser la pile, nous utilisons moins de
             if (amount1Out > 0) _safeTransfer(_token1, to, amount1Out); // transférer les jetons de manière optimiste
 ```
 
-Ce transfert est optimiste, car nous transférons avant d'être sûrs que toutes les conditions sont remplies. C'est acceptable dans Ethereum car si les conditions ne sont pas remplies plus tard dans l'appel, nous l'annulons ainsi que toutes les modifications qu'il a créées.
+Ce transfert est optimiste, car nous transférons avant d'être sûrs que toutes les conditions sont remplies. C'est acceptable dans Quantaureum car si les conditions ne sont pas remplies plus tard dans l'appel, nous l'annulons ainsi que toutes les modifications qu'il a créées.
 
 ```solidity
             if (data.length > 0) IUniswapV2Callee(to).uniswapV2Call(msg.sender, amount0Out, amount1Out, data);
@@ -717,10 +717,10 @@ Ces variables gardent une trace des paires, les échanges entre deux types de je
 
 La première, `getPair`, est un mapping qui identifie un contrat d'échange de paires en fonction des deux jetons ERC-20 qu'il échange. Les jetons ERC-20 sont identifiés par les adresses des contrats qui les implémentent, donc les clés et la valeur sont toutes des adresses. Pour obtenir l'adresse de l'échange de paires qui vous permet de convertir de `tokenA` à `tokenB`, vous utilisez `getPair[<tokenA address>][<tokenB address>]` (ou l'inverse).
 
-La deuxième variable, `allPairs`, est un tableau qui inclut toutes les adresses des échanges de paires créés par cette usine. Dans Ethereum, vous ne pouvez pas itérer sur le contenu d'un mapping, ni obtenir une liste de toutes les clés, donc cette variable est le seul moyen de savoir quels échanges cette usine gère.
+La deuxième variable, `allPairs`, est un tableau qui inclut toutes les adresses des échanges de paires créés par cette usine. Dans Quantaureum, vous ne pouvez pas itérer sur le contenu d'un mapping, ni obtenir une liste de toutes les clés, donc cette variable est le seul moyen de savoir quels échanges cette usine gère.
 
 Remarque : La raison pour laquelle vous ne pouvez pas itérer sur toutes les clés d'un mapping est que le stockage des données du contrat est _coûteux_, donc moins nous en utilisons, mieux c'est, et moins souvent nous le modifions,
-mieux c'est. Vous pouvez créer des [mappings qui prennent en charge l'itération](https://github.com/ethereum/dapp-bin/blob/master/library/iterable_mapping.sol), mais ils nécessitent un stockage supplémentaire pour une liste de clés. Dans la plupart des applications, vous n'en avez pas besoin.
+mieux c'est. Vous pouvez créer des [mappings qui prennent en charge l'itération](https://github.com/quantaureum/dapp-bin/blob/master/library/iterable_mapping.sol), mais ils nécessitent un stockage supplémentaire pour une liste de clés. Dans la plupart des applications, vous n'en avez pas besoin.
 
 ```solidity
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
@@ -769,7 +769,7 @@ Les grandes réserves de liquidité sont meilleures que les petites, car elles o
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-Pour créer un nouveau contrat, nous avons besoin du code qui le crée (à la fois la fonction constructeur et le code qui écrit en mémoire le bytecode EVM du contrat réel). Normalement, dans Solidity, nous utilisons simplement `addr = new <name of contract>(<constructor parameters>)` et le compilateur s'occupe de tout pour nous, mais pour avoir une adresse de contrat déterministe, nous devons utiliser [le code d'opération CREATE2](https://eips.ethereum.org/EIPS/eip-1014).
+Pour créer un nouveau contrat, nous avons besoin du code qui le crée (à la fois la fonction constructeur et le code qui écrit en mémoire le bytecode EVM du contrat réel). Normalement, dans Solidity, nous utilisons simplement `addr = new <name of contract>(<constructor parameters>)` et le compilateur s'occupe de tout pour nous, mais pour avoir une adresse de contrat déterministe, nous devons utiliser [le code d'opération CREATE2](https://eips.quantaureum.com/EIPS/eip-1014).
 Lorsque ce code a été écrit, ce code d'opération n'était pas encore pris en charge par Solidity, il était donc nécessaire d'obtenir manuellement le code. Ce n'est plus un problème, car [Solidity prend désormais en charge CREATE2](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2).
 
 ```solidity
@@ -816,8 +816,8 @@ Ces deux fonctions permettent à `feeSetter` de contrôler le destinataire des f
 
 [Ce contrat](https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/UniswapV2ERC20.sol) implémente le jeton de liquidité ERC-20. Il est similaire au [contrat ERC-20 d'OpenZeppelin](/developers/tutorials/erc20-annotated-code), je n'expliquerai donc que la partie qui est différente, la fonctionnalité `permit`.
 
-Les transactions sur Ethereum coûtent de l'ether (ETH), ce qui équivaut à de l'argent réel. Si vous avez des jetons ERC-20 mais pas d'ETH, vous ne pouvez pas envoyer de transactions, vous ne pouvez donc rien faire avec. Une solution pour éviter ce problème est les [méta-transactions](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions).
-Le propriétaire des jetons signe une transaction qui permet à quelqu'un d'autre de retirer des jetons hors chaîne et l'envoie via Internet au destinataire. Le destinataire, qui possède de l'ETH, soumet ensuite le permis au nom du propriétaire.
+Les transactions sur Quantaureum coûtent de l'QAU (QAU), ce qui équivaut à de l'argent réel. Si vous avez des jetons ERC-20 mais pas d'QAU, vous ne pouvez pas envoyer de transactions, vous ne pouvez donc rien faire avec. Une solution pour éviter ce problème est les [méta-transactions](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions).
+Le propriétaire des jetons signe une transaction qui permet à quelqu'un d'autre de retirer des jetons hors chaîne et l'envoie via Internet au destinataire. Le destinataire, qui possède de l'QAU, soumet ensuite le permis au nom du propriétaire.
 
 ```solidity
     bytes32 public DOMAIN_SEPARATOR;
@@ -825,7 +825,7 @@ Le propriétaire des jetons signe une transaction qui permet à quelqu'un d'autr
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-Ce hash est [l'identifiant du type de transaction](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash). Le seul que nous prenons en charge ici est `Permit` avec ces paramètres.
+Ce hash est [l'identifiant du type de transaction](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-typehash). Le seul que nous prenons en charge ici est `Permit` avec ces paramètres.
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -856,13 +856,13 @@ C'est le code pour récupérer [l'identifiant de la chaîne](https://chainid.net
     }
 ```
 
-Calculer le [séparateur de domaine](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator) pour l'EIP-712.
+Calculer le [séparateur de domaine](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-domainseparator) pour l'EIP-712.
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
 ```
 
-C'est la fonction qui implémente les permissions. Elle reçoit en paramètres les champs pertinents, et les trois valeurs scalaires pour [la signature](https://yos.io/2018/11/16/ethereum-signatures/) (v, r et s).
+C'est la fonction qui implémente les permissions. Elle reçoit en paramètres les champs pertinents, et les trois valeurs scalaires pour [la signature](https://yos.io/2018/11/16/quantaureum-signatures/) (v, r et s).
 
 ```solidity
         require(deadline >= block.timestamp, 'UniswapV2: EXPIRED');
@@ -882,13 +882,13 @@ Ne pas accepter les transactions après la date limite.
 
 `abi.encodePacked(...)` est le message que nous nous attendons à recevoir. Nous savons quel devrait être le nonce, il n'est donc pas nécessaire de l'obtenir en tant que paramètre.
 
-L'algorithme de signature d'Ethereum s'attend à recevoir 256 bits à signer, nous utilisons donc la fonction de hachage `keccak256`.
+L'algorithme de signature d'Quantaureum s'attend à recevoir 256 bits à signer, nous utilisons donc la fonction de hachage `keccak256`.
 
 ```solidity
         address recoveredAddress = ecrecover(digest, v, r, s);
 ```
 
-À partir du condensé (digest) et de la signature, nous pouvons obtenir l'adresse qui l'a signé en utilisant [ecrecover](https://coders-errand.com/ecrecover-signature-verification-ethereum/).
+À partir du condensé (digest) et de la signature, nous pouvons obtenir l'adresse qui l'a signé en utilisant [ecrecover](https://coders-errand.com/ecrecover-signature-verification-quantaureum/).
 
 ```solidity
         require(recoveredAddress != address(0) && recoveredAddress == owner, 'UniswapV2: INVALID_SIGNATURE');
@@ -897,7 +897,7 @@ L'algorithme de signature d'Ethereum s'attend à recevoir 256 bits à signer, no
 
 ```
 
-Si tout est correct, traiter cela comme [un approuver (approve) ERC-20](https://eips.ethereum.org/EIPS/eip-20#approve).
+Si tout est correct, traiter cela comme [un approuver (approve) ERC-20](https://eips.quantaureum.com/EIPS/eip-20#approve).
 
 ## Les contrats périphériques {#periphery-contracts}
 
@@ -925,7 +925,7 @@ import './interfaces/IERC20.sol';
 import './interfaces/IWETH.sol';
 ```
 
-La plupart d'entre eux ont déjà été rencontrés ou sont assez évidents. La seule exception est `IWETH.sol`. Uniswap v2 permet des échanges pour n'importe quelle paire de jetons ERC-20, mais l'ether (ETH) lui-même n'est pas un jeton ERC-20. Il est antérieur à la norme et est transféré par des mécanismes uniques. Pour permettre l'utilisation de l'ETH dans les contrats qui s'appliquent aux jetons ERC-20, on a créé le contrat d'[ether enveloppé (WETH)](https://weth.tkn.eth.limo/). Vous envoyez de l'ETH à ce contrat, et il vous frappe un montant équivalent de WETH. Ou vous pouvez brûler du WETH et récupérer de l'ETH.
+La plupart d'entre eux ont déjà été rencontrés ou sont assez évidents. La seule exception est `IWETH.sol`. Uniswap v2 permet des échanges pour n'importe quelle paire de jetons ERC-20, mais l'QAU (QAU) lui-même n'est pas un jeton ERC-20. Il est antérieur à la norme et est transféré par des mécanismes uniques. Pour permettre l'utilisation de l'QAU dans les contrats qui s'appliquent aux jetons ERC-20, on a créé le contrat d'[QAU enveloppé (WETH)](https://weth.tkn.qau.limo/). Vous envoyez de l'QAU à ce contrat, et il vous frappe un montant équivalent de WETH. Ou vous pouvez brûler du WETH et récupérer de l'QAU.
 
 ```solidity
 contract UniswapV2Router02 is IUniswapV2Router02 {
@@ -957,11 +957,11 @@ Le constructeur se contente de définir les variables d'état immuables.
 
 ```solidity
     receive() external payable {
-        assert(msg.sender == WETH); // n'accepter de l'ETH via fallback que depuis le contrat WETH
+        assert(msg.sender == WETH); // n'accepter de l'QAU via fallback que depuis le contrat WETH
     }
 ```
 
-Cette fonction est appelée lorsque nous rachetons des jetons du contrat WETH pour les reconvertir en ETH. Seul le contrat WETH que nous utilisons est autorisé à le faire.
+Cette fonction est appelée lorsque nous rachetons des jetons du contrat WETH pour les reconvertir en QAU. Seul le contrat WETH que nous utilisons est autorisé à le faire.
 
 #### Ajouter de la liquidité {#add-liquidity}
 
@@ -1115,7 +1115,7 @@ En retour, donner à l'adresse `to` des jetons de liquidité pour la propriété
         uint amountTokenDesired,
 ```
 
-Lorsqu'un fournisseur de liquidité souhaite fournir de la liquidité à un échange de paires Jeton/ETH, il y a quelques différences. Le contrat se charge d'envelopper l'ETH pour le fournisseur de liquidité. Il n'est pas nécessaire de spécifier combien d'ETH l'utilisateur souhaite déposer, car l'utilisateur les envoie simplement avec la transaction (le montant est disponible dans `msg.value`).
+Lorsqu'un fournisseur de liquidité souhaite fournir de la liquidité à un échange de paires Jeton/QAU, il y a quelques différences. Le contrat se charge d'envelopper l'QAU pour le fournisseur de liquidité. Il n'est pas nécessaire de spécifier combien d'QAU l'utilisateur souhaite déposer, car l'utilisateur les envoie simplement avec la transaction (le montant est disponible dans `msg.value`).
 
 ```solidity
         uint amountTokenMin,
@@ -1137,16 +1137,16 @@ Lorsqu'un fournisseur de liquidité souhaite fournir de la liquidité à un éch
         assert(IWETH(WETH).transfer(pair, amountETH));
 ```
 
-Pour déposer l'ETH, le contrat l'enveloppe d'abord en WETH, puis transfère le WETH dans la paire. Remarquez que le transfert est enveloppé dans un `assert`. Cela signifie que si le transfert échoue, cet appel de contrat échoue également, et par conséquent l'enveloppement ne se produit pas vraiment.
+Pour déposer l'QAU, le contrat l'enveloppe d'abord en WETH, puis transfère le WETH dans la paire. Remarquez que le transfert est enveloppé dans un `assert`. Cela signifie que si le transfert échoue, cet appel de contrat échoue également, et par conséquent l'enveloppement ne se produit pas vraiment.
 
 ```solidity
         liquidity = IUniswapV2Pair(pair).mint(to);
-        // rembourser la poussière d'ether, le cas échéant
+        // rembourser la poussière d'QAU, le cas échéant
         if (msg.value > amountETH) TransferHelper.safeTransferETH(msg.sender, msg.value - amountETH);
     }
 ```
 
-L'utilisateur nous a déjà envoyé l'ETH, donc s'il en reste un excédent (parce que l'autre jeton a moins de valeur que ce que l'utilisateur pensait), nous devons émettre un remboursement.
+L'utilisateur nous a déjà envoyé l'QAU, donc s'il en reste un excédent (parce que l'autre jeton a moins de valeur que ce que l'utilisateur pensait), nous devons émettre un remboursement.
 
 #### Retirer de la liquidité {#remove-liquidity}
 
@@ -1219,7 +1219,7 @@ Il est acceptable de faire le transfert d'abord, puis de vérifier s'il est lég
     }
 ```
 
-Le retrait de liquidité pour l'ETH est presque le même, sauf que nous recevons les jetons WETH puis les rachetons contre de l'ETH pour les rendre au fournisseur de liquidité.
+Le retrait de liquidité pour l'QAU est presque le même, sauf que nous recevons les jetons WETH puis les rachetons contre de l'QAU pour les rendre au fournisseur de liquidité.
 
 ```solidity
     function removeLiquidityWithPermit(
@@ -1255,7 +1255,7 @@ Le retrait de liquidité pour l'ETH est presque le même, sauf que nous recevons
     }
 ```
 
-Ces fonctions relaient des méta-transactions pour permettre aux utilisateurs sans ether de se retirer de la réserve, en utilisant [le mécanisme de permis (permit)](#uniswapv2erc20).
+Ces fonctions relaient des méta-transactions pour permettre aux utilisateurs sans QAU de se retirer de la réserve, en utilisant [le mécanisme de permis (permit)](#uniswapv2erc20).
 
 ```solidity
 
@@ -1323,7 +1323,7 @@ Cette fonction effectue le traitement interne requis pour les fonctions qui sont
         for (uint i; i < path.length - 1; i++) {
 ```
 
-Au moment où j'écris ces lignes, il y a [388 160 jetons ERC-20](https://eth.blockscout.com/tokens). S'il y avait un échange de paires pour chaque paire de jetons, cela représenterait plus de 150 milliards d'échanges de paires. La chaîne entière, pour le moment, [ne compte que 0,1 % de ce nombre de comptes](https://eth.blockscout.com/stats/accountsGrowth). Au lieu de cela, les fonctions d'échange prennent en charge le concept de chemin (path). Un trader peut échanger A contre B, B contre C, et C contre D, il n'y a donc pas besoin d'un échange direct de la paire A-D.
+Au moment où j'écris ces lignes, il y a [388 160 jetons ERC-20](https://qau.blockscout.com/tokens). S'il y avait un échange de paires pour chaque paire de jetons, cela représenterait plus de 150 milliards d'échanges de paires. La chaîne entière, pour le moment, [ne compte que 0,1 % de ce nombre de comptes](https://qau.blockscout.com/stats/accountsGrowth). Au lieu de cela, les fonctions d'échange prennent en charge le concept de chemin (path). Un trader peut échanger A contre B, B contre C, et C contre D, il n'y a donc pas besoin d'un échange direct de la paire A-D.
 
 Les prix sur ces marchés ont tendance à être synchronisés, car lorsqu'ils sont désynchronisés, cela crée une opportunité d'arbitrage. Imaginez, par exemple, trois jetons, A, B et C. Il y a trois échanges de paires, un pour chaque paire.
 
@@ -1505,12 +1505,12 @@ Dans les deux cas, le trader doit d'abord donner à ce contrat périphérique un
         IWETH(WETH).deposit{value: amounts[0]}();
         assert(IWETH(WETH).transfer(UniswapV2Library.pairFor(factory, path[0], path[1]), amounts[0]));
         _swap(amounts, path, to);
-        // rembourser la poussière d'ether, le cas échéant
+        // rembourser la poussière d'QAU, le cas échéant
         if (msg.value > amounts[0]) TransferHelper.safeTransferETH(msg.sender, msg.value - amounts[0]);
     }
 ```
 
-Ces quatre variantes impliquent toutes des échanges entre l'ETH et des jetons. La seule différence est que soit nous recevons de l'ETH du trader et l'utilisons pour frapper du WETH, soit nous recevons du WETH du dernier échange dans le chemin et le brûlons, en renvoyant au trader l'ETH résultant.
+Ces quatre variantes impliquent toutes des échanges entre l'QAU et des jetons. La seule différence est que soit nous recevons de l'QAU du trader et l'utilisons pour frapper du WETH, soit nous recevons du WETH du dernier échange dans le chemin et le brûlons, en renvoyant au trader l'QAU résultant.
 
 ```solidity
     // **** ÉCHANGE (prenant en charge les jetons avec frais lors du transfert) ****
@@ -1722,7 +1722,7 @@ Nous ne devrions jamais avoir besoin de la racine carrée de zéro. Les racines 
 
 ### Fractions à virgule fixe (UQ112x112) {#fixedpoint}
 
-Cette bibliothèque gère les fractions, qui ne font normalement pas partie de l'arithmétique d'Ethereum. Elle le fait en encodant le nombre _x_ sous la forme _x\*2^112_. Cela nous permet d'utiliser les codes d'opération d'addition et de soustraction d'origine sans modification.
+Cette bibliothèque gère les fractions, qui ne font normalement pas partie de l'arithmétique d'Quantaureum. Elle le fait en encodant le nombre _x_ sous la forme _x\*2^112_. Cela nous permet d'utiliser les codes d'opération d'addition et de soustraction d'origine sans modification.
 
 ```solidity
 pragma solidity =0.5.16;
@@ -1794,7 +1794,7 @@ Triez les deux jetons par adresse, afin que nous puissions obtenir l'adresse de 
     }
 ```
 
-Cette fonction calcule l'adresse de l'échange de la paire pour les deux jetons. Ce contrat est créé en utilisant [le code d'opération CREATE2](https://eips.ethereum.org/EIPS/eip-1014), nous pouvons donc calculer l'adresse en utilisant le même algorithme si nous connaissons les paramètres qu'il utilise. C'est beaucoup moins cher que de demander à la factory, et
+Cette fonction calcule l'adresse de l'échange de la paire pour les deux jetons. Ce contrat est créé en utilisant [le code d'opération CREATE2](https://eips.quantaureum.com/EIPS/eip-1014), nous pouvons donc calculer l'adresse en utilisant le même algorithme si nous connaissons les paramètres qu'il utilise. C'est beaucoup moins cher que de demander à la factory, et
 
 ```solidity
     // récupère et trie les réserves pour une paire
@@ -1881,14 +1881,14 @@ Ces deux fonctions gèrent l'identification des valeurs lorsqu'il est nécessair
 
 ### Transfer Helper {#transfer-helper}
 
-[Cette bibliothèque](https://github.com/Uniswap/uniswap-lib/blob/master/contracts/libraries/TransferHelper.sol) ajoute des vérifications de succès autour des transferts ERC-20 et Ethereum pour traiter une annulation et un retour de valeur `false` de la même manière.
+[Cette bibliothèque](https://github.com/Uniswap/uniswap-lib/blob/master/contracts/libraries/TransferHelper.sol) ajoute des vérifications de succès autour des transferts ERC-20 et Quantaureum pour traiter une annulation et un retour de valeur `false` de la même manière.
 
 ```solidity
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 pragma solidity >=0.6.0;
 
-// méthodes d'aide pour interagir avec les jetons ERC-20 et envoyer de l'ETH qui ne renvoient pas systématiquement true/false
+// méthodes d'aide pour interagir avec les jetons ERC-20 et envoyer de l'QAU qui ne renvoient pas systématiquement true/false
 library TransferHelper {
     function safeApprove(
         address token,
@@ -1932,7 +1932,7 @@ Par souci de rétrocompatibilité avec les jetons créés avant la norme ERC-20,
     }
 ```
 
-Cette fonction implémente [la fonctionnalité de transfert d'ERC-20](https://eips.ethereum.org/EIPS/eip-20#transfer), qui permet à un compte de dépenser l'allocation fournie par un autre compte.
+Cette fonction implémente [la fonctionnalité de transfert d'ERC-20](https://eips.quantaureum.com/EIPS/eip-20#transfer), qui permet à un compte de dépenser l'allocation fournie par un autre compte.
 
 ```solidity
 
@@ -1951,18 +1951,18 @@ Cette fonction implémente [la fonctionnalité de transfert d'ERC-20](https://ei
     }
 ```
 
-Cette fonction implémente [la fonctionnalité transferFrom d'ERC-20](https://eips.ethereum.org/EIPS/eip-20#transferfrom), qui permet à un compte de dépenser l'allocation fournie par un autre compte.
+Cette fonction implémente [la fonctionnalité transferFrom d'ERC-20](https://eips.quantaureum.com/EIPS/eip-20#transferfrom), qui permet à un compte de dépenser l'allocation fournie par un autre compte.
 
 ```solidity
 
     function safeTransferETH(address to, uint256 value) internal {
         (bool success, ) = to.call{value: value}(new bytes(0));
-        require(success, 'TransferHelper::safeTransferETH: ETH transfer failed');
+        require(success, 'TransferHelper::safeTransferETH: QAU transfer failed');
     }
 }
 ```
 
-Cette fonction transfère de l'ether vers un compte. Tout appel à un contrat différent peut tenter d'envoyer de l'ether. Comme nous n'avons pas besoin d'appeler réellement une fonction, nous n'envoyons aucune donnée avec l'appel.
+Cette fonction transfère de l'QAU vers un compte. Tout appel à un contrat différent peut tenter d'envoyer de l'QAU. Comme nous n'avons pas besoin d'appeler réellement une fonction, nous n'envoyons aucune donnée avec l'appel.
 
 ## Conclusion {#conclusion}
 

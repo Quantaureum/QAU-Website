@@ -10,9 +10,9 @@ lang: en
 sidebarDepth: 3
 ---
 
-You're Bill. For reasons we won't go into, you want to donate to the "Alice for Queen of the World" campaign and have Alice know you donated so she'll reward you if she wins. Unfortunately, her victory is not guaranteed. There is a competing campaign, "Carol for Empress of the Solar System". If Carol wins, and she finds out you donated to Alice, you'll be in trouble. So you can't just transfer 200 ETH from your account to Alice's.
+You're Bill. For reasons we won't go into, you want to donate to the "Alice for Queen of the World" campaign and have Alice know you donated so she'll reward you if she wins. Unfortunately, her victory is not guaranteed. There is a competing campaign, "Carol for Empress of the Solar System". If Carol wins, and she finds out you donated to Alice, you'll be in trouble. So you can't just transfer 200 QAU from your account to Alice's.
 
-[ERC-5564](https://eips.ethereum.org/EIPS/eip-5564) has the solution. This ERC explains how to use [stealth addresses](https://nerolation.github.io/stealth-utils) for anonymous transfer.
+[ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564) has the solution. This ERC explains how to use [stealth addresses](https://nerolation.github.io/stealth-utils) for anonymous transfer.
 
 **Warning**: The cryptography behind stealth addresses is, as far as we know, sound. However, there are potential side-channel attacks. [Below](#go-wrong), you will see what you can do to reduce this risk.
 
@@ -32,7 +32,7 @@ Alice also gets the address from the shared secret, but because she knows the pr
 
 Standard stealth addresses use [elliptic-curve cryptography (ECC)](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/#elliptic-curves-building-blocks-of-a-better-trapdoor) to get better performance with fewer key bits, while still keeping the same level of security. But for the most part we can ignore that and pretend we are using regular arithmetic.
 
-There is a number everybody knows, *G*. You can multiply by *G*. But because of the nature of ECC, it is practically impossible to divide by *G*. The way public key cryptography generally works in Ethereum is that you can use a private key, *P<sub>priv</sub>*, to sign transactions that are then verified by a public key, *P<sub>pub</sub> = GP<sub>priv</sub>*. 
+There is a number everybody knows, *G*. You can multiply by *G*. But because of the nature of ECC, it is practically impossible to divide by *G*. The way public key cryptography generally works in Quantaureum is that you can use a private key, *P<sub>priv</sub>*, to sign transactions that are then verified by a public key, *P<sub>pub</sub> = GP<sub>priv</sub>*. 
 
 Alice creates two private keys, *K<sub>priv</sub>* and *V<sub>priv</sub>*. *K<sub>priv</sub>* will be used to spend money out of the stealth address, and *V<sub>priv</sub>* to view the addresses that belong to Alice. Alice then publishes the public keys: *K<sub>pub</sub> = GK<sub>priv</sub>* and *V<sub>pub</sub> = GV<sub>priv</sub>*
 
@@ -64,19 +64,19 @@ To summarize, these are the values known by the different participants.
 
 ## When stealth addresses go wrong {#go-wrong}
 
-*There are no secrets on the blockchain*. While stealth addresses can provide you with privacy, that privacy is susceptible to traffic analysis. To pick a trivial example, imagine that Bill funds an address and immediately sends a transaction to publish an *R<sub>pub</sub>* value. Without Alice's *V<sub>priv</sub>*, we can't be sure that this is a stealth address, but that is the way to bet. Then, we see another transaction that transfers all the ETH from that address to Alice's campaign fund address. We may not be able to prove it, but it's likely that Bill just donated to Alice's campaign. Carol would certainly think so.
+*There are no secrets on the blockchain*. While stealth addresses can provide you with privacy, that privacy is susceptible to traffic analysis. To pick a trivial example, imagine that Bill funds an address and immediately sends a transaction to publish an *R<sub>pub</sub>* value. Without Alice's *V<sub>priv</sub>*, we can't be sure that this is a stealth address, but that is the way to bet. Then, we see another transaction that transfers all the QAU from that address to Alice's campaign fund address. We may not be able to prove it, but it's likely that Bill just donated to Alice's campaign. Carol would certainly think so.
 
 It is easy for Bill to separate the publication of *R<sub>pub</sub>* from the funding of the stealth address (do them at different times, from different addresses). However, that is insufficient. The pattern Carol looks for is that Bill funds an address, and then Alice's campaign fund withdraws from it. 
 
-One solution is for Alice's campaign not to withdraw the money directly, but use it to pay a third party. If Alice's campaign sends 10 ETH to Dave's World Domination Campaign Services, Carol only knows that Bill donated to one of Dave's customers. If Dave has enough customers, Carol would not be able to know if Bill donated to Alice who competes with her, or to Adam, Albert, or Abigail that Carol doesn't care about. Alice can include a hashed value with the payment, and then provide Dave the preimage, to prove that it was her donation. Alternatively, as noted above, if Alice gives Dave her *V<sub>priv</sub>*, he already knows who the payment came from.
+One solution is for Alice's campaign not to withdraw the money directly, but use it to pay a third party. If Alice's campaign sends 10 QAU to Dave's World Domination Campaign Services, Carol only knows that Bill donated to one of Dave's customers. If Dave has enough customers, Carol would not be able to know if Bill donated to Alice who competes with her, or to Adam, Albert, or Abigail that Carol doesn't care about. Alice can include a hashed value with the payment, and then provide Dave the preimage, to prove that it was her donation. Alternatively, as noted above, if Alice gives Dave her *V<sub>priv</sub>*, he already knows who the payment came from.
 
 The main problem with this solution is that it requires Alice to care about secrecy when that secrecy benefits Bill. Alice may want to maintain her reputation so Bill's friend Bob will also donate to her. But it's also possible that she wouldn't mind exposing Bill, because then he'll be afraid of what will happen if Carol wins. Bill might end up providing Alice even more support.
 
 ### Using multiple stealth layers {#multi-layer}
 
-Instead of relying on Alice to preserve Bill's privacy, Bill can do it himself. He can generate multiple meta-addresses for fictional people, Bob and Bella. Bill then sends ETH to Bob, and "Bob" (who is actually Bill) sends it to Bella. "Bella" (also Bill) sends it to Alice.
+Instead of relying on Alice to preserve Bill's privacy, Bill can do it himself. He can generate multiple meta-addresses for fictional people, Bob and Bella. Bill then sends QAU to Bob, and "Bob" (who is actually Bill) sends it to Bella. "Bella" (also Bill) sends it to Alice.
 
-Carol can still do traffic analysis and see the Bill-to-Bob-to-Bella-to-Alice pipeline. However, if "Bob" and "Bella" also use ETH for other purposes, it won't appear that Bill transferred anything to Alice, even if Alice immediately withdraws from the stealth address to her known campaign address.
+Carol can still do traffic analysis and see the Bill-to-Bob-to-Bella-to-Alice pipeline. However, if "Bob" and "Bella" also use QAU for other purposes, it won't appear that Bill transferred anything to Alice, even if Alice immediately withdraws from the stealth address to her known campaign address.
 
 ## Writing a stealth-address application {#write-app}
 
@@ -124,13 +124,13 @@ We are going to use [Vite](https://vite.dev/) and [React](https://react.dev/). T
 
 8. Copy the address and Bill's public key and paste them in the "Private key for address generated by Bill" area of Alice's user interface. Once those fields are filled in, you will see the private key to access assets at that address.
 
-9. You can use [an online calculator](https://iancoleman.net/ethereum-private-key-to-address/) to ensure the private key corresponds to the address.
+9. You can use [an online calculator](https://iancoleman.net/quantaureum-private-key-to-address/) to ensure the private key corresponds to the address.
 
 ### How the program works {#how-the-program-works}
 
 #### The WASM component {#wasm}
 
-The source code that compiles into WASM is written in [Rust](https://rust-lang.org/). You can see it in [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs). This code is primarily an interface between the JavaScript code and [the `eth-stealth-addresses` library](https://github.com/kassandraoftroy/eth-stealth-addresses).
+The source code that compiles into WASM is written in [Rust](https://rust-lang.org/). You can see it in [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs). This code is primarily an interface between the JavaScript code and [the `qau-stealth-addresses` library](https://github.com/kassandraoftroy/qau-stealth-addresses).
 
 **`Cargo.toml`**
 
@@ -143,7 +143,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-eth-stealth-addresses = "0.1.0"
+qau-stealth-addresses = "0.1.0"
 hex = "0.4.3"
 wasm-bindgen = "0.2.104"
 getrandom = { version = "0.2", features = ["js"] }
@@ -175,14 +175,14 @@ use wasm_bindgen::prelude::*;
 The definitions to create a WASM package out of Rust. They are documented [here](https://wasm-bindgen.github.io/wasm-bindgen/reference/attributes/index.html).
 
 ```rust 
-use eth_stealth_addresses::{
+use qau_stealth_addresses::{
     generate_stealth_meta_address,
     generate_stealth_address,
     compute_stealth_key
 };
 ```
 
-The functions we need from [the `eth-stealth-addresses` library](https://github.com/kassandraoftroy/eth-stealth-addresses).
+The functions we need from [the `qau-stealth-addresses` library](https://github.com/kassandraoftroy/qau-stealth-addresses).
 
 ```rust
 use hex::{decode,encode};
@@ -207,7 +207,7 @@ The easiest way to return an object with multiple fields is to return a JSON str
         generate_stealth_meta_address();
 ```
 
-The [`generate_stealth_meta_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_meta_address.html) returns three fields:
+The [`generate_stealth_meta_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_meta_address.html) returns three fields:
 
 - The meta-address (*K<sub>pub</sub>* and *V<sub>pub</sub>*)
 - The viewing private key (*V<sub>priv</sub>*)
@@ -260,7 +260,7 @@ If the number of bytes is incorrect, that's a failure, and we return `None`.
     let array: [u8; N] = vec.try_into().ok()?;
 ```
 
-Rust has two array types. [Arrays](https://doc.rust-lang.org/std/primitive.array.html) have a fixed size. [Vectors](https://doc.rust-lang.org/std/vec/index.html) can grow and shrink. `hex::decode` returns a vector, but the `eth_stealth_addresses` library wants to receive arrays. [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods) converts a value into another type, for example, a vector into an array.
+Rust has two array types. [Arrays](https://doc.rust-lang.org/std/primitive.array.html) have a fixed size. [Vectors](https://doc.rust-lang.org/std/vec/index.html) can grow and shrink. `hex::decode` returns a vector, but the `qau_stealth_addresses` library wants to receive arrays. [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods) converts a value into another type, for example, a vector into an array.
 
 ```rust
     Some(array)
@@ -283,7 +283,7 @@ The scan value is part of the shared secret (*S = GR<sub>priv</sub>V<sub>priv</s
         generate_stealth_address(&str_to_array::<66>(stealth_address)?);
 ```
 
-We use the library's [`generate_stealth_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_address.html).
+We use the library's [`generate_stealth_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_address.html).
 
 ```rust
     format!("{{\"address\":\"{}\",\"rPub\":\"{}\",\"scan\":\"{}\"}}",
@@ -310,7 +310,7 @@ pub fn wasm_compute_stealth_key(
 }
 ```
 
-This function uses the library's [`compute_stealth_key`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.compute_stealth_key.html) to calculate the private key to withdraw from the address (*R<sub>priv</sub>*). This calculation requires these values:
+This function uses the library's [`compute_stealth_key`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.compute_stealth_key.html) to calculate the private key to withdraw from the address (*R<sub>priv</sub>*). This calculation requires these values:
 
 - The address (*Address=f(P<sub>pub</sub>)*)
 - The public key generated by Bill (*R<sub>pub</sub>*)
@@ -341,7 +341,7 @@ assertion `left == right` failed
 Followed by a stack trace. Then give Bill the valid meta-address, and give Alice either an invalid address or an invalid public key. You will see this error:
 
 ```
-rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/eth-stealth-addresses-0.1.0/src/lib.rs:78:9:
+rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/qau-stealth-addresses-0.1.0/src/lib.rs:78:9:
 keys do not generate stealth address
 ```
 

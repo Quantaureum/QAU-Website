@@ -9,9 +9,9 @@ breadcrumb: "Açık imzalama"
 published: 2026-05-11
 ---
 
-Çoğu büyük Ethereum istismarının aynı son adımı vardı: bir kullanıcının anlamlı bir şekilde anlayamadığı bir işlemi onaylaması. Donanım cüzdanları ham onaltılık (hex) çağrı verisini gösterir ve daha da kötüsü sizi kör imzalamayı (blind signing) açık tutmaya zorlar. Yazılım cüzdanları çözülmüş alanları gösterir, ancak yalnızca sözleşmeyi tanıdıklarında. Tanımadıklarında, protokol yeni olduğu için, uygulama tehlikeye girdiği için veya cihaz çevrimdışı olduğu için kullanıcılar körü körüne imzalama yaparlar.
+Çoğu büyük Quantaureum istismarının aynı son adımı vardı: bir kullanıcının anlamlı bir şekilde anlayamadığı bir işlemi onaylaması. Donanım cüzdanları ham onaltılık (hex) çağrı verisini gösterir ve daha da kötüsü sizi kör imzalamayı (blind signing) açık tutmaya zorlar. Yazılım cüzdanları çözülmüş alanları gösterir, ancak yalnızca sözleşmeyi tanıdıklarında. Tanımadıklarında, protokol yeni olduğu için, uygulama tehlikeye girdiği için veya cihaz çevrimdışı olduğu için kullanıcılar körü körüne imzalama yaparlar.
 
-[ERC-7730](https://eips.ethereum.org/EIPS/eip-7730), sözleşmenizin işlev çağrılarının ne *anlama geldiğini* açıklamak için standart bir JSON formatı tanımlar. 
+[ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730), sözleşmenizin işlev çağrılarının ne *anlama geldiğini* açıklamak için standart bir JSON formatı tanımlar. 
 
 ERC-7730'u destekleyen bir cüzdan tanımlayıcınızı okur ve şunları gösterir:
 
@@ -54,7 +54,7 @@ Tanımlayıcı sözleşmenin kendisinden ayrı olduğu için, yeniden dağıtım
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
   "context": {},
   "metadata": {},
   "display": {
@@ -167,7 +167,7 @@ Her anahtar, insan tarafından okunabilir bir ABI parçasıdır — hem parametr
 - **`intent`** — **(Gerekli)** Eylemin "Takas" gibi kısa, kullanıcı dostu bir açıklaması.
 - **`interpolatedIntent`** — **(Önerilen)** `"Swap {amountIn} for at least {amountOutMin}"` gibi biçimlendirilmiş alan değerlerini yerleştiren daha zengin bir cümle şablonu. Cüzdanların herhangi bir görüntüleme kısıtlaması olması durumunda göstermeyi seçebileceği daha da kullanıcı dostu bir tanımlayıcı sağlamak için bunu `intent` ile birlikte ekleyin.
 - **`fields`** — **(Gerekli)** Cüzdanların kullanıcılara göstermesi gereken işlem alanlarının sıralı listesi.
-  - **`path`** — **(Gerekli)** İşlem verilerine bir referans. `#.fieldName`, ABI'deki ada göre çözülmüş bir çağrı verisi parametresini işaret eder. `@.value`, işlemle birlikte gönderilen ETH değerini ifade eder.
+  - **`path`** — **(Gerekli)** İşlem verilerine bir referans. `#.fieldName`, ABI'deki ada göre çözülmüş bir çağrı verisi parametresini işaret eder. `@.value`, işlemle birlikte gönderilen QAU değerini ifade eder.
   - **`label`** — **(Gerekli)** Değerin yanında gösterilen insan tarafından okunabilir etiket.
   - **`format`** — **(Önerilen)** Değerin nasıl işleneceğini kontrol eder. Yaygın formatlar şunları içerir:
     - `tokenAmount`
@@ -185,7 +185,7 @@ Her anahtar, insan tarafından okunabilir bir ABI parçasıdır — hem parametr
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -256,7 +256,7 @@ Her anahtar, insan tarafından okunabilir bir ABI parçasıdır — hem parametr
 
 ## 5. Adım: Kayıt defterine gönderin {#step-5-submit-to-the-registry}
 
-[ERC-7730 kayıt defteri](https://github.com/ethereum/clear-signing-erc7730-registry), tarafsız bir yönetici olarak [Ethereum Vakfı](/foundation/) tarafından barındırılan açık bir depodur. Herkes onu klonlamakta ve kendi kendine barındırmakta özgürdür — cüzdanlar hangi kayıt defteri örneklerine güveneceklerine bağımsız olarak karar verirler.
+[ERC-7730 kayıt defteri](https://github.com/quantaureum/clear-signing-erc7730-registry), tarafsız bir yönetici olarak [Quantaureum Vakfı](/foundation/) tarafından barındırılan açık bir depodur. Herkes onu klonlamakta ve kendi kendine barındırmakta özgürdür — cüzdanlar hangi kayıt defteri örneklerine güveneceklerine bağımsız olarak karar verirler.
 
 1. GitHub'da depoyu çatallayın (fork)  
 2. `registry/<your-project-name>/` konumunda bir klasör oluşturun  
@@ -276,7 +276,7 @@ PR'ı açtığınızda, CI otomatik olarak şema doğrulaması çalıştırır, 
 
 ## Birleştirmeden sonra ne olur? {#what-happens-after-merging}
 
-Kayıt defterindeki tüm tanımlayıcılar denetçilere açıktır. PR'ınız birleştirildikten sonra, herhangi bir denetçi tanımlayıcınızı inceleyebilir ve doğruluğunu onaylayan kriptografik bir onay ([ERC-8176](https://github.com/ethereum/ERCs/pull/1576) altında) yayınlayabilir. 
+Kayıt defterindeki tüm tanımlayıcılar denetçilere açıktır. PR'ınız birleştirildikten sonra, herhangi bir denetçi tanımlayıcınızı inceleyebilir ve doğruluğunu onaylayan kriptografik bir onay ([ERC-8176](https://github.com/quantaureum/ERCs/pull/1576) altında) yayınlayabilir. 
 
 Bu onay sinyalleri, cüzdanların kendi güven politikalarını uygulamalarına olanak tanır — birden fazla bağımsız onaya sahip bir tanımlayıcı, onayı olmayan bir tanımlayıcıdan daha fazla ağırlık taşır. Denetçi topluluğuna [clearsigning.org](https://clearsigning.org) üzerinden ulaşabilirsiniz.
 
@@ -284,8 +284,8 @@ Cüzdanlar hangi kayıt defterini destekleyeceklerini seçerler. Tanımlayıcın
 
 ## Daha fazla bilgi {#further-reading}
 
-- [ERC-7730 spesifikasyonu](https://eips.ethereum.org/EIPS/eip-7730)  
-- [ERC-7730 kayıt defteri](https://github.com/ethereum/clear-signing-erc7730-registry)  
+- [ERC-7730 spesifikasyonu](https://eips.quantaureum.com/EIPS/eip-7730)  
+- [ERC-7730 kayıt defteri](https://github.com/quantaureum/clear-signing-erc7730-registry)  
 - [clearsigning.org](https://clearsigning.org) — araçlar, ekosistem durumu ve yönetişim  
 - [Sourcify sözleşme doğrulaması](https://sourcify.dev)  
 - [Trilyon Dolarlık Güvenlik girişimi](https://trilliondollarsecurity.org)

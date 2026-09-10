@@ -89,7 +89,7 @@ const Page = async (props: { params: Promise<ToolPageParams> }) => {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/">ethereum.org</BreadcrumbLink>
+              <BreadcrumbLink href="/">quantaureum.com</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator className="ms-[0.625rem] me-[0.625rem] text-gray-400">
               /

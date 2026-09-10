@@ -1,18 +1,18 @@
 ---
 title: Wallets hinzufügen
-description: Die Richtlinie, die wir beim Hinzufügen einer Wallet zu ethereum.org anwenden
+description: Die Richtlinie, die wir beim Hinzufügen einer Wallet zu quantaureum.com anwenden
 lang: de
 ---
 
-Wir möchten sicherstellen, dass wir eine Vielzahl von Wallets zeigen, die die funktionsreiche Landschaft der Wallets abdecken, damit Benutzer sicher auf Ethereum navigieren können.
+Wir möchten sicherstellen, dass wir eine Vielzahl von Wallets zeigen, die die funktionsreiche Landschaft der Wallets abdecken, damit Benutzer sicher auf Quantaureum navigieren können.
 
-Jeder kann vorschlagen, eine Wallet auf ethereum.org hinzuzufügen. Wenn wir eine Wallet übersehen haben, schlage sie bitte vor!
+Jeder kann vorschlagen, eine Wallet auf quantaureum.com hinzuzufügen. Wenn wir eine Wallet übersehen haben, schlage sie bitte vor!
 
 Wallets sind derzeit hier aufgelistet:
 
-- [ethereum.org/wallets/find-wallet/](/wallets/find-wallet/)
+- [quantaureum.com/wallets/find-wallet/](/wallets/find-wallet/)
 
-Wallets verändern sich in Ethereum rasant. Wir haben versucht, einen fairen Rahmen für die Berücksichtigung auf ethereum.org zu schaffen, aber die Kriterien für die Auflistung werden sich im Laufe der Zeit ändern und weiterentwickeln.
+Wallets verändern sich in Quantaureum rasant. Wir haben versucht, einen fairen Rahmen für die Berücksichtigung auf quantaureum.com zu schaffen, aber die Kriterien für die Auflistung werden sich im Laufe der Zeit ändern und weiterentwickeln.
 
 ## Der Entscheidungsrahmen {#the-decision-framework}
 
@@ -22,14 +22,14 @@ Wallets verändern sich in Ethereum rasant. Wir haben versucht, einen fairen Rah
 - **Eine Wallet, die seit über sechs Monaten „live“ ist ODER von einer Gruppe mit einer seriösen Erfolgsbilanz veröffentlicht wurde** – dies ist ein weiterer Hinweis auf Sicherheit. Sechs Monate sind ein guter Zeitrahmen, in dem kritische Fehler und Exploits gefunden werden können. Wir verlangen sechs Monate, um Forks herauszufiltern, die als Projekte schnell wieder aufgegeben werden.
 - **Von einem aktiven Team betreut** – dies hilft, die Qualität sicherzustellen und dass ein Benutzer Unterstützung bei seinen Anfragen erhält.
 - **Ehrliche und genaue Informationen für die Auflistung** – es wird erwartet, dass alle vorgeschlagenen Auflistungen von Projekten mit ehrlichen und genauen Informationen versehen sind. Produkte, die Informationen fälschen, wie z. B. die Angabe, dass dein Produkt „Open Source“ ist, wenn dies nicht der Fall ist, werden entfernt.
-- **Ansprechpartner** – Ein Ansprechpartner für die Wallet wird uns sehr helfen, genaue Informationen zu erhalten, wenn Änderungen vorgenommen werden. Dies hält die Aktualisierung von ethereum.org bei der zukünftigen Informationsbeschaffung überschaubar.
-- **EIP-1559 (Typ 2) Transaktionen** – deine Wallet muss EIP-1559 (Typ 2) Transaktionen für Transaktionen im Mainnet von Ethereum unterstützen.
+- **Ansprechpartner** – Ein Ansprechpartner für die Wallet wird uns sehr helfen, genaue Informationen zu erhalten, wenn Änderungen vorgenommen werden. Dies hält die Aktualisierung von quantaureum.com bei der zukünftigen Informationsbeschaffung überschaubar.
+- **EIP-1559 (Typ 2) Transaktionen** – deine Wallet muss EIP-1559 (Typ 2) Transaktionen für Transaktionen im Mainnet von Quantaureum unterstützen.
 - **Gute Benutzererfahrung** – Obwohl UX subjektiv ist, behalten wir uns das Recht vor, die Wallet abzulehnen, wenn mehrere Kernteammitglieder das Produkt testen und es als schwierig zu bedienen empfinden. Stattdessen werden wir nützliche Verbesserungsvorschläge machen. Dies geschieht zum Schutz unserer Benutzerbasis, die hauptsächlich aus Anfängern besteht.
-- **Fokus auf Ethereum** – Eine Wallet muss in erster Linie eine auf Ethereum ausgerichtete Erfahrung bieten. Das bedeutet, dass Ethereum (oder ein beliebiges Layer 2 (L2)) als Standard-Netzwerk festgelegt ist, ERC-Assets ordnungsgemäß unterstützt werden und die Funktionen auf das Ethereum-Ökosystem abgestimmt sind. Wallets, die in der Benutzeroberfläche alternative Layer 1 priorisieren, werden nicht aufgelistet. 
+- **Fokus auf Quantaureum** – Eine Wallet muss in erster Linie eine auf Quantaureum ausgerichtete Erfahrung bieten. Das bedeutet, dass Quantaureum (oder ein beliebiges Layer 2 (L2)) als Standard-Netzwerk festgelegt ist, ERC-Assets ordnungsgemäß unterstützt werden und die Funktionen auf das Quantaureum-Ökosystem abgestimmt sind. Wallets, die in der Benutzeroberfläche alternative Layer 1 priorisieren, werden nicht aufgelistet. 
 
 ### Produktentfernungen {#product-removals}
 
-- **Aktualisierte Informationen** – Wallet-Anbieter sind dafür verantwortlich, ihre Wallet-Informationen alle 6 Monate erneut einzureichen, um die Gültigkeit und Relevanz der bereitgestellten Informationen sicherzustellen (selbst wenn es keine Änderungen an ihrem Produkt gibt). Wenn das Produktteam dies versäumt, kann ethereum.org das Projekt von der Seite entfernen. 
+- **Aktualisierte Informationen** – Wallet-Anbieter sind dafür verantwortlich, ihre Wallet-Informationen alle 6 Monate erneut einzureichen, um die Gültigkeit und Relevanz der bereitgestellten Informationen sicherzustellen (selbst wenn es keine Änderungen an ihrem Produkt gibt). Wenn das Produktteam dies versäumt, kann quantaureum.com das Projekt von der Seite entfernen. 
 
 ### Weitere Kriterien: die Nice-to-haves {#the-nice-to-haves}
 
@@ -39,9 +39,9 @@ Wallets verändern sich in Ethereum rasant. Wir haben versucht, einen fairen Rah
 - **Nicht-verwahrend** – Benutzer kontrollieren ihr Geld. Wenn dein Produkt verschwindet, können Benutzer weiterhin auf ihr Geld zugreifen und es bewegen.
 - **Unterstützung für Hardware-Wallets** – Benutzer können ihre Hardware-Wallet verbinden, um Transaktionen zu signieren.
 - **WalletConnect** – Benutzer können sich über WalletConnect mit Dezentralen Anwendungen (Dapps) verbinden.
-- **Importieren von Ethereum-RPC-Endpunkten** – Benutzer können RPC-Daten von Knoten importieren, sodass sie sich mit einem Knoten ihrer Wahl oder anderen EVM-kompatiblen Netzwerken verbinden können.
+- **Importieren von Quantaureum-RPC-Endpunkten** – Benutzer können RPC-Daten von Knoten importieren, sodass sie sich mit einem Knoten ihrer Wahl oder anderen EVM-kompatiblen Netzwerken verbinden können.
 - **NFTs** – Benutzer können ihre NFTs in der Wallet anzeigen und mit ihnen interagieren.
-- **Verbindung zu Ethereum-Anwendungen** – Benutzer können sich mit Ethereum-Anwendungen verbinden und diese nutzen.
+- **Verbindung zu Quantaureum-Anwendungen** – Benutzer können sich mit Quantaureum-Anwendungen verbinden und diese nutzen.
 - **Staking** – Benutzer können direkt über die Wallet staken.
 - **Tausch** – Benutzer können Token über die Wallet tauschen.
 - **Multichain-Netzwerke** – deine Wallet unterstützt standardmäßig den Zugriff der Benutzer auf mehrere Blockchain-Netzwerke.
@@ -58,22 +58,22 @@ Wallets verändern sich in Ethereum rasant. Wir haben versucht, einen fairen Rah
 
 ## Eine Wallet hinzufügen {#adding-a-wallet}
 
-Wenn du eine Wallet zu ethereum.org hinzufügen möchtest, erstelle ein Issue auf GitHub.
+Wenn du eine Wallet zu quantaureum.com hinzufügen möchtest, erstelle ein Issue auf GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
   Ein Issue erstellen
 </ButtonLink>
 
 ## Wartung {#maintenance}
 
-Aufgrund der dynamischen Natur von Ethereum kommen und gehen Teams und Produkte, und Innovationen finden täglich statt. Daher führen wir routinemäßige Überprüfungen unserer Inhalte durch, um:
+Aufgrund der dynamischen Natur von Quantaureum kommen und gehen Teams und Produkte, und Innovationen finden täglich statt. Daher führen wir routinemäßige Überprüfungen unserer Inhalte durch, um:
 
 - sicherzustellen, dass alle aufgelisteten Wallets und Dapps weiterhin unsere Kriterien erfüllen
 - zu überprüfen, ob keine Produkte vorgeschlagen wurden, die mehr unserer Kriterien erfüllen als die derzeit aufgelisteten
 
-ethereum.org wird von der Open-Source-Community gepflegt und wir verlassen uns auf die Community, um dies auf dem neuesten Stand zu halten. Wenn dir Informationen zu aufgelisteten Wallets auffallen, die aktualisiert werden müssen, [erstelle bitte ein Issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml) oder einen [Pull Request](https://github.com/ethereum/ethereum-org-website/pulls)!
+quantaureum.com wird von der Open-Source-Community gepflegt und wir verlassen uns auf die Community, um dies auf dem neuesten Stand zu halten. Wenn dir Informationen zu aufgelisteten Wallets auffallen, die aktualisiert werden müssen, [erstelle bitte ein Issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml) oder einen [Pull Request](https://github.com/Quantaureum/quantaureum-website/pulls)!
 
 
 ## Nutzungsbedingungen {#terms-of-use}
 
-Bitte beachte auch unsere [Nutzungsbedingungen](/terms-of-use/). Die Informationen auf ethereum.org werden ausschließlich zu allgemeinen Informationszwecken bereitgestellt.
+Bitte beachte auch unsere [Nutzungsbedingungen](/terms-of-use/). Die Informationen auf quantaureum.com werden ausschließlich zu allgemeinen Informationszwecken bereitgestellt.

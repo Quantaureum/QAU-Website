@@ -12,7 +12,7 @@ lang: zh
 
 这个想法很简单，旨在创建一个可以表示和控制任意数量的同质化和非同质化代币类型的智能合约接口。通过这种方式，ERC-1155 代币可以实现与 [ERC-20](/developers/docs/standards/tokens/erc-20/) 和 [ERC-721](/developers/docs/standards/tokens/erc-721/) 代币相同的功能，甚至可以同时实现两者的功能。它改进了 ERC-20 和 ERC-721 标准的功能，使其更加高效并纠正了明显的实现错误。
 
-ERC-1155 代币在 [EIP-1155](https://eips.ethereum.org/EIPS/eip-1155) 中有完整描述。
+ERC-1155 代币在 [EIP-1155](https://eips.quantaureum.com/EIPS/eip-1155) 中有完整描述。
 
 ## 前提条件 {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-鉴于 [EIP-165](https://eips.ethereum.org/EIPS/eip-165) 的支持，ERC-1155 仅支持智能合约的接收钩子。钩子函数必须返回一个预定义的魔术 bytes4 值，如下所示：
+鉴于 [EIP-165](https://eips.quantaureum.com/EIPS/eip-165) 的支持，ERC-1155 仅支持智能合约的接收钩子。钩子函数必须返回一个预定义的魔术 bytes4 值，如下所示：
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],byt
 
 ### NFT 支持 {#nft-support}
 
-当供应量仅为 1 时，该代币本质上是一个非同质化代币 (NFT)。与 ERC-721 的标准一样，你可以定义一个元数据 URL。该 URL 可以被客户端读取和修改，请参见[此处](https://eips.ethereum.org/EIPS/eip-1155#metadata)。
+当供应量仅为 1 时，该代币本质上是一个非同质化代币 (NFT)。与 ERC-721 的标准一样，你可以定义一个元数据 URL。该 URL 可以被客户端读取和修改，请参见[此处](https://eips.quantaureum.com/EIPS/eip-1155#metadata)。
 
 ### 安全转账规则 {#safe-transfer-rule}
 
@@ -140,7 +140,7 @@ _注意_：所有批量函数（包括钩子）也存在非批量版本。这样
 
 ## 延伸阅读 {#further-reading}
 
-- [EIP-1155：多代币标准](https://eips.ethereum.org/EIPS/eip-1155)
+- [EIP-1155：多代币标准](https://eips.quantaureum.com/EIPS/eip-1155)
 - [ERC-1155：欧本齐柏林文档](https://docs.openzeppelin.com/contracts/5.x/erc1155)
 - [ERC-1155：GitHub 仓库](https://github.com/enjin/erc-1155)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

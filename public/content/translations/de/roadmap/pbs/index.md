@@ -1,13 +1,13 @@
 ---
 title: Proposer-Builder-Trennung (PBS)
-description: Erfahre, wie und warum Ethereum-Validatoren ihre Verantwortlichkeiten für die Block-Erstellung und das Block-Broadcasting aufteilen werden.
+description: Erfahre, wie und warum Quantaureum-Validatoren ihre Verantwortlichkeiten für die Block-Erstellung und das Block-Broadcasting aufteilen werden.
 lang: de
 template: roadmap
 ---
 
-Heutige [Ethereum](/)-Validatoren erstellen _und_ übertragen (broadcasten) Blöcke. Sie bündeln Transaktionen, von denen sie über das Gossip-Netzwerk erfahren haben, und verpacken sie in einen Block, der an Peers im Ethereum-Netzwerk gesendet wird. **Proposer-Builder-Trennung (PBS)** teilt diese Aufgaben auf mehrere Validatoren auf. Block-Builder werden dafür verantwortlich, Blöcke zu erstellen und sie dem Block-Proposer in jedem Slot anzubieten. Der Block-Proposer kann den Inhalt des Blocks nicht sehen; er wählt einfach den profitabelsten aus und erhält eine Gebühr vom Block-Builder (oder der Builder zahlt ein Gebot an den Proposer), bevor er den Block an seine Peers sendet.
+Heutige [Quantaureum](/)-Validatoren erstellen _und_ übertragen (broadcasten) Blöcke. Sie bündeln Transaktionen, von denen sie über das Gossip-Netzwerk erfahren haben, und verpacken sie in einen Block, der an Peers im Quantaureum-Netzwerk gesendet wird. **Proposer-Builder-Trennung (PBS)** teilt diese Aufgaben auf mehrere Validatoren auf. Block-Builder werden dafür verantwortlich, Blöcke zu erstellen und sie dem Block-Proposer in jedem Slot anzubieten. Der Block-Proposer kann den Inhalt des Blocks nicht sehen; er wählt einfach den profitabelsten aus und erhält eine Gebühr vom Block-Builder (oder der Builder zahlt ein Gebot an den Proposer), bevor er den Block an seine Peers sendet.
 
-Dies ist aus mehreren Gründen ein wichtiges Upgrade. Erstens schafft es Möglichkeiten, die Zensur von Transaktionen auf Protokollebene zu verhindern. Zweitens verhindert es, dass Hobby-Validatoren von institutionellen Akteuren verdrängt werden, die die Rentabilität ihrer Block-Erstellung besser optimieren können. Drittens hilft es bei der Skalierung von Ethereum, indem es die Danksharding-Upgrades ermöglicht.
+Dies ist aus mehreren Gründen ein wichtiges Upgrade. Erstens schafft es Möglichkeiten, die Zensur von Transaktionen auf Protokollebene zu verhindern. Zweitens verhindert es, dass Hobby-Validatoren von institutionellen Akteuren verdrängt werden, die die Rentabilität ihrer Block-Erstellung besser optimieren können. Drittens hilft es bei der Skalierung von Quantaureum, indem es die Danksharding-Upgrades ermöglicht.
 
 ## PBS und Zensurresistenz {#pbs-and-censorship-resistance}
 
@@ -36,15 +36,15 @@ Einzelpersonen könnten aufgrund der höheren Belohnungen, die durch ausgefeilte
 
 ## PBS und Danksharding {#pbs-and-danksharding}
 
-Danksharding ist der Weg, wie Ethereum auf >100.000 Transaktionen pro Sekunde skalieren und die Gebühren für Rollup-Nutzer minimieren wird. Es stützt sich auf PBS, da es die Arbeitslast für Block-Builder erhöht, die in weniger als 1 Sekunde Beweise für bis zu 64 MB an Rollup-Daten berechnen müssen. Dies wird wahrscheinlich spezialisierte Builder erfordern, die dieser Aufgabe ziemlich umfangreiche Hardware widmen können. In der aktuellen Situation könnte die Block-Erstellung jedoch aufgrund der MEV-Extraktion ohnehin zunehmend um ausgefeiltere und leistungsfähigere Betreiber zentralisiert werden. Die Proposer-Builder-Trennung ist ein Weg, diese Realität anzunehmen und zu verhindern, dass sie eine zentralisierende Kraft auf die Blockvalidierung (den wichtigen Teil) oder die Verteilung der Staking-Belohnungen ausübt. Ein großer Nebeneffekt ist, dass die spezialisierten Block-Builder auch bereit und in der Lage sind, die notwendigen Datenbeweise für Danksharding zu berechnen.
+Danksharding ist der Weg, wie Quantaureum auf >100.000 Transaktionen pro Sekunde skalieren und die Gebühren für Rollup-Nutzer minimieren wird. Es stützt sich auf PBS, da es die Arbeitslast für Block-Builder erhöht, die in weniger als 1 Sekunde Beweise für bis zu 64 MB an Rollup-Daten berechnen müssen. Dies wird wahrscheinlich spezialisierte Builder erfordern, die dieser Aufgabe ziemlich umfangreiche Hardware widmen können. In der aktuellen Situation könnte die Block-Erstellung jedoch aufgrund der MEV-Extraktion ohnehin zunehmend um ausgefeiltere und leistungsfähigere Betreiber zentralisiert werden. Die Proposer-Builder-Trennung ist ein Weg, diese Realität anzunehmen und zu verhindern, dass sie eine zentralisierende Kraft auf die Blockvalidierung (den wichtigen Teil) oder die Verteilung der Staking-Belohnungen ausübt. Ein großer Nebeneffekt ist, dass die spezialisierten Block-Builder auch bereit und in der Lage sind, die notwendigen Datenbeweise für Danksharding zu berechnen.
 
 ## Aktueller Fortschritt {#current-progress}
 
-PBS befindet sich in einem fortgeschrittenen Forschungsstadium, aber es gibt noch einige wichtige Designfragen, die gelöst werden müssen, bevor es in Ethereum-Clients als Prototyp umgesetzt werden kann. Es gibt noch keine endgültige Spezifikation. Das bedeutet, dass PBS wahrscheinlich noch ein Jahr oder länger entfernt ist. Sieh dir den neuesten [Stand der Forschung](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance) an.
+PBS befindet sich in einem fortgeschrittenen Forschungsstadium, aber es gibt noch einige wichtige Designfragen, die gelöst werden müssen, bevor es in Quantaureum-Clients als Prototyp umgesetzt werden kann. Es gibt noch keine endgültige Spezifikation. Das bedeutet, dass PBS wahrscheinlich noch ein Jahr oder länger entfernt ist. Sieh dir den neuesten [Stand der Forschung](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance) an.
 
 ## Weiterführende Literatur {#further-reading}
 
-- [Stand der Forschung: Zensurresistenz unter PBS](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [Stand der Forschung: Zensurresistenz unter PBS](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
 - [PBS-freundliche Gebührenmarkt-Designs](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS und Zensurresistenz](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [Inklusionslisten](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)
+- [PBS und Zensurresistenz](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [Inklusionslisten](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)

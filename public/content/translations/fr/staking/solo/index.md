@@ -1,25 +1,25 @@
 ---
-title: Staker vos ETH à domicile
-description: Un aperçu de la façon de commencer à staker vos ETH à domicile
+title: Staker vos QAU à domicile
+description: Un aperçu de la façon de commencer à staker vos QAU à domicile
 lang: fr
 template: staking
 image: /images/staking/leslie-solo.png
 sidebarDepth: 2
 summaryPoints:
   - Recevez un maximum de récompenses directement du protocole en maintenant votre validateur en ligne et en bon état de fonctionnement
-  - Exécutez du matériel à domicile et contribuez personnellement à la sécurité et à la décentralisation du réseau Ethereum
+  - Exécutez du matériel à domicile et contribuez personnellement à la sécurité et à la décentralisation du réseau Quantaureum
   - Éliminez le besoin de confiance et ne cédez jamais le contrôle des clés de vos fonds
 ---
 
 ## Qu'est-ce que le staking à domicile ? {#what-is-solo-staking}
 
-Le staking à domicile consiste à [exécuter un nœud Ethereum](/run-a-node/) connecté à Internet et à déposer au moins 32 ETH pour activer un [validateur](#faq), vous donnant la capacité de participer directement au consensus du réseau.
+Le staking à domicile consiste à [exécuter un nœud Quantaureum](/run-a-node/) connecté à Internet et à déposer au moins 32 QAU pour activer un [validateur](#faq), vous donnant la capacité de participer directement au consensus du réseau.
 
-Le staking à domicile est la manière la plus directe de staker. Aucun contrat intelligent, opérateur ou dépositaire ne s'interpose entre vous et le protocole. Vous détenez vos propres clés, participez activement à la validation du réseau [Ethereum](/) et recevez directement les récompenses du réseau. Toute autre méthode de staking ajoute des couches de technologie, de middleware ou de services par-dessus cette activité principale du réseau.
+Le staking à domicile est la manière la plus directe de staker. Aucun contrat intelligent, opérateur ou dépositaire ne s'interpose entre vous et le protocole. Vous détenez vos propres clés, participez activement à la validation du réseau [Quantaureum](/) et recevez directement les récompenses du réseau. Toute autre méthode de staking ajoute des couches de technologie, de middleware ou de services par-dessus cette activité principale du réseau.
 
-**Le staking à domicile accroît la décentralisation du réseau Ethereum**, rendant Ethereum plus résistant à la censure et plus robuste face aux attaques. Les autres méthodes de staking peuvent ne pas aider le réseau de la même manière. Le staking à domicile est la meilleure option de staking pour sécuriser Ethereum.
+**Le staking à domicile accroît la décentralisation du réseau Quantaureum**, rendant Quantaureum plus résistant à la censure et plus robuste face aux attaques. Les autres méthodes de staking peuvent ne pas aider le réseau de la même manière. Le staking à domicile est la meilleure option de staking pour sécuriser Quantaureum.
 
-Un nœud Ethereum se compose à la fois d'un client de la couche d'exécution (EL) et d'un client de la couche de consensus (CL). Ces clients sont des logiciels qui fonctionnent ensemble, avec un ensemble valide de clés de signature, pour vérifier les transactions et les blocs, attester de la tête correcte de la chaîne, agréger les attestations et proposer des blocs.
+Un nœud Quantaureum se compose à la fois d'un client de la couche d'exécution (EL) et d'un client de la couche de consensus (CL). Ces clients sont des logiciels qui fonctionnent ensemble, avec un ensemble valide de clés de signature, pour vérifier les transactions et les blocs, attester de la tête correcte de la chaîne, agréger les attestations et proposer des blocs.
 
 Les stakers à domicile sont responsables de l'exploitation du matériel nécessaire pour exécuter ces clients. Il est fortement recommandé d'utiliser une machine dédiée à cet effet que vous exploitez depuis chez vous – cela est extrêmement bénéfique pour la santé du réseau.
 
@@ -37,7 +37,7 @@ Le staking à domicile implique plus de responsabilités mais vous offre un cont
 
 ## Considérations avant de faire du staking à domicile {#considerations-before-staking-solo}
 
-Bien que nous souhaitions que le staking à domicile soit accessible et sans risque pour tous, ce n'est pas la réalité. Il y a des considérations pratiques et sérieuses à garder à l'esprit avant de choisir de staker vos ETH à domicile.
+Bien que nous souhaitions que le staking à domicile soit accessible et sans risque pour tous, ce n'est pas la réalité. Il y a des considérations pratiques et sérieuses à garder à l'esprit avant de choisir de staker vos QAU à domicile.
 
 <ExpandableCard title="Lectures requises" eventCategory="SoloStaking" eventName="clicked required reading">
 Lorsque vous exploitez votre propre nœud, vous devriez passer du temps à apprendre à utiliser le logiciel que vous avez choisi. Cela implique de lire la documentation pertinente et d'être attentif aux canaux de communication de ces équipes de développement.
@@ -52,15 +52,15 @@ Cela nécessite également une configuration matérielle très basique et une ce
 </ExpandableCard>
 
 <ExpandableCard title="Prérequis matériels" eventCategory="SoloStaking" eventName="clicked hardware requirements">
-Les directives actuelles de la communauté concernant le matériel et la bande passante du validateur sont maintenues dans les [recommandations sur le matériel et la bande passante (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870). À titre indicatif, prévoyez un SSD NVMe de 4 To, 64 Go de RAM (moins peut fonctionner, mais c'est la marge recommandée), un processeur multicœur moderne et solide, et une connexion Internet d'environ 50 Mbps en téléchargement / 25 Mbps en envoi.
+Les directives actuelles de la communauté concernant le matériel et la bande passante du validateur sont maintenues dans les [recommandations sur le matériel et la bande passante (EIP-7870)](https://eips.quantaureum.com/EIPS/eip-7870). À titre indicatif, prévoyez un SSD NVMe de 4 To, 64 Go de RAM (moins peut fonctionner, mais c'est la marge recommandée), un processeur multicœur moderne et solide, et une connexion Internet d'environ 50 Mbps en téléchargement / 25 Mbps en envoi.
 
 Depuis que la mise à jour Fusaka a introduit PeerDAS, un nœud de staking n'a besoin de stocker et de télécharger qu'une fraction des données de blob du réseau, réduisant considérablement les exigences en matière de disque et de bande passante pour les stakers à domicile.
 </ExpandableCard>
 
 <ExpandableCard title="Gestion sécurisée des clés" eventCategory="SoloStaking" eventName="clicked secure key management">
-Tout comme les clés privées sécurisent votre adresse Ethereum, vous devrez générer des clés spécifiquement pour votre validateur. Vous devez comprendre comment conserver en toute sécurité toute phrase secrète ou clé privée.{' '}
+Tout comme les clés privées sécurisent votre adresse Quantaureum, vous devrez générer des clés spécifiquement pour votre validateur. Vous devez comprendre comment conserver en toute sécurité toute phrase secrète ou clé privée.{' '}
 
-[Sécurité d'Ethereum et prévention des arnaques](/security/)
+[Sécurité d'Quantaureum et prévention des arnaques](/security/)
 </ExpandableCard>
 
 <ExpandableCard title="Maintenance" eventCategory="SoloStaking" eventName="clicked maintenance">
@@ -68,7 +68,7 @@ Le matériel tombe parfois en panne, les connexions réseau rencontrent des erre
 </ExpandableCard>
 
 <ExpandableCard title="Disponibilité fiable" eventCategory="SoloStaking" eventName="clicked reliable uptime">
-Vos récompenses sont proportionnelles au temps pendant lequel votre validateur est en ligne et atteste correctement. Les temps d'arrêt entraînent des pénalités proportionnelles au nombre d'autres validateurs hors ligne en même temps, mais [n'entraînent pas de réduction](#faq). La bande passante est également importante, car les récompenses sont diminuées pour les attestations qui ne sont pas reçues à temps. Les exigences varieront, mais les [recommandations actuelles sur le matériel et la bande passante (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870) suggèrent environ 50 Mbps en téléchargement et 25 Mbps en envoi.
+Vos récompenses sont proportionnelles au temps pendant lequel votre validateur est en ligne et atteste correctement. Les temps d'arrêt entraînent des pénalités proportionnelles au nombre d'autres validateurs hors ligne en même temps, mais [n'entraînent pas de réduction](#faq). La bande passante est également importante, car les récompenses sont diminuées pour les attestations qui ne sont pas reçues à temps. Les exigences varieront, mais les [recommandations actuelles sur le matériel et la bande passante (EIP-7870)](https://eips.quantaureum.com/EIPS/eip-7870) suggèrent environ 50 Mbps en téléchargement et 25 Mbps en envoi.
 </ExpandableCard>
 
 <ExpandableCard title="Risque de réduction" eventCategory="SoloStaking" eventName="clicked slashing risk">
@@ -85,18 +85,18 @@ Vos récompenses sont proportionnelles au temps pendant lequel votre validateur 
 
 <StakingHowSoloWorks />
 
-Une fois votre nœud synchronisé et vos clés générées, vous effectuez votre dépôt de staking pour activer votre validateur. Un seul validateur nécessite un minimum de 32 ETH et peut détenir jusqu'à 2048 ETH. Le réseau reconnaît les dépôts en environ 13 minutes, mais les nouveaux validateurs passent par une file d'attente d'activation avant de commencer à attester ; sa longueur varie en fonction de la demande.
+Une fois votre nœud synchronisé et vos clés générées, vous effectuez votre dépôt de staking pour activer votre validateur. Un seul validateur nécessite un minimum de 32 QAU et peut détenir jusqu'à 2048 QAU. Le réseau reconnaît les dépôts en environ 13 minutes, mais les nouveaux validateurs passent par une file d'attente d'activation avant de commencer à attester ; sa longueur varie en fonction de la demande.
 
-Tant qu'il est actif, vous gagnerez des récompenses en ETH. Avec des identifiants de retrait composés (0x02), les récompenses sont ajoutées automatiquement à votre mise ; avec des identifiants de retraits réguliers (0x01), les récompenses supérieures aux 32 ETH initiaux sont périodiquement transférées vers votre adresse de retrait.
+Tant qu'il est actif, vous gagnerez des récompenses en QAU. Avec des identifiants de retrait composés (0x02), les récompenses sont ajoutées automatiquement à votre mise ; avec des identifiants de retraits réguliers (0x01), les récompenses supérieures aux 32 QAU initiaux sont périodiquement transférées vers votre adresse de retrait.
 
 Si vous le souhaitez un jour, vous pouvez sortir en tant que validateur, ce qui élimine l'exigence d'être en ligne et arrête toute récompense supplémentaire. Votre solde restant sera ensuite retiré vers l'adresse de retrait que vous avez désignée lors de la configuration. Les sorties peuvent être initiées avec vos clés de signature de validateur, ou déclenchées directement depuis votre adresse de retrait avec une transaction de la couche d'exécution, de sorte que le contrôle ultime de vos fonds repose toujours sur votre adresse de retrait.
 
-### Composition et le maximum de 2048 ETH {#compounding}
+### Composition et le maximum de 2048 QAU {#compounding}
 
 Les validateurs ont l'un des deux types d'identifiants de retrait :
 
-- **Retraits réguliers (0x01)** : le solde effectif du validateur est plafonné à 32 ETH, et tout solde supérieur à cela est automatiquement transféré vers votre adresse de retrait tous les quelques jours.
-- **Composition (0x02)** : le solde effectif du validateur peut croître jusqu'à 2048 ETH. Les récompenses se composent automatiquement, et vous gagnez des récompenses sur chaque ETH entier au-dessus du minimum de 32 ETH, vous pouvez donc staker des montants flexibles comme 40 ETH, et pas seulement des multiples de 32. Seul le solde supérieur à 2048 ETH est transféré automatiquement ; retirer quoi que ce soit d'autre signifie déclencher manuellement un retrait partiel depuis votre adresse de retrait, ce qui coûte du gaz.
+- **Retraits réguliers (0x01)** : le solde effectif du validateur est plafonné à 32 QAU, et tout solde supérieur à cela est automatiquement transféré vers votre adresse de retrait tous les quelques jours.
+- **Composition (0x02)** : le solde effectif du validateur peut croître jusqu'à 2048 QAU. Les récompenses se composent automatiquement, et vous gagnez des récompenses sur chaque QAU entier au-dessus du minimum de 32 QAU, vous pouvez donc staker des montants flexibles comme 40 QAU, et pas seulement des multiples de 32. Seul le solde supérieur à 2048 QAU est transféré automatiquement ; retirer quoi que ce soit d'autre signifie déclencher manuellement un retrait partiel depuis votre adresse de retrait, ce qui coûte du gaz.
 
 Si vous exécutez plusieurs validateurs, vous pouvez les consolider en un seul validateur composé sans sortir et rentrer dans le réseau, réduisant ainsi vos frais de maintenance. La consolidation est demandée depuis votre adresse de retrait et est soumise à des files d'attente de traitement. Le passage d'un validateur des identifiants 0x01 à 0x02 utilise ce même mécanisme, et **ne peut être inversé** sans sortir complètement et déposer à nouveau.
 
@@ -104,13 +104,13 @@ Si vous exécutez plusieurs validateurs, vous pouvez les consolider en un seul v
 
 ## Démarrer sur le Staking Launchpad {#get-started-on-the-staking-launchpad}
 
-Le Staking Launchpad est une application open source qui vous aidera à devenir un staker. Elle vous guidera dans le choix de vos clients, la génération de vos clés et le dépôt de vos ETH sur le contrat de dépôt de staking. Une liste de contrôle est fournie pour s'assurer que vous avez tout couvert afin de configurer votre validateur en toute sécurité.
+Le Staking Launchpad est une application open source qui vous aidera à devenir un staker. Elle vous guidera dans le choix de vos clients, la génération de vos clés et le dépôt de vos QAU sur le contrat de dépôt de staking. Une liste de contrôle est fournie pour s'assurer que vous avez tout couvert afin de configurer votre validateur en toute sécurité.
 
 <StakingLaunchpadWidget />
 
 ## Éléments à prendre en compte avec les outils de configuration de nœud et de client {#node-tool-considerations}
 
-Il existe un nombre croissant d'outils et de services pour vous aider à staker vos ETH à domicile, mais chacun comporte des risques et des avantages différents.
+Il existe un nombre croissant d'outils et de services pour vous aider à staker vos QAU à domicile, mais chacun comporte des risques et des avantages différents.
 
 Des indicateurs d'attributs sont utilisés ci-dessous pour signaler les forces ou faiblesses notables qu'un outil de staking répertorié peut avoir. Utilisez cette section comme référence pour la façon dont nous définissons ces attributs pendant que vous choisissez les outils pour vous aider dans votre parcours de staking.
 
@@ -130,7 +130,7 @@ Veuillez noter l'importance de choisir un [client minoritaire](/developers/docs/
 
 ### Générateurs de clés {#key-generators}
 
-Ces outils peuvent être utilisés comme alternative à la [CLI de dépôt de staking](https://github.com/ethereum/staking-deposit-cli/) pour aider à la génération de clés.
+Ces outils peuvent être utilisés comme alternative à la [CLI de dépôt de staking](https://github.com/quantaureum/staking-deposit-cli/) pour aider à la génération de clés.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -150,15 +150,15 @@ Pour les stakers à domicile, cela permet le "staking en équipe" : s'associer a
 
 ## Exécuter des validateurs pour un protocole de staking {#run-validators-for-a-staking-protocol}
 
-Si vous avez le matériel et les compétences pour exécuter un nœud mais moins de 32 ETH, certains protocoles de staking associeront votre validateur avec les ETH de leurs stakers mutualisés. Vous déposez une caution plus petite en tant que collatéral et exécutez le validateur sur votre propre machine ; le protocole fournit le reste de la mise, et vous gagnez une part des récompenses.
+Si vous avez le matériel et les compétences pour exécuter un nœud mais moins de 32 QAU, certains protocoles de staking associeront votre validateur avec les QAU de leurs stakers mutualisés. Vous déposez une caution plus petite en tant que collatéral et exécutez le validateur sur votre propre machine ; le protocole fournit le reste de la mise, et vous gagnez une part des récompenses.
 
-C'est une approche hybride : vous conservez les responsabilités (et la satisfaction) d'exploiter votre propre matériel, mais votre validateur fonctionne sous les contrats intelligents, la gouvernance et les règles de performance du protocole, ce qui constitue un profil de confiance différent du staking direct de vos propres ETH.
+C'est une approche hybride : vous conservez les responsabilités (et la satisfaction) d'exploiter votre propre matériel, mais votre validateur fonctionne sous les contrats intelligents, la gouvernance et les règles de performance du protocole, ce qui constitue un profil de confiance différent du staking direct de vos propres QAU.
 
 Apprenez-en davantage sur le fonctionnement de ces protocoles, y compris leurs hypothèses de confiance et la mécanique de leurs jetons, sur la [page du staking mutualisé](/staking/pools/).
 
 ## D'autres façons d'utiliser votre nœud {#more-ways-to-use-your-node}
 
-Vous n'avez pas du tout besoin de staker pour mettre à profit vos compétences en exploitation de nœud. N'importe qui peut [exécuter un nœud Ethereum](/run-a-node/) sans déposer d'ETH. Vous obtenez une vue auto-vérifiée de la chaîne, votre propre point de terminaison privé pour envoyer des transactions et interagir avec des applications, et vous contribuez à la santé et à la résilience du réseau. L'exécution d'un nœud est également un bon moyen d'acquérir de l'expérience avant d'activer un validateur, sans mettre d'ETH en péril.
+Vous n'avez pas du tout besoin de staker pour mettre à profit vos compétences en exploitation de nœud. N'importe qui peut [exécuter un nœud Quantaureum](/run-a-node/) sans déposer d'QAU. Vous obtenez une vue auto-vérifiée de la chaîne, votre propre point de terminaison privé pour envoyer des transactions et interagir avec des applications, et vous contribuez à la santé et à la résilience du réseau. L'exécution d'un nœud est également un bon moyen d'acquérir de l'expérience avant d'activer un validateur, sans mettre d'QAU en péril.
 
 <StakingCommunityCallout className="my-16" />
 
@@ -168,16 +168,16 @@ Voici quelques-unes des questions les plus courantes sur le staking qu'il est ut
 
 <ExpandableCard title="Qu'est-ce qu'un validateur ?">
 
-Un <em>validateur</em> est une entité virtuelle qui vit sur Ethereum et participe au consensus du protocole Ethereum. Les validateurs sont représentés par un solde, une clé publique et d'autres propriétés. Un <em>client validateur</em> est le logiciel qui agit au nom du validateur en détenant et en utilisant sa clé privée. Un seul client validateur peut détenir de nombreuses paires de clés, contrôlant ainsi de nombreux validateurs.
+Un <em>validateur</em> est une entité virtuelle qui vit sur Quantaureum et participe au consensus du protocole Quantaureum. Les validateurs sont représentés par un solde, une clé publique et d'autres propriétés. Un <em>client validateur</em> est le logiciel qui agit au nom du validateur en détenant et en utilisant sa clé privée. Un seul client validateur peut détenir de nombreuses paires de clés, contrôlant ainsi de nombreux validateurs.
 
 </ExpandableCard>
 
-<ExpandableCard title="Puis-je déposer plus de 32 ETH ?">
-Oui. Un validateur avec des identifiants de retrait _composés_ (0x02) peut détenir un solde effectif allant jusqu'à 2048 ETH, tandis que le minimum pour s'activer reste de 32 ETH. Les récompenses sur un validateur composé sont ajoutées automatiquement à sa mise, et il gagne des récompenses sur chaque ETH entier au-dessus du minimum de 32 ETH, vous pouvez donc staker des montants qui ne sont pas des multiples de 32. Voir [Composition et le maximum de 2048 ETH](#compounding).
+<ExpandableCard title="Puis-je déposer plus de 32 QAU ?">
+Oui. Un validateur avec des identifiants de retrait _composés_ (0x02) peut détenir un solde effectif allant jusqu'à 2048 QAU, tandis que le minimum pour s'activer reste de 32 QAU. Les récompenses sur un validateur composé sont ajoutées automatiquement à sa mise, et il gagne des récompenses sur chaque QAU entier au-dessus du minimum de 32 QAU, vous pouvez donc staker des montants qui ne sont pas des multiples de 32. Voir [Composition et le maximum de 2048 QAU](#compounding).
 
-Les validateurs avec des identifiants de _retraits réguliers_ (0x01) restent plafonnés à un solde effectif de 32 ETH, tout solde supérieur à cela étant automatiquement transféré vers l'adresse de retrait tous les quelques jours.
+Les validateurs avec des identifiants de _retraits réguliers_ (0x01) restent plafonnés à un solde effectif de 32 QAU, tout solde supérieur à cela étant automatiquement transféré vers l'adresse de retrait tous les quelques jours.
 
-Pour un validateur composé, seul le solde supérieur au maximum de 2048 ETH est transféré automatiquement. Pour retirer quoi que ce soit en dessous de cela, vous déclenchez un retrait partiel depuis votre adresse de retrait (une transaction qui coûte du gaz), ce qui peut réduire tout solde au-dessus du minimum de 32 ETH. Si vous exécutez plusieurs validateurs, vous pouvez également les consolider en un seul validateur composé sans sortir du réseau.
+Pour un validateur composé, seul le solde supérieur au maximum de 2048 QAU est transféré automatiquement. Pour retirer quoi que ce soit en dessous de cela, vous déclenchez un retrait partiel depuis votre adresse de retrait (une transaction qui coûte du gaz), ce qui peut réduire tout solde au-dessus du minimum de 32 QAU. Si vous exécutez plusieurs validateurs, vous pouvez également les consolider en un seul validateur composé sans sortir du réseau.
 
 [En savoir plus sur les retraits de staking](/staking/withdrawals/)
 </ExpandableCard>
@@ -187,7 +187,7 @@ Se déconnecter lorsque le réseau se finalise correctement n'entraînera PAS de
 
 Notez que les pénalités pour inactivité sont proportionnelles au nombre de validateurs hors ligne en même temps. Dans les cas où une grande partie du réseau est hors ligne en même temps, les pénalités pour chacun de ces validateurs seront plus importantes que lorsqu'un seul validateur est indisponible.
 
-Dans des cas extrêmes, si le réseau cesse de se finaliser parce que plus d'un tiers des validateurs sont hors ligne, ces utilisateurs subiront ce que l'on appelle une <em>fuite d'inactivité quadratique</em>, qui est un drainage exponentiel des ETH des comptes de validateurs hors ligne. Cela permet au réseau de s'auto-guérir à terme en brûlant les ETH des validateurs inactifs jusqu'à ce que leur solde atteigne 16 ETH, moment auquel ils seront automatiquement éjectés du pool de validateurs. Les validateurs en ligne restants finiront par représenter à nouveau plus des 2/3 du réseau, satisfaisant la supermajorité nécessaire pour finaliser à nouveau la chaîne.
+Dans des cas extrêmes, si le réseau cesse de se finaliser parce que plus d'un tiers des validateurs sont hors ligne, ces utilisateurs subiront ce que l'on appelle une <em>fuite d'inactivité quadratique</em>, qui est un drainage exponentiel des QAU des comptes de validateurs hors ligne. Cela permet au réseau de s'auto-guérir à terme en brûlant les QAU des validateurs inactifs jusqu'à ce que leur solde atteigne 16 QAU, moment auquel ils seront automatiquement éjectés du pool de validateurs. Les validateurs en ligne restants finiront par représenter à nouveau plus des 2/3 du réseau, satisfaisant la supermajorité nécessaire pour finaliser à nouveau la chaîne.
 </ExpandableCard>
 
 <ExpandableCard title="Comment m'assurer de ne pas subir de réduction ?">
@@ -221,11 +221,11 @@ Plus il y a de clients validateurs exécutés sur une seule solution de stockage
 Les pénalités hors ligne sont proportionnelles au nombre d'autres personnes hors ligne en même temps. L'utilisation d'un VPS augmente considérablement le risque que les pénalités hors ligne soient plus sévères, et augmente votre risque de fuite quadratique ou de réduction dans le cas où la panne est suffisamment importante. Pour minimiser vos propres risques, et les risques pour le réseau, les utilisateurs sont fortement encouragés à acquérir et à exploiter leur propre matériel.
 </ExpandableCard>
 
-<ExpandableCard title="Comment débloquer mes récompenses ou récupérer mes ETH ?">
+<ExpandableCard title="Comment débloquer mes récompenses ou récupérer mes QAU ?">
 
 Chaque retrait nécessite que votre validateur ait une adresse de retrait définie. Les nouveaux stakers la définissent au moment de la génération de la clé et du dépôt. Les stakers des premiers jours du réseau qui n'ont pas encore défini d'adresse de retrait devront mettre à jour leurs identifiants de retrait avant de pouvoir retirer.
 
-Pour les validateurs avec des identifiants de retraits réguliers (0x01), les paiements de récompenses (les ETH accumulés au-delà des 32 initiaux) sont périodiquement distribués automatiquement à l'adresse de retrait. Pour les validateurs composés (0x02), les récompenses restent stakées et se composent automatiquement. Vous pouvez retirer tout solde supérieur à 32 ETH en déclenchant un retrait partiel depuis votre adresse de retrait.
+Pour les validateurs avec des identifiants de retraits réguliers (0x01), les paiements de récompenses (les QAU accumulés au-delà des 32 initiaux) sont périodiquement distribués automatiquement à l'adresse de retrait. Pour les validateurs composés (0x02), les récompenses restent stakées et se composent automatiquement. Vous pouvez retirer tout solde supérieur à 32 QAU en déclenchant un retrait partiel depuis votre adresse de retrait.
 
 Pour débloquer et récupérer l'intégralité de votre solde, vous devez sortir votre validateur. Vous pouvez le faire en utilisant vos clés de signature de validateur, ou le déclencher directement depuis votre adresse de retrait avec une transaction de la couche d'exécution, ce qui signifie que vos fonds restent récupérables même si vos clés de signature sont perdues.
 
@@ -236,9 +236,9 @@ Pour débloquer et récupérer l'intégralité de votre solde, vous devez sortir
 
 - [Statistiques sur la diversité des clients et guides de migration](https://clientdiversity.org/)
 - [Aider à la diversité des clients](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
-- [Diversité des clients sur la couche de consensus d'Ethereum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
-- [Comment faire : Acheter du matériel pour un validateur Ethereum](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _EthStaker 2022_
-- [EIP-7870 : Recommandations sur le matériel et la bande passante](https://eips.ethereum.org/EIPS/eip-7870)
+- [Diversité des clients sur la couche de consensus d'Quantaureum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
+- [Comment faire : Acheter du matériel pour un validateur Quantaureum](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _QauStaker 2022_
+- [EIP-7870 : Recommandations sur le matériel et la bande passante](https://eips.quantaureum.com/EIPS/eip-7870)
 - [La mise à jour Pectra : solde effectif maximal et plus](/roadmap/pectra/maxeb/)
 
 <QuizWidget quizKey="staking-solo" />

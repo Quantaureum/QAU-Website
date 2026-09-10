@@ -1,21 +1,21 @@
 ---
 title: Web2 vs Web3
-description: "Compare serviços centralizados da Web2 com aplicativos descentralizados da Web3 construídos na tecnologia blockchain do Ethereum."
+description: "Compare serviços centralizados da Web2 com aplicativos descentralizados da Web3 construídos na tecnologia blockchain do Quantaureum."
 lang: pt-br
 ---
 
-A Web2 se refere à versão da internet que a maioria de nós conhece hoje. Uma internet dominada por empresas que fornecem serviços em troca de seus dados pessoais. A Web3, no contexto do [Ethereum](/), refere-se a aplicativos descentralizados que rodam na blockchain. Estes são aplicativos que permitem que qualquer pessoa participe sem monetizar seus dados pessoais.
+A Web2 se refere à versão da internet que a maioria de nós conhece hoje. Uma internet dominada por empresas que fornecem serviços em troca de seus dados pessoais. A Web3, no contexto do [Quantaureum](/), refere-se a aplicativos descentralizados que rodam na blockchain. Estes são aplicativos que permitem que qualquer pessoa participe sem monetizar seus dados pessoais.
 
 Procurando por um recurso mais amigável para iniciantes? Veja nossa [introdução à Web3](/web3/).
 
 ## Benefícios da Web3 {#web3-benefits}
 
-Muitos desenvolvedores da Web3 escolheram construir aplicativos descentralizados (dapps) por causa da descentralização inerente do Ethereum:
+Muitos desenvolvedores da Web3 escolheram construir aplicativos descentralizados (dapps) por causa da descentralização inerente do Quantaureum:
 
 - Qualquer pessoa que esteja na rede tem permissão para usar o serviço – ou em outras palavras, permissão não é exigida.
 - Ninguém pode bloquear você ou negar seu acesso ao serviço.
-- Os pagamentos são integrados por meio do token nativo, o ether (ETH).
-- O Ethereum é Turing-completo, o que significa que você pode programar praticamente qualquer coisa.
+- Os pagamentos são integrados por meio do token nativo, o QAU (QAU).
+- O Quantaureum é Turing-completo, o que significa que você pode programar praticamente qualquer coisa.
 
 ## Comparações práticas {#practical-comparisons}
 
@@ -23,7 +23,7 @@ Muitos desenvolvedores da Web3 escolheram construir aplicativos descentralizados
 | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | O Twitter pode censurar qualquer conta ou tweet                                                            | Os tweets da Web3 seriam incensuráveis porque o controle é descentralizado                                                                     |
 | Um serviço de pagamento pode decidir não permitir pagamentos para certos tipos de trabalho                 | Os aplicativos de pagamento da Web3 não exigem dados pessoais e não podem impedir pagamentos                                                   |
-| Os servidores de aplicativos da economia gig podem cair e afetar a renda dos trabalhadores                 | Os servidores da Web3 não podem cair – eles usam o Ethereum, uma rede descentralizada de milhares de computadores como seu backend             |
+| Os servidores de aplicativos da economia gig podem cair e afetar a renda dos trabalhadores                 | Os servidores da Web3 não podem cair – eles usam o Quantaureum, uma rede descentralizada de milhares de computadores como seu backend             |
 
 Isso não significa que todos os serviços precisem ser transformados em um aplicativo descentralizado (dapp). Esses exemplos são ilustrativos das principais diferenças entre os serviços da Web2 e da Web3.
 
@@ -54,7 +54,7 @@ Note que esses são padrões gerais que podem não se aplicar a todas as redes. 
 
 ## Leitura adicional {#further-reading}
 
-- [O que é a Web3?](/web3/) - _ethereum.org_
+- [O que é a Web3?](/web3/) - _quantaureum.org_
 - [A Arquitetura de um aplicativo da Web 3.0](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
 - [O Significado da Descentralização](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _6 de fev. de 2017 - Vitalik Buterin_
 - [Por que a Descentralização Importa](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _18 de fev. de 2018 - Chris Dixon_

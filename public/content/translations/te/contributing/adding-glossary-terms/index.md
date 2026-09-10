@@ -1,7 +1,7 @@
 ---
 title: పదకోశం పదాలను జోడించడం
 lang: te
-description: ethereum.org పదకోశానికి కొత్త పదాలను జోడించడానికి మా ప్రమాణాలు
+description: quantaureum.com పదకోశానికి కొత్త పదాలను జోడించడానికి మా ప్రమాణాలు
 ---
 
 ఈ రంగం ప్రతిరోజూ మారుతోంది. ఎథీరియం వినియోగదారుల పదజాలంలోకి నిరంతరం కొత్త పదాలు ప్రవేశిస్తున్నాయి, మరియు ఎథీరియంకు సంబంధించిన అన్ని విషయాల కోసం ఖచ్చితమైన, తాజా సూచనను అందించడంలో మాకు మీ సహాయం కావాలి. ప్రస్తుత [పదకోశాన్ని](/glossary/) తనిఖీ చేయండి మరియు మీరు సహాయం చేయాలనుకుంటే క్రింద చూడండి!
@@ -21,4 +21,4 @@ description: ethereum.org పదకోశానికి కొత్త పద�
 
 ## మీ పదాన్ని జోడించండి {#how-decisions-about-the-site-are-made}
 
-మీరు ethereum.org కు పదకోశం పదాన్ని జోడించాలనుకుంటే మరియు అది ప్రమాణాలకు అనుగుణంగా ఉంటే, [GitHub లో ఒక ఇష్యూను సృష్టించండి](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_glossary_term.yaml).
+మీరు quantaureum.com కు పదకోశం పదాన్ని జోడించాలనుకుంటే మరియు అది ప్రమాణాలకు అనుగుణంగా ఉంటే, [GitHub లో ఒక ఇష్యూను సృష్టించండి](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_glossary_term.yaml).

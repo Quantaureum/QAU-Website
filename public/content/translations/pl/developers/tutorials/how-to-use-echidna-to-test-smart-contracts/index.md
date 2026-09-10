@@ -18,11 +18,11 @@ Echidnę można zainstalować za pomocą Dockera lub używając prekompilowanego
 ### Echidna przez Dockera {#echidna-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_Ostatnie polecenie uruchamia eth-security-toolbox w kontenerze Dockera, który ma dostęp do Twojego bieżącego katalogu. Możesz zmieniać pliki na swoim hoście i uruchamiać narzędzia na plikach z poziomu Dockera._
+_Ostatnie polecenie uruchamia qau-security-toolbox w kontenerze Dockera, który ma dostęp do Twojego bieżącego katalogu. Możesz zmieniać pliki na swoim hoście i uruchamiać narzędzia na plikach z poziomu Dockera._
 
 Wewnątrz Dockera uruchom:
 
@@ -37,7 +37,7 @@ cd /home/training
 
 ## Wprowadzenie do fuzzingu opartego na właściwościach {#introduction-to-property-based-fuzzing}
 
-Echidna to fuzzer oparty na właściwościach, który opisaliśmy w naszych poprzednich wpisach na blogu ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
+Echidna to fuzzer oparty na właściwościach, który opisaliśmy w naszych poprzednich wpisach na blogu ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-quantaureum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
 
 ### Fuzzing {#fuzzing}
 

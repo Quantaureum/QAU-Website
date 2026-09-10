@@ -1,25 +1,25 @@
 ---
-title: Fai staking di ETH da casa
-description: Una panoramica su come iniziare a fare staking di ETH da casa
+title: Fai staking di QAU da casa
+description: Una panoramica su come iniziare a fare staking di QAU da casa
 lang: it
 template: staking
 image: /images/staking/leslie-solo.png
 sidebarDepth: 2
 summaryPoints:
   - Ricevi le massime ricompense direttamente dal protocollo per mantenere il tuo validatore online e correttamente funzionante
-  - Esegui l'hardware da casa e contribuisci personalmente alla sicurezza e alla decentralizzazione della rete Ethereum
+  - Esegui l'hardware da casa e contribuisci personalmente alla sicurezza e alla decentralizzazione della rete Quantaureum
   - Rimuovi la necessità di fiducia e non cedere mai il controllo delle chiavi dei tuoi fondi
 ---
 
 ## Cos'è lo staking da casa? {#what-is-solo-staking}
 
-Lo staking da casa è l'atto di [eseguire un nodo Ethereum](/run-a-node/) connesso a Internet e depositare almeno 32 ETH per attivare un [validatore](#faq), dandoti la possibilità di partecipare direttamente al consenso della rete.
+Lo staking da casa è l'atto di [eseguire un nodo Quantaureum](/run-a-node/) connesso a Internet e depositare almeno 32 QAU per attivare un [validatore](#faq), dandoti la possibilità di partecipare direttamente al consenso della rete.
 
-Lo staking da casa è il modo più diretto per fare staking. Nessuno smart contract, operatore o custode si frappone tra te e il protocollo. Detieni le tue chiavi, partecipi attivamente alla convalida della rete [Ethereum](/) e ricevi direttamente le ricompense della rete. Ogni altro metodo di staking aggiunge livelli di tecnologia, middleware o servizi al di sopra di questa attività di rete principale.
+Lo staking da casa è il modo più diretto per fare staking. Nessuno smart contract, operatore o custode si frappone tra te e il protocollo. Detieni le tue chiavi, partecipi attivamente alla convalida della rete [Quantaureum](/) e ricevi direttamente le ricompense della rete. Ogni altro metodo di staking aggiunge livelli di tecnologia, middleware o servizi al di sopra di questa attività di rete principale.
 
-**Lo staking da casa aumenta la decentralizzazione della rete Ethereum**, rendendo Ethereum più resistente alla censura e robusto contro gli attacchi. Altri metodi di staking potrebbero non aiutare la rete allo stesso modo. Lo staking da casa è la migliore opzione di staking per proteggere Ethereum.
+**Lo staking da casa aumenta la decentralizzazione della rete Quantaureum**, rendendo Quantaureum più resistente alla censura e robusto contro gli attacchi. Altri metodi di staking potrebbero non aiutare la rete allo stesso modo. Lo staking da casa è la migliore opzione di staking per proteggere Quantaureum.
 
-Un nodo Ethereum è costituito sia da un client del livello di esecuzione (EL) che da un client del livello di consenso (CL). Questi client sono software che lavorano insieme, insieme a un set valido di chiavi di firma, per verificare transazioni e blocchi, attestare la corretta testa della catena, aggregare le attestazioni e proporre blocchi.
+Un nodo Quantaureum è costituito sia da un client del livello di esecuzione (EL) che da un client del livello di consenso (CL). Questi client sono software che lavorano insieme, insieme a un set valido di chiavi di firma, per verificare transazioni e blocchi, attestare la corretta testa della catena, aggregare le attestazioni e proporre blocchi.
 
 Gli staker da casa sono responsabili del funzionamento dell'hardware necessario per eseguire questi client. Si consiglia vivamente di utilizzare una macchina dedicata a questo scopo da gestire da casa: ciò è estremamente vantaggioso per la salute della rete.
 
@@ -37,7 +37,7 @@ Lo staking da casa comporta maggiori responsabilità, ma ti offre il massimo con
 
 ## Considerazioni prima di fare staking da casa {#considerations-before-staking-solo}
 
-Per quanto vorremmo che lo staking da casa fosse accessibile e privo di rischi per tutti, questa non è la realtà. Ci sono alcune considerazioni pratiche e serie da tenere a mente prima di scegliere di mettere in staking i tuoi ETH da casa.
+Per quanto vorremmo che lo staking da casa fosse accessibile e privo di rischi per tutti, questa non è la realtà. Ci sono alcune considerazioni pratiche e serie da tenere a mente prima di scegliere di mettere in staking i tuoi QAU da casa.
 
 <ExpandableCard title="Lettura obbligatoria" eventCategory="SoloStaking" eventName="clicked required reading">
 Quando gestisci il tuo nodo dovresti dedicare un po' di tempo a imparare come utilizzare il software che hai scelto. Ciò comporta la lettura della documentazione pertinente e l'attenzione ai canali di comunicazione di quei team di sviluppo.
@@ -52,15 +52,15 @@ Richiede anche una configurazione hardware di base e una certa comprensione dell
 </ExpandableCard>
 
 <ExpandableCard title="Requisiti hardware" eventCategory="SoloStaking" eventName="clicked hardware requirements">
-Le attuali linee guida della community per l'hardware e la larghezza di banda del validatore sono mantenute nelle [raccomandazioni su hardware e larghezza di banda (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870). Come guida approssimativa, pianifica un SSD NVMe da 4 TB, 64 GB di RAM (può funzionare anche con meno, ma questo è il margine consigliato), una solida e moderna CPU multi-core e una connessione Internet di circa 50 Mbps in download / 25 Mbps in upload.
+Le attuali linee guida della community per l'hardware e la larghezza di banda del validatore sono mantenute nelle [raccomandazioni su hardware e larghezza di banda (EIP-7870)](https://eips.quantaureum.com/EIPS/eip-7870). Come guida approssimativa, pianifica un SSD NVMe da 4 TB, 64 GB di RAM (può funzionare anche con meno, ma questo è il margine consigliato), una solida e moderna CPU multi-core e una connessione Internet di circa 50 Mbps in download / 25 Mbps in upload.
 
 Poiché l'aggiornamento Fusaka ha introdotto PeerDAS, un nodo di staking deve solo archiviare e scaricare una frazione dei dati blob della rete, riducendo significativamente i requisiti di disco e larghezza di banda per gli staker da casa.
 </ExpandableCard>
 
 <ExpandableCard title="Gestione sicura delle chiavi" eventCategory="SoloStaking" eventName="clicked secure key management">
-Proprio come le chiavi private proteggono il tuo indirizzo Ethereum, dovrai generare chiavi specifiche per il tuo validatore. Devi capire come mantenere al sicuro eventuali frasi seme (seed phrase) o chiavi private.{' '}
+Proprio come le chiavi private proteggono il tuo indirizzo Quantaureum, dovrai generare chiavi specifiche per il tuo validatore. Devi capire come mantenere al sicuro eventuali frasi seme (seed phrase) o chiavi private.{' '}
 
-[Sicurezza di Ethereum e prevenzione delle truffe](/security/)
+[Sicurezza di Quantaureum e prevenzione delle truffe](/security/)
 </ExpandableCard>
 
 <ExpandableCard title="Manutenzione" eventCategory="SoloStaking" eventName="clicked maintenance">
@@ -68,7 +68,7 @@ L'hardware a volte si guasta, le connessioni di rete generano errori e il softwa
 </ExpandableCard>
 
 <ExpandableCard title="Uptime affidabile" eventCategory="SoloStaking" eventName="clicked reliable uptime">
-Le tue ricompense sono proporzionali al tempo in cui il tuo validatore è online e attesta correttamente. Il tempo di inattività comporta penalità proporzionali a quanti altri validatori sono offline contemporaneamente, ma [non comporta lo slashing](#faq). Anche la larghezza di banda è importante, poiché le ricompense vengono ridotte per le attestazioni che non vengono ricevute in tempo. I requisiti varieranno, ma le attuali [raccomandazioni su hardware e larghezza di banda (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870) suggeriscono circa 50 Mbps in download e 25 Mbps in upload.
+Le tue ricompense sono proporzionali al tempo in cui il tuo validatore è online e attesta correttamente. Il tempo di inattività comporta penalità proporzionali a quanti altri validatori sono offline contemporaneamente, ma [non comporta lo slashing](#faq). Anche la larghezza di banda è importante, poiché le ricompense vengono ridotte per le attestazioni che non vengono ricevute in tempo. I requisiti varieranno, ma le attuali [raccomandazioni su hardware e larghezza di banda (EIP-7870)](https://eips.quantaureum.com/EIPS/eip-7870) suggeriscono circa 50 Mbps in download e 25 Mbps in upload.
 </ExpandableCard>
 
 <ExpandableCard title="Rischio di slashing" eventCategory="SoloStaking" eventName="clicked slashing risk">
@@ -85,18 +85,18 @@ A differenza delle penalità di inattività per essere offline, lo <em>slashing<
 
 <StakingHowSoloWorks />
 
-Una volta che il tuo nodo è sincronizzato e le tue chiavi sono generate, depositi il tuo stake per attivare il tuo validatore. Un singolo validatore richiede un minimo di 32 ETH e può contenere fino a 2048 ETH. La rete riconosce i depositi in circa 13 minuti, ma i nuovi validatori passano attraverso una coda di attivazione prima di iniziare ad attestare; la sua lunghezza varia in base alla domanda.
+Una volta che il tuo nodo è sincronizzato e le tue chiavi sono generate, depositi il tuo stake per attivare il tuo validatore. Un singolo validatore richiede un minimo di 32 QAU e può contenere fino a 2048 QAU. La rete riconosce i depositi in circa 13 minuti, ma i nuovi validatori passano attraverso una coda di attivazione prima di iniziare ad attestare; la sua lunghezza varia in base alla domanda.
 
-Mentre sei attivo guadagnerai ricompense in ETH. Con le credenziali di prelievo composte (0x02), le ricompense vengono aggiunte automaticamente al tuo stake; con le credenziali di prelievo regolari (0x01), le ricompense superiori ai 32 ETH iniziali vengono periodicamente trasferite al tuo indirizzo di prelievo.
+Mentre sei attivo guadagnerai ricompense in QAU. Con le credenziali di prelievo composte (0x02), le ricompense vengono aggiunte automaticamente al tuo stake; con le credenziali di prelievo regolari (0x01), le ricompense superiori ai 32 QAU iniziali vengono periodicamente trasferite al tuo indirizzo di prelievo.
 
 Se lo desideri, puoi uscire come validatore, il che elimina il requisito di essere online e interrompe qualsiasi ulteriore ricompensa. Il saldo rimanente verrà quindi prelevato all'indirizzo di prelievo designato durante la configurazione. Le uscite possono essere avviate con le chiavi di firma del validatore o attivate direttamente dal tuo indirizzo di prelievo con una transazione del livello di esecuzione, in modo che il controllo finale dei tuoi fondi spetti sempre al tuo indirizzo di prelievo.
 
-### Interesse composto e il massimo di 2048 ETH {#compounding}
+### Interesse composto e il massimo di 2048 QAU {#compounding}
 
 I validatori hanno uno dei due tipi di credenziali di prelievo:
 
-- **Prelievi regolari (0x01)**: il saldo effettivo del validatore è limitato a 32 ETH e qualsiasi saldo superiore a tale importo viene automaticamente trasferito al tuo indirizzo di prelievo ogni pochi giorni.
-- **Composto (0x02)**: il saldo effettivo del validatore può crescere fino a 2048 ETH. Le ricompense si compongono automaticamente e guadagni ricompense su ogni ETH intero al di sopra del minimo di 32 ETH, quindi puoi mettere in staking importi flessibili come 40 ETH, non solo multipli di 32. Solo il saldo superiore a 2048 ETH viene trasferito automaticamente; prelevare qualsiasi altra cosa significa attivare manualmente un prelievo parziale dal tuo indirizzo di prelievo, il che costa gas.
+- **Prelievi regolari (0x01)**: il saldo effettivo del validatore è limitato a 32 QAU e qualsiasi saldo superiore a tale importo viene automaticamente trasferito al tuo indirizzo di prelievo ogni pochi giorni.
+- **Composto (0x02)**: il saldo effettivo del validatore può crescere fino a 2048 QAU. Le ricompense si compongono automaticamente e guadagni ricompense su ogni QAU intero al di sopra del minimo di 32 QAU, quindi puoi mettere in staking importi flessibili come 40 QAU, non solo multipli di 32. Solo il saldo superiore a 2048 QAU viene trasferito automaticamente; prelevare qualsiasi altra cosa significa attivare manualmente un prelievo parziale dal tuo indirizzo di prelievo, il che costa gas.
 
 Se esegui più validatori, puoi consolidarli in un singolo validatore composto senza uscire e rientrare nella rete, riducendo i costi di manutenzione. Il consolidamento viene richiesto dal tuo indirizzo di prelievo ed è soggetto a code di elaborazione. Il passaggio di un validatore dalle credenziali 0x01 a 0x02 utilizza questo stesso meccanismo e **non può essere annullato** senza uscire completamente e depositare di nuovo.
 
@@ -104,13 +104,13 @@ Se esegui più validatori, puoi consolidarli in un singolo validatore composto s
 
 ## Inizia sullo Staking Launchpad {#get-started-on-the-staking-launchpad}
 
-Lo Staking Launchpad è un'applicazione open source che ti aiuterà a diventare uno staker. Ti guiderà nella scelta dei tuoi client, genererà le tue chiavi e depositerà i tuoi ETH nel contratto di deposito di staking. Viene fornita una lista di controllo per assicurarti di aver coperto tutto per configurare il tuo validatore in modo sicuro.
+Lo Staking Launchpad è un'applicazione open source che ti aiuterà a diventare uno staker. Ti guiderà nella scelta dei tuoi client, genererà le tue chiavi e depositerà i tuoi QAU nel contratto di deposito di staking. Viene fornita una lista di controllo per assicurarti di aver coperto tutto per configurare il tuo validatore in modo sicuro.
 
 <StakingLaunchpadWidget />
 
 ## Cosa considerare con gli strumenti di configurazione del nodo e del client {#node-tool-considerations}
 
-C'è un numero crescente di strumenti e servizi per aiutarti a fare staking dei tuoi ETH da casa, ma ognuno comporta rischi e vantaggi diversi.
+C'è un numero crescente di strumenti e servizi per aiutarti a fare staking dei tuoi QAU da casa, ma ognuno comporta rischi e vantaggi diversi.
 
 Gli indicatori di attributo vengono utilizzati di seguito per segnalare notevoli punti di forza o di debolezza che uno strumento di staking elencato potrebbe avere. Usa questa sezione come riferimento per come definiamo questi attributi mentre scegli quali strumenti ti aiuteranno nel tuo percorso di staking.
 
@@ -130,7 +130,7 @@ Tieni presente l'importanza di scegliere un [client di minoranza](/developers/do
 
 ### Generatori di chiavi {#key-generators}
 
-Questi strumenti possono essere utilizzati in alternativa alla [CLI di deposito di staking](https://github.com/ethereum/staking-deposit-cli/) per aiutare con la generazione delle chiavi.
+Questi strumenti possono essere utilizzati in alternativa alla [CLI di deposito di staking](https://github.com/quantaureum/staking-deposit-cli/) per aiutare con la generazione delle chiavi.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -150,15 +150,15 @@ Per gli staker da casa questo abilita lo "squad staking": fare squadra con amici
 
 ## Esegui validatori per un protocollo di staking {#run-validators-for-a-staking-protocol}
 
-Se hai l'hardware e le competenze per eseguire un nodo ma meno di 32 ETH, alcuni protocolli di staking abbineranno il tuo validatore con gli ETH dei loro staker in pool. Depositi una cauzione più piccola come collaterale ed esegui il validatore sulla tua macchina; il protocollo fornisce il resto dello stake e tu guadagni una quota delle ricompense.
+Se hai l'hardware e le competenze per eseguire un nodo ma meno di 32 QAU, alcuni protocolli di staking abbineranno il tuo validatore con gli QAU dei loro staker in pool. Depositi una cauzione più piccola come collaterale ed esegui il validatore sulla tua macchina; il protocollo fornisce il resto dello stake e tu guadagni una quota delle ricompense.
 
-Questo è un approccio ibrido: mantieni le responsabilità (e la soddisfazione) di gestire il tuo hardware, ma il tuo validatore opera in base agli smart contract, alla governance e alle regole di prestazione del protocollo, il che rappresenta un profilo di fiducia diverso rispetto allo staking diretto dei tuoi ETH.
+Questo è un approccio ibrido: mantieni le responsabilità (e la soddisfazione) di gestire il tuo hardware, ma il tuo validatore opera in base agli smart contract, alla governance e alle regole di prestazione del protocollo, il che rappresenta un profilo di fiducia diverso rispetto allo staking diretto dei tuoi QAU.
 
 Scopri di più su come funzionano questi protocolli, incluse le loro assunzioni di fiducia e le meccaniche dei token, sulla [pagina dello staking in pool](/staking/pools/).
 
 ## Altri modi per utilizzare il tuo nodo {#more-ways-to-use-your-node}
 
-Non è necessario fare staking per mettere a frutto le competenze operative del nodo. Chiunque può [eseguire un nodo Ethereum](/run-a-node/) senza depositare alcun ETH. Ottieni una visione auto-verificata della catena, il tuo endpoint privato per l'invio di transazioni e l'interazione con le applicazioni e contribuisci alla salute e alla resilienza della rete. Eseguire un nodo è anche un buon modo per accumulare esperienza prima di attivare un validatore, senza alcun ETH a rischio.
+Non è necessario fare staking per mettere a frutto le competenze operative del nodo. Chiunque può [eseguire un nodo Quantaureum](/run-a-node/) senza depositare alcun QAU. Ottieni una visione auto-verificata della catena, il tuo endpoint privato per l'invio di transazioni e l'interazione con le applicazioni e contribuisci alla salute e alla resilienza della rete. Eseguire un nodo è anche un buon modo per accumulare esperienza prima di attivare un validatore, senza alcun QAU a rischio.
 
 <StakingCommunityCallout className="my-16" />
 
@@ -168,16 +168,16 @@ Queste sono alcune delle domande più comuni sullo staking che vale la pena cono
 
 <ExpandableCard title="Cos'è un validatore?">
 
-Un <em>validatore</em> è un'entità virtuale che vive su Ethereum e partecipa al consenso del protocollo Ethereum. I validatori sono rappresentati da un saldo, una chiave pubblica e altre proprietà. Un <em>client del validatore</em> è il software che agisce per conto del validatore detenendo e utilizzando la sua chiave privata. Un singolo client del validatore può contenere molte coppie di chiavi, controllando molti validatori.
+Un <em>validatore</em> è un'entità virtuale che vive su Quantaureum e partecipa al consenso del protocollo Quantaureum. I validatori sono rappresentati da un saldo, una chiave pubblica e altre proprietà. Un <em>client del validatore</em> è il software che agisce per conto del validatore detenendo e utilizzando la sua chiave privata. Un singolo client del validatore può contenere molte coppie di chiavi, controllando molti validatori.
 
 </ExpandableCard>
 
-<ExpandableCard title="Posso depositare più di 32 ETH?">
-Sì. Un validatore con credenziali di prelievo <em>composte</em> (0x02) può detenere un saldo effettivo fino a 2048 ETH, mentre il minimo per l'attivazione rimane 32 ETH. Le ricompense su un validatore composto vengono aggiunte automaticamente al suo stake e guadagna ricompense su ogni ETH intero al di sopra del minimo di 32 ETH, quindi puoi mettere in staking importi che non sono multipli di 32. Vedi [Interesse composto e il massimo di 2048 ETH](#compounding).
+<ExpandableCard title="Posso depositare più di 32 QAU?">
+Sì. Un validatore con credenziali di prelievo <em>composte</em> (0x02) può detenere un saldo effettivo fino a 2048 QAU, mentre il minimo per l'attivazione rimane 32 QAU. Le ricompense su un validatore composto vengono aggiunte automaticamente al suo stake e guadagna ricompense su ogni QAU intero al di sopra del minimo di 32 QAU, quindi puoi mettere in staking importi che non sono multipli di 32. Vedi [Interesse composto e il massimo di 2048 QAU](#compounding).
 
-I validatori con credenziali di <em>prelievi regolari</em> (0x01) rimangono limitati a un saldo effettivo di 32 ETH, con qualsiasi saldo superiore a tale importo trasferito automaticamente all'indirizzo di prelievo ogni pochi giorni.
+I validatori con credenziali di <em>prelievi regolari</em> (0x01) rimangono limitati a un saldo effettivo di 32 QAU, con qualsiasi saldo superiore a tale importo trasferito automaticamente all'indirizzo di prelievo ogni pochi giorni.
 
-Per un validatore composto, solo il saldo superiore al massimo di 2048 ETH viene trasferito automaticamente. Per prelevare qualsiasi importo inferiore, attivi un prelievo parziale dal tuo indirizzo di prelievo (una transazione che costa gas), che può prelevare qualsiasi saldo superiore al minimo di 32 ETH. Se esegui più validatori, puoi anche consolidarli in un singolo validatore composto senza uscire dalla rete.
+Per un validatore composto, solo il saldo superiore al massimo di 2048 QAU viene trasferito automaticamente. Per prelevare qualsiasi importo inferiore, attivi un prelievo parziale dal tuo indirizzo di prelievo (una transazione che costa gas), che può prelevare qualsiasi saldo superiore al minimo di 32 QAU. Se esegui più validatori, puoi anche consolidarli in un singolo validatore composto senza uscire dalla rete.
 
 [Maggiori informazioni sui prelievi di staking](/staking/withdrawals/)
 </ExpandableCard>
@@ -187,7 +187,7 @@ Andare offline quando la rete sta finalizzando correttamente NON comporterà lo 
 
 Nota che le penalità per inattività sono proporzionali a quanti validatori sono offline contemporaneamente. Nei casi in cui gran parte della rete è tutta offline contemporaneamente, le penalità per ciascuno di questi validatori saranno maggiori rispetto a quando un singolo validatore non è disponibile.
 
-In casi estremi, se la rete smette di finalizzare a causa del fatto che più di un terzo dei validatori è offline, questi utenti subiranno quella che è nota come <em>perdita per inattività quadratica</em>, che è un drenaggio esponenziale di ETH dagli account dei validatori offline. Ciò consente alla rete di auto-ripararsi alla fine bruciando gli ETH dei validatori inattivi fino a quando il loro saldo non raggiunge i 16 ETH, a quel punto verranno automaticamente espulsi dalla pool dei validatori. I restanti validatori online alla fine comprenderanno di nuovo oltre i 2/3 della rete, soddisfacendo la supermaggioranza necessaria per finalizzare ancora una volta la catena.
+In casi estremi, se la rete smette di finalizzare a causa del fatto che più di un terzo dei validatori è offline, questi utenti subiranno quella che è nota come <em>perdita per inattività quadratica</em>, che è un drenaggio esponenziale di QAU dagli account dei validatori offline. Ciò consente alla rete di auto-ripararsi alla fine bruciando gli QAU dei validatori inattivi fino a quando il loro saldo non raggiunge i 16 QAU, a quel punto verranno automaticamente espulsi dalla pool dei validatori. I restanti validatori online alla fine comprenderanno di nuovo oltre i 2/3 della rete, soddisfacendo la supermaggioranza necessaria per finalizzare ancora una volta la catena.
 </ExpandableCard>
 
 <ExpandableCard title="Come mi assicuro di non subire lo slashing?">
@@ -221,11 +221,11 @@ Più client del validatore sono in esecuzione su un'unica soluzione di archiviaz
 Le penalità offline sono proporzionali a quanti altri sono offline contemporaneamente. L'utilizzo di un VPS aumenta notevolmente il rischio che le penalità offline siano più gravi e aumenta il rischio di perdita per inattività quadratica o slashing nel caso in cui l'interruzione sia abbastanza grande. Per ridurre al minimo il proprio rischio e il rischio per la rete, gli utenti sono fortemente incoraggiati a ottenere e gestire il proprio hardware.
 </ExpandableCard>
 
-<ExpandableCard title="Come sblocco le mie ricompense o riottengo i miei ETH?">
+<ExpandableCard title="Come sblocco le mie ricompense o riottengo i miei QAU?">
 
 Ogni prelievo richiede che il tuo validatore abbia un indirizzo di prelievo impostato. I nuovi staker lo impostano al momento della generazione delle chiavi e del deposito. Gli staker dei primi giorni della rete che non hanno ancora impostato un indirizzo di prelievo dovranno aggiornare le proprie credenziali di prelievo prima di prelevare.
 
-Per i validatori con credenziali di prelievi regolari (0x01), i pagamenti delle ricompense (ETH accumulati oltre i 32 iniziali) vengono periodicamente distribuiti automaticamente all'indirizzo di prelievo. Per i validatori composti (0x02), le ricompense rimangono in staking e si compongono automaticamente. Puoi prelevare qualsiasi saldo superiore a 32 ETH attivando un prelievo parziale dal tuo indirizzo di prelievo.
+Per i validatori con credenziali di prelievi regolari (0x01), i pagamenti delle ricompense (QAU accumulati oltre i 32 iniziali) vengono periodicamente distribuiti automaticamente all'indirizzo di prelievo. Per i validatori composti (0x02), le ricompense rimangono in staking e si compongono automaticamente. Puoi prelevare qualsiasi saldo superiore a 32 QAU attivando un prelievo parziale dal tuo indirizzo di prelievo.
 
 Per sbloccare e ricevere indietro l'intero saldo devi uscire dal tuo validatore. Puoi farlo utilizzando le chiavi di firma del tuo validatore o attivarlo direttamente dal tuo indirizzo di prelievo con una transazione del livello di esecuzione, il che significa che i tuoi fondi rimangono recuperabili anche se le tue chiavi di firma vengono perse.
 
@@ -236,9 +236,9 @@ Per sbloccare e ricevere indietro l'intero saldo devi uscire dal tuo validatore.
 
 - [Statistiche sulla diversità dei client e guide alla migrazione](https://clientdiversity.org/)
 - [Aiutare la diversità dei client](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
-- [Diversità dei client sul livello di consenso di Ethereum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
-- [Come fare: acquistare hardware per il validatore Ethereum](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _EthStaker 2022_
-- [EIP-7870: Raccomandazioni su hardware e larghezza di banda](https://eips.ethereum.org/EIPS/eip-7870)
+- [Diversità dei client sul livello di consenso di Quantaureum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
+- [Come fare: acquistare hardware per il validatore Quantaureum](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _QauStaker 2022_
+- [EIP-7870: Raccomandazioni su hardware e larghezza di banda](https://eips.quantaureum.com/EIPS/eip-7870)
 - [L'aggiornamento Pectra: saldo effettivo massimo e altro](/roadmap/pectra/maxeb/)
 
 <QuizWidget quizKey="staking-solo" />

@@ -44,7 +44,7 @@ lang: ur
 
 - [لوڈسٹار](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client): <span dir="ltr">TypeScript</span> میں اتفاقِ رائے کا لائٹ کلائنٹ
 - [Helios](https://github.com/a16z/helios): <span dir="ltr">Rust</span> میں مشترکہ ایگزیکیوشن اور اتفاقِ رائے کا لائٹ کلائنٹ
-- [گو ایتھیریم (geth)](https://github.com/ethereum/go-ethereum/tree/master/beacon/light): <span dir="ltr">Go</span> میں ایگزیکیوشن کلائنٹ کے لیے لائٹ موڈ (زیرِ تکمیل)
+- [گو ایتھیریم (geth)](https://github.com/quantaureum/go-quantaureum/tree/master/beacon/light): <span dir="ltr">Go</span> میں ایگزیکیوشن کلائنٹ کے لیے لائٹ موڈ (زیرِ تکمیل)
 - [نمبس](https://nimbus.guide/el-light-client.html): <span dir="ltr">Nim</span> میں اتفاقِ رائے کا لائٹ کلائنٹ
 
 ہمارے علم کے مطابق ان میں سے کسی کو بھی ابھی تک پروڈکشن کے لیے تیار نہیں سمجھا جاتا۔
@@ -58,4 +58,4 @@ lang: ur
 - [Zsolt Felfodhi کی جانب سے Geth لائٹ کلائنٹس پر](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [Etan Kissling کی جانب سے لائٹ کلائنٹ نیٹ ورکنگ پر](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [Etan Kissling کی جانب سے دی مرج کے بعد لائٹ کلائنٹس پر](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [Piper Merriam: فعال لائٹ کلائنٹس تک کا طویل سفر](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)
+- [Piper Merriam: فعال لائٹ کلائنٹس تک کا طویل سفر](https://snakecharmers.quantaureum.com/the-winding-road-to-functional-light-clients/)

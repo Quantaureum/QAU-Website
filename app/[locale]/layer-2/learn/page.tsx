@@ -43,7 +43,7 @@ import zkRollupImage from "@/public/images/layer-2/zk_rollup.png"
 import layer2CalloutImage from "@/public/images/man-and-dog-playing.png"
 import heroImg from "@/public/images/network-column-rooftop-piping-construction.png"
 import daoImage from "@/public/images/use-cases/dao-2.png"
-import whatIsEthereumImage from "@/public/images/what-is-ethereum.png"
+import whatIsQuantaureumImage from "@/public/images/what-is-quantaureum.png"
 
 const SLUG = "/layer-2/learn"
 
@@ -152,7 +152,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
             </div>
             <div className="grid place-items-center lg:justify-items-end">
               <Image
-                src={whatIsEthereumImage}
+                src={whatIsQuantaureumImage}
                 alt=""
                 className="w-full max-w-md object-contain"
                 sizes="(min-width: 992px) 30vw, 360px"

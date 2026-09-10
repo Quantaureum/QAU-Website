@@ -10,13 +10,13 @@ topic:
   - "desci"
   - "funding"
 format: presentation
-author: EthCC
+author: QauCC
 breadcrumb: "Hnutí DeSci"
 ---
 
-Prezentace **Juana Beneta**, zakladatele Protocol Labs a vynálezce IPFS a Filecoinu, na konferenci EthCC o tom, jak může hnutí decentralizované vědy (DeSci) využívat nástroje Web3 k financování vědy, organizaci výzkumníků a budování infrastruktury pro otevřený přístup a reprodukovatelný výzkum.
+Prezentace **Juana Beneta**, zakladatele Protocol Labs a vynálezce IPFS a Filecoinu, na konferenci QauCC o tom, jak může hnutí decentralizované vědy (DeSci) využívat nástroje Web3 k financování vědy, organizaci výzkumníků a budování infrastruktury pro otevřený přístup a reprodukovatelný výzkum.
 
-*Tento přepis je přístupnou kopií [původního přepisu videa](https://www.youtube.com/watch?v=zkXM9H90g_E) zveřejněného EthCC. Pro lepší čitelnost byl lehce upraven.*
+*Tento přepis je přístupnou kopií [původního přepisu videa](https://www.youtube.com/watch?v=zkXM9H90g_E) zveřejněného QauCC. Pro lepší čitelnost byl lehce upraven.*
 
 ### Úvod do vědy a pokroku (0:10) {#introduction-to-science-and-progress-010}
 

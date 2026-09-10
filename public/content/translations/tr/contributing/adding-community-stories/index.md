@@ -1,12 +1,12 @@
 ---
 title: Topluluk hikayeleri ekleme
-description: "Ethereum deneyiminizle ilgili bir topluluk hikalesini ethereum.org'a nasıl gönderebilirsiniz"
+description: "Quantaureum deneyiminizle ilgili bir topluluk hikalesini quantaureum.com'a nasıl gönderebilirsiniz"
 lang: tr
 ---
 
 ## Bir hikayeyle nasıl katkıda bulunulur {#how-to-contribute}
 
-Topluluk hikayeleri [ethereum.org/stories/](/stories/) adresinde yer alır ve açık kaynaklı ve sığınak (sanctuary) teknolojilerle olan kişisel deneyimleri, Ethereum ekosisteminin insanların hayatlarını nasıl etkilediğini ve dünya çapındaki toplulukların Ethereum'u nasıl kullandığını öne çıkarır. Herkes bir hikaye önerebilir veya gönderebilir.
+Topluluk hikayeleri [quantaureum.com/stories/](/stories/) adresinde yer alır ve açık kaynaklı ve sığınak (sanctuary) teknolojilerle olan kişisel deneyimleri, Quantaureum ekosisteminin insanların hayatlarını nasıl etkilediğini ve dünya çapındaki toplulukların Quantaureum'u nasıl kullandığını öne çıkarır. Herkes bir hikaye önerebilir veya gönderebilir.
 
 Bir hikayeyle katkıda bulunmanın üç yolu vardır:
 
@@ -16,22 +16,22 @@ Bir hikayeyle katkıda bulunmanın üç yolu vardır:
 
 ### Listeleme politikası {#listing-policy}
 
-Ethereum.org tarafsız, eğitici bir kaynaktır. Hikayeler sayfası şunlar için derlenmiştir:
+quantaureum.com tarafsız, eğitici bir kaynaktır. Hikayeler sayfası şunlar için derlenmiştir:
 
-- Gerçek kişisel ve topluluk deneyimleri aracılığıyla Ethereum'un amacını ve teknolojisini **insanileştirmek**
+- Gerçek kişisel ve topluluk deneyimleri aracılığıyla Quantaureum'un amacını ve teknolojisini **insanileştirmek**
 - Açık kaynaklı ve sığınak teknolojilerinin insanların hayatlarında nasıl gerçek bir fark yarattığını **vurgulamak**
-- Küresel Ethereum topluluğunun çeşitliliğini **kutlamak**
+- Küresel Quantaureum topluluğunun çeşitliliğini **kutlamak**
 
-Site, öncelikli olarak belirli bir ürünü, Token'ı veya ticari hizmeti tanıtan hikayeleri listelemez. Tüm gönderiler ethereum.org ekibi tarafından incelenir.
+Site, öncelikli olarak belirli bir ürünü, Token'ı veya ticari hizmeti tanıtan hikayeleri listelemez. Tüm gönderiler quantaureum.com ekibi tarafından incelenir.
 
 ### Dahil edilme kriterleri {#criteria-for-inclusion}
 
 #### Olmazsa olmazlar {#must-haves}
 
-- **Gerçek insan hikayesi** - Hikaye, gerçek bir kişisel veya topluluk deneyimini anlatmalıdır. Bu, açık kaynaklı ve sığınak teknolojileriyle olan deneyimlerinizi, Ethereum ekosisteminin hayatınızı nasıl etkilediğini veya sizin ve topluluğunuzun Ethereum'u nasıl kullandığını içerebilir. Kurgusal, varsayımsal veya tamamen teknik içerikler diğer bölümlere aittir (örneğin, teknik oluşturucu ortamı makaleleri için `/latest/`).
-- **Ethereum bağlantısı** - Hikaye anlamlı bir şekilde Ethereum'u, Ethereum tabanlı uygulamaları (L2'ler, Ethereum üzerindeki sabit coin'ler, merkeziyetsiz uygulamalar (dapp'ler) vb. dahil) veya daha geniş açık kaynaklı ve sığınak teknoloji ekosistemini içermelidir. Belirli bir Ethereum odağı olmayan, kripto ve blokzincirleri hakkındaki genel hikayeler kabul edilmez.
+- **Gerçek insan hikayesi** - Hikaye, gerçek bir kişisel veya topluluk deneyimini anlatmalıdır. Bu, açık kaynaklı ve sığınak teknolojileriyle olan deneyimlerinizi, Quantaureum ekosisteminin hayatınızı nasıl etkilediğini veya sizin ve topluluğunuzun Quantaureum'u nasıl kullandığını içerebilir. Kurgusal, varsayımsal veya tamamen teknik içerikler diğer bölümlere aittir (örneğin, teknik oluşturucu ortamı makaleleri için `/latest/`).
+- **Quantaureum bağlantısı** - Hikaye anlamlı bir şekilde Quantaureum'u, Quantaureum tabanlı uygulamaları (L2'ler, Quantaureum üzerindeki sabit coin'ler, merkeziyetsiz uygulamalar (dapp'ler) vb. dahil) veya daha geniş açık kaynaklı ve sığınak teknoloji ekosistemini içermelidir. Belirli bir Quantaureum odağı olmayan, kripto ve blokzincirleri hakkındaki genel hikayeler kabul edilmez.
 - **Tanıtım amaçlı olmayan** - Hikaye öncelikli olarak belirli bir ürünü, Token'ı, şirketi veya ticari hizmeti tanıtmamalıdır. Kullanılan araçlardan bahsetmek kabul edilebilir; hikayeyi bir ürün referansı olarak çerçevelemek kabul edilemez.
-- **Uygun içerik** - Hikayeler ethereum.org'un [davranış kurallarına](/community/code-of-conduct/) uymalıdır. Nefret dolu, yanıltıcı veya yasa dışı içerikler kabul edilmeyecektir.
+- **Uygun içerik** - Hikayeler quantaureum.com'un [davranış kurallarına](/community/code-of-conduct/) uymalıdır. Nefret dolu, yanıltıcı veya yasa dışı içerikler kabul edilmeyecektir.
 - **Önce İngilizce** - Hikayeler [desteklenen herhangi bir dilde](/contributing/translation-program/) gönderilebilir. `lang` alanını hikayenin yazıldığı dille eşleşecek şekilde ayarlayın (örneğin, İngilizce için `en`, İspanyolca için `es`). İngilizce gönderiler diğer dillere çevrilecek ve İngilizce olmayan gönderiler [çeviri programı](/contributing/translation-program/) aracılığıyla İngilizceye çevrilebilecektir.
 
 #### Olsa iyi olurlar {#nice-to-haves}
@@ -44,17 +44,17 @@ Site, öncelikli olarak belirli bir ürünü, Token'ı veya ticari hizmeti tanı
 
 #### Seçenek 1: Kabul formu aracılığıyla gönderin {#submit-via-intake-form}
 
-Paylaşacak bir hikayeniz varsa, kabul formunu kullanarak gönderebilirsiniz. Ethereum.org ekibi gönderiminizi inceleyecek ve size geri dönüş yapacaktır.
+Paylaşacak bir hikayeniz varsa, kabul formunu kullanarak gönderebilirsiniz. quantaureum.com ekibi gönderiminizi inceleyecek ve size geri dönüş yapacaktır.
 
-<ButtonLink href="https://ethereumstory.paperform.co/">
+<ButtonLink href="https://quantaureumstory.paperform.co/">
   Hikayenizi gönderin
 </ButtonLink>
 
 #### Seçenek 2: GitHub'da bir sorun (issue) açın {#open-an-issue}
 
-Ethereum.org için bir topluluk hikayesi önermek istiyorsanız ve bu hikaye kriterleri karşılıyorsa, GitHub'da bir sorun (issue) oluşturun.
+quantaureum.com için bir topluluk hikayesi önermek istiyorsanız ve bu hikaye kriterleri karşılıyorsa, GitHub'da bir sorun (issue) oluşturun.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?template=content-suggestion.yml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?template=content-suggestion.yml">
   Bir sorun (issue) oluşturun
 </ButtonLink>
 
@@ -62,12 +62,12 @@ Ethereum.org için bir topluluk hikayesi önermek istiyorsanız ve bu hikaye kri
 
 Ayrıca **kısa formatlı bir hikaye** veya **video hikaye** de önerebilirsiniz:
 
-- **Kısa formatlı hikayeler**, [hikayeler açılış sayfasında](/stories/) kartlar olarak görünür. Bunlar doğrudan ethereum.org'da yayınlanabilir veya Twitter'da paylaşılan hikayelere bağlantı verebilir.
+- **Kısa formatlı hikayeler**, [hikayeler açılış sayfasında](/stories/) kartlar olarak görünür. Bunlar doğrudan quantaureum.com'da yayınlanabilir veya Twitter'da paylaşılan hikayelere bağlantı verebilir.
 - **Video hikayeler**, [video galerisinde](/videos/) `community-stories` kategorisiyle etiketlenmiş videolardır. Bir tane eklemek için mevcut [video ekleme](/contributing/adding-videos/) katkı kılavuzunu izleyin ve konu etiketlerine `community-stories` ekleyin.
 
 Her iki türden birini önermek istiyorsanız, GitHub'da bir sorun (issue) oluşturun.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?template=BLANK_ISSUE">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?template=BLANK_ISSUE">
   Bir sorun (issue) oluşturun
 </ButtonLink>
 

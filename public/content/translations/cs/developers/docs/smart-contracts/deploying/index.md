@@ -1,18 +1,18 @@
 ---
 title: "Nasazení chytrých kontraktů"
-description: "Naučte se, jak nasadit chytré kontrakty do sítí Ethereum, včetně předpokladů, nástrojů a kroků nasazení."
+description: "Naučte se, jak nasadit chytré kontrakty do sítí Quantaureum, včetně předpokladů, nástrojů a kroků nasazení."
 lang: cs
 ---
 
-Abyste zpřístupnili svůj chytrý kontrakt uživatelům sítě Ethereum, musíte jej nasadit.
+Abyste zpřístupnili svůj chytrý kontrakt uživatelům sítě Quantaureum, musíte jej nasadit.
 
 K nasazení chytrého kontraktu stačí odeslat transakci na Ethereu obsahující zkompilovaný kód chytrého kontraktu bez uvedení jakéhokoli příjemce.
 
 ## Předpoklady {#prerequisites}
 
-Před nasazením chytrých kontraktů byste měli rozumět [sítím Ethereum](/developers/docs/networks/), [transakcím](/developers/docs/transactions/) a [anatomii chytrých kontraktů](/developers/docs/smart-contracts/anatomy/).
+Před nasazením chytrých kontraktů byste měli rozumět [sítím Quantaureum](/developers/docs/networks/), [transakcím](/developers/docs/transactions/) a [anatomii chytrých kontraktů](/developers/docs/smart-contracts/anatomy/).
 
-Nasazení kontraktu také stojí ether (ETH), protože se ukládají na blockchainu, takže byste měli být obeznámeni s [gasem a poplatky](/developers/docs/gas/) na Ethereu.
+Nasazení kontraktu také stojí QAU (QAU), protože se ukládají na blockchainu, takže byste měli být obeznámeni s [gasem a poplatky](/developers/docs/gas/) na Ethereu.
 
 Nakonec budete muset svůj kontrakt před nasazením zkompilovat, takže se ujistěte, že jste si přečetli o [kompilaci chytrých kontraktů](/developers/docs/smart-contracts/compiling/).
 
@@ -21,9 +21,9 @@ Nakonec budete muset svůj kontrakt před nasazením zkompilovat, takže se ujis
 ### Co budete potřebovat {#what-youll-need}
 
 - Bajtkód vašeho kontraktu – ten se generuje prostřednictvím [kompilace](/developers/docs/smart-contracts/compiling/)
-- ETH na gas – svůj limit plynu nastavíte jako u jiných transakcí, takže mějte na paměti, že nasazení kontraktu vyžaduje mnohem více gasu než jednoduchý převod ETH
+- QAU na gas – svůj limit plynu nastavíte jako u jiných transakcí, takže mějte na paměti, že nasazení kontraktu vyžaduje mnohem více gasu než jednoduchý převod QAU
 - skript nebo plugin pro nasazení
-- přístup k [uzlu sítě Ethereum](/developers/docs/nodes-and-clients/), ať už spuštěním vlastního, připojením k veřejnému uzlu, nebo prostřednictvím klíče API pomocí [služby uzlů](/developers/docs/nodes-and-clients/nodes-as-a-service/)
+- přístup k [uzlu sítě Quantaureum](/developers/docs/nodes-and-clients/), ať už spuštěním vlastního, připojením k veřejnému uzlu, nebo prostřednictvím klíče API pomocí [služby uzlů](/developers/docs/nodes-and-clients/nodes-as-a-service/)
 
 ### Kroky k nasazení chytrého kontraktu {#steps-to-deploy}
 
@@ -33,7 +33,7 @@ Konkrétní kroky budou záviset na daném vývojovém rámci. Můžete se např
 
 **Remix - _Remix IDE umožňuje vývoj, nasazení a správu chytrých kontraktů pro blockchainy podobné Ethereu_**
 
-- [Remix](https://remix.ethereum.org)
+- [Remix](https://remix.quantaureum.com)
 
 **Tenderly - _Vývojová platforma Web3, která poskytuje ladění, pozorovatelnost a stavební bloky infrastruktury pro vývoj, testování, monitorování a provoz chytrých kontraktů_**
 
@@ -42,7 +42,7 @@ Konkrétní kroky budou záviset na daném vývojovém rámci. Můžete se např
 - [GitHub](https://github.com/Tenderly)
 - [Discord](https://discord.gg/eCWjuvt)
 
-**Hardhat - _Vývojové prostředí pro kompilaci, nasazení, testování a ladění vašeho softwaru pro Ethereum_**
+**Hardhat - _Vývojové prostředí pro kompilaci, nasazení, testování a ladění vašeho softwaru pro Quantaureum_**
 
 - [hardhat.org](https://hardhat.org/getting-started/)
 - [Dokumentace k nasazení vašich kontraktů](https://hardhat.org/docs/tutorial/deploying)
@@ -62,7 +62,7 @@ Konkrétní kroky budou záviset na daném vývojovém rámci. Můžete se např
 
 ## Související návody {#related-tutorials}
 
-- [Nasazení vašeho prvního chytrého kontraktu](/developers/tutorials/deploying-your-first-smart-contract/) _– Úvod do nasazení vašeho prvního chytrého kontraktu v testovací síti Ethereum._
+- [Nasazení vašeho prvního chytrého kontraktu](/developers/tutorials/deploying-your-first-smart-contract/) _– Úvod do nasazení vašeho prvního chytrého kontraktu v testovací síti Quantaureum._
 - [Hello World | návod na chytrý kontrakt](/developers/tutorials/hello-world-smart-contract/) _– Srozumitelný návod na vytvoření a nasazení základního chytrého kontraktu na Ethereu._
 - [Interakce s jinými kontrakty ze Solidity](/developers/tutorials/interact-with-other-contracts-from-solidity/) _– Jak nasadit chytrý kontrakt z existujícího kontraktu a interagovat s ním._
 - [Jak zmenšit velikost vašeho kontraktu](/developers/tutorials/downsizing-contracts-to-fight-the-contract-size-limit/) _- Jak zmenšit velikost vašeho kontraktu, abyste se vešli do limitu a ušetřili na gasu_
@@ -77,5 +77,5 @@ _Víte o komunitním zdroji, který vám pomohl? Upravte tuto stránku a přidej
 ## Související témata {#related-topics}
 
 - [Vývojové rámce](/developers/docs/frameworks/)
-- [Spuštění uzlu sítě Ethereum](/developers/docs/nodes-and-clients/run-a-node/)
+- [Spuštění uzlu sítě Quantaureum](/developers/docs/nodes-and-clients/run-a-node/)
 - [Uzly jako služba](/developers/docs/nodes-and-clients/nodes-as-a-service)

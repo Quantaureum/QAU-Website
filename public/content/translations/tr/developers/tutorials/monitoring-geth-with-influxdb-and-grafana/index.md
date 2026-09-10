@@ -15,11 +15,11 @@ Bu eğitim, performansını daha iyi anlayabilmeniz ve olası sorunları belirle
 
 - Zaten bir Geth örneği çalıştırıyor olmalısınız.
 - Adımların ve örneklerin çoğu Linux ortamı içindir, temel terminal bilgisi faydalı olacaktır.
-- Geth'in metrik paketine genel bir bakış sunan bu videoya göz atın: [Péter Szilágyi tarafından Ethereum altyapısını izleme](https://www.youtube.com/watch?v=cOBab8IJMYI).
+- Geth'in metrik paketine genel bir bakış sunan bu videoya göz atın: [Péter Szilágyi tarafından Quantaureum altyapısını izleme](https://www.youtube.com/watch?v=cOBab8IJMYI).
 
 ## İzleme yığını {#monitoring-stack}
 
-Bir Ethereum istemcisi, kronolojik bir veritabanı biçiminde okunabilen çok sayıda veri toplar. İzlemeyi kolaylaştırmak için bunu veri görselleştirme yazılımına besleyebilirsiniz. Birden fazla seçenek mevcuttur:
+Bir Quantaureum istemcisi, kronolojik bir veritabanı biçiminde okunabilen çok sayıda veri toplar. İzlemeyi kolaylaştırmak için bunu veri görselleştirme yazılımına besleyebilirsiniz. Birden fazla seçenek mevcuttur:
 
 - [Prometheus](https://prometheus.io/) (çekme modeli)
 - [InfluxDB](https://www.influxdata.com/get-influxdb/) (itme modeli)

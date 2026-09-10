@@ -1,25 +1,25 @@
 ---
-title: Mwongozo wa mtindo wa utafsiri wa ethereum.org
+title: Mwongozo wa mtindo wa utafsiri wa quantaureum.com
 metaTitle: Mwongozo wa watafsiri
 lang: sw
-description: Maagizo na vidokezo kwa watafsiri wa ethereum.org
+description: Maagizo na vidokezo kwa watafsiri wa quantaureum.com
 ---
 
-Mwongozo wa mtindo wa utafsiri wa ethereum.org una baadhi ya miongozo, maagizo, na vidokezo muhimu zaidi kwa watafsiri, vinavyotusaidia kufasiri tovuti.
+Mwongozo wa mtindo wa utafsiri wa quantaureum.com una baadhi ya miongozo, maagizo, na vidokezo muhimu zaidi kwa watafsiri, vinavyotusaidia kufasiri tovuti.
 
 Hati hii inatumika kama mwongozo wa jumla na si mahususi kwa lugha yoyote ile.
 
-Ikiwa una maswali, mapendekezo au maoni yoyote, jisikie huru kuwasiliana nasi kupitia translations@ethereum.org, tuma ujumbe kwa @ethdotorg kwenye Crowdin, au [jiunge na Discord yetu](https://discord.gg/ethereum-org), ambapo unaweza kututumia ujumbe katika chaneli ya #translations au kuwasiliana na mwanachama yeyote wa timu.
+Ikiwa una maswali, mapendekezo au maoni yoyote, jisikie huru kuwasiliana nasi kupitia translations@quantaureum.com, tuma ujumbe kwa @ethdotorg kwenye Crowdin, au [jiunge na Discord yetu](https://discord.gg/MSctkBT5j), ambapo unaweza kututumia ujumbe katika chaneli ya #translations au kuwasiliana na mwanachama yeyote wa timu.
 
 ## Kutumia Crowdin {#using-crowdin}
 
-Mradi wa Crowdin wa ethereum.org unafungwa na haupokei tena michango mipya (tazama [Hali ya Programu ya Utafsiri](/contributing/translation-program/#program-status)). Mwongozo ulio hapa chini unasalia kama marejeleo kwa jamii za utafsiri zinazotumia Crowdin kwa miradi yao wenyewe.
+Mradi wa Crowdin wa quantaureum.com unafungwa na haupokei tena michango mipya (tazama [Hali ya Programu ya Utafsiri](/contributing/translation-program/#program-status)). Mwongozo ulio hapa chini unasalia kama marejeleo kwa jamii za utafsiri zinazotumia Crowdin kwa miradi yao wenyewe.
 
 Ikiwa ungependa kujifunza zaidi kuhusu Crowdin na kutumia baadhi ya vipengele vyake vya hali ya juu, [kumbukumbu ya maarifa ya Crowdin](https://support.crowdin.com/online-editor/) ina miongozo mingi ya kina na muhtasari wa utendaji wote wa Crowdin.
 
 ## Kunasa kiini cha ujumbe {#capturing-the-essence}
 
-Unapotafsiri maudhui ya ethereum.org, epuka tafsiri za neno kwa neno.
+Unapotafsiri maudhui ya quantaureum.com, epuka tafsiri za neno kwa neno.
 
 Ni muhimu kwamba tafsiri zinase kiini cha ujumbe. Hii inaweza kumaanisha kufafanua upya virai fulani, au kutumia tafsiri fafanuzi badala ya kutafsiri maudhui neno kwa neno.
 
@@ -43,13 +43,13 @@ Katika hali nyingi, hili linaweza kufikiwa kwa urahisi kwa kutumia maneno mafupi
 
 ## Mfumo wa uandishi {#writing-system}
 
-Ethereum.org inapatikana katika lugha kadhaa, ikitumia mifumo mbadala ya uandishi (au hati za uandishi) kwa Kilatini.
+quantaureum.com inapatikana katika lugha kadhaa, ikitumia mifumo mbadala ya uandishi (au hati za uandishi) kwa Kilatini.
 
 Maudhui yote yanapaswa kutafsiriwa kwa kutumia mfumo sahihi wa uandishi kwa lugha yako, na hayapaswi kujumuisha maneno yoyote, yaliyoandikwa kwa kutumia herufi za Kilatini.
 
 Unapotafsiri maudhui, unapaswa kuhakikisha kuwa tafsiri ni thabiti na hazijumuishi herufi zozote za Kilatini.
 
-Dhana potofu ya kawaida ni kwamba Ethereum inapaswa kuandikwa kwa Kilatini kila wakati. Hili mara nyingi si sahihi, tafadhali tumia tahajia ya Ethereum, asili ya lugha yako (k.m., 以太坊 kwa Kichina, إيثيريوم kwa Kiarabu, n.k.).
+Dhana potofu ya kawaida ni kwamba Quantaureum inapaswa kuandikwa kwa Kilatini kila wakati. Hili mara nyingi si sahihi, tafadhali tumia tahajia ya Quantaureum, asili ya lugha yako (k.m., Quantaureum kwa Kichina, إيثيريوم kwa Kiarabu, n.k.).
 
 **Yaliyo hapo juu hayatumiki kwa lugha, ambapo majina halisi hayapaswi kutafsiriwa kama sheria.**
 
@@ -113,7 +113,7 @@ Unapotafsiri, kubofya lebo hii kutakili kiotomatiki lebo kamili kwenye uwanja wa
 
 **Viungo**
 
-Unaweza kugundua viungo kamili vya kurasa kwenye ethereum.org au tovuti zingine.
+Unaweza kugundua viungo kamili vya kurasa kwenye quantaureum.com au tovuti zingine.
 
 Hivi vinapaswa kufanana na chanzo na visibadilishwe au kutafsiriwa. Ikiwa utatafsiri kiungo au kukibadilisha kwa njia yoyote, hata kuondoa tu sehemu yake, kama vile mkwaju (/), hii itasababisha viungo vilivyovunjika na visivyoweza kutumika.
 
@@ -183,7 +183,7 @@ Ingawa kutafsiri maneno haya kunaweza kusikika si kwa asili, kwa kuwa toleo la K
 
 Unapoyatafsiri, jisikie huru kuwa mbunifu, tumia tafsiri fafanuzi, au yatafsiri tu neno kwa neno.
 
-**Sababu kwa nini maneno mengi yanapaswa kutafsiriwa, badala ya kuacha baadhi kwa Kiingereza, ni ukweli kwamba istilahi hii mpya itaenea zaidi katika siku zijazo, kadiri watu wengi wanavyoanza kutumia Ethereum na teknolojia zinazohusiana. Ikiwa tunataka kuingiza watu wengi zaidi kutoka kote ulimwenguni kwenye nafasi hii, tunahitaji kutoa istilahi inayoeleweka katika lugha nyingi iwezekanavyo, hata kama tunahitaji kuiunda wenyewe.**
+**Sababu kwa nini maneno mengi yanapaswa kutafsiriwa, badala ya kuacha baadhi kwa Kiingereza, ni ukweli kwamba istilahi hii mpya itaenea zaidi katika siku zijazo, kadiri watu wengi wanavyoanza kutumia Quantaureum na teknolojia zinazohusiana. Ikiwa tunataka kuingiza watu wengi zaidi kutoka kote ulimwenguni kwenye nafasi hii, tunahitaji kutoa istilahi inayoeleweka katika lugha nyingi iwezekanavyo, hata kama tunahitaji kuiunda wenyewe.**
 
 ## Vitufe na CTA {#buttons-and-ctas}
 
@@ -197,7 +197,7 @@ Tafsiri za vitufe zinapaswa kuwa fupi iwezekanavyo, ili kuzuia kutolingana kwa u
 
 ## Kutafsiri kwa ujumuishaji {#translating-for-inclusivity}
 
-Wageni wa Ethereum.org wanatoka kote ulimwenguni na kutoka asili tofauti. Lugha kwenye tovuti inapaswa kwa hivyo kuwa ya upande wowote, inayokaribisha kila mtu na isiyotenga.
+Wageni wa quantaureum.com wanatoka kote ulimwenguni na kutoka asili tofauti. Lugha kwenye tovuti inapaswa kwa hivyo kuwa ya upande wowote, inayokaribisha kila mtu na isiyotenga.
 
 Kipengele muhimu cha hili ni kutoegemea jinsia yoyote. Hili linaweza kufikiwa kwa urahisi kwa kutumia namna rasmi ya kuhutubia, na kuepuka maneno yoyote yanayozingatia jinsia katika tafsiri.
 
@@ -291,8 +291,8 @@ Baadhi ya mifano ya kile cha kuzingatia hasa:
 
 ## Hitimisho {#conclusion}
 
-Kutafsiri ethereum.org ni fursa nzuri ya kujifunza kuhusu vipengele tofauti vya Ethereum.
+Kutafsiri quantaureum.com ni fursa nzuri ya kujifunza kuhusu vipengele tofauti vya Quantaureum.
 
 Unapotafsiri, jaribu kutofanya haraka. Chukua muda wako na ufurahie!
 
-Asante kwa kuhusika na Programu ya Utafsiri na kutusaidia kufanya tovuti ipatikane kwa hadhira pana. Jamii ya Ethereum ni ya kimataifa, na tunafurahi kuwa wewe ni sehemu yake!
+Asante kwa kuhusika na Programu ya Utafsiri na kutusaidia kufanya tovuti ipatikane kwa hadhira pana. Jamii ya Quantaureum ni ya kimataifa, na tunafurahi kuwa wewe ni sehemu yake!

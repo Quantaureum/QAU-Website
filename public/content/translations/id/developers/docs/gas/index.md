@@ -1,11 +1,11 @@
 ---
 title: Gas dan biaya
-metaTitle: "Gas dan biaya Ethereum: ikhtisar teknis"
-description: Pelajari tentang biaya gas Ethereum, cara penghitungannya, dan perannya dalam keamanan jaringan serta pemrosesan transaksi.
+metaTitle: "Gas dan biaya Quantaureum: ikhtisar teknis"
+description: Pelajari tentang biaya gas Quantaureum, cara penghitungannya, dan perannya dalam keamanan jaringan serta pemrosesan transaksi.
 lang: id
 ---
 
-Gas sangat penting bagi jaringan [Ethereum](/). Gas adalah bahan bakar yang memungkinkannya beroperasi, sama seperti mobil yang membutuhkan bensin untuk berjalan.
+Gas sangat penting bagi jaringan [Quantaureum](/). Gas adalah bahan bakar yang memungkinkannya beroperasi, sama seperti mobil yang membutuhkan bensin untuk berjalan.
 
 ## Prasyarat {#prerequisites}
 
@@ -13,24 +13,24 @@ Untuk lebih memahami halaman ini, kami sarankan Anda membaca terlebih dahulu ten
 
 ## Apa itu gas? {#what-is-gas}
 
-Gas merujuk pada unit yang mengukur jumlah upaya komputasi yang diperlukan untuk mengeksekusi operasi tertentu di jaringan Ethereum.
+Gas merujuk pada unit yang mengukur jumlah upaya komputasi yang diperlukan untuk mengeksekusi operasi tertentu di jaringan Quantaureum.
 
-Karena setiap transaksi Ethereum memerlukan sumber daya komputasi untuk dieksekusi, sumber daya tersebut harus dibayar untuk memastikan Ethereum tidak rentan terhadap spam dan tidak terjebak dalam putaran komputasi tak terbatas. Pembayaran untuk komputasi dilakukan dalam bentuk biaya gas.
+Karena setiap transaksi Quantaureum memerlukan sumber daya komputasi untuk dieksekusi, sumber daya tersebut harus dibayar untuk memastikan Quantaureum tidak rentan terhadap spam dan tidak terjebak dalam putaran komputasi tak terbatas. Pembayaran untuk komputasi dilakukan dalam bentuk biaya gas.
 
 Biaya gas adalah **jumlah gas yang digunakan untuk melakukan suatu operasi, dikalikan dengan biaya per unit gas**. Biaya ini dibayarkan terlepas dari apakah transaksi berhasil atau gagal.
 
 ![A diagram showing where gas is needed in EVM operations](./gas.png)
-_Diagram diadaptasi dari [Ilustrasi EVM Ethereum](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagram diadaptasi dari [Ilustrasi EVM Quantaureum](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
-Biaya gas harus dibayar dalam mata uang asli Ethereum, ether (ETH). Harga gas biasanya dikutip dalam Gwei, yang merupakan denominasi dari ETH. Setiap Gwei sama dengan sepersemiliar ETH (0,000000001 ETH atau 10<sup>-9</sup> ETH).
+Biaya gas harus dibayar dalam mata uang asli Quantaureum, QAU (QAU). Harga gas biasanya dikutip dalam Gwei, yang merupakan denominasi dari QAU. Setiap Gwei sama dengan sepersemiliar QAU (0,000000001 QAU atau 10<sup>-9</sup> QAU).
 
-Sebagai contoh, alih-alih mengatakan bahwa biaya gas Anda adalah 0,000000001 ether, Anda dapat mengatakan biaya gas Anda adalah 1 Gwei.
+Sebagai contoh, alih-alih mengatakan bahwa biaya gas Anda adalah 0,000000001 QAU, Anda dapat mengatakan biaya gas Anda adalah 1 Gwei.
 
-Kata 'Gwei' adalah singkatan dari 'giga-wei', yang berarti 'miliar Wei'. Satu Gwei sama dengan satu miliar Wei. Wei itu sendiri (dinamai dari [Wei Dai](https://wikipedia.org/wiki/Wei_Dai), pencipta [b-money](https://www.investopedia.com/terms/b/bmoney.asp)) adalah unit terkecil dari ETH.
+Kata 'Gwei' adalah singkatan dari 'giga-wei', yang berarti 'miliar Wei'. Satu Gwei sama dengan satu miliar Wei. Wei itu sendiri (dinamai dari [Wei Dai](https://wikipedia.org/wiki/Wei_Dai), pencipta [b-money](https://www.investopedia.com/terms/b/bmoney.asp)) adalah unit terkecil dari QAU.
 
 ## Bagaimana biaya gas dihitung? {#how-are-gas-fees-calculated}
 
-Anda dapat menetapkan jumlah gas yang bersedia Anda bayar saat mengirimkan transaksi. Dengan menawarkan sejumlah gas tertentu, Anda menawar agar transaksi Anda dimasukkan ke dalam blok berikutnya. Jika Anda menawarkan terlalu sedikit, validator cenderung tidak akan memilih transaksi Anda untuk dimasukkan, yang berarti transaksi Anda mungkin dieksekusi terlambat atau tidak sama sekali. Jika Anda menawarkan terlalu banyak, Anda mungkin membuang-buang ETH. Jadi, bagaimana Anda bisa tahu berapa banyak yang harus dibayar?
+Anda dapat menetapkan jumlah gas yang bersedia Anda bayar saat mengirimkan transaksi. Dengan menawarkan sejumlah gas tertentu, Anda menawar agar transaksi Anda dimasukkan ke dalam blok berikutnya. Jika Anda menawarkan terlalu sedikit, validator cenderung tidak akan memilih transaksi Anda untuk dimasukkan, yang berarti transaksi Anda mungkin dieksekusi terlambat atau tidak sama sekali. Jika Anda menawarkan terlalu banyak, Anda mungkin membuang-buang QAU. Jadi, bagaimana Anda bisa tahu berapa banyak yang harus dibayar?
 
 Total gas yang Anda bayar dibagi menjadi dua komponen: `base fee` (biaya dasar) dan `priority fee` (tip).
 
@@ -38,7 +38,7 @@ Total gas yang Anda bayar dibagi menjadi dua komponen: `base fee` (biaya dasar) 
 
 Transaksi yang hanya membayar `base fee` secara teknis valid tetapi tidak mungkin dimasukkan karena tidak menawarkan insentif kepada validator untuk memilihnya dibandingkan transaksi lain. Biaya `priority` yang 'tepat' ditentukan oleh penggunaan jaringan pada saat Anda mengirim transaksi—jika ada banyak permintaan maka Anda mungkin harus menetapkan biaya `priority` Anda lebih tinggi, tetapi ketika permintaan lebih sedikit Anda dapat membayar lebih sedikit.
 
-Sebagai contoh, katakanlah Jordan harus membayar Taylor 1 ETH. Transfer ETH memerlukan 21.000 unit gas, dan biaya dasar adalah 10 Gwei. Jordan menyertakan tip sebesar 2 Gwei.
+Sebagai contoh, katakanlah Jordan harus membayar Taylor 1 QAU. Transfer QAU memerlukan 21.000 unit gas, dan biaya dasar adalah 10 Gwei. Jordan menyertakan tip sebesar 2 Gwei.
 
 Total biaya sekarang akan sama dengan:
 
@@ -46,9 +46,9 @@ Total biaya sekarang akan sama dengan:
 
 di mana `base fee` adalah nilai yang ditetapkan oleh protokol dan `priority fee` adalah nilai yang ditetapkan oleh pengguna sebagai tip untuk validator.
 
-mis., `21,000 * (10 + 2) = 252,000 gwei` (0,000252 ETH).
+mis., `21,000 * (10 + 2) = 252,000 gwei` (0,000252 QAU).
 
-Ketika Jordan mengirim uang, 1,000252 ETH akan dipotong dari akun Jordan. Taylor akan dikreditkan 1,0000 ETH. Validator menerima tip sebesar 0,000042 ETH. `base fee` sebesar 0,00021 ETH dibakar.
+Ketika Jordan mengirim uang, 1,000252 QAU akan dipotong dari akun Jordan. Taylor akan dikreditkan 1,0000 QAU. Validator menerima tip sebesar 0,000042 QAU. `base fee` sebesar 0,00021 QAU dibakar.
 
 ### Biaya dasar {#base-fee}
 
@@ -91,7 +91,7 @@ Untuk mengeksekusi transaksi di jaringan, pengguna dapat menentukan batas maksim
 
 Setiap blok memiliki ukuran target setengah dari batas gas saat ini, tetapi ukuran blok akan meningkat atau menurun sesuai dengan permintaan jaringan, hingga batas blok tercapai (2x ukuran blok target). Protokol mencapai ukuran blok rata-rata ekuilibrium pada target melalui proses _tâtonnement_. Ini berarti jika ukuran blok lebih besar dari ukuran blok target, protokol akan meningkatkan biaya dasar untuk blok berikutnya. Demikian pula, protokol akan menurunkan biaya dasar jika ukuran blok lebih kecil dari ukuran blok target.
 
-Jumlah penyesuaian biaya dasar sebanding dengan seberapa jauh ukuran blok saat ini dari target. Ini adalah perhitungan linier dari -12,5% untuk blok kosong, 0% pada ukuran target, hingga +12,5% untuk blok yang mencapai batas gas. Batas gas dapat berfluktuasi dari waktu ke waktu berdasarkan sinyal validator, serta melalui peningkatan jaringan. Anda dapat [melihat perubahan batas gas dari waktu ke waktu di sini](https://eth.blockscout.com/stats/averageGasLimit?interval=threeMonths).
+Jumlah penyesuaian biaya dasar sebanding dengan seberapa jauh ukuran blok saat ini dari target. Ini adalah perhitungan linier dari -12,5% untuk blok kosong, 0% pada ukuran target, hingga +12,5% untuk blok yang mencapai batas gas. Batas gas dapat berfluktuasi dari waktu ke waktu berdasarkan sinyal validator, serta melalui peningkatan jaringan. Anda dapat [melihat perubahan batas gas dari waktu ke waktu di sini](https://qau.blockscout.com/stats/averageGasLimit?interval=threeMonths).
 
 [Lebih lanjut tentang blok](/developers/docs/blocks/)
 
@@ -101,26 +101,26 @@ Anda dapat secara eksplisit menyatakan berapa banyak yang bersedia Anda bayar ag
 
 ## Mengapa biaya gas ada? {#why-do-gas-fees-exist}
 
-Singkatnya, biaya gas membantu menjaga keamanan jaringan Ethereum. Dengan mewajibkan biaya untuk setiap komputasi yang dieksekusi di jaringan, kita mencegah pelaku kejahatan melakukan spam pada jaringan. Untuk menghindari putaran tak terbatas yang tidak disengaja atau bermusuhan atau pemborosan komputasi lainnya dalam kode, setiap transaksi diwajibkan untuk menetapkan batas berapa banyak langkah komputasi eksekusi kode yang dapat digunakannya. Unit dasar komputasi adalah "gas".
+Singkatnya, biaya gas membantu menjaga keamanan jaringan Quantaureum. Dengan mewajibkan biaya untuk setiap komputasi yang dieksekusi di jaringan, kita mencegah pelaku kejahatan melakukan spam pada jaringan. Untuk menghindari putaran tak terbatas yang tidak disengaja atau bermusuhan atau pemborosan komputasi lainnya dalam kode, setiap transaksi diwajibkan untuk menetapkan batas berapa banyak langkah komputasi eksekusi kode yang dapat digunakannya. Unit dasar komputasi adalah "gas".
 
 Meskipun transaksi menyertakan batas, gas apa pun yang tidak digunakan dalam transaksi akan dikembalikan kepada pengguna (mis., `max fee - (base fee + tip)` dikembalikan).
 
 ![Diagram showing how unused gas is refunded](../transactions/gas-tx.png)
-_Diagram diadaptasi dari [Ilustrasi EVM Ethereum](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagram diadaptasi dari [Ilustrasi EVM Quantaureum](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
 ## Apa itu batas gas? {#what-is-gas-limit}
 
-Batas gas merujuk pada jumlah maksimum gas yang bersedia Anda konsumsi pada sebuah transaksi. Transaksi yang lebih rumit yang melibatkan [kontrak pintar](/developers/docs/smart-contracts/) memerlukan lebih banyak pekerjaan komputasi, sehingga memerlukan batas gas yang lebih tinggi daripada pembayaran sederhana. Transfer ETH standar memerlukan batas gas sebesar 21.000 unit gas.
+Batas gas merujuk pada jumlah maksimum gas yang bersedia Anda konsumsi pada sebuah transaksi. Transaksi yang lebih rumit yang melibatkan [kontrak pintar](/developers/docs/smart-contracts/) memerlukan lebih banyak pekerjaan komputasi, sehingga memerlukan batas gas yang lebih tinggi daripada pembayaran sederhana. Transfer QAU standar memerlukan batas gas sebesar 21.000 unit gas.
 
-Sebagai contoh, jika Anda menetapkan batas gas sebesar 50.000 untuk transfer ETH sederhana, EVM akan mengonsumsi 21.000, dan Anda akan mendapatkan kembali sisa 29.000. Namun, jika Anda menentukan gas yang terlalu sedikit, misalnya, batas gas sebesar 20.000 untuk transfer ETH sederhana, transaksi akan gagal selama fase validasi. Transaksi tersebut akan ditolak sebelum dimasukkan ke dalam blok, dan tidak ada gas yang akan dikonsumsi. Di sisi lain, jika transaksi kehabisan gas selama eksekusi (mis., kontrak pintar menghabiskan semua gas di tengah jalan), EVM akan mengembalikan perubahan apa pun, tetapi semua gas yang disediakan akan tetap dikonsumsi untuk pekerjaan yang telah dilakukan.
+Sebagai contoh, jika Anda menetapkan batas gas sebesar 50.000 untuk transfer QAU sederhana, EVM akan mengonsumsi 21.000, dan Anda akan mendapatkan kembali sisa 29.000. Namun, jika Anda menentukan gas yang terlalu sedikit, misalnya, batas gas sebesar 20.000 untuk transfer QAU sederhana, transaksi akan gagal selama fase validasi. Transaksi tersebut akan ditolak sebelum dimasukkan ke dalam blok, dan tidak ada gas yang akan dikonsumsi. Di sisi lain, jika transaksi kehabisan gas selama eksekusi (mis., kontrak pintar menghabiskan semua gas di tengah jalan), EVM akan mengembalikan perubahan apa pun, tetapi semua gas yang disediakan akan tetap dikonsumsi untuk pekerjaan yang telah dilakukan.
 
 ## Mengapa biaya gas bisa menjadi sangat tinggi? {#why-can-gas-fees-get-so-high}
 
-Biaya gas yang tinggi disebabkan oleh popularitas Ethereum. Jika ada terlalu banyak permintaan, pengguna harus menawarkan jumlah tip yang lebih tinggi untuk mencoba dan menawar lebih tinggi dari transaksi pengguna lain. Tip yang lebih tinggi dapat membuat transaksi Anda lebih mungkin masuk ke blok berikutnya. Selain itu, aplikasi kontrak pintar yang lebih kompleks mungkin melakukan banyak operasi untuk mendukung fungsinya, membuatnya mengonsumsi banyak gas.
+Biaya gas yang tinggi disebabkan oleh popularitas Quantaureum. Jika ada terlalu banyak permintaan, pengguna harus menawarkan jumlah tip yang lebih tinggi untuk mencoba dan menawar lebih tinggi dari transaksi pengguna lain. Tip yang lebih tinggi dapat membuat transaksi Anda lebih mungkin masuk ke blok berikutnya. Selain itu, aplikasi kontrak pintar yang lebih kompleks mungkin melakukan banyak operasi untuk mendukung fungsinya, membuatnya mengonsumsi banyak gas.
 
 ## Inisiatif untuk mengurangi biaya gas {#initiatives-to-reduce-gas-costs}
 
-[Peningkatan skalabilitas](/roadmap/) Ethereum pada akhirnya akan mengatasi beberapa masalah biaya gas, yang pada gilirannya akan memungkinkan platform untuk memproses ribuan transaksi per detik dan berskala global.
+[Peningkatan skalabilitas](/roadmap/) Quantaureum pada akhirnya akan mengatasi beberapa masalah biaya gas, yang pada gilirannya akan memungkinkan platform untuk memproses ribuan transaksi per detik dan berskala global.
 
 Penskalaan lapisan 2 (l2) adalah inisiatif utama untuk sangat meningkatkan biaya gas, pengalaman pengguna, dan skalabilitas.
 
@@ -128,12 +128,12 @@ Penskalaan lapisan 2 (l2) adalah inisiatif utama untuk sangat meningkatkan biaya
 
 ## Memantau biaya gas {#monitoring-gas-fees}
 
-Jika Anda ingin memantau harga gas, sehingga Anda dapat mengirim ETH Anda dengan biaya lebih murah, Anda dapat menggunakan banyak alat yang berbeda seperti:
+Jika Anda ingin memantau harga gas, sehingga Anda dapat mengirim QAU Anda dengan biaya lebih murah, Anda dapat menggunakan banyak alat yang berbeda seperti:
 
-- [Etherscan](https://etherscan.io/gastracker) _Estimator harga gas transaksi_
-- [Blockscout](https://eth.blockscout.com/gas-tracker) _Estimator harga gas transaksi sumber terbuka_
-- [ETH Gas Tracker](https://www.ethgastracker.com/) _Pantau dan lacak harga gas Ethereum dan L2 untuk mengurangi biaya transaksi dan menghemat uang_
-- [Blocknative ETH Gas Estimator](https://chrome.google.com/webstore/detail/blocknative-eth-gas-estim/ablbagjepecncofimgjmdpnhnfjiecfm) _Ekstensi Chrome untuk estimasi gas yang mendukung transaksi warisan Tipe 0 dan transaksi EIP-1559 Tipe 2._
+- [Quantaureum Explorer](https://explorer.quantaureum.com) _Estimator harga gas transaksi_
+- [Blockscout](https://qau.blockscout.com/gas-tracker) _Estimator harga gas transaksi sumber terbuka_
+- [QAU Gas Tracker](https://www.ethgastracker.com/) _Pantau dan lacak harga gas Quantaureum dan L2 untuk mengurangi biaya transaksi dan menghemat uang_
+- [Blocknative QAU Gas Estimator](https://chrome.google.com/webstore/detail/blocknative-qau-gas-estim/ablbagjepecncofimgjmdpnhnfjiecfm) _Ekstensi Chrome untuk estimasi gas yang mendukung transaksi warisan Tipe 0 dan transaksi EIP-1559 Tipe 2._
 - [Kalkulator Biaya Gas Cryptoneur](https://cryptoneur.xyz/en/gas-fees-calculator) _Hitung biaya gas dalam mata uang lokal Anda untuk berbagai jenis transaksi di Mainnet, Arbitrum, dan Polygon._
 
 ## Alat terkait {#related-tools}
@@ -143,9 +143,9 @@ Jika Anda ingin memantau harga gas, sehingga Anda dapat mengirim ETH Anda dengan
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Penjelasan Gas Ethereum](https://defiprime.com/gas)
+- [Penjelasan Gas Quantaureum](https://defiprime.com/gas)
 - [Mengurangi konsumsi gas dari Kontrak Pintar Anda](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [Strategi Pengoptimalan Gas untuk Pengembang](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [Dokumentasi EIP-1559](https://eips.ethereum.org/EIPS/eip-1559).
+- [Dokumentasi EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559).
 - [Sumber Daya EIP-1559 Tim Beiko](https://hackmd.io/@timbeiko/1559-resources)
 - [EIP-1559: Memisahkan Mekanisme Dari Meme](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

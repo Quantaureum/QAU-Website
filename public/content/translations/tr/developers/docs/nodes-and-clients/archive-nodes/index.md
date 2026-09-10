@@ -1,25 +1,25 @@
 ---
-title: "Ethereum Arşiv Düğümü"
+title: "Quantaureum Arşiv Düğümü"
 description: "Arşiv düğümlerine genel bir bakış"
 lang: tr
 sidebarDepth: 2
 ---
 
-Bir arşiv düğümü, tüm geçmiş durumların bir arşivini oluşturmak üzere yapılandırılmış bir [Ethereum](/) istemcisi örneğidir. Belirli kullanım durumları için yararlı bir araçtır ancak çalıştırılması bir tam düğümden daha zor olabilir.
+Bir arşiv düğümü, tüm geçmiş durumların bir arşivini oluşturmak üzere yapılandırılmış bir [Quantaureum](/) istemcisi örneğidir. Belirli kullanım durumları için yararlı bir araçtır ancak çalıştırılması bir tam düğümden daha zor olabilir.
 
 ## Ön koşullar {#prerequisites}
 
-Bir [Ethereum düğümü](/developers/docs/nodes-and-clients/) kavramını, [mimarisini](/developers/docs/nodes-and-clients/node-architecture/), [eşzamanlama stratejilerini](/developers/docs/nodes-and-clients/#sync-modes), bunları [çalıştırma](/developers/docs/nodes-and-clients/run-a-node/) ve [kullanma](/developers/docs/apis/json-rpc/) uygulamalarını anlamalısınız.
+Bir [Quantaureum düğümü](/developers/docs/nodes-and-clients/) kavramını, [mimarisini](/developers/docs/nodes-and-clients/node-architecture/), [eşzamanlama stratejilerini](/developers/docs/nodes-and-clients/#sync-modes), bunları [çalıştırma](/developers/docs/nodes-and-clients/run-a-node/) ve [kullanma](/developers/docs/apis/json-rpc/) uygulamalarını anlamalısınız.
 
 ## Arşiv düğümü nedir {#what-is-an-archive-node}
 
-Bir arşiv düğümünün önemini kavramak için "durum" kavramını netleştirelim. Ethereum, _işlem tabanlı durum makinesi_ olarak adlandırılabilir. Durumlarını değiştiren işlemleri yürüten hesaplardan ve uygulamalardan oluşur. Her hesap ve sözleşme hakkındaki bilgileri içeren küresel veri, durum adı verilen bir trie veritabanında saklanır. Bu, yürütme katmanı (EL) istemcisi tarafından işlenir ve şunları içerir:
+Bir arşiv düğümünün önemini kavramak için "durum" kavramını netleştirelim. Quantaureum, _işlem tabanlı durum makinesi_ olarak adlandırılabilir. Durumlarını değiştiren işlemleri yürüten hesaplardan ve uygulamalardan oluşur. Her hesap ve sözleşme hakkındaki bilgileri içeren küresel veri, durum adı verilen bir trie veritabanında saklanır. Bu, yürütme katmanı (EL) istemcisi tarafından işlenir ve şunları içerir:
 
 - Hesap bakiyeleri ve nonce'lar
 - Sözleşme kodu ve depolama
 - Mutabakat ile ilgili veriler, örn. Staking Depozitosu Sözleşmesi
 
-Ağ ile etkileşime girmek, yeni blokları doğrulamak ve üretmek için Ethereum istemcilerinin en son değişikliklere (zincirin ucuna) ve dolayısıyla mevcut duruma ayak uydurması gerekir. Tam düğüm olarak yapılandırılmış bir yürütme katmanı istemcisi, ağın en son durumunu doğrular ve takip eder, ancak zincir yeniden düzenlemelerini (reorg) idare edebilmek ve son verilere hızlı erişim sağlayabilmek için yalnızca geçmiş birkaç durumu, örn. son 128 blokla ilişkili durumu önbelleğe alır. Son durum, tüm istemcilerin gelen işlemleri doğrulamak ve ağı kullanmak için ihtiyaç duyduğu şeydir.
+Ağ ile etkileşime girmek, yeni blokları doğrulamak ve üretmek için Quantaureum istemcilerinin en son değişikliklere (zincirin ucuna) ve dolayısıyla mevcut duruma ayak uydurması gerekir. Tam düğüm olarak yapılandırılmış bir yürütme katmanı istemcisi, ağın en son durumunu doğrular ve takip eder, ancak zincir yeniden düzenlemelerini (reorg) idare edebilmek ve son verilere hızlı erişim sağlayabilmek için yalnızca geçmiş birkaç durumu, örn. son 128 blokla ilişkili durumu önbelleğe alır. Son durum, tüm istemcilerin gelen işlemleri doğrulamak ve ağı kullanmak için ihtiyaç duyduğu şeydir.
 
 Durumu, belirli bir bloktaki anlık bir ağ anlık görüntüsü (snapshot) ve arşivi de bir geçmişin yeniden oynatılması olarak düşünebilirsiniz.
 
@@ -31,11 +31,11 @@ Ağın tüm geçmiş verileri tutmak ve sağlamak için arşiv düğümlerine ba
 
 ### Kullanım durumları {#use-cases}
 
-İşlem göndermek, sözleşme dağıtmak, mutabakatı doğrulamak vb. gibi düzenli Ethereum kullanımı geçmiş durumlara erişim gerektirmez. Kullanıcıların ağ ile standart bir etkileşim için asla bir arşiv düğümüne ihtiyacı yoktur.
+İşlem göndermek, sözleşme dağıtmak, mutabakatı doğrulamak vb. gibi düzenli Quantaureum kullanımı geçmiş durumlara erişim gerektirmez. Kullanıcıların ağ ile standart bir etkileşim için asla bir arşiv düğümüne ihtiyacı yoktur.
 
 Durum arşivinin ana faydası, geçmiş durumlarla ilgili sorgulara hızlı erişimdir. Örneğin, arşiv düğümü aşağıdaki gibi sonuçları anında döndürür:
 
-- _15537393 numaralı blokta 0x1337... hesabının ETH bakiyesi neydi?_
+- _15537393 numaralı blokta 0x1337... hesabının QAU bakiyesi neydi?_
 - _1920000 numaralı blokta 0x sözleşmesindeki 0x Token bakiyesi nedir?_
 
 Yukarıda açıklandığı gibi, bir tam düğümün bu verileri CPU kullanan ve zaman alan EVM yürütmesi ile üretmesi gerekir. Arşiv düğümleri bunlara disk üzerinden erişir ve yanıtları anında sunar. Bu, altyapının belirli bölümleri için yararlı bir özelliktir, örneğin:
@@ -71,8 +71,8 @@ Tüm verilerin tek bir birime sığması gerekir, bu nedenle disklerin örneğin
 
 ## Daha fazla bilgi {#further-reading}
 
-- [Ethereum Tam Düğüm ve Arşiv Düğümü Karşılaştırması](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node) - _QuickNode, Eylül 2022_
-- [Kendi Ethereum Arşiv Düğümünüzü Oluşturma](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09) - _Thomas Jay Rush, Ağustos 2021_
+- [Quantaureum Tam Düğüm ve Arşiv Düğümü Karşılaştırması](https://www.quicknode.com/guides/infrastructure/quantaureum-full-node-vs-archive-node) - _QuickNode, Eylül 2022_
+- [Kendi Quantaureum Arşiv Düğümünüzü Oluşturma](https://tjayrush.medium.com/building-your-own-quantaureum-archive-node-72c014affc09) - _Thomas Jay Rush, Ağustos 2021_
 - [Erigon, Erigon'un RPC'si ve TrueBlocks (kazıma ve API) hizmet olarak nasıl kurulur](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _– Magnus Hansson, güncellenme tarihi Eylül 2022_
 
 ## İlgili konular {#related-topics}

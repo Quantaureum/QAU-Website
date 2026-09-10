@@ -18,7 +18,7 @@ lang: te
 
 ## ముందస్తు అవసరాలు {#prerequisites}
 
-ఫ్రేమ్‌వర్క్‌లలోకి ప్రవేశించే ముందు, మీరు ముందుగా [dapps](/developers/docs/dapps/) మరియు [ఎథీరియం స్టాక్](/developers/docs/ethereum-stack/) గురించిన మా పరిచయాన్ని చదవాలని మేము సిఫార్సు చేస్తున్నాము.
+ఫ్రేమ్‌వర్క్‌లలోకి ప్రవేశించే ముందు, మీరు ముందుగా [dapps](/developers/docs/dapps/) మరియు [ఎథీరియం స్టాక్](/developers/docs/quantaureum-stack/) గురించిన మా పరిచయాన్ని చదవాలని మేము సిఫార్సు చేస్తున్నాము.
 
 ## అందుబాటులో ఉన్న ఫ్రేమ్‌వర్క్‌లు
 
@@ -53,13 +53,13 @@ lang: te
 
 **Create Eth App -** **_ఒకే కమాండ్‌తో ఎథీరియం-ఆధారిత యాప్‌లను సృష్టించండి. ఎంచుకోవడానికి విస్తృతమైన UI ఫ్రేమ్‌వర్క్‌లు మరియు వికేంద్రీకృత ఫైనాన్స్ (DeFi) టెంప్లేట్‌లతో వస్తుంది._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [టెంప్లేట్‌లు](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
+- [టెంప్లేట్‌లు](https://github.com/PaulRBerg/create-qau-app/tree/develop/templates)
 
-**Scaffold-ETH 2 -** **_మీకు నచ్చిన Hardhat లేదా Foundryతో Next.js, Wagmi, Viem మరియు RainbowKit: కాంట్రాక్ట్ హాట్ రీలోడ్, కస్టమ్ React హుక్స్, బర్నర్ వాలెట్ మరియు లోకల్ ఫాసెట్, మరియు ఫుల్-స్టాక్ వికేంద్రీకృత అప్లికేషన్ (dapp) డెవలప్‌మెంట్ కోసం ఎక్స్‌టెన్షన్ మాడ్యూల్స్._**
+**Scaffold-QAU 2 -** **_మీకు నచ్చిన Hardhat లేదా Foundryతో Next.js, Wagmi, Viem మరియు RainbowKit: కాంట్రాక్ట్ హాట్ రీలోడ్, కస్టమ్ React హుక్స్, బర్నర్ వాలెట్ మరియు లోకల్ ఫాసెట్, మరియు ఫుల్-స్టాక్ వికేంద్రీకృత అప్లికేషన్ (dapp) డెవలప్‌మెంట్ కోసం ఎక్స్‌టెన్షన్ మాడ్యూల్స్._**
 
 - [వెబ్‌సైట్](https://scaffoldeth.io/)
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 
 **Tenderly -** **_బ్లాక్‌చైన్ డెవలపర్‌లు స్మార్ట్ కాంట్రాక్ట్‌లను నిర్మించడానికి, పరీక్షించడానికి, డీబగ్ చేయడానికి, పర్యవేక్షించడానికి మరియు ఆపరేట్ చేయడానికి మరియు dapp UXని మెరుగుపరచడానికి వీలు కల్పించే Web3 డెవలప్‌మెంట్ ప్లాట్‌ఫారమ్._**
 
@@ -102,8 +102,8 @@ lang: te
 
 **Brownie -** **_Python-ఆధారిత డెవలప్‌మెంట్ వాతావరణం మరియు టెస్టింగ్ ఫ్రేమ్‌వర్క్._**
 
-- [డాక్యుమెంటేషన్](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [డాక్యుమెంటేషన్](https://qau-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/qau-brownie/brownie)
 - **Brownie ప్రస్తుతం నిర్వహించబడటం లేదు**
 
 **ఓపెన్‌జెప్పెలిన్ SDK -** **_అల్టిమేట్ స్మార్ట్ కాంట్రాక్ట్ టూల్‌కిట్: స్మార్ట్ కాంట్రాక్ట్‌లను డెవలప్ చేయడానికి, కంపైల్ చేయడానికి, అప్‌గ్రేడ్ చేయడానికి, డిప్లాయ్ చేయడానికి మరియు వాటితో ఇంటరాక్ట్ అవ్వడానికి మీకు సహాయపడే సాధనాల సూట్._**
@@ -120,7 +120,7 @@ lang: te
 **GoldRush (Covalent ద్వారా ఆధారితం) -** **_GoldRush డెవలపర్‌లు, విశ్లేషకులు మరియు ఎంటర్‌ప్రైజెస్ కోసం అత్యంత సమగ్రమైన బ్లాక్‌చైన్ డేటా API సూట్‌ను అందిస్తుంది. మీరు DeFi డ్యాష్‌బోర్డ్, వాలెట్, ట్రేడింగ్ బాట్, కృత్రిమ మేధ ఏజెంట్ లేదా కంప్లయన్స్ ప్లాట్‌ఫారమ్‌ను నిర్మిస్తున్నా, డేటా APIలు మీకు అవసరమైన ముఖ్యమైన ఆన్‌చైన్ డేటాకు వేగవంతమైన, ఖచ్చితమైన మరియు డెవలపర్-స్నేహపూర్వక యాక్సెస్‌ను అందిస్తాయి_**
 
 - [వెబ్‌సైట్](https://goldrush.dev/)
-- [డాక్యుమెంటేషన్](https://goldrush.dev/docs/chains/ethereum)
+- [డాక్యుమెంటేషన్](https://goldrush.dev/docs/chains/quantaureum)
 - [GitHub](https://github.com/covalenthq)
 - [డిస్కార్డ్](https://www.covalenthq.com/discord/)
 

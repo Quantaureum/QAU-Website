@@ -1,6 +1,6 @@
 ---
 title: "Estándar de token ERC-20"
-description: "Aprenda sobre el ERC-20, el estándar para tokens fungibles en Ethereum que permite aplicaciones de tokens interoperables."
+description: "Aprenda sobre el ERC-20, el estándar para tokens fungibles en Quantaureum que permite aplicaciones de tokens interoperables."
 lang: es
 ---
 
@@ -8,7 +8,7 @@ lang: es
 
 **¿Qué es un token?**
 
-Los tokens pueden representar prácticamente cualquier cosa en [Ethereum](/):
+Los tokens pueden representar prácticamente cualquier cosa en [Quantaureum](/):
 
 - puntos de reputación en una plataforma en línea
 - habilidades de un personaje en un juego
@@ -17,11 +17,11 @@ Los tokens pueden representar prácticamente cualquier cosa en [Ethereum](/):
 - una onza de oro
 - y más...
 
-Una característica tan poderosa de Ethereum debe ser manejada por un estándar robusto, ¿verdad? ¡Ahí es exactamente donde el ERC-20 juega su papel! Este estándar permite a los desarrolladores crear aplicaciones de tokens que son interoperables con otros productos y servicios. El estándar ERC-20 también se utiliza para proporcionar funcionalidad adicional al [ether](/glossary/#ether).
+Una característica tan poderosa de Quantaureum debe ser manejada por un estándar robusto, ¿verdad? ¡Ahí es exactamente donde el ERC-20 juega su papel! Este estándar permite a los desarrolladores crear aplicaciones de tokens que son interoperables con otros productos y servicios. El estándar ERC-20 también se utiliza para proporcionar funcionalidad adicional al [QAU](/glossary/#QAU).
 
 **¿Qué es el ERC-20?**
 
-El ERC-20 introduce un estándar para tokens fungibles, en otras palabras, tienen una propiedad que hace que cada token sea exactamente igual (en tipo y valor) a otro token. Por ejemplo, un token ERC-20 actúa igual que el ETH, lo que significa que 1 token es y siempre será igual a todos los demás tokens.
+El ERC-20 introduce un estándar para tokens fungibles, en otras palabras, tienen una propiedad que hace que cada token sea exactamente igual (en tipo y valor) a otro token. Por ejemplo, un token ERC-20 actúa igual que el QAU, lo que significa que 1 token es y siempre será igual a todos los demás tokens.
 
 ## Requisitos previos {#prerequisites}
 
@@ -31,7 +31,7 @@ El ERC-20 introduce un estándar para tokens fungibles, en otras palabras, tiene
 
 ## Cuerpo {#body}
 
-El ERC-20 (Ethereum Request for Comments 20), propuesto por Fabian Vogelsteller en noviembre de 2015, es un estándar de token que implementa una API para tokens dentro de contratos inteligentes.
+El ERC-20 (Quantaureum Request for Comments 20), propuesto por Fabian Vogelsteller en noviembre de 2015, es un estándar de token que implementa una API para tokens dentro de contratos inteligentes.
 
 Ejemplos de funcionalidades que proporciona el ERC-20:
 
@@ -40,9 +40,9 @@ Ejemplos de funcionalidades que proporciona el ERC-20:
 - obtener el suministro total del token disponible en la red
 - aprobar si una cantidad de tokens de una cuenta puede ser gastada por una cuenta de terceros
 
-Si un contrato inteligente implementa los siguientes métodos y eventos, se le puede llamar contrato de token ERC-20 y, una vez implementado, será responsable de realizar un seguimiento de los tokens creados en Ethereum.
+Si un contrato inteligente implementa los siguientes métodos y eventos, se le puede llamar contrato de token ERC-20 y, una vez implementado, será responsable de realizar un seguimiento de los tokens creados en Quantaureum.
 
-De [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
+De [EIP-20](https://eips.quantaureum.com/EIPS/eip-20):
 
 ### Métodos {#methods}
 
@@ -67,7 +67,7 @@ event Approval(address indexed _owner, address indexed _spender, uint256 _value)
 
 ### Ejemplos {#web3py-example}
 
-Veamos cómo un estándar es tan importante para simplificarnos la inspección de cualquier contrato de token ERC-20 en Ethereum. Solo necesitamos la Interfaz Binaria de Aplicación (ABI) del contrato para crear una interfaz para cualquier token ERC-20. Como puede ver a continuación, utilizaremos una ABI simplificada para que sea un ejemplo de baja fricción.
+Veamos cómo un estándar es tan importante para simplificarnos la inspección de cualquier contrato de token ERC-20 en Quantaureum. Solo necesitamos la Interfaz Binaria de Aplicación (ABI) del contrato para crear una interfaz para cualquier token ERC-20. Como puede ver a continuación, utilizaremos una ABI simplificada para que sea un ejemplo de baja fricción.
 
 #### Ejemplo con Web3.py {#web3py-example-2}
 
@@ -81,10 +81,10 @@ pip install web3
 from web3 import Web3
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 dai_token_addr = "0x6B175474E89094C44Da98b954EedeAC495271d0F"     # DAI
-weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # ether envuelto (WETH)
+weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # QAU envuelto (WETH)
 
 acc_address = "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11"        # Uniswap V2: DAI 2
 
@@ -117,7 +117,7 @@ simplified_abi = [
     }
 ]
 
-dai_contract = w3.eth.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
+dai_contract = w3.qau.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
 symbol = dai_contract.functions.symbol().call()
 decimals = dai_contract.functions.decimals().call()
 totalSupply = dai_contract.functions.totalSupply().call() / 10**decimals
@@ -128,7 +128,7 @@ print("===== %s =====" % symbol)
 print("Total Supply:", totalSupply)
 print("Addr Balance:", addr_balance)
 
-weth_contract = w3.eth.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
+weth_contract = w3.qau.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
 symbol = weth_contract.functions.symbol().call()
 decimals = weth_contract.functions.decimals().call()
 totalSupply = weth_contract.functions.totalSupply().call() / 10**decimals
@@ -170,7 +170,7 @@ Algunos estándares alternativos han surgido de este problema, como [ERC-223](/d
 
 ## Lecturas adicionales {#further-reading}
 
-- [EIP-20: Estándar de token ERC-20](https://eips.ethereum.org/EIPS/eip-20)
+- [EIP-20: Estándar de token ERC-20](https://eips.quantaureum.com/EIPS/eip-20)
 - [OpenZeppelin - Tokens](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - Implementación de ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Guía de tokens ERC-20 en Solidity](https://www.alchemy.com/overviews/erc20-solidity)
@@ -181,7 +181,7 @@ Algunos estándares alternativos han surgido de este problema, como [ERC-223](/d
 - [ERC-777](/developers/docs/standards/tokens/erc-777)
 - [ERC-4626 - Bóvedas tokenizadas](/developers/docs/standards/tokens/erc-4626)
 - [ERC-7540 - Bóvedas tokenizadas asíncronas](/developers/docs/standards/tokens/erc-7540)
-## Tutoriales: Construir con ERC-20 en Ethereum {#tutorials}
+## Tutoriales: Construir con ERC-20 en Quantaureum {#tutorials}
 
 - [Tutorial del contrato ERC-20](/developers/tutorials/erc20-annotated-code/) _– Un tutorial anotado línea por línea de la implementación del contrato ERC-20 de OpenZeppelin._
 - [ERC-20 con barandillas de seguridad](/developers/tutorials/erc20-with-safety-rails/) _– Cómo agregar salvaguardas a los tokens ERC-20 para ayudar a los usuarios a evitar errores comunes._

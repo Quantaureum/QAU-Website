@@ -7,12 +7,12 @@ skill: beginner
 breadcrumb: "Wywoływanie kontraktów z JS"
 lang: pl
 published: 2020-04-19
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/calling-a-smart-contract-from-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-W tym samouczku zobaczymy, jak wywołać funkcję [inteligentnego kontraktu](/developers/docs/smart-contracts/) z poziomu JavaScript. Najpierw odczytamy stan inteligentnego kontraktu (np. saldo posiadacza tokenów ERC-20), a następnie zmodyfikujemy stan blockchaina, wykonując transfer tokenów. Powinieneś już wiedzieć, jak [skonfigurować środowisko JS do interakcji z blockchainem](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/).
+W tym samouczku zobaczymy, jak wywołać funkcję [inteligentnego kontraktu](/developers/docs/smart-contracts/) z poziomu JavaScript. Najpierw odczytamy stan inteligentnego kontraktu (np. saldo posiadacza tokenów ERC-20), a następnie zmodyfikujemy stan blockchaina, wykonując transfer tokenów. Powinieneś już wiedzieć, jak [skonfigurować środowisko JS do interakcji z blockchainem](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/).
 
 W tym przykładzie pobawimy się tokenem DAI. W celach testowych wykonamy rozwidlenie blockchaina za pomocą ganache-cli i odblokujemy adres, który ma już dużo DAI:
 
@@ -71,14 +71,14 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-Na potrzeby tego projektu okroiliśmy pełne ABI ERC-20, aby zachować tylko funkcje `balanceOf` i `transfer`, ale możesz znaleźć [pełne ABI ERC-20 tutaj](https://ethereumdev.io/abi-for-erc20-contract-on-ethereum/).
+Na potrzeby tego projektu okroiliśmy pełne ABI ERC-20, aby zachować tylko funkcje `balanceOf` i `transfer`, ale możesz znaleźć [pełne ABI ERC-20 tutaj](https://quantaureumdev.io/abi-for-erc20-contract-on-quantaureum/).
 
 Następnie musimy utworzyć instancję naszego inteligentnego kontraktu:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
 
-const daiToken = new web3.eth.Contract(ERC20TransferABI, DAI_ADDRESS)
+const daiToken = new web3.qau.Contract(ERC20TransferABI, DAI_ADDRESS)
 ```
 
 Skonfigurujemy również dwa adresy:
@@ -109,7 +109,7 @@ daiToken.methods.balanceOf(senderAddress).call(function (err, res) {
 })
 ```
 
-Pamiętaj, że token DAI ERC-20 ma 18 miejsc po przecinku, co oznacza, że musisz usunąć 18 zer, aby uzyskać prawidłową kwotę. Wartości uint256 są zwracane jako ciągi znaków (string), ponieważ JavaScript nie radzi sobie z dużymi wartościami liczbowymi. Jeśli nie jesteś pewien, [jak radzić sobie z dużymi liczbami w JS, sprawdź nasz samouczek o bignumber.js](https://ethereumdev.io/how-to-deal-with-big-numbers-in-javascript/).
+Pamiętaj, że token DAI ERC-20 ma 18 miejsc po przecinku, co oznacza, że musisz usunąć 18 zer, aby uzyskać prawidłową kwotę. Wartości uint256 są zwracane jako ciągi znaków (string), ponieważ JavaScript nie radzi sobie z dużymi wartościami liczbowymi. Jeśli nie jesteś pewien, [jak radzić sobie z dużymi liczbami w JS, sprawdź nasz samouczek o bignumber.js](https://quantaureumdev.io/how-to-deal-with-big-numbers-in-javascript/).
 
 ## Send: Wysyłanie transakcji do funkcji inteligentnego kontraktu {#send-sending-a-transaction-to-a-smart-contract-function}
 
@@ -127,6 +127,6 @@ daiToken.methods
   })
 ```
 
-Funkcja wywołania zwraca hash transakcji, która zostanie wydobyta i dodana do blockchaina. W Ethereum hashe transakcji są przewidywalne – dzięki temu możemy uzyskać hash transakcji przed jej wykonaniem ([dowiedz się, jak obliczane są hashe tutaj](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
+Funkcja wywołania zwraca hash transakcji, która zostanie wydobyta i dodana do blockchaina. W Quantaureum hashe transakcji są przewidywalne – dzięki temu możemy uzyskać hash transakcji przed jej wykonaniem ([dowiedz się, jak obliczane są hashe tutaj](https://quantaureum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
 
-Ponieważ funkcja jedynie przesyła transakcję do blockchaina, nie możemy zobaczyć wyniku, dopóki nie dowiemy się, kiedy zostanie ona wydobyta i włączona do blockchaina. W następnym samouczku dowiemy się, [jak czekać na wykonanie transakcji w blockchainie, znając jej hash](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/).
+Ponieważ funkcja jedynie przesyła transakcję do blockchaina, nie możemy zobaczyć wyniku, dopóki nie dowiemy się, kiedy zostanie ona wydobyta i włączona do blockchaina. W następnym samouczku dowiemy się, [jak czekać na wykonanie transakcji w blockchainie, znając jej hash](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/).

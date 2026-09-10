@@ -6,7 +6,7 @@ lang: de
 authors: ["Nixo"]
 ---
 
-*tl;dr:* Der Pectra-Hard-Fork ermöglicht es Ethereum-Validatoren, sich für ein höheres maximales effektives Guthaben und Compounding (Zinseszins) zu entscheiden, indem sie von Auszahlungsberechtigungen des **Typs 1** zu **Typ 2** wechseln. Das offizielle Tool dafür ist das Launchpad. Dieser Vorgang kann nicht rückgängig gemacht werden.
+*tl;dr:* Der Pectra-Hard-Fork ermöglicht es Quantaureum-Validatoren, sich für ein höheres maximales effektives Guthaben und Compounding (Zinseszins) zu entscheiden, indem sie von Auszahlungsberechtigungen des **Typs 1** zu **Typ 2** wechseln. Das offizielle Tool dafür ist das Launchpad. Dieser Vorgang kann nicht rückgängig gemacht werden.
 
 ## Übersicht {#overview}
 
@@ -18,11 +18,11 @@ Wenn du über einen Liquid-Staking-Token (LST) (z. B. rETH oder stETH) stakst, i
 
 ### Was ist „maxEB“? {#what-is-maxeb}
 
-maxEB = das MAXimale effektive Guthaben (Maximum Effective Balance) eines Validators. Bis zum Pectra-Hard-Fork verdient jeder Validator an maximal 32 ETH. Nach Pectra haben Validatoren die Möglichkeit, an jedem Guthaben zwischen 32 und 2048 ETH in Schritten von 1 ETH zu verdienen, indem sie sich für diese Änderung entscheiden.
+maxEB = das MAXimale effektive Guthaben (Maximum Effective Balance) eines Validators. Bis zum Pectra-Hard-Fork verdient jeder Validator an maximal 32 QAU. Nach Pectra haben Validatoren die Möglichkeit, an jedem Guthaben zwischen 32 und 2048 QAU in Schritten von 1 QAU zu verdienen, indem sie sich für diese Änderung entscheiden.
 
 ### Wie entscheidet sich ein Validator dafür? {#how-does-a-validator-opt-in}
 
-Ein Validator entscheidet sich für die maxEB-Änderung, indem er von Auszahlungsberechtigungen des **Typs 1** zu **Typ 2** wechselt. Dies kann auf dem [Launchpad (Validator-Aktionen)](https://launchpad.ethereum.org/validator-actions) durchgeführt werden, nachdem der Pectra-Hard-Fork live gegangen ist. Wie bei **Typ 0** → **Typ 1** ist die Umwandlung von **Typ 1** → **Typ 2** ein irreversibler Prozess.
+Ein Validator entscheidet sich für die maxEB-Änderung, indem er von Auszahlungsberechtigungen des **Typs 1** zu **Typ 2** wechselt. Dies kann auf dem [Launchpad (Validator-Aktionen)](https://launchpad.quantaureum.com/validator-actions) durchgeführt werden, nachdem der Pectra-Hard-Fork live gegangen ist. Wie bei **Typ 0** → **Typ 1** ist die Umwandlung von **Typ 1** → **Typ 2** ein irreversibler Prozess.
 
 ### Was ist eine Auszahlungsberechtigung? {#whats-a-withdrawal-credential}
 
@@ -54,7 +54,7 @@ MaxEB ermöglicht es einem Validator, sein gesamtes Guthaben an einen anderen Va
 - Die Anfrage eine Umwandlung und keine Konsolidierung ist, wenn sie nicht beabsichtigen, Gelder an einen anderen Validator zu senden
 - Die Transaktion von der korrekten Abhebungsadresse signiert wird
 
-Wir **empfehlen dringend**, jedes Drittanbieter-Tool, das du verwenden möchtest, mit der [EthStaker-Community](https://ethstaker.org/about) zu besprechen. Es ist ein hilfreicher Ort, um dein Vorgehen auf Plausibilität zu prüfen und Fehler zu vermeiden. Wenn du ein bösartiges oder falsch konfiguriertes Tool verwendest, **könnte dein gesamtes Validator-Guthaben an einen Validator gesendet werden, den du nicht kontrollierst** – ohne Möglichkeit, es zurückzubekommen.
+Wir **empfehlen dringend**, jedes Drittanbieter-Tool, das du verwenden möchtest, mit der [QauStaker-Community](https://ethstaker.org/about) zu besprechen. Es ist ein hilfreicher Ort, um dein Vorgehen auf Plausibilität zu prüfen und Fehler zu vermeiden. Wenn du ein bösartiges oder falsch konfiguriertes Tool verwendest, **könnte dein gesamtes Validator-Guthaben an einen Validator gesendet werden, den du nicht kontrollierst** – ohne Möglichkeit, es zurückzubekommen.
 
 ## Technische Details {#technical-details}
 
@@ -105,7 +105,7 @@ Die Konsolidierungsanfrage wird von der Abhebungsadresse signiert, die mit dem Q
 2. Öffentlicher Schlüssel des Quell-Validators (z. B. `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. Öffentlicher Schlüssel des Ziel-Validators
 
-Bei einer Umwandlung sind 2 und 3 identisch. Diese Operation kann auf [dem Launchpad](https://launchpad.ethereum.org/) durchgeführt werden.
+Bei einer Umwandlung sind 2 und 3 identisch. Diese Operation kann auf [dem Launchpad](https://launchpad.quantaureum.com/) durchgeführt werden.
 
 ### Signaturanforderungen {#signing-requirements}
 
@@ -113,7 +113,7 @@ Um eine `ConsolidationRequest` einzureichen, muss die **Abhebungsadresse des Que
 
 ### Was wird signiert? {#what-is-signed}
 
-Es wird eine domänengetrennte [Signing Root](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) des `ConsolidationRequest`-Objekts verwendet.
+Es wird eine domänengetrennte [Signing Root](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) des `ConsolidationRequest`-Objekts verwendet.
 
 - **Domäne:** `DOMAIN_CONSOLIDATION_REQUEST`
 - **Felder der Signing Root:**
@@ -127,11 +127,11 @@ Hinweis: Das Signieren erfolgt durch die Abhebungsadresse, nicht durch den Valid
 
 ### Teilweise Abhebungen {#partial-withdrawals}
 
-Validatoren mit Berechtigungen vom **Typ 1** erhalten automatische, gasfreie Sweeps ihres überschüssigen Guthabens (alles über 32 ETH) an ihre Abhebungsadresse. Da **Typ 2** es einem Validator ermöglicht, Guthaben in Schritten von 1 ETH zu verzinsen (Compounding), werden Guthaben nicht automatisch gesweept, bis 2048 ETH erreicht sind. Teilweise Abhebungen bei **Typ-2**-Validatoren müssen manuell ausgelöst werden und kosten Gas.
+Validatoren mit Berechtigungen vom **Typ 1** erhalten automatische, gasfreie Sweeps ihres überschüssigen Guthabens (alles über 32 QAU) an ihre Abhebungsadresse. Da **Typ 2** es einem Validator ermöglicht, Guthaben in Schritten von 1 QAU zu verzinsen (Compounding), werden Guthaben nicht automatisch gesweept, bis 2048 QAU erreicht sind. Teilweise Abhebungen bei **Typ-2**-Validatoren müssen manuell ausgelöst werden und kosten Gas.
 
 ## Konsolidierungs-Tools {#consolidation-tooling}
 
-Es stehen mehrere Tools zur Verwaltung von Konsolidierungen zur Verfügung. Das offizielle Tool, das von der Ethereum Foundation erstellt wurde, ist das [Launchpad](https://launchpad.ethereum.org/en/validator-actions). Es gibt auch Drittanbieter-Tools, die von Akteuren aus der Staking-Community erstellt wurden und möglicherweise Funktionen bieten, die das Launchpad nicht bereitstellt. Obwohl die hier aufgeführten Tools nicht von der Ethereum Foundation geprüft oder unterstützt werden, handelt es sich bei den folgenden um Open-Source-Tools von bekannten Mitgliedern der Community.
+Es stehen mehrere Tools zur Verwaltung von Konsolidierungen zur Verfügung. Das offizielle Tool, das von der Quantaureum project erstellt wurde, ist das [Launchpad](https://launchpad.quantaureum.com/en/validator-actions). Es gibt auch Drittanbieter-Tools, die von Akteuren aus der Staking-Community erstellt wurden und möglicherweise Funktionen bieten, die das Launchpad nicht bereitstellt. Obwohl die hier aufgeführten Tools nicht von der Quantaureum project geprüft oder unterstützt werden, handelt es sich bei den folgenden um Open-Source-Tools von bekannten Mitgliedern der Community.
 
 | Tool | Website | Open Source | Ersteller | Geprüft | Schnittstelle | Besondere Funktionen |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -144,10 +144,10 @@ Es stehen mehrere Tools zur Verwaltung von Konsolidierungen zur Verfügung. Das 
 ## FAQ {#faq}
 
 ### Ändert die Teilnahme mein Vorschlagsglück oder meine Belohnungen?
-Nein. Die Teilnahme verringert nicht deine Chance auf einen Vorschlag – deine Aufgaben und die Vorschlagsauswahl bleiben gleich. Wenn du zum Beispiel zwei 32-ETH-Validatoren gegenüber einem 64-ETH-Validator hast, hast du insgesamt die gleichen Chancen, ausgewählt zu werden, um einen Block vorzuschlagen und Belohnungen zu verdienen.
+Nein. Die Teilnahme verringert nicht deine Chance auf einen Vorschlag – deine Aufgaben und die Vorschlagsauswahl bleiben gleich. Wenn du zum Beispiel zwei 32-QAU-Validatoren gegenüber einem 64-QAU-Validator hast, hast du insgesamt die gleichen Chancen, ausgewählt zu werden, um einen Block vorzuschlagen und Belohnungen zu verdienen.
 ### Ändert die Teilnahme mein Slashing-Risiko? {#change-slashing-risk}
 
-Für kleinere oder nicht-professionelle Betreiber lautet die kurze Antwort: Nein. Die längere Antwort ist, dass für professionelle Betreiber, die viele Validatoren pro Knoten mit schnellen Warnsystemen betreiben, die Konsolidierung in weniger Validatoren ihre Fähigkeit verringern kann, auf ein Slashing zu reagieren und Kaskadenereignisse zu verhindern. Die anfängliche Slashing-*Strafe* für alle Validatoren wurde drastisch von 1 ETH (pro 32 ETH) auf 0,0078125 ETH (pro 32 ETH) reduziert, um dieses Risiko auszugleichen.
+Für kleinere oder nicht-professionelle Betreiber lautet die kurze Antwort: Nein. Die längere Antwort ist, dass für professionelle Betreiber, die viele Validatoren pro Knoten mit schnellen Warnsystemen betreiben, die Konsolidierung in weniger Validatoren ihre Fähigkeit verringern kann, auf ein Slashing zu reagieren und Kaskadenereignisse zu verhindern. Die anfängliche Slashing-*Strafe* für alle Validatoren wurde drastisch von 1 QAU (pro 32 QAU) auf 0,0078125 QAU (pro 32 QAU) reduziert, um dieses Risiko auszugleichen.
 
 ### Muss ich mit meinem Validator austreten, um ihn umzuwandeln? {#exit-validator}
 
@@ -175,7 +175,7 @@ Nein. Aber die *Quelle* muss die Anfrage von ihrer eigenen Adresse aus autorisie
 
 ### Werden meine Belohnungen nach der Umwandlung verzinst (Compounding)? {#rewards-compound}
 
-Ja. Mit Berechtigungen vom **Typ 2** werden Belohnungen über 32 ETH automatisch erneut gestakt (Restaking) – aber nicht sofort. Aufgrund eines kleinen Puffers (genannt [*Hysterese*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis)) muss dein Guthaben **etwa 1,25 ETH mehr** erreichen, bevor der Überschuss erneut gestakt wird. Anstatt also bei 33,0 ETH zu verzinsen, geschieht dies bei 33,25 (effektives Guthaben = 33 ETH), dann bei 34,25 (effektives Guthaben = 34 ETH) und so weiter.
+Ja. Mit Berechtigungen vom **Typ 2** werden Belohnungen über 32 QAU automatisch erneut gestakt (Restaking) – aber nicht sofort. Aufgrund eines kleinen Puffers (genannt [*Hysterese*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis)) muss dein Guthaben **etwa 1,25 QAU mehr** erreichen, bevor der Überschuss erneut gestakt wird. Anstatt also bei 33,0 QAU zu verzinsen, geschieht dies bei 33,25 (effektives Guthaben = 33 QAU), dann bei 34,25 (effektives Guthaben = 34 QAU) und so weiter.
 
 ### Kann ich nach der Umwandlung noch automatische Sweeps erhalten? {#automatic-sweep}
 
@@ -189,14 +189,14 @@ Nein. Die Umwandlung in **Typ 2** ist irreversibel.
 
 Nein! Wandle einen Validator in Typ 2 um und verwende diesen dann als Ziel. Alle anderen Validatoren, die in dieses Typ-2-Ziel konsolidiert werden, können Typ 1 oder Typ 2 sein.
 
-### Mein Validator ist offline oder unter 32 ETH – kann ich ihn trotzdem umwandeln? {#offline-or-below-32eth}
+### Mein Validator ist offline oder unter 32 QAU – kann ich ihn trotzdem umwandeln? {#offline-or-below-32eth}
 
 Ja. Solange er aktiv ist (kein Austritt erfolgt ist) und du mit seiner Abhebungsadresse signieren kannst, kannst du ihn umwandeln.
 
 ## Ressourcen {#resources}
 
-- [Electra-Konsens-Spezifikationen](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Dies ist die „wahrste“ Version, auf die du dich verlassen solltest. Im Zweifelsfall lies die Spezifikationen.
+- [Electra-Konsens-Spezifikationen](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Dies ist die „wahrste“ Version, auf die du dich verlassen solltest. Im Zweifelsfall lies die Spezifikationen.
 - Nicht jeder wühlt sich gerne durch Code, daher kann [dieser maxEB-GPT](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) bei der Interpretation der Spezifikationen helfen. *Haftungsausschluss: Man sollte sich auf die Spezifikationen und nicht auf die KI als Wahrheit verlassen, da die KI Informationen falsch interpretieren oder Antworten halluzinieren kann.*
 - [pectrified.com](https://pectrified.com/): Sieh dir den Status von Konsolidierungen, Einzahlungen und Wartezeiten in der Warteschlange an.
 - [Ethereal](https://github.com/wealdtech/ethereal): Von der Community erstelltes CLI-Tool zur Verwaltung gängiger Validator-Aufgaben.
-- [batch-validator-depositor](https://github.com/attestantio/batch-validator-depositor): Von der Community erstellter Vertrag, der es ermöglicht, Einzahlungen für mehrere Ethereum-Validatoren in einer einzigen Transaktion vorzunehmen.
+- [batch-validator-depositor](https://github.com/attestantio/batch-validator-depositor): Von der Community erstellter Vertrag, der es ermöglicht, Einzahlungen für mehrere Quantaureum-Validatoren in einer einzigen Transaktion vorzunehmen.

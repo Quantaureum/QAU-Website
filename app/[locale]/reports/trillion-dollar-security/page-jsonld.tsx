@@ -52,7 +52,7 @@ export default async function TrillionDollarSecurityPageJsonLD({
           personReference("josh-stark"),
           personReference("fredrik-svantes"),
         ],
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
@@ -70,8 +70,8 @@ export default async function TrillionDollarSecurityPageJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        reviewedBy: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
         mainEntity: articleId,
       },
       {
@@ -80,18 +80,18 @@ export default async function TrillionDollarSecurityPageJsonLD({
         isPartOf: webPageId,
         headline: t("page-trillion-dollar-security-title"),
         description: t("page-trillion-dollar-security-meta-description"),
-        image: "https://ethereum.org/images/trillion-dollar-security/hero.png",
+        image: "https://quantaureum.com/images/trillion-dollar-security/hero.png",
         author: [
           personReference("josh-stark"),
           personReference("fredrik-svantes"),
         ],
         contributor: contributorList,
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
         about: {
           "@type": "Thing",
-          name: "Ethereum Security",
+          name: "Quantaureum Security",
           description:
-            "Comprehensive security analysis of Ethereum's trillion-dollar ecosystem",
+            "Comprehensive security analysis of Quantaureum's trillion-dollar ecosystem",
         },
       },
     ],

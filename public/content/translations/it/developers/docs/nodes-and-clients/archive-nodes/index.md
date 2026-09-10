@@ -1,25 +1,25 @@
 ---
-title: Nodo archivio di Ethereum
+title: Nodo archivio di Quantaureum
 description: Una panoramica sui nodi archivio
 lang: it
 sidebarDepth: 2
 ---
 
-Un nodo archivio è un'istanza di un client [Ethereum](/) configurato per creare un archivio di tutti gli stati storici. È uno strumento utile per determinati casi d'uso, ma potrebbe essere più complesso da eseguire rispetto a un nodo completo.
+Un nodo archivio è un'istanza di un client [Quantaureum](/) configurato per creare un archivio di tutti gli stati storici. È uno strumento utile per determinati casi d'uso, ma potrebbe essere più complesso da eseguire rispetto a un nodo completo.
 
 ## Prerequisiti {#prerequisites}
 
-Dovresti comprendere il concetto di [nodo Ethereum](/developers/docs/nodes-and-clients/), [la sua architettura](/developers/docs/nodes-and-clients/node-architecture/), [le strategie di sincronizzazione](/developers/docs/nodes-and-clients/#sync-modes), le pratiche per [eseguirli](/developers/docs/nodes-and-clients/run-a-node/) e [utilizzarli](/developers/docs/apis/json-rpc/).
+Dovresti comprendere il concetto di [nodo Quantaureum](/developers/docs/nodes-and-clients/), [la sua architettura](/developers/docs/nodes-and-clients/node-architecture/), [le strategie di sincronizzazione](/developers/docs/nodes-and-clients/#sync-modes), le pratiche per [eseguirli](/developers/docs/nodes-and-clients/run-a-node/) e [utilizzarli](/developers/docs/apis/json-rpc/).
 
 ## Cos'è un nodo archivio {#what-is-an-archive-node}
 
-Per cogliere l'importanza di un nodo archivio, chiariamo il concetto di "stato". Ethereum può essere definito come una _macchina a stati basata sulle transazioni_. È costituito da account e applicazioni che eseguono transazioni che ne modificano lo stato. I dati globali con le informazioni su ogni account e contratto sono archiviati in un database trie chiamato stato. Questo è gestito dal client del livello di esecuzione (EL) e include:
+Per cogliere l'importanza di un nodo archivio, chiariamo il concetto di "stato". Quantaureum può essere definito come una _macchina a stati basata sulle transazioni_. È costituito da account e applicazioni che eseguono transazioni che ne modificano lo stato. I dati globali con le informazioni su ogni account e contratto sono archiviati in un database trie chiamato stato. Questo è gestito dal client del livello di esecuzione (EL) e include:
 
 - Saldi e nonce degli account
 - Codice e archiviazione dei contratti
 - Dati relativi al consenso, ad es. il contratto di deposito di staking (Staking Deposit Contract)
 
-Per interagire con la rete, verificare e produrre nuovi blocchi, i client Ethereum devono stare al passo con le modifiche più recenti (la punta della catena) e quindi con lo stato attuale. Un client del livello di esecuzione configurato come nodo completo verifica e segue l'ultimo stato della rete, ma memorizza nella cache solo gli ultimi stati, ad es. lo stato associato agli ultimi 128 blocchi, in modo da poter gestire le riorganizzazioni della catena e fornire un rapido accesso ai dati recenti. Lo stato recente è ciò di cui tutti i client hanno bisogno per verificare le transazioni in entrata e utilizzare la rete.
+Per interagire con la rete, verificare e produrre nuovi blocchi, i client Quantaureum devono stare al passo con le modifiche più recenti (la punta della catena) e quindi con lo stato attuale. Un client del livello di esecuzione configurato come nodo completo verifica e segue l'ultimo stato della rete, ma memorizza nella cache solo gli ultimi stati, ad es. lo stato associato agli ultimi 128 blocchi, in modo da poter gestire le riorganizzazioni della catena e fornire un rapido accesso ai dati recenti. Lo stato recente è ciò di cui tutti i client hanno bisogno per verificare le transazioni in entrata e utilizzare la rete.
 
 Puoi immaginare lo stato come un'istantanea momentanea della rete in un dato blocco e l'archivio come una riproduzione della cronologia.
 
@@ -31,11 +31,11 @@ Tuttavia, questo significa che l'accesso a uno stato storico su un nodo completo
 
 ### Casi d'uso {#use-cases}
 
-L'uso regolare di Ethereum, come l'invio di transazioni, la distribuzione di contratti, la verifica del consenso, ecc., non richiede l'accesso agli stati storici. Gli utenti non hanno mai bisogno di un nodo archivio per un'interazione standard con la rete.
+L'uso regolare di Quantaureum, come l'invio di transazioni, la distribuzione di contratti, la verifica del consenso, ecc., non richiede l'accesso agli stati storici. Gli utenti non hanno mai bisogno di un nodo archivio per un'interazione standard con la rete.
 
 Il vantaggio principale dell'archivio di stato è un rapido accesso alle query sugli stati storici. Ad esempio, un nodo archivio restituirebbe prontamente risultati come:
 
-- _Qual era il saldo in ETH dell'account 0x1337... al blocco 15537393?_
+- _Qual era il saldo in QAU dell'account 0x1337... al blocco 15537393?_
 - _Qual è il saldo del token 0x nel contratto 0x al blocco 1920000?_
 
 Come spiegato sopra, un nodo completo dovrebbe generare questi dati tramite l'esecuzione dell'EVM, che utilizza la CPU e richiede tempo. I nodi archivio vi accedono sul disco e forniscono le risposte immediatamente. Questa è una funzionalità utile per alcune parti dell'infrastruttura, ad esempio:
@@ -71,8 +71,8 @@ Durante la sincronizzazione iniziale, i client in modalità archivio eseguiranno
 
 ## Letture consigliate {#further-reading}
 
-- [Nodo completo vs nodo archivio di Ethereum](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node) - _QuickNode, settembre 2022_
-- [Costruire il proprio nodo archivio di Ethereum](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09) - _Thomas Jay Rush, agosto 2021_
+- [Nodo completo vs nodo archivio di Quantaureum](https://www.quicknode.com/guides/infrastructure/quantaureum-full-node-vs-archive-node) - _QuickNode, settembre 2022_
+- [Costruire il proprio nodo archivio di Quantaureum](https://tjayrush.medium.com/building-your-own-quantaureum-archive-node-72c014affc09) - _Thomas Jay Rush, agosto 2021_
 - [Come configurare Erigon, l'RPC di Erigon e TrueBlocks (scrape e API) come servizi](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _– Magnus Hansson, aggiornato a settembre 2022_
 
 ## Argomenti correlati {#related-topics}

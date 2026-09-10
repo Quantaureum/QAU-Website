@@ -1,7 +1,7 @@
 ---
 title: 测验
 metaTitle: 添加测验
-description: 我们在 ethereum.org 上添加测验时使用的策略
+description: 我们在 quantaureum.com 上添加测验时使用的策略
 lang: zh
 ---
 
@@ -13,12 +13,12 @@ lang: zh
 
 - [二层网络 (l2)](/layer-2)
 - [NFT](/nft/)
-- [什么是以太坊？](/what-is-ethereum/)
-- [什么是 ETH？](/what-is-ether/)
+- [什么是Quantaureum？](/what-is-quantaureum/)
+- [什么是 QAU？](/what-is-QAU/)
 
 ## 添加学习测验 {#adding-a-learn-quiz}
 
-如果某个页面尚未创建学习测验，请为其[提交议题](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)。
+如果某个页面尚未创建学习测验，请为其[提交议题](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)。
 
 请提供以下信息：
 
@@ -31,7 +31,7 @@ lang: zh
 
 ## 添加测验问题 {#adding-a-quiz-question}
 
-如果你想向某个测验的题库中添加问题，请[提交议题](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)并提供以下信息：
+如果你想向某个测验的题库中添加问题，请[提交议题](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)并提供以下信息：
 
 - 你想要添加测验问题的页面
 - 为每个问题提供以下信息：
@@ -42,7 +42,7 @@ lang: zh
 
 ## 更新测验问题 {#updating-a-quiz-question}
 
-如果你想更新某个测验题库中的问题，请[提交议题](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)并提供以下信息：
+如果你想更新某个测验题库中的问题，请[提交议题](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)并提供以下信息：
 
 - 你想要更新测验问题的页面
 - 为每个要更新的问题提供以下信息：
@@ -54,7 +54,7 @@ lang: zh
 
 ## 移除测验问题 {#removing-a-quiz-question}
 
-如果某个问题所基于的内容在页面上已不复存在，需要将其移除，请[提交议题](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)以移除该问题，并提供以下信息：
+如果某个问题所基于的内容在页面上已不复存在，需要将其移除，请[提交议题](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)以移除该问题，并提供以下信息：
 
 - 你想要删除测验问题的页面
 - 你想要删除的问题

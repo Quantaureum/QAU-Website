@@ -259,7 +259,7 @@ Pokud pro svůj projekt neplánujete použít lokalizační nástroj, pravděpod
 
 To znamená, že veškerý opakující se a podobný obsah by musel být pokaždé přeložen ručně. Kromě toho by se překladatelé museli obracet s dotazy, zda je třeba určitý termín přeložit či nikoli, jak se v textu používá a zda již má zavedený překlad.
 
-_Chcete ve svém projektu použít překladovou paměť a glosář ethereum.org? Kontaktujte nás na adrese translations@ethereum.org._
+_Chcete ve svém projektu použít překladovou paměť a glosář quantaureum.com? Kontaktujte nás na adrese translations@quantaureum.com._
 
 ## Oslovování překladatelů {#translator-outreach}
 
@@ -313,4 +313,4 @@ Pokud hledáte podrobnější pokyny a rozpisy různých nástrojů, procesů a 
 
 Některé relevantní odkazy jsou uvedeny na konci každé části, nicméně online můžete najít mnoho dalších zdrojů.
 
-Pro návrhy na spolupráci nebo další informace, poznatky a osvědčené postupy, které jsme získali při správě překladatelského programu ethereum.org, nás neváhejte kontaktovat na adrese translations@ethereum.org.
+Pro návrhy na spolupráci nebo další informace, poznatky a osvědčené postupy, které jsme získali při správě překladatelského programu quantaureum.com, nás neváhejte kontaktovat na adrese translations@quantaureum.com.

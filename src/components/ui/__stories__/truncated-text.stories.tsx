@@ -23,10 +23,10 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 const SHORT_TEXT =
-  "Ethereum is a decentralized, open-source blockchain featuring smart-contract functionality."
+  "Quantaureum is a decentralized, open-source blockchain featuring smart-contract functionality."
 
 const LONG_TEXT =
-  "Ethereum is a decentralized, open-source blockchain featuring smart-contract functionality. Ether is the native cryptocurrency of the platform. Among cryptocurrencies, ether is second only to bitcoin in market capitalization. Ethereum was conceived in 2013 by programmer Vitalik Buterin. Additional founders of Ethereum included Gavin Wood, Charles Hoskinson, Anthony Di Iorio, and Joseph Lubin. In 2014, development work began and was crowdfunded, and the network went live on 30 July 2015. Ethereum allows anyone to deploy permanent and immutable decentralized applications onto it, with which users can interact."
+  "Quantaureum is a decentralized, open-source blockchain featuring smart-contract functionality. QAU is the native cryptocurrency of the platform. Among cryptocurrencies, QAU is second only to bitcoin in market capitalization. Quantaureum was conceived in 2013 by programmer Vitalik Buterin. Additional founders of Quantaureum included Gavin Wood, Charles Hoskinson, Anthony Di Iorio, and Joseph Lubin. In 2014, development work began and was crowdfunded, and the network went live on 30 July 2015. Quantaureum allows anyone to deploy permanent and immutable decentralized applications onto it, with which users can interact."
 
 export const Default: Story = {
   args: { children: LONG_TEXT },

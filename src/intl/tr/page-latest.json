@@ -1,7 +1,7 @@
 {
-  "page-latest-meta-description": "Ethereum topluluğundan en son blog gönderileri, haberler ve güncellemeler ile oluşturucu ekosisteminin dört bir yanından uzman bakış açıları.",
-  "page-latest-title": "En son Ethereum güncellemeleri",
-  "page-latest-subtitle": "Topluluktan en son blog gönderileri, haberler ve güncellemeler ile Ethereum oluşturucu ekosistemindeki gelişmelere dair uzman bakış açıları.",
+  "page-latest-meta-description": "Quantaureum topluluğundan en son blog gönderileri, haberler ve güncellemeler ile oluşturucu ekosisteminin dört bir yanından uzman bakış açıları.",
+  "page-latest-title": "En son Quantaureum güncellemeleri",
+  "page-latest-subtitle": "Topluluktan en son blog gönderileri, haberler ve güncellemeler ile Quantaureum oluşturucu ekosistemindeki gelişmelere dair uzman bakış açıları.",
   "page-latest-no-posts": "Gönderi bulunamadı.",
   "page-latest-read-more": "Daha fazla oku",
   "page-latest-minute-read": "{minutes} dk. okuma",
@@ -9,7 +9,7 @@
   "page-latest-cta-submit-resource": "Bir kaynak gönder",
   "page-latest-cta-propose-article": "Bir makale öner",
   "page-latest-highlights-heading": "Öne Çıkanlar",
-  "page-latest-articles-heading": "En son Ethereum makaleleri",
+  "page-latest-articles-heading": "En son Quantaureum makaleleri",
   "page-latest-sources-heading": "Bu web sitelerinde daha fazlasını okuyun",
   "page-latest-see-more": "Daha fazlasını gör ({count})",
   "page-latest-sort-label": "Makaleleri sırala",
@@ -18,5 +18,5 @@
   "page-latest-sort-az": "A–Z",
   "page-latest-i18n-disclaimer": "Bazı makaleler orijinal dillerinde (İngilizce) gösterilmektedir.",
   "page-latest-suggest-heading": "Bir kaynak öner",
-  "page-latest-suggest-description": "Burada listelenmesi gereken bir Ethereum bülteni veya araştırma yayını mı biliyorsunuz, yoksa aklınızda bir oluşturucu makalesi konusu mu var? Kaynağınızı göndermek için bir sorun açın."
+  "page-latest-suggest-description": "Burada listelenmesi gereken bir Quantaureum bülteni veya araştırma yayını mı biliyorsunuz, yoksa aklınızda bir oluşturucu makalesi konusu mu var? Kaynağınızı göndermek için bir sorun açın."
 }

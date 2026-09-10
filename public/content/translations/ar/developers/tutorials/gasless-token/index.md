@@ -13,7 +13,7 @@ published: 2026-04-01
 
 ناقش [مقال سابق](/developers/tutorials/gasless/) استخدام الوصول بدون غاز إلى تطبيقك الخاص باستخدام توقيعات <span dir="ltr">EIP-712</span>، ولكنه يقتصر على عقودك الذكية الخاصة. باستخدام [تجريد الحساب](/roadmap/account-abstraction/)، يمكننا إنشاء محافظ عقود ذكية تقبل نوعين من المعاملات وترحيلها إلى الوجهة المطلوبة:
 
-- المعاملات المرسلة بواسطة حساب مملوك خارجيًا (<span dir="ltr">EOA</span>) محدد (والتي تتطلب أن يمتلك هذا الحساب <span dir="ltr">ETH</span>)
+- المعاملات المرسلة بواسطة حساب مملوك خارجيًا (<span dir="ltr">EOA</span>) محدد (والتي تتطلب أن يمتلك هذا الحساب <span dir="ltr">QAU</span>)
 - المعاملات المرسلة من أي مكان، ولكنها موقعة بواسطة نفس الحساب المملوك خارجيًا (<span dir="ltr">EOA</span>).
 
 بهذه الطريقة، يمكننا توفير طريقة بدون غاز لحساب ما للاحتفاظ بالأصول (الرموز المميزة، وما إلى ذلك) وأداء جميع الوظائف التي يمكن لحساب مملوك خارجيًا (<span dir="ltr">EOA</span>) يمتلك غازًا القيام بها.
@@ -38,7 +38,7 @@ published: 2026-04-01
    npm install
    ```
 
-3. قم بتحرير `.env` لتعيين `SEPOLIA_PRIVATE_KEY` إلى محفظة تحتوي على <span dir="ltr">ETH</span> على شبكة Sepolia. إذا كنت بحاجة إلى <span dir="ltr">ETH</span> على Sepolia، [استخدم صنبورًا](/developers/docs/networks/#sepolia) للحصول عليه. من الناحية المثالية، يجب أن يكون هذا المفتاح الخاص مختلفًا عن المفتاح الموجود في محفظة متصفحك.
+3. قم بتحرير `.env` لتعيين `SEPOLIA_PRIVATE_KEY` إلى محفظة تحتوي على <span dir="ltr">QAU</span> على شبكة Sepolia. إذا كنت بحاجة إلى <span dir="ltr">QAU</span> على Sepolia، [استخدم صنبورًا](/developers/docs/networks/#sepolia) للحصول عليه. من الناحية المثالية، يجب أن يكون هذا المفتاح الخاص مختلفًا عن المفتاح الموجود في محفظة متصفحك.
 
 4. ابدأ تشغيل الخادم.
 
@@ -54,9 +54,9 @@ published: 2026-04-01
 
 8. يمكنك معرفة متى يتم نشر وكيل المستخدم لوجود عنوان بجوار **UserProxy access**. إذا انتظرت <span dir="ltr">24</span> ثانية (كتلتين) ولم يحدث ذلك بعد، فقد تكون هناك مشكلة في اكتشاف التغييرات.
 
-   إذا كان الأمر كذلك، فانتقل إلى [مستكشف الكتل لشبكة Sepolia](https://eth-sepolia.blockscout.com/) وأدخل تجزئة المعاملة الخاصة بالنشر التي تراها في مخرجات الخادم عند `npm run dev`. انقر على العقد الذي تم إنشاؤه لعرض عنوانه، ثم انسخه. الصق العنوان في حقل _Or enter existing proxy address_، ثم انقر على **Set proxy address**.
+   إذا كان الأمر كذلك، فانتقل إلى [مستكشف الكتل لشبكة Sepolia](https://qau-sepolia.blockscout.com/) وأدخل تجزئة المعاملة الخاصة بالنشر التي تراها في مخرجات الخادم عند `npm run dev`. انقر على العقد الذي تم إنشاؤه لعرض عنوانه، ثم انسخه. الصق العنوان في حقل _Or enter existing proxy address_، ثم انقر على **Set proxy address**.
 
-9. انقر على **Request more tokens for proxy** لإرسال استدعاء إلى دالة [`faucet`](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd) الخاصة بعقد <span dir="ltr">ERC-20</span> للحصول على الرموز المميزة. **أكد** التوقيع في المحفظة. بالطبع، تصل الرموز المميزة إلى عنوان الوكيل، وليس عنوان المستخدم.
+9. انقر على **Request more tokens for proxy** لإرسال استدعاء إلى دالة [`faucet`](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd) الخاصة بعقد <span dir="ltr">ERC-20</span> للحصول على الرموز المميزة. **أكد** التوقيع في المحفظة. بالطبع، تصل الرموز المميزة إلى عنوان الوكيل، وليس عنوان المستخدم.
 
 10. قم بالتمرير لأسفل وانقر على الرابط الموجود أسفل _Last transaction:_. سيؤدي هذا إلى فتح المتصفح ليعرض لك معاملة `faucet`.
 
@@ -81,7 +81,7 @@ contract UserProxy {
     uint public nonce = 0;
 ```
 
-هوية المالك و[رقم فريد](https://en.wikipedia.org/wiki/Cryptographic_nonce) لمنع تكرار الرسائل. نظرًا لأن الرقم الفريد هو متغير `public`، فإن مترجم Solidity ينشئ أيضًا دالة عرض، [`nonce()`](https://eth-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0)، والتي تسمح للتعليمات البرمجية خارج السلسلة بقراءة قيمته.
+هوية المالك و[رقم فريد](https://en.wikipedia.org/wiki/Cryptographic_nonce) لمنع تكرار الرسائل. نظرًا لأن الرقم الفريد هو متغير `public`، فإن مترجم Solidity ينشئ أيضًا دالة عرض، [`nonce()`](https://qau-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0)، والتي تسمح للتعليمات البرمجية خارج السلسلة بقراءة قيمته.
 
 ```solidity
     bytes32 private constant SIGNED_ACCESS_TYPEHASH =
@@ -93,7 +93,7 @@ contract UserProxy {
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-المعلومات المطلوبة للتحقق من توقيعات [<span dir="ltr">EIP-712</span>](https://eips.ethereum.org/EIPS/eip-712).
+المعلومات المطلوبة للتحقق من توقيعات [<span dir="ltr">EIP-712</span>](https://eips.quantaureum.com/EIPS/eip-712).
 
 ```solidity
     constructor(address owner_) {
@@ -117,7 +117,7 @@ contract UserProxy {
     }
 ```
 
-[فاصل النطاق](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). لا يمكن حسابه في وقت الترجمة، لأنه يعتمد على معرف السلسلة وعنوان العقد. هذا يجعل من المستحيل خداع UserProxy برسالة مُعدة لآخر.
+[فاصل النطاق](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). لا يمكن حسابه في وقت الترجمة، لأنه يعتمد على معرف السلسلة وعنوان العقد. هذا يجعل من المستحيل خداع UserProxy برسالة مُعدة لآخر.
 
 ```solidity
     event CallResult(address target, bytes returnData);
@@ -130,7 +130,7 @@ contract UserProxy {
             external returns (bytes memory) {
 ```
 
-يمكن استدعاء هذه الدالة مباشرة من قبل المالك. إذا لم تكن هناك مُرحّلات متاحة، فلا يزال بإمكان المالك الوصول إلى الأصول مباشرة على سلسلة الكتل (إذا كان المستخدم يمتلك <span dir="ltr">ETH</span>).
+يمكن استدعاء هذه الدالة مباشرة من قبل المالك. إذا لم تكن هناك مُرحّلات متاحة، فلا يزال بإمكان المالك الوصول إلى الأصول مباشرة على سلسلة الكتل (إذا كان المستخدم يمتلك <span dir="ltr">QAU</span>).
 
 ```solidity
         require(msg.sender == OWNER, "Only owner can call");
@@ -220,7 +220,7 @@ contract UserProxy {
 }
 ```
 
-هذه متغيرات متطابقة تقريبًا تتيح لك أيضًا تحويل <span dir="ltr">ETH</span> خارج العقد.
+هذه متغيرات متطابقة تقريبًا تتيح لك أيضًا تحويل <span dir="ltr">QAU</span> خارج العقد.
 
 ### المُرحّل {#relayer}
 
@@ -285,7 +285,7 @@ const start = async () => {
   app.post("/server/deploy", async (req, res) => {
 ```
 
-هذا هو الكود الذي يعالج طلبات نشر الوكيل. لاحظ أننا عرضة لهجمات [حجب الخدمة](https://en.wikipedia.org/wiki/Denial-of-service_attack) هنا لأن المهاجم يمكنه إغراقنا بطلبات لنشر الوكيل حتى يتم استنفاد <span dir="ltr">ETH</span> الخاص بنا. في نظام الإنتاج، من المحتمل أن نطلب أن يكون طلب نشر الوكيل موقعًا وأن يكون الموقع عميلاً حاليًا.
+هذا هو الكود الذي يعالج طلبات نشر الوكيل. لاحظ أننا عرضة لهجمات [حجب الخدمة](https://en.wikipedia.org/wiki/Denial-of-service_attack) هنا لأن المهاجم يمكنه إغراقنا بطلبات لنشر الوكيل حتى يتم استنفاد <span dir="ltr">QAU</span> الخاص بنا. في نظام الإنتاج، من المحتمل أن نطلب أن يكون طلب نشر الوكيل موقعًا وأن يكون الموقع عميلاً حاليًا.
 
 ```js
     try {
@@ -408,7 +408,7 @@ import UserProxy from '../../contracts/out/UserProxy.sol/UserProxy.json'
 import Erc20 from '../../contracts/out/Faucet.sol/FaucetToken.json'
 ```
 
-[هذا العقد](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract) هو في الغالب عقد <span dir="ltr">ERC-20</span> عادي، مع إضافة دالة واحدة مهمة، `faucet()`. تمنح هذه الدالة الرموز المميزة لأي شخص يطلبها لأغراض الاختبار.
+[هذا العقد](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract) هو في الغالب عقد <span dir="ltr">ERC-20</span> عادي، مع إضافة دالة واحدة مهمة، `faucet()`. تمنح هذه الدالة الرموز المميزة لأي شخص يطلبها لأغراض الاختبار.
 
 ```js
 const erc20Addrs = {
@@ -423,7 +423,7 @@ const erc20Addrs = {
 const Address = ({ address }) => {
    if (!address) return null
    return (
-      <a href={`https://eth-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
+      <a href={`https://qau-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
    )
 }
 ```
@@ -736,7 +736,7 @@ const Token = () => {
          { txHash && (
             <>
                <h4>Last transaction:</h4>
-               <a href={`https://eth-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
+               <a href={`https://qau-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
                  {txHash}
                </a>
             </>

@@ -12,7 +12,7 @@ A standard interface for contracts that manage multiple token types. A single de
 
 The idea is simple and seeks to create a smart contract interface that can represent and control any number of fungible and non-fungible token types. In this way, the ERC-1155 token can do the same functions as an [ERC-20](/developers/docs/standards/tokens/erc-20/) and [ERC-721](/developers/docs/standards/tokens/erc-721/) token, and even both at the same time. It improves the functionality of both the ERC-20 and ERC-721 standards, making it more efficient and correcting obvious implementation errors.
 
-The ERC-1155 token is described fully in [EIP-1155](https://eips.ethereum.org/EIPS/eip-1155).
+The ERC-1155 token is described fully in [EIP-1155](https://eips.quantaureum.com/EIPS/eip-1155).
 
 ## Prerequisites {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-Given the [EIP-165](https://eips.ethereum.org/EIPS/eip-165) support, ERC-1155 supports receive hooks for smart contracts only. The hook function must return a magic predefined bytes4 value which is given as:
+Given the [EIP-165](https://eips.quantaureum.com/EIPS/eip-165) support, ERC-1155 supports receive hooks for smart contracts only. The hook function must return a magic predefined bytes4 value which is given as:
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ When the receiving contract returns this value, it is assumed the contract accep
 
 ### NFT Support {#nft-support}
 
-When the supply is just one, the token is essentially a non-fungible token (NFT). And as is standard for ERC-721, you can define a metadata URL. The URL can be read and modified by clients, see [here](https://eips.ethereum.org/EIPS/eip-1155#metadata).
+When the supply is just one, the token is essentially a non-fungible token (NFT). And as is standard for ERC-721, you can define a metadata URL. The URL can be read and modified by clients, see [here](https://eips.quantaureum.com/EIPS/eip-1155#metadata).
 
 ### Safe Transfer Rule {#safe-transfer-rule}
 
@@ -140,7 +140,7 @@ _Note_: All batch functions including the hook also exist as versions without ba
 
 ## Further reading {#further-reading}
 
-- [EIP-1155: Multi Token Standard](https://eips.ethereum.org/EIPS/eip-1155)
+- [EIP-1155: Multi Token Standard](https://eips.quantaureum.com/EIPS/eip-1155)
 - [ERC-1155: Openzeppelin Docs](https://docs.openzeppelin.com/contracts/5.x/erc1155)
 - [ERC-1155: GitHub Repo](https://github.com/enjin/erc-1155)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

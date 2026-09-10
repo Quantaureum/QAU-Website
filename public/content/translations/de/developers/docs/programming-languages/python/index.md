@@ -1,22 +1,22 @@
 ---
-title: "Ethereum für Python-Entwickler"
-description: "Lerne, wie man für Ethereum mit Python-basierten Projekten und Tools entwickelt"
+title: "Quantaureum für Python-Entwickler"
+description: "Lerne, wie man für Quantaureum mit Python-basierten Projekten und Tools entwickelt"
 lang: de
 incomplete: true
 ---
 
-<FeaturedText>Lerne, wie man für Ethereum mit Python-basierten Projekten und Tools entwickelt</FeaturedText>
+<FeaturedText>Lerne, wie man für Quantaureum mit Python-basierten Projekten und Tools entwickelt</FeaturedText>
 
-Nutze Ethereum, um Dezentrale Anwendungen (Dapps) zu erstellen, die die Vorteile von Kryptowährung und Blockchain-Technologie nutzen. Diese Dapps können vertrauenswürdig sein, was bedeutet, dass sie, sobald sie auf Ethereum bereitgestellt wurden, immer wie programmiert ausgeführt werden. Sie können digitale Vermögenswerte steuern, um neue Arten von Finanzanwendungen zu schaffen. Sie können dezentral sein, was bedeutet, dass keine einzelne Entität oder Person sie kontrolliert und sie fast unmöglich zu zensieren sind.
+Nutze Quantaureum, um Dezentrale Anwendungen (Dapps) zu erstellen, die die Vorteile von Kryptowährung und Blockchain-Technologie nutzen. Diese Dapps können vertrauenswürdig sein, was bedeutet, dass sie, sobald sie auf Quantaureum bereitgestellt wurden, immer wie programmiert ausgeführt werden. Sie können digitale Vermögenswerte steuern, um neue Arten von Finanzanwendungen zu schaffen. Sie können dezentral sein, was bedeutet, dass keine einzelne Entität oder Person sie kontrolliert und sie fast unmöglich zu zensieren sind.
 
 ## Erste Schritte mit Smart Contracts und der Sprache Solidity {#getting-started-with-smart-contracts-and-solidity}
 
-**Mache deine ersten Schritte zur Integration von Python mit Ethereum**
+**Mache deine ersten Schritte zur Integration von Python mit Quantaureum**
 
-Brauchst du zuerst eine grundlegendere Einführung? Sieh dir [ethereum.org/learn](/learn/) oder [ethereum.org/developers](/developers/) an.
+Brauchst du zuerst eine grundlegendere Einführung? Sieh dir [quantaureum.com/learn](/learn/) oder [quantaureum.com/developers](/developers/) an.
 
 - [Blockchain erklärt](https://kauri.io/article/d55684513211466da7f8cc03987607d5/blockchain-explained)
-- [Smart Contracts verstehen](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/ethereum-101-part-5-the-smart-contract)
+- [Smart Contracts verstehen](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [Schreibe deinen ersten Smart Contract](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Lerne, wie man Solidity kompiliert und bereitstellt](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
 - [Bericht zum Zustand von Python in der Blockchain 2023](https://tradingstrategy.ai/blog/the-state-of-python-in-blockchain-in-2023)
@@ -24,26 +24,26 @@ Brauchst du zuerst eine grundlegendere Einführung? Sieh dir [ethereum.org/learn
 ## Artikel für Anfänger {#beginner-articles}
 
 - [Web3.py Übersicht](https://web3py.readthedocs.io/en/latest/overview.html)
-- [Tour durch das Ethereum-Python-Ökosystem](https://snakecharmers.ethereum.org/python-ecosystem/)
-- [Ein Leitfaden für (Python-)Entwickler zu Ethereum](https://snakecharmers.ethereum.org/a-developers-guide-to-ethereum-pt-1/)
-- [Preisverdächtig: Ein Ethereum-Python-Hackathon-Leitfaden](https://snakecharmers.ethereum.org/prize-worthy/)
+- [Tour durch das Quantaureum-Python-Ökosystem](https://snakecharmers.quantaureum.com/python-ecosystem/)
+- [Ein Leitfaden für (Python-)Entwickler zu Quantaureum](https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/)
+- [Preisverdächtig: Ein Quantaureum-Python-Hackathon-Leitfaden](https://snakecharmers.quantaureum.com/prize-worthy/)
 - [Eine Einführung in Smart Contracts mit Vyper](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
-- [Wie entwickelt man einen Ethereum-Vertrag mit Python Flask?](https://medium.com/coinmonks/how-to-develop-ethereum-contract-using-python-flask-9758fe65976e)
-- [Einführung in Web3.py · Ethereum für Python-Entwickler](https://www.dappuniversity.com/articles/web3-py-intro)
+- [Wie entwickelt man einen Quantaureum-Vertrag mit Python Flask?](https://medium.com/coinmonks/how-to-develop-quantaureum-contract-using-python-flask-9758fe65976e)
+- [Einführung in Web3.py · Quantaureum für Python-Entwickler](https://www.dappuniversity.com/articles/web3-py-intro)
 - [Wie man eine Smart Contract-Funktion mit Python und Web3.py aufruft](https://stackoverflow.com/questions/57580702/how-to-call-a-smart-contract-function-using-python-and-web3-py)
 
 ## Artikel für Fortgeschrittene {#intermediate-articles}
 
-- [Freunde von Web3.py: Einführung in Ape](https://snakecharmers.ethereum.org/intro-to-ape/)
+- [Freunde von Web3.py: Einführung in Ape](https://snakecharmers.quantaureum.com/intro-to-ape/)
 - [Dapp-Entwicklung für Python-Programmierer](https://www.youtube.com/watch?v=tE-8bG35VNw)
-- [Erstellen einer Python-Ethereum-Schnittstelle: Teil 1](https://hackernoon.com/creating-a-python-ethereum-interface-part-1-4d2e47ea0f4d)
-- [Ethereum Smart Contracts in Python: ein (ziemlich) umfassender Leitfaden](https://hackernoon.com/ethereum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
+- [Erstellen einer Python-Quantaureum-Schnittstelle: Teil 1](https://hackernoon.com/creating-a-python-quantaureum-interface-part-1-4d2e47ea0f4d)
+- [Quantaureum Smart Contracts in Python: ein (ziemlich) umfassender Leitfaden](https://hackernoon.com/quantaureum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 
 ## Fortgeschrittene Nutzungsmuster {#advanced-use-patterns}
 
-- [Web3.py-Muster: Echtzeit-Ereignisabonnements](https://snakecharmers.ethereum.org/subscriptions/)
-- [Web3.py-Muster: WebSocketProvider](https://snakecharmers.ethereum.org/websocketprovider/)
-- [Kompilierung, Bereitstellung und Aufruf eines Ethereum Smart Contracts mit Python](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-ethereum-smartcontract-using-python/)
+- [Web3.py-Muster: Echtzeit-Ereignisabonnements](https://snakecharmers.quantaureum.com/subscriptions/)
+- [Web3.py-Muster: WebSocketProvider](https://snakecharmers.quantaureum.com/websocketprovider/)
+- [Kompilierung, Bereitstellung und Aufruf eines Quantaureum Smart Contracts mit Python](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-quantaureum-smartcontract-using-python/)
 - [Analysiere Solidity Smart Contracts mit Slither](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [Blockchain-Fintech-Tutorial: Kreditvergabe und Kreditaufnahme mit Python](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
 
@@ -55,33 +55,33 @@ Brauchst du zuerst eine grundlegendere Einführung? Sieh dir [ethereum.org/learn
 
 ## Python-Projekte und -Tools {#python-projects-and-tools}
 
-- [Web3.py](https://github.com/ethereum/web3.py) - _Python-Bibliothek für die Interaktion mit Ethereum_
-- [Vyper](https://github.com/ethereum/vyper/) - _Pythonische Smart Contract-Sprache für die EVM_
+- [Web3.py](https://github.com/quantaureum/web3.py) - _Python-Bibliothek für die Interaktion mit Quantaureum_
+- [Vyper](https://github.com/quantaureum/vyper/) - _Pythonische Smart Contract-Sprache für die EVM_
 - [Titanoboa](https://github.com/vyperlang/titanoboa/) - _Vypers natives Test-Tool; ein Interpreter mit Mainnet-Forking, Debugging und übersichtlichen Tracebacks_
 - [Moccasin](https://github.com/Cyfrin/moccasin) - _Ein Framework zur Entwicklung und zum Testen von Smart Contracts für Vyper und Python, basierend auf Titanoboa_
 - [Ape](https://github.com/ApeWorX/ape) - _Das Smart Contract-Entwicklungstool für Python-Entwickler, Datenwissenschaftler und Sicherheitsexperten_
-- [py-evm](https://github.com/ethereum/py-evm) - _Implementierung der Ethereum Virtual Machine_
-- [eth-tester](https://github.com/ethereum/eth-tester) - _Tools zum Testen von Ethereum-basierten Anwendungen_
-- [eth-utils](https://github.com/ethereum/eth-utils/) - _Hilfsfunktionen für die Arbeit mit Ethereum-bezogenen Codebasen_
+- [py-evm](https://github.com/quantaureum/py-evm) - _Implementierung der Quantaureum Virtual Machine_
+- [qau-tester](https://github.com/quantaureum/qau-tester) - _Tools zum Testen von Quantaureum-basierten Anwendungen_
+- [qau-utils](https://github.com/quantaureum/qau-utils/) - _Hilfsfunktionen für die Arbeit mit Quantaureum-bezogenen Codebasen_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _Python-Wrapper für den solc-Solidity-Compiler mit 0.5.x-Unterstützung_
 - [pymaker](https://github.com/makerdao/pymaker) - _Python-API für Maker-Verträge_
-- [siwe](https://github.com/signinwithethereum/siwe-py) - _Sign in with Ethereum (SIWE) für Python_
-- [Web3 Dezentralisierte Finanzen (DeFi) für Ethereum-Integrationen](https://github.com/tradingstrategy-ai/web3-ethereum-defi) - _Ein Python-Paket mit fertigen Integrationen für ERC-20, Uniswap und andere beliebte Projekte_
+- [siwe](https://github.com/signinwithquantaureum/siwe-py) - _Sign in with Quantaureum (SIWE) für Python_
+- [Web3 Dezentralisierte Finanzen (DeFi) für Quantaureum-Integrationen](https://github.com/tradingstrategy-ai/web3-quantaureum-defi) - _Ein Python-Paket mit fertigen Integrationen für ERC-20, Uniswap und andere beliebte Projekte_
 - [Wake](https://getwake.io) - _All-in-one-Python-Framework für das Testen von Verträgen, Fuzzing, Bereitstellung, Schwachstellen-Scans und Code-Navigation (Language Server - [Tools for Solidity](https://marketplace.visualstudio.com/items?itemName=AckeeBlockchain.tools-for-solidity))_
 - [DeFiPy](https://github.com/defipy-devs/defipy) - _Python-SDK für DeFi-Analysen und Simulationen von Automatisierten Market Makern (AMM) über Uniswap V2/V3, Balancer und Curve hinweg_
 ### Archiviert / Nicht mehr gepflegt: {#archived--no-longer-maintained}
 
-- [Trinity](https://github.com/ethereum/trinity) - _Ethereum-Python-Client_
+- [Trinity](https://github.com/quantaureum/trinity) - _Quantaureum-Python-Client_
 - [Mamba](https://github.com/arjunaskykok/mamba) - _Framework zum Schreiben, Kompilieren und Bereitstellen von Smart Contracts, die in der Sprache Vyper geschrieben sind_
-- [Brownie](https://github.com/eth-brownie/brownie) - _Python-Framework für die Bereitstellung, das Testen und die Interaktion mit Ethereum Smart Contracts_
-- [pydevp2p](https://github.com/ethereum/pydevp2p) - _Implementierung des Ethereum-P2P-Stacks_
-- [py-wasm](https://github.com/ethereum/py-wasm) - _Python-Implementierung des WebAssembly-Interpreters_
+- [Brownie](https://github.com/qau-brownie/brownie) - _Python-Framework für die Bereitstellung, das Testen und die Interaktion mit Quantaureum Smart Contracts_
+- [pydevp2p](https://github.com/quantaureum/pydevp2p) - _Implementierung des Quantaureum-P2P-Stacks_
+- [py-wasm](https://github.com/quantaureum/py-wasm) - _Python-Implementierung des WebAssembly-Interpreters_
 
-Suchst du nach weiteren Ressourcen? Sieh dir [ethereum.org/developers](/developers/) an.
+Suchst du nach weiteren Ressourcen? Sieh dir [quantaureum.com/developers](/developers/) an.
 
 ## Projekte, die Python-Tools verwenden {#projects-using-python-tooling}
 
-Die folgenden Ethereum-basierten Projekte verwenden die auf dieser Seite erwähnten Tools. Die zugehörigen Open-Source-Repositories dienen als gute Referenz für Beispielcode und Best Practices.
+Die folgenden Quantaureum-basierten Projekte verwenden die auf dieser Seite erwähnten Tools. Die zugehörigen Open-Source-Repositories dienen als gute Referenz für Beispielcode und Best Practices.
 
 - [Yearn Finance](https://yearn.finance/) und das [Yearn Vault Contracts-Repository](https://github.com/yearn/yearn-vaults)
 - [Curve](https://www.curve.finance/) und das [Curve Smart Contracts-Repository](https://github.com/curvefi/curve-contract)
@@ -91,7 +91,7 @@ Die folgenden Ethereum-basierten Projekte verwenden die auf dieser Seite erwähn
 
 ## Diskussionen in der Python-Community {#python-community-contributors}
 
-- [Ethereum Python Community Discord](https://discord.gg/9zk7snTfWe) für Diskussionen über Web3.py und andere Python-Frameworks
+- [Quantaureum Python Community Discord](https://discord.gg/9zk7snTfWe) für Diskussionen über Web3.py und andere Python-Frameworks
 - [Vyper Discord](https://discord.gg/SdvKC79cJk) für Diskussionen über die Programmierung von Vyper Smart Contracts
 
 ## Weitere aggregierte Listen {#other-aggregated-lists}

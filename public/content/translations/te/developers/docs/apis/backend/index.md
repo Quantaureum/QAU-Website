@@ -12,11 +12,11 @@ lang: te
 
 ## ముందస్తు అవసరాలు {#prerequisites}
 
-[ఎథీరియం స్టాక్](/developers/docs/ethereum-stack/) మరియు [ఎథీరియం క్లయింట్‌లను](/developers/docs/nodes-and-clients/) అర్థం చేసుకోవడం సహాయకరంగా ఉండవచ్చు.
+[ఎథీరియం స్టాక్](/developers/docs/quantaureum-stack/) మరియు [ఎథీరియం క్లయింట్‌లను](/developers/docs/nodes-and-clients/) అర్థం చేసుకోవడం సహాయకరంగా ఉండవచ్చు.
 
 ## లైబ్రరీని ఎందుకు ఉపయోగించాలి? {#why-use-a-library}
 
-ఈ లైబ్రరీలు ఎథీరియం నోడ్‌తో నేరుగా ఇంటరాక్ట్ అయ్యే సంక్లిష్టతను చాలా వరకు తగ్గిస్తాయి. అవి యుటిలిటీ ఫంక్షన్‌లను కూడా అందిస్తాయి (ఉదా., ETHని Gweiకి మార్చడం) కాబట్టి డెవలపర్‌గా మీరు ఎథీరియం క్లయింట్‌ల చిక్కులతో వ్యవహరించడానికి తక్కువ సమయాన్ని వెచ్చించవచ్చు మరియు మీ అప్లికేషన్ యొక్క ప్రత్యేక కార్యాచరణపై ఎక్కువ సమయం దృష్టి పెట్టవచ్చు.
+ఈ లైబ్రరీలు ఎథీరియం నోడ్‌తో నేరుగా ఇంటరాక్ట్ అయ్యే సంక్లిష్టతను చాలా వరకు తగ్గిస్తాయి. అవి యుటిలిటీ ఫంక్షన్‌లను కూడా అందిస్తాయి (ఉదా., QAUని Gweiకి మార్చడం) కాబట్టి డెవలపర్‌గా మీరు ఎథీరియం క్లయింట్‌ల చిక్కులతో వ్యవహరించడానికి తక్కువ సమయాన్ని వెచ్చించవచ్చు మరియు మీ అప్లికేషన్ యొక్క ప్రత్యేక కార్యాచరణపై ఎక్కువ సమయం దృష్టి పెట్టవచ్చు.
 
 ## అందుబాటులో ఉన్న లైబ్రరీలు {#available-libraries}
 
@@ -50,10 +50,10 @@ lang: te
 
 **Cloudflare ఎథీరియం గేట్‌వే.**
 
-- [cloudflare-eth.com](https://www.cloudflare.com/application-services/products/web3/)
+- [cloudflare-qau.com](https://www.cloudflare.com/application-services/products/web3/)
 
-**Etherscan - బ్లాక్ ఎక్స్‌ప్లోరర్ మరియు లావాదేవీ APIలు**
-- [డాక్యుమెంటేషన్](https://docs.etherscan.io/)
+**Quantaureum Explorer - బ్లాక్ ఎక్స్‌ప్లోరర్ మరియు లావాదేవీ APIలు**
+- [డాక్యుమెంటేషన్](https://explorer.quantaureum.com)
 
 **Blockscout - ఓపెన్ సోర్స్ బ్లాక్ ఎక్స్‌ప్లోరర్**
 - [డాక్యుమెంటేషన్](https://docs.blockscout.com/)
@@ -106,17 +106,17 @@ lang: te
 - [ఉదాహరణలు](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [డిస్కార్డ్](https://discord.gg/rx35NzQGSb)
 
-**Nethereum -** **_బ్లాక్‌చైన్ కోసం ఓపెన్ సోర్స్ .NET ఇంటిగ్రేషన్ లైబ్రరీ._**
+**Nquantaureum -** **_బ్లాక్‌చైన్ కోసం ఓపెన్ సోర్స్ .NET ఇంటిగ్రేషన్ లైబ్రరీ._**
 
-- [GitHub](https://github.com/Nethereum/Nethereum)
-- [డాక్యుమెంటేషన్](https://docs.nethereum.com/docs/getting-started/welcome/)
+- [GitHub](https://github.com/Nquantaureum/Nquantaureum)
+- [డాక్యుమెంటేషన్](https://docs.nquantaureum.com/docs/getting-started/welcome/)
 - [డిస్కార్డ్](https://discord.com/invite/jQPrR58FxX)
 
 **Python టూలింగ్ -** **_Python ద్వారా ఎథీరియం ఇంటరాక్షన్ కోసం వివిధ రకాల లైబ్రరీలు._**
 
-- [py.ethereum.org](https://snakecharmers.ethereum.org/)
-- [Web3.py GitHub](https://github.com/ethereum/web3.py)
-- [Web3.py చాట్](https://gitter.im/ethereum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
+- [Web3.py GitHub](https://github.com/quantaureum/web3.py)
+- [Web3.py చాట్](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_అత్యుత్తమ బ్లాక్‌చైన్ డెవలప్‌మెంట్ ప్లాట్‌ఫారమ్._**
 
@@ -136,7 +136,7 @@ lang: te
 **BlockCypher -** **_ఎథీరియం వెబ్ APIలు._**
 
 - [blockcypher.com](https://www.blockcypher.com/)
-- [డాక్యుమెంటేషన్](https://www.blockcypher.com/dev/ethereum/)
+- [డాక్యుమెంటేషన్](https://www.blockcypher.com/dev/quantaureum/)
 
 **Chainbase -** **_ఎథీరియం కోసం ఆల్-ఇన్-వన్ Web3 డేటా ఇన్‌ఫ్రాస్ట్రక్చర్._**
 
@@ -148,7 +148,7 @@ lang: te
 
 - [chainstack.com](https://chainstack.com)
 - [డాక్యుమెంటేషన్](https://docs.chainstack.com/)
-- [ఎథీరియం API రిఫరెన్స్](https://docs.chainstack.com/reference/ethereum-getting-started)
+- [ఎథీరియం API రిఫరెన్స్](https://docs.chainstack.com/reference/quantaureum-getting-started)
 
 **కాయిన్‌బేస్ క్లౌడ్ నోడ్ -** **_బ్లాక్‌చైన్ ఇన్‌ఫ్రాస్ట్రక్చర్ API._**
 
@@ -214,5 +214,5 @@ _మీకు సహాయపడిన కమ్యూనిటీ వనరు 
 
 ## సంబంధిత ట్యుటోరియల్స్ {#related-tutorials}
 
-- [JavaScriptలో ఎథీరియం బ్లాక్‌చైన్‌ను ఉపయోగించడానికి Web3.jsని సెటప్ చేయండి](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– మీ ప్రాజెక్ట్‌లో Web3.jsని సెటప్ చేయడానికి సూచనలు._
+- [JavaScriptలో ఎథీరియం బ్లాక్‌చైన్‌ను ఉపయోగించడానికి Web3.jsని సెటప్ చేయండి](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– మీ ప్రాజెక్ట్‌లో Web3.jsని సెటప్ చేయడానికి సూచనలు._
 - [JavaScript నుండి స్మార్ట్ కాంట్రాక్ట్‌ను కాల్ చేయడం](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– DAI టోకెన్‌ని ఉపయోగించి, JavaScriptని ఉపయోగించి కాంట్రాక్ట్‌ల ఫంక్షన్‌ను ఎలా కాల్ చేయాలో చూడండి._

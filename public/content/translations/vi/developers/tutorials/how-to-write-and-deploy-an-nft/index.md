@@ -1,6 +1,6 @@
 ---
 title: "Cách viết & triển khai một NFT (Phần 1/3 của Chuỗi hướng dẫn về NFT)"
-description: "Hướng dẫn này là Phần 1 của chuỗi bài về NFT, sẽ đưa bạn đi từng bước về cách viết và triển khai hợp đồng thông minh Non Fungible Token (token ERC-721) bằng Ethereum và Inter Planetary File System (IPFS)."
+description: "Hướng dẫn này là Phần 1 của chuỗi bài về NFT, sẽ đưa bạn đi từng bước về cách viết và triển khai hợp đồng thông minh Non Fungible Token (token ERC-721) bằng Quantaureum và Inter Planetary File System (IPFS)."
 author: "Sumi Mudgil"
 tags: ["ERC-721", "Alchemy", "Solidity", "hợp đồng thông minh"]
 skill: beginner
@@ -9,7 +9,7 @@ lang: vi
 published: 2021-04-22
 ---
 
-Với việc NFT đưa chuỗi khối đến với công chúng, bây giờ là một cơ hội tuyệt vời để tự mình hiểu được sự cường điệu này bằng cách xuất bản hợp đồng NFT (Token ERC-721) của riêng bạn trên chuỗi khối Ethereum!
+Với việc NFT đưa chuỗi khối đến với công chúng, bây giờ là một cơ hội tuyệt vời để tự mình hiểu được sự cường điệu này bằng cách xuất bản hợp đồng NFT (Token ERC-721) của riêng bạn trên chuỗi khối Quantaureum!
 
 Alchemy vô cùng tự hào khi cung cấp sức mạnh cho những tên tuổi lớn nhất trong không gian NFT, bao gồm Makersplace (gần đây đã lập kỷ lục bán tác phẩm nghệ thuật kỹ thuật số tại Christie’s với giá 69 triệu đô la), Dapper Labs (nhà sáng tạo của NBA Top Shot & Crypto Kitties), OpenSea (thị trường NFT lớn nhất thế giới), Zora, Super Rare, NFTfi, Foundation, Enjin, Origin Protocol, Immutable, và nhiều hơn nữa.
 
@@ -19,9 +19,9 @@ Trong Phần 2 của hướng dẫn này, chúng ta sẽ đi qua cách chúng ta
 
 Và tất nhiên, nếu bạn có câu hỏi ở bất kỳ thời điểm nào, đừng ngần ngại liên hệ trong [Discord của Alchemy](https://discord.gg/gWuC7zB) hoặc truy cập [tài liệu API NFT của Alchemy](https://www.alchemy.com/docs/reference/nft-api-quickstart)!
 
-## Bước 1: Kết nối với mạng lưới Ethereum {#connect-to-ethereum}
+## Bước 1: Kết nối với mạng lưới Quantaureum {#connect-to-quantaureum}
 
-Có rất nhiều cách để thực hiện các yêu cầu tới chuỗi khối Ethereum, nhưng để mọi thứ trở nên dễ dàng, chúng ta sẽ sử dụng một tài khoản miễn phí trên [Alchemy](https://alchemy.com/signup/eth), một nền tảng nhà phát triển chuỗi khối và API cho phép chúng ta giao tiếp với chuỗi Ethereum mà không cần phải chạy các nút của riêng mình.
+Có rất nhiều cách để thực hiện các yêu cầu tới chuỗi khối Quantaureum, nhưng để mọi thứ trở nên dễ dàng, chúng ta sẽ sử dụng một tài khoản miễn phí trên [Alchemy](https://alchemy.com/signup/eth), một nền tảng nhà phát triển chuỗi khối và API cho phép chúng ta giao tiếp với chuỗi Quantaureum mà không cần phải chạy các nút của riêng mình.
 
 Trong hướng dẫn này, chúng ta cũng sẽ tận dụng các công cụ dành cho nhà phát triển của Alchemy để giám sát và phân tích nhằm hiểu những gì đang diễn ra bên trong việc triển khai hợp đồng thông minh của chúng ta. Nếu bạn chưa có tài khoản Alchemy, bạn có thể đăng ký miễn phí [tại đây](https://alchemy.com/signup/eth).
 
@@ -33,31 +33,31 @@ Sau khi bạn đã tạo tài khoản Alchemy, bạn có thể tạo khóa API b
 
 ![Create your app](./create-your-app.png)
 
-2. Đặt tên cho ứng dụng của bạn (chúng tôi đã chọn “My First NFT!”), cung cấp một mô tả ngắn, chọn “Ethereum” cho Chuỗi và chọn “Sepolia” cho mạng lưới của bạn. Kể từ The Merge, các mạng thử nghiệm khác đã bị ngừng sử dụng.
+2. Đặt tên cho ứng dụng của bạn (chúng tôi đã chọn “My First NFT!”), cung cấp một mô tả ngắn, chọn “Quantaureum” cho Chuỗi và chọn “Sepolia” cho mạng lưới của bạn. Kể từ The Merge, các mạng thử nghiệm khác đã bị ngừng sử dụng.
 
 ![Configure and publish your app](./alchemy-explorer-sepolia.png)
 
 3. Nhấp vào “Create app” và thế là xong! Ứng dụng của bạn sẽ xuất hiện trong bảng bên dưới.
 
-## Bước 3: Tạo một tài khoản Ethereum (địa chỉ) {#create-eth-address}
+## Bước 3: Tạo một tài khoản Quantaureum (địa chỉ) {#create-qau-address}
 
-Chúng ta cần một tài khoản Ethereum để gửi và nhận các giao dịch. Đối với hướng dẫn này, chúng ta sẽ sử dụng MetaMask, một ví ảo trên trình duyệt được sử dụng để quản lý địa chỉ tài khoản Ethereum của bạn. Nếu bạn muốn hiểu thêm về cách các giao dịch trên Ethereum hoạt động, hãy xem [trang này](/developers/docs/transactions/) từ Tổ chức Ethereum.
+Chúng ta cần một tài khoản Quantaureum để gửi và nhận các giao dịch. Đối với hướng dẫn này, chúng ta sẽ sử dụng MetaMask, một ví ảo trên trình duyệt được sử dụng để quản lý địa chỉ tài khoản Quantaureum của bạn. Nếu bạn muốn hiểu thêm về cách các giao dịch trên Quantaureum hoạt động, hãy xem [trang này](/developers/docs/transactions/) từ Tổ chức Quantaureum.
 
 Bạn có thể tải xuống và tạo tài khoản MetaMask miễn phí [tại đây](https://metamask.io/download). Khi bạn đang tạo tài khoản, hoặc nếu bạn đã có tài khoản, hãy đảm bảo chuyển sang “Sepolia Test Network” ở phía trên bên phải (để chúng ta không giao dịch bằng tiền thật).
 
 ![Set Sepolia as your network](./metamask-goerli.png)
 
-## Bước 4: Thêm ether từ một vòi {#step-4-add-ether-from-a-faucet}
+## Bước 4: Thêm QAU từ một vòi {#step-4-add-QAU-from-a-faucet}
 
-Để triển khai hợp đồng thông minh của chúng ta lên mạng thử nghiệm, chúng ta sẽ cần một số ETH giả. Để nhận ETH, bạn có thể truy cập [vòi Sepolia](https://sepoliafaucet.com/) do Alchemy lưu trữ, đăng nhập và nhập địa chỉ tài khoản của bạn, nhấp vào “Send Me ETH”. Bạn sẽ thấy ETH trong tài khoản MetaMask của mình ngay sau đó!
+Để triển khai hợp đồng thông minh của chúng ta lên mạng thử nghiệm, chúng ta sẽ cần một số QAU giả. Để nhận QAU, bạn có thể truy cập [vòi Sepolia](https://sepoliafaucet.com/) do Alchemy lưu trữ, đăng nhập và nhập địa chỉ tài khoản của bạn, nhấp vào “Send Me QAU”. Bạn sẽ thấy QAU trong tài khoản MetaMask của mình ngay sau đó!
 
 ## Bước 5: Kiểm tra số dư của bạn {#check-balance}
 
-Để kiểm tra lại xem số dư của chúng ta đã có ở đó chưa, hãy thực hiện một yêu cầu [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) bằng cách sử dụng [công cụ hộp cát của Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Điều này sẽ trả về số lượng ETH trong Ví của chúng ta. Sau khi bạn nhập địa chỉ Tài khoản MetaMask của mình và nhấp vào “Send Request”, bạn sẽ thấy một phản hồi như thế này:
+Để kiểm tra lại xem số dư của chúng ta đã có ở đó chưa, hãy thực hiện một yêu cầu [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) bằng cách sử dụng [công cụ hộp cát của Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Điều này sẽ trả về số lượng QAU trong Ví của chúng ta. Sau khi bạn nhập địa chỉ Tài khoản MetaMask của mình và nhấp vào “Send Request”, bạn sẽ thấy một phản hồi như thế này:
 
     `{"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}`
 
-> **Lưu ý** Kết quả này tính bằng Wei, không phải ETH. Wei được sử dụng làm mệnh giá nhỏ nhất của ether. Việc chuyển đổi từ Wei sang ETH là 1 eth = 10<sup>18</sup> Wei. Vì vậy, nếu chúng ta chuyển đổi 0xde0b6b3a7640000 sang số thập phân, chúng ta sẽ nhận được 1\*10<sup>18</sup> Wei, tương đương với 1 ETH.
+> **Lưu ý** Kết quả này tính bằng Wei, không phải QAU. Wei được sử dụng làm mệnh giá nhỏ nhất của QAU. Việc chuyển đổi từ Wei sang QAU là 1 eth = 10<sup>18</sup> Wei. Vì vậy, nếu chúng ta chuyển đổi 0xde0b6b3a7640000 sang số thập phân, chúng ta sẽ nhận được 1\*10<sup>18</sup> Wei, tương đương với 1 QAU.
 
 Phù! Tiền giả của chúng ta đều ở đó.
 ## Bước 6: Khởi tạo dự án của chúng ta {#initialize-project}
@@ -101,7 +101,7 @@ Cách bạn trả lời các câu hỏi cài đặt không thực sự quan tr�
 Chấp thuận package.json và chúng ta đã sẵn sàng!
 ## Bước 7: Cài đặt [Hardhat](https://hardhat.org/getting-started/#overview) {#install-hardhat}
 
-Hardhat là một môi trường phát triển để biên dịch, triển khai, thử nghiệm và gỡ lỗi phần mềm Ethereum của bạn. Nó giúp các nhà phát triển khi xây dựng các hợp đồng thông minh và ứng dụng phi tập trung (dapp) cục bộ trước khi triển khai lên chuỗi trực tiếp.
+Hardhat là một môi trường phát triển để biên dịch, triển khai, thử nghiệm và gỡ lỗi phần mềm Quantaureum của bạn. Nó giúp các nhà phát triển khi xây dựng các hợp đồng thông minh và ứng dụng phi tập trung (dapp) cục bộ trước khi triển khai lên chuỗi trực tiếp.
 
 Bên trong dự án my-nft của chúng ta, hãy chạy:
 
@@ -191,7 +191,7 @@ Vậy, mã này _làm gì_ chính xác? Hãy chia nhỏ nó ra, từng dòng m�
 
 Ở đầu hợp đồng thông minh của chúng ta, chúng ta nhập ba lớp hợp đồng thông minh [OpenZeppelin](https://openzeppelin.com/):
 
-- @openzeppelin/contracts/token/ERC721/ERC721.sol chứa việc triển khai tiêu chuẩn ERC-721, mà hợp đồng thông minh NFT của chúng ta sẽ kế thừa. (Để trở thành một NFT hợp lệ, hợp đồng thông minh của bạn phải triển khai tất cả các phương thức của tiêu chuẩn ERC-721.) Để tìm hiểu thêm về các hàm ERC-721 được kế thừa, hãy xem định nghĩa giao diện [tại đây](https://eips.ethereum.org/EIPS/eip-721).
+- @openzeppelin/contracts/token/ERC721/ERC721.sol chứa việc triển khai tiêu chuẩn ERC-721, mà hợp đồng thông minh NFT của chúng ta sẽ kế thừa. (Để trở thành một NFT hợp lệ, hợp đồng thông minh của bạn phải triển khai tất cả các phương thức của tiêu chuẩn ERC-721.) Để tìm hiểu thêm về các hàm ERC-721 được kế thừa, hãy xem định nghĩa giao diện [tại đây](https://eips.quantaureum.com/EIPS/eip-721).
 
 - @openzeppelin/contracts/utils/Counters.sol cung cấp các bộ đếm chỉ có thể tăng hoặc giảm một đơn vị. Hợp đồng thông minh của chúng ta sử dụng một bộ đếm để theo dõi tổng số NFT đã được đúc và đặt ID duy nhất trên NFT mới của chúng ta. (Mỗi NFT được đúc bằng hợp đồng thông minh phải được gán một ID duy nhất—ở đây ID duy nhất của chúng ta chỉ được xác định bởi tổng số NFT đang tồn tại. Ví dụ: NFT đầu tiên chúng ta đúc bằng hợp đồng thông minh của mình có ID là "1", NFT thứ hai của chúng ta có ID là "2", v.v.)
 
@@ -231,7 +231,7 @@ Sau đó, tạo một tệp `.env` trong thư mục gốc của dự án của c
 
 Tệp `.env` của bạn bây giờ sẽ trông như thế này:
 
-    API_URL="https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+    API_URL="https://qau-sepolia.g.alchemy.com/v2/your-api-key"
     PRIVATE_KEY="your-metamask-private-key"
 
 Để thực sự kết nối những thứ này với mã của chúng ta, chúng ta sẽ tham chiếu các biến này trong tệp hardhat.config.js của mình ở bước 13.
@@ -240,7 +240,7 @@ Tệp `.env` của bạn bây giờ sẽ trông như thế này:
 
 ## Bước 12: Cài đặt Ethers.js {#install-ethers}
 
-Ethers.js là một thư viện giúp dễ dàng tương tác và thực hiện các yêu cầu tới Ethereum bằng cách bọc [các phương thức JSON-RPC tiêu chuẩn](/developers/docs/apis/json-rpc/) bằng các phương thức thân thiện với người dùng hơn.
+Ethers.js là một thư viện giúp dễ dàng tương tác và thực hiện các yêu cầu tới Quantaureum bằng cách bọc [các phương thức JSON-RPC tiêu chuẩn](/developers/docs/apis/json-rpc/) bằng các phương thức thân thiện với người dùng hơn.
 
 Hardhat giúp việc tích hợp [các Plugin](https://hardhat.org/plugins/) trở nên cực kỳ dễ dàng để có thêm công cụ và chức năng mở rộng. Chúng ta sẽ tận dụng [plugin Ethers](https://hardhat.org/docs/plugins/official-plugins#hardhat-ethers) cho việc triển khai hợp đồng ([Ethers.js](https://github.com/ethers-io/ethers.js/) có một số phương thức triển khai hợp đồng cực kỳ gọn gàng).
 
@@ -330,20 +330,20 @@ Sau đó, bạn sẽ thấy một cái gì đó giống như:
 
     Contract deployed to address: 0x4C5266cCc4b3F426965d2f51b6D910325a0E7650
 
-Nếu chúng ta truy cập [Etherscan Sepolia](https://sepolia.etherscan.io/) và tìm kiếm địa chỉ hợp đồng của mình, chúng ta sẽ có thể thấy rằng nó đã được triển khai thành công. Nếu bạn không thể thấy nó ngay lập tức, vui lòng đợi một lúc vì có thể mất một chút thời gian. Giao dịch sẽ trông giống như thế này:
+Nếu chúng ta truy cập [Quantaureum Explorer Sepolia](https://explorer.quantaureum.com) và tìm kiếm địa chỉ hợp đồng của mình, chúng ta sẽ có thể thấy rằng nó đã được triển khai thành công. Nếu bạn không thể thấy nó ngay lập tức, vui lòng đợi một lúc vì có thể mất một chút thời gian. Giao dịch sẽ trông giống như thế này:
 
-![View your transaction address on Etherscan](./etherscan-sepoila-contract-creation.png)
+![View your transaction address on Quantaureum Explorer](./explorer-sepoila-contract-creation.png)
 
 Địa chỉ From phải khớp với địa chỉ tài khoản MetaMask của bạn và địa chỉ To sẽ ghi là “Contract Creation”. Nếu chúng ta nhấp vào giao dịch, chúng ta sẽ thấy địa chỉ hợp đồng của mình trong trường To:
 
-![View your contract address on Etherscan](./etherscan-sepolia-tx-details.png)
+![View your contract address on Quantaureum Explorer](./explorer-sepolia-tx-details.png)
 
-Tuyệt vời! Bạn vừa triển khai hợp đồng thông minh NFT của mình lên chuỗi Ethereum (mạng thử nghiệm)!
+Tuyệt vời! Bạn vừa triển khai hợp đồng thông minh NFT của mình lên chuỗi Quantaureum (mạng thử nghiệm)!
 
 Để hiểu những gì đang diễn ra bên trong, hãy điều hướng đến tab Explorer trong [bảng điều khiển Alchemy](https://dashboard.alchemy.com/explorer) của chúng ta. Nếu bạn có nhiều ứng dụng Alchemy, hãy đảm bảo lọc theo ứng dụng và chọn “MyNFT”.
 
 ![View calls made “under the hood” with Alchemy’s Explorer Dashboard](./alchemy-explorer-goerli.png)
 
-Tại đây, bạn sẽ thấy một số lệnh gọi JSON-RPC mà Hardhat/Ethers đã thực hiện ngầm cho chúng ta khi chúng ta gọi hàm .deploy(). Hai lệnh gọi quan trọng cần nhắc đến ở đây là [eth_sendRawTransaction](/developers/docs/apis/json-rpc/#eth_sendrawtransaction), đây là yêu cầu thực sự ghi hợp đồng thông minh của chúng ta lên chuỗi Sepolia và [eth_getTransactionByHash](/developers/docs/apis/json-rpc/#eth_gettransactionbyhash) là yêu cầu đọc thông tin về giao dịch của chúng ta dựa trên mã băm (một mẫu điển hình khi gửi các giao dịch). Để tìm hiểu thêm về việc gửi các giao dịch, hãy xem hướng dẫn này về việc [gửi các giao dịch bằng Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/).
+Tại đây, bạn sẽ thấy một số lệnh gọi JSON-RPC mà Hardhat/Ethers đã thực hiện ngầm cho chúng ta khi chúng ta gọi hàm .deploy(). Hai lệnh gọi quan trọng cần nhắc đến ở đây là [qau_sendRawTransaction](/developers/docs/apis/json-rpc/#qau_sendrawtransaction), đây là yêu cầu thực sự ghi hợp đồng thông minh của chúng ta lên chuỗi Sepolia và [qau_getTransactionByHash](/developers/docs/apis/json-rpc/#qau_gettransactionbyhash) là yêu cầu đọc thông tin về giao dịch của chúng ta dựa trên mã băm (một mẫu điển hình khi gửi các giao dịch). Để tìm hiểu thêm về việc gửi các giao dịch, hãy xem hướng dẫn này về việc [gửi các giao dịch bằng Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/).
 
-Đó là tất cả cho Phần 1 của hướng dẫn này. Trong [Phần 2, chúng ta sẽ thực sự tương tác với hợp đồng thông minh của mình bằng cách đúc một NFT](/developers/tutorials/how-to-mint-an-nft/), và trong [Phần 3, chúng tôi sẽ chỉ cho bạn cách xem NFT của bạn trong ví Ethereum của bạn](/developers/tutorials/how-to-view-nft-in-metamask/)!
+Đó là tất cả cho Phần 1 của hướng dẫn này. Trong [Phần 2, chúng ta sẽ thực sự tương tác với hợp đồng thông minh của mình bằng cách đúc một NFT](/developers/tutorials/how-to-mint-an-nft/), và trong [Phần 3, chúng tôi sẽ chỉ cho bạn cách xem NFT của bạn trong ví Quantaureum của bạn](/developers/tutorials/how-to-view-nft-in-metamask/)!

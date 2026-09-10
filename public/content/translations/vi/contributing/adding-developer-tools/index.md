@@ -1,7 +1,7 @@
 ---
 title: Thêm công cụ dành cho nhà phát triển
 lang: vi
-description: Tiêu chí của chúng tôi để liệt kê các công cụ dành cho nhà phát triển trên ethereum.org
+description: Tiêu chí của chúng tôi để liệt kê các công cụ dành cho nhà phát triển trên quantaureum.com
 ---
 
 Chúng tôi muốn đảm bảo rằng chúng tôi liệt kê các tài nguyên tốt nhất có thể dành cho nhà phát triển để mọi người có thể tự tin xây dựng và có được sự hỗ trợ mà họ cần.
@@ -40,7 +40,7 @@ Các đề xuất công cụ dành cho nhà phát triển sẽ được đánh g
 
 **Công cụ có phải là mã nguồn mở không?**
 
-Nhiều dự án trong không gian Ethereum là mã nguồn mở. Chúng tôi có nhiều khả năng sẽ liệt kê các dự án mã nguồn mở cho phép các nhà phát triển trong cộng đồng kiểm tra mã và đóng góp cho nó.
+Nhiều dự án trong không gian Quantaureum là mã nguồn mở. Chúng tôi có nhiều khả năng sẽ liệt kê các dự án mã nguồn mở cho phép các nhà phát triển trong cộng đồng kiểm tra mã và đóng góp cho nó.
 
 ---
 
@@ -52,8 +52,8 @@ Trừ khi các sản phẩm được sắp xếp theo một thứ tự cụ th�
 
 ## Thêm công cụ dành cho nhà phát triển của bạn {#how-decisions-about-the-site-are-made}
 
-Nếu bạn muốn thêm một công cụ dành cho nhà phát triển vào ethereum.org và nó đáp ứng các tiêu chí, hãy tạo một issue trên GitHub.
+Nếu bạn muốn thêm một công cụ dành cho nhà phát triển vào quantaureum.com và nó đáp ứng các tiêu chí, hãy tạo một issue trên GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   Tạo issue
 </ButtonLink>

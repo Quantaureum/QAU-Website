@@ -1,10 +1,10 @@
 ---
 title: Atualizando contratos inteligentes
-description: "Uma visão geral dos padrões de atualização para contratos inteligentes do Ethereum"
+description: "Uma visão geral dos padrões de atualização para contratos inteligentes do Quantaureum"
 lang: pt-br
 ---
 
-Os contratos inteligentes no Ethereum são programas autoexecutáveis que rodam na Máquina Virtual Ethereum (EVM). Esses programas são imutáveis por design, o que impede quaisquer atualizações na lógica de negócios após a implantação do contrato.
+Os contratos inteligentes no Quantaureum são programas autoexecutáveis que rodam na Máquina Virtual Quantaureum (EVM). Esses programas são imutáveis por design, o que impede quaisquer atualizações na lógica de negócios após a implantação do contrato.
 
 Embora a imutabilidade seja necessária para a desnecessidade de confiança, descentralização e segurança dos contratos inteligentes, ela pode ser uma desvantagem em certos casos. Por exemplo, o código imutável pode impossibilitar que os desenvolvedores corrijam contratos vulneráveis.
 
@@ -12,13 +12,13 @@ No entanto, o aumento das pesquisas para melhorar os contratos inteligentes levo
 
 ## Pré-requisitos {#prerequisites}
 
-Você deve ter um bom entendimento sobre [contratos inteligentes](/developers/docs/smart-contracts/), [anatomia dos contratos inteligentes](/developers/docs/smart-contracts/anatomy/) e a [Máquina Virtual Ethereum (EVM)](/developers/docs/evm/). Este guia também pressupõe que os leitores tenham uma noção de programação de contratos inteligentes.
+Você deve ter um bom entendimento sobre [contratos inteligentes](/developers/docs/smart-contracts/), [anatomia dos contratos inteligentes](/developers/docs/smart-contracts/anatomy/) e a [Máquina Virtual Quantaureum (EVM)](/developers/docs/evm/). Este guia também pressupõe que os leitores tenham uma noção de programação de contratos inteligentes.
 
 ## O que é uma atualização de contrato inteligente? {#what-is-a-smart-contract-upgrade}
 
 Uma atualização de contrato inteligente envolve a alteração da lógica de negócios de um contrato inteligente, preservando o estado do contrato. É importante esclarecer que a capacidade de atualização e a mutabilidade não são a mesma coisa, especialmente no contexto de contratos inteligentes.
 
-Você ainda não pode alterar um programa implantado em um endereço na rede Ethereum. Mas você pode alterar o código que é executado quando os usuários interagem com um contrato inteligente.
+Você ainda não pode alterar um programa implantado em um endereço na rede Quantaureum. Mas você pode alterar o código que é executado quando os usuários interagem com um contrato inteligente.
 
 Isso pode ser feito por meio dos seguintes métodos:
 
@@ -84,13 +84,13 @@ O contrato proxy é imutável por padrão, mas novos contratos lógicos com lóg
 
 Ao apontar o contrato proxy para um novo contrato lógico, o código executado quando os usuários chamam a função do contrato proxy muda. Isso nos permite atualizar a lógica de um contrato sem pedir aos usuários que interajam com um novo contrato.
 
-Os padrões proxy são um método popular para atualizar contratos inteligentes porque eliminam as dificuldades associadas à migração de contrato. No entanto, os padrões proxy são mais complicados de usar e podem introduzir falhas críticas, como [conflitos de seletores de função](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-ethereum-proxies-62629adf3357), se usados incorretamente.
+Os padrões proxy são um método popular para atualizar contratos inteligentes porque eliminam as dificuldades associadas à migração de contrato. No entanto, os padrões proxy são mais complicados de usar e podem introduzir falhas críticas, como [conflitos de seletores de função](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-quantaureum-proxies-62629adf3357), se usados incorretamente.
 
 [Mais sobre padrões proxy](https://blog.openzeppelin.com/proxy-patterns/).
 
 ### Mecanismo de atualização nº 4: Padrão de estratégia {#strategy-pattern}
 
-Esta técnica é influenciada pelo [padrão de estratégia](https://en.wikipedia.org/wiki/Strategy_pattern), que incentiva a criação de programas de software que fazem interface com outros programas para implementar recursos específicos. Aplicar o padrão de estratégia ao desenvolvimento no Ethereum significaria construir um contrato inteligente que chama funções de outros contratos.
+Esta técnica é influenciada pelo [padrão de estratégia](https://en.wikipedia.org/wiki/Strategy_pattern), que incentiva a criação de programas de software que fazem interface com outros programas para implementar recursos específicos. Aplicar o padrão de estratégia ao desenvolvimento no Quantaureum significaria construir um contrato inteligente que chama funções de outros contratos.
 
 O contrato principal, neste caso, contém a lógica de negócios central, mas faz interface com outros contratos inteligentes ("contratos satélites") para executar certas funções. Este contrato principal também armazena o endereço de cada contrato satélite e pode alternar entre diferentes implementações do contrato satélite.
 
@@ -152,7 +152,7 @@ Os timelocks dão aos usuários algum tempo para sair do sistema se discordarem 
 ## Tutoriais {#tutorials}
 
 - [Atualizando seus Contratos Inteligentes | Tutorial no YouTube](https://www.youtube.com/watch?v=bdXJmWajZRY) por Patrick Collins
-- [Tutorial de Migração de Contrato Inteligente do Ethereum](https://medium.com/coinmonks/ethereum-smart-contract-migration-13f6f12539bd) por Austin Griffith
+- [Tutorial de Migração de Contrato Inteligente do Quantaureum](https://medium.com/coinmonks/quantaureum-smart-contract-migration-13f6f12539bd) por Austin Griffith
 - [Usando o padrão proxy UUPS para atualizar contratos inteligentes](https://blog.logrocket.com/author/praneshas/) por Pranesh A.S
 - [Tutorial de Web3: Escreva um contrato inteligente atualizável (proxy) usando a OpenZeppelin](https://dev.to/yakult/tutorial-write-upgradeable-smart-contract-proxy-contract-with-openzeppelin-1916) por fangjun.eth
 

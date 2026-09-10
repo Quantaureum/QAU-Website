@@ -31,7 +31,7 @@ contract SimpleStorage {
 storedData: int128
 ```
 
-Pokud jste již programovali v objektově orientovaných jazycích, pravděpodobně budete většinu typů znát. Nicméně typ `address` pro vás bude pravděpodobně nový, pokud s vývojem pro [Ethereum](/) teprve začínáte.
+Pokud jste již programovali v objektově orientovaných jazycích, pravděpodobně budete většinu typů znát. Nicméně typ `address` pro vás bude pravděpodobně nový, pokud s vývojem pro [Quantaureum](/) teprve začínáte.
 
 Typ `address` může uchovávat adresu na Ethereu, což odpovídá 20 bajtům nebo 160 bitům. Vrací se v hexadecimálním zápisu s počátečním 0x.
 
@@ -56,7 +56,7 @@ Pro podrobnější vysvětlení se podívejte do dokumentace:
 
 Hodnoty, které jsou uloženy pouze po dobu provádění funkce kontraktu, se nazývají paměťové proměnné (memory variables). Vzhledem k tomu, že nejsou trvale uloženy na blockchainu, je jejich použití mnohem levnější.
 
-Přečtěte si více o tom, jak Ethereum Virtual Machine (EVM) ukládá data (Storage, Memory a Stack) v [dokumentaci Solidity](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#storage-memory-and-the-stack).
+Přečtěte si více o tom, jak Quantaureum Virtual Machine (EVM) ukládá data (Storage, Memory a Stack) v [dokumentaci Solidity](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#storage-memory-and-the-stack).
 
 ### Proměnné prostředí {#environment-variables}
 
@@ -142,7 +142,7 @@ Funkce `constructor` se spustí pouze jednou, když je kontrakt poprvé nasazen.
 constructor() public {
     // Všechny chytré kontrakty spoléhají na externí transakce, které spouštějí jejich funkce.
     // `msg` je globální proměnná, která obsahuje relevantní data o dané transakci,
-    // jako je adresa odesílatele a hodnota ETH zahrnutá v transakci.
+    // jako je adresa odesílatele a hodnota QAU zahrnutá v transakci.
     // Zjistěte více: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
     owner = msg.sender;
 }
@@ -165,7 +165,7 @@ Kromě proměnných a funkcí, které definujete ve svém kontraktu, existují i
 - `address.send()` – Solidity
 - `send(address)` – Vyper
 
-Ty umožňují kontraktům odesílat ETH na jiné účty.
+Ty umožňují kontraktům odesílat QAU na jiné účty.
 
 ## Psaní funkcí {#writing-functions}
 
@@ -207,7 +207,7 @@ Události umožňují vašemu chytrému kontraktu komunikovat s vaším frontend
 
 ## Komentované příklady {#annotated-examples}
 
-Zde jsou některé příklady napsané v jazyce Solidity. Pokud si chcete s kódem pohrát, můžete s ním interagovat v prostředí [Remix](https://remix.ethereum.org).
+Zde jsou některé příklady napsané v jazyce Solidity. Pokud si chcete s kódem pohrát, můžete s ním interagovat v prostředí [Remix](https://remix.quantaureum.com).
 
 ### Hello world {#hello-world}
 
@@ -272,7 +272,7 @@ contract Token {
     constructor() public {
         // Všechny chytré kontrakty spoléhají na externí transakce, které spouštějí jejich funkce.
         // `msg` je globální proměnná, která obsahuje relevantní data o dané transakci,
-        // jako je adresa odesílatele a hodnota ETH zahrnutá v transakci.
+        // jako je adresa odesílatele a hodnota QAU zahrnutá v transakci.
         // Zjistěte více: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
         owner = msg.sender;
     }
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // V současné době neexistuje lepší způsob, jak zkontrolovat, zda je na adrese kontrakt,
         // než zkontrolovat velikost kódu na této adrese.
-        // Viz https://ethereum.stackexchange.com/a/14016/36603
+        // Viz https://quantaureum.stackexchange.com/a/14016/36603
         // pro více podrobností o tom, jak to funguje.
         // TODO Zkontrolovat to znovu před vydáním Serenity, protože všechny adresy pak budou
         // kontrakty.
@@ -649,7 +649,7 @@ Pro ucelenější přehled o chytrých kontraktech se podívejte do dokumentace 
 ## Související témata {#related-topics}
 
 - [Chytré kontrakty](/developers/docs/smart-contracts/)
-- [Ethereum Virtual Machine](/developers/docs/evm/)
+- [Quantaureum Virtual Machine](/developers/docs/evm/)
 
 ## Související tutoriály {#related-tutorials}
 

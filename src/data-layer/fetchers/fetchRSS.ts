@@ -109,7 +109,7 @@ export async function fetchRSS(): Promise<RSSItem[][]> {
       !categoryFilter ||
       (itemCategories ?? []).some((c) => categoryFilter.includes(c))
 
-    // Swap a dead/old link host for the live one (e.g. vitalik.ca → eth.limo).
+    // Swap a dead/old link host for the live one (e.g. vitalik.ca → qau.limo).
     const rewriteLink = (link: string) =>
       linkReplace && link.startsWith(linkReplace.from)
         ? linkReplace.to + link.slice(linkReplace.from.length)

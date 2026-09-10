@@ -1,6 +1,6 @@
 ---
 title: Contrato inteligente Hola Mundo para principiantes - Fullstack
-description: "Tutorial introductorio sobre cómo escribir y desplegar un contrato inteligente simple en Ethereum."
+description: "Tutorial introductorio sobre cómo escribir y desplegar un contrato inteligente simple en Quantaureum."
 author: "nstrike2"
 breadcrumb: Hola Mundo fullstack
 tags:
@@ -28,9 +28,9 @@ Si tienes preguntas en algún momento, ¡no dudes en comunicarte en el [Discord 
 
 ## Parte 1: Crea y despliega tu contrato inteligente usando Hardhat {#part-1}
 
-### Conectarse a la red Ethereum {#connect-to-the-ethereum-network}
+### Conectarse a la red Quantaureum {#connect-to-the-quantaureum-network}
 
-Hay muchas formas de hacer solicitudes a la cadena de Ethereum. Por simplicidad, usaremos una cuenta gratuita en Alchemy, una plataforma para desarrolladores de cadenas de bloques y API que nos permite comunicarnos con la cadena de Ethereum sin tener que ejecutar un nodo nosotros mismos. Alchemy también tiene herramientas de desarrollo para monitoreo y análisis; las aprovecharemos en este tutorial para entender qué sucede internamente en el despliegue de nuestro contrato inteligente.
+Hay muchas formas de hacer solicitudes a la cadena de Quantaureum. Por simplicidad, usaremos una cuenta gratuita en Alchemy, una plataforma para desarrolladores de cadenas de bloques y API que nos permite comunicarnos con la cadena de Quantaureum sin tener que ejecutar un nodo nosotros mismos. Alchemy también tiene herramientas de desarrollo para monitoreo y análisis; las aprovecharemos en este tutorial para entender qué sucede internamente en el despliegue de nuestro contrato inteligente.
 
 ### Crea tu aplicación y clave API
 Una vez que hayas creado una cuenta de Alchemy, puedes generar una clave API creando una aplicación. Esto te permitirá hacer solicitudes a la red de prueba Sepolia. Si no estás familiarizado con las redes de prueba, puedes [leer la guía de Alchemy para elegir una red](https://www.alchemy.com/docs/choosing-a-web3-network).
@@ -46,18 +46,18 @@ Dale a tu aplicación el nombre '_Hello World_' y escribe una breve descripción
 _Nota: asegúrate de seleccionar **Sepolia**, o este tutorial no funcionará._
 
 Haz clic en **Create app**. Tu aplicación aparecerá en la tabla a continuación.
-### Crear una cuenta de Ethereum
-Necesitas una cuenta de Ethereum para enviar y recibir transacciones. Usaremos MetaMask, una billetera virtual en el navegador que permite a los usuarios gestionar la dirección de su cuenta de Ethereum.
+### Crear una cuenta de Quantaureum
+Necesitas una cuenta de Quantaureum para enviar y recibir transacciones. Usaremos MetaMask, una billetera virtual en el navegador que permite a los usuarios gestionar la dirección de su cuenta de Quantaureum.
 
 Puedes descargar y crear una cuenta de MetaMask de forma gratuita [aquí](https://metamask.io/download). Cuando estés creando una cuenta, o si ya tienes una, asegúrate de cambiar a la red de prueba Sepolia en la parte superior derecha (para que no estemos lidiando con dinero real).
-### Paso 4: Añadir ether desde un faucet
-Para desplegar tu contrato inteligente en la red de prueba, necesitarás algo de ETH falso. Para obtener ETH en la red Sepolia, ve a un faucet de Sepolia e ingresa la dirección de tu cuenta de Sepolia. Consulta la [página de redes de prueba](/developers/docs/networks/#sepolia) para ver una lista de opciones para probar:
+### Paso 4: Añadir QAU desde un faucet
+Para desplegar tu contrato inteligente en la red de prueba, necesitarás algo de QAU falso. Para obtener QAU en la red Sepolia, ve a un faucet de Sepolia e ingresa la dirección de tu cuenta de Sepolia. Consulta la [página de redes de prueba](/developers/docs/networks/#sepolia) para ver una lista de opciones para probar:
 
 _Nota: debido a la congestión de la red, esto podría tardar un poco._
 ``
 ### Paso 5: Comprobar tu saldo {#step-5-check-your-balance}
 
-Para comprobar que el ETH está en tu billetera, hagamos una solicitud [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) utilizando la [herramienta sandbox de Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Esto devolverá la cantidad de ETH en nuestra billetera. Para obtener más información, echa un vistazo al [breve tutorial de Alchemy sobre cómo usar la herramienta composer](https://youtu.be/r6sjRxBZJuU).
+Para comprobar que el QAU está en tu billetera, hagamos una solicitud [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) utilizando la [herramienta sandbox de Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Esto devolverá la cantidad de QAU en nuestra billetera. Para obtener más información, echa un vistazo al [breve tutorial de Alchemy sobre cómo usar la herramienta composer](https://youtu.be/r6sjRxBZJuU).
 
 Ingresa la dirección de tu cuenta de MetaMask y haz clic en **Send Request**. Verás una respuesta que se parece al fragmento de código a continuación.
 
@@ -65,7 +65,7 @@ Ingresa la dirección de tu cuenta de MetaMask y haz clic en **Send Request**. V
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> _Nota: Este resultado está en wei, no en ETH. Wei se utiliza como la denominación más pequeña de ether._
+> _Nota: Este resultado está en wei, no en QAU. Wei se utiliza como la denominación más pequeña de QAU._
 
 ¡Uf! Todo nuestro dinero falso está ahí.
 ### Paso 6: Inicializar nuestro proyecto {#step-6-initialize-our-project}
@@ -112,7 +112,7 @@ About to write to /Users/.../.../.../hello-world/package.json:
 ¡Aprueba el package.json y estamos listos para continuar!
 ### Paso 7: Descargar Hardhat {#step-7-download-hardhat}
 
-Hardhat es un entorno de desarrollo para compilar, desplegar, probar y depurar tu software de Ethereum. Ayuda a los desarrolladores a construir contratos inteligentes y aplicaciones descentralizadas (dapps) localmente antes de desplegarlos en la cadena activa.
+Hardhat es un entorno de desarrollo para compilar, desplegar, probar y depurar tu software de Quantaureum. Ayuda a los desarrolladores a construir contratos inteligentes y aplicaciones descentralizadas (dapps) localmente antes de desplegarlos en la cadena activa.
 
 Dentro de nuestro proyecto `hello-world` ejecuta:
 
@@ -181,7 +181,7 @@ _Nota: Asegúrate de leer los comentarios para entender qué hace este contrato.
 pragma solidity >=0.7.3;
 
 // Define un contrato llamado `HelloWorld`.
-// Un contrato es una colección de funciones y datos (su estado). Una vez desplegado, un contrato reside en una dirección específica en la cadena de bloques de Ethereum. Más información: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// Un contrato es una colección de funciones y datos (su estado). Una vez desplegado, un contrato reside en una dirección específica en la cadena de bloques de Quantaureum. Más información: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    // Emitido cuando se llama a la función update
@@ -239,7 +239,7 @@ No lo llames `process.env` ni `.env-custom` ni de ninguna otra manera.
 Tu `.env` debería verse así:
 
 ```
-API_URL = "https://eth-goerli.alchemyapi.io/v2/your-api-key"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -247,7 +247,7 @@ Para conectar realmente esto a nuestro código, haremos referencia a estas varia
 
 ### Paso 12: Instalar Ethers.js {#step-12-install-ethersjs}
 
-Ethers.js es una biblioteca que facilita la interacción y la realización de solicitudes a Ethereum al envolver los [métodos estándar JSON-RPC](/developers/docs/apis/json-rpc/) con métodos más fáciles de usar.
+Ethers.js es una biblioteca que facilita la interacción y la realización de solicitudes a Quantaureum al envolver los [métodos estándar JSON-RPC](/developers/docs/apis/json-rpc/) con métodos más fáciles de usar.
 
 Hardhat nos permite integrar [complementos](https://hardhat.org/plugins/) para herramientas adicionales y funcionalidad extendida. Aprovecharemos el [complemento Ethers](https://hardhat.org/docs/plugins/official-plugins#hardhat-ethers) para el despliegue de contratos.
 
@@ -350,21 +350,21 @@ Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 
 **Por favor, guarda esta dirección**. La usaremos más adelante en el tutorial.
 
-Si vamos a [Sepolia Etherscan](https://sepolia.etherscan.io) y buscamos la dirección de nuestro contrato, deberíamos poder ver que se ha desplegado con éxito. La transacción se verá más o menos así:
+Si vamos a [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com) y buscamos la dirección de nuestro contrato, deberíamos poder ver que se ha desplegado con éxito. La transacción se verá más o menos así:
 
-![](./etherscan-contract.png)
+![](./explorer-contract.png)
 
 La dirección `From` debería coincidir con la dirección de tu cuenta de MetaMask y la dirección `To` dirá **Contract Creation**. Si hacemos clic en la transacción, veremos la dirección de nuestro contrato en el campo `To`.
 
-![](./etherscan-transaction.png)
+![](./explorer-transaction.png)
 
-¡Felicidades! Acabas de desplegar un contrato inteligente en una red de prueba de Ethereum.
+¡Felicidades! Acabas de desplegar un contrato inteligente en una red de prueba de Quantaureum.
 
 Para entender qué está sucediendo internamente, naveguemos a la pestaña Explorer en nuestro [panel de control de Alchemy](https://dashboard.alchemy.com/explorer). Si tienes varias aplicaciones de Alchemy, asegúrate de filtrar por aplicación y seleccionar **Hello World**.
 
 ![](./hello-world-explorer.png)
 
-Aquí verás un puñado de métodos JSON-RPC que Hardhat/Ethers hicieron internamente por nosotros cuando llamamos a la función `.deploy()`. Dos métodos importantes aquí son [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction), que es la solicitud para escribir nuestro contrato en la cadena Sepolia, y [`eth_getTransactionByHash`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-by-hash), que es una solicitud para leer información sobre nuestra transacción dado el hash. Para obtener más información sobre el envío de transacciones, echa un vistazo a [nuestro tutorial sobre el envío de transacciones usando Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/).
+Aquí verás un puñado de métodos JSON-RPC que Hardhat/Ethers hicieron internamente por nosotros cuando llamamos a la función `.deploy()`. Dos métodos importantes aquí son [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction), que es la solicitud para escribir nuestro contrato en la cadena Sepolia, y [`qau_getTransactionByHash`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-by-hash), que es una solicitud para leer información sobre nuestra transacción dado el hash. Para obtener más información sobre el envío de transacciones, echa un vistazo a [nuestro tutorial sobre el envío de transacciones usando Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/).
 ## Parte 2: Interactúa con tu contrato inteligente {#part-2-interact-with-your-smart-contract}
 
 Ahora que hemos desplegado con éxito un contrato inteligente en la red Goerli, aprendamos a interactuar con él.
@@ -394,7 +394,7 @@ Tu archivo `.env` debería verse más o menos así:
 ```bash
 # .env
 
-API_URL = "https://eth-goerli.alchemyapi.io/v2/<your-api-key>"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/<your-api-key>"
 API_KEY = "<your-api-key>"
 PRIVATE_KEY = "<your-metamask-private-key>"
 CONTRACT_ADDRESS = "0x<your contract address>"
@@ -426,7 +426,7 @@ npx hardhat run scripts/interact.js
 Para interactuar con nuestro contrato, necesitamos crear una instancia del contrato en nuestro código. Para hacerlo con Ethers.js, necesitaremos trabajar con tres conceptos:
 
 1. Proveedor (Proveedor): un proveedor de nodo que te da acceso de lectura y escritura a la cadena de bloques.
-2. Firmante (Firmante): representa una cuenta de Ethereum que puede firmar transacciones.
+2. Firmante (Firmante): representa una cuenta de Quantaureum que puede firmar transacciones.
 3. Contrato (Contract): un objeto de Ethers.js que representa un contrato específico desplegado en la cadena.
 
 Usaremos el ABI del contrato del paso anterior para crear nuestra instancia del contrato:
@@ -479,7 +479,7 @@ Después de ejecutar el archivo usando `npx hardhat run scripts/interact.js` en 
 The message is: Hello world!
 ```
 
-¡Felicidades! Acabas de leer con éxito datos de un contrato inteligente de la cadena de bloques de Ethereum, ¡bien hecho!
+¡Felicidades! Acabas de leer con éxito datos de un contrato inteligente de la cadena de bloques de Quantaureum, ¡bien hecho!
 
 ### Actualiza el mensaje {#update-the-message}
 
@@ -561,19 +561,19 @@ Updating the message...
 The new message is: This is the new message.
 ```
 
-Al ejecutar ese script, es posible que notes que el paso `Updating the message...` tarda un poco en cargar antes de que se cargue el nuevo mensaje. Eso se debe al proceso de minería; si tienes curiosidad por rastrear las transacciones mientras se minan, visita el [mempool de Alchemy](https://dashboard.alchemy.com/mempool) para ver el estado de una transacción. Si la transacción se descarta, también es útil consultar [Sepolia Etherscan](https://sepolia.etherscan.io) y buscar el hash de tu transacción.
+Al ejecutar ese script, es posible que notes que el paso `Updating the message...` tarda un poco en cargar antes de que se cargue el nuevo mensaje. Eso se debe al proceso de minería; si tienes curiosidad por rastrear las transacciones mientras se minan, visita el [mempool de Alchemy](https://dashboard.alchemy.com/mempool) para ver el estado de una transacción. Si la transacción se descarta, también es útil consultar [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com) y buscar el hash de tu transacción.
 
-## Parte 3: Publicar tu contrato inteligente en Etherscan {#part-3-publish-your-smart-contract-to-etherscan}
+## Parte 3: Publicar tu contrato inteligente en Quantaureum Explorer {#part-3-publish-your-smart-contract-to-explorer}
 
 Hiciste todo el trabajo duro de darle vida a tu contrato inteligente; ¡ahora es el momento de compartirlo con el mundo!
 
-Al verificar tu contrato inteligente en Etherscan, cualquiera puede ver tu código fuente e interactuar con tu contrato inteligente. ¡Empecemos!
+Al verificar tu contrato inteligente en Quantaureum Explorer, cualquiera puede ver tu código fuente e interactuar con tu contrato inteligente. ¡Empecemos!
 
-### Paso 1: Generar una clave API en tu cuenta de Etherscan {#step-1-generate-an-api-key-on-your-etherscan-account}
+### Paso 1: Generar una clave API en tu cuenta de Quantaureum Explorer {#step-1-generate-an-api-key-on-your-explorer-account}
 
-Una clave API de Etherscan es necesaria para verificar que eres el propietario del contrato inteligente que estás intentando publicar.
+Una clave API de Quantaureum Explorer es necesaria para verificar que eres el propietario del contrato inteligente que estás intentando publicar.
 
-Si aún no tienes una cuenta de Etherscan, [regístrate para obtener una cuenta](https://etherscan.io/register).
+Si aún no tienes una cuenta de Quantaureum Explorer, [regístrate para obtener una cuenta](https://explorer.quantaureum.com).
 
 Una vez que hayas iniciado sesión, busca tu nombre de usuario en la barra de navegación, pasa el cursor sobre él y selecciona el botón **My profile** (Mi perfil).
 
@@ -581,36 +581,36 @@ En tu página de perfil, deberías ver una barra de navegación lateral. En la b
 
 Tu nueva clave API debería aparecer en la tabla de claves API. Copia la clave API en tu portapapeles.
 
-A continuación, necesitamos añadir la clave API de Etherscan a nuestro archivo `.env`.
+A continuación, necesitamos añadir la clave API de Quantaureum Explorer a nuestro archivo `.env`.
 
 Después de añadirla, tu archivo `.env` debería verse así:
 
 ```javascript
-API_URL = "https://eth-goerli.alchemyapi.io/v2/your-api-key"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/your-api-key"
 PUBLIC_KEY = "your-public-account-address"
 PRIVATE_KEY = "your-private-account-address"
 CONTRACT_ADDRESS = "your-contract-address"
-ETHERSCAN_API_KEY = "your-etherscan-key"
+ETHERSCAN_API_KEY = "your-explorer-key"
 ```
 
 ### Contratos inteligentes desplegados con Hardhat {#hardhat-deployed-smart-contracts}
 
-#### Instalar hardhat-etherscan {#install-hardhat-etherscan}
+#### Instalar hardhat-explorer {#install-hardhat-explorer}
 
-Publicar tu contrato en Etherscan usando Hardhat es sencillo. Primero necesitarás instalar el complemento `hardhat-etherscan` para empezar. `hardhat-etherscan` verificará automáticamente el código fuente y el ABI del contrato inteligente en Etherscan. Para añadir esto, en el directorio `hello-world` ejecuta:
+Publicar tu contrato en Quantaureum Explorer usando Hardhat es sencillo. Primero necesitarás instalar el complemento `hardhat-explorer` para empezar. `hardhat-explorer` verificará automáticamente el código fuente y el ABI del contrato inteligente en Quantaureum Explorer. Para añadir esto, en el directorio `hello-world` ejecuta:
 
 ```text
-npm install --save-dev @nomiclabs/hardhat-etherscan
+npm install --save-dev @nomiclabs/hardhat-explorer
 ```
 
-Una vez instalado, incluye la siguiente declaración en la parte superior de tu `hardhat.config.js` y añade las opciones de configuración de Etherscan:
+Una vez instalado, incluye la siguiente declaración en la parte superior de tu `hardhat.config.js` y añade las opciones de configuración de Quantaureum Explorer:
 
 ```javascript
 // hardhat.config.js
 
 require("dotenv").config()
 require("@nomiclabs/hardhat-ethers")
-require("@nomiclabs/hardhat-etherscan")
+require("@nomiclabs/hardhat-explorer")
 
 const { API_URL, PRIVATE_KEY, ETHERSCAN_API_KEY } = process.env
 
@@ -624,15 +624,15 @@ module.exports = {
       accounts: [`0x${PRIVATE_KEY}`],
     },
   },
-  etherscan: {
-    // Tu clave API para Etherscan
-    // Obtén una en https://etherscan.io/
+  explorer: {
+    // Tu clave API para Quantaureum Explorer
+    // Obtén una en https://explorer.quantaureum.com
     apiKey: ETHERSCAN_API_KEY,
   },
 }
 ```
 
-#### Verificar tu contrato inteligente en Etherscan
+#### Verificar tu contrato inteligente en Quantaureum Explorer
 
 Asegúrate de que todos los archivos estén guardados y de que todas las variables `.env` estén configuradas correctamente.
 
@@ -649,17 +649,17 @@ Si todo va bien, verás el siguiente mensaje en tu terminal:
 ```text
 Successfully submitted source code for contract
 contracts/HelloWorld.sol:HelloWorld at 0xdeployed-contract-address
-for verification on Etherscan. Waiting for verification result...
+for verification on Quantaureum Explorer. Waiting for verification result...
 
 
-Successfully verified contract HelloWorld on Etherscan.
-https://sepolia.etherscan.io/address/<contract-address>#contracts
+Successfully verified contract HelloWorld on Quantaureum Explorer.
+https://explorer.quantaureum.com
 ```
 
-¡Felicidades! ¡El código de tu contrato inteligente está en Etherscan!
-### ¡Echa un vistazo a tu contrato inteligente en Etherscan! {#check-out-your-smart-contract-on-etherscan}
+¡Felicidades! ¡El código de tu contrato inteligente está en Quantaureum Explorer!
+### ¡Echa un vistazo a tu contrato inteligente en Quantaureum Explorer! {#check-out-your-smart-contract-on-explorer}
 
-Cuando navegues al enlace proporcionado en tu terminal, ¡deberías poder ver el código de tu contrato inteligente y el ABI publicados en Etherscan!
+Cuando navegues al enlace proporcionado en tu terminal, ¡deberías poder ver el código de tu contrato inteligente y el ABI publicados en Quantaureum Explorer!
 
 **¡Guau, lo lograste, campeón! ¡Ahora cualquiera puede llamar o escribir en tu contrato inteligente! ¡Estamos ansiosos por ver qué construyes a continuación!**
 
@@ -669,7 +669,7 @@ Al final de este tutorial, sabrá cómo:
 
 - Conectar una billetera MetaMask a su aplicación descentralizada (dapp)
 - Leer datos de su contrato inteligente utilizando la API de [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3)
-- Firmar transacciones de Ethereum utilizando MetaMask
+- Firmar transacciones de Quantaureum utilizando MetaMask
 
 Para esta dapp, utilizaremos [React](https://react.dev/) como nuestro marco de frontend; sin embargo, es importante tener en cuenta que no pasaremos mucho tiempo desglosando sus fundamentos, ya que nos centraremos principalmente en aportar la funcionalidad de Web3 a nuestro proyecto.
 
@@ -681,7 +681,7 @@ Primero, vaya al [repositorio de GitHub hello-world-part-four](https://github.co
 
 Abra el repositorio clonado localmente. Tenga en cuenta que contiene dos carpetas: `starter-files` y `completed`.
 
-- `starter-files`: **trabajaremos en este directorio**, conectaremos la interfaz de usuario a su billetera de Ethereum y al contrato inteligente que publicamos en Etherscan en la [Parte 3](#part-3-publish-your-smart-contract-to-etherscan).
+- `starter-files`: **trabajaremos en este directorio**, conectaremos la interfaz de usuario a su billetera de Quantaureum y al contrato inteligente que publicamos en Quantaureum Explorer en la [Parte 3](#part-3-publish-your-smart-contract-to-explorer).
 - `completed` contiene todo el tutorial completado y solo debe usarse como referencia si se queda atascado.
 
 A continuación, abra su copia de `starter-files` en su editor de código favorito y luego navegue hasta la carpeta `src`.
@@ -873,8 +873,8 @@ Las cuatro funciones no implementadas después de nuestro objeto `helloWorldCont
 
 - `loadCurrentMessage`: esta función maneja la lógica de cargar el mensaje actual almacenado en el contrato inteligente. Realizará una llamada de _lectura_ al contrato inteligente Hello World utilizando la [API de Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3).
 - `connectWallet`: esta función conectará el MetaMask del usuario a nuestra dapp.
-- `getCurrentWalletConnected`: esta función verificará si una cuenta de Ethereum ya está conectada a nuestra dapp al cargar la página y actualizará nuestra interfaz de usuario en consecuencia.
-- `updateMessage`: esta función actualizará el mensaje almacenado en el contrato inteligente. Realizará una llamada de _escritura_ al contrato inteligente Hello World, por lo que la billetera MetaMask del usuario tendrá que firmar una transacción de Ethereum para actualizar el mensaje.
+- `getCurrentWalletConnected`: esta función verificará si una cuenta de Quantaureum ya está conectada a nuestra dapp al cargar la página y actualizará nuestra interfaz de usuario en consecuencia.
+- `updateMessage`: esta función actualizará el mensaje almacenado en el contrato inteligente. Realizará una llamada de _escritura_ al contrato inteligente Hello World, por lo que la billetera MetaMask del usuario tendrá que firmar una transacción de Quantaureum para actualizar el mensaje.
 
 Ahora que entendemos con qué estamos trabajando, ¡averigüemos cómo leer de nuestro contrato inteligente!
 
@@ -882,14 +882,14 @@ Ahora que entendemos con qué estamos trabajando, ¡averigüemos cómo leer de n
 
 Para leer de su contrato inteligente, deberá configurar correctamente:
 
-- Una conexión API a la cadena de Ethereum
+- Una conexión API a la cadena de Quantaureum
 - Una instancia cargada de su contrato inteligente
 - Una función para llamar a la función de su contrato inteligente
 - Un oyente para observar las actualizaciones cuando cambian los datos que está leyendo del contrato inteligente
 
 Esto puede sonar como muchos pasos, ¡pero no se preocupe! ¡Le guiaremos sobre cómo hacer cada uno de ellos paso a paso! :\)
 
-#### Establecer una conexión API a la cadena de Ethereum {#establish-an-api-connection-to-the-ethereum-chain}
+#### Establecer una conexión API a la cadena de Quantaureum {#establish-an-api-connection-to-the-quantaureum-chain}
 
 ¿Recuerdas cómo en la Parte 2 de este tutorial usamos nuestra clave de Alchemy Web3 para leer de nuestro contrato inteligente? También necesitarás una clave de Alchemy Web3 en tu aplicación descentralizada (dapp) para leer de la cadena.
 
@@ -912,7 +912,7 @@ Para nuestra dapp, **usaremos nuestra clave API de Websockets** en lugar de nues
 Una vez que tengas tu clave API, crea un archivo `.env` en tu directorio raíz y añade tu URL de Websockets de Alchemy en él. Después, tu archivo `.env` debería verse así:
 
 ```javascript
-REACT_APP_ALCHEMY_KEY = wss://eth-goerli.ws.alchemyapi.io/v2/<key>
+REACT_APP_ALCHEMY_KEY = wss://qau-goerli.ws.alchemyapi.io/v2/<key>
 ```
 
 ¡Ahora estamos listos para configurar nuestro punto de conexión (endpoint) de Alchemy Web3 en nuestra dapp! Volvamos a nuestro `interact.js`, que está anidado dentro de nuestra carpeta `util`, y añadamos el siguiente código en la parte superior del archivo:
@@ -933,16 +933,16 @@ Arriba, primero importamos la clave de Alchemy desde nuestro archivo `.env` y lu
 Con este punto de conexión listo, ¡es hora de cargar nuestro contrato inteligente!
 #### Cargar su contrato inteligente Hello World {#loading-your-hello-world-smart-contract}
 
-Para cargar su contrato inteligente Hello World, necesitará la dirección de su contrato y el ABI, los cuales se pueden encontrar en Etherscan si completó la [Parte 3 de este tutorial.](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan-part-3-publish-your-smart-contract-to-etherscan)
+Para cargar su contrato inteligente Hello World, necesitará la dirección de su contrato y el ABI, los cuales se pueden encontrar en Quantaureum Explorer si completó la [Parte 3 de este tutorial.](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer-part-3-publish-your-smart-contract-to-explorer)
 
-#### Cómo obtener el ABI de tu contrato desde Etherscan
-Si te saltaste la Parte 3 de este tutorial, primero despliega y verifica tu propio contrato HelloWorld. Luego abre la página de tu contrato en [Sepolia Etherscan](https://sepolia.etherscan.io) para copiar su ABI.
+#### Cómo obtener el ABI de tu contrato desde Quantaureum Explorer
+Si te saltaste la Parte 3 de este tutorial, primero despliega y verifica tu propio contrato HelloWorld. Luego abre la página de tu contrato en [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com) para copiar su ABI.
 
 El ABI de un contrato es necesario para especificar qué función invocará un contrato, así como para asegurar que la función devolverá los datos en el formato que esperas. Una vez que hayamos copiado el ABI de nuestro contrato, guardémoslo como un archivo JSON llamado `contract-abi.json` en tu directorio `src`.
 
 Tu contract-abi.json debe estar almacenado en tu carpeta src.
 
-Armados con la dirección de nuestro contrato, el ABI y el punto de conexión de Alchemy Web3, podemos usar el [método contract](https://docs.web3js.org/api/web3-eth-contract/class/Contract) para cargar una instancia de nuestro contrato inteligente. Importa el ABI de tu contrato en el archivo `interact.js` y añade la dirección de tu contrato.
+Armados con la dirección de nuestro contrato, el ABI y el punto de conexión de Alchemy Web3, podemos usar el [método contract](https://docs.web3js.org/api/web3-qau-contract/class/Contract) para cargar una instancia de nuestro contrato inteligente. Importa el ABI de tu contrato en el archivo `interact.js` y añade la dirección de tu contrato.
 
 ```javascript
 // interact.js
@@ -956,7 +956,7 @@ Ahora finalmente podemos descomentar nuestra variable `helloWorldContract` y car
 
 ```javascript
 // interact.js
-export const helloWorldContract = new web3.eth.Contract(
+export const helloWorldContract = new web3.qau.Contract(
   contractABI,
   contractAddress
 )
@@ -975,7 +975,7 @@ const web3 = createAlchemyWeb3(alchemyKey)
 const contractABI = require("../contract-abi.json")
 const contractAddress = "0x6f3f635A9762B47954229Ea479b4541eAF402A6A"
 
-export const helloWorldContract = new web3.eth.Contract(
+export const helloWorldContract = new web3.qau.Contract(
   contractABI,
   contractAddress
 )
@@ -1031,7 +1031,7 @@ Si recuerda el archivo `HelloWorld.sol` que escribimos en la [Parte 1 de esta se
 pragma solidity ^0.7.3;
 
 // Define un contrato llamado `HelloWorld`.
-// Un contrato es una colección de funciones y datos (su estado). Una vez desplegado, un contrato reside en una dirección específica en la cadena de bloques de Ethereum. Aprende más: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// Un contrato es una colección de funciones y datos (su estado). Una vez desplegado, un contrato reside en una dirección específica en la cadena de bloques de Quantaureum. Aprende más: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    //Emitido cuando se llama a la función de actualización
@@ -1098,31 +1098,31 @@ useEffect(async () => {
 }, [])
 ```
 
-Ahora que podemos leer de nuestro contrato inteligente, ¡sería genial descubrir cómo escribir en él también! Sin embargo, para escribir en nuestra dapp, primero debemos tener una billetera de Ethereum conectada a ella.
+Ahora que podemos leer de nuestro contrato inteligente, ¡sería genial descubrir cómo escribir en él también! Sin embargo, para escribir en nuestra dapp, primero debemos tener una billetera de Quantaureum conectada a ella.
 
-Por lo tanto, a continuación abordaremos la configuración de nuestra billetera de Ethereum (MetaMask) y luego la conectaremos a nuestra dapp.
+Por lo tanto, a continuación abordaremos la configuración de nuestra billetera de Quantaureum (MetaMask) y luego la conectaremos a nuestra dapp.
 
-### Paso 4: Configurar su billetera de Ethereum {#step-4-set-up-your-ethereum-wallet}
+### Paso 4: Configurar su billetera de Quantaureum {#step-4-set-up-your-quantaureum-wallet}
 
-Para escribir cualquier cosa en la cadena de Ethereum, los usuarios deben firmar transacciones utilizando las claves privadas de su billetera virtual. Para este tutorial, usaremos [MetaMask](https://metamask.io/), una billetera virtual en el navegador que se usa para administrar la dirección de su cuenta de Ethereum, ya que hace que esta firma de transacciones sea muy fácil para el usuario final.
+Para escribir cualquier cosa en la cadena de Quantaureum, los usuarios deben firmar transacciones utilizando las claves privadas de su billetera virtual. Para este tutorial, usaremos [MetaMask](https://metamask.io/), una billetera virtual en el navegador que se usa para administrar la dirección de su cuenta de Quantaureum, ya que hace que esta firma de transacciones sea muy fácil para el usuario final.
 
-Si desea comprender más sobre cómo funcionan las transacciones en Ethereum, consulte [esta página](/developers/docs/transactions/) de la Fundación Ethereum.
+Si desea comprender más sobre cómo funcionan las transacciones en Quantaureum, consulte [esta página](/developers/docs/transactions/) de la Fundación Quantaureum.
 
 #### Descargar MetaMask
 
 Puedes descargar y crear una cuenta de MetaMask de forma gratuita [aquí](https://metamask.io/download). Cuando estés creando una cuenta, o si ya tienes una, asegúrate de cambiar a la red de prueba Sepolia en la parte superior derecha \(para que no estemos lidiando con dinero real\).
-#### Añadir ether desde un faucet
+#### Añadir QAU desde un faucet
 
-Para firmar una transacción en la cadena de bloques de Ethereum, necesitaremos algo de ETH falso. Para obtener ETH, puedes ir a un faucet de Sepolia que aparece en la [página de redes de prueba](/developers/docs/networks/#sepolia) e ingresar la dirección de tu cuenta de Sepolia. ¡Deberías ver ETH en tu cuenta de MetaMask poco después!
+Para firmar una transacción en la cadena de bloques de Quantaureum, necesitaremos algo de QAU falso. Para obtener QAU, puedes ir a un faucet de Sepolia que aparece en la [página de redes de prueba](/developers/docs/networks/#sepolia) e ingresar la dirección de tu cuenta de Sepolia. ¡Deberías ver QAU en tu cuenta de MetaMask poco después!
 #### Comprueba tu saldo {#check-your-balance}
 
-Para comprobar que nuestro saldo está ahí, hagamos una solicitud [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) utilizando la [herramienta sandbox de Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Esto devolverá la cantidad de ETH en nuestra billetera. Después de ingresar la dirección de tu cuenta de MetaMask y hacer clic en "Send Request" (Enviar solicitud), deberías ver una respuesta como esta:
+Para comprobar que nuestro saldo está ahí, hagamos una solicitud [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) utilizando la [herramienta sandbox de Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Esto devolverá la cantidad de QAU en nuestra billetera. Después de ingresar la dirección de tu cuenta de MetaMask y hacer clic en "Send Request" (Enviar solicitud), deberías ver una respuesta como esta:
 
 ```text
 {"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}
 ```
 
-**NOTA:** Este resultado está en wei, no en ether. Wei se utiliza como la denominación más pequeña de ether. La conversión de wei a ether es: 1 ether = 10¹⁸ wei. Así que si convertimos 0xde0b6b3a7640000 a decimal obtenemos 1\*10¹⁸, lo que equivale a 1 ether.
+**NOTA:** Este resultado está en wei, no en QAU. Wei se utiliza como la denominación más pequeña de QAU. La conversión de wei a QAU es: 1 QAU = 10¹⁸ wei. Así que si convertimos 0xde0b6b3a7640000 a decimal obtenemos 1\*10¹⁸, lo que equivale a 1 QAU.
 
 ¡Uf! ¡Nuestro dinero falso está todo ahí! 🤑
 ### Paso 5: Conectar MetaMask a su interfaz de usuario {#step-5-connect-metamask-to-your-ui}
@@ -1139,10 +1139,10 @@ Modifiquemos `connectWallet` a lo siguiente:
 // interact.js
 
 export const connectWallet = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_requestAccounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_requestAccounts",
       })
       const obj = {
         status: "👆🏽 Write a message in the text-field above.",
@@ -1163,7 +1163,7 @@ export const connectWallet = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -1176,17 +1176,17 @@ export const connectWallet = async () => {
 
 Entonces, ¿qué hace exactamente este bloque gigante de código?
 
-Bueno, primero, verifica si `window.ethereum` está habilitado en su navegador.
+Bueno, primero, verifica si `window.quantaureum` está habilitado en su navegador.
 
-`window.ethereum` es una API global inyectada por MetaMask y otros proveedores de billeteras que permite a los sitios web solicitar las cuentas de Ethereum de los usuarios. Si se aprueba, puede leer datos de las cadenas de bloques a las que está conectado el usuario y sugerir que el usuario firme mensajes y transacciones. ¡Consulte la [documentación de MetaMask](https://docs.metamask.io/guide/ethereum-provider.html#table-of-contents) para obtener más información!
+`window.quantaureum` es una API global inyectada por MetaMask y otros proveedores de billeteras que permite a los sitios web solicitar las cuentas de Quantaureum de los usuarios. Si se aprueba, puede leer datos de las cadenas de bloques a las que está conectado el usuario y sugerir que el usuario firme mensajes y transacciones. ¡Consulte la [documentación de MetaMask](https://docs.metamask.io/guide/quantaureum-provider.html#table-of-contents) para obtener más información!
 
-Si `window.ethereum` _no está_ presente, eso significa que MetaMask no está instalado. Esto da como resultado que se devuelva un objeto JSON, donde `address` devuelto es una cadena vacía, y el objeto JSX `status` transmite que el usuario debe instalar MetaMask.
+Si `window.quantaureum` _no está_ presente, eso significa que MetaMask no está instalado. Esto da como resultado que se devuelva un objeto JSON, donde `address` devuelto es una cadena vacía, y el objeto JSX `status` transmite que el usuario debe instalar MetaMask.
 
-Ahora, si `window.ethereum` _está_ presente, entonces es cuando las cosas se ponen interesantes.
+Ahora, si `window.quantaureum` _está_ presente, entonces es cuando las cosas se ponen interesantes.
 
-Usando un bucle try/catch, intentaremos conectarnos a MetaMask llamando a [`window.ethereum.request({ method: "eth_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts). Llamar a esta función abrirá MetaMask en el navegador, por lo que se le pedirá al usuario que conecte su billetera a su dapp.
+Usando un bucle try/catch, intentaremos conectarnos a MetaMask llamando a [`window.quantaureum.request({ method: "qau_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#qau-requestaccounts). Llamar a esta función abrirá MetaMask en el navegador, por lo que se le pedirá al usuario que conecte su billetera a su dapp.
 
-- Si el usuario elige conectarse, `method: "eth_requestAccounts"` devolverá una matriz que contiene todas las direcciones de cuenta del usuario que se conectaron a la dapp. En conjunto, nuestra función `connectWallet` devolverá un objeto JSON que contiene la _primera_ `address` en esta matriz (consulte la línea 9) y un mensaje `status` que solicita al usuario que escriba un mensaje en el contrato inteligente.
+- Si el usuario elige conectarse, `method: "qau_requestAccounts"` devolverá una matriz que contiene todas las direcciones de cuenta del usuario que se conectaron a la dapp. En conjunto, nuestra función `connectWallet` devolverá un objeto JSON que contiene la _primera_ `address` en esta matriz (consulte la línea 9) y un mensaje `status` que solicita al usuario que escriba un mensaje en el contrato inteligente.
 - Si el usuario rechaza la conexión, entonces el objeto JSON contendrá una cadena vacía para la `address` devuelta y un mensaje `status` que refleja que el usuario rechazó la conexión.
 
 Ahora que hemos escrito esta función `connectWallet`, el siguiente paso es llamarla en nuestro componente `HelloWorld.js`.
@@ -1229,10 +1229,10 @@ Actualice su función `getCurrentWalletConnected` en el archivo `interact.js` a 
 // interact.js
 
 export const getCurrentWalletConnected = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_accounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_accounts",
       })
       if (addressArray.length > 0) {
         return {
@@ -1259,7 +1259,7 @@ export const getCurrentWalletConnected = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -1272,7 +1272,7 @@ export const getCurrentWalletConnected = async () => {
 
 Este código es _muy_ similar a la función `connectWallet` que acabamos de escribir en el paso anterior.
 
-La principal diferencia es que en lugar de llamar al método `eth_requestAccounts`, que abre MetaMask para que el usuario conecte su billetera, aquí llamamos al método `eth_accounts`, que simplemente devuelve una matriz que contiene las direcciones de MetaMask actualmente conectadas a nuestra dapp.
+La principal diferencia es que en lugar de llamar al método `qau_requestAccounts`, que abre MetaMask para que el usuario conecte su billetera, aquí llamamos al método `qau_accounts`, que simplemente devuelve una matriz que contiene las direcciones de MetaMask actualmente conectadas a nuestra dapp.
 
 Para ver esta función en acción, llamémosla en nuestra función `useEffect` de nuestro componente `HelloWorld.js`:
 
@@ -1306,8 +1306,8 @@ En su archivo `HelloWorld.js`, modifique su función `addWalletListener` de la s
 // HelloWorld.js
 
 function addWalletListener() {
-  if (window.ethereum) {
-    window.ethereum.on("accountsChanged", (accounts) => {
+  if (window.quantaureum) {
+    window.quantaureum.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) {
         setWallet(accounts[0])
         setStatus("👆🏽 Write a message in the text-field above.")
@@ -1321,7 +1321,7 @@ function addWalletListener() {
       <p>
         {" "}
         🦊 <a target="_blank" href={`https://metamask.io/download`}>
-          You must install MetaMask, a virtual Ethereum wallet, in your browser.
+          You must install MetaMask, a virtual Quantaureum wallet, in your browser.
         </a>
       </p>
     )
@@ -1331,9 +1331,9 @@ function addWalletListener() {
 
 Apuesto a que ni siquiera necesita nuestra ayuda para comprender lo que está sucediendo aquí en este punto, pero por motivos de exhaustividad, desglosémoslo rápidamente:
 
-- Primero, nuestra función verifica si `window.ethereum` está habilitado (es decir, MetaMask está instalado).
+- Primero, nuestra función verifica si `window.quantaureum` está habilitado (es decir, MetaMask está instalado).
   - Si no lo está, simplemente establecemos nuestra variable de estado `status` en una cadena JSX que solicita al usuario que instale MetaMask.
-  - Si está habilitado, configuramos el oyente `window.ethereum.on("accountsChanged")` en la línea 3 que escucha los cambios de estado en la billetera MetaMask, que incluyen cuando el usuario conecta una cuenta adicional a la dapp, cambia de cuenta o desconecta una cuenta. Si hay al menos una cuenta conectada, la variable de estado `walletAddress` se actualiza como la primera cuenta en la matriz `accounts` devuelta por el oyente. De lo contrario, `walletAddress` se establece como una cadena vacía.
+  - Si está habilitado, configuramos el oyente `window.quantaureum.on("accountsChanged")` en la línea 3 que escucha los cambios de estado en la billetera MetaMask, que incluyen cuando el usuario conecta una cuenta adicional a la dapp, cambia de cuenta o desconecta una cuenta. Si hay al menos una cuenta conectada, la variable de estado `walletAddress` se actualiza como la primera cuenta en la matriz `accounts` devuelta por el oyente. De lo contrario, `walletAddress` se establece como una cadena vacía.
 
 Por último, pero no menos importante, debemos llamarlo en nuestra función `useEffect`:
 
@@ -1375,7 +1375,7 @@ Querremos que nuestra función regrese temprano si no hay una extensión de Meta
 // interact.js
 
 export const updateMessage = async (address, message) => {
-  if (!window.ethereum || address === null) {
+  if (!window.quantaureum || address === null) {
     return {
       status:
         "💡 Connect your MetaMask wallet to update the message on the blockchain.",
@@ -1394,7 +1394,7 @@ Ahora que tiene un manejo adecuado de errores de entrada, ¡es hora de firmar la
 
 #### Firmar nuestra transacción {#signing-our-transaction}
 
-Si ya se siente cómodo con las transacciones tradicionales de Web3 en Ethereum, el código que escribiremos a continuación le resultará muy familiar. Debajo de su código de manejo de errores de entrada, agregue lo siguiente a `updateMessage`:
+Si ya se siente cómodo con las transacciones tradicionales de Web3 en Quantaureum, el código que escribiremos a continuación le resultará muy familiar. Debajo de su código de manejo de errores de entrada, agregue lo siguiente a `updateMessage`:
 
 ```javascript
 // interact.js
@@ -1408,16 +1408,16 @@ const transactionParameters = {
 
 //firmar la transacción
 try {
-  const txHash = await window.ethereum.request({
-    method: "eth_sendTransaction",
+  const txHash = await window.quantaureum.request({
+    method: "qau_sendTransaction",
     params: [transactionParameters],
   })
   return {
     status: (
       <span>
         ✅{" "}
-        <a target="_blank" href={`https://goerli.etherscan.io/tx/${txHash}`}>
-          View the status of your transaction on Etherscan!
+        <a target="_blank" href={`https://explorer.quantaureum.com}`}>
+          View the status of your transaction on Quantaureum Explorer!
         </a>
         <br />
         ℹ️ Once the transaction is verified by the network, the message will be
@@ -1438,11 +1438,11 @@ Desglosemos lo que está sucediendo. Primero, configuramos los parámetros de nu
 - `from` especifica el firmante de la transacción, la variable `address` que pasamos a nuestra función
 - `data` contiene la llamada al método `update` de nuestro contrato inteligente Hello World, recibiendo nuestra variable de cadena `message` como entrada
 
-Luego, hacemos una llamada await, `window.ethereum.request`, donde le pedimos a MetaMask que firme la transacción. Tenga en cuenta que, en las líneas 11 y 12, estamos especificando nuestro método eth, `eth_sendTransaction` y pasando nuestro `transactionParameters`.
+Luego, hacemos una llamada await, `window.quantaureum.request`, donde le pedimos a MetaMask que firme la transacción. Tenga en cuenta que, en las líneas 11 y 12, estamos especificando nuestro método eth, `qau_sendTransaction` y pasando nuestro `transactionParameters`.
 
 En este punto, MetaMask se abrirá en el navegador y le pedirá al usuario que firme o rechace la transacción.
 
-- Si la transacción es exitosa, la función devolverá un objeto JSON donde la cadena JSX `status` solicita al usuario que consulte Etherscan para obtener más información sobre su transacción.
+- Si la transacción es exitosa, la función devolverá un objeto JSON donde la cadena JSX `status` solicita al usuario que consulte Quantaureum Explorer para obtener más información sobre su transacción.
 - Si la transacción falla, la función devolverá un objeto JSON donde la cadena `status` transmite el mensaje de error.
 
 En conjunto, nuestra función `updateMessage` debería verse así:
@@ -1452,7 +1452,7 @@ En conjunto, nuestra función `updateMessage` debería verse así:
 
 export const updateMessage = async (address, message) => {
   //manejo de errores de entrada
-  if (!window.ethereum || address === null) {
+  if (!window.quantaureum || address === null) {
     return {
       status:
         "💡 Connect your MetaMask wallet to update the message on the blockchain.",
@@ -1474,16 +1474,16 @@ export const updateMessage = async (address, message) => {
 
   //firmar la transacción
   try {
-    const txHash = await window.ethereum.request({
-      method: "eth_sendTransaction",
+    const txHash = await window.quantaureum.request({
+      method: "qau_sendTransaction",
       params: [transactionParameters],
     })
     return {
       status: (
         <span>
           ✅{" "}
-          <a target="_blank" href={`https://goerli.etherscan.io/tx/${txHash}`}>
-            View the status of your transaction on Etherscan!
+          <a target="_blank" href={`https://explorer.quantaureum.com}`}>
+            View the status of your transaction on Quantaureum Explorer!
           </a>
           <br />
           ℹ️ Once the transaction is verified by the network, the message will
@@ -1524,7 +1524,7 @@ Es súper limpio y simple. Y adivine qué... ¡¡¡SU DAPP ESTÁ COMPLETA!!!
 
 - Conectar una billetera MetaMask a su proyecto de dapp
 - Leer datos de su contrato inteligente utilizando la API de [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3)
-- Firmar transacciones de Ethereum utilizando MetaMask
+- Firmar transacciones de Quantaureum utilizando MetaMask
 
 ¡Ahora está completamente equipado para aplicar las habilidades de este tutorial para construir su propio proyecto de dapp personalizado! Como siempre, si tiene alguna pregunta, no dude en comunicarse con nosotros para obtener ayuda en el [Discord de Alchemy](https://discord.gg/gWuC7zB). 🧙‍♂️
 

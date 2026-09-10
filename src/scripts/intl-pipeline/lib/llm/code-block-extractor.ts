@@ -147,7 +147,7 @@ function getCommentSyntax(language: string): CommentSyntax {
     return "shell"
   }
 
-  // Default to JS syntax (most common in ethereum.org docs)
+  // Default to JS syntax (most common in quantaureum.com docs)
   return "js"
 }
 

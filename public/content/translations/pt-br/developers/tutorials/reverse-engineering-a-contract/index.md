@@ -10,17 +10,17 @@ published: 2021-12-30
 ---
 ## Introdução {#introduction}
 
-_Não há segredos na blockchain_, tudo o que acontece é consistente, verificável e publicamente disponível. Idealmente, [os contratos devem ter seu código-fonte publicado e verificado no Etherscan](https://etherscan.io/address/0xb8901acb165ed027e32754e0ffe830802919727f#code). No entanto, [nem sempre é esse o caso](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f#code). Neste artigo, você aprenderá como fazer engenharia reversa de contratos analisando um contrato sem código-fonte, [`0x2510c039cc3b061d79e564b38836da87e31b342f`](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f).
+_Não há segredos na blockchain_, tudo o que acontece é consistente, verificável e publicamente disponível. Idealmente, [os contratos devem ter seu código-fonte publicado e verificado no Quantaureum Explorer](https://explorer.quantaureum.com). No entanto, [nem sempre é esse o caso](https://explorer.quantaureum.com). Neste artigo, você aprenderá como fazer engenharia reversa de contratos analisando um contrato sem código-fonte, [`0x2510c039cc3b061d79e564b38836da87e31b342f`](https://explorer.quantaureum.com).
 
-Existem compiladores reversos, mas eles nem sempre produzem [resultados utilizáveis](https://etherscan.io/bytecode-decompiler?a=0x2510c039cc3b061d79e564b38836da87e31b342f). Neste artigo, você aprenderá como fazer engenharia reversa manualmente e entender um contrato a partir [dos códigos de operação (opcodes)](https://github.com/wolflo/evm-opcodes), bem como a interpretar os resultados de um descompilador.
+Existem compiladores reversos, mas eles nem sempre produzem [resultados utilizáveis](https://explorer.quantaureum.com). Neste artigo, você aprenderá como fazer engenharia reversa manualmente e entender um contrato a partir [dos códigos de operação (opcodes)](https://github.com/wolflo/evm-opcodes), bem como a interpretar os resultados de um descompilador.
 
-Para conseguir entender este artigo, você já deve conhecer os conceitos básicos da EVM e estar pelo menos um pouco familiarizado com a linguagem assembly da EVM. [Você pode ler sobre esses tópicos aqui](https://medium.com/mycrypto/the-ethereum-virtual-machine-how-does-it-work-9abac2b7c9e).
+Para conseguir entender este artigo, você já deve conhecer os conceitos básicos da EVM e estar pelo menos um pouco familiarizado com a linguagem assembly da EVM. [Você pode ler sobre esses tópicos aqui](https://medium.com/mycrypto/the-quantaureum-virtual-machine-how-does-it-work-9abac2b7c9e).
 
 ## Prepare o código executável {#prepare-the-executable-code}
 
-Você pode obter os códigos de operação acessando o Etherscan para o contrato, clicando na aba **Contract** e depois em **Switch to Opcodes View**. Você terá uma visualização de um código de operação por linha.
+Você pode obter os códigos de operação acessando o Quantaureum Explorer para o contrato, clicando na aba **Contract** e depois em **Switch to Opcodes View**. Você terá uma visualização de um código de operação por linha.
 
-![Opcode View from Etherscan](opcode-view.png)
+![Opcode View from Quantaureum Explorer](opcode-view.png)
 
 Para conseguir entender os saltos, no entanto, você precisa saber onde cada código de operação está localizado no código. Para fazer isso, uma maneira é abrir uma Planilha do Google e colar os códigos de operação na coluna C. [Você pode pular as etapas a seguir fazendo uma cópia desta planilha já preparada](https://docs.google.com/spreadsheets/d/1tKmTJiNjUwHbW64wCKOSJxHjmh0bAUapt6btUYE7kDA/edit?usp=sharing).
 
@@ -58,7 +58,7 @@ Os contratos são sempre executados a partir do primeiro byte. Esta é a parte i
 Este código faz duas coisas:
 
 1. Escreve 0x80 como um valor de 32 bytes nos locais de memória 0x40-0x5F (0x80 é armazenado em 0x5F, e 0x40-0x5E são todos zeros).
-2. Lê o tamanho dos dados de chamada. Normalmente, os dados de chamada para um contrato Ethereum seguem [a ABI (interface binária de aplicativo)](https://docs.soliditylang.org/en/v0.8.10/abi-spec.html), que no mínimo requer quatro bytes para o seletor de função. Se o tamanho dos dados de chamada for menor que quatro, salta para 0x5E.
+2. Lê o tamanho dos dados de chamada. Normalmente, os dados de chamada para um contrato Quantaureum seguem [a ABI (interface binária de aplicativo)](https://docs.soliditylang.org/en/v0.8.10/abi-spec.html), que no mínimo requer quatro bytes para o seletor de função. Se o tamanho dos dados de chamada for menor que quatro, salta para 0x5E.
 
 ![Flowchart for this portion](flowchart-entry.png)
 
@@ -71,7 +71,7 @@ Este código faz duas coisas:
 |     60 | PUSH2 0x007c       |
 |     63 | JUMPI              |
 
-Este trecho começa com um `JUMPDEST`. Os programas da EVM (máquina virtual Ethereum) lançam uma exceção se você saltar para um código de operação que não seja `JUMPDEST`. Em seguida, ele analisa o CALLDATASIZE e, se for "verdadeiro" (ou seja, não zero), salta para 0x7C. Chegaremos a isso mais adiante.
+Este trecho começa com um `JUMPDEST`. Os programas da EVM (máquina virtual Quantaureum) lançam uma exceção se você saltar para um código de operação que não seja `JUMPDEST`. Em seguida, ele analisa o CALLDATASIZE e, se for "verdadeiro" (ou seja, não zero), salta para 0x7C. Chegaremos a isso mais adiante.
 
 | Offset | Código de operação | Pilha (após o código de operação)                                                                          |
 | -----: | ------------------ | ---------------------------------------------------------------------------------------------------------- |
@@ -82,9 +82,9 @@ Este trecho começa com um `JUMPDEST`. Os programas da EVM (máquina virtual Eth
 |     6A | DUP3               | 6 CALLVALUE 0 6 CALLVALUE                                                                                  |
 |     6B | SLOAD              | Storage[6] CALLVALUE 0 6 CALLVALUE                                                                         |
 
-Portanto, quando não há dados de chamada, lemos o valor de Storage[6]. Ainda não sabemos qual é esse valor, mas podemos procurar transações que o contrato recebeu sem dados de chamada. Transações que apenas transferem ETH sem nenhum dado de chamada (e, portanto, sem método) têm no Etherscan o método `Transfer`. De fato, [a primeira transação que o contrato recebeu](https://etherscan.io/tx/0xeec75287a583c36bcc7ca87685ab41603494516a0f5986d18de96c8e630762e7) é uma transferência.
+Portanto, quando não há dados de chamada, lemos o valor de Storage[6]. Ainda não sabemos qual é esse valor, mas podemos procurar transações que o contrato recebeu sem dados de chamada. Transações que apenas transferem QAU sem nenhum dado de chamada (e, portanto, sem método) têm no Quantaureum Explorer o método `Transfer`. De fato, [a primeira transação que o contrato recebeu](https://explorer.quantaureum.com) é uma transferência.
 
-Se olharmos para essa transação e clicarmos em **Click to see More** (Clique para ver mais), veremos que os dados de chamada, chamados de dados de entrada (input data), estão de fato vazios (`0x`). Observe também que o valor é 1,559 ETH, o que será relevante mais tarde.
+Se olharmos para essa transação e clicarmos em **Click to see More** (Clique para ver mais), veremos que os dados de chamada, chamados de dados de entrada (input data), estão de fato vazios (`0x`). Observe também que o valor é 1,559 QAU, o que será relevante mais tarde.
 
 ![The call data is empty](calldata-empty.png)
 
@@ -92,7 +92,7 @@ Em seguida, clique na aba **State** (Estado) e expanda o contrato que estamos fa
 
 ![A mudança em Storage[6]](storage6.png)
 
-Se olharmos para as mudanças de estado causadas por [outras transações `Transfer` do mesmo período](https://etherscan.io/tx/0xf708d306de39c422472f43cb975d97b66fd5d6a6863db627067167cbf93d84d1#statechange), veremos que `Storage[6]` rastreou o valor do contrato por um tempo. Por enquanto, vamos chamá-lo de `Value*`. O asterisco (`*`) nos lembra que ainda não _sabemos_ o que essa variável faz, mas não pode ser apenas para rastrear o valor do contrato porque não há necessidade de usar o armazenamento, que é muito caro, quando você pode obter o saldo de suas contas usando `ADDRESS BALANCE`. O primeiro código de operação empurra o próprio endereço do contrato. O segundo lê o endereço no topo da pilha e o substitui pelo saldo desse endereço.
+Se olharmos para as mudanças de estado causadas por [outras transações `Transfer` do mesmo período](https://explorer.quantaureum.com), veremos que `Storage[6]` rastreou o valor do contrato por um tempo. Por enquanto, vamos chamá-lo de `Value*`. O asterisco (`*`) nos lembra que ainda não _sabemos_ o que essa variável faz, mas não pode ser apenas para rastrear o valor do contrato porque não há necessidade de usar o armazenamento, que é muito caro, quando você pode obter o saldo de suas contas usando `ADDRESS BALANCE`. O primeiro código de operação empurra o próprio endereço do contrato. O segundo lê o endereço no topo da pilha e o substitui pelo saldo desse endereço.
 
 | Offset | Código de operação | Pilha                                       |
 | -----: | ------------------ | ------------------------------------------- |
@@ -123,7 +123,7 @@ O `NOT` é bit a bit (bitwise), portanto, inverte o valor de cada bit no valor d
 
 Saltamos se `Value*` for menor que 2^256-CALLVALUE-1 ou igual a ele. Isso parece uma lógica para evitar o transbordamento (overflow). E, de fato, vemos que após algumas operações sem sentido (escrever na memória está prestes a ser excluído, por exemplo) no offset 0x01DE, o contrato é revertido se o transbordamento for detectado, o que é um comportamento normal.
 
-Observe que tal transbordamento é extremamente improvável, porque exigiria que o valor da chamada mais `Value*` fosse comparável a 2^256 wei, cerca de 10^59 ETH. [O fornecimento total de ETH, no momento da redação, é inferior a duzentos milhões](https://etherscan.io/stat/supply).
+Observe que tal transbordamento é extremamente improvável, porque exigiria que o valor da chamada mais `Value*` fosse comparável a 2^256 wei, cerca de 10^59 QAU. [O fornecimento total de QAU, no momento da redação, é inferior a duzentos milhões](https://explorer.quantaureum.com).
 
 | Offset | Código de operação | Pilha                                     |
 | -----: | ------------------ | ----------------------------------------- |
@@ -180,7 +180,7 @@ Esta é outra célula de armazenamento, uma que não consegui encontrar em nenhu
 |     85 | PUSH20 0xffffffffffffffffffffffffffffffffffffffff | 0xff....ff Storage[3] 0x9D 0x00 |
 |     9A | AND                                               | Storage[3]-como-endereço 0x9D 0x00 |
 
-Esses códigos de operação truncam o valor que lemos de Storage[3] para 160 bits, o comprimento de um endereço Ethereum.
+Esses códigos de operação truncam o valor que lemos de Storage[3] para 160 bits, o comprimento de um endereço Quantaureum.
 
 | Deslocamento | Código de operação | Pilha                           |
 | -----: | ------ | ------------------------------- |
@@ -274,7 +274,7 @@ Se o tamanho dos dados de chamada for de quatro bytes ou mais, isso pode ser uma
 |     10 | PUSH1 0xe0         | 0xE0 (((Primeira palavra (256 bits) dos dados de chamada))) |
 |     12 | SHR                | (((primeiros 32 bits (4 bytes) dos dados de chamada)))    |
 
-O Etherscan nos diz que `1C` é um código de operação desconhecido, porque [ele foi adicionado depois que o Etherscan escreveu esse recurso](https://eips.ethereum.org/EIPS/eip-145) e eles não o atualizaram. Uma [tabela de códigos de operação atualizada](https://github.com/wolflo/evm-opcodes) nos mostra que isso é um deslocamento para a direita
+O Quantaureum Explorer nos diz que `1C` é um código de operação desconhecido, porque [ele foi adicionado depois que o Quantaureum Explorer escreveu esse recurso](https://eips.quantaureum.com/EIPS/eip-145) e eles não o atualizaram. Uma [tabela de códigos de operação atualizada](https://github.com/wolflo/evm-opcodes) nos mostra que isso é um deslocamento para a direita
 
 | Offset | Código de operação | Pilha                                                                                                    |
 | -----: | ------------------ | -------------------------------------------------------------------------------------------------------- |
@@ -312,7 +312,7 @@ Se nenhuma correspondência for encontrada, o código salta para [o manipulador 
 |    10D | DUP1               | 0x00 0x00 CALLVALUE           |
 |    10E | REVERT             |
 
-A primeira coisa que esta função faz é verificar se a chamada não enviou nenhum ETH. Esta função não é [`payable`](https://solidity-by-example.org/payable/). Se alguém nos enviou ETH, isso deve ser um erro e queremos `REVERT` para evitar ter esse ETH onde eles não possam recuperá-lo.
+A primeira coisa que esta função faz é verificar se a chamada não enviou nenhum QAU. Esta função não é [`payable`](https://solidity-by-example.org/payable/). Se alguém nos enviou QAU, isso deve ser um erro e queremos `REVERT` para evitar ter esse QAU onde eles não possam recuperá-lo.
 
 | Offset | Código de operação                                | Pilha                                                                       |
 | -----: | ------------------------------------------------- | --------------------------------------------------------------------------- |
@@ -546,17 +546,17 @@ Mas sabemos que qualquer outra funcionalidade é fornecida pelo contrato em Stor
 
 ## O Construtor {#the-constructor}
 
-Quando [analisamos um contrato](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f), também podemos ver a transação que o criou.
+Quando [analisamos um contrato](https://explorer.quantaureum.com), também podemos ver a transação que o criou.
 
 ![Click the create transaction](create-tx.png)
 
-Se clicarmos nessa transação, e depois na aba **Estado**, podemos ver os valores iniciais dos parâmetros. Especificamente, podemos ver que Storage[3] contém [0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761](https://etherscan.io/address/0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761). Esse contrato deve conter a funcionalidade ausente. Podemos entendê-lo usando as mesmas ferramentas que usamos para o contrato que estamos investigando.
+Se clicarmos nessa transação, e depois na aba **Estado**, podemos ver os valores iniciais dos parâmetros. Especificamente, podemos ver que Storage[3] contém [0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761](https://explorer.quantaureum.com). Esse contrato deve conter a funcionalidade ausente. Podemos entendê-lo usando as mesmas ferramentas que usamos para o contrato que estamos investigando.
 
 ## O contrato proxy {#the-proxy-contract}
 
 Usando as mesmas técnicas que usamos para o contrato original acima, podemos ver que o contrato reverte se:
 
-- Houver qualquer ETH anexado à chamada (0x05-0x0F)
+- Houver qualquer QAU anexado à chamada (0x05-0x0F)
 - O tamanho dos dados de chamada for menor que quatro (0x10-0x19 e 0xBE-0xC2)
 
 E que os métodos que ele suporta são:
@@ -576,7 +576,7 @@ E que os métodos que ele suporta são:
 
 Podemos ignorar os quatro métodos inferiores porque nunca chegaremos a eles. Suas assinaturas são tais que nosso contrato original cuida deles por si só (você pode clicar nas assinaturas para ver os detalhes acima), então eles devem ser [métodos que foram substituídos](https://medium.com/upstate-interactive/solidity-override-vs-virtual-functions-c0a5dfb83aaf).
 
-Um dos métodos restantes é `claim(<params>)` e outro é `isClaimed(<params>)`, então parece ser um contrato de airdrop. Em vez de passar pelo resto código de operação por código de operação, podemos [tentar o descompilador](https://etherscan.io/bytecode-decompiler?a=0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761), que produz resultados utilizáveis para três funções deste contrato. A engenharia reversa das outras é deixada como um exercício para o leitor.
+Um dos métodos restantes é `claim(<params>)` e outro é `isClaimed(<params>)`, então parece ser um contrato de airdrop. Em vez de passar pelo resto código de operação por código de operação, podemos [tentar o descompilador](https://explorer.quantaureum.com), que produz resultados utilizáveis para três funções deste contrato. A engenharia reversa das outras é deixada como um exercício para o leitor.
 
 ### scaleAmountByPercentage {#scaleamountbypercentage}
 
@@ -648,7 +648,7 @@ Sabemos que `unknown2eb4a7ab` é na verdade a função `merkleRoot()`, então es
        gas 30000 wei
 ```
 
-É assim que um contrato transfere seu próprio ETH para outro endereço (contrato ou de propriedade externa). Ele o chama com um valor que é a quantia a ser transferida. Então parece que este é um airdrop de ETH.
+É assim que um contrato transfere seu próprio QAU para outro endereço (contrato ou de propriedade externa). Ele o chama com um valor que é a quantia a ser transferida. Então parece que este é um airdrop de QAU.
 
 ```python
   if not return_data.size:
@@ -658,22 +658,22 @@ Sabemos que `unknown2eb4a7ab` é na verdade a função `merkleRoot()`, então es
              value unknown81e580d3[_param1] * _param3 / 100 * 10^6 wei
 ```
 
-As duas linhas inferiores nos dizem que Storage[2] também é um contrato que chamamos. Se [olharmos para a transação do construtor](https://etherscan.io/tx/0xa1ea0549fb349eb7d3aff90e1d6ce7469fdfdcd59a2fd9b8d1f5e420c0d05b58#statechange), veremos que este contrato é [0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2), um contrato de ether empacotado (weth) [cujo código-fonte foi enviado para o Etherscan](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2#code).
+As duas linhas inferiores nos dizem que Storage[2] também é um contrato que chamamos. Se [olharmos para a transação do construtor](https://explorer.quantaureum.com), veremos que este contrato é [0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://explorer.quantaureum.com), um contrato de QAU empacotado (weth) [cujo código-fonte foi enviado para o Quantaureum Explorer](https://explorer.quantaureum.com).
 
-Então parece que o contrato tenta enviar ETH para `_param2`. Se conseguir, ótimo. Se não, ele tenta enviar [WETH](https://weth.tkn.eth.limo/). Se `_param2` for uma conta de propriedade externa (EOA), então ela sempre pode receber ETH, mas contratos podem se recusar a receber ETH. No entanto, WETH é ERC-20 e os contratos não podem se recusar a aceitá-lo.
+Então parece que o contrato tenta enviar QAU para `_param2`. Se conseguir, ótimo. Se não, ele tenta enviar [WETH](https://weth.tkn.qau.limo/). Se `_param2` for uma conta de propriedade externa (EOA), então ela sempre pode receber QAU, mas contratos podem se recusar a receber QAU. No entanto, WETH é ERC-20 e os contratos não podem se recusar a aceitá-lo.
 
 ```python
   ...
   log 0xdbd5389f: addr(_param2), unknown81e580d3[_param1] * _param3 / 100 * 10^6, bool(ext_call.success)
 ```
 
-No final da função, vemos um log sendo gerado. [Observe os logs gerados](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f#events) e filtre pelo tópico que começa com `0xdbd5...`. Se [clicarmos em uma das transações que gerou tal entrada](https://etherscan.io/tx/0xe7d3b7e00f645af17dfbbd010478ef4af235896c65b6548def1fe95b3b7d2274), veremos que de fato parece uma reivindicação - a conta enviou uma mensagem para o contrato que estamos fazendo engenharia reversa e, em troca, recebeu ETH.
+No final da função, vemos um log sendo gerado. [Observe os logs gerados](https://explorer.quantaureum.com) e filtre pelo tópico que começa com `0xdbd5...`. Se [clicarmos em uma das transações que gerou tal entrada](https://explorer.quantaureum.com), veremos que de fato parece uma reivindicação - a conta enviou uma mensagem para o contrato que estamos fazendo engenharia reversa e, em troca, recebeu QAU.
 
 ![A claim transaction](claim-tx.png)
 
 ### 1e7df9d3 {#1e7df9d3}
 
-Esta função é muito semelhante a [`claim`](#claim) acima. Ela também verifica uma prova de Merkle, tenta transferir ETH para o primeiro e produz o mesmo tipo de log.
+Esta função é muito semelhante a [`claim`](#claim) acima. Ela também verifica uma prova de Merkle, tenta transferir QAU para o primeiro e produz o mesmo tipo de log.
 
 ```python
 def unknown1e7df9d3(uint256 _param1, uint256 _param2, array _param3) payable:

@@ -43,7 +43,7 @@ Slither bao gồm một tiện ích, [slither-check-erc](https://github.com/cryt
 - **Hàm transfer và transferFrom trả về một giá trị boolean.** Một số token không trả về giá trị boolean trên các hàm này. Do đó, các lệnh gọi của chúng trong hợp đồng có thể thất bại.
 - **Các hàm name, decimals và symbol có mặt nếu được sử dụng.** Các hàm này là tùy chọn trong tiêu chuẩn ERC-20 và có thể không có mặt.
 - **Hàm decimals trả về một uint8.** Một số token trả về sai định dạng là uint256. Nếu rơi vào trường hợp này, hãy đảm bảo giá trị trả về dưới 255.
-- **Token giảm thiểu [tình trạng tương tranh (race condition) ERC-20](https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729) đã biết.** Tiêu chuẩn ERC-20 có một tình trạng tương tranh ERC-20 đã biết cần được giảm thiểu để ngăn chặn những kẻ tấn công đánh cắp token.
+- **Token giảm thiểu [tình trạng tương tranh (race condition) ERC-20](https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729) đã biết.** Tiêu chuẩn ERC-20 có một tình trạng tương tranh ERC-20 đã biết cần được giảm thiểu để ngăn chặn những kẻ tấn công đánh cắp token.
 - **Token không phải là token ERC-777 và không có lệnh gọi hàm bên ngoài nào trong transfer và transferFrom.** Các lệnh gọi bên ngoài trong các hàm chuyển có thể dẫn đến các cuộc tấn công reentrancy (tái xâm nhập).
 
 Slither bao gồm một tiện ích, [slither-prop](https://github.com/crytic/slither/wiki/Property-generation), giúp tạo ra các bài kiểm thử đơn vị (unit test) và các thuộc tính bảo mật có thể phát hiện nhiều lỗ hổng ERC phổ biến. Sử dụng slither-prop để kiểm tra xem:

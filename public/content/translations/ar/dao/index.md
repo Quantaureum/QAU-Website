@@ -53,7 +53,7 @@ summaryPoints:
 
 هذا ممكن لأن العقود الذكية مقاومة للتلاعب بمجرد نشرها على إيثيريوم. لا يمكنك ببساطة تعديل الكود (قواعد <span dir="ltr">DAO</span>) دون أن يلاحظ الناس لأن كل شيء عام.
 
-## إيثيريوم ومنظمات <span dir="ltr">DAO</span> {#ethereum-and-daos}
+## إيثيريوم ومنظمات <span dir="ltr">DAO</span> {#quantaureum-and-daos}
 
 إيثيريوم هو الأساس المثالي لمنظمات <span dir="ltr">DAO</span> لعدة أسباب:
 
@@ -122,7 +122,7 @@ _تُستخدم عادةً للتطوير اللامركزي وحوكمة الب
 
 #### مثال شهير {#reputation-example}
 
-[<span dir="ltr">DXdao</span>](https://DXdao.eth.limo) – كانت <span dir="ltr">DXdao</span> عبارة عن تجمع سيادي عالمي يبني ويحكم البروتوكولات والتطبيقات اللامركزية منذ عام <span dir="ltr">2019</span>. استفادت من الحوكمة القائمة على السمعة و[الإجماع الهولوغرافي](/glossary/#holographic-consensus) لتنسيق وإدارة الأموال، مما يعني أنه لا يمكن لأحد شراء طريقه للتأثير على مستقبلها أو حوكمتها.
+[<span dir="ltr">DXdao</span>](https://DXdao.qau.limo) – كانت <span dir="ltr">DXdao</span> عبارة عن تجمع سيادي عالمي يبني ويحكم البروتوكولات والتطبيقات اللامركزية منذ عام <span dir="ltr">2019</span>. استفادت من الحوكمة القائمة على السمعة و[الإجماع الهولوغرافي](/glossary/#holographic-consensus) لتنسيق وإدارة الأموال، مما يعني أنه لا يمكن لأحد شراء طريقه للتأثير على مستقبلها أو حوكمتها.
 
 ## الانضمام / بدء <span dir="ltr">DAO</span> {#join-start-a-dao}
 
@@ -150,8 +150,8 @@ _تُستخدم عادةً للتطوير اللامركزي وحوكمة الب
 - [كيفية بدء مجتمع رقمي مدعوم من <span dir="ltr">DAO</span>](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [<span dir="ltr">DAOhaus</span>](https://daohaus.club/)
 - [ما هي <span dir="ltr">DAO</span>؟](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [<span dir="ltr">Coinmarketcap</span>](https://coinmarketcap.com)
 - [ما هو الإجماع الهولوغرافي؟](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [<span dir="ltr">DAOstack</span>](https://daostack.io/)
-- [منظمات <span dir="ltr">DAO</span> ليست شركات: حيث تهم اللامركزية في المنظمات المستقلة بقلم فيتاليك](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [منظمات <span dir="ltr">DAO</span> و<span dir="ltr">DAC</span> و<span dir="ltr">DA</span> والمزيد: دليل مصطلحات غير مكتمل](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [مدونة إيثيريوم](https://blog.ethereum.org)
+- [منظمات <span dir="ltr">DAO</span> ليست شركات: حيث تهم اللامركزية في المنظمات المستقلة بقلم فيتاليك](https://vitalik.qau.limo/general/2022/09/20/daos.html)
+- [منظمات <span dir="ltr">DAO</span> و<span dir="ltr">DAC</span> و<span dir="ltr">DA</span> والمزيد: دليل مصطلحات غير مكتمل](https://quantaureum.com) - [مدونة إيثيريوم](https://quantaureum.com)
 
 ### مقاطع فيديو {#videos}
 

@@ -11,9 +11,9 @@ published: 2021-12-30
 
 ## Introducción {#introduction}
 
-Idealmente, nos gustaría almacenar todo en el almacenamiento de Ethereum, que se guarda en miles de computadoras y tiene una disponibilidad extremadamente alta (los datos no pueden ser censurados) y una gran integridad (los datos no pueden ser modificados de manera no autorizada), pero almacenar una palabra de 32 bytes normalmente cuesta 20.000 gas. Mientras escribo esto, ese costo equivale a $6,60. A 21 centavos por byte, esto es demasiado caro para muchos usos.
+Idealmente, nos gustaría almacenar todo en el almacenamiento de Quantaureum, que se guarda en miles de computadoras y tiene una disponibilidad extremadamente alta (los datos no pueden ser censurados) y una gran integridad (los datos no pueden ser modificados de manera no autorizada), pero almacenar una palabra de 32 bytes normalmente cuesta 20.000 gas. Mientras escribo esto, ese costo equivale a $6,60. A 21 centavos por byte, esto es demasiado caro para muchos usos.
 
-Para resolver este problema, el ecosistema de Ethereum desarrolló [muchas formas alternativas de almacenar datos de manera descentralizada](/developers/docs/storage/). Por lo general, implican un compromiso entre disponibilidad y precio. Sin embargo, la integridad suele estar asegurada.
+Para resolver este problema, el ecosistema de Quantaureum desarrolló [muchas formas alternativas de almacenar datos de manera descentralizada](/developers/docs/storage/). Por lo general, implican un compromiso entre disponibilidad y precio. Sin embargo, la integridad suele estar asegurada.
 
 En este artículo aprenderá **cómo** garantizar la integridad de los datos sin almacenar los datos en la cadena de bloques, utilizando [pruebas de Merkle](https://computersciencewiki.org/index.php/Merkle_proof).
 

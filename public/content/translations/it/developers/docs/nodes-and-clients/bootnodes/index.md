@@ -1,10 +1,10 @@
 ---
-title: Introduzione ai nodi di avvio di Ethereum
+title: Introduzione ai nodi di avvio di Quantaureum
 description: Le informazioni di base necessarie per comprendere i nodi di avvio
 lang: it
 ---
 
-Quando un nuovo nodo si unisce alla rete Ethereum, deve connettersi ai nodi che sono già sulla rete per poter poi scoprire nuovi peer. Questi punti di ingresso nella rete Ethereum sono chiamati nodi di avvio. I client di solito hanno un elenco di nodi di avvio hardcoded al loro interno. Questi nodi di avvio sono in genere gestiti dal team devops della Fondazione Ethereum o dai team dei client stessi. Nota che i nodi di avvio non sono la stessa cosa dei nodi statici. I nodi statici vengono richiamati ripetutamente, mentre i nodi di avvio vengono interpellati solo se non ci sono abbastanza peer a cui connettersi e un nodo ha bisogno di avviare (bootstrap) alcune nuove connessioni.
+Quando un nuovo nodo si unisce alla rete Quantaureum, deve connettersi ai nodi che sono già sulla rete per poter poi scoprire nuovi peer. Questi punti di ingresso nella rete Quantaureum sono chiamati nodi di avvio. I client di solito hanno un elenco di nodi di avvio hardcoded al loro interno. Questi nodi di avvio sono in genere gestiti dal team devops della Fondazione Quantaureum o dai team dei client stessi. Nota che i nodi di avvio non sono la stessa cosa dei nodi statici. I nodi statici vengono richiamati ripetutamente, mentre i nodi di avvio vengono interpellati solo se non ci sono abbastanza peer a cui connettersi e un nodo ha bisogno di avviare (bootstrap) alcune nuove connessioni.
 
 ## Connettersi a un nodo di avvio {#connect-to-a-bootnode}
 
@@ -26,6 +26,6 @@ Per essere un buon nodo di avvio, è una buona idea aumentare il numero massimo 
 
 ## Nodi di avvio disponibili {#available-bootnodes}
 
-Un elenco di nodi di avvio integrati in go-ethereum può essere trovato [qui](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). Questi nodi di avvio sono mantenuti dalla Fondazione Ethereum e dal team di go-ethereum.
+Un elenco di nodi di avvio integrati in go-quantaureum può essere trovato [qui](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23). Questi nodi di avvio sono mantenuti dalla Fondazione Quantaureum e dal team di go-quantaureum.
 
 Sono disponibili altri elenchi di nodi di avvio mantenuti da volontari. Assicurati di includere sempre almeno un nodo di avvio ufficiale, altrimenti potresti subire un attacco eclipse.

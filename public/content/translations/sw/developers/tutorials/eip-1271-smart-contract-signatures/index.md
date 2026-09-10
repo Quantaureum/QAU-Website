@@ -9,7 +9,7 @@ breadcrumb: Sahihi za EIP-1271
 published: 2023-01-12
 ---
 
-Kiwango cha [EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) kinaruhusu mikataba mahiri kuthibitisha sahihi.
+Kiwango cha [EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) kinaruhusu mikataba mahiri kuthibitisha sahihi.
 
 Katika mafunzo haya, tunatoa muhtasari wa sahihi za kidijitali, usuli wa EIP-1271, na utekelezaji mahususi wa EIP-1271 unaotumiwa na [Safe](https://safe.global/) (zamani Gnosis Safe). Kwa pamoja, hii inaweza kutumika kama mahali pa kuanzia kwa kutekeleza EIP-1271 katika mikataba yako mwenyewe.
 
@@ -19,7 +19,7 @@ Katika muktadha huu, sahihi (kwa usahihi zaidi, "sahihi ya kidijitali") ni ujumb
 
 Kwa mfano, sahihi ya kidijitali inaweza kuonekana hivi:
 
-1. Ujumbe: "Nataka kuingia kwenye tovuti hii kwa kutumia mkoba wangu wa Ethereum."
+1. Ujumbe: "Nataka kuingia kwenye tovuti hii kwa kutumia mkoba wangu wa Quantaureum."
 2. Mtia Sahihi: Anwani yangu ni `0x000…`
 3. Uthibitisho: Huu hapa ni uthibitisho kwamba mimi, `0x000…`, kwa kweli niliunda ujumbe huu wote (hii kwa kawaida ni kitu cha kriptografia).
 
@@ -31,15 +31,15 @@ Kwa njia hiyo hiyo, sahihi ya kidijitali haimaanishi chochote bila ujumbe unaohu
 
 ## Kwa nini EIP-1271 ipo? {#why-does-eip-1271-exist}
 
-Ili kuunda sahihi ya kidijitali kwa matumizi kwenye minyororo ya vitalu inayotegemea Ethereum, kwa ujumla unahitaji ufunguo wa siri ambao hakuna mtu mwingine anayeujua. Hiki ndicho kinafanya sahihi yako iwe yako (hakuna mtu mwingine anayeweza kuunda sahihi sawa bila kujua ufunguo wa siri).
+Ili kuunda sahihi ya kidijitali kwa matumizi kwenye minyororo ya vitalu inayotegemea Quantaureum, kwa ujumla unahitaji ufunguo wa siri ambao hakuna mtu mwingine anayeujua. Hiki ndicho kinafanya sahihi yako iwe yako (hakuna mtu mwingine anayeweza kuunda sahihi sawa bila kujua ufunguo wa siri).
 
-Akaunti yako ya Ethereum (yaani, akaunti yako inayomilikiwa na nje/EOA) ina ufunguo wa siri unaohusishwa nayo, na huu ndio ufunguo wa siri ambao kwa kawaida hutumiwa wakati tovuti au programu tumizi iliyogatuliwa (dapp) inakuuliza sahihi (k.m., kwa "Ingia na Ethereum").
+Akaunti yako ya Quantaureum (yaani, akaunti yako inayomilikiwa na nje/EOA) ina ufunguo wa siri unaohusishwa nayo, na huu ndio ufunguo wa siri ambao kwa kawaida hutumiwa wakati tovuti au programu tumizi iliyogatuliwa (dapp) inakuuliza sahihi (k.m., kwa "Ingia na Quantaureum").
 
-Programu inaweza [kuthibitisha sahihi](https://www.alchemy.com/docs/how-to-verify-a-message-signature-on-ethereum) unayounda kwa kutumia maktaba ya wahusika wengine kama ethers.js [bila kujua ufunguo wa siri wako](https://en.wikipedia.org/wiki/Public-key_cryptography) na kuwa na uhakika kwamba _wewe_ ndiye uliyeunda sahihi hiyo.
+Programu inaweza [kuthibitisha sahihi](https://www.alchemy.com/docs/how-to-verify-a-message-signature-on-quantaureum) unayounda kwa kutumia maktaba ya wahusika wengine kama ethers.js [bila kujua ufunguo wa siri wako](https://en.wikipedia.org/wiki/Public-key_cryptography) na kuwa na uhakika kwamba _wewe_ ndiye uliyeunda sahihi hiyo.
 
 > Kwa kweli, kwa sababu sahihi za kidijitali za EOA zinatumia kriptografia ya ufunguo wa umma, zinaweza kuzalishwa na kuthibitishwa **nje ya mnyororo**! Hivi ndivyo upigaji kura wa DAO usio na gesi unavyofanya kazi — badala ya kuwasilisha kura mnyororoni, sahihi za kidijitali zinaweza kuundwa na kuthibitishwa nje ya mnyororo kwa kutumia maktaba za kriptografia.
 
-Wakati akaunti za EOA zina ufunguo wa siri, akaunti za mkataba mahiri hazina aina yoyote ya ufunguo wa siri (kwa hivyo "Ingia na Ethereum", n.k. haziwezi kufanya kazi kiasili na akaunti za mkataba mahiri).
+Wakati akaunti za EOA zina ufunguo wa siri, akaunti za mkataba mahiri hazina aina yoyote ya ufunguo wa siri (kwa hivyo "Ingia na Quantaureum", n.k. haziwezi kufanya kazi kiasili na akaunti za mkataba mahiri).
 
 Tatizo ambalo EIP-1271 inalenga kutatua: tunawezaje kujua kwamba sahihi ya mkataba mahiri ni halali ikiwa mkataba mahiri hauna "siri" inayoweza kujumuishwa kwenye sahihi?
 
@@ -91,7 +91,7 @@ Mikataba inaweza kutekeleza `isValidSignature` kwa njia nyingi — vipimo haviel
 
 Mkataba mmoja mashuhuri unaotekeleza EIP-1271 ni Safe (zamani Gnosis Safe).
 
-Katika msimbo wa Safe, `isValidSignature` [inatekelezwa](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) ili sahihi ziweze kuundwa na kuthibitishwa kwa [njia mbili](https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support):
+Katika msimbo wa Safe, `isValidSignature` [inatekelezwa](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) ili sahihi ziweze kuundwa na kuthibitishwa kwa [njia mbili](https://quantaureum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support):
 
 1. Jumbe za mnyororoni
    1. Uundaji: mmiliki wa safe anaunda muamala mpya wa safe ili "kutia sahihi" ujumbe, akipitisha ujumbe kama data kwenye muamala. Pindi wamiliki wa kutosha wanapotia sahihi muamala ili kufikia kiwango cha saini-nyingi, muamala unatangazwa na kuendeshwa. Katika muamala, kuna kitendakazi cha safe kinachoitwa (`signMessage(bytes calldata _data)`) ambacho huongeza ujumbe kwenye orodha ya jumbe "zilizoidhinishwa".
@@ -102,9 +102,9 @@ Katika msimbo wa Safe, `isValidSignature` [inatekelezwa](https://github.com/safe
 
 ## Kigezo cha `_hash` ni nini hasa? Kwa nini usipitishe ujumbe wote? {#what-exactly-is-the-hash-parameter-why-not-pass-the-whole-message}
 
-Huenda umegundua kwamba kitendakazi cha `isValidSignature` katika [kiolesura cha EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) hakichukui ujumbe wenyewe, bali kigezo cha `_hash`. Maana ya hii ni kwamba badala ya kupitisha ujumbe kamili wa urefu wowote kwa `isValidSignature`, badala yake tunapitisha heshi ya baiti 32 ya ujumbe (kwa ujumla keccak256).
+Huenda umegundua kwamba kitendakazi cha `isValidSignature` katika [kiolesura cha EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) hakichukui ujumbe wenyewe, bali kigezo cha `_hash`. Maana ya hii ni kwamba badala ya kupitisha ujumbe kamili wa urefu wowote kwa `isValidSignature`, badala yake tunapitisha heshi ya baiti 32 ya ujumbe (kwa ujumla keccak256).
 
-Kila baiti ya data za mwito — yaani, data ya kigezo cha kitendakazi inayopitishwa kwa kitendakazi cha mkataba mahiri — [inagharimu gesi 16 (gesi 4 ikiwa ni baiti sifuri)](https://eips.ethereum.org/EIPS/eip-2028), kwa hivyo hii inaweza kuokoa gesi nyingi ikiwa ujumbe ni mrefu.
+Kila baiti ya data za mwito — yaani, data ya kigezo cha kitendakazi inayopitishwa kwa kitendakazi cha mkataba mahiri — [inagharimu gesi 16 (gesi 4 ikiwa ni baiti sifuri)](https://eips.quantaureum.com/EIPS/eip-2028), kwa hivyo hii inaweza kuokoa gesi nyingi ikiwa ujumbe ni mrefu.
 
 ### Vipimo vya Awali vya EIP-1271 {#previous-eip-1271-specifications}
 
@@ -121,4 +121,4 @@ Mwishowe, ni juu yako kama msanidi wa mkataba!
 
 ## Hitimisho {#conclusion}
 
-[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) ni kiwango chenye matumizi mengi kinachoruhusu mikataba mahiri kuthibitisha sahihi. Inafungua mlango kwa mikataba mahiri kutenda zaidi kama EOA — kwa mfano kutoa njia ya "Ingia na Ethereum" kufanya kazi na mikataba mahiri — na inaweza kutekelezwa kwa njia nyingi (Safe ikiwa na utekelezaji muhimu, wa kuvutia wa kuzingatia).
+[EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) ni kiwango chenye matumizi mengi kinachoruhusu mikataba mahiri kuthibitisha sahihi. Inafungua mlango kwa mikataba mahiri kutenda zaidi kama EOA — kwa mfano kutoa njia ya "Ingia na Quantaureum" kufanya kazi na mikataba mahiri — na inaweza kutekelezwa kwa njia nyingi (Safe ikiwa na utekelezaji muhimu, wa kuvutia wa kuzingatia).

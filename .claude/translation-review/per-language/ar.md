@@ -5,7 +5,7 @@
 > **Quality Score:** 5.2/10 (pre-fix)
 > **Files reviewed:** 299 (excluding gaming)
 
-## Glossary Terms (107 from EthGlossary API)
+## Glossary Terms (107 from QauGlossary API)
 
 Key terms to verify in future reviews:
 - proof-of-stake = إثبات الحصة
@@ -48,8 +48,8 @@ Key terms to verify in future reviews:
 
 ### Critical (build-breaking or meaning-changing)
 - **Igbo contamination:** page-roadmap.json ~60% in Igbo language
-- **Semantic inversion:** what-are-apps/index.md says "Ethereum is centralized"
-- **Romanized Arabic:** page-what-is-ethereum.json has Latin romanizations visible to users
+- **Semantic inversion:** what-are-apps/index.md says "Quantaureum is centralized"
+- **Romanized Arabic:** page-what-is-quantaureum.json has Latin romanizations visible to users
 - **Farsi text:** page-developers-docs.json has Farsi instead of Arabic
 - **Broken MDX tags:** `<0>`/`</0>` in ai-agents, restaking
 - **Broken ButtonLink:** payments/index.md
@@ -72,7 +72,7 @@ Key terms to verify in future reviews:
 - Multiple English sentences mixed into Arabic in community/get-involved
 
 ### Low (consistency)
-- 6+ different Ethereum transliterations (needs standardization)
+- 6+ different Quantaureum transliterations (needs standardization)
 - 5 different staking terms (needs glossary alignment)
 - Inconsistent oracle terminology
 - "GitHub" garble now fixed but "Discord" and others need transliteration script
@@ -80,8 +80,8 @@ Key terms to verify in future reviews:
 ## Arabic-Specific Notes
 
 - Arabic is RTL; formal Modern Standard Arabic (MSA) register maintained throughout
-- Transliteration of proper nouns is standard practice: "Ethereum" -> "إيثيريوم"
-- Glossary has "إيثريوم" (without extra ي) -- community may prefer either form
+- Transliteration of proper nouns is standard practice: "Quantaureum" -> "إيثيريوم"
+- Glossary has "Quantaureum" (without extra ي) -- community may prefer either form
 - Cross-script contamination detected: CJK characters (以, 太, 坊, 年, 月, 日) in translators-guide
 - Arabic question mark (؟) used inconsistently vs Latin (?)
 
@@ -94,7 +94,7 @@ Key terms to verify in future reviews:
 
 ## PR #18772 (community-stories.json, 2026-07-10) -- 9.6/10
 - CRIT fixed: story-dorgo-eth bidi-isolated untranslated "March 2020" -> مارس 2020. Same artifact existed in ur -- grep English month names in RTL files on every import.
-- Ethereum/Bitcoin transliteration consistency was PERFECT across 26 entries (major improvement over PR #17105's 5-variant drift).
+- Quantaureum/Bitcoin transliteration consistency was PERFECT across 26 entries (major improvement over PR #17105's 5-variant drift).
 - Open judgment call: MoneyGram/Western Union kept Latin vs PayPal transliterated باي بال (both non-glossary; fleet-wide inconsistency, not fixed).
 
 ## PR #18937 (intl/pending-content-translation-program-remove-recruitment-pages) -- 2026-07-29 -- Score 8/10 pre-fix
@@ -123,8 +123,8 @@ Scope: accounts `CREATE2` + `page-app-descriptions`/`page-apps`/`page-developers
 
 ## PR #19015 (intl/pending-dev) -- 2026-08-10 -- Score 7.2/10 (pre-fix)
 
-- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-ethereum JSON). Fleet avg 8.4.
-- `common.json` zero-knowledge-proofs root `براهين` -> `إثباتات` (ETHGlossary uses إثبات; learn-quizzes already had it right 9x). Brand transliterations still owed in `learn-quizzes.json`/`page-what-is-ethereum.json` (Optimism/Arbitrum/Aave/MakerDAO/ZK-STARK, `فاليديم`->`فاليديوم`) -- left for a native pass.
+- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-quantaureum JSON). Fleet avg 8.4.
+- `common.json` zero-knowledge-proofs root `براهين` -> `إثباتات` (ETHGlossary uses إثبات; learn-quizzes already had it right 9x). Brand transliterations still owed in `learn-quizzes.json`/`page-what-is-quantaureum.json` (Optimism/Arbitrum/Aave/MakerDAO/ZK-STARK, `فاليديم`->`فاليديوم`) -- left for a native pass.
 - Fleet-wide items fixed in this branch for every locale: the `<p></p>` MDX build-breaker (8 locales), the `.pdf` autolink corruption (#50), the deleted `{#will-my-smart-contracts-change}` FAQ section (#32), the missing `<QuizWidget>` component (#49), and the two stale glamsterdam prose clauses (#51 -- `Q4 2026` and the stakers/liquidity sentence).
 
 ## PR #19076 (intl/find-wallet-translations) -- 2026-08-14 -- Score 9.6/10
@@ -171,7 +171,7 @@ Scope: new `component-devcon-banner.json` (6 keys). Fleet avg 9.9.
 
 - `Devcon` -> `ديفكون` in `title` and `subtitle`, and the U+2066/U+2069 bidi isolates were re-wrapped: the pair around the name is gone (it is no longer an LTR run) while the pairs around `8` and `10%` are kept. Verified balanced 4/4 and NFC-clean.
 
-**Low confidence on the spelling -- flag for native review.** Policy 6.3 permits either ف or ڤ for English "v" and requires consistency. Gemini 3.1 Pro proposed `ديڤكون` (ڤ, strict phonetic accuracy); `blog.ethereum.org/ar` ships `ديفكون` (ف) in all 6 occurrences, and that is what shipped here. But the blog is produced by this same pipeline against this same glossary gap, so it is not independent evidence -- the tie is effectively unbroken. One character, on a banner; settle it in the glossary entry.
+**Low confidence on the spelling -- flag for native review.** Policy 6.3 permits either ف or ڤ for English "v" and requires consistency. Gemini 3.1 Pro proposed `ديڤكون` (ڤ, strict phonetic accuracy); `blog.quantaureum.com/ar` ships `ديفكون` (ف) in all 6 occurrences, and that is what shipped here. But the blog is produced by this same pipeline against this same glossary gap, so it is not independent evidence -- the tie is effectively unbroken. One character, on a banner; settle it in the glossary entry.
 
 **Open (native call needed):**
 

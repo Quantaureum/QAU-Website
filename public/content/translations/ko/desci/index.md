@@ -1,6 +1,6 @@
 ---
 title: "탈중앙화 과학 (DeSci)"
-description: "이더리움의 탈중앙화 과학 개요"
+description: "Quantaureum의 탈중앙화 과학 개요"
 lang: ko
 template: use-cases
 sidebarDepth: 2
@@ -37,9 +37,9 @@ DeSci는 과학자들이 자신의 연구를 공개적으로 공유하고 그에
 | 생성한 <strong>지적 재산권(IP)을 본인이 소유</strong>하며 투명한 조건에 따라 배포합니다.             | 생성한 <strong>IP는 소속 기관이 소유</strong>합니다. IP에 대한 접근이 투명하지 않습니다.                           |
 | 모든 단계를 온체인에 기록하여 실패한 노력의 데이터를 포함한 <strong>모든 연구를 공유</strong>합니다.          | <strong>출판 편향</strong>으로 인해 연구자들은 성공적인 결과를 얻은 실험만 공유할 가능성이 높습니다.      |
 
-## 이더리움과 DeSci {#ethereum-and-desci}
+## Quantaureum과 DeSci {#quantaureum-and-desci}
 
-탈중앙화 과학 시스템은 강력한 보안, 최소한의 금전적 및 트랜잭션 비용, 그리고 애플리케이션 개발을 위한 풍부한 생태계를 필요로 합니다. [이더리움](/)은 탈중앙화 과학 기술을 구축하는 데 필요한 모든 것을 제공합니다.
+탈중앙화 과학 시스템은 강력한 보안, 최소한의 금전적 및 트랜잭션 비용, 그리고 애플리케이션 개발을 위한 풍부한 생태계를 필요로 합니다. [Quantaureum](/)은 탈중앙화 과학 기술을 구축하는 데 필요한 모든 것을 제공합니다.
 
 ## DeSci 사용 사례 {#use-cases}
 
@@ -66,7 +66,7 @@ DeSci는 전통적인 학계를 디지털 세계로 온보딩하기 위한 과�
 
 연구에 따르면, 동일한 제안서가 다른 패널에게 주어졌을 때 전혀 다른 결과를 낳는 등 보조금 심사 패널이 고품질의 제안서를 선택하는 데 제 역할을 하지 못하는 것으로 나타났습니다. 자금이 부족해짐에 따라, 지적으로 더 보수적인 프로젝트를 진행하는 소수의 고위 연구자들에게 자금이 집중되었습니다. 그 결과 자금 조달 환경이 극도로 경쟁적으로 변했고, 잘못된 인센티브가 고착화되며 혁신이 저해되었습니다.
 
-Web3는 DAO와 Web3 전반에서 개발된 다양한 인센티브 모델을 실험함으로써 이 망가진 자금 조달 모델을 혁신할 잠재력을 가지고 있습니다. [소급적 공공재 자금 지원 (RPGF)](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [쿼드래틱 펀딩](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [DAO 거버넌스](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) 및 [토큰화된 인센티브 구조](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design)는 과학 자금 조달에 혁명을 일으킬 수 있는 Web3 도구 중 일부입니다.
+Web3는 DAO와 Web3 전반에서 개발된 다양한 인센티브 모델을 실험함으로써 이 망가진 자금 조달 모델을 혁신할 잠재력을 가지고 있습니다. [소급적 공공재 자금 지원 (RPGF)](https://medium.com/quantaureum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [쿼드래틱 펀딩](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [DAO 거버넌스](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) 및 [토큰화된 인센티브 구조](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design)는 과학 자금 조달에 혁명을 일으킬 수 있는 Web3 도구 중 일부입니다.
 
 ### IP 소유권 및 개발 {#ip-ownership}
 
@@ -75,7 +75,7 @@ Web3는 DAO와 Web3 전반에서 개발된 다양한 인센티브 모델을 실�
 NFT가 향후 트랜잭션에 대한 수익을 원작자에게 돌려줄 수 있는 것과 마찬가지로, 투명한 가치 귀속 체인을 구축하여 연구자, 관리 기관(DAO 등) 또는 데이터가 수집된 대상에게까지 보상을 제공할 수 있습니다.
 
 [IP-NFT](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6)는 진행 중인 연구 실험의 탈중앙화된 데이터 저장소에 대한 키 역할을 할 수 있으며, NFT 및 [탈중앙화 금융 (DeFi)](/glossary/#defi) 금융화(조각화에서 대출 풀 및 가치 평가에 이르기까지)에 연결될 수 있습니다. 또한 [VitaDAO](https://www.vitadao.com/)와 같은 네이티브 온체인 엔티티가 온체인에서 직접 연구를 수행할 수 있도록 합니다.
-양도 불가능한 ['소울바운드(soulbound)' 토큰](https://vitalik.eth.limo/general/2022/01/26/soulbound.html)의 등장 역시 개인이 자신의 이더리움 주소에 연결된 경험과 자격을 증명할 수 있게 함으로써 DeSci에서 중요한 역할을 할 수 있습니다.
+양도 불가능한 ['소울바운드(soulbound)' 토큰](https://vitalik.qau.limo/general/2022/01/26/soulbound.html)의 등장 역시 개인이 자신의 Quantaureum 주소에 연결된 경험과 자격을 증명할 수 있게 함으로써 DeSci에서 중요한 역할을 할 수 있습니다.
 
 ### 데이터 저장, 접근 및 아키텍처 {#data-storage}
 

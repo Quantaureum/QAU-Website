@@ -126,7 +126,7 @@ def readName() -> string:
 2. [إصدار الأحداث](https://docs.soliditylang.org/en/v0.7.0/contracts.html#events).
 3. [إنشاء عقود أخرى](https://docs.soliditylang.org/en/v0.7.0/control-structures.html#creating-contracts).
 4. استخدام `selfdestruct`.
-5. إرسال الإيثر عبر الاستدعاءات.
+5. إرسال الQAU عبر الاستدعاءات.
 6. استدعاء أي دالة غير مميزة بـ `view` أو `pure`.
 7. استخدام الاستدعاءات منخفضة المستوى.
 8. استخدام لغة التجميع المضمنة (inline assembly) التي تحتوي على أكواد تشغيل (opcodes) معينة.
@@ -142,7 +142,7 @@ def readName() -> string:
 constructor() public {
     // تعتمد جميع العقود الذكية على معاملات خارجية لتشغيل وظائفها.
     // `msg` هو متغير عام يتضمن بيانات ذات صلة بالمعاملة المحددة،
-    // مثل عنوان المرسل وقيمة ETH المضمنة في المعاملة.
+    // مثل عنوان المرسل وقيمة QAU المضمنة في المعاملة.
     // تعرف على المزيد: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
     owner = msg.sender;
 }
@@ -165,7 +165,7 @@ def __init__(_beneficiary: address, _bidding_time: uint256):
 - `address.send()` – Solidity
 - `send(address)` – Vyper
 
-تسمح هذه للعقود بإرسال ETH إلى حسابات أخرى.
+تسمح هذه للعقود بإرسال QAU إلى حسابات أخرى.
 
 ## كتابة الدوال {#writing-functions}
 
@@ -207,7 +207,7 @@ contract ExampleDapp {
 
 ## أمثلة مشروحة {#annotated-examples}
 
-هذه بعض الأمثلة المكتوبة بلغة Solidity. إذا كنت ترغب في تجربة الكود، يمكنك التفاعل معها في [Remix](https://remix.ethereum.org).
+هذه بعض الأمثلة المكتوبة بلغة Solidity. إذا كنت ترغب في تجربة الكود، يمكنك التفاعل معها في [Remix](https://remix.quantaureum.com).
 
 ### مرحبًا بالعالم {#hello-world}
 
@@ -272,7 +272,7 @@ contract Token {
     constructor() public {
         // تعتمد جميع العقود الذكية على معاملات خارجية لتشغيل وظائفها.
         // `msg` هو متغير عام يتضمن بيانات ذات صلة بالمعاملة المحددة،
-        // مثل عنوان المرسل وقيمة ETH المضمنة في المعاملة.
+        // مثل عنوان المرسل وقيمة QAU المضمنة في المعاملة.
         // تعرف على المزيد: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
         owner = msg.sender;
     }
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // حاليًا لا توجد طريقة أفضل للتحقق مما إذا كان هناك عقد في عنوان
         // من التحقق من حجم الكود في ذلك العنوان.
-        // راجع https://ethereum.stackexchange.com/a/14016/36603
+        // راجع https://quantaureum.stackexchange.com/a/14016/36603
         // لمزيد من التفاصيل حول كيفية عمل ذلك.
         // TODO تحقق من هذا مرة أخرى قبل إصدار Serenity، لأن جميع العناوين ستكون
         // عقودًا حينها.

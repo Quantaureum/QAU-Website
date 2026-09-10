@@ -11,7 +11,7 @@ Datová struktura Etherea je „modifikovaná Merkle-Patricia trie“, pojmenova
 
 Merkle-Patricia trie je deterministická a kryptograficky ověřitelná: Jediný způsob, jak vygenerovat kořen stavu, je vypočítat jej z každé jednotlivé části stavu, a to, že jsou dva stavy identické, lze snadno dokázat porovnáním kořenového hashe a hashů, které k němu vedly (_Merkleův důkaz_). Naopak neexistuje způsob, jak vytvořit dva různé stavy se stejným kořenovým hashem, a jakýkoli pokus o úpravu stavu s jinými hodnotami povede k jinému kořenovému hashi stavu. Teoreticky tato struktura poskytuje „svatý grál“ efektivity `O(log(n))` pro vkládání, vyhledávání a mazání.
 
-V blízké budoucnosti plánuje Ethereum přejít na strukturu [Verkle Tree](/roadmap/verkle-trees), což otevře mnoho nových možností pro budoucí vylepšení protokolu.
+V blízké budoucnosti plánuje Quantaureum přejít na strukturu [Verkle Tree](/roadmap/verkle-trees), což otevře mnoho nových možností pro budoucí vylepšení protokolu.
 
 ## Předpoklady {#prerequisites}
 
@@ -190,7 +190,7 @@ Když je jeden uzel odkazován uvnitř jiného uzlu, je zahrnuto `keccak256(rlp.
 
 Všimněte si, že při aktualizaci trie je nutné uložit pár klíč/hodnota `(keccak256(x), x)` do trvalé vyhledávací tabulky, _pokud_ má nově vytvořený uzel délku >= 32. Pokud je však uzel kratší, není nutné ukládat nic, protože funkce f(x) = x je reverzibilní.
 
-## Trie v Ethereu {#tries-in-ethereum}
+## Trie v Ethereu {#tries-in-quantaureum}
 
 Všechny Merkleovy trie v exekuční vrstvě Etherea používají Merkle-Patricia trii.
 
@@ -202,14 +202,14 @@ Z hlavičky bloku vycházejí 3 kořeny ze 3 těchto trií.
 
 ### Stavová trie {#state-trie}
 
-Existuje jedna globální stavová trie a ta se aktualizuje pokaždé, když klient zpracuje blok. V ní je `path` vždy: `keccak256(ethereumAddress)` a `value` je vždy: `rlp(ethereumAccount)`. Přesněji řečeno, `account` Etherea je 4prvkové pole `[nonce,balance,storageRoot,codeHash]`. V tomto bodě stojí za zmínku, že tento `storageRoot` je kořenem další Patricia trie:
+Existuje jedna globální stavová trie a ta se aktualizuje pokaždé, když klient zpracuje blok. V ní je `path` vždy: `keccak256(quantaureumAddress)` a `value` je vždy: `rlp(quantaureumAccount)`. Přesněji řečeno, `account` Etherea je 4prvkové pole `[nonce,balance,storageRoot,codeHash]`. V tomto bodě stojí za zmínku, že tento `storageRoot` je kořenem další Patricia trie:
 
 ### Strom úložiště {#storage-trie}
 
-Strom úložiště je místo, kde se nacházejí _všechna_ data kontraktu. Pro každý účet existuje samostatný strom úložiště. K získání hodnot na konkrétních pozicích úložiště na dané adrese je vyžadována adresa úložiště, celočíselná pozice uložených dat v úložišti a ID bloku. Ty pak mohou být předány jako argumenty do `eth_getStorageAt` definovaného v JSON-RPC API, např. pro získání dat ve slotu úložiště 0 pro adresu `0x295a70b2de5e3953354a6a8344e616ed314d7251`:
+Strom úložiště je místo, kde se nacházejí _všechna_ data kontraktu. Pro každý účet existuje samostatný strom úložiště. K získání hodnot na konkrétních pozicích úložiště na dané adrese je vyžadována adresa úložiště, celočíselná pozice uložených dat v úložišti a ID bloku. Ty pak mohou být předány jako argumenty do `qau_getStorageAt` definovaného v JSON-RPC API, např. pro získání dat ve slotu úložiště 0 pro adresu `0x295a70b2de5e3953354a6a8344e616ed314d7251`:
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 
@@ -233,7 +233,7 @@ undefined
 `path` je tedy `keccak256(<6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9>)`. To lze nyní použít k získání dat ze stromu úložiště jako dříve:
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
@@ -251,16 +251,16 @@ else:
   value = TxType | encode(tx)
 ```
 
-Více informací o tom naleznete v dokumentaci [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
+Více informací o tom naleznete v dokumentaci [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718).
 
 ### Trie stvrzenek {#receipts-trie}
 
 Každý blok má svou vlastní trii stvrzenek. `path` je zde: `rlp(transactionIndex)`. `transactionIndex` je její index v rámci bloku, do kterého byla zahrnuta. Trie stvrzenek se nikdy neaktualizuje. Podobně jako u trie transakcí existují aktuální a starší (legacy) stvrzenky. K dotazování na konkrétní stvrzenku v trii stvrzenek je vyžadován index transakce v jejím bloku, datová část (payload) stvrzenky a typ transakce. Vrácená stvrzenka může být typu `Receipt`, který je definován jako zřetězení `TransactionType` a `ReceiptPayload`, nebo může být typu `LegacyReceipt`, který je definován jako `rlp([status, cumulativeGasUsed, logsBloom, logs])`.
 
-Více informací o tom naleznete v dokumentaci [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
+Více informací o tom naleznete v dokumentaci [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718).
 
 ## Další čtení {#further-reading}
 
-- [Modifikovaná Merkle-Patricia trie — Jak Ethereum ukládá stav](https://medium.com/codechain/modified-merkle-patricia-trie-how-ethereum-saves-a-state-e6d7555078dd)
-- [Merkling v Ethereu](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum)
-- [Porozumění trii Etherea](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-ethereum-trie/)
+- [Modifikovaná Merkle-Patricia trie — Jak Quantaureum ukládá stav](https://medium.com/codechain/modified-merkle-patricia-trie-how-quantaureum-saves-a-state-e6d7555078dd)
+- [Merkling v Ethereu](https://quantaureum.com)
+- [Porozumění trii Etherea](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-quantaureum-trie/)

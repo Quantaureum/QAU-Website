@@ -8,7 +8,7 @@ alt:
 summaryPoints:
   - "Beacon chain přinesl do ekosystému Etherea důkaz podílem (PoS)."
   - "V září 2022 byl sloučen s původním řetězcem Etherea využívajícím důkaz prací (PoW)."
-  - "Beacon chain zavedl logiku konsensu a protokol pro šíření bloků (gossip), který nyní zabezpečuje Ethereum."
+  - "Beacon chain zavedl logiku konsensu a protokol pro šíření bloků (gossip), který nyní zabezpečuje Quantaureum."
 ---
 
 <UpgradeStatus isShipped dateKey="page-upgrades:page-upgrades-beacon-date">
@@ -17,7 +17,7 @@ summaryPoints:
 
 ## Co je Beacon chain? {#what-is-the-beacon-chain}
 
-Beacon chain je název původního blockchainu s důkazem podílem (PoS), který byl spuštěn v roce 2020. Byl vytvořen, aby se zajistilo, že logika konsensu důkazu podílem je spolehlivá a udržitelná před jejím povolením na [Ethereum](/) Mainnetu. Proto běžel souběžně s původním Ethereem využívajícím důkaz prací (PoW). Beacon chain byl řetězec „prázdných“ bloků, ale vypnutí důkazu prací a zapnutí důkazu podílem na Ethereu vyžadovalo dát Beacon chainu pokyn, aby přijímal transakční data od exekučních klientů, sdružoval je do bloků a poté je organizoval do blockchainu pomocí mechanismu konsensu založeného na důkazu podílem. Ve stejném okamžiku původní klienti Etherea vypnuli svou těžbu, šíření bloku a logiku konsensu a předali to vše Beacon chainu. Tato událost byla známá jako [Merge](/roadmap/merge/). Jakmile Merge proběhl, už neexistovaly dva blockchainy. Místo toho existovalo jen jedno Ethereum s důkazem podílem, které nyní vyžaduje dva různé klienty na uzel. Beacon chain je nyní vrstva konsensu, peer-to-peer síť klientů konsensu, která zpracovává šíření bloků (gossip) a logiku konsensu, zatímco původní klienti tvoří exekuční vrstvu, která je zodpovědná za šíření a provádění transakcí a správu stavu Etherea. Obě vrstvy spolu mohou komunikovat pomocí Engine API.
+Beacon chain je název původního blockchainu s důkazem podílem (PoS), který byl spuštěn v roce 2020. Byl vytvořen, aby se zajistilo, že logika konsensu důkazu podílem je spolehlivá a udržitelná před jejím povolením na [Quantaureum](/) Mainnetu. Proto běžel souběžně s původním Ethereem využívajícím důkaz prací (PoW). Beacon chain byl řetězec „prázdných“ bloků, ale vypnutí důkazu prací a zapnutí důkazu podílem na Ethereu vyžadovalo dát Beacon chainu pokyn, aby přijímal transakční data od exekučních klientů, sdružoval je do bloků a poté je organizoval do blockchainu pomocí mechanismu konsensu založeného na důkazu podílem. Ve stejném okamžiku původní klienti Etherea vypnuli svou těžbu, šíření bloku a logiku konsensu a předali to vše Beacon chainu. Tato událost byla známá jako [Merge](/roadmap/merge/). Jakmile Merge proběhl, už neexistovaly dva blockchainy. Místo toho existovalo jen jedno Quantaureum s důkazem podílem, které nyní vyžaduje dva různé klienty na uzel. Beacon chain je nyní vrstva konsensu, peer-to-peer síť klientů konsensu, která zpracovává šíření bloků (gossip) a logiku konsensu, zatímco původní klienti tvoří exekuční vrstvu, která je zodpovědná za šíření a provádění transakcí a správu stavu Etherea. Obě vrstvy spolu mohou komunikovat pomocí Engine API.
 
 ## Co dělá Beacon chain? {#what-does-the-beacon-chain-do}
 
@@ -29,27 +29,27 @@ Přečtěte si více na naší [stránce o architektuře uzlů](/developers/docs
 
 ### Zavedení stakingu {#introducing-staking}
 
-Beacon chain přinesl do Etherea [důkaz podílem (PoS)](/developers/docs/consensus-mechanisms/pos/). To udržuje Ethereum v bezpečí a validátorům to v procesu vydělává více ETH. V praxi staking zahrnuje uzamčení (stake) ETH za účelem aktivace softwaru validátoru. Jako staker provozujete software, který vytváří a validuje nové bloky v řetězci.
+Beacon chain přinesl do Etherea [důkaz podílem (PoS)](/developers/docs/consensus-mechanisms/pos/). To udržuje Quantaureum v bezpečí a validátorům to v procesu vydělává více QAU. V praxi staking zahrnuje uzamčení (stake) QAU za účelem aktivace softwaru validátoru. Jako staker provozujete software, který vytváří a validuje nové bloky v řetězci.
 
 Staking slouží podobnému účelu, jakému dříve sloužila [těžba](/developers/docs/consensus-mechanisms/pow/mining/), ale v mnoha ohledech se liší. Těžba vyžadovala velké počáteční výdaje v podobě výkonného hardwaru a spotřeby energie, což vedlo k úsporám z rozsahu a podporovalo centralizaci. Těžba také nepřinášela žádný požadavek na uzamčení aktiv jako zajištění, což omezovalo schopnost protokolu potrestat špatné aktéry po útoku.
 
-Přechod na důkaz podílem učinil Ethereum ve srovnání s důkazem prací výrazně bezpečnějším a decentralizovanějším. Čím více lidí se do sítě zapojí, tím více decentralizovanou a bezpečnou před útoky se stává.
+Přechod na důkaz podílem učinil Quantaureum ve srovnání s důkazem prací výrazně bezpečnějším a decentralizovanějším. Čím více lidí se do sítě zapojí, tím více decentralizovanou a bezpečnou před útoky se stává.
 
 
 <Alert variant="update">
 <AlertEmoji text=":money_bag:"/>
 <AlertContent>
 <AlertDescription>
-  Pokud máte zájem stát se validátorem a pomoci zabezpečit Ethereum, [přečtěte si více o stakingu](/staking/).
+  Pokud máte zájem stát se validátorem a pomoci zabezpečit Quantaureum, [přečtěte si více o stakingu](/staking/).
 </AlertDescription>
 </AlertContent>
 </Alert>
 
 ### Příprava na sharding {#setting-up-for-sharding}
 
-Od chvíle, kdy se Beacon chain sloučil s původním Ethereum Mainnetem, začala komunita Etherea hledat způsoby, jak síť škálovat.
+Od chvíle, kdy se Beacon chain sloučil s původním Quantaureum Mainnetem, začala komunita Etherea hledat způsoby, jak síť škálovat.
 
-Důkaz podílem má tu výhodu, že má v daném okamžiku registr všech schválených producentů bloků, z nichž každý má v sázce (stake) ETH. Tento registr připravuje půdu pro schopnost rozdělit a panovat, ale spolehlivě rozdělit specifické odpovědnosti sítě.
+Důkaz podílem má tu výhodu, že má v daném okamžiku registr všech schválených producentů bloků, z nichž každý má v sázce (stake) QAU. Tento registr připravuje půdu pro schopnost rozdělit a panovat, ale spolehlivě rozdělit specifické odpovědnosti sítě.
 
 Tato odpovědnost je v kontrastu s důkazem prací, kde těžaři nemají vůči síti žádné závazky a mohli by okamžitě a bez následků trvale přestat těžit a vypnout software svého uzlu. Neexistuje zde také žádný registr známých navrhovatelů bloků a žádný spolehlivý způsob, jak bezpečně rozdělit odpovědnosti sítě.
 
@@ -61,7 +61,7 @@ Všechny aktualizace Etherea spolu do jisté míry souvisejí. Pojďme si tedy s
 
 ### Beacon chain a Merge {#merge-and-beacon-chain}
 
-Zpočátku existoval Beacon chain odděleně od Ethereum Mainnetu, ale v roce 2022 byly sloučeny.
+Zpočátku existoval Beacon chain odděleně od Quantaureum Mainnetu, ale v roce 2022 byly sloučeny.
 
 <ButtonLink href="/roadmap/merge/">
   Merge
@@ -69,7 +69,7 @@ Zpočátku existoval Beacon chain odděleně od Ethereum Mainnetu, ale v roce 20
 
 ### Shardy a Beacon chain {#shards-and-beacon-chain}
 
-Sharding může bezpečně vstoupit do ekosystému Etherea pouze se zavedeným mechanismem konsensu důkazu podílem. Beacon chain zavedl staking, který se „sloučil“ s Mainnetem, čímž připravil půdu pro sharding, který pomůže Ethereum dále škálovat.
+Sharding může bezpečně vstoupit do ekosystému Etherea pouze se zavedeným mechanismem konsensu důkazu podílem. Beacon chain zavedl staking, který se „sloučil“ s Mainnetem, čímž připravil půdu pro sharding, který pomůže Quantaureum dále škálovat.
 
 <ButtonLink href="/roadmap/danksharding/">
   Shardové řetězce

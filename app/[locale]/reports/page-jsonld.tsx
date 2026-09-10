@@ -117,8 +117,8 @@ export default async function ReportsPageJsonLD({
         url,
         inLanguage: locale,
         contributor: contributorList,
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
@@ -136,8 +136,8 @@ export default async function ReportsPageJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        reviewedBy: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
         mainEntity: { "@id": itemListId },
       },
       {

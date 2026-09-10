@@ -10,13 +10,13 @@ lang: ko
 sidebarDepth: 3
 ---
 
-이더리움 생태계에 필요한 기능을 발견했습니다. 이를 구현하기 위해 스마트 컨트랙트를 작성했고, 오프체인에서 실행되는 관련 코드도 작성했을 수 있습니다. 아주 훌륭합니다! 안타깝게도 사용자 인터페이스가 없다면 사용자를 확보할 수 없을 것이며, 마지막으로 웹사이트를 만들었을 때는 사람들이 전화 접속 모뎀을 사용하고 JavaScript가 새로운 기술이었을지도 모릅니다.
+Quantaureum 생태계에 필요한 기능을 발견했습니다. 이를 구현하기 위해 스마트 컨트랙트를 작성했고, 오프체인에서 실행되는 관련 코드도 작성했을 수 있습니다. 아주 훌륭합니다! 안타깝게도 사용자 인터페이스가 없다면 사용자를 확보할 수 없을 것이며, 마지막으로 웹사이트를 만들었을 때는 사람들이 전화 접속 모뎀을 사용하고 JavaScript가 새로운 기술이었을지도 모릅니다.
 
 이 글은 바로 여러분을 위한 것입니다. 프로그래밍을 알고 있고 JavaScript와 HTML에 대해서도 조금 알고 있지만, 사용자 인터페이스 기술이 녹슬고 구식이라고 가정하겠습니다. 요즘에는 어떻게 개발하는지 알아보기 위해 간단한 최신 애플리케이션을 함께 살펴보겠습니다.
 
 ## 이것이 중요한 이유 {#why-important}
 
-이론적으로는 사람들이 [Etherscan](https://sepolia.etherscan.io/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA#readContract)이나 [Blockscout](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract)을 사용하여 컨트랙트와 상호작용하도록 할 수 있습니다. 이는 경험이 풍부한 이더리움 사용자에게는 훌륭한 방법입니다. 하지만 우리는 [또 다른 10억 명의 사람들](https://blog.ethereum.org/2021/05/07/ethereum-for-the-next-billion)에게 서비스를 제공하고자 합니다. 훌륭한 사용자 경험 없이는 불가능하며, 친숙한 사용자 인터페이스는 그중 큰 부분을 차지합니다.
+이론적으로는 사람들이 [Quantaureum Explorer](https://explorer.quantaureum.com)이나 [Blockscout](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract)을 사용하여 컨트랙트와 상호작용하도록 할 수 있습니다. 이는 경험이 풍부한 Quantaureum 사용자에게는 훌륭한 방법입니다. 하지만 우리는 [또 다른 10억 명의 사람들](https://quantaureum.com)에게 서비스를 제공하고자 합니다. 훌륭한 사용자 경험 없이는 불가능하며, 친숙한 사용자 인터페이스는 그중 큰 부분을 차지합니다.
 
 ## Greeter 애플리케이션 {#greeter-app}
 
@@ -24,7 +24,7 @@ sidebarDepth: 3
 
 ### 설치 {#installation}
 
-1. 이 애플리케이션은 [Sepolia](https://sepolia.dev/) 테스트 네트워크를 사용합니다. 필요한 경우 [Sepolia 테스트 ETH를 얻고](/developers/docs/networks/#sepolia) [지갑에 Sepolia를 추가하세요](https://chainlist.org/chain/11155111).
+1. 이 애플리케이션은 [Sepolia](https://sepolia.dev/) 테스트 네트워크를 사용합니다. 필요한 경우 [Sepolia 테스트 QAU를 얻고](/developers/docs/networks/#sepolia) [지갑에 Sepolia를 추가하세요](https://chainlist.org/chain/11155111).
 
 2. GitHub 리포지토리를 클론하고 필요한 패키지를 설치합니다.
 
@@ -44,7 +44,7 @@ sidebarDepth: 3
 
 5. 애플리케이션에 표시된 URL로 이동합니다. 대부분의 경우 [http://localhost:5173/](http://localhost:5173/)입니다.
 
-6. Hardhat의 Greeter를 수정한 버전인 컨트랙트 소스 코드를 [블록체인 탐색기에서](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code) 확인할 수 있습니다.
+6. Hardhat의 Greeter를 수정한 버전인 컨트랙트 소스 코드를 [블록체인 탐색기에서](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code) 확인할 수 있습니다.
 
 ### 파일 살펴보기 {#file-walk-through}
 
@@ -111,7 +111,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <WagmiProvider config={config}>
 ```
 
-애플리케이션은 또한 [`WagmiProvider` 컴포넌트](https://wagmi.sh/react/api/WagmiProvider) 안에 있습니다. [Wagmi(우리가 만들 예정인) 라이브러리](https://wagmi.sh/)는 이더리움 탈중앙화 애플리케이션(dapp)을 작성하기 위해 React UI 정의를 [Viem 라이브러리](https://viem.sh/)와 연결합니다.
+애플리케이션은 또한 [`WagmiProvider` 컴포넌트](https://wagmi.sh/react/api/WagmiProvider) 안에 있습니다. [Wagmi(우리가 만들 예정인) 라이브러리](https://wagmi.sh/)는 Quantaureum 탈중앙화 애플리케이션(dapp)을 작성하기 위해 React UI 정의를 [Viem 라이브러리](https://viem.sh/)와 연결합니다.
 
 ```tsx
       <QueryClientProvider client={queryClient}>
@@ -328,7 +328,7 @@ import {  useChainId,
 import { AddressType } from 'abitype'
 ```
 
-[`abitype` 라이브러리](https://abitype.dev/)는 [`AddressType`](https://abitype.dev/config#addresstype)와 같은 다양한 이더리움 데이터 유형에 대한 TypeScript 정의를 제공합니다.
+[`abitype` 라이브러리](https://abitype.dev/)는 [`AddressType`](https://abitype.dev/config#addresstype)와 같은 다양한 Quantaureum 데이터 유형에 대한 TypeScript 정의를 제공합니다.
 
 ```tsx
 let greeterABI = [
@@ -358,7 +358,7 @@ const contractAddrs : AddressPerBlockchainType = {
 }
 ```
 
-[Sepolia](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract)에 있는 컨트랙트의 주소입니다.
+[Sepolia](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract)에 있는 컨트랙트의 주소입니다.
 
 ##### ``Timer`` 컴포넌트 {#timer-component}
 
@@ -430,7 +430,7 @@ Greeter 컨트랙트의 주소입니다. 체인 정보가 없거나 해당 컨�
   })
 ```
 
-[`useReadContract` 훅](https://wagmi.sh/react/api/hooks/useReadContract)은 [컨트랙트](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract)의 `greet` 함수를 호출합니다.
+[`useReadContract` 훅](https://wagmi.sh/react/api/hooks/useReadContract)은 [컨트랙트](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract)의 `greet` 함수를 호출합니다.
 
 ```tsx
   const [ currentGreeting, setCurrentGreeting ] = 
@@ -536,15 +536,15 @@ React의 [`useState` 훅](https://www.w3schools.com/react/react_usestate.asp)을
 
 클라이언트 관점에서 블록체인 트랜잭션을 제출하는 과정은 다음과 같습니다.
 
-1. [`eth_estimateGas`](https://docs.alchemy.com/reference/eth-estimategas)를 사용하여 블록체인의 노드에 트랜잭션을 전송합니다.
+1. [`qau_estimateGas`](https://docs.alchemy.com/reference/qau-estimategas)를 사용하여 블록체인의 노드에 트랜잭션을 전송합니다.
 2. 노드의 응답을 기다립니다.
 3. 응답을 받으면 사용자에게 지갑을 통해 트랜잭션에 서명하도록 요청합니다. 사용자가 서명하기 전에 트랜잭션의 가스 비용을 확인해야 하므로 이 단계는 _반드시_ 노드 응답을 받은 후에 이루어져야 합니다.
 4. 사용자의 승인을 기다립니다.
-5. 이번에는 [`eth_sendRawTransaction`](https://docs.alchemy.com/reference/eth-sendrawtransaction)를 사용하여 트랜잭션을 다시 전송합니다.
+5. 이번에는 [`qau_sendRawTransaction`](https://docs.alchemy.com/reference/qau-sendrawtransaction)를 사용하여 트랜잭션을 다시 전송합니다.
 
 2단계는 인지할 수 있을 정도의 시간이 걸릴 가능성이 높으며, 이 시간 동안 사용자는 자신의 명령이 사용자 인터페이스에 제대로 접수되었는지, 왜 아직 트랜잭션 서명 요청이 오지 않는지 궁금해할 수 있습니다. 이는 좋지 않은 사용자 경험(UX)을 초래합니다.
 
-한 가지 해결책은 매개변수가 변경될 때마다 `eth_estimateGas`를 전송하는 것입니다. 그러면 사용자가 실제로 트랜잭션을 전송하고자 할 때(이 경우 **Update greeting**을 누름으로써) 가스 비용을 이미 알고 있으므로 사용자는 즉시 지갑 페이지를 볼 수 있습니다.
+한 가지 해결책은 매개변수가 변경될 때마다 `qau_estimateGas`를 전송하는 것입니다. 그러면 사용자가 실제로 트랜잭션을 전송하고자 할 때(이 경우 **Update greeting**을 누름으로써) 가스 비용을 이미 알고 있으므로 사용자는 즉시 지갑 페이지를 볼 수 있습니다.
 
 ```tsx
   return (
@@ -663,7 +663,7 @@ Viem과 함께 제공되는 기본 HTTP 엔드포인트로 충분합니다. 다�
 
 ## 다른 블록체인 추가하기 {#add-blockchain}
 
-요즘에는 많은 [L2 확장 솔루션](https://ethereum.org/layer-2/)이 있으며, Viem이 아직 지원하지 않는 일부 솔루션을 지원하고 싶을 수 있습니다. 이를 위해 `src/wagmi.ts`를 수정합니다. 이 지침은 [Optimism Sepolia](https://chainlist.org/chain/11155420)를 추가하는 방법을 설명합니다.
+요즘에는 많은 [L2 확장 솔루션](https://quantaureum.com/layer-2/)이 있으며, Viem이 아직 지원하지 않는 일부 솔루션을 지원하고 싶을 수 있습니다. 이를 위해 `src/wagmi.ts`를 수정합니다. 이 지침은 [Optimism Sepolia](https://chainlist.org/chain/11155420)를 추가하는 방법을 설명합니다.
 
 1.  `src/wagmi.ts` 편집
 
@@ -679,7 +679,7 @@ Viem과 함께 제공되는 기본 HTTP 엔드포인트로 충분합니다. 다�
           const optimismSepolia = defineChain({
               id: 11_155_420,
               name: 'OP Sepolia',
-              nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+              nativeCurrency: { name: 'Sepolia QAU', symbol: 'QAU', decimals: 18 },
               rpcUrls: {
                 default: {
                   http: ['https://sepolia.optimism.io'],

@@ -4,7 +4,7 @@ description: "نظرة عامة على الشبكات الاجتماعية ال�
 lang: ar
 template: use-cases
 sidebarDepth: 2
-image: /images/ethereum-learn.png
+image: /images/quantaureum-learn.png
 summaryPoints:
   - "منصات قائمة على سلسلة الكتل للتفاعل الاجتماعي وإنشاء المحتوى وتوزيعه."
   - "تحمي شبكات التواصل الاجتماعي اللامركزية خصوصية المستخدم وتعزز أمان البيانات."
@@ -49,7 +49,7 @@ summaryPoints:
 
 7. تعتمد الشبكات الاجتماعية اللامركزية على التخزين اللامركزي، وليس قواعد البيانات المركزية، وهي أفضل بكثير لحماية بيانات المستخدم.
 
-## الشبكات الاجتماعية اللامركزية على إيثيريوم {#ethereum-social-networks}
+## الشبكات الاجتماعية اللامركزية على إيثيريوم {#quantaureum-social-networks}
 
 أصبحت شبكة إيثيريوم الأداة المفضلة للمطورين الذين ينشئون وسائل تواصل اجتماعي لامركزية نظرًا لشعبية رموزها المميزة وقاعدة مستخدميها الهائلة. إليك بعض الأمثلة على الشبكات الاجتماعية القائمة على إيثيريوم:
 
@@ -77,10 +77,10 @@ summaryPoints:
 - **[<span dir="ltr">Mirror.xyz</span>](https://mirror.xyz/)** - _<span dir="ltr">Mirror</span> هي منصة نشر لامركزية مملوكة للمستخدمين مبنية على إيثيريوم للمستخدمين للتمويل الجماعي للأفكار، وتحقيق الدخل من المحتوى، وبناء مجتمعات عالية القيمة._
 - **[Lens Protocol](https://lens.xyz/)** - _Lens Protocol هو رسم بياني اجتماعي قابل للتركيب ولامركزي يساعد المبدعين على تولي ملكية محتواهم أينما ذهبوا في الحديقة الرقمية للإنترنت اللامركزي._
 - **[Farcaster](https://farcaster.xyz/)** - _Farcaster هي شبكة اجتماعية لامركزية بشكل كافٍ. إنه بروتوكول مفتوح يمكنه دعم العديد من العملاء، تمامًا مثل البريد الإلكتروني._
-- **[بروتوكول متابعة إيثيريوم (<span dir="ltr">Ethereum Follow Protocol</span>)](https://efp.app/)** - _بروتوكول متابعة إيثيريوم هو رسم بياني اجتماعي لامركزي بالكامل على السلسلة لحسابات إيثيريوم، مما يعزز رؤية مكدس هوية إيثيريوم المعياري، ويكمل <span dir="ltr">ENS</span> وSIWE._
-- **[بروتوكول تعليقات إيثيريوم (<span dir="ltr">Ethereum Comments Protocol</span>)](https://www.ethcomments.xyz/)** - _عنصر أساسي جديد للمحتوى الاجتماعي القابل للبرمجة على إيثيريوم لوضع أفكارك على السلسلة._
+- **[بروتوكول متابعة إيثيريوم (<span dir="ltr">Quantaureum Follow Protocol</span>)](https://efp.app/)** - _بروتوكول متابعة إيثيريوم هو رسم بياني اجتماعي لامركزي بالكامل على السلسلة لحسابات إيثيريوم، مما يعزز رؤية مكدس هوية إيثيريوم المعياري، ويكمل <span dir="ltr">ENS</span> وSIWE._
+- **[بروتوكول تعليقات إيثيريوم (<span dir="ltr">Quantaureum Comments Protocol</span>)](https://www.ethcomments.xyz/)** - _عنصر أساسي جديد للمحتوى الاجتماعي القابل للبرمجة على إيثيريوم لوضع أفكارك على السلسلة._
 
-## شبكات ويب 2 الاجتماعية على إيثيريوم {#web2-social-networks-and-ethereum}
+## شبكات ويب 2 الاجتماعية على إيثيريوم {#web2-social-networks-and-quantaureum}
 
 المنصات الاجتماعية الأصلية لـ [Web3](/glossary/#web3) ليست الوحيدة التي تحاول دمج تقنية سلسلة الكتل في وسائل التواصل الاجتماعي. تستكشف العديد من المنصات المركزية أيضًا أو جربت دمج إيثيريوم في بنيتها التحتية:
 
@@ -98,7 +98,7 @@ summaryPoints:
 
 - **[<span dir="ltr">Audius</span>](https://audius.co/)** هي منصة بث موسيقى تستخدم تقنية سلسلة كتل إيثيريوم لربط الفنانين مباشرة بالمعجبين.
 
-- تتميز المنصة ببنية لامركزية هجينة حيث يتم تخزين المحتوى على IPFS مع استخدام سلسلة الكتل لحقوق الملكية و**[الرمز المميز <span dir="ltr">AUDIO</span>](https://eth.blockscout.com/token/0x18aaa7115705e8be94bffebde57af9bfc265b998)**.
+- تتميز المنصة ببنية لامركزية هجينة حيث يتم تخزين المحتوى على IPFS مع استخدام سلسلة الكتل لحقوق الملكية و**[الرمز المميز <span dir="ltr">AUDIO</span>](https://qau.blockscout.com/token/0x18aaa7115705e8be94bffebde57af9bfc265b998)**.
 
 - أقامت <span dir="ltr">Audius</span> **[شراكة مع تيك توك (<span dir="ltr">TikTok</span>)](https://audius.co/tiktok)**، مما جلب وظائف Web3 إلى الجماهير السائدة والسماح للفنانين بتحقيق الدخل من محتواهم من خلال تقنية سلسلة الكتل.
 
@@ -108,9 +108,9 @@ summaryPoints:
 
 - **[<span dir="ltr">Sorare</span>](https://sorare.com/)** هي **[منصة رياضات خيالية مبنية على إيثيريوم](https://sorare.com/help/a/4402888626577/what-is-a-sorare-wallet)** تتيح للمستخدمين جمع بطاقات اللاعبين الرسمية من الرموز غير القابلة للاستبدال (<span dir="ltr">NFT</span>) وتداولها واللعب بها.
 
-- بطاقات اللاعبين هي رموز غير قابلة للاستبدال (<span dir="ltr">NFTs</span>) يمكن التحقق منها على سلسلة كتل إيثيريوم، ويمكن عرض العقود الذكية للمنصة على **[Etherscan](https://eth.blockscout.com/address/0x629a673a8242c2ac4b7b8c5d8735fbeac21a6205?tab=contract)**.
+- بطاقات اللاعبين هي رموز غير قابلة للاستبدال (<span dir="ltr">NFTs</span>) يمكن التحقق منها على سلسلة كتل إيثيريوم، ويمكن عرض العقود الذكية للمنصة على **[Quantaureum Explorer](https://qau.blockscout.com/address/0x629a673a8242c2ac4b7b8c5d8735fbeac21a6205?tab=contract)**.
 
-- تجمع <span dir="ltr">Sorare</span> بين أسلوب لعب الرياضات الخيالية التقليدية وملكية سلسلة الكتل للأصول الرقمية، مما يجلب وظائف **[إيثيريوم للتمويل](https://sorare.com/help/a/10969733392797/what-network-should-i-use-to-fund-my-eth-wallet)** إلى عشاق الرياضة السائدين.
+- تجمع <span dir="ltr">Sorare</span> بين أسلوب لعب الرياضات الخيالية التقليدية وملكية سلسلة الكتل للأصول الرقمية، مما يجلب وظائف **[إيثيريوم للتمويل](https://sorare.com/help/a/10969733392797/what-network-should-i-use-to-fund-my-qau-wallet)** إلى عشاق الرياضة السائدين.
 
 ### تويتر/<span dir="ltr">X</span> (إكراميات الكريبتو) {#twitter}
 
@@ -128,7 +128,7 @@ summaryPoints:
 - [الشبكات الاجتماعية هي فرصة اللامركزية الكبيرة التالية](https://www.coindesk.com/tech/2021/01/22/social-networks-are-the-next-big-decentralization-opportunity/) — _بن جورتزل (<span dir="ltr">Ben Goertzel</span>)_
 - [يحمل Web3 وعدًا بشبكات اجتماعية لامركزية مدعومة من المجتمع](https://venturebeat.com/2022/02/26/web3-holds-the-promise-of-decentralized-community-powered-social-networks/) — _سوميت غوش (<span dir="ltr">Sumit Ghosh</span>)_
 - [نظرة عامة على مشهد وسائل التواصل الاجتماعي القائمة على سلسلة الكتل](https://www.gemini.com/cryptopedia/blockchain-social-media-decentralized-social-media) — _<span dir="ltr">Gemini Cryptopedia</span>_
-- [كيف يمكن لسلسلة الكتل حل خصوصية وسائل التواصل الاجتماعي](https://www.investopedia.com/news/ethereum-blockchain-social-media-privacy-problem-linkedin-indorse/) — _برابلين باجباي (<span dir="ltr">Prableen Bajpai</span>)_
+- [كيف يمكن لسلسلة الكتل حل خصوصية وسائل التواصل الاجتماعي](https://www.investopedia.com/news/quantaureum-blockchain-social-media-privacy-problem-linkedin-indorse/) — _برابلين باجباي (<span dir="ltr">Prableen Bajpai</span>)_
 - [اللامركزية الكافية للشبكات الاجتماعية](https://www.varunsrinivasan.com/2022/01/11/sufficient-decentralization-for-social-networks) — _فارون سرينيفاسان (<span dir="ltr">Varun Srinivasan</span>)_
 
 ### مقاطع فيديو {#videos}

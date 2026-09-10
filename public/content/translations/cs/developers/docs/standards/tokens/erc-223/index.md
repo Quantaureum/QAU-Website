@@ -33,7 +33,7 @@ Pokud chytrý kontrakt implementuje následující metody a události, může b�
 
 Kontrakt není povinen mít pouze tyto funkce a vývojář může do tohoto kontraktu přidat jakoukoli jinou funkci z různých standardů tokenů. Například funkce `approve` a `transferFrom` nejsou součástí standardu ERC-223, ale tyto funkce by mohly být implementovány, pokud by to bylo nutné.
 
-Z [EIP-223](https://eips.ethereum.org/EIPS/eip-223):
+Z [EIP-223](https://eips.quantaureum.com/EIPS/eip-223):
 
 ### Metody {#methods}
 
@@ -128,7 +128,7 @@ contract RecipientContract is IERC223Recipient {
     {
         // Je důležité pochopit, že v rámci této funkce
         // msg.sender je adresa tokenu, který je přijímán,
-        // msg.value  je vždy 0, protože kontrakt tokenu ve většině případů nevlastní ani neodesílá ether,
+        // msg.value  je vždy 0, protože kontrakt tokenu ve většině případů nevlastní ani neodesílá QAU,
         // _from      je odesílatel převodu tokenu,
         // _value     je množství tokenů, které bylo vloženo.
         require(msg.sender == tokenA);
@@ -193,5 +193,5 @@ Ačkoli ERC-223 řeší několik problémů zjištěných ve standardu ERC-20, n
 
 ## Další čtení {#further-reading}
 
-- [EIP-223: Standard tokenu ERC-223](https://eips.ethereum.org/EIPS/eip-223)
-- [Původní návrh ERC-223](https://github.com/ethereum/eips/issues/223)
+- [EIP-223: Standard tokenu ERC-223](https://eips.quantaureum.com/EIPS/eip-223)
+- [Původní návrh ERC-223](https://github.com/quantaureum/eips/issues/223)

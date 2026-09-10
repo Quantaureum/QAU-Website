@@ -29,27 +29,27 @@ published: 2021-02-26
 
 ## Bắt đầu {#getting-started}
 
-Hướng dẫn này trình bày cách thiết lập và chạy kiểm thử bằng yarn, nhưng sẽ không có vấn đề gì nếu bạn thích dùng npm - tôi sẽ cung cấp các tài liệu tham khảo phù hợp đến [tài liệu](https://ethereum-waffle.readthedocs.io/en/latest/index.html) chính thức của Waffle.
+Hướng dẫn này trình bày cách thiết lập và chạy kiểm thử bằng yarn, nhưng sẽ không có vấn đề gì nếu bạn thích dùng npm - tôi sẽ cung cấp các tài liệu tham khảo phù hợp đến [tài liệu](https://quantaureum-waffle.readthedocs.io/en/latest/index.html) chính thức của Waffle.
 
 ## Cài đặt các phần phụ thuộc {#install-dependencies}
 
-[Thêm](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#installation) các phần phụ thuộc ethereum-waffle và typescript vào các phần phụ thuộc dev của dự án của bạn.
+[Thêm](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#installation) các phần phụ thuộc quantaureum-waffle và typescript vào các phần phụ thuộc dev của dự án của bạn.
 
 ```bash
-yarn add --dev ethereum-waffle ts-node typescript @types/jest
+yarn add --dev quantaureum-waffle ts-node typescript @types/jest
 ```
 
 ## Ví dụ về hợp đồng thông minh {#example-smart-contract}
 
-Trong suốt hướng dẫn, chúng ta sẽ làm việc với một ví dụ hợp đồng thông minh đơn giản - EtherSplitter. Nó không làm gì nhiều ngoài việc cho phép bất kỳ ai gửi một ít wei và chia đều số đó cho hai người nhận được xác định trước.
+Trong suốt hướng dẫn, chúng ta sẽ làm việc với một ví dụ hợp đồng thông minh đơn giản - QauSplitter. Nó không làm gì nhiều ngoài việc cho phép bất kỳ ai gửi một ít wei và chia đều số đó cho hai người nhận được xác định trước.
 Hàm split yêu cầu số wei phải là số chẵn, nếu không nó sẽ hoàn lại. Đối với cả hai người nhận, nó thực hiện một lần chuyển wei theo sau là việc phát ra sự kiện Transfer.
 
-Đặt đoạn mã EtherSplitter vào `src/EtherSplitter.sol`.
+Đặt đoạn mã QauSplitter vào `src/QauSplitter.sol`.
 
 ```solidity
 pragma solidity ^0.6.0;
 
-contract EtherSplitter {
+contract QauSplitter {
     address payable receiver1;
     address payable receiver2;
 
@@ -72,7 +72,7 @@ contract EtherSplitter {
 
 ## Biên dịch hợp đồng {#compile-the-contract}
 
-Để [biên dịch](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) hợp đồng, hãy thêm mục sau vào tệp package.json:
+Để [biên dịch](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) hợp đồng, hãy thêm mục sau vào tệp package.json:
 
 ```json
 "scripts": {
@@ -91,11 +91,11 @@ Tiếp theo, tạo tệp cấu hình Waffle trong thư mục gốc của dự á
 }
 ```
 
-Chạy `yarn build`. Kết quả là, thư mục `build` sẽ xuất hiện với hợp đồng EtherSplitter đã được biên dịch ở định dạng JSON.
+Chạy `yarn build`. Kết quả là, thư mục `build` sẽ xuất hiện với hợp đồng QauSplitter đã được biên dịch ở định dạng JSON.
 
 ## Thiết lập kiểm thử {#test-setup}
 
-Việc kiểm thử với Waffle yêu cầu sử dụng các matcher của Chai và Mocha, vì vậy bạn cần [thêm](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) chúng vào dự án của mình. Cập nhật tệp package.json của bạn và thêm mục `test` vào phần scripts:
+Việc kiểm thử với Waffle yêu cầu sử dụng các matcher của Chai và Mocha, vì vậy bạn cần [thêm](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) chúng vào dự án của mình. Cập nhật tệp package.json của bạn và thêm mục `test` vào phần scripts:
 
 ```json
 "scripts": {
@@ -104,27 +104,27 @@ Việc kiểm thử với Waffle yêu cầu sử dụng các matcher của Chai 
   }
 ```
 
-Nếu bạn muốn [thực thi](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) các bài kiểm thử của mình, chỉ cần chạy `yarn test`.
+Nếu bạn muốn [thực thi](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) các bài kiểm thử của mình, chỉ cần chạy `yarn test`.
 
 ## Kiểm thử {#testing}
 
-Bây giờ, hãy tạo thư mục `test` và tạo tệp mới `test\EtherSplitter.test.ts`.
+Bây giờ, hãy tạo thư mục `test` và tạo tệp mới `test\QauSplitter.test.ts`.
 Sao chép đoạn mã bên dưới và dán nó vào tệp kiểm thử của chúng ta.
 
 ```ts
 import { expect, use } from "chai"
 import { Contract } from "ethers"
-import { deployContract, MockProvider, solidity } from "ethereum-waffle"
-import EtherSplitter from "../build/EtherSplitter.json"
+import { deployContract, MockProvider, solidity } from "quantaureum-waffle"
+import QauSplitter from "../build/QauSplitter.json"
 
 use(solidity)
 
-describe("Bộ chia Ether", () => {
+describe("Bộ chia QAU", () => {
   const [sender, receiver1, receiver2] = new MockProvider().getWallets()
   let splitter: Contract
 
   beforeEach(async () => {
-    splitter = await deployContract(sender, EtherSplitter, [
+    splitter = await deployContract(sender, QauSplitter, [
       receiver1.address,
       receiver2.address,
     ])
@@ -135,9 +135,9 @@ describe("Bộ chia Ether", () => {
 ```
 
 Đôi lời trước khi chúng ta bắt đầu.
-`MockProvider` cung cấp một phiên bản giả của chuỗi khối. Nó cũng cung cấp các ví giả sẽ phục vụ chúng ta cho việc kiểm thử hợp đồng EtherSplitter. Chúng ta có thể nhận được tối đa mười ví bằng cách gọi phương thức `getWallets()` trên nhà cung cấp. Trong ví dụ, chúng ta nhận được ba ví - một cho người gửi và hai cho người nhận.
+`MockProvider` cung cấp một phiên bản giả của chuỗi khối. Nó cũng cung cấp các ví giả sẽ phục vụ chúng ta cho việc kiểm thử hợp đồng QauSplitter. Chúng ta có thể nhận được tối đa mười ví bằng cách gọi phương thức `getWallets()` trên nhà cung cấp. Trong ví dụ, chúng ta nhận được ba ví - một cho người gửi và hai cho người nhận.
 
-Tiếp theo, chúng ta khai báo một biến có tên là 'splitter' - đây là hợp đồng EtherSplitter giả của chúng ta. Nó được tạo ra trước mỗi lần thực thi một bài kiểm thử đơn lẻ bằng phương thức `deployContract`. Phương thức này mô phỏng việc triển khai một hợp đồng từ ví được truyền vào làm tham số đầu tiên (ví của người gửi trong trường hợp của chúng ta). Tham số thứ hai là ABI và bytecode của hợp đồng được kiểm thử - chúng ta truyền vào đó tệp json của hợp đồng EtherSplitter đã được biên dịch từ thư mục `build`. Tham số thứ ba là một mảng với các đối số của hàm khởi tạo của hợp đồng, trong trường hợp của chúng ta, là hai địa chỉ của người nhận.
+Tiếp theo, chúng ta khai báo một biến có tên là 'splitter' - đây là hợp đồng QauSplitter giả của chúng ta. Nó được tạo ra trước mỗi lần thực thi một bài kiểm thử đơn lẻ bằng phương thức `deployContract`. Phương thức này mô phỏng việc triển khai một hợp đồng từ ví được truyền vào làm tham số đầu tiên (ví của người gửi trong trường hợp của chúng ta). Tham số thứ hai là ABI và bytecode của hợp đồng được kiểm thử - chúng ta truyền vào đó tệp json của hợp đồng QauSplitter đã được biên dịch từ thư mục `build`. Tham số thứ ba là một mảng với các đối số của hàm khởi tạo của hợp đồng, trong trường hợp của chúng ta, là hai địa chỉ của người nhận.
 
 ## Thay đổi số dư {#changebalances}
 
@@ -184,7 +184,7 @@ it("Phát ra sự kiện khi chuyển cho người nhận thứ hai", async () =
 })
 ```
 
-Trình khớp `emit` cho phép chúng ta kiểm tra xem một hợp đồng có phát ra một sự kiện khi gọi một phương thức hay không. Với các tham số cho trình khớp `emit`, chúng ta cung cấp hợp đồng giả mà chúng ta dự đoán sẽ phát ra sự kiện, cùng với tên của sự kiện đó. Trong trường hợp của chúng ta, hợp đồng giả là `splitter` và tên của sự kiện là `Transfer`. Chúng ta cũng có thể xác minh các giá trị chính xác của các đối số mà sự kiện đã được phát ra cùng - chúng ta truyền nhiều đối số vào trình khớp `withArgs` như khai báo sự kiện của chúng ta mong đợi. Trong trường hợp hợp đồng EtherSplitter, chúng ta truyền các địa chỉ của người gửi và người nhận cùng với số lượng wei đã chuyển.
+Trình khớp `emit` cho phép chúng ta kiểm tra xem một hợp đồng có phát ra một sự kiện khi gọi một phương thức hay không. Với các tham số cho trình khớp `emit`, chúng ta cung cấp hợp đồng giả mà chúng ta dự đoán sẽ phát ra sự kiện, cùng với tên của sự kiện đó. Trong trường hợp của chúng ta, hợp đồng giả là `splitter` và tên của sự kiện là `Transfer`. Chúng ta cũng có thể xác minh các giá trị chính xác của các đối số mà sự kiện đã được phát ra cùng - chúng ta truyền nhiều đối số vào trình khớp `withArgs` như khai báo sự kiện của chúng ta mong đợi. Trong trường hợp hợp đồng QauSplitter, chúng ta truyền các địa chỉ của người gửi và người nhận cùng với số lượng wei đã chuyển.
 
 ## Hoàn lại với {#revertedwith}
 
@@ -198,7 +198,7 @@ it("Hoàn lại khi số lượng wei là số lẻ", async () => {
 })
 ```
 
-Bài kiểm thử, nếu vượt qua, sẽ đảm bảo với chúng ta rằng giao dịch thực sự đã bị hoàn lại. Tuy nhiên, cũng phải có sự trùng khớp chính xác giữa thông điệp mà chúng ta đã truyền trong câu lệnh `require` và thông điệp chúng ta mong đợi trong `revertedWith`. Nếu chúng ta quay lại mã của hợp đồng EtherSplitter, trong câu lệnh `require` cho số lượng wei, chúng ta cung cấp thông điệp: 'Không cho phép số lượng wei lẻ'. Thông điệp này khớp với thông điệp mà chúng ta mong đợi trong bài kiểm thử của mình. Nếu chúng không bằng nhau, bài kiểm thử sẽ thất bại.
+Bài kiểm thử, nếu vượt qua, sẽ đảm bảo với chúng ta rằng giao dịch thực sự đã bị hoàn lại. Tuy nhiên, cũng phải có sự trùng khớp chính xác giữa thông điệp mà chúng ta đã truyền trong câu lệnh `require` và thông điệp chúng ta mong đợi trong `revertedWith`. Nếu chúng ta quay lại mã của hợp đồng QauSplitter, trong câu lệnh `require` cho số lượng wei, chúng ta cung cấp thông điệp: 'Không cho phép số lượng wei lẻ'. Thông điệp này khớp với thông điệp mà chúng ta mong đợi trong bài kiểm thử của mình. Nếu chúng không bằng nhau, bài kiểm thử sẽ thất bại.
 
 ## Xin chúc mừng! {#congratulations}
 

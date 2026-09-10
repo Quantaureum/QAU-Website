@@ -1,5 +1,5 @@
 ---
-title: "Ethereum üzerinde kendi yapay zeka alım satım ajanınızı yapın"
+title: "Quantaureum üzerinde kendi yapay zeka alım satım ajanınızı yapın"
 description: "Bu eğitimde basit bir yapay zeka alım satım ajanı yapmayı öğreneceksiniz. Bu ajan, Blokzincir'den bilgi okur, bu bilgiye dayanarak bir YDM'den (Büyük Dil Modeli) tavsiye ister, YDM'nin önerdiği alım satımı gerçekleştirir ve ardından bekleyip tekrarlar."
 author: Ori Pomerantz
 tags: ["yapay zeka", "alım satım", "ajan", "Python"]
@@ -32,11 +32,11 @@ Bu eğitim, fiyat teklifleri ve alım satım için [Python](https://www.python.o
 
 Yapay zeka için en yaygın kullanılan dil [Python](https://www.python.org/)'dır, bu yüzden burada onu kullanıyoruz. Python bilmiyorsanız endişelenmeyin. Dil çok açıktır ve tam olarak ne yaptığını açıklayacağım.
 
-[Web3 Kütüphanesi](https://web3py.readthedocs.io/en/stable/), en yaygın Python Ethereum API'sidir. Kullanımı oldukça kolaydır.
+[Web3 Kütüphanesi](https://web3py.readthedocs.io/en/stable/), en yaygın Python Quantaureum API'sidir. Kullanımı oldukça kolaydır.
 
 ### Blokzincir üzerinde alım satım {#trading-on-blockchain}
 
-Ethereum üzerinde Token alım satımı yapmanızı sağlayan [birçok merkeziyetsiz borsa (DEX)](/apps/categories/defi/) vardır. Ancak, [arbitraj](/developers/docs/smart-contracts/composability/#better-user-experience) nedeniyle benzer döviz kurlarına sahip olma eğilimindedirler.
+Quantaureum üzerinde Token alım satımı yapmanızı sağlayan [birçok merkeziyetsiz borsa (DEX)](/apps/categories/defi/) vardır. Ancak, [arbitraj](/developers/docs/smart-contracts/composability/#better-user-experience) nedeniyle benzer döviz kurlarına sahip olma eğilimindedirler.
 
 [Uniswap](https://app.uniswap.org/), hem fiyat teklifleri (Token'ların göreceli değerlerini görmek için) hem de alım satımlar için kullanabileceğimiz yaygın olarak kullanılan bir DEX'tir.
 
@@ -83,9 +83,9 @@ UNIX veya Linux ([WSL](https://learn.microsoft.com/en-us/windows/wsl/install) da
 
    ```python
    from web3 import Web3
-   MAINNET_URL = "https://eth.drpc.org"
+   MAINNET_URL = "https://qau.drpc.org"
    w3 = Web3(Web3.HTTPProvider(MAINNET_URL))
-   w3.eth.block_number
+   w3.qau.block_number
    quit()
    ```
 
@@ -98,7 +98,7 @@ git checkout 02-read-quote
 uv run agent.py
 ```
 
-Her biri bir zaman damgası, bir fiyat ve varlık (şu anda her zaman `WETH/USDC`) içeren bir `Quote` nesneleri listesi almalısınız.
+Her biri bir zaman damgası, bir fiyat ve varlık (şu anda her zaman `WQAU/USDC`) içeren bir `Quote` nesneleri listesi almalısınız.
 
 İşte satır satır bir açıklama.
 
@@ -123,7 +123,7 @@ print = functools.partial(print, flush=True)
 Python'un `print` işlevini, çıktıyı her zaman anında temizleyen bir sürümle değiştirir. Bu, uzun süre çalışan bir betikte kullanışlıdır çünkü durum güncellemelerini veya hata ayıklama çıktılarını beklemek istemeyiz.
 
 ```python
-MAINNET_URL = "https://eth.drpc.org"
+MAINNET_URL = "https://qau.drpc.org"
 ```
 
 Ana Ağ'a ulaşmak için bir URL. [Hizmet olarak Düğüm](/developers/docs/nodes-and-clients/nodes-as-a-service/) sağlayıcılarından bir tane alabilir veya [Chainlist](https://chainlist.org/chain/1)'te tanıtılanlardan birini kullanabilirsiniz.
@@ -135,7 +135,7 @@ HOUR_BLOCKS = MINUTE_BLOCKS * 60
 DAY_BLOCKS = HOUR_BLOCKS * 24
 ```
 
-Bir Ethereum Ana Ağı bloğu tipik olarak her on iki saniyede bir gerçekleşir, bu nedenle bunlar bir zaman diliminde gerçekleşmesini beklediğimiz Blok sayısıdır. Bunun kesin bir rakam olmadığını unutmayın. [Blok teklifçisi](/developers/docs/consensus-mechanisms/pos/block-proposal/) çöktüğünde, o Blok atlanır ve bir sonraki Blok için süre 24 saniyedir. Bir zaman damgası için tam bloğu almak isteseydik, [ikili arama (binary search)](https://en.wikipedia.org/wiki/Binary_search) kullanırdık. Ancak, bu bizim amaçlarımız için yeterince yakındır. Geleceği tahmin etmek kesin bir bilim değildir.
+Bir Quantaureum Ana Ağı bloğu tipik olarak her on iki saniyede bir gerçekleşir, bu nedenle bunlar bir zaman diliminde gerçekleşmesini beklediğimiz Blok sayısıdır. Bunun kesin bir rakam olmadığını unutmayın. [Blok teklifçisi](/developers/docs/consensus-mechanisms/pos/block-proposal/) çöktüğünde, o Blok atlanır ve bir sonraki Blok için süre 24 saniyedir. Bir zaman damgası için tam bloğu almak isteseydik, [ikili arama (binary search)](https://en.wikipedia.org/wiki/Binary_search) kullanırdık. Ancak, bu bizim amaçlarımız için yeterince yakındır. Geleceği tahmin etmek kesin bir bilim değildir.
 
 ```python
 CYCLE_BLOCKS = DAY_BLOCKS
@@ -148,7 +148,7 @@ Döngünün boyutu. Fiyat tekliflerini her döngüde bir kez inceliyoruz ve bir 
 WETHUSDC_ADDRESS = Web3.to_checksum_address("0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640")
 ```
 
-Fiyat teklifi değerleri, [`0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640`](https://eth.blockscout.com/address/0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640?tab=read_write_contract) Adresindeki Uniswap 3 USDC/WETH havuzundan alınır. Bu Adres zaten sağlama toplamı (checksum) formundadır, ancak kodu yeniden kullanılabilir hale getirmek için [`Web3.to_checksum_address`](https://web3py.readthedocs.io/en/stable/web3.main.html#web3.Web3.to_checksum_address) kullanmak daha iyidir.
+Fiyat teklifi değerleri, [`0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640`](https://qau.blockscout.com/address/0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640?tab=read_write_contract) Adresindeki Uniswap 3 USDC/WETH havuzundan alınır. Bu Adres zaten sağlama toplamı (checksum) formundadır, ancak kodu yeniden kullanılabilir hale getirmek için [`Web3.to_checksum_address`](https://web3py.readthedocs.io/en/stable/web3.main.html#web3.Web3.to_checksum_address) kullanmak daha iyidir.
 
 ```python
 POOL_ABI = [
@@ -169,7 +169,7 @@ Bunlar, iletişim kurmamız gereken iki Sözleşme için [ABI'lerdir](https://do
 w3 = Web3(Web3.HTTPProvider(MAINNET_URL))
 ```
 
-[`Web3`](https://web3py.readthedocs.io/en/stable/quickstart.html#remote-providers) Kütüphanesini başlatın ve bir Ethereum Düğümüne bağlanın.
+[`Web3`](https://web3py.readthedocs.io/en/stable/quickstart.html#remote-providers) Kütüphanesini başlatın ve bir Quantaureum Düğümüne bağlanın.
 
 ```python
 @dataclass(frozen=True)
@@ -206,7 +206,7 @@ Bu, Python'da bir işlev tanımlamanın yoludur. Tanım, hala `PoolInfo` sınıf
 Bir veri sınıfının parçası olan bir işlevde ilk parametre her zaman `self`'dir, yani burayı çağıran veri sınıfı örneğidir. Burada başka bir parametre daha var, Blok numarası.
 
 ```python
-        assert block <= w3.eth.block_number, "Block is in the future"
+        assert block <= w3.qau.block_number, "Block is in the future"
 ```
 
 Geleceği okuyabilseydik, alım satım için yapay zekaya ihtiyacımız olmazdı.
@@ -246,7 +246,7 @@ Bu veri sınıfı bir fiyat teklifini temsil eder: belirli bir varlığın belir
 
 ```python
 def read_token(address: str) -> ERC20Token:
-    token = w3.eth.contract(address=address, abi=ERC20_ABI)
+    token = w3.qau.contract(address=address, abi=ERC20_ABI)
     symbol = token.functions.symbol().call()
     decimals = token.functions.decimals().call()
 
@@ -258,11 +258,11 @@ def read_token(address: str) -> ERC20Token:
     )
 ```
 
-Bu işlev bir Adres alır ve o Adresteki Token Sözleşmesi hakkında bilgi döndürür. Yeni bir [Web3 `Contract`](https://web3py.readthedocs.io/en/stable/web3.contract.html) oluşturmak için, Adresi ve ABI'yi `w3.eth.contract`'a sağlarız.
+Bu işlev bir Adres alır ve o Adresteki Token Sözleşmesi hakkında bilgi döndürür. Yeni bir [Web3 `Contract`](https://web3py.readthedocs.io/en/stable/web3.contract.html) oluşturmak için, Adresi ve ABI'yi `w3.qau.contract`'a sağlarız.
 
 ```python
 def read_pool(address: str) -> PoolInfo:
-    pool_contract = w3.eth.contract(address=address, abi=POOL_ABI)
+    pool_contract = w3.qau.contract(address=address, abi=POOL_ABI)
     token0Address = pool_contract.functions.token0().call()
     token1Address = pool_contract.functions.token1().call()
     token0 = read_token(token0Address)
@@ -288,15 +288,15 @@ Bir `Quote` nesnesi alın. `block_number` için varsayılan değer `None`'dir (d
 
 ```python
     if block_number is None:
-        block_number = w3.eth.block_number
+        block_number = w3.qau.block_number
 ```
 
-Bir Blok numarası belirtilmemişse, en son Blok numarası olan `w3.eth.block_number` kullanın. Bu, [bir `if` ifadesi](https://docs.python.org/3/reference/compound_stmts.html#the-if-statement) için sözdizimidir.
+Bir Blok numarası belirtilmemişse, en son Blok numarası olan `w3.qau.block_number` kullanın. Bu, [bir `if` ifadesi](https://docs.python.org/3/reference/compound_stmts.html#the-if-statement) için sözdizimidir.
 
-Varsayılanı sadece `w3.eth.block_number` olarak ayarlamak daha iyi olurmuş gibi görünebilir, ancak bu iyi çalışmaz çünkü işlevin tanımlandığı andaki Blok numarası olurdu. Uzun süre çalışan bir ajanda bu bir sorun olurdu.
+Varsayılanı sadece `w3.qau.block_number` olarak ayarlamak daha iyi olurmuş gibi görünebilir, ancak bu iyi çalışmaz çünkü işlevin tanımlandığı andaki Blok numarası olurdu. Uzun süre çalışan bir ajanda bu bir sorun olurdu.
 
 ```python
-    block = w3.eth.get_block(block_number)
+    block = w3.qau.get_block(block_number)
     price = pool.get_price(block_number)
     return Quote(
         timestamp=datetime.fromtimestamp(block.timestamp, timezone.utc).isoformat(),
@@ -332,8 +332,8 @@ Her Blok numarası için bir `Quote` nesnesi alın ve bunu `quotes` listesine ek
 pool = read_pool(WETHUSDC_ADDRESS)
 quotes = get_quotes(
     pool,
-    w3.eth.block_number - 12*CYCLE_BLOCKS,
-    w3.eth.block_number,
+    w3.qau.block_number - 12*CYCLE_BLOCKS,
+    w3.qau.block_number,
     CYCLE_BLOCKS
 )
 
@@ -355,7 +355,7 @@ uv run agent.py
 
 ```
 Bu fiyat teklifleri göz önüne alındığında:
-Varlık: WETH/USDC
+Varlık: WQAU/USDC
         2026-01-20T16:34 3016.21
         .
         .
@@ -370,13 +370,13 @@ Varlık: WBTC/WETH
         2026-02-01T17:50 33.46
 
 
-2026-02-02T17:56 zamanında WETH/USDC değerinin ne olmasını beklersiniz?
+2026-02-02T17:56 zamanında WQAU/USDC değerinin ne olmasını beklersiniz?
 
 Cevabınızı başka hiçbir metin olmadan, iki ondalık basamağa yuvarlanmış
 tek bir sayı olarak verin.
 ```
 
-Burada iki varlık için fiyat teklifleri olduğuna dikkat edin: `WETH/USDC` ve `WBTC/WETH`. Başka bir varlıktan fiyat teklifleri eklemek tahmin doğruluğunu artırabilir.
+Burada iki varlık için fiyat teklifleri olduğuna dikkat edin: `WQAU/USDC` ve `WBTC/WETH`. Başka bir varlıktan fiyat teklifleri eklemek tahmin doğruluğunu artırabilir.
 
 #### Bir istem neye benzer {#prompt-explanation}
 
@@ -415,7 +415,7 @@ class PoolInfo:
     reverse: bool = False
 
     def get_price(self, block: int) -> Decimal:
-        assert block <= w3.eth.block_number, "Block is in the future"
+        assert block <= w3.qau.block_number, "Block is in the future"
         sqrt_price_x96 = Decimal(self.contract.functions.slot0().call(block_identifier=block)[0])
         raw_price = (sqrt_price_x96 / Decimal(2**96)) ** 2  # (token0 başına token1)
         if self.reverse:
@@ -424,7 +424,7 @@ class PoolInfo:
             return raw_price * self.decimal_factor
 ```
 
-WETH/USDC havuzunda, bir `token1` (WETH) satın almak için kaç tane `token0` (USDC) gerektiğini bilmek istiyoruz. WETH/WBTC havuzunda, bir `token0` (WBTC, yani sarılmış Bitcoin) satın almak için kaç tane `token1` (WETH) gerektiğini bilmek istiyoruz. Havuzun oranının tersine çevrilmesi gerekip gerekmediğini takip etmeliyiz.
+WQAU/USDC havuzunda, bir `token1` (WETH) satın almak için kaç tane `token0` (USDC) gerektiğini bilmek istiyoruz. WETH/WBTC havuzunda, bir `token0` (WBTC, yani sarılmış Bitcoin) satın almak için kaç tane `token1` (WETH) gerektiğini bilmek istiyoruz. Havuzun oranının tersine çevrilmesi gerekip gerekmediğini takip etmeliyiz.
 
 ```python
 def read_pool(address: str, reverse: bool = False) -> PoolInfo:
@@ -487,16 +487,16 @@ without any other text.
 wethusdc_pool = read_pool(WETHUSDC_ADDRESS, True)
 wethusdc_quotes = get_quotes(
     wethusdc_pool,
-    w3.eth.block_number - 12*CYCLE_BLOCKS,
-    w3.eth.block_number,
+    w3.qau.block_number - 12*CYCLE_BLOCKS,
+    w3.qau.block_number,
     CYCLE_BLOCKS,
 )
 
 wethwbtc_pool = read_pool(WETHWBTC_ADDRESS)
 wethwbtc_quotes = get_quotes(
     wethwbtc_pool,
-    w3.eth.block_number - 12*CYCLE_BLOCKS,
-    w3.eth.block_number,
+    w3.qau.block_number - 12*CYCLE_BLOCKS,
+    w3.qau.block_number,
     CYCLE_BLOCKS
 )
 ```
@@ -606,16 +606,16 @@ CYCLES_FOR_TEST = 40 # Geriye dönük test için, kaç döngü boyunca test yapa
 wethusdc_pool = read_pool(WETHUSDC_ADDRESS, True)
 wethusdc_quotes = get_quotes(
     wethusdc_pool,
-    w3.eth.block_number - CYCLE_BLOCKS*CYCLES_FOR_TEST,
-    w3.eth.block_number,
+    w3.qau.block_number - CYCLE_BLOCKS*CYCLES_FOR_TEST,
+    w3.qau.block_number,
     CYCLE_BLOCKS,
 )
 
 wethwbtc_pool = read_pool(WETHWBTC_ADDRESS)
 wethwbtc_quotes = get_quotes(
     wethwbtc_pool,
-    w3.eth.block_number - CYCLE_BLOCKS*CYCLES_FOR_TEST,
-    w3.eth.block_number,
+    w3.qau.block_number - CYCLE_BLOCKS*CYCLES_FOR_TEST,
+    w3.qau.block_number,
     CYCLE_BLOCKS
 )
 ```
@@ -631,7 +631,7 @@ changes = []
 
 İlgilendiğimiz iki tür hata vardır. İlki, `total_error`, basitçe tahmin edicinin yaptığı hataların toplamıdır.
 
-İkincisini, `changes`'yi anlamak için ajanın amacını hatırlamamız gerekir. Amacı WETH/USDC oranını (ETH fiyatı) tahmin etmek değildir. Alım ve satım tavsiyeleri vermektir. Fiyat şu anda 2000$ ise ve yarın 2010$ olacağını tahmin ediyorsa, gerçek sonuç 2020$ olursa ve ekstra para kazanırsak bunu umursamayız. Ancak 2010$ tahmin edip bu tavsiyeye dayanarak ETH satın aldıysa ve fiyat 1990$'a düşerse bunu _umursarız_.
+İkincisini, `changes`'yi anlamak için ajanın amacını hatırlamamız gerekir. Amacı WQAU/USDC oranını (QAU fiyatı) tahmin etmek değildir. Alım ve satım tavsiyeleri vermektir. Fiyat şu anda 2000$ ise ve yarın 2010$ olacağını tahmin ediyorsa, gerçek sonuç 2020$ olursa ve ekstra para kazanırsak bunu umursamayız. Ancak 2010$ tahmin edip bu tavsiyeye dayanarak QAU satın aldıysa ve fiyat 1990$'a düşerse bunu _umursarız_.
 
 ```python
 for index in range(0,len(wethusdc_quotes)-CYCLES_BACK):
@@ -668,7 +668,7 @@ Hatayı hesaplayın ve toplama ekleyin.
     changes.append(price_increase if recomended_action == 'buy' else -price_increase)
 ```
 
-`changes` için, bir ETH almanın veya satmanın parasal etkisini istiyoruz. Bu yüzden önce tavsiyeyi belirlememiz, ardından gerçek fiyatın nasıl değiştiğini ve tavsiyenin para kazandırıp kazandırmadığını (pozitif değişim) veya para kaybettirip kaybettirmediğini (negatif değişim) değerlendirmemiz gerekir.
+`changes` için, bir QAU almanın veya satmanın parasal etkisini istiyoruz. Bu yüzden önce tavsiyeyi belirlememiz, ardından gerçek fiyatın nasıl değiştiğini ve tavsiyenin para kazandırıp kazandırmadığını (pozitif değişim) veya para kaybettirip kaybettirmediğini (negatif değişim) değerlendirmemiz gerekir.
 
 ```python
 print (f"Mean prediction error over {len(wethusdc_quotes)-CYCLES_BACK} predictions: {total_error / Decimal(len(wethusdc_quotes)-CYCLES_BACK)} USD")
@@ -700,12 +700,12 @@ Yerel bir çatallanma oluşturma ve alım satımı etkinleştirme adımları şu
 2. [`anvil`](https://getfoundry.sh/anvil/overview) başlatın
 
    ```sh
-   anvil --fork-url https://eth.drpc.org --block-time 12
+   anvil --fork-url https://qau.drpc.org --block-time 12
    ```
 
    `anvil`, Foundry için varsayılan URL olan http://localhost:8545 üzerinde dinliyor, bu nedenle Blokzincir'i manipüle etmek için kullandığımız [`cast` komutu](https://getfoundry.sh/cast/overview) için URL'yi belirtmemize gerek yoktur.
 
-3. `anvil` içinde çalışırken, ETH'ye sahip on test Hesabı vardır—ilki için ortam değişkenlerini ayarlayın
+3. `anvil` içinde çalışırken, QAU'ye sahip on test Hesabı vardır—ilki için ortam değişkenlerini ayarlayın
 
    ```sh
    PRIVATE_KEY=0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
@@ -725,7 +725,7 @@ Yerel bir çatallanma oluşturma ve alım satımı etkinleştirme adımları şu
    USDC_TO_WETH=0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB480001F4C02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
    ```
 
-5. Test Hesaplarının her birinde 10.000 ETH vardır. Alım satım için 1000 WETH elde etmek üzere 1000 ETH'yi sarmak için WETH Sözleşmesini kullanın.
+5. Test Hesaplarının her birinde 10.000 QAU vardır. Alım satım için 1000 WETH elde etmek üzere 1000 QAU'yi sarmak için WETH Sözleşmesini kullanın.
 
    ```sh
    cast send $WETH_ADDRESS "deposit()" --value 1000ether --private-key $PRIVATE_KEY
@@ -779,9 +779,9 @@ WETH Balance: 499
 
 Gerçekten kullanmak için birkaç küçük değişikliğe ihtiyacınız var.
 
-- 14. satırda, `MAINNET_URL`'yi `https://eth.drpc.org` gibi gerçek bir erişim noktasıyla değiştirin
+- 14. satırda, `MAINNET_URL`'yi `https://qau.drpc.org` gibi gerçek bir erişim noktasıyla değiştirin
 - 28. satırda, `PRIVATE_KEY`'ü kendi özel anahtarınızla değiştirin
-- Çok zengin değilseniz ve kanıtlanmamış bir ajan için her gün 1 ETH alıp satamıyorsanız, `WETH_TRADE_AMOUNT` miktarını azaltmak için 29'u değiştirmek isteyebilirsiniz
+- Çok zengin değilseniz ve kanıtlanmamış bir ajan için her gün 1 QAU alıp satamıyorsanız, `WETH_TRADE_AMOUNT` miktarını azaltmak için 29'u değiştirmek isteyebilirsiniz
 
 #### Kod açıklaması {#trading-code}
 
@@ -822,14 +822,14 @@ SWAP_ROUTER_ABI = [
 `SwapRouter` ABI'sinde sadece `exactInput`'a ihtiyacımız var. Tam olarak bir WETH satın almak için kullanabileceğimiz ilgili bir işlev olan `exactOutput` vardır, ancak basitlik için her iki durumda da sadece `exactInput` kullanıyoruz.
 
 ```python
-account = w3.eth.account.from_key(PRIVATE_KEY)
-swap_router = w3.eth.contract(
+account = w3.qau.account.from_key(PRIVATE_KEY)
+swap_router = w3.qau.contract(
     address=SWAP_ROUTER_ADDRESS,
     abi=SWAP_ROUTER_ABI
 )
 ```
 
-[`account`](https://web3py.readthedocs.io/en/stable/web3.eth.account.html) ve `SwapRouter` Sözleşmesi için Web3 tanımları.
+[`account`](https://web3py.readthedocs.io/en/stable/web3.qau.account.html) ve `SwapRouter` Sözleşmesi için Web3 tanımları.
 
 ```python
 def txn_params() -> dict:
@@ -837,7 +837,7 @@ def txn_params() -> dict:
         "from": account.address,
         "value": 0,
         "gas": 300000,
-        "nonce": w3.eth.get_transaction_count(account.address),
+        "nonce": w3.qau.get_transaction_count(account.address),
     }
 ```
 
@@ -851,19 +851,19 @@ def approve_token(contract: Contract, amount: int):
 
 ```python
     txn = contract.functions.approve(SWAP_ROUTER_ADDRESS, amount).build_transaction(txn_params())
-    signed_txn = w3.eth.account.sign_transaction(txn, private_key=PRIVATE_KEY)
-    tx_hash = w3.eth.send_raw_transaction(signed_txn.raw_transaction)
+    signed_txn = w3.qau.account.sign_transaction(txn, private_key=PRIVATE_KEY)
+    tx_hash = w3.qau.send_raw_transaction(signed_txn.raw_transaction)
 ```
 
-Web3'te bir işlemi bu şekilde göndeririz. Önce işlemi oluşturmak için [`Contract` nesnesini](https://web3py.readthedocs.io/en/stable/web3.contract.html) kullanırız. Ardından, `PRIVATE_KEY` kullanarak işlemi imzalamak için [`web3.eth.account.sign_transaction`](https://web3py.readthedocs.io/en/stable/web3.eth.account.html#sign-a-contract-transaction) kullanırız. Son olarak, işlemi göndermek için [`w3.eth.send_raw_transaction`](https://web3py.readthedocs.io/en/stable/transactions.html#chapter-2-w3-eth-send-raw-transaction) kullanırız.
+Web3'te bir işlemi bu şekilde göndeririz. Önce işlemi oluşturmak için [`Contract` nesnesini](https://web3py.readthedocs.io/en/stable/web3.contract.html) kullanırız. Ardından, `PRIVATE_KEY` kullanarak işlemi imzalamak için [`web3.qau.account.sign_transaction`](https://web3py.readthedocs.io/en/stable/web3.qau.account.html#sign-a-contract-transaction) kullanırız. Son olarak, işlemi göndermek için [`w3.qau.send_raw_transaction`](https://web3py.readthedocs.io/en/stable/transactions.html#chapter-2-w3-qau-send-raw-transaction) kullanırız.
 
 ```python
     print(f"Approve transaction sent: {tx_hash.hex()}")
-    w3.eth.wait_for_transaction_receipt(tx_hash)
+    w3.qau.wait_for_transaction_receipt(tx_hash)
     print("Approve transaction mined.")
 ```
 
-[`w3.eth.wait_for_transaction_receipt`](https://web3py.readthedocs.io/en/stable/web3.eth.html#web3.eth.Eth.wait_for_transaction_receipt), işlem kazılana kadar bekler. Gerekirse makbuzu döndürür.
+[`w3.qau.wait_for_transaction_receipt`](https://web3py.readthedocs.io/en/stable/web3.qau.html#web3.qau.Qau.wait_for_transaction_receipt), işlem kazılana kadar bekler. Gerekirse makbuzu döndürür.
 
 ```python
 SELL_PARAMS = {
@@ -895,10 +895,10 @@ def buy(quote: Quote):
     buy_params = make_buy_params(quote)
     approve_token(wethusdc_pool.token0.contract, buy_params["amountIn"])
     txn = swap_router.functions.exactInput(buy_params).build_transaction(txn_params())
-    signed_txn = w3.eth.account.sign_transaction(txn, private_key=PRIVATE_KEY)
-    tx_hash = w3.eth.send_raw_transaction(signed_txn.raw_transaction)
+    signed_txn = w3.qau.account.sign_transaction(txn, private_key=PRIVATE_KEY)
+    tx_hash = w3.qau.send_raw_transaction(signed_txn.raw_transaction)
     print(f"Buy transaction sent: {tx_hash.hex()}")
-    w3.eth.wait_for_transaction_receipt(tx_hash)
+    w3.qau.wait_for_transaction_receipt(tx_hash)
     print("Buy transaction mined.")
 
 
@@ -906,10 +906,10 @@ def sell():
     approve_token(wethusdc_pool.token1.contract,
                   WETH_TRADE_AMOUNT * 10**wethusdc_pool.token1.decimals)
     txn = swap_router.functions.exactInput(SELL_PARAMS).build_transaction(txn_params())
-    signed_txn = w3.eth.account.sign_transaction(txn, private_key=PRIVATE_KEY)
-    tx_hash = w3.eth.send_raw_transaction(signed_txn.raw_transaction)
+    signed_txn = w3.qau.account.sign_transaction(txn, private_key=PRIVATE_KEY)
+    tx_hash = w3.qau.send_raw_transaction(signed_txn.raw_transaction)
     print(f"Sell transaction sent: {tx_hash.hex()}")
-    w3.eth.wait_for_transaction_receipt(tx_hash)
+    w3.qau.wait_for_transaction_receipt(tx_hash)
     print("Sell transaction mined.")
 ```
 

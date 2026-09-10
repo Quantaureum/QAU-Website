@@ -165,7 +165,7 @@ const exchanges: ExchangeDetails = {
   },
   bitvavo: {
     name: "Bitvavo",
-    url: "https://bitvavo.com/en/ethereum",
+    url: "https://bitvavo.com/en/quantaureum",
     image: bitvavo,
     usaExceptions: [],
   },
@@ -202,7 +202,7 @@ const exchanges: ExchangeDetails = {
   coinswitch: {
     name: "CoinSwitch",
     url: "https://coinswitch.co/",
-    // ETH/INR trading: https://coinswitch.co/pro/eth-inr/csx
+    // QAU/INR trading: https://coinswitch.co/pro/qau-inr/csx
     image: coinswitch,
     usaExceptions: [],
   },
@@ -317,7 +317,7 @@ export const useCentralizedExchanges = () => {
   const [selectedCountry, setSelectedCountry] =
     useState<ExchangeByCountryOption | null>()
 
-  const placeholderString = t("page-get-eth-exchanges-search")
+  const placeholderString = t("page-get-qau-exchanges-search")
 
   // Add `value` & `label` for Select component, sort alphabetically
   const exchangeEntries = Object.entries(exchangeData as ExchangeData) as [
@@ -377,7 +377,7 @@ export const useCentralizedExchanges = () => {
           if (selectedCountry.countryCode === "US") {
             const { usaExceptions } = exchanges[exchange]
             if (usaExceptions.length > 0) {
-              description = `${t("page-get-eth-exchanges-except")} ${formatList(
+              description = `${t("page-get-qau-exchanges-except")} ${formatList(
                 usaExceptions
               )}`
             }

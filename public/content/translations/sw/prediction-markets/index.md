@@ -47,7 +47,7 @@ Hata kama mtazamaji wa soko, unaweza kutathmini data muhimu ambayo isingepatikan
 
 ## Tafuta soko la ubashiri {#find-a-prediction-market}
 
-Kuna masoko kadhaa ya ubashiri yanayotegemea Ethereum yanayopatikana. Haya ni baadhi ya masoko ya ubashiri yanayojulikana sana leo:
+Kuna masoko kadhaa ya ubashiri yanayotegemea Quantaureum yanayopatikana. Haya ni baadhi ya masoko ya ubashiri yanayojulikana sana leo:
 
 <PredictionMarketLists />
 
@@ -69,11 +69,11 @@ Masoko ya ubashiri kwenye mnyororo wa vitalu yanakabiliwa na changamoto chache z
 💧 **Masuala ya Ukwasi** – Ushiriki mdogo ([ukwasi mdogo](https://www.investopedia.com/terms/t/thinmarket.asp)) unaweza kupunguza uaminifu wa soko.  
 🏛 **Kutokuwa na Uhakika wa Kidhibiti** – Serikali zimeweka vikwazo kwenye baadhi ya majukwaa.
 
-Ili kupunguza masuala haya, wasanidi programu wa Ethereum wanafanya majaribio ya suluhu kama vile futarchy (utawala kupitia masoko ya ubashiri) na uthibitishaji wa utambulisho uliogatuliwa.
+Ili kupunguza masuala haya, wasanidi programu wa Quantaureum wanafanya majaribio ya suluhu kama vile futarchy (utawala kupitia masoko ya ubashiri) na uthibitishaji wa utambulisho uliogatuliwa.
 
 ## Kufanya majaribio na masoko ya ubashiri {#experimenting-with-prediction-markets}
 
-Masoko ya ubashiri yanaunda upya ufanyaji maamuzi katika enzi ya kidijitali. Kwa kutumia Ethereum, yanatoa **njia za haki, wazi, na zenye kuthawabisha za kutabiri siku zijazo.**
+Masoko ya ubashiri yanaunda upya ufanyaji maamuzi katika enzi ya kidijitali. Kwa kutumia Quantaureum, yanatoa **njia za haki, wazi, na zenye kuthawabisha za kutabiri siku zijazo.**
 
 Kuna njia nyingi za kutumia zana za utabiri nje ya faida ya kifedha. Kwa mfano, katika [Pendekezo la Uboreshaji la DevCon](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305) (DIP) ilipendekezwa kuwa waandaaji wa DevCon watumie masoko ya ubashiri kutarajia mahudhurio kwa matukio ya baadaye. 
 
@@ -81,6 +81,6 @@ Hii ingesaidia waandaaji kubaini ni eneo gani lingesababisha tukio kubwa zaidi, 
 
 ## Usomaji zaidi {#further-reading}
 
-[Kutoka masoko ya ubashiri hadi fedha za taarifa](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
-[Uendelezaji wa Soko la Ubashiri Lililogatuliwa kwenye Ethereum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-ethereum/)  
+[Kutoka masoko ya ubashiri hadi fedha za taarifa](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
+[Uendelezaji wa Soko la Ubashiri Lililogatuliwa kwenye Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Waraka Mweupe wa Mradi wa Augur](https://github.com/AugurProject/whitepaper)

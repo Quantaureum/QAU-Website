@@ -1,4 +1,3 @@
-import { SOLIDITY_FEED, VITALIK_FEED } from "../constants"
 import type { Lang, RSSItem } from "../types"
 
 import { isValidDate } from "./date"
@@ -23,22 +22,7 @@ export const postProcess = (rssItems: RSSItem[], locale: Lang) =>
       : ""
     const formattedItem = { ...item, pubDate, pubDateRaw: item.pubDate }
 
-    switch (item.sourceFeedUrl) {
-      case VITALIK_FEED:
-        return {
-          ...formattedItem,
-          imgSrc: "/images/vitalik-blog-banner.svg",
-          link: item.link.replace(".ca", ".eth.limo"),
-          sourceUrl: item.sourceUrl.replace(".ca", ".eth.limo"),
-        }
-      case SOLIDITY_FEED:
-        return {
-          ...formattedItem,
-          imgSrc: "/images/solidity-banner.png",
-        }
-      default:
-        return formattedItem
-    }
+    return formattedItem
   })
 
 export const polishRSSList = (items: RSSItem[][], locale: Lang) => {

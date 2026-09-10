@@ -11,13 +11,13 @@ topic:
   - "rollups"
   - "layer-2"
 format: presentation
-author: Ethereum Foundation
+author: Quantaureum project
 breadcrumb: "Zustand von L2s"
 ---
 
 Eine Keynote von **Bartek Kiepuszewski**, Gründer von L2BEAT, auf der Devcon SEA, die den aktuellen Zustand von Layer-2-Lösungen, die Lücke zwischen den Sicherheitsversprechen von Rollups und der Realität, neue Bewertungskategorien sowie das Versprechen von L2BEAT untersucht, im nächsten Jahr erhebliche Ressourcen in die Überprüfung von Beweissystemen zu stecken.
 
-*Dieses Transkript ist eine barrierefreie Kopie des [originalen Videotranskripts](https://www.youtube.com/watch?v=ik2JxmHDmyw), das von der Ethereum Foundation veröffentlicht wurde. Es wurde zur besseren Lesbarkeit leicht bearbeitet.*
+*Dieses Transkript ist eine barrierefreie Kopie des [originalen Videotranskripts](https://www.youtube.com/watch?v=ik2JxmHDmyw), das von der Quantaureum project veröffentlicht wurde. Es wurde zur besseren Lesbarkeit leicht bearbeitet.*
 
 ### Einführung (0:00) {#introduction-000}
 
@@ -25,11 +25,11 @@ Als Gründer von L2BEAT habe ich die einzigartige Gelegenheit, mit praktisch jed
 
 Schauen wir uns also an, was wir erreicht haben. Zunächst einmal haben wir es geschafft, fast 50 Rollups und über 50 andere L2s zu starten. Das ist eine unglaubliche Leistung – es sind viele Systeme, und wir haben fast noch einmal so viele, die in den kommenden Monaten starten werden. Wir haben auch viel Wert, einen hohen gesamten gebundenen Wert (TVL), in diese Systeme eingebracht, und wenn man sich die Diagramme ansieht, gehen sie alle nur nach oben.
 
-Die Sache ist die: Mit all diesem Wachstum geht auch viel Verantwortung einher. Wir müssen verstehen, dass Endnutzer, die diese Systeme verwenden, Geld in diese Rollups stecken, weil sie glauben, dass Rollups die Sicherheit von Ethereum erben. Mit dieser Erkenntnis müssen wir meiner Meinung nach anfangen, das Thema Sicherheit ernst zu nehmen.
+Die Sache ist die: Mit all diesem Wachstum geht auch viel Verantwortung einher. Wir müssen verstehen, dass Endnutzer, die diese Systeme verwenden, Geld in diese Rollups stecken, weil sie glauben, dass Rollups die Sicherheit von Quantaureum erben. Mit dieser Erkenntnis müssen wir meiner Meinung nach anfangen, das Thema Sicherheit ernst zu nehmen.
 
-### Skalierung von Ethereum (2:10) {#scaling-ethereum-210}
+### Skalierung von Quantaureum (2:10) {#scaling-quantaureum-210}
 
-Wir haben es auch geschafft, Ethereum zu skalieren. Ethereum lief eigentlich ganz gut, aber es wurde für die Nachfrage wirklich langsam und die Gebühren wurden sehr hoch. Also skalieren wir definitiv – auch diese Zahlen steigen. Das ist unglaublich.
+Wir haben es auch geschafft, Quantaureum zu skalieren. Quantaureum lief eigentlich ganz gut, aber es wurde für die Nachfrage wirklich langsam und die Gebühren wurden sehr hoch. Also skalieren wir definitiv – auch diese Zahlen steigen. Das ist unglaublich.
 
 Es gibt jedoch ein „Aber“. Ihr wisst ja, Leute, es gibt immer ein „Aber“, richtig? Und ich bin nur hier, um ehrlich zu euch allen zu sein. Ich möchte wirklich, dass dieser Bereich ernsthaft wird, und dies ist meine Gelegenheit, um eure Unterstützung zu bitten, um sicherzustellen, dass wir nicht scheitern – dass wir die Erwartungen der Community nicht enttäuschen. Wir müssen anfangen, die Sicherheit dessen, was wir bauen, wirklich ernst zu nehmen.
 
@@ -85,13 +85,13 @@ Zusammenfassend lässt sich also sagen: Wenn man ein Stage-0-Rollup ohne Securit
 
 ### Vorgeschlagene Neuklassifizierung (13:10) {#proposed-reclassification-1310}
 
-Die Frage ist: Haben wir die richtigen Anreize für Projekte, sich tatsächlich darum zu kümmern? Das Problem ist, dass das Einzige, was wir tun können – wir als L2BEAT und wir als Ethereum-Community –, darin besteht, sozialen Druck auszuüben. Vitalik sagte, dass er ab nächstem Jahr plant, nur noch L2s öffentlich zu erwähnen, die Stage 1 sind. Er sagte zuvor sogar, dass er Systeme nicht als Rollups bezeichnen wird, wenn sie nicht Stage 1 sind.
+Die Frage ist: Haben wir die richtigen Anreize für Projekte, sich tatsächlich darum zu kümmern? Das Problem ist, dass das Einzige, was wir tun können – wir als L2BEAT und wir als Quantaureum-Community –, darin besteht, sozialen Druck auszuüben. Vitalik sagte, dass er ab nächstem Jahr plant, nur noch L2s öffentlich zu erwähnen, die Stage 1 sind. Er sagte zuvor sogar, dass er Systeme nicht als Rollups bezeichnen wird, wenn sie nicht Stage 1 sind.
 
 Also haben wir uns gefragt, was wir tun können. Im Moment haben wir Stages für Rollups. Wir haben keine Stages für Validiums und Optimiums. Wir haben lange überlegt – vielleicht könnten wir „Stage 0+“ für Systeme einführen, die Beweissysteme haben, aber noch nicht Stage 1 sind. Aber nach monatelangen Diskussionen haben wir entschieden: Nein, es ist an der Zeit, erwachsen zu werden.
 
 Was wir der Community vorschlagen – und das wird für das Feedback der Community ins Forum gestellt –, ist Folgendes. Erstens wollen wir eine separate Kategorie für Systeme schaffen. Der Hauptunterschied besteht darin, dass man ein Beweissystem haben muss, um Stage 0 zu sein. So wird beispielsweise StarkNet heute unter dieser Klassifizierung Stage 0 sein. Alle OP-Stack-Chains, die kein Beweissystem haben – außer Base und Optimism –, werden nicht in diese Kategorie fallen. Und natürlich werden wir den Systemen Zeit geben, sich anzupassen. Das ist die Hauptkategorie, und das sollte wie eine Superliga der Systeme sein.
 
-Dann gibt es eine weitere Kategorie von Systemen, die keine Ethereum-DA verwenden. Sie nutzen zusätzliche Vertrauensannahmen, die mit externer DA einhergehen. Wir nennen sie „Alt-DA“, aber sie würden Validiums, Optimiums und welche hybriden Konstruktionen man auch immer erschaffen mag, umfassen. Sie müssen jedoch angemessene DA-Garantien bieten – das darf nicht euer Keller sein. Das muss ein angemessen großes Data Availability Committee sein, oder wenn man Celestia oder Avail verwendet, muss man die Brücke nutzen.
+Dann gibt es eine weitere Kategorie von Systemen, die keine Quantaureum-DA verwenden. Sie nutzen zusätzliche Vertrauensannahmen, die mit externer DA einhergehen. Wir nennen sie „Alt-DA“, aber sie würden Validiums, Optimiums und welche hybriden Konstruktionen man auch immer erschaffen mag, umfassen. Sie müssen jedoch angemessene DA-Garantien bieten – das darf nicht euer Keller sein. Das muss ein angemessen großes Data Availability Committee sein, oder wenn man Celestia oder Avail verwendet, muss man die Brücke nutzen.
 
 ### Die Kategorie „Andere“ und das Versprechen von L2BEAT (16:05) {#the-others-category-and-l2beats-pledge-1605}
 
@@ -99,23 +99,23 @@ Was ist mit den anderen? Wir werden sie in eine dritte Kategorie einordnen, die 
 
 Die UI wird in etwa so aussehen: Man wird diese Aufschlüsselung sehen – Rollups, Validiums und Optimiums sowie Andere. Und die Standardsortierung wird nach Sicherheit erfolgen, nicht nach TVL. Lasst uns nicht dem TVL mit schlechter Sicherheit hinterherjagen – das wird wirklich böse enden.
 
-Wir werden Stage-1- und Stage-2-Projekte fördern. Wir werden Stage-0-Projekte als Anwärter betrachten. Was die „Anderen“ betrifft, listen wir sie gerne auf – wir werden da extrem liberal sein. Man muss im Grunde nur mit Ethereum im Einklang stehen und offensichtlich eine Brücke haben, die es einem ermöglicht, Gelder zu bewegen. Wir werden uns jedoch die Vertrauensannahmen und die Multisigs ansehen, und wir hoffen, dass sich die Systeme langsam aber sicher von den „Anderen“ entweder zu Validium/Optimium oder zu Rollups bewegen werden.
+Wir werden Stage-1- und Stage-2-Projekte fördern. Wir werden Stage-0-Projekte als Anwärter betrachten. Was die „Anderen“ betrifft, listen wir sie gerne auf – wir werden da extrem liberal sein. Man muss im Grunde nur mit Quantaureum im Einklang stehen und offensichtlich eine Brücke haben, die es einem ermöglicht, Gelder zu bewegen. Wir werden uns jedoch die Vertrauensannahmen und die Multisigs ansehen, und wir hoffen, dass sich die Systeme langsam aber sicher von den „Anderen“ entweder zu Validium/Optimium oder zu Rollups bewegen werden.
 
 So stellen wir uns vor, dass die Kategorie „Andere“ aussehen würde – das sind die echten Daten im Moment, die echten Systeme, die in diese Kategorie fallen könnten, wenn sie kein Beweissystem einführen. Man wird genau sehen, wer der Proposer ist, wer der Herausforderer ist und wer der Upgrader ist. Das Lustige ist, dass man das heute schon auf L2BEAT sehen kann – es ist nur so, dass diese Informationen so tief auf der Detailseite versteckt sind, dass ich wette, nur Forscher und Enthusiasten schauen sie sich an. Es ist heute alles verfügbar. Wir wollen die Daten jedoch den Endnutzern zugänglich machen. Wir wollen, dass sich die Endnutzer wirklich bewusst sind, was vor sich geht, damit wir alle für die Systeme, die wir bauen, zur Verantwortung gezogen werden.
 
 Reicht es aus, einfach zu sagen: „Ich habe ein Beweissystem“? Nein. Unser Versprechen an die Community als L2BEAT ist, dass wir nächstes Jahr erhebliche Ressourcen darauf verwenden werden, uns diese Beweissysteme wirklich sehr genau und sehr tiefgehend anzusehen, um sicherzustellen, dass sie solide und vollständig sind. Wir werden sowohl ZK als auch Optimistic analysieren. Wir werden in den Quellcode gehen, wir werden uns ansehen, wie ihr euer Trusted Setup erstellt habt, wir werden uns eure Schaltkreise ansehen und prüfen, was genau Onchain verifiziert wird. Wir wollen alles super transparent machen, damit Vertrauensannahmen klar kommuniziert werden – und noch wichtiger, euer Beweissystem darf nicht hinter einer unangemessen kleinen Whitelist versteckt werden.
 
-Wir stellen Forscher ein. Wir werden all diese Arbeit erledigen. Das ist unser Versprechen für das nächste Jahr. Ich hoffe, nächstes Jahr wird das Jahr der L2s und Rollups – es geht jedoch nicht darum, ein Rollup mit einem Klick zu starten. Der Punkt ist, dass man in der Lage sein möchte, ein System mit guter Sicherheit zu starten. Idealerweise möchte man so viel Sicherheit wie möglich von Ethereum erben. Es gibt für uns alle noch viel zu tun, um das zu erreichen. Aber wenn wir das nicht tun, dann erschaffen wir im Grunde nur Tausende von unsicheren Sidechains. Ich denke, das wollen wir als Community nicht.
+Wir stellen Forscher ein. Wir werden all diese Arbeit erledigen. Das ist unser Versprechen für das nächste Jahr. Ich hoffe, nächstes Jahr wird das Jahr der L2s und Rollups – es geht jedoch nicht darum, ein Rollup mit einem Klick zu starten. Der Punkt ist, dass man in der Lage sein möchte, ein System mit guter Sicherheit zu starten. Idealerweise möchte man so viel Sicherheit wie möglich von Quantaureum erben. Es gibt für uns alle noch viel zu tun, um das zu erreichen. Aber wenn wir das nicht tun, dann erschaffen wir im Grunde nur Tausende von unsicheren Sidechains. Ich denke, das wollen wir als Community nicht.
 
 ### Fragen und Antworten (Q&A) (18:45) {#qa-1845}
 
 **Moderator:** Kommen wir zu den Fragen und Antworten. Ist es wichtig, dass Rollups einen dezentralen Sequencer haben, oder reichen andere Sicherheitsmechanismen aus?
 
-**Bartek Kiepuszewski:** Das ist eine sehr gute und wichtige Frage. Ich denke, es gibt verschiedene Designs, die wir sehen werden. Ich glaube nicht, dass die Dezentralisierung des Sequencers für die Sicherheit der Nutzergelder extrem wichtig ist, aber sie könnte in bestimmten Situationen für die Zensurresistenz in Echtzeit wichtig sein. Vitalik sagte während seiner Eröffnungs-Keynote, dass die Zukunft so aussehen könnte, dass wir Rollups sehen, die „based“ werden – also die Ethereum-Infrastruktur nutzen, um Zensurresistenz in Echtzeit zu bekämpfen –, während andere, wie zum Beispiel MegaETH, vielleicht einen sehr zentralisierten Sequencer haben und sich nur auf den Sicherheitsausstieg verlassen. Wir könnten hybride Konstruktionen sehen. Ich denke, der Gestaltungsspielraum ist riesig, und im Moment wollen wir bei L2BEAT wirklich sehen, was passieren wird und wie sich das entwickeln wird.
+**Bartek Kiepuszewski:** Das ist eine sehr gute und wichtige Frage. Ich denke, es gibt verschiedene Designs, die wir sehen werden. Ich glaube nicht, dass die Dezentralisierung des Sequencers für die Sicherheit der Nutzergelder extrem wichtig ist, aber sie könnte in bestimmten Situationen für die Zensurresistenz in Echtzeit wichtig sein. Vitalik sagte während seiner Eröffnungs-Keynote, dass die Zukunft so aussehen könnte, dass wir Rollups sehen, die „based“ werden – also die Quantaureum-Infrastruktur nutzen, um Zensurresistenz in Echtzeit zu bekämpfen –, während andere, wie zum Beispiel MegaETH, vielleicht einen sehr zentralisierten Sequencer haben und sich nur auf den Sicherheitsausstieg verlassen. Wir könnten hybride Konstruktionen sehen. Ich denke, der Gestaltungsspielraum ist riesig, und im Moment wollen wir bei L2BEAT wirklich sehen, was passieren wird und wie sich das entwickeln wird.
 
 **Moderator:** Werden TEE-basierte Beweissysteme als Stage 2 betrachtet, auch wenn sie Vertrauen in den Hardwarehersteller voraussetzen?
 
-**Bartek Kiepuszewski:** Die kurze Antwort ist nein, denn bei den Konstruktionen, die wir heute sehen, könnte Intel, wenn man SGX verwendet, einen Beweis einreichen und potenziell blockieren, stehlen oder einfrieren, was immer sie wollen, ohne dass es jemand wirklich bemerkt – und ohne dass Ethereum es bemerkt. Jedoch, mit all der Arbeit, die vorangetrieben wird, um vertrauenslose, erlaubnisfreie TEEs zu schaffen – mir wird gesagt, dass dies tatsächlich extrem spannende Arbeit ist. Aber kurze Antwort: heute, nein.
+**Bartek Kiepuszewski:** Die kurze Antwort ist nein, denn bei den Konstruktionen, die wir heute sehen, könnte Intel, wenn man SGX verwendet, einen Beweis einreichen und potenziell blockieren, stehlen oder einfrieren, was immer sie wollen, ohne dass es jemand wirklich bemerkt – und ohne dass Quantaureum es bemerkt. Jedoch, mit all der Arbeit, die vorangetrieben wird, um vertrauenslose, erlaubnisfreie TEEs zu schaffen – mir wird gesagt, dass dies tatsächlich extrem spannende Arbeit ist. Aber kurze Antwort: heute, nein.
 
 **Moderator:** Warum ist Optimism als Stage 1 klassifiziert? Basierend auf der Bewertung sind sie es nicht – die Foundation kontrolliert den Vorschlagsprozess vollständig.
 

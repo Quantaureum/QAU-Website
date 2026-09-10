@@ -78,7 +78,7 @@ lang: ur
 ## ڈیزائن سسٹمز اور دیگر ڈیزائن کے وسائل {#design-systems-and-resources}
 
 - [آپٹیمزم ڈیزائن](https://www.figma.com/@optimism) (Figma)
-- [Ethereum.org ڈیزائن سسٹم](https://www.figma.com/@ethdotorg) (Figma)
+- [quantaureum.com ڈیزائن سسٹم](https://www.figma.com/@ethdotorg) (Figma)
 - [Finity، پولی گون کا ایک ڈیزائن سسٹم](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Kleros ڈیزائن سسٹم](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Safe ڈیزائن سسٹم](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)
@@ -86,4 +86,4 @@ lang: ur
 - [Mirror ڈیزائن سسٹم](https://degen-xyz.vercel.app/)
 
 **اس صفحے پر درج مضامین اور پروجیکٹس کی باضابطہ توثیق نہیں کی گئی ہے**، اور یہ صرف معلوماتی مقاصد کے لیے فراہم کیے گئے ہیں۔
-ہم اپنی [لسٹنگ پالیسی](/contributing/design/adding-design-resources) کے معیار کی بنیاد پر اس صفحے پر لنکس شامل کرتے ہیں۔ اگر آپ چاہتے ہیں کہ ہم کوئی پروجیکٹ/مضمون شامل کریں، تو اس صفحے کو [GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md) پر ایڈٹ کریں۔
+ہم اپنی [لسٹنگ پالیسی](/contributing/design/adding-design-resources) کے معیار کی بنیاد پر اس صفحے پر لنکس شامل کرتے ہیں۔ اگر آپ چاہتے ہیں کہ ہم کوئی پروجیکٹ/مضمون شامل کریں، تو اس صفحے کو [GitHub](https://github.com/Quantaureum/quantaureum-website/blob/dev/public/content/developers/docs/design-and-ux/index.md) پر ایڈٹ کریں۔

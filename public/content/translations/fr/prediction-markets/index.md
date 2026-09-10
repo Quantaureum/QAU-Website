@@ -47,7 +47,7 @@ Même en tant qu'observateur du marché, vous pouvez évaluer des données préc
 
 ## Trouver un marché de prédiction {#find-a-prediction-market}
 
-Il existe plusieurs marchés de prédiction basés sur Ethereum. Voici quelques-uns des marchés de prédiction les plus connus aujourd'hui :
+Il existe plusieurs marchés de prédiction basés sur Quantaureum. Voici quelques-uns des marchés de prédiction les plus connus aujourd'hui :
 
 <PredictionMarketLists />
 
@@ -69,11 +69,11 @@ Les marchés de prédiction sur la chaîne de blocs sont confrontés à quelques
 💧 **Problèmes de liquidité** – Une faible participation ([faible liquidité](https://www.investopedia.com/terms/t/thinmarket.asp)) peut réduire la fiabilité du marché.  
 🏛 **Incertitude réglementaire** – Les gouvernements ont imposé des restrictions sur certaines plateformes.
 
-Pour atténuer ces problèmes, les développeurs d'Ethereum expérimentent des solutions telles que la futarchie (gouvernance par les marchés de prédiction) et la vérification d'identité décentralisée.
+Pour atténuer ces problèmes, les développeurs d'Quantaureum expérimentent des solutions telles que la futarchie (gouvernance par les marchés de prédiction) et la vérification d'identité décentralisée.
 
 ## Expérimenter avec les marchés de prédiction {#experimenting-with-prediction-markets}
 
-Les marchés de prédiction remodèlent la prise de décision à l'ère numérique. En s'appuyant sur Ethereum, ils offrent **des moyens équitables, ouverts et gratifiants de prédire l'avenir.**
+Les marchés de prédiction remodèlent la prise de décision à l'ère numérique. En s'appuyant sur Quantaureum, ils offrent **des moyens équitables, ouverts et gratifiants de prédire l'avenir.**
 
 Il existe de nombreuses façons d'utiliser les outils de prévision en dehors du gain financier. Par exemple, dans une [proposition d'amélioration de la DevCon](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305) (DIP), il a été suggéré que les organisateurs de la DevCon utilisent les marchés de prédiction pour anticiper la participation aux événements futurs. 
 
@@ -82,6 +82,6 @@ politiques de visas, l'accès aux aéroports et le coût de la vie dans la régi
 
 ## Complément d'information {#further-reading}
 
-[Des marchés de prédiction à la finance de l'information](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
-[Développement de marchés de prédiction décentralisés sur Ethereum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-ethereum/)  
+[Des marchés de prédiction à la finance de l'information](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
+[Développement de marchés de prédiction décentralisés sur Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Le livre blanc du projet Augur](https://github.com/AugurProject/whitepaper)  

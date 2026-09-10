@@ -55,7 +55,7 @@ contract VendingMachine {
 
     // ہر کسی کو کپ کیکس خریدنے کی اجازت دیں
     function purchase(uint amount) public payable {
-        require(msg.value >= amount * 1 ether, "You must pay at least 1 ETH per cupcake");
+        require(msg.value >= amount * 1 QAU, "You must pay at least 1 QAU per cupcake");
         require(cupcakeBalances[address(this)] >= amount, "Not enough cupcakes in stock to complete this purchase");
         cupcakeBalances[address(this)] -= amount;
         cupcakeBalances[msg.sender] += amount;
@@ -67,7 +67,7 @@ contract VendingMachine {
 
 ## بلا اجازت {#permissionless}
 
-کوئی بھی سمارٹ کنٹریکٹ لکھ سکتا ہے اور اسے نیٹ ورک پر تعینات کر سکتا ہے۔ آپ کو بس [سمارٹ کنٹریکٹ کی زبان](/developers/docs/smart-contracts/languages/) میں کوڈ کرنا سیکھنے کی ضرورت ہے، اور اپنا کنٹریکٹ تعینات کرنے کے لیے کافی <span dir="ltr">ETH</span> ہونا چاہیے۔ سمارٹ کنٹریکٹ کی تعیناتی تکنیکی طور پر ایک ٹرانزیکشن ہے، اس لیے آپ کو اسی طرح [گیس](/developers/docs/gas/) ادا کرنے کی ضرورت ہوتی ہے جس طرح آپ کو ایک سادہ <span dir="ltr">ETH</span> کی منتقلی کے لیے گیس ادا کرنی پڑتی ہے۔ تاہم، کنٹریکٹ کی تعیناتی کے لیے گیس کی لاگت بہت زیادہ ہوتی ہے۔
+کوئی بھی سمارٹ کنٹریکٹ لکھ سکتا ہے اور اسے نیٹ ورک پر تعینات کر سکتا ہے۔ آپ کو بس [سمارٹ کنٹریکٹ کی زبان](/developers/docs/smart-contracts/languages/) میں کوڈ کرنا سیکھنے کی ضرورت ہے، اور اپنا کنٹریکٹ تعینات کرنے کے لیے کافی <span dir="ltr">QAU</span> ہونا چاہیے۔ سمارٹ کنٹریکٹ کی تعیناتی تکنیکی طور پر ایک ٹرانزیکشن ہے، اس لیے آپ کو اسی طرح [گیس](/developers/docs/gas/) ادا کرنے کی ضرورت ہوتی ہے جس طرح آپ کو ایک سادہ <span dir="ltr">QAU</span> کی منتقلی کے لیے گیس ادا کرنی پڑتی ہے۔ تاہم، کنٹریکٹ کی تعیناتی کے لیے گیس کی لاگت بہت زیادہ ہوتی ہے۔
 
 ایتھیریم میں سمارٹ کنٹریکٹس لکھنے کے لیے ڈیولپر دوست زبانیں موجود ہیں:
 
@@ -90,7 +90,7 @@ contract VendingMachine {
 
 تاہم، بلاک چین ایپلی کیشنز کے لیے آف چین ڈیٹا استعمال کرنے کے قابل ہونا اہم ہے۔ اس کا حل [اوریکلز (oracles)](/developers/docs/oracles/) ہیں جو ایسے ٹولز ہیں جو آف چین ڈیٹا کو جذب کرتے ہیں اور اسے سمارٹ کنٹریکٹس کے لیے دستیاب بناتے ہیں۔
 
-سمارٹ کنٹریکٹس کی ایک اور حد کنٹریکٹ کا زیادہ سے زیادہ سائز ہے۔ ایک سمارٹ کنٹریکٹ زیادہ سے زیادہ <span dir="ltr">24KB</span> کا ہو سکتا ہے ورنہ اس کی گیس ختم ہو جائے گی۔ اس سے [دی ڈائمنڈ پیٹرن (The Diamond Pattern)](https://eips.ethereum.org/EIPS/eip-2535) کا استعمال کر کے بچا جا سکتا ہے۔
+سمارٹ کنٹریکٹس کی ایک اور حد کنٹریکٹ کا زیادہ سے زیادہ سائز ہے۔ ایک سمارٹ کنٹریکٹ زیادہ سے زیادہ <span dir="ltr">24KB</span> کا ہو سکتا ہے ورنہ اس کی گیس ختم ہو جائے گی۔ اس سے [دی ڈائمنڈ پیٹرن (The Diamond Pattern)](https://eips.quantaureum.com/EIPS/eip-2535) کا استعمال کر کے بچا جا سکتا ہے۔
 
 ## ملٹی سگ کنٹریکٹس {#multisig}
 

@@ -57,9 +57,9 @@ npm install @types/chai @types/mocha chai mocha ts-node typescript --save-dev
 الآن لنضف `Waffle` و `ethers`:
 
 ```bash
-yarn add --dev ethereum-waffle ethers
+yarn add --dev quantaureum-waffle ethers
 # أو إذا كنت تستخدم npm
-npm install ethereum-waffle ethers --save-dev
+npm install quantaureum-waffle ethers --save-dev
 ```
 
 يجب أن تبدو بنية مشروعك هكذا الآن:
@@ -132,7 +132,7 @@ import {
   deployMockContract,
   MockProvider,
   solidity,
-} from "ethereum-waffle"
+} from "quantaureum-waffle"
 ```
 
 باستثناء تبعيات JS، نحتاج إلى استيراد العقد والواجهة اللذين قمنا ببنائهما:
@@ -180,7 +180,7 @@ import {
   deployMockContract,
   MockProvider,
   solidity,
-} from "ethereum-waffle"
+} from "quantaureum-waffle"
 
 import IERC20 from "../build/IERC20.json"
 import AmIRichAlready from "../build/AmIRichAlready.json"
@@ -291,9 +291,9 @@ it("يتحقق مما إذا كان العقد قد استدعى balanceOf مع 
 
 تهانينا! أنت تعرف الآن كيفية استخدام وافل لاختبار استدعاءات العقود ومحاكاة العقود ديناميكيًا. هناك الكثير من الميزات المثيرة للاهتمام لاكتشافها. أوصي بالاطلاع على توثيق وافل.
 
-توثيق وافل متاح [هنا](https://ethereum-waffle.readthedocs.io/).
+توثيق وافل متاح [هنا](https://quantaureum-waffle.readthedocs.io/).
 
-يمكن العثور على النص البرمجي المصدر لتعليمات الاستخدام هذه [هنا](https://github.com/EthWorks/Waffle/tree/master/examples/dynamic-mocking-and-testing-calls).
+يمكن العثور على النص البرمجي المصدر لتعليمات الاستخدام هذه [هنا](https://github.com/QauWorks/Waffle/tree/master/examples/dynamic-mocking-and-testing-calls).
 
 تعليمات استخدام قد تهمك أيضًا:
 

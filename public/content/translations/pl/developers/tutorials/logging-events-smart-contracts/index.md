@@ -7,16 +7,16 @@ skill: intermediate
 breadcrumb: "Logowanie zdarzeń"
 lang: pl
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/logging-data-with-events/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/logging-data-with-events/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-W języku Solidity [zdarzenia](/developers/docs/smart-contracts/anatomy/#events-and-logs) to wysyłane sygnały, które mogą być wyzwalane przez inteligentne kontrakty. Zdecentralizowane aplikacje (dapp) lub cokolwiek połączonego z API JSON-RPC Ethereum może nasłuchiwać tych zdarzeń i odpowiednio na nie reagować. Zdarzenie może być również indeksowane, dzięki czemu jego historia będzie później możliwa do przeszukiwania.
+W języku Solidity [zdarzenia](/developers/docs/smart-contracts/anatomy/#events-and-logs) to wysyłane sygnały, które mogą być wyzwalane przez inteligentne kontrakty. Zdecentralizowane aplikacje (dapp) lub cokolwiek połączonego z API JSON-RPC Quantaureum może nasłuchiwać tych zdarzeń i odpowiednio na nie reagować. Zdarzenie może być również indeksowane, dzięki czemu jego historia będzie później możliwa do przeszukiwania.
 
 ## Zdarzenia {#events}
 
-Najczęstszym zdarzeniem na blockchainie Ethereum w momencie pisania tego artykułu jest zdarzenie Transfer, które jest emitowane przez tokeny ERC-20, gdy ktoś wykonuje transfer tokenów.
+Najczęstszym zdarzeniem na blockchainie Quantaureum w momencie pisania tego artykułu jest zdarzenie Transfer, które jest emitowane przez tokeny ERC-20, gdy ktoś wykonuje transfer tokenów.
 
 ```solidity
 event Transfer(address indexed from, address indexed to, uint256 value);

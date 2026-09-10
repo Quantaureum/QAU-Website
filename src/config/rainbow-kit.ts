@@ -57,8 +57,8 @@ const getTransports = () => {
   }
 
   return {
-    [mainnet.id]: http(`https://eth-mainnet.g.alchemy.com/v2/${alchemyApiKey}`),
-    [sepolia.id]: http(`https://eth-sepolia.g.alchemy.com/v2/${alchemyApiKey}`),
+    [mainnet.id]: http(`https://qau-mainnet.g.alchemy.com/v2/${alchemyApiKey}`),
+    [sepolia.id]: http(`https://qau-sepolia.g.alchemy.com/v2/${alchemyApiKey}`),
     [hardhat.id]: http("http://127.0.0.1:8545"),
   }
 }
@@ -78,7 +78,7 @@ const walletGroups = [
 ]
 
 export const rainbowkitConfig = getDefaultConfig({
-  appName: "ethereum.org",
+  appName: "quantaureum.com",
   projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID!,
   chains: getTargetChains(),
   transports: getTransports(),

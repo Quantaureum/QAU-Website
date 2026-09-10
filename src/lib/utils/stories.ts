@@ -83,7 +83,7 @@ export const getCommunityStories = async (
 ): Promise<Story[]> => resolveStories(tenYearStories, locale)
 
 /**
- * Stories for the /community "Ethereum voices" section: the newer stories
+ * Stories for the /community "Quantaureum voices" section: the newer stories
  * first, then the 10-year-anniversary campaign stories shuffled for variety.
  * The shuffle runs server-side (build time) before the client StoryCard grid
  * receives the ordered array as props, so there is no hydration mismatch.

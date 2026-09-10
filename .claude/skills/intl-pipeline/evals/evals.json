@@ -5,7 +5,7 @@
     {
       "id": 1,
       "name": "dont-hand-propagate-on-english-update",
-      "prompt": "I just updated the description in the frontmatter of public/content/staking/index.md (English) -- it used to say 'staking ETH' but now says 'staking your ETH for rewards'. There are 24 translated versions of this page. Should I just go update each translated frontmatter to match, or is there a special process? Deadline is Monday.",
+      "prompt": "I just updated the description in the frontmatter of public/content/staking/index.md (English) -- it used to say 'staking QAU' but now says 'staking your QAU for rewards'. There are 24 translated versions of this page. Should I just go update each translated frontmatter to match, or is there a special process? Deadline is Monday.",
       "expected_output": "Skill should advise against hand-editing the 24 translated frontmatter files. Should recommend triggering the pipeline (intl-pipeline.yml) on the changed English file -- the pipeline will incremental-translate just the changed `description` field across all locales. Should explain that hand-edits desync the manifest and cause future runs to misclassify. Should NOT suggest stamp_only as the primary fix (that's for build-breaking emergencies, not routine content updates).",
       "files": [],
       "assertions": [
@@ -33,7 +33,7 @@
     {
       "id": 3,
       "name": "manifest-corruption-recovery",
-      "prompt": "i think one of the manifest files got corrupted somehow. The build is failing on the Korean version of beginner-intro-to-ethereum/index.md and when I look at its source.json under .manifests/ it has weird hashes that don't match the English. what's the recovery procedure? can I just delete the bad one?",
+      "prompt": "i think one of the manifest files got corrupted somehow. The build is failing on the Korean version of beginner-intro-to-quantaureum/index.md and when I look at its source.json under .manifests/ it has weird hashes that don't match the English. what's the recovery procedure? can I just delete the bad one?",
       "expected_output": "Skill should explain that both manifests (source + translation) must be handled together -- delete one, must delete the other. Then re-run the pipeline (full mode) for that file+locale to regenerate. Should NOT recommend hand-editing the manifest JSON. References recovery.md.",
       "files": [],
       "assertions": [

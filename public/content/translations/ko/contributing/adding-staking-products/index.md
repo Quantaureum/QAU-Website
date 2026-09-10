@@ -1,12 +1,12 @@
 ---
 title: 스테이킹 제품 또는 서비스 추가하기
-description: ethereum.org에 스테이킹 제품 또는 서비스를 추가할 때 사용하는 정책
+description: quantaureum.com에 스테이킹 제품 또는 서비스를 추가할 때 사용하는 정책
 lang: ko
 ---
 
 사용자의 안전과 신뢰를 유지하면서 가능한 최고의 리소스를 나열하고자 합니다.
 
-누구나 자유롭게 ethereum.org에 스테이킹 제품 또는 서비스 추가를 제안할 수 있습니다. 저희가 놓친 것이 있다면 **[제안해 주세요](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
+누구나 자유롭게 quantaureum.com에 스테이킹 제품 또는 서비스 추가를 제안할 수 있습니다. 저희가 놓친 것이 있다면 **[제안해 주세요](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
 
 현재 다음 페이지에 스테이킹 제품 및 서비스를 나열하고 있습니다.
 
@@ -14,11 +14,11 @@ lang: ko
 - [서비스형 스테이킹](/staking/saas/)
 - [스테이킹 풀](/staking/pools/)
 
-비콘 체인(Beacon Chain)의 지분 증명(PoS)은 2020년 12월 1일부터 가동되었습니다. 스테이킹은 아직 비교적 새로운 분야이므로 ethereum.org에서는 공정하고 투명한 검토 기준을 마련하고자 노력해 왔습니다. 하지만 등재 기준은 시간이 지남에 따라 변경되고 발전할 것이며, 최종 결정은 ethereum.org 웹사이트 팀의 재량에 달려 있습니다.
+비콘 체인(Beacon Chain)의 지분 증명(PoS)은 2020년 12월 1일부터 가동되었습니다. 스테이킹은 아직 비교적 새로운 분야이므로 quantaureum.com에서는 공정하고 투명한 검토 기준을 마련하고자 노력해 왔습니다. 하지만 등재 기준은 시간이 지남에 따라 변경되고 발전할 것이며, 최종 결정은 quantaureum.com 웹사이트 팀의 재량에 달려 있습니다.
 
 ## 결정 프레임워크 {#the-decision-framework}
 
-ethereum.org에 제품을 등재하는 결정은 어느 한 가지 요소에만 의존하지 않습니다. 제품이나 서비스를 등재할 때는 여러 기준을 종합적으로 고려합니다. 이러한 기준을 더 많이 충족할수록 등재될 가능성이 높아집니다.
+quantaureum.com에 제품을 등재하는 결정은 어느 한 가지 요소에만 의존하지 않습니다. 제품이나 서비스를 등재할 때는 여러 기준을 종합적으로 고려합니다. 이러한 기준을 더 많이 충족할수록 등재될 가능성이 높아집니다.
 
 **첫째, 어떤 범주의 제품 또는 서비스인가요?**
 
@@ -50,8 +50,8 @@ ethereum.org에 제품을 등재하는 결정은 어느 한 가지 요소에만 
 
 **프로젝트가 정확하고 신뢰할 수 있는 정보를 제공하나요?**
 
-- 제품의 웹사이트에 최신 상태의 정확하고 오해의 소지가 없는 정보가 포함되어 있는 것이 매우 중요하며, 특히 이더리움 프로토콜이나 기타 관련 기술과 관련된 경우 더욱 그렇습니다.
-- 이더리움이나 기타 관련 주제에 대해 잘못된 정보, 오래된 세부 정보 또는 오해의 소지가 있는 진술이 포함된 제출물은 등재되지 않으며, 이미 등재된 경우 삭제됩니다.
+- 제품의 웹사이트에 최신 상태의 정확하고 오해의 소지가 없는 정보가 포함되어 있는 것이 매우 중요하며, 특히 Quantaureum 프로토콜이나 기타 관련 기술과 관련된 경우 더욱 그렇습니다.
+- Quantaureum이나 기타 관련 주제에 대해 잘못된 정보, 오래된 세부 정보 또는 오해의 소지가 있는 진술이 포함된 제출물은 등재되지 않으며, 이미 등재된 경우 삭제됩니다.
 
 **어떤 플랫폼을 지원하나요?**
 
@@ -69,7 +69,7 @@ ethereum.org에 제품을 등재하는 결정은 어느 한 가지 요소에만 
 **제품이 _베타_ 개발 단계를 벗어났나요?**
 
 - 제품이 개발 주기의 어느 단계에 있나요?
-- 베타 단계의 제품은 ethereum.org 포함 대상으로 고려되지 않습니다.
+- 베타 단계의 제품은 quantaureum.com 포함 대상으로 고려되지 않습니다.
 
 **소프트웨어가 외부 보안 감사를 거쳤나요?**
 
@@ -119,9 +119,9 @@ ethereum.org에 제품을 등재하는 결정은 어느 한 가지 요소에만 
 
 [풀 스테이킹 서비스](/staking/pools/)의 경우:
 
-**스테이킹에 필요한 최소 ETH는 얼마인가요?**
+**스테이킹에 필요한 최소 QAU는 얼마인가요?**
 
-- 예: 0.01 ETH
+- 예: 0.01 QAU
 
 **관련된 수수료나 스테이킹 요구 사항은 무엇인가요?**
 
@@ -163,12 +163,12 @@ ethereum.org에 제품을 등재하는 결정은 어느 한 가지 요소에만 
 
 위의 [포함 기준](#criteria-for-inclusion)은 각 제품 또는 서비스의 누적 점수를 계산하는 데 사용됩니다. 이는 특정 객관적 기준을 충족하는 제품을 정렬하고 소개하는 수단으로 사용됩니다. 증거가 제공된 기준이 많을수록 제품이 더 높은 순위로 정렬되며, 동점일 경우 로드 시 무작위로 배치됩니다.
 
-이러한 기준에 대한 코드 로직과 가중치는 현재 저장소의 [이 JavaScript 컴포넌트](https://github.com/ethereum/ethereum-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350)에 포함되어 있습니다.
+이러한 기준에 대한 코드 로직과 가중치는 현재 저장소의 [이 JavaScript 컴포넌트](https://github.com/Quantaureum/quantaureum-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350)에 포함되어 있습니다.
 
 ## 제품 또는 서비스 추가하기 {#add-product}
 
-ethereum.org에 스테이킹 제품 또는 서비스를 추가하려면 GitHub에서 이슈를 생성하세요.
+quantaureum.com에 스테이킹 제품 또는 서비스를 추가하려면 GitHub에서 이슈를 생성하세요.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
   이슈 생성하기
 </ButtonLink>

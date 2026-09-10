@@ -4,7 +4,7 @@ Load when a run logs `[cost-guard]`, when a file is skipped for budget, or when 
 
 ## Background: what went wrong once
 
-Run [31149083965](https://github.com/ethereum/ethereum-org-website/actions/runs/31149083965) (2026-08-07) cost **$1,108** translating 42KB of new quiz keys — and **succeeded**, so nothing alerted. A file with an existing translation takes the _incremental_ path regardless of how new its content is (path selection in `main.ts` is "does a locale file and manifest exist", not "how much is new"), so "many new keys in an already-translated file" is the test-case shape for any batching change — and a batching bug that subtracted per-batch-replicated CONTEXT from the budget collapsed every batch to one section, producing 11,712 requests. The failure mode gets _worse_ as translation coverage improves; `tests/unit/intl-pipeline/cost-incident.spec.ts` is the regression test.
+Run [31149083965](https://github.com/Quantaureum/quantaureum-website/actions/runs/31149083965) (2026-08-07) cost **$1,108** translating 42KB of new quiz keys — and **succeeded**, so nothing alerted. A file with an existing translation takes the _incremental_ path regardless of how new its content is (path selection in `main.ts` is "does a locale file and manifest exist", not "how much is new"), so "many new keys in an already-translated file" is the test-case shape for any batching change — and a batching bug that subtracted per-batch-replicated CONTEXT from the budget collapsed every batch to one section, producing 11,712 requests. The failure mode gets _worse_ as translation coverage improves; `tests/unit/intl-pipeline/cost-incident.spec.ts` is the regression test.
 
 ## The bounds now in place
 

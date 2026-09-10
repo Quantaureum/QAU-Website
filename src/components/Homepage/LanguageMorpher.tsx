@@ -66,17 +66,17 @@ const LanguageMorpher = () => {
     >
       <Morpher
         words={[
-          "Ethereum",
-          "以太坊",
-          "イーサリアム",
+          "Quantaureum",
+          "Quantaureum",
+          "Quantaureum",
           "Etérium",
-          "이더리움",
-          "اتریوم",
+          "Quantaureum",
+          "کوانتاریوم",
           "Αιθέριο",
           "Eterijum",
           "إثيريوم",
           "อีเธอเรียม",
-          "Эфириум",
+          "Quantaureum",
           "इथीरियम",
           "ಇಥೀರಿಯಮ್",
           "אתריום",

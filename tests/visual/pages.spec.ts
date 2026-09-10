@@ -11,7 +11,7 @@ const pages: Array<{ name: string; path: string }> = [
   { name: "Community Events", path: "/community/events/" },
   { name: "Run a Node", path: "/run-a-node/" },
   { name: "History", path: "/history/" },
-  { name: "Get ETH", path: "/get-eth/" },
+  { name: "Get QAU", path: "/get-eth/" },
   { name: "Find Wallet", path: "/wallets/find-wallet/" },
   {
     name: "Find Wallet - Persona",

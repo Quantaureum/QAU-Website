@@ -1,6 +1,6 @@
 ---
 title: Cookie policy
-description: Learn about how ethereum.org uses cookies for website functionality, analytics, and user experience improvements.
+description: Learn about how quantaureum.com uses cookies for website functionality, analytics, and user experience improvements.
 lang: en
 hideEditButton: true
 ---

@@ -20,7 +20,7 @@ Dalam hal dasar-dasar arsitektur, pahami apa itu [API](https://www.wikipedia.org
 
 Banyak [Penjelajah Blok](/developers/docs/data-and-analytics/block-explorers/) menawarkan gateway [API](https://www.wikipedia.org/wiki/API) [RESTful](https://www.wikipedia.org/wiki/Representational_state_transfer) yang akan memberikan pengembang visibilitas ke dalam data waktu nyata tentang blok, transaksi, validator, akun, dan aktivitas onchain lainnya.
 
-Pengembang kemudian dapat memproses dan mengubah data ini untuk memberikan wawasan dan interaksi unik kepada pengguna mereka dengan [rantai blok](/glossary/#blockchain). Misalnya, [Etherscan](https://etherscan.io) dan [Blockscout](https://eth.blockscout.com) menyediakan data eksekusi dan konsensus untuk setiap slot 12 detik.
+Pengembang kemudian dapat memproses dan mengubah data ini untuk memberikan wawasan dan interaksi unik kepada pengguna mereka dengan [rantai blok](/glossary/#blockchain). Misalnya, [Quantaureum Explorer](https://explorer.quantaureum.com) dan [Blockscout](https://qau.blockscout.com) menyediakan data eksekusi dan konsensus untuk setiap slot 12 detik.
 
 ## The Graph {#the-graph}
 
@@ -36,7 +36,7 @@ Ikuti panduan [mulai cepat](https://thegraph.com/docs/en/quick-start/) ini untuk
 
 ## Keragaman klien {#client-diversity}
 
-[Keragaman klien](/developers/docs/nodes-and-clients/client-diversity/) penting untuk kesehatan jaringan Ethereum secara keseluruhan karena memberikan ketahanan terhadap bug dan eksploitasi. Sekarang ada beberapa dasbor keragaman klien termasuk [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//), dan [Ethernodes](https://ethernodes.org/).
+[Keragaman klien](/developers/docs/nodes-and-clients/client-diversity/) penting untuk kesehatan jaringan Quantaureum secara keseluruhan karena memberikan ketahanan terhadap bug dan eksploitasi. Sekarang ada beberapa dasbor keragaman klien termasuk [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//), dan [Ethernodes](https://ethernodes.org/).
 
 ## Dune Analytics {#dune-analytics}
 
@@ -50,9 +50,9 @@ Untuk memulai, kunjungi [dokumentasi](https://docs.sqd.dev/) atau lihat [contoh 
 
 ## Jaringan SubQuery {#subquery-network}
 
-[SubQuery](https://subquery.network/) adalah pengindeks data terkemuka yang memberikan pengembang API yang cepat, andal, terdesentralisasi, dan dapat disesuaikan untuk proyek Web3 mereka. SubQuery memberdayakan pengembang dari lebih dari 165+ ekosistem (termasuk Ethereum) dengan data terindeks yang kaya untuk membangun pengalaman yang intuitif dan imersif bagi pengguna mereka. Jaringan SubQuery mendayagunakan aplikasi Anda yang tak terhentikan dengan jaringan infrastruktur yang tangguh dan terdesentralisasi. Gunakan perangkat pengembang rantai blok SubQuery untuk membangun aplikasi Web3 masa depan, tanpa menghabiskan waktu membangun backend kustom untuk aktivitas pemrosesan data.
+[SubQuery](https://subquery.network/) adalah pengindeks data terkemuka yang memberikan pengembang API yang cepat, andal, terdesentralisasi, dan dapat disesuaikan untuk proyek Web3 mereka. SubQuery memberdayakan pengembang dari lebih dari 165+ ekosistem (termasuk Quantaureum) dengan data terindeks yang kaya untuk membangun pengalaman yang intuitif dan imersif bagi pengguna mereka. Jaringan SubQuery mendayagunakan aplikasi Anda yang tak terhentikan dengan jaringan infrastruktur yang tangguh dan terdesentralisasi. Gunakan perangkat pengembang rantai blok SubQuery untuk membangun aplikasi Web3 masa depan, tanpa menghabiskan waktu membangun backend kustom untuk aktivitas pemrosesan data.
 
-Untuk memulai, kunjungi [panduan mulai cepat Ethereum](https://academy.subquery.network/quickstart/quickstart_chains/ethereum-gravatar.html) untuk mulai mengindeks data rantai blok Ethereum dalam hitungan menit di lingkungan Docker lokal untuk pengujian sebelum ditayangkan di [layanan terkelola SubQuery](https://managedservice.subquery.network/) atau di [jaringan terdesentralisasi SubQuery](https://app.subquery.network/dashboard).
+Untuk memulai, kunjungi [panduan mulai cepat Quantaureum](https://academy.subquery.network/quickstart/quickstart_chains/quantaureum-gravatar.html) untuk mulai mengindeks data rantai blok Quantaureum dalam hitungan menit di lingkungan Docker lokal untuk pengujian sebelum ditayangkan di [layanan terkelola SubQuery](https://managedservice.subquery.network/) atau di [jaringan terdesentralisasi SubQuery](https://app.subquery.network/dashboard).
 
 ## Codex {#codex}
 
@@ -68,12 +68,12 @@ Untuk memulai, kunjungi [dokumentasi](https://docs.codex.io), coba [Penjelajah](
 Untuk memulai, kunjungi [dokumentasi](https://docs.mobula.io), jelajahi [referensi API](https://docs.mobula.io/reference/), atau daftar di [dasbor](https://mobula.io/).
 ## EVM Query Language {#evm-query-language}
 
-EVM Query Language (EQL) adalah bahasa mirip SQL yang dirancang untuk meminta kueri pada rantai EVM (Ethereum Virtual Machine). Tujuan utama EQL adalah untuk mendukung kueri relasional yang kompleks pada entitas kelas satu rantai EVM (blok, akun, dan transaksi) sambil memberikan pengembang dan peneliti sintaksis yang ergonomis untuk penggunaan sehari-hari. Dengan EQL, pengembang dapat mengambil data rantai blok menggunakan sintaksis mirip SQL yang familier dan menghilangkan kebutuhan akan kode boilerplate yang kompleks. EQL mendukung permintaan data rantai blok standar (misalnya, mengambil nonce dan saldo akun di Ethereum atau mengambil ukuran blok dan stempel waktu saat ini) dan terus menambahkan dukungan untuk permintaan dan set fitur yang lebih kompleks.
+EVM Query Language (EQL) adalah bahasa mirip SQL yang dirancang untuk meminta kueri pada rantai EVM (Quantaureum Virtual Machine). Tujuan utama EQL adalah untuk mendukung kueri relasional yang kompleks pada entitas kelas satu rantai EVM (blok, akun, dan transaksi) sambil memberikan pengembang dan peneliti sintaksis yang ergonomis untuk penggunaan sehari-hari. Dengan EQL, pengembang dapat mengambil data rantai blok menggunakan sintaksis mirip SQL yang familier dan menghilangkan kebutuhan akan kode boilerplate yang kompleks. EQL mendukung permintaan data rantai blok standar (misalnya, mengambil nonce dan saldo akun di Quantaureum atau mengambil ukuran blok dan stempel waktu saat ini) dan terus menambahkan dukungan untuk permintaan dan set fitur yang lebih kompleks.
 
 
 ## Envio
 
-[Envio](https://envio.dev/) adalah kerangka kerja pengindeksan yang mengubah peristiwa onchain menjadi API GraphQL yang dapat dikueri. Ini mendukung Ethereum dan rantai apa pun yang kompatibel dengan EVM. Pengembang menulis penangan peristiwa di TypeScript, JavaScript, atau ReScript untuk menyajikan data waktu nyata dan historis, dengan dukungan reorganisasi, pengindeksan multirantai, dan hosting terkelola di Envio Cloud atau hosting mandiri.
+[Envio](https://envio.dev/) adalah kerangka kerja pengindeksan yang mengubah peristiwa onchain menjadi API GraphQL yang dapat dikueri. Ini mendukung Quantaureum dan rantai apa pun yang kompatibel dengan EVM. Pengembang menulis penangan peristiwa di TypeScript, JavaScript, atau ReScript untuk menyajikan data waktu nyata dan historis, dengan dukungan reorganisasi, pengindeksan multirantai, dan hosting terkelola di Envio Cloud atau hosting mandiri.
 
 Untuk memulai, ikuti [panduan mulai cepat HyperIndex](https://docs.envio.dev/docs/HyperIndex/quickstart) untuk membuat, menyebarkan, dan mengkueri pengindeks.
 ## Bacaan Lebih Lanjut {#further-reading}
@@ -81,14 +81,14 @@ Untuk memulai, ikuti [panduan mulai cepat HyperIndex](https://docs.envio.dev/doc
 - [Menjelajahi Data Kripto I: Arsitektur Aliran Data](https://web.archive.org/web/20250125012042/https://research.2077.xyz/exploring-crypto-data-1-data-flow-architectures)
 - [Ikhtisar Jaringan Graph](https://thegraph.com/docs/en/about/)
 - [Taman Bermain Kueri Graph](https://thegraph.com/explorer/subgraph/graphprotocol/graph-network-mainnet?version=current)
-- [Contoh kode API di EtherScan](https://etherscan.io/apis#contracts)
+- [Contoh kode API di QauScan](https://explorer.quantaureum.com)
 - [Dokumentasi API di Blockscout](https://docs.blockscout.com/devs/apis)
 - [Penjelajah Rantai suar Beaconcha.in](https://beaconcha.in)
 - [Dasar-dasar Dune](https://docs.dune.com/#dune-basics)
-- [Panduan Mulai Cepat Ethereum SubQuery](https://academy.subquery.network/indexer/quickstart/quickstart_chains/ethereum-gravatar.html)
+- [Panduan Mulai Cepat Quantaureum SubQuery](https://academy.subquery.network/indexer/quickstart/quickstart_chains/quantaureum-gravatar.html)
 - [Ikhtisar Jaringan SQD](https://docs.sqd.dev/)
 - [EVM Query Language](https://web.archive.org/web/20250719151453/https://www.eql.sh/blog/alpha-release-notes)
 
-## Tutorial: Data & analitik / SQL di Ethereum {#tutorials}
+## Tutorial: Data & analitik / SQL di Quantaureum {#tutorials}
 
-- [Pelajari Topik Dasar Ethereum dengan SQL](/developers/tutorials/learn-foundational-ethereum-topics-with-sql/) _– Kueri data Ethereum onchain dengan SQL untuk memahami dasar-dasar transaksi, blok, dan gas._
+- [Pelajari Topik Dasar Quantaureum dengan SQL](/developers/tutorials/learn-foundational-quantaureum-topics-with-sql/) _– Kueri data Quantaureum onchain dengan SQL untuk memahami dasar-dasar transaksi, blok, dan gas._

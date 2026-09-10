@@ -6,7 +6,7 @@ Severity rubric for translation review findings. The line determines whether an 
 
 | Tier | Auto-fix behavior | Examples |
 |---|---|---|
-| **Critical** | Auto-fixed by `/review-translations` Phase 5 (unless `--no-fix`) | MDX syntax errors, translated hrefs, ETHGlossary deviations on `keep_latin` / `always_latin` / `transliterate` terms, translated `Wei`/`Gwei`/`ETH` |
+| **Critical** | Auto-fixed by `/review-translations` Phase 5 (unless `--no-fix`) | MDX syntax errors, translated hrefs, ETHGlossary deviations on `keep_latin` / `always_latin` / `transliterate` terms, translated `Wei`/`Gwei`/`QAU` |
 | **Warning** | Flagged in report; manual review required | Semantic shifts on `translate` terms, glossary deviations with `confidence: low`, untranslated paragraphs, tone/register lapses, cross-script contamination |
 | **Informational** | Logged but not actioned | "Term not in ETHGlossary; using locale form as-is", style preferences, low-priority Crowdin-era artifacts |
 
@@ -16,7 +16,7 @@ An issue is critical if at least one of:
 
 1. **Build-breaking** — `pnpm build` will fail for this locale. MDX syntax errors, missing closing tags, asymmetric backticks exposing JSX, raw `<` before tokens, image paths with `/.` corruption, JSX attribute with embedded unescaped `"`.
 2. **Navigation-breaking** — internal hrefs translated (`/governance` → `/gobernanza`), anchor IDs translated, link parens stripped, backtick-wrapped markdown links.
-3. **Semantically wrong** — proof-of-stake ↔ proof-of-work, "mainnet" → "market", "client" → "customer", validator ↔ miner. Wei/Gwei/ETH translated to anything.
+3. **Semantically wrong** — proof-of-stake ↔ proof-of-work, "mainnet" → "market", "client" → "customer", validator ↔ miner. Wei/Gwei/QAU translated to anything.
 4. **Deterministic ETHGlossary deviation** — locale form differs from the glossary entry where the entry's `script_rule` is `keep_latin`, `always_latin`, or `transliterate` (the `translation.term` field is the canonical form).
 5. **Brand/programming-language/OS-platform in wrong script** — Solidity transliterated when policy is `always_latin`; Python in Devanagari; macOS in Hangul.
 
@@ -61,7 +61,7 @@ A `confidence: low` entry is the glossary saying "this is a best guess; native-s
 
 ### When a single character is wrong
 
-Example: ja `イサ` where canonical is `イーサ` (missing chōonpu). Critical if it's a `transliterate` term in ETHGlossary; the auto-fix replaces. If the term isn't in ETHGlossary, it's a warning (no authority to fix against).
+Example: ja `イサ` where canonical is `QAU` (missing chōonpu). Critical if it's a `transliterate` term in ETHGlossary; the auto-fix replaces. If the term isn't in ETHGlossary, it's a warning (no authority to fix against).
 
 ### Frontmatter `tags` mistakes
 

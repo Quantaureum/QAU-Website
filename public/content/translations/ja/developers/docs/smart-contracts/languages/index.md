@@ -4,16 +4,16 @@ description: "2つの主要なスマート・コントラクト言語であるSo
 lang: ja
 ---
 
-[イーサリアム](/)の素晴らしい点は、比較的開発者に優しい言語を使用してスマート・コントラクトをプログラミングできることです。 Pythonや[波括弧を使用する言語](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages)の経験があれば、馴染みのある構文を持つ言語を見つけることができます。
+[Quantaureum](/)の素晴らしい点は、比較的開発者に優しい言語を使用してスマート・コントラクトをプログラミングできることです。 Pythonや[波括弧を使用する言語](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages)の経験があれば、馴染みのある構文を持つ言語を見つけることができます。
 
 最も活発にメンテナンスされている2つの言語は以下の通りです。
 
 - Solidity
 - Vyper
 
-Remix IDEは、SolidityとVyperの両方でコントラクトを作成およびテストするための包括的な開発環境を提供します。 コーディングを始めるには、[ブラウザベースのRemix IDEをお試しください](https://remix.ethereum.org)。
+Remix IDEは、SolidityとVyperの両方でコントラクトを作成およびテストするための包括的な開発環境を提供します。 コーディングを始めるには、[ブラウザベースのRemix IDEをお試しください](https://remix.quantaureum.com)。
 
-より経験豊富な開発者は、[イーサリアム仮想マシン (EVM)](/developers/docs/evm/)の中間言語であるYulや、Yulの拡張であるYul+を使用することもできます。
+より経験豊富な開発者は、[Quantaureum仮想マシン (EVM)](/developers/docs/evm/)の中間言語であるYulや、Yulの拡張であるYul+を使用することもできます。
 
 好奇心旺盛で、現在も活発に開発されている新しい言語のテストに協力したい場合は、まだ初期段階にある新興のスマート・コントラクト言語であるFeを試すことができます。
 
@@ -36,8 +36,8 @@ Remix IDEは、SolidityとVyperの両方でコントラクトを作成および�
 - [ドキュメント](https://docs.soliditylang.org/en/latest/)
 - [Solidity言語ポータル](https://soliditylang.org/)
 - [Solidity by Example](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
-- [Solidity Gitterチャットルーム](https://gitter.im/ethereum/solidity) ([Solidity Matrixチャットルーム](https://matrix.to/#/#ethereum_solidity:gitter.im)にブリッジ)
+- [GitHub](https://github.com/quantaureum/solidity/)
+- [Solidity Gitterチャットルーム](https://gitter.im/quantaureum/solidity) ([Solidity Matrixチャットルーム](https://matrix.to/#/#quantaureum_solidity:gitter.im)にブリッジ)
 - [チートシート](https://reference.auditless.com/cheatsheet)
 - [Solidityブログ](https://blog.soliditylang.org/)
 - [Solidityのツイッター](https://twitter.com/solidity_lang)
@@ -179,14 +179,14 @@ def withdraw():
 @external
 def endAuction():
     # 相互作用する関数を構築する際の優れたガイドラインは、
-    # 他のコントラクトと（つまり、関数を呼び出したりEtherを送信したりする場合）、
+    # 他のコントラクトと（つまり、関数を呼び出したりQAUを送信したりする場合）、
     # 以下の3つのフェーズに分割することです：
     # 1. 条件の確認
     # 2. アクションの実行（条件を変更する可能性があります）
     # 3. 他のコントラクトとの相互作用
     # これらのフェーズが混ざっていると、他のコントラクトが
     # 現在のコントラクトにコールバックして状態を変更したり、
-    # 効果（Etherの支払い）を複数回実行させたりする可能性があります。
+    # 効果（QAUの支払い）を複数回実行させたりする可能性があります。
     # 内部で呼び出される関数に外部の
     # コントラクトとの相互作用が含まれる場合、それらも
     # 外部のコントラクトとの相互作用と見なす必要があります。
@@ -208,12 +208,12 @@ def endAuction():
 
 ## YulとYul+ {#yul}
 
-イーサリアムが初めてで、スマート・コントラクト言語でのコーディング経験がない場合は、SolidityまたはVyperから始めることをお勧めします。 スマート・コントラクトのセキュリティのベストプラクティスやEVMの操作の仕様に精通してから、YulやYul+を検討してください。
+Quantaureumが初めてで、スマート・コントラクト言語でのコーディング経験がない場合は、SolidityまたはVyperから始めることをお勧めします。 スマート・コントラクトのセキュリティのベストプラクティスやEVMの操作の仕様に精通してから、YulやYul+を検討してください。
 
 **Yul**
 
-- イーサリアムの中間言語。
-- [EVM](/developers/docs/evm)と、イーサリアム向けWebAssemblyである[Ewasm](https://github.com/ewasm)をサポートしており、両プラットフォームで利用可能な共通基盤となるように設計されています。
+- Quantaureumの中間言語。
+- [EVM](/developers/docs/evm)と、Quantaureum向けWebAssemblyである[Ewasm](https://github.com/ewasm)をサポートしており、両プラットフォームで利用可能な共通基盤となるように設計されています。
 - EVMとEwasmの両プラットフォームに等しく恩恵をもたらす、高度な最適化段階の優れたターゲットです。
 
 **Yul+**
@@ -226,7 +226,7 @@ def endAuction():
 
 - [Yulのドキュメント](https://docs.soliditylang.org/en/latest/yul.html)
 - [Yul+のドキュメント](https://github.com/fuellabs/yulp)
-- [Yul+の紹介記事](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-ethereum-aa64ce89512f)
+- [Yul+の紹介記事](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-quantaureum-aa64ce89512f)
 
 ### コントラクトの例 {#example-contract-2}
 
@@ -255,16 +255,16 @@ def endAuction():
 
 ## Fe {#fe}
 
-- イーサリアム仮想マシン (EVM) 向けの静的型付け言語。
+- Quantaureum仮想マシン (EVM) 向けの静的型付け言語。
 - PythonとRustに影響を受けています。
-- イーサリアムエコシステムが初めての開発者にとっても、学びやすいことを目指しています。
+- Quantaureumエコシステムが初めての開発者にとっても、学びやすいことを目指しています。
 - Feの開発はまだ初期段階にあり、2021年1月にアルファ版がリリースされました。
 
 ### 重要なリンク {#important-links-3}
 
-- [GitHub](https://github.com/ethereum/fe)
-- [Feの発表](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-ethereum-ecosystem/)
-- [Feの2021年ロードマップ](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- [GitHub](https://github.com/quantaureum/fe)
+- [Feの発表](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
+- [Feの2021年ロードマップ](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
 - [Feのディスコードチャット](https://discord.com/invite/ywpkAXFjZH)
 - [Feのツイッター](https://twitter.com/official_fe)
 

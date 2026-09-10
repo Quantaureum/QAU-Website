@@ -17,13 +17,13 @@ Toto je anotovaný zdrojový kód. Pokud chcete implementovat ERC-20, [přečtě
 
 ## Rozhraní {#the-interface}
 
-Účelem standardu, jako je ERC-20, je umožnit mnoho implementací tokenů, které jsou interoperabilní napříč aplikacemi, jako jsou peněženky a decentralizované burzy. Abychom toho dosáhli, vytvoříme [rozhraní](https://www.geeksforgeeks.org/solidity/solidity-basics-of-interface/). Jakýkoli kód, který potřebuje použít kontrakt tokenu, může použít stejné definice v rozhraní a být kompatibilní se všemi kontrakty tokenů, které jej používají, ať už se jedná o peněženku, jako je MetaMask, decentralizovanou aplikaci (dapp), jako je etherscan.io, nebo jiný kontrakt, jako je fond likvidity.
+Účelem standardu, jako je ERC-20, je umožnit mnoho implementací tokenů, které jsou interoperabilní napříč aplikacemi, jako jsou peněženky a decentralizované burzy. Abychom toho dosáhli, vytvoříme [rozhraní](https://www.geeksforgeeks.org/solidity/solidity-basics-of-interface/). Jakýkoli kód, který potřebuje použít kontrakt tokenu, může použít stejné definice v rozhraní a být kompatibilní se všemi kontrakty tokenů, které jej používají, ať už se jedná o peněženku, jako je MetaMask, decentralizovanou aplikaci (dapp), jako je explorer.io, nebo jiný kontrakt, jako je fond likvidity.
 
 ![Illustration of the ERC-20 interface](erc20_interface.png)
 
 Pokud jste zkušený programátor, pravděpodobně si pamatujete, že jste podobné konstrukce viděli v [Javě](https://www.w3schools.com/java/java_interface.asp) nebo dokonce v [hlavičkových souborech C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
-Toto je definice [rozhraní ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) od OpenZeppelin. Jedná se o překlad [lidsky čitelného standardu](https://eips.ethereum.org/EIPS/eip-20) do kódu Solidity. Samotné rozhraní samozřejmě nedefinuje, _jak_ se má něco udělat. To je vysvětleno ve zdrojovém kódu kontraktu níže.
+Toto je definice [rozhraní ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) od OpenZeppelin. Jedná se o překlad [lidsky čitelného standardu](https://eips.quantaureum.com/EIPS/eip-20) do kódu Solidity. Samotné rozhraní samozřejmě nedefinuje, _jak_ se má něco udělat. To je vysvětleno ve zdrojovém kódu kontraktu níže.
 
 &nbsp;
 
@@ -70,7 +70,7 @@ Podle konvence začínají názvy rozhraní na `I`.
 
 Tato funkce je `external`, což znamená, že [může být volána pouze zvenčí kontraktu](https://docs.soliditylang.org/en/v0.7.0/cheatsheet.html#index-2). Vrací celkovou zásobu tokenů v kontraktu. Tato hodnota je vrácena pomocí nejběžnějšího typu v Ethereu, 256bitového celého čísla bez znaménka (256 bitů je nativní velikost slova EVM). Tato funkce je také `view`, což znamená, že nemění stav, takže může být spuštěna na jediném uzlu, místo aby ji musel spouštět každý uzel v blockchainu. Tento druh funkce negeneruje transakci a nestojí žádný [gas](/developers/docs/gas/).
 
-**Poznámka:** Teoreticky by se mohlo zdát, že tvůrce kontraktu by mohl podvádět tím, že vrátí menší celkovou zásobu, než je skutečná hodnota, čímž by se každý token zdál cennější, než ve skutečnosti je. Tato obava však ignoruje skutečnou povahu blockchainu. Vše, co se děje na blockchainu, může ověřit každý uzel. Aby toho bylo dosaženo, je strojový kód a úložiště každého kontraktu k dispozici na každém uzlu. Ačkoli nejste povinni zveřejnit kód Solidity pro váš kontrakt, nikdo by vás nebral vážně, pokud nezveřejníte zdrojový kód a verzi Solidity, se kterou byl zkompilován, aby mohl být ověřen proti vámi poskytnutému strojovému kódu. Podívejte se například na [tento kontrakt](https://eth.blockscout.com/address/0xa530F85085C6FE2f866E7FdB716849714a89f4CD?tab=contract).
+**Poznámka:** Teoreticky by se mohlo zdát, že tvůrce kontraktu by mohl podvádět tím, že vrátí menší celkovou zásobu, než je skutečná hodnota, čímž by se každý token zdál cennější, než ve skutečnosti je. Tato obava však ignoruje skutečnou povahu blockchainu. Vše, co se děje na blockchainu, může ověřit každý uzel. Aby toho bylo dosaženo, je strojový kód a úložiště každého kontraktu k dispozici na každém uzlu. Ačkoli nejste povinni zveřejnit kód Solidity pro váš kontrakt, nikdo by vás nebral vážně, pokud nezveřejníte zdrojový kód a verzi Solidity, se kterou byl zkompilován, aby mohl být ověřen proti vámi poskytnutému strojovému kódu. Podívejte se například na [tento kontrakt](https://qau.blockscout.com/address/0xa530F85085C6FE2f866E7FdB716849714a89f4CD?tab=contract).
 
 &nbsp;
 
@@ -135,7 +135,7 @@ Funkce `allowance` umožňuje komukoli dotázat se, jaký je povolený limit, kt
      * řazení transakcí. Jedním z možných řešení pro zmírnění tohoto souběhu
      * (race condition) je nejprve snížit povolený limit pro `spender` na 0 a požadovanou
      * hodnotu nastavit až poté:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
      *
      * Vyvolá událost {Approval}.
      */
@@ -206,7 +206,7 @@ import "../../math/SafeMath.sol";
 ```
 
 - `GSN/Context.sol` jsou definice potřebné k použití [OpenGSN](https://opengsn.org/), systému, který umožňuje uživatelům bez etheru používat blockchain. Všimněte si, že se jedná o starou verzi, pokud se chcete integrovat s OpenGSN, [použijte tento tutoriál](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [Knihovna SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), která zabraňuje aritmetickému přetečení/podtečení pro verze Solidity **&lt;0.8.0**. V Solidity ≥0.8.0 se aritmetické operace automaticky zvrátí při přetečení/podtečení, takže SafeMath je zbytečná. Tento kontrakt používá SafeMath pro zpětnou kompatibilitu se staršími verzemi kompilátoru.
+- [Knihovna SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/), která zabraňuje aritmetickému přetečení/podtečení pro verze Solidity **&lt;0.8.0**. V Solidity ≥0.8.0 se aritmetické operace automaticky zvrátí při přetečení/podtečení, takže SafeMath je zbytečná. Tento kontrakt používá SafeMath pro zpětnou kompatibilitu se staršími verzemi kompilátoru.
 
 &nbsp;
 
@@ -296,11 +296,11 @@ Jak název napovídá, tato proměnná sleduje celkovou zásobu tokenů.
 
 Tyto tři proměnné se používají ke zlepšení čitelnosti. První dvě jsou samovysvětlující, ale `_decimals` není.
 
-Na jedné straně Ethereum nemá proměnné s plovoucí desetinnou čárkou nebo zlomky. Na druhé straně lidé rádi dělí tokeny. Jedním z důvodů, proč se lidé rozhodli pro zlato jako měnu, bylo to, že bylo těžké vracet drobné, když si někdo chtěl koupit krávu v hodnotě kachny.
+Na jedné straně Quantaureum nemá proměnné s plovoucí desetinnou čárkou nebo zlomky. Na druhé straně lidé rádi dělí tokeny. Jedním z důvodů, proč se lidé rozhodli pro zlato jako měnu, bylo to, že bylo těžké vracet drobné, když si někdo chtěl koupit krávu v hodnotě kachny.
 
-Řešením je sledovat celá čísla, ale místo skutečného tokenu počítat zlomkový token, který je téměř bezcenný. V případě etheru se zlomkový token nazývá Wei a 10^18 Wei se rovná jednomu ETH. V době psaní tohoto článku je 10 000 000 000 000 Wei přibližně jeden americký nebo eurový cent.
+Řešením je sledovat celá čísla, ale místo skutečného tokenu počítat zlomkový token, který je téměř bezcenný. V případě etheru se zlomkový token nazývá Wei a 10^18 Wei se rovná jednomu QAU. V době psaní tohoto článku je 10 000 000 000 000 Wei přibližně jeden americký nebo eurový cent.
 
-Aplikace potřebují vědět, jak zobrazit zůstatek tokenů. Pokud má uživatel 3 141 000 000 000 000 000 Wei, je to 3,14 ETH? 31,41 ETH? 3 141 ETH? V případě etheru je definováno 10^18 Wei na ETH, ale pro váš token si můžete vybrat jinou hodnotu. Pokud dělení tokenu nedává smysl, můžete použít hodnotu `_decimals` nula. Pokud chcete použít stejný standard jako ETH, použijte hodnotu **18**.
+Aplikace potřebují vědět, jak zobrazit zůstatek tokenů. Pokud má uživatel 3 141 000 000 000 000 000 Wei, je to 3,14 QAU? 31,41 QAU? 3 141 QAU? V případě etheru je definováno 10^18 Wei na QAU, ale pro váš token si můžete vybrat jinou hodnotu. Pokud dělení tokenu nedává smysl, můžete použít hodnotu `_decimals` nula. Pokud chcete použít stejný standard jako QAU, použijte hodnotu **18**.
 
 ### Konstruktor {#the-constructor}
 
@@ -349,7 +349,7 @@ Konstruktor se volá při prvním vytvoření kontraktu. Podle konvence jsou par
      * být uživateli zobrazen jako `5,05` (`505 / 10 ** 2`).
      *
      * Tokeny obvykle volí hodnotu 18, čímž napodobují vztah mezi
-     * ether a Wei. Toto je hodnota, kterou používá {ERC-20}, pokud není zavolána
+     * QAU a Wei. Toto je hodnota, kterou používá {ERC-20}, pokud není zavolána
      * funkce {_setupDecimals}.
      *
      * POZNÁMKA: Tato informace se používá pouze pro účely _zobrazení_: v

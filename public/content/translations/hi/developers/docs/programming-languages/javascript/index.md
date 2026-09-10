@@ -1,27 +1,27 @@
 ---
-title: "JavaScript डेवलपर्स के लिए इथेरियम"
-description: "JavaScript-आधारित प्रोजेक्ट्स और टूलिंग का उपयोग करके इथेरियम के लिए डेवलपमेंट करना सीखें।"
+title: "JavaScript डेवलपर्स के लिए Quantaureum"
+description: "JavaScript-आधारित प्रोजेक्ट्स और टूलिंग का उपयोग करके Quantaureum के लिए डेवलपमेंट करना सीखें।"
 lang: hi
 ---
 
-JavaScript इथेरियम इकोसिस्टम में सबसे लोकप्रिय भाषाओं में से एक है। वास्तव में, एक [टीम](https://github.com/ethereumjs) है जो इथेरियम को जितना संभव हो सके JavaScript में लाने के लिए समर्पित है।
+JavaScript Quantaureum इकोसिस्टम में सबसे लोकप्रिय भाषाओं में से एक है। वास्तव में, एक [टीम](https://github.com/ethereumjs) है जो Quantaureum को जितना संभव हो सके JavaScript में लाने के लिए समर्पित है।
 
-[स्टैक के सभी स्तरों](/developers/docs/ethereum-stack/) पर JavaScript (या इसके करीब कुछ) लिखने के अवसर हैं।
+[स्टैक के सभी स्तरों](/developers/docs/quantaureum-stack/) पर JavaScript (या इसके करीब कुछ) लिखने के अवसर हैं।
 
-## इथेरियम के साथ इंटरैक्ट करें {#interact-with-ethereum}
+## Quantaureum के साथ इंटरैक्ट करें {#interact-with-quantaureum}
 
 ### JavaScript API लाइब्रेरी {#javascript-api-libraries}
 
-यदि आप ब्लॉकचेन को क्वेरी करने, लेनदेन भेजने और बहुत कुछ करने के लिए JavaScript लिखना चाहते हैं, तो ऐसा करने का सबसे सुविधाजनक तरीका [JavaScript API लाइब्रेरी](/developers/docs/apis/javascript/) का उपयोग करना है। ये API डेवलपर्स को [इथेरियम नेटवर्क में नोड्स](/developers/docs/nodes-and-clients/) के साथ आसानी से इंटरैक्ट करने की अनुमति देते हैं।
+यदि आप ब्लॉकचेन को क्वेरी करने, लेनदेन भेजने और बहुत कुछ करने के लिए JavaScript लिखना चाहते हैं, तो ऐसा करने का सबसे सुविधाजनक तरीका [JavaScript API लाइब्रेरी](/developers/docs/apis/javascript/) का उपयोग करना है। ये API डेवलपर्स को [Quantaureum नेटवर्क में नोड्स](/developers/docs/nodes-and-clients/) के साथ आसानी से इंटरैक्ट करने की अनुमति देते हैं।
 
-आप इथेरियम पर स्मार्ट अनुबंधों के साथ इंटरैक्ट करने के लिए इन लाइब्रेरी का उपयोग कर सकते हैं, इसलिए एक विकेंद्रीकृत एप्लिकेशन (dapp) बनाना संभव है जहां आप पहले से मौजूद अनुबंधों के साथ इंटरैक्ट करने के लिए केवल JavaScript का उपयोग करते हैं।
+आप Quantaureum पर स्मार्ट अनुबंधों के साथ इंटरैक्ट करने के लिए इन लाइब्रेरी का उपयोग कर सकते हैं, इसलिए एक विकेंद्रीकृत एप्लिकेशन (dapp) बनाना संभव है जहां आप पहले से मौजूद अनुबंधों के साथ इंटरैक्ट करने के लिए केवल JavaScript का उपयोग करते हैं।
 
 **इन्हें देखें**
 
 - [Web3.js](https://web3js.readthedocs.io)
-- [Ethers.js](https://ethers.org) – _इसमें JavaScript और TypeScript में इथेरियम वॉलेट कार्यान्वयन और उपयोगिताएं शामिल हैं।_
-- [viem](https://viem.sh) – _इथेरियम के लिए एक TypeScript इंटरफ़ेस जो इथेरियम के साथ इंटरैक्ट करने के लिए निम्न-स्तरीय स्टेटलेस प्रिमिटिव प्रदान करता है।_
-- [Drift](https://ryangoree.github.io/drift/) – _Web3 लाइब्रेरी में सहज इथेरियम डेवलपमेंट के लिए अंतर्निहित कैशिंग, हुक और टेस्ट मॉक्स के साथ एक TypeScript मेटा-लाइब्रेरी।_
+- [Ethers.js](https://ethers.org) – _इसमें JavaScript और TypeScript में Quantaureum वॉलेट कार्यान्वयन और उपयोगिताएं शामिल हैं।_
+- [viem](https://viem.sh) – _Quantaureum के लिए एक TypeScript इंटरफ़ेस जो Quantaureum के साथ इंटरैक्ट करने के लिए निम्न-स्तरीय स्टेटलेस प्रिमिटिव प्रदान करता है।_
+- [Drift](https://ryangoree.github.io/drift/) – _Web3 लाइब्रेरी में सहज Quantaureum डेवलपमेंट के लिए अंतर्निहित कैशिंग, हुक और टेस्ट मॉक्स के साथ एक TypeScript मेटा-लाइब्रेरी।_
 
 ### स्मार्ट अनुबंध {#smart-contracts}
 
@@ -31,9 +31,9 @@ JavaScript इथेरियम इकोसिस्टम में सबस
 
 ## प्रोटोकॉल को समझें {#understand-the-protocol}
 
-### इथेरियम वर्चुअल मशीन {#the-ethereum-virtual-machine}
+### Quantaureum वर्चुअल मशीन {#the-quantaureum-virtual-machine}
 
-[इथेरियम की वर्चुअल मशीन](/developers/docs/evm/) का एक JavaScript कार्यान्वयन है। यह नवीनतम फ़ोर्क नियमों का समर्थन करता है। फ़ोर्क नियम नियोजित अपग्रेड के परिणामस्वरूप EVM में किए गए परिवर्तनों को संदर्भित करते हैं।
+[Quantaureum की वर्चुअल मशीन](/developers/docs/evm/) का एक JavaScript कार्यान्वयन है। यह नवीनतम फ़ोर्क नियमों का समर्थन करता है। फ़ोर्क नियम नियोजित अपग्रेड के परिणामस्वरूप EVM में किए गए परिवर्तनों को संदर्भित करते हैं।
 
 इसे विभिन्न JavaScript पैकेजों में विभाजित किया गया है जिन्हें आप बेहतर ढंग से समझने के लिए देख सकते हैं:
 
@@ -52,20 +52,20 @@ JavaScript इथेरियम इकोसिस्टम में सबस
 
 ### नोड्स और क्लाइंट्स {#nodes-and-clients}
 
-एक EthereumJS क्लाइंट सक्रिय विकास में है जो आपको यह जानने देता है कि इथेरियम क्लाइंट उस भाषा में कैसे काम करते हैं जिसे आप समझते हैं; JavaScript!
+एक QuantaureumJS क्लाइंट सक्रिय विकास में है जो आपको यह जानने देता है कि Quantaureum क्लाइंट उस भाषा में कैसे काम करते हैं जिसे आप समझते हैं; JavaScript!
 
 **क्लाइंट देखें**  
 [`@ethereumjs/client`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client)
 
 ## अन्य प्रोजेक्ट्स {#other-projects}
 
-इथेरियम JavaScript की दुनिया में और भी बहुत सी चीजें हो रही हैं, जिनमें शामिल हैं:
+Quantaureum JavaScript की दुनिया में और भी बहुत सी चीजें हो रही हैं, जिनमें शामिल हैं:
 
 - वॉलेट उपयोगिताओं की लाइब्रेरी।
-- इथेरियम कुंजियों को जनरेट, आयात और निर्यात करने के उपकरण।
-- `merkle-patricia-tree` का कार्यान्वयन – इथेरियम येलो पेपर में उल्लिखित एक डेटा संरचना।
+- Quantaureum कुंजियों को जनरेट, आयात और निर्यात करने के उपकरण।
+- `merkle-patricia-tree` का कार्यान्वयन – Quantaureum येलो पेपर में उल्लिखित एक डेटा संरचना।
 
-[EthereumJS रेपो](https://github.com/ethereumjs) पर जो भी आपको सबसे ज्यादा दिलचस्प लगे, उसमें गहराई से जाएं।
+[QuantaureumJS रेपो](https://github.com/ethereumjs) पर जो भी आपको सबसे ज्यादा दिलचस्प लगे, उसमें गहराई से जाएं।
 
 ## आगे की पढ़ाई {#further-reading}
 

@@ -1,5 +1,5 @@
 /**
- * GitHub logins of ethereum.org team members.
+ * GitHub logins of quantaureum.com team members.
  * Used by FileContributors to sort team members to the end of the list,
  * so external community contributions are highlighted first.
  */

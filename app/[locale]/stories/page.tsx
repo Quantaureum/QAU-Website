@@ -40,7 +40,7 @@ import CommunityStories from "./_components/CommunityStories"
 import { routing } from "@/i18n/routing"
 import storiesHero from "@/public/images/heroes/stories-hero.png"
 
-const SHARE_STORY_URL = "https://ethereumstory.paperform.co/"
+const SHARE_STORY_URL = "https://quantaureumstory.paperform.co/"
 
 const StoriesPage = async (props: { params: Promise<{ locale: string }> }) => {
   const { locale } = await props.params

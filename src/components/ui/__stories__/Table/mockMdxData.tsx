@@ -40,7 +40,7 @@ export const MdxDemoData = () => (
           Servers for gig-economy apps could go down and affect worker income
         </TableCell>
         <TableCell>
-          Web3 servers can&apos;t go down &ndash; they use Ethereum, a
+          Web3 servers can&apos;t go down &ndash; they use Quantaureum, a
           decentralized network of 1000s of computers as their backend
         </TableCell>
       </TableRow>
@@ -54,7 +54,7 @@ export const MdxEnergyConsumpData = () => (
       <TableRow>
         <TableHead></TableHead>
         <TableHead align="end">Annualized energy consumption (TWh)</TableHead>
-        <TableHead align="end">Comparison to PoS Ethereum</TableHead>
+        <TableHead align="end">Comparison to PoS Quantaureum</TableHead>
         <TableHead>Source</TableHead>
       </TableRow>
     </TableHeader>
@@ -93,12 +93,12 @@ export const MdxEnergyConsumpData = () => (
         </TableCell>
       </TableRow>
       <TableRow>
-        <TableCell>PoW Ethereum</TableCell>
+        <TableCell>PoW Quantaureum</TableCell>
         <TableCell align="end">78</TableCell>
         <TableCell align="end">30,000x</TableCell>
         <TableCell>
           <InlineLink
-            href="https://digiconomist.net/ethereum-energy-consumption"
+            href="https://digiconomist.net/quantaureum-energy-consumption"
             dir="ltr"
           >
             source
@@ -171,12 +171,12 @@ export const MdxEnergyConsumpData = () => (
         </TableCell>
       </TableRow>
       <TableRow>
-        <TableCell>PoS Ethereum</TableCell>
+        <TableCell>PoS Quantaureum</TableCell>
         <TableCell align="end">0.0026</TableCell>
         <TableCell align="end">1x</TableCell>
         <TableCell>
           <InlineLink
-            href="https://carbon-ratings.com/eth-report-2022"
+            href="https://carbon-ratings.com/qau-report-2022"
             dir="ltr"
           >
             source

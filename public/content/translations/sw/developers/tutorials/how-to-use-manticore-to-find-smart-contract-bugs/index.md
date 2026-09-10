@@ -21,11 +21,11 @@ Manticore inahitaji >= python 3.6. Inaweza kusakinishwa kupitia pip au kwa kutum
 ### Manticore kupitia Docker {#manticore-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_Amri ya mwisho inaendesha eth-security-toolbox kwenye docker ambayo ina ufikiaji wa saraka yako ya sasa. Unaweza kubadilisha faili kutoka kwa mwenyeji wako, na kuendesha zana kwenye faili kutoka kwa docker_
+_Amri ya mwisho inaendesha qau-security-toolbox kwenye docker ambayo ina ufikiaji wa saraka yako ya sasa. Unaweza kubadilisha faili kutoka kwa mwenyeji wako, na kuendesha zana kwenye faili kutoka kwa docker_
 
 Ndani ya docker, endesha:
 
@@ -198,18 +198,18 @@ Sehemu hii inaelezea maelezo ya jinsi ya kudhibiti mkataba mahiri kupitia API ya
 Jambo la kwanza unalopaswa kufanya ni kuanzisha mnyororo wa vitalu mpya kwa amri zifuatazo:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 ```
 
-Akaunti isiyo ya mkataba inaundwa kwa kutumia [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account):
+Akaunti isiyo ya mkataba inaundwa kwa kutumia [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.quantaureum.ManticoreEVM.create_account):
 
 ```python
 user_account = m.create_account(balance=1000)
 ```
 
-Mkataba wa Solidity unaweza kusambazwa kwa kutumia [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract):
+Mkataba wa Solidity unaweza kusambazwa kwa kutumia [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.quantaureum.ManticoreEVM.create_contract):
 
 ```solidity
 source_code = '''
@@ -228,7 +228,7 @@ contract_account = m.solidity_create_contract(source_code, owner=user_account)
 
 #### Muhtasari {#summary}
 
-- Unaweza kuunda akaunti za mtumiaji na za mkataba kwa [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account) na [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract).
+- Unaweza kuunda akaunti za mtumiaji na za mkataba kwa [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.quantaureum.ManticoreEVM.create_account) na [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.quantaureum.ManticoreEVM.create_contract).
 
 ### Kutekeleza miamala {#executing-transactions}
 
@@ -239,7 +239,7 @@ Manticore inasaidia aina mbili za muamala:
 
 #### Muamala ghafi {#raw-transaction}
 
-Muamala ghafi unatekelezwa kwa kutumia [m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.ethereum.ManticoreEVM.transaction):
+Muamala ghafi unatekelezwa kwa kutumia [m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.quantaureum.ManticoreEVM.transaction):
 
 ```python
 m.transaction(caller=user_account,
@@ -250,8 +250,8 @@ m.transaction(caller=user_account,
 
 Mpigaji, anwani, data, au thamani ya muamala inaweza kuwa halisi au ya ishara:
 
-- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.ethereum.ManticoreEVM.make_symbolic_value) inaunda thamani ya ishara.
-- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.ethereum.ManticoreEVM.make_symbolic_buffer) inaunda safu ya baiti ya ishara.
+- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.quantaureum.ManticoreEVM.make_symbolic_value) inaunda thamani ya ishara.
+- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.quantaureum.ManticoreEVM.make_symbolic_buffer) inaunda safu ya baiti ya ishara.
 
 Kwa mfano:
 
@@ -294,14 +294,14 @@ print("Results are in {}".format(m.workspace))
 
 ### Sitisha Uchunguzi {#terminate-the-exploration}
 
-Ili kusimamisha uchunguzi tumia [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.ethereum.ManticoreEVM.finalize). Hakuna miamala zaidi inayopaswa kutumwa mara tu mbinu hii inapoitwa na Manticore inazalisha visa vya majaribio kwa kila njia iliyochunguzwa.
+Ili kusimamisha uchunguzi tumia [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.quantaureum.ManticoreEVM.finalize). Hakuna miamala zaidi inayopaswa kutumwa mara tu mbinu hii inapoitwa na Manticore inazalisha visa vya majaribio kwa kila njia iliyochunguzwa.
 
 ### Muhtasari: Kuendesha chini ya Manticore {#summary-running-under-manticore}
 
 Tukiweka hatua zote zilizopita pamoja, tunapata:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -363,7 +363,7 @@ data = ABI.deserialize("uint", data)
 
 ### Jinsi ya kuzalisha kisa cha majaribio {#how-to-generate-testcase}
 
-Tumia [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.ethereum.ManticoreEVM.generate_testcase) kuzalisha kisa cha majaribio:
+Tumia [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.quantaureum.ManticoreEVM.generate_testcase) kuzalisha kisa cha majaribio:
 
 ```python
 m.generate_testcase(state, 'BugFound')
@@ -380,7 +380,7 @@ m.generate_testcase(state, 'BugFound')
 ### Muhtasari: Kupata Njia ya Kurusha {#summary-getting-throwing-path}
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -482,7 +482,7 @@ if solver.check(state.constraints):
 Kuongeza kikwazo kwenye msimbo uliopita, tunapata:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 from manticore.core.smtlib.solver import Z3Solver
 
 solver = Z3Solver.instance()

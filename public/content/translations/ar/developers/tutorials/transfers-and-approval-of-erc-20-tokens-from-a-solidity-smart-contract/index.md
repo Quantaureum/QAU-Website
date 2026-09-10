@@ -7,19 +7,19 @@ skill: intermediate
 breadcrumb: "تحويلات ⁦ERC-20⁩"
 lang: ar
 published: 2020-04-07
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
 في البرنامج التعليمي السابق، درسنا [تشريح الرمز المميز <span dir="ltr">ERC-20</span> في <span dir="ltr">Solidity</span>](/developers/tutorials/understand-the-erc-20-token-smart-contract/) على سلسلة الكتل إيثيريوم. في هذه المقالة، سنرى كيف يمكننا استخدام عقد ذكي للتفاعل مع رمز مميز باستخدام لغة <span dir="ltr">Solidity</span>.
 
-بالنسبة لهذا العقد الذكي، سنقوم بإنشاء منصة تداول لامركزية (DEX) وهمية حقيقية حيث يمكن للمستخدم تداول الإيثر مقابل [الرمز المميز <span dir="ltr">ERC-20</span>](/developers/docs/standards/tokens/erc-20/) الذي تم نشره حديثًا.
+بالنسبة لهذا العقد الذكي، سنقوم بإنشاء منصة تداول لامركزية (DEX) وهمية حقيقية حيث يمكن للمستخدم تداول الQAU مقابل [الرمز المميز <span dir="ltr">ERC-20</span>](/developers/docs/standards/tokens/erc-20/) الذي تم نشره حديثًا.
 
 في هذا البرنامج التعليمي، سنستخدم الكود الذي كتبناه في البرنامج التعليمي السابق كأساس. ستقوم منصة التداول اللامركزية (DEX) الخاصة بنا بإنشاء مثيل للعقد في المُنشئ الخاص بها وتنفيذ عمليات:
 
-- مبادلة الرموز المميزة بالإيثر
-- مبادلة الإيثر بالرموز المميزة
+- مبادلة الرموز المميزة بالQAU
+- مبادلة الQAU بالرموز المميزة
 
 سنبدأ كود منصة التداول اللامركزية الخاصة بنا بإضافة قاعدة كود <span dir="ltr">ERC20</span> البسيطة الخاصة بنا:
 
@@ -53,7 +53,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {
@@ -128,14 +128,14 @@ contract DEX {
 
 لذا أصبح لدينا الآن منصة التداول اللامركزية الخاصة بنا ولديها كل احتياطي الرموز المميزة المتاح. يحتوي العقد على دالتين:
 
-- `buy`: يمكن للمستخدم إرسال الإيثر والحصول على رموز مميزة في المقابل
-- `sell`: يمكن للمستخدم أن يقرر إرسال الرموز المميزة لاسترداد الإيثر
+- `buy`: يمكن للمستخدم إرسال الQAU والحصول على رموز مميزة في المقابل
+- `sell`: يمكن للمستخدم أن يقرر إرسال الرموز المميزة لاسترداد الQAU
 
 ## دالة الشراء {#the-buy-function}
 
-دعونا نكتب كود دالة الشراء. سنحتاج أولاً إلى التحقق من كمية الإيثر التي تحتوي عليها الرسالة والتحقق من أن العقد يمتلك ما يكفي من الرموز المميزة وأن الرسالة تحتوي على بعض الإيثر. إذا كان العقد يمتلك ما يكفي من الرموز المميزة، فسيرسل عدد الرموز المميزة إلى المستخدم ويُصدر الحدث `Bought`.
+دعونا نكتب كود دالة الشراء. سنحتاج أولاً إلى التحقق من كمية الQAU التي تحتوي عليها الرسالة والتحقق من أن العقد يمتلك ما يكفي من الرموز المميزة وأن الرسالة تحتوي على بعض الQAU. إذا كان العقد يمتلك ما يكفي من الرموز المميزة، فسيرسل عدد الرموز المميزة إلى المستخدم ويُصدر الحدث `Bought`.
 
-لاحظ أنه إذا استدعينا دالة الاشتراط (`require`) في حالة حدوث خطأ، فسيتم إرجاع الإيثر المُرسل مباشرةً وإعادته إلى المستخدم.
+لاحظ أنه إذا استدعينا دالة الاشتراط (`require`) في حالة حدوث خطأ، فسيتم إرجاع الQAU المُرسل مباشرةً وإعادته إلى المستخدم.
 
 لتبسيط الأمور، نقوم فقط بمبادلة <span dir="ltr">1</span> رمز مميز مقابل <span dir="ltr">1 Wei</span>.
 
@@ -143,7 +143,7 @@ contract DEX {
 function buy() payable public {
     uint256 amountTobuy = msg.value;
     uint256 dexBalance = token.balanceOf(address(this));
-    require(amountTobuy > 0, "You need to send some ether");
+    require(amountTobuy > 0, "You need to send some QAU");
     require(amountTobuy <= dexBalance, "Not enough tokens in the reserve");
     token.transfer(msg.sender, amountTobuy);
     emit Bought(amountTobuy);
@@ -156,7 +156,7 @@ function buy() payable public {
 
 ## دالة البيع {#the-sell-function}
 
-ستشترط الدالة المسؤولة عن البيع أولاً أن يكون المستخدم قد وافق على الكمية عن طريق استدعاء دالة الموافقة (`approve`) مسبقًا. تتطلب الموافقة على التحويل أن يقوم المستخدم باستدعاء الرمز المميز <span dir="ltr">ERC20Basic</span> الذي تم إنشاء مثيل له بواسطة منصة التداول اللامركزية (DEX). يمكن تحقيق ذلك عن طريق استدعاء دالة `token()` الخاصة بعقد منصة التداول اللامركزية أولاً لاسترداد العنوان الذي نشرت فيه منصة التداول اللامركزية عقد <span dir="ltr">ERC20Basic</span> المسمى `token`. ثم نقوم بإنشاء مثيل لذلك العقد في جلستنا ونستدعي دالته `approve`. بعد ذلك نتمكن من استدعاء دالة `sell` الخاصة بمنصة التداول اللامركزية ومبادلة رموزنا المميزة مرة أخرى مقابل الإيثر. على سبيل المثال، هكذا يبدو الأمر في جلسة <span dir="ltr">Brownie</span> تفاعلية:
+ستشترط الدالة المسؤولة عن البيع أولاً أن يكون المستخدم قد وافق على الكمية عن طريق استدعاء دالة الموافقة (`approve`) مسبقًا. تتطلب الموافقة على التحويل أن يقوم المستخدم باستدعاء الرمز المميز <span dir="ltr">ERC20Basic</span> الذي تم إنشاء مثيل له بواسطة منصة التداول اللامركزية (DEX). يمكن تحقيق ذلك عن طريق استدعاء دالة `token()` الخاصة بعقد منصة التداول اللامركزية أولاً لاسترداد العنوان الذي نشرت فيه منصة التداول اللامركزية عقد <span dir="ltr">ERC20Basic</span> المسمى `token`. ثم نقوم بإنشاء مثيل لذلك العقد في جلستنا ونستدعي دالته `approve`. بعد ذلك نتمكن من استدعاء دالة `sell` الخاصة بمنصة التداول اللامركزية ومبادلة رموزنا المميزة مرة أخرى مقابل الQAU. على سبيل المثال، هكذا يبدو الأمر في جلسة <span dir="ltr">Brownie</span> تفاعلية:
 
 ```python
 #### Python في وحدة تحكم Brownie التفاعلية...
@@ -164,8 +164,8 @@ function buy() payable public {
 # نشر DEX
 dex = DEX.deploy({'from':account1})
 
-# استدعاء دالة الشراء لمبادلة إيثر مقابل رمز مميز
-# 1e18 هو 1 إيثر مقوم بـ Wei
+# استدعاء دالة الشراء لمبادلة QAU مقابل رمز مميز
+# 1e18 هو 1 QAU مقوم بـ Wei
 dex.buy({'from': account2, 1e18})
 
 # الحصول على عنوان النشر للرمز المميز ERC-20
@@ -180,7 +180,7 @@ token.approve(dex.address, 3e18, {'from':account2})
 
 ```
 
-ثم عند استدعاء دالة البيع، سنتحقق مما إذا كان التحويل من عنوان المتصل إلى عنوان العقد ناجحًا ثم نرسل الإيثر مرة أخرى إلى عنوان المتصل.
+ثم عند استدعاء دالة البيع، سنتحقق مما إذا كان التحويل من عنوان المتصل إلى عنوان العقد ناجحًا ثم نرسل الQAU مرة أخرى إلى عنوان المتصل.
 
 ```solidity
 function sell(uint256 amount) public {
@@ -193,7 +193,7 @@ function sell(uint256 amount) public {
 }
 ```
 
-إذا سار كل شيء على ما يرام، يجب أن ترى حدثين (`Transfer` و `Sold`) في المعاملة وتحديث رصيد الرموز المميزة ورصيد الإيثر الخاص بك.
+إذا سار كل شيء على ما يرام، يجب أن ترى حدثين (`Transfer` و `Sold`) في المعاملة وتحديث رصيد الرموز المميزة ورصيد الQAU الخاص بك.
 
 ![Two events in the transaction: Transfer and Sold](./transfer-and-sold-events.png)
 
@@ -201,7 +201,7 @@ function sell(uint256 amount) public {
 
 من خلال هذا البرنامج التعليمي، رأينا كيفية التحقق من الرصيد والسماحية لرمز مميز <span dir="ltr">ERC-20</span> وأيضًا كيفية استدعاء `Transfer` و `TransferFrom` لعقد ذكي <span dir="ltr">ERC20</span> باستخدام الواجهة.
 
-بمجرد إجراء معاملة، لدينا برنامج تعليمي بلغة <span dir="ltr">JavaScript</span> [للانتظار والحصول على تفاصيل حول المعاملات](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/) التي تم إجراؤها على عقدك و[برنامج تعليمي لفك تشفير الأحداث الناتجة عن تحويلات الرموز المميزة أو أي أحداث أخرى](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/) طالما أن لديك واجهة التطبيق الثنائية (ABI).
+بمجرد إجراء معاملة، لدينا برنامج تعليمي بلغة <span dir="ltr">JavaScript</span> [للانتظار والحصول على تفاصيل حول المعاملات](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/) التي تم إجراؤها على عقدك و[برنامج تعليمي لفك تشفير الأحداث الناتجة عن تحويلات الرموز المميزة أو أي أحداث أخرى](https://quantaureumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/) طالما أن لديك واجهة التطبيق الثنائية (ABI).
 
 إليك الكود الكامل للبرنامج التعليمي:
 
@@ -235,7 +235,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {
@@ -296,7 +296,7 @@ contract DEX {
     function buy() payable public {
         uint256 amountTobuy = msg.value;
         uint256 dexBalance = token.balanceOf(address(this));
-        require(amountTobuy > 0, "You need to send some ether");
+        require(amountTobuy > 0, "You need to send some QAU");
         require(amountTobuy <= dexBalance, "Not enough tokens in the reserve");
         token.transfer(msg.sender, amountTobuy);
         emit Bought(amountTobuy);

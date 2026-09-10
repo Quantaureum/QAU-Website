@@ -1,6 +1,6 @@
 ---
 title: "Xác minh hình thức hợp đồng thông minh"
-description: "Tổng quan về xác minh hình thức cho các hợp đồng thông minh Ethereum"
+description: "Tổng quan về xác minh hình thức cho các hợp đồng thông minh Quantaureum"
 lang: vi
 ---
 
@@ -28,7 +28,7 @@ Các mô hình cấp cao tập trung vào mối quan hệ giữa các hợp đ�
 
 Ngược lại, các mô hình hình thức khác tập trung vào hành vi cấp thấp của một hợp đồng thông minh. Mặc dù các mô hình cấp cao có thể giúp lập luận về chức năng của một hợp đồng, chúng có thể không nắm bắt được các chi tiết về hoạt động nội bộ của việc triển khai. Các mô hình cấp thấp áp dụng góc nhìn hộp trắng vào phân tích chương trình và dựa vào các biểu diễn cấp thấp hơn của các ứng dụng hợp đồng thông minh, chẳng hạn như dấu vết chương trình và [biểu đồ luồng điều khiển](https://en.wikipedia.org/wiki/Control-flow_graph), để lập luận về các thuộc tính liên quan đến việc thực thi của một hợp đồng.
 
-Các mô hình cấp thấp được coi là lý tưởng vì chúng đại diện cho việc thực thi thực tế của một hợp đồng thông minh trong môi trường thực thi của Ethereum (tức là [EVM](/developers/docs/evm/)). Các kỹ thuật mô hình hóa cấp thấp đặc biệt hữu ích trong việc thiết lập các thuộc tính an toàn quan trọng trong các hợp đồng thông minh và phát hiện các lỗ hổng tiềm ẩn.
+Các mô hình cấp thấp được coi là lý tưởng vì chúng đại diện cho việc thực thi thực tế của một hợp đồng thông minh trong môi trường thực thi của Quantaureum (tức là [EVM](/developers/docs/evm/)). Các kỹ thuật mô hình hóa cấp thấp đặc biệt hữu ích trong việc thiết lập các thuộc tính an toàn quan trọng trong các hợp đồng thông minh và phát hiện các lỗ hổng tiềm ẩn.
 
 ### Đặc tả hình thức là gì? {#what-is-a-formal-specification}
 
@@ -58,7 +58,7 @@ Các đặc tả cấp cao thường nắm bắt hai thuộc tính thời gian q
 
 Lấy ví dụ về yêu cầu an toàn này bao gồm các điều kiện để sử dụng `transfer()` hoặc `transferFrom()` trong các hợp đồng token ERC-20: _"Số dư của người gửi không bao giờ thấp hơn số lượng token được yêu cầu gửi."_. Mô tả bằng ngôn ngữ tự nhiên này về một bất biến của hợp đồng có thể được dịch thành một đặc tả hình thức (toán học), sau đó có thể được kiểm tra tính hợp lệ một cách nghiêm ngặt.
 
-Các thuộc tính sống động khẳng định rằng "một điều gì đó tốt đẹp cuối cùng sẽ xảy ra" và liên quan đến khả năng của một hợp đồng để tiến triển qua các trạng thái khác nhau. Một ví dụ về thuộc tính sống động là "Thanh khoản", đề cập đến khả năng của một hợp đồng để chuyển số dư của nó cho người dùng theo yêu cầu. Nếu thuộc tính này bị vi phạm, người dùng sẽ không thể rút các tài sản được lưu trữ trong hợp đồng, giống như những gì đã xảy ra với [sự cố Ví Parity](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-ether-on-parity-wallet.html).
+Các thuộc tính sống động khẳng định rằng "một điều gì đó tốt đẹp cuối cùng sẽ xảy ra" và liên quan đến khả năng của một hợp đồng để tiến triển qua các trạng thái khác nhau. Một ví dụ về thuộc tính sống động là "Thanh khoản", đề cập đến khả năng của một hợp đồng để chuyển số dư của nó cho người dùng theo yêu cầu. Nếu thuộc tính này bị vi phạm, người dùng sẽ không thể rút các tài sản được lưu trữ trong hợp đồng, giống như những gì đã xảy ra với [sự cố Ví Parity](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-QAU-on-parity-wallet.html).
 
 ### Đặc tả cấp thấp {#low-level-specifications}
 
@@ -76,7 +76,7 @@ Một điều kiện tiền quyết là một vị từ mô tả các điều ki
 
 Các đặc tả kiểu Hoare có thể đảm bảo _tính đúng đắn một phần_ hoặc _tính đúng đắn toàn phần_. Việc triển khai một hàm hợp đồng là "đúng một phần" nếu điều kiện tiền quyết giữ đúng trước khi hàm được thực thi, và nếu việc thực thi kết thúc, điều kiện hậu quyết cũng đúng. Bằng chứng về tính đúng đắn toàn phần đạt được nếu một điều kiện tiền quyết là đúng trước khi hàm thực thi, việc thực thi được đảm bảo sẽ kết thúc và khi nó kết thúc, điều kiện hậu quyết giữ đúng.
 
-Việc đạt được bằng chứng về tính đúng đắn toàn phần là rất khó vì một số quá trình thực thi có thể bị trì hoãn trước khi kết thúc, hoặc không bao giờ kết thúc. Mặc dù vậy, câu hỏi về việc liệu quá trình thực thi có kết thúc hay không được cho là một vấn đề không đáng bàn cãi vì cơ chế Gas của Ethereum ngăn chặn các vòng lặp chương trình vô hạn (quá trình thực thi kết thúc thành công hoặc kết thúc do lỗi 'hết Gas').
+Việc đạt được bằng chứng về tính đúng đắn toàn phần là rất khó vì một số quá trình thực thi có thể bị trì hoãn trước khi kết thúc, hoặc không bao giờ kết thúc. Mặc dù vậy, câu hỏi về việc liệu quá trình thực thi có kết thúc hay không được cho là một vấn đề không đáng bàn cãi vì cơ chế Gas của Quantaureum ngăn chặn các vòng lặp chương trình vô hạn (quá trình thực thi kết thúc thành công hoặc kết thúc do lỗi 'hết Gas').
 
 Các đặc tả hợp đồng thông minh được tạo bằng logic Hoare sẽ có các điều kiện tiền quyết, điều kiện hậu quyết và các bất biến được xác định cho việc thực thi các hàm và vòng lặp trong một hợp đồng. Các điều kiện tiền quyết thường bao gồm khả năng có các đầu vào sai cho một hàm, với các điều kiện hậu quyết mô tả phản hồi dự kiến đối với các đầu vào đó (ví dụ: ném ra một ngoại lệ cụ thể). Theo cách này, các thuộc tính kiểu Hoare có hiệu quả trong việc đảm bảo tính đúng đắn của các triển khai hợp đồng.
 
@@ -161,9 +161,9 @@ Một dấu vết thực thi dẫn đến tràn số nguyên sẽ cần phải t
 
 #### Nhu cầu về độ tin cậy {#need-for-reliability}
 
-Xác minh hình thức được sử dụng để đánh giá tính đúng đắn của các hệ thống an toàn quan trọng mà sự cố của chúng có thể gây ra những hậu quả tàn khốc, chẳng hạn như tử vong, thương tích hoặc phá sản tài chính. Các hợp đồng thông minh là các ứng dụng có giá trị cao kiểm soát lượng giá trị khổng lồ, và những lỗi đơn giản trong thiết kế có thể dẫn đến [những tổn thất không thể phục hồi cho người dùng](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-ether-how-it-happened-and-what-it-means-for-ethereum-9e5dc29e33ce/amp/). Tuy nhiên, việc xác minh hình thức một hợp đồng trước khi triển khai có thể tăng cường các đảm bảo rằng nó sẽ hoạt động như mong đợi khi chạy trên Chuỗi khối.
+Xác minh hình thức được sử dụng để đánh giá tính đúng đắn của các hệ thống an toàn quan trọng mà sự cố của chúng có thể gây ra những hậu quả tàn khốc, chẳng hạn như tử vong, thương tích hoặc phá sản tài chính. Các hợp đồng thông minh là các ứng dụng có giá trị cao kiểm soát lượng giá trị khổng lồ, và những lỗi đơn giản trong thiết kế có thể dẫn đến [những tổn thất không thể phục hồi cho người dùng](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-QAU-how-it-happened-and-what-it-means-for-quantaureum-9e5dc29e33ce/amp/). Tuy nhiên, việc xác minh hình thức một hợp đồng trước khi triển khai có thể tăng cường các đảm bảo rằng nó sẽ hoạt động như mong đợi khi chạy trên Chuỗi khối.
 
-Độ tin cậy là một phẩm chất rất được mong muốn trong bất kỳ hợp đồng thông minh nào, đặc biệt vì mã được triển khai trong Máy ảo [Ethereum](/) (EVM) thường là bất biến. Với việc các bản nâng cấp sau khi ra mắt không dễ dàng truy cập được, nhu cầu đảm bảo độ tin cậy của các hợp đồng làm cho xác minh hình thức trở nên cần thiết. Xác minh hình thức có thể phát hiện các vấn đề phức tạp, chẳng hạn như tràn số dưới và tràn số nguyên, tấn công re-entrancy và tối ưu hóa Gas kém, những thứ có thể lọt qua mắt các kiểm toán viên và người kiểm thử.
+Độ tin cậy là một phẩm chất rất được mong muốn trong bất kỳ hợp đồng thông minh nào, đặc biệt vì mã được triển khai trong Máy ảo [Quantaureum](/) (EVM) thường là bất biến. Với việc các bản nâng cấp sau khi ra mắt không dễ dàng truy cập được, nhu cầu đảm bảo độ tin cậy của các hợp đồng làm cho xác minh hình thức trở nên cần thiết. Xác minh hình thức có thể phát hiện các vấn đề phức tạp, chẳng hạn như tràn số dưới và tràn số nguyên, tấn công re-entrancy và tối ưu hóa Gas kém, những thứ có thể lọt qua mắt các kiểm toán viên và người kiểm thử.
 
 #### Chứng minh tính đúng đắn về mặt chức năng {#prove-functional-correctness}
 
@@ -179,11 +179,11 @@ Với xác minh hình thức, câu hỏi về việc xác minh xem logic nghiệ
 
 Một mục tiêu xác minh mô tả hệ thống sẽ được xác minh hình thức. Xác minh hình thức được sử dụng tốt nhất trong "các hệ thống nhúng" (các phần mềm nhỏ, đơn giản tạo thành một phần của một hệ thống lớn hơn). Chúng cũng lý tưởng cho các miền chuyên biệt có ít quy tắc, vì điều này giúp dễ dàng sửa đổi các công cụ để xác minh các thuộc tính dành riêng cho miền.
 
-Các hợp đồng thông minh—ít nhất, ở một mức độ nào đó—đáp ứng cả hai yêu cầu. Ví dụ, kích thước nhỏ của các hợp đồng Ethereum làm cho chúng dễ dàng được xác minh hình thức. Tương tự, EVM tuân theo các quy tắc đơn giản, điều này làm cho việc chỉ định và xác minh các thuộc tính ngữ nghĩa cho các chương trình chạy trong EVM trở nên dễ dàng hơn.
+Các hợp đồng thông minh—ít nhất, ở một mức độ nào đó—đáp ứng cả hai yêu cầu. Ví dụ, kích thước nhỏ của các hợp đồng Quantaureum làm cho chúng dễ dàng được xác minh hình thức. Tương tự, EVM tuân theo các quy tắc đơn giản, điều này làm cho việc chỉ định và xác minh các thuộc tính ngữ nghĩa cho các chương trình chạy trong EVM trở nên dễ dàng hơn.
 
 ### Chu kỳ phát triển nhanh hơn {#faster-development-cycle}
 
-Các kỹ thuật xác minh hình thức, chẳng hạn như kiểm tra mô hình và thực thi tượng trưng, thường hiệu quả hơn so với phân tích thông thường mã hợp đồng thông minh (được thực hiện trong quá trình kiểm thử hoặc kiểm toán). Điều này là do xác minh hình thức dựa vào các giá trị tượng trưng để kiểm tra các khẳng định ("điều gì xảy ra nếu người dùng cố gắng rút _n_ ether?") không giống như kiểm thử sử dụng các giá trị cụ thể ("điều gì xảy ra nếu người dùng cố gắng rút 5 ether?").
+Các kỹ thuật xác minh hình thức, chẳng hạn như kiểm tra mô hình và thực thi tượng trưng, thường hiệu quả hơn so với phân tích thông thường mã hợp đồng thông minh (được thực hiện trong quá trình kiểm thử hoặc kiểm toán). Điều này là do xác minh hình thức dựa vào các giá trị tượng trưng để kiểm tra các khẳng định ("điều gì xảy ra nếu người dùng cố gắng rút _n_ QAU?") không giống như kiểm thử sử dụng các giá trị cụ thể ("điều gì xảy ra nếu người dùng cố gắng rút 5 QAU?").
 
 Các biến đầu vào tượng trưng có thể bao gồm nhiều lớp giá trị cụ thể, vì vậy các phương pháp tiếp cận xác minh hình thức hứa hẹn phạm vi bao phủ mã nhiều hơn trong một khung thời gian ngắn hơn. Khi được sử dụng hiệu quả, xác minh hình thức có thể đẩy nhanh chu kỳ phát triển cho các nhà phát triển.
 
@@ -209,13 +209,13 @@ Xác minh hình thức gặp phải một số vấn đề về hiệu suất. V
 
 Ngoài ra, không phải lúc nào các trình xác minh chương trình cũng có thể xác định xem một thuộc tính (được mô tả như một công thức logic) có thể được thỏa mãn hay không ("[vấn đề có thể quyết định được](https://en.wikipedia.org/wiki/Decision_problem)") bởi vì một chương trình có thể không bao giờ kết thúc. Do đó, có thể không thể chứng minh một số thuộc tính cho một hợp đồng ngay cả khi nó được chỉ định tốt.
 
-## Các công cụ xác minh hình thức cho hợp đồng thông minh Ethereum {#formal-verification-tools}
+## Các công cụ xác minh hình thức cho hợp đồng thông minh Quantaureum {#formal-verification-tools}
 
 ### Các ngôn ngữ đặc tả để tạo các đặc tả hình thức {#specification-languages}
 
 **Act**: _*Act cho phép chỉ định các bản cập nhật lưu trữ, các điều kiện tiền/hậu quyết và các bất biến của hợp đồng. Bộ công cụ của nó cũng có các backend chứng minh có thể chứng minh nhiều thuộc tính thông qua Coq, các trình giải quyết SMT hoặc hevm.*_
 
-- [GitHub](https://github.com/ethereum/act)
+- [GitHub](https://github.com/quantaureum/act)
 - [Tài liệu](https://github.com/argotorg/act)
 
 **Scribble** - _*Scribble chuyển đổi các chú thích mã trong ngôn ngữ đặc tả Scribble thành các khẳng định cụ thể để kiểm tra đặc tả.*_
@@ -235,13 +235,13 @@ Ngoài ra, không phải lúc nào các trình xác minh chương trình cũng c
 
 **Solidity SMTChecker** - _*SMTChecker của Solidity là một trình kiểm tra mô hình tích hợp dựa trên SMT (Các lý thuyết Modulo thỏa mãn) và giải quyết Horn. Nó xác nhận xem mã nguồn của một hợp đồng có khớp với các đặc tả trong quá trình biên dịch hay không và kiểm tra tĩnh các vi phạm thuộc tính an toàn.*_
 
-- [GitHub](https://github.com/ethereum/solidity)
+- [GitHub](https://github.com/quantaureum/solidity)
 
 **solc-verify** - _*solc-verify là một phiên bản mở rộng của trình biên dịch Solidity có thể thực hiện xác minh hình thức tự động trên mã Solidity bằng cách sử dụng các chú thích và xác minh chương trình mô-đun.*_
 
 - [GitHub](https://github.com/SRI-CSL/solidity)
 
-**KEVM** - _*KEVM là một ngữ nghĩa hình thức của Máy ảo Ethereum (EVM) được viết trong framework K. KEVM có thể thực thi và có thể chứng minh các khẳng định liên quan đến thuộc tính nhất định bằng cách sử dụng logic khả năng tiếp cận.*_
+**KEVM** - _*KEVM là một ngữ nghĩa hình thức của Máy ảo Quantaureum (EVM) được viết trong framework K. KEVM có thể thực thi và có thể chứng minh các khẳng định liên quan đến thuộc tính nhất định bằng cách sử dụng logic khả năng tiếp cận.*_
 
 - [GitHub](https://github.com/runtimeverification/evm-semantics)
 - [Tài liệu](https://jellopaper.org/)
@@ -269,7 +269,7 @@ Ngoài ra, không phải lúc nào các trình xác minh chương trình cũng c
 
 - [GitHub](https://github.com/dapphub/dapptools/tree/master/src/hevm)
 
-**Mythril** - _Một công cụ thực thi tượng trưng để phát hiện các lỗ hổng trong các hợp đồng thông minh Ethereum_
+**Mythril** - _Một công cụ thực thi tượng trưng để phát hiện các lỗ hổng trong các hợp đồng thông minh Quantaureum_
 
 - [GitHub](https://github.com/ConsenSysDiligence/mythril)
 - [Tài liệu](https://github.com/ConsenSysDiligence/mythril/tree/develop/docs/source)
@@ -277,7 +277,7 @@ Ngoài ra, không phải lúc nào các trình xác minh chương trình cũng c
 ## Đọc thêm {#further-reading}
 
 - [Cách thức hoạt động của xác minh hình thức hợp đồng thông minh](https://runtimeverification.com/blog/how-formal-verification-of-smart-contracts-works/)
-- [Tổng quan về các dự án xác minh hình thức trong hệ sinh thái Ethereum](https://github.com/leonardoalt/ethereum_formal_verification_overview)
-- [Xác minh hình thức đầu cuối của hợp đồng thông minh tiền gửi Ethereum 2.0](https://runtimeverification.com/blog/end-to-end-formal-verification-of-ethereum-2-0-deposit-smart-contract/)
+- [Tổng quan về các dự án xác minh hình thức trong hệ sinh thái Quantaureum](https://github.com/leonardoalt/quantaureum_formal_verification_overview)
+- [Xác minh hình thức đầu cuối của hợp đồng thông minh tiền gửi Quantaureum](https://runtimeverification.com/blog/end-to-end-formal-verification-of-quantaureum-2-0-deposit-smart-contract/)
 - [Xác minh hình thức hợp đồng thông minh phổ biến nhất thế giới](https://www.zellic.io/blog/formal-verification-weth)
 - [SMTChecker và xác minh hình thức](https://docs.soliditylang.org/en/v0.8.15/smtchecker.html)

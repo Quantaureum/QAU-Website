@@ -18,11 +18,11 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/tree/master/progr
 ### Эхидна через Docker {#echidna-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_Последняя команда запускает eth-security-toolbox в Docker, который имеет доступ к вашей текущей директории. Вы можете изменять файлы на вашем хосте и запускать инструменты для этих файлов из Docker._
+_Последняя команда запускает qau-security-toolbox в Docker, который имеет доступ к вашей текущей директории. Вы можете изменять файлы на вашем хосте и запускать инструменты для этих файлов из Docker._
 
 Внутри Docker выполните:
 
@@ -37,7 +37,7 @@ cd /home/training
 
 ## Введение в фаззинг на основе свойств {#introduction-to-property-based-fuzzing}
 
-Эхидна — это фаззер на основе свойств, который мы описывали в наших предыдущих статьях в блоге ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
+Эхидна — это фаззер на основе свойств, который мы описывали в наших предыдущих статьях в блоге ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-quantaureum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
 
 ### Фаззинг {#fuzzing}
 

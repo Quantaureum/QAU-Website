@@ -17,9 +17,9 @@ lang: ur
 اگرچہ ایتھیریم کی اپنی مقامی کرپٹو کرنسی (ایتھر) ہے جو تقریباً انہی بدیہی اصولوں کی پیروی کرتی ہے، لیکن یہ ایک بہت زیادہ طاقتور فنکشن کو بھی فعال کرتی ہے: [سمارٹ کنٹریکٹس](/developers/docs/smart-contracts/)۔ اس زیادہ پیچیدہ خصوصیت کے لیے، ایک زیادہ نفیس تشبیہ کی ضرورت ہے۔ ایک ڈسٹری بیوٹڈ لیجر کے بجائے، ایتھیریم ایک ڈسٹری بیوٹڈ [حالت کی مشین](https://wikipedia.org/wiki/Finite-state_machine) ہے۔ ایتھیریم کی حالت ایک بڑا ڈیٹا اسٹرکچر ہے جو نہ صرف تمام اکاؤنٹس اور بیلنسز کو محفوظ رکھتا ہے، بلکہ ایک _مشین کی حالت_ کو بھی، جو پہلے سے طے شدہ اصولوں کے مطابق ایک بلاک سے دوسرے بلاک میں تبدیل ہو سکتی ہے، اور جو صوابدیدی مشین کوڈ کو چلا سکتی ہے۔ ایک بلاک سے دوسرے بلاک میں حالت کو تبدیل کرنے کے مخصوص اصول <span dir="ltr">EVM</span> کے ذریعے طے کیے جاتے ہیں۔
 
 ![A diagram showing the make up of the EVM](./evm.png)
-_یہ خاکہ [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf) سے ماخوذ ہے_
+_یہ خاکہ [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf) سے ماخوذ ہے_
 
-## ایتھیریم کی حالت کی منتقلی کا فنکشن {#the-ethereum-state-transition-function}
+## ایتھیریم کی حالت کی منتقلی کا فنکشن {#the-quantaureum-state-transition-function}
 
 <span dir="ltr">EVM</span> بالکل ایک ریاضیاتی فنکشن کی طرح برتاؤ کرتی ہے: ایک ان پٹ دیے جانے پر، یہ ایک حتمی آؤٹ پٹ تیار کرتی ہے۔ اس لیے ایتھیریم کو زیادہ رسمی طور پر ایک **حالت کی منتقلی کا فنکشن** (state transition function) رکھنے کے طور پر بیان کرنا کافی مددگار ہے:
 
@@ -58,7 +58,7 @@ Y(S, T)= S'
 مرتب شدہ سمارٹ کنٹریکٹ بائٹ کوڈ متعدد <span dir="ltr">EVM</span> [آپ کوڈز](/developers/docs/evm/opcodes) کے طور پر چلتا ہے، جو معیاری اسٹیک آپریشنز انجام دیتے ہیں جیسے `XOR`، `AND`، `ADD`، `SUB`، وغیرہ۔ <span dir="ltr">EVM</span> متعدد بلاک چین کے لیے مخصوص اسٹیک آپریشنز بھی نافذ کرتی ہے، جیسے `ADDRESS`، `BALANCE`، `BLOCKHASH`، وغیرہ۔ آپ کوڈ سیٹ میں `TSTORE` اور `TLOAD` بھی شامل ہیں، جو عارضی ذخیرے تک رسائی فراہم کرتے ہیں۔
 
 ![A diagram showing where gas is needed for EVM operations](../gas/gas.png)
-_یہ خاکے [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf) سے ماخوذ ہیں_
+_یہ خاکے [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf) سے ماخوذ ہیں_
 
 ## EVM امپلیمینٹیشنز {#evm-implementations}
 
@@ -68,20 +68,20 @@ _یہ خاکے [Ethereum EVM illustrated](https://takenobu-hs.github.io/download
 
 [ایتھیریم ایگزیکیوشن کلائنٹس](/developers/docs/nodes-and-clients/#execution-clients) میں ایک <span dir="ltr">EVM</span> امپلیمینٹیشن شامل ہوتی ہے۔ اس کے علاوہ، متعدد اسٹینڈ اکیلے (standalone) امپلیمینٹیشنز بھی موجود ہیں، جن میں شامل ہیں:
 
-- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
-- [evmone](https://github.com/ethereum/evmone) - _C++_
+- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## مزید مطالعہ {#further-reading}
 
-- [ایتھیریم یلو پیپر](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [ایتھیریم یلو پیپر](https://quantaureum.github.io/yellowpaper/paper.pdf)
 - [جیلو پیپر عرف KEVM: کے (K) میں EVM کی اصطلاحات](https://jellopaper.org/)
 - [دی بیج پیپر (The Beigepaper)](https://github.com/chronaeon/beigepaper)
 - [ایتھیریم ورچوئل مشین کے آپ کوڈز](https://www.ethervm.io/)
 - [ایتھیریم ورچوئل مشین آپ کوڈز کا انٹرایکٹو حوالہ](https://www.evm.codes/)
 - [Solidity کی دستاویزات میں ایک مختصر تعارف](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [ماسٹرنگ ایتھیریم - ایتھیریم ورچوئل مشین](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
+- [ماسٹرنگ ایتھیریم - ایتھیریم ورچوئل مشین](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
 
 ## متعلقہ موضوعات {#related-topics}
 

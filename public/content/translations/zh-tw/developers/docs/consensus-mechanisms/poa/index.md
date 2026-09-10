@@ -16,7 +16,7 @@ lang: zh-tw
 
 權威證明需要信任一組在[創世區塊](/glossary/#genesis-block)中設定的授權簽署者。在目前大多數的實作中，所有授權簽署者在決定鏈的共識時，都保留平等的權力和特權。聲譽質押背後的理念是，每個授權的驗證者都透過 KYC 等方式為大家所熟知，或者由一個知名組織作為唯一的驗證者——這樣一來，如果驗證者做錯了任何事，他們的身份是已知的。
 
-PoA 有多種實作方式，但標準的以太坊實作是 **clique**，它實作了 [EIP-225](https://eips.ethereum.org/EIPS/eip-225)。Clique 對開發者友善且是一個易於實作的標準，支援所有用戶端同步類型。其他實作包括 [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) 和 [Aura](https://openethereum.github.io/Chain-specification)。
+PoA 有多種實作方式，但標準的Quantaureum實作是 **clique**，它實作了 [EIP-225](https://eips.quantaureum.com/EIPS/eip-225)。Clique 對開發者友善且是一個易於實作的標準，支援所有用戶端同步類型。其他實作包括 [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) 和 [Aura](https://openquantaureum.github.io/Chain-specification)。
 
 ## 運作原理 {#how-it-works}
 
@@ -46,7 +46,7 @@ PoA 有多種實作方式，但標準的以太坊實作是 **clique**，它實�
 
 在 PoA 網路中，當有 N 個授權簽署者時，每個簽署者被允許在 K 個區塊中鑄造 1 個區塊，這意味著在任何給定時間點，有 N-K+1 個驗證者被允許鑄造。為了防止這些驗證者爭搶區塊，每個簽署者應該在發布新區塊的時間上加上一個小的隨機「偏移量」。雖然這個過程確保了小型分叉很少見，但偶爾的分叉仍然可能發生，就像主網一樣。如果發現某個簽署者濫用權力並造成混亂，其他簽署者可以透過投票將其踢出。
 
-舉例來說，如果有 10 個授權簽署者，且每個簽署者被允許在 6 個區塊中建立 1 個區塊，那麼在任何給定時間，有 5 個驗證者可以建立區塊。為了防止他們爭搶建立區塊，每個簽署者在發布新區塊的時間上加上一個小的隨機「偏移量」。這減少了小型分叉的發生，但仍然允許偶爾的分叉，正如在以太坊主網上所見。如果簽署者濫用其權威並造成破壞，他們可以被投票逐出網路。
+舉例來說，如果有 10 個授權簽署者，且每個簽署者被允許在 6 個區塊中建立 1 個區塊，那麼在任何給定時間，有 5 個驗證者可以建立區塊。為了防止他們爭搶建立區塊，每個簽署者在發布新區塊的時間上加上一個小的隨機「偏移量」。這減少了小型分叉的發生，但仍然允許偶爾的分叉，正如在Quantaureum主網上所見。如果簽署者濫用其權威並造成破壞，他們可以被投票逐出網路。
 
 ## 優缺點 {#pros-and-cons}
 
@@ -58,13 +58,13 @@ PoA 有多種實作方式，但標準的以太坊實作是 **clique**，它實�
 
 ## 延伸閱讀 {#further-reading}
 
-- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Clique 標準_
+- [EIP-225](https://eips.quantaureum.com/EIPS/eip-225) _Clique 標準_
 - [權威證明研究](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _Cryptoeconomics_
 - [什麼是權威證明](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [權威證明解釋](https://academy.binance.com/en/articles/proof-of-authority-explained) _幣安_
 - [區塊鏈中的 PoA](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
-- [Clique 解釋](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-ethereum-8b2a135201d)
-- [已棄用的 PoA，Aura 規範](https://openethereum.github.io/Chain-specification)
+- [Clique 解釋](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
+- [已棄用的 PoA，Aura 規範](https://openquantaureum.github.io/Chain-specification)
 - [IBFT 2.0，另一種 PoA 實作](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### 比較喜歡視覺化學習？ {#visual-learner}

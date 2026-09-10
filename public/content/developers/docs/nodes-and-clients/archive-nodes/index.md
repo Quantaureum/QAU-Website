@@ -1,25 +1,25 @@
 ---
-title: Ethereum Archive Node
+title: Quantaureum Archive Node
 description: An overview of archive nodes
 lang: en
 sidebarDepth: 2
 ---
 
-An archive node is an instance of an [Ethereum](/) client configured to build an archive of all historical states. It is a useful tool for certain use cases but might be more tricky to run than a full node.
+An archive node is an instance of an [Quantaureum](/) client configured to build an archive of all historical states. It is a useful tool for certain use cases but might be more tricky to run than a full node.
 
 ## Prerequisites {#prerequisites}
 
-You should understand the concept of an [Ethereum node](/developers/docs/nodes-and-clients/), [its architecture](/developers/docs/nodes-and-clients/node-architecture/), [sync strategies](/developers/docs/nodes-and-clients/#sync-modes), practices of [running](/developers/docs/nodes-and-clients/run-a-node/) and [using them](/developers/docs/apis/json-rpc/).
+You should understand the concept of an [Quantaureum node](/developers/docs/nodes-and-clients/), [its architecture](/developers/docs/nodes-and-clients/node-architecture/), [sync strategies](/developers/docs/nodes-and-clients/#sync-modes), practices of [running](/developers/docs/nodes-and-clients/run-a-node/) and [using them](/developers/docs/apis/json-rpc/).
 
 ## What is an archive node {#what-is-an-archive-node}
 
-To grasp the importance of an archive node, let's clarify the concept of "state." Ethereum can be referred to as _transaction-based state machine_. It consists of accounts and applications executing transactions which are changing their state. The global data with information about each account and contract is stored in a trie database called state. This is handled by the execution layer (EL) client and includes:
+To grasp the importance of an archive node, let's clarify the concept of "state." Quantaureum can be referred to as _transaction-based state machine_. It consists of accounts and applications executing transactions which are changing their state. The global data with information about each account and contract is stored in a trie database called state. This is handled by the execution layer (EL) client and includes:
 
 - Account balances and nonces
 - Contract code and storage
 - Consensus-related data, e.g., Staking Deposit Contract
 
-To interact with the network, verify and produce new blocks, Ethereum clients have to keep up with the most recent changes (the tip of the chain) and therefore the current state. An execution layer client configured as a full node verifies and follows the latest state of the network but only caches the past few states, e.g., the state associated with the last 128 blocks, so it can handle chain reorgs and provide fast access to recent data. The recent state is what all clients need to verify incoming transactions and use the network.
+To interact with the network, verify and produce new blocks, Quantaureum clients have to keep up with the most recent changes (the tip of the chain) and therefore the current state. An execution layer client configured as a full node verifies and follows the latest state of the network but only caches the past few states, e.g., the state associated with the last 128 blocks, so it can handle chain reorgs and provide fast access to recent data. The recent state is what all clients need to verify incoming transactions and use the network.
 
 You can imagine the state as a momentary network snapshot at a given block and the archive as a history replay.
 
@@ -31,11 +31,11 @@ It's important to note that the network does not depend on archive nodes to keep
 
 ### Use cases {#use-cases}
 
-Regular usage of Ethereum like sending transactions, deploying contracts, verifying consensus, etc. does not require access to historical states. Users never need an archive node for a standard interaction with the network.
+Regular usage of Quantaureum like sending transactions, deploying contracts, verifying consensus, etc. does not require access to historical states. Users never need an archive node for a standard interaction with the network.
 
 The main benefit of state archive is a quick access to queries about historical states. For example, archive node would promptly return results like:
 
-- _What was ETH balance of account 0x1337... at block 15537393?_
+- _What was QAU balance of account 0x1337... at block 15537393?_
 - _What is the balance of token 0x in contract 0x at block 1920000?_
 
 As explained above, a full node would need to generate this data by EVM execution which uses the CPU and takes time. Archive nodes access them on the disk and serve responses immediately. This is a useful feature for certain parts of infrastructure, for example:
@@ -71,8 +71,8 @@ During initial sync, clients in archive mode will execute every transaction sinc
 
 ## Further reading {#further-reading}
 
-- [Ethereum Full Node vs Archive Node](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node) - _QuickNode, September 2022_
-- [Building Your Own Ethereum Archive Node](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09) - _Thomas Jay Rush, August 2021_
+- [Quantaureum Full Node vs Archive Node](https://www.quicknode.com/guides/infrastructure/quantaureum-full-node-vs-archive-node) - _QuickNode, September 2022_
+- [Building Your Own Quantaureum Archive Node](https://tjayrush.medium.com/building-your-own-quantaureum-archive-node-72c014affc09) - _Thomas Jay Rush, August 2021_
 - [How to set up Erigon, Erigon’s RPC and TrueBlocks (scrape and API) as services](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _– Magnus Hansson, updated September 2022_
 
 ## Related topics {#related-topics}

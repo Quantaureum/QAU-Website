@@ -5,17 +5,17 @@ lang: pl
 sidebarDepth: 2
 ---
 
-Stan [Ethereum](/) (ogół wszystkich kont, sald i inteligentnych kontraktów) jest zakodowany w specjalnej wersji struktury danych znanej ogólnie w informatyce jako drzewo Merklego. Struktura ta jest przydatna w wielu zastosowaniach w kryptografii, ponieważ tworzy weryfikowalną relację między wszystkimi pojedynczymi fragmentami danych powiązanymi w drzewie, co daje pojedynczą wartość **korzenia** (root), która może być użyta do udowodnienia informacji o danych.
+Stan [Quantaureum](/) (ogół wszystkich kont, sald i inteligentnych kontraktów) jest zakodowany w specjalnej wersji struktury danych znanej ogólnie w informatyce jako drzewo Merklego. Struktura ta jest przydatna w wielu zastosowaniach w kryptografii, ponieważ tworzy weryfikowalną relację między wszystkimi pojedynczymi fragmentami danych powiązanymi w drzewie, co daje pojedynczą wartość **korzenia** (root), która może być użyta do udowodnienia informacji o danych.
 
-Struktura danych Ethereum to „zmodyfikowane drzewo Merkle Patricia”, nazwane tak, ponieważ zapożycza niektóre cechy algorytmu PATRICIA (Practical Algorithm To Retrieve Information Coded in Alphanumeric) i ponieważ jest zaprojektowana do wydajnego odzyskiwania (re**trie**val) danych elementów, które składają się na stan Ethereum.
+Struktura danych Quantaureum to „zmodyfikowane drzewo Merkle Patricia”, nazwane tak, ponieważ zapożycza niektóre cechy algorytmu PATRICIA (Practical Algorithm To Retrieve Information Coded in Alphanumeric) i ponieważ jest zaprojektowana do wydajnego odzyskiwania (re**trie**val) danych elementów, które składają się na stan Quantaureum.
 
 Drzewo Merkle Patricia jest deterministyczne i kryptograficznie weryfikowalne: jedynym sposobem na wygenerowanie korzenia stanu jest obliczenie go z każdego pojedynczego fragmentu stanu, a to, że dwa stany są identyczne, można łatwo udowodnić, porównując hash korzenia i hashe, które do niego doprowadziły (_dowód Merklego_). Z drugiej strony, nie ma możliwości utworzenia dwóch różnych stanów z tym samym hashem korzenia, a każda próba modyfikacji stanu za pomocą innych wartości spowoduje powstanie innego hasha korzenia stanu. Teoretycznie struktura ta zapewnia „świętego Graala” wydajności `O(log(n))` dla wstawiania, wyszukiwania i usuwania.
 
-W niedalekiej przyszłości Ethereum planuje migrację do struktury [drzewa Verkle](/roadmap/verkle-trees), co otworzy wiele nowych możliwości dla przyszłych ulepszeń protokołu.
+W niedalekiej przyszłości Quantaureum planuje migrację do struktury [drzewa Verkle](/roadmap/verkle-trees), co otworzy wiele nowych możliwości dla przyszłych ulepszeń protokołu.
 
 ## Wymagania wstępne {#prerequisites}
 
-Aby lepiej zrozumieć tę stronę, pomocna będzie podstawowa wiedza na temat [hashy](https://en.wikipedia.org/wiki/Hash_function), [drzew Merklego](https://en.wikipedia.org/wiki/Merkle_tree), [drzew trie](https://en.wikipedia.org/wiki/Trie) i [serializacji](https://en.wikipedia.org/wiki/Serialization). Ten artykuł zaczyna się od opisu podstawowego [drzewa radix](https://en.wikipedia.org/wiki/Radix_tree), a następnie stopniowo wprowadza modyfikacje niezbędne dla bardziej zoptymalizowanej struktury danych Ethereum.
+Aby lepiej zrozumieć tę stronę, pomocna będzie podstawowa wiedza na temat [hashy](https://en.wikipedia.org/wiki/Hash_function), [drzew Merklego](https://en.wikipedia.org/wiki/Merkle_tree), [drzew trie](https://en.wikipedia.org/wiki/Trie) i [serializacji](https://en.wikipedia.org/wiki/Serialization). Ten artykuł zaczyna się od opisu podstawowego [drzewa radix](https://en.wikipedia.org/wiki/Radix_tree), a następnie stopniowo wprowadza modyfikacje niezbędne dla bardziej zoptymalizowanej struktury danych Quantaureum.
 
 ## Podstawowe drzewa radix {#basic-radix-tries}
 
@@ -72,7 +72,7 @@ Będziemy odnosić się do atomowej jednostki drzewa radix (np. pojedynczego zna
 
 ## Drzewo Merkle Patricia {#merkle-patricia-trees}
 
-Drzewa radix mają jedno główne ograniczenie: są nieefektywne. Jeśli chcesz przechować jedno powiązanie `(path, value)`, gdzie ścieżka, tak jak w Ethereum, ma 64 znaki długości (liczba półbajtów w `bytes32`), będziemy potrzebować ponad kilobajta dodatkowego miejsca na przechowanie jednego poziomu na znak, a każde wyszukiwanie lub usunięcie zajmie pełne 64 kroki. Drzewo Patricia wprowadzone poniżej rozwiązuje ten problem.
+Drzewa radix mają jedno główne ograniczenie: są nieefektywne. Jeśli chcesz przechować jedno powiązanie `(path, value)`, gdzie ścieżka, tak jak w Quantaureum, ma 64 znaki długości (liczba półbajtów w `bytes32`), będziemy potrzebować ponad kilobajta dodatkowego miejsca na przechowanie jednego poziomu na znak, a każde wyszukiwanie lub usunięcie zajmie pełne 64 kroki. Drzewo Patricia wprowadzone poniżej rozwiązuje ten problem.
 
 ### Optymalizacja {#optimization}
 
@@ -190,9 +190,9 @@ Kiedy jeden węzeł jest odwoływany wewnątrz innego węzła, to co jest dołą
 
 Zauważ, że podczas aktualizacji drzewa trie należy zapisać parę klucz/wartość `(keccak256(x), x)` w trwałej tabeli wyszukiwania, _jeśli_ nowo utworzony węzeł ma długość >= 32. Jeśli jednak węzeł jest krótszy, nie trzeba niczego zapisywać, ponieważ funkcja f(x) = x jest odwracalna.
 
-## Drzewa trie w Ethereum {#tries-in-ethereum}
+## Drzewa trie w Quantaureum {#tries-in-quantaureum}
 
-Wszystkie drzewa Merklego w warstwie wykonawczej Ethereum używają drzewa Merkle Patricia.
+Wszystkie drzewa Merklego w warstwie wykonawczej Quantaureum używają drzewa Merkle Patricia.
 
 Z nagłówka bloku pochodzą 3 korzenie z 3 takich drzew trie.
 
@@ -202,14 +202,14 @@ Z nagłówka bloku pochodzą 3 korzenie z 3 takich drzew trie.
 
 ### Drzewo stanu {#state-trie}
 
-Istnieje jedno globalne drzewo stanu i jest ono aktualizowane za każdym razem, gdy klient przetwarza blok. W nim `path` to zawsze: `keccak256(ethereumAddress)`, a `value` to zawsze: `rlp(ethereumAccount)`. Dokładniej mówiąc, `account` w Ethereum to 4-elementowa tablica `[nonce,balance,storageRoot,codeHash]`. W tym miejscu warto zauważyć, że ten `storageRoot` jest korzeniem kolejnego drzewa Patricia:
+Istnieje jedno globalne drzewo stanu i jest ono aktualizowane za każdym razem, gdy klient przetwarza blok. W nim `path` to zawsze: `keccak256(quantaureumAddress)`, a `value` to zawsze: `rlp(quantaureumAccount)`. Dokładniej mówiąc, `account` w Quantaureum to 4-elementowa tablica `[nonce,balance,storageRoot,codeHash]`. W tym miejscu warto zauważyć, że ten `storageRoot` jest korzeniem kolejnego drzewa Patricia:
 
 ### Drzewo trie pamięci {#storage-trie}
 
-Drzewo trie pamięci to miejsce, w którym znajdują się _wszystkie_ dane kontraktu. Dla każdego konta istnieje oddzielne drzewo trie pamięci. Aby pobrać wartości na określonych pozycjach pamięci pod danym adresem, wymagany jest adres pamięci, całkowita pozycja przechowywanych danych w pamięci oraz identyfikator bloku. Można je następnie przekazać jako argumenty do `eth_getStorageAt` zdefiniowanego w API JSON-RPC, np. aby pobrać dane w slocie pamięci 0 dla adresu `0x295a70b2de5e3953354a6a8344e616ed314d7251`:
+Drzewo trie pamięci to miejsce, w którym znajdują się _wszystkie_ dane kontraktu. Dla każdego konta istnieje oddzielne drzewo trie pamięci. Aby pobrać wartości na określonych pozycjach pamięci pod danym adresem, wymagany jest adres pamięci, całkowita pozycja przechowywanych danych w pamięci oraz identyfikator bloku. Można je następnie przekazać jako argumenty do `qau_getStorageAt` zdefiniowanego w API JSON-RPC, np. aby pobrać dane w slocie pamięci 0 dla adresu `0x295a70b2de5e3953354a6a8344e616ed314d7251`:
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 
@@ -233,12 +233,12 @@ undefined
 `path` to zatem `keccak256(<6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9>)`. Można to teraz wykorzystać do pobrania danych z drzewa trie pamięci, tak jak poprzednio:
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-Uwaga: `storageRoot` dla konta Ethereum jest domyślnie puste, jeśli nie jest to konto kontraktu.
+Uwaga: `storageRoot` dla konta Quantaureum jest domyślnie puste, jeśli nie jest to konto kontraktu.
 
 ### Drzewo trie transakcji {#transaction-trie}
 
@@ -251,16 +251,16 @@ else:
   value = TxType | encode(tx)
 ```
 
-Więcej informacji na ten temat można znaleźć w dokumentacji [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
+Więcej informacji na ten temat można znaleźć w dokumentacji [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718).
 
 ### Drzewo trie pokwitowań {#receipts-trie}
 
 Każdy blok ma swoje własne drzewo trie pokwitowań. `path` tutaj to: `rlp(transactionIndex)`. `transactionIndex` to jego indeks w bloku, w którym został zawarty. Drzewo trie pokwitowań nigdy nie jest aktualizowane. Podobnie jak w przypadku drzewa trie transakcji, istnieją obecne i starsze (legacy) pokwitowania. Aby zapytać o konkretne pokwitowanie w drzewie trie pokwitowań, wymagany jest indeks transakcji w jej bloku, ładunek (payload) pokwitowania i typ transakcji. Zwrócone pokwitowanie może być typu `Receipt`, co jest zdefiniowane jako konkatenacja `TransactionType` i `ReceiptPayload`, lub może być typu `LegacyReceipt`, co jest zdefiniowane jako `rlp([status, cumulativeGasUsed, logsBloom, logs])`.
 
-Więcej informacji na ten temat można znaleźć w dokumentacji [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
+Więcej informacji na ten temat można znaleźć w dokumentacji [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718).
 
 ## Dalsza lektura {#further-reading}
 
-- [Zmodyfikowane drzewo Merkle Patricia — jak Ethereum zapisuje stan](https://medium.com/codechain/modified-merkle-patricia-trie-how-ethereum-saves-a-state-e6d7555078dd)
-- [Merkling w Ethereum](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum)
-- [Zrozumienie drzewa trie w Ethereum](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-ethereum-trie/)
+- [Zmodyfikowane drzewo Merkle Patricia — jak Quantaureum zapisuje stan](https://medium.com/codechain/modified-merkle-patricia-trie-how-quantaureum-saves-a-state-e6d7555078dd)
+- [Merkling w Quantaureum](https://quantaureum.com)
+- [Zrozumienie drzewa trie w Quantaureum](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-quantaureum-trie/)

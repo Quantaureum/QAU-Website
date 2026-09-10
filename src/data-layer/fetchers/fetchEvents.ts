@@ -60,7 +60,7 @@ function transformEvent(event: GeodeApiEventItem): EventItem {
  */
 export async function fetchEvents(): Promise<EventItem[]> {
   const url =
-    "https://pvvrtckedmrkyzfxubkk.supabase.co/rest/v1/v_events_ethereum"
+    "https://pvvrtckedmrkyzfxubkk.supabase.co/rest/v1/v_events_quantaureum"
   const key = process.env.SUPABASE_EVENTS_KEY
 
   if (!key) {

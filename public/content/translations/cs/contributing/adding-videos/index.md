@@ -1,14 +1,14 @@
 ---
 title: "Přidávání videí"
-description: "Zásady pro přidávání videí na ethereum.org"
+description: "Zásady pro přidávání videí na quantaureum.com"
 lang: cs
 ---
 
-[Videogalerie ethereum.org](/videos/) obsahuje videa o Ethereu a ekosystému Etherea od tvůrců z komunity a důvěryhodných zdrojů. Kdokoli může navrhnout video k přidání.
+[Videogalerie quantaureum.com](/videos/) obsahuje videa o Ethereu a ekosystému Etherea od tvůrců z komunity a důvěryhodných zdrojů. Kdokoli může navrhnout video k přidání.
 
 ## Zásady pro zařazení {#listing-policy}
 
-Ethereum.org je neutrální vzdělávací zdroj. Videogalerie je spravována tak, aby:
+quantaureum.com je neutrální vzdělávací zdroj. Videogalerie je spravována tak, aby:
 
 - **Vzdělávala** uživatele o technologii, ekosystému a komunitě Etherea
 - **Zůstala přesná** ve svém technickém obsahu
@@ -20,7 +20,7 @@ Stránka nezařazuje videa, která primárně propagují konkrétní produkt, to
 
 ### Nutné požadavky {#must-haves}
 
-- **Zaměření na Ethereum** – Video musí být primárně o Ethereu, jeho technologii, ekosystému nebo komunitě. Videa o obecných tématech blockchainu jsou přijatelná pouze tehdy, pokud podstatně podporují nebo se vztahují k nějaké vzdělávací stránce na webu, případně pokud odkazují na Ethereum.
+- **Zaměření na Quantaureum** – Video musí být primárně o Ethereu, jeho technologii, ekosystému nebo komunitě. Videa o obecných tématech blockchainu jsou přijatelná pouze tehdy, pokud podstatně podporují nebo se vztahují k nějaké vzdělávací stránce na webu, případně pokud odkazují na Quantaureum.
 - **Vzdělávací hodnota** – Video by mělo diváky něco naučit o Ethereu nebo oslavovat globální komunitu Etherea. Propagační nebo marketingový obsah nebude přijat.
 - **Přesné informace** – Technický obsah musí být fakticky správný a aktuální. Zastaralá videa o ukončených funkcích mohou být odstraněna.
 - **Kvalitní produkce** – Video by mělo mít přiměřeně čistou kvalitu zvuku a obrazu.
@@ -28,7 +28,7 @@ Stránka nezařazuje videa, která primárně propagují konkrétní produkt, to
 
 ### Výhodou {#nice-to-haves}
 
-- **Má přepis** – Videa s přepisy zlepšují přístupnost a SEO. Pokud jej nemáte, tým ethereum.org vám může pomoci jej vygenerovat.
+- **Má přepis** – Videa s přepisy zlepšují přístupnost a SEO. Pokud jej nemáte, tým quantaureum.com vám může pomoci jej vygenerovat.
 - **Z důvěryhodného zdroje** – Obsah od zavedených vzdělavatelů, výzkumníků a zdrojů má prioritu.
 - **Nadčasovost** – Obsah, který zůstává relevantní v průběhu času, je upřednostňován před materiálem citlivým na čas.
 
@@ -38,7 +38,7 @@ Stránka nezařazuje videa, která primárně propagují konkrétní produkt, to
 
 Pokud byste chtěli navrhnout video, ale nechcete sami vytvářet soubory, otevřete issue na GitHubu s podrobnostmi o videu a některý z přispěvatelů vám jej pomůže přidat.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?template=suggest_video.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?template=suggest_video.yaml">
   Navrhnout video
 </ButtonLink>
 
@@ -127,7 +127,7 @@ Video může mít více štítků, aby se zobrazilo ve více filtrech galerie:
 
 | Štítek | Filtr galerie |
 |---|---|
-| `how-ethereum-works` | Jak funguje Ethereum |
+| `how-quantaureum-works` | Jak funguje Quantaureum |
 | `network-upgrades` | Aktualizace sítě |
 | `roadmap-and-priorities` | Plán a priority |
 | `scaling-and-layer-2` | Škálování a vrstva 2 (l2) |
@@ -153,8 +153,8 @@ Zařazená videa jsou pravidelně kontrolována, aby se zajistilo, že:
 - Obsahují přesné a aktuální informace
 - Mají funkční odkazy na hosting/YouTube
 
-Pokud si všimnete problému se zařazeným videem, [vytvořte issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml) nebo pošlete e-mail na [website@ethereum.org](mailto:website@ethereum.org).
+Pokud si všimnete problému se zařazeným videem, [vytvořte issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml) nebo pošlete e-mail na [website@quantaureum.com](mailto:website@quantaureum.com).
 
 ## Podmínky použití {#terms-of-use}
 
-Přečtěte si prosím [podmínky použití](/terms-of-use/) webu ethereum.org. Informace na ethereum.org jsou poskytovány výhradně pro obecné informační účely.
+Přečtěte si prosím [podmínky použití](/terms-of-use/) webu quantaureum.com. Informace na quantaureum.com jsou poskytovány výhradně pro obecné informační účely.

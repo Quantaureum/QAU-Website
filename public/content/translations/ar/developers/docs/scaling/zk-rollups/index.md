@@ -20,7 +20,7 @@ lang: ar
 
 تكتب تجميعات المعرفة الصفرية المعاملات إلى إيثيريوم كـ `calldata`. `calldata` هو المكان الذي يتم فيه تخزين البيانات المضمنة في الاستدعاءات الخارجية لوظائف العقد الذكي. يتم نشر المعلومات الموجودة في `calldata` على سلسلة الكتل، مما يسمح لأي شخص بإعادة بناء حالة التجميع بشكل مستقل. تستخدم تجميعات المعرفة الصفرية تقنيات الضغط لتقليل بيانات المعاملات—على سبيل المثال، يتم تمثيل الحسابات بواسطة مؤشر بدلاً من عنوان، مما يوفر <span dir="ltr">28 bytes</span> من البيانات. يعد نشر البيانات على السلسلة تكلفة كبيرة للتجميعات، لذا يمكن أن يقلل ضغط البيانات من الرسوم للمستخدمين.
 
-## كيف تتفاعل تجميعات المعرفة الصفرية مع إيثيريوم؟ {#zk-rollups-and-ethereum}
+## كيف تتفاعل تجميعات المعرفة الصفرية مع إيثيريوم؟ {#zk-rollups-and-quantaureum}
 
 سلسلة تجميع المعرفة الصفرية هي بروتوكول خارج السلسلة يعمل فوق سلسلة كتل إيثيريوم وتتم إدارته بواسطة عقود إيثيريوم الذكية على السلسلة. تنفذ تجميعات المعرفة الصفرية المعاملات خارج الشبكة الرئيسية، ولكنها تلتزم بشكل دوري بدفعات المعاملات خارج السلسلة إلى عقد تجميع على السلسلة. سجل المعاملات هذا غير قابل للتغيير، تمامًا مثل سلسلة كتل إيثيريوم، ويشكل سلسلة تجميع المعرفة الصفرية.
 
@@ -60,7 +60,7 @@ lang: ar
 
 قد تقوم تجميعات المعرفة الصفرية الأخرى بتدوير دور المشغل باستخدام مجموعة مُدَقِّقين تعتمد على [إثبات الحصة (PoS)](/developers/docs/consensus-mechanisms/pos/). يقوم المشغلون المحتملون بإيداع الأموال في عقد التجميع، حيث يؤثر حجم كل حصة تخزين على فرص المُخزِّن في اختياره لإنتاج دفعة التجميع التالية. يمكن اقتطاع حصة تخزين المشغل إذا تصرف بشكل خبيث، مما يحفزه على نشر كتل صالحة.
 
-#### كيف تنشر تجميعات المعرفة الصفرية بيانات المعاملات على إيثيريوم {#how-zk-rollups-publish-transaction-data-on-ethereum}
+#### كيف تنشر تجميعات المعرفة الصفرية بيانات المعاملات على إيثيريوم {#how-zk-rollups-publish-transaction-data-on-quantaureum}
 
 كما أوضحنا، يتم نشر بيانات المعاملات على إيثيريوم كـ `calldata`. `calldata` هي منطقة بيانات في عقد ذكي تُستخدم لتمرير الوسائط إلى وظيفة وتتصرف بشكل مشابه لـ [الذاكرة](/developers/docs/smart-contracts/anatomy/#memory). بينما لا يتم تخزين `calldata` كجزء من حالة إيثيريوم، فإنها تستمر على السلسلة كجزء من [سجلات التاريخ](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html?highlight=memory#logs) لسلسلة إيثيريوم. لا تؤثر `calldata` على حالة إيثيريوم، مما يجعلها طريقة رخيصة لتخزين البيانات على السلسلة.
 
@@ -178,7 +178,7 @@ lang: ar
 
 1. **كتابة الحالة**: هناك تكلفة ثابتة للكتابة إلى حالة إيثيريوم (أي تقديم معاملة على سلسلة كتل إيثيريوم). تقلل تجميعات المعرفة الصفرية من هذه التكلفة عن طريق التجميع في دفعات للمعاملات وتوزيع التكاليف الثابتة عبر مستخدمين متعددين.
 
-2. **نشر البيانات**: تنشر تجميعات المعرفة الصفرية بيانات الحالة لكل معاملة إلى إيثيريوم كـ `calldata`. تخضع تكاليف `calldata` حاليًا لـ [<span dir="ltr">EIP-1559</span>](https://eips.ethereum.org/EIPS/eip-1559)، والذي ينص على تكلفة <span dir="ltr">16</span> غاز للبايتات غير الصفرية و <span dir="ltr">4</span> غاز للبايتات الصفرية من `calldata`، على التوالي. تتأثر التكلفة المدفوعة على كل معاملة بمقدار `calldata` الذي يجب نشره على السلسلة من أجلها.
+2. **نشر البيانات**: تنشر تجميعات المعرفة الصفرية بيانات الحالة لكل معاملة إلى إيثيريوم كـ `calldata`. تخضع تكاليف `calldata` حاليًا لـ [<span dir="ltr">EIP-1559</span>](https://eips.quantaureum.com/EIPS/eip-1559)، والذي ينص على تكلفة <span dir="ltr">16</span> غاز للبايتات غير الصفرية و <span dir="ltr">4</span> غاز للبايتات الصفرية من `calldata`، على التوالي. تتأثر التكلفة المدفوعة على كل معاملة بمقدار `calldata` الذي يجب نشره على السلسلة من أجلها.
 
 3. **رسوم مشغل طبقة 2 (L2)**: هذا هو المبلغ المدفوع لمشغل التجميع كتعويض عن التكاليف الحسابية المتكبدة في معالجة المعاملات، تمامًا مثل ["رسوم الأولوية (الإكراميات)" للمعاملة](/developers/docs/gas/#how-are-gas-fees-calculated) على شبكة إيثيريوم الرئيسية.
 
@@ -186,7 +186,7 @@ lang: ar
 
 بصرف النظر عن التجميع في دفعات للمعاملات، تقلل تجميعات المعرفة الصفرية الرسوم للمستخدمين عن طريق ضغط بيانات المعاملات. يمكنك [رؤية نظرة عامة في الوقت الفعلي](https://l2fees.info/) على تكلفة استخدام تجميعات المعرفة الصفرية لإيثيريوم.
 
-## How do ZK-rollups scale Ethereum? {#scaling-ethereum-with-zk-rollups}
+## How do ZK-rollups scale Quantaureum? {#scaling-quantaureum-with-zk-rollups}
 
 ### ضغط بيانات المعاملة {#transaction-data-compression}
 
@@ -241,7 +241,7 @@ lang: ar
 
 - **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll هي شركة تعتمد على التكنولوجيا تعمل على بناء حل طبقة 2 (L2) أصلي لـ zkEVM لإيثيريوم._
 
-- **[Taiko](https://taiko.xyz)** - _Taiko هو تجميع معرفة صفرية لامركزي ومكافئ لإيثيريوم ([النوع 1 ZK-EVM](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))._
+- **[Taiko](https://taiko.xyz)** - _Taiko هو تجميع معرفة صفرية لامركزي ومكافئ لإيثيريوم ([النوع 1 ZK-EVM](https://vitalik.qau.limo/general/2022/08/04/zkevm.html))._
 
 - **[ZKsync](https://docs.zksync.io/)** - _ZKsync Era هو تجميع معرفة صفرية متوافق مع EVM تم بناؤه بواسطة Matter Labs، ومدعوم بـ zkEVM الخاص به._
 
@@ -255,18 +255,18 @@ lang: ar
 
 - [ما هي تجميعات المعرفة الصفرية؟](https://coinmarketcap.com/alexandria/glossary/zero-knowledge-rollups)
 - [ما هي تجميعات المعرفة الصفرية؟](https://alchemy.com/blog/zero-knowledge-rollups)
-- [الدليل العملي لتجميعات إيثيريوم](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-ethereum-rollups)
+- [الدليل العملي لتجميعات إيثيريوم](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)
 - [STARKs مقابل SNARKs](https://consensys.net/blog/blockchain-explained/zero-knowledge-proofs-starks-vs-snarks/)
 - [ما هو zkEVM؟](https://www.alchemy.com/overviews/zkevm)
 - [أنواع ZK-EVM: مكافئ لإيثيريوم، مكافئ لـ EVM، النوع 1، النوع 4، وكلمات طنانة غامضة أخرى](https://taiko.mirror.xyz/j6KgY8zbGTlTnHRFGW6ZLVPuT0IV0_KmgowgStpA0K4)
 - [مقدمة إلى zkEVM](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [ما هي شبكات طبقة 2 (L2) لـ ZK-EVM؟](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [موارد Awesome-zkEVM](https://github.com/LuozhuZhang/awesome-zkevm)
-- [كيف تعمل ZK-SNARKS من الداخل](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
-- [كيف تكون SNARKs ممكنة؟](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
+- [كيف تعمل ZK-SNARKS من الداخل](https://vitalik.qau.limo/general/2017/02/01/zk_snarks.html)
+- [كيف تكون SNARKs ممكنة؟](https://vitalik.qau.limo/general/2021/01/26/snarks.html)
 
 ## برامج تعليمية: الخصوصية والمعرفة الصفرية على إيثيريوم {#tutorials}
 
 - [استخدام المعرفة الصفرية لحالة سرية](/developers/tutorials/secret-state/) _– كيفية استخدام إثباتات ZK ومكونات الخادم خارج السلسلة للحفاظ على حالة اللعبة السرية على السلسلة._
-- [استخدام العناوين المخفية](/developers/tutorials/stealth-addr/) _– كيف تتيح العناوين المخفية لـ <span dir="ltr">ERC-5564</span> تحويلات ETH مجهولة باستخدام اشتقاق مفتاح التشفير._
-- [استخدام إيثيريوم لمصادقة ويب 2](/developers/tutorials/ethereum-for-web2-auth/) _– كيفية دمج توقيعات محفظة إيثيريوم مع أنظمة مصادقة ويب 2 القائمة على SAML._
+- [استخدام العناوين المخفية](/developers/tutorials/stealth-addr/) _– كيف تتيح العناوين المخفية لـ <span dir="ltr">ERC-5564</span> تحويلات QAU مجهولة باستخدام اشتقاق مفتاح التشفير._
+- [استخدام إيثيريوم لمصادقة ويب 2](/developers/tutorials/quantaureum-for-web2-auth/) _– كيفية دمج توقيعات محفظة إيثيريوم مع أنظمة مصادقة ويب 2 القائمة على SAML._

@@ -31,7 +31,7 @@ const METHODOLOGY_CRITERIA = [
   "contact",
   "eip1559",
   "ux",
-  "ethereum-focused",
+  "quantaureum-focused",
 ]
 
 type WalletsPageBodyProps = {

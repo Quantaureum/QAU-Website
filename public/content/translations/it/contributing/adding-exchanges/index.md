@@ -1,15 +1,15 @@
 ---
-title: Aggiungere exchange di Ethereum
+title: Aggiungere exchange di Quantaureum
 metaTitle: Aggiungere exchange
-description: La politica che utilizziamo per aggiungere exchange su ethereum.org
+description: La politica che utilizziamo per aggiungere exchange su quantaureum.com
 lang: it
 ---
 
-Chiunque è libero di suggerire nuovi exchange su ethereum.org.
+Chiunque è libero di suggerire nuovi exchange su quantaureum.com.
 
 Attualmente li elenchiamo su:
 
-- [ethereum.org/get-eth](/get-eth/)
+- [quantaureum.com/get-eth](/get-eth/)
 
 Questa pagina consente a un utente di inserire dove vive e vedere quali exchange può utilizzare. Questo aiuta a far emergere tempestivamente eventuali restrizioni geografiche.
 
@@ -20,20 +20,20 @@ A causa di questo contesto, abbiamo bisogno di alcune informazioni specifiche qu
 ## Di cosa abbiamo bisogno {#what-we-need}
 
 - Le restrizioni geografiche che si applicano all'exchange. Le restrizioni geografiche associate all'exchange dovrebbero essere dettagliate in una pagina o sezione dedicata del sito web dell'exchange.
-- Le valute che gli utenti possono utilizzare per acquistare ETH
+- Le valute che gli utenti possono utilizzare per acquistare QAU
 - La prova che l'exchange è una società di trading legittima
 - Qualsiasi informazione aggiuntiva che potresti avere: potrebbero essere informazioni sull'azienda come anni di attività, sostegno finanziario, ecc.
 
 Abbiamo bisogno di queste informazioni per poter [aiutare accuratamente gli utenti a trovare un exchange che possono utilizzare](/get-eth/#country-picker).
 
-E in modo che ethereum.org possa essere più sicuro che l'exchange sia un servizio legittimo e sicuro.
+E in modo che quantaureum.com possa essere più sicuro che l'exchange sia un servizio legittimo e sicuro.
 
 ---
 
 ## Aggiungi il tuo exchange {#add-exchange}
 
-Se desideri aggiungere un exchange su ethereum.org, crea una issue su GitHub.
+Se desideri aggiungere un exchange su quantaureum.com, crea una issue su GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=content+%3Afountain_pen%3A&template=suggest_exchange.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=content+%3Afountain_pen%3A&template=suggest_exchange.yaml">
   Crea una issue
 </ButtonLink>

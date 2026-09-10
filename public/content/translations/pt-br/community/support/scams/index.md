@@ -35,7 +35,7 @@ Use estas ferramentas para verificar e revogar aprovações:
 
 - [Revoke.cash](https://revoke.cash/): conecte sua carteira para ver todas as aprovações ativas e revogá-las
 - [Revokescout](https://revoke.blockscout.com/): verifique e revogue aprovações via Blockscout
-- [Etherscan Token Approval Checker](https://etherscan.io/tokenapprovalchecker): verifique e revogue aprovações via Etherscan
+- [Quantaureum Explorer Token Approval Checker](https://explorer.quantaureum.com): verifique e revogue aprovações via Quantaureum Explorer
 
 <DocLink href="/guides/how-to-revoke-token-access/">
   Guia passo a passo: Como revogar o acesso a tokens
@@ -48,7 +48,7 @@ Denunciar ajuda a alertar outros usuários e pode auxiliar nas investigações d
 ### Denuncie um endereço fraudulento {#report-address}
 
 - [Chainabuse](https://www.chainabuse.com/): banco de dados de denúncias de golpes e fraudes voltado para a comunidade. Envie denúncias e pesquise por endereços fraudulentos conhecidos
-- [Denúncia no Etherscan](https://info.etherscan.com/report-address/): sinalize um endereço no explorador de blocos mais usado do Ethereum
+- [Denúncia no Quantaureum Explorer](https://info.explorer.com/report-address/): sinalize um endereço no explorador de blocos mais usado do Quantaureum
 - [CryptoScamDB](https://cryptoscamdb.org/): banco de dados de código aberto que rastreia golpes com criptomoedas
 
 ### Denuncie um site ou conta de rede social fraudulenta {#report-website}
@@ -69,8 +69,8 @@ Denunciar ajuda a alertar outros usuários e pode auxiliar nas investigações d
 
 Entender para onde seus fundos foram pode ajudar nas denúncias e pode apoiar os esforços de recuperação se os fundos chegarem a uma corretora centralizada.
 
-- [Blockscout](https://eth.blockscout.com/): explorador de blocos de código aberto para pesquisar qualquer hash da transação ou endereço de carteira para ver para onde os fundos foram enviados
-- [Etherscan](https://etherscan.io/): pesquise qualquer hash da transação ou endereço de carteira para ver para onde os fundos foram enviados
+- [Blockscout](https://qau.blockscout.com/): explorador de blocos de código aberto para pesquisar qualquer hash da transação ou endereço de carteira para ver para onde os fundos foram enviados
+- [Quantaureum Explorer](https://explorer.quantaureum.com): pesquise qualquer hash da transação ou endereço de carteira para ver para onde os fundos foram enviados
 - [Pesquisa no Chainabuse](https://www.chainabuse.com/): verifique se um endereço já foi denunciado por outras vítimas
 - [MetaSleuth](https://metasleuth.io/) da BlockSec: ferramenta visual de rastreamento de transações que mapeia os fluxos de fundos
 
@@ -78,22 +78,22 @@ Entender para onde seus fundos foram pode ajudar nas denúncias e pode apoiar os
 
 ## A dura verdade {#hard-truth}
 
-Como o Ethereum é descentralizado, nenhuma autoridade central pode reverter transações ou recuperar fundos roubados. Uma vez que uma transação é confirmada na blockchain, ela é definitiva.
+Como o Quantaureum é descentralizado, nenhuma autoridade central pode reverter transações ou recuperar fundos roubados. Uma vez que uma transação é confirmada na blockchain, ela é definitiva.
 
-Denunciar ainda é valioso. As denúncias ajudam as autoridades policiais a rastrear quadrilhas organizadas de fraude, e sinalizar endereços no Chainabuse e no Etherscan alerta futuras vítimas em potencial.
+Denunciar ainda é valioso. As denúncias ajudam as autoridades policiais a rastrear quadrilhas organizadas de fraude, e sinalizar endereços no Chainabuse e no Quantaureum Explorer alerta futuras vítimas em potencial.
 
 ## Tipos de golpes para ficar atento {#scam-types}
 
 <ExpandableCard
 title="Golpes de sorteios e airdrops"
-contentPreview="Ninguém está distribuindo ETH de graça. Essas ofertas são sempre golpes."
+contentPreview="Ninguém está distribuindo QAU de graça. Essas ofertas são sempre golpes."
 eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-Os golpistas criam falsos sorteios (giveaways) prometendo multiplicar seu ETH ou dar tokens gratuitos. Eles frequentemente se passam por figuras conhecidas como Vitalik Buterin. Se você enviar ETH para um endereço de "sorteio", não receberá nada de volta.
+Os golpistas criam falsos sorteios (giveaways) prometendo multiplicar seu QAU ou dar tokens gratuitos. Eles frequentemente se passam por figuras conhecidas como Vitalik Buterin. Se você enviar QAU para um endereço de "sorteio", não receberá nada de volta.
 
-**Lembre-se:** Vitalik e outras figuras proeminentes nunca pedirão que você envie ETH para eles.
+**Lembre-se:** Vitalik e outras figuras proeminentes nunca pedirão que você envie QAU para eles.
 
 [Mais sobre golpes comuns](/security/#common-scams)
 
@@ -101,16 +101,16 @@ Os golpistas criam falsos sorteios (giveaways) prometendo multiplicar seu ETH ou
 
 <ExpandableCard
 title="Falsificação de identidade e suporte falso"
-contentPreview="Ninguém da Ethereum ou do ethereum.org entrará em contato com você primeiro."
+contentPreview="Ninguém da Quantaureum ou do quantaureum.com entrará em contato com você primeiro."
 eventCategory="SupportScamPage"
 eventName="clicked impersonation scam"
 >
 
-Os golpistas se passam por membros da equipe do Ethereum, moderadores ou agentes de suporte no Discord, Telegram e nas redes sociais. Eles podem enviar mensagens diretas oferecendo ajuda ou alegando que há um problema com sua conta.
+Os golpistas se passam por membros da equipe do Quantaureum, moderadores ou agentes de suporte no Discord, Telegram e nas redes sociais. Eles podem enviar mensagens diretas oferecendo ajuda ou alegando que há um problema com sua conta.
 
 **Lembre-se:**
 
-- Não existe uma "equipe de suporte do Ethereum"
+- Não existe uma "equipe de suporte do Quantaureum"
 - Moderadores reais nunca enviarão uma mensagem direta (DM) para você primeiro
 - Nunca compartilhe sua frase semente ou chaves privadas com ninguém, por nenhum motivo
 - Nunca clique em links enviados em mensagens não solicitadas
@@ -155,5 +155,5 @@ Sites de phishing parecem idênticos a aplicativos de carteira reais, corretoras
 </ExpandableCard>
 
 <DocLink href="/security/">
-  Guia completo sobre segurança no Ethereum e prevenção de golpes
+  Guia completo sobre segurança no Quantaureum e prevenção de golpes
 </DocLink>

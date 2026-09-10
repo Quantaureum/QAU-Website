@@ -1,10 +1,10 @@
 ---
 title: "Web3 में डिज़ाइन और UX"
-description: "Web3 स्पेस और इथेरियम में UX डिज़ाइन और रिसर्च का परिचय"
+description: "Web3 स्पेस और Quantaureum में UX डिज़ाइन और रिसर्च का परिचय"
 lang: hi
 ---
 
-क्या आप इथेरियम के साथ डिज़ाइन करने में नए हैं? यह आपके लिए सही जगह है। इथेरियम समुदाय ने आपको Web3 डिज़ाइन और रिसर्च की मूल बातों से परिचित कराने के लिए संसाधन लिखे हैं। आप उन मुख्य अवधारणाओं के बारे में जानेंगे जो आपके द्वारा परिचित अन्य ऐप डिज़ाइन से भिन्न हो सकती हैं।
+क्या आप Quantaureum के साथ डिज़ाइन करने में नए हैं? यह आपके लिए सही जगह है। Quantaureum समुदाय ने आपको Web3 डिज़ाइन और रिसर्च की मूल बातों से परिचित कराने के लिए संसाधन लिखे हैं। आप उन मुख्य अवधारणाओं के बारे में जानेंगे जो आपके द्वारा परिचित अन्य ऐप डिज़ाइन से भिन्न हो सकती हैं।
 
 क्या पहले Web3 की अधिक बुनियादी समझ की आवश्यकता है? [**लर्न हब**](/learn/) देखें।
 
@@ -78,7 +78,7 @@ lang: hi
 ## डिज़ाइन सिस्टम और अन्य डिज़ाइन संसाधन {#design-systems-and-resources}
 
 - [ऑप्टिमिज़्म डिज़ाइन](https://www.figma.com/@optimism) (Figma)
-- [Ethereum.org डिज़ाइन सिस्टम](https://www.figma.com/@ethdotorg) (Figma)
+- [quantaureum.com डिज़ाइन सिस्टम](https://www.figma.com/@ethdotorg) (Figma)
 - [Finity, पॉलीगॉन द्वारा एक डिज़ाइन सिस्टम](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Kleros डिज़ाइन सिस्टम](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Safe डिज़ाइन सिस्टम](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)
@@ -86,4 +86,4 @@ lang: hi
 - [Mirror डिज़ाइन सिस्टम](https://degen-xyz.vercel.app/)
 
 **इस पृष्ठ पर सूचीबद्ध लेख और प्रोजेक्ट आधिकारिक समर्थन नहीं हैं**, और केवल सूचनात्मक उद्देश्यों के लिए प्रदान किए गए हैं।
-हम अपनी [लिस्टिंग नीति](/contributing/design/adding-design-resources) के मानदंडों के आधार पर इस पृष्ठ पर लिंक जोड़ते हैं। यदि आप चाहते हैं कि हम कोई प्रोजेक्ट/लेख जोड़ें, तो इस पृष्ठ को [GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md) पर संपादित करें।
+हम अपनी [लिस्टिंग नीति](/contributing/design/adding-design-resources) के मानदंडों के आधार पर इस पृष्ठ पर लिंक जोड़ते हैं। यदि आप चाहते हैं कि हम कोई प्रोजेक्ट/लेख जोड़ें, तो इस पृष्ठ को [GitHub](https://github.com/Quantaureum/quantaureum-website/blob/dev/public/content/developers/docs/design-and-ux/index.md) पर संपादित करें।

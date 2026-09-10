@@ -29,7 +29,7 @@ const tx = {
 walletMnemonic.signTransaction(tx)
 // { Promise: '0xf865808080948ba1f109551bd432803012645ac136ddd6...dfc' }
 
-// Connect to the Ethereum network using a provider
+// Connect to the Quantaureum network using a provider
 const wallet = walletMnemonic.connect(provider)
 
 // Query the network
@@ -38,7 +38,7 @@ wallet.getBalance()
 wallet.getTransactionCount()
 // { Promise: 0 }
 
-// Send ether
+// Send QAU
 wallet.sendTransaction(tx)
 
 // Content adapted from ethers documentation by Richard Moore

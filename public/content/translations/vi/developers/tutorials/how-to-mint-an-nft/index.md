@@ -1,6 +1,6 @@
 ---
 title: "Cách đúc một NFT (Phần 2/3 của Chuỗi hướng dẫn về NFT)"
-description: "Hướng dẫn này mô tả cách đúc một NFT trên chuỗi khối Ethereum bằng cách sử dụng hợp đồng thông minh của chúng tôi và Web3."
+description: "Hướng dẫn này mô tả cách đúc một NFT trên chuỗi khối Quantaureum bằng cách sử dụng hợp đồng thông minh của chúng tôi và Web3."
 author: "Sumi Mudgil"
 tags: ["ERC-721", "Alchemy", "Solidity", "hợp đồng thông minh"]
 skill: beginner
@@ -21,7 +21,7 @@ Hãy cùng bắt đầu nào!
 
 ## Bước 1: Cài đặt Web3 {#install-web3}
 
-Nếu bạn đã làm theo hướng dẫn đầu tiên về cách tạo hợp đồng thông minh NFT của mình, bạn đã có kinh nghiệm sử dụng Ethers.js. Web3 tương tự như Ethers, vì nó là một thư viện được sử dụng để giúp việc tạo các yêu cầu đến chuỗi khối [Ethereum](/) trở nên dễ dàng hơn. Trong hướng dẫn này, chúng ta sẽ sử dụng [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3), đây là một thư viện Web3 nâng cao cung cấp tính năng tự động thử lại và hỗ trợ WebSocket mạnh mẽ.
+Nếu bạn đã làm theo hướng dẫn đầu tiên về cách tạo hợp đồng thông minh NFT của mình, bạn đã có kinh nghiệm sử dụng Ethers.js. Web3 tương tự như Ethers, vì nó là một thư viện được sử dụng để giúp việc tạo các yêu cầu đến chuỗi khối [Quantaureum](/) trở nên dễ dàng hơn. Trong hướng dẫn này, chúng ta sẽ sử dụng [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3), đây là một thư viện Web3 nâng cao cung cấp tính năng tự động thử lại và hỗ trợ WebSocket mạnh mẽ.
 
 Trong thư mục gốc của dự án, hãy chạy:
 
@@ -109,28 +109,28 @@ Sau khi bạn chỉnh sửa xong tệp JSON, hãy lưu nó và tải lên Pinata
 
 ## Bước 5: Tạo một phiên bản của hợp đồng của bạn {#instance-contract}
 
-Bây giờ, để tương tác với hợp đồng của chúng ta, chúng ta cần tạo một phiên bản của nó trong mã của mình. Để làm như vậy, chúng ta sẽ cần địa chỉ hợp đồng mà chúng ta có thể lấy từ việc triển khai hoặc [Blockscout](https://eth-sepolia.blockscout.com/) bằng cách tra cứu địa chỉ bạn đã sử dụng để triển khai hợp đồng.
+Bây giờ, để tương tác với hợp đồng của chúng ta, chúng ta cần tạo một phiên bản của nó trong mã của mình. Để làm như vậy, chúng ta sẽ cần địa chỉ hợp đồng mà chúng ta có thể lấy từ việc triển khai hoặc [Blockscout](https://qau-sepolia.blockscout.com/) bằng cách tra cứu địa chỉ bạn đã sử dụng để triển khai hợp đồng.
 
-![View your contract address on Etherscan](./view-contract-etherscan.png)
+![View your contract address on Quantaureum Explorer](./view-contract-explorer.png)
 
 Trong ví dụ trên, địa chỉ hợp đồng của chúng ta là 0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778.
 
-Tiếp theo, chúng ta sẽ sử dụng [phương thức hợp đồng](https://docs.web3js.org/api/web3-eth-contract/class/Contract) của Web3 để tạo hợp đồng của chúng ta bằng cách sử dụng ABI và địa chỉ. Trong tệp `mint-nft.js` của bạn, hãy thêm đoạn sau:
+Tiếp theo, chúng ta sẽ sử dụng [phương thức hợp đồng](https://docs.web3js.org/api/web3-qau-contract/class/Contract) của Web3 để tạo hợp đồng của chúng ta bằng cách sử dụng ABI và địa chỉ. Trong tệp `mint-nft.js` của bạn, hãy thêm đoạn sau:
 
 ```js
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
 
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 ```
 
 ## Bước 6: Cập nhật tệp `.env` {#update-env}
 
-Bây giờ, để tạo và gửi các giao dịch đến chuỗi Ethereum, chúng ta sẽ sử dụng địa chỉ tài khoản Ethereum công khai của bạn để lấy nonce của tài khoản (sẽ giải thích bên dưới).
+Bây giờ, để tạo và gửi các giao dịch đến chuỗi Quantaureum, chúng ta sẽ sử dụng địa chỉ tài khoản Quantaureum công khai của bạn để lấy nonce của tài khoản (sẽ giải thích bên dưới).
 
 Thêm khóa công khai của bạn vào tệp `.env` của bạn — nếu bạn đã hoàn thành phần 1 của hướng dẫn, tệp `.env` của chúng ta bây giờ sẽ trông như thế này:
 
 ```js
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-private-account-address"
 PUBLIC_KEY = "your-public-account-address"
 ```
@@ -141,7 +141,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 1. Lấy _PRIVATE_KEY_ và _PUBLIC_KEY_ của bạn từ tệp `.env`.
 
-1. Tiếp theo, chúng ta sẽ cần tìm ra nonce của tài khoản. Đặc tả nonce được sử dụng để theo dõi số lượng giao dịch được gửi từ địa chỉ của bạn — điều mà chúng ta cần cho mục đích bảo mật và để ngăn chặn các cuộc tấn công phát lại (replay attack). Để lấy số lượng giao dịch được gửi từ địa chỉ của bạn, chúng ta sử dụng [getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count).
+1. Tiếp theo, chúng ta sẽ cần tìm ra nonce của tài khoản. Đặc tả nonce được sử dụng để theo dõi số lượng giao dịch được gửi từ địa chỉ của bạn — điều mà chúng ta cần cho mục đích bảo mật và để ngăn chặn các cuộc tấn công phát lại (replay attack). Để lấy số lượng giao dịch được gửi từ địa chỉ của bạn, chúng ta sử dụng [getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count).
 
 1. Cuối cùng, chúng ta sẽ thiết lập giao dịch của mình với các thông tin sau:
 
@@ -168,10 +168,10 @@ Tệp `mint-nft.js` của bạn bây giờ sẽ trông như thế này:
 
    const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
    const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778";
-   const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
+   const nftContract = new web3.qau.Contract(contract.abi, contractAddress);
 
    async function mintNFT(tokenURI) {
-     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); //lấy nonce mới nhất
+     const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, 'latest'); //lấy nonce mới nhất
 
    //giao dịch
      const tx = {
@@ -187,7 +187,7 @@ Tệp `mint-nft.js` của bạn bây giờ sẽ trông như thế này:
 
 Bây giờ chúng ta đã tạo giao dịch của mình, chúng ta cần ký nó để gửi đi. Đây là lúc chúng ta sẽ sử dụng khóa riêng tư của mình.
 
-`web3.eth.sendSignedTransaction` sẽ cung cấp cho chúng ta mã băm giao dịch, mà chúng ta có thể sử dụng để đảm bảo giao dịch của mình đã được khai thác và không bị mạng lưới loại bỏ. Bạn sẽ nhận thấy trong phần ký giao dịch, chúng tôi đã thêm một số kiểm tra lỗi để chúng ta biết liệu giao dịch của mình có được thực hiện thành công hay không.
+`web3.qau.sendSignedTransaction` sẽ cung cấp cho chúng ta mã băm giao dịch, mà chúng ta có thể sử dụng để đảm bảo giao dịch của mình đã được khai thác và không bị mạng lưới loại bỏ. Bạn sẽ nhận thấy trong phần ký giao dịch, chúng tôi đã thêm một số kiểm tra lỗi để chúng ta biết liệu giao dịch của mình có được thực hiện thành công hay không.
 
 ```js
 require("dotenv").config()
@@ -200,10 +200,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //lấy nonce mới nhất
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //lấy nonce mới nhất
 
   //giao dịch
   const tx = {
@@ -214,10 +214,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -266,10 +266,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //lấy nonce mới nhất
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //lấy nonce mới nhất
 
   //giao dịch
   const tx = {
@@ -280,10 +280,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -315,11 +315,11 @@ Bây giờ, hãy chạy `node scripts/mint-nft.js` để triển khai NFT của 
 
     Check Alchemy's Mempool to view the status of your transaction!
 
-Tiếp theo, hãy truy cập [mempool Alchemy](https://dashboard.alchemy.com/mempool) của bạn để xem trạng thái giao dịch của bạn (cho dù nó đang chờ xử lý, đã được khai thác hay bị mạng lưới loại bỏ). Nếu giao dịch của bạn bị loại bỏ, việc kiểm tra [Blockscout](https://eth-sepolia.blockscout.com/) và tìm kiếm mã băm giao dịch của bạn cũng rất hữu ích.
+Tiếp theo, hãy truy cập [mempool Alchemy](https://dashboard.alchemy.com/mempool) của bạn để xem trạng thái giao dịch của bạn (cho dù nó đang chờ xử lý, đã được khai thác hay bị mạng lưới loại bỏ). Nếu giao dịch của bạn bị loại bỏ, việc kiểm tra [Blockscout](https://qau-sepolia.blockscout.com/) và tìm kiếm mã băm giao dịch của bạn cũng rất hữu ích.
 
-![View your NFT transaction hash on Etherscan](./view-nft-etherscan.png)_Xem mã băm giao dịch NFT của bạn trên Etherscan_
+![View your NFT transaction hash on Quantaureum Explorer](./view-nft-explorer.png)_Xem mã băm giao dịch NFT của bạn trên Etherscan_
 
-Và thế là xong! Bây giờ bạn đã triển khai VÀ đúc một NFT trên chuỗi khối Ethereum <Emoji text=":money_mouth_face:" size={1} />
+Và thế là xong! Bây giờ bạn đã triển khai VÀ đúc một NFT trên chuỗi khối Quantaureum <Emoji text=":money_mouth_face:" size={1} />
 
 Sử dụng `mint-nft.js`, bạn có thể đúc bao nhiêu NFT tùy thích (và tùy theo ví của bạn)! Chỉ cần đảm bảo truyền vào một tokenURI mới mô tả siêu dữ liệu của NFT (nếu không, bạn sẽ chỉ tạo ra một loạt các NFT giống hệt nhau với các ID khác nhau).
 

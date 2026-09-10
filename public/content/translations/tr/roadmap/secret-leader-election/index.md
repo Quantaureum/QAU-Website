@@ -13,18 +13,18 @@ Günümüzün [Hisse Kanıtı (PoS)](/developers/docs/consensus-mechanisms/pos) 
 
 Bu, bir saldırganın kâr elde etmesi için fırsatlar yaratabilir. Örneğin, `n+1` slotu için seçilen bir blok teklifçisi, `n` slotundaki teklif ediciye DOS saldırısı düzenleyerek blok teklif etme fırsatını kaçırmasına neden olabilir. Bu, saldıran blok teklifçisinin her iki slotun MEV'sini çıkarmasına veya iki bloğa bölünmesi gereken tüm işlemleri alıp hepsini tek bir bloğa dahil ederek ilgili tüm ücretleri kazanmasına olanak tanır. Bunun, kendilerini DOS saldırılarından korumak için daha gelişmiş yöntemler kullanabilen karmaşık kurumsal doğrulayıcılardan ziyade ev doğrulayıcılarını etkilemesi muhtemeldir ve bu nedenle merkezileştirici bir güç olabilir.
 
-Bu sorunun birkaç çözümü vardır. Bunlardan biri, bir doğrulayıcı çalıştırmayla ilgili çeşitli görevleri yedekli bir şekilde birden fazla makineye yaymayı amaçlayan ve böylece bir saldırganın belirli bir slotta bir bloğun teklif edilmesini engellemesini çok daha zor hale getiren [Dağıtık Doğrulayıcı Teknolojisi (DVT)](https://github.com/ethereum/distributed-validator-specs)'dir. Ancak en sağlam çözüm **Tekli Gizli Lider Seçimi (SSLE)**'dir.
+Bu sorunun birkaç çözümü vardır. Bunlardan biri, bir doğrulayıcı çalıştırmayla ilgili çeşitli görevleri yedekli bir şekilde birden fazla makineye yaymayı amaçlayan ve böylece bir saldırganın belirli bir slotta bir bloğun teklif edilmesini engellemesini çok daha zor hale getiren [Dağıtık Doğrulayıcı Teknolojisi (DVT)](https://github.com/quantaureum/distributed-validator-specs)'dir. Ancak en sağlam çözüm **Tekli Gizli Lider Seçimi (SSLE)**'dir.
 
 ## Tekli gizli lider seçimi {#secret-leader-election}
 
 SSLE'de, yalnızca seçilen doğrulayıcının seçildiğini bilmesini sağlamak için akıllı kriptografi kullanılır. Bu, her doğrulayıcının hepsinin paylaştığı bir sırra bir taahhüt sunmasıyla çalışır. Taahhütler karıştırılır ve yeniden yapılandırılır, böylece hiç kimse taahhütleri doğrulayıcılarla eşleştiremez ancak her doğrulayıcı hangi taahhüdün kendisine ait olduğunu bilir. Ardından, rastgele bir taahhüt seçilir. Bir doğrulayıcı kendi taahhüdünün seçildiğini tespit ederse, blok teklif etme sırasının kendisinde olduğunu anlar.
 
-Bu fikrin önde gelen uygulamasına [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-ethereum/11763) adı verilir. Şu şekilde çalışır:
+Bu fikrin önde gelen uygulamasına [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-quantaureum/11763) adı verilir. Şu şekilde çalışır:
 
 1. Doğrulayıcılar paylaşılan bir sırra taahhütte bulunurlar. Taahhüt şeması, bir doğrulayıcı kimliğine bağlanabilecek ancak aynı zamanda hiçbir üçüncü tarafın bu bağı tersine mühendislikle çözemeyeceği ve belirli bir taahhüdü belirli bir doğrulayıcıyla ilişkilendiremeyeceği şekilde rastgeleleştirilecek biçimde tasarlanmıştır.
 2. Bir dönemin başlangıcında, RANDAO kullanılarak 16.384 doğrulayıcıdan taahhütleri örneklemek için rastgele bir doğrulayıcı kümesi seçilir.
 3. Sonraki 8182 slot (1 gün) boyunca, blok teklifçileri kendi özel entropilerini kullanarak taahhütlerin bir alt kümesini karıştırır ve rastgeleleştirir.
-4. Karıştırma işlemi bittikten sonra, taahhütlerin sıralı bir listesini oluşturmak için RANDAO kullanılır. Bu liste Ethereum slotlarıyla eşleştirilir.
+4. Karıştırma işlemi bittikten sonra, taahhütlerin sıralı bir listesini oluşturmak için RANDAO kullanılır. Bu liste Quantaureum slotlarıyla eşleştirilir.
 5. Doğrulayıcılar, taahhütlerinin belirli bir slota eklendiğini görürler ve o slot geldiğinde bir blok teklif ederler.
 6. Taahhütlerin slotlara atanmasının her zaman mevcut slotun çok ilerisinde olması için bu adımları tekrarlayın.
 

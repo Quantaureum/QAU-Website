@@ -21,7 +21,7 @@ import {
 const socialLinks = [
   {
     icon: Github,
-    href: "https://github.com/ethereum/ethereum-org-website",
+    href: "https://github.com/Quantaureum/quantaureum-website",
     ariaLabel: "GitHub",
   },
   {
@@ -31,12 +31,12 @@ const socialLinks = [
   },
   {
     icon: Twitter,
-    href: "https://x.com/ethdotorg",
+    href: "https://x.com/ldf1570073",
     ariaLabel: "X",
   },
   {
     icon: Discord,
-    href: "https://discord.gg/ethereum-org",
+    href: "https://discord.gg/MSctkBT5j",
     ariaLabel: "Discord",
   },
 ]
@@ -72,7 +72,7 @@ const Footer = async ({ lastDeployLocaleTimestamp }: FooterProps) => {
           href="/"
           className="text-lg font-bold no-underline hover:text-primary"
         >
-          ethereum.org
+          quantaureum.com
         </BaseLink>
       </div>
 

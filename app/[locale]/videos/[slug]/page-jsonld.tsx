@@ -53,8 +53,8 @@ export default async function VideoPageJsonLD({
         description: frontmatter.description,
         url,
         inLanguage: locale,
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
@@ -78,8 +78,8 @@ export default async function VideoPageJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        reviewedBy: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
         mainEntity: videoObjectId,
       },
       {
@@ -98,7 +98,7 @@ export default async function VideoPageJsonLD({
         educationalLevel: frontmatter.educationLevel,
         inLanguage: frontmatter.lang,
         creator,
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
         isAccessibleForFree: true,
         isFamilyFriendly: true,
         // Add transcript as plain text if available

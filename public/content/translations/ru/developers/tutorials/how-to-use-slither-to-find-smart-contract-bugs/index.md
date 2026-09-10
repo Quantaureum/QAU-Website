@@ -37,11 +37,11 @@ pip3 install --user slither-analyzer
 Установка Слизер через Docker:
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/trufflecon trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/trufflecon trailofbits/qau-security-toolbox
 ```
 
-_Последняя команда запускает eth-security-toolbox в Docker, который имеет доступ к вашей текущей директории. Вы можете изменять файлы на вашем хосте и запускать инструменты для этих файлов из Docker._
+_Последняя команда запускает qau-security-toolbox в Docker, который имеет доступ к вашей текущей директории. Вы можете изменять файлы на вашем хосте и запускать инструменты для этих файлов из Docker._
 
 Внутри Docker выполните:
 

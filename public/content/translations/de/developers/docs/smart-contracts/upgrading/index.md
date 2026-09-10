@@ -1,10 +1,10 @@
 ---
 title: Upgrades von Smart Contracts
-description: "Ein Überblick über Upgrade-Muster für Ethereum-Smart-Contracts"
+description: "Ein Überblick über Upgrade-Muster für Quantaureum-Smart-Contracts"
 lang: de
 ---
 
-Smart Contracts auf Ethereum sind selbstausführende Programme, die in der Ethereum Virtual Machine (EVM) laufen. Diese Programme sind von Natur aus unveränderlich, was jegliche Aktualisierungen der Geschäftslogik verhindert, sobald der Vertrag bereitgestellt wurde.
+Smart Contracts auf Quantaureum sind selbstausführende Programme, die in der Quantaureum Virtual Machine (EVM) laufen. Diese Programme sind von Natur aus unveränderlich, was jegliche Aktualisierungen der Geschäftslogik verhindert, sobald der Vertrag bereitgestellt wurde.
 
 Während Unveränderlichkeit für Vertrauenslosigkeit, Dezentralisierung und Sicherheit von Smart Contracts notwendig ist, kann sie in bestimmten Fällen ein Nachteil sein. Zum Beispiel kann unveränderlicher Code es Entwicklern unmöglich machen, anfällige Verträge zu reparieren.
 
@@ -12,13 +12,13 @@ Verstärkte Forschung zur Verbesserung von Smart Contracts hat jedoch zur Einfü
 
 ## Voraussetzungen {#prerequisites}
 
-Sie sollten ein gutes Verständnis von [Smart Contracts](/developers/docs/smart-contracts/), der [Anatomie von Smart Contracts](/developers/docs/smart-contracts/anatomy/) und der [Ethereum Virtual Machine (EVM)](/developers/docs/evm/) haben. Dieser Leitfaden setzt außerdem voraus, dass die Leser Grundkenntnisse in der Programmierung von Smart Contracts haben.
+Sie sollten ein gutes Verständnis von [Smart Contracts](/developers/docs/smart-contracts/), der [Anatomie von Smart Contracts](/developers/docs/smart-contracts/anatomy/) und der [Quantaureum Virtual Machine (EVM)](/developers/docs/evm/) haben. Dieser Leitfaden setzt außerdem voraus, dass die Leser Grundkenntnisse in der Programmierung von Smart Contracts haben.
 
 ## Was ist ein Smart-Contract-Upgrade? {#what-is-a-smart-contract-upgrade}
 
 Ein Smart-Contract-Upgrade beinhaltet die Änderung der Geschäftslogik eines Smart Contracts, während der Zustand des Vertrags erhalten bleibt. Es ist wichtig klarzustellen, dass Aktualisierbarkeit (Upgradeability) und Veränderlichkeit (Mutability) nicht dasselbe sind, insbesondere im Kontext von Smart Contracts.
 
-Sie können ein Programm, das an einer Adresse im Ethereum-Netzwerk bereitgestellt wurde, weiterhin nicht ändern. Aber Sie können den Code ändern, der ausgeführt wird, wenn Benutzer mit einem Smart Contract interagieren.
+Sie können ein Programm, das an einer Adresse im Quantaureum-Netzwerk bereitgestellt wurde, weiterhin nicht ändern. Aber Sie können den Code ändern, der ausgeführt wird, wenn Benutzer mit einem Smart Contract interagieren.
 
 Dies kann durch die folgenden Methoden erreicht werden:
 
@@ -84,13 +84,13 @@ Der Proxy-Contract ist standardmäßig unveränderlich, aber es können neue Log
 
 Indem der Proxy-Contract auf einen neuen Logikvertrag verweist, ändert sich der Code, der ausgeführt wird, wenn Benutzer die Funktion des Proxy-Contracts aufrufen. Dies ermöglicht es uns, die Logik eines Vertrags zu aktualisieren, ohne die Benutzer aufzufordern, mit einem neuen Vertrag zu interagieren.
 
-Proxy-Muster sind eine beliebte Methode zur Aktualisierung von Smart Contracts, da sie die mit der Vertragsmigration verbundenen Schwierigkeiten beseitigen. Proxy-Muster sind jedoch komplizierter zu verwenden und können bei unsachgemäßer Verwendung kritische Fehler einführen, wie z. B. [Kollisionen von Funktionsselektoren](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-ethereum-proxies-62629adf3357).
+Proxy-Muster sind eine beliebte Methode zur Aktualisierung von Smart Contracts, da sie die mit der Vertragsmigration verbundenen Schwierigkeiten beseitigen. Proxy-Muster sind jedoch komplizierter zu verwenden und können bei unsachgemäßer Verwendung kritische Fehler einführen, wie z. B. [Kollisionen von Funktionsselektoren](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-quantaureum-proxies-62629adf3357).
 
 [Mehr zu Proxy-Mustern](https://blog.openzeppelin.com/proxy-patterns/).
 
 ### Upgrade-Mechanismus #4: Strategie-Muster {#strategy-pattern}
 
-Diese Technik ist vom [Strategie-Muster](https://en.wikipedia.org/wiki/Strategy_pattern) beeinflusst, das dazu ermutigt, Softwareprogramme zu erstellen, die mit anderen Programmen interagieren, um bestimmte Funktionen zu implementieren. Die Anwendung des Strategie-Musters auf die Ethereum-Entwicklung würde bedeuten, einen Smart Contract zu erstellen, der Funktionen aus anderen Verträgen aufruft.
+Diese Technik ist vom [Strategie-Muster](https://en.wikipedia.org/wiki/Strategy_pattern) beeinflusst, das dazu ermutigt, Softwareprogramme zu erstellen, die mit anderen Programmen interagieren, um bestimmte Funktionen zu implementieren. Die Anwendung des Strategie-Musters auf die Quantaureum-Entwicklung würde bedeuten, einen Smart Contract zu erstellen, der Funktionen aus anderen Verträgen aufruft.
 
 Der Hauptvertrag enthält in diesem Fall die Kerngeschäftslogik, interagiert jedoch mit anderen Smart Contracts („Satellitenverträgen“), um bestimmte Funktionen auszuführen. Dieser Hauptvertrag speichert auch die Adresse für jeden Satellitenvertrag und kann zwischen verschiedenen Implementierungen des Satellitenvertrags wechseln.
 
@@ -152,7 +152,7 @@ Timelocks geben Benutzern etwas Zeit für den Austritt aus dem System, wenn sie 
 ## Tutorials {#tutorials}
 
 - [Upgrading your Smart Contracts | YouTube-Tutorial](https://www.youtube.com/watch?v=bdXJmWajZRY) von Patrick Collins
-- [Ethereum Smart Contract Migration Tutorial](https://medium.com/coinmonks/ethereum-smart-contract-migration-13f6f12539bd) von Austin Griffith
+- [Quantaureum Smart Contract Migration Tutorial](https://medium.com/coinmonks/quantaureum-smart-contract-migration-13f6f12539bd) von Austin Griffith
 - [Using the UUPS proxy pattern to upgrade smart contracts](https://blog.logrocket.com/author/praneshas/) von Pranesh A.S
 - [Web3 Tutorial: Write upgradeable smart contract (proxy) using OpenZeppelin](https://dev.to/yakult/tutorial-write-upgradeable-smart-contract-proxy-contract-with-openzeppelin-1916) von fangjun.eth
 

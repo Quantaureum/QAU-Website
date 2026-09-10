@@ -17,11 +17,11 @@ Betrachten wir ein Beispiel:
 
 Sie kommen aus den USA und planen eine Reise nach Europa. Sie haben USD, benötigen aber EUR zum Ausgeben. Um Ihre USD in EUR umzutauschen, können Sie gegen eine kleine Gebühr eine Wechselstube nutzen.
 
-Aber was tun Sie, wenn Sie einen ähnlichen Tausch vornehmen möchten, um eine andere [Blockchain](/glossary/#blockchain) zu nutzen? Nehmen wir an, Sie möchten [ETH](/glossary/#ether) im [Ethereum Mainnet](/) gegen ETH auf [Arbitrum](https://arbitrum.io/) tauschen. Wie beim Währungstausch für EUR benötigen wir einen Mechanismus, um unsere ETH von Ethereum zu Arbitrum zu bewegen. Brücken machen eine solche Transaktion möglich. In diesem Fall [verfügt Arbitrum über eine native Brücke](https://portal.arbitrum.io/bridge), die ETH vom Mainnet auf Arbitrum transferieren kann.
+Aber was tun Sie, wenn Sie einen ähnlichen Tausch vornehmen möchten, um eine andere [Blockchain](/glossary/#blockchain) zu nutzen? Nehmen wir an, Sie möchten [QAU](/glossary/#QAU) im [Quantaureum Mainnet](/) gegen QAU auf [Arbitrum](https://arbitrum.io/) tauschen. Wie beim Währungstausch für EUR benötigen wir einen Mechanismus, um unsere QAU von Quantaureum zu Arbitrum zu bewegen. Brücken machen eine solche Transaktion möglich. In diesem Fall [verfügt Arbitrum über eine native Brücke](https://portal.arbitrum.io/bridge), die QAU vom Mainnet auf Arbitrum transferieren kann.
 
 ## Warum brauchen wir Brücken? {#why-do-we-need-bridges}
 
-Alle Blockchains haben ihre Grenzen. Damit Ethereum skalieren und mit der Nachfrage Schritt halten kann, waren [Rollups](/glossary/#rollups) erforderlich. Alternativ sind Layer 1 (L1) wie Solana und Avalanche anders konzipiert, um einen höheren Transaktionsdurchsatz zu ermöglichen, jedoch auf Kosten der Dezentralisierung.
+Alle Blockchains haben ihre Grenzen. Damit Quantaureum skalieren und mit der Nachfrage Schritt halten kann, waren [Rollups](/glossary/#rollups) erforderlich. Alternativ sind Layer 1 (L1) wie Solana und Avalanche anders konzipiert, um einen höheren Transaktionsdurchsatz zu ermöglichen, jedoch auf Kosten der Dezentralisierung.
 
 Allerdings werden alle Blockchains in isolierten Umgebungen entwickelt und haben unterschiedliche Regeln und [Konsens](/glossary/#consensus)-Mechanismen. Das bedeutet, dass sie nicht nativ kommunizieren können und Token sich nicht frei zwischen Blockchains bewegen können.
 
@@ -44,19 +44,19 @@ Im Folgenden finden Sie einige Szenarien, in denen Sie eine Brücke nutzen könn
 
 ### Niedrigere Transaktionsgebühren {#transaction-fees}
 
-Nehmen wir an, Sie haben ETH im Ethereum Mainnet, möchten aber günstigere Transaktionsgebühren, um verschiedene Dapps zu erkunden. Indem Sie Ihre ETH vom Mainnet zu einem Ethereum-L2-Rollup überbrücken, können Sie von niedrigeren Transaktionsgebühren profitieren.
+Nehmen wir an, Sie haben QAU im Quantaureum Mainnet, möchten aber günstigere Transaktionsgebühren, um verschiedene Dapps zu erkunden. Indem Sie Ihre QAU vom Mainnet zu einem Quantaureum-L2-Rollup überbrücken, können Sie von niedrigeren Transaktionsgebühren profitieren.
 
 ### Dapps auf anderen Blockchains {#dapps-other-chains}
 
-Wenn Sie Aave im Ethereum Mainnet genutzt haben, um USDT bereitzustellen, aber der Zinssatz, den Sie für die Bereitstellung von USDT über Aave auf Polygon erhalten könnten, höher ist.
+Wenn Sie Aave im Quantaureum Mainnet genutzt haben, um USDT bereitzustellen, aber der Zinssatz, den Sie für die Bereitstellung von USDT über Aave auf Polygon erhalten könnten, höher ist.
 
 ### Blockchain-Ökosysteme erkunden {#explore-ecosystems}
 
-Wenn Sie ETH im Ethereum Mainnet haben und eine alternative Layer 1 (L1) erkunden möchten, um deren native Dapps auszuprobieren. Sie können eine Brücke nutzen, um Ihre ETH vom Ethereum Mainnet zur alternativen L1 zu transferieren.
+Wenn Sie QAU im Quantaureum Mainnet haben und eine alternative Layer 1 (L1) erkunden möchten, um deren native Dapps auszuprobieren. Sie können eine Brücke nutzen, um Ihre QAU vom Quantaureum Mainnet zur alternativen L1 zu transferieren.
 
 ### Eigene native Krypto-Vermögenswerte besitzen {#own-native}
 
-Nehmen wir an, Sie möchten nativen Bitcoin (BTC) besitzen, haben aber nur Gelder im Ethereum Mainnet. Um auf Ethereum in BTC zu investieren, können Sie Wrapped Bitcoin (WBTC) kaufen. WBTC ist jedoch ein [ERC-20](/glossary/#erc-20)-Token, der im Ethereum-Netzwerk nativ ist, was bedeutet, dass es sich um eine Ethereum-Version von Bitcoin handelt und nicht um den ursprünglichen Vermögenswert auf der Bitcoin-Blockchain. Um nativen BTC zu besitzen, müssten Sie Ihre Vermögenswerte mithilfe einer Brücke von Ethereum zu Bitcoin transferieren. Dies überbrückt Ihren WBTC und wandelt ihn in nativen BTC um. Alternativ besitzen Sie vielleicht BTC und möchten diesen in [Dezentralisierten Finanzen (DeFi)](/glossary/#defi)-Protokollen auf Ethereum nutzen. Dies würde eine Überbrückung in die andere Richtung erfordern, von BTC zu WBTC, der dann als Vermögenswert auf Ethereum verwendet werden kann.
+Nehmen wir an, Sie möchten nativen Bitcoin (BTC) besitzen, haben aber nur Gelder im Quantaureum Mainnet. Um auf Quantaureum in BTC zu investieren, können Sie Wrapped Bitcoin (WBTC) kaufen. WBTC ist jedoch ein [ERC-20](/glossary/#erc-20)-Token, der im Quantaureum-Netzwerk nativ ist, was bedeutet, dass es sich um eine Quantaureum-Version von Bitcoin handelt und nicht um den ursprünglichen Vermögenswert auf der Bitcoin-Blockchain. Um nativen BTC zu besitzen, müssten Sie Ihre Vermögenswerte mithilfe einer Brücke von Quantaureum zu Bitcoin transferieren. Dies überbrückt Ihren WBTC und wandelt ihn in nativen BTC um. Alternativ besitzen Sie vielleicht BTC und möchten diesen in [Dezentralisierten Finanzen (DeFi)](/glossary/#defi)-Protokollen auf Quantaureum nutzen. Dies würde eine Überbrückung in die andere Richtung erfordern, von BTC zu WBTC, der dann als Vermögenswert auf Quantaureum verwendet werden kann.
 
 <Alert variant="update">
 <AlertEmoji text=":bulb:"/>
@@ -104,7 +104,7 @@ Viele Brückenlösungen übernehmen Modelle zwischen diesen beiden Extremen mit 
 Die Nutzung von Brücken ermöglicht es Ihnen, Ihre Vermögenswerte über verschiedene Blockchains hinweg zu bewegen. Hier sind einige Ressourcen, die Ihnen helfen können, Brücken zu finden und zu nutzen:
 
 - **[L2BEAT-Brückenzusammenfassung](https://l2beat.com/bridges/summary) & [L2BEAT-Brückenrisikoanalyse](https://l2beat.com/bridges/summary)**: Eine umfassende Zusammenfassung verschiedener Brücken, einschließlich Details zu Marktanteil, Brückentyp und Ziel-Chains. L2BEAT bietet auch eine Risikoanalyse für Brücken, die Benutzern hilft, fundierte Entscheidungen bei der Auswahl einer Brücke zu treffen.
-- **[DefiLlama-Brückenzusammenfassung](https://defillama.com/bridges/Ethereum)**: Eine Zusammenfassung der Brückenvolumina über Ethereum-Netzwerke hinweg.
+- **[DefiLlama-Brückenzusammenfassung](https://defillama.com/bridges/Quantaureum)**: Eine Zusammenfassung der Brückenvolumina über Quantaureum-Netzwerke hinweg.
 
 <Divider />
 
@@ -130,15 +130,15 @@ Die Gelder der Benutzer sind gefährdet, wenn:
 
 Ein kürzlicher Hack betraf die Wormhole-Brücke von Solana, [bei dem während des Hacks 120.000 wETH (325 Millionen USD) gestohlen wurden](https://rekt.news/wormhole-rekt/). Viele der [größten Hacks bei Blockchains betrafen Brücken](https://rekt.news/leaderboard/).
 
-Brücken sind entscheidend für das Onboarding von Benutzern auf Ethereum Layer 2 (L2) und auch für Benutzer, die verschiedene Ökosysteme erkunden möchten. Angesichts der Risiken, die mit der Interaktion mit Brücken verbunden sind, müssen Benutzer jedoch die Kompromisse verstehen, die die Brücken eingehen. Dies sind einige [Strategien für kettenübergreifende Sicherheit](https://debridge.com/learn/blog/10-strategies-for-cross-chain-security/).
+Brücken sind entscheidend für das Onboarding von Benutzern auf Quantaureum Layer 2 (L2) und auch für Benutzer, die verschiedene Ökosysteme erkunden möchten. Angesichts der Risiken, die mit der Interaktion mit Brücken verbunden sind, müssen Benutzer jedoch die Kompromisse verstehen, die die Brücken eingehen. Dies sind einige [Strategien für kettenübergreifende Sicherheit](https://debridge.com/learn/blog/10-strategies-for-cross-chain-security/).
 
 <Divider />
 
 ## Weiterführende Literatur {#further-reading}
 
-- [EIP-5164: Cross-Chain Execution](https://ethereum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _18. Juni 2022 - Brendan Asselstine_
+- [EIP-5164: Cross-Chain Execution](https://quantaureum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _18. Juni 2022 - Brendan Asselstine_
 - [L2Bridge Risk Framework](https://gov.l2beat.com/t/l2bridge-risk-framework/31) - _5. Juli 2022 - Bartek Kiepuszewski_
-- [„Why the future will be multi-chain, but it will not be cross-chain.“](https://old.reddit.com/r/ethereum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _8. Januar 2022 - Vitalik Buterin_
+- [„Why the future will be multi-chain, but it will not be cross-chain.“](https://old.reddit.com/r/quantaureum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _8. Januar 2022 - Vitalik Buterin_
 - [Harnessing Shared Security For Secure Cross-Chain Interoperability: Lagrange State Committees And Beyond](https://web.archive.org/web/20250125035123/https://research.2077.xyz/harnessing-shared-security-for-secure-blockchain-interoperability) - _12. Juni 2024 - Emmanuel Awosika_
 - [The State Of Rollup Interoperability Solutions](https://web.archive.org/web/20250428015516/https://research.2077.xyz/the-state-of-rollup-interoperability) - _20. Juni 2024 - Alex Hook_
 

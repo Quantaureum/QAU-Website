@@ -23,7 +23,7 @@ As blockchains têm pontos fortes, pontos fracos e abordagens únicas para a con
 Para os desenvolvedores, as pontes permitem o seguinte:
 
 - a transferência de quaisquer dados, informações e ativos entre cadeias.
-- o desbloqueio de novos recursos e casos de uso para protocolos, pois as pontes expandem o espaço de design para o que os protocolos podem oferecer. Por exemplo, um protocolo para yield farming originalmente implantado na [Rede Principal do Ethereum](/) pode oferecer pools de liquidez em todas as cadeias compatíveis com a EVM.
+- o desbloqueio de novos recursos e casos de uso para protocolos, pois as pontes expandem o espaço de design para o que os protocolos podem oferecer. Por exemplo, um protocolo para yield farming originalmente implantado na [Rede Principal do Quantaureum](/) pode oferecer pools de liquidez em todas as cadeias compatíveis com a EVM.
 - a oportunidade de aproveitar os pontos fortes de diferentes blockchains. Por exemplo, os desenvolvedores podem se beneficiar das taxas mais baixas oferecidas pelas diferentes soluções de camada 2 (l2) implantando seus dapps em rollups e sidechains, e os usuários podem fazer bridge entre eles.
 - a colaboração entre desenvolvedores de vários ecossistemas blockchain para construir novos produtos.
 - a atração de usuários e comunidades de vários ecossistemas para seus dapps.
@@ -40,7 +40,7 @@ Embora existam muitos [tipos de designs de pontes](https://li.fi/knowledge-hub/b
 
 As pontes geralmente podem ser classificadas em uma das seguintes categorias:
 
-- **Pontes nativas –** Essas pontes são normalmente construídas para impulsionar a liquidez em uma blockchain específica, tornando mais fácil para os usuários moverem fundos para o ecossistema. Por exemplo, a [Arbitrum Bridge](https://bridge.arbitrum.io/) foi construída para tornar conveniente para os usuários fazerem bridge da Rede Principal do Ethereum para a Arbitrum. Outras pontes desse tipo incluem a Polygon PoS Bridge, [Optimism Gateway](https://app.optimism.io/bridge), etc.
+- **Pontes nativas –** Essas pontes são normalmente construídas para impulsionar a liquidez em uma blockchain específica, tornando mais fácil para os usuários moverem fundos para o ecossistema. Por exemplo, a [Arbitrum Bridge](https://bridge.arbitrum.io/) foi construída para tornar conveniente para os usuários fazerem bridge da Rede Principal do Quantaureum para a Arbitrum. Outras pontes desse tipo incluem a Polygon PoS Bridge, [Optimism Gateway](https://app.optimism.io/bridge), etc.
 - **Pontes baseadas em validadores ou oráculos –** Essas pontes dependem de um conjunto de validadores externos ou oráculos para validar transferências cross-chain. Exemplos: Multichain e Across.
 - **Pontes de passagem de mensagens generalizadas –** Essas pontes podem transferir ativos, juntamente com mensagens e dados arbitrários entre cadeias. Exemplos: Axelar, LayerZero e Nomad.
 - **Redes de liquidez –** Essas pontes se concentram principalmente na transferência de ativos de uma cadeia para outra por meio de trocas atômicas. Geralmente, elas não suportam a passagem de mensagens cross-chain. Exemplos: Connext e Hop.
@@ -122,7 +122,7 @@ Para monitorar a atividade de contratos entre cadeias, os desenvolvedores podem 
 
 ## Leitura adicional {#further-reading}
 
-- [Pontes de Blockchain](/bridges/) – ethereum.org
+- [Pontes de Blockchain](/bridges/) – quantaureum.com
 - [Estrutura de Risco de Pontes da L2BEAT](https://l2beat.com/bridges/summary)
 - [Pontes de Blockchain: Construindo Redes de Criptoredes](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) - 8 de setembro de 2021 – Dmitriy Berenzon
 - [O Trilema da Interoperabilidade](https://blog.connext.network/the-interoperability-trilemma-657c2cf69f17) - 1º de outubro de 2021 – Arjun Bhuptani

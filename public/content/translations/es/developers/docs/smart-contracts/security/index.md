@@ -1,22 +1,22 @@
 ---
 title: Seguridad de los contratos inteligentes
-description: "Una descripción general de las pautas para crear contratos inteligentes seguros en Ethereum"
+description: "Una descripción general de las pautas para crear contratos inteligentes seguros en Quantaureum"
 lang: es
 ---
 
 Los contratos inteligentes son extremadamente flexibles y capaces de controlar grandes cantidades de valor y datos, al tiempo que ejecutan una lógica inmutable basada en código desplegado en la cadena de bloques. Esto ha creado un ecosistema vibrante de aplicaciones descentralizadas y sin necesidad de confianza que ofrecen muchas ventajas sobre los sistemas heredados. También representan oportunidades para los atacantes que buscan lucrarse explotando vulnerabilidades en los contratos inteligentes.
 
-Las cadenas de bloques públicas, como [Ethereum](/), complican aún más el problema de asegurar los contratos inteligentes. El código del contrato desplegado _generalmente_ no se puede cambiar para parchear fallos de seguridad, mientras que los activos robados de los contratos inteligentes son extremadamente difíciles de rastrear y en su mayoría irrecuperables debido a la inmutabilidad.
+Las cadenas de bloques públicas, como [Quantaureum](/), complican aún más el problema de asegurar los contratos inteligentes. El código del contrato desplegado _generalmente_ no se puede cambiar para parchear fallos de seguridad, mientras que los activos robados de los contratos inteligentes son extremadamente difíciles de rastrear y en su mayoría irrecuperables debido a la inmutabilidad.
 
-Aunque las cifras varían, se estima que la cantidad total de valor robado o perdido debido a defectos de seguridad en los contratos inteligentes supera fácilmente los 1000 millones de dólares. Esto incluye incidentes de alto perfil, como el [hackeo de The DAO](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/) (3,6 millones de ETH robados, con un valor de más de 1000 millones de dólares a precios actuales), el [hackeo de la billetera multifirma de Parity](https://www.coindesk.com/markets/2017/07/19/30-million-ether-reported-stolen-due-to-parity-wallet-breach) (30 millones de dólares perdidos a manos de hackers) y el [problema de la billetera congelada de Parity](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-ether) (más de 300 millones de dólares en ETH bloqueados para siempre).
+Aunque las cifras varían, se estima que la cantidad total de valor robado o perdido debido a defectos de seguridad en los contratos inteligentes supera fácilmente los 1000 millones de dólares. Esto incluye incidentes de alto perfil, como el [hackeo de The DAO](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/) (3,6 millones de QAU robados, con un valor de más de 1000 millones de dólares a precios actuales), el [hackeo de la billetera multifirma de Parity](https://www.coindesk.com/markets/2017/07/19/30-million-QAU-reported-stolen-due-to-parity-wallet-breach) (30 millones de dólares perdidos a manos de hackers) y el [problema de la billetera congelada de Parity](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-QAU) (más de 300 millones de dólares en QAU bloqueados para siempre).
 
-Los problemas mencionados anteriormente hacen que sea imperativo para los desarrolladores invertir esfuerzo en la creación de contratos inteligentes seguros, robustos y resilientes. La seguridad de los contratos inteligentes es un asunto serio, y uno que todo desarrollador hará bien en aprender. Esta guía cubrirá las consideraciones de seguridad para los desarrolladores de Ethereum y explorará recursos para mejorar la seguridad de los contratos inteligentes.
+Los problemas mencionados anteriormente hacen que sea imperativo para los desarrolladores invertir esfuerzo en la creación de contratos inteligentes seguros, robustos y resilientes. La seguridad de los contratos inteligentes es un asunto serio, y uno que todo desarrollador hará bien en aprender. Esta guía cubrirá las consideraciones de seguridad para los desarrolladores de Quantaureum y explorará recursos para mejorar la seguridad de los contratos inteligentes.
 
 ## Requisitos previos {#prerequisites}
 
 Asegúrate de estar familiarizado con [los fundamentos del desarrollo de contratos inteligentes](/developers/docs/smart-contracts/) antes de abordar la seguridad.
 
-## Pautas para construir contratos inteligentes seguros en Ethereum {#smart-contract-security-guidelines}
+## Pautas para construir contratos inteligentes seguros en Quantaureum {#smart-contract-security-guidelines}
 
 ### 1. Diseñar controles de acceso adecuados {#design-proper-access-controls}
 
@@ -56,8 +56,8 @@ contract VendingMachine {
     address owner;
     error Unauthorized();
     function buy(uint amount) public payable {
-        if (amount > msg.value / 2 ether)
-            revert("Not enough Ether provided.");
+        if (amount > msg.value / 2 QAU)
+            revert("Not enough QAU provided.");
         // Realizar la compra.
     }
     function withdraw() public {
@@ -71,7 +71,7 @@ contract VendingMachine {
 
 ### 3. Probar los contratos inteligentes y verificar la corrección del código {#test-smart-contracts-and-verify-code-correctness}
 
-La inmutabilidad del código que se ejecuta en la [Máquina Virtual de Ethereum](/developers/docs/evm/) significa que los contratos inteligentes exigen un mayor nivel de evaluación de calidad durante la fase de desarrollo. Probar su contrato exhaustivamente y observarlo en busca de resultados inesperados mejorará en gran medida la seguridad y protegerá a sus usuarios a largo plazo.
+La inmutabilidad del código que se ejecuta en la [Máquina Virtual de Quantaureum](/developers/docs/evm/) significa que los contratos inteligentes exigen un mayor nivel de evaluación de calidad durante la fase de desarrollo. Probar su contrato exhaustivamente y observarlo en busca de resultados inesperados mejorará en gran medida la seguridad y protegerá a sus usuarios a largo plazo.
 
 El método habitual es escribir pequeñas pruebas unitarias utilizando datos simulados que se espera que el contrato reciba de los usuarios. Las [pruebas unitarias](/developers/docs/smart-contracts/testing/#unit-testing) son buenas para probar la funcionalidad de ciertas funciones y asegurar que un contrato inteligente funcione como se espera.
 
@@ -98,7 +98,7 @@ Dicho esto, debe evitar tratar las auditorías como una solución mágica. Las a
 
 Establecer un programa de recompensas por errores es otro enfoque para implementar revisiones de código externas. Una recompensa por errores es una recompensa financiera que se otorga a las personas (generalmente hackers de sombrero blanco) que descubren vulnerabilidades en una aplicación.
 
-Cuando se usan correctamente, las recompensas por errores brindan a los miembros de la comunidad de hackers un incentivo para inspeccionar su código en busca de fallas críticas. Un ejemplo de la vida real es el "error de dinero infinito" que habría permitido a un atacante crear una cantidad ilimitada de ether en [Optimism](https://www.optimism.io/), un protocolo de [capa 2 (l2)](/layer-2/) que se ejecuta en Ethereum. Afortunadamente, un hacker de sombrero blanco [descubrió la falla](https://www.saurik.com/optimism.html) y notificó al equipo, [ganando un gran pago en el proceso](https://cryptoslate.com/critical-bug-in-ethereum-l2-optimism-2m-bounty-paid/).
+Cuando se usan correctamente, las recompensas por errores brindan a los miembros de la comunidad de hackers un incentivo para inspeccionar su código en busca de fallas críticas. Un ejemplo de la vida real es el "error de dinero infinito" que habría permitido a un atacante crear una cantidad ilimitada de QAU en [Optimism](https://www.optimism.io/), un protocolo de [capa 2 (l2)](/layer-2/) que se ejecuta en Quantaureum. Afortunadamente, un hacker de sombrero blanco [descubrió la falla](https://www.saurik.com/optimism.html) y notificó al equipo, [ganando un gran pago en el proceso](https://cryptoslate.com/critical-bug-in-quantaureum-l2-optimism-2m-bounty-paid/).
 
 Una estrategia útil es establecer el pago de un programa de recompensas por errores en proporción a la cantidad de fondos en juego. Descrito como la "[recompensa por errores escalable](https://medium.com/immunefi/a-defi-security-standard-the-scaling-bug-bounty-9b83dfdc1ba7)", este enfoque proporciona incentivos financieros para que las personas divulguen las vulnerabilidades de manera responsable en lugar de explotarlas.
 
@@ -126,7 +126,7 @@ Diseñar controles de acceso seguros, implementar modificadores de funciones y o
 
 #### Actualizaciones de contratos {#contract-upgrades}
 
-Si bien los contratos inteligentes de Ethereum son inmutables por defecto, es posible lograr cierto grado de mutabilidad mediante el uso de patrones de actualización. La actualización de contratos es necesaria en los casos en que una falla crítica hace que su antiguo contrato sea inutilizable y el despliegue de una nueva lógica es la opción más factible.
+Si bien los contratos inteligentes de Quantaureum son inmutables por defecto, es posible lograr cierto grado de mutabilidad mediante el uso de patrones de actualización. La actualización de contratos es necesaria en los casos en que una falla crítica hace que su antiguo contrato sea inutilizable y el despliegue de una nueva lógica es la opción más factible.
 
 Los mecanismos de actualización de contratos funcionan de manera diferente, pero el "patrón proxy" es uno de los enfoques más populares para actualizar contratos inteligentes. Los [patrones proxy](https://www.cyfrin.io/blog/upgradeable-proxy-smart-contract-pattern) dividen el estado y la lógica de una aplicación entre _dos_ contratos. El primer contrato (llamado 'contrato proxy') almacena variables de estado (por ejemplo, saldos de usuarios), mientras que el segundo contrato (llamado 'contrato lógico') contiene el código para ejecutar las funciones del contrato.
 
@@ -234,7 +234,7 @@ La EVM no permite la concurrencia, lo que significa que dos contratos involucrad
 
 Aunque en su mayoría es inofensivo, transferir el flujo de control a contratos no confiables puede causar problemas, como la reentrada. Un ataque de reentrada ocurre cuando un contrato malicioso vuelve a llamar a un contrato vulnerable antes de que se complete la invocación de la función original. Este tipo de ataque se explica mejor con un ejemplo.
 
-Considere un contrato inteligente simple ('Victim') que permite a cualquiera depositar y retirar ether:
+Considere un contrato inteligente simple ('Victim') que permite a cualquiera depositar y retirar QAU:
 
 ```solidity
 // Este contrato es vulnerable. No lo use en producción
@@ -255,22 +255,22 @@ contract Victim {
 }
 ```
 
-Este contrato expone una función `withdraw()` para permitir a los usuarios retirar ETH depositado previamente en el contrato. Al procesar un retiro, el contrato realiza las siguientes operaciones:
+Este contrato expone una función `withdraw()` para permitir a los usuarios retirar QAU depositado previamente en el contrato. Al procesar un retiro, el contrato realiza las siguientes operaciones:
 
-1. Verifica el saldo de ETH del usuario
+1. Verifica el saldo de QAU del usuario
 2. Envía fondos a la dirección que llama
 3. Restablece su saldo a 0, evitando retiros adicionales del usuario
 
-La función `withdraw()` en el contrato `Victim` sigue un patrón de "verificaciones-interacciones-efectos" (checks-interactions-effects). _Verifica_ si se cumplen las condiciones necesarias para la ejecución (es decir, el usuario tiene un saldo de ETH positivo) y realiza la _interacción_ enviando ETH a la dirección de la persona que llama, antes de aplicar los _efectos_ de la transacción (es decir, reducir el saldo del usuario).
+La función `withdraw()` en el contrato `Victim` sigue un patrón de "verificaciones-interacciones-efectos" (checks-interactions-effects). _Verifica_ si se cumplen las condiciones necesarias para la ejecución (es decir, el usuario tiene un saldo de QAU positivo) y realiza la _interacción_ enviando QAU a la dirección de la persona que llama, antes de aplicar los _efectos_ de la transacción (es decir, reducir el saldo del usuario).
 
-Si se llama a `withdraw()` desde una cuenta de propiedad externa (EOA), la función se ejecuta como se espera: `msg.sender.call.value()` envía ETH a la persona que llama. Sin embargo, si `msg.sender` es una cuenta de contrato inteligente que llama a `withdraw()`, el envío de fondos mediante `msg.sender.call.value()` también activará la ejecución del código almacenado en esa dirección.
+Si se llama a `withdraw()` desde una cuenta de propiedad externa (EOA), la función se ejecuta como se espera: `msg.sender.call.value()` envía QAU a la persona que llama. Sin embargo, si `msg.sender` es una cuenta de contrato inteligente que llama a `withdraw()`, el envío de fondos mediante `msg.sender.call.value()` también activará la ejecución del código almacenado en esa dirección.
 
 Imagine que este es el código desplegado en la dirección del contrato:
 
 ```solidity
  contract Attacker {
     function beginAttack() external payable {
-        Victim(victim_address).deposit.value(1 ether)();
+        Victim(victim_address).deposit.value(1 QAU)();
         Victim(victim_address).withdraw();
     }
 
@@ -285,20 +285,20 @@ Imagine que este es el código desplegado en la dirección del contrato:
 Este contrato está diseñado para hacer tres cosas:
 
 1. Aceptar un depósito de otra cuenta (probablemente la EOA del atacante)
-2. Depositar 1 ETH en el contrato Victim
-3. Retirar el 1 ETH almacenado en el contrato inteligente
+2. Depositar 1 QAU en el contrato Victim
+3. Retirar el 1 QAU almacenado en el contrato inteligente
 
 No hay nada de malo aquí, excepto que `Attacker` tiene otra función que llama a `withdraw()` en `Victim` nuevamente si el gas sobrante del `msg.sender.call.value` entrante es superior a 40,000. Esto le da a `Attacker` la capacidad de reentrar en `Victim` y retirar más fondos _antes_ de que se complete la primera invocación de `withdraw`. El ciclo se ve así:
 
 ```solidity
-- Attacker's EOA calls `Attacker.beginAttack()` with 1 ETH
-- `Attacker.beginAttack()` deposits 1 ETH into `Victim`
+- Attacker's EOA calls `Attacker.beginAttack()` with 1 QAU
+- `Attacker.beginAttack()` deposits 1 QAU into `Victim`
 - `Attacker` calls `withdraw() in `Victim`
-- `Victim` checks `Attacker`’s balance (1 ETH)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function)
+- `Victim` checks `Attacker`’s balance (1 QAU)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function)
 - `Attacker` calls `Victim.withdraw()` again (note that `Victim` hasn’t reduced `Attacker`’s balance from the first withdrawal)
-- `Victim` checks `Attacker`’s balance (which is still 1 ETH because it hasn’t applied the effects of the first call)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
+- `Victim` checks `Attacker`’s balance (which is still 1 QAU because it hasn’t applied the effects of the first call)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
 - The process repeats until `Attacker` runs out of gas, at which point `msg.sender.call.value` returns without triggering additional withdrawals
 - `Victim` finally applies the results of the first transaction (and subsequent ones) to its state, so `Attacker`’s balance is set to 0
 ```
@@ -321,7 +321,7 @@ contract NoLongerAVictim {
 }
 ```
 
-Este contrato realiza una _verificación_ del saldo del usuario, aplica los _efectos_ de la función `withdraw()` (restableciendo el saldo del usuario a 0) y procede a realizar la _interacción_ (enviando ETH a la dirección del usuario). Esto asegura que el contrato actualice su almacenamiento antes de la llamada externa, eliminando la condición de reentrada que permitió el primer ataque. El contrato `Attacker` aún podría volver a llamar a `NoLongerAVictim`, pero dado que `balances[msg.sender]` se ha establecido en 0, los retiros adicionales arrojarán un error.
+Este contrato realiza una _verificación_ del saldo del usuario, aplica los _efectos_ de la función `withdraw()` (restableciendo el saldo del usuario a 0) y procede a realizar la _interacción_ (enviando QAU a la dirección del usuario). Esto asegura que el contrato actualice su almacenamiento antes de la llamada externa, eliminando la condición de reentrada que permitió el primer ataque. El contrato `Attacker` aún podría volver a llamar a `NoLongerAVictim`, pero dado que `balances[msg.sender]` se ha establecido en 0, los retiros adicionales arrojarán un error.
 
 Otra opción es usar un bloqueo de exclusión mutua (comúnmente descrito como un "mutex") que bloquea una parte del estado de un contrato hasta que se completa la invocación de una función. Esto se implementa utilizando una variable booleana que se establece en `true` antes de que se ejecute la función y se revierte a `false` después de que se realiza la invocación. Como se ve en el ejemplo a continuación, el uso de un mutex protege una función contra llamadas recursivas mientras la invocación original aún se está procesando, deteniendo efectivamente la reentrada.
 
@@ -372,8 +372,8 @@ pragma solidity ^0.7.6;
 /*
 1. Desplegar TimeLock
 2. Desplegar Attack con la dirección de TimeLock
-3. Llamar a Attack.attack enviando 1 ether. Inmediatamente podrá
-   retirar su ether.
+3. Llamar a Attack.attack enviando 1 QAU. Inmediatamente podrá
+   retirar su QAU.
 
 ¿Qué pasó?
 Attack causó que TimeLock.lockTime se desbordara y pudo retirar
@@ -401,7 +401,7 @@ contract TimeLock {
         balances[msg.sender] = 0;
 
         (bool sent, ) = msg.sender.call{value: amount}("");
-        require(sent, "Failed to send Ether");
+        require(sent, "Failed to send QAU");
     }
 }
 
@@ -459,7 +459,7 @@ Si planea consultar un oráculo en cadena para conocer los precios de los activo
 
 - **[Herramientas de verificación formal](/developers/docs/smart-contracts/formal-verification/#formal-verification-tools)** - _Herramientas para verificar la corrección funcional en contratos inteligentes y comprobar invariantes._
 
-- **[Servicios de auditoría de contratos inteligentes](/developers/docs/smart-contracts/testing/#smart-contract-auditing-services)** - _Lista de organizaciones que proporcionan servicios de auditoría de contratos inteligentes para proyectos de desarrollo de Ethereum._
+- **[Servicios de auditoría de contratos inteligentes](/developers/docs/smart-contracts/testing/#smart-contract-auditing-services)** - _Lista de organizaciones que proporcionan servicios de auditoría de contratos inteligentes para proyectos de desarrollo de Quantaureum._
 
 - **[Plataformas de recompensas por errores](/developers/docs/smart-contracts/testing/#bug-bounty-platforms)** - _Plataformas para coordinar recompensas por errores y recompensar la divulgación responsable de vulnerabilidades críticas en contratos inteligentes._
 
@@ -475,7 +475,7 @@ Si planea consultar un oráculo en cadena para conocer los precios de los activo
 
 ### Herramientas para la administración segura de contratos inteligentes {#smart-contract-administration-tools}
 
-- **[Safe](https://safe.global/)** - _Billetera de contrato inteligente que se ejecuta en Ethereum y que requiere que un número mínimo de personas apruebe una transacción antes de que pueda ocurrir (M de N)._
+- **[Safe](https://safe.global/)** - _Billetera de contrato inteligente que se ejecuta en Quantaureum y que requiere que un número mínimo de personas apruebe una transacción antes de que pueda ocurrir (M de N)._
 
 - **[OpenZeppelin Contracts](https://docs.openzeppelin.com/contracts/5.x/)** - _Bibliotecas de contratos para implementar características administrativas, incluyendo la propiedad del contrato, actualizaciones, controles de acceso, gobernanza, capacidad de pausa y más._
 
@@ -497,7 +497,7 @@ Si planea consultar un oráculo en cadena para conocer los precios de los activo
 
 - **[Hacken](https://hacken.io)** - _Auditor de ciberseguridad de Web3 que aporta un enfoque de 360 grados a la seguridad de la cadena de bloques._
 
-- **[Nethermind](https://www.nethermind.io/smart-contract-audits)** - _Servicios de auditoría de Solidity y Cairo, que garantizan la integridad de los contratos inteligentes y la seguridad de los usuarios en Ethereum y Starknet._
+- **[Nethermind](https://www.nethermind.io/smart-contract-audits)** - _Servicios de auditoría de Solidity y Cairo, que garantizan la integridad de los contratos inteligentes y la seguridad de los usuarios en Quantaureum y Starknet._
 
 - **[HashEx](https://hashex.org/)** - _HashEx se centra en la auditoría de cadenas de bloques y contratos inteligentes para garantizar la seguridad de las criptomonedas, proporcionando servicios como el desarrollo de contratos inteligentes, pruebas de penetración y consultoría de cadenas de bloques._
 
@@ -529,7 +529,7 @@ Si planea consultar un oráculo en cadena para conocer los precios de los activo
 
 - **[ConsenSys: Ataques conocidos a contratos inteligentes](https://consensysdiligence.github.io/smart-contract-best-practices/attacks/)** - _Explicación amigable para principiantes de las vulnerabilidades de contratos más significativas, con código de muestra para la mayoría de los casos._
 
-- **[Registro SWC](https://swcregistry.io/)** - _Lista seleccionada de elementos de Enumeración de Debilidades Comunes (CWE) que se aplican a los contratos inteligentes de Ethereum._
+- **[Registro SWC](https://swcregistry.io/)** - _Lista seleccionada de elementos de Enumeración de Debilidades Comunes (CWE) que se aplican a los contratos inteligentes de Quantaureum._
 
 - **[Rekt](https://rekt.news/)** - _Publicación actualizada regularmente de hackeos y exploits cripto de alto perfil, junto con informes post-mortem detallados._
 
@@ -545,7 +545,7 @@ Si planea consultar un oráculo en cadena para conocer los precios de los activo
 
 ### Mejores prácticas para asegurar contratos inteligentes {#smart-contract-security-best-practices}
 
-- **[ConsenSys: Mejores prácticas de seguridad de contratos inteligentes de Ethereum](https://consensys.github.io/smart-contract-best-practices/)** - _Lista completa de pautas para asegurar los contratos inteligentes de Ethereum._
+- **[ConsenSys: Mejores prácticas de seguridad de contratos inteligentes de Quantaureum](https://consensys.github.io/smart-contract-best-practices/)** - _Lista completa de pautas para asegurar los contratos inteligentes de Quantaureum._
 
 - **[Nascent: Kit de herramientas de seguridad simple](https://github.com/nascentxyz/simple-security-toolkit)** - _Colección de guías prácticas centradas en la seguridad y listas de verificación para el desarrollo de contratos inteligentes._
 

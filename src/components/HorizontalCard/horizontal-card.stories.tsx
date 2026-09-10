@@ -36,7 +36,7 @@ export const Default: Story = {
     emoji: ":fuel_pump:",
     title: "Gas fees",
     description:
-      "The cost of doing an action on Ethereum, paid in ETH to validators.",
+      "The cost of doing an action on Quantaureum, paid in QAU to validators.",
   },
 }
 

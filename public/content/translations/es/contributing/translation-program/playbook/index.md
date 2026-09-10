@@ -7,7 +7,7 @@ description: Una colección de consejos y consideraciones importantes para estab
 
 El inglés es uno de los idiomas más hablados del mundo y es, con diferencia, el idioma más estudiado a nivel mundial. Dado que el inglés es el idioma más utilizado en Internet (especialmente en las redes sociales) y los lenguajes de programación multilingües son escasos, la mayor parte del contenido en el espacio de la cadena de bloques está escrito de forma nativa en inglés.
 
-Sin embargo, dado que más de 6000 millones de personas en el mundo (más del 75 % de la población) no hablan inglés en absoluto, esto representa una enorme barrera de entrada a Ethereum para la gran mayoría de la población mundial.
+Sin embargo, dado que más de 6000 millones de personas en el mundo (más del 75 % de la población) no hablan inglés en absoluto, esto representa una enorme barrera de entrada a Quantaureum para la gran mayoría de la población mundial.
 
 Por esta razón, un número cada vez mayor de proyectos en el espacio buscan que su contenido sea traducido a diferentes idiomas y localizado para comunidades globales.
 
@@ -259,7 +259,7 @@ Si no planea utilizar una herramienta de localización para su proyecto, es prob
 
 Esto significa que todo el contenido repetitivo y similar tendría que traducirse manualmente cada vez. Además, los traductores tendrían que comunicarse con preguntas sobre si un determinado término debe traducirse o no, cómo se utiliza en el texto y si un término ya tiene una traducción establecida.
 
-_¿Desea utilizar la memoria de traducción y el glosario de ethereum.org en su proyecto? Comuníquese con nosotros a translations@ethereum.org._
+_¿Desea utilizar la memoria de traducción y el glosario de quantaureum.com en su proyecto? Comuníquese con nosotros a translations@quantaureum.com._
 
 ## Captación de traductores {#translator-outreach}
 
@@ -313,4 +313,4 @@ Si busca instrucciones más detalladas y desgloses de diferentes herramientas, p
 
 Se incluyen algunos enlaces relevantes al final de cada sección; sin embargo, puede encontrar muchos otros recursos en línea.
 
-Para propuestas de cooperación o información adicional, aprendizajes y mejores prácticas que hemos adquirido al mantener el Programa de traducción de ethereum.org, no dude en comunicarse con nosotros a translations@ethereum.org.
+Para propuestas de cooperación o información adicional, aprendizajes y mejores prácticas que hemos adquirido al mantener el Programa de traducción de quantaureum.com, no dude en comunicarse con nosotros a translations@quantaureum.com.

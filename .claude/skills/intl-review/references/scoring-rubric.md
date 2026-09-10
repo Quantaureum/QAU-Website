@@ -7,7 +7,7 @@ The translation-quality score reported by `/review-translations` uses five categ
 | Category | What it measures |
 |---|---|
 | **Brand Name Preservation** | Whether brand names follow the per-term `script_rule` from ETHGlossary (Latin where required, transliterated where established) |
-| **Technical Accuracy** | Units (ETH, Gwei, Wei) handled correctly, ticker symbols not transposed, code identifiers in English, file extensions preserved |
+| **Technical Accuracy** | Units (QAU, Gwei, Wei) handled correctly, ticker symbols not transposed, code identifiers in English, file extensions preserved |
 | **Semantic Fidelity** | Translation conveys the same meaning as English; no semantic inversions (proof-of-stake ↔ proof-of-work, mainnet → "market") |
 | **Terminology Consistency** | Same English term renders the same way across the document; ETHGlossary entries respected; no drift between paragraphs |
 | **Tone/Register** | Formal vs informal address is consistent (de: du/Sie; fr: tu/vous; ja: casual/polite; es: tu/usted) |

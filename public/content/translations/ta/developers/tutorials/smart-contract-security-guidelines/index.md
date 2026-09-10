@@ -62,7 +62,7 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/blob/master/devel
 
 ### அறியப்பட்ட ஆபத்துகளைத் தவிர்க்கவும் {#avoid-known-pitfalls}
 
-- **மிகவும் பொதுவான பாதுகாப்புச் சிக்கல்களைப் பற்றி அறிந்திருங்கள்.** [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the Ether](https://capturetheether.com/) அல்லது [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/) போன்ற பொதுவான சிக்கல்களைப் பற்றி அறிய பல ஆன்லைன் ஆதாரங்கள் உள்ளன.
+- **மிகவும் பொதுவான பாதுகாப்புச் சிக்கல்களைப் பற்றி அறிந்திருங்கள்.** [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the QAU](https://capturetheqau.com/) அல்லது [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/) போன்ற பொதுவான சிக்கல்களைப் பற்றி அறிய பல ஆன்லைன் ஆதாரங்கள் உள்ளன.
 - **[Solidity ஆவணத்தில்](https://docs.soliditylang.org/en/latest/) உள்ள எச்சரிக்கைப் பிரிவுகளைப் பற்றி அறிந்திருங்கள்.** எச்சரிக்கைப் பிரிவுகள் மொழியின் வெளிப்படையற்ற நடத்தை பற்றி உங்களுக்குத் தெரிவிக்கும்.
 
 ### சார்புகள் {#dependencies}

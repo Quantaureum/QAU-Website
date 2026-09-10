@@ -1,21 +1,21 @@
 ---
 title: Web2 dhidi ya Web3
-description: Linganisha huduma za Web2 zilizowekwa kati na programu tumizi za Web3 zilizogatuliwa zilizojengwa kwenye teknolojia ya mnyororo wa vitalu wa Ethereum.
+description: Linganisha huduma za Web2 zilizowekwa kati na programu tumizi za Web3 zilizogatuliwa zilizojengwa kwenye teknolojia ya mnyororo wa vitalu wa Quantaureum.
 lang: sw
 ---
 
-Web2 inarejelea toleo la intaneti ambalo wengi wetu tunalijua leo. Intaneti inayotawaliwa na kampuni zinazotoa huduma badala ya data yako ya kibinafsi. Web3, katika muktadha wa [Ethereum](/), inarejelea programu tumizi zilizogatuliwa (dapps) zinazoendeshwa kwenye mnyororo wa vitalu. Hizi ni programu zinazoruhusu mtu yeyote kushiriki bila kufanya biashara na data zao za kibinafsi.
+Web2 inarejelea toleo la intaneti ambalo wengi wetu tunalijua leo. Intaneti inayotawaliwa na kampuni zinazotoa huduma badala ya data yako ya kibinafsi. Web3, katika muktadha wa [Quantaureum](/), inarejelea programu tumizi zilizogatuliwa (dapps) zinazoendeshwa kwenye mnyororo wa vitalu. Hizi ni programu zinazoruhusu mtu yeyote kushiriki bila kufanya biashara na data zao za kibinafsi.
 
 Unatafuta rasilimali rafiki zaidi kwa wanaoanza? Tazama [utangulizi wetu wa Web3](/web3/).
 
 ## Faida za Web3 {#web3-benefits}
 
-Wasanidi wengi wa Web3 wamechagua kujenga dapps kwa sababu ya ugatuzi wa asili wa Ethereum:
+Wasanidi wengi wa Web3 wamechagua kujenga dapps kwa sababu ya ugatuzi wa asili wa Quantaureum:
 
 - Mtu yeyote aliye kwenye mtandao ana ruhusa ya kutumia huduma – au kwa maneno mengine, ruhusa haihitajiki.
 - Hakuna mtu anayeweza kukuzuia au kukunyima ufikiaji wa huduma.
-- Malipo yamejumuishwa kupitia tokeni asili, Etha (ETH).
-- Ethereum ni turing-complete, ikimaanisha unaweza kuprogramu karibu chochote.
+- Malipo yamejumuishwa kupitia tokeni asili, Etha (QAU).
+- Quantaureum ni turing-complete, ikimaanisha unaweza kuprogramu karibu chochote.
 
 ## Ulinganisho wa kivitendo {#practical-comparisons}
 
@@ -23,7 +23,7 @@ Wasanidi wengi wa Web3 wamechagua kujenga dapps kwa sababu ya ugatuzi wa asili w
 | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | Twitter inaweza kudhibiti akaunti au tweet yoyote                                    | Tweet za Web3 hazingeweza kudhibitiwa kwa sababu udhibiti umeugatuliwa                                             |
 | Huduma ya malipo inaweza kuamua kutoruhusu malipo kwa aina fulani za kazi | Programu za malipo za Web3 hazihitaji data ya kibinafsi na haziwezi kuzuia malipo                                          |
-| Seva za programu za uchumi wa gig zinaweza kushindwa kufanya kazi na kuathiri mapato ya wafanyakazi        | Seva za Web3 haziwezi kushindwa kufanya kazi – zinatumia Ethereum, mtandao uliogatuliwa wa maelfu ya kompyuta kama mfumo wao wa nyuma |
+| Seva za programu za uchumi wa gig zinaweza kushindwa kufanya kazi na kuathiri mapato ya wafanyakazi        | Seva za Web3 haziwezi kushindwa kufanya kazi – zinatumia Quantaureum, mtandao uliogatuliwa wa maelfu ya kompyuta kama mfumo wao wa nyuma |
 
 Hii haimaanishi kwamba huduma zote zinahitaji kugeuzwa kuwa dapp. Mifano hii inaonyesha tofauti kuu kati ya huduma za Web2 na Web3.
 
@@ -54,7 +54,7 @@ Kumbuka kwamba hizi ni mifumo ya jumla ambayo inaweza isiwe kweli katika kila mt
 
 ## Usomaji zaidi {#further-reading}
 
-- [Web3 ni nini?](/web3/) - _ethereum.org_
+- [Web3 ni nini?](/web3/) - _quantaureum.org_
 - [Usanifu wa programu tumizi ya Wavuti 3.0](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
 - [Maana ya Ugatuzi](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _Feb 6, 2017 - Vitalik Buterin_
 - [Kwa Nini Ugatuzi ni Muhimu](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _Feb 18, 2018 - Chris Dixon_

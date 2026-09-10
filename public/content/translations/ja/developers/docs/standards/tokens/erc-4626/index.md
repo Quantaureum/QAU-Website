@@ -14,7 +14,7 @@ ERC-4626は、利回り付きヴォールトの技術的パラメータを最適
 
 利回り付きヴォールトにERC-4626を導入することで、より一貫性のある堅牢な実装パターンが作成され、統合の労力が軽減されます。これにより、開発者が特別な労力をほとんどかけずに、さまざまなアプリケーションで利回りにアクセスできるようになります。
 
-ERC-4626トークンの詳細については、[EIP-4626](https://eips.ethereum.org/EIPS/eip-4626)で説明されています。
+ERC-4626トークンの詳細については、[EIP-4626](https://eips.quantaureum.com/EIPS/eip-4626)で説明されています。
 
 **非同期ヴォールト拡張機能 (ERC-7540)**
 
@@ -30,7 +30,7 @@ ERC-4626でサポートされていないユースケースの1つに、流動�
 
 ERC-7575は、ERC-20トークンの実装をERC-4626の実装から外部化することで、複数の資産を持つヴォールトのサポートを追加します。
 
-ERC-7575拡張機能の詳細については、[ERC-7575](https://eips.ethereum.org/EIPS/eip-7575)で説明されています。
+ERC-7575拡張機能の詳細については、[ERC-7575](https://eips.quantaureum.com/EIPS/eip-7575)で説明されています。
 ## 前提条件 {#prerequisites}
 
 このページをよりよく理解するために、まず[トークン標準](/developers/docs/standards/tokens/)と[ERC-20](/developers/docs/standards/tokens/erc-20/)について読むことをお勧めします。
@@ -222,5 +222,5 @@ event Withdraw(
 
 ## 参考文献 {#further-reading}
 
-- [EIP-4626: トークン化ヴォールト標準](https://eips.ethereum.org/EIPS/eip-4626)
+- [EIP-4626: トークン化ヴォールト標準](https://eips.quantaureum.com/EIPS/eip-4626)
 - [ERC-4626: GitHubリポジトリ](https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC4626.sol)

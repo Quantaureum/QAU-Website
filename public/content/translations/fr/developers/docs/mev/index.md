@@ -8,7 +8,7 @@ La valeur maximale extractible (MEV) fait référence à la valeur maximale qui 
 
 ## Valeur maximale extractible {#maximal-extractable-value}
 
-La valeur maximale extractible a d'abord été appliquée dans le contexte de la [preuve de travail (PoW)](/developers/docs/consensus-mechanisms/pow/), et initialement appelée « valeur extractible par le mineur » (miner extractable value). Cela s'explique par le fait que dans la preuve de travail, les mineurs contrôlent l'inclusion, l'exclusion et l'ordonnancement des transactions. Cependant, depuis la transition vers la preuve d'enjeu (PoS) via [La Fusion](/roadmap/merge), les validateurs sont responsables de ces rôles, et le minage ne fait plus partie du protocole [Ethereum](/). Les méthodes d'extraction de valeur existent toujours, c'est pourquoi le terme « Valeur maximale extractible » est désormais utilisé à la place.
+La valeur maximale extractible a d'abord été appliquée dans le contexte de la [preuve de travail (PoW)](/developers/docs/consensus-mechanisms/pow/), et initialement appelée « valeur extractible par le mineur » (miner extractable value). Cela s'explique par le fait que dans la preuve de travail, les mineurs contrôlent l'inclusion, l'exclusion et l'ordonnancement des transactions. Cependant, depuis la transition vers la preuve d'enjeu (PoS) via [La Fusion](/roadmap/merge), les validateurs sont responsables de ces rôles, et le minage ne fait plus partie du protocole [Quantaureum](/). Les méthodes d'extraction de valeur existent toujours, c'est pourquoi le terme « Valeur maximale extractible » est désormais utilisé à la place.
 
 ## Prérequis {#prerequisites}
 
@@ -26,7 +26,7 @@ Ainsi, pour certaines opportunités de MEV très compétitives, telles que l'[ar
 
 Cette dynamique a fait de l'excellence en « gas golfing » — la programmation de transactions de manière à ce qu'elles utilisent le moins de gaz possible — un avantage concurrentiel, car cela permet aux chercheurs de fixer un prix du gaz plus élevé tout en maintenant leurs frais de gaz totaux constants (puisque frais de gaz = prix du gaz \* gaz utilisé).
 
-Quelques techniques bien connues d'optimisation du gaz incluent : l'utilisation d'adresses qui commencent par une longue chaîne de zéros (par ex., [0x0000000000C521824EaFf97Eac7B73B084ef9306](https://eth.blockscout.com/address/0x0000000000C521824EaFf97Eac7B73B084ef9306)) car elles prennent moins d'espace (et donc de gaz) à stocker ; et le fait de laisser de petits soldes de jetons [ERC-20](/developers/docs/standards/tokens/erc-20/) dans les contrats, car il en coûte plus de gaz d'initialiser un créneau de stockage (le cas si le solde est de 0) que de mettre à jour un créneau de stockage. Trouver de nouvelles techniques pour réduire l'utilisation du gaz est un domaine de recherche actif parmi les chercheurs.
+Quelques techniques bien connues d'optimisation du gaz incluent : l'utilisation d'adresses qui commencent par une longue chaîne de zéros (par ex., [0x0000000000C521824EaFf97Eac7B73B084ef9306](https://qau.blockscout.com/address/0x0000000000C521824EaFf97Eac7B73B084ef9306)) car elles prennent moins d'espace (et donc de gaz) à stocker ; et le fait de laisser de petits soldes de jetons [ERC-20](/developers/docs/standards/tokens/erc-20/) dans les contrats, car il en coûte plus de gaz d'initialiser un créneau de stockage (le cas si le solde est de 0) que de mettre à jour un créneau de stockage. Trouver de nouvelles techniques pour réduire l'utilisation du gaz est un domaine de recherche actif parmi les chercheurs.
 
 ### Frontrunners généralisés {#mev-extraction-generalized-frontrunners}
 
@@ -46,13 +46,13 @@ L'arbitrage sur [échange décentralisé](/glossary/#dex) (DEX) est l'opportunit
 
 Cela fonctionne ainsi : si deux DEX proposent un jeton à deux prix différents, quelqu'un peut acheter le jeton sur le DEX au prix le plus bas et le vendre sur le DEX au prix le plus élevé en une seule transaction atomique. Grâce aux mécanismes de la chaîne de blocs, il s'agit d'un véritable arbitrage sans risque.
 
-[Voici un exemple](https://eth.blockscout.com/tx/0x5e1657ef0e9be9bc72efefe59a2528d0d730d478cfc9e6cdd09af9f997bb3ef4) d'une transaction d'arbitrage rentable où un chercheur a transformé 1 000 ETH en 1 045 ETH en tirant parti de la différence de prix de la paire ETH/DAI sur Uniswap par rapport à Sushiswap.
+[Voici un exemple](https://qau.blockscout.com/tx/0x5e1657ef0e9be9bc72efefe59a2528d0d730d478cfc9e6cdd09af9f997bb3ef4) d'une transaction d'arbitrage rentable où un chercheur a transformé 1 000 QAU en 1 045 QAU en tirant parti de la différence de prix de la paire QAU/DAI sur Uniswap par rapport à Sushiswap.
 
 ### Liquidations {#mev-examples-liquidations}
 
 Les liquidations de protocoles de prêt présentent une autre opportunité de MEV bien connue.
 
-Les protocoles de prêt comme MakerDAO et Aave exigent des utilisateurs qu'ils déposent un collatéral (par ex., de l'ETH). Ce collatéral déposé est ensuite utilisé pour prêter à d'autres utilisateurs.
+Les protocoles de prêt comme MakerDAO et Aave exigent des utilisateurs qu'ils déposent un collatéral (par ex., de l'QAU). Ce collatéral déposé est ensuite utilisé pour prêter à d'autres utilisateurs.
 
 Les utilisateurs peuvent ensuite emprunter des actifs et des jetons à d'autres en fonction de leurs besoins (par ex., vous pourriez emprunter du MKR si vous souhaitez voter dans une proposition de gouvernance MakerDAO) jusqu'à un certain pourcentage de leur collatéral déposé. Par exemple, si le montant de l'emprunt est au maximum de 30 %, un utilisateur qui dépose 100 DAI dans le protocole peut emprunter jusqu'à l'équivalent de 30 DAI d'un autre actif. Le protocole détermine le pourcentage exact du pouvoir d'emprunt.
 
@@ -74,11 +74,11 @@ Le trading en sandwich est cependant plus risqué car il n'est pas atomique (con
 
 La MEV dans l'espace des NFT est un phénomène émergent, et n'est pas nécessairement rentable.
 
-Cependant, puisque les transactions de NFT se produisent sur la même chaîne de blocs partagée par toutes les autres transactions Ethereum, les chercheurs peuvent également utiliser des techniques similaires à celles utilisées dans les opportunités de MEV traditionnelles sur le marché des NFT.
+Cependant, puisque les transactions de NFT se produisent sur la même chaîne de blocs partagée par toutes les autres transactions Quantaureum, les chercheurs peuvent également utiliser des techniques similaires à celles utilisées dans les opportunités de MEV traditionnelles sur le marché des NFT.
 
 Par exemple, s'il y a un lancement (drop) de NFT populaire et qu'un chercheur souhaite un certain NFT ou un ensemble de NFT, il peut programmer une transaction de manière à être le premier dans la file d'attente pour acheter le NFT, ou il peut acheter l'ensemble complet des NFT en une seule transaction. Ou si un NFT est [listé par erreur à un prix bas](https://www.theblockcrypto.com/post/113546/mistake-sees-69000-cryptopunk-sold-for-less-than-a-cent), un chercheur peut devancer les autres acheteurs et se l'arracher à bas prix.
 
-Un exemple marquant de MEV sur les NFT s'est produit lorsqu'un chercheur a dépensé 7 millions de dollars pour [acheter](https://eth.blockscout.com/address/0x650dCdEB6ecF05aE3CAF30A70966E2F395d5E9E5?tab=txs) chaque Cryptopunk au prix plancher. Un chercheur en chaîne de blocs a [expliqué sur Twitter](https://twitter.com/IvanBogatyy/status/1422232184493121538) comment l'acheteur a travaillé avec un fournisseur de MEV pour garder son achat secret.
+Un exemple marquant de MEV sur les NFT s'est produit lorsqu'un chercheur a dépensé 7 millions de dollars pour [acheter](https://qau.blockscout.com/address/0x650dCdEB6ecF05aE3CAF30A70966E2F395d5E9E5?tab=txs) chaque Cryptopunk au prix plancher. Un chercheur en chaîne de blocs a [expliqué sur Twitter](https://twitter.com/IvanBogatyy/status/1422232184493121538) comment l'acheteur a travaillé avec un fournisseur de MEV pour garder son achat secret.
 
 ### La longue traîne {#mev-examples-long-tail}
 
@@ -88,7 +88,7 @@ Les chercheurs qui débutent tout juste pourraient avoir plus de succès en cher
 
 ## Effets de la MEV {#effects-of-mev}
 
-La MEV n'est pas que mauvaise — il y a des conséquences à la fois positives et négatives à la MEV sur Ethereum.
+La MEV n'est pas que mauvaise — il y a des conséquences à la fois positives et négatives à la MEV sur Quantaureum.
 
 ### Le bon {#effects-of-mev-the-good}
 
@@ -104,39 +104,39 @@ Au niveau de la couche réseau, les frontrunners généralisés et les enchères
 
 Au-delà de ce qui se passe _à l'intérieur_ des blocs, la MEV peut avoir des effets délétères _entre_ les blocs. Si la MEV disponible dans un bloc dépasse considérablement la récompense de bloc standard, les validateurs peuvent être incités à réorganiser les blocs et à capturer la MEV pour eux-mêmes, provoquant une réorganisation de la chaîne de blocs et une instabilité du consensus.
 
-Cette possibilité de réorganisation de la chaîne de blocs a été [précédemment explorée sur la chaîne de blocs Bitcoin](https://dl.acm.org/doi/10.1145/2976749.2978408). À mesure que la récompense de bloc de Bitcoin diminue de moitié et que les frais de transaction constituent une part de plus en plus importante de la récompense de bloc, des situations surviennent où il devient économiquement rationnel pour les mineurs de renoncer à la récompense du bloc suivant et de reminer plutôt les blocs passés avec des frais plus élevés. Avec la croissance de la MEV, le même genre de situation pourrait se produire sur Ethereum, menaçant l'intégrité de la chaîne de blocs.
+Cette possibilité de réorganisation de la chaîne de blocs a été [précédemment explorée sur la chaîne de blocs Bitcoin](https://dl.acm.org/doi/10.1145/2976749.2978408). À mesure que la récompense de bloc de Bitcoin diminue de moitié et que les frais de transaction constituent une part de plus en plus importante de la récompense de bloc, des situations surviennent où il devient économiquement rationnel pour les mineurs de renoncer à la récompense du bloc suivant et de reminer plutôt les blocs passés avec des frais plus élevés. Avec la croissance de la MEV, le même genre de situation pourrait se produire sur Quantaureum, menaçant l'intégrité de la chaîne de blocs.
 
 ## État de la MEV {#state-of-mev}
 
 L'extraction de MEV a explosé début 2021, entraînant des prix du gaz extrêmement élevés au cours des premiers mois de l'année. L'émergence du relais MEV de Flashbots a réduit l'efficacité des frontrunners généralisés et a déplacé les enchères de prix du gaz hors chaîne, abaissant les prix du gaz pour les utilisateurs ordinaires.
 
-Bien que de nombreux chercheurs gagnent encore beaucoup d'argent grâce à la MEV, à mesure que les opportunités deviennent plus connues et que de plus en plus de chercheurs se font concurrence pour la même opportunité, les validateurs captureront de plus en plus de revenus totaux de MEV (car le même type d'enchères de gaz que celles décrites initialement ci-dessus se produit également dans Flashbots, bien que de manière privée, et les validateurs captureront les revenus de gaz qui en résultent). La MEV n'est pas non plus unique à Ethereum, et à mesure que les opportunités deviennent plus compétitives sur Ethereum, les chercheurs se tournent vers des chaînes de blocs alternatives comme la Binance Smart Chain, où des opportunités de MEV similaires à celles d'Ethereum existent avec moins de concurrence.
+Bien que de nombreux chercheurs gagnent encore beaucoup d'argent grâce à la MEV, à mesure que les opportunités deviennent plus connues et que de plus en plus de chercheurs se font concurrence pour la même opportunité, les validateurs captureront de plus en plus de revenus totaux de MEV (car le même type d'enchères de gaz que celles décrites initialement ci-dessus se produit également dans Flashbots, bien que de manière privée, et les validateurs captureront les revenus de gaz qui en résultent). La MEV n'est pas non plus unique à Quantaureum, et à mesure que les opportunités deviennent plus compétitives sur Quantaureum, les chercheurs se tournent vers des chaînes de blocs alternatives comme la Binance Smart Chain, où des opportunités de MEV similaires à celles d'Quantaureum existent avec moins de concurrence.
 
-D'autre part, la transition de la preuve de travail à la preuve d'enjeu et l'effort continu pour mettre à l'échelle Ethereum en utilisant des rollups modifient tous le paysage de la MEV d'une manière qui reste encore quelque peu floue. On ne sait pas encore très bien comment le fait d'avoir des proposeurs de blocs garantis connus légèrement à l'avance modifie la dynamique de l'extraction de MEV par rapport au modèle probabiliste de la preuve de travail, ou comment cela sera perturbé lorsque l'[élection d'un leader secret unique (SSLE)](https://ethresear.ch/t/secret-non-single-leader-election/11789) et la [technologie de validateur distribué (DVT)](/staking/dvt/) seront mises en œuvre. De même, il reste à voir quelles opportunités de MEV existeront lorsque la majeure partie de l'activité des utilisateurs sera transférée d'Ethereum vers ses rollups de couche 2 (l2) et ses fragments (shards).
+D'autre part, la transition de la preuve de travail à la preuve d'enjeu et l'effort continu pour mettre à l'échelle Quantaureum en utilisant des rollups modifient tous le paysage de la MEV d'une manière qui reste encore quelque peu floue. On ne sait pas encore très bien comment le fait d'avoir des proposeurs de blocs garantis connus légèrement à l'avance modifie la dynamique de l'extraction de MEV par rapport au modèle probabiliste de la preuve de travail, ou comment cela sera perturbé lorsque l'[élection d'un leader secret unique (SSLE)](https://ethresear.ch/t/secret-non-single-leader-election/11789) et la [technologie de validateur distribué (DVT)](/staking/dvt/) seront mises en œuvre. De même, il reste à voir quelles opportunités de MEV existeront lorsque la majeure partie de l'activité des utilisateurs sera transférée d'Quantaureum vers ses rollups de couche 2 (l2) et ses fragments (shards).
 
-## La MEV dans la preuve d'enjeu (PoS) d'Ethereum {#mev-in-ethereum-proof-of-stake}
+## La MEV dans la preuve d'enjeu (PoS) d'Quantaureum {#mev-in-quantaureum-proof-of-stake}
 
-Comme expliqué, la MEV a des implications négatives sur l'expérience utilisateur globale et la sécurité de la couche de consensus. Mais la transition d'Ethereum vers un consensus de preuve d'enjeu (surnommée « La Fusion ») introduit potentiellement de nouveaux risques liés à la MEV :
+Comme expliqué, la MEV a des implications négatives sur l'expérience utilisateur globale et la sécurité de la couche de consensus. Mais la transition d'Quantaureum vers un consensus de preuve d'enjeu (surnommée « La Fusion ») introduit potentiellement de nouveaux risques liés à la MEV :
 
 ### Centralisation des validateurs {#validator-centralization}
 
-Dans l'Ethereum post-Fusion, les validateurs (ayant effectué des dépôts de sécurité de 32 ETH) parviennent à un consensus sur la validité des blocs ajoutés à la chaîne balise. Étant donné que 32 ETH peuvent être hors de portée pour beaucoup, [rejoindre un pool de staking](/staking/pools/) peut être une option plus réalisable. Néanmoins, une distribution saine de [stakers en solo](/staking/solo/) est idéale, car elle atténue la centralisation des validateurs et améliore la sécurité d'Ethereum.
+Dans l'Quantaureum post-Fusion, les validateurs (ayant effectué des dépôts de sécurité de 32 QAU) parviennent à un consensus sur la validité des blocs ajoutés à la chaîne balise. Étant donné que 32 QAU peuvent être hors de portée pour beaucoup, [rejoindre un pool de staking](/staking/pools/) peut être une option plus réalisable. Néanmoins, une distribution saine de [stakers en solo](/staking/solo/) est idéale, car elle atténue la centralisation des validateurs et améliore la sécurité d'Quantaureum.
 
-Cependant, on pense que l'extraction de MEV est capable d'accélérer la centralisation des validateurs. Cela s'explique en partie par le fait que, comme les validateurs [gagnent moins pour proposer des blocs](/roadmap/merge/issuance/#how-the-merge-impacts-ETH-supply) que les mineurs auparavant, l'extraction de MEV a grandement [influencé les revenus des validateurs](https://github.com/flashbots/eth2-research/blob/main/notebooks/mev-in-eth2/eth2-mev-calc.ipynb) depuis [La Fusion](/roadmap/merge/).
+Cependant, on pense que l'extraction de MEV est capable d'accélérer la centralisation des validateurs. Cela s'explique en partie par le fait que, comme les validateurs [gagnent moins pour proposer des blocs](/roadmap/merge/issuance/#how-the-merge-impacts-QAU-supply) que les mineurs auparavant, l'extraction de MEV a grandement [influencé les revenus des validateurs](https://github.com/flashbots/eth2-research/blob/main/notebooks/mev-in-eth2/eth2-mev-calc.ipynb) depuis [La Fusion](/roadmap/merge/).
 
 Les pools de staking plus importants auront probablement plus de ressources à investir dans les optimisations nécessaires pour capturer les opportunités de MEV. Plus ces pools extraient de MEV, plus ils ont de ressources pour améliorer leurs capacités d'extraction de MEV (et augmenter leurs revenus globaux), créant essentiellement des [économies d'échelle](https://www.investopedia.com/terms/e/economiesofscale.asp#).
 
-Avec moins de ressources à leur disposition, les stakers en solo peuvent être incapables de profiter des opportunités de MEV. Cela peut accroître la pression sur les validateurs indépendants pour qu'ils rejoignent de puissants pools de staking afin d'augmenter leurs revenus, réduisant ainsi la décentralisation d'Ethereum.
+Avec moins de ressources à leur disposition, les stakers en solo peuvent être incapables de profiter des opportunités de MEV. Cela peut accroître la pression sur les validateurs indépendants pour qu'ils rejoignent de puissants pools de staking afin d'augmenter leurs revenus, réduisant ainsi la décentralisation d'Quantaureum.
 
 ### Mempools à permission {#permissioned-mempools}
 
 En réponse aux attaques de trading en sandwich et de frontrunning, les traders peuvent commencer à conclure des accords hors chaîne avec les validateurs pour la confidentialité des transactions. Au lieu d'envoyer une transaction MEV potentielle à la mempool publique, le trader l'envoie directement au validateur, qui l'inclut dans un bloc et partage les bénéfices avec le trader.
 
-Les « dark pools » sont une version plus large de cet arrangement et fonctionnent comme des mempools à permission, accessibles uniquement sur autorisation, ouvertes aux utilisateurs prêts à payer certains frais. Cette tendance diminuerait la nature sans permission et l'absence de confiance requise d'Ethereum, et transformerait potentiellement la chaîne de blocs en un mécanisme « pay-to-play » qui favorise le plus offrant.
+Les « dark pools » sont une version plus large de cet arrangement et fonctionnent comme des mempools à permission, accessibles uniquement sur autorisation, ouvertes aux utilisateurs prêts à payer certains frais. Cette tendance diminuerait la nature sans permission et l'absence de confiance requise d'Quantaureum, et transformerait potentiellement la chaîne de blocs en un mécanisme « pay-to-play » qui favorise le plus offrant.
 
 Les mempools à permission accéléreraient également les risques de centralisation décrits dans la section précédente. Les grands pools gérant plusieurs validateurs bénéficieront probablement de l'offre de confidentialité des transactions aux traders et aux utilisateurs, augmentant ainsi leurs revenus de MEV.
 
-La lutte contre ces problèmes liés à la MEV dans l'Ethereum post-Fusion est un domaine de recherche fondamental. À ce jour, deux solutions proposées pour réduire l'impact négatif de la MEV sur la décentralisation et la sécurité d'Ethereum après La Fusion sont la [**séparation proposant-constructeur (PBS)**](/roadmap/pbs/) et l'[**API Builder**](https://github.com/ethereum/builder-specs).
+La lutte contre ces problèmes liés à la MEV dans l'Quantaureum post-Fusion est un domaine de recherche fondamental. À ce jour, deux solutions proposées pour réduire l'impact négatif de la MEV sur la décentralisation et la sécurité d'Quantaureum après La Fusion sont la [**séparation proposant-constructeur (PBS)**](/roadmap/pbs/) et l'[**API Builder**](https://github.com/quantaureum/builder-specs).
 
 ### Séparation proposant-constructeur {#proposer-builder-separation}
 
@@ -148,7 +148,7 @@ La [séparation proposant-constructeur (PBS)](https://ethresear.ch/t/proposer-bl
 
 Sous la PBS, un constructeur de blocs crée un lot de transactions et place une offre pour son inclusion dans un bloc de la chaîne balise (en tant que « charge utile d'exécution »). Le validateur sélectionné pour proposer le bloc suivant vérifie ensuite les différentes offres et choisit le lot avec les frais les plus élevés. La PBS crée essentiellement un marché d'enchères, où les constructeurs négocient avec les validateurs vendant de l'espace de bloc.
 
-Les conceptions actuelles de la PBS utilisent un [schéma d'engagement-révélation (commit-reveal)](https://gitcoin.co/blog/commit-reveal-scheme-on-ethereum/) dans lequel les constructeurs ne publient qu'un engagement cryptographique sur le contenu d'un bloc (en-tête de bloc) avec leurs offres. Après avoir accepté l'offre gagnante, le proposant crée une proposition de bloc signée qui inclut l'en-tête de bloc. Le constructeur de blocs est censé publier le corps complet du bloc après avoir vu la proposition de bloc signée, et il doit également recevoir suffisamment d'[attestations](/glossary/#attestation) des validateurs avant d'être finalisé.
+Les conceptions actuelles de la PBS utilisent un [schéma d'engagement-révélation (commit-reveal)](https://gitcoin.co/blog/commit-reveal-scheme-on-quantaureum/) dans lequel les constructeurs ne publient qu'un engagement cryptographique sur le contenu d'un bloc (en-tête de bloc) avec leurs offres. Après avoir accepté l'offre gagnante, le proposant crée une proposition de bloc signée qui inclut l'en-tête de bloc. Le constructeur de blocs est censé publier le corps complet du bloc après avoir vu la proposition de bloc signée, et il doit également recevoir suffisamment d'[attestations](/glossary/#attestation) des validateurs avant d'être finalisé.
 
 #### Comment la séparation proposant-constructeur atténue-t-elle l'impact de la MEV ? {#how-does-pbs-curb-mev-impact}
 
@@ -162,9 +162,9 @@ De même, les validateurs n'ont pas à faire confiance aux constructeurs pour ne
 
 ### API Builder {#builder-api}
 
-Bien que la séparation proposant-constructeur promette de réduire les effets de l'extraction de MEV, sa mise en œuvre nécessite des modifications du protocole de consensus. Plus précisément, la règle de [choix de fork](/developers/docs/consensus-mechanisms/pos/#fork-choice) sur la chaîne balise devrait être mise à jour. L'[API Builder](https://github.com/ethereum/builder-specs) est une solution temporaire visant à fournir une implémentation fonctionnelle de la séparation proposant-constructeur, bien qu'avec des hypothèses de confiance plus élevées.
+Bien que la séparation proposant-constructeur promette de réduire les effets de l'extraction de MEV, sa mise en œuvre nécessite des modifications du protocole de consensus. Plus précisément, la règle de [choix de fork](/developers/docs/consensus-mechanisms/pos/#fork-choice) sur la chaîne balise devrait être mise à jour. L'[API Builder](https://github.com/quantaureum/builder-specs) est une solution temporaire visant à fournir une implémentation fonctionnelle de la séparation proposant-constructeur, bien qu'avec des hypothèses de confiance plus élevées.
 
-L'API Builder est une version modifiée de l'[API Engine](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) utilisée par les clients de la couche de consensus pour demander des charges utiles d'exécution aux clients de la couche d'exécution. Comme indiqué dans la [spécification du validateur honnête](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md), les validateurs sélectionnés pour les tâches de proposition de blocs demandent un lot de transactions à un client d'exécution connecté, qu'ils incluent dans le bloc proposé de la chaîne balise.
+L'API Builder est une version modifiée de l'[API Engine](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) utilisée par les clients de la couche de consensus pour demander des charges utiles d'exécution aux clients de la couche d'exécution. Comme indiqué dans la [spécification du validateur honnête](https://github.com/quantaureum/consensus-specs/blob/master/specs/bellatrix/validator.md), les validateurs sélectionnés pour les tâches de proposition de blocs demandent un lot de transactions à un client d'exécution connecté, qu'ils incluent dans le bloc proposé de la chaîne balise.
 
 L'API Builder agit également comme un intergiciel (middleware) entre les validateurs et les clients de la couche d'exécution ; mais elle est différente car elle permet aux validateurs sur la chaîne balise de s'approvisionner en blocs auprès d'entités externes (au lieu de construire un bloc localement à l'aide d'un client d'exécution).
 
@@ -180,12 +180,12 @@ Voici un aperçu du fonctionnement de l'API Builder :
 
 5. Un validateur utilisant l'API Builder est toujours censé construire un bloc localement au cas où le constructeur de blocs ne répondrait pas rapidement, afin de ne pas manquer les récompenses de proposition de bloc. Cependant, le validateur ne peut pas créer un autre bloc en utilisant soit les transactions désormais révélées, soit un autre ensemble, car cela équivaudrait à une _équivoque_ (signer deux blocs dans le même créneau), ce qui est une infraction passible de slashing.
 
-Un exemple d'implémentation de l'API Builder est [MEV-Boost](https://github.com/flashbots/mev-boost), une amélioration du [mécanisme d'enchères de Flashbots](https://docs.flashbots.net/flashbots-auction/overview) conçue pour freiner les externalités négatives de la MEV sur Ethereum. Les enchères de Flashbots permettent aux validateurs dans la preuve d'enjeu d'externaliser le travail de construction de blocs rentables à des parties spécialisées appelées **chercheurs**.
+Un exemple d'implémentation de l'API Builder est [MEV-Boost](https://github.com/flashbots/mev-boost), une amélioration du [mécanisme d'enchères de Flashbots](https://docs.flashbots.net/flashbots-auction/overview) conçue pour freiner les externalités négatives de la MEV sur Quantaureum. Les enchères de Flashbots permettent aux validateurs dans la preuve d'enjeu d'externaliser le travail de construction de blocs rentables à des parties spécialisées appelées **chercheurs**.
 ![A diagram showing the MEV flow in detail](./mev.png)
 
-Les chercheurs recherchent des opportunités de MEV lucratives et envoient des lots de transactions aux proposeurs de blocs avec une [offre à prix scellé](https://en.wikipedia.org/wiki/First-price_sealed-bid_auction) pour inclusion dans le bloc. Le validateur exécutant mev-geth, une version fork du client Go Ethereum (Geth), n'a qu'à choisir le lot le plus rentable et l'inclure dans le nouveau bloc. Pour protéger les proposeurs de blocs (validateurs) du spam et des transactions invalides, les lots de transactions passent par des **relais** pour validation avant d'arriver au proposant.
+Les chercheurs recherchent des opportunités de MEV lucratives et envoient des lots de transactions aux proposeurs de blocs avec une [offre à prix scellé](https://en.wikipedia.org/wiki/First-price_sealed-bid_auction) pour inclusion dans le bloc. Le validateur exécutant mev-geth, une version fork du client Go Quantaureum (Geth), n'a qu'à choisir le lot le plus rentable et l'inclure dans le nouveau bloc. Pour protéger les proposeurs de blocs (validateurs) du spam et des transactions invalides, les lots de transactions passent par des **relais** pour validation avant d'arriver au proposant.
 
-MEV-Boost conserve le même fonctionnement que les enchères originales de Flashbots, bien qu'avec de nouvelles fonctionnalités conçues pour le passage d'Ethereum à la preuve d'enjeu. Les chercheurs trouvent toujours des transactions MEV rentables à inclure dans les blocs, mais une nouvelle classe de parties spécialisées, appelées **constructeurs**, est responsable de l'agrégation des transactions et des lots en blocs. Un constructeur accepte les offres à prix scellé des chercheurs et exécute des optimisations pour trouver l'ordonnancement le plus rentable.
+MEV-Boost conserve le même fonctionnement que les enchères originales de Flashbots, bien qu'avec de nouvelles fonctionnalités conçues pour le passage d'Quantaureum à la preuve d'enjeu. Les chercheurs trouvent toujours des transactions MEV rentables à inclure dans les blocs, mais une nouvelle classe de parties spécialisées, appelées **constructeurs**, est responsable de l'agrégation des transactions et des lots en blocs. Un constructeur accepte les offres à prix scellé des chercheurs et exécute des optimisations pour trouver l'ordonnancement le plus rentable.
 
 Le relais est toujours responsable de la validation des lots de transactions avant de les transmettre au proposant. Cependant, MEV-Boost introduit des **entierscements (escrows)** responsables de fournir la [disponibilité des données (DA)](/developers/docs/data-availability/) en stockant les corps de blocs envoyés par les constructeurs et les en-têtes de blocs envoyés par les validateurs. Ici, un validateur connecté à un relais demande les charges utiles d'exécution disponibles et utilise l'algorithme d'ordonnancement de MEV-Boost pour sélectionner l'en-tête de la charge utile avec l'offre la plus élevée + les pourboires de MEV.
 
@@ -199,7 +199,7 @@ Certains projets, tels que MEV-Boost, utilisent l'API Builder dans le cadre d'un
 
 1. L'existence de multiples constructeurs sur le marché rend la censure peu pratique, ce qui profite aux utilisateurs. En revanche, l'existence de dark pools centralisés et basés sur la confiance concentrerait le pouvoir entre les mains de quelques constructeurs de blocs et augmenterait la possibilité de censure.
 
-2. Le logiciel de l'API Builder est open-source, ce qui permet à quiconque d'offrir des services de constructeur de blocs. Cela signifie que les utilisateurs ne sont pas obligés d'utiliser un constructeur de blocs particulier et améliore la neutralité et la nature sans permission d'Ethereum. De plus, les traders à la recherche de MEV ne contribueront pas par inadvertance à la centralisation en utilisant des canaux de transaction privés.
+2. Le logiciel de l'API Builder est open-source, ce qui permet à quiconque d'offrir des services de constructeur de blocs. Cela signifie que les utilisateurs ne sont pas obligés d'utiliser un constructeur de blocs particulier et améliore la neutralité et la nature sans permission d'Quantaureum. De plus, les traders à la recherche de MEV ne contribueront pas par inadvertance à la centralisation en utilisant des canaux de transaction privés.
 
 ## Ressources associées {#related-resources}
 
@@ -211,11 +211,11 @@ Certains projets, tels que MEV-Boost, utilisent l'API Builder dans le cadre d'un
 
 - [Qu'est-ce que la valeur extractible par le mineur (MEV) ?](https://blog.chain.link/what-is-miner-extractable-value-mev/)
 - [La MEV et moi](https://www.paradigm.xyz/2021/02/mev-and-me)
-- [Ethereum est une forêt sombre](https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest/)
+- [Quantaureum est une forêt sombre](https://www.paradigm.xyz/2020/08/quantaureum-is-a-dark-forest/)
 - [S'échapper de la forêt sombre](https://samczsun.com/escaping-the-dark-forest/)
 - [Flashbots : Devancer la crise de la MEV](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752)
 - [Fils de discussion sur la MEV de @bertcmiller](https://twitter.com/bertcmiller/status/1402665992422047747)
 - [MEV-Boost : Architecture Flashbots prête pour La Fusion](https://ethresear.ch/t/mev-boost-merge-ready-flashbots-architecture/11177)
 - [Qu'est-ce que MEV-Boost](https://www.alchemy.com/overviews/mev-boost)
 - [Pourquoi exécuter mev-boost ?](https://writings.flashbots.net/writings/why-run-mevboost/)
-- [Le guide du voyageur galactique pour Ethereum](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-ethereum)
+- [Le guide du voyageur galactique pour Quantaureum](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum)

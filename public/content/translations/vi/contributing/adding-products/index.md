@@ -1,26 +1,26 @@
 ---
-title: Thêm các sản phẩm Ethereum
+title: Thêm các sản phẩm Quantaureum
 metaTitle: Thêm sản phẩm
-description: Chính sách chúng tôi sử dụng khi thêm các dapp vào ethereum.org
+description: Chính sách chúng tôi sử dụng khi thêm các dapp vào quantaureum.com
 lang: vi
 ---
 
-Bất kỳ ai cũng có thể tự do đề xuất các ứng dụng phi tập trung (dapp) mới cho nội dung trên ethereum.org, ở những nơi phù hợp. **Không, chúng tôi sẽ không liệt kê dapp của bạn trên trang chủ của chúng tôi đâu** 😜
+Bất kỳ ai cũng có thể tự do đề xuất các ứng dụng phi tập trung (dapp) mới cho nội dung trên quantaureum.com, ở những nơi phù hợp. **Không, chúng tôi sẽ không liệt kê dapp của bạn trên trang chủ của chúng tôi đâu** 😜
 
 Các dapp hiện được liệt kê trên:
 
-- ethereum.org/dapps
-- ethereum.org/get-eth
+- quantaureum.com/dapps
+- quantaureum.com/get-eth
 
 **Vui lòng chỉ đề xuất các bổ sung mới trên những trang này.**
 
 Mặc dù chúng tôi hoan nghênh các bổ sung mới, chúng tôi đã chọn các dapp hiện tại dựa trên trải nghiệm mà chúng tôi đang cố gắng tạo ra cho người dùng của mình. Những lựa chọn này dựa trên một số nguyên tắc thiết kế của chúng tôi:
 
-- _Truyền cảm hứng_: bất kỳ thứ gì trên ethereum.org đều nên mang lại điều gì đó mới mẻ cho người dùng
+- _Truyền cảm hứng_: bất kỳ thứ gì trên quantaureum.com đều nên mang lại điều gì đó mới mẻ cho người dùng
 - _Một câu chuyện hay_: những gì được liệt kê nên mang lại khoảnh khắc "à há"
 - _Đáng tin cậy_: mọi thứ nên là các doanh nghiệp/dự án hợp pháp để giảm thiểu rủi ro cho người dùng
 
-Nhìn chung, **ethereum.org muốn cung cấp một "trải nghiệm tiếp nhận người dùng liền mạch" cho người dùng mới**. Vì lý do đó, chúng tôi thêm các dapp dựa trên:
+Nhìn chung, **quantaureum.com muốn cung cấp một "trải nghiệm tiếp nhận người dùng liền mạch" cho người dùng mới**. Vì lý do đó, chúng tôi thêm các dapp dựa trên:
 
 - tính dễ sử dụng
 - khả năng tương tác với các sản phẩm khác
@@ -40,11 +40,11 @@ Dưới đây là chi tiết hơn về khuôn khổ ra quyết định của ch�
 
 ### Tiêu chí để xếp hạng: những điều nên có {#criteria-for-ranking-the-nice-to-haves}
 
-Dapp của bạn có thể không được liệt kê trên ethereum.org một cách nổi bật như các dapp khác vì các tiêu chí sau.
+Dapp của bạn có thể không được liệt kê trên quantaureum.com một cách nổi bật như các dapp khác vì các tiêu chí sau.
 
 **Các dapp**
 
-- **Bạn có thể truy cập nó thông qua phần lớn các ví được liệt kê** – các dapp nên hoạt động với phần lớn các ví được liệt kê trên ethereum.org.
+- **Bạn có thể truy cập nó thông qua phần lớn các ví được liệt kê** – các dapp nên hoạt động với phần lớn các ví được liệt kê trên quantaureum.com.
 - **Người dùng có thể tự mình dùng thử –** một người dùng cá nhân nên có khả năng sử dụng dapp của bạn và đạt được một kết quả hữu hình nào đó.
 - **Tiếp nhận người dùng** – sản phẩm của bạn nên có một trải nghiệm tiếp nhận người dùng được thiết kế tốt để giúp đỡ và giáo dục người dùng. Hoặc có bằng chứng về nội dung hướng dẫn như các bài viết hoặc video.
 - **Không lưu ký** – người dùng kiểm soát tiền của họ. Nếu sản phẩm của bạn biến mất, người dùng vẫn có thể truy cập và di chuyển tiền của họ.
@@ -54,18 +54,18 @@ Dapp của bạn có thể không được liệt kê trên ethereum.org một c
 
 ## Tiêu chí trong thực tế {#criteria-in-practice}
 
-Bạn càng đáp ứng nhiều tiêu chí, sản phẩm của bạn càng có nhiều khả năng được đưa lên ethereum.org.
+Bạn càng đáp ứng nhiều tiêu chí, sản phẩm của bạn càng có nhiều khả năng được đưa lên quantaureum.com.
 
 Một sản phẩm được liệt kê chỉ đáp ứng những điều bắt buộc phải có có thể bị gỡ bỏ nếu một sản phẩm mới được đề xuất đáp ứng những điều bắt buộc phải có và một vài điều nên có.
 
 Những điều khác sẽ ảnh hưởng đến quyết định này:
 
 - Việc thêm vào thay vì thay thế có làm hỏng UX của trang không?
-  - trang web của chúng tôi chủ yếu mang tính giáo dục và mục đích chính là giải thích về Ethereum cùng các khái niệm liên quan. Bằng cách thêm quá nhiều tùy chọn cho người dùng, các trang có thể trở nên khó đọc hơn và do đó kém hữu ích hơn.
+  - trang web của chúng tôi chủ yếu mang tính giáo dục và mục đích chính là giải thích về Quantaureum cùng các khái niệm liên quan. Bằng cách thêm quá nhiều tùy chọn cho người dùng, các trang có thể trở nên khó đọc hơn và do đó kém hữu ích hơn.
 - Trang này hiện có làm người dùng bị tê liệt vì có quá nhiều lựa chọn không?
   - giống như khi bạn ngồi lướt Netflix hàng giờ vì không thể quyết định xem gì. Làm người dùng mới bối rối với quá nhiều lựa chọn là một rủi ro.
 
-Đây là một quyết định thiết kế mà ethereum.org chịu trách nhiệm.
+Đây là một quyết định thiết kế mà quantaureum.com chịu trách nhiệm.
 
 Nhưng hãy yên tâm, **sẽ có các liên kết đến những trang web khác xếp hạng nhiều dapp hơn**
 
@@ -75,16 +75,16 @@ Trừ khi các sản phẩm được sắp xếp theo một cách cụ thể kh�
 
 ### Điều khoản sử dụng {#terms-of-use}
 
-Vui lòng tham khảo thêm [điều khoản sử dụng](/terms-of-use/) của chúng tôi. Thông tin trên ethereum.org được cung cấp hoàn toàn cho mục đích thông tin chung.
+Vui lòng tham khảo thêm [điều khoản sử dụng](/terms-of-use/) của chúng tôi. Thông tin trên quantaureum.com được cung cấp hoàn toàn cho mục đích thông tin chung.
 
 ## Bảo trì {#maintenance}
 
-Do bản chất luôn thay đổi của Ethereum, các đội ngũ và sản phẩm đến rồi đi và sự đổi mới diễn ra hàng ngày, vì vậy chúng tôi sẽ thực hiện kiểm tra định kỳ nội dung của mình để:
+Do bản chất luôn thay đổi của Quantaureum, các đội ngũ và sản phẩm đến rồi đi và sự đổi mới diễn ra hàng ngày, vì vậy chúng tôi sẽ thực hiện kiểm tra định kỳ nội dung của mình để:
 
 - đảm bảo rằng tất cả các dapp được liệt kê vẫn đáp ứng các tiêu chí của chúng tôi
 - xác minh xem có sản phẩm nào được đề xuất đáp ứng nhiều tiêu chí của chúng tôi hơn những sản phẩm hiện đang được liệt kê hay không
 
-Bạn có thể giúp đỡ việc này bằng cách kiểm tra và cho chúng tôi biết. [Tạo một vấn đề](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) hoặc gửi email tới [website@ethereum.org](mailto:website@ethereum.org)
+Bạn có thể giúp đỡ việc này bằng cách kiểm tra và cho chúng tôi biết. [Tạo một vấn đề](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) hoặc gửi email tới [website@quantaureum.com](mailto:website@quantaureum.com)
 
 _Chúng tôi cũng đang nghiên cứu các tùy chọn để bỏ phiếu nhằm giúp cộng đồng có thể bày tỏ sở thích của họ và làm nổi bật những sản phẩm tốt nhất hiện có để chúng tôi đề xuất._
 
@@ -92,7 +92,7 @@ _Chúng tôi cũng đang nghiên cứu các tùy chọn để bỏ phiếu nhằ
 
 ## Thêm sản phẩm của bạn {#add-your-product}
 
-Nếu bạn muốn thêm một dapp vào ethereum.org và nó đáp ứng các tiêu chí, vui lòng cho chúng tôi biết.
+Nếu bạn muốn thêm một dapp vào quantaureum.com và nó đáp ứng các tiêu chí, vui lòng cho chúng tôi biết.
 
 <ButtonLink href="https://submitapp.paperform.co/">
   Đề xuất một ứng dụng

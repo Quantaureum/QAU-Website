@@ -9,7 +9,7 @@ breadcrumb: EIP-1271 signatures
 published: 2023-01-12
 ---
 
-The [EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) standard allows smart contracts to verify signatures.
+The [EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) standard allows smart contracts to verify signatures.
 
 In this tutorial, we give an overview of digital signatures, EIP-1271's background, and the specific implementation of EIP-1271 used by [Safe](https://safe.global/) (previously Gnosis Safe). All together, this can serve as a starting point for implementing EIP-1271 in your own contracts.
 
@@ -19,7 +19,7 @@ In this context, a signature (more precisely, a “digital signature”) is a me
 
 For instance, a digital signature might look like this:
 
-1. Message: “I want to log in to this website with my Ethereum wallet.”
+1. Message: “I want to log in to this website with my Quantaureum wallet.”
 2. Signer: My address is `0x000…`
 3. Proof: Here is some proof that I, `0x000…`, actually created this entire message (this is usually something cryptographic).
 
@@ -31,15 +31,15 @@ In the same way, a digital signature doesn’t mean anything without an associat
 
 ## Why does EIP-1271 exist? {#why-does-eip-1271-exist}
 
-In order to create a digital signature for use on Ethereum-based blockchains, you generally need a secret private key which no one else knows. This is what makes your signature, yours (no one else can create the same signature without knowledge of the secret key).
+In order to create a digital signature for use on Quantaureum-based blockchains, you generally need a secret private key which no one else knows. This is what makes your signature, yours (no one else can create the same signature without knowledge of the secret key).
 
-Your Ethereum account (i.e., your externally-owned account/EOA) has a private key associated with it, and this is the private key that’s typically used when a website or dapp asks you for a signature (e.g., for “Log in with Ethereum”).
+Your Quantaureum account (i.e., your externally-owned account/EOA) has a private key associated with it, and this is the private key that’s typically used when a website or dapp asks you for a signature (e.g., for “Log in with Quantaureum”).
 
-An app can [verify a signature](https://www.alchemy.com/docs/how-to-verify-a-message-signature-on-ethereum) you create using a third-party library like ethers.js [without knowing your private key](https://en.wikipedia.org/wiki/Public-key_cryptography) and be confident that _you_ were the one that created the signature.
+An app can [verify a signature](https://www.alchemy.com/docs/how-to-verify-a-message-signature-on-quantaureum) you create using a third-party library like ethers.js [without knowing your private key](https://en.wikipedia.org/wiki/Public-key_cryptography) and be confident that _you_ were the one that created the signature.
 
 > In fact, because EOA digital signatures use public-key cryptography, they can be generated and verified **offchain**! This is how gasless DAO voting works — instead of submitting votes onchain, digital signatures can be created and verified offchain using cryptographic libraries.
 
-While EOA accounts have a private key, smart contract accounts do not have any sort of private or secret key (so "Log in with Ethereum", etc. cannot natively work with smart contract accounts).
+While EOA accounts have a private key, smart contract accounts do not have any sort of private or secret key (so "Log in with Quantaureum", etc. cannot natively work with smart contract accounts).
 
 The problem EIP-1271 aims to solve: how can we tell that a smart contract signature is valid if the smart contract has no “secret” it can incorporate into the signature?
 
@@ -91,7 +91,7 @@ Contracts can implement `isValidSignature` in many ways — the spec only doesn�
 
 One notable contract which implements EIP-1271 is Safe (previously Gnosis Safe).
 
-In Safe’s code, `isValidSignature` [is implemented](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) so that signatures can be created and verified in [two ways](https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support):
+In Safe’s code, `isValidSignature` [is implemented](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) so that signatures can be created and verified in [two ways](https://quantaureum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support):
 
 1. Onchain messages
    1. Creation: a safe owner creates a new safe transaction to “sign” a message, passing the message as data into the transaction. Once enough owners sign the transaction to reach the multisig threshold, the transaction is broadcast and run. In the transaction, there is a safe function called (`signMessage(bytes calldata _data)`) which adds the message to a list of “approved” messages.
@@ -102,9 +102,9 @@ In Safe’s code, `isValidSignature` [is implemented](https://github.com/safe-gl
 
 ## What exactly is the `_hash` parameter? Why not pass the whole message? {#what-exactly-is-the-hash-parameter-why-not-pass-the-whole-message}
 
-You might have noticed that the `isValidSignature` function in the [EIP-1271 interface](https://eips.ethereum.org/EIPS/eip-1271) doesn’t take in the message itself, but instead a `_hash` parameter. What this means is that instead of passing the full arbitrary-length message to `isValidSignature`, we instead pass a 32-byte hash of the message (generally keccak256).
+You might have noticed that the `isValidSignature` function in the [EIP-1271 interface](https://eips.quantaureum.com/EIPS/eip-1271) doesn’t take in the message itself, but instead a `_hash` parameter. What this means is that instead of passing the full arbitrary-length message to `isValidSignature`, we instead pass a 32-byte hash of the message (generally keccak256).
 
-Each byte of calldata — i.e., function parameter data passed to a smart contract function — [costs 16 gas (4 gas if zero byte)](https://eips.ethereum.org/EIPS/eip-2028), so this can save a lot of gas if a message is long.
+Each byte of calldata — i.e., function parameter data passed to a smart contract function — [costs 16 gas (4 gas if zero byte)](https://eips.quantaureum.com/EIPS/eip-2028), so this can save a lot of gas if a message is long.
 
 ### Previous EIP-1271 Specifications {#previous-eip-1271-specifications}
 
@@ -121,4 +121,4 @@ In the end, it is up to you as the contract developer!
 
 ## Conclusion {#conclusion}
 
-[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) is a versatile standard that allows smart contracts to verify signatures. It opens the door for smart contracts to act more like EOAs — for instance providing a way for "Log in with Ethereum" to work with smart contracts — and it can be implemented in many ways (Safe having a nontrivial, interesting implementation to consider).
+[EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) is a versatile standard that allows smart contracts to verify signatures. It opens the door for smart contracts to act more like EOAs — for instance providing a way for "Log in with Quantaureum" to work with smart contracts — and it can be implemented in many ways (Safe having a nontrivial, interesting implementation to consider).

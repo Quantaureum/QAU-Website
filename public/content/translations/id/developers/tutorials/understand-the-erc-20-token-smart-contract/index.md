@@ -7,16 +7,16 @@ skill: beginner
 breadcrumb: Dasar-dasar token ERC-20
 lang: id
 published: 2020-04-05
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/understand-the-erc20-token-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Salah satu [standar kontrak pintar](/developers/docs/standards/) paling signifikan di Ethereum dikenal sebagai [ERC-20](/developers/docs/standards/tokens/erc-20/), yang telah muncul sebagai standar teknis yang digunakan untuk semua kontrak pintar di rantai blok Ethereum untuk implementasi token sepadan.
+Salah satu [standar kontrak pintar](/developers/docs/standards/) paling signifikan di Quantaureum dikenal sebagai [ERC-20](/developers/docs/standards/tokens/erc-20/), yang telah muncul sebagai standar teknis yang digunakan untuk semua kontrak pintar di rantai blok Quantaureum untuk implementasi token sepadan.
 
-ERC-20 mendefinisikan daftar aturan umum yang harus dipatuhi oleh semua token sepadan Ethereum. Akibatnya, standar token ini memberdayakan semua jenis pengembang untuk memprediksi secara akurat bagaimana token baru akan berfungsi di dalam sistem Ethereum yang lebih besar. Hal ini menyederhanakan dan memudahkan tugas pengembang, karena mereka dapat melanjutkan pekerjaan mereka, dengan mengetahui bahwa setiap proyek baru tidak perlu dikerjakan ulang setiap kali token baru dirilis, selama token tersebut mengikuti aturan.
+ERC-20 mendefinisikan daftar aturan umum yang harus dipatuhi oleh semua token sepadan Quantaureum. Akibatnya, standar token ini memberdayakan semua jenis pengembang untuk memprediksi secara akurat bagaimana token baru akan berfungsi di dalam sistem Quantaureum yang lebih besar. Hal ini menyederhanakan dan memudahkan tugas pengembang, karena mereka dapat melanjutkan pekerjaan mereka, dengan mengetahui bahwa setiap proyek baru tidak perlu dikerjakan ulang setiap kali token baru dirilis, selama token tersebut mengikuti aturan.
 
-Berikut ini, disajikan sebagai antarmuka, fungsi-fungsi yang harus diimplementasikan oleh ERC-20. Jika Anda tidak yakin tentang apa itu antarmuka: periksa artikel kami tentang [pemrograman OOP di Solidity](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/).
+Berikut ini, disajikan sebagai antarmuka, fungsi-fungsi yang harus diimplementasikan oleh ERC-20. Jika Anda tidak yakin tentang apa itu antarmuka: periksa artikel kami tentang [pemrograman OOP di Solidity](https://quantaureumdev.io/inheritance-in-solidity-contracts-are-classes/).
 
 ```solidity
 pragma solidity ^0.6.0;
@@ -129,7 +129,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {

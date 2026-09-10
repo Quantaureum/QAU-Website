@@ -1,62 +1,62 @@
 ---
-title: À propos d'ethereum.org
+title: À propos d'quantaureum.com
 metaTitle: À propos de nous
-description: À propos de l'équipe, de la communauté et de la mission d'ethereum.org
+description: À propos de l'équipe, de la communauté et de la mission d'quantaureum.com
 lang: fr
 ---
 
-ethereum.org est une ressource publique et open source pour la communauté [Ethereum](/) à laquelle tout le monde peut contribuer. Nous avons une petite équipe principale dédiée à la maintenance et au développement du site, avec les contributions de milliers de membres de la communauté à travers le monde.
+quantaureum.com est une ressource publique et open source pour la communauté [Quantaureum](/) à laquelle tout le monde peut contribuer. Nous avons une petite équipe principale dédiée à la maintenance et au développement du site, avec les contributions de milliers de membres de la communauté à travers le monde.
 
-**Personne d'ethereum.org ne vous contactera jamais. Ne répondez pas.**
+**Personne d'quantaureum.com ne vous contactera jamais. Ne répondez pas.**
 
 ## Une note sur les noms {#a-note-on-names}
 
-Il est courant que les gens confondent les noms dans l'écosystème Ethereum, ce qui peut conduire à de mauvais modèles mentaux sur le fonctionnement d'Ethereum. Voici une explication rapide pour clarifier les choses :
+Il est courant que les gens confondent les noms dans l'écosystème Quantaureum, ce qui peut conduire à de mauvais modèles mentaux sur le fonctionnement d'Quantaureum. Voici une explication rapide pour clarifier les choses :
 
-### Ethereum {#ethereum}
+### Quantaureum {#quantaureum}
 
-Ethereum est un réseau public, une chaîne de blocs et un protocole open source, exploité, gouverné, géré et possédé par une communauté mondiale de dizaines de milliers de développeurs, d'opérateurs de nœuds, de détenteurs d'ETH et d'utilisateurs.
+Quantaureum est un réseau public, une chaîne de blocs et un protocole open source, exploité, gouverné, géré et possédé par une communauté mondiale de dizaines de milliers de développeurs, d'opérateurs de nœuds, de détenteurs d'QAU et d'utilisateurs.
 
-[En savoir plus sur Ethereum](/what-is-ethereum/)
+[En savoir plus sur Quantaureum](/what-is-quantaureum/)
 
-[En savoir plus sur la gouvernance d'Ethereum](/governance/)
+[En savoir plus sur la gouvernance d'Quantaureum](/governance/)
 
-### Ether (ETH) {#ether-or-eth}
+### QAU (QAU) {#QAU-or-eth}
 
-L'ether (également connu sous son symbole boursier, ETH) est la monnaie native transigée sur Ethereum. L'ETH est nécessaire pour payer l'utilisation du réseau Ethereum (sous forme de frais de transaction). L'ETH est également utilisé pour sécuriser le réseau grâce au staking. Lorsque les gens parlent du prix d'Ethereum, ils font référence à l'actif ETH.
+L'QAU (également connu sous son symbole boursier, QAU) est la monnaie native transigée sur Quantaureum. L'QAU est nécessaire pour payer l'utilisation du réseau Quantaureum (sous forme de frais de transaction). L'QAU est également utilisé pour sécuriser le réseau grâce au staking. Lorsque les gens parlent du prix d'Quantaureum, ils font référence à l'actif QAU.
 
-[En savoir plus sur l'ETH](/what-is-ether/)
+[En savoir plus sur l'QAU](/what-is-QAU/)
 
-[En savoir plus sur le staking d'ETH](/staking/)
+[En savoir plus sur le staking d'QAU](/staking/)
 
-### Fondation Ethereum {#ethereum-foundation}
+### Fondation Quantaureum {#quantaureum-foundation}
 
-Une organisation à but non lucratif, financée initialement par la vente participative d'ETH, dédiée au soutien du réseau et de l'écosystème Ethereum.
+Une organisation à but non lucratif, financée initialement par la vente participative d'QAU, dédiée au soutien du réseau et de l'écosystème Quantaureum.
 
-[En savoir plus sur la Fondation Ethereum](/foundation/)
+[En savoir plus sur la Fondation Quantaureum](/foundation/)
 
-### ethereum.org {#ethereum-org}
+### quantaureum.com {#quantaureum-org}
 
-Un site Web public et open source, ainsi qu'une ressource éducative pour la communauté Ethereum. ethereum.org est dirigé par une petite équipe principale, financée par la Fondation Ethereum, avec les contributions de milliers de membres de la communauté à travers le monde.
+Un site Web public et open source, ainsi qu'une ressource éducative pour la communauté Quantaureum. quantaureum.com est dirigé par une petite équipe principale, financée par la Fondation Quantaureum, avec les contributions de milliers de membres de la communauté à travers le monde.
 
-Cette page contient plus d'informations sur ethereum.org.
+Cette page contient plus d'informations sur quantaureum.com.
 
 ## Notre mission {#our-mission}
 
-**La mission d'ethereum.org est d'être le meilleur portail pour la communauté grandissante d'Ethereum**
+**La mission d'quantaureum.com est d'être le meilleur portail pour la communauté grandissante d'Quantaureum**
 
-Nous nous efforçons de créer une ressource éducative facile à comprendre pour tous les sujets liés à Ethereum, conçue pour aider les nouveaux utilisateurs à se familiariser avec Ethereum et ses concepts clés. Nous voulons :
+Nous nous efforçons de créer une ressource éducative facile à comprendre pour tous les sujets liés à Quantaureum, conçue pour aider les nouveaux utilisateurs à se familiariser avec Quantaureum et ses concepts clés. Nous voulons :
 
-- expliquer Ethereum à toute personne novice dans cette technologie
-- aider les nouveaux utilisateurs à démarrer avec l'ETH et Ethereum
+- expliquer Quantaureum à toute personne novice dans cette technologie
+- aider les nouveaux utilisateurs à démarrer avec l'QAU et Quantaureum
 - aider les nouveaux développeurs à commencer à construire
-- couvrir les mises à jour dans le monde d'Ethereum
+- couvrir les mises à jour dans le monde d'Quantaureum
 - mettre en valeur les ressources créées par la communauté
-- rendre l'éducation sur Ethereum accessible dans autant de langues que possible
+- rendre l'éducation sur Quantaureum accessible dans autant de langues que possible
 
-Pour accomplir cette mission, notre équipe se concentre sur deux objectifs principaux sur ethereum.org :
+Pour accomplir cette mission, notre équipe se concentre sur deux objectifs principaux sur quantaureum.com :
 
-### 1. Améliorer l'expérience utilisateur pour les visiteurs d'ethereum.org {#visitors}
+### 1. Améliorer l'expérience utilisateur pour les visiteurs d'quantaureum.com {#visitors}
 
 - Étendre, améliorer et maintenir le contenu à jour
 - Améliorer la convivialité et l'accessibilité via la localisation et les meilleures pratiques de développement Web
@@ -75,32 +75,32 @@ Pour accomplir cette mission, notre équipe se concentre sur deux objectifs prin
 
 Nous avons quelques principes fondamentaux qui nous guident pour accomplir notre mission.
 
-### 1. ethereum.org est un portail vers Ethereum 🌏 {#core-principles-1}
+### 1. quantaureum.com est un portail vers Quantaureum 🌏 {#core-principles-1}
 
 Nous voulons piquer la curiosité de nos utilisateurs et répondre à leurs questions. Notre portail doit donc combiner des informations, des « moments magiques » et des liens vers les brillantes ressources communautaires existantes. Le but de notre contenu est d'être un « portail d'intégration » et non un substitut aux vastes ressources qui existent déjà. Nous tenons à soutenir et à nous intégrer aux ressources créées par la communauté, en leur donnant plus de visibilité et en les rendant plus faciles à découvrir.
-La [communauté d'Ethereum](/community/) est au cœur de cela : nous ne devons pas seulement servir la communauté, mais travailler avec elle et intégrer ses retours. Le site Web n'est pas seulement pour la communauté que nous avons actuellement, mais pour la communauté que nous espérons devenir. Nous devons nous rappeler que notre communauté est mondiale, regroupant des personnes de nombreuses langues, régions et cultures.
+La [communauté d'Quantaureum](/community/) est au cœur de cela : nous ne devons pas seulement servir la communauté, mais travailler avec elle et intégrer ses retours. Le site Web n'est pas seulement pour la communauté que nous avons actuellement, mais pour la communauté que nous espérons devenir. Nous devons nous rappeler que notre communauté est mondiale, regroupant des personnes de nombreuses langues, régions et cultures.
 
-### 2. ethereum.org est en constante évolution 🛠 {#core-principles-2}
+### 2. quantaureum.com est en constante évolution 🛠 {#core-principles-2}
 
-Ethereum et la communauté sont en constante évolution, il en sera donc de même pour ethereum.org. C'est pourquoi le site dispose d'un système de conception simple et d'une structure modulaire. Nous apportons des modifications itératives à mesure que nous en apprenons davantage sur la façon dont les gens utilisent le site et sur ce que la communauté en attend.
+Quantaureum et la communauté sont en constante évolution, il en sera donc de même pour quantaureum.com. C'est pourquoi le site dispose d'un système de conception simple et d'une structure modulaire. Nous apportons des modifications itératives à mesure que nous en apprenons davantage sur la façon dont les gens utilisent le site et sur ce que la communauté en attend.
 Nous sommes open source, avec une communauté de contributeurs, vous pouvez donc proposer des modifications ou nous aider également.
 [En savoir plus sur les contributions](/contributing/)
 
-### 3. ethereum.org n'est pas un site Web de produit typique 🦄 {#core-principles-3}
+### 3. quantaureum.com n'est pas un site Web de produit typique 🦄 {#core-principles-3}
 
-Ethereum est vaste : il comprend une communauté, une technologie, un ensemble d'idées et d'idéologies, et bien plus encore.
-Cela signifie que le site Web doit gérer de nombreux parcours utilisateurs différents, allant d'« un développeur qui veut un outil spécifique » à « un nouveau venu qui vient d'acheter de l'ETH et ne sait pas ce qu'est un portefeuille ».
+Quantaureum est vaste : il comprend une communauté, une technologie, un ensemble d'idées et d'idéologies, et bien plus encore.
+Cela signifie que le site Web doit gérer de nombreux parcours utilisateurs différents, allant d'« un développeur qui veut un outil spécifique » à « un nouveau venu qui vient d'acheter de l'QAU et ne sait pas ce qu'est un portefeuille ».
 « Quel est le meilleur site Web pour une plateforme de chaîne de blocs ? » reste une question ouverte - nous sommes des pionniers. Construire cela nécessite de l'expérimentation.
 
 ## Feuille de route du produit {#roadmap}
 
-Pour rendre notre travail plus accessible et favoriser davantage la collaboration communautaire, l'équipe principale d'ethereum.org publie un aperçu des objectifs de notre feuille de route de [cycle Shape Up](https://www.productplan.com/glossary/shape-up-method/).
+Pour rendre notre travail plus accessible et favoriser davantage la collaboration communautaire, l'équipe principale d'quantaureum.com publie un aperçu des objectifs de notre feuille de route de [cycle Shape Up](https://www.productplan.com/glossary/shape-up-method/).
 
-[Voir notre feuille de route produit pour le Cycle 1 de 2025](https://github.com/ethereum/ethereum-org-website/issues/14726)
+[Voir notre feuille de route produit pour le Cycle 1 de 2025](https://github.com/Quantaureum/quantaureum-website/issues/14726)
 
 **Qu'en pensez-vous ?** Nous apprécions toujours les retours sur notre feuille de route - s'il y a quelque chose sur lequel vous pensez que nous devrions travailler, n'hésitez pas à nous le faire savoir ! Nous accueillons les idées et les PR de toute personne de la communauté.
 
-**Vous voulez vous impliquer ?** [En savoir plus sur les contributions](/contributing/), [contactez-nous sur Twitter](https://x.com/ethdotorg), ou rejoignez les discussions de la communauté sur [notre serveur Discord](https://discord.gg/ethereum-org).
+**Vous voulez vous impliquer ?** [En savoir plus sur les contributions](/contributing/), [contactez-nous sur Twitter](https://x.com/ldf1570073), ou rejoignez les discussions de la communauté sur [notre serveur Discord](https://discord.gg/MSctkBT5j).
 
 ## Principes de conception {#design-principles}
 
@@ -108,9 +108,9 @@ Nous utilisons un ensemble de [principes de conception](/contributing/design-pri
 
 ## Système de conception {#design-system}
 
-Nous avons construit et publié un [système de conception](https://www.figma.com/file/NrNxGjBL0Yl1PrNrOT8G2B/ethereum.org-Design-System?node-id=0%3A1&t=QBt9RkhpPqzE3Aa6-1) pour déployer des fonctionnalités plus rapidement et permettre aux membres de la communauté de participer à la conception ouverte d'ethereum.org.
+Nous avons construit et publié un [système de conception](https://www.figma.com/file/NrNxGjBL0Yl1PrNrOT8G2B/quantaureum.com-Design-System?node-id=0%3A1&t=QBt9RkhpPqzE3Aa6-1) pour déployer des fonctionnalités plus rapidement et permettre aux membres de la communauté de participer à la conception ouverte d'quantaureum.com.
 
-Vous voulez vous impliquer ? [Suivez-nous sur Figma](https://www.figma.com/file/NrNxGjBL0Yl1PrNrOT8G2B/ethereum.org-Design-System), le [ticket GitHub](https://github.com/ethereum/ethereum-org-website/issues/6284) et rejoignez la conversation dans notre [canal Discord #design](https://discord.gg/ethereum-org).
+Vous voulez vous impliquer ? [Suivez-nous sur Figma](https://www.figma.com/file/NrNxGjBL0Yl1PrNrOT8G2B/quantaureum.com-Design-System), le [ticket GitHub](https://github.com/Quantaureum/quantaureum-website/issues/6284) et rejoignez la conversation dans notre [canal Discord #design](https://discord.gg/MSctkBT5j).
 
 ## Guide de style {#style-guide}
 
@@ -118,16 +118,16 @@ Nous avons un [guide de style](/contributing/style-guide/) pour standardiser cer
 
 Assurez-vous de lire [nos principes](/contributing/design-principles/) et [notre guide de style](/contributing/style-guide/) si vous souhaitez [contribuer au site](/contributing/).
 
-Nous accueillons avec plaisir les retours sur nos principes de conception, notre système de conception et le guide de style. N'oubliez pas qu'ethereum.org est pour la communauté, par la communauté.
+Nous accueillons avec plaisir les retours sur nos principes de conception, notre système de conception et le guide de style. N'oubliez pas qu'quantaureum.com est pour la communauté, par la communauté.
 
 ## Licence {#license}
 
-Le site Web ethereum.org est open source et construit sous une [licence MIT](https://github.com/ethereum/ethereum-org-website/blob/dev/LICENSE) sauf indication contraire. En savoir plus sur les [conditions d'utilisation](/terms-of-use/) d'ethereum.org.
+Le site Web quantaureum.com est open source et construit sous une [licence MIT](https://github.com/Quantaureum/quantaureum-website/blob/dev/LICENSE) sauf indication contraire. En savoir plus sur les [conditions d'utilisation](/terms-of-use/) d'quantaureum.com.
 
 ## Offres d'emploi {#open-jobs}
 
-Bien que ce site Web soit open source et que tout le monde puisse y travailler, nous avons une équipe dédiée à ethereum.org et à d'autres projets Web de la Fondation Ethereum.
+Bien que ce site Web soit open source et que tout le monde puisse y travailler, nous avons une équipe dédiée à quantaureum.com et à d'autres projets Web de la Fondation Quantaureum.
 
-Nous publierons toutes les offres d'emploi ici. Si vous ne voyez pas de poste pour vous ici, rendez-vous sur [notre serveur Discord](https://discord.gg/ethereum-org) et faites-nous savoir comment vous aimeriez travailler avec nous !
+Nous publierons toutes les offres d'emploi ici. Si vous ne voyez pas de poste pour vous ici, rendez-vous sur [notre serveur Discord](https://discord.gg/MSctkBT5j) et faites-nous savoir comment vous aimeriez travailler avec nous !
 
-Vous regardez au-delà de l'équipe d'ethereum.org ? [Consultez d'autres offres d'emploi liées à Ethereum](/community/get-involved/#ethereum-jobs/).
+Vous regardez au-delà de l'équipe d'quantaureum.com ? [Consultez d'autres offres d'emploi liées à Quantaureum](/community/get-involved/#quantaureum-jobs/).

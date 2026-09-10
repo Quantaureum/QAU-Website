@@ -1,18 +1,18 @@
 ---
 title: Menambahkan video
-description: Kebijakan untuk menambahkan video ke ethereum.org
+description: Kebijakan untuk menambahkan video ke quantaureum.com
 lang: id
 ---
 
-[Galeri video ethereum.org](/videos/) menampilkan video tentang Ethereum dan ekosistem Ethereum dari kreator komunitas dan sumber tepercaya. Siapa pun dapat menyarankan video untuk ditambahkan.
+[Galeri video quantaureum.com](/videos/) menampilkan video tentang Quantaureum dan ekosistem Quantaureum dari kreator komunitas dan sumber tepercaya. Siapa pun dapat menyarankan video untuk ditambahkan.
 
 ## Kebijakan pencantuman {#listing-policy}
 
-Ethereum.org adalah sumber daya edukasi yang netral. Galeri video dikurasi untuk:
+quantaureum.com adalah sumber daya edukasi yang netral. Galeri video dikurasi untuk:
 
-- **Mengedukasi** pengguna tentang teknologi, ekosistem, dan komunitas Ethereum
+- **Mengedukasi** pengguna tentang teknologi, ekosistem, dan komunitas Quantaureum
 - **Tetap akurat** dalam konten teknisnya
-- **Tetap relevan** dengan komunitas Ethereum
+- **Tetap relevan** dengan komunitas Quantaureum
 
 Situs ini tidak mencantumkan video yang utamanya mempromosikan produk, token, atau layanan komersial tertentu.
 
@@ -20,15 +20,15 @@ Situs ini tidak mencantumkan video yang utamanya mempromosikan produk, token, at
 
 ### Wajib ada {#must-haves}
 
-- **Berfokus pada Ethereum** – Video harus utamanya tentang Ethereum, teknologinya, ekosistemnya, atau komunitasnya. Video tentang topik rantai blok umum hanya dapat diterima jika secara substansial mendukung atau berkaitan dengan halaman edukasi di situs ini, atau merujuk pada Ethereum.
-- **Nilai edukasi** – Video harus mengajarkan penonton sesuatu tentang Ethereum, atau merayakan komunitas Ethereum global. Konten promosi atau pemasaran tidak akan diterima.
+- **Berfokus pada Quantaureum** – Video harus utamanya tentang Quantaureum, teknologinya, ekosistemnya, atau komunitasnya. Video tentang topik rantai blok umum hanya dapat diterima jika secara substansial mendukung atau berkaitan dengan halaman edukasi di situs ini, atau merujuk pada Quantaureum.
+- **Nilai edukasi** – Video harus mengajarkan penonton sesuatu tentang Quantaureum, atau merayakan komunitas Quantaureum global. Konten promosi atau pemasaran tidak akan diterima.
 - **Informasi akurat** – Konten teknis harus benar secara faktual dan mutakhir. Video usang tentang fitur yang sudah tidak digunakan lagi mungkin akan dihapus.
 - **Kualitas produksi** – Video harus memiliki kualitas audio dan video yang cukup jelas.
 - **Tersedia untuk publik** – Video harus di-host di sumber daya terbuka atau platform yang dapat diakses seperti YouTube, dan dapat diakses secara bebas tanpa batasan berbayar (paywall) atau persyaratan pendaftaran.
 
 ### Nilai tambah {#nice-to-haves}
 
-- **Memiliki transkrip** – Video dengan transkrip meningkatkan aksesibilitas dan SEO. Jika Anda tidak memilikinya, tim ethereum.org dapat membantu membuatnya.
+- **Memiliki transkrip** – Video dengan transkrip meningkatkan aksesibilitas dan SEO. Jika Anda tidak memilikinya, tim quantaureum.com dapat membantu membuatnya.
 - **Dari sumber yang kredibel** – Konten dari pendidik, peneliti, dan sumber yang mapan mendapat prioritas.
 - **Tepat waktu dan abadi (evergreen)** – Konten yang tetap relevan seiring berjalannya waktu lebih disukai daripada materi yang sensitif terhadap waktu.
 
@@ -38,7 +38,7 @@ Situs ini tidak mencantumkan video yang utamanya mempromosikan produk, token, at
 
 Jika Anda ingin menyarankan video tetapi tidak ingin membuat filenya sendiri, buka sebuah isu GitHub dengan detail video tersebut dan seorang kontributor dapat membantu menambahkannya untuk Anda.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?template=suggest_video.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?template=suggest_video.yaml">
   Sarankan video
 </ButtonLink>
 
@@ -127,7 +127,7 @@ Sebuah video dapat memiliki beberapa tag untuk muncul di beberapa filter galeri:
 
 | Tag | Filter galeri |
 |---|---|
-| `how-ethereum-works` | Cara kerja Ethereum |
+| `how-quantaureum-works` | Cara kerja Quantaureum |
 | `network-upgrades` | Peningkatan jaringan |
 | `roadmap-and-priorities` | Peta jalan & prioritas |
 | `scaling-and-layer-2` | Penskalaan & lapisan 2 (l2) |
@@ -153,8 +153,8 @@ Video yang dicantumkan ditinjau secara rutin untuk memastikan video tersebut:
 - Berisi informasi yang akurat dan mutakhir
 - Memiliki tautan hosting/YouTube yang berfungsi
 
-Jika Anda melihat masalah pada video yang dicantumkan, [buat sebuah isu](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml) atau kirim email ke [website@ethereum.org](mailto:website@ethereum.org).
+Jika Anda melihat masalah pada video yang dicantumkan, [buat sebuah isu](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml) atau kirim email ke [website@quantaureum.com](mailto:website@quantaureum.com).
 
 ## Ketentuan penggunaan {#terms-of-use}
 
-Harap merujuk pada [ketentuan penggunaan](/terms-of-use/) ethereum.org. Informasi di ethereum.org disediakan semata-mata untuk tujuan informasi umum.
+Harap merujuk pada [ketentuan penggunaan](/terms-of-use/) quantaureum.com. Informasi di quantaureum.com disediakan semata-mata untuk tujuan informasi umum.

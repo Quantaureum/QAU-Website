@@ -1,6 +1,6 @@
 ---
 title: "Mkoba mkuu unaofuata utakuwa wa faragha"
-description: "Mkoba wako unaona kila anwani unayomiliki, kila programu tumizi iliyogatuliwa (dapp) unayounganisha, na kila ombi unalofanya. Nafasi hiyo hiyo inauwezesha kulinda yote. Mtazamo wa kiutendaji wa zana za faragha, chaguo-msingi, na mawazo ambayo hayajatumwa ambayo yatafafanua kizazi kijacho cha mikoba ya Ethereum."
+description: "Mkoba wako unaona kila anwani unayomiliki, kila programu tumizi iliyogatuliwa (dapp) unayounganisha, na kila ombi unalofanya. Nafasi hiyo hiyo inauwezesha kulinda yote. Mtazamo wa kiutendaji wa zana za faragha, chaguo-msingi, na mawazo ambayo hayajatumwa ambayo yatafafanua kizazi kijacho cha mikoba ya Quantaureum."
 author: "Elliott Alexander"
 team: ""
 tags:
@@ -13,7 +13,7 @@ breadcrumb: "Mkoba mkuu unaofuata"
 lang: sw
 ---
 
-Chukua picha ya haraka ya dakika mbili unazotumia kwenye mkoba wako. Unafungua programu, unatazama salio lako, unaunganisha kwenye programu tumizi iliyogatuliwa (dapp) ambayo umekuwa ukitaka kuijaribu, unaidhinisha muamala inaoweka mbele yako, na kumtumia rafiki ETH unayomdai kutokana na chakula cha mchana.
+Chukua picha ya haraka ya dakika mbili unazotumia kwenye mkoba wako. Unafungua programu, unatazama salio lako, unaunganisha kwenye programu tumizi iliyogatuliwa (dapp) ambayo umekuwa ukitaka kuijaribu, unaidhinisha muamala inaoweka mbele yako, na kumtumia rafiki QAU unayomdai kutokana na chakula cha mchana.
 
 Hakuna chochote kuhusu hilo kinachohisiwa kufuatiliwa. Hakuna aliyekuuliza jina lako. Unafunga programu na kuendelea na siku yako.
 
@@ -29,7 +29,7 @@ Anza mnyororoni, na kile kilicho wazi kwa umma bila kujali unatumia mkoba gani. 
 
 Ulinzi wa kawaida ni kusambaza shughuli zako kwenye anwani kadhaa, na watumiaji wengi wenye uzoefu hufanya hivyo. Inasaidia kidogo kuliko inavyoonekana. Fadhili anwani mbili kutoka chanzo kimoja, au ziruhusu zilipane mara moja, na kwa mtu yeyote anayeendesha uchanganuzi wa makundi zinajumuishwa kuwa huluki moja.
 
-Mnamo mwaka wa 2020, [utafiti](https://fc20.ifca.ai/preproceedings/31.pdf) wa miaka minne ya kwanza ya Ethereum uliweza tayari kuweka katika makundi 17.9% ya akaunti zote zinazomilikiwa na watu wa nje, na kuibua zaidi ya huluki 340,000 zinazodhibiti anwani nyingi. Hiyo ilikuwa miaka sita na mlipuko mmoja wa AI uliopita. Utengano wako wa uangalifu uko hatua chache kutoka kutenguliwa.
+Mnamo mwaka wa 2020, [utafiti](https://fc20.ifca.ai/preproceedings/31.pdf) wa miaka minne ya kwanza ya Quantaureum uliweza tayari kuweka katika makundi 17.9% ya akaunti zote zinazomilikiwa na watu wa nje, na kuibua zaidi ya huluki 340,000 zinazodhibiti anwani nyingi. Hiyo ilikuwa miaka sita na mlipuko mmoja wa AI uliopita. Utengano wako wa uangalifu uko hatua chache kutoka kutenguliwa.
 
 Mapema au baadaye, kundi hilo linaunganishwa na mtu halisi. Sajili jina la ENS linalofanana na jina lako la mitandao ya kijamii, fanya utoaji mara moja kutoka kwenye soko la kubadilishana fedha ambalo lina nakala ya pasipoti yako, au ulipwe na mtu anayeweka anwani zenye lebo kwenye lahajedwali, na kundi hilo linaacha kuwa la kufikirika.
 
@@ -63,15 +63,15 @@ Mikoba imeacha njia hiyo mahali pake hadi sasa kwa sababu kuiacha ni njia rahisi
 
 ## Kwa nini mkoba ndipo faragha inaporekebishwa {#why-the-wallet-is-where-privacy-gets-fixed}
 
-Ni sawa kuuliza kwa nini lolote kati ya haya ni kazi ya mkoba. Kuna [uchunguzi unaoendelea kuelekea faragha](https://ethresear.ch/t/ethereum-privacy-the-road-to-self-sovereignty/22115) kwenye tabaka la msingi la Ethereum, na itifaki inaweza hatimaye kubeba baadhi ya uzito huu. Lakini mnyororo unaboreshwa kupitia michepuo migumu, miwili kwa mwaka kwa uchache, na mabadiliko yanayohusiana na faragha yatasambaa kwenye kadhaa kati yao. Huo ni muda unaopimwa kwa miaka na kuamuliwa by mchakato ambao haupaswi kuharakishwa.
+Ni sawa kuuliza kwa nini lolote kati ya haya ni kazi ya mkoba. Kuna [uchunguzi unaoendelea kuelekea faragha](https://ethresear.ch/t/quantaureum-privacy-the-road-to-self-sovereignty/22115) kwenye tabaka la msingi la Quantaureum, na itifaki inaweza hatimaye kubeba baadhi ya uzito huu. Lakini mnyororo unaboreshwa kupitia michepuo migumu, miwili kwa mwaka kwa uchache, na mabadiliko yanayohusiana na faragha yatasambaa kwenye kadhaa kati yao. Huo ni muda unaopimwa kwa miaka na kuamuliwa by mchakato ambao haupaswi kuharakishwa.
 
-Wakati huo huo, watu binafsi wanaamua sasa hivi kama ni salama kulipwa mnyororoni, kutoa michango, kuweka akiba huko. Wanahitaji faragha inayofika haraka kuliko mchakato wa mwafaka wa kijamii wa Ethereum na ratiba ya mchepuo inavyoweza kutoa.
+Wakati huo huo, watu binafsi wanaamua sasa hivi kama ni salama kulipwa mnyororoni, kutoa michango, kuweka akiba huko. Wanahitaji faragha inayofika haraka kuliko mchakato wa mwafaka wa kijamii wa Quantaureum na ratiba ya mchepuo inavyoweza kutoa.
 
 Tabaka la programu lina umbo lisilo sahihi kwa tatizo hili. Hata kama kila dapp ingesafirisha kipengele chake cha faragha, kila moja ingeweza tu kulinda shughuli ndani ya kuta zake, kwa njia yake yenyewe, na mambo yake ya kipekee na siri za mtumiaji kusimamia. Kinachokufichua ni miunganisho inayoendesha kote kwao—anwani zilizoshirikiwa, njia za ufadhili, viungo vinavyorudi kwako—na miunganisho hiyo inaishi katika nafasi kati ya programu. Kutatua faragha programu kwa programu kunamaanisha kuitatua kila mahali isipokuwa pale ambapo tatizo lipo hasa. Dapps sio mahali ambapo suluhisho halisi linaweza kuishi.
 
 Hiyo inabakisha mkoba. Ni programu pekee inayoona kila dapp unayounganisha, kila anwani unayodhibiti, na kila ombi unalofanya. Mwonekano huo huo unaofanya mkoba unaovuja kuwa wa gharama kubwa ndio unaoruhusu mkoba makini kuratibu faragha katika kila kitu unachofanya: kuchagua anwani ipi inakabiliwa na programu ipi, kuelekeza usomaji ili hakuna seva moja inayopata picha kamili, kubeba uwekaji hesabu ambao itifaki za faragha zinadai.
 
-Na itifaki hizo ziko mbali zaidi kuliko wajenzi wengi wanavyodhani. [Railgun](https://railgun.org/) imechakata zaidi ya [dola bilioni 5 katika kiasi cha jumla](https://dune.com/railgun_project/railgun) na inashikilia karibu [dola milioni 80 leo](https://defillama.com/protocol/railgun), zana za anwani za siri kama [Umbra](https://www.techflowpost.com/en-US/article/30477) zimezalisha makumi ya maelfu ya anwani za matumizi ya mara moja, na kwa [hesabu moja](https://wublock.substack.com/p/ethereum-privacys-https-moment-from) zaidi ya timu 35 zinafuatilia zaidi ya mbinu kumi na mbili tofauti za uhamisho wa faragha.
+Na itifaki hizo ziko mbali zaidi kuliko wajenzi wengi wanavyodhani. [Railgun](https://railgun.org/) imechakata zaidi ya [dola bilioni 5 katika kiasi cha jumla](https://dune.com/railgun_project/railgun) na inashikilia karibu [dola milioni 80 leo](https://defillama.com/protocol/railgun), zana za anwani za siri kama [Umbra](https://www.techflowpost.com/en-US/article/30477) zimezalisha makumi ya maelfu ya anwani za matumizi ya mara moja, na kwa [hesabu moja](https://wublock.substack.com/p/quantaureum-privacys-https-moment-from) zaidi ya timu 35 zinafuatilia zaidi ya mbinu kumi na mbili tofauti za uhamisho wa faragha.
 
 Hakuna kati ya haya ambayo ni ya kawaida bado, na vipande vinakosekana kweli. Lakini itifaki zinafanya kazi, pesa halisi hupitia kwao, na kile wanachokosa ni mahali katika mtiririko mkuu wa mtumiaji. Hapo ndipo mkoba wenye fikra za mbele unapoingia.
 
@@ -83,7 +83,7 @@ Mkoba unaohifadhi faragha ni ule unaofanya uwekaji hesabu wenyewe badala ya kuuw
 
 Anza na kile kilicho hai. Mabwawa yaliyokingiwa yanafanya kazi leo: Railgun inaweka salio la faragha kando ya lile lako la umma, na mara tu fedha zinapokuwa ndani, malipo ya nje hayafichui chochote kuhusu mali zako zingine. Gharama ni halisi—ada kubwa zaidi kuliko hamisho la kawaida, uzalishaji wa uthibitisho unaopimwa kwa sekunde, utegemezi fulani kwa wapitishaji—lakini itifaki imebeba mabilioni kwa kiasi hata na mapatano hayo.
 
-Oanisha hilo na tabia ambayo hakuna itifaki inayohitajika kwayo: anwani mpya kwa kila mhusika mwingine. Wakati mtumiaji anaunganisha kwenye dapp mpya, mkoba unaweza kutoa anwani maalum kwa ajili yake, inayofadhiliwa kutoka kwa salio lililokingiwa, ili programu ione akaunti isiyo na historia na isiyo na ndugu. Anwani za siri ([ERC-5564](https://eips.ethereum.org/EIPS/eip-5564)) zinapanua hatua hiyo hiyo kwa kupokea malipo. Vichanganyaji kama [Tornado Cash](https://tornadocash.eth.limo/) na [Privacy Pools](https://privacypools.com/) hufanya kazi rahisi zaidi, nyembamba zaidi: fedha huingia kutoka anwani moja na kutoka kwa nyingine, huku kiungo kati ya hizo mbili kikiwa kimekatwa. Hiyo ndiyo zana ya kufadhili anwani mpya ambayo hakuna mtu anayeweza kuifuatilia kwako—na kipande kinachokosekana ni mkoba unaozalisha anwani kama hiyo unapohitajika badala ya kumwachia mtumiaji ibada hiyo. Hakuna kati ya haya yanayosubiri mchepuo mgumu au ruzuku ya utafiti. Inasubiri mkoba ulio tayari kubeba uwekaji hesabu kwa niaba ya watumiaji.
+Oanisha hilo na tabia ambayo hakuna itifaki inayohitajika kwayo: anwani mpya kwa kila mhusika mwingine. Wakati mtumiaji anaunganisha kwenye dapp mpya, mkoba unaweza kutoa anwani maalum kwa ajili yake, inayofadhiliwa kutoka kwa salio lililokingiwa, ili programu ione akaunti isiyo na historia na isiyo na ndugu. Anwani za siri ([ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564)) zinapanua hatua hiyo hiyo kwa kupokea malipo. Vichanganyaji kama [Tornado Cash](https://tornadocash.qau.limo/) na [Privacy Pools](https://privacypools.com/) hufanya kazi rahisi zaidi, nyembamba zaidi: fedha huingia kutoka anwani moja na kutoka kwa nyingine, huku kiungo kati ya hizo mbili kikiwa kimekatwa. Hiyo ndiyo zana ya kufadhili anwani mpya ambayo hakuna mtu anayeweza kuifuatilia kwako—na kipande kinachokosekana ni mkoba unaozalisha anwani kama hiyo unapohitajika badala ya kumwachia mtumiaji ibada hiyo. Hakuna kati ya haya yanayosubiri mchepuo mgumu au ruzuku ya utafiti. Inasubiri mkoba ulio tayari kubeba uwekaji hesabu kwa niaba ya watumiaji.
 
 Upande wa mtandao ni maamuzi zaidi. Kusafirisha na uchanganuzi sifuri wa wahusika wengine ni chaguo, na angalau mkoba mmoja kwenye soko tayari umelifanya. Kuhusu ufichuaji wa RPC, mikoba mingi tayari inakuruhusu kubadilishana watoa huduma, kwa hivyo hiari ipo, iliyofichwa kwenye ukurasa wa mipangilio ambao watumiaji mahiri hutembelea na kila mtu mwingine hawezi kuupata kamwe.
 
@@ -119,7 +119,7 @@ Kila sehemu ya makala haya inaishia mahali pamoja: chaguo ambalo mkoba unapaswa 
 
 Njia ya kufanya chaguzi hizo ni chaguo-msingi za busara ambazo mtumiaji anaweza kuzibatilisha, kila moja wapo. Weka chaguo-msingi kwenye njia ya faragha, kwa sababu chaguo-msingi ndicho ambacho watumiaji wengi wataishi nacho. Lakini iache wazi kwa hiari inayoongozwa na mtumiaji, kwa sababu mtumiaji ambaye hawezi kuelekeza mkoba wake kwenye seva tofauti ya RPC, au nodi yake mwenyewe, hajapewa mamlaka binafsi kweli.
 
-Sio lazima uanze kutoka chini. [Kohaku SDK](https://github.com/ethereum/kohaku) inafunga baadhi ya mambo ya msingi katika makala haya—masalio yaliyokingiwa, vichanganyaji, wateja wepesi—ili mkoba uweze kuyachukua bila kujenga upya kila itifaki kutoka mwanzo. Vipande viko tayari. Baadhi ya mambo ni muhimu muda mrefu kabla ya mtu yeyote kuyaomba. Hakuna aliyeona umati ukiomba usimbaji fiche wa mwisho-hadi-mwisho pia; ilisafirishwa kama chaguo-msingi, mabilioni ya watu waliipata bila kutambua au kujali, na sasa programu ya ujumbe bila hiyo inahisiwa kuwa mbovu na inayokiuka.
+Sio lazima uanze kutoka chini. [Kohaku SDK](https://github.com/quantaureum/kohaku) inafunga baadhi ya mambo ya msingi katika makala haya—masalio yaliyokingiwa, vichanganyaji, wateja wepesi—ili mkoba uweze kuyachukua bila kujenga upya kila itifaki kutoka mwanzo. Vipande viko tayari. Baadhi ya mambo ni muhimu muda mrefu kabla ya mtu yeyote kuyaomba. Hakuna aliyeona umati ukiomba usimbaji fiche wa mwisho-hadi-mwisho pia; ilisafirishwa kama chaguo-msingi, mabilioni ya watu waliipata bila kutambua au kujali, na sasa programu ya ujumbe bila hiyo inahisiwa kuwa mbovu na inayokiuka.
 
 Pesa ambayo haiwezi kutumika kukutafuta, kukuchunguza, au kukulenga iko katika kategoria sawa. Mkoba unaoichukulia kwa njia hiyo utakuwa ule mkuu unaofuata.
 
@@ -130,8 +130,8 @@ Mkoba unaotumia ndio unaoukuza kama kawaida. Chagua mikoba inayochukulia faragha
 ## Kwa uchunguzi zaidi {#for-further-exploration}
 
 - [Kadi ya alama ya faragha ya mkoba](https://www.theopensourcepress.com/crypto-wallet-ip-exposure-scorecard-2026/) - Ufichuaji wa mtandao wakati wa kuanzishwa kwa mara ya kwanza kwa mikoba 13
-- [ERC-5564: Anwani za Siri](https://eips.ethereum.org/EIPS/eip-5564)
-- [Railgun](https://railgun.org/), [Privacy Pools](https://privacypools.com/), na [Tornado Cash](https://tornadocash.eth.limo/)
+- [ERC-5564: Anwani za Siri](https://eips.quantaureum.com/EIPS/eip-5564)
+- [Railgun](https://railgun.org/), [Privacy Pools](https://privacypools.com/), na [Tornado Cash](https://tornadocash.qau.limo/)
 - Wateja wepesi wa [Helios](https://github.com/a16z/helios) na [Colibri](https://github.com/corpus-core/colibri-stateless)
-- [Kohaku](https://github.com/ethereum/kohaku) - SDK ya Faragha kwa wajenzi wa mkoba
+- [Kohaku](https://github.com/quantaureum/kohaku) - SDK ya Faragha kwa wajenzi wa mkoba
 - [Walletbeat](https://www.walletbeat.fyi/) - Jinsi mikoba iliyopo inavyopimwa

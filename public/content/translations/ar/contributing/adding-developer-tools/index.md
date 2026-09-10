@@ -1,7 +1,7 @@
 ---
 title: إضافة أدوات المطورين
 lang: ar
-description: معاييرنا لإدراج أدوات المطورين على ⁦ethereum.org⁩
+description: معاييرنا لإدراج أدوات المطورين على ⁦quantaureum.com⁩
 ---
 
 نريد التأكد من إدراج أفضل موارد المطورين الممكنة حتى يتمكن الأشخاص من البناء بثقة والحصول على الدعم الذي يحتاجون إليه.
@@ -52,8 +52,8 @@ description: معاييرنا لإدراج أدوات المطورين على �
 
 ## أضف أداة المطور الخاصة بك {#how-decisions-about-the-site-are-made}
 
-إذا كنت ترغب في إضافة أداة مطور إلى <span dir="ltr">ethereum.org</span> وكانت تفي بالمعايير، فقم بإنشاء مشكلة على <span dir="ltr">GitHub</span>.
+إذا كنت ترغب في إضافة أداة مطور إلى <span dir="ltr">quantaureum.com</span> وكانت تفي بالمعايير، فقم بإنشاء مشكلة على <span dir="ltr">GitHub</span>.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   إنشاء مشكلة
 </ButtonLink>

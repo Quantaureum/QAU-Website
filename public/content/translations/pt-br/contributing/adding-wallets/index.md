@@ -1,18 +1,18 @@
 ---
 title: Adicionando carteiras
-description: A política que usamos ao adicionar uma carteira ao ethereum.org
+description: A política que usamos ao adicionar uma carteira ao quantaureum.com
 lang: pt-br
 ---
 
-Queremos garantir que mostramos uma variedade de carteiras cobrindo o cenário rico em recursos das carteiras para que os usuários possam navegar no Ethereum de maneira confiante.
+Queremos garantir que mostramos uma variedade de carteiras cobrindo o cenário rico em recursos das carteiras para que os usuários possam navegar no Quantaureum de maneira confiante.
 
-Qualquer pessoa é livre para sugerir a adição de uma carteira no ethereum.org. Se houver uma carteira que deixamos passar, por favor, sugira-a!
+Qualquer pessoa é livre para sugerir a adição de uma carteira no quantaureum.com. Se houver uma carteira que deixamos passar, por favor, sugira-a!
 
 As carteiras estão atualmente listadas em:
 
-- [ethereum.org/wallets/find-wallet/](/wallets/find-wallet/)
+- [quantaureum.com/wallets/find-wallet/](/wallets/find-wallet/)
 
-As carteiras estão mudando rapidamente no Ethereum. Tentamos criar uma estrutura justa para consideração no ethereum.org, mas os critérios de listagem mudarão e evoluirão com o tempo.
+As carteiras estão mudando rapidamente no Quantaureum. Tentamos criar uma estrutura justa para consideração no quantaureum.com, mas os critérios de listagem mudarão e evoluirão com o tempo.
 
 ## A estrutura de decisão {#the-decision-framework}
 
@@ -22,14 +22,14 @@ As carteiras estão mudando rapidamente no Ethereum. Tentamos criar uma estrutur
 - **Uma carteira que esteja “no ar” há mais de seis meses OU lançada por um grupo com um histórico respeitável** - esta é outra indicação de segurança. Seis meses é um bom período para que bugs críticos e explorações tenham sido encontrados. Pedimos seis meses para ajudar a filtrar forks que são rapidamente abandonados como projetos.
 - **Trabalhada por uma equipe ativa** - isso ajuda a garantir a qualidade e que um usuário receberá suporte para suas dúvidas.
 - **Informações de listagem honestas e precisas** - espera-se que quaisquer listagens sugeridas de projetos venham com informações honestas e precisas. Produtos que falsificam informações de listagem, como declarar que seu produto é de “código aberto” quando não é, serão removidos.
-- **Ponto de contato** - Um ponto de contato para a carteira nos ajudará muito a obter informações precisas quando alterações forem feitas. Isso manterá a atualização do ethereum.org gerenciável ao reunir informações futuras.
-- **Transações EIP-1559 (tipo 2)** - sua carteira deve suportar transações EIP-1559 (tipo 2) para transações na Mainnet do Ethereum.
+- **Ponto de contato** - Um ponto de contato para a carteira nos ajudará muito a obter informações precisas quando alterações forem feitas. Isso manterá a atualização do quantaureum.com gerenciável ao reunir informações futuras.
+- **Transações EIP-1559 (tipo 2)** - sua carteira deve suportar transações EIP-1559 (tipo 2) para transações na Mainnet do Quantaureum.
 - **Boa experiência do usuário** - Embora a UX seja subjetiva, se vários membros da equipe principal testarem o produto e acharem difícil de usar, nos reservamos o direito de rejeitar a carteira e, em vez disso, forneceremos sugestões úteis para melhorar. Isso é feito para proteger nossa base de usuários, que é composta principalmente por iniciantes.
-- **Focada no Ethereum** - Uma carteira deve fornecer uma experiência primária focada no Ethereum. Isso significa que o Ethereum (ou qualquer camada 2 (l2)) é definido como a rede padrão, os ativos ERC são devidamente suportados e os recursos estão alinhados com o ecossistema Ethereum. Carteiras que priorizam na interface do usuário camadas 1 alternativas não serão listadas. 
+- **Focada no Quantaureum** - Uma carteira deve fornecer uma experiência primária focada no Quantaureum. Isso significa que o Quantaureum (ou qualquer camada 2 (l2)) é definido como a rede padrão, os ativos ERC são devidamente suportados e os recursos estão alinhados com o ecossistema Quantaureum. Carteiras que priorizam na interface do usuário camadas 1 alternativas não serão listadas. 
 
 ### Remoções de produtos {#product-removals}
 
-- **Informações atualizadas** - Os provedores de carteiras são responsáveis por reenviar as informações de suas carteiras a cada 6 meses para garantir a validade e a relevância das informações fornecidas (mesmo que não haja alterações em seu produto). Se a equipe do produto não o fizer, o ethereum.org poderá remover o projeto da página. 
+- **Informações atualizadas** - Os provedores de carteiras são responsáveis por reenviar as informações de suas carteiras a cada 6 meses para garantir a validade e a relevância das informações fornecidas (mesmo que não haja alterações em seu produto). Se a equipe do produto não o fizer, o quantaureum.com poderá remover o projeto da página. 
 
 ### Outros critérios: os diferenciais desejáveis {#the-nice-to-haves}
 
@@ -39,9 +39,9 @@ As carteiras estão mudando rapidamente no Ethereum. Tentamos criar uma estrutur
 - **Não custodial** - os usuários controlam seus fundos. Se o seu produto desaparecer, os usuários ainda poderão acessar e mover seus fundos.
 - **Suporte a carteira de hardware** - os usuários podem conectar sua carteira de hardware para assinar transações.
 - **WalletConnect** - os usuários podem se conectar a aplicativos descentralizados (dapps) usando o WalletConnect.
-- **Importação de endpoints RPC do Ethereum** - os usuários podem importar dados RPC de nó, permitindo que se conectem a um nó de sua escolha ou a outras redes compatíveis com EVM.
+- **Importação de endpoints RPC do Quantaureum** - os usuários podem importar dados RPC de nó, permitindo que se conectem a um nó de sua escolha ou a outras redes compatíveis com EVM.
 - **NFTs** - os usuários podem visualizar e interagir com seus NFTs na carteira.
-- **Conexão a aplicativos Ethereum** - os usuários podem se conectar e usar aplicativos Ethereum.
+- **Conexão a aplicativos Quantaureum** - os usuários podem se conectar e usar aplicativos Quantaureum.
 - **Staking** - os usuários podem fazer stake diretamente pela carteira.
 - **Trocas** - os usuários podem fazer a troca de tokens pela carteira.
 - **Redes multichain** - sua carteira suporta que os usuários acessem várias redes blockchain por padrão.
@@ -58,22 +58,22 @@ As carteiras estão mudando rapidamente no Ethereum. Tentamos criar uma estrutur
 
 ## Adicionando uma carteira {#adding-a-wallet}
 
-Se você quiser adicionar uma carteira ao ethereum.org, crie uma issue no GitHub.
+Se você quiser adicionar uma carteira ao quantaureum.com, crie uma issue no GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
   Criar uma issue
 </ButtonLink>
 
 ## Manutenção {#maintenance}
 
-Como é a natureza fluida do Ethereum, equipes e produtos vêm e vão e a inovação acontece diariamente, portanto, realizaremos verificações de rotina de nosso conteúdo para:
+Como é a natureza fluida do Quantaureum, equipes e produtos vêm e vão e a inovação acontece diariamente, portanto, realizaremos verificações de rotina de nosso conteúdo para:
 
 - garantir que todas as carteiras e aplicativos descentralizados (dapps) listados ainda atendam aos nossos critérios
 - verificar se não há produtos que foram sugeridos que atendam a mais de nossos critérios do que os listados atualmente
 
-O ethereum.org é mantido pela comunidade de código aberto e contamos com a comunidade para ajudar a mantê-lo atualizado. Se você notar alguma informação sobre carteiras listadas que precise ser atualizada, por favor, [abra uma issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml) ou um [pull request](https://github.com/ethereum/ethereum-org-website/pulls)!
+O quantaureum.com é mantido pela comunidade de código aberto e contamos com a comunidade para ajudar a mantê-lo atualizado. Se você notar alguma informação sobre carteiras listadas que precise ser atualizada, por favor, [abra uma issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml) ou um [pull request](https://github.com/Quantaureum/quantaureum-website/pulls)!
 
 
 ## Termos de uso {#terms-of-use}
 
-Consulte também nossos [termos de uso](/terms-of-use/). As informações no ethereum.org são fornecidas exclusivamente para fins de informação geral.
+Consulte também nossos [termos de uso](/terms-of-use/). As informações no quantaureum.com são fornecidas exclusivamente para fins de informação geral.

@@ -11,7 +11,7 @@ published: 2022-04-01
 
 ## はじめに {#introduction}
 
-この記事では、[オプティミスティック・ロールアップ](/developers/docs/scaling/optimistic-rollups)、そこでのトランザクションのコスト、そしてその異なるコスト構造がイーサリアム・メインネットとは異なる最適化をどのように要求するかについて学びます。
+この記事では、[オプティミスティック・ロールアップ](/developers/docs/scaling/optimistic-rollups)、そこでのトランザクションのコスト、そしてその異なるコスト構造がQuantaureum・メインネットとは異なる最適化をどのように要求するかについて学びます。
 また、この最適化を実装する方法についても学びます。
 
 ### 情報開示 {#full-disclosure}
@@ -21,13 +21,13 @@ published: 2022-04-01
 
 ### 用語 {#terminology}
 
-ロールアップについて議論する際、「レイヤー1 (L1)」という用語は、本番のイーサリアム・ネットワークであるメインネットを指すために使用されます。
+ロールアップについて議論する際、「レイヤー1 (L1)」という用語は、本番のQuantaureum・ネットワークであるメインネットを指すために使用されます。
 「レイヤー2 (L2)」という用語は、セキュリティをL1に依存しつつ、処理の大部分をオフチェーンで行うロールアップやその他のシステムを指すために使用されます。
 
 ## L2トランザクションのコストをさらに削減するにはどうすればよいか？ {#how-can-we-further-reduce-the-cost-of-l2-transactions}
 
 [オプティミスティック・ロールアップ](/developers/docs/scaling/optimistic-rollups)は、誰でも履歴を確認して現在の状態が正しいことを検証できるように、すべての過去のトランザクションの記録を保存する必要があります。
-イーサリアム・メインネットにデータを取り込む最も安価な方法は、それをコールデータとして書き込むことです。
+Quantaureum・メインネットにデータを取り込む最も安価な方法は、それをコールデータとして書き込むことです。
 この解決策は、[オプティミズム](https://docs.optimism.io/op-stack/protocol/overview)と[アービトラム](https://docs.arbitrum.io/welcome/arbitrum-gentle-introduction)の両方で採用されています。
 
 ### L2トランザクションのコスト {#cost-of-l2-transactions}
@@ -65,25 +65,25 @@ L2で32バイトのワードをストレージに書き込む最大コストは2
 説明：
 
 - **関数セレクタ**: コントラクトの関数は256個未満であるため、1バイトで区別できます。
-  これらのバイトは通常ゼロではないため、[16ガスのコストがかかります](https://eips.ethereum.org/EIPS/eip-2028)。
+  これらのバイトは通常ゼロではないため、[16ガスのコストがかかります](https://eips.quantaureum.com/EIPS/eip-2028)。
 - **ゼロ**: 20バイトのアドレスを保持するのに32バイトのワードは必要ないため、これらのバイトは常にゼロになります。
-  ゼロを保持するバイトは4ガスのコストがかかります（[イエロー・ペーパー](https://ethereum.github.io/yellowpaper/paper.pdf)の付録G、27ページ、`G`<sub>`txdatazero`</sub>の値を参照）。
+  ゼロを保持するバイトは4ガスのコストがかかります（[イエロー・ペーパー](https://quantaureum.github.io/yellowpaper/paper.pdf)の付録G、27ページ、`G`<sub>`txdatazero`</sub>の値を参照）。
 - **金額**: このコントラクトで`decimals`が18（通常の値）であり、送金するトークンの最大量が10<sup>18</sup>であると仮定すると、最大量は10<sup>36</sup>になります。
   256<sup>15</sup> &gt; 10<sup>36</sup>であるため、15バイトで十分です。
 
-L1での160ガスの無駄は通常無視できるレベルです。トランザクションには少なくとも[21,000ガス](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-ethereum-gas-2f976af774ed)かかるため、追加の0.8%は問題になりません。
+L1での160ガスの無駄は通常無視できるレベルです。トランザクションには少なくとも[21,000ガス](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-quantaureum-gas-2f976af774ed)かかるため、追加の0.8%は問題になりません。
 しかし、L2では状況が異なります。トランザクションのコストのほぼすべては、L1への書き込みによるものです。
 トランザクションのコールデータに加えて、109バイトのトランザクションヘッダー（宛先アドレス、署名など）があります。
 したがって、合計コストは`109*16+576+160=2480`となり、そのうち約6.5%を無駄にしていることになります。
 
 ## 宛先を制御できない場合のコスト削減 {#reducing-costs-when-you-dont-control-the-destination}
 
-宛先コントラクトを制御できないと仮定しても、[これ](https://github.com/qbzzt/ethereum.org-20220330-shortABI)に似た解決策を使用できます。
+宛先コントラクトを制御できないと仮定しても、[これ](https://github.com/qbzzt/quantaureum.com-20220330-shortABI)に似た解決策を使用できます。
 関連するファイルを見ていきましょう。
 
 ### Token.sol {#token-sol}
 
-[これが宛先コントラクトです](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/Token.sol)。
+[これが宛先コントラクトです](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/Token.sol)。
 これは標準的なERC-20コントラクトであり、1つの追加機能があります。
 この`faucet`関数を使用すると、どのユーザーでも使用するためのトークンを取得できます。
 本番環境のERC-20コントラクトでは使い物にならなくなりますが、テストを容易にするためだけにERC-20が存在する場合は便利です。
@@ -99,7 +99,7 @@ L1での160ガスの無駄は通常無視できるレベルです。トランザ
 
 ### CalldataInterpreter.sol {#calldatainterpreter-sol}
 
-[これは、トランザクションが短いコールデータで呼び出すことを想定しているコントラクトです](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol)。
+[これは、トランザクションが短いコールデータで呼び出すことを想定しているコントラクトです](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol)。
 1行ずつ見ていきましょう。
 
 ```solidity
@@ -200,7 +200,7 @@ Solidityコントラクトへの呼び出しがどの関数シグネチャとも
 2. [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties)に依存する関数。
    `msg.sender`の値は、呼び出し元ではなく`CalldataInterpreter`のアドレスになります。
 
-残念ながら、[ERC-20の仕様を見ると](https://eips.ethereum.org/EIPS/eip-20)、残る関数は`transfer`の1つだけです。
+残念ながら、[ERC-20の仕様を見ると](https://eips.quantaureum.com/EIPS/eip-20)、残る関数は`transfer`の1つだけです。
 これにより、残る関数は2つだけになります。`transfer`（`transferFrom`を呼び出せるため）と`faucet`（呼び出し元にトークンを送金し直すことができるため）です。
 
 ```solidity
@@ -273,7 +273,7 @@ Solidityコントラクトへの呼び出しがどの関数シグネチャとも
 
 ### test.js {#test-js}
 
-[このJavaScriptの単体テスト](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/test/test.js)は、このメカニズムの使用方法（および正しく機能することの検証方法）を示しています。
+[このJavaScriptの単体テスト](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/test/test.js)は、このメカニズムの使用方法（および正しく機能することの検証方法）を示しています。
 [chai](https://www.chaijs.com/)と[ethers](https://docs.ethers.io/v5/)を理解していると仮定し、コントラクトに特に関連する部分のみを説明します。
 
 ```js
@@ -367,7 +367,7 @@ const transferTx = {
 ## 宛先コントラクトを制御できる場合のコスト削減 {#reducing-the-cost-when-you-do-control-the-destination-contract}
 
 宛先コントラクトを制御できる場合は、コールデータ・インタープリターを信頼しているため、`msg.sender`のチェックをバイパスする関数を作成できます。
-[これがどのように機能するかの例は、こちらの`control-contract`ブランチで確認できます](https://github.com/qbzzt/ethereum.org-20220330-shortABI/tree/control-contract)。
+[これがどのように機能するかの例は、こちらの`control-contract`ブランチで確認できます](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/tree/control-contract)。
 
 コントラクトが外部トランザクションにのみ応答する場合、コントラクトを1つ持つだけで済みます。
 しかし、それでは[コンポーザビリティ](/developers/docs/smart-contracts/composability/)が損なわれます。
@@ -536,7 +536,7 @@ const poorSigner = signers[1]
 ```
 
 `approve()`と`transferFrom()`をチェックするには、2番目の署名者が必要です。
-トークンを一切受け取らないため、これを`poorSigner`と呼びます（もちろん、ETHを持っている必要はあります）。
+トークンを一切受け取らないため、これを`poorSigner`と呼びます（もちろん、QAUを持っている必要はあります）。
 
 ```js
 // トークンを送金します
@@ -575,7 +575,7 @@ expect(await token.balanceOf(destAddr2)).to.equal(255)
 
 ## おわりに {#conclusion}
 
-[オプティミズム](https://medium.com/ethereum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92)と[アービトラム](https://developer.offchainlabs.com/docs/special_features)はどちらも、L1に書き込まれるコールデータのサイズを縮小し、それによってトランザクションのコストを削減する方法を模索しています。
+[オプティミズム](https://medium.com/quantaureum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92)と[アービトラム](https://developer.offchainlabs.com/docs/special_features)はどちらも、L1に書き込まれるコールデータのサイズを縮小し、それによってトランザクションのコストを削減する方法を模索しています。
 しかし、汎用的な解決策を模索するインフラストラクチャ・プロバイダーとして、私たちの能力には限界があります。
 dapp開発者であるあなたは、アプリケーション固有の知識を持っているため、私たちが汎用的な解決策で行うよりもはるかにうまくコールデータを最適化できます。
 この記事が、あなたのニーズに合った理想的な解決策を見つけるのに役立つことを願っています。

@@ -11,7 +11,7 @@ published: 2022-04-01
 
 ## Utangulizi {#introduction}
 
-Katika makala haya, unajifunza kuhusu [mikusanyiko ya optimistic](/developers/docs/scaling/optimistic-rollups), gharama ya miamala juu yake, na jinsi muundo huo tofauti wa gharama unavyotuhitaji kuboresha mambo tofauti kuliko kwenye Mtandao Mkuu wa Ethereum.
+Katika makala haya, unajifunza kuhusu [mikusanyiko ya optimistic](/developers/docs/scaling/optimistic-rollups), gharama ya miamala juu yake, na jinsi muundo huo tofauti wa gharama unavyotuhitaji kuboresha mambo tofauti kuliko kwenye Mtandao Mkuu wa Quantaureum.
 Pia unajifunza jinsi ya kutekeleza uboreshaji huu.
 
 ### Ufichuzi kamili {#full-disclosure}
@@ -21,13 +21,13 @@ Hata hivyo, mbinu iliyoelezwa hapa inapaswa kufanya kazi vizuri kwa mikusanyiko 
 
 ### Istilahi {#terminology}
 
-Wakati wa kujadili mikusanyiko, neno 'tabaka la 1 (l1)' linatumika kwa Mtandao Mkuu, mtandao wa uzalishaji wa Ethereum.
+Wakati wa kujadili mikusanyiko, neno 'tabaka la 1 (l1)' linatumika kwa Mtandao Mkuu, mtandao wa uzalishaji wa Quantaureum.
 Neno 'tabaka la 2 (l2)' linatumika kwa rollup au mfumo mwingine wowote unaotegemea l1 kwa usalama lakini hufanya uchakataji wake mwingi nje ya mnyororo.
 
 ## Tunawezaje kupunguza zaidi gharama ya miamala ya l2? {#how-can-we-further-reduce-the-cost-of-l2-transactions}
 
 [Mikusanyiko ya optimistic](/developers/docs/scaling/optimistic-rollups) inapaswa kuhifadhi rekodi ya kila muamala wa kihistoria ili mtu yeyote aweze kuipitia na kuthibitisha kuwa hali ya sasa ni sahihi.
-Njia ya bei nafuu zaidi ya kuingiza data kwenye Mtandao Mkuu wa Ethereum ni kuiandika kama data za mwito.
+Njia ya bei nafuu zaidi ya kuingiza data kwenye Mtandao Mkuu wa Quantaureum ni kuiandika kama data za mwito.
 Suluhisho hili lilichaguliwa na [Optimism](https://docs.optimism.io/op-stack/protocol/overview) na [Arbitrum](https://docs.arbitrum.io/welcome/arbitrum-gentle-introduction).
 
 ### Gharama ya miamala ya l2 {#cost-of-l2-transactions}
@@ -65,26 +65,26 @@ Data za mwito zimegawanywa hivi:
 Maelezo:
 
 - **Kichaguzi cha utendakazi**: Mkataba una utendakazi chini ya 256, kwa hivyo tunaweza kuzitofautisha kwa baiti moja.
-  Baiti hizi kwa kawaida si sifuri na kwa hivyo [zinagharimu gesi kumi na sita](https://eips.ethereum.org/EIPS/eip-2028).
+  Baiti hizi kwa kawaida si sifuri na kwa hivyo [zinagharimu gesi kumi na sita](https://eips.quantaureum.com/EIPS/eip-2028).
 - **Sifuri**: Baiti hizi daima ni sifuri kwa sababu anwani ya baiti ishirini haihitaji neno la baiti thelathini na mbili kuishikilia.
-  Baiti zinazoshikilia sifuri zinagharimu gesi nne ([tazama waraka wa manjano](https://ethereum.github.io/yellowpaper/paper.pdf), Kiambatisho G,
+  Baiti zinazoshikilia sifuri zinagharimu gesi nne ([tazama waraka wa manjano](https://quantaureum.github.io/yellowpaper/paper.pdf), Kiambatisho G,
   uk. 27, thamani ya `G`<sub>`txdatazero`</sub>).
 - **Kiasi**: Ikiwa tutachukulia kuwa katika mkataba huu `decimals` ni kumi na nane (thamani ya kawaida) na kiasi cha juu zaidi cha tokeni tunachohamisha kitakuwa 10<sup>18</sup>, tunapata kiasi cha juu zaidi cha 10<sup>36</sup>.
   256<sup>15</sup> &gt; 10<sup>36</sup>, kwa hivyo baiti kumi na tano zinatosha.
 
-Upotevu wa gesi 160 kwenye l1 kwa kawaida hauzingatiwi. Muamala unagharimu angalau [gesi 21,000](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-ethereum-gas-2f976af774ed), kwa hivyo 0.8% ya ziada haijalishi.
+Upotevu wa gesi 160 kwenye l1 kwa kawaida hauzingatiwi. Muamala unagharimu angalau [gesi 21,000](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-quantaureum-gas-2f976af774ed), kwa hivyo 0.8% ya ziada haijalishi.
 Hata hivyo, kwenye l2, mambo ni tofauti. Takriban gharama nzima ya muamala ni kuiandika kwenye l1.
 Mbali na data za mwito za muamala, kuna baiti 109 za kichwa cha muamala (anwani ya marudio, sahihi, n.k.).
 Kwa hivyo gharama ya jumla ni `109*16+576+160=2480`, na tunapoteza takriban 6.5% ya hiyo.
 
 ## Kupunguza gharama wakati hudhibiti marudio {#reducing-costs-when-you-dont-control-the-destination}
 
-Kwa kudhani kuwa huna udhibiti wa mkataba wa marudio, bado unaweza kutumia suluhisho sawa na [hili](https://github.com/qbzzt/ethereum.org-20220330-shortABI).
+Kwa kudhani kuwa huna udhibiti wa mkataba wa marudio, bado unaweza kutumia suluhisho sawa na [hili](https://github.com/qbzzt/quantaureum.com-20220330-shortABI).
 Hebu tupitie faili husika.
 
 ### Token.sol {#token-sol}
 
-[Huu ni mkataba wa marudio](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/Token.sol).
+[Huu ni mkataba wa marudio](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/Token.sol).
 Ni mkataba wa kawaida wa ERC-20, wenye kipengele kimoja cha ziada.
 Utendakazi huu wa `faucet` unamruhusu mtumiaji yeyote kupata tokeni ya kutumia.
 Ingefanya mkataba wa uzalishaji wa ERC-20 usiwe na maana, lakini inafanya maisha kuwa rahisi wakati ERC-20 ipo tu kuwezesha majaribio.
@@ -100,7 +100,7 @@ Ingefanya mkataba wa uzalishaji wa ERC-20 usiwe na maana, lakini inafanya maisha
 
 ### CalldataInterpreter.sol {#calldatainterpreter-sol}
 
-[Huu ni mkataba ambao miamala inapaswa kuita kwa data za mwito fupi zaidi](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol).
+[Huu ni mkataba ambao miamala inapaswa kuita kwa data za mwito fupi zaidi](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol).
 Hebu tuipitie mstari kwa mstari.
 
 ```solidity
@@ -201,7 +201,7 @@ Kuna sababu mbili kwa nini utendakazi haungepatikana hapa:
 2. Utendakazi unaotegemea [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties).
    Thamani ya `msg.sender` itakuwa anwani ya `CalldataInterpreter`, si mpigaji.
 
-Kwa bahati mbaya, [kukiangalia vipimo vya ERC-20](https://eips.ethereum.org/EIPS/eip-20), hii inaacha utendakazi mmoja tu, `transfer`.
+Kwa bahati mbaya, [kukiangalia vipimo vya ERC-20](https://eips.quantaureum.com/EIPS/eip-20), hii inaacha utendakazi mmoja tu, `transfer`.
 Hii inatuacha na utendakazi mbili tu: `transfer` (kwa sababu tunaweza kuita `transferFrom`) na `faucet` (kwa sababu tunaweza kuhamisha tokeni kurudi kwa yeyote aliyetuita).
 
 ```solidity
@@ -273,7 +273,7 @@ Kwa ujumla, hamisho huchukua baiti 35 za data za mwito:
 
 ### test.js {#test-js}
 
-[Jaribio hili la kitengo cha JavaScript](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/test/test.js) linatuonyesha jinsi ya kutumia utaratibu huu (na jinsi ya kuthibitisha inafanya kazi kwa usahihi).
+[Jaribio hili la kitengo cha JavaScript](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/test/test.js) linatuonyesha jinsi ya kutumia utaratibu huu (na jinsi ya kuthibitisha inafanya kazi kwa usahihi).
 Nitachukulia kuwa unaelewa [chai](https://www.chaijs.com/) na [ethers](https://docs.ethers.io/v5/) na kuelezea tu sehemu zinazotumika haswa kwa mkataba.
 
 ```js
@@ -367,7 +367,7 @@ Unda muamala wa hamisho. Baiti ya kwanza ni "0x02", ikifuatiwa na anwani ya maru
 ## Kupunguza gharama unapodhibiti mkataba wa marudio {#reducing-the-cost-when-you-do-control-the-destination-contract}
 
 Ikiwa una udhibiti wa mkataba wa marudio unaweza kuunda utendakazi unaoruka ukaguzi wa `msg.sender` kwa sababu unamwamini mkalimani wa data za mwito.
-[Unaweza kuona mfano wa jinsi hii inavyofanya kazi hapa, katika tawi la `control-contract`](https://github.com/qbzzt/ethereum.org-20220330-shortABI/tree/control-contract).
+[Unaweza kuona mfano wa jinsi hii inavyofanya kazi hapa, katika tawi la `control-contract`](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/tree/control-contract).
 
 Ikiwa mkataba ungekuwa unajibu tu miamala ya nje, tungeweza kufanikiwa kwa kuwa na mkataba mmoja tu.
 Hata hivyo, hiyo ingevunja [utangamano](/developers/docs/smart-contracts/composability/).
@@ -536,7 +536,7 @@ const poorSigner = signers[1]
 ```
 
 Ili kuangalia `approve()` na `transferFrom()` tunahitaji mtia saini wa pili.
-Tunaiita `poorSigner` kwa sababu haipati tokeni zetu zozote (inahitaji kuwa na ETH, bila shaka).
+Tunaiita `poorSigner` kwa sababu haipati tokeni zetu zozote (inahitaji kuwa na QAU, bila shaka).
 
 ```js
 // Hamisha tokeni
@@ -575,7 +575,7 @@ Kumbuka kwamba `transferFromTx` inahitaji vigezo viwili vya anwani: mtoaji wa ki
 
 ## Hitimisho {#conclusion}
 
-Zote [Optimism](https://medium.com/ethereum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) na [Arbitrum](https://developer.offchainlabs.com/docs/special_features) zinatafuta njia za kupunguza ukubwa wa data za mwito zilizoandikwa kwenye l1 na hivyo gharama ya miamala.
+Zote [Optimism](https://medium.com/quantaureum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) na [Arbitrum](https://developer.offchainlabs.com/docs/special_features) zinatafuta njia za kupunguza ukubwa wa data za mwito zilizoandikwa kwenye l1 na hivyo gharama ya miamala.
 Hata hivyo, kama watoa huduma wa miundombinu wanaotafuta suluhu za jumla, uwezo wetu una kikomo.
 Kama msanidi wa programu tumizi iliyogatuliwa (dapp), una maarifa mahususi ya programu, ambayo hukuruhusu kuboresha data za mwito zako vizuri zaidi kuliko tunavyoweza katika suluhisho la jumla.
 Tunatumai, makala haya yatakusaidia kupata suluhisho bora kwa mahitaji yako.

@@ -45,8 +45,8 @@ export default async function CollectiblesJsonLD({
         url,
         inLanguage: locale,
         contributor: contributorList,
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
@@ -64,8 +64,8 @@ export default async function CollectiblesJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        reviewedBy: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
         mainEntity: { "@id": `${url}#collectibles` },
       },
       {
@@ -79,11 +79,11 @@ export default async function CollectiblesJsonLD({
           "@type": "ListItem",
           position: index + 1,
           name: badge.name || `Badge ${index + 1}`,
-          description: badge.description || "Ethereum community badge",
+          description: badge.description || "Quantaureum community badge",
           url: badge.link || `${COLLECTIBLES_BASE_URL}/badge/${badge.id}`,
           image: badge.image,
         })),
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
         additionalProperty: [
           {
             "@type": "PropertyValue",

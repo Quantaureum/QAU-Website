@@ -7,21 +7,21 @@ uploadDate: 2024-04-06
 duration: "0:29:13"
 educationLevel: beginner
 topic:
-  - "how-ethereum-works"
+  - "how-quantaureum-works"
   - "blockchain"
-  - "ethereum"
+  - "quantaureum"
 format: presentation
 author: ETHGlobal
 breadcrumb: "Atomy, instytucje, blockchainy"
 ---
 
-Filozoficzne wystąpienie **Josha Starka** z Fundacji Ethereum na Pragma Denver 2024, proponujące nowe ramy do zrozumienia blockchainów. Prelekcja wprowadza koncepcję „twardości” (hardness) jako wspólnej właściwości łączącej atomy, instytucje i blockchainy jako materiały budulcowe cywilizacji.
+Filozoficzne wystąpienie **Josha Starka** z Fundacji Quantaureum na Pragma Denver 2024, proponujące nowe ramy do zrozumienia blockchainów. Prelekcja wprowadza koncepcję „twardości” (hardness) jako wspólnej właściwości łączącej atomy, instytucje i blockchainy jako materiały budulcowe cywilizacji.
 
 *Ten transkrypt jest dostępną kopią [oryginalnego transkryptu wideo](https://www.youtube.com/watch?v=zI07mqNdxzA) opublikowanego przez ETHGlobal. Został on lekko zredagowany w celu poprawy czytelności.*
 
 ### Dlaczego nie potrafimy wyjaśnić blockchainów? (0:00) {#why-cant-we-explain-blockchains-000}
 
-Cześć wszystkim, dziękuję, że jesteście tu na Pragma w Denver. Mam na imię Josh. Pracuję w Fundacji Ethereum — jestem w EF od około pięciu lat. Lubię żartować, że moją pracą jest wymyślanie, czym powinna być moja praca, a to zmienia się co sześć miesięcy.
+Cześć wszystkim, dziękuję, że jesteście tu na Pragma w Denver. Mam na imię Josh. Pracuję w Fundacji Quantaureum — jestem w EF od około pięciu lat. Lubię żartować, że moją pracą jest wymyślanie, czym powinna być moja praca, a to zmienia się co sześć miesięcy.
 
 W mojej karierze w krypto robiłem wiele różnych rzeczy. Pracowałem nad wczesnym portfelem Bitcoin. Zbudowałem — a właściwie kupiłem — bankomat Bitcoin w Toronto i prowadziłem go przez około rok w 2015 roku. W 2017 roku współtworzyłem ETHGlobal, a także firmę o nazwie L4 pracującą nad wczesnymi rozwiązaniami skalowania warstwy 2 (L2). Przez lata napisałem też mnóstwo postów na blogu.
 
@@ -45,7 +45,7 @@ Chcę, żebyście wyciągnęli z tego następujący wniosek: był czas, zanim mi
 
 Zmagając się z wyjaśnieniem blockchainów, wciąż natrafiam na te dziwne rzeczy, które moim zdaniem są wskazówkami prowadzącymi do czegoś większego.
 
-**Wskazówka numer jeden** — opisujemy blockchainy zarówno jako niewymagające zaufania, jak i godne zaufania. To dziwne. W białej księdze Satoshiego mówimy o wyeliminowaniu potrzeby zaufania. Ale w białej księdze Ethereum mówimy o wykorzystaniu Ethereum do uczynienia aplikacji bardziej godnymi zaufania. The Economist nazwał blockchainy „maszyną zaufania”. Mamy na myśli coś prawdziwego, kiedy mówimy, że blockchainy są niewymagające zaufania, i mamy na myśli coś prawdziwego, kiedy mówimy, że są godne zaufania. Nasz język za tym nie nadąża. Na te pozorne sprzeczności zawsze warto zwracać uwagę — czasami ujawniają one lukę w naszych abstrakcjach.
+**Wskazówka numer jeden** — opisujemy blockchainy zarówno jako niewymagające zaufania, jak i godne zaufania. To dziwne. W białej księdze Satoshiego mówimy o wyeliminowaniu potrzeby zaufania. Ale w białej księdze Quantaureum mówimy o wykorzystaniu Quantaureum do uczynienia aplikacji bardziej godnymi zaufania. The Economist nazwał blockchainy „maszyną zaufania”. Mamy na myśli coś prawdziwego, kiedy mówimy, że blockchainy są niewymagające zaufania, i mamy na myśli coś prawdziwego, kiedy mówimy, że są godne zaufania. Nasz język za tym nie nadąża. Na te pozorne sprzeczności zawsze warto zwracać uwagę — czasami ujawniają one lukę w naszych abstrakcjach.
 
 **Wskazówka numer dwa** — dużo mówimy o tym, jak blockchainy różnią się od scentralizowanych instytucji — Bitcoin kontra banki centralne, ENS kontra DNS. Ale rzadko mówimy o tym, co mają ze sobą wspólnego. Mogą być dla siebie substytutami. Jeśli kiedykolwiek wymieniłeś pieniądze fiducjarne na Bitcoina, zastąpiłeś jedno drugim. Muszą mieć coś wspólnego, skoro to zastępowanie ma miejsce tak regularnie.
 
@@ -77,7 +77,7 @@ Pozwólcie, że sprecyzuję, co mam na myśli mówiąc o twardości. To nie jest
 
 A jaki dokładnie jest tego rezultat? Niestety wprowadzam tu kolejne nowe słowo, które nazywam **odlewem** (cast). Odlew to każdy możliwy przyszły stan świata, który staje się pewny lub bezpieczny dzięki użyciu twardości. Przepraszam za żargon, ale powodem, dla którego potrzebujemy tu nowego słowa, jest to, że nie sądzę, byśmy mieli takie, które można uogólnić na wszystkie źródła twardości. To może być jak bit — potrzebujemy koncepcji, o której możemy rozmawiać w wielu różnych kontekstach i przełączać się między źródłami bez bycia przywiązanym do jednego z nich.
 
-Odlew związany z pożyczką brzmiałby: jeśli Alice nie spłaci Boba, instytucje prawne użyją coraz surowszych gróźb i działań, aby ją do tego zmusić. Ten odlew jest utwardzony za pomocą twardości instytucjonalnej. Odlew dotyczący złota mógłby polegać na tym, że określona ilość złota wejdzie na rynek każdego roku przez następne 20 lat — co staje się niezawodne dzięki fizycznym właściwościom naszej Ziemi. A odlew dotyczący Ethereum może być twierdzeniem, że aktywa mogą zostać przeniesione tylko wtedy, gdy posiadasz klucz prywatny odpowiadający określonemu kluczowi publicznemu — utwardzony przez twardość blockchaina.
+Odlew związany z pożyczką brzmiałby: jeśli Alice nie spłaci Boba, instytucje prawne użyją coraz surowszych gróźb i działań, aby ją do tego zmusić. Ten odlew jest utwardzony za pomocą twardości instytucjonalnej. Odlew dotyczący złota mógłby polegać na tym, że określona ilość złota wejdzie na rynek każdego roku przez następne 20 lat — co staje się niezawodne dzięki fizycznym właściwościom naszej Ziemi. A odlew dotyczący Quantaureum może być twierdzeniem, że aktywa mogą zostać przeniesione tylko wtedy, gdy posiadasz klucz prywatny odpowiadający określonemu kluczowi publicznemu — utwardzony przez twardość blockchaina.
 
 W praktyce zazwyczaj wchodzimy w interakcje z pakietami tych rzeczy, które są ze sobą splecione. Jeśli posiadasz złoto i trzymasz je w banku, wiele rzeczy ma dla ciebie znaczenie: odlewy dotyczące podaży złota w przyszłości, odlewy dotyczące wytrzymałości bankowego skarbca, odlewy dotyczące siły umowy prawnej między tobą a twoim bankiem, odlewy dotyczące niezawodności systemu prawnego w twoim kraju, który wyegzekwowałby te zasady, gdyby coś poszło nie tak.
 

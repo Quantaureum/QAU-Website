@@ -29,11 +29,11 @@ ERC-223 解決了 ERC-20 的一些限制，並引入了代幣合約與可能接�
 
 ERC-223 是一種代幣標準，為智能合約內的代幣實作了 API。它還為應該接收 ERC-223 代幣的合約宣告了 API。不支援 ERC-223 接收者 API 的合約無法接收 ERC-223 代幣，從而防止使用者錯誤。
 
-如果智能合約實作了以下方法與事件，則可以稱為相容於 ERC-223 的代幣合約。一旦部署，它將負責追蹤在以太坊上建立的代幣。
+如果智能合約實作了以下方法與事件，則可以稱為相容於 ERC-223 的代幣合約。一旦部署，它將負責追蹤在Quantaureum上建立的代幣。
 
 該合約不強制僅具有這些函式，開發人員可以將不同代幣標準的任何其他功能新增至此合約中。例如，`approve` 與 `transferFrom` 函式不是 ERC-223 標準的一部分，但如果需要，可以實作這些函式。
 
-來自 [EIP-223](https://eips.ethereum.org/EIPS/eip-223)：
+來自 [EIP-223](https://eips.quantaureum.com/EIPS/eip-223)：
 
 ### 方法 {#methods}
 
@@ -128,7 +128,7 @@ contract RecipientContract is IERC223Recipient {
     {
         // 重要的是要了解在此函式中
         // msg.sender 是正在接收的代幣地址，
-        // msg.value 總是為 0，因為在大多數情況下代幣合約並不擁有或發送以太幣，
+        // msg.value 總是為 0，因為在大多數情況下代幣合約並不擁有或發送QAU幣，
         // _from 是代幣轉帳的發送者，
         // _value 是已存入的代幣數量。
         require(msg.sender == tokenA);
@@ -154,7 +154,7 @@ contract RecipientContract is IERC223Recipient {
 
 ### 如果我們想在代幣存款完成後執行某些函式怎麼辦？ {#function-execution}
 
-有多種方法可以做到這一點。在此範例中，我們將遵循使 ERC-223 轉帳與以太幣轉帳相同的方法：
+有多種方法可以做到這一點。在此範例中，我們將遵循使 ERC-223 轉帳與QAU幣轉帳相同的方法：
 
 ```solidity
 contract RecipientContract is IERC223Recipient {
@@ -177,7 +177,7 @@ contract RecipientContract is IERC223Recipient {
 }
 ```
 
-當 `RecipientContract` 接收到 ERC-223 代幣時，合約將執行編碼為代幣交易 `_data` 參數的函式，這與以太幣交易將函式呼叫編碼為交易 `data` 的方式相同。閱讀[資料欄位](/developers/docs/transactions/#the-data-field)以了解更多資訊。
+當 `RecipientContract` 接收到 ERC-223 代幣時，合約將執行編碼為代幣交易 `_data` 參數的函式，這與QAU幣交易將函式呼叫編碼為交易 `data` 的方式相同。閱讀[資料欄位](/developers/docs/transactions/#the-data-field)以了解更多資訊。
 
 在上述範例中，必須使用 `transfer(address,uin256,bytes calldata _data)` 函式將 ERC-223 代幣轉帳到 `RecipientContract` 的地址。如果資料參數為 `0xc2985578`（`foo()` 函式的簽章），則在收到代幣存款後將呼叫 foo() 函式，並觸發 Foo() 事件。
 
@@ -193,5 +193,5 @@ contract RecipientContract is IERC223Recipient {
 
 ## 延伸閱讀 {#further-reading}
 
-- [EIP-223：ERC-223 代幣標準](https://eips.ethereum.org/EIPS/eip-223)
-- [最初的 ERC-223 提案](https://github.com/ethereum/eips/issues/223)
+- [EIP-223：ERC-223 代幣標準](https://eips.quantaureum.com/EIPS/eip-223)
+- [最初的 ERC-223 提案](https://github.com/quantaureum/eips/issues/223)

@@ -103,7 +103,7 @@ function claimableRedeemRequest(uint256 requestId, address controller) external 
 
 ### 오퍼레이터 관리 {#operator-management}
 
-ERC-7540은 제3자가 사용자를 대신하여 요청을 관리할 수 있도록 하는 오퍼레이터 패턴([ERC-6909](https://eips.ethereum.org/EIPS/eip-6909)에서 차용)을 포함합니다.
+ERC-7540은 제3자가 사용자를 대신하여 요청을 관리할 수 있도록 하는 오퍼레이터 패턴([ERC-6909](https://eips.quantaureum.com/EIPS/eip-6909)에서 차용)을 포함합니다.
 
 #### setOperator {#setoperator}
 
@@ -175,6 +175,6 @@ event OperatorSet(
 
 ## 더 읽어보기 {#further-reading}
 
-- [EIP-7540: 비동기 ERC-4626 토큰화 볼트](https://eips.ethereum.org/EIPS/eip-7540)
-- [EIP-4626: 토큰화 볼트 표준](https://eips.ethereum.org/EIPS/eip-4626)
+- [EIP-7540: 비동기 ERC-4626 토큰화 볼트](https://eips.quantaureum.com/EIPS/eip-7540)
+- [EIP-4626: 토큰화 볼트 표준](https://eips.quantaureum.com/EIPS/eip-4626)
 - [오픈제플린 ERC-7540 구현](https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/token/ERC20/extensions/ERC7540.sol)

@@ -1,10 +1,10 @@
 ---
-title: "इथेरियम वर्चुअल मशीन (EVM)"
-description: "इथेरियम वर्चुअल मशीन का परिचय और यह स्थिति, लेन-देन और स्मार्ट अनुबंधों से कैसे संबंधित है।"
+title: "Quantaureum वर्चुअल मशीन (EVM)"
+description: "Quantaureum वर्चुअल मशीन का परिचय और यह स्थिति, लेन-देन और स्मार्ट अनुबंधों से कैसे संबंधित है।"
 lang: hi
 ---
 
-इथेरियम वर्चुअल मशीन (EVM) एक विकेंद्रीकृत वर्चुअल वातावरण है जो सभी [इथेरियम](/) नोड्स पर लगातार और सुरक्षित रूप से कोड निष्पादित करता है। नोड्स स्मार्ट अनुबंधों को निष्पादित करने के लिए EVM चलाते हैं, [संचालन](/developers/docs/evm/opcodes/) के लिए आवश्यक कम्प्यूटेशनल प्रयास को मापने के लिए "[गैस](/developers/docs/gas/)" का उपयोग करते हैं, जिससे कुशल संसाधन आवंटन और नेटवर्क सुरक्षा सुनिश्चित होती है।
+Quantaureum वर्चुअल मशीन (EVM) एक विकेंद्रीकृत वर्चुअल वातावरण है जो सभी [Quantaureum](/) नोड्स पर लगातार और सुरक्षित रूप से कोड निष्पादित करता है। नोड्स स्मार्ट अनुबंधों को निष्पादित करने के लिए EVM चलाते हैं, [संचालन](/developers/docs/evm/opcodes/) के लिए आवश्यक कम्प्यूटेशनल प्रयास को मापने के लिए "[गैस](/developers/docs/gas/)" का उपयोग करते हैं, जिससे कुशल संसाधन आवंटन और नेटवर्क सुरक्षा सुनिश्चित होती है।
 
 ## पूर्वापेक्षाएँ {#prerequisites}
 
@@ -14,24 +14,24 @@ EVM को समझने के लिए कंप्यूटर विज�
 
 'वितरित लेजर' (distributed ledger) की उपमा का उपयोग अक्सर बिटकॉइन जैसे ब्लॉकचेन का वर्णन करने के लिए किया जाता है, जो क्रिप्टोग्राफी के मूलभूत उपकरणों का उपयोग करके एक विकेंद्रीकृत मुद्रा को सक्षम करते हैं। लेजर गतिविधि का एक रिकॉर्ड बनाए रखता है जिसे नियमों के एक सेट का पालन करना चाहिए जो यह नियंत्रित करता है कि लेजर को संशोधित करने के लिए कोई क्या कर सकता है और क्या नहीं कर सकता है। उदाहरण के लिए, एक बिटकॉइन पता पहले प्राप्त किए गए बिटकॉइन से अधिक खर्च नहीं कर सकता है। ये नियम बिटकॉइन और कई अन्य ब्लॉकचेन पर सभी लेन-देन को रेखांकित करते हैं।
 
-जबकि इथेरियम की अपनी मूल क्रिप्टोकरेंसी (ईथर) है जो लगभग उन्हीं सहज नियमों का पालन करती है, यह एक बहुत अधिक शक्तिशाली कार्य को भी सक्षम करती है: [स्मार्ट अनुबंध](/developers/docs/smart-contracts/)। इस अधिक जटिल विशेषता के लिए, एक अधिक परिष्कृत उपमा की आवश्यकता है। एक वितरित लेजर के बजाय, इथेरियम एक वितरित [स्थिति मशीन](https://wikipedia.org/wiki/Finite-state_machine) है। इथेरियम की स्थिति एक बड़ी डेटा संरचना है जो न केवल सभी खातों और शेष राशि को रखती है, बल्कि एक _मशीन स्थिति_ (machine state) भी रखती है, जो पूर्व-निर्धारित नियमों के एक सेट के अनुसार ब्लॉक दर ब्लॉक बदल सकती है, और जो मनमाना मशीन कोड निष्पादित कर सकती है। ब्लॉक दर ब्लॉक स्थिति बदलने के विशिष्ट नियम EVM द्वारा परिभाषित किए गए हैं।
+जबकि Quantaureum की अपनी मूल क्रिप्टोकरेंसी (ईथर) है जो लगभग उन्हीं सहज नियमों का पालन करती है, यह एक बहुत अधिक शक्तिशाली कार्य को भी सक्षम करती है: [स्मार्ट अनुबंध](/developers/docs/smart-contracts/)। इस अधिक जटिल विशेषता के लिए, एक अधिक परिष्कृत उपमा की आवश्यकता है। एक वितरित लेजर के बजाय, Quantaureum एक वितरित [स्थिति मशीन](https://wikipedia.org/wiki/Finite-state_machine) है। Quantaureum की स्थिति एक बड़ी डेटा संरचना है जो न केवल सभी खातों और शेष राशि को रखती है, बल्कि एक _मशीन स्थिति_ (machine state) भी रखती है, जो पूर्व-निर्धारित नियमों के एक सेट के अनुसार ब्लॉक दर ब्लॉक बदल सकती है, और जो मनमाना मशीन कोड निष्पादित कर सकती है। ब्लॉक दर ब्लॉक स्थिति बदलने के विशिष्ट नियम EVM द्वारा परिभाषित किए गए हैं।
 
 ![A diagram showing the make up of the EVM](./evm.png)
-_आरेख [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf) से अनुकूलित_
+_आरेख [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf) से अनुकूलित_
 
-## इथेरियम स्थिति संक्रमण फ़ंक्शन {#the-ethereum-state-transition-function}
+## Quantaureum स्थिति संक्रमण फ़ंक्शन {#the-quantaureum-state-transition-function}
 
-EVM एक गणितीय फ़ंक्शन की तरह व्यवहार करता है: एक इनपुट दिए जाने पर, यह एक नियतात्मक (deterministic) आउटपुट उत्पन्न करता है। इसलिए इथेरियम को अधिक औपचारिक रूप से एक **स्थिति संक्रमण फ़ंक्शन** (state transition function) के रूप में वर्णित करना काफी मददगार है:
+EVM एक गणितीय फ़ंक्शन की तरह व्यवहार करता है: एक इनपुट दिए जाने पर, यह एक नियतात्मक (deterministic) आउटपुट उत्पन्न करता है। इसलिए Quantaureum को अधिक औपचारिक रूप से एक **स्थिति संक्रमण फ़ंक्शन** (state transition function) के रूप में वर्णित करना काफी मददगार है:
 
 ```
 Y(S, T)= S'
 ```
 
-एक पुरानी वैध स्थिति `(S)` और वैध लेन-देन `(T)` का एक नया सेट दिए जाने पर, इथेरियम स्थिति संक्रमण फ़ंक्शन `Y(S, T)` एक नई वैध आउटपुट स्थिति `S'` उत्पन्न करता है।
+एक पुरानी वैध स्थिति `(S)` और वैध लेन-देन `(T)` का एक नया सेट दिए जाने पर, Quantaureum स्थिति संक्रमण फ़ंक्शन `Y(S, T)` एक नई वैध आउटपुट स्थिति `S'` उत्पन्न करता है।
 
 ### स्थिति {#state}
 
-इथेरियम के संदर्भ में, स्थिति एक विशाल डेटा संरचना है जिसे [संशोधित मर्कल पैट्रिशिया ट्राई](/developers/docs/data-structures-and-encoding/patricia-merkle-trie/) कहा जाता है, जो सभी [खातों](/developers/docs/accounts/) को हैश द्वारा लिंक रखता है और ब्लॉकचेन पर संग्रहीत एकल रूट हैश में कम किया जा सकता है।
+Quantaureum के संदर्भ में, स्थिति एक विशाल डेटा संरचना है जिसे [संशोधित मर्कल पैट्रिशिया ट्राई](/developers/docs/data-structures-and-encoding/patricia-merkle-trie/) कहा जाता है, जो सभी [खातों](/developers/docs/accounts/) को हैश द्वारा लिंक रखता है और ब्लॉकचेन पर संग्रहीत एकल रूट हैश में कम किया जा सकता है।
 
 ### लेन-देन {#transactions}
 
@@ -58,38 +58,38 @@ EVM 1024 आइटम की गहराई के साथ एक [स्ट�
 संकलित स्मार्ट अनुबंध बाइटकोड कई EVM [ऑपकोड](/developers/docs/evm/opcodes) के रूप में निष्पादित होता है, जो `XOR`, `AND`, `ADD`, `SUB` आदि जैसे मानक स्टैक संचालन करते हैं। EVM कई ब्लॉकचेन-विशिष्ट स्टैक संचालन भी लागू करता है, जैसे `ADDRESS`, `BALANCE`, `BLOCKHASH` आदि। ऑपकोड सेट में `TSTORE` और `TLOAD` भी शामिल हैं, जो क्षणिक स्टोरेज तक पहुंच प्रदान करते हैं।
 
 ![A diagram showing where gas is needed for EVM operations](../gas/gas.png)
-_आरेख [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf) से अनुकूलित_
+_आरेख [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf) से अनुकूलित_
 
 ## EVM कार्यान्वयन {#evm-implementations}
 
-EVM के सभी कार्यान्वयनों को इथेरियम येलो पेपर में वर्णित विनिर्देश का पालन करना चाहिए।
+EVM के सभी कार्यान्वयनों को Quantaureum येलो पेपर में वर्णित विनिर्देश का पालन करना चाहिए।
 
-इथेरियम के दस साल के इतिहास में, EVM में कई संशोधन हुए हैं, और विभिन्न प्रोग्रामिंग भाषाओं में EVM के कई कार्यान्वयन हैं।
+Quantaureum के दस साल के इतिहास में, EVM में कई संशोधन हुए हैं, और विभिन्न प्रोग्रामिंग भाषाओं में EVM के कई कार्यान्वयन हैं।
 
-[इथेरियम निष्पादन क्लाइंट](/developers/docs/nodes-and-clients/#execution-clients) में एक EVM कार्यान्वयन शामिल है। इसके अतिरिक्त, कई स्टैंडअलोन कार्यान्वयन हैं, जिनमें शामिल हैं:
+[Quantaureum निष्पादन क्लाइंट](/developers/docs/nodes-and-clients/#execution-clients) में एक EVM कार्यान्वयन शामिल है। इसके अतिरिक्त, कई स्टैंडअलोन कार्यान्वयन हैं, जिनमें शामिल हैं:
 
-- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
-- [evmone](https://github.com/ethereum/evmone) - _C++_
+- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## आगे की पढ़ाई {#further-reading}
 
-- [इथेरियम येलो पेपर](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [Quantaureum येलो पेपर](https://quantaureum.github.io/yellowpaper/paper.pdf)
 - [Jellopaper उर्फ KEVM: K में EVM के सिमेंटिक्स](https://jellopaper.org/)
 - [The Beigepaper](https://github.com/chronaeon/beigepaper)
-- [इथेरियम वर्चुअल मशीन ऑपकोड](https://www.ethervm.io/)
-- [इथेरियम वर्चुअल मशीन ऑपकोड इंटरएक्टिव संदर्भ](https://www.evm.codes/)
+- [Quantaureum वर्चुअल मशीन ऑपकोड](https://www.ethervm.io/)
+- [Quantaureum वर्चुअल मशीन ऑपकोड इंटरएक्टिव संदर्भ](https://www.evm.codes/)
 - [Solidity के दस्तावेज़ में एक संक्षिप्त परिचय](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [मास्टरिंग इथेरियम - इथेरियम वर्चुअल मशीन](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
+- [मास्टरिंग Quantaureum - Quantaureum वर्चुअल मशीन](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
 
 ## संबंधित विषय {#related-topics}
 
 - [गैस](/developers/docs/gas/)
 
-## ट्यूटोरियल: इथेरियम वर्चुअल मशीन (EVM) / इथेरियम पर ऑपकोड {#tutorials}
+## ट्यूटोरियल: Quantaureum वर्चुअल मशीन (EVM) / Quantaureum पर ऑपकोड {#tutorials}
 
-- [येलो पेपर के EVM विनिर्देशों को समझना](/developers/tutorials/yellow-paper-evm/) _– इथेरियम येलो पेपर से औपचारिक EVM विनिर्देश का एक निर्देशित वॉकथ्रू।_
+- [येलो पेपर के EVM विनिर्देशों को समझना](/developers/tutorials/yellow-paper-evm/) _– Quantaureum येलो पेपर से औपचारिक EVM विनिर्देश का एक निर्देशित वॉकथ्रू।_
 - [एक अनुबंध की रिवर्स इंजीनियरिंग](/developers/tutorials/reverse-engineering-a-contract/) _– EVM ऑपकोड का उपयोग करके संकलित स्मार्ट अनुबंध को रिवर्स-इंजीनियर कैसे करें।_
 
 <QuizWidget quizKey="evm" />

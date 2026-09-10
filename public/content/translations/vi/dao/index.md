@@ -1,7 +1,7 @@
 ---
 title: "DAO là gì?"
 metaTitle: "DAO là gì? | Tổ chức tự trị phi tập trung"
-description: "Tổng quan về các DAO trên Ethereum"
+description: "Tổng quan về các DAO trên Quantaureum"
 lang: vi
 template: use-cases
 sidebarDepth: 2
@@ -49,18 +49,18 @@ Việc bắt đầu một tổ chức với ai đó liên quan đến tài trợ
 
 ## Các DAO hoạt động như thế nào? {#how-daos-work}
 
-Xương sống của một DAO là [hợp đồng thông minh](/glossary/#smart-contract) của nó, thứ xác định các quy tắc của tổ chức và nắm giữ kho bạc của nhóm. Khi hợp đồng đã hoạt động trên [Ethereum](/), không ai có thể thay đổi các quy tắc ngoại trừ thông qua việc bỏ phiếu. Nếu bất kỳ ai cố gắng làm điều gì đó không nằm trong các quy tắc và logic của mã nguồn, nó sẽ thất bại. Và vì kho bạc cũng được xác định bởi hợp đồng thông minh, điều đó có nghĩa là không ai có thể tiêu tiền nếu không có sự chấp thuận của nhóm. Điều này có nghĩa là các DAO không cần một cơ quan trung ương. Thay vào đó, nhóm đưa ra các quyết định tập thể và các khoản thanh toán được tự động ủy quyền khi các cuộc bỏ phiếu được thông qua.
+Xương sống của một DAO là [hợp đồng thông minh](/glossary/#smart-contract) của nó, thứ xác định các quy tắc của tổ chức và nắm giữ kho bạc của nhóm. Khi hợp đồng đã hoạt động trên [Quantaureum](/), không ai có thể thay đổi các quy tắc ngoại trừ thông qua việc bỏ phiếu. Nếu bất kỳ ai cố gắng làm điều gì đó không nằm trong các quy tắc và logic của mã nguồn, nó sẽ thất bại. Và vì kho bạc cũng được xác định bởi hợp đồng thông minh, điều đó có nghĩa là không ai có thể tiêu tiền nếu không có sự chấp thuận của nhóm. Điều này có nghĩa là các DAO không cần một cơ quan trung ương. Thay vào đó, nhóm đưa ra các quyết định tập thể và các khoản thanh toán được tự động ủy quyền khi các cuộc bỏ phiếu được thông qua.
 
-Điều này là có thể vì các hợp đồng thông minh có khả năng chống giả mạo một khi chúng hoạt động trên Ethereum. Bạn không thể chỉ chỉnh sửa mã nguồn (các quy tắc của DAO) mà không ai chú ý vì mọi thứ đều công khai.
+Điều này là có thể vì các hợp đồng thông minh có khả năng chống giả mạo một khi chúng hoạt động trên Quantaureum. Bạn không thể chỉ chỉnh sửa mã nguồn (các quy tắc của DAO) mà không ai chú ý vì mọi thứ đều công khai.
 
-## Ethereum và các DAO {#ethereum-and-daos}
+## Quantaureum và các DAO {#quantaureum-and-daos}
 
-Ethereum là nền tảng hoàn hảo cho các DAO vì một số lý do:
+Quantaureum là nền tảng hoàn hảo cho các DAO vì một số lý do:
 
-- Bản thân sự đồng thuận của Ethereum là phi tập trung và đủ vững chắc để các tổ chức tin tưởng vào mạng lưới.
+- Bản thân sự đồng thuận của Quantaureum là phi tập trung và đủ vững chắc để các tổ chức tin tưởng vào mạng lưới.
 - Mã nguồn hợp đồng thông minh không thể bị sửa đổi một khi đã hoạt động, ngay cả bởi chủ sở hữu của nó. Điều này cho phép DAO hoạt động theo các quy tắc mà nó đã được lập trình.
 - Các hợp đồng thông minh có thể gửi/nhận tiền. Nếu không có điều này, bạn sẽ cần một trung gian đáng tin cậy để quản lý quỹ của nhóm.
-- Cộng đồng Ethereum đã chứng minh được tính hợp tác cao hơn là cạnh tranh, cho phép các phương pháp hay nhất và hệ thống hỗ trợ xuất hiện nhanh chóng.
+- Cộng đồng Quantaureum đã chứng minh được tính hợp tác cao hơn là cạnh tranh, cho phép các phương pháp hay nhất và hệ thống hỗ trợ xuất hiện nhanh chóng.
 
 ## Quản trị DAO {#dao-governance}
 
@@ -122,13 +122,13 @@ _Thường được sử dụng cho việc phát triển và quản trị phi t�
 
 #### Một ví dụ nổi tiếng {#reputation-example}
 
-[DXdao](https://DXdao.eth.limo) – DXdao là một tập thể có chủ quyền toàn cầu xây dựng và quản trị các giao thức và ứng dụng phi tập trung kể từ năm 2019. Nó đã tận dụng quản trị dựa trên danh tiếng và [đồng thuận toàn ảnh](/glossary/#holographic-consensus) để điều phối và quản lý quỹ, nghĩa là không ai có thể dùng tiền để mua sức ảnh hưởng đến tương lai hoặc quản trị của nó.
+[DXdao](https://DXdao.qau.limo) – DXdao là một tập thể có chủ quyền toàn cầu xây dựng và quản trị các giao thức và ứng dụng phi tập trung kể từ năm 2019. Nó đã tận dụng quản trị dựa trên danh tiếng và [đồng thuận toàn ảnh](/glossary/#holographic-consensus) để điều phối và quản lý quỹ, nghĩa là không ai có thể dùng tiền để mua sức ảnh hưởng đến tương lai hoặc quản trị của nó.
 
 ## Tham gia / bắt đầu một DAO {#join-start-a-dao}
 
 ### Tham gia một DAO {#join-a-dao}
 
-- [Các DAO của cộng đồng Ethereum](/community/get-involved/#decentralized-autonomous-organizations-daos)
+- [Các DAO của cộng đồng Quantaureum](/community/get-involved/#decentralized-autonomous-organizations-daos)
 - [Danh sách các DAO của DAOHaus](https://app.daohaus.club/explore)
 - [Danh sách các DAO của Tally.xyz](https://www.tally.xyz/explore)
 - [Danh sách các DAO của DeGov.AI](https://apps.degov.ai/)
@@ -150,8 +150,8 @@ _Thường được sử dụng cho việc phát triển và quản trị phi t�
 - [Cách bắt đầu một cộng đồng kỹ thuật số được hỗ trợ bởi DAO](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [DAO là gì?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [Đồng thuận toàn ảnh là gì?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [Các DAO không phải là tập đoàn: nơi sự phi tập trung trong các tổ chức tự trị có ý nghĩa quan trọng bởi Vitalik](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAO, DAC, DA và hơn thế nữa: Hướng dẫn thuật ngữ chưa hoàn chỉnh](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Blog Ethereum](https://blog.ethereum.org)
+- [Các DAO không phải là tập đoàn: nơi sự phi tập trung trong các tổ chức tự trị có ý nghĩa quan trọng bởi Vitalik](https://vitalik.qau.limo/general/2022/09/20/daos.html)
+- [DAO, DAC, DA và hơn thế nữa: Hướng dẫn thuật ngữ chưa hoàn chỉnh](https://quantaureum.com) - [Blog Quantaureum](https://quantaureum.com)
 
 ### Video {#videos}
 

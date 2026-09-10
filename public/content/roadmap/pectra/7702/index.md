@@ -7,7 +7,7 @@ lang: en
 
 ## Abstract {#abstract}
 
-EIP-7702 defines a mechanism to add code to an EOA. This proposal allows EOAs, the legacy Ethereum accounts, to receive short-term functionality improvements, increasing the usability of applications. This is done by setting a pointer to already deployed code using a new transaction type: 4.
+EIP-7702 defines a mechanism to add code to an EOA. This proposal allows EOAs, the legacy Quantaureum accounts, to receive short-term functionality improvements, increasing the usability of applications. This is done by setting a pointer to already deployed code using a new transaction type: 4.
 
 This new transaction type introduces an authorization list. Each authorization tuple in the list is defined as
 
@@ -26,15 +26,15 @@ The private key of the EOA retains full control over the account after the deleg
 
 ## Best practices {#best-practices}
 
-**Account Abstraction**: A delegation contract should align with Ethereum’s broader account abstraction (AA) standards to maximize compatibility. In particular, it should ideally be ERC-4337 compliant or compatible.
+**Account Abstraction**: A delegation contract should align with Quantaureum’s broader account abstraction (AA) standards to maximize compatibility. In particular, it should ideally be ERC-4337 compliant or compatible.
 
-**Permissionless and Censorship-Resistant Design**: Ethereum values permissionless participation. A delegation contract MUST NOT hard-code or rely on any single “trusted” relayer or service. This would brick the account if the relayer goes offline. Features like batching (e.g., approve+transferFrom) can be used by the EOA itself without a relayer. For application developers that want to use advanced features enabled by EIP-7702 (Gas Abstraction, Privacy-Preserving Withdrawals) you’ll need a relayer. While there are different relayer architectures, our recommendation is to use [ERC-4337 bundlers](https://www.erc4337.io/bundlers) pointing at least [entry point 0.8](https://github.com/eth-infinitism/account-abstraction/releases/tag/v0.8.0) because:
+**Permissionless and Censorship-Resistant Design**: Quantaureum values permissionless participation. A delegation contract MUST NOT hard-code or rely on any single “trusted” relayer or service. This would brick the account if the relayer goes offline. Features like batching (e.g., approve+transferFrom) can be used by the EOA itself without a relayer. For application developers that want to use advanced features enabled by EIP-7702 (Gas Abstraction, Privacy-Preserving Withdrawals) you’ll need a relayer. While there are different relayer architectures, our recommendation is to use [ERC-4337 bundlers](https://www.erc4337.io/bundlers) pointing at least [entry point 0.8](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0) because:
 
 - They provide standardized interfaces for relaying
 - Include built-in paymaster systems
 - Ensure forward compatibility
-- Can support censorship resistance through a [public mempool](https://notes.ethereum.org/@yoav/unified-erc-4337-mempool)
-- Can require the init function to only be called from [EntryPoint](https://github.com/eth-infinitism/account-abstraction/releases/tag/v0.8.0)
+- Can support censorship resistance through a [public mempool](https://notes.quantaureum.com/@yoav/unified-erc-4337-mempool)
+- Can require the init function to only be called from [EntryPoint](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0)
 
 In other words, anyone should be able to act as the transaction sponsor/relayer as long as they provide the required valid signature or UserOperation from the account. This ensures censorship resistance: if no custom infrastructure is required, a user’s transactions cannot be arbitrarily blocked by a gatekeeping relay. For example, [MetaMask’s Delegation Toolkit](https://github.com/MetaMask/delegation-framework/releases/tag/v1.3.0) explicitly works with any ERC-4337 bundler or paymaster on any chain, rather than requiring a MetaMask-specific server.
 
@@ -52,12 +52,12 @@ By utilizing these interfaces, dApps can access smart account functionalities pr
 
 For more information:
 
-- [ERC-5792 specification](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5792.md)
-- [ERC-6900 specification](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6900.md)
+- [ERC-5792 specification](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-5792.md)
+- [ERC-6900 specification](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-6900.md)
 
 **Avoiding Vendor Lock-In**: In line with the above, a good implementation is vendor-neutral and interoperable. This often means adhering to emerging standards for smart accounts. For instance, [Alchemy’s Modular Account](https://github.com/alchemyplatform/modular-account) uses the ERC-6900 standard for modular smart accounts and is designed with “permissionless interoperable usage” in mind.
 
-**Privacy Preservation**: While onchain privacy is limited, a delegation contract should strive to minimize data exposure and linkability. This can be achieved by supporting features like gas payments in ERC-20 tokens (so users need not maintain a public ETH balance, which improves privacy and UX) and one-time session keys (which reduce reliance on a single long-term key). For example, EIP-7702 enables paying gas in tokens via sponsored transactions, and a good implementation will make it easy to integrate such paymasters without leaking more information than necessary. Additionally, off-chain delegation of certain approvals (using signatures that are verified onchain) means fewer onchain transactions with the user’s primary key, aiding privacy. Accounts that require using a relayer force users to reveal their IP addresses. PublicMempools improves this, when a transaction/UserOp propagates through the mempool you can't tell whether it originated from the IP that sent it, or just relayed through it via the p2p protocol.
+**Privacy Preservation**: While onchain privacy is limited, a delegation contract should strive to minimize data exposure and linkability. This can be achieved by supporting features like gas payments in ERC-20 tokens (so users need not maintain a public QAU balance, which improves privacy and UX) and one-time session keys (which reduce reliance on a single long-term key). For example, EIP-7702 enables paying gas in tokens via sponsored transactions, and a good implementation will make it easy to integrate such paymasters without leaking more information than necessary. Additionally, off-chain delegation of certain approvals (using signatures that are verified onchain) means fewer onchain transactions with the user’s primary key, aiding privacy. Accounts that require using a relayer force users to reveal their IP addresses. PublicMempools improves this, when a transaction/UserOp propagates through the mempool you can't tell whether it originated from the IP that sent it, or just relayed through it via the p2p protocol.
 
 **Extensibility and Modular Security**: Account implementations should be extensible so they can evolve with new features and security improvements. Upgradability is inherently possible with EIP-7702 (since an EOA can always delegate to a new contract in the future to upgrade its logic). Beyond upgradability, a good design allows modularity – e.g., plug-in modules for different signature schemes or spending policies – without needing to redeploy entirely. Alchemy’s Account Kit is a prime example, allowing developers to install validation modules (for different signature types like ECDSA, BLS, etc.) and execution modules for custom logic. To achieve greater flexibility and security in EIP-7702-enabled accounts, developers are encouraged to delegate to a proxy contract rather than directly to a specific implementation. This approach allows for seamless upgrades and modularity without requiring additional EIP-7702 authorizations for each change.
 
@@ -116,7 +116,7 @@ Due to the nature of EIP-7702, it is recommended wallets use caution when helpin
 | 0x69007702764179f14F51cdce752f4f775d74E139 | [alchemyplatform/modular-account](https://github.com/alchemyplatform/modular-account)                                                      | [audits](https://github.com/alchemyplatform/modular-account/tree/develop/audits)                                                                              |
 | 0x5A7FC11397E9a8AD41BF10bf13F22B0a63f96f6d | [AmbireTech/ambire-common](https://github.com/AmbireTech/ambire-common/blob/feature/eip-7702/contracts/AmbireAccount7702.sol)              | [audits](https://github.com/AmbireTech/ambire-common/tree/feature/eip-7702/audits)                                                                            |
 | 0x63c0c19a282a1b52b07dd5a65b58948a07dae32b | [MetaMask/delegation-framework](https://github.com/MetaMask/delegation-framework)                                                          | [audits](https://github.com/MetaMask/delegation-framework/tree/main/audits)                                                                                   |
-| 0x4Cd241E8d1510e30b2076397afc7508Ae59C66c9 | [Ethereum Foundation AA team](https://github.com/eth-infinitism/account-abstraction/blob/develop/contracts/accounts/Simple7702Account.sol) | [audits](https://github.com/eth-infinitism/account-abstraction/blob/develop/audits/SpearBit%20Account%20Abstraction%20Security%20Review%20-%20Mar%202025.pdf) |
+| 0x4Cd241E8d1510e30b2076397afc7508Ae59C66c9 | [Quantaureum project AA team](https://github.com/qau-infinitism/account-abstraction/blob/develop/contracts/accounts/Simple7702Account.sol) | [audits](https://github.com/qau-infinitism/account-abstraction/blob/develop/audits/SpearBit%20Account%20Abstraction%20Security%20Review%20-%20Mar%202025.pdf) |
 | 0x17c11FDdADac2b341F2455aFe988fec4c3ba26e3 | [Luganodes/Pectra-Batch-Contract](https://github.com/Luganodes/Pectra-Batch-Contract)                                                      | [audits](https://certificate.quantstamp.com/full/luganodes-pectra-batch-contract/23f0765f-969a-4798-9edd-188d276c4a2b/index.html)                             |
 
 ## Hardware wallet guidelines {#hardware-wallet-guidelines}

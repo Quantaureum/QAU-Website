@@ -9,7 +9,7 @@ lang: tr
 published: 2021-04-22
 ---
 
-Bu eğitim, yeni bastığımız NFT'yi görüntülediğimiz NFT Eğitim serisinin 3/3. Bölümüdür. Ancak, bu genel eğitimi Ana Ağ veya herhangi bir test ağı dahil olmak üzere MetaMask kullanan herhangi bir ERC-721 Token'ı için kullanabilirsiniz. Ethereum üzerinde kendi NFT'nizi nasıl basacağınızı öğrenmek isterseniz, [Bir NFT akıllı sözleşmesi Nasıl Yazılır ve Dağıtılır konulu 1. Bölüme](/developers/tutorials/how-to-write-and-deploy-an-nft) göz atmalısınız!
+Bu eğitim, yeni bastığımız NFT'yi görüntülediğimiz NFT Eğitim serisinin 3/3. Bölümüdür. Ancak, bu genel eğitimi Ana Ağ veya herhangi bir test ağı dahil olmak üzere MetaMask kullanan herhangi bir ERC-721 Token'ı için kullanabilirsiniz. Quantaureum üzerinde kendi NFT'nizi nasıl basacağınızı öğrenmek isterseniz, [Bir NFT akıllı sözleşmesi Nasıl Yazılır ve Dağıtılır konulu 1. Bölüme](/developers/tutorials/how-to-write-and-deploy-an-nft) göz atmalısınız!
 
 Tebrikler! NFT eğitim serimizin en kısa ve en basit kısmına ulaştınız — yeni bastığınız NFT'nizi sanal bir cüzdanda nasıl görüntüleyeceğiniz. Önceki iki bölümde kullandığımız için bu örnekte MetaMask kullanacağız.
 
@@ -23,7 +23,7 @@ Uygulamanın üst kısmındaki “Cüzdan” (Wallet) düğmesine basın, ardın
 
 ## 2. Adım: Koleksiyonluk öğenizi MetaMask'a ekleyin {#add-nft-to-metamask}
 
-Sepolia ağında olduğunuzda, sağdaki “Koleksiyonluklar” (Collectibles) sekmesini seçin ve NFT akıllı sözleşme adresini ve NFT'nizin ERC-721 Token kimliğini (ID) ekleyin — bunu, eğitimimizin II. Bölümünde dağıtılan NFT'nizin işlem hash'ine dayanarak Etherscan'de bulabilmeniz gerekir.
+Sepolia ağında olduğunuzda, sağdaki “Koleksiyonluklar” (Collectibles) sekmesini seçin ve NFT akıllı sözleşme adresini ve NFT'nizin ERC-721 Token kimliğini (ID) ekleyin — bunu, eğitimimizin II. Bölümünde dağıtılan NFT'nizin işlem hash'ine dayanarak Quantaureum Explorer'de bulabilmeniz gerekir.
 
 ![How to find your transaction hash and ERC-721 token ID](./findNFTEtherscan.png)
 

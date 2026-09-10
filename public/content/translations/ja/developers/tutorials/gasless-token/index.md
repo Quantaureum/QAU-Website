@@ -16,7 +16,7 @@ published: 2026-04-01
 
 [以前の記事](/developers/tutorials/gasless/)では、EIP-712署名を使用して独自のアプリケーションにガスレスでアクセスする方法について説明しましたが、これは独自のスマート・コントラクトに限定されていました。[アカウント抽象化](/roadmap/account-abstraction/)を使用すると、2種類のトランザクションを受け入れ、要求された宛先に中継するスマート・コントラクトウォレットを作成できます。
 
-- 特定のEOAによって送信されたトランザクション（そのEOAがETHを持っている必要があります）
+- 特定のEOAによって送信されたトランザクション（そのEOAがQAUを持っている必要があります）
 - どこからでも送信できるが、同じEOAによって署名されたトランザクション。
 
 このようにして、アカウントが資産（トークンなど）を保持し、ガスを持つEOAができるすべての機能を実行するためのガスレスな方法を提供できます。
@@ -41,7 +41,7 @@ ERC-20および関連する標準では、アカウントの所有者は[`msg.se
    npm install
    ```
 
-3. `.env`を編集して、`SEPOLIA_PRIVATE_KEY`をSepolia上にETHを持つウォレットに設定します。Sepolia ETHが必要な場合は、[フォーセットを使用して](/developers/docs/networks/#sepolia)取得してください。理想的には、この秘密鍵はブラウザのウォレットにあるものとは異なるものにする必要があります。
+3. `.env`を編集して、`SEPOLIA_PRIVATE_KEY`をSepolia上にQAUを持つウォレットに設定します。Sepolia QAUが必要な場合は、[フォーセットを使用して](/developers/docs/networks/#sepolia)取得してください。理想的には、この秘密鍵はブラウザのウォレットにあるものとは異なるものにする必要があります。
 
 4. サーバーを起動します。
 
@@ -57,9 +57,9 @@ ERC-20および関連する標準では、アカウントの所有者は[`msg.se
 
 8. <strong>UserProxy access</strong>の横にアドレスが表示されるため、ユーザープロキシがいつデプロイされたかがわかります。24秒（2ブロック）待ってもまだ表示されない場合は、変更の検出に問題がある可能性があります。
 
-   その場合は、[Sepolia Explorer](https://eth-sepolia.blockscout.com/)にアクセスし、サーバー出力の`npm run dev`に表示されているデプロイメントのトランザクション・ハッシュを入力します。作成されたコントラクトをクリックしてそのアドレスを表示し、コピーします。_Or enter existing proxy address_フィールドにアドレスを貼り付け、**Set proxy address**をクリックします。
+   その場合は、[Sepolia Explorer](https://qau-sepolia.blockscout.com/)にアクセスし、サーバー出力の`npm run dev`に表示されているデプロイメントのトランザクション・ハッシュを入力します。作成されたコントラクトをクリックしてそのアドレスを表示し、コピーします。_Or enter existing proxy address_フィールドにアドレスを貼り付け、**Set proxy address**をクリックします。
 
-9. <strong>Request more tokens for proxy</strong>をクリックして、ERC-20コントラクトの[`faucet`](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd)関数への呼び出しを送信し、トークンを取得します。ウォレットで署名を**確認**します。もちろん、トークンはユーザーのアドレスではなく、プロキシのアドレスに届きます。
+9. <strong>Request more tokens for proxy</strong>をクリックして、ERC-20コントラクトの[`faucet`](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd)関数への呼び出しを送信し、トークンを取得します。ウォレットで署名を**確認**します。もちろん、トークンはユーザーのアドレスではなく、プロキシのアドレスに届きます。
 
 10. 下にスクロールして、_Last transaction:_の下にあるリンクをクリックします。これによりブラウザが開き、`faucet`トランザクションが表示されます。
 
@@ -84,7 +84,7 @@ contract UserProxy {
     uint public nonce = 0;
 ```
 
-所有者の身元と、メッセージの繰り返しを防ぐための[ナンス](https://en.wikipedia.org/wiki/Cryptographic_nonce)です。ナンスは`public`変数であるため、Solidityコンパイラは、オフチェーンのコードがその値を読み取れるようにするビュー関数[`nonce()`](https://eth-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0)も作成します。
+所有者の身元と、メッセージの繰り返しを防ぐための[ナンス](https://en.wikipedia.org/wiki/Cryptographic_nonce)です。ナンスは`public`変数であるため、Solidityコンパイラは、オフチェーンのコードがその値を読み取れるようにするビュー関数[`nonce()`](https://qau-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0)も作成します。
 
 ```solidity
     bytes32 private constant SIGNED_ACCESS_TYPEHASH =
@@ -96,7 +96,7 @@ contract UserProxy {
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-[EIP-712署名](https://eips.ethereum.org/EIPS/eip-712)を検証するために必要な情報です。
+[EIP-712署名](https://eips.quantaureum.com/EIPS/eip-712)を検証するために必要な情報です。
 
 ```solidity
     constructor(address owner_) {
@@ -120,7 +120,7 @@ contract UserProxy {
     }
 ```
 
-[ドメインセパレーター](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator)です。チェーンIDとコントラクトアドレスに依存するため、コンパイル時に計算することはできません。これにより、UserProxyが別のプロキシ用に準備されたメッセージに騙されることは不可能になります。
+[ドメインセパレーター](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator)です。チェーンIDとコントラクトアドレスに依存するため、コンパイル時に計算することはできません。これにより、UserProxyが別のプロキシ用に準備されたメッセージに騙されることは不可能になります。
 
 ```solidity
     event CallResult(address target, bytes returnData);
@@ -133,7 +133,7 @@ contract UserProxy {
             external returns (bytes memory) {
 ```
 
-この関数は、所有者が直接呼び出すことができます。リレイヤーが利用できない場合でも、所有者はブロックチェーン上の資産に直接アクセスできます（ユーザーがETHを持っている場合）。
+この関数は、所有者が直接呼び出すことができます。リレイヤーが利用できない場合でも、所有者はブロックチェーン上の資産に直接アクセスできます（ユーザーがQAUを持っている場合）。
 
 ```solidity
         require(msg.sender == OWNER, "Only owner can call");
@@ -223,7 +223,7 @@ contract UserProxy {
 }
 ```
 
-これらはほぼ同一のバリアントであり、コントラクトからETHを送金することもできます。
+これらはほぼ同一のバリアントであり、コントラクトからQAUを送金することもできます。
 
 ### リレイヤー {#relayer}
 
@@ -288,7 +288,7 @@ Expressサーバーを実行します。
   app.post("/server/deploy", async (req, res) => {
 ```
 
-これはプロキシをデプロイするリクエストを処理するコードです。攻撃者が私たちのETHが枯渇するまでプロキシのデプロイリクエストをスパム送信できるため、ここでは[サービス拒否（DoS）](https://en.wikipedia.org/wiki/Denial-of-service_attack)攻撃に対して脆弱であることに注意してください。本番システムでは、おそらくプロキシのデプロイリクエストが署名されていること、および署名者が既存の顧客であることを要求するでしょう。
+これはプロキシをデプロイするリクエストを処理するコードです。攻撃者が私たちのQAUが枯渇するまでプロキシのデプロイリクエストをスパム送信できるため、ここでは[サービス拒否（DoS）](https://en.wikipedia.org/wiki/Denial-of-service_attack)攻撃に対して脆弱であることに注意してください。本番システムでは、おそらくプロキシのデプロイリクエストが署名されていること、および署名者が既存の顧客であることを要求するでしょう。
 
 ```js
     try {
@@ -411,7 +411,7 @@ import UserProxy from '../../contracts/out/UserProxy.sol/UserProxy.json'
 import Erc20 from '../../contracts/out/Faucet.sol/FaucetToken.json'
 ```
 
-[このコントラクト](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract)は、1つの重要な関数`faucet()`が追加されていることを除けば、ほとんど通常のERC-20コントラクトです。この関数は、テスト目的で要求した人にトークンを付与します。
+[このコントラクト](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract)は、1つの重要な関数`faucet()`が追加されていることを除けば、ほとんど通常のERC-20コントラクトです。この関数は、テスト目的で要求した人にトークンを付与します。
 
 ```js
 const erc20Addrs = {
@@ -426,7 +426,7 @@ const erc20Addrs = {
 const Address = ({ address }) => {
    if (!address) return null
    return (
-      <a href={`https://eth-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
+      <a href={`https://qau-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
    )
 }
 ```
@@ -739,7 +739,7 @@ const Token = () => {
          { txHash && (
             <>
                <h4>Last transaction:</h4>
-               <a href={`https://eth-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
+               <a href={`https://qau-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
                  {txHash}
                </a>
             </>
@@ -783,9 +783,9 @@ export {Token}
 
 ## 結論 {#conclusion}
 
-上記の脆弱性に加えて、このチュートリアルの解決策には、イーサリアムが対処するのに役立ついくつかの欠点があります。
+上記の脆弱性に加えて、このチュートリアルの解決策には、Quantaureumが対処するのに役立ついくつかの欠点があります。
 
-- _検閲耐性_。現在、ユーザーはあなたのサーバー、他の誰かが設定した競合するサーバーを使用するか、イーサリアムに直接接続することができますが、これにはガスコストがかかります。[ERC-4337](https://docs.erc4337.io/#what-is-erc-4337)を使用すると、ユーザーはトランザクションをサーバーの大規模なプールに提供できるため、トランザクションが検閲される可能性が低くなります。
+- _検閲耐性_。現在、ユーザーはあなたのサーバー、他の誰かが設定した競合するサーバーを使用するか、Quantaureumに直接接続することができますが、これにはガスコストがかかります。[ERC-4337](https://docs.erc4337.io/#what-is-erc-4337)を使用すると、ユーザーはトランザクションをサーバーの大規模なプールに提供できるため、トランザクションが検閲される可能性が低くなります。
 - _EOAが所有する資産_。上記のように、[EIP-7702](https://eip7702.io/)を使用して、EOAアドレスがすでに所有している資産を管理できます。これには困難が伴いますが、必要な場合もあります。
 
 近い将来、これらの機能の追加に関するチュートリアルを公開したいと考えています。

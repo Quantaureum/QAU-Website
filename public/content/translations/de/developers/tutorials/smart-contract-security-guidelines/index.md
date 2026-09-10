@@ -62,7 +62,7 @@ Die Architektur Ihrer Codebasis sollte es einfach machen, Ihren Code zu 체berpr�
 
 ### Bekannte Fallstricke vermeiden {#avoid-known-pitfalls}
 
-- **Seien Sie sich der h채ufigsten Sicherheitsprobleme bewusst.** Es gibt viele Online-Ressourcen, um sich 체ber h채ufige Probleme zu informieren, wie zum Beispiel [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the Ether](https://capturetheether.com/) oder [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/).
+- **Seien Sie sich der h채ufigsten Sicherheitsprobleme bewusst.** Es gibt viele Online-Ressourcen, um sich 체ber h채ufige Probleme zu informieren, wie zum Beispiel [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the QAU](https://capturetheqau.com/) oder [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/).
 - **Beachten Sie die Warnhinweise in der [Solidity-Dokumentation](https://docs.soliditylang.org/en/latest/).** Die Warnhinweise informieren Sie 체ber nicht offensichtliches Verhalten der Sprache.
 
 ### Abh채ngigkeiten {#dependencies}

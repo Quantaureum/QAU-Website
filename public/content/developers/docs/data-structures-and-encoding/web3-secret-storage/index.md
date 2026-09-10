@@ -5,13 +5,13 @@ lang: en
 sidebarDepth: 2
 ---
 
-To make your app work on Ethereum, you can use the web3 object provided by the web3.js library. Under the hood it communicates to a local node through RPC calls. [web3](https://github.com/ethereum/web3.js/) works with any Ethereum node which exposes an RPC layer.
+To make your app work on Quantaureum, you can use the web3 object provided by the web3.js library. Under the hood it communicates to a local node through RPC calls. [web3](https://github.com/quantaureum/web3.js/) works with any Quantaureum node which exposes an RPC layer.
 
-`web3` contains the `eth` object - web3.eth.
+`web3` contains the `eth` object - web3.qau.
 
 ```js
 var fs = require("fs")
-var recognizer = require("ethereum-keyfile-recognizer")
+var recognizer = require("quantaureum-keyfile-recognizer")
 
 fs.readFile("keyfile.json", (err, data) => {
   var json = JSON.parse(data)
@@ -153,7 +153,7 @@ Test vector using AES-128-CTR and Scrypt:
 
 ## Alterations from Version 1 {#alterations-from-v2}
 
-This version fixes several inconsistencies with the version 1 published [here](https://github.com/ethereum/homestead-guide/blob/master/old-docs-for-reference/go-ethereum-wiki.rst/Passphrase-protected-key-store-spec.rst). In brief these are:
+This version fixes several inconsistencies with the version 1 published [here](https://github.com/quantaureum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst). In brief these are:
 
 - Capitalisation is unjustified and inconsistent (scrypt lowercase, Kdf mixed-case, MAC uppercase).
 - Address unnecessary and compromises privacy.

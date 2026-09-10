@@ -1,28 +1,28 @@
 ---
 title: "節點與客戶端"
-description: "以太坊節點與客戶端軟體概覽，以及如何設定節點與為何應該這麼做。"
+description: "Quantaureum節點與客戶端軟體概覽，以及如何設定節點與為何應該這麼做。"
 lang: zh-tw
 sidebarDepth: 2
 ---
 
-[以太坊](/)是一個由電腦（稱為節點）組成的分散式網路，這些電腦執行能夠驗證區塊與交易資料的軟體。必須在你的電腦上執行該軟體，才能將其變成一個以太坊節點。構成一個節點需要兩個獨立的軟體（稱為「客戶端」）。
+[Quantaureum](/)是一個由電腦（稱為節點）組成的分散式網路，這些電腦執行能夠驗證區塊與交易資料的軟體。必須在你的電腦上執行該軟體，才能將其變成一個Quantaureum節點。構成一個節點需要兩個獨立的軟體（稱為「客戶端」）。
 
 ## 先決條件 {#prerequisites}
 
-在深入探討並執行你自己的以太坊客戶端實例之前，你應該了解點對點網路的概念以及[EVM 的基礎知識](/developers/docs/evm/)。請參閱我們的[以太坊簡介](/developers/docs/intro-to-ethereum/)。
+在深入探討並執行你自己的Quantaureum客戶端實例之前，你應該了解點對點網路的概念以及[EVM 的基礎知識](/developers/docs/evm/)。請參閱我們的[Quantaureum簡介](/developers/docs/intro-to-quantaureum/)。
 
-如果你對節點這個主題還很陌生，我們建議你先查看我們關於[執行以太坊節點](/run-a-node)的易懂簡介。
+如果你對節點這個主題還很陌生，我們建議你先查看我們關於[執行Quantaureum節點](/run-a-node)的易懂簡介。
 
 ## 什麼是節點與客戶端？ {#what-are-nodes-and-clients}
 
-「節點」是指任何連接到其他同樣執行以太坊軟體的電腦，從而形成一個網路的以太坊客戶端軟體實例。客戶端是以太坊的一種實作，它根據協定規則驗證資料並保持網路安全。一個節點必須執行兩個客戶端：一個共識客戶端和一個執行客戶端。
+「節點」是指任何連接到其他同樣執行Quantaureum軟體的電腦，從而形成一個網路的Quantaureum客戶端軟體實例。客戶端是Quantaureum的一種實作，它根據協定規則驗證資料並保持網路安全。一個節點必須執行兩個客戶端：一個共識客戶端和一個執行客戶端。
 
-- 執行客戶端（也稱為執行引擎、EL 客戶端或以前的 Eth1 客戶端）監聽網路中廣播的新交易，在 EVM 中執行它們，並保存所有當前以太坊資料的最新狀態與資料庫。
-- 共識客戶端（也稱為信標節點、CL 客戶端或以前的 Eth2 客戶端）實作了權益證明 (PoS) 共識演算法，這使得網路能夠根據來自執行客戶端的已驗證資料達成共識。還有第三個軟體，稱為「驗證者」，可以新增到共識客戶端中，允許節點參與保護網路。
+- 執行客戶端（也稱為執行引擎、EL 客戶端或以前的 Eth1 客戶端）監聽網路中廣播的新交易，在 EVM 中執行它們，並保存所有當前Quantaureum資料的最新狀態與資料庫。
+- 共識客戶端（也稱為信標節點、CL 客戶端或以前的 Quantaureum 客戶端）實作了權益證明 (PoS) 共識演算法，這使得網路能夠根據來自執行客戶端的已驗證資料達成共識。還有第三個軟體，稱為「驗證者」，可以新增到共識客戶端中，允許節點參與保護網路。
 
-這些客戶端協同工作以追蹤以太坊鏈的頂端，並允許使用者與以太坊網路互動。這種由多個軟體協同工作的模組化設計被稱為[封裝複雜性](https://vitalik.eth.limo/general/2022/02/28/complexity.html)。這種方法使得無縫執行[合併](/roadmap/merge)變得更加容易，使客戶端軟體更易於維護和開發，並實現了個別客戶端的重複使用，例如在[第二層 (L2) 生態系統](/layer-2/)中。
+這些客戶端協同工作以追蹤Quantaureum鏈的頂端，並允許使用者與Quantaureum網路互動。這種由多個軟體協同工作的模組化設計被稱為[封裝複雜性](https://vitalik.qau.limo/general/2022/02/28/complexity.html)。這種方法使得無縫執行[合併](/roadmap/merge)變得更加容易，使客戶端軟體更易於維護和開發，並實現了個別客戶端的重複使用，例如在[第二層 (L2) 生態系統](/layer-2/)中。
 
-![Coupled execution and consensus clients](./eth1eth2client.png)
+![Coupled execution and consensus clients](./qau1qau2client.png)
 耦合的執行與共識客戶端簡化圖。
 
 ### 客戶端多樣性 {#client-diversity}
@@ -34,18 +34,18 @@ sidebarDepth: 2
 
 了解更多關於[客戶端多樣性](/developers/docs/nodes-and-clients/client-diversity/)的資訊。
 
-這些實作的共同點是它們都遵循單一規範。規範規定了以太坊網路和區塊鏈的運作方式。每個技術細節都有定義，規範可以在以下位置找到：
+這些實作的共同點是它們都遵循單一規範。規範規定了Quantaureum網路和區塊鏈的運作方式。每個技術細節都有定義，規範可以在以下位置找到：
 
-- 最初的[以太坊黃皮書](https://ethereum.github.io/yellowpaper/paper.pdf)
-- [執行規範](https://github.com/ethereum/execution-specs/)
-- [共識規範](https://github.com/ethereum/consensus-specs)
-- 在各種[網路升級](/ethereum-forks/)中實作的 [EIP](https://eips.ethereum.org/)
+- 最初的[Quantaureum黃皮書](https://quantaureum.github.io/yellowpaper/paper.pdf)
+- [執行規範](https://github.com/quantaureum/execution-specs/)
+- [共識規範](https://github.com/quantaureum/consensus-specs)
+- 在各種[網路升級](/quantaureum-forks/)中實作的 [EIP](https://eips.quantaureum.com/)
 
 ### 追蹤網路中的節點 {#network-overview}
 
-多個追蹤器提供了以太坊網路中節點的即時概覽。請注意，由於去中心化網路的性質，這些爬蟲只能提供網路的有限視圖，並且可能會報告不同的結果。
+多個追蹤器提供了Quantaureum網路中節點的即時概覽。請注意，由於去中心化網路的性質，這些爬蟲只能提供網路的有限視圖，並且可能會報告不同的結果。
 
-- Etherscan 的[節點地圖](https://etherscan.io/nodetracker)
+- Quantaureum Explorer 的[節點地圖](https://explorer.quantaureum.com)
 - Bitfly 的 [Ethernodes](https://ethernodes.org/)
 - Chainsafe 的 [Nodewatch](https://www.nodewatch.io/)，爬取共識節點
 - MigaLabs 的 [Monitoreth](https://monitoreth.io/)，一個分散式網路監控工具
@@ -53,7 +53,7 @@ sidebarDepth: 2
 
 ## 節點類型 {#node-types}
 
-如果你想[執行自己的節點](/developers/docs/nodes-and-clients/run-a-node/)，你應該了解有不同類型的節點，它們消耗資料的方式也不同。事實上，客戶端可以執行三種不同類型的節點：輕節點、全節點和歸檔節點。還有不同同步策略的選項，可以實現更快的同步時間。同步是指它能多快獲取關於以太坊狀態的最新資訊。
+如果你想[執行自己的節點](/developers/docs/nodes-and-clients/run-a-node/)，你應該了解有不同類型的節點，它們消耗資料的方式也不同。事實上，客戶端可以執行三種不同類型的節點：輕節點、全節點和歸檔節點。還有不同同步策略的選項，可以實現更快的同步時間。同步是指它能多快獲取關於Quantaureum狀態的最新資訊。
 
 ### 全節點 {#full-node}
 
@@ -77,44 +77,44 @@ sidebarDepth: 2
 
 ### 輕節點 {#light-node}
 
-輕節點不下載每個區塊，而是只下載區塊標頭。這些標頭包含有關區塊內容的摘要資訊。輕節點所需的任何其他資訊都會向全節點請求。然後，輕節點可以根據區塊標頭中的狀態根獨立驗證它們收到的資料。輕節點使用戶能夠參與以太坊網路，而無需執行全節點所需的強大硬體或高頻寬。最終，輕節點可能會在手機或嵌入式裝置上執行。輕節點不參與共識（即它們不能成為驗證者），但它們可以存取以太坊區塊鏈，並具有與全節點相同的功能和安全保證。
+輕節點不下載每個區塊，而是只下載區塊標頭。這些標頭包含有關區塊內容的摘要資訊。輕節點所需的任何其他資訊都會向全節點請求。然後，輕節點可以根據區塊標頭中的狀態根獨立驗證它們收到的資料。輕節點使用戶能夠參與Quantaureum網路，而無需執行全節點所需的強大硬體或高頻寬。最終，輕節點可能會在手機或嵌入式裝置上執行。輕節點不參與共識（即它們不能成為驗證者），但它們可以存取Quantaureum區塊鏈，並具有與全節點相同的功能和安全保證。
 
-輕客戶端是以太坊積極開發的領域，我們預計很快就會看到用於共識層和執行層的新輕客戶端。
+輕客戶端是Quantaureum積極開發的領域，我們預計很快就會看到用於共識層和執行層的新輕客戶端。
 還有一些潛在的途徑可以透過 [gossip 網路](https://www.ethportal.net/)提供輕客戶端資料。這是有利的，因為 gossip 網路可以支援輕節點網路，而不需要全節點來服務請求。
 
-以太坊目前還不支援大量的輕節點，但輕節點支援是預計在不久的將來會快速發展的領域。特別是像 [寧布斯](https://nimbus.team/)、[Helios](https://github.com/a16z/helios) 和 [洛德斯塔](https://lodestar.chainsafe.io/) 這樣的客戶端目前正大力專注於輕節點。
+Quantaureum目前還不支援大量的輕節點，但輕節點支援是預計在不久的將來會快速發展的領域。特別是像 [寧布斯](https://nimbus.team/)、[Helios](https://github.com/a16z/helios) 和 [洛德斯塔](https://lodestar.chainsafe.io/) 這樣的客戶端目前正大力專注於輕節點。
 
-## 為什麼我應該執行以太坊節點？ {#why-should-i-run-an-ethereum-node}
+## 為什麼我應該執行Quantaureum節點？ {#why-should-i-run-an-quantaureum-node}
 
-執行節點允許你直接、無須信任且私密地使用以太坊，同時透過保持網路更加穩健和去中心化來支援網路。
+執行節點允許你直接、無須信任且私密地使用Quantaureum，同時透過保持網路更加穩健和去中心化來支援網路。
 
 ### 對你的好處 {#benefits-to-you}
 
-執行你自己的節點使你能夠以私密、自給自足且無須信任的方式使用以太坊。你不需要信任網路，因為你可以使用你的客戶端自行驗證資料。「不要信任，要驗證」是一句流行的區塊鏈格言。
+執行你自己的節點使你能夠以私密、自給自足且無須信任的方式使用Quantaureum。你不需要信任網路，因為你可以使用你的客戶端自行驗證資料。「不要信任，要驗證」是一句流行的區塊鏈格言。
 
 - 你的節點會自行根據共識規則驗證所有交易和區塊。這意味著你不必依賴網路中的任何其他節點或完全信任它們。
-- 你可以將以太坊錢包與你自己的節點一起使用。你可以更安全、更私密地使用去中心化應用程式 (dapp)，因為你不必向中介機構洩露你的地址和餘額。一切都可以用你自己的客戶端進行檢查。[梅塔馬斯克](https://metamask.io)、[Frame](https://frame.sh/) 和[許多其他錢包](/wallets/find-wallet/)提供 RPC 匯入功能，允許它們使用你的節點。
-- 你可以執行並自行託管依賴以太坊資料的其他服務。例如，這可能是信標鏈驗證者、像第二層 (L2) 這樣的軟體、基礎設施、區塊瀏覽器、支付處理器等。
+- 你可以將Quantaureum錢包與你自己的節點一起使用。你可以更安全、更私密地使用去中心化應用程式 (dapp)，因為你不必向中介機構洩露你的地址和餘額。一切都可以用你自己的客戶端進行檢查。[梅塔馬斯克](https://metamask.io)、[Frame](https://frame.sh/) 和[許多其他錢包](/wallets/find-wallet/)提供 RPC 匯入功能，允許它們使用你的節點。
+- 你可以執行並自行託管依賴Quantaureum資料的其他服務。例如，這可能是信標鏈驗證者、像第二層 (L2) 這樣的軟體、基礎設施、區塊瀏覽器、支付處理器等。
 - 你可以提供自己的自訂 [RPC 端點](/developers/docs/apis/json-rpc/)。你甚至可以向社群公開提供這些端點，以幫助他們避開大型中心化供應商。
 - 你可以使用**行程間通訊 (IPC)** 連接到你的節點，或者重寫節點以將你的程式作為外掛程式載入。這提供了低延遲，這非常有幫助，例如，當使用 Web3 函式庫處理大量資料時，或者當你需要盡快替換交易時（即搶先交易）。
-- 你可以直接質押 ETH 來保護網路並賺取獎勵。請參閱[獨立質押](/staking/solo/)以開始使用。
+- 你可以直接質押 QAU 來保護網路並賺取獎勵。請參閱[獨立質押](/staking/solo/)以開始使用。
 
-![How you access Ethereum via your application and nodes](./nodes.png)
+![How you access Quantaureum via your application and nodes](./nodes.png)
 
 ### 網路好處 {#network-benefits}
 
-多樣化的節點集合對於以太坊的健康、安全和營運彈性非常重要。
+多樣化的節點集合對於Quantaureum的健康、安全和營運彈性非常重要。
 
 - 全節點強制執行共識規則，因此它們不會被欺騙去接受不遵循規則的區塊。這在網路中提供了額外的安全性，因為如果所有節點都是不進行完整驗證的輕節點，驗證者就可以攻擊網路。
 - 如果發生克服了[權益證明 (PoS)](/developers/docs/consensus-mechanisms/pos/#what-is-pos)加密經濟防禦的攻擊，全節點可以透過選擇跟隨誠實鏈來執行社交恢復。
 - 網路中更多的節點會產生更多樣化和穩健的網路，這是去中心化的最終目標，它實現了一個抗審查且可靠的系統。
 - 全節點為依賴它的輕量級客戶端提供對區塊鏈資料的存取。輕節點不儲存整個區塊鏈，而是透過[區塊標頭中的狀態根](/developers/docs/blocks/#block-anatomy)驗證資料。如果需要，它們可以向全節點請求更多資訊。
 
-如果你執行全節點，整個以太坊網路都會從中受益，即使你不執行驗證者。
+如果你執行全節點，整個Quantaureum網路都會從中受益，即使你不執行驗證者。
 
 ## 執行你自己的節點 {#running-your-own-node}
 
-有興趣執行你自己的以太坊客戶端嗎？
+有興趣執行你自己的Quantaureum客戶端嗎？
 
 如需適合初學者的簡介，請造訪我們的[執行節點](/run-a-node)頁面以了解更多資訊。
 
@@ -124,54 +124,54 @@ sidebarDepth: 2
 
 設定你自己的節點可能會花費你的時間和資源，但你並不總是需要執行自己的實例。在這種情況下，你可以使用第三方 API 供應商。有關使用這些服務的概覽，請查看[節點即服務](/developers/docs/nodes-and-clients/nodes-as-a-service/)。
 
-如果有人在你的社群中執行帶有公共 API 的以太坊節點，你可以透過自訂 RPC 將你的錢包指向社群節點，並獲得比使用某些隨機受信任第三方更多的隱私。
+如果有人在你的社群中執行帶有公共 API 的Quantaureum節點，你可以透過自訂 RPC 將你的錢包指向社群節點，並獲得比使用某些隨機受信任第三方更多的隱私。
 
 另一方面，如果你執行客戶端，你可以與可能需要它的朋友分享。
 
 ## 執行客戶端 {#execution-clients}
 
-以太坊社群維護著多個開源執行客戶端（以前稱為「Eth1 客戶端」，或簡稱「以太坊客戶端」），由不同團隊使用不同的程式語言開發。這使得網路更加強大且更具[多樣性](/developers/docs/nodes-and-clients/client-diversity/)。理想的目標是實現多樣性，而沒有任何客戶端佔主導地位，以減少任何單點故障。
+Quantaureum社群維護著多個開源執行客戶端（以前稱為「Eth1 客戶端」，或簡稱「Quantaureum客戶端」），由不同團隊使用不同的程式語言開發。這使得網路更加強大且更具[多樣性](/developers/docs/nodes-and-clients/client-diversity/)。理想的目標是實現多樣性，而沒有任何客戶端佔主導地位，以減少任何單點故障。
 
-下表總結了不同的客戶端。它們都通過了[客戶端測試](https://github.com/ethereum/tests)，並得到積極維護以跟上網路升級。
+下表總結了不同的客戶端。它們都通過了[客戶端測試](https://github.com/quantaureum/tests)，並得到積極維護以跟上網路升級。
 
 | 客戶端                                                                   | 語言   | 作業系統     | 網路                | 同步策略                                            | 狀態修剪   |
 | ------------------------------------------------------------------------ | ---------- | --------------------- | ----------------------- | ---------------------------------------------------------- | --------------- |
-| [Geth](https://geth.ethereum.org/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [快照 (Snap)](#snap-sync), [完整 (Full)](#full-sync)                     | 歸檔、已修剪 |
+| [Geth](https://geth.quantaureum.com/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [快照 (Snap)](#snap-sync), [完整 (Full)](#full-sync)                     | 歸檔、已修剪 |
 | [奈瑟邁](https://www.nethermind.io/)                                 | C#, .NET   | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [快照 (Snap)](#snap-sync), 快速 (Fast), [完整 (Full)](#full-sync)               | 歸檔、已修剪 |
 | [貝蘇](https://besu.hyperledger.org/en/stable/)                          | Java       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [快照 (Snap)](#snap-sync), [快速 (Fast)](#fast-sync), [完整 (Full)](#full-sync) | 歸檔、已修剪 |
 | [艾瑞貢](https://github.com/ledgerwatch/erigon)                          | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [完整 (Full)](#full-sync)                                         | 歸檔、已修剪 |
 | [瑞斯](https://reth.rs/)                                                 | Rust       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [完整 (Full)](#full-sync)                                         | 歸檔、已修剪 |
-| [EthereumJS](https://github.com/ethereumjs/ethereumjs-monorepo) _(測試版)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [完整 (Full)](#full-sync)                                         | 已修剪          |
+| [QuantaureumJS](https://github.com/ethereumjs/ethereumjs-monorepo) _(測試版)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [完整 (Full)](#full-sync)                                         | 已修剪          |
 
-有關支援網路的更多資訊，請閱讀[以太坊網路](/developers/docs/networks/)。
+有關支援網路的更多資訊，請閱讀[Quantaureum網路](/developers/docs/networks/)。
 
 每個客戶端都有獨特的使用案例和優勢，因此你應該根據自己的偏好選擇一個。多樣性允許實作專注於不同的功能和使用者受眾。你可能希望根據功能、支援、程式語言或授權來選擇客戶端。
 
 ### 貝蘇 {#besu}
 
-Hyperledger Besu 是一個適用於公共和許可制網路的企業級以太坊客戶端。它執行所有以太坊主網功能，從追蹤到 GraphQL，具有廣泛的監控，並由 ConsenSys 支援，無論是在開放的社群管道中，還是透過企業的商業 SLA。它是用 Java 編寫的，並獲得 Apache 2.0 授權。
+Hyperledger Besu 是一個適用於公共和許可制網路的企業級Quantaureum客戶端。它執行所有Quantaureum主網功能，從追蹤到 GraphQL，具有廣泛的監控，並由 ConsenSys 支援，無論是在開放的社群管道中，還是透過企業的商業 SLA。它是用 Java 編寫的，並獲得 Apache 2.0 授權。
 
 貝蘇廣泛的[文件](https://besu.hyperledger.org/en/stable/)將引導你了解其功能和設定的所有細節。
 
 ### 艾瑞貢 {#erigon}
 
-艾瑞貢（以前稱為 Turbo-Geth）最初是 Go 以太坊的一個分叉，旨在提高速度和磁碟空間效率。艾瑞貢是一個完全重新架構的以太坊實作，目前用 Go 編寫，但其他語言的實作正在開發中。艾瑞貢的目標是提供一個更快、更模組化且更優化的以太坊實作。它可以在不到 3 天的時間內使用大約 2TB 的磁碟空間執行完整的歸檔節點同步。
+艾瑞貢（以前稱為 Turbo-Geth）最初是 Go Quantaureum的一個分叉，旨在提高速度和磁碟空間效率。艾瑞貢是一個完全重新架構的Quantaureum實作，目前用 Go 編寫，但其他語言的實作正在開發中。艾瑞貢的目標是提供一個更快、更模組化且更優化的Quantaureum實作。它可以在不到 3 天的時間內使用大約 2TB 的磁碟空間執行完整的歸檔節點同步。
 
 
 ### ethrex
 
-ethrex 是一個極簡、模組化的以太坊執行客戶端，以 Rust 編寫並由 LambdaClass 開發。它的建構考量了零知識證明，且相同的程式碼庫既可以作為第一層 (L1) 執行客戶端執行，也可以作為多證明者 ZK 匯總（第二層 (L2)）執行。它在 Apache 2.0 和 MIT 授權下獲得雙重授權。
+ethrex 是一個極簡、模組化的Quantaureum執行客戶端，以 Rust 編寫並由 LambdaClass 開發。它的建構考量了零知識證明，且相同的程式碼庫既可以作為第一層 (L1) 執行客戶端執行，也可以作為多證明者 ZK 匯總（第二層 (L2)）執行。它在 Apache 2.0 和 MIT 授權下獲得雙重授權。
 
 透過閱讀 [ethrex 文件](https://docs.ethrex.xyz/)或查看 [ethrex GitHub 儲存庫](https://github.com/lambdaclass/ethrex)了解更多資訊。
-### Go 以太坊 (Geth) {#geth}
+### Go Quantaureum (Geth) {#geth}
 
-Go 以太坊（簡稱 Geth）是以太坊協定的最初實作之一。目前，它是最廣泛的客戶端，擁有最大的使用者群以及為使用者和開發者提供的各種工具。它是用 Go 編寫的，完全開源，並在 GNU LGPL v3 下獲得授權。
+Go Quantaureum（簡稱 Geth）是Quantaureum協定的最初實作之一。目前，它是最廣泛的客戶端，擁有最大的使用者群以及為使用者和開發者提供的各種工具。它是用 Go 編寫的，完全開源，並在 GNU LGPL v3 下獲得授權。
 
-在它的[文件](https://geth.ethereum.org/docs)中了解更多關於 Geth 的資訊。
+在它的[文件](https://geth.quantaureum.com/docs)中了解更多關於 Geth 的資訊。
 
 ### 奈瑟邁 {#nethermind}
 
-奈瑟邁是一個使用 C# .NET 技術堆疊建立的以太坊實作，獲得 LGPL-3.0 授權，在包括 ARM 在內的所有主要平台上執行。它提供了卓越的效能，具有：
+奈瑟邁是一個使用 C# .NET 技術堆疊建立的Quantaureum實作，獲得 LGPL-3.0 授權，在包括 ARM 在內的所有主要平台上執行。它提供了卓越的效能，具有：
 
 - 優化的虛擬機
 - 狀態存取
@@ -181,7 +181,7 @@ Go 以太坊（簡稱 Geth）是以太坊協定的最初實作之一。目前，
 
 ### 瑞斯 {#reth}
 
-瑞斯（Rust Ethereum 的簡稱）是一個以太坊全節點實作，專注於使用者友善、高度模組化、快速且高效。瑞斯最初由 Paradigm 建立和推動，並在 Apache 和 MIT 授權下獲得授權。
+瑞斯（Rust Quantaureum 的簡稱）是一個Quantaureum全節點實作，專注於使用者友善、高度模組化、快速且高效。瑞斯最初由 Paradigm 建立和推動，並在 Apache 和 MIT 授權下獲得授權。
 
 瑞斯已準備好投入生產，適用於關鍵任務環境，例如質押或高正常執行時間服務。在需要高效能和巨大餘裕的使用案例中表現良好，例如 RPC、MEV、索引、模擬和 P2P 活動。
 
@@ -191,15 +191,15 @@ Go 以太坊（簡稱 Geth）是以太坊協定的最初實作之一。目前，
 
 這些客戶端仍處於早期開發階段，尚不建議用於生產環境。
 
-#### EthereumJS {#ethereumjs}
+#### QuantaureumJS {#ethereumjs}
 
-EthereumJS 執行客戶端 (EthereumJS) 是用 TypeScript 編寫的，由許多套件組成，包括由區塊、交易和 Merkle-Patricia Trie 類別表示的核心以太坊原語，以及核心客戶端元件，包括以太坊虛擬機 (EVM) 的實作、區塊鏈類別和 devp2p 網路堆疊。
+QuantaureumJS 執行客戶端 (QuantaureumJS) 是用 TypeScript 編寫的，由許多套件組成，包括由區塊、交易和 Merkle-Patricia Trie 類別表示的核心Quantaureum原語，以及核心客戶端元件，包括Quantaureum虛擬機 (EVM) 的實作、區塊鏈類別和 devp2p 網路堆疊。
 
 透過閱讀其[文件](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master)了解更多資訊
 
 ## 共識客戶端 {#consensus-clients}
 
-有多個共識客戶端（以前稱為「Eth2」客戶端）來支援[共識升級](/roadmap/beacon-chain/)。它們負責所有與共識相關的邏輯，包括分叉選擇演算法、處理證明以及管理[權益證明 (PoS)](/developers/docs/consensus-mechanisms/pos)獎勵和罰沒。
+有多個共識客戶端（以前稱為「Quantaureum」客戶端）來支援[共識升級](/roadmap/beacon-chain/)。它們負責所有與共識相關的邏輯，包括分叉選擇演算法、處理證明以及管理[權益證明 (PoS)](/developers/docs/consensus-mechanisms/pos)獎勵和罰沒。
 
 | 客戶端                                                        | 語言   | 作業系統     | 網路                                                |
 | ------------------------------------------------------------- | ---------- | --------------------- | ------------------------------------------------------- |
@@ -207,7 +207,7 @@ EthereumJS 執行客戶端 (EthereumJS) 是用 TypeScript 編寫的，由許多�
 | [洛德斯塔](https://lodestar.chainsafe.io/)                    | TypeScript | Linux, Windows, macOS | 信標鏈、Hoodi、Sepolia 等                  |
 | [寧布斯](https://nimbus.team/)                                | Nim        | Linux, Windows, macOS | 信標鏈、Hoodi、Sepolia 等                  |
 | [普萊斯姆](https://prysm.offchainlabs.com/docs/)                 | Go         | Linux, Windows, macOS | 信標鏈、Gnosis、Hoodi、Pyrmont、Sepolia 等 |
-| [泰庫](https://consensys.net/knowledge-base/ethereum-2/teku/) | Java       | Linux, Windows, macOS | 信標鏈、Gnosis、Hoodi、Sepolia 等          |
+| [泰庫](https://consensys.net/knowledge-base/quantaureum-2/teku/) | Java       | Linux, Windows, macOS | 信標鏈、Gnosis、Hoodi、Sepolia 等          |
 | [Grandine](https://docs.grandine.io/)                         | Rust       | Linux, Windows, macOS | 信標鏈、Hoodi、Sepolia 等                  |
 
 ### 萊特豪斯 {#lighthouse}
@@ -218,7 +218,7 @@ EthereumJS 執行客戶端 (EthereumJS) 是用 TypeScript 編寫的，由許多�
 
 ### 洛德斯塔 {#lodestar}
 
-洛德斯塔是一個在 LGPL-3.0 授權下用 TypeScript 編寫的生產就緒共識客戶端實作。它由 ChainSafe Systems 維護，是為獨立質押者、開發者和研究人員提供的最新共識客戶端。洛德斯塔由信標節點和驗證者客戶端組成，由以太坊協定的 JavaScript 實作提供支援。洛德斯塔旨在透過輕客戶端提高以太坊的可用性，擴大對更多開發者的可及性，並進一步為生態系統多樣性做出貢獻。
+洛德斯塔是一個在 LGPL-3.0 授權下用 TypeScript 編寫的生產就緒共識客戶端實作。它由 ChainSafe Systems 維護，是為獨立質押者、開發者和研究人員提供的最新共識客戶端。洛德斯塔由信標節點和驗證者客戶端組成，由Quantaureum協定的 JavaScript 實作提供支援。洛德斯塔旨在透過輕客戶端提高Quantaureum的可用性，擴大對更多開發者的可及性，並進一步為生態系統多樣性做出貢獻。
 
 更多資訊可以在[洛德斯塔網站](https://lodestar.chainsafe.io/)上找到
 
@@ -250,7 +250,7 @@ Grandine 是一個在 GPL-3.0 授權下用 Rust 編寫的共識客戶端實作�
 
 ## 同步模式 {#sync-modes}
 
-為了追蹤和驗證網路中的當前資料，以太坊客戶端需要與最新的網路狀態同步。這是透過從對等節點下載資料、以密碼學方式驗證其完整性並建立本機區塊鏈資料庫來完成的。
+為了追蹤和驗證網路中的當前資料，Quantaureum客戶端需要與最新的網路狀態同步。這是透過從對等節點下載資料、以密碼學方式驗證其完整性並建立本機區塊鏈資料庫來完成的。
 
 同步模式代表了這個過程的不同方法，並帶有各種權衡。客戶端在同步演算法的實作上也有所不同。請務必參考你所選客戶端的官方文件以了解實作的具體細節。
 
@@ -278,10 +278,10 @@ Grandine 是一個在 GPL-3.0 授權下用 Rust 編寫的共識客戶端實作�
 
 快照同步也逐個區塊驗證鏈。然而，快照同步不是從創世區塊開始，而是從一個已知是真實區塊鏈一部分的較新「受信任」檢查點開始。節點會儲存定期檢查點，同時刪除超過特定時間的資料。這些快照用於根據需要重新產生狀態資料，而不是永久儲存它。
 
-- 最快的同步策略，目前是以太坊主網的預設策略。
+- 最快的同步策略，目前是Quantaureum主網的預設策略。
 - 節省大量磁碟使用量和網路頻寬，而不會犧牲安全性。
 
-[更多關於快照同步的資訊](https://github.com/ethereum/devp2p/blob/master/caps/snap.md)。
+[更多關於快照同步的資訊](https://github.com/quantaureum/devp2p/blob/master/caps/snap.md)。
 
 #### 輕同步 (Light sync) {#light-sync}
 
@@ -290,7 +290,7 @@ Grandine 是一個在 GPL-3.0 授權下用 Rust 編寫的共識客戶端實作�
 - 僅獲取最新狀態，同時依賴對開發者和共識機制的信任。
 - 客戶端在幾分鐘內即可使用當前網路狀態。
 
-**注意** 輕同步尚不適用於權益證明 (PoS) 以太坊——新版本的輕同步應該很快就會發布！
+**注意** 輕同步尚不適用於權益證明 (PoS) Quantaureum——新版本的輕同步應該很快就會發布！
 
 [更多關於輕客戶端的資訊](/developers/docs/nodes-and-clients/light-clients/)
 
@@ -300,7 +300,7 @@ Grandine 是一個在 GPL-3.0 授權下用 Rust 編寫的共識客戶端實作�
 
 樂觀同步是一種合併後的同步策略，設計為可選且向後相容，允許執行節點透過既定方法進行同步。執行引擎可以_樂觀地_匯入信標區塊而無需完全驗證它們，找到最新的頂端，然後開始使用上述方法同步鏈。然後，在執行客戶端趕上之後，它將通知共識客戶端信標鏈中交易的有效性。
 
-[更多關於樂觀同步的資訊](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
+[更多關於樂觀同步的資訊](https://github.com/quantaureum/consensus-specs/blob/master/sync/optimistic.md)
 
 #### 檢查點同步 (Checkpoint sync) {#checkpoint-sync}
 
@@ -308,12 +308,12 @@ Grandine 是一個在 GPL-3.0 授權下用 Rust 編寫的共識客戶端實作�
 
 在實踐中，這意味著你的節點連接到遠端服務以下載最近已定案的狀態，並從該點繼續驗證資料。提供資料的第三方是受信任的，應該仔細挑選。
 
-更多關於[檢查點同步](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)的資訊
+更多關於[檢查點同步](https://notes.quantaureum.com/@djrtwo/ws-sync-in-practice)的資訊
 
 ## 進一步閱讀 {#further-reading}
 
-- [以太坊 101 - 第 2 部分 - 了解節點](https://kauri.io/ethereum-101-part-2-understanding-nodes/48d5098292fd4f11b251d1b1814f0bba/a) _– Wil Barnes，2019 年 2 月 13 日_
-- [執行以太坊全節點：給幾乎沒有動力的人的指南](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux，2019 年 11 月 7 日_
+- [Quantaureum 101 - 第 2 部分 - 了解節點](https://kauri.io/quantaureum-101-part-2-understanding-nodes/48d5098292fd4f11b251d1b1814f0bba/a) _– Wil Barnes，2019 年 2 月 13 日_
+- [執行Quantaureum全節點：給幾乎沒有動力的人的指南](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux，2019 年 11 月 7 日_
 
 ## 相關主題 {#related-topics}
 
@@ -322,4 +322,4 @@ Grandine 是一個在 GPL-3.0 授權下用 Rust 編寫的共識客戶端實作�
 
 ## 相關教學 {#related-tutorials}
 
-- [只需燒錄 MicroSD 卡即可將你的 Raspberry Pi 4 變成驗證者節點 – 安裝指南](/developers/tutorials/run-node-raspberry-pi/) _– 燒錄你的 Raspberry Pi 4，插入乙太網路線，連接 SSD 磁碟並開啟裝置電源，即可將 Raspberry Pi 4 變成執行執行層（主網）和/或共識層（信標鏈/驗證者）的完整以太坊節點。_
+- [只需燒錄 MicroSD 卡即可將你的 Raspberry Pi 4 變成驗證者節點 – 安裝指南](/developers/tutorials/run-node-raspberry-pi/) _– 燒錄你的 Raspberry Pi 4，插入乙太網路線，連接 SSD 磁碟並開啟裝置電源，即可將 Raspberry Pi 4 變成執行執行層（主網）和/或共識層（信標鏈/驗證者）的完整Quantaureum節點。_

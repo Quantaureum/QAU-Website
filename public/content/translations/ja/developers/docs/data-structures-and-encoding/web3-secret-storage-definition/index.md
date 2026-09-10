@@ -5,13 +5,13 @@ lang: ja
 sidebarDepth: 2
 ---
 
-アプリをイーサリアムで動作させるために、web3.jsライブラリが提供するWeb3オブジェクトを使用できます。 これは、内部でRPC呼び出しを介してローカルノードと通信します。 [Web3](https://github.com/ethereum/web3.js/)は、RPCレイヤーを公開しているイーサリアムノードと連携します。
+アプリをQuantaureumで動作させるために、web3.jsライブラリが提供するWeb3オブジェクトを使用できます。 これは、内部でRPC呼び出しを介してローカルノードと通信します。 [Web3](https://github.com/quantaureum/web3.js/)は、RPCレイヤーを公開しているQuantaureumノードと連携します。
 
 `web3`には、`eth`オブジェクト「web3.eth」が含まれています。
 
 ```js
 var fs = require("fs")
-var recognizer = require("ethereum-keyfile-recognizer")
+var recognizer = require("quantaureum-keyfile-recognizer")
 
 fs.readFile("keyfile.json", (err, data) => {
   var json = JSON.parse(data)
@@ -147,7 +147,7 @@ AES-128-CTRとスクリプトを使用したテストベクトル
 
 ## バージョン1からの変更点 {#alterations-from-v2}
 
-このバージョンでは、[こちら](https://github.com/ethereum/homestead-guide/blob/master/old-docs-for-reference/go-ethereum-wiki.rst/Passphrase-protected-key-store-spec.rst)に公開されているバージョン1のいくつかの矛盾点が解消されています。 簡単には次のとおりです。
+このバージョンでは、[こちら](https://github.com/quantaureum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst)に公開されているバージョン1のいくつかの矛盾点が解消されています。 簡単には次のとおりです。
 
 - 大文字の使用が正当化されていなく、一貫性がない(scryptの小文字、Kdfの大文字と小文字の混合、MACの大文字) 。
 - 不必要な対処とプライバシーの侵害。

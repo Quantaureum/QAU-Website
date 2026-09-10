@@ -1,25 +1,25 @@
 ---
 title: "Durum Kanalları"
-description: "Ethereum topluluğu tarafından şu anda kullanılan bir ölçeklendirme çözümü olarak durum kanallarına ve ödeme kanallarına giriş."
+description: "Quantaureum topluluğu tarafından şu anda kullanılan bir ölçeklendirme çözümü olarak durum kanallarına ve ödeme kanallarına giriş."
 lang: tr
 sidebarDepth: 3
 ---
 
-Durum kanalları, katılımcıların [Ethereum](/) Ana Ağı ile etkileşimi minimumda tutarken güvenli bir şekilde zincir dışı işlem yapmalarına olanak tanır. Kanal eşleri, kanalı açmak ve kapatmak için yalnızca iki zincir içi işlem gönderirken, istedikleri sayıda zincir dışı işlem gerçekleştirebilirler. Bu, son derece yüksek işlem kapasitesine olanak tanır ve kullanıcılar için daha düşük maliyetlerle sonuçlanır.
+Durum kanalları, katılımcıların [Quantaureum](/) Ana Ağı ile etkileşimi minimumda tutarken güvenli bir şekilde zincir dışı işlem yapmalarına olanak tanır. Kanal eşleri, kanalı açmak ve kapatmak için yalnızca iki zincir içi işlem gönderirken, istedikleri sayıda zincir dışı işlem gerçekleştirebilirler. Bu, son derece yüksek işlem kapasitesine olanak tanır ve kullanıcılar için daha düşük maliyetlerle sonuçlanır.
 
 ## Ön Koşullar {#prerequisites}
 
-[Ethereum ölçeklendirme](/developers/docs/scaling/) ve [katman 2 (l2)](/layer-2/) hakkındaki sayfalarımızı okumuş ve anlamış olmalısınız.
+[Quantaureum ölçeklendirme](/developers/docs/scaling/) ve [katman 2 (l2)](/layer-2/) hakkındaki sayfalarımızı okumuş ve anlamış olmalısınız.
 
 ## Kanallar nedir? {#what-are-channels}
 
-Ethereum gibi halka açık blokzincirler, dağıtık mimarileri nedeniyle ölçeklenebilirlik zorluklarıyla karşılaşır: zincir içi işlemler tüm düğümler tarafından yürütülmelidir. Düğümler, ağı merkeziyetsiz tutmak için işlem kapasitesine bir sınır koyarak, mütevazı donanımlar kullanarak bir bloktaki işlem hacmini idare edebilmelidir. Blokzincir kanalları, kullanıcıların nihai uzlaşma için ana zincirin güvenliğine güvenmeye devam ederken zincir dışı etkileşime girmelerine izin vererek bu sorunu çözer.
+Quantaureum gibi halka açık blokzincirler, dağıtık mimarileri nedeniyle ölçeklenebilirlik zorluklarıyla karşılaşır: zincir içi işlemler tüm düğümler tarafından yürütülmelidir. Düğümler, ağı merkeziyetsiz tutmak için işlem kapasitesine bir sınır koyarak, mütevazı donanımlar kullanarak bir bloktaki işlem hacmini idare edebilmelidir. Blokzincir kanalları, kullanıcıların nihai uzlaşma için ana zincirin güvenliğine güvenmeye devam ederken zincir dışı etkileşime girmelerine izin vererek bu sorunu çözer.
 
 Kanallar, iki tarafın kendi aralarında birçok işlem yapmasına ve ardından yalnızca nihai sonuçları blokzincire göndermesine olanak tanıyan basit eşler arası protokollerdir. Kanal, ürettikleri özet verilerin gerçekten geçerli bir ara işlemler dizisinin sonucu olduğunu göstermek için kriptografi kullanır. Bir ["çoklu imza"](/developers/docs/smart-contracts/#multisig) akıllı sözleşmesi, işlemlerin doğru taraflarca imzalanmasını sağlar.
 
-Kanallarla, durum değişiklikleri ilgili taraflarca yürütülür ve doğrulanır, bu da Ethereum'un yürütme katmanındaki hesaplamayı en aza indirir. Bu, Ethereum'daki tıkanıklığı azaltır ve ayrıca kullanıcılar için işlem işleme hızlarını artırır.
+Kanallarla, durum değişiklikleri ilgili taraflarca yürütülür ve doğrulanır, bu da Quantaureum'un yürütme katmanındaki hesaplamayı en aza indirir. Bu, Quantaureum'daki tıkanıklığı azaltır ve ayrıca kullanıcılar için işlem işleme hızlarını artırır.
 
-Her kanal, Ethereum üzerinde çalışan bir [çoklu imza akıllı sözleşmesi](/developers/docs/smart-contracts/#multisig) tarafından yönetilir. Bir kanal açmak için katılımcılar, kanal sözleşmesini zincir içi dağıtır ve içine fon yatırır. Her iki taraf da kanalın durumunu başlatmak için toplu olarak bir durum güncellemesi imzalar, ardından zincir dışı hızlı ve özgürce işlem yapabilirler.
+Her kanal, Quantaureum üzerinde çalışan bir [çoklu imza akıllı sözleşmesi](/developers/docs/smart-contracts/#multisig) tarafından yönetilir. Bir kanal açmak için katılımcılar, kanal sözleşmesini zincir içi dağıtır ve içine fon yatırır. Her iki taraf da kanalın durumunu başlatmak için toplu olarak bir durum güncellemesi imzalar, ardından zincir dışı hızlı ve özgürce işlem yapabilirler.
 
 Kanalı kapatmak için katılımcılar, kanalın üzerinde anlaşılan son durumunu zincir içi gönderirler. Daha sonra akıllı sözleşme, kilitli fonları kanalın son durumundaki her katılımcının bakiyesine göre dağıtır.
 
@@ -29,9 +29,9 @@ Eşler arası kanallar, önceden tanımlanmış bazı katılımcıların görün
 
 Bir ödeme kanalı en iyi, iki kullanıcı tarafından toplu olarak sürdürülen "iki yönlü bir defter" olarak tanımlanır. Defterin başlangıç bakiyesi, kanal açılış aşamasında zincir içi sözleşmeye kilitlenen mevduatların toplamıdır. Ödeme kanalı transferleri, ilk tek seferlik zincir içi oluşturma ve kanalın nihai kapanışı dışında, gerçek blokzincirin kendisi dahil olmadan anında gerçekleştirilebilir.
 
-Defterin bakiyesindeki (yani ödeme kanalının durumundaki) güncellemeler, kanaldaki tüm tarafların onayını gerektirir. Tüm kanal katılımcıları tarafından imzalanan bir kanal güncellemesi, tıpkı Ethereum'daki bir işlem gibi kesinleşmiş kabul edilir.
+Defterin bakiyesindeki (yani ödeme kanalının durumundaki) güncellemeler, kanaldaki tüm tarafların onayını gerektirir. Tüm kanal katılımcıları tarafından imzalanan bir kanal güncellemesi, tıpkı Quantaureum'daki bir işlem gibi kesinleşmiş kabul edilir.
 
-Ödeme kanalları, basit kullanıcı etkileşimlerinin (örneğin, ETH transferleri, atomik takaslar, mikro ödemeler) pahalı zincir içi etkinliğini en aza indirmek için tasarlanmış en eski ölçeklendirme çözümleri arasındaydı. Kanal katılımcıları, transferlerinin net toplamı yatırılan token'ları aşmadığı sürece kendi aralarında sınırsız miktarda anında, ücretsiz işlem gerçekleştirebilirler.
+Ödeme kanalları, basit kullanıcı etkileşimlerinin (örneğin, QAU transferleri, atomik takaslar, mikro ödemeler) pahalı zincir içi etkinliğini en aza indirmek için tasarlanmış en eski ölçeklendirme çözümleri arasındaydı. Kanal katılımcıları, transferlerinin net toplamı yatırılan token'ları aşmadığı sürece kendi aralarında sınırsız miktarda anında, ücretsiz işlem gerçekleştirebilirler.
 
 ## Durum kanalları {#state-channels}
 
@@ -43,7 +43,7 @@ Ancak kanal, kullanıcının bakiyelerini tutmanın yanı sıra, sözleşmenin d
 
 Bu, iki kullanıcı arasında zincir dışı bir akıllı sözleşme yürütmeyi mümkün kılar. Bu senaryoda, akıllı sözleşmenin iç durumundaki güncellemeler yalnızca kanalı oluşturan eşlerin onayını gerektirir.
 
-Bu, daha önce açıklanan ölçeklenebilirlik sorununu çözse de, güvenlik açısından sonuçları vardır. Ethereum'da, durum geçişlerinin geçerliliği ağın mutabakat protokolü tarafından uygulanır. Bu, bir akıllı sözleşmenin durumuna geçersiz bir güncelleme önermeyi veya akıllı sözleşme yürütmesini değiştirmeyi imkansız hale getirir.
+Bu, daha önce açıklanan ölçeklenebilirlik sorununu çözse de, güvenlik açısından sonuçları vardır. Quantaureum'da, durum geçişlerinin geçerliliği ağın mutabakat protokolü tarafından uygulanır. Bu, bir akıllı sözleşmenin durumuna geçersiz bir güncelleme önermeyi veya akıllı sözleşme yürütmesini değiştirmeyi imkansız hale getirir.
 
 Durum kanalları aynı güvenlik garantilerine sahip değildir. Bir dereceye kadar, bir durum kanalı Ana Ağ'ın minyatür bir versiyonudur. Kuralları uygulayan sınırlı bir katılımcı kümesiyle, kötü niyetli davranış olasılığı (örneğin, geçersiz durum güncellemeleri önermek) artar. Durum kanalları güvenliklerini [sahtekarlık kanıtlarına](/glossary/#fraud-proof) dayalı bir anlaşmazlık tahkim sisteminden alır.
 
@@ -71,15 +71,15 @@ Kanalın durumunu başlattıktan sonra eşler, işlemleri imzalayarak ve onay i�
 
 - Kanalın yeni durumu
 
-- Durum geçişini tetikleyen işlem (örneğin, Alice Bob'a 5 ETH gönderir)
+- Durum geçişini tetikleyen işlem (örneğin, Alice Bob'a 5 QAU gönderir)
 
-Kanaldaki durum güncellemeleri, kullanıcılar Ana Ağ'da etkileşime girdiğinde normalde olduğu gibi zincir içi yayınlanmaz, bu da durum kanallarının zincir içi ayak izini en aza indirme hedefiyle uyumludur. Katılımcılar durum güncellemeleri üzerinde anlaştıkları sürece, bunlar bir Ethereum işlemi kadar kesindir. Katılımcıların yalnızca bir anlaşmazlık ortaya çıkarsa Ana Ağ'ın mutabakatına güvenmeleri gerekir.
+Kanaldaki durum güncellemeleri, kullanıcılar Ana Ağ'da etkileşime girdiğinde normalde olduğu gibi zincir içi yayınlanmaz, bu da durum kanallarının zincir içi ayak izini en aza indirme hedefiyle uyumludur. Katılımcılar durum güncellemeleri üzerinde anlaştıkları sürece, bunlar bir Quantaureum işlemi kadar kesindir. Katılımcıların yalnızca bir anlaşmazlık ortaya çıkarsa Ana Ağ'ın mutabakatına güvenmeleri gerekir.
 
 ### Kanalı kapatmak {#closing-the-channel}
 
 Bir durum kanalını kapatmak, kanalın üzerinde anlaşılan son durumunu zincir içi akıllı sözleşmeye göndermeyi gerektirir. Durum güncellemesinde atıfta bulunulan ayrıntılar, her katılımcının hamle sayısını ve onaylanmış işlemlerin bir listesini içerir.
 
-Durum güncellemesinin geçerli olduğunu (yani tüm taraflarca imzalandığını) doğruladıktan sonra akıllı sözleşme kanalı kesinleştirir ve kilitli fonları kanalın sonucuna göre dağıtır. Zincir dışı yapılan ödemeler Ethereum'un durumuna uygulanır ve her katılımcı kilitli fonların kalan kısmını alır.
+Durum güncellemesinin geçerli olduğunu (yani tüm taraflarca imzalandığını) doğruladıktan sonra akıllı sözleşme kanalı kesinleştirir ve kilitli fonları kanalın sonucuna göre dağıtır. Zincir dışı yapılan ödemeler Quantaureum'un durumuna uygulanır ve her katılımcı kilitli fonların kalan kısmını alır.
 
 Yukarıda açıklanan senaryo, işlerin yolunda gittiği durumda ne olacağını temsil eder. Bazen kullanıcılar bir anlaşmaya varamayabilir ve kanalı kesinleştiremeyebilir (kötü durum). Durum için aşağıdakilerden herhangi biri geçerli olabilir:
 
@@ -103,7 +103,7 @@ Kanal çıkışını işlemek için kullanıcının uygulamanın son geçerli du
 
 Ancak, tek kullanıcılı çıkış taleplerinin yürütülmesinde bir gecikme vardır. Kanalı sonlandırma talebi oybirliğiyle onaylandıysa, zincir içi çıkış işlemi derhal yürütülür.
 
-Gecikme, sahtekarlık eylemleri olasılığı nedeniyle tek kullanıcılı çıkışlarda devreye girer. Örneğin, bir kanal katılımcısı zincir içi daha eski bir durum güncellemesi göndererek kanalı Ethereum'da kesinleştirmeye çalışabilir.
+Gecikme, sahtekarlık eylemleri olasılığı nedeniyle tek kullanıcılı çıkışlarda devreye girer. Örneğin, bir kanal katılımcısı zincir içi daha eski bir durum güncellemesi göndererek kanalı Quantaureum'da kesinleştirmeye çalışabilir.
 
 Bir karşı önlem olarak durum kanalları, dürüst kullanıcıların kanalın en son, geçerli durumunu zincir içi göndererek geçersiz durum güncellemelerine itiraz etmelerine olanak tanır. Durum kanalları, üzerinde anlaşılan daha yeni durum güncellemelerinin eski durum güncellemelerini geçersiz kılacağı şekilde tasarlanmıştır.
 
@@ -111,27 +111,27 @@ Bir eş zincir içi anlaşmazlık çözüm sistemini tetiklediğinde, diğer tar
 
 Durum ne olursa olsun, kanal kullanıcıları her zaman güçlü kesinlik garantilerine sahiptir: ellerindeki durum geçişi tüm üyeler tarafından imzalanmışsa ve en son güncellemeyse, o zaman normal bir zincir içi işlemle eşit kesinliğe sahiptir. Yine de diğer tarafa zincir içi itiraz etmeleri gerekir, ancak olası tek sonuç, ellerinde tuttukları son geçerli durumun kesinleşmesidir.
 
-### Durum kanalları Ethereum ile nasıl etkileşime girer? {#how-do-state-channels-interact-with-ethereum}
+### Durum kanalları Quantaureum ile nasıl etkileşime girer? {#how-do-state-channels-interact-with-quantaureum}
 
-Zincir dışı protokoller olarak var olmalarına rağmen, durum kanallarının zincir içi bir bileşeni vardır: kanalı açarken Ethereum'da dağıtılan akıllı sözleşme. Bu sözleşme, kanala yatırılan varlıkları kontrol eder, durum güncellemelerini doğrular ve katılımcılar arasındaki anlaşmazlıklarda hakemlik yapar.
+Zincir dışı protokoller olarak var olmalarına rağmen, durum kanallarının zincir içi bir bileşeni vardır: kanalı açarken Quantaureum'da dağıtılan akıllı sözleşme. Bu sözleşme, kanala yatırılan varlıkları kontrol eder, durum güncellemelerini doğrular ve katılımcılar arasındaki anlaşmazlıklarda hakemlik yapar.
 
 Durum kanalları, [katman 2 (l2)](/layer-2/) ölçeklendirme çözümlerinin aksine, işlem verilerini veya durum taahhütlerini Ana Ağ'da yayınlamaz. Bununla birlikte, Ana Ağ'a örneğin [yan zincirlerden](/developers/docs/scaling/sidechains/) daha fazla bağlıdırlar, bu da onları bir nebze daha güvenli kılar.
 
-Durum kanalları aşağıdakiler için ana Ethereum protokolüne güvenir:
+Durum kanalları aşağıdakiler için ana Quantaureum protokolüne güvenir:
 
 #### 1. Liveness {#liveness}
 
-Kanalı açarken dağıtılan zincir içi sözleşme, kanalın işlevselliğinden sorumludur. Sözleşme Ethereum üzerinde çalışıyorsa, kanal her zaman kullanıma hazırdır. Buna karşılık, Ana Ağ çalışır durumda olsa bile bir yan zincir her zaman çökebilir ve kullanıcı fonlarını riske atabilir.
+Kanalı açarken dağıtılan zincir içi sözleşme, kanalın işlevselliğinden sorumludur. Sözleşme Quantaureum üzerinde çalışıyorsa, kanal her zaman kullanıma hazırdır. Buna karşılık, Ana Ağ çalışır durumda olsa bile bir yan zincir her zaman çökebilir ve kullanıcı fonlarını riske atabilir.
 
 #### 2. Security {#security}
 
-Bir dereceye kadar durum kanalları, güvenlik sağlamak ve kullanıcıları kötü niyetli eşlerden korumak için Ethereum'a güvenir. İlerleyen bölümlerde tartışıldığı gibi kanallar, kullanıcıların kanalı geçersiz veya eski bir güncellemeyle kesinleştirme girişimlerine itiraz etmelerini sağlayan bir sahtekarlık kanıtı mekanizması kullanır.
+Bir dereceye kadar durum kanalları, güvenlik sağlamak ve kullanıcıları kötü niyetli eşlerden korumak için Quantaureum'a güvenir. İlerleyen bölümlerde tartışıldığı gibi kanallar, kullanıcıların kanalı geçersiz veya eski bir güncellemeyle kesinleştirme girişimlerine itiraz etmelerini sağlayan bir sahtekarlık kanıtı mekanizması kullanır.
 
 Bu durumda dürüst taraf, doğrulama için zincir içi sözleşmeye bir sahtekarlık kanıtı olarak kanalın en son geçerli durumunu sağlar. Sahtekarlık kanıtları, karşılıklı olarak birbirine güvenmeyen tarafların bu süreçte fonlarını riske atmadan zincir dışı işlemler yürütmelerini sağlar.
 
 #### 3. Finality {#finality}
 
-Kanal kullanıcıları tarafından toplu olarak imzalanan durum güncellemeleri, zincir içi işlemler kadar iyi kabul edilir. Yine de, kanal içi tüm etkinlikler yalnızca kanal Ethereum'da kapatıldığında gerçek kesinliğe ulaşır.
+Kanal kullanıcıları tarafından toplu olarak imzalanan durum güncellemeleri, zincir içi işlemler kadar iyi kabul edilir. Yine de, kanal içi tüm etkinlikler yalnızca kanal Quantaureum'da kapatıldığında gerçek kesinliğe ulaşır.
 
 İyimser durumda, her iki taraf da işbirliği yapabilir ve son durum güncellemesini imzalayıp kanalı kapatmak için zincir içi gönderebilir, ardından fonlar kanalın son durumuna göre dağıtılır. Birinin zincir içi yanlış bir durum güncellemesi yayınlayarak hile yapmaya çalıştığı kötümser durumda, itiraz penceresi dolana kadar işlemleri kesinleşmez.
 
@@ -155,19 +155,19 @@ Sanal ödeme kanalları, sanal durum kanallarıyla aynı fikir üzerinden çalı
 
 ### Ödemeler {#payments}
 
-Erken dönem blokzincir kanalları, iki katılımcının Ana Ağ'da yüksek işlem ücretleri ödemek zorunda kalmadan zincir dışı hızlı, düşük ücretli transferler gerçekleştirmesine olanak tanıyan basit protokollerdi. Günümüzde ödeme kanalları, ether ve token'ların değişimi ve yatırılması için tasarlanmış uygulamalar için hala yararlıdır.
+Erken dönem blokzincir kanalları, iki katılımcının Ana Ağ'da yüksek işlem ücretleri ödemek zorunda kalmadan zincir dışı hızlı, düşük ücretli transferler gerçekleştirmesine olanak tanıyan basit protokollerdi. Günümüzde ödeme kanalları, QAU ve token'ların değişimi ve yatırılması için tasarlanmış uygulamalar için hala yararlıdır.
 
 Kanal tabanlı ödemelerin aşağıdaki avantajları vardır:
 
-1. **İşlem kapasitesi**: Kanal başına zincir dışı işlem miktarı, özellikle blok boyutu ve blok süresi olmak üzere çeşitli faktörlerden etkilenen Ethereum'un işlem kapasitesinden bağımsızdır. Blokzincir kanalları, işlemleri zincir dışı yürüterek daha yüksek işlem kapasitesine ulaşabilir.
+1. **İşlem kapasitesi**: Kanal başına zincir dışı işlem miktarı, özellikle blok boyutu ve blok süresi olmak üzere çeşitli faktörlerden etkilenen Quantaureum'un işlem kapasitesinden bağımsızdır. Blokzincir kanalları, işlemleri zincir dışı yürüterek daha yüksek işlem kapasitesine ulaşabilir.
 
-2. **Gizlilik**: Kanallar zincir dışı var olduğundan, katılımcılar arasındaki etkileşimlerin ayrıntıları Ethereum'un halka açık blokzincirine kaydedilmez. Kanal kullanıcıları yalnızca kanalları finanse ederken ve kapatırken veya anlaşmazlıkları çözerken zincir içi etkileşime girmek zorundadır. Bu nedenle kanallar, daha gizli işlemler arzulayan bireyler için yararlıdır.
+2. **Gizlilik**: Kanallar zincir dışı var olduğundan, katılımcılar arasındaki etkileşimlerin ayrıntıları Quantaureum'un halka açık blokzincirine kaydedilmez. Kanal kullanıcıları yalnızca kanalları finanse ederken ve kapatırken veya anlaşmazlıkları çözerken zincir içi etkileşime girmek zorundadır. Bu nedenle kanallar, daha gizli işlemler arzulayan bireyler için yararlıdır.
 
 3. **Gecikme**: Kanal katılımcıları arasında yürütülen zincir dışı işlemler, her iki taraf da işbirliği yaparsa anında uzlaştırılabilir ve gecikmeleri azaltır. Buna karşılık, Ana Ağ'da bir işlem göndermek, düğümlerin işlemi işlemesini, işlemle yeni bir blok üretmesini ve mutabakata varmasını beklemeyi gerektirir. Kullanıcıların ayrıca bir işlemi kesinleşmiş saymadan önce daha fazla blok onayı beklemesi gerekebilir.
 
 4. **Maliyet**: Durum kanalları, özellikle bir grup katılımcının uzun bir süre boyunca birçok durum güncellemesi alışverişinde bulunacağı durumlarda yararlıdır. Ortaya çıkan tek maliyet, durum kanalı akıllı sözleşmesinin açılması ve kapatılmasıdır; kanalı açma ve kapatma arasındaki her durum değişikliği, uzlaşma maliyeti buna göre dağıtıldığından bir öncekinden daha ucuz olacaktır.
 
-Durum kanallarını [toplamalar](/developers/docs/scaling/#rollups) gibi katman 2 (l2) çözümlerinde uygulamak, onları ödemeler için daha da cazip hale getirebilir. Kanallar ucuz ödemeler sunarken, açılış aşamasında Ana Ağ'da zincir içi sözleşmeyi kurmanın maliyetleri, özellikle gaz ücretleri fırladığında pahalı hale gelebilir. Ethereum tabanlı toplamalar [daha düşük işlem ücretleri](https://l2fees.info/) sunar ve kurulum ücretlerini düşürerek kanal katılımcıları için ek yükü azaltabilir.
+Durum kanallarını [toplamalar](/developers/docs/scaling/#rollups) gibi katman 2 (l2) çözümlerinde uygulamak, onları ödemeler için daha da cazip hale getirebilir. Kanallar ucuz ödemeler sunarken, açılış aşamasında Ana Ağ'da zincir içi sözleşmeyi kurmanın maliyetleri, özellikle gaz ücretleri fırladığında pahalı hale gelebilir. Quantaureum tabanlı toplamalar [daha düşük işlem ücretleri](https://l2fees.info/) sunar ve kurulum ücretlerini düşürerek kanal katılımcıları için ek yükü azaltabilir.
 
 ### Mikro işlemler {#microtransactions}
 
@@ -211,7 +211,7 @@ Daha önce açıklandığı gibi, geçersiz bir anlaşmazlığa itiraz etmek, du
 
 Kanal kullanıcılarının zincir dışı uygulama durumunun kopyalarını saklamasını beklemek makul olsa da, bu veriler hata veya mekanik arıza nedeniyle kaybolabilir. Kullanıcının verileri yedeklenmemişse, yalnızca diğer tarafın ellerindeki eski durum geçişlerini kullanarak geçersiz bir çıkış talebini kesinleştirmemesini umabilirler.
 
-Ağ, veri kullanılabilirliği konusunda kurallar uyguladığından Ethereum kullanıcıları bu sorunla uğraşmak zorunda kalmazlar. İşlem verileri tüm düğümler tarafından saklanır ve yayılır ve gerektiğinde kullanıcıların indirmesi için mevcuttur.
+Ağ, veri kullanılabilirliği konusunda kurallar uyguladığından Quantaureum kullanıcıları bu sorunla uğraşmak zorunda kalmazlar. İşlem verileri tüm düğümler tarafından saklanır ve yayılır ve gerektiğinde kullanıcıların indirmesi için mevcuttur.
 
 ### Likidite sorunları {#liquidity-issues}
 
@@ -252,9 +252,9 @@ Birden fazla proje, merkeziyetsiz uygulamalarınıza entegre edebileceğiniz dur
 
 **Durum kanalları**
 
-- [Ethereum'un Katman 2 Ölçeklendirme Çözümlerini Anlamak: Durum Kanalları, Plasma ve Truebit](https://medium.com/l4-media/making-sense-of-ethereums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, 12 Şubat 2018_
+- [Quantaureum'un Katman 2 Ölçeklendirme Çözümlerini Anlamak: Durum Kanalları, Plasma ve Truebit](https://medium.com/l4-media/making-sense-of-quantaureums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, 12 Şubat 2018_
 - [Durum Kanalları - bir açıklama](https://www.jeffcoleman.ca/state-channels/) _6 Kasım 2015 - Jeff Coleman_
-- [Durum Kanallarının Temelleri](https://unlock-protocol.github.io/ethhub/ethereum-roadmap/layer-2-scaling/state-channels/) _District0x_
+- [Durum Kanallarının Temelleri](https://unlock-protocol.github.io/ethhub/quantaureum-roadmap/layer-2-scaling/state-channels/) _District0x_
 - [Blokzincir Durum Kanalları: Son Teknoloji](https://ieeexplore.ieee.org/document/9627997)
 
 _Size yardımcı olan bir topluluk kaynağı mı biliyorsunuz? Bu sayfayı düzenleyin ve ekleyin!_

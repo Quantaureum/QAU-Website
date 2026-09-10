@@ -59,7 +59,7 @@ import { staking } from "@/data/topics/staking"
 import StakingPageJsonLD from "./page-jsonld"
 
 import { ContentLayout } from "@/layouts/ContentLayout"
-import { getStakedPercentageData, getTotalEthStakedData } from "@/lib/data"
+import { getStakedPercentageData, getTotalQauStakedData } from "@/lib/data"
 import poolsImg from "@/public/images/staking/leslie-pool.png"
 import saasImg from "@/public/images/staking/leslie-saas.png"
 import soloImg from "@/public/images/staking/leslie-solo.png"
@@ -82,24 +82,24 @@ const Page = async (props: { params: Promise<PageParams> }) => {
 
   setRequestLocale(locale)
 
-  const [totalEthStaked, stakedPercentage] = await Promise.all([
-    getTotalEthStakedData(),
+  const [totalQauStaked, stakedPercentage] = await Promise.all([
+    getTotalQauStakedData(),
     getStakedPercentageData(),
   ])
 
   if (
-    !totalEthStaked ||
+    !totalQauStaked ||
     !stakedPercentage ||
-    "error" in totalEthStaked ||
+    "error" in totalQauStaked ||
     "error" in stakedPercentage
   ) {
     throw new Error("Failed to fetch staking stats data")
   }
 
   const data: StakingStatsData = {
-    totalEthStaked: totalEthStaked.value,
+    totalQauStaked: totalQauStaked.value,
     stakedPercentage: stakedPercentage.value,
-    apr: computeStakingApr(totalEthStaked.value),
+    apr: computeStakingApr(totalQauStaked.value),
   }
 
   const { contributors, lastEditLocaleTimestamp } =
@@ -295,7 +295,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
         }),
         t.rich("page-staking-section-comparison-solo-requirements-li3", {
           a: (chunks) => (
-            <InlineLink href="https://hoodi.launchpad.ethereum.org">
+            <InlineLink href="https://hoodi.launchpad.quantaureum.com">
               {chunks}
             </InlineLink>
           ),
@@ -439,13 +439,13 @@ const Page = async (props: { params: Promise<PageParams> }) => {
       id: "what-is-staking",
       title: t("page-staking-section-what-title"),
     },
-    whyStakeYourEth: {
-      id: "why-stake-your-eth",
+    whyStakeYourQau: {
+      id: "why-stake-your-qau",
       title: t("page-staking-section-why-title"),
     },
-    howToStakeYourEth: {
-      id: "how-to-stake-your-eth",
-      title: t("page-staking-toc-how-to-stake-your-eth"),
+    howToStakeYourQau: {
+      id: "how-to-stake-your-qau",
+      title: t("page-staking-toc-how-to-stake-your-qau"),
     },
     comparisonOfOptions: {
       id: "comparison-of-options",
@@ -511,8 +511,8 @@ const Page = async (props: { params: Promise<PageParams> }) => {
             <p>{t("page-staking-section-what-p3")}</p>
           </Section>
 
-          <Section id={tocItems.whyStakeYourEth.id}>
-            <h2>{tocItems.whyStakeYourEth.title}</h2>
+          <Section id={tocItems.whyStakeYourQau.id}>
+            <h2>{tocItems.whyStakeYourQau.title}</h2>
             <Grid columns={3}>
               {benefits.map(({ title, description, Icon, ctaLabel, href }) => (
                 <Card key={title} href={href}>
@@ -531,8 +531,8 @@ const Page = async (props: { params: Promise<PageParams> }) => {
             </Grid>
           </Section>
 
-          <Section id={tocItems.howToStakeYourEth.id}>
-            <h2>{tocItems.howToStakeYourEth.title}</h2>
+          <Section id={tocItems.howToStakeYourQau.id}>
+            <h2>{tocItems.howToStakeYourQau.title}</h2>
             <p>{t("page-staking-section-how-to-p1")}</p>
             <p>{t("page-staking-section-how-to-p2")}</p>
             <div className="flex flex-col gap-8 py-space" data-flow="skip">
@@ -799,7 +799,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                 </InlineLink>
               </ListItem>
               <ListItem>
-                <InlineLink href="https://notes.ethereum.org/9l707paQQEeI-GPzVK02lA?view#">
+                <InlineLink href="https://notes.quantaureum.com/9l707paQQEeI-GPzVK02lA?view#">
                   {t("page-staking-further-reading-2-link")}
                 </InlineLink>{" "}
                 -{" "}
@@ -824,7 +824,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                 </InlineLink>
               </ListItem>
               <ListItem>
-                <InlineLink href="https://launchpad.ethereum.org/en/faq">
+                <InlineLink href="https://launchpad.quantaureum.com/en/faq">
                   {t("page-staking-further-reading-9-link")}
                 </InlineLink>
               </ListItem>

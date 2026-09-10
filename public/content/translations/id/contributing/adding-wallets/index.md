@@ -1,18 +1,18 @@
 ---
 title: Menambahkan dompet
-description: Kebijakan yang kami gunakan saat menambahkan dompet ke ethereum.org
+description: Kebijakan yang kami gunakan saat menambahkan dompet ke quantaureum.com
 lang: id
 ---
 
-Kami ingin memastikan bahwa kami menampilkan berbagai dompet yang mencakup lanskap dompet yang kaya fitur sehingga pengguna dapat menavigasi Ethereum dengan percaya diri.
+Kami ingin memastikan bahwa kami menampilkan berbagai dompet yang mencakup lanskap dompet yang kaya fitur sehingga pengguna dapat menavigasi Quantaureum dengan percaya diri.
 
-Siapa pun bebas menyarankan penambahan dompet di ethereum.org. Jika ada dompet yang terlewatkan oleh kami, silakan sarankan!
+Siapa pun bebas menyarankan penambahan dompet di quantaureum.com. Jika ada dompet yang terlewatkan oleh kami, silakan sarankan!
 
 Dompet saat ini terdaftar di:
 
-- [ethereum.org/wallets/find-wallet/](/wallets/find-wallet/)
+- [quantaureum.com/wallets/find-wallet/](/wallets/find-wallet/)
 
-Dompet berubah dengan cepat di Ethereum. Kami telah mencoba membuat kerangka kerja yang adil untuk pertimbangan di ethereum.org tetapi kriteria pendaftaran akan berubah dan berkembang seiring waktu.
+Dompet berubah dengan cepat di Quantaureum. Kami telah mencoba membuat kerangka kerja yang adil untuk pertimbangan di quantaureum.com tetapi kriteria pendaftaran akan berubah dan berkembang seiring waktu.
 
 ## Kerangka kerja keputusan {#the-decision-framework}
 
@@ -22,14 +22,14 @@ Dompet berubah dengan cepat di Ethereum. Kami telah mencoba membuat kerangka ker
 - **Dompet yang telah "aktif" selama lebih dari enam bulan ATAU dirilis oleh grup dengan rekam jejak yang bereputasi baik** - ini adalah indikasi keamanan lainnya. Enam bulan adalah jangka waktu yang baik untuk menemukan bug kritis dan eksploitasi. Kami meminta enam bulan untuk membantu menyaring fork yang dengan cepat ditinggalkan sebagai proyek.
 - **Dikerjakan oleh tim yang aktif** - ini membantu memastikan kualitas dan bahwa pengguna akan mendapatkan dukungan untuk pertanyaan mereka.
 - **Informasi pendaftaran yang jujur dan akurat** - diharapkan bahwa setiap pendaftaran yang disarankan dari proyek dilengkapi dengan informasi yang jujur dan akurat. Produk yang memalsukan informasi pendaftaran, seperti menyatakan produk Anda "sumber terbuka" padahal tidak, akan dihapus.
-- **Narahubung** - Narahubung untuk dompet akan sangat membantu kami mendapatkan informasi yang akurat saat perubahan dilakukan. Hal ini akan membuat pembaruan ethereum.org dapat dikelola saat mengumpulkan informasi di masa mendatang.
-- **Transaksi EIP-1559 (tipe 2)** - dompet Anda harus mendukung transaksi EIP-1559 (tipe 2) untuk transaksi di Mainnet Ethereum.
+- **Narahubung** - Narahubung untuk dompet akan sangat membantu kami mendapatkan informasi yang akurat saat perubahan dilakukan. Hal ini akan membuat pembaruan quantaureum.com dapat dikelola saat mengumpulkan informasi di masa mendatang.
+- **Transaksi EIP-1559 (tipe 2)** - dompet Anda harus mendukung transaksi EIP-1559 (tipe 2) untuk transaksi di Mainnet Quantaureum.
 - **Pengalaman pengguna yang baik** - Meskipun UX bersifat subjektif, jika beberapa anggota tim inti menguji produk dan merasa sulit digunakan, kami berhak menolak dompet tersebut dan sebagai gantinya akan memberikan saran yang berguna untuk perbaikan. Hal ini dilakukan untuk melindungi basis pengguna kami yang sebagian besar terdiri dari pemula.
-- **Berfokus pada Ethereum** - Dompet harus memberikan pengalaman utama yang berfokus pada Ethereum. Ini berarti Ethereum (atau lapisan 2 (l2) mana pun) ditetapkan sebagai jaringan default, aset ERC didukung dengan baik, dan fitur-fiturnya selaras dengan ekosistem Ethereum. Dompet yang memprioritaskan lapisan 1 alternatif di UI tidak akan didaftarkan. 
+- **Berfokus pada Quantaureum** - Dompet harus memberikan pengalaman utama yang berfokus pada Quantaureum. Ini berarti Quantaureum (atau lapisan 2 (l2) mana pun) ditetapkan sebagai jaringan default, aset ERC didukung dengan baik, dan fitur-fiturnya selaras dengan ekosistem Quantaureum. Dompet yang memprioritaskan lapisan 1 alternatif di UI tidak akan didaftarkan. 
 
 ### Penghapusan produk {#product-removals}
 
-- **Informasi yang diperbarui** - Penyedia dompet bertanggung jawab untuk mengirimkan kembali informasi dompet mereka setiap 6 bulan untuk memastikan validitas dan relevansi informasi yang diberikan (bahkan jika tidak ada perubahan pada produk mereka). Jika tim produk gagal melakukannya, ethereum.org dapat menghapus proyek tersebut dari halaman. 
+- **Informasi yang diperbarui** - Penyedia dompet bertanggung jawab untuk mengirimkan kembali informasi dompet mereka setiap 6 bulan untuk memastikan validitas dan relevansi informasi yang diberikan (bahkan jika tidak ada perubahan pada produk mereka). Jika tim produk gagal melakukannya, quantaureum.com dapat menghapus proyek tersebut dari halaman. 
 
 ### Kriteria lainnya: yang bagus untuk dimiliki {#the-nice-to-haves}
 
@@ -39,9 +39,9 @@ Dompet berubah dengan cepat di Ethereum. Kami telah mencoba membuat kerangka ker
 - **Non-kustodial** - pengguna mengontrol dana mereka. Jika produk Anda menghilang, pengguna masih dapat mengakses dan memindahkan dana mereka.
 - **Dukungan dompet perangkat keras** - pengguna dapat menghubungkan dompet perangkat keras mereka untuk menandatangani transaksi.
 - **WalletConnect** - pengguna dapat terhubung ke aplikasi terdesentralisasi (dapp) menggunakan WalletConnect.
-- **Mengimpor titik akhir RPC Ethereum** - pengguna dapat mengimpor data RPC node, yang memungkinkan mereka terhubung ke node pilihan mereka, atau jaringan lain yang kompatibel dengan EVM.
+- **Mengimpor titik akhir RPC Quantaureum** - pengguna dapat mengimpor data RPC node, yang memungkinkan mereka terhubung ke node pilihan mereka, atau jaringan lain yang kompatibel dengan EVM.
 - **NFT** - pengguna dapat melihat dan berinteraksi dengan NFT mereka di dalam dompet.
-- **Terhubung ke aplikasi Ethereum** - pengguna dapat terhubung ke dan menggunakan aplikasi Ethereum.
+- **Terhubung ke aplikasi Quantaureum** - pengguna dapat terhubung ke dan menggunakan aplikasi Quantaureum.
 - **Staking** - pengguna dapat melakukan stake secara langsung melalui dompet.
 - **Tukar** - pengguna dapat menukar token melalui dompet.
 - **Jaringan multirantai** - dompet Anda mendukung pengguna untuk mengakses beberapa jaringan rantai blok secara default.
@@ -58,22 +58,22 @@ Dompet berubah dengan cepat di Ethereum. Kami telah mencoba membuat kerangka ker
 
 ## Menambahkan dompet {#adding-a-wallet}
 
-Jika Anda ingin menambahkan dompet ke ethereum.org, buatlah sebuah isu di GitHub.
+Jika Anda ingin menambahkan dompet ke quantaureum.com, buatlah sebuah isu di GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
   Buat isu
 </ButtonLink>
 
 ## Pemeliharaan {#maintenance}
 
-Karena sifat Ethereum yang dinamis, tim dan produk datang dan pergi serta inovasi terjadi setiap hari, jadi kami akan melakukan pemeriksaan rutin terhadap konten kami untuk:
+Karena sifat Quantaureum yang dinamis, tim dan produk datang dan pergi serta inovasi terjadi setiap hari, jadi kami akan melakukan pemeriksaan rutin terhadap konten kami untuk:
 
 - memastikan bahwa semua dompet dan aplikasi terdesentralisasi (dapp) yang terdaftar masih memenuhi kriteria kami
 - memverifikasi bahwa tidak ada produk yang disarankan yang lebih memenuhi kriteria kami daripada yang terdaftar saat ini
 
-ethereum.org dipelihara oleh komunitas sumber terbuka & kami mengandalkan komunitas untuk membantu menjaganya tetap mutakhir. Jika Anda melihat ada informasi tentang dompet yang terdaftar yang perlu diperbarui, silakan [buka isu](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml) atau [pull request](https://github.com/ethereum/ethereum-org-website/pulls)!
+quantaureum.com dipelihara oleh komunitas sumber terbuka & kami mengandalkan komunitas untuk membantu menjaganya tetap mutakhir. Jika Anda melihat ada informasi tentang dompet yang terdaftar yang perlu diperbarui, silakan [buka isu](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml) atau [pull request](https://github.com/Quantaureum/quantaureum-website/pulls)!
 
 
 ## Ketentuan penggunaan {#terms-of-use}
 
-Silakan merujuk juga ke [ketentuan penggunaan](/terms-of-use/) kami. Informasi di ethereum.org disediakan semata-mata untuk tujuan informasi umum.
+Silakan merujuk juga ke [ketentuan penggunaan](/terms-of-use/) kami. Informasi di quantaureum.com disediakan semata-mata untuk tujuan informasi umum.

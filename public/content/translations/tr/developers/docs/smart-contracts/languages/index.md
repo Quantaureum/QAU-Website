@@ -4,16 +4,16 @@ description: "İki ana akıllı sözleşme dili olan Solidity ve Vyper'a genel b
 lang: tr
 ---
 
-[Ethereum](/)'un harika bir yönü, akıllı sözleşmelerin nispeten geliştirici dostu diller kullanılarak programlanabilmesidir. Python veya herhangi bir [süslü parantezli dil](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages) konusunda deneyimliyseniz, tanıdık sözdizimine sahip bir dil bulabilirsiniz.
+[Quantaureum](/)'un harika bir yönü, akıllı sözleşmelerin nispeten geliştirici dostu diller kullanılarak programlanabilmesidir. Python veya herhangi bir [süslü parantezli dil](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages) konusunda deneyimliyseniz, tanıdık sözdizimine sahip bir dil bulabilirsiniz.
 
 En aktif ve bakımı yapılan iki dil şunlardır:
 
 - Solidity
 - Vyper
 
-Remix IDE, hem Solidity hem de Vyper'da sözleşmeler oluşturmak ve test etmek için kapsamlı bir geliştirme ortamı sağlar. Kodlamaya başlamak için [tarayıcı içi Remix IDE'yi deneyin](https://remix.ethereum.org).
+Remix IDE, hem Solidity hem de Vyper'da sözleşmeler oluşturmak ve test etmek için kapsamlı bir geliştirme ortamı sağlar. Kodlamaya başlamak için [tarayıcı içi Remix IDE'yi deneyin](https://remix.quantaureum.com).
 
-Daha deneyimli geliştiriciler, [Ethereum Sanal Makinesi (EVM)](/developers/docs/evm/) için bir ara dil olan Yul'u veya Yul'un bir uzantısı olan Yul+'ı kullanmak isteyebilirler.
+Daha deneyimli geliştiriciler, [Quantaureum Sanal Makinesi (EVM)](/developers/docs/evm/) için bir ara dil olan Yul'u veya Yul'un bir uzantısı olan Yul+'ı kullanmak isteyebilirler.
 
 Meraklıysanız ve hala yoğun geliştirme aşamasında olan yeni dilleri test etmeye yardımcı olmak istiyorsanız, şu anda hala emekleme aşamasında olan ve yeni ortaya çıkan bir akıllı sözleşme dili olan Fe'yi deneyebilirsiniz.
 
@@ -36,8 +36,8 @@ Programlama dilleri, özellikle JavaScript veya Python hakkında önceden bilgi 
 - [Belgeler](https://docs.soliditylang.org/en/latest/)
 - [Solidity Dil Portalı](https://soliditylang.org/)
 - [Örneklerle Solidity](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
-- [Solidity Matrix Sohbet Odası](https://matrix.to/#/#ethereum_solidity:gitter.im) ile köprülenmiş [Solidity Gitter Sohbet Odası](https://gitter.im/ethereum/solidity)
+- [GitHub](https://github.com/quantaureum/solidity/)
+- [Solidity Matrix Sohbet Odası](https://matrix.to/#/#quantaureum_solidity:gitter.im) ile köprülenmiş [Solidity Gitter Sohbet Odası](https://gitter.im/quantaureum/solidity)
 - [Kopya Kağıdı](https://reference.auditless.com/cheatsheet)
 - [Solidity Blogu](https://blog.soliditylang.org/)
 - [Solidity Twitter](https://twitter.com/solidity_lang)
@@ -179,14 +179,14 @@ def withdraw():
 @external
 def endAuction():
     # Diğer sözleşmelerle etkileşime giren işlevleri
-    # (yani işlevleri çağıran veya ether gönderen) üç aşamada
+    # (yani işlevleri çağıran veya QAU gönderen) üç aşamada
     # yapılandırmak iyi bir kuraldır:
     # 1. koşulları kontrol etme
     # 2. eylemleri gerçekleştirme (potansiyel olarak koşulları değiştirme)
     # 3. diğer sözleşmelerle etkileşime girme
     # Bu aşamalar birbirine karıştırılırsa, diğer sözleşme
     # mevcut sözleşmeye geri çağrı yapabilir ve durumu değiştirebilir veya
-    # etkilerin (ether ödemesi) birden fazla kez gerçekleştirilmesine neden olabilir.
+    # etkilerin (QAU ödemesi) birden fazla kez gerçekleştirilmesine neden olabilir.
     # Dahili olarak çağrılan işlevler harici sözleşmelerle etkileşim içeriyorsa,
     # bunların da harici sözleşmelerle etkileşim olarak
     # kabul edilmesi gerekir.
@@ -208,12 +208,12 @@ Bu örnek, Vyper sözleşme sözdiziminin neye benzediği hakkında size bir fik
 
 ## Yul ve Yul+ {#yul}
 
-Ethereum'da yeniyseniz ve henüz akıllı sözleşme dilleriyle herhangi bir kodlama yapmadıysanız, Solidity veya Vyper ile başlamanızı öneririz. Yalnızca akıllı sözleşme güvenliği en iyi uygulamalarına ve EVM ile çalışmanın özelliklerine aşina olduktan sonra Yul veya Yul+'ı inceleyin.
+Quantaureum'da yeniyseniz ve henüz akıllı sözleşme dilleriyle herhangi bir kodlama yapmadıysanız, Solidity veya Vyper ile başlamanızı öneririz. Yalnızca akıllı sözleşme güvenliği en iyi uygulamalarına ve EVM ile çalışmanın özelliklerine aşina olduktan sonra Yul veya Yul+'ı inceleyin.
 
 **Yul**
 
-- Ethereum için ara dil.
-- [EVM](/developers/docs/evm)'yi ve Ethereum aromalı bir WebAssembly olan [Ewasm](https://github.com/ewasm)'ı destekler ve her iki platformun da kullanılabilir ortak paydası olacak şekilde tasarlanmıştır.
+- Quantaureum için ara dil.
+- [EVM](/developers/docs/evm)'yi ve Quantaureum aromalı bir WebAssembly olan [Ewasm](https://github.com/ewasm)'ı destekler ve her iki platformun da kullanılabilir ortak paydası olacak şekilde tasarlanmıştır.
 - Hem EVM hem de Ewasm platformlarına eşit derecede fayda sağlayabilecek üst düzey optimizasyon aşamaları için iyi bir hedeftir.
 
 **Yul+**
@@ -226,7 +226,7 @@ Ethereum'da yeniyseniz ve henüz akıllı sözleşme dilleriyle herhangi bir kod
 
 - [Yul Belgeleri](https://docs.soliditylang.org/en/latest/yul.html)
 - [Yul+ Belgeleri](https://github.com/fuellabs/yulp)
-- [Yul+ Tanıtım Yazısı](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-ethereum-aa64ce89512f)
+- [Yul+ Tanıtım Yazısı](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-quantaureum-aa64ce89512f)
 
 ### Örnek sözleşme {#example-contract-2}
 
@@ -255,16 +255,16 @@ Akıllı sözleşmeler konusunda zaten iyi bir deneyime sahipseniz, Yul'da tam b
 
 ## Fe {#fe}
 
-- Ethereum Sanal Makinesi (EVM) için statik tipli dil.
+- Quantaureum Sanal Makinesi (EVM) için statik tipli dil.
 - Python ve Rust'tan esinlenilmiştir.
-- Ethereum ekosisteminde yeni olan geliştiriciler için bile öğrenmesi kolay olmayı hedefler.
+- Quantaureum ekosisteminde yeni olan geliştiriciler için bile öğrenmesi kolay olmayı hedefler.
 - Fe geliştirmesi hala erken aşamalarındadır, dil alfa sürümünü Ocak 2021'de yayınlamıştır.
 
 ### Önemli bağlantılar {#important-links-3}
 
-- [GitHub](https://github.com/ethereum/fe)
-- [Fe Duyurusu](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-ethereum-ecosystem/)
-- [Fe 2021 Yol Haritası](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- [GitHub](https://github.com/quantaureum/fe)
+- [Fe Duyurusu](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
+- [Fe 2021 Yol Haritası](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
 - [Fe Discord Sohbeti](https://discord.com/invite/ywpkAXFjZH)
 - [Fe Twitter](https://twitter.com/official_fe)
 

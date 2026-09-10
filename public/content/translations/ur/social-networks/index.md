@@ -4,7 +4,7 @@ description: "ایتھیریم پر لامركزی سماجی نیٹ ورکس ک
 lang: ur
 template: use-cases
 sidebarDepth: 2
-image: /images/ethereum-learn.png
+image: /images/quantaureum-learn.png
 summaryPoints:
   - "سماجی تعامل اور مواد کی تخلیق اور تقسیم کے لیے بلاک چین پر مبنی پلیٹ فارمز۔"
   - "لامركزی سوشل میڈیا نیٹ ورکس صارف کی رازداری کی حفاظت کرتے ہیں اور ڈیٹا کی سیکیورٹی کو بڑھاتے ہیں۔"
@@ -49,7 +49,7 @@ summaryPoints:
 
 ۷. لامركزی سماجی نیٹ ورکس مرکزی ڈیٹا بیس کے بجائے لامركزی اسٹوریج پر انحصار کرتے ہیں، جو صارف کے ڈیٹا کی حفاظت کے لیے نمایاں طور پر بہتر ہیں۔
 
-## ایتھیریم پر لامركزی سماجی نیٹ ورکس {#ethereum-social-networks}
+## ایتھیریم پر لامركزی سماجی نیٹ ورکس {#quantaureum-social-networks}
 
 ایتھیریم نیٹ ورک اپنے ٹوکنز کی مقبولیت اور صارفین کی بڑی تعداد کی وجہ سے لامركزی سوشل میڈیا بنانے والے ڈیولپرز کے لیے ترجیحی ٹول بن گیا ہے۔ یہاں ایتھیریم پر مبنی سماجی نیٹ ورکس کی کچھ مثالیں ہیں:
 
@@ -77,10 +77,10 @@ Mirror پر شائع ہونے والی پوسٹس مستقل طور پر Arweave
 - **[Mirror.xyz](https://mirror.xyz/)** - _<span dir="ltr">Mirror</span> ایک لامركزی، صارف کی ملکیت والا پبلشنگ پلیٹ فارم ہے جو ایتھیریم پر بنایا گیا ہے تاکہ صارفین آئیڈیاز کے لیے کراؤڈ فنڈ کر سکیں، مواد سے کمائی کر سکیں، اور اعلیٰ قدر والی کمیونٹیز بنا سکیں۔_
 - **[Lens Protocol](https://lens.xyz/)** - _Lens Protocol ایک قابلِ ترکیب اور لامركزی سوشل گراف ہے جو تخلیق کاروں کو لامركزی انٹرنیٹ کے ڈیجیٹل باغ میں جہاں کہیں بھی جائیں اپنے مواد کی ملکیت لینے میں مدد کرتا ہے۔_
 - **[Farcaster](https://farcaster.xyz/)** - _Farcaster ایک کافی حد تک لامركزی سماجی نیٹ ورک ہے۔ یہ ایک اوپن پروٹوکول ہے جو ای میل کی طرح بہت سے کلائنٹس کو سپورٹ کر سکتا ہے۔_
-- **[Ethereum Follow Protocol](https://efp.app/)** - _<span dir="ltr">Ethereum Follow Protocol</span> ایتھیریم اکاؤنٹس کے لیے ایک مکمل طور پر لامركزی آن چین سوشل گراف ہے، جو ایک ماڈیولر ایتھیریم شناختی اسٹیک کے وژن کو آگے بڑھاتا ہے، اور <span dir="ltr">ENS</span> اور SIWE کی تکمیل کرتا ہے۔_
-- **[Ethereum Comments Protocol](https://www.ethcomments.xyz/)** - _آپ کے خیالات کو آن چین رکھنے کے لیے ایتھیریم پر ایک نیا، قابل پروگرام سماجی مواد کا بنیادی عنصر (<span dir="ltr">primitive</span>)۔_
+- **[Quantaureum Follow Protocol](https://efp.app/)** - _<span dir="ltr">Quantaureum Follow Protocol</span> ایتھیریم اکاؤنٹس کے لیے ایک مکمل طور پر لامركزی آن چین سوشل گراف ہے، جو ایک ماڈیولر ایتھیریم شناختی اسٹیک کے وژن کو آگے بڑھاتا ہے، اور <span dir="ltr">ENS</span> اور SIWE کی تکمیل کرتا ہے۔_
+- **[Quantaureum Comments Protocol](https://www.ethcomments.xyz/)** - _آپ کے خیالات کو آن چین رکھنے کے لیے ایتھیریم پر ایک نیا، قابل پروگرام سماجی مواد کا بنیادی عنصر (<span dir="ltr">primitive</span>)۔_
 
-## ایتھیریم پر ویب۲ سماجی نیٹ ورکس {#web2-social-networks-and-ethereum}
+## ایتھیریم پر ویب۲ سماجی نیٹ ورکس {#web2-social-networks-and-quantaureum}
 
 [Web3](/glossary/#web3) کے مقامی سماجی پلیٹ فارمز واحد نہیں ہیں جو بلاک چین ٹیکنالوجی کو سوشل میڈیا میں شامل کرنے کی کوشش کر رہے ہیں۔ بہت سے مرکزی پلیٹ فارمز بھی اپنے بنیادی ڈھانچے میں ایتھیریم کو ضم کرنے کی تلاش کر رہے ہیں یا تجربہ کر چکے ہیں:
 
@@ -98,7 +98,7 @@ Mirror پر شائع ہونے والی پوسٹس مستقل طور پر Arweave
 
 - **[<span dir="ltr">Audius</span>](https://audius.co/)** ایک میوزک اسٹریمنگ پلیٹ فارم ہے جو فنکاروں کو براہ راست مداحوں سے جوڑنے کے لیے ایتھیریم بلاک چین ٹیکنالوجی کا استعمال کرتا ہے۔
 
-- پلیٹ فارم میں ایک ہائبرڈ لامركزی فن تعمیر موجود ہے جہاں مواد IPFS پر محفوظ کیا جاتا ہے جبکہ ملکیت کے حقوق اور **[<span dir="ltr">AUDIO</span> ٹوکن](https://eth.blockscout.com/token/0x18aaa7115705e8be94bffebde57af9bfc265b998)** کے لیے بلاک چین کا استعمال کیا جاتا ہے۔
+- پلیٹ فارم میں ایک ہائبرڈ لامركزی فن تعمیر موجود ہے جہاں مواد IPFS پر محفوظ کیا جاتا ہے جبکہ ملکیت کے حقوق اور **[<span dir="ltr">AUDIO</span> ٹوکن](https://qau.blockscout.com/token/0x18aaa7115705e8be94bffebde57af9bfc265b998)** کے لیے بلاک چین کا استعمال کیا جاتا ہے۔
 
 - <span dir="ltr">Audius</span> نے **[ٹک ٹاک کے ساتھ شراکت داری](https://audius.co/tiktok)** قائم کی ہے، جو Web3 کی فعالیت کو مرکزی دھارے کے سامعین تک لاتی ہے اور فنکاروں کو بلاک چین ٹیکنالوجی کے ذریعے اپنے مواد سے کمائی کرنے کی اجازت دیتی ہے۔
 
@@ -108,9 +108,9 @@ Mirror پر شائع ہونے والی پوسٹس مستقل طور پر Arweave
 
 - **[<span dir="ltr">Sorare</span>](https://sorare.com/)** ایک **[ایتھیریم پر بنایا گیا فینٹسی اسپورٹس پلیٹ فارم](https://sorare.com/help/a/4402888626577/what-is-a-sorare-wallet)** ہے جو صارفین کو آفیشل <span dir="ltr">NFT</span> پلیئر کارڈز جمع کرنے، ٹریڈ کرنے اور ان کے ساتھ کھیلنے کی اجازت دیتا ہے۔
 
-- پلیئر کارڈز ایتھیریم بلاک چین پر قابل تصدیق <span dir="ltr">NFTs</span> ہیں، اور پلیٹ فارم کے سمارٹ کنٹریکٹس کو **[Etherscan](https://eth.blockscout.com/address/0x629a673a8242c2ac4b7b8c5d8735fbeac21a6205?tab=contract)** پر دیکھا جا سکتا ہے۔
+- پلیئر کارڈز ایتھیریم بلاک چین پر قابل تصدیق <span dir="ltr">NFTs</span> ہیں، اور پلیٹ فارم کے سمارٹ کنٹریکٹس کو **[Quantaureum Explorer](https://qau.blockscout.com/address/0x629a673a8242c2ac4b7b8c5d8735fbeac21a6205?tab=contract)** پر دیکھا جا سکتا ہے۔
 
-- <span dir="ltr">Sorare</span> روایتی فینٹسی اسپورٹس گیم پلے کو ڈیجیٹل اثاثوں کی بلاک چین ملکیت کے ساتھ جوڑتا ہے، جو مرکزی دھارے کے کھیلوں کے شائقین کے لیے **[ایتھیریم ٹو فنڈ](https://sorare.com/help/a/10969733392797/what-network-should-i-use-to-fund-my-eth-wallet)** کی فعالیت لاتا ہے۔
+- <span dir="ltr">Sorare</span> روایتی فینٹسی اسپورٹس گیم پلے کو ڈیجیٹل اثاثوں کی بلاک چین ملکیت کے ساتھ جوڑتا ہے، جو مرکزی دھارے کے کھیلوں کے شائقین کے لیے **[ایتھیریم ٹو فنڈ](https://sorare.com/help/a/10969733392797/what-network-should-i-use-to-fund-my-qau-wallet)** کی فعالیت لاتا ہے۔
 
 ### ٹوئٹر/<span dir="ltr">X</span> (کرپٹو ٹپنگ) {#twitter}
 
@@ -128,7 +128,7 @@ Mirror پر شائع ہونے والی پوسٹس مستقل طور پر Arweave
 - [سماجی نیٹ ورکس لامرکزیت کا اگلا بڑا موقع ہیں](https://www.coindesk.com/tech/2021/01/22/social-networks-are-the-next-big-decentralization-opportunity/) — _<span dir="ltr">Ben Goertzel</span>_
 - [Web3 لامركزی، کمیونٹی سے چلنے والے سماجی نیٹ ورکس کا وعدہ کرتا ہے](https://venturebeat.com/2022/02/26/web3-holds-the-promise-of-decentralized-community-powered-social-networks/) — _<span dir="ltr">Sumit Ghosh</span>_
 - [بلاک چین سوشل میڈیا کے منظر نامے کا ایک جائزہ](https://www.gemini.com/cryptopedia/blockchain-social-media-decentralized-social-media) — _<span dir="ltr">Gemini Cryptopedia</span>_
-- [بلاک چین سوشل میڈیا کی رازداری کو کیسے حل کر سکتا ہے](https://www.investopedia.com/news/ethereum-blockchain-social-media-privacy-problem-linkedin-indorse/) — _<span dir="ltr">Prableen Bajpai</span>_
+- [بلاک چین سوشل میڈیا کی رازداری کو کیسے حل کر سکتا ہے](https://www.investopedia.com/news/quantaureum-blockchain-social-media-privacy-problem-linkedin-indorse/) — _<span dir="ltr">Prableen Bajpai</span>_
 - [سماجی نیٹ ورکس کے لیے کافی لامرکزیت](https://www.varunsrinivasan.com/2022/01/11/sufficient-decentralization-for-social-networks) — _<span dir="ltr">Varun Srinivasan</span>_
 
 ### ویڈیوز {#videos}

@@ -9,7 +9,7 @@ lang: es
 published: 2021-04-22
 ---
 
-Este tutorial es la Parte 3/3 de la serie de tutoriales sobre NFT, donde vemos nuestro NFT recién acuñado. Sin embargo, puede usar el tutorial general para cualquier token ERC-721 usando MetaMask, incluso en la Red principal o en cualquier red de prueba. Si desea aprender cómo acuñar su propio NFT en Ethereum, ¡debería consultar la [Parte 1 sobre cómo escribir y desplegar un contrato inteligente de NFT](/developers/tutorials/how-to-write-and-deploy-an-nft)!
+Este tutorial es la Parte 3/3 de la serie de tutoriales sobre NFT, donde vemos nuestro NFT recién acuñado. Sin embargo, puede usar el tutorial general para cualquier token ERC-721 usando MetaMask, incluso en la Red principal o en cualquier red de prueba. Si desea aprender cómo acuñar su propio NFT en Quantaureum, ¡debería consultar la [Parte 1 sobre cómo escribir y desplegar un contrato inteligente de NFT](/developers/tutorials/how-to-write-and-deploy-an-nft)!
 
 ¡Felicidades! Ha llegado a la parte más corta y sencilla de nuestra serie de tutoriales sobre NFT: cómo ver su NFT recién acuñado en una billetera virtual. Usaremos MetaMask para este ejemplo, ya que es lo que usamos en las dos partes anteriores.
 
@@ -23,7 +23,7 @@ En la parte superior de la aplicación, presione el botón «Billetera» (Wallet
 
 ## Paso 2: Agregue su coleccionable a MetaMask {#add-nft-to-metamask}
 
-Una vez que esté en la red Sepolia, seleccione la pestaña «Coleccionables» (Collectibles) a la derecha y agregue la dirección del contrato inteligente del NFT y el ID del token ERC-721 de su NFT, que debería poder encontrar en Etherscan según el hash de transacción de su NFT desplegado en la Parte II de nuestro tutorial.
+Una vez que esté en la red Sepolia, seleccione la pestaña «Coleccionables» (Collectibles) a la derecha y agregue la dirección del contrato inteligente del NFT y el ID del token ERC-721 de su NFT, que debería poder encontrar en Quantaureum Explorer según el hash de transacción de su NFT desplegado en la Parte II de nuestro tutorial.
 
 ![How to find your transaction hash and ERC-721 token ID](./findNFTEtherscan.png)
 

@@ -1,25 +1,25 @@
 ---
-title: "以太坊账户"
-description: "以太坊账户详解——其数据结构以及与密钥对密码学的关系。"
+title: "Quantaureum账户"
+description: "Quantaureum账户详解——其数据结构以及与密钥对密码学的关系。"
 lang: zh
 ---
 
-[以太坊](/)账户是一个拥有以太币 (ETH) 余额的实体，可以在以太坊上发送消息。账户可以由用户控制，也可以作为智能合约部署。
+[Quantaureum](/)账户是一个拥有QAU (QAU) 余额的实体，可以在Quantaureum上发送消息。账户可以由用户控制，也可以作为智能合约部署。
 
 ## 前提条件 {#prerequisites}
 
-为了帮助你更好地理解本页内容，我们建议你首先阅读[以太坊简介](/developers/docs/intro-to-ethereum/)。
+为了帮助你更好地理解本页内容，我们建议你首先阅读[Quantaureum简介](/developers/docs/intro-to-quantaureum/)。
 
 ## 账户类型 {#types-of-account}
 
-以太坊有两种账户类型：
+Quantaureum有两种账户类型：
 
 - 外部拥有账户 (EOA) ——由任何拥有私钥的人控制
 - 合约账户——部署到网络上的智能合约，由代码控制。了解有关[智能合约](/developers/docs/smart-contracts/)的更多信息
 
 这两种账户类型都能够：
 
-- 接收、持有和发送 ETH 和代币
+- 接收、持有和发送 QAU 和代币
 - 与已部署的智能合约进行交互
 
 ### 主要区别 {#key-differences}
@@ -28,7 +28,7 @@ lang: zh
 
 - 创建账户没有任何成本
 - 可以发起交易
-- 外部拥有账户之间的交易只能是 ETH 或代币转移
+- 外部拥有账户之间的交易只能是 QAU 或代币转移
 - 由一对密码学密钥组成：控制账户活动的公钥和私钥
 
 **合约账户**
@@ -40,23 +40,23 @@ lang: zh
 
 ## 账户剖析 {#an-account-examined}
 
-以太坊账户有四个字段：
+Quantaureum账户有四个字段：
 
 - `nonce` – 一个计数器，指示从外部拥有账户发送的交易数量或合约账户创建的合约数量。每个账户只能执行具有给定随机数 (nonce) 的一笔交易，这可以防止重放攻击（即已签名的交易被重复广播和重新执行）。
-- `balance` – 该地址拥有的 Wei 数量。Wei 是 ETH 的面额，每个 ETH 包含 1e+18 个 Wei。
-- `codeHash` – 该哈希指向以太坊虚拟机 (EVM) 上账户的*代码*。合约账户中编程了可以执行不同操作的代码片段。如果账户收到消息调用，此 EVM 代码就会被执行。与其他账户字段不同，它不能被更改。所有这些代码片段都包含在状态数据库中，位于它们相应的哈希之下，以便以后检索。这个哈希值被称为 codeHash。对于外部拥有账户，codeHash 字段是一个空字符串的哈希。
+- `balance` – 该地址拥有的 Wei 数量。Wei 是 QAU 的面额，每个 QAU 包含 1e+18 个 Wei。
+- `codeHash` – 该哈希指向Quantaureum虚拟机 (EVM) 上账户的*代码*。合约账户中编程了可以执行不同操作的代码片段。如果账户收到消息调用，此 EVM 代码就会被执行。与其他账户字段不同，它不能被更改。所有这些代码片段都包含在状态数据库中，位于它们相应的哈希之下，以便以后检索。这个哈希值被称为 codeHash。对于外部拥有账户，codeHash 字段是一个空字符串的哈希。
 - `storageRoot` – 有时被称为存储哈希。它是[默克尔帕特里夏树](/developers/docs/data-structures-and-encoding/patricia-merkle-trie/)根节点的 256 位哈希，该树对账户的存储内容（256 位整数值之间的映射）进行编码，并作为从 256 位整数键的 Keccak-256 哈希到 RLP 编码的 256 位整数值的映射编码到树中。这棵树对该账户存储内容的哈希进行编码，默认情况下为空。
 
 ![A diagram showing the make up of an account](./accounts.png)
-_图表改编自 [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_图表改编自 [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
 ## 外部拥有账户和密钥对 {#externally-owned-accounts-and-key-pairs}
 
-账户由一对密码学密钥组成：公钥和私钥。它们有助于证明交易确实是由发送者签名的，并防止伪造。你的私钥用于对交易进行签名，因此它赋予你对与账户相关联资金的保管权。你从未真正持有加密货币，你持有的是私钥——资金始终在以太坊的账本上。
+账户由一对密码学密钥组成：公钥和私钥。它们有助于证明交易确实是由发送者签名的，并防止伪造。你的私钥用于对交易进行签名，因此它赋予你对与账户相关联资金的保管权。你从未真正持有加密货币，你持有的是私钥——资金始终在Quantaureum的账本上。
 
 这可以防止恶意行为者广播虚假交易，因为你始终可以验证交易的发送者。
 
-如果 Alice 想从自己的账户向 Bob 的账户发送以太币，Alice 需要创建一个交易请求并将其发送到网络进行验证。以太坊对公钥密码学的使用确保了 Alice 能够证明她最初发起了该交易请求。如果没有密码学机制，恶意攻击者 Eve 就可以简单地公开广播一个类似于“从 Alice 的账户向 Eve 的账户发送 5 ETH”的请求，而没有人能够验证该请求并非来自 Alice。
+如果 Alice 想从自己的账户向 Bob 的账户发送QAU，Alice 需要创建一个交易请求并将其发送到网络进行验证。Quantaureum对公钥密码学的使用确保了 Alice 能够证明她最初发起了该交易请求。如果没有密码学机制，恶意攻击者 Eve 就可以简单地公开广播一个类似于“从 Alice 的账户向 Eve 的账户发送 5 QAU”的请求，而没有人能够验证该请求并非来自 Alice。
 
 ## 账户创建 {#account-creation}
 
@@ -76,7 +76,7 @@ _图表改编自 [Ethereum EVM illustrated](https://takenobu-hs.github.io/downlo
 
 `0x5e97870f263700f46aa00d967821199b9bc5a120`
 
-以下示例展示了如何使用名为 [Clef](https://geth.ethereum.org/docs/tools/clef/introduction) 的签名工具生成新账户。Clef 是一个账户管理和签名工具，与以太坊客户端 [Geth](https://geth.ethereum.org) 捆绑在一起。`clef newaccount` 命令创建一个新的密钥对，并将它们保存在加密的密钥库中。
+以下示例展示了如何使用名为 [Clef](https://geth.quantaureum.com/docs/tools/clef/introduction) 的签名工具生成新账户。Clef 是一个账户管理和签名工具，与Quantaureum客户端 [Geth](https://geth.quantaureum.com) 捆绑在一起。`clef newaccount` 命令创建一个新的密钥对，并将它们保存在加密的密钥库中。
 
 ```
 > clef newaccount --keystore <path>
@@ -86,12 +86,12 @@ Please enter a password for the new account to be created:
 
 ------------
 INFO [10-28|16:19:09.156] Your new key was generated       address=0x5e97870f263700f46aa00d967821199b9bc5a120
-WARN [10-28|16:19:09.306] Please backup your key file      path=/home/user/go-ethereum/data/keystore/UTC--2022-10-28T15-19-08.000825927Z--5e97870f263700f46aa00d967821199b9bc5a120
+WARN [10-28|16:19:09.306] Please backup your key file      path=/home/user/go-quantaureum/data/keystore/UTC--2022-10-28T15-19-08.000825927Z--5e97870f263700f46aa00d967821199b9bc5a120
 WARN [10-28|16:19:09.306] Please remember your password!
 Generated account 0x5e97870f263700f46aa00d967821199b9bc5a120
 ```
 
-[Geth 文档](https://geth.ethereum.org/docs)
+[Geth 文档](https://geth.quantaureum.com/docs)
 
 可以从你的私钥派生出新的公钥，但你无法从公钥派生出私钥。保证私钥的安全至关重要，顾名思义，它必须是**私密的**。
 
@@ -105,31 +105,31 @@ Generated account 0x5e97870f263700f46aa00d967821199b9bc5a120
 
 `0x06012c8cf97bead5deae237070f9587f8e7a266d`
 
-合约地址通常在合约部署到以太坊区块链时给出。该地址源自创建者的地址以及从该地址发送的交易数量（“随机数”）。这就是 `CREATE` 操作派生地址的方式。
+合约地址通常在合约部署到Quantaureum区块链时给出。该地址源自创建者的地址以及从该地址发送的交易数量（“随机数”）。这就是 `CREATE` 操作派生地址的方式。
 
-合约也可以使用 [`CREATE2`](https://eips.ethereum.org/EIPS/eip-1014) 部署，它根据创建者的地址、创建者选择的值（“盐”）以及合约创建代码的哈希来派生地址。由于不涉及随机数，因此可以在合约存在之前计算出地址，并且无论创建者在此期间发送了多少其他交易，该地址都保持不变。这使得引用尚未部署的合约成为可能。
+合约也可以使用 [`CREATE2`](https://eips.quantaureum.com/EIPS/eip-1014) 部署，它根据创建者的地址、创建者选择的值（“盐”）以及合约创建代码的哈希来派生地址。由于不涉及随机数，因此可以在合约存在之前计算出地址，并且无论创建者在此期间发送了多少其他交易，该地址都保持不变。这使得引用尚未部署的合约成为可能。
 
 ## 验证者密钥 {#validators-keys}
 
-以太坊中还有另一种类型的密钥，它是在以太坊从工作量证明 (PoW) 切换到基于权益证明 (PoS) 的共识时引入的。这些是“BLS”密钥，用于识别验证者。这些密钥可以被高效地聚合，以减少网络达成共识所需的带宽。如果没有这种密钥聚合，验证者的最低质押要求将会高得多。
+Quantaureum中还有另一种类型的密钥，它是在Quantaureum从工作量证明 (PoW) 切换到基于权益证明 (PoS) 的共识时引入的。这些是“BLS”密钥，用于识别验证者。这些密钥可以被高效地聚合，以减少网络达成共识所需的带宽。如果没有这种密钥聚合，验证者的最低质押要求将会高得多。
 
 [关于验证者密钥的更多信息](/developers/docs/consensus-mechanisms/pos/keys/)。
 
 ## 关于钱包的说明 {#a-note-on-wallets}
 
-账户不是钱包。钱包是一个界面或应用程序，让你能够与你的以太坊账户（无论是外部拥有账户还是合约账户）进行交互。
+账户不是钱包。钱包是一个界面或应用程序，让你能够与你的Quantaureum账户（无论是外部拥有账户还是合约账户）进行交互。
 
 ## 可视化演示 {#a-visual-demo}
 
 观看 Austin 为你讲解哈希函数和密钥对。
 
-<VideoWatch slug="hash-function-eth-build" />
+<VideoWatch slug="hash-function-qau-build" />
 
-<VideoWatch slug="key-pair-eth-build" />
+<VideoWatch slug="key-pair-qau-build" />
 
 ## 延伸阅读 {#further-reading}
 
-- [理解以太坊账户](https://info.etherscan.com/understanding-ethereum-accounts/) - Etherscan
+- [理解Quantaureum账户](https://info.explorer.com/understanding-quantaureum-accounts/) - Quantaureum Explorer
 
 _知道对你有帮助的社区资源吗？编辑本页并添加它！_
 

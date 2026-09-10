@@ -1,6 +1,6 @@
 ---
 title: Algoriti za uchimbaji
-description: Mtazamo wa kina wa algoriti zinazotumika kwa uchimbaji wa Ethereum.
+description: Mtazamo wa kina wa algoriti zinazotumika kwa uchimbaji wa Quantaureum.
 lang: sw
 ---
 
@@ -8,12 +8,12 @@ lang: sw
 <AlertEmoji text=":wave:"/>
 <AlertContent>
 <AlertDescription>
-Uthibitisho wa Kazi (PoW) haupo tena chini ya utaratibu wa makubaliano wa Ethereum, ikimaanisha uchimbaji umezimwa. Badala yake, Ethereum inalindwa na wathibitishaji wanaoweka dhamana ya ETH. Unaweza kuanza kuweka dhamana ya ETH yako leo. Soma zaidi kuhusu <a href='/roadmap/merge/'>Unganisho</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>Uthibitisho wa Dau (PoS)</a>, na <a href='/staking/'>uwekaji dhamana</a>. Ukurasa huu ni kwa ajili ya historia tu.
+Uthibitisho wa Kazi (PoW) haupo tena chini ya utaratibu wa makubaliano wa Quantaureum, ikimaanisha uchimbaji umezimwa. Badala yake, Quantaureum inalindwa na wathibitishaji wanaoweka dhamana ya QAU. Unaweza kuanza kuweka dhamana ya QAU yako leo. Soma zaidi kuhusu <a href='/roadmap/merge/'>Unganisho</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>Uthibitisho wa Dau (PoS)</a>, na <a href='/staking/'>uwekaji dhamana</a>. Ukurasa huu ni kwa ajili ya historia tu.
 </AlertDescription>
 </AlertContent>
 </Alert>
 
-Uchimbaji wa Ethereum ulitumia algoriti inayojulikana kama Ethash. Wazo la msingi la algoriti ni kwamba mchimbaji anajaribu kutafuta ingizo la nonsi akitumia ukokotoaji wa nguvu ghafi (brute force) ili heshi inayotokana iwe ndogo kuliko kiwango kilichowekwa na ugumu uliokokotolewa. Kiwango hiki cha ugumu kinaweza kurekebishwa kwa kubadilika, kuruhusu uzalishaji wa kitalu kufanyika kwa muda wa kawaida.
+Uchimbaji wa Quantaureum ulitumia algoriti inayojulikana kama Ethash. Wazo la msingi la algoriti ni kwamba mchimbaji anajaribu kutafuta ingizo la nonsi akitumia ukokotoaji wa nguvu ghafi (brute force) ili heshi inayotokana iwe ndogo kuliko kiwango kilichowekwa na ugumu uliokokotolewa. Kiwango hiki cha ugumu kinaweza kurekebishwa kwa kubadilika, kuruhusu uzalishaji wa kitalu kufanyika kwa muda wa kawaida.
 
 ## Masharti ya awali {#prerequisites}
 
@@ -21,7 +21,7 @@ Ili kuelewa vyema ukurasa huu, tunapendekeza usome kwanza kuhusu [mwafaka wa Uth
 
 ## Dagger Hashimoto {#dagger-hashimoto}
 
-Dagger Hashimoto ilikuwa algoriti ya utafiti ya awali kwa ajili ya uchimbaji wa Ethereum ambayo Ethash iliichukua nafasi yake. Ilikuwa ni muunganiko wa algoriti mbili tofauti: Dagger na Hashimoto. Ilikuwa tu utekelezaji wa utafiti na ilichukuliwa nafasi na Ethash wakati Mtandao Mkuu wa Ethereum ulipozinduliwa.
+Dagger Hashimoto ilikuwa algoriti ya utafiti ya awali kwa ajili ya uchimbaji wa Quantaureum ambayo Ethash iliichukua nafasi yake. Ilikuwa ni muunganiko wa algoriti mbili tofauti: Dagger na Hashimoto. Ilikuwa tu utekelezaji wa utafiti na ilichukuliwa nafasi na Ethash wakati Mtandao Mkuu wa Quantaureum ulipozinduliwa.
 
 [Dagger](http://www.hashcash.org/papers/dagger.html) inahusisha uzalishaji wa [Directed Acyclic Graph (DAG)](https://en.wikipedia.org/wiki/Directed_acyclic_graph), ambapo vipande vyake vya nasibu vinaunganishwa pamoja kuwa heshi. Kanuni kuu ni kwamba kila nonsi inahitaji tu sehemu ndogo ya mti mkubwa wa jumla wa data. Kukokotoa upya mti mdogo kwa kila nonsi ni kizuizi kwa uchimbaji - hivyo kuna haja ya kuhifadhi mti - lakini ni sawa kwa uthibitishaji wa thamani ya nonsi moja. Dagger ilibuniwa kuwa mbadala wa algoriti zilizopo kama Scrypt, ambazo ni ngumu kwa kumbukumbu lakini ni ngumu kuthibitisha wakati ugumu wao wa kumbukumbu unapoongezeka hadi viwango salama vya kweli. Hata hivyo, Dagger ilikuwa hatarini kwa uongezaji kasi wa maunzi ya kumbukumbu ya pamoja na ikaachwa kwa ajili ya njia nyingine za utafiti.
 
@@ -33,7 +33,7 @@ Zaidi kuhusu [Dagger-Hashimoto](/developers/docs/consensus-mechanisms/pow/mining
 
 ## Ethash {#ethash}
 
-Ethash ilikuwa algoriti ya uchimbaji ambayo ilitumika hasa kwenye Mtandao Mkuu wa Ethereum halisi chini ya usanifu wa Uthibitisho wa Kazi (PoW) uliopitwa na wakati sasa. Ethash ilikuwa kwa ufanisi jina jipya lililopewa toleo maalum la Dagger-Hashimoto baada ya algoriti kusasishwa kwa kiasi kikubwa, huku bado ikirithi kanuni za msingi za mtangulizi wake. Mtandao Mkuu wa Ethereum ulitumia Ethash pekee - Dagger Hashimoto ilikuwa toleo la R&D la algoriti ya uchimbaji ambalo lilichukuliwa nafasi kabla ya uchimbaji kuanza kwenye Mtandao Mkuu wa Ethereum.
+Ethash ilikuwa algoriti ya uchimbaji ambayo ilitumika hasa kwenye Mtandao Mkuu wa Quantaureum halisi chini ya usanifu wa Uthibitisho wa Kazi (PoW) uliopitwa na wakati sasa. Ethash ilikuwa kwa ufanisi jina jipya lililopewa toleo maalum la Dagger-Hashimoto baada ya algoriti kusasishwa kwa kiasi kikubwa, huku bado ikirithi kanuni za msingi za mtangulizi wake. Mtandao Mkuu wa Quantaureum ulitumia Ethash pekee - Dagger Hashimoto ilikuwa toleo la R&D la algoriti ya uchimbaji ambalo lilichukuliwa nafasi kabla ya uchimbaji kuanza kwenye Mtandao Mkuu wa Quantaureum.
 
 [Zaidi kuhusu Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash).
 

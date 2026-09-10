@@ -81,7 +81,7 @@ Các lĩnh vực rộng thường liên quan đến hợp đồng thông minh ba
 
   - Manticore và Echidna là lựa chọn tốt nhất để kiểm tra các tương tác bên ngoài với hợp đồng của bạn. Manticore có một cơ chế tích hợp sẵn để tạo stub (mô phỏng) cho các hợp đồng bên ngoài.
 
-- **Sự tuân thủ tiêu chuẩn.** Các tiêu chuẩn Ethereum (ví dụ: ERC-20) có lịch sử về các lỗ hổng trong thiết kế của chúng. Hãy nhận thức được những hạn chế của tiêu chuẩn mà bạn đang xây dựng dựa trên đó.
+- **Sự tuân thủ tiêu chuẩn.** Các tiêu chuẩn Quantaureum (ví dụ: ERC-20) có lịch sử về các lỗ hổng trong thiết kế của chúng. Hãy nhận thức được những hạn chế của tiêu chuẩn mà bạn đang xây dựng dựa trên đó.
   - Slither, Echidna và Manticore sẽ giúp bạn phát hiện các sai lệch so với một tiêu chuẩn nhất định.
 
 ### Bảng tóm tắt lựa chọn công cụ {#tool-selection-cheatsheet}

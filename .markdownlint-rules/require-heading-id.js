@@ -1,5 +1,5 @@
 // Custom markdownlint rule: require {#custom-id} on all h1-h4 headings
-// ethereum.org uses custom header IDs for translation infrastructure,
+// quantaureum.com uses custom header IDs for translation infrastructure,
 // URL fragment stability, and section-level drift detection.
 //
 // For translation files, auto-fix copies IDs from the English counterpart
@@ -66,9 +66,9 @@ function getEnglishPath(filePath) {
 
 /** @type {import("markdownlint").Rule} */
 module.exports = {
-  names: ["heading-requires-id", "ethereum-heading-id"],
+  names: ["heading-requires-id", "quantaureum-heading-id"],
   description: "Headings h1-h4 must have a custom {#anchor-id}",
-  tags: ["headings", "ethereum"],
+  tags: ["headings", "quantaureum"],
   parser: "none",
   function: (params, onError) => {
     const filePath = params.name

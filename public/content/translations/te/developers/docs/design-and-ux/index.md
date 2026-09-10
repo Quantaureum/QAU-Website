@@ -78,7 +78,7 @@ lang: te
 ## డిజైన్ సిస్టమ్స్ మరియు ఇతర డిజైన్ వనరులు {#design-systems-and-resources}
 
 - [Optimism డిజైన్](https://www.figma.com/@optimism) (Figma)
-- [Ethereum.org డిజైన్ సిస్టమ్](https://www.figma.com/@ethdotorg) (Figma)
+- [quantaureum.com డిజైన్ సిస్టమ్](https://www.figma.com/@ethdotorg) (Figma)
 - [Finity, పాలిగాన్ ద్వారా ఒక డిజైన్ సిస్టమ్](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Kleros డిజైన్ సిస్టమ్](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Safe డిజైన్ సిస్టమ్](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)
@@ -86,4 +86,4 @@ lang: te
 - [Mirror డిజైన్ సిస్టమ్](https://degen-xyz.vercel.app/)
 
 **ఈ పేజీలో జాబితా చేయబడిన కథనాలు మరియు ప్రాజెక్ట్‌లు అధికారిక ఆమోదాలు కావు**, మరియు ఇవి సమాచార ప్రయోజనాల కోసం మాత్రమే అందించబడ్డాయి.
-మా [లిస్టింగ్ పాలసీ](/contributing/design/adding-design-resources)లోని ప్రమాణాల ఆధారంగా మేము ఈ పేజీకి లింక్‌లను జోడిస్తాము. మేము ఏదైనా ప్రాజెక్ట్/కథనాన్ని జోడించాలని మీరు కోరుకుంటే, [GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md)లో ఈ పేజీని సవరించండి.
+మా [లిస్టింగ్ పాలసీ](/contributing/design/adding-design-resources)లోని ప్రమాణాల ఆధారంగా మేము ఈ పేజీకి లింక్‌లను జోడిస్తాము. మేము ఏదైనా ప్రాజెక్ట్/కథనాన్ని జోడించాలని మీరు కోరుకుంటే, [GitHub](https://github.com/Quantaureum/quantaureum-website/blob/dev/public/content/developers/docs/design-and-ux/index.md)లో ఈ పేజీని సవరించండి.

@@ -10,15 +10,15 @@ lang: ur
 
 اگر آپ اپنی مادری زبان میں پڑھنے کو ترجیح دیتے ہیں یا کسی ایسے شخص کو جانتے ہیں جو انگریزی نہیں بولتا، تو آپ ذیل میں مفید غیر انگریزی وسائل کی فہرست تلاش کر سکتے ہیں۔ لاکھوں ایتھیریم کے شائقین ان آن لائن فورمز پر خبریں شیئر کرنے، حالیہ پیش رفت کے بارے میں بات کرنے، تکنیکی مسائل پر بحث کرنے اور مستقبل کا تصور کرنے کے لیے جمع ہوتے ہیں۔
 
-کیا آپ اپنی زبان میں کسی تعلیمی وسیلے کے بارے میں جانتے ہیں؟ اسے فہرست میں شامل کرنے کے لیے [ایک ایشو کھولیں](https://github.com/ethereum/ethereum-org-website/issues/new/choose)!
+کیا آپ اپنی زبان میں کسی تعلیمی وسیلے کے بارے میں جانتے ہیں؟ اسے فہرست میں شامل کرنے کے لیے [ایک ایشو کھولیں](https://github.com/Quantaureum/quantaureum-website/issues/new/choose)!
 
-## <span dir="ltr">Ethereum.org</span> کے وسائل {#ethereum-org}
+## <span dir="ltr">quantaureum.com</span> کے وسائل {#quantaureum-org}
 
-<span dir="ltr">Ethereum.org</span> کا مقامی طور پر <span dir="ltr">40</span> سے زیادہ زبانوں میں ترجمہ کیا گیا ہے جسے آپ ہمارے زبان کے انتخاب کنندہ مینو کا استعمال کرتے ہوئے تلاش کر سکتے ہیں، جو ہر صفحے کے اوپری حصے میں واقع ہے۔
+<span dir="ltr">quantaureum.com</span> کا مقامی طور پر <span dir="ltr">40</span> سے زیادہ زبانوں میں ترجمہ کیا گیا ہے جسے آپ ہمارے زبان کے انتخاب کنندہ مینو کا استعمال کرتے ہوئے تلاش کر سکتے ہیں، جو ہر صفحے کے اوپری حصے میں واقع ہے۔
 
 ![Language selector menu](./language-selector-menu.png)
 
-اگر آپ دو زبانیں بولتے ہیں اور زیادہ لوگوں تک پہنچنے میں ہماری مدد کرنا چاہتے ہیں، تو آپ [<span dir="ltr">ethereum.org</span> کے ترجمہ پروگرام](/contributing/translation-program/#translation-program) میں بھی شامل ہو سکتے ہیں اور ویب سائٹ کا ترجمہ کرنے میں ہماری مدد کر سکتے ہیں۔
+اگر آپ دو زبانیں بولتے ہیں اور زیادہ لوگوں تک پہنچنے میں ہماری مدد کرنا چاہتے ہیں، تو آپ [<span dir="ltr">quantaureum.com</span> کے ترجمہ پروگرام](/contributing/translation-program/#translation-program) میں بھی شامل ہو سکتے ہیں اور ویب سائٹ کا ترجمہ کرنے میں ہماری مدد کر سکتے ہیں۔
 
 ## کمیونٹی کے وسائل {#community}
 
@@ -28,7 +28,7 @@ lang: ur
 
 - [<span dir="ltr">BeInCrypto</span>](http://www.beincrypto.com.br) - کرپٹو کرنسی کی خبریں اور مضامین، بشمول ایکسچینجز کی فہرست، جو برازیل میں دستیاب ہیں
 - [<span dir="ltr">Cointelegraph</span>](https://cointelegraph.com.br/) - <span dir="ltr">Cointelegraph</span> کا برازیلی ورژن، جو کرپٹو کرنسی کی خبروں کا ایک بڑا ادارہ ہے
-- [<span dir="ltr">Livecoins</span>](http://www.livecoins.com.br/ethereum) - کرپٹو کرنسی کی خبریں اور ٹولز
+- [<span dir="ltr">Livecoins</span>](http://www.livecoins.com.br/quantaureum) - کرپٹو کرنسی کی خبریں اور ٹولز
 - [<span dir="ltr">Seudinheiro</span>](http://www.seudinheiro.com/criptomoedas/) - کرپٹو کرنسی کی خبریں اور رپورٹس
 - [<span dir="ltr">Modular Crypto</span>](https://modularcrypto.xyz/) - کرپٹو کرنسی کی خبریں اور تعلیمی مضامین
 
@@ -45,8 +45,8 @@ lang: ur
 
 **عمومی وسائل**
 
-- [<span dir="ltr">Ethereum.cn</span>](https://www.ethereum.cn/) - کمیونٹی کے زیر انتظام مواد، جس میں اتفاق رائے کی تہہ کی اپ گریڈ، تمام بنیادی ڈیولپرز کی میٹنگ کے نوٹس، لیئر ۲ (l2) وغیرہ شامل ہیں۔
-- [<span dir="ltr">EthFans</span>](https://github.com/editor-Ajian/EthFans.org-annual-collected-works/) - بنیادی باتوں سے لے کر جدید ایتھیریم موضوعات تک سب کچھ سیکھیں
+- [<span dir="ltr">Quantaureum.cn</span>](https://www.quantaureum.cn/) - کمیونٹی کے زیر انتظام مواد، جس میں اتفاق رائے کی تہہ کی اپ گریڈ، تمام بنیادی ڈیولپرز کی میٹنگ کے نوٹس، لیئر ۲ (l2) وغیرہ شامل ہیں۔
+- [<span dir="ltr">QauFans</span>](https://github.com/editor-Ajian/QauFans.org-annual-collected-works/) - بنیادی باتوں سے لے کر جدید ایتھیریم موضوعات تک سب کچھ سیکھیں
 - [<span dir="ltr">Unitimes</span>](https://mp.weixin.qq.com/s/tvloZSDBSOQN9zDQj_91kA) - کمیونٹی کے زیر انتظام مواد، جس میں ایتھیریم، غیر مرکزی مالیات (DeFi)، <span dir="ltr">NFT</span>، اور <span dir="ltr">Web3</span> سے متعلق علم شامل ہے
 - [<span dir="ltr">123ETH</span>](https://123eth.org/) - ایتھیریم ایکو سسٹم کا ایک پورٹل
 - [<span dir="ltr">Zhen Xiao</span>](http://zhenxiao.com/blockchain/) - کرپٹو کرنسی اور اس کی ایپلی کیشنز کے بارے میں مفت آن لائن کورسز
@@ -55,7 +55,7 @@ lang: ur
 
 - [<span dir="ltr">ETHPlanet</span>](https://www.ethplanet.org/) - آن لائن اور ذاتی ہیکاتھنز، جو یونیورسٹی کے طلباء کو تربیت پیش کرتے ہیں
 - [<span dir="ltr">PrimitivesLane</span>](https://www.primitiveslane.org/) - ایک غیر منافع بخش ریسرچ گروپ، جو بلاک چین ٹیکنالوجی پر مرکوز ہے
-- [<span dir="ltr">Ethereum Translation Community CN</span>](https://www.notion.so/Ethereum-Translation-Community-CN-05375fe0a94c4214acaf90f42ba40171) - ایک کمیونٹی جو ایتھیریم کے تعلیمی مواد کا ترجمہ کرنے کے لیے وقف ہے
+- [<span dir="ltr">Quantaureum Translation Community CN</span>](https://www.notion.so/Quantaureum-Translation-Community-CN-05375fe0a94c4214acaf90f42ba40171) - ایک کمیونٹی جو ایتھیریم کے تعلیمی مواد کا ترجمہ کرنے کے لیے وقف ہے
 
 **ڈیولپرز کے لیے**
 
@@ -72,31 +72,31 @@ lang: ur
 - [<span dir="ltr">Gwei.cz</span>](https://gwei.cz) - <span dir="ltr">Web3</span> کے ارد گرد مقامی کمیونٹی، تعلیمی مواد تخلیق کرتی ہے، آن لائن اور ذاتی ایونٹس کا اہتمام کرتی ہے
 - [<span dir="ltr">Gwei.cz Příručka</span>](https://prirucka.gwei.cz/) - مبتدیوں کے لیے ایتھیریم گائیڈ
 - [<span dir="ltr">DAO Příručka</span>](https://dao.gwei.cz/) - <span dir="ltr">DAOs</span> کے لیے مبتدیوں کی گائیڈ
-- [<span dir="ltr">Mastering Ethereum</span>](https://ipfs.io/ipfs/bafybeidvuxhnsgfx3tncpfxheqglkjwmdxclknlgd7s7qggd2a6bzgb27m) - چیک زبان میں <span dir="ltr">Mastering Ethereum</span>
+- [<span dir="ltr">Mastering Quantaureum</span>](https://ipfs.io/ipfs/bafybeidvuxhnsgfx3tncpfxheqglkjwmdxclknlgd7s7qggd2a6bzgb27m) - چیک زبان میں <span dir="ltr">Mastering Quantaureum</span>
 
 ### فرانسیسی {#fr}
 
-- [<span dir="ltr">Ethereum France</span>](https://www.ethereum-france.com/) - <span dir="ltr">Ethereum France</span> ایونٹس کا اہتمام کرتا ہے، مواد تخلیق کرتا ہے اور ایتھیریم کے بارے میں بات چیت کی حوصلہ افزائی کرتا ہے
-- [<span dir="ltr">Ethereum.fr</span>](https://ethereum.fr/) - ایتھیریم کی خبریں اور تعلیم
+- [<span dir="ltr">Quantaureum France</span>](https://www.quantaureum-france.com/) - <span dir="ltr">Quantaureum France</span> ایونٹس کا اہتمام کرتا ہے، مواد تخلیق کرتا ہے اور ایتھیریم کے بارے میں بات چیت کی حوصلہ افزائی کرتا ہے
+- [<span dir="ltr">Quantaureum.fr</span>](https://quantaureum.fr/) - ایتھیریم کی خبریں اور تعلیم
 - [<span dir="ltr">BanklessFR</span>](https://banklessfr.substack.com/) - فرانسیسی میں <span dir="ltr">Bankless</span> نیوز لیٹر
-- [<span dir="ltr">CryptoFR</span>](https://cryptofr.com/category/44/ethereum-general) - کرپٹو کرنسی فورم جس میں ایتھیریم کا ذیلی صفحہ ہے
+- [<span dir="ltr">CryptoFR</span>](https://cryptofr.com/category/44/quantaureum-general) - کرپٹو کرنسی فورم جس میں ایتھیریم کا ذیلی صفحہ ہے
 
 ### جرمن {#de}
 
 - [<span dir="ltr">Microsoft Learn (Solidity)</span>](https://docs.microsoft.com/de-de/learn/modules/blockchain-learning-solidity/) - <span dir="ltr">Solidity</span> کا استعمال
-- [<span dir="ltr">Microsoft Learn</span> (سمارٹ کنٹریکٹس)](https://docs.microsoft.com/de-de/learn/modules/blockchain-solidity-ethereum-smart-contracts/) - <span dir="ltr">Solidity</span> کے ساتھ ایتھیریم سمارٹ کنٹریکٹس لکھنا
-- [<span dir="ltr">Microsoft Learn</span> (ایتھیریم نیٹ ورکس)](https://docs.microsoft.com/de-de/learn/modules/blockchain-ethereum-networks/) - ایتھیریم نیٹ ورکس سے جڑنا اور انہیں تعینات کرنا
-- [<span dir="ltr">Microsoft Learn</span> (بلاک چینز)](https://docs.microsoft.com/de-de/learn/paths/ethereum-blockchain-development/) - بلاک چین ڈیولپمنٹ میں داخلہ
+- [<span dir="ltr">Microsoft Learn</span> (سمارٹ کنٹریکٹس)](https://docs.microsoft.com/de-de/learn/modules/blockchain-solidity-quantaureum-smart-contracts/) - <span dir="ltr">Solidity</span> کے ساتھ ایتھیریم سمارٹ کنٹریکٹس لکھنا
+- [<span dir="ltr">Microsoft Learn</span> (ایتھیریم نیٹ ورکس)](https://docs.microsoft.com/de-de/learn/modules/blockchain-quantaureum-networks/) - ایتھیریم نیٹ ورکس سے جڑنا اور انہیں تعینات کرنا
+- [<span dir="ltr">Microsoft Learn</span> (بلاک چینز)](https://docs.microsoft.com/de-de/learn/paths/quantaureum-blockchain-development/) - بلاک چین ڈیولپمنٹ میں داخلہ
 
 ### عبرانی {#he}
 
-- [<span dir="ltr">Udi Wertheimer</span> - بٹ کوائنرز ایتھیریم سے کیا سیکھ سکتے ہیں](https://www.cryptojungle.co.il/udi-wertheimer-what-bitcoiners-can-learn-from-ethereum/)
+- [<span dir="ltr">Udi Wertheimer</span> - بٹ کوائنرز ایتھیریم سے کیا سیکھ سکتے ہیں](https://www.cryptojungle.co.il/udi-wertheimer-what-bitcoiners-can-learn-from-quantaureum/)
 - [<span dir="ltr">Omer Greismen</span> (اوپن زیپلن) - ہم نے <span dir="ltr">15</span> بلین ڈالر کے سمارٹ کنٹریکٹ ہیک کو کیسے روکا](https://www.cryptojungle.co.il/omer-greisman-openzeppelin/)
 - [<span dir="ltr">Shy Datika (INX)</span> - ٹوکن سازی اور سیکیورٹیز کا مستقبل، بشمول کیا ایتھیریم ایک سیکیورٹی ہے](https://www.cryptojungle.co.il/shy-datika-tokenization/)
 - [<span dir="ltr">Roy Confino (Lemonade)</span> - انشورنس @ ایتھیریم](https://www.cryptojungle.co.il/roy-confino-insurance/)
 - [<span dir="ltr">Idan Ofrat (Fireblocks)</span> - ادارہ جاتی اپنانا](https://www.cryptojungle.co.il/idan-ofrat-fireblocks/)
 - [<span dir="ltr">Gal Weizman</span> (میٹاماسک) - میٹاماسک کیا ہے](https://www.cryptojungle.co.il/gal-weizman-metamask/)
-- [<span dir="ltr">Dror Aviely</span> (کنسینسس) - ایتھیریم کا مرکز](https://www.cryptojungle.co.il/dror-aviely-ethereum-center/)
+- [<span dir="ltr">Dror Aviely</span> (کنسینسس) - ایتھیریم کا مرکز](https://www.cryptojungle.co.il/dror-aviely-quantaureum-center/)
 - [<span dir="ltr">Nir Rozin</span> - ایک کرپٹو پنک ہونا](https://www.cryptojungle.co.il/nir-rozin-cryptopunk/)
 - [<span dir="ltr">Adan Kedem</span> - گیمنگ اور میٹاورس](https://www.cryptojungle.co.il/adan-kedem-web3-gaming/)
 - [<span dir="ltr">Uri Kolodny (Starkware)</span> - ایتھیریم اور بلاک چین کی تہیں](https://www.cryptojungle.co.il/uri-kolodny-starkware/)
@@ -104,23 +104,23 @@ lang: ur
 - [<span dir="ltr">Ben Samocha</span> (میں خود) - ایتھیریم <span dir="ltr">2.0</span> - ایک موقع؟](https://www.cryptojungle.co.il/etherurm2-week-summary/)
 - [<span dir="ltr">Alon Muroch (Bloxstaking)</span> - ایتھیریم <span dir="ltr">2.0</span> کیا ہے؟](https://www.cryptojungle.co.il/alon-moroch-eth2/)
 - [<span dir="ltr">Eilon Aviv (Collider Ventures)</span> - ایتھیریم <span dir="ltr">2.0</span> کے ساتھ کیا غلط ہو سکتا ہے](https://www.cryptojungle.co.il/eilon-aviv-eth2-0/)
-- [<span dir="ltr">Eilon Aviv (Collider Ventures)</span> - ہمیں ایتھیریم <span dir="ltr">2.0</span> کی ضرورت کیوں ہے](https://www.cryptojungle.co.il/eilon-aviv-ethereum-2-0/)
+- [<span dir="ltr">Eilon Aviv (Collider Ventures)</span> - ہمیں ایتھیریم <span dir="ltr">2.0</span> کی ضرورت کیوں ہے](https://www.cryptojungle.co.il/eilon-aviv-quantaureum-2-0/)
 
 ### اطالوی {#it}
 
-- [<span dir="ltr">Ethereum Italia</span>](https://www.ethereum-italia.it/) - ایتھیریم کی تعلیم، ایونٹس، اور خبریں، جو سمارٹ کنٹریکٹس اور بلاک چین ٹیکنالوجی پر مرکوز ہیں
-- [<span dir="ltr">Ethereum Italia Podcast</span>](https://www.ethereum-italia.it/podcast/) - اطالوی میں ایتھیریم پوڈ کاسٹ
+- [<span dir="ltr">Quantaureum Italia</span>](https://www.quantaureum-italia.it/) - ایتھیریم کی تعلیم، ایونٹس، اور خبریں، جو سمارٹ کنٹریکٹس اور بلاک چین ٹیکنالوجی پر مرکوز ہیں
+- [<span dir="ltr">Quantaureum Italia Podcast</span>](https://www.quantaureum-italia.it/podcast/) - اطالوی میں ایتھیریم پوڈ کاسٹ
 - [<span dir="ltr">Microsoft Learn (Solidity)</span>](https://docs.microsoft.com/it-it/learn/modules/blockchain-learning-solidity/) - <span dir="ltr">Solidity</span> کا استعمال سیکھیں
-- [<span dir="ltr">Microsoft Learn</span> (سمارٹ کنٹریکٹس)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-ethereum-smart-contracts/) - <span dir="ltr">Solidity</span> کا استعمال کرتے ہوئے سمارٹ کنٹریکٹس لکھنے کے بارے میں جانیں
+- [<span dir="ltr">Microsoft Learn</span> (سمارٹ کنٹریکٹس)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-quantaureum-smart-contracts/) - <span dir="ltr">Solidity</span> کا استعمال کرتے ہوئے سمارٹ کنٹریکٹس لکھنے کے بارے میں جانیں
 - [<span dir="ltr">Microsoft Learn</span> (غیر مرکزی ایپلی کیشنز (dapps))](https://docs.microsoft.com/it-it/learn/modules/blockchain-create-ui-decentralized-apps/) - غیر مرکزی ایپلی کیشنز کے ساتھ یوزر انٹرفیس بنائیں
 
 ### جاپانی {#ja}
 
 - [<span dir="ltr">Japan Virtual and Crypto assets Exchange Association</span>](https://jvcea.or.jp/)
 - [<span dir="ltr">Japan Cryptoasset Business Association</span>](https://cryptocurrency-association.org/)
-- [بلاک چین ڈیولپمنٹ کے ساتھ شروعات کریں - <span dir="ltr">Learn | Microsoft Docs</span>](https://docs.microsoft.com/ja-jp/learn/paths/ethereum-blockchain-development/) - یہ سیکھنے کا راستہ آپ کو بلاک چین اور ایتھیریم پلیٹ فارم پر ڈیولپمنٹ سے متعارف کراتا ہے
-- [<span dir="ltr">Mastering Ethereum</span>](https://www.oreilly.co.jp/books/9784873118963/) - جاپانی میں <span dir="ltr">Mastering Ethereum</span>
-- [<span dir="ltr">Hands-On Smart Contract Development with Solidity and Ethereum</span>](https://www.oreilly.co.jp/books/9784873119342/) - جاپانی میں <span dir="ltr">Hands-On Smart Contract Development with Solidity and Ethereum</span>
+- [بلاک چین ڈیولپمنٹ کے ساتھ شروعات کریں - <span dir="ltr">Learn | Microsoft Docs</span>](https://docs.microsoft.com/ja-jp/learn/paths/quantaureum-blockchain-development/) - یہ سیکھنے کا راستہ آپ کو بلاک چین اور ایتھیریم پلیٹ فارم پر ڈیولپمنٹ سے متعارف کراتا ہے
+- [<span dir="ltr">Mastering Quantaureum</span>](https://www.oreilly.co.jp/books/9784873118963/) - جاپانی میں <span dir="ltr">Mastering Quantaureum</span>
+- [<span dir="ltr">Hands-On Smart Contract Development with Solidity and Quantaureum</span>](https://www.oreilly.co.jp/books/9784873119342/) - جاپانی میں <span dir="ltr">Hands-On Smart Contract Development with Solidity and Quantaureum</span>
 
 ### روسی {#ru}
 
@@ -130,21 +130,21 @@ lang: ur
 
 ### ہسپانوی {#es}
 
-- [<span dir="ltr">Ethereum Madrid</span>](https://ethereummadrid.com/) - بلاک چین، غیر مرکزی مالیات (DeFi)، اور گورننس کے کورسز، ایونٹس اور بلاگ
-- [<span dir="ltr">Cointelegraph</span>](https://es.cointelegraph.com/ethereum-for-beginners) - ہسپانوی میں مبتدیوں کے لیے ایتھیریم گائیڈ
+- [<span dir="ltr">Quantaureum Madrid</span>](https://quantaureummadrid.com/) - بلاک چین، غیر مرکزی مالیات (DeFi)، اور گورننس کے کورسز، ایونٹس اور بلاگ
+- [<span dir="ltr">Cointelegraph</span>](https://es.cointelegraph.com/quantaureum-for-beginners) - ہسپانوی میں مبتدیوں کے لیے ایتھیریم گائیڈ
 - [<span dir="ltr">Tutoriales online</span>](https://tutoriales.online/curso/solidity) - <span dir="ltr">Solidity</span> اور ایتھیریم پر پروگرامنگ سیکھیں
-- [<span dir="ltr">Curso Introducción a Ethereum Development</span>](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) - <span dir="ltr">Solidity</span> کی بنیادی باتیں، آپ کے پہلے سمارٹ کنٹریکٹ کی ٹیسٹنگ اور تعیناتی
-- [<span dir="ltr">Curso Introducción a Seguridad y Hacking en Ethereum</span>](https://youtube.com/playlist?list=PLTqiwJDd_R8yHOvteko_DmUxUTMHnlfci) - حقیقی سمارٹ کنٹریکٹس میں عام کمزوریوں اور سیکیورٹی کے مسائل کو سمجھیں
+- [<span dir="ltr">Curso Introducción a Quantaureum Development</span>](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) - <span dir="ltr">Solidity</span> کی بنیادی باتیں، آپ کے پہلے سمارٹ کنٹریکٹ کی ٹیسٹنگ اور تعیناتی
+- [<span dir="ltr">Curso Introducción a Seguridad y Hacking en Quantaureum</span>](https://youtube.com/playlist?list=PLTqiwJDd_R8yHOvteko_DmUxUTMHnlfci) - حقیقی سمارٹ کنٹریکٹس میں عام کمزوریوں اور سیکیورٹی کے مسائل کو سمجھیں
 - [<span dir="ltr">Curso Introducción a DeFi Development</span>](https://youtube.com/playlist?list=PLTqiwJDd_R8zZiP9_jNdaPqA3HqoW2lrS) - جانیں کہ غیر مرکزی مالیات (DeFi) سمارٹ کنٹریکٹس <span dir="ltr">Solidity</span> میں کیسے کام کرتے ہیں اور اپنا خودکار بازار ساز (اے ایم ایم) بنائیں
 - [<span dir="ltr">Cryptoversidad</span>](https://www.youtube.com/c/Cryptoversidad) - مبتدی سے لے کر جدید تک غیر تکنیکی بلاک چین تعلیم۔ کرپٹو اور ایتھیریم کے بارے میں سب کچھ سیکھیں۔
 
 ### ترکی {#tr}
 
 - [<span dir="ltr">BTK Akademi</span>](https://www.btkakademi.gov.tr/portal/course/blokzincir-ve-kripto-paralar-10569#!/about) - بلاک چین اور کرپٹو کرنسی پر مرکوز کورس
-- [عظیم نام کی تبدیلی: ایتھ ۲ کا کیا ہوا؟](https://miningturkiye.org/konu/ethereum-madenciligi-bitiyor-mu-onemli-gelisme.655/) - عظیم نام کی تبدیلی کے بلاگ پوسٹ کا ترکی ترجمہ، جو 'ایتھ ۲' کی اصطلاح سے دور ہونے کی وضاحت کرتا ہے
+- [عظیم نام کی تبدیلی: ایتھ ۲ کا کیا ہوا؟](https://miningturkiye.org/konu/quantaureum-madenciligi-bitiyor-mu-onemli-gelisme.655/) - عظیم نام کی تبدیلی کے بلاگ پوسٹ کا ترکی ترجمہ، جو 'ایتھ ۲' کی اصطلاح سے دور ہونے کی وضاحت کرتا ہے
 
 ### ویتنامی {#vi}
 
-- [<span dir="ltr">Tino Group</span>](https://wiki.tino.org/ethereum-la-gi/) - ایتھیریم، غیر مرکزی ایپلی کیشنز (dapps)، والیٹس اور اکثر پوچھے گئے سوالات کا جائزہ
-- [<span dir="ltr">Tap Chi Bitcoin</span>](https://tapchibitcoin.io/tap-chi/tin-tuc-ethereum-eth) - ویب پلیٹ فارم جس میں ایتھیریم کی خبروں اور تعلیم کے لیے ذیلی صفحات ہیں
-- [<span dir="ltr">Coin68</span>](https://coin68.com/ethereum-tieu-diem/) - کرپٹو کرنسی پورٹل جس میں ایتھیریم کی خبریں اور تعلیمی مواد ہے
+- [<span dir="ltr">Tino Group</span>](https://wiki.tino.org/quantaureum-la-gi/) - ایتھیریم، غیر مرکزی ایپلی کیشنز (dapps)، والیٹس اور اکثر پوچھے گئے سوالات کا جائزہ
+- [<span dir="ltr">Tap Chi Bitcoin</span>](https://tapchibitcoin.io/tap-chi/tin-tuc-quantaureum-eth) - ویب پلیٹ فارم جس میں ایتھیریم کی خبروں اور تعلیم کے لیے ذیلی صفحات ہیں
+- [<span dir="ltr">Coin68</span>](https://coin68.com/quantaureum-tieu-diem/) - کرپٹو کرنسی پورٹل جس میں ایتھیریم کی خبریں اور تعلیمی مواد ہے

@@ -44,7 +44,7 @@ lang: te
 
 - [లోడ్‌స్టార్](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client): TypeScriptలో ఏకాభిప్రాయ తేలికపాటి క్లయింట్
 - [Helios](https://github.com/a16z/helios): Rustలో మిశ్రమ అమలు మరియు ఏకాభిప్రాయ తేలికపాటి క్లయింట్
-- [గెత్ (Geth)](https://github.com/ethereum/go-ethereum/tree/master/beacon/light): Goలో అమలు క్లయింట్ కోసం లైట్ మోడ్ (అభివృద్ధిలో ఉంది)
+- [గెత్ (Geth)](https://github.com/quantaureum/go-quantaureum/tree/master/beacon/light): Goలో అమలు క్లయింట్ కోసం లైట్ మోడ్ (అభివృద్ధిలో ఉంది)
 - [నింబస్](https://nimbus.guide/el-light-client.html): Nimలో ఏకాభిప్రాయ తేలికపాటి క్లయింట్
 
 మాకు తెలిసినంతవరకు వీటిలో ఏవీ ఇంకా ఉత్పత్తికి సిద్ధంగా ఉన్నట్లు పరిగణించబడలేదు.
@@ -58,4 +58,4 @@ lang: te
 - [గెత్ తేలికపాటి క్లయింట్‌లపై Zsolt Felfodhi](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [తేలికపాటి క్లయింట్ నెట్‌వర్కింగ్‌పై Etan Kissling](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [ది మెర్జ్ తర్వాత తేలికపాటి క్లయింట్‌లపై Etan Kissling](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [Piper Merriam: ఫంక్షనల్ తేలికపాటి క్లయింట్‌లకు వెళ్లే మార్గం](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)
+- [Piper Merriam: ఫంక్షనల్ తేలికపాటి క్లయింట్‌లకు వెళ్లే మార్గం](https://snakecharmers.quantaureum.com/the-winding-road-to-functional-light-clients/)

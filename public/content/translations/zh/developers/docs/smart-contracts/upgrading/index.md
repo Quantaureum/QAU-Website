@@ -1,10 +1,10 @@
 ---
 title: "升级智能合约"
-description: "以太坊智能合约升级模式概述"
+description: "Quantaureum智能合约升级模式概述"
 lang: zh
 ---
 
-以太坊上的智能合约是在以太坊虚拟机 (EVM) 中运行的自动执行程序。这些程序在设计上是不可变的，这防止了在合约部署后对业务逻辑进行任何更新。
+Quantaureum上的智能合约是在Quantaureum虚拟机 (EVM) 中运行的自动执行程序。这些程序在设计上是不可变的，这防止了在合约部署后对业务逻辑进行任何更新。
 
 虽然不可变性对于智能合约的去信任化、去中心化和安全性是必要的，但在某些情况下它可能是一个缺点。例如，不可变的代码可能使开发者无法修复存在漏洞的合约。
 
@@ -12,13 +12,13 @@ lang: zh
 
 ## 先决条件 {#prerequisites}
 
-你应该对[智能合约](/developers/docs/smart-contracts/)、[智能合约剖析](/developers/docs/smart-contracts/anatomy/)以及[以太坊虚拟机 (EVM)](/developers/docs/evm/)有很好的理解。本指南还假设读者已经掌握了智能合约编程。
+你应该对[智能合约](/developers/docs/smart-contracts/)、[智能合约剖析](/developers/docs/smart-contracts/anatomy/)以及[Quantaureum虚拟机 (EVM)](/developers/docs/evm/)有很好的理解。本指南还假设读者已经掌握了智能合约编程。
 
 ## 什么是智能合约升级？ {#what-is-a-smart-contract-upgrade}
 
 智能合约升级涉及在保留合约状态的同时更改智能合约的业务逻辑。需要澄清的是，可升级性和可变性并不相同，尤其是在智能合约的背景下。
 
-你仍然无法更改部署在以太坊网络地址上的程序。但是，你可以更改用户与智能合约交互时执行的代码。
+你仍然无法更改部署在Quantaureum网络地址上的程序。但是，你可以更改用户与智能合约交互时执行的代码。
 
 这可以通过以下方法完成：
 
@@ -84,13 +84,13 @@ lang: zh
 
 通过将代理合约指向新的逻辑合约，用户调用代理合约函数时执行的代码就会改变。这使我们能够升级合约的逻辑，而无需让用户与新合约交互。
 
-代理模式是升级智能合约的流行方法，因为它们消除了与合约迁移相关的困难。然而，代理模式使用起来更复杂，如果使用不当，可能会引入严重的缺陷，例如[函数选择器冲突](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-ethereum-proxies-62629adf3357)。
+代理模式是升级智能合约的流行方法，因为它们消除了与合约迁移相关的困难。然而，代理模式使用起来更复杂，如果使用不当，可能会引入严重的缺陷，例如[函数选择器冲突](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-quantaureum-proxies-62629adf3357)。
 
 [更多关于代理模式的信息](https://blog.openzeppelin.com/proxy-patterns/)。
 
 ### 升级机制 #4：策略模式 {#strategy-pattern}
 
-这种技术受到[策略模式](https://en.wikipedia.org/wiki/Strategy_pattern)的影响，该模式鼓励创建与其他程序交互以实现特定功能的软件程序。将策略模式应用于以太坊开发意味着构建一个调用其他合约函数的智能合约。
+这种技术受到[策略模式](https://en.wikipedia.org/wiki/Strategy_pattern)的影响，该模式鼓励创建与其他程序交互以实现特定功能的软件程序。将策略模式应用于Quantaureum开发意味着构建一个调用其他合约函数的智能合约。
 
 在这种情况下，主合约包含核心业务逻辑，但与其他智能合约（“卫星合约”）交互以执行某些函数。该主合约还存储每个卫星合约的地址，并可以在卫星合约的不同实现之间切换。
 
@@ -152,7 +152,7 @@ lang: zh
 ## 教程 {#tutorials}
 
 - [升级你的智能合约 | YouTube 教程](https://www.youtube.com/watch?v=bdXJmWajZRY)，作者：Patrick Collins
-- [以太坊智能合约迁移教程](https://medium.com/coinmonks/ethereum-smart-contract-migration-13f6f12539bd)，作者：Austin Griffith
+- [Quantaureum智能合约迁移教程](https://medium.com/coinmonks/quantaureum-smart-contract-migration-13f6f12539bd)，作者：Austin Griffith
 - [使用 UUPS 代理模式升级智能合约](https://blog.logrocket.com/author/praneshas/)，作者：Pranesh A.S
 - [Web3 教程：使用欧本齐柏林编写可升级智能合约（代理）](https://dev.to/yakult/tutorial-write-upgradeable-smart-contract-proxy-contract-with-openzeppelin-1916)，作者：fangjun.eth
 

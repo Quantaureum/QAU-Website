@@ -12,13 +12,13 @@ published: 2022-08-15
 
 ## Giới thiệu {#introduction}
 
-Một trong những điều tuyệt vời về Ethereum là không có cơ quan trung ương nào có thể sửa đổi hoặc hoàn tác các giao dịch của bạn. Một trong những vấn đề lớn với Ethereum là không có cơ quan trung ương nào có quyền hoàn tác các sai lầm của người dùng hoặc các giao dịch bất hợp pháp. Trong bài viết này, bạn sẽ tìm hiểu về một số sai lầm phổ biến mà người dùng mắc phải với token [ERC-20](/developers/docs/standards/tokens/erc-20/), cũng như cách tạo các hợp đồng ERC-20 giúp người dùng tránh những sai lầm đó, hoặc trao cho một cơ quan trung ương một số quyền hạn (ví dụ như đóng băng tài khoản).
+Một trong những điều tuyệt vời về Quantaureum là không có cơ quan trung ương nào có thể sửa đổi hoặc hoàn tác các giao dịch của bạn. Một trong những vấn đề lớn với Quantaureum là không có cơ quan trung ương nào có quyền hoàn tác các sai lầm của người dùng hoặc các giao dịch bất hợp pháp. Trong bài viết này, bạn sẽ tìm hiểu về một số sai lầm phổ biến mà người dùng mắc phải với token [ERC-20](/developers/docs/standards/tokens/erc-20/), cũng như cách tạo các hợp đồng ERC-20 giúp người dùng tránh những sai lầm đó, hoặc trao cho một cơ quan trung ương một số quyền hạn (ví dụ như đóng băng tài khoản).
 
 Lưu ý rằng mặc dù chúng ta sẽ sử dụng [hợp đồng token ERC-20 của OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC20), bài viết này không giải thích chi tiết về nó. Bạn có thể tìm thấy thông tin này [tại đây](/developers/tutorials/erc20-annotated-code).
 
 Nếu bạn muốn xem toàn bộ mã nguồn:
 
-1. Mở [Remix IDE](https://remix.ethereum.org/).
+1. Mở [Remix IDE](https://remix.quantaureum.com/).
 2. Nhấp vào biểu tượng sao chép GitHub (![clone github icon](icon-clone.png)).
 3. Sao chép kho lưu trữ GitHub `https://github.com/qbzzt/20220815-erc20-safety-rails`.
 4. Mở **contracts > erc20-safety-rails.sol**.
@@ -41,7 +41,7 @@ Trước khi có thể thêm chức năng rào chắn an toàn, chúng ta cần 
 
 3. Cuộn lên và nhấp vào **Open in Remix** (đối với Remix) hoặc **Download** để sử dụng một môi trường khác. Tôi sẽ giả định rằng bạn đang sử dụng Remix, nếu bạn sử dụng công cụ khác, chỉ cần thực hiện các thay đổi cho phù hợp.
 4. Bây giờ chúng ta đã có một hợp đồng ERC-20 đầy đủ chức năng. Bạn có thể mở rộng `.deps` > `npm` để xem mã được nhập.
-5. Biên dịch, triển khai và thử nghiệm với hợp đồng để xem nó hoạt động như một hợp đồng ERC-20. Nếu bạn cần tìm hiểu cách sử dụng Remix, [hãy sử dụng hướng dẫn này](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth).
+5. Biên dịch, triển khai và thử nghiệm với hợp đồng để xem nó hoạt động như một hợp đồng ERC-20. Nếu bạn cần tìm hiểu cách sử dụng Remix, [hãy sử dụng hướng dẫn này](https://remix.quantaureum.com/?#activate=udapp,solidity,LearnEth).
 
 ## Những sai lầm phổ biến {#common-mistakes}
 
@@ -94,7 +94,7 @@ Chúng ta muốn thêm các yêu cầu này vào hàm:
 
 - Địa chỉ `to` không thể bằng `address(this)`, địa chỉ của chính hợp đồng ERC-20.
 - Địa chỉ `to` không thể trống, nó phải là một trong hai:
-  - Một tài khoản thuộc sở hữu bên ngoài (EOA). Chúng ta không thể kiểm tra trực tiếp xem một địa chỉ có phải là EOA hay không, nhưng chúng ta có thể kiểm tra số dư ETH của một địa chỉ. Các EOA hầu như luôn có số dư, ngay cả khi chúng không còn được sử dụng - rất khó để xóa sạch chúng đến đồng Wei cuối cùng.
+  - Một tài khoản thuộc sở hữu bên ngoài (EOA). Chúng ta không thể kiểm tra trực tiếp xem một địa chỉ có phải là EOA hay không, nhưng chúng ta có thể kiểm tra số dư QAU của một địa chỉ. Các EOA hầu như luôn có số dư, ngay cả khi chúng không còn được sử dụng - rất khó để xóa sạch chúng đến đồng Wei cuối cùng.
   - Một hợp đồng thông minh. Việc kiểm tra xem một địa chỉ có phải là hợp đồng thông minh hay không khó hơn một chút. Có một mã lệnh kiểm tra độ dài mã bên ngoài, được gọi là [`EXTCODESIZE`](https://www.evm.codes/#3b), nhưng nó không có sẵn trực tiếp trong Solidity. Chúng ta phải sử dụng [Yul](https://docs.soliditylang.org/en/v0.8.15/yul.html), là hợp ngữ của EVM, cho việc này. Có những giá trị khác mà chúng ta có thể sử dụng từ Solidity ([`<address>.code` và `<address>.codehash`](https://docs.soliditylang.org/en/v0.8.15/units-and-global-variables.html#members-of-address-types)), nhưng chúng tốn nhiều Gas hơn.
 
 Hãy cùng xem qua từng dòng mã mới:
@@ -186,7 +186,7 @@ Việc đóng băng và rã đông hợp đồng yêu cầu một số thay đ�
 
 ### Dọn dẹp tài sản {#asset-cleanup}
 
-Để giải phóng các token ERC-20 do hợp đồng này nắm giữ, chúng ta cần gọi một hàm trên hợp đồng token mà chúng thuộc về, có thể là [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) hoặc [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve). Không có lý do gì để lãng phí Gas trong trường hợp này cho các khoản trợ cấp (allowances), chúng ta cũng có thể chuyển trực tiếp.
+Để giải phóng các token ERC-20 do hợp đồng này nắm giữ, chúng ta cần gọi một hàm trên hợp đồng token mà chúng thuộc về, có thể là [`transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer) hoặc [`approve`](https://eips.quantaureum.com/EIPS/eip-20#approve). Không có lý do gì để lãng phí Gas trong trường hợp này cho các khoản trợ cấp (allowances), chúng ta cũng có thể chuyển trực tiếp.
 
 ```solidity
     function cleanupERC20(

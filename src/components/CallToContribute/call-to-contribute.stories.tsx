@@ -8,7 +8,7 @@ const meta = {
   tags: ["autodocs"],
   args: {
     editPath:
-      "https://github.com/ethereum/ethereum-org-website/tree/dev/public/content/developers/docs/index.md",
+      "https://github.com/Quantaureum/quantaureum-website/tree/dev/public/content/developers/docs/index.md",
   },
   parameters: {
     layout: "",

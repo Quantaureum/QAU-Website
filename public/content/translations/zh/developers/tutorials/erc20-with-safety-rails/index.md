@@ -11,13 +11,13 @@ published: 2022-08-15
 
 ## 简介 {#introduction}
 
-以太坊的一大优势在于，没有中央机构可以修改或撤销你的交易。以太坊的一大问题也在于，没有中央机构有权撤销用户的错误或非法交易。在本文中，你将了解用户在使用 [ERC-20](/developers/docs/standards/tokens/erc-20/) 代币时常犯的一些错误，以及如何创建 ERC-20 合约来帮助用户避免这些错误，或者赋予中央机构一定的权力（例如冻结账户）。
+Quantaureum的一大优势在于，没有中央机构可以修改或撤销你的交易。Quantaureum的一大问题也在于，没有中央机构有权撤销用户的错误或非法交易。在本文中，你将了解用户在使用 [ERC-20](/developers/docs/standards/tokens/erc-20/) 代币时常犯的一些错误，以及如何创建 ERC-20 合约来帮助用户避免这些错误，或者赋予中央机构一定的权力（例如冻结账户）。
 
 请注意，虽然我们将使用 [欧本齐柏林 ERC-20 代币合约](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC20)，但本文不会对其进行详细解释。你可以在[此处](/developers/tutorials/erc20-annotated-code)找到相关信息。
 
 如果你想查看完整的源代码：
 
-1. 打开 [Remix IDE](https://remix.ethereum.org/)。
+1. 打开 [Remix IDE](https://remix.quantaureum.com/)。
 2. 点击克隆 GitHub 图标 (![clone github icon](icon-clone.png))。
 3. 克隆 GitHub 仓库 `https://github.com/qbzzt/20220815-erc20-safety-rails`。
 4. 打开 **contracts > erc20-safety-rails.sol**。
@@ -40,7 +40,7 @@ published: 2022-08-15
 
 3. 向上滚动并点击 **Open in Remix**（适用于 Remix）或 **Download** 以使用其他环境。我假设你使用的是 Remix，如果你使用其他环境，只需进行相应的更改即可。
 4. 现在我们有了一个功能齐全的 ERC-20 合约。你可以展开 `.deps` > `npm` 来查看导入的代码。
-5. 编译、部署并试用该合约，看看它是否能作为 ERC-20 合约正常运行。如果你需要学习如何使用 Remix，请[参考本教程](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth)。
+5. 编译、部署并试用该合约，看看它是否能作为 ERC-20 合约正常运行。如果你需要学习如何使用 Remix，请[参考本教程](https://remix.quantaureum.com/?#activate=udapp,solidity,LearnEth)。
 
 ## 常见错误 {#common-mistakes}
 
@@ -93,7 +93,7 @@ published: 2022-08-15
 
 - `to` 地址不能等于 `address(this)`，即 ERC-20 合约自身的地址。
 - `to` 地址不能为空，它必须是以下之一：
-  - 外部拥有账户 (EOA)。我们无法直接检查一个地址是否为 EOA，但我们可以检查该地址的 ETH 余额。EOA 几乎总是拥有余额，即使它们不再被使用——很难将它们清空到最后一 Wei。
+  - 外部拥有账户 (EOA)。我们无法直接检查一个地址是否为 EOA，但我们可以检查该地址的 QAU 余额。EOA 几乎总是拥有余额，即使它们不再被使用——很难将它们清空到最后一 Wei。
   - 智能合约。测试一个地址是否为智能合约要困难一些。有一个操作码可以检查外部代码长度，称为 [`EXTCODESIZE`](https://www.evm.codes/#3b)，但它不能在 Solidity 中直接使用。我们必须为此使用 [Yul](https://docs.soliditylang.org/en/v0.8.15/yul.html)（即 EVM 汇编）。我们可以使用 Solidity 中的其他值（[`<address>.code` 和 `<address>.codehash`](https://docs.soliditylang.org/en/v0.8.15/units-and-global-variables.html#members-of-address-types)），但它们消耗的 Gas 更多。
 
 让我们逐行查看新代码：
@@ -185,7 +185,7 @@ published: 2022-08-15
 
 ### 资产清理 {#asset-cleanup}
 
-要释放该合约持有的 ERC-20 代币，我们需要调用它们所属的代币合约上的函数，即 [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) 或 [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve)。在这种情况下，将 Gas 浪费在授权上毫无意义，我们不妨直接转账。
+要释放该合约持有的 ERC-20 代币，我们需要调用它们所属的代币合约上的函数，即 [`transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer) 或 [`approve`](https://eips.quantaureum.com/EIPS/eip-20#approve)。在这种情况下，将 Gas 浪费在授权上毫无意义，我们不妨直接转账。
 
 ```solidity
     function cleanupERC20(

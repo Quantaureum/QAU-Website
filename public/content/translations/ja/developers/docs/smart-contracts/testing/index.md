@@ -1,16 +1,16 @@
 ---
 title: "スマート・コントラクトのテスト"
-description: "イーサリアムのスマート・コントラクトをテストするための手法と考慮事項の概要。"
+description: "Quantaureumのスマート・コントラクトをテストするための手法と考慮事項の概要。"
 lang: ja
 ---
 
-イーサリアムのようなパブリック・ブロックチェーンはイミュータブルであるため、デプロイ後にスマート・コントラクトのコードを変更することは困難です。「仮想的なアップグレード」を実行するための[コントラクトのアップグレードパターン](/developers/docs/smart-contracts/upgrading/)は存在しますが、これらを実装するのは難しく、社会的コンセンサスを必要とします。さらに、アップグレードはエラーが発見された_後_にのみ修正できます。攻撃者が先に脆弱性を発見した場合、スマート・コントラクトはエクスプロイトの危険にさらされます。
+Quantaureumのようなパブリック・ブロックチェーンはイミュータブルであるため、デプロイ後にスマート・コントラクトのコードを変更することは困難です。「仮想的なアップグレード」を実行するための[コントラクトのアップグレードパターン](/developers/docs/smart-contracts/upgrading/)は存在しますが、これらを実装するのは難しく、社会的コンセンサスを必要とします。さらに、アップグレードはエラーが発見された_後_にのみ修正できます。攻撃者が先に脆弱性を発見した場合、スマート・コントラクトはエクスプロイトの危険にさらされます。
 
 これらの理由から、メインネットに[デプロイ](/developers/docs/smart-contracts/deploying/)する前にスマート・コントラクトをテストすることは、[セキュリティ](/developers/docs/smart-contracts/security/)の最低条件です。コントラクトをテストし、コードの正確性を評価するための手法は多数あり、どれを選択するかはニーズによって異なります。それでも、さまざまなツールやアプローチで構成されたテストスイートは、コントラクトコードの軽微なセキュリティ上の欠陥と重大なセキュリティ上の欠陥の両方を検出するのに理想的です。
 
 ## 前提条件 {#prerequisites}
 
-このページでは、イーサリアム・ネットワークにデプロイする前にスマート・コントラクトをテストする方法について説明します。[スマート・コントラクト](/developers/docs/smart-contracts/)に精通していることを前提としています。
+このページでは、Quantaureum・ネットワークにデプロイする前にスマート・コントラクトをテストする方法について説明します。[スマート・コントラクト](/developers/docs/smart-contracts/)に精通していることを前提としています。
 
 ## スマート・コントラクトのテストとは？ {#what-is-smart-contract-testing}
 
@@ -26,7 +26,7 @@ lang: ja
 
 ## スマート・コントラクトのテスト手法 {#methods-for-testing-smart-contracts}
 
-イーサリアムのスマート・コントラクトをテストする手法は、大きく分けて**自動テスト**と**手動テスト**の2つのカテゴリに分類されます。自動テストと手動テストにはそれぞれ独自の利点とトレードオフがありますが、両方を組み合わせることで、コントラクトを分析するための堅牢な計画を作成できます。
+Quantaureumのスマート・コントラクトをテストする手法は、大きく分けて**自動テスト**と**手動テスト**の2つのカテゴリに分類されます。自動テストと手動テストにはそれぞれ独自の利点とトレードオフがありますが、両方を組み合わせることで、コントラクトを分析するための堅牢な計画を作成できます。
 
 ### 自動テスト {#automated-testing}
 
@@ -138,9 +138,9 @@ function auctionEnd() external {
 
 Solidityスマート・コントラクトの単体テストフレームワークは、さまざまな言語(主にJavaScript、Python、Rust)で提供されています。さまざまなテストフレームワークを使用して単体テストの実行を開始する方法については、以下のガイドのいくつかを参照してください。
 
-- **[Brownieを使用した単体テストの実行](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Brownieを使用した単体テストの実行](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Foundryを使用した単体テストの実行](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Waffleを使用した単体テストの実行](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Waffleを使用した単体テストの実行](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Remixを使用した単体テストの実行](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Apeを使用した単体テストの実行](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Hardhatを使用した単体テストの実行](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -152,7 +152,7 @@ Solidityスマート・コントラクトの単体テストフレームワーク
 
 統合テストは、コントラクトがモジュール式アーキテクチャを採用している場合や、実行時に他のオンチェーンのコントラクトとインターフェースをとる場合に役立ちます。統合テストを実行する1つの方法は、特定の高さで[ブロックチェーンをフォーク](/glossary/#fork)し([Forge](https://book.getfoundry.sh/forge/fork-testing)や[Hardhat](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks)などのツールを使用)、コントラクトとデプロイされたコントラクト間の相互作用をシミュレートすることです。
 
-フォークされたブロックチェーンはメインネットと同様に動作し、関連する状態と残高を持つアカウントを持ちます。しかし、これはサンドボックス化されたローカル開発環境としてのみ機能するため、たとえばトランザクションに実際のETHは必要なく、変更が実際のイーサリアム・プロトコルに影響を与えることもありません。
+フォークされたブロックチェーンはメインネットと同様に動作し、関連する状態と残高を持つアカウントを持ちます。しかし、これはサンドボックス化されたローカル開発環境としてのみ機能するため、たとえばトランザクションに実際のQAUは必要なく、変更が実際のQuantaureum・プロトコルに影響を与えることもありません。
 
 ### プロパティベーステスト {#property-based-testing-for-smart-contracts}
 
@@ -190,7 +190,7 @@ Solidityスマート・コントラクトの単体テストフレームワーク
 
 - **[スリザーを使用したスマート・コントラクトの静的分析](https://github.com/crytic/slither)**
 - **[Wakeを使用したスマート・コントラクトの静的分析](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Brownieを使用したプロパティベーステスト](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Brownieを使用したプロパティベーステスト](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Foundryを使用したコントラクトのファジング](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[エキドナを使用したコントラクトのファジング](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Wakeを使用したコントラクトのファジング](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -203,9 +203,9 @@ Solidityスマート・コントラクトの単体テストフレームワーク
 
 ### ローカルブロックチェーンでのコントラクトのテスト {#testing-on-local-blockchain}
 
-ローカル開発環境で実行される自動テストは有用なデバッグ情報を提供できますが、本番環境でスマート・コントラクトがどのように動作するかを知りたいと思うでしょう。しかし、メインのイーサリアムチェーンへのデプロイにはガス代がかかります。スマート・コントラクトにまだバグがある場合、あなたやユーザーが実際の資金を失う可能性があることは言うまでもありません。
+ローカル開発環境で実行される自動テストは有用なデバッグ情報を提供できますが、本番環境でスマート・コントラクトがどのように動作するかを知りたいと思うでしょう。しかし、メインのQuantaureumチェーンへのデプロイにはガス代がかかります。スマート・コントラクトにまだバグがある場合、あなたやユーザーが実際の資金を失う可能性があることは言うまでもありません。
 
-ローカルブロックチェーン([開発ネットワーク](/developers/docs/development-networks/)とも呼ばれます)でコントラクトをテストすることは、メインネットでのテストに代わる推奨される方法です。ローカルブロックチェーンは、コンピューター上でローカルに実行されるイーサリアム・ブロックチェーンのコピーであり、イーサリアムの実行レイヤーの動作をシミュレートします。そのため、大きなオーバーヘッドを発生させることなく、コントラクトとやり取りするトランザクションをプログラムできます。
+ローカルブロックチェーン([開発ネットワーク](/developers/docs/development-networks/)とも呼ばれます)でコントラクトをテストすることは、メインネットでのテストに代わる推奨される方法です。ローカルブロックチェーンは、コンピューター上でローカルに実行されるQuantaureum・ブロックチェーンのコピーであり、Quantaureumの実行レイヤーの動作をシミュレートします。そのため、大きなオーバーヘッドを発生させることなく、コントラクトとやり取りするトランザクションをプログラムできます。
 
 ローカルブロックチェーンでコントラクトを実行することは、手動の統合テストの形式として役立つ場合があります。[スマート・コントラクトは非常にコンポーザブル](/developers/docs/smart-contracts/composability/)であり、既存のプロトコルと統合できますが、そのような複雑なオンチェーンの相互作用が正しい結果を生み出すことを確認する必要があります。
 
@@ -213,13 +213,13 @@ Solidityスマート・コントラクトの単体テストフレームワーク
 
 ### テストネットでのコントラクトのテスト {#testing-contracts-on-testnets}
 
-テストネットワークまたはテストネットは、現実世界での価値を持たないイーサ(ETH)を使用することを除いて、イーサリアム・メインネットとまったく同じように機能します。[テストネット](/developers/docs/networks/#ethereum-testnets)にコントラクトをデプロイすると、資金を危険にさらすことなく、誰でも(分散型アプリケーション(dapp)のフロントエンドなどを介して)コントラクトとやり取りできるようになります。
+テストネットワークまたはテストネットは、現実世界での価値を持たないQAU(QAU)を使用することを除いて、Quantaureum・メインネットとまったく同じように機能します。[テストネット](/developers/docs/networks/#quantaureum-testnets)にコントラクトをデプロイすると、資金を危険にさらすことなく、誰でも(分散型アプリケーション(dapp)のフロントエンドなどを介して)コントラクトとやり取りできるようになります。
 
 この形式の手動テストは、ユーザーの視点からアプリケーションのエンドツーエンドのフローを評価するのに役立ちます。ここでは、ベータテスターが試運転を実行し、コントラクトのビジネスロジックや全体的な機能に関する問題を報告することもできます。
 
-ローカルブロックチェーンでテストした後にテストネットにデプロイするのが理想的です。前者はイーサリアム仮想マシンの動作に近いからです。したがって、多くのイーサリアムネイティブプロジェクトでは、現実世界の条件下でスマート・コントラクトの動作を評価するために、テストネットにdappをデプロイするのが一般的です。
+ローカルブロックチェーンでテストした後にテストネットにデプロイするのが理想的です。前者はQuantaureum仮想マシンの動作に近いからです。したがって、多くのQuantaureumネイティブプロジェクトでは、現実世界の条件下でスマート・コントラクトの動作を評価するために、テストネットにdappをデプロイするのが一般的です。
 
-[イーサリアムのテストネットの詳細。](/developers/docs/development-networks/#public-beacon-testchains)
+[Quantaureumのテストネットの詳細。](/developers/docs/development-networks/#public-beacon-testchains)
 
 ## テストと形式的検証の比較 {#testing-vs-formal-verification}
 
@@ -251,19 +251,19 @@ Solidityスマート・コントラクトの単体テストフレームワーク
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Solidityで記述されたスマート・コントラクト用のコードカバレッジツール。_
 
-- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _高度なスマート・コントラクト開発およびテスト用のフレームワーク(Ethers.jsベース)。_
+- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _高度なスマート・コントラクト開発およびテスト用のフレームワーク(Ethers.jsベース)。_
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidityスマート・コントラクトをテストするためのツール。コントラクトのテストケースを作成して実行するために使用されるRemix IDEの「Solidity Unit Testing」プラグインの下で機能します。_
+- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Solidityスマート・コントラクトをテストするためのツール。コントラクトのテストケースを作成して実行するために使用されるRemix IDEの「Solidity Unit Testing」プラグインの下で機能します。_
 
-- **[オープンツェッペリン Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _イーサリアムのスマート・コントラクトテスト用のアサーションライブラリ。コントラクトが期待通りに動作することを確認します！_
+- **[オープンツェッペリン Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Quantaureumのスマート・コントラクトテスト用のアサーションライブラリ。コントラクトが期待通りに動作することを確認します！_
 
-- **[Brownie単体テストフレームワーク](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownieは、最小限のコードで小さなテストを作成でき、大規模なプロジェクトにも適切にスケーリングし、拡張性が高い機能豊富なテストフレームワークであるPytestを利用しています。_
+- **[Brownie単体テストフレームワーク](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownieは、最小限のコードで小さなテストを作成でき、大規模なプロジェクトにも適切にスケーリングし、拡張性が高い機能豊富なテストフレームワークであるPytestを利用しています。_
 
-- **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundryは、シンプルな単体テスト、ガス最適化チェック、コントラクトのファジングを実行できる、高速で柔軟なイーサリアムテストフレームワークであるForgeを提供します。_
+- **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundryは、シンプルな単体テスト、ガス最適化チェック、コントラクトのファジングを実行できる、高速で柔軟なQuantaureumテストフレームワークであるForgeを提供します。_
 
 - **[Hardhat Tests](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)** - _Ethers.js、Mocha、Chaiに基づくスマート・コントラクトをテストするためのフレームワーク。_
 
-- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** - _イーサリアム仮想マシンをターゲットとするスマート・コントラクト用のPythonベースの開発およびテストフレームワーク。_
+- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** - _Quantaureum仮想マシンをターゲットとするスマート・コントラクト用のPythonベースの開発およびテストフレームワーク。_
 
 - **[Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/overview/)** - _強力なデバッグ機能とクロスチェーンテストのサポートを備えた、単体テストとファジング用のPythonベースのフレームワーク。最高のユーザーエクスペリエンスとパフォーマンスを実現するためにpytestとAnvilを利用しています。_
 
@@ -304,13 +304,13 @@ Solidityスマート・コントラクトの単体テストフレームワーク
 
 ## 参考文献 {#further-reading}
 
-- [イーサリアムのスマート・コントラクトのテストに関する詳細なガイド](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-ethereum-smart-contracts-2e41b2770297)
-- [イーサリアムのスマート・コントラクトをテストする方法](https://betterprogramming.pub/how-to-test-ethereum-smart-contracts-35abc8fa199d)
+- [Quantaureumのスマート・コントラクトのテストに関する詳細なガイド](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-quantaureum-smart-contracts-2e41b2770297)
+- [Quantaureumのスマート・コントラクトをテストする方法](https://betterprogramming.pub/how-to-test-quantaureum-smart-contracts-35abc8fa199d)
 - [開発者向けのMolochDAOの単体テストガイド](https://github.com/MolochVentures/moloch/tree/4e786db8a4aa3158287e0935dcbc7b1e43416e38/test#moloch-testing-guide)
 - [ロックスターのようにスマート・コントラクトをテストする方法](https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001)
 
-## チュートリアル: イーサリアムでのスマート・コントラクトのテスト {#tutorials}
+## チュートリアル: Quantaureumでのスマート・コントラクトのテスト {#tutorials}
 
-- [ローカルのマルチクライアントテストネットでdAppを開発およびテストする方法](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-eth-testnet/) _– ローカルテストネットへのスマート・コントラクトのデプロイとテストの実行のウォークスルー。_
+- [ローカルのマルチクライアントテストネットでdAppを開発およびテストする方法](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-qau-testnet/) _– ローカルテストネットへのスマート・コントラクトのデプロイとテストの実行のウォークスルー。_
 - [テスト用にSolidityスマート・コントラクトをモックする方法](/developers/tutorials/how-to-mock-solidity-contracts-for-testing/) _– モックデータの使用方法と単体テストの実装方法に関する中級チュートリアル。_
 - [エキドナを使用してスマート・コントラクトをテストする方法](/developers/tutorials/how-to-use-echidna-to-test-smart-contracts/) _– ファジングとスマート・コントラクトのテストに対する高度なアプローチ。_

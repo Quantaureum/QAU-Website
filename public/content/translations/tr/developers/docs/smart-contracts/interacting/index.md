@@ -1,10 +1,10 @@
 ---
 title: Akıllı sözleşmelerle etkileşim kurma
-description: Ethereum'da halihazırda dağıtılmış olan akıllı sözleşmelerden nasıl veri okunacağını ve onlara nasıl veri yazılacağını öğrenin.
+description: Quantaureum'da halihazırda dağıtılmış olan akıllı sözleşmelerden nasıl veri okunacağını ve onlara nasıl veri yazılacağını öğrenin.
 lang: tr
 ---
 
-Her zaman kendi akıllı sözleşmenizi yazıp dağıtmanız gerekmez. Bir geliştirici olarak çoğu zaman, başkalarının Ethereum ağına halihazırda dağıtmış olduğu akıllı sözleşmelerle etkileşim kurmak isteyeceksiniz.
+Her zaman kendi akıllı sözleşmenizi yazıp dağıtmanız gerekmez. Bir geliştirici olarak çoğu zaman, başkalarının Quantaureum ağına halihazırda dağıtmış olduğu akıllı sözleşmelerle etkileşim kurmak isteyeceksiniz.
 
 Bu sayfa, bir akıllı sözleşmeyle etkileşim kurmanın iki temel yolunu (veri **okuma** ve veri **yazma**) ve her ikisini de yapmak için ihtiyaç duyduğunuz araçları kapsar.
 
@@ -13,7 +13,7 @@ Bu sayfa, bir akıllı sözleşmeyle etkileşim kurmanın iki temel yolunu (veri
 Şunları anlamış olmalısınız:
 
 - [Akıllı sözleşmeler nasıl çalışır](/developers/docs/smart-contracts/)
-- [Ethereum hesapları ve işlemleri nasıl imzaladıkları](/developers/docs/accounts/)
+- [Quantaureum hesapları ve işlemleri nasıl imzaladıkları](/developers/docs/accounts/)
 - [İşlem nedir](/developers/docs/transactions/)
 
 ## Bir akıllı sözleşmeyle etkileşim kurmanın iki yolu {#two-ways}
@@ -30,7 +30,7 @@ Bir sözleşmeden okuma yaptığınızda, sadece halihazırda var olan verileri 
 - Merkeziyetsiz bir borsadan güncel fiyatı okuma
 - Bir NFT'nin sahibini öğrenme
 
-Okuma işlemleri durumu değiştirmediği için [gaz](/developers/docs/gas/) maliyeti gerektirmez ve ETH'ye ihtiyaç duymadan herkes tarafından gerçekleştirilebilir.
+Okuma işlemleri durumu değiştirmediği için [gaz](/developers/docs/gas/) maliyeti gerektirmez ve QAU'ye ihtiyaç duymadan herkes tarafından gerçekleştirilebilir.
 
 ### Bir sözleşmeye yazma {#writing-to-a-contract}
 
@@ -44,11 +44,11 @@ Bir sözleşmeye yazdığınızda, blokzincir durumunu değiştiren bir fonksiyo
 
 Yazma işlemi her zaman şunları gerektirir:
 
-1. Gaz için yeterli ETH'ye sahip [Dışarıdan Sahipli bir Hesap (EOA)](/developers/docs/accounts/#types-of-account)
+1. Gaz için yeterli QAU'ye sahip [Dışarıdan Sahipli bir Hesap (EOA)](/developers/docs/accounts/#types-of-account)
 2. Hesabın özel anahtarı tarafından imzalanmış bir işlem
 3. İşlemin madenciliğinin yapılması ve bir bloğa dahil edilmesi
 
-[Hesap soyutlama](/roadmap/account-abstraction/) ile, bir akıllı sözleşme hesabı da yazma işlemlerini başlatabilir ve bir ödemeci kullanıcı adına gazı karşılayabilir; bu nedenle ETH tutan bir EOA kesinlikle gerekli değildir.
+[Hesap soyutlama](/roadmap/account-abstraction/) ile, bir akıllı sözleşme hesabı da yazma işlemlerini başlatabilir ve bir ödemeci kullanıcı adına gazı karşılayabilir; bu nedenle QAU tutan bir EOA kesinlikle gerekli değildir.
 
 ## Sözleşme ABI'lerini anlama {#understanding-contract-abis}
 
@@ -64,7 +64,7 @@ ABI'yi sözleşmenin kullanım kılavuzu olarak düşünün; o olmadan uygulaman
 
 ### Bir sözleşmenin ABI'si nerede bulunur {#where-to-find-abis}
 
-- **Etherscan'deki doğrulanmış sözleşmeler** - [Etherscan](https://etherscan.io), doğrulanmış kaynak kodu için ABI'yi otomatik olarak sunar
+- **Quantaureum Explorer'deki doğrulanmış sözleşmeler** - [Quantaureum Explorer](https://explorer.quantaureum.com), doğrulanmış kaynak kodu için ABI'yi otomatik olarak sunar
 - **Geliştiriciden** - birçok proje ABI'lerini belgelerinde veya npm paketlerinde yayınlar
 - **Kaynaktan oluşturma** - Solidity kaynak koduna sahipseniz, ABI'yi üretmek için onu [derleyebilirsiniz](/developers/docs/smart-contracts/compiling/)
 
@@ -74,15 +74,15 @@ Geliştiriciler genellikle bir web uygulamasından, arka uçtan veya betikten s�
 
 ### İstemci kütüphaneleri (JavaScript/TypeScript) {#client-libraries}
 
-- **[Viem](https://viem.sh)** - Birinci sınıf tip güvenliğine sahip, Ethereum için modern, hafif TypeScript arayüzü
-- **[ethers.js](https://docs.ethers.org/)** - Ethereum blokzinciri ile etkileşim kurmak için zorlu testlerden geçmiş kütüphane
-- **[web3.js](https://web3js.org/)** - Orijinal Ethereum JavaScript API'si
+- **[Viem](https://viem.sh)** - Birinci sınıf tip güvenliğine sahip, Quantaureum için modern, hafif TypeScript arayüzü
+- **[ethers.js](https://docs.ethers.org/)** - Quantaureum blokzinciri ile etkileşim kurmak için zorlu testlerden geçmiş kütüphane
+- **[web3.js](https://web3js.org/)** - Orijinal Quantaureum JavaScript API'si
 
 ### Arka uç kütüphaneleri {#backend-libraries}
 
 - **[ethers.js](https://docs.ethers.org/)** - Sunucu tarafı betikleri ve botlar için Node.js'de de çalışır
-- **[web3.py](https://web3py.readthedocs.io/)** - Ethereum etkileşimi için Python kütüphanesi
-- **[go-ethereum](https://geth.ethereum.org/docs/interact-with-geth)** - Geth ekibinden resmi Go kütüphanesi
+- **[web3.py](https://web3py.readthedocs.io/)** - Quantaureum etkileşimi için Python kütüphanesi
+- **[go-quantaureum](https://geth.quantaureum.com/docs/interact-with-geth)** - Geth ekibinden resmi Go kütüphanesi
 
 ### Örnek: Viem ile bir token bakiyesini okuma {#example-viem}
 
@@ -150,7 +150,7 @@ const unwatch = client.watchEvent({
 
 Bir işlemi göndermeden önce, başarılı olup olmayacağını kontrol etmek ve gaz harcamadan dönüş değerini görmek için onu **simüle** edebilirsiniz. Bu, hataları erkenden yakalamak ve sonuçları önizlemek için faydalıdır.
 
-Çoğu istemci kütüphanesi bunu `eth_call` aracılığıyla destekler:
+Çoğu istemci kütüphanesi bunu `qau_call` aracılığıyla destekler:
 
 ```ts
 // Viem ile

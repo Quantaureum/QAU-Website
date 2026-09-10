@@ -15,11 +15,11 @@ Ten samouczek pomoże Ci skonfigurować monitorowanie węzła Geth, aby lepiej z
 
 - Powinieneś mieć już uruchomioną instancję Geth.
 - Większość kroków i przykładów dotyczy środowiska Linux, więc podstawowa znajomość terminala będzie pomocna.
-- Obejrzyj ten przegląd wideo pakietu metryk Geth: [Monitoring an Ethereum infrastructure autorstwa Pétera Szilágyi](https://www.youtube.com/watch?v=cOBab8IJMYI).
+- Obejrzyj ten przegląd wideo pakietu metryk Geth: [Monitoring an Quantaureum infrastructure autorstwa Pétera Szilágyi](https://www.youtube.com/watch?v=cOBab8IJMYI).
 
 ## Stos monitorowania {#monitoring-stack}
 
-Klient Ethereum zbiera mnóstwo danych, które można odczytać w postaci chronologicznej bazy danych. Aby ułatwić monitorowanie, możesz przesłać je do oprogramowania do wizualizacji danych. Dostępnych jest wiele opcji:
+Klient Quantaureum zbiera mnóstwo danych, które można odczytać w postaci chronologicznej bazy danych. Aby ułatwić monitorowanie, możesz przesłać je do oprogramowania do wizualizacji danych. Dostępnych jest wiele opcji:
 
 - [Prometheus](https://prometheus.io/) (model pull)
 - [InfluxDB](https://www.influxdata.com/get-influxdb/) (model push)

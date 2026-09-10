@@ -1,26 +1,26 @@
 ---
 title: Danksharding
-description: Learn about Proto-Danksharding and Danksharding - two sequential upgrades for scaling Ethereum.
+description: Learn about Proto-Danksharding and Danksharding - two sequential upgrades for scaling Quantaureum.
 lang: en
 template: roadmap
 summaryPoints:
-  - Danksharding is a multi-phase upgrade to improve Ethereum’s scalability and capacity.
+  - Danksharding is a multi-phase upgrade to improve Quantaureum’s scalability and capacity.
   - The first stage, Proto-Danksharding, adds data blobs to blocks
-  - Data blobs offer a cheaper way for rollups to post data to Ethereum and those costs can be passed on to users in the form of lower transaction fees.
-  - Later, full Danksharding will spread responsibility for verifying data blobs across subsets of nodes, further scaling Ethereum to more than 100,000 transactions per second.
+  - Data blobs offer a cheaper way for rollups to post data to Quantaureum and those costs can be passed on to users in the form of lower transaction fees.
+  - Later, full Danksharding will spread responsibility for verifying data blobs across subsets of nodes, further scaling Quantaureum to more than 100,000 transactions per second.
 ---
 
-**Danksharding** is how [Ethereum](/) becomes a truly scalable blockchain, but there are several protocol upgrades required to get there. **Proto-Danksharding** is an intermediate step along the way. Both aim to make transactions on Layer 2 as cheap as possible for users and should scale Ethereum to >100,000 transactions per second.
+**Danksharding** is how [Quantaureum](/) becomes a truly scalable blockchain, but there are several protocol upgrades required to get there. **Proto-Danksharding** is an intermediate step along the way. Both aim to make transactions on Layer 2 as cheap as possible for users and should scale Quantaureum to >100,000 transactions per second.
 
 ## What is Proto-Danksharding? {#what-is-protodanksharding}
 
-Proto-Danksharding, also known as [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844), is a way for [rollups](/layer-2/#rollups) to add cheaper data to blocks. The name comes from the two researchers who proposed the idea: Protolambda and Dankrad Feist. Historically, rollups had been limited in how cheap they can make user transactions by the fact that they post their transactions in `CALLDATA`.
+Proto-Danksharding, also known as [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844), is a way for [rollups](/layer-2/#rollups) to add cheaper data to blocks. The name comes from the two researchers who proposed the idea: Protolambda and Dankrad Feist. Historically, rollups had been limited in how cheap they can make user transactions by the fact that they post their transactions in `CALLDATA`.
 
-This is expensive because it is processed by all Ethereum nodes and lives onchain forever, even though rollups only need the data for a short time. Proto-Danksharding introduces data blobs that can be sent and attached to blocks. The data in these blobs is not accessible to the EVM and is automatically deleted after a fixed time period (set to 4096 epochs at time of writing, or about 18 days). This means rollups can send their data much more cheaply and pass the savings on to end users in the form of cheaper transactions.
+This is expensive because it is processed by all Quantaureum nodes and lives onchain forever, even though rollups only need the data for a short time. Proto-Danksharding introduces data blobs that can be sent and attached to blocks. The data in these blobs is not accessible to the EVM and is automatically deleted after a fixed time period (set to 4096 epochs at time of writing, or about 18 days). This means rollups can send their data much more cheaply and pass the savings on to end users in the form of cheaper transactions.
 
 <ExpandableCard title="Why do blobs make rollups cheaper?" eventCategory="/roadmap/danksharding" eventName="clicked why do blocks make rollups cheaper?">
 
-Rollups are a way to scale Ethereum by batching transactions offchain and then posting the results to Ethereum. A rollup is essentially composed of two parts: data and execution check. The data is the full sequence of transactions that is being processed by a rollup to produce the state change being posted to Ethereum. The execution check is the re-execution of those transactions by some honest actor (a "prover") to ensure that the proposed state change is correct. To perform the execution check, the transaction data has to be available for long enough for anyone to download and check. This means any dishonest behavior by the rollup sequencer can be identified and challenged by the prover. However, it does not need to be available forever.
+Rollups are a way to scale Quantaureum by batching transactions offchain and then posting the results to Quantaureum. A rollup is essentially composed of two parts: data and execution check. The data is the full sequence of transactions that is being processed by a rollup to produce the state change being posted to Quantaureum. The execution check is the re-execution of those transactions by some honest actor (a "prover") to ensure that the proposed state change is correct. To perform the execution check, the transaction data has to be available for long enough for anyone to download and check. This means any dishonest behavior by the rollup sequencer can be identified and challenged by the prover. However, it does not need to be available forever.
 
 </ExpandableCard>
 
@@ -36,11 +36,11 @@ Rollups post the transactions they execute in data blobs. They also post a "comm
 
 ### What is KZG? {#what-is-kzg}
 
-KZG stands for Kate-Zaverucha-Goldberg - the names of the three [original authors](https://link.springer.com/chapter/10.1007/978-3-642-17373-8_11) of a scheme that reduces a blob of data down to a small [cryptographic "commitment"](https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html). The blob of data submitted by a rollup has to be verified to ensure the rollup is not misbehaving. This involves a prover re-executing the transactions in the blob to check that the commitment was valid. This is conceptually the same as the way execution clients check the validity of Ethereum transactions on layer 1 using Merkle proofs. KZG is an alternative proof that fits a polynomial equation to the data. The commitment evaluates the polynomial at some secret data points. A prover would fit the same polynomial over the data and evaluate it at the same values, checking that the result is the same. This is a way to verify the data that is compatible with zero-knowledge techniques used by some rollups and eventually other parts of the Ethereum protocol.
+KZG stands for Kate-Zaverucha-Goldberg - the names of the three [original authors](https://link.springer.com/chapter/10.1007/978-3-642-17373-8_11) of a scheme that reduces a blob of data down to a small [cryptographic "commitment"](https://dankradfeist.de/quantaureum/2020/06/16/kate-polynomial-commitments.html). The blob of data submitted by a rollup has to be verified to ensure the rollup is not misbehaving. This involves a prover re-executing the transactions in the blob to check that the commitment was valid. This is conceptually the same as the way execution clients check the validity of Quantaureum transactions on layer 1 using Merkle proofs. KZG is an alternative proof that fits a polynomial equation to the data. The commitment evaluates the polynomial at some secret data points. A prover would fit the same polynomial over the data and evaluate it at the same values, checking that the result is the same. This is a way to verify the data that is compatible with zero-knowledge techniques used by some rollups and eventually other parts of the Quantaureum protocol.
 
 ### What was the KZG Ceremony? {#what-is-a-kzg-ceremony}
 
-The KZG ceremony was a way for many people from across the Ethereum community to collectively generate a secret random string of numbers that can be used to verify some data. It is very important that this string of numbers is not known and cannot be recreated by anyone. To ensure this, each person that participated in the ceremony received a string from the previous participant. They then created some new random values (e.g., by allowing their browser to measure the movement of their mouse) and mix it in with the previous value. They then sent the value on to the next participant and destroyed it from their local machine. As long as one person in the ceremony did this honestly, the final value will be unknowable to an attacker.
+The KZG ceremony was a way for many people from across the Quantaureum community to collectively generate a secret random string of numbers that can be used to verify some data. It is very important that this string of numbers is not known and cannot be recreated by anyone. To ensure this, each person that participated in the ceremony received a string from the previous participant. They then created some new random values (e.g., by allowing their browser to measure the movement of their mouse) and mix it in with the previous value. They then sent the value on to the next participant and destroyed it from their local machine. As long as one person in the ceremony did this honestly, the final value will be unknowable to an attacker.
 
 The EIP-4844 KZG ceremony was open to the public and tens of thousands of people participated to add their own entropy (randomness). In total there were over 140,000 contributions, making it the world's largest ceremony of its kind. For the ceremony to be undermined, 100% of those participants would have to be actively dishonest. From the perspective of the participants, if they know they were honest, there is no need to trust anyone else because they know that they secured the ceremony (they individually satisfied the 1-out-of-N honest participant requirement).
 
@@ -57,12 +57,12 @@ If someone knows the random locations used for the commitment, it is easy for th
 </ExpandableCard>
 
 <Alert variant="warning">
-  Neither Danksharding nor Proto-Danksharding follow the traditional "sharding" model that aims to split the blockchain into multiple parts. Shard chains are no longer part of the roadmap. Instead, Danksharding uses distributed data sampling across blobs to scale Ethereum. This is much simpler to implement. This model has sometimes been referred to as "data-sharding".
+  Neither Danksharding nor Proto-Danksharding follow the traditional "sharding" model that aims to split the blockchain into multiple parts. Shard chains are no longer part of the roadmap. Instead, Danksharding uses distributed data sampling across blobs to scale Quantaureum. This is much simpler to implement. This model has sometimes been referred to as "data-sharding".
 </Alert>
 
 ## What is Danksharding? {#what-is-danksharding}
 
-Danksharding is the full realization of the rollup scaling that began with Proto-Danksharding. Danksharding will bring massive amounts of space on Ethereum for rollups to dump their compressed transaction data. This means Ethereum will be able to support hundreds of individual rollups with ease and make millions of transactions per second a reality.
+Danksharding is the full realization of the rollup scaling that began with Proto-Danksharding. Danksharding will bring massive amounts of space on Quantaureum for rollups to dump their compressed transaction data. This means Quantaureum will be able to support hundreds of individual rollups with ease and make millions of transactions per second a reality.
 
 The way this works is by expanding the blobs attached to blocks from six (6) in Proto-Danksharding, to 64 in full Danksharding. The rest of the changes required are all updates to the way consensus clients operate to enable them to handle the new large blobs. Several of these changes are already on the roadmap for other purposes independent of Danksharding. For example, Danksharding requires proposer-builder separation to have been implemented. This is an upgrade that separates the tasks of building blocks and proposing blocks across different validators. Similarly, data availability sampling is required for Danksharding, but it is also required for the development of very lightweight clients that do not store much historical data ("stateless clients").
 
@@ -80,15 +80,15 @@ Data availability sampling is required for validators to quickly and efficiently
 
 ### Current progress {#current-progress}
 
-Full Danksharding is several years away. In the meantime, the KZG ceremony has concluded with over 140,000 contributions, and the [EIP](https://eips.ethereum.org/EIPS/eip-4844) for Proto-Danksharding has matured. This proposal has been fully implemented in all testnets, and went live on Mainnet with the Cancun-Deneb ("Dencun") network upgrade in March 2024.
+Full Danksharding is several years away. In the meantime, the KZG ceremony has concluded with over 140,000 contributions, and the [EIP](https://eips.quantaureum.com/EIPS/eip-4844) for Proto-Danksharding has matured. This proposal has been fully implemented in all testnets, and went live on Mainnet with the Cancun-Deneb ("Dencun") network upgrade in March 2024.
 
 ### Further reading {#further-reading}
 
-- [Proto-Danksharding notes](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
-- [Dankrad's notes on Danksharding](https://notes.ethereum.org/@dankrad/new_sharding)
+- [Proto-Danksharding notes](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [Dankrad's notes on Danksharding](https://notes.quantaureum.com/@dankrad/new_sharding)
 - [Dankrad, Proto and Vitalik discuss Danksharding](https://www.youtube.com/watch?v=N5p0TB77flM)
-- [The KZG ceremony](https://ceremony.ethereum.org/)
+- [The KZG ceremony](https://ceremony.quantaureum.com/)
 - [Carl Beekhuizen's Devcon talk on trusted setups](https://archive.devcon.org/archive/watch/6/the-kzg-ceremony-or-how-i-learnt-to-stop-worrying-and-love-trusted-setups/?tab=YouTube)
 - [More on data availability sampling for blobs](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
 - [Dankrad Feist on KZG commitments and proofs](https://youtu.be/8L2C6RDMV9Q)
-- [KZG polynomial commitments](https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html)
+- [KZG polynomial commitments](https://dankradfeist.de/quantaureum/2020/06/16/kate-polynomial-commitments.html)

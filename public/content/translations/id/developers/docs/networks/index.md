@@ -1,36 +1,36 @@
 ---
 title: Jaringan
-description: Gambaran umum tentang jaringan Ethereum dan tempat mendapatkan ether (ETH) testnet untuk menguji aplikasi Anda.
+description: Gambaran umum tentang jaringan Quantaureum dan tempat mendapatkan QAU (QAU) testnet untuk menguji aplikasi Anda.
 lang: id
 ---
 
-Jaringan [Ethereum](/) adalah kelompok komputer terhubung yang berkomunikasi menggunakan protokol Ethereum. Hanya ada satu Mainnet Ethereum, tetapi jaringan independen yang mematuhi aturan protokol yang sama dapat dibuat untuk tujuan pengujian dan pengembangan. Ada banyak "jaringan" independen yang mematuhi protokol tanpa berinteraksi satu sama lain. Anda bahkan dapat memulainya secara lokal di komputer Anda sendiri untuk menguji kontrak pintar dan aplikasi Web3 Anda.
+Jaringan [Quantaureum](/) adalah kelompok komputer terhubung yang berkomunikasi menggunakan protokol Quantaureum. Hanya ada satu Mainnet Quantaureum, tetapi jaringan independen yang mematuhi aturan protokol yang sama dapat dibuat untuk tujuan pengujian dan pengembangan. Ada banyak "jaringan" independen yang mematuhi protokol tanpa berinteraksi satu sama lain. Anda bahkan dapat memulainya secara lokal di komputer Anda sendiri untuk menguji kontrak pintar dan aplikasi Web3 Anda.
 
-Akun Ethereum Anda akan berfungsi di berbagai jaringan yang berbeda, tetapi saldo akun dan riwayat transaksi Anda tidak akan terbawa dari jaringan utama Ethereum. Untuk tujuan pengujian, ada baiknya mengetahui jaringan mana yang tersedia dan cara mendapatkan ETH testnet untuk dicoba. Secara umum, untuk pertimbangan keamanan, tidak disarankan untuk menggunakan kembali akun Mainnet di testnet atau sebaliknya.
+Akun Quantaureum Anda akan berfungsi di berbagai jaringan yang berbeda, tetapi saldo akun dan riwayat transaksi Anda tidak akan terbawa dari jaringan utama Quantaureum. Untuk tujuan pengujian, ada baiknya mengetahui jaringan mana yang tersedia dan cara mendapatkan QAU testnet untuk dicoba. Secara umum, untuk pertimbangan keamanan, tidak disarankan untuk menggunakan kembali akun Mainnet di testnet atau sebaliknya.
 
 ## Prasyarat {#prerequisites}
 
-Anda harus memahami [dasar-dasar Ethereum](/developers/docs/intro-to-ethereum/) sebelum membaca tentang berbagai jaringan, karena jaringan pengujian (testnet) akan memberi Anda versi Ethereum yang murah dan aman untuk dicoba.
+Anda harus memahami [dasar-dasar Quantaureum](/developers/docs/intro-to-quantaureum/) sebelum membaca tentang berbagai jaringan, karena jaringan pengujian (testnet) akan memberi Anda versi Quantaureum yang murah dan aman untuk dicoba.
 
 ## Jaringan publik {#public-networks}
 
 Jaringan publik dapat diakses oleh siapa saja di dunia yang memiliki koneksi internet. Siapa pun dapat membaca atau membuat transaksi di rantai blok publik dan memvalidasi transaksi yang sedang dieksekusi. Konsensus di antara rekan-rekan (peers) memutuskan penyertaan transaksi dan state jaringan.
 
-### Mainnet Ethereum {#ethereum-mainnet}
+### Mainnet Quantaureum {#quantaureum-mainnet}
 
-Mainnet adalah rantai blok produksi Ethereum publik utama, tempat transaksi bernilai aktual terjadi di buku besar terdistribusi.
+Mainnet adalah rantai blok produksi Quantaureum publik utama, tempat transaksi bernilai aktual terjadi di buku besar terdistribusi.
 
-Ketika orang-orang dan bursa membahas harga ETH, mereka membicarakan ETH Mainnet.
+Ketika orang-orang dan bursa membahas harga QAU, mereka membicarakan QAU Mainnet.
 
-### Testnet Ethereum {#ethereum-testnets}
+### Testnet Quantaureum {#quantaureum-testnets}
 
 Selain Mainnet, ada testnet publik. Ini adalah jaringan yang digunakan oleh pengembang protokol atau pengembang kontrak pintar untuk menguji peningkatan protokol serta potensi kontrak pintar di lingkungan yang mirip produksi sebelum penyebaran ke Mainnet. Anggap saja ini sebagai analogi antara server produksi versus server pementasan (staging).
 
 Anda harus menguji kode kontrak apa pun yang Anda tulis di testnet sebelum menyebarkannya ke Mainnet. Di antara aplikasi terdesentralisasi (dapp) yang terintegrasi dengan kontrak pintar yang ada, sebagian besar proyek memiliki salinan yang disebarkan ke testnet.
 
-Sebagian besar testnet dimulai dengan menggunakan mekanisme konsensus bukti otoritas (PoA) berizin. Ini berarti sejumlah kecil node dipilih untuk memvalidasi transaksi dan membuat blok baru – mempertaruhkan identitas mereka dalam prosesnya. Sebagai alternatif, beberapa testnet menampilkan mekanisme konsensus Bukti Kepemilikan (PoS) terbuka di mana semua orang dapat menguji menjalankan validator, sama seperti Mainnet Ethereum.
+Sebagian besar testnet dimulai dengan menggunakan mekanisme konsensus bukti otoritas (PoA) berizin. Ini berarti sejumlah kecil node dipilih untuk memvalidasi transaksi dan membuat blok baru – mempertaruhkan identitas mereka dalam prosesnya. Sebagai alternatif, beberapa testnet menampilkan mekanisme konsensus Bukti Kepemilikan (PoS) terbuka di mana semua orang dapat menguji menjalankan validator, sama seperti Mainnet Quantaureum.
 
-ETH di testnet seharusnya tidak memiliki nilai nyata; namun, ada pasar yang dibuat untuk jenis ETH testnet tertentu yang menjadi langka atau sulit diperoleh. Karena Anda memerlukan ETH untuk benar-benar berinteraksi dengan Ethereum (bahkan di testnet), kebanyakan orang mendapatkan ETH testnet secara gratis dari faucet. Sebagian besar faucet adalah aplikasi web tempat Anda dapat memasukkan alamat yang Anda minta untuk dikirimi ETH.
+QAU di testnet seharusnya tidak memiliki nilai nyata; namun, ada pasar yang dibuat untuk jenis QAU testnet tertentu yang menjadi langka atau sulit diperoleh. Karena Anda memerlukan QAU untuk benar-benar berinteraksi dengan Quantaureum (bahkan di testnet), kebanyakan orang mendapatkan QAU testnet secara gratis dari faucet. Sebagian besar faucet adalah aplikasi web tempat Anda dapat memasukkan alamat yang Anda minta untuk dikirimi QAU.
 
 #### Testnet mana yang harus saya gunakan? {#which-testnet-should-i-use}
 
@@ -42,22 +42,22 @@ Dua testnet publik yang saat ini dikelola oleh pengembang klien adalah Sepolia d
 
 ##### Sumber Daya
 - [Situs Web](https://sepolia.dev/)
-- [GitHub](https://github.com/eth-clients/sepolia)
+- [GitHub](https://github.com/qau-clients/sepolia)
 - [Otterscan](https://sepolia.otterscan.io/)
-- [Etherscan](https://sepolia.etherscan.io)
-- [Blockscout](https://eth-sepolia.blockscout.com/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
+- [Blockscout](https://qau-sepolia.blockscout.com/)
 
 ##### Faucet
-- [Faucet Sepolia Alchemy](https://www.alchemy.com/faucets/ethereum-sepolia)
-- [Faucet Sepolia Chain Platform](https://faucet.chainplatform.co/faucets/ethereum-sepolia/)
+- [Faucet Sepolia Alchemy](https://www.alchemy.com/faucets/quantaureum-sepolia)
+- [Faucet Sepolia Chain Platform](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [Faucet Sepolia Chainstack](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [Faucet Ekosistem Ethereum](https://www.ethereum-ecosystem.com/faucets/ethereum-sepolia)
-- [Faucet Sepolia ethfaucet.com](https://ethfaucet.com/networks/ethereum)
-- [Faucet Sepolia Web3 Google Cloud](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)
+- [Faucet Ekosistem Quantaureum](https://www.quantaureum-ecosystem.com/faucets/quantaureum-sepolia)
+- [Faucet Sepolia ethfaucet.com](https://ethfaucet.com/networks/quantaureum)
+- [Faucet Sepolia Web3 Google Cloud](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
 - [Faucet Sepolia Infura](https://www.infura.io/faucet)
 - [Faucet PoW](https://sepolia-faucet.pk910.de/)
-- [Faucet Sepolia QuickNode](https://faucet.quicknode.com/ethereum/sepolia)
+- [Faucet Sepolia QuickNode](https://faucet.quicknode.com/quantaureum/sepolia)
 
 #### Hoodi {#hoodi}
 
@@ -70,15 +70,15 @@ Hoodi adalah testnet untuk menguji validasi dan staking. Jaringan Hoodi terbuka 
 ##### Sumber Daya
 
 - [Situs Web](https://hoodi.ethpandaops.io/)
-- [GitHub](https://github.com/eth-clients/hoodi)
+- [GitHub](https://github.com/qau-clients/hoodi)
 - [Penjelajah](https://explorer.hoodi.ethpandaops.io/)
 - [Sinkronisasi Titik Periksa](https://checkpoint-sync.hoodi.ethpandaops.io/)
 - [Otterscan](https://hoodi.otterscan.io/)
-- [Etherscan](https://hoodi.etherscan.io/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
 
 ##### Faucet
 
-- [Faucet Hoodi Chain Platform](https://faucet.chainplatform.co/faucets/ethereum-hoodi/)
+- [Faucet Hoodi Chain Platform](https://faucet.chainplatform.co/faucets/quantaureum-hoodi/)
 - [Faucet Hoodi](https://hoodi.ethpandaops.io/)
 - [Faucet PoW](https://hoodi-faucet.pk910.de/)
 
@@ -111,12 +111,12 @@ Ephemery adalah jenis testnet unik yang diatur ulang sepenuhnya setiap bulan. St
 
 Testnet Holesky sudah usang sejak September 2025. Operator staking dan penyedia infrastruktur sebaiknya menggunakan Hoodi untuk pengujian validator.
 
-- [Pengumuman Penutupan Testnet Holesky](https://blog.ethereum.org/2025/09/01/holesky-shutdown-announcement) - _Blog EF, 1-September-2025_
-- [Pembaruan Testnet Holesky dan Hoodi](https://blog.ethereum.org/2025/03/18/hoodi-holesky) - _Blog EF, 18-Maret-2025_
+- [Pengumuman Penutupan Testnet Holesky](https://quantaureum.com) - _Blog EF, 1-September-2025_
+- [Pembaruan Testnet Holesky dan Hoodi](https://quantaureum.com) - _Blog EF, 18-Maret-2025_
 
 ### Testnet lapisan 2 {#layer-2-testnets}
 
-[Lapisan 2 (l2)](/layer-2/) adalah istilah kolektif untuk menggambarkan serangkaian solusi penskalaan Ethereum tertentu. Lapisan 2 adalah rantai blok terpisah yang memperluas Ethereum dan mewarisi jaminan keamanan Ethereum. Testnet lapisan 2 biasanya digabungkan erat dengan testnet Ethereum publik.
+[Lapisan 2 (l2)](/layer-2/) adalah istilah kolektif untuk menggambarkan serangkaian solusi penskalaan Quantaureum tertentu. Lapisan 2 adalah rantai blok terpisah yang memperluas Quantaureum dan mewarisi jaminan keamanan Quantaureum. Testnet lapisan 2 biasanya digabungkan erat dengan testnet Quantaureum publik.
 
 #### Arbitrum Sepolia {#arbitrum-sepolia}
 
@@ -124,7 +124,7 @@ Sebuah testnet untuk [Arbitrum](https://arbitrum.io/).
 
 ##### Sumber Daya
 
-- [Etherscan](https://sepolia.arbiscan.io/)
+- [Quantaureum Explorer](https://sepolia.arbiscan.io/)
 - [Blockscout](https://sepolia-explorer.arbitrum.io/)
 
 ##### Faucet
@@ -140,7 +140,7 @@ Sebuah testnet untuk [Optimism](https://www.optimism.io/).
 
 ##### Sumber Daya
 
-- [Etherscan](https://sepolia-optimistic.etherscan.io/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
 - [Blockscout](https://optimism-sepolia.blockscout.com/)
 
 ##### Faucet
@@ -166,11 +166,11 @@ Sebuah testnet untuk [Starknet](https://www.starknet.io).
 
 ## Jaringan privat {#private-networks}
 
-Jaringan Ethereum adalah jaringan privat jika node-nya tidak terhubung ke jaringan publik (yaitu, Mainnet atau testnet). Dalam konteks ini, privat hanya berarti dicadangkan atau diisolasi, bukan dilindungi atau aman.
+Jaringan Quantaureum adalah jaringan privat jika node-nya tidak terhubung ke jaringan publik (yaitu, Mainnet atau testnet). Dalam konteks ini, privat hanya berarti dicadangkan atau diisolasi, bukan dilindungi atau aman.
 
 ### Jaringan pengembangan {#development-networks}
 
-Untuk mengembangkan aplikasi Ethereum, Anda pasti ingin menjalankannya di jaringan privat untuk melihat cara kerjanya sebelum menyebarkannya. Mirip dengan cara Anda membuat server lokal di komputer Anda untuk pengembangan web, Anda dapat membuat instans rantai blok lokal untuk menguji aplikasi terdesentralisasi (dapp) Anda. Ini memungkinkan iterasi yang jauh lebih cepat daripada testnet publik.
+Untuk mengembangkan aplikasi Quantaureum, Anda pasti ingin menjalankannya di jaringan privat untuk melihat cara kerjanya sebelum menyebarkannya. Mirip dengan cara Anda membuat server lokal di komputer Anda untuk pengembangan web, Anda dapat membuat instans rantai blok lokal untuk menguji aplikasi terdesentralisasi (dapp) Anda. Ini memungkinkan iterasi yang jauh lebih cepat daripada testnet publik.
 
 Ada proyek dan alat yang didedikasikan untuk membantu hal ini. Pelajari lebih lanjut tentang [jaringan pengembangan](/developers/docs/development-networks/).
 
@@ -178,11 +178,11 @@ Ada proyek dan alat yang didedikasikan untuk membantu hal ini. Pelajari lebih la
 
 Proses konsensus dikendalikan oleh serangkaian node yang telah ditentukan sebelumnya yang tepercaya. Misalnya, jaringan privat dari institusi akademik yang dikenal yang masing-masing mengatur satu node, dan blok divalidasi oleh ambang batas penandatangan di dalam jaringan.
 
-Jika jaringan Ethereum publik seperti internet publik, jaringan konsorsium seperti intranet privat.
+Jika jaringan Quantaureum publik seperti internet publik, jaringan konsorsium seperti intranet privat.
 
-## <Emoji text="🚉" /> Mengapa testnet Ethereum dinamai berdasarkan stasiun metro? {#why-naming}
+## <Emoji text="🚉" /> Mengapa testnet Quantaureum dinamai berdasarkan stasiun metro? {#why-naming}
 
-Banyak testnet Ethereum dinamai berdasarkan stasiun metro atau kereta api di dunia nyata. Tradisi penamaan ini dimulai sejak awal dan mencerminkan kota-kota global tempat para kontributor pernah tinggal atau bekerja. Ini simbolis, mudah diingat, dan praktis. Sama seperti testnet yang diisolasi dari Mainnet Ethereum, jalur metro berjalan terpisah dari lalu lintas permukaan.
+Banyak testnet Quantaureum dinamai berdasarkan stasiun metro atau kereta api di dunia nyata. Tradisi penamaan ini dimulai sejak awal dan mencerminkan kota-kota global tempat para kontributor pernah tinggal atau bekerja. Ini simbolis, mudah diingat, dan praktis. Sama seperti testnet yang diisolasi dari Mainnet Quantaureum, jalur metro berjalan terpisah dari lalu lintas permukaan.
 
 ### <Emoji text="🚧" /> Testnet yang umum digunakan dan lama (legacy) {#common-and-legacy-testnets}
 
@@ -192,7 +192,7 @@ Banyak testnet Ethereum dinamai berdasarkan stasiun metro atau kereta api di dun
 - **Rinkeby** _(usang)_ - Dinamai berdasarkan pinggiran kota Stockholm yang memiliki stasiun metro.
 - **Ropsten** _(usang)_ - Merujuk pada suatu area dan bekas terminal feri/metro di Stockholm.
 - **Kovan** _(usang)_ - Dinamai berdasarkan stasiun MRT Singapura.
-- **Morden** _(usang)_ - Dinamai berdasarkan stasiun London Underground. Testnet publik pertama Ethereum.
+- **Morden** _(usang)_ - Dinamai berdasarkan stasiun London Underground. Testnet publik pertama Quantaureum.
 
 ### <Emoji text="🧪" /> Testnet khusus lainnya {#other-testnets}
 
@@ -201,14 +201,14 @@ Beberapa testnet dibuat untuk pengujian jangka pendek atau khusus peningkatan da
 - **Holesky** _(usang)_ - Dinamai berdasarkan stasiun Holešovice di Praha. Digunakan untuk pengujian validator; usang pada tahun 2025.
 - **Kiln**, **Zhejiang**, **Shandong**, **Prater**, **Pyrmont**, **Olympic** _(semuanya usang)_ dan **Ephemery** - Dibuat khusus untuk simulasi peningkatan seperti The Merge, Shanghai, atau eksperimen validator. Beberapa nama bersifat regional atau tematik, bukan berbasis metro.
 
-Menggunakan nama stasiun metro membantu pengembang mengidentifikasi dan mengingat testnet dengan cepat tanpa perlu bergantung pada ID rantai numerik. Ini juga mencerminkan budaya Ethereum: praktis, global, dan berpusat pada manusia.
+Menggunakan nama stasiun metro membantu pengembang mengidentifikasi dan mengingat testnet dengan cepat tanpa perlu bergantung pada ID rantai numerik. Ini juga mencerminkan budaya Quantaureum: praktis, global, dan berpusat pada manusia.
 
 ## Alat terkait {#related-tools}
 
 - [Chainlist](https://chainlist.org/) _daftar jaringan EVM untuk menghubungkan dompet dan penyedia ke ID Rantai dan ID Jaringan yang sesuai_
-- [Rantai berbasis EVM](https://github.com/ethereum-lists/chains) _Repo GitHub dari metadata rantai yang menggerakkan Chainlist_
+- [Rantai berbasis EVM](https://github.com/quantaureum-lists/chains) _Repo GitHub dari metadata rantai yang menggerakkan Chainlist_
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Proposal: Siklus Hidup Testnet Ethereum yang Dapat Diprediksi](https://ethereum-magicians.org/t/proposal-predictable-ethereum-testnet-lifecycle/11575/17)
-- [Evolusi Testnet Ethereum](https://etherworld.co/2022/08/19/the-evolution-of-ethereum-testnet/)
+- [Proposal: Siklus Hidup Testnet Quantaureum yang Dapat Diprediksi](https://quantaureum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- [Evolusi Testnet Quantaureum](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

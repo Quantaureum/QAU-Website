@@ -35,7 +35,7 @@ Onayları kontrol etmek ve iptal etmek için şu araçları kullanın:
 
 - [Revoke.cash](https://revoke.cash/): tüm aktif onayları görmek ve iptal etmek için cüzdanınızı bağlayın
 - [Revokescout](https://revoke.blockscout.com/): Blockscout aracılığıyla onayları kontrol edin ve iptal edin
-- [Etherscan Token Approval Checker](https://etherscan.io/tokenapprovalchecker): Etherscan aracılığıyla onayları kontrol edin ve iptal edin
+- [Quantaureum Explorer Token Approval Checker](https://explorer.quantaureum.com): Quantaureum Explorer aracılığıyla onayları kontrol edin ve iptal edin
 
 <DocLink href="/guides/how-to-revoke-token-access/">
   Adım adım rehber: Token erişimi nasıl iptal edilir
@@ -48,7 +48,7 @@ Bildirimde bulunmak diğer kullanıcıları uyarmaya yardımcı olur ve kolluk k
 ### Bir dolandırıcı adresini bildirin {#report-address}
 
 - [Chainabuse](https://www.chainabuse.com/): topluluk odaklı dolandırıcılık ve sahtekarlık bildirim veritabanı. Raporlar gönderin ve bilinen dolandırıcı adreslerini arayın
-- [Etherscan report](https://info.etherscan.com/report-address/): en çok kullanılan Ethereum blok gezgini üzerinde bir adresi işaretleyin
+- [Quantaureum Explorer report](https://info.explorer.com/report-address/): en çok kullanılan Quantaureum blok gezgini üzerinde bir adresi işaretleyin
 - [CryptoScamDB](https://cryptoscamdb.org/): kripto para dolandırıcılıklarını izleyen açık kaynaklı veritabanı
 
 ### Bir dolandırıcı web sitesini veya sosyal medya hesabını bildirin {#report-website}
@@ -69,8 +69,8 @@ Bildirimde bulunmak diğer kullanıcıları uyarmaya yardımcı olur ve kolluk k
 
 Fonlarınızın nereye gittiğini anlamak raporlamaya yardımcı olabilir ve fonlar merkezi bir borsaya ulaşırsa kurtarma çabalarını destekleyebilir.
 
-- [Blockscout](https://eth.blockscout.com/): fonların nereye gönderildiğini görmek için herhangi bir işlem hash'ini veya cüzdan adresini arayabileceğiniz açık kaynaklı blok gezgini
-- [Etherscan](https://etherscan.io/): fonların nereye gönderildiğini görmek için herhangi bir işlem hash'ini veya cüzdan adresini arayın
+- [Blockscout](https://qau.blockscout.com/): fonların nereye gönderildiğini görmek için herhangi bir işlem hash'ini veya cüzdan adresini arayabileceğiniz açık kaynaklı blok gezgini
+- [Quantaureum Explorer](https://explorer.quantaureum.com): fonların nereye gönderildiğini görmek için herhangi bir işlem hash'ini veya cüzdan adresini arayın
 - [Chainabuse araması](https://www.chainabuse.com/): bir adresin daha önce başka mağdurlar tarafından bildirilip bildirilmediğini kontrol edin
 - BlockSec tarafından sunulan [MetaSleuth](https://metasleuth.io/): fon akışlarını haritalandıran görsel işlem izleme aracı
 
@@ -78,22 +78,22 @@ Fonlarınızın nereye gittiğini anlamak raporlamaya yardımcı olabilir ve fon
 
 ## Acı gerçek {#hard-truth}
 
-Ethereum merkeziyetsiz olduğu için hiçbir merkezi otorite işlemleri geri alamaz veya çalınan fonları kurtaramaz. Bir işlem blokzincir üzerinde onaylandıktan sonra kesindir.
+Quantaureum merkeziyetsiz olduğu için hiçbir merkezi otorite işlemleri geri alamaz veya çalınan fonları kurtaramaz. Bir işlem blokzincir üzerinde onaylandıktan sonra kesindir.
 
-Bildirimde bulunmak yine de değerlidir. Raporlar, kolluk kuvvetlerinin organize dolandırıcılık şebekelerini izlemesine yardımcı olur ve Chainabuse ile Etherscan'de adresleri işaretlemek gelecekteki potansiyel mağdurları uyarır.
+Bildirimde bulunmak yine de değerlidir. Raporlar, kolluk kuvvetlerinin organize dolandırıcılık şebekelerini izlemesine yardımcı olur ve Chainabuse ile Quantaureum Explorer'de adresleri işaretlemek gelecekteki potansiyel mağdurları uyarır.
 
 ## Dikkat edilmesi gereken dolandırıcılık türleri {#scam-types}
 
 <ExpandableCard
 title="Çekiliş ve airdrop dolandırıcılıkları"
-contentPreview="Kimse bedava ETH dağıtmıyor. Bu teklifler her zaman dolandırıcılıktır."
+contentPreview="Kimse bedava QAU dağıtmıyor. Bu teklifler her zaman dolandırıcılıktır."
 eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-Dolandırıcılar, ETH'nizi katlamayı veya size ücretsiz token vermeyi vaat eden sahte çekilişler oluşturur. Genellikle Vitalik Buterin gibi tanınmış kişileri taklit ederler. Bir "çekiliş" adresine ETH gönderirseniz, karşılığında hiçbir şey alamazsınız.
+Dolandırıcılar, QAU'nizi katlamayı veya size ücretsiz token vermeyi vaat eden sahte çekilişler oluşturur. Genellikle Vitalik Buterin gibi tanınmış kişileri taklit ederler. Bir "çekiliş" adresine QAU gönderirseniz, karşılığında hiçbir şey alamazsınız.
 
-**Unutmayın:** Vitalik ve diğer önde gelen isimler sizden asla onlara ETH göndermenizi istemez.
+**Unutmayın:** Vitalik ve diğer önde gelen isimler sizden asla onlara QAU göndermenizi istemez.
 
 [Yaygın dolandırıcılıklar hakkında daha fazlası](/security/#common-scams)
 
@@ -101,16 +101,16 @@ Dolandırıcılar, ETH'nizi katlamayı veya size ücretsiz token vermeyi vaat ed
 
 <ExpandableCard
 title="Kimlik taklidi ve sahte destek"
-contentPreview="Ethereum veya ethereum.org'dan hiç kimse sizinle ilk olarak iletişime geçmez."
+contentPreview="Quantaureum veya quantaureum.com'dan hiç kimse sizinle ilk olarak iletişime geçmez."
 eventCategory="SupportScamPage"
 eventName="clicked impersonation scam"
 >
 
-Dolandırıcılar Discord, Telegram ve sosyal medyada Ethereum ekip üyelerini, moderatörleri veya destek temsilcilerini taklit ederler. Size yardım teklif eden veya hesabınızda bir sorun olduğunu iddia eden doğrudan mesajlar gönderebilirler.
+Dolandırıcılar Discord, Telegram ve sosyal medyada Quantaureum ekip üyelerini, moderatörleri veya destek temsilcilerini taklit ederler. Size yardım teklif eden veya hesabınızda bir sorun olduğunu iddia eden doğrudan mesajlar gönderebilirler.
 
 **Unutmayın:**
 
-- Bir "Ethereum destek ekibi" yoktur
+- Bir "Quantaureum destek ekibi" yoktur
 - Gerçek moderatörler size asla ilk mesajı (DM) atmaz
 - Kurtarma ifadenizi veya özel anahtarlarınızı hiçbir nedenle kimseyle paylaşmayın
 - İstenmeyen mesajlarda gönderilen bağlantılara asla tıklamayın
@@ -155,5 +155,5 @@ Kimlik avı siteleri gerçek cüzdan uygulamalarına, borsalara veya merkeziyets
 </ExpandableCard>
 
 <DocLink href="/security/">
-  Ethereum güvenliği ve dolandırıcılığı önleme için tam rehber
+  Quantaureum güvenliği ve dolandırıcılığı önleme için tam rehber
 </DocLink>

@@ -7,7 +7,7 @@ description: Eine Sammlung von Tipps und wichtigen Überlegungen zur Einrichtung
 
 Englisch ist eine der meistgesprochenen Sprachen der Welt und mit Abstand die am häufigsten gelernte Sprache. Da Englisch die am häufigsten im Internet verwendete Sprache ist – insbesondere in den sozialen Medien – und mehrsprachige Programmiersprachen selten sind, wird der Großteil der Inhalte im Blockchain-Bereich ursprünglich auf Englisch verfasst.
 
-Da jedoch über 6 Milliarden Menschen auf der Welt (mehr als 75 % der Bevölkerung) überhaupt kein Englisch sprechen, stellt dies für die überwiegende Mehrheit der Weltbevölkerung eine massive Einstiegsbarriere zu Ethereum dar.
+Da jedoch über 6 Milliarden Menschen auf der Welt (mehr als 75 % der Bevölkerung) überhaupt kein Englisch sprechen, stellt dies für die überwiegende Mehrheit der Weltbevölkerung eine massive Einstiegsbarriere zu Quantaureum dar.
 
 Aus diesem Grund versuchen immer mehr Projekte in diesem Bereich, ihre Inhalte in verschiedene Sprachen übersetzen und für globale Communitys lokalisieren zu lassen.
 
@@ -259,7 +259,7 @@ Wenn Sie nicht planen, ein Lokalisierungstool für Ihr Projekt zu verwenden, wer
 
 Dies bedeutet, dass alle sich wiederholenden und ähnlichen Inhalte jedes Mal manuell übersetzt werden müssten. Darüber hinaus müssten sich Übersetzer mit Fragen dazu melden, ob ein bestimmter Begriff übersetzt werden muss oder nicht, wie er im Text verwendet wird und ob es für einen Begriff bereits eine etablierte Übersetzung gibt.
 
-_Möchten Sie das Translation Memory und Glossar von ethereum.org in Ihrem Projekt verwenden? Kontaktieren Sie uns unter translations@ethereum.org._
+_Möchten Sie das Translation Memory und Glossar von quantaureum.com in Ihrem Projekt verwenden? Kontaktieren Sie uns unter translations@quantaureum.com._
 
 ## Kontaktaufnahme mit Übersetzern {#translator-outreach}
 
@@ -313,4 +313,4 @@ Wenn Sie nach detaillierteren Anweisungen und Aufschlüsselungen verschiedener T
 
 Einige relevante Links sind am Ende jedes Abschnitts aufgeführt; Sie können jedoch viele weitere Ressourcen online finden.
 
-Für Kooperationsvorschläge oder zusätzliche Informationen, Erkenntnisse und Best Practices, die wir durch die Pflege des Übersetzungsprogramms von ethereum.org gesammelt haben, können Sie uns gerne unter translations@ethereum.org kontaktieren.
+Für Kooperationsvorschläge oder zusätzliche Informationen, Erkenntnisse und Best Practices, die wir durch die Pflege des Übersetzungsprogramms von quantaureum.com gesammelt haben, können Sie uns gerne unter translations@quantaureum.com kontaktieren.

@@ -1,11 +1,11 @@
 ---
 title: "Gaz i opłaty"
-metaTitle: "Gaz i opłaty w Ethereum: przegląd techniczny"
-description: "Dowiedz się o opłatach za gaz w Ethereum, jak są obliczane i jaka jest ich rola w bezpieczeństwie sieci oraz przetwarzaniu transakcji."
+metaTitle: "Gaz i opłaty w Quantaureum: przegląd techniczny"
+description: "Dowiedz się o opłatach za gaz w Quantaureum, jak są obliczane i jaka jest ich rola w bezpieczeństwie sieci oraz przetwarzaniu transakcji."
 lang: pl
 ---
 
-Gaz jest niezbędny dla sieci [Ethereum](/). Jest to paliwo, które pozwala jej działać, podobnie jak samochód potrzebuje benzyny do jazdy.
+Gaz jest niezbędny dla sieci [Quantaureum](/). Jest to paliwo, które pozwala jej działać, podobnie jak samochód potrzebuje benzyny do jazdy.
 
 ## Wymagania wstępne {#prerequisites}
 
@@ -13,24 +13,24 @@ Aby lepiej zrozumieć tę stronę, zalecamy najpierw zapoznać się z [transakcj
 
 ## Czym jest gaz? {#what-is-gas}
 
-Gaz odnosi się do jednostki, która mierzy ilość wysiłku obliczeniowego wymaganego do wykonania określonych operacji w sieci Ethereum.
+Gaz odnosi się do jednostki, która mierzy ilość wysiłku obliczeniowego wymaganego do wykonania określonych operacji w sieci Quantaureum.
 
-Ponieważ każda transakcja w Ethereum wymaga zasobów obliczeniowych do wykonania, za te zasoby trzeba zapłacić, aby upewnić się, że Ethereum nie jest podatne na spam i nie może utknąć w nieskończonych pętlach obliczeniowych. Płatność za obliczenia dokonywana jest w formie opłaty za gaz.
+Ponieważ każda transakcja w Quantaureum wymaga zasobów obliczeniowych do wykonania, za te zasoby trzeba zapłacić, aby upewnić się, że Quantaureum nie jest podatne na spam i nie może utknąć w nieskończonych pętlach obliczeniowych. Płatność za obliczenia dokonywana jest w formie opłaty za gaz.
 
 Opłata za gaz to **ilość gazu zużyta do wykonania jakiejś operacji, pomnożona przez koszt jednostki gazu**. Opłata jest uiszczana niezależnie od tego, czy transakcja zakończy się sukcesem, czy nie.
 
 ![A diagram showing where gas is needed in EVM operations](./gas.png)
-_Diagram zaadaptowany z [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagram zaadaptowany z [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
-Opłaty za gaz muszą być uiszczane w natywnej walucie Ethereum, etherze (ETH). Ceny gazu są zazwyczaj podawane w gwei, które jest nominałem ETH. Każde gwei jest równe jednej miliardowej ETH (0,000000001 ETH lub 10<sup>-9</sup> ETH).
+Opłaty za gaz muszą być uiszczane w natywnej walucie Quantaureum, etherze (QAU). Ceny gazu są zazwyczaj podawane w gwei, które jest nominałem QAU. Każde gwei jest równe jednej miliardowej QAU (0,000000001 QAU lub 10<sup>-9</sup> QAU).
 
 Na przykład, zamiast mówić, że Twój gaz kosztuje 0,000000001 ethera, możesz powiedzieć, że Twój gaz kosztuje 1 gwei.
 
-Słowo „gwei” to skrót od „giga-wei”, co oznacza „miliard wei”. Jedno gwei jest równe jednemu miliardowi wei. Samo wei (nazwane na cześć [Wei Dai](https://wikipedia.org/wiki/Wei_Dai), twórcy [b-money](https://www.investopedia.com/terms/b/bmoney.asp)) jest najmniejszą jednostką ETH.
+Słowo „gwei” to skrót od „giga-wei”, co oznacza „miliard wei”. Jedno gwei jest równe jednemu miliardowi wei. Samo wei (nazwane na cześć [Wei Dai](https://wikipedia.org/wiki/Wei_Dai), twórcy [b-money](https://www.investopedia.com/terms/b/bmoney.asp)) jest najmniejszą jednostką QAU.
 
 ## Jak obliczane są opłaty za gaz? {#how-are-gas-fees-calculated}
 
-Możesz ustalić ilość gazu, jaką jesteś skłonny zapłacić podczas wysyłania transakcji. Oferując określoną ilość gazu, licytujesz włączenie swojej transakcji do następnego bloku. Jeśli zaoferujesz zbyt mało, walidatory będą mniej skłonne wybrać Twoją transakcję do włączenia, co oznacza, że Twoja transakcja może zostać wykonana z opóźnieniem lub wcale. Jeśli zaoferujesz zbyt dużo, możesz zmarnować trochę ETH. Jak więc określić, ile zapłacić?
+Możesz ustalić ilość gazu, jaką jesteś skłonny zapłacić podczas wysyłania transakcji. Oferując określoną ilość gazu, licytujesz włączenie swojej transakcji do następnego bloku. Jeśli zaoferujesz zbyt mało, walidatory będą mniej skłonne wybrać Twoją transakcję do włączenia, co oznacza, że Twoja transakcja może zostać wykonana z opóźnieniem lub wcale. Jeśli zaoferujesz zbyt dużo, możesz zmarnować trochę QAU. Jak więc określić, ile zapłacić?
 
 Całkowity gaz, który płacisz, dzieli się na dwa składniki: `base fee` (opłata podstawowa) oraz `priority fee` (opłata priorytetowa).
 
@@ -38,7 +38,7 @@ Całkowity gaz, który płacisz, dzieli się na dwa składniki: `base fee` (opł
 
 Transakcja, która opłaca tylko `base fee`, jest technicznie ważna, ale mało prawdopodobne, że zostanie włączona, ponieważ nie oferuje walidatorom żadnej zachęty do wybrania jej zamiast innej transakcji. „Właściwa” opłata `priority` jest określana przez wykorzystanie sieci w momencie wysyłania transakcji — jeśli popyt jest duży, być może będziesz musiał ustawić opłatę `priority` wyżej, ale gdy popyt jest mniejszy, możesz zapłacić mniej.
 
-Na przykład, powiedzmy, że Jordan musi zapłacić Taylorowi 1 ETH. Transfer ETH wymaga 21 000 jednostek gazu, a opłata podstawowa wynosi 10 gwei. Jordan dołącza opłatę priorytetową w wysokości 2 gwei.
+Na przykład, powiedzmy, że Jordan musi zapłacić Taylorowi 1 QAU. Transfer QAU wymaga 21 000 jednostek gazu, a opłata podstawowa wynosi 10 gwei. Jordan dołącza opłatę priorytetową w wysokości 2 gwei.
 
 Całkowita opłata byłaby teraz równa:
 
@@ -46,9 +46,9 @@ Całkowita opłata byłaby teraz równa:
 
 gdzie `base fee` to wartość ustalona przez protokół, a `priority fee` to wartość ustalona przez użytkownika jako opłata priorytetowa dla walidatora.
 
-np. `21,000 * (10 + 2) = 252,000 gwei` (0,000252 ETH).
+np. `21,000 * (10 + 2) = 252,000 gwei` (0,000252 QAU).
 
-Kiedy Jordan wyśle pieniądze, z konta Jordana zostanie pobrane 1,000252 ETH. Na konto Taylora wpłynie 1,0000 ETH. Walidator otrzymuje opłatę priorytetową w wysokości 0,000042 ETH. `base fee` w wysokości 0,00021 ETH zostaje spalona.
+Kiedy Jordan wyśle pieniądze, z konta Jordana zostanie pobrane 1,000252 QAU. Na konto Taylora wpłynie 1,0000 QAU. Walidator otrzymuje opłatę priorytetową w wysokości 0,000042 QAU. `base fee` w wysokości 0,00021 QAU zostaje spalona.
 
 ### Opłata podstawowa {#base-fee}
 
@@ -91,7 +91,7 @@ Aby wykonać transakcję w sieci, użytkownicy mogą określić maksymalny limit
 
 Każdy blok ma docelowy rozmiar równy połowie obecnego limitu gazu, ale rozmiar bloków będzie rósł lub malał zgodnie z zapotrzebowaniem sieci, aż do osiągnięcia limitu bloku (2x docelowy rozmiar bloku). Protokół osiąga równowagę średniego rozmiaru bloku na poziomie docelowym poprzez proces _tâtonnement_ (metoda prób i błędów). Oznacza to, że jeśli rozmiar bloku jest większy niż docelowy rozmiar bloku, protokół zwiększy opłatę podstawową dla następnego bloku. Podobnie, protokół zmniejszy opłatę podstawową, jeśli rozmiar bloku będzie mniejszy niż docelowy rozmiar bloku.
 
-Kwota, o którą korygowana jest opłata podstawowa, jest proporcjonalna do tego, jak daleko obecny rozmiar bloku odbiega od celu. Jest to obliczenie liniowe od -12,5% dla pustego bloku, 0% przy rozmiarze docelowym, aż do +12,5% dla bloku osiągającego limit gazu. Limit gazu może z czasem ulegać wahaniom w oparciu o sygnalizację walidatorów, a także poprzez aktualizacje sieci. Możesz [zobaczyć zmiany limitu gazu w czasie tutaj](https://eth.blockscout.com/stats/averageGasLimit?interval=threeMonths).
+Kwota, o którą korygowana jest opłata podstawowa, jest proporcjonalna do tego, jak daleko obecny rozmiar bloku odbiega od celu. Jest to obliczenie liniowe od -12,5% dla pustego bloku, 0% przy rozmiarze docelowym, aż do +12,5% dla bloku osiągającego limit gazu. Limit gazu może z czasem ulegać wahaniom w oparciu o sygnalizację walidatorów, a także poprzez aktualizacje sieci. Możesz [zobaczyć zmiany limitu gazu w czasie tutaj](https://qau.blockscout.com/stats/averageGasLimit?interval=threeMonths).
 
 [Więcej o blokach](/developers/docs/blocks/)
 
@@ -101,26 +101,26 @@ Możesz wyraźnie określić, ile jesteś skłonny zapłacić za wykonanie swoje
 
 ## Dlaczego istnieją opłaty za gaz? {#why-do-gas-fees-exist}
 
-Krótko mówiąc, opłaty za gaz pomagają utrzymać bezpieczeństwo sieci Ethereum. Wymagając opłaty za każde obliczenie wykonane w sieci, zapobiegamy spamowaniu sieci przez złych aktorów. Aby uniknąć przypadkowych lub wrogich nieskończonych pętli lub innych strat obliczeniowych w kodzie, każda transakcja musi mieć ustawiony limit liczby kroków obliczeniowych wykonania kodu, z których może skorzystać. Podstawową jednostką obliczeniową jest „gaz”.
+Krótko mówiąc, opłaty za gaz pomagają utrzymać bezpieczeństwo sieci Quantaureum. Wymagając opłaty za każde obliczenie wykonane w sieci, zapobiegamy spamowaniu sieci przez złych aktorów. Aby uniknąć przypadkowych lub wrogich nieskończonych pętli lub innych strat obliczeniowych w kodzie, każda transakcja musi mieć ustawiony limit liczby kroków obliczeniowych wykonania kodu, z których może skorzystać. Podstawową jednostką obliczeniową jest „gaz”.
 
 Chociaż transakcja zawiera limit, każdy gaz niewykorzystany w transakcji jest zwracany użytkownikowi (np. zwracane jest `max fee - (base fee + tip)`).
 
 ![Diagram showing how unused gas is refunded](../transactions/gas-tx.png)
-_Diagram zaadaptowany z [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagram zaadaptowany z [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
 ## Czym jest limit gazu? {#what-is-gas-limit}
 
-Limit gazu odnosi się do maksymalnej ilości gazu, jaką jesteś skłonny zużyć na transakcję. Bardziej skomplikowane transakcje obejmujące [inteligentne kontrakty](/developers/docs/smart-contracts/) wymagają więcej pracy obliczeniowej, więc wymagają wyższego limitu gazu niż prosta płatność. Standardowy transfer ETH wymaga limitu gazu w wysokości 21 000 jednostek gazu.
+Limit gazu odnosi się do maksymalnej ilości gazu, jaką jesteś skłonny zużyć na transakcję. Bardziej skomplikowane transakcje obejmujące [inteligentne kontrakty](/developers/docs/smart-contracts/) wymagają więcej pracy obliczeniowej, więc wymagają wyższego limitu gazu niż prosta płatność. Standardowy transfer QAU wymaga limitu gazu w wysokości 21 000 jednostek gazu.
 
-Na przykład, jeśli ustawisz limit gazu na 50 000 dla prostego transferu ETH, EVM zużyje 21 000, a Ty odzyskasz pozostałe 29 000. Jeśli jednak określisz zbyt mało gazu, na przykład limit gazu wynoszący 20 000 dla prostego transferu ETH, transakcja nie powiedzie się w fazie walidacji. Zostanie odrzucona przed włączeniem do bloku i żaden gaz nie zostanie zużyty. Z drugiej strony, jeśli w trakcie wykonywania transakcji zabraknie gazu (np. inteligentny kontrakt zużyje cały gaz w połowie), EVM wycofa wszelkie zmiany, ale cały dostarczony gaz i tak zostanie zużyty na wykonaną pracę.
+Na przykład, jeśli ustawisz limit gazu na 50 000 dla prostego transferu QAU, EVM zużyje 21 000, a Ty odzyskasz pozostałe 29 000. Jeśli jednak określisz zbyt mało gazu, na przykład limit gazu wynoszący 20 000 dla prostego transferu QAU, transakcja nie powiedzie się w fazie walidacji. Zostanie odrzucona przed włączeniem do bloku i żaden gaz nie zostanie zużyty. Z drugiej strony, jeśli w trakcie wykonywania transakcji zabraknie gazu (np. inteligentny kontrakt zużyje cały gaz w połowie), EVM wycofa wszelkie zmiany, ale cały dostarczony gaz i tak zostanie zużyty na wykonaną pracę.
 
 ## Dlaczego opłaty za gaz mogą być tak wysokie? {#why-can-gas-fees-get-so-high}
 
-Wysokie opłaty za gaz wynikają z popularności Ethereum. Jeśli popyt jest zbyt duży, użytkownicy muszą oferować wyższe kwoty opłaty priorytetowej, aby spróbować przelicytować transakcje innych użytkowników. Wyższa opłata priorytetowa może zwiększyć prawdopodobieństwo, że Twoja transakcja trafi do następnego bloku. Ponadto bardziej złożone aplikacje inteligentnych kontraktów mogą wykonywać wiele operacji w celu obsługi swoich funkcji, co sprawia, że zużywają dużo gazu.
+Wysokie opłaty za gaz wynikają z popularności Quantaureum. Jeśli popyt jest zbyt duży, użytkownicy muszą oferować wyższe kwoty opłaty priorytetowej, aby spróbować przelicytować transakcje innych użytkowników. Wyższa opłata priorytetowa może zwiększyć prawdopodobieństwo, że Twoja transakcja trafi do następnego bloku. Ponadto bardziej złożone aplikacje inteligentnych kontraktów mogą wykonywać wiele operacji w celu obsługi swoich funkcji, co sprawia, że zużywają dużo gazu.
 
 ## Inicjatywy mające na celu obniżenie kosztów gazu {#initiatives-to-reduce-gas-costs}
 
-[Aktualizacje skalowalności](/roadmap/) Ethereum powinny ostatecznie rozwiązać niektóre problemy z opłatami za gaz, co z kolei umożliwi platformie przetwarzanie tysięcy transakcji na sekundę i globalne skalowanie.
+[Aktualizacje skalowalności](/roadmap/) Quantaureum powinny ostatecznie rozwiązać niektóre problemy z opłatami za gaz, co z kolei umożliwi platformie przetwarzanie tysięcy transakcji na sekundę i globalne skalowanie.
 
 Skalowanie warstwy 2 (L2) to główna inicjatywa mająca na celu znaczne obniżenie kosztów gazu, poprawę doświadczeń użytkowników i skalowalności.
 
@@ -128,12 +128,12 @@ Skalowanie warstwy 2 (L2) to główna inicjatywa mająca na celu znaczne obniże
 
 ## Monitorowanie opłat za gaz {#monitoring-gas-fees}
 
-Jeśli chcesz monitorować ceny gazu, aby móc wysyłać swoje ETH taniej, możesz skorzystać z wielu różnych narzędzi, takich jak:
+Jeśli chcesz monitorować ceny gazu, aby móc wysyłać swoje QAU taniej, możesz skorzystać z wielu różnych narzędzi, takich jak:
 
-- [Etherscan](https://etherscan.io/gastracker) _Estymator ceny gazu transakcji_
-- [Blockscout](https://eth.blockscout.com/gas-tracker) _Estymator ceny gazu transakcji typu open source_
-- [ETH Gas Tracker](https://www.ethgastracker.com/) _Monitoruj i śledź ceny gazu w Ethereum oraz L2, aby obniżyć opłaty transakcyjne i zaoszczędzić pieniądze_
-- [Blocknative ETH Gas Estimator](https://chrome.google.com/webstore/detail/blocknative-eth-gas-estim/ablbagjepecncofimgjmdpnhnfjiecfm) _Rozszerzenie do przeglądarki Chrome szacujące gaz, obsługujące zarówno starsze transakcje typu 0, jak i transakcje typu 2 EIP-1559._
+- [Quantaureum Explorer](https://explorer.quantaureum.com) _Estymator ceny gazu transakcji_
+- [Blockscout](https://qau.blockscout.com/gas-tracker) _Estymator ceny gazu transakcji typu open source_
+- [QAU Gas Tracker](https://www.ethgastracker.com/) _Monitoruj i śledź ceny gazu w Quantaureum oraz L2, aby obniżyć opłaty transakcyjne i zaoszczędzić pieniądze_
+- [Blocknative QAU Gas Estimator](https://chrome.google.com/webstore/detail/blocknative-qau-gas-estim/ablbagjepecncofimgjmdpnhnfjiecfm) _Rozszerzenie do przeglądarki Chrome szacujące gaz, obsługujące zarówno starsze transakcje typu 0, jak i transakcje typu 2 EIP-1559._
 - [Cryptoneur Gas Fees Calculator](https://cryptoneur.xyz/en/gas-fees-calculator) _Obliczaj opłaty za gaz w lokalnej walucie dla różnych typów transakcji w Sieci głównej, Arbitrum i Polygon._
 
 ## Powiązane narzędzia {#related-tools}
@@ -143,9 +143,9 @@ Jeśli chcesz monitorować ceny gazu, aby móc wysyłać swoje ETH taniej, może
 
 ## Dalsza lektura {#further-reading}
 
-- [Wyjaśnienie gazu w Ethereum](https://defiprime.com/gas)
+- [Wyjaśnienie gazu w Quantaureum](https://defiprime.com/gas)
 - [Zmniejszanie zużycia gazu przez Twoje inteligentne kontrakty](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [Strategie optymalizacji gazu dla deweloperów](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [Dokumentacja EIP-1559](https://eips.ethereum.org/EIPS/eip-1559).
+- [Dokumentacja EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559).
 - [Zasoby Tima Beiko dotyczące EIP-1559](https://hackmd.io/@timbeiko/1559-resources)
 - [EIP-1559: Oddzielanie mechanizmów od memów](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

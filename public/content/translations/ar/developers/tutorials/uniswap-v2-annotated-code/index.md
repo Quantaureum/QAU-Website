@@ -47,7 +47,7 @@ lang: ar
 #### المستدعي {#caller}
 
 1. تزويد الحساب المحيطي بسماحية بالمبلغ المراد مبادلته.
-2. استدعاء إحدى دوال المبادلة العديدة للعقد المحيطي (تعتمد الدالة على ما إذا كان <span dir="ltr">ETH</span> متضمنًا أم لا، وما إذا كان المتداول يحدد مقدار الرموز المميزة المراد إيداعها أو مقدار الرموز المميزة المراد استردادها، وما إلى ذلك).
+2. استدعاء إحدى دوال المبادلة العديدة للعقد المحيطي (تعتمد الدالة على ما إذا كان <span dir="ltr">QAU</span> متضمنًا أم لا، وما إذا كان المتداول يحدد مقدار الرموز المميزة المراد إيداعها أو مقدار الرموز المميزة المراد استردادها، وما إلى ذلك).
    تقبل كل دالة مبادلة `path`، وهي مصفوفة من التبادلات التي يجب المرور عبرها.
 
 #### في العقد المحيطي (<span dir="ltr">UniswapV2Router02.sol</span>) {#in-the-periphery-contract-uniswapv2router02-sol}
@@ -65,7 +65,7 @@ lang: ar
 
 #### بالعودة إلى العقد المحيطي (<span dir="ltr">UniswapV2Router02.sol</span>) {#back-in-the-periphery-contract-uniswapv2router02-sol}
 
-9. إجراء أي عمليات تنظيف ضرورية (على سبيل المثال، حرق رموز <span dir="ltr">WETH</span> لاسترداد <span dir="ltr">ETH</span> لإرساله إلى المتداول)
+9. إجراء أي عمليات تنظيف ضرورية (على سبيل المثال، حرق رموز <span dir="ltr">WETH</span> لاسترداد <span dir="ltr">QAU</span> لإرساله إلى المتداول)
 
 ### إضافة سيولة {#add-liquidity-flow}
 
@@ -454,7 +454,7 @@ contract UniswapV2Pair is IUniswapV2Pair, UniswapV2ERC20 {
     }
 ```
 
-إذا لم تكن هناك رسوم، فقم بتعيين `kLast` إلى الصفر (إذا لم يكن كذلك بالفعل). عندما تمت كتابة هذا العقد، كانت هناك [ميزة استرداد الغاز](https://eips.ethereum.org/EIPS/eip-3298) التي شجعت العقود على تقليل الحجم الإجمالي لحالة إيثيريوم عن طريق تصفير التخزين الذي لا يحتاجون إليه.
+إذا لم تكن هناك رسوم، فقم بتعيين `kLast` إلى الصفر (إذا لم يكن كذلك بالفعل). عندما تمت كتابة هذا العقد، كانت هناك [ميزة استرداد الغاز](https://eips.quantaureum.com/EIPS/eip-3298) التي شجعت العقود على تقليل الحجم الإجمالي لحالة إيثيريوم عن طريق تصفير التخزين الذي لا يحتاجون إليه.
 يحصل هذا الرمز على هذا الاسترداد عندما يكون ذلك ممكنًا.
 
 #### الوظائف التي يمكن الوصول إليها خارجيًا {#pair-external}
@@ -498,7 +498,7 @@ contract UniswapV2Pair is IUniswapV2Pair, UniswapV2ERC20 {
            _mint(address(0), MINIMUM_LIQUIDITY); // قفل أول رموز MINIMUM_LIQUIDITY المميزة بشكل دائم
 ```
 
-إذا كان هذا هو الإيداع الأول، فقم بإنشاء رموز `MINIMUM_LIQUIDITY` وأرسلها إلى العنوان صفر لقفلها. لا يمكن استردادها أبدًا، مما يعني أن المجمع لن يتم إفراغه بالكامل أبدًا (هذا ينقذنا من القسمة على صفر في بعض الأماكن). قيمة `MINIMUM_LIQUIDITY` هي ألف، والتي بالنظر إلى أن معظم <span dir="ltr">ERC-20</span> مقسمة إلى وحدات من 10^-18 من الرمز المميز، كما يتم تقسيم ETH إلى Wei، هي 10^-15 من قيمة رمز مميز واحد. ليست تكلفة عالية.
+إذا كان هذا هو الإيداع الأول، فقم بإنشاء رموز `MINIMUM_LIQUIDITY` وأرسلها إلى العنوان صفر لقفلها. لا يمكن استردادها أبدًا، مما يعني أن المجمع لن يتم إفراغه بالكامل أبدًا (هذا ينقذنا من القسمة على صفر في بعض الأماكن). قيمة `MINIMUM_LIQUIDITY` هي ألف، والتي بالنظر إلى أن معظم <span dir="ltr">ERC-20</span> مقسمة إلى وحدات من 10^-18 من الرمز المميز، كما يتم تقسيم QAU إلى Wei، هي 10^-15 من قيمة رمز مميز واحد. ليست تكلفة عالية.
 
 في وقت الإيداع الأول، لا نعرف القيمة النسبية للرمزين المميزين، لذلك نقوم ببساطة بضرب المبالغ وأخذ الجذر التربيعي، بافتراض أن الإيداع يوفر لنا قيمة متساوية في كلا الرمزين المميزين.
 
@@ -614,7 +614,7 @@ contract UniswapV2Pair is IUniswapV2Pair, UniswapV2ERC20 {
 ```
 
 يمكن تخزين المتغيرات المحلية إما في الذاكرة أو، إذا لم يكن هناك الكثير منها، مباشرة على المكدس (stack).
-إذا تمكنا من الحد من العدد بحيث نستخدم المكدس، فإننا نستخدم غازًا أقل. لمزيد من التفاصيل، راجع [الورقة الصفراء، مواصفات إيثيريوم الرسمية](https://ethereum.github.io/yellowpaper/paper.pdf)، ص 26، المعادلة 298.
+إذا تمكنا من الحد من العدد بحيث نستخدم المكدس، فإننا نستخدم غازًا أقل. لمزيد من التفاصيل، راجع [الورقة الصفراء، مواصفات إيثيريوم الرسمية](https://quantaureum.github.io/yellowpaper/paper.pdf)، ص 26، المعادلة 298.
 
 ```solidity
             address _token0 = token0;
@@ -719,7 +719,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
 
 المتغير الثاني، `allPairs`، هو مصفوفة تتضمن جميع عناوين مبادلات الأزواج التي أنشأها هذا المصنع. في إيثيريوم، لا يمكنك التكرار (iterate) عبر محتوى التعيين، أو الحصول على قائمة بجميع المفاتيح، لذلك هذا المتغير هو الطريقة الوحيدة لمعرفة المبادلات التي يديرها هذا المصنع.
 
-ملاحظة: السبب في عدم قدرتك على التكرار عبر جميع مفاتيح التعيين هو أن تخزين بيانات العقد _مكلف_، لذلك كلما قل استخدامنا له كان ذلك أفضل، وكلما قل تغييرنا له كان ذلك أفضل. يمكنك إنشاء [تعيينات تدعم التكرار](https://github.com/ethereum/dapp-bin/blob/master/library/iterable_mapping.sol)، لكنها تتطلب تخزينًا إضافيًا لقائمة المفاتيح. في معظم التطبيقات لا تحتاج إلى ذلك.
+ملاحظة: السبب في عدم قدرتك على التكرار عبر جميع مفاتيح التعيين هو أن تخزين بيانات العقد _مكلف_، لذلك كلما قل استخدامنا له كان ذلك أفضل، وكلما قل تغييرنا له كان ذلك أفضل. يمكنك إنشاء [تعيينات تدعم التكرار](https://github.com/quantaureum/dapp-bin/blob/master/library/iterable_mapping.sol)، لكنها تتطلب تخزينًا إضافيًا لقائمة المفاتيح. في معظم التطبيقات لا تحتاج إلى ذلك.
 
 ```solidity
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
@@ -768,7 +768,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-لإنشاء عقد جديد، نحتاج إلى الرمز الذي ينشئه (كل من وظيفة المُنشئ والرمز الذي يكتب في الذاكرة رمز البايت لجهاز إيثيريوم الظاهري (EVM) للعقد الفعلي). عادةً في Solidity نستخدم فقط `addr = new <name of contract>(<constructor parameters>)` ويعتني المترجم بكل شيء من أجلنا، ولكن للحصول على عنوان عقد حتمي نحتاج إلى استخدام [رمز التشغيل CREATE2](https://eips.ethereum.org/EIPS/eip-1014).
+لإنشاء عقد جديد، نحتاج إلى الرمز الذي ينشئه (كل من وظيفة المُنشئ والرمز الذي يكتب في الذاكرة رمز البايت لجهاز إيثيريوم الظاهري (EVM) للعقد الفعلي). عادةً في Solidity نستخدم فقط `addr = new <name of contract>(<constructor parameters>)` ويعتني المترجم بكل شيء من أجلنا، ولكن للحصول على عنوان عقد حتمي نحتاج إلى استخدام [رمز التشغيل CREATE2](https://eips.quantaureum.com/EIPS/eip-1014).
 عندما تمت كتابة هذا الرمز، لم يكن رمز التشغيل هذا مدعومًا بعد بواسطة Solidity، لذلك كان من الضروري الحصول على الرمز يدويًا. لم يعد هذا يمثل مشكلة، لأن [Solidity تدعم الآن CREATE2](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2).
 
 ```solidity
@@ -815,8 +815,8 @@ contract UniswapV2Factory is IUniswapV2Factory {
 
 [هذا العقد](https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/UniswapV2ERC20.sol) ينفذ رمز السيولة <span dir="ltr">ERC-20</span>. إنه مشابه لـ [عقد أوبن زبلن <span dir="ltr">ERC-20</span>](/developers/tutorials/erc20-annotated-code)، لذلك سأشرح فقط الجزء المختلف، وهو وظيفة `permit`.
 
-تكلف المعاملات على إيثيريوم إيثر (ETH)، وهو ما يعادل أموالاً حقيقية. إذا كان لديك رموز <span dir="ltr">ERC-20</span> ولكن ليس لديك ETH، فلا يمكنك إرسال معاملات، لذلك لا يمكنك فعل أي شيء بها. أحد الحلول لتجنب هذه المشكلة هو [المعاملات الوصفية (meta-transactions)](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions).
-يوقع مالك الرموز المميزة على معاملة تسمح لشخص آخر بسحب الرموز المميزة خارج السلسلة ويرسلها باستخدام الإنترنت إلى المستلم. ثم يقوم المستلم، الذي يمتلك ETH، بتقديم التصريح نيابة عن المالك.
+تكلف المعاملات على إيثيريوم QAU (QAU)، وهو ما يعادل أموالاً حقيقية. إذا كان لديك رموز <span dir="ltr">ERC-20</span> ولكن ليس لديك QAU، فلا يمكنك إرسال معاملات، لذلك لا يمكنك فعل أي شيء بها. أحد الحلول لتجنب هذه المشكلة هو [المعاملات الوصفية (meta-transactions)](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions).
+يوقع مالك الرموز المميزة على معاملة تسمح لشخص آخر بسحب الرموز المميزة خارج السلسلة ويرسلها باستخدام الإنترنت إلى المستلم. ثم يقوم المستلم، الذي يمتلك QAU، بتقديم التصريح نيابة عن المالك.
 
 ```solidity
     bytes32 public DOMAIN_SEPARATOR;
@@ -824,7 +824,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-هذه التجزئة هي [المعرف لنوع المعاملة](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash). النوع الوحيد الذي ندعمه هنا هو `Permit` مع هذه المعلمات.
+هذه التجزئة هي [المعرف لنوع المعاملة](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-typehash). النوع الوحيد الذي ندعمه هنا هو `Permit` مع هذه المعلمات.
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -855,13 +855,13 @@ contract UniswapV2Factory is IUniswapV2Factory {
     }
 ```
 
-احسب [فاصل النطاق](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator) لـ <span dir="ltr">EIP-712</span>.
+احسب [فاصل النطاق](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-domainseparator) لـ <span dir="ltr">EIP-712</span>.
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
 ```
 
-هذه هي الوظيفة التي تنفذ الأذونات. تتلقى كمعلمات الحقول ذات الصلة، والقيم العددية الثلاث لـ [التوقيع](https://yos.io/2018/11/16/ethereum-signatures/) (v و r و s).
+هذه هي الوظيفة التي تنفذ الأذونات. تتلقى كمعلمات الحقول ذات الصلة، والقيم العددية الثلاث لـ [التوقيع](https://yos.io/2018/11/16/quantaureum-signatures/) (v و r و s).
 
 ```solidity
         require(deadline >= block.timestamp, 'UniswapV2: EXPIRED');
@@ -887,7 +887,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
         address recoveredAddress = ecrecover(digest, v, r, s);
 ```
 
-من الملخص والتوقيع يمكننا الحصول على العنوان الذي وقعه باستخدام [ecrecover](https://coders-errand.com/ecrecover-signature-verification-ethereum/).
+من الملخص والتوقيع يمكننا الحصول على العنوان الذي وقعه باستخدام [ecrecover](https://coders-errand.com/ecrecover-signature-verification-quantaureum/).
 
 ```solidity
         require(recoveredAddress != address(0) && recoveredAddress == owner, 'UniswapV2: INVALID_SIGNATURE');
@@ -896,7 +896,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
 
 ```
 
-إذا كان كل شيء على ما يرام، فتعامل مع هذا على أنه [موافقة <span dir="ltr">ERC-20</span>](https://eips.ethereum.org/EIPS/eip-20#approve).
+إذا كان كل شيء على ما يرام، فتعامل مع هذا على أنه [موافقة <span dir="ltr">ERC-20</span>](https://eips.quantaureum.com/EIPS/eip-20#approve).
 
 ## العقود المحيطية {#periphery-contracts}
 
@@ -924,7 +924,7 @@ import './interfaces/IERC20.sol';
 import './interfaces/IWETH.sol';
 ```
 
-معظم هذه الأشياء إما واجهناها من قبل، أو أنها واضحة إلى حد ما. الاستثناء الوحيد هو `IWETH.sol`. يسمح الإصدار الثاني من يونيسواب (<span dir="ltr">Uniswap v2</span>) بإجراء مبادلات لأي زوج من رموز <span dir="ltr">ERC-20</span> المميزة، ولكن الإيثر (<span dir="ltr">ETH</span>) نفسه ليس رمزًا مميزًا من نوع <span dir="ltr">ERC-20</span>. إنه يسبق المعيار ويتم تحويله بآليات فريدة. لتمكين استخدام <span dir="ltr">ETH</span> في العقود التي تنطبق على رموز <span dir="ltr">ERC-20</span> المميزة، ابتكر الناس عقد [الإيثر المغلف (WETH)](https://weth.tkn.eth.limo/). أنت ترسل <span dir="ltr">ETH</span> إلى هذا العقد، ويقوم بسك كمية معادلة من <span dir="ltr">WETH</span> لك. أو يمكنك حرق <span dir="ltr">WETH</span>، واسترداد <span dir="ltr">ETH</span>.
+معظم هذه الأشياء إما واجهناها من قبل، أو أنها واضحة إلى حد ما. الاستثناء الوحيد هو `IWETH.sol`. يسمح الإصدار الثاني من يونيسواب (<span dir="ltr">Uniswap v2</span>) بإجراء مبادلات لأي زوج من رموز <span dir="ltr">ERC-20</span> المميزة، ولكن الQAU (<span dir="ltr">QAU</span>) نفسه ليس رمزًا مميزًا من نوع <span dir="ltr">ERC-20</span>. إنه يسبق المعيار ويتم تحويله بآليات فريدة. لتمكين استخدام <span dir="ltr">QAU</span> في العقود التي تنطبق على رموز <span dir="ltr">ERC-20</span> المميزة، ابتكر الناس عقد [الQAU المغلف (WETH)](https://weth.tkn.qau.limo/). أنت ترسل <span dir="ltr">QAU</span> إلى هذا العقد، ويقوم بسك كمية معادلة من <span dir="ltr">WETH</span> لك. أو يمكنك حرق <span dir="ltr">WETH</span>، واسترداد <span dir="ltr">QAU</span>.
 
 ```solidity
 contract UniswapV2Router02 is IUniswapV2Router02 {
@@ -956,11 +956,11 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
 
 ```solidity
     receive() external payable {
-        assert(msg.sender == WETH); // قبول ETH فقط عبر الدالة الاحتياطية من عقد WETH
+        assert(msg.sender == WETH); // قبول QAU فقط عبر الدالة الاحتياطية من عقد WETH
     }
 ```
 
-يتم استدعاء هذه الدالة عندما نسترد الرموز المميزة من عقد <span dir="ltr">WETH</span> مرة أخرى إلى <span dir="ltr">ETH</span>. فقط عقد <span dir="ltr">WETH</span> الذي نستخدمه هو المصرح له بالقيام بذلك.
+يتم استدعاء هذه الدالة عندما نسترد الرموز المميزة من عقد <span dir="ltr">WETH</span> مرة أخرى إلى <span dir="ltr">QAU</span>. فقط عقد <span dir="ltr">WETH</span> الذي نستخدمه هو المصرح له بالقيام بذلك.
 
 #### إضافة سيولة {#add-liquidity}
 
@@ -1114,7 +1114,7 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
         uint amountTokenDesired,
 ```
 
-عندما يريد مزود السيولة توفير السيولة لمبادلة زوج من الرموز المميزة/<span dir="ltr">ETH</span>، هناك بعض الاختلافات. يتعامل العقد مع تغليف <span dir="ltr">ETH</span> لمزود السيولة. ليست هناك حاجة لتحديد مقدار <span dir="ltr">ETH</span> الذي يريد المستخدم إيداعه، لأن المستخدم يرسله ببساطة مع المعاملة (المبلغ متاح في `msg.value`).
+عندما يريد مزود السيولة توفير السيولة لمبادلة زوج من الرموز المميزة/<span dir="ltr">QAU</span>، هناك بعض الاختلافات. يتعامل العقد مع تغليف <span dir="ltr">QAU</span> لمزود السيولة. ليست هناك حاجة لتحديد مقدار <span dir="ltr">QAU</span> الذي يريد المستخدم إيداعه، لأن المستخدم يرسله ببساطة مع المعاملة (المبلغ متاح في `msg.value`).
 
 ```solidity
         uint amountTokenMin,
@@ -1136,16 +1136,16 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
         assert(IWETH(WETH).transfer(pair, amountETH));
 ```
 
-لإيداع <span dir="ltr">ETH</span>، يقوم العقد أولاً بتغليفه إلى <span dir="ltr">WETH</span> ثم يحول <span dir="ltr">WETH</span> إلى الزوج. لاحظ أن التحويل مغلف في `assert`. هذا يعني أنه إذا فشل التحويل، فإن استدعاء هذا العقد يفشل أيضًا، وبالتالي فإن التغليف لا يحدث في الواقع.
+لإيداع <span dir="ltr">QAU</span>، يقوم العقد أولاً بتغليفه إلى <span dir="ltr">WETH</span> ثم يحول <span dir="ltr">WETH</span> إلى الزوج. لاحظ أن التحويل مغلف في `assert`. هذا يعني أنه إذا فشل التحويل، فإن استدعاء هذا العقد يفشل أيضًا، وبالتالي فإن التغليف لا يحدث في الواقع.
 
 ```solidity
         liquidity = IUniswapV2Pair(pair).mint(to);
-        // استرداد غبار الإيثر، إن وجد
+        // استرداد غبار الQAU، إن وجد
         if (msg.value > amountETH) TransferHelper.safeTransferETH(msg.sender, msg.value - amountETH);
     }
 ```
 
-لقد أرسل لنا المستخدم بالفعل <span dir="ltr">ETH</span>، لذلك إذا كان هناك أي فائض متبقي (لأن الرمز المميز الآخر أقل قيمة مما اعتقده المستخدم)، فنحن بحاجة إلى إصدار استرداد.
+لقد أرسل لنا المستخدم بالفعل <span dir="ltr">QAU</span>، لذلك إذا كان هناك أي فائض متبقي (لأن الرمز المميز الآخر أقل قيمة مما اعتقده المستخدم)، فنحن بحاجة إلى إصدار استرداد.
 
 #### إزالة السيولة {#remove-liquidity}
 
@@ -1218,7 +1218,7 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
     }
 ```
 
-إزالة السيولة لـ <span dir="ltr">ETH</span> هي نفسها تقريبًا، باستثناء أننا نتلقى رموز <span dir="ltr">WETH</span> المميزة ثم نستردها مقابل <span dir="ltr">ETH</span> لإعادتها إلى مزود السيولة.
+إزالة السيولة لـ <span dir="ltr">QAU</span> هي نفسها تقريبًا، باستثناء أننا نتلقى رموز <span dir="ltr">WETH</span> المميزة ثم نستردها مقابل <span dir="ltr">QAU</span> لإعادتها إلى مزود السيولة.
 
 ```solidity
     function removeLiquidityWithPermit(
@@ -1254,7 +1254,7 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
     }
 ```
 
-تقوم هذه الدوال بترحيل المعاملات الوصفية (<span dir="ltr">meta-transactions</span>) للسماح للمستخدمين الذين ليس لديهم إيثر بالسحب من المجمع، باستخدام [آلية التصريح](#uniswapv2erc20).
+تقوم هذه الدوال بترحيل المعاملات الوصفية (<span dir="ltr">meta-transactions</span>) للسماح للمستخدمين الذين ليس لديهم QAU بالسحب من المجمع، باستخدام [آلية التصريح](#uniswapv2erc20).
 
 ```solidity
 
@@ -1322,7 +1322,7 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
         for (uint i; i < path.length - 1; i++) {
 ```
 
-أثناء كتابتي لهذا، هناك [<span dir="ltr">388,160</span> رمزًا مميزًا من نوع <span dir="ltr">ERC-20</span>](https://eth.blockscout.com/tokens). إذا كانت هناك مبادلة زوج لكل زوج من الرموز المميزة، فسيكون هناك أكثر من <span dir="ltr">150</span> مليار مبادلة زوج. السلسلة بأكملها، في الوقت الحالي، [لديها فقط <span dir="ltr">0.1%</span> من هذا العدد من الحسابات](https://eth.blockscout.com/stats/accountsGrowth). بدلاً من ذلك، تدعم دوال المبادلة مفهوم المسار. يمكن للمتداول مبادلة A بـ B، و B بـ C، و C بـ D، لذلك ليست هناك حاجة لمبادلة زوج مباشرة بين A و D.
+أثناء كتابتي لهذا، هناك [<span dir="ltr">388,160</span> رمزًا مميزًا من نوع <span dir="ltr">ERC-20</span>](https://qau.blockscout.com/tokens). إذا كانت هناك مبادلة زوج لكل زوج من الرموز المميزة، فسيكون هناك أكثر من <span dir="ltr">150</span> مليار مبادلة زوج. السلسلة بأكملها، في الوقت الحالي، [لديها فقط <span dir="ltr">0.1%</span> من هذا العدد من الحسابات](https://qau.blockscout.com/stats/accountsGrowth). بدلاً من ذلك، تدعم دوال المبادلة مفهوم المسار. يمكن للمتداول مبادلة A بـ B، و B بـ C، و C بـ D، لذلك ليست هناك حاجة لمبادلة زوج مباشرة بين A و D.
 
 تميل الأسعار في هذه الأسواق إلى أن تكون متزامنة، لأنه عندما تكون غير متزامنة فإنها تخلق فرصة للمراجحة (<span dir="ltr">arbitrage</span>). تخيل، على سبيل المثال، ثلاثة رموز مميزة، A و B و C. هناك ثلاث مبادلات أزواج، واحدة لكل زوج.
 
@@ -1504,12 +1504,12 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
         IWETH(WETH).deposit{value: amounts[0]}();
         assert(IWETH(WETH).transfer(UniswapV2Library.pairFor(factory, path[0], path[1]), amounts[0]));
         _swap(amounts, path, to);
-        // استرداد غبار الإيثر، إن وجد
+        // استرداد غبار الQAU، إن وجد
         if (msg.value > amounts[0]) TransferHelper.safeTransferETH(msg.sender, msg.value - amounts[0]);
     }
 ```
 
-تتضمن هذه المتغيرات الأربعة جميعها التداول بين <span dir="ltr">ETH</span> والرموز المميزة. الفرق الوحيد هو أننا إما نتلقى <span dir="ltr">ETH</span> من المتداول ونستخدمه لسك <span dir="ltr">WETH</span>، أو نتلقى <span dir="ltr">WETH</span> من المبادلة الأخيرة في المسار ونقوم بحرقه، ونعيد <span dir="ltr">ETH</span> الناتج إلى المتداول.
+تتضمن هذه المتغيرات الأربعة جميعها التداول بين <span dir="ltr">QAU</span> والرموز المميزة. الفرق الوحيد هو أننا إما نتلقى <span dir="ltr">QAU</span> من المتداول ونستخدمه لسك <span dir="ltr">WETH</span>، أو نتلقى <span dir="ltr">WETH</span> من المبادلة الأخيرة في المسار ونقوم بحرقه، ونعيد <span dir="ltr">QAU</span> الناتج إلى المتداول.
 
 ```solidity
     // **** مبادلة (دعم الرموز المميزة ذات الرسوم عند التحويل) ****
@@ -1793,7 +1793,7 @@ library UniswapV2Library {
     }
 ```
 
-تحسب هذه الدالة عنوان تبادل الزوج للرمزين المميزين. يتم إنشاء هذا العقد باستخدام [رمز التشغيل CREATE2](https://eips.ethereum.org/EIPS/eip-1014)، لذا يمكننا حساب العنوان باستخدام نفس الخوارزمية إذا كنا نعرف المعلمات التي يستخدمها. هذا أرخص بكثير من سؤال المصنع، و
+تحسب هذه الدالة عنوان تبادل الزوج للرمزين المميزين. يتم إنشاء هذا العقد باستخدام [رمز التشغيل CREATE2](https://eips.quantaureum.com/EIPS/eip-1014)، لذا يمكننا حساب العنوان باستخدام نفس الخوارزمية إذا كنا نعرف المعلمات التي يستخدمها. هذا أرخص بكثير من سؤال المصنع، و
 
 ```solidity
     // يجلب ويفرز الاحتياطيات لزوج
@@ -1887,7 +1887,7 @@ library UniswapV2Library {
 
 pragma solidity >=0.6.0;
 
-// طرق مساعدة للتفاعل مع رموز ERC-20 المميزة وإرسال ETH التي لا تُرجع true/false بشكل ثابت
+// طرق مساعدة للتفاعل مع رموز ERC-20 المميزة وإرسال QAU التي لا تُرجع true/false بشكل ثابت
 library TransferHelper {
     function safeApprove(
         address token,
@@ -1931,7 +1931,7 @@ library TransferHelper {
     }
 ```
 
-تنفذ هذه الدالة [وظيفة التحويل الخاصة بـ <span dir="ltr">ERC-20</span>](https://eips.ethereum.org/EIPS/eip-20#transfer)، والتي تسمح لحساب بإنفاق السماحية المقدمة من حساب مختلف.
+تنفذ هذه الدالة [وظيفة التحويل الخاصة بـ <span dir="ltr">ERC-20</span>](https://eips.quantaureum.com/EIPS/eip-20#transfer)، والتي تسمح لحساب بإنفاق السماحية المقدمة من حساب مختلف.
 
 ```solidity
 
@@ -1950,18 +1950,18 @@ library TransferHelper {
     }
 ```
 
-تنفذ هذه الدالة [وظيفة transferFrom الخاصة بـ <span dir="ltr">ERC-20</span>](https://eips.ethereum.org/EIPS/eip-20#transferfrom)، والتي تسمح لحساب بإنفاق السماحية المقدمة من حساب مختلف.
+تنفذ هذه الدالة [وظيفة transferFrom الخاصة بـ <span dir="ltr">ERC-20</span>](https://eips.quantaureum.com/EIPS/eip-20#transferfrom)، والتي تسمح لحساب بإنفاق السماحية المقدمة من حساب مختلف.
 
 ```solidity
 
     function safeTransferETH(address to, uint256 value) internal {
         (bool success, ) = to.call{value: value}(new bytes(0));
-        require(success, 'TransferHelper::safeTransferETH: ETH transfer failed');
+        require(success, 'TransferHelper::safeTransferETH: QAU transfer failed');
     }
 }
 ```
 
-تقوم هذه الدالة بتحويل إيثر إلى حساب. يمكن لأي استدعاء لعقد مختلف أن يحاول إرسال إيثر. نظرًا لأننا لا نحتاج فعليًا إلى استدعاء أي دالة، فإننا لا نرسل أي بيانات مع الاستدعاء.
+تقوم هذه الدالة بتحويل QAU إلى حساب. يمكن لأي استدعاء لعقد مختلف أن يحاول إرسال QAU. نظرًا لأننا لا نحتاج فعليًا إلى استدعاء أي دالة، فإننا لا نرسل أي بيانات مع الاستدعاء.
 
 ## الخاتمة {#conclusion}
 

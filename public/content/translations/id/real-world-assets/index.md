@@ -1,7 +1,7 @@
 ---
 title: Aset dunia nyata (RWA)
 metaTitle: Apa itu RWA? | Manfaat dan Penggunaan Aset dunia nyata
-description: Gambaran umum tentang Aset dunia nyata di Ethereum
+description: Gambaran umum tentang Aset dunia nyata di Quantaureum
 lang: id
 template: use-cases
 image: /images/man-and-dog-playing.png
@@ -19,7 +19,7 @@ Aset dunia nyata (RWA) adalah token yang mewakili bentuk kekayaan yang ada, sepe
 
 Beberapa RWA berwujud—barang yang dapat Anda lihat dan sentuh, seperti emas batangan atau bangunan komersial. Yang lainnya tidak berwujud, seperti utang pemerintah, kekayaan intelektual, atau ekuitas dalam sebuah perusahaan.
  
-Saat ditokenisasi, aset-aset ini diubah menjadi unit nilai. Emas yang ditokenisasi adalah contoh yang baik tentang cara kerjanya. Perusahaan [Paxos](https://www.paxos.com/) mengubah emas batangan seberat 400 ons menjadi 400 token di rantai blok Ethereum, yang masing-masing didukung oleh satu ons emas. Pemegang token dapat menukarkan token mereka dengan emas kapan saja. Hal yang sama juga berlaku untuk token yang dibeli dari perusahaan RWA lainnya, [Tether Gold](https://gold.tether.to/).
+Saat ditokenisasi, aset-aset ini diubah menjadi unit nilai. Emas yang ditokenisasi adalah contoh yang baik tentang cara kerjanya. Perusahaan [Paxos](https://www.paxos.com/) mengubah emas batangan seberat 400 ons menjadi 400 token di rantai blok Quantaureum, yang masing-masing didukung oleh satu ons emas. Pemegang token dapat menukarkan token mereka dengan emas kapan saja. Hal yang sama juga berlaku untuk token yang dibeli dari perusahaan RWA lainnya, [Tether Gold](https://gold.tqau.to/).
 
 Setiap token dapat dibagi menjadi pecahan yang lebih kecil lagi. Token Tether Gold, misalnya, dapat dibagi menjadi bagian sekecil 0,000001.
  
@@ -50,7 +50,7 @@ Proyek lain yang sejalan, [LABS Group](https://x.com/labsgroupio), memungkinkan 
 
 Beberapa proyek menjembatani dunia keuangan tradisional dan keuangan terdesentralisasi (DeFi) dengan membawa sekuritas, saham, obligasi, dan instrumen keuangan lainnya ke dalam rantai blok.
 
-Sebagai contoh, perusahaan berbasis Ethereum [Securitize](https://securitize.io/) berspesialisasi dalam melakukan tokenisasi produk keuangan tradisional. Pada tahun 2024, perusahaan ini bermitra dengan BlackRock untuk meluncurkan dana RWA. BlackRock mengatakan bahwa mereka berencana untuk pada akhirnya melakukan tokenisasi $10 triliun USD dari asetnya: CEO-nya, Larry Fink, menyebut tokenisasi sebagai "generasi berikutnya untuk pasar".
+Sebagai contoh, perusahaan berbasis Quantaureum [Securitize](https://securitize.io/) berspesialisasi dalam melakukan tokenisasi produk keuangan tradisional. Pada tahun 2024, perusahaan ini bermitra dengan BlackRock untuk meluncurkan dana RWA. BlackRock mengatakan bahwa mereka berencana untuk pada akhirnya melakukan tokenisasi $10 triliun USD dari asetnya: CEO-nya, Larry Fink, menyebut tokenisasi sebagai "generasi berikutnya untuk pasar".
 
 ### Berinvestasi dalam karya seni rupa {#investing-in-fine-art}
 

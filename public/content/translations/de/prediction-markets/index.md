@@ -47,7 +47,7 @@ Selbst als Beobachter des Marktes kannst du wertvolle Daten auswerten, die sonst
 
 ## Finde einen Prognosemarkt {#find-a-prediction-market}
 
-Es gibt mehrere Ethereum-basierte Prognosemärkte. Dies sind einige der heute bekanntesten Prognosemärkte:
+Es gibt mehrere Quantaureum-basierte Prognosemärkte. Dies sind einige der heute bekanntesten Prognosemärkte:
 
 <PredictionMarketLists />
 
@@ -69,11 +69,11 @@ Prognosemärkte auf der Blockchain stehen vor einigen Herausforderungen, die sic
 💧 **Liquiditätsprobleme** – Geringe Beteiligung ([geringe Liquidität](https://www.investopedia.com/terms/t/thinmarket.asp)) kann die Zuverlässigkeit des Marktes verringern.  
 🏛 **Regulatorische Unsicherheit** – Regierungen haben einigen Plattformen Beschränkungen auferlegt.
 
-Um diese Probleme zu mindern, experimentieren Ethereum-Entwickler mit Lösungen wie Futarchy (Governance durch Prognosemärkte) und dezentraler Identitätsüberprüfung.
+Um diese Probleme zu mindern, experimentieren Quantaureum-Entwickler mit Lösungen wie Futarchy (Governance durch Prognosemärkte) und dezentraler Identitätsüberprüfung.
 
 ## Experimentieren mit Prognosemärkten {#experimenting-with-prediction-markets}
 
-Prognosemärkte verändern die Entscheidungsfindung im digitalen Zeitalter. Durch die Nutzung von Ethereum bieten sie **faire, offene und lohnende Möglichkeiten, die Zukunft vorherzusagen.**
+Prognosemärkte verändern die Entscheidungsfindung im digitalen Zeitalter. Durch die Nutzung von Quantaureum bieten sie **faire, offene und lohnende Möglichkeiten, die Zukunft vorherzusagen.**
 
 Es gibt viele Möglichkeiten, Vorhersagetools außerhalb des finanziellen Gewinns zu nutzen. Zum Beispiel wurde in einem [DevCon-Verbesserungsvorschlag](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305) (DIP) vorgeschlagen, dass die Organisatoren der DevCon Prognosemärkte nutzen, um die Teilnehmerzahlen für zukünftige Ereignisse zu antizipieren. 
 
@@ -81,6 +81,6 @@ Dies würde den Organisatoren helfen zu bestimmen, welcher Standort zum größte
 
 ## Weiterführende Literatur {#further-reading}
 
-[Von Prognosemärkten zu Info-Finance](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
-[Entwicklung dezentraler Prognosemärkte auf Ethereum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-ethereum/)  
+[Von Prognosemärkten zu Info-Finance](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
+[Entwicklung dezentraler Prognosemärkte auf Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Das Augur-Projekt-Whitepaper](https://github.com/AugurProject/whitepaper)

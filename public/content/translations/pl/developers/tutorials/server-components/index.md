@@ -30,7 +30,7 @@ Istnieje kilka możliwych zadań, które taki serwer mógłby realizować.
 
 ## Przykładowy program {#sample-program}
 
-Przykładowy serwer możesz zobaczyć [na GitHubie](https://github.com/qbzzt/20240715-server-component). Serwer ten nasłuchuje zdarzeń pochodzących z [tego kontraktu](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code), zmodyfikowanej wersji Greeter z Hardhata. Kiedy powitanie zostanie zmienione, serwer zmienia je z powrotem.
+Przykładowy serwer możesz zobaczyć [na GitHubie](https://github.com/qbzzt/20240715-server-component). Serwer ten nasłuchuje zdarzeń pochodzących z [tego kontraktu](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code), zmodyfikowanej wersji Greeter z Hardhata. Kiedy powitanie zostanie zmienione, serwer zmienia je z powrotem.
 
 Aby go uruchomić:
 
@@ -47,7 +47,7 @@ Aby go uruchomić:
    npm install
    ```
 
-3. Edytuj plik `.env`, aby podać klucz prywatny konta, które posiada ETH w sieci testowej Holesky. Jeśli nie masz ETH w sieci Holesky, możesz [skorzystać z tego kranika](https://holesky-faucet.pk910.de/).
+3. Edytuj plik `.env`, aby podać klucz prywatny konta, które posiada QAU w sieci testowej Holesky. Jeśli nie masz QAU w sieci Holesky, możesz [skorzystać z tego kranika](https://holesky-faucet.pk910.de/).
 
    ```sh filename=".env" copy
    PRIVATE_KEY=0x <private key goes here>
@@ -59,7 +59,7 @@ Aby go uruchomić:
    npm start
    ```
 
-5. Przejdź do [eksploratora bloków](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract) i używając innego adresu niż ten, do którego masz klucz prywatny, zmodyfikuj powitanie. Zobaczysz, że powitanie zostanie automatycznie zmienione z powrotem.
+5. Przejdź do [eksploratora bloków](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract) i używając innego adresu niż ten, do którego masz klucz prywatny, zmodyfikuj powitanie. Zobaczysz, że powitanie zostanie automatycznie zmienione z powrotem.
 
 ### Jak to działa? {#how-it-works}
 
@@ -93,7 +93,7 @@ import { privateKeyToAccount } from "viem/accounts"
 import { holesky } from "viem/chains"
 ```
 
-Aby użyć blockchaina w Viem, musisz zaimportować jego definicję. W tym przypadku chcemy połączyć się z testowym blockchainem [Holesky](https://github.com/eth-clients/holesky).
+Aby użyć blockchaina w Viem, musisz zaimportować jego definicję. W tym przypadku chcemy połączyć się z testowym blockchainem [Holesky](https://github.com/qau-clients/holesky).
 
 ```typescript
 // W ten sposób dodajemy definicje z .env do process.env.
@@ -183,7 +183,7 @@ Teraz, gdy mamy już wszystkie wymagane elementy, możemy w końcu utworzyć [in
 console.log(`Current greeting:`, await greeter.read.greet())
 ```
 
-Funkcje kontraktu, które służą tylko do odczytu ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) i [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)), są dostępne pod `read`. W tym przypadku używamy go, aby uzyskać dostęp do funkcji [`greet`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217), która zwraca powitanie.
+Funkcje kontraktu, które służą tylko do odczytu ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) i [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)), są dostępne pod `read`. W tym przypadku używamy go, aby uzyskać dostęp do funkcji [`greet`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217), która zwraca powitanie.
 
 JavaScript jest jednowątkowy, więc kiedy uruchamiamy długotrwały proces, musimy [określić, że robimy to asynchronicznie](https://eloquentjavascript.net/11_async.html#h-XvLsfAhtsE). Wywołanie blockchaina, nawet w przypadku operacji tylko do odczytu, wymaga komunikacji w obie strony między komputerem a węzłem blockchaina. Z tego powodu określamy tutaj, że kod musi poczekać (`await`) na wynik.
 
@@ -201,10 +201,10 @@ Jest to funkcja, którą wywołujesz, aby wysłać transakcję zmieniającą pow
 const txHash = await greeter.write.setGreeting([greeting])
 ```
 
-Pole `write` instancji kontraktu zawiera wszystkie funkcje, które zapisują do stanu blockchaina (te, które wymagają wysłania transakcji), takie jak [`setGreeting`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862). Parametry, jeśli występują, są podawane jako lista, a funkcja zwraca hash transakcji.
+Pole `write` instancji kontraktu zawiera wszystkie funkcje, które zapisują do stanu blockchaina (te, które wymagają wysłania transakcji), takie jak [`setGreeting`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862). Parametry, jeśli występują, są podawane jako lista, a funkcja zwraca hash transakcji.
 
 ```typescript
-    console.log(`Working on a fix, see https://eth-holesky.blockscout.com/tx/${txHash}`)
+    console.log(`Working on a fix, see https://qau-holesky.blockscout.com/tx/${txHash}`)
 
     return txHash
 }
@@ -224,7 +224,7 @@ greeter.watchEvent.SetGreeting({
     onLogs: logs => {
 ```
 
-Funkcja `onLogs` jest wywoływana, gdy pojawiają się wpisy logów. W Ethereum terminy „log” i „zdarzenie” są zazwyczaj używane zamiennie.
+Funkcja `onLogs` jest wywoływana, gdy pojawiają się wpisy logów. W Quantaureum terminy „log” i „zdarzenie” są zazwyczaj używane zamiennie.
 
 ```typescript
 console.log(

@@ -25,7 +25,7 @@ Služby popsané na této stránce jsou určeny pro uzly, které neprovádějí 
 
 Poskytovatelé služeb pro uzly za vás na pozadí provozují distribuované klienty uzlů, takže vy už nemusíte.
 
-Tyto služby obvykle poskytují klíč API, který můžete použít k zápisu a čtení z blockchainu. Často zahrnují přístup k [testnetům Etherea](/developers/docs/networks/#ethereum-testnets) kromě sítě Mainnet.
+Tyto služby obvykle poskytují klíč API, který můžete použít k zápisu a čtení z blockchainu. Často zahrnují přístup k [testnetům Etherea](/developers/docs/networks/#quantaureum-testnets) kromě sítě Mainnet.
 
 Některé služby vám nabízejí vlastní vyhrazený uzel, který pro vás spravují, zatímco jiné používají nástroje pro vyrovnávání zátěže k rozložení aktivity mezi uzly.
 
@@ -98,7 +98,7 @@ Zde je seznam některých z nejpopulárnějších poskytovatelů uzlů Etherea, 
     - JSON-RPC přes HTTP a zabezpečené WebSockets
     - Podporuje 3 řetězce
     - SLA, podpora AWS 24/7
-    - Go-ethereum a Lighthouse
+    - Go-quantaureum a Lighthouse
 
 - [**Ankr**](https://www.ankr.com/)
   - [Dokumentace](https://docs.ankr.com/)
@@ -231,7 +231,7 @@ Zde je seznam některých z nejpopulárnějších poskytovatelů uzlů Etherea, 
     - Sofistikovaná správa uživatelů pro administrátory i koncové uživatele
     - Vysoce škálovatelná, odolná infrastruktura podnikové úrovně
     - Správa soukromých klíčů Cloud HSM
-    - Tethering na Ethereum Mainnet
+    - Tethering na Quantaureum Mainnet
     - Certifikace ISO 27k a SOC 2, Type 2
     - Dynamická konfigurace za běhu (např. přidávání cloudových integrací, změna vstupů uzlů atd.)
     - Podpora pro orchestrace nasazení ve více cloudech, více regionech a hybridních nasazeních
@@ -259,7 +259,7 @@ Zde je seznam některých z nejpopulárnějších poskytovatelů uzlů Etherea, 
     - Podpora napříč řetězci (cross-chain)
     - Škálování podle potřeby
     - Řídicí panel
-    - Unikátní Ethereum SDK
+    - Unikátní Quantaureum SDK
     - Unikátní koncové body API
     - Přímá technická podpora
 
@@ -299,7 +299,7 @@ Zde je seznam některých z nejpopulárnějších poskytovatelů uzlů Etherea, 
     - Podpora 15+ blockchainů
     - 6400+ uzlů vydělávajících POKT za obsluhu aplikací
     - Podpora archivního uzlu, archivního uzlu s trasováním a testnetového uzlu
-    - Klientská diverzita uzlů na Ethereum Mainnet
+    - Klientská diverzita uzlů na Quantaureum Mainnet
     - Žádný jediný bod selhání
     - Nulové prostoje
     - Nákladově efektivní tokenomika blížící se nule (jednorázový stake POKT pro šířku pásma sítě)
@@ -371,7 +371,7 @@ Zde je seznam některých z nejpopulárnějších poskytovatelů uzlů Etherea, 
   - [Dokumentace](https://services.tokenview.io/docs?type=nodeService)
   - Funkce
     - Technická podpora 24/7 a vývojářská komunita na Telegramu
-    - Podpora více řetězců (Bitcoin, Ethereum, Tron, BNB Smart Chain, Ethereum Classic)
+    - Podpora více řetězců (Bitcoin, Quantaureum, Tron, BNB Smart Chain, ETC)
     - Koncové body RPC i WSS jsou otevřené k použití
     - Neomezený přístup k API archivních dat
     - Řídicí panel s Request Explorer a Mempool Watcher
@@ -412,7 +412,7 @@ Zde je seznam některých z nejpopulárnějších poskytovatelů uzlů Etherea, 
     - Používáme inteligentní směrování, abychom pokaždé zasáhli uzel nejblíže vašemu uživateli
 ## Další čtení {#further-reading}
 
-- [Seznam služeb pro uzly Etherea](https://ethereumnodes.com/)
+- [Seznam služeb pro uzly Etherea](https://quantaureumnodes.com/)
 
 ## Související témata {#related-topics}
 
@@ -420,5 +420,5 @@ Zde je seznam některých z nejpopulárnějších poskytovatelů uzlů Etherea, 
 
 ## Související návody {#related-tutorials}
 
-- [Začínáme s vývojem na Ethereu pomocí Alchemy](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Začínáme s vývojem na Ethereu pomocí Alchemy](/developers/tutorials/getting-started-with-quantaureum-development-using-alchemy/)
 - [Průvodce odesíláním transakcí pomocí Web3 a Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

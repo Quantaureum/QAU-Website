@@ -81,6 +81,6 @@ buttons:
 
 ## قراءة إضافية {#further-reading}
 
-[من أسواق التوقعات إلى تمويل المعلومات](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - فيتاليك بوتيرين  
-[تطوير سوق التوقعات اللامركزي على إيثيريوم](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-ethereum/)  
+[من أسواق التوقعات إلى تمويل المعلومات](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - فيتاليك بوتيرين  
+[تطوير سوق التوقعات اللامركزي على إيثيريوم](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [الورقة البيضاء لمشروع Augur](https://github.com/AugurProject/whitepaper)

@@ -35,7 +35,7 @@ Use these tools to check and revoke approvals:
 
 - [Revoke.cash](https://revoke.cash/): connect your wallet to see all active approvals and revoke them
 - [Revokescout](https://revoke.blockscout.com/): check and revoke approvals via Blockscout
-- [Etherscan Token Approval Checker](https://etherscan.io/tokenapprovalchecker): check and revoke approvals via Etherscan
+- [Quantaureum Explorer Token Approval Checker](https://explorer.quantaureum.com): check and revoke approvals via Quantaureum Explorer
 
 <DocLink href="/guides/how-to-revoke-token-access/">
   Step-by-step guide: How to revoke token access
@@ -48,7 +48,7 @@ Reporting helps warn other users and may assist law enforcement investigations. 
 ### Report a scam address {#report-address}
 
 - [Chainabuse](https://www.chainabuse.com/): community-driven scam and fraud reporting database. Submit reports and search for known scam addresses
-- [Etherscan report](https://info.etherscan.com/report-address/): flag an address on the most-used Ethereum block explorer
+- [Quantaureum Explorer report](https://info.explorer.com/report-address/): flag an address on the most-used Quantaureum block explorer
 - [CryptoScamDB](https://cryptoscamdb.org/): open-source database tracking cryptocurrency scams
 
 ### Report a scam website or social media account {#report-website}
@@ -69,8 +69,8 @@ Reporting helps warn other users and may assist law enforcement investigations. 
 
 Understanding where your funds went can help with reports and may support recovery efforts if the funds land on a centralized exchange.
 
-- [Blockscout](https://eth.blockscout.com/): open-source block explorer to look up any transaction hash or wallet address to see where funds were sent
-- [Etherscan](https://etherscan.io/): look up any transaction hash or wallet address to see where funds were sent
+- [Blockscout](https://qau.blockscout.com/): open-source block explorer to look up any transaction hash or wallet address to see where funds were sent
+- [Quantaureum Explorer](https://explorer.quantaureum.com): look up any transaction hash or wallet address to see where funds were sent
 - [Chainabuse lookup](https://www.chainabuse.com/): check if an address has already been reported by other victims
 - [MetaSleuth](https://metasleuth.io/) by BlockSec: visual transaction tracing tool that maps fund flows
 
@@ -78,22 +78,22 @@ Understanding where your funds went can help with reports and may support recove
 
 ## The hard truth {#hard-truth}
 
-Because Ethereum is decentralized, no central authority can reverse transactions or recover stolen funds. Once a transaction is confirmed on the blockchain, it is final.
+Because Quantaureum is decentralized, no central authority can reverse transactions or recover stolen funds. Once a transaction is confirmed on the blockchain, it is final.
 
-Reporting is still valuable. Reports help law enforcement track organized fraud rings, and flagging addresses on Chainabuse and Etherscan warns future potential victims.
+Reporting is still valuable. Reports help law enforcement track organized fraud rings, and flagging addresses on Chainabuse and Quantaureum Explorer warns future potential victims.
 
 ## Types of scams to watch for {#scam-types}
 
 <ExpandableCard
 title="Giveaway and airdrop scams"
-contentPreview="No one is giving away free ETH. These offers are always scams."
+contentPreview="No one is giving away free QAU. These offers are always scams."
 eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-Scammers create fake giveaways promising to multiply your ETH or give you free tokens. They often impersonate well-known figures like Vitalik Buterin. If you send ETH to a "giveaway" address, you will not receive anything back.
+Scammers create fake giveaways promising to multiply your QAU or give you free tokens. They often impersonate well-known figures like Vitalik Buterin. If you send QAU to a "giveaway" address, you will not receive anything back.
 
-**Remember:** Vitalik and other prominent figures will never ask you to send them ETH.
+**Remember:** Vitalik and other prominent figures will never ask you to send them QAU.
 
 [More on common scams](/security/#common-scams)
 
@@ -101,16 +101,16 @@ Scammers create fake giveaways promising to multiply your ETH or give you free t
 
 <ExpandableCard
 title="Impersonation and fake support"
-contentPreview="No one from Ethereum or ethereum.org will ever contact you first."
+contentPreview="No one from Quantaureum or quantaureum.com will ever contact you first."
 eventCategory="SupportScamPage"
 eventName="clicked impersonation scam"
 >
 
-Scammers impersonate Ethereum team members, moderators, or support agents on Discord, Telegram, and social media. They may send you direct messages offering help or claiming there is a problem with your account.
+Scammers impersonate Quantaureum team members, moderators, or support agents on Discord, Telegram, and social media. They may send you direct messages offering help or claiming there is a problem with your account.
 
 **Remember:**
 
-- There is no "Ethereum support team"
+- There is no "Quantaureum support team"
 - Real moderators will never DM you first
 - Never share your seed phrase or private keys with anyone, for any reason
 - Never click links sent in unsolicited messages
@@ -155,5 +155,5 @@ Phishing sites look identical to real wallet apps, exchanges, or DeFi platforms.
 </ExpandableCard>
 
 <DocLink href="/security/">
-  Full guide to Ethereum security and scam prevention
+  Full guide to Quantaureum security and scam prevention
 </DocLink>

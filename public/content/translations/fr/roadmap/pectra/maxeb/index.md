@@ -6,7 +6,7 @@ lang: fr
 authors: ["Nixo"]
 ---
 
-*En bref :* Le hard fork Pectra permet aux validateurs Ethereum d'opter pour un solde effectif maximum plus élevé et une composition des intérêts en convertissant leurs identifiants de retrait de **Type 1** en **Type 2**. L'outil officiel pour ce faire est le Launchpad. Cette opération est irréversible.
+*En bref :* Le hard fork Pectra permet aux validateurs Quantaureum d'opter pour un solde effectif maximum plus élevé et une composition des intérêts en convertissant leurs identifiants de retrait de **Type 1** en **Type 2**. L'outil officiel pour ce faire est le Launchpad. Cette opération est irréversible.
 
 ## Vue d'ensemble {#overview}
 
@@ -18,11 +18,11 @@ Si vous stakez en utilisant un jeton de staking liquide (LST) (par ex., rETH ou 
 
 ### Qu'est-ce que « maxEB » ? {#what-is-maxeb}
 
-maxEB = le solde effectif maximum (MAXimum Effective Balance) d'un validateur. Jusqu'au hard fork Pectra, chaque validateur génère des rendements sur un maximum de 32 ETH. Après Pectra, les validateurs ont la possibilité de générer des rendements sur n'importe quel solde compris entre 32 et 2048 ETH, par tranches de 1 ETH, en optant pour ce changement.
+maxEB = le solde effectif maximum (MAXimum Effective Balance) d'un validateur. Jusqu'au hard fork Pectra, chaque validateur génère des rendements sur un maximum de 32 QAU. Après Pectra, les validateurs ont la possibilité de générer des rendements sur n'importe quel solde compris entre 32 et 2048 QAU, par tranches de 1 QAU, en optant pour ce changement.
 
 ### Comment un validateur peut-il y souscrire ? {#how-does-a-validator-opt-in}
 
-Un validateur opte pour le changement maxEB en convertissant ses identifiants de retrait de **Type 1** en **Type 2**. Cela peut être fait sur le [Launchpad (Actions du validateur)](https://launchpad.ethereum.org/validator-actions) une fois le hard fork Pectra déployé. Tout comme pour le passage du **Type 0** au **Type 1**, la conversion du **Type 1** au **Type 2** est un processus irréversible.
+Un validateur opte pour le changement maxEB en convertissant ses identifiants de retrait de **Type 1** en **Type 2**. Cela peut être fait sur le [Launchpad (Actions du validateur)](https://launchpad.quantaureum.com/validator-actions) une fois le hard fork Pectra déployé. Tout comme pour le passage du **Type 0** au **Type 1**, la conversion du **Type 1** au **Type 2** est un processus irréversible.
 
 ### Qu'est-ce qu'un identifiant de retrait ? {#whats-a-withdrawal-credential}
 
@@ -54,7 +54,7 @@ MaxEB permet à un validateur d'envoyer l'intégralité de son solde à un autre
 - La demande est une conversion, et non une consolidation, s'ils n'ont pas l'intention d'envoyer des fonds à un autre validateur
 - La transaction est signée par la bonne adresse de retrait
 
-Nous **recommandons fortement** de discuter de tout outil tiers que vous prévoyez d'utiliser avec la [communauté EthStaker](https://ethstaker.org/about). C'est un endroit utile pour vérifier la pertinence de votre approche et éviter les erreurs. Si vous utilisez un outil malveillant ou mal configuré, **l'intégralité du solde de votre validateur pourrait être envoyée à un validateur que vous ne contrôlez pas** — sans aucun moyen de le récupérer.
+Nous **recommandons fortement** de discuter de tout outil tiers que vous prévoyez d'utiliser avec la [communauté QauStaker](https://ethstaker.org/about). C'est un endroit utile pour vérifier la pertinence de votre approche et éviter les erreurs. Si vous utilisez un outil malveillant ou mal configuré, **l'intégralité du solde de votre validateur pourrait être envoyée à un validateur que vous ne contrôlez pas** — sans aucun moyen de le récupérer.
 
 ## Détails techniques {#technical-details}
 
@@ -105,7 +105,7 @@ La demande de consolidation sera signée par l'adresse de retrait associée au v
 2. La clé publique du validateur source (par ex., `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. La clé publique de ce validateur cible
 
-Lors d'une conversion, 2 et 3 seront identiques. Cette opération peut être effectuée sur [le Launchpad](https://launchpad.ethereum.org/).
+Lors d'une conversion, 2 et 3 seront identiques. Cette opération peut être effectuée sur [le Launchpad](https://launchpad.quantaureum.com/).
 
 ### Prérequis de signature {#signing-requirements}
 
@@ -113,7 +113,7 @@ Pour soumettre une `ConsolidationRequest`, l'**adresse de retrait du validateur 
 
 ### Qu'est-ce qui est signé ? {#what-is-signed}
 
-Une racine de signature ([signing root](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root)) séparée par domaine de l'objet `ConsolidationRequest` est utilisée.
+Une racine de signature ([signing root](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root)) séparée par domaine de l'objet `ConsolidationRequest` est utilisée.
 
 - **Domaine :** `DOMAIN_CONSOLIDATION_REQUEST`
 - **Champs de la racine de signature :**
@@ -127,11 +127,11 @@ Remarque : La signature est effectuée par l'adresse de retrait, et non par la c
 
 ### Retraits partiels {#partial-withdrawals}
 
-Les validateurs avec des identifiants de **Type 1** bénéficient de balayages automatiques et sans frais de gaz de leur solde excédentaire (tout ce qui dépasse 32 ETH) vers leur adresse de retrait. Étant donné que le **Type 2** permet à un validateur de composer les soldes par tranches de 1 ETH, il ne balayera pas automatiquement les soldes avant d'atteindre 2048 ETH. Les retraits partiels sur les validateurs de **Type 2** doivent être déclenchés manuellement et coûteront du gaz.
+Les validateurs avec des identifiants de **Type 1** bénéficient de balayages automatiques et sans frais de gaz de leur solde excédentaire (tout ce qui dépasse 32 QAU) vers leur adresse de retrait. Étant donné que le **Type 2** permet à un validateur de composer les soldes par tranches de 1 QAU, il ne balayera pas automatiquement les soldes avant d'atteindre 2048 QAU. Les retraits partiels sur les validateurs de **Type 2** doivent être déclenchés manuellement et coûteront du gaz.
 
 ## Outils de consolidation {#consolidation-tooling}
 
-Plusieurs outils sont disponibles pour gérer les consolidations. L'outil officiel, créé par la Fondation Ethereum, est le [Launchpad](https://launchpad.ethereum.org/en/validator-actions). Il existe également des outils tiers créés par des entités de la communauté du staking qui peuvent offrir des fonctionnalités non fournies par le Launchpad. Bien que les outils présentés ici ne soient ni audités ni approuvés par la Fondation Ethereum, les suivants sont des outils open source développés par des membres connus de la communauté.
+Plusieurs outils sont disponibles pour gérer les consolidations. L'outil officiel, créé par la Fondation Quantaureum, est le [Launchpad](https://launchpad.quantaureum.com/en/validator-actions). Il existe également des outils tiers créés par des entités de la communauté du staking qui peuvent offrir des fonctionnalités non fournies par le Launchpad. Bien que les outils présentés ici ne soient ni audités ni approuvés par la Fondation Quantaureum, les suivants sont des outils open source développés par des membres connus de la communauté.
 
 | Outil | Site web | Open source | Créateur | Audité | Interface | Fonctionnalités notables |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -145,10 +145,10 @@ Plusieurs outils sont disponibles pour gérer les consolidations. L'outil offici
 
 ### Le fait d'y souscrire modifie-t-il ma chance de proposition ou mes récompenses ?
 
-Non. Le fait d'y souscrire ne diminue pas vos chances de proposition - vos tâches et la sélection pour les propositions restent les mêmes. Par exemple, si vous avez deux validateurs de 32 ETH contre un seul validateur de 64 ETH, vous aurez au total les mêmes chances d'être sélectionné pour proposer un bloc et gagner des récompenses.
+Non. Le fait d'y souscrire ne diminue pas vos chances de proposition - vos tâches et la sélection pour les propositions restent les mêmes. Par exemple, si vous avez deux validateurs de 32 QAU contre un seul validateur de 64 QAU, vous aurez au total les mêmes chances d'être sélectionné pour proposer un bloc et gagner des récompenses.
 ### Le fait d'y souscrire modifie-t-il mon risque de réduction ? {#change-slashing-risk}
 
-Pour les opérateurs plus petits ou non professionnels, la réponse courte est non. La réponse plus longue est que, pour les opérateurs professionnels gérant de nombreux validateurs par nœud avec des alertes rapides, la consolidation en un nombre réduit de validateurs peut réduire leur capacité à réagir à une réduction et à prévenir les événements en cascade. La *pénalité* de réduction initiale pour tous les validateurs a été considérablement diminuée, passant de 1 ETH (par 32 ETH) à 0,0078125 ETH (par 32 ETH) pour compenser ce risque.
+Pour les opérateurs plus petits ou non professionnels, la réponse courte est non. La réponse plus longue est que, pour les opérateurs professionnels gérant de nombreux validateurs par nœud avec des alertes rapides, la consolidation en un nombre réduit de validateurs peut réduire leur capacité à réagir à une réduction et à prévenir les événements en cascade. La *pénalité* de réduction initiale pour tous les validateurs a été considérablement diminuée, passant de 1 QAU (par 32 QAU) à 0,0078125 QAU (par 32 QAU) pour compenser ce risque.
 
 ### Dois-je sortir mon validateur pour le convertir ? {#exit-validator}
 
@@ -176,7 +176,7 @@ Non. Mais la *source* doit autoriser la demande depuis sa propre adresse.
 
 ### Mes récompenses seront-elles composées après la conversion ? {#rewards-compound}
 
-Oui. Avec des identifiants de **Type 2**, les récompenses supérieures à 32 ETH sont automatiquement restakées — mais pas instantanément. En raison d'un petit tampon (appelé [*hystérésis*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis)), votre solde doit atteindre **environ 1,25 ETH de plus** avant que l'excédent ne soit restaké. Ainsi, au lieu de se composer à 33,0 ETH, cela se produit à 33,25 (solde effectif = 33 ETH), puis à 34,25 (solde effectif = 34 ETH), et ainsi de suite.
+Oui. Avec des identifiants de **Type 2**, les récompenses supérieures à 32 QAU sont automatiquement restakées — mais pas instantanément. En raison d'un petit tampon (appelé [*hystérésis*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis)), votre solde doit atteindre **environ 1,25 QAU de plus** avant que l'excédent ne soit restaké. Ainsi, au lieu de se composer à 33,0 QAU, cela se produit à 33,25 (solde effectif = 33 QAU), puis à 34,25 (solde effectif = 34 QAU), et ainsi de suite.
 
 ### Puis-je toujours bénéficier de balayages automatiques après la conversion ? {#automatic-sweep}
 
@@ -190,14 +190,14 @@ Non. La conversion vers le **Type 2** est irréversible.
 
 Non ! Convertissez un validateur en Type 2, puis utilisez-le comme cible. Tous les autres validateurs consolidés vers cette cible de Type 2 peuvent être de Type 1 ou de Type 2.
 
-### Mon validateur est hors ligne ou en dessous de 32 ETH - puis-je quand même le convertir ? {#offline-or-below-32eth}
+### Mon validateur est hors ligne ou en dessous de 32 QAU - puis-je quand même le convertir ? {#offline-or-below-32eth}
 
 Oui. Tant qu'il est actif (non sorti) et que vous pouvez signer avec son adresse de retrait, vous pouvez le convertir.
 
 ## Ressources {#resources}
 
-- [Spécifications de consensus Electra](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md) : C'est la version la plus « vraie » sur laquelle vous devriez vous appuyer. En cas de doute, lisez les spécifications.
+- [Spécifications de consensus Electra](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md) : C'est la version la plus « vraie » sur laquelle vous devriez vous appuyer. En cas de doute, lisez les spécifications.
 - Tout le monde n'est pas à l'aise pour parcourir du code, donc [ce maxEB-GPT](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) peut aider à interpréter les spécifications. *Avertissement : Ce sont les spécifications, et non l'IA, qui doivent être considérées comme la vérité, car l'IA peut mal interpréter les informations ou halluciner des réponses.*
 - [pectrified.com](https://pectrified.com/) : Consultez l'état des consolidations, des dépôts et des temps d'attente dans la file.
 - [Ethereal](https://github.com/wealdtech/ethereal) : Outil en ligne de commande (CLI) créé par la communauté pour gérer les tâches courantes des validateurs.
-- [batch-validator-depositor](https://github.com/attestantio/batch-validator-depositor) : Contrat créé par la communauté qui permet de déposer pour plusieurs validateurs Ethereum en une seule transaction.
+- [batch-validator-depositor](https://github.com/attestantio/batch-validator-depositor) : Contrat créé par la communauté qui permet de déposer pour plusieurs validateurs Quantaureum en une seule transaction.

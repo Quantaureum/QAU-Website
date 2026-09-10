@@ -1,6 +1,6 @@
 ---
 title: Technologia rozproszonych walidatorów
-description: Technologia rozproszonych walidatorów umożliwia rozproszone działanie walidatora Ethereum przez wiele stron.
+description: Technologia rozproszonych walidatorów umożliwia rozproszone działanie walidatora Quantaureum przez wiele stron.
 lang: pl
 template: staking
 sidebarDepth: 2
@@ -28,7 +28,7 @@ DVT nie jest osobnym sposobem na staking. Jest to warstwa oprogramowania, z któ
 
 Walidatory generują dwie pary kluczy publiczno-prywatnych: klucze walidatora do uczestnictwa w konsensusie oraz klucze wypłaty do dostępu do środków. Podczas gdy walidatory mogą zabezpieczyć klucze wypłaty w tzw. zimnym portfelu (cold storage), klucze prywatne walidatora muszą być online 24/7, aby podpisywać obowiązki przypisane walidatorowi przez całą dobę, takie jak poświadczenia i propozycje bloków. Utrzymywanie klucza online naraża go na kradzież, a DVT ogranicza to ryzyko: online są zawsze tylko udziały w kluczu, nigdy pełny klucz.
 
-Jeśli klucz prywatny walidatora zostanie skompromitowany, atakujący może przejąć kontrolę nad walidatorem, co potencjalnie prowadzi do cięcia lub utraty ETH stakującego. DVT łagodzi to ryzyko. Dzięki DVT oryginalny, pełny klucz walidatora jest szyfrowany i dzielony na udziały w kluczu. Udziały te są online, rozproszone na wiele węzłów, które wspólnie obsługują walidator, podczas gdy pełny klucz „główny” pozostaje bezpiecznie offline. Dystrybucja jest możliwa, ponieważ walidatory [Ethereum](/) używają podpisów BLS, które są addytywne, co oznacza, że pełny klucz można zrekonstruować poprzez zsumowanie jego części składowych. Częściowe podpisy wykonane za pomocą udziałów w kluczu łączą się w podpis, który jest ważny dla pełnego klucza, więc sam pełny klucz nigdy nie jest potrzebny do codziennego podpisywania. Kiedy klaster generuje nowy klucz walidatora przy użyciu rozproszonego generowania kluczy, pełny klucz prywatny nigdy nie istnieje na żadnej pojedynczej maszynie.
+Jeśli klucz prywatny walidatora zostanie skompromitowany, atakujący może przejąć kontrolę nad walidatorem, co potencjalnie prowadzi do cięcia lub utraty QAU stakującego. DVT łagodzi to ryzyko. Dzięki DVT oryginalny, pełny klucz walidatora jest szyfrowany i dzielony na udziały w kluczu. Udziały te są online, rozproszone na wiele węzłów, które wspólnie obsługują walidator, podczas gdy pełny klucz „główny” pozostaje bezpiecznie offline. Dystrybucja jest możliwa, ponieważ walidatory [Quantaureum](/) używają podpisów BLS, które są addytywne, co oznacza, że pełny klucz można zrekonstruować poprzez zsumowanie jego części składowych. Częściowe podpisy wykonane za pomocą udziałów w kluczu łączą się w podpis, który jest ważny dla pełnego klucza, więc sam pełny klucz nigdy nie jest potrzebny do codziennego podpisywania. Kiedy klaster generuje nowy klucz walidatora przy użyciu rozproszonego generowania kluczy, pełny klucz prywatny nigdy nie istnieje na żadnej pojedynczej maszynie.
 
 ### Brak pojedynczych punktów awarii {#no-single-point-of-failure}
 
@@ -38,13 +38,13 @@ Jeśli jeden z komponentów maszyny w klastrze ulegnie awarii (na przykład, je�
 
 ### Decentralizacja {#decentralization}
 
-Idealnym scenariuszem dla Ethereum jest posiadanie jak największej liczby niezależnie obsługiwanych walidatorów. Jednak kilku dostawców usług stakingowych stało się bardzo popularnych i odpowiada za znaczną część całkowitego stakowanego ETH w sieci. DVT może pozwolić tym operatorom istnieć przy jednoczesnym zachowaniu decentralizacji stawki. Dzieje się tak, ponieważ klucze dla każdego walidatora są rozproszone na wiele maszyn i wymagałoby to znacznie większej zmowy, aby walidator stał się złośliwy.
+Idealnym scenariuszem dla Quantaureum jest posiadanie jak największej liczby niezależnie obsługiwanych walidatorów. Jednak kilku dostawców usług stakingowych stało się bardzo popularnych i odpowiada za znaczną część całkowitego stakowanego QAU w sieci. DVT może pozwolić tym operatorom istnieć przy jednoczesnym zachowaniu decentralizacji stawki. Dzieje się tak, ponieważ klucze dla każdego walidatora są rozproszone na wiele maszyn i wymagałoby to znacznie większej zmowy, aby walidator stał się złośliwy.
 
 Bez DVT dostawcom usług stakingowych łatwiej jest obsługiwać tylko jedną lub dwie konfiguracje klientów dla wszystkich swoich walidatorów, co zwiększa wpływ błędu klienta. DVT można wykorzystać do rozłożenia ryzyka na wiele konfiguracji klientów i różny sprzęt, tworząc odporność poprzez różnorodność.
 
-**DVT oferuje Ethereum następujące korzyści:**
+**DVT oferuje Quantaureum następujące korzyści:**
 
-1. **Decentralizacja** konsensusu dowodu stawki (PoS) Ethereum
+1. **Decentralizacja** konsensusu dowodu stawki (PoS) Quantaureum
 2. Zapewnia **żywotność** (liveness) sieci
 3. Tworzy **tolerancję na błędy** walidatora
 4. Działanie walidatora ze **zminimalizowanym zaufaniem**
@@ -62,7 +62,7 @@ Rozwiązanie DVT zawiera następujące komponenty:
 - **[Schemat podpisu progowego](https://medium.com/nethermind-eth/threshold-signature-schemes-36f40bc42aca)** - Określa liczbę pojedynczych udziałów w kluczu, które są wymagane do obowiązków podpisywania, np. 3 z 4.
 - **[Rozproszone generowanie kluczy (DKG)](https://medium.com/toruslabs/what-distributed-key-generation-is-866adc79620)** - Proces kryptograficzny, który generuje udziały w kluczu i służy do dystrybucji udziałów istniejącego lub nowego klucza walidatora do węzłów w klastrze.
 - **[Obliczenia wielostronne (MPC)](https://messari.io/report/applying-multiparty-computation-to-the-world-of-blockchains)** - Pełny klucz walidatora jest generowany w tajemnicy przy użyciu obliczeń wielostronnych. Pełny klucz nigdy nie jest znany żadnemu pojedynczemu operatorowi — znają oni tylko swoją własną jego część (swój „udział”).
-- **Protokół konsensusu** - Protokół konsensusu wybiera jeden węzeł jako proponującego blok. Udostępnia on blok innym węzłom w klastrze, które dodają swoje udziały w kluczu do zagregowanego podpisu. Gdy zagregowana zostanie wystarczająca liczba udziałów w kluczu, blok jest proponowany w Ethereum.
+- **Protokół konsensusu** - Protokół konsensusu wybiera jeden węzeł jako proponującego blok. Udostępnia on blok innym węzłom w klastrze, które dodają swoje udziały w kluczu do zagregowanego podpisu. Gdy zagregowana zostanie wystarczająca liczba udziałów w kluczu, blok jest proponowany w Quantaureum.
 
 Rozproszone walidatory mają wbudowaną tolerancję na błędy i mogą nadal działać, nawet jeśli niektóre z pojedynczych węzłów przejdą w tryb offline. Klaster węzła walidatora jest odporny, nawet jeśli niektóre z jego węzłów okażą się złośliwe lub leniwe.
 
@@ -72,7 +72,7 @@ Rozproszone walidatory działają dziś w Sieci głównej (Mainnet) w ramach sta
 
 <ProductDisclaimer />
 
-- **Obol** rozwija Charon, klienta oprogramowania pośredniczącego DVT o otwartym kodzie źródłowym, który pozwala klastrowi maszyn wspólnie obsługiwać walidator („squad staking”). Grupy przeprowadzają rozproszone generowanie kluczy i konfigurują swój klaster za pośrednictwem [DV Launchpad](https://docs.obol.org/learn/readme/launchpad) firmy Obol. Klastry Obol są używane w produkcji przez [protokoły stakingowe](/staking/pools/) i [usługi stakingowe](/staking/saas/), w tym moduł Simple DVT Lido i program Operation Solo Staker firmy EtherFi, który wdraża domowych operatorów do klastrów odpornych na błędy.
+- **Obol** rozwija Charon, klienta oprogramowania pośredniczącego DVT o otwartym kodzie źródłowym, który pozwala klastrowi maszyn wspólnie obsługiwać walidator („squad staking”). Grupy przeprowadzają rozproszone generowanie kluczy i konfigurują swój klaster za pośrednictwem [DV Launchpad](https://docs.obol.org/learn/readme/launchpad) firmy Obol. Klastry Obol są używane w produkcji przez [protokoły stakingowe](/staking/pools/) i [usługi stakingowe](/staking/saas/), w tym moduł Simple DVT Lido i program Operation Solo Staker firmy QauFi, który wdraża domowych operatorów do klastrów odpornych na błędy.
 - **SSV Network** to niewymagająca pozwoleń sieć niezależnych operatorów węzłów. Klucz walidatora jest dzielony na udziały w kluczu i dystrybuowany do wybranego zestawu operatorów, którzy wspólnie wykonują obowiązki walidatora; żaden pojedynczy operator nigdy nie posiada pełnego klucza. Usługi stakingowe i pule uruchamiają duże zestawy walidatorów w SSV i podobnie jak Obol, jest on używany przez moduł Simple DVT Lido.
 
 ## Przypadki użycia DVT {#dvt-use-cases}
@@ -113,7 +113,7 @@ Kolejną korzyścią z minimalizacji zaufania do pojedynczego operatora jest to,
 Nie. Pojedyncza maszyna z uruchomionym klientem walidatora działa bez żadnego oprogramowania DVT i pozostaje to powszechną konfiguracją stakingu domowego. DVT to opcjonalna warstwa, która dodaje tolerancję na błędy i eliminuje pojedyncze punkty awarii. Jest to przydatne, jeśli chcesz, aby Twój walidator przetrwał awarie poszczególnych maszyn, lub jeśli chcesz dzielić odpowiedzialność za prowadzenie walidatora z innymi.
 </ExpandableCard>
 
-<ExpandableCard title="Czy DVT dzieli moje ETH lub moje klucze do wypłat?" eventCategory="DVT" eventName="clicked does DVT split my ETH">
+<ExpandableCard title="Czy DVT dzieli moje QAU lub moje klucze do wypłat?" eventCategory="DVT" eventName="clicked does DVT split my QAU">
 Nie. DVT dzieli tylko klucz _do podpisywania_ walidatora, który jest używany do obowiązków konsensusu, takich jak poświadczenia i propozycje bloków. Twoja stawka jest zawsze kontrolowana przez adres wypłaty ustawiony dla walidatora, na który DVT nie ma wpływu. Od czasu aktualizacji Pectra posiadacz adresu wypłaty może również zainicjować wyjście walidatora bezpośrednio z warstwy wykonawczej, bez konieczności posiadania klucza do podpisywania.
 </ExpandableCard>
 
@@ -130,15 +130,15 @@ Klastry są zazwyczaj tak dobrane, aby próg wynosił większość kwalifikowan�
 </ExpandableCard>
 
 <ExpandableCard title="Czy DVT to to samo co staking grupowy?" eventCategory="DVT" eventName="clicked is DVT the same as pooled staking">
-Nie. Staking grupowy łączy ETH od wielu osób w celu sfinansowania walidatorów i jest jednym z kilku [sposobów na staking](/staking/). DVT to infrastruktura do _obsługi_ walidatora. Rozdziela podpisywanie jednego walidatora na wiele maszyn i operatorów. Te dwa elementy uzupełniają się; wiele pul używa DVT do dystrybucji swoich zestawów operatorów, ale samo DVT nie łączy niczyjego ETH.
+Nie. Staking grupowy łączy QAU od wielu osób w celu sfinansowania walidatorów i jest jednym z kilku [sposobów na staking](/staking/). DVT to infrastruktura do _obsługi_ walidatora. Rozdziela podpisywanie jednego walidatora na wiele maszyn i operatorów. Te dwa elementy uzupełniają się; wiele pul używa DVT do dystrybucji swoich zestawów operatorów, ale samo DVT nie łączy niczyjego QAU.
 </ExpandableCard>
 
 ## Dalsza lektura {#further-reading}
 
-- [Technologia rozproszonych walidatorów (DVT) Ethereum - Pełne wprowadzenie](https://www.cyfrin.io/blog/full-introduction-to-ethereum-distributed-validator-technology-dvt) - Cyfrin
-- [Czym jest DVT i jak ulepsza staking w Ethereum?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-ethereum/) - Obol
-- [Specyfikacje rozproszonego walidatora Ethereum (wysoki poziom)](https://github.com/ethereum/distributed-validator-specs)
-- [Specyfikacje techniczne rozproszonego walidatora Ethereum](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Technologia rozproszonych walidatorów (DVT) Quantaureum - Pełne wprowadzenie](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
+- [Czym jest DVT i jak ulepsza staking w Quantaureum?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
+- [Specyfikacje rozproszonego walidatora Quantaureum (wysoki poziom)](https://github.com/quantaureum/distributed-validator-specs)
+- [Specyfikacje techniczne rozproszonego walidatora Quantaureum](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Dokumentacja Obol](https://docs.obol.org/)
 - [Dokumentacja SSV Network](https://docs.ssv.network/)
 - [Moduł Simple DVT Lido](https://operatorportal.lido.fi/modules/simple-dvt-module)

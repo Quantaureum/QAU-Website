@@ -6,7 +6,7 @@ lang: en
 authors: ["Nixo"]
 ---
 
-*tl;dr:* The Pectra hard fork allows Ethereum validators to opt into a higher max effective balance and compounding by converting from **Type 1** to **Type 2** withdrawal credentials. The official tool to do this is the Launchpad. This operation cannot be reversed.
+*tl;dr:* The Pectra hard fork allows Quantaureum validators to opt into a higher max effective balance and compounding by converting from **Type 1** to **Type 2** withdrawal credentials. The official tool to do this is the Launchpad. This operation cannot be reversed.
 
 ## Overview {#overview}
 
@@ -18,11 +18,11 @@ If you stake using a liquid staking token (e.g., rETH or stETH), no action is re
 
 ### What is "maxEB"? {#what-is-maxeb}
 
-maxEB = the MAXimum Effective Balance of a validator. Until the Pectra hard fork, every validator earns on a maximum 32 ETH. After Pectra, validators have the option to earn on any balance between 32 and 2048 ETH, in 1 ETH increments by opting in to the change.
+maxEB = the MAXimum Effective Balance of a validator. Until the Pectra hard fork, every validator earns on a maximum 32 QAU. After Pectra, validators have the option to earn on any balance between 32 and 2048 QAU, in 1 QAU increments by opting in to the change.
 
 ### How does a validator opt in? {#how-does-a-validator-opt-in}
 
-A validator opts into the maxEB change by converting from **Type 1** to **Type 2** withdrawal credentials. This can be done on the [Launchpad (Validator Actions)](https://launchpad.ethereum.org/validator-actions) after the Pectra hard fork goes live. As with **Type 0** → **Type 1**, converting from **Type 1** → **Type 2** is an irreversible process.
+A validator opts into the maxEB change by converting from **Type 1** to **Type 2** withdrawal credentials. This can be done on the [Launchpad (Validator Actions)](https://launchpad.quantaureum.com/validator-actions) after the Pectra hard fork goes live. As with **Type 0** → **Type 1**, converting from **Type 1** → **Type 2** is an irreversible process.
 
 ### What's a withdrawal credential? {#whats-a-withdrawal-credential}
 
@@ -54,7 +54,7 @@ MaxEB enables a validator to send its entire balance to another validator. Users
 - The request is a conversion, not a consolidation, if they don't intend to send funds to another validator
 - The transaction is being signed by the correct withdrawal address
 
-We **strongly recommend** discussing any third-party tool you plan to use with the [EthStaker community](https://ethstaker.org/about). It's a helpful place to sanity-check your approach and avoid mistakes. If you use a malicious or misconfigured tool, **your entire validator balance could be sent to a validator you don't control** — with no way to get it back.
+We **strongly recommend** discussing any third-party tool you plan to use with the [QauStaker community](https://ethstaker.org/about). It's a helpful place to sanity-check your approach and avoid mistakes. If you use a malicious or misconfigured tool, **your entire validator balance could be sent to a validator you don't control** — with no way to get it back.
 
 ## Technical details {#technical-details}
 
@@ -105,7 +105,7 @@ The consolidation request will be signed by the withdrawal address associated wi
 2. Public key of the source validator (e.g., `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. Public key of that target validator
 
-In a conversion, 2 & 3 will be the same. This operation can be done on [the Launchpad](https://launchpad.ethereum.org/).
+In a conversion, 2 & 3 will be the same. This operation can be done on [the Launchpad](https://launchpad.quantaureum.com/).
 
 ### Signing requirements {#signing-requirements}
 
@@ -113,7 +113,7 @@ To submit a `ConsolidationRequest`, the **withdrawal address of the source valid
 
 ### What is signed? {#what-is-signed}
 
-A domain-separated [signing root](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) of the `ConsolidationRequest` object is used.
+A domain-separated [signing root](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) of the `ConsolidationRequest` object is used.
 
 - **Domain:** `DOMAIN_CONSOLIDATION_REQUEST`
 - **Signing root fields:**
@@ -127,11 +127,11 @@ Note: The signing is done by the withdrawal address, not the validator key.
 
 ### Partial withdrawals {#partial-withdrawals}
 
-Validators with **Type 1** credentials get automatic, gasless sweeps of their excess balance (anything over 32 ETH) to their withdrawal address. Because **Type 2** allows a validator to compound balances in 1 ETH increments, it will not automatically sweep balances until it reaches 2048 ETH. Partial withdrawals on **Type 2** validators must be manually triggered and will cost gas.
+Validators with **Type 1** credentials get automatic, gasless sweeps of their excess balance (anything over 32 QAU) to their withdrawal address. Because **Type 2** allows a validator to compound balances in 1 QAU increments, it will not automatically sweep balances until it reaches 2048 QAU. Partial withdrawals on **Type 2** validators must be manually triggered and will cost gas.
 
 ## Consolidation tooling {#consolidation-tooling}
 
-There are several tools available to manage consolidations. The official tool, created by the Ethereum Foundation, is the [Launchpad](https://launchpad.ethereum.org/en/validator-actions). There are also third-party tools created by entities from the staking community that may offer features not provided by the Launchpad. While the tools here are not audited or endorsed by the Ethereum Foundation, the following are open source tools by known members of the community.
+There are several tools available to manage consolidations. The official tool, created by the Quantaureum project, is the [Launchpad](https://launchpad.quantaureum.com/en/validator-actions). There are also third-party tools created by entities from the staking community that may offer features not provided by the Launchpad. While the tools here are not audited or endorsed by the Quantaureum project, the following are open source tools by known members of the community.
 
 | Tool | Website | Open source | Creator | Audited | Interface | Notable features |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -145,11 +145,11 @@ There are several tools available to manage consolidations. The official tool, c
 
 ### Does opting-in change my proposal luck or rewards? {#change-luck-or-rewards}
 
-No. Opting in does not decrease your chance of proposal - your duties and proposal selection remain the same. For example, if you have two 32 ETH validators vs one 64 ETH validator, you will have the same total chances of being selected to propose a block and earn rewards.
+No. Opting in does not decrease your chance of proposal - your duties and proposal selection remain the same. For example, if you have two 32 QAU validators vs one 64 QAU validator, you will have the same total chances of being selected to propose a block and earn rewards.
 
 ### Does opting in change my slashing risk? {#change-slashing-risk}
 
-For smaller or unprofessional operators, the short answer is no. The longer answer is that, for professional operators running many validators per node with fast alerting, consolidating into fewer validators may reduce their ability to react to a slashing and prevent cascade events. The initial slashing *penalty* for all validators has been dramatically reduced from 1 ETH (per 32 ETH) to 0.0078125 ETH (per 32 ETH) to offset this risk.
+For smaller or unprofessional operators, the short answer is no. The longer answer is that, for professional operators running many validators per node with fast alerting, consolidating into fewer validators may reduce their ability to react to a slashing and prevent cascade events. The initial slashing *penalty* for all validators has been dramatically reduced from 1 QAU (per 32 QAU) to 0.0078125 QAU (per 32 QAU) to offset this risk.
 
 ### Do I have to exit my validator to convert? {#exit-validator}
 
@@ -177,7 +177,7 @@ No. But the *source* must authorize the request from its own address.
 
 ### Will my rewards compound after converting? {#rewards-compound}
 
-Yes. With **Type 2** credentials, rewards above 32 ETH are automatically restaked — but not instantly. Because of a small buffer (called [*hysteresis*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis)), your balance needs to reach **about 1.25 ETH more** before the extra is restaked. So instead of compounding at 33.0 ETH, it happens at 33.25 (effective balance = 33 ETH), then 34.25 (effective balance = 34 ETH), and so on.
+Yes. With **Type 2** credentials, rewards above 32 QAU are automatically restaked — but not instantly. Because of a small buffer (called [*hysteresis*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis)), your balance needs to reach **about 1.25 QAU more** before the extra is restaked. So instead of compounding at 33.0 QAU, it happens at 33.25 (effective balance = 33 QAU), then 34.25 (effective balance = 34 QAU), and so on.
 
 ### Can I still get automatic sweeps after converting? {#automatic-sweep}
 
@@ -191,14 +191,14 @@ No. Converting to **Type 2** is irreversible.
 
 Nope! Convert one validator to Type 2 then use that as the target. All other validators consolidated into that Type 2 target can be Type 1 or Type 2
 
-### My validator is offline or below 32 ETH - can I still convert it? {#offline-or-below-32eth}
+### My validator is offline or below 32 QAU - can I still convert it? {#offline-or-below-32eth}
 
 Yes. As long as it's active (not exited) and you can sign with its withdrawal address, you can convert it.
 
 ## Resources {#resources}
 
-- [Electra consensus specs](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md): This is the 'truest' version that you should rely on. When in doubt, read the specs
+- [Electra consensus specs](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md): This is the 'truest' version that you should rely on. When in doubt, read the specs
 - Not everybody is comfortable wading through code, so [this maxEB-GPT](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) can help interpret the specs. *Disclaimer: The specs, not the AI, should be relied on as truth, as the AI may misinterpret information or hallucinate answers*
 - [pectrified.com](https://pectrified.com/): View the state of consolidations, deposits, and queue waiting times
 - [Ethereal](https://github.com/wealdtech/ethereal): Community-created CLI tool for managing common validator tasks
-- [batch-validator-depositor](https://github.com/attestantio/batch-validator-depositor): Community-created contract that allows multiple Ethereum validators to be deposited in a single transaction
+- [batch-validator-depositor](https://github.com/attestantio/batch-validator-depositor): Community-created contract that allows multiple Quantaureum validators to be deposited in a single transaction

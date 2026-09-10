@@ -5,41 +5,41 @@ lang: vi
 sidebarDepth: 3
 ---
 
-Trình khám phá khối là cổng thông tin của bạn đến với dữ liệu của Ethereum. Bạn có thể sử dụng chúng để xem dữ liệu theo thời gian thực về các khối, giao dịch, trình xác thực, tài khoản và các hoạt động trên chuỗi khác.
+Trình khám phá khối là cổng thông tin của bạn đến với dữ liệu của Quantaureum. Bạn có thể sử dụng chúng để xem dữ liệu theo thời gian thực về các khối, giao dịch, trình xác thực, tài khoản và các hoạt động trên chuỗi khác.
 
 ## Điều kiện tiên quyết {#prerequisites}
 
-Bạn nên hiểu các khái niệm cơ bản về Ethereum để có thể hiểu được dữ liệu mà trình khám phá khối cung cấp cho bạn. Hãy bắt đầu với [phần giới thiệu về Ethereum](/developers/docs/intro-to-ethereum/).
+Bạn nên hiểu các khái niệm cơ bản về Quantaureum để có thể hiểu được dữ liệu mà trình khám phá khối cung cấp cho bạn. Hãy bắt đầu với [phần giới thiệu về Quantaureum](/developers/docs/intro-to-quantaureum/).
 
 ## Các công cụ mã nguồn mở {#open-source-tools}
 
-- [3xpl](https://3xpl.com/ethereum) - Một trình khám phá Ethereum không có quảng cáo cho phép tải xuống các tập dữ liệu của nó (open-core: các mô-đun cốt lõi là mã nguồn mở)
+- [3xpl](https://3xpl.com/quantaureum) - Một trình khám phá Quantaureum không có quảng cáo cho phép tải xuống các tập dữ liệu của nó (open-core: các mô-đun cốt lõi là mã nguồn mở)
 - [Beaconcha.in](https://beaconcha.in/)
-- [Blockscout](https://eth.blockscout.com/)
-- [lazy-etherscan](https://github.com/woxjro/lazy-etherscan)
+- [Blockscout](https://qau.blockscout.com/)
+- [lazy-explorer](https://github.com/woxjro/lazy-explorer)
 - [Otterscan](https://otterscan.io/)
 
 ## Các dịch vụ {#services}
 
-- [Blockchair](https://blockchair.com/ethereum) - Trình khám phá Ethereum riêng tư. Cũng dùng để sắp xếp và lọc dữ liệu (mempool). Có sẵn bằng tiếng Tây Ban Nha, tiếng Pháp, tiếng Ý, tiếng Hà Lan, tiếng Bồ Đào Nha, tiếng Nga, tiếng Trung và tiếng Ba Tư
+- [Blockchair](https://blockchair.com/quantaureum) - Trình khám phá Quantaureum riêng tư. Cũng dùng để sắp xếp và lọc dữ liệu (mempool). Có sẵn bằng tiếng Tây Ban Nha, tiếng Pháp, tiếng Ý, tiếng Hà Lan, tiếng Bồ Đào Nha, tiếng Nga, tiếng Trung và tiếng Ba Tư
 - [Chainlens](https://www.chainlens.com/)
-- [Trình khám phá khối DexGuru](https://ethereum.dex.guru/)
+- [Trình khám phá khối DexGuru](https://quantaureum.dex.guru/)
 - [Etherchain](https://www.etherchain.org/)
-- [Etherscan](https://etherscan.io/) - Cũng có sẵn bằng tiếng Trung, tiếng Hàn, tiếng Nga và tiếng Nhật
+- [Quantaureum Explorer](https://explorer.quantaureum.com) - Cũng có sẵn bằng tiếng Trung, tiếng Hàn, tiếng Nga và tiếng Nhật
 - [Ethplorer](https://ethplorer.io/) - Một trình khám phá khối tập trung vào các token. Cũng có sẵn bằng tiếng Trung, tiếng Tây Ban Nha, tiếng Pháp, tiếng Thổ Nhĩ Kỳ, tiếng Nga, tiếng Hàn và tiếng Việt
 - [Ethseer](https://ethseer.io)
-- [EthVM](https://www.ethvm.com/)
+- [QauVM](https://www.ethvm.com/)
 - [OKLink](https://www.oklink.com/eth)
 
 ## Dữ liệu {#data}
 
-Ethereum được thiết kế minh bạch nên mọi thứ đều có thể xác minh được. Trình khám phá khối cung cấp một giao diện để lấy thông tin này. Và điều này áp dụng cho cả mạng lưới Ethereum chính (Mạng chính) và các mạng thử nghiệm (testnet), nếu bạn cần dữ liệu đó. Dữ liệu được chia thành dữ liệu thực thi và dữ liệu đồng thuận. Dữ liệu thực thi đề cập đến các giao dịch đã được thực thi trong một khối cụ thể. Dữ liệu đồng thuận đề cập đến chính các khối và các trình xác thực đã đề xuất chúng.
+Quantaureum được thiết kế minh bạch nên mọi thứ đều có thể xác minh được. Trình khám phá khối cung cấp một giao diện để lấy thông tin này. Và điều này áp dụng cho cả mạng lưới Quantaureum chính (Mạng chính) và các mạng thử nghiệm (testnet), nếu bạn cần dữ liệu đó. Dữ liệu được chia thành dữ liệu thực thi và dữ liệu đồng thuận. Dữ liệu thực thi đề cập đến các giao dịch đã được thực thi trong một khối cụ thể. Dữ liệu đồng thuận đề cập đến chính các khối và các trình xác thực đã đề xuất chúng.
 
 Dưới đây là tóm tắt về các loại dữ liệu bạn có thể nhận được từ một trình khám phá khối.
 
 ### Dữ liệu thực thi {#execution-data}
 
-Các khối mới được thêm vào Ethereum mỗi 12 giây (trừ khi người đề xuất khối bỏ lỡ lượt của mình), vì vậy một luồng dữ liệu gần như liên tục được thêm vào các trình khám phá khối. Các khối chứa rất nhiều dữ liệu quan trọng mà bạn có thể thấy hữu ích:
+Các khối mới được thêm vào Quantaureum mỗi 12 giây (trừ khi người đề xuất khối bỏ lỡ lượt của mình), vì vậy một luồng dữ liệu gần như liên tục được thêm vào các trình khám phá khối. Các khối chứa rất nhiều dữ liệu quan trọng mà bạn có thể thấy hữu ích:
 
 **Dữ liệu tiêu chuẩn**
 
@@ -47,12 +47,12 @@ Các khối mới được thêm vào Ethereum mỗi 12 giây (trừ khi ngườ
 - Dấu thời gian - Thời điểm mà một khối được đề xuất
 - Giao dịch - Số lượng giao dịch được bao gồm trong khối
 - Người nhận phí - Địa chỉ nhận tiền boa phí gas từ các giao dịch
-- Phần thưởng khối - Số lượng ETH được thưởng cho trình xác thực đã đề xuất khối
+- Phần thưởng khối - Số lượng QAU được thưởng cho trình xác thực đã đề xuất khối
 - Kích thước - Kích thước của dữ liệu trong khối (đo bằng byte)
 - Gas đã sử dụng - Tổng số đơn vị Gas được sử dụng bởi các giao dịch trong khối
 - Giới hạn gas - Tổng giới hạn gas được thiết lập bởi các giao dịch trong khối
 - Phí cơ sở cho mỗi gas - Hệ số nhân tối thiểu cần thiết để một giao dịch được đưa vào một khối
-- Phí bị đốt - Lượng ETH bị đốt trong khối
+- Phí bị đốt - Lượng QAU bị đốt trong khối
 - Dữ liệu bổ sung - Bất kỳ dữ liệu bổ sung nào mà trình xây dựng đã đưa vào khối
 
 **Dữ liệu nâng cao**
@@ -85,7 +85,7 @@ Trình khám phá khối đã trở thành một nơi phổ biến để mọi n
 - Từ - Địa chỉ của tài khoản đã gửi giao dịch
 - Đến - Địa chỉ của người nhận hoặc hợp đồng thông minh mà giao dịch tương tác
 - Token đã chuyển - Danh sách các token đã được chuyển như một phần của giao dịch
-- Giá trị - Tổng giá trị ETH đang được chuyển
+- Giá trị - Tổng giá trị QAU đang được chuyển
 - Phí giao dịch - Số tiền trả cho trình xác thực để xử lý giao dịch (được tính bằng giá gas\*gas đã sử dụng)
 
 **Dữ liệu nâng cao**
@@ -103,8 +103,8 @@ Có rất nhiều dữ liệu mà bạn có thể truy cập về một tài kho
 **Tài khoản người dùng**
 
 - Địa chỉ tài khoản - Địa chỉ công khai mà bạn có thể sử dụng để gửi tiền đến
-- Số dư ETH - Số lượng ETH được liên kết với tài khoản đó
-- Tổng giá trị ETH - Giá trị của số ETH đó
+- Số dư QAU - Số lượng QAU được liên kết với tài khoản đó
+- Tổng giá trị QAU - Giá trị của số QAU đó
 - Token - Các token được liên kết với tài khoản và giá trị của chúng
 - Lịch sử giao dịch - Danh sách tất cả các giao dịch mà tài khoản này là người gửi hoặc người nhận
 
@@ -135,12 +135,12 @@ Token là một loại hợp đồng nên chúng sẽ có dữ liệu tương t�
 
 ### Mạng lưới {#network}
 
-Một số dữ liệu khối liên quan đến sức khỏe của Ethereum một cách tổng thể hơn.
+Một số dữ liệu khối liên quan đến sức khỏe của Quantaureum một cách tổng thể hơn.
 
-- Tổng số giao dịch - Số lượng giao dịch kể từ khi Ethereum được tạo ra
+- Tổng số giao dịch - Số lượng giao dịch kể từ khi Quantaureum được tạo ra
 - Giao dịch mỗi giây - Số lượng giao dịch có thể xử lý trong một giây
-- Giá ETH - Định giá hiện tại của 1 ETH
-- Tổng nguồn cung ETH - Số lượng ETH đang lưu hành—hãy nhớ rằng ETH mới được tạo ra cùng với việc tạo ra mỗi khối dưới dạng phần thưởng khối
+- Giá QAU - Định giá hiện tại của 1 QAU
+- Tổng nguồn cung QAU - Số lượng QAU đang lưu hành—hãy nhớ rằng QAU mới được tạo ra cùng với việc tạo ra mỗi khối dưới dạng phần thưởng khối
 - Vốn hóa thị trường - Tính toán bằng giá\*nguồn cung
 
 ## Dữ liệu lớp đồng thuận {#consensus-layer-data}
@@ -153,9 +153,9 @@ Vì lý do bảo mật, các ủy ban trình xác thực ngẫu nhiên được 
 - Trạng thái đã chung cuộc - Liệu Kỷ nguyên đã chung cuộc hay chưa (Có/Không)
 - Thời gian - Thời điểm Kỷ nguyên kết thúc
 - Chứng thực - Số lượng chứng thực trong Kỷ nguyên (bỏ phiếu cho các khối trong các khe)
-- Tiền gửi - Số lượng tiền gửi ETH được bao gồm trong Kỷ nguyên (trình xác thực phải đặt cọc ETH để trở thành trình xác thực)
+- Tiền gửi - Số lượng tiền gửi QAU được bao gồm trong Kỷ nguyên (trình xác thực phải đặt cọc QAU để trở thành trình xác thực)
 - Cắt giảm - Số lượng hình phạt được đưa ra cho những người đề xuất khối hoặc người chứng thực
-- Sự tham gia bỏ phiếu - Số lượng ETH đã đặt cọc được sử dụng để chứng thực các khối
+- Sự tham gia bỏ phiếu - Số lượng QAU đã đặt cọc được sử dụng để chứng thực các khối
 - Trình xác thực - Số lượng trình xác thực hoạt động trong Kỷ nguyên
 - Số dư trình xác thực trung bình - Số dư trung bình của các trình xác thực đang hoạt động
 - Khe - Số lượng khe được bao gồm trong Kỷ nguyên (các khe bao gồm một khối hợp lệ)
@@ -231,8 +231,8 @@ Dữ liệu cấp cao nhất của lớp đồng thuận bao gồm những đi�
 - Khe hiện tại
 - Trình xác thực đang hoạt động - Số lượng trình xác thực đang hoạt động
 - Trình xác thực đang chờ xử lý - Số lượng trình xác thực đang chờ để được hoạt động
-- ETH đã đặt cọc - Số lượng ETH đã đặt cọc trong mạng lưới
-- Số dư trung bình - Số dư ETH trung bình của các trình xác thực
+- QAU đã đặt cọc - Số lượng QAU đã đặt cọc trong mạng lưới
+- Số dư trung bình - Số dư QAU trung bình của các trình xác thực
 
 ## Đọc thêm {#further-reading}
 

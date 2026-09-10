@@ -33,31 +33,31 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
   args: {
     socialIcon: "webpage",
-    children: "ethereum.org official community page",
+    children: "quantaureum.com official community page",
   },
 }
 
 export const Twitter: Story = {
   args: {
     socialIcon: "twitter",
-    children: "@ethereum on Twitter / X",
+    children: "@quantaureum on Twitter / X",
   },
 }
 
 export const AllPlatforms = {
   render: () => (
     <VStack className="items-stretch gap-1">
-      <SocialListItem socialIcon="webpage">ethereum.org</SocialListItem>
-      <SocialListItem socialIcon="reddit">/r/ethereum on Reddit</SocialListItem>
+      <SocialListItem socialIcon="webpage">quantaureum.com</SocialListItem>
+      <SocialListItem socialIcon="reddit">/r/quantaureum on Reddit</SocialListItem>
       <SocialListItem socialIcon="twitter">
-        @ethereum on Twitter / X
+        @quantaureum on Twitter / X
       </SocialListItem>
       <SocialListItem socialIcon="youtube">
-        Ethereum Foundation YouTube
+        Quantaureum project YouTube
       </SocialListItem>
-      <SocialListItem socialIcon="discord">Ethereum on Discord</SocialListItem>
+      <SocialListItem socialIcon="discord">Quantaureum on Discord</SocialListItem>
       <SocialListItem socialIcon="stackExchange">
-        Ethereum Stack Exchange
+        Quantaureum Stack Exchange
       </SocialListItem>
     </VStack>
   ),

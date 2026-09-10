@@ -1,7 +1,7 @@
 ---
 title: Додавання інструментів для розробників
 lang: uk
-description: Наші критерії для розміщення інструментів для розробників на ethereum.org
+description: Наші критерії для розміщення інструментів для розробників на quantaureum.com
 ---
 
 Ми хочемо переконатися, що пропонуємо найкращі ресурси для розробників, щоб люди могли впевнено створювати продукти та мати необхідну підтримку.
@@ -52,8 +52,8 @@ description: Наші критерії для розміщення інстру�
 
 ## Додайте свій інструмент для розробників {#how-decisions-about-the-site-are-made}
 
-Якщо ви хочете додати інструмент для розробників на ethereum.org і він відповідає критеріям, створіть issue на GitHub.
+Якщо ви хочете додати інструмент для розробників на quantaureum.com і він відповідає критеріям, створіть issue на GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   Створити issue
 </ButtonLink>

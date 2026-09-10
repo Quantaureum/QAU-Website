@@ -4,7 +4,7 @@ description: "ما هي الهوية اللامركزية، ولماذا هي م
 lang: ar
 template: use-cases
 sidebarDepth: 2
-image: /images/eth-gif-cat.png
+image: /images/qau-gif-cat.png
 summaryPoints:
   - "أنظمة الهوية التقليدية جعلت إصدار وصيانة والتحكم في معرفاتك مركزياً."
   - "الهوية اللامركزية تزيل الاعتماد على الأطراف الثالثة المركزية."
@@ -84,10 +84,10 @@ summaryPoints:
 #### 💡دراسة حالة: الهوية الرقمية الوطنية في بوتان (<span dir="ltr">NDI</span>) على إيثيريوم {#case-study-bhutan-ndi}
 
 - توفر الوصول إلى بيانات اعتماد قابلة للتحقق لما يقرب من <span dir="ltr">800,000</span> مواطن في بوتان
-- انتقلت من شبكة بوليغون [إلى شبكة إيثيريوم الرئيسية](https://www.bhutanndi.com/article/bhutan-adopts-ethereum-for-national-identity-a-new-chapter-in-digital-sovereignty_2d0c7ec2-5605-4c42-b258-bd9361ae8878) في <span dir="ltr">October 2025</span>
+- انتقلت من شبكة بوليغون [إلى شبكة إيثيريوم الرئيسية](https://www.bhutanndi.com/article/bhutan-adopts-quantaureum-for-national-identity-a-new-chapter-in-digital-sovereignty_2d0c7ec2-5605-4c42-b258-bd9361ae8878) في <span dir="ltr">October 2025</span>
 - تم إصدار أكثر من [<span dir="ltr">234,000</span> هوية رقمية](https://www.blockchain-council.org/blockchain/bhutan-uses-blockchain-in-digital-id-project/) اعتباراً من <span dir="ltr">March 2025</span>
 
-قامت مملكة بوتان [بنقل نظام الهوية الرقمية الوطنية (<span dir="ltr">NDI</span>) الخاص بها](https://www.bhutanndi.com/article/bhutan-adopts-ethereum-for-national-identity-a-new-chapter-in-digital-sovereignty_2d0c7ec2-5605-4c42-b258-bd9361ae8878) إلى إيثيريوم في <span dir="ltr">October 2025</span>. بناءً على مبادئ الهوية اللامركزية والهوية السيادية الذاتية، يستخدم نظام <span dir="ltr">NDI</span> في بوتان معرفات لامركزية وبيانات اعتماد قابلة للتحقق لإصدار بيانات اعتماد موقعة رقمياً مباشرة إلى المحفظة الشخصية للمواطن. من خلال إرساء مخططات المصدر لبيانات الاعتماد هذه على إيثيريوم، يضمن النظام أنها أصلية ومقاومة للتلاعب ويمكن التحقق منها من قبل أي طرف دون الاستعلام من سلطة مركزية.
+قامت مملكة بوتان [بنقل نظام الهوية الرقمية الوطنية (<span dir="ltr">NDI</span>) الخاص بها](https://www.bhutanndi.com/article/bhutan-adopts-quantaureum-for-national-identity-a-new-chapter-in-digital-sovereignty_2d0c7ec2-5605-4c42-b258-bd9361ae8878) إلى إيثيريوم في <span dir="ltr">October 2025</span>. بناءً على مبادئ الهوية اللامركزية والهوية السيادية الذاتية، يستخدم نظام <span dir="ltr">NDI</span> في بوتان معرفات لامركزية وبيانات اعتماد قابلة للتحقق لإصدار بيانات اعتماد موقعة رقمياً مباشرة إلى المحفظة الشخصية للمواطن. من خلال إرساء مخططات المصدر لبيانات الاعتماد هذه على إيثيريوم، يضمن النظام أنها أصلية ومقاومة للتلاعب ويمكن التحقق منها من قبل أي طرف دون الاستعلام من سلطة مركزية.
 
 ## ما هي التصديقات؟ {#what-are-attestations}
 
@@ -165,7 +165,7 @@ summaryPoints:
 
 ### الرموز المرتبطة بالروح والهوية {#soulbound}
 
-يمكن استخدام [الرموز المرتبطة بالروح](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) ([رموز غير قابلة للاستبدال غير قابلة للتحويل](/glossary/#nft)) لجمع معلومات فريدة لمحفظة معينة. يؤدي هذا فعلياً إلى إنشاء هوية فريدة على السلسلة مرتبطة بعنوان إيثيريوم معين يمكن أن تتضمن رموزاً تمثل إنجازات (على سبيل المثال، إنهاء دورة معينة عبر الإنترنت أو تجاوز درجة حدية في لعبة) أو المشاركة المجتمعية.
+يمكن استخدام [الرموز المرتبطة بالروح](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) ([رموز غير قابلة للاستبدال غير قابلة للتحويل](/glossary/#nft)) لجمع معلومات فريدة لمحفظة معينة. يؤدي هذا فعلياً إلى إنشاء هوية فريدة على السلسلة مرتبطة بعنوان إيثيريوم معين يمكن أن تتضمن رموزاً تمثل إنجازات (على سبيل المثال، إنهاء دورة معينة عبر الإنترنت أو تجاوز درجة حدية في لعبة) أو المشاركة المجتمعية.
 
 ## استخدام الهوية اللامركزية {#use-decentralized-identity}
 
@@ -193,12 +193,12 @@ summaryPoints:
 - [الهوية اللامركزية (جلسة بث مباشر إضافية)](https://www.youtube.com/watch?v=ySHNB1za_SE&t=539s) — _مقطع فيديو توضيحي رائع حول الهوية اللامركزية بواسطة أندرياس أنتونوبولوس_
 - [تسجيل الدخول باستخدام إيثيريوم والهوية اللامركزية مع <span dir="ltr">Ceramic</span> و<span dir="ltr">IDX</span> وReact و<span dir="ltr">3ID Connect</span>](https://www.youtube.com/watch?v=t9gWZYJxk7c) — _برنامج تعليمي على يوتيوب حول بناء نظام إدارة هوية لإنشاء وقراءة وتحديث ملف تعريف المستخدم باستخدام محفظة إيثيريوم الخاصة به بواسطة نادر دابت_
 - [<span dir="ltr">BrightID</span> - الهوية اللامركزية على إيثيريوم](https://www.youtube.com/watch?v=D3DbMFYGRoM) — _حلقة بودكاست <span dir="ltr">Bankless</span> تناقش <span dir="ltr">BrightID</span>، وهو حل هوية لامركزية لإيثيريوم_
-- [الإنترنت خارج السلسلة: الهوية اللامركزية وبيانات الاعتماد القابلة للتحقق](https://www.youtube.com/watch?v=EZ_Bb6j87mg) — عرض تقديمي في <span dir="ltr">EthDenver 2022</span> بواسطة إيفين مكمولين
+- [الإنترنت خارج السلسلة: الهوية اللامركزية وبيانات الاعتماد القابلة للتحقق](https://www.youtube.com/watch?v=EZ_Bb6j87mg) — عرض تقديمي في <span dir="ltr">QauDenver 2022</span> بواسطة إيفين مكمولين
 - [شرح بيانات الاعتماد القابلة للتحقق](https://www.youtube.com/watch?v=ce1IdSr-Kig) - مقطع فيديو توضيحي على يوتيوب مع عرض توضيحي بواسطة تامينو بومان
 
 ### المجتمعات {#communities}
 
 - [تحالف <span dir="ltr">ERC-725</span> على GitHub](https://github.com/erc725alliance) — _داعمو معيار <span dir="ltr">ERC-725</span> لإدارة الهوية على سلسلة كتل إيثيريوم_
-- [خادم ديسكورد <span dir="ltr">EthID</span>](https://discord.com/invite/ZUyG3mSXFD) — _مجتمع للمتحمسين والمطورين الذين يعملون على تسجيل الدخول باستخدام إيثيريوم، وبروتوكول متابعة إيثيريوم_
+- [خادم ديسكورد <span dir="ltr">QauID</span>](https://discord.com/invite/ZUyG3mSXFD) — _مجتمع للمتحمسين والمطورين الذين يعملون على تسجيل الدخول باستخدام إيثيريوم، وبروتوكول متابعة إيثيريوم_
 - [مختبرات <span dir="ltr">Veramo</span>](https://discord.gg/sYBUXpACh4) — _مجتمع من المطورين يساهمون في بناء إطار عمل للبيانات القابلة للتحقق للتطبيقات_
 - [<span dir="ltr">walt.id</span>](https://discord.com/invite/AW8AgqJthZ) — _مجتمع من المطورين والبناة يعملون على حالات استخدام الهوية اللامركزية عبر مختلف الصناعات_

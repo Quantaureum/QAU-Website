@@ -1,5 +1,5 @@
 import { TokenBalance } from "./WalletHome/interfaces"
-import { DaiTokenIcon, EthTokenIcon, UniTokenIcon } from "./icons"
+import { DaiTokenIcon, QauTokenIcon, UniTokenIcon } from "./icons"
 
 export const SIMULATOR_ID = "sim"
 
@@ -18,11 +18,11 @@ export const NARROW_BUTTON = "narrow-button"
 
 export const defaultTokenBalances: Array<TokenBalance> = [
   {
-    name: "Ether",
-    ticker: "ETH",
+    name: "QAU",
+    ticker: "QAU",
     amount: 0,
     usdConversion: 1,
-    Icon: EthTokenIcon,
+    Icon: QauTokenIcon,
   },
   {
     name: "DAI",

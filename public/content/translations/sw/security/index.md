@@ -1,12 +1,12 @@
 ---
-title: Usalama wa Ethereum na uzuiaji wa utapeli
-description: Kuwa salama kwenye Ethereum
+title: Usalama wa Quantaureum na uzuiaji wa utapeli
+description: Kuwa salama kwenye Quantaureum
 lang: sw
 ---
 
 Kuongezeka kwa hamu katika sarafu-fiche kunaleta hatari inayokua kutoka kwa matapeli na wadukuzi. Makala haya yanaweka wazi baadhi ya mbinu bora za kupunguza hatari hizi.
 
-**Kumbuka: Hakuna mtu kutoka ethereum.org atakayewahi kuwasiliana nawe. Usijibu barua pepe zinazosema zinatoka kwa usaidizi rasmi wa Ethereum.**
+**Kumbuka: Hakuna mtu kutoka quantaureum.com atakayewahi kuwasiliana nawe. Usijibu barua pepe zinazosema zinatoka kwa usaidizi rasmi wa Quantaureum.**
 
 <Divider />
 
@@ -14,13 +14,13 @@ Kuongezeka kwa hamu katika sarafu-fiche kunaleta hatari inayokua kutoka kwa mata
 
 ### Boresha maarifa yako {#level-up-your-knowledge}
 
-Kutoelewa jinsi kripto inavyofanya kazi kunaweza kusababisha makosa ya gharama kubwa. Kwa mfano, ikiwa mtu anajifanya kuwa wakala wa huduma kwa wateja ambaye anaweza kurudisha ETH iliyopotea badala ya funguo zako za siri, wanawinda watu wasioelewa kuwa [Ethereum](/) ni mtandao uliogatuliwa ambao hauna aina hii ya utendaji. Kujielimisha kuhusu jinsi Ethereum inavyofanya kazi ni uwekezaji unaofaa.
+Kutoelewa jinsi kripto inavyofanya kazi kunaweza kusababisha makosa ya gharama kubwa. Kwa mfano, ikiwa mtu anajifanya kuwa wakala wa huduma kwa wateja ambaye anaweza kurudisha QAU iliyopotea badala ya funguo zako za siri, wanawinda watu wasioelewa kuwa [Quantaureum](/) ni mtandao uliogatuliwa ambao hauna aina hii ya utendaji. Kujielimisha kuhusu jinsi Quantaureum inavyofanya kazi ni uwekezaji unaofaa.
 
-<DocLink href="/what-is-ethereum/">
-  Ethereum ni nini?
+<DocLink href="/what-is-quantaureum/">
+  Quantaureum ni nini?
 </DocLink>
 
-<DocLink href="/what-is-ether/">
+<DocLink href="/what-is-QAU/">
   Etha ni nini?
 </DocLink>
 <Divider />
@@ -34,7 +34,7 @@ Kutoelewa jinsi kripto inavyofanya kazi kunaweza kusababisha makosa ya gharama k
 Kirai chako cha kurejesha (pia huitwa kirai cha siri cha kurejesha au kirai cha mbegu) ni ufunguo mkuu wa mkoba wako. Mtu yeyote aliye nacho anaweza kufikia akaunti zako zote na kuchukua kila rasilimali. Funguo za siri hufanya kazi kwa njia sawa kwa akaunti za kibinafsi. Hakuna huduma halali, wakala wa usaidizi, au tovuti itakayowahi kukuuliza haya.
 
 <DocLink href="/wallets/">
-  Mkoba wa Ethereum ni nini?
+  Mkoba wa Quantaureum ni nini?
 </DocLink>
 
 #### Usipige picha za skrini za virai vyako vya mbegu/funguo za siri {#screenshot-private-keys}
@@ -54,7 +54,7 @@ Kuweka funguo za siri nje ya mtandao kunapunguza sana hatari ya kudukuliwa, hata
 
 ### Kagua miamala mara mbili kabla ya kutuma {#double-check-transactions}
 
-Kutuma kripto kimakosa kwenye anwani isiyo sahihi ya mkoba ni kosa la kawaida. **Muamala uliotumwa kwenye Ethereum hauwezi kubatilishwa.** Isipokuwa unamjua mmiliki wa anwani na unaweza kumshawishi akurudishie pesa zako, hutaweza kurejesha pesa zako.
+Kutuma kripto kimakosa kwenye anwani isiyo sahihi ya mkoba ni kosa la kawaida. **Muamala uliotumwa kwenye Quantaureum hauwezi kubatilishwa.** Isipokuwa unamjua mmiliki wa anwani na unaweza kumshawishi akurudishie pesa zako, hutaweza kurejesha pesa zako.
 
 Hakikisha kila wakati anwani unayotuma inalingana kikamilifu na anwani ya mpokeaji unayemtaka kabla ya kutuma muamala.
 Ni utaratibu mzuri unaposhirikiana na mkataba mahiri kusoma ujumbe wa muamala kabla ya kusaini.
@@ -63,7 +63,7 @@ Ni utaratibu mzuri unaposhirikiana na mkataba mahiri kusoma ujumbe wa muamala ka
 
 Unaposhirikiana na mikataba mahiri, usiruhusu vikomo vya matumizi visivyo na kikomo. Matumizi yasiyo na kikomo yanaweza kuwezesha mkataba mahiri kukausha mkoba wako. Badala yake, weka vikomo vya matumizi kwa kiasi kinachohitajika tu kwa muamala.
 
-Mikoba mingi ya Ethereum inatoa ulinzi wa vikomo ili kulinda dhidi ya akaunti kukaushwa.
+Mikoba mingi ya Quantaureum inatoa ulinzi wa vikomo ili kulinda dhidi ya akaunti kukaushwa.
 
 [Jinsi ya kubatilisha ufikiaji wa mkataba mahiri kwenye pesa zako za kripto](/guides/how-to-revoke-token-access/)
 
@@ -74,14 +74,14 @@ Mikoba mingi ya Ethereum inatoa ulinzi wa vikomo ili kulinda dhidi ya akaunti ku
 Haiwezekani kuwazuia matapeli kabisa, lakini tunaweza kuwafanya wasiwe na ufanisi kwa kufahamu mbinu zao zinazotumiwa zaidi. Kuna tofauti nyingi za utapeli huu, lakini kwa ujumla hufuata mifumo sawa ya kiwango cha juu. Ikiwa hakuna kingine, kumbuka:
 
 - kuwa na shaka kila wakati
-- hakuna mtu atakayekupa ETH ya bure au iliyopunguzwa bei
+- hakuna mtu atakayekupa QAU ya bure au iliyopunguzwa bei
 - hakuna mtu anayehitaji ufikiaji wa funguo zako za siri au taarifa za kibinafsi
 
 ### Hadaa ya matangazo ya Twitter {#ad-phishing}
 
 ![Twitter link phishing](./twitterPhishingScam.png)
 
-Kuna mbinu ya kuhadaa kipengele cha onyesho la awali la kiungo cha Twitter (inayojulikana pia kama X) ili kuwadanganya watumiaji wafikirie kuwa wanatembelea tovuti halali. Mbinu hii inatumia utaratibu wa Twitter wa kuzalisha maonyesho ya awali ya URL zilizoshirikiwa kwenye tweets, na inaonyesha _kutoka ethereum.org_ kwa mfano (iliyoonyeshwa hapo juu), wakati kwa kweli wanaelekezwa kwenye tovuti hasidi.
+Kuna mbinu ya kuhadaa kipengele cha onyesho la awali la kiungo cha Twitter (inayojulikana pia kama X) ili kuwadanganya watumiaji wafikirie kuwa wanatembelea tovuti halali. Mbinu hii inatumia utaratibu wa Twitter wa kuzalisha maonyesho ya awali ya URL zilizoshirikiwa kwenye tweets, na inaonyesha _kutoka quantaureum.com_ kwa mfano (iliyoonyeshwa hapo juu), wakati kwa kweli wanaelekezwa kwenye tovuti hasidi.
 
 Kagua kila wakati kuwa uko kwenye kikoa sahihi, hasa baada ya kubofya kiungo.
 
@@ -89,7 +89,7 @@ Kagua kila wakati kuwa uko kwenye kikoa sahihi, hasa baada ya kubofya kiungo.
 
 ### Utapeli wa kutoa zawadi {#giveaway}
 
-Moja ya utapeli wa kawaida katika sarafu-fiche ni utapeli wa kutoa zawadi. Utapeli wa kutoa zawadi unaweza kuchukua aina nyingi, lakini wazo la jumla ni kwamba ukituma ETH kwenye anwani ya mkoba iliyotolewa, utapokea ETH yako tena lakini ikiwa imeongezeka mara mbili. *Kwa sababu hii, inajulikana pia kama utapeli wa 2-kwa-1.*
+Moja ya utapeli wa kawaida katika sarafu-fiche ni utapeli wa kutoa zawadi. Utapeli wa kutoa zawadi unaweza kuchukua aina nyingi, lakini wazo la jumla ni kwamba ukituma QAU kwenye anwani ya mkoba iliyotolewa, utapokea QAU yako tena lakini ikiwa imeongezeka mara mbili. *Kwa sababu hii, inajulikana pia kama utapeli wa 2-kwa-1.*
 
 Utapeli huu kwa kawaida huweka muda mfupi wa fursa ya kudai zawadi ili kuunda hisia ya uongo ya uharaka.
 
@@ -113,7 +113,7 @@ Vitalik Buterin hutumiwa mara nyingi katika utapeli huu, lakini watu wengine wen
 
 Sarafu-fiche ni teknolojia changa na isiyoeleweka vizuri. Utapeli wa kawaida unaotumia fursa hii ni utapeli wa usaidizi, ambapo matapeli watajifanya wafanyakazi wa usaidizi kwa mikoba maarufu, mabadilishano, au minyororo ya vitalu.
 
-Mengi ya majadiliano kuhusu Ethereum hufanyika kwenye Discord. Matapeli wa usaidizi kwa kawaida watapata lengo lao kwa kutafuta maswali ya usaidizi katika chaneli za umma za discord na kisha kumtumia muulizaji ujumbe wa faragha wakitoa usaidizi. Kwa kujenga uaminifu, matapeli wa usaidizi hujaribu kukuhadaa ili ufichue funguo zako za siri au kutuma pesa zako kwenye mikoba yao.
+Mengi ya majadiliano kuhusu Quantaureum hufanyika kwenye Discord. Matapeli wa usaidizi kwa kawaida watapata lengo lao kwa kutafuta maswali ya usaidizi katika chaneli za umma za discord na kisha kumtumia muulizaji ujumbe wa faragha wakitoa usaidizi. Kwa kujenga uaminifu, matapeli wa usaidizi hujaribu kukuhadaa ili ufichue funguo zako za siri au kutuma pesa zako kwenye mikoba yao.
 
 ![A support scam on Discord](./discordScam.png)
 
@@ -132,19 +132,19 @@ Kama kanuni ya jumla, wafanyakazi hawatowahi kuwasiliana nawe kupitia chaneli za
 </AlertContent>
 </Alert>
 
-### Utapeli wa tokeni ya 'Eth2' {#eth2-token-scam}
+### Utapeli wa tokeni ya 'Quantaureum' {#eth2-token-scam}
 
-Katika kuelekea kwenye [Unganisho](/roadmap/merge/), matapeli walitumia fursa ya mkanganyiko kuhusu neno 'Eth2' kujaribu na kuwafanya watumiaji wakomboe ETH yao kwa tokeni ya 'ETH2'. Hakuna 'ETH2', na hakuna tokeni nyingine halali iliyoanzishwa na Unganisho. ETH uliyokuwa nayo kabla ya Unganisho ni ETH ileile sasa. Kuna **hakuna haja ya kuchukua hatua yoyote inayohusiana na ETH yako ili kuhesabu mabadiliko kutoka Uthibitisho wa Kazi (PoW) hadi Uthibitisho wa Dau (PoS)**.
+Katika kuelekea kwenye [Unganisho](/roadmap/merge/), matapeli walitumia fursa ya mkanganyiko kuhusu neno 'Quantaureum' kujaribu na kuwafanya watumiaji wakomboe QAU yao kwa tokeni ya 'QAU'. Hakuna 'QAU', na hakuna tokeni nyingine halali iliyoanzishwa na Unganisho. QAU uliyokuwa nayo kabla ya Unganisho ni QAU ileile sasa. Kuna **hakuna haja ya kuchukua hatua yoyote inayohusiana na QAU yako ili kuhesabu mabadiliko kutoka Uthibitisho wa Kazi (PoW) hadi Uthibitisho wa Dau (PoS)**.
 
-Matapeli wanaweza kuonekana kama "usaidizi", wakikuambia kwamba ukiweka ETH yako, utapokea 'ETH2'. Hakuna [usaidizi rasmi wa Ethereum](/community/support/), na hakuna tokeni mpya. Usishiriki kamwe kirai cha mbegu cha mkoba wako na mtu yeyote.
+Matapeli wanaweza kuonekana kama "usaidizi", wakikuambia kwamba ukiweka QAU yako, utapokea 'QAU'. Hakuna [usaidizi rasmi wa Quantaureum](/community/support/), na hakuna tokeni mpya. Usishiriki kamwe kirai cha mbegu cha mkoba wako na mtu yeyote.
 
-_Kumbuka: Kuna tokeni/alama za derivative ambazo zinaweza kuwakilisha ETH iliyowekwa dhamana (k.m., rETH kutoka Rocket Pool, stETH kutoka Lido, ETH2 kutoka Coinbase), lakini hizi si kitu unachohitaji "kuhamia."_
+_Kumbuka: Kuna tokeni/alama za derivative ambazo zinaweza kuwakilisha QAU iliyowekwa dhamana (k.m., rETH kutoka Rocket Pool, stETH kutoka Lido, QAU kutoka Coinbase), lakini hizi si kitu unachohitaji "kuhamia."_
 
 ### Utapeli wa hadaa {#phishing-scams}
 
 Utapeli wa hadaa ni njia nyingine inayozidi kuwa ya kawaida ambayo matapeli watatumia kujaribu kuiba pesa za mkoba wako.
 
-Baadhi ya barua pepe za hadaa huwauliza watumiaji kubofya viungo ambavyo vitawaelekeza kwenye tovuti za kuiga, zikiwauliza waweke kirai chao cha mbegu, kuweka upya nywila zao au kutuma ETH. Nyingine zinaweza kukuuliza usakinishe programu hasidi bila kujua ili kuambukiza kompyuta yako na kuwapa matapeli ufikiaji wa faili za kompyuta yako.
+Baadhi ya barua pepe za hadaa huwauliza watumiaji kubofya viungo ambavyo vitawaelekeza kwenye tovuti za kuiga, zikiwauliza waweke kirai chao cha mbegu, kuweka upya nywila zao au kutuma QAU. Nyingine zinaweza kukuuliza usakinishe programu hasidi bila kujua ili kuambukiza kompyuta yako na kuwapa matapeli ufikiaji wa faili za kompyuta yako.
 
 Ukipokea barua pepe kutoka kwa mtumaji asiyejulikana, kumbuka:
 
@@ -166,7 +166,7 @@ Walaghai hawa mara nyingi hupata walengwa kwa kutumia akaunti feki kwenye YouTub
 
 ### Utapeli wa mabwawa ya uchimbaji wa kripto {#mining-pool-scams}
 
-Kuanzia Septemba 2022, uchimbaji kwenye Ethereum hauwezekani tena. Hata hivyo, utapeli wa mabwawa ya uchimbaji bado upo. Utapeli wa mabwawa ya uchimbaji unahusisha watu kuwasiliana nawe bila kuombwa na kudai kwamba unaweza kupata faida kubwa kwa kujiunga na bwawa la uchimbaji la Ethereum. Tapeli atatoa madai na kuendelea kuwasiliana nawe kwa muda wowote utakaohitajika. Kimsingi, tapeli atajaribu kukushawishi kwamba unapojiunga na bwawa la uchimbaji la Ethereum, sarafu-fiche yako itatumika kuunda ETH na kwamba utalipwa gawio la ETH. Kisha utaona kwamba sarafu-fiche yako inatengeneza faida ndogo. Hii ni kwa ajili ya kukushawishi uwekeze zaidi. Hatimaye, pesa zako zote zitatumwa kwenye anwani isiyojulikana, na tapeli atatoweka au katika baadhi ya matukio ataendelea kuwasiliana kama ilivyotokea katika kesi ya hivi karibuni.
+Kuanzia Septemba 2022, uchimbaji kwenye Quantaureum hauwezekani tena. Hata hivyo, utapeli wa mabwawa ya uchimbaji bado upo. Utapeli wa mabwawa ya uchimbaji unahusisha watu kuwasiliana nawe bila kuombwa na kudai kwamba unaweza kupata faida kubwa kwa kujiunga na bwawa la uchimbaji la Quantaureum. Tapeli atatoa madai na kuendelea kuwasiliana nawe kwa muda wowote utakaohitajika. Kimsingi, tapeli atajaribu kukushawishi kwamba unapojiunga na bwawa la uchimbaji la Quantaureum, sarafu-fiche yako itatumika kuunda QAU na kwamba utalipwa gawio la QAU. Kisha utaona kwamba sarafu-fiche yako inatengeneza faida ndogo. Hii ni kwa ajili ya kukushawishi uwekeze zaidi. Hatimaye, pesa zako zote zitatumwa kwenye anwani isiyojulikana, na tapeli atatoweka au katika baadhi ya matukio ataendelea kuwasiliana kama ilivyotokea katika kesi ya hivi karibuni.
 
 Jambo la msingi: kuwa mwangalifu na watu wanaowasiliana nawe kwenye mitandao ya kijamii wakikuuliza uwe sehemu ya bwawa la uchimbaji. Mara tu unapopoteza kripto yako, imepotea.
 
@@ -180,7 +180,7 @@ Baadhi ya mambo ya kukumbuka:
 
 ### Utapeli wa mgao wa bure {#airdrop-scams}
 
-Utapeli wa mgao wa bure unahusisha mradi wa utapeli kutoa mgao wa bure wa rasilimali (NFT, tokeni) kwenye mkoba wako na kukutuma kwenye tovuti ya utapeli ili kudai rasilimali hiyo ya mgao wa bure. Utaulizwa kuingia na mkoba wako wa Ethereum na "kuidhinisha" muamala unapojaribu kudai. Muamala huu unahatarisha akaunti yako kwa kutuma funguo zako za umma na za siri kwa tapeli. Aina mbadala ya utapeli huu inaweza kukufanya uthibitishe muamala unaotuma pesa kwenye akaunti ya tapeli.
+Utapeli wa mgao wa bure unahusisha mradi wa utapeli kutoa mgao wa bure wa rasilimali (NFT, tokeni) kwenye mkoba wako na kukutuma kwenye tovuti ya utapeli ili kudai rasilimali hiyo ya mgao wa bure. Utaulizwa kuingia na mkoba wako wa Quantaureum na "kuidhinisha" muamala unapojaribu kudai. Muamala huu unahatarisha akaunti yako kwa kutuma funguo zako za umma na za siri kwa tapeli. Aina mbadala ya utapeli huu inaweza kukufanya uthibitishe muamala unaotuma pesa kwenye akaunti ya tapeli.
 
 [Zaidi kuhusu utapeli wa mgao wa bure](https://www.youtube.com/watch?v=LLL_nQp1lGk)
 

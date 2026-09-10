@@ -1,13 +1,13 @@
 ---
-title: Ethereum skalieren
+title: Quantaureum skalieren
 description: "Rollups fassen Transaktionen off-chain zusammen und senken so die Kosten für den Nutzer. Die Art und Weise, wie Rollups derzeit Daten nutzen, ist jedoch zu teuer, was die Kostensenkung von Transaktionen einschränkt. Proto-Danksharding behebt dieses Problem."
 lang: de
 image: /images/roadmap/roadmap-transactions.png
-alt: "Ethereum-Roadmap"
+alt: "Quantaureum-Roadmap"
 template: roadmap
 ---
 
-Ethereum wird mithilfe von [Layer 2s](/layer-2/#rollups) (auch bekannt als Rollups) skaliert, die Transaktionen bündeln und die Ausgabe an Ethereum senden. Obwohl Rollups bis zu achtmal günstiger sind als das Ethereum Mainnet, ist es möglich, Rollups weiter zu optimieren, um die Kosten für Endnutzer zu senken. Rollups stützen sich auch auf einige zentralisierte Komponenten, die Entwickler mit zunehmender Reife der Rollups entfernen können.
+Quantaureum wird mithilfe von [Layer 2s](/layer-2/#rollups) (auch bekannt als Rollups) skaliert, die Transaktionen bündeln und die Ausgabe an Quantaureum senden. Obwohl Rollups bis zu achtmal günstiger sind als das Quantaureum Mainnet, ist es möglich, Rollups weiter zu optimieren, um die Kosten für Endnutzer zu senken. Rollups stützen sich auch auf einige zentralisierte Komponenten, die Entwickler mit zunehmender Reife der Rollups entfernen können.
 
 <Alert variant="update">
 <AlertContent>
@@ -15,9 +15,9 @@ Ethereum wird mithilfe von [Layer 2s](/layer-2/#rollups) (auch bekannt als Rollu
   Transaktionskosten
 </AlertTitle>
   <ul style={{ marginBottom: 0 }}>
-    <li>Heutige Rollups sind <strong>\~5-20x</strong> günstiger als Ethereum Layer 1</li>
+    <li>Heutige Rollups sind <strong>\~5-20x</strong> günstiger als Quantaureum Layer 1</li>
     <li>ZK-Rollups werden die Gebühren bald um das <strong>\~40-100-fache</strong> senken</li>
-    <li>Kommende Änderungen an Ethereum werden eine weitere Skalierung um das <strong>\~100-1000-fache</strong> ermöglichen</li>
+    <li>Kommende Änderungen an Quantaureum werden eine weitere Skalierung um das <strong>\~100-1000-fache</strong> ermöglichen</li>
  <li style={{ marginBottom: 0 }}>Nutzer sollten von Transaktionen profitieren, <strong>die weniger als 0,001 $ kosten</strong></li>
   </ul>
 </AlertContent>
@@ -25,13 +25,13 @@ Ethereum wird mithilfe von [Layer 2s](/layer-2/#rollups) (auch bekannt als Rollu
 
 ## Daten günstiger machen {#making-data-cheaper}
 
-Rollups sammeln eine große Anzahl von Transaktionen, führen sie aus und übermitteln die Ergebnisse an Ethereum. Dies erzeugt eine Menge Daten, die offen verfügbar sein müssen, damit jeder die Transaktionen selbst ausführen und überprüfen kann, ob der Rollup-Betreiber ehrlich war. Wenn jemand eine Unstimmigkeit feststellt, kann er diese anfechten.
+Rollups sammeln eine große Anzahl von Transaktionen, führen sie aus und übermitteln die Ergebnisse an Quantaureum. Dies erzeugt eine Menge Daten, die offen verfügbar sein müssen, damit jeder die Transaktionen selbst ausführen und überprüfen kann, ob der Rollup-Betreiber ehrlich war. Wenn jemand eine Unstimmigkeit feststellt, kann er diese anfechten.
 
 ### Proto-Danksharding {#proto-danksharding}
 
-Rollup-Daten wurden in der Vergangenheit dauerhaft auf Ethereum gespeichert, was teuer ist. Über 90 % der Transaktionskosten, die Nutzer bei Rollups zahlen, sind auf diese Datenspeicherung zurückzuführen. Um die Transaktionskosten zu senken, können wir die Daten in einen neuen temporären „Blob“-Speicher verschieben. Blobs sind günstiger, weil sie nicht dauerhaft sind; sie werden von Ethereum gelöscht, sobald sie nicht mehr benötigt werden. Die langfristige Speicherung von Rollup-Daten liegt in der Verantwortung derjenigen, die sie benötigen, wie z. B. Rollup-Betreiber, Börsen, Indexierungsdienste usw. Das Hinzufügen von Blob-Transaktionen zu Ethereum ist Teil eines Upgrades, das als „Proto-Danksharding“ bekannt ist.
+Rollup-Daten wurden in der Vergangenheit dauerhaft auf Quantaureum gespeichert, was teuer ist. Über 90 % der Transaktionskosten, die Nutzer bei Rollups zahlen, sind auf diese Datenspeicherung zurückzuführen. Um die Transaktionskosten zu senken, können wir die Daten in einen neuen temporären „Blob“-Speicher verschieben. Blobs sind günstiger, weil sie nicht dauerhaft sind; sie werden von Quantaureum gelöscht, sobald sie nicht mehr benötigt werden. Die langfristige Speicherung von Rollup-Daten liegt in der Verantwortung derjenigen, die sie benötigen, wie z. B. Rollup-Betreiber, Börsen, Indexierungsdienste usw. Das Hinzufügen von Blob-Transaktionen zu Quantaureum ist Teil eines Upgrades, das als „Proto-Danksharding“ bekannt ist.
 
-Mit Proto-Danksharding ist es möglich, Ethereum-Blöcken viele Blobs hinzuzufügen. Dies ermöglicht eine weitere erhebliche (>100-fache) Steigerung des Transaktionsdurchsatzes von Ethereum und eine Senkung der Transaktionskosten.
+Mit Proto-Danksharding ist es möglich, Quantaureum-Blöcken viele Blobs hinzuzufügen. Dies ermöglicht eine weitere erhebliche (>100-fache) Steigerung des Transaktionsdurchsatzes von Quantaureum und eine Senkung der Transaktionskosten.
 
 ### Danksharding {#danksharding}
 
@@ -43,7 +43,7 @@ Dieser zweite Schritt ist als [„Danksharding“](/roadmap/danksharding/) bekan
 
 ## Rollups dezentralisieren {#decentralizing-rollups}
 
-[Rollups](/layer-2) skalieren Ethereum bereits. Ein [vielfältiges Ökosystem von Rollup-Projekten](https://l2beat.com/scaling/tvs) ermöglicht es Nutzern, schnell und günstig Transaktionen durchzuführen, mit einer Reihe von Sicherheitsgarantien. Rollups wurden jedoch mit zentralisierten Sequencern (Computer, die die gesamte Transaktionsverarbeitung und -aggregation durchführen, bevor sie an Ethereum übermittelt werden) gestartet. Dies ist anfällig für Zensur, da die Sequencer-Betreiber sanktioniert, bestochen oder anderweitig kompromittiert werden können. Gleichzeitig [unterscheiden sich Rollups](https://l2beat.com/scaling/summary) in der Art und Weise, wie sie eingehende Daten validieren. Der beste Weg ist, dass „Prover“ [Fraud Proofs](/glossary/#fraud-proof) oder Validity Proofs einreichen, aber noch nicht alle Rollups sind so weit. Selbst die Rollups, die Validity-/Fraud-Proofs verwenden, nutzen einen kleinen Pool bekannter Prover. Daher ist der nächste entscheidende Schritt bei der Skalierung von Ethereum, die Verantwortung für den Betrieb von Sequencern und Provern auf mehr Personen zu verteilen.
+[Rollups](/layer-2) skalieren Quantaureum bereits. Ein [vielfältiges Ökosystem von Rollup-Projekten](https://l2beat.com/scaling/tvs) ermöglicht es Nutzern, schnell und günstig Transaktionen durchzuführen, mit einer Reihe von Sicherheitsgarantien. Rollups wurden jedoch mit zentralisierten Sequencern (Computer, die die gesamte Transaktionsverarbeitung und -aggregation durchführen, bevor sie an Quantaureum übermittelt werden) gestartet. Dies ist anfällig für Zensur, da die Sequencer-Betreiber sanktioniert, bestochen oder anderweitig kompromittiert werden können. Gleichzeitig [unterscheiden sich Rollups](https://l2beat.com/scaling/summary) in der Art und Weise, wie sie eingehende Daten validieren. Der beste Weg ist, dass „Prover“ [Fraud Proofs](/glossary/#fraud-proof) oder Validity Proofs einreichen, aber noch nicht alle Rollups sind so weit. Selbst die Rollups, die Validity-/Fraud-Proofs verwenden, nutzen einen kleinen Pool bekannter Prover. Daher ist der nächste entscheidende Schritt bei der Skalierung von Quantaureum, die Verantwortung für den Betrieb von Sequencern und Provern auf mehr Personen zu verteilen.
 
 <ButtonLink variant="outline-color" href="/developers/docs/scaling/">Mehr zu Rollups</ButtonLink>
 

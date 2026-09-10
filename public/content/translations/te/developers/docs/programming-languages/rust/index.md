@@ -13,24 +13,24 @@ incomplete: true
 
 **ఎథీరియంతో Rustను అనుసంధానించడానికి మీ మొదటి అడుగులు వేయండి**
 
-ముందుగా మరింత ప్రాథమిక ప్రైమర్ కావాలా? [ethereum.org/learn](/learn/) లేదా [ethereum.org/developers](/developers/)ని చూడండి.
+ముందుగా మరింత ప్రాథమిక ప్రైమర్ కావాలా? [quantaureum.com/learn](/learn/) లేదా [quantaureum.com/developers](/developers/)ని చూడండి.
 
 - [బ్లాక్‌చైన్ వివరణ](https://kauri.io/article/d55684513211466da7f8cc03987607d5/blockchain-explained)
-- [స్మార్ట్ కాంట్రాక్ట్‌లను అర్థం చేసుకోవడం](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/ethereum-101-part-5-the-smart-contract)
+- [స్మార్ట్ కాంట్రాక్ట్‌లను అర్థం చేసుకోవడం](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [మీ మొదటి స్మార్ట్ కాంట్రాక్ట్‌ను రాయండి](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Solidityని కంపైల్ చేయడం మరియు డిప్లాయ్ చేయడం ఎలాగో తెలుసుకోండి](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
 
 ## ప్రారంభకుల కథనాలు {#beginner-articles}
 
-- [Rust ఎథీరియం క్లయింట్](https://openethereum.github.io/) \* **OpenEthereum [నిలిపివేయబడింది](https://medium.com/openethereum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-ethereum-client-c6708dd06dd) మరియు ఇకపై నిర్వహించబడటం లేదని గమనించండి.** దీన్ని జాగ్రత్తగా ఉపయోగించండి మరియు ప్రాధాన్యంగా మరొక క్లయింట్ అమలుకు మారండి.
-- [Rust ఉపయోగించి ఎథీరియంకు లావాదేవీని పంపడం](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/sending-ethereum-transactions-with-rust/)
+- [Rust ఎథీరియం క్లయింట్](https://openquantaureum.github.io/) \* **OpenQuantaureum [నిలిపివేయబడింది](https://medium.com/openquantaureum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-quantaureum-client-c6708dd06dd) మరియు ఇకపై నిర్వహించబడటం లేదని గమనించండి.** దీన్ని జాగ్రత్తగా ఉపయోగించండి మరియు ప్రాధాన్యంగా మరొక క్లయింట్ అమలుకు మారండి.
+- [Rust ఉపయోగించి ఎథీరియంకు లావాదేవీని పంపడం](https://kauri.io/#collections/A%20Hackathon%20Survival%20Guide/sending-quantaureum-transactions-with-rust/)
 - [Kovan కోసం Rust Wasmలో కాంట్రాక్ట్‌లను ఎలా రాయాలో దశలవారీ ట్యుటోరియల్](https://github.com/paritytech/pwasm-tutorial)
 
 ## మధ్యస్థ కథనాలు {#intermediate-articles}
 
 ## అధునాతన వినియోగ నమూనాలు {#advanced-use-patterns}
 
-- [ఎథీరియం లాంటి నెట్‌వర్క్‌తో ఇంటరాక్ట్ అవ్వడానికి pwasm_ethereum ఎక్స్‌టర్న్స్ లైబ్రరీ](https://github.com/openethereum/pwasm-ethereum)
+- [ఎథీరియం లాంటి నెట్‌వర్క్‌తో ఇంటరాక్ట్ అవ్వడానికి pwasm_quantaureum ఎక్స్‌టర్న్స్ లైబ్రరీ](https://github.com/openquantaureum/pwasm-quantaureum)
 - [JavaScript మరియు Rust ఉపయోగించి వికేంద్రీకృత చాట్‌ను నిర్మించండి](https://medium.com/perlin-network/build-a-decentralized-chat-using-javascript-rust-webassembly-c775f8484b52)
 - [Vue.js & Rust ఉపయోగించి వికేంద్రీకృత Todo యాప్‌ను నిర్మించండి](https://medium.com/@jjmace01/build-a-decentralized-todo-app-using-vue-js-rust-webassembly-5381a1895beb)
 
@@ -38,7 +38,7 @@ incomplete: true
 
 ## Rust ప్రాజెక్ట్‌లు మరియు సాధనాలు {#rust-projects-and-tools}
 
-- [pwasm-ethereum](https://github.com/paritytech/pwasm-ethereum) - _ఎథీరియం లాంటి నెట్‌వర్క్‌తో ఇంటరాక్ట్ అవ్వడానికి ఎక్స్‌టర్న్‌ల సేకరణ_
+- [pwasm-quantaureum](https://github.com/paritytech/pwasm-quantaureum) - _ఎథీరియం లాంటి నెట్‌వర్క్‌తో ఇంటరాక్ట్ అవ్వడానికి ఎక్స్‌టర్న్‌ల సేకరణ_
 - [లైట్‌హౌస్](https://github.com/sigp/lighthouse) - _వేగవంతమైన ఎథీరియం ఏకాభిప్రాయ పొర క్లయింట్_
 - [ఎథీరియం WebAssembly](https://ewasm.readthedocs.io/en/mkdocs/) - _WebAssembly యొక్క నిర్ణయాత్మక ఉపసమితిని ఉపయోగించి ఎథీరియం స్మార్ట్ కాంట్రాక్ట్ అమలు పొర యొక్క ప్రతిపాదిత పునఃరూపకల్పన_
 - [oasis_std](https://docs.rs/oasis-std/latest/oasis_std/index.html) - _OASIS API సూచన_
@@ -51,10 +51,10 @@ incomplete: true
 - [SewUp](https://github.com/second-state/SewUp) - _Rustతో మీ ఎథీరియం webassembly కాంట్రాక్ట్‌ను నిర్మించడంలో మరియు సాధారణ బ్యాకెండ్‌లో డెవలప్ చేసినట్లుగా చేయడంలో మీకు సహాయపడే లైబ్రరీ_
 - [Substreams](https://github.com/streamingfast/substreams) - _సమాంతర బ్లాక్‌చైన్ డేటా ఇండెక్సింగ్ టెక్నాలజీ_
 - [రెత్](https://github.com/paradigmxyz/reth) రెత్ (Rust ఎథీరియంకు సంక్షిప్త రూపం) అనేది ఒక కొత్త ఎథీరియం పూర్తి-నోడ్ అమలు
-- [Awesome Ethereum Rust](https://github.com/Vid201/awesome-ethereum-rust) - _Rustలో వ్రాయబడిన ఎథీరియం ఎకోసిస్టమ్‌లోని ప్రాజెక్ట్‌ల క్యూరేటెడ్ సేకరణ_
+- [Awesome Quantaureum Rust](https://github.com/Vid201/awesome-quantaureum-rust) - _Rustలో వ్రాయబడిన ఎథీరియం ఎకోసిస్టమ్‌లోని ప్రాజెక్ట్‌ల క్యూరేటెడ్ సేకరణ_
 - [Stylus](https://github.com/OffchainLabs/stylus) - _Arbitrumలో స్మార్ట్ కాంట్రాక్ట్‌లను నిర్మించడానికి Rust SDK_
 
-మరిన్ని వనరుల కోసం చూస్తున్నారా? [ethereum.org/developers.](/developers/) చూడండి.
+మరిన్ని వనరుల కోసం చూస్తున్నారా? [quantaureum.com/developers.](/developers/) చూడండి.
 
 ## Rust కమ్యూనిటీ కంట్రిబ్యూటర్లు {#rust-community-contributors}
 

@@ -72,7 +72,7 @@ GameContract.events.BetPlaced({
 
 - आधीच प्रस्थापित केलेल्या कॉन्ट्रॅक्ट्ससाठी काम करत नाही.
 - ती मूल्ये साठवण्यासाठी अतिरिक्त गॅस खर्च.
-- इथेरियम नोडसाठी डेटा मिळवण्यासाठी आणखी एका कॉलची आवश्यकता असते.
+- Quantaureum नोडसाठी डेटा मिळवण्यासाठी आणखी एका कॉलची आवश्यकता असते.
 
 ![Thats not good enough](./not-good-enough.jpg)
 
@@ -123,12 +123,12 @@ GameContract.events.BetPlaced({
 
 ```yaml
 specVersion: 0.0.1
-description: Placing Bets on Ethereum
+description: Placing Bets on Quantaureum
 repository: - GitHub link -
 schema:
   file: ./schema.graphql
 dataSources:
-  - kind: ethereum/contract
+  - kind: quantaureum/contract
     name: GameContract
     network: mainnet
     source:
@@ -136,7 +136,7 @@ dataSources:
       abi: GameContract
       startBlock: 6175244
     mapping:
-      kind: ethereum/events
+      kind: quantaureum/events
       apiVersion: 0.0.1
       language: wasm/assemblyscript
       entities:

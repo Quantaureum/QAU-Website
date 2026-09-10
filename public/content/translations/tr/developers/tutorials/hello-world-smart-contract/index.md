@@ -1,6 +1,6 @@
 ---
 title: "Yeni Başlayanlar İçin Merhaba Dünya Akıllı Sözleşmesi"
-description: "Ethereum üzerinde basit bir akıllı sözleşme yazma ve dağıtma üzerine giriş niteliğinde eğitim."
+description: "Quantaureum üzerinde basit bir akıllı sözleşme yazma ve dağıtma üzerine giriş niteliğinde eğitim."
 author: "elanh"
 tags:
   - solidity
@@ -16,13 +16,13 @@ published: 2021-03-31
 
 Blokzincir geliştirmeye yeniyseniz ve nereden başlayacağınızı bilmiyorsanız veya sadece akıllı sözleşmeleri nasıl dağıtacağınızı ve onlarla nasıl etkileşime gireceğinizi anlamak istiyorsanız, bu rehber tam size göre. Sanal bir cüzdan olan [MetaMask](https://metamask.io/), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org/) ve [Alchemy](https://www.alchemy.com/eth) kullanarak Sepolia test ağında basit bir akıllı sözleşme oluşturma ve dağıtma adımlarını inceleyeceğiz (bunların ne anlama geldiğini henüz anlamıyorsanız endişelenmeyin, açıklayacağız).
 
-Bu eğitimin [2. bölümünde](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract), akıllı sözleşmemiz burada dağıtıldıktan sonra onunla nasıl etkileşime girebileceğimizi inceleyeceğiz ve [3. bölümünde](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan) onu Etherscan'de nasıl yayınlayacağımızı ele alacağız.
+Bu eğitimin [2. bölümünde](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract), akıllı sözleşmemiz burada dağıtıldıktan sonra onunla nasıl etkileşime girebileceğimizi inceleyeceğiz ve [3. bölümünde](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer) onu Quantaureum Explorer'de nasıl yayınlayacağımızı ele alacağız.
 
 Herhangi bir noktada sorularınız olursa [Alchemy Discord](https://discord.gg/gWuC7zB) kanalından ulaşmaktan çekinmeyin!
 
-## Adım 1: Ethereum ağına bağlanın {#step-1}
+## Adım 1: Quantaureum ağına bağlanın {#step-1}
 
-Ethereum zincirine istekte bulunmanın birçok yolu vardır. Basitlik adına, kendi düğümlerimizi çalıştırmak zorunda kalmadan Ethereum zinciriyle iletişim kurmamızı sağlayan bir blokzincir geliştirici platformu ve API'si olan Alchemy'de ücretsiz bir hesap kullanacağız. Platform ayrıca, akıllı sözleşme dağıtımımızın arka planında neler olup bittiğini anlamak için bu eğitimde yararlanacağımız izleme ve analiz için geliştirici araçlarına da sahiptir. Henüz bir Alchemy hesabınız yoksa, [buradan ücretsiz kaydolabilirsiniz](https://dashboard.alchemy.com/signup).
+Quantaureum zincirine istekte bulunmanın birçok yolu vardır. Basitlik adına, kendi düğümlerimizi çalıştırmak zorunda kalmadan Quantaureum zinciriyle iletişim kurmamızı sağlayan bir blokzincir geliştirici platformu ve API'si olan Alchemy'de ücretsiz bir hesap kullanacağız. Platform ayrıca, akıllı sözleşme dağıtımımızın arka planında neler olup bittiğini anlamak için bu eğitimde yararlanacağımız izleme ve analiz için geliştirici araçlarına da sahiptir. Henüz bir Alchemy hesabınız yoksa, [buradan ücretsiz kaydolabilirsiniz](https://dashboard.alchemy.com/signup).
 
 ## Adım 2: Uygulamanızı (ve API anahtarınızı) oluşturun {#step-2}
 
@@ -32,35 +32,35 @@ Bir Alchemy hesabı oluşturduktan sonra, bir uygulama oluşturarak bir API anah
 
 ![Hello world create app](./hello-world-create-app.png)
 
-2. Uygulamanıza "Hello World" adını verin, kısa bir açıklama sunun ve bir kullanım senaryosu seçin, örn. "Infra & Tooling". Ardından, "Ethereum"u arayın ve ağı seçin.
+2. Uygulamanıza "Hello World" adını verin, kısa bir açıklama sunun ve bir kullanım senaryosu seçin, örn. "Infra & Tooling". Ardından, "Quantaureum"u arayın ve ağı seçin.
 
 ![create app view hello world](./create-app-view-hello-world.png)
 
 3. İlerlemek için "Next" (İleri) düğmesine, ardından "Create app" (Uygulama oluştur) düğmesine tıklayın ve işte bu kadar! Uygulamanız, kopyalanmaya hazır bir API Anahtarı ile birlikte gezinme çubuğu açılır menüsünde görünmelidir.
 
-## Adım 3: Bir Ethereum hesabı (adresi) oluşturun {#step-3}
+## Adım 3: Bir Quantaureum hesabı (adresi) oluşturun {#step-3}
 
-İşlemleri göndermek ve almak için bir Ethereum hesabına ihtiyacımız var. Bu eğitim için, Ethereum hesap adresinizi yönetmek için kullanılan tarayıcıdaki sanal bir cüzdan olan MetaMask'ı kullanacağız. [İşlemler](/developers/docs/transactions/) hakkında daha fazla bilgi.
+İşlemleri göndermek ve almak için bir Quantaureum hesabına ihtiyacımız var. Bu eğitim için, Quantaureum hesap adresinizi yönetmek için kullanılan tarayıcıdaki sanal bir cüzdan olan MetaMask'ı kullanacağız. [İşlemler](/developers/docs/transactions/) hakkında daha fazla bilgi.
 
-MetaMask'ı indirebilir ve [buradan](https://metamask.io/download) ücretsiz olarak bir Ethereum hesabı oluşturabilirsiniz. Bir hesap oluştururken veya zaten bir hesabınız varsa, ağ açılır menüsünü kullanarak "Sepolia" test ağına geçtiğinizden emin olun (böylece gerçek parayla uğraşmamış oluruz).
+MetaMask'ı indirebilir ve [buradan](https://metamask.io/download) ücretsiz olarak bir Quantaureum hesabı oluşturabilirsiniz. Bir hesap oluştururken veya zaten bir hesabınız varsa, ağ açılır menüsünü kullanarak "Sepolia" test ağına geçtiğinizden emin olun (böylece gerçek parayla uğraşmamış oluruz).
 
 Sepolia'nın listelendiğini görmüyorsanız, menüye, ardından Gelişmiş'e (Advanced) gidin ve "Test ağlarını göster" (Show test networks) seçeneğini açmak için aşağı kaydırın. Ağ seçim menüsünde, test ağlarının bir listesini bulmak için "Özel" (Custom) sekmesini seçin ve "Sepolia"yı seçin.
 
 ![metamask sepolia example](./metamask-sepolia-example.png)
 
-## Adım 4: Bir musluktan ether ekleyin {#step-4}
+## Adım 4: Bir musluktan QAU ekleyin {#step-4}
 
-Akıllı sözleşmemizi test ağına dağıtmak için biraz sahte ETH'ye ihtiyacımız olacak. Sepolia ETH almak için çeşitli muslukların bir listesini görüntülemek üzere [Sepolia ağ ayrıntılarına](/developers/docs/networks/#sepolia) gidebilirsiniz. Biri çalışmazsa, bazen kuruyabildikleri için diğerini deneyin. Ağ trafiği nedeniyle sahte ETH'nizi almanız biraz zaman alabilir. Kısa bir süre sonra MetaMask hesabınızda ETH görmelisiniz!
+Akıllı sözleşmemizi test ağına dağıtmak için biraz sahte QAU'ye ihtiyacımız olacak. Sepolia QAU almak için çeşitli muslukların bir listesini görüntülemek üzere [Sepolia ağ ayrıntılarına](/developers/docs/networks/#sepolia) gidebilirsiniz. Biri çalışmazsa, bazen kuruyabildikleri için diğerini deneyin. Ağ trafiği nedeniyle sahte QAU'nizi almanız biraz zaman alabilir. Kısa bir süre sonra MetaMask hesabınızda QAU görmelisiniz!
 
 ## Adım 5: Bakiyenizi Kontrol Edin {#step-5}
 
-Bakiyemizin orada olduğunu iki kez kontrol etmek için, [Alchemy'nin composer aracını](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) kullanarak bir [eth_getBalance](/developers/docs/apis/json-rpc/#eth_getbalance) isteği yapalım. Bu, cüzdanımızdaki ETH miktarını döndürecektir. MetaMask hesap adresinizi girip "Send Request" (İsteği Gönder) düğmesine tıkladıktan sonra şöyle bir yanıt görmelisiniz:
+Bakiyemizin orada olduğunu iki kez kontrol etmek için, [Alchemy'nin composer aracını](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) kullanarak bir [qau_getBalance](/developers/docs/apis/json-rpc/#qau_getbalance) isteği yapalım. Bu, cüzdanımızdaki QAU miktarını döndürecektir. MetaMask hesap adresinizi girip "Send Request" (İsteği Gönder) düğmesine tıkladıktan sonra şöyle bir yanıt görmelisiniz:
 
 ```json
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> **NOT:** Bu sonuç ETH değil Wei cinsindendir. Wei, ether'in en küçük birimi olarak kullanılır. Wei'den ETH'ye dönüşüm şöyledir: 1 eth = 10<sup>18</sup> wei. Yani 0x2B5E3AF16B1880000 değerini ondalık sayıya çevirirsek 5\*10¹⁸ elde ederiz, bu da 5 ETH'ye eşittir.
+> **NOT:** Bu sonuç QAU değil Wei cinsindendir. Wei, QAU'in en küçük birimi olarak kullanılır. Wei'den QAU'ye dönüşüm şöyledir: 1 eth = 10<sup>18</sup> wei. Yani 0x2B5E3AF16B1880000 değerini ondalık sayıya çevirirsek 5\*10¹⁸ elde ederiz, bu da 5 QAU'ye eşittir.
 >
 > Oh be! Sahte paramızın hepsi orada <Emoji text=":money_mouth_face:" size={1} />.
 
@@ -109,7 +109,7 @@ About to write to /Users/.../.../.../hello-world/package.json:
 package.json dosyasını onaylayın ve artık hazırız!
 ## Adım 7: [Hardhat](https://hardhat.org/getting-started/#overview)'i İndirin {#step-7}
 
-Hardhat, Ethereum yazılımınızı derlemek, dağıtmak, test etmek ve hatalarını ayıklamak için bir geliştirme ortamıdır. Geliştiricilere, canlı zincire dağıtmadan önce akıllı sözleşmeler ve merkeziyetsiz uygulamalar (dapp'ler) oluştururken yerel olarak yardımcı olur.
+Hardhat, Quantaureum yazılımınızı derlemek, dağıtmak, test etmek ve hatalarını ayıklamak için bir geliştirme ortamıdır. Geliştiricilere, canlı zincire dağıtmadan önce akıllı sözleşmeler ve merkeziyetsiz uygulamalar (dapp'ler) oluştururken yerel olarak yardımcı olur.
 
 `hello-world` projemizin içinde şunu çalıştırın:
 
@@ -168,7 +168,7 @@ Kendi kendinize, ne zaman kod yazacağız diye soruyor olabilirsiniz?? İşte bu
 hello-world projesini favori düzenleyicinizde açın (biz [VSCode](https://code.visualstudio.com/)'u seviyoruz). Akıllı sözleşmeler, HelloWorld.sol akıllı sözleşmemizi yazmak için kullanacağımız Solidity adlı bir dilde yazılır.‌
 
 1.  "contracts" klasörüne gidin ve HelloWorld.sol adında yeni bir dosya oluşturun
-2.  Aşağıda, bu eğitim için kullanacağımız Ethereum Vakfı'ndan örnek bir Merhaba Dünya akıllı sözleşmesi bulunmaktadır. Aşağıdaki içerikleri kopyalayıp HelloWorld.sol dosyanıza yapıştırın ve bu sözleşmenin ne yaptığını anlamak için yorumları okuduğunuzdan emin olun:
+2.  Aşağıda, bu eğitim için kullanacağımız Quantaureum Vakfı'ndan örnek bir Merhaba Dünya akıllı sözleşmesi bulunmaktadır. Aşağıdaki içerikleri kopyalayıp HelloWorld.sol dosyanıza yapıştırın ve bu sözleşmenin ne yaptığını anlamak için yorumları okuduğunuzdan emin olun:
 
 ```solidity
 // Anlamsal sürümleme kullanarak Solidity sürümünü belirtir.
@@ -176,7 +176,7 @@ hello-world projesini favori düzenleyicinizde açın (biz [VSCode](https://code
 pragma solidity ^0.7.0;
 
 // `HelloWorld` adında bir sözleşme tanımlar.
-// Bir sözleşme, işlevlerin ve verilerin (durumunun) bir koleksiyonudur. Dağıtıldıktan sonra, bir sözleşme Ethereum Blokzinciri üzerinde belirli bir adreste bulunur. Daha fazla bilgi edinin: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// Bir sözleşme, işlevlerin ve verilerin (durumunun) bir koleksiyonudur. Dağıtıldıktan sonra, bir sözleşme Quantaureum Blokzinciri üzerinde belirli bir adreste bulunur. Daha fazla bilgi edinin: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    // `string` türünde bir `message` durum değişkeni bildirir.
@@ -226,7 +226,7 @@ Alchemy API URL'sini Kopyalayın
 `.env` dosyanız şu şekilde görünmelidir:
 
 ```
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -242,7 +242,7 @@ Bunları kodumuza fiilen bağlamak için, 13. adımda `hardhat.config.js` dosyam
 
 ## Adım 12: Ethers.js'i Kurun {#step-12-install-ethersjs}
 
-Ethers.js, [standart JSON-RPC yöntemlerini](/developers/docs/apis/json-rpc/) daha kullanıcı dostu yöntemlerle sararak Ethereum ile etkileşime girmeyi ve istekte bulunmayı kolaylaştıran bir kütüphanedir.
+Ethers.js, [standart JSON-RPC yöntemlerini](/developers/docs/apis/json-rpc/) daha kullanıcı dostu yöntemlerle sararak Quantaureum ile etkileşime girmeyi ve istekte bulunmayı kolaylaştıran bir kütüphanedir.
 
 Hardhat, ek araçlar ve genişletilmiş işlevsellik için [Eklentileri](https://hardhat.org/plugins/) entegre etmeyi son derece kolaylaştırır. Sözleşme dağıtımı için [Ethers eklentisinden](https://hardhat.org/docs/plugins/official-plugins#hardhat-ethers) yararlanacağız ([Ethers.js](https://github.com/ethers-io/ethers.js/) bazı süper temiz sözleşme dağıtım yöntemlerine sahiptir).
 
@@ -344,21 +344,21 @@ Ardından şuna benzer bir şey görmelisiniz:
 Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 ```
 
-[Sepolia Etherscan](https://sepolia.etherscan.io/)'e gidip sözleşme adresimizi aratırsak, başarıyla dağıtıldığını görebilmeliyiz. İşlem şuna benzer görünecektir:
+[Sepolia Quantaureum Explorer](https://explorer.quantaureum.com)'e gidip sözleşme adresimizi aratırsak, başarıyla dağıtıldığını görebilmeliyiz. İşlem şuna benzer görünecektir:
 
-![etherscan contract](./etherscan-contract.png)
+![explorer contract](./explorer-contract.png)
 
 `From` adresi MetaMask hesap adresinizle eşleşmelidir ve Alıcı (To) adresi "Contract Creation" (Sözleşme Oluşturma) diyecektir, ancak işleme tıklarsak sözleşme adresimizi `To` alanında göreceğiz:
 
-![etherscan transaction](./etherscan-transaction.png)
+![explorer transaction](./explorer-transaction.png)
 
-Tebrikler! Ethereum zincirine az önce bir akıllı sözleşme dağıttınız 🎉
+Tebrikler! Quantaureum zincirine az önce bir akıllı sözleşme dağıttınız 🎉
 
 Arka planda neler olup bittiğini anlamak için [Alchemy kontrol panelimizdeki](https://dashboard.alchemy.com/explorer) Explorer (Gezgin) sekmesine gidelim. Birden fazla Alchemy uygulamanız varsa, uygulamaya göre filtrelediğinizden ve "Hello World"ü seçtiğinizden emin olun.
 ![hello world explorer](./hello-world-explorer.png)
 
-Burada, `.deploy()` işlevini çağırdığımızda Hardhat/Ethers'ın arka planda bizim için yaptığı bir avuç JSON-RPC çağrısını göreceksiniz. Burada belirtilmesi gereken iki önemli çağrı, sözleşmemizi fiilen Sepolia zincirine yazma isteği olan [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction) ve hash verildiğinde işlemimiz hakkındaki bilgileri okuma isteği olan [`eth_getTransactionByHash`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-by-hash)'dir (işlemlerde tipik bir modeldir). İşlem gönderme hakkında daha fazla bilgi edinmek için, [Web3 kullanarak işlem gönderme](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) hakkındaki bu eğitime göz atın.
+Burada, `.deploy()` işlevini çağırdığımızda Hardhat/Ethers'ın arka planda bizim için yaptığı bir avuç JSON-RPC çağrısını göreceksiniz. Burada belirtilmesi gereken iki önemli çağrı, sözleşmemizi fiilen Sepolia zincirine yazma isteği olan [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction) ve hash verildiğinde işlemimiz hakkındaki bilgileri okuma isteği olan [`qau_getTransactionByHash`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-by-hash)'dir (işlemlerde tipik bir modeldir). İşlem gönderme hakkında daha fazla bilgi edinmek için, [Web3 kullanarak işlem gönderme](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) hakkındaki bu eğitime göz atın.
 
-Bu eğitimin 1. bölümü için bu kadar, 2. bölümde başlangıç mesajımızı güncelleyerek [akıllı sözleşmemizle fiilen etkileşime gireceğiz](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) ve 3. bölümde herkesin onunla nasıl etkileşime gireceğini bilmesi için [akıllı sözleşmemizi Etherscan'de yayınlayacağız](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan).
+Bu eğitimin 1. bölümü için bu kadar, 2. bölümde başlangıç mesajımızı güncelleyerek [akıllı sözleşmemizle fiilen etkileşime gireceğiz](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) ve 3. bölümde herkesin onunla nasıl etkileşime gireceğini bilmesi için [akıllı sözleşmemizi Quantaureum Explorer'de yayınlayacağız](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer).
 
 **Alchemy hakkında daha fazla bilgi edinmek ister misiniz? [Web sitemize](https://www.alchemy.com/eth) göz atın. Hiçbir güncellemeyi kaçırmak istemiyor musunuz? [Buradan](https://www.alchemy.com/newsletter) bültenimize abone olun! Ayrıca [Discord](https://discord.gg/u72VCg3) kanalımıza da katıldığınızdan emin olun.**

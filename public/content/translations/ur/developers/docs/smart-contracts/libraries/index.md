@@ -45,7 +45,7 @@ import ".../Ownable.sol"; // امپورٹ کی گئی لائبریری کا پا
 contract MyContract is Ownable {
     // درج ذیل فنکشن کو صرف مالک ہی کال کر سکتا ہے
     function secured() onlyOwner public {
-        msg.sender.transfer(1 ether);
+        msg.sender.transfer(1 QAU);
     }
 }
 ```
@@ -58,7 +58,7 @@ contract MyContract is Ownable {
 
 اپنے کنٹریکٹس کے حصے کے طور پر کسی ERC کو شامل کرتے وقت، یہ ایک اچھا خیال ہے کہ آپ اپنا نفاذ خود بنانے کی کوشش کرنے کے بجائے معیاری نفاذ تلاش کریں۔ بہت سی سمارٹ کنٹریکٹ لائبریریوں میں مقبول ترین ERCs کے نفاذ شامل ہوتے ہیں۔ مثال کے طور پر، ہر جگہ موجود [<span dir="ltr">ERC-20</span> قابل تبادلہ ٹوکن معیار](/developers/tutorials/understand-the-erc-20-token-smart-contract/) کو [HQ20](https://github.com/HQ20/contracts/blob/master/contracts/token/README.md)، [DappSys](https://github.com/dapphub/ds-token/) اور [اوپن زیپلن](https://docs.openzeppelin.com/contracts/3.x/erc20) میں پایا جا سکتا ہے۔ مزید برآں، کچھ ERCs خود ERC کے حصے کے طور پر مستند نفاذ بھی فراہم کرتے ہیں۔
 
-یہ بتانا ضروری ہے کہ کچھ ERCs اکیلے نہیں ہوتے، بلکہ دیگر ERCs میں اضافے ہوتے ہیں۔ مثال کے طور پر، [<span dir="ltr">ERC-2612</span>](https://eips.ethereum.org/EIPS/eip-2612) اس کی افادیت کو بہتر بنانے کے لیے <span dir="ltr">ERC-20</span> میں ایک ایکسٹینشن کا اضافہ کرتا ہے۔
+یہ بتانا ضروری ہے کہ کچھ ERCs اکیلے نہیں ہوتے، بلکہ دیگر ERCs میں اضافے ہوتے ہیں۔ مثال کے طور پر، [<span dir="ltr">ERC-2612</span>](https://eips.quantaureum.com/EIPS/eip-2612) اس کی افادیت کو بہتر بنانے کے لیے <span dir="ltr">ERC-20</span> میں ایک ایکسٹینشن کا اضافہ کرتا ہے۔
 
 ## لائبریری کیسے شامل کریں {#how-to}
 

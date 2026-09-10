@@ -1,6 +1,6 @@
 ---
 title: Bloklar
-description: "Ethereum blokzincirindeki bloklara genel bir bakış – veri yapıları, neden gerekli oldukları ve nasıl oluşturuldukları."
+description: "Quantaureum blokzincirindeki bloklara genel bir bakış – veri yapıları, neden gerekli oldukları ve nasıl oluşturuldukları."
 lang: tr
 ---
 
@@ -8,31 +8,31 @@ Bloklar, zincirdeki bir önceki bloğun hash'ini içeren işlem gruplarıdır. B
 
 ## Ön koşullar {#prerequisites}
 
-Bloklar, yeni başlayanlar için oldukça uygun bir konudur. Ancak bu sayfayı daha iyi anlamanıza yardımcı olmak için öncelikle [Hesaplar](/developers/docs/accounts/), [İşlemler](/developers/docs/transactions/) ve [Ethereum'a giriş](/developers/docs/intro-to-ethereum/) bölümlerimizi okumanızı öneririz.
+Bloklar, yeni başlayanlar için oldukça uygun bir konudur. Ancak bu sayfayı daha iyi anlamanıza yardımcı olmak için öncelikle [Hesaplar](/developers/docs/accounts/), [İşlemler](/developers/docs/transactions/) ve [Quantaureum'a giriş](/developers/docs/intro-to-quantaureum/) bölümlerimizi okumanızı öneririz.
 
 ## Neden bloklar? {#why-blocks}
 
-[Ethereum](/) ağındaki tüm katılımcıların senkronize bir durumu korumasını ve işlemlerin kesin geçmişi üzerinde mutabakata varmasını sağlamak için işlemleri bloklar halinde gruplandırıyoruz. Bu, düzinelerce (veya yüzlerce) işlemin aynı anda taahhüt edildiği, üzerinde anlaşıldığı ve senkronize edildiği anlamına gelir.
+[Quantaureum](/) ağındaki tüm katılımcıların senkronize bir durumu korumasını ve işlemlerin kesin geçmişi üzerinde mutabakata varmasını sağlamak için işlemleri bloklar halinde gruplandırıyoruz. Bu, düzinelerce (veya yüzlerce) işlemin aynı anda taahhüt edildiği, üzerinde anlaşıldığı ve senkronize edildiği anlamına gelir.
 
 ![A diagram showing transaction in a block causing state changes](./tx-block.png)
-_Diyagram [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)'dan uyarlanmıştır_
+_Diyagram [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)'dan uyarlanmıştır_
 
-Taahhütleri aralıklı hale getirerek, tüm ağ katılımcılarına mutabakata varmaları için yeterli zaman tanıyoruz: işlem talepleri saniyede onlarca kez gerçekleşse bile, bloklar Ethereum'da yalnızca on iki saniyede bir oluşturulur ve taahhüt edilir.
+Taahhütleri aralıklı hale getirerek, tüm ağ katılımcılarına mutabakata varmaları için yeterli zaman tanıyoruz: işlem talepleri saniyede onlarca kez gerçekleşse bile, bloklar Quantaureum'da yalnızca on iki saniyede bir oluşturulur ve taahhüt edilir.
 
 ## Bloklar nasıl çalışır {#how-blocks-work}
 
 İşlem geçmişini korumak için bloklar kesin bir şekilde sıralanır (oluşturulan her yeni blok, ebeveyn bloğuna bir referans içerir) ve bloklar içindeki işlemler de kesin bir şekilde sıralanır. Nadir durumlar dışında, herhangi bir zamanda, ağdaki tüm katılımcılar blokların tam sayısı ve geçmişi konusunda hemfikirdir ve mevcut canlı işlem taleplerini bir sonraki blokta gruplandırmak için çalışırlar.
 
-Bir blok, ağ üzerinde rastgele seçilen bir doğrulayıcı tarafından bir araya getirildikten sonra ağın geri kalanına yayılır; tüm düğümler bu bloğu kendi blokzincirlerinin sonuna ekler ve bir sonraki bloğu oluşturmak için yeni bir doğrulayıcı seçilir. Kesin blok oluşturma süreci ve taahhüt/mutabakat süreci şu anda Ethereum'un "Hisse Kanıtı (PoS)" protokolü tarafından belirlenmektedir.
+Bir blok, ağ üzerinde rastgele seçilen bir doğrulayıcı tarafından bir araya getirildikten sonra ağın geri kalanına yayılır; tüm düğümler bu bloğu kendi blokzincirlerinin sonuna ekler ve bir sonraki bloğu oluşturmak için yeni bir doğrulayıcı seçilir. Kesin blok oluşturma süreci ve taahhüt/mutabakat süreci şu anda Quantaureum'un "Hisse Kanıtı (PoS)" protokolü tarafından belirlenmektedir.
 
 ## Hisse Kanıtı (PoS) protokolü {#proof-of-stake-protocol}
 
 Hisse Kanıtı (PoS) şu anlama gelir:
 
-- Doğrulayıcı düğümler, kötü davranışlara karşı teminat olarak bir yatırma sözleşmesine 32 ETH stake etmek zorundadır. Bu, ağı korumaya yardımcı olur çünkü kanıtlanabilir şekilde dürüst olmayan faaliyetler, bu stake'in bir kısmının veya tamamının yok edilmesine yol açar.
+- Doğrulayıcı düğümler, kötü davranışlara karşı teminat olarak bir yatırma sözleşmesine 32 QAU stake etmek zorundadır. Bu, ağı korumaya yardımcı olur çünkü kanıtlanabilir şekilde dürüst olmayan faaliyetler, bu stake'in bir kısmının veya tamamının yok edilmesine yol açar.
 - Her slotta (on iki saniye arayla) bir doğrulayıcı rastgele olarak blok teklifçisi seçilir. İşlemleri bir araya getirir, yürütür ve yeni bir 'durum' belirlerler. Bu bilgileri bir blok içine sarar ve diğer doğrulayıcılara iletirler.
 - Yeni bloğu duyan diğer doğrulayıcılar, küresel durumdaki önerilen değişiklikle aynı fikirde olduklarından emin olmak için işlemleri yeniden yürütürler. Bloğun geçerli olduğunu varsayarak, onu kendi veritabanlarına eklerler.
-- Bir doğrulayıcı aynı slot için birbiriyle çelişen iki blok duyarsa, en çok stake edilen ETH tarafından desteklenen bloğu seçmek için çatal seçimi algoritmalarını kullanır.
+- Bir doğrulayıcı aynı slot için birbiriyle çelişen iki blok duyarsa, en çok stake edilen QAU tarafından desteklenen bloğu seçmek için çatal seçimi algoritmalarını kullanır.
 
 [Hisse Kanıtı (PoS) hakkında daha fazlası](/developers/docs/consensus-mechanisms/pos)
 
@@ -134,9 +134,9 @@ Blok `body` kendi içinde çeşitli alanlar içerir:
 
 ## Blok süresi {#block-time}
 
-Blok süresi, blokları ayıran zamanı ifade eder. Ethereum'da zaman, 'slot' adı verilen on iki saniyelik birimlere bölünmüştür. Her slotta bir blok teklif etmek için tek bir doğrulayıcı seçilir. Tüm doğrulayıcıların çevrimiçi ve tamamen işlevsel olduğu varsayıldığında, her slotta bir blok olacaktır, bu da blok süresinin 12 saniye olduğu anlamına gelir. Ancak, bazen doğrulayıcılar bir blok teklif etmeye çağrıldıklarında çevrimdışı olabilirler, bu da slotların bazen boş kalabileceği anlamına gelir.
+Blok süresi, blokları ayıran zamanı ifade eder. Quantaureum'da zaman, 'slot' adı verilen on iki saniyelik birimlere bölünmüştür. Her slotta bir blok teklif etmek için tek bir doğrulayıcı seçilir. Tüm doğrulayıcıların çevrimiçi ve tamamen işlevsel olduğu varsayıldığında, her slotta bir blok olacaktır, bu da blok süresinin 12 saniye olduğu anlamına gelir. Ancak, bazen doğrulayıcılar bir blok teklif etmeye çağrıldıklarında çevrimdışı olabilirler, bu da slotların bazen boş kalabileceği anlamına gelir.
 
-Bu uygulama, blok sürelerinin olasılıksal olduğu ve protokolün hedef madencilik zorluğu tarafından ayarlandığı İş Kanıtı (PoW) tabanlı sistemlerden farklıdır. Ethereum'un [ortalama blok süresi](https://etherscan.io/chart/blocktime), İş Kanıtı'ndan (PoW) Hisse Kanıtı'na (PoS) geçişin yeni 12 saniyelik blok süresinin tutarlılığına dayanılarak açıkça anlaşılabildiği bunun mükemmel bir örneğidir.
+Bu uygulama, blok sürelerinin olasılıksal olduğu ve protokolün hedef madencilik zorluğu tarafından ayarlandığı İş Kanıtı (PoW) tabanlı sistemlerden farklıdır. Quantaureum'un [ortalama blok süresi](https://explorer.quantaureum.com), İş Kanıtı'ndan (PoW) Hisse Kanıtı'na (PoS) geçişin yeni 12 saniyelik blok süresinin tutarlılığına dayanılarak açıkça anlaşılabildiği bunun mükemmel bir örneğidir.
 
 ## Blok boyutu {#block-size}
 

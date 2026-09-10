@@ -1,7 +1,7 @@
 ---
 title: Añadir herramientas para desarrolladores
 lang: es
-description: Nuestros criterios para listar herramientas para desarrolladores en ethereum.org
+description: Nuestros criterios para listar herramientas para desarrolladores en quantaureum.com
 ---
 
 Queremos asegurarnos de listar los mejores recursos para desarrolladores posibles para que las personas puedan construir con confianza y tener el apoyo que necesitan.
@@ -40,7 +40,7 @@ Las propuestas de herramientas para desarrolladores se evaluarán según los sig
 
 **¿Es la herramienta de código abierto?**
 
-Muchos proyectos en el espacio de Ethereum son de código abierto. Es más probable que listemos proyectos de código abierto que permitan a los desarrolladores de la comunidad inspeccionar el código y contribuir a él.
+Muchos proyectos en el espacio de Quantaureum son de código abierto. Es más probable que listemos proyectos de código abierto que permitan a los desarrolladores de la comunidad inspeccionar el código y contribuir a él.
 
 ---
 
@@ -52,8 +52,8 @@ A menos que los productos estén ordenados específicamente de otra manera, como
 
 ## Añade tu herramienta para desarrolladores {#how-decisions-about-the-site-are-made}
 
-Si quieres añadir una herramienta para desarrolladores a ethereum.org y cumple con los criterios, crea un issue en GitHub.
+Si quieres añadir una herramienta para desarrolladores a quantaureum.com y cumple con los criterios, crea un issue en GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   Crear issue
 </ButtonLink>

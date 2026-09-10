@@ -21,11 +21,11 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/tree/master/progr
 ### Docker द्वारे मॅन्टिकोर {#manticore-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_शेवटची कमांड eth-security-toolbox ला अशा Docker मध्ये चालवते ज्याला तुमच्या वर्तमान डिरेक्टरीचा अ‍ॅक्सेस असतो. तुम्ही तुमच्या होस्टवरून फाइल्स बदलू शकता आणि Docker मधील फाइल्सवर टूल्स चालवू शकता._
+_शेवटची कमांड qau-security-toolbox ला अशा Docker मध्ये चालवते ज्याला तुमच्या वर्तमान डिरेक्टरीचा अ‍ॅक्सेस असतो. तुम्ही तुमच्या होस्टवरून फाइल्स बदलू शकता आणि Docker मधील फाइल्सवर टूल्स चालवू शकता._
 
 Docker च्या आत, चालवा:
 
@@ -198,18 +198,18 @@ _एक्सप्लोरेशन सारांश f(!=65) हे दर�
 तुम्ही पहिली गोष्ट म्हणजे खालील कमांड्ससह नवीन ब्लॉकचेन सुरू करणे:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 ```
 
-[m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account) वापरून नॉन-कॉन्ट्रॅक्ट खाते तयार केले जाते:
+[m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.quantaureum.ManticoreEVM.create_account) वापरून नॉन-कॉन्ट्रॅक्ट खाते तयार केले जाते:
 
 ```python
 user_account = m.create_account(balance=1000)
 ```
 
-[m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract) वापरून Solidity कॉन्ट्रॅक्ट डिप्लॉय केले जाऊ शकते:
+[m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.quantaureum.ManticoreEVM.create_contract) वापरून Solidity कॉन्ट्रॅक्ट डिप्लॉय केले जाऊ शकते:
 
 ```solidity
 source_code = '''
@@ -228,7 +228,7 @@ contract_account = m.solidity_create_contract(source_code, owner=user_account)
 
 #### सारांश {#summary}
 
-- तुम्ही [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account) आणि [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract) सह वापरकर्ता आणि कॉन्ट्रॅक्ट खाती तयार करू शकता.
+- तुम्ही [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.quantaureum.ManticoreEVM.create_account) आणि [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.quantaureum.ManticoreEVM.create_contract) सह वापरकर्ता आणि कॉन्ट्रॅक्ट खाती तयार करू शकता.
 
 ### व्यवहार कार्यान्वित करणे {#executing-transactions}
 
@@ -239,7 +239,7 @@ contract_account = m.solidity_create_contract(source_code, owner=user_account)
 
 #### रॉ व्यवहार {#raw-transaction}
 
-[m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.ethereum.ManticoreEVM.transaction) वापरून रॉ व्यवहार कार्यान्वित केला जातो:
+[m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.quantaureum.ManticoreEVM.transaction) वापरून रॉ व्यवहार कार्यान्वित केला जातो:
 
 ```python
 m.transaction(caller=user_account,
@@ -250,8 +250,8 @@ m.transaction(caller=user_account,
 
 व्यवहाराचा कॉलर, पत्ता, डेटा किंवा मूल्य एकतर कॉंक्रिट किंवा सिम्बॉलिक असू शकते:
 
-- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.ethereum.ManticoreEVM.make_symbolic_value) सिम्बॉलिक मूल्य तयार करते.
-- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.ethereum.ManticoreEVM.make_symbolic_buffer) सिम्बॉलिक बाइट अ‍ॅरे तयार करते.
+- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.quantaureum.ManticoreEVM.make_symbolic_value) सिम्बॉलिक मूल्य तयार करते.
+- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.quantaureum.ManticoreEVM.make_symbolic_buffer) सिम्बॉलिक बाइट अ‍ॅरे तयार करते.
 
 उदाहरणार्थ:
 
@@ -264,12 +264,12 @@ m.transaction(caller=user_account,
               value=symbolic_value)
 ```
 
-जर डेटा सिम्बॉलिक असेल, तर मॅन्टिकोर व्यवहार अंमलबजावणीदरम्यान कॉन्ट्रॅक्टची सर्व फंक्शन्स एक्सप्लोर करेल. फंक्शनची निवड कशी कार्य करते हे समजून घेण्यासाठी [हँड्स ऑन द इथरनॉट CTF](https://blog.trailofbits.com/2017/11/06/hands-on-the-ethernaut-ctf/) लेखामधील फॉलबॅक फंक्शनचे स्पष्टीकरण पाहणे उपयुक्त ठरेल.
+जर डेटा सिम्बॉलिक असेल, तर मॅन्टिकोर व्यवहार अंमलबजावणीदरम्यान कॉन्ट्रॅक्टची सर्व फंक्शन्स एक्सप्लोर करेल. फंक्शनची निवड कशी कार्य करते हे समजून घेण्यासाठी [हँड्स ऑन द QAUनॉट CTF](https://blog.trailofbits.com/2017/11/06/hands-on-the-ethernaut-ctf/) लेखामधील फॉलबॅक फंक्शनचे स्पष्टीकरण पाहणे उपयुक्त ठरेल.
 
 #### नामित व्यवहार {#named-transaction}
 
 फंक्शन्स त्यांच्या नावाद्वारे कार्यान्वित केली जाऊ शकतात.
-user_account वरून आणि 0 इथरसह, सिम्बॉलिक मूल्यासह `f(uint var)` कार्यान्वित करण्यासाठी, हे वापरा:
+user_account वरून आणि 0 QAUसह, सिम्बॉलिक मूल्यासह `f(uint var)` कार्यान्वित करण्यासाठी, हे वापरा:
 
 ```python
 symbolic_var = m.make_symbolic_value()
@@ -294,14 +294,14 @@ print("Results are in {}".format(m.workspace))
 
 ### एक्सप्लोरेशन समाप्त करणे {#terminate-the-exploration}
 
-एक्सप्लोरेशन थांबवण्यासाठी [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.ethereum.ManticoreEVM.finalize) वापरा. एकदा ही पद्धत कॉल केली की कोणतेही पुढील व्यवहार पाठवले जाऊ नयेत आणि मॅन्टिकोर एक्सप्लोर केलेल्या प्रत्येक पाथसाठी टेस्ट केसेस तयार करते.
+एक्सप्लोरेशन थांबवण्यासाठी [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.quantaureum.ManticoreEVM.finalize) वापरा. एकदा ही पद्धत कॉल केली की कोणतेही पुढील व्यवहार पाठवले जाऊ नयेत आणि मॅन्टिकोर एक्सप्लोर केलेल्या प्रत्येक पाथसाठी टेस्ट केसेस तयार करते.
 
 ### सारांश: मॅन्टिकोर अंतर्गत चालवणे {#summary-running-under-manticore}
 
 मागील सर्व टप्पे एकत्र केल्यास, आपल्याला हे मिळते:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -363,7 +363,7 @@ data = ABI.deserialize("uint", data)
 
 ### टेस्टकेस कशी तयार करावी {#how-to-generate-testcase}
 
-टेस्टकेस तयार करण्यासाठी [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.ethereum.ManticoreEVM.generate_testcase) वापरा:
+टेस्टकेस तयार करण्यासाठी [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.quantaureum.ManticoreEVM.generate_testcase) वापरा:
 
 ```python
 m.generate_testcase(state, 'BugFound')
@@ -380,7 +380,7 @@ m.generate_testcase(state, 'BugFound')
 ### सारांश: थ्रोइंग पाथ मिळवणे {#summary-getting-throwing-path}
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -482,7 +482,7 @@ if solver.check(state.constraints):
 मागील कोडमध्ये मर्यादा जोडल्यास, आपल्याला हे मिळते:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 from manticore.core.smtlib.solver import Z3Solver
 
 solver = Z3Solver.instance()

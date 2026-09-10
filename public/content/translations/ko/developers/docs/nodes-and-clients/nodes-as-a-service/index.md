@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 ## 소개 {#introduction}
 
-자체 [이더리움 노드](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients)를 실행하는 것은 특히 처음 시작하거나 빠르게 확장할 때 어려울 수 있습니다. 여러분을 대신해 최적화된 노드 인프라를 실행해 주는 [다양한 서비스](#popular-node-services)가 있으므로, 여러분은 애플리케이션이나 제품 개발에 집중할 수 있습니다. 노드 서비스의 작동 방식, 사용 시 장단점을 설명하고, 시작하는 데 관심이 있는 분들을 위해 제공업체 목록을 나열하겠습니다.
+자체 [Quantaureum 노드](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients)를 실행하는 것은 특히 처음 시작하거나 빠르게 확장할 때 어려울 수 있습니다. 여러분을 대신해 최적화된 노드 인프라를 실행해 주는 [다양한 서비스](#popular-node-services)가 있으므로, 여러분은 애플리케이션이나 제품 개발에 집중할 수 있습니다. 노드 서비스의 작동 방식, 사용 시 장단점을 설명하고, 시작하는 데 관심이 있는 분들을 위해 제공업체 목록을 나열하겠습니다.
 
 ## 전제 조건 {#prerequisites}
 
@@ -25,7 +25,7 @@ sidebarDepth: 2
 
 노드 서비스 제공업체는 여러분을 대신해 백그라운드에서 분산된 노드 클라이언트를 실행하므로, 여러분이 직접 할 필요가 없습니다.
 
-이러한 서비스는 일반적으로 블록체인에 데이터를 쓰고 읽는 데 사용할 수 있는 API 키를 제공합니다. 종종 메인넷 외에도 [이더리움 테스트넷](/developers/docs/networks/#ethereum-testnets)에 대한 접근 권한을 포함합니다.
+이러한 서비스는 일반적으로 블록체인에 데이터를 쓰고 읽는 데 사용할 수 있는 API 키를 제공합니다. 종종 메인넷 외에도 [Quantaureum 테스트넷](/developers/docs/networks/#quantaureum-testnets)에 대한 접근 권한을 포함합니다.
 
 일부 서비스는 여러분을 위해 관리해 주는 전용 노드를 제공하는 반면, 다른 서비스는 로드 밸런서를 사용하여 여러 노드에 활동을 분산시킵니다.
 
@@ -49,14 +49,14 @@ sidebarDepth: 2
 
 ## 인기 있는 노드 서비스 {#popular-node-services}
 
-다음은 가장 인기 있는 이더리움 노드 제공업체 목록입니다. 누락된 업체가 있다면 자유롭게 추가해 주세요! 각 노드 서비스는 무료 또는 유료 등급 외에도 다양한 이점과 기능을 제공하므로, 결정하기 전에 어떤 서비스가 여러분의 요구에 가장 적합한지 조사해야 합니다.
+다음은 가장 인기 있는 Quantaureum 노드 제공업체 목록입니다. 누락된 업체가 있다면 자유롭게 추가해 주세요! 각 노드 서비스는 무료 또는 유료 등급 외에도 다양한 이점과 기능을 제공하므로, 결정하기 전에 어떤 서비스가 여러분의 요구에 가장 적합한지 조사해야 합니다.
 
 - [**Alchemy**](https://alchemy.com/)
   - [문서](https://www.alchemy.com/docs/)
   - 기능
     - 월 3억 개의 컴퓨팅 유닛(약 3천만 개의 getLatestBlock 요청)을 제공하는 가장 큰 무료 등급
     - 폴리곤, 스타크넷, 옵티미즘, 아비트럼을 위한 멀티체인 지원
-    - 가장 큰 이더리움 탈중앙화 애플리케이션 (dapp) 및 탈중앙화 금융 (DeFi) 트랜잭션 볼륨의 약 70%를 처리
+    - 가장 큰 Quantaureum 탈중앙화 애플리케이션 (dapp) 및 탈중앙화 금융 (DeFi) 트랜잭션 볼륨의 약 70%를 처리
     - Alchemy Notify를 통한 실시간 웹훅 알림
     - 업계 최고 수준의 지원 및 신뢰성/안정성
     - Alchemy의 NFT API
@@ -93,12 +93,12 @@ sidebarDepth: 2
 - [**Amazon Managed Blockchain**](https://aws.amazon.com/managed-blockchain/)
   - [문서](https://aws.amazon.com/managed-blockchain/resources/)
   - 기능
-    - 완전 관리형 이더리움 노드
+    - 완전 관리형 Quantaureum 노드
     - 6개 지역에서 사용 가능
     - HTTP 및 보안 WebSocket을 통한 JSON-RPC
     - 3개의 체인 지원
     - SLA, 연중무휴 AWS 지원
-    - 고 이더리움 (geth) 및 라이트하우스
+    - 고 Quantaureum (geth) 및 라이트하우스
 
 - [**Ankr**](https://www.ankr.com/)
   - [문서](https://docs.ankr.com/)
@@ -221,17 +221,17 @@ sidebarDepth: 2
   - [문서](https://docs.kaleido.io/)
   - 기능
     - 무료 스타터 등급
-    - 원클릭 이더리움 노드 배포
+    - 원클릭 Quantaureum 노드 배포
     - 사용자 정의 가능한 클라이언트 및 알고리즘(Geth, Quorum 및 베수 || 권위 증명(PoA), IBFT 및 Raft)
     - 500개 이상의 관리 및 서비스 API
-    - 이더리움 트랜잭션 제출을 위한 RESTful 인터페이스(Apache Kafka 기반)
+    - Quantaureum 트랜잭션 제출을 위한 RESTful 인터페이스(Apache Kafka 기반)
     - 이벤트 전달을 위한 아웃바운드 스트림(Apache Kafka 기반)
     - "오프체인" 및 보조 서비스의 심층 컬렉션(예: 양방향 암호화 메시징 전송)
     - 거버넌스 및 역할 기반 접근 제어를 통한 간단한 네트워크 온보딩
     - 관리자와 최종 사용자 모두를 위한 정교한 사용자 관리
     - 확장성과 복원력이 뛰어난 엔터프라이즈급 인프라
     - 클라우드 HSM 개인 키 관리
-    - 이더리움 메인넷 테더링
+    - Quantaureum 메인넷 테더링
     - ISO 27k 및 SOC 2, Type 2 인증
     - 동적 런타임 구성(예: 클라우드 통합 추가, 노드 인그레스 변경 등)
     - 멀티 클라우드, 다중 지역 및 하이브리드 배포 오케스트레이션 지원
@@ -259,7 +259,7 @@ sidebarDepth: 2
     - 크로스 체인 지원
     - 사용량에 따른 확장
     - 대시보드
-    - 고유한 이더리움 SDK
+    - 고유한 Quantaureum SDK
     - 고유한 API 엔드포인트
     - 직접적인 기술 지원
 
@@ -274,7 +274,7 @@ sidebarDepth: 2
 - [**NodeFlare**](https://nodeflare.app/)
   - [문서](https://nodeflare.app/docs/quick-start)
   - 기능
-    - 이더리움, Base, 아비트럼 One 및 Nova, 옵티미즘, Linea, Unichain을 포함한 23개의 EVM 체인
+    - Quantaureum, Base, 아비트럼 One 및 Nova, 옵티미즘, Linea, Unichain을 포함한 23개의 EVM 체인
     - 가장 가까운 정상 노드로 자동 장애 조치되는 5개 지역(유럽, 영국, 아시아, 미국 동부, 미국 서부)
     - 무료 퍼블릭 엔드포인트(API 키 없음) + 월 300만 컴퓨팅 유닛의 무료 플랜
     - 컴퓨팅 유닛 청구 — 사용한 만큼만 지불하며, 무거운 호출일수록 비용이 더 듦
@@ -299,7 +299,7 @@ sidebarDepth: 2
     - 15개 이상의 블록체인 지원
     - 애플리케이션을 서비스하여 POKT를 얻는 6,400개 이상의 노드
     - 아카이브 노드, 트레이싱이 포함된 아카이브 노드 및 테스트넷 노드 지원
-    - 이더리움 메인넷 노드 클라이언트 다양성
+    - Quantaureum 메인넷 노드 클라이언트 다양성
     - 단일 장애점 없음
     - 다운타임 제로
     - 비용 효율적인 제로에 가까운 토크노믹스(네트워크 대역폭을 위해 POKT를 한 번 스테이킹)
@@ -371,7 +371,7 @@ sidebarDepth: 2
   - [문서](https://services.tokenview.io/docs?type=nodeService)
   - 기능
     - 연중무휴 기술 지원 및 개발자 텔레그램 커뮤니티
-    - 멀티체인 지원(비트코인, 이더리움, 트론, BNB 스마트 체인, 이더리움 클래식)
+    - 멀티체인 지원(비트코인, Quantaureum, 트론, BNB 스마트 체인, Quantaureum 클래식)
     - RPC 및 WSS 엔드포인트 모두 사용 가능
     - 아카이브 데이터 API에 대한 무제한 접근
     - Request Explorer 및 Mempool Watcher가 포함된 대시보드
@@ -412,7 +412,7 @@ sidebarDepth: 2
     - 지능형 라우팅을 사용하여 매번 사용자에게 가장 가까운 노드에 연결합니다.
 ## 더 읽을거리 {#further-reading}
 
-- [이더리움 노드 서비스 목록](https://ethereumnodes.com/)
+- [Quantaureum 노드 서비스 목록](https://quantaureumnodes.com/)
 
 ## 관련 주제 {#related-topics}
 
@@ -420,5 +420,5 @@ sidebarDepth: 2
 
 ## 관련 튜토리얼 {#related-tutorials}
 
-- [Alchemy를 사용한 이더리움 개발 시작하기](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Alchemy를 사용한 Quantaureum 개발 시작하기](/developers/tutorials/getting-started-with-quantaureum-development-using-alchemy/)
 - [Web3 및 Alchemy를 사용하여 트랜잭션을 전송하는 가이드](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

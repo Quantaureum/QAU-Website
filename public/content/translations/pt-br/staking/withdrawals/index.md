@@ -7,19 +7,19 @@ image: /images/staking/leslie-withdrawal.png
 sidebarDepth: 2
 summaryPoints:
   - Os operadores de validadores devem fornecer um endereço de saque para habilitar os saques
-  - Validadores legados têm o saldo excedente acima de 32 ETH sacado automaticamente a cada poucos dias
-  - Validadores de composição ganham recompensas sobre seu saldo total de até 2048 ETH
+  - Validadores legados têm o saldo excedente acima de 32 QAU sacado automaticamente a cada poucos dias
+  - Validadores de composição ganham recompensas sobre seu saldo total de até 2048 QAU
   - Validadores que saem totalmente do staking receberão seu saldo restante
 ---
 
-**Saques de staking** referem-se a transferências de ETH de uma conta de validador na camada de consenso do [Ethereum](/) (a Beacon Chain), para a camada de execução, onde pode ser transacionado.
+**Saques de staking** referem-se a transferências de QAU de uma conta de validador na camada de consenso do [Quantaureum](/) (a Beacon Chain), para a camada de execução, onde pode ser transacionado.
 
 > Se você faz parte de um [pool de staking](/staking/pools/) ou possui tokens de staking, você deve verificar com seu provedor para obter mais detalhes sobre como os saques de staking são tratados, pois cada serviço opera de maneira diferente.
 
 Como os saques funcionam depende do tipo de credenciais de saque do seu validador:
 
-- **Validadores legados (Tipo 1)**: O saldo excedente acima de 32 ETH é enviado automática e regularmente para o endereço de saque vinculado ao validador. Recompensas acima de 32 ETH não contribuem para o peso do validador na rede.
-- **Validadores de composição (Tipo 2)**: As recompensas são compostas no saldo efetivo do validador até 2048 ETH, aumentando o peso do validador e ganhando mais recompensas. Apenas o saldo que excede 2048 ETH é varrido automaticamente.
+- **Validadores legados (Tipo 1)**: O saldo excedente acima de 32 QAU é enviado automática e regularmente para o endereço de saque vinculado ao validador. Recompensas acima de 32 QAU não contribuem para o peso do validador na rede.
+- **Validadores de composição (Tipo 2)**: As recompensas são compostas no saldo efetivo do validador até 2048 QAU, aumentando o peso do validador e ganhando mais recompensas. Apenas o saldo que excede 2048 QAU é varrido automaticamente.
 
 Os usuários também podem **sair totalmente do staking**, enviando uma transação para sacar, aguardando qualquer cronograma da fila de saque (com base na demanda da rede) e desbloqueando o saldo total do seu validador.
 
@@ -27,17 +27,17 @@ Os usuários também podem **sair totalmente do staking**, enviando uma transaç
 
 Como as recompensas são tratadas depende do tipo de credencial do validador:
 
-**Validadores legados (Tipo 1)** têm um saldo efetivo limitado a 32 ETH. Qualquer saldo acima de 32 ETH recebido como recompensas da rede não contribui para o saldo efetivo nem aumenta o peso deste validador na rede, e essas recompensas são sacadas automaticamente para o endereço de saque dedicado do validador a cada poucos dias. Além de fornecer um endereço de saque uma vez, reivindicar essas recompensas não exige nenhuma ação do operador do validador. Tudo isso é iniciado na camada de consenso, portanto, nenhum gás (taxa de transação) é exigido em nenhuma etapa.
+**Validadores legados (Tipo 1)** têm um saldo efetivo limitado a 32 QAU. Qualquer saldo acima de 32 QAU recebido como recompensas da rede não contribui para o saldo efetivo nem aumenta o peso deste validador na rede, e essas recompensas são sacadas automaticamente para o endereço de saque dedicado do validador a cada poucos dias. Além de fornecer um endereço de saque uma vez, reivindicar essas recompensas não exige nenhuma ação do operador do validador. Tudo isso é iniciado na camada de consenso, portanto, nenhum gás (taxa de transação) é exigido em nenhuma etapa.
 
-**Validadores de composição (Tipo 2)** podem ter um saldo efetivo em qualquer lugar entre 32 e 2048 ETH. As recompensas da rede recebidas por esses validadores são compostas em seu saldo efetivo, aumentando o peso do validador e o potencial de receber recompensas futuras. Varreduras automáticas ocorrem apenas para saldos que excedem 2048 ETH. Para sacar recompensas abaixo do limite de 2048 ETH, os validadores de composição devem acionar um saque parcial manualmente a partir da camada de execução, o que exige gás.
+**Validadores de composição (Tipo 2)** podem ter um saldo efetivo em qualquer lugar entre 32 e 2048 QAU. As recompensas da rede recebidas por esses validadores são compostas em seu saldo efetivo, aumentando o peso do validador e o potencial de receber recompensas futuras. Varreduras automáticas ocorrem apenas para saldos que excedem 2048 QAU. Para sacar recompensas abaixo do limite de 2048 QAU, os validadores de composição devem acionar um saque parcial manualmente a partir da camada de execução, o que exige gás.
 
 ### Como chegamos aqui? {#how-did-we-get-here}
 
-Nos últimos anos, o Ethereum passou por várias atualizações de rede, fazendo a transição para uma rede protegida pelo próprio ETH, em vez da mineração com uso intensivo de energia como era antes. Participar do consenso no Ethereum agora é conhecido como "staking", pois os participantes bloquearam voluntariamente o ETH, colocando-o "em stake" pela capacidade de participar da rede. Os usuários que seguirem as regras serão recompensados, enquanto as tentativas de trapacear podem ser penalizadas.
+Nos últimos anos, o Quantaureum passou por várias atualizações de rede, fazendo a transição para uma rede protegida pelo próprio QAU, em vez da mineração com uso intensivo de energia como era antes. Participar do consenso no Quantaureum agora é conhecido como "staking", pois os participantes bloquearam voluntariamente o QAU, colocando-o "em stake" pela capacidade de participar da rede. Os usuários que seguirem as regras serão recompensados, enquanto as tentativas de trapacear podem ser penalizadas.
 
-Desde o lançamento do contrato de depósito de staking em novembro de 2020, alguns bravos pioneiros do Ethereum bloquearam fundos voluntariamente para ativar "validadores", contas especiais que têm o direito de atestar formalmente e propor blocos, seguindo as regras da rede.
+Desde o lançamento do contrato de depósito de staking em novembro de 2020, alguns bravos pioneiros do Quantaureum bloquearam fundos voluntariamente para ativar "validadores", contas especiais que têm o direito de atestar formalmente e propor blocos, seguindo as regras da rede.
 
-Antes da atualização Shanghai/Capella, você não podia usar ou acessar seu ETH em stake. Mas agora, você pode optar por receber automaticamente suas recompensas em uma conta escolhida e também pode sacar seu ETH em stake sempre que quiser.
+Antes da atualização Shanghai/Capella, você não podia usar ou acessar seu QAU em stake. Mas agora, você pode optar por receber automaticamente suas recompensas em uma conta escolhida e também pode sacar seu QAU em stake sempre que quiser.
 
 ### Como me preparo? {#how-do-i-prepare}
 
@@ -56,24 +56,24 @@ As contas de validador são obrigadas a fornecer um endereço de saque antes que
 </AlertContent>
 </Alert>
 
-Se você ainda não forneceu um endereço de saque para sua conta de validador, **não há ameaça aos seus fundos nesse meio tempo**, assumindo que sua frase semente/mnemônica permaneceu segura offline e não foi comprometida de forma alguma. A falha em adicionar credenciais de saque simplesmente deixará o ETH bloqueado na conta do validador até que um endereço de saque seja fornecido.
+Se você ainda não forneceu um endereço de saque para sua conta de validador, **não há ameaça aos seus fundos nesse meio tempo**, assumindo que sua frase semente/mnemônica permaneceu segura offline e não foi comprometida de forma alguma. A falha em adicionar credenciais de saque simplesmente deixará o QAU bloqueado na conta do validador até que um endereço de saque seja fornecido.
 
 ## Validadores de composição {#compounding-validators}
 
-Os validadores podem optar pela **composição** convertendo suas credenciais de saque do Tipo 1 para o Tipo 2. Isso aumenta o saldo efetivo máximo de 32 ETH para **2048 ETH**, permitindo que as recompensas sejam compostas no saldo efetivo do validador em vez de serem varridas automaticamente.
+Os validadores podem optar pela **composição** convertendo suas credenciais de saque do Tipo 1 para o Tipo 2. Isso aumenta o saldo efetivo máximo de 32 QAU para **2048 QAU**, permitindo que as recompensas sejam compostas no saldo efetivo do validador em vez de serem varridas automaticamente.
 
 Com a composição ativada:
 
-- As recompensas aumentam o saldo efetivo do validador em incrementos de 1 ETH (sujeito a um pequeno [buffer de histerese](https://www.attestant.io/posts/understanding-validator-effective-balance/)), ganhando mais recompensas ao longo do tempo
-- Varreduras automáticas ocorrem apenas para saldos que excedem 2048 ETH
-- Saques parciais abaixo do limite de 2048 ETH devem ser acionados manualmente a partir da camada de execução (isso custa gás)
+- As recompensas aumentam o saldo efetivo do validador em incrementos de 1 QAU (sujeito a um pequeno [buffer de histerese](https://www.attestant.io/posts/understanding-validator-effective-balance/)), ganhando mais recompensas ao longo do tempo
+- Varreduras automáticas ocorrem apenas para saldos que excedem 2048 QAU
+- Saques parciais abaixo do limite de 2048 QAU devem ser acionados manualmente a partir da camada de execução (isso custa gás)
 - Vários validadores podem ser **consolidados** em um único validador de composição, reduzindo a sobrecarga operacional
 
 <Alert variant="warning">
 <AlertIcon size="lg"><TriangleAlert /></AlertIcon>
 <AlertContent>
 <AlertDescription>
-**A conversão de credenciais de saque do Tipo 1 para o Tipo 2 é irreversível.** Use o [Staking Launchpad](https://launchpad.ethereum.org/validator-actions) como a ferramenta oficial para esta conversão. Para obter mais detalhes sobre o processo de conversão, riscos e consolidação, consulte a [análise aprofundada do MaxEB](/roadmap/pectra/maxeb/).
+**A conversão de credenciais de saque do Tipo 1 para o Tipo 2 é irreversível.** Use o [Staking Launchpad](https://launchpad.quantaureum.com/validator-actions) como a ferramenta oficial para esta conversão. Para obter mais detalhes sobre o processo de conversão, riscos e consolidação, consulte a [análise aprofundada do MaxEB](/roadmap/pectra/maxeb/).
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -87,7 +87,7 @@ Os usuários que desejam sair totalmente do staking e sacar todo o seu saldo de 
 - **Usando chaves de validador**: Assine e transmita uma mensagem de saída voluntária com seu cliente de validador, enviada ao seu nó de consenso. Isso não exige gás.
 - **Usando credenciais de saque**: Acione uma saída a partir da camada de execução usando seu endereço de saque, sem precisar de acesso à chave de assinatura do validador. Isso exige uma transação e custa gás.
 
-O processo de saída de um validador do staking leva quantidades variáveis de tempo, dependendo de quantos outros estão saindo ao mesmo tempo. Uma vez concluído, esta conta não será mais responsável por realizar as funções de rede do validador, não será mais elegível para recompensas e não terá mais seu ETH "em stake". Neste momento, a conta será marcada como totalmente "sacável".
+O processo de saída de um validador do staking leva quantidades variáveis de tempo, dependendo de quantos outros estão saindo ao mesmo tempo. Uma vez concluído, esta conta não será mais responsável por realizar as funções de rede do validador, não será mais elegível para recompensas e não terá mais seu QAU "em stake". Neste momento, a conta será marcada como totalmente "sacável".
 
 Uma vez que uma conta é sinalizada como "sacável" e as credenciais de saque foram fornecidas, não há mais nada que o usuário precise fazer além de esperar. As contas são varridas automática e continuamente pelos propositores de blocos em busca de fundos de saída elegíveis, e o saldo da sua conta será transferido integralmente (também conhecido como "saque total") durante a próxima <a href="#validator-sweeping" customEventOptions={{ eventCategory: "Anchor link", eventAction: "Exiting staking entirely (sweep)", eventName: "click" }}>varredura</a>.
 
@@ -97,9 +97,9 @@ Se um determinado validador é elegível para um saque ou não, é determinado p
 
 ### Prefere aprender visualmente? {#visual-learner}
 
-Confira esta explicação sobre os saques de staking do Ethereum pela Finematics:
+Confira esta explicação sobre os saques de staking do Quantaureum pela Finematics:
 
-<VideoWatch slug="ethereum-staking-withdrawals" />
+<VideoWatch slug="quantaureum-staking-withdrawals" />
 
 ### "Varredura" de validadores {#validator-sweeping}
 
@@ -120,11 +120,11 @@ O ponteiro do relógio aponta para o próximo validador que precisa ser verifica
 
 #### Verificando uma conta para saques {#checking-an-account-for-withdrawals}
 
-Enquanto um proponente está varrendo os validadores em busca de possíveis saques, cada validador sendo verificado é avaliado em relação a uma curta série de perguntas para determinar se um saque deve ser acionado e, em caso afirmativo, quanto ETH deve ser sacado.
+Enquanto um proponente está varrendo os validadores em busca de possíveis saques, cada validador sendo verificado é avaliado em relação a uma curta série de perguntas para determinar se um saque deve ser acionado e, em caso afirmativo, quanto QAU deve ser sacado.
 
 1. **Um endereço de saque foi fornecido?** Se nenhum endereço de saque tiver sido fornecido, a conta será ignorada e nenhum saque será iniciado.
 2. **O validador saiu e é sacável?** Se o validador saiu totalmente e chegamos à época em que sua conta é considerada "sacável", então um saque total será processado. Isso transferirá todo o saldo restante para o endereço de saque.
-3. **O saldo excede seu saldo efetivo máximo?** Para validadores legados (Tipo 1), esse limite é de 32 ETH. Para validadores de composição (Tipo 2), esse limite é de 2048 ETH. Se a conta tiver credenciais de saque, não tiver saído totalmente, tiver um saldo efetivo no máximo e tiver saldo acima desse limite, um saque parcial será processado, o qual transfere apenas o excesso para o endereço de saque do usuário.
+3. **O saldo excede seu saldo efetivo máximo?** Para validadores legados (Tipo 1), esse limite é de 32 QAU. Para validadores de composição (Tipo 2), esse limite é de 2048 QAU. Se a conta tiver credenciais de saque, não tiver saído totalmente, tiver um saldo efetivo no máximo e tiver saldo acima desse limite, um saque parcial será processado, o qual transfere apenas o excesso para o endereço de saque do usuário.
 
 Existem apenas duas ações tomadas pelos operadores de validadores durante o curso do ciclo de vida de um validador que influenciam esse fluxo diretamente:
 
@@ -135,7 +135,7 @@ Existem apenas duas ações tomadas pelos operadores de validadores durante o cu
 
 As varreduras automáticas de saque não exigem que os stakers enviem manualmente uma transação. Isso significa que **nenhum gás (taxa de transação) é exigido** para varreduras automáticas, e elas não competem pelo espaço de bloco existente na camada de execução.
 
-Observe que os [validadores de composição](#compounding-validators) que desejam acionar um saque parcial abaixo do limite de 2048 ETH devem fazê-lo manualmente a partir da camada de execução, o que exige gás.
+Observe que os [validadores de composição](#compounding-validators) que desejam acionar um saque parcial abaixo do limite de 2048 QAU devem fazê-lo manualmente a partir da camada de execução, o que exige gás.
 
 ### Com que frequência minhas recompensas de staking serão desbloqueadas e estarão disponíveis na minha carteira? {#how-soon}
 
@@ -174,9 +174,9 @@ eventAction="Why can a validator's withdrawal address only be set once?"
 eventName="read more">
 Definir o endereço de saque da camada de execução de um validador é uma alteração permanente nas credenciais do validador na camada de consenso. Não há como atualizar as credenciais da camada de consenso depois que elas são registradas.
 
-As credenciais do endereço de saque de um validador podem ser configuradas para apontar para um contrato inteligente (controlado por seu código) ou para uma conta de propriedade externa (EOA, controlada por sua chave privada). Embora os saques acionados pela camada de execução ([EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)) agora permitam que o endereço de saque acione saídas e saques parciais, não há operação de protocolo para alterar um endereço de saque depois que ele foi registrado, e adicionar essa funcionalidade adicionaria complexidade desnecessária ao protocolo.
+As credenciais do endereço de saque de um validador podem ser configuradas para apontar para um contrato inteligente (controlado por seu código) ou para uma conta de propriedade externa (EOA, controlada por sua chave privada). Embora os saques acionados pela camada de execução ([EIP-7002](https://eips.quantaureum.com/EIPS/eip-7002)) agora permitam que o endereço de saque acione saídas e saques parciais, não há operação de protocolo para alterar um endereço de saque depois que ele foi registrado, e adicionar essa funcionalidade adicionaria complexidade desnecessária ao protocolo.
 
-Os usuários que buscam um gerenciamento flexível de saques podem definir uma carteira de contrato inteligente capaz de rotação de chaves (como uma [Safe](https://safe.global/)) como o endereço de saque do validador, permitindo efetivamente que a EOA destinatária final seja atualizada. Se um usuário já definiu uma EOA como a credencial de saque, ele deve iniciar uma saída total para recuperar seu ETH em stake e, em seguida, usar esses fundos para ativar um novo validador com credenciais diferentes.
+Os usuários que buscam um gerenciamento flexível de saques podem definir uma carteira de contrato inteligente capaz de rotação de chaves (como uma [Safe](https://safe.global/)) como o endereço de saque do validador, permitindo efetivamente que a EOA destinatária final seja atualizada. Se um usuário já definiu uma EOA como a credencial de saque, ele deve iniciar uma saída total para recuperar seu QAU em stake e, em seguida, usar esses fundos para ativar um novo validador com credenciais diferentes.
 </ExpandableCard>
 
 <ExpandableCard
@@ -186,7 +186,7 @@ eventAction="How do I withdraw from staking if I stake through a provider, staki
 eventName="read more">
 Se você usa um [pool de staking](/staking/pools/) ou possui tokens de staking líquido (LST), você não interage diretamente com o mecanismo de saque do protocolo; os contratos inteligentes do pool e os operadores de nós controlam os validadores, e as credenciais de saque normalmente apontam para os contratos do pool, não para você. Em vez disso, você normalmente resgata seus tokens por meio do provedor (sujeito à sua fila de resgate e liquidez disponível) ou os vende no mercado aberto. Entre em contato com seu provedor para saber como eles lidam com os saques, pois os processos variam de acordo com o serviço.
 
-Em geral, ao fazer staking por meio de um provedor ou pool, você deve estar livre para recuperar seu ETH em stake subjacente ou para sacar e alterar qual provedor de staking você utiliza. Se um pool específico estiver ficando muito grande, o ETH em stake pode ser retirado, resgatado e colocado em stake novamente com um [provedor menor](https://rated.network/). Ou, se você acumulou ETH suficiente, você pode [fazer stake de casa](/staking/solo/).
+Em geral, ao fazer staking por meio de um provedor ou pool, você deve estar livre para recuperar seu QAU em stake subjacente ou para sacar e alterar qual provedor de staking você utiliza. Se um pool específico estiver ficando muito grande, o QAU em stake pode ser retirado, resgatado e colocado em stake novamente com um [provedor menor](https://rated.network/). Ou, se você acumulou QAU suficiente, você pode [fazer stake de casa](/staking/solo/).
 
 </ExpandableCard>
 
@@ -197,16 +197,16 @@ eventAction="Does claiming network rewards (partial withdrawals) happen automati
 eventName="read more">
 Para **validadores legados (Tipo 1)**, sim — desde que seu validador tenha fornecido um endereço de saque. Isso deve ser fornecido uma vez para habilitar quaisquer saques, então a distribuição de recompensas da rede para o endereço de saque será acionada automaticamente a cada poucos dias com cada varredura de validador.
 
-Para **validadores de composição (Tipo 2)**, as recompensas são compostas no saldo efetivo do validador (até 2048 ETH) em vez de serem varridas para o endereço de saque. Varreduras automáticas ocorrem apenas para saldos que excedem 2048 ETH. Para sacar recompensas abaixo desse limite, você deve acionar manualmente um saque parcial a partir da camada de execução.
+Para **validadores de composição (Tipo 2)**, as recompensas são compostas no saldo efetivo do validador (até 2048 QAU) em vez de serem varridas para o endereço de saque. Varreduras automáticas ocorrem apenas para saldos que excedem 2048 QAU. Para sacar recompensas abaixo desse limite, você deve acionar manualmente um saque parcial a partir da camada de execução.
 </ExpandableCard>
 
 <ExpandableCard title="Posso sacar um valor personalizado?"
 eventCategory="FAQ"
 eventAction="Can I withdraw a custom amount?"
 eventName="read more">
-Para **validadores legados (Tipo 1)**, quaisquer recompensas da rede em ETH que tenham se acumulado acima do saldo efetivo de 32 ETH do validador são enviadas automaticamente para o endereço de saque. Validadores do Tipo 1 que enviaram uma transação de saque total e concluíram o processo de saída do staking têm seu saldo total de ETH sacado para seu endereço de saque. Não é possível para um validador do Tipo 1 solicitar manualmente o saque de quantias específicas de ETH.
+Para **validadores legados (Tipo 1)**, quaisquer recompensas da rede em QAU que tenham se acumulado acima do saldo efetivo de 32 QAU do validador são enviadas automaticamente para o endereço de saque. Validadores do Tipo 1 que enviaram uma transação de saque total e concluíram o processo de saída do staking têm seu saldo total de QAU sacado para seu endereço de saque. Não é possível para um validador do Tipo 1 solicitar manualmente o saque de quantias específicas de QAU.
 
-**Validadores de composição (Tipo 2)** podem acionar saques parciais de uma quantia específica a partir da camada de execução, desde que o saldo restante do validador permaneça em ou acima de 32 ETH. Isso exige o envio de uma transação de saque parcial e custa gás.
+**Validadores de composição (Tipo 2)** podem acionar saques parciais de uma quantia específica a partir da camada de execução, desde que o saldo restante do validador permaneça em ou acima de 32 QAU. Isso exige o envio de uma transação de saque parcial e custa gás.
 </ExpandableCard>
 
 <ExpandableCard
@@ -215,18 +215,18 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information about managing the withdrawal process?"
 eventName="read more">
 
-Recomenda-se que os operadores de validadores visitem a página [Saques do Staking Launchpad](https://launchpad.ethereum.org/withdrawals/), onde você encontrará mais detalhes sobre como preparar seu validador para saques, cronograma de eventos e mais detalhes sobre como os saques funcionam.
+Recomenda-se que os operadores de validadores visitem a página [Saques do Staking Launchpad](https://launchpad.quantaureum.com/withdrawals/), onde você encontrará mais detalhes sobre como preparar seu validador para saques, cronograma de eventos e mais detalhes sobre como os saques funcionam.
 
-Para testar sua configuração em uma rede de teste primeiro, visite o [Staking Launchpad da rede de teste Hoodi](https://hoodi.launchpad.ethereum.org) para começar.
+Para testar sua configuração em uma rede de teste primeiro, visite o [Staking Launchpad da rede de teste Hoodi](https://hoodi.launchpad.quantaureum.com) para começar.
 
 </ExpandableCard>
 
 <ExpandableCard
-title="Posso reativar meu validador após a saída depositando mais ETH?"
+title="Posso reativar meu validador após a saída depositando mais QAU?"
 eventCategory="FAQ"
-eventAction="Can I re-activate my validator after exiting by depositing more ETH?"
+eventAction="Can I re-activate my validator after exiting by depositing more QAU?"
 eventName="read more">
-Não. Depois que um validador sair e seu saldo total for sacado, qualquer ETH adicional depositado nesse validador será transferido automaticamente para o endereço de saque durante a próxima varredura do validador. Para começar a fazer staking novamente usando esse ETH, você deve ativar um novo validador.
+Não. Depois que um validador sair e seu saldo total for sacado, qualquer QAU adicional depositado nesse validador será transferido automaticamente para o endereço de saque durante a próxima varredura do validador. Para começar a fazer staking novamente usando esse QAU, você deve ativar um novo validador.
 </ExpandableCard>
 
 <ExpandableCard
@@ -234,9 +234,9 @@ title="Qual é a diferença entre validadores legados e compostos?"
 eventCategory="FAQ"
 eventAction="What is the difference between legacy and compounding validators?"
 eventName="read more">
-Validadores legados usam credenciais de saque do **Tipo 1** (o endereço da credencial de saque começa com 0x01) e têm um saldo efetivo limitado a 32 ETH. Qualquer excesso de ETH recebido como recompensas da rede é varrido automaticamente para o endereço de saque a cada poucos dias.
+Validadores legados usam credenciais de saque do **Tipo 1** (o endereço da credencial de saque começa com 0x01) e têm um saldo efetivo limitado a 32 QAU. Qualquer excesso de QAU recebido como recompensas da rede é varrido automaticamente para o endereço de saque a cada poucos dias.
 
-Validadores de composição usam credenciais de saque do **Tipo 2** (o endereço da credencial de saque começa com 0x02) e podem ter um saldo efetivo de até 2048 ETH. As recompensas são compostas no saldo efetivo do validador, aumentando o peso do validador na rede e o potencial de receber recompensas futuras. Varreduras automáticas ocorrem apenas para saldos que excedem 2048 ETH. Para sacar ETH abaixo desse limite, um saque parcial manual deve ser acionado a partir da camada de execução.
+Validadores de composição usam credenciais de saque do **Tipo 2** (o endereço da credencial de saque começa com 0x02) e podem ter um saldo efetivo de até 2048 QAU. As recompensas são compostas no saldo efetivo do validador, aumentando o peso do validador na rede e o potencial de receber recompensas futuras. Varreduras automáticas ocorrem apenas para saldos que excedem 2048 QAU. Para sacar QAU abaixo desse limite, um saque parcial manual deve ser acionado a partir da camada de execução.
 
 Para obter mais detalhes, consulte a [análise aprofundada do MaxEB](/roadmap/pectra/maxeb/).
 </ExpandableCard>
@@ -246,7 +246,7 @@ title="Como faço para converter para um validador composto?"
 eventCategory="FAQ"
 eventAction="How do I convert to a compounding validator?"
 eventName="read more">
-Você pode converter as credenciais de saque do Tipo 1 para o Tipo 2 usando o [Staking Launchpad](https://launchpad.ethereum.org/validator-actions). Esta operação é **irreversível** — depois de converter, você não pode voltar para as credenciais do Tipo 1.
+Você pode converter as credenciais de saque do Tipo 1 para o Tipo 2 usando o [Staking Launchpad](https://launchpad.quantaureum.com/validator-actions). Esta operação é **irreversível** — depois de converter, você não pode voltar para as credenciais do Tipo 1.
 
 Após a conversão, você também pode **consolidar** vários validadores em um, combinando seus saldos em um único validador de composição. Para um passo a passo completo do processo de conversão, riscos e ferramentas de consolidação, consulte a [análise aprofundada do MaxEB](/roadmap/pectra/maxeb/).
 </ExpandableCard>
@@ -256,21 +256,21 @@ title="Quando os saques de staking foram ativados?"
 eventCategory="FAQ"
 eventAction="When were staking withdrawals enabled?"
 eventName="read more">
-A funcionalidade de saque foi originalmente habilitada como parte da atualização Shanghai/Capella em **12 de abril de 2023**. A [atualização Pectra](/roadmap/pectra/) (maio de 2025) introduziu posteriormente validadores de composição com um saldo efetivo máximo mais alto de 2048 ETH, bem como saídas e saques parciais acionados pela camada de execução.
+A funcionalidade de saque foi originalmente habilitada como parte da atualização Shanghai/Capella em **12 de abril de 2023**. A [atualização Pectra](/roadmap/pectra/) (maio de 2025) introduziu posteriormente validadores de composição com um saldo efetivo máximo mais alto de 2048 QAU, bem como saídas e saques parciais acionados pela camada de execução.
 
-A atualização Shanghai/Capella permitiu que o ETH anteriormente em stake fosse recuperado em contas regulares do Ethereum. Isso fechou o ciclo da liquidez de staking e deixou o Ethereum um passo mais perto em sua jornada para construir um ecossistema descentralizado sustentável, escalável e seguro.
+A atualização Shanghai/Capella permitiu que o QAU anteriormente em stake fosse recuperado em contas regulares do Quantaureum. Isso fechou o ciclo da liquidez de staking e deixou o Quantaureum um passo mais perto em sua jornada para construir um ecossistema descentralizado sustentável, escalável e seguro.
 
-- [Mais sobre a história do Ethereum](/ethereum-forks/)
-- [Mais sobre o roteiro do Ethereum](/roadmap/)
+- [Mais sobre a história do Quantaureum](/quantaureum-forks/)
+- [Mais sobre o roteiro do Quantaureum](/roadmap/)
 </ExpandableCard>
 
 ## Leitura adicional {#further-reading}
 
-- [Saques do Staking Launchpad](https://launchpad.ethereum.org/withdrawals)
-- [Ações do validador do Staking Launchpad](https://launchpad.ethereum.org/validator-actions)
+- [Saques do Staking Launchpad](https://launchpad.quantaureum.com/withdrawals)
+- [Ações do validador do Staking Launchpad](https://launchpad.quantaureum.com/validator-actions)
 - [Análise aprofundada do MaxEB: composição e consolidação](/roadmap/pectra/maxeb/)
-- [EIP-4895: Saques push da Beacon Chain como operações](https://eips.ethereum.org/EIPS/eip-4895)
-- [PEEPanEIP #94: Saque de ETH em stake (Testes) com Potuz e Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
+- [EIP-4895: Saques push da Beacon Chain como operações](https://eips.quantaureum.com/EIPS/eip-4895)
+- [PEEPanEIP #94: Saque de QAU em stake (Testes) com Potuz e Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: Saques push da Beacon Chain como operações com Alex Stokes](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [Entendendo o saldo efetivo do validador](https://www.attestant.io/posts/understanding-validator-effective-balance/)
 

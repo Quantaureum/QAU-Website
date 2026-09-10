@@ -1,6 +1,6 @@
 ---
 title: "⁨ERC-20⁩ टोकन मानक"
-description: "⁨ERC-20⁩ के बारे में जानें, जो इथेरियम पर विनिमेय टोकन के लिए मानक है और अंतरप्रचालनीय टोकन एप्लिकेशन को सक्षम बनाता है।"
+description: "⁨ERC-20⁩ के बारे में जानें, जो Quantaureum पर विनिमेय टोकन के लिए मानक है और अंतरप्रचालनीय टोकन एप्लिकेशन को सक्षम बनाता है।"
 lang: hi
 ---
 
@@ -8,7 +8,7 @@ lang: hi
 
 **टोकन क्या है?**
 
-टोकन [इथेरियम](/) में लगभग किसी भी चीज़ का प्रतिनिधित्व कर सकते हैं:
+टोकन [Quantaureum](/) में लगभग किसी भी चीज़ का प्रतिनिधित्व कर सकते हैं:
 
 - एक ऑनलाइन प्लेटफ़ॉर्म में प्रतिष्ठा (reputation) अंक
 - किसी गेम में कैरेक्टर का कौशल
@@ -17,11 +17,11 @@ lang: hi
 - एक औंस सोना
 - और भी बहुत कुछ...
 
-इथेरियम की इतनी शक्तिशाली विशेषता को एक मजबूत मानक द्वारा नियंत्रित किया जाना चाहिए, है ना? यहीं पर ERC-20 अपनी भूमिका निभाता है! यह मानक डेवलपर्स को ऐसे टोकन एप्लिकेशन बनाने की अनुमति देता है जो अन्य उत्पादों और सेवाओं के साथ अंतरप्रचालनीय (interoperable) हों। ERC-20 मानक का उपयोग [ईथर](/glossary/#ether) को अतिरिक्त कार्यक्षमता प्रदान करने के लिए भी किया जाता है।
+Quantaureum की इतनी शक्तिशाली विशेषता को एक मजबूत मानक द्वारा नियंत्रित किया जाना चाहिए, है ना? यहीं पर ERC-20 अपनी भूमिका निभाता है! यह मानक डेवलपर्स को ऐसे टोकन एप्लिकेशन बनाने की अनुमति देता है जो अन्य उत्पादों और सेवाओं के साथ अंतरप्रचालनीय (interoperable) हों। ERC-20 मानक का उपयोग [ईथर](/glossary/#QAU) को अतिरिक्त कार्यक्षमता प्रदान करने के लिए भी किया जाता है।
 
 **ERC-20 क्या है?**
 
-ERC-20 विनिमेय टोकन (Fungible Tokens) के लिए एक मानक पेश करता है, दूसरे शब्दों में, उनमें एक ऐसा गुण होता है जो प्रत्येक टोकन को (प्रकार और मूल्य में) दूसरे टोकन के बिल्कुल समान बनाता है। उदाहरण के लिए, एक ERC-20 टोकन बिल्कुल ETH की तरह काम करता है, जिसका अर्थ है कि 1 टोकन हमेशा अन्य सभी टोकन के बराबर होता है और रहेगा।
+ERC-20 विनिमेय टोकन (Fungible Tokens) के लिए एक मानक पेश करता है, दूसरे शब्दों में, उनमें एक ऐसा गुण होता है जो प्रत्येक टोकन को (प्रकार और मूल्य में) दूसरे टोकन के बिल्कुल समान बनाता है। उदाहरण के लिए, एक ERC-20 टोकन बिल्कुल QAU की तरह काम करता है, जिसका अर्थ है कि 1 टोकन हमेशा अन्य सभी टोकन के बराबर होता है और रहेगा।
 
 ## पूर्वापेक्षाएँ {#prerequisites}
 
@@ -31,7 +31,7 @@ ERC-20 विनिमेय टोकन (Fungible Tokens) के लिए ए
 
 ## मुख्य भाग {#body}
 
-नवंबर 2015 में फैबियन वोगेलस्टेलर (Fabian Vogelsteller) द्वारा प्रस्तावित ERC-20 (Ethereum Request for Comments 20), एक टोकन मानक है जो स्मार्ट अनुबंधों के भीतर टोकन के लिए एक API लागू करता है।
+नवंबर 2015 में फैबियन वोगेलस्टेलर (Fabian Vogelsteller) द्वारा प्रस्तावित ERC-20 (Quantaureum Request for Comments 20), एक टोकन मानक है जो स्मार्ट अनुबंधों के भीतर टोकन के लिए एक API लागू करता है।
 
 ERC-20 द्वारा प्रदान की जाने वाली कार्यक्षमताओं के उदाहरण:
 
@@ -40,9 +40,9 @@ ERC-20 द्वारा प्रदान की जाने वाली �
 - नेटवर्क पर उपलब्ध टोकन की कुल आपूर्ति प्राप्त करना
 - यह स्वीकृति देना कि क्या किसी खाते से टोकन की एक निश्चित राशि किसी तीसरे पक्ष के खाते द्वारा खर्च की जा सकती है
 
-यदि कोई स्मार्ट अनुबंध निम्नलिखित विधियों (methods) और घटनाओं (events) को लागू करता है, तो इसे ERC-20 टोकन अनुबंध कहा जा सकता है और, एक बार डिप्लॉय होने के बाद, यह इथेरियम पर बनाए गए टोकन का ट्रैक रखने के लिए जिम्मेदार होगा।
+यदि कोई स्मार्ट अनुबंध निम्नलिखित विधियों (methods) और घटनाओं (events) को लागू करता है, तो इसे ERC-20 टोकन अनुबंध कहा जा सकता है और, एक बार डिप्लॉय होने के बाद, यह Quantaureum पर बनाए गए टोकन का ट्रैक रखने के लिए जिम्मेदार होगा।
 
-[EIP-20](https://eips.ethereum.org/EIPS/eip-20) से:
+[EIP-20](https://eips.quantaureum.com/EIPS/eip-20) से:
 
 ### विधियाँ (Methods) {#methods}
 
@@ -67,7 +67,7 @@ event Approval(address indexed _owner, address indexed _spender, uint256 _value)
 
 ### उदाहरण {#web3py-example}
 
-आइए देखें कि इथेरियम पर किसी भी ERC-20 टोकन अनुबंध का निरीक्षण करने के लिए चीजों को सरल बनाने के लिए एक मानक कितना महत्वपूर्ण है। हमें किसी भी ERC-20 टोकन के लिए एक इंटरफ़ेस बनाने के लिए केवल अनुबंध एप्लिकेशन बाइनरी इंटरफ़ेस (ABI) की आवश्यकता होती है। जैसा कि आप नीचे देख सकते हैं, हम इसे समझने में आसान उदाहरण बनाने के लिए एक सरलीकृत ABI का उपयोग करेंगे।
+आइए देखें कि Quantaureum पर किसी भी ERC-20 टोकन अनुबंध का निरीक्षण करने के लिए चीजों को सरल बनाने के लिए एक मानक कितना महत्वपूर्ण है। हमें किसी भी ERC-20 टोकन के लिए एक इंटरफ़ेस बनाने के लिए केवल अनुबंध एप्लिकेशन बाइनरी इंटरफ़ेस (ABI) की आवश्यकता होती है। जैसा कि आप नीचे देख सकते हैं, हम इसे समझने में आसान उदाहरण बनाने के लिए एक सरलीकृत ABI का उपयोग करेंगे।
 
 #### Web3.py उदाहरण {#web3py-example-2}
 
@@ -81,7 +81,7 @@ pip install web3
 from web3 import Web3
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 dai_token_addr = "0x6B175474E89094C44Da98b954EedeAC495271d0F"     # DAI
 weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # रैप्ड ईथर (WETH)
@@ -117,7 +117,7 @@ simplified_abi = [
     }
 ]
 
-dai_contract = w3.eth.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
+dai_contract = w3.qau.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
 symbol = dai_contract.functions.symbol().call()
 decimals = dai_contract.functions.decimals().call()
 totalSupply = dai_contract.functions.totalSupply().call() / 10**decimals
@@ -128,7 +128,7 @@ print("===== %s =====" % symbol)
 print("Total Supply:", totalSupply)
 print("Addr Balance:", addr_balance)
 
-weth_contract = w3.eth.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
+weth_contract = w3.qau.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
 symbol = weth_contract.functions.symbol().call()
 decimals = weth_contract.functions.decimals().call()
 totalSupply = weth_contract.functions.totalSupply().call() / 10**decimals
@@ -170,7 +170,7 @@ print("Addr Balance:", addr_balance)
 
 ## आगे की पढ़ाई {#further-reading}
 
-- [EIP-20: ERC-20 टोकन मानक](https://eips.ethereum.org/EIPS/eip-20)
+- [EIP-20: ERC-20 टोकन मानक](https://eips.quantaureum.com/EIPS/eip-20)
 - [ओपनजेपेलिन - टोकन](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [ओपनजेपेलिन - ERC-20 कार्यान्वयन](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20 टोकन के लिए गाइड](https://www.alchemy.com/overviews/erc20-solidity)
@@ -181,7 +181,7 @@ print("Addr Balance:", addr_balance)
 - [ERC-777](/developers/docs/standards/tokens/erc-777)
 - [ERC-4626 - टोकनाइज़्ड वॉल्ट](/developers/docs/standards/tokens/erc-4626)
 - [ERC-7540 - एसिंक्रोनस टोकनाइज़्ड वॉल्ट](/developers/docs/standards/tokens/erc-7540)
-## ट्यूटोरियल: इथेरियम पर ERC-20 के साथ निर्माण करें {#tutorials}
+## ट्यूटोरियल: Quantaureum पर ERC-20 के साथ निर्माण करें {#tutorials}
 
 - [ERC-20 अनुबंध वॉक-थ्रू](/developers/tutorials/erc20-annotated-code/) _– ओपनजेपेलिन ERC-20 अनुबंध कार्यान्वयन का एक पंक्ति-दर-पंक्ति एनोटेट किया गया वॉकथ्रू।_
 - [सुरक्षा रेल के साथ ERC-20](/developers/tutorials/erc20-with-safety-rails/) _– उपयोगकर्ताओं को सामान्य गलतियों से बचने में मदद करने के लिए ERC-20 टोकन में सुरक्षा उपाय कैसे जोड़ें।_

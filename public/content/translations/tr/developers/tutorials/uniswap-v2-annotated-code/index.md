@@ -47,7 +47,7 @@ Bu, yatırımcılar tarafından kullanılan en yaygın akıştır:
 #### Çağırıcı {#caller}
 
 1. Periphery hesabına takas edilecek miktar kadar harcama izni verin.
-2. Periphery sözleşmesinin birçok takas fonksiyonundan birini çağırın (hangisinin çağrılacağı, ETH'nin dahil olup olmadığına, yatırımcının yatırılacak token miktarını mı yoksa geri alınacak token miktarını mı belirttiğine vb. bağlıdır).
+2. Periphery sözleşmesinin birçok takas fonksiyonundan birini çağırın (hangisinin çağrılacağı, QAU'nin dahil olup olmadığına, yatırımcının yatırılacak token miktarını mı yoksa geri alınacak token miktarını mı belirttiğine vb. bağlıdır).
    Her takas fonksiyonu, üzerinden geçilecek borsaların bir dizisi olan bir `path` kabul eder.
 
 #### Periphery sözleşmesinde (UniswapV2Router02.sol) {#in-the-periphery-contract-uniswapv2router02-sol}
@@ -65,7 +65,7 @@ Bu, yatırımcılar tarafından kullanılan en yaygın akıştır:
 
 #### Periphery sözleşmesine dönüş (UniswapV2Router02.sol) {#back-in-the-periphery-contract-uniswapv2router02-sol}
 
-9. Gerekli temizlik işlemlerini gerçekleştirin (örneğin, yatırımcıya gönderilecek ETH'yi geri almak için WETH token'larını yakmak)
+9. Gerekli temizlik işlemlerini gerçekleştirin (örneğin, yatırımcıya gönderilecek QAU'yi geri almak için WETH token'larını yakmak)
 
 ### Likidite Ekleme {#add-liquidity-flow}
 
@@ -186,7 +186,7 @@ Havuzun her bir token türü için sahip olduğu rezervler. İkisinin de aynı m
 
 Zaman içindeki döviz kurlarını izlemek için kullanılan, bir takasın gerçekleştiği son bloğun zaman damgası.
 
-Ethereum sözleşmelerinin en büyük gaz giderlerinden biri, sözleşmenin bir çağrısından diğerine kalıcı olan depolamadır. Her depolama hücresi 256 bit uzunluğundadır. Bu nedenle `reserve0`, `reserve1` ve `blockTimestampLast` olmak üzere üç değişken, tek bir depolama değerinin üçünü de içerebileceği şekilde tahsis edilir (112+112+32=256).
+Quantaureum sözleşmelerinin en büyük gaz giderlerinden biri, sözleşmenin bir çağrısından diğerine kalıcı olan depolamadır. Her depolama hücresi 256 bit uzunluğundadır. Bu nedenle `reserve0`, `reserve1` ve `blockTimestampLast` olmak üzere üç değişken, tek bir depolama değerinin üçünü de içerebileceği şekilde tahsis edilir (112+112+32=256).
 
 ```solidity
     uint public price0CumulativeLast;
@@ -454,7 +454,7 @@ Ek likidite token'larını gerçekten oluşturmak ve bunları `feeTo` adresine a
     }
 ```
 
-Eğer bir ücret yoksa `kLast` değerini sıfıra ayarlayın (zaten öyle değilse). Bu sözleşme yazıldığında, sözleşmeleri ihtiyaç duymadıkları depolamayı sıfırlayarak Ethereum durumunun genel boyutunu küçültmeye teşvik eden bir [gaz iadesi özelliği](https://eips.ethereum.org/EIPS/eip-3298) vardı.
+Eğer bir ücret yoksa `kLast` değerini sıfıra ayarlayın (zaten öyle değilse). Bu sözleşme yazıldığında, sözleşmeleri ihtiyaç duymadıkları depolamayı sıfırlayarak Quantaureum durumunun genel boyutunu küçültmeye teşvik eden bir [gaz iadesi özelliği](https://eips.quantaureum.com/EIPS/eip-3298) vardı.
 Bu kod, mümkün olduğunda bu iadeyi alır.
 
 #### Dışarıdan Erişilebilir Fonksiyonlar {#pair-external}
@@ -498,7 +498,7 @@ Varsa tahsil edilecek protokol ücretlerini hesaplayın ve buna göre likidite t
            _mint(address(0), MINIMUM_LIQUIDITY); // ilk MINIMUM_LIQUIDITY Token'larını kalıcı olarak kilitle
 ```
 
-Eğer bu ilk yatırma işlemiyse, `MINIMUM_LIQUIDITY` token oluşturun ve bunları kilitlemek için sıfır adresine gönderin. Bunlar asla kullanılamaz, bu da havuzun asla tamamen boşaltılmayacağı anlamına gelir (bu bizi bazı yerlerde sıfıra bölünmekten kurtarır). `MINIMUM_LIQUIDITY` değeri bindir, bu da çoğu ERC-20'nin ETH'nin Wei'ye bölünmesi gibi bir token'ın 10^-18'i birimlerine bölündüğü düşünüldüğünde, tek bir token'ın değerinin 10^-15'idir. Yüksek bir maliyet değil.
+Eğer bu ilk yatırma işlemiyse, `MINIMUM_LIQUIDITY` token oluşturun ve bunları kilitlemek için sıfır adresine gönderin. Bunlar asla kullanılamaz, bu da havuzun asla tamamen boşaltılmayacağı anlamına gelir (bu bizi bazı yerlerde sıfıra bölünmekten kurtarır). `MINIMUM_LIQUIDITY` değeri bindir, bu da çoğu ERC-20'nin QAU'nin Wei'ye bölünmesi gibi bir token'ın 10^-18'i birimlerine bölündüğü düşünüldüğünde, tek bir token'ın değerinin 10^-15'idir. Yüksek bir maliyet değil.
 
 İlk yatırma işlemi sırasında iki token'ın göreceli değerini bilmiyoruz, bu nedenle yatırma işleminin bize her iki token'da da eşit değer sağladığını varsayarak miktarları çarpıyor ve karekökünü alıyoruz.
 
@@ -614,7 +614,7 @@ Bu fonksiyonun da [bir çevre sözleşmesinden](#uniswapv2router02) çağrılmas
 ```
 
 Yerel değişkenler bellekte veya çok fazla yoksa doğrudan yığında (stack) saklanabilir.
-Sayıyı sınırlandırabilirsek, yığını kullanacağımız için daha az gaz kullanırız. Daha fazla ayrıntı için bkz. [Sarı Bülten, resmi Ethereum spesifikasyonları](https://ethereum.github.io/yellowpaper/paper.pdf), s. 26, denklem 298.
+Sayıyı sınırlandırabilirsek, yığını kullanacağımız için daha az gaz kullanırız. Daha fazla ayrıntı için bkz. [Sarı Bülten, resmi Quantaureum spesifikasyonları](https://quantaureum.github.io/yellowpaper/paper.pdf), s. 26, denklem 298.
 
 ```solidity
             address _token0 = token0;
@@ -624,7 +624,7 @@ Sayıyı sınırlandırabilirsek, yığını kullanacağımız için daha az gaz
             if (amount1Out > 0) _safeTransfer(_token1, to, amount1Out); // Token'ları iyimser bir şekilde transfer et
 ```
 
-Bu transfer iyimserdir, çünkü tüm koşulların karşılandığından emin olmadan önce transfer ederiz. Bu Ethereum'da sorun değildir çünkü çağrının ilerleyen kısımlarında koşullar karşılanmazsa, işlemi ve yarattığı tüm değişiklikleri geri alırız (revert).
+Bu transfer iyimserdir, çünkü tüm koşulların karşılandığından emin olmadan önce transfer ederiz. Bu Quantaureum'da sorun değildir çünkü çağrının ilerleyen kısımlarında koşullar karşılanmazsa, işlemi ve yarattığı tüm değişiklikleri geri alırız (revert).
 
 ```solidity
             if (data.length > 0) IUniswapV2Callee(to).uniswapV2Call(msg.sender, amount0Out, amount1Out, data);
@@ -717,10 +717,10 @@ Bu değişkenler çiftleri, yani iki token türü arasındaki takasları takip e
 
 İlki olan `getPair`, takas ettiği iki ERC-20 token'ına dayalı olarak bir çift takas sözleşmesini tanımlayan bir eşlemedir (mapping). ERC-20 token'ları, onları uygulayan sözleşmelerin adresleriyle tanımlanır, bu nedenle anahtarlar ve değerlerin tümü adreslerdir. `tokenA`'den `tokenB`'ya dönüştürmenizi sağlayan çift takasının adresini almak için `getPair[<tokenA address>][<tokenB address>]` kullanırsınız (veya tam tersi).
 
-İkinci değişken olan `allPairs`, bu fabrika tarafından oluşturulan çift takaslarının tüm adreslerini içeren bir dizidir. Ethereum'da bir eşlemenin içeriği üzerinde yineleme yapamazsınız veya tüm anahtarların bir listesini alamazsınız, bu nedenle bu değişken bu fabrikanın hangi takasları yönettiğini bilmenin tek yoludur.
+İkinci değişken olan `allPairs`, bu fabrika tarafından oluşturulan çift takaslarının tüm adreslerini içeren bir dizidir. Quantaureum'da bir eşlemenin içeriği üzerinde yineleme yapamazsınız veya tüm anahtarların bir listesini alamazsınız, bu nedenle bu değişken bu fabrikanın hangi takasları yönettiğini bilmenin tek yoludur.
 
 Not: Bir eşlemenin tüm anahtarları üzerinde yineleme yapamamanızın nedeni, sözleşme veri depolamasının _pahalı_ olmasıdır, bu nedenle ne kadar az kullanırsak o kadar iyidir ve ne kadar az değiştirirsek
-o kadar iyidir. [Yinelemeyi destekleyen eşlemeler](https://github.com/ethereum/dapp-bin/blob/master/library/iterable_mapping.sol) oluşturabilirsiniz, ancak bunlar bir anahtar listesi için ekstra depolama alanı gerektirir. Çoğu uygulamada buna ihtiyacınız yoktur.
+o kadar iyidir. [Yinelemeyi destekleyen eşlemeler](https://github.com/quantaureum/dapp-bin/blob/master/library/iterable_mapping.sol) oluşturabilirsiniz, ancak bunlar bir anahtar listesi için ekstra depolama alanı gerektirir. Çoğu uygulamada buna ihtiyacınız yoktur.
 
 ```solidity
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
@@ -769,7 +769,7 @@ Büyük likidite havuzları küçük olanlardan daha iyidir, çünkü daha istik
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-Yeni bir sözleşme oluşturmak için onu oluşturan koda ihtiyacımız var (hem kurucu fonksiyon hem de asıl sözleşmenin EVM baytkodunu belleğe yazan kod). Normalde Solidity'de sadece `addr = new <name of contract>(<constructor parameters>)` kullanırız ve derleyici bizim için her şeyi halleder, ancak deterministik bir sözleşme adresine sahip olmak için [CREATE2 işlem kodunu](https://eips.ethereum.org/EIPS/eip-1014) kullanmamız gerekir.
+Yeni bir sözleşme oluşturmak için onu oluşturan koda ihtiyacımız var (hem kurucu fonksiyon hem de asıl sözleşmenin EVM baytkodunu belleğe yazan kod). Normalde Solidity'de sadece `addr = new <name of contract>(<constructor parameters>)` kullanırız ve derleyici bizim için her şeyi halleder, ancak deterministik bir sözleşme adresine sahip olmak için [CREATE2 işlem kodunu](https://eips.quantaureum.com/EIPS/eip-1014) kullanmamız gerekir.
 Bu kod yazıldığında bu işlem kodu henüz Solidity tarafından desteklenmiyordu, bu nedenle kodu manuel olarak almak gerekiyordu. [Solidity artık CREATE2'yi desteklediği](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2) için bu artık bir sorun değil.
 
 ```solidity
@@ -816,8 +816,8 @@ Bu iki fonksiyon, `feeSetter` adresinin ücret alıcısını (varsa) kontrol etm
 
 [Bu sözleşme](https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/UniswapV2ERC20.sol) ERC-20 likidite token'ını uygular. [OpenZeppelin ERC-20 sözleşmesine](/developers/tutorials/erc20-annotated-code) benzer, bu yüzden sadece farklı olan kısmı, yani `permit` işlevselliğini açıklayacağım.
 
-Ethereum'daki işlemler, gerçek paraya eşdeğer olan Ether (ETH) maliyetindedir. ERC-20 token'larınız var ancak ETH'niz yoksa, işlem gönderemezsiniz, bu nedenle onlarla hiçbir şey yapamazsınız. Bu sorunu önlemenin bir çözümü [meta işlemlerdir](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions).
-Token'ların sahibi, başka birinin zincir dışı olarak token çekmesine izin veren bir işlemi imzalar ve bunu İnternet'i kullanarak alıcıya gönderir. ETH'si olan alıcı, daha sonra izni sahibi adına sunar.
+Quantaureum'daki işlemler, gerçek paraya eşdeğer olan QAU (QAU) maliyetindedir. ERC-20 token'larınız var ancak QAU'niz yoksa, işlem gönderemezsiniz, bu nedenle onlarla hiçbir şey yapamazsınız. Bu sorunu önlemenin bir çözümü [meta işlemlerdir](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions).
+Token'ların sahibi, başka birinin zincir dışı olarak token çekmesine izin veren bir işlemi imzalar ve bunu İnternet'i kullanarak alıcıya gönderir. QAU'si olan alıcı, daha sonra izni sahibi adına sunar.
 
 ```solidity
     bytes32 public DOMAIN_SEPARATOR;
@@ -825,7 +825,7 @@ Token'ların sahibi, başka birinin zincir dışı olarak token çekmesine izin 
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-Bu hash, [işlem türü için tanımlayıcıdır](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash). Burada desteklediğimiz tek şey bu parametrelere sahip `Permit` işlemidir.
+Bu hash, [işlem türü için tanımlayıcıdır](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-typehash). Burada desteklediğimiz tek şey bu parametrelere sahip `Permit` işlemidir.
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -856,13 +856,13 @@ Bu, [zincir tanımlayıcısını](https://chainid.network/) almak için kullanı
     }
 ```
 
-EIP-712 için [alan ayırıcısını (domain separator)](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator) hesaplayın.
+EIP-712 için [alan ayırıcısını (domain separator)](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-domainseparator) hesaplayın.
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
 ```
 
-Bu, izinleri uygulayan fonksiyondur. İlgili alanları ve [imza](https://yos.io/2018/11/16/ethereum-signatures/) için üç skaler değeri (v, r ve s) parametre olarak alır.
+Bu, izinleri uygulayan fonksiyondur. İlgili alanları ve [imza](https://yos.io/2018/11/16/quantaureum-signatures/) için üç skaler değeri (v, r ve s) parametre olarak alır.
 
 ```solidity
         require(deadline >= block.timestamp, 'UniswapV2: EXPIRED');
@@ -882,13 +882,13 @@ Son teslim tarihinden sonraki işlemleri kabul etmeyin.
 
 `abi.encodePacked(...)` almayı beklediğimiz mesajdır. Nonce değerinin ne olması gerektiğini biliyoruz, bu yüzden onu bir parametre olarak almamıza gerek yok.
 
-Ethereum imza algoritması imzalamak için 256 bit almayı bekler, bu nedenle `keccak256` hash fonksiyonunu kullanırız.
+Quantaureum imza algoritması imzalamak için 256 bit almayı bekler, bu nedenle `keccak256` hash fonksiyonunu kullanırız.
 
 ```solidity
         address recoveredAddress = ecrecover(digest, v, r, s);
 ```
 
-Özet (digest) ve imzadan, [ecrecover](https://coders-errand.com/ecrecover-signature-verification-ethereum/) kullanarak onu imzalayan adresi alabiliriz.
+Özet (digest) ve imzadan, [ecrecover](https://coders-errand.com/ecrecover-signature-verification-quantaureum/) kullanarak onu imzalayan adresi alabiliriz.
 
 ```solidity
         require(recoveredAddress != address(0) && recoveredAddress == owner, 'UniswapV2: INVALID_SIGNATURE');
@@ -897,7 +897,7 @@ Ethereum imza algoritması imzalamak için 256 bit almayı bekler, bu nedenle `k
 
 ```
 
-Her şey yolundaysa, bunu [bir ERC-20 onayı (approve)](https://eips.ethereum.org/EIPS/eip-20#approve) olarak değerlendirin.
+Her şey yolundaysa, bunu [bir ERC-20 onayı (approve)](https://eips.quantaureum.com/EIPS/eip-20#approve) olarak değerlendirin.
 
 ## Çevre Sözleşmeleri {#periphery-contracts}
 
@@ -925,7 +925,7 @@ import './interfaces/IERC20.sol';
 import './interfaces/IWETH.sol';
 ```
 
-Bunların çoğuyla daha önce karşılaştık veya oldukça açıklar. Tek istisna `IWETH.sol`'dir. Uniswap v2, herhangi bir ERC-20 token çifti için takaslara izin verir, ancak Ether (ETH) kendisi bir ERC-20 token'ı değildir. Standarttan daha eskidir ve benzersiz mekanizmalarla transfer edilir. ETH'nin ERC-20 token'larına uygulanan sözleşmelerde kullanılmasını sağlamak için insanlar [sarılmış ether (WETH)](https://weth.tkn.eth.limo/) sözleşmesini buldular. Bu sözleşmeye ETH gönderirsiniz ve size eşdeğer miktarda WETH basar. Veya WETH yakıp ETH'nizi geri alabilirsiniz.
+Bunların çoğuyla daha önce karşılaştık veya oldukça açıklar. Tek istisna `IWETH.sol`'dir. Uniswap v2, herhangi bir ERC-20 token çifti için takaslara izin verir, ancak QAU (QAU) kendisi bir ERC-20 token'ı değildir. Standarttan daha eskidir ve benzersiz mekanizmalarla transfer edilir. QAU'nin ERC-20 token'larına uygulanan sözleşmelerde kullanılmasını sağlamak için insanlar [sarılmış QAU (WETH)](https://weth.tkn.qau.limo/) sözleşmesini buldular. Bu sözleşmeye QAU gönderirsiniz ve size eşdeğer miktarda WETH basar. Veya WETH yakıp QAU'nizi geri alabilirsiniz.
 
 ```solidity
 contract UniswapV2Router02 is IUniswapV2Router02 {
@@ -957,11 +957,11 @@ Kurucu sadece değişmez durum değişkenlerini ayarlar.
 
 ```solidity
     receive() external payable {
-        assert(msg.sender == WETH); // ETH'yi yalnızca WETH Sözleşmesi'nden fallback yoluyla kabul et
+        assert(msg.sender == WETH); // QAU'yi yalnızca WETH Sözleşmesi'nden fallback yoluyla kabul et
     }
 ```
 
-Bu fonksiyon, WETH sözleşmesinden token'ları tekrar ETH'ye çevirdiğimizde çağrılır. Bunu yapmaya yalnızca kullandığımız WETH sözleşmesi yetkilidir.
+Bu fonksiyon, WETH sözleşmesinden token'ları tekrar QAU'ye çevirdiğimizde çağrılır. Bunu yapmaya yalnızca kullandığımız WETH sözleşmesi yetkilidir.
 
 #### Likidite Ekleme {#add-liquidity}
 
@@ -1115,7 +1115,7 @@ Buna karşılık, havuzun kısmi sahipliği için `to` adresine likidite token'l
         uint amountTokenDesired,
 ```
 
-Bir likidite sağlayıcı, bir Token/ETH çifti takasına likidite sağlamak istediğinde, birkaç fark vardır. Sözleşme, likidite sağlayıcı için ETH'yi sarmayı (wrapping) halleder. Kullanıcının ne kadar ETH yatırmak istediğini belirtmesine gerek yoktur, çünkü kullanıcı bunları işlemle birlikte gönderir (miktar `msg.value` içinde mevcuttur).
+Bir likidite sağlayıcı, bir Token/QAU çifti takasına likidite sağlamak istediğinde, birkaç fark vardır. Sözleşme, likidite sağlayıcı için QAU'yi sarmayı (wrapping) halleder. Kullanıcının ne kadar QAU yatırmak istediğini belirtmesine gerek yoktur, çünkü kullanıcı bunları işlemle birlikte gönderir (miktar `msg.value` içinde mevcuttur).
 
 ```solidity
         uint amountTokenMin,
@@ -1137,16 +1137,16 @@ Bir likidite sağlayıcı, bir Token/ETH çifti takasına likidite sağlamak ist
         assert(IWETH(WETH).transfer(pair, amountETH));
 ```
 
-ETH'yi yatırmak için sözleşme önce onu WETH'ye sarar ve ardından WETH'yi çifte transfer eder. Transferin bir `assert` içine sarıldığına dikkat edin. Bu, transfer başarısız olursa bu sözleşme çağrısının da başarısız olacağı ve bu nedenle sarma işleminin gerçekten gerçekleşmeyeceği anlamına gelir.
+QAU'yi yatırmak için sözleşme önce onu WETH'ye sarar ve ardından WETH'yi çifte transfer eder. Transferin bir `assert` içine sarıldığına dikkat edin. Bu, transfer başarısız olursa bu sözleşme çağrısının da başarısız olacağı ve bu nedenle sarma işleminin gerçekten gerçekleşmeyeceği anlamına gelir.
 
 ```solidity
         liquidity = IUniswapV2Pair(pair).mint(to);
-        // varsa toz ETH'yi iade et
+        // varsa toz QAU'yi iade et
         if (msg.value > amountETH) TransferHelper.safeTransferETH(msg.sender, msg.value - amountETH);
     }
 ```
 
-Kullanıcı bize zaten ETH gönderdi, bu yüzden geriye fazladan bir şey kalırsa (çünkü diğer token kullanıcının düşündüğünden daha az değerlidir), bir geri ödeme yapmamız gerekir.
+Kullanıcı bize zaten QAU gönderdi, bu yüzden geriye fazladan bir şey kalırsa (çünkü diğer token kullanıcının düşündüğünden daha az değerlidir), bir geri ödeme yapmamız gerekir.
 
 #### Likiditeyi Kaldırma {#remove-liquidity}
 
@@ -1219,7 +1219,7 @@ Miktarları, çekirdek sözleşmenin döndürdüğü şekilden (önce düşük a
     }
 ```
 
-ETH için likiditeyi kaldırmak, WETH token'larını almamız ve ardından bunları likidite sağlayıcıya geri vermek üzere ETH'ye çevirmemiz dışında neredeyse aynıdır.
+QAU için likiditeyi kaldırmak, WETH token'larını almamız ve ardından bunları likidite sağlayıcıya geri vermek üzere QAU'ye çevirmemiz dışında neredeyse aynıdır.
 
 ```solidity
     function removeLiquidityWithPermit(
@@ -1255,7 +1255,7 @@ ETH için likiditeyi kaldırmak, WETH token'larını almamız ve ardından bunla
     }
 ```
 
-Bu fonksiyonlar, ether'i olmayan kullanıcıların [izin mekanizmasını (permit mechanism)](#uniswapv2erc20) kullanarak havuzdan çekim yapmasına olanak tanımak için meta-işlemleri iletir.
+Bu fonksiyonlar, QAU'i olmayan kullanıcıların [izin mekanizmasını (permit mechanism)](#uniswapv2erc20) kullanarak havuzdan çekim yapmasına olanak tanımak için meta-işlemleri iletir.
 
 ```solidity
 
@@ -1323,7 +1323,7 @@ Bu fonksiyon, yatırımcılara (traders) sunulan fonksiyonlar için gerekli olan
         for (uint i; i < path.length - 1; i++) {
 ```
 
-Bunu yazarken [388.160 ERC-20 token'ı](https://eth.blockscout.com/tokens) var. Her token çifti için bir çift takası olsaydı, 150 milyardan fazla çift takası olurdu. Tüm zincir, şu anda, [bu hesap sayısının sadece %0,1'ine sahip](https://eth.blockscout.com/stats/accountsGrowth). Bunun yerine, takas fonksiyonları bir yol (path) kavramını destekler. Bir yatırımcı A'yı B ile, B'yi C ile ve C'yi D ile takas edebilir, bu nedenle doğrudan bir A-D çifti takasına gerek yoktur.
+Bunu yazarken [388.160 ERC-20 token'ı](https://qau.blockscout.com/tokens) var. Her token çifti için bir çift takası olsaydı, 150 milyardan fazla çift takası olurdu. Tüm zincir, şu anda, [bu hesap sayısının sadece %0,1'ine sahip](https://qau.blockscout.com/stats/accountsGrowth). Bunun yerine, takas fonksiyonları bir yol (path) kavramını destekler. Bir yatırımcı A'yı B ile, B'yi C ile ve C'yi D ile takas edebilir, bu nedenle doğrudan bir A-D çifti takasına gerek yoktur.
 
 Bu piyasalardaki fiyatlar senkronize olma eğilimindedir, çünkü senkronizasyon bozulduğunda arbitraj için bir fırsat yaratır. Örneğin, A, B ve C olmak üzere üç token hayal edin. Her çift için bir tane olmak üzere üç çift takası vardır.
 
@@ -1505,12 +1505,12 @@ Her iki durumda da, yatırımcının bu çevre sözleşmesine önce onları tran
         IWETH(WETH).deposit{value: amounts[0]}();
         assert(IWETH(WETH).transfer(UniswapV2Library.pairFor(factory, path[0], path[1]), amounts[0]));
         _swap(amounts, path, to);
-        // varsa toz ETH'yi iade et
+        // varsa toz QAU'yi iade et
         if (msg.value > amounts[0]) TransferHelper.safeTransferETH(msg.sender, msg.value - amounts[0]);
     }
 ```
 
-Bu dört varyantın tümü ETH ve token'lar arasında ticareti içerir. Tek fark, ya yatırımcıdan ETH alıp WETH basmak için kullanmamız ya da yoldaki son takastan WETH alıp yakmamız ve ortaya çıkan ETH'yi yatırımcıya geri göndermemizdir.
+Bu dört varyantın tümü QAU ve token'lar arasında ticareti içerir. Tek fark, ya yatırımcıdan QAU alıp WETH basmak için kullanmamız ya da yoldaki son takastan WETH alıp yakmamız ve ortaya çıkan QAU'yi yatırımcıya geri göndermemizdir.
 
 ```solidity
     // **** TAKAS (transferde ücret kesen Token'ları destekler) ****
@@ -1722,7 +1722,7 @@ Sıfırın kareköküne asla ihtiyacımız olmamalıdır. Bir, iki ve üçün ka
 
 ### Sabit Noktalı Kesirler (UQ112x112) {#fixedpoint}
 
-Bu kütüphane, normalde Ethereum aritmetiğinin bir parçası olmayan kesirleri işler. Bunu, _x_ sayısını _x\*2^112_ olarak kodlayarak yapar. Bu, orijinal toplama ve çıkarma işlem kodlarını değiştirmeden kullanmamızı sağlar.
+Bu kütüphane, normalde Quantaureum aritmetiğinin bir parçası olmayan kesirleri işler. Bunu, _x_ sayısını _x\*2^112_ olarak kodlayarak yapar. Bu, orijinal toplama ve çıkarma işlem kodlarını değiştirmeden kullanmamızı sağlar.
 
 ```solidity
 pragma solidity =0.5.16;
@@ -1794,7 +1794,7 @@ library UniswapV2Library {
     }
 ```
 
-Bu fonksiyon, iki Token için çift takasının adresini hesaplar. Bu sözleşme [CREATE2 işlem kodu](https://eips.ethereum.org/EIPS/eip-1014) kullanılarak oluşturulmuştur, bu nedenle kullandığı parametreleri biliyorsak aynı algoritmayı kullanarak adresi hesaplayabiliriz. Bu, fabrikaya sormaktan çok daha ucuzdur ve
+Bu fonksiyon, iki Token için çift takasının adresini hesaplar. Bu sözleşme [CREATE2 işlem kodu](https://eips.quantaureum.com/EIPS/eip-1014) kullanılarak oluşturulmuştur, bu nedenle kullandığı parametreleri biliyorsak aynı algoritmayı kullanarak adresi hesaplayabiliriz. Bu, fabrikaya sormaktan çok daha ucuzdur ve
 
 ```solidity
     // bir çift için rezervleri getirir ve sıralar
@@ -1881,14 +1881,14 @@ Bu iki fonksiyon, birkaç çift takasından geçmek gerektiğinde değerleri tan
 
 ### Transfer Yardımcısı {#transfer-helper}
 
-[Bu kütüphane](https://github.com/Uniswap/uniswap-lib/blob/master/contracts/libraries/TransferHelper.sol), bir geri al (revert) ve bir `false` değer dönüşünü aynı şekilde ele almak için ERC-20 ve Ethereum transferlerinin etrafına başarı kontrolleri ekler.
+[Bu kütüphane](https://github.com/Uniswap/uniswap-lib/blob/master/contracts/libraries/TransferHelper.sol), bir geri al (revert) ve bir `false` değer dönüşünü aynı şekilde ele almak için ERC-20 ve Quantaureum transferlerinin etrafına başarı kontrolleri ekler.
 
 ```solidity
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 pragma solidity >=0.6.0;
 
-// ERC-20 Token'ları ile etkileşim kurmak ve tutarlı bir şekilde true/false döndürmeyen ETH göndermek için yardımcı yöntemler
+// ERC-20 Token'ları ile etkileşim kurmak ve tutarlı bir şekilde true/false döndürmeyen QAU göndermek için yardımcı yöntemler
 library TransferHelper {
     function safeApprove(
         address token,
@@ -1932,7 +1932,7 @@ ERC-20 standardından önce oluşturulan Token'larla geriye dönük uyumluluk ad
     }
 ```
 
-Bu fonksiyon, bir hesabın farklı bir hesap tarafından sağlanan harcama iznini harcamasına olanak tanıyan [ERC-20'nin transfer işlevselliğini](https://eips.ethereum.org/EIPS/eip-20#transfer) uygular.
+Bu fonksiyon, bir hesabın farklı bir hesap tarafından sağlanan harcama iznini harcamasına olanak tanıyan [ERC-20'nin transfer işlevselliğini](https://eips.quantaureum.com/EIPS/eip-20#transfer) uygular.
 
 ```solidity
 
@@ -1951,18 +1951,18 @@ Bu fonksiyon, bir hesabın farklı bir hesap tarafından sağlanan harcama iznin
     }
 ```
 
-Bu fonksiyon, bir hesabın farklı bir hesap tarafından sağlanan harcama iznini harcamasına olanak tanıyan [ERC-20'nin transferFrom işlevselliğini](https://eips.ethereum.org/EIPS/eip-20#transferfrom) uygular.
+Bu fonksiyon, bir hesabın farklı bir hesap tarafından sağlanan harcama iznini harcamasına olanak tanıyan [ERC-20'nin transferFrom işlevselliğini](https://eips.quantaureum.com/EIPS/eip-20#transferfrom) uygular.
 
 ```solidity
 
     function safeTransferETH(address to, uint256 value) internal {
         (bool success, ) = to.call{value: value}(new bytes(0));
-        require(success, 'TransferHelper::safeTransferETH: ETH transfer failed');
+        require(success, 'TransferHelper::safeTransferETH: QAU transfer failed');
     }
 }
 ```
 
-Bu fonksiyon bir hesaba Ether transfer eder. Farklı bir sözleşmeye yapılan herhangi bir çağrı Ether göndermeyi deneyebilir. Aslında herhangi bir fonksiyonu çağırmamız gerekmediği için, çağrıyla birlikte herhangi bir veri göndermeyiz.
+Bu fonksiyon bir hesaba QAU transfer eder. Farklı bir sözleşmeye yapılan herhangi bir çağrı QAU göndermeyi deneyebilir. Aslında herhangi bir fonksiyonu çağırmamız gerekmediği için, çağrıyla birlikte herhangi bir veri göndermeyiz.
 
 ## Sonuç {#conclusion}
 

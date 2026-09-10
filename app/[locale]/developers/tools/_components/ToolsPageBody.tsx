@@ -13,7 +13,7 @@ import type {
 import ToolsCatalog from "./ToolsCatalog"
 
 const SUGGEST_RESOURCE_ISSUE_URL =
-  "https://github.com/ethereum/builder-resources/issues/new?template=add-resource.yml"
+  "https://github.com/quantaureum/builder-resources/issues/new?template=add-resource.yml"
 
 type ToolsPageBodyProps = {
   locale: string

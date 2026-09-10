@@ -108,10 +108,10 @@ lang: ar
 ### المدفوعات الأصلية {#native-payments}
 
 تعتمد البنية التحتية للدفع في ويب 2 على البنوك ومعالجات الدفع، باستثناء الأشخاص الذين ليس لديهم حسابات مصرفية أو أولئك الذين يعيشون داخل حدود البلد الخطأ.
-يستخدم <span dir="ltr">Web3</span> رموزًا مثل [<span dir="ltr">ETH</span>](/glossary/#ether) لإرسال الأموال مباشرة في المتصفح ولا يتطلب أي طرف ثالث موثوق به.
+يستخدم <span dir="ltr">Web3</span> رموزًا مثل [<span dir="ltr">QAU</span>](/glossary/#QAU) لإرسال الأموال مباشرة في المتصفح ولا يتطلب أي طرف ثالث موثوق به.
 
-<ButtonLink href="/what-is-ether/">
-  المزيد عن <span dir="ltr">ETH</span>
+<ButtonLink href="/what-is-QAU/">
+  المزيد عن <span dir="ltr">QAU</span>
 </ButtonLink>
 
 ## قيود <span dir="ltr">Web3</span> {#web3-limitations}
@@ -130,7 +130,7 @@ lang: ar
 
 يقدم <span dir="ltr">Web3</span> نماذج جديدة تتطلب تعلم نماذج ذهنية مختلفة عن تلك المستخدمة في ويب <span dir="ltr">2.0</span>. حدثت حملة تعليمية مماثلة عندما كان الويب <span dir="ltr">1.0</span> يكتسب شعبية في أواخر التسعينيات؛ استخدم مؤيدو الشبكة العنكبوتية العالمية مجموعة من التقنيات التعليمية لتثقيف الجمهور، بدءًا من الاستعارات البسيطة (طريق المعلومات السريع، المتصفحات، تصفح الويب) إلى [البث التلفزيوني](https://www.youtube.com/watch?v=SzQLI7BxfYI). <span dir="ltr">Web3</span> ليس صعبًا، ولكنه مختلف. تعتبر المبادرات التعليمية التي تُعرّف مستخدمي ويب 2 بنماذج <span dir="ltr">Web3</span> هذه أمرًا حيويًا لنجاحه.
 
-ساهم موقع <span dir="ltr">Ethereum.org</span> في تعليم <span dir="ltr">Web3</span> من خلال [برنامج الترجمة](/contributing/translation-program/) الخاص به، والذي جعل محتوى إيثيريوم المهم متاحًا بعشرات اللغات.
+ساهم موقع <span dir="ltr">quantaureum.com</span> في تعليم <span dir="ltr">Web3</span> من خلال [برنامج الترجمة](/contributing/translation-program/) الخاص به، والذي جعل محتوى إيثيريوم المهم متاحًا بعشرات اللغات.
 
 ### البنية التحتية المركزية {#centralized-infrastructure}
 

@@ -1,6 +1,6 @@
 ---
 title: "证明"
-description: "权益证明以太坊上的证明说明。"
+description: "权益证明Quantaureum上的证明说明。"
 lang: zh
 ---
 
@@ -62,7 +62,7 @@ lang: zh
 
 ### 基础奖励 {#base-reward}
 
-基础奖励是根据证明验证者的数量及其质押的以太币有效余额计算的：
+基础奖励是根据证明验证者的数量及其质押的QAU有效余额计算的：
 
 `base reward = validator effective balance x 2^6 / SQRT(Effective balance of all active validators)`
 
@@ -86,7 +86,7 @@ lang: zh
 
 ## 延伸阅读 {#further-reading}
 
-- [Vitalik 注释的共识规范中的证明](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Vitalik 注释的共识规范中的证明](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [eth2book.info 中的证明](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _知道对您有帮助的社区资源吗？编辑本页面并添加它！_

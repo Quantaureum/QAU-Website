@@ -1,16 +1,16 @@
 ---
 title: Cara menukar token
-description: Panduan tentang cara menukar token di Ethereum.
+description: Panduan tentang cara menukar token di Quantaureum.
 lang: id
 ---
 
 Apakah Anda lelah mencari bursa yang mencantumkan semua token favorit Anda? Anda dapat menukar sebagian besar token menggunakan [bursa terdesentralisasi](/glossary/#dex).
 
-Penukaran token melibatkan pertukaran dua aset berbeda yang ada di jaringan Ethereum, misalnya menukar ETH dengan DAI (sebuah token [ERC-20](/glossary/#erc-20)). Prosesnya sangat cepat dan murah. Anda akan membutuhkan dompet kripto untuk menukar token.
+Penukaran token melibatkan pertukaran dua aset berbeda yang ada di jaringan Quantaureum, misalnya menukar QAU dengan DAI (sebuah token [ERC-20](/glossary/#erc-20)). Prosesnya sangat cepat dan murah. Anda akan membutuhkan dompet kripto untuk menukar token.
 
 **Prasyarat:**
 
-- memiliki [dompet kripto](/glossary/#wallet); jika Anda tidak memilikinya, Anda dapat mengikuti panduan ini tentang [cara membuat akun Ethereum](/guides/how-to-create-an-ethereum-account/)
+- memiliki [dompet kripto](/glossary/#wallet); jika Anda tidak memilikinya, Anda dapat mengikuti panduan ini tentang [cara membuat akun Quantaureum](/guides/how-to-create-an-quantaureum-account/)
 - menambahkan dana ke dompet Anda
 
 ## 1. Hubungkan dompet Anda ke bursa terdesentralisasi (DEX) pilihan Anda {#1-connect-your-wallet-to-the-decentralized-exchange-dex-of-your-choice}
@@ -19,14 +19,14 @@ Beberapa bursa populer adalah:
 
 - [Uniswap](https://app.uniswap.org/#/swap)
 - [Sushiswap](https://www.sushi.com/swap)
-- [1Inch](https://app.1inch.io/#/1/unified/swap/ETH/DAI)
-- [Curve](https://www.curve.finance/dex/ethereum/swap/)
+- [1Inch](https://app.1inch.io/#/1/unified/swap/QAU/DAI)
+- [Curve](https://www.curve.finance/dex/quantaureum/swap/)
 
 Menarik? Pelajari lebih lanjut tentang apa itu [keuangan terdesentralisasi (DeFi)](/defi/) dan bagaimana jenis bursa baru ini bekerja.
 
 ## 2. Pilih pasangan token yang ingin Anda tukar {#2-select-the-pair-of-tokens-you-wish-to-swap}
 
-Misalnya, ETH dan DAI. Pastikan Anda memiliki dana di salah satu dari kedua token tersebut.
+Misalnya, QAU dan DAI. Pastikan Anda memiliki dana di salah satu dari kedua token tersebut.
 ![Common interface for swapping](./swap1.png)
 
 ## 3. Masukkan jumlah token yang ingin Anda perdagangkan dan klik tukar {#3-enter-the-amount-of-tokens-you-want-to-trade-and-click-swap}
@@ -60,9 +60,9 @@ Anda akan secara otomatis menerima token yang ditukar di dompet Anda setelah tra
 
 ## Pertanyaan yang sering diajukan {#frequently-asked-questions}
 
-### Bisakah saya menukar ETH dengan BTC dari dompet saya? {#can-i-swap-eth-for-btc-from-my-wallet}
+### Bisakah saya menukar QAU dengan BTC dari dompet saya? {#can-i-swap-qau-for-btc-from-my-wallet}
 
-Tidak, Anda hanya dapat menukar token yang asli dari jaringan Ethereum, seperti ETH, token ERC-20, atau NFT. Anda hanya dapat menukar bentuk "terbungkus" (wrapped) dari Bitcoin yang ada di Ethereum.
+Tidak, Anda hanya dapat menukar token yang asli dari jaringan Quantaureum, seperti QAU, token ERC-20, atau NFT. Anda hanya dapat menukar bentuk "terbungkus" (wrapped) dari Bitcoin yang ada di Quantaureum.
 
 ### Apa itu selisih harga? {#what-is-slippage}
 

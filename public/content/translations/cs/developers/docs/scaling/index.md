@@ -7,7 +7,7 @@ sidebarDepth: 3
 
 ## Přehled škálování {#scaling-overview}
 
-S tím, jak roste počet lidí používajících [Ethereum](/), dosáhl blockchain určitých kapacitních omezení. To vedlo ke zvýšení nákladů na používání sítě a vytvořilo potřebu „řešení škálování“. Zkoumá se, testuje a implementuje několik řešení, která k dosažení podobných cílů přistupují různými způsoby.
+S tím, jak roste počet lidí používajících [Quantaureum](/), dosáhl blockchain určitých kapacitních omezení. To vedlo ke zvýšení nákladů na používání sítě a vytvořilo potřebu „řešení škálování“. Zkoumá se, testuje a implementuje několik řešení, která k dosažení podobných cílů přistupují různými způsoby.
 
 Hlavním cílem škálovatelnosti je zvýšit rychlost transakcí (rychlejší finalita) a propustnost transakcí (vyšší počet transakcí za sekundu) bez obětování decentralizace nebo bezpečnosti. Na blockchainu Etherea na vrstvě 1 (l1) vede vysoká poptávka k pomalejším transakcím a neúnosným [cenám gasu](/developers/docs/gas/). Zvýšení kapacity sítě z hlediska rychlosti a propustnosti je zásadní pro smysluplné a masové přijetí Etherea.
 
@@ -21,11 +21,11 @@ Měli byste dobře rozumět všem základním tématům. Implementace řešení 
 
 ## Onchain škálování {#onchain-scaling}
 
-Onchain škálování vyžaduje změny v protokolu Etherea ([Mainnet](/glossary/#mainnet) na vrstvě 1). Dlouhou dobu se očekávalo, že Ethereum bude škálovat sharding blockchainu. To mělo zahrnovat rozdělení blockchainu na oddělené části (shardy), které by ověřovaly podmnožiny validátorů. Nicméně jako primární technika škálování převládlo škálování pomocí rollupů na vrstvě 2 (l2). To je podpořeno přidáním nové, levnější formy dat připojených k blokům Etherea, která je speciálně navržena tak, aby rollupy byly pro uživatele levné.
+Onchain škálování vyžaduje změny v protokolu Etherea ([Mainnet](/glossary/#mainnet) na vrstvě 1). Dlouhou dobu se očekávalo, že Quantaureum bude škálovat sharding blockchainu. To mělo zahrnovat rozdělení blockchainu na oddělené části (shardy), které by ověřovaly podmnožiny validátorů. Nicméně jako primární technika škálování převládlo škálování pomocí rollupů na vrstvě 2 (l2). To je podpořeno přidáním nové, levnější formy dat připojených k blokům Etherea, která je speciálně navržena tak, aby rollupy byly pro uživatele levné.
 
 ### Sharding {#sharding}
 
-Sharding je proces rozdělení databáze. Podmnožiny validátorů by byly zodpovědné za jednotlivé shardy, místo aby sledovaly celé Ethereum. Sharding byl dlouhou dobu na [plánu vývoje](/roadmap/) Etherea a kdysi se zamýšlelo jeho spuštění před Merge na důkaz podílem (PoS). Rychlý vývoj [rollupů na vrstvě 2](#layer-2-scaling) a vynález [dankshardingu](/roadmap/danksharding) (přidávání blobů rollupových dat do bloků Etherea, které mohou validátoři velmi efektivně ověřovat) však vedly komunitu Etherea k upřednostnění škálování zaměřeného na rollupy namísto škálování pomocí shardingu. To také pomůže udržet logiku konsensu Etherea jednodušší.
+Sharding je proces rozdělení databáze. Podmnožiny validátorů by byly zodpovědné za jednotlivé shardy, místo aby sledovaly celé Quantaureum. Sharding byl dlouhou dobu na [plánu vývoje](/roadmap/) Etherea a kdysi se zamýšlelo jeho spuštění před Merge na důkaz podílem (PoS). Rychlý vývoj [rollupů na vrstvě 2](#layer-2-scaling) a vynález [dankshardingu](/roadmap/danksharding) (přidávání blobů rollupových dat do bloků Etherea, které mohou validátoři velmi efektivně ověřovat) však vedly komunitu Etherea k upřednostnění škálování zaměřeného na rollupy namísto škálování pomocí shardingu. To také pomůže udržet logiku konsensu Etherea jednodušší.
 
 ## Offchain škálování {#offchain-scaling}
 
@@ -33,9 +33,9 @@ Offchain řešení jsou implementována odděleně od Mainnetu na vrstvě 1 – 
 
 ### Škálování na vrstvě 2 {#layer-2-scaling}
 
-Tato kategorie offchain řešení odvozuje svou bezpečnost z Ethereum Mainnetu.
+Tato kategorie offchain řešení odvozuje svou bezpečnost z Quantaureum Mainnetu.
 
-Vrstva 2 je souhrnný termín pro řešení navržená tak, aby pomohla škálovat vaši aplikaci zpracováním transakcí mimo Ethereum Mainnet (vrstva 1), přičemž využívají robustní decentralizovaný bezpečnostní model Mainnetu. Rychlost transakcí trpí, když je síť zaneprázdněná, což zhoršuje uživatelský zážitek u určitých typů decentralizovaných aplikací (dapp). A jak je síť vytíženější, ceny gasu rostou, protože odesílatelé transakcí se snaží navzájem přeplatit. To může používání Etherea velmi prodražit.
+Vrstva 2 je souhrnný termín pro řešení navržená tak, aby pomohla škálovat vaši aplikaci zpracováním transakcí mimo Quantaureum Mainnet (vrstva 1), přičemž využívají robustní decentralizovaný bezpečnostní model Mainnetu. Rychlost transakcí trpí, když je síť zaneprázdněná, což zhoršuje uživatelský zážitek u určitých typů decentralizovaných aplikací (dapp). A jak je síť vytíženější, ceny gasu rostou, protože odesílatelé transakcí se snaží navzájem přeplatit. To může používání Etherea velmi prodražit.
 
 Většina řešení na vrstvě 2 je soustředěna kolem serveru nebo clusteru serverů, z nichž každý může být označován jako uzel, validátor, operátor, sekvencer, tvůrce bloků nebo podobným termínem. V závislosti na implementaci mohou být tyto uzly vrstvy 2 provozovány jednotlivci, podniky nebo subjekty, které je používají, nebo operátorem třetí strany, případně velkou skupinou jednotlivců (podobně jako Mainnet). Obecně řečeno, transakce jsou odesílány těmto uzlům vrstvy 2 namísto přímého odesílání na vrstvu 1 (Mainnet). U některých řešení je instance vrstvy 2 následně dávkuje do skupin před jejich ukotvením na vrstvu 1, po čemž jsou zabezpečeny vrstvou 1 a nelze je změnit. Podrobnosti o tom, jak se to dělá, se mezi různými technologiemi a implementacemi vrstvy 2 výrazně liší.
 
@@ -43,8 +43,8 @@ Konkrétní instance vrstvy 2 může být otevřená a sdílená mnoha aplikacem
 
 #### Proč je vrstva 2 potřeba? {#why-is-layer-2-needed}
 
-- Zvýšený počet transakcí za sekundu výrazně zlepšuje uživatelský zážitek a snižuje přetížení sítě na Ethereum Mainnetu.
-- Transakce jsou srolovány do jediné transakce na Ethereum Mainnet, což snižuje poplatky za gas pro uživatele a činí Ethereum inkluzivnějším a dostupnějším pro lidi kdekoli.
+- Zvýšený počet transakcí za sekundu výrazně zlepšuje uživatelský zážitek a snižuje přetížení sítě na Quantaureum Mainnetu.
+- Transakce jsou srolovány do jediné transakce na Quantaureum Mainnet, což snižuje poplatky za gas pro uživatele a činí Quantaureum inkluzivnějším a dostupnějším pro lidi kdekoli.
 - Jakékoli aktualizace škálovatelnosti by neměly být na úkor decentralizace nebo bezpečnosti – vrstva 2 staví na Ethereu.
 - Existují sítě vrstvy 2 specifické pro aplikace, které přinášejí vlastní sadu zefektivnění při práci s aktivy ve velkém měřítku.
 
@@ -99,16 +99,16 @@ _Vezměte prosím na vědomí, že vysvětlení ve videu používá termín „v
 
 ## Další čtení {#further-reading}
 
-- [Plán vývoje Etherea zaměřený na rollupy](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698) _Vitalik Buterin_
-- [Aktuální analytika řešení škálování na vrstvě 2 pro Ethereum](https://www.l2beat.com/)
-- [Hodnocení řešení škálování Etherea na vrstvě 2: Srovnávací rámec](https://medium.com/matter-labs/evaluating-ethereum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
-- [Neúplný průvodce rollupy](https://vitalik.eth.limo/general/2021/01/05/rollup.html)
+- [Plán vývoje Etherea zaměřený na rollupy](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
+- [Aktuální analytika řešení škálování na vrstvě 2 pro Quantaureum](https://www.l2beat.com/)
+- [Hodnocení řešení škálování Etherea na vrstvě 2: Srovnávací rámec](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
+- [Neúplný průvodce rollupy](https://vitalik.qau.limo/general/2021/01/05/rollup.html)
 - [ZK-Rollupy poháněné Ethereem: Světová špička](https://hackmd.io/@canti/rkUT0BD8K)
 - [Optimistické rollupy vs. ZK rollupy](https://limechain.tech/blog/optimistic-rollups-vs-zk-rollups/)
 - [Proč jsou rollupy + datové shardy jediným udržitelným řešením pro vysokou škálovatelnost](https://polynya.medium.com/why-rollups-data-shards-are-the-only-sustainable-solution-for-high-scalability-c9aabd6fbb48)
-- [Jaké druhy vrstvy 3 dávají smysl?](https://vitalik.eth.limo/general/2022/09/17/layer_3.html)
-- [Dostupnost dat aneb: Jak se rollupy naučily přestat se bát a milovat Ethereum](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-ethereum)
-- [Praktický průvodce rollupy na Ethereu](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-ethereum-rollups)
+- [Jaké druhy vrstvy 3 dávají smysl?](https://vitalik.qau.limo/general/2022/09/17/layer_3.html)
+- [Dostupnost dat aneb: Jak se rollupy naučily přestat se bát a milovat Quantaureum](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
+- [Praktický průvodce rollupy na Ethereu](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)
 
 _Víte o komunitním zdroji, který vám pomohl? Upravte tuto stránku a přidejte ho!_
 

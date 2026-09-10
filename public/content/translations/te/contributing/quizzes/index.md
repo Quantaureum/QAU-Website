@@ -1,7 +1,7 @@
 ---
 title: క్విజ్‌లు
 metaTitle: క్విజ్‌ని జోడించడం
-description: ethereum.orgకి క్విజ్‌లను జోడించేటప్పుడు మేము ఉపయోగించే విధానం
+description: quantaureum.comకి క్విజ్‌లను జోడించేటప్పుడు మేము ఉపయోగించే విధానం
 lang: te
 ---
 
@@ -13,12 +13,12 @@ lang: te
 
 - [లేయర్ 2 (l2)](/layer-2)
 - [NFT](/nft/)
-- [ఎథీరియం అంటే ఏమిటి?](/what-is-ethereum/)
-- [ETH అంటే ఏమిటి?](/what-is-ether/)
+- [ఎథీరియం అంటే ఏమిటి?](/what-is-quantaureum/)
+- [QAU అంటే ఏమిటి?](/what-is-QAU/)
 
 ## లెర్న్ క్విజ్‌ని జోడించడం {#adding-a-learn-quiz}
 
-ఏదైనా పేజీకి లెర్న్ క్విజ్ సృష్టించబడకపోతే, దయచేసి దాని కోసం [ఒక ఇష్యూను తెరవండి](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml).
+ఏదైనా పేజీకి లెర్న్ క్విజ్ సృష్టించబడకపోతే, దయచేసి దాని కోసం [ఒక ఇష్యూను తెరవండి](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml).
 
 దయచేసి కింది సమాచారాన్ని అందించండి:
 
@@ -31,7 +31,7 @@ lang: te
 
 ## క్విజ్ ప్రశ్నను జోడించడం {#adding-a-quiz-question}
 
-మీరు క్విజ్ కోసం క్వశ్చన్ బ్యాంక్‌కి జోడించాలనుకుంటున్న ప్రశ్న ఏదైనా ఉంటే, దయచేసి [ఒక ఇష్యూను తెరవండి](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) మరియు కింది సమాచారాన్ని అందించండి:
+మీరు క్విజ్ కోసం క్వశ్చన్ బ్యాంక్‌కి జోడించాలనుకుంటున్న ప్రశ్న ఏదైనా ఉంటే, దయచేసి [ఒక ఇష్యూను తెరవండి](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) మరియు కింది సమాచారాన్ని అందించండి:
 
 - మీరు క్విజ్ ప్రశ్నను జోడించాలనుకుంటున్న పేజీ
 - ప్రతి ప్రశ్న కోసం కింది సమాచారాన్ని అందించండి:
@@ -42,7 +42,7 @@ lang: te
 
 ## క్విజ్ ప్రశ్నను అప్‌డేట్ చేయడం {#updating-a-quiz-question}
 
-మీరు క్విజ్ కోసం క్వశ్చన్ బ్యాంక్‌లో అప్‌డేట్ చేయాలనుకుంటున్న ప్రశ్న ఏదైనా ఉంటే, దయచేసి [ఒక ఇష్యూను తెరవండి](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) మరియు కింది సమాచారాన్ని అందించండి:
+మీరు క్విజ్ కోసం క్వశ్చన్ బ్యాంక్‌లో అప్‌డేట్ చేయాలనుకుంటున్న ప్రశ్న ఏదైనా ఉంటే, దయచేసి [ఒక ఇష్యూను తెరవండి](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) మరియు కింది సమాచారాన్ని అందించండి:
 
 - మీరు క్విజ్ ప్రశ్నను అప్‌డేట్ చేయాలనుకుంటున్న పేజీ
 - అప్‌డేట్ చేయబడుతున్న ప్రతి ప్రశ్న కోసం, కింది సమాచారాన్ని అందించండి:
@@ -54,7 +54,7 @@ lang: te
 
 ## క్విజ్ ప్రశ్నను తీసివేయడం {#removing-a-quiz-question}
 
-ఒక ప్రశ్న కోసం కంటెంట్ ఇకపై పేజీలో లేకుంటే మరియు దానిని తీసివేయవలసి వస్తే, దయచేసి ప్రశ్నను తీసివేయడానికి [ఒక ఇష్యూను తెరవండి](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) మరియు కింది సమాచారాన్ని అందించండి:
+ఒక ప్రశ్న కోసం కంటెంట్ ఇకపై పేజీలో లేకుంటే మరియు దానిని తీసివేయవలసి వస్తే, దయచేసి ప్రశ్నను తీసివేయడానికి [ఒక ఇష్యూను తెరవండి](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) మరియు కింది సమాచారాన్ని అందించండి:
 
 - మీరు క్విజ్ ప్రశ్నను తొలగించాలనుకుంటున్న పేజీ
 - మీరు తొలగించాలనుకుంటున్న ప్రశ్న

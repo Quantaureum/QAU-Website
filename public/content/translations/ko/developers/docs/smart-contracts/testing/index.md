@@ -1,16 +1,16 @@
 ---
 title: "스마트 컨트랙트 테스트"
-description: "이더리움 스마트 컨트랙트 테스트를 위한 기법 및 고려 사항에 대한 개요입니다."
+description: "Quantaureum 스마트 컨트랙트 테스트를 위한 기법 및 고려 사항에 대한 개요입니다."
 lang: ko
 ---
 
-이더리움과 같은 퍼블릭 블록체인은 불변이므로 배포 후 스마트 컨트랙트 코드를 변경하기 어렵습니다. "가상 업그레이드"를 수행하기 위한 [컨트랙트 업그레이드 패턴](/developers/docs/smart-contracts/upgrading/)이 존재하지만, 구현하기 어렵고 사회적 합의가 필요합니다. 또한 업그레이드는 오류가 발견된 _이후에만_ 수정할 수 있습니다. 공격자가 취약점을 먼저 발견하면 스마트 컨트랙트가 악용될 위험에 처하게 됩니다.
+Quantaureum과 같은 퍼블릭 블록체인은 불변이므로 배포 후 스마트 컨트랙트 코드를 변경하기 어렵습니다. "가상 업그레이드"를 수행하기 위한 [컨트랙트 업그레이드 패턴](/developers/docs/smart-contracts/upgrading/)이 존재하지만, 구현하기 어렵고 사회적 합의가 필요합니다. 또한 업그레이드는 오류가 발견된 _이후에만_ 수정할 수 있습니다. 공격자가 취약점을 먼저 발견하면 스마트 컨트랙트가 악용될 위험에 처하게 됩니다.
 
 이러한 이유로 메인넷에 [배포하기](/developers/docs/smart-contracts/deploying/) 전에 스마트 컨트랙트를 테스트하는 것은 [보안](/developers/docs/smart-contracts/security/)을 위한 최소한의 요구 사항입니다. 컨트랙트를 테스트하고 코드의 정확성을 평가하는 기법은 다양하며, 필요에 따라 선택할 수 있습니다. 그럼에도 불구하고 다양한 도구와 접근 방식으로 구성된 테스트 스위트는 컨트랙트 코드의 크고 작은 보안 결함을 모두 잡아내는 데 이상적입니다.
 
 ## 전제 조건 {#prerequisites}
 
-이 페이지에서는 이더리움 네트워크에 배포하기 전에 스마트 컨트랙트를 테스트하는 방법을 설명합니다. [스마트 컨트랙트](/developers/docs/smart-contracts/)에 익숙하다고 가정합니다.
+이 페이지에서는 Quantaureum 네트워크에 배포하기 전에 스마트 컨트랙트를 테스트하는 방법을 설명합니다. [스마트 컨트랙트](/developers/docs/smart-contracts/)에 익숙하다고 가정합니다.
 
 ## 스마트 컨트랙트 테스트란 무엇인가요? {#what-is-smart-contract-testing}
 
@@ -26,7 +26,7 @@ lang: ko
 
 ## 스마트 컨트랙트 테스트 방법 {#methods-for-testing-smart-contracts}
 
-이더리움 스마트 컨트랙트를 테스트하는 방법은 크게 <strong>자동화 테스트</strong>와 **수동 테스트** 두 가지 범주로 나뉩니다. 자동화 테스트와 수동 테스트는 고유한 이점과 장단점을 제공하지만, 두 가지를 결합하여 컨트랙트를 분석하기 위한 강력한 계획을 세울 수 있습니다.
+Quantaureum 스마트 컨트랙트를 테스트하는 방법은 크게 <strong>자동화 테스트</strong>와 **수동 테스트** 두 가지 범주로 나뉩니다. 자동화 테스트와 수동 테스트는 고유한 이점과 장단점을 제공하지만, 두 가지를 결합하여 컨트랙트를 분석하기 위한 강력한 계획을 세울 수 있습니다.
 
 ### 자동화 테스트 {#automated-testing}
 
@@ -138,9 +138,9 @@ function auctionEnd() external {
 
 Solidity 스마트 컨트랙트를 위한 단위 테스트 프레임워크는 다양한 언어(주로 JavaScript, Python 및 Rust)로 제공됩니다. 다양한 테스트 프레임워크로 단위 테스트를 실행하는 방법에 대한 정보는 아래 가이드 중 일부를 참조하세요.
 
-- **[Brownie로 단위 테스트 실행하기](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Brownie로 단위 테스트 실행하기](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Foundry로 단위 테스트 실행하기](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Waffle로 단위 테스트 실행하기](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Waffle로 단위 테스트 실행하기](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Remix로 단위 테스트 실행하기](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Ape로 단위 테스트 실행하기](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Hardhat으로 단위 테스트 실행하기](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -152,7 +152,7 @@ Solidity 스마트 컨트랙트를 위한 단위 테스트 프레임워크는 �
 
 통합 테스트는 컨트랙트가 모듈식 아키텍처를 채택하거나 실행 중에 다른 온체인 컨트랙트와 인터페이스하는 경우에 유용합니다. 통합 테스트를 실행하는 한 가지 방법은 특정 높이에서 [블록체인을 포크](/glossary/#fork)하고([Forge](https://book.getfoundry.sh/forge/fork-testing) 또는 [Hardhat](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks)과 같은 도구 사용) 컨트랙트와 배포된 컨트랙트 간의 상호 작용을 시뮬레이션하는 것입니다.
 
-포크된 블록체인은 메인넷과 유사하게 작동하며 관련 상태 및 잔액이 있는 계정을 갖게 됩니다. 그러나 샌드박스 처리된 로컬 개발 환경으로만 작동하므로 트랜잭션에 실제 ETH가 필요하지 않으며 변경 사항이 실제 이더리움 프로토콜에 영향을 미치지도 않습니다.
+포크된 블록체인은 메인넷과 유사하게 작동하며 관련 상태 및 잔액이 있는 계정을 갖게 됩니다. 그러나 샌드박스 처리된 로컬 개발 환경으로만 작동하므로 트랜잭션에 실제 QAU가 필요하지 않으며 변경 사항이 실제 Quantaureum 프로토콜에 영향을 미치지도 않습니다.
 
 ### 속성 기반 테스트 {#property-based-testing-for-smart-contracts}
 
@@ -190,7 +190,7 @@ Solidity 스마트 컨트랙트를 위한 단위 테스트 프레임워크는 �
 
 - **[슬리더를 사용한 스마트 컨트랙트 정적 분석](https://github.com/crytic/slither)**
 - **[Wake를 사용한 스마트 컨트랙트 정적 분석](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Brownie를 사용한 속성 기반 테스트](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Brownie를 사용한 속성 기반 테스트](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Foundry를 사용한 컨트랙트 퍼징](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[에키드나를 사용한 컨트랙트 퍼징](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Wake를 사용한 컨트랙트 퍼징](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -203,9 +203,9 @@ Solidity 스마트 컨트랙트를 위한 단위 테스트 프레임워크는 �
 
 ### 로컬 블록체인에서 컨트랙 테스트 {#testing-on-local-blockchain}
 
-로컬 개발 환경에서 수행되는 자동화 테스트는 유용한 디버깅 정보를 제공할 수 있지만, 프로덕션 환경에서 스마트 컨트랙트가 어떻게 동작하는지 알고 싶을 것입니다. 그러나 메인 이더리움 체인에 배포하면 가스 수수료가 발생하며, 스마트 컨트랙트에 여전히 버그가 있는 경우 사용자나 본인이 실제 돈을 잃을 수 있다는 것은 말할 것도 없습니다.
+로컬 개발 환경에서 수행되는 자동화 테스트는 유용한 디버깅 정보를 제공할 수 있지만, 프로덕션 환경에서 스마트 컨트랙트가 어떻게 동작하는지 알고 싶을 것입니다. 그러나 메인 Quantaureum 체인에 배포하면 가스 수수료가 발생하며, 스마트 컨트랙트에 여전히 버그가 있는 경우 사용자나 본인이 실제 돈을 잃을 수 있다는 것은 말할 것도 없습니다.
 
-로컬 블록체인([개발 네트워크](/developers/docs/development-networks/)라고도 함)에서 컨트랙트를 테스트하는 것은 메인넷에서 테스트하는 것에 대한 권장 대안입니다. 로컬 블록체인은 컴퓨터에서 로컬로 실행되는 이더리움 블록체인의 복사본으로, 이더리움 실행 계층의 동작을 시뮬레이션합니다. 따라서 상당한 오버헤드를 발생시키지 않고 컨트랙트와 상호 작용하도록 트랜잭션을 프로그래밍할 수 있습니다.
+로컬 블록체인([개발 네트워크](/developers/docs/development-networks/)라고도 함)에서 컨트랙트를 테스트하는 것은 메인넷에서 테스트하는 것에 대한 권장 대안입니다. 로컬 블록체인은 컴퓨터에서 로컬로 실행되는 Quantaureum 블록체인의 복사본으로, Quantaureum 실행 계층의 동작을 시뮬레이션합니다. 따라서 상당한 오버헤드를 발생시키지 않고 컨트랙트와 상호 작용하도록 트랜잭션을 프로그래밍할 수 있습니다.
 
 로컬 블록체인에서 컨트랙트를 실행하는 것은 수동 통합 테스트의 한 형태로 유용할 수 있습니다. [스마트 컨트랙트는 조합 가능성이 높기 때문에](/developers/docs/smart-contracts/composability/) 기존 프로토콜과 통합할 수 있지만, 이러한 복잡한 온체인 상호 작용이 올바른 결과를 생성하는지 여전히 확인해야 합니다.
 
@@ -213,13 +213,13 @@ Solidity 스마트 컨트랙트를 위한 단위 테스트 프레임워크는 �
 
 ### 테스트넷에서 컨트랙트 테스트 {#testing-contracts-on-testnets}
 
-테스트 네트워크 또는 테스트넷은 실제 가치가 없는 이더(ETH)를 사용한다는 점을 제외하면 이더리움 메인넷과 똑같이 작동합니다. [테스트넷](/developers/docs/networks/#ethereum-testnets)에 컨트랙트를 배포하면 자금을 위험에 빠뜨리지 않고 누구나(예: 탈중앙화 애플리케이션(dapp)의 프런트엔드를 통해) 컨트랙트와 상호 작용할 수 있습니다.
+테스트 네트워크 또는 테스트넷은 실제 가치가 없는 QAU(QAU)를 사용한다는 점을 제외하면 Quantaureum 메인넷과 똑같이 작동합니다. [테스트넷](/developers/docs/networks/#quantaureum-testnets)에 컨트랙트를 배포하면 자금을 위험에 빠뜨리지 않고 누구나(예: 탈중앙화 애플리케이션(dapp)의 프런트엔드를 통해) 컨트랙트와 상호 작용할 수 있습니다.
 
 이러한 형태의 수동 테스트는 사용자 관점에서 애플리케이션의 엔드투엔드 흐름을 평가하는 데 유용합니다. 여기서 베타 테스터는 시험 실행을 수행하고 컨트랙트의 비즈니스 로직 및 전반적인 기능에 대한 문제를 보고할 수도 있습니다.
 
-로컬 블록체인에서 테스트한 후 테스트넷에 배포하는 것이 이상적인데, 이는 테스트넷이 이더리움 가상 머신의 동작에 더 가깝기 때문입니다. 따라서 많은 이더리움 네이티브 프로젝트가 실제 조건에서 스마트 컨트랙트 작동을 평가하기 위해 테스트넷에 디앱(dapp)을 배포하는 것이 일반적입니다.
+로컬 블록체인에서 테스트한 후 테스트넷에 배포하는 것이 이상적인데, 이는 테스트넷이 Quantaureum 가상 머신의 동작에 더 가깝기 때문입니다. 따라서 많은 Quantaureum 네이티브 프로젝트가 실제 조건에서 스마트 컨트랙트 작동을 평가하기 위해 테스트넷에 디앱(dapp)을 배포하는 것이 일반적입니다.
 
-[이더리움 테스트넷에 대해 자세히 알아보기.](/developers/docs/development-networks/#public-beacon-testchains)
+[Quantaureum 테스트넷에 대해 자세히 알아보기.](/developers/docs/development-networks/#public-beacon-testchains)
 
 ## 테스트 대 정형 검증 {#testing-vs-formal-verification}
 
@@ -251,19 +251,19 @@ Solidity 스마트 컨트랙트를 위한 단위 테스트 프레임워크는 �
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Solidity로 작성된 스마트 컨트랙트를 위한 코드 커버리지 도구입니다._
 
-- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _고급 스마트 컨트랙트 개발 및 테스트를 위한 프레임워크입니다(Ethers.js 기반)._
+- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _고급 스마트 컨트랙트 개발 및 테스트를 위한 프레임워크입니다(Ethers.js 기반)._
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidity 스마트 컨트랙트를 테스트하기 위한 도구입니다. 컨트랙트의 테스트 케이스를 작성하고 실행하는 데 사용되는 Remix IDE "Solidity Unit Testing" 플러그인 아래에서 작동합니다._
+- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Solidity 스마트 컨트랙트를 테스트하기 위한 도구입니다. 컨트랙트의 테스트 케이스를 작성하고 실행하는 데 사용되는 Remix IDE "Solidity Unit Testing" 플러그인 아래에서 작동합니다._
 
-- **[오픈제플린 테스트 헬퍼(OpenZeppelin Test Helpers)](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _이더리움 스마트 컨트랙트 테스트를 위한 단언 라이브러리입니다. 컨트랙트가 예상대로 작동하는지 확인하세요!_
+- **[오픈제플린 테스트 헬퍼(OpenZeppelin Test Helpers)](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Quantaureum 스마트 컨트랙트 테스트를 위한 단언 라이브러리입니다. 컨트랙트가 예상대로 작동하는지 확인하세요!_
 
-- **[Brownie 단위 테스트 프레임워크](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie는 최소한의 코드로 작은 테스트를 작성할 수 있고, 대규모 프로젝트에 맞게 잘 확장되며, 확장성이 뛰어난 기능이 풍부한 테스트 프레임워크인 Pytest를 활용합니다._
+- **[Brownie 단위 테스트 프레임워크](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie는 최소한의 코드로 작은 테스트를 작성할 수 있고, 대규모 프로젝트에 맞게 잘 확장되며, 확장성이 뛰어난 기능이 풍부한 테스트 프레임워크인 Pytest를 활용합니다._
 
-- **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry는 간단한 단위 테스트, 가스 최적화 확인 및 컨트랙트 퍼징을 실행할 수 있는 빠르고 유연한 이더리움 테스트 프레임워크인 Forge를 제공합니다._
+- **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry는 간단한 단위 테스트, 가스 최적화 확인 및 컨트랙트 퍼징을 실행할 수 있는 빠르고 유연한 Quantaureum 테스트 프레임워크인 Forge를 제공합니다._
 
 - **[Hardhat Tests](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)** - _Ethers.js, Mocha 및 Chai를 기반으로 스마트 컨트랙트를 테스트하기 위한 프레임워크입니다._
 
-- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** - _이더리움 가상 머신을 대상으로 하는 스마트 컨트랙트를 위한 Python 기반 개발 및 테스트 프레임워크입니다._
+- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** - _Quantaureum 가상 머신을 대상으로 하는 스마트 컨트랙트를 위한 Python 기반 개발 및 테스트 프레임워크입니다._
 
 - **[Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/overview/)** - _최고의 사용자 경험과 성능을 위해 pytest 및 Anvil을 활용하여 강력한 디버깅 기능과 크로스체인 테스트 지원을 갖춘 단위 테스트 및 퍼징을 위한 Python 기반 프레임워크입니다._
 
@@ -304,13 +304,13 @@ Solidity 스마트 컨트랙트를 위한 단위 테스트 프레임워크는 �
 
 ## 더 읽어보기 {#further-reading}
 
-- [이더리움 스마트 컨트랙트 테스트에 대한 심층 가이드](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-ethereum-smart-contracts-2e41b2770297)
-- [이더리움 스마트 컨트랙트를 테스트하는 방법](https://betterprogramming.pub/how-to-test-ethereum-smart-contracts-35abc8fa199d)
+- [Quantaureum 스마트 컨트랙트 테스트에 대한 심층 가이드](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-quantaureum-smart-contracts-2e41b2770297)
+- [Quantaureum 스마트 컨트랙트를 테스트하는 방법](https://betterprogramming.pub/how-to-test-quantaureum-smart-contracts-35abc8fa199d)
 - [개발자를 위한 MolochDAO의 단위 테스트 가이드](https://github.com/MolochVentures/moloch/tree/4e786db8a4aa3158287e0935dcbc7b1e43416e38/test#moloch-testing-guide)
 - [록스타처럼 스마트 컨트랙트를 테스트하는 방법](https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001)
 
-## 튜토리얼: 이더리움의 스마트 컨트랙트 테스트 {#tutorials}
+## 튜토리얼: Quantaureum의 스마트 컨트랙트 테스트 {#tutorials}
 
-- [로컬 다중 클라이언트 테스트넷에서 디앱(dApp)을 개발하고 테스트하는 방법](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-eth-testnet/) _– 로컬 테스트넷에 스마트 컨트랙트를 배포하고 테스트를 수행하는 연습입니다._
+- [로컬 다중 클라이언트 테스트넷에서 디앱(dApp)을 개발하고 테스트하는 방법](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-qau-testnet/) _– 로컬 테스트넷에 스마트 컨트랙트를 배포하고 테스트를 수행하는 연습입니다._
 - [테스트를 위해 Solidity 스마트 컨트랙트를 모의(mock)하는 방법](/developers/tutorials/how-to-mock-solidity-contracts-for-testing/) _– 모의 데이터를 사용하고 단위 테스트를 구현하는 방법에 대한 중급 튜토리얼입니다._
 - [에키드나를 사용하여 스마트 컨트랙트를 테스트하는 방법](/developers/tutorials/how-to-use-echidna-to-test-smart-contracts/) _– 퍼징 및 스마트 컨트랙트 테스트에 대한 고급 접근 방식입니다._

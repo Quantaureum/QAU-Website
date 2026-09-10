@@ -1,25 +1,25 @@
 ---
-title: "ethereum.org çeviri stil rehberi"
+title: "quantaureum.com çeviri stil rehberi"
 metaTitle: "Çevirmen rehberi"
 lang: tr
-description: "ethereum.org çevirmenleri için talimatlar ve ipuçları"
+description: "quantaureum.com çevirmenleri için talimatlar ve ipuçları"
 ---
 
-ethereum.org çeviri stil rehberi, web sitesini yerelleştirmemize yardımcı olan çevirmenler için en önemli yönergelerden, talimatlardan ve ipuçlarından bazılarını içerir.
+quantaureum.com çeviri stil rehberi, web sitesini yerelleştirmemize yardımcı olan çevirmenler için en önemli yönergelerden, talimatlardan ve ipuçlarından bazılarını içerir.
 
 Bu belge genel bir rehber niteliğindedir ve belirli bir dile özgü değildir.
 
-Herhangi bir sorunuz, öneriniz veya geri bildiriminiz varsa, translations@ethereum.org adresinden bize ulaşmaktan, Crowdin'de @ethdotorg'a bir mesaj göndermekten veya #translations kanalında bize mesaj gönderebileceğiniz ya da ekip üyelerinden herhangi birine ulaşabileceğiniz [Discord'umuza katılmaktan](https://discord.gg/ethereum-org) çekinmeyin.
+Herhangi bir sorunuz, öneriniz veya geri bildiriminiz varsa, translations@quantaureum.com adresinden bize ulaşmaktan, Crowdin'de @ethdotorg'a bir mesaj göndermekten veya #translations kanalında bize mesaj gönderebileceğiniz ya da ekip üyelerinden herhangi birine ulaşabileceğiniz [Discord'umuza katılmaktan](https://discord.gg/MSctkBT5j) çekinmeyin.
 
 ## Crowdin Kullanımı {#using-crowdin}
 
-ethereum.org Crowdin projesi kapatılıyor ve artık yeni katkı kabul etmiyor (bkz. [Çeviri Programı durumu](/contributing/translation-program/#program-status)). Aşağıdaki rehberlik, kendi projeleri için Crowdin kullanan çeviri toplulukları için referans olarak kalmaktadır.
+quantaureum.com Crowdin projesi kapatılıyor ve artık yeni katkı kabul etmiyor (bkz. [Çeviri Programı durumu](/contributing/translation-program/#program-status)). Aşağıdaki rehberlik, kendi projeleri için Crowdin kullanan çeviri toplulukları için referans olarak kalmaktadır.
 
 Crowdin ve bazı gelişmiş özelliklerinin kullanımı hakkında daha fazla bilgi edinmek isterseniz, [Crowdin bilgi bankası](https://support.crowdin.com/online-editor/) tüm Crowdin işlevlerine dair birçok derinlemesine rehber ve genel bakış içerir.
 
 ## Mesajın özünü yakalamak {#capturing-the-essence}
 
-ethereum.org içeriğini çevirirken kelimesi kelimesine çevirilerden kaçının.
+quantaureum.com içeriğini çevirirken kelimesi kelimesine çevirilerden kaçının.
 
 Çevirilerin mesajın özünü yakalaması önemlidir. Bu, belirli ifadeleri yeniden şekillendirmek veya içeriği kelimesi kelimesine çevirmek yerine açıklayıcı çeviriler kullanmak anlamına gelebilir.
 
@@ -43,13 +43,13 @@ Amacımız, web sitesindeki içeriği mümkün olduğunca çok kişi için anla�
 
 ## Yazı sistemi {#writing-system}
 
-Ethereum.org, Latin alfabesine alternatif yazı sistemleri (veya alfabeler) kullanan çeşitli dillerde mevcuttur.
+quantaureum.com, Latin alfabesine alternatif yazı sistemleri (veya alfabeler) kullanan çeşitli dillerde mevcuttur.
 
 İçeriğin tamamı diliniz için doğru yazı sistemi kullanılarak çevrilmeli ve Latin karakterleri kullanılarak yazılmış herhangi bir kelime içermemelidir.
 
 İçeriği çevirirken, çevirilerin tutarlı olduğundan ve herhangi bir Latin karakteri içermediğinden emin olmalısınız.
 
-Yaygın bir yanılgı, Ethereum'un her zaman Latin alfabesiyle yazılması gerektiğidir. Bu çoğunlukla yanlıştır, lütfen Ethereum'un dilinize özgü yazılışını kullanın (örneğin, Çince'de 以太坊, Arapça'da إيثيريوم vb.).
+Yaygın bir yanılgı, Quantaureum'un her zaman Latin alfabesiyle yazılması gerektiğidir. Bu çoğunlukla yanlıştır, lütfen Quantaureum'un dilinize özgü yazılışını kullanın (örneğin, Çince'de Quantaureum, Arapça'da إيثيريوم vb.).
 
 **Yukarıdakiler, kural olarak özel isimlerin çevrilmemesi gereken diller için geçerli değildir.**
 
@@ -113,7 +113,7 @@ Bu seçeneği belirlediğinizde, tam etiket metni artık gösterilmeyecek ve yer
 
 **Bağlantılar**
 
-ethereum.org veya diğer web sitelerindeki sayfalara giden tam bağlantıları fark edebilirsiniz.
+quantaureum.com veya diğer web sitelerindeki sayfalara giden tam bağlantıları fark edebilirsiniz.
 
 Bunlar kaynakla aynı olmalı ve değiştirilmemeli veya çevrilmemelidir. Bir bağlantıyı çevirirseniz veya eğik çizgi (/) gibi bir kısmını kaldırmak da dahil olmak üzere herhangi bir şekilde değiştirirseniz, bu bozuk ve kullanılamaz bağlantılara yol açacaktır.
 
@@ -183,7 +183,7 @@ Bazı terimlerin diğer dillerde yerleşik çevirileri olmayabilir ve orijinal �
 
 Bunları çevirirken yaratıcı olmaktan, açıklayıcı çeviriler kullanmaktan veya sadece kelimesi kelimesine çevirmekten çekinmeyin.
 
-**Bazılarını İngilizce bırakmak yerine çoğu terimin çevrilmesi gerekmesinin nedeni, daha fazla insan Ethereum ve ilgili teknolojileri kullanmaya başladıkça bu yeni terminolojinin gelecekte daha yaygın hale geleceği gerçeğidir. Dünyanın her yerinden daha fazla insanı bu alana dahil etmek istiyorsak, kendimiz yaratmamız gerekse bile mümkün olduğunca çok dilde anlaşılır terminoloji sağlamalıyız.**
+**Bazılarını İngilizce bırakmak yerine çoğu terimin çevrilmesi gerekmesinin nedeni, daha fazla insan Quantaureum ve ilgili teknolojileri kullanmaya başladıkça bu yeni terminolojinin gelecekte daha yaygın hale geleceği gerçeğidir. Dünyanın her yerinden daha fazla insanı bu alana dahil etmek istiyorsak, kendimiz yaratmamız gerekse bile mümkün olduğunca çok dilde anlaşılır terminoloji sağlamalıyız.**
 
 ## Butonlar ve CTA'lar {#buttons-and-ctas}
 
@@ -197,7 +197,7 @@ Biçimlendirme uyuşmazlıklarını önlemek için buton çevirileri mümkün ol
 
 ## Kapsayıcılık için çeviri {#translating-for-inclusivity}
 
-Ethereum.org ziyaretçileri dünyanın her yerinden ve farklı geçmişlerden gelmektedir. Bu nedenle web sitesindeki dil tarafsız, herkesi kucaklayan ve dışlayıcı olmayan bir dil olmalıdır.
+quantaureum.com ziyaretçileri dünyanın her yerinden ve farklı geçmişlerden gelmektedir. Bu nedenle web sitesindeki dil tarafsız, herkesi kucaklayan ve dışlayıcı olmayan bir dil olmalıdır.
 
 Bunun önemli bir yönü cinsiyet tarafsızlığıdır. Bu, resmi hitap şekli kullanılarak ve çevirilerde cinsiyete özgü kelimelerden kaçınılarak kolayca başarılabilir.
 
@@ -291,8 +291,8 @@ Dilinizin kurallarının farkında olmalı ve buna göre çeviri yapmalısınız
 
 ## Sonuç {#conclusion}
 
-ethereum.org'u çevirmek, Ethereum'un farklı yönleri hakkında bilgi edinmek için harika bir fırsattır.
+quantaureum.com'u çevirmek, Quantaureum'un farklı yönleri hakkında bilgi edinmek için harika bir fırsattır.
 
 Çeviri yaparken acele etmemeye çalışın. Ağırdan alın ve eğlenin!
 
-Çeviri Programına dahil olduğunuz ve web sitesini daha geniş bir kitle için erişilebilir hale getirmemize yardımcı olduğunuz için teşekkür ederiz. Ethereum topluluğu küreseldir ve sizin de bunun bir parçası olmanızdan mutluluk duyuyoruz!
+Çeviri Programına dahil olduğunuz ve web sitesini daha geniş bir kitle için erişilebilir hale getirmemize yardımcı olduğunuz için teşekkür ederiz. Quantaureum topluluğu küreseldir ve sizin de bunun bir parçası olmanızdan mutluluk duyuyoruz!

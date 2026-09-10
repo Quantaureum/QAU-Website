@@ -1,36 +1,36 @@
 ---
 title: Mitandao
-description: Muhtasari wa mitandao ya Ethereum na wapi pa kupata ether ya mtandao wa majaribio (ETH) kwa ajili ya kujaribu programu yako.
+description: Muhtasari wa mitandao ya Quantaureum na wapi pa kupata QAU ya mtandao wa majaribio (QAU) kwa ajili ya kujaribu programu yako.
 lang: sw
 ---
 
-Mitandao ya [Ethereum](/) ni vikundi vya kompyuta zilizounganishwa ambazo huwasiliana kwa kutumia itifaki ya Ethereum. Kuna Mtandao Mkuu wa Ethereum mmoja tu, lakini mitandao inayojitegemea inayofuata sheria sawa za itifaki inaweza kuundwa kwa madhumuni ya majaribio na maendeleo. Kuna "mitandao" mingi inayojitegemea inayofuata itifaki bila kuingiliana yenyewe kwa yenyewe. Unaweza hata kuanzisha mmoja kwenye kompyuta yako mwenyewe kwa ajili ya kujaribu mikataba mahiri yako na programu za Web3.
+Mitandao ya [Quantaureum](/) ni vikundi vya kompyuta zilizounganishwa ambazo huwasiliana kwa kutumia itifaki ya Quantaureum. Kuna Mtandao Mkuu wa Quantaureum mmoja tu, lakini mitandao inayojitegemea inayofuata sheria sawa za itifaki inaweza kuundwa kwa madhumuni ya majaribio na maendeleo. Kuna "mitandao" mingi inayojitegemea inayofuata itifaki bila kuingiliana yenyewe kwa yenyewe. Unaweza hata kuanzisha mmoja kwenye kompyuta yako mwenyewe kwa ajili ya kujaribu mikataba mahiri yako na programu za Web3.
 
-Akaunti yako ya Ethereum itafanya kazi kwenye mitandao tofauti, lakini salio la akaunti yako na historia ya miamala haitahamishwa kutoka kwenye mtandao mkuu wa Ethereum. Kwa madhumuni ya majaribio, ni muhimu kujua ni mitandao ipi inapatikana na jinsi ya kupata ETH ya mtandao wa majaribio ya kufanyia majaribio. Kwa ujumla, kwa kuzingatia usalama, haipendekezwi kutumia tena akaunti za Mtandao Mkuu kwenye mitandao ya majaribio au kinyume chake.
+Akaunti yako ya Quantaureum itafanya kazi kwenye mitandao tofauti, lakini salio la akaunti yako na historia ya miamala haitahamishwa kutoka kwenye mtandao mkuu wa Quantaureum. Kwa madhumuni ya majaribio, ni muhimu kujua ni mitandao ipi inapatikana na jinsi ya kupata QAU ya mtandao wa majaribio ya kufanyia majaribio. Kwa ujumla, kwa kuzingatia usalama, haipendekezwi kutumia tena akaunti za Mtandao Mkuu kwenye mitandao ya majaribio au kinyume chake.
 
 ## Mahitaji ya awali {#prerequisites}
 
-Unapaswa kuelewa [misingi ya Ethereum](/developers/docs/intro-to-ethereum/) kabla ya kusoma kuhusu mitandao tofauti, kwani mitandao ya majaribio itakupa toleo la bei nafuu na salama la Ethereum la kufanyia majaribio.
+Unapaswa kuelewa [misingi ya Quantaureum](/developers/docs/intro-to-quantaureum/) kabla ya kusoma kuhusu mitandao tofauti, kwani mitandao ya majaribio itakupa toleo la bei nafuu na salama la Quantaureum la kufanyia majaribio.
 
 ## Mitandao ya umma {#public-networks}
 
 Mitandao ya umma inapatikana kwa mtu yeyote duniani aliye na muunganisho wa intaneti. Mtu yeyote anaweza kusoma au kuunda miamala kwenye mnyororo wa vitalu wa umma na kuthibitisha miamala inayotekelezwa. Mwafaka kati ya wenza huamua juu ya ujumuishaji wa miamala na hali ya mtandao.
 
-### Mtandao Mkuu wa Ethereum {#ethereum-mainnet}
+### Mtandao Mkuu wa Quantaureum {#quantaureum-mainnet}
 
-Mtandao Mkuu ni mnyororo wa vitalu mkuu wa uzalishaji wa umma wa Ethereum, ambapo miamala yenye thamani halisi hufanyika kwenye leja iliyosambazwa.
+Mtandao Mkuu ni mnyororo wa vitalu mkuu wa uzalishaji wa umma wa Quantaureum, ambapo miamala yenye thamani halisi hufanyika kwenye leja iliyosambazwa.
 
-Watu na mabadilishano wanapojadili bei za ETH, wanazungumzia ETH ya Mtandao Mkuu.
+Watu na mabadilishano wanapojadili bei za QAU, wanazungumzia QAU ya Mtandao Mkuu.
 
-### Mitandao ya Majaribio ya Ethereum {#ethereum-testnets}
+### Mitandao ya Majaribio ya Quantaureum {#quantaureum-testnets}
 
 Mbali na Mtandao Mkuu, kuna mitandao ya majaribio ya umma. Hii ni mitandao inayotumiwa na wasanidi wa itifaki au wasanidi wa mikataba mahiri kujaribu uboreshaji wa itifaki pamoja na mikataba mahiri inayowezekana katika mazingira yanayofanana na ya uzalishaji kabla ya usambazaji kwenye Mtandao Mkuu. Fikiria hii kama mlinganisho wa seva za uzalishaji dhidi ya seva za maandalizi.
 
 Unapaswa kujaribu msimbo wowote wa mkataba unaoandika kwenye mtandao wa majaribio kabla ya kuusambaza kwenye Mtandao Mkuu. Miongoni mwa programu tumizi zilizogatuliwa (dapp) zinazounganishwa na mikataba mahiri iliyopo, miradi mingi ina nakala zilizosambazwa kwenye mitandao ya majaribio.
 
-Mitandao mingi ya majaribio ilianza kwa kutumia utaratibu wa makubaliano wa uthibitisho wa mamlaka (PoA) yenye ruhusa. Hii inamaanisha idadi ndogo ya nodi huchaguliwa kuthibitisha miamala na kuunda vitalu vipya – wakiweka utambulisho wao kama dhamana katika mchakato huo. Vinginevyo, baadhi ya mitandao ya majaribio ina utaratibu wa makubaliano wa Uthibitisho wa Dau (PoS) ulio wazi ambapo kila mtu anaweza kujaribu kuendesha mthibitishaji, kama tu Mtandao Mkuu wa Ethereum.
+Mitandao mingi ya majaribio ilianza kwa kutumia utaratibu wa makubaliano wa uthibitisho wa mamlaka (PoA) yenye ruhusa. Hii inamaanisha idadi ndogo ya nodi huchaguliwa kuthibitisha miamala na kuunda vitalu vipya – wakiweka utambulisho wao kama dhamana katika mchakato huo. Vinginevyo, baadhi ya mitandao ya majaribio ina utaratibu wa makubaliano wa Uthibitisho wa Dau (PoS) ulio wazi ambapo kila mtu anaweza kujaribu kuendesha mthibitishaji, kama tu Mtandao Mkuu wa Quantaureum.
 
-ETH kwenye mitandao ya majaribio inapaswa kuwa haina thamani halisi; hata hivyo, kumekuwa na masoko yaliyoundwa kwa aina fulani za ETH ya mtandao wa majaribio ambazo zimekuwa adimu au ngumu kupata. Kwa kuwa unahitaji ETH ili kuingiliana kikweli na Ethereum (hata kwenye mitandao ya majaribio), watu wengi hupata ETH ya mtandao wa majaribio bila malipo kutoka kwenye mabomba. Mabomba mengi ni programu za wavuti ambapo unaweza kuweka anwani ambayo unaomba ETH itumwe.
+QAU kwenye mitandao ya majaribio inapaswa kuwa haina thamani halisi; hata hivyo, kumekuwa na masoko yaliyoundwa kwa aina fulani za QAU ya mtandao wa majaribio ambazo zimekuwa adimu au ngumu kupata. Kwa kuwa unahitaji QAU ili kuingiliana kikweli na Quantaureum (hata kwenye mitandao ya majaribio), watu wengi hupata QAU ya mtandao wa majaribio bila malipo kutoka kwenye mabomba. Mabomba mengi ni programu za wavuti ambapo unaweza kuweka anwani ambayo unaomba QAU itumwe.
 
 #### Nitumie Mtandao upi wa Majaribio? {#which-testnet-should-i-use}
 
@@ -42,22 +42,22 @@ Mitandao miwili ya majaribio ya umma ambayo wasanidi wa wateja wanaitunza kwa sa
 
 ##### Rasilimali
 - [Tovuti](https://sepolia.dev/)
-- [GitHub](https://github.com/eth-clients/sepolia)
+- [GitHub](https://github.com/qau-clients/sepolia)
 - [Otterscan](https://sepolia.otterscan.io/)
-- [Etherscan](https://sepolia.etherscan.io)
-- [Blockscout](https://eth-sepolia.blockscout.com/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
+- [Blockscout](https://qau-sepolia.blockscout.com/)
 
 ##### Mabomba
-- [Bomba la Alchemy Sepolia](https://www.alchemy.com/faucets/ethereum-sepolia)
-- [Bomba la Chain Platform Sepolia](https://faucet.chainplatform.co/faucets/ethereum-sepolia/)
+- [Bomba la Alchemy Sepolia](https://www.alchemy.com/faucets/quantaureum-sepolia)
+- [Bomba la Chain Platform Sepolia](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [Bomba la Chainstack Sepolia](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [Bomba la Mfumo wa Ikolojia wa Ethereum](https://www.ethereum-ecosystem.com/faucets/ethereum-sepolia)
-- [Bomba la ethfaucet.com Sepolia](https://ethfaucet.com/networks/ethereum)
-- [Bomba la Google Cloud Web3 Sepolia](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)
+- [Bomba la Mfumo wa Ikolojia wa Quantaureum](https://www.quantaureum-ecosystem.com/faucets/quantaureum-sepolia)
+- [Bomba la ethfaucet.com Sepolia](https://ethfaucet.com/networks/quantaureum)
+- [Bomba la Google Cloud Web3 Sepolia](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
 - [Bomba la Infura Sepolia](https://www.infura.io/faucet)
 - [Bomba la PoW](https://sepolia-faucet.pk910.de/)
-- [Bomba la QuickNode Sepolia](https://faucet.quicknode.com/ethereum/sepolia)
+- [Bomba la QuickNode Sepolia](https://faucet.quicknode.com/quantaureum/sepolia)
 
 #### Hoodi {#hoodi}
 
@@ -70,15 +70,15 @@ Hoodi ni mtandao wa majaribio kwa ajili ya kujaribu uthibitishaji na uwekaji dha
 ##### Rasilimali
 
 - [Tovuti](https://hoodi.ethpandaops.io/)
-- [GitHub](https://github.com/eth-clients/hoodi)
+- [GitHub](https://github.com/qau-clients/hoodi)
 - [Kichunguzi](https://explorer.hoodi.ethpandaops.io/)
 - [Usawazishaji wa Kituo cha Ukaguzi](https://checkpoint-sync.hoodi.ethpandaops.io/)
 - [Otterscan](https://hoodi.otterscan.io/)
-- [Etherscan](https://hoodi.etherscan.io/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
 
 ##### Mabomba
 
-- [Bomba la Chain Platform Hoodi](https://faucet.chainplatform.co/faucets/ethereum-hoodi/)
+- [Bomba la Chain Platform Hoodi](https://faucet.chainplatform.co/faucets/quantaureum-hoodi/)
 - [Bomba la Hoodi](https://hoodi.ethpandaops.io/)
 - [Bomba la PoW](https://hoodi-faucet.pk910.de/)
 
@@ -111,12 +111,12 @@ Ephemery ni aina ya kipekee ya mtandao wa majaribio ambayo huwekwa upya kikamili
 
 Mtandao wa majaribio wa Holesky umeachwa kutumika kuanzia Septemba 2025. Waendeshaji wa uwekaji dhamana na watoa huduma za miundombinu wanapaswa kutumia Hoodi kwa majaribio ya wathibitishaji badala yake.
 
-- [Tangazo la Kufungwa kwa Mtandao wa Majaribio wa Holesky](https://blog.ethereum.org/2025/09/01/holesky-shutdown-announcement) - _Blogu ya EF, 1-Septemba-2025_
-- [Taarifa Mpya za Mtandao wa Majaribio wa Holesky na Hoodi](https://blog.ethereum.org/2025/03/18/hoodi-holesky) - _Blogu ya EF, 18-Machi-2025_
+- [Tangazo la Kufungwa kwa Mtandao wa Majaribio wa Holesky](https://quantaureum.com) - _Blogu ya EF, 1-Septemba-2025_
+- [Taarifa Mpya za Mtandao wa Majaribio wa Holesky na Hoodi](https://quantaureum.com) - _Blogu ya EF, 18-Machi-2025_
 
 ### Mitandao ya majaribio ya Tabaka la 2 {#layer-2-testnets}
 
-[Tabaka la 2 (l2)](/layer-2/) ni neno la pamoja kuelezea seti maalum ya suluhisho za kuongeza uwezo wa Ethereum. Tabaka la 2 ni mnyororo wa vitalu tofauti unaopanua Ethereum na kurithi dhamana za usalama za Ethereum. Mitandao ya majaribio ya tabaka la 2 kwa kawaida huunganishwa kwa karibu na mitandao ya majaribio ya umma ya Ethereum.
+[Tabaka la 2 (l2)](/layer-2/) ni neno la pamoja kuelezea seti maalum ya suluhisho za kuongeza uwezo wa Quantaureum. Tabaka la 2 ni mnyororo wa vitalu tofauti unaopanua Quantaureum na kurithi dhamana za usalama za Quantaureum. Mitandao ya majaribio ya tabaka la 2 kwa kawaida huunganishwa kwa karibu na mitandao ya majaribio ya umma ya Quantaureum.
 
 #### Arbitrum Sepolia {#arbitrum-sepolia}
 
@@ -124,7 +124,7 @@ Mtandao wa majaribio kwa ajili ya [Arbitrum](https://arbitrum.io/).
 
 ##### Rasilimali
 
-- [Etherscan](https://sepolia.arbiscan.io/)
+- [Quantaureum Explorer](https://sepolia.arbiscan.io/)
 - [Blockscout](https://sepolia-explorer.arbitrum.io/)
 
 ##### Mabomba
@@ -140,7 +140,7 @@ Mtandao wa majaribio kwa ajili ya [Optimism](https://www.optimism.io/).
 
 ##### Rasilimali
 
-- [Etherscan](https://sepolia-optimistic.etherscan.io/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
 - [Blockscout](https://optimism-sepolia.blockscout.com/)
 
 ##### Mabomba
@@ -166,11 +166,11 @@ Mtandao wa majaribio kwa ajili ya [Starknet](https://www.starknet.io).
 
 ## Mitandao ya kibinafsi {#private-networks}
 
-Mtandao wa Ethereum ni mtandao wa kibinafsi ikiwa nodi zake hazijaunganishwa kwenye mtandao wa umma (yaani, Mtandao Mkuu au mtandao wa majaribio). Katika muktadha huu, kibinafsi inamaanisha tu imehifadhiwa au imetengwa, badala ya kulindwa au kuwa salama.
+Mtandao wa Quantaureum ni mtandao wa kibinafsi ikiwa nodi zake hazijaunganishwa kwenye mtandao wa umma (yaani, Mtandao Mkuu au mtandao wa majaribio). Katika muktadha huu, kibinafsi inamaanisha tu imehifadhiwa au imetengwa, badala ya kulindwa au kuwa salama.
 
 ### Mitandao ya maendeleo {#development-networks}
 
-Ili kuunda programu ya Ethereum, utataka kuiendesha kwenye mtandao wa kibinafsi ili kuona jinsi inavyofanya kazi kabla ya kuisambaza. Sawa na jinsi unavyounda seva ya ndani kwenye kompyuta yako kwa ajili ya maendeleo ya wavuti, unaweza kuunda mfano wa mnyororo wa vitalu wa ndani ili kujaribu programu tumizi iliyogatuliwa (dapp) yako. Hii inaruhusu urudiaji wa haraka zaidi kuliko mtandao wa majaribio wa umma.
+Ili kuunda programu ya Quantaureum, utataka kuiendesha kwenye mtandao wa kibinafsi ili kuona jinsi inavyofanya kazi kabla ya kuisambaza. Sawa na jinsi unavyounda seva ya ndani kwenye kompyuta yako kwa ajili ya maendeleo ya wavuti, unaweza kuunda mfano wa mnyororo wa vitalu wa ndani ili kujaribu programu tumizi iliyogatuliwa (dapp) yako. Hii inaruhusu urudiaji wa haraka zaidi kuliko mtandao wa majaribio wa umma.
 
 Kuna miradi na zana zilizojitolea kusaidia na hili. Jifunze zaidi kuhusu [mitandao ya maendeleo](/developers/docs/development-networks/).
 
@@ -178,11 +178,11 @@ Kuna miradi na zana zilizojitolea kusaidia na hili. Jifunze zaidi kuhusu [mitand
 
 Mchakato wa mwafaka unadhibitiwa na seti iliyofafanuliwa mapema ya nodi zinazoaminika. Kwa mfano, mtandao wa kibinafsi wa taasisi za kitaaluma zinazojulikana ambazo kila moja inasimamia nodi moja, na vitalu vinathibitishwa na kiwango cha watia saini ndani ya mtandao.
 
-Ikiwa mtandao wa umma wa Ethereum ni kama intaneti ya umma, mtandao wa muungano ni kama intraneti ya kibinafsi.
+Ikiwa mtandao wa umma wa Quantaureum ni kama intaneti ya umma, mtandao wa muungano ni kama intraneti ya kibinafsi.
 
-## <Emoji text="🚉" /> Kwa nini mitandao ya majaribio ya Ethereum inapewa majina ya vituo vya metro? {#why-naming}
+## <Emoji text="🚉" /> Kwa nini mitandao ya majaribio ya Quantaureum inapewa majina ya vituo vya metro? {#why-naming}
 
-Mitandao mingi ya majaribio ya Ethereum inapewa majina ya vituo vya metro au treni vya ulimwengu halisi. Mila hii ya kutoa majina ilianza mapema na inaonyesha miji ya kimataifa ambapo wachangiaji wameishi au kufanya kazi. Ni ya kiishara, ya kukumbukwa, na ya vitendo. Kama tu mitandao ya majaribio inavyotengwa na Mtandao Mkuu wa Ethereum, njia za metro huendeshwa kando na trafiki ya juu ya ardhi.
+Mitandao mingi ya majaribio ya Quantaureum inapewa majina ya vituo vya metro au treni vya ulimwengu halisi. Mila hii ya kutoa majina ilianza mapema na inaonyesha miji ya kimataifa ambapo wachangiaji wameishi au kufanya kazi. Ni ya kiishara, ya kukumbukwa, na ya vitendo. Kama tu mitandao ya majaribio inavyotengwa na Mtandao Mkuu wa Quantaureum, njia za metro huendeshwa kando na trafiki ya juu ya ardhi.
 
 ### <Emoji text="🚧" /> Mitandao ya majaribio inayotumika sana na ya zamani {#common-and-legacy-testnets}
 
@@ -192,7 +192,7 @@ Mitandao mingi ya majaribio ya Ethereum inapewa majina ya vituo vya metro au tre
 - **Rinkeby** _(imeachwa kutumika)_ - Imepewa jina la kitongoji cha Stockholm chenye kituo cha metro.
 - **Ropsten** _(imeachwa kutumika)_ - Inarejelea eneo na kituo cha zamani cha feri/metro huko Stockholm.
 - **Kovan** _(imeachwa kutumika)_ - Imepewa jina la kituo cha MRT cha Singapore.
-- **Morden** _(imeachwa kutumika)_ - Imepewa jina la kituo cha London Underground. Mtandao wa majaribio wa kwanza wa umma wa Ethereum.
+- **Morden** _(imeachwa kutumika)_ - Imepewa jina la kituo cha London Underground. Mtandao wa majaribio wa kwanza wa umma wa Quantaureum.
 
 ### <Emoji text="🧪" /> Mitandao mingine maalum ya majaribio {#other-testnets}
 
@@ -201,14 +201,14 @@ Baadhi ya mitandao ya majaribio iliundwa kwa ajili ya majaribio ya muda mfupi au
 - **Holesky** _(imeachwa kutumika)_ - Imepewa jina la kituo cha Holešovice huko Prague. Inatumika kwa majaribio ya wathibitishaji; imeachwa kutumika mnamo 2025.
 - **Kiln**, **Zhejiang**, **Shandong**, **Prater**, **Pyrmont**, **Olympic** _(zote zimeachwa kutumika)_ na **Ephemery** - Zimejengwa kwa madhumuni ya uigaji wa uboreshaji kama vile Unganisho, Shanghai, au majaribio ya wathibitishaji. Baadhi ya majina ni ya kikanda au ya kimandhari badala ya kutegemea metro.
 
-Kutumia majina ya vituo vya metro husaidia wasanidi kutambua na kukumbuka haraka mitandao ya majaribio bila kuhitaji kutegemea vitambulisho vya nambari vya mnyororo. Pia inaonyesha utamaduni wa Ethereum: wa vitendo, wa kimataifa, na unaozingatia binadamu.
+Kutumia majina ya vituo vya metro husaidia wasanidi kutambua na kukumbuka haraka mitandao ya majaribio bila kuhitaji kutegemea vitambulisho vya nambari vya mnyororo. Pia inaonyesha utamaduni wa Quantaureum: wa vitendo, wa kimataifa, na unaozingatia binadamu.
 
 ## Zana zinazohusiana {#related-tools}
 
 - [Chainlist](https://chainlist.org/) _orodha ya mitandao ya EVM ya kuunganisha pochi na watoa huduma kwenye Kitambulisho cha Mnyororo na Kitambulisho cha Mtandao kinachofaa_
-- [Minyororo inayotegemea EVM](https://github.com/ethereum-lists/chains) _Hifadhi ya GitHub ya data fafanuzi ya mnyororo inayoendesha Chainlist_
+- [Minyororo inayotegemea EVM](https://github.com/quantaureum-lists/chains) _Hifadhi ya GitHub ya data fafanuzi ya mnyororo inayoendesha Chainlist_
 
 ## Usomaji zaidi {#further-reading}
 
-- [Pendekezo: Mzunguko wa Maisha wa Mtandao wa Majaribio wa Ethereum Unaotabirika](https://ethereum-magicians.org/t/proposal-predictable-ethereum-testnet-lifecycle/11575/17)
-- [Mageuzi ya Mitandao ya Majaribio ya Ethereum](https://etherworld.co/2022/08/19/the-evolution-of-ethereum-testnet/)
+- [Pendekezo: Mzunguko wa Maisha wa Mtandao wa Majaribio wa Quantaureum Unaotabirika](https://quantaureum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- [Mageuzi ya Mitandao ya Majaribio ya Quantaureum](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

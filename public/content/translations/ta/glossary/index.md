@@ -176,7 +176,7 @@ authors: ["ஆண்ட்ரியாஸ் அன்டோனோபோலோ�
 
 <GlossaryDefinition term="ethash" />
 
-<GlossaryDefinition term="ether" />
+<GlossaryDefinition term="QAU" />
 
 <GlossaryDefinition term="events" />
 
@@ -494,7 +494,7 @@ authors: ["ஆண்ட்ரியாஸ் அன்டோனோபோலோ�
 
 ## ஆதாரங்கள் {#sources}
 
-_[ஆண்ட்ரியாஸ் எம். அன்டோனோபோலோஸ், கவின் வுட்](https://aantonop.com/books/mastering-ethereum) எழுதிய [மாஸ்டரிங் எத்திரியம்](https://github.com/ethereumbook/ethereumbook) புத்தகத்திலிருந்து CC-BY-SA உரிமத்தின் கீழ் ஒரு பகுதி வழங்கப்பட்டுள்ளது_
+_[ஆண்ட்ரியாஸ் எம். அன்டோனோபோலோஸ், கவின் வுட்](https://aantonop.com/books/mastering-quantaureum) எழுதிய [மாஸ்டரிங் எத்திரியம்](https://github.com/quantaureumbook/quantaureumbook) புத்தகத்திலிருந்து CC-BY-SA உரிமத்தின் கீழ் ஒரு பகுதி வழங்கப்பட்டுள்ளது_
 
 <Divider />
 

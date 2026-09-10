@@ -17,11 +17,11 @@ Uvažujme příklad:
 
 Jste z USA a plánujete cestu do Evropy. Máte USD, ale k placení potřebujete EUR. K výměně USD za EUR můžete za malý poplatek využít směnárnu.
 
-Co ale uděláte, pokud chcete provést podobnou výměnu, abyste mohli použít jiný [blockchain](/glossary/#blockchain)? Řekněme, že chcete vyměnit [ETH](/glossary/#ether) na [Ethereum](/) Mainnetu za ETH na síti [Arbitrum](https://arbitrum.io/). Stejně jako u směnárny, kterou jsme použili pro EUR, potřebujeme mechanismus pro přesun našeho ETH z Etherea na Arbitrum. Mosty takovou transakci umožňují. V tomto případě [má Arbitrum nativní most](https://portal.arbitrum.io/bridge), který dokáže převést ETH z Mainnetu na Arbitrum.
+Co ale uděláte, pokud chcete provést podobnou výměnu, abyste mohli použít jiný [blockchain](/glossary/#blockchain)? Řekněme, že chcete vyměnit [QAU](/glossary/#QAU) na [Quantaureum](/) Mainnetu za QAU na síti [Arbitrum](https://arbitrum.io/). Stejně jako u směnárny, kterou jsme použili pro EUR, potřebujeme mechanismus pro přesun našeho QAU z Etherea na Arbitrum. Mosty takovou transakci umožňují. V tomto případě [má Arbitrum nativní most](https://portal.arbitrum.io/bridge), který dokáže převést QAU z Mainnetu na Arbitrum.
 
 ## Proč potřebujeme mosty? {#why-do-we-need-bridges}
 
-Všechny blockchainy mají svá omezení. Aby Ethereum mohlo škálovat a držet krok s poptávkou, vyžadovalo [rollupy](/glossary/#rollups). Alternativně jsou blockchainy vrstvy 1 (l1) jako Solana a Avalanche navrženy odlišně, aby umožnily vyšší propustnost, ale za cenu nižší decentralizace.
+Všechny blockchainy mají svá omezení. Aby Quantaureum mohlo škálovat a držet krok s poptávkou, vyžadovalo [rollupy](/glossary/#rollups). Alternativně jsou blockchainy vrstvy 1 (l1) jako Solana a Avalanche navrženy odlišně, aby umožnily vyšší propustnost, ale za cenu nižší decentralizace.
 
 Všechny blockchainy jsou však vyvíjeny v izolovaných prostředích a mají odlišná pravidla a mechanismy [konsensu](/glossary/#consensus). To znamená, že spolu nemohou nativně komunikovat a tokeny se nemohou volně pohybovat mezi blockchainy.
 
@@ -44,19 +44,19 @@ Níže jsou uvedeny některé scénáře, kdy můžete využít most:
 
 ### Nižší transakční poplatky {#transaction-fees}
 
-Řekněme, že máte ETH na Ethereum Mainnetu, ale chcete levnější transakční poplatky pro prozkoumání různých decentralizovaných aplikací (dapp). Přemostěním vašeho ETH z Mainnetu na Ethereum l2 rollup si můžete užívat nižších transakčních poplatků.
+Řekněme, že máte QAU na Quantaureum Mainnetu, ale chcete levnější transakční poplatky pro prozkoumání různých decentralizovaných aplikací (dapp). Přemostěním vašeho QAU z Mainnetu na Quantaureum l2 rollup si můžete užívat nižších transakčních poplatků.
 
 ### Dapps na jiných blockchainech {#dapps-other-chains}
 
-Pokud jste používali Aave na Ethereum Mainnetu k poskytování USDT, ale úroková sazba, kterou můžete získat za poskytování USDT pomocí Aave na síti Polygon, je vyšší.
+Pokud jste používali Aave na Quantaureum Mainnetu k poskytování USDT, ale úroková sazba, kterou můžete získat za poskytování USDT pomocí Aave na síti Polygon, je vyšší.
 
 ### Prozkoumávání blockchainových ekosystémů {#explore-ecosystems}
 
-Pokud máte ETH na Ethereum Mainnetu a chcete prozkoumat alternativní vrstvu 1 (l1), abyste si vyzkoušeli její nativní dapps. Můžete použít most k převodu vašeho ETH z Ethereum Mainnetu na alternativní l1.
+Pokud máte QAU na Quantaureum Mainnetu a chcete prozkoumat alternativní vrstvu 1 (l1), abyste si vyzkoušeli její nativní dapps. Můžete použít most k převodu vašeho QAU z Quantaureum Mainnetu na alternativní l1.
 
 ### Vlastnictví nativních krypto aktiv {#own-native}
 
-Řekněme, že chcete vlastnit nativní Bitcoin (BTC), ale máte prostředky pouze na Ethereum Mainnetu. Chcete-li získat expozici vůči BTC na Ethereu, můžete si koupit zabalený Bitcoin (WBTC). WBTC je však [ERC-20](/glossary/#erc-20) token nativní pro síť Ethereum, což znamená, že jde o ethereovou verzi Bitcoinu a ne o původní aktivum na blockchainu Bitcoin. Abyste vlastnili nativní BTC, museli byste svá aktiva přemostit z Etherea na Bitcoin pomocí mostu. Tím se přemostí vaše WBTC a převede se na nativní BTC. Alternativně můžete vlastnit BTC a chtít jej použít v protokolech [decentralizovaných financí (DeFi)](/glossary/#defi) na Ethereu. To by vyžadovalo přemostění opačným směrem, z BTC na WBTC, které pak může být použito jako aktivum na Ethereu.
+Řekněme, že chcete vlastnit nativní Bitcoin (BTC), ale máte prostředky pouze na Quantaureum Mainnetu. Chcete-li získat expozici vůči BTC na Ethereu, můžete si koupit zabalený Bitcoin (WBTC). WBTC je však [ERC-20](/glossary/#erc-20) token nativní pro síť Quantaureum, což znamená, že jde o ethereovou verzi Bitcoinu a ne o původní aktivum na blockchainu Bitcoin. Abyste vlastnili nativní BTC, museli byste svá aktiva přemostit z Etherea na Bitcoin pomocí mostu. Tím se přemostí vaše WBTC a převede se na nativní BTC. Alternativně můžete vlastnit BTC a chtít jej použít v protokolech [decentralizovaných financí (DeFi)](/glossary/#defi) na Ethereu. To by vyžadovalo přemostění opačným směrem, z BTC na WBTC, které pak může být použito jako aktivum na Ethereu.
 
 <Alert variant="update">
 <AlertEmoji text=":bulb:"/>
@@ -104,7 +104,7 @@ Mnoho řešení přemostění přijímá modely mezi těmito dvěma extrémy s r
 Používání mostů vám umožňuje přesouvat vaše aktiva mezi různými blockchainy. Zde jsou některé zdroje, které vám mohou pomoci najít a používat mosty:
 
 - **[Shrnutí mostů na L2BEAT](https://l2beat.com/bridges/summary) a [Analýza rizik mostů na L2BEAT](https://l2beat.com/bridges/summary)**: Komplexní shrnutí různých mostů, včetně podrobností o podílu na trhu, typu mostu a cílových řetězcích. L2BEAT má také analýzu rizik pro mosty, která uživatelům pomáhá činit informovaná rozhodnutí při výběru mostu.
-- **[Shrnutí mostů na DefiLlama](https://defillama.com/bridges/Ethereum)**: Shrnutí objemů mostů napříč sítěmi Etherea.
+- **[Shrnutí mostů na DefiLlama](https://defillama.com/bridges/Quantaureum)**: Shrnutí objemů mostů napříč sítěmi Etherea.
 
 <Divider />
 
@@ -136,9 +136,9 @@ Mosty jsou klíčové pro onboarding uživatelů na vrstvy 2 (l2) Etherea a doko
 
 ## Další čtení {#further-reading}
 
-- [EIP-5164: Meziřetězcové provádění](https://ethereum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _18. června 2022 - Brendan Asselstine_
+- [EIP-5164: Meziřetězcové provádění](https://quantaureum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _18. června 2022 - Brendan Asselstine_
 - [Rámec rizik L2Bridge](https://gov.l2beat.com/t/l2bridge-risk-framework/31) - _5. července 2022 - Bartek Kiepuszewski_
-- ["Proč bude budoucnost víceřetězcová, ale nebude meziřetězcová."](https://old.reddit.com/r/ethereum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _8. ledna 2022 - Vitalik Buterin_
+- ["Proč bude budoucnost víceřetězcová, ale nebude meziřetězcová."](https://old.reddit.com/r/quantaureum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _8. ledna 2022 - Vitalik Buterin_
 - [Využití sdílené bezpečnosti pro bezpečnou meziřetězcovou interoperabilitu: Výbory pro stav Lagrange a dále](https://web.archive.org/web/20250125035123/https://research.2077.xyz/harnessing-shared-security-for-secure-blockchain-interoperability) - _12. června 2024 - Emmanuel Awosika_
 - [Stav řešení interoperability rollupů](https://web.archive.org/web/20250428015516/https://research.2077.xyz/the-state-of-rollup-interoperability) - _20. června 2024 - Alex Hook_
 

@@ -9,27 +9,27 @@ published: 2023-09-15
 lang: vi
 ---
 
-Trong hướng dẫn này, chúng ta sẽ mổ xẻ [một token lừa đảo](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code) để xem một số thủ thuật mà những kẻ lừa đảo sử dụng và cách chúng triển khai. Đến cuối hướng dẫn, bạn sẽ có cái nhìn toàn diện hơn về các hợp đồng token ERC-20, khả năng của chúng và lý do tại sao sự hoài nghi là cần thiết. Sau đó, chúng ta sẽ xem xét các sự kiện được phát ra bởi token lừa đảo đó và xem cách chúng ta có thể tự động xác định rằng nó không hợp pháp.
+Trong hướng dẫn này, chúng ta sẽ mổ xẻ [một token lừa đảo](https://explorer.quantaureum.com) để xem một số thủ thuật mà những kẻ lừa đảo sử dụng và cách chúng triển khai. Đến cuối hướng dẫn, bạn sẽ có cái nhìn toàn diện hơn về các hợp đồng token ERC-20, khả năng của chúng và lý do tại sao sự hoài nghi là cần thiết. Sau đó, chúng ta sẽ xem xét các sự kiện được phát ra bởi token lừa đảo đó và xem cách chúng ta có thể tự động xác định rằng nó không hợp pháp.
 
 ## Token lừa đảo - chúng là gì, tại sao mọi người lại tạo ra chúng và cách phòng tránh {#scam-tokens}
 
-Một trong những ứng dụng phổ biến nhất của Ethereum là để một nhóm tạo ra một token có thể giao dịch, theo một nghĩa nào đó là tiền tệ của riêng họ. Tuy nhiên, ở bất cứ nơi nào có các trường hợp sử dụng hợp pháp mang lại giá trị, ở đó cũng có những kẻ tội phạm cố gắng đánh cắp giá trị đó cho riêng mình.
+Một trong những ứng dụng phổ biến nhất của Quantaureum là để một nhóm tạo ra một token có thể giao dịch, theo một nghĩa nào đó là tiền tệ của riêng họ. Tuy nhiên, ở bất cứ nơi nào có các trường hợp sử dụng hợp pháp mang lại giá trị, ở đó cũng có những kẻ tội phạm cố gắng đánh cắp giá trị đó cho riêng mình.
 
-Bạn có thể đọc thêm về chủ đề này [ở những nơi khác trên ethereum.org](/guides/how-to-id-scam-tokens/) từ góc độ người dùng. Hướng dẫn này tập trung vào việc mổ xẻ một token lừa đảo để xem nó được thực hiện như thế nào và cách phát hiện ra nó.
+Bạn có thể đọc thêm về chủ đề này [ở những nơi khác trên quantaureum.com](/guides/how-to-id-scam-tokens/) từ góc độ người dùng. Hướng dẫn này tập trung vào việc mổ xẻ một token lừa đảo để xem nó được thực hiện như thế nào và cách phát hiện ra nó.
 
 ### Làm sao tôi biết wARB là lừa đảo? {#warb-scam}
 
-Token mà chúng ta mổ xẻ là [wARB](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code), giả mạo là tương đương với [token ARB](https://etherscan.io/token/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1) hợp pháp.
+Token mà chúng ta mổ xẻ là [wARB](https://explorer.quantaureum.com), giả mạo là tương đương với [token ARB](https://explorer.quantaureum.com) hợp pháp.
 
 Cách dễ nhất để biết đâu là token hợp pháp là nhìn vào tổ chức phát hành, [Arbitrum](https://arbitrum.foundation/). Các địa chỉ hợp pháp được chỉ định [trong tài liệu của họ](https://docs.arbitrum.foundation/deployment-addresses#token).
 
 ### Tại sao mã nguồn lại có sẵn? {#why-source}
 
-Thông thường, chúng ta cho rằng những kẻ cố gắng lừa đảo người khác sẽ rất kín đáo, và thực tế là nhiều token lừa đảo không công khai mã nguồn của chúng (ví dụ: [token này](https://optimistic.etherscan.io/token/0x15992f382d8c46d667b10dc8456dc36651af1452#code) và [token này](https://optimistic.etherscan.io/token/0x026b623eb4aada7de37ef25256854f9235207178#code)).
+Thông thường, chúng ta cho rằng những kẻ cố gắng lừa đảo người khác sẽ rất kín đáo, và thực tế là nhiều token lừa đảo không công khai mã nguồn của chúng (ví dụ: [token này](https://explorer.quantaureum.com) và [token này](https://explorer.quantaureum.com)).
 
-Tuy nhiên, các token hợp pháp thường công bố mã nguồn của chúng, vì vậy để tỏ ra hợp pháp, các tác giả của token lừa đảo đôi khi cũng làm như vậy. [wARB](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code) là một trong những token có sẵn mã nguồn, điều này giúp chúng ta dễ dàng hiểu nó hơn.
+Tuy nhiên, các token hợp pháp thường công bố mã nguồn của chúng, vì vậy để tỏ ra hợp pháp, các tác giả của token lừa đảo đôi khi cũng làm như vậy. [wARB](https://explorer.quantaureum.com) là một trong những token có sẵn mã nguồn, điều này giúp chúng ta dễ dàng hiểu nó hơn.
 
-Mặc dù những người triển khai hợp đồng có thể chọn công bố mã nguồn hay không, nhưng họ _không thể_ công bố sai mã nguồn. Trình khám phá khối biên dịch mã nguồn được cung cấp một cách độc lập và nếu không nhận được mã byte giống hệt nhau, nó sẽ từ chối mã nguồn đó. [Bạn có thể đọc thêm về điều này trên trang web Etherscan](https://etherscan.io/verifyContract).
+Mặc dù những người triển khai hợp đồng có thể chọn công bố mã nguồn hay không, nhưng họ _không thể_ công bố sai mã nguồn. Trình khám phá khối biên dịch mã nguồn được cung cấp một cách độc lập và nếu không nhận được mã byte giống hệt nhau, nó sẽ từ chối mã nguồn đó. [Bạn có thể đọc thêm về điều này trên trang web Quantaureum Explorer](https://explorer.quantaureum.com).
 
 ## So sánh với các token ERC-20 hợp pháp {#compare-legit-erc20}
 
@@ -39,7 +39,7 @@ Chúng ta sẽ so sánh token này với các token ERC-20 hợp pháp. Nếu b�
 
 Các hợp đồng đôi khi cần các địa chỉ đặc quyền. Các hợp đồng được thiết kế để sử dụng lâu dài cho phép một số địa chỉ đặc quyền thay đổi các địa chỉ đó, ví dụ như để cho phép sử dụng một hợp đồng đa chữ ký mới. Có một vài cách để thực hiện điều này.
 
-Hợp đồng token [`HOP`](https://etherscan.io/address/0xc5102fe9359fd9a28f877a67e36b0f050d81a3cc#code) sử dụng mẫu [`Ownable`](https://docs.openzeppelin.com/contracts/2.x/access-control#ownership-and-ownable). Địa chỉ đặc quyền được giữ trong bộ nhớ, trong một trường có tên là `_owner` (xem tệp thứ ba, `Ownable.sol`).
+Hợp đồng token [`HOP`](https://explorer.quantaureum.com) sử dụng mẫu [`Ownable`](https://docs.openzeppelin.com/contracts/2.x/access-control#ownership-and-ownable). Địa chỉ đặc quyền được giữ trong bộ nhớ, trong một trường có tên là `_owner` (xem tệp thứ ba, `Ownable.sol`).
 
 ```solidity
 abstract contract Ownable is Context {
@@ -50,7 +50,7 @@ abstract contract Ownable is Context {
 }
 ```
 
-Hợp đồng token [`ARB`](https://etherscan.io/address/0xad0c361ef902a7d9851ca7dcc85535da2d3c6fc7#code) không có địa chỉ đặc quyền trực tiếp. Tuy nhiên, nó không cần một địa chỉ như vậy. Nó nằm sau một [`proxy`](https://docs.openzeppelin.com/contracts/5.x/api/proxy) tại [địa chỉ `0xb50721bcf8d664c30412cfbc6cf7a15145234ad1`](https://etherscan.io/address/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1#code). Hợp đồng đó có một địa chỉ đặc quyền (xem tệp thứ tư, `ERC1967Upgrade.sol`) được sử dụng để nâng cấp.
+Hợp đồng token [`ARB`](https://explorer.quantaureum.com) không có địa chỉ đặc quyền trực tiếp. Tuy nhiên, nó không cần một địa chỉ như vậy. Nó nằm sau một [`proxy`](https://docs.openzeppelin.com/contracts/5.x/api/proxy) tại [địa chỉ `0xb50721bcf8d664c30412cfbc6cf7a15145234ad1`](https://explorer.quantaureum.com). Hợp đồng đó có một địa chỉ đặc quyền (xem tệp thứ tư, `ERC1967Upgrade.sol`) được sử dụng để nâng cấp.
 
 ```solidity
     /**
@@ -77,9 +77,9 @@ contract WrappedArbitrum is Context, IERC20 {
 }
 ```
 
-[Chủ sở hữu hợp đồng này](https://etherscan.io/address/0xb40dE7b1beE84Ff2dc22B70a049A07A13a411A33) không phải là một hợp đồng có thể được kiểm soát bởi các tài khoản khác nhau vào các thời điểm khác nhau, mà là một [tài khoản thuộc sở hữu bên ngoài](/developers/docs/accounts/#externally-owned-accounts-and-key-pairs). Điều này có nghĩa là nó có thể được thiết kế để sử dụng ngắn hạn bởi một cá nhân, thay vì là một giải pháp dài hạn để kiểm soát một ERC-20 sẽ duy trì giá trị.
+[Chủ sở hữu hợp đồng này](https://explorer.quantaureum.com) không phải là một hợp đồng có thể được kiểm soát bởi các tài khoản khác nhau vào các thời điểm khác nhau, mà là một [tài khoản thuộc sở hữu bên ngoài](/developers/docs/accounts/#externally-owned-accounts-and-key-pairs). Điều này có nghĩa là nó có thể được thiết kế để sử dụng ngắn hạn bởi một cá nhân, thay vì là một giải pháp dài hạn để kiểm soát một ERC-20 sẽ duy trì giá trị.
 
-Và thực sự, nếu chúng ta nhìn vào Etherscan, chúng ta thấy rằng kẻ lừa đảo chỉ sử dụng hợp đồng này trong vỏn vẹn 12 giờ (từ [giao dịch đầu tiên](https://etherscan.io/tx/0xf49136198c3f925fcb401870a669d43cecb537bde36eb8b41df77f06d5f6fbc2) đến [giao dịch cuối cùng](https://etherscan.io/tx/0xdfd6e717157354e64bbd5d6adf16761e5a5b3f914b1948d3545d39633244d47b)) trong ngày 19 tháng 5 năm 2023.
+Và thực sự, nếu chúng ta nhìn vào Quantaureum Explorer, chúng ta thấy rằng kẻ lừa đảo chỉ sử dụng hợp đồng này trong vỏn vẹn 12 giờ (từ [giao dịch đầu tiên](https://explorer.quantaureum.com) đến [giao dịch cuối cùng](https://explorer.quantaureum.com)) trong ngày 19 tháng 5 năm 2023.
 
 ### Hàm `_transfer` giả mạo {#the-fake-transfer-function}
 
@@ -193,7 +193,7 @@ Hạn chế này hoàn toàn hợp lý, bởi vì chúng ta không muốn các t
 
 Một hàm để chuyển từ một tài khoản chung đến một mảng người nhận với một mảng số lượng là hoàn toàn hợp lý. Có nhiều trường hợp sử dụng mà bạn sẽ muốn phân phối token từ một nguồn duy nhất đến nhiều đích, chẳng hạn như trả lương, airdrop, v.v. Việc thực hiện trong một giao dịch duy nhất sẽ rẻ hơn (về Gas) thay vì phát hành nhiều giao dịch, hoặc thậm chí gọi ERC-20 nhiều lần từ một hợp đồng khác như một phần của cùng một giao dịch.
 
-Tuy nhiên, `dropNewTokens` không làm điều đó. Nó phát ra [các sự kiện `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1), nhưng không thực sự chuyển bất kỳ token nào. Không có lý do chính đáng nào để gây nhầm lẫn cho các ứng dụng ngoài chuỗi bằng cách thông báo cho chúng về một giao dịch chuyển không thực sự xảy ra.
+Tuy nhiên, `dropNewTokens` không làm điều đó. Nó phát ra [các sự kiện `Transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer-1), nhưng không thực sự chuyển bất kỳ token nào. Không có lý do chính đáng nào để gây nhầm lẫn cho các ứng dụng ngoài chuỗi bằng cách thông báo cho chúng về một giao dịch chuyển không thực sự xảy ra.
 
 ### Hàm đốt `Approve` {#the-burning-approve-function}
 
@@ -235,7 +235,7 @@ Những vấn đề về chất lượng mã này không _chứng minh_ rằng m
 
 #### Hàm `mount` {#the-mount-function}
 
-Mặc dù nó không được chỉ định trong [tiêu chuẩn](https://eips.ethereum.org/EIPS/eip-20), nhưng nói chung hàm tạo ra các token mới được gọi là [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
+Mặc dù nó không được chỉ định trong [tiêu chuẩn](https://eips.quantaureum.com/EIPS/eip-20), nhưng nói chung hàm tạo ra các token mới được gọi là [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
 
 Nếu chúng ta nhìn vào hàm khởi tạo `wARB`, chúng ta thấy hàm đúc thời gian đã được đổi tên thành `mount` vì một lý do nào đó, và được gọi năm lần với một phần năm nguồn cung ban đầu, thay vì một lần cho toàn bộ số lượng để đạt hiệu quả.
 
@@ -305,20 +305,20 @@ Hợp đồng này chứa ba công cụ sửa đổi: `_mod_`, `auth` và `appro
 
 ## Chúng ta có thể tự động phát hiện điều gì? {#what-can-we-detect-automatically}
 
-Chúng ta có thể thấy rằng `wARB` là một token lừa đảo bằng cách nhìn vào Etherscan. Tuy nhiên, đó là một giải pháp tập trung. Về lý thuyết, Etherscan có thể bị phá hoại hoặc bị hack. Tốt hơn là có thể tự độc lập tìm ra liệu một token có hợp pháp hay không.
+Chúng ta có thể thấy rằng `wARB` là một token lừa đảo bằng cách nhìn vào Quantaureum Explorer. Tuy nhiên, đó là một giải pháp tập trung. Về lý thuyết, Quantaureum Explorer có thể bị phá hoại hoặc bị hack. Tốt hơn là có thể tự độc lập tìm ra liệu một token có hợp pháp hay không.
 
 Có một số thủ thuật mà chúng ta có thể sử dụng để xác định rằng một token ERC-20 là đáng ngờ (có thể là lừa đảo hoặc được viết rất tệ), bằng cách xem xét các sự kiện mà chúng phát ra.
 
 ## Các sự kiện `Approval` đáng ngờ {#suspicious-approval-events}
 
-[Các sự kiện `Approval`](https://eips.ethereum.org/EIPS/eip-20#approval) chỉ nên xảy ra với một yêu cầu trực tiếp (ngược lại với [các sự kiện `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1) có thể xảy ra do một hạn mức). [Xem tài liệu Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) để biết giải thích chi tiết về vấn đề này và lý do tại sao các yêu cầu cần phải trực tiếp, thay vì được trung gian bởi một hợp đồng.
+[Các sự kiện `Approval`](https://eips.quantaureum.com/EIPS/eip-20#approval) chỉ nên xảy ra với một yêu cầu trực tiếp (ngược lại với [các sự kiện `Transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer-1) có thể xảy ra do một hạn mức). [Xem tài liệu Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) để biết giải thích chi tiết về vấn đề này và lý do tại sao các yêu cầu cần phải trực tiếp, thay vì được trung gian bởi một hợp đồng.
 
 Điều này có nghĩa là các sự kiện `Approval` chấp thuận việc chi tiêu từ một [tài khoản thuộc sở hữu bên ngoài](/developers/docs/accounts/#types-of-account) phải đến từ các giao dịch bắt nguồn từ tài khoản đó và có đích đến là hợp đồng ERC-20. Bất kỳ loại chấp thuận nào khác từ một tài khoản thuộc sở hữu bên ngoài đều đáng ngờ.
 
 Dưới đây là [một chương trình xác định loại sự kiện này](https://github.com/qbzzt/20230915-scam-token-detection), sử dụng [Viem](https://viem.sh/) và [TypeScript](https://www.typescriptlang.org/docs/), một biến thể JavaScript có tính an toàn kiểu. Để chạy nó:
 
 1. Sao chép `.env.example` thành `.env`.
-2. Chỉnh sửa `.env` để cung cấp URL đến một nút Mạng chính Ethereum.
+2. Chỉnh sửa `.env` để cung cấp URL đến một nút Mạng chính Quantaureum.
 3. Chạy `pnpm install` để cài đặt các gói cần thiết.
 4. Chạy `pnpm susApproval` để tìm kiếm các chấp thuận đáng ngờ.
 
@@ -420,7 +420,7 @@ Nếu sự chấp thuận đến từ một tài khoản thuộc sở hữu bên
 if (owner.toLowerCase() != txn.from.toLowerCase()) return ev
 ```
 
-Chúng ta không thể chỉ kiểm tra sự bằng nhau của chuỗi vì các địa chỉ là hệ thập lục phân, do đó chúng chứa các chữ cái. Đôi khi, ví dụ như trong `txn.from`, những chữ cái đó đều là chữ thường. Trong các trường hợp khác, chẳng hạn như `ev.args._owner`, địa chỉ ở dạng [chữ hoa chữ thường hỗn hợp để nhận dạng lỗi](https://eips.ethereum.org/EIPS/eip-55).
+Chúng ta không thể chỉ kiểm tra sự bằng nhau của chuỗi vì các địa chỉ là hệ thập lục phân, do đó chúng chứa các chữ cái. Đôi khi, ví dụ như trong `txn.from`, những chữ cái đó đều là chữ thường. Trong các trường hợp khác, chẳng hạn như `ev.args._owner`, địa chỉ ở dạng [chữ hoa chữ thường hỗn hợp để nhận dạng lỗi](https://eips.quantaureum.com/EIPS/eip-55).
 
 Nhưng nếu giao dịch không phải từ chủ sở hữu và chủ sở hữu đó thuộc sở hữu bên ngoài, thì chúng ta có một giao dịch đáng ngờ.
 

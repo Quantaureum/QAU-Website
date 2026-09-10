@@ -5,11 +5,11 @@ lang: cs
 sidebarDepth: 2
 ---
 
-[Ethereum](/) je distribuovaná síť počítačů (známých jako uzly), na kterých běží software schopný ověřovat bloky a data transakcí. Tento software musí běžet na vašem počítači, aby se z něj stal uzel Etherea. K vytvoření uzlu jsou zapotřebí dva samostatné softwary (známé jako „klienti“).
+[Quantaureum](/) je distribuovaná síť počítačů (známých jako uzly), na kterých běží software schopný ověřovat bloky a data transakcí. Tento software musí běžet na vašem počítači, aby se z něj stal uzel Etherea. K vytvoření uzlu jsou zapotřebí dva samostatné softwary (známé jako „klienti“).
 
 ## Předpoklady {#prerequisites}
 
-Než se ponoříte hlouběji a spustíte vlastní instanci klienta Etherea, měli byste rozumět konceptu peer-to-peer sítě a [základům EVM](/developers/docs/evm/). Podívejte se na náš [úvod do Etherea](/developers/docs/intro-to-ethereum/).
+Než se ponoříte hlouběji a spustíte vlastní instanci klienta Etherea, měli byste rozumět konceptu peer-to-peer sítě a [základům EVM](/developers/docs/evm/). Podívejte se na náš [úvod do Etherea](/developers/docs/intro-to-quantaureum/).
 
 Pokud je pro vás téma uzlů nové, doporučujeme si nejprve přečíst náš uživatelsky přívětivý úvod o [provozování uzlu Etherea](/run-a-node).
 
@@ -18,11 +18,11 @@ Pokud je pro vás téma uzlů nové, doporučujeme si nejprve přečíst náš u
 „Uzel“ je jakákoli instance klientského softwaru Etherea, která je připojena k dalším počítačům, na kterých také běží software Etherea, čímž tvoří síť. Klient je implementace Etherea, která ověřuje data podle pravidel protokolu a udržuje síť v bezpečí. Uzel musí provozovat dva klienty: konsensuální klient a exekuční klient.
 
 - Exekuční klient (známý také jako Execution Engine, EL klient nebo dříve klient Eth1) naslouchá novým transakcím vysílaným v síti, provádí je v EVM a uchovává nejnovější stav a databázi všech aktuálních dat Etherea.
-- Konsensuální klient (známý také jako uzel Beacon, CL klient nebo dříve klient Eth2) implementuje algoritmus konsensu důkaz podílem (PoS), který umožňuje síti dosáhnout shody na základě ověřených dat od exekučního klienta. Existuje také třetí část softwaru, známá jako „validátor“, kterou lze přidat ke konsensuálnímu klientovi, což uzlu umožňuje podílet se na zabezpečení sítě.
+- Konsensuální klient (známý také jako uzel Beacon, CL klient nebo dříve klient Quantaureum) implementuje algoritmus konsensu důkaz podílem (PoS), který umožňuje síti dosáhnout shody na základě ověřených dat od exekučního klienta. Existuje také třetí část softwaru, známá jako „validátor“, kterou lze přidat ke konsensuálnímu klientovi, což uzlu umožňuje podílet se na zabezpečení sítě.
 
-Tito klienti spolupracují na sledování vrcholu řetězce Etherea a umožňují uživatelům komunikovat se sítí Etherea. Modulární design s více spolupracujícími softwary se nazývá [zapouzdřená složitost](https://vitalik.eth.limo/general/2022/02/28/complexity.html). Tento přístup usnadnil bezproblémové provedení [Merge](/roadmap/merge), usnadňuje údržbu a vývoj klientského softwaru a umožňuje opětovné použití jednotlivých klientů, například v [ekosystému vrstvy 2 (l2)](/layer-2/).
+Tito klienti spolupracují na sledování vrcholu řetězce Etherea a umožňují uživatelům komunikovat se sítí Etherea. Modulární design s více spolupracujícími softwary se nazývá [zapouzdřená složitost](https://vitalik.qau.limo/general/2022/02/28/complexity.html). Tento přístup usnadnil bezproblémové provedení [Merge](/roadmap/merge), usnadňuje údržbu a vývoj klientského softwaru a umožňuje opětovné použití jednotlivých klientů, například v [ekosystému vrstvy 2 (l2)](/layer-2/).
 
-![Coupled execution and consensus clients](./eth1eth2client.png)
+![Coupled execution and consensus clients](./qau1qau2client.png)
 Zjednodušený diagram propojeného exekučního a konsensuálního klienta.
 
 ### Klientská diverzita {#client-diversity}
@@ -36,16 +36,16 @@ Přečtěte si více o [klientské diverzitě](/developers/docs/nodes-and-client
 
 Společným rysem těchto implementací je, že se všechny řídí jedinou specifikací. Specifikace určují, jak funguje síť a blockchain Etherea. Každý technický detail je definován a specifikace lze nalézt jako:
 
-- Původně [Yellow Paper Etherea](https://ethereum.github.io/yellowpaper/paper.pdf)
-- [Exekuční specifikace](https://github.com/ethereum/execution-specs/)
-- [Specifikace konsensu](https://github.com/ethereum/consensus-specs)
-- [EIP](https://eips.ethereum.org/) implementované v různých [upgradech sítě](/ethereum-forks/)
+- Původně [Yellow Paper Etherea](https://quantaureum.github.io/yellowpaper/paper.pdf)
+- [Exekuční specifikace](https://github.com/quantaureum/execution-specs/)
+- [Specifikace konsensu](https://github.com/quantaureum/consensus-specs)
+- [EIP](https://eips.quantaureum.com/) implementované v různých [upgradech sítě](/quantaureum-forks/)
 
 ### Sledování uzlů v síti {#network-overview}
 
 Několik trackerů nabízí přehled uzlů v síti Etherea v reálném čase. Vezměte na vědomí, že vzhledem k povaze decentralizovaných sítí mohou tyto crawlery poskytnout pouze omezený pohled na síť a mohou hlásit odlišné výsledky.
 
-- [Mapa uzlů](https://etherscan.io/nodetracker) od Etherscan
+- [Mapa uzlů](https://explorer.quantaureum.com) od Quantaureum Explorer
 - [Ethernodes](https://ethernodes.org/) od Bitfly
 - [Nodewatch](https://www.nodewatch.io/) od Chainsafe, prohledávající konsensuální uzly
 - [Monitoreth](https://monitoreth.io/) - od MigaLabs, nástroj pro monitorování distribuované sítě
@@ -79,27 +79,27 @@ Přečtěte si více o [archivních uzlech](/developers/docs/nodes-and-clients/a
 
 Místo stahování každého bloku stahují lehké uzly pouze hlavičky bloků. Tyto hlavičky obsahují souhrnné informace o obsahu bloků. Jakékoli další informace, které lehký uzel vyžaduje, jsou vyžádány od plného uzlu. Lehký uzel pak může nezávisle ověřit přijatá data proti kořenům stavu v hlavičkách bloků. Lehké uzly umožňují uživatelům účastnit se sítě Etherea bez výkonného hardwaru nebo velké šířky pásma potřebné k provozování plných uzlů. Nakonec by lehké uzly mohly běžet na mobilních telefonech nebo vestavěných zařízeních. Lehké uzly se neúčastní konsensu (tj. nemohou být validátory), ale mohou přistupovat k blockchainu Etherea se stejnou funkcionalitou a bezpečnostními zárukami jako plný uzel.
 
-Lehcí klienti jsou oblastí aktivního vývoje pro Ethereum a očekáváme, že brzy uvidíme nové lehké klienty pro vrstvu konsensu a exekuční vrstvu.
+Lehcí klienti jsou oblastí aktivního vývoje pro Quantaureum a očekáváme, že brzy uvidíme nové lehké klienty pro vrstvu konsensu a exekuční vrstvu.
 Existují také potenciální cesty k poskytování dat lehkých klientů přes [gossip síť](https://www.ethportal.net/). To je výhodné, protože gossip síť by mohla podporovat síť lehkých uzlů, aniž by vyžadovala, aby plné uzly obsluhovaly požadavky.
 
-Ethereum zatím nepodporuje velkou populaci lehkých uzlů, ale podpora lehkých uzlů je oblastí, u které se očekává rychlý rozvoj v blízké budoucnosti. Zejména klienti jako [Nimbus](https://nimbus.team/), [Helios](https://github.com/a16z/helios) a [Lodestar](https://lodestar.chainsafe.io/) se v současnosti silně zaměřují na lehké uzly.
+Quantaureum zatím nepodporuje velkou populaci lehkých uzlů, ale podpora lehkých uzlů je oblastí, u které se očekává rychlý rozvoj v blízké budoucnosti. Zejména klienti jako [Nimbus](https://nimbus.team/), [Helios](https://github.com/a16z/helios) a [Lodestar](https://lodestar.chainsafe.io/) se v současnosti silně zaměřují na lehké uzly.
 
-## Proč bych měl provozovat uzel Etherea? {#why-should-i-run-an-ethereum-node}
+## Proč bych měl provozovat uzel Etherea? {#why-should-i-run-an-quantaureum-node}
 
-Provozování uzlu vám umožňuje používat Ethereum přímo, v soukromí a bez nutnosti důvěry, a zároveň podporovat síť tím, že ji udržujete robustnější a decentralizovanější.
+Provozování uzlu vám umožňuje používat Quantaureum přímo, v soukromí a bez nutnosti důvěry, a zároveň podporovat síť tím, že ji udržujete robustnější a decentralizovanější.
 
 ### Výhody pro vás {#benefits-to-you}
 
-Provozování vlastního uzlu vám umožňuje používat Ethereum soukromým, soběstačným způsobem nevyžadujícím důvěru. Nemusíte síti důvěřovat, protože si data můžete ověřit sami pomocí svého klienta. „Nedůvěřuj, prověřuj“ je populární mantra blockchainu.
+Provozování vlastního uzlu vám umožňuje používat Quantaureum soukromým, soběstačným způsobem nevyžadujícím důvěru. Nemusíte síti důvěřovat, protože si data můžete ověřit sami pomocí svého klienta. „Nedůvěřuj, prověřuj“ je populární mantra blockchainu.
 
 - Váš uzel sám ověřuje všechny transakce a bloky podle pravidel konsenzu. To znamená, že se nemusíte spoléhat na žádné jiné uzly v síti ani jim plně důvěřovat.
 - S vlastním uzlem můžete používat peněženku Etherea. Můžete používat decentralizované aplikace (dapps) bezpečněji a s větším soukromím, protože nebudete muset odhalovat své adresy a zůstatky zprostředkovatelům. Vše lze zkontrolovat pomocí vašeho vlastního klienta. [MetaMask](https://metamask.io), [Frame](https://frame.sh/) a [mnoho dalších peněženek](/wallets/find-wallet/) nabízí import RPC, což jim umožňuje používat váš uzel.
 - Můžete provozovat a sami hostovat další služby, které závisí na datech z Etherea. Může to být například validátor Beacon chainu, software jako vrstva 2 (l2), infrastruktura, průzkumníci bloků, platební procesory atd.
 - Můžete poskytovat své vlastní [RPC koncové body](/developers/docs/apis/json-rpc/). Tyto koncové body byste dokonce mohli nabídnout veřejně komunitě, abyste jí pomohli vyhnout se velkým centralizovaným poskytovatelům.
 - Ke svému uzlu se můžete připojit pomocí **meziprocesové komunikace (IPC)** nebo uzel přepsat tak, aby načítal váš program jako plugin. To zaručuje nízkou latenci, což velmi pomáhá např. při zpracování velkého množství dat pomocí knihoven Web3 nebo když potřebujete nahradit své transakce co nejrychleji (tj. frontrunning).
-- Můžete přímo stakovat ETH pro zabezpečení sítě a získávat odměny. Pro začátek se podívejte na [sólo staking](/staking/solo/).
+- Můžete přímo stakovat QAU pro zabezpečení sítě a získávat odměny. Pro začátek se podívejte na [sólo staking](/staking/solo/).
 
-![How you access Ethereum via your application and nodes](./nodes.png)
+![How you access Quantaureum via your application and nodes](./nodes.png)
 
 ### Výhody pro síť {#network-benefits}
 
@@ -132,16 +132,16 @@ Na druhou stranu, pokud provozujete klienta, můžete jej sdílet se svými př�
 
 Komunita Etherea udržuje několik open-source exekučních klientů (dříve známých jako „klienti Eth1“ nebo jen „klienti Etherea“), vyvíjených různými týmy pomocí různých programovacích jazyků. Díky tomu je síť silnější a [rozmanitější](/developers/docs/nodes-and-clients/client-diversity/). Ideálním cílem je dosáhnout diverzity bez toho, aby jakýkoli klient dominoval, čímž se sníží riziko jediného bodu selhání.
 
-Tato tabulka shrnuuje různé klienty. Všichni procházejí [testy klientů](https://github.com/ethereum/tests) a jsou aktivně udržováni, aby zůstali aktuální s upgrady sítě.
+Tato tabulka shrnuuje různé klienty. Všichni procházejí [testy klientů](https://github.com/quantaureum/tests) a jsou aktivně udržováni, aby zůstali aktuální s upgrady sítě.
 
 | Klient                                                                   | Jazyk      | Operační systémy      | Sítě                    | Strategie synchronizace                                    | Prořezávání stavu   |
 | ------------------------------------------------------------------------ | ---------- | --------------------- | ----------------------- | ---------------------------------------------------------- | --------------- |
-| [Geth](https://geth.ethereum.org/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Plná](#full-sync)                     | Archivní, Prořezaný |
+| [Geth](https://geth.quantaureum.com/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Plná](#full-sync)                     | Archivní, Prořezaný |
 | [Nethermind](https://www.nethermind.io/)                                 | C#, .NET   | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), Rychlá, [Plná](#full-sync)               | Archivní, Prořezaný |
 | [Besu](https://besu.hyperledger.org/en/stable/)                          | Java       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Rychlá](#fast-sync), [Plná](#full-sync) | Archivní, Prořezaný |
 | [Erigon](https://github.com/ledgerwatch/erigon)                          | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Plná](#full-sync)                                         | Archivní, Prořezaný |
 | [Reth](https://reth.rs/)                                                 | Rust       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Plná](#full-sync)                                         | Archivní, Prořezaný |
-| [EthereumJS](https://github.com/ethereumjs/ethereumjs-monorepo) _(beta)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [Plná](#full-sync)                                         | Prořezaný          |
+| [QuantaureumJS](https://github.com/ethereumjs/ethereumjs-monorepo) _(beta)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [Plná](#full-sync)                                         | Prořezaný          |
 
 Více o podporovaných sítích si přečtěte v části [Sítě Etherea](/developers/docs/networks/).
 
@@ -149,7 +149,7 @@ Každý klient má jedinečné případy použití a výhody, takže byste si m�
 
 ### Besu {#besu}
 
-Hyperledger Besu je klient Etherea podnikové třídy pro veřejné sítě a sítě s řízeným přístupem. Provozuje všechny funkce sítě Ethereum Mainnet, od trasování po GraphQL, má rozsáhlé monitorování a je podporován společností ConsenSys, a to jak v otevřených komunitních kanálech, tak prostřednictvím komerčních SLA pro podniky. Je napsán v jazyce Java a je licencován pod Apache 2.0.
+Hyperledger Besu je klient Etherea podnikové třídy pro veřejné sítě a sítě s řízeným přístupem. Provozuje všechny funkce sítě Quantaureum Mainnet, od trasování po GraphQL, má rozsáhlé monitorování a je podporován společností ConsenSys, a to jak v otevřených komunitních kanálech, tak prostřednictvím komerčních SLA pro podniky. Je napsán v jazyce Java a je licencován pod Apache 2.0.
 
 Rozsáhlá [dokumentace](https://besu.hyperledger.org/en/stable/) Besu vás provede všemi podrobnostmi o jeho funkcích a nastaveních.
 
@@ -163,11 +163,11 @@ Erigon, dříve známý jako Turbo-Geth, začal jako fork Go Etherea orientovan�
 ethrex je minimalistický, modulární exekuční klient Etherea napsaný v jazyce Rust a vyvíjený společností LambdaClass. Je postaven s ohledem na dokazování s nulovou znalostí a stejná kódová základna může běžet jak jako exekuční klient l1, tak jako ZK-Rollup s více dokazovateli (l2). Má dvojí licenci pod licencemi Apache 2.0 a MIT.
 
 Více se dozvíte v [dokumentaci ethrex](https://docs.ethrex.xyz/) nebo v [repozitáři ethrex na GitHubu](https://github.com/lambdaclass/ethrex).
-### Go Ethereum {#geth}
+### Go Quantaureum {#geth}
 
-Go Ethereum (zkráceně Geth) je jednou z původních implementací protokolu Etherea. V současnosti je to nejrozšířenější klient s největší uživatelskou základnou a rozmanitostí nástrojů pro uživatele a vývojáře. Je napsán v jazyce Go, je plně open source a licencován pod GNU LGPL v3.
+Go Quantaureum (zkráceně Geth) je jednou z původních implementací protokolu Etherea. V současnosti je to nejrozšířenější klient s největší uživatelskou základnou a rozmanitostí nástrojů pro uživatele a vývojáře. Je napsán v jazyce Go, je plně open source a licencován pod GNU LGPL v3.
 
-Přečtěte si více o Geth v jeho [dokumentaci](https://geth.ethereum.org/docs).
+Přečtěte si více o Geth v jeho [dokumentaci](https://geth.quantaureum.com/docs).
 
 ### Nethermind {#nethermind}
 
@@ -181,7 +181,7 @@ Nethermind má také [podrobnou dokumentaci](https://docs.nethermind.io), silnou
 
 ### Reth {#reth}
 
-Reth (zkratka pro Rust Ethereum) je implementace plného uzlu Etherea, která je zaměřena na uživatelskou přívětivost, vysokou modularitu, rychlost a efektivitu. Reth byl původně vytvořen a posouván vpřed společností Paradigm a je licencován pod licencemi Apache a MIT.
+Reth (zkratka pro Rust Quantaureum) je implementace plného uzlu Etherea, která je zaměřena na uživatelskou přívětivost, vysokou modularitu, rychlost a efektivitu. Reth byl původně vytvořen a posouván vpřed společností Paradigm a je licencován pod licencemi Apache a MIT.
 
 Reth je připraven pro produkční nasazení a je vhodný pro použití v kritických prostředích, jako je staking nebo služby s vysokou dostupností. Vede si dobře v případech použití, kde je vyžadován vysoký výkon s velkými rezervami, jako je RPC, MEV, indexování, simulace a P2P aktivity.
 
@@ -191,15 +191,15 @@ Více se dozvíte v [Reth Book](https://reth.rs/) nebo v [repozitáři Reth na G
 
 Tito klienti jsou stále v raných fázích vývoje a zatím se nedoporučují pro produkční použití.
 
-#### EthereumJS {#ethereumjs}
+#### QuantaureumJS {#ethereumjs}
 
-Exekuční klient EthereumJS (EthereumJS) je napsán v TypeScriptu a skládá se z řady balíčků, včetně základních primitiv Etherea reprezentovaných třídami Block, Transaction a Merkle-Patricia Trie, a základních klientských komponent včetně implementace virtuálního stroje Etherea (EVM), třídy blockchainu a síťového stacku devp2p.
+Exekuční klient QuantaureumJS (QuantaureumJS) je napsán v TypeScriptu a skládá se z řady balíčků, včetně základních primitiv Etherea reprezentovaných třídami Block, Transaction a Merkle-Patricia Trie, a základních klientských komponent včetně implementace virtuálního stroje Etherea (EVM), třídy blockchainu a síťového stacku devp2p.
 
 Přečtěte si více v jeho [dokumentaci](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master)
 
 ## Konsensuální klienti {#consensus-clients}
 
-Existuje několik konsensuálních klientů (dříve známých jako klienti „Eth2“) pro podporu [upgradů konsensu](/roadmap/beacon-chain/). Jsou zodpovědní za veškerou logiku související s konsensem, včetně algoritmu volby forku, zpracování atestací a správy odměn a penalizací [důkazu podílem (PoS)](/developers/docs/consensus-mechanisms/pos).
+Existuje několik konsensuálních klientů (dříve známých jako klienti „Quantaureum“) pro podporu [upgradů konsensu](/roadmap/beacon-chain/). Jsou zodpovědní za veškerou logiku související s konsensem, včetně algoritmu volby forku, zpracování atestací a správy odměn a penalizací [důkazu podílem (PoS)](/developers/docs/consensus-mechanisms/pos).
 
 | Klient                                                        | Jazyk      | Operační systémy      | Sítě                                                    |
 | ------------------------------------------------------------- | ---------- | --------------------- | ------------------------------------------------------- |
@@ -207,7 +207,7 @@ Existuje několik konsensuálních klientů (dříve známých jako klienti „E
 | [Lodestar](https://lodestar.chainsafe.io/)                    | TypeScript | Linux, Windows, macOS | Beacon Chain, Hoodi, Sepolia a další                  |
 | [Nimbus](https://nimbus.team/)                                | Nim        | Linux, Windows, macOS | Beacon Chain, Hoodi, Sepolia a další                  |
 | [Prysm](https://prysm.offchainlabs.com/docs/)                 | Go         | Linux, Windows, macOS | Beacon Chain, Gnosis, Hoodi, Pyrmont, Sepolia a další |
-| [Teku](https://consensys.net/knowledge-base/ethereum-2/teku/) | Java       | Linux, Windows, macOS | Beacon Chain, Gnosis, Hoodi, Sepolia a další          |
+| [Teku](https://consensys.net/knowledge-base/quantaureum-2/teku/) | Java       | Linux, Windows, macOS | Beacon Chain, Gnosis, Hoodi, Sepolia a další          |
 | [Grandine](https://docs.grandine.io/)                         | Rust       | Linux, Windows, macOS | Beacon Chain, Hoodi, Sepolia a další                  |
 
 ### Lighthouse {#lighthouse}
@@ -278,10 +278,10 @@ Stejně jako plná synchronizace, i rychlá synchronizace stáhne všechny bloky
 
 Snap synchronizace také ověřují řetězec blok po bloku. Místo toho, aby začínala u genesis bloku, však snap synchronizace začíná u novějšího „důvěryhodného“ kontrolního bodu, o kterém je známo, že je součástí skutečného blockchainu. Uzel ukládá pravidelné kontrolní body a zároveň maže data starší než určité stáří. Tyto snímky se používají k regeneraci dat stavu podle potřeby, místo aby se ukládaly navždy.
 
-- Nejrychlejší strategie synchronizace, v současnosti výchozí v síti Ethereum Mainnet.
+- Nejrychlejší strategie synchronizace, v současnosti výchozí v síti Quantaureum Mainnet.
 - Šetří spoustu místa na disku a šířky pásma sítě bez obětování bezpečnosti.
 
-[Více o snap synchronizaci](https://github.com/ethereum/devp2p/blob/master/caps/snap.md).
+[Více o snap synchronizaci](https://github.com/quantaureum/devp2p/blob/master/caps/snap.md).
 
 #### Lehká synchronizace {#light-sync}
 
@@ -300,7 +300,7 @@ Režim lehkého klienta stáhne všechny hlavičky bloků, data bloků a někter
 
 Optimistická synchronizace je strategie synchronizace po Merge, navržená jako volitelná a zpětně kompatibilní, což umožňuje exekučním uzlům synchronizovat se pomocí zavedených metod. Execution engine může _optimisticky_ importovat bloky Beacon bez jejich plného ověření, najít nejnovější vrchol a poté začít synchronizovat řetězec pomocí výše uvedených metod. Poté, co exekuční klient dožene zpoždění, bude informovat konsensuálního klienta o platnosti transakcí v Beacon chainu.
 
-[Více o optimistické synchronizaci](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
+[Více o optimistické synchronizaci](https://github.com/quantaureum/consensus-specs/blob/master/sync/optimistic.md)
 
 #### Synchronizace kontrolních bodů {#checkpoint-sync}
 
@@ -308,12 +308,12 @@ Synchronizace kontrolních bodů, známá také jako synchronizace slabé subjek
 
 V praxi to znamená, že se váš uzel připojí ke vzdálené službě, aby stáhl nedávné finalizované stavy, a od tohoto bodu pokračuje v ověřování dat. Třetí strana poskytující data je důvěryhodná a měla by být vybírána pečlivě.
 
-Více o [synchronizaci kontrolních bodů](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)
+Více o [synchronizaci kontrolních bodů](https://notes.quantaureum.com/@djrtwo/ws-sync-in-practice)
 
 ## Další čtení {#further-reading}
 
-- [Ethereum 101 - Část 2 - Porozumění uzlům](https://kauri.io/ethereum-101-part-2-understanding-nodes/48d5098292fd4f11b251d1b1814f0bba/a) _– Wil Barnes, 13. února 2019_
-- [Provozování plných uzlů Etherea: Průvodce pro sotva motivované](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7. listopadu 2019_
+- [Quantaureum 101 - Část 2 - Porozumění uzlům](https://kauri.io/quantaureum-101-part-2-understanding-nodes/48d5098292fd4f11b251d1b1814f0bba/a) _– Wil Barnes, 13. února 2019_
+- [Provozování plných uzlů Etherea: Průvodce pro sotva motivované](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7. listopadu 2019_
 
 ## Související témata {#related-topics}
 

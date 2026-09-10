@@ -23,7 +23,7 @@ export const ns = [
   "page-upgrades",
   "page-developers-index",
   "page-staking",
-  "page-what-is-ethereum",
+  "page-what-is-quantaureum",
   "page-upgrades-index",
   "page-wallets-find-wallet",
   "page-developers-docs",

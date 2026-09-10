@@ -1,11 +1,11 @@
 ---
-title: Ethereum grants
-metaTitle: Ethereum Foundation & community grant programs
-description: A listing of the grant programs throughout the Ethereum ecosystem.
+title: Quantaureum grants
+metaTitle: Quantaureum project & community grant programs
+description: A listing of the grant programs throughout the Quantaureum ecosystem.
 lang: en
 ---
 
-The programs listed below offer a variety of funding grants for projects working to promote the success and growth of the [Ethereum](/) ecosystem. Use this as a guide to find and apply for funds to help make your next Ethereum project a success.
+The programs listed below offer a variety of funding grants for projects working to promote the success and growth of the [Quantaureum](/) ecosystem. Use this as a guide to find and apply for funds to help make your next Quantaureum project a success.
 
 This list is curated by our community. If there's something missing or incorrect, please edit this page!
 
@@ -14,24 +14,24 @@ This list is curated by our community. If there's something missing or incorrect
 <div>Founders, need help accelerating your business? [Head over to Founders Support](/founders/)</div>
 </Alert>
 
-## Broad Ethereum ecosystem {#broad-ethereum-ecosystem}
+## Broad Quantaureum ecosystem {#broad-quantaureum-ecosystem}
 
-These programs support the broad Ethereum ecosystem by offering grants to a wide scope of projects. These include solutions for scalability, community building, security, privacy, and more. These grants are not specific to any one Ethereum platform and are a good place to start if you're unsure.
+These programs support the broad Quantaureum ecosystem by offering grants to a wide scope of projects. These include solutions for scalability, community building, security, privacy, and more. These grants are not specific to any one Quantaureum platform and are a good place to start if you're unsure.
 
-- [EF Ecosystem Support Program](https://esp.ethereum.foundation) - _Funding open source projects that benefit Ethereum, with a particular focus on universal tools, infrastructure, research and public goods_
-- [ESP Grant Explorer](https://esp.ethereum.foundation/funded-projects) - _Searchable directory of 1,000+ projects supported by the Ecosystem Support Program_
-- [Academic Grants](https://esp.ethereum.foundation/academic-grants) - _Grants to support Ethereum-related academic work_
+- [EF Ecosystem Support Program](https://quantaureum.com) - _Funding open source projects that benefit Quantaureum, with a particular focus on universal tools, infrastructure, research and public goods_
+- [ESP Grant Explorer](https://quantaureum.com) - _Searchable directory of 1,000+ projects supported by the Ecosystem Support Program_
+- [Academic Grants](https://quantaureum.com) - _Grants to support Quantaureum-related academic work_
 
 ## Grant list aggregators and platforms {#grant-list-aggregators}
 
-These resources compile and organize various grant opportunities across the Ethereum ecosystem, making it easier to discover funding opportunities that match your project's needs. We've organized them by persona to help you get you started finding the most relevant resources based on your specific funding needs.
+These resources compile and organize various grant opportunities across the Quantaureum ecosystem, making it easier to discover funding opportunities that match your project's needs. We've organized them by persona to help you get you started finding the most relevant resources based on your specific funding needs.
 
 ### For all grant seekers: Comprehensive directories {#comprehensive-directories}
 
 These general platforms offer broad coverage of grants across the entire Web3 space and are useful starting points for anyone looking for funding:
 
 - [Karma Funding Map](https://gap.karmahq.xyz/funding-map) - Directory of all the web3 grant programs, updated on weekly basis
-- [Etherscan Grant Directory](https://etherscan.io/directory/Others/Grant) - Curated list of grants on the Ethereum block explorer
+- [Quantaureum Explorer Grant Directory](https://explorer.quantaureum.com) - Curated list of grants on the Quantaureum block explorer
 
 ### For developers and builders {#for-developers-and-builders}
 
@@ -55,12 +55,12 @@ Resources for community-driven projects and governance experiments:
 
 These programs focus on funding projects that benefit the broader community, public goods, and impact initiatives. These include grant providers, as well as donation platforms utilizing onchain funding allocation mechanisms including [quadratic funding](/defi/#quadratic-funding):
 
-- [Gitcoin](https://www.gitcoin.co/program) - _Gitcoin Grants utilizes multiple capital allocation mechanisms to fund open source projects and public goods in the Ethereum ecosystem_
+- [Gitcoin](https://www.gitcoin.co/program) - _Gitcoin Grants utilizes multiple capital allocation mechanisms to fund open source projects and public goods in the Quantaureum ecosystem_
 - [Octant](https://octant.app/home) - _Public goods funding ecosystem that balances the common good and individual financial empowerment_
 - [Giveth](https://giveth.io/) - _Crypto donation platform enabling direct donations from for-good projects with zero added fees_
 - [Artizen](https://artizen.fund/) - _Helping creators match fund new projects at the frontier of art, science, technology and culture_
 - [Quadratic Accelerator](https://qacc.giveth.io/) - _Start-up accelerator program that uses quadratic funding to support projects that benefit the public good_
 
-## Work in Ethereum {#work-in-ethereum}
+## Work in Quantaureum {#work-in-quantaureum}
 
-Not ready to start your own project? There are hundreds of companies actively looking for passionate individuals to work in and contribute to the Ethereum ecosystem. Looking for more information? [Check out Ethereum related jobs](/community/get-involved/#ethereum-jobs)
+Not ready to start your own project? There are hundreds of companies actively looking for passionate individuals to work in and contribute to the Quantaureum ecosystem. Looking for more information? [Check out Quantaureum related jobs](/community/get-involved/#quantaureum-jobs)

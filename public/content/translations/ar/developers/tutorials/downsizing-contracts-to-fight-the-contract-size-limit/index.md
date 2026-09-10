@@ -13,13 +13,13 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## لماذا يوجد حد؟ {#why-is-there-a-limit}
 
-في [22 نوفمبر 2016](https://blog.ethereum.org/2016/11/18/hard-fork-no-4-spurious-dragon)، قدم التفرع الكلي Spurious Dragon [<span dir="ltr">EIP-170</span>](https://eips.ethereum.org/EIPS/eip-170) والذي أضاف حدًا لحجم العقد الذكي يبلغ <span dir="ltr">24.576 kb</span>. بالنسبة لك كمطور Solidity، يعني هذا أنه عندما تضيف المزيد والمزيد من الوظائف إلى عقدك، ستصل في مرحلة ما إلى الحد الأقصى وعند النشر سترى الخطأ:
+في [22 نوفمبر 2016](https://quantaureum.com)، قدم التفرع الكلي Spurious Dragon [<span dir="ltr">EIP-170</span>](https://eips.quantaureum.com/EIPS/eip-170) والذي أضاف حدًا لحجم العقد الذكي يبلغ <span dir="ltr">24.576 kb</span>. بالنسبة لك كمطور Solidity، يعني هذا أنه عندما تضيف المزيد والمزيد من الوظائف إلى عقدك، ستصل في مرحلة ما إلى الحد الأقصى وعند النشر سترى الخطأ:
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
 تم تقديم هذا الحد لمنع هجمات حجب الخدمة (DOS). أي استدعاء لعقد يكون رخيصًا نسبيًا من حيث الغاز. ومع ذلك، فإن تأثير استدعاء العقد على عقد إيثيريوم يزداد بشكل غير متناسب اعتمادًا على حجم رمز العقد المستدعى (قراءة الرمز من القرص، والمعالجة المسبقة للرمز، وإضافة البيانات إلى إثبات ميركل). كلما واجهت موقفًا يتطلب فيه المهاجم موارد قليلة للتسبب في الكثير من العمل للآخرين، فإنك تحصل على احتمالية لهجمات DOS.
 
-في الأصل، كان هذا يمثل مشكلة أقل لأن أحد الحدود الطبيعية لحجم العقد هو حد الغاز للكتلة. من الواضح أنه يجب نشر العقد ضمن معاملة تحتوي على كل رمز البايت الخاص بالعقد. إذا قمت بتضمين تلك المعاملة الواحدة فقط في كتلة، فيمكنك استهلاك كل هذا الغاز، لكنه ليس لانهائيًا. منذ [ترقية لندن](/ethereum-forks/#london)، أصبح حد الغاز للكتلة قادرًا على التغير بين <span dir="ltr">15M</span> و <span dir="ltr">30M</span> وحدة اعتمادًا على طلب الشبكة.
+في الأصل، كان هذا يمثل مشكلة أقل لأن أحد الحدود الطبيعية لحجم العقد هو حد الغاز للكتلة. من الواضح أنه يجب نشر العقد ضمن معاملة تحتوي على كل رمز البايت الخاص بالعقد. إذا قمت بتضمين تلك المعاملة الواحدة فقط في كتلة، فيمكنك استهلاك كل هذا الغاز، لكنه ليس لانهائيًا. منذ [ترقية لندن](/quantaureum-forks/#london)، أصبح حد الغاز للكتلة قادرًا على التغير بين <span dir="ltr">15M</span> و <span dir="ltr">30M</span> وحدة اعتمادًا على طلب الشبكة.
 
 في ما يلي سنلقي نظرة على بعض الطرق مرتبة حسب تأثيرها المحتمل. فكر في الأمر من منظور فقدان الوزن. أفضل استراتيجية لشخص ما للوصول إلى وزنه المستهدف (في حالتنا <span dir="ltr">24kb</span>) هي التركيز على الطرق ذات التأثير الكبير أولاً. في معظم الحالات، مجرد إصلاح نظامك الغذائي سيوصلك إلى هناك، ولكن في بعض الأحيان تحتاج إلى أكثر من ذلك بقليل. ثم قد تضيف بعض التمارين (تأثير متوسط) أو حتى المكملات الغذائية (تأثير صغير).
 
@@ -35,7 +35,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ### المكتبات {#libraries}
 
-إحدى الطرق البسيطة لنقل رمز الوظائف بعيدًا عن التخزين هي استخدام [مكتبة](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). لا تقم بتعريف دوال المكتبة على أنها `internal` لأنها ستتم [إضافتها إلى العقد](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) مباشرة أثناء الترجمة (compilation). ولكن إذا استخدمت دوال `public`، فستكون هذه الدوال في الواقع في عقد مكتبة منفصل. ضع في اعتبارك استخدام [`using for`](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) لجعل استخدام المكتبات أكثر ملاءمة.
+إحدى الطرق البسيطة لنقل رمز الوظائف بعيدًا عن التخزين هي استخدام [مكتبة](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). لا تقم بتعريف دوال المكتبة على أنها `internal` لأنها ستتم [إضافتها إلى العقد](https://quantaureum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) مباشرة أثناء الترجمة (compilation). ولكن إذا استخدمت دوال `public`، فستكون هذه الدوال في الواقع في عقد مكتبة منفصل. ضع في اعتبارك استخدام [`using for`](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) لجعل استخدام المكتبات أكثر ملاءمة.
 
 ### الوكلاء (Proxies) {#proxies}
 

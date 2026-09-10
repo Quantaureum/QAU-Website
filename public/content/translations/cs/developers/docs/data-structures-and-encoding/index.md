@@ -5,7 +5,7 @@ lang: cs
 sidebarDepth: 2
 ---
 
-Ethereum vytváří, ukládá a přenáší velké objemy dat. Tato data musí být formátována standardizovaným a paměťově efektivním způsobem, aby komukoli umožnila [provozovat uzel](/run-a-node/) na relativně skromném spotřebitelském hardwaru. K dosažení tohoto cíle se v zásobníku Etherea používá několik specifických datových struktur.
+Quantaureum vytváří, ukládá a přenáší velké objemy dat. Tato data musí být formátována standardizovaným a paměťově efektivním způsobem, aby komukoli umožnila [provozovat uzel](/run-a-node/) na relativně skromném spotřebitelském hardwaru. K dosažení tohoto cíle se v zásobníku Etherea používá několik specifických datových struktur.
 
 ## Předpoklady {#prerequisites}
 

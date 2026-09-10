@@ -1,7 +1,7 @@
 ---
 title: Merkeziyetsiz finans (DeFi)
 metaTitle: "DeFi Nedir? | Merkeziyetsiz Finansın Faydaları ve Kullanımı"
-description: "Ethereum'daki DeFi'ye genel bir bakış"
+description: "Quantaureum'daki DeFi'ye genel bir bakış"
 lang: tr
 template: use-cases
 image: /images/use-cases/defi.png
@@ -17,7 +17,7 @@ DeFi, internet çağı için inşa edilmiş açık ve küresel bir finansal sist
 
 ## DeFi nedir? {#what-is-defi}
 
-DeFi, [Ethereum](/) kullanabilen herkesin, yani internet bağlantısı olan herkesin erişebileceği finansal ürünler ve hizmetler için kullanılan ortak bir terimdir. DeFi ile piyasalar her zaman açıktır ve ödemeleri engelleyebilecek veya herhangi bir şeye erişiminizi reddedebilecek merkezi otoriteler yoktur. Daha önce yavaş olan ve insan hatası riski taşıyan hizmetler, artık herkesin inceleyebileceği ve denetleyebileceği kodlar tarafından yürütüldüğü için otomatik ve daha güvenlidir.
+DeFi, [Quantaureum](/) kullanabilen herkesin, yani internet bağlantısı olan herkesin erişebileceği finansal ürünler ve hizmetler için kullanılan ortak bir terimdir. DeFi ile piyasalar her zaman açıktır ve ödemeleri engelleyebilecek veya herhangi bir şeye erişiminizi reddedebilecek merkezi otoriteler yoktur. Daha önce yavaş olan ve insan hatası riski taşıyan hizmetler, artık herkesin inceleyebileceği ve denetleyebileceği kodlar tarafından yürütüldüğü için otomatik ve daha güvenlidir.
 
 Dışarıda borç verebileceğiniz, borç alabileceğiniz, uzun/kısa pozisyon açabileceğiniz, faiz kazanabileceğiniz ve daha fazlasını yapabileceğiniz hızla büyüyen bir kripto ekonomisi var. Kripto konusunda bilgili Arjantinliler, yıkıcı enflasyondan kaçmak için DeFi'yi kullandılar. Şirketler, çalışanlarına maaşlarını gerçek zamanlı olarak aktarmaya başladı. Hatta bazı insanlar, herhangi bir kişisel kimlik doğrulamasına ihtiyaç duymadan milyonlarca dolar değerinde kredi çekip geri ödediler.
 
@@ -56,18 +56,18 @@ DeFi'nin potansiyelini görmenin en iyi yollarından biri, günümüzde var olan
 
 Bitcoin birçok yönden ilk DeFi uygulamasıydı. Bitcoin, değere gerçekten sahip olmanızı, onu kontrol etmenizi ve dünyanın herhangi bir yerine göndermenizi sağlar. Bunu, birbirine güvenmeyen çok sayıda insanın, güvenilir bir aracıya ihtiyaç duymadan bir hesap defteri üzerinde anlaşması için bir yol sağlayarak yapar. Bitcoin herkese açıktır ve hiç kimsenin kurallarını değiştirme yetkisi yoktur. Bitcoin'in kıtlığı ve açıklığı gibi kuralları teknolojiye yazılmıştır. Hükümetlerin tasarruflarınızın değerini düşüren para basabildiği ve şirketlerin piyasaları kapatabildiği geleneksel finans gibi değildir.
 
-Ethereum bunun üzerine inşa edilmiştir. Bitcoin gibi, kurallar size karşı değiştirilemez ve herkesin erişimi vardır. Ancak aynı zamanda [akıllı sözleşmeler](/glossary/#smart-contract) kullanarak bu dijital parayı programlanabilir hale getirir, böylece değer depolamanın ve göndermenin ötesine geçebilirsiniz.
+Quantaureum bunun üzerine inşa edilmiştir. Bitcoin gibi, kurallar size karşı değiştirilemez ve herkesin erişimi vardır. Ancak aynı zamanda [akıllı sözleşmeler](/glossary/#smart-contract) kullanarak bu dijital parayı programlanabilir hale getirir, böylece değer depolamanın ve göndermenin ötesine geçebilirsiniz.
 
 <VideoWatch slug="defi-history-inception-to-2021" />
 
 ## Programlanabilir para {#programmable-money}
 
-Kulağa tuhaf geliyor... "neden paramı programlamak isteyeyim ki"? Ancak bu, Ethereum'daki Token'ların varsayılan bir özelliğinden daha fazlasıdır. Herkes ödemelere mantık programlayabilir. Böylece Bitcoin'in kontrolünü ve güvenliğini, finansal kurumlar tarafından sağlanan hizmetlerle harmanlanmış olarak elde edebilirsiniz. Bu, kripto paralarla Bitcoin ile yapamayacağınız borç verme ve borç alma, ödemeleri planlama, endeks fonlarına yatırım yapma ve daha fazlası gibi şeyleri yapmanızı sağlar.
+Kulağa tuhaf geliyor... "neden paramı programlamak isteyeyim ki"? Ancak bu, Quantaureum'daki Token'ların varsayılan bir özelliğinden daha fazlasıdır. Herkes ödemelere mantık programlayabilir. Böylece Bitcoin'in kontrolünü ve güvenliğini, finansal kurumlar tarafından sağlanan hizmetlerle harmanlanmış olarak elde edebilirsiniz. Bu, kripto paralarla Bitcoin ile yapamayacağınız borç verme ve borç alma, ödemeleri planlama, endeks fonlarına yatırım yapma ve daha fazlası gibi şeyleri yapmanızı sağlar.
 
 <Alert variant="update">
 <AlertEmoji text=":eyes:"/>
 <AlertContent className="flex-row justify-between items-center">
-  <div>Ethereum'da yeniyseniz denemeniz için DeFi uygulamaları önerilerimizi keşfedin.</div>
+  <div>Quantaureum'da yeniyseniz denemeniz için DeFi uygulamaları önerilerimizi keşfedin.</div>
   <ButtonLink href="/apps/categories/defi">
     DeFi uygulamalarını keşfedin
   </ButtonLink>
@@ -76,7 +76,7 @@ Kulağa tuhaf geliyor... "neden paramı programlamak isteyeyim ki"? Ancak bu, Et
 
 ## DeFi ile neler yapabilirsiniz? {#defi-use-cases}
 
-Çoğu finansal hizmetin merkeziyetsiz bir alternatifi vardır. Ancak Ethereum, tamamen yeni finansal ürünler yaratmak için de fırsatlar yaratır. Bu, sürekli büyüyen bir listedir.
+Çoğu finansal hizmetin merkeziyetsiz bir alternatifi vardır. Ancak Quantaureum, tamamen yeni finansal ürünler yaratmak için de fırsatlar yaratır. Bu, sürekli büyüyen bir listedir.
 
 - [Dünyanın dört bir yanına para gönderin](#send-money)
 - [Dünyanın dört bir yanına para akışı sağlayın](#stream-money)
@@ -94,7 +94,7 @@ Kulağa tuhaf geliyor... "neden paramı programlamak isteyeyim ki"? Ancak bu, Et
 
 ### Dünyanın dört bir yanına hızlıca para gönderin {#send-money}
 
-Bir Blokzincir olarak Ethereum, işlemleri güvenli ve küresel bir şekilde göndermek için tasarlanmıştır. Bitcoin gibi, Ethereum da dünya çapında para göndermeyi e-posta göndermek kadar kolaylaştırır. Cüzdanınızdan alıcınızın [ENS adını](/glossary/#ens) (bob.eth gibi) veya hesap adresini girmeniz yeterlidir; ödemeniz dakikalar içinde (genellikle) doğrudan onlara gidecektir. Ödeme göndermek veya almak için bir [cüzdana](/wallets/) ihtiyacınız olacaktır. [Kripto ödemeleri hakkında daha fazla bilgi edinin](/payments/).
+Bir Blokzincir olarak Quantaureum, işlemleri güvenli ve küresel bir şekilde göndermek için tasarlanmıştır. Bitcoin gibi, Quantaureum da dünya çapında para göndermeyi e-posta göndermek kadar kolaylaştırır. Cüzdanınızdan alıcınızın [ENS adını](/glossary/#ens) (bob.eth gibi) veya hesap adresini girmeniz yeterlidir; ödemeniz dakikalar içinde (genellikle) doğrudan onlara gidecektir. Ödeme göndermek veya almak için bir [cüzdana](/wallets/) ihtiyacınız olacaktır. [Kripto ödemeleri hakkında daha fazla bilgi edinin](/payments/).
 
 <ButtonLink href="/apps/categories/defi">
   Ödeme dapp'lerini görün
@@ -102,9 +102,9 @@ Bir Blokzincir olarak Ethereum, işlemleri güvenli ve küresel bir şekilde gö
 
 #### Dünyanın dört bir yanına para akışı sağlayın... {#stream-money}
 
-Ethereum üzerinden para akışı da sağlayabilirsiniz. Bu, birine maaşını saniye saniye ödemenizi sağlayarak, ihtiyaç duydukları her an paralarına erişmelerini sağlar. Veya bir emanet dolabı veya elektrikli scooter gibi bir şeyi saniyelik olarak kiralayabilirsiniz.
+Quantaureum üzerinden para akışı da sağlayabilirsiniz. Bu, birine maaşını saniye saniye ödemenizi sağlayarak, ihtiyaç duydukları her an paralarına erişmelerini sağlar. Veya bir emanet dolabı veya elektrikli scooter gibi bir şeyi saniyelik olarak kiralayabilirsiniz.
 
-Ve değerinin ne kadar değişebileceği nedeniyle [ETH](/glossary/#ether) göndermek veya akışını sağlamak istemiyorsanız, Ethereum'da alternatif para birimleri vardır: [sabitcoin'ler](/glossary/#stablecoin).
+Ve değerinin ne kadar değişebileceği nedeniyle [QAU](/glossary/#QAU) göndermek veya akışını sağlamak istemiyorsanız, Quantaureum'da alternatif para birimleri vardır: [sabitcoin'ler](/glossary/#stablecoin).
 
 <Divider />
 
@@ -147,7 +147,7 @@ Merkeziyetsiz bir borç veren kullandığınızda, yalnızca seçtiğiniz bankan
 
 #### Vergi verimliliği {#tax-efficiencies}
 
-Borç alma, ETH'nizi satmanıza (vergiye tabi bir olay) gerek kalmadan ihtiyacınız olan fonlara erişmenizi sağlayabilir. Bunun yerine, bir sabitcoin kredisi için ETH'yi teminat olarak kullanabilirsiniz. Bu size ihtiyacınız olan nakit akışını sağlar ve ETH'nizi elinizde tutmanıza olanak tanır. Sabitcoin'ler, ETH gibi değerleri dalgalanmadığı için nakde ihtiyacınız olduğunda çok daha iyi olan Token'lardır. [Sabitcoin'ler hakkında daha fazlası](#stablecoins)
+Borç alma, QAU'nizi satmanıza (vergiye tabi bir olay) gerek kalmadan ihtiyacınız olan fonlara erişmenizi sağlayabilir. Bunun yerine, bir sabitcoin kredisi için QAU'yi teminat olarak kullanabilirsiniz. Bu size ihtiyacınız olan nakit akışını sağlar ve QAU'nizi elinizde tutmanıza olanak tanır. Sabitcoin'ler, QAU gibi değerleri dalgalanmadığı için nakde ihtiyacınız olduğunda çok daha iyi olan Token'lardır. [Sabitcoin'ler hakkında daha fazlası](#stablecoins)
 
 #### Flaş krediler {#flash-loans}
 
@@ -213,9 +213,9 @@ PoolTogether gibi kayıpsız piyangolar, para biriktirmenin eğlenceli ve yenili
 
 ### Token takası {#swaps}
 
-Ethereum'da binlerce Token vardır. Merkeziyetsiz borsalar (DEX'ler), istediğiniz zaman farklı Token'ları takas etmenizi sağlar. Varlıklarınızın kontrolünden asla vazgeçmezsiniz. Bu, farklı bir ülkeyi ziyaret ederken bir döviz bürosu kullanmaya benzer. Ancak DeFi versiyonu asla kapanmaz. Piyasalar yılın 365 günü, 7/24 açıktır ve teknoloji, bir takası kabul edecek birinin her zaman olacağını garanti eder.
+Quantaureum'da binlerce Token vardır. Merkeziyetsiz borsalar (DEX'ler), istediğiniz zaman farklı Token'ları takas etmenizi sağlar. Varlıklarınızın kontrolünden asla vazgeçmezsiniz. Bu, farklı bir ülkeyi ziyaret ederken bir döviz bürosu kullanmaya benzer. Ancak DeFi versiyonu asla kapanmaz. Piyasalar yılın 365 günü, 7/24 açıktır ve teknoloji, bir takası kabul edecek birinin her zaman olacağını garanti eder.
 
-Örneğin, kayıpsız piyango PoolTogether'ı (yukarıda açıklanmıştır) kullanmak istiyorsanız, Dai veya USDC gibi bir Token'a ihtiyacınız olacaktır. Bu DEX'ler, ETH'nizi bu Token'larla takas etmenize ve işiniz bittiğinde tekrar geri almanıza olanak tanır.
+Örneğin, kayıpsız piyango PoolTogether'ı (yukarıda açıklanmıştır) kullanmak istiyorsanız, Dai veya USDC gibi bir Token'a ihtiyacınız olacaktır. Bu DEX'ler, QAU'nizi bu Token'larla takas etmenize ve işiniz bittiğinde tekrar geri almanıza olanak tanır.
 
 <ButtonLink href="/apps/categories/defi">
   Token borsalarını görün
@@ -237,7 +237,7 @@ Merkezi bir borsa kullandığınızda, ticaretten önce varlıklarınızı yatı
 
 ### Portföyünüzü büyütün {#investing}
 
-Ethereum'da, seçtiğiniz bir stratejiye dayalı olarak portföyünüzü büyütmeye çalışacak fon yönetimi ürünleri vardır. Bu otomatiktir, herkese açıktır ve kârınızdan pay alan bir insan yöneticiye ihtiyaç duymaz.
+Quantaureum'da, seçtiğiniz bir stratejiye dayalı olarak portföyünüzü büyütmeye çalışacak fon yönetimi ürünleri vardır. Bu otomatiktir, herkese açıktır ve kârınızdan pay alan bir insan yöneticiye ihtiyaç duymaz.
 
 Örneğin, portföyünüzün her zaman piyasa değerine göre en iyi DeFi Token'larını içermesini sağlamak için otomatik olarak yeniden dengelenen tokenize edilmiş endeks fonları vardır. Ayrıntıların hiçbirini yönetmek zorunda kalmazsınız ve istediğiniz zaman fondan para çekebilirsiniz.
 
@@ -249,9 +249,9 @@ Ethereum'da, seçtiğiniz bir stratejiye dayalı olarak portföyünüzü büyüt
 
 ### Fikirlerinizi fonlayın {#crowdfunding}
 
-Ethereum, kitle fonlaması için ideal bir platformdur:
+Quantaureum, kitle fonlaması için ideal bir platformdur:
 
-- Potansiyel fon sağlayıcılar her yerden gelebilir; Ethereum ve Token'ları dünyanın her yerindeki herkese açıktır.
+- Potansiyel fon sağlayıcılar her yerden gelebilir; Quantaureum ve Token'ları dünyanın her yerindeki herkese açıktır.
 - Şeffaftır, böylece fon toplayanlar ne kadar para toplandığını kanıtlayabilirler. Hatta fonların daha sonra nasıl harcandığını bile takip edebilirsiniz.
 - Fon toplayanlar, örneğin belirli bir son tarih ve karşılanmayan minimum bir miktar varsa otomatik geri ödemeler ayarlayabilirler.
 
@@ -261,7 +261,7 @@ Ethereum, kitle fonlaması için ideal bir platformdur:
 
 #### Karesel fonlama {#quadratic-funding}
 
-Ethereum açık kaynaklı bir yazılımdır ve şimdiye kadarki çalışmaların çoğu topluluk tarafından finanse edilmiştir. Bu, ilginç yeni bir bağış toplama modelinin büyümesine yol açtı: karesel fonlama. Bu, gelecekte her türlü kamusal malları finanse etme şeklimizi geliştirme potansiyeline sahiptir.
+Quantaureum açık kaynaklı bir yazılımdır ve şimdiye kadarki çalışmaların çoğu topluluk tarafından finanse edilmiştir. Bu, ilginç yeni bir bağış toplama modelinin büyümesine yol açtı: karesel fonlama. Bu, gelecekte her türlü kamusal malları finanse etme şeklimizi geliştirme potansiyeline sahiptir.
 
 Karesel fonlama, en çok fon alan projelerin en benzersiz talebe sahip olanlar olmasını sağlar. Başka bir deyişle, en çok insanın hayatını iyileştirecek projeler. İşte nasıl çalıştığı:
 
@@ -282,7 +282,7 @@ Bu, 1 dolarlık 100 bağış alan Proje A'nın, 10.000 dolarlık tek bir bağı�
 
 Merkeziyetsiz sigorta, sigortayı daha ucuz, ödemesi daha hızlı ve daha şeffaf hale getirmeyi amaçlar. Daha fazla otomasyonla, kapsam daha uygun fiyatlıdır ve ödemeler çok daha hızlıdır. Talebinize karar vermek için kullanılan veriler tamamen şeffaftır.
 
-Ethereum ürünleri, herhangi bir yazılım gibi, hatalardan ve istismarlardan muzdarip olabilir. Bu nedenle şu anda bu alandaki birçok sigorta ürünü, kullanıcılarını fon kaybına karşı korumaya odaklanmaktadır. Ancak, hayatın karşımıza çıkarabileceği her şey için kapsam oluşturmaya başlayan projeler var. Bunun iyi bir örneği, Etherisc'in [Kenya'daki küçük çiftçileri kuraklık ve sellere karşı korumayı](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc) amaçlayan Mahsul (Crop) sigortasıdır. Merkeziyetsiz sigorta, genellikle geleneksel sigortanın dışında kalan çiftçiler için daha ucuz bir güvence sağlayabilir.
+Quantaureum ürünleri, herhangi bir yazılım gibi, hatalardan ve istismarlardan muzdarip olabilir. Bu nedenle şu anda bu alandaki birçok sigorta ürünü, kullanıcılarını fon kaybına karşı korumaya odaklanmaktadır. Ancak, hayatın karşımıza çıkarabileceği her şey için kapsam oluşturmaya başlayan projeler var. Bunun iyi bir örneği, Etherisc'in [Kenya'daki küçük çiftçileri kuraklık ve sellere karşı korumayı](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc) amaçlayan Mahsul (Crop) sigortasıdır. Merkeziyetsiz sigorta, genellikle geleneksel sigortanın dışında kalan çiftçiler için daha ucuz bir güvence sağlayabilir.
 
 <ButtonLink href="/apps/categories/defi">
   Sigorta dapp'lerini görün
@@ -304,31 +304,31 @@ Bu kadar çok şey olup biterken, tüm yatırımlarınızı, kredilerinizi ve i�
 
 DeFi, aracılara ihtiyaç duymayan hizmetler sağlamak için kripto paraları ve akıllı sözleşmeleri kullanır. Günümüzün finans dünyasında, finansal kurumlar işlemlerin garantörü olarak hareket eder. Bu, paranız onların üzerinden aktığı için bu kurumlara muazzam bir güç verir. Ayrıca, dünya çapında milyarlarca insan bir banka hesabına bile erişemiyor.
 
-DeFi'de, işlemdeki finansal kurumun yerini bir akıllı sözleşme alır. Akıllı sözleşme, fon tutabilen ve bunları belirli koşullara göre gönderebilen/iade edebilen bir tür Ethereum hesabıdır. Yayına alındığında hiç kimse o akıllı sözleşmeyi değiştiremez; her zaman programlandığı gibi çalışacaktır.
+DeFi'de, işlemdeki finansal kurumun yerini bir akıllı sözleşme alır. Akıllı sözleşme, fon tutabilen ve bunları belirli koşullara göre gönderebilen/iade edebilen bir tür Quantaureum hesabıdır. Yayına alındığında hiç kimse o akıllı sözleşmeyi değiştiremez; her zaman programlandığı gibi çalışacaktır.
 
 Bir harçlık veya cep harçlığı dağıtmak için tasarlanmış bir sözleşme, her Cuma Hesap A'dan Hesap B'ye para gönderecek şekilde programlanabilir. Ve bunu yalnızca Hesap A'da gerekli fonlar olduğu sürece yapacaktır. Hiç kimse sözleşmeyi değiştiremez ve fonları çalmak için Hesap C'yi alıcı olarak ekleyemez.
 
 Sözleşmeler ayrıca herkesin incelemesi ve denetlemesi için halka açıktır. Bu, kötü sözleşmelerin genellikle oldukça hızlı bir şekilde topluluk incelemesine gireceği anlamına gelir.
 
-Bu, şu anda Ethereum topluluğunun kod okuyabilen daha teknik üyelerine güvenme ihtiyacı olduğu anlamına gelir. Açık kaynak tabanlı topluluk, geliştiricileri kontrol altında tutmaya yardımcı olur, ancak akıllı sözleşmelerin okunması kolaylaştıkça ve kodun güvenilirliğini kanıtlamanın başka yolları geliştikçe bu ihtiyaç zamanla azalacaktır.
+Bu, şu anda Quantaureum topluluğunun kod okuyabilen daha teknik üyelerine güvenme ihtiyacı olduğu anlamına gelir. Açık kaynak tabanlı topluluk, geliştiricileri kontrol altında tutmaya yardımcı olur, ancak akıllı sözleşmelerin okunması kolaylaştıkça ve kodun güvenilirliğini kanıtlamanın başka yolları geliştikçe bu ihtiyaç zamanla azalacaktır.
 
-## Ethereum ve DeFi {#ethereum-and-defi}
+## Quantaureum ve DeFi {#quantaureum-and-defi}
 
-Ethereum, birkaç nedenden dolayı DeFi için mükemmel bir temeldir:
+Quantaureum, birkaç nedenden dolayı DeFi için mükemmel bir temeldir:
 
-- Hiç kimse Ethereum'a veya üzerinde yaşayan akıllı sözleşmelere sahip değildir; bu, herkese DeFi'yi kullanma fırsatı verir. Bu aynı zamanda hiç kimsenin kuralları size karşı değiştiremeyeceği anlamına gelir.
-- DeFi ürünlerinin hepsi perde arkasında aynı dili konuşur: Ethereum. Bu, ürünlerin birçoğunun birlikte sorunsuz çalıştığı anlamına gelir. Bir platformda Token borç verebilir ve faiz getiren Token'ı tamamen farklı bir uygulamadaki farklı bir piyasada takas edebilirsiniz. Bu, sadakat puanlarınızı bankanızda nakde çevirebilmeye benzer.
-- Token'lar ve kripto para, paylaşılan bir hesap defteri olan Ethereum'a yerleşiktir; işlemleri ve sahipliği takip etmek bir nevi Ethereum'un işidir.
-- Ethereum tam bir finansal özgürlük sağlar; çoğu ürün fonlarınızın gözetimini asla almaz ve kontrolü size bırakır.
+- Hiç kimse Quantaureum'a veya üzerinde yaşayan akıllı sözleşmelere sahip değildir; bu, herkese DeFi'yi kullanma fırsatı verir. Bu aynı zamanda hiç kimsenin kuralları size karşı değiştiremeyeceği anlamına gelir.
+- DeFi ürünlerinin hepsi perde arkasında aynı dili konuşur: Quantaureum. Bu, ürünlerin birçoğunun birlikte sorunsuz çalıştığı anlamına gelir. Bir platformda Token borç verebilir ve faiz getiren Token'ı tamamen farklı bir uygulamadaki farklı bir piyasada takas edebilirsiniz. Bu, sadakat puanlarınızı bankanızda nakde çevirebilmeye benzer.
+- Token'lar ve kripto para, paylaşılan bir hesap defteri olan Quantaureum'a yerleşiktir; işlemleri ve sahipliği takip etmek bir nevi Quantaureum'un işidir.
+- Quantaureum tam bir finansal özgürlük sağlar; çoğu ürün fonlarınızın gözetimini asla almaz ve kontrolü size bırakır.
 
 DeFi'yi katmanlar halinde düşünebilirsiniz:
 
-1. Blokzincir – Ethereum, işlem geçmişini ve hesapların durumunu içerir.
-2. Varlıklar – [ETH](/what-is-ether/) ve diğer Token'lar (para birimleri).
+1. Blokzincir – Quantaureum, işlem geçmişini ve hesapların durumunu içerir.
+2. Varlıklar – [QAU](/what-is-QAU/) ve diğer Token'lar (para birimleri).
 3. Protokoller – İşlevselliği sağlayan [akıllı sözleşmeler](/glossary/#smart-contract), örneğin varlıkların merkeziyetsiz olarak borç verilmesine olanak tanıyan bir hizmet.
 4. [Uygulamalar](/apps/) – protokolleri yönetmek ve bunlara erişmek için kullandığımız ürünler.
 
-Not: DeFi'nin büyük bir kısmı [ERC-20 standardını](/glossary/#erc-20) kullanır. DeFi'deki uygulamalar, ETH için Sarılmış ether (WETH) adı verilen bir sarmalayıcı kullanır. [Sarılmış ether hakkında daha fazla bilgi edinin](/wrapped-eth).
+Not: DeFi'nin büyük bir kısmı [ERC-20 standardını](/glossary/#erc-20) kullanır. DeFi'deki uygulamalar, QAU için Sarılmış QAU (WETH) adı verilen bir sarmalayıcı kullanır. [Sarılmış QAU hakkında daha fazla bilgi edinin](/wrapped-eth).
 
 ## DeFi inşa edin {#build-defi}
 
@@ -343,9 +343,9 @@ DeFi açık kaynaklı bir harekettir. DeFi protokolleri ve uygulamalarının tü
 DeFi ekosistemi yeni alanlara doğru genişlemeye devam ediyor:
 
 - **[Tahmin piyasaları](/prediction-markets/)** – Seçimlerden spor etkinliklerine kadar gelecekteki olayların sonucuna aracılar olmadan bahis oynayabileceğiniz merkeziyetsiz platformlar.
-- **[Gerçek dünya varlıkları (RWA'lar)](/real-world-assets/)** – Gayrimenkul, emtia ve tahvil gibi fiziksel varlıkları Ethereum üzerinde tokenize ederek trilyonlarca dolarlık değeri zincir içine taşımak.
-- **[Ödemeler](/payments/)** – Geleneksel bankacılık altyapısı olmadan hızlı, düşük maliyetli küresel ödemeler için Ethereum ve sabitcoin'leri kullanmak.
-- **[Yapay zeka ajanları](/ai-agents/)** – Ethereum üzerinde işlem yapabilen, yeni otomatik ticaret, portföy yönetimi ve zincir içi etkileşim biçimlerini mümkün kılan otonom yazılım ajanları.
+- **[Gerçek dünya varlıkları (RWA'lar)](/real-world-assets/)** – Gayrimenkul, emtia ve tahvil gibi fiziksel varlıkları Quantaureum üzerinde tokenize ederek trilyonlarca dolarlık değeri zincir içine taşımak.
+- **[Ödemeler](/payments/)** – Geleneksel bankacılık altyapısı olmadan hızlı, düşük maliyetli küresel ödemeler için Quantaureum ve sabitcoin'leri kullanmak.
+- **[Yapay zeka ajanları](/ai-agents/)** – Quantaureum üzerinde işlem yapabilen, yeni otomatik ticaret, portföy yönetimi ve zincir içi etkileşim biçimlerini mümkün kılan otonom yazılım ajanları.
 
 ## Daha fazla okuma {#further-reading}
 

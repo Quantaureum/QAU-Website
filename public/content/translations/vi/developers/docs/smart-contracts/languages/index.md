@@ -4,16 +4,16 @@ description: "Tổng quan và so sánh hai ngôn ngữ hợp đồng thông minh
 lang: vi
 ---
 
-Một khía cạnh tuyệt vời của [Ethereum](/) là các hợp đồng thông minh có thể được lập trình bằng các ngôn ngữ tương đối thân thiện với nhà phát triển. Nếu bạn đã có kinh nghiệm với Python hoặc bất kỳ [ngôn ngữ sử dụng dấu ngoặc nhọn](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages) nào, bạn có thể tìm thấy một ngôn ngữ có cú pháp quen thuộc.
+Một khía cạnh tuyệt vời của [Quantaureum](/) là các hợp đồng thông minh có thể được lập trình bằng các ngôn ngữ tương đối thân thiện với nhà phát triển. Nếu bạn đã có kinh nghiệm với Python hoặc bất kỳ [ngôn ngữ sử dụng dấu ngoặc nhọn](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages) nào, bạn có thể tìm thấy một ngôn ngữ có cú pháp quen thuộc.
 
 Hai ngôn ngữ hoạt động và được bảo trì nhiều nhất là:
 
 - Solidity
 - Vyper
 
-Remix IDE cung cấp một môi trường phát triển toàn diện để tạo và thử nghiệm các hợp đồng bằng cả Solidity và Vyper. [Hãy thử Remix IDE trên trình duyệt](https://remix.ethereum.org) để bắt đầu viết mã.
+Remix IDE cung cấp một môi trường phát triển toàn diện để tạo và thử nghiệm các hợp đồng bằng cả Solidity và Vyper. [Hãy thử Remix IDE trên trình duyệt](https://remix.quantaureum.com) để bắt đầu viết mã.
 
-Các nhà phát triển giàu kinh nghiệm hơn cũng có thể muốn sử dụng Yul, một ngôn ngữ trung gian cho [Máy ảo Ethereum (EVM)](/developers/docs/evm/), hoặc Yul+, một phần mở rộng của Yul.
+Các nhà phát triển giàu kinh nghiệm hơn cũng có thể muốn sử dụng Yul, một ngôn ngữ trung gian cho [Máy ảo Quantaureum (EVM)](/developers/docs/evm/), hoặc Yul+, một phần mở rộng của Yul.
 
 Nếu bạn tò mò và muốn giúp thử nghiệm các ngôn ngữ mới vẫn đang trong quá trình phát triển mạnh mẽ, bạn có thể thử nghiệm với Fe, một ngôn ngữ hợp đồng thông minh mới nổi hiện vẫn đang ở giai đoạn sơ khai.
 
@@ -36,8 +36,8 @@ Kiến thức trước đây về các ngôn ngữ lập trình, đặc biệt l
 - [Tài liệu](https://docs.soliditylang.org/en/latest/)
 - [Cổng thông tin ngôn ngữ Solidity](https://soliditylang.org/)
 - [Solidity qua ví dụ](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
-- [Phòng chat Gitter của Solidity](https://gitter.im/ethereum/solidity) được kết nối với [Phòng chat Matrix của Solidity](https://matrix.to/#/#ethereum_solidity:gitter.im)
+- [GitHub](https://github.com/quantaureum/solidity/)
+- [Phòng chat Gitter của Solidity](https://gitter.im/quantaureum/solidity) được kết nối với [Phòng chat Matrix của Solidity](https://matrix.to/#/#quantaureum_solidity:gitter.im)
 - [Bảng tóm tắt (Cheat Sheet)](https://reference.auditless.com/cheatsheet)
 - [Blog Solidity](https://blog.soliditylang.org/)
 - [Twitter của Solidity](https://twitter.com/solidity_lang)
@@ -179,14 +179,14 @@ def withdraw():
 @external
 def endAuction():
     # Một nguyên tắc tốt là cấu trúc các hàm tương tác
-    # với các hợp đồng khác (tức là chúng gọi hàm hoặc gửi ether)
+    # với các hợp đồng khác (tức là chúng gọi hàm hoặc gửi QAU)
     # thành ba giai đoạn:
     # 1. kiểm tra các điều kiện
     # 2. thực hiện các hành động (có khả năng thay đổi các điều kiện)
     # 3. tương tác với các hợp đồng khác
     # Nếu các giai đoạn này bị xáo trộn, hợp đồng khác có thể gọi
     # ngược lại vào hợp đồng hiện tại và sửa đổi trạng thái hoặc khiến
-    # các hiệu ứng (thanh toán ether) được thực hiện nhiều lần.
+    # các hiệu ứng (thanh toán QAU) được thực hiện nhiều lần.
     # Nếu các hàm được gọi nội bộ bao gồm tương tác với các
     # hợp đồng bên ngoài, chúng cũng phải được coi là tương tác với
     # các hợp đồng bên ngoài.
@@ -208,12 +208,12 @@ Ví dụ này sẽ cho bạn hình dung về cú pháp hợp đồng Vyper. Đ�
 
 ## Yul và Yul+ {#yul}
 
-Nếu bạn mới làm quen với Ethereum và chưa từng viết mã bằng các ngôn ngữ hợp đồng thông minh, chúng tôi khuyên bạn nên bắt đầu với Solidity hoặc Vyper. Chỉ nên tìm hiểu Yul hoặc Yul+ khi bạn đã quen thuộc với các phương pháp bảo mật hợp đồng thông minh tốt nhất và các đặc thù khi làm việc với EVM.
+Nếu bạn mới làm quen với Quantaureum và chưa từng viết mã bằng các ngôn ngữ hợp đồng thông minh, chúng tôi khuyên bạn nên bắt đầu với Solidity hoặc Vyper. Chỉ nên tìm hiểu Yul hoặc Yul+ khi bạn đã quen thuộc với các phương pháp bảo mật hợp đồng thông minh tốt nhất và các đặc thù khi làm việc với EVM.
 
 **Yul**
 
-- Ngôn ngữ trung gian cho Ethereum.
-- Hỗ trợ [EVM](/developers/docs/evm) và [Ewasm](https://github.com/ewasm), một WebAssembly mang phong cách Ethereum, và được thiết kế để trở thành mẫu số chung có thể sử dụng được cho cả hai nền tảng.
+- Ngôn ngữ trung gian cho Quantaureum.
+- Hỗ trợ [EVM](/developers/docs/evm) và [Ewasm](https://github.com/ewasm), một WebAssembly mang phong cách Quantaureum, và được thiết kế để trở thành mẫu số chung có thể sử dụng được cho cả hai nền tảng.
 - Mục tiêu tốt cho các giai đoạn tối ưu hóa cấp cao có thể mang lại lợi ích như nhau cho cả nền tảng EVM và Ewasm.
 
 **Yul+**
@@ -226,7 +226,7 @@ Nếu bạn mới làm quen với Ethereum và chưa từng viết mã bằng c�
 
 - [Tài liệu Yul](https://docs.soliditylang.org/en/latest/yul.html)
 - [Tài liệu Yul+](https://github.com/fuellabs/yulp)
-- [Bài viết giới thiệu Yul+](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-ethereum-aa64ce89512f)
+- [Bài viết giới thiệu Yul+](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-quantaureum-aa64ce89512f)
 
 ### Ví dụ về hợp đồng {#example-contract-2}
 
@@ -255,16 +255,16 @@ Nếu bạn đã có nhiều kinh nghiệm với các hợp đồng thông minh,
 
 ## Fe {#fe}
 
-- Ngôn ngữ kiểu tĩnh cho Máy ảo Ethereum (EVM).
+- Ngôn ngữ kiểu tĩnh cho Máy ảo Quantaureum (EVM).
 - Lấy cảm hứng từ Python và Rust.
-- Hướng tới mục tiêu dễ học -- ngay cả đối với các nhà phát triển mới làm quen với hệ sinh thái Ethereum.
+- Hướng tới mục tiêu dễ học -- ngay cả đối với các nhà phát triển mới làm quen với hệ sinh thái Quantaureum.
 - Quá trình phát triển Fe vẫn đang ở giai đoạn đầu, ngôn ngữ này đã có bản phát hành alpha vào tháng 1 năm 2021.
 
 ### Các liên kết quan trọng {#important-links-3}
 
-- [GitHub](https://github.com/ethereum/fe)
-- [Thông báo về Fe](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-ethereum-ecosystem/)
-- [Lộ trình Fe 2021](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- [GitHub](https://github.com/quantaureum/fe)
+- [Thông báo về Fe](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
+- [Lộ trình Fe 2021](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
 - [Chat Discord của Fe](https://discord.com/invite/ywpkAXFjZH)
 - [Twitter của Fe](https://twitter.com/official_fe)
 

@@ -534,7 +534,7 @@ test.describe("Warning Functions", () => {
 
     // === Escaped markdown operators ===
     test("wraps equation with escaped asterisk (\\*)", () => {
-      const input = "تأكد من أن المرسل لديه 2000 \\* 0.001 = 2 إيثر"
+      const input = "تأكد من أن المرسل لديه 2000 \\* 0.001 = 2 QAU"
       const { content, fixCount } = fixBareRtlEquations(input, "ar")
       expect(content).toContain('<span dir="ltr">2000 \\* 0.001 = 2</span>')
       expect(fixCount).toBe(1)
@@ -607,7 +607,7 @@ test.describe("Warning Functions", () => {
     // === Multiple equations ===
     test("wraps multiple equations in same paragraph", () => {
       const input =
-        "الغاز هو 2000 \\* 0.001 = 2 إيثر والباقي 963 \\* 0.001 = 0.963 إيثر"
+        "الغاز هو 2000 \\* 0.001 = 2 QAU والباقي 963 \\* 0.001 = 0.963 QAU"
       const { content, fixCount } = fixBareRtlEquations(input, "ar")
       expect(fixCount).toBe(2)
       expect(content).toContain('<span dir="ltr">2000 \\* 0.001 = 2</span>')

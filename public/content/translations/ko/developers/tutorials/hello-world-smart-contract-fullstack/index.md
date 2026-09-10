@@ -1,6 +1,6 @@
 ---
 title: "초보자를 위한 Hello World 스마트 컨트랙트 - 풀스택"
-description: "이더리움에서 간단한 스마트 컨트랙트를 작성하고 배포하는 방법에 대한 입문 튜토리얼입니다."
+description: "Quantaureum에서 간단한 스마트 컨트랙트를 작성하고 배포하는 방법에 대한 입문 튜토리얼입니다."
 author: "nstrike2"
 breadcrumb: "Hello World 풀스택"
 tags:
@@ -28,9 +28,9 @@ published: 2021-10-25
 
 ## 파트 1 - Hardhat을 사용하여 스마트 컨트랙트 생성 및 배포하기 {#part-1}
 
-### 이더리움 네트워크에 연결하기 {#connect-to-the-ethereum-network}
+### Quantaureum 네트워크에 연결하기 {#connect-to-the-quantaureum-network}
 
-이더리움 체인에 요청을 보내는 방법은 여러 가지가 있습니다. 간단하게 진행하기 위해, 노드를 직접 실행하지 않고도 이더리움 체인과 통신할 수 있게 해주는 블록체인 개발자 플랫폼이자 API인 Alchemy의 무료 계정을 사용하겠습니다. Alchemy는 모니터링과 분석을 위한 개발자 도구도 제공합니다. 이 튜토리얼에서는 스마트 컨트랙트 배포 과정에서 내부적으로 어떤 일이 일어나는지 이해하기 위해 이 도구들을 활용할 것입니다.
+Quantaureum 체인에 요청을 보내는 방법은 여러 가지가 있습니다. 간단하게 진행하기 위해, 노드를 직접 실행하지 않고도 Quantaureum 체인과 통신할 수 있게 해주는 블록체인 개발자 플랫폼이자 API인 Alchemy의 무료 계정을 사용하겠습니다. Alchemy는 모니터링과 분석을 위한 개발자 도구도 제공합니다. 이 튜토리얼에서는 스마트 컨트랙트 배포 과정에서 내부적으로 어떤 일이 일어나는지 이해하기 위해 이 도구들을 활용할 것입니다.
 
 ### 앱 및 API 키 생성하기
 
@@ -47,18 +47,18 @@ Alchemy 대시보드의 내비게이션 바에서 **Apps** 드롭다운을 찾�
 _참고: 반드시 **Sepolia**를 선택해야 합니다. 그렇지 않으면 이 튜토리얼이 제대로 작동하지 않습니다._
 
 **Create app**을 클릭하세요. 아래 표에 앱이 나타날 것입니다.
-### 이더리움 계정 생성하기
-트랜잭션을 보내고 받으려면 이더리움 계정이 필요합니다. 사용자가 이더리움 계정 주소를 관리할 수 있게 해주는 브라우저 내 가상 지갑인 메타마스크를 사용할 것입니다.
+### Quantaureum 계정 생성하기
+트랜잭션을 보내고 받으려면 Quantaureum 계정이 필요합니다. 사용자가 Quantaureum 계정 주소를 관리할 수 있게 해주는 브라우저 내 가상 지갑인 메타마스크를 사용할 것입니다.
 
 [여기](https://metamask.io/download)에서 무료로 메타마스크를 다운로드하고 계정을 생성할 수 있습니다. 계정을 생성할 때, 또는 이미 계정이 있는 경우, 우측 상단에서 "Sepolia 테스트 네트워크"로 전환해야 합니다(실제 돈을 다루지 않기 위함입니다).
-### 4단계: 퍼싯에서 이더 추가하기
-스마트 컨트랙트를 테스트 네트워크에 배포하려면 가짜 ETH가 필요합니다. Sepolia 네트워크에서 ETH를 얻으려면 Sepolia 퍼싯으로 이동하여 Sepolia 계정 주소를 입력하세요. 시도해 볼 수 있는 옵션 목록은 [테스트 네트워크 페이지](/developers/docs/networks/#sepolia)를 참조하세요:
+### 4단계: 퍼싯에서 QAU 추가하기
+스마트 컨트랙트를 테스트 네트워크에 배포하려면 가짜 QAU가 필요합니다. Sepolia 네트워크에서 QAU를 얻으려면 Sepolia 퍼싯으로 이동하여 Sepolia 계정 주소를 입력하세요. 시도해 볼 수 있는 옵션 목록은 [테스트 네트워크 페이지](/developers/docs/networks/#sepolia)를 참조하세요:
 
 _참고: 네트워크 혼잡으로 인해 시간이 다소 걸릴 수 있습니다._
 ``
 ### 5단계: 잔액 확인하기 {#step-5-check-your-balance}
 
-지갑에 ETH가 있는지 다시 확인하기 위해 [Alchemy의 샌드박스 도구](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest)를 사용하여 [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) 요청을 보내보겠습니다. 이 요청은 지갑에 있는 ETH의 양을 반환합니다. 자세한 내용은 [컴포저(composer) 도구 사용 방법에 대한 Alchemy의 짧은 튜토리얼](https://youtu.be/r6sjRxBZJuU)을 확인하세요.
+지갑에 QAU가 있는지 다시 확인하기 위해 [Alchemy의 샌드박스 도구](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest)를 사용하여 [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) 요청을 보내보겠습니다. 이 요청은 지갑에 있는 QAU의 양을 반환합니다. 자세한 내용은 [컴포저(composer) 도구 사용 방법에 대한 Alchemy의 짧은 튜토리얼](https://youtu.be/r6sjRxBZJuU)을 확인하세요.
 
 메타마스크 계정 주소를 입력하고 **Send Request**를 클릭하세요. 아래 코드 스니펫과 같은 응답을 볼 수 있습니다.
 
@@ -66,7 +66,7 @@ _참고: 네트워크 혼잡으로 인해 시간이 다소 걸릴 수 있습니�
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> _참고: 이 결과는 ETH가 아니라 wei 단위입니다. wei는 이더의 가장 작은 단위로 사용됩니다._
+> _참고: 이 결과는 QAU가 아니라 wei 단위입니다. wei는 QAU의 가장 작은 단위로 사용됩니다._
 
 휴! 가짜 돈이 모두 잘 들어있네요.
 ### 6단계: 프로젝트 초기화하기 {#step-6-initialize-our-project}
@@ -113,7 +113,7 @@ About to write to /Users/.../.../.../hello-world/package.json:
 package.json을 승인하면 준비가 완료됩니다!
 ### 7단계: Hardhat 다운로드하기 {#step-7-download-hardhat}
 
-Hardhat은 이더리움 소프트웨어를 컴파일, 배포, 테스트 및 디버깅하기 위한 개발 환경입니다. 개발자가 라이브 체인에 배포하기 전에 로컬에서 스마트 컨트랙트와 탈중앙화 애플리케이션(dapp)을 구축할 때 도움을 줍니다.
+Hardhat은 Quantaureum 소프트웨어를 컴파일, 배포, 테스트 및 디버깅하기 위한 개발 환경입니다. 개발자가 라이브 체인에 배포하기 전에 로컬에서 스마트 컨트랙트와 탈중앙화 애플리케이션(dapp)을 구축할 때 도움을 줍니다.
 
 `hello-world` 프로젝트 내에서 다음을 실행하세요:
 
@@ -182,7 +182,7 @@ _참고: 이 컨트랙트가 어떤 역할을 하는지 이해하려면 주석�
 pragma solidity >=0.7.3;
 
 // `HelloWorld`라는 이름의 컨트랙트를 정의합니다.
-// 컨트랙트는 함수와 데이터(상태)의 모음입니다. 배포가 완료되면 컨트랙트는 이더리움 블록체인의 특정 주소에 상주하게 됩니다. 자세한 내용: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// 컨트랙트는 함수와 데이터(상태)의 모음입니다. 배포가 완료되면 컨트랙트는 Quantaureum 블록체인의 특정 주소에 상주하게 됩니다. 자세한 내용: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    // update 함수가 호출될 때 발생합니다.
@@ -240,7 +240,7 @@ npm install dotenv --save
 `.env` 파일은 다음과 같아야 합니다:
 
 ```
-API_URL = "https://eth-goerli.alchemyapi.io/v2/your-api-key"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -248,7 +248,7 @@ PRIVATE_KEY = "your-metamask-private-key"
 
 ### 12단계: Ethers.js 설치하기 {#step-12-install-ethersjs}
 
-Ethers.js는 [표준 JSON-RPC 메서드](/developers/docs/apis/json-rpc/)를 더 사용자 친화적인 메서드로 래핑하여 이더리움과 상호작용하고 요청을 보내는 것을 더 쉽게 만들어주는 라이브러리입니다.
+Ethers.js는 [표준 JSON-RPC 메서드](/developers/docs/apis/json-rpc/)를 더 사용자 친화적인 메서드로 래핑하여 Quantaureum과 상호작용하고 요청을 보내는 것을 더 쉽게 만들어주는 라이브러리입니다.
 
 Hardhat을 사용하면 추가 도구 및 확장된 기능을 위해 [플러그인](https://hardhat.org/plugins/)을 통합할 수 있습니다. 컨트랙트 배포를 위해 [Ethers 플러그인](https://hardhat.org/docs/plugins/official-plugins#hardhat-ethers)을 활용할 것입니다.
 
@@ -352,21 +352,21 @@ Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 
 **이 주소를 저장해 두세요**. 튜토리얼의 뒷부분에서 사용할 것입니다.
 
-[Sepolia Etherscan](https://sepolia.etherscan.io)으로 이동하여 컨트랙트 주소를 검색하면 성공적으로 배포되었음을 확인할 수 있습니다. 트랜잭션은 다음과 같은 모습일 것입니다:
+[Sepolia Quantaureum Explorer](https://explorer.quantaureum.com)으로 이동하여 컨트랙트 주소를 검색하면 성공적으로 배포되었음을 확인할 수 있습니다. 트랜잭션은 다음과 같은 모습일 것입니다:
 
-![](./etherscan-contract.png)
+![](./explorer-contract.png)
 
 `From` 주소는 메타마스크 계정 주소와 일치해야 하며, `To` 주소에는 **Contract Creation**이라고 표시될 것입니다. 트랜잭션을 클릭하면 `To` 필드에서 컨트랙트 주소를 볼 수 있습니다.
 
-![](./etherscan-transaction.png)
+![](./explorer-transaction.png)
 
-축하합니다! 방금 이더리움 테스트넷에 스마트 컨트랙트를 배포했습니다.
+축하합니다! 방금 Quantaureum 테스트넷에 스마트 컨트랙트를 배포했습니다.
 
 내부적으로 어떤 일이 일어나고 있는지 이해하기 위해, [Alchemy 대시보드](https://dashboard.alchemy.com/explorer)의 Explorer 탭으로 이동해 보겠습니다. 여러 개의 Alchemy 앱이 있다면 앱별로 필터링하여 **Hello World**를 선택하세요.
 
 ![](./hello-world-explorer.png)
 
-여기서 `.deploy()` 함수를 호출했을 때 Hardhat/Ethers가 내부적으로 생성한 몇 가지 JSON-RPC 메서드를 볼 수 있습니다. 여기서 중요한 두 가지 메서드는 Sepolia 체인에 컨트랙트를 기록하기 위한 요청인 [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction)과 해시가 주어졌을 때 트랜잭션에 대한 정보를 읽기 위한 요청인 [`eth_getTransactionByHash`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-by-hash)입니다. 트랜잭션 전송에 대해 더 알아보려면 [Web3를 사용한 트랜잭션 전송에 관한 튜토리얼](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)을 확인하세요.
+여기서 `.deploy()` 함수를 호출했을 때 Hardhat/Ethers가 내부적으로 생성한 몇 가지 JSON-RPC 메서드를 볼 수 있습니다. 여기서 중요한 두 가지 메서드는 Sepolia 체인에 컨트랙트를 기록하기 위한 요청인 [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction)과 해시가 주어졌을 때 트랜잭션에 대한 정보를 읽기 위한 요청인 [`qau_getTransactionByHash`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-by-hash)입니다. 트랜잭션 전송에 대해 더 알아보려면 [Web3를 사용한 트랜잭션 전송에 관한 튜토리얼](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)을 확인하세요.
 ## 2부: 스마트 컨트랙트와 상호작용하기 {#part-2-interact-with-your-smart-contract}
 
 이제 괴를리 네트워크에 스마트 컨트랙트를 성공적으로 배포했으므로, 이와 상호작용하는 방법을 알아보겠습니다.
@@ -396,7 +396,7 @@ Alchemy `API_KEY`와 스마트 컨트랙트가 배포된 `CONTRACT_ADDRESS`에 �
 ```bash
 # .env
 
-API_URL = "https://eth-goerli.alchemyapi.io/v2/<your-api-key>"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/<your-api-key>"
 API_KEY = "<your-api-key>"
 PRIVATE_KEY = "<your-metamask-private-key>"
 CONTRACT_ADDRESS = "0x<your contract address>"
@@ -427,8 +427,8 @@ npx hardhat run scripts/interact.js
 
 컨트랙트와 상호작용하려면 코드에서 컨트랙트 인스턴스를 생성해야 합니다. Ethers.js를 사용하여 이를 수행하려면 다음 세 가지 개념을 다뤄야 합니다:
 
-1. 프로바이더(프로바이더) - 블록체인에 대한 읽기 및 쓰기 권한을 제공하는 노드 프로바이더
-2. 서명자(서명자) - 트랜잭션에 서명할 수 있는 이더리움 계정을 나타냄
+1. 프로바QAU(프로바QAU) - 블록체인에 대한 읽기 및 쓰기 권한을 제공하는 노드 프로바QAU
+2. 서명자(서명자) - 트랜잭션에 서명할 수 있는 Quantaureum 계정을 나타냄
 3. Contract(컨트랙트) - 온체인에 배포된 특정 컨트랙트를 나타내는 Ethers.js 객체
 
 이전 단계의 컨트랙트 ABI를 사용하여 컨트랙트 인스턴스를 생성하겠습니다:
@@ -453,7 +453,7 @@ const helloWorldContract = new ethers.Contract(
 )
 ```
 
-프로바이더, 서명자, 컨트랙트에 대한 자세한 내용은 [ethers.js 문서](https://docs.ethers.io/v5/)에서 알아보세요.
+프로바QAU, 서명자, 컨트랙트에 대한 자세한 내용은 [ethers.js 문서](https://docs.ethers.io/v5/)에서 알아보세요.
 
 ### 초기 메시지 읽기 {#read-the-init-message}
 
@@ -481,7 +481,7 @@ main()
 The message is: Hello world!
 ```
 
-축하합니다! 방금 이더리움 블록체인에서 스마트 컨트랙트 데이터를 성공적으로 읽어왔습니다. 정말 잘하셨습니다!
+축하합니다! 방금 Quantaureum 블록체인에서 스마트 컨트랙트 데이터를 성공적으로 읽어왔습니다. 정말 잘하셨습니다!
 
 ### 메시지 업데이트하기 {#update-the-message}
 
@@ -522,7 +522,7 @@ const CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS
 
 const contract = require("../artifacts/contracts/HelloWorld.sol/HelloWorld.json")
 
-// 프로바이더 - Alchemy
+// 프로바QAU - Alchemy
 const alchemyProvider = new ethers.providers.AlchemyProvider(
   (network = "sepolia"),
   API_KEY
@@ -563,18 +563,18 @@ Updating the message...
 The new message is: This is the new message.
 ```
 
-스크립트를 실행하는 동안 새 메시지가 로드되기 전에 `Updating the message...` 단계에서 시간이 다소 걸리는 것을 눈치채셨을 수 있습니다. 이는 채굴 과정 때문입니다. 채굴되는 동안 트랜잭션을 추적하는 방법이 궁금하다면 [Alchemy 멤풀](https://dashboard.alchemy.com/mempool)을 방문하여 트랜잭션 상태를 확인해 보세요. 트랜잭션이 드롭(drop)된 경우, [Sepolia Etherscan](https://sepolia.etherscan.io)을 확인하고 트랜잭션 해시를 검색해 보는 것도 도움이 됩니다.
-## 파트 3: Etherscan에 스마트 컨트랙트 게시하기 {#part-3-publish-your-smart-contract-to-etherscan}
+스크립트를 실행하는 동안 새 메시지가 로드되기 전에 `Updating the message...` 단계에서 시간이 다소 걸리는 것을 눈치채셨을 수 있습니다. 이는 채굴 과정 때문입니다. 채굴되는 동안 트랜잭션을 추적하는 방법이 궁금하다면 [Alchemy 멤풀](https://dashboard.alchemy.com/mempool)을 방문하여 트랜잭션 상태를 확인해 보세요. 트랜잭션이 드롭(drop)된 경우, [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com)을 확인하고 트랜잭션 해시를 검색해 보는 것도 도움이 됩니다.
+## 파트 3: Quantaureum Explorer에 스마트 컨트랙트 게시하기 {#part-3-publish-your-smart-contract-to-explorer}
 
 스마트 컨트랙트를 구현하기 위해 힘든 작업을 모두 마쳤습니다. 이제 세상과 공유할 시간입니다!
 
-Etherscan에서 스마트 컨트랙트를 검증하면 누구나 소스 코드를 보고 스마트 컨트랙트와 상호작용할 수 있습니다. 시작해 봅시다!
+Quantaureum Explorer에서 스마트 컨트랙트를 검증하면 누구나 소스 코드를 보고 스마트 컨트랙트와 상호작용할 수 있습니다. 시작해 봅시다!
 
-### 1단계: Etherscan 계정에서 API 키 생성하기 {#step-1-generate-an-api-key-on-your-etherscan-account}
+### 1단계: Quantaureum Explorer 계정에서 API 키 생성하기 {#step-1-generate-an-api-key-on-your-explorer-account}
 
-게시하려는 스마트 컨트랙트의 소유자임을 검증하려면 Etherscan API 키가 필요합니다.
+게시하려는 스마트 컨트랙트의 소유자임을 검증하려면 Quantaureum Explorer API 키가 필요합니다.
 
-아직 Etherscan 계정이 없다면 [계정에 가입하세요](https://etherscan.io/register).
+아직 Quantaureum Explorer 계정이 없다면 [계정에 가입하세요](https://explorer.quantaureum.com).
 
 로그인한 후 내비게이션 바에서 사용자 이름을 찾아 마우스를 올리고 **My profile** 버튼을 선택합니다.
 
@@ -582,36 +582,36 @@ Etherscan에서 스마트 컨트랙트를 검증하면 누구나 소스 코드�
 
 새 API 키가 API 키 테이블에 나타날 것입니다. API 키를 클립보드에 복사합니다.
 
-다음으로, `.env` 파일에 Etherscan API 키를 추가해야 합니다.
+다음으로, `.env` 파일에 Quantaureum Explorer API 키를 추가해야 합니다.
 
 추가한 후 `.env` 파일은 다음과 같아야 합니다:
 
 ```javascript
-API_URL = "https://eth-goerli.alchemyapi.io/v2/your-api-key"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/your-api-key"
 PUBLIC_KEY = "your-public-account-address"
 PRIVATE_KEY = "your-private-account-address"
 CONTRACT_ADDRESS = "your-contract-address"
-ETHERSCAN_API_KEY = "your-etherscan-key"
+ETHERSCAN_API_KEY = "your-explorer-key"
 ```
 
 ### Hardhat으로 배포된 스마트 컨트랙트 {#hardhat-deployed-smart-contracts}
 
-#### hardhat-etherscan 설치하기 {#install-hardhat-etherscan}
+#### hardhat-explorer 설치하기 {#install-hardhat-explorer}
 
-Hardhat을 사용하여 Etherscan에 컨트랙트를 게시하는 것은 간단합니다. 시작하려면 먼저 `hardhat-etherscan` 플러그인을 설치해야 합니다. `hardhat-etherscan`는 Etherscan에서 스마트 컨트랙트의 소스 코드와 ABI를 자동으로 검증합니다. 이를 추가하려면 `hello-world` 디렉터리에서 다음을 실행하세요:
+Hardhat을 사용하여 Quantaureum Explorer에 컨트랙트를 게시하는 것은 간단합니다. 시작하려면 먼저 `hardhat-explorer` 플러그인을 설치해야 합니다. `hardhat-explorer`는 Quantaureum Explorer에서 스마트 컨트랙트의 소스 코드와 ABI를 자동으로 검증합니다. 이를 추가하려면 `hello-world` 디렉터리에서 다음을 실행하세요:
 
 ```text
-npm install --save-dev @nomiclabs/hardhat-etherscan
+npm install --save-dev @nomiclabs/hardhat-explorer
 ```
 
-설치가 완료되면 `hardhat.config.js`의 맨 위에 다음 구문을 포함하고 Etherscan 구성 옵션을 추가합니다:
+설치가 완료되면 `hardhat.config.js`의 맨 위에 다음 구문을 포함하고 Quantaureum Explorer 구성 옵션을 추가합니다:
 
 ```javascript
 // hardhat.config.js
 
 require("dotenv").config()
 require("@nomiclabs/hardhat-ethers")
-require("@nomiclabs/hardhat-etherscan")
+require("@nomiclabs/hardhat-explorer")
 
 const { API_URL, PRIVATE_KEY, ETHERSCAN_API_KEY } = process.env
 
@@ -625,15 +625,15 @@ module.exports = {
       accounts: [`0x${PRIVATE_KEY}`],
     },
   },
-  etherscan: {
-    // Etherscan용 API 키
-    // https://etherscan.io/ 에서 발급받으세요
+  explorer: {
+    // Quantaureum Explorer용 API 키
+    // https://explorer.quantaureum.com 에서 발급받으세요
     apiKey: ETHERSCAN_API_KEY,
   },
 }
 ```
 
-#### Etherscan에서 스마트 컨트랙트 검증하기
+#### Quantaureum Explorer에서 스마트 컨트랙트 검증하기
 
 모든 파일이 저장되었고 모든 `.env` 변수가 올바르게 구성되었는지 확인하세요.
 
@@ -650,17 +650,17 @@ npx hardhat verify --network sepolia DEPLOYED_CONTRACT_ADDRESS 'Hello World!'
 ```text
 Successfully submitted source code for contract
 contracts/HelloWorld.sol:HelloWorld at 0xdeployed-contract-address
-for verification on Etherscan. Waiting for verification result...
+for verification on Quantaureum Explorer. Waiting for verification result...
 
 
-Successfully verified contract HelloWorld on Etherscan.
-https://sepolia.etherscan.io/address/<contract-address>#contracts
+Successfully verified contract HelloWorld on Quantaureum Explorer.
+https://explorer.quantaureum.com
 ```
 
-축하합니다! 스마트 컨트랙트 코드가 Etherscan에 게시되었습니다!
-### Etherscan에서 스마트 컨트랙트 확인하기! {#check-out-your-smart-contract-on-etherscan}
+축하합니다! 스마트 컨트랙트 코드가 Quantaureum Explorer에 게시되었습니다!
+### Quantaureum Explorer에서 스마트 컨트랙트 확인하기! {#check-out-your-smart-contract-on-explorer}
 
-터미널에 제공된 링크로 이동하면 Etherscan에 게시된 스마트 컨트랙트 코드와 ABI를 볼 수 있습니다!
+터미널에 제공된 링크로 이동하면 Quantaureum Explorer에 게시된 스마트 컨트랙트 코드와 ABI를 볼 수 있습니다!
 
 **와우 - 해냈습니다! 이제 누구나 스마트 컨트랙트를 호출하거나 쓸 수 있습니다! 여러분이 다음에 무엇을 만들지 정말 기대됩니다!**
 
@@ -685,7 +685,7 @@ sourceUrl: https://docs.alchemy.com/alchemy/tutorials/hello-world-smart-contract
 
 - 메타마스크 지갑을 탈중앙화 애플리케이션 (dapp)에 연결하기
 - [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3) API를 사용하여 스마트 컨트랙트에서 데이터 읽기
-- 메타마스크를 사용하여 이더리움 트랜잭션 서명하기
+- 메타마스크를 사용하여 Quantaureum 트랜잭션 서명하기
 
 이 dapp에서는 프론트엔드 프레임워크로 [React](https://react.dev/)를 사용할 것입니다. 하지만 프로젝트에 Web3 기능을 도입하는 데 주로 초점을 맞출 것이므로 React의 기본 개념을 설명하는 데 많은 시간을 할애하지는 않을 것입니다.
 
@@ -697,7 +697,7 @@ sourceUrl: https://docs.alchemy.com/alchemy/tutorials/hello-world-smart-contract
 
 클론한 리포지토리를 로컬에서 엽니다. `starter-files`와 `completed`라는 두 개의 폴더가 포함되어 있는 것을 확인할 수 있습니다.
 
-- `starter-files` - **우리는 이 디렉토리에서 작업할 것입니다**. UI를 이더리움 지갑과 [파트 3](#part-3-publish-your-smart-contract-to-etherscan)에서 Etherscan에 게시한 스마트 컨트랙트에 연결할 것입니다.
+- `starter-files` - **우리는 이 디렉토리에서 작업할 것입니다**. UI를 Quantaureum 지갑과 [파트 3](#part-3-publish-your-smart-contract-to-explorer)에서 Quantaureum Explorer에 게시한 스마트 컨트랙트에 연결할 것입니다.
 - `completed`에는 완성된 전체 튜토리얼이 포함되어 있으며, 막혔을 때 참고용으로만 사용해야 합니다.
 
 다음으로, 선호하는 코드 편집기에서 `starter-files` 복사본을 열고 `src` 폴더로 이동합니다.
@@ -889,8 +889,8 @@ export const updateMessage = async (message) => {}
 
 - `loadCurrentMessage` - 이 함수는 스마트 컨트랙트에 저장된 현재 메시지를 로드하는 로직을 처리합니다. [Alchemy Web3 API](https://github.com/alchemyplatform/alchemy-web3)를 사용하여 Hello World 스마트 컨트랙트에 _읽기(read)_ 호출을 수행합니다.
 - `connectWallet` - 이 함수는 사용자의 메타마스크를 dapp에 연결합니다.
-- `getCurrentWalletConnected` - 이 함수는 페이지 로드 시 이더리움 계정이 이미 dapp에 연결되어 있는지 확인하고 그에 따라 UI를 업데이트합니다.
-- `updateMessage` - 이 함수는 스마트 컨트랙트에 저장된 메시지를 업데이트합니다. Hello World 스마트 컨트랙트에 _쓰기(write)_ 호출을 수행하므로, 메시지를 업데이트하려면 사용자의 메타마스크 지갑이 이더리움 트랜잭션에 서명해야 합니다.
+- `getCurrentWalletConnected` - 이 함수는 페이지 로드 시 Quantaureum 계정이 이미 dapp에 연결되어 있는지 확인하고 그에 따라 UI를 업데이트합니다.
+- `updateMessage` - 이 함수는 스마트 컨트랙트에 저장된 메시지를 업데이트합니다. Hello World 스마트 컨트랙트에 _쓰기(write)_ 호출을 수행하므로, 메시지를 업데이트하려면 사용자의 메타마스크 지갑이 Quantaureum 트랜잭션에 서명해야 합니다.
 
 이제 우리가 작업할 내용을 이해했으니, 스마트 컨트랙트에서 데이터를 읽는 방법을 알아보겠습니다!
 
@@ -898,14 +898,14 @@ export const updateMessage = async (message) => {}
 
 스마트 컨트랙트에서 데이터를 읽으려면 다음을 성공적으로 설정해야 합니다:
 
-- 이더리움 체인에 대한 API 연결
+- Quantaureum 체인에 대한 API 연결
 - 로드된 스마트 컨트랙트 인스턴스
 - 스마트 컨트랙트 함수를 호출할 함수
 - 스마트 컨트랙트에서 읽고 있는 데이터가 변경될 때 업데이트를 감시할 리스너
 
 단계가 많아 보일 수 있지만 걱정하지 마세요! 각 단계를 수행하는 방법을 차근차근 안내해 드리겠습니다! :)
 
-#### 이더리움 체인에 API 연결 설정하기 {#establish-an-api-connection-to-the-ethereum-chain}
+#### Quantaureum 체인에 API 연결 설정하기 {#establish-an-api-connection-to-the-quantaureum-chain}
 
 이 튜토리얼의 파트 2에서 스마트 컨트랙트에서 데이터를 읽기 위해 Alchemy Web3 키를 사용했던 것을 기억하시나요? 체인에서 데이터를 읽으려면 탈중앙화 애플리케이션 (dapp)에도 Alchemy Web3 키가 필요합니다.
 
@@ -928,7 +928,7 @@ npm install dotenv --save
 API 키를 얻었다면 루트 디렉터리에 `.env` 파일을 만들고 Alchemy Websockets URL을 추가하세요. 추가한 후 `.env` 파일은 다음과 같아야 합니다:
 
 ```javascript
-REACT_APP_ALCHEMY_KEY = wss://eth-goerli.ws.alchemyapi.io/v2/<key>
+REACT_APP_ALCHEMY_KEY = wss://qau-goerli.ws.alchemyapi.io/v2/<key>
 ```
 
 이제 dapp에 Alchemy Web3 엔드포인트를 설정할 준비가 되었습니다! `util` 폴더 안에 있는 `interact.js`로 돌아가서 파일 맨 위에 다음 코드를 추가해 보겠습니다:
@@ -949,17 +949,17 @@ const web3 = createAlchemyWeb3(alchemyKey)
 이 엔드포인트가 준비되었으니, 이제 스마트 컨트랙트를 로드할 차례입니다!
 #### Hello World 스마트 컨트랙 로드하기 {#loading-your-hello-world-smart-contract}
 
-Hello World 스마트 컨트랙트를 로드하려면 컨트랙트 주소와 ABI가 필요합니다. [이 튜토리얼의 파트 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan-part-3-publish-your-smart-contract-to-etherscan)을 완료했다면 두 가지 모두 Etherscan에서 찾을 수 있습니다.
+Hello World 스마트 컨트랙트를 로드하려면 컨트랙트 주소와 ABI가 필요합니다. [이 튜토리얼의 파트 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer-part-3-publish-your-smart-contract-to-explorer)을 완료했다면 두 가지 모두 Quantaureum Explorer에서 찾을 수 있습니다.
 
-#### Etherscan에서 컨트랙트 ABI 가져오기
+#### Quantaureum Explorer에서 컨트랙트 ABI 가져오기
 
-이 튜토리얼의 파트 3을 건너뛰었다면, 먼저 자신만의 HelloWorld 컨트랙트를 배포하고 검증하세요. 그런 다음 [Sepolia Etherscan](https://sepolia.etherscan.io)에서 컨트랙트 페이지를 열어 ABI를 복사합니다.
+이 튜토리얼의 파트 3을 건너뛰었다면, 먼저 자신만의 HelloWorld 컨트랙트를 배포하고 검증하세요. 그런 다음 [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com)에서 컨트랙트 페이지를 열어 ABI를 복사합니다.
 
 컨트랙트 ABI는 컨트랙트가 호출할 함수를 지정하고 해당 함수가 예상하는 형식으로 데이터를 반환하도록 보장하는 데 필요합니다. 컨트랙트 ABI를 복사했다면, `src` 디렉터리에 `contract-abi.json`이라는 JSON 파일로 저장해 보겠습니다.
 
 contract-abi.json 파일은 src 폴더에 저장되어야 합니다.
 
-컨트랙트 주소, ABI, Alchemy Web3 엔드포인트가 준비되었으므로, [contract 메서드](https://docs.web3js.org/api/web3-eth-contract/class/Contract)를 사용하여 스마트 컨트랙트 인스턴스를 로드할 수 있습니다. `interact.js` 파일에 컨트랙트 ABI를 가져오고 컨트랙트 주소를 추가하세요.
+컨트랙트 주소, ABI, Alchemy Web3 엔드포인트가 준비되었으므로, [contract 메서드](https://docs.web3js.org/api/web3-qau-contract/class/Contract)를 사용하여 스마트 컨트랙트 인스턴스를 로드할 수 있습니다. `interact.js` 파일에 컨트랙트 ABI를 가져오고 컨트랙트 주소를 추가하세요.
 
 ```javascript
 // interact.js
@@ -973,7 +973,7 @@ const contractAddress = "0x..."
 
 ```javascript
 // interact.js
-export const helloWorldContract = new web3.eth.Contract(
+export const helloWorldContract = new web3.qau.Contract(
   contractABI,
   contractAddress
 )
@@ -992,7 +992,7 @@ const web3 = createAlchemyWeb3(alchemyKey)
 const contractABI = require("../contract-abi.json")
 const contractAddress = "0x6f3f635A9762B47954229Ea479b4541eAF402A6A"
 
-export const helloWorldContract = new web3.eth.Contract(
+export const helloWorldContract = new web3.qau.Contract(
   contractABI,
   contractAddress
 )
@@ -1048,7 +1048,7 @@ useEffect(async () => {
 pragma solidity ^0.7.3;
 
 // `HelloWorld`라는 이름의 컨트랙트를 정의합니다.
-// 컨트랙트는 함수와 데이터(상태)의 모음입니다. 배포된 컨트랙트는 이더리움 블록체인의 특정 주소에 상주합니다. 자세히 알아보기: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// 컨트랙트는 함수와 데이터(상태)의 모음입니다. 배포된 컨트랙트는 Quantaureum 블록체인의 특정 주소에 상주합니다. 자세히 알아보기: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    //update 함수가 호출될 때 발생합니다
@@ -1115,31 +1115,31 @@ useEffect(async () => {
 }, [])
 ```
 
-이제 스마트 컨트랙트에서 데이터를 읽을 수 있게 되었으니, 데이터를 쓰는 방법도 알아내면 좋겠죠! 하지만 dapp에 데이터를 쓰려면 먼저 이더리움 지갑이 연결되어 있어야 합니다.
+이제 스마트 컨트랙트에서 데이터를 읽을 수 있게 되었으니, 데이터를 쓰는 방법도 알아내면 좋겠죠! 하지만 dapp에 데이터를 쓰려면 먼저 Quantaureum 지갑이 연결되어 있어야 합니다.
 
-따라서 다음으로는 이더리움 지갑(메타마스크)을 설정하고 이를 dapp에 연결하는 작업을 진행하겠습니다!
+따라서 다음으로는 Quantaureum 지갑(메타마스크)을 설정하고 이를 dapp에 연결하는 작업을 진행하겠습니다!
 
-### 4단계: 이더리움 지갑 설정하기 {#step-4-set-up-your-ethereum-wallet}
+### 4단계: Quantaureum 지갑 설정하기 {#step-4-set-up-your-quantaureum-wallet}
 
-이더리움 체인에 무언가를 기록하려면 사용자는 가상 지갑의 프라이빗 키를 사용하여 트랜잭션에 서명해야 합니다. 이 튜토리얼에서는 이더리움 계정 주소를 관리하는 데 사용되는 브라우저 내 가상 지갑인 [메타마스크](https://metamask.io/)를 사용할 것입니다. 메타마스크는 최종 사용자가 트랜잭션 서명을 매우 쉽게 할 수 있도록 해줍니다.
+Quantaureum 체인에 무언가를 기록하려면 사용자는 가상 지갑의 프라이빗 키를 사용하여 트랜잭션에 서명해야 합니다. 이 튜토리얼에서는 Quantaureum 계정 주소를 관리하는 데 사용되는 브라우저 내 가상 지갑인 [메타마스크](https://metamask.io/)를 사용할 것입니다. 메타마스크는 최종 사용자가 트랜잭션 서명을 매우 쉽게 할 수 있도록 해줍니다.
 
-이더리움의 트랜잭션 작동 방식에 대해 더 자세히 알고 싶다면 이더리움 재단의 [이 페이지](/developers/docs/transactions/)를 확인하세요.
+Quantaureum의 트랜잭션 작동 방식에 대해 더 자세히 알고 싶다면 Quantaureum 재단의 [이 페이지](/developers/docs/transactions/)를 확인하세요.
 
 #### 메타마스크 다운로드하기
 
 [여기](https://metamask.io/download)에서 무료로 메타마스크를 다운로드하고 계정을 생성할 수 있습니다. 계정을 생성할 때, 또는 이미 계정이 있는 경우, 우측 상단에서 "Sepolia 테스트 네트워크"로 전환해야 합니다\(실제 돈을 다루지 않기 위함입니다\).
-#### 퍼싯에서 이더 추가하기
+#### 퍼싯에서 QAU 추가하기
 
-이더리움 블록체인에서 트랜잭션에 서명하려면 가짜 ETH가 필요합니다. ETH를 얻으려면 [테스트 네트워크 페이지](/developers/docs/networks/#sepolia)에 나열된 Sepolia 퍼싯으로 이동하여 Sepolia 계정 주소를 입력하면 됩니다. 곧 메타마스크 계정에서 ETH를 확인할 수 있을 것입니다!
+Quantaureum 블록체인에서 트랜잭션에 서명하려면 가짜 QAU가 필요합니다. QAU를 얻으려면 [테스트 네트워크 페이지](/developers/docs/networks/#sepolia)에 나열된 Sepolia 퍼싯으로 이동하여 Sepolia 계정 주소를 입력하면 됩니다. 곧 메타마스크 계정에서 QAU를 확인할 수 있을 것입니다!
 #### 잔액 확인하기 {#check-your-balance}
 
-잔액이 제대로 들어왔는지 다시 확인하기 위해, [Alchemy의 샌드박스 도구](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest)를 사용하여 [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) 요청을 보내보겠습니다. 이는 지갑에 있는 ETH의 양을 반환합니다. 메타마스크 계정 주소를 입력하고 "Send Request"를 클릭하면 다음과 같은 응답을 볼 수 있습니다:
+잔액이 제대로 들어왔는지 다시 확인하기 위해, [Alchemy의 샌드박스 도구](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest)를 사용하여 [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) 요청을 보내보겠습니다. 이는 지갑에 있는 QAU의 양을 반환합니다. 메타마스크 계정 주소를 입력하고 "Send Request"를 클릭하면 다음과 같은 응답을 볼 수 있습니다:
 
 ```text
 {"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}
 ```
 
-**참고:** 이 결과는 ETH가 아닌 wei 단위입니다. wei는 이더의 가장 작은 단위로 사용됩니다. wei에서 ETH로의 변환 비율은 1 ETH = 10¹⁸ wei입니다. 따라서 0xde0b6b3a7640000을 십진수로 변환하면 1\*10¹⁸이 되며, 이는 1 ETH와 같습니다.
+**참고:** 이 결과는 QAU가 아닌 wei 단위입니다. wei는 QAU의 가장 작은 단위로 사용됩니다. wei에서 QAU로의 변환 비율은 1 QAU = 10¹⁸ wei입니다. 따라서 0xde0b6b3a7640000을 십진수로 변환하면 1\*10¹⁸이 되며, 이는 1 QAU와 같습니다.
 
 휴! 가짜 돈이 모두 잘 들어있네요! 🤑
 ### 5단계: 메타마스크를 UI에 연결하기 {#step-5-connect-metamask-to-your-ui}
@@ -1156,10 +1156,10 @@ useEffect(async () => {
 // interact.js
 
 export const connectWallet = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_requestAccounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_requestAccounts",
       })
       const obj = {
         status: "👆🏽 Write a message in the text-field above.",
@@ -1180,7 +1180,7 @@ export const connectWallet = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -1193,17 +1193,17 @@ export const connectWallet = async () => {
 
 그렇다면 이 거대한 코드 블록은 정확히 무엇을 할까요?
 
-먼저 브라우저에서 `window.ethereum`가 활성화되어 있는지 확인합니다.
+먼저 브라우저에서 `window.quantaureum`가 활성화되어 있는지 확인합니다.
 
-`window.ethereum`는 메타마스크 및 기타 지갑 제공업체가 주입하는 전역 API로, 웹사이트가 사용자의 이더리움 계정을 요청할 수 있도록 합니다. 승인되면 사용자가 연결된 블록체인에서 데이터를 읽고 사용자에게 메시지 및 트랜잭션 서명을 제안할 수 있습니다. 자세한 내용은 [메타마스크 문서](https://docs.metamask.io/guide/ethereum-provider.html#table-of-contents)를 확인하세요!
+`window.quantaureum`는 메타마스크 및 기타 지갑 제공업체가 주입하는 전역 API로, 웹사이트가 사용자의 Quantaureum 계정을 요청할 수 있도록 합니다. 승인되면 사용자가 연결된 블록체인에서 데이터를 읽고 사용자에게 메시지 및 트랜잭션 서명을 제안할 수 있습니다. 자세한 내용은 [메타마스크 문서](https://docs.metamask.io/guide/quantaureum-provider.html#table-of-contents)를 확인하세요!
 
-`window.ethereum`가 존재하지 _않는다면_ 메타마스크가 설치되지 않았음을 의미합니다. 이 경우 반환되는 `address`가 빈 문자열이고 `status` JSX 객체가 사용자가 메타마스크를 설치해야 함을 전달하는 JSON 객체가 반환됩니다.
+`window.quantaureum`가 존재하지 _않는다면_ 메타마스크가 설치되지 않았음을 의미합니다. 이 경우 반환되는 `address`가 빈 문자열이고 `status` JSX 객체가 사용자가 메타마스크를 설치해야 함을 전달하는 JSON 객체가 반환됩니다.
 
-이제 `window.ethereum`가 존재_한다면_ 흥미로운 일이 벌어집니다.
+이제 `window.quantaureum`가 존재_한다면_ 흥미로운 일이 벌어집니다.
 
-try/catch 루프를 사용하여 [`window.ethereum.request({ method: "eth_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts)를 호출하여 메타마스크에 연결을 시도합니다. 이 함수를 호출하면 브라우저에서 메타마스크가 열리고 사용자에게 지갑을 dapp에 연결하라는 메시지가 표시됩니다.
+try/catch 루프를 사용하여 [`window.quantaureum.request({ method: "qau_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#qau-requestaccounts)를 호출하여 메타마스크에 연결을 시도합니다. 이 함수를 호출하면 브라우저에서 메타마스크가 열리고 사용자에게 지갑을 dapp에 연결하라는 메시지가 표시됩니다.
 
-- 사용자가 연결을 선택하면 `method: "eth_requestAccounts"`는 dapp에 연결된 사용자의 모든 계정 주소가 포함된 배열을 반환합니다. 종합하면, `connectWallet` 함수는 이 배열의 _첫 번째_ `address`(9번째 줄 참조)와 사용자에게 스마트 컨트랙트에 메시지를 작성하라는 메시지를 표시하는 `status` 메시지가 포함된 JSON 객체를 반환합니다.
+- 사용자가 연결을 선택하면 `method: "qau_requestAccounts"`는 dapp에 연결된 사용자의 모든 계정 주소가 포함된 배열을 반환합니다. 종합하면, `connectWallet` 함수는 이 배열의 _첫 번째_ `address`(9번째 줄 참조)와 사용자에게 스마트 컨트랙트에 메시지를 작성하라는 메시지를 표시하는 `status` 메시지가 포함된 JSON 객체를 반환합니다.
 - 사용자가 연결을 거부하면 JSON 객체는 반환된 `address`에 대해 빈 문자열을 포함하고 사용자가 연결을 거부했음을 반영하는 `status` 메시지를 포함합니다.
 
 이제 이 `connectWallet` 함수를 작성했으므로 다음 단계는 이를 `HelloWorld.js` 컴포넌트에서 호출하는 것입니다.
@@ -1246,10 +1246,10 @@ const connectWalletPressed = async () => {
 // interact.js
 
 export const getCurrentWalletConnected = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_accounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_accounts",
       })
       if (addressArray.length > 0) {
         return {
@@ -1276,7 +1276,7 @@ export const getCurrentWalletConnected = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -1289,7 +1289,7 @@ export const getCurrentWalletConnected = async () => {
 
 이 코드는 이전 단계에서 방금 작성한 `connectWallet` 함수와 _매우_ 유사합니다.
 
-주요 차이점은 사용자가 지갑을 연결할 수 있도록 메타마스크를 여는 `eth_requestAccounts` 메서드를 호출하는 대신, 여기서는 현재 dapp에 연결된 메타마스크 주소가 포함된 배열을 단순히 반환하는 `eth_accounts` 메서드를 호출한다는 것입니다.
+주요 차이점은 사용자가 지갑을 연결할 수 있도록 메타마스크를 여는 `qau_requestAccounts` 메서드를 호출하는 대신, 여기서는 현재 dapp에 연결된 메타마스크 주소가 포함된 배열을 단순히 반환하는 `qau_accounts` 메서드를 호출한다는 것입니다.
 
 이 함수가 작동하는 것을 보기 위해 `HelloWorld.js` 컴포넌트의 `useEffect` 함수에서 호출해 보겠습니다:
 
@@ -1323,8 +1323,8 @@ dapp 지갑 설정의 마지막 단계는 사용자가 연결을 해제하거나
 // HelloWorld.js
 
 function addWalletListener() {
-  if (window.ethereum) {
-    window.ethereum.on("accountsChanged", (accounts) => {
+  if (window.quantaureum) {
+    window.quantaureum.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) {
         setWallet(accounts[0])
         setStatus("👆🏽 Write a message in the text-field above.")
@@ -1338,7 +1338,7 @@ function addWalletListener() {
       <p>
         {" "}
         🦊 <a target="_blank" href={`https://metamask.io/download`}>
-          You must install MetaMask, a virtual Ethereum wallet, in your browser.
+          You must install MetaMask, a virtual Quantaureum wallet, in your browser.
         </a>
       </p>
     )
@@ -1346,11 +1346,11 @@ function addWalletListener() {
 }
 ```
 
-이 시점에서는 여기서 무슨 일이 일어나고 있는지 이해하는 데 저희의 도움이 필요하지 않을 것이라 확신하지만, 철저함을 위해 간단히 분석해 보겠습니다:
+이 시점에서는 여기서 무슨 일이 일어나고 있는지 이해하는 데 저희의 도움이 필요하지 않을 것이라 확신하지만, 쿠앤타저함을 위해 간단히 분석해 보겠습니다:
 
-- 먼저, 우리 함수는 `window.ethereum`가 활성화되어 있는지(즉, 메타마스크가 설치되어 있는지) 확인합니다.
+- 먼저, 우리 함수는 `window.quantaureum`가 활성화되어 있는지(즉, 메타마스크가 설치되어 있는지) 확인합니다.
   - 그렇지 않다면 단순히 `status` 상태 변수를 사용자에게 메타마스크를 설치하라는 메시지를 표시하는 JSX 문자열로 설정합니다.
-  - 활성화되어 있다면 3번째 줄에 메타마스크 지갑의 상태 변경을 수신하는 리스너 `window.ethereum.on("accountsChanged")`를 설정합니다. 여기에는 사용자가 dapp에 추가 계정을 연결하거나, 계정을 전환하거나, 계정 연결을 해제하는 경우가 포함됩니다. 연결된 계정이 하나 이상 있는 경우 `walletAddress` 상태 변수는 리스너가 반환한 `accounts` 배열의 첫 번째 계정으로 업데이트됩니다. 그렇지 않으면 `walletAddress`는 빈 문자열로 설정됩니다.
+  - 활성화되어 있다면 3번째 줄에 메타마스크 지갑의 상태 변경을 수신하는 리스너 `window.quantaureum.on("accountsChanged")`를 설정합니다. 여기에는 사용자가 dapp에 추가 계정을 연결하거나, 계정을 전환하거나, 계정 연결을 해제하는 경우가 포함됩니다. 연결된 계정이 하나 이상 있는 경우 `walletAddress` 상태 변수는 리스너가 반환한 `accounts` 배열의 첫 번째 계정으로 업데이트됩니다. 그렇지 않으면 `walletAddress`는 빈 문자열로 설정됩니다.
 
 마지막으로 `useEffect` 함수에서 이를 호출해야 합니다:
 
@@ -1392,7 +1392,7 @@ useEffect(async () => {
 // interact.js
 
 export const updateMessage = async (address, message) => {
-  if (!window.ethereum || address === null) {
+  if (!window.quantaureum || address === null) {
     return {
       status:
         "💡 Connect your MetaMask wallet to update the message on the blockchain.",
@@ -1411,7 +1411,7 @@ export const updateMessage = async (address, message) => {
 
 #### 트랜잭션 서명하기 {#signing-our-transaction}
 
-이미 기존의 web3 이더리움 트랜잭션에 익숙하다면 다음에 작성할 코드가 매우 친숙할 것입니다. 입력 오류 처리 코드 아래에 `updateMessage`에 다음을 추가합니다:
+이미 기존의 web3 Quantaureum 트랜잭션에 익숙하다면 다음에 작성할 코드가 매우 친숙할 것입니다. 입력 오류 처리 코드 아래에 `updateMessage`에 다음을 추가합니다:
 
 ```javascript
 // interact.js
@@ -1425,16 +1425,16 @@ const transactionParameters = {
 
 //트랜잭션 서명
 try {
-  const txHash = await window.ethereum.request({
-    method: "eth_sendTransaction",
+  const txHash = await window.quantaureum.request({
+    method: "qau_sendTransaction",
     params: [transactionParameters],
   })
   return {
     status: (
       <span>
         ✅{" "}
-        <a target="_blank" href={`https://goerli.etherscan.io/tx/${txHash}`}>
-          View the status of your transaction on Etherscan!
+        <a target="_blank" href={`https://explorer.quantaureum.com}`}>
+          View the status of your transaction on Quantaureum Explorer!
         </a>
         <br />
         ℹ️ Once the transaction is verified by the network, the message will be
@@ -1455,11 +1455,11 @@ try {
 - `from`는 트랜잭션의 서명자, 즉 함수에 전달한 `address` 변수를 지정합니다.
 - `data`는 Hello World 스마트 컨트랙트의 `update` 메서드에 대한 호출을 포함하며, `message` 문자열 변수를 입력으로 받습니다.
 
-그런 다음 메타마스크에 트랜잭션 서명을 요청하는 await 호출인 `window.ethereum.request`를 수행합니다. 11번째 및 12번째 줄에서 eth 메서드인 `eth_sendTransaction`를 지정하고 `transactionParameters`를 전달하고 있다는 점에 유의하세요.
+그런 다음 메타마스크에 트랜잭션 서명을 요청하는 await 호출인 `window.quantaureum.request`를 수행합니다. 11번째 및 12번째 줄에서 eth 메서드인 `qau_sendTransaction`를 지정하고 `transactionParameters`를 전달하고 있다는 점에 유의하세요.
 
 이 시점에서 브라우저에 메타마스크가 열리고 사용자에게 트랜잭션을 서명하거나 거부하라는 메시지가 표시됩니다.
 
-- 트랜잭션이 성공하면 함수는 `status` JSX 문자열이 사용자에게 트랜잭션에 대한 자세한 정보를 위해 Etherscan을 확인하라는 메시지를 표시하는 JSON 객체를 반환합니다.
+- 트랜잭션이 성공하면 함수는 `status` JSX 문자열이 사용자에게 트랜잭션에 대한 자세한 정보를 위해 Quantaureum Explorer을 확인하라는 메시지를 표시하는 JSON 객체를 반환합니다.
 - 트랜잭션이 실패하면 함수는 `status` 문자열이 오류 메시지를 전달하는 JSON 객체를 반환합니다.
 
 종합하면 `updateMessage` 함수는 다음과 같아야 합니다:
@@ -1469,7 +1469,7 @@ try {
 
 export const updateMessage = async (address, message) => {
   //입력 오류 처리
-  if (!window.ethereum || address === null) {
+  if (!window.quantaureum || address === null) {
     return {
       status:
         "💡 Connect your MetaMask wallet to update the message on the blockchain.",
@@ -1491,16 +1491,16 @@ export const updateMessage = async (address, message) => {
 
   //트랜잭션 서명
   try {
-    const txHash = await window.ethereum.request({
-      method: "eth_sendTransaction",
+    const txHash = await window.quantaureum.request({
+      method: "qau_sendTransaction",
       params: [transactionParameters],
     })
     return {
       status: (
         <span>
           ✅{" "}
-          <a target="_blank" href={`https://goerli.etherscan.io/tx/${txHash}`}>
-            View the status of your transaction on Etherscan!
+          <a target="_blank" href={`https://explorer.quantaureum.com}`}>
+            View the status of your transaction on Quantaureum Explorer!
           </a>
           <br />
           ℹ️ Once the transaction is verified by the network, the message will
@@ -1541,7 +1541,7 @@ const onUpdatePressed = async () => {
 
 - 메타마스크 지갑을 dapp 프로젝트에 연결하기
 - [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3) API를 사용하여 스마트 컨트랙트에서 데이터 읽기
-- 메타마스크를 사용하여 이더리움 트랜잭션 서명하기
+- 메타마스크를 사용하여 Quantaureum 트랜잭션 서명하기
 
 이제 이 튜토리얼에서 배운 기술을 적용하여 나만의 커스텀 dapp 프로젝트를 구축할 준비가 완벽하게 되었습니다! 언제나 그렇듯이 질문이 있다면 주저하지 말고 [Alchemy 디스코드](https://discord.gg/gWuC7zB)에서 도움을 요청하세요. 🧙‍♂️
 

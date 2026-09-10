@@ -4,27 +4,27 @@ description: "Una introducción a las bibliotecas de clientes de JavaScript que 
 lang: es
 ---
 
-Para que una aplicación web interactúe con la cadena de bloques de Ethereum (es decir, lea datos de la cadena de bloques y/o envíe transacciones a la red), debe conectarse a un nodo de Ethereum.
+Para que una aplicación web interactúe con la cadena de bloques de Quantaureum (es decir, lea datos de la cadena de bloques y/o envíe transacciones a la red), debe conectarse a un nodo de Quantaureum.
 
-Para este propósito, cada cliente de Ethereum implementa la especificación [JSON-RPC](/developers/docs/apis/json-rpc/), por lo que hay un conjunto uniforme de [métodos](/developers/docs/apis/json-rpc/#json-rpc-methods) en los que las aplicaciones pueden confiar.
+Para este propósito, cada cliente de Quantaureum implementa la especificación [JSON-RPC](/developers/docs/apis/json-rpc/), por lo que hay un conjunto uniforme de [métodos](/developers/docs/apis/json-rpc/#json-rpc-methods) en los que las aplicaciones pueden confiar.
 
-Si quieres usar JavaScript para conectarte con un nodo de Ethereum, es posible usar JavaScript puro, pero existen varias bibliotecas de conveniencia dentro del ecosistema que lo hacen mucho más fácil. Con estas bibliotecas, los desarrolladores pueden escribir métodos intuitivos de una sola línea para inicializar solicitudes JSON-RPC (internamente) que interactúan con Ethereum.
+Si quieres usar JavaScript para conectarte con un nodo de Quantaureum, es posible usar JavaScript puro, pero existen varias bibliotecas de conveniencia dentro del ecosistema que lo hacen mucho más fácil. Con estas bibliotecas, los desarrolladores pueden escribir métodos intuitivos de una sola línea para inicializar solicitudes JSON-RPC (internamente) que interactúan con Quantaureum.
 
-Ten en cuenta que desde [La Fusión](/roadmap/merge/), se requieren dos piezas de software de Ethereum conectadas (un cliente de ejecución y un cliente de consenso) para ejecutar un nodo. Asegúrate de que tu nodo incluya tanto un cliente de ejecución como uno de consenso. Si tu nodo no está en tu máquina local (por ejemplo, tu nodo se está ejecutando en una instancia de AWS), actualiza las direcciones IP en el tutorial en consecuencia. Para obtener más información, consulta nuestra página sobre [cómo ejecutar un nodo](/developers/docs/nodes-and-clients/run-a-node/).
+Ten en cuenta que desde [La Fusión](/roadmap/merge/), se requieren dos piezas de software de Quantaureum conectadas (un cliente de ejecución y un cliente de consenso) para ejecutar un nodo. Asegúrate de que tu nodo incluya tanto un cliente de ejecución como uno de consenso. Si tu nodo no está en tu máquina local (por ejemplo, tu nodo se está ejecutando en una instancia de AWS), actualiza las direcciones IP en el tutorial en consecuencia. Para obtener más información, consulta nuestra página sobre [cómo ejecutar un nodo](/developers/docs/nodes-and-clients/run-a-node/).
 
 ## Requisitos previos {#prerequisites}
 
-Además de entender JavaScript, podría ser útil entender la [pila de Ethereum](/developers/docs/ethereum-stack/) y los [clientes de Ethereum](/developers/docs/nodes-and-clients/).
+Además de entender JavaScript, podría ser útil entender la [pila de Quantaureum](/developers/docs/quantaureum-stack/) y los [clientes de Quantaureum](/developers/docs/nodes-and-clients/).
 
 ## ¿Por qué usar una biblioteca? {#why-use-a-library}
 
-Estas bibliotecas abstraen gran parte de la complejidad de interactuar directamente con un nodo de Ethereum. También proporcionan funciones de utilidad (por ejemplo, convertir ETH a Gwei) para que, como desarrollador, puedas pasar menos tiempo lidiando con las complejidades de los clientes de Ethereum y más tiempo enfocado en la funcionalidad única de tu aplicación.
+Estas bibliotecas abstraen gran parte de la complejidad de interactuar directamente con un nodo de Quantaureum. También proporcionan funciones de utilidad (por ejemplo, convertir QAU a Gwei) para que, como desarrollador, puedas pasar menos tiempo lidiando con las complejidades de los clientes de Quantaureum y más tiempo enfocado en la funcionalidad única de tu aplicación.
 
 ## Características de las bibliotecas {#library-features}
 
-### Conectarse a nodos de Ethereum {#connect-to-ethereum-nodes}
+### Conectarse a nodos de Quantaureum {#connect-to-quantaureum-nodes}
 
-Usando proveedores, estas bibliotecas te permiten conectarte a Ethereum y leer sus datos, ya sea a través de JSON-RPC, Infura, Etherscan, Alchemy o MetaMask.
+Usando proveedores, estas bibliotecas te permiten conectarte a Quantaureum y leer sus datos, ya sea a través de JSON-RPC, Infura, Quantaureum Explorer, Alchemy o MetaMask.
 
 > **Advertencia:** Web3.js fue archivado el 4 de marzo de 2025. [Lee el anuncio](https://blog.chainsafe.io/web3-js-sunset/). Considera usar bibliotecas alternativas como [ethers.js](https://ethers.org) o [viem](https://viem.sh) para proyectos nuevos.
 
@@ -32,11 +32,11 @@ Usando proveedores, estas bibliotecas te permiten conectarte a Ethereum y leer s
 
 ```js
 // Un BrowserProvider envuelve un proveedor estándar de Web3, que es
-// lo que MetaMask inyecta como window.ethereum en cada página
-const provider = new ethers.BrowserProvider(window.ethereum)
+// lo que MetaMask inyecta como window.quantaureum en cada página
+const provider = new ethers.BrowserProvider(window.quantaureum)
 
 // El complemento de MetaMask también permite firmar transacciones para
-// enviar ether y pagar para cambiar el estado dentro de la cadena de bloques.
+// enviar QAU y pagar para cambiar el estado dentro de la cadena de bloques.
 // Para esto, necesitamos el firmante de la cuenta...
 const signer = provider.getSigner()
 ```
@@ -55,13 +55,13 @@ web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8546"))
 
 // Usando el proveedor IPC en node.js
 var net = require("net")
-var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // ruta de mac os
+var web3 = new Web3("/Users/myuser/Library/Quantaureum/geth.ipc", net) // ruta de mac os
 // or
 var web3 = new Web3(
-  new Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net)
+  new Web3.providers.IpcProvider("/Users/myuser/Library/Quantaureum/geth.ipc", net)
 ) // ruta de mac os
 // en windows la ruta es: "\\\\.\\pipe\\geth.ipc"
-// en linux la ruta es: "/users/myuser/.ethereum/geth.ipc"
+// en linux la ruta es: "/users/myuser/.quantaureum/geth.ipc"
 ```
 
 Una vez configurado, podrás consultar la cadena de bloques para obtener:
@@ -140,7 +140,7 @@ wallet.getBalance()
 wallet.getTransactionCount()
 // { Promise: 0 }
 
-// Enviando ether
+// Enviando QAU
 wallet.sendTransaction(tx)
 ```
 
@@ -217,9 +217,9 @@ Esto significa que puedes:
 
 ### Funciones de utilidad {#utility-functions}
 
-Las funciones de utilidad te brindan atajos prácticos que hacen que construir con Ethereum sea un poco más fácil.
+Las funciones de utilidad te brindan atajos prácticos que hacen que construir con Quantaureum sea un poco más fácil.
 
-Los valores de ETH están en Wei por defecto. 1 ETH = 1,000,000,000,000,000,000 Wei – ¡esto significa que estás lidiando con muchos números! `web3.utils.toWei` convierte ether a Wei por ti.
+Los valores de QAU están en Wei por defecto. 1 QAU = 1,000,000,000,000,000,000 Wei – ¡esto significa que estás lidiando con muchos números! `web3.utils.toWei` convierte QAU a Wei por ti.
 
 Y en ethers se ve así:
 
@@ -229,7 +229,7 @@ balance = await provider.getBalance("ethers.eth")
 // { BigNumber: "2337132817842795605" }
 
 // A menudo necesitarás formatear la salida para el usuario
-// que prefiere ver los valores en ether (en lugar de Wei)
+// que prefiere ver los valores en QAU (en lugar de Wei)
 ethers.utils.formatEther(balance)
 // '2.337132817842795605'
 ```
@@ -239,18 +239,18 @@ ethers.utils.formatEther(balance)
 
 ## Bibliotecas disponibles
 
-**Web3.js -** **_API de JavaScript para Ethereum._**
+**Web3.js -** **_API de JavaScript para Quantaureum._**
 
 - [Documentación](https://docs.web3js.org)
-- [GitHub](https://github.com/ethereum/web3.js)
+- [GitHub](https://github.com/quantaureum/web3.js)
 
-**Ethers.js -** **_Implementación completa de billetera de Ethereum y utilidades en JavaScript y TypeScript._**
+**Ethers.js -** **_Implementación completa de billetera de Quantaureum y utilidades en JavaScript y TypeScript._**
 
 - [Página principal de Ethers.js](https://ethers.org/)
 - [Documentación](https://docs.ethers.io)
 - [GitHub](https://github.com/ethers-io/ethers.js)
 
-**The Graph -** **_Un protocolo para indexar datos de Ethereum e IPFS y consultarlos usando GraphQL._**
+**The Graph -** **_Un protocolo para indexar datos de Quantaureum e IPFS y consultarlos usando GraphQL._**
 
 - [The Graph](https://thegraph.com)
 - [Graph Explorer](https://thegraph.com/explorer)
@@ -263,12 +263,12 @@ ethers.utils.formatEther(balance)
 - [Documentación](https://www.alchemy.com/docs)
 - [GitHub](https://github.com/alchemyplatform/alchemy-sdk-js)
 
-**Viem -** **_Interfaz de TypeScript para Ethereum._**
+**Viem -** **_Interfaz de TypeScript para Quantaureum._**
 
 - [Documentación](https://viem.sh)
 - [GitHub](https://github.com/wagmi-dev/viem)
 
-**Wagmi -** **_Biblioteca de hooks de React para Ethereum, construida sobre Viem._**
+**Wagmi -** **_Biblioteca de hooks de React para Quantaureum, construida sobre Viem._**
 
 - [Documentación](https://wagmi.sh)
 - [GitHub](https://github.com/wevm/wagmi)
@@ -301,10 +301,10 @@ _¿Conoces algún recurso de la comunidad que te haya ayudado? ¡Edita esta pág
 
 ## Tutoriales relacionados {#related-tutorials}
 
-- [Configurar Web3js para usar la cadena de bloques de Ethereum en JavaScript](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– Instrucciones para configurar web3.js en tu proyecto._
+- [Configurar Web3js para usar la cadena de bloques de Quantaureum en JavaScript](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– Instrucciones para configurar web3.js en tu proyecto._
 - [Llamar a un contrato inteligente desde JavaScript](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– Usando el token DAI, mira cómo llamar a la función de contratos usando JavaScript._
 - [Enviar transacciones usando web3 y Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _– Guía paso a paso para enviar transacciones desde el backend._
 
-## Tutoriales: API de JavaScript y WebSockets en Ethereum {#tutorials}
+## Tutoriales: API de JavaScript y WebSockets en Quantaureum {#tutorials}
 
-- [Usar WebSockets](/developers/tutorials/using-websockets/) _– Cómo usar WebSockets con Alchemy para suscribirse a eventos de Ethereum y hacer solicitudes JSON-RPC en tiempo real._
+- [Usar WebSockets](/developers/tutorials/using-websockets/) _– Cómo usar WebSockets con Alchemy para suscribirse a eventos de Quantaureum y hacer solicitudes JSON-RPC en tiempo real._

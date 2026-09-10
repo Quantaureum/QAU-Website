@@ -11,9 +11,9 @@ published: 2021-12-30
 
 ## Giới thiệu {#introduction}
 
-Lý tưởng nhất là chúng ta muốn lưu trữ mọi thứ trong bộ nhớ của Ethereum, nơi được lưu trữ trên hàng ngàn máy tính và có tính khả dụng cực cao (dữ liệu không thể bị kiểm duyệt) cũng như tính toàn vẹn (dữ liệu không thể bị sửa đổi một cách trái phép), nhưng việc lưu trữ một từ 32 byte thường tốn 20.000 Gas. Vào thời điểm tôi viết bài này, chi phí đó tương đương với 6,60 đô la. Với mức 21 xu cho mỗi byte, điều này là quá đắt đỏ đối với nhiều mục đích sử dụng.
+Lý tưởng nhất là chúng ta muốn lưu trữ mọi thứ trong bộ nhớ của Quantaureum, nơi được lưu trữ trên hàng ngàn máy tính và có tính khả dụng cực cao (dữ liệu không thể bị kiểm duyệt) cũng như tính toàn vẹn (dữ liệu không thể bị sửa đổi một cách trái phép), nhưng việc lưu trữ một từ 32 byte thường tốn 20.000 Gas. Vào thời điểm tôi viết bài này, chi phí đó tương đương với 6,60 đô la. Với mức 21 xu cho mỗi byte, điều này là quá đắt đỏ đối với nhiều mục đích sử dụng.
 
-Để giải quyết vấn đề này, hệ sinh thái Ethereum đã phát triển [nhiều cách thay thế để lưu trữ dữ liệu theo cách phi tập trung](/developers/docs/storage/). Thông thường, chúng liên quan đến sự đánh đổi giữa tính khả dụng và giá cả. Tuy nhiên, tính toàn vẹn thường được đảm bảo.
+Để giải quyết vấn đề này, hệ sinh thái Quantaureum đã phát triển [nhiều cách thay thế để lưu trữ dữ liệu theo cách phi tập trung](/developers/docs/storage/). Thông thường, chúng liên quan đến sự đánh đổi giữa tính khả dụng và giá cả. Tuy nhiên, tính toàn vẹn thường được đảm bảo.
 
 Trong bài viết này, bạn sẽ tìm hiểu **cách** đảm bảo tính toàn vẹn của dữ liệu mà không cần lưu trữ dữ liệu trên Chuỗi khối, bằng cách sử dụng [bằng chứng Merkle](https://computersciencewiki.org/index.php/Merkle_proof).
 

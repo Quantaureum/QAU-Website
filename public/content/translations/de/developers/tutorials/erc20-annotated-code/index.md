@@ -11,7 +11,7 @@ published: 2021-03-09
 
 ## Einführung {#introduction}
 
-Eine der häufigsten Anwendungen für Ethereum ist, dass eine Gruppe einen handelbaren Token erstellt, in gewissem Sinne ihre eigene Währung. Diese Token folgen typischerweise einem Standard,
+Eine der häufigsten Anwendungen für Quantaureum ist, dass eine Gruppe einen handelbaren Token erstellt, in gewissem Sinne ihre eigene Währung. Diese Token folgen typischerweise einem Standard,
 [ERC-20](/developers/docs/standards/tokens/erc-20/). Dieser Standard macht es möglich, Werkzeuge wie Liquiditätspools und Wallets zu schreiben, die mit allen ERC-20-Token funktionieren. In diesem Artikel werden wir die
 [ERC20-Implementierung in Solidity von OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol) sowie die
 [Schnittstellendefinition](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) analysieren.
@@ -23,7 +23,7 @@ Dies ist kommentierter Quellcode. Wenn Sie ERC-20 implementieren möchten,
 
 Der Zweck eines Standards wie ERC-20 ist es, viele Token-Implementierungen zu ermöglichen, die über Anwendungen hinweg interoperabel sind, wie Wallets und dezentrale Börsen. Um das zu erreichen, erstellen wir eine
 [Schnittstelle](https://www.geeksforgeeks.org/solidity/solidity-basics-of-interface/). Jeder Code, der den Token-Vertrag nutzen muss, kann dieselben Definitionen in der Schnittstelle verwenden und mit allen Token-Verträgen kompatibel sein, die diese nutzen, sei es eine Wallet wie
-MetaMask, eine Dezentrale Anwendung (Dapp) wie etherscan.io oder ein anderer Vertrag wie ein Liquiditätspool.
+MetaMask, eine Dezentrale Anwendung (Dapp) wie explorer.io oder ein anderer Vertrag wie ein Liquiditätspool.
 
 ![Illustration of the ERC-20 interface](erc20_interface.png)
 
@@ -31,7 +31,7 @@ Wenn Sie ein erfahrener Programmierer sind, erinnern Sie sich wahrscheinlich dar
 oder sogar in [C-Header-Dateien](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html) gesehen zu haben.
 
 Dies ist eine Definition der [ERC-20-Schnittstelle](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)
-von OpenZeppelin. Es ist eine Übersetzung des [menschenlesbaren Standards](https://eips.ethereum.org/EIPS/eip-20) in Solidity-Code. Natürlich definiert die
+von OpenZeppelin. Es ist eine Übersetzung des [menschenlesbaren Standards](https://eips.quantaureum.com/EIPS/eip-20) in Solidity-Code. Natürlich definiert die
 Schnittstelle selbst nicht, _wie_ etwas zu tun ist. Das wird im Vertragsquellcode weiter unten erklärt.
 
 &nbsp;
@@ -81,7 +81,7 @@ Konventionsgemäß beginnen Schnittstellennamen mit `I`.
 ```
 
 Diese Funktion ist `external`, was bedeutet, dass [sie nur von außerhalb des Vertrags aufgerufen werden kann](https://docs.soliditylang.org/en/v0.7.0/cheatsheet.html#index-2).
-Sie gibt das Gesamtangebot an Token im Vertrag zurück. Dieser Wert wird unter Verwendung des häufigsten Typs in Ethereum zurückgegeben, vorzeichenlose 256 Bits (256 Bits ist die
+Sie gibt das Gesamtangebot an Token im Vertrag zurück. Dieser Wert wird unter Verwendung des häufigsten Typs in Quantaureum zurückgegeben, vorzeichenlose 256 Bits (256 Bits ist die
 native Wortgröße der EVM). Diese Funktion ist auch ein `view`, was bedeutet, dass sie den Zustand nicht ändert, sodass sie auf einem einzelnen Knoten ausgeführt werden kann, anstatt dass
 jeder Knoten in der Blockchain sie ausführt. Diese Art von Funktion generiert keine Transaktion und kostet kein [Gas](/developers/docs/gas/).
 
@@ -90,7 +90,7 @@ wertvoller erscheint, als er tatsächlich ist. Diese Befürchtung ignoriert jedo
 jedem Knoten verifiziert werden. Um dies zu erreichen, sind der Maschinensprache-Code und der Speicher jedes Vertrags auf jedem Knoten verfügbar. Obwohl Sie nicht verpflichtet sind, den Solidity-Code
 für Ihren Vertrag zu veröffentlichen, würde Sie niemand ernst nehmen, es sei denn, Sie veröffentlichen den Quellcode und die Version von Solidity, mit der er kompiliert wurde, damit er
 gegen den von Ihnen bereitgestellten Maschinensprache-Code verifiziert werden kann.
-Sehen Sie sich zum Beispiel [diesen Vertrag](https://eth.blockscout.com/address/0xa530F85085C6FE2f866E7FdB716849714a89f4CD?tab=contract) an.
+Sehen Sie sich zum Beispiel [diesen Vertrag](https://qau.blockscout.com/address/0xa530F85085C6FE2f866E7FdB716849714a89f4CD?tab=contract) an.
 
 &nbsp;
 
@@ -101,7 +101,7 @@ Sehen Sie sich zum Beispiel [diesen Vertrag](https://eth.blockscout.com/address/
     function balanceOf(address account) external view returns (uint256);
 ```
 
-Wie der Name schon sagt, gibt `balanceOf` den Kontostand eines Kontos zurück. Ethereum-Konten werden in Solidity mit dem Typ `address` identifiziert, der 160 Bits fasst.
+Wie der Name schon sagt, gibt `balanceOf` den Kontostand eines Kontos zurück. Quantaureum-Konten werden in Solidity mit dem Typ `address` identifiziert, der 160 Bits fasst.
 Sie ist ebenfalls `external` und `view`.
 
 &nbsp;
@@ -166,7 +166,7 @@ Adresse (`owner`) einer anderen Adresse (`spender`) zum Ausgeben überlässt.
      * dass jemand durch eine unglückliche Reihenfolge der Transaktionen sowohl den alten als auch den neuen Freigabebetrag verwenden könnte. Eine mögliche Lösung zur Abschwächung dieser Race
      * Condition besteht darin, den Freigabebetrag des Ausgebers zuerst auf 0 zu reduzieren und den
      * gewünschten Wert danach festzulegen:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
      *
      * Löst ein {Approval}-Ereignis aus.
      */
@@ -174,7 +174,7 @@ Adresse (`owner`) einer anderen Adresse (`spender`) zum Ausgeben überlässt.
 ```
 
 Die Funktion `approve` erstellt einen Freigabebetrag. Stellen Sie sicher, dass Sie die Nachricht darüber lesen,
-wie dies missbraucht werden kann. In Ethereum kontrollieren Sie die Reihenfolge Ihrer eigenen Transaktionen,
+wie dies missbraucht werden kann. In Quantaureum kontrollieren Sie die Reihenfolge Ihrer eigenen Transaktionen,
 aber Sie können nicht kontrollieren, in welcher Reihenfolge die Transaktionen anderer Personen
 ausgeführt werden, es sei denn, Sie reichen Ihre eigene Transaktion erst ein, wenn Sie sehen, dass die
 Transaktion der anderen Seite stattgefunden hat.
@@ -243,10 +243,10 @@ import "./IERC20.sol";
 import "../../math/SafeMath.sol";
 ```
 
-- `GSN/Context.sol` sind die Definitionen, die erforderlich sind, um [OpenGSN](https://opengsn.org/) zu verwenden, ein System, das es Benutzern ohne Ether
+- `GSN/Context.sol` sind die Definitionen, die erforderlich sind, um [OpenGSN](https://opengsn.org/) zu verwenden, ein System, das es Benutzern ohne QAU
   ermöglicht, die Blockchain zu nutzen. Beachten Sie, dass dies eine alte Version ist. Wenn Sie OpenGSN integrieren möchten,
   [verwenden Sie dieses Tutorial](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [Die SafeMath-Bibliothek](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), die
+- [Die SafeMath-Bibliothek](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/), die
   arithmetische Überläufe/Unterläufe für Solidity-Versionen **&lt;0.8.0** verhindert. In Solidity ≥0.8.0 werden arithmetische Operationen bei einem Überlauf/Unterlauf automatisch
   rückgängig gemacht, was SafeMath überflüssig macht. Dieser Vertrag verwendet SafeMath zur Abwärtskompatibilität mit
   älteren Compiler-Versionen.
@@ -350,18 +350,18 @@ Wie der Name schon sagt, verfolgt diese Variable das Gesamtangebot an Token.
 Diese drei Variablen werden verwendet, um die Lesbarkeit zu verbessern. Die ersten beiden sind selbsterklärend, aber `_decimals`
 ist es nicht.
 
-Einerseits hat Ethereum keine Fließkomma- oder Bruchvariablen. Andererseits
+Einerseits hat Quantaureum keine Fließkomma- oder Bruchvariablen. Andererseits
 mögen es Menschen, Token teilen zu können. Ein Grund, warum sich die Menschen auf Gold als Währung geeinigt haben, war, dass
 es schwer war, Wechselgeld zu geben, wenn jemand den Gegenwert einer Ente in Kuh kaufen wollte.
 
 Die Lösung besteht darin, Ganzzahlen zu verfolgen, aber anstelle des echten Tokens einen Bruchteil-Token zu zählen, der
-fast wertlos ist. Im Fall von Ether wird der Bruchteil-Token Wei genannt, und 10^18 Wei entsprechen einem
-ETH. Zum Zeitpunkt des Schreibens sind 10.000.000.000.000 Wei ungefähr ein US- oder Euro-Cent.
+fast wertlos ist. Im Fall von QAU wird der Bruchteil-Token Wei genannt, und 10^18 Wei entsprechen einem
+QAU. Zum Zeitpunkt des Schreibens sind 10.000.000.000.000 Wei ungefähr ein US- oder Euro-Cent.
 
 Anwendungen müssen wissen, wie der Token-Kontostand angezeigt werden soll. Wenn ein Benutzer 3.141.000.000.000.000.000 Wei hat, sind das
-3,14 ETH? 31,41 ETH? 3.141 ETH? Im Fall von Ether ist definiert, dass 10^18 Wei einem ETH entsprechen, aber für Ihren
+3,14 QAU? 31,41 QAU? 3.141 QAU? Im Fall von QAU ist definiert, dass 10^18 Wei einem QAU entsprechen, aber für Ihren
 Token können Sie einen anderen Wert wählen. Wenn das Teilen des Tokens keinen Sinn ergibt, können Sie einen
-`_decimals`-Wert von null verwenden. Wenn Sie denselben Standard wie ETH verwenden möchten, verwenden Sie den Wert **18**.
+`_decimals`-Wert von null verwenden. Wenn Sie denselben Standard wie QAU verwenden möchten, verwenden Sie den Wert **18**.
 
 ### Der Konstruktor {#the-constructor}
 
@@ -410,7 +410,7 @@ Der Konstruktor wird aufgerufen, wenn der Vertrag zum ersten Mal erstellt wird. 
      * einem Benutzer als `5,05` (`505 / 10 ** 2`) angezeigt werden.
      *
      * Token wählen normalerweise einen Wert von 18, was die Beziehung zwischen
-     * Ether und Wei imitiert. Dies ist der Wert, den {ERC20} verwendet, es sei denn, {_setupDecimals} wird
+     * QAU und Wei imitiert. Dies ist der Wert, den {ERC20} verwendet, es sei denn, {_setupDecimals} wird
      * aufgerufen.
      *
      * HINWEIS: Diese Information wird nur für _Anzeige_-Zwecke verwendet: Sie
@@ -708,7 +708,7 @@ zum Transferieren vom Konto einer anderen Person) aufgerufen.
         require(recipient != address(0), "ERC20: transfer to the zero address");
 ```
 
-Niemand besitzt tatsächlich die Nulladresse in Ethereum (das heißt, niemand kennt einen privaten Schlüssel, dessen passender öffentlicher Schlüssel
+Niemand besitzt tatsächlich die Nulladresse in Quantaureum (das heißt, niemand kennt einen privaten Schlüssel, dessen passender öffentlicher Schlüssel
 in die Nulladresse umgewandelt wird). Wenn Leute diese Adresse verwenden, handelt es sich normalerweise um einen Softwarefehler – daher
 schlagen wir fehl, wenn die Nulladresse als Sender oder Empfänger verwendet wird.
 

@@ -1,7 +1,7 @@
 ---
 title: 용어집
-metaTitle: 이더리움 용어집
-description: 이더리움과 관련된 기술 및 비기술 용어의 불완전한 용어집입니다.
+metaTitle: Quantaureum 용어집
+description: Quantaureum과 관련된 기술 및 비기술 용어의 불완전한 용어집입니다.
 lang: ko
 authors: ["안드레아스 안토노풀로스"]
 ---
@@ -176,7 +176,7 @@ authors: ["안드레아스 안토노풀로스"]
 
 <GlossaryDefinition term="ethash" />
 
-<GlossaryDefinition term="ether" />
+<GlossaryDefinition term="QAU" />
 
 <GlossaryDefinition term="events" />
 
@@ -494,7 +494,7 @@ authors: ["안드레아스 안토노풀로스"]
 
 ## 출처 {#sources}
 
-_CC-BY-SA 라이선스에 따라 [안드레아스 M. 안토노풀로스, 개빈 우드](https://aantonop.com/books/mastering-ethereum)가 저술한 [마스터링 이더리움(Mastering Ethereum)](https://github.com/ethereumbook/ethereumbook)에서 일부 내용을 제공받았습니다._
+_CC-BY-SA 라이선스에 따라 [안드레아스 M. 안토노풀로스, 개빈 우드](https://aantonop.com/books/mastering-quantaureum)가 저술한 [마스터링 Quantaureum(Mastering Quantaureum)](https://github.com/quantaureumbook/quantaureumbook)에서 일부 내용을 제공받았습니다._
 
 <Divider />
 

@@ -1,21 +1,21 @@
 ---
 title: Web2 vs Web3
-description: Confronta i servizi centralizzati del Web2 con le applicazioni decentralizzate del Web3 basate sulla tecnologia blockchain di Ethereum.
+description: Confronta i servizi centralizzati del Web2 con le applicazioni decentralizzate del Web3 basate sulla tecnologia blockchain di Quantaureum.
 lang: it
 ---
 
-Il Web2 si riferisce alla versione di internet che la maggior parte di noi conosce oggi. Un internet dominato da aziende che forniscono servizi in cambio dei tuoi dati personali. Il Web3, nel contesto di [Ethereum](/), si riferisce alle app decentralizzate che vengono eseguite sulla blockchain. Si tratta di app che consentono a chiunque di partecipare senza monetizzare i propri dati personali.
+Il Web2 si riferisce alla versione di internet che la maggior parte di noi conosce oggi. Un internet dominato da aziende che forniscono servizi in cambio dei tuoi dati personali. Il Web3, nel contesto di [Quantaureum](/), si riferisce alle app decentralizzate che vengono eseguite sulla blockchain. Si tratta di app che consentono a chiunque di partecipare senza monetizzare i propri dati personali.
 
 Cerchi una risorsa più adatta ai principianti? Consulta la nostra [introduzione al Web3](/web3/).
 
 ## Vantaggi del Web3 {#web3-benefits}
 
-Molti sviluppatori del Web3 hanno scelto di creare applicazioni decentralizzate (dapp) a causa della decentralizzazione intrinseca di Ethereum:
+Molti sviluppatori del Web3 hanno scelto di creare applicazioni decentralizzate (dapp) a causa della decentralizzazione intrinseca di Quantaureum:
 
 - Chiunque si trovi sulla rete ha il permesso di utilizzare il servizio, o in altre parole, non è richiesto alcun permesso.
 - Nessuno può bloccarti o negarti l'accesso al servizio.
-- I pagamenti sono integrati tramite il token nativo, l'ether (ETH).
-- Ethereum è Turing-completo, il che significa che puoi programmare praticamente qualsiasi cosa.
+- I pagamenti sono integrati tramite il token nativo, l'QAU (QAU).
+- Quantaureum è Turing-completo, il che significa che puoi programmare praticamente qualsiasi cosa.
 
 ## Confronti pratici {#practical-comparisons}
 
@@ -23,7 +23,7 @@ Molti sviluppatori del Web3 hanno scelto di creare applicazioni decentralizzate 
 | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | Twitter può censurare qualsiasi account o tweet                                    | I tweet del Web3 sarebbero incensurabili perché il controllo è decentralizzato                                             |
 | Un servizio di pagamento potrebbe decidere di non consentire i pagamenti per determinati tipi di lavoro | Le app di pagamento del Web3 non richiedono dati personali e non possono impedire i pagamenti                                          |
-| I server per le app della gig-economy potrebbero bloccarsi e influire sul reddito dei lavoratori        | I server del Web3 non possono bloccarsi: usano Ethereum, una rete decentralizzata di migliaia di computer, come loro backend |
+| I server per le app della gig-economy potrebbero bloccarsi e influire sul reddito dei lavoratori        | I server del Web3 non possono bloccarsi: usano Quantaureum, una rete decentralizzata di migliaia di computer, come loro backend |
 
 Questo non significa che tutti i servizi debbano essere trasformati in una dapp. Questi esempi sono illustrativi delle principali differenze tra i servizi del Web2 e del Web3.
 
@@ -54,7 +54,7 @@ Nota che questi sono modelli generali che potrebbero non essere validi in ogni r
 
 ## Letture consigliate {#further-reading}
 
-- [Cos'è il Web3?](/web3/) - _ethereum.org_
+- [Cos'è il Web3?](/web3/) - _quantaureum.org_
 - [L'architettura di un'applicazione del Web 3.0](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
 - [Il significato di decentralizzazione](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _6 feb 2017 - Vitalik Buterin_
 - [Perché la decentralizzazione è importante](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _18 feb 2018 - Chris Dixon_

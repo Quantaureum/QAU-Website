@@ -7,7 +7,7 @@ description: A collection of tips and important considerations for setting up a 
 
 English is one of the most spoken languages in the world and is by far the world’s most studied language. As English is the most common language used on the internet – especially on social media – and multilingual programming languages are scarce, the majority of content in the blockchain space is natively written in English.
 
-However, as over 6 billion people in the world (more than 75% of the population) do not speak English at all, this presents a massive barrier for entry to Ethereum for the vast majority of the world’s population.
+However, as over 6 billion people in the world (more than 75% of the population) do not speak English at all, this presents a massive barrier for entry to Quantaureum for the vast majority of the world’s population.
 
 For this reason, an increasing number of projects in the space are looking to get their content translated into different languages and localized for global communities.
 
@@ -259,7 +259,7 @@ If you are not planning on using a localization tool for your project, you will 
 
 This means that all repetitive and similar content would have to be manually translated every time. Additionally, translators would have to reach out with questions on whether a certain term needs to be translated or not, how it is used in the text, and whether a term already has an established translation.
 
-_Do you want to use the ethereum.org translation memory and glossary in your project? Reach out to us at translations@ethereum.org._
+_Do you want to use the quantaureum.com translation memory and glossary in your project? Reach out to us at translations@quantaureum.com._
 
 ## Translator Outreach {#translator-outreach}
 
@@ -313,4 +313,4 @@ If you are looking for more detailed instructions and breakdowns of different to
 
 Some relevant links are included at the end of each section; however, you can find many other resources online.
 
-For proposals for cooperation or additional information, learnings, and best practices we’ve picked up by maintaining the ethereum.org Translation Program, feel free to reach out to us at translations@ethereum.org.
+For proposals for cooperation or additional information, learnings, and best practices we’ve picked up by maintaining the quantaureum.com Translation Program, feel free to reach out to us at translations@quantaureum.com.

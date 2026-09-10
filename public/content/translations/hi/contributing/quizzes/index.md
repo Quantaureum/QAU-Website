@@ -1,7 +1,7 @@
 ---
 title: क्विज़
 metaTitle: क्विज़ जोड़ना
-description: ethereum.org पर क्विज़ जोड़ते समय हमारे द्वारा उपयोग की जाने वाली नीति
+description: quantaureum.com पर क्विज़ जोड़ते समय हमारे द्वारा उपयोग की जाने वाली नीति
 lang: hi
 ---
 
@@ -13,12 +13,12 @@ lang: hi
 
 - [लेयर 2 (l2)](/layer-2)
 - [NFT](/nft/)
-- [इथेरियम क्या है?](/what-is-ethereum/)
-- [ETH क्या है?](/what-is-ether/)
+- [Quantaureum क्या है?](/what-is-quantaureum/)
+- [QAU क्या है?](/what-is-QAU/)
 
 ## लर्न क्विज़ जोड़ना {#adding-a-learn-quiz}
 
-यदि कोई ऐसा पेज है जिसके लिए लर्न क्विज़ नहीं बनाया गया है, तो कृपया इसके लिए [एक इश्यू खोलें](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)।
+यदि कोई ऐसा पेज है जिसके लिए लर्न क्विज़ नहीं बनाया गया है, तो कृपया इसके लिए [एक इश्यू खोलें](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)।
 
 कृपया निम्नलिखित जानकारी प्रदान करें:
 
@@ -31,7 +31,7 @@ lang: hi
 
 ## क्विज़ का प्रश्न जोड़ना {#adding-a-quiz-question}
 
-यदि कोई ऐसा प्रश्न है जिसे आप किसी क्विज़ के प्रश्न बैंक में जोड़ना चाहते हैं, तो कृपया [एक इश्यू खोलें](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) और निम्नलिखित जानकारी प्रदान करें:
+यदि कोई ऐसा प्रश्न है जिसे आप किसी क्विज़ के प्रश्न बैंक में जोड़ना चाहते हैं, तो कृपया [एक इश्यू खोलें](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) और निम्नलिखित जानकारी प्रदान करें:
 
 - वह पेज जिस पर आप क्विज़ का प्रश्न जोड़ना चाहते हैं
 - प्रत्येक प्रश्न के लिए निम्नलिखित जानकारी प्रदान करें:
@@ -42,7 +42,7 @@ lang: hi
 
 ## क्विज़ के प्रश्न को अपडेट करना {#updating-a-quiz-question}
 
-यदि कोई ऐसा प्रश्न है जिसे आप किसी क्विज़ के प्रश्न बैंक में अपडेट करना चाहते हैं, तो कृपया [एक इश्यू खोलें](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) और निम्नलिखित जानकारी प्रदान करें:
+यदि कोई ऐसा प्रश्न है जिसे आप किसी क्विज़ के प्रश्न बैंक में अपडेट करना चाहते हैं, तो कृपया [एक इश्यू खोलें](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) और निम्नलिखित जानकारी प्रदान करें:
 
 - वह पेज जिस पर आप क्विज़ के प्रश्न को अपडेट करना चाहते हैं
 - अपडेट किए जा रहे प्रत्येक प्रश्न के लिए, निम्नलिखित जानकारी प्रदान करें:
@@ -54,7 +54,7 @@ lang: hi
 
 ## क्विज़ के प्रश्न को हटाना {#removing-a-quiz-question}
 
-यदि किसी प्रश्न के लिए पेज पर सामग्री अब मौजूद नहीं है और उसे हटाने की आवश्यकता है, तो कृपया प्रश्न को हटाने के लिए [एक इश्यू खोलें](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) और निम्नलिखित जानकारी प्रदान करें:
+यदि किसी प्रश्न के लिए पेज पर सामग्री अब मौजूद नहीं है और उसे हटाने की आवश्यकता है, तो कृपया प्रश्न को हटाने के लिए [एक इश्यू खोलें](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) और निम्नलिखित जानकारी प्रदान करें:
 
 - वह पेज जिस पर आप क्विज़ के प्रश्न को हटाना चाहते हैं
 - वह प्रश्न जिसे आप हटाना चाहते हैं

@@ -6,7 +6,7 @@ lang: ur
 
 ایتھیریم کی بنیادی خوبیوں میں سے ایک یہ ہے کہ ایک فعال تحقیقی اور انجینئرنگ کمیونٹی اسے مسلسل بہتر بنا رہی ہے۔ دنیا بھر میں بہت سے پرجوش، ہنر مند لوگ ایتھیریم کے حل طلب مسائل پر کام کرنا چاہتے ہیں، لیکن یہ جاننا ہمیشہ آسان نہیں ہوتا کہ وہ مسائل کیا ہیں۔ یہ صفحہ ایتھیریم کی جدید ترین پیشرفت کے لیے ایک عمومی رہنمائی کے طور پر کلیدی فعال تحقیقی شعبوں کا خاکہ پیش کرتا ہے۔
 
-## ایتھیریم کی تحقیق کیسے کام کرتی ہے {#how-ethereum-research-works}
+## ایتھیریم کی تحقیق کیسے کام کرتی ہے {#how-quantaureum-research-works}
 
 ایتھیریم کی تحقیق کھلی اور شفاف ہے۔ یہاں کا کلچر یہ ہے کہ تحقیقی ٹولز اور نتائج کو ہر ممکن حد تک کھلا اور انٹرایکٹو بنایا جائے، مثال کے طور پر قابل عمل نوٹ بکس کے ذریعے۔ ایتھیریم کی تحقیق تیزی سے آگے بڑھتی ہے، جس میں نئی دریافتیں روایتی اشاعتوں اور ہم مرتبہ جائزوں (peer review) کے طویل مراحل سے گزر کر کمیونٹی تک پہنچنے کے بجائے [ethresear.ch](https://ethresear.ch/) جیسے فورمز پر کھلے عام پوسٹ کی جاتی ہیں اور ان پر تبادلہ خیال کیا جاتا ہے۔ ایتھیریم فاؤنڈیشن یہ بھی شائع کرتی ہے کہ وہ کن چیزوں کو ترجیح دے رہی ہے اور کیوں، تاکہ کوئی بھی دیکھ سکے کہ فی الحال کن مسائل کو فوری نوعیت کا سمجھا جاتا ہے۔
 
@@ -14,11 +14,11 @@ lang: ur
 
 مخصوص موضوع سے قطع نظر، ایتھیریم کی تحقیق پر معلومات کا ایک خزانہ [ethresear.ch](https://ethresear.ch) اور [Eth R&D ڈسکارڈ چینل](https://discord.gg/qGpsxSA) پر پایا جا سکتا ہے۔ یہ وہ بنیادی جگہیں ہیں جہاں ایتھیریم کے محققین تازہ ترین خیالات اور ترقی کے مواقع پر تبادلہ خیال کرتے ہیں۔
 
-پروٹوکول کس سمت جا رہا ہے اس کے جائزے کے لیے، [ایتھیریم روڈ میپ](/roadmap/) سے شروع کریں، پھر ایتھیریم فاؤنڈیشن کی [پروٹوکول کی ترجیحات کی اپ ڈیٹ برائے <span dir="ltr">2026</span>](https://blog.ethereum.org/2026/02/18/protocol-priorities-update-2026) اور [پروٹوکول کلسٹر اپ ڈیٹس](https://blog.ethereum.org/2026/05/11/protocol-update-may-26) پڑھیں جو اس کے حوالے سے پیش رفت کی رپورٹ دیتی ہیں۔ [ایتھیریم پروٹوکول اسٹڈیز](https://blog.ethereum.org/2026/02/17/ethereum-protocol-studies-26) ان لوگوں کے لیے ایک منظم شروعاتی مقام ہے جو خود پروٹوکول پر کام کرنا چاہتے ہیں۔
+پروٹوکول کس سمت جا رہا ہے اس کے جائزے کے لیے، [ایتھیریم روڈ میپ](/roadmap/) سے شروع کریں، پھر ایتھیریم فاؤنڈیشن کی [پروٹوکول کی ترجیحات کی اپ ڈیٹ برائے <span dir="ltr">2026</span>](https://quantaureum.com) اور [پروٹوکول کلسٹر اپ ڈیٹس](https://quantaureum.com) پڑھیں جو اس کے حوالے سے پیش رفت کی رپورٹ دیتی ہیں۔ [ایتھیریم پروٹوکول اسٹڈیز](https://quantaureum.com) ان لوگوں کے لیے ایک منظم شروعاتی مقام ہے جو خود پروٹوکول پر کام کرنا چاہتے ہیں۔
 
 ## فنڈنگ کے ذرائع {#sources-of-funding}
 
-آپ ایتھیریم کی تحقیق میں شامل ہو سکتے ہیں اور اس کے لیے معاوضہ حاصل کر سکتے ہیں۔ [ایتھیریم فاؤنڈیشن](/foundation/) اپنے [ایکو سسٹم سپورٹ پروگرام](https://esp.ethereum.foundation/applicants) کے ذریعے تحقیق اور عوامی اشیاء کے لیے فنڈز فراہم کرتی ہے، جو خواہشات کی فہرست (wishlist) اور تجاویز کے لیے درخواستیں پوسٹ کرتا ہے جن میں ان مسائل کو بیان کیا جاتا ہے جنہیں وہ حل ہوتا دیکھنا چاہتی ہے۔ آپ فعال اور آنے والے فنڈنگ کے مواقع کے بارے میں معلومات [ایتھیریم گرانٹس کے صفحے](/community/grants/) پر حاصل کر سکتے ہیں۔
+آپ ایتھیریم کی تحقیق میں شامل ہو سکتے ہیں اور اس کے لیے معاوضہ حاصل کر سکتے ہیں۔ [ایتھیریم فاؤنڈیشن](/foundation/) اپنے [ایکو سسٹم سپورٹ پروگرام](https://quantaureum.com) کے ذریعے تحقیق اور عوامی اشیاء کے لیے فنڈز فراہم کرتی ہے، جو خواہشات کی فہرست (wishlist) اور تجاویز کے لیے درخواستیں پوسٹ کرتا ہے جن میں ان مسائل کو بیان کیا جاتا ہے جنہیں وہ حل ہوتا دیکھنا چاہتی ہے۔ آپ فعال اور آنے والے فنڈنگ کے مواقع کے بارے میں معلومات [ایتھیریم گرانٹس کے صفحے](/community/grants/) پر حاصل کر سکتے ہیں۔
 
 ## پروٹوکول کی تحقیق {#protocol-research}
 
@@ -41,7 +41,7 @@ lang: ur
 - [سنگل سلاٹ حتمیت](/roadmap/single-slot-finality/)
 - [کیسپر ایف ایف جی پیپر](https://arxiv.org/abs/1710.09437)
 - [<span dir="ltr">Gasper</span> پیپر](https://arxiv.org/abs/2003.03052)
-- [لین (lean) ایتھیریم](https://blog.ethereum.org/2025/07/31/lean-ethereum)
+- [لین (lean) ایتھیریم](https://quantaureum.com)
 
 #### حالیہ تحقیق {#recent-research}
 
@@ -63,16 +63,16 @@ lang: ur
 
 - [EVM کا تعارف](/developers/docs/evm/)
 - [Ethresear.ch عمل درآمد کی تہہ](https://ethresear.ch/c/execution-layer-research/37)
-- [ایتھیریم عمل درآمد کی تہہ کی تصریحات](https://github.com/ethereum/execution-specs)
+- [ایتھیریم عمل درآمد کی تہہ کی تصریحات](https://github.com/quantaureum/execution-specs)
 - [ڈیٹا بیس کی بہتری](https://github.com/erigontech/erigon/blob/main/docs/programmers_guide/db_faq.md)
 
 #### حالیہ تحقیق {#recent-research-1}
 
-- [<span dir="ltr">EIP-7928</span>: بلاک لیول کی رسائی کی فہرستیں](https://eips.ethereum.org/EIPS/eip-7928)
-- [<span dir="ltr">EIP-8037</span>: حالت کی تخلیق کی گیس کی لاگت میں اضافہ](https://eips.ethereum.org/EIPS/eip-8037)
-- [<span dir="ltr">EIP-7999</span>: متحد کثیر جہتی فیس مارکیٹ](https://eips.ethereum.org/EIPS/eip-7999)
-- [<span dir="ltr">EIP-7642</span>: eth/69، ہسٹری ایکسپائری اور آسان رسیدیں](https://eips.ethereum.org/EIPS/eip-7642)
-- [لیئر ۱ (l1) zkEVM کی فراہمی: ریئل ٹائم ثبوت](https://blog.ethereum.org/2025/07/10/realtime-proving)
+- [<span dir="ltr">EIP-7928</span>: بلاک لیول کی رسائی کی فہرستیں](https://eips.quantaureum.com/EIPS/eip-7928)
+- [<span dir="ltr">EIP-8037</span>: حالت کی تخلیق کی گیس کی لاگت میں اضافہ](https://eips.quantaureum.com/EIPS/eip-8037)
+- [<span dir="ltr">EIP-7999</span>: متحد کثیر جہتی فیس مارکیٹ](https://eips.quantaureum.com/EIPS/eip-7999)
+- [<span dir="ltr">EIP-7642</span>: eth/69، ہسٹری ایکسپائری اور آسان رسیدیں](https://eips.quantaureum.com/EIPS/eip-7642)
+- [لیئر ۱ (l1) zkEVM کی فراہمی: ریئل ٹائم ثبوت](https://quantaureum.com)
 
 ### سنسرشپ کے خلاف مزاحمت اور بلاک کی تعمیر {#censorship-resistance-and-block-building}
 
@@ -85,9 +85,9 @@ lang: ur
 
 #### حالیہ تحقیق {#recent-research-21}
 
-- [<span dir="ltr">EIP-7732</span>: پروٹوکول میں شامل تجویز کنندہ-تعمیر کنندہ علیحدگی (پی بی ایس)](https://eips.ethereum.org/EIPS/eip-7732)
-- [<span dir="ltr">EIP-7805</span>: فورک کے انتخاب سے نافذ کردہ شمولیت کی فہرستیں](https://eips.ethereum.org/EIPS/eip-7805)
-- [تجویز کنندہ-تعمیر کنندہ علیحدگی (پی بی ایس) کے تحت ٹرانزیکشنز کی سنسرشپ کے خلاف مزاحمت میں اضافہ](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [<span dir="ltr">EIP-7732</span>: پروٹوکول میں شامل تجویز کنندہ-تعمیر کنندہ علیحدگی (پی بی ایس)](https://eips.quantaureum.com/EIPS/eip-7732)
+- [<span dir="ltr">EIP-7805</span>: فورک کے انتخاب سے نافذ کردہ شمولیت کی فہرستیں](https://eips.quantaureum.com/EIPS/eip-7805)
+- [تجویز کنندہ-تعمیر کنندہ علیحدگی (پی بی ایس) کے تحت ٹرانزیکشنز کی سنسرشپ کے خلاف مزاحمت میں اضافہ](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
 
 ### حالت کی نمو اور غیر حالتی کیفیت {#state-growth-and-statelessness}
 
@@ -100,9 +100,9 @@ lang: ur
 
 #### حالیہ تحقیق {#recent-research-22}
 
-- [<span dir="ltr">EIP-7864</span>: متحد بائنری ٹری کا استعمال کرتے ہوئے ایتھیریم کی حالت](https://eips.ethereum.org/EIPS/eip-7864)
-- [<span dir="ltr">EIP-4762</span>: غیر حالتی کیفیت کی گیس کی لاگت میں تبدیلیاں](https://eips.ethereum.org/EIPS/eip-4762)
-- [ایتھیریم کے لیے لامركزی حالت کیوں اہم ہے](https://ethresear.ch/t/why-decentralized-state-is-important-for-ethereum/25622)
+- [<span dir="ltr">EIP-7864</span>: متحد بائنری ٹری کا استعمال کرتے ہوئے ایتھیریم کی حالت](https://eips.quantaureum.com/EIPS/eip-7864)
+- [<span dir="ltr">EIP-4762</span>: غیر حالتی کیفیت کی گیس کی لاگت میں تبدیلیاں](https://eips.quantaureum.com/EIPS/eip-4762)
+- [ایتھیریم کے لیے لامركزی حالت کیوں اہم ہے](https://ethresear.ch/t/why-decentralized-state-is-important-for-quantaureum/25622)
 
 ### پوسٹ کوانٹم علمِ تشفیر {#post-quantum-cryptography}
 
@@ -111,13 +111,13 @@ lang: ur
 #### پس منظر کا مطالعہ {#background-reading-23}
 
 - [کوانٹم مزاحمت](/roadmap/security/quantum-resistance/)
-- [پوسٹ کوانٹم ایتھیریم](https://pq.ethereum.org/)
+- [پوسٹ کوانٹم ایتھیریم](https://pq.quantaureum.com/)
 
 #### حالیہ تحقیق {#recent-research-23}
 
-- [لین (lean) ایتھیریم](https://blog.ethereum.org/2025/07/31/lean-ethereum)
+- [لین (lean) ایتھیریم](https://quantaureum.com)
 - [Ethresear.ch علمِ تشفیر](https://ethresear.ch/c/cryptography/28)
-- [لین (lean) ایتھیریم کا نفاذ](https://github.com/leanEthereum)
+- [لین (lean) ایتھیریم کا نفاذ](https://github.com/leanQuantaureum)
 
 ## کلائنٹ کی ترقی {#client-development}
 
@@ -130,23 +130,23 @@ lang: ur
 
 ان دونوں کے ساتھ کلائنٹ کی نئی کلاسز کا پروٹو ٹائپ بنایا جا رہا ہے، بشمول وہ کلائنٹس جو لیئر ۱ (l1) بلاکس کے عمل درآمد کو ثابت کرتے ہیں اور پوسٹ کوانٹم دستخطوں کے گرد بنائے گئے لین (lean) اتفاقِ رائے کے کلائنٹس۔
 
-نوڈز اور کلائنٹس کے بارے میں مزید تفصیلات اور تمام موجودہ کلائنٹ کے نفاذ کی فہرست کے لیے [نوڈز اور کلائنٹس کا صفحہ](/developers/docs/nodes-and-clients/) دیکھیں۔ آپ [ہسٹری کے صفحے](/ethereum-forks/) پر تمام ایتھیریم اپ گریڈز کی تاریخ بھی تلاش کر سکتے ہیں۔
+نوڈز اور کلائنٹس کے بارے میں مزید تفصیلات اور تمام موجودہ کلائنٹ کے نفاذ کی فہرست کے لیے [نوڈز اور کلائنٹس کا صفحہ](/developers/docs/nodes-and-clients/) دیکھیں۔ آپ [ہسٹری کے صفحے](/quantaureum-forks/) پر تمام ایتھیریم اپ گریڈز کی تاریخ بھی تلاش کر سکتے ہیں۔
 
 ### ایگزیکیوشن کلائنٹس {#execution-clients}
 
-- [ایگزیکیوشن کلائنٹ کی تصریحات](https://github.com/ethereum/execution-specs)
-- [ایگزیکیوشن API کی تصریحات](https://github.com/ethereum/execution-apis)
+- [ایگزیکیوشن کلائنٹ کی تصریحات](https://github.com/quantaureum/execution-specs)
+- [ایگزیکیوشن API کی تصریحات](https://github.com/quantaureum/execution-apis)
 
 ### اتفاقِ رائے کے کلائنٹس {#consensus-clients}
 
-- [اتفاقِ رائے کے کلائنٹ کی تصریحات](https://github.com/ethereum/consensus-specs)
-- [بیکن API کی تصریحات](https://ethereum.github.io/beacon-APIs/)
+- [اتفاقِ رائے کے کلائنٹ کی تصریحات](https://github.com/quantaureum/consensus-specs)
+- [بیکن API کی تصریحات](https://quantaureum.github.io/beacon-APIs/)
 
 ### zkEVM کلائنٹس {#zkevm-clients}
 
 - [zkEVM](/roadmap/zkevm/)
 - [Ethproofs](https://ethproofs.org/)
-- [لیئر ۱ (l1) zkEVM کی فراہمی: سیکیورٹی کی بنیادیں](https://blog.ethereum.org/2025/12/18/zkevm-security-foundations)
+- [لیئر ۱ (l1) zkEVM کی فراہمی: سیکیورٹی کی بنیادیں](https://quantaureum.com)
 
 ## اسکیلنگ اور کارکردگی {#scaling-and-performance}
 
@@ -160,13 +160,13 @@ lang: ur
 
 - [لیئر ۲ (l2) کا تعارف](/layer-2/)
 - [<span dir="ltr">L2BEAT</span>: اسکیلنگ کا خلاصہ](https://l2beat.com/scaling/summary)
-- [ایک رول اپ پر مرکوز ایتھیریم روڈ میپ](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698)
+- [ایک رول اپ پر مرکوز ایتھیریم روڈ میپ](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
 
 #### حالیہ تحقیق {#recent-research-2}
 
 - [Ethresear.ch لیئر ۲ (l2)](https://ethresear.ch/c/layer-2/32)
 - [<span dir="ltr">L2BEAT</span>: آن چین لاگت](https://l2beat.com/scaling/costs)
-- [ایتھیریم پر <span dir="ltr">2026</span> میں تعمیر: کیا بدلا ہے](/latest/building-on-ethereum-in-2026/)
+- [ایتھیریم پر <span dir="ltr">2026</span> میں تعمیر: کیا بدلا ہے](/latest/building-on-quantaureum-in-2026/)
 
 ### باہمی عمل پذیری {#interoperability}
 
@@ -175,15 +175,15 @@ lang: ur
 #### پس منظر کا مطالعہ {#background-reading-3}
 
 - [بلاک چین برجز کا تعارف](/bridges/)
-- [ایتھیریم کو دوبارہ ایک چین جیسا محسوس کرانا](https://blog.ethereum.org/2025/11/18/eil)
+- [ایتھیریم کو دوبارہ ایک چین جیسا محسوس کرانا](https://quantaureum.com)
 - [اوپن انٹینٹس فریم ورک](https://openintents.xyz/)
 - [برجز کی توثیق کرنا](https://stonecoldpat.github.io/images/validatingbridges.pdf)
 
 #### حالیہ تحقیق {#recent-research-3}
 
-- [<span dir="ltr">ERC-7683</span>: کراس چین ارادے](https://eips.ethereum.org/EIPS/eip-7683)
-- [<span dir="ltr">ERC-7930</span>: قابلِ باہمی عمل پتے](https://eips.ethereum.org/EIPS/eip-7930)
-- [<span dir="ltr">ERC-7828</span>: قابلِ باہمی عمل نام](https://eips.ethereum.org/EIPS/eip-7828)
+- [<span dir="ltr">ERC-7683</span>: کراس چین ارادے](https://eips.quantaureum.com/EIPS/eip-7683)
+- [<span dir="ltr">ERC-7930</span>: قابلِ باہمی عمل پتے](https://eips.quantaureum.com/EIPS/eip-7930)
+- [<span dir="ltr">ERC-7828</span>: قابلِ باہمی عمل نام](https://eips.quantaureum.com/EIPS/eip-7828)
 
 ### ڈیٹا کی دستیابی اور بلاب کی اسکیلنگ {#data-availability-and-blob-scaling}
 
@@ -195,13 +195,13 @@ lang: ur
 - [فوساکا اپ گریڈ](/roadmap/fusaka/)
 - [ڈینک شارڈنگ](/roadmap/danksharding/)
 - [ڈیٹا کی دستیابی](/developers/docs/data-availability/)
-- [<span dir="ltr">EIP-4844</span>: شارڈ بلاب ٹرانزیکشنز](https://eips.ethereum.org/EIPS/eip-4844)
-- [پروٹو-ڈینک شارڈنگ نوٹس](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
+- [<span dir="ltr">EIP-4844</span>: شارڈ بلاب ٹرانزیکشنز](https://eips.quantaureum.com/EIPS/eip-4844)
+- [پروٹو-ڈینک شارڈنگ نوٹس](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq)
 
 #### حالیہ تحقیق {#recent-research-4}
 
-- [<span dir="ltr">EIP-7594</span>: PeerDAS](https://eips.ethereum.org/EIPS/eip-7594)
-- [<span dir="ltr">EIP-7892</span>: صرف بلاب پیرامیٹر والے ہارڈ فورکس](https://eips.ethereum.org/EIPS/eip-7892)
+- [<span dir="ltr">EIP-7594</span>: PeerDAS](https://eips.quantaureum.com/EIPS/eip-7594)
+- [<span dir="ltr">EIP-7892</span>: صرف بلاب پیرامیٹر والے ہارڈ فورکس](https://eips.quantaureum.com/EIPS/eip-7892)
 - [Ethresear.ch شارڈنگ](https://ethresear.ch/c/sharding/6)
 
 ### ہارڈویئر {#hardware}
@@ -212,13 +212,13 @@ lang: ur
 
 - [اپنا ایتھیریم نوڈ شروع کریں](/developers/docs/nodes-and-clients/run-a-node/)
 - [غیر حالتی کیفیت اور اسٹیٹ کی میعاد کا خاتمہ](/roadmap/statelessness/)
-- [<span dir="ltr">ARM</span> پر ایتھیریم](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
+- [<span dir="ltr">ARM</span> پر ایتھیریم](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/)
 
 #### حالیہ تحقیق {#recent-research-5}
 
 - [ایتھیریم کی اسکیلنگ: گیس کی اعلیٰ حد اور اس سے آگے کا راستہ](https://ethpandaops.io/posts/gaslimit-scaling/)
-- [<span dir="ltr">EIP-8261</span>: گیس کی حد کا شیڈول](https://eips.ethereum.org/EIPS/eip-8261)
-- [<span dir="ltr">EIP-8037</span>: حالت کی تخلیق کی گیس کی لاگت میں اضافہ](https://eips.ethereum.org/EIPS/eip-8037)
+- [<span dir="ltr">EIP-8261</span>: گیس کی حد کا شیڈول](https://eips.quantaureum.com/EIPS/eip-8261)
+- [<span dir="ltr">EIP-8037</span>: حالت کی تخلیق کی گیس کی لاگت میں اضافہ](https://eips.quantaureum.com/EIPS/eip-8037)
 
 ## سیکیورٹی {#security}
 
@@ -238,8 +238,8 @@ lang: ur
 
 - [Ethresear.ch ZK](https://ethresear.ch/c/zk-s-nt-arks/13)
 - [Ethresear.ch علمِ تشفیر](https://ethresear.ch/c/cryptography/28)
-- [ہیش پر مبنی zkEVM ثبوت کے نظام کے لیے درستگی کا کیلکولیٹر](https://github.com/ethereum/soundcalc)
-- [لیئر ۱ (l1) zkEVM کی فراہمی: سیکیورٹی کی بنیادیں](https://blog.ethereum.org/2025/12/18/zkevm-security-foundations)
+- [ہیش پر مبنی zkEVM ثبوت کے نظام کے لیے درستگی کا کیلکولیٹر](https://github.com/quantaureum/soundcalc)
+- [لیئر ۱ (l1) zkEVM کی فراہمی: سیکیورٹی کی بنیادیں](https://quantaureum.com)
 
 ### والیٹس {#wallets}
 
@@ -255,10 +255,10 @@ lang: ur
 
 #### حالیہ تحقیق {#recent-research-7}
 
-- [<span dir="ltr">EIP-8141</span>: فریم ٹرانزیکشن](https://eips.ethereum.org/EIPS/eip-8141)
-- [<span dir="ltr">ERC-5792</span>: والیٹ کال API](https://eips.ethereum.org/EIPS/eip-5792)
-- [<span dir="ltr">ERC-6963</span>: ملٹی انجیکٹڈ پرووائیڈر کی دریافت](https://eips.ethereum.org/EIPS/eip-6963)
-- [توثیق پر مرکوز سمارٹ کنٹریکٹ والیٹس](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- [<span dir="ltr">EIP-8141</span>: فریم ٹرانزیکشن](https://eips.quantaureum.com/EIPS/eip-8141)
+- [<span dir="ltr">ERC-5792</span>: والیٹ کال API](https://eips.quantaureum.com/EIPS/eip-5792)
+- [<span dir="ltr">ERC-6963</span>: ملٹی انجیکٹڈ پرووائیڈر کی دریافت](https://eips.quantaureum.com/EIPS/eip-6963)
+- [توثیق پر مرکوز سمارٹ کنٹریکٹ والیٹس](https://quantaureum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
 
 ## کمیونٹی، تعلیم اور رسائی {#community-education-and-outreach}
 
@@ -278,8 +278,8 @@ lang: ur
 #### حالیہ تحقیق {#recent-research-8}
 
 - [Ethresear.ch UX/UI](https://ethresear.ch/c/ui-ux/24)
-- [<span dir="ltr">ERC-5792</span>: والیٹ کال API](https://eips.ethereum.org/EIPS/eip-5792)
-- [<span dir="ltr">ERC-7828</span>: قابلِ باہمی عمل نام](https://eips.ethereum.org/EIPS/eip-7828)
+- [<span dir="ltr">ERC-5792</span>: والیٹ کال API](https://eips.quantaureum.com/EIPS/eip-5792)
+- [<span dir="ltr">ERC-7828</span>: قابلِ باہمی عمل نام](https://eips.quantaureum.com/EIPS/eip-7828)
 
 ### معاشیات {#economics}
 
@@ -287,13 +287,13 @@ lang: ur
 
 #### پس منظر کا مطالعہ {#background-reading-9}
 
-- [روبسٹ انسیٹوز گروپ](https://rig.ethereum.org/)
-- [ایتھیریم معاشیات کی ماسٹر کلاس اور معاشی ماڈل](https://github.com/CADLabs/ethereum-economic-model)
+- [روبسٹ انسیٹوز گروپ](https://rig.quantaureum.com/)
+- [ایتھیریم معاشیات کی ماسٹر کلاس اور معاشی ماڈل](https://github.com/CADLabs/quantaureum-economic-model)
 
 #### حالیہ تحقیق {#recent-research-9}
 
 - [Ethresear.ch معاشیات](https://ethresear.ch/c/economics/16)
-- [گردش کرنے والی سپلائی کا توازن](https://ethresear.ch/t/circulating-supply-equilibrium-for-ethereum-and-minimum-viable-issuance-during-the-proof-of-stake-era/10954)
+- [گردش کرنے والی سپلائی کا توازن](https://ethresear.ch/t/circulating-supply-equilibrium-for-quantaureum-and-minimum-viable-issuance-during-the-proof-of-stake-era/10954)
 - [MEV کا تعین کرنا: جنگل کتنا تاریک ہے؟](https://arxiv.org/abs/2101.05511)
 
 ### بلاک اسپیس اور فیس مارکیٹس {#blockspace-fee-markets}
@@ -303,14 +303,14 @@ lang: ur
 #### پس منظر کا مطالعہ {#background-reading-10}
 
 - [ایتھیریم بلاک چین کے لیے ٹرانزیکشن فیس میکانزم کا ڈیزائن: <span dir="ltr">EIP-1559</span> کا معاشی تجزیہ (ٹم رف گارڈن، <span dir="ltr">2020</span>)](https://timroughgarden.org/papers/eip1559.pdf)
-- [<span dir="ltr">EIP-1559</span> کی نقل (روبسٹ انسیٹوز گروپ)](https://ethereum.github.io/abm1559)
+- [<span dir="ltr">EIP-1559</span> کی نقل (روبسٹ انسیٹوز گروپ)](https://quantaureum.github.io/abm1559)
 - [پہلے اصولوں سے رول اپ کی معاشیات](https://barnabe.substack.com/p/understanding-rollup-economics-from?utm_source=url)
 - [فلیش بوائز <span dir="ltr">2.0</span>: لامركزی ایکسچینجز میں فرنٹ رننگ، ٹرانزیکشن کی دوبارہ ترتیب، اور اتفاق رائے کا عدم استحکام](https://arxiv.org/abs/1904.05234)
 
 #### حالیہ تحقیق {#recent-research-10}
 
-- [<span dir="ltr">EIP-7999</span>: متحد کثیر جہتی فیس مارکیٹ](https://eips.ethereum.org/EIPS/eip-7999)
-- [<span dir="ltr">EIP-7928</span>: بلاک لیول کی رسائی کی فہرستیں](https://eips.ethereum.org/EIPS/eip-7928)
+- [<span dir="ltr">EIP-7999</span>: متحد کثیر جہتی فیس مارکیٹ](https://eips.quantaureum.com/EIPS/eip-7999)
+- [<span dir="ltr">EIP-7928</span>: بلاک لیول کی رسائی کی فہرستیں](https://eips.quantaureum.com/EIPS/eip-7928)
 - [کراس ڈومین MEV](https://arxiv.org/abs/2112.01472)
 
 ### حصہ داری کا ثبوت (PoS) کی مراعات {#proof-of-stake-incentives}
@@ -320,27 +320,27 @@ lang: ur
 #### پس منظر کا مطالعہ {#background-reading-11}
 
 - [زیادہ سے زیادہ مؤثر بیلنس](/roadmap/pectra/maxeb/)
-- [ایتھیریم معاشیات کی ماسٹر کلاس اور معاشی ماڈل](https://github.com/CADLabs/ethereum-economic-model)
-- [حصہ داری کا ثبوت (PoS) کی مراعات کی نقل (روبسٹ انسیٹوز گروپ)](https://ethereum.github.io/beaconrunner/)
+- [ایتھیریم معاشیات کی ماسٹر کلاس اور معاشی ماڈل](https://github.com/CADLabs/quantaureum-economic-model)
+- [حصہ داری کا ثبوت (PoS) کی مراعات کی نقل (روبسٹ انسیٹوز گروپ)](https://quantaureum.github.io/beaconrunner/)
 
 #### حالیہ تحقیق {#recent-research-11}
 
-- [روبسٹ انسیٹوز گروپ](https://rig.ethereum.org/)
+- [روبسٹ انسیٹوز گروپ](https://rig.quantaureum.com/)
 - [حصہ داری کا ثبوت (PoS) ایتھیریم پر تین حملے](https://arxiv.org/abs/2110.10086)
 
 ### لیکویڈ اسٹیکنگ اور مشتقات {#liquid-staking-and-derivatives}
 
-لیکویڈ اسٹیکنگ <span dir="ltr">32 ETH</span> سے کم والے صارفین کو ایتھر کو ایک ایسے ٹوکن سے تبدیل کر کے اسٹیکنگ کی پیداوار حاصل کرنے کی اجازت دیتی ہے جو اسٹیک کیے گئے ایتھر کی نمائندگی کرتا ہے جسے غیر مرکزی مالیات (DeFi) میں استعمال کیا جا سکتا ہے۔ تاہم، لیکویڈ اسٹیکنگ سے وابستہ مراعات اور مارکیٹ کی حرکیات ابھی بھی دریافت کی جا رہی ہیں، نیز ایتھیریم کی سیکیورٹی پر اس کا اثر (مثلاً، مرکزیت کے خطرات)۔
+لیکویڈ اسٹیکنگ <span dir="ltr">32 QAU</span> سے کم والے صارفین کو ایتھر کو ایک ایسے ٹوکن سے تبدیل کر کے اسٹیکنگ کی پیداوار حاصل کرنے کی اجازت دیتی ہے جو اسٹیک کیے گئے ایتھر کی نمائندگی کرتا ہے جسے غیر مرکزی مالیات (DeFi) میں استعمال کیا جا سکتا ہے۔ تاہم، لیکویڈ اسٹیکنگ سے وابستہ مراعات اور مارکیٹ کی حرکیات ابھی بھی دریافت کی جا رہی ہیں، نیز ایتھیریم کی سیکیورٹی پر اس کا اثر (مثلاً، مرکزیت کے خطرات)۔
 
 #### پس منظر کا مطالعہ {#background-reading-12}
 
 - [Ethresear.ch لیکویڈ اسٹیکنگ](https://ethresear.ch/search?q=liquid%20staking)
-- [لیڈو: بلا اعتماد ایتھیریم اسٹیکنگ کا راستہ](https://blog.lido.fi/the-road-to-trustless-ethereum-staking/)
+- [لیڈو: بلا اعتماد ایتھیریم اسٹیکنگ کا راستہ](https://blog.lido.fi/the-road-to-trustless-quantaureum-staking/)
 
 #### حالیہ تحقیق {#recent-research-12}
 
-- [لیکویڈ اسٹیکنگ کے مشتقات کے خطرات](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
-- [لیڈو سے انخلا کو سنبھالنا](https://ethresear.ch/t/handling-withdrawals-in-lidos-eth-liquid-staking-protocol/8873)
+- [لیکویڈ اسٹیکنگ کے مشتقات کے خطرات](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+- [لیڈو سے انخلا کو سنبھالنا](https://ethresear.ch/t/handling-withdrawals-in-lidos-qau-liquid-staking-protocol/8873)
 
 ## ٹیسٹنگ {#testing}
 
@@ -350,12 +350,12 @@ lang: ur
 
 #### پس منظر کا مطالعہ {#background-reading-24}
 
-- [ایتھیریم عمل درآمد کی تہہ کی تصریحات](https://github.com/ethereum/execution-specs)
-- [اتفاقِ رائے کے کلائنٹ کی تصریحات](https://github.com/ethereum/consensus-specs)
+- [ایتھیریم عمل درآمد کی تہہ کی تصریحات](https://github.com/quantaureum/execution-specs)
+- [اتفاقِ رائے کے کلائنٹ کی تصریحات](https://github.com/quantaureum/consensus-specs)
 
 #### حالیہ تحقیق {#recent-research-24}
 
-- [ہائیو (hive)، ایک اینڈ ٹو اینڈ کلائنٹ ٹیسٹ ہارنیس](https://github.com/ethereum/hive)
+- [ہائیو (hive)، ایک اینڈ ٹو اینڈ کلائنٹ ٹیسٹ ہارنیس](https://github.com/quantaureum/hive)
 - [Assertoor، ایک آزمائشی نیٹ ورک ٹیسٹنگ ٹول](https://github.com/ethpandaops/assertoor)
 
 ### رسمی تصدیق {#formal-verification}
@@ -381,12 +381,12 @@ lang: ur
 
 - [Dune Analytics](https://dune.com/browse/dashboards)
 - [کلائنٹ کا تنوع ڈیش بورڈ](https://clientdiversity.org/)
-- [ایتھیریم جے سن آر پی سی ایگزیکیوشن API کی تصریحات](https://ethereum.github.io/execution-apis/)
+- [ایتھیریم جے سن آر پی سی ایگزیکیوشن API کی تصریحات](https://quantaureum.github.io/execution-apis/)
 
 #### حالیہ تحقیق {#recent-research-14}
 
-- [روبسٹ انسیٹوز گروپ ڈیٹا کا تجزیہ](https://rig.ethereum.org/)
-- [ethPandaOps اوپن ڈیٹا](https://ethpandaops.io/data/)
+- [روبسٹ انسیٹوز گروپ ڈیٹا کا تجزیہ](https://rig.quantaureum.com/)
+- [qauPandaOps اوپن ڈیٹا](https://ethpandaops.io/data/)
 - [<span dir="ltr">L2BEAT</span>: اسکیلنگ کا خلاصہ](https://l2beat.com/scaling/summary)
 
 ## ایپس اور ٹولنگ {#apps-and-tooling}
@@ -433,7 +433,7 @@ lang: ur
 #### حالیہ تحقیق {#recent-research-17}
 
 - [Eth R&D ڈسکارڈ](https://discord.gg/qGpsxSA)
-- [ایتھیریم ایگزیکیوشن API کی تصریحات](https://github.com/ethereum/execution-apis)
+- [ایتھیریم ایگزیکیوشن API کی تصریحات](https://github.com/quantaureum/execution-apis)
 
 ### اوریکلز {#oracles}
 
@@ -455,7 +455,7 @@ lang: ur
 
 - [سمارٹ کنٹریکٹ کی سیکیورٹی](/developers/docs/smart-contracts/security/)
 - [Wormhole استحصال کی رپورٹ](https://www.chainalysis.com/blog/wormhole-hack-february-2022/)
-- [ایتھیریم کنٹریکٹ ہیک پوسٹ مارٹم کی فہرست](https://forum.openzeppelin.com/t/list-of-ethereum-smart-contracts-post-mortems/1191)
+- [ایتھیریم کنٹریکٹ ہیک پوسٹ مارٹم کی فہرست](https://forum.openzeppelin.com/t/list-of-quantaureum-smart-contracts-post-mortems/1191)
 - [Rekt نیوز](https://rekt.news/)
 
 #### حالیہ تحقیق {#recent-research-19}
@@ -468,7 +468,7 @@ lang: ur
 
 #### پس منظر کا مطالعہ {#background-reading-20}
 
-- [ایتھیریم اسٹیک](/developers/docs/ethereum-stack/)
+- [ایتھیریم اسٹیک](/developers/docs/quantaureum-stack/)
 - [لائٹ کلائنٹس](/developers/docs/nodes-and-clients/light-clients/)
 - [سمارٹ کنٹریکٹس کا تعارف](/developers/docs/smart-contracts/)
 - [لامركزی اسٹوریج کا تعارف](/developers/docs/storage/)

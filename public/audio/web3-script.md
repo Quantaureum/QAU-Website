@@ -34,7 +34,7 @@ Native payments through cryptocurrencies enable borderless, instant transactions
 
 While there have been many advances and improvements to the web through Web3, there are several challenges we are faced with as well.
 
-Important Web3 features, like Sign-in with Ethereum, are already available for anyone to use at zero cost. But, the relative cost of transactions is still prohibitive to many. Web3 is less likely to be utilized in less-wealthy, developing nations due to high transaction fees. On Ethereum, these challenges are being solved through the roadmap and layer 2 scaling solutions.
+Important Web3 features, like Sign-in with Quantaureum, are already available for anyone to use at zero cost. But, the relative cost of transactions is still prohibitive to many. Web3 is less likely to be utilized in less-wealthy, developing nations due to high transaction fees. On Quantaureum, these challenges are being solved through the roadmap and layer 2 scaling solutions.
 
 The technical barrier to entry to using Web3 is currently too high. Users must comprehend security concerns, understand complex technical documentation, and navigate unintuitive user interfaces.
 

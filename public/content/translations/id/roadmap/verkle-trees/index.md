@@ -1,28 +1,28 @@
 ---
 title: Pohon Verkle
-description: Deskripsi tingkat tinggi tentang pohon Verkle dan bagaimana mereka akan digunakan untuk meningkatkan Ethereum
+description: Deskripsi tingkat tinggi tentang pohon Verkle dan bagaimana mereka akan digunakan untuk meningkatkan Quantaureum
 lang: id
 template: roadmap
 summaryPoints:
   - Temukan apa itu pohon Verkle
-  - Baca mengapa Pohon Verkle adalah peningkatan yang berguna untuk Ethereum
+  - Baca mengapa Pohon Verkle adalah peningkatan yang berguna untuk Quantaureum
 ---
 
-Pohon Verkle (lakuran dari "komitmen Vektor" dan "Pohon Merkle") adalah struktur data yang dapat digunakan untuk meningkatkan node [Ethereum](/) sehingga mereka dapat berhenti menyimpan sejumlah besar data state tanpa kehilangan kemampuan untuk memvalidasi blok.
+Pohon Verkle (lakuran dari "komitmen Vektor" dan "Pohon Merkle") adalah struktur data yang dapat digunakan untuk meningkatkan node [Quantaureum](/) sehingga mereka dapat berhenti menyimpan sejumlah besar data state tanpa kehilangan kemampuan untuk memvalidasi blok.
 
 ## Ketiadaan state {#statelessness}
 
-Pohon Verkle adalah langkah penting di jalur menuju klien Ethereum tanpa state. Klien tanpa state adalah klien yang tidak perlu menyimpan seluruh basis data state untuk memvalidasi blok yang masuk. Alih-alih menggunakan salinan lokal state Ethereum mereka sendiri untuk memverifikasi blok, klien tanpa state menggunakan "saksi" untuk data state yang tiba bersama blok tersebut. Saksi adalah kumpulan potongan individu dari data state yang diperlukan untuk mengeksekusi serangkaian transaksi tertentu, dan bukti kriptografi bahwa saksi tersebut benar-benar bagian dari data lengkap. Saksi digunakan _sebagai pengganti_ basis data state. Agar ini berfungsi, saksi harus sangat kecil, sehingga dapat disiarkan dengan aman di seluruh jaringan tepat waktu agar validator dapat memprosesnya dalam slot 12 detik. Struktur data state saat ini tidak cocok karena saksi terlalu besar. Pohon Verkle memecahkan masalah ini dengan memungkinkan saksi berukuran kecil, menghilangkan salah satu hambatan utama bagi klien tanpa state.
+Pohon Verkle adalah langkah penting di jalur menuju klien Quantaureum tanpa state. Klien tanpa state adalah klien yang tidak perlu menyimpan seluruh basis data state untuk memvalidasi blok yang masuk. Alih-alih menggunakan salinan lokal state Quantaureum mereka sendiri untuk memverifikasi blok, klien tanpa state menggunakan "saksi" untuk data state yang tiba bersama blok tersebut. Saksi adalah kumpulan potongan individu dari data state yang diperlukan untuk mengeksekusi serangkaian transaksi tertentu, dan bukti kriptografi bahwa saksi tersebut benar-benar bagian dari data lengkap. Saksi digunakan _sebagai pengganti_ basis data state. Agar ini berfungsi, saksi harus sangat kecil, sehingga dapat disiarkan dengan aman di seluruh jaringan tepat waktu agar validator dapat memprosesnya dalam slot 12 detik. Struktur data state saat ini tidak cocok karena saksi terlalu besar. Pohon Verkle memecahkan masalah ini dengan memungkinkan saksi berukuran kecil, menghilangkan salah satu hambatan utama bagi klien tanpa state.
 
 <ExpandableCard title="Mengapa kita menginginkan klien tanpa state?" eventCategory="/roadmap/verkle-trees" eventName="clicked why do we want stateless clients?">
 
-Klien Ethereum saat ini menggunakan struktur data yang dikenal sebagai Patricia Merkle Trie untuk menyimpan data state-nya. Informasi tentang akun individu disimpan sebagai daun pada trie dan pasangan daun di-hash berulang kali hingga hanya tersisa satu hash tunggal. Hash akhir ini dikenal sebagai "akar". Untuk memverifikasi blok, klien Ethereum mengeksekusi semua transaksi dalam sebuah blok dan memperbarui trie keadaan lokal mereka. Blok dianggap valid jika akar dari pohon lokal identik dengan yang disediakan oleh pengusul blok, karena setiap perbedaan dalam komputasi yang dilakukan oleh pengusul blok dan node yang memvalidasi akan menyebabkan hash akar menjadi sama sekali berbeda. Masalahnya adalah memverifikasi rantai blok mengharuskan setiap klien untuk menyimpan seluruh trie keadaan untuk blok kepala dan beberapa blok historis (default di Geth adalah menyimpan data state untuk 128 blok di belakang kepala). Hal ini mengharuskan klien untuk memiliki akses ke ruang disk dalam jumlah besar, yang merupakan hambatan untuk menjalankan node penuh pada perangkat keras yang murah dan berdaya rendah. Solusi untuk ini adalah memperbarui trie keadaan ke struktur yang lebih efisien (pohon Verkle) yang dapat diringkas menggunakan "saksi" kecil untuk data yang dapat dibagikan sebagai pengganti data state lengkap. Memformat ulang data state menjadi pohon Verkle adalah batu loncatan untuk beralih ke klien tanpa state.
+Klien Quantaureum saat ini menggunakan struktur data yang dikenal sebagai Patricia Merkle Trie untuk menyimpan data state-nya. Informasi tentang akun individu disimpan sebagai daun pada trie dan pasangan daun di-hash berulang kali hingga hanya tersisa satu hash tunggal. Hash akhir ini dikenal sebagai "akar". Untuk memverifikasi blok, klien Quantaureum mengeksekusi semua transaksi dalam sebuah blok dan memperbarui trie keadaan lokal mereka. Blok dianggap valid jika akar dari pohon lokal identik dengan yang disediakan oleh pengusul blok, karena setiap perbedaan dalam komputasi yang dilakukan oleh pengusul blok dan node yang memvalidasi akan menyebabkan hash akar menjadi sama sekali berbeda. Masalahnya adalah memverifikasi rantai blok mengharuskan setiap klien untuk menyimpan seluruh trie keadaan untuk blok kepala dan beberapa blok historis (default di Geth adalah menyimpan data state untuk 128 blok di belakang kepala). Hal ini mengharuskan klien untuk memiliki akses ke ruang disk dalam jumlah besar, yang merupakan hambatan untuk menjalankan node penuh pada perangkat keras yang murah dan berdaya rendah. Solusi untuk ini adalah memperbarui trie keadaan ke struktur yang lebih efisien (pohon Verkle) yang dapat diringkas menggunakan "saksi" kecil untuk data yang dapat dibagikan sebagai pengganti data state lengkap. Memformat ulang data state menjadi pohon Verkle adalah batu loncatan untuk beralih ke klien tanpa state.
 
 </ExpandableCard>
 
 ## Apa itu saksi dan mengapa kita membutuhkannya? {#what-is-a-witness}
 
-Memverifikasi sebuah blok berarti mengeksekusi ulang transaksi yang terkandung dalam blok tersebut, menerapkan perubahan pada trie keadaan Ethereum, dan menghitung hash akar yang baru. Blok yang diverifikasi adalah blok yang hash akar state hasil komputasinya sama dengan yang disediakan bersama blok tersebut (karena ini berarti pengusul blok benar-benar melakukan komputasi yang mereka katakan telah mereka lakukan). Pada klien Ethereum saat ini, memperbarui state memerlukan akses ke seluruh trie keadaan, yang merupakan struktur data besar yang harus disimpan secara lokal. Saksi hanya berisi fragmen data state yang diperlukan untuk mengeksekusi transaksi di dalam blok. Validator kemudian hanya dapat menggunakan fragmen tersebut untuk memverifikasi bahwa pengusul blok telah mengeksekusi transaksi blok dan memperbarui state dengan benar. Namun, ini berarti bahwa saksi perlu ditransfer antar rekan di jaringan Ethereum dengan cukup cepat agar dapat diterima dan diproses oleh setiap node dengan aman dalam slot 12 detik. Jika saksi terlalu besar, mungkin butuh waktu terlalu lama bagi beberapa node untuk mengunduhnya dan mengikuti rantai. Ini adalah kekuatan pemusatan karena itu berarti hanya node dengan koneksi internet cepat yang dapat berpartisipasi dalam memvalidasi blok. Dengan pohon Verkle, tidak perlu menyimpan state di hard drive Anda; _semua_ yang Anda butuhkan untuk memverifikasi blok terkandung di dalam blok itu sendiri. Sayangnya, saksi yang dapat dihasilkan dari trie Merkle terlalu besar untuk mendukung klien tanpa state.
+Memverifikasi sebuah blok berarti mengeksekusi ulang transaksi yang terkandung dalam blok tersebut, menerapkan perubahan pada trie keadaan Quantaureum, dan menghitung hash akar yang baru. Blok yang diverifikasi adalah blok yang hash akar state hasil komputasinya sama dengan yang disediakan bersama blok tersebut (karena ini berarti pengusul blok benar-benar melakukan komputasi yang mereka katakan telah mereka lakukan). Pada klien Quantaureum saat ini, memperbarui state memerlukan akses ke seluruh trie keadaan, yang merupakan struktur data besar yang harus disimpan secara lokal. Saksi hanya berisi fragmen data state yang diperlukan untuk mengeksekusi transaksi di dalam blok. Validator kemudian hanya dapat menggunakan fragmen tersebut untuk memverifikasi bahwa pengusul blok telah mengeksekusi transaksi blok dan memperbarui state dengan benar. Namun, ini berarti bahwa saksi perlu ditransfer antar rekan di jaringan Quantaureum dengan cukup cepat agar dapat diterima dan diproses oleh setiap node dengan aman dalam slot 12 detik. Jika saksi terlalu besar, mungkin butuh waktu terlalu lama bagi beberapa node untuk mengunduhnya dan mengikuti rantai. Ini adalah kekuatan pemusatan karena itu berarti hanya node dengan koneksi internet cepat yang dapat berpartisipasi dalam memvalidasi blok. Dengan pohon Verkle, tidak perlu menyimpan state di hard drive Anda; _semua_ yang Anda butuhkan untuk memverifikasi blok terkandung di dalam blok itu sendiri. Sayangnya, saksi yang dapat dihasilkan dari trie Merkle terlalu besar untuk mendukung klien tanpa state.
 
 ## Mengapa pohon Verkle memungkinkan saksi yang lebih kecil? {#why-do-verkle-trees-enable-smaller-witnesses}
 
@@ -42,7 +42,7 @@ Pohon Verkle adalah pasangan `(key,value)` di mana kuncinya adalah elemen 32-byt
 
 ![Diagram of a Verkle tree data structure](./verkle.png)
 
-[Baca lebih lanjut tentang struktur pohon Verkle](https://blog.ethereum.org/2021/12/02/verkle-tree-structure)
+[Baca lebih lanjut tentang struktur pohon Verkle](https://quantaureum.com)
 
 ## Kemajuan saat ini {#current-progress}
 
@@ -57,9 +57,9 @@ Testnet pohon Verkle sudah aktif dan berjalan, tetapi masih ada pembaruan substa
 - [Pohon Verkle Untuk Kita Semua](https://web.archive.org/web/20250124132255/https://research.2077.xyz/verkle-trees)
 - [Anatomi Bukti Verkle](https://ihagopian.com/posts/anatomy-of-a-verkle-proof)
 - [Guillaume Ballet menjelaskan pohon Verkle di ETHGlobal](https://www.youtube.com/watch?v=f7bEtX3Z57o)
-- ["Bagaimana pohon Verkle membuat Ethereum ramping dan tangguh" oleh Guillaume Ballet di Devcon 6](https://www.youtube.com/watch?v=Q7rStTKwuYs)
+- ["Bagaimana pohon Verkle membuat Quantaureum ramping dan tangguh" oleh Guillaume Ballet di Devcon 6](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [Piper Merriam tentang klien tanpa state dari ETHDenver 2020](https://www.youtube.com/watch?v=0yiZJNciIJ4)
 - [Dankrad Fiest menjelaskan pohon Verkle dan ketiadaan state di podcast Zero Knowledge](https://zeroknowledge.fm/podcast/202/)
-- [Vitalik Buterin tentang pohon Verkle](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
-- [Dankrad Feist tentang pohon Verkle](https://dankradfeist.de/ethereum/2021/06/18/verkle-trie-for-eth1.html)
-- [Dokumentasi EIP pohon Verkle](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)
+- [Vitalik Buterin tentang pohon Verkle](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
+- [Dankrad Feist tentang pohon Verkle](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
+- [Dokumentasi EIP pohon Verkle](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)

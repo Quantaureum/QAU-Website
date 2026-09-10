@@ -4,8 +4,8 @@ import { fetchRetry } from "./fetchRetry"
 
 export const FETCH_GIT_HISTORY_TASK_ID = "fetch-git-history"
 
-const owner = "ethereum"
-const repo = "ethereum-org-website"
+const owner = "quantaureum"
+const repo = "quantaureum-org-website"
 
 /**
  * Fetch recent commit history from the GitHub repository.

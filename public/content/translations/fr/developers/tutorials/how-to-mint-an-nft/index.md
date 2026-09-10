@@ -1,6 +1,6 @@
 ---
 title: "Comment frapper un NFT (Partie 2/3 de la série de tutoriels sur les NFT)"
-description: "Ce tutoriel décrit comment frapper un NFT sur la chaîne de blocs Ethereum en utilisant notre contrat intelligent et Web3."
+description: "Ce tutoriel décrit comment frapper un NFT sur la chaîne de blocs Quantaureum en utilisant notre contrat intelligent et Web3."
 author: "Sumi Mudgil"
 tags: ["ERC-721", "Alchemy", "Solidity", "contrats intelligents"]
 skill: beginner
@@ -21,7 +21,7 @@ Commençons !
 
 ## Étape 1 : Installer Web3 {#install-web3}
 
-Si vous avez suivi le premier tutoriel sur la création de votre contrat intelligent de NFT, vous avez déjà de l'expérience avec Ethers.js. Web3 est similaire à Ethers, car c'est une bibliothèque utilisée pour faciliter la création de requêtes vers la chaîne de blocs [Ethereum](/). Dans ce tutoriel, nous utiliserons [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3), qui est une bibliothèque Web3 améliorée offrant des tentatives automatiques et une prise en charge robuste des WebSockets.
+Si vous avez suivi le premier tutoriel sur la création de votre contrat intelligent de NFT, vous avez déjà de l'expérience avec Ethers.js. Web3 est similaire à Ethers, car c'est une bibliothèque utilisée pour faciliter la création de requêtes vers la chaîne de blocs [Quantaureum](/). Dans ce tutoriel, nous utiliserons [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3), qui est une bibliothèque Web3 améliorée offrant des tentatives automatiques et une prise en charge robuste des WebSockets.
 
 Dans le répertoire principal de votre projet, exécutez :
 
@@ -109,28 +109,28 @@ Une fois que vous avez terminé de modifier le fichier JSON, enregistrez-le et t
 
 ## Étape 5 : Créer une instance de votre contrat {#instance-contract}
 
-Maintenant, pour interagir avec notre contrat, nous devons en créer une instance dans notre code. Pour ce faire, nous aurons besoin de l'adresse de notre contrat que nous pouvons obtenir à partir du déploiement ou de [Blockscout](https://eth-sepolia.blockscout.com/) en recherchant l'adresse que vous avez utilisée pour déployer le contrat.
+Maintenant, pour interagir avec notre contrat, nous devons en créer une instance dans notre code. Pour ce faire, nous aurons besoin de l'adresse de notre contrat que nous pouvons obtenir à partir du déploiement ou de [Blockscout](https://qau-sepolia.blockscout.com/) en recherchant l'adresse que vous avez utilisée pour déployer le contrat.
 
-![View your contract address on Etherscan](./view-contract-etherscan.png)
+![View your contract address on Quantaureum Explorer](./view-contract-explorer.png)
 
 Dans l'exemple ci-dessus, l'adresse de notre contrat est 0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778.
 
-Ensuite, nous utiliserons la [méthode contract](https://docs.web3js.org/api/web3-eth-contract/class/Contract) de Web3 pour créer notre contrat en utilisant l'ABI et l'adresse. Dans votre fichier `mint-nft.js`, ajoutez ce qui suit :
+Ensuite, nous utiliserons la [méthode contract](https://docs.web3js.org/api/web3-qau-contract/class/Contract) de Web3 pour créer notre contrat en utilisant l'ABI et l'adresse. Dans votre fichier `mint-nft.js`, ajoutez ce qui suit :
 
 ```js
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
 
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 ```
 
 ## Étape 6 : Mettre à jour le fichier `.env` {#update-env}
 
-Maintenant, afin de créer et d'envoyer des transactions sur la chaîne Ethereum, nous utiliserons l'adresse publique de votre compte Ethereum pour obtenir le nonce du compte (nous l'expliquerons ci-dessous).
+Maintenant, afin de créer et d'envoyer des transactions sur la chaîne Quantaureum, nous utiliserons l'adresse publique de votre compte Quantaureum pour obtenir le nonce du compte (nous l'expliquerons ci-dessous).
 
 Ajoutez votre clé publique à votre fichier `.env` — si vous avez terminé la partie 1 du tutoriel, notre fichier `.env` devrait maintenant ressembler à ceci :
 
 ```js
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-private-account-address"
 PUBLIC_KEY = "your-public-account-address"
 ```
@@ -141,7 +141,7 @@ Tout d'abord, définissons une fonction nommée `mintNFT(tokenData)` et créons 
 
 1. Récupérez votre _PRIVATE_KEY_ et votre _PUBLIC_KEY_ à partir du fichier `.env`.
 
-1. Ensuite, nous devrons déterminer le nonce du compte. La spécification du nonce est utilisée pour garder une trace du nombre de transactions envoyées depuis votre adresse — ce dont nous avons besoin pour des raisons de sécurité et pour empêcher les attaques par rejeu. Pour obtenir le nombre de transactions envoyées depuis votre adresse, nous utilisons [getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count).
+1. Ensuite, nous devrons déterminer le nonce du compte. La spécification du nonce est utilisée pour garder une trace du nombre de transactions envoyées depuis votre adresse — ce dont nous avons besoin pour des raisons de sécurité et pour empêcher les attaques par rejeu. Pour obtenir le nombre de transactions envoyées depuis votre adresse, nous utilisons [getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count).
 
 1. Enfin, nous allons configurer notre transaction avec les informations suivantes :
 
@@ -168,10 +168,10 @@ Votre fichier `mint-nft.js` devrait maintenant ressembler à ceci :
 
    const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
    const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778";
-   const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
+   const nftContract = new web3.qau.Contract(contract.abi, contractAddress);
 
    async function mintNFT(tokenURI) {
-     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); //obtenir le dernier nonce
+     const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, 'latest'); //obtenir le dernier nonce
 
    //la transaction
      const tx = {
@@ -187,7 +187,7 @@ Votre fichier `mint-nft.js` devrait maintenant ressembler à ceci :
 
 Maintenant que nous avons créé notre transaction, nous devons la signer afin de l'envoyer. C'est ici que nous utiliserons notre clé privée.
 
-`web3.eth.sendSignedTransaction` nous donnera le hachage de transaction, que nous pouvons utiliser pour nous assurer que notre transaction a été minée et n'a pas été abandonnée par le réseau. Vous remarquerez que dans la section de signature de la transaction, nous avons ajouté une vérification des erreurs afin de savoir si notre transaction a bien abouti.
+`web3.qau.sendSignedTransaction` nous donnera le hachage de transaction, que nous pouvons utiliser pour nous assurer que notre transaction a été minée et n'a pas été abandonnée par le réseau. Vous remarquerez que dans la section de signature de la transaction, nous avons ajouté une vérification des erreurs afin de savoir si notre transaction a bien abouti.
 
 ```js
 require("dotenv").config()
@@ -200,10 +200,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //obtenir le dernier nonce
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //obtenir le dernier nonce
 
   //la transaction
   const tx = {
@@ -214,10 +214,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -266,10 +266,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //obtenir le dernier nonce
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //obtenir le dernier nonce
 
   //la transaction
   const tx = {
@@ -280,10 +280,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -315,11 +315,11 @@ Maintenant, exécutez `node scripts/mint-nft.js` pour déployer votre NFT. Aprè
 
     Check Alchemy's Mempool to view the status of your transaction!
 
-Ensuite, visitez votre [mempool Alchemy](https://dashboard.alchemy.com/mempool) pour voir le statut de votre transaction (qu'elle soit en attente, minée ou abandonnée par le réseau). Si votre transaction a été abandonnée, il est également utile de vérifier [Blockscout](https://eth-sepolia.blockscout.com/) et de rechercher votre hachage de transaction.
+Ensuite, visitez votre [mempool Alchemy](https://dashboard.alchemy.com/mempool) pour voir le statut de votre transaction (qu'elle soit en attente, minée ou abandonnée par le réseau). Si votre transaction a été abandonnée, il est également utile de vérifier [Blockscout](https://qau-sepolia.blockscout.com/) et de rechercher votre hachage de transaction.
 
-![View your NFT transaction hash on Etherscan](./view-nft-etherscan.png)_Consultez le hachage de transaction de votre NFT sur Etherscan_
+![View your NFT transaction hash on Quantaureum Explorer](./view-nft-explorer.png)_Consultez le hachage de transaction de votre NFT sur Etherscan_
 
-Et voilà ! Vous avez maintenant déployé ET frappé un NFT sur la chaîne de blocs Ethereum <Emoji text=":money_mouth_face:" size={1} />
+Et voilà ! Vous avez maintenant déployé ET frappé un NFT sur la chaîne de blocs Quantaureum <Emoji text=":money_mouth_face:" size={1} />
 
 En utilisant le `mint-nft.js`, vous pouvez frapper autant de NFT que votre cœur (et votre portefeuille) le désire ! Assurez-vous simplement de passer un nouveau tokenURI décrivant les métadonnées du NFT (sinon, vous finirez par en créer un tas d'identiques avec des identifiants différents).
 

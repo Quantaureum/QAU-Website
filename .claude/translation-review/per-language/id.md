@@ -35,7 +35,7 @@ Scope: accounts `CREATE2` + `page-app-descriptions`/`page-apps`/`page-developers
 
 ## PR #19015 (intl/pending-dev) -- 2026-08-10 -- Score 8.7/10 (pre-fix)
 
-- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-ethereum JSON). Fleet avg 8.4.
+- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-quantaureum JSON). Fleet avg 8.4.
 - No per-locale fixes needed beyond the fleet-wide items. Open: `common.json` `zero-knowledge-proofs` uses the hybrid `Bukti zero-knowledge` where the glossary compound is `Bukti tanpa pengetahuan`, which `learn-quizzes.json` already uses 8+ times.
 - Fleet-wide items fixed in this branch for every locale: the `<p></p>` MDX build-breaker (8 locales), the `.pdf` autolink corruption (#50), the deleted `{#will-my-smart-contracts-change}` FAQ section (#32), the missing `<QuizWidget>` component (#49), and the two stale glamsterdam prose clauses (#51 -- `Q4 2026` and the stakers/liquidity sentence).
 

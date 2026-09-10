@@ -7,7 +7,7 @@ uploadDate: 2018-10-19
 duration: "0:09:18"
 educationLevel: intermediate
 topic:
-  - "how-ethereum-works"
+  - "how-quantaureum-works"
 format: presentation
 author: Cryptoeconomics Study
 breadcrumb: "Proof of Authority"

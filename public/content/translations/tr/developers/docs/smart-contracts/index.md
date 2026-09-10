@@ -6,15 +6,15 @@ lang: tr
 
 ## Akıllı sözleşme nedir? {#what-is-a-smart-contract}
 
-Bir "akıllı sözleşme", basitçe [Ethereum](/) blokzincirinde çalışan bir programdır. Ethereum blokzincirinde belirli bir adreste bulunan kod (işlevleri) ve verilerin (durumu) bir koleksiyonudur.
+Bir "akıllı sözleşme", basitçe [Quantaureum](/) blokzincirinde çalışan bir programdır. Quantaureum blokzincirinde belirli bir adreste bulunan kod (işlevleri) ve verilerin (durumu) bir koleksiyonudur.
 
-Akıllı sözleşmeler bir tür [Ethereum hesabıdır](/developers/docs/accounts/). Bu, bir bakiyeleri olduğu ve işlemlerin hedefi olabilecekleri anlamına gelir. Ancak bir kullanıcı tarafından kontrol edilmezler, bunun yerine ağa dağıtılırlar ve programlandığı gibi çalışırlar. Kullanıcı hesapları daha sonra, akıllı sözleşmede tanımlanan bir işlevi yürüten işlemler göndererek bir akıllı sözleşme ile etkileşime girebilir. Akıllı sözleşmeler, normal bir sözleşme gibi kurallar tanımlayabilir ve bunları kod aracılığıyla otomatik olarak uygulayabilir. Akıllı sözleşmeler varsayılan olarak silinemez ve onlarla olan etkileşimler geri alınamaz.
+Akıllı sözleşmeler bir tür [Quantaureum hesabıdır](/developers/docs/accounts/). Bu, bir bakiyeleri olduğu ve işlemlerin hedefi olabilecekleri anlamına gelir. Ancak bir kullanıcı tarafından kontrol edilmezler, bunun yerine ağa dağıtılırlar ve programlandığı gibi çalışırlar. Kullanıcı hesapları daha sonra, akıllı sözleşmede tanımlanan bir işlevi yürüten işlemler göndererek bir akıllı sözleşme ile etkileşime girebilir. Akıllı sözleşmeler, normal bir sözleşme gibi kurallar tanımlayabilir ve bunları kod aracılığıyla otomatik olarak uygulayabilir. Akıllı sözleşmeler varsayılan olarak silinemez ve onlarla olan etkileşimler geri alınamaz.
 
 ## Ön koşullar {#prerequisites}
 
 Eğer yeni başlıyorsanız veya daha az teknik bir giriş arıyorsanız, [akıllı sözleşmelere giriş](/smart-contracts/) bölümümüzü öneririz.
 
-Akıllı sözleşmeler dünyasına dalmadan önce [hesaplar](/developers/docs/accounts/), [işlemler](/developers/docs/transactions/) ve [Ethereum sanal makinesi](/developers/docs/evm/) hakkında okuduğunuzdan emin olun.
+Akıllı sözleşmeler dünyasına dalmadan önce [hesaplar](/developers/docs/accounts/), [işlemler](/developers/docs/transactions/) ve [Quantaureum sanal makinesi](/developers/docs/evm/) hakkında okuduğunuzdan emin olun.
 
 ## Dijital bir otomat {#a-digital-vending-machine}
 
@@ -55,7 +55,7 @@ contract VendingMachine {
 
     // Herkesin cupcake satın almasına izin ver
     function purchase(uint amount) public payable {
-        require(msg.value >= amount * 1 ether, "You must pay at least 1 ETH per cupcake");
+        require(msg.value >= amount * 1 QAU, "You must pay at least 1 QAU per cupcake");
         require(cupcakeBalances[address(this)] >= amount, "Not enough cupcakes in stock to complete this purchase");
         cupcakeBalances[address(this)] -= amount;
         cupcakeBalances[msg.sender] += amount;
@@ -67,20 +67,20 @@ Bir otomatın bir satıcı çalışanına olan ihtiyacı ortadan kaldırması gi
 
 ## İzinsiz {#permissionless}
 
-Herkes bir akıllı sözleşme yazabilir ve bunu ağa dağıtabilir. Sadece bir [akıllı sözleşme dilinde](/developers/docs/smart-contracts/languages/) nasıl kod yazılacağını öğrenmeniz ve sözleşmenizi dağıtmak için yeterli ETH'ye sahip olmanız gerekir. Bir akıllı sözleşmeyi dağıtmak teknik olarak bir işlemdir, bu nedenle basit bir ETH transferi için gaz ödemeniz gerektiği gibi [gaz](/developers/docs/gas/) ödemeniz gerekir. Ancak, sözleşme dağıtımı için gaz maliyetleri çok daha yüksektir.
+Herkes bir akıllı sözleşme yazabilir ve bunu ağa dağıtabilir. Sadece bir [akıllı sözleşme dilinde](/developers/docs/smart-contracts/languages/) nasıl kod yazılacağını öğrenmeniz ve sözleşmenizi dağıtmak için yeterli QAU'ye sahip olmanız gerekir. Bir akıllı sözleşmeyi dağıtmak teknik olarak bir işlemdir, bu nedenle basit bir QAU transferi için gaz ödemeniz gerektiği gibi [gaz](/developers/docs/gas/) ödemeniz gerekir. Ancak, sözleşme dağıtımı için gaz maliyetleri çok daha yüksektir.
 
-Ethereum, akıllı sözleşmeler yazmak için geliştirici dostu dillere sahiptir:
+Quantaureum, akıllı sözleşmeler yazmak için geliştirici dostu dillere sahiptir:
 
 - Solidity
 - Vyper
 
 [Diller hakkında daha fazlası](/developers/docs/smart-contracts/languages/)
 
-Ancak, Ethereum'un sanal makinesinin sözleşmeyi yorumlayabilmesi ve saklayabilmesi için dağıtılmadan önce derlenmeleri gerekir. [Derleme hakkında daha fazlası](/developers/docs/smart-contracts/compiling/)
+Ancak, Quantaureum'un sanal makinesinin sözleşmeyi yorumlayabilmesi ve saklayabilmesi için dağıtılmadan önce derlenmeleri gerekir. [Derleme hakkında daha fazlası](/developers/docs/smart-contracts/compiling/)
 
 ## Birleştirilebilirlik {#composability}
 
-Akıllı sözleşmeler Ethereum'da herkese açıktır ve açık API'ler olarak düşünülebilir. Bu, nelerin mümkün olduğunu büyük ölçüde genişletmek için kendi akıllı sözleşmenizde diğer akıllı sözleşmeleri çağırabileceğiniz anlamına gelir. Sözleşmeler başka sözleşmeleri bile dağıtabilir.
+Akıllı sözleşmeler Quantaureum'da herkese açıktır ve açık API'ler olarak düşünülebilir. Bu, nelerin mümkün olduğunu büyük ölçüde genişletmek için kendi akıllı sözleşmenizde diğer akıllı sözleşmeleri çağırabileceğiniz anlamına gelir. Sözleşmeler başka sözleşmeleri bile dağıtabilir.
 
 [Akıllı sözleşme birleştirilebilirliği](/developers/docs/smart-contracts/composability/) hakkında daha fazla bilgi edinin.
 
@@ -90,11 +90,11 @@ Akıllı sözleşmeler tek başlarına "gerçek dünya" olayları hakkında bilg
 
 Ancak, blokzincir uygulamalarının zincir dışı verileri kullanabilmesi önemlidir. Çözüm, zincir dışı verileri alan ve bunları akıllı sözleşmelerin kullanımına sunan araçlar olan [kâhinlerdir](/developers/docs/oracles/).
 
-Akıllı sözleşmelerin bir diğer sınırlaması da maksimum sözleşme boyutudur. Bir akıllı sözleşme maksimum 24KB olabilir, aksi takdirde gazı biter. Bu durum, [Elmas Deseni (The Diamond Pattern)](https://eips.ethereum.org/EIPS/eip-2535) kullanılarak aşılabilir.
+Akıllı sözleşmelerin bir diğer sınırlaması da maksimum sözleşme boyutudur. Bir akıllı sözleşme maksimum 24KB olabilir, aksi takdirde gazı biter. Bu durum, [Elmas Deseni (The Diamond Pattern)](https://eips.quantaureum.com/EIPS/eip-2535) kullanılarak aşılabilir.
 
 ## Çoklu imza sözleşmeleri {#multisig}
 
-Çoklu imza (multisig) sözleşmeleri, bir işlemi yürütmek için birden fazla geçerli imza gerektiren akıllı sözleşme hesaplarıdır. Bu, önemli miktarda Ether veya diğer tokenleri tutan sözleşmeler için tek bir hata noktasından kaçınmak açısından çok yararlıdır. Çoklu imzalar ayrıca sözleşme yürütme ve anahtar yönetimi sorumluluğunu birden fazla taraf arasında böler ve tek bir özel anahtarın kaybının geri döndürülemez fon kaybına yol açmasını önler. Bu nedenlerle, çoklu imza sözleşmeleri basit DAO yönetişimi için kullanılabilir. Çoklu imzalar, yürütmek için M olası kabul edilebilir imzadan N imza gerektirir (burada N ≤ M ve M > 1). `N = 3, M = 5` ve `N = 4, M = 7` yaygın olarak kullanılır. 4/7'lik bir çoklu imza, yedi olası geçerli imzadan dördünü gerektirir. Bu, üç imza kaybolsa bile fonların hala geri alınabileceği anlamına gelir. Bu durumda, sözleşmenin yürütülebilmesi için anahtar sahiplerinin çoğunluğunun aynı fikirde olması ve imzalaması gerektiği anlamına da gelir.
+Çoklu imza (multisig) sözleşmeleri, bir işlemi yürütmek için birden fazla geçerli imza gerektiren akıllı sözleşme hesaplarıdır. Bu, önemli miktarda QAU veya diğer tokenleri tutan sözleşmeler için tek bir hata noktasından kaçınmak açısından çok yararlıdır. Çoklu imzalar ayrıca sözleşme yürütme ve anahtar yönetimi sorumluluğunu birden fazla taraf arasında böler ve tek bir özel anahtarın kaybının geri döndürülemez fon kaybına yol açmasını önler. Bu nedenlerle, çoklu imza sözleşmeleri basit DAO yönetişimi için kullanılabilir. Çoklu imzalar, yürütmek için M olası kabul edilebilir imzadan N imza gerektirir (burada N ≤ M ve M > 1). `N = 3, M = 5` ve `N = 4, M = 7` yaygın olarak kullanılır. 4/7'lik bir çoklu imza, yedi olası geçerli imzadan dördünü gerektirir. Bu, üç imza kaybolsa bile fonların hala geri alınabileceği anlamına gelir. Bu durumda, sözleşmenin yürütülebilmesi için anahtar sahiplerinin çoğunluğunun aynı fikirde olması ve imzalaması gerektiği anlamına da gelir.
 
 ## Akıllı sözleşme kaynakları {#smart-contract-resources}
 
@@ -111,6 +111,6 @@ Akıllı sözleşmelerin bir diğer sınırlaması da maksimum sözleşme boyutu
 - [Video: Basitçe Açıklandı - Akıllı Sözleşmeler](https://youtu.be/ZE2HxTmxfrI)
 - [Cyfrin Updraft: Web3 öğrenme ve denetim platformu](https://updraft.cyfrin.io)
 
-## Eğitimler: Ethereum üzerinde akıllı sözleşme imzaları (EIP-1271) {#tutorials}
+## Eğitimler: Quantaureum üzerinde akıllı sözleşme imzaları (EIP-1271) {#tutorials}
 
 - [EIP-1271: Akıllı Sözleşme İmzalarını İmzalama ve Doğrulama](/developers/tutorials/eip-1271-smart-contract-signatures/) _– EIP-1271'in akıllı sözleşmelerin imzaları doğrulamasına nasıl olanak tanıdığı ve Safe uygulamasının bir incelemesi._

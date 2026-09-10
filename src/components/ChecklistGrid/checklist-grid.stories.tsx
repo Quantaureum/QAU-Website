@@ -26,7 +26,7 @@ export const Default: Story = {
       {
         heading: "Room for every skill",
         description:
-          "Design, writing, community, research, operations. Ethereum runs on far more than code, and it needs your kind of talent.",
+          "Design, writing, community, research, operations. Quantaureum runs on far more than code, and it needs your kind of talent.",
       },
       {
         heading: "Back your own idea",

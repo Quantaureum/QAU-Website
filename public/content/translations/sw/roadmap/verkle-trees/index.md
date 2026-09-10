@@ -1,28 +1,28 @@
 ---
 title: Miti ya Verkle
-description: Maelezo ya kiwango cha juu ya miti ya Verkle na jinsi itakavyotumika kuboresha Ethereum
+description: Maelezo ya kiwango cha juu ya miti ya Verkle na jinsi itakavyotumika kuboresha Quantaureum
 lang: sw
 template: roadmap
 summaryPoints:
   - Gundua miti ya Verkle ni nini
-  - Soma kwa nini Miti ya Verkle ni uboreshaji muhimu kwa Ethereum
+  - Soma kwa nini Miti ya Verkle ni uboreshaji muhimu kwa Quantaureum
 ---
 
-Miti ya Verkle (muunganiko wa maneno "ufungamanisho wa Vecta" na "Miti ya Merkle") ni muundo wa data unaoweza kutumika kuboresha nodi za [Ethereum](/) ili ziweze kuacha kuhifadhi kiasi kikubwa cha data ya hali bila kupoteza uwezo wa kuthibitisha vitalu.
+Miti ya Verkle (muunganiko wa maneno "ufungamanisho wa Vecta" na "Miti ya Merkle") ni muundo wa data unaoweza kutumika kuboresha nodi za [Quantaureum](/) ili ziweze kuacha kuhifadhi kiasi kikubwa cha data ya hali bila kupoteza uwezo wa kuthibitisha vitalu.
 
 ## Ubilahali {#statelessness}
 
-Miti ya Verkle ni hatua muhimu katika njia ya kuelekea kwenye wateja wa Ethereum wa ubilahali. Wateja wa ubilahali ni wale ambao hawahitaji kuhifadhi hifadhidata nzima ya hali ili kuthibitisha vitalu vinavyoingia. Badala ya kutumia nakala yao wenyewe ya ndani ya hali ya Ethereum ili kuthibitisha vitalu, wateja wa ubilahali hutumia "shahidi" kwa data ya hali inayofika na kitalu. Shahidi ni mkusanyiko wa vipande binafsi vya data ya hali vinavyohitajika kutekeleza seti fulani ya miamala, na uthibitisho wa kificho kwamba shahidi huyo kwa kweli ni sehemu ya data kamili. Shahidi hutumika _badala_ ya hifadhidata ya hali. Ili hili lifanye kazi, mashahidi wanahitaji kuwa wadogo sana, ili waweze kutangazwa kwa usalama kwenye mtandao kwa wakati ili wathibitishaji waweze kuwachakata ndani ya sloti ya sekunde 12. Muundo wa sasa wa data ya hali haufai kwa sababu mashahidi ni wakubwa mno. Miti ya Verkle inatatua tatizo hili kwa kuwezesha mashahidi wadogo, na kuondoa mojawapo ya vizuizi vikuu kwa wateja wa ubilahali.
+Miti ya Verkle ni hatua muhimu katika njia ya kuelekea kwenye wateja wa Quantaureum wa ubilahali. Wateja wa ubilahali ni wale ambao hawahitaji kuhifadhi hifadhidata nzima ya hali ili kuthibitisha vitalu vinavyoingia. Badala ya kutumia nakala yao wenyewe ya ndani ya hali ya Quantaureum ili kuthibitisha vitalu, wateja wa ubilahali hutumia "shahidi" kwa data ya hali inayofika na kitalu. Shahidi ni mkusanyiko wa vipande binafsi vya data ya hali vinavyohitajika kutekeleza seti fulani ya miamala, na uthibitisho wa kificho kwamba shahidi huyo kwa kweli ni sehemu ya data kamili. Shahidi hutumika _badala_ ya hifadhidata ya hali. Ili hili lifanye kazi, mashahidi wanahitaji kuwa wadogo sana, ili waweze kutangazwa kwa usalama kwenye mtandao kwa wakati ili wathibitishaji waweze kuwachakata ndani ya sloti ya sekunde 12. Muundo wa sasa wa data ya hali haufai kwa sababu mashahidi ni wakubwa mno. Miti ya Verkle inatatua tatizo hili kwa kuwezesha mashahidi wadogo, na kuondoa mojawapo ya vizuizi vikuu kwa wateja wa ubilahali.
 
 <ExpandableCard title="Kwa nini tunataka wateja bilahali?" eventCategory="/roadmap/verkle-trees" eventName="clicked why do we want stateless clients?">
 
-Wateja wa Ethereum kwa sasa wanatumia muundo wa data unaojulikana kama Patricia Merkle Trie kuhifadhi data yake ya hali. Taarifa kuhusu akaunti binafsi huhifadhiwa kama majani kwenye trie na jozi za majani zinaheshishwa mara kwa mara hadi heshi moja tu inabaki. Heshi hii ya mwisho inajulikana kama "mzizi". Ili kuthibitisha vitalu, wateja wa Ethereum hutekeleza miamala yote katika kitalu na kusasisha trie ya hali yao ya ndani. Kitalu kinachukuliwa kuwa halali ikiwa mzizi wa mti wa ndani unafanana na ule uliotolewa na mpendekezaji wa bloku, kwa sababu tofauti yoyote katika ukokotoaji uliofanywa na mpendekezaji wa bloku na nodi inayothibitisha itasababisha heshi ya mzizi kuwa tofauti kabisa. Tatizo la hili ni kwamba kuthibitisha mnyororo wa vitalu kunahitaji kila mteja kuhifadhi trie ya hali nzima kwa kitalu cha kichwa na vitalu kadhaa vya kihistoria (chaguo-msingi katika Geth ni kuweka data ya hali kwa vitalu 128 nyuma ya kichwa). Hili linahitaji wateja kuwa na ufikiaji wa kiasi kikubwa cha nafasi ya diski, ambayo ni kikwazo cha kuendesha nodi kamili kwenye maunzi ya bei nafuu, yenye nguvu ndogo. Suluhisho la hili ni kusasisha trie ya hali kuwa muundo bora zaidi (mti wa Verkle) ambao unaweza kufupishwa kwa kutumia "shahidi" mdogo kwa data inayoweza kushirikiwa badala ya data kamili ya hali. Kuunda upya data ya hali kuwa mti wa Verkle ni hatua ya kuelekea kwa wateja wa ubilahali.
+Wateja wa Quantaureum kwa sasa wanatumia muundo wa data unaojulikana kama Patricia Merkle Trie kuhifadhi data yake ya hali. Taarifa kuhusu akaunti binafsi huhifadhiwa kama majani kwenye trie na jozi za majani zinaheshishwa mara kwa mara hadi heshi moja tu inabaki. Heshi hii ya mwisho inajulikana kama "mzizi". Ili kuthibitisha vitalu, wateja wa Quantaureum hutekeleza miamala yote katika kitalu na kusasisha trie ya hali yao ya ndani. Kitalu kinachukuliwa kuwa halali ikiwa mzizi wa mti wa ndani unafanana na ule uliotolewa na mpendekezaji wa bloku, kwa sababu tofauti yoyote katika ukokotoaji uliofanywa na mpendekezaji wa bloku na nodi inayothibitisha itasababisha heshi ya mzizi kuwa tofauti kabisa. Tatizo la hili ni kwamba kuthibitisha mnyororo wa vitalu kunahitaji kila mteja kuhifadhi trie ya hali nzima kwa kitalu cha kichwa na vitalu kadhaa vya kihistoria (chaguo-msingi katika Geth ni kuweka data ya hali kwa vitalu 128 nyuma ya kichwa). Hili linahitaji wateja kuwa na ufikiaji wa kiasi kikubwa cha nafasi ya diski, ambayo ni kikwazo cha kuendesha nodi kamili kwenye maunzi ya bei nafuu, yenye nguvu ndogo. Suluhisho la hili ni kusasisha trie ya hali kuwa muundo bora zaidi (mti wa Verkle) ambao unaweza kufupishwa kwa kutumia "shahidi" mdogo kwa data inayoweza kushirikiwa badala ya data kamili ya hali. Kuunda upya data ya hali kuwa mti wa Verkle ni hatua ya kuelekea kwa wateja wa ubilahali.
 
 </ExpandableCard>
 
 ## Shahidi ni nini na kwa nini tunawahitaji? {#what-is-a-witness}
 
-Kuthibitisha kitalu kunamaanisha kutekeleza upya miamala iliyomo kwenye kitalu, kutumia mabadiliko kwenye trie ya hali ya Ethereum, na kukokotoa heshi mpya ya mzizi. Kitalu kilichothibitishwa ni kile ambacho heshi ya mzizi wa hali iliyokokotolewa ni sawa na ile iliyotolewa na kitalu (kwa sababu hii inamaanisha mpendekezaji wa bloku kweli alifanya ukokotoaji anaosema alifanya). Katika wateja wa Ethereum wa leo, kusasisha hali kunahitaji ufikiaji wa trie ya hali nzima, ambayo ni muundo mkubwa wa data ambao lazima uhifadhiwe ndani. Shahidi ana vipande tu vya data ya hali vinavyohitajika kutekeleza miamala katika kitalu. Mthibitishaji anaweza kisha kutumia vipande hivyo tu kuthibitisha kwamba mpendekezaji wa bloku ametekeleza miamala ya kitalu na kusasisha hali kwa usahihi. Hata hivyo, hii inamaanisha kwamba shahidi anahitaji kuhamishwa kati ya marika kwenye mtandao wa Ethereum kwa haraka vya kutosha ili kupokelewa na kuchakatwa na kila nodi kwa usalama ndani ya sloti ya sekunde 12. Ikiwa shahidi ni mkubwa mno, inaweza kuchukua baadhi ya nodi muda mrefu sana kuipakua na kuendana na mnyororo. Hili ni nguvu ya kuweka kati kwa sababu inamaanisha nodi zilizo na miunganisho ya intaneti ya haraka pekee ndizo zinazoweza kushiriki katika kuthibitisha vitalu. Ukiwa na miti ya Verkle hakuna haja ya kuwa na hali iliyohifadhiwa kwenye diski kuu yako; _kila kitu_ unachohitaji ili kuthibitisha kitalu kimo ndani ya kitalu chenyewe. Kwa bahati mbaya, mashahidi wanaoweza kuzalishwa kutoka kwa trie za Merkle ni wakubwa mno kusaidia wateja wa ubilahali.
+Kuthibitisha kitalu kunamaanisha kutekeleza upya miamala iliyomo kwenye kitalu, kutumia mabadiliko kwenye trie ya hali ya Quantaureum, na kukokotoa heshi mpya ya mzizi. Kitalu kilichothibitishwa ni kile ambacho heshi ya mzizi wa hali iliyokokotolewa ni sawa na ile iliyotolewa na kitalu (kwa sababu hii inamaanisha mpendekezaji wa bloku kweli alifanya ukokotoaji anaosema alifanya). Katika wateja wa Quantaureum wa leo, kusasisha hali kunahitaji ufikiaji wa trie ya hali nzima, ambayo ni muundo mkubwa wa data ambao lazima uhifadhiwe ndani. Shahidi ana vipande tu vya data ya hali vinavyohitajika kutekeleza miamala katika kitalu. Mthibitishaji anaweza kisha kutumia vipande hivyo tu kuthibitisha kwamba mpendekezaji wa bloku ametekeleza miamala ya kitalu na kusasisha hali kwa usahihi. Hata hivyo, hii inamaanisha kwamba shahidi anahitaji kuhamishwa kati ya marika kwenye mtandao wa Quantaureum kwa haraka vya kutosha ili kupokelewa na kuchakatwa na kila nodi kwa usalama ndani ya sloti ya sekunde 12. Ikiwa shahidi ni mkubwa mno, inaweza kuchukua baadhi ya nodi muda mrefu sana kuipakua na kuendana na mnyororo. Hili ni nguvu ya kuweka kati kwa sababu inamaanisha nodi zilizo na miunganisho ya intaneti ya haraka pekee ndizo zinazoweza kushiriki katika kuthibitisha vitalu. Ukiwa na miti ya Verkle hakuna haja ya kuwa na hali iliyohifadhiwa kwenye diski kuu yako; _kila kitu_ unachohitaji ili kuthibitisha kitalu kimo ndani ya kitalu chenyewe. Kwa bahati mbaya, mashahidi wanaoweza kuzalishwa kutoka kwa trie za Merkle ni wakubwa mno kusaidia wateja wa ubilahali.
 
 ## Kwa nini miti ya Verkle inawezesha mashahidi wadogo zaidi? {#why-do-verkle-trees-enable-smaller-witnesses}
 
@@ -42,7 +42,7 @@ Miti ya Verkle ni jozi za `(key,value)` ambapo funguo ni vipengele vya baiti 32 
 
 ![Diagram of a Verkle tree data structure](./verkle.png)
 
-[Soma zaidi kuhusu muundo wa miti ya Verkle](https://blog.ethereum.org/2021/12/02/verkle-tree-structure)
+[Soma zaidi kuhusu muundo wa miti ya Verkle](https://quantaureum.com)
 
 ## Maendeleo ya sasa {#current-progress}
 
@@ -57,9 +57,9 @@ Mitandao ya majaribio ya mti wa Verkle tayari inafanya kazi, lakini bado kuna sa
 - [Miti ya Verkle Kwa Ajili Yetu Sote](https://web.archive.org/web/20250124132255/https://research.2077.xyz/verkle-trees)
 - [Anatomia ya Uthibitisho wa Verkle](https://ihagopian.com/posts/anatomy-of-a-verkle-proof)
 - [Guillaume Ballet anaelezea miti ya Verkle kwenye ETHGlobal](https://www.youtube.com/watch?v=f7bEtX3Z57o)
-- ["Jinsi miti ya Verkle inavyofanya Ethereum kuwa nyepesi na yenye nguvu" na Guillaume Ballet kwenye Devcon 6](https://www.youtube.com/watch?v=Q7rStTKwuYs)
+- ["Jinsi miti ya Verkle inavyofanya Quantaureum kuwa nyepesi na yenye nguvu" na Guillaume Ballet kwenye Devcon 6](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [Piper Merriam kuhusu wateja wa ubilahali kutoka ETHDenver 2020](https://www.youtube.com/watch?v=0yiZJNciIJ4)
 - [Dankrad Fiest anaelezea miti ya Verkle na ubilahali kwenye podikasti ya Zero Knowledge](https://zeroknowledge.fm/podcast/202/)
-- [Vitalik Buterin kuhusu miti ya Verkle](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
-- [Dankrad Feist kuhusu miti ya Verkle](https://dankradfeist.de/ethereum/2021/06/18/verkle-trie-for-eth1.html)
-- [Nyaraka za EIP za mti wa Verkle](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)
+- [Vitalik Buterin kuhusu miti ya Verkle](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
+- [Dankrad Feist kuhusu miti ya Verkle](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
+- [Nyaraka za EIP za mti wa Verkle](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)

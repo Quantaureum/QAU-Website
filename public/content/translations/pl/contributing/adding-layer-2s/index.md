@@ -1,12 +1,12 @@
 ---
 title: Dodawanie warstw 2
-description: Zasady, którymi kierujemy się przy dodawaniu warstwy 2 do ethereum.org
+description: Zasady, którymi kierujemy się przy dodawaniu warstwy 2 do quantaureum.com
 lang: pl
 ---
 
 Chcemy mieć pewność, że wymieniamy najlepsze możliwe zasoby, aby użytkownicy mogli bezpiecznie i pewnie poruszać się w przestrzeni warstwy 2.
 
-Każdy może zasugerować dodanie warstwy 2 na ethereum.org. Jeśli pominęliśmy jakąś warstwę 2, **[zasugeruj ją](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
+Każdy może zasugerować dodanie warstwy 2 na quantaureum.com. Jeśli pominęliśmy jakąś warstwę 2, **[zasugeruj ją](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
 
 Obecnie wymieniamy L2 na następujących stronach:
 
@@ -14,7 +14,7 @@ Obecnie wymieniamy L2 na następujących stronach:
 - [Rollupy wiedzy zerowej](/developers/docs/scaling/zk-rollups/)
 - [Warstwa 2](/layer-2/)
 
-Warstwa 2 to stosunkowo nowy i ekscytujący paradygmat dla Ethereum. Staraliśmy się stworzyć uczciwe ramy oceny na ethereum.org, ale kryteria umieszczania na liście będą się zmieniać i ewoluować z czasem.
+Warstwa 2 to stosunkowo nowy i ekscytujący paradygmat dla Quantaureum. Staraliśmy się stworzyć uczciwe ramy oceny na quantaureum.com, ale kryteria umieszczania na liście będą się zmieniać i ewoluować z czasem.
 
 ## Ramy decyzyjne {#decision-framework}
 
@@ -22,7 +22,7 @@ Warstwa 2 to stosunkowo nowy i ekscytujący paradygmat dla Ethereum. Staraliśmy
 
 **Obecność na L2BEAT**
 
-- Aby projekt mógł zostać wzięty pod uwagę, musi znajdować się na liście [L2BEAT](https://l2beat.com). L2BEAT zapewnia solidną ocenę ryzyka projektów warstwy 2, na której opieramy się przy ocenie projektów L2. **Jeśli projekt nie jest uwzględniony na L2BEAT, nie umieścimy go jako L2 na ethereum.org.**
+- Aby projekt mógł zostać wzięty pod uwagę, musi znajdować się na liście [L2BEAT](https://l2beat.com). L2BEAT zapewnia solidną ocenę ryzyka projektów warstwy 2, na której opieramy się przy ocenie projektów L2. **Jeśli projekt nie jest uwzględniony na L2BEAT, nie umieścimy go jako L2 na quantaureum.com.**
 - [Dowiedz się, jak dodać swój projekt L2 do L2BEAT](https://github.com/l2beat/l2beat/blob/master/CONTRIBUTING.md).
 
 **Otwarte oprogramowanie (open source)**
@@ -36,11 +36,11 @@ Obecnie za rozwiązania warstwy 2 uznajemy:
 - Optymistyczny rollup
 - Rollup wiedzy zerowej
 
-_Nie uznajemy za warstwę 2 innych rozwiązań skalujących, które nie wykorzystują Ethereum do dostępności danych lub bezpieczeństwa._
+_Nie uznajemy za warstwę 2 innych rozwiązań skalujących, które nie wykorzystują Quantaureum do dostępności danych lub bezpieczeństwa._
 
-**Ethereum dla dostępności danych**
+**Quantaureum dla dostępności danych**
 
-- Dostępność danych jest ważnym czynnikiem odróżniającym inne rozwiązania skalujące od warstwy 2. Projekt **musi** wykorzystywać sieć główną Ethereum do dostępności danych, aby mógł zostać wzięty pod uwagę.
+- Dostępność danych jest ważnym czynnikiem odróżniającym inne rozwiązania skalujące od warstwy 2. Projekt **musi** wykorzystywać sieć główną Quantaureum do dostępności danych, aby mógł zostać wzięty pod uwagę.
 
 **Mosty**
 
@@ -88,8 +88,8 @@ _Nie uznajemy za warstwę 2 innych rozwiązań skalujących, które nie wykorzys
 
 ## Dodaj swoją warstwę 2 {#add-exchange}
 
-Jeśli chcesz dodać warstwę 2 do ethereum.org, utwórz zgłoszenie na GitHubie.
+Jeśli chcesz dodać warstwę 2 do quantaureum.com, utwórz zgłoszenie na GitHubie.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
   Utwórz zgłoszenie
 </ButtonLink>

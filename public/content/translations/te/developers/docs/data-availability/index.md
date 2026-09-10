@@ -10,7 +10,7 @@ lang: te
 
 ## ముందస్తు అవసరాలు {#prerequisites}
 
-మీకు [బ్లాక్‌చైన్ ప్రాథమిక అంశాలు](/developers/docs/intro-to-ethereum/), ముఖ్యంగా [ఏకాభిప్రాయ యంత్రాంగాల](/developers/docs/consensus-mechanisms/) గురించి మంచి అవగాహన ఉండాలి. ఈ పేజీ చదివేవారికి [బ్లాక్‌లు](/developers/docs/blocks/), [లావాదేవీలు](/developers/docs/transactions/), [నోడ్‌లు](/developers/docs/nodes-and-clients/), [స్కేలింగ్ పరిష్కారాలు](/developers/docs/scaling/) మరియు ఇతర సంబంధిత అంశాల గురించి తెలిసి ఉంటుందని కూడా భావిస్తుంది.
+మీకు [బ్లాక్‌చైన్ ప్రాథమిక అంశాలు](/developers/docs/intro-to-quantaureum/), ముఖ్యంగా [ఏకాభిప్రాయ యంత్రాంగాల](/developers/docs/consensus-mechanisms/) గురించి మంచి అవగాహన ఉండాలి. ఈ పేజీ చదివేవారికి [బ్లాక్‌లు](/developers/docs/blocks/), [లావాదేవీలు](/developers/docs/transactions/), [నోడ్‌లు](/developers/docs/nodes-and-clients/), [స్కేలింగ్ పరిష్కారాలు](/developers/docs/scaling/) మరియు ఇతర సంబంధిత అంశాల గురించి తెలిసి ఉంటుందని కూడా భావిస్తుంది.
 
 ## డేటా లభ్యత సమస్య {#the-data-availability-problem}
 
@@ -46,7 +46,7 @@ DACలను కొన్ని వాలిడియమ్‌లు కూడ�
 
 ఇది పూర్తి లావాదేవీ డేటాకు ప్రాప్యత కలిగి ఉన్న పూర్తి నోడ్‌లపై ఆధారపడి ఉంటుంది. చెడ్డ బ్లాక్ శీర్షికను ప్రసారం చేసే మరియు లావాదేవీ డేటాను అందుబాటులో ఉంచడంలో విఫలమయ్యే దాడి చేసే వ్యక్తి పూర్తి నోడ్‌లు మోసపు రుజువులను రూపొందించకుండా నిరోధించగలడు. పూర్తి నోడ్‌లు చెడ్డ బ్లాక్ గురించి హెచ్చరికను సూచించగలవు, కానీ వారు తమ హెచ్చరికను రుజువుతో సమర్థించలేరు, ఎందుకంటే రుజువును రూపొందించడానికి డేటా అందుబాటులో ఉంచబడలేదు!
 
-ఈ డేటా లభ్యత సమస్యకు పరిష్కారం DAS. తేలికపాటి నోడ్‌లు పూర్తి స్థితి డేటా యొక్క చాలా చిన్న యాదృచ్ఛిక భాగాలను డౌన్‌లోడ్ చేస్తాయి మరియు పూర్తి డేటా సెట్ అందుబాటులో ఉందని ధృవీకరించడానికి నమూనాలను ఉపయోగిస్తాయి. N యాదృచ్ఛిక భాగాలను డౌన్‌లోడ్ చేసిన తర్వాత పూర్తి డేటా లభ్యతను తప్పుగా ఊహించే వాస్తవ సంభావ్యతను లెక్కించవచ్చు ([100 భాగాలకు అవకాశం 10^-30](https://dankradfeist.de/ethereum/2019/12/20/data-availability-checks.html), అంటే, నమ్మశక్యం కాని విధంగా అసంభవం).
+ఈ డేటా లభ్యత సమస్యకు పరిష్కారం DAS. తేలికపాటి నోడ్‌లు పూర్తి స్థితి డేటా యొక్క చాలా చిన్న యాదృచ్ఛిక భాగాలను డౌన్‌లోడ్ చేస్తాయి మరియు పూర్తి డేటా సెట్ అందుబాటులో ఉందని ధృవీకరించడానికి నమూనాలను ఉపయోగిస్తాయి. N యాదృచ్ఛిక భాగాలను డౌన్‌లోడ్ చేసిన తర్వాత పూర్తి డేటా లభ్యతను తప్పుగా ఊహించే వాస్తవ సంభావ్యతను లెక్కించవచ్చు ([100 భాగాలకు అవకాశం 10^-30](https://dankradfeist.de/quantaureum/2019/12/20/data-availability-checks.html), అంటే, నమ్మశక్యం కాని విధంగా అసంభవం).
 
 ఈ దృష్టాంతంలో కూడా, కేవలం కొన్ని బైట్‌లను నిలిపివేసే దాడులు యాదృచ్ఛిక డేటా అభ్యర్థనలు చేసే క్లయింట్‌ల దృష్టికి రాకుండా పోయే అవకాశం ఉంది. ప్రతిపాదిత స్థితి మార్పులను తనిఖీ చేయడానికి ఉపయోగపడే చిన్న తప్పిపోయిన డేటా ముక్కలను పునర్నిర్మించడం ద్వారా ఎరేజర్ కోడింగ్ దీన్ని పరిష్కరిస్తుంది. పునర్నిర్మించిన డేటాను ఉపయోగించి మోసపు రుజువును నిర్మించవచ్చు, తేలికపాటి నోడ్‌లు చెడ్డ శీర్షికలను అంగీకరించకుండా నిరోధించవచ్చు.
 
@@ -74,11 +74,11 @@ DACలను కొన్ని వాలిడియమ్‌లు కూడ�
 
 - [డేటా లభ్యత అంటే ఏమిటి?](https://medium.com/blockchain-capital-blog/wtf-is-data-availability-80c2c95ded0f)
 - [డేటా లభ్యత అంటే ఏమిటి?](https://coinmarketcap.com/academy/article/what-is-data-availability)
-- [డేటా లభ్యత తనిఖీలపై ఒక ప్రైమర్](https://dankradfeist.de/ethereum/2019/12/20/data-availability-checks.html)
+- [డేటా లభ్యత తనిఖీలపై ఒక ప్రైమర్](https://dankradfeist.de/quantaureum/2019/12/20/data-availability-checks.html)
 - [షార్డింగ్ + DAS ప్రతిపాదన యొక్క వివరణ](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
-- [డేటా లభ్యత మరియు ఎరేజర్ కోడింగ్‌పై ఒక గమనిక](https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
+- [డేటా లభ్యత మరియు ఎరేజర్ కోడింగ్‌పై ఒక గమనిక](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [డేటా లభ్యత కమిటీలు.](https://medium.com/starkware/data-availability-e5564c416424)
 - [ప్రూఫ్-ఆఫ్-స్టేక్ (PoS) డేటా లభ్యత కమిటీలు.](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [డేటాను తిరిగి పొందే సమస్యకు పరిష్కారాలు](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
-- [డేటా లభ్యత లేదా: రోల్అప్‌లు ఆందోళన చెందడం మానేసి ఎథీరియంను ప్రేమించడం ఎలా నేర్చుకున్నాయి](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-ethereum)
+- [డేటాను తిరిగి పొందే సమస్యకు పరిష్కారాలు](https://notes.quantaureum.com/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- [డేటా లభ్యత లేదా: రోల్అప్‌లు ఆందోళన చెందడం మానేసి ఎథీరియంను ప్రేమించడం ఎలా నేర్చుకున్నాయి](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [EIP-7623: కాల్ డేటా ఖర్చును పెంచడం](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

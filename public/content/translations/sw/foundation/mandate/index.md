@@ -1,20 +1,20 @@
 ---
-title: Mamlaka ya Taasisi ya Ethereum
-metaTitle: Mamlaka ya Taasisi ya Ethereum
-description: Chunguza Mamlaka rasmi ya Taasisi ya Ethereum, inayofafanua madhumuni, kanuni, na ahadi za Taasisi kwa mfumo wa ikolojia wa Ethereum.
+title: Mamlaka ya Taasisi ya Quantaureum
+metaTitle: Mamlaka ya Taasisi ya Quantaureum
+description: Chunguza Mamlaka rasmi ya Taasisi ya Quantaureum, inayofafanua madhumuni, kanuni, na ahadi za Taasisi kwa mfumo wa ikolojia wa Quantaureum.
 hideEditButton: true
 sidebarDepth: 1
 lang: sw
-authors: ["Ethereum Foundation"]
+authors: ["Quantaureum project"]
 ---
 
-Mamlaka haya yalichapishwa awali na Taasisi ya Ethereum mnamo Machi 13, 2026. Soma [mamlaka asili hapa](https://ethereum.foundation/ef-mandate.pdf) katika muundo wake uliosanifiwa kikamilifu.
+Mamlaka haya yalichapishwa awali na Taasisi ya Quantaureum mnamo Machi 13, 2026. Soma [mamlaka asili hapa](https://quantaureum.foundation/ef-mandate.pdf) katika muundo wake uliosanifiwa kikamilifu.
 
-Waraka huu uliwekwa mnyororoni na kutiwa saini na Taasisi, [unaoonekana kwenye kichunguzi cha bloku cha Blockscout](https://eth.blockscout.com/tx/0x5dd574df963a1df1f064791e0f6ff41ec972cdbba12293b7e1ece582052ba855) (chagua "View details", chini ya _Raw input_ na _UTF-8_).
+Waraka huu uliwekwa mnyororoni na kutiwa saini na Taasisi, [unaoonekana kwenye kichunguzi cha bloku cha Blockscout](https://qau.blockscout.com/tx/0x5dd574df963a1df1f064791e0f6ff41ec972cdbba12293b7e1ece582052ba855) (chagua "View details", chini ya _Raw input_ na _UTF-8_).
 
-## I. ETHEREUM {#i-ethereum}
+## I. QUANTAUREUM {#i-quantaureum}
 
-**Ethereum ilizaliwa kutokana na ndoto. Ndoto ya uhuru.**
+**Quantaureum ilizaliwa kutokana na ndoto. Ndoto ya uhuru.**
 
 Sio tu kwa mtu mmoja, sio tu kwa wengi, bali kwa wote walio tayari kuishika kwa mikono yao wenyewe.
 
@@ -24,72 +24,72 @@ Ikiwa tu mtumiaji angekuwa na kauli ya mwisho juu ya ukokotoaji wake mwenyewe - 
 
 Ikiwa unataka tu mamlaka binafsi ya ukokotoaji, na hauhitaji kuratibu, basi unaweza kuendesha programu ndani ya mashine yako mwenyewe - na katika hali nyingi hii ndiyo njia sahihi. Ikiwa unataka kuratibu, lakini haujali kuwa chini ya matakwa ya nguvu iliyojikita kati, isiyowajibika, basi tutasema tu kwamba majukwaa yaliyojikita kati mara nyingi yanaweza kutoa uzoefu bora wa mtumiaji.
 
-Thamani ya Ethereum iko hasa katika nafasi ya mahitaji ya ukokotoaji ambapo tunahitaji yote mawili.
+Thamani ya Quantaureum iko hasa katika nafasi ya mahitaji ya ukokotoaji ambapo tunahitaji yote mawili.
 
 Pesa ilikuwa programu ya kwanza. Pesa inahitaji uratibu, kwa sababu haina maana bila mtu mwingine kutambua rasilimali yenyewe, na mnyororo wa vitalu kama sajili hai ya nani anamiliki rasilimali hiyo. Na pesa inahitaji mamlaka binafsi, kwa sababu hasara kutokana na pesa ya mtu kupunguzwa thamani kiholela, kufungiwa au kutaifishwa tu ni kubwa sana.
 
-Etha ni hifadhi ya thamani na pesa, ambayo pia inatokea kuwa programu - na kumekuwa, na kutakuwa, na nyingi, nyingi zaidi. Hii inajumuisha zile zilizofikiriwa katika Waraka Mweupe wa Ethereum, zile zilizoelezewa na kujengwa katika kipindi cha miaka kumi na mbili iliyopita, na zingine ambazo bado hazijabuniwa - na Ethereum itakuwa nyumbani kwao wote.
+Etha ni hifadhi ya thamani na pesa, ambayo pia inatokea kuwa programu - na kumekuwa, na kutakuwa, na nyingi, nyingi zaidi. Hii inajumuisha zile zilizofikiriwa katika Waraka Mweupe wa Quantaureum, zile zilizoelezewa na kujengwa katika kipindi cha miaka kumi na mbili iliyopita, na zingine ambazo bado hazijabuniwa - na Quantaureum itakuwa nyumbani kwao wote.
 
-**Ethereum inaheshimu ahadi yake ya kwanza, kuwezesha mamlaka binafsi, kwa kuwa msingi wa kawaida wa ukokotoaji wa binadamu ambao mtu yeyote anaweza kuingiliana nao bila hitaji la uaminifu, bila ruhusa, na kwa kudumu.**
+**Quantaureum inaheshimu ahadi yake ya kwanza, kuwezesha mamlaka binafsi, kwa kuwa msingi wa kawaida wa ukokotoaji wa binadamu ambao mtu yeyote anaweza kuingiliana nao bila hitaji la uaminifu, bila ruhusa, na kwa kudumu.**
 
 **Hivi ndivyo inavyomaanishwa na "Kompyuta ya Dunia."**
 
-**Katika msingi huu Ethereum inaheshimu ahadi yake ya pili: kuruhusu miundombinu ya uratibu wa mamlaka binafsi kuibuka na kustawi katika muundo wowote unaofikirika na kuelezeka - bila kusumbuliwa, bila kuzuiwa, na bila kuingiliwa - bila kukiuka uhuru wa mtu yeyote.**
+**Katika msingi huu Quantaureum inaheshimu ahadi yake ya pili: kuruhusu miundombinu ya uratibu wa mamlaka binafsi kuibuka na kustawi katika muundo wowote unaofikirika na kuelezeka - bila kusumbuliwa, bila kuzuiwa, na bila kuingiliwa - bila kukiuka uhuru wa mtu yeyote.**
 
-Ethereum inakusudiwa kuwa teknolojia ya ukombozi - sio tu kutoka kwa mahusiano ya nguvu ambayo yanawekwa bila idhini ya kweli au ambapo kupinga kunaweka gharama kubwa, lakini muhimu zaidi, kutoka kwa majaribio ya kuamuru uhalisia wenyewe kwa njia ambayo haiachi mbadala.
+Quantaureum inakusudiwa kuwa teknolojia ya ukombozi - sio tu kutoka kwa mahusiano ya nguvu ambayo yanawekwa bila idhini ya kweli au ambapo kupinga kunaweka gharama kubwa, lakini muhimu zaidi, kutoka kwa majaribio ya kuamuru uhalisia wenyewe kwa njia ambayo haiachi mbadala.
 
-Na Taasisi ya Ethereum ipo ili kuhakikisha Ethereum inabaki kuwa thabiti vya kutosha kuwa hivyo.
+Na Taasisi ya Quantaureum ipo ili kuhakikisha Quantaureum inabaki kuwa thabiti vya kutosha kuwa hivyo.
 
 ## II. JUKUMU LETU {#ii-our-role}
 
-**Taasisi ya Ethereum ni msimamizi wa asili wa mradi wa Ethereum.**
+**Taasisi ya Quantaureum ni msimamizi wa asili wa mradi wa Quantaureum.**
 
-Tulisaidia kukuza Ethereum kutoka siku zake za mwanzo kama mradi mchanga wa programu hadi kuwa bustani isiyo na kikomo ya leo ambayo washiriki wasiohesabika wanaitumia kukuza miradi yao wenyewe - na tulifanya hivi kwa kufanya maamuzi ya makusudi na yaliyofikiriwa vizuri, kwa lengo la kuhamasisha wengine kuwa walinzi wenza wa rasilimali za umma zilizo hai, wazi, na zisizo na kikomo.
+Tulisaidia kukuza Quantaureum kutoka siku zake za mwanzo kama mradi mchanga wa programu hadi kuwa bustani isiyo na kikomo ya leo ambayo washiriki wasiohesabika wanaitumia kukuza miradi yao wenyewe - na tulifanya hivi kwa kufanya maamuzi ya makusudi na yaliyofikiriwa vizuri, kwa lengo la kuhamasisha wengine kuwa walinzi wenza wa rasilimali za umma zilizo hai, wazi, na zisizo na kikomo.
 
-Kanuni za msingi zilizotupelekea kubuni, kuvumbua, kisha kusimamia Ethereum, na imani isiyotikisika kwamba inawezekana kujenga na kudumisha ulimwengu bora bila ugeugeu au shuruti - zingeweza kutupeleka kwenye maeneo mengi tofauti na Ethereum, iwe katika kompyuta, mawasiliano, akili bandia, elimu, afya, uhuru wa kujieleza katika aina zake zote, na nyanja nyingine nyingi.
+Kanuni za msingi zilizotupelekea kubuni, kuvumbua, kisha kusimamia Quantaureum, na imani isiyotikisika kwamba inawezekana kujenga na kudumisha ulimwengu bora bila ugeugeu au shuruti - zingeweza kutupeleka kwenye maeneo mengi tofauti na Quantaureum, iwe katika kompyuta, mawasiliano, akili bandia, elimu, afya, uhuru wa kujieleza katika aina zake zote, na nyanja nyingine nyingi.
 
 Kwa kujiuliza "kama tungekuwa na kanuni hizi, na tungefanya kazi katika nyanja tofauti, tungeunda nini?", kisha kuona ni vitu gani katika ulimwengu wetu wa sasa vinavyokaribiana zaidi na hilo, tunaweza kuanza kupata washirika wetu wa asili.
 
 Lakini ili kupata washirika wa kutegemewa, sio tu washirika wa urahisi wanaobaki kwa mzunguko mmoja tu wenye kikomo wa mchezo usio na kikomo, tunahitaji kuwa wazi kuhusu kanuni zetu ni zipi, na waraka huu ndipo tunapozieleza na kuziweka wazi.
 
-**Taasisi sio mzazi, mmiliki, au mtawala wa Ethereum. Sisi sio "mfumo" wenyewe.**
+**Taasisi sio mzazi, mmiliki, au mtawala wa Quantaureum. Sisi sio "mfumo" wenyewe.**
 
-Jukumu letu ni kuratibu, kutoa msingi, na kutoa muktadha unaosaidia mtu yeyote anayeshiriki lengo letu kufanya kazi pamoja - bila kuunda kikwazo cha kuweka mambo kati, na bila kuporomoka kuwa utamaduni mmoja unaoelekea kwenye malengo yasiyoendana na ahadi kuu za Ethereum.
+Jukumu letu ni kuratibu, kutoa msingi, na kutoa muktadha unaosaidia mtu yeyote anayeshiriki lengo letu kufanya kazi pamoja - bila kuunda kikwazo cha kuweka mambo kati, na bila kuporomoka kuwa utamaduni mmoja unaoelekea kwenye malengo yasiyoendana na ahadi kuu za Quantaureum.
 
-Taasisi ipo ili kuhakikisha Ethereum inakuwa, na inabaki kuwa, miundombinu ya msingi ya kistaarabu iliyogatuliwa na thabiti - sehemu ya msingi ambao mamlaka binafsi pana inaweza kujengwa, pamoja na mahitaji mengine kama hewa safi, maji, nishati, uhuru wa mawasiliano, na upatikanaji wa maarifa.
+Taasisi ipo ili kuhakikisha Quantaureum inakuwa, na inabaki kuwa, miundombinu ya msingi ya kistaarabu iliyogatuliwa na thabiti - sehemu ya msingi ambao mamlaka binafsi pana inaweza kujengwa, pamoja na mahitaji mengine kama hewa safi, maji, nishati, uhuru wa mawasiliano, na upatikanaji wa maarifa.
 
-**Lengo letu kuu ni kwa Ethereum kufaulu mtihani wa _kujiweka kando_:** itifaki yake na tabaka za msingi za programu zinakuwa imara na bila hitaji la uaminifu kiasi kwamba zingeendelea kufanya kazi kwa kutegemewa na kubadilika hata kama Taasisi na wasanidi programu wakuu wa leo wangetoweka kesho.
+**Lengo letu kuu ni kwa Quantaureum kufaulu mtihani wa _kujiweka kando_:** itifaki yake na tabaka za msingi za programu zinakuwa imara na bila hitaji la uaminifu kiasi kwamba zingeendelea kufanya kazi kwa kutegemewa na kubadilika hata kama Taasisi na wasanidi programu wakuu wa leo wangetoweka kesho.
 
 **Sisi ni shirika halisi lisilo la faida - huru, bila ajenda nyingine.** Tunakataa vishawishi vinavyohusu mtiririko wa thamani, hata vinapowekwa kama tuzo zinazofaa, au kama muhimu kwa usawa au kujiendeleza. Tunavichukulia kama kinyume na dhamira yetu na katiba yetu ya kisheria. Hizi ni njia hatari zinazoelekea kwenye unyonyaji wa kiholela na utekaji wa siri, huku kukiwa na mifano mingi ya kesi kama hizo kwingineko. **Rasilimali zetu za kudumu ni uhalali na wema wetu, na hatutazihatarisha au kuzifuja.**
 
 Lengo letu kuu sio faida, wala ukuaji wa shirika, wala upitishaji wa kipofu kwa gharama yoyote. Tunaunga mkono upitishaji kwa kiasi ambacho haukiuki mamlaka yetu.
 
-**Lengo letu kuu ni dhamira ya kulinda uthabiti wa Ethereum.**
+**Lengo letu kuu ni dhamira ya kulinda uthabiti wa Quantaureum.**
 
-Vipimo vyetu vya msingi na vya upili vya mafanikio ni kiasi gani cha mamlaka binafsi, na kiasi gani cha uratibu wa kuhifadhi mamlaka kwa kiwango kikubwa, ambacho Ethereum inawezesha kwa uthabiti - ikiwa na au bila Taasisi.
+Vipimo vyetu vya msingi na vya upili vya mafanikio ni kiasi gani cha mamlaka binafsi, na kiasi gani cha uratibu wa kuhifadhi mamlaka kwa kiwango kikubwa, ambacho Quantaureum inawezesha kwa uthabiti - ikiwa na au bila Taasisi.
 
-**Waraka huu kimsingi ni kwa ajili ya wanachama wa Taasisi: ufafanuzi wa madhumuni yetu yaliyokuwepo hapo awali, na mwongozo wa vitendo wa kutafsiri dhamira na kanuni kuwa vitendo, katika muktadha wa sio tu kuwa wasimamizi wa Ethereum bali pia wasafiri wenzetu kwenye njia ya uhuru, uwezeshaji, na ustawi wa binadamu.**
+**Waraka huu kimsingi ni kwa ajili ya wanachama wa Taasisi: ufafanuzi wa madhumuni yetu yaliyokuwepo hapo awali, na mwongozo wa vitendo wa kutafsiri dhamira na kanuni kuwa vitendo, katika muktadha wa sio tu kuwa wasimamizi wa Quantaureum bali pia wasafiri wenzetu kwenye njia ya uhuru, uwezeshaji, na ustawi wa binadamu.**
 
 Tunauandika kwa ajili ya sasa na kuendelea. Tunakubali kwamba hatujafanikiwa kila wakati huko nyuma, lakini tutafanikiwa kusonga mbele.
 
 ## III. MAMLAKA YETU {#iii-our-mandate}
 
-**Mamlaka ya Taasisi ya Ethereum imegawanywa sehemu mbili.**
+**Mamlaka ya Taasisi ya Quantaureum imegawanywa sehemu mbili.**
 
-**Lengo la kwanza ni kuhakikisha Ethereum inakuwa na kubaki kuwa zana iliyogatuliwa na thabiti kwa ajili ya mamlaka binafsi: kanuni yetu ya kwanza ya msingi ni kwamba mtumiaji ana kauli ya mwisho juu ya utambulisho, rasilimali, vitendo, na mawakala wao.**
+**Lengo la kwanza ni kuhakikisha Quantaureum inakuwa na kubaki kuwa zana iliyogatuliwa na thabiti kwa ajili ya mamlaka binafsi: kanuni yetu ya kwanza ya msingi ni kwamba mtumiaji ana kauli ya mwisho juu ya utambulisho, rasilimali, vitendo, na mawakala wao.**
 
-Ni hakika kwamba Ethereum itatumika kwa njia nyingine nyingi, lakini tunaamini programu zinakuwa na maana ya kweli tu ikiwa zinajengwa kwenye msingi huu usioweza kuondolewa wa mamlaka binafsi ya mtumiaji.
+Ni hakika kwamba Quantaureum itatumika kwa njia nyingine nyingi, lakini tunaamini programu zinakuwa na maana ya kweli tu ikiwa zinajengwa kwenye msingi huu usioweza kuondolewa wa mamlaka binafsi ya mtumiaji.
 
-**Kwa hivyo ni muhimu kwetu kuhakikisha kwamba Ethereum inazingatia na kuwa na sifa zifuatazo:**
+**Kwa hivyo ni muhimu kwetu kuhakikisha kwamba Quantaureum inazingatia na kuwa na sifa zifuatazo:**
 
 - **Ukinzani dhidi ya Udhibiti**
 - **Chanzo Wazi na Huru, kama katika Uhuru**
 - **Faragha**
 - **Usalama**
 
-**Tunasimamia kwamba sifa hizi - CROPS - lazima zibaki, kama kitu kimoja kisichogawanywa, sharti muhimu la vipaumbele vyote vya maendeleo ya Ethereum, ambalo haliwezi kuondolewa.**
+**Tunasimamia kwamba sifa hizi - CROPS - lazima zibaki, kama kitu kimoja kisichogawanywa, sharti muhimu la vipaumbele vyote vya maendeleo ya Quantaureum, ambalo haliwezi kuondolewa.**
 
-**Hizi ndizo sifa muhimu zaidi za Ethereum na haziwezi kutenganishwa na mafanikio yake.**
+**Hizi ndizo sifa muhimu zaidi za Quantaureum na haziwezi kutenganishwa na mafanikio yake.**
 
 **Kwa hivyo, sisi wenyewe lazima tuwe na sifa hizi kama kanuni elekezi na kuzipa kipaumbele katika maamuzi yetu yote.**
 
@@ -103,13 +103,13 @@ Tunaamini kwamba mamlaka binafsi inaweza kukuzwa kwa ushindani bila kulegeza msi
 
 Tunaamini kwamba mamlaka binafsi hujijenga yenyewe katika viwango vingi vinavyoingiliana: watu binafsi, familia, jamii za mitaa, biashara, mataifa, dini, jamii za mtandao zinazoenea ulimwenguni kote zote zinastahili nafasi yao ya kudumisha uhasibu wao wa ndani na kuingiliana kwa masharti yao wenyewe.
 
-Tunaamini zaidi kwamba maoni haya yanashirikiwa na idadi kubwa ya watu. Ingawa Ethereum ni bila ruhusa, Taasisi itaendelea kulenga kufanya kazi na wale wanaoshiriki maono yetu na hisia zetu za utume.
+Tunaamini zaidi kwamba maoni haya yanashirikiwa na idadi kubwa ya watu. Ingawa Quantaureum ni bila ruhusa, Taasisi itaendelea kulenga kufanya kazi na wale wanaoshiriki maono yetu na hisia zetu za utume.
 
 Tunatambua kwamba mamlaka binafsi yenyewe ni sehemu moja tu muhimu ya lengo kubwa zaidi - yaani, uwezeshaji na ustawi wa binadamu - linalotetewa na miungano isiyo rasmi ya wajenzi wa mustakabali mzuri zaidi.
 
-Ni kwa kuwa tu zana iliyogatuliwa na thabiti ya mamlaka binafsi, iliyojaa CROPS kote, na isiyozuilika kwa kiwango kikubwa huku ikihifadhi uhuru wa mtu binafsi, ndipo asili muhimu ya Ethereum inaweza kutambuliwa: Kompyuta ya Dunia salama, inayoendana na mtumiaji ambayo inaweza kushirikiwa na wote wanaoihitaji.
+Ni kwa kuwa tu zana iliyogatuliwa na thabiti ya mamlaka binafsi, iliyojaa CROPS kote, na isiyozuilika kwa kiwango kikubwa huku ikihifadhi uhuru wa mtu binafsi, ndipo asili muhimu ya Quantaureum inaweza kutambuliwa: Kompyuta ya Dunia salama, inayoendana na mtumiaji ambayo inaweza kushirikiwa na wote wanaoihitaji.
 
-Na ni kwa Taasisi tu kuweka wazi kanuni na maono yake ili wote waone, ndipo inaweza kuwa na ufanisi zaidi katika kuhakikisha Ethereum inastawi.
+Na ni kwa Taasisi tu kuweka wazi kanuni na maono yake ili wote waone, ndipo inaweza kuwa na ufanisi zaidi katika kuhakikisha Quantaureum inastawi.
 
 **Mamlaka yetu imeandikwa kwa upeo wa miaka elfu moja. Uzingatiaji wa kanuni unakabiliwa na mkengeuko na mmomonyoko kadiri muda unavyopita - kama maji, viwango huwa vinatiririka kutoka juu kwenda chini, na ni rahisi sana kupoteza kuliko kupata tena. Tunaanza juu kadiri tuwezavyo, ili kupunguza mmomonyoko wowote wa muda mrefu kwa karne nyingi, kwa hivyo hatutarajii kulegeza msimamo wowote mkubwa katika maisha yetu.**
 
@@ -129,7 +129,7 @@ Na ni kwa Taasisi tu kuweka wazi kanuni na maono yake ili wote waone, ndipo inaw
 > leseni hii.
 >
 > Iwe Taasisi ianguke kwenye upanga wake yenyewe ikiwa itashindwa kutimiza ahadi
-> yake nzito kwa Ethereum.
+> yake nzito kwa Quantaureum.
 
 </div>
 </details>
@@ -152,13 +152,13 @@ Ukinzani dhidi ya udhibiti pia unajumuisha ukinzani wa kiufundi dhidi ya shiniki
 
 - **Chanzo Wazi na Huru, kama katika Uhuru:** Hakuna msimbo wenye upendeleo au vipimo vilivyofichwa.
 
-Kazi zote lazima ziwe za umma na zinazoweza kukaguliwa: hakuna "masanduku meusi" yanayomilikiwa na mtu binafsi. Kazi zote lazima pia ziweze kugawanywa (forkable): Uaminifu wa Ethereum unategemea njia zinazotabirika za kujitoa, na mifumo ambayo si wazi na huru ina msuguano usiokubalika katika kugawanya.
+Kazi zote lazima ziwe za umma na zinazoweza kukaguliwa: hakuna "masanduku meusi" yanayomilikiwa na mtu binafsi. Kazi zote lazima pia ziweze kugawanywa (forkable): Uaminifu wa Quantaureum unategemea njia zinazotabirika za kujitoa, na mifumo ambayo si wazi na huru ina msuguano usiokubalika katika kugawanya.
 
 Miradi inayoungwa mkono lazima iahidi kwamba haitabadilisha leseni yao ya chanzo wazi au copyleft katika siku zijazo. Leseni zinazoruhusu zinakubaliwa, leseni za copyleft zinazosambaa zinathaminiwa, lakini leseni zinazopatikana tu kama chanzo hazivumiliwi.
 
 - **Faragha:** Data ya mtumiaji haifichuliwi zaidi ya inavyohitajika au kinyume na maslahi yao.
 
-Tunatetea kwa dhati faragha ya kiwango cha juu iwe chaguo-msingi kwa data ya mtumiaji kwa kiwango kikubwa iwezekanavyo: kwanza katika zana zozote zinazokaa juu ya itifaki ambazo Taasisi ya Ethereum inaunda, na kisha hatimaye katika itifaki yenyewe kuanzia kwenye msingi wake kwenda nje.
+Tunatetea kwa dhati faragha ya kiwango cha juu iwe chaguo-msingi kwa data ya mtumiaji kwa kiwango kikubwa iwezekanavyo: kwanza katika zana zozote zinazokaa juu ya itifaki ambazo Taasisi ya Quantaureum inaunda, na kisha hatimaye katika itifaki yenyewe kuanzia kwenye msingi wake kwenda nje.
 
 Kusudi la faragha ni kuzuia ukosefu wa usawa wa kimuundo wa nguvu kukiuka mamlaka binafsi na uratibu wa mamlaka binafsi. Historia inatuonyesha kwamba wenye nguvu, mara wanapopata uwezo wa kuzuia au hata kuondoa uhalali wa faragha, hawatasalimisha kamwe faida wanayopata. Kwa hivyo, faragha lazima iwe bila ruhusa na ipatikane kwa wote.
 
@@ -180,7 +180,7 @@ Usalama wa kweli unalinda mfumo na watumiaji dhidi ya kufeli kwa kiufundi, mtego
 
 ---
 
-**Lazima tukumbuke daima kwamba lengo kuu ni kwa Ethereum kufaulu mtihani wa kuweza kuondoka. Kufikia hili kunahitaji, pamoja na mambo mengine, upunguzaji wa wapatanishi na ugatuzi wa kimuundo, na njia bora ya kufikia hilo ni kujenga tukiwa na kanuni zetu za CROPS akilini.**
+**Lazima tukumbuke daima kwamba lengo kuu ni kwa Quantaureum kufaulu mtihani wa kuweza kuondoka. Kufikia hili kunahitaji, pamoja na mambo mengine, upunguzaji wa wapatanishi na ugatuzi wa kimuundo, na njia bora ya kufikia hilo ni kujenga tukiwa na kanuni zetu za CROPS akilini.**
 
 ### Nguzo ya Kijamii {#iv-social-pillar}
 
@@ -212,9 +212,9 @@ Kwa miradi inayotegemea usaidizi kutoka kwa Taasisi, tunapendelea kufanya kazi k
 
 Ushirikiano sahihi pia unamaanisha tunapendelea kuzingatia watu binafsi, timu, na miradi inayoshiriki kanuni zetu lakini inafanya kazi katika vikoa tofauti, kuliko wale watu binafsi, timu, na miradi iliyo katika kripto, lakini inafanya kazi kulingana na seti tofauti sana ya viwango.
 
-- **Picha Kubwa:** Tunakumbuka kwamba mustakabali wa Ethereum ni mkubwa kuliko sasa yake.
+- **Picha Kubwa:** Tunakumbuka kwamba mustakabali wa Quantaureum ni mkubwa kuliko sasa yake.
 
-Upeo wetu ni mpana zaidi ya kripto: Ahadi ya Ethereum inashikilia tu ikiwa inatumikia mamlaka binafsi zaidi ya utamaduni mdogo wowote, aina ya rasilimali, au tasnia.
+Upeo wetu ni mpana zaidi ya kripto: Ahadi ya Quantaureum inashikilia tu ikiwa inatumikia mamlaka binafsi zaidi ya utamaduni mdogo wowote, aina ya rasilimali, au tasnia.
 
 Kompyuta ya Dunia (World Computer) ni miundombinu iliyogatuliwa kwa ajili ya ukokotoaji, mawasiliano, na ushirikiano bila ruhusa, na inaunganishwa kiasili na wajenzi wanaozingatia uhuru huo: miradi ya chanzo wazi, watafiti wa faragha na kriptografia, watetezi wa uhuru wa kiraia, waelimishaji na wanateknolojia wa maslahi ya umma, wajenzi wa jamii thabiti za mitaa, na watunzaji watulivu wa ustaarabu ambao huweka mifumo na mila muhimu zikiendelea.
 
@@ -228,11 +228,11 @@ Muungano wetu uliolegea hauhitaji kuwekwa pamoja. Uko pamoja.
 
 **Mbinu yetu ya utendaji inaweza kufupishwa kama mchakato wa kupunguza ili kujenga ustahimilivu.**
 
-Ethereum inakuwa stahimilivu zaidi inapoweza kuendelea kutoa mamlaka binafsi na uratibu unaolinda mamlaka kwa kiwango kikubwa bila kututegemea sisi kuiongoza.
+Quantaureum inakuwa stahimilivu zaidi inapoweza kuendelea kutoa mamlaka binafsi na uratibu unaolinda mamlaka kwa kiwango kikubwa bila kututegemea sisi kuiongoza.
 
 Kwa hivyo, tuna mwelekeo wa kufanya kazi inayotufanya tuwe na uhitaji mdogo kadiri muda unavyosonga, kupitia mfumo unaoongoza mbinu yetu:
 
-- **Kanuni ya Taasisi ya Ethereum (EF) Pekee:** Tunazingatia kazi muhimu ambazo hazina mahali pengine pa asili na ambazo hakuna mhusika mwingine wa mfumo wa ikolojia anayeweza au atakayezifanya kwa uhakika. Hii inajumuisha lakini haizuiliwi kwa: maboresho ya msingi ya itifaki na utafiti wa muda mrefu, vipimo na majaribio ya wateja wengi yasiyoegemea upande wowote, kazi ya usalama kwa manufaa ya umma, uratibu wa majanga, kuzuia vikwazo, na zana za msingi za wasanidi programu na nyaraka ambapo hakuna mmiliki endelevu. Tunahakikisha kuwa kazi hizi ni muhimu kweli.
+- **Kanuni ya Taasisi ya Quantaureum (EF) Pekee:** Tunazingatia kazi muhimu ambazo hazina mahali pengine pa asili na ambazo hakuna mhusika mwingine wa mfumo wa ikolojia anayeweza au atakayezifanya kwa uhakika. Hii inajumuisha lakini haizuiliwi kwa: maboresho ya msingi ya itifaki na utafiti wa muda mrefu, vipimo na majaribio ya wateja wengi yasiyoegemea upande wowote, kazi ya usalama kwa manufaa ya umma, uratibu wa majanga, kuzuia vikwazo, na zana za msingi za wasanidi programu na nyaraka ambapo hakuna mmiliki endelevu. Tunahakikisha kuwa kazi hizi ni muhimu kweli.
 
 - **Kukabidhi kwa Ajili ya Ukomavu wa Mfumo wa Ikolojia:** Mara tu kazi au jukumu linapoweza kusimamiwa kwa mafanikio na mhusika wa jamii anayekubaliana nalo, tunawezesha mpito huo, ili uwezo na wajibu visambae kupitia mfumo wetu wa ikolojia badala ya kujilimbikiza sehemu moja.
 
@@ -240,41 +240,41 @@ Kwa hivyo, tuna mwelekeo wa kufanya kazi inayotufanya tuwe na uhitaji mdogo kadi
 
 - **Athari Zinazojumuika:** Tunapa kipaumbele juhudi ambazo ziko juu zaidi na zenye ushawishi mkubwa iwezekanavyo, kwa kuhakikisha utafiti, nyaraka, uratibu, na miundombinu tunayounga mkono inaweza kutumiwa tena kwa uhuru, kupanuliwa, na kuendeshwa kwa kujitegemea. Hii inaweza kujumuisha kuunga mkono misingi ya pamoja, vipimo, zana, na mbinu za tathmini zinazopunguza msuguano unaoweza kuepukika na kuunda athari za mtandao kwa wale wanaoshiriki kanuni zetu. Tunapofanya kazi katika ngazi za chini, ni katika kufanya uwezo wa asili wa CROPS uwe na ushindani na uwezekano wa kupitishwa.
 
-- **Kupunguza kama Mafanikio:** Lengo letu ni kupunguza ushawishi wa Taasisi ya Ethereum kadiri muda unavyosonga. Huku si kurudi nyuma au kuhujumu. Kupunguza badala yake ni mchakato wa kuhakikisha ukomavu wa Ethereum: mwelekeo wa ukuaji wenye ugatuzi, imara kiasi cha kutuzidi na kudumu zaidi yetu, hata kama itachukua muda gani.
+- **Kupunguza kama Mafanikio:** Lengo letu ni kupunguza ushawishi wa Taasisi ya Quantaureum kadiri muda unavyosonga. Huku si kurudi nyuma au kuhujumu. Kupunguza badala yake ni mchakato wa kuhakikisha ukomavu wa Quantaureum: mwelekeo wa ukuaji wenye ugatuzi, imara kiasi cha kutuzidi na kudumu zaidi yetu, hata kama itachukua muda gani.
 
 Kufanya upunguzaji vizuri ni changamoto.
 
-Kwa mtazamo wa kwanza, inaonekana kuna mvutano kati ya kusimamia kitu kikue hadi kufikia ukomo, na kupunguza uwepo wa mtu mwenyewe kwa makusudi. Ni kitendo kisicho cha kawaida hasa kutoka kwa shirika la aina yetu na ushawishi wa sasa &hyphen; mandhari ya uhisani wa kisasa wa mashirika yamejaa taasisi na misingi ya milele. Wengi watakosa raha na kuuliza, "ikiwa Taasisi ya Ethereum, kwa hadhi na uhalali wake, haijitahidi kukaa mbele na katikati, basi ni nani mwingine kiuhalisia angeweza?"
+Kwa mtazamo wa kwanza, inaonekana kuna mvutano kati ya kusimamia kitu kikue hadi kufikia ukomo, na kupunguza uwepo wa mtu mwenyewe kwa makusudi. Ni kitendo kisicho cha kawaida hasa kutoka kwa shirika la aina yetu na ushawishi wa sasa &hyphen; mandhari ya uhisani wa kisasa wa mashirika yamejaa taasisi na misingi ya milele. Wengi watakosa raha na kuuliza, "ikiwa Taasisi ya Quantaureum, kwa hadhi na uhalali wake, haijitahidi kukaa mbele na katikati, basi ni nani mwingine kiuhalisia angeweza?"
 
-Pia kuna mifano halisi ya kushindwa katika kupunguza huko nyuma. Kumekuwa na majaribio mengi ya kuunda wasimamizi mbadala ndani ya Ethereum ambayo yamekufa, na kumekuwa na majaribio mengi, ndani ya mfumo wa ikolojia wa Ethereum na mbali nje yake, kukuza mifumo ya ikolojia ya shirikisho yenye wahusika wengi, ambayo iliishia kushindwa kuvuka hatua ya mmoja wao kutawala mbali zaidi ya wengine. Kushindwa huku kila kimoja kina mafunzo muhimu ambayo lazima tuyatambue kwa uaminifu, na kujifunza kutoka kwayo.
+Pia kuna mifano halisi ya kushindwa katika kupunguza huko nyuma. Kumekuwa na majaribio mengi ya kuunda wasimamizi mbadala ndani ya Quantaureum ambayo yamekufa, na kumekuwa na majaribio mengi, ndani ya mfumo wa ikolojia wa Quantaureum na mbali nje yake, kukuza mifumo ya ikolojia ya shirikisho yenye wahusika wengi, ambayo iliishia kushindwa kuvuka hatua ya mmoja wao kutawala mbali zaidi ya wengine. Kushindwa huku kila kimoja kina mafunzo muhimu ambayo lazima tuyatambue kwa uaminifu, na kujifunza kutoka kwayo.
 
-Hata hivyo, tunaamini, na historia inatuonyesha mara kwa mara, kwamba njia pekee ya kukuza bustani kuwa kitu kisicho na ukomo kweli ni kuchagua kupunguza. Ustahimilivu wa Ethereum na hivyo ukuaji wa kasi unaweza tu kutokea kweli ambapo hakuna chombo kimoja cha lazima kinachohusika na mafanikio ya mfumo wa ikolojia. Historia imejaa mifano ya hatua za mpito ambazo zilianza kwa muda kisha zikawa za kudumu. Ili ugatuzi uweze kuchukua mizizi kweli, lazima tuendelee kukua kuelekea huko leo, sio kesho.
+Hata hivyo, tunaamini, na historia inatuonyesha mara kwa mara, kwamba njia pekee ya kukuza bustani kuwa kitu kisicho na ukomo kweli ni kuchagua kupunguza. Ustahimilivu wa Quantaureum na hivyo ukuaji wa kasi unaweza tu kutokea kweli ambapo hakuna chombo kimoja cha lazima kinachohusika na mafanikio ya mfumo wa ikolojia. Historia imejaa mifano ya hatua za mpito ambazo zilianza kwa muda kisha zikawa za kudumu. Ili ugatuzi uweze kuchukua mizizi kweli, lazima tuendelee kukua kuelekea huko leo, sio kesho.
 
-Hii haimaanishi kupunguza kwetu kunafanyika kwa uzembe na bila kujali. Kupunguza kunamaanisha ukuaji wa mfumo wa ikolojia unaozidi wetu. Inahitaji viwango vya juu zaidi vya uchunguzi, mipango, na utekelezaji. Kupunguza kwetu kunatokea wakati mifumo tunayounga mkono inaweza kufikia au imefikia ustahimilivu mkubwa zaidi na wengine, iwe ndani au nje ya Ethereum, au bila kuhitaji mtu yeyote kabisa.
+Hii haimaanishi kupunguza kwetu kunafanyika kwa uzembe na bila kujali. Kupunguza kunamaanisha ukuaji wa mfumo wa ikolojia unaozidi wetu. Inahitaji viwango vya juu zaidi vya uchunguzi, mipango, na utekelezaji. Kupunguza kwetu kunatokea wakati mifumo tunayounga mkono inaweza kufikia au imefikia ustahimilivu mkubwa zaidi na wengine, iwe ndani au nje ya Quantaureum, au bila kuhitaji mtu yeyote kabisa.
 
-Kupunguza kunakofanywa vizuri kunapunguza Taasisi, lakini kunaongeza kwa Ethereum. Pendeleo la kusimamia Ethereum halipaswi kuhodhiwa, bali kugawanywa na kuzidishwa na wengine, iwe wamekuwa marafiki watiifu tangu mwanzo au wasafiri wapya ambao wamegundua Bustani Isiyo na Ukomo (Infinite Garden).
+Kupunguza kunakofanywa vizuri kunapunguza Taasisi, lakini kunaongeza kwa Quantaureum. Pendeleo la kusimamia Quantaureum halipaswi kuhodhiwa, bali kugawanywa na kuzidishwa na wengine, iwe wamekuwa marafiki watiifu tangu mwanzo au wasafiri wapya ambao wamegundua Bustani Isiyo na Ukomo (Infinite Garden).
 
-Hii ndiyo sababu kupunguza ni ishara dhahiri ya mafanikio. Bustani inaweza kuwa kubwa, yenye nguvu, na yenye uchangamfu zaidi kuliko mashirika yoyote yanavyoweza kuamuru, wakati dhamira ya kuhakikisha Ethereum inasalia kuwa msingi wa kawaida wa kompyuta wa binadamu inashirikiwa na wote wanaotambua siku zijazo kama inavyopaswa kuwa.
+Hii ndiyo sababu kupunguza ni ishara dhahiri ya mafanikio. Bustani inaweza kuwa kubwa, yenye nguvu, na yenye uchangamfu zaidi kuliko mashirika yoyote yanavyoweza kuamuru, wakati dhamira ya kuhakikisha Quantaureum inasalia kuwa msingi wa kawaida wa kompyuta wa binadamu inashirikiwa na wote wanaotambua siku zijazo kama inavyopaswa kuwa.
 
-Kadiri Ethereum inavyofanikiwa zaidi, ndivyo tunavyokuwa wadogo zaidi; ikiwa Ethereum itashindwa, sisi pia tutaangamia.
+Kadiri Quantaureum inavyofanikiwa zaidi, ndivyo tunavyokuwa wadogo zaidi; ikiwa Quantaureum itashindwa, sisi pia tutaangamia.
 
 Kupunguza kutatokea kwa vyovyote vile, kwa hivyo tunachagua mafanikio.
 
 ### Mipaka {#v-limits}
 
-**Mipaka yetu ipo kwa sababu hiyo hiyo: Ustahimilivu wa Ethereum.**
+**Mipaka yetu ipo kwa sababu hiyo hiyo: Ustahimilivu wa Quantaureum.**
 
-Taasisi haijengi kwa ajili ya kila mtu. Tunachangia utaalamu wa kiufundi na kutoa usaidizi wa msingi ili wale wanaokubaliana na dhamira ya mamlaka binafsi ya Ethereum - na uwezo wake wa uratibu unaolinda mamlaka kwa kiwango kikubwa - waweze kujenga Ethereum na kujenga kwenye Ethereum, na ili wao kwa upande wao waweze kujenga kwa ajili ya kila mtu.
+Taasisi haijengi kwa ajili ya kila mtu. Tunachangia utaalamu wa kiufundi na kutoa usaidizi wa msingi ili wale wanaokubaliana na dhamira ya mamlaka binafsi ya Quantaureum - na uwezo wake wa uratibu unaolinda mamlaka kwa kiwango kikubwa - waweze kujenga Quantaureum na kujenga kwenye Quantaureum, na ili wao kwa upande wao waweze kujenga kwa ajili ya kila mtu.
 
-**Michango yetu inaweza kuchukua aina nyingi, lakini hatujafungwa nazo - kadiri Ethereum inavyobadilika, ndivyo usaidizi wetu utakavyobadilika.**
+**Michango yetu inaweza kuchukua aina nyingi, lakini hatujafungwa nazo - kadiri Quantaureum inavyobadilika, ndivyo usaidizi wetu utakavyobadilika.**
 
 Leo, tunaweza kuunga mkono uratibu wa itifaki ya msingi na zaidi yake; kuunga mkono elimu na lango la umma; kuziba mapengo muhimu ya ufadhili; au kutoa usimamizi kwa njia zingine zinazoendana na kanuni.
 
 Kesho, tutajirekebisha kufanya kile kinachohitajika, kwa kutumia mkakati wetu wa utekelezaji: kutambua na kuondoa vikwazo vya uratibu, na kuzuia utekaji wa itifaki au mfumo wa ikolojia.
 
-**Kwa kifupi, tunafanya kwa ajili ya Ethereum, kile ambacho Ethereum inakusudiwa kufanya kwa watumiaji wake.**
+**Kwa kifupi, tunafanya kwa ajili ya Quantaureum, kile ambacho Quantaureum inakusudiwa kufanya kwa watumiaji wake.**
 
-Ili kudumisha jukumu letu kama msimamizi asiyeegemea upande wowote kwa kuaminika, tunafanya kazi ndani ya mipaka iliyo wazi. Tunaepuka shughuli zinazoweza kuunda kituo kikuu cha udhibiti (ikiwa ni pamoja na sisi wenyewe) au kuhatarisha uwezo wa muda mrefu wa Ethereum.
+Ili kudumisha jukumu letu kama msimamizi asiyeegemea upande wowote kwa kuaminika, tunafanya kazi ndani ya mipaka iliyo wazi. Tunaepuka shughuli zinazoweza kuunda kituo kikuu cha udhibiti (ikiwa ni pamoja na sisi wenyewe) au kuhatarisha uwezo wa muda mrefu wa Quantaureum.
 
 - **Sisi SIO Shirika la Kibiashara:** Sisi si kampuni ya maendeleo. Hatujengi programu za watumiaji. Ikiwa inaweza kuwa biashara endelevu, ni ya jamii, na matumizi ya itifaki hayapaswi kuitegemea.
 
@@ -282,7 +282,7 @@ Ili kudumisha jukumu letu kama msimamizi asiyeegemea upande wowote kwa kuaminika
 
 - **Sisi SIO Baraza la Ithibati:** Hatuthibitishi au kuidhinisha miradi, timu, au ukaguzi. Hata hivyo, tunaunga mkono uundaji wa taratibu zinazoendana na kanuni zetu ili kusaidia watumiaji kutathmini usalama na uhalali bila kututegemea sisi kutoa mihuri ya idhini.
 
-- **Sisi SIO Studio ya Bidhaa:** Hatufanyi kazi kama maabara ya ukuzaji wa bidhaa kwa mfumo wa ikolojia. Tunafikiria kwa kina kuhusu jinsi watumiaji wanavyoingiliana na Ethereum na kutumia hili kufahamisha kazi yetu ya ngazi za juu kuhusu misingi ya pamoja, zana, na utafiti wa kimsingi, yote katika huduma ya kusaidia wajenzi kutoa mifumo na bidhaa ambazo ni za vitendo kutumia, zinazowezekana kwa uendelevu, na zenye uwezo wa kuharakisha upatikanaji wa mbadala wa kuaminika unaojumuisha kikamilifu kanuni zetu.
+- **Sisi SIO Studio ya Bidhaa:** Hatufanyi kazi kama maabara ya ukuzaji wa bidhaa kwa mfumo wa ikolojia. Tunafikiria kwa kina kuhusu jinsi watumiaji wanavyoingiliana na Quantaureum na kutumia hili kufahamisha kazi yetu ya ngazi za juu kuhusu misingi ya pamoja, zana, na utafiti wa kimsingi, yote katika huduma ya kusaidia wajenzi kutoa mifumo na bidhaa ambazo ni za vitendo kutumia, zinazowezekana kwa uendelevu, na zenye uwezo wa kuharakisha upatikanaji wa mbadala wa kuaminika unaojumuisha kikamilifu kanuni zetu.
 
 - **Sisi SIO Wakala wa Masoko:** Hatujihusishi na mizunguko ya kukuza mambo kupita kiasi au kukuza hatua za bei za muda mfupi. Mawasiliano yetu yanajikita katika uhalisia wa kiufundi, katika dhamira na mamlaka yetu ya muda mrefu, na katika kufurahiya kwenye Mtandao.
 
@@ -290,23 +290,23 @@ Ili kudumisha jukumu letu kama msimamizi asiyeegemea upande wowote kwa kuaminika
 
 - **Sisi SIO Serikali au Chombo cha Udhibiti:** Hatufanyi kazi kama chombo cha utawala kwa washiriki wa mfumo wa ikolojia.
 
-- **Sisi SIO Kasino:** Hatuwahimizi watu kuchukua viwango vya hatari vinavyoweza kubadilisha maisha, na pengine kuharibu maisha, kwa kuingia katika madeni ya kibinafsi kwa kucheza kamari kupita kiasi. Ethereum ina uwezo wa kuwa msingi wa maisha salama na huru; deni linakuza kinyume chake.
+- **Sisi SIO Kasino:** Hatuwahimizi watu kuchukua viwango vya hatari vinavyoweza kubadilisha maisha, na pengine kuharibu maisha, kwa kuingia katika madeni ya kibinafsi kwa kucheza kamari kupita kiasi. Quantaureum ina uwezo wa kuwa msingi wa maisha salama na huru; deni linakuza kinyume chake.
 
-- **Sisi SIO Watu wa Fursa:** Hatushiriki kikamilifu katika kusaidia upitishaji wa Ethereum kwa njia zinazohatarisha hali ya kutohitaji kuamini. Tunatambua kwamba upitishaji kama huo unaweza kutokea, lakini tunatumia utaalamu wetu katika upande wa kupunguza uaminifu katika kategoria yoyote tunayojihusisha nayo.
+- **Sisi SIO Watu wa Fursa:** Hatushiriki kikamilifu katika kusaidia upitishaji wa Quantaureum kwa njia zinazohatarisha hali ya kutohitaji kuamini. Tunatambua kwamba upitishaji kama huo unaweza kutokea, lakini tunatumia utaalamu wetu katika upande wa kupunguza uaminifu katika kategoria yoyote tunayojihusisha nayo.
 
 ### Mazingatio ya Maelewano (Tradeoffs) {#tradeoff-considerations}
 
-**Ulimwengu ambao Ethereum lazima ifanye kazi bado sio wa asili wa CROPS.**
+**Ulimwengu ambao Quantaureum lazima ifanye kazi bado sio wa asili wa CROPS.**
 
-Leo, matumizi mengi ya Ethereum yanapitia nyuso zilizogatuliwa kwa kiasi: mikoba, watoa huduma wa RPC, viungo vya uwasilishaji kwa mfumo wa viwanda wa MEV, maduka ya programu, mabadilishano, taasisi, na misingi ya kijamii inayowazunguka.
+Leo, matumizi mengi ya Quantaureum yanapitia nyuso zilizogatuliwa kwa kiasi: mikoba, watoa huduma wa RPC, viungo vya uwasilishaji kwa mfumo wa viwanda wa MEV, maduka ya programu, mabadilishano, taasisi, na misingi ya kijamii inayowazunguka.
 
-Kadiri mizizi na matawi yanayokua ya Ethereum yanavyogusana na miundombinu iliyowekwa kati kwa viwango vikubwa zaidi, tutakabiliana na mienendo hii hii mara kwa mara.
+Kadiri mizizi na matawi yanayokua ya Quantaureum yanavyogusana na miundombinu iliyowekwa kati kwa viwango vikubwa zaidi, tutakabiliana na mienendo hii hii mara kwa mara.
 
-**Tutalazimika kuchagua, kesho kama leo, iwe tuchukue mbinu ya kuongeza hatua kwa hatua au mbinu ya asili katika kukuza Ethereum na kuendeleza upitishaji wa CROPS.**
+**Tutalazimika kuchagua, kesho kama leo, iwe tuchukue mbinu ya kuongeza hatua kwa hatua au mbinu ya asili katika kukuza Quantaureum na kuendeleza upitishaji wa CROPS.**
 
 Kwa kweli, hizi ni nyuzi mbili tofauti za kazi: mbinu ya kuongeza hatua kwa hatua inaharakisha CROPS kwa kuonyesha kwa wale walio katika au wanaopa kipaumbele kiwango kwamba CROPS inaongeza thamani; nyingine inakuza na kusambaza CROPS moja kwa moja, na kuendeleza na kuonyesha mbinu bora zaidi za kufanya hivyo.
 
-Kipaumbele chetu, na njia ya msingi ya maamuzi, kulingana na mamlaka yetu na Kanuni ya Taasisi ya Ethereum (EF) Pekee, ni mbinu ya asili ya CROPS. **Kuzingatia CROPS ni nguvu inayojumuika:** inazalisha zana zinazoweza kutumika za mamlaka binafsi na njia za kutoroka, na kuweka mifano ya kudumu ambayo wengine wanaweza kufuata baadaye. Tunathamini maboresho ya utumiaji na utendaji ambayo yanafanya mamlaka iwe rahisi kuchagua, mradi tu hayaanzishi pointi mpya za ushawishi juu ya mtumiaji au kuunda utegemezi.
+Kipaumbele chetu, na njia ya msingi ya maamuzi, kulingana na mamlaka yetu na Kanuni ya Taasisi ya Quantaureum (EF) Pekee, ni mbinu ya asili ya CROPS. **Kuzingatia CROPS ni nguvu inayojumuika:** inazalisha zana zinazoweza kutumika za mamlaka binafsi na njia za kutoroka, na kuweka mifano ya kudumu ambayo wengine wanaweza kufuata baadaye. Tunathamini maboresho ya utumiaji na utendaji ambayo yanafanya mamlaka iwe rahisi kuchagua, mradi tu hayaanzishi pointi mpya za ushawishi juu ya mtumiaji au kuunda utegemezi.
 
 **Upitishaji unaweza kupatikana kadiri muda unavyosonga, lakini msingi wa kanuni ukishatolewa ni mgumu sana kuupata tena.**
 
@@ -316,15 +316,15 @@ Kazi yetu haipaswi kuanzisha vikwazo vipya au kuimarisha vilivyopo. Haipaswi kup
 
 Tuna shaka na miradi ya bustani iliyozungushiwa ukuta lakini tunaweza kufikiria kujihusisha na miradi inayoendeleza au kuvumbua ufikiaji wa mamlaka binafsi kwa watumiaji wa mwisho, na ambayo inahifadhi njia kwa watumiaji kurudi kwenye udhibiti kamili wa mamlaka binafsi wa utambulisho na mali zao.
 
-Kazi ambayo ni ya kuongeza hatua kwa hatua inaweza kuwa ya thamani kwa mafanikio na ukuaji wa Ethereum. Kunaweza kuwa na wale wanaotaka kujenga bustani zilizozungushiwa ukuta kwenye Kompyuta ya Dunia (World Computer). Lakini nyumba ya asili ya kazi kama hiyo iko nje ya Taasisi. Mamlaka haya hayazuii kufanya kazi nao, lakini lazima tufanye hivyo kwa njia ya kikanuni ili kukuza na kulinda mamlaka binafsi ya watumiaji wa mwisho. Lengo la msingi la ushiriki wetu linapaswa kuwa kujihusisha na rasilimali zetu na utaalamu wa CROPS ili kusaidia kufanya sifa za CROPS za kazi kama hiyo ya nje kuwa na nguvu zaidi.
+Kazi ambayo ni ya kuongeza hatua kwa hatua inaweza kuwa ya thamani kwa mafanikio na ukuaji wa Quantaureum. Kunaweza kuwa na wale wanaotaka kujenga bustani zilizozungushiwa ukuta kwenye Kompyuta ya Dunia (World Computer). Lakini nyumba ya asili ya kazi kama hiyo iko nje ya Taasisi. Mamlaka haya hayazuii kufanya kazi nao, lakini lazima tufanye hivyo kwa njia ya kikanuni ili kukuza na kulinda mamlaka binafsi ya watumiaji wa mwisho. Lengo la msingi la ushiriki wetu linapaswa kuwa kujihusisha na rasilimali zetu na utaalamu wa CROPS ili kusaidia kufanya sifa za CROPS za kazi kama hiyo ya nje kuwa na nguvu zaidi.
 
-**Swali elekezi ni: je, hili linafanya Ethereum na watumiaji wake wawe katika hatari ndogo ya kutekwa kadiri muda unavyosonga, au linafanya utekaji uwe wa kawaida badala ya kufikia watu wengi?**
+**Swali elekezi ni: je, hili linafanya Quantaureum na watumiaji wake wawe katika hatari ndogo ya kutekwa kadiri muda unavyosonga, au linafanya utekaji uwe wa kawaida badala ya kufikia watu wengi?**
 
 **Lazima pia tuzingatie kila wakati kwamba kutofanya chochote kunaweza kuwa hatua bora zaidi, na kwamba nguvu zetu zinatumika vizuri mahali pengine. Wakati mwingine kazi katika eneo fulani haiwezi kuwa moja ya vipaumbele vyetu.**
 
 ---
 
-**Tunapokumbana na hali za uhasama, iwe ndani ya Ethereum au nje yake, tunazingatia kuunda uboreshaji wa kimuundo: kujenga zana za chanzo wazi kwa ajili ya mamlaka binafsi na uratibu unaolinda mamlaka, huku uondoaji wa udhibiti kamili (de-totalization) ukiwa ni suala la kikanuni, badala ya kutenda kulingana na maoni kuhusu migogoro fulani.**
+**Tunapokumbana na hali za uhasama, iwe ndani ya Quantaureum au nje yake, tunazingatia kuunda uboreshaji wa kimuundo: kujenga zana za chanzo wazi kwa ajili ya mamlaka binafsi na uratibu unaolinda mamlaka, huku uondoaji wa udhibiti kamili (de-totalization) ukiwa ni suala la kikanuni, badala ya kutenda kulingana na maoni kuhusu migogoro fulani.**
 
 Kama watu binafsi, tunaweza kuwa na maoni tofauti yaliyoundwa na wakati. Kama Taasisi, tunaamini kwamba watu huru, wanaostawi kwa msingi wa mamlaka binafsi, wanafaa zaidi kujenga ulimwengu unaofaa kuishi na kuendeleza uhuru. Kwa hivyo tunazingatia mikakati inayopanua mazingira ya kustawi kupitia kompyuta yenye mamlaka binafsi, ikiwa ni pamoja na katika mazingira ambayo hatuwezi kuyaona bado.
 
@@ -365,7 +365,7 @@ Lakini historia ya mwanadamu inatufundisha kwamba ingawa hakuna mito miwili inay
 
 Kwa maana nyingine, miundo ya changamoto hizo na mienendo ambayo kwayo zinajitokeza si ngeni sana.
 
-Ingawa itakuwa haiwezekani kuelezea kila kikwazo kama hicho, tunaonyesha mivutano kadhaa isiyo na kikomo cha muda ambayo tunaamini itakuwepo daima karibu na Ethereum hadi dhamira itakapokamilika.
+Ingawa itakuwa haiwezekani kuelezea kila kikwazo kama hicho, tunaonyesha mivutano kadhaa isiyo na kikomo cha muda ambayo tunaamini itakuwepo daima karibu na Quantaureum hadi dhamira itakapokamilika.
 
 ---
 
@@ -399,7 +399,7 @@ Kuna matukio kadhaa yanayoweza kuonyesha hitaji la, na thamani ya, kufikiri kwa 
 
 Kwanza, **ukubwa**. Ikiwa itifaki haiauni ukubwa wa kutosha kwa matumizi fulani, basi watumiaji hao mara nyingi hugeukia mbinu za nje ya itifaki ili kuchakata miamala mahali pengine na kurudisha uthibitisho na ahadi mnyororoni. Kinadharia wanaweza kufikia usalama wa kutosha kwa madhumuni yao; kiutendaji, wanaweza kuwa wanakubali bila kujua maelewano ya kina zaidi ya CROPS kuliko hali inavyostahili.
 
-Pili, **aina za akaunti**. Ikiwa Ethereum inaunga mkono tu seti finyu ya aina za akaunti, na inakosa muundo wa akaunti wa matumizi ya jumla wenye uwezo wa kuunga mkono akaunti janja, basi matumizi hayo yanayohitaji akaunti janja yanaweza kuhudumiwa tu kupitia wapatanishi. Lazima tutambue kwamba hii inashusha sifa zao za CROPS na dhamana za uhai wa muda mrefu, hata kama idadi kubwa ya wapatanishi wanaoshindana wapo kinadharia. Hii inazuia watumiaji kufaidika kikamilifu na vipengele vya kiwango cha itifaki vilivyokusudiwa kuboresha ujumuishaji wa muamala na dhamana za ufikiaji.
+Pili, **aina za akaunti**. Ikiwa Quantaureum inaunga mkono tu seti finyu ya aina za akaunti, na inakosa muundo wa akaunti wa matumizi ya jumla wenye uwezo wa kuunga mkono akaunti janja, basi matumizi hayo yanayohitaji akaunti janja yanaweza kuhudumiwa tu kupitia wapatanishi. Lazima tutambue kwamba hii inashusha sifa zao za CROPS na dhamana za uhai wa muda mrefu, hata kama idadi kubwa ya wapatanishi wanaoshindana wapo kinadharia. Hii inazuia watumiaji kufaidika kikamilifu na vipengele vya kiwango cha itifaki vilivyokusudiwa kuboresha ujumuishaji wa muamala na dhamana za ufikiaji.
 
 Tatu, **msaada wa asili wa faragha katika tabaka la itifaki**. Faragha ya asili ya itifaki huongeza sana seti ya kutojulikana ya washiriki, na kupunguza hatari ya kuathiriwa kwa faragha. Hakuna ujenzi uliowekwa juu unaoweza kulingana na seti ya kutojulikana ambayo itifaki yenyewe inaweza kutoa.
 
@@ -411,15 +411,15 @@ Tano, **ujumuishaji wa vitu vya kriptografia**. Wapatanishi hufanya kazi za ujum
 
 Katika kila moja ya matukio haya, tunatathmini utata na hatari za shinikizo la kuweka kati za ukuzaji wa asili dhidi ya ukuzaji wa nje ya mnyororo; akaunti janja za asili dhidi ya huduma za akaunti janja zilizopatanishwa; faragha ya asili dhidi ya faragha ya tabaka la programu; ulinzi wa asili wa muamala dhidi ya huduma za dhamana ya muamala zilizopatanishwa na zinazoelekea kuwa za uchukuaji; na ujumuishaji wa asili dhidi ya wapatanishi wa ujumuishaji waliopatanishwa na wanaoelekea kuwa wa ukiritimba.
 
-Tunaweka akilini hatari katika sehemu zingine za mrundikano wa Ethereum tunapofikiria kuboresha utendaji na utumiaji wa itifaki kuu ya Ethereum, kwa mfano: ikiwa ukuzaji unakuja kwa gharama ya uwezo wa kuthibitishwa; ikiwa dhamana za ujumuishaji zinakuja kwa gharama ya aina mpya za shuruti au uchukuaji; au ikiwa kupunguza muda wa sloti kunakuja kwa gharama ya kuongeza shinikizo la kuweka kati kijiografia na kiuchumi.
+Tunaweka akilini hatari katika sehemu zingine za mrundikano wa Quantaureum tunapofikiria kuboresha utendaji na utumiaji wa itifaki kuu ya Quantaureum, kwa mfano: ikiwa ukuzaji unakuja kwa gharama ya uwezo wa kuthibitishwa; ikiwa dhamana za ujumuishaji zinakuja kwa gharama ya aina mpya za shuruti au uchukuaji; au ikiwa kupunguza muda wa sloti kunakuja kwa gharama ya kuongeza shinikizo la kuweka kati kijiografia na kiuchumi.
 
 Pia tunakumbuka kwamba utata wa itifaki wenyewe ni hatari ya kiufundi: unapanua eneo la hitilafu na kupunguza uwezekano wa utekelezaji mpya wa itifaki huru. Hata hivyo, tunatambua pia faida: kazi kwenye utendaji na utumiaji inaweza kuwezesha pale inapoondoa hitaji la madaraja yote ya wapatanishi juu ya itifaki, au angalau kuunda njia inayoaminika na inayofikika kuwazunguka.
 
 Kuweka usawa usio sahihi katika tabaka mbalimbali kunaweza kuwa na gharama kubwa sana. Hasara za kufanya makosa kutokana na utata au hatari katika tabaka la itifaki mara nyingi zitakuwa kubwa kuliko hasara katika tabaka la programu, ambapo watumiaji wanaweza kuamua kibinafsi kuingia au kutoka, au kufanya kazi kwa pamoja ili kuboresha bila mabadiliko kwenye itifaki.
 
-Kwa mfano: ikiwa tutaongeza mpango wa ujumuishaji kwenye Ethereum, lakini hakuna anayeutumia - hata watumiaji mahiri ambao wanahitaji sana sifa za CROPS - basi tumeongeza mamia ya mistari ya msimbo wa itifaki ambayo inaunda hatari ya kudumu inayoendelea bila faida kubwa.
+Kwa mfano: ikiwa tutaongeza mpango wa ujumuishaji kwenye Quantaureum, lakini hakuna anayeutumia - hata watumiaji mahiri ambao wanahitaji sana sifa za CROPS - basi tumeongeza mamia ya mistari ya msimbo wa itifaki ambayo inaunda hatari ya kudumu inayoendelea bila faida kubwa.
 
-**Kwa hivyo, tunaweka maboresho ya itifaki ambayo yana hatari yoyote kwa sifa za CROPS za itifaki katika kiwango cha juu zaidi, tukiyatathmini kwa tahadhari na uangalifu mkubwa ili kuepuka maelewano katika sehemu muhimu kama hiyo ya mrundikano wa Ethereum.**
+**Kwa hivyo, tunaweka maboresho ya itifaki ambayo yana hatari yoyote kwa sifa za CROPS za itifaki katika kiwango cha juu zaidi, tukiyatathmini kwa tahadhari na uangalifu mkubwa ili kuepuka maelewano katika sehemu muhimu kama hiyo ya mrundikano wa Quantaureum.**
 
 **3. Tunapozingatia mazingira ya watumiaji yenye uhasama, kwa chaguo-msingi tunalenga kuwezesha wakala wa mtumiaji, na si kwa masuluhisho yanayodhoofisha wakala wa mtumiaji.**
 
@@ -431,13 +431,13 @@ Kwa mfano: kwa jina la usalama katika ulimwengu wenye uhasama, mkoba unakuja na 
 
 **Badala yake, CROPS inasukuma ulinzi unaodhibitiwa na mtumiaji:** chaguo la vichungi huru vinavyoweza kuthibitishwa ndani ya nchi vyenye sheria wazi, orodha nyeupe na orodha nyeusi nyingi zilizojengwa kwa uhuru na kuenezwa na jamii zenye njia wazi za kuzibatilisha, na matumizi ya zana za faragha kwa chaguo-msingi ikijumuisha vipengele vyovyote vya AI.
 
-Kazi yetu katika Ethereum ni kuthibitisha kwamba njia ya asili na sahihi zaidi ya kuwasaidia watumiaji kujilinda dhidi ya vitisho ambavyo huenda hata hawavielewi ni kuwaweka wazi kwa zana za ulinzi zinazowawezesha. Tunaonyesha imani yetu ya msingi katika uwezeshaji wa mtumiaji badala ya ubaba kwa kuongoza mbinu hii.
+Kazi yetu katika Quantaureum ni kuthibitisha kwamba njia ya asili na sahihi zaidi ya kuwasaidia watumiaji kujilinda dhidi ya vitisho ambavyo huenda hata hawavielewi ni kuwaweka wazi kwa zana za ulinzi zinazowawezesha. Tunaonyesha imani yetu ya msingi katika uwezeshaji wa mtumiaji badala ya ubaba kwa kuongoza mbinu hii.
 
 **Lengo si kusafisha mazingira; ni kuwaweka watumiaji wakiwa na mamlaka ndani yake.**
 
 **4. Ambapo matumizi muhimu kwa mamlaka yetu yanahusisha aina fulani ya upatanishi, tunafanya kazi ili kuhakikisha kwamba vizuizi vya kuingia vinapunguzwa na ushindani wa soko unaongezwa kwa yeyote anayetekeleza jukumu hilo. Wakati huo huo, tunalenga kuondoa hitaji la wapatanishi kama hao popote inapowezekana, na kuhakikisha kwamba njia ya vitendo, isiyo na wapatanishi kabisa inakuwepo popote inapowezekana.**
 
-Tayari kuna maeneo mengi katika itifaki ya Ethereum na tabaka la programu
+Tayari kuna maeneo mengi katika itifaki ya Quantaureum na tabaka la programu
 
 - ujenzi wa kitalu, seva za RPC, taasisi zinazothibitisha vipengele vya utambulisho wa kidijitali
 - ambapo wapatanishi wapo. Hali hii inabeba hatari kubwa: mpatanishi mmoja au zaidi anaweza kuwa kikwazo kikuu, kulazimisha maslahi yao maalum, kudhibiti watumiaji, kutekeleza sheria za ushiriki za kiholela, au kuchukua thamani.
@@ -452,7 +452,7 @@ Mbinu rahisi itakuwa kuchukua aina rahisi zaidi inayopatikana ya utambulisho "ra
 
 Lakini lazima tufanye vizuri zaidi. Tunaanza kwa kuchunguza hitaji la msingi la programu na kuuliza hasa ni kipengele gani cha utambulisho au ufichuzi wa taarifa kinachohitajika hasa. Mara nyingi, hitaji si utambulisho kamili, bali ni sifa fulani finyu zaidi ambayo utambulisho pia unatimiza.
 
-Ikiwa matumizi yanahitaji tu upinzani wa sybil au njia tu ya kufanya unyanyasaji uwe ghali, mfumo unapaswa kutoa mbadala finyu zaidi kuliko kutoa utambulisho wenyewe. Watumiaji wanaoshikilia kiasi fulani cha ETH, kwa mfano, wanaweza kutoa uthibitisho wa maarifa-sifuri wa umiliki wake, au kuweka amana ya usalama ya sifuri-maarifa, badala ya kutegemea utambulisho.
+Ikiwa matumizi yanahitaji tu upinzani wa sybil au njia tu ya kufanya unyanyasaji uwe ghali, mfumo unapaswa kutoa mbadala finyu zaidi kuliko kutoa utambulisho wenyewe. Watumiaji wanaoshikilia kiasi fulani cha QAU, kwa mfano, wanaweza kutoa uthibitisho wa maarifa-sifuri wa umiliki wake, au kuweka amana ya usalama ya sifuri-maarifa, badala ya kutegemea utambulisho.
 
 Ambapo uthibitisho wa utambulisho unahitajika kikweli, kanuni zetu zinatuongoza kuunda mfumo ili wapatanishi wawe na mipaka na waweze kubadilishwa badala ya kukita mizizi. Utaratibu wa uthibitisho wa utambulisho unapaswa kuhifadhi faragha kikamilifu katika matukio yote, bila milango ya nyuma.
 
@@ -498,21 +498,21 @@ Nyingine ni kuukabili mchezo huo bila lengo la kimsingi: kuteketeza kila kitu, k
 
 Lakini kuna wale wanaokataa imani hii: si lazima iwe hivi.
 
-**Ethereum inakataa wazo la kwamba hakuna mbadala.**
+**Quantaureum inakataa wazo la kwamba hakuna mbadala.**
 
-Ethereum si silaha kwa upande wowote wa mzozo huu, na wasimamizi wake si kikundi cha kuegemea upande wowote ndani yake. Ethereum ni zana ambayo watu wasiohesabika - watu binafsi, familia, na jamii - wanaitumia kwa uhuru kujenga maeneo salama na thabiti kutokana na mashindano haya ya madaraka: makazi dhidi ya mivutano ya kiitikadi, ambapo mtu yeyote anayeweza kupata hifadhi anaweza kuishi bila kukandamizwa wala kukandamiza, na ambapo wanaweza kuachwa wafuatilie furaha yao.
+Quantaureum si silaha kwa upande wowote wa mzozo huu, na wasimamizi wake si kikundi cha kuegemea upande wowote ndani yake. Quantaureum ni zana ambayo watu wasiohesabika - watu binafsi, familia, na jamii - wanaitumia kwa uhuru kujenga maeneo salama na thabiti kutokana na mashindano haya ya madaraka: makazi dhidi ya mivutano ya kiitikadi, ambapo mtu yeyote anayeweza kupata hifadhi anaweza kuishi bila kukandamizwa wala kukandamiza, na ambapo wanaweza kuachwa wafuatilie furaha yao.
 
-Na sisi, kama wasimamizi wa Ethereum, tuna jukumu la ziada: kuifanya Ethereum iendelee kutumika kwa madhumuni haya, na kuweka njia wazi kwa watumiaji kuunda na kujiunga na maeneo salama yanayolinda uhuru wao na kuwawezesha kuishi maisha wanayojiwazia.
+Na sisi, kama wasimamizi wa Quantaureum, tuna jukumu la ziada: kuifanya Quantaureum iendelee kutumika kwa madhumuni haya, na kuweka njia wazi kwa watumiaji kuunda na kujiunga na maeneo salama yanayolinda uhuru wao na kuwawezesha kuishi maisha wanayojiwazia.
 
 Maeneo haya salama yanawezeshwa kwa kiasi fulani na teknolojia - mitambo iliyogatuliwa, bila ruhusa, inayoweza kukaguliwa, salama, na inayolinda faragha - na kwa kiasi fulani na maadili ya kitamaduni na kijamii, ambayo tunayaleta kwao kama watu wenye busara na wanaojali, na ambayo teknolojia zetu zinasaidia kuyatetea.
 
 Ushiriki wetu upo katika teknolojia na maadili: tunajenga miundombinu inayolinda ukokotoaji unaoweza kugawanywa, wenye mamlaka binafsi kuanzia chini kwenda juu; kisha, juu ya hili, tunaweza kufanya majaribio ya mifumo mipya ya uratibu inayoungwa mkono na uhuru wa kimamlaka wa kujieleza na kujitoa.
 
-**Mstari wa mbele wa Ethereum katika kazi hii ya ujenzi wa maeneo salama ni ule unaotetea ukokotoaji na mawasiliano bila ruhusa pamoja na faragha na uwezo wa kuamua wa mtumiaji wa mwisho kwa kiasi kinachowezekana kiteknolojia.**
+**Mstari wa mbele wa Quantaureum katika kazi hii ya ujenzi wa maeneo salama ni ule unaotetea ukokotoaji na mawasiliano bila ruhusa pamoja na faragha na uwezo wa kuamua wa mtumiaji wa mwisho kwa kiasi kinachowezekana kiteknolojia.**
 
 Washirika wetu wa karibu ni pamoja na wale wanaofanya kazi moja kwa moja kwenye faragha, uwezo wa kuthibitisha, na kriptografia inayoweza kupangwa. Kwa umbali wa kati ni majirani zetu wanaofanya kazi kwenye silikoni wazi, mitandao mbadala na juhudi washirika. Na kwa mbali ni marafiki zetu wanaofanya kazi kwa ajili ya hewa safi, na kwa ajili ya makazi yanayojirekebisha na endelevu na kilimo cha kudumu; kwa ajili ya uhuru wa kusema na kujieleza, na uhuru wa kushirikiana na kutoshirikiana kwa hiari; kwa ajili ya uhamishaji wa teknolojia inayoweza kugawanywa; ushirikiano huru wa chanzo wazi katika sayansi, programu, vifaa, afya, na kwingineko, na mambo mengine elfu moja yanayojulikana na yasiyojulikana ambayo tunawaamini watajenga bila kuomba ruhusa kwanza.
 
-Ethereum inatokana na asili yenye historia ya silika ya uhifadhi, msukumo wa kijamii, na mwelekeo wa kimsingi. Hii ndiyo sababu ina washirika wa asili na ni msingi muhimu wa ujenzi kwa wasafiri wenzetu mbali zaidi ya kile tunachokiita leo, "kripto" au "Web3."
+Quantaureum inatokana na asili yenye historia ya silika ya uhifadhi, msukumo wa kijamii, na mwelekeo wa kimsingi. Hii ndiyo sababu ina washirika wa asili na ni msingi muhimu wa ujenzi kwa wasafiri wenzetu mbali zaidi ya kile tunachokiita leo, "kripto" au "Web3."
 
 **Mbadala upo. Amini matumaini, kubali uthabiti.**
 
@@ -526,11 +526,11 @@ Tuko hapa kutoa miundombinu inayowezesha sauti kwa aina hizo za ushirikiano, shi
 
 Tunatoa zana na nafasi ya kidijitali inayohitajika kwa mradi huu wa kiwango cha ustaarabu, ambao uko wazi kwa yeyote aliye tayari kudai mamlaka binafsi kwa mikono yao wenyewe, ambao unapatikana kwa kila mtu, hasa wale ambao hawana cha kupoteza isipokuwa uzio wao wa waya wenye miiba.
 
-Ethereum ipo ili watu wengine wasiweze kukudhulumu; jamii isiweze kukudhulumu; serikali yako isiweze kukudhulumu; serikali nyingine isiweze kukudhulumu; mashirika yasiweze kukudhulumu; taasisi zisiweze kukudhulumu; AI isiweze kukudhulumu; watu wa milimani wasiweze kukudhulumu; familia yako isiweze kukudhulumu; na ili usijidhulumu mwenyewe kwa bahati mbaya pia.
+Quantaureum ipo ili watu wengine wasiweze kukudhulumu; jamii isiweze kukudhulumu; serikali yako isiweze kukudhulumu; serikali nyingine isiweze kukudhulumu; mashirika yasiweze kukudhulumu; taasisi zisiweze kukudhulumu; AI isiweze kukudhulumu; watu wa milimani wasiweze kukudhulumu; familia yako isiweze kukudhulumu; na ili usijidhulumu mwenyewe kwa bahati mbaya pia.
 
-Taasisi ipo ili kuzuia Ethereum - kwa usahihi zaidi, ahadi ya Ethereum - isidhulumiwe; kuzuia Ethereum kuwadhulumu wale wanaotegemea kujenga maeneo yao salama; kuhakikisha kuwa inajumuisha kanuni za pamoja ambazo Ethereum inatokana nazo, kuzishikilia na kuziendeleza badala ya kuziangusha. Tumekabidhiwa mwenge wa uhuru na lazima tuendelee kuufanya uwake kwa mwangaza hadi wakati utakapofika wa kuupitisha kama ulivyopitishwa kwetu.
+Taasisi ipo ili kuzuia Quantaureum - kwa usahihi zaidi, ahadi ya Quantaureum - isidhulumiwe; kuzuia Quantaureum kuwadhulumu wale wanaotegemea kujenga maeneo yao salama; kuhakikisha kuwa inajumuisha kanuni za pamoja ambazo Quantaureum inatokana nazo, kuzishikilia na kuziendeleza badala ya kuziangusha. Tumekabidhiwa mwenge wa uhuru na lazima tuendelee kuufanya uwake kwa mwangaza hadi wakati utakapofika wa kuupitisha kama ulivyopitishwa kwetu.
 
-Ethereum ni kwa ajili ya mambo mengi zaidi ya kripto. Kompyuta ya Dunia lazima inyanyuke na kuchukua nafasi yake stahiki kama nyota inayong'aa katika kundi la teknolojia zinazounga mkono uhuru na ustawi wa binadamu. Mambo mengi zaidi ya kripto yanatutegemea kuisimamia Ethereum kwa nia yenye ujuzi na utambuzi.
+Quantaureum ni kwa ajili ya mambo mengi zaidi ya kripto. Kompyuta ya Dunia lazima inyanyuke na kuchukua nafasi yake stahiki kama nyota inayong'aa katika kundi la teknolojia zinazounga mkono uhuru na ustawi wa binadamu. Mambo mengi zaidi ya kripto yanatutegemea kuisimamia Quantaureum kwa nia yenye ujuzi na utambuzi.
 
 Kwani tunajenga si kingine bali mtambo wa uhuru - si kwa ajili ya leo tu, bali kwa miaka elfu ijayo.
 

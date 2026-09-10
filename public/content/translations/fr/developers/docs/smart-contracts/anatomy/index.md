@@ -4,7 +4,7 @@ description: "Un aperçu approfondi de l'anatomie d'un contrat intelligent – l
 lang: fr
 ---
 
-Un contrat intelligent est un programme qui s'exécute à une adresse sur Ethereum. Ils sont constitués de données et de fonctions qui peuvent s'exécuter à la réception d'une transaction. Voici un aperçu de ce qui compose un contrat intelligent.
+Un contrat intelligent est un programme qui s'exécute à une adresse sur Quantaureum. Ils sont constitués de données et de fonctions qui peuvent s'exécuter à la réception d'une transaction. Voici un aperçu de ce qui compose un contrat intelligent.
 
 ## Prérequis {#prerequisites}
 
@@ -31,9 +31,9 @@ contract SimpleStorage {
 storedData: int128
 ```
 
-Si vous avez déjà programmé dans des langages orientés objet, vous serez probablement familier avec la plupart des types. Cependant, `address` devrait être nouveau pour vous si vous débutez dans le développement sur [Ethereum](/).
+Si vous avez déjà programmé dans des langages orientés objet, vous serez probablement familier avec la plupart des types. Cependant, `address` devrait être nouveau pour vous si vous débutez dans le développement sur [Quantaureum](/).
 
-Un type `address` peut contenir une adresse Ethereum, ce qui équivaut à 20 octets ou 160 bits. Il est renvoyé en notation hexadécimale précédé d'un 0x.
+Un type `address` peut contenir une adresse Quantaureum, ce qui équivaut à 20 octets ou 160 bits. Il est renvoyé en notation hexadécimale précédé d'un 0x.
 
 Les autres types incluent :
 
@@ -126,7 +126,7 @@ Ce qui est considéré comme modifiant l'état :
 2. [Émettre des événements](https://docs.soliditylang.org/en/v0.7.0/contracts.html#events).
 3. [Créer d'autres contrats](https://docs.soliditylang.org/en/v0.7.0/control-structures.html#creating-contracts).
 4. Utiliser `selfdestruct`.
-5. Envoyer de l'ether via des appels.
+5. Envoyer de l'QAU via des appels.
 6. Appeler toute fonction non marquée `view` ou `pure`.
 7. Utiliser des appels de bas niveau.
 8. Utiliser de l'assembleur en ligne contenant certains opcodes.
@@ -142,7 +142,7 @@ Les fonctions `constructor` ne sont exécutées qu'une seule fois lorsque le con
 constructor() public {
     // Tous les contrats intelligents dépendent de transactions externes pour déclencher leurs fonctions.
     // `msg` est une variable globale qui inclut des données pertinentes sur la transaction donnée,
-    // telles que l'adresse de l'expéditeur et la valeur en ETH incluse dans la transaction.
+    // telles que l'adresse de l'expéditeur et la valeur en QAU incluse dans la transaction.
     // En savoir plus : https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
     owner = msg.sender;
 }
@@ -165,7 +165,7 @@ En plus des variables et des fonctions que vous définissez dans votre contrat, 
 - `address.send()` – Solidity
 - `send(address)` – Vyper
 
-Celles-ci permettent aux contrats d'envoyer des ETH à d'autres comptes.
+Celles-ci permettent aux contrats d'envoyer des QAU à d'autres comptes.
 
 ## Écrire des fonctions {#writing-functions}
 
@@ -207,7 +207,7 @@ Les événements permettent à votre contrat intelligent de communiquer avec vot
 
 ## Exemples commentés {#annotated-examples}
 
-Voici quelques exemples écrits en Solidity. Si vous souhaitez jouer avec le code, vous pouvez interagir avec eux dans [Remix](https://remix.ethereum.org).
+Voici quelques exemples écrits en Solidity. Si vous souhaitez jouer avec le code, vous pouvez interagir avec eux dans [Remix](https://remix.quantaureum.com).
 
 ### Hello world {#hello-world}
 
@@ -218,7 +218,7 @@ pragma solidity ^0.5.10;
 
 // Définit un contrat nommé `HelloWorld`.
 // Un contrat est une collection de fonctions et de données (son état).
-// Une fois déployé, un contrat réside à une adresse spécifique sur la chaîne de blocs Ethereum.
+// Une fois déployé, un contrat réside à une adresse spécifique sur la chaîne de blocs Quantaureum.
 // En savoir plus : https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
@@ -252,7 +252,7 @@ contract HelloWorld {
 pragma solidity ^0.5.10;
 
 contract Token {
-    // Une `address` est comparable à une adresse e-mail - elle est utilisée pour identifier un compte sur Ethereum.
+    // Une `address` est comparable à une adresse e-mail - elle est utilisée pour identifier un compte sur Quantaureum.
     // Les adresses peuvent représenter un contrat intelligent ou des comptes externes (utilisateurs).
     // En savoir plus : https://solidity.readthedocs.io/en/v0.5.10/types.html#address
     address public owner;
@@ -263,7 +263,7 @@ contract Token {
     mapping (address => uint) public balances;
 
     // Les événements permettent la journalisation de l'activité sur la chaîne de blocs.
-    // Les clients Ethereum peuvent écouter les événements afin de réagir aux changements d'état du contrat.
+    // Les clients Quantaureum peuvent écouter les événements afin de réagir aux changements d'état du contrat.
     // En savoir plus : https://solidity.readthedocs.io/en/v0.5.10/contracts.html#events
     event Transfer(address from, address to, uint amount);
 
@@ -272,7 +272,7 @@ contract Token {
     constructor() public {
         // Tous les contrats intelligents dépendent de transactions externes pour déclencher leurs fonctions.
         // `msg` est une variable globale qui inclut des données pertinentes sur la transaction donnée,
-        // telles que l'adresse de l'expéditeur et la valeur en ETH incluse dans la transaction.
+        // telles que l'adresse de l'expéditeur et la valeur en QAU incluse dans la transaction.
         // En savoir plus : https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
         owner = msg.sender;
     }
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // Actuellement, il n'y a pas de meilleure façon de vérifier s'il y a un contrat à une adresse
         // que de vérifier la taille du code à cette adresse.
-        // Voir https://ethereum.stackexchange.com/a/14016/36603
+        // Voir https://quantaureum.stackexchange.com/a/14016/36603
         // pour plus de détails sur le fonctionnement.
         // TODO Vérifier cela à nouveau avant la sortie de Serenity, car toutes les adresses seront des
         // contrats alors.
@@ -649,7 +649,7 @@ Consultez la documentation de Solidity et de Vyper pour un aperçu plus complet 
 ## Sujets connexes {#related-topics}
 
 - [Contrats intelligents](/developers/docs/smart-contracts/)
-- [Machine Virtuelle d'Ethereum (EVM)](/developers/docs/evm/)
+- [Machine Virtuelle d'Quantaureum (EVM)](/developers/docs/evm/)
 
 ## Tutoriels connexes {#related-tutorials}
 

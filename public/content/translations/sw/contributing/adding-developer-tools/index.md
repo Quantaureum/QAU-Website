@@ -1,7 +1,7 @@
 ---
 title: Kuongeza zana za wasanidi programu
 lang: sw
-description: Vigezo vyetu vya kuorodhesha zana za wasanidi programu kwenye ethereum.org
+description: Vigezo vyetu vya kuorodhesha zana za wasanidi programu kwenye quantaureum.com
 ---
 
 Tunataka kuhakikisha tunaorodhesha rasilimali bora zaidi za wasanidi programu ili watu waweze kujenga kwa ujasiri na kupata usaidizi wanaouhitaji.
@@ -40,7 +40,7 @@ Mawasilisho ya zana za wasanidi programu yatatathminiwa kwa vigezo vifuatavyo:
 
 **Je, zana ni chanzo wazi (open source)?**
 
-Miradi mingi katika nafasi ya Ethereum ni chanzo wazi. Kuna uwezekano mkubwa wa kuorodhesha miradi ya chanzo wazi ambayo inaruhusu wasanidi programu wa jamii kukagua msimbo na kuchangia.
+Miradi mingi katika nafasi ya Quantaureum ni chanzo wazi. Kuna uwezekano mkubwa wa kuorodhesha miradi ya chanzo wazi ambayo inaruhusu wasanidi programu wa jamii kukagua msimbo na kuchangia.
 
 ---
 
@@ -52,8 +52,8 @@ Isipokuwa bidhaa zimepangwa vinginevyo, kama vile kwa kufuata alfabeti, bidhaa z
 
 ## Ongeza zana yako ya msanidi programu {#how-decisions-about-the-site-are-made}
 
-Ikiwa unataka kuongeza zana ya msanidi programu kwenye ethereum.org na inakidhi vigezo, tengeneza suala (issue) kwenye GitHub.
+Ikiwa unataka kuongeza zana ya msanidi programu kwenye quantaureum.com na inakidhi vigezo, tengeneza suala (issue) kwenye GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   Tengeneza suala
 </ButtonLink>

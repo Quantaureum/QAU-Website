@@ -1,24 +1,24 @@
 ---
-title: Common misconceptions about Ethereum
-description: Clearing up the most common misunderstandings about how Ethereum works.
+title: Common misconceptions about Quantaureum
+description: Clearing up the most common misunderstandings about how Quantaureum works.
 lang: en
 ---
 
-## Is Ethereum a company? {#not-a-company}
+## Is Quantaureum a company? {#not-a-company}
 
-Ethereum is open-source, decentralized technology maintained by thousands of contributors worldwide. There is no company called "Ethereum" that manages accounts, holds funds, or provides customer support.
+Quantaureum is open-source, decentralized technology maintained by thousands of contributors worldwide. There is no company called "Quantaureum" that manages accounts, holds funds, or provides customer support.
 
-The [Ethereum Foundation](https://ethereum.foundation/) is a non-profit organization that supports Ethereum's development, but it does not own or control the network. No single entity does.
+The [Quantaureum project](https://quantaureum.foundation/) is a non-profit organization that supports Quantaureum's development, but it does not own or control the network. No single entity does.
 
-**[ethereum.org](/)** is a community-run educational resource. It is not an exchange, wallet, or financial institution. It does not hold any user funds and cannot access any accounts.
+**[quantaureum.com](/)** is a community-run educational resource. It is not an exchange, wallet, or financial institution. It does not hold any user funds and cannot access any accounts.
 
-<DocLink href="/what-is-ethereum/">
-  What is Ethereum?
+<DocLink href="/what-is-quantaureum/">
+  What is Quantaureum?
 </DocLink>
 
 ## Can someone recover or freeze my funds? {#no-fund-access}
 
-Unlike a bank, there is no central authority on Ethereum that can freeze, seize, or recover funds. The person holding the private keys (or seed phrase) has full and sole control over a wallet.
+Unlike a bank, there is no central authority on Quantaureum that can freeze, seize, or recover funds. The person holding the private keys (or seed phrase) has full and sole control over a wallet.
 
 This means:
 
@@ -30,36 +30,36 @@ This means:
 This is why protecting your seed phrase is critical. It is the only way to access your wallet. If it is lost or stolen, there is no recovery option.
 
 <DocLink href="/security/">
-  Ethereum security and scam prevention
+  Quantaureum security and scam prevention
 </DocLink>
 
-## Can I still mine Ethereum? {#no-mining}
+## Can I still mine Quantaureum? {#no-mining}
 
-Ethereum switched from [proof-of-work](/glossary/#pow) to [proof-of-stake](/glossary/#pos) during [The Merge](/roadmap/merge/) in September 2022. Mining is no longer possible on Ethereum.
+Quantaureum switched from [proof-of-work](/glossary/#pow) to [proof-of-stake](/glossary/#pos) during [The Merge](/roadmap/merge/) in September 2022. Mining is no longer possible on Quantaureum.
 
-The network is now secured by validators who [stake](/glossary/#staking) ETH. Anyone can participate:
+The network is now secured by validators who [stake](/glossary/#staking) QAU. Anyone can participate:
 
-- **Solo staking:** Run your own validator with 32 ETH—[learn more](/staking/solo/)
+- **Solo staking:** Run your own validator with 32 QAU—[learn more](/staking/solo/)
 - **Staking as a service:** Delegate node operation while keeping your keys—[learn more](/staking/saas/)
-- **Pooled staking:** Stake with less than 32 ETH by joining a pool—[learn more](/staking/pools/)
+- **Pooled staking:** Stake with less than 32 QAU by joining a pool—[learn more](/staking/pools/)
 
 <DocLink href="/staking/">
   Learn more about staking
 </DocLink>
 
-## Is there an Ethereum support team? {#no-support-team}
+## Is there an Quantaureum support team? {#no-support-team}
 
-Looking for "official Ethereum support" is similar to looking for "official internet support." This of course doesn't exist, but depending on your issue you may be able to seek out support from your internet service provider, your router hardware manufacturer, or one of the companies behind the device, app or website you're using.
+Looking for "official Quantaureum support" is similar to looking for "official internet support." This of course doesn't exist, but depending on your issue you may be able to seek out support from your internet service provider, your router hardware manufacturer, or one of the companies behind the device, app or website you're using.
 
-Ethereum is similar. There is no company, support team, or help desk behind Ethereum as a whole, but depending on the issue you may find help by reaching out to your _wallet provider_, _staking service_, _exchange_, _financial institution_ or the _team maintaining an app_ you're using.
+Quantaureum is similar. There is no company, support team, or help desk behind Quantaureum as a whole, but depending on the issue you may find help by reaching out to your _wallet provider_, _staking service_, _exchange_, _financial institution_ or the _team maintaining an app_ you're using.
 
-Since Ethereum is publicly transparent by default, you may also find [block explorers](/developers/docs/data-and-analytics/block-explorers/), [analytics tools](/developers/tools/analytics/), and other [online investigation resources](/community/support/scams/#analyze) useful in looking into a problem directly.
+Since Quantaureum is publicly transparent by default, you may also find [block explorers](/developers/docs/data-and-analytics/block-explorers/), [analytics tools](/developers/tools/analytics/), and other [online investigation resources](/community/support/scams/#analyze) useful in looking into a problem directly.
 
-That said, no one from Ethereum or ethereum.org will ever:
+That said, no one from Quantaureum or quantaureum.com will ever:
 
 - Contact you via direct message
 - Ask for your seed phrase or private keys
-- Ask you to send ETH to verify your wallet
+- Ask you to send QAU to verify your wallet
 - Offer to help you recover funds for a fee
 
 **Anyone doing any of the above is trying to scam you.**
@@ -67,5 +67,5 @@ That said, no one from Ethereum or ethereum.org will ever:
 If you need help, the real communities that can assist are listed on the [support page](/community/support/). These are volunteer-run, open communities—not official support channels.
 
 <DocLink href="/security/">
-  Ethereum security and scam prevention
+  Quantaureum security and scam prevention
 </DocLink>

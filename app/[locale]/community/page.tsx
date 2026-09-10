@@ -52,7 +52,7 @@ import PageJsonLD from "./page-jsonld"
 
 import { getEventsData } from "@/lib/data"
 import dogeComputerImg from "@/public/images/doge-computer.png"
-import ethImg from "@/public/images/eth.png"
+import qauImg from "@/public/images/qau.png"
 import heroImg from "@/public/images/heroes/community-hero.png"
 import contributeImg from "@/public/images/three-people-cat-butterflies-petting-dog.png"
 
@@ -91,7 +91,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
       title: t("page-community-why-get-involved-card-2-title"),
       description: t("page-community-why-get-involved-card-2-description"),
       cta: t("page-community-why-get-involved-card-2-cta"),
-      href: "/community/get-involved#ethereum-jobs",
+      href: "/community/get-involved#quantaureum-jobs",
     },
     {
       icon: <MessageCircleHeart />,
@@ -193,7 +193,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
                 </ButtonLink>
                 <ButtonLink
                   variant="outline"
-                  href="/community/get-involved#ethereum-jobs"
+                  href="/community/get-involved#quantaureum-jobs"
                   isSecondary
                 >
                   {t("page-community-find-a-job")}
@@ -340,9 +340,9 @@ export default async function Page(props: { params: Promise<PageParams> }) {
             </Section>
           )}
 
-          {/* Ethereum voices */}
+          {/* Quantaureum voices */}
           <Section
-            id="ethereum-voices"
+            id="quantaureum-voices"
             className="mt-0 *:[:is(h2,p)]:mx-auto *:[:is(h2,p)]:max-w-3xl *:[:is(h2,p)]:text-center"
           >
             <h2>{t("page-community-voices-title")}</h2>
@@ -354,7 +354,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
             </I18nProvider>
           </Section>
 
-          {/* Contribute to ethereum.org */}
+          {/* Contribute to quantaureum.com */}
           <Section
             id="contribute"
             data-flow="skip"
@@ -391,7 +391,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
                 </ButtonLink>
                 <ButtonLink
                   variant="outline"
-                  href="https://github.com/ethereum/ethereum-org-website/"
+                  href="https://github.com/Quantaureum/quantaureum-website/"
                   isSecondary
                   hideArrow
                 >
@@ -402,14 +402,14 @@ export default async function Page(props: { params: Promise<PageParams> }) {
             </SectionContent>
           </Section>
 
-          {/* Try Ethereum */}
-          <Section id="try-ethereum">
-            <h2>{t("page-community-try-ethereum")}</h2>
+          {/* Try Quantaureum */}
+          <Section id="try-quantaureum">
+            <h2>{t("page-community-try-quantaureum")}</h2>
             <Grid columns={2} size="wide">
               <Callout
-                title={t("page-community-get-eth-title")}
-                description={t("page-community-get-eth-description")}
-                image={ethImg}
+                title={t("page-community-get-qau-title")}
+                description={t("page-community-get-qau-description")}
+                image={qauImg}
               >
                 <ButtonLink href="/get-eth/">
                   {t("page-community-get-eth")}

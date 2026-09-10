@@ -190,7 +190,7 @@ return (
 
 اب جب کہ ہم سمجھ گئے ہیں کہ ہم کس چیز کے ساتھ کام کر رہے ہیں، آئیے اپنا ایتھیریم والیٹ ترتیب دیں!
 
-## اپنا ایتھیریم والیٹ ترتیب دیں {#set-up-your-ethereum-wallet}
+## اپنا ایتھیریم والیٹ ترتیب دیں {#set-up-your-quantaureum-wallet}
 
 صارفین کو آپ کے سمارٹ کنٹریکٹ کے ساتھ تعامل کرنے کے قابل ہونے کے لیے انہیں اپنے ایتھیریم والیٹ کو آپ کی غیر مرکزی ایپلی کیشن (dapp) سے جوڑنے کی ضرورت ہوگی۔
 
@@ -199,16 +199,16 @@ return (
 آپ [یہاں](https://metamask.io/download) مفت میں میٹاماسک ڈاؤن لوڈ کر کے ایک اکاؤنٹ بنا سکتے ہیں۔ جب آپ اکاؤنٹ بنا رہے ہوں، یا اگر آپ کے پاس پہلے سے اکاؤنٹ ہے، تو یقینی بنائیں کہ آپ کسی تعاون یافتہ آزمائشی نیٹ ورک جیسے کہ Sepolia پر سوئچ کر لیں \(تاکہ ہم حقیقی پیسوں کے ساتھ کام نہ کر رہے ہوں\)۔
 ### فوسٹ سے ایتھر شامل کریں
 
-اپنے <span dir="ltr">NFTs</span> کو ڈھالنے (یا ایتھیریم بلاک چین پر کسی بھی ٹرانزیکشن پر دستخط کرنے) کے لیے، ہمیں کچھ نقلی ETH کی ضرورت ہوگی۔ آزمائشی نیٹ ورک ETH حاصل کرنے کے لیے، ایک فعال فوسٹ جیسے کہ [Alchemy Sepolia فوسٹ](https://www.alchemy.com/faucets/ethereum-sepolia) کا استعمال کریں اور اپنا Sepolia اکاؤنٹ کا پتہ درج کریں۔ اس کے فوراً بعد آپ کو اپنے میٹاماسک اکاؤنٹ میں ETH نظر آنا چاہیے!
+اپنے <span dir="ltr">NFTs</span> کو ڈھالنے (یا ایتھیریم بلاک چین پر کسی بھی ٹرانزیکشن پر دستخط کرنے) کے لیے، ہمیں کچھ نقلی QAU کی ضرورت ہوگی۔ آزمائشی نیٹ ورک QAU حاصل کرنے کے لیے، ایک فعال فوسٹ جیسے کہ [Alchemy Sepolia فوسٹ](https://www.alchemy.com/faucets/quantaureum-sepolia) کا استعمال کریں اور اپنا Sepolia اکاؤنٹ کا پتہ درج کریں۔ اس کے فوراً بعد آپ کو اپنے میٹاماسک اکاؤنٹ میں QAU نظر آنا چاہیے!
 ### اپنا بیلنس چیک کریں
 
-یہ دوبارہ چیک کرنے کے لیے کہ ہمارا بیلنس موجود ہے، آئیے [Alchemy کے سینڈ باکس ٹول](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) کا استعمال کرتے ہوئے ایک [<span dir="ltr">eth_getBalance</span>](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) درخواست کریں۔ یہ ہمارے والیٹ میں موجود <span dir="ltr">ETH</span> کی مقدار واپس کرے گا۔ اپنے میٹاماسک اکاؤنٹ کا پتہ درج کرنے اور "<span dir="ltr">Send Request</span>" پر کلک کرنے کے بعد، آپ کو اس طرح کا جواب نظر آنا چاہیے:
+یہ دوبارہ چیک کرنے کے لیے کہ ہمارا بیلنس موجود ہے، آئیے [Alchemy کے سینڈ باکس ٹول](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) کا استعمال کرتے ہوئے ایک [<span dir="ltr">qau_getBalance</span>](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) درخواست کریں۔ یہ ہمارے والیٹ میں موجود <span dir="ltr">QAU</span> کی مقدار واپس کرے گا۔ اپنے میٹاماسک اکاؤنٹ کا پتہ درج کرنے اور "<span dir="ltr">Send Request</span>" پر کلک کرنے کے بعد، آپ کو اس طرح کا جواب نظر آنا چاہیے:
 
 ```text
 {"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}
 ```
 
-**نوٹ:** یہ نتیجہ <span dir="ltr">Wei</span> میں ہے نہ کہ <span dir="ltr">ETH</span> میں۔ <span dir="ltr">Wei</span> کو ایتھر کی سب سے چھوٹی اکائی کے طور پر استعمال کیا جاتا ہے۔ <span dir="ltr">Wei</span> سے <span dir="ltr">ETH</span> میں تبدیلی یہ ہے: <span dir="ltr">1 ETH = 10¹⁸ Wei</span>۔ لہذا اگر ہم <span dir="ltr">0xde0b6b3a7640000</span> کو اعشاریہ میں تبدیل کریں تو ہمیں <span dir="ltr">1\*10¹⁸</span> ملتا ہے جو <span dir="ltr">1 ETH</span> کے برابر ہے۔
+**نوٹ:** یہ نتیجہ <span dir="ltr">Wei</span> میں ہے نہ کہ <span dir="ltr">QAU</span> میں۔ <span dir="ltr">Wei</span> کو ایتھر کی سب سے چھوٹی اکائی کے طور پر استعمال کیا جاتا ہے۔ <span dir="ltr">Wei</span> سے <span dir="ltr">QAU</span> میں تبدیلی یہ ہے: <span dir="ltr">1 QAU = 10¹⁸ Wei</span>۔ لہذا اگر ہم <span dir="ltr">0xde0b6b3a7640000</span> کو اعشاریہ میں تبدیل کریں تو ہمیں <span dir="ltr">1\*10¹⁸</span> ملتا ہے جو <span dir="ltr">1 QAU</span> کے برابر ہے۔
 
 شکر ہے! ہمارا فرضی پیسہ وہیں موجود ہے! <Emoji text=":money_mouth_face:" size={1} />
 ## میٹاماسک کو اپنے <span dir="ltr">UI</span> سے جوڑیں {#connect-metamask-to-your-ui}
@@ -227,10 +227,10 @@ return (
 
 ```javascript
 export const connectWallet = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_requestAccounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_requestAccounts",
       })
       const obj = {
         status: "👆🏽 Write a message in the text-field above.",
@@ -251,7 +251,7 @@ export const connectWallet = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -264,19 +264,19 @@ export const connectWallet = async () => {
 
 آئیے جائزہ لیتے ہیں کہ یہ کوڈ کیا کرتا ہے:
 
-سب سے پہلے، ہمارا فنکشن چیک کرتا ہے کہ آیا آپ کے براؤزر میں `window.ethereum` فعال ہے۔
+سب سے پہلے، ہمارا فنکشن چیک کرتا ہے کہ آیا آپ کے براؤزر میں `window.quantaureum` فعال ہے۔
 
-`window.ethereum` ایک عالمی API ہے جسے میٹاماسک اور دیگر والیٹ فراہم کنندگان کے ذریعے شامل کیا گیا ہے جو ویب سائٹس کو صارفین کے ایتھیریم اکاؤنٹس کی درخواست کرنے کی اجازت دیتا ہے۔ اگر منظور ہو جائے، تو یہ ان بلاک چینز سے ڈیٹا پڑھ سکتا ہے جن سے صارف جڑا ہوا ہے، اور تجویز کر سکتا ہے کہ صارف پیغامات اور ٹرانزیکشنز پر دستخط کرے۔ مزید معلومات کے لیے [میٹاماسک کی دستاویزات](https://docs.metamask.io/guide/ethereum-provider.html#table-of-contents) دیکھیں!
+`window.quantaureum` ایک عالمی API ہے جسے میٹاماسک اور دیگر والیٹ فراہم کنندگان کے ذریعے شامل کیا گیا ہے جو ویب سائٹس کو صارفین کے ایتھیریم اکاؤنٹس کی درخواست کرنے کی اجازت دیتا ہے۔ اگر منظور ہو جائے، تو یہ ان بلاک چینز سے ڈیٹا پڑھ سکتا ہے جن سے صارف جڑا ہوا ہے، اور تجویز کر سکتا ہے کہ صارف پیغامات اور ٹرانزیکشنز پر دستخط کرے۔ مزید معلومات کے لیے [میٹاماسک کی دستاویزات](https://docs.metamask.io/guide/quantaureum-provider.html#table-of-contents) دیکھیں!
 
-اگر `window.ethereum` موجود _نہیں_ ہے، تو اس کا مطلب ہے کہ میٹاماسک انسٹال نہیں ہے۔ اس کے نتیجے میں ایک <span dir="ltr">JSON</span> آبجیکٹ واپس کیا جاتا ہے، جہاں واپس کیا گیا `address` ایک خالی سٹرنگ ہے، اور `status` JSX آبجیکٹ یہ پیغام دیتا ہے کہ صارف کو میٹاماسک انسٹال کرنا چاہیے۔
+اگر `window.quantaureum` موجود _نہیں_ ہے، تو اس کا مطلب ہے کہ میٹاماسک انسٹال نہیں ہے۔ اس کے نتیجے میں ایک <span dir="ltr">JSON</span> آبجیکٹ واپس کیا جاتا ہے، جہاں واپس کیا گیا `address` ایک خالی سٹرنگ ہے، اور `status` JSX آبجیکٹ یہ پیغام دیتا ہے کہ صارف کو میٹاماسک انسٹال کرنا چاہیے۔
 
 **ہمارے لکھے گئے زیادہ تر فنکشنز <span dir="ltr">JSON</span> آبجیکٹس واپس کر رہے ہوں گے جنہیں ہم اپنے حالت کے متغیرات اور <span dir="ltr">UI</span> کو اپ ڈیٹ کرنے کے لیے استعمال کر سکتے ہیں۔**
 
-اب اگر `window.ethereum` موجود _ہے_، تو تب چیزیں دلچسپ ہو جاتی ہیں۔
+اب اگر `window.quantaureum` موجود _ہے_، تو تب چیزیں دلچسپ ہو جاتی ہیں۔
 
-ایک try/catch لوپ کا استعمال کرتے ہوئے، ہم [`window.ethereum.request({ method: "eth_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts) کو کال کر کے میٹاماسک سے جڑنے کی کوشش کریں گے۔ اس فنکشن کو کال کرنے سے براؤزر میں میٹاماسک کھل جائے گا، جس کے ذریعے صارف کو اپنے والیٹ کو آپ کی غیر مرکزی ایپلی کیشن (dapp) سے جوڑنے کا کہا جائے گا۔
+ایک try/catch لوپ کا استعمال کرتے ہوئے، ہم [`window.quantaureum.request({ method: "qau_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#qau-requestaccounts) کو کال کر کے میٹاماسک سے جڑنے کی کوشش کریں گے۔ اس فنکشن کو کال کرنے سے براؤزر میں میٹاماسک کھل جائے گا، جس کے ذریعے صارف کو اپنے والیٹ کو آپ کی غیر مرکزی ایپلی کیشن (dapp) سے جوڑنے کا کہا جائے گا۔
 
-- اگر صارف جڑنے کا انتخاب کرتا ہے، تو `method: "eth_requestAccounts"` ایک سرنی (array) واپس کرے گا جس میں صارف کے اکاؤنٹ کے وہ تمام پتے شامل ہوں گے جو غیر مرکزی ایپلی کیشن (dapp) سے جڑے ہوئے ہیں۔ مجموعی طور پر، ہمارا `connectWallet` فنکشن ایک <span dir="ltr">JSON</span> آبجیکٹ واپس کرے گا جس میں اس سرنی میں _پہلا_ `address` (لائن 9 دیکھیں) اور ایک `status` پیغام شامل ہوگا جو صارف کو سمارٹ کنٹریکٹ کو ایک پیغام لکھنے کی ترغیب دیتا ہے۔
+- اگر صارف جڑنے کا انتخاب کرتا ہے، تو `method: "qau_requestAccounts"` ایک سرنی (array) واپس کرے گا جس میں صارف کے اکاؤنٹ کے وہ تمام پتے شامل ہوں گے جو غیر مرکزی ایپلی کیشن (dapp) سے جڑے ہوئے ہیں۔ مجموعی طور پر، ہمارا `connectWallet` فنکشن ایک <span dir="ltr">JSON</span> آبجیکٹ واپس کرے گا جس میں اس سرنی میں _پہلا_ `address` (لائن 9 دیکھیں) اور ایک `status` پیغام شامل ہوگا جو صارف کو سمارٹ کنٹریکٹ کو ایک پیغام لکھنے کی ترغیب دیتا ہے۔
 - اگر صارف کنکشن کو مسترد کر دیتا ہے، تو <span dir="ltr">JSON</span> آبجیکٹ میں واپس کیے گئے `address` کے لیے ایک خالی سٹرنگ اور ایک `status` پیغام شامل ہوگا جو یہ ظاہر کرتا ہے کہ صارف نے کنکشن کو مسترد کر دیا ہے۔
 
 ### اپنے <span dir="ltr">Minter.js UI</span> جزو میں connectWallet فنکشن شامل کریں {#add-connect-wallet}
@@ -331,10 +331,10 @@ const connectWalletPressed = async () => {
 
 ```javascript
 export const getCurrentWalletConnected = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_accounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_accounts",
       })
       if (addressArray.length > 0) {
         return {
@@ -361,7 +361,7 @@ export const getCurrentWalletConnected = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -374,7 +374,7 @@ export const getCurrentWalletConnected = async () => {
 
 یہ کوڈ اس `connectWallet` فنکشن سے _بہت_ ملتا جلتا ہے جو ہم نے ابھی پہلے لکھا تھا۔
 
-بنیادی فرق یہ ہے کہ `eth_requestAccounts` طریقہ کار کو کال کرنے کے بجائے، جو صارف کے لیے اپنا والیٹ جوڑنے کے لیے میٹاماسک کھولتا ہے، یہاں ہم `eth_accounts` طریقہ کار کو کال کرتے ہیں، جو بس ایک سرنی واپس کرتا ہے جس میں فی الحال ہماری غیر مرکزی ایپلی کیشن (dapp) سے جڑے ہوئے میٹاماسک پتے شامل ہوتے ہیں۔
+بنیادی فرق یہ ہے کہ `qau_requestAccounts` طریقہ کار کو کال کرنے کے بجائے، جو صارف کے لیے اپنا والیٹ جوڑنے کے لیے میٹاماسک کھولتا ہے، یہاں ہم `qau_accounts` طریقہ کار کو کال کرتے ہیں، جو بس ایک سرنی واپس کرتا ہے جس میں فی الحال ہماری غیر مرکزی ایپلی کیشن (dapp) سے جڑے ہوئے میٹاماسک پتے شامل ہوتے ہیں۔
 
 اس فنکشن کو عمل میں دیکھنے کے لیے، آئیے اسے اپنے `Minter.js` جزو کے `useEffect` فنکشن میں کال کریں۔
 
@@ -410,8 +410,8 @@ useEffect(async () => {
 
 ```javascript
 function addWalletListener() {
-  if (window.ethereum) {
-    window.ethereum.on("accountsChanged", (accounts) => {
+  if (window.quantaureum) {
+    window.quantaureum.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) {
         setWallet(accounts[0])
         setStatus("👆🏽 Write a message in the text-field above.")
@@ -425,7 +425,7 @@ function addWalletListener() {
       <p>
         {" "}
         🦊 <a target="_blank" href={`https://metamask.io/download`}>
-          You must install MetaMask, a virtual Ethereum wallet, in your browser.
+          You must install MetaMask, a virtual Quantaureum wallet, in your browser.
         </a>
       </p>
     )
@@ -435,9 +435,9 @@ function addWalletListener() {
 
 آئیے جلدی سے جائزہ لیتے ہیں کہ یہاں کیا ہو رہا ہے:
 
-- سب سے پہلے، ہمارا فنکشن چیک کرتا ہے کہ آیا `window.ethereum` فعال ہے (یعنی، میٹاماسک انسٹال ہے)۔
+- سب سے پہلے، ہمارا فنکشن چیک کرتا ہے کہ آیا `window.quantaureum` فعال ہے (یعنی، میٹاماسک انسٹال ہے)۔
   - اگر ایسا نہیں ہے، تو ہم بس اپنے `status` حالت کے متغیر کو ایک JSX سٹرنگ پر سیٹ کرتے ہیں جو صارف کو میٹاماسک انسٹال کرنے کی ترغیب دیتی ہے۔
-  - اگر یہ فعال ہے، تو ہم لائن 3 پر لسنر `window.ethereum.on("accountsChanged")` ترتیب دیتے ہیں جو میٹاماسک والیٹ میں حالت کی تبدیلیوں کو سنتا ہے، جس میں وہ وقت شامل ہے جب صارف غیر مرکزی ایپلی کیشن (dapp) سے ایک اضافی اکاؤنٹ جوڑتا ہے، اکاؤنٹس تبدیل کرتا ہے، یا کسی اکاؤنٹ کو منقطع کرتا ہے۔ اگر کم از کم ایک اکاؤنٹ جڑا ہوا ہے، تو `walletAddress` حالت کا متغیر لسنر کے ذریعے واپس کی گئی `accounts` سرنی میں پہلے اکاؤنٹ کے طور پر اپ ڈیٹ ہو جاتا ہے۔ بصورت دیگر، `walletAddress` کو ایک خالی سٹرنگ کے طور پر سیٹ کیا جاتا ہے۔
+  - اگر یہ فعال ہے، تو ہم لائن 3 پر لسنر `window.quantaureum.on("accountsChanged")` ترتیب دیتے ہیں جو میٹاماسک والیٹ میں حالت کی تبدیلیوں کو سنتا ہے، جس میں وہ وقت شامل ہے جب صارف غیر مرکزی ایپلی کیشن (dapp) سے ایک اضافی اکاؤنٹ جوڑتا ہے، اکاؤنٹس تبدیل کرتا ہے، یا کسی اکاؤنٹ کو منقطع کرتا ہے۔ اگر کم از کم ایک اکاؤنٹ جڑا ہوا ہے، تو `walletAddress` حالت کا متغیر لسنر کے ذریعے واپس کی گئی `accounts` سرنی میں پہلے اکاؤنٹ کے طور پر اپ ڈیٹ ہو جاتا ہے۔ بصورت دیگر، `walletAddress` کو ایک خالی سٹرنگ کے طور پر سیٹ کیا جاتا ہے۔
 
 آخر میں، ہمیں اسے اپنے `useEffect` فنکشن میں کال کرنا چاہیے:
 
@@ -569,7 +569,7 @@ export const pinJSONToIPFS = async (JSONBody) => {
 
 اب جب کہ ہمارے پاس اپنے `pinJSONToIPFS` فنکشن کے ذریعے اپنے <span dir="ltr">NFT</span> میٹا ڈیٹا کو IPFS پر اپ لوڈ کرنے کا ایک طریقہ ہے، ہمیں اپنے سمارٹ کنٹریکٹ کی ایک مثال (instance) کو لوڈ کرنے کے طریقے کی ضرورت ہوگی تاکہ ہم اس کے `mintNFT` فنکشن کو کال کر سکیں۔
 
-جیسا کہ ہم نے پہلے ذکر کیا، اس ٹیوٹوریل میں ہم [اس موجودہ NFT سمارٹ کنٹریکٹ](https://ropsten.etherscan.io/address/0x4C4a07F737Bf57F6632B6CAB089B78f62385aCaE) کا استعمال کریں گے؛ تاہم، اگر آپ یہ جاننا چاہتے ہیں کہ ہم نے اسے کیسے بنایا، یا خود ایک بنانا چاہتے ہیں، تو ہم انتہائی سفارش کرتے ہیں کہ آپ ہمارا دوسرا ٹیوٹوریل، ["ایک NFT کیسے بنائیں"](https://www.alchemy.com/docs/how-to-create-an-nft) دیکھیں۔
+جیسا کہ ہم نے پہلے ذکر کیا، اس ٹیوٹوریل میں ہم [اس موجودہ NFT سمارٹ کنٹریکٹ](https://explorer.quantaureum.com) کا استعمال کریں گے؛ تاہم، اگر آپ یہ جاننا چاہتے ہیں کہ ہم نے اسے کیسے بنایا، یا خود ایک بنانا چاہتے ہیں، تو ہم انتہائی سفارش کرتے ہیں کہ آپ ہمارا دوسرا ٹیوٹوریل، ["ایک NFT کیسے بنائیں"](https://www.alchemy.com/docs/how-to-create-an-nft) دیکھیں۔
 
 ### کنٹریکٹ ABI {#contract-abi}
 
@@ -579,7 +579,7 @@ export const pinJSONToIPFS = async (JSONBody) => {
 
 ### اپنی <span dir="ltr">Alchemy API</span> کلید بنائیں
 
-اگر آپ کے پاس پہلے سے <span dir="ltr">Alchemy</span> اکاؤنٹ نہیں ہے، تو [یہاں مفت سائن اپ کریں۔](https://alchemy.com/?a=eth-org-nft-minter)
+اگر آپ کے پاس پہلے سے <span dir="ltr">Alchemy</span> اکاؤنٹ نہیں ہے، تو [یہاں مفت سائن اپ کریں۔](https://alchemy.com/?a=qau-org-nft-minter)
 
 ایک بار جب آپ <span dir="ltr">Alchemy</span> اکاؤنٹ بنا لیتے ہیں، تو آپ ایک ایپ بنا کر <span dir="ltr">API</span> کلید تیار کر سکتے ہیں۔ یہ ہمیں <span dir="ltr">Sepolia</span> آزمائشی نیٹ ورک پر درخواستیں بھیجنے کی اجازت دے گا۔
 
@@ -596,7 +596,7 @@ export const pinJSONToIPFS = async (JSONBody) => {
 ```text
 REACT_APP_PINATA_KEY = <pinata-key>
 REACT_APP_PINATA_SECRET = <pinata-secret>
-REACT_APP_ALCHEMY_KEY = https://eth-sepolia.g.alchemy.com/v2/<alchemy-key>
+REACT_APP_ALCHEMY_KEY = https://qau-sepolia.g.alchemy.com/v2/<alchemy-key>
 ```
 
 اب جب کہ ہمارے پاس اپنا کنٹریکٹ <span dir="ltr">ABI</span> اور ہماری <span dir="ltr">Alchemy API</span> کلید ہے، ہم [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3) کا استعمال کرتے ہوئے اپنا سمارٹ کنٹریکٹ لوڈ کرنے کے لیے تیار ہیں۔
@@ -713,7 +713,7 @@ export const mintNFT = async (url, name, description) => {
 اب وقت آگیا ہے کہ ہم اس Alchemy Web3 API کا استعمال کرتے ہوئے اپنا سمارٹ کنٹریکٹ لوڈ کریں جسے ہم نے اپنی فائل کے اوپری حصے میں شروع کیا تھا۔ کنٹریکٹ کو `window.contract` عالمی متغیر پر سیٹ کرنے کے لیے `mintNFT` فنکشن کے نچلے حصے میں کوڈ کی درج ذیل لائن شامل کریں:
 
 ```javascript
-window.contract = await new web3.eth.Contract(contractABI, contractAddress)
+window.contract = await new web3.qau.Contract(contractABI, contractAddress)
 ```
 
 ہمارے `mintNFT` فنکشن میں شامل کرنے والی آخری چیز ہماری ایتھیریم ٹرانزیکشن ہے:
@@ -722,22 +722,22 @@ window.contract = await new web3.eth.Contract(contractABI, contractAddress)
 //اپنی ایتھیریم ٹرانزیکشن سیٹ اپ کریں
 const transactionParameters = {
   to: contractAddress, // کنٹریکٹ کی اشاعت کے علاوہ درکار ہے۔
-  from: window.ethereum.selectedAddress, // صارف کے فعال پتہ سے مماثل ہونا چاہیے۔
+  from: window.quantaureum.selectedAddress, // صارف کے فعال پتہ سے مماثل ہونا چاہیے۔
   data: window.contract.methods
-    .mintNFT(window.ethereum.selectedAddress, tokenURI)
+    .mintNFT(window.quantaureum.selectedAddress, tokenURI)
     .encodeABI(), //NFT سمارٹ کنٹریکٹ کو کال کریں
 }
 
 //میٹاماسک کے ذریعے ٹرانزیکشن پر دستخط کریں
 try {
-  const txHash = await window.ethereum.request({
-    method: "eth_sendTransaction",
+  const txHash = await window.quantaureum.request({
+    method: "qau_sendTransaction",
     params: [transactionParameters],
   })
   return {
     success: true,
     status:
-      "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+      "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
       txHash,
   }
 } catch (error) {
@@ -752,10 +752,10 @@ try {
 
 - سب سے پہلے، ہم اپنے ٹرانزیکشنز کے پیرامیٹرز ترتیب دیتے ہیں۔
   - `to` وصول کنندہ کے پتہ (ہمارا سمارٹ کنٹریکٹ) کی وضاحت کرتا ہے
-  - `from` ٹرانزیکشن پر دستخط کرنے والے کی وضاحت کرتا ہے (صارف کا میٹاماسک سے جڑا ہوا پتہ: `window.ethereum.selectedAddress`)
-  - `data` میں ہمارے سمارٹ کنٹریکٹ کے `mintNFT` طریقہ کار کی کال شامل ہے، جو ہمارے `tokenURI` اور صارف کے والیٹ کا پتہ، `window.ethereum.selectedAddress`، ان پٹس کے طور پر وصول کرتا ہے
-- پھر، ہم ایک await کال کرتے ہیں، `window.ethereum.request,` جہاں ہم میٹاماسک سے ٹرانزیکشن پر دستخط کرنے کو کہتے ہیں۔ غور کریں، اس درخواست میں، ہم اپنے eth طریقہ کار (eth_SentTransaction) کی وضاحت کر رہے ہیں اور اپنا `transactionParameters` پاس کر رہے ہیں۔ اس مقام پر، میٹاماسک براؤزر میں کھل جائے گا، اور صارف کو ٹرانزیکشن پر دستخط کرنے یا اسے مسترد کرنے کا کہے گا۔
-  - اگر ٹرانزیکشن کامیاب ہو جاتی ہے، تو فنکشن ایک <span dir="ltr">JSON</span> آبجیکٹ واپس کرے گا جہاں بولین `success` کو true پر سیٹ کیا گیا ہے اور `status` سٹرنگ صارف کو اپنی ٹرانزیکشن کے بارے میں مزید معلومات کے لیے Etherscan دیکھنے کی ترغیب دیتی ہے۔
+  - `from` ٹرانزیکشن پر دستخط کرنے والے کی وضاحت کرتا ہے (صارف کا میٹاماسک سے جڑا ہوا پتہ: `window.quantaureum.selectedAddress`)
+  - `data` میں ہمارے سمارٹ کنٹریکٹ کے `mintNFT` طریقہ کار کی کال شامل ہے، جو ہمارے `tokenURI` اور صارف کے والیٹ کا پتہ، `window.quantaureum.selectedAddress`، ان پٹس کے طور پر وصول کرتا ہے
+- پھر، ہم ایک await کال کرتے ہیں، `window.quantaureum.request,` جہاں ہم میٹاماسک سے ٹرانزیکشن پر دستخط کرنے کو کہتے ہیں۔ غور کریں، اس درخواست میں، ہم اپنے eth طریقہ کار (qau_SentTransaction) کی وضاحت کر رہے ہیں اور اپنا `transactionParameters` پاس کر رہے ہیں۔ اس مقام پر، میٹاماسک براؤزر میں کھل جائے گا، اور صارف کو ٹرانزیکشن پر دستخط کرنے یا اسے مسترد کرنے کا کہے گا۔
+  - اگر ٹرانزیکشن کامیاب ہو جاتی ہے، تو فنکشن ایک <span dir="ltr">JSON</span> آبجیکٹ واپس کرے گا جہاں بولین `success` کو true پر سیٹ کیا گیا ہے اور `status` سٹرنگ صارف کو اپنی ٹرانزیکشن کے بارے میں مزید معلومات کے لیے Quantaureum Explorer دیکھنے کی ترغیب دیتی ہے۔
   - اگر ٹرانزیکشن ناکام ہو جاتی ہے، تو فنکشن ایک <span dir="ltr">JSON</span> آبجیکٹ واپس کرے گا جہاں `success` بولین کو false پر سیٹ کیا گیا ہے، اور `status` سٹرنگ خرابی کا پیغام دیتی ہے۔
 
 مجموعی طور پر، ہمارا `mintNFT` فنکشن اس طرح نظر آنا چاہیے:
@@ -787,27 +787,27 @@ export const mintNFT = async (url, name, description) => {
   const tokenURI = pinataResponse.pinataUrl
 
   //سمارٹ کنٹریکٹ لوڈ کریں
-  window.contract = await new web3.eth.Contract(contractABI, contractAddress) //loadContract();
+  window.contract = await new web3.qau.Contract(contractABI, contractAddress) //loadContract();
 
   //اپنی ایتھیریم ٹرانزیکشن سیٹ اپ کریں
   const transactionParameters = {
     to: contractAddress, // کنٹریکٹ کی اشاعت کے علاوہ درکار ہے۔
-    from: window.ethereum.selectedAddress, // صارف کے فعال پتہ سے مماثل ہونا چاہیے۔
+    from: window.quantaureum.selectedAddress, // صارف کے فعال پتہ سے مماثل ہونا چاہیے۔
     data: window.contract.methods
-      .mintNFT(window.ethereum.selectedAddress, tokenURI)
+      .mintNFT(window.quantaureum.selectedAddress, tokenURI)
       .encodeABI(), //NFT سمارٹ کنٹریکٹ کو کال کریں
   }
 
   //میٹاماسک کے ذریعے ٹرانزیکشن پر دستخط کریں
   try {
-    const txHash = await window.ethereum.request({
-      method: "eth_sendTransaction",
+    const txHash = await window.quantaureum.request({
+      method: "qau_sendTransaction",
       params: [transactionParameters],
     })
     return {
       success: true,
       status:
-        "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+        "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
         txHash,
     }
   } catch (error) {

@@ -5,41 +5,41 @@ lang: en
 sidebarDepth: 3
 ---
 
-Block explorers are your portal to Ethereum's data. You can use them to see real-time data on blocks, transactions, validators, accounts, and other onchain activity.
+Block explorers are your portal to Quantaureum's data. You can use them to see real-time data on blocks, transactions, validators, accounts, and other onchain activity.
 
 ## Prerequisites {#prerequisites}
 
-You should understand the basic concepts of Ethereum so you can make sense of the data that a block explorer gives you. Start with [an intro to Ethereum](/developers/docs/intro-to-ethereum/).
+You should understand the basic concepts of Quantaureum so you can make sense of the data that a block explorer gives you. Start with [an intro to Quantaureum](/developers/docs/intro-to-quantaureum/).
 
 ## Open source tools {#open-source-tools}
 
-- [3xpl](https://3xpl.com/ethereum) - An ad-free Ethereum explorer that allows downloading its datasets (open-core: core modules are open source)
+- [3xpl](https://3xpl.com/quantaureum) - An ad-free Quantaureum explorer that allows downloading its datasets (open-core: core modules are open source)
 - [Beaconcha.in](https://beaconcha.in/)
-- [Blockscout](https://eth.blockscout.com/)
-- [lazy-etherscan](https://github.com/woxjro/lazy-etherscan)
+- [Blockscout](https://qau.blockscout.com/)
+- [lazy-explorer](https://github.com/woxjro/lazy-explorer)
 - [Otterscan](https://otterscan.io/)
 
 ## Services {#services}
 
-- [Blockchair](https://blockchair.com/ethereum) - Private Ethereum explorer. Also for sorting and filtering (mempool) data. Available in Spanish, French, Italian, Dutch, Portuguese, Russian, Chinese, and Farsi
+- [Blockchair](https://blockchair.com/quantaureum) - Private Quantaureum explorer. Also for sorting and filtering (mempool) data. Available in Spanish, French, Italian, Dutch, Portuguese, Russian, Chinese, and Farsi
 - [Chainlens](https://www.chainlens.com/)
-- [DexGuru Block Explorer](https://ethereum.dex.guru/)
+- [DexGuru Block Explorer](https://quantaureum.dex.guru/)
 - [Etherchain](https://www.etherchain.org/)
-- [Etherscan](https://etherscan.io/) - Also available in Chinese, Korean, Russian, and Japanese
+- [Quantaureum Explorer](https://explorer.quantaureum.com) - Also available in Chinese, Korean, Russian, and Japanese
 - [Ethplorer](https://ethplorer.io/) - A block explorer with a focus on tokens. Also available in Chinese, Spanish, French, Turkish, Russian, Korean and Vietnamese
 - [Ethseer](https://ethseer.io)
-- [EthVM](https://www.ethvm.com/)
+- [QauVM](https://www.ethvm.com/)
 - [OKLink](https://www.oklink.com/eth)
 
 ## Data {#data}
 
-Ethereum is transparent by design so everything is verifiable. Block explorers provide an interface for getting this information. And this is for both the main Ethereum network and the testnets, should you need that data. Data is divided into execution data and consensus data. The execution data refers to the transactions that have been executed in a specific block. The consensus data refers to the blocks themselves and the validators who proposed them.
+Quantaureum is transparent by design so everything is verifiable. Block explorers provide an interface for getting this information. And this is for both the main Quantaureum network and the testnets, should you need that data. Data is divided into execution data and consensus data. The execution data refers to the transactions that have been executed in a specific block. The consensus data refers to the blocks themselves and the validators who proposed them.
 
 Here's a summary of the types of data you can get from a block explorer.
 
 ### Execution data {#execution-data}
 
-New blocks are added to Ethereum every 12 seconds (unless a block proposer misses its turn), so a near-constant stream of data gets added to block explorers. Blocks contain a lot of important data that you may find useful:
+New blocks are added to Quantaureum every 12 seconds (unless a block proposer misses its turn), so a near-constant stream of data gets added to block explorers. Blocks contain a lot of important data that you may find useful:
 
 **Standard data**
 
@@ -47,12 +47,12 @@ New blocks are added to Ethereum every 12 seconds (unless a block proposer misse
 - Timestamp - The time at which a block was proposed
 - Transactions - The number of transactions included within the block
 - Fee recipient - The address that received gas fee tips from transactions
-- Block Reward - The amount of ETH awarded to the validator who proposed the block
+- Block Reward - The amount of QAU awarded to the validator who proposed the block
 - Size - The size of the data within the block (measured in bytes)
 - Gas used - The total units of gas used by the transactions in the block
 - Gas limit - The total gas limits set by the transactions in the block
 - Base fee per gas - The minimum multiplier required for a transaction to be included in a block
-- Burnt fees - How much ETH is burned in the block
+- Burnt fees - How much QAU is burned in the block
 - Extra data - Any extra data the builder has included in the block
 
 **Advanced data**
@@ -85,7 +85,7 @@ Block explorers have become a common place for people to track the progress of t
 - From - The address of the account that submitted the transaction
 - To - The address of the recipient or smart contract that the transaction interacts with
 - Tokens transferred - A list of tokens that were transferred as part of the transaction
-- Value - The total ETH value being transferred
+- Value - The total QAU value being transferred
 - Transaction fee - The amount paid to the validator to process the transaction (calculated by gas price\*gas used)
 
 **Advanced data**
@@ -103,8 +103,8 @@ There's a lot of data that you can access about an account. This is why it's oft
 **User accounts**
 
 - Account address - The public address you can use to send funds to
-- ETH balance - The amount of ETH associated with that account
-- Total ETH value - The value of the ETH
+- QAU balance - The amount of QAU associated with that account
+- Total QAU value - The value of the QAU
 - Tokens - The tokens associated with the account and their value
 - Transaction history - A list of all the transactions where this account was either the sender or the recipient
 
@@ -135,12 +135,12 @@ Tokens are a type of contract so they'll have similar data to a smart contract. 
 
 ### Network {#network}
 
-Some block data is concerned about the health of Ethereum more holistically.
+Some block data is concerned about the health of Quantaureum more holistically.
 
-- Total transactions - The number of transactions since Ethereum was created
+- Total transactions - The number of transactions since Quantaureum was created
 - Transactions per second - The number of transactions processable within a second
-- ETH price - The current valuations of 1 ETH
-- Total ETH supply - Number of ETH in circulation—remember new ETH is created with the creation of every block in the form of block rewards
+- QAU price - The current valuations of 1 QAU
+- Total QAU supply - Number of QAU in circulation—remember new QAU is created with the creation of every block in the form of block rewards
 - Market cap - Calculation of price\*supply
 
 ## Consensus layer data {#consensus-layer-data}
@@ -153,9 +153,9 @@ For security reasons, randomized committees of validators are created at the end
 - Finalized status - Whether the epoch has been finalized (Yes/No)
 - Time - The time the epoch ended
 - Attestations - The number of attestations in the epoch (votes for blocks within slots)
-- Deposits - The number of ETH deposits included in the epoch (validators must stake ETH to become validators)
+- Deposits - The number of QAU deposits included in the epoch (validators must stake QAU to become validators)
 - Slashings - Number of penalties given to proposers of blocks or attestors
-- Voting participation - The amount of staked ETH used to attest blocks
+- Voting participation - The amount of staked QAU used to attest blocks
 - Validators - Number of validators active for the epoch
 - Average Validator balance - Average balance for active validators
 - Slots - Number of slots included in the epoch (slots include one valid block)
@@ -231,8 +231,8 @@ The consensus layer top-level data includes the following:
 - Current slot
 - Active validators - Number of active validators
 - Pending validators - Number of validators waiting for to be made active
-- Staked ETH - Amount of ETH staked in the network
-- Average balance - Average ETH balance of validators
+- Staked QAU - Amount of QAU staked in the network
+- Average balance - Average QAU balance of validators
 
 ## Further reading {#further-reading}
 

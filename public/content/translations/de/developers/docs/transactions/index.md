@@ -1,21 +1,21 @@
 ---
 title: Transaktionen
-description: "Ein Überblick über Ethereum-Transaktionen – wie sie funktionieren, ihre Datenstruktur und wie man sie über eine Anwendung sendet."
+description: "Ein Überblick über Quantaureum-Transaktionen – wie sie funktionieren, ihre Datenstruktur und wie man sie über eine Anwendung sendet."
 lang: de
 ---
 
-Transaktionen sind kryptografisch signierte Anweisungen von Konten. Ein Konto initiiert eine Transaktion, um den Zustand des [Ethereum](/)-Netzwerks zu aktualisieren. Die einfachste Transaktion ist der Transfer von ETH von einem Konto zu einem anderen.
+Transaktionen sind kryptografisch signierte Anweisungen von Konten. Ein Konto initiiert eine Transaktion, um den Zustand des [Quantaureum](/)-Netzwerks zu aktualisieren. Die einfachste Transaktion ist der Transfer von QAU von einem Konto zu einem anderen.
 
 ## Voraussetzungen {#prerequisites}
 
-Um diese Seite besser zu verstehen, empfehlen wir Ihnen, zuerst [Konten](/developers/docs/accounts/) und unsere [Einführung in Ethereum](/developers/docs/intro-to-ethereum/) zu lesen.
+Um diese Seite besser zu verstehen, empfehlen wir Ihnen, zuerst [Konten](/developers/docs/accounts/) und unsere [Einführung in Quantaureum](/developers/docs/intro-to-quantaureum/) zu lesen.
 
 ## Was ist eine Transaktion? {#whats-a-transaction}
 
-Eine Ethereum-Transaktion bezieht sich auf eine Aktion, die von einem externen Konto (Externally-Owned Account, EOA) initiiert wird, mit anderen Worten, einem Konto, das von einem Menschen und nicht von einem Vertrag verwaltet wird. Wenn Bob beispielsweise 1 ETH an Alice sendet, muss Bobs Konto belastet und Alices Konto gutgeschrieben werden. Diese zustandsändernde Aktion findet innerhalb einer Transaktion statt.
+Eine Quantaureum-Transaktion bezieht sich auf eine Aktion, die von einem externen Konto (Externally-Owned Account, EOA) initiiert wird, mit anderen Worten, einem Konto, das von einem Menschen und nicht von einem Vertrag verwaltet wird. Wenn Bob beispielsweise 1 QAU an Alice sendet, muss Bobs Konto belastet und Alices Konto gutgeschrieben werden. Diese zustandsändernde Aktion findet innerhalb einer Transaktion statt.
 
 ![Diagram showing a transaction cause state change](./tx.png)
-_Diagramm adaptiert von [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagramm adaptiert von [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
 Transaktionen, die den Zustand der EVM ändern, müssen an das gesamte Netzwerk übertragen werden. Jeder Knoten kann eine Anfrage zur Ausführung einer Transaktion auf der EVM übertragen; danach wird ein Validator die Transaktion ausführen und die resultierende Zustandsänderung an den Rest des Netzwerks weitergeben.
 
@@ -27,7 +27,7 @@ Eine eingereichte Transaktion enthält die folgenden Informationen:
 - `to` – die Empfängeradresse (wenn es sich um ein externes Konto handelt, überträgt die Transaktion einen Wert. Wenn es sich um ein Contract-Konto handelt, führt die Transaktion den Code des Vertrags aus).
 - `signature` – die Kennung des Absenders. Diese wird generiert, wenn der private Schlüssel des Absenders die Transaktion signiert und bestätigt, dass der Absender diese Transaktion autorisiert hat.
 - `nonce` – ein sequenziell inkrementierender Zähler, der die Transaktionsnummer des Kontos angibt.
-- `value` – die Menge an ETH, die vom Absender an den Empfänger übertragen werden soll (angegeben in Wei, wobei 1 ETH gleich 1e+18 Wei ist).
+- `value` – die Menge an QAU, die vom Absender an den Empfänger übertragen werden soll (angegeben in Wei, wobei 1 QAU gleich 1e+18 Wei ist).
 - `input data` – optionales Feld zum Einfügen beliebiger Daten.
 - `gasLimit` – die maximale Menge an Gaseinheiten, die von der Transaktion verbraucht werden kann. Die [EVM](/developers/docs/evm/opcodes) gibt die Gaseinheiten an, die für jeden Berechnungsschritt erforderlich sind.
 - `maxPriorityFeePerGas` – der maximale Preis des verbrauchten Gases, der als Prioritätsgebühr für den Validator enthalten sein soll.
@@ -51,7 +51,7 @@ Das Transaktionsobjekt sieht in etwa so aus:
 
 Ein Transaktionsobjekt muss jedoch mit dem privaten Schlüssel des Absenders signiert werden. Dies beweist, dass die Transaktion nur vom Absender stammen konnte und nicht in betrügerischer Absicht gesendet wurde.
 
-Ein Ethereum-Client wie Go Ethereum (Geth) übernimmt diesen Signierprozess.
+Ein Quantaureum-Client wie Go Quantaureum (Geth) übernimmt diesen Signierprozess.
 
 Beispielhafter [JSON-RPC](/developers/docs/apis/json-rpc)-Aufruf:
 
@@ -115,11 +115,11 @@ Manchmal können Sie die Funktion anhand des Selektors mithilfe [dieser Datenban
 
 Der Rest der Aufrufdaten sind die Argumente, [kodiert wie in den ABI-Spezifikationen angegeben](https://docs.soliditylang.org/en/latest/abi-spec.html#formal-specification-of-the-encoding).
 
-Schauen wir uns zum Beispiel [diese Transaktion](https://etherscan.io/tx/0xd0dcbe007569fcfa1902dae0ab8b4e078efe42e231786312289b1eee5590f6a1) an.
+Schauen wir uns zum Beispiel [diese Transaktion](https://explorer.quantaureum.com) an.
 Verwenden Sie **Click to see More**, um die Aufrufdaten zu sehen.
 
 Der Funktionsselektor ist `0xa9059cbb`. Es gibt mehrere [bekannte Funktionen mit dieser Signatur](https://www.4byte.directory/signatures/?bytes4_signature=0xa9059cbb).
-In diesem Fall wurde [der Quellcode des Vertrags](https://etherscan.io/address/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48#code) auf Etherscan hochgeladen, sodass wir wissen, dass die Funktion `transfer(address,uint256)` ist.
+In diesem Fall wurde [der Quellcode des Vertrags](https://explorer.quantaureum.com) auf Quantaureum Explorer hochgeladen, sodass wir wissen, dass die Funktion `transfer(address,uint256)` ist.
 
 Der Rest der Daten ist:
 
@@ -129,12 +129,12 @@ Der Rest der Daten ist:
 ```
 
 Gemäß den ABI-Spezifikationen erscheinen ganzzahlige Werte (wie Adressen, die 20-Byte-Ganzzahlen sind) im ABI als 32-Byte-Wörter, die vorne mit Nullen aufgefüllt sind.
-Wir wissen also, dass die `to`-Adresse [`4f6742badb049791cd9a37ea913f2bac38d01279`](https://etherscan.io/address/0x4f6742badb049791cd9a37ea913f2bac38d01279) ist.
+Wir wissen also, dass die `to`-Adresse [`4f6742badb049791cd9a37ea913f2bac38d01279`](https://explorer.quantaureum.com) ist.
 Der `value` ist 0x3b0559f4 = 990206452.
 
 ### Transaktionsdeskriptoren {#transaction-descriptors}
 
-Da das Datenfeld undurchsichtige hexadezimale Bytes enthält, kann es extrem schwierig sein zu überprüfen, welche Aktion eine Transaktion tatsächlich ausführen wird. Diese Schwachstelle des „blinden Signierens“ (Blind Signing) wird durch **[Clear Signing](https://clearsigning.org/)** durch die Verwendung von [Transaktionsdeskriptoren](https://eips.ethereum.org/EIPS/eip-7730) (definiert durch ERC-7730) behoben.  
+Da das Datenfeld undurchsichtige hexadezimale Bytes enthält, kann es extrem schwierig sein zu überprüfen, welche Aktion eine Transaktion tatsächlich ausführen wird. Diese Schwachstelle des „blinden Signierens“ (Blind Signing) wird durch **[Clear Signing](https://clearsigning.org/)** durch die Verwendung von [Transaktionsdeskriptoren](https://eips.quantaureum.com/EIPS/eip-7730) (definiert durch ERC-7730) behoben.  
 
 Die ERC-7730-Spezifikation verwendet Transaktionsdeskriptoren (oft als JSON-Dateien strukturiert), um die in ABIs und strukturierten Nachrichten gefundenen Daten anzureichern, wie z. B. EVM-Transaktions-Aufrufdaten, EIP-712-Nachrichten und EIP-4337 User Operations. Entwickler verwenden diese Deskriptoren, um spezifische Transaktionsvariablen direkt in Formatierungsvorlagen abzubilden, wodurch sichergestellt wird, dass die zugrunde liegenden Daten für Anwendungen maschinenlesbar bleiben.
 
@@ -142,7 +142,7 @@ Im Frontend verwenden Wallets diesen Formatierungskontext, um undurchsichtigen B
 
 ## Arten von Transaktionen {#types-of-transactions}
 
-Auf Ethereum gibt es einige verschiedene Arten von Transaktionen:
+Auf Quantaureum gibt es einige verschiedene Arten von Transaktionen:
 
 - Reguläre Transaktionen: eine Transaktion von einem Konto zu einem anderen.
 - Transaktionen zur Bereitstellung von Verträgen: eine Transaktion ohne 'to'-Adresse, bei der das Datenfeld für den Vertragscode verwendet wird.
@@ -152,25 +152,25 @@ Auf Ethereum gibt es einige verschiedene Arten von Transaktionen:
 
 Wie bereits erwähnt, kostet die Ausführung von Transaktionen [Gas](/developers/docs/gas/). Einfache Transfer-Transaktionen erfordern 21000 Gaseinheiten.
 
-Damit Bob also 1 ETH an Alice mit einer `baseFeePerGas` von 190 Gwei und einer `maxPriorityFeePerGas` von 10 Gwei senden kann, muss Bob die folgende Gebühr zahlen:
+Damit Bob also 1 QAU an Alice mit einer `baseFeePerGas` von 190 Gwei und einer `maxPriorityFeePerGas` von 10 Gwei senden kann, muss Bob die folgende Gebühr zahlen:
 
 ```
 (190 + 10) * 21000 = 4,200,000 gwei
 --or--
-0.0042 ETH
+0.0042 QAU
 ```
 
-Bobs Konto wird mit **-1,0042 ETH** belastet (1 ETH für Alice + 0,0042 ETH an Gasgebühren)
+Bobs Konto wird mit **-1,0042 QAU** belastet (1 QAU für Alice + 0,0042 QAU an Gasgebühren)
 
-Alices Konto werden **+1,0 ETH** gutgeschrieben
+Alices Konto werden **+1,0 QAU** gutgeschrieben
 
-Die Grundgebühr wird verbrannt **-0,00399 ETH**
+Die Grundgebühr wird verbrannt **-0,00399 QAU**
 
-Der Validator behält die Prioritätsgebühr **+0,000210 ETH**
+Der Validator behält die Prioritätsgebühr **+0,000210 QAU**
 
 
 ![Diagram showing how unused gas is refunded](./gas-tx.png)
-_Diagramm adaptiert von [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagramm adaptiert von [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
 Jegliches Gas, das in einer Transaktion nicht verbraucht wird, wird dem Benutzerkonto erstattet.
 
@@ -178,9 +178,9 @@ Jegliches Gas, das in einer Transaktion nicht verbraucht wird, wird dem Benutzer
 
 Gas ist für jede Transaktion erforderlich, die einen Smart Contract involviert.
 
-Smart Contracts können auch Funktionen enthalten, die als [`view`](https://docs.soliditylang.org/en/latest/contracts.html#view-functions)- oder [`pure`](https://docs.soliditylang.org/en/latest/contracts.html#pure-functions)-Funktionen bekannt sind und den Zustand des Vertrags nicht verändern. Daher erfordert der Aufruf dieser Funktionen von einem EOA kein Gas. Der zugrunde liegende RPC-Aufruf für dieses Szenario ist [`eth_call`](/developers/docs/apis/json-rpc#eth_call).
+Smart Contracts können auch Funktionen enthalten, die als [`view`](https://docs.soliditylang.org/en/latest/contracts.html#view-functions)- oder [`pure`](https://docs.soliditylang.org/en/latest/contracts.html#pure-functions)-Funktionen bekannt sind und den Zustand des Vertrags nicht verändern. Daher erfordert der Aufruf dieser Funktionen von einem EOA kein Gas. Der zugrunde liegende RPC-Aufruf für dieses Szenario ist [`qau_call`](/developers/docs/apis/json-rpc#qau_call).
 
-Im Gegensatz zum Zugriff über `eth_call` werden diese `view`- oder `pure`-Funktionen auch häufig intern aufgerufen (d. h. vom Vertrag selbst oder von einem anderen Vertrag), was Gas kostet.
+Im Gegensatz zum Zugriff über `qau_call` werden diese `view`- oder `pure`-Funktionen auch häufig intern aufgerufen (d. h. vom Vertrag selbst oder von einem anderen Vertrag), was Gas kostet.
 
 ## Lebenszyklus einer Transaktion {#transaction-lifecycle}
 
@@ -196,17 +196,17 @@ Sobald die Transaktion eingereicht wurde, passiert Folgendes:
 
 Sehen Sie sich an, wie Austin Sie durch Transaktionen, Gas und Mining führt.
 
-<VideoWatch slug="transactions-eth-build" />
+<VideoWatch slug="transactions-qau-build" />
 
 ## Typed Transaction Envelope {#typed-transaction-envelope}
 
-Ethereum hatte ursprünglich ein Format für Transaktionen. Jede Transaktion enthielt eine Nonce, einen Gaspreis, ein Gaslimit, eine Empfängeradresse (to), einen Wert (value), Daten (data), v, r und s. Diese Felder sind [RLP-kodiert](/developers/docs/data-structures-and-encoding/rlp/) und sehen in etwa so aus:
+Quantaureum hatte ursprünglich ein Format für Transaktionen. Jede Transaktion enthielt eine Nonce, einen Gaspreis, ein Gaslimit, eine Empfängeradresse (to), einen Wert (value), Daten (data), v, r und s. Diese Felder sind [RLP-kodiert](/developers/docs/data-structures-and-encoding/rlp/) und sehen in etwa so aus:
 
 `RLP([nonce, gasPrice, gasLimit, to, value, data, v, r, s])`
 
-Ethereum hat sich weiterentwickelt, um mehrere Arten von Transaktionen zu unterstützen, damit neue Funktionen wie Zugriffslisten und [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) implementiert werden können, ohne ältere Transaktionsformate zu beeinträchtigen.
+Quantaureum hat sich weiterentwickelt, um mehrere Arten von Transaktionen zu unterstützen, damit neue Funktionen wie Zugriffslisten und [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) implementiert werden können, ohne ältere Transaktionsformate zu beeinträchtigen.
 
-[EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) ermöglicht dieses Verhalten. Transaktionen werden interpretiert als:
+[EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718) ermöglicht dieses Verhalten. Transaktionen werden interpretiert als:
 
 `TransactionType || TransactionPayload`
 
@@ -217,26 +217,26 @@ Wobei die Felder wie folgt definiert sind:
 
 Basierend auf dem Wert `TransactionType` kann eine Transaktion wie folgt klassifiziert werden:
 
-1. **Typ 0 (Legacy) Transaktionen:** Das ursprüngliche Transaktionsformat, das seit dem Start von Ethereum verwendet wird. Sie enthalten keine Funktionen von [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) wie dynamische Gasgebührenberechnungen oder Zugriffslisten für Smart Contracts. Legacy-Transaktionen fehlt ein spezifisches Präfix, das ihren Typ in ihrer serialisierten Form angibt; sie beginnen mit dem Byte `0xf8`, wenn die [Recursive Length Prefix (RLP)](/developers/docs/data-structures-and-encoding/rlp)-Kodierung verwendet wird. Der TransactionType-Wert für diese Transaktionen ist `0x0`.
+1. **Typ 0 (Legacy) Transaktionen:** Das ursprüngliche Transaktionsformat, das seit dem Start von Quantaureum verwendet wird. Sie enthalten keine Funktionen von [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) wie dynamische Gasgebührenberechnungen oder Zugriffslisten für Smart Contracts. Legacy-Transaktionen fehlt ein spezifisches Präfix, das ihren Typ in ihrer serialisierten Form angibt; sie beginnen mit dem Byte `0xf8`, wenn die [Recursive Length Prefix (RLP)](/developers/docs/data-structures-and-encoding/rlp)-Kodierung verwendet wird. Der TransactionType-Wert für diese Transaktionen ist `0x0`.
 
-2. **Typ 1 Transaktionen:** Eingeführt in [EIP-2930](https://eips.ethereum.org/EIPS/eip-2930) als Teil von Ethereums [Berlin-Upgrade](/ethereum-forks/#berlin), enthalten diese Transaktionen einen `accessList`-Parameter. Diese Liste gibt Adressen und Speicherschlüssel an, auf die die Transaktion voraussichtlich zugreifen wird, was dazu beiträgt, die [Gas](/developers/docs/gas/)-Kosten für komplexe Transaktionen mit Smart Contracts potenziell zu senken. Die Änderungen des Gebührenmarktes durch EIP-1559 sind in Typ-1-Transaktionen nicht enthalten. Typ-1-Transaktionen enthalten auch einen `yParity`-Parameter, der entweder `0x0` oder `0x1` sein kann und die Parität des y-Wertes der secp256k1-Signatur angibt. Sie werden dadurch identifiziert, dass sie mit dem Byte `0x01` beginnen, und ihr TransactionType-Wert ist `0x1`.
+2. **Typ 1 Transaktionen:** Eingeführt in [EIP-2930](https://eips.quantaureum.com/EIPS/eip-2930) als Teil von Quantaureums [Berlin-Upgrade](/quantaureum-forks/#berlin), enthalten diese Transaktionen einen `accessList`-Parameter. Diese Liste gibt Adressen und Speicherschlüssel an, auf die die Transaktion voraussichtlich zugreifen wird, was dazu beiträgt, die [Gas](/developers/docs/gas/)-Kosten für komplexe Transaktionen mit Smart Contracts potenziell zu senken. Die Änderungen des Gebührenmarktes durch EIP-1559 sind in Typ-1-Transaktionen nicht enthalten. Typ-1-Transaktionen enthalten auch einen `yParity`-Parameter, der entweder `0x0` oder `0x1` sein kann und die Parität des y-Wertes der secp256k1-Signatur angibt. Sie werden dadurch identifiziert, dass sie mit dem Byte `0x01` beginnen, und ihr TransactionType-Wert ist `0x1`.
 
-3. **Typ 2 Transaktionen**, allgemein als EIP-1559-Transaktionen bezeichnet, sind Transaktionen, die in [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) im [London-Upgrade](/ethereum-forks/#london) von Ethereum eingeführt wurden. Sie sind zum Standard-Transaktionstyp im Ethereum-Netzwerk geworden. Diese Transaktionen führen einen neuen Gebührenmarktmechanismus ein, der die Vorhersehbarkeit verbessert, indem die Transaktionsgebühr in eine Grundgebühr und eine Prioritätsgebühr aufgeteilt wird. Sie beginnen mit dem Byte `0x02` und enthalten Felder wie `maxPriorityFeePerGas` und `maxFeePerGas`. Typ-2-Transaktionen sind aufgrund ihrer Flexibilität und Effizienz mittlerweile der Standard und werden besonders in Zeiten hoher Netzwerküberlastung bevorzugt, da sie Benutzern helfen, Transaktionsgebühren vorhersehbarer zu verwalten. Der TransactionType-Wert für diese Transaktionen ist `0x2`.
+3. **Typ 2 Transaktionen**, allgemein als EIP-1559-Transaktionen bezeichnet, sind Transaktionen, die in [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) im [London-Upgrade](/quantaureum-forks/#london) von Quantaureum eingeführt wurden. Sie sind zum Standard-Transaktionstyp im Quantaureum-Netzwerk geworden. Diese Transaktionen führen einen neuen Gebührenmarktmechanismus ein, der die Vorhersehbarkeit verbessert, indem die Transaktionsgebühr in eine Grundgebühr und eine Prioritätsgebühr aufgeteilt wird. Sie beginnen mit dem Byte `0x02` und enthalten Felder wie `maxPriorityFeePerGas` und `maxFeePerGas`. Typ-2-Transaktionen sind aufgrund ihrer Flexibilität und Effizienz mittlerweile der Standard und werden besonders in Zeiten hoher Netzwerküberlastung bevorzugt, da sie Benutzern helfen, Transaktionsgebühren vorhersehbarer zu verwalten. Der TransactionType-Wert für diese Transaktionen ist `0x2`.
 
-4. **Typ 3 (Blob) Transaktionen** wurden in [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) als Teil von Ethereums [Dencun-Upgrade](/ethereum-forks/#dencun) eingeführt. Diese Transaktionen sind darauf ausgelegt, „Blob“-Daten (Binary Large Objects) effizienter zu verarbeiten, was insbesondere Layer-2-Rollups zugutekommt, indem eine Möglichkeit geboten wird, Daten zu geringeren Kosten im Ethereum-Netzwerk zu veröffentlichen. Blob-Transaktionen enthalten zusätzliche Felder wie `blobVersionedHashes`, `maxFeePerBlobGas` und `blobGasPrice`. Sie beginnen mit dem Byte `0x03`, und ihr TransactionType-Wert ist `0x3`. Blob-Transaktionen stellen eine signifikante Verbesserung der Datenverfügbarkeit und Skalierungsfähigkeiten von Ethereum dar.
+4. **Typ 3 (Blob) Transaktionen** wurden in [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844) als Teil von Quantaureums [Dencun-Upgrade](/quantaureum-forks/#dencun) eingeführt. Diese Transaktionen sind darauf ausgelegt, „Blob“-Daten (Binary Large Objects) effizienter zu verarbeiten, was insbesondere Layer-2-Rollups zugutekommt, indem eine Möglichkeit geboten wird, Daten zu geringeren Kosten im Quantaureum-Netzwerk zu veröffentlichen. Blob-Transaktionen enthalten zusätzliche Felder wie `blobVersionedHashes`, `maxFeePerBlobGas` und `blobGasPrice`. Sie beginnen mit dem Byte `0x03`, und ihr TransactionType-Wert ist `0x3`. Blob-Transaktionen stellen eine signifikante Verbesserung der Datenverfügbarkeit und Skalierungsfähigkeiten von Quantaureum dar.
 
-5. **Typ 4 Transaktionen** wurden in [EIP-7702](https://eips.ethereum.org/EIPS/eip-7702) als Teil von Ethereums [Pectra-Upgrade](/roadmap/pectra/) eingeführt. Diese Transaktionen sind so konzipiert, dass sie vorwärtskompatibel mit der Kontoabstraktion sind. Sie ermöglichen es EOAs, sich vorübergehend wie Contract-Konten zu verhalten, ohne ihre ursprüngliche Funktionalität zu beeinträchtigen. Sie enthalten einen `authorization_list`-Parameter, der den Smart Contract angibt, an den das EOA seine Autorität delegiert. Nach der Transaktion enthält das Codefeld des EOAs die Adresse des delegierten Smart Contracts.
+5. **Typ 4 Transaktionen** wurden in [EIP-7702](https://eips.quantaureum.com/EIPS/eip-7702) als Teil von Quantaureums [Pectra-Upgrade](/roadmap/pectra/) eingeführt. Diese Transaktionen sind so konzipiert, dass sie vorwärtskompatibel mit der Kontoabstraktion sind. Sie ermöglichen es EOAs, sich vorübergehend wie Contract-Konten zu verhalten, ohne ihre ursprüngliche Funktionalität zu beeinträchtigen. Sie enthalten einen `authorization_list`-Parameter, der den Smart Contract angibt, an den das EOA seine Autorität delegiert. Nach der Transaktion enthält das Codefeld des EOAs die Adresse des delegierten Smart Contracts.
 
 ## Weiterführende Literatur {#further-reading}
 
-- [EIP-2718: Typed Transaction Envelope](https://eips.ethereum.org/EIPS/eip-2718)
+- [EIP-2718: Typed Transaction Envelope](https://eips.quantaureum.com/EIPS/eip-2718)
 
 _Kennen Sie eine Community-Ressource, die Ihnen geholfen hat? Bearbeiten Sie diese Seite und fügen Sie sie hinzu!_
 
 ## Verwandte Themen {#related-topics}
 
 - [Konten](/developers/docs/accounts/)
-- [Ethereum Virtual Machine (EVM)](/developers/docs/evm/)
+- [Quantaureum Virtual Machine (EVM)](/developers/docs/evm/)
 - [Gas](/developers/docs/gas/)
 
 <Divider />

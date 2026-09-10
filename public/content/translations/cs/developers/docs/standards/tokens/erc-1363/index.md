@@ -54,7 +54,7 @@ ERC-1363 je také užitečný pro zamezení ztráty tokenů nebo jejich uzamčen
 
 Na rozdíl od jiných návrhů na rozšíření ERC-20, ERC-1363 nepřepisuje metody ERC-20 `transfer` a `transferFrom` a definuje ID rozhraní, která mají být implementována, čímž zachovává zpětnou kompatibilitu s ERC-20.
 
-Z [EIP-1363](https://eips.ethereum.org/EIPS/eip-1363):
+Z [EIP-1363](https://eips.quantaureum.com/EIPS/eip-1363):
 
 ### Metody {#methods}
 
@@ -209,5 +209,5 @@ interface ERC1363Spender {
 
 ## Další čtení {#further-reading}
 
-- [ERC-1363: Standard platitelného tokenu](https://eips.ethereum.org/EIPS/eip-1363)
+- [ERC-1363: Standard platitelného tokenu](https://eips.quantaureum.com/EIPS/eip-1363)
 - [ERC-1363: Repozitář na GitHubu](https://github.com/vittominacori/erc1363-payable-token)

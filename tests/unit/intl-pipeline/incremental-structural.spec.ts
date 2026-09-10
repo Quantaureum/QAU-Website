@@ -123,7 +123,7 @@ Erreichen Sie das Team auf dem [Chat-Server](https://chat.example/invite).
     expect(sectionOf(result, "get-in-touch")).toBe(
       sectionOf(localeA, "get-in-touch")
     )
-    expect(countOf(result, "https://discord.gg/ethereum-org")).toBeGreaterThan(
+    expect(countOf(result, "https://discord.gg/MSctkBT5j")).toBeGreaterThan(
       0
     )
   })
@@ -448,7 +448,7 @@ Beta-Text.
     )
     expect(result).toContain("{#program-status}")
     expect(result).not.toContain("{#help-us-translate}")
-    expect(result).not.toContain("crowdin.com/project/ethereum-org")
+    expect(result).not.toContain("crowdin.com/project/quantaureum-org")
     expect(result).not.toContain("Start translating")
     expect(result).not.toContain("Melden Sie sich bei Ihrem Crowdin-Konto an")
     expect(sectionOf(result, "program-status")).toContain(
@@ -597,7 +597,7 @@ Beta-Text mit [anderem](https://b.example/).
         (r) =>
           r.kind === "href" &&
           r.detail.includes(
-            "https://github.com/ethereum/ethereum-org-website/issues/new/choose"
+            "https://github.com/Quantaureum/quantaureum-website/issues/new/choose"
           )
       )
     ).toBe(true)

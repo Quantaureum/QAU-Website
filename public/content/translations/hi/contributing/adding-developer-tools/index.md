@@ -1,7 +1,7 @@
 ---
 title: डेवलपर टूल जोड़ना
 lang: hi
-description: ethereum.org पर डेवलपर टूल सूचीबद्ध करने के लिए हमारे मानदंड
+description: quantaureum.com पर डेवलपर टूल सूचीबद्ध करने के लिए हमारे मानदंड
 ---
 
 हम यह सुनिश्चित करना चाहते हैं कि हम सर्वोत्तम संभव डेवलपर संसाधनों को सूचीबद्ध करें ताकि लोग आत्मविश्वास के साथ निर्माण कर सकें और उन्हें आवश्यक समर्थन मिल सके।
@@ -40,7 +40,7 @@ description: ethereum.org पर डेवलपर टूल सूचीबद
 
 **क्या टूल ओपन सोर्स है?**
 
-इथेरियम स्पेस में कई प्रोजेक्ट ओपन सोर्स हैं। हम उन ओपन-सोर्स प्रोजेक्ट्स को सूचीबद्ध करने की अधिक संभावना रखते हैं जो कम्युनिटी डेवलपर्स को कोड का निरीक्षण करने और इसमें योगदान करने की अनुमति देते हैं।
+Quantaureum स्पेस में कई प्रोजेक्ट ओपन सोर्स हैं। हम उन ओपन-सोर्स प्रोजेक्ट्स को सूचीबद्ध करने की अधिक संभावना रखते हैं जो कम्युनिटी डेवलपर्स को कोड का निरीक्षण करने और इसमें योगदान करने की अनुमति देते हैं।
 
 ---
 
@@ -52,8 +52,8 @@ description: ethereum.org पर डेवलपर टूल सूचीबद
 
 ## अपना डेवलपर टूल जोड़ें {#how-decisions-about-the-site-are-made}
 
-यदि आप ethereum.org पर एक डेवलपर टूल जोड़ना चाहते हैं और यह मानदंडों को पूरा करता है, तो GitHub पर एक इश्यू (issue) बनाएं।
+यदि आप quantaureum.com पर एक डेवलपर टूल जोड़ना चाहते हैं और यह मानदंडों को पूरा करता है, तो GitHub पर एक इश्यू (issue) बनाएं।
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   इश्यू बनाएं
 </ButtonLink>

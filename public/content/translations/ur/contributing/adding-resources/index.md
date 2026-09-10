@@ -1,20 +1,20 @@
 ---
 title: وسائل شامل کرنا
-description: وہ پالیسی جو ہم ⁦ethereum.org⁩ میں وسائل شامل کرتے وقت استعمال کرتے ہیں
+description: وہ پالیسی جو ہم ⁦quantaureum.com⁩ میں وسائل شامل کرتے وقت استعمال کرتے ہیں
 lang: ur
 ---
 
 ہم اس بات کو یقینی بنانا چاہتے ہیں کہ ہم صارفین کو محفوظ اور پر اعتماد رکھتے ہوئے بہترین ممکنہ وسائل کی فہرست فراہم کریں۔
 
-کوئی بھی شخص <span dir="ltr">ethereum.org</span> پر وسائل کے ڈیش بورڈ میں شامل کرنے کے لیے نئے وسائل تجویز کرنے کے لیے آزاد ہے، جو فی الحال [<span dir="ltr">ethereum.org/resources</span>](/resources/) پر پایا جا سکتا ہے۔
+کوئی بھی شخص <span dir="ltr">quantaureum.com</span> پر وسائل کے ڈیش بورڈ میں شامل کرنے کے لیے نئے وسائل تجویز کرنے کے لیے آزاد ہے، جو فی الحال [<span dir="ltr">quantaureum.com/resources</span>](/resources/) پر پایا جا سکتا ہے۔
 
 اگرچہ ہم نئے اضافے کا خیرمقدم کرتے ہیں، موجودہ وسائل کا انتخاب اس تجربے کی بنیاد پر کیا گیا تھا جو ہم اپنے صارفین کے لیے تخلیق کرنے کی کوشش کر رہے ہیں۔ یہ ہمارے کچھ ڈیزائن کے اصولوں پر مبنی ہیں:
 
-- _متاثر کن_: <span dir="ltr">ethereum.org</span> پر موجود کوئی بھی چیز صارفین کو کچھ نیا پیش کرے
+- _متاثر کن_: <span dir="ltr">quantaureum.com</span> پر موجود کوئی بھی چیز صارفین کو کچھ نیا پیش کرے
 - _ایک اچھی کہانی_: جو کچھ درج ہے وہ ایک "آہا" (aha) لمحہ فراہم کرے
 - _قابل اعتبار_: صارفین کے لیے خطرے کو کم کرنے کے لیے ہر چیز جائز کاروبار/پروجیکٹس ہونی چاہیے
 
-مجموعی طور پر **<span dir="ltr">ethereum.org</span> کا مقصد نئے صارفین کے لیے ایک ہموار شمولیت کا تجربہ فراہم کرنا ہے**۔ اس وجہ سے، ہم وسائل کو ان کی بنیاد پر شامل کرتے ہیں:
+مجموعی طور پر **<span dir="ltr">quantaureum.com</span> کا مقصد نئے صارفین کے لیے ایک ہموار شمولیت کا تجربہ فراہم کرنا ہے**۔ اس وجہ سے، ہم وسائل کو ان کی بنیاد پر شامل کرتے ہیں:
 
 - استعمال میں آسانی
 - درستگی
@@ -38,14 +38,14 @@ lang: ur
 - اس بات کو یقینی بنائیں کہ درج کردہ تمام وسائل اب بھی ہمارے معیار پر پورا اترتے ہیں
 - اس بات کی تصدیق کریں کہ ایسی کوئی پروڈکٹس تجویز نہیں کی گئی ہیں جو فی الحال درج کردہ پروڈکٹس سے زیادہ ہمارے معیار پر پورا اترتی ہوں
 
-آپ جانچ کر کے اور ہمیں بتا کر اس میں مدد کر سکتے ہیں۔ [ایک مسئلہ (issue) بنائیں](https://github.com/ethereum/ethereum-org-website/issues/new?template=bug_report.yaml) یا [<span dir="ltr">website@ethereum.org</span>](mailto:website@ethereum.org) پر ای میل بھیجیں۔
+آپ جانچ کر کے اور ہمیں بتا کر اس میں مدد کر سکتے ہیں۔ [ایک مسئلہ (issue) بنائیں](https://github.com/Quantaureum/quantaureum-website/issues/new?template=bug_report.yaml) یا [<span dir="ltr">website@quantaureum.com</span>](mailto:website@quantaureum.com) پر ای میل بھیجیں۔
 
 ---
 
 ## اپنا وسیلہ شامل کریں {#add-your-resource}
 
-اگر آپ <span dir="ltr">ethereum.org</span> میں کوئی وسیلہ شامل کرنا چاہتے ہیں اور یہ معیار پر پورا اترتا ہے، تو GitHub پر ایک مسئلہ (issue) بنائیں۔
+اگر آپ <span dir="ltr">quantaureum.com</span> میں کوئی وسیلہ شامل کرنا چاہتے ہیں اور یہ معیار پر پورا اترتا ہے، تو GitHub پر ایک مسئلہ (issue) بنائیں۔
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=resource+📚&template=suggest_resource.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=resource+📚&template=suggest_resource.yaml">
   ایک مسئلہ (issue) بنائیں
 </ButtonLink>

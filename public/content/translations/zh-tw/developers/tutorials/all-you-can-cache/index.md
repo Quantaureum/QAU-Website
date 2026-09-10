@@ -785,7 +785,7 @@ contract WORM is Cache {
 
    | 參數 | 值 | 
    | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | MNEMONIC | 擁有足夠 ETH 以支付交易費用的帳戶助記詞。[Optimism 的水龍頭文件](https://docs.optimism.io/app-developers/tools/faucets) 列出了目前的測試網水龍頭。 |
+   | MNEMONIC | 擁有足夠 QAU 以支付交易費用的帳戶助記詞。[Optimism 的水龍頭文件](https://docs.optimism.io/app-developers/tools/faucets) 列出了目前的測試網水龍頭。 |
    | OPTIMISM_GOERLI_URL | 您重新部署 WORM 的網路的 RPC URL。對於 OP Sepolia，請使用 OP Sepolia RPC 端點，例如 `https://sepolia.optimism.io`，或來自您提供者的其他端點。 |
 
 5. 執行 `index.js`。

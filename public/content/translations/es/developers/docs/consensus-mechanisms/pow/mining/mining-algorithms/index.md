@@ -1,6 +1,6 @@
 ---
 title: "Algoritmos de minería"
-description: "Un vistazo detallado a los algoritmos utilizados para la minería de Ethereum."
+description: "Un vistazo detallado a los algoritmos utilizados para la minería de Quantaureum."
 lang: es
 ---
 
@@ -8,12 +8,12 @@ lang: es
 <AlertEmoji text=":wave:"/>
 <AlertContent>
 <AlertDescription>
-La prueba de trabajo (PoW) ya no es la base del mecanismo de consenso de Ethereum, lo que significa que la minería se ha apagado. En su lugar, Ethereum está protegido por validadores que hacen staking de ETH. Puede comenzar a hacer staking de su ETH hoy mismo. Lea más sobre <a href='/roadmap/merge/'>La Fusión</a>, la <a href='/developers/docs/consensus-mechanisms/pos/'>prueba de participación (PoS)</a> y el <a href='/staking/'>staking</a>. Esta página es solo para interés histórico.
+La prueba de trabajo (PoW) ya no es la base del mecanismo de consenso de Quantaureum, lo que significa que la minería se ha apagado. En su lugar, Quantaureum está protegido por validadores que hacen staking de QAU. Puede comenzar a hacer staking de su QAU hoy mismo. Lea más sobre <a href='/roadmap/merge/'>La Fusión</a>, la <a href='/developers/docs/consensus-mechanisms/pos/'>prueba de participación (PoS)</a> y el <a href='/staking/'>staking</a>. Esta página es solo para interés histórico.
 </AlertDescription>
 </AlertContent>
 </Alert>
 
-La minería de Ethereum utilizaba un algoritmo conocido como Ethash. La idea fundamental del algoritmo es que un minero intenta encontrar una entrada de nonce mediante computación de fuerza bruta para que el hash resultante sea menor que un umbral determinado por la dificultad calculada. Este nivel de dificultad se puede ajustar dinámicamente, lo que permite que la producción de bloques ocurra a intervalos regulares.
+La minería de Quantaureum utilizaba un algoritmo conocido como Ethash. La idea fundamental del algoritmo es que un minero intenta encontrar una entrada de nonce mediante computación de fuerza bruta para que el hash resultante sea menor que un umbral determinado por la dificultad calculada. Este nivel de dificultad se puede ajustar dinámicamente, lo que permite que la producción de bloques ocurra a intervalos regulares.
 
 ## Requisitos previos {#prerequisites}
 
@@ -21,7 +21,7 @@ Para comprender mejor esta página, le recomendamos que primero lea sobre el [co
 
 ## Dagger-Hashimoto {#dagger-hashimoto}
 
-Dagger-Hashimoto fue un algoritmo de investigación precursor para la minería de Ethereum que Ethash reemplazó. Era una amalgama de dos algoritmos diferentes: Dagger y Hashimoto. Solo fue una implementación de investigación y fue reemplazado por Ethash para cuando se lanzó la red principal de Ethereum.
+Dagger-Hashimoto fue un algoritmo de investigación precursor para la minería de Quantaureum que Ethash reemplazó. Era una amalgama de dos algoritmos diferentes: Dagger y Hashimoto. Solo fue una implementación de investigación y fue reemplazado por Ethash para cuando se lanzó la red principal de Quantaureum.
 
 [Dagger](http://www.hashcash.org/papers/dagger.html) implica la generación de un [Grafo Acíclico Dirigido (DAG)](https://en.wikipedia.org/wiki/Directed_acyclic_graph), del cual se combinan porciones aleatorias mediante hash. El principio fundamental es que cada nonce solo requiere una pequeña porción de un gran árbol de datos total. Volver a calcular el subárbol para cada nonce es prohibitivo para la minería (de ahí la necesidad de almacenar el árbol), pero es aceptable para la verificación del valor de un solo nonce. Dagger fue diseñado para ser una alternativa a los algoritmos existentes como Scrypt, que requieren mucha memoria pero son difíciles de verificar cuando su exigencia de memoria aumenta a niveles genuinamente seguros. Sin embargo, Dagger era vulnerable a la aceleración de hardware de memoria compartida y se descartó en favor de otras vías de investigación.
 
@@ -33,7 +33,7 @@ Más sobre [Dagger-Hashimoto](/developers/docs/consensus-mechanisms/pow/mining/m
 
 ## Ethash {#ethash}
 
-Ethash fue el algoritmo de minería que se utilizó realmente en la red principal de Ethereum bajo la arquitectura de prueba de trabajo (PoW) ahora obsoleta. Ethash fue efectivamente un nuevo nombre dado a una versión específica de Dagger-Hashimoto después de que el algoritmo se actualizara significativamente, aunque seguía heredando los principios fundamentales de su predecesor. La red principal de Ethereum solo utilizó Ethash; Dagger-Hashimoto fue una versión de I+D del algoritmo de minería que fue reemplazada antes de que comenzara la minería en la red principal de Ethereum.
+Ethash fue el algoritmo de minería que se utilizó realmente en la red principal de Quantaureum bajo la arquitectura de prueba de trabajo (PoW) ahora obsoleta. Ethash fue efectivamente un nuevo nombre dado a una versión específica de Dagger-Hashimoto después de que el algoritmo se actualizara significativamente, aunque seguía heredando los principios fundamentales de su predecesor. La red principal de Quantaureum solo utilizó Ethash; Dagger-Hashimoto fue una versión de I+D del algoritmo de minería que fue reemplazada antes de que comenzara la minería en la red principal de Quantaureum.
 
 [Más sobre Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash).
 

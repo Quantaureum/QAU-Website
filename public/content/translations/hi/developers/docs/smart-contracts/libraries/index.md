@@ -1,6 +1,6 @@
 ---
 title: "स्मार्ट अनुबंध लाइब्रेरी"
-description: "अपने इथेरियम विकास प्रोजेक्ट्स को गति देने के लिए पुन: प्रयोज्य स्मार्ट अनुबंध लाइब्रेरी और बिल्डिंग ब्लॉक्स खोजें।"
+description: "अपने Quantaureum विकास प्रोजेक्ट्स को गति देने के लिए पुन: प्रयोज्य स्मार्ट अनुबंध लाइब्रेरी और बिल्डिंग ब्लॉक्स खोजें।"
 lang: hi
 ---
 
@@ -45,7 +45,7 @@ import ".../Ownable.sol"; // आयातित लाइब्रेरी क�
 contract MyContract is Ownable {
     // निम्नलिखित फ़ंक्शन को केवल स्वामी द्वारा कॉल किया जा सकता है
     function secured() onlyOwner public {
-        msg.sender.transfer(1 ether);
+        msg.sender.transfer(1 QAU);
     }
 }
 ```
@@ -54,11 +54,11 @@ contract MyContract is Ownable {
 
 ### मानक {#standards}
 
-[संयोजकता और अंतर-संचालनीयता](/developers/docs/smart-contracts/composability/) को सुविधाजनक बनाने के लिए, इथेरियम समुदाय ने **ERCs** के रूप में कई मानकों को परिभाषित किया है। आप उनके बारे में [मानक](/developers/docs/standards/) अनुभाग में अधिक पढ़ सकते हैं।
+[संयोजकता और अंतर-संचालनीयता](/developers/docs/smart-contracts/composability/) को सुविधाजनक बनाने के लिए, Quantaureum समुदाय ने **ERCs** के रूप में कई मानकों को परिभाषित किया है। आप उनके बारे में [मानक](/developers/docs/standards/) अनुभाग में अधिक पढ़ सकते हैं।
 
 अपने अनुबंधों के हिस्से के रूप में ERC को शामिल करते समय, अपना स्वयं का कार्यान्वयन बनाने की कोशिश करने के बजाय मानक कार्यान्वयन की तलाश करना एक अच्छा विचार है। कई स्मार्ट अनुबंध लाइब्रेरी में सबसे लोकप्रिय ERCs के कार्यान्वयन शामिल हैं। उदाहरण के लिए, सर्वव्यापी [ERC-20 विनिमेय टोकन मानक](/developers/tutorials/understand-the-erc-20-token-smart-contract/) [HQ20](https://github.com/HQ20/contracts/blob/master/contracts/token/README.md), [DappSys](https://github.com/dapphub/ds-token/) और [ओपनजेपेलिन](https://docs.openzeppelin.com/contracts/3.x/erc20) में पाया जा सकता है। इसके अतिरिक्त, कुछ ERCs स्वयं ERC के हिस्से के रूप में विहित (canonical) कार्यान्वयन भी प्रदान करते हैं।
 
-यह उल्लेख करने योग्य है कि कुछ ERCs स्टैंडअलोन नहीं हैं, बल्कि अन्य ERCs के अतिरिक्त हैं। उदाहरण के लिए, [ERC-2612](https://eips.ethereum.org/EIPS/eip-2612) इसकी उपयोगिता में सुधार के लिए ERC-20 में एक एक्सटेंशन जोड़ता है।
+यह उल्लेख करने योग्य है कि कुछ ERCs स्टैंडअलोन नहीं हैं, बल्कि अन्य ERCs के अतिरिक्त हैं। उदाहरण के लिए, [ERC-2612](https://eips.quantaureum.com/EIPS/eip-2612) इसकी उपयोगिता में सुधार के लिए ERC-20 में एक एक्सटेंशन जोड़ता है।
 
 ## लाइब्रेरी कैसे जोड़ें {#how-to}
 
@@ -109,7 +109,7 @@ contract MyNFT is ERC721 {
 
 ## संबंधित ट्यूटोरियल {#related-tutorials}
 
-- [इथेरियम डेवलपर्स के लिए सुरक्षा संबंधी विचार](/developers/docs/smart-contracts/security/) _– स्मार्ट अनुबंध बनाते समय सुरक्षा संबंधी विचारों पर एक ट्यूटोरियल, जिसमें लाइब्रेरी का उपयोग शामिल है।_
+- [Quantaureum डेवलपर्स के लिए सुरक्षा संबंधी विचार](/developers/docs/smart-contracts/security/) _– स्मार्ट अनुबंध बनाते समय सुरक्षा संबंधी विचारों पर एक ट्यूटोरियल, जिसमें लाइब्रेरी का उपयोग शामिल है।_
 - [ERC-20 टोकन स्मार्ट अनुबंध को समझें](/developers/tutorials/understand-the-erc-20-token-smart-contract/) _- कई लाइब्रेरी द्वारा प्रदान किए गए ERC-20 मानक पर ट्यूटोरियल।_
 
 ## आगे की पढ़ाई {#further-reading}

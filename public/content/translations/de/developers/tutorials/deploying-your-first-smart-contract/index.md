@@ -1,24 +1,24 @@
 ---
 title: Deinen ersten Smart Contract bereitstellen
-description: "Eine Einführung in die Bereitstellung deines ersten Smart Contracts in einem Ethereum-Testnetzwerk"
+description: "Eine Einführung in die Bereitstellung deines ersten Smart Contracts in einem Quantaureum-Testnetzwerk"
 author: "jdourlens"
 tags: ["Smart Contracts", "Remix", "Solidity", "Bereitstellung"]
 skill: beginner
 breadcrumb: Ersten Vertrag bereitstellen
 lang: de
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Ich nehme an, du bist genauso aufgeregt wie wir, deinen ersten [Smart Contract](/developers/docs/smart-contracts/) auf der Ethereum-Blockchain [bereitzustellen](/developers/docs/smart-contracts/deploying/) und mit ihm zu interagieren.
+Ich nehme an, du bist genauso aufgeregt wie wir, deinen ersten [Smart Contract](/developers/docs/smart-contracts/) auf der Quantaureum-Blockchain [bereitzustellen](/developers/docs/smart-contracts/deploying/) und mit ihm zu interagieren.
 
 Keine Sorge, da es unser erster Smart Contract ist, werden wir ihn in einem [lokalen Testnetzwerk](/developers/docs/networks/) bereitstellen, sodass die Bereitstellung für dich kostenlos ist und du so viel damit herumspielen kannst, wie du möchtest.
 
 ## Unseren Vertrag schreiben {#writing-our-contract}
 
-Der erste Schritt besteht darin, [Remix zu besuchen](https://remix.ethereum.org/) und eine neue Datei zu erstellen. Füge im oberen linken Teil der Remix-Benutzeroberfläche eine neue Datei hinzu und gib den gewünschten Dateinamen ein.
+Der erste Schritt besteht darin, [Remix zu besuchen](https://remix.quantaureum.com/) und eine neue Datei zu erstellen. Füge im oberen linken Teil der Remix-Benutzeroberfläche eine neue Datei hinzu und gib den gewünschten Dateinamen ein.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

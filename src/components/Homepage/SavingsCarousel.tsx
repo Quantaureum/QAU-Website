@@ -41,7 +41,7 @@ type ComparisonItem = {
 
 type ComparisonData = {
   traditional: ComparisonItem
-  ethereum: ComparisonItem
+  quantaureum: ComparisonItem
 }
 
 type Slide = {
@@ -89,9 +89,9 @@ function useSlides(): Slide[] {
           value: t("page-index-carousel-privacy-traditional-value"),
           smallText: true,
         },
-        ethereum: {
-          label: t("page-index-carousel-privacy-ethereum-label"),
-          value: t("page-index-carousel-privacy-ethereum-value"),
+        quantaureum: {
+          label: t("page-index-carousel-privacy-quantaureum-label"),
+          value: t("page-index-carousel-privacy-quantaureum-value"),
           smallText: true,
         },
       },
@@ -132,9 +132,9 @@ function useSlides(): Slide[] {
             max: fmt(5),
           }),
         },
-        ethereum: {
-          label: t("page-index-carousel-remittances-ethereum-label"),
-          value: t("page-index-carousel-remittances-ethereum-value", {
+        quantaureum: {
+          label: t("page-index-carousel-remittances-quantaureum-label"),
+          value: t("page-index-carousel-remittances-quantaureum-value", {
             seconds: twelve,
           }),
         },
@@ -156,9 +156,9 @@ function useSlides(): Slide[] {
           value: t("page-index-carousel-borrowing-traditional-value"),
           smallText: true,
         },
-        ethereum: {
-          label: t("page-index-carousel-borrowing-ethereum-label"),
-          value: t("page-index-carousel-borrowing-ethereum-value"),
+        quantaureum: {
+          label: t("page-index-carousel-borrowing-quantaureum-label"),
+          value: t("page-index-carousel-borrowing-quantaureum-value"),
           smallText: true,
         },
       },
@@ -237,19 +237,19 @@ const SlideContent = ({
 }: SlideContentProps) => {
   const comparison = slide.comparison
   const traditionalControls = useAnimationControls()
-  const ethereumControls = useAnimationControls()
+  const quantaureumControls = useAnimationControls()
 
   useEffect(() => {
     if (isActive) {
       // Mobile: animate Y only; Desktop: animate X and Y
       traditionalControls.start({ opacity: 1, x: 0, y: 0 })
-      ethereumControls.start({ opacity: 1, x: 0, y: 0 })
+      quantaureumControls.start({ opacity: 1, x: 0, y: 0 })
     } else {
       // Desktop uses x offset, mobile doesn't (hidden via CSS anyway)
       traditionalControls.set({ opacity: 0, x: -20, y: 10 })
-      ethereumControls.set({ opacity: 0, x: -30, y: 15 })
+      quantaureumControls.set({ opacity: 0, x: -30, y: 15 })
     }
-  }, [isActive, traditionalControls, ethereumControls])
+  }, [isActive, traditionalControls, quantaureumControls])
 
   return (
     <div className="flex w-full flex-col gap-8 md:flex-row md:items-center md:justify-between md:gap-16">
@@ -289,9 +289,9 @@ const SlideContent = ({
             transition={{ duration: 0.4, delay: 0.2, ease: "easeOut" }}
           />
           <ComparisonCard
-            item={comparison.ethereum}
+            item={comparison.quantaureum}
             variant="primary"
-            controls={ethereumControls}
+            controls={quantaureumControls}
             initial={{ opacity: 0, y: 15 }}
             transition={{ duration: 0.5, delay: 0.35, ease: "easeOut" }}
           />
@@ -331,9 +331,9 @@ const SlideContent = ({
               className="ms-4 w-[357px]"
             />
             <ComparisonCard
-              item={comparison.ethereum}
+              item={comparison.quantaureum}
               variant="primary"
-              controls={ethereumControls}
+              controls={quantaureumControls}
               initial={{ opacity: 0, x: -30, y: 15 }}
               transition={{ duration: 0.6, delay: 0.45, ease: "easeOut" }}
               className="w-[339px]"

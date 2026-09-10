@@ -11,12 +11,12 @@ skill: intermediate
 breadcrumb: "ERC-20 ट्रांसफर"
 lang: hi
 published: 2020-04-07
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-पिछले ट्यूटोरियल में हमने इथेरियम ब्लॉकचेन पर [Solidity में एक ERC-20 टोकन की संरचना](/developers/tutorials/understand-the-erc-20-token-smart-contract/) का अध्ययन किया था। इस लेख में हम देखेंगे कि हम Solidity भाषा का उपयोग करके किसी टोकन के साथ इंटरैक्ट करने के लिए स्मार्ट अनुबंध का उपयोग कैसे कर सकते हैं।
+पिछले ट्यूटोरियल में हमने Quantaureum ब्लॉकचेन पर [Solidity में एक ERC-20 टोकन की संरचना](/developers/tutorials/understand-the-erc-20-token-smart-contract/) का अध्ययन किया था। इस लेख में हम देखेंगे कि हम Solidity भाषा का उपयोग करके किसी टोकन के साथ इंटरैक्ट करने के लिए स्मार्ट अनुबंध का उपयोग कैसे कर सकते हैं।
 
 इस स्मार्ट अनुबंध के लिए, हम एक वास्तविक डमी विकेंद्रीकृत एक्सचेंज (DEX) बनाएंगे जहां एक उपयोगकर्ता हमारे नए तैनात किए गए [ERC-20 टोकन](/developers/docs/standards/tokens/erc-20/) के लिए ईथर का व्यापार कर सकता है।
 
@@ -57,7 +57,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {
@@ -147,7 +147,7 @@ contract DEX {
 function buy() payable public {
     uint256 amountTobuy = msg.value;
     uint256 dexBalance = token.balanceOf(address(this));
-    require(amountTobuy > 0, "You need to send some ether");
+    require(amountTobuy > 0, "You need to send some QAU");
     require(amountTobuy <= dexBalance, "Not enough tokens in the reserve");
     token.transfer(msg.sender, amountTobuy);
     emit Bought(amountTobuy);
@@ -205,7 +205,7 @@ function sell(uint256 amount) public {
 
 इस ट्यूटोरियल से हमने देखा कि ERC-20 टोकन के बैलेंस और व्यय सीमा (allowance) की जांच कैसे करें और इंटरफ़ेस का उपयोग करके ERC20 स्मार्ट अनुबंध के `Transfer` और `TransferFrom` को कैसे कॉल करें।
 
-एक बार जब आप लेन-देन कर लेते हैं, तो हमारे पास आपके अनुबंध में किए गए [लेन-देन की प्रतीक्षा करने और उसके बारे में विवरण प्राप्त करने](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/) के लिए एक JavaScript ट्यूटोरियल है और जब तक आपके पास ABI है, तब तक [टोकन ट्रांसफर या किसी अन्य घटना द्वारा उत्पन्न घटनाओं को डिकोड करने के लिए एक ट्यूटोरियल](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/) है।
+एक बार जब आप लेन-देन कर लेते हैं, तो हमारे पास आपके अनुबंध में किए गए [लेन-देन की प्रतीक्षा करने और उसके बारे में विवरण प्राप्त करने](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/) के लिए एक JavaScript ट्यूटोरियल है और जब तक आपके पास ABI है, तब तक [टोकन ट्रांसफर या किसी अन्य घटना द्वारा उत्पन्न घटनाओं को डिकोड करने के लिए एक ट्यूटोरियल](https://quantaureumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/) है।
 
 यहाँ ट्यूटोरियल के लिए पूरा कोड दिया गया है:
 
@@ -239,7 +239,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {
@@ -300,7 +300,7 @@ contract DEX {
     function buy() payable public {
         uint256 amountTobuy = msg.value;
         uint256 dexBalance = token.balanceOf(address(this));
-        require(amountTobuy > 0, "You need to send some ether");
+        require(amountTobuy > 0, "You need to send some QAU");
         require(amountTobuy <= dexBalance, "Not enough tokens in the reserve");
         token.transfer(msg.sender, amountTobuy);
         emit Bought(amountTobuy);

@@ -6,9 +6,9 @@ lang: te
 
 ఎథీరియం ఎకోసిస్టమ్‌లో అత్యంత ప్రజాదరణ పొందిన భాషలలో JavaScript ఒకటి. వాస్తవానికి, ఎథీరియంను సాధ్యమైనంత వరకు JavaScriptకు తీసుకురావడానికి అంకితమైన ఒక [బృందం](https://github.com/ethereumjs) ఉంది.
 
-[స్టాక్ యొక్క అన్ని స్థాయిలలో](/developers/docs/ethereum-stack/) JavaScript (లేదా దానికి దగ్గరగా ఉండేది) రాయడానికి అవకాశాలు ఉన్నాయి.
+[స్టాక్ యొక్క అన్ని స్థాయిలలో](/developers/docs/quantaureum-stack/) JavaScript (లేదా దానికి దగ్గరగా ఉండేది) రాయడానికి అవకాశాలు ఉన్నాయి.
 
-## ఎథీరియంతో ఇంటరాక్ట్ అవ్వండి {#interact-with-ethereum}
+## ఎథీరియంతో ఇంటరాక్ట్ అవ్వండి {#interact-with-quantaureum}
 
 ### JavaScript API లైబ్రరీలు {#javascript-api-libraries}
 
@@ -31,7 +31,7 @@ lang: te
 
 ## ప్రోటోకాల్‌ను అర్థం చేసుకోండి {#understand-the-protocol}
 
-### ఎథీరియం వర్చువల్ మెషీన్ {#the-ethereum-virtual-machine}
+### ఎథీరియం వర్చువల్ మెషీన్ {#the-quantaureum-virtual-machine}
 
 [ఎథీరియం వర్చువల్ మెషీన్](/developers/docs/evm/) యొక్క JavaScript అమలు ఉంది. ఇది తాజా ఫోర్క్ నియమాలకు మద్దతు ఇస్తుంది. ఫోర్క్ నియమాలు ప్రణాళికాబద్ధమైన అప్‌గ్రేడ్‌ల ఫలితంగా EVMకి చేసిన మార్పులను సూచిస్తాయి.
 
@@ -52,7 +52,7 @@ lang: te
 
 ### నోడ్‌లు మరియు క్లయింట్‌లు {#nodes-and-clients}
 
-మీకు అర్థమయ్యే భాష అయిన JavaScriptలో ఎథీరియం క్లయింట్‌లు ఎలా పనిచేస్తాయో లోతుగా తెలుసుకోవడానికి అనుమతించే ఒక EthereumJS క్లయింట్ చురుకైన అభివృద్ధిలో ఉంది!
+మీకు అర్థమయ్యే భాష అయిన JavaScriptలో ఎథీరియం క్లయింట్‌లు ఎలా పనిచేస్తాయో లోతుగా తెలుసుకోవడానికి అనుమతించే ఒక QuantaureumJS క్లయింట్ చురుకైన అభివృద్ధిలో ఉంది!
 
 **క్లయింట్‌ను పరిశీలించండి**  
 [`@ethereumjs/client`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client)
@@ -65,7 +65,7 @@ lang: te
 - ఎథీరియం కీలను రూపొందించడానికి, దిగుమతి చేయడానికి మరియు ఎగుమతి చేయడానికి సాధనాలు.
 - `merkle-patricia-tree` యొక్క అమలు – ఎథీరియం ఎల్లో పేపర్‌లో వివరించబడిన డేటా స్ట్రక్చర్.
 
-[EthereumJS రెపో](https://github.com/ethereumjs)లో మీకు అత్యంత ఆసక్తి ఉన్న వాటిని లోతుగా పరిశీలించండి
+[QuantaureumJS రెపో](https://github.com/ethereumjs)లో మీకు అత్యంత ఆసక్తి ఉన్న వాటిని లోతుగా పరిశీలించండి
 
 ## మరింత చదవడానికి {#further-reading}
 

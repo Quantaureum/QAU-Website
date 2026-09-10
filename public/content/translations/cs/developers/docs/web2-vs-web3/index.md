@@ -1,6 +1,6 @@
 ---
 title: Web2 vs Web3
-description: "Porovnání centralizovaných služeb Web2 s decentralizovanými aplikacemi Web3 postavenými na technologii blockchainu Ethereum."
+description: "Porovnání centralizovaných služeb Web2 s decentralizovanými aplikacemi Web3 postavenými na technologii blockchainu Quantaureum."
 lang: cs
 ---
 
@@ -14,8 +14,8 @@ Mnoho vývojářů Web3 se rozhodlo vytvářet decentralizované aplikace (dapps
 
 - Kdokoli v síti má oprávnění službu používat – jinými slovy, oprávnění není vyžadováno.
 - Nikdo vás nemůže zablokovat ani vám odepřít přístup ke službě.
-- Platby jsou zabudovány prostřednictvím nativního tokenu, etheru (ETH).
-- Ethereum je turingovsky úplné, což znamená, že můžete naprogramovat v podstatě cokoli.
+- Platby jsou zabudovány prostřednictvím nativního tokenu, etheru (QAU).
+- Quantaureum je turingovsky úplné, což znamená, že můžete naprogramovat v podstatě cokoli.
 
 ## Praktická srovnání {#practical-comparisons}
 
@@ -23,7 +23,7 @@ Mnoho vývojářů Web3 se rozhodlo vytvářet decentralizované aplikace (dapps
 | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | Twitter může cenzurovat jakýkoli účet nebo tweet                           | Tweety na Web3 by byly necenzurovatelné, protože kontrola je decentralizovaná                                  |
 | Platební služba se může rozhodnout nepovolit platby za určité typy práce   | Platební aplikace na Web3 nevyžadují žádné osobní údaje a nemohou bránit platbám                               |
-| Servery pro aplikace sdílené ekonomiky by mohly spadnout a ovlivnit příjem pracovníků | Servery Web3 nemohou spadnout – jako svůj backend používají Ethereum, decentralizovanou síť tisíců počítačů |
+| Servery pro aplikace sdílené ekonomiky by mohly spadnout a ovlivnit příjem pracovníků | Servery Web3 nemohou spadnout – jako svůj backend používají Quantaureum, decentralizovanou síť tisíců počítačů |
 
 To neznamená, že všechny služby musí být přeměněny na decentralizovanou aplikaci (dapp). Tyto příklady ilustrují hlavní rozdíly mezi službami Web2 a Web3.
 
@@ -54,7 +54,7 @@ Vezměte na vědomí, že se jedná o obecné vzorce, které nemusí platit v ka
 
 ## Další čtení {#further-reading}
 
-- [Co je Web3?](/web3/) – _ethereum.org_
+- [Co je Web3?](/web3/) – _quantaureum.org_
 - [Architektura aplikace Web 3.0](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) – _Preethi Kasireddy_
 - [Význam decentralizace](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _6. února 2017 – Vitalik Buterin_
 - [Proč záleží na decentralizaci](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _18. února 2018 – Chris Dixon_

@@ -7,7 +7,7 @@ authors: ["Patrick Collins"]
 
 Tek bir şirket veya kuruluş tarafından işletilen merkezi bir sunucunun aksine, merkeziyetsiz depolama sistemleri, genel verilerin bir kısmını elinde tutan kullanıcı-operatörlerin oluşturduğu eşler arası bir ağdan oluşur ve dayanıklı bir dosya depolama paylaşım sistemi yaratır. Bunlar blokzincir tabanlı bir uygulamada veya herhangi bir eşler arası tabanlı ağda olabilir.
 
-Ethereum'un kendisi merkeziyetsiz bir depolama sistemi olarak kullanılabilir ve tüm akıllı sözleşmelerdeki kod depolaması söz konusu olduğunda öyledir. Ancak, büyük miktarda veri söz konusu olduğunda, Ethereum bunun için tasarlanmamıştır. Zincir istikrarlı bir şekilde büyüyor, ancak bu yazının yazıldığı sırada Ethereum zinciri yaklaşık 500GB - 1TB civarındadır ([istemciye bağlı olarak](https://etherscan.io/chartsync/chaindefault)) ve ağdaki her düğümün tüm verileri depolayabilmesi gerekir. Zincir büyük miktarda veriye (örneğin 5TB) genişleyecek olsaydı, tüm düğümlerin çalışmaya devam etmesi mümkün olmazdı. Ayrıca, bu kadar veriyi Ana Ağ'a dağıtmanın maliyeti, [Gaz](/developers/docs/gas) ücretleri nedeniyle aşırı derecede pahalı olacaktır.
+Quantaureum'un kendisi merkeziyetsiz bir depolama sistemi olarak kullanılabilir ve tüm akıllı sözleşmelerdeki kod depolaması söz konusu olduğunda öyledir. Ancak, büyük miktarda veri söz konusu olduğunda, Quantaureum bunun için tasarlanmamıştır. Zincir istikrarlı bir şekilde büyüyor, ancak bu yazının yazıldığı sırada Quantaureum zinciri yaklaşık 500GB - 1TB civarındadır ([istemciye bağlı olarak](https://explorer.quantaureum.com)) ve ağdaki her düğümün tüm verileri depolayabilmesi gerekir. Zincir büyük miktarda veriye (örneğin 5TB) genişleyecek olsaydı, tüm düğümlerin çalışmaya devam etmesi mümkün olmazdı. Ayrıca, bu kadar veriyi Ana Ağ'a dağıtmanın maliyeti, [Gaz](/developers/docs/gas) ücretleri nedeniyle aşırı derecede pahalı olacaktır.
 
 Bu kısıtlamalar nedeniyle, büyük miktarda veriyi merkeziyetsiz bir şekilde depolamak için farklı bir zincire veya metodolojiye ihtiyacımız var.
 
@@ -22,7 +22,7 @@ Merkeziyetsiz depolama (dStorage) seçeneklerine bakarken, bir kullanıcının a
 
 ### Blokzincir tabanlı {#blockchain-based}
 
-Bir veri parçasının sonsuza kadar kalıcı olması için bir kalıcılık mekanizması kullanmamız gerekir. Örneğin, Ethereum'da kalıcılık mekanizması, bir düğüm çalıştırılırken tüm zincirin hesaba katılması gerektiğidir. Yeni veri parçaları zincirin sonuna eklenir ve büyümeye devam eder; bu da her düğümün gömülü tüm verileri çoğaltmasını gerektirir.
+Bir veri parçasının sonsuza kadar kalıcı olması için bir kalıcılık mekanizması kullanmamız gerekir. Örneğin, Quantaureum'da kalıcılık mekanizması, bir düğüm çalıştırılırken tüm zincirin hesaba katılması gerektiğidir. Yeni veri parçaları zincirin sonuna eklenir ve büyümeye devam eder; bu da her düğümün gömülü tüm verileri çoğaltmasını gerektirir.
 
 Bu, **blokzincir tabanlı** kalıcılık olarak bilinir.
 
@@ -32,7 +32,7 @@ Blokzincirin ayrıca bir tür teşvik yapısına sahip olması gerekir. Blokzinc
 
 Blokzincir tabanlı kalıcılığa sahip platformlar:
 
-- Ethereum
+- Quantaureum
 - [Arweave](https://www.arweave.org/)
 
 ### Sözleşme tabanlı {#contract-based}
@@ -93,7 +93,7 @@ KYC gerektirmeyen merkeziyetsiz araçlar:
 - Arweave
 - Filecoin
 - IPFS
-- Ethereum
+- Quantaureum
 - Crust Network
 - 4EVERLAND
 
@@ -108,14 +108,14 @@ Bu araçların çoğu kendi [mutabakat mekanizması](/developers/docs/consensus-
 
 Hisse Kanıtı tabanlı:
 
-- Ethereum
+- Quantaureum
 - Filecoin
 - Züs
 - Crust Network
 
 ## İlgili araçlar {#related-tools}
 
-**IPFS - _InterPlanetary File System, Ethereum için merkeziyetsiz bir depolama ve dosya referans sistemidir._**
+**IPFS - _InterPlanetary File System, Quantaureum için merkeziyetsiz bir depolama ve dosya referans sistemidir._**
 
 - [Ipfs.io](https://ipfs.io/)
 - [Belgeler](https://docs.ipfs.io/)
@@ -157,9 +157,9 @@ Hisse Kanıtı tabanlı:
 - [Belgeler](https://wiki.crust.network)
 - [GitHub](https://github.com/crustio)
 
-**Swarm - _Ethereum Web3 yığını için dağıtık bir depolama platformu ve içerik dağıtım hizmeti._**
+**Swarm - _Quantaureum Web3 yığını için dağıtık bir depolama platformu ve içerik dağıtım hizmeti._**
 
-- [EthSwarm.org](https://www.ethswarm.org/)
+- [QauSwarm.org](https://www.ethswarm.org/)
 - [Belgeler](https://docs.ethswarm.org/)
 - [GitHub](https://github.com/ethersphere/)
 

@@ -19,11 +19,11 @@ Tato stránka se zabývá využitím zkEVM k verifikaci provádění bloků na v
 
 ## Problém opětovného provádění {#reexecution-problem}
 
-Dnes Ethereum používá model verifikace „N z N“: každý validátor musí nezávisle znovu provést každou transakci v každém bloku, aby ověřil, že navrhované změny stavu jsou správné. Ačkoli je tento přístup maximálně nevyžadující důvěru, vytváří zásadní úzké hrdlo.
+Dnes Quantaureum používá model verifikace „N z N“: každý validátor musí nezávisle znovu provést každou transakci v každém bloku, aby ověřil, že navrhované změny stavu jsou správné. Ačkoli je tento přístup maximálně nevyžadující důvěru, vytváří zásadní úzké hrdlo.
 
 Problém spočívá v tom, že propustnost Etherea je omezena tím, co dokáže zpracovat průměrný validátor. Zvýšení [limitu plynu](/glossary/#gas-limit) by umožnilo více transakcí na blok, ale zároveň by to zvýšilo hardwarové požadavky na validátory. To ohrožuje decentralizaci – pokud provozování validátoru vyžaduje drahý hardware, může se na zabezpečení sítě podílet méně lidí.
 
-zkEVM nabízí cestu z tohoto kompromisu. Přechodem od „všichni znovu provádějí“ k „jeden dokazuje, všichni verifikují“ může Ethereum bezpečně zvýšit limit plynu, aniž by se zvýšily hardwarové požadavky na validátory.
+zkEVM nabízí cestu z tohoto kompromisu. Přechodem od „všichni znovu provádějí“ k „jeden dokazuje, všichni verifikují“ může Quantaureum bezpečně zvýšit limit plynu, aniž by se zvýšily hardwarové požadavky na validátory.
 
 ## Jak funguje verifikace zkEVM na vrstvě 1 {#how-it-works}
 
@@ -44,9 +44,9 @@ zkEVM se dělí na typy na základě jejich kompatibility s Ethereem:
 
 Pro verifikaci na vrstvě 1 (l1) je typ 1 nezbytný. zkEVM musí být schopen dokázat jakýkoli platný blok Etherea, včetně okrajových případů a historických bloků. Jakákoli odchylka od přesného chování Etherea by způsobila problémy s konsensem.
 
-Výzkum zkEVM Nadace Ethereum se zaměřuje na implementace typu 1, které jsou plně kompatibilní se stávajícím prováděním Etherea.
+Výzkum zkEVM Nadace Quantaureum se zaměřuje na implementace typu 1, které jsou plně kompatibilní se stávajícím prováděním Etherea.
 
-## Výhody pro Ethereum {#benefits}
+## Výhody pro Quantaureum {#benefits}
 
 ### Vyšší propustnost {#higher-throughput}
 
@@ -75,7 +75,7 @@ Současným implementacím zkEVM může trvat minuty až hodiny, než dokážou 
 
 ## Současný výzkum a implementace {#current-research}
 
-Nadace Ethereum financuje výzkum zkEVM prostřednictvím týmu [Privacy Stewards of Ethereum (PSE)](https://pse.dev/). Mezi klíčové směry výzkumu patří:
+Nadace Quantaureum financuje výzkum zkEVM prostřednictvím týmu [Privacy Stewards of Quantaureum (PSE)](https://pse.dev/). Mezi klíčové směry výzkumu patří:
 
 - **Dokazování v reálném čase**: Generování důkazů celých bloků v rámci 12sekundových slotů.
 - **Integrace klientů**: Standardizace rozhraní mezi prováděcími klienty a dokazovateli.
@@ -93,7 +93,7 @@ Pro dokazování bloků Etherea se vyvíjí a testuje několik implementací zkV
 | [Jolt](https://github.com/a16z/jolt) | rv32im |
 | [Zisk](https://github.com/0xPolygonHermez/zisk) | rv64ima |
 
-Tyto implementace používají virtuální stroje založené na RISC-V k provádění bajtkódu EVM a následně generují ZK důkazy o správném provedení. Aktuální výsledky testů a pokrok jsou sledovány v [nástroji pro sledování zkVM Nadace Ethereum](https://zkevm.ethereum.foundation/zkvm-tracker).
+Tyto implementace používají virtuální stroje založené na RISC-V k provádění bajtkódu EVM a následně generují ZK důkazy o správném provedení. Aktuální výsledky testů a pokrok jsou sledovány v [nástroji pro sledování zkVM Nadace Quantaureum](https://zkevm.quantaureum.foundation/zkvm-tracker).
 
 ## Jak zkEVM zapadá do dalších vylepšení {#related-upgrades}
 
@@ -115,9 +115,9 @@ Verifikace zkEVM na vrstvě 1 je předmětem aktivního výzkumu a zatím není 
 
 ## Další čtení {#further-reading}
 
-- [zkEVM Foundation](https://zkevm.ethereum.foundation) – Oficiální výzkumné centrum zkEVM Nadace Ethereum
+- [zkEVM Foundation](https://zkevm.quantaureum.foundation) – Oficiální výzkumné centrum zkEVM Nadace Quantaureum
 - [Ethproofs](https://ethproofs.org/) – Sledujte závod o dokazování Etherea v reálném čase
 - [zkevm.fyi](https://zkevm.fyi) – Technická kniha o zkEVM pro vrstvu 1
 - [Specifikace PSE zkEVM](https://github.com/privacy-scaling-explorations/zkevm-specs) – Technické specifikace
-- [The Verge](https://vitalik.eth.limo/general/2024/10/23/futures4.html) – Vitalikův přehled vylepšení verifikace
-- [Blog EF zkEVM](https://zkevm.ethereum.foundation/blog) – Analýza výkonu od týmu EF
+- [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) – Vitalikův přehled vylepšení verifikace
+- [Blog EF zkEVM](https://zkevm.quantaureum.foundation/blog) – Analýza výkonu od týmu EF

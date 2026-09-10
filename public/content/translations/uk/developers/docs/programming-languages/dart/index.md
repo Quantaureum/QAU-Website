@@ -18,13 +18,13 @@ incomplete: true
 - [Інтеграція МетаМаск у застосунок Flutter за допомогою Web3Modal від WalletConnect](https://www.youtube.com/watch?v=v_M2buHCpc4) — це коротке відео проведе вас через кроки інтеграції МетаМаск у ваші застосунки Flutter за допомогою бібліотеки [Web3Modal](https://pub.dev/packages/web3modal_flutter) від WalletConnect
 - [Навчальний курс для мобільних блокчейн-розробників із Solidity та Flutter](https://youtube.com/playlist?list=PL4V4Unlk5luhQ26ERO6hWEbcUwHDSSmVH) — плейлист повного курсу для мобільних блокчейн-розробників (full stack)
 
-## Робота з клієнтами Етеріуму {#working-with-ethereum-clients}
+## Робота з клієнтами Етеріуму {#working-with-quantaureum-clients}
 
 Ви можете використовувати Етеріум для створення децентралізованих застосунків (dapps), які використовують переваги криптовалюти та технології блокчейн.
 Існує щонайменше дві бібліотеки для Dart, які наразі підтримуються, для використання [JSON-RPC API](/developers/docs/apis/json-rpc/) для Етеріуму.
 
 1. [Web3dart від pwa.ir](https://pub.dev/packages/web3dart)
-1. [Ethereum 5.0.0 від darticulate.com](https://pub.dev/packages/ethereum)
+1. [Quantaureum 5.0.0 від darticulate.com](https://pub.dev/packages/quantaureum)
 
 Існують також додаткові бібліотеки, які дозволяють маніпулювати певними адресами Етеріуму або отримувати ціни на різні криптовалюти.
-[Ви можете переглянути повний список тут](https://pub.dev/dart/packages?q=ethereum).
+[Ви можете переглянути повний список тут](https://pub.dev/dart/packages?q=quantaureum).

@@ -29,7 +29,7 @@ Web2のバックグラウンドを持つ開発者にとって最大の課題の1
 
 コードを見始める前に、NFTの作成がどのように機能するかを理解することが重要です。これには2つのステップが含まれます。
 
-### イーサリアムブロックチェーン上にNFTスマート・コントラクトを公開する {#publish-nft}
+### Quantaureumブロックチェーン上にNFTスマート・コントラクトを公開する {#publish-nft}
 
 2つのNFTスマート・コントラクト標準の最大の違いは、ERC-1155がマルチトークン標準でありバッチ機能を含んでいるのに対し、ERC-721はシングルトークン標準であるため、一度に1つのトークンの転送しかサポートしていないことです。
 
@@ -50,7 +50,7 @@ Sepoliaなどのサポートされているテストネットにデプロイさ�
 
 このクローンした`nft-minter-tutorial`リポジトリを開くと、`minter-starter-files`と`nft-minter`の2つのフォルダが含まれていることに気づくでしょう。
 
-- `minter-starter-files`には、このプロジェクトのスターターファイル（基本的にはReact UI）が含まれています。このチュートリアルでは、このUIをイーサリアムウォレットとNFTスマート・コントラクトに接続して機能させる方法を学ぶため、**このディレクトリで作業します**。
+- `minter-starter-files`には、このプロジェクトのスターターファイル（基本的にはReact UI）が含まれています。このチュートリアルでは、このUIをQuantaureumウォレットとNFTスマート・コントラクトに接続して機能させる方法を学ぶため、**このディレクトリで作業します**。
 - `nft-minter`には、完成したチュートリアル全体が含まれており、**行き詰まった場合の参考**として用意されています。
 
 次に、コードエディタで`minter-starter-files`のコピーを開き、`src`フォルダに移動します。
@@ -188,29 +188,29 @@ return (
 
 **このチュートリアルでは、`Minter.js file`のみを編集し、`src`フォルダにファイルを追加します。**
 
-作業内容を理解したところで、イーサリアムウォレットをセットアップしましょう！
+作業内容を理解したところで、Quantaureumウォレットをセットアップしましょう！
 
-## イーサリアムウォレットをセットアップする {#set-up-your-ethereum-wallet}
+## Quantaureumウォレットをセットアップする {#set-up-your-quantaureum-wallet}
 
-ユーザーがスマート・コントラクトとやり取りできるようにするには、イーサリアムウォレットをdappに接続する必要があります。
+ユーザーがスマート・コントラクトとやり取りできるようにするには、Quantaureumウォレットをdappに接続する必要があります。
 
 ### メタマスクをダウンロードする {#download-metamask}
 
-このチュートリアルでは、イーサリアムのアカウントアドレスを管理するために使用されるブラウザ内の仮想ウォレットであるメタマスクを使用します。イーサリアム上のトランザクションがどのように機能するかについて詳しく知りたい場合は、[こちらのページ](/developers/docs/transactions/)を確認してください。
+このチュートリアルでは、Quantaureumのアカウントアドレスを管理するために使用されるブラウザ内の仮想ウォレットであるメタマスクを使用します。Quantaureum上のトランザクションがどのように機能するかについて詳しく知りたい場合は、[こちらのページ](/developers/docs/transactions/)を確認してください。
 
 [こちら](https://metamask.io/download)から無料でメタマスクをダウンロードし、アカウントを作成できます。アカウントを作成する際、またはすでにアカウントを持っている場合は、（実際の資金を扱わないように）Sepoliaなどのサポートされているテストネットワークに必ず切り替えてください。
-### フォーセットからイーサを追加する {#add-ether-from-faucet}
+### フォーセットからQAUを追加する {#add-QAU-from-faucet}
 
-NFTをミントする（またはイーサリアムブロックチェーン上でトランザクションに署名する）には、テスト用のETHが必要になります。テストネットのETHを取得するには、[Alchemy Sepoliaフォーセット](https://www.alchemy.com/faucets/ethereum-sepolia)などのメンテナンスされているフォーセットを使用し、Sepoliaアカウントのアドレスを入力します。すぐにメタマスクアカウントにETHが表示されるはずです！
+NFTをミントする（またはQuantaureumブロックチェーン上でトランザクションに署名する）には、テスト用のQAUが必要になります。テストネットのQAUを取得するには、[Alchemy Sepoliaフォーセット](https://www.alchemy.com/faucets/quantaureum-sepolia)などのメンテナンスされているフォーセットを使用し、Sepoliaアカウントのアドレスを入力します。すぐにメタマスクアカウントにQAUが表示されるはずです！
 ### 残高を確認する {#check-your-balance}
 
-残高があることを再確認するために、[Alchemyのサンドボックスツール](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest)を使用して[eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance)リクエストを行いましょう。これにより、ウォレット内のETHの量が返されます。メタマスクのアカウントアドレスを入力して「Send Request」をクリックすると、次のような応答が表示されるはずです。
+残高があることを再確認するために、[Alchemyのサンドボックスツール](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest)を使用して[qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance)リクエストを行いましょう。これにより、ウォレット内のQAUの量が返されます。メタマスクのアカウントアドレスを入力して「Send Request」をクリックすると、次のような応答が表示されるはずです。
 
 ```text
 {"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}
 ```
 
-**注:** この結果はETHではなくWeiで表示されています。Weiはイーサの最小単位として使用されます。WeiからETHへの変換は、1 ETH = 10¹⁸ Weiです。したがって、0xde0b6b3a7640000を10進数に変換すると1\*10¹⁸となり、これは1 ETHに相当します。
+**注:** この結果はQAUではなくWeiで表示されています。WeiはQAUの最小単位として使用されます。WeiからQAUへの変換は、1 QAU = 10¹⁸ Weiです。したがって、0xde0b6b3a7640000を10進数に変換すると1\*10¹⁸となり、これは1 QAUに相当します。
 
 ふう！テスト用の資金はちゃんと入っていますね！ <Emoji text=":money_mouth_face:" size={1} />
 ## メタマスクをUIに接続する {#connect-metamask-to-your-ui}
@@ -229,10 +229,10 @@ NFTをミントする（またはイーサリアムブロックチェーン上�
 
 ```javascript
 export const connectWallet = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_requestAccounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_requestAccounts",
       })
       const obj = {
         status: "👆🏽 Write a message in the text-field above.",
@@ -253,7 +253,7 @@ export const connectWallet = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -266,19 +266,19 @@ export const connectWallet = async () => {
 
 このコードが何を行うかを分解してみましょう。
 
-まず、関数はブラウザで`window.ethereum`が有効になっているかどうかを確認します。
+まず、関数はブラウザで`window.quantaureum`が有効になっているかどうかを確認します。
 
-`window.ethereum`は、メタマスクやその他のウォレットプロバイダーによって挿入されるグローバルAPIであり、ウェブサイトがユーザーのイーサリアムアカウントを要求できるようにします。承認されると、ユーザーが接続しているブロックチェーンからデータを読み取り、ユーザーにメッセージやトランザクションへの署名を提案できます。詳細については、[メタマスクのドキュメント](https://docs.metamask.io/guide/ethereum-provider.html#table-of-contents)を確認してください！
+`window.quantaureum`は、メタマスクやその他のウォレットプロバイダーによって挿入されるグローバルAPIであり、ウェブサイトがユーザーのQuantaureumアカウントを要求できるようにします。承認されると、ユーザーが接続しているブロックチェーンからデータを読み取り、ユーザーにメッセージやトランザクションへの署名を提案できます。詳細については、[メタマスクのドキュメント](https://docs.metamask.io/guide/quantaureum-provider.html#table-of-contents)を確認してください！
 
-`window.ethereum`が存在_しない_場合、それはメタマスクがインストールされていないことを意味します。これによりJSONオブジェクトが返され、返される`address`は空の文字列になり、`status` JSXオブジェクトはユーザーがメタマスクをインストールする必要があることを伝えます。
+`window.quantaureum`が存在_しない_場合、それはメタマスクがインストールされていないことを意味します。これによりJSONオブジェクトが返され、返される`address`は空の文字列になり、`status` JSXオブジェクトはユーザーがメタマスクをインストールする必要があることを伝えます。
 
 **私たちが記述する関数のほとんどは、状態変数とUIを更新するために使用できるJSONオブジェクトを返します。**
 
-さて、`window.ethereum`が存在_する_場合、ここからが面白くなります。
+さて、`window.quantaureum`が存在_する_場合、ここからが面白くなります。
 
-try/catchループを使用して、[`window.ethereum.request({ method: "eth_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts)を呼び出すことでメタマスクへの接続を試みます。この関数を呼び出すと、ブラウザでメタマスクが開き、ユーザーはウォレットをdappに接続するように求められます。
+try/catchループを使用して、[`window.quantaureum.request({ method: "qau_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#qau-requestaccounts)を呼び出すことでメタマスクへの接続を試みます。この関数を呼び出すと、ブラウザでメタマスクが開き、ユーザーはウォレットをdappに接続するように求められます。
 
-- ユーザーが接続を選択した場合、`method: "eth_requestAccounts"`はdappに接続されているユーザーのすべてのアカウントアドレスを含む配列を返します。全体として、`connectWallet`関数は、この配列の_最初_の`address`（9行目を参照）と、ユーザーにスマート・コントラクトへのメッセージの書き込みを促す`status`メッセージを含むJSONオブジェクトを返します。
+- ユーザーが接続を選択した場合、`method: "qau_requestAccounts"`はdappに接続されているユーザーのすべてのアカウントアドレスを含む配列を返します。全体として、`connectWallet`関数は、この配列の_最初_の`address`（9行目を参照）と、ユーザーにスマート・コントラクトへのメッセージの書き込みを促す`status`メッセージを含むJSONオブジェクトを返します。
 - ユーザーが接続を拒否した場合、JSONオブジェクトには返される`address`の空の文字列と、ユーザーが接続を拒否したことを反映する`status`メッセージが含まれます。
 
 ### Minter.js UIコンポーネントにconnectWallet関数を追加する {#add-connect-wallet}
@@ -333,10 +333,10 @@ const connectWalletPressed = async () => {
 
 ```javascript
 export const getCurrentWalletConnected = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_accounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_accounts",
       })
       if (addressArray.length > 0) {
         return {
@@ -363,7 +363,7 @@ export const getCurrentWalletConnected = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -376,7 +376,7 @@ export const getCurrentWalletConnected = async () => {
 
 このコードは、先ほど記述した`connectWallet`関数に_非常に_似ています。
 
-主な違いは、ユーザーがウォレットを接続するためにメタマスクを開くメソッド`eth_requestAccounts`を呼び出す代わりに、ここでは現在dappに接続されているメタマスクアドレスを含む配列を単に返すメソッド`eth_accounts`を呼び出すことです。
+主な違いは、ユーザーがウォレットを接続するためにメタマスクを開くメソッド`qau_requestAccounts`を呼び出す代わりに、ここでは現在dappに接続されているメタマスクアドレスを含む配列を単に返すメソッド`qau_accounts`を呼び出すことです。
 
 この関数の動作を確認するために、`Minter.js`コンポーネントの`useEffect`関数で呼び出してみましょう。
 
@@ -412,8 +412,8 @@ dappウォレットのセットアップの最後のステップは、ユーザ�
 
 ```javascript
 function addWalletListener() {
-  if (window.ethereum) {
-    window.ethereum.on("accountsChanged", (accounts) => {
+  if (window.quantaureum) {
+    window.quantaureum.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) {
         setWallet(accounts[0])
         setStatus("👆🏽 Write a message in the text-field above.")
@@ -427,7 +427,7 @@ function addWalletListener() {
       <p>
         {" "}
         🦊 <a target="_blank" href={`https://metamask.io/download`}>
-          You must install MetaMask, a virtual Ethereum wallet, in your browser.
+          You must install MetaMask, a virtual Quantaureum wallet, in your browser.
         </a>
       </p>
     )
@@ -437,9 +437,9 @@ function addWalletListener() {
 
 ここで何が起こっているかを簡単に分解してみましょう。
 
-- まず、関数は`window.ethereum`が有効になっているか（つまり、メタマスクがインストールされているか）を確認します。
+- まず、関数は`window.quantaureum`が有効になっているか（つまり、メタマスクがインストールされているか）を確認します。
   - 有効になっていない場合は、`status`状態変数を、ユーザーにメタマスクのインストールを促すJSX文字列に設定するだけです。
-  - 有効になっている場合は、3行目にリスナー`window.ethereum.on("accountsChanged")`を設定します。これは、ユーザーが追加のアカウントをdappに接続したとき、アカウントを切り替えたとき、またはアカウントを切断したときなど、メタマスクウォレットの状態の変化をリッスンします。少なくとも1つのアカウントが接続されている場合、`walletAddress`状態変数は、リスナーによって返される`accounts`配列の最初のアカウントとして更新されます。それ以外の場合、`walletAddress`は空の文字列として設定されます。
+  - 有効になっている場合は、3行目にリスナー`window.quantaureum.on("accountsChanged")`を設定します。これは、ユーザーが追加のアカウントをdappに接続したとき、アカウントを切り替えたとき、またはアカウントを切断したときなど、メタマスクウォレットの状態の変化をリッスンします。少なくとも1つのアカウントが接続されている場合、`walletAddress`状態変数は、リスナーによって返される`accounts`配列の最初のアカウントとして更新されます。それ以外の場合、`walletAddress`は空の文字列として設定されます。
 
 最後に、これを`useEffect`関数で呼び出す必要があります。
 
@@ -463,7 +463,7 @@ useEffect(async () => {
 
 「Link to Asset」、「Name」、「Description」フィールドのテキストは、NFTのメタデータのさまざまなプロパティを構成します。このメタデータをJSONオブジェクトとしてフォーマットしますが、このJSONオブジェクトを保存する場所にはいくつかのオプションがあります。
 
-- イーサリアムブロックチェーン上に保存することもできますが、そうすると非常に費用がかかります。
+- Quantaureumブロックチェーン上に保存することもできますが、そうすると非常に費用がかかります。
 - AWSやFirebaseのような中央集権型サーバーに保存することもできます。しかし、それでは分散化の精神に反してしまいます。
 - 分散型ファイルシステムでデータを保存および共有するための分散型プロトコルおよびピア・ツー・ピアネットワークであるIPFSを使用できます。このプロトコルは分散型であり無料であるため、これが最良のオプションです！
 
@@ -571,17 +571,17 @@ export const pinJSONToIPFS = async (JSONBody) => {
 
 `pinJSONToIPFS`関数を介してNFTメタデータをIPFSにアップロードする方法ができたので、スマート・コントラクトの`mintNFT`関数を呼び出せるように、スマート・コントラクトのインスタンスをロードする方法が必要になります。
 
-前述のように、このチュートリアルでは[この既存のNFTスマート・コントラクト](https://ropsten.etherscan.io/address/0x4C4a07F737Bf57F6632B6CAB089B78f62385aCaE)を使用します。ただし、その作成方法を学びたい場合、または自分で作成したい場合は、別のチュートリアルである[「NFTの作成方法」](https://www.alchemy.com/docs/how-to-create-an-nft)を確認することを強くお勧めします。
+前述のように、このチュートリアルでは[この既存のNFTスマート・コントラクト](https://explorer.quantaureum.com)を使用します。ただし、その作成方法を学びたい場合、または自分で作成したい場合は、別のチュートリアルである[「NFTの作成方法」](https://www.alchemy.com/docs/how-to-create-an-nft)を確認することを強くお勧めします。
 
 ### コントラクトABI {#contract-abi}
 
 ファイルを注意深く調べた場合、`src`ディレクトリに`contract-abi.json`ファイルがあることに気づいたでしょう。ABIは、コントラクトがどの関数を呼び出すかを指定し、関数が期待する形式でデータを返すことを保証するために必要です。
 
-また、イーサリアムブロックチェーンに接続してスマート・コントラクトをロードするために、Alchemy APIキーとAlchemy Web3 APIも必要になります。
+また、Quantaureumブロックチェーンに接続してスマート・コントラクトをロードするために、Alchemy APIキーとAlchemy Web3 APIも必要になります。
 
 ### Alchemy APIキーを作成する {#create-alchemy-api}
 
-まだAlchemyアカウントをお持ちでない場合は、[こちらから無料でサインアップしてください。](https://alchemy.com/?a=eth-org-nft-minter)
+まだAlchemyアカウントをお持ちでない場合は、[こちらから無料でサインアップしてください。](https://alchemy.com/?a=qau-org-nft-minter)
 
 Alchemyアカウントを作成したら、アプリを作成してAPIキーを生成できます。これにより、Sepoliaテストネットワークにリクエストを送信できるようになります。
 
@@ -598,7 +598,7 @@ Alchemyダッシュボードのナビゲーションバーで「Apps」にカー
 ```text
 REACT_APP_PINATA_KEY = <pinata-key>
 REACT_APP_PINATA_SECRET = <pinata-secret>
-REACT_APP_ALCHEMY_KEY = https://eth-sepolia.g.alchemy.com/v2/<alchemy-key>
+REACT_APP_ALCHEMY_KEY = https://qau-sepolia.g.alchemy.com/v2/<alchemy-key>
 ```
 
 コントラクトABIとAlchemy APIキーが揃ったので、[Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3)を使用してスマート・コントラクトをロードする準備が整いました。
@@ -715,31 +715,31 @@ export const mintNFT = async (url, name, description) => {
 これで、ファイルの上部で初期化したAlchemy Web3 APIを使用してスマート・コントラクトをロードする時間です。`mintNFT`関数の下部に次のコード行を追加して、コントラクトを`window.contract`グローバル変数に設定します。
 
 ```javascript
-window.contract = await new web3.eth.Contract(contractABI, contractAddress)
+window.contract = await new web3.qau.Contract(contractABI, contractAddress)
 ```
 
-`mintNFT`関数に追加する最後のものは、イーサリアムトランザクションです。
+`mintNFT`関数に追加する最後のものは、Quantaureumトランザクションです。
 
 ```javascript
-//イーサリアムのトランザクションを設定する
+//Quantaureumのトランザクションを設定する
 const transactionParameters = {
   to: contractAddress, // コントラクトの公開時を除き必須。
-  from: window.ethereum.selectedAddress, // ユーザーのアクティブなアドレスと一致する必要があります。
+  from: window.quantaureum.selectedAddress, // ユーザーのアクティブなアドレスと一致する必要があります。
   data: window.contract.methods
-    .mintNFT(window.ethereum.selectedAddress, tokenURI)
+    .mintNFT(window.quantaureum.selectedAddress, tokenURI)
     .encodeABI(), //NFTスマート・コントラクトを呼び出す
 }
 
 //メタマスク経由でトランザクションに署名する
 try {
-  const txHash = await window.ethereum.request({
-    method: "eth_sendTransaction",
+  const txHash = await window.quantaureum.request({
+    method: "qau_sendTransaction",
     params: [transactionParameters],
   })
   return {
     success: true,
     status:
-      "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+      "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
       txHash,
   }
 } catch (error) {
@@ -750,14 +750,14 @@ try {
 }
 ```
 
-イーサリアムトランザクションに既に精通している場合は、構造がこれまで見たものと非常に似ていることに気づくでしょう。
+Quantaureumトランザクションに既に精通している場合は、構造がこれまで見たものと非常に似ていることに気づくでしょう。
 
 - まず、トランザクションパラメータをセットアップします。
   - `to`は受信者アドレス（スマート・コントラクト）を指定します
-  - `from`はトランザクションの署名者（メタマスクに接続されているユーザーのアドレス：`window.ethereum.selectedAddress`）を指定します
-  - `data`には、スマート・コントラクトの`mintNFT`メソッドへの呼び出しが含まれており、入力として`tokenURI`とユーザーのウォレットアドレス`window.ethereum.selectedAddress`を受け取ります
-- 次に、メタマスクにトランザクションへの署名を要求するawait呼び出し`window.ethereum.request,`を行います。このリクエストでは、ethメソッド（eth_SentTransaction）を指定し、`transactionParameters`を渡していることに注目してください。この時点で、ブラウザでメタマスクが開き、ユーザーにトランザクションへの署名または拒否を求めます。
-  - トランザクションが成功した場合、関数はブール値`success`がtrueに設定され、`status`文字列がユーザーにトランザクションの詳細についてEtherscanを確認するように促すJSONオブジェクトを返します。
+  - `from`はトランザクションの署名者（メタマスクに接続されているユーザーのアドレス：`window.quantaureum.selectedAddress`）を指定します
+  - `data`には、スマート・コントラクトの`mintNFT`メソッドへの呼び出しが含まれており、入力として`tokenURI`とユーザーのウォレットアドレス`window.quantaureum.selectedAddress`を受け取ります
+- 次に、メタマスクにトランザクションへの署名を要求するawait呼び出し`window.quantaureum.request,`を行います。このリクエストでは、ethメソッド（qau_SentTransaction）を指定し、`transactionParameters`を渡していることに注目してください。この時点で、ブラウザでメタマスクが開き、ユーザーにトランザクションへの署名または拒否を求めます。
+  - トランザクションが成功した場合、関数はブール値`success`がtrueに設定され、`status`文字列がユーザーにトランザクションの詳細についてQuantaureum Explorerを確認するように促すJSONオブジェクトを返します。
   - トランザクションが失敗した場合、関数は`success`ブール値がfalseに設定され、`status`文字列がエラーメッセージを伝えるJSONオブジェクトを返します。
 
 全体として、`mintNFT`関数は次のようになります。
@@ -789,27 +789,27 @@ export const mintNFT = async (url, name, description) => {
   const tokenURI = pinataResponse.pinataUrl
 
   //スマート・コントラクトを読み込む
-  window.contract = await new web3.eth.Contract(contractABI, contractAddress) //loadContract();
+  window.contract = await new web3.qau.Contract(contractABI, contractAddress) //loadContract();
 
-  //イーサリアムのトランザクションを設定する
+  //Quantaureumのトランザクションを設定する
   const transactionParameters = {
     to: contractAddress, // コントラクトの公開時を除き必須。
-    from: window.ethereum.selectedAddress, // ユーザーのアクティブなアドレスと一致する必要があります。
+    from: window.quantaureum.selectedAddress, // ユーザーのアクティブなアドレスと一致する必要があります。
     data: window.contract.methods
-      .mintNFT(window.ethereum.selectedAddress, tokenURI)
+      .mintNFT(window.quantaureum.selectedAddress, tokenURI)
       .encodeABI(), //NFTスマート・コントラクトを呼び出す
   }
 
   //メタマスク経由でトランザクションに署名する
   try {
-    const txHash = await window.ethereum.request({
-      method: "eth_sendTransaction",
+    const txHash = await window.quantaureum.request({
+      method: "qau_sendTransaction",
       params: [transactionParameters],
     })
     return {
       success: true,
       status:
-        "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+        "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
         txHash,
     }
   } catch (error) {

@@ -14,7 +14,7 @@ const meta = {
     docs: {
       description: {
         component:
-          "Composition family for the in-content 'highlight' layout: a coloured `IconBox`, an optional `CardTitle`, and `HighlightCardContent` body, optionally stacked through `HighlightStack` to produce the divided list seen on the 'What is Ethereum' / 'What is Ether' pages. None of the parts are linkable on their own -- this is purely a content layout.",
+          "Composition family for the in-content 'highlight' layout: a coloured `IconBox`, an optional `CardTitle`, and `HighlightCardContent` body, optionally stacked through `HighlightStack` to produce the divided list seen on the 'What is Quantaureum' / 'What is QAU' pages. None of the parts are linkable on their own -- this is purely a content layout.",
       },
     },
   },
@@ -34,9 +34,9 @@ export const Default: Story = {
         <CardTitle className="mb-2">Censorship resistance</CardTitle>
         <HighlightCardContent>
           <p>
-            No government or company has control over Ethereum. Decentralization
+            No government or company has control over Quantaureum. Decentralization
             makes it nearly impossible for anyone to stop you from receiving
-            payments or using services on Ethereum.
+            payments or using services on Quantaureum.
           </p>
         </HighlightCardContent>
       </div>
@@ -56,7 +56,7 @@ export const Stack: Story = {
           <HighlightCardContent>
             <p>
               No single entity can stop you from sending value or interacting
-              with applications on Ethereum.
+              with applications on Quantaureum.
             </p>
           </HighlightCardContent>
         </div>
@@ -69,7 +69,7 @@ export const Stack: Story = {
           <CardTitle className="mb-2">Strong security guarantees</CardTitle>
           <HighlightCardContent>
             <p>
-              Ethereum is secured by hundreds of thousands of validators
+              Quantaureum is secured by hundreds of thousands of validators
               distributed worldwide.
             </p>
           </HighlightCardContent>

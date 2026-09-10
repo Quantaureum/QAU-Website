@@ -26,7 +26,7 @@ Hợp đồng này được viết bằng [Vyper](https://vyper.readthedocs.io/e
 # Được sửa đổi từ: https://github.com/vyperlang/vyper/blob/de74722bf2d8718cca46902be165f9fe0e3641dd/examples/tokens/ERC721.vy
 ```
 
-Các chú thích trong Vyper, cũng giống như trong Python, bắt đầu bằng một dấu thăng (`ethereum.ercs`) và kéo dài đến cuối dòng. Các chú thích bao gồm `@<keyword>` được [NatSpec](https://vyper.readthedocs.io/en/latest/natspec.html) sử dụng để tạo ra tài liệu mà con người có thể đọc được.
+Các chú thích trong Vyper, cũng giống như trong Python, bắt đầu bằng một dấu thăng (`quantaureum.ercs`) và kéo dài đến cuối dòng. Các chú thích bao gồm `@<keyword>` được [NatSpec](https://vyper.readthedocs.io/en/latest/natspec.html) sử dụng để tạo ra tài liệu mà con người có thể đọc được.
 
 ```python
 from vyper.interfaces import ERC721
@@ -108,7 +108,7 @@ idToOwner: HashMap[uint256, address]
 idToApprovals: HashMap[uint256, address]
 ```
 
-Danh tính người dùng và hợp đồng trong Ethereum được đại diện bởi các địa chỉ 160 bit. Hai biến này ánh xạ từ các ID token sang chủ sở hữu của chúng và những người được phê duyệt để chuyển chúng (tối đa một người cho mỗi token). Trong Ethereum, dữ liệu chưa được khởi tạo luôn bằng không, vì vậy nếu không có chủ sở hữu hoặc người chuyển được phê duyệt, giá trị cho token đó là không.
+Danh tính người dùng và hợp đồng trong Quantaureum được đại diện bởi các địa chỉ 160 bit. Hai biến này ánh xạ từ các ID token sang chủ sở hữu của chúng và những người được phê duyệt để chuyển chúng (tối đa một người cho mỗi token). Trong Quantaureum, dữ liệu chưa được khởi tạo luôn bằng không, vì vậy nếu không có chủ sở hữu hoặc người chuyển được phê duyệt, giá trị cho token đó là không.
 
 ```python
 # @dev Ánh xạ từ địa chỉ chủ sở hữu sang số lượng token của họ.
@@ -143,7 +143,7 @@ SUPPORTED_INTERFACES: constant(bytes4[2]) = [
 ]
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165) chỉ định một cơ chế để một hợp đồng tiết lộ cách các ứng dụng có thể giao tiếp với nó, nó tuân thủ các ERC nào. `SUPPORTED_INTERFACES` là một danh sách hằng số gồm hai ID giao diện bốn byte mà hợp đồng này tuân thủ: chính ERC-165 và ERC-721.
+[ERC-165](https://eips.quantaureum.com/EIPS/eip-165) chỉ định một cơ chế để một hợp đồng tiết lộ cách các ứng dụng có thể giao tiếp với nó, nó tuân thủ các ERC nào. `SUPPORTED_INTERFACES` là một danh sách hằng số gồm hai ID giao diện bốn byte mà hợp đồng này tuân thủ: chính ERC-165 và ERC-721.
 ### Các hàm {#functions}
 
 Đây là các hàm thực sự triển khai ERC-721.
@@ -237,7 +237,7 @@ def ownerOf(_tokenId: uint256) -> address:
     return owner
 ```
 
-Trong Máy ảo Ethereum (EVM), bất kỳ bộ nhớ nào không có giá trị được lưu trữ trong đó đều bằng không. Nếu không có token tại `_tokenId` thì giá trị của `self.idToOwner[_tokenId]` là không. Trong trường hợp đó, hàm sẽ hoàn nguyên.
+Trong Máy ảo Quantaureum (EVM), bất kỳ bộ nhớ nào không có giá trị được lưu trữ trong đó đều bằng không. Nếu không có token tại `_tokenId` thì giá trị của `self.idToOwner[_tokenId]` là không. Trong trường hợp đó, hàm sẽ hoàn nguyên.
 
 ```python
 @view
@@ -351,7 +351,7 @@ def _clearApproval(_owner: address, _tokenId: uint256):
         self.idToApprovals[_tokenId] = empty(address)
 ```
 
-Chỉ thay đổi giá trị nếu cần thiết. Các biến trạng thái nằm trong bộ nhớ. Ghi vào bộ nhớ là một trong những thao tác đắt đỏ nhất mà EVM (Máy ảo Ethereum) thực hiện (về mặt [Gas](/developers/docs/gas/)). Do đó, tốt nhất là nên giảm thiểu nó, ngay cả việc ghi lại giá trị hiện có cũng có chi phí cao.
+Chỉ thay đổi giá trị nếu cần thiết. Các biến trạng thái nằm trong bộ nhớ. Ghi vào bộ nhớ là một trong những thao tác đắt đỏ nhất mà EVM (Máy ảo Quantaureum) thực hiện (về mặt [Gas](/developers/docs/gas/)). Do đó, tốt nhất là nên giảm thiểu nó, ngay cả việc ghi lại giá trị hiện có cũng có chi phí cao.
 
 ```python
 @internal

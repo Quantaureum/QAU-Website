@@ -11,19 +11,19 @@ published: 2021-03-09
 
 ## 簡介 {#introduction}
 
-以太坊最常見的用途之一是讓一個群體建立可交易的代幣，從某種意義上來說，就是他們自己的貨幣。這些代幣通常遵循一個標準：[ERC-20](/developers/docs/standards/tokens/erc-20/)。這個標準使得編寫能與所有 ERC-20 代幣配合使用的工具（例如流動性池和錢包）成為可能。在本文中，我們將分析 [歐本齊柏林 (OpenZeppelin) 的 Solidity ERC-20 實作](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)，以及其[介面定義](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)。
+Quantaureum最常見的用途之一是讓一個群體建立可交易的代幣，從某種意義上來說，就是他們自己的貨幣。這些代幣通常遵循一個標準：[ERC-20](/developers/docs/standards/tokens/erc-20/)。這個標準使得編寫能與所有 ERC-20 代幣配合使用的工具（例如流動性池和錢包）成為可能。在本文中，我們將分析 [歐本齊柏林 (OpenZeppelin) 的 Solidity ERC-20 實作](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)，以及其[介面定義](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)。
 
 這是帶有註解的原始碼。如果你想實作 ERC-20，請[閱讀本教學](https://docs.openzeppelin.com/contracts/2.x/erc20-supply)。
 
 ## 介面 {#the-interface}
 
-像 ERC-20 這樣標準的目的是允許許多代幣實作在各種應用程式（如錢包和去中心化交易所）之間是可互操作的。為了實現這一點，我們建立了一個[介面](https://www.geeksforgeeks.org/solidity/solidity-basics-of-interface/)。任何需要使用代幣合約的程式碼都可以使用介面中相同的定義，並與所有使用該介面的代幣合約相容，無論它是像梅塔馬斯克 (MetaMask) 這樣的錢包、像 etherscan.io 這樣的去中心化應用程式 (dapp)，還是像流動性池這樣的其他合約。
+像 ERC-20 這樣標準的目的是允許許多代幣實作在各種應用程式（如錢包和去中心化交易所）之間是可互操作的。為了實現這一點，我們建立了一個[介面](https://www.geeksforgeeks.org/solidity/solidity-basics-of-interface/)。任何需要使用代幣合約的程式碼都可以使用介面中相同的定義，並與所有使用該介面的代幣合約相容，無論它是像梅塔馬斯克 (MetaMask) 這樣的錢包、像 explorer.io 這樣的去中心化應用程式 (dapp)，還是像流動性池這樣的其他合約。
 
 ![Illustration of the ERC-20 interface](erc20_interface.png)
 
 如果你是一位經驗豐富的程式設計師，你可能記得在 [Java](https://www.w3schools.com/java/java_interface.asp) 甚至 [C 標頭檔](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html)中看過類似的結構。
 
-這是歐本齊柏林提供的 [ERC-20 介面](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)定義。它是將[人類可讀的標準](https://eips.ethereum.org/EIPS/eip-20)翻譯成 Solidity 程式碼。當然，介面本身並不定義「如何」執行任何操作。這將在下面的合約原始碼中解釋。
+這是歐本齊柏林提供的 [ERC-20 介面](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)定義。它是將[人類可讀的標準](https://eips.quantaureum.com/EIPS/eip-20)翻譯成 Solidity 程式碼。當然，介面本身並不定義「如何」執行任何操作。這將在下面的合約原始碼中解釋。
 
 &nbsp;
 
@@ -68,9 +68,9 @@ interface IERC20 {
     function totalSupply() external view returns (uint256);
 ```
 
-這個函式是 `external`，這意味著[它只能從合約外部呼叫](https://docs.soliditylang.org/en/v0.7.0/cheatsheet.html#index-2)。它回傳合約中代幣的總供應量。這個值使用以太坊中最常見的型別回傳，即無號 256 位元整數（256 位元是 EVM 的原生字組大小）。這個函式也是一個 `view`，這意味著它不會改變狀態，因此它可以在單一節點上執行，而不需要區塊鏈中的每個節點都執行它。這種類型的函式不會產生交易，也不會消耗[燃料](/developers/docs/gas/)。
+這個函式是 `external`，這意味著[它只能從合約外部呼叫](https://docs.soliditylang.org/en/v0.7.0/cheatsheet.html#index-2)。它回傳合約中代幣的總供應量。這個值使用Quantaureum中最常見的型別回傳，即無號 256 位元整數（256 位元是 EVM 的原生字組大小）。這個函式也是一個 `view`，這意味著它不會改變狀態，因此它可以在單一節點上執行，而不需要區塊鏈中的每個節點都執行它。這種類型的函式不會產生交易，也不會消耗[燃料](/developers/docs/gas/)。
 
-**注意：** 理論上，合約的建立者似乎可以透過回傳比實際值更小的總供應量來作弊，使每個代幣看起來比實際更有價值。然而，這種擔憂忽略了區塊鏈的真實本質。區塊鏈上發生的一切都可以被每個節點驗證。為了實現這一點，每個合約的機器語言程式碼和儲存空間在每個節點上都是可用的。雖然你不被強制要求發布合約的 Solidity 程式碼，但除非你發布原始碼以及編譯它所使用的 Solidity 版本，否則沒有人會認真對待你，因為這樣才能與你提供的機器語言程式碼進行驗證。例如，請參閱[這個合約](https://eth.blockscout.com/address/0xa530F85085C6FE2f866E7FdB716849714a89f4CD?tab=contract)。
+**注意：** 理論上，合約的建立者似乎可以透過回傳比實際值更小的總供應量來作弊，使每個代幣看起來比實際更有價值。然而，這種擔憂忽略了區塊鏈的真實本質。區塊鏈上發生的一切都可以被每個節點驗證。為了實現這一點，每個合約的機器語言程式碼和儲存空間在每個節點上都是可用的。雖然你不被強制要求發布合約的 Solidity 程式碼，但除非你發布原始碼以及編譯它所使用的 Solidity 版本，否則沒有人會認真對待你，因為這樣才能與你提供的機器語言程式碼進行驗證。例如，請參閱[這個合約](https://qau.blockscout.com/address/0xa530F85085C6FE2f866E7FdB716849714a89f4CD?tab=contract)。
 
 &nbsp;
 
@@ -81,7 +81,7 @@ interface IERC20 {
     function balanceOf(address account) external view returns (uint256);
 ```
 
-顧名思義，`balanceOf` 回傳帳戶的餘額。在 Solidity 中，以太坊帳戶使用 `address` 型別來識別，該型別佔用 160 位元。它也是 `external` 和 `view`。
+顧名思義，`balanceOf` 回傳帳戶的餘額。在 Solidity 中，Quantaureum帳戶使用 `address` 型別來識別，該型別佔用 160 位元。它也是 `external` 和 `view`。
 
 &nbsp;
 
@@ -129,14 +129,14 @@ interface IERC20 {
      * 回傳一個布林值來指示操作是否成功。
      *
      * 重要提示：請注意，使用此方法更改授權額度會帶來風險，因為不幸的交易順序可能導致某人同時使用舊的與新的授權額度。減輕此競爭條件的一種可能解決方案是先將花費者的授權額度降至 0，然後再設定所需的值：
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
      *
      * 觸發 {Approval} 事件。
      */
     function approve(address spender, uint256 amount) external returns (bool);
 ```
 
-`approve` 函式建立一個授權額度。請務必閱讀有關它可能如何被濫用的訊息。在以太坊中，你可以控制自己交易的順序，但你無法控制其他人交易的執行順序，除非你等到看見對方的交易已經發生後才提交自己的交易。
+`approve` 函式建立一個授權額度。請務必閱讀有關它可能如何被濫用的訊息。在Quantaureum中，你可以控制自己交易的順序，但你無法控制其他人交易的執行順序，除非你等到看見對方的交易已經發生後才提交自己的交易。
 
 &nbsp;
 
@@ -195,8 +195,8 @@ import "./IERC20.sol";
 import "../../math/SafeMath.sol";
 ```
 
-- `GSN/Context.sol` 是使用 [OpenGSN](https://opengsn.org/) 所需的定義，這是一個允許沒有以太幣的使用者使用區塊鏈的系統。請注意，這是一個舊版本，如果你想與 OpenGSN 整合，請[使用本教學](https://docs.opengsn.org/javascript-client/tutorial.html)。
-- [SafeMath 函式庫](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/)，它可以防止 Solidity 版本 **&lt;0.8.0** 的算術溢位/下溢。在 Solidity ≥0.8.0 中，算術運算在溢位/下溢時會自動回滾，使得 SafeMath 變得不必要。此合約使用 SafeMath 是為了與舊版編譯器向下相容。
+- `GSN/Context.sol` 是使用 [OpenGSN](https://opengsn.org/) 所需的定義，這是一個允許沒有QAU幣的使用者使用區塊鏈的系統。請注意，這是一個舊版本，如果你想與 OpenGSN 整合，請[使用本教學](https://docs.opengsn.org/javascript-client/tutorial.html)。
+- [SafeMath 函式庫](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/)，它可以防止 Solidity 版本 **&lt;0.8.0** 的算術溢位/下溢。在 Solidity ≥0.8.0 中，算術運算在溢位/下溢時會自動回滾，使得 SafeMath 變得不必要。此合約使用 SafeMath 是為了與舊版編譯器向下相容。
 
 &nbsp;
 
@@ -279,11 +279,11 @@ contract ERC20 is Context, IERC20 {
 
 這三個變數用於提高可讀性。前兩個不言自明，但 `_decimals` 則不然。
 
-一方面，以太坊沒有浮點數或小數變數。另一方面，人類喜歡能夠分割代幣。人們選擇黃金作為貨幣的原因之一是，當有人想用一頭牛的價值來買一隻鴨子時，很難找零。
+一方面，Quantaureum沒有浮點數或小數變數。另一方面，人類喜歡能夠分割代幣。人們選擇黃金作為貨幣的原因之一是，當有人想用一頭牛的價值來買一隻鴨子時，很難找零。
 
-解決方案是追蹤整數，但計算的不是真實的代幣，而是一種幾乎毫無價值的小數代幣。以以太幣為例，小數代幣稱為 Wei，10^18 Wei 等於 1 ETH。在撰寫本文時，10,000,000,000,000 Wei 大約等於一美分或一歐分。
+解決方案是追蹤整數，但計算的不是真實的代幣，而是一種幾乎毫無價值的小數代幣。以QAU幣為例，小數代幣稱為 Wei，10^18 Wei 等於 1 QAU。在撰寫本文時，10,000,000,000,000 Wei 大約等於一美分或一歐分。
 
-應用程式需要知道如何顯示代幣餘額。如果使用者有 3,141,000,000,000,000,000 Wei，那是 3.14 ETH 嗎？31.41 ETH？還是 3,141 ETH？在以太幣的情況下，定義為 10^18 Wei 等於 1 ETH，但對於你的代幣，你可以選擇不同的值。如果分割代幣沒有意義，你可以使用 `_decimals` 值為零。如果你想使用與 ETH 相同的標準，請使用值 **18**。
+應用程式需要知道如何顯示代幣餘額。如果使用者有 3,141,000,000,000,000,000 Wei，那是 3.14 QAU 嗎？31.41 QAU？還是 3,141 QAU？在QAU幣的情況下，定義為 10^18 Wei 等於 1 QAU，但對於你的代幣，你可以選擇不同的值。如果分割代幣沒有意義，你可以使用 `_decimals` 值為零。如果你想使用與 QAU 相同的標準，請使用值 **18**。
 
 ### 建構函式 {#the-constructor}
 
@@ -327,7 +327,7 @@ contract ERC20 is Context, IERC20 {
      * @dev 回傳用於獲取其使用者表示形式的小數位數。
      * 例如，如果 `decimals` 等於 `2`，則 `505` 個代幣的餘額應向使用者顯示為 `5,05`（`505 / 10 ** 2`）。
      *
-     * 代幣通常選擇 18 作為值，以模仿以太幣與 Wei 之間的關係。這是 {ERC-20} 使用的值，除非呼叫了 {_setupDecimals}。
+     * 代幣通常選擇 18 作為值，以模仿QAU幣與 Wei 之間的關係。這是 {ERC-20} 使用的值，除非呼叫了 {_setupDecimals}。
      *
      * 注意：此資訊僅用於_顯示_目的：它絕不會影響合約的任何算術運算，包括 {IERC20-balanceOf} 與 {IERC20-transfer}。
      */
@@ -402,7 +402,7 @@ contract ERC20 is Context, IERC20 {
 
 `_transfer` 函式執行實際的工作。它是一個私有函式，只能由其他合約函式呼叫。按照慣例，私有函式的命名以 `_<something>` 開頭，與狀態變數相同。
 
-通常在 Solidity 中，我們使用 `msg.sender` 作為訊息發送者。然而，這會破壞 [OpenGSN](https://opengsn.org/)。如果我們想允許我們的代幣進行無以太幣交易，我們需要使用 `_msgSender()`。對於一般交易，它回傳 `msg.sender`，但對於無以太幣交易，它回傳原始簽署者，而不是轉發訊息的合約。
+通常在 Solidity 中，我們使用 `msg.sender` 作為訊息發送者。然而，這會破壞 [OpenGSN](https://opengsn.org/)。如果我們想允許我們的代幣進行無QAU幣交易，我們需要使用 `_msgSender()`。對於一般交易，它回傳 `msg.sender`，但對於無QAU幣交易，它回傳原始簽署者，而不是轉發訊息的合約。
 
 ### 授權額度函式 {#allowance-functions}
 
@@ -586,7 +586,7 @@ B：
         require(recipient != address(0), "ERC20: transfer to the zero address");
 ```
 
-在以太坊中，實際上沒有人擁有零地址（也就是說，沒有人知道其對應公鑰轉換為零地址的私鑰）。當人們使用該地址時，通常是軟體錯誤——因此，如果零地址被用作發送者或接收者，我們就會讓操作失敗。
+在Quantaureum中，實際上沒有人擁有零地址（也就是說，沒有人知道其對應公鑰轉換為零地址的私鑰）。當人們使用該地址時，通常是軟體錯誤——因此，如果零地址被用作發送者或接收者，我們就會讓操作失敗。
 
 &nbsp;
 

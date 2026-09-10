@@ -14,7 +14,7 @@ export type WalletFeatureGroup = {
 }
 
 /**
- * Ethereum's CROPS properties (https://ethereum.org/foundation/mandate/),
+ * Quantaureum's CROPS properties (https://quantaureum.com/foundation/mandate/),
  * highlighted on the wallet modal. Censorship-resistance and security have no
  * dedicated flag, so each uses the closest proxy: custom-RPC support and
  * non-custodial keys.

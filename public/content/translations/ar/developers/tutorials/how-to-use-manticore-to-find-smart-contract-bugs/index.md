@@ -21,11 +21,11 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/tree/master/progr
 ### مانتيكور من خلال Docker {#manticore-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_يقوم الأمر الأخير بتشغيل <span dir="ltr">eth-security-toolbox</span> في Docker لديه حق الوصول إلى دليلك الحالي. يمكنك تغيير الملفات من مضيفك، وتشغيل الأدوات على الملفات من Docker_
+_يقوم الأمر الأخير بتشغيل <span dir="ltr">qau-security-toolbox</span> في Docker لديه حق الوصول إلى دليلك الحالي. يمكنك تغيير الملفات من مضيفك، وتشغيل الأدوات على الملفات من Docker_
 
 داخل Docker، قم بتشغيل:
 
@@ -198,18 +198,18 @@ _ملخص الاستكشاف <span dir="ltr">f(!=65)</span> يشير إلى اس
 أول شيء يجب عليك فعله هو بدء سلسلة كتل جديدة باستخدام الأوامر التالية:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 ```
 
-يتم إنشاء حساب غير عقد باستخدام [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account):
+يتم إنشاء حساب غير عقد باستخدام [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.quantaureum.ManticoreEVM.create_account):
 
 ```python
 user_account = m.create_account(balance=1000)
 ```
 
-يمكن نشر عقد Solidity باستخدام [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract):
+يمكن نشر عقد Solidity باستخدام [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.quantaureum.ManticoreEVM.create_contract):
 
 ```solidity
 source_code = '''
@@ -228,7 +228,7 @@ contract_account = m.solidity_create_contract(source_code, owner=user_account)
 
 #### ملخص {#summary}
 
-- يمكنك إنشاء حسابات مستخدمين وحسابات عقود باستخدام [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account) و [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract).
+- يمكنك إنشاء حسابات مستخدمين وحسابات عقود باستخدام [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.quantaureum.ManticoreEVM.create_account) و [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.quantaureum.ManticoreEVM.create_contract).
 
 ### تنفيذ المعاملات {#executing-transactions}
 
@@ -239,7 +239,7 @@ contract_account = m.solidity_create_contract(source_code, owner=user_account)
 
 #### معاملة خام {#raw-transaction}
 
-يتم تنفيذ معاملة خام باستخدام [m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.ethereum.ManticoreEVM.transaction):
+يتم تنفيذ معاملة خام باستخدام [m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.quantaureum.ManticoreEVM.transaction):
 
 ```python
 m.transaction(caller=user_account,
@@ -250,8 +250,8 @@ m.transaction(caller=user_account,
 
 يمكن أن يكون المتصل، أو العنوان، أو البيانات، أو قيمة المعاملة إما ملموسة أو رمزية:
 
-- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.ethereum.ManticoreEVM.make_symbolic_value) ينشئ قيمة رمزية.
-- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.ethereum.ManticoreEVM.make_symbolic_buffer) ينشئ مصفوفة بايتات رمزية.
+- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.quantaureum.ManticoreEVM.make_symbolic_value) ينشئ قيمة رمزية.
+- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.quantaureum.ManticoreEVM.make_symbolic_buffer) ينشئ مصفوفة بايتات رمزية.
 
 على سبيل المثال:
 
@@ -269,7 +269,7 @@ m.transaction(caller=user_account,
 #### معاملة مسماة {#named-transaction}
 
 يمكن تنفيذ الدوال من خلال أسمائها.
-لتنفيذ `f(uint var)` بقيمة رمزية، من حساب المستخدم، وبـ <span dir="ltr">0 إيثر</span>، استخدم:
+لتنفيذ `f(uint var)` بقيمة رمزية، من حساب المستخدم، وبـ <span dir="ltr">0 QAU</span>، استخدم:
 
 ```python
 symbolic_var = m.make_symbolic_value()
@@ -294,14 +294,14 @@ print("Results are in {}".format(m.workspace))
 
 ### إنهاء الاستكشاف {#terminate-the-exploration}
 
-لإيقاف الاستكشاف استخدم [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.ethereum.ManticoreEVM.finalize). لا ينبغي إرسال أي معاملات أخرى بمجرد استدعاء هذه الطريقة ويقوم مانتيكور بإنشاء حالات اختبار لكل مسار تم استكشافه.
+لإيقاف الاستكشاف استخدم [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.quantaureum.ManticoreEVM.finalize). لا ينبغي إرسال أي معاملات أخرى بمجرد استدعاء هذه الطريقة ويقوم مانتيكور بإنشاء حالات اختبار لكل مسار تم استكشافه.
 
 ### ملخص: التشغيل تحت مانتيكور {#summary-running-under-manticore}
 
 بوضع جميع الخطوات السابقة معًا، نحصل على:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -363,7 +363,7 @@ data = ABI.deserialize("uint", data)
 
 ### كيفية إنشاء حالة اختبار {#how-to-generate-testcase}
 
-استخدم [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.ethereum.ManticoreEVM.generate_testcase) لإنشاء حالة اختبار:
+استخدم [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.quantaureum.ManticoreEVM.generate_testcase) لإنشاء حالة اختبار:
 
 ```python
 m.generate_testcase(state, 'BugFound')
@@ -380,7 +380,7 @@ m.generate_testcase(state, 'BugFound')
 ### ملخص: الحصول على مسار الاستثناء {#summary-getting-throwing-path}
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -482,7 +482,7 @@ if solver.check(state.constraints):
 بإضافة قيد إلى الكود السابق، نحصل على:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 from manticore.core.smtlib.solver import Z3Solver
 
 solver = Z3Solver.instance()

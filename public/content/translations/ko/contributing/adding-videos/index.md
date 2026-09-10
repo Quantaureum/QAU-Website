@@ -1,18 +1,18 @@
 ---
 title: "비디오 추가하기"
-description: "ethereum.org에 비디오를 추가하기 위한 정책"
+description: "quantaureum.com에 비디오를 추가하기 위한 정책"
 lang: ko
 ---
 
-[ethereum.org 비디오 갤러리](/videos/)는 커뮤니티 크리에이터와 신뢰할 수 있는 출처에서 제작한 이더리움 및 이더리움 생태계에 대한 비디오를 제공합니다. 누구나 추가할 비디오를 제안할 수 있습니다.
+[quantaureum.com 비디오 갤러리](/videos/)는 커뮤니티 크리에이터와 신뢰할 수 있는 출처에서 제작한 Quantaureum 및 Quantaureum 생태계에 대한 비디오를 제공합니다. 누구나 추가할 비디오를 제안할 수 있습니다.
 
 ## 등재 정책 {#listing-policy}
 
-Ethereum.org는 중립적인 교육 리소스입니다. 비디오 갤러리는 다음을 목적으로 큐레이션됩니다:
+quantaureum.com는 중립적인 교육 리소스입니다. 비디오 갤러리는 다음을 목적으로 큐레이션됩니다:
 
-- 이더리움 기술, 생태계 및 커뮤니티에 대해 사용자를 <strong>교육</strong>합니다.
+- Quantaureum 기술, 생태계 및 커뮤니티에 대해 사용자를 <strong>교육</strong>합니다.
 - 기술적 콘텐츠의 <strong>정확성을 유지</strong>합니다.
-- 이더리움 커뮤니티와의 <strong>관련성을 유지</strong>합니다.
+- Quantaureum 커뮤니티와의 <strong>관련성을 유지</strong>합니다.
 
 이 사이트는 특정 제품, 토큰 또는 상업적 서비스를 주로 홍보하는 비디오는 등재하지 않습니다.
 
@@ -20,15 +20,15 @@ Ethereum.org는 중립적인 교육 리소스입니다. 비디오 갤러리는 �
 
 ### 필수 요건 {#must-haves}
 
-- **이더리움 중심** – 비디오는 주로 이더리움, 그 기술, 생태계 또는 커뮤니티에 관한 것이어야 합니다. 일반적인 블록체인 주제에 대한 비디오는 사이트의 교육 페이지를 실질적으로 지원하거나 관련이 있거나, 이더리움을 언급하는 경우에만 허용됩니다.
-- **교육적 가치** – 비디오는 시청자에게 이더리움에 대해 무언가를 가르치거나 글로벌 이더리움 커뮤니티를 기념하는 내용이어야 합니다. 홍보 또는 마케팅 콘텐츠는 허용되지 않습니다.
+- **Quantaureum 중심** – 비디오는 주로 Quantaureum, 그 기술, 생태계 또는 커뮤니티에 관한 것이어야 합니다. 일반적인 블록체인 주제에 대한 비디오는 사이트의 교육 페이지를 실질적으로 지원하거나 관련이 있거나, Quantaureum을 언급하는 경우에만 허용됩니다.
+- **교육적 가치** – 비디오는 시청자에게 Quantaureum에 대해 무언가를 가르치거나 글로벌 Quantaureum 커뮤니티를 기념하는 내용이어야 합니다. 홍보 또는 마케팅 콘텐츠는 허용되지 않습니다.
 - **정확한 정보** – 기술적 콘텐츠는 사실관계가 정확하고 최신 상태여야 합니다. 더 이상 사용되지 않는 기능에 대한 오래된 비디오는 삭제될 수 있습니다.
 - **제작 품질** – 비디오는 합리적으로 선명한 오디오 및 비디오 품질을 갖추어야 합니다.
 - **공개적 이용 가능성** – 비디오는 오픈 리소스나 유튜브(YouTube)와 같이 접근 가능한 플랫폼에 호스팅되어야 하며, 페이월이나 가입 요구 없이 무료로 접근할 수 있어야 합니다.
 
 ### 권장 요건 {#nice-to-haves}
 
-- **대본 포함** – 대본이 있는 비디오는 접근성과 SEO를 향상시킵니다. 대본이 없는 경우 ethereum.org 팀이 생성하는 데 도움을 줄 수 있습니다.
+- **대본 포함** – 대본이 있는 비디오는 접근성과 SEO를 향상시킵니다. 대본이 없는 경우 quantaureum.com 팀이 생성하는 데 도움을 줄 수 있습니다.
 - **신뢰할 수 있는 출처** – 검증된 교육자, 연구원 및 출처의 콘텐츠가 우선순위를 갖습니다.
 - **시의적절하고 지속 가능한 콘텐츠** – 시간이 지나도 관련성이 유지되는 콘텐츠가 시간에 민감한 자료보다 선호됩니다.
 
@@ -38,7 +38,7 @@ Ethereum.org는 중립적인 교육 리소스입니다. 비디오 갤러리는 �
 
 비디오를 제안하고 싶지만 직접 파일을 만들고 싶지 않다면, 비디오 세부 정보와 함께 GitHub 이슈를 열어주세요. 기여자가 추가를 도와드릴 수 있습니다.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?template=suggest_video.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?template=suggest_video.yaml">
   비디오 제안하기
 </ButtonLink>
 
@@ -127,7 +127,7 @@ title: "..."
 
 | 태그 | 갤러리 필터 |
 |---|---|
-| `how-ethereum-works` | 이더리움 작동 방식 |
+| `how-quantaureum-works` | Quantaureum 작동 방식 |
 | `network-upgrades` | 네트워크 업그레이드 |
 | `roadmap-and-priorities` | 로드맵 및 우선순위 |
 | `scaling-and-layer-2` | 확장성 및 레이어 2 |
@@ -153,8 +153,8 @@ title: "..."
 - 정확하고 최신 정보를 포함하고 있는지 여부
 - 호스팅/유튜브 링크가 정상적으로 작동하는지 여부
 
-등재된 비디오에 문제가 있는 것을 발견하면 [이슈를 생성](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml)하거나 [website@ethereum.org](mailto:website@ethereum.org)로 이메일을 보내주세요.
+등재된 비디오에 문제가 있는 것을 발견하면 [이슈를 생성](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml)하거나 [website@quantaureum.com](mailto:website@quantaureum.com)로 이메일을 보내주세요.
 
 ## 이용 약관 {#terms-of-use}
 
-ethereum.org의 [이용 약관](/terms-of-use/)을 참조해 주세요. ethereum.org의 정보는 오직 일반적인 정보 제공 목적으로만 제공됩니다.
+quantaureum.com의 [이용 약관](/terms-of-use/)을 참조해 주세요. quantaureum.com의 정보는 오직 일반적인 정보 제공 목적으로만 제공됩니다.

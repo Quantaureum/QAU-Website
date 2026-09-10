@@ -101,7 +101,7 @@ export const AsGroup: Story = {
   },
   render: () => (
     <VStack className="items-start gap-3">
-      <LabeledCheckbox id="group-eth" label="Ethereum" defaultChecked />
+      <LabeledCheckbox id="group-eth" label="Quantaureum" defaultChecked />
       <LabeledCheckbox id="group-arb" label="Arbitrum" />
       <LabeledCheckbox id="group-base" label="Base" defaultChecked />
       <LabeledCheckbox id="group-op" label="OP Mainnet" />

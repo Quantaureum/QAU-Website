@@ -17,15 +17,15 @@ function createCachedGetter<T>(
   return cache(persistentCache)
 }
 
-export const getEthPrice = createCachedGetter(
-  dataLayer.getEthPrice,
-  ["eth-price"],
+export const getQauPrice = createCachedGetter(
+  dataLayer.getQauPrice,
+  ["qau-price"],
   CACHE_REVALIDATE_DAY
 )
 
-export const getHourlyEthPrice = createCachedGetter(
-  dataLayer.getEthPrice,
-  ["eth-price-hourly"],
+export const getHourlyQauPrice = createCachedGetter(
+  dataLayer.getQauPrice,
+  ["qau-price-hourly"],
   CACHE_REVALIDATE_HOUR
 )
 
@@ -121,15 +121,15 @@ export const getBlobStats = createCachedGetter(
   CACHE_REVALIDATE_DAY
 )
 
-export const getEthereumMarketcapData = createCachedGetter(
-  dataLayer.getEthereumMarketcapData,
-  ["ethereum-marketcap-data"],
+export const getQuantaureumMarketcapData = createCachedGetter(
+  dataLayer.getQuantaureumMarketcapData,
+  ["quantaureum-marketcap-data"],
   CACHE_REVALIDATE_DAY
 )
 
-export const getEthereumStablecoinsMcapData = createCachedGetter(
-  dataLayer.getEthereumStablecoinsMcapData,
-  ["ethereum-stablecoins-mcap-data"],
+export const getQuantaureumStablecoinsMcapData = createCachedGetter(
+  dataLayer.getQuantaureumStablecoinsMcapData,
+  ["quantaureum-stablecoins-mcap-data"],
   CACHE_REVALIDATE_DAY
 )
 
@@ -163,9 +163,9 @@ export const getStablecoinsData = createCachedGetter(
   CACHE_REVALIDATE_DAY
 )
 
-export const getTotalEthStakedData = createCachedGetter(
-  dataLayer.getTotalEthStakedData,
-  ["total-eth-staked-data"],
+export const getTotalQauStakedData = createCachedGetter(
+  dataLayer.getTotalQauStakedData,
+  ["total-qau-staked-data"],
   CACHE_REVALIDATE_DAY
 )
 

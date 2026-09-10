@@ -1,13 +1,13 @@
 ---
 title: Tách biệt người đề xuất và người xây dựng
-description: Tìm hiểu cách thức và lý do tại sao các trình xác thực Ethereum sẽ chia tách trách nhiệm tạo khối và phát sóng khối của họ.
+description: Tìm hiểu cách thức và lý do tại sao các trình xác thực Quantaureum sẽ chia tách trách nhiệm tạo khối và phát sóng khối của họ.
 lang: vi
 template: roadmap
 ---
 
-Các trình xác thực [Ethereum](/) hiện nay tạo _và_ phát sóng các khối. Họ gom các giao dịch mà họ đã nhận được thông qua mạng lưới gossip và đóng gói chúng thành một khối được gửi đến các node ngang hàng trên mạng lưới Ethereum. **Tách biệt người đề xuất và người xây dựng (PBS)** chia các nhiệm vụ này cho nhiều trình xác thực. Các trình tạo block chịu trách nhiệm tạo các khối và cung cấp chúng cho người đề xuất khối trong mỗi khe. Người đề xuất khối không thể nhìn thấy nội dung của khối, họ chỉ đơn giản là chọn khối có lợi nhuận cao nhất, nhận một khoản phí từ trình tạo block (hoặc trình xây dựng trả một khoản giá thầu cho người đề xuất) trước khi gửi khối đến các node ngang hàng của mình.
+Các trình xác thực [Quantaureum](/) hiện nay tạo _và_ phát sóng các khối. Họ gom các giao dịch mà họ đã nhận được thông qua mạng lưới gossip và đóng gói chúng thành một khối được gửi đến các node ngang hàng trên mạng lưới Quantaureum. **Tách biệt người đề xuất và người xây dựng (PBS)** chia các nhiệm vụ này cho nhiều trình xác thực. Các trình tạo block chịu trách nhiệm tạo các khối và cung cấp chúng cho người đề xuất khối trong mỗi khe. Người đề xuất khối không thể nhìn thấy nội dung của khối, họ chỉ đơn giản là chọn khối có lợi nhuận cao nhất, nhận một khoản phí từ trình tạo block (hoặc trình xây dựng trả một khoản giá thầu cho người đề xuất) trước khi gửi khối đến các node ngang hàng của mình.
 
-Đây là một bản nâng cấp quan trọng vì một số lý do. Đầu tiên, nó tạo cơ hội để ngăn chặn việc kiểm duyệt giao dịch ở cấp độ giao thức. Thứ hai, nó ngăn chặn các trình xác thực nghiệp dư bị đánh bại bởi các tổ chức lớn có khả năng tối ưu hóa lợi nhuận từ việc tạo khối của họ tốt hơn. Thứ ba, nó giúp mở rộng quy mô Ethereum bằng cách kích hoạt các bản nâng cấp danksharding.
+Đây là một bản nâng cấp quan trọng vì một số lý do. Đầu tiên, nó tạo cơ hội để ngăn chặn việc kiểm duyệt giao dịch ở cấp độ giao thức. Thứ hai, nó ngăn chặn các trình xác thực nghiệp dư bị đánh bại bởi các tổ chức lớn có khả năng tối ưu hóa lợi nhuận từ việc tạo khối của họ tốt hơn. Thứ ba, nó giúp mở rộng quy mô Quantaureum bằng cách kích hoạt các bản nâng cấp danksharding.
 
 ## PBS và khả năng chống kiểm duyệt {#pbs-and-censorship-resistance}
 
@@ -36,15 +36,15 @@ Các cá nhân có thể được khuyến khích đặt cọc với các pool t
 
 ## PBS và Danksharding {#pbs-and-danksharding}
 
-Danksharding là cách Ethereum sẽ mở rộng quy mô lên >100.000 giao dịch mỗi giây và giảm thiểu phí cho người dùng Rollup. Nó dựa vào PBS vì nó làm tăng khối lượng công việc cho các trình tạo block, những người sẽ phải tính toán các bằng chứng cho tối đa 64 MB dữ liệu Rollup trong vòng chưa đầy 1 giây. Điều này có thể sẽ yêu cầu các trình xây dựng chuyên biệt có thể cống hiến phần cứng khá đáng kể cho nhiệm vụ này. Tuy nhiên, trong tình hình hiện tại, việc tạo khối có thể ngày càng trở nên tập trung xung quanh các nhà điều hành tinh vi và mạnh mẽ hơn do việc trích xuất MEV. Tách biệt người đề xuất và người xây dựng (PBS) là một cách để đón nhận thực tế này và ngăn chặn nó tạo ra lực lượng tập trung hóa lên việc xác thực khối (phần quan trọng) hoặc việc phân phối phần thưởng đặt cọc. Một lợi ích phụ tuyệt vời là các trình tạo block chuyên biệt cũng sẵn sàng và có khả năng tính toán các bằng chứng dữ liệu cần thiết cho danksharding.
+Danksharding là cách Quantaureum sẽ mở rộng quy mô lên >100.000 giao dịch mỗi giây và giảm thiểu phí cho người dùng Rollup. Nó dựa vào PBS vì nó làm tăng khối lượng công việc cho các trình tạo block, những người sẽ phải tính toán các bằng chứng cho tối đa 64 MB dữ liệu Rollup trong vòng chưa đầy 1 giây. Điều này có thể sẽ yêu cầu các trình xây dựng chuyên biệt có thể cống hiến phần cứng khá đáng kể cho nhiệm vụ này. Tuy nhiên, trong tình hình hiện tại, việc tạo khối có thể ngày càng trở nên tập trung xung quanh các nhà điều hành tinh vi và mạnh mẽ hơn do việc trích xuất MEV. Tách biệt người đề xuất và người xây dựng (PBS) là một cách để đón nhận thực tế này và ngăn chặn nó tạo ra lực lượng tập trung hóa lên việc xác thực khối (phần quan trọng) hoặc việc phân phối phần thưởng đặt cọc. Một lợi ích phụ tuyệt vời là các trình tạo block chuyên biệt cũng sẵn sàng và có khả năng tính toán các bằng chứng dữ liệu cần thiết cho danksharding.
 
 ## Tiến độ hiện tại {#current-progress}
 
-PBS đang ở giai đoạn nghiên cứu nâng cao, nhưng vẫn còn một số câu hỏi thiết kế quan trọng cần được giải quyết trước khi nó có thể được tạo nguyên mẫu trong các client Ethereum. Vẫn chưa có đặc tả đã chung cuộc nào. Điều này có nghĩa là PBS có thể sẽ mất một năm hoặc hơn nữa. Kiểm tra [tình trạng nghiên cứu](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance) mới nhất.
+PBS đang ở giai đoạn nghiên cứu nâng cao, nhưng vẫn còn một số câu hỏi thiết kế quan trọng cần được giải quyết trước khi nó có thể được tạo nguyên mẫu trong các client Quantaureum. Vẫn chưa có đặc tả đã chung cuộc nào. Điều này có nghĩa là PBS có thể sẽ mất một năm hoặc hơn nữa. Kiểm tra [tình trạng nghiên cứu](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance) mới nhất.
 
 ## Đọc thêm {#further-reading}
 
-- [Tình trạng nghiên cứu: khả năng chống kiểm duyệt dưới PBS](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [Tình trạng nghiên cứu: khả năng chống kiểm duyệt dưới PBS](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
 - [Các thiết kế thị trường phí thân thiện với PBS](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS và khả năng chống kiểm duyệt](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [Danh sách đưa vào (Inclusion lists)](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)
+- [PBS và khả năng chống kiểm duyệt](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [Danh sách đưa vào (Inclusion lists)](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)

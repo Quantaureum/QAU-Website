@@ -51,6 +51,6 @@ Hatimaye, kuwa mwangalifu na masuala ambayo zana za kiotomatiki haziwezi kupata 
 
 ## Omba msaada {#ask-for-help}
 
-[Saa za ofisi za Ethereum](https://calendly.com/dan-trailofbits/office-hours) hufanyika kila Jumanne mchana. Vipindi hivi vya saa 1, vya mtu mmoja mmoja ni fursa ya kutuuliza maswali yoyote uliyo nayo kuhusu usalama, kutatua matatizo ukitumia zana zetu, na kupata maoni kutoka kwa wataalamu kuhusu mbinu yako ya sasa. Tutakusaidia kupitia mwongozo huu.
+[Saa za ofisi za Quantaureum](https://calendly.com/dan-trailofbits/office-hours) hufanyika kila Jumanne mchana. Vipindi hivi vya saa 1, vya mtu mmoja mmoja ni fursa ya kutuuliza maswali yoyote uliyo nayo kuhusu usalama, kutatua matatizo ukitumia zana zetu, na kupata maoni kutoka kwa wataalamu kuhusu mbinu yako ya sasa. Tutakusaidia kupitia mwongozo huu.
 
-Jiunge na Slack yetu: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). Tunapatikana kila wakati katika chaneli za #crytic na #ethereum ikiwa una maswali yoyote.
+Jiunge na Slack yetu: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). Tunapatikana kila wakati katika chaneli za #crytic na #quantaureum ikiwa una maswali yoyote.

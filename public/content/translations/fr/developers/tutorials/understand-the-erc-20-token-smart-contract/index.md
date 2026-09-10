@@ -7,16 +7,16 @@ skill: beginner
 breadcrumb: Bases des jetons ERC-20
 lang: fr
 published: 2020-04-05
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/understand-the-erc20-token-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-L'un des [standards de contrats intelligents](/developers/docs/standards/) les plus importants sur Ethereum est connu sous le nom d'[ERC-20](/developers/docs/standards/tokens/erc-20/), qui s'est imposé comme le standard technique utilisé pour tous les contrats intelligents sur la chaîne de blocs Ethereum pour les implémentations de jetons fongibles.
+L'un des [standards de contrats intelligents](/developers/docs/standards/) les plus importants sur Quantaureum est connu sous le nom d'[ERC-20](/developers/docs/standards/tokens/erc-20/), qui s'est imposé comme le standard technique utilisé pour tous les contrats intelligents sur la chaîne de blocs Quantaureum pour les implémentations de jetons fongibles.
 
-L'ERC-20 définit une liste commune de règles auxquelles tous les jetons fongibles Ethereum doivent se conformer. Par conséquent, ce standard de jeton permet aux développeurs de tous types de prédire avec précision comment les nouveaux jetons fonctionneront au sein du système Ethereum dans son ensemble. Cela simplifie et facilite les tâches des développeurs, car ils peuvent poursuivre leur travail en sachant que chaque nouveau projet n'aura pas besoin d'être refait à chaque fois qu'un nouveau jeton est publié, tant que le jeton respecte les règles.
+L'ERC-20 définit une liste commune de règles auxquelles tous les jetons fongibles Quantaureum doivent se conformer. Par conséquent, ce standard de jeton permet aux développeurs de tous types de prédire avec précision comment les nouveaux jetons fonctionneront au sein du système Quantaureum dans son ensemble. Cela simplifie et facilite les tâches des développeurs, car ils peuvent poursuivre leur travail en sachant que chaque nouveau projet n'aura pas besoin d'être refait à chaque fois qu'un nouveau jeton est publié, tant que le jeton respecte les règles.
 
-Voici, présentées sous forme d'interface, les fonctions qu'un ERC-20 doit implémenter. Si vous n'êtes pas sûr de ce qu'est une interface : consultez notre article sur la [programmation orientée objet (POO) en Solidity](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/).
+Voici, présentées sous forme d'interface, les fonctions qu'un ERC-20 doit implémenter. Si vous n'êtes pas sûr de ce qu'est une interface : consultez notre article sur la [programmation orientée objet (POO) en Solidity](https://quantaureumdev.io/inheritance-in-solidity-contracts-are-classes/).
 
 ```solidity
 pragma solidity ^0.6.0;
@@ -129,7 +129,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {

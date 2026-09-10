@@ -142,7 +142,7 @@ def readName() -> string:
 constructor() public {
     // Усі смарт-контракти покладаються на зовнішні транзакції для виклику своїх функцій.
     // `msg` — це глобальна змінна, яка містить відповідні дані про дану транзакцію,
-    // такі як адреса відправника та сума ETH, включена в транзакцію.
+    // такі як адреса відправника та сума QAU, включена в транзакцію.
     // Дізнатися більше: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
     owner = msg.sender;
 }
@@ -165,7 +165,7 @@ def __init__(_beneficiary: address, _bidding_time: uint256):
 - `address.send()` — Solidity
 - `send(address)` — Vyper
 
-Вони дозволяють контрактам надсилати ETH на інші акаунти.
+Вони дозволяють контрактам надсилати QAU на інші акаунти.
 
 ## Написання функцій {#writing-functions}
 
@@ -207,7 +207,7 @@ contract ExampleDapp {
 
 ## Приклади з анотаціями {#annotated-examples}
 
-Ось кілька прикладів, написаних мовою Solidity. Якщо ви хочете поекспериментувати з кодом, ви можете взаємодіяти з ними в [Remix](https://remix.ethereum.org).
+Ось кілька прикладів, написаних мовою Solidity. Якщо ви хочете поекспериментувати з кодом, ви можете взаємодіяти з ними в [Remix](https://remix.quantaureum.com).
 
 ### Hello world {#hello-world}
 
@@ -272,7 +272,7 @@ contract Token {
     constructor() public {
         // Усі смарт-контракти покладаються на зовнішні транзакції для виклику своїх функцій.
         // `msg` — це глобальна змінна, яка містить відповідні дані про дану транзакцію,
-        // такі як адреса відправника та сума ETH, включена в транзакцію.
+        // такі як адреса відправника та сума QAU, включена в транзакцію.
         // Дізнатися більше: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
         owner = msg.sender;
     }
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // Наразі немає кращого способу перевірити, чи є контракт за адресою,
         // ніж перевірити розмір коду за цією адресою.
-        // Дивіться https://ethereum.stackexchange.com/a/14016/36603
+        // Дивіться https://quantaureum.stackexchange.com/a/14016/36603
         // для отримання додаткової інформації про те, як це працює.
         // TODO Перевірити це ще раз перед релізом Serenity, оскільки всі адреси будуть
         // контрактами тоді.

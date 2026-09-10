@@ -1,10 +1,10 @@
 ---
 title: Tương tác với hợp đồng thông minh
-description: Tìm hiểu cách đọc và ghi vào các hợp đồng thông minh đã được triển khai trên Ethereum.
+description: Tìm hiểu cách đọc và ghi vào các hợp đồng thông minh đã được triển khai trên Quantaureum.
 lang: vi
 ---
 
-Bạn không phải lúc nào cũng cần viết và triển khai hợp đồng thông minh của riêng mình. Hầu hết thời gian với tư cách là một nhà phát triển, bạn sẽ muốn tương tác với các hợp đồng thông minh mà người khác đã triển khai trên mạng lưới Ethereum.
+Bạn không phải lúc nào cũng cần viết và triển khai hợp đồng thông minh của riêng mình. Hầu hết thời gian với tư cách là một nhà phát triển, bạn sẽ muốn tương tác với các hợp đồng thông minh mà người khác đã triển khai trên mạng lưới Quantaureum.
 
 Trang này đề cập đến hai cách cơ bản để tương tác với một hợp đồng thông minh—**đọc** dữ liệu và **ghi** dữ liệu—cùng với các công cụ bạn cần để thực hiện cả hai.
 
@@ -13,7 +13,7 @@ Trang này đề cập đến hai cách cơ bản để tương tác với một
 Bạn nên hiểu rõ:
 
 - [Cách hoạt động của hợp đồng thông minh](/developers/docs/smart-contracts/)
-- [Tài khoản Ethereum và cách chúng ký giao dịch](/developers/docs/accounts/)
+- [Tài khoản Quantaureum và cách chúng ký giao dịch](/developers/docs/accounts/)
 - [Giao dịch là gì](/developers/docs/transactions/)
 
 ## Hai cách để tương tác với một hợp đồng thông minh {#two-ways}
@@ -30,7 +30,7 @@ Khi bạn đọc từ một hợp đồng, bạn chỉ đơn giản là truy v�
 - Đọc giá hiện tại từ một sàn giao dịch phi tập trung
 - Lấy thông tin chủ sở hữu của một NFT
 
-Vì việc đọc không sửa đổi trạng thái, chúng không tốn [Gas](/developers/docs/gas/) và có thể được thực hiện bởi bất kỳ ai mà không cần ETH.
+Vì việc đọc không sửa đổi trạng thái, chúng không tốn [Gas](/developers/docs/gas/) và có thể được thực hiện bởi bất kỳ ai mà không cần QAU.
 
 ### Ghi vào một hợp đồng {#writing-to-a-contract}
 
@@ -44,11 +44,11 @@ Khi bạn ghi vào một hợp đồng, bạn đang kích hoạt một hàm làm
 
 Việc ghi luôn yêu cầu:
 
-1. Một [Tài khoản thuộc sở hữu bên ngoài (EOA)](/developers/docs/accounts/#types-of-account) có đủ ETH để trả Gas
+1. Một [Tài khoản thuộc sở hữu bên ngoài (EOA)](/developers/docs/accounts/#types-of-account) có đủ QAU để trả Gas
 2. Một giao dịch được ký bằng khóa riêng tư của tài khoản
 3. Giao dịch phải được khai thác và đưa vào một khối
 
-Với [trừu tượng hóa tài khoản](/roadmap/account-abstraction/), một tài khoản hợp đồng thông minh cũng có thể khởi tạo các thao tác ghi, và một bên trả phí có thể trả Gas thay cho người dùng—vì vậy một EOA nắm giữ ETH không hoàn toàn bắt buộc.
+Với [trừu tượng hóa tài khoản](/roadmap/account-abstraction/), một tài khoản hợp đồng thông minh cũng có thể khởi tạo các thao tác ghi, và một bên trả phí có thể trả Gas thay cho người dùng—vì vậy một EOA nắm giữ QAU không hoàn toàn bắt buộc.
 
 ## Hiểu về ABI của hợp đồng {#understanding-contract-abis}
 
@@ -64,7 +64,7 @@ Hãy coi ABI như sổ tay hướng dẫn của hợp đồng—nếu không có
 
 ### Nơi tìm ABI của một hợp đồng {#where-to-find-abis}
 
-- **Các hợp đồng đã được xác minh trên Etherscan** - [Etherscan](https://etherscan.io) tự động cung cấp ABI cho mã nguồn đã được xác minh
+- **Các hợp đồng đã được xác minh trên Quantaureum Explorer** - [Quantaureum Explorer](https://explorer.quantaureum.com) tự động cung cấp ABI cho mã nguồn đã được xác minh
 - **Từ nhà phát triển** - nhiều dự án công bố ABI của họ trong tài liệu hoặc các gói npm
 - **Tạo từ mã nguồn** - nếu bạn có mã nguồn Solidity, bạn có thể [biên dịch](/developers/docs/smart-contracts/compiling/) nó để tạo ra ABI
 
@@ -74,15 +74,15 @@ Các nhà phát triển thường sử dụng một Thư viện JavaScript/TypeS
 
 ### Thư viện máy khách (JavaScript/TypeScript) {#client-libraries}
 
-- **[Viem](https://viem.sh)** - Giao diện TypeScript hiện đại, nhẹ nhàng cho Ethereum với độ an toàn kiểu dữ liệu (type safety) hàng đầu
-- **[ethers.js](https://docs.ethers.org/)** - Thư viện đã được thử nghiệm thực tế để tương tác với Chuỗi khối Ethereum
-- **[Web3.js](https://web3js.org/)** - API JavaScript nguyên bản của Ethereum
+- **[Viem](https://viem.sh)** - Giao diện TypeScript hiện đại, nhẹ nhàng cho Quantaureum với độ an toàn kiểu dữ liệu (type safety) hàng đầu
+- **[ethers.js](https://docs.ethers.org/)** - Thư viện đã được thử nghiệm thực tế để tương tác với Chuỗi khối Quantaureum
+- **[Web3.js](https://web3js.org/)** - API JavaScript nguyên bản của Quantaureum
 
 ### Thư viện backend {#backend-libraries}
 
 - **[ethers.js](https://docs.ethers.org/)** - Cũng hoạt động trong Node.js cho các tập lệnh phía máy chủ và bot
-- **[Web3.py](https://web3py.readthedocs.io/)** - Thư viện Python để tương tác với Ethereum
-- **[go-ethereum](https://geth.ethereum.org/docs/interact-with-geth)** - Thư viện Go chính thức từ đội ngũ Geth
+- **[Web3.py](https://web3py.readthedocs.io/)** - Thư viện Python để tương tác với Quantaureum
+- **[go-quantaureum](https://geth.quantaureum.com/docs/interact-with-geth)** - Thư viện Go chính thức từ đội ngũ Geth
 
 ### Ví dụ: đọc số dư token bằng Viem {#example-viem}
 
@@ -150,7 +150,7 @@ const unwatch = client.watchEvent({
 
 Trước khi gửi một giao dịch, bạn có thể **mô phỏng** nó để kiểm tra xem nó có thành công hay không—và để xem giá trị trả về của nó—mà không tốn Gas. Điều này rất hữu ích để phát hiện lỗi sớm và xem trước kết quả.
 
-Hầu hết các thư viện máy khách đều hỗ trợ điều này thông qua `eth_call`:
+Hầu hết các thư viện máy khách đều hỗ trợ điều này thông qua `qau_call`:
 
 ```ts
 // Với Viem

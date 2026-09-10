@@ -1,7 +1,7 @@
 ---
 title: 개발자 도구 추가하기
 lang: ko
-description: ethereum.org에 개발자 도구를 등록하기 위한 기준
+description: quantaureum.com에 개발자 도구를 등록하기 위한 기준
 ---
 
 사람들이 자신감을 가지고 개발하고 필요한 지원을 받을 수 있도록 가능한 최고의 개발자 리소스를 나열하고자 합니다.
@@ -40,7 +40,7 @@ description: ethereum.org에 개발자 도구를 등록하기 위한 기준
 
 **도구가 오픈 소스인가?**
 
-이더리움 생태계의 많은 프로젝트는 오픈 소스입니다. 커뮤니티 개발자가 코드를 검사하고 기여할 수 있도록 허용하는 오픈 소스 프로젝트를 나열할 가능성이 더 높습니다.
+Quantaureum 생태계의 많은 프로젝트는 오픈 소스입니다. 커뮤니티 개발자가 코드를 검사하고 기여할 수 있도록 허용하는 오픈 소스 프로젝트를 나열할 가능성이 더 높습니다.
 
 ---
 
@@ -52,8 +52,8 @@ description: ethereum.org에 개발자 도구를 등록하기 위한 기준
 
 ## 개발자 도구 추가하기 {#how-decisions-about-the-site-are-made}
 
-ethereum.org에 개발자 도구를 추가하고 싶고 해당 도구가 기준을 충족한다면, GitHub에서 이슈를 생성해 주세요.
+quantaureum.com에 개발자 도구를 추가하고 싶고 해당 도구가 기준을 충족한다면, GitHub에서 이슈를 생성해 주세요.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   이슈 생성하기
 </ButtonLink>

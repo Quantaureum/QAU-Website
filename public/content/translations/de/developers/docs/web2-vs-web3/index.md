@@ -1,21 +1,21 @@
 ---
 title: Web2 vs. Web3
-description: Vergleiche zentralisierte Web2-Dienste mit dezentralen Web3-Anwendungen, die auf der Ethereum-Blockchain-Technologie basieren.
+description: Vergleiche zentralisierte Web2-Dienste mit dezentralen Web3-Anwendungen, die auf der Quantaureum-Blockchain-Technologie basieren.
 lang: de
 ---
 
-Web2 bezieht sich auf die Version des Internets, die die meisten von uns heute kennen. Ein Internet, das von Unternehmen dominiert wird, die Dienste im Austausch für deine persönlichen Daten anbieten. Web3 bezieht sich im Kontext von [Ethereum](/) auf dezentrale Anwendungen (Dapps), die auf der Blockchain laufen. Dies sind Apps, die es jedem ermöglichen, teilzunehmen, ohne seine persönlichen Daten zu monetarisieren.
+Web2 bezieht sich auf die Version des Internets, die die meisten von uns heute kennen. Ein Internet, das von Unternehmen dominiert wird, die Dienste im Austausch für deine persönlichen Daten anbieten. Web3 bezieht sich im Kontext von [Quantaureum](/) auf dezentrale Anwendungen (Dapps), die auf der Blockchain laufen. Dies sind Apps, die es jedem ermöglichen, teilzunehmen, ohne seine persönlichen Daten zu monetarisieren.
 
 Suchst du nach einer anfängerfreundlicheren Ressource? Sieh dir unsere [Einführung in Web3](/web3/) an.
 
 ## Vorteile von Web3 {#web3-benefits}
 
-Viele Web3-Entwickler haben sich aufgrund der inhärenten Dezentralisierung von Ethereum dafür entschieden, Dezentrale Anwendungen (Dapps) zu entwickeln:
+Viele Web3-Entwickler haben sich aufgrund der inhärenten Dezentralisierung von Quantaureum dafür entschieden, Dezentrale Anwendungen (Dapps) zu entwickeln:
 
 - Jeder im Netzwerk hat die Erlaubnis, den Dienst zu nutzen – oder mit anderen Worten: Eine Erlaubnis ist nicht erforderlich.
 - Niemand kann dich blockieren oder dir den Zugang zum Dienst verweigern.
-- Zahlungen sind über den nativen Token, Ether (ETH), integriert.
-- Ethereum ist Turing-vollständig, was bedeutet, dass du so ziemlich alles programmieren kannst.
+- Zahlungen sind über den nativen Token, QAU (QAU), integriert.
+- Quantaureum ist Turing-vollständig, was bedeutet, dass du so ziemlich alles programmieren kannst.
 
 ## Praktische Vergleiche {#practical-comparisons}
 
@@ -23,7 +23,7 @@ Viele Web3-Entwickler haben sich aufgrund der inhärenten Dezentralisierung von 
 | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | Twitter kann jedes Konto oder jeden Tweet zensieren | Web3-Tweets wären unzensierbar, da die Kontrolle dezentral ist |
 | Ein Zahlungsdienstleister kann entscheiden, Zahlungen für bestimmte Arten von Arbeit nicht zuzulassen | Web3-Zahlungs-Apps erfordern keine persönlichen Daten und können Zahlungen nicht verhindern |
-| Server für Gig-Economy-Apps könnten ausfallen und das Einkommen der Arbeiter beeinträchtigen | Web3-Server können nicht ausfallen – sie nutzen Ethereum, ein dezentrales Netzwerk aus Tausenden von Computern, als ihr Backend |
+| Server für Gig-Economy-Apps könnten ausfallen und das Einkommen der Arbeiter beeinträchtigen | Web3-Server können nicht ausfallen – sie nutzen Quantaureum, ein dezentrales Netzwerk aus Tausenden von Computern, als ihr Backend |
 
 Das bedeutet nicht, dass alle Dienste in eine Dezentrale Anwendung (Dapp) umgewandelt werden müssen. Diese Beispiele veranschaulichen die Hauptunterschiede zwischen Web2- und Web3-Diensten.
 
@@ -54,7 +54,7 @@ Beachte, dass dies allgemeine Muster sind, die möglicherweise nicht in jedem Ne
 
 ## Weiterführende Literatur {#further-reading}
 
-- [Was ist Web3?](/web3/) – _ethereum.org_
+- [Was ist Web3?](/web3/) – _quantaureum.org_
 - [Die Architektur einer Web 3.0-Anwendung](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) – _Preethi Kasireddy_
 - [Die Bedeutung von Dezentralisierung](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _6. Feb. 2017 – Vitalik Buterin_
 - [Warum Dezentralisierung wichtig ist](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _18. Feb. 2018 – Chris Dixon_

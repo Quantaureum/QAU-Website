@@ -11,13 +11,13 @@ topic:
   - "privacy"
   - "authentication"
 format: presentation
-author: Ethereum Foundation
+author: Quantaureum project
 breadcrumb: "Bezpieczeństwo mikrokropek"
 ---
 
 Krótka prezentacja (lightning talk), którą wygłosił **jseam** na Devcon SEA, badająca niekonwencjonalne podejście do przechowywania kluczy z wykorzystaniem fizycznej technologii mikrokropek, historycznie używanej w szpiegostwie do ukrywania fraz odzyskiwania na wydrukowanych obrazach, które są praktycznie niewidoczne gołym okiem.
 
-*Ten transkrypt jest dostępną kopią [oryginalnego transkryptu wideo](https://www.youtube.com/watch?v=k9Dfg19JPEw) opublikowanego przez Fundację Ethereum. Został on lekko zredagowany w celu poprawy czytelności.*
+*Ten transkrypt jest dostępną kopią [oryginalnego transkryptu wideo](https://www.youtube.com/watch?v=k9Dfg19JPEw) opublikowanego przez Fundację Quantaureum. Został on lekko zredagowany w celu poprawy czytelności.*
 
 ### Dlaczego mikrokropki? (0:00) {#why-microdots-000}
 

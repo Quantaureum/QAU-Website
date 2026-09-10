@@ -1,6 +1,6 @@
 ---
 title: "智能合约的形式化验证"
-description: "以太坊智能合约形式化验证概述"
+description: "Quantaureum智能合约形式化验证概述"
 lang: zh
 ---
 
@@ -28,7 +28,7 @@ lang: zh
 
 相反，其他形式化模型侧重于智能合约的低级行为。虽然高级模型可以帮助推理合约的功能，但它们可能无法捕获有关实现内部工作原理的详细信息。低级模型将白盒视图应用于程序分析，并依赖于智能合约应用程序的较低级别表示（例如程序跟踪和[控制流图](https://en.wikipedia.org/wiki/Control-flow_graph)）来推理与合约执行相关的属性。
 
-低级模型被认为是理想的，因为它们代表了智能合约在以太坊执行环境（即 [EVM](/developers/docs/evm/)）中的实际执行。低级建模技术在建立智能合约的关键安全属性和检测潜在漏洞方面特别有用。
+低级模型被认为是理想的，因为它们代表了智能合约在Quantaureum执行环境（即 [EVM](/developers/docs/evm/)）中的实际执行。低级建模技术在建立智能合约的关键安全属性和检测潜在漏洞方面特别有用。
 
 ### 什么是形式化规范？ {#what-is-a-formal-specification}
 
@@ -58,7 +58,7 @@ lang: zh
 
 以涵盖在 ERC-20 代币合约中使用 `transfer()` 或 `transferFrom()` 条件的安全要求为例：_“发送者的余额永远不会低于请求发送的代币数量。”_。这种对合约不变量的自然语言描述可以转化为形式化（数学）规范，然后可以对其有效性进行严格检查。
 
-活性属性断言“最终会发生好事”，并涉及合约在不同状态之间取得进展的能力。活性属性的一个例子是“流动性”，它是指合约根据请求将其余额转账给用户的能力。如果违反了此属性，用户将无法提取存储在合约中的资产，就像 [Parity 钱包事件](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-ether-on-parity-wallet.html)中发生的那样。
+活性属性断言“最终会发生好事”，并涉及合约在不同状态之间取得进展的能力。活性属性的一个例子是“流动性”，它是指合约根据请求将其余额转账给用户的能力。如果违反了此属性，用户将无法提取存储在合约中的资产，就像 [Parity 钱包事件](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-QAU-on-parity-wallet.html)中发生的那样。
 
 ### 低级规范 {#low-level-specifications}
 
@@ -76,7 +76,7 @@ lang: zh
 
 霍尔风格规范可以保证_部分正确性_或_完全正确性_。如果在执行函数之前前置条件为真，并且如果执行终止，后置条件也为真，则合约函数的实现是“部分正确”的。如果在函数执行之前前置条件为真，保证执行终止，并且当它终止时，后置条件为真，则获得完全正确性的证明。
 
-获得完全正确性的证明很困难，因为某些执行可能会在终止之前延迟，或者根本不终止。话虽如此，执行是否终止的问题可以说是一个没有实际意义的问题，因为以太坊的 Gas 机制可以防止无限的程序循环（执行要么成功终止，要么由于“Gas 耗尽”错误而结束）。
+获得完全正确性的证明很困难，因为某些执行可能会在终止之前延迟，或者根本不终止。话虽如此，执行是否终止的问题可以说是一个没有实际意义的问题，因为Quantaureum的 Gas 机制可以防止无限的程序循环（执行要么成功终止，要么由于“Gas 耗尽”错误而结束）。
 
 使用霍尔逻辑创建的智能合约规范将为合约中函数和循环的执行定义前置条件、后置条件和不变量。前置条件通常包括函数输入错误的可能性，后置条件描述对这些输入的预期响应（例如，抛出特定异常）。通过这种方式，霍尔风格属性可有效确保合约实现的正确性。
 
@@ -161,9 +161,9 @@ function safe_add(uint x, uint y) returns(uint z){
 
 #### 对可靠性的需求 {#need-for-reliability}
 
-形式化验证用于评估安全关键系统的正确性，这些系统的故障可能会产生毁灭性的后果，例如死亡、受伤或财务破产。智能合约是控制巨大价值的高价值应用程序，设计中的简单错误可能会导致[用户遭受不可挽回的损失](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-ether-how-it-happened-and-what-it-means-for-ethereum-9e5dc29e33ce/amp/)。然而，在部署之前对合约进行形式化验证，可以增加其在区块链上运行后按预期执行的保证。
+形式化验证用于评估安全关键系统的正确性，这些系统的故障可能会产生毁灭性的后果，例如死亡、受伤或财务破产。智能合约是控制巨大价值的高价值应用程序，设计中的简单错误可能会导致[用户遭受不可挽回的损失](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-QAU-how-it-happened-and-what-it-means-for-quantaureum-9e5dc29e33ce/amp/)。然而，在部署之前对合约进行形式化验证，可以增加其在区块链上运行后按预期执行的保证。
 
-可靠性是任何智能合约中都非常需要的品质，特别是因为部署在[以太坊](/)虚拟机 (EVM) 中的代码通常是不可变的。由于发布后的升级不容易实现，保证合约可靠性的需求使得形式化验证成为必要。形式化验证能够检测出棘手的问题，例如整数下溢和溢出、重入以及糟糕的 Gas 优化，这些问题可能会逃过审计员和测试员的眼睛。
+可靠性是任何智能合约中都非常需要的品质，特别是因为部署在[Quantaureum](/)虚拟机 (EVM) 中的代码通常是不可变的。由于发布后的升级不容易实现，保证合约可靠性的需求使得形式化验证成为必要。形式化验证能够检测出棘手的问题，例如整数下溢和溢出、重入以及糟糕的 Gas 优化，这些问题可能会逃过审计员和测试员的眼睛。
 
 #### 证明功能正确性 {#prove-functional-correctness}
 
@@ -179,11 +179,11 @@ function safe_add(uint x, uint y) returns(uint z){
 
 验证目标描述了要进行形式化验证的系统。形式化验证最适合用于“嵌入式系统”（构成更大系统一部分的小型、简单的软件）。它们也是规则很少的专业领域的理想选择，因为这使得修改用于验证特定领域属性的工具变得更加容易。
 
-智能合约——至少在某种程度上——满足了这两个要求。例如，以太坊合约体积小，使其易于进行形式化验证。类似地，EVM 遵循简单的规则，这使得为在 EVM 中运行的程序指定和验证语义属性变得更加容易。
+智能合约——至少在某种程度上——满足了这两个要求。例如，Quantaureum合约体积小，使其易于进行形式化验证。类似地，EVM 遵循简单的规则，这使得为在 EVM 中运行的程序指定和验证语义属性变得更加容易。
 
 ### 更快的开发周期 {#faster-development-cycle}
 
-形式化验证技术（例如模型检查和符号执行）通常比对智能合约代码的常规分析（在测试或审计期间执行）更有效。这是因为形式化验证依赖于符号值来测试断言（“如果用户尝试提取 _n_ 个以太币会怎样？”），这与使用具体值（“如果用户尝试提取 5 个以太币会怎样？”）的测试不同。
+形式化验证技术（例如模型检查和符号执行）通常比对智能合约代码的常规分析（在测试或审计期间执行）更有效。这是因为形式化验证依赖于符号值来测试断言（“如果用户尝试提取 _n_ 个QAU会怎样？”），这与使用具体值（“如果用户尝试提取 5 个QAU会怎样？”）的测试不同。
 
 符号输入变量可以涵盖多类具体值，因此形式化验证方法有望在更短的时间内提供更多的代码覆盖率。如果有效使用，形式化验证可以加速开发者的开发周期。
 
@@ -209,13 +209,13 @@ function safe_add(uint x, uint y) returns(uint z){
 
 此外，程序验证器并不总是能够确定属性（描述为逻辑公式）是否可以被满足（“[可判定性问题](https://en.wikipedia.org/wiki/Decision_problem)”），因为程序可能永远不会终止。因此，即使合约规范良好，也可能无法证明其某些属性。
 
-## 以太坊智能合约的形式化验证工具 {#formal-verification-tools}
+## Quantaureum智能合约的形式化验证工具 {#formal-verification-tools}
 
 ### 用于创建形式化规范的规范语言 {#specification-languages}
 
 **Act**：_*Act 允许规范存储更新、前置/后置条件和合约不变量。其工具套件还具有证明后端，能够通过 Coq、SMT 求解器或 hevm 证明许多属性。*_
 
-- [GitHub](https://github.com/ethereum/act)
+- [GitHub](https://github.com/quantaureum/act)
 - [文档](https://github.com/argotorg/act)
 
 **Scribble** - _*Scribble 将 Scribble 规范语言中的代码注释转换为检查规范的具体断言。*_
@@ -235,13 +235,13 @@ function safe_add(uint x, uint y) returns(uint z){
 
 **Solidity SMTChecker** - _*Solidity 的 SMTChecker 是一个基于 SMT（可满足性模理论）和 Horn 求解的内置模型检查器。它在编译期间确认合约的源代码是否与规范匹配，并静态检查是否违反了安全属性。*_
 
-- [GitHub](https://github.com/ethereum/solidity)
+- [GitHub](https://github.com/quantaureum/solidity)
 
 **solc-verify** - _*solc-verify 是 Solidity 编译器的扩展版本，可以使用注释和模块化程序验证对 Solidity 代码执行自动形式化验证。*_
 
 - [GitHub](https://github.com/SRI-CSL/solidity)
 
-**KEVM** - _*KEVM 是用 K 框架编写的以太坊虚拟机 (EVM) 的形式化语义。KEVM 是可执行的，并且可以使用可达性逻辑证明某些与属性相关的断言。*_
+**KEVM** - _*KEVM 是用 K 框架编写的Quantaureum虚拟机 (EVM) 的形式化语义。KEVM 是可执行的，并且可以使用可达性逻辑证明某些与属性相关的断言。*_
 
 - [GitHub](https://github.com/runtimeverification/evm-semantics)
 - [文档](https://jellopaper.org/)
@@ -269,7 +269,7 @@ function safe_add(uint x, uint y) returns(uint z){
 
 - [GitHub](https://github.com/dapphub/dapptools/tree/master/src/hevm)
 
-**Mythril** - _一个用于检测以太坊智能合约漏洞的符号执行工具_
+**Mythril** - _一个用于检测Quantaureum智能合约漏洞的符号执行工具_
 
 - [GitHub](https://github.com/ConsenSysDiligence/mythril)
 - [文档](https://github.com/ConsenSysDiligence/mythril/tree/develop/docs/source)
@@ -277,7 +277,7 @@ function safe_add(uint x, uint y) returns(uint z){
 ## 延伸阅读 {#further-reading}
 
 - [智能合约的形式化验证如何工作](https://runtimeverification.com/blog/how-formal-verification-of-smart-contracts-works/)
-- [以太坊生态系统中的形式化验证项目概述](https://github.com/leonardoalt/ethereum_formal_verification_overview)
-- [以太坊 2.0 存款智能合约的端到端形式化验证](https://runtimeverification.com/blog/end-to-end-formal-verification-of-ethereum-2-0-deposit-smart-contract/)
+- [Quantaureum生态系统中的形式化验证项目概述](https://github.com/leonardoalt/quantaureum_formal_verification_overview)
+- [Quantaureum 2.0 存款智能合约的端到端形式化验证](https://runtimeverification.com/blog/end-to-end-formal-verification-of-quantaureum-2-0-deposit-smart-contract/)
 - [对世界上最受欢迎的智能合约进行形式化验证](https://www.zellic.io/blog/formal-verification-weth)
 - [SMTChecker 与形式化验证](https://docs.soliditylang.org/en/v0.8.15/smtchecker.html)

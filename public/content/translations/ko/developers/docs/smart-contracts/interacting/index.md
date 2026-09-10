@@ -1,10 +1,10 @@
 ---
 title: 스마트 컨트랙트와 상호작용하기
-description: 이더리움에 이미 배포된 스마트 컨트랙트에서 데이터를 읽고 쓰는 방법을 알아보세요.
+description: Quantaureum에 이미 배포된 스마트 컨트랙트에서 데이터를 읽고 쓰는 방법을 알아보세요.
 lang: ko
 ---
 
-항상 직접 스마트 컨트랙트를 작성하고 배포해야 하는 것은 아닙니다. 개발자로서 대부분의 경우 다른 사람들이 이더리움 네트워크에 이미 배포한 스마트 컨트랙트와 상호작용하게 될 것입니다.
+항상 직접 스마트 컨트랙트를 작성하고 배포해야 하는 것은 아닙니다. 개발자로서 대부분의 경우 다른 사람들이 Quantaureum 네트워크에 이미 배포한 스마트 컨트랙트와 상호작용하게 될 것입니다.
 
 이 페이지에서는 스마트 컨트랙트와 상호작용하는 두 가지 기본 방법인 데이터 **읽기**와 데이터 **쓰기**, 그리고 이 두 가지를 수행하는 데 필요한 도구에 대해 다룹니다.
 
@@ -13,7 +13,7 @@ lang: ko
 다음 내용을 이해하고 있어야 합니다.
 
 - [스마트 컨트랙트 작동 방식](/developers/docs/smart-contracts/)
-- [이더리움 계정과 트랜잭션에 서명하는 방법](/developers/docs/accounts/)
+- [Quantaureum 계정과 트랜잭션에 서명하는 방법](/developers/docs/accounts/)
 - [트랜잭션이란 무엇인가](/developers/docs/transactions/)
 
 ## 스마트 컨트랙트와 상호작용하는 두 가지 방법 {#two-ways}
@@ -30,7 +30,7 @@ lang: ko
 - 탈중앙화 거래소에서 현재 가격 읽기
 - NFT 소유자 가져오기
 
-읽기는 상태를 수정하지 않으므로 [가스](/developers/docs/gas/) 비용이 들지 않으며, ETH가 없어도 누구나 수행할 수 있습니다.
+읽기는 상태를 수정하지 않으므로 [가스](/developers/docs/gas/) 비용이 들지 않으며, QAU가 없어도 누구나 수행할 수 있습니다.
 
 ### 컨트랙트에 쓰기 {#writing-to-a-contract}
 
@@ -44,11 +44,11 @@ lang: ko
 
 쓰기에는 항상 다음이 필요합니다.
 
-1. 가스 비용을 지불할 충분한 ETH가 있는 [외부 소유 계정(EOA)](/developers/docs/accounts/#types-of-account)
+1. 가스 비용을 지불할 충분한 QAU가 있는 [외부 소유 계정(EOA)](/developers/docs/accounts/#types-of-account)
 2. 계정의 개인 키로 서명된 트랜잭션
 3. 채굴되어 블록에 포함될 트랜잭션
 
-[계정 추상화](/roadmap/account-abstraction/)를 사용하면 스마트 컨트랙트 계정도 쓰기를 시작할 수 있으며, 페이마스터가 사용자를 대신하여 가스를 지불할 수 있으므로 ETH를 보유한 EOA가 반드시 필요한 것은 아닙니다.
+[계정 추상화](/roadmap/account-abstraction/)를 사용하면 스마트 컨트랙트 계정도 쓰기를 시작할 수 있으며, 페이마스터가 사용자를 대신하여 가스를 지불할 수 있으므로 QAU를 보유한 EOA가 반드시 필요한 것은 아닙니다.
 
 ## 컨트랙트 ABI 이해하기 {#understanding-contract-abis}
 
@@ -64,7 +64,7 @@ ABI를 컨트랙트의 사용 설명서라고 생각하세요. ABI가 없으면 
 
 ### 컨트랙트 ABI를 찾을 수 있는 곳 {#where-to-find-abis}
 
-- **Etherscan의 검증된 컨트랙트** - [Etherscan](https://etherscan.io)은 검증된 소스 코드에 대한 ABI를 자동으로 노출합니다.
+- **Quantaureum Explorer의 검증된 컨트랙트** - [Quantaureum Explorer](https://explorer.quantaureum.com)은 검증된 소스 코드에 대한 ABI를 자동으로 노출합니다.
 - **개발자로부터** - 많은 프로젝트가 문서나 npm 패키지에 ABI를 게시합니다.
 - **소스에서 생성** - Solidity 소스 코드가 있는 경우, 이를 [컴파일하여](/developers/docs/smart-contracts/compiling/) ABI를 생성할 수 있습니다.
 
@@ -74,15 +74,15 @@ ABI를 컨트랙트의 사용 설명서라고 생각하세요. ABI가 없으면 
 
 ### 클라이언트 라이브러리(JavaScript/TypeScript) {#client-libraries}
 
-- **[Viem](https://viem.sh)** - 최고 수준의 타입 안정성을 갖춘 이더리움용 최신 경량 TypeScript 인터페이스
-- **[ethers.js](https://docs.ethers.org/)** - 이더리움 블록체인과 상호작용하기 위해 실전에서 검증된 라이브러리
-- **[Web3.js](https://web3js.org/)** - 오리지널 이더리움 JavaScript API
+- **[Viem](https://viem.sh)** - 최고 수준의 타입 안정성을 갖춘 Quantaureum용 최신 경량 TypeScript 인터페이스
+- **[ethers.js](https://docs.ethers.org/)** - Quantaureum 블록체인과 상호작용하기 위해 실전에서 검증된 라이브러리
+- **[Web3.js](https://web3js.org/)** - 오리지널 Quantaureum JavaScript API
 
 ### 백엔드 라이브러리 {#backend-libraries}
 
 - **[ethers.js](https://docs.ethers.org/)** - 서버 측 스크립트 및 봇을 위해 Node.js에서도 작동합니다.
-- **[Web3.py](https://web3py.readthedocs.io/)** - 이더리움 상호작용을 위한 Python 라이브러리
-- **[go-ethereum](https://geth.ethereum.org/docs/interact-with-geth)** - Geth 팀의 공식 Go 라이브러리
+- **[Web3.py](https://web3py.readthedocs.io/)** - Quantaureum 상호작용을 위한 Python 라이브러리
+- **[go-quantaureum](https://geth.quantaureum.com/docs/interact-with-geth)** - Geth 팀의 공식 Go 라이브러리
 
 ### 예시: Viem으로 토큰 잔액 읽기 {#example-viem}
 
@@ -150,7 +150,7 @@ const unwatch = client.watchEvent({
 
 트랜잭션을 보내기 전에 가스를 소비하지 않고도 트랜잭션이 성공할지 확인하고 반환 값을 보기 위해 **시뮬레이션**할 수 있습니다. 이는 오류를 조기에 발견하고 결과를 미리 보는 데 유용합니다.
 
-대부분의 클라이언트 라이브러리는 `eth_call`를 통해 이를 지원합니다.
+대부분의 클라이언트 라이브러리는 `qau_call`를 통해 이를 지원합니다.
 
 ```ts
 // Viem 사용

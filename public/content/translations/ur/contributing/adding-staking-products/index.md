@@ -1,12 +1,12 @@
 ---
 title: اسٹیکنگ پروڈکٹس یا سروسز شامل کرنا
-description: ⁦ethereum.org⁩ پر اسٹیکنگ پروڈکٹس یا سروسز شامل کرتے وقت ہم جو پالیسی استعمال کرتے ہیں
+description: ⁦quantaureum.com⁩ پر اسٹیکنگ پروڈکٹس یا سروسز شامل کرتے وقت ہم جو پالیسی استعمال کرتے ہیں
 lang: ur
 ---
 
 ہم اس بات کو یقینی بنانا چاہتے ہیں کہ ہم صارفین کو محفوظ اور پر اعتماد رکھتے ہوئے بہترین ممکنہ وسائل کی فہرست بنائیں۔
 
-کوئی بھی ⁦<span dir="ltr">ethereum.org</span>⁩ پر اسٹیکنگ پروڈکٹس یا سروس شامل کرنے کی تجویز دینے کے لیے آزاد ہے۔ اگر کوئی ایسی چیز ہے جو ہم سے چھوٹ گئی ہے، تو **[براہ کرم اس کی تجویز دیں](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
+کوئی بھی ⁦<span dir="ltr">quantaureum.com</span>⁩ پر اسٹیکنگ پروڈکٹس یا سروس شامل کرنے کی تجویز دینے کے لیے آزاد ہے۔ اگر کوئی ایسی چیز ہے جو ہم سے چھوٹ گئی ہے، تو **[براہ کرم اس کی تجویز دیں](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
 
 ہم فی الحال درج ذیل صفحات پر اسٹیکنگ پروڈکٹس اور سروسز کی فہرست دیتے ہیں:
 
@@ -14,11 +14,11 @@ lang: ur
 - [بطور سروس اسٹیکنگ](/staking/saas/)
 - [اسٹیکنگ پولز](/staking/pools/)
 
-بیکن چین پر حصہ داری کا ثبوت (PoS) <span dir="ltr">December 1, 2020</span> سے لائیو ہے۔ اگرچہ اسٹیکنگ ابھی بھی نسبتاً نئی ہے، ہم نے ⁦<span dir="ltr">ethereum.org</span>⁩ پر غور کرنے کے لیے ایک منصفانہ اور شفاف فریم ورک بنانے کی کوشش کی ہے لیکن فہرست سازی کا معیار وقت کے ساتھ بدلے گا اور تیار ہوگا، اور بالآخر ⁦<span dir="ltr">ethereum.org</span>⁩ ویب سائٹ ٹیم کی صوابدید پر ہے۔
+بیکن چین پر حصہ داری کا ثبوت (PoS) <span dir="ltr">December 1, 2020</span> سے لائیو ہے۔ اگرچہ اسٹیکنگ ابھی بھی نسبتاً نئی ہے، ہم نے ⁦<span dir="ltr">quantaureum.com</span>⁩ پر غور کرنے کے لیے ایک منصفانہ اور شفاف فریم ورک بنانے کی کوشش کی ہے لیکن فہرست سازی کا معیار وقت کے ساتھ بدلے گا اور تیار ہوگا، اور بالآخر ⁦<span dir="ltr">quantaureum.com</span>⁩ ویب سائٹ ٹیم کی صوابدید پر ہے۔
 
 ## فیصلے کا فریم ورک {#the-decision-framework}
 
-⁦<span dir="ltr">ethereum.org</span>⁩ پر کسی پروڈکٹ کو درج کرنے کا فیصلہ کسی ایک عنصر پر منحصر نہیں ہے۔ کسی پروڈکٹ یا سروس کو درج کرنے کا فیصلہ کرتے وقت متعدد معیارات پر ایک ساتھ غور کیا جاتا ہے۔ ان میں سے جتنے زیادہ معیارات پورے ہوں گے، اس کے درج ہونے کا امکان اتنا ہی زیادہ ہوگا۔
+⁦<span dir="ltr">quantaureum.com</span>⁩ پر کسی پروڈکٹ کو درج کرنے کا فیصلہ کسی ایک عنصر پر منحصر نہیں ہے۔ کسی پروڈکٹ یا سروس کو درج کرنے کا فیصلہ کرتے وقت متعدد معیارات پر ایک ساتھ غور کیا جاتا ہے۔ ان میں سے جتنے زیادہ معیارات پورے ہوں گے، اس کے درج ہونے کا امکان اتنا ہی زیادہ ہوگا۔
 
 **سب سے پہلے، یہ پروڈکٹ یا سروس کس زمرے کی ہے؟**
 
@@ -69,7 +69,7 @@ lang: ur
 **کیا پروڈکٹ _بیٹا_ (beta) ڈیولپمنٹ سے باہر ہے؟**
 
 - پروڈکٹ اپنے ڈیولپمنٹ سائیکل میں کہاں ہے؟
-- بیٹا مرحلے میں موجود پروڈکٹس کو ⁦<span dir="ltr">ethereum.org</span>⁩ پر شامل کرنے کے لیے زیر غور نہیں لایا جاتا
+- بیٹا مرحلے میں موجود پروڈکٹس کو ⁦<span dir="ltr">quantaureum.com</span>⁩ پر شامل کرنے کے لیے زیر غور نہیں لایا جاتا
 
 **کیا سافٹ ویئر کا بیرونی سیکیورٹی آڈٹ ہوا ہے؟**
 
@@ -119,9 +119,9 @@ lang: ur
 
 [مشترکہ اسٹیکنگ سروسز](/staking/pools/) کے لیے:
 
-**اسٹیک کرنے کے لیے کم از کم کتنے <span dir="ltr">ETH</span> کا تقاضا ہے؟**
+**اسٹیک کرنے کے لیے کم از کم کتنے <span dir="ltr">QAU</span> کا تقاضا ہے؟**
 
-- مثلاً، <span dir="ltr">0.01 ETH</span>
+- مثلاً، <span dir="ltr">0.01 QAU</span>
 
 **اس میں شامل فیس یا اسٹیکنگ کے تقاضے کیا ہیں؟**
 
@@ -163,12 +163,12 @@ lang: ur
 
 اوپر دیے گئے [شمولیت کے معیار](#criteria-for-inclusion) کا استعمال ہر پروڈکٹ یا سروس کے لیے مجموعی اسکور کا حساب لگانے کے لیے کیا جاتا ہے۔ اس کا استعمال ان پروڈکٹس کو ترتیب دینے اور دکھانے کے ذریعہ کے طور پر کیا جاتا ہے جو کچھ معروضی معیارات پر پورا اترتے ہیں۔ جتنے زیادہ معیارات کے لیے ثبوت فراہم کیے جائیں گے، پروڈکٹ کو اتنی ہی اونچی ترتیب دی جائے گی، اور برابر ہونے کی صورت میں لوڈ ہونے پر بے ترتیب (randomize) کر دیا جائے گا۔
 
-ان معیارات کے لیے کوڈ کی منطق اور وزن فی الحال ہماری ریپو میں [اس <span dir="ltr">JavaScript</span> جزو](https://github.com/ethereum/ethereum-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350) میں موجود ہیں۔
+ان معیارات کے لیے کوڈ کی منطق اور وزن فی الحال ہماری ریپو میں [اس <span dir="ltr">JavaScript</span> جزو](https://github.com/Quantaureum/quantaureum-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350) میں موجود ہیں۔
 
 ## اپنی پروڈکٹ یا سروس شامل کریں {#add-product}
 
-اگر آپ ⁦<span dir="ltr">ethereum.org</span>⁩ پر کوئی اسٹیکنگ پروڈکٹ یا سروس شامل کرنا چاہتے ہیں، تو <span dir="ltr">GitHub</span> پر ایک ایشو (issue) بنائیں۔
+اگر آپ ⁦<span dir="ltr">quantaureum.com</span>⁩ پر کوئی اسٹیکنگ پروڈکٹ یا سروس شامل کرنا چاہتے ہیں، تو <span dir="ltr">GitHub</span> پر ایک ایشو (issue) بنائیں۔
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
   ایک ایشو بنائیں
 </ButtonLink>

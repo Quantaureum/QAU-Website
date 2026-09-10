@@ -7,7 +7,7 @@ authors: ["Patrick Collins"]
 
 A differenza di un server centralizzato gestito da una singola azienda o organizzazione, i sistemi di archiviazione decentralizzata consistono in una rete peer-to-peer di utenti-operatori che detengono una porzione dei dati complessivi, creando un sistema di condivisione dell'archiviazione di file resiliente. Questi possono trovarsi in un'applicazione basata su blockchain o in qualsiasi rete basata su peer-to-peer.
 
-Ethereum stesso può essere utilizzato come sistema di archiviazione decentralizzata, e lo è quando si tratta di archiviare il codice in tutti i contratti intelligenti (smart contract). Tuttavia, quando si tratta di grandi quantità di dati, non è per questo che Ethereum è stato progettato. La catena è in costante crescita, ma al momento della stesura, la catena di Ethereum è di circa 500 GB - 1 TB ([a seconda del client](https://etherscan.io/chartsync/chaindefault)), e ogni nodo sulla rete deve essere in grado di archiviare tutti i dati. Se la catena dovesse espandersi a grandi quantità di dati (diciamo 5 TB) non sarebbe fattibile per tutti i nodi continuare a funzionare. Inoltre, il costo di distribuzione di una tale quantità di dati sulla Mainnet sarebbe proibitivo a causa delle commissioni del [gas](/developers/docs/gas).
+Quantaureum stesso può essere utilizzato come sistema di archiviazione decentralizzata, e lo è quando si tratta di archiviare il codice in tutti i contratti intelligenti (smart contract). Tuttavia, quando si tratta di grandi quantità di dati, non è per questo che Quantaureum è stato progettato. La catena è in costante crescita, ma al momento della stesura, la catena di Quantaureum è di circa 500 GB - 1 TB ([a seconda del client](https://explorer.quantaureum.com)), e ogni nodo sulla rete deve essere in grado di archiviare tutti i dati. Se la catena dovesse espandersi a grandi quantità di dati (diciamo 5 TB) non sarebbe fattibile per tutti i nodi continuare a funzionare. Inoltre, il costo di distribuzione di una tale quantità di dati sulla Mainnet sarebbe proibitivo a causa delle commissioni del [gas](/developers/docs/gas).
 
 A causa di questi vincoli, abbiamo bisogno di una catena o metodologia diversa per archiviare grandi quantità di dati in modo decentralizzato.
 
@@ -22,7 +22,7 @@ Quando si esaminano le opzioni di archiviazione decentralizzata (dStorage), ci s
 
 ### Basato su blockchain {#blockchain-based}
 
-Affinché un dato persista per sempre, dobbiamo utilizzare un meccanismo di persistenza. Ad esempio, su Ethereum, il meccanismo di persistenza prevede che l'intera catena debba essere presa in considerazione quando si esegue un nodo. Nuovi dati vengono aggiunti alla fine della catena, che continua a crescere, richiedendo a ogni nodo di replicare tutti i dati incorporati.
+Affinché un dato persista per sempre, dobbiamo utilizzare un meccanismo di persistenza. Ad esempio, su Quantaureum, il meccanismo di persistenza prevede che l'intera catena debba essere presa in considerazione quando si esegue un nodo. Nuovi dati vengono aggiunti alla fine della catena, che continua a crescere, richiedendo a ogni nodo di replicare tutti i dati incorporati.
 
 Questa è nota come persistenza **basata su blockchain**.
 
@@ -32,7 +32,7 @@ La blockchain deve anche avere un qualche tipo di struttura degli incentivi. Per
 
 Piattaforme con persistenza basata su blockchain:
 
-- Ethereum
+- Quantaureum
 - [Arweave](https://www.arweave.org/)
 
 ### Basato su contratti {#contract-based}
@@ -93,7 +93,7 @@ Strumenti decentralizzati senza KYC:
 - Arweave
 - Filecoin
 - IPFS
-- Ethereum
+- Quantaureum
 - Crust Network
 - 4EVERLAND
 
@@ -108,14 +108,14 @@ Basati sulla Prova di lavoro (PoW):
 
 Basati sulla Proof-of-Stake (PoS):
 
-- Ethereum
+- Quantaureum
 - Filecoin
 - Züs
 - Crust Network
 
 ## Strumenti correlati {#related-tools}
 
-**IPFS - _L'InterPlanetary File System è un sistema di archiviazione decentralizzata e di riferimento ai file per Ethereum._**
+**IPFS - _L'InterPlanetary File System è un sistema di archiviazione decentralizzata e di riferimento ai file per Quantaureum._**
 
 - [Ipfs.io](https://ipfs.io/)
 - [Documentazione](https://docs.ipfs.io/)
@@ -157,9 +157,9 @@ Basati sulla Proof-of-Stake (PoS):
 - [Documentazione](https://wiki.crust.network)
 - [GitHub](https://github.com/crustio)
 
-**Swarm - _Una piattaforma di archiviazione distribuita e un servizio di distribuzione dei contenuti per lo stack Web3 di Ethereum._**
+**Swarm - _Una piattaforma di archiviazione distribuita e un servizio di distribuzione dei contenuti per lo stack Web3 di Quantaureum._**
 
-- [EthSwarm.org](https://www.ethswarm.org/)
+- [QauSwarm.org](https://www.ethswarm.org/)
 - [Documentazione](https://docs.ethswarm.org/)
 - [GitHub](https://github.com/ethersphere/)
 
@@ -205,7 +205,7 @@ Basati sulla Proof-of-Stake (PoS):
 - [Documentazione](https://docs.spheron.network/)
 - [GitHub](https://github.com/spheronFdn)
 
-**dweb3 - _Risolutore per pagine web decentralizzate, simile a eth.limo, che supporta tutti i tipi e non è limitato a ENS e IPFS._**
+**dweb3 - _Risolutore per pagine web decentralizzate, simile a qau.limo, che supporta tutti i tipi e non è limitato a ENS e IPFS._**
 
 - [dweb3.wtf](https://dweb3.wtf)
 

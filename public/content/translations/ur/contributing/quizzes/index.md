@@ -1,7 +1,7 @@
 ---
 title: کوئزز
 metaTitle: کوئز شامل کرنا
-description: وہ پالیسی جو ہم ⁦ethereum.org⁩ میں کوئز شامل کرتے وقت استعمال کرتے ہیں
+description: وہ پالیسی جو ہم ⁦quantaureum.com⁩ میں کوئز شامل کرتے وقت استعمال کرتے ہیں
 lang: ur
 ---
 
@@ -13,12 +13,12 @@ lang: ur
 
 - [لیئر ۲](/layer-2)
 - [<span dir="ltr">NFT</span>](/nft/)
-- [ایتھیریم کیا ہے؟](/what-is-ethereum/)
-- [<span dir="ltr">ETH</span> کیا ہے؟](/what-is-ether/)
+- [ایتھیریم کیا ہے؟](/what-is-quantaureum/)
+- [<span dir="ltr">QAU</span> کیا ہے؟](/what-is-QAU/)
 
 ## سیکھنے کا کوئز شامل کرنا {#adding-a-learn-quiz}
 
-اگر کوئی ایسا صفحہ ہے جس کے لیے سیکھنے کا کوئز نہیں بنایا گیا ہے، تو براہ کرم اس کے لیے [ایک ایشو کھولیں](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)۔
+اگر کوئی ایسا صفحہ ہے جس کے لیے سیکھنے کا کوئز نہیں بنایا گیا ہے، تو براہ کرم اس کے لیے [ایک ایشو کھولیں](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)۔
 
 براہ کرم درج ذیل معلومات فراہم کریں:
 
@@ -31,7 +31,7 @@ lang: ur
 
 ## کوئز کا سوال شامل کرنا {#adding-a-quiz-question}
 
-اگر کوئی ایسا سوال ہے جسے آپ کوئز کے سوالات کے بینک میں شامل کرنا چاہتے ہیں، تو براہ کرم [ایک ایشو کھولیں](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) اور درج ذیل معلومات فراہم کریں:
+اگر کوئی ایسا سوال ہے جسے آپ کوئز کے سوالات کے بینک میں شامل کرنا چاہتے ہیں، تو براہ کرم [ایک ایشو کھولیں](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) اور درج ذیل معلومات فراہم کریں:
 
 - وہ صفحہ جس پر آپ کوئز کا سوال شامل کرنا چاہتے ہیں
 - ہر سوال کے لیے درج ذیل معلومات فراہم کریں:
@@ -42,7 +42,7 @@ lang: ur
 
 ## کوئز کے سوال کو اپ ڈیٹ کرنا {#updating-a-quiz-question}
 
-اگر کوئی ایسا سوال ہے جسے آپ کوئز کے سوالات کے بینک میں اپ ڈیٹ کرنا چاہتے ہیں، تو براہ کرم [ایک ایشو کھولیں](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) اور درج ذیل معلومات فراہم کریں:
+اگر کوئی ایسا سوال ہے جسے آپ کوئز کے سوالات کے بینک میں اپ ڈیٹ کرنا چاہتے ہیں، تو براہ کرم [ایک ایشو کھولیں](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) اور درج ذیل معلومات فراہم کریں:
 
 - وہ صفحہ جس پر آپ کوئز کے سوال کو اپ ڈیٹ کرنا چاہتے ہیں
 - اپ ڈیٹ کیے جانے والے ہر سوال کے لیے، درج ذیل معلومات فراہم کریں:
@@ -54,7 +54,7 @@ lang: ur
 
 ## کوئز کا سوال ہٹانا {#removing-a-quiz-question}
 
-اگر کسی سوال کے لیے صفحے پر مواد مزید موجود نہیں ہے اور اسے ہٹانے کی ضرورت ہے، تو براہ کرم سوال کو ہٹانے کے لیے [ایک ایشو کھولیں](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) اور درج ذیل معلومات فراہم کریں:
+اگر کسی سوال کے لیے صفحے پر مواد مزید موجود نہیں ہے اور اسے ہٹانے کی ضرورت ہے، تو براہ کرم سوال کو ہٹانے کے لیے [ایک ایشو کھولیں](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) اور درج ذیل معلومات فراہم کریں:
 
 - وہ صفحہ جس پر آپ کوئز کا سوال حذف کرنا چاہتے ہیں
 - وہ سوال جسے آپ حذف کرنا چاہتے ہیں

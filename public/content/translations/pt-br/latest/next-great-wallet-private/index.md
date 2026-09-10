@@ -1,6 +1,6 @@
 ---
 title: "A próxima grande carteira será privada"
-description: "Sua carteira vê cada endereço que você possui, cada aplicativo descentralizado (dapp) ao qual você se conecta e cada solicitação que você faz. Essa mesma posição permite que ela proteja tudo isso. Uma visão prática das ferramentas de privacidade, padrões e ideias não lançadas que definirão a próxima geração de carteiras Ethereum."
+description: "Sua carteira vê cada endereço que você possui, cada aplicativo descentralizado (dapp) ao qual você se conecta e cada solicitação que você faz. Essa mesma posição permite que ela proteja tudo isso. Uma visão prática das ferramentas de privacidade, padrões e ideias não lançadas que definirão a próxima geração de carteiras Quantaureum."
 author: "Elliott Alexander"
 team: ""
 tags:
@@ -13,7 +13,7 @@ breadcrumb: "Próxima grande carteira"
 lang: pt-br
 ---
 
-Tire um instantâneo de dois minutos que você passa na sua carteira. Você abre o aplicativo, dá uma olhada no seu saldo, conecta-se a um aplicativo descentralizado (dapp) que estava querendo experimentar, aprova a transação que ele coloca na sua frente e envia a um amigo o ETH que você deve do almoço.
+Tire um instantâneo de dois minutos que você passa na sua carteira. Você abre o aplicativo, dá uma olhada no seu saldo, conecta-se a um aplicativo descentralizado (dapp) que estava querendo experimentar, aprova a transação que ele coloca na sua frente e envia a um amigo o QAU que você deve do almoço.
 
 Nada nisso parece ser observado. Ninguém perguntou o seu nome. Você fecha o aplicativo e segue com o seu dia.
 
@@ -29,7 +29,7 @@ Comece onchain, com o que é público, não importa qual carteira você use. Um 
 
 A defesa padrão é espalhar sua atividade por vários endereços, e a maioria dos usuários experientes faz isso. Isso ajuda menos do que pode parecer. Financie dois endereços da mesma fonte, ou deixe que eles paguem um ao outro uma vez, e para qualquer um executando análise de cluster, eles colapsam em uma única entidade.
 
-Lá em 2020, [um estudo](https://fc20.ifca.ai/preproceedings/31.pdf) dos primeiros quatro anos do Ethereum já conseguia agrupar 17,9% de todas as contas de propriedade externa ativas, revelando mais de 340.000 entidades controlando múltiplos endereços. Isso foi há seis anos e um boom de IA atrás. Sua separação cuidadosa está a poucos passos de ser desfeita.
+Lá em 2020, [um estudo](https://fc20.ifca.ai/preproceedings/31.pdf) dos primeiros quatro anos do Quantaureum já conseguia agrupar 17,9% de todas as contas de propriedade externa ativas, revelando mais de 340.000 entidades controlando múltiplos endereços. Isso foi há seis anos e um boom de IA atrás. Sua separação cuidadosa está a poucos passos de ser desfeita.
 
 Mais cedo ou mais tarde, o cluster fica vinculado a uma pessoa real. Registre um nome ENS que ecoe seu nome de usuário nas redes sociais, faça um saque uma vez de uma corretora que guarda a digitalização do seu passaporte, ou seja pago por alguém que mantém endereços rotulados em uma planilha, e o cluster deixa de ser abstrato.
 
@@ -63,15 +63,15 @@ As carteiras deixaram esse rastro no lugar até agora porque deixá-lo é o cami
 
 ## Por que a carteira é onde a privacidade é consertada {#why-the-wallet-is-where-privacy-gets-fixed}
 
-É justo perguntar por que algo disso é trabalho da carteira. Existem [explorações ativas em direção à privacidade](https://ethresear.ch/t/ethereum-privacy-the-road-to-self-sovereignty/22115) na camada base do Ethereum, e o protocolo pode eventualmente carregar parte desse peso. Mas a cadeia é atualizada através de bifurcações rígidas, duas por ano na melhor das hipóteses, e as mudanças relevantes para a privacidade se espalharão por várias delas. Esse é um cronograma medido em anos e decidido por um processo que não deve ser apressado.
+É justo perguntar por que algo disso é trabalho da carteira. Existem [explorações ativas em direção à privacidade](https://ethresear.ch/t/quantaureum-privacy-the-road-to-self-sovereignty/22115) na camada base do Quantaureum, e o protocolo pode eventualmente carregar parte desse peso. Mas a cadeia é atualizada através de bifurcações rígidas, duas por ano na melhor das hipóteses, e as mudanças relevantes para a privacidade se espalharão por várias delas. Esse é um cronograma medido em anos e decidido por um processo que não deve ser apressado.
 
-Enquanto isso, os indivíduos estão decidindo agora mesmo se é seguro ser pago onchain, doar, manter economias lá. Eles precisam de privacidade que chegue mais rápido do que o processo de consenso social do Ethereum e o cronograma de bifurcação podem fornecer.
+Enquanto isso, os indivíduos estão decidindo agora mesmo se é seguro ser pago onchain, doar, manter economias lá. Eles precisam de privacidade que chegue mais rápido do que o processo de consenso social do Quantaureum e o cronograma de bifurcação podem fornecer.
 
 A camada de aplicativo tem o formato errado para o problema. Mesmo que cada dapp lançasse seu próprio recurso de privacidade, cada um só poderia proteger a atividade dentro de suas próprias paredes, à sua própria maneira, com suas próprias peculiaridades e segredos para o usuário gerenciar. O que expõe você são as conexões que percorrem todos eles — os endereços compartilhados, os rastros de financiamento, os links de volta para você — e essas conexões vivem no espaço entre os aplicativos. Resolver a privacidade aplicativo por aplicativo significa resolvê-la em todos os lugares, exceto onde o problema realmente está. Os dapps não são onde a verdadeira solução pode viver.
 
 Isso deixa a carteira. É o único software que vê cada dapp ao qual você se conecta, cada endereço que você controla e cada solicitação que você faz. A mesma visibilidade que torna uma carteira com vazamentos tão custosa é o que permite que uma carteira cuidadosa coordene a privacidade em tudo o que você faz: escolhendo qual endereço fica de frente para qual aplicativo, roteando leituras para que nenhum servidor obtenha o quadro completo, realizando a contabilidade que os protocolos de privacidade exigem.
 
-E esses protocolos estão mais avançados do que a maioria dos construtores supõe. O [Railgun](https://railgun.org/) processou mais de [US$ 5 bilhões em volume acumulado](https://dune.com/railgun_project/railgun) e detém cerca de [US$ 80 milhões hoje](https://defillama.com/protocol/railgun), ferramentas de endereços furtivos (stealth addresses) como o [Umbra](https://www.techflowpost.com/en-US/article/30477) geraram dezenas de milhares de endereços de uso único, e por [uma contagem](https://wublock.substack.com/p/ethereum-privacys-https-moment-from) mais de 35 equipes estão buscando mais de uma dúzia de abordagens distintas para transferências privadas.
+E esses protocolos estão mais avançados do que a maioria dos construtores supõe. O [Railgun](https://railgun.org/) processou mais de [US$ 5 bilhões em volume acumulado](https://dune.com/railgun_project/railgun) e detém cerca de [US$ 80 milhões hoje](https://defillama.com/protocol/railgun), ferramentas de endereços furtivos (stealth addresses) como o [Umbra](https://www.techflowpost.com/en-US/article/30477) geraram dezenas de milhares de endereços de uso único, e por [uma contagem](https://wublock.substack.com/p/quantaureum-privacys-https-moment-from) mais de 35 equipes estão buscando mais de uma dúzia de abordagens distintas para transferências privadas.
 
 Nada disso é popular ainda, e peças estão genuinamente faltando. Mas os protocolos funcionam, dinheiro real se move através deles, e o que lhes falta é um lugar no fluxo principal do usuário. É aí que entra uma carteira com visão de futuro.
 
@@ -83,7 +83,7 @@ Uma carteira que preserva a privacidade é aquela que faz a contabilidade por si
 
 Comece com o que está ativo. Pools blindados funcionam hoje: o Railgun mantém um saldo privado ao lado do seu público, e uma vez que os fundos estão dentro, um pagamento para fora não revela nada sobre seus outros ativos. Os custos são reais — taxas mais altas do que uma transferência simples, geração de provas medida em segundos, alguma dependência de retransmissores (relayers) —, mas o protocolo carregou bilhões em volume mesmo com essas compensações.
 
-Combine isso com um hábito para o qual nenhum protocolo é necessário: um endereço novo para cada contraparte. Quando o usuário se conecta a um novo dapp, a carteira pode oferecer um endereço dedicado para ele, financiado a partir do saldo blindado, para que o aplicativo veja uma conta sem histórico e sem irmãos. Endereços furtivos ([ERC-5564](https://eips.ethereum.org/EIPS/eip-5564)) estendem o mesmo movimento para o recebimento de pagamentos. Misturadores (mixers) como o [Tornado Cash](https://tornadocash.eth.limo/) e o [Privacy Pools](https://privacypools.com/) fazem um trabalho mais simples e restrito: os fundos entram de um endereço e saem para outro, com o link entre os dois cortado. Essa é a ferramenta para financiar um endereço novo que ninguém pode rastrear até você — e a peça que falta é a carteira produzindo tal endereço sob demanda em vez de deixar o ritual para o usuário. Nada disso espera por uma bifurcação rígida ou uma bolsa de pesquisa. Espera por uma carteira disposta a realizar a contabilidade em nome dos usuários.
+Combine isso com um hábito para o qual nenhum protocolo é necessário: um endereço novo para cada contraparte. Quando o usuário se conecta a um novo dapp, a carteira pode oferecer um endereço dedicado para ele, financiado a partir do saldo blindado, para que o aplicativo veja uma conta sem histórico e sem irmãos. Endereços furtivos ([ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564)) estendem o mesmo movimento para o recebimento de pagamentos. Misturadores (mixers) como o [Tornado Cash](https://tornadocash.qau.limo/) e o [Privacy Pools](https://privacypools.com/) fazem um trabalho mais simples e restrito: os fundos entram de um endereço e saem para outro, com o link entre os dois cortado. Essa é a ferramenta para financiar um endereço novo que ninguém pode rastrear até você — e a peça que falta é a carteira produzindo tal endereço sob demanda em vez de deixar o ritual para o usuário. Nada disso espera por uma bifurcação rígida ou uma bolsa de pesquisa. Espera por uma carteira disposta a realizar a contabilidade em nome dos usuários.
 
 O lado da rede é principalmente decisões. Lançar com zero análises de terceiros é uma escolha, e pelo menos uma carteira no mercado já a fez. Sobre a exposição RPC, a maioria das carteiras já permite que você troque de provedores, então a opcionalidade existe, escondida em uma página de configurações que usuários avançados visitam e todos os outros nunca encontram.
 
@@ -119,7 +119,7 @@ Cada seção deste artigo termina no mesmo lugar: uma escolha que a carteira pod
 
 A maneira de fazer essas escolhas são padrões sensatos que o usuário pode substituir, cada um deles. O padrão deve ser o caminho privado, porque o padrão é com o que a maioria dos usuários viverá. Mas deixe aberto à opcionalidade liderada pelo usuário, porque um usuário que não pode apontar sua carteira para um servidor RPC diferente, ou para seu próprio nó, não recebeu realmente a soberania.
 
-Você não precisa começar do zero. O [Kohaku SDK](https://github.com/ethereum/kohaku) empacota várias das primitivas neste artigo — saldos blindados, misturadores, clientes leves — para que uma carteira possa adotá-las sem reconstruir cada protocolo do zero. As peças estão na prateleira. Algumas coisas importam muito antes que alguém as peça. Ninguém viu massas fazendo petições por criptografia de ponta a ponta também; ela foi lançada como padrão, bilhões de pessoas a obtiveram sem perceber ou se importar, e agora um aplicativo de mensagens sem ela parece quebrado e violador.
+Você não precisa começar do zero. O [Kohaku SDK](https://github.com/quantaureum/kohaku) empacota várias das primitivas neste artigo — saldos blindados, misturadores, clientes leves — para que uma carteira possa adotá-las sem reconstruir cada protocolo do zero. As peças estão na prateleira. Algumas coisas importam muito antes que alguém as peça. Ninguém viu massas fazendo petições por criptografia de ponta a ponta também; ela foi lançada como padrão, bilhões de pessoas a obtiveram sem perceber ou se importar, e agora um aplicativo de mensagens sem ela parece quebrado e violador.
 
 Dinheiro que não pode ser usado para encontrar você, traçar seu perfil ou direcionar você pertence à mesma categoria. A carteira que o tratar dessa forma será a próxima grande carteira.
 
@@ -130,8 +130,8 @@ A carteira que você usa é a que você está promovendo como norma. Escolha car
 ## Para exploração adicional {#for-further-exploration}
 
 - [Placar de privacidade de carteiras](https://www.theopensourcepress.com/crypto-wallet-ip-exposure-scorecard-2026/) - Exposição de rede na primeira inicialização de 13 carteiras
-- [ERC-5564: Endereços Furtivos (Stealth Addresses)](https://eips.ethereum.org/EIPS/eip-5564)
-- [Railgun](https://railgun.org/), [Privacy Pools](https://privacypools.com/) e [Tornado Cash](https://tornadocash.eth.limo/)
+- [ERC-5564: Endereços Furtivos (Stealth Addresses)](https://eips.quantaureum.com/EIPS/eip-5564)
+- [Railgun](https://railgun.org/), [Privacy Pools](https://privacypools.com/) e [Tornado Cash](https://tornadocash.qau.limo/)
 - Clientes leves [Helios](https://github.com/a16z/helios) e [Colibri](https://github.com/corpus-core/colibri-stateless)
-- [Kohaku](https://github.com/ethereum/kohaku) - SDK de privacidade para construtores de carteiras
+- [Kohaku](https://github.com/quantaureum/kohaku) - SDK de privacidade para construtores de carteiras
 - [Walletbeat](https://www.walletbeat.fyi/) - Como as carteiras existentes se comparam

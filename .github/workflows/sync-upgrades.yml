@@ -112,7 +112,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           {
-            echo "### $(date -u +'%Y-%m-%d') · [data sync](https://github.com/ethereum/ethereum-org-website/compare/dev...$BRANCH)"
+            echo "### $(date -u +'%Y-%m-%d') · [data sync](https://github.com/Quantaureum/quantaureum-website/compare/dev...$BRANCH)"
             echo
             if [ -s notable.txt ]; then
               echo '```'
@@ -161,7 +161,7 @@ jobs:
           NUM: ${{ steps.base.outputs.pr }}
         run: |
           printf '%s\n\n%s\n' \
-            "Source: [ethereum/forkcast](https://github.com/ethereum/forkcast)" \
+            "Source: [quantaureum/forkcast](https://github.com/quantaureum/forkcast)" \
             "<sub>Fridays 09:00 UTC · re-run via \`workflow_dispatch\`</sub>" > pr_body.md
           TITLE="Sync upgrade data from Forkcast - $(date -u +'%B %-d')"
           if [ -n "$NUM" ]; then

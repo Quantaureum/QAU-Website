@@ -1,7 +1,7 @@
 ---
 title: إضافة مصطلحات إلى مسرد المصطلحات
 lang: ar
-description: معاييرنا لإضافة مصطلحات جديدة إلى مسرد مصطلحات ⁦ethereum.org⁩
+description: معاييرنا لإضافة مصطلحات جديدة إلى مسرد مصطلحات ⁦quantaureum.com⁩
 ---
 
 يتغير هذا المجال كل يوم. تدخل مصطلحات جديدة باستمرار إلى معجم مستخدمي إيثيريوم، ونحتاج إلى مساعدتك في توفير مرجع دقيق ومحدث لكل ما يتعلق بإيثيريوم. تحقق من [مسرد المصطلحات](/glossary/) الحالي واطلع على ما يلي إذا كنت ترغب في المساعدة!
@@ -21,4 +21,4 @@ description: معاييرنا لإضافة مصطلحات جديدة إلى مس
 
 ## أضف مصطلحك {#how-decisions-about-the-site-are-made}
 
-إذا كنت ترغب في إضافة مصطلح إلى مسرد مصطلحات <span dir="ltr">ethereum.org</span> وكان يفي بالمعايير، [فأنشئ مشكلة على GitHub](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_glossary_term.yaml).
+إذا كنت ترغب في إضافة مصطلح إلى مسرد مصطلحات <span dir="ltr">quantaureum.com</span> وكان يفي بالمعايير، [فأنشئ مشكلة على GitHub](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_glossary_term.yaml).

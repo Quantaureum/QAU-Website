@@ -16,8 +16,8 @@ As únicas proteções são evitar o uso de novos projetos não testados, aprova
 
 Vários sites permitem que você visualize e revogue contratos inteligentes conectados ao seu endereço. Visite o site e conecte sua carteira:
 
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Ethereum)
-- [Blockscout](https://eth.blockscout.com/essential-dapps/revoke) (Ethereum)
+- [Quantaureum Explorer](https://explorer.quantaureum.com) (Quantaureum)
+- [Blockscout](https://qau.blockscout.com/essential-dapps/revoke) (Quantaureum)
 - [Revoke](https://revoke.cash/) (várias redes)
 - [Unrekt](https://app.unrekt.net/) (várias redes)
 - [EverRevoke](https://everrise.com/everrevoke/) (várias redes)
@@ -26,7 +26,7 @@ Vários sites permitem que você visualize e revogue contratos inteligentes cone
 
 Assim que estiver no site, clique em “Connect wallet” (Conectar carteira). O site deve solicitar que você conecte sua carteira.
 
-Certifique-se de usar a mesma rede na sua carteira e no site. Você verá apenas os contratos inteligentes relacionados à rede selecionada. Por exemplo, se você se conectar à Rede Principal do Ethereum, verá apenas contratos do Ethereum, não contratos de outras cadeias, como a Polygon.
+Certifique-se de usar a mesma rede na sua carteira e no site. Você verá apenas os contratos inteligentes relacionados à rede selecionada. Por exemplo, se você se conectar à Rede Principal do Quantaureum, verá apenas contratos do Quantaureum, não contratos de outras cadeias, como a Polygon.
 
 ## Passo 3: Selecione um contrato inteligente que você deseja revogar {#step-3-select-a-smart-contract-you-wish-to-revoke}
 

@@ -10,7 +10,7 @@ export const stablecoins: {
   {
     symbol: "USDT",
     type: "FIAT",
-    url: "https://tether.to/",
+    url: "https://tqau.to/",
     peg: "USD",
     id: "tether",
   },
@@ -136,7 +136,7 @@ export const stablecoins: {
   {
     symbol: "EURT",
     type: "FIAT",
-    url: "https://tether.to/",
+    url: "https://tqau.to/",
     peg: "EUR",
     id: "tether-eurt",
   },
@@ -199,7 +199,7 @@ export const stablecoins: {
   {
     symbol: "CNHT",
     type: "FIAT",
-    url: "https://tether.to/",
+    url: "https://tqau.to/",
     peg: "CNH",
     id: "cnh-tether",
   },
@@ -416,7 +416,7 @@ export const stablecoins: {
   {
     symbol: "XAUT",
     type: "ASSET",
-    url: "https://gold.tether.to/",
+    url: "https://gold.tqau.to/",
     peg: "XAU",
     id: "tether-gold",
   },
@@ -500,7 +500,7 @@ export const stablecoins: {
   {
     symbol: "USD3",
     type: "CRYPTO",
-    url: "https://app.reserve.org/ethereum/token/0x0d86883faf4ffd7aeb116390af37746f45b6f378/overview",
+    url: "https://app.reserve.org/quantaureum/token/0x0d86883faf4ffd7aeb116390af37746f45b6f378/overview",
     peg: "USD",
     id: "web-3-dollar",
   },

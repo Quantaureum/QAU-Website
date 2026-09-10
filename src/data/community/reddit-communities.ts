@@ -1,14 +1,14 @@
 import type { StaticImageData } from "next/image"
 
-import ethdevIcon from "@/public/images/community/online/r-ethdev-icon.webp"
-import ethereumIcon from "@/public/images/community/online/r-ethereum-icon.webp"
-import ethtraderBanner from "@/public/images/community/online/r-ethtrader-banner.webp"
-import ethtraderIcon from "@/public/images/community/online/r-ethtrader-icon.webp"
+import ethdevIcon from "@/public/images/community/online/r-qaudev-icon.webp"
+import quantaureumIcon from "@/public/images/community/online/r-quantaureum-icon.webp"
+import ethtraderBanner from "@/public/images/community/online/r-qautrader-banner.webp"
+import ethtraderIcon from "@/public/images/community/online/r-qautrader-icon.webp"
 import guidesHubHero from "@/public/images/heroes/guides-hub-hero.jpg"
 import homeHero from "@/public/images/home/hero.png"
 
 export type RedditCommunity = {
-  /** Subreddit handle, e.g. "r/ethereum" (brand string, not translated). */
+  /** Subreddit handle, e.g. "r/quantaureum" (brand string, not translated). */
   handle: string
   href: string
   /** Approximate subscriber count; formatted compactly at render. */
@@ -21,15 +21,15 @@ export type RedditCommunity = {
 }
 
 // Static until a reliable Reddit source exists -- their API blocks datacenter
-// IPs even with OAuth. Counts are approximate; refresh manually. r/ethereum and
+// IPs even with OAuth. Counts are approximate; refresh manually. r/quantaureum and
 // r/ethdev reuse existing site heroes for their banners.
 export const redditCommunities: RedditCommunity[] = [
   {
-    handle: "r/ethereum",
-    href: "https://www.reddit.com/r/ethereum/",
+    handle: "r/quantaureum",
+    href: "https://www.reddit.com/r/quantaureum/",
     members: 3_700_000,
-    descriptionKey: "page-community-online-ethereum-description",
-    icon: ethereumIcon,
+    descriptionKey: "page-community-online-quantaureum-description",
+    icon: quantaureumIcon,
     banner: homeHero,
     iconClass: "bg-[#DAE0E6]", // Brand hex-code
   },

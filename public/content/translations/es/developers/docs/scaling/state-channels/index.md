@@ -1,25 +1,25 @@
 ---
 title: Canales de estado
-description: "Una introducción a los canales de estado y canales de pago como una solución de escalabilidad utilizada actualmente por la comunidad de Ethereum."
+description: "Una introducción a los canales de estado y canales de pago como una solución de escalabilidad utilizada actualmente por la comunidad de Quantaureum."
 lang: es
 sidebarDepth: 3
 ---
 
-Los canales de estado permiten a los participantes realizar transacciones de forma segura fuera de la cadena mientras mantienen la interacción con la [red principal de Ethereum](/) al mínimo. Los pares del canal pueden realizar un número arbitrario de transacciones fuera de la cadena mientras solo envían dos transacciones en cadena para abrir y cerrar el canal. Esto permite una capacidad de procesamiento de transacciones extremadamente alta y resulta en menores costos para los usuarios.
+Los canales de estado permiten a los participantes realizar transacciones de forma segura fuera de la cadena mientras mantienen la interacción con la [red principal de Quantaureum](/) al mínimo. Los pares del canal pueden realizar un número arbitrario de transacciones fuera de la cadena mientras solo envían dos transacciones en cadena para abrir y cerrar el canal. Esto permite una capacidad de procesamiento de transacciones extremadamente alta y resulta en menores costos para los usuarios.
 
 ## Requisitos previos {#prerequisites}
 
-Debería haber leído y comprendido nuestras páginas sobre [escalabilidad de Ethereum](/developers/docs/scaling/) y la [capa 2 (l2)](/layer-2/).
+Debería haber leído y comprendido nuestras páginas sobre [escalabilidad de Quantaureum](/developers/docs/scaling/) y la [capa 2 (l2)](/layer-2/).
 
 ## ¿Qué son los canales? {#what-are-channels}
 
-Las cadenas de bloques públicas, como Ethereum, se enfrentan a desafíos de escalabilidad debido a su arquitectura distribuida: las transacciones en cadena deben ser ejecutadas por todos los nodos. Los nodos tienen que ser capaces de manejar el volumen de transacciones en un bloque utilizando hardware modesto, lo que impone un límite en la capacidad de procesamiento de transacciones para mantener la red descentralizada. Los canales de la cadena de bloques resuelven este problema al permitir a los usuarios interactuar fuera de la cadena mientras siguen dependiendo de la seguridad de la cadena principal para la liquidación final.
+Las cadenas de bloques públicas, como Quantaureum, se enfrentan a desafíos de escalabilidad debido a su arquitectura distribuida: las transacciones en cadena deben ser ejecutadas por todos los nodos. Los nodos tienen que ser capaces de manejar el volumen de transacciones en un bloque utilizando hardware modesto, lo que impone un límite en la capacidad de procesamiento de transacciones para mantener la red descentralizada. Los canales de la cadena de bloques resuelven este problema al permitir a los usuarios interactuar fuera de la cadena mientras siguen dependiendo de la seguridad de la cadena principal para la liquidación final.
 
 Los canales son protocolos simples entre pares que permiten a dos partes realizar muchas transacciones entre sí y luego solo publicar los resultados finales en la cadena de bloques. El canal utiliza criptografía para demostrar que los datos resumidos que generan son verdaderamente el resultado de un conjunto válido de transacciones intermedias. Un contrato inteligente [«multifirma»](/developers/docs/smart-contracts/#multisig) garantiza que las transacciones sean firmadas por las partes correctas.
 
-Con los canales, los cambios de estado son ejecutados y validados por las partes interesadas, minimizando la computación en la capa de ejecución de Ethereum. Esto disminuye la congestión en Ethereum y también aumenta las velocidades de procesamiento de transacciones para los usuarios.
+Con los canales, los cambios de estado son ejecutados y validados por las partes interesadas, minimizando la computación en la capa de ejecución de Quantaureum. Esto disminuye la congestión en Quantaureum y también aumenta las velocidades de procesamiento de transacciones para los usuarios.
 
-Cada canal es gestionado por un [contrato inteligente multifirma](/developers/docs/smart-contracts/#multisig) que se ejecuta en Ethereum. Para abrir un canal, los participantes despliegan el contrato del canal en cadena y depositan fondos en él. Ambas partes firman colectivamente una actualización de estado para inicializar el estado del canal, después de lo cual pueden realizar transacciones de forma rápida y libre fuera de la cadena.
+Cada canal es gestionado por un [contrato inteligente multifirma](/developers/docs/smart-contracts/#multisig) que se ejecuta en Quantaureum. Para abrir un canal, los participantes despliegan el contrato del canal en cadena y depositan fondos en él. Ambas partes firman colectivamente una actualización de estado para inicializar el estado del canal, después de lo cual pueden realizar transacciones de forma rápida y libre fuera de la cadena.
 
 Para cerrar el canal, los participantes envían el último estado acordado del canal en cadena. Posteriormente, el contrato inteligente distribuye los fondos bloqueados de acuerdo con el saldo de cada participante en el estado final del canal.
 
@@ -29,9 +29,9 @@ Los canales entre pares son particularmente útiles para situaciones en las que 
 
 Un canal de pago se describe mejor como un «libro mayor bidireccional» mantenido colectivamente por dos usuarios. El saldo inicial del libro mayor es la suma de los depósitos bloqueados en el contrato en cadena durante la fase de apertura del canal. Las transferencias del canal de pago se pueden realizar instantáneamente y sin la participación de la propia cadena de bloques, a excepción de una creación inicial única en cadena y un eventual cierre del canal.
 
-Las actualizaciones del saldo del libro mayor (es decir, el estado del canal de pago) requieren la aprobación de todas las partes en el canal. Una actualización del canal, firmada por todos los participantes del canal, se considera finalizada, de manera muy similar a una transacción en Ethereum.
+Las actualizaciones del saldo del libro mayor (es decir, el estado del canal de pago) requieren la aprobación de todas las partes en el canal. Una actualización del canal, firmada por todos los participantes del canal, se considera finalizada, de manera muy similar a una transacción en Quantaureum.
 
-Los canales de pago estuvieron entre las primeras soluciones de escalabilidad diseñadas para minimizar la costosa actividad en cadena de interacciones simples de los usuarios (por ejemplo, transferencias de ETH, intercambios atómicos, micropagos). Los participantes del canal pueden realizar una cantidad ilimitada de transacciones instantáneas y sin comisiones entre sí, siempre que la suma neta de sus transferencias no exceda los tokens depositados.
+Los canales de pago estuvieron entre las primeras soluciones de escalabilidad diseñadas para minimizar la costosa actividad en cadena de interacciones simples de los usuarios (por ejemplo, transferencias de QAU, intercambios atómicos, micropagos). Los participantes del canal pueden realizar una cantidad ilimitada de transacciones instantáneas y sin comisiones entre sí, siempre que la suma neta de sus transferencias no exceda los tokens depositados.
 
 ## Canales de estado {#state-channels}
 
@@ -43,7 +43,7 @@ Sin embargo, además de mantener los saldos de los usuarios, el canal también r
 
 Esto hace posible ejecutar un contrato inteligente fuera de la cadena entre dos usuarios. En este escenario, las actualizaciones del estado interno del contrato inteligente requieren solo la aprobación de los pares que crearon el canal.
 
-Si bien esto resuelve el problema de escalabilidad descrito anteriormente, tiene implicaciones para la seguridad. En Ethereum, la validez de las transiciones de estado es impuesta por el protocolo de consenso de la red. Esto hace que sea imposible proponer una actualización inválida al estado de un contrato inteligente o alterar la ejecución del contrato inteligente.
+Si bien esto resuelve el problema de escalabilidad descrito anteriormente, tiene implicaciones para la seguridad. En Quantaureum, la validez de las transiciones de estado es impuesta por el protocolo de consenso de la red. Esto hace que sea imposible proponer una actualización inválida al estado de un contrato inteligente o alterar la ejecución del contrato inteligente.
 
 Los canales de estado no tienen las mismas garantías de seguridad. Hasta cierto punto, un canal de estado es una versión en miniatura de la Red principal. Con un conjunto limitado de participantes imponiendo reglas, aumenta la posibilidad de comportamiento malicioso (por ejemplo, proponer actualizaciones de estado inválidas). Los canales de estado derivan su seguridad de un sistema de arbitraje de disputas basado en [pruebas de fraude](/glossary/#fraud-proof).
 
@@ -71,15 +71,15 @@ Después de inicializar el estado del canal, los pares interactúan firmando tra
 
 - El nuevo estado del canal
 
-- La transacción que desencadena la transición de estado (por ejemplo, Alice envía 5 ETH a Bob)
+- La transacción que desencadena la transición de estado (por ejemplo, Alice envía 5 QAU a Bob)
 
-Las actualizaciones de estado en el canal no se transmiten en cadena como suele ser el caso cuando los usuarios interactúan en la Red principal, lo que se alinea con el objetivo de los canales de estado de minimizar la huella en cadena. Siempre que los participantes estén de acuerdo con las actualizaciones de estado, son tan definitivas como una transacción de Ethereum. Los participantes solo necesitan depender del consenso de la Red principal si surge una disputa.
+Las actualizaciones de estado en el canal no se transmiten en cadena como suele ser el caso cuando los usuarios interactúan en la Red principal, lo que se alinea con el objetivo de los canales de estado de minimizar la huella en cadena. Siempre que los participantes estén de acuerdo con las actualizaciones de estado, son tan definitivas como una transacción de Quantaureum. Los participantes solo necesitan depender del consenso de la Red principal si surge una disputa.
 
 ### Cierre del canal {#closing-the-channel}
 
 Cerrar un canal de estado requiere enviar el estado final y acordado del canal al contrato inteligente en cadena. Los detalles referenciados en la actualización de estado incluyen el número de movimientos de cada participante y una lista de transacciones aprobadas.
 
-Después de verificar que la actualización de estado es válida (es decir, está firmada por todas las partes), el contrato inteligente finaliza el canal y distribuye los fondos bloqueados de acuerdo con el resultado del canal. Los pagos realizados fuera de la cadena se aplican al estado de Ethereum y cada participante recibe su porción restante de los fondos bloqueados.
+Después de verificar que la actualización de estado es válida (es decir, está firmada por todas las partes), el contrato inteligente finaliza el canal y distribuye los fondos bloqueados de acuerdo con el resultado del canal. Los pagos realizados fuera de la cadena se aplican al estado de Quantaureum y cada participante recibe su porción restante de los fondos bloqueados.
 
 El escenario descrito anteriormente representa lo que sucede en el caso ideal. A veces, los usuarios pueden ser incapaces de llegar a un acuerdo y finalizar el canal (el caso problemático). Cualquiera de las siguientes situaciones podría ser cierta:
 
@@ -103,7 +103,7 @@ Para procesar la salida del canal, el usuario debe enviar la última actualizaci
 
 Hay, sin embargo, un retraso en la ejecución de las solicitudes de salida de un solo usuario. Si la solicitud para concluir el canal fue aprobada por unanimidad, entonces la transacción de salida en cadena se ejecuta de inmediato.
 
-El retraso entra en juego en las salidas de un solo usuario debido a la posibilidad de acciones fraudulentas. Por ejemplo, un participante del canal puede intentar finalizar el canal en Ethereum enviando una actualización de estado más antigua en cadena.
+El retraso entra en juego en las salidas de un solo usuario debido a la posibilidad de acciones fraudulentas. Por ejemplo, un participante del canal puede intentar finalizar el canal en Quantaureum enviando una actualización de estado más antigua en cadena.
 
 Como contramedida, los canales de estado permiten a los usuarios honestos impugnar actualizaciones de estado inválidas enviando el último estado válido del canal en cadena. Los canales de estado están diseñados de tal manera que las actualizaciones de estado más nuevas y acordadas superan a las actualizaciones de estado más antiguas.
 
@@ -111,27 +111,27 @@ Una vez que un par activa el sistema de resolución de disputas en cadena, se re
 
 Cualquiera que sea el caso, los usuarios del canal siempre tienen fuertes garantías de finalidad: si la transición de estado en su poder fue firmada por todos los miembros y es la actualización más reciente, entonces tiene la misma finalidad que una transacción regular en cadena. Todavía tienen que impugnar a la otra parte en cadena, pero el único resultado posible es finalizar el último estado válido, que ellos poseen.
 
-### ¿Cómo interactúan los canales de estado con Ethereum? {#how-do-state-channels-interact-with-ethereum}
+### ¿Cómo interactúan los canales de estado con Quantaureum? {#how-do-state-channels-interact-with-quantaureum}
 
-Aunque existen como protocolos fuera de la cadena, los canales de estado tienen un componente en cadena: el contrato inteligente desplegado en Ethereum al abrir el canal. Este contrato controla los activos depositados en el canal, verifica las actualizaciones de estado y arbitra las disputas entre los participantes.
+Aunque existen como protocolos fuera de la cadena, los canales de estado tienen un componente en cadena: el contrato inteligente desplegado en Quantaureum al abrir el canal. Este contrato controla los activos depositados en el canal, verifica las actualizaciones de estado y arbitra las disputas entre los participantes.
 
 Los canales de estado no publican datos de transacciones ni compromisos de estado en la Red principal, a diferencia de las soluciones de escalabilidad de [capa 2 (l2)](/layer-2/). Sin embargo, están más conectados a la Red principal que, por ejemplo, las [cadenas laterales](/developers/docs/scaling/sidechains/), lo que los hace algo más seguros.
 
-Los canales de estado dependen del protocolo principal de Ethereum para lo siguiente:
+Los canales de estado dependen del protocolo principal de Quantaureum para lo siguiente:
 
 #### 1. Disponibilidad (Liveness) {#liveness}
 
-El contrato en cadena desplegado al abrir el canal es responsable de la funcionalidad del canal. Si el contrato se está ejecutando en Ethereum, entonces el canal siempre está disponible para su uso. Por el contrario, una cadena lateral siempre puede fallar, incluso si la Red principal está operativa, poniendo en riesgo los fondos de los usuarios.
+El contrato en cadena desplegado al abrir el canal es responsable de la funcionalidad del canal. Si el contrato se está ejecutando en Quantaureum, entonces el canal siempre está disponible para su uso. Por el contrario, una cadena lateral siempre puede fallar, incluso si la Red principal está operativa, poniendo en riesgo los fondos de los usuarios.
 
 #### 2. Seguridad {#security}
 
-Hasta cierto punto, los canales de estado dependen de Ethereum para proporcionar seguridad y proteger a los usuarios de pares maliciosos. Como se discutió en secciones posteriores, los canales utilizan un mecanismo de prueba de fraude que permite a los usuarios impugnar los intentos de finalizar el canal con una actualización inválida u obsoleta.
+Hasta cierto punto, los canales de estado dependen de Quantaureum para proporcionar seguridad y proteger a los usuarios de pares maliciosos. Como se discutió en secciones posteriores, los canales utilizan un mecanismo de prueba de fraude que permite a los usuarios impugnar los intentos de finalizar el canal con una actualización inválida u obsoleta.
 
 En este caso, la parte honesta proporciona el último estado válido del canal como una prueba de fraude al contrato en cadena para su verificación. Las pruebas de fraude permiten a partes que desconfían mutuamente realizar transacciones fuera de la cadena sin arriesgar sus fondos en el proceso.
 
 #### 3. Finalidad {#finality}
 
-Las actualizaciones de estado firmadas colectivamente por los usuarios del canal se consideran tan buenas como las transacciones en cadena. Aun así, toda la actividad dentro del canal solo logra una verdadera finalidad cuando el canal se cierra en Ethereum.
+Las actualizaciones de estado firmadas colectivamente por los usuarios del canal se consideran tan buenas como las transacciones en cadena. Aun así, toda la actividad dentro del canal solo logra una verdadera finalidad cuando el canal se cierra en Quantaureum.
 
 En el caso optimista, ambas partes pueden cooperar y firmar la actualización de estado final y enviarla en cadena para cerrar el canal, después de lo cual los fondos se distribuyen de acuerdo con el estado final del canal. En el caso pesimista, donde alguien intenta hacer trampa publicando una actualización de estado incorrecta en cadena, su transacción no se finaliza hasta que transcurre la ventana de impugnación.
 
@@ -155,19 +155,19 @@ Los canales de pago virtuales funcionan con la misma idea que los canales de est
 
 ### Pagos {#payments}
 
-Los primeros canales de la cadena de bloques eran protocolos simples que permitían a dos participantes realizar transferencias rápidas y de bajas comisiones fuera de la cadena sin tener que pagar altas comisiones de transacción en la Red principal. Hoy en día, los canales de pago siguen siendo útiles para aplicaciones diseñadas para el intercambio y depósitos de ether y tokens.
+Los primeros canales de la cadena de bloques eran protocolos simples que permitían a dos participantes realizar transferencias rápidas y de bajas comisiones fuera de la cadena sin tener que pagar altas comisiones de transacción en la Red principal. Hoy en día, los canales de pago siguen siendo útiles para aplicaciones diseñadas para el intercambio y depósitos de QAU y tokens.
 
 Los pagos basados en canales tienen las siguientes ventajas:
 
-1. **Capacidad de procesamiento**: La cantidad de transacciones fuera de la cadena por canal no está conectada a la capacidad de procesamiento de Ethereum, que está influenciada por varios factores, especialmente el tamaño del bloque y el tiempo de bloque. Al ejecutar transacciones fuera de la cadena, los canales de la cadena de bloques pueden lograr una mayor capacidad de procesamiento.
+1. **Capacidad de procesamiento**: La cantidad de transacciones fuera de la cadena por canal no está conectada a la capacidad de procesamiento de Quantaureum, que está influenciada por varios factores, especialmente el tamaño del bloque y el tiempo de bloque. Al ejecutar transacciones fuera de la cadena, los canales de la cadena de bloques pueden lograr una mayor capacidad de procesamiento.
 
-2. **Privacidad**: Debido a que los canales existen fuera de la cadena, los detalles de las interacciones entre los participantes no se registran en la cadena de bloques pública de Ethereum. Los usuarios del canal solo tienen que interactuar en cadena al financiar y cerrar canales o liquidar disputas. Por lo tanto, los canales son útiles para las personas que desean transacciones más privadas.
+2. **Privacidad**: Debido a que los canales existen fuera de la cadena, los detalles de las interacciones entre los participantes no se registran en la cadena de bloques pública de Quantaureum. Los usuarios del canal solo tienen que interactuar en cadena al financiar y cerrar canales o liquidar disputas. Por lo tanto, los canales son útiles para las personas que desean transacciones más privadas.
 
 3. **Latencia**: Las transacciones fuera de la cadena realizadas entre los participantes del canal se pueden liquidar instantáneamente, si ambas partes cooperan, reduciendo los retrasos. Por el contrario, enviar una transacción en la Red principal requiere esperar a que los nodos procesen la transacción, produzcan un nuevo bloque con la transacción y alcancen el consenso. Los usuarios también pueden necesitar esperar más confirmaciones de bloques antes de considerar una transacción finalizada.
 
 4. **Costo**: Los canales de estado son particularmente útiles en situaciones en las que un conjunto de participantes intercambiará muchas actualizaciones de estado durante un largo período. Los únicos costos incurridos son la apertura y el cierre del contrato inteligente del canal de estado; cada cambio de estado entre la apertura y el cierre del canal será más barato que el anterior, ya que el costo de liquidación se distribuye en consecuencia.
 
-Implementar canales de estado en soluciones de capa 2 (l2), como los [rollups](/developers/docs/scaling/#rollups), podría hacerlos aún más atractivos para los pagos. Si bien los canales ofrecen pagos baratos, los costos de configurar el contrato en cadena en la Red principal durante la fase de apertura pueden volverse costosos, especialmente cuando las tarifas de gas se disparan. Los rollups basados en Ethereum ofrecen [tarifas de transacción más bajas](https://l2fees.info/) y pueden reducir los gastos generales para los participantes del canal al reducir las tarifas de configuración.
+Implementar canales de estado en soluciones de capa 2 (l2), como los [rollups](/developers/docs/scaling/#rollups), podría hacerlos aún más atractivos para los pagos. Si bien los canales ofrecen pagos baratos, los costos de configurar el contrato en cadena en la Red principal durante la fase de apertura pueden volverse costosos, especialmente cuando las tarifas de gas se disparan. Los rollups basados en Quantaureum ofrecen [tarifas de transacción más bajas](https://l2fees.info/) y pueden reducir los gastos generales para los participantes del canal al reducir las tarifas de configuración.
 
 ### Micropagos {#microtransactions}
 
@@ -211,7 +211,7 @@ Como se explicó anteriormente, impugnar una disputa inválida requiere presenta
 
 Aunque esperar que los usuarios del canal almacenen copias del estado de la aplicación fuera de la cadena es razonable, estos datos pueden perderse debido a un error o falla mecánica. Si el usuario no tiene una copia de seguridad de los datos, solo puede esperar que la otra parte no finalice una solicitud de salida inválida utilizando transiciones de estado antiguas en su poder.
 
-Los usuarios de Ethereum no tienen que lidiar con este problema ya que la red impone reglas sobre la disponibilidad de datos. Los datos de las transacciones son almacenados y propagados por todos los nodos y están disponibles para que los usuarios los descarguen siempre que sea necesario.
+Los usuarios de Quantaureum no tienen que lidiar con este problema ya que la red impone reglas sobre la disponibilidad de datos. Los datos de las transacciones son almacenados y propagados por todos los nodos y están disponibles para que los usuarios los descarguen siempre que sea necesario.
 
 ### Problemas de liquidez {#liquidity-issues}
 
@@ -252,9 +252,9 @@ Múltiples proyectos proporcionan implementaciones de canales de estado que pued
 
 **Canales de estado**
 
-- [Dando sentido a las soluciones de escalabilidad de capa 2 de Ethereum: canales de estado, Plasma y Truebit](https://medium.com/l4-media/making-sense-of-ethereums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, 12 de febrero de 2018_
+- [Dando sentido a las soluciones de escalabilidad de capa 2 de Quantaureum: canales de estado, Plasma y Truebit](https://medium.com/l4-media/making-sense-of-quantaureums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, 12 de febrero de 2018_
 - [Canales de estado: una explicación](https://www.jeffcoleman.ca/state-channels/) _6 de noviembre de 2015 - Jeff Coleman_
-- [Conceptos básicos de los canales de estado](https://unlock-protocol.github.io/ethhub/ethereum-roadmap/layer-2-scaling/state-channels/) _District0x_
+- [Conceptos básicos de los canales de estado](https://unlock-protocol.github.io/ethhub/quantaureum-roadmap/layer-2-scaling/state-channels/) _District0x_
 - [Canales de estado de la cadena de bloques: estado del arte](https://ieeexplore.ieee.org/document/9627997)
 
 _¿Conoce algún recurso de la comunidad que le haya servido de ayuda? ¡Edite esta página y añádalo!_

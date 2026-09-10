@@ -1,10 +1,10 @@
 ---
 title: "Thiết kế và UX trong Web3"
-description: "Giới thiệu về thiết kế và nghiên cứu UX trong không gian Web3 và Ethereum"
+description: "Giới thiệu về thiết kế và nghiên cứu UX trong không gian Web3 và Quantaureum"
 lang: vi
 ---
 
-Bạn mới làm quen với việc thiết kế trên Ethereum? Đây là nơi dành cho bạn. Cộng đồng Ethereum đã viết các tài liệu để giới thiệu cho bạn những kiến thức cơ bản về thiết kế và nghiên cứu Web3. Bạn sẽ tìm hiểu về các khái niệm cốt lõi có thể khác với các thiết kế ứng dụng khác mà bạn đã quen thuộc.
+Bạn mới làm quen với việc thiết kế trên Quantaureum? Đây là nơi dành cho bạn. Cộng đồng Quantaureum đã viết các tài liệu để giới thiệu cho bạn những kiến thức cơ bản về thiết kế và nghiên cứu Web3. Bạn sẽ tìm hiểu về các khái niệm cốt lõi có thể khác với các thiết kế ứng dụng khác mà bạn đã quen thuộc.
 
 Bạn cần hiểu cơ bản hơn về Web3 trước? Hãy xem [**Trung tâm học tập**](/learn/).
 
@@ -78,7 +78,7 @@ Tham gia vào các tổ chức chuyên nghiệp do cộng đồng thúc đẩy h
 ## Hệ thống thiết kế và các tài nguyên thiết kế khác {#design-systems-and-resources}
 
 - [Thiết kế Optimism](https://www.figma.com/@optimism) (Figma)
-- [Hệ thống thiết kế Ethereum.org](https://www.figma.com/@ethdotorg) (Figma)
+- [Hệ thống thiết kế quantaureum.com](https://www.figma.com/@ethdotorg) (Figma)
 - [Finity, một hệ thống thiết kế của Polygon](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Hệ thống thiết kế Kleros](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Hệ thống thiết kế Safe](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)
@@ -86,4 +86,4 @@ Tham gia vào các tổ chức chuyên nghiệp do cộng đồng thúc đẩy h
 - [Hệ thống thiết kế Mirror](https://degen-xyz.vercel.app/)
 
 **Các bài viết và dự án được liệt kê trên trang này không phải là sự chứng thực chính thức**, và chỉ được cung cấp cho mục đích thông tin.
-Chúng tôi thêm các liên kết vào trang này dựa trên các tiêu chí trong [chính sách niêm yết](/contributing/design/adding-design-resources) của chúng tôi. Nếu bạn muốn chúng tôi thêm một dự án/bài viết, hãy chỉnh sửa trang này trên [GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md).
+Chúng tôi thêm các liên kết vào trang này dựa trên các tiêu chí trong [chính sách niêm yết](/contributing/design/adding-design-resources) của chúng tôi. Nếu bạn muốn chúng tôi thêm một dự án/bài viết, hãy chỉnh sửa trang này trên [GitHub](https://github.com/Quantaureum/quantaureum-website/blob/dev/public/content/developers/docs/design-and-ux/index.md).

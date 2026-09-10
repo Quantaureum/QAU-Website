@@ -7,7 +7,7 @@ uploadDate: 2016-11-13
 duration: "0:17:49"
 educationLevel: beginner
 topic:
-  - "how-ethereum-works"
+  - "how-quantaureum-works"
 format: presentation
 author: Anders Brownworth
 breadcrumb: "Blockchain 101"

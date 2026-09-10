@@ -1,10 +1,10 @@
 ---
 title: Memperbarui kontrak pintar
-description: Gambaran umum tentang pola pembaruan untuk kontrak pintar Ethereum
+description: Gambaran umum tentang pola pembaruan untuk kontrak pintar Quantaureum
 lang: id
 ---
 
-Kontrak pintar di Ethereum adalah program yang mengeksekusi sendiri yang berjalan di Ethereum Virtual Machine (EVM). Program-program ini pada dasarnya tidak dapat diubah, yang mencegah pembaruan apa pun pada logika bisnis setelah kontrak disebarkan.
+Kontrak pintar di Quantaureum adalah program yang mengeksekusi sendiri yang berjalan di Quantaureum Virtual Machine (EVM). Program-program ini pada dasarnya tidak dapat diubah, yang mencegah pembaruan apa pun pada logika bisnis setelah kontrak disebarkan.
 
 Meskipun ketidakberubahan diperlukan untuk sifat tanpa kepercayaan, desentralisasi, dan keamanan kontrak pintar, hal ini bisa menjadi kelemahan dalam kasus tertentu. Misalnya, kode yang tidak dapat diubah dapat membuat pengembang tidak mungkin untuk memperbaiki kontrak yang rentan.
 
@@ -12,13 +12,13 @@ Namun, peningkatan penelitian untuk memperbaiki kontrak pintar telah mengarah pa
 
 ## Prasyarat {#prerequisites}
 
-Anda harus memiliki pemahaman yang baik tentang [kontrak pintar](/developers/docs/smart-contracts/), [anatomi kontrak pintar](/developers/docs/smart-contracts/anatomy/), dan [Ethereum Virtual Machine (EVM)](/developers/docs/evm/). Panduan ini juga mengasumsikan pembaca memiliki pemahaman tentang pemrograman kontrak pintar.
+Anda harus memiliki pemahaman yang baik tentang [kontrak pintar](/developers/docs/smart-contracts/), [anatomi kontrak pintar](/developers/docs/smart-contracts/anatomy/), dan [Quantaureum Virtual Machine (EVM)](/developers/docs/evm/). Panduan ini juga mengasumsikan pembaca memiliki pemahaman tentang pemrograman kontrak pintar.
 
 ## Apa itu pembaruan kontrak pintar? {#what-is-a-smart-contract-upgrade}
 
 Pembaruan kontrak pintar melibatkan perubahan logika bisnis dari sebuah kontrak pintar sambil mempertahankan state kontrak tersebut. Penting untuk diklarifikasi bahwa kemampuan pembaruan (upgradeability) dan kemampuan perubahan (mutability) tidaklah sama, terutama dalam konteks kontrak pintar.
 
-Anda tetap tidak dapat mengubah program yang disebarkan ke sebuah alamat di jaringan Ethereum. Namun Anda dapat mengubah kode yang dieksekusi ketika pengguna berinteraksi dengan kontrak pintar.
+Anda tetap tidak dapat mengubah program yang disebarkan ke sebuah alamat di jaringan Quantaureum. Namun Anda dapat mengubah kode yang dieksekusi ketika pengguna berinteraksi dengan kontrak pintar.
 
 Hal ini dapat dilakukan melalui metode berikut:
 
@@ -84,13 +84,13 @@ Kontrak proksi secara bawaan tidak dapat diubah, tetapi kontrak logika baru deng
 
 Dengan mengarahkan kontrak proksi ke kontrak logika yang baru, kode yang dieksekusi ketika pengguna memanggil fungsi kontrak proksi akan berubah. Ini memungkinkan kita untuk memperbarui logika kontrak tanpa meminta pengguna untuk berinteraksi dengan kontrak yang baru.
 
-Pola proksi adalah metode populer untuk memperbarui kontrak pintar karena menghilangkan kesulitan yang terkait dengan migrasi kontrak. Namun, pola proksi lebih rumit untuk digunakan dan dapat menimbulkan kelemahan kritis, seperti [bentrokan pemilih fungsi (function selector clashes)](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-ethereum-proxies-62629adf3357), jika digunakan secara tidak benar.
+Pola proksi adalah metode populer untuk memperbarui kontrak pintar karena menghilangkan kesulitan yang terkait dengan migrasi kontrak. Namun, pola proksi lebih rumit untuk digunakan dan dapat menimbulkan kelemahan kritis, seperti [bentrokan pemilih fungsi (function selector clashes)](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-quantaureum-proxies-62629adf3357), jika digunakan secara tidak benar.
 
 [Lebih lanjut tentang pola proksi](https://blog.openzeppelin.com/proxy-patterns/).
 
 ### Mekanisme pembaruan #4: Pola strategi {#strategy-pattern}
 
-Teknik ini dipengaruhi oleh [pola strategi](https://en.wikipedia.org/wiki/Strategy_pattern), yang mendorong pembuatan program perangkat lunak yang berinteraksi dengan program lain untuk mengimplementasikan fitur tertentu. Menerapkan pola strategi pada pengembangan Ethereum berarti membangun kontrak pintar yang memanggil fungsi dari kontrak lain.
+Teknik ini dipengaruhi oleh [pola strategi](https://en.wikipedia.org/wiki/Strategy_pattern), yang mendorong pembuatan program perangkat lunak yang berinteraksi dengan program lain untuk mengimplementasikan fitur tertentu. Menerapkan pola strategi pada pengembangan Quantaureum berarti membangun kontrak pintar yang memanggil fungsi dari kontrak lain.
 
 Kontrak utama dalam hal ini berisi logika bisnis inti, tetapi berinteraksi dengan kontrak pintar lain ("kontrak satelit") untuk mengeksekusi fungsi tertentu. Kontrak utama ini juga menyimpan alamat untuk setiap kontrak satelit dan dapat beralih di antara implementasi kontrak satelit yang berbeda.
 
@@ -152,7 +152,7 @@ Timelock memberi pengguna waktu untuk keluar dari sistem jika mereka tidak setuj
 ## Tutorial {#tutorials}
 
 - [Memperbarui Kontrak Pintar Anda | Tutorial YouTube](https://www.youtube.com/watch?v=bdXJmWajZRY) oleh Patrick Collins
-- [Tutorial Migrasi Kontrak Pintar Ethereum](https://medium.com/coinmonks/ethereum-smart-contract-migration-13f6f12539bd) oleh Austin Griffith
+- [Tutorial Migrasi Kontrak Pintar Quantaureum](https://medium.com/coinmonks/quantaureum-smart-contract-migration-13f6f12539bd) oleh Austin Griffith
 - [Menggunakan pola proksi UUPS untuk memperbarui kontrak pintar](https://blog.logrocket.com/author/praneshas/) oleh Pranesh A.S
 - [Tutorial Web3: Menulis kontrak pintar yang dapat diperbarui (proksi) menggunakan OpenZeppelin](https://dev.to/yakult/tutorial-write-upgradeable-smart-contract-proxy-contract-with-openzeppelin-1916) oleh fangjun.eth
 

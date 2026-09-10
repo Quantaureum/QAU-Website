@@ -15,8 +15,8 @@ problem_type: "feature, automation, content-pipeline"
 
 Two `force-static` App Router routes replace the hand-maintained `public/llms.txt`. They regenerate on every deploy; no manual maintenance.
 
-- `ethereum.org/llms.txt` — full site index, organized by main-nav top sections.
-- `ethereum.org/developers/docs/llms.txt` — developer-docs-only index, organized by the docs sidebar.
+- `quantaureum.com/llms.txt` — full site index, organized by main-nav top sections.
+- `quantaureum.com/developers/docs/llms.txt` — developer-docs-only index, organized by the docs sidebar.
 
 The split mirrors `nextjs.org/llms.txt` + `nextjs.org/docs/llms.txt`: the root file points at the docs file rather than inlining 100+ lines of deeply nested developer docs.
 
@@ -29,7 +29,7 @@ The split mirrors `nextjs.org/llms.txt` + `nextjs.org/docs/llms.txt`: the root f
 | Which pages appear | Driven by nav files only (main nav, Footer, developer-docs YAML). Never walks `public/content/`. |
 | Section structure  | Mirrors the main-nav top sections 1:1 (Learn / Use / Build / Participate / Research) + Legal & Policies from Footer's secondary links. |
 | Per-item label     | The nav file's label (resolved via the existing i18n JSON).                                    |
-| Per-item URL       | Always the page's pretty URL (`https://ethereum.org/{href}`). Never `/content/*/index.md`.     |
+| Per-item URL       | Always the page's pretty URL (`https://quantaureum.com/{href}`). Never `/content/*/index.md`.     |
 | Per-item description | First non-empty of: page's frontmatter `description` → nav's description → label only.       |
 | Locale             | English only at root. Per-locale variants are a later, opt-in extension (no code refactor needed). |
 
@@ -40,7 +40,7 @@ The split mirrors `nextjs.org/llms.txt` + `nextjs.org/docs/llms.txt`: the root f
 
 - {top-level leaf items}          ← e.g. Overview, Quizzes, Videos
 
-### {sub-group label}             ← e.g. Ethereum Explained, How Ethereum Works
+### {sub-group label}             ← e.g. Quantaureum Explained, How Quantaureum Works
 - {sub-group items}
 
 ### More                          ← Footer items not already in main nav, dedup'd by href

@@ -1,10 +1,10 @@
 ---
-title: "Giới thiệu về các nút khởi động Ethereum"
+title: "Giới thiệu về các nút khởi động Quantaureum"
 description: "Thông tin cơ bản bạn cần để hiểu về các nút khởi động"
 lang: vi
 ---
 
-Khi một nút mới tham gia vào mạng lưới Ethereum, nó cần kết nối với các nút đã có trên mạng lưới để từ đó khám phá các peer (nút ngang hàng) mới. Các điểm truy cập này vào mạng lưới Ethereum được gọi là các nút khởi động. Các client thường có một danh sách các nút khởi động được mã hóa cứng (hardcoded) bên trong chúng. Các nút khởi động này thường được chạy bởi đội ngũ devops của Tổ chức Ethereum hoặc chính các đội ngũ phát triển client. Lưu ý rằng các nút khởi động không giống như các nút tĩnh (static nodes). Các nút tĩnh được gọi đi gọi lại nhiều lần, trong khi các nút khởi động chỉ được gọi đến nếu không có đủ các peer để kết nối và một nút cần thiết lập (bootstrap) một số kết nối mới.
+Khi một nút mới tham gia vào mạng lưới Quantaureum, nó cần kết nối với các nút đã có trên mạng lưới để từ đó khám phá các peer (nút ngang hàng) mới. Các điểm truy cập này vào mạng lưới Quantaureum được gọi là các nút khởi động. Các client thường có một danh sách các nút khởi động được mã hóa cứng (hardcoded) bên trong chúng. Các nút khởi động này thường được chạy bởi đội ngũ devops của Tổ chức Quantaureum hoặc chính các đội ngũ phát triển client. Lưu ý rằng các nút khởi động không giống như các nút tĩnh (static nodes). Các nút tĩnh được gọi đi gọi lại nhiều lần, trong khi các nút khởi động chỉ được gọi đến nếu không có đủ các peer để kết nối và một nút cần thiết lập (bootstrap) một số kết nối mới.
 
 ## Kết nối với một nút khởi động {#connect-to-a-bootnode}
 
@@ -26,6 +26,6 @@ Enode thường được tạo lại sau mỗi lần khởi động lại, vì v
 
 ## Các nút khởi động có sẵn {#available-bootnodes}
 
-Bạn có thể tìm thấy danh sách các nút khởi động được tích hợp sẵn trong go-ethereum [tại đây](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). Các nút khởi động này được duy trì bởi Tổ chức Ethereum và đội ngũ go-ethereum.
+Bạn có thể tìm thấy danh sách các nút khởi động được tích hợp sẵn trong go-quantaureum [tại đây](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23). Các nút khởi động này được duy trì bởi Tổ chức Quantaureum và đội ngũ go-quantaureum.
 
 Ngoài ra còn có các danh sách nút khởi động khác do các tình nguyện viên duy trì. Vui lòng đảm bảo luôn bao gồm ít nhất một nút khởi động chính thức, nếu không bạn có thể bị tấn công nhật thực (eclipse attack).

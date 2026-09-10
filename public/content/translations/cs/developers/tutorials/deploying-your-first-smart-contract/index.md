@@ -7,8 +7,8 @@ skill: beginner
 breadcrumb: "Nasazení prvního kontraktu"
 lang: cs
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -18,7 +18,7 @@ Nebojte se, jelikož se jedná o náš první chytrý kontrakt, nasadíme ho v [
 
 ## Psaní našeho kontraktu {#writing-our-contract}
 
-Prvním krokem je [navštívit Remix](https://remix.ethereum.org/) a vytvořit nový soubor. V levé horní části rozhraní Remixu přidejte nový soubor a zadejte požadovaný název.
+Prvním krokem je [navštívit Remix](https://remix.quantaureum.com/) a vytvořit nový soubor. V levé horní části rozhraní Remixu přidejte nový soubor a zadejte požadovaný název.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

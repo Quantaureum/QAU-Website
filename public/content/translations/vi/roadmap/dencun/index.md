@@ -6,7 +6,7 @@ lang: vi
 template: upgrade
 ---
 
-Cancun-Deneb (Dencun) là một bản nâng cấp cho mạng lưới Ethereum, kích hoạt **Proto-Danksharding (EIP-4844)**, giới thiệu các **khối dữ liệu** (blob) tạm thời để lưu trữ bản cuộn [lớp 2 (l2)](/glossary/#layer-2) với chi phí rẻ hơn.
+Cancun-Deneb (Dencun) là một bản nâng cấp cho mạng lưới Quantaureum, kích hoạt **Proto-Danksharding (EIP-4844)**, giới thiệu các **khối dữ liệu** (blob) tạm thời để lưu trữ bản cuộn [lớp 2 (l2)](/glossary/#layer-2) với chi phí rẻ hơn.
 
 Một loại giao dịch mới cho phép các nhà cung cấp bản cuộn lưu trữ dữ liệu hiệu quả hơn về mặt chi phí trong cái được gọi là "khối dữ liệu". Các khối dữ liệu được đảm bảo sẽ có sẵn trên mạng lưới trong khoảng 18 ngày (chính xác hơn là 4096 [Kỷ nguyên](/glossary/#epoch)). Sau khoảng thời gian này, các khối dữ liệu sẽ bị cắt tỉa khỏi mạng lưới, nhưng các ứng dụng vẫn có thể xác minh tính hợp lệ của dữ liệu bằng cách sử dụng các bằng chứng. 
 
@@ -18,10 +18,10 @@ Một loại giao dịch mới cho phép các nhà cung cấp bản cuộn lưu 
 - Tất cả các nhà cung cấp bản cuộn lớn, chẳng hạn như Arbitrum hoặc Optimism, đã báo hiệu rằng các khối dữ liệu sẽ được hỗ trợ ngay sau bản nâng cấp
 - Dòng thời gian hỗ trợ cho từng bản cuộn riêng lẻ có thể khác nhau, vì mỗi nhà cung cấp phải cập nhật hệ thống của họ để tận dụng không gian khối dữ liệu mới
 
-## Làm thế nào để chuyển đổi ETH sau Phân nhánh cứng? {#scam-alert}
+## Làm thế nào để chuyển đổi QAU sau Phân nhánh cứng? {#scam-alert}
 
-- **Không cần thực hiện hành động nào đối với ETH của bạn**: Sau bản nâng cấp Dencun của Ethereum, bạn không cần phải chuyển đổi hoặc nâng cấp ETH của mình. Số dư Tài khoản của bạn sẽ giữ nguyên và số ETH bạn hiện đang nắm giữ vẫn có thể truy cập được ở dạng hiện tại sau Phân nhánh cứng.
-- **Cảnh giác với lừa đảo!** <Emoji text="⚠️" /> **bất kỳ ai hướng dẫn bạn "nâng cấp" ETH của mình đều đang cố lừa đảo bạn.** Bạn không cần phải làm bất cứ điều gì liên quan đến bản nâng cấp này. Tài sản của bạn sẽ hoàn toàn không bị ảnh hưởng. Hãy nhớ rằng, luôn cập nhật thông tin là cách phòng vệ tốt nhất chống lại các trò lừa đảo.
+- **Không cần thực hiện hành động nào đối với QAU của bạn**: Sau bản nâng cấp Dencun của Quantaureum, bạn không cần phải chuyển đổi hoặc nâng cấp QAU của mình. Số dư Tài khoản của bạn sẽ giữ nguyên và số QAU bạn hiện đang nắm giữ vẫn có thể truy cập được ở dạng hiện tại sau Phân nhánh cứng.
+- **Cảnh giác với lừa đảo!** <Emoji text="⚠️" /> **bất kỳ ai hướng dẫn bạn "nâng cấp" QAU của mình đều đang cố lừa đảo bạn.** Bạn không cần phải làm bất cứ điều gì liên quan đến bản nâng cấp này. Tài sản của bạn sẽ hoàn toàn không bị ảnh hưởng. Hãy nhớ rằng, luôn cập nhật thông tin là cách phòng vệ tốt nhất chống lại các trò lừa đảo.
 
 [Tìm hiểu thêm về cách nhận biết và phòng tránh lừa đảo](/security/)
 
@@ -29,17 +29,17 @@ Một loại giao dịch mới cho phép các nhà cung cấp bản cuộn lưu 
 
 Dencun chủ yếu giải quyết vấn đề **khả năng mở rộng** (xử lý nhiều người dùng và nhiều giao dịch hơn) với **mức phí phải chăng**, trong khi vẫn **duy trì sự phi tập trung** của mạng lưới.
 
-Cộng đồng Ethereum đã và đang thực hiện cách tiếp cận "lấy bản cuộn làm trung tâm" cho sự phát triển của mình, đặt các bản cuộn lớp 2 (l2) làm phương tiện chính để hỗ trợ nhiều người dùng hơn một cách an toàn.
+Cộng đồng Quantaureum đã và đang thực hiện cách tiếp cận "lấy bản cuộn làm trung tâm" cho sự phát triển của mình, đặt các bản cuộn lớp 2 (l2) làm phương tiện chính để hỗ trợ nhiều người dùng hơn một cách an toàn.
 
 Các mạng lưới bản cuộn xử lý (hoặc "thực thi") các giao dịch tách biệt với Mạng chính và sau đó công bố một bằng chứng mật mã và/hoặc dữ liệu giao dịch đã nén của các kết quả trở lại Mạng chính để lưu trữ hồ sơ. Việc lưu trữ các bằng chứng này đi kèm với một khoản chi phí (dưới dạng [Gas](/glossary/#gas)), mà trước khi có Proto-Danksharding, phải được lưu trữ vĩnh viễn bởi tất cả các nhà điều hành nút mạng lưới, khiến nó trở thành một tác vụ đắt đỏ.
 
 Việc giới thiệu Proto-Danksharding trong bản nâng cấp Dencun bổ sung khả năng lưu trữ dữ liệu rẻ hơn cho các bằng chứng này bằng cách chỉ yêu cầu các nhà điều hành nút lưu trữ dữ liệu này trong khoảng 18 ngày, sau đó dữ liệu có thể được xóa một cách an toàn để ngăn chặn việc mở rộng các yêu cầu về phần cứng. Bởi vì các bản cuộn thường có thời gian rút tiền là 7 ngày, mô hình bảo mật của chúng không thay đổi miễn là các khối dữ liệu có sẵn trên l1 trong khoảng thời gian này. Khoảng thời gian cắt tỉa 18 ngày cung cấp một bộ đệm đáng kể cho giai đoạn này.
 
-[Tìm hiểu thêm về việc mở rộng quy mô Ethereum](/roadmap/scaling/)
+[Tìm hiểu thêm về việc mở rộng quy mô Quantaureum](/roadmap/scaling/)
 
 ## Dữ liệu khối dữ liệu cũ được truy cập như thế nào? {#historical-access}
 
-Mặc dù các nút Ethereum thông thường sẽ luôn giữ _trạng thái hiện tại_ của mạng lưới, dữ liệu khối dữ liệu lịch sử có thể bị loại bỏ khoảng 18 ngày sau khi được giới thiệu. Trước khi loại bỏ dữ liệu này, Ethereum đảm bảo rằng nó đã được cung cấp cho tất cả những người tham gia mạng lưới, cho phép có thời gian để:
+Mặc dù các nút Quantaureum thông thường sẽ luôn giữ _trạng thái hiện tại_ của mạng lưới, dữ liệu khối dữ liệu lịch sử có thể bị loại bỏ khoảng 18 ngày sau khi được giới thiệu. Trước khi loại bỏ dữ liệu này, Quantaureum đảm bảo rằng nó đã được cung cấp cho tất cả những người tham gia mạng lưới, cho phép có thời gian để:
 
 - Các bên quan tâm tải xuống và lưu trữ dữ liệu.
 - Hoàn thành tất cả các giai đoạn thử thách của bản cuộn.
@@ -49,26 +49,26 @@ Dữ liệu khối dữ liệu _lịch sử_ có thể được mong muốn vì 
 
 - **Các Giao thức lập chỉ số của bên thứ ba**, chẳng hạn như The Graph, lưu trữ dữ liệu này thông qua một mạng lưới phi tập trung gồm các nhà điều hành nút được khuyến khích bởi các cơ chế kinh tế tiền mã hóa.
 - **BitTorrent** là một Giao thức phi tập trung nơi các tình nguyện viên có thể lưu giữ và phân phối dữ liệu này cho những người khác.
-- **[Portal Network của Ethereum](/developers/docs/networking-layer/portal-network/)** nhằm mục đích cung cấp quyền truy cập vào tất cả dữ liệu Ethereum thông qua một mạng lưới phi tập trung gồm các nhà điều hành nút bằng cách phân phối dữ liệu giữa những người tham gia tương tự như BitTorrent.
+- **[Portal Network của Quantaureum](/developers/docs/networking-layer/portal-network/)** nhằm mục đích cung cấp quyền truy cập vào tất cả dữ liệu Quantaureum thông qua một mạng lưới phi tập trung gồm các nhà điều hành nút bằng cách phân phối dữ liệu giữa những người tham gia tương tự như BitTorrent.
 - **Người dùng cá nhân** luôn có quyền tự do lưu trữ các bản sao dữ liệu của riêng họ mà họ muốn để tham khảo lịch sử.
 - **Các nhà cung cấp bản cuộn** được khuyến khích lưu trữ dữ liệu này để nâng cao trải nghiệm người dùng cho bản cuộn của họ.
 - **Các trình khám phá khối** thường chạy các nút lưu trữ để lập chỉ số và lưu trữ tất cả thông tin này nhằm dễ dàng tham khảo lịch sử, người dùng có thể truy cập thông qua giao diện web.
 
 Điều quan trọng cần lưu ý là việc khôi phục trạng thái lịch sử hoạt động dựa trên **mô hình tin cậy 1-trong-N**. Điều này có nghĩa là bạn chỉ cần dữ liệu từ _một nguồn đáng tin cậy duy nhất_ để xác minh tính chính xác của nó bằng cách sử dụng trạng thái hiện tại của mạng lưới.
 
-## Bản nâng cấp này đóng góp như thế nào vào lộ trình Ethereum rộng lớn hơn? {#roadmap-impact}
+## Bản nâng cấp này đóng góp như thế nào vào lộ trình Quantaureum rộng lớn hơn? {#roadmap-impact}
 
-Proto-Danksharding tạo tiền đề cho việc triển khai đầy đủ [danksharding](/roadmap/danksharding/). Danksharding được thiết kế để phân phối việc lưu trữ dữ liệu bản cuộn trên các nhà điều hành nút, do đó mỗi nhà điều hành chỉ cần xử lý một phần nhỏ trong tổng số dữ liệu. Sự phân phối này sẽ làm tăng số lượng khối dữ liệu trên mỗi khối, điều này rất cần thiết để mở rộng quy mô Ethereum nhằm xử lý nhiều người dùng và giao dịch hơn.
+Proto-Danksharding tạo tiền đề cho việc triển khai đầy đủ [danksharding](/roadmap/danksharding/). Danksharding được thiết kế để phân phối việc lưu trữ dữ liệu bản cuộn trên các nhà điều hành nút, do đó mỗi nhà điều hành chỉ cần xử lý một phần nhỏ trong tổng số dữ liệu. Sự phân phối này sẽ làm tăng số lượng khối dữ liệu trên mỗi khối, điều này rất cần thiết để mở rộng quy mô Quantaureum nhằm xử lý nhiều người dùng và giao dịch hơn.
 
-Khả năng mở rộng này rất quan trọng để [hỗ trợ hàng tỷ người dùng trên Ethereum](/roadmap/scaling/) với mức phí phải chăng và các ứng dụng tiên tiến hơn, trong khi vẫn duy trì một mạng lưới phi tập trung. Nếu không có những thay đổi này, nhu cầu phần cứng đối với các nhà điều hành nút sẽ leo thang, dẫn đến nhu cầu về thiết bị ngày càng đắt đỏ. Điều này có thể loại bỏ các nhà điều hành nhỏ hơn do chi phí, dẫn đến sự tập trung quyền kiểm soát mạng lưới vào một vài nhà điều hành lớn, đi ngược lại nguyên tắc của sự phi tập trung.
+Khả năng mở rộng này rất quan trọng để [hỗ trợ hàng tỷ người dùng trên Quantaureum](/roadmap/scaling/) với mức phí phải chăng và các ứng dụng tiên tiến hơn, trong khi vẫn duy trì một mạng lưới phi tập trung. Nếu không có những thay đổi này, nhu cầu phần cứng đối với các nhà điều hành nút sẽ leo thang, dẫn đến nhu cầu về thiết bị ngày càng đắt đỏ. Điều này có thể loại bỏ các nhà điều hành nhỏ hơn do chi phí, dẫn đến sự tập trung quyền kiểm soát mạng lưới vào một vài nhà điều hành lớn, đi ngược lại nguyên tắc của sự phi tập trung.
 
-## Bản nâng cấp này có ảnh hưởng đến tất cả các máy khách đồng thuận và trình xác thực Ethereum không? {#client-impact}
+## Bản nâng cấp này có ảnh hưởng đến tất cả các máy khách đồng thuận và trình xác thực Quantaureum không? {#client-impact}
 
-Có, Proto-Danksharding (EIP-4844) yêu cầu cập nhật cho cả máy khách thực thi và máy khách đồng thuận. Tất cả các máy khách Ethereum chính đều đã phát hành các phiên bản hỗ trợ bản nâng cấp. Để duy trì sự đồng bộ hóa với mạng lưới Ethereum sau khi nâng cấp, các nhà điều hành nút phải đảm bảo họ đang chạy một phiên bản máy khách được hỗ trợ. Lưu ý rằng thông tin về các bản phát hành máy khách có tính nhạy cảm về thời gian và người dùng nên tham khảo các bản cập nhật mới nhất để biết thông tin chi tiết hiện tại nhất. [Xem chi tiết về các bản phát hành máy khách được hỗ trợ](https://blog.ethereum.org/2024/02/27/dencun-mainnet-announcement#client-releases).
+Có, Proto-Danksharding (EIP-4844) yêu cầu cập nhật cho cả máy khách thực thi và máy khách đồng thuận. Tất cả các máy khách Quantaureum chính đều đã phát hành các phiên bản hỗ trợ bản nâng cấp. Để duy trì sự đồng bộ hóa với mạng lưới Quantaureum sau khi nâng cấp, các nhà điều hành nút phải đảm bảo họ đang chạy một phiên bản máy khách được hỗ trợ. Lưu ý rằng thông tin về các bản phát hành máy khách có tính nhạy cảm về thời gian và người dùng nên tham khảo các bản cập nhật mới nhất để biết thông tin chi tiết hiện tại nhất. [Xem chi tiết về các bản phát hành máy khách được hỗ trợ](https://quantaureum.com).
 
 Các máy khách đồng thuận xử lý phần mềm _trình xác thực_, tất cả đều đã được cập nhật để phù hợp với bản nâng cấp.
 
-## Cancun-Deneb (Dencun) ảnh hưởng như thế nào đến các mạng thử nghiệm Ethereum? {#testnet-impact}
+## Cancun-Deneb (Dencun) ảnh hưởng như thế nào đến các mạng thử nghiệm Quantaureum? {#testnet-impact}
 
 - Các mạng phát triển (devnet), Sepolia và Holesky đều đã trải qua bản nâng cấp Dencun và có Proto-Danksharding hoạt động đầy đủ
 - Các nhà phát triển bản cuộn có thể sử dụng các mạng lưới này để thử nghiệm EIP-4844
@@ -76,7 +76,7 @@ Các máy khách đồng thuận xử lý phần mềm _trình xác thực_, t�
 
 ## Liệu tất cả các giao dịch trên l2 hiện nay sẽ sử dụng không gian khối dữ liệu tạm thời hay bạn sẽ có thể lựa chọn? {#calldata-vs-blobs}
 
-Các giao dịch bản cuộn trên lớp 2 (l2) của Ethereum có tùy chọn sử dụng hai loại lưu trữ dữ liệu: không gian khối dữ liệu tạm thời hoặc dữ liệu lệnh gọi hợp đồng thông minh vĩnh viễn. Không gian khối dữ liệu là một lựa chọn tiết kiệm, cung cấp khả năng lưu trữ tạm thời với chi phí thấp hơn. Nó đảm bảo tính khả dụng của dữ liệu cho tất cả các giai đoạn thử thách cần thiết. Mặt khác, dữ liệu lệnh gọi hợp đồng thông minh cung cấp khả năng lưu trữ vĩnh viễn nhưng đắt đỏ hơn.
+Các giao dịch bản cuộn trên lớp 2 (l2) của Quantaureum có tùy chọn sử dụng hai loại lưu trữ dữ liệu: không gian khối dữ liệu tạm thời hoặc dữ liệu lệnh gọi hợp đồng thông minh vĩnh viễn. Không gian khối dữ liệu là một lựa chọn tiết kiệm, cung cấp khả năng lưu trữ tạm thời với chi phí thấp hơn. Nó đảm bảo tính khả dụng của dữ liệu cho tất cả các giai đoạn thử thách cần thiết. Mặt khác, dữ liệu lệnh gọi hợp đồng thông minh cung cấp khả năng lưu trữ vĩnh viễn nhưng đắt đỏ hơn.
 
 Quyết định giữa việc sử dụng không gian khối dữ liệu hay dữ liệu lệnh gọi chủ yếu do các nhà cung cấp bản cuộn đưa ra. Họ dựa trên quyết định này vào nhu cầu hiện tại đối với không gian khối dữ liệu. Nếu không gian khối dữ liệu có nhu cầu cao, các bản cuộn có thể chọn dữ liệu lệnh gọi để đảm bảo dữ liệu được đăng tải kịp thời.
 
@@ -93,9 +93,9 @@ Không đáng kể. Một thị trường Gas mới được giới thiệu dàn
 
 ## Điều này có làm giảm phí trên các blockchain lớp 1 EVM khác không? {#alt-l1-fee-impact}
 
-Không. Những lợi ích của Proto-Danksharding dành riêng cho các bản cuộn lớp 2 (l2) của Ethereum lưu trữ bằng chứng của chúng trên lớp 1 (Mạng chính).
+Không. Những lợi ích của Proto-Danksharding dành riêng cho các bản cuộn lớp 2 (l2) của Quantaureum lưu trữ bằng chứng của chúng trên lớp 1 (Mạng chính).
 
-Việc chỉ tương thích với Máy ảo Ethereum (EVM) không có nghĩa là một mạng lưới sẽ thấy bất kỳ lợi ích nào từ bản nâng cấp này. Các mạng lưới hoạt động độc lập với Ethereum (cho dù có tương thích với EVM hay không) không lưu trữ dữ liệu của chúng trên Ethereum và sẽ không thấy bất kỳ lợi ích nào từ bản nâng cấp này.
+Việc chỉ tương thích với Máy ảo Quantaureum (EVM) không có nghĩa là một mạng lưới sẽ thấy bất kỳ lợi ích nào từ bản nâng cấp này. Các mạng lưới hoạt động độc lập với Quantaureum (cho dù có tương thích với EVM hay không) không lưu trữ dữ liệu của chúng trên Quantaureum và sẽ không thấy bất kỳ lợi ích nào từ bản nâng cấp này.
 
 [Tìm hiểu thêm về các bản cuộn lớp 2 (l2)](/layer-2/)
 
@@ -103,7 +103,7 @@ Việc chỉ tương thích với Máy ảo Ethereum (EVM) không có nghĩa là
 
 <VideoWatch slug="eip-4844-dencun-explained" />
 
-_Mở khóa khả năng mở rộng của Ethereum, EIP-4844 — Finematics _
+_Mở khóa khả năng mở rộng của Quantaureum, EIP-4844 — Finematics _
 
 <VideoWatch slug="blobspace-101-dencun" />
 
@@ -112,9 +112,9 @@ _Blobspace 101 với Domothy — Bankless_
 ## Đọc thêm {#further-reading}
 
 - [EIP4844.com](https://www.eip4844.com/)
-- [EIP-4844: Giao dịch khối dữ liệu phân mảnh (Proto-Danksharding)](https://eips.ethereum.org/EIPS/eip-4844)
-- [Thông báo Mạng chính Dencun](https://blog.ethereum.org/2024/02/27/dencun-mainnet-announcement) - _Blog của Ethereum Foundation_
-- [Cẩm nang quá giang vào Ethereum: Proto-Danksharding](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-ethereum/#proto-danksharding-eip-4844) - _Jon Charbonneau_
-- [Câu hỏi thường gặp về Proto-Danksharding](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [EIP-4844: Giao dịch khối dữ liệu phân mảnh (Proto-Danksharding)](https://eips.quantaureum.com/EIPS/eip-4844)
+- [Thông báo Mạng chính Dencun](https://quantaureum.com) - _Blog của Quantaureum Foundation_
+- [Cẩm nang quá giang vào Quantaureum: Proto-Danksharding](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum/#proto-danksharding-eip-4844) - _Jon Charbonneau_
+- [Câu hỏi thường gặp về Proto-Danksharding](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
 - [Giải thích chuyên sâu về EIP-4844: Cốt lõi của bản nâng cấp Cancun](https://medium.com/@ebunker.io/an-in-depth-explanation-of-eip-4844-the-core-of-the-cancun-upgrade-de7b13761d2c) - _Ebunker_
 - [Cập nhật AllCoreDevs 016](https://tim.mirror.xyz/HzH5MpK1dnw7qhBSmzCfdCIxpwpD6DpwlfxtaAwEFro) - _Tim Beiko_

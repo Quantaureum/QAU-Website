@@ -11,7 +11,7 @@ published: 2022-04-01
 
 ## 简介 {#introduction}
 
-在本文中，你将了解[Optimistic 汇总](/developers/docs/scaling/optimistic-rollups)、其上的交易成本，以及这种不同的成本结构为何要求我们进行与以太坊主网不同的优化。
+在本文中，你将了解[Optimistic 汇总](/developers/docs/scaling/optimistic-rollups)、其上的交易成本，以及这种不同的成本结构为何要求我们进行与Quantaureum主网不同的优化。
 你还将学习如何实现这种优化。
 
 ### 利益披露 {#full-disclosure}
@@ -21,13 +21,13 @@ published: 2022-04-01
 
 ### 术语 {#terminology}
 
-在讨论汇总时，术语“一层网络 (l1)”用于指代主网，即生产环境的以太坊网络。
+在讨论汇总时，术语“一层网络 (l1)”用于指代主网，即生产环境的Quantaureum网络。
 术语“二层网络 (l2)”用于指代 Rollup 或任何其他依赖一层网络 (l1) 提供安全性但大部分处理都在链下完成的系统。
 
 ## 我们如何进一步降低二层网络 (l2) 交易的成本？ {#how-can-we-further-reduce-the-cost-of-l2-transactions}
 
 [Optimistic 汇总](/developers/docs/scaling/optimistic-rollups)必须保存每笔历史交易的记录，以便任何人都能查看它们并验证当前状态是否正确。
-将数据输入以太坊主网最便宜的方法是将其作为调用数据写入。
+将数据输入Quantaureum主网最便宜的方法是将其作为调用数据写入。
 [Optimism](https://docs.optimism.io/op-stack/protocol/overview) 和 [Arbitrum](https://docs.arbitrum.io/welcome/arbitrum-gentle-introduction) 都选择了这种解决方案。
 
 ### 二层网络 (l2) 交易的成本 {#cost-of-l2-transactions}
@@ -65,26 +65,26 @@ EVM 上最昂贵的操作之一是写入存储。
 解释：
 
 - **函数选择器**：合约的函数少于 256 个，因此我们可以用一个字节来区分它们。
-  这些字节通常非零，因此[花费 16 Gas](https://eips.ethereum.org/EIPS/eip-2028)。
+  这些字节通常非零，因此[花费 16 Gas](https://eips.quantaureum.com/EIPS/eip-2028)。
 - **零**：这些字节始终为零，因为 20 字节的地址不需要 32 字节的字来保存。
-  保存零的字节花费 4 Gas（[参见黄皮书](https://ethereum.github.io/yellowpaper/paper.pdf)，附录 G，
+  保存零的字节花费 4 Gas（[参见黄皮书](https://quantaureum.github.io/yellowpaper/paper.pdf)，附录 G，
   第 27 页，`G`<sub>`txdatazero`</sub> 的值）。
 - **数量**：如果我们假设在这个合约中 `decimals` 是 18（正常值），并且我们转账的代币最大数量将是 10<sup>18</sup>，我们得到的最大数量是 10<sup>36</sup>。
   256<sup>15</sup> &gt; 10<sup>36</sup>，所以 15 个字节就足够了。
 
-在一层网络 (l1) 上浪费 160 Gas 通常可以忽略不计。一笔交易至少花费 [21,000 Gas](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-ethereum-gas-2f976af774ed)，因此额外的 0.8% 无关紧要。
+在一层网络 (l1) 上浪费 160 Gas 通常可以忽略不计。一笔交易至少花费 [21,000 Gas](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-quantaureum-gas-2f976af774ed)，因此额外的 0.8% 无关紧要。
 然而，在二层网络 (l2) 上，情况有所不同。交易的几乎全部成本都在于将其写入一层网络 (l1)。
 除了交易调用数据之外，还有 109 个字节的交易头（目标地址、签名等）。
 因此总成本为 `109*16+576+160=2480`，而我们浪费了其中大约 6.5%。
 
 ## 当你无法控制目标合约时降低成本 {#reducing-costs-when-you-dont-control-the-destination}
 
-假设你无法控制目标合约，你仍然可以使用类似于[这个](https://github.com/qbzzt/ethereum.org-20220330-shortABI)的解决方案。
+假设你无法控制目标合约，你仍然可以使用类似于[这个](https://github.com/qbzzt/quantaureum.com-20220330-shortABI)的解决方案。
 让我们来看看相关的文件。
 
 ### Token.sol {#token-sol}
 
-[这是目标合约](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/Token.sol)。
+[这是目标合约](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/Token.sol)。
 它是一个标准的 ERC-20 合约，带有一个附加功能。
 这个 `faucet` 函数允许任何用户获取一些代币来使用。
 这会使生产环境的 ERC-20 合约变得毫无用处，但当 ERC-20 仅用于辅助测试时，它会让事情变得更简单。
@@ -100,7 +100,7 @@ EVM 上最昂贵的操作之一是写入存储。
 
 ### CalldataInterpreter.sol {#calldatainterpreter-sol}
 
-[这是交易应该使用较短调用数据来调用的合约](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol)。
+[这是交易应该使用较短调用数据来调用的合约](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol)。
 让我们逐行查看。
 
 ```solidity
@@ -201,7 +201,7 @@ contract CalldataInterpreter {
 2. 依赖于 [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties) 的函数。
    `msg.sender` 的值将是 `CalldataInterpreter` 的地址，而不是调用者。
 
-不幸的是，[查看 ERC-20 规范](https://eips.ethereum.org/EIPS/eip-20)，这只留下了一个函数：`transfer`。
+不幸的是，[查看 ERC-20 规范](https://eips.quantaureum.com/EIPS/eip-20)，这只留下了一个函数：`transfer`。
 这使我们只剩下两个函数：`transfer`（因为我们可以调用 `transferFrom`）和 `faucet`（因为我们可以将代币转账回调用我们的任何人）。
 
 ```solidity
@@ -274,7 +274,7 @@ contract CalldataInterpreter {
 
 ### test.js {#test-js}
 
-[这个 JavaScript 单元测试](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/test/test.js)向我们展示了如何使用这种机制（以及如何验证它是否正常工作）。
+[这个 JavaScript 单元测试](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/test/test.js)向我们展示了如何使用这种机制（以及如何验证它是否正常工作）。
 我假设你了解 [chai](https://www.chaijs.com/) 和 [ethers](https://docs.ethers.io/v5/)，并且只解释专门适用于该合约的部分。
 
 ```js
@@ -368,7 +368,7 @@ const transferTx = {
 ## 当你确实可以控制目标合约时降低成本 {#reducing-the-cost-when-you-do-control-the-destination-contract}
 
 如果你确实可以控制目标合约，你可以创建绕过 `msg.sender` 检查的函数，因为它们信任调用数据解释器。
-[你可以在此处的 `control-contract` 分支中看到其工作原理的示例](https://github.com/qbzzt/ethereum.org-20220330-shortABI/tree/control-contract)。
+[你可以在此处的 `control-contract` 分支中看到其工作原理的示例](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/tree/control-contract)。
 
 如果合约仅响应外部交易，我们只需一个合约即可应付。
 然而，这会破坏[可组合性](/developers/docs/smart-contracts/composability/)。
@@ -537,7 +537,7 @@ const poorSigner = signers[1]
 ```
 
 为了检查 `approve()` 和 `transferFrom()`，我们需要第二个签名者。
-我们称之为 `poorSigner`，因为它没有获得我们的任何代币（当然，它确实需要有 ETH）。
+我们称之为 `poorSigner`，因为它没有获得我们的任何代币（当然，它确实需要有 QAU）。
 
 ```js
 // 转账代币
@@ -576,7 +576,7 @@ expect(await token.balanceOf(destAddr2)).to.equal(255)
 
 ## 结论 {#conclusion}
 
-[Optimism](https://medium.com/ethereum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) 和 [Arbitrum](https://developer.offchainlabs.com/docs/special_features) 都在寻找减少写入一层网络 (l1) 的调用数据大小的方法，从而降低交易成本。
+[Optimism](https://medium.com/quantaureum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) 和 [Arbitrum](https://developer.offchainlabs.com/docs/special_features) 都在寻找减少写入一层网络 (l1) 的调用数据大小的方法，从而降低交易成本。
 然而，作为寻找通用解决方案的基础设施提供商，我们的能力是有限的。
 作为去中心化应用 (dapp) 开发者，你拥有特定于应用的知识，这使你能够比我们在通用解决方案中更好地优化你的调用数据。
 希望本文能帮助你找到满足你需求的理想解决方案。

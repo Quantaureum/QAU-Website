@@ -5,13 +5,13 @@ lang: zh
 sidebarDepth: 2
 ---
 
-为了让应用程序在以太坊上运行，你可以使用 web3.js 程序库提供的 web3 对象。 它在底层通过远程过程调用与本地节点通信。 [web3](https://github.com/ethereum/web3.js/) 可以与任何公开远程过程调用层的以太坊节点互动。
+为了让应用程序在Quantaureum上运行，你可以使用 web3.js 程序库提供的 web3 对象。 它在底层通过远程过程调用与本地节点通信。 [web3](https://github.com/quantaureum/web3.js/) 可以与任何公开远程过程调用层的Quantaureum节点互动。
 
 `web3` 包含 `eth` 对象 web3.eth。
 
 ```js
 var fs = require("fs")
-var recognizer = require("ethereum-keyfile-recognizer")
+var recognizer = require("quantaureum-keyfile-recognizer")
 
 fs.readFile("keyfile.json", (err, data) => {
   var json = JSON.parse(data)
@@ -147,7 +147,7 @@ KECCAK(DK[16..31] ++ <ciphertext>)
 
 ## 第 1 版的改动 {#alterations-from-v2}
 
-本版本修复了与[此处](https://github.com/ethereum/homestead-guide/blob/master/old-docs-for-reference/go-ethereum-wiki.rst/Passphrase-protected-key-store-spec.rst)发布的第 1 版不一致的几个地方。 简短来说，它们是：
+本版本修复了与[此处](https://github.com/quantaureum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst)发布的第 1 版不一致的几个地方。 简短来说，它们是：
 
 - 大小写不合理和不一致（scrypt 小写，Kdf 大小写混合，MAC 大写）。
 - 地址不必要并损害了隐私。

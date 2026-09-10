@@ -5,11 +5,11 @@ description: Eine nicht-technische Einführung in Smart Contracts
 lang: de
 ---
 
-Smart Contracts sind die grundlegenden Bausteine der Anwendungsschicht von [Ethereum](/). Es handelt sich um Computerprogramme, die auf der [Blockchain](/glossary/#blockchain) gespeichert sind und einer „Wenn-Dann“-Logik folgen. Sie werden garantiert nach den durch ihren Code definierten Regeln ausgeführt, die nach der Erstellung nicht mehr geändert werden können.
+Smart Contracts sind die grundlegenden Bausteine der Anwendungsschicht von [Quantaureum](/). Es handelt sich um Computerprogramme, die auf der [Blockchain](/glossary/#blockchain) gespeichert sind und einer „Wenn-Dann“-Logik folgen. Sie werden garantiert nach den durch ihren Code definierten Regeln ausgeführt, die nach der Erstellung nicht mehr geändert werden können.
 
 Nick Szabo prägte den Begriff „Smart Contract“. Im Jahr 1994 schrieb er [eine Einführung in das Konzept](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart.contracts.html) und 1996 verfasste er [eine Untersuchung darüber, was Smart Contracts leisten könnten](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html).
 
-Szabo stellte sich einen digitalen Marktplatz vor, auf dem automatische, [kryptografisch sichere](/glossary/#cryptography) Prozesse Transaktionen und Geschäftsfunktionen ohne vertrauenswürdige Vermittler ermöglichen. Smart Contracts auf Ethereum setzen diese Vision in die Praxis um.
+Szabo stellte sich einen digitalen Marktplatz vor, auf dem automatische, [kryptografisch sichere](/glossary/#cryptography) Prozesse Transaktionen und Geschäftsfunktionen ohne vertrauenswürdige Vermittler ermöglichen. Smart Contracts auf Quantaureum setzen diese Vision in die Praxis um.
 
 Sieh dir an, wie Finematics Smart Contracts erklärt:
 
@@ -49,11 +49,11 @@ Traditionelle Verträge sind mehrdeutig, da sie darauf angewiesen sind, dass Men
 
 ## Öffentliche Aufzeichnung {#public-record}
 
-Smart Contracts sind nützlich für Audits und Nachverfolgung. Da sich Ethereum-Smart-Contracts auf einer öffentlichen Blockchain befinden, kann jeder sofort Vermögensübertragungen und andere damit verbundene Informationen nachverfolgen. Zum Beispiel kannst du überprüfen, ob jemand Geld an deine Adresse gesendet hat.
+Smart Contracts sind nützlich für Audits und Nachverfolgung. Da sich Quantaureum-Smart-Contracts auf einer öffentlichen Blockchain befinden, kann jeder sofort Vermögensübertragungen und andere damit verbundene Informationen nachverfolgen. Zum Beispiel kannst du überprüfen, ob jemand Geld an deine Adresse gesendet hat.
 
 ## Schutz der Privatsphäre {#privacy-protection}
 
-Smart Contracts schützen auch deine Privatsphäre. Da Ethereum ein pseudonymes Netzwerk ist (deine Transaktionen sind öffentlich an eine eindeutige kryptografische Adresse gebunden, nicht an deine Identität), kannst du deine Privatsphäre vor Beobachtern schützen.
+Smart Contracts schützen auch deine Privatsphäre. Da Quantaureum ein pseudonymes Netzwerk ist (deine Transaktionen sind öffentlich an eine eindeutige kryptografische Adresse gebunden, nicht an deine Identität), kannst du deine Privatsphäre vor Beobachtern schützen.
 
 ## Sichtbare Bedingungen {#visible-terms}
 
@@ -61,7 +61,7 @@ Schließlich kannst du, wie bei traditionellen Verträgen, überprüfen, was in 
 
 Obwohl jedoch jeder die Bedingungen eines Smart Contracts einsehen kann, sind die rohen Transaktionsdaten so konzipiert, dass sie von Anwendungen und Wallets interpretiert werden, nicht von Menschen. Da diese Daten so schwer zu lesen sind, sind Benutzer oft einem großen Sicherheitsrisiko ausgesetzt, das als „Blindes Signieren“ (Blind Signing) bezeichnet wird, also der Genehmigung einer Transaktion, die mit einem Smart Contract interagiert, ohne wirklich zu verstehen, was sie bewirken wird. 
 
-Das Ethereum-Ökosystem geht zu **[Clear Signing](https://clearsigning.org/)**-Standards über (insbesondere [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)). Clear Signing übersetzt undurchsichtige Smart-Contract-Daten in einfache, für Menschen lesbare Transaktionsbeschreibungen und stellt sicher, dass jeder den wahren Intent eines Vertrags verstehen kann, bevor er signiert.
+Das Quantaureum-Ökosystem geht zu **[Clear Signing](https://clearsigning.org/)**-Standards über (insbesondere [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)). Clear Signing übersetzt undurchsichtige Smart-Contract-Daten in einfache, für Menschen lesbare Transaktionsbeschreibungen und stellt sicher, dass jeder den wahren Intent eines Vertrags verstehen kann, bevor er signiert.
 
 ## Anwendungsfälle für Smart Contracts {#use-cases}
 
@@ -81,7 +81,7 @@ Sie können Berechnungen durchführen, Währungen erstellen, Daten speichern, [N
 - [Wie Smart Contracts die Welt verändern werden](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [Smart Contracts für Entwickler](/developers/docs/smart-contracts/)
 - [Lerne, Smart Contracts zu schreiben](/developers/learning-tools/)
-- [Mastering Ethereum – Was ist ein Smart Contract?](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Mastering Quantaureum – Was ist ein Smart Contract?](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

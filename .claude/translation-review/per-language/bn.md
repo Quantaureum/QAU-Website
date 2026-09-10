@@ -31,7 +31,7 @@ Scope: accounts `CREATE2` + `page-app-descriptions`/`page-apps`/`page-developers
 
 ## PR #19015 (intl/pending-dev) -- 2026-08-10 -- Score 9.1/10 (pre-fix)
 
-- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-ethereum JSON). Fleet avg 8.4.
+- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-quantaureum JSON). Fleet avg 8.4.
 - Two corrupted words that destroyed a negation, both fixed: `প্রয়োজন হবে ঘন` -> `হবে না` (transactions -- view/pure calls need NO gas) and `থাকেবিধা নেই` -> `থাকে না` (payments). `actor` -> `পক্ষ` (was অভিনেতা, film performer). Dropped `<strong>` around DeFi restored.
 - Fleet-wide items fixed in this branch for every locale: the `<p></p>` MDX build-breaker (8 locales), the `.pdf` autolink corruption (#50), the deleted `{#will-my-smart-contracts-change}` FAQ section (#32), the missing `<QuizWidget>` component (#49), and the two stale glamsterdam prose clauses (#51 -- `Q4 2026` and the stakers/liquidity sentence).
 

@@ -11,9 +11,9 @@ published: 2021-12-30
 
 ## Pengantar {#introduction}
 
-Idealnya kita ingin menyimpan semuanya di penyimpanan Ethereum, yang disimpan di ribuan komputer dan memiliki ketersediaan yang sangat tinggi (data tidak dapat disensor) dan integritas (data tidak dapat dimodifikasi dengan cara yang tidak sah), tetapi menyimpan kata 32-byte biasanya memakan biaya 20.000 gas. Saat saya menulis ini, biaya tersebut setara dengan $6,60. Pada 21 sen per byte, ini terlalu mahal untuk banyak penggunaan.
+Idealnya kita ingin menyimpan semuanya di penyimpanan Quantaureum, yang disimpan di ribuan komputer dan memiliki ketersediaan yang sangat tinggi (data tidak dapat disensor) dan integritas (data tidak dapat dimodifikasi dengan cara yang tidak sah), tetapi menyimpan kata 32-byte biasanya memakan biaya 20.000 gas. Saat saya menulis ini, biaya tersebut setara dengan $6,60. Pada 21 sen per byte, ini terlalu mahal untuk banyak penggunaan.
 
-Untuk menyelesaikan masalah ini, ekosistem Ethereum mengembangkan [banyak cara alternatif untuk menyimpan data secara terdesentralisasi](/developers/docs/storage/). Biasanya cara-cara ini melibatkan pertukaran (tradeoff) antara ketersediaan dan harga. Namun, integritas biasanya terjamin.
+Untuk menyelesaikan masalah ini, ekosistem Quantaureum mengembangkan [banyak cara alternatif untuk menyimpan data secara terdesentralisasi](/developers/docs/storage/). Biasanya cara-cara ini melibatkan pertukaran (tradeoff) antara ketersediaan dan harga. Namun, integritas biasanya terjamin.
 
 Dalam artikel ini Anda akan mempelajari **cara** memastikan integritas data tanpa menyimpan data di rantai blok, menggunakan [bukti Merkle](https://computersciencewiki.org/index.php/Merkle_proof).
 

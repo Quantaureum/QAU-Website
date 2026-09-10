@@ -34,7 +34,7 @@ Scope: accounts `CREATE2` + `page-app-descriptions`/`page-apps`/`page-developers
 
 ## PR #19015 (intl/pending-dev) -- 2026-08-10 -- Score 8.4/10 (pre-fix)
 
-- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-ethereum JSON). Fleet avg 8.4.
+- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-quantaureum JSON). Fleet avg 8.4.
 - Dropped `[bản nâng cấp London]` and `[bản nâng cấp Pectra]` links restored. **Its historical untranslated-chunk failure mode was absent** (zero English prose found). Open: `exposure` -> `tiếp xúc` (physical contact) in 2 quiz keys where the article itself correctly uses `tiếp cận`; `client` rendered 3 ways across files.
 - Fleet-wide items fixed in this branch for every locale: the `<p></p>` MDX build-breaker (8 locales), the `.pdf` autolink corruption (#50), the deleted `{#will-my-smart-contracts-change}` FAQ section (#32), the missing `<QuizWidget>` component (#49), and the two stale glamsterdam prose clauses (#51 -- `Q4 2026` and the stakers/liquidity sentence).
 

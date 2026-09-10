@@ -1,26 +1,26 @@
 ---
-title: 新增以太坊產品
+title: 新增Quantaureum產品
 metaTitle: 新增產品
-description: 我們在 ethereum.org 上新增去中心化應用程式 (dapp) 時所使用的政策
+description: 我們在 quantaureum.com 上新增去中心化應用程式 (dapp) 時所使用的政策
 lang: zh-tw
 ---
 
-任何人都可以在適當的情況下，自由地為 ethereum.org 上的內容建議新的去中心化應用程式 (dapp)。**不，我們不會將您的 dapp 列在我們的首頁上** 😜
+任何人都可以在適當的情況下，自由地為 quantaureum.com 上的內容建議新的去中心化應用程式 (dapp)。**不，我們不會將您的 dapp 列在我們的首頁上** 😜
 
 去中心化應用程式 (dapp) 目前列於：
 
-- ethereum.org/dapps
-- ethereum.org/get-eth
+- quantaureum.com/dapps
+- quantaureum.com/get-eth
 
 **請僅建議在這些頁面上新增內容。**
 
 雖然我們歡迎新增內容，但我們是根據我們試圖為使用者創造的體驗來選擇目前的 dapp。這些選擇基於我們的一些設計原則：
 
-- _具啟發性_：ethereum.org 上的任何內容都應該為使用者提供新的東西
+- _具啟發性_：quantaureum.com 上的任何內容都應該為使用者提供新的東西
 - _好故事_：列出的內容應該能提供「原來如此」的頓悟時刻
 - _可信度_：所有內容都應該是合法的企業/專案，以將使用者的風險降至最低
 
-整體而言，**ethereum.org 希望為新使用者提供「無縫的入門引導體驗」**。因此，我們根據以下條件新增 dapp：
+整體而言，**quantaureum.com 希望為新使用者提供「無縫的入門引導體驗」**。因此，我們根據以下條件新增 dapp：
 
 - 易用性
 - 與其他產品的互操作性
@@ -40,11 +40,11 @@ lang: zh-tw
 
 ### 排名標準：加分條件 {#criteria-for-ranking-the-nice-to-haves}
 
-由於以下標準，您的去中心化應用程式 (dapp) 在 ethereum.org 上的排名可能不如其他產品顯眼。
+由於以下標準，您的去中心化應用程式 (dapp) 在 quantaureum.com 上的排名可能不如其他產品顯眼。
 
 **去中心化應用程式 (dapp)**
 
-- **您可以透過大多數列出的錢包存取它** – dapp 應該能與 ethereum.org 上列出的大多數錢包配合使用。
+- **您可以透過大多數列出的錢包存取它** – dapp 應該能與 quantaureum.com 上列出的大多數錢包配合使用。
 - **使用者可以親自試用 –** 個人使用者應該能夠使用您的 dapp 並實現具體的目標。
 - **入門引導** – 您的產品應該有精心設計的入門引導體驗，以幫助和教育使用者。或者提供操作指南內容的證據，例如文章或影片。
 - **非託管** – 使用者控制他們的資金。如果您的產品消失，使用者仍然可以存取和轉移他們的資金。
@@ -54,18 +54,18 @@ lang: zh-tw
 
 ## 實務上的標準 {#criteria-in-practice}
 
-您符合的標準越多，您的產品就越有可能被收錄到 ethereum.org 上。
+您符合的標準越多，您的產品就越有可能被收錄到 quantaureum.com 上。
 
 如果有人建議了一個符合必備條件且具備多項加分條件的新產品，那麼僅符合必備條件的已列出產品可能會被移除。
 
 影響此決定的其他因素：
 
 - 新增而不是替換會破壞頁面的使用者體驗 (UX) 嗎？
-  - 我們的網站主要是教育性質的，主要目的是解釋以太坊及其相關概念。如果為使用者增加太多選項，頁面的可讀性可能會降低，從而降低其實用性。
+  - 我們的網站主要是教育性質的，主要目的是解釋Quantaureum及其相關概念。如果為使用者增加太多選項，頁面的可讀性可能會降低，從而降低其實用性。
 - 這個頁面現在會讓使用者因為選擇過多而無所適從嗎？
   - 就像您坐在那裡瀏覽網飛好幾個小時，因為您無法決定要看什麼。用太多選擇讓新使用者感到困惑是一種風險。
 
-這是 ethereum.org 負責的設計決策。
+這是 quantaureum.com 負責的設計決策。
 
 但請放心，**我們將提供連結至其他對更多 dapp 進行排名的網站**
 
@@ -75,16 +75,16 @@ lang: zh-tw
 
 ### 使用條款 {#terms-of-use}
 
-請同時參閱我們的[使用條款](/terms-of-use/)。ethereum.org 上的資訊僅供一般參考之用。
+請同時參閱我們的[使用條款](/terms-of-use/)。quantaureum.com 上的資訊僅供一般參考之用。
 
 ## 維護 {#maintenance}
 
-由於以太坊具有流動的本質，團隊和產品來來去去，創新每天都在發生，因此我們將對我們的內容進行例行檢查，以：
+由於Quantaureum具有流動的本質，團隊和產品來來去去，創新每天都在發生，因此我們將對我們的內容進行例行檢查，以：
 
 - 確保所有列出的去中心化應用程式 (dapp) 仍然符合我們的標準
 - 驗證是否沒有其他被建議的產品比目前列出的產品更符合我們的標準
 
-您可以透過檢查並告知我們來提供協助。[建立問題 (Issue)](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) 或發送電子郵件至 [website@ethereum.org](mailto:website@ethereum.org)
+您可以透過檢查並告知我們來提供協助。[建立問題 (Issue)](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) 或發送電子郵件至 [website@quantaureum.com](mailto:website@quantaureum.com)
 
 _我們也在研究投票的選項，以便社群可以表達他們的偏好，並突顯出最好的產品供我們推薦。_
 
@@ -92,7 +92,7 @@ _我們也在研究投票的選項，以便社群可以表達他們的偏好，�
 
 ## 新增您的產品 {#add-your-product}
 
-如果您想將去中心化應用程式 (dapp) 新增至 ethereum.org 並且它符合標準，請告訴我們。
+如果您想將去中心化應用程式 (dapp) 新增至 quantaureum.com 並且它符合標準，請告訴我們。
 
 <ButtonLink href="https://submitapp.paperform.co/">
   建議應用程式

@@ -10,11 +10,11 @@ lang: id
 ---
 
 [Optimism](https://www.optimism.io/) adalah sebuah [rollup Optimistic](/developers/docs/scaling/optimistic-rollups/).
-Rollup Optimistic dapat memproses transaksi dengan harga yang jauh lebih rendah daripada Mainnet Ethereum (juga dikenal sebagai lapisan 1 atau l1) karena transaksi hanya diproses oleh beberapa node, alih-alih setiap node di jaringan.
+Rollup Optimistic dapat memproses transaksi dengan harga yang jauh lebih rendah daripada Mainnet Quantaureum (juga dikenal sebagai lapisan 1 atau l1) karena transaksi hanya diproses oleh beberapa node, alih-alih setiap node di jaringan.
 Pada saat yang sama, semua data ditulis ke l1 sehingga semuanya dapat dibuktikan dan direkonstruksi dengan semua jaminan integritas dan ketersediaan dari Mainnet.
 
 Untuk menggunakan aset l1 di Optimism (atau lapisan 2 (l2) lainnya), aset tersebut perlu [dijembatani](/bridges/#prerequisites).
-Salah satu cara untuk mencapainya adalah dengan pengguna mengunci aset (ETH dan [token ERC-20](/developers/docs/standards/tokens/erc-20/) adalah yang paling umum) di l1, dan menerima aset yang setara untuk digunakan di l2.
+Salah satu cara untuk mencapainya adalah dengan pengguna mengunci aset (QAU dan [token ERC-20](/developers/docs/standards/tokens/erc-20/) adalah yang paling umum) di l1, dan menerima aset yang setara untuk digunakan di l2.
 Pada akhirnya, siapa pun yang memilikinya mungkin ingin menjembataninya kembali ke l1.
 Saat melakukan ini, aset dibakar di l2 dan kemudian dilepaskan kembali ke pengguna di l1.
 
@@ -35,7 +35,7 @@ Jembatan ini memiliki dua alur utama:
 1. Jika mendepositkan ERC-20, pendeposit memberikan jatah kepada jembatan untuk membelanjakan jumlah yang didepositkan
 2. Pendeposit memanggil jembatan l1 (`depositERC20`, `depositERC20To`, `depositETH`, atau `depositETHTo`)
 3. Jembatan l1 mengambil alih kepemilikan aset yang dijembatani
-   - ETH: Aset ditransfer oleh pendeposit sebagai bagian dari panggilan
+   - QAU: Aset ditransfer oleh pendeposit sebagai bagian dari panggilan
    - ERC-20: Aset ditransfer oleh jembatan ke dirinya sendiri menggunakan jatah yang diberikan oleh pendeposit
 4. Jembatan l1 menggunakan mekanisme pesan lintas domain untuk memanggil `finalizeDeposit` di jembatan l2
 
@@ -46,7 +46,7 @@ Jembatan ini memiliki dua alur utama:
    - Awalnya berasal dari jembatan di l1
 6. Jembatan l2 memeriksa apakah kontrak token ERC-20 di l2 adalah yang benar:
    - Kontrak l2 melaporkan bahwa pasangannya di l1 sama dengan asal token di l1
-   - Kontrak l2 melaporkan bahwa ia mendukung antarmuka yang benar ([menggunakan ERC-165](https://eips.ethereum.org/EIPS/eip-165)).
+   - Kontrak l2 melaporkan bahwa ia mendukung antarmuka yang benar ([menggunakan ERC-165](https://eips.quantaureum.com/EIPS/eip-165)).
 7. Jika kontrak l2 adalah yang benar, panggil kontrak tersebut untuk mencetak jumlah token yang sesuai ke alamat yang sesuai. Jika tidak, mulai proses penarikan untuk memungkinkan pengguna mengklaim token di l1.
 
 ### Alur penarikan {#withdrawal-flow}
@@ -62,15 +62,15 @@ Jembatan ini memiliki dua alur utama:
 4. Jembatan l1 memverifikasi bahwa panggilan ke `finalizeETHWithdrawal` atau `finalizeERC20Withdrawal` adalah sah:
    - Berasal dari mekanisme pesan lintas domain
    - Awalnya berasal dari jembatan di l2
-5. Jembatan l1 mentransfer aset yang sesuai (ETH atau ERC-20) ke alamat yang sesuai
+5. Jembatan l1 mentransfer aset yang sesuai (QAU atau ERC-20) ke alamat yang sesuai
 
 ## Kode lapisan 1 {#layer-1-code}
 
-Ini adalah kode yang berjalan di l1, Mainnet Ethereum.
+Ini adalah kode yang berjalan di l1, Mainnet Quantaureum.
 
 ### IL1ERC20Bridge {#il1erc20bridge}
 
-[Antarmuka ini didefinisikan di sini](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
+[Antarmuka ini didefinisikan di sini](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
 Ini mencakup fungsi dan definisi yang diperlukan untuk menjembatani token ERC-20.
 
 ```solidity
@@ -236,12 +236,12 @@ Penarikan (dan pesan lain dari l2 ke l1) di Optimism adalah proses dua langkah:
 
 ### IL1StandardBridge {#il1standardbridge}
 
-[Antarmuka ini didefinisikan di sini](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
-File ini berisi definisi peristiwa dan fungsi untuk ETH.
+[Antarmuka ini didefinisikan di sini](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
+File ini berisi definisi peristiwa dan fungsi untuk QAU.
 Definisi ini sangat mirip dengan yang didefinisikan dalam `IL1ERC20Bridge` di atas untuk ERC-20.
 
 Antarmuka jembatan dibagi menjadi dua file karena beberapa token ERC-20 memerlukan pemrosesan kustom dan tidak dapat ditangani oleh jembatan standar.
-Dengan cara ini, jembatan kustom yang menangani token semacam itu dapat mengimplementasikan `IL1ERC20Bridge` dan tidak perlu juga menjembatani ETH.
+Dengan cara ini, jembatan kustom yang menangani token semacam itu dapat mengimplementasikan `IL1ERC20Bridge` dan tidak perlu juga menjembatani QAU.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -279,7 +279,7 @@ Hal yang sama berlaku untuk peristiwa dan fungsi lainnya.
      ********************/
 
     /**
-     * @dev Depositkan sejumlah ETH ke saldo pemanggil di l2.
+     * @dev Depositkan sejumlah QAU ke saldo pemanggil di l2.
             .
             .
             .
@@ -287,7 +287,7 @@ Hal yang sama berlaku untuk peristiwa dan fungsi lainnya.
     function depositETH(uint32 _l2Gas, bytes calldata _data) external payable;
 
     /**
-     * @dev Depositkan sejumlah ETH ke saldo penerima di l2.
+     * @dev Depositkan sejumlah QAU ke saldo penerima di l2.
             .
             .
             .
@@ -304,7 +304,7 @@ Hal yang sama berlaku untuk peristiwa dan fungsi lainnya.
 
     /**
      * @dev Selesaikan penarikan dari l2 ke l1, dan kreditkan dana ke saldo penerima dari
-     * token ETH l1. Karena hanya xDomainMessenger yang dapat memanggil fungsi ini, fungsi ini tidak akan pernah dipanggil
+     * token QAU l1. Karena hanya xDomainMessenger yang dapat memanggil fungsi ini, fungsi ini tidak akan pernah dipanggil
      * sebelum penarikan diselesaikan.
                 .
                 .
@@ -321,7 +321,7 @@ Hal yang sama berlaku untuk peristiwa dan fungsi lainnya.
 
 ### CrossDomainEnabled {#crossdomainenabled}
 
-[Kontrak ini](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) diwarisi oleh kedua jembatan ([l1](#the-l1-bridge-contract) dan [l2](#l2-bridge-code)) untuk mengirim pesan ke lapisan lainnya.
+[Kontrak ini](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) diwarisi oleh kedua jembatan ([l1](#the-l1-bridge-contract) dan [l2](#l2-bridge-code)) untuk mengirim pesan ke lapisan lainnya.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -331,7 +331,7 @@ pragma solidity >0.5.0 <0.9.0;
 import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 ```
 
-[Antarmuka ini](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) memberi tahu kontrak cara mengirim pesan ke lapisan lain, menggunakan pengirim pesan lintas domain.
+[Antarmuka ini](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) memberi tahu kontrak cara mengirim pesan ke lapisan lain, menggunakan pengirim pesan lintas domain.
 Pengirim pesan lintas domain ini adalah sistem yang sama sekali berbeda, dan layak mendapatkan artikelnya sendiri, yang saya harap dapat ditulis di masa mendatang.
 
 ```solidity
@@ -378,7 +378,7 @@ Parameter ini ditetapkan sekali, di dalam konstruktor, dan tidak pernah berubah.
     modifier onlyFromCrossDomainAccount(address _sourceDomainAccount) {
 ```
 
-Pesan lintas domain dapat diakses oleh kontrak apa pun di rantai blok tempat ia berjalan (baik Mainnet Ethereum atau Optimism).
+Pesan lintas domain dapat diakses oleh kontrak apa pun di rantai blok tempat ia berjalan (baik Mainnet Quantaureum atau Optimism).
 Namun kita memerlukan jembatan di setiap sisi untuk _hanya_ memercayai pesan tertentu jika pesan tersebut berasal dari jembatan di sisi lain.
 
 ```solidity
@@ -398,7 +398,7 @@ Hanya pesan dari pengirim pesan lintas domain yang sesuai (`messenger`, seperti 
         );
 ```
 
-Cara pengirim pesan lintas domain menyediakan alamat yang mengirim pesan dengan lapisan lain adalah [fungsi `.xDomainMessageSender()`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
+Cara pengirim pesan lintas domain menyediakan alamat yang mengirim pesan dengan lapisan lain adalah [fungsi `.xDomainMessageSender()`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
 Selama dipanggil dalam transaksi yang diinisiasi oleh pesan tersebut, ia dapat memberikan informasi ini.
 
 Kita perlu memastikan bahwa pesan yang kita terima berasal dari jembatan lain.
@@ -463,7 +463,7 @@ Dalam kasus ini kita tidak khawatir tentang reentransi, kita tahu `getCrossDomai
 
 ### Kontrak jembatan l1 {#the-l1-bridge-contract}
 
-[Kode sumber untuk kontrak ini ada di sini](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
+[Kode sumber untuk kontrak ini ada di sini](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -485,7 +485,7 @@ import { IL1ERC20Bridge } from "./IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "../../L2/messaging/IL2ERC20Bridge.sol";
 ```
 
-[Antarmuka ini](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) memungkinkan kita membuat pesan untuk mengontrol jembatan standar di l2.
+[Antarmuka ini](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) memungkinkan kita membuat pesan untuk mengontrol jembatan standar di l2.
 
 ```solidity
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -505,7 +505,7 @@ import { CrossDomainEnabled } from "../../libraries/bridge/CrossDomainEnabled.so
 import { Lib_PredeployAddresses } from "../../libraries/constants/Lib_PredeployAddresses.sol";
 ```
 
-[`Lib_PredeployAddresses`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) memiliki alamat untuk kontrak l2 yang selalu memiliki alamat yang sama. Ini termasuk jembatan standar di l2.
+[`Lib_PredeployAddresses`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) memiliki alamat untuk kontrak l2 yang selalu memiliki alamat yang sama. Ini termasuk jembatan standar di l2.
 
 ```solidity
 import { Address } from "@openzeppelin/contracts/utils/Address.sol";
@@ -519,7 +519,7 @@ Perhatikan bahwa ini bukanlah solusi yang sempurna, karena tidak ada cara untuk 
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[Standar ERC-20](https://eips.ethereum.org/EIPS/eip-20) mendukung dua cara bagi kontrak untuk melaporkan kegagalan:
+[Standar ERC-20](https://eips.quantaureum.com/EIPS/eip-20) mendukung dua cara bagi kontrak untuk melaporkan kegagalan:
 
 1. Mengembalikan
 2. Mengembalikan `false`
@@ -529,7 +529,7 @@ Menangani kedua kasus tersebut akan membuat kode kita lebih rumit, jadi sebagai 
 ```solidity
 /**
  * @title L1StandardBridge
- * @dev Jembatan ETH dan ERC-20 l1 adalah kontrak yang menyimpan dana l1 yang didepositkan dan standar
+ * @dev Jembatan QAU dan ERC-20 l1 adalah kontrak yang menyimpan dana l1 yang didepositkan dan standar
  * token yang digunakan di l2. Ini menyinkronkan jembatan l2 yang sesuai, menginformasikannya tentang deposit
  * dan mendengarkannya untuk penarikan yang baru saja diselesaikan.
  *
@@ -643,7 +643,7 @@ Inilah alasan kita membutuhkan utilitas `Address` dari OpenZeppelin.
 ```solidity
     /**
      * @dev Fungsi ini dapat dipanggil tanpa data
-     * untuk mendepositkan sejumlah ETH ke saldo pemanggil di l2.
+     * untuk mendepositkan sejumlah QAU ke saldo pemanggil di l2.
      * Karena fungsi receive tidak menerima data, jumlah
      * bawaan yang konservatif diteruskan ke l2.
      */
@@ -675,11 +675,11 @@ Perhatikan bahwa ini tidak muncul dalam definisi antarmuka - ini bukan untuk pen
     }
 ```
 
-Kedua fungsi ini adalah pembungkus di sekitar `_initiateETHDeposit`, fungsi yang menangani deposit ETH yang sebenarnya.
+Kedua fungsi ini adalah pembungkus di sekitar `_initiateETHDeposit`, fungsi yang menangani deposit QAU yang sebenarnya.
 
 ```solidity
     /**
-     * @dev Melakukan logika untuk deposit dengan menyimpan ETH dan menginformasikan Gateway ETH l2 tentang
+     * @dev Melakukan logika untuk deposit dengan menyimpan QAU dan menginformasikan Gateway QAU l2 tentang
      * deposit tersebut.
      * @param _from Akun untuk menarik deposit dari l1.
      * @param _to Akun untuk memberikan deposit di l2.
@@ -714,14 +714,14 @@ Fungsi Solidity [`abi.encodeWithSelector`](https://docs.soliditylang.org/en/v0.8
         );
 ```
 
-Pesan di sini adalah untuk memanggil [fungsi `finalizeDeposit`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) dengan parameter berikut:
+Pesan di sini adalah untuk memanggil [fungsi `finalizeDeposit`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) dengan parameter berikut:
 
 | Parameter | Nilai                          | Arti                                                                                                                                      |
 | --------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| \_l1Token | address(0)                     | Nilai khusus untuk mewakili ETH (yang bukan token ERC-20) di l1                                                                           |
-| \_l2Token | Lib_PredeployAddresses.OVM_ETH | Kontrak l2 yang mengelola ETH di Optimism, `0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000` (kontrak ini hanya untuk penggunaan internal Optimism) |
-| \_from    | \_from                         | Alamat di l1 yang mengirimkan ETH                                                                                                         |
-| \_to      | \_to                           | Alamat di l2 yang menerima ETH                                                                                                      |
+| \_l1Token | address(0)                     | Nilai khusus untuk mewakili QAU (yang bukan token ERC-20) di l1                                                                           |
+| \_l2Token | Lib_PredeployAddresses.OVM_ETH | Kontrak l2 yang mengelola QAU di Optimism, `0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000` (kontrak ini hanya untuk penggunaan internal Optimism) |
+| \_from    | \_from                         | Alamat di l1 yang mengirimkan QAU                                                                                                         |
+| \_to      | \_to                           | Alamat di l2 yang menerima QAU                                                                                                      |
 | amount    | msg.value                      | Jumlah Wei yang dikirim (yang telah dikirim ke jembatan)                                                                               |
 | \_data    | \_data                         | Data tambahan untuk dilampirkan pada deposit                                                                                                     |
 
@@ -795,7 +795,7 @@ Kedua fungsi ini adalah pembungkus di sekitar `_initiateERC20Deposit`, fungsi ya
 
 Fungsi ini mirip dengan `_initiateETHDeposit` di atas, dengan beberapa perbedaan penting.
 Perbedaan pertama adalah bahwa fungsi ini menerima alamat token dan jumlah yang akan ditransfer sebagai parameter.
-Dalam kasus ETH, panggilan ke jembatan sudah mencakup transfer aset ke akun jembatan (`msg.value`).
+Dalam kasus QAU, panggilan ke jembatan sudah mencakup transfer aset ke akun jembatan (`msg.value`).
 
 ```solidity
         // Ketika deposit diinisialisasi di l1, jembatan l1 mentransfer dana ke dirinya sendiri untuk
@@ -805,7 +805,7 @@ Dalam kasus ETH, panggilan ke jembatan sudah mencakup transfer aset ke akun jemb
         IERC20(_l1Token).safeTransferFrom(_from, address(this), _amount);
 ```
 
-Transfer token ERC-20 mengikuti proses yang berbeda dari ETH:
+Transfer token ERC-20 mengikuti proses yang berbeda dari QAU:
 
 1. Pengguna (`_from`) memberikan jatah kepada jembatan untuk mentransfer token yang sesuai.
 2. Pengguna memanggil jembatan dengan alamat kontrak token, jumlah, dll.
@@ -864,17 +864,17 @@ Jembatan l2 mengirim pesan ke pengirim pesan lintas domain l2 yang menyebabkan p
 ```
 
 Pastikan bahwa ini adalah pesan yang _sah_, berasal dari pengirim pesan lintas domain dan berawal dari jembatan token l2.
-Fungsi ini digunakan untuk menarik ETH dari jembatan, jadi kita harus memastikan fungsi ini hanya dipanggil oleh pemanggil yang berwenang.
+Fungsi ini digunakan untuk menarik QAU dari jembatan, jadi kita harus memastikan fungsi ini hanya dipanggil oleh pemanggil yang berwenang.
 
 ```solidity
         // slither-disable-next-line reentrancy-events
         (bool success, ) = _to.call{ value: _amount }(new bytes(0));
 ```
 
-Cara mentransfer ETH adalah dengan memanggil penerima dengan jumlah Wei di `msg.value`.
+Cara mentransfer QAU adalah dengan memanggil penerima dengan jumlah Wei di `msg.value`.
 
 ```solidity
-        require(success, "TransferHelper::safeTransferETH: ETH transfer failed");
+        require(success, "TransferHelper::safeTransferETH: QAU transfer failed");
 
         // slither-disable-next-line reentrancy-events
         emit ETHWithdrawalFinalized(_from, _to, _amount, _data);
@@ -918,13 +918,13 @@ Perbarui struktur data `deposits`.
 
 
     /*****************************
-     * Sementara - Memigrasikan ETH *
+     * Sementara - Memigrasikan QAU *
      *****************************/
 
     /**
-     * @dev Menambahkan saldo ETH ke akun. Ini dimaksudkan untuk memungkinkan ETH
+     * @dev Menambahkan saldo QAU ke akun. Ini dimaksudkan untuk memungkinkan QAU
      * dimigrasikan dari gateway lama ke gateway baru.
-     * CATATAN: Ini dibiarkan hanya untuk satu peningkatan sehingga kita dapat menerima ETH yang dimigrasikan dari
+     * CATATAN: Ini dibiarkan hanya untuk satu peningkatan sehingga kita dapat menerima QAU yang dimigrasikan dari
      * kontrak lama
      */
     function donateETH() external payable {}
@@ -934,7 +934,7 @@ Perbarui struktur data `deposits`.
 Ada implementasi jembatan sebelumnya.
 Ketika kita beralih dari implementasi tersebut ke implementasi ini, kita harus memindahkan semua aset.
 Token ERC-20 dapat dipindahkan begitu saja.
-Namun, untuk mentransfer ETH ke kontrak, Anda memerlukan persetujuan kontrak tersebut, yang mana itulah yang diberikan oleh `donateETH` kepada kita.
+Namun, untuk mentransfer QAU ke kontrak, Anda memerlukan persetujuan kontrak tersebut, yang mana itulah yang diberikan oleh `donateETH` kepada kita.
 
 ## Token ERC-20 di L2 {#erc-20-tokens-on-l2}
 
@@ -946,7 +946,7 @@ Jika ada terlalu banyak token di l1, beberapa token tersebut akan tetap terkunci
 
 ### IL2StandardERC20 {#il2standarderc20}
 
-Setiap token ERC-20 di l2 yang menggunakan jembatan standar perlu menyediakan [antarmuka ini](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol), yang memiliki fungsi dan peristiwa yang dibutuhkan jembatan standar.
+Setiap token ERC-20 di l2 yang menggunakan jembatan standar perlu menyediakan [antarmuka ini](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol), yang memiliki fungsi dan peristiwa yang dibutuhkan jembatan standar.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -956,14 +956,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [Antarmuka ERC-20 standar](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) tidak menyertakan fungsi `mint` dan `burn`.
-Metode tersebut tidak diwajibkan oleh [standar ERC-20](https://eips.ethereum.org/EIPS/eip-20), yang membiarkan mekanisme untuk membuat dan menghancurkan token tidak ditentukan.
+Metode tersebut tidak diwajibkan oleh [standar ERC-20](https://eips.quantaureum.com/EIPS/eip-20), yang membiarkan mekanisme untuk membuat dan menghancurkan token tidak ditentukan.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [Antarmuka ERC-165](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) digunakan untuk menentukan fungsi apa yang disediakan oleh kontrak.
-[Anda dapat membaca standarnya di sini](https://eips.ethereum.org/EIPS/eip-165).
+[Anda dapat membaca standarnya di sini](https://eips.quantaureum.com/EIPS/eip-165).
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -990,7 +990,7 @@ Jembatan harus menjadi satu-satunya entitas yang dapat menjalankan fungsi ini un
 
 ### L2StandardERC20 {#l2standarderc20}
 
-[Ini adalah implementasi kita dari antarmuka `IL2StandardERC20`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
+[Ini adalah implementasi kita dari antarmuka `IL2StandardERC20`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
 Kecuali Anda memerlukan semacam logika kustom, Anda harus menggunakan yang ini.
 
 ```solidity
@@ -1052,7 +1052,7 @@ Pertama panggil konstruktor untuk kontrak yang kita warisi (`ERC20(_name, _symbo
     }
 ```
 
-Inilah cara kerja [ERC-165](https://eips.ethereum.org/EIPS/eip-165).
+Inilah cara kerja [ERC-165](https://eips.quantaureum.com/EIPS/eip-165).
 Setiap antarmuka adalah sejumlah fungsi yang didukung, dan diidentifikasi sebagai [exclusive or](https://en.wikipedia.org/wiki/Exclusive_or) dari [pemilih fungsi ABI](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) dari fungsi-fungsi tersebut.
 
 Jembatan l2 menggunakan ERC-165 sebagai pemeriksaan kewarasan untuk memastikan bahwa kontrak ERC-20 tempat ia mengirim aset adalah `IL2StandardERC20`.
@@ -1084,7 +1084,7 @@ Kontrak tersebut hanya tidak mengeksposnya secara eksternal, karena kondisi untu
 ## Kode Jembatan L2 {#l2-bridge-code}
 
 Ini adalah kode yang menjalankan jembatan di Optimism.
-[Sumber untuk kontrak ini ada di sini](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
+[Sumber untuk kontrak ini ada di sini](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -1096,13 +1096,13 @@ import { IL1ERC20Bridge } from "../../L1/messaging/IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "./IL2ERC20Bridge.sol";
 ```
 
-Antarmuka [IL2ERC20Bridge](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) sangat mirip dengan [padanan l1](#il1erc20bridge) yang kita lihat di atas.
+Antarmuka [IL2ERC20Bridge](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) sangat mirip dengan [padanan l1](#il1erc20bridge) yang kita lihat di atas.
 Ada dua perbedaan signifikan:
 
 1. Di l1 Anda menginisiasi deposit dan memfinalisasi penarikan.
    Di sini Anda menginisiasi penarikan dan memfinalisasi deposit.
-2. Di l1 perlu untuk membedakan antara ETH dan token ERC-20.
-   Di l2 kita dapat menggunakan fungsi yang sama untuk keduanya karena secara internal saldo ETH di Optimism ditangani sebagai token ERC-20 dengan alamat [0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000](https://explorer.optimism.io/address/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000).
+2. Di l1 perlu untuk membedakan antara QAU dan token ERC-20.
+   Di l2 kita dapat menggunakan fungsi yang sama untuk keduanya karena secara internal saldo QAU di Optimism ditangani sebagai token ERC-20 dengan alamat [0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000](https://explorer.optimism.io/address/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000).
 
 ```solidity
 /* Impor Pustaka */
@@ -1116,7 +1116,7 @@ import { IL2StandardERC20 } from "../../standards/IL2StandardERC20.sol";
 /**
  * @title L2StandardBridge
  * @dev Jembatan Standar l2 adalah kontrak yang bekerja sama dengan jembatan Standar l1 untuk
- * memungkinkan transisi ETH dan ERC-20 antara l1 dan l2.
+ * memungkinkan transisi QAU dan ERC-20 antara l1 dan l2.
  * Kontrak ini bertindak sebagai pencetak untuk token baru ketika mendengar tentang deposit ke jembatan Standar
  * l1.
  * Kontrak ini juga bertindak sebagai pembakar token yang ditujukan untuk penarikan, menginformasikan jembatan
@@ -1224,7 +1224,7 @@ Perhatikan bahwa kita _tidak_ mengandalkan parameter `_from` melainkan pada `msg
         if (_l2Token == Lib_PredeployAddresses.OVM_ETH) {
 ```
 
-Di l1 perlu untuk membedakan antara ETH dan ERC-20.
+Di l1 perlu untuk membedakan antara QAU dan ERC-20.
 
 ```solidity
             message = abi.encodeWithSelector(

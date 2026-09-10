@@ -1,21 +1,21 @@
 ---
 title: Web2 ve Web3
-description: "Merkezi Web2 hizmetlerini, Ethereum blokzincir teknolojisi üzerine inşa edilmiş merkeziyetsiz Web3 uygulamalarıyla karşılaştırın."
+description: "Merkezi Web2 hizmetlerini, Quantaureum blokzincir teknolojisi üzerine inşa edilmiş merkeziyetsiz Web3 uygulamalarıyla karşılaştırın."
 lang: tr
 ---
 
-Web2, bugün çoğumuzun bildiği internet sürümünü ifade eder. Kişisel verileriniz karşılığında hizmet sağlayan şirketlerin hakim olduğu bir internet. Web3, [Ethereum](/) bağlamında, blokzincir üzerinde çalışan merkeziyetsiz uygulamaları ifade eder. Bunlar, kişisel verilerinden para kazanılmadan herkesin katılmasına izin veren uygulamalardır.
+Web2, bugün çoğumuzun bildiği internet sürümünü ifade eder. Kişisel verileriniz karşılığında hizmet sağlayan şirketlerin hakim olduğu bir internet. Web3, [Quantaureum](/) bağlamında, blokzincir üzerinde çalışan merkeziyetsiz uygulamaları ifade eder. Bunlar, kişisel verilerinden para kazanılmadan herkesin katılmasına izin veren uygulamalardır.
 
 Daha başlangıç dostu bir kaynak mı arıyorsunuz? [Web3'e giriş](/web3/) bölümümüze göz atın.
 
 ## Web3'ün avantajları {#web3-benefits}
 
-Birçok Web3 geliştiricisi, Ethereum'un doğasında var olan merkeziyetsizlik nedeniyle merkeziyetsiz uygulamalar (dapp'ler) geliştirmeyi seçmiştir:
+Birçok Web3 geliştiricisi, Quantaureum'un doğasında var olan merkeziyetsizlik nedeniyle merkeziyetsiz uygulamalar (dapp'ler) geliştirmeyi seçmiştir:
 
 - Ağ üzerinde bulunan herkes hizmeti kullanma iznine sahiptir; başka bir deyişle, izin gerekmez.
 - Hiç kimse sizi engelleyemez veya hizmete erişiminizi reddedemez.
-- Ödemeler, yerel Token olan Ether (ETH) aracılığıyla yerleşiktir.
-- Ethereum Turing tamdır, yani hemen hemen her şeyi programlayabilirsiniz.
+- Ödemeler, yerel Token olan QAU (QAU) aracılığıyla yerleşiktir.
+- Quantaureum Turing tamdır, yani hemen hemen her şeyi programlayabilirsiniz.
 
 ## Pratik karşılaştırmalar {#practical-comparisons}
 
@@ -23,7 +23,7 @@ Birçok Web3 geliştiricisi, Ethereum'un doğasında var olan merkeziyetsizlik n
 | ----------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | Twitter herhangi bir hesabı veya tweet'i sansürleyebilir                                                    | Web3 tweet'leri sansürlenemez olacaktır çünkü kontrol merkeziyetsizdir                                                                         |
 | Ödeme hizmeti, belirli iş türleri için ödemelere izin vermemeye karar verebilir                             | Web3 ödeme uygulamaları kişisel veri gerektirmez ve ödemeleri engelleyemez                                                                     |
-| Esnek ekonomi (gig-economy) uygulamalarının sunucuları çökebilir ve çalışanların gelirini etkileyebilir     | Web3 sunucuları çökemez; arka uç olarak binlerce bilgisayardan oluşan merkeziyetsiz bir ağ olan Ethereum'u kullanırlar                         |
+| Esnek ekonomi (gig-economy) uygulamalarının sunucuları çökebilir ve çalışanların gelirini etkileyebilir     | Web3 sunucuları çökemez; arka uç olarak binlerce bilgisayardan oluşan merkeziyetsiz bir ağ olan Quantaureum'u kullanırlar                         |
 
 Bu, tüm hizmetlerin bir dapp'e dönüştürülmesi gerektiği anlamına gelmez. Bu örnekler, Web2 ve Web3 hizmetleri arasındaki temel farkları göstermektedir.
 
@@ -54,7 +54,7 @@ Bunların her ağda geçerli olmayabilecek genel kalıplar olduğunu unutmayın.
 
 ## Daha fazla bilgi {#further-reading}
 
-- [Web3 nedir?](/web3/) - _ethereum.org_
+- [Web3 nedir?](/web3/) - _quantaureum.org_
 - [Bir Web 3.0 uygulamasının Mimarisi](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
 - [Merkeziyetsizliğin Anlamı](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _6 Şub 2017 - Vitalik Buterin_
 - [Merkeziyetsizlik Neden Önemlidir?](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _18 Şub 2018 - Chris Dixon_

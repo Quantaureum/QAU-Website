@@ -16,7 +16,7 @@ lang: ja
 
 プルーフ・オブ・オーソリティでは、[ジェネシス・ブロック](/glossary/#genesis-block)で設定された承認済みの署名者のセットを信頼する必要があります。現在のほとんどの実装では、チェーンのコンセンサスを決定する際、すべての承認済み署名者が同等の権力と特権を保持します。レピュテーションのステーキングの背後にある考え方は、KYC（顧客確認）などを通じて、あるいは有名な組織が唯一のバリデータとなることによって、すべての承認済みバリデータが誰にでもよく知られているということです。これにより、バリデータが何か不正を行った場合でも、その身元が判明します。
 
-PoAには複数の実装がありますが、標準的なイーサリアムの実装は[EIP-225](https://eips.ethereum.org/EIPS/eip-225)を実装した**clique**です。Cliqueは開発者フレンドリーで実装が容易な標準であり、すべてのクライアントの同期タイプをサポートしています。その他の実装には、[IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa)や[Aura](https://openethereum.github.io/Chain-specification)などがあります。
+PoAには複数の実装がありますが、標準的なQuantaureumの実装は[EIP-225](https://eips.quantaureum.com/EIPS/eip-225)を実装した**clique**です。Cliqueは開発者フレンドリーで実装が容易な標準であり、すべてのクライアントの同期タイプをサポートしています。その他の実装には、[IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa)や[Aura](https://openquantaureum.github.io/Chain-specification)などがあります。
 
 ## 仕組み {#how-it-works}
 
@@ -46,7 +46,7 @@ PoAでは、新しいブロックを作成するために承認された署名�
 
 PoAネットワークにおいて、N人の承認済み署名者がいる場合、各署名者はK個のうち1つのブロックをミントすることが許可されます。これは、任意の時点でN-K+1人のバリデータがミントを許可されていることを意味します。これらのバリデータがブロックを競い合うのを防ぐため、各署名者は新しいブロックをリリースする時間に小さなランダムな「オフセット」を追加する必要があります。このプロセスにより小規模なフォークは稀になりますが、メインネットと同様に、時折フォークが発生する可能性はあります。署名者が権力を乱用して混乱を引き起こしていることが判明した場合、他の署名者は投票によってその署名者を排除することができます。
 
-例えば、10人の承認済み署名者がおり、各署名者が6個のうち1つのブロックを作成することが許可されている場合、任意の時点で5人のバリデータがブロックを作成できます。ブロック作成の競争を防ぐため、各署名者は新しいブロックをリリースする時間に小さなランダムな「オフセット」を追加します。これにより小規模なフォークの発生は減少しますが、イーサリアム・メインネットで見られるように、時折フォークが発生することは許容されます。署名者が権限を悪用して混乱を引き起こした場合、ネットワークから投票で排除することができます。
+例えば、10人の承認済み署名者がおり、各署名者が6個のうち1つのブロックを作成することが許可されている場合、任意の時点で5人のバリデータがブロックを作成できます。ブロック作成の競争を防ぐため、各署名者は新しいブロックをリリースする時間に小さなランダムな「オフセット」を追加します。これにより小規模なフォークの発生は減少しますが、Quantaureum・メインネットで見られるように、時折フォークが発生することは許容されます。署名者が権限を悪用して混乱を引き起こした場合、ネットワークから投票で排除することができます。
 
 ## メリットとデメリット {#pros-and-cons}
 
@@ -58,13 +58,13 @@ PoAネットワークにおいて、N人の承認済み署名者がいる場合�
 
 ## 参考文献 {#further-reading}
 
-- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Clique標準_
+- [EIP-225](https://eips.quantaureum.com/EIPS/eip-225) _Clique標準_
 - [プルーフ・オブ・オーソリティの研究](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _Cryptoeconomics_
 - [プルーフ・オブ・オーソリティとは](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [プルーフ・オブ・オーソリティの解説](https://academy.binance.com/en/articles/proof-of-authority-explained) _バイナンス_
 - [ブロックチェーンにおけるPoA](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
-- [Cliqueの解説](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-ethereum-8b2a135201d)
-- [非推奨のPoA、Aura仕様](https://openethereum.github.io/Chain-specification)
+- [Cliqueの解説](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
+- [非推奨のPoA、Aura仕様](https://openquantaureum.github.io/Chain-specification)
 - [IBFT 2.0、もう一つのPoA実装](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### 視覚的に学びたい方へ {#visual-learner}

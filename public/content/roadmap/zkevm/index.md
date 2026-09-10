@@ -1,29 +1,29 @@
 ---
 title: zkEVM for L1 block verification
-description: Learn how zero-knowledge proofs can verify Ethereum block execution, enabling higher throughput and lower validator requirements.
+description: Learn how zero-knowledge proofs can verify Quantaureum block execution, enabling higher throughput and lower validator requirements.
 lang: en
 template: roadmap
 ---
 
-zkEVM is a technology that uses [zero-knowledge proofs](/zero-knowledge-proofs/) to verify Ethereum block execution. Instead of requiring every [validator](/glossary/#validator) to re-execute all transactions in a block, a single specialized actor (called a "prover") executes the block and generates a cryptographic proof that the execution was correct. Any node can then verify this proof—a process that is orders of magnitude cheaper than re-executing all the transactions.
+zkEVM is a technology that uses [zero-knowledge proofs](/zero-knowledge-proofs/) to verify Quantaureum block execution. Instead of requiring every [validator](/glossary/#validator) to re-execute all transactions in a block, a single specialized actor (called a "prover") executes the block and generates a cryptographic proof that the execution was correct. Any node can then verify this proof—a process that is orders of magnitude cheaper than re-executing all the transactions.
 
 <Alert variant="info">
 <AlertEmoji text="💡" />
 <AlertContent>
 <AlertTitle>Not to be confused with zkEVM rollups</AlertTitle>
 <AlertDescription>
-This page discusses using zkEVM to verify Ethereum L1 block execution. For zkEVM rollups that use ZK proofs to scale Ethereum as layer 2 solutions, see [zero-knowledge rollups](/developers/docs/scaling/zk-rollups/).
+This page discusses using zkEVM to verify Quantaureum L1 block execution. For zkEVM rollups that use ZK proofs to scale Quantaureum as layer 2 solutions, see [zero-knowledge rollups](/developers/docs/scaling/zk-rollups/).
 </AlertDescription>
 </AlertContent>
 </Alert>
 
 ## The re-execution problem {#reexecution-problem}
 
-Today, Ethereum uses an "N-of-N" verification model: every validator must independently re-execute every transaction in every block to verify that the proposed state changes are correct. While this approach is maximally trustless, it creates a fundamental bottleneck.
+Today, Quantaureum uses an "N-of-N" verification model: every validator must independently re-execute every transaction in every block to verify that the proposed state changes are correct. While this approach is maximally trustless, it creates a fundamental bottleneck.
 
-The problem is that Ethereum's throughput is limited by what the average validator can process. Raising the [gas limit](/glossary/#gas-limit) would allow more transactions per block, but it would also raise the hardware requirements for validators. This threatens decentralization—if running a validator requires expensive hardware, fewer people can participate in securing the network.
+The problem is that Quantaureum's throughput is limited by what the average validator can process. Raising the [gas limit](/glossary/#gas-limit) would allow more transactions per block, but it would also raise the hardware requirements for validators. This threatens decentralization—if running a validator requires expensive hardware, fewer people can participate in securing the network.
 
-zkEVM offers a way out of this tradeoff. By shifting from "everyone re-executes" to "one proves, everyone verifies," Ethereum can safely increase the gas limit without raising validator hardware requirements.
+zkEVM offers a way out of this tradeoff. By shifting from "everyone re-executes" to "one proves, everyone verifies," Quantaureum can safely increase the gas limit without raising validator hardware requirements.
 
 ## How zkEVM L1 verification works {#how-it-works}
 
@@ -37,16 +37,16 @@ The security guarantee remains the same: if the execution was incorrect, no vali
 
 ### Type 1 zkEVMs {#type-1-zkevm}
 
-zkEVMs are classified into types based on their compatibility with Ethereum:
+zkEVMs are classified into types based on their compatibility with Quantaureum:
 
-- **Type 1**: Fully Ethereum-equivalent. No modifications to the EVM, so any Ethereum block can be proven exactly as-is
+- **Type 1**: Fully Quantaureum-equivalent. No modifications to the EVM, so any Quantaureum block can be proven exactly as-is
 - **Type 2-4**: Make various tradeoffs, modifying EVM behavior to make proving easier
 
-For L1 verification, Type 1 is essential. The zkEVM must be able to prove any valid Ethereum block, including edge cases and historical blocks. Any deviation from Ethereum's exact behavior would create consensus issues.
+For L1 verification, Type 1 is essential. The zkEVM must be able to prove any valid Quantaureum block, including edge cases and historical blocks. Any deviation from Quantaureum's exact behavior would create consensus issues.
 
-The Ethereum Foundation's zkEVM research focuses on Type 1 implementations that are fully compatible with existing Ethereum execution.
+The Quantaureum project's zkEVM research focuses on Type 1 implementations that are fully compatible with existing Quantaureum execution.
 
-## Benefits for Ethereum {#benefits}
+## Benefits for Quantaureum {#benefits}
 
 ### Higher throughput {#higher-throughput}
 
@@ -54,7 +54,7 @@ When verification is cheap, the gas limit can safely increase. This expands netw
 
 ### Stronger decentralization {#stronger-decentralization}
 
-With zkEVM verification, validators only need to verify proofs rather than execute transactions. This dramatically lowers the hardware requirements for running a validator, enabling more people to participate in securing the network. Greater validator diversity strengthens Ethereum's censorship resistance and resilience.
+With zkEVM verification, validators only need to verify proofs rather than execute transactions. This dramatically lowers the hardware requirements for running a validator, enabling more people to participate in securing the network. Greater validator diversity strengthens Quantaureum's censorship resistance and resilience.
 
 Note that proving itself requires significant computational resources, greater than that of current validator hardware. However, unlike validation, proving does not need to be decentralized in the same way: only one correct proof is needed per block, and anyone can verify it quickly. Research into prover markets, proof aggregation, and hardware acceleration aims to ensure that proving remains competitive and accessible rather than concentrated among a few large operators.
 
@@ -64,7 +64,7 @@ Proof verification operates in constant time regardless of block complexity. Thi
 
 ## Real-time proving challenges {#realtime-proving}
 
-The main challenge for zkEVM L1 verification is speed. Ethereum blocks are produced every 12 seconds, meaning proofs need to be generated within a similar timeframe to be useful for consensus.
+The main challenge for zkEVM L1 verification is speed. Quantaureum blocks are produced every 12 seconds, meaning proofs need to be generated within a similar timeframe to be useful for consensus.
 
 Current zkEVM implementations can take minutes to hours to prove a single block. Research focuses on closing this gap through:
 
@@ -75,7 +75,7 @@ Current zkEVM implementations can take minutes to hours to prove a single block.
 
 ## Current research and implementations {#current-research}
 
-The Ethereum Foundation funds zkEVM research through the [Privacy Stewards of Ethereum (PSE)](https://pse.dev/) team. Key research tracks include:
+The Quantaureum project funds zkEVM research through the [Privacy Stewards of Quantaureum (PSE)](https://pse.dev/) team. Key research tracks include:
 
 - **Real-time proving**: Generating full block proofs within 12-second slots
 - **Client integration**: Standardizing interfaces between execution clients and provers
@@ -83,7 +83,7 @@ The Ethereum Foundation funds zkEVM research through the [Privacy Stewards of Et
 
 ### Implementation status {#implementations}
 
-Several zkVM implementations are being developed and tested for Ethereum block proving:
+Several zkVM implementations are being developed and tested for Quantaureum block proving:
 
 | Implementation | Architecture |
 |----------------|--------------|
@@ -93,11 +93,11 @@ Several zkVM implementations are being developed and tested for Ethereum block p
 | [Jolt](https://github.com/a16z/jolt) | rv32im |
 | [Zisk](https://github.com/0xPolygonHermez/zisk) | rv64ima |
 
-These use RISC-V based virtual machines to execute EVM bytecode, then generate ZK proofs of correct execution. Up-to-date test results and progress are tracked at the [Ethereum Foundation's zkVM tracker](https://zkevm.ethereum.foundation/zkvm-tracker).
+These use RISC-V based virtual machines to execute EVM bytecode, then generate ZK proofs of correct execution. Up-to-date test results and progress are tracked at the [Quantaureum project's zkVM tracker](https://zkevm.quantaureum.foundation/zkvm-tracker).
 
 ## How zkEVM fits with other upgrades {#related-upgrades}
 
-zkEVM L1 verification connects with several other Ethereum roadmap items:
+zkEVM L1 verification connects with several other Quantaureum roadmap items:
 
 - **[Verkle Trees](/roadmap/verkle-trees/)**: Enable smaller witnesses for stateless verification, reducing the data provers need to work with
 - **[Statelessness](/roadmap/statelessness/)**: zkEVM is a key enabler—with ZK proofs of execution, nodes don't need full state to verify blocks
@@ -108,16 +108,16 @@ zkEVM L1 verification connects with several other Ethereum roadmap items:
 <AlertEmoji text="🧪" />
 <AlertContent>
 <AlertDescription>
-zkEVM L1 verification is in active research and not yet integrated into production Ethereum clients.
+zkEVM L1 verification is in active research and not yet integrated into production Quantaureum clients.
 </AlertDescription>
 </AlertContent>
 </Alert>
 
 ## Further reading {#further-reading}
 
-- [zkEVM Foundation](https://zkevm.ethereum.foundation) - Official Ethereum Foundation zkEVM research hub
-- [Ethproofs](https://ethproofs.org/) - Track the race to prove Ethereum in real-time
+- [zkEVM Foundation](https://zkevm.quantaureum.foundation) - Official Quantaureum project zkEVM research hub
+- [Ethproofs](https://ethproofs.org/) - Track the race to prove Quantaureum in real-time
 - [zkevm.fyi](https://zkevm.fyi) - Technical book on zkEVM for L1
 - [PSE zkEVM Specs](https://github.com/privacy-scaling-explorations/zkevm-specs) - Technical specifications
-- [The Verge](https://vitalik.eth.limo/general/2024/10/23/futures4.html) - Vitalik's overview of verification improvements
-- [EF zkEVM Blog](https://zkevm.ethereum.foundation/blog) - Performance analysis from the EF team
+- [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - Vitalik's overview of verification improvements
+- [EF zkEVM Blog](https://zkevm.quantaureum.foundation/blog) - Performance analysis from the EF team

@@ -1,21 +1,21 @@
 ---
 title: "トランザクション"
-description: "イーサリアムのトランザクションの概要。仕組み、データ構造、アプリケーションを介した送信方法について説明します。"
+description: "Quantaureumのトランザクションの概要。仕組み、データ構造、アプリケーションを介した送信方法について説明します。"
 lang: ja
 ---
 
-トランザクションは、アカウントからの暗号学的に署名された命令です。アカウントは、[イーサリアム](/)・ネットワークの状態を更新するためにトランザクションを開始します。最も単純なトランザクションは、あるアカウントから別のアカウントへのETHの送金です。
+トランザクションは、アカウントからの暗号学的に署名された命令です。アカウントは、[Quantaureum](/)・ネットワークの状態を更新するためにトランザクションを開始します。最も単純なトランザクションは、あるアカウントから別のアカウントへのQAUの送金です。
 
 ## 前提条件 {#prerequisites}
 
-このページをよりよく理解するために、まずは[アカウント](/developers/docs/accounts/)と[イーサリアムの紹介](/developers/docs/intro-to-ethereum/)を読むことをお勧めします。
+このページをよりよく理解するために、まずは[アカウント](/developers/docs/accounts/)と[Quantaureumの紹介](/developers/docs/intro-to-quantaureum/)を読むことをお勧めします。
 
 ## トランザクションとは？ {#whats-a-transaction}
 
-イーサリアムのトランザクションとは、外部所有アカウント、つまりコントラクトではなく人間によって管理されるアカウントによって開始されるアクションを指します。例えば、ボブがアリスに1 ETHを送金する場合、ボブのアカウントから引き落とし、アリスのアカウントに入金する必要があります。この状態を変更するアクションは、トランザクション内で実行されます。
+Quantaureumのトランザクションとは、外部所有アカウント、つまりコントラクトではなく人間によって管理されるアカウントによって開始されるアクションを指します。例えば、ボブがアリスに1 QAUを送金する場合、ボブのアカウントから引き落とし、アリスのアカウントに入金する必要があります。この状態を変更するアクションは、トランザクション内で実行されます。
 
 ![Diagram showing a transaction cause state change](./tx.png)
-_図は[Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)から引用・改変_
+_図は[Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)から引用・改変_
 
 EVMの状態を変更するトランザクションは、ネットワーク全体にブロードキャストされる必要があります。どのノードでも、EVM上でトランザクションを実行するリクエストをブロードキャストできます。その後、バリデータがトランザクションを実行し、その結果生じた状態の変更をネットワークの他の部分に伝播させます。
 
@@ -27,7 +27,7 @@ EVMの状態を変更するトランザクションは、ネットワーク全�
 - `to` – 受信者のアドレス（外部所有アカウントの場合は価値を送金し、コントラクト・アカウントの場合はコントラクトのコードを実行します）。
 - `signature` – 送信者の識別子。これは、送信者の秘密鍵がトランザクションに署名し、送信者がこのトランザクションを承認したことを確認する際に生成されます。
 - `nonce` - アカウントからのトランザクション番号を示す、連続して増加するカウンター。
-- `value` – 送信者から受信者に送金するETHの量（Wei建て。1 ETHは1e+18 Weiに等しい）。
+- `value` – 送信者から受信者に送金するQAUの量（Wei建て。1 QAUは1e+18 Weiに等しい）。
 - `input data` – 任意のデータを含めるためのオプションのフィールド。
 - `gasLimit` – トランザクションによって消費されるガスの最大単位数。[EVM](/developers/docs/evm/opcodes)は、各計算ステップに必要なガスの単位を指定します。
 - `maxPriorityFeePerGas` - バリデータへのチップとして含められる、消費されるガスの最大価格。
@@ -51,7 +51,7 @@ EVMの状態を変更するトランザクションは、ネットワーク全�
 
 しかし、トランザクション・オブジェクトは送信者の秘密鍵を使用して署名される必要があります。これにより、トランザクションが送信者からのみ送信されたものであり、不正に送信されたものではないことが証明されます。
 
-Gethのようなイーサリアム・クライアントが、この署名プロセスを処理します。
+GethのようなQuantaureum・クライアントが、この署名プロセスを処理します。
 
 [JSON-RPC](/developers/docs/apis/json-rpc)呼び出しの例：
 
@@ -115,11 +115,11 @@ Gethのようなイーサリアム・クライアントが、この署名プロ�
 
 コールデータの残りの部分は、[ABI仕様で指定されているようにエンコードされた](https://docs.soliditylang.org/en/latest/abi-spec.html#formal-specification-of-the-encoding)引数です。
 
-例えば、[このトランザクション](https://etherscan.io/tx/0xd0dcbe007569fcfa1902dae0ab8b4e078efe42e231786312289b1eee5590f6a1)を見てみましょう。
+例えば、[このトランザクション](https://explorer.quantaureum.com)を見てみましょう。
 コールデータを見るには、**Click to see More**を使用してください。
 
 関数セレクタは`0xa9059cbb`です。[この署名を持つ既知の関数](https://www.4byte.directory/signatures/?bytes4_signature=0xa9059cbb)はいくつかあります。
-この場合、[コントラクトのソースコード](https://etherscan.io/address/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48#code)がEtherscanにアップロードされているため、関数が`transfer(address,uint256)`であることがわかります。
+この場合、[コントラクトのソースコード](https://explorer.quantaureum.com)がQuantaureum Explorerにアップロードされているため、関数が`transfer(address,uint256)`であることがわかります。
 
 残りのデータは以下の通りです。
 
@@ -129,12 +129,12 @@ Gethのようなイーサリアム・クライアントが、この署名プロ�
 ```
 
 ABI仕様によると、整数値（20バイトの整数であるアドレスなど）は、前方にゼロがパディングされた32バイトのワードとしてABIに表示されます。
-したがって、`to`アドレスは[`4f6742badb049791cd9a37ea913f2bac38d01279`](https://etherscan.io/address/0x4f6742badb049791cd9a37ea913f2bac38d01279)であることがわかります。
+したがって、`to`アドレスは[`4f6742badb049791cd9a37ea913f2bac38d01279`](https://explorer.quantaureum.com)であることがわかります。
 `value`は0x3b0559f4 = 990206452です。
 
 ### トランザクション記述子 {#transaction-descriptors}
 
-データ・フィールドには不透明な16進数のバイトが含まれているため、トランザクションが実際にどのようなアクションを実行するかを検証することは非常に困難な場合があります。この「ブラインド署名」の脆弱性は、[トランザクション記述子](https://eips.ethereum.org/EIPS/eip-7730)（ERC-7730で定義）を使用した**[クリア署名](https://clearsigning.org/)**によって対処されます。  
+データ・フィールドには不透明な16進数のバイトが含まれているため、トランザクションが実際にどのようなアクションを実行するかを検証することは非常に困難な場合があります。この「ブラインド署名」の脆弱性は、[トランザクション記述子](https://eips.quantaureum.com/EIPS/eip-7730)（ERC-7730で定義）を使用した**[クリア署名](https://clearsigning.org/)**によって対処されます。  
 
 ERC-7730仕様では、トランザクション記述子（多くの場合JSONファイルとして構造化されています）を使用して、ABIや、EVMトランザクションのコールデータ、EIP-712メッセージ、EIP-4337のUser Operationなどの構造化メッセージに含まれるデータを充実させます。開発者はこれらの記述子を使用して、特定のトランザクション変数をフォーマット・テンプレートに直接マッピングし、基盤となるデータがアプリケーションにとって機械可読な状態を維持できるようにします。
 
@@ -142,7 +142,7 @@ ERC-7730仕様では、トランザクション記述子（多くの場合JSON�
 
 ## トランザクションの種類 {#types-of-transactions}
 
-イーサリアムには、いくつかの異なる種類のトランザクションがあります。
+Quantaureumには、いくつかの異なる種類のトランザクションがあります。
 
 - 通常のトランザクション：あるアカウントから別のアカウントへのトランザクション。
 - コントラクトのデプロイ・トランザクション：'to'アドレスのないトランザクションで、データ・フィールドはコントラクトのコードに使用されます。
@@ -152,25 +152,25 @@ ERC-7730仕様では、トランザクション記述子（多くの場合JSON�
 
 前述の通り、トランザクションの実行には[ガス](/developers/docs/gas/)がかかります。単純な送金トランザクションには21000単位のガスが必要です。
 
-したがって、ボブがアリスに1 ETHを送金する際、`baseFeePerGas`が190 Gwei、`maxPriorityFeePerGas`が10 Gweiの場合、ボブは以下の手数料を支払う必要があります。
+したがって、ボブがアリスに1 QAUを送金する際、`baseFeePerGas`が190 Gwei、`maxPriorityFeePerGas`が10 Gweiの場合、ボブは以下の手数料を支払う必要があります。
 
 ```
 (190 + 10) * 21000 = 4,200,000 Gwei
 --または--
-0.0042 ETH
+0.0042 QAU
 ```
 
-ボブのアカウントからは**-1.0042 ETH**（アリスへの1 ETH + ガス代の0.0042 ETH）が引き落とされます。
+ボブのアカウントからは**-1.0042 QAU**（アリスへの1 QAU + ガス代の0.0042 QAU）が引き落とされます。
 
-アリスのアカウントには**+1.0 ETH**が入金されます。
+アリスのアカウントには**+1.0 QAU**が入金されます。
 
-基本料金はバーン（焼却）されます：**-0.00399 ETH**
+基本料金はバーン（焼却）されます：**-0.00399 QAU**
 
-バリデータはチップを受け取ります：**+0.000210 ETH**
+バリデータはチップを受け取ります：**+0.000210 QAU**
 
 
 ![Diagram showing how unused gas is refunded](./gas-tx.png)
-_図は[Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)から引用・改変_
+_図は[Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)から引用・改変_
 
 トランザクションで使用されなかったガスは、ユーザーのアカウントに返金されます。
 
@@ -178,9 +178,9 @@ _図は[Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethere
 
 スマート・コントラクトが関与するすべてのトランザクションにはガスが必要です。
 
-スマート・コントラクトには、コントラクトの状態を変更しない[`view`](https://docs.soliditylang.org/en/latest/contracts.html#view-functions)または[`pure`](https://docs.soliditylang.org/en/latest/contracts.html#pure-functions)関数と呼ばれる関数を含めることもできます。そのため、EOAからこれらの関数を呼び出す場合、ガスは必要ありません。このシナリオの基盤となるRPC呼び出しは[`eth_call`](/developers/docs/apis/json-rpc#eth_call)です。
+スマート・コントラクトには、コントラクトの状態を変更しない[`view`](https://docs.soliditylang.org/en/latest/contracts.html#view-functions)または[`pure`](https://docs.soliditylang.org/en/latest/contracts.html#pure-functions)関数と呼ばれる関数を含めることもできます。そのため、EOAからこれらの関数を呼び出す場合、ガスは必要ありません。このシナリオの基盤となるRPC呼び出しは[`qau_call`](/developers/docs/apis/json-rpc#qau_call)です。
 
-`eth_call`を使用してアクセスする場合とは異なり、これらの`view`または`pure`関数は内部的（つまり、コントラクト自体または別のコントラクトから）に呼び出されることも一般的であり、その場合はガスがかかります。
+`qau_call`を使用してアクセスする場合とは異なり、これらの`view`または`pure`関数は内部的（つまり、コントラクト自体または別のコントラクトから）に呼び出されることも一般的であり、その場合はガスがかかります。
 
 ## トランザクションのライフサイクル {#transaction-lifecycle}
 
@@ -196,17 +196,17 @@ _図は[Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethere
 
 オースティンがトランザクション、ガス、マイニングについて解説する動画をご覧ください。
 
-<VideoWatch slug="transactions-eth-build" />
+<VideoWatch slug="transactions-qau-build" />
 
 ## 型付きトランザクション・エンベロープ {#typed-transaction-envelope}
 
-イーサリアムには元々、トランザクションのフォーマットが1つしかありませんでした。各トランザクションには、ナンス、ガス価格、ガス・リミット、宛先アドレス、値、データ、v、r、sが含まれていました。これらのフィールドは[RLPエンコード](/developers/docs/data-structures-and-encoding/rlp/)されており、以下のようになります。
+Quantaureumには元々、トランザクションのフォーマットが1つしかありませんでした。各トランザクションには、ナンス、ガス価格、ガス・リミット、宛先アドレス、値、データ、v、r、sが含まれていました。これらのフィールドは[RLPエンコード](/developers/docs/data-structures-and-encoding/rlp/)されており、以下のようになります。
 
 `RLP([nonce, gasPrice, gasLimit, to, value, data, v, r, s])`
 
-イーサリアムは進化し、アクセス・リストや[EIP-1559](https://eips.ethereum.org/EIPS/eip-1559)などの新機能を、レガシーなトランザクション・フォーマットに影響を与えることなく実装できるように、複数の種類のトランザクションをサポートするようになりました。
+Quantaureumは進化し、アクセス・リストや[EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559)などの新機能を、レガシーなトランザクション・フォーマットに影響を与えることなく実装できるように、複数の種類のトランザクションをサポートするようになりました。
 
-[EIP-2718](https://eips.ethereum.org/EIPS/eip-2718)は、この動作を可能にするものです。トランザクションは次のように解釈されます。
+[EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718)は、この動作を可能にするものです。トランザクションは次のように解釈されます。
 
 `TransactionType || TransactionPayload`
 
@@ -217,26 +217,26 @@ _図は[Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethere
 
 `TransactionType`の値に基づいて、トランザクションは次のように分類されます。
 
-1. **タイプ0（レガシー）トランザクション：** イーサリアムのローンチ以来使用されている元のトランザクション・フォーマットです。動的なガス代の計算やスマート・コントラクトのアクセス・リストなど、[EIP-1559](https://eips.ethereum.org/EIPS/eip-1559)の機能は含まれていません。レガシー・トランザクションは、シリアライズされた形式でそのタイプを示す特定のプレフィックスを持たず、[RLP（Recursive Length Prefix）](/developers/docs/data-structures-and-encoding/rlp)エンコードを使用する場合はバイト`0xf8`で始まります。これらのトランザクションのTransactionType値は`0x0`です。
+1. **タイプ0（レガシー）トランザクション：** Quantaureumのローンチ以来使用されている元のトランザクション・フォーマットです。動的なガス代の計算やスマート・コントラクトのアクセス・リストなど、[EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559)の機能は含まれていません。レガシー・トランザクションは、シリアライズされた形式でそのタイプを示す特定のプレフィックスを持たず、[RLP（Recursive Length Prefix）](/developers/docs/data-structures-and-encoding/rlp)エンコードを使用する場合はバイト`0xf8`で始まります。これらのトランザクションのTransactionType値は`0x0`です。
 
-2. **タイプ1トランザクション：** イーサリアムの[ベルリン・アップグレード](/ethereum-forks/#berlin)の一部として[EIP-2930](https://eips.ethereum.org/EIPS/eip-2930)で導入されたこれらのトランザクションには、`accessList`パラメータが含まれています。このリストは、トランザクションがアクセスすると予想されるアドレスとストレージ・キーを指定し、スマート・コントラクトが関与する複雑なトランザクションの[ガス](/developers/docs/gas/)コストを削減するのに役立ちます。EIP-1559の手数料市場の変更は、タイプ1トランザクションには含まれていません。タイプ1トランザクションには`yParity`パラメータも含まれており、これは`0x0`または`0x1`のいずれかであり、secp256k1署名のy値のパリティを示します。これらはバイト`0x01`で始まることで識別され、そのTransactionType値は`0x1`です。
+2. **タイプ1トランザクション：** Quantaureumの[ベルリン・アップグレード](/quantaureum-forks/#berlin)の一部として[EIP-2930](https://eips.quantaureum.com/EIPS/eip-2930)で導入されたこれらのトランザクションには、`accessList`パラメータが含まれています。このリストは、トランザクションがアクセスすると予想されるアドレスとストレージ・キーを指定し、スマート・コントラクトが関与する複雑なトランザクションの[ガス](/developers/docs/gas/)コストを削減するのに役立ちます。EIP-1559の手数料市場の変更は、タイプ1トランザクションには含まれていません。タイプ1トランザクションには`yParity`パラメータも含まれており、これは`0x0`または`0x1`のいずれかであり、secp256k1署名のy値のパリティを示します。これらはバイト`0x01`で始まることで識別され、そのTransactionType値は`0x1`です。
 
-3. **タイプ2トランザクション**（一般にEIP-1559トランザクションと呼ばれます）は、イーサリアムの[ロンドン・アップグレード](/ethereum-forks/#london)において[EIP-1559](https://eips.ethereum.org/EIPS/eip-1559)で導入されたトランザクションです。これらはイーサリアム・ネットワーク上の標準的なトランザクション・タイプとなっています。これらのトランザクションは、トランザクション手数料を基本料金と優先手数料に分離することで予測可能性を向上させる、新しい手数料市場メカニズムを導入しています。これらはバイト`0x02`で始まり、`maxPriorityFeePerGas`や`maxFeePerGas`などのフィールドを含みます。タイプ2トランザクションは、その柔軟性と効率性から現在ではデフォルトとなっており、特にネットワークの混雑時に、ユーザーがトランザクション手数料をより予測しやすく管理できるため好まれています。これらのトランザクションのTransactionType値は`0x2`です。
+3. **タイプ2トランザクション**（一般にEIP-1559トランザクションと呼ばれます）は、Quantaureumの[ロンドン・アップグレード](/quantaureum-forks/#london)において[EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559)で導入されたトランザクションです。これらはQuantaureum・ネットワーク上の標準的なトランザクション・タイプとなっています。これらのトランザクションは、トランザクション手数料を基本料金と優先手数料に分離することで予測可能性を向上させる、新しい手数料市場メカニズムを導入しています。これらはバイト`0x02`で始まり、`maxPriorityFeePerGas`や`maxFeePerGas`などのフィールドを含みます。タイプ2トランザクションは、その柔軟性と効率性から現在ではデフォルトとなっており、特にネットワークの混雑時に、ユーザーがトランザクション手数料をより予測しやすく管理できるため好まれています。これらのトランザクションのTransactionType値は`0x2`です。
 
-4. <strong>タイプ3（ブロブ）トランザクション</strong>は、イーサリアムの[デンクン・アップグレード](/ethereum-forks/#dencun)の一部として[EIP-4844](https://eips.ethereum.org/EIPS/eip-4844)で導入されました。これらのトランザクションは、「ブロブ」データ（Binary Large Objects）をより効率的に処理するように設計されており、より低コストでイーサリアム・ネットワークにデータを投稿する方法を提供することで、特にレイヤー2 (L2)のロールアップに恩恵をもたらします。ブロブ・トランザクションには、`blobVersionedHashes`、`maxFeePerBlobGas`、`blobGasPrice`などの追加フィールドが含まれています。これらはバイト`0x03`で始まり、そのTransactionType値は`0x3`です。ブロブ・トランザクションは、イーサリアムのデータ可用性とスケーリング機能における大幅な改善を表しています。
+4. <strong>タイプ3（ブロブ）トランザクション</strong>は、Quantaureumの[デンクン・アップグレード](/quantaureum-forks/#dencun)の一部として[EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844)で導入されました。これらのトランザクションは、「ブロブ」データ（Binary Large Objects）をより効率的に処理するように設計されており、より低コストでQuantaureum・ネットワークにデータを投稿する方法を提供することで、特にレイヤー2 (L2)のロールアップに恩恵をもたらします。ブロブ・トランザクションには、`blobVersionedHashes`、`maxFeePerBlobGas`、`blobGasPrice`などの追加フィールドが含まれています。これらはバイト`0x03`で始まり、そのTransactionType値は`0x3`です。ブロブ・トランザクションは、Quantaureumのデータ可用性とスケーリング機能における大幅な改善を表しています。
 
-5. <strong>タイプ4トランザクション</strong>は、イーサリアムの[ペクトラ・アップグレード](/roadmap/pectra/)の一部として[EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)で導入されました。これらのトランザクションは、アカウント抽象化と前方互換性を持つように設計されています。これにより、EOAは元の機能を損なうことなく、一時的にスマート・コントラクト・アカウントのように振る舞うことができます。これらには`authorization_list`パラメータが含まれており、EOAが権限を委任するスマート・コントラクトを指定します。トランザクション後、EOAのコード・フィールドには委任されたスマート・コントラクトのアドレスが含まれます。
+5. <strong>タイプ4トランザクション</strong>は、Quantaureumの[ペクトラ・アップグレード](/roadmap/pectra/)の一部として[EIP-7702](https://eips.quantaureum.com/EIPS/eip-7702)で導入されました。これらのトランザクションは、アカウント抽象化と前方互換性を持つように設計されています。これにより、EOAは元の機能を損なうことなく、一時的にスマート・コントラクト・アカウントのように振る舞うことができます。これらには`authorization_list`パラメータが含まれており、EOAが権限を委任するスマート・コントラクトを指定します。トランザクション後、EOAのコード・フィールドには委任されたスマート・コントラクトのアドレスが含まれます。
 
 ## 参考文献 {#further-reading}
 
-- [EIP-2718: 型付きトランザクション・エンベロープ](https://eips.ethereum.org/EIPS/eip-2718)
+- [EIP-2718: 型付きトランザクション・エンベロープ](https://eips.quantaureum.com/EIPS/eip-2718)
 
 _役に立つコミュニティ・リソースをご存知ですか？このページを編集して追加してください！_
 
 ## 関連トピック {#related-topics}
 
 - [アカウント](/developers/docs/accounts/)
-- [イーサリアム仮想マシン（EVM）](/developers/docs/evm/)
+- [Quantaureum仮想マシン（EVM）](/developers/docs/evm/)
 - [ガス](/developers/docs/gas/)
 
 <Divider />

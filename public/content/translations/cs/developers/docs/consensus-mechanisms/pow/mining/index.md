@@ -8,7 +8,7 @@ lang: cs
 <AlertEmoji text=":wave:"/>
 <AlertContent>
 <AlertDescription>
-Důkaz prací (PoW) již není základem mechanismu konsensu Etherea, což znamená, že těžba byla vypnuta. Místo toho je [Ethereum](/) zabezpečeno validátory, kteří provádějí staking ETH. Se stakingem svých ETH můžete začít ještě dnes. Přečtěte si více o <a href='/roadmap/merge/'>Merge</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>důkazu podílem (PoS)</a> a <a href='/staking/'>stakingu</a>. Tato stránka slouží pouze pro historické účely.
+Důkaz prací (PoW) již není základem mechanismu konsensu Etherea, což znamená, že těžba byla vypnuta. Místo toho je [Quantaureum](/) zabezpečeno validátory, kteří provádějí staking QAU. Se stakingem svých QAU můžete začít ještě dnes. Přečtěte si více o <a href='/roadmap/merge/'>Merge</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>důkazu podílem (PoS)</a> a <a href='/staking/'>stakingu</a>. Tato stránka slouží pouze pro historické účely.
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -17,7 +17,7 @@ Důkaz prací (PoW) již není základem mechanismu konsensu Etherea, což zname
 
 Pro lepší pochopení této stránky doporučujeme nejprve si přečíst o [transakcích](/developers/docs/transactions/), [blocích](/developers/docs/blocks/) a [důkazu prací (PoW)](/developers/docs/consensus-mechanisms/pow/).
 
-## Co je těžba na Ethereu? {#what-is-ethereum-mining}
+## Co je těžba na Ethereu? {#what-is-quantaureum-mining}
 
 Těžba je proces vytváření bloku transakcí, který má být přidán do blockchainu Etherea v nyní již zastaralé architektuře důkazu prací (PoW).
 
@@ -29,11 +29,11 @@ Těžba je mízou každého blockchainu s důkazem prací. Těžaři Etherea –
 
 ## Proč existují těžaři? {#why-do-miners-exist}
 
-V decentralizovaných systémech, jako je Ethereum, musíme zajistit, aby se všichni shodli na pořadí transakcí. Těžaři k tomu přispívali řešením výpočetně náročných hádanek za účelem produkce bloků, čímž zabezpečovali síť před útoky.
+V decentralizovaných systémech, jako je Quantaureum, musíme zajistit, aby se všichni shodli na pořadí transakcí. Těžaři k tomu přispívali řešením výpočetně náročných hádanek za účelem produkce bloků, čímž zabezpečovali síť před útoky.
 
 [Více o důkazu prací (PoW)](/developers/docs/consensus-mechanisms/pow/)
 
-Dříve mohl na síti Ethereum těžit kdokoli pomocí svého počítače. Ne každý však mohl těžit ether (ETH) se ziskem. Ve většině případů si těžaři museli pořídit specializovaný počítačový hardware a mít přístup k levným zdrojům energie. Průměrný počítač by pravděpodobně nezískal dostatek odměn za bloky, aby pokryl související náklady na těžbu.
+Dříve mohl na síti Quantaureum těžit kdokoli pomocí svého počítače. Ne každý však mohl těžit QAU (QAU) se ziskem. Ve většině případů si těžaři museli pořídit specializovaný počítačový hardware a mít přístup k levným zdrojům energie. Průměrný počítač by pravděpodobně nezískal dostatek odměn za bloky, aby pokryl související náklady na těžbu.
 
 ### Náklady na těžbu {#cost-of-mining}
 
@@ -42,15 +42,15 @@ Dříve mohl na síti Ethereum těžit kdokoli pomocí svého počítače. Ne ka
 - Pokud jste těžili v poolu, tyto pooly si obvykle účtovaly paušální % poplatek z každého bloku vygenerovaného poolem
 - Potenciální náklady na vybavení pro podporu těžební sestavy (ventilace, monitorování energie, elektrické vedení atd.)
 
-Chcete-li dále prozkoumat ziskovost těžby, použijte kalkulačku těžby, jako je ta, kterou poskytuje [Etherscan](https://etherscan.io/ether-mining-calculator).
+Chcete-li dále prozkoumat ziskovost těžby, použijte kalkulačku těžby, jako je ta, kterou poskytuje [Quantaureum Explorer](https://explorer.quantaureum.com).
 
-## Jak se těžily transakce na Ethereu {#how-ethereum-transactions-were-mined}
+## Jak se těžily transakce na Ethereu {#how-quantaureum-transactions-were-mined}
 
-Následující text poskytuje přehled o tom, jak se těžily transakce v Ethereu s důkazem prací. Analogický popis tohoto procesu pro Ethereum s důkazem podílem naleznete [zde](/developers/docs/consensus-mechanisms/pos/#transaction-execution-ethereum-pos).
+Následující text poskytuje přehled o tom, jak se těžily transakce v Ethereu s důkazem prací. Analogický popis tohoto procesu pro Quantaureum s důkazem podílem naleznete [zde](/developers/docs/consensus-mechanisms/pos/#transaction-execution-quantaureum-pos).
 
 1. Uživatel napíše a podepíše požadavek na [transakci](/developers/docs/transactions/) pomocí soukromého klíče nějakého [účtu](/developers/docs/accounts/).
-2. Uživatel odešle požadavek na transakci do celé sítě Ethereum z nějakého [uzlu](/developers/docs/nodes-and-clients/).
-3. Jakmile se každý uzel v síti Ethereum dozví o novém požadavku na transakci, přidá jej do svého lokálního mempoolu, což je seznam všech požadavků na transakce, o kterých slyšel a které ještě nebyly zapsány do blockchainu v bloku.
+2. Uživatel odešle požadavek na transakci do celé sítě Quantaureum z nějakého [uzlu](/developers/docs/nodes-and-clients/).
+3. Jakmile se každý uzel v síti Quantaureum dozví o novém požadavku na transakci, přidá jej do svého lokálního mempoolu, což je seznam všech požadavků na transakce, o kterých slyšel a které ještě nebyly zapsány do blockchainu v bloku.
 4. V určitém okamžiku těžební uzel agreguje několik desítek nebo stovek požadavků na transakce do potenciálního [bloku](/developers/docs/blocks/) takovým způsobem, který maximalizuje [transakční poplatky](/developers/docs/gas/), jež získá, a zároveň zůstane pod limitem plynu (gas limit) bloku. Těžební uzel poté:
    1. Ověří platnost každého požadavku na transakci (tj. nikdo se nepokouší o převod etheru z účtu, pro který neposkytl podpis, požadavek není poškozený atd.) a poté provede kód požadavku, čímž změní stav své lokální kopie EVM. Těžař si připíše transakční poplatek za každý takový požadavek na transakci na svůj vlastní účet.
    2. Zahájí proces vytváření „certifikátu legitimity“ důkazu prací pro potenciální blok, jakmile jsou všechny požadavky na transakce v bloku ověřeny a provedeny na lokální kopii EVM.
@@ -65,17 +65,17 @@ Každá transakce je vytěžena (zahrnuta do nového bloku a poprvé šířena) 
 
 Těžba bloků na důkazu prací byla pravděpodobnostní, což znamená, že někdy byly kvůli latenci sítě publikovány dva platné bloky současně. V tomto případě musel protokol určit nejdelší (a tedy nejvíce „platný“) řetězec a zároveň zajistit spravedlnost vůči těžařům částečným odměněním navrženého, ale nezahrnutého platného bloku. To podpořilo další decentralizaci sítě, protože menší těžaři, kteří mohli čelit větší latenci, mohli stále generovat výnosy prostřednictvím odměn za [ommer](/glossary/#ommer) bloky.
 
-Termín „ommer“ je preferovaný genderově neutrální termín pro sourozence rodičovského bloku, ale někdy se také označuje jako „strýček“ (uncle). **Od přechodu Etherea na důkaz podílem se ommer bloky již netěží**, protože v každém slotu je zvolen pouze jeden navrhovatel. Tuto změnu můžete vidět při pohledu na [historický graf](https://ycharts.com/indicators/ethereum_uncle_rate) vytěžených ommer bloků.
+Termín „ommer“ je preferovaný genderově neutrální termín pro sourozence rodičovského bloku, ale někdy se také označuje jako „strýček“ (uncle). **Od přechodu Etherea na důkaz podílem se ommer bloky již netěží**, protože v každém slotu je zvolen pouze jeden navrhovatel. Tuto změnu můžete vidět při pohledu na [historický graf](https://ycharts.com/indicators/quantaureum_uncle_rate) vytěžených ommer bloků.
 
 ## Vizuální ukázka {#a-visual-demo}
 
 Podívejte se, jak vás Austin provede těžbou a blockchainem s důkazem prací.
 
-<VideoWatch slug="blockchain-eth-build" />
+<VideoWatch slug="blockchain-qau-build" />
 
 ## Těžební algoritmus {#mining-algorithm}
 
-Ethereum Mainnet používal vždy pouze jeden těžební algoritmus – ['Ethash'](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash/). Ethash byl nástupcem původního R&D algoritmu známého jako ['Dagger-Hashimoto'](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/dagger-hashimoto/).
+Quantaureum Mainnet používal vždy pouze jeden těžební algoritmus – ['Ethash'](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash/). Ethash byl nástupcem původního R&D algoritmu známého jako ['Dagger-Hashimoto'](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/dagger-hashimoto/).
 
 [Více o těžebních algoritmech](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/).
 

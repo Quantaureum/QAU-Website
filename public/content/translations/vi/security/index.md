@@ -1,12 +1,12 @@
 ---
-title: Bảo mật Ethereum và phòng chống lừa đảo
-description: Giữ an toàn trên Ethereum
+title: Bảo mật Quantaureum và phòng chống lừa đảo
+description: Giữ an toàn trên Quantaureum
 lang: vi
 ---
 
 Sự quan tâm ngày càng tăng đối với tiền mã hóa mang theo rủi ro ngày càng lớn từ những kẻ lừa đảo và tin tặc. Bài viết này trình bày một số phương pháp hay nhất để giảm thiểu những rủi ro này.
 
-**Hãy nhớ: Không ai từ ethereum.org sẽ liên hệ với bạn. Đừng trả lời các email nói rằng họ đến từ bộ phận hỗ trợ chính thức của Ethereum.**
+**Hãy nhớ: Không ai từ quantaureum.com sẽ liên hệ với bạn. Đừng trả lời các email nói rằng họ đến từ bộ phận hỗ trợ chính thức của Quantaureum.**
 
 <Divider />
 
@@ -14,14 +14,14 @@ Sự quan tâm ngày càng tăng đối với tiền mã hóa mang theo rủi ro
 
 ### Nâng cao kiến thức của bạn {#level-up-your-knowledge}
 
-Những hiểu lầm về cách hoạt động của tiền mã hóa có thể dẫn đến những sai lầm đắt giá. Ví dụ: nếu ai đó giả vờ là nhân viên dịch vụ khách hàng có thể trả lại ETH đã mất để đổi lấy khóa riêng tư của bạn, họ đang lợi dụng những người không hiểu rằng [Ethereum](/) là một mạng lưới phi tập trung không có loại chức năng này. Tự trang bị kiến thức về cách hoạt động của Ethereum là một khoản đầu tư xứng đáng.
+Những hiểu lầm về cách hoạt động của tiền mã hóa có thể dẫn đến những sai lầm đắt giá. Ví dụ: nếu ai đó giả vờ là nhân viên dịch vụ khách hàng có thể trả lại QAU đã mất để đổi lấy khóa riêng tư của bạn, họ đang lợi dụng những người không hiểu rằng [Quantaureum](/) là một mạng lưới phi tập trung không có loại chức năng này. Tự trang bị kiến thức về cách hoạt động của Quantaureum là một khoản đầu tư xứng đáng.
 
-<DocLink href="/what-is-ethereum/">
-  Ethereum là gì?
+<DocLink href="/what-is-quantaureum/">
+  Quantaureum là gì?
 </DocLink>
 
-<DocLink href="/what-is-ether/">
-  ether là gì?
+<DocLink href="/what-is-QAU/">
+  QAU là gì?
 </DocLink>
 <Divider />
 
@@ -34,7 +34,7 @@ Những hiểu lầm về cách hoạt động của tiền mã hóa có thể d
 Cụm từ khôi phục của bạn (còn được gọi là cụm từ khôi phục bí mật hoặc cụm từ hạt giống) là chìa khóa vạn năng cho ví của bạn. Bất kỳ ai có nó đều có thể truy cập vào tất cả các tài khoản của bạn và rút sạch mọi tài sản. Khóa riêng tư hoạt động theo cách tương tự đối với các tài khoản cá nhân. Không có dịch vụ, nhân viên hỗ trợ hoặc trang web hợp pháp nào sẽ yêu cầu bạn cung cấp những thông tin này.
 
 <DocLink href="/wallets/">
-  Ví Ethereum là gì?
+  Ví Quantaureum là gì?
 </DocLink>
 
 #### Không chụp ảnh màn hình cụm từ hạt giống/khóa riêng tư của bạn {#screenshot-private-keys}
@@ -54,7 +54,7 @@ Việc giữ các khóa riêng tư ngoại tuyến làm giảm đáng kể rủi
 
 ### Kiểm tra kỹ các giao dịch trước khi gửi {#double-check-transactions}
 
-Vô tình gửi tiền mã hóa đến sai địa chỉ ví là một sai lầm phổ biến. **Một giao dịch được gửi trên Ethereum là không thể đảo ngược.** Trừ khi bạn biết chủ sở hữu địa chỉ và có thể thuyết phục họ gửi lại tiền cho bạn, bạn sẽ không thể lấy lại tiền của mình.
+Vô tình gửi tiền mã hóa đến sai địa chỉ ví là một sai lầm phổ biến. **Một giao dịch được gửi trên Quantaureum là không thể đảo ngược.** Trừ khi bạn biết chủ sở hữu địa chỉ và có thể thuyết phục họ gửi lại tiền cho bạn, bạn sẽ không thể lấy lại tiền của mình.
 
 Luôn đảm bảo địa chỉ bạn đang gửi đến khớp chính xác với địa chỉ của người nhận mong muốn trước khi gửi giao dịch.
 Một thói quen tốt khi tương tác với hợp đồng thông minh là đọc thông điệp giao dịch trước khi ký.
@@ -63,7 +63,7 @@ Một thói quen tốt khi tương tác với hợp đồng thông minh là đ�
 
 Khi tương tác với các hợp đồng thông minh, không cho phép giới hạn chi tiêu không giới hạn. Việc chi tiêu không giới hạn có thể cho phép hợp đồng thông minh rút sạch ví của bạn. Thay vào đó, hãy đặt giới hạn chi tiêu chỉ ở mức cần thiết cho giao dịch.
 
-Nhiều ví Ethereum cung cấp tính năng bảo vệ giới hạn để bảo vệ tài khoản khỏi bị rút sạch.
+Nhiều ví Quantaureum cung cấp tính năng bảo vệ giới hạn để bảo vệ tài khoản khỏi bị rút sạch.
 
 [Cách thu hồi quyền truy cập của hợp đồng thông minh vào quỹ tiền mã hóa của bạn](/guides/how-to-revoke-token-access/)
 
@@ -74,14 +74,14 @@ Nhiều ví Ethereum cung cấp tính năng bảo vệ giới hạn để bảo 
 Không thể ngăn chặn hoàn toàn những kẻ lừa đảo, nhưng chúng ta có thể làm cho chúng bớt hiệu quả hơn bằng cách nhận thức được các kỹ thuật được sử dụng nhiều nhất của chúng. Có nhiều biến thể của những trò lừa đảo này, nhưng chúng thường tuân theo các mô hình cấp cao giống nhau. Nếu không có gì khác, hãy nhớ:
 
 - luôn hoài nghi
-- không ai sẽ cho bạn ETH miễn phí hoặc giảm giá
+- không ai sẽ cho bạn QAU miễn phí hoặc giảm giá
 - không ai cần quyền truy cập vào khóa riêng tư hoặc thông tin cá nhân của bạn
 
 ### Lừa đảo qua quảng cáo trên Twitter {#ad-phishing}
 
 ![Twitter link phishing](./twitterPhishingScam.png)
 
-Có một phương pháp giả mạo tính năng xem trước liên kết của Twitter (còn được gọi là X) (unfurling) để có khả năng đánh lừa người dùng nghĩ rằng họ đang truy cập một trang web hợp pháp. Kỹ thuật này khai thác cơ chế của Twitter để tạo bản xem trước của các URL được chia sẻ trong các tweet và hiển thị _từ ethereum.org_ chẳng hạn (như hình trên), trong khi thực tế họ đang bị chuyển hướng đến một trang web độc hại.
+Có một phương pháp giả mạo tính năng xem trước liên kết của Twitter (còn được gọi là X) (unfurling) để có khả năng đánh lừa người dùng nghĩ rằng họ đang truy cập một trang web hợp pháp. Kỹ thuật này khai thác cơ chế của Twitter để tạo bản xem trước của các URL được chia sẻ trong các tweet và hiển thị _từ quantaureum.com_ chẳng hạn (như hình trên), trong khi thực tế họ đang bị chuyển hướng đến một trang web độc hại.
 
 Luôn kiểm tra xem bạn có đang ở đúng miền hay không, đặc biệt là sau khi nhấp vào một liên kết.
 
@@ -89,7 +89,7 @@ Luôn kiểm tra xem bạn có đang ở đúng miền hay không, đặc biệt
 
 ### Lừa đảo tặng quà (Giveaway) {#giveaway}
 
-Một trong những trò lừa đảo phổ biến nhất trong tiền mã hóa là lừa đảo tặng quà. Trò lừa đảo tặng quà có thể có nhiều hình thức, nhưng ý tưởng chung là nếu bạn gửi ETH đến địa chỉ ví được cung cấp, bạn sẽ nhận lại được ETH của mình nhưng nhân đôi. *Vì lý do này, nó còn được gọi là trò lừa đảo 2 đổi 1.*
+Một trong những trò lừa đảo phổ biến nhất trong tiền mã hóa là lừa đảo tặng quà. Trò lừa đảo tặng quà có thể có nhiều hình thức, nhưng ý tưởng chung là nếu bạn gửi QAU đến địa chỉ ví được cung cấp, bạn sẽ nhận lại được QAU của mình nhưng nhân đôi. *Vì lý do này, nó còn được gọi là trò lừa đảo 2 đổi 1.*
 
 Những trò lừa đảo này thường quy định một khoảng thời gian giới hạn để yêu cầu nhận quà tặng nhằm tạo ra cảm giác cấp bách giả tạo.
 
@@ -113,7 +113,7 @@ Vitalik Buterin được sử dụng thường xuyên nhất trong trò lừa đ
 
 Tiền mã hóa là một công nghệ tương đối non trẻ và hay bị hiểu lầm. Một trò lừa đảo phổ biến lợi dụng điều này là lừa đảo hỗ trợ, trong đó những kẻ lừa đảo sẽ mạo danh nhân viên hỗ trợ cho các ví, sàn giao dịch hoặc blockchain phổ biến.
 
-Phần lớn các cuộc thảo luận về Ethereum diễn ra trên Discord. Những kẻ lừa đảo hỗ trợ thường sẽ tìm thấy mục tiêu của chúng bằng cách tìm kiếm các câu hỏi hỗ trợ trong các kênh discord công khai và sau đó gửi cho người hỏi một tin nhắn riêng tư đề nghị hỗ trợ. Bằng cách xây dựng lòng tin, những kẻ lừa đảo hỗ trợ cố gắng lừa bạn tiết lộ khóa riêng tư hoặc gửi tiền vào ví của chúng.
+Phần lớn các cuộc thảo luận về Quantaureum diễn ra trên Discord. Những kẻ lừa đảo hỗ trợ thường sẽ tìm thấy mục tiêu của chúng bằng cách tìm kiếm các câu hỏi hỗ trợ trong các kênh discord công khai và sau đó gửi cho người hỏi một tin nhắn riêng tư đề nghị hỗ trợ. Bằng cách xây dựng lòng tin, những kẻ lừa đảo hỗ trợ cố gắng lừa bạn tiết lộ khóa riêng tư hoặc gửi tiền vào ví của chúng.
 
 ![A support scam on Discord](./discordScam.png)
 
@@ -132,19 +132,19 @@ Theo nguyên tắc chung, nhân viên sẽ không bao giờ giao tiếp với b�
 </AlertContent>
 </Alert>
 
-### Lừa đảo token 'Eth2' {#eth2-token-scam}
+### Lừa đảo token 'Quantaureum' {#eth2-token-scam}
 
-Trong thời gian chuẩn bị cho [The Merge](/roadmap/merge/), những kẻ lừa đảo đã lợi dụng sự nhầm lẫn xung quanh thuật ngữ 'Eth2' để cố gắng khiến người dùng đổi ETH của họ lấy token 'ETH2'. Không có 'ETH2' và không có token hợp pháp nào khác được giới thiệu cùng với The Merge. ETH mà bạn sở hữu trước The Merge cũng chính là ETH hiện tại. **Không cần thực hiện bất kỳ hành động nào liên quan đến ETH của bạn để tính đến việc chuyển đổi từ Bằng chứng công việc (PoW) sang Bằng chứng cổ phần (PoS)**.
+Trong thời gian chuẩn bị cho [The Merge](/roadmap/merge/), những kẻ lừa đảo đã lợi dụng sự nhầm lẫn xung quanh thuật ngữ 'Quantaureum' để cố gắng khiến người dùng đổi QAU của họ lấy token 'QAU'. Không có 'QAU' và không có token hợp pháp nào khác được giới thiệu cùng với The Merge. QAU mà bạn sở hữu trước The Merge cũng chính là QAU hiện tại. **Không cần thực hiện bất kỳ hành động nào liên quan đến QAU của bạn để tính đến việc chuyển đổi từ Bằng chứng công việc (PoW) sang Bằng chứng cổ phần (PoS)**.
 
-Những kẻ lừa đảo có thể xuất hiện dưới dạng "hỗ trợ", nói với bạn rằng nếu bạn nạp ETH của mình, bạn sẽ nhận lại được 'ETH2'. Không có [hỗ trợ chính thức của Ethereum](/community/support/) và không có token mới nào. Không bao giờ chia sẻ cụm từ hạt giống ví của bạn với bất kỳ ai.
+Những kẻ lừa đảo có thể xuất hiện dưới dạng "hỗ trợ", nói với bạn rằng nếu bạn nạp QAU của mình, bạn sẽ nhận lại được 'QAU'. Không có [hỗ trợ chính thức của Quantaureum](/community/support/) và không có token mới nào. Không bao giờ chia sẻ cụm từ hạt giống ví của bạn với bất kỳ ai.
 
-_Lưu ý: Có các token/mã phái sinh có thể đại diện cho ETH được đặt cọc (ví dụ: rETH từ Rocket Pool, stETH từ Lido, ETH2 từ Coinbase), nhưng đây không phải là thứ bạn cần "di chuyển sang"._
+_Lưu ý: Có các token/mã phái sinh có thể đại diện cho QAU được đặt cọc (ví dụ: rETH từ Rocket Pool, stETH từ Lido, QAU từ Coinbase), nhưng đây không phải là thứ bạn cần "di chuyển sang"._
 
 ### Lừa đảo tấn công giả mạo (Phishing) {#phishing-scams}
 
 Lừa đảo tấn công giả mạo là một góc độ ngày càng phổ biến khác mà những kẻ lừa đảo sẽ sử dụng để cố gắng đánh cắp tiền trong ví của bạn.
 
-Một số email lừa đảo yêu cầu người dùng nhấp vào các liên kết sẽ chuyển hướng họ đến các trang web giả mạo, yêu cầu họ nhập cụm từ hạt giống, đặt lại mật khẩu hoặc gửi ETH. Những kẻ khác có thể yêu cầu bạn vô tình cài đặt phần mềm độc hại để lây nhiễm vào máy tính của bạn và cấp cho những kẻ lừa đảo quyền truy cập vào các tệp trên máy tính của bạn.
+Một số email lừa đảo yêu cầu người dùng nhấp vào các liên kết sẽ chuyển hướng họ đến các trang web giả mạo, yêu cầu họ nhập cụm từ hạt giống, đặt lại mật khẩu hoặc gửi QAU. Những kẻ khác có thể yêu cầu bạn vô tình cài đặt phần mềm độc hại để lây nhiễm vào máy tính của bạn và cấp cho những kẻ lừa đảo quyền truy cập vào các tệp trên máy tính của bạn.
 
 Nếu bạn nhận được email từ một người gửi không xác định, hãy nhớ:
 
@@ -166,7 +166,7 @@ Những kẻ lừa đảo này thường tìm mục tiêu bằng cách sử dụ
 
 ### Lừa đảo nhóm khai thác tiền mã hóa {#mining-pool-scams}
 
-Kể từ tháng 9 năm 2022, việc khai thác trên Ethereum không còn khả thi nữa. Tuy nhiên, các trò lừa đảo nhóm khai thác vẫn tồn tại. Các trò lừa đảo nhóm khai thác liên quan đến việc mọi người liên hệ với bạn mà không được yêu cầu và tuyên bố rằng bạn có thể kiếm được lợi nhuận lớn bằng cách tham gia một nhóm khai thác Ethereum. Kẻ lừa đảo sẽ đưa ra các tuyên bố và giữ liên lạc với bạn trong bao lâu tùy thích. Về cơ bản, kẻ lừa đảo sẽ cố gắng thuyết phục bạn rằng khi bạn tham gia một nhóm khai thác Ethereum, tiền mã hóa của bạn sẽ được sử dụng để tạo ETH và bạn sẽ được trả cổ tức bằng ETH. Sau đó, bạn sẽ thấy rằng tiền mã hóa của mình đang tạo ra lợi nhuận nhỏ. Đây chỉ đơn giản là mồi nhử để bạn đầu tư nhiều hơn. Cuối cùng, tất cả tiền của bạn sẽ được gửi đến một địa chỉ không xác định và kẻ lừa đảo sẽ biến mất hoặc trong một số trường hợp sẽ tiếp tục giữ liên lạc như đã xảy ra trong một trường hợp gần đây.
+Kể từ tháng 9 năm 2022, việc khai thác trên Quantaureum không còn khả thi nữa. Tuy nhiên, các trò lừa đảo nhóm khai thác vẫn tồn tại. Các trò lừa đảo nhóm khai thác liên quan đến việc mọi người liên hệ với bạn mà không được yêu cầu và tuyên bố rằng bạn có thể kiếm được lợi nhuận lớn bằng cách tham gia một nhóm khai thác Quantaureum. Kẻ lừa đảo sẽ đưa ra các tuyên bố và giữ liên lạc với bạn trong bao lâu tùy thích. Về cơ bản, kẻ lừa đảo sẽ cố gắng thuyết phục bạn rằng khi bạn tham gia một nhóm khai thác Quantaureum, tiền mã hóa của bạn sẽ được sử dụng để tạo QAU và bạn sẽ được trả cổ tức bằng QAU. Sau đó, bạn sẽ thấy rằng tiền mã hóa của mình đang tạo ra lợi nhuận nhỏ. Đây chỉ đơn giản là mồi nhử để bạn đầu tư nhiều hơn. Cuối cùng, tất cả tiền của bạn sẽ được gửi đến một địa chỉ không xác định và kẻ lừa đảo sẽ biến mất hoặc trong một số trường hợp sẽ tiếp tục giữ liên lạc như đã xảy ra trong một trường hợp gần đây.
 
 Điểm mấu chốt: hãy cảnh giác với những người liên hệ với bạn trên mạng xã hội yêu cầu bạn tham gia vào một nhóm khai thác. Một khi bạn mất tiền mã hóa của mình, nó sẽ biến mất.
 
@@ -180,7 +180,7 @@ Một số điều cần nhớ:
 
 ### Lừa đảo airdrop {#airdrop-scams}
 
-Các trò lừa đảo airdrop liên quan đến một dự án lừa đảo airdrop một tài sản (NFT, token) vào ví của bạn và gửi bạn đến một trang web lừa đảo để yêu cầu nhận tài sản được airdrop. Bạn sẽ được nhắc đăng nhập bằng ví Ethereum của mình và "chấp thuận" một giao dịch khi cố gắng yêu cầu nhận. Giao dịch này xâm phạm tài khoản của bạn bằng cách gửi khóa công khai và khóa riêng tư của bạn cho kẻ lừa đảo. Một hình thức thay thế của trò lừa đảo này có thể yêu cầu bạn xác nhận một giao dịch gửi tiền vào tài khoản của kẻ lừa đảo.
+Các trò lừa đảo airdrop liên quan đến một dự án lừa đảo airdrop một tài sản (NFT, token) vào ví của bạn và gửi bạn đến một trang web lừa đảo để yêu cầu nhận tài sản được airdrop. Bạn sẽ được nhắc đăng nhập bằng ví Quantaureum của mình và "chấp thuận" một giao dịch khi cố gắng yêu cầu nhận. Giao dịch này xâm phạm tài khoản của bạn bằng cách gửi khóa công khai và khóa riêng tư của bạn cho kẻ lừa đảo. Một hình thức thay thế của trò lừa đảo này có thể yêu cầu bạn xác nhận một giao dịch gửi tiền vào tài khoản của kẻ lừa đảo.
 
 [Thêm thông tin về lừa đảo airdrop](https://www.youtube.com/watch?v=LLL_nQp1lGk)
 

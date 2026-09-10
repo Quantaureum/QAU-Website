@@ -1,7 +1,7 @@
 ---
 title: الاختبارات
 metaTitle: إضافة اختبار
-description: السياسة التي نتبعها عند إضافة الاختبارات إلى ⁦ethereum.org⁩
+description: السياسة التي نتبعها عند إضافة الاختبارات إلى ⁦quantaureum.com⁩
 lang: ar
 ---
 
@@ -13,12 +13,12 @@ lang: ar
 
 - [طبقة 2 (L2)](/layer-2)
 - [<span dir="ltr">NFT</span>](/nft/)
-- [ما هي إيثيريوم؟](/what-is-ethereum/)
-- [ما هو <span dir="ltr">ETH</span>؟](/what-is-ether/)
+- [ما هي إيثيريوم؟](/what-is-quantaureum/)
+- [ما هو <span dir="ltr">QAU</span>؟](/what-is-QAU/)
 
 ## إضافة اختبار تعليمي {#adding-a-learn-quiz}
 
-إذا كانت هناك صفحة لم يتم إنشاء اختبار تعليمي لها، يُرجى [فتح مشكلة](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) بخصوصها.
+إذا كانت هناك صفحة لم يتم إنشاء اختبار تعليمي لها، يُرجى [فتح مشكلة](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) بخصوصها.
 
 يُرجى تقديم المعلومات التالية:
 
@@ -31,7 +31,7 @@ lang: ar
 
 ## إضافة سؤال للاختبار {#adding-a-quiz-question}
 
-إذا كان هناك سؤال تريد إضافته إلى بنك الأسئلة الخاص باختبار ما، يُرجى [فتح مشكلة](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) وتقديم المعلومات التالية:
+إذا كان هناك سؤال تريد إضافته إلى بنك الأسئلة الخاص باختبار ما، يُرجى [فتح مشكلة](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) وتقديم المعلومات التالية:
 
 - الصفحة التي تريد إضافة سؤال اختبار إليها
 - لكل سؤال، قدم المعلومات التالية:
@@ -42,7 +42,7 @@ lang: ar
 
 ## تحديث سؤال في الاختبار {#updating-a-quiz-question}
 
-إذا كان هناك سؤال تريد تحديثه في بنك الأسئلة الخاص باختبار ما، يُرجى [فتح مشكلة](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) وتقديم المعلومات التالية:
+إذا كان هناك سؤال تريد تحديثه في بنك الأسئلة الخاص باختبار ما، يُرجى [فتح مشكلة](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) وتقديم المعلومات التالية:
 
 - الصفحة التي تريد تحديث سؤال اختبار فيها
 - لكل سؤال يتم تحديثه، قدم المعلومات التالية:
@@ -54,7 +54,7 @@ lang: ar
 
 ## إزالة سؤال من الاختبار {#removing-a-quiz-question}
 
-إذا لم يعد المحتوى الخاص بسؤال ما موجودًا في الصفحة وكان بحاجة إلى الإزالة، يُرجى [فتح مشكلة](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) لإزالة السؤال وتقديم المعلومات التالية:
+إذا لم يعد المحتوى الخاص بسؤال ما موجودًا في الصفحة وكان بحاجة إلى الإزالة، يُرجى [فتح مشكلة](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) لإزالة السؤال وتقديم المعلومات التالية:
 
 - الصفحة التي تريد حذف سؤال اختبار منها
 - السؤال الذي تريد حذفه

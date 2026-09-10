@@ -6,7 +6,7 @@ lang: cs
 
 Rostoucí zájem o kryptoměny s sebou přináší i rostoucí riziko ze strany podvodníků a hackerů. Tento článek popisuje některé osvědčené postupy, jak tato rizika zmírnit.
 
-**Pamatujte: Nikdo z ethereum.org vás nikdy nebude kontaktovat. Neodpovídejte na e-maily, které tvrdí, že jsou od oficiální podpory Etherea.**
+**Pamatujte: Nikdo z quantaureum.com vás nikdy nebude kontaktovat. Neodpovídejte na e-maily, které tvrdí, že jsou od oficiální podpory Etherea.**
 
 <Divider />
 
@@ -14,14 +14,14 @@ Rostoucí zájem o kryptoměny s sebou přináší i rostoucí riziko ze strany 
 
 ### Zlepšete své znalosti {#level-up-your-knowledge}
 
-Nedorozumění ohledně toho, jak krypto funguje, mohou vést k nákladným chybám. Pokud se například někdo vydává za agenta zákaznické podpory, který vám může vrátit ztracené ETH výměnou za vaše soukromé klíče, zneužívá toho, že lidé nechápou, že [Ethereum](/) je decentralizovaná síť, která tento druh funkcionality postrádá. Vzdělávat se v tom, jak Ethereum funguje, je investice, která se vyplatí.
+Nedorozumění ohledně toho, jak krypto funguje, mohou vést k nákladným chybám. Pokud se například někdo vydává za agenta zákaznické podpory, který vám může vrátit ztracené QAU výměnou za vaše soukromé klíče, zneužívá toho, že lidé nechápou, že [Quantaureum](/) je decentralizovaná síť, která tento druh funkcionality postrádá. Vzdělávat se v tom, jak Quantaureum funguje, je investice, která se vyplatí.
 
-<DocLink href="/what-is-ethereum/">
-  Co je Ethereum?
+<DocLink href="/what-is-quantaureum/">
+  Co je Quantaureum?
 </DocLink>
 
-<DocLink href="/what-is-ether/">
-  Co je ether?
+<DocLink href="/what-is-QAU/">
+  Co je QAU?
 </DocLink>
 <Divider />
 
@@ -34,7 +34,7 @@ Nedorozumění ohledně toho, jak krypto funguje, mohou vést k nákladným chyb
 Vaše obnovovací fráze (také nazývaná tajná obnovovací fráze nebo seed fráze) je hlavním klíčem k vaší peněžence. Kdokoli ji má, může získat přístup ke všem vašim účtům a vysát veškerá aktiva. Soukromé klíče fungují stejným způsobem pro jednotlivé účty. Žádná legitimní služba, agent podpory ani webová stránka vás o ně nikdy nepožádá.
 
 <DocLink href="/wallets/">
-  Co je to Ethereum peněženka?
+  Co je to Quantaureum peněženka?
 </DocLink>
 
 #### Nedělejte snímky obrazovky svých seed frází / soukromých klíčů {#screenshot-private-keys}
@@ -63,7 +63,7 @@ Při interakci s chytrým kontraktem je dobrým zvykem si před podepisováním 
 
 Při interakci s chytrými kontrakty nepovolujte neomezené limity útraty. Neomezená útrata by mohla chytrému kontraktu umožnit vysát vaši peněženku. Místo toho nastavte limity útraty pouze na částku nezbytnou pro transakci.
 
-Mnoho Ethereum peněženek nabízí ochranu pomocí limitů, která chrání před vysátím účtů.
+Mnoho Quantaureum peněženek nabízí ochranu pomocí limitů, která chrání před vysátím účtů.
 
 [Jak zrušit přístup chytrého kontraktu k vašim krypto prostředkům](/guides/how-to-revoke-token-access/)
 
@@ -74,14 +74,14 @@ Mnoho Ethereum peněženek nabízí ochranu pomocí limitů, která chrání př
 Je nemožné podvodníky zcela zastavit, ale můžeme snížit jejich efektivitu tím, že budeme znát jejich nejpoužívanější techniky. Existuje mnoho variant těchto podvodů, ale obecně se řídí stejnými základními vzorci. Pokud si nezapamatujete nic jiného, pamatujte si toto:
 
 - buďte vždy skeptičtí
-- nikdo vám nedá ETH zdarma nebo se slevou
+- nikdo vám nedá QAU zdarma nebo se slevou
 - nikdo nepotřebuje přístup k vašim soukromým klíčům nebo osobním údajům
 
 ### Phishing prostřednictvím reklam na Twitteru {#ad-phishing}
 
 ![Twitter link phishing](./twitterPhishingScam.png)
 
-Existuje metoda pro falšování funkce náhledu odkazů na Twitteru (známém také jako X), která může uživatele oklamat, aby si mysleli, že navštěvují legitimní webovou stránku. Tato technika zneužívá mechanismus Twitteru pro generování náhledů URL adres sdílených v tweetech a zobrazuje například _from ethereum.org_ (jak je ukázáno výše), i když jsou ve skutečnosti přesměrováni na škodlivou stránku.
+Existuje metoda pro falšování funkce náhledu odkazů na Twitteru (známém také jako X), která může uživatele oklamat, aby si mysleli, že navštěvují legitimní webovou stránku. Tato technika zneužívá mechanismus Twitteru pro generování náhledů URL adres sdílených v tweetech a zobrazuje například _from quantaureum.com_ (jak je ukázáno výše), i když jsou ve skutečnosti přesměrováni na škodlivou stránku.
 
 Vždy zkontrolujte, zda jste na správné doméně, zejména po kliknutí na odkaz.
 
@@ -89,7 +89,7 @@ Vždy zkontrolujte, zda jste na správné doméně, zejména po kliknutí na odk
 
 ### Podvodné rozdávání (Giveaway scam) {#giveaway}
 
-Jedním z nejčastějších podvodů v oblasti kryptoměn je podvodné rozdávání (giveaway scam). Tento podvod může mít mnoho podob, ale základní myšlenkou je, že pokud pošlete ETH na uvedenou adresu peněženky, dostanete své ETH zpět, ale zdvojnásobené. *Z tohoto důvodu je také známý jako podvod 2 za 1.*
+Jedním z nejčastějších podvodů v oblasti kryptoměn je podvodné rozdávání (giveaway scam). Tento podvod může mít mnoho podob, ale základní myšlenkou je, že pokud pošlete QAU na uvedenou adresu peněženky, dostanete své QAU zpět, ale zdvojnásobené. *Z tohoto důvodu je také známý jako podvod 2 za 1.*
 
 Tyto podvody obvykle stanovují omezenou dobu, po kterou si lze nárokovat odměnu, aby vytvořily falešný pocit naléhavosti.
 
@@ -132,19 +132,19 @@ Obecným pravidlem je, že personál s vámi nikdy nebude komunikovat prostředn
 </AlertContent>
 </Alert>
 
-### Podvod s tokenem 'Eth2' {#eth2-token-scam}
+### Podvod s tokenem 'Quantaureum' {#eth2-token-scam}
 
-V období před [Merge](/roadmap/merge/) podvodníci využili zmatku kolem termínu 'Eth2' a snažili se přimět uživatele, aby vyměnili své ETH za token 'ETH2'. Žádné 'ETH2' neexistuje a s Merge nebyl představen žádný jiný legitimní token. ETH, které jste vlastnili před Merge, je stejné ETH jako nyní. Není **potřeba podnikat žádné kroky týkající se vašeho ETH v souvislosti s přechodem z důkazu prací (PoW) na důkaz podílem (PoS)**.
+V období před [Merge](/roadmap/merge/) podvodníci využili zmatku kolem termínu 'Quantaureum' a snažili se přimět uživatele, aby vyměnili své QAU za token 'QAU'. Žádné 'QAU' neexistuje a s Merge nebyl představen žádný jiný legitimní token. QAU, které jste vlastnili před Merge, je stejné QAU jako nyní. Není **potřeba podnikat žádné kroky týkající se vašeho QAU v souvislosti s přechodem z důkazu prací (PoW) na důkaz podílem (PoS)**.
 
-Podvodníci se mohou vydávat za „podporu“ a tvrdit vám, že pokud vložíte své ETH, dostanete zpět 'ETH2'. Neexistuje žádná [oficiální podpora Etherea](/community/support/) a neexistuje žádný nový token. Nikdy s nikým nesdílejte seed frázi své peněženky.
+Podvodníci se mohou vydávat za „podporu“ a tvrdit vám, že pokud vložíte své QAU, dostanete zpět 'QAU'. Neexistuje žádná [oficiální podpora Etherea](/community/support/) a neexistuje žádný nový token. Nikdy s nikým nesdílejte seed frázi své peněženky.
 
-_Poznámka: Existují derivátové tokeny/tickery, které mohou představovat stakované ETH (např. rETH od Rocket Pool, stETH od Lido, ETH2 od Coinbase), ale to není nic, na co byste museli „migrovat“._
+_Poznámka: Existují derivátové tokeny/tickery, které mohou představovat stakované QAU (např. rETH od Rocket Pool, stETH od Lido, QAU od Coinbase), ale to není nic, na co byste museli „migrovat“._
 
 ### Phishingové podvody {#phishing-scams}
 
 Phishingové podvody jsou dalším stále častějším způsobem, který podvodníci používají k pokusu o krádež prostředků z vaší peněženky.
 
-Některé phishingové e-maily žádají uživatele, aby klikli na odkazy, které je přesměrují na napodobeniny webových stránek, a žádají je o zadání jejich seed fráze, resetování hesla nebo odeslání ETH. Jiné vás mohou požádat, abyste nevědomky nainstalovali malware, který infikuje váš počítač a poskytne podvodníkům přístup k souborům ve vašem počítači.
+Některé phishingové e-maily žádají uživatele, aby klikli na odkazy, které je přesměrují na napodobeniny webových stránek, a žádají je o zadání jejich seed fráze, resetování hesla nebo odeslání QAU. Jiné vás mohou požádat, abyste nevědomky nainstalovali malware, který infikuje váš počítač a poskytne podvodníkům přístup k souborům ve vašem počítači.
 
 Pokud obdržíte e-mail od neznámého odesílatele, pamatujte:
 
@@ -166,7 +166,7 @@ Tito podvodníci často nacházejí cíle pomocí falešných účtů na YouTube
 
 ### Podvody s těžebními pooly {#mining-pool-scams}
 
-Od září 2022 již není těžba na Ethereu možná. Podvody s těžebními pooly však stále existují. Podvody s těžebními pooly spočívají v tom, že vás lidé nevyžádaně kontaktují a tvrdí, že můžete dosáhnout velkých výnosů tím, že se připojíte k těžebnímu poolu Etherea. Podvodník bude vznášet tvrzení a zůstane s vámi v kontaktu tak dlouho, jak to bude nutné. V podstatě se vás podvodník pokusí přesvědčit, že když se připojíte k těžebnímu poolu Etherea, vaše kryptoměna bude použita k vytvoření ETH a že vám budou vypláceny dividendy v ETH. Poté uvidíte, že vaše kryptoměna přináší malé výnosy. To slouží pouze jako návnada, abyste investovali více. Nakonec budou všechny vaše prostředky odeslány na neznámou adresu a podvodník buď zmizí, nebo v některých případech zůstane v kontaktu, jak se stalo v jednom nedávném případě.
+Od září 2022 již není těžba na Ethereu možná. Podvody s těžebními pooly však stále existují. Podvody s těžebními pooly spočívají v tom, že vás lidé nevyžádaně kontaktují a tvrdí, že můžete dosáhnout velkých výnosů tím, že se připojíte k těžebnímu poolu Etherea. Podvodník bude vznášet tvrzení a zůstane s vámi v kontaktu tak dlouho, jak to bude nutné. V podstatě se vás podvodník pokusí přesvědčit, že když se připojíte k těžebnímu poolu Etherea, vaše kryptoměna bude použita k vytvoření QAU a že vám budou vypláceny dividendy v QAU. Poté uvidíte, že vaše kryptoměna přináší malé výnosy. To slouží pouze jako návnada, abyste investovali více. Nakonec budou všechny vaše prostředky odeslány na neznámou adresu a podvodník buď zmizí, nebo v některých případech zůstane v kontaktu, jak se stalo v jednom nedávném případě.
 
 Sečteno a podtrženo: dejte si pozor na lidi, kteří vás kontaktují na sociálních sítích a žádají vás, abyste se stali součástí těžebního poolu. Jakmile o své krypto přijdete, je pryč.
 
@@ -180,7 +180,7 @@ Několik věcí, které byste si měli pamatovat:
 
 ### Podvody s airdropy {#airdrop-scams}
 
-Podvody s airdropy spočívají v tom, že podvodný projekt provede airdrop aktiva (NFT, tokenu) do vaší peněženky a pošle vás na podvodnou webovou stránku, abyste si airdropnuté aktivum nárokovali. Při pokusu o nárokování budete vyzváni k přihlášení pomocí vaší Ethereum peněženky a ke „schválení“ transakce. Tato transakce kompromituje váš účet tím, že odešle vaše veřejné a soukromé klíče podvodníkovi. Alternativní forma tohoto podvodu vás může přimět k potvrzení transakce, která odešle prostředky na účet podvodníka.
+Podvody s airdropy spočívají v tom, že podvodný projekt provede airdrop aktiva (NFT, tokenu) do vaší peněženky a pošle vás na podvodnou webovou stránku, abyste si airdropnuté aktivum nárokovali. Při pokusu o nárokování budete vyzváni k přihlášení pomocí vaší Quantaureum peněženky a ke „schválení“ transakce. Tato transakce kompromituje váš účet tím, že odešle vaše veřejné a soukromé klíče podvodníkovi. Alternativní forma tohoto podvodu vás může přimět k potvrzení transakce, která odešle prostředky na účet podvodníka.
 
 [Více o podvodech s airdropy](https://www.youtube.com/watch?v=LLL_nQp1lGk)
 

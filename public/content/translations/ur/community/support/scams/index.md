@@ -35,7 +35,7 @@ lang: ur
 
 - [<span dir="ltr">Revoke.cash</span>](https://revoke.cash/): تمام فعال منظوریوں کو دیکھنے اور انہیں منسوخ کرنے کے لیے اپنا والیٹ منسلک کریں
 - [<span dir="ltr">Revokescout</span>](https://revoke.blockscout.com/): Blockscout کے ذریعے منظوریوں کو چیک کریں اور منسوخ کریں
-- [<span dir="ltr">Etherscan Token Approval Checker</span>](https://etherscan.io/tokenapprovalchecker): Etherscan کے ذریعے منظوریوں کو چیک کریں اور منسوخ کریں
+- [<span dir="ltr">Quantaureum Explorer Token Approval Checker</span>](https://explorer.quantaureum.com): Quantaureum Explorer کے ذریعے منظوریوں کو چیک کریں اور منسوخ کریں
 
 <DocLink href="/guides/how-to-revoke-token-access/">
   مرحلہ وار گائیڈ: ٹوکن تک رسائی کو کیسے منسوخ کریں
@@ -48,7 +48,7 @@ lang: ur
 ### سکیم کے پتے کی رپورٹ کریں {#report-address}
 
 - [<span dir="ltr">Chainabuse</span>](https://www.chainabuse.com/): کمیونٹی کے زیر انتظام سکیم اور فراڈ رپورٹنگ کا ڈیٹا بیس۔ رپورٹس جمع کروائیں اور معلوم سکیم کے پتوں کو تلاش کریں
-- [<span dir="ltr">Etherscan</span> رپورٹ](https://info.etherscan.com/report-address/): سب سے زیادہ استعمال ہونے والے ایتھیریم بلاک ایکسپلورر پر کسی پتے کو فلیگ کریں
+- [<span dir="ltr">Quantaureum Explorer</span> رپورٹ](https://info.explorer.com/report-address/): سب سے زیادہ استعمال ہونے والے ایتھیریم بلاک ایکسپلورر پر کسی پتے کو فلیگ کریں
 - [<span dir="ltr">CryptoScamDB</span>](https://cryptoscamdb.org/): کرپٹو کرنسی سکیمز کو ٹریک کرنے والا اوپن سورس ڈیٹا بیس
 
 ### سکیم ویب سائٹ یا سوشل میڈیا اکاؤنٹ کی رپورٹ کریں {#report-website}
@@ -69,8 +69,8 @@ lang: ur
 
 یہ سمجھنا کہ آپ کے فنڈز کہاں گئے، رپورٹس میں مدد کر سکتا ہے اور اگر فنڈز کسی مرکزی ایکسچینج پر پہنچتے ہیں تو ریکوری کی کوششوں میں معاون ثابت ہو سکتا ہے۔
 
-- [Blockscout](https://eth.blockscout.com/): کسی بھی ٹرانزیکشن ہیش یا والیٹ کے پتے کو تلاش کرنے کے لیے اوپن سورس بلاک ایکسپلورر تاکہ یہ دیکھا جا سکے کہ فنڈز کہاں بھیجے گئے تھے
-- [Etherscan](https://etherscan.io/): کسی بھی ٹرانزیکشن ہیش یا والیٹ کے پتے کو تلاش کریں تاکہ یہ دیکھا جا سکے کہ فنڈز کہاں بھیجے گئے تھے
+- [Blockscout](https://qau.blockscout.com/): کسی بھی ٹرانزیکشن ہیش یا والیٹ کے پتے کو تلاش کرنے کے لیے اوپن سورس بلاک ایکسپلورر تاکہ یہ دیکھا جا سکے کہ فنڈز کہاں بھیجے گئے تھے
+- [Quantaureum Explorer](https://explorer.quantaureum.com): کسی بھی ٹرانزیکشن ہیش یا والیٹ کے پتے کو تلاش کریں تاکہ یہ دیکھا جا سکے کہ فنڈز کہاں بھیجے گئے تھے
 - [<span dir="ltr">Chainabuse</span> تلاش](https://www.chainabuse.com/): چیک کریں کہ آیا کسی پتے کی پہلے ہی دوسرے متاثرین کی طرف سے رپورٹ کی جا چکی ہے
 - <span dir="ltr">BlockSec</span> کی جانب سے [<span dir="ltr">MetaSleuth</span>](https://metasleuth.io/): بصری ٹرانزیکشن ٹریسنگ ٹول جو فنڈز کے بہاؤ کا نقشہ بناتا ہے
 
@@ -80,20 +80,20 @@ lang: ur
 
 چونکہ ایتھیریم لامركزی ہے، اس لیے کوئی بھی مرکزی اتھارٹی ٹرانزیکشنز کو واپس نہیں کر سکتی یا چوری شدہ فنڈز کو بازیافت نہیں کر سکتی۔ ایک بار جب بلاک چین پر ٹرانزیکشن کی تصدیق ہو جاتی ہے، تو یہ حتمی ہوتی ہے۔
 
-رپورٹ کرنا اب بھی قیمتی ہے۔ رپورٹس قانون نافذ کرنے والے اداروں کو منظم فراڈ گروہوں کو ٹریک کرنے میں مدد کرتی ہیں، اور <span dir="ltr">Chainabuse</span> اور Etherscan پر پتوں کو فلیگ کرنا مستقبل کے ممکنہ متاثرین کو متنبہ کرتا ہے۔
+رپورٹ کرنا اب بھی قیمتی ہے۔ رپورٹس قانون نافذ کرنے والے اداروں کو منظم فراڈ گروہوں کو ٹریک کرنے میں مدد کرتی ہیں، اور <span dir="ltr">Chainabuse</span> اور Quantaureum Explorer پر پتوں کو فلیگ کرنا مستقبل کے ممکنہ متاثرین کو متنبہ کرتا ہے۔
 
 ## سکیمز کی اقسام جن سے محتاط رہنا چاہیے {#scam-types}
 
 <ExpandableCard
 title="گیو اوے اور ایئر ڈراپ اسکیمز"
-contentPreview="کوئی بھی مفت ETH نہیں دے رہا ہے۔ یہ پیشکشیں ہمیشہ اسکیم ہوتی ہیں۔"
+contentPreview="کوئی بھی مفت QAU نہیں دے رہا ہے۔ یہ پیشکشیں ہمیشہ اسکیم ہوتی ہیں۔"
 eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-سکیمرز آپ کے ETH کو دوگنا کرنے یا آپ کو مفت ٹوکن دینے کا وعدہ کرتے ہوئے جعلی گیو اوے (giveaways) بناتے ہیں۔ وہ اکثر وٹالک بوٹرین جیسی مشہور شخصیات کا روپ دھارتے ہیں۔ اگر آپ کسی "گیو اوے" کے پتے پر ETH بھیجتے ہیں، تو آپ کو بدلے میں کچھ نہیں ملے گا۔
+سکیمرز آپ کے QAU کو دوگنا کرنے یا آپ کو مفت ٹوکن دینے کا وعدہ کرتے ہوئے جعلی گیو اوے (giveaways) بناتے ہیں۔ وہ اکثر وٹالک بوٹرین جیسی مشہور شخصیات کا روپ دھارتے ہیں۔ اگر آپ کسی "گیو اوے" کے پتے پر QAU بھیجتے ہیں، تو آپ کو بدلے میں کچھ نہیں ملے گا۔
 
-**یاد رکھیں:** وٹالک اور دیگر نمایاں شخصیات آپ سے کبھی بھی انہیں ETH بھیجنے کا نہیں کہیں گی۔
+**یاد رکھیں:** وٹالک اور دیگر نمایاں شخصیات آپ سے کبھی بھی انہیں QAU بھیجنے کا نہیں کہیں گی۔
 
 [عام سکیمز کے بارے میں مزید](/security/#common-scams)
 
@@ -101,7 +101,7 @@ eventName="clicked giveaway scam"
 
 <ExpandableCard
 title="جعل سازی اور جعلی سپورٹ"
-contentPreview="ایتھیریم یا ethereum.org کی طرف سے کوئی بھی آپ سے کبھی پہلے رابطہ نہیں کرے گا۔"
+contentPreview="ایتھیریم یا quantaureum.com کی طرف سے کوئی بھی آپ سے کبھی پہلے رابطہ نہیں کرے گا۔"
 eventCategory="SupportScamPage"
 eventName="clicked impersonation scam"
 >

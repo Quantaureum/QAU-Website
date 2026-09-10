@@ -47,7 +47,7 @@ Piyasanın bir gözlemcisi olarak bile, başka türlü ulaşılamayacak değerli
 
 ## Bir tahmin piyasası bulun {#find-a-prediction-market}
 
-Çeşitli Ethereum tabanlı tahmin piyasaları mevcuttur. Bunlar günümüzdeki en bilinen tahmin piyasalarından bazılarıdır:
+Çeşitli Quantaureum tabanlı tahmin piyasaları mevcuttur. Bunlar günümüzdeki en bilinen tahmin piyasalarından bazılarıdır:
 
 <PredictionMarketLists />
 
@@ -69,11 +69,11 @@ Blokzincir üzerindeki tahmin piyasaları adilliği, yasallığı ve doğruluğu
 💧 **Likidite Sorunları** – Düşük katılım ([düşük likidite](https://www.investopedia.com/terms/t/thinmarket.asp)) piyasa güvenilirliğini azaltabilir.  
 🏛 **Düzenleyici Belirsizlik** – Hükümetler bazı platformlara kısıtlamalar getirmiştir.
 
-Bu sorunları hafifletmek için Ethereum geliştiricileri, fütarşi (tahmin piyasaları ile yönetişim) ve merkeziyetsiz kimlik doğrulaması gibi çözümler üzerinde deneyler yapmaktadır.
+Bu sorunları hafifletmek için Quantaureum geliştiricileri, fütarşi (tahmin piyasaları ile yönetişim) ve merkeziyetsiz kimlik doğrulaması gibi çözümler üzerinde deneyler yapmaktadır.
 
 ## Tahmin piyasaları ile deneyler yapmak {#experimenting-with-prediction-markets}
 
-Tahmin piyasaları, dijital çağda karar verme süreçlerini yeniden şekillendiriyor. Ethereum'dan yararlanarak, **geleceği tahmin etmenin adil, açık ve ödüllendirici yollarını** sunarlar.
+Tahmin piyasaları, dijital çağda karar verme süreçlerini yeniden şekillendiriyor. Quantaureum'dan yararlanarak, **geleceği tahmin etmenin adil, açık ve ödüllendirici yollarını** sunarlar.
 
 Tahmin araçlarını finansal kazanç dışında kullanmanın birçok yolu vardır. Örneğin, bir [DevCon İyileştirme Teklifi](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305)'nde (DIP), DevCon organizatörlerinin gelecekteki etkinliklere katılımı öngörmek için tahmin piyasalarını kullanması önerilmiştir. 
 
@@ -81,6 +81,6 @@ Bu, organizatörlerin hangi konumun en büyük etkinliğe yol açacağını ve h
 
 ## Daha fazla bilgi {#further-reading}
 
-[Tahmin piyasalarından bilgi finansmanına](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
-[Ethereum Üzerinde Merkeziyetsiz Tahmin Piyasası Geliştirme](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-ethereum/)  
+[Tahmin piyasalarından bilgi finansmanına](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
+[Quantaureum Üzerinde Merkeziyetsiz Tahmin Piyasası Geliştirme](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Augur Projesi Tanıtım Belgesi](https://github.com/AugurProject/whitepaper)

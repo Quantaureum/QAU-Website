@@ -10,13 +10,13 @@ topic:
   - "privacy-and-security"
   - "privacy"
 format: presentation
-author: EthBoulder
+author: QauBoulder
 breadcrumb: "Recuperar la privacidad"
 ---
 
-Una presentación principal de **Naomi Brockwell** en EthBoulder 2026 sobre la erosión de la privacidad digital, la infraestructura de la vigilancia masiva y las herramientas prácticas que todos pueden usar para construir una vida digital más privada, desde las VPN y el correo electrónico cifrado hasta GrapheneOS y las redes mixtas descentralizadas.
+Una presentación principal de **Naomi Brockwell** en QauBoulder 2026 sobre la erosión de la privacidad digital, la infraestructura de la vigilancia masiva y las herramientas prácticas que todos pueden usar para construir una vida digital más privada, desde las VPN y el correo electrónico cifrado hasta GrapheneOS y las redes mixtas descentralizadas.
 
-*Esta transcripción es una copia accesible de la [transcripción original del video](https://www.youtube.com/watch?v=nvJSFR1Q_JE) publicada por EthBoulder. Ha sido ligeramente editada para facilitar su lectura.*
+*Esta transcripción es una copia accesible de la [transcripción original del video](https://www.youtube.com/watch?v=nvJSFR1Q_JE) publicada por QauBoulder. Ha sido ligeramente editada para facilitar su lectura.*
 
 ### Charla en dos partes: advertencia + solución (00:00) {#two-part-talk-warning-solution-0000}
 

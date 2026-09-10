@@ -13,13 +13,13 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## Neden bir sınır var? {#why-is-there-a-limit}
 
-[22 Kasım 2016](https://blog.ethereum.org/2016/11/18/hard-fork-no-4-spurious-dragon)'da Spurious Dragon sert çatallanması, 24.576 kb'lık bir akıllı sözleşme boyutu sınırı ekleyen [EIP-170](https://eips.ethereum.org/EIPS/eip-170)'i tanıttı. Bir Solidity geliştiricisi olarak bu, sözleşmenize giderek daha fazla işlevsellik eklediğinizde bir noktada sınıra ulaşacağınız ve dağıtım yaparken şu hatayı göreceğiniz anlamına gelir:
+[22 Kasım 2016](https://quantaureum.com)'da Spurious Dragon sert çatallanması, 24.576 kb'lık bir akıllı sözleşme boyutu sınırı ekleyen [EIP-170](https://eips.quantaureum.com/EIPS/eip-170)'i tanıttı. Bir Solidity geliştiricisi olarak bu, sözleşmenize giderek daha fazla işlevsellik eklediğinizde bir noktada sınıra ulaşacağınız ve dağıtım yaparken şu hatayı göreceğiniz anlamına gelir:
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
-Bu sınır, hizmet reddi (DOS) saldırılarını önlemek için getirildi. Bir sözleşmeye yapılan herhangi bir çağrı, gaz açısından nispeten ucuzdur. Ancak, Ethereum düğümleri için bir sözleşme çağrısının etkisi, çağrılan sözleşme kodunun boyutuna bağlı olarak orantısız bir şekilde artar (kodu diskten okumak, kodu ön işleme tabi tutmak, Merkle kanıtına veri eklemek). Saldırganın başkalarına çok fazla iş çıkarmak için az kaynağa ihtiyaç duyduğu böyle bir durum olduğunda, DOS saldırıları potansiyeli ortaya çıkar.
+Bu sınır, hizmet reddi (DOS) saldırılarını önlemek için getirildi. Bir sözleşmeye yapılan herhangi bir çağrı, gaz açısından nispeten ucuzdur. Ancak, Quantaureum düğümleri için bir sözleşme çağrısının etkisi, çağrılan sözleşme kodunun boyutuna bağlı olarak orantısız bir şekilde artar (kodu diskten okumak, kodu ön işleme tabi tutmak, Merkle kanıtına veri eklemek). Saldırganın başkalarına çok fazla iş çıkarmak için az kaynağa ihtiyaç duyduğu böyle bir durum olduğunda, DOS saldırıları potansiyeli ortaya çıkar.
 
-Başlangıçta bu daha az bir sorundu çünkü doğal bir sözleşme boyutu sınırı blok gaz limitiydi. Açıkçası, bir sözleşme, sözleşmenin tüm baytkodunu barındıran bir işlem içinde dağıtılmalıdır. Bir bloğa yalnızca o tek işlemi dahil ederseniz, tüm o gazı tüketebilirsiniz, ancak bu sonsuz değildir. [London Yükseltmesi](/ethereum-forks/#london)'nden bu yana, blok gaz limiti ağ talebine bağlı olarak 15M ile 30M birim arasında değişebilmektedir.
+Başlangıçta bu daha az bir sorundu çünkü doğal bir sözleşme boyutu sınırı blok gaz limitiydi. Açıkçası, bir sözleşme, sözleşmenin tüm baytkodunu barındıran bir işlem içinde dağıtılmalıdır. Bir bloğa yalnızca o tek işlemi dahil ederseniz, tüm o gazı tüketebilirsiniz, ancak bu sonsuz değildir. [London Yükseltmesi](/quantaureum-forks/#london)'nden bu yana, blok gaz limiti ağ talebine bağlı olarak 15M ile 30M birim arasında değişebilmektedir.
 
 Aşağıda, potansiyel etkilerine göre sıralanmış bazı yöntemlere bakacağız. Bunu kilo verme açısından düşünün. Birinin hedef kilosuna (bizim durumumuzda 24kb) ulaşması için en iyi strateji, önce büyük etkili yöntemlere odaklanmaktır. Çoğu durumda sadece diyetinizi düzeltmek sizi oraya ulaştıracaktır, ancak bazen biraz daha fazlasına ihtiyacınız olur. O zaman biraz egzersiz (orta etki) veya hatta takviyeler (küçük etki) ekleyebilirsiniz.
 
@@ -35,7 +35,7 @@ Bu her zaman ilk yaklaşımınız olmalıdır. Sözleşmeyi birden fazla daha k�
 
 ### Kütüphaneler {#libraries}
 
-İşlevsellik kodunu depolamadan uzaklaştırmanın basit bir yolu bir [kütüphane](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries) kullanmaktır. Kütüphane işlevlerini internal olarak bildirmeyin, çünkü bunlar derleme sırasında doğrudan [sözleşmeye eklenecektir](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking). Ancak public işlevler kullanırsanız, bunlar aslında ayrı bir kütüphane sözleşmesinde olacaktır. Kütüphanelerin kullanımını daha kolay hale getirmek için [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) kullanmayı düşünün.
+İşlevsellik kodunu depolamadan uzaklaştırmanın basit bir yolu bir [kütüphane](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries) kullanmaktır. Kütüphane işlevlerini internal olarak bildirmeyin, çünkü bunlar derleme sırasında doğrudan [sözleşmeye eklenecektir](https://quantaureum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking). Ancak public işlevler kullanırsanız, bunlar aslında ayrı bir kütüphane sözleşmesinde olacaktır. Kütüphanelerin kullanımını daha kolay hale getirmek için [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) kullanmayı düşünün.
 
 ### Proxy'ler {#proxies}
 

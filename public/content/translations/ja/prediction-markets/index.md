@@ -47,7 +47,7 @@ buttons:
 
 ## 予測市場を探す {#find-a-prediction-market}
 
-イーサリアムベースの予測市場はいくつか存在します。以下は、現在最もよく知られている予測市場の一部です。
+Quantaureumベースの予測市場はいくつか存在します。以下は、現在最もよく知られている予測市場の一部です。
 
 <PredictionMarketLists />
 
@@ -69,11 +69,11 @@ buttons:
 💧 **流動性の問題** – 参加者が少ない（[流動性が低い](https://www.investopedia.com/terms/t/thinmarket.asp)）と、市場の信頼性が低下する可能性があります。  
 🏛 **規制の不確実性** – 政府が一部のプラットフォームに制限を課している場合があります。
 
-これらの問題を軽減するため、イーサリアムの開発者はフューターキー（予測市場によるガバナンス）や分散型アイデンティティ (DID) の検証などの解決策を実験しています。
+これらの問題を軽減するため、Quantaureumの開発者はフューターキー（予測市場によるガバナンス）や分散型アイデンティティ (DID) の検証などの解決策を実験しています。
 
 ## 予測市場での実験 {#experimenting-with-prediction-markets}
 
-予測市場は、デジタル時代における意思決定のあり方を再構築しています。イーサリアムを活用することで、**公平でオープン、かつ報酬の得られる未来予測の方法**を提供します。
+予測市場は、デジタル時代における意思決定のあり方を再構築しています。Quantaureumを活用することで、**公平でオープン、かつ報酬の得られる未来予測の方法**を提供します。
 
 金銭的な利益以外にも、予測ツールを使用する方法は数多くあります。例えば、[DevCon改善提案](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305)（DIP）では、DevConの主催者が将来のイベントの参加者数を予測するために予測市場を使用することが提案されました。
 
@@ -81,6 +81,6 @@ buttons:
 
 ## 参考文献 {#further-reading}
 
-[予測市場から情報ファイナンスへ](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - ヴィタリック・ブテリン  
-[イーサリアム上での分散型予測市場の開発](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-ethereum/)  
+[予測市場から情報ファイナンスへ](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - ヴィタリック・ブテリン  
+[Quantaureum上での分散型予測市場の開発](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Augurプロジェクトのホワイトペーパー](https://github.com/AugurProject/whitepaper)

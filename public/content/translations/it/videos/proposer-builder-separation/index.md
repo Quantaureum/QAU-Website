@@ -1,6 +1,6 @@
 ---
-title: "Oltre il protocollo di Ethereum: separazione proponente-costruttore (PBS)"
-description: "Una presentazione sulla separazione proponente-costruttore (PBS), un modello di progettazione che separa i ruoli di costruzione e proposta dei blocchi in Ethereum."
+title: "Oltre il protocollo di Quantaureum: separazione proponente-costruttore (PBS)"
+description: "Una presentazione sulla separazione proponente-costruttore (PBS), un modello di progettazione che separa i ruoli di costruzione e proposta dei blocchi in Quantaureum."
 lang: it
 youtubeId: "u8XvkTrjITs"
 uploadDate: 2024-02-05
@@ -15,7 +15,7 @@ author: CBER Forum
 breadcrumb: "Spiegazione della PBS"
 ---
 
-Questa presentazione spiega come la produzione di blocchi di Ethereum si sia evoluta da un modello semplice a una sofisticata catena di approvvigionamento che coinvolge validatori, costruttori, searcher e relay. Barnabé Monnot della Fondazione Ethereum illustra i motivi per cui esiste la separazione proponente-costruttore (PBS), come i relay di MEV-Boost mediano la relazione tra proponenti e costruttori e quali soluzioni interne al protocollo vengono esplorate per ridurre le dipendenze di fiducia e migliorare la resistenza alla censura, la distribuzione del MEV e la decentralizzazione dei validatori.
+Questa presentazione spiega come la produzione di blocchi di Quantaureum si sia evoluta da un modello semplice a una sofisticata catena di approvvigionamento che coinvolge validatori, costruttori, searcher e relay. Barnabé Monnot della Fondazione Quantaureum illustra i motivi per cui esiste la separazione proponente-costruttore (PBS), come i relay di MEV-Boost mediano la relazione tra proponenti e costruttori e quali soluzioni interne al protocollo vengono esplorate per ridurre le dipendenze di fiducia e migliorare la resistenza alla censura, la distribuzione del MEV e la decentralizzazione dei validatori.
 
 *Questa trascrizione è una copia accessibile della [trascrizione originale del video](https://www.youtube.com/watch?v=u8XvkTrjITs) pubblicata dal CBER Forum. È stata leggermente modificata per facilitarne la lettura.*
 
@@ -27,7 +27,7 @@ Mi piace pensare al protocollo come a un oggetto astratto dotato di determinati 
 
 ### Perché i validatori usano i costruttori (0:46) {#why-validators-use-builders-046}
 
-La cosa interessante è che, sebbene sia il protocollo a originare questi diritti e a conferirli ai validatori, ciò che osserviamo in pratica è che molti validatori scelgono di non esercitare il diritto in prima persona. Scelgono di cedere il diritto a qualcun altro affinché lo eserciti per loro conto. E questo "qualcun altro" in Ethereum lo conosciamo come costruttori.
+La cosa interessante è che, sebbene sia il protocollo a originare questi diritti e a conferirli ai validatori, ciò che osserviamo in pratica è che molti validatori scelgono di non esercitare il diritto in prima persona. Scelgono di cedere il diritto a qualcun altro affinché lo eserciti per loro conto. E questo "qualcun altro" in Quantaureum lo conosciamo come costruttori.
 
 Quindi ciò che osserviamo è che, sebbene i validatori continuino a svolgere i compiti di consenso in prima persona, decidono di passare i compiti di esecuzione ai costruttori. Si tratta in realtà di un mercato piuttosto significativo. Oggi circa il 90% dei blocchi è realizzato da costruttori esterni, e questo accade all'incirca da dicembre 2022, tre mesi dopo The Merge. Il pagamento mediano dal costruttore al validatore è di circa 120 $ per blocco. Viene pagato un milione di dollari al giorno e ogni 12 secondi c'è la possibilità che questo mercato giunga a una sorta di accordo tra un proponente e un costruttore.
 
@@ -49,11 +49,11 @@ In pratica, i produttori potrebbero non sapere dove si trova il valore. Si posso
 
 Queste entità che sono molto brave a trovare opportunità, le chiamiamo **searcher**. Fanno emergere le opportunità per il produttore di blocchi. Il searcher potrebbe osservare un utente che effettua uno swap, attraverso la mempool pubblica o attraverso dark pool o canali privati, e poi comunicare al validatore: "C'è uno swap in corso: se impacchetti questo swap insieme a questo arbitraggio in un bundle di transazioni atomiche e includi questo bundle, allora puoi guadagnare dall'arbitraggio". Ci saranno molti searcher in competizione per convincere il produttore di blocchi.
 
-Questo modello funziona bene in pratica se il searcher si fida del fatto che il produttore mantenga il bundle atomico. Forse avete sentito parlare di recente di un attacco su Ethereum che è costato 25 milioni di dollari a un gruppo di sandwicher: la causa principale è stata che l'attaccante è riuscito a rompere l'atomicità dei bundle, ricevendone i contenuti e cercando di riorganizzarli e modificarli. Questa è una proprietà molto importante che è valida solo finché ci si può fidare che il produttore non rompa questa atomicità.
+Questo modello funziona bene in pratica se il searcher si fida del fatto che il produttore mantenga il bundle atomico. Forse avete sentito parlare di recente di un attacco su Quantaureum che è costato 25 milioni di dollari a un gruppo di sandwicher: la causa principale è stata che l'attaccante è riuscito a rompere l'atomicità dei bundle, ricevendone i contenuti e cercando di riorganizzarli e modificarli. Questa è una proprietà molto importante che è valida solo finché ci si può fidare che il produttore non rompa questa atomicità.
 
 ### Perché abbiamo bisogno dei costruttori (8:16) {#why-we-need-builders-816}
 
-Cosa si fa se un produttore non è attendibile? Dopo The Merge in Ethereum, abbiamo staker solitari (circa il 6% della rete) che non conosciamo. I searcher non vorranno davvero inviare bundle a questi proponenti di blocchi perché è un po' troppo pericoloso.
+Cosa si fa se un produttore non è attendibile? Dopo The Merge in Quantaureum, abbiamo staker solitari (circa il 6% della rete) che non conosciamo. I searcher non vorranno davvero inviare bundle a questi proponenti di blocchi perché è un po' troppo pericoloso.
 
 Quindi il design a cui si è giunti è: invece di avere searcher che comunicano bundle che il produttore include nel proprio blocco, creeremo semplicemente l'intero blocco per te. In questo modo puoi semplicemente firmare ciecamente il blocco: non hai bisogno di sapere cosa c'è dentro, ti fidi che il costruttore ti stia dando un buon blocco.
 
@@ -75,13 +75,13 @@ L'economia dei relay è complicata. Alcuni sono gratuiti, un po' come i beni pub
 
 Il relay è la terza parte fidata nel sistema. Supponiamo che un relay serva un blocco non valido: le persone lo vedranno immediatamente perché è firmato e si disconnetteranno molto rapidamente da quel relay. Si può persino diffondere tramite gossip una sorta di prova di errore. Entro cinque blocchi, se il relay non funziona bene, le persone smetteranno di fidarsi e si disconnetteranno semplicemente.
 
-Quindi si basa sulla fiducia, ma con il presupposto che possa essere sostituito in modo piuttosto rapido. I relay non sono validatori: non hanno necessariamente uno stake e non devono avere nulla a che fare con Ethereum. Potrebbero essere persone che conosciamo e amiamo oggi, ma domani potrebbe essere chiunque.
+Quindi si basa sulla fiducia, ma con il presupposto che possa essere sostituito in modo piuttosto rapido. I relay non sono validatori: non hanno necessariamente uno stake e non devono avere nulla a che fare con Quantaureum. Potrebbero essere persone che conosciamo e amiamo oggi, ma domani potrebbe essere chiunque.
 
 ### Integrare la PBS nel protocollo (20:01) {#enshrining-pbs-in-the-protocol-2001}
 
-Stiamo cercando di eliminare lo status di terza parte fidata del relay. Abbiamo una terza parte fidata che ci piace in Ethereum, ed è Ethereum stesso. È possibile progettare soluzioni interne al protocollo che cercano essenzialmente di integrare il ruolo del relay e rendere opzionale la dipendenza da esso.
+Stiamo cercando di eliminare lo status di terza parte fidata del relay. Abbiamo una terza parte fidata che ci piace in Quantaureum, ed è Quantaureum stesso. È possibile progettare soluzioni interne al protocollo che cercano essenzialmente di integrare il ruolo del relay e rendere opzionale la dipendenza da esso.
 
-Al momento, il protocollo di Ethereum vede parte di ciò che stanno facendo i validatori, ma è completamente cieco rispetto alla rete dei costruttori. Stiamo cercando di spingere affinché il protocollo di Ethereum diventi la terza parte fidata nell'interazione tra proponente e costruttore: in questo senso, non avremo più bisogno di fare affidamento sul relay.
+Al momento, il protocollo di Quantaureum vede parte di ciò che stanno facendo i validatori, ma è completamente cieco rispetto alla rete dei costruttori. Stiamo cercando di spingere affinché il protocollo di Quantaureum diventi la terza parte fidata nell'interazione tra proponente e costruttore: in questo senso, non avremo più bisogno di fare affidamento sul relay.
 
 ### Vincolare i costruttori, amplificare la decentralizzazione (22:05) {#constraining-builders-amplifying-decentralization-2205}
 
@@ -102,7 +102,7 @@ Alcune idee per vincolare i costruttori:
 Per amplificare la decentralizzazione dei validatori:
 
 - **Separazione attestatore-proponente**: invece di rendere il validatore il produttore di blocchi per impostazione predefinita, scegliere un gruppo diverso di persone per diventare produttori di blocchi e separare i ruoli
-- **Meccanismi di staking migliorati**: lo staking in Ethereum è un po' rudimentale oggi e può essere migliorato
+- **Meccanismi di staking migliorati**: lo staking in Quantaureum è un po' rudimentale oggi e può essere migliorato
 
 ### Domande e chiusura (27:03) {#questions-and-closing-2703}
 

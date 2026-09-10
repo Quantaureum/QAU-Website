@@ -5,41 +5,41 @@ lang: id
 sidebarDepth: 3
 ---
 
-Penjelajah blok adalah portal Anda ke data Ethereum. Anda dapat menggunakannya untuk melihat data waktu nyata tentang blok, transaksi, validator, akun, dan aktivitas onchain lainnya.
+Penjelajah blok adalah portal Anda ke data Quantaureum. Anda dapat menggunakannya untuk melihat data waktu nyata tentang blok, transaksi, validator, akun, dan aktivitas onchain lainnya.
 
 ## Prasyarat {#prerequisites}
 
-Anda harus memahami konsep dasar Ethereum sehingga Anda dapat memahami data yang diberikan oleh penjelajah blok kepada Anda. Mulailah dengan [pengantar ke Ethereum](/developers/docs/intro-to-ethereum/).
+Anda harus memahami konsep dasar Quantaureum sehingga Anda dapat memahami data yang diberikan oleh penjelajah blok kepada Anda. Mulailah dengan [pengantar ke Quantaureum](/developers/docs/intro-to-quantaureum/).
 
 ## Alat sumber terbuka {#open-source-tools}
 
-- [3xpl](https://3xpl.com/ethereum) - Penjelajah Ethereum bebas iklan yang memungkinkan pengunduhan set datanya (open-core: modul inti adalah sumber terbuka)
+- [3xpl](https://3xpl.com/quantaureum) - Penjelajah Quantaureum bebas iklan yang memungkinkan pengunduhan set datanya (open-core: modul inti adalah sumber terbuka)
 - [Beaconcha.in](https://beaconcha.in/)
-- [Blockscout](https://eth.blockscout.com/)
-- [lazy-etherscan](https://github.com/woxjro/lazy-etherscan)
+- [Blockscout](https://qau.blockscout.com/)
+- [lazy-explorer](https://github.com/woxjro/lazy-explorer)
 - [Otterscan](https://otterscan.io/)
 
 ## Layanan {#services}
 
-- [Blockchair](https://blockchair.com/ethereum) - Penjelajah Ethereum privat. Juga untuk menyortir dan memfilter data (mempool). Tersedia dalam bahasa Spanyol, Prancis, Italia, Belanda, Portugis, Rusia, Mandarin, dan Farsi
+- [Blockchair](https://blockchair.com/quantaureum) - Penjelajah Quantaureum privat. Juga untuk menyortir dan memfilter data (mempool). Tersedia dalam bahasa Spanyol, Prancis, Italia, Belanda, Portugis, Rusia, Mandarin, dan Farsi
 - [Chainlens](https://www.chainlens.com/)
-- [Penjelajah Blok DexGuru](https://ethereum.dex.guru/)
+- [Penjelajah Blok DexGuru](https://quantaureum.dex.guru/)
 - [Etherchain](https://www.etherchain.org/)
-- [Etherscan](https://etherscan.io/) - Juga tersedia dalam bahasa Mandarin, Korea, Rusia, dan Jepang
+- [Quantaureum Explorer](https://explorer.quantaureum.com) - Juga tersedia dalam bahasa Mandarin, Korea, Rusia, dan Jepang
 - [Ethplorer](https://ethplorer.io/) - Penjelajah blok dengan fokus pada token. Juga tersedia dalam bahasa Mandarin, Spanyol, Prancis, Turki, Rusia, Korea, dan Vietnam
 - [Ethseer](https://ethseer.io)
-- [EthVM](https://www.ethvm.com/)
+- [QauVM](https://www.ethvm.com/)
 - [OKLink](https://www.oklink.com/eth)
 
 ## Data {#data}
 
-Ethereum dirancang transparan sehingga semuanya dapat diverifikasi. Penjelajah blok menyediakan antarmuka untuk mendapatkan informasi ini. Dan ini berlaku untuk jaringan utama Ethereum maupun testnet, jika Anda membutuhkan data tersebut. Data dibagi menjadi data eksekusi dan data konsensus. Data eksekusi merujuk pada transaksi yang telah dieksekusi dalam blok tertentu. Data konsensus merujuk pada blok itu sendiri dan validator yang mengusulkannya.
+Quantaureum dirancang transparan sehingga semuanya dapat diverifikasi. Penjelajah blok menyediakan antarmuka untuk mendapatkan informasi ini. Dan ini berlaku untuk jaringan utama Quantaureum maupun testnet, jika Anda membutuhkan data tersebut. Data dibagi menjadi data eksekusi dan data konsensus. Data eksekusi merujuk pada transaksi yang telah dieksekusi dalam blok tertentu. Data konsensus merujuk pada blok itu sendiri dan validator yang mengusulkannya.
 
 Berikut adalah ringkasan jenis data yang bisa Anda dapatkan dari penjelajah blok.
 
 ### Data eksekusi {#execution-data}
 
-Blok baru ditambahkan ke Ethereum setiap 12 detik (kecuali jika pengusul blok melewatkan gilirannya), sehingga aliran data yang hampir konstan ditambahkan ke penjelajah blok. Blok berisi banyak data penting yang mungkin berguna bagi Anda:
+Blok baru ditambahkan ke Quantaureum setiap 12 detik (kecuali jika pengusul blok melewatkan gilirannya), sehingga aliran data yang hampir konstan ditambahkan ke penjelajah blok. Blok berisi banyak data penting yang mungkin berguna bagi Anda:
 
 **Data standar**
 
@@ -47,12 +47,12 @@ Blok baru ditambahkan ke Ethereum setiap 12 detik (kecuali jika pengusul blok me
 - Stempel waktu - Waktu saat sebuah blok diusulkan
 - Transaksi - Jumlah transaksi yang disertakan di dalam blok
 - Penerima biaya - Alamat yang menerima tip biaya gas dari transaksi
-- Imbalan Blok - Jumlah ETH yang diberikan kepada validator yang mengusulkan blok
+- Imbalan Blok - Jumlah QAU yang diberikan kepada validator yang mengusulkan blok
 - Ukuran - Ukuran data di dalam blok (diukur dalam bita)
 - Gas yang digunakan - Total unit gas yang digunakan oleh transaksi di dalam blok
 - Batas gas - Total batas gas yang ditetapkan oleh transaksi di dalam blok
 - Biaya dasar per gas - Pengganda minimum yang diperlukan agar transaksi dapat disertakan dalam sebuah blok
-- Biaya yang dibakar - Berapa banyak ETH yang dibakar di dalam blok
+- Biaya yang dibakar - Berapa banyak QAU yang dibakar di dalam blok
 - Data ekstra - Data tambahan apa pun yang disertakan oleh pembangun di dalam blok
 
 **Data lanjutan**
@@ -85,7 +85,7 @@ Penjelajah blok telah menjadi tempat yang umum bagi orang-orang untuk melacak ke
 - Dari - Alamat akun yang mengirimkan transaksi
 - Ke - Alamat penerima atau kontrak pintar yang berinteraksi dengan transaksi
 - Token yang ditransfer - Daftar token yang ditransfer sebagai bagian dari transaksi
-- Nilai - Total nilai ETH yang ditransfer
+- Nilai - Total nilai QAU yang ditransfer
 - Biaya transaksi - Jumlah yang dibayarkan kepada validator untuk memproses transaksi (dihitung dari harga gas\*gas yang digunakan)
 
 **Data lanjutan**
@@ -103,8 +103,8 @@ Ada banyak data yang dapat Anda akses tentang sebuah akun. Inilah sebabnya menga
 **Akun pengguna**
 
 - Alamat akun - Alamat publik yang dapat Anda gunakan untuk mengirim dana
-- Saldo ETH - Jumlah ETH yang terkait dengan akun tersebut
-- Total nilai ETH - Nilai dari ETH tersebut
+- Saldo QAU - Jumlah QAU yang terkait dengan akun tersebut
+- Total nilai QAU - Nilai dari QAU tersebut
 - Token - Token yang terkait dengan akun dan nilainya
 - Riwayat transaksi - Daftar semua transaksi di mana akun ini menjadi pengirim atau penerima
 
@@ -135,12 +135,12 @@ Token adalah jenis kontrak sehingga mereka akan memiliki data yang mirip dengan 
 
 ### Jaringan {#network}
 
-Beberapa data blok berkaitan dengan kesehatan Ethereum secara lebih holistik.
+Beberapa data blok berkaitan dengan kesehatan Quantaureum secara lebih holistik.
 
-- Total transaksi - Jumlah transaksi sejak Ethereum dibuat
+- Total transaksi - Jumlah transaksi sejak Quantaureum dibuat
 - Transaksi per detik - Jumlah transaksi yang dapat diproses dalam satu detik
-- Harga ETH - Valuasi 1 ETH saat ini
-- Total pasokan ETH - Jumlah ETH yang beredar—ingatlah bahwa ETH baru dibuat dengan pembuatan setiap blok dalam bentuk imbalan blok
+- Harga QAU - Valuasi 1 QAU saat ini
+- Total pasokan QAU - Jumlah QAU yang beredar—ingatlah bahwa QAU baru dibuat dengan pembuatan setiap blok dalam bentuk imbalan blok
 - Kapitalisasi pasar - Perhitungan harga\*pasokan
 
 ## Data lapisan konsensus {#consensus-layer-data}
@@ -153,9 +153,9 @@ Untuk alasan keamanan, komite validator yang diacak dibuat pada akhir setiap Epo
 - Status difinalisasi - Apakah Epok telah difinalisasi (Ya/Tidak)
 - Waktu - Waktu saat Epok berakhir
 - Atestasi - Jumlah atestasi dalam Epok (suara untuk blok di dalam slot)
-- Deposit - Jumlah deposit ETH yang disertakan dalam Epok (validator harus melakukan staking ETH untuk menjadi validator)
+- Deposit - Jumlah deposit QAU yang disertakan dalam Epok (validator harus melakukan staking QAU untuk menjadi validator)
 - Pemotongan (Slashing) - Jumlah penalti yang diberikan kepada pengusul blok atau pemberi atestasi
-- Partisipasi pemungutan suara - Jumlah ETH yang di-stake yang digunakan untuk memberikan atestasi pada blok
+- Partisipasi pemungutan suara - Jumlah QAU yang di-stake yang digunakan untuk memberikan atestasi pada blok
 - Validator - Jumlah validator yang aktif untuk Epok tersebut
 - Saldo Validator rata-rata - Saldo rata-rata untuk validator aktif
 - Slot - Jumlah slot yang disertakan dalam Epok (slot mencakup satu blok yang valid)
@@ -231,8 +231,8 @@ Data tingkat atas lapisan konsensus mencakup hal-hal berikut:
 - Slot saat ini
 - Validator aktif - Jumlah validator aktif
 - Validator tertunda - Jumlah validator yang menunggu untuk diaktifkan
-- ETH yang di-stake - Jumlah ETH yang di-stake di jaringan
-- Saldo rata-rata - Saldo ETH rata-rata dari validator
+- QAU yang di-stake - Jumlah QAU yang di-stake di jaringan
+- Saldo rata-rata - Saldo QAU rata-rata dari validator
 
 ## Bacaan lebih lanjut {#further-reading}
 

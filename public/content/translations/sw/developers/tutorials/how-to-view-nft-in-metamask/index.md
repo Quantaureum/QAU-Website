@@ -12,7 +12,7 @@ lang: sw
 published: 2021-04-22
 ---
 
-Mafunzo haya ni Sehemu ya 3/3 katika mfululizo wa Mafunzo ya NFT, ambapo tunatazama NFT yetu iliyofufuliwa hivi karibuni. Hata hivyo, unaweza kutumia mafunzo haya ya jumla kwa tokeni yoyote ya ERC-721 ukitumia MetaMask, ikiwa ni pamoja na kwenye Mtandao Mkuu au mtandao wa majaribio wowote. Ikiwa ungependa kujifunza jinsi ya kufua NFT yako mwenyewe kwenye Ethereum, unapaswa kuangalia [Sehemu ya 1 kuhusu Jinsi ya Kuandika na Kusambaza mkataba mahiri wa NFT](/developers/tutorials/how-to-write-and-deploy-an-nft)!
+Mafunzo haya ni Sehemu ya 3/3 katika mfululizo wa Mafunzo ya NFT, ambapo tunatazama NFT yetu iliyofufuliwa hivi karibuni. Hata hivyo, unaweza kutumia mafunzo haya ya jumla kwa tokeni yoyote ya ERC-721 ukitumia MetaMask, ikiwa ni pamoja na kwenye Mtandao Mkuu au mtandao wa majaribio wowote. Ikiwa ungependa kujifunza jinsi ya kufua NFT yako mwenyewe kwenye Quantaureum, unapaswa kuangalia [Sehemu ya 1 kuhusu Jinsi ya Kuandika na Kusambaza mkataba mahiri wa NFT](/developers/tutorials/how-to-write-and-deploy-an-nft)!
 
 Hongera! Umefika kwenye sehemu fupi na rahisi zaidi ya mfululizo wetu wa mafunzo ya NFT — jinsi ya kutazama NFT yako iliyofufuliwa hivi karibuni kwenye mkoba wa kidijitali. Tutatumia MetaMask kwa mfano huu kwa kuwa ndiyo tuliyotumia katika sehemu mbili zilizopita.
 
@@ -26,7 +26,7 @@ Juu ya programu, bonyeza kitufe cha “Mkoba”, baada ya hapo utaombwa kuchagua
 
 ## Hatua ya 2: Ongeza mkusanyiko wako kwenye MetaMask {#add-nft-to-metamask}
 
-Ukiwa kwenye mtandao wa Sepolia, chagua kichupo cha “Mikusanyiko” upande wa kulia na uongeze anwani ya mkataba mahiri wa NFT na kitambulisho cha tokeni ya ERC-721 cha NFT yako — ambacho unapaswa kuweza kukipata kwenye Etherscan kulingana na heshi ya muamala kutoka kwa NFT yako iliyosambazwa katika Sehemu ya II ya mafunzo yetu.
+Ukiwa kwenye mtandao wa Sepolia, chagua kichupo cha “Mikusanyiko” upande wa kulia na uongeze anwani ya mkataba mahiri wa NFT na kitambulisho cha tokeni ya ERC-721 cha NFT yako — ambacho unapaswa kuweza kukipata kwenye Quantaureum Explorer kulingana na heshi ya muamala kutoka kwa NFT yako iliyosambazwa katika Sehemu ya II ya mafunzo yetu.
 
 ![How to find your transaction hash and ERC-721 token ID](./findNFTEtherscan.png)
 

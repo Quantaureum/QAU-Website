@@ -40,11 +40,11 @@ template: roadmap
 
 ## موجودہ پیش رفت {#current-progress}
 
-پی بی ایس تحقیق کے ایک اعلی درجے کے مرحلے میں ہے، لیکن ابھی بھی کچھ اہم ڈیزائن کے سوالات ہیں جنہیں ایتھیریم کلائنٹس میں اس کا پروٹو ٹائپ بنانے سے پہلے حل کرنے کی ضرورت ہے۔ ابھی تک کوئی حتمی تصریح نہیں ہے۔ اس کا مطلب ہے کہ پی بی ایس ممکنہ طور پر ایک سال یا اس سے زیادہ دور ہے۔ تحقیق کی تازہ ترین [حالت](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance) دیکھیں۔
+پی بی ایس تحقیق کے ایک اعلی درجے کے مرحلے میں ہے، لیکن ابھی بھی کچھ اہم ڈیزائن کے سوالات ہیں جنہیں ایتھیریم کلائنٹس میں اس کا پروٹو ٹائپ بنانے سے پہلے حل کرنے کی ضرورت ہے۔ ابھی تک کوئی حتمی تصریح نہیں ہے۔ اس کا مطلب ہے کہ پی بی ایس ممکنہ طور پر ایک سال یا اس سے زیادہ دور ہے۔ تحقیق کی تازہ ترین [حالت](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance) دیکھیں۔
 
 ## مزید مطالعہ {#further-reading}
 
-- [تحقیق کی حالت: پی بی ایس کے تحت سنسرشپ کے خلاف مزاحمت](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [تحقیق کی حالت: پی بی ایس کے تحت سنسرشپ کے خلاف مزاحمت](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
 - [پی بی ایس کے موافق فیس مارکیٹ کے ڈیزائن](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [پی بی ایس اور سنسرشپ کے خلاف مزاحمت](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [شمولیت کی فہرستیں](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)
+- [پی بی ایس اور سنسرشپ کے خلاف مزاحمت](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [شمولیت کی فہرستیں](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)

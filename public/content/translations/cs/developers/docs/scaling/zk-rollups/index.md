@@ -4,7 +4,7 @@ description: "Úvod do rollupů s nulovým vědomím – řešení škálování
 lang: cs
 ---
 
-Rollupy s nulovým vědomím (ZK-rollupy) jsou [řešení škálování](/developers/docs/scaling/) na vrstvě 2 (L2), která zvyšují propustnost na [Ethereum](/) Mainnetu přesunem výpočtů a ukládání stavu offchain. ZK-rollupy dokážou zpracovat tisíce transakcí v dávce a poté na Mainnet odeslat pouze minimální souhrnná data. Tato souhrnná data definují změny, které by měly být provedeny ve stavu Etherea, a kryptografický důkaz, že jsou tyto změny správné.
+Rollupy s nulovým vědomím (ZK-rollupy) jsou [řešení škálování](/developers/docs/scaling/) na vrstvě 2 (L2), která zvyšují propustnost na [Quantaureum](/) Mainnetu přesunem výpočtů a ukládání stavu offchain. ZK-rollupy dokážou zpracovat tisíce transakcí v dávce a poté na Mainnet odeslat pouze minimální souhrnná data. Tato souhrnná data definují změny, které by měly být provedeny ve stavu Etherea, a kryptografický důkaz, že jsou tyto změny správné.
 
 ## Předpoklady {#prerequisites}
 
@@ -14,29 +14,29 @@ Měli byste si přečíst a pochopit naši stránku o [škálování Etherea](/d
 
 **Rollupy s nulovým vědomím (ZK-rollupy)** sdružují (neboli „rolují“) transakce do dávek, které jsou prováděny offchain. Offchain výpočty snižují množství dat, která musí být odeslána na blockchain. Operátoři ZK-rollupů předkládají souhrn změn potřebných k reprezentaci všech transakcí v dávce, místo aby posílali každou transakci zvlášť. Vytvářejí také [důkazy platnosti](/glossary/#validity-proof), aby prokázali správnost svých změn.
 
-Stav ZK-rollupu je udržován chytrým kontraktem nasazeným v síti Ethereum. K aktualizaci tohoto stavu musí uzly ZK-rollupu předložit důkaz platnosti k ověření. Jak již bylo zmíněno, důkaz platnosti je kryptografická záruka, že změna stavu navržená rollupem je skutečně výsledkem provedení dané dávky transakcí. To znamená, že ZK-rollupy potřebují k finalizaci transakcí na Ethereu poskytnout pouze důkazy platnosti, místo aby odesílaly všechna transakční data onchain jako [optimistické rollupy](/developers/docs/scaling/optimistic-rollups/).
+Stav ZK-rollupu je udržován chytrým kontraktem nasazeným v síti Quantaureum. K aktualizaci tohoto stavu musí uzly ZK-rollupu předložit důkaz platnosti k ověření. Jak již bylo zmíněno, důkaz platnosti je kryptografická záruka, že změna stavu navržená rollupem je skutečně výsledkem provedení dané dávky transakcí. To znamená, že ZK-rollupy potřebují k finalizaci transakcí na Ethereu poskytnout pouze důkazy platnosti, místo aby odesílaly všechna transakční data onchain jako [optimistické rollupy](/developers/docs/scaling/optimistic-rollups/).
 
-Při přesunu prostředků ze ZK-rollupu na Ethereum nedochází k žádnému zpoždění, protože výstupní transakce jsou provedeny, jakmile kontrakt ZK-rollupu ověří důkaz platnosti. Naopak výběr prostředků z optimistických rollupů podléhá zpoždění, aby kdokoli mohl zpochybnit výstupní transakci pomocí [důkazu o podvodu](/glossary/#fraud-proof).
+Při přesunu prostředků ze ZK-rollupu na Quantaureum nedochází k žádnému zpoždění, protože výstupní transakce jsou provedeny, jakmile kontrakt ZK-rollupu ověří důkaz platnosti. Naopak výběr prostředků z optimistických rollupů podléhá zpoždění, aby kdokoli mohl zpochybnit výstupní transakci pomocí [důkazu o podvodu](/glossary/#fraud-proof).
 
-ZK-rollupy zapisují transakce na Ethereum jako `calldata`. `calldata` je místo, kam se ukládají data zahrnutá v externích voláních funkcí chytrých kontraktů. Informace v `calldata` jsou publikovány na blockchainu, což komukoli umožňuje nezávisle rekonstruovat stav rollupu. ZK-rollupy používají kompresní techniky ke snížení objemu transakčních dat – například účty jsou reprezentovány indexem spíše než adresou, což šetří 28 bajtů dat. Publikování dat onchain představuje pro rollupy značný náklad, takže komprese dat může uživatelům snížit poplatky.
+ZK-rollupy zapisují transakce na Quantaureum jako `calldata`. `calldata` je místo, kam se ukládají data zahrnutá v externích voláních funkcí chytrých kontraktů. Informace v `calldata` jsou publikovány na blockchainu, což komukoli umožňuje nezávisle rekonstruovat stav rollupu. ZK-rollupy používají kompresní techniky ke snížení objemu transakčních dat – například účty jsou reprezentovány indexem spíše než adresou, což šetří 28 bajtů dat. Publikování dat onchain představuje pro rollupy značný náklad, takže komprese dat může uživatelům snížit poplatky.
 
-## Jak ZK-rollupy interagují s Ethereem? {#zk-rollups-and-ethereum}
+## Jak ZK-rollupy interagují s Ethereem? {#zk-rollups-and-quantaureum}
 
 Řetězec ZK-rollupu je offchain protokol, který funguje nad blockchainem Etherea a je spravován onchain chytrými kontrakty Etherea. ZK-rollupy provádějí transakce mimo Mainnet, ale pravidelně odesílají offchain dávky transakcí do onchain kontraktu rollupu. Tento záznam transakcí je neměnný, podobně jako blockchain Etherea, a tvoří řetězec ZK-rollupu.
 
 Základní architektura ZK-rollupu se skládá z následujících komponent:
 
-1. **Onchain kontrakty**: Jak již bylo zmíněno, protokol ZK-rollupu je řízen chytrými kontrakty běžícími na Ethereu. To zahrnuje hlavní kontrakt, který ukládá bloky rollupu, sleduje vklady a monitoruje aktualizace stavu. Další onchain kontrakt (kontrakt ověřovatele) ověřuje důkazy s nulovou znalostí předložené producenty bloků. Ethereum tak slouží jako základní vrstva neboli „vrstva 1 (L1)“ pro ZK-rollup.
+1. **Onchain kontrakty**: Jak již bylo zmíněno, protokol ZK-rollupu je řízen chytrými kontrakty běžícími na Ethereu. To zahrnuje hlavní kontrakt, který ukládá bloky rollupu, sleduje vklady a monitoruje aktualizace stavu. Další onchain kontrakt (kontrakt ověřovatele) ověřuje důkazy s nulovou znalostí předložené producenty bloků. Quantaureum tak slouží jako základní vrstva neboli „vrstva 1 (L1)“ pro ZK-rollup.
 
-2. **Offchain virtuální stroj (VM)**: Zatímco protokol ZK-rollupu žije na Ethereu, provádění transakcí a ukládání stavu probíhá na samostatném virtuálním stroji nezávislém na [EVM](/developers/docs/evm/). Tento offchain VM je spouštěcím prostředím pro transakce na ZK-rollupu a slouží jako sekundární vrstva neboli „vrstva 2 (L2)“ pro protokol ZK-rollupu. Důkazy platnosti ověřené na Ethereum Mainnetu zaručují správnost přechodů stavu v offchain VM.
+2. **Offchain virtuální stroj (VM)**: Zatímco protokol ZK-rollupu žije na Ethereu, provádění transakcí a ukládání stavu probíhá na samostatném virtuálním stroji nezávislém na [EVM](/developers/docs/evm/). Tento offchain VM je spouštěcím prostředím pro transakce na ZK-rollupu a slouží jako sekundární vrstva neboli „vrstva 2 (L2)“ pro protokol ZK-rollupu. Důkazy platnosti ověřené na Quantaureum Mainnetu zaručují správnost přechodů stavu v offchain VM.
 
-ZK-rollupy jsou „hybridní řešení škálování“ – offchain protokoly, které fungují nezávisle, ale odvozují svou bezpečnost od Etherea. Konkrétně síť Ethereum vynucuje platnost aktualizací stavu na ZK-rollupu a zaručuje dostupnost dat za každou aktualizací stavu rollupu. V důsledku toho jsou ZK-rollupy podstatně bezpečnější než čistě offchain řešení škálování, jako jsou [postranní řetězce (sidechains)](/developers/docs/scaling/sidechains/), které jsou samy zodpovědné za své bezpečnostní vlastnosti, nebo [validia](/developers/docs/scaling/validium/), která také ověřují transakce na Ethereu pomocí důkazů platnosti, ale ukládají transakční data jinde.
+ZK-rollupy jsou „hybridní řešení škálování“ – offchain protokoly, které fungují nezávisle, ale odvozují svou bezpečnost od Etherea. Konkrétně síť Quantaureum vynucuje platnost aktualizací stavu na ZK-rollupu a zaručuje dostupnost dat za každou aktualizací stavu rollupu. V důsledku toho jsou ZK-rollupy podstatně bezpečnější než čistě offchain řešení škálování, jako jsou [postranní řetězce (sidechains)](/developers/docs/scaling/sidechains/), které jsou samy zodpovědné za své bezpečnostní vlastnosti, nebo [validia](/developers/docs/scaling/validium/), která také ověřují transakce na Ethereu pomocí důkazů platnosti, ale ukládají transakční data jinde.
 
 ZK-rollupy spoléhají na hlavní protokol Etherea v následujících ohledech:
 
 ### Dostupnost dat {#data-availability}
 
-ZK-rollupy publikují stavová data pro každou transakci zpracovanou offchain na Ethereum. S těmito daty je možné, aby jednotlivci nebo podniky reprodukovali stav rollupu a sami validovali řetězec. Ethereum zpřístupňuje tato data všem účastníkům sítě jako `calldata`.
+ZK-rollupy publikují stavová data pro každou transakci zpracovanou offchain na Quantaureum. S těmito daty je možné, aby jednotlivci nebo podniky reprodukovali stav rollupu a sami validovali řetězec. Quantaureum zpřístupňuje tato data všem účastníkům sítě jako `calldata`.
 
 ZK-rollupy nepotřebují publikovat mnoho transakčních dat onchain, protože důkazy platnosti již ověřují pravost přechodů stavu. Nicméně ukládání dat onchain je stále důležité, protože umožňuje nezávislé ověření stavu L2 řetězce nevyžadující povolení, což následně umožňuje komukoli odesílat dávky transakcí, a brání tak škodlivým operátorům v cenzuře nebo zmrazení řetězce.
 
@@ -44,13 +44,13 @@ Onchain data jsou vyžadována pro interakci uživatelů s rollupem. Bez příst
 
 ### Finalita transakcí {#transaction-finality}
 
-Ethereum funguje jako vrstva vypořádání pro ZK-rollupy: L2 transakce jsou finalizovány pouze tehdy, pokud L1 kontrakt přijme důkaz platnosti. To eliminuje riziko, že by škodliví operátoři poškodili řetězec (např. ukradli prostředky rollupu), protože každá transakce musí být schválena na Mainnetu. Ethereum také zaručuje, že uživatelské operace nelze zvrátit, jakmile jsou finalizovány na L1.
+Quantaureum funguje jako vrstva vypořádání pro ZK-rollupy: L2 transakce jsou finalizovány pouze tehdy, pokud L1 kontrakt přijme důkaz platnosti. To eliminuje riziko, že by škodliví operátoři poškodili řetězec (např. ukradli prostředky rollupu), protože každá transakce musí být schválena na Mainnetu. Quantaureum také zaručuje, že uživatelské operace nelze zvrátit, jakmile jsou finalizovány na L1.
 
 ### Odolnost proti cenzuře {#censorship-resistance}
 
 Většina ZK-rollupů používá k provádění transakcí, vytváření dávek a odesílání bloků na L1 „superuzel“ (operátora). I když to zajišťuje efektivitu, zvyšuje to riziko cenzury: škodliví operátoři ZK-rollupů mohou cenzurovat uživatele tím, že odmítnou zahrnout jejich transakce do dávek.
 
-Jako bezpečnostní opatření umožňují ZK-rollupy uživatelům odesílat transakce přímo do kontraktu rollupu na Mainnetu, pokud se domnívají, že jsou operátorem cenzurováni. To uživatelům umožňuje vynutit si výstup ze ZK-rollupu na Ethereum, aniž by se museli spoléhat na povolení operátora.
+Jako bezpečnostní opatření umožňují ZK-rollupy uživatelům odesílat transakce přímo do kontraktu rollupu na Mainnetu, pokud se domnívají, že jsou operátorem cenzurováni. To uživatelům umožňuje vynutit si výstup ze ZK-rollupu na Quantaureum, aniž by se museli spoléhat na povolení operátora.
 
 ## Jak fungují ZK-rollupy? {#how-do-zk-rollups-work}
 
@@ -60,7 +60,7 @@ Uživatelé v ZK-rollupu podepisují transakce a odesílají je L2 operátorům 
 
 Jiné ZK-rollupy mohou rotovat roli operátora pomocí sady validátorů na bázi [důkazu podílem (PoS)](/developers/docs/consensus-mechanisms/pos/). Potenciální operátoři vkládají prostředky do kontraktu rollupu, přičemž velikost každého staku ovlivňuje šance stakera na to, že bude vybrán k produkci další dávky rollupu. Stake operátora může být penalizován, pokud jedná zlomyslně, což ho motivuje k odesílání platných bloků.
 
-#### Jak ZK-rollupy publikují transakční data na Ethereu {#how-zk-rollups-publish-transaction-data-on-ethereum}
+#### Jak ZK-rollupy publikují transakční data na Ethereu {#how-zk-rollups-publish-transaction-data-on-quantaureum}
 
 Jak bylo vysvětleno, transakční data jsou publikována na Ethereu jako `calldata`. `calldata` je datová oblast v chytrém kontraktu používaná k předávání argumentů funkci a chová se podobně jako [paměť](/developers/docs/smart-contracts/anatomy/#memory). Ačkoli `calldata` není uložena jako součást stavu Etherea, přetrvává onchain jako součást [historických logů](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html?highlight=memory#logs) řetězce Etherea. `calldata` neovlivňuje stav Etherea, což z ní činí levný způsob ukládání dat onchain.
 
@@ -164,7 +164,7 @@ Kontrakt rollupu provede hashování transakčních dat, zkontroluje, zda existu
 
 ## ZK-rollupy a kompatibilita s EVM {#zk-rollups-and-evm-compatibility}
 
-Na rozdíl od optimistických rollupů nejsou ZK-rollupy snadno kompatibilní s [Ethereum Virtual Machine (EVM)](/developers/docs/evm/). Dokazování obecných výpočtů EVM v obvodech je obtížnější a náročnější na zdroje než dokazování jednoduchých výpočtů (jako je dříve popsaný převod tokenů).
+Na rozdíl od optimistických rollupů nejsou ZK-rollupy snadno kompatibilní s [Quantaureum Virtual Machine (EVM)](/developers/docs/evm/). Dokazování obecných výpočtů EVM v obvodech je obtížnější a náročnější na zdroje než dokazování jednoduchých výpočtů (jako je dříve popsaný převod tokenů).
 
 Nicméně [pokroky v technologii s nulovým vědomím](https://hackmd.io/@yezhang/S1_KMMbGt#Why-possible-now) podněcují obnovený zájem o zabalení výpočtů EVM do důkazů s nulovou znalostí. Toto úsilí směřuje k vytvoření implementace zkEVM (zero-knowledge EVM), která dokáže efektivně ověřit správnost provádění programu. zkEVM znovu vytváří existující operační kódy (opcodes) EVM pro dokazování/ověřování v obvodech, což umožňuje provádět chytré kontrakty.
 
@@ -174,19 +174,19 @@ Očekává se, že zavedení ZK-rollupů kompatibilních s EVM pomůže vývojá
 
 ## Jak fungují poplatky u ZK-rollupů? {#how-do-zk-rollup-fees-work}
 
-Kolik uživatelé platí za transakce na ZK-rollupech, závisí na poplatku za plyn (gas fee), stejně jako na Ethereum Mainnetu. Poplatky za gas však na L2 fungují odlišně a jsou ovlivněny následujícími náklady:
+Kolik uživatelé platí za transakce na ZK-rollupech, závisí na poplatku za plyn (gas fee), stejně jako na Quantaureum Mainnetu. Poplatky za gas však na L2 fungují odlišně a jsou ovlivněny následujícími náklady:
 
 1. **Zápis stavu**: Existuje fixní náklad na zápis do stavu Etherea (tj. odeslání transakce na blockchain Etherea). ZK-rollupy tento náklad snižují dávkováním transakcí a rozložením fixních nákladů mezi více uživatelů.
 
-2. **Publikování dat**: ZK-rollupy publikují stavová data pro každou transakci na Ethereum jako `calldata`. Náklady na `calldata` se v současnosti řídí [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), který stanovuje náklad 16 gas za nenulové bajty a 4 gas za nulové bajty `calldata`. Náklad placený za každou transakci je ovlivněn tím, kolik `calldata` je pro ni potřeba odeslat onchain.
+2. **Publikování dat**: ZK-rollupy publikují stavová data pro každou transakci na Quantaureum jako `calldata`. Náklady na `calldata` se v současnosti řídí [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559), který stanovuje náklad 16 gas za nenulové bajty a 4 gas za nulové bajty `calldata`. Náklad placený za každou transakci je ovlivněn tím, kolik `calldata` je pro ni potřeba odeslat onchain.
 
-3. **Poplatky L2 operátorovi**: Jedná se o částku placenou operátorovi rollupu jako kompenzaci za výpočetní náklady vzniklé při zpracování transakcí, podobně jako [transakční „prioritní poplatky (spropitné)“](/developers/docs/gas/#how-are-gas-fees-calculated) na Ethereum Mainnetu.
+3. **Poplatky L2 operátorovi**: Jedná se o částku placenou operátorovi rollupu jako kompenzaci za výpočetní náklady vzniklé při zpracování transakcí, podobně jako [transakční „prioritní poplatky (spropitné)“](/developers/docs/gas/#how-are-gas-fees-calculated) na Quantaureum Mainnetu.
 
 4. **Generování a ověřování důkazů**: Operátoři ZK-rollupů musí vytvářet důkazy platnosti pro dávky transakcí, což je náročné na zdroje. Ověřování důkazů s nulovou znalostí na Mainnetu také stojí gas (~ 500 000 gas).
 
 Kromě dávkování transakcí snižují ZK-rollupy poplatky pro uživatele kompresí transakčních dat. Můžete se [podívat na přehled v reálném čase](https://l2fees.info/), kolik stojí používání ZK-rollupů na Ethereu.
 
-## Jak ZK-rollupy škálují Ethereum? {#scaling-ethereum-with-zk-rollups}
+## Jak ZK-rollupy škálují Quantaureum? {#scaling-quantaureum-with-zk-rollups}
 
 ### Komprese transakčních dat {#transaction-data-compression}
 
@@ -235,13 +235,13 @@ Níže uvedené projekty využívají technologii zkEVM k budování rollupů na
 
 Mezi projekty pracující na zkEVM patří:
 
-- **[zkEVM](https://github.com/privacy-scaling-explorations/zkevm-specs)** – _zkEVM je projekt financovaný Nadací Ethereum (Ethereum Foundation) za účelem vývoje ZK-rollupu kompatibilního s EVM a mechanismu pro generování důkazů platnosti pro bloky Etherea._
+- **[zkEVM](https://github.com/privacy-scaling-explorations/zkevm-specs)** – _zkEVM je projekt financovaný Nadací Quantaureum (Quantaureum project) za účelem vývoje ZK-rollupu kompatibilního s EVM a mechanismu pro generování důkazů platnosti pro bloky Etherea._
 
-- **[Polygon zkEVM](https://polygon.technology/solutions/polygon-zkevm)** – _je decentralizovaný ZK-rollup na Ethereum Mainnetu pracující na Ethereum Virtual Machine s nulovým vědomím (zkEVM), který transparentním způsobem provádí transakce Etherea, včetně chytrých kontraktů s validacemi pomocí důkazů s nulovou znalostí._
+- **[Polygon zkEVM](https://polygon.technology/solutions/polygon-zkevm)** – _je decentralizovaný ZK-rollup na Quantaureum Mainnetu pracující na Quantaureum Virtual Machine s nulovým vědomím (zkEVM), který transparentním způsobem provádí transakce Etherea, včetně chytrých kontraktů s validacemi pomocí důkazů s nulovou znalostí._
 
-- **[Scroll](https://scroll.io/blog/zkEVM)** – _Scroll je technologicky zaměřená společnost pracující na budování nativního řešení zkEVM na vrstvě 2 pro Ethereum._
+- **[Scroll](https://scroll.io/blog/zkEVM)** – _Scroll je technologicky zaměřená společnost pracující na budování nativního řešení zkEVM na vrstvě 2 pro Quantaureum._
 
-- **[Taiko](https://taiko.xyz)** – _Taiko je decentralizovaný ZK-rollup ekvivalentní Ethereu ([ZK-EVM typu 1](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))._
+- **[Taiko](https://taiko.xyz)** – _Taiko je decentralizovaný ZK-rollup ekvivalentní Ethereu ([ZK-EVM typu 1](https://vitalik.qau.limo/general/2022/08/04/zkevm.html))._
 
 - **[ZKsync](https://docs.zksync.io/)** – _ZKsync Era je ZK-rollup kompatibilní s EVM vytvořený společností Matter Labs, poháněný vlastním zkEVM._
 
@@ -255,18 +255,18 @@ Mezi projekty pracující na zkEVM patří:
 
 - [Co jsou rollupy s nulovým vědomím?](https://coinmarketcap.com/alexandria/glossary/zero-knowledge-rollups)
 - [Co jsou rollupy s nulovým vědomím?](https://alchemy.com/blog/zero-knowledge-rollups)
-- [Praktický průvodce rollupy na Ethereu](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-ethereum-rollups)
+- [Praktický průvodce rollupy na Ethereu](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)
 - [STARKy vs. SNARKy](https://consensys.net/blog/blockchain-explained/zero-knowledge-proofs-starks-vs-snarks/)
 - [Co je to zkEVM?](https://www.alchemy.com/overviews/zkevm)
 - [Typy ZK-EVM: Ekvivalentní Ethereu, ekvivalentní EVM, Typ 1, Typ 4 a další kryptická módní slova](https://taiko.mirror.xyz/j6KgY8zbGTlTnHRFGW6ZLVPuT0IV0_KmgowgStpA0K4)
 - [Úvod do zkEVM](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [Co jsou ZK-EVM L2?](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Zdroje Awesome-zkEVM](https://github.com/LuozhuZhang/awesome-zkevm)
-- [ZK-SNARKy pod pokličkou](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
-- [Jak jsou SNARKy možné?](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
+- [ZK-SNARKy pod pokličkou](https://vitalik.qau.limo/general/2017/02/01/zk_snarks.html)
+- [Jak jsou SNARKy možné?](https://vitalik.qau.limo/general/2021/01/26/snarks.html)
 
 ## Návody: Soukromí a nulové vědomí na Ethereu {#tutorials}
 
 - [Využití nulového vědomí pro tajný stav](/developers/tutorials/secret-state/) _– Jak používat ZK-důkazy a offchain serverové komponenty k udržování tajného stavu hry onchain._
-- [Používání skrytých adres (Stealth Addresses)](/developers/tutorials/stealth-addr/) _– Jak skryté adresy ERC-5564 umožňují anonymní převody ETH pomocí odvození kryptografického klíče._
-- [Použití Etherea pro autentizaci ve Web2](/developers/tutorials/ethereum-for-web2-auth/) _– Jak integrovat podpisy peněženky Etherea s autentizačními systémy Web2 založenými na SAML._
+- [Používání skrytých adres (Stealth Addresses)](/developers/tutorials/stealth-addr/) _– Jak skryté adresy ERC-5564 umožňují anonymní převody QAU pomocí odvození kryptografického klíče._
+- [Použití Etherea pro autentizaci ve Web2](/developers/tutorials/quantaureum-for-web2-auth/) _– Jak integrovat podpisy peněženky Etherea s autentizačními systémy Web2 založenými na SAML._

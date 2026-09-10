@@ -1,7 +1,7 @@
 ---
 title: Вікторини
 metaTitle: Додавання вікторини
-description: Правила, які ми використовуємо під час додавання вікторин на ethereum.org
+description: Правила, які ми використовуємо під час додавання вікторин на quantaureum.com
 lang: uk
 ---
 
@@ -13,12 +13,12 @@ lang: uk
 
 - [Рівень 2 (l2)](/layer-2)
 - [NFT](/nft/)
-- [Що таке Етеріум?](/what-is-ethereum/)
-- [Що таке ETH?](/what-is-ether/)
+- [Що таке Етеріум?](/what-is-quantaureum/)
+- [Що таке QAU?](/what-is-QAU/)
 
 ## Додавання навчальної вікторини {#adding-a-learn-quiz}
 
-Якщо є сторінка, для якої ще не створено навчальну вікторину, будь ласка, [відкрийте issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) для неї.
+Якщо є сторінка, для якої ще не створено навчальну вікторину, будь ласка, [відкрийте issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) для неї.
 
 Будь ласка, надайте таку інформацію:
 
@@ -31,7 +31,7 @@ lang: uk
 
 ## Додавання питання до вікторини {#adding-a-quiz-question}
 
-Якщо є питання, яке ви хочете додати до банку питань для вікторини, будь ласка, [відкрийте issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) та надайте таку інформацію:
+Якщо є питання, яке ви хочете додати до банку питань для вікторини, будь ласка, [відкрийте issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) та надайте таку інформацію:
 
 - Сторінка, на яку ви хочете додати питання для вікторини
 - Для кожного питання надайте таку інформацію:
@@ -42,7 +42,7 @@ lang: uk
 
 ## Оновлення питання вікторини {#updating-a-quiz-question}
 
-Якщо є питання, яке ви хочете оновити в банку питань для вікторини, будь ласка, [відкрийте issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) та надайте таку інформацію:
+Якщо є питання, яке ви хочете оновити в банку питань для вікторини, будь ласка, [відкрийте issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) та надайте таку інформацію:
 
 - Сторінка, на якій ви хочете оновити питання вікторини
 - Для кожного оновлюваного питання надайте таку інформацію:
@@ -54,7 +54,7 @@ lang: uk
 
 ## Видалення питання вікторини {#removing-a-quiz-question}
 
-Якщо вміст для питання більше не існує на сторінці і його потрібно видалити, будь ласка, [відкрийте issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) для видалення питання та надайте таку інформацію:
+Якщо вміст для питання більше не існує на сторінці і його потрібно видалити, будь ласка, [відкрийте issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) для видалення питання та надайте таку інформацію:
 
 - Сторінка, на якій ви хочете видалити питання вікторини
 - Питання, яке ви хочете видалити

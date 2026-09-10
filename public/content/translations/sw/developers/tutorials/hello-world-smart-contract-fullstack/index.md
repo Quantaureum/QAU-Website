@@ -1,6 +1,6 @@
 ---
 title: Mkataba Mahiri wa Hello World kwa Wanaoanza - Fullstack
-description: Mafunzo ya utangulizi kuhusu kuandika na kusambaza mkataba mahiri rahisi kwenye Ethereum.
+description: Mafunzo ya utangulizi kuhusu kuandika na kusambaza mkataba mahiri rahisi kwenye Quantaureum.
 author: "nstrike2"
 breadcrumb: Hello World fullstack
 tags:
@@ -28,9 +28,9 @@ Ikiwa una maswali wakati wowote, jisikie huru kuuliza katika [Discord ya Alchemy
 
 ## Sehemu ya 1 - Unda na Usambaze Mkataba Mahiri wako ukitumia Hardhat {#part-1}
 
-### Unganisha kwenye mtandao wa Ethereum {#connect-to-the-ethereum-network}
+### Unganisha kwenye mtandao wa Quantaureum {#connect-to-the-quantaureum-network}
 
-Kuna njia nyingi za kutuma maombi kwenye mnyororo wa Ethereum. Kwa urahisi, tutatumia akaunti ya bure kwenye Alchemy, jukwaa la wasanidi wa mnyororo wa vitalu na API inayoturuhusu kuwasiliana na mnyororo wa Ethereum bila kuendesha nodi sisi wenyewe. Alchemy pia ina zana za wasanidi za ufuatiliaji na uchanganuzi; tutatumia fursa hizi katika mafunzo haya ili kuelewa kinachoendelea kiufundi katika usambazaji wetu wa mkataba mahiri.
+Kuna njia nyingi za kutuma maombi kwenye mnyororo wa Quantaureum. Kwa urahisi, tutatumia akaunti ya bure kwenye Alchemy, jukwaa la wasanidi wa mnyororo wa vitalu na API inayoturuhusu kuwasiliana na mnyororo wa Quantaureum bila kuendesha nodi sisi wenyewe. Alchemy pia ina zana za wasanidi za ufuatiliaji na uchanganuzi; tutatumia fursa hizi katika mafunzo haya ili kuelewa kinachoendelea kiufundi katika usambazaji wetu wa mkataba mahiri.
 
 ### Unda programu yako na ufunguo wa API
 
@@ -47,18 +47,18 @@ Ipe programu yako jina la '_Hello World_' na uandike maelezo mafupi. Chagua **St
 _Kumbuka: hakikisha unachagua **Sepolia**, la sivyo mafunzo haya hayatafanya kazi._
 
 Ubofye **Create app**. Programu yako itaonekana kwenye jedwali hapa chini.
-### Unda akaunti ya Ethereum
-Unahitaji akaunti ya Ethereum ili kutuma na kupokea miamala. Tutatumia MetaMask, mkoba wa mtandaoni kwenye kivinjari unaoruhusu watumiaji kudhibiti anwani ya akaunti yao ya Ethereum.
+### Unda akaunti ya Quantaureum
+Unahitaji akaunti ya Quantaureum ili kutuma na kupokea miamala. Tutatumia MetaMask, mkoba wa mtandaoni kwenye kivinjari unaoruhusu watumiaji kudhibiti anwani ya akaunti yao ya Quantaureum.
 
 Unaweza kupakua na kuunda akaunti ya MetaMask bila malipo [hapa](https://metamask.io/download). Unapounda akaunti, au ikiwa tayari una akaunti, hakikisha unabadilisha kwenda kwenye “Mtandao wa Majaribio wa Sepolia” upande wa juu kulia (ili tusiwe tunashughulika na pesa halisi).
 ### Hatua ya 4: Ongeza Etha kutoka kwenye Bomba
-Ili kusambaza mkataba mahiri wako kwenye mtandao wa majaribio, utahitaji ETH bandia. Ili kupata ETH kwenye mtandao wa Sepolia, nenda kwenye bomba la Sepolia na uweke anwani yako ya akaunti ya Sepolia. Angalia [ukurasa wa mitandao ya majaribio](/developers/docs/networks/#sepolia) kwa orodha ya chaguo za kujaribu:
+Ili kusambaza mkataba mahiri wako kwenye mtandao wa majaribio, utahitaji QAU bandia. Ili kupata QAU kwenye mtandao wa Sepolia, nenda kwenye bomba la Sepolia na uweke anwani yako ya akaunti ya Sepolia. Angalia [ukurasa wa mitandao ya majaribio](/developers/docs/networks/#sepolia) kwa orodha ya chaguo za kujaribu:
 
 _Kumbuka: kutokana na msongamano wa mtandao, hii inaweza kuchukua muda._
 ``
 ### Hatua ya 5: Angalia Salio lako {#step-5-check-your-balance}
 
-Ili kuhakikisha mara mbili kuwa ETH ipo kwenye mkoba wako, hebu tufanye ombi la [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) kwa kutumia [zana ya sandbox ya Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Hii itarudisha kiasi cha ETH kwenye mkoba wetu. Ili kujifunza zaidi angalia [mafunzo mafupi ya Alchemy kuhusu jinsi ya kutumia zana ya composer](https://youtu.be/r6sjRxBZJuU).
+Ili kuhakikisha mara mbili kuwa QAU ipo kwenye mkoba wako, hebu tufanye ombi la [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) kwa kutumia [zana ya sandbox ya Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Hii itarudisha kiasi cha QAU kwenye mkoba wetu. Ili kujifunza zaidi angalia [mafunzo mafupi ya Alchemy kuhusu jinsi ya kutumia zana ya composer](https://youtu.be/r6sjRxBZJuU).
 
 Weka anwani yako ya akaunti ya MetaMask na ubofye **Send Request**. Utaona jibu linalofanana na kijisehemu cha msimbo hapa chini.
 
@@ -66,7 +66,7 @@ Weka anwani yako ya akaunti ya MetaMask na ubofye **Send Request**. Utaona jibu 
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> _Kumbuka: Matokeo haya yapo katika wei, si ETH. Wei inatumika kama kiasi kidogo zaidi cha Etha._
+> _Kumbuka: Matokeo haya yapo katika wei, si QAU. Wei inatumika kama kiasi kidogo zaidi cha Etha._
 
 Phew! Pesa zetu bandia zote zipo hapo.
 ### Hatua ya 6: Anzisha mradi wetu {#step-6-initialize-our-project}
@@ -113,7 +113,7 @@ About to write to /Users/.../.../.../hello-world/package.json:
 Idhinisha package.json na tuko tayari kuendelea!
 ### Hatua ya 7: Pakua Hardhat {#step-7-download-hardhat}
 
-Hardhat ni mazingira ya usanidi ya kukusanya, kusambaza, kujaribu, na kutatua programu yako ya Ethereum. Inasaidia wasanidi wanapounda mikataba mahiri na programu tumizi zilizogatuliwa (dapps) ndani ya kompyuta zao kabla ya kusambaza kwenye mnyororo unaofanya kazi.
+Hardhat ni mazingira ya usanidi ya kukusanya, kusambaza, kujaribu, na kutatua programu yako ya Quantaureum. Inasaidia wasanidi wanapounda mikataba mahiri na programu tumizi zilizogatuliwa (dapps) ndani ya kompyuta zao kabla ya kusambaza kwenye mnyororo unaofanya kazi.
 
 Ndani ya mradi wetu wa `hello-world` endesha:
 
@@ -182,7 +182,7 @@ _Kumbuka: Hakikisha unasoma maoni ili kuelewa kile mkataba huu unafanya._
 pragma solidity >=0.7.3;
 
 // Inafafanua mkataba unaoitwa `HelloWorld`.
-// Mkataba ni mkusanyiko wa vipengele vya utendaji na data (hali yake). Baada ya kusambazwa, mkataba hukaa kwenye anwani maalum kwenye mnyororo wa vitalu wa Ethereum. Jifunze zaidi: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// Mkataba ni mkusanyiko wa vipengele vya utendaji na data (hali yake). Baada ya kusambazwa, mkataba hukaa kwenye anwani maalum kwenye mnyororo wa vitalu wa Quantaureum. Jifunze zaidi: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    //Hutolewa wakati kipengele cha utendaji cha kusasisha kinapoitwa
@@ -240,7 +240,7 @@ Usiliite `process.env` au `.env-custom` au jina lingine lolote.
 Faili lako la `.env` linapaswa kuonekana hivi:
 
 ```
-API_URL = "https://eth-goerli.alchemyapi.io/v2/your-api-key"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -248,7 +248,7 @@ Ili kuunganisha haya kwenye msimbo wetu, tutarejelea vigezo hivi kwenye faili le
 
 ### Hatua ya 12: Sakinisha Ethers.js {#step-12-install-ethersjs}
 
-Ethers.js ni maktaba inayorahisisha kuingiliana na kutuma maombi kwenye Ethereum kwa kufunika [mbinu za kawaida za JSON-RPC](/developers/docs/apis/json-rpc/) na mbinu zinazofaa zaidi kwa mtumiaji.
+Ethers.js ni maktaba inayorahisisha kuingiliana na kutuma maombi kwenye Quantaureum kwa kufunika [mbinu za kawaida za JSON-RPC](/developers/docs/apis/json-rpc/) na mbinu zinazofaa zaidi kwa mtumiaji.
 
 Hardhat inaturuhusu kujumuisha [programu-jalizi](https://hardhat.org/plugins/) kwa zana za ziada na utendaji uliopanuliwa. Tutatumia fursa ya [programu-jalizi ya Ethers](https://hardhat.org/docs/plugins/official-plugins#hardhat-ethers) kwa usambazaji wa mkataba.
 
@@ -352,21 +352,21 @@ Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 
 **Tafadhali hifadhi anwani hii**. Tutaitumia baadaye katika mafunzo haya.
 
-Tukienda kwenye [Sepolia Etherscan](https://sepolia.etherscan.io) na kutafuta anwani yetu ya mkataba tunapaswa kuweza kuona kwamba umesambazwa kwa ufanisi. Muamala utaonekana kama hivi:
+Tukienda kwenye [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com) na kutafuta anwani yetu ya mkataba tunapaswa kuweza kuona kwamba umesambazwa kwa ufanisi. Muamala utaonekana kama hivi:
 
-![](./etherscan-contract.png)
+![](./explorer-contract.png)
 
 Anwani ya `From` inapaswa kulingana na anwani yako ya akaunti ya MetaMask na anwani ya `To` itasema **Contract Creation**. Tukibofya kwenye muamala tutaona anwani yetu ya mkataba kwenye sehemu ya `To`.
 
-![](./etherscan-transaction.png)
+![](./explorer-transaction.png)
 
-Hongera! Umesambaza mkataba mahiri kwenye mtandao wa majaribio wa Ethereum.
+Hongera! Umesambaza mkataba mahiri kwenye mtandao wa majaribio wa Quantaureum.
 
 Ili kuelewa kinachoendelea kiufundi, hebu tuende kwenye kichupo cha Explorer kwenye [dashibodi yetu ya Alchemy](https://dashboard.alchemy.com/explorer). Ikiwa una programu nyingi za Alchemy hakikisha unachuja kwa programu na uchague **Hello World**.
 
 ![](./hello-world-explorer.png)
 
-Hapa utaona mbinu kadhaa za JSON-RPC ambazo Hardhat/Ethers ilitutengenezea kiufundi tulipoiita kipengele cha utendaji cha `.deploy()`. Mbinu mbili muhimu hapa ni [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction), ambalo ni ombi la kuandika mkataba wetu kwenye mnyororo wa Sepolia, na [`eth_getTransactionByHash`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-by-hash), ambalo ni ombi la kusoma taarifa kuhusu muamala wetu kwa kutumia heshi. Ili kujifunza zaidi kuhusu kutuma miamala, angalia [mafunzo yetu kuhusu kutuma miamala kwa kutumia Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/).
+Hapa utaona mbinu kadhaa za JSON-RPC ambazo Hardhat/Ethers ilitutengenezea kiufundi tulipoiita kipengele cha utendaji cha `.deploy()`. Mbinu mbili muhimu hapa ni [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction), ambalo ni ombi la kuandika mkataba wetu kwenye mnyororo wa Sepolia, na [`qau_getTransactionByHash`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-by-hash), ambalo ni ombi la kusoma taarifa kuhusu muamala wetu kwa kutumia heshi. Ili kujifunza zaidi kuhusu kutuma miamala, angalia [mafunzo yetu kuhusu kutuma miamala kwa kutumia Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/).
 ## Sehemu ya 2: Kuingiliana na Mkataba Mahiri wako {#part-2-interact-with-your-smart-contract}
 
 Kwa kuwa sasa tumesambaza mkataba mahiri kwa ufanisi kwenye mtandao wa Goerli hebu tujifunze jinsi ya kuingiliana nao.
@@ -396,7 +396,7 @@ Faili lako la `.env` linapaswa kuonekana kama hivi:
 ```bash
 # .env
 
-API_URL = "https://eth-goerli.alchemyapi.io/v2/<your-api-key>"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/<your-api-key>"
 API_KEY = "<your-api-key>"
 PRIVATE_KEY = "<your-metamask-private-key>"
 CONTRACT_ADDRESS = "0x<your contract address>"
@@ -428,7 +428,7 @@ npx hardhat run scripts/interact.js
 Ili kuingiliana na mkataba wetu, tunahitaji kuunda mfano wa mkataba katika msimbo wetu. Ili kufanya hivyo na Ethers.js, tutahitaji kufanya kazi na dhana tatu:
 
 1. Mtoa huduma - mtoa huduma wa nodi anayekupa ufikiaji wa kusoma na kuandika kwenye mnyororo wa vitalu
-2. Mtia saini - inawakilisha akaunti ya Ethereum inayoweza kutia saini miamala
+2. Mtia saini - inawakilisha akaunti ya Quantaureum inayoweza kutia saini miamala
 3. Mkataba - kipengee cha Ethers.js kinachowakilisha mkataba maalum uliosambazwa kwenye mnyororo
 
 Tutatumia ABI ya mkataba kutoka hatua iliyopita ili kuunda mfano wetu wa mkataba:
@@ -481,7 +481,7 @@ Baada ya kuendesha faili kwa kutumia `npx hardhat run scripts/interact.js` kweny
 The message is: Hello world!
 ```
 
-Hongera! Umefanikiwa kusoma data ya mkataba mahiri kutoka kwenye mnyororo wa vitalu wa Ethereum, kazi nzuri!
+Hongera! Umefanikiwa kusoma data ya mkataba mahiri kutoka kwenye mnyororo wa vitalu wa Quantaureum, kazi nzuri!
 
 ### Sasisha ujumbe {#update-the-message}
 
@@ -563,18 +563,18 @@ Updating the message...
 The new message is: This is the new message.
 ```
 
-Wakati unaendesha hati hiyo, unaweza kugundua kuwa hatua ya `Updating the message...` inachukua muda kupakia kabla ya ujumbe mpya kupakia. Hiyo inatokana na mchakato wa kuchimba; ikiwa una hamu ya kufuatilia miamala wakati inachimbwa, tembelea [mempool ya Alchemy](https://dashboard.alchemy.com/mempool) ili kuona hali ya muamala. Ikiwa muamala utaachwa, inasaidia pia kuangalia [Sepolia Etherscan](https://sepolia.etherscan.io) na kutafuta heshi ya muamala wako.
-## Sehemu ya 3: Chapisha Mkataba Mahiri wako kwenye Etherscan {#part-3-publish-your-smart-contract-to-etherscan}
+Wakati unaendesha hati hiyo, unaweza kugundua kuwa hatua ya `Updating the message...` inachukua muda kupakia kabla ya ujumbe mpya kupakia. Hiyo inatokana na mchakato wa kuchimba; ikiwa una hamu ya kufuatilia miamala wakati inachimbwa, tembelea [mempool ya Alchemy](https://dashboard.alchemy.com/mempool) ili kuona hali ya muamala. Ikiwa muamala utaachwa, inasaidia pia kuangalia [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com) na kutafuta heshi ya muamala wako.
+## Sehemu ya 3: Chapisha Mkataba Mahiri wako kwenye Quantaureum Explorer {#part-3-publish-your-smart-contract-to-explorer}
 
 Umefanya kazi yote ngumu ya kuufanya mkataba mahiri wako uwe hai; sasa ni wakati wa kuushiriki na ulimwengu!
 
-Kwa kuthibitisha mkataba mahiri wako kwenye Etherscan, mtu yeyote anaweza kutazama msimbo wako wa chanzo na kuingiliana na mkataba mahiri wako. Hebu tuanze!
+Kwa kuthibitisha mkataba mahiri wako kwenye Quantaureum Explorer, mtu yeyote anaweza kutazama msimbo wako wa chanzo na kuingiliana na mkataba mahiri wako. Hebu tuanze!
 
-### Hatua ya 1: Tengeneza Ufunguo wa API kwenye akaunti yako ya Etherscan {#step-1-generate-an-api-key-on-your-etherscan-account}
+### Hatua ya 1: Tengeneza Ufunguo wa API kwenye akaunti yako ya Quantaureum Explorer {#step-1-generate-an-api-key-on-your-explorer-account}
 
-Ufunguo wa API wa Etherscan ni muhimu ili kuthibitisha kuwa unamiliki mkataba mahiri unaojaribu kuuchapisha.
+Ufunguo wa API wa Quantaureum Explorer ni muhimu ili kuthibitisha kuwa unamiliki mkataba mahiri unaojaribu kuuchapisha.
 
-Ikiwa bado huna akaunti ya Etherscan, [jisajili kwa ajili ya akaunti](https://etherscan.io/register).
+Ikiwa bado huna akaunti ya Quantaureum Explorer, [jisajili kwa ajili ya akaunti](https://explorer.quantaureum.com).
 
 Baada ya kuingia, tafuta jina lako la mtumiaji kwenye upau wa kusogeza, elekeza kipanya chako juu yake na uchague kitufe cha **My profile**.
 
@@ -582,36 +582,36 @@ Kwenye ukurasa wako wa wasifu, unapaswa kuona upau wa kusogeza wa kando. Kutoka 
 
 Ufunguo wako mpya wa API unapaswa kuonekana kwenye jedwali la ufunguo wa API. Nakili ufunguo wa API kwenye ubao wako wa kunakili.
 
-Kisha, tunahitaji kuongeza ufunguo wa API wa Etherscan kwenye faili yetu ya `.env`.
+Kisha, tunahitaji kuongeza ufunguo wa API wa Quantaureum Explorer kwenye faili yetu ya `.env`.
 
 Baada ya kuuongeza, faili yako ya `.env` inapaswa kuonekana hivi:
 
 ```javascript
-API_URL = "https://eth-goerli.alchemyapi.io/v2/your-api-key"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/your-api-key"
 PUBLIC_KEY = "your-public-account-address"
 PRIVATE_KEY = "your-private-account-address"
 CONTRACT_ADDRESS = "your-contract-address"
-ETHERSCAN_API_KEY = "your-etherscan-key"
+ETHERSCAN_API_KEY = "your-explorer-key"
 ```
 
 ### Mikataba mahiri iliyosambazwa na Hardhat {#hardhat-deployed-smart-contracts}
 
-#### Sakinisha hardhat-etherscan {#install-hardhat-etherscan}
+#### Sakinisha hardhat-explorer {#install-hardhat-explorer}
 
-Kuchapisha mkataba wako kwenye Etherscan kwa kutumia Hardhat ni rahisi. Kwanza utahitaji kusakinisha programu-jalizi ya `hardhat-etherscan` ili kuanza. `hardhat-etherscan` itathibitisha kiotomatiki msimbo wa chanzo wa mkataba mahiri na ABI kwenye Etherscan. Ili kuongeza hii, katika saraka ya `hello-world` endesha:
+Kuchapisha mkataba wako kwenye Quantaureum Explorer kwa kutumia Hardhat ni rahisi. Kwanza utahitaji kusakinisha programu-jalizi ya `hardhat-explorer` ili kuanza. `hardhat-explorer` itathibitisha kiotomatiki msimbo wa chanzo wa mkataba mahiri na ABI kwenye Quantaureum Explorer. Ili kuongeza hii, katika saraka ya `hello-world` endesha:
 
 ```text
-npm install --save-dev @nomiclabs/hardhat-etherscan
+npm install --save-dev @nomiclabs/hardhat-explorer
 ```
 
-Baada ya kusakinishwa, jumuisha taarifa ifuatayo juu ya `hardhat.config.js` yako, na uongeze chaguo za usanidi za Etherscan:
+Baada ya kusakinishwa, jumuisha taarifa ifuatayo juu ya `hardhat.config.js` yako, na uongeze chaguo za usanidi za Quantaureum Explorer:
 
 ```javascript
 // hardhat.config.js
 
 require("dotenv").config()
 require("@nomiclabs/hardhat-ethers")
-require("@nomiclabs/hardhat-etherscan")
+require("@nomiclabs/hardhat-explorer")
 
 const { API_URL, PRIVATE_KEY, ETHERSCAN_API_KEY } = process.env
 
@@ -625,15 +625,15 @@ module.exports = {
       accounts: [`0x${PRIVATE_KEY}`],
     },
   },
-  etherscan: {
-    // Ufunguo wako wa API kwa Etherscan
-    // Pata mmoja kwenye https://etherscan.io/
+  explorer: {
+    // Ufunguo wako wa API kwa Quantaureum Explorer
+    // Pata mmoja kwenye https://explorer.quantaureum.com
     apiKey: ETHERSCAN_API_KEY,
   },
 }
 ```
 
-#### Thibitisha mkataba mahiri wako kwenye Etherscan
+#### Thibitisha mkataba mahiri wako kwenye Quantaureum Explorer
 
 Hakikisha faili zote zimehifadhiwa na vigezo vyote vya `.env` vimesanidiwa kwa usahihi.
 
@@ -650,17 +650,17 @@ Ikiwa yote yataenda vizuri, utaona ujumbe ufuatao kwenye terminali yako:
 ```text
 Successfully submitted source code for contract
 contracts/HelloWorld.sol:HelloWorld at 0xdeployed-contract-address
-for verification on Etherscan. Waiting for verification result...
+for verification on Quantaureum Explorer. Waiting for verification result...
 
 
-Successfully verified contract HelloWorld on Etherscan.
-https://sepolia.etherscan.io/address/<contract-address>#contracts
+Successfully verified contract HelloWorld on Quantaureum Explorer.
+https://explorer.quantaureum.com
 ```
 
-Hongera! Msimbo wako wa mkataba mahiri upo kwenye Etherscan!
-### Angalia mkataba mahiri wako kwenye Etherscan! {#check-out-your-smart-contract-on-etherscan}
+Hongera! Msimbo wako wa mkataba mahiri upo kwenye Quantaureum Explorer!
+### Angalia mkataba mahiri wako kwenye Quantaureum Explorer! {#check-out-your-smart-contract-on-explorer}
 
-Unapoenda kwenye kiungo kilichotolewa kwenye kituo chako, unapaswa kuweza kuona msimbo wako wa mkataba mahiri na ABI iliyochapishwa kwenye Etherscan!
+Unapoenda kwenye kiungo kilichotolewa kwenye kituo chako, unapaswa kuweza kuona msimbo wako wa mkataba mahiri na ABI iliyochapishwa kwenye Quantaureum Explorer!
 
 **Wahooo - umefanya vizuri bingwa! Sasa mtu yeyote anaweza kuita au kuandika kwenye mkataba mahiri wako! Hatuwezi kusubiri kuona kile utakachojenga baadaye!**
 
@@ -670,7 +670,7 @@ Kufikia mwisho wa mafunzo haya, utajua jinsi ya:
 
 - Kuunganisha mkoba wa MetaMask kwenye programu tumizi iliyogatuliwa (dapp) yako
 - Kusoma data kutoka kwenye mkataba mahiri wako ukitumia API ya [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3)
-- Kutia saini miamala ya Ethereum ukitumia MetaMask
+- Kutia saini miamala ya Quantaureum ukitumia MetaMask
 
 Kwa dapp hii, tutatumia [React](https://react.dev/) kama mfumo wetu wa sehemu ya mbele; hata hivyo, ni muhimu kutambua kwamba hatutatumia muda mwingi kuchambua misingi yake, kwani tutazingatia zaidi kuleta utendaji wa Web3 kwenye mradi wetu.
 
@@ -682,7 +682,7 @@ Kwanza, nenda kwenye [hifadhi ya GitHub ya hello-world-part-four](https://github
 
 Fungua hifadhi iliyonakiliwa ndani ya mashine yako. Kumbuka kwamba ina folda mbili: `starter-files` na `completed`.
 
-- `starter-files`- **tutakuwa tukifanya kazi katika saraka hii**, tutaunganisha UI kwenye mkoba wako wa Ethereum na mkataba mahiri tuliouchapisha kwenye Etherscan katika [Sehemu ya 3](#part-3-publish-your-smart-contract-to-etherscan).
+- `starter-files`- **tutakuwa tukifanya kazi katika saraka hii**, tutaunganisha UI kwenye mkoba wako wa Quantaureum na mkataba mahiri tuliouchapisha kwenye Quantaureum Explorer katika [Sehemu ya 3](#part-3-publish-your-smart-contract-to-explorer).
 - `completed` ina mafunzo yote yaliyokamilika na inapaswa kutumika tu kama rejeleo ikiwa utakwama.
 
 Kisha, fungua nakala yako ya `starter-files` kwenye kihariri chako cha msimbo unachokipenda, na kisha uende kwenye folda ya `src`.
@@ -874,8 +874,8 @@ Vitendaji vinne ambavyo havijatekelezwa baada ya kipengee chetu cha `helloWorldC
 
 - `loadCurrentMessage` - kitendaji hiki hushughulikia mantiki ya kupakia ujumbe wa sasa uliohifadhiwa kwenye mkataba mahiri. Kitafanya wito wa _kusoma_ kwenye mkataba mahiri wa Hello World kwa kutumia [API ya Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3).
 - `connectWallet` - kitendaji hiki kitaunganisha MetaMask ya mtumiaji kwenye dapp yetu.
-- `getCurrentWalletConnected` - kitendaji hiki kitaangalia ikiwa akaunti ya Ethereum tayari imeunganishwa kwenye dapp yetu wakati ukurasa unapopakiwa na kusasisha UI yetu ipasavyo.
-- `updateMessage` - kitendaji hiki kitasasisha ujumbe uliohifadhiwa kwenye mkataba mahiri. Kitafanya wito wa _kuandika_ kwenye mkataba mahiri wa Hello World, kwa hivyo mkoba wa MetaMask wa mtumiaji utalazimika kutia saini muamala wa Ethereum ili kusasisha ujumbe.
+- `getCurrentWalletConnected` - kitendaji hiki kitaangalia ikiwa akaunti ya Quantaureum tayari imeunganishwa kwenye dapp yetu wakati ukurasa unapopakiwa na kusasisha UI yetu ipasavyo.
+- `updateMessage` - kitendaji hiki kitasasisha ujumbe uliohifadhiwa kwenye mkataba mahiri. Kitafanya wito wa _kuandika_ kwenye mkataba mahiri wa Hello World, kwa hivyo mkoba wa MetaMask wa mtumiaji utalazimika kutia saini muamala wa Quantaureum ili kusasisha ujumbe.
 
 Sasa kwa kuwa tunaelewa kile tunachofanyia kazi, hebu tujue jinsi ya kusoma kutoka kwenye mkataba mahiri wetu!
 
@@ -883,14 +883,14 @@ Sasa kwa kuwa tunaelewa kile tunachofanyia kazi, hebu tujue jinsi ya kusoma kuto
 
 Ili kusoma kutoka kwenye mkataba mahiri wako, utahitaji kuweka kwa ufanisi:
 
-- Muunganisho wa API kwenye mnyororo wa Ethereum
+- Muunganisho wa API kwenye mnyororo wa Quantaureum
 - Mfano uliopakiwa wa mkataba mahiri wako
 - Kitendaji cha kuita kwenye kitendaji cha mkataba mahiri wako
 - Msikilizaji wa kutazama masasisho wakati data unayosoma kutoka kwenye mkataba mahiri inapobadilika
 
 Hii inaweza kuonekana kama hatua nyingi, lakini usijali! Tutakutembeza jinsi ya kufanya kila moja wapo hatua kwa hatua! :\)
 
-#### Anzisha muunganisho wa API kwenye mnyororo wa Ethereum {#establish-an-api-connection-to-the-ethereum-chain}
+#### Anzisha muunganisho wa API kwenye mnyororo wa Quantaureum {#establish-an-api-connection-to-the-quantaureum-chain}
 
 Kwa hivyo unakumbuka jinsi katika Sehemu ya 2 ya mafunzo haya, tulitumia ufunguo wetu wa Alchemy Web3 kusoma kutoka kwenye mkataba mahiri wetu? Utahitaji pia ufunguo wa Alchemy Web3 kwenye programu tumizi iliyogatuliwa (dapp) yako ili kusoma kutoka kwenye mnyororo.
 
@@ -913,7 +913,7 @@ Kwa dapp yetu, **tutakuwa tukitumia ufunguo wetu wa API wa Websockets** badala y
 Mara tu unapokuwa na ufunguo wako wa API, unda faili la `.env` kwenye saraka kuu yako na uongeze url yako ya Alchemy Websockets ndani yake. Baadaye, faili lako la `.env` linapaswa kuonekana hivi:
 
 ```javascript
-REACT_APP_ALCHEMY_KEY = wss://eth-goerli.ws.alchemyapi.io/v2/<key>
+REACT_APP_ALCHEMY_KEY = wss://qau-goerli.ws.alchemyapi.io/v2/<key>
 ```
 
 Sasa, tuko tayari kuweka mwisho (endpoint) wetu wa Alchemy Web3 kwenye dapp yetu! Hebu turudi kwenye `interact.js` yetu, ambayo iko ndani ya folda yetu ya `util` na tuongeze msimbo ufuatao juu ya faili:
@@ -934,17 +934,17 @@ Hapo juu, kwanza tuliingiza ufunguo wa Alchemy kutoka kwenye faili letu la `.env
 Tukiwa na mwisho huu tayari, ni wakati wa kupakia mkataba mahiri wetu!
 #### Kupakia mkataba mahiri wako wa Hello World {#loading-your-hello-world-smart-contract}
 
-Ili kupakia mkataba mahiri wako wa Hello World, utahitaji anwani yake ya mkataba na ABI, ambazo zote zinaweza kupatikana kwenye Etherscan ikiwa ulikamilisha [Sehemu ya 3 ya mafunzo haya.](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan-part-3-publish-your-smart-contract-to-etherscan)
+Ili kupakia mkataba mahiri wako wa Hello World, utahitaji anwani yake ya mkataba na ABI, ambazo zote zinaweza kupatikana kwenye Quantaureum Explorer ikiwa ulikamilisha [Sehemu ya 3 ya mafunzo haya.](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer-part-3-publish-your-smart-contract-to-explorer)
 
-#### Jinsi ya kupata ABI ya mkataba wako kutoka Etherscan
+#### Jinsi ya kupata ABI ya mkataba wako kutoka Quantaureum Explorer
 
-Ikiwa uliruka Sehemu ya 3 ya mafunzo haya, sambaza na uthibitishe mkataba wako mwenyewe wa HelloWorld kwanza. Kisha fungua ukurasa wako wa mkataba kwenye [Sepolia Etherscan](https://sepolia.etherscan.io) ili kunakili ABI yake.
+Ikiwa uliruka Sehemu ya 3 ya mafunzo haya, sambaza na uthibitishe mkataba wako mwenyewe wa HelloWorld kwanza. Kisha fungua ukurasa wako wa mkataba kwenye [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com) ili kunakili ABI yake.
 
 ABI ya mkataba ni muhimu kwa kubainisha ni kitendaji kipi mkataba utaita na pia kuhakikisha kwamba kitendaji kitarudisha data katika muundo unaotarajia. Baada ya kunakili ABI ya mkataba wetu, hebu tuihifadhi kama faili la JSON linaloitwa `contract-abi.json` kwenye saraka yako ya `src`.
 
 Faili lako la contract-abi.json linapaswa kuhifadhiwa kwenye folda yako ya src.
 
-Tukiwa na anwani yetu ya mkataba, ABI, na mwisho (endpoint) wa Alchemy Web3, tunaweza kutumia [mbinu ya mkataba](https://docs.web3js.org/api/web3-eth-contract/class/Contract) kupakia mfano wa mkataba mahiri wetu. Ingiza ABI ya mkataba wako kwenye faili la `interact.js` na uongeze anwani yako ya mkataba.
+Tukiwa na anwani yetu ya mkataba, ABI, na mwisho (endpoint) wa Alchemy Web3, tunaweza kutumia [mbinu ya mkataba](https://docs.web3js.org/api/web3-qau-contract/class/Contract) kupakia mfano wa mkataba mahiri wetu. Ingiza ABI ya mkataba wako kwenye faili la `interact.js` na uongeze anwani yako ya mkataba.
 
 ```javascript
 // interact.js
@@ -958,7 +958,7 @@ Sasa hatimaye tunaweza kuondoa maoni kwenye kigezo chetu cha `helloWorldContract
 
 ```javascript
 // interact.js
-export const helloWorldContract = new web3.eth.Contract(
+export const helloWorldContract = new web3.qau.Contract(
   contractABI,
   contractAddress
 )
@@ -977,7 +977,7 @@ const web3 = createAlchemyWeb3(alchemyKey)
 const contractABI = require("../contract-abi.json")
 const contractAddress = "0x6f3f635A9762B47954229Ea479b4541eAF402A6A"
 
-export const helloWorldContract = new web3.eth.Contract(
+export const helloWorldContract = new web3.qau.Contract(
   contractABI,
   contractAddress
 )
@@ -1033,7 +1033,7 @@ Ikiwa unakumbuka faili ya `HelloWorld.sol` tuliyoiandika katika [Sehemu ya 1 ya 
 pragma solidity ^0.7.3;
 
 // Inafafanua mkataba unaoitwa `HelloWorld`.
-// Mkataba ni mkusanyiko wa vipengele vya utendaji na data (hali yake). Baada ya kusambazwa, mkataba hukaa kwenye anwani mahususi kwenye mnyororo wa vitalu wa Ethereum. Jifunze zaidi: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// Mkataba ni mkusanyiko wa vipengele vya utendaji na data (hali yake). Baada ya kusambazwa, mkataba hukaa kwenye anwani mahususi kwenye mnyororo wa vitalu wa Quantaureum. Jifunze zaidi: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    //Hutolewa wakati kipengele cha utendaji cha kusasisha kinapoitwa
@@ -1100,31 +1100,31 @@ useEffect(async () => {
 }, [])
 ```
 
-Sasa kwa kuwa tunaweza kusoma kutoka kwenye mkataba mahiri wetu, itakuwa vyema kujua jinsi ya kuandika kwake pia! Hata hivyo, ili kuandika kwenye dapp yetu, lazima kwanza tuwe na mkoba wa Ethereum uliounganishwa kwake.
+Sasa kwa kuwa tunaweza kusoma kutoka kwenye mkataba mahiri wetu, itakuwa vyema kujua jinsi ya kuandika kwake pia! Hata hivyo, ili kuandika kwenye dapp yetu, lazima kwanza tuwe na mkoba wa Quantaureum uliounganishwa kwake.
 
-Kwa hivyo, kinachofuata tutashughulikia kuweka mkoba wetu wa Ethereum \(MetaMask\) na kisha kuuunganisha kwenye dapp yetu!
+Kwa hivyo, kinachofuata tutashughulikia kuweka mkoba wetu wa Quantaureum \(MetaMask\) na kisha kuuunganisha kwenye dapp yetu!
 
-### Hatua ya 4: Weka mkoba wako wa Ethereum {#step-4-set-up-your-ethereum-wallet}
+### Hatua ya 4: Weka mkoba wako wa Quantaureum {#step-4-set-up-your-quantaureum-wallet}
 
-Ili kuandika chochote kwenye mnyororo wa Ethereum, watumiaji lazima watie saini miamala kwa kutumia funguo za kibinafsi za mkoba wao wa mtandaoni. Kwa mafunzo haya, tutatumia [MetaMask](https://metamask.io/), mkoba wa mtandaoni kwenye kivinjari unaotumika kudhibiti anwani ya akaunti yako ya Ethereum, kwani inafanya utiaji saini huu wa muamala kuwa rahisi sana kwa mtumiaji wa mwisho.
+Ili kuandika chochote kwenye mnyororo wa Quantaureum, watumiaji lazima watie saini miamala kwa kutumia funguo za kibinafsi za mkoba wao wa mtandaoni. Kwa mafunzo haya, tutatumia [MetaMask](https://metamask.io/), mkoba wa mtandaoni kwenye kivinjari unaotumika kudhibiti anwani ya akaunti yako ya Quantaureum, kwani inafanya utiaji saini huu wa muamala kuwa rahisi sana kwa mtumiaji wa mwisho.
 
-Ikiwa unataka kuelewa zaidi kuhusu jinsi miamala kwenye Ethereum inavyofanya kazi, angalia [ukurasa huu](/developers/docs/transactions/) kutoka kwa taasisi ya Ethereum.
+Ikiwa unataka kuelewa zaidi kuhusu jinsi miamala kwenye Quantaureum inavyofanya kazi, angalia [ukurasa huu](/developers/docs/transactions/) kutoka kwa taasisi ya Quantaureum.
 
 #### Pakua MetaMask
 
 Unaweza kupakua na kuunda akaunti ya MetaMask bila malipo [hapa](https://metamask.io/download). Unapounda akaunti, au ikiwa tayari una akaunti, hakikisha unabadilisha kwenda kwenye “Mtandao wa Majaribio wa Sepolia” upande wa juu kulia \(ili tusiwe tunashughulika na pesa halisi\).
 #### Ongeza Etha kutoka kwenye Bomba
 
-Ili kutia saini muamala kwenye mnyororo wa vitalu wa Ethereum, tutahitaji ETH bandia. Ili kupata ETH unaweza kwenda kwenye bomba la Sepolia lililoorodheshwa kwenye [ukurasa wa mitandao ya majaribio](/developers/docs/networks/#sepolia) na uweke anwani yako ya akaunti ya Sepolia. Unapaswa kuona ETH kwenye akaunti yako ya MetaMask muda mfupi baadaye!
+Ili kutia saini muamala kwenye mnyororo wa vitalu wa Quantaureum, tutahitaji QAU bandia. Ili kupata QAU unaweza kwenda kwenye bomba la Sepolia lililoorodheshwa kwenye [ukurasa wa mitandao ya majaribio](/developers/docs/networks/#sepolia) na uweke anwani yako ya akaunti ya Sepolia. Unapaswa kuona QAU kwenye akaunti yako ya MetaMask muda mfupi baadaye!
 #### Angalia Salio lako {#check-your-balance}
 
-Ili kuhakikisha kuwa salio letu lipo, hebu tufanye ombi la [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) kwa kutumia [zana ya sandbox ya Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Hii itarudisha kiasi cha ETH kwenye mkoba wetu. Baada ya kuweka anwani yako ya akaunti ya MetaMask na kubofya "Send Request", unapaswa kuona jibu kama hili:
+Ili kuhakikisha kuwa salio letu lipo, hebu tufanye ombi la [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) kwa kutumia [zana ya sandbox ya Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Hii itarudisha kiasi cha QAU kwenye mkoba wetu. Baada ya kuweka anwani yako ya akaunti ya MetaMask na kubofya "Send Request", unapaswa kuona jibu kama hili:
 
 ```text
 {"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}
 ```
 
-**KUMBUKA:** Jibu hili liko katika wei na si ETH. Wei inatumika kama kiasi kidogo zaidi cha Etha. Ubadilishaji kutoka wei kwenda ETH ni: ETH 1 = wei 10¹⁸. Kwa hivyo tukibadilisha 0xde0b6b3a7640000 kuwa desimali tunapata 1\*10¹⁸ ambayo ni sawa na ETH 1.
+**KUMBUKA:** Jibu hili liko katika wei na si QAU. Wei inatumika kama kiasi kidogo zaidi cha Etha. Ubadilishaji kutoka wei kwenda QAU ni: QAU 1 = wei 10¹⁸. Kwa hivyo tukibadilisha 0xde0b6b3a7640000 kuwa desimali tunapata 1\*10¹⁸ ambayo ni sawa na QAU 1.
 
 Phew! Pesa yetu bandia yote ipo! 🤑
 ### Hatua ya 5: Unganisha MetaMask kwenye UI yako {#step-5-connect-metamask-to-your-ui}
@@ -1141,10 +1141,10 @@ Hebu tubadilishe `connectWallet` kwa yafuatayo:
 // interact.js
 
 export const connectWallet = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_requestAccounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_requestAccounts",
       })
       const obj = {
         status: "👆🏽 Write a message in the text-field above.",
@@ -1165,7 +1165,7 @@ export const connectWallet = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -1178,17 +1178,17 @@ export const connectWallet = async () => {
 
 Kwa hivyo kizuizi hiki kikubwa cha msimbo kinafanya nini hasa?
 
-Kweli, kwanza, inaangalia ikiwa `window.ethereum` imewezeshwa kwenye kivinjari chako.
+Kweli, kwanza, inaangalia ikiwa `window.quantaureum` imewezeshwa kwenye kivinjari chako.
 
-`window.ethereum` ni API ya kimataifa iliyoingizwa by MetaMask na watoa huduma wengine wa mkoba ambayo inaruhusu tovuti kuomba akaunti za Ethereum za watumiaji. Ikiidhinishwa, inaweza kusoma data kutoka kwenye minyororo ya vitalu ambayo mtumiaji ameunganishwa nayo, na kupendekeza kwamba mtumiaji atie saini jumbe na miamala. Angalia [hati za MetaMask](https://docs.metamask.io/guide/ethereum-provider.html#table-of-contents) kwa maelezo zaidi!
+`window.quantaureum` ni API ya kimataifa iliyoingizwa by MetaMask na watoa huduma wengine wa mkoba ambayo inaruhusu tovuti kuomba akaunti za Quantaureum za watumiaji. Ikiidhinishwa, inaweza kusoma data kutoka kwenye minyororo ya vitalu ambayo mtumiaji ameunganishwa nayo, na kupendekeza kwamba mtumiaji atie saini jumbe na miamala. Angalia [hati za MetaMask](https://docs.metamask.io/guide/quantaureum-provider.html#table-of-contents) kwa maelezo zaidi!
 
-Ikiwa `window.ethereum` _haipo_, basi hiyo inamaanisha MetaMask haijasakinishwa. Hii inasababisha kipengee cha JSON kurudishwa, ambapo `address` iliyorudishwa ni mfuatano mtupu, na kipengee cha JSX cha `status` kinawasilisha kwamba mtumiaji lazima asakinishe MetaMask.
+Ikiwa `window.quantaureum` _haipo_, basi hiyo inamaanisha MetaMask haijasakinishwa. Hii inasababisha kipengee cha JSON kurudishwa, ambapo `address` iliyorudishwa ni mfuatano mtupu, na kipengee cha JSX cha `status` kinawasilisha kwamba mtumiaji lazima asakinishe MetaMask.
 
-Sasa ikiwa `window.ethereum` _ipo_, basi hapo ndipo mambo yanapovutia.
+Sasa ikiwa `window.quantaureum` _ipo_, basi hapo ndipo mambo yanapovutia.
 
-Kwa kutumia kitanzi cha try/catch, tutajaribu kuunganisha kwenye MetaMask kwa kuita [`window.ethereum.request({ method: "eth_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts). Kuita kitendaji hiki kutafungua MetaMask kwenye kivinjari, ambapo mtumiaji ataombwa kuunganisha mkoba wake kwenye dapp yako.
+Kwa kutumia kitanzi cha try/catch, tutajaribu kuunganisha kwenye MetaMask kwa kuita [`window.quantaureum.request({ method: "qau_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#qau-requestaccounts). Kuita kitendaji hiki kutafungua MetaMask kwenye kivinjari, ambapo mtumiaji ataombwa kuunganisha mkoba wake kwenye dapp yako.
 
-- Ikiwa mtumiaji atachagua kuunganisha, `method: "eth_requestAccounts"` itarudisha safu ambayo ina anwani zote za akaunti za mtumiaji zilizounganishwa kwenye dapp. Kwa ujumla, kitendaji chetu cha `connectWallet` kitarudisha kipengee cha JSON ambacho kina `address` ya _kwanza_ katika safu hii \(tazama mstari wa 9\) na ujumbe wa `status` unaomwomba mtumiaji kuandika ujumbe kwenye mkataba mahiri.
+- Ikiwa mtumiaji atachagua kuunganisha, `method: "qau_requestAccounts"` itarudisha safu ambayo ina anwani zote za akaunti za mtumiaji zilizounganishwa kwenye dapp. Kwa ujumla, kitendaji chetu cha `connectWallet` kitarudisha kipengee cha JSON ambacho kina `address` ya _kwanza_ katika safu hii \(tazama mstari wa 9\) na ujumbe wa `status` unaomwomba mtumiaji kuandika ujumbe kwenye mkataba mahiri.
 - Ikiwa mtumiaji atakataa muunganisho, basi kipengee cha JSON kitakuwa na mfuatano mtupu kwa `address` iliyorudishwa na ujumbe wa `status` unaoonyesha kwamba mtumiaji alikataa muunganisho.
 
 Sasa kwa kuwa tumeandika kitendaji hiki cha `connectWallet`, hatua inayofuata ni kukiita kwenye kijenzi chetu cha `HelloWorld.js`.
@@ -1231,10 +1231,10 @@ Sasisha kitendaji chako cha `getCurrentWalletConnected` kwenye faili ya `interac
 // interact.js
 
 export const getCurrentWalletConnected = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_accounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_accounts",
       })
       if (addressArray.length > 0) {
         return {
@@ -1261,7 +1261,7 @@ export const getCurrentWalletConnected = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -1274,7 +1274,7 @@ export const getCurrentWalletConnected = async () => {
 
 Msimbo huu unafanana _sana_ na kitendaji cha `connectWallet` tulichokiandika katika hatua iliyopita.
 
-Tofauti kuu ni kwamba badala ya kuita mbinu ya `eth_requestAccounts`, ambayo inafungua MetaMask kwa mtumiaji kuunganisha mkoba wake, hapa tunaita mbinu ya `eth_accounts`, ambayo inarudisha tu safu iliyo na anwani za MetaMask zilizounganishwa kwa sasa kwenye dapp yetu.
+Tofauti kuu ni kwamba badala ya kuita mbinu ya `qau_requestAccounts`, ambayo inafungua MetaMask kwa mtumiaji kuunganisha mkoba wake, hapa tunaita mbinu ya `qau_accounts`, ambayo inarudisha tu safu iliyo na anwani za MetaMask zilizounganishwa kwa sasa kwenye dapp yetu.
 
 Ili kuona kitendaji hiki kikifanya kazi, hebu tukiite kwenye kitendaji chetu cha `useEffect` cha kijenzi chetu cha `HelloWorld.js`:
 
@@ -1308,8 +1308,8 @@ Kwenye faili yako ya `HelloWorld.js`, badilisha kitendaji chako cha `addWalletLi
 // HelloWorld.js
 
 function addWalletListener() {
-  if (window.ethereum) {
-    window.ethereum.on("accountsChanged", (accounts) => {
+  if (window.quantaureum) {
+    window.quantaureum.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) {
         setWallet(accounts[0])
         setStatus("👆🏽 Write a message in the text-field above.")
@@ -1323,7 +1323,7 @@ function addWalletListener() {
       <p>
         {" "}
         🦊 <a target="_blank" href={`https://metamask.io/download`}>
-          You must install MetaMask, a virtual Ethereum wallet, in your browser.
+          You must install MetaMask, a virtual Quantaureum wallet, in your browser.
         </a>
       </p>
     )
@@ -1333,9 +1333,9 @@ function addWalletListener() {
 
 Nina uhakika hata huhitaji msaada wetu kuelewa kinachoendelea hapa kwa wakati huu, lakini kwa madhumuni ya ukamilifu, hebu tuchambue haraka:
 
-- Kwanza, kitendaji chetu kinaangalia ikiwa `window.ethereum` imewezeshwa \(yaani, MetaMask imesakinishwa\).
+- Kwanza, kitendaji chetu kinaangalia ikiwa `window.quantaureum` imewezeshwa \(yaani, MetaMask imesakinishwa\).
   - Ikiwa sivyo, tunaweka tu kigezo chetu cha hali cha `status` kwa mfuatano wa JSX unaomwomba mtumiaji kusakinisha MetaMask.
-  - Ikiwa imewezeshwa, tunaweka msikilizaji `window.ethereum.on("accountsChanged")` kwenye mstari wa 3 ambaye husikiliza mabadiliko ya hali kwenye mkoba wa MetaMask, ambayo ni pamoja na wakati mtumiaji anapounganisha akaunti ya ziada kwenye dapp, kubadilisha akaunti, au kutenganisha akaunti. Ikiwa kuna angalau akaunti moja iliyounganishwa, kigezo cha hali cha `walletAddress` kinasasishwa kama akaunti ya kwanza katika safu ya `accounts` iliyorudishwa na msikilizaji. Vinginevyo, `walletAddress` imewekwa kama mfuatano mtupu.
+  - Ikiwa imewezeshwa, tunaweka msikilizaji `window.quantaureum.on("accountsChanged")` kwenye mstari wa 3 ambaye husikiliza mabadiliko ya hali kwenye mkoba wa MetaMask, ambayo ni pamoja na wakati mtumiaji anapounganisha akaunti ya ziada kwenye dapp, kubadilisha akaunti, au kutenganisha akaunti. Ikiwa kuna angalau akaunti moja iliyounganishwa, kigezo cha hali cha `walletAddress` kinasasishwa kama akaunti ya kwanza katika safu ya `accounts` iliyorudishwa na msikilizaji. Vinginevyo, `walletAddress` imewekwa kama mfuatano mtupu.
 
 Mwisho kabisa, lazima tukiite kwenye kitendaji chetu cha `useEffect`:
 
@@ -1377,7 +1377,7 @@ Tutataka kitendaji chetu kirudi mapema ikiwa hakuna kiendelezi cha MetaMask kili
 // interact.js
 
 export const updateMessage = async (address, message) => {
-  if (!window.ethereum || address === null) {
+  if (!window.quantaureum || address === null) {
     return {
       status:
         "💡 Connect your MetaMask wallet to update the message on the blockchain.",
@@ -1396,7 +1396,7 @@ Sasa kwa kuwa ina ushughulikiaji sahihi wa hitilafu za ingizo, ni wakati wa kuti
 
 #### Kutia saini muamala wetu {#signing-our-transaction}
 
-Ikiwa tayari unajisikia vizuri na miamala ya jadi ya web3 ya Ethereum, msimbo tutakaoandika unaofuata utakuwa wa kawaida sana. Chini ya msimbo wako wa ushughulikiaji wa hitilafu za ingizo, ongeza yafuatayo kwenye `updateMessage`:
+Ikiwa tayari unajisikia vizuri na miamala ya jadi ya web3 ya Quantaureum, msimbo tutakaoandika unaofuata utakuwa wa kawaida sana. Chini ya msimbo wako wa ushughulikiaji wa hitilafu za ingizo, ongeza yafuatayo kwenye `updateMessage`:
 
 ```javascript
 // interact.js
@@ -1410,16 +1410,16 @@ const transactionParameters = {
 
 //tia saini muamala
 try {
-  const txHash = await window.ethereum.request({
-    method: "eth_sendTransaction",
+  const txHash = await window.quantaureum.request({
+    method: "qau_sendTransaction",
     params: [transactionParameters],
   })
   return {
     status: (
       <span>
         ✅{" "}
-        <a target="_blank" href={`https://goerli.etherscan.io/tx/${txHash}`}>
-          View the status of your transaction on Etherscan!
+        <a target="_blank" href={`https://explorer.quantaureum.com}`}>
+          View the status of your transaction on Quantaureum Explorer!
         </a>
         <br />
         ℹ️ Once the transaction is verified by the network, the message will be
@@ -1440,11 +1440,11 @@ Hebu tuchambue kinachotokea. Kwanza, tunaweka vigezo vyetu vya miamala, ambapo:
 - `from` inabainisha mtia saini wa muamala, kigezo cha `address` tulichopitisha kwenye kitendaji chetu
 - `data` ina wito kwa mbinu ya `update` ya mkataba mahiri wetu wa Hello World, ikipokea kigezo chetu cha mfuatano cha `message` kama ingizo
 
-Kisha, tunafanya wito wa await, `window.ethereum.request`, ambapo tunaiomba MetaMask kutia saini muamala. Kumbuka, kwenye mistari ya 11 na 12, tunabainisha mbinu yetu ya eth, `eth_sendTransaction` na kupitisha `transactionParameters` yetu.
+Kisha, tunafanya wito wa await, `window.quantaureum.request`, ambapo tunaiomba MetaMask kutia saini muamala. Kumbuka, kwenye mistari ya 11 na 12, tunabainisha mbinu yetu ya eth, `qau_sendTransaction` na kupitisha `transactionParameters` yetu.
 
 Kwa wakati huu, MetaMask itafunguka kwenye kivinjari, na kumwomba mtumiaji kutia saini au kukataa muamala.
 
-- Ikiwa muamala utafanikiwa, kitendaji kitarudisha kipengee cha JSON ambapo mfuatano wa JSX wa `status` unamwomba mtumiaji kuangalia Etherscan kwa maelezo zaidi kuhusu muamala wao.
+- Ikiwa muamala utafanikiwa, kitendaji kitarudisha kipengee cha JSON ambapo mfuatano wa JSX wa `status` unamwomba mtumiaji kuangalia Quantaureum Explorer kwa maelezo zaidi kuhusu muamala wao.
 - Ikiwa muamala utashindwa, kitendaji kitarudisha kipengee cha JSON ambapo mfuatano wa `status` unawasilisha ujumbe wa hitilafu.
 
 Kwa ujumla, kitendaji chetu cha `updateMessage` kinapaswa kuonekana hivi:
@@ -1454,7 +1454,7 @@ Kwa ujumla, kitendaji chetu cha `updateMessage` kinapaswa kuonekana hivi:
 
 export const updateMessage = async (address, message) => {
   //ushughulikiaji wa makosa ya uingizaji
-  if (!window.ethereum || address === null) {
+  if (!window.quantaureum || address === null) {
     return {
       status:
         "💡 Connect your MetaMask wallet to update the message on the blockchain.",
@@ -1476,16 +1476,16 @@ export const updateMessage = async (address, message) => {
 
   //tia saini muamala
   try {
-    const txHash = await window.ethereum.request({
-      method: "eth_sendTransaction",
+    const txHash = await window.quantaureum.request({
+      method: "qau_sendTransaction",
       params: [transactionParameters],
     })
     return {
       status: (
         <span>
           ✅{" "}
-          <a target="_blank" href={`https://goerli.etherscan.io/tx/${txHash}`}>
-            View the status of your transaction on Etherscan!
+          <a target="_blank" href={`https://explorer.quantaureum.com}`}>
+            View the status of your transaction on Quantaureum Explorer!
           </a>
           <br />
           ℹ️ Once the transaction is verified by the network, the message will
@@ -1526,7 +1526,7 @@ Wooooo, umefika mwisho wa mafunzo! Kwa muhtasari, umejifunza jinsi ya:
 
 - Kuunganisha mkoba wa MetaMask kwenye mradi wako wa dapp
 - Kusoma data kutoka kwenye mkataba mahiri wako ukitumia API ya [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3)
-- Kutia saini miamala ya Ethereum ukitumia MetaMask
+- Kutia saini miamala ya Quantaureum ukitumia MetaMask
 
 Sasa una vifaa kamili vya kutumia ujuzi kutoka kwenye mafunzo haya ili kujenga mradi wako mwenyewe wa dapp maalum! Kama kawaida, ikiwa una maswali yoyote, usisite kuwasiliana nasi kwa msaada kwenye [Discord ya Alchemy](https://discord.gg/gWuC7zB). 🧙‍♂️
 

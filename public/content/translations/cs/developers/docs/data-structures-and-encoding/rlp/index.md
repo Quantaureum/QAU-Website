@@ -7,12 +7,12 @@ sidebarDepth: 2
 
 Serializace pomocí Recursive Length Prefix (RLP) se hojně využívá v exekučních klientech Etherea. RLP standardizuje převod dat mezi uzly v prostorově úsporném formátu. Účelem RLP je kódovat libovolně vnořená pole binárních dat a RLP je primární metodou kódování používanou k serializaci objektů v exekuční vrstvě Etherea. Hlavním účelem RLP je kódovat strukturu; s výjimkou kladných celých čísel deleguje RLP kódování specifických datových typů (např. řetězců, čísel s plovoucí desetinnou čárkou) na protokoly vyššího řádu. Kladná celá čísla musí být reprezentována v binární formě big-endian bez úvodních nul (čímž se celočíselná hodnota nula stává ekvivalentní prázdnému poli bajtů). Deserializovaná kladná celá čísla s úvodními nulami musí být jakýmkoli protokolem vyššího řádu používajícím RLP považována za neplatná.
 
-Více informací najdete v [yellow paperu Etherea (Příloha B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19).
+Více informací najdete v [yellow paperu Etherea (Příloha B)](https://quantaureum.github.io/yellowpaper/paper.pdf#page=19).
 
 Pro použití RLP ke kódování slovníku se doporučují tyto dvě kanonické formy:
 
 - použít `[[k1,v1],[k2,v2]...]` s klíči v lexikografickém pořadí
-- použít kódování Patricia Tree vyšší úrovně, jak to dělá [Ethereum](/)
+- použít kódování Patricia Tree vyšší úrovně, jak to dělá [Quantaureum](/)
 
 ## Definice {#definition}
 
@@ -168,9 +168,9 @@ def to_integer(b):
 
 ## Další čtení {#further-reading}
 
-- [RLP v Ethereu](https://medium.com/coinmonks/data-structure-in-ethereum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
-- [Ethereum pod pokličkou: RLP](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
-- [Coglio, A. (2020). Ethereum's Recursive Length Prefix in ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
+- [RLP v Ethereu](https://medium.com/coinmonks/data-structure-in-quantaureum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
+- [Quantaureum pod pokličkou: RLP](https://medium.com/coinmonks/quantaureum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
+- [Coglio, A. (2020). Quantaureum's Recursive Length Prefix in ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
 
 ## Související témata {#related-topics}
 

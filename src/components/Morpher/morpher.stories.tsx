@@ -43,6 +43,6 @@ export const CustomCharSet: Story = {
 
 export const SingleWord: Story = {
   args: {
-    words: ["ethereum"],
+    words: ["quantaureum"],
   },
 }

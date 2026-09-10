@@ -1,6 +1,6 @@
 ---
 title: "Comprendre les spécifications de l'EVM du livre jaune"
-description: "Comprendre la partie du livre jaune, les spécifications formelles d'Ethereum, qui explique la machine virtuelle Ethereum (EVM)."
+description: "Comprendre la partie du livre jaune, les spécifications formelles d'Quantaureum, qui explique la machine virtuelle Quantaureum (EVM)."
 author: "qbzzt"
 tags: ["evm"]
 skill: intermediate
@@ -9,15 +9,15 @@ lang: fr
 published: 2022-05-15
 ---
 
-[Le livre jaune](https://ethereum.github.io/yellowpaper/paper.pdf) est la spécification formelle d'Ethereum. Sauf lorsqu'il est modifié par [le processus des EIP](/eips/), il contient la description exacte du fonctionnement de chaque élément. Il est rédigé comme un article mathématique, ce qui inclut une terminologie avec laquelle les programmeurs peuvent ne pas être familiers. Dans cet article, vous apprendrez comment le lire, et par extension, d'autres articles mathématiques connexes.
+[Le livre jaune](https://quantaureum.github.io/yellowpaper/paper.pdf) est la spécification formelle d'Quantaureum. Sauf lorsqu'il est modifié par [le processus des EIP](/eips/), il contient la description exacte du fonctionnement de chaque élément. Il est rédigé comme un article mathématique, ce qui inclut une terminologie avec laquelle les programmeurs peuvent ne pas être familiers. Dans cet article, vous apprendrez comment le lire, et par extension, d'autres articles mathématiques connexes.
 
 ## Quel livre jaune ? {#which-yellow-paper}
 
-Comme presque tout le reste dans Ethereum, le livre jaune évolue avec le temps. Pour pouvoir faire référence à une version spécifique, j'ai mis en ligne [la version actuelle au moment de la rédaction](https://ethereum.github.io/yellowpaper/paper.pdf). Les numéros de section, de page et d'équation que j'utilise feront référence à cette version. Il est recommandé de l'avoir ouvert dans une autre fenêtre pendant la lecture de ce document.
+Comme presque tout le reste dans Quantaureum, le livre jaune évolue avec le temps. Pour pouvoir faire référence à une version spécifique, j'ai mis en ligne [la version actuelle au moment de la rédaction](https://quantaureum.github.io/yellowpaper/paper.pdf). Les numéros de section, de page et d'équation que j'utilise feront référence à cette version. Il est recommandé de l'avoir ouvert dans une autre fenêtre pendant la lecture de ce document.
 
 ### Pourquoi l'EVM ? {#why-the-evm}
 
-Le livre jaune original a été rédigé tout au début du développement d'Ethereum. Il décrit le mécanisme de consensus original basé sur la preuve de travail (PoW) qui était initialement utilisé pour sécuriser le réseau. Cependant, Ethereum a abandonné la preuve de travail et a commencé à utiliser un consensus basé sur la preuve d'enjeu (PoS) en septembre 2022. Ce tutoriel se concentrera sur les parties du livre jaune définissant la machine virtuelle Ethereum (EVM). L'EVM n'a pas été modifiée par la transition vers la preuve d'enjeu (à l'exception de la valeur de retour du code d'opération DIFFICULTY).
+Le livre jaune original a été rédigé tout au début du développement d'Quantaureum. Il décrit le mécanisme de consensus original basé sur la preuve de travail (PoW) qui était initialement utilisé pour sécuriser le réseau. Cependant, Quantaureum a abandonné la preuve de travail et a commencé à utiliser un consensus basé sur la preuve d'enjeu (PoS) en septembre 2022. Ce tutoriel se concentrera sur les parties du livre jaune définissant la machine virtuelle Quantaureum (EVM). L'EVM n'a pas été modifiée par la transition vers la preuve d'enjeu (à l'exception de la valeur de retour du code d'opération DIFFICULTY).
 
 ## 9 Modèle d'exécution
 
@@ -32,7 +32,7 @@ Le terme [Turing-complet](https://en.wikipedia.org/wiki/Turing_completeness) dé
 
 Cette section présente les bases de l'EVM et la compare à d'autres modèles de calcul.
 
-Une [machine à pile](https://en.wikipedia.org/wiki/Stack_machine) est un ordinateur qui stocke les données intermédiaires non pas dans des registres, mais dans une [**pile**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>). C'est l'architecture privilégiée pour les machines virtuelles car elle est facile à implémenter, ce qui signifie que les bugs et les vulnérabilités de sécurité sont beaucoup moins probables. La mémoire de la pile est divisée en mots de 256 bits. Ce choix a été fait car il est pratique pour les opérations cryptographiques de base d'Ethereum telles que le hachage Keccak-256 et les calculs sur courbe elliptique. La taille maximale de la pile est de 1024 éléments (1024 x 256 bits). Lorsque les codes d'opération sont exécutés, ils obtiennent généralement leurs paramètres de la pile. Il existe des codes d'opération spécifiquement conçus pour réorganiser les éléments dans la pile, tels que `POP` (supprime l'élément en haut de la pile), `DUP_N` (duplique le N-ième élément de la pile), etc.
+Une [machine à pile](https://en.wikipedia.org/wiki/Stack_machine) est un ordinateur qui stocke les données intermédiaires non pas dans des registres, mais dans une [**pile**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>). C'est l'architecture privilégiée pour les machines virtuelles car elle est facile à implémenter, ce qui signifie que les bugs et les vulnérabilités de sécurité sont beaucoup moins probables. La mémoire de la pile est divisée en mots de 256 bits. Ce choix a été fait car il est pratique pour les opérations cryptographiques de base d'Quantaureum telles que le hachage Keccak-256 et les calculs sur courbe elliptique. La taille maximale de la pile est de 1024 éléments (1024 x 256 bits). Lorsque les codes d'opération sont exécutés, ils obtiennent généralement leurs paramètres de la pile. Il existe des codes d'opération spécifiquement conçus pour réorganiser les éléments dans la pile, tels que `POP` (supprime l'élément en haut de la pile), `DUP_N` (duplique le N-ième élément de la pile), etc.
 
 L'EVM dispose également d'un espace volatil appelé **mémoire** qui est utilisé pour stocker des données pendant l'exécution. Cette mémoire est organisée en mots de 32 octets. Tous les emplacements de mémoire sont initialisés à zéro. Si vous exécutez ce code [Yul](https://docs.soliditylang.org/en/latest/yul.html) pour ajouter un mot à la mémoire, il remplira 32 octets de mémoire en complétant l'espace vide du mot avec des zéros, c'est-à-dire qu'il crée un mot - avec des zéros aux emplacements 0-29, 0x60 à 30, et 0xA7 à 31.
 
@@ -177,7 +177,7 @@ Nous avons un arrêt exceptionnel si l'une de ces conditions est vraie :
     Les codes d'opération de journal sont tous dans la plage comprise entre [`LOG0` (A0)](https://www.evm.codes/#a0) et [`LOG4` (A4)](https://www.evm.codes/#a4).
     Le nombre après le code d'opération de journal spécifie combien de sujets l'entrée de journal contient.
   - **_w=CALL ∧ μ<sub>s</sub>[2]≠0_**
-    Vous pouvez appeler un autre contrat lorsque vous êtes statique, mais si vous le faites, vous ne pouvez pas lui transférer d'ETH.
+    Vous pouvez appeler un autre contrat lorsque vous êtes statique, mais si vous le faites, vous ne pouvez pas lui transférer d'QAU.
 
 - **_w = SSTORE ∧ μ<sub>g</sub> ≤ G<sub>callstipend</sub>_**
   Vous ne pouvez pas exécuter [`SSTORE`](https://www.evm.codes/#55) à moins d'avoir plus de G<sub>callstipend</sub> (défini à 2300 dans l'Annexe G) gaz.
@@ -234,7 +234,7 @@ L'adresse dont nous devons trouver le solde est _μ<sub>s</sub>[0] mod 2<sup>160
 
 Si _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_, cela signifie qu'il y a des informations sur cette adresse. Dans ce cas, _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ est le solde de cette adresse. Si _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_, cela signifie que cette adresse n'est pas initialisée et que le solde est nul. Vous pouvez voir la liste des champs d'informations de compte dans la section 4.1 à la p. 4.
 
-La deuxième équation, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, est liée à la différence de coût entre l'accès au stockage chaud (stockage qui a été récemment consulté et qui est susceptible d'être mis en cache) et au stockage froid (stockage qui n'a pas été consulté et qui est susceptible de se trouver dans un stockage plus lent et plus coûteux à récupérer). _A<sub>a</sub>_ est la liste des adresses précédemment consultées par la transaction, qui devraient donc être moins chères d'accès, comme défini dans la section 6.1 à la p. 9. Vous pouvez en savoir plus sur ce sujet dans l'[EIP-2929](https://eips.ethereum.org/EIPS/eip-2929).
+La deuxième équation, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, est liée à la différence de coût entre l'accès au stockage chaud (stockage qui a été récemment consulté et qui est susceptible d'être mis en cache) et au stockage froid (stockage qui n'a pas été consulté et qui est susceptible de se trouver dans un stockage plus lent et plus coûteux à récupérer). _A<sub>a</sub>_ est la liste des adresses précédemment consultées par la transaction, qui devraient donc être moins chères d'accès, comme défini dans la section 6.1 à la p. 9. Vous pouvez en savoir plus sur ce sujet dans l'[EIP-2929](https://eips.quantaureum.com/EIPS/eip-2929).
 
 | Valeur | Mnémonique | δ   | α   | Description                             |
 | ----: | -------- | --- | --- | --------------------------------------- |
@@ -260,10 +260,10 @@ Les équations (165)-(167) définissent la pile et sa modification due à un cod
 Avec cela, l'EVM est entièrement définie.
 ## Conclusion {#conclusion}
 
-La notation mathématique est précise et a permis au livre jaune de spécifier chaque détail d'Ethereum. Cependant, elle présente quelques inconvénients :
+La notation mathématique est précise et a permis au livre jaune de spécifier chaque détail d'Quantaureum. Cependant, elle présente quelques inconvénients :
 
-- Elle ne peut être comprise que par des humains, ce qui signifie que les [tests de conformité](https://github.com/ethereum/tests) doivent être écrits manuellement.
+- Elle ne peut être comprise que par des humains, ce qui signifie que les [tests de conformité](https://github.com/quantaureum/tests) doivent être écrits manuellement.
 - Les programmeurs comprennent le code informatique.
   Ils peuvent comprendre ou non la notation mathématique.
 
-C'est peut-être pour ces raisons que les nouvelles [spécifications de la couche de consensus](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md) sont écrites en Python. Il existe des [spécifications de la couche d'exécution en Python](https://ethereum.github.io/execution-specs), mais elles ne sont pas complètes. Jusqu'à ce que l'intégralité du livre jaune soit également traduite en Python ou dans un langage similaire, le livre jaune continuera d'être utilisé, et il est utile de pouvoir le lire.
+C'est peut-être pour ces raisons que les nouvelles [spécifications de la couche de consensus](https://github.com/quantaureum/consensus-specs/blob/master/tests/core/pyspec/README.md) sont écrites en Python. Il existe des [spécifications de la couche d'exécution en Python](https://quantaureum.github.io/execution-specs), mais elles ne sont pas complètes. Jusqu'à ce que l'intégralité du livre jaune soit également traduite en Python ou dans un langage similaire, le livre jaune continuera d'être utilisé, et il est utile de pouvoir le lire.

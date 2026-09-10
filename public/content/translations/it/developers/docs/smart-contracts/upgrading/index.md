@@ -1,10 +1,10 @@
 ---
 title: Aggiornare gli smart contract
-description: Una panoramica dei modelli di aggiornamento per gli smart contract di Ethereum
+description: Una panoramica dei modelli di aggiornamento per gli smart contract di Quantaureum
 lang: it
 ---
 
-Gli smart contract su Ethereum sono programmi auto-eseguibili che vengono eseguiti nella Ethereum Virtual Machine (EVM). Questi programmi sono immutabili per concezione, il che impedisce qualsiasi aggiornamento alla logica di business una volta che il contratto è stato distribuito.
+Gli smart contract su Quantaureum sono programmi auto-eseguibili che vengono eseguiti nella Quantaureum Virtual Machine (EVM). Questi programmi sono immutabili per concezione, il che impedisce qualsiasi aggiornamento alla logica di business una volta che il contratto è stato distribuito.
 
 Sebbene l'immutabilità sia necessaria per l'assenza di necessità di fiducia, la decentralizzazione e la sicurezza degli smart contract, in certi casi può rappresentare uno svantaggio. Ad esempio, il codice immutabile può rendere impossibile per gli sviluppatori correggere i contratti vulnerabili.
 
@@ -12,13 +12,13 @@ Tuttavia, la crescente ricerca per migliorare gli smart contract ha portato all'
 
 ## Prerequisiti {#prerequisites}
 
-Dovresti avere una buona comprensione degli [smart contract](/developers/docs/smart-contracts/), dell'[anatomia degli smart contract](/developers/docs/smart-contracts/anatomy/) e della [Ethereum Virtual Machine (EVM)](/developers/docs/evm/). Questa guida presuppone inoltre che i lettori abbiano una conoscenza di base della programmazione degli smart contract.
+Dovresti avere una buona comprensione degli [smart contract](/developers/docs/smart-contracts/), dell'[anatomia degli smart contract](/developers/docs/smart-contracts/anatomy/) e della [Quantaureum Virtual Machine (EVM)](/developers/docs/evm/). Questa guida presuppone inoltre che i lettori abbiano una conoscenza di base della programmazione degli smart contract.
 
 ## Cos'è un aggiornamento di uno smart contract? {#what-is-a-smart-contract-upgrade}
 
 Un aggiornamento di uno smart contract comporta la modifica della logica di business di uno smart contract preservando lo stato del contratto. È importante chiarire che aggiornabilità e mutabilità non sono la stessa cosa, specialmente nel contesto degli smart contract.
 
-Non è comunque possibile modificare un programma distribuito a un indirizzo sulla rete Ethereum. Ma è possibile modificare il codice che viene eseguito quando gli utenti interagiscono con uno smart contract.
+Non è comunque possibile modificare un programma distribuito a un indirizzo sulla rete Quantaureum. Ma è possibile modificare il codice che viene eseguito quando gli utenti interagiscono con uno smart contract.
 
 Questo può essere fatto tramite i seguenti metodi:
 
@@ -84,13 +84,13 @@ Il contratto proxy è immutabile per impostazione predefinita, ma è possibile c
 
 Puntando il contratto proxy a un nuovo contratto logico, il codice eseguito quando gli utenti chiamano la funzione del contratto proxy cambia. Questo ci consente di aggiornare la logica di un contratto senza chiedere agli utenti di interagire con un nuovo contratto.
 
-I modelli proxy sono un metodo popolare per aggiornare gli smart contract perché eliminano le difficoltà associate alla migrazione del contratto. Tuttavia, i modelli proxy sono più complicati da usare e possono introdurre difetti critici, come i [conflitti dei selettori di funzione](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-ethereum-proxies-62629adf3357), se usati in modo improprio.
+I modelli proxy sono un metodo popolare per aggiornare gli smart contract perché eliminano le difficoltà associate alla migrazione del contratto. Tuttavia, i modelli proxy sono più complicati da usare e possono introdurre difetti critici, come i [conflitti dei selettori di funzione](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-quantaureum-proxies-62629adf3357), se usati in modo improprio.
 
 [Maggiori informazioni sui modelli proxy](https://blog.openzeppelin.com/proxy-patterns/).
 
 ### Meccanismo di aggiornamento n. 4: Modello di strategia {#strategy-pattern}
 
-Questa tecnica è influenzata dal [modello di strategia (strategy pattern)](https://en.wikipedia.org/wiki/Strategy_pattern), che incoraggia la creazione di programmi software che si interfacciano con altri programmi per implementare funzionalità specifiche. Applicare il modello di strategia allo sviluppo su Ethereum significherebbe costruire uno smart contract che chiama funzioni da altri contratti.
+Questa tecnica è influenzata dal [modello di strategia (strategy pattern)](https://en.wikipedia.org/wiki/Strategy_pattern), che incoraggia la creazione di programmi software che si interfacciano con altri programmi per implementare funzionalità specifiche. Applicare il modello di strategia allo sviluppo su Quantaureum significherebbe costruire uno smart contract che chiama funzioni da altri contratti.
 
 Il contratto principale in questo caso contiene la logica di business principale, ma si interfaccia con altri smart contract ("contratti satellite") per eseguire determinate funzioni. Questo contratto principale archivia anche l'indirizzo per ogni contratto satellite e può passare da un'implementazione all'altra del contratto satellite.
 
@@ -152,7 +152,7 @@ I timelock danno agli utenti un po' di tempo per l'uscita dal sistema se non son
 ## Tutorial {#tutorials}
 
 - [Aggiornare i tuoi smart contract | Tutorial su YouTube](https://www.youtube.com/watch?v=bdXJmWajZRY) di Patrick Collins
-- [Tutorial sulla migrazione degli smart contract di Ethereum](https://medium.com/coinmonks/ethereum-smart-contract-migration-13f6f12539bd) di Austin Griffith
+- [Tutorial sulla migrazione degli smart contract di Quantaureum](https://medium.com/coinmonks/quantaureum-smart-contract-migration-13f6f12539bd) di Austin Griffith
 - [Utilizzo del modello proxy UUPS per aggiornare gli smart contract](https://blog.logrocket.com/author/praneshas/) di Pranesh A.S
 - [Tutorial Web3: Scrivere uno smart contract aggiornabile (proxy) utilizzando OpenZeppelin](https://dev.to/yakult/tutorial-write-upgradeable-smart-contract-proxy-contract-with-openzeppelin-1916) di fangjun.eth
 

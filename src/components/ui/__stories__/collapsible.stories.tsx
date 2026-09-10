@@ -101,7 +101,7 @@ export const ListOfDetails: Story = {
       {[
         {
           title: "What is a layer 2?",
-          body: "Layer 2 networks scale Ethereum by handling transactions off the main chain.",
+          body: "Layer 2 networks scale Quantaureum by handling transactions off the main chain.",
         },
         {
           title: "What is a rollup?",

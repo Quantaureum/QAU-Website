@@ -8,12 +8,12 @@
 - id: docs-nav-foundational-topics
   path: /developers/docs/
   items:
-    - id: docs-nav-intro-to-ethereum
-      href: /developers/docs/intro-to-ethereum/
-      description: docs-nav-intro-to-ethereum-description
-    - id: docs-nav-intro-to-ether
-      href: /developers/docs/intro-to-ether/
-      description: docs-nav-intro-to-ether-description
+    - id: docs-nav-intro-to-quantaureum
+      href: /developers/docs/intro-to-quantaureum/
+      description: docs-nav-intro-to-quantaureum-description
+    - id: docs-nav-intro-to-QAU
+      href: /developers/docs/intro-to-QAU/
+      description: docs-nav-intro-to-QAU-description
     - id: docs-nav-intro-to-dapps
       href: /developers/docs/dapps/
       description: docs-nav-intro-to-dapps-description
@@ -101,11 +101,11 @@
                       href: /developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash/
         - id: docs-nav-proof-of-authority
           href: /developers/docs/consensus-mechanisms/poa/
-- id: docs-nav-ethereum-stack
+- id: docs-nav-quantaureum-stack
   path: /developers/docs/
   items:
     - id: docs-nav-intro-to-the-stack
-      href: /developers/docs/ethereum-stack/
+      href: /developers/docs/quantaureum-stack/
       description: docs-nav-intro-to-the-stack-description
     - id: docs-nav-smart-contracts
       href: /developers/docs/smart-contracts/
@@ -145,8 +145,8 @@
     - id: docs-nav-development-frameworks
       href: /developers/docs/frameworks/
       description: docs-nav-development-frameworks-description
-    - id: docs-nav-ethereum-client-apis
-      description: docs-nav-ethereum-client-apis-description
+    - id: docs-nav-quantaureum-client-apis
+      description: docs-nav-quantaureum-client-apis-description
       items:
         - id: docs-nav-java-script-apis
           href: /developers/docs/apis/javascript/
@@ -155,7 +155,7 @@
         - id: docs-nav-json-rpc
           href: /developers/docs/apis/json-rpc/
     - id: docs-nav-authentication
-      href: /developers/docs/ethereum-stack/authentication/
+      href: /developers/docs/quantaureum-stack/authentication/
       description: docs-nav-authentication-description
     - id: docs-nav-data-and-analytics
       href: /developers/docs/data-and-analytics/

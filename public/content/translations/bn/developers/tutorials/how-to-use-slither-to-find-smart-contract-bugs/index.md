@@ -37,11 +37,11 @@ pip3 install --user slither-analyzer
 Docker-এর মাধ্যমে স্লিদার:
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/trufflecon trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/trufflecon trailofbits/qau-security-toolbox
 ```
 
-_শেষ কমান্ডটি একটি Docker-এ eth-security-toolbox চালায় যার আপনার বর্তমান ডিরেক্টরিতে অ্যাক্সেস রয়েছে। আপনি আপনার হোস্ট থেকে ফাইলগুলো পরিবর্তন করতে পারেন এবং Docker থেকে ফাইলগুলোর উপর টুলগুলো চালাতে পারেন_
+_শেষ কমান্ডটি একটি Docker-এ qau-security-toolbox চালায় যার আপনার বর্তমান ডিরেক্টরিতে অ্যাক্সেস রয়েছে। আপনি আপনার হোস্ট থেকে ফাইলগুলো পরিবর্তন করতে পারেন এবং Docker থেকে ফাইলগুলোর উপর টুলগুলো চালাতে পারেন_
 
 Docker-এর ভিতরে, রান করুন:
 

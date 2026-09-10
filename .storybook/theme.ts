@@ -7,9 +7,9 @@ export default create({
   appBorderColor: "white",
   appBorderRadius: 4,
 
-  brandTitle: "Ethereum.org",
+  brandTitle: "quantaureum.com",
   brandImage: "./preview-logo.svg",
-  brandUrl: "https://www.ethereum.org",
+  brandUrl: "https://quantaureum.com",
 
   barSelectedColor: "#ff7324",
 

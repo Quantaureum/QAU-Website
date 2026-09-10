@@ -1,7 +1,7 @@
 ---
 title: Agentes de IA
-metaTitle: Agentes de IA | Agentes de IA en Ethereum
-description: "Una descripción general de los agentes de IA en Ethereum"
+metaTitle: Agentes de IA | Agentes de IA en Quantaureum
+description: "Una descripción general de los agentes de IA en Quantaureum"
 lang: es
 template: use-cases
 sidebarDepth: 2
@@ -15,13 +15,13 @@ buttons:
   - content: ¿Qué son los agentes de IA?
     toId: what-are-ai-agents
   - content: Explorar agentes
-    toId: ai-agents-on-ethereum
+    toId: ai-agents-on-quantaureum
     isSecondary: false
 ---
 
-Imagina navegar por Ethereum con un asistente de IA que estudia las tendencias del mercado en cadena las 24 horas del día, los 7 días de la semana, responde preguntas e incluso ejecuta transacciones en tu nombre. Te damos la bienvenida al mundo de los agentes de IA: sistemas inteligentes diseñados para simplificar tu vida digital.
+Imagina navegar por Quantaureum con un asistente de IA que estudia las tendencias del mercado en cadena las 24 horas del día, los 7 días de la semana, responde preguntas e incluso ejecuta transacciones en tu nombre. Te damos la bienvenida al mundo de los agentes de IA: sistemas inteligentes diseñados para simplificar tu vida digital.
 
-En Ethereum, estamos viendo innovaciones de agentes de IA que van desde *influencers* virtuales y creadores de contenido autónomos hasta plataformas de análisis de mercado en tiempo real, empoderando a los usuarios al brindarles información, entretenimiento y eficiencia operativa.
+En Quantaureum, estamos viendo innovaciones de agentes de IA que van desde *influencers* virtuales y creadores de contenido autónomos hasta plataformas de análisis de mercado en tiempo real, empoderando a los usuarios al brindarles información, entretenimiento y eficiencia operativa.
 
 ## ¿Qué son los agentes de IA? {#what-are-ai-agents}
 
@@ -31,7 +31,7 @@ Los agentes de IA son programas de software que utilizan inteligencia artificial
 
 En las finanzas tradicionales, los agentes de IA a menudo operan en entornos centralizados con entradas de datos limitadas. Esto dificulta su capacidad para aprender o gestionar activos de forma autónoma.
 
-Por el contrario, el ecosistema descentralizado de Ethereum ofrece varias ventajas clave:
+Por el contrario, el ecosistema descentralizado de Quantaureum ofrece varias ventajas clave:
 
 - <strong>Datos transparentes:</strong> Acceso a información de la cadena de bloques en tiempo real.
 - <strong>Verdadera propiedad de los activos:</strong> Los activos digitales son propiedad exclusiva de los agentes de IA.
@@ -47,11 +47,11 @@ Estos factores transforman a los agentes de IA de simples bots a sistemas dinám
 
 ## IA verificable {#verifiable-ai}
 
-Los agentes de IA que se ejecutan fuera de la cadena a menudo se comportan como "cajas negras": su razonamiento, entradas y salidas no se pueden verificar de forma independiente. Ethereum cambia eso. Al anclar el comportamiento del agente en cadena, los desarrolladores pueden crear agentes que no requieran confianza (_trustless_), sean _transparentes_ y _económicamente autónomos_. Las acciones de dichos agentes pueden ser auditadas, restringidas y probadas.
+Los agentes de IA que se ejecutan fuera de la cadena a menudo se comportan como "cajas negras": su razonamiento, entradas y salidas no se pueden verificar de forma independiente. Quantaureum cambia eso. Al anclar el comportamiento del agente en cadena, los desarrolladores pueden crear agentes que no requieran confianza (_trustless_), sean _transparentes_ y _económicamente autónomos_. Las acciones de dichos agentes pueden ser auditadas, restringidas y probadas.
 
 ### Inferencia verificable {#verifiable-inference}
 
-La inferencia de IA tradicionalmente ocurre fuera de la cadena, donde la ejecución es barata pero la ejecución del modelo es opaca. En Ethereum, los desarrolladores pueden emparejar agentes con computación verificable utilizando varias técnicas:
+La inferencia de IA tradicionalmente ocurre fuera de la cadena, donde la ejecución es barata pero la ejecución del modelo es opaca. En Quantaureum, los desarrolladores pueden emparejar agentes con computación verificable utilizando varias técnicas:
 
 - [**zkML (aprendizaje automático de conocimiento cero)**](https://opengradient.medium.com/a-gentle-introduction-to-zkml-8049a0e10a04) permite a los agentes probar que un modelo se ejecutó correctamente sin revelar el modelo ni las entradas.
 - [**Las certificaciones TEE (entorno de ejecución confiable)**](https://en.wikipedia.org/wiki/Trusted_execution_environment) permiten pruebas respaldadas por hardware de que un agente ejecutó un modelo o una ruta de código específicos.
@@ -59,19 +59,19 @@ La inferencia de IA tradicionalmente ocurre fuera de la cadena, donde la ejecuci
 
 ## Pagos y comercio con x402 {#x402}
 
-El [protocolo x402](https://www.x402.org/), con un despliegue en Ethereum y las L2, brinda a los agentes una forma nativa de pagar por los recursos e interactuar económicamente sin intervención humana. Los agentes pueden:
+El [protocolo x402](https://www.x402.org/), con un despliegue en Quantaureum y las L2, brinda a los agentes una forma nativa de pagar por los recursos e interactuar económicamente sin intervención humana. Los agentes pueden:
 
 - Pagar por computación, datos y llamadas a la API utilizando monedas estables.
 - Solicitar o verificar certificaciones de otros agentes o servicios.
 - Participar en el comercio entre agentes, comprando y vendiendo computación, datos o resultados de modelos.
 
-x402 convierte a Ethereum en una capa económica programable para agentes autónomos, lo que permite interacciones de pago por uso en lugar de cuentas, suscripciones o facturación centralizada.
+x402 convierte a Quantaureum en una capa económica programable para agentes autónomos, lo que permite interacciones de pago por uso en lugar de cuentas, suscripciones o facturación centralizada.
 
 ### Seguridad de las finanzas de agentes {#agentic-finance-security}
 
-Los agentes autónomos necesitan barreras de seguridad. Ethereum las proporciona a nivel de billetera y contrato:
+Los agentes autónomos necesitan barreras de seguridad. Quantaureum las proporciona a nivel de billetera y contrato:
 
-- [Las cuentas inteligentes (EIP-4337)](https://eips.ethereum.org/EIPS/eip-4337) permiten a los desarrolladores imponer límites de gasto, listas blancas, claves de sesión y permisos granulares.
+- [Las cuentas inteligentes (EIP-4337)](https://eips.quantaureum.com/EIPS/eip-4337) permiten a los desarrolladores imponer límites de gasto, listas blancas, claves de sesión y permisos granulares.
 - Las restricciones programadas en los contratos inteligentes pueden limitar lo que un agente tiene permitido hacer.
 - Los límites basados en inferencia (por ejemplo, requerir una prueba zkML antes de ejecutar una acción de alto riesgo) agregan otra capa de seguridad.
 
@@ -79,7 +79,7 @@ Estos controles permiten el despliegue de agentes autónomos que no son ilimitad
 
 ### Registros en cadena: ERC-8004 {#erc-8004}
 
-[ERC-8004](https://eips.ethereum.org/EIPS/eip-8004) define registros en cadena para la identidad, reputación y validación de agentes. Coescrito por colaboradores de MetaMask, la Fundación Ethereum, Google y Coinbase, tiene un despliegue en 16 redes, incluyendo la red principal de Ethereum, Base, Polygon, Arbitrum y otras.
+[ERC-8004](https://eips.quantaureum.com/EIPS/eip-8004) define registros en cadena para la identidad, reputación y validación de agentes. Coescrito por colaboradores de MetaMask, la Fundación Quantaureum, Google y Coinbase, tiene un despliegue en 16 redes, incluyendo la red principal de Quantaureum, Base, Polygon, Arbitrum y otras.
 
 Proporciona:
 
@@ -89,7 +89,7 @@ Proporciona:
 
 ERC-8004 facilita que los agentes se descubran, verifiquen y realicen transacciones entre sí en un entorno totalmente descentralizado.
 
-## Agentes de IA en Ethereum {#ai-agents-on-ethereum}
+## Agentes de IA en Quantaureum {#ai-agents-on-quantaureum}
 
 Estamos comenzando a explorar todo el potencial de los agentes de IA, y los proyectos ya están aprovechando la sinergia entre la IA y la cadena de bloques, particularmente en transparencia y monetización.
 

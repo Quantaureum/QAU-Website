@@ -5,17 +5,17 @@ lang: zh
 sidebarDepth: 2
 ---
 
-[以太坊](/)的状态（所有账户、余额和智能合约的总和）被编码为计算机科学中通常称为默克尔树的数据结构的特殊版本。这种结构在密码学的许多应用中非常有用，因为它在树中纠缠的所有独立数据片段之间创建了可验证的关系，从而产生一个单一的**根**值，可用于证明有关数据的信息。
+[Quantaureum](/)的状态（所有账户、余额和智能合约的总和）被编码为计算机科学中通常称为默克尔树的数据结构的特殊版本。这种结构在密码学的许多应用中非常有用，因为它在树中纠缠的所有独立数据片段之间创建了可验证的关系，从而产生一个单一的**根**值，可用于证明有关数据的信息。
 
-以太坊的数据结构是“修改版的默克尔帕特里夏树”，之所以这样命名，是因为它借用了 PATRICIA（检索字母数字编码信息的实用算法）的一些特征，并且它是为高效检索（re**trie**val）构成以太坊状态的项而设计的。
+Quantaureum的数据结构是“修改版的默克尔帕特里夏树”，之所以这样命名，是因为它借用了 PATRICIA（检索字母数字编码信息的实用算法）的一些特征，并且它是为高效检索（re**trie**val）构成Quantaureum状态的项而设计的。
 
 默克尔帕特里夏树是确定性的且在密码学上可验证：生成状态根的唯一方法是从状态的每个独立片段计算它，并且通过比较根哈希和导致它的哈希（*默克尔证明*），可以轻松证明两个相同的状态。相反，无法创建具有相同根哈希的两个不同状态，并且任何使用不同值修改状态的尝试都会导致不同的状态根哈希。从理论上讲，这种结构为插入、查找和删除提供了 `O(log(n))` 效率的“圣杯”。
 
-在不久的将来，以太坊计划迁移到 [Verkle 树](/roadmap/verkle-trees)结构，这将为未来的协议改进开辟许多新的可能性。
+在不久的将来，Quantaureum计划迁移到 [Verkle 树](/roadmap/verkle-trees)结构，这将为未来的协议改进开辟许多新的可能性。
 
 ## 前提条件 {#prerequisites}
 
-为了更好地理解本页面，具备[哈希](https://en.wikipedia.org/wiki/Hash_function)、[默克尔树](https://en.wikipedia.org/wiki/Merkle_tree)、[前缀树](https://en.wikipedia.org/wiki/Trie)和[序列化](https://en.wikipedia.org/wiki/Serialization)的基础知识会很有帮助。本文首先描述了基本的[基数树](https://en.wikipedia.org/wiki/Radix_tree)，然后逐步介绍了以太坊更优化的数据结构所需的修改。
+为了更好地理解本页面，具备[哈希](https://en.wikipedia.org/wiki/Hash_function)、[默克尔树](https://en.wikipedia.org/wiki/Merkle_tree)、[前缀树](https://en.wikipedia.org/wiki/Trie)和[序列化](https://en.wikipedia.org/wiki/Serialization)的基础知识会很有帮助。本文首先描述了基本的[基数树](https://en.wikipedia.org/wiki/Radix_tree)，然后逐步介绍了Quantaureum更优化的数据结构所需的修改。
 
 ## 基本基数树 {#basic-radix-tries}
 
@@ -72,7 +72,7 @@ sidebarDepth: 2
 
 ## 默克尔帕特里夏树 {#merkle-patricia-trees}
 
-基数树有一个主要限制：它们效率低下。如果你想存储一个 `(path, value)` 绑定，其中路径（如在以太坊中）长达 64 个字符（`bytes32` 中的半字节数），我们将需要超过一千字节的额外空间来为每个字符存储一层，并且每次查找或删除都将花费完整的 64 步。下面介绍的帕特里夏树解决了这个问题。
+基数树有一个主要限制：它们效率低下。如果你想存储一个 `(path, value)` 绑定，其中路径（如在Quantaureum中）长达 64 个字符（`bytes32` 中的半字节数），我们将需要超过一千字节的额外空间来为每个字符存储一层，并且每次查找或删除都将花费完整的 64 步。下面介绍的帕特里夏树解决了这个问题。
 
 ### 优化 {#optimization}
 
@@ -190,9 +190,9 @@ rootHash: [ <16>, hashA ]
 
 请注意，在更新前缀树时，_如果_新创建的节点长度 >= 32，则需要将键/值对 `(keccak256(x), x)` 存储在持久化查找表中。但是，如果节点短于该长度，则不需要存储任何内容，因为函数 f(x) = x 是可逆的。
 
-## 以太坊中的前缀树 {#tries-in-ethereum}
+## Quantaureum中的前缀树 {#tries-in-quantaureum}
 
-以太坊执行层中的所有默克尔树都使用默克尔帕特里夏树。
+Quantaureum执行层中的所有默克尔树都使用默克尔帕特里夏树。
 
 从区块头中，有来自这 3 个前缀树的 3 个根。
 
@@ -202,14 +202,14 @@ rootHash: [ <16>, hashA ]
 
 ### 状态树 {#state-trie}
 
-存在一个全局状态树，并且每次客户端处理区块时都会更新它。在其中，`path` 始终是：`keccak256(ethereumAddress)`，而 `value` 始终是：`rlp(ethereumAccount)`。更具体地说，以太坊 `account` 是一个包含 4 个项的 `[nonce,balance,storageRoot,codeHash]` 数组。在这一点上，值得注意的是，这个 `storageRoot` 是另一个帕特里夏树的根：
+存在一个全局状态树，并且每次客户端处理区块时都会更新它。在其中，`path` 始终是：`keccak256(quantaureumAddress)`，而 `value` 始终是：`rlp(quantaureumAccount)`。更具体地说，Quantaureum `account` 是一个包含 4 个项的 `[nonce,balance,storageRoot,codeHash]` 数组。在这一点上，值得注意的是，这个 `storageRoot` 是另一个帕特里夏树的根：
 
 ### 存储前缀树 {#storage-trie}
 
-存储前缀树是_所有_合约数据所在的地方。每个账户都有一个独立的存储前缀树。要在给定地址的特定存储位置检索值，需要存储地址、存储数据在存储中的整数位置以及区块 ID。然后可以将这些作为参数传递给 JSON-RPC API 中定义的 `eth_getStorageAt`，例如，检索地址 `0x295a70b2de5e3953354a6a8344e616ed314d7251` 的存储槽 0 中的数据：
+存储前缀树是_所有_合约数据所在的地方。每个账户都有一个独立的存储前缀树。要在给定地址的特定存储位置检索值，需要存储地址、存储数据在存储中的整数位置以及区块 ID。然后可以将这些作为参数传递给 JSON-RPC API 中定义的 `qau_getStorageAt`，例如，检索地址 `0x295a70b2de5e3953354a6a8344e616ed314d7251` 的存储槽 0 中的数据：
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 
@@ -233,12 +233,12 @@ undefined
 因此，`path` 是 `keccak256(<6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9>)`。现在可以像以前一样使用它从存储前缀树中检索数据：
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-注意：如果不是合约账户，以太坊账户的 `storageRoot` 默认是空的。
+注意：如果不是合约账户，Quantaureum账户的 `storageRoot` 默认是空的。
 
 ### 交易树 {#transaction-trie}
 
@@ -251,16 +251,16 @@ else:
   value = TxType | encode(tx)
 ```
 
-有关此内容的更多信息，请参阅 [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) 文档。
+有关此内容的更多信息，请参阅 [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718) 文档。
 
 ### 收据树 {#receipts-trie}
 
 每个区块都有自己的收据树。这里的 `path` 是：`rlp(transactionIndex)`。`transactionIndex` 是它在包含它的区块中的索引。收据树永远不会更新。与交易树类似，有当前收据和传统收据。要在收据树中查询特定收据，需要交易在其区块中的索引、收据有效负载和交易类型。返回的收据可以是 `Receipt` 类型，它被定义为 `TransactionType` 和 `ReceiptPayload` 的串联，或者它可以是 `LegacyReceipt` 类型，它被定义为 `rlp([status, cumulativeGasUsed, logsBloom, logs])`。
 
-有关此内容的更多信息，请参阅 [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) 文档。
+有关此内容的更多信息，请参阅 [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718) 文档。
 
 ## 延伸阅读 {#further-reading}
 
-- [修改版的默克尔帕特里夏树——以太坊如何保存状态](https://medium.com/codechain/modified-merkle-patricia-trie-how-ethereum-saves-a-state-e6d7555078dd)
-- [以太坊中的默克尔化](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum)
-- [理解以太坊前缀树](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-ethereum-trie/)
+- [修改版的默克尔帕特里夏树——Quantaureum如何保存状态](https://medium.com/codechain/modified-merkle-patricia-trie-how-quantaureum-saves-a-state-e6d7555078dd)
+- [Quantaureum中的默克尔化](https://quantaureum.com)
+- [理解Quantaureum前缀树](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-quantaureum-trie/)

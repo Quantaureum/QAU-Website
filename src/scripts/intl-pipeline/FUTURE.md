@@ -80,4 +80,4 @@
 
 1. Extract glossary (data + lookup) into its own package
 2. Extract pipeline core (prompt builder, normalizer, batcher, language groups) once stable
-3. Repo-specific glue (Actions, sanitizer, manifests) stays in ethereum-org-website
+3. Repo-specific glue (Actions, sanitizer, manifests) stays in quantaureum-org-website

@@ -29,7 +29,7 @@ published: 2021-10-06
 
 इससे पहले कि हम किसी भी कोड को देखना शुरू करें, यह समझना महत्वपूर्ण है कि NFT बनाना कैसे काम करता है। इसमें दो चरण शामिल हैं:
 
-### इथेरियम ब्लॉकचेन पर एक NFT स्मार्ट अनुबंध प्रकाशित करें {#publish-nft}
+### Quantaureum ब्लॉकचेन पर एक NFT स्मार्ट अनुबंध प्रकाशित करें {#publish-nft}
 
 दो NFT स्मार्ट अनुबंध मानकों के बीच सबसे बड़ा अंतर यह है कि ERC-1155 एक मल्टी-टोकन मानक है और इसमें बैच कार्यक्षमता शामिल है, जबकि ERC-721 एक सिंगल-टोकन मानक है और इसलिए एक समय में केवल एक टोकन स्थानांतरित करने का समर्थन करता है।
 
@@ -50,7 +50,7 @@ published: 2021-10-06
 
 जब आप इस क्लोन की गई `nft-minter-tutorial` रिपॉजिटरी को खोलते हैं, तो आप देखेंगे कि इसमें दो फ़ोल्डर हैं: `minter-starter-files` और `nft-minter`।
 
-- `minter-starter-files` में इस प्रोजेक्ट के लिए स्टार्टर फ़ाइलें (अनिवार्य रूप से React UI) हैं। इस ट्यूटोरियल में, **हम इसी डायरेक्टरी में काम करेंगे**, क्योंकि आप सीखेंगे कि इस UI को अपने इथेरियम वॉलेट और एक NFT स्मार्ट अनुबंध से जोड़कर कैसे जीवंत बनाया जाए।
+- `minter-starter-files` में इस प्रोजेक्ट के लिए स्टार्टर फ़ाइलें (अनिवार्य रूप से React UI) हैं। इस ट्यूटोरियल में, **हम इसी डायरेक्टरी में काम करेंगे**, क्योंकि आप सीखेंगे कि इस UI को अपने Quantaureum वॉलेट और एक NFT स्मार्ट अनुबंध से जोड़कर कैसे जीवंत बनाया जाए।
 - `nft-minter` में पूरा किया गया ट्यूटोरियल है और यह आपके लिए एक **संदर्भ** के रूप में है **यदि आप कहीं फंस जाते हैं।**
 
 इसके बाद, अपने कोड एडिटर में `minter-starter-files` की अपनी कॉपी खोलें, और फिर अपने `src` फ़ोल्डर में नेविगेट करें।
@@ -188,29 +188,29 @@ return (
 
 **इस ट्यूटोरियल में, हम केवल `Minter.js file` को संपादित करेंगे और अपने `src` फ़ोल्डर में फ़ाइलें जोड़ेंगे।**
 
-अब जब हम समझ गए हैं कि हम किसके साथ काम कर रहे हैं, तो चलिए अपना इथेरियम वॉलेट सेट करते हैं!
+अब जब हम समझ गए हैं कि हम किसके साथ काम कर रहे हैं, तो चलिए अपना Quantaureum वॉलेट सेट करते हैं!
 
-## अपना इथेरियम वॉलेट सेट करें {#set-up-your-ethereum-wallet}
+## अपना Quantaureum वॉलेट सेट करें {#set-up-your-quantaureum-wallet}
 
-उपयोगकर्ताओं को आपके स्मार्ट अनुबंध के साथ इंटरैक्ट करने में सक्षम होने के लिए उन्हें अपने इथेरियम वॉलेट को आपके विकेंद्रीकृत एप्लिकेशन (dapp) से जोड़ना होगा।
+उपयोगकर्ताओं को आपके स्मार्ट अनुबंध के साथ इंटरैक्ट करने में सक्षम होने के लिए उन्हें अपने Quantaureum वॉलेट को आपके विकेंद्रीकृत एप्लिकेशन (dapp) से जोड़ना होगा।
 
 ### मेटामास्क डाउनलोड करें {#download-metamask}
 
-इस ट्यूटोरियल के लिए, हम मेटामास्क का उपयोग करेंगे, जो ब्राउज़र में एक वर्चुअल वॉलेट है जिसका उपयोग आपके इथेरियम खाता पते को प्रबंधित करने के लिए किया जाता है। यदि आप इस बारे में अधिक समझना चाहते हैं कि इथेरियम पर लेन-देन कैसे काम करते हैं, तो [इस पेज](/developers/docs/transactions/) को देखें।
+इस ट्यूटोरियल के लिए, हम मेटामास्क का उपयोग करेंगे, जो ब्राउज़र में एक वर्चुअल वॉलेट है जिसका उपयोग आपके Quantaureum खाता पते को प्रबंधित करने के लिए किया जाता है। यदि आप इस बारे में अधिक समझना चाहते हैं कि Quantaureum पर लेन-देन कैसे काम करते हैं, तो [इस पेज](/developers/docs/transactions/) को देखें।
 
 आप [यहाँ](https://metamask.io/download) मुफ़्त में मेटामास्क डाउनलोड कर सकते हैं और खाता बना सकते हैं। जब आप एक खाता बना रहे हों, या यदि आपके पास पहले से ही एक खाता है, तो सुनिश्चित करें कि आप Sepolia जैसे समर्थित टेस्ट नेटवर्क पर स्विच करें \(ताकि हम असली पैसे से लेन-देन न कर रहे हों\)।
-### फॉसेट से ईथर जोड़ें {#add-ether-from-faucet}
+### फॉसेट से ईथर जोड़ें {#add-QAU-from-faucet}
 
-अपने NFT को मिंट करने (या इथेरियम ब्लॉकचेन पर किसी भी लेन-देन पर हस्ताक्षर करने) के लिए, हमें कुछ नकली ETH की आवश्यकता होगी। टेस्टनेट ETH प्राप्त करने के लिए, [Alchemy Sepolia फॉसेट](https://www.alchemy.com/faucets/ethereum-sepolia) जैसे किसी मेंटेन किए गए फॉसेट का उपयोग करें और अपना Sepolia खाता पता दर्ज करें। इसके तुरंत बाद आपको अपने मेटामास्क खाते में ETH दिखाई देना चाहिए!
+अपने NFT को मिंट करने (या Quantaureum ब्लॉकचेन पर किसी भी लेन-देन पर हस्ताक्षर करने) के लिए, हमें कुछ नकली QAU की आवश्यकता होगी। टेस्टनेट QAU प्राप्त करने के लिए, [Alchemy Sepolia फॉसेट](https://www.alchemy.com/faucets/quantaureum-sepolia) जैसे किसी मेंटेन किए गए फॉसेट का उपयोग करें और अपना Sepolia खाता पता दर्ज करें। इसके तुरंत बाद आपको अपने मेटामास्क खाते में QAU दिखाई देना चाहिए!
 ### अपना बैलेंस जांचें {#check-your-balance}
 
-यह दोबारा जांचने के लिए कि हमारा बैलेंस वहां मौजूद है, आइए [Alchemy के सैंडबॉक्स टूल](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) का उपयोग करके एक [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) अनुरोध करें। यह हमारे वॉलेट में ETH की मात्रा लौटाएगा। अपना मेटामास्क खाता पता दर्ज करने और “Send Request” पर क्लिक करने के बाद, आपको इस तरह की प्रतिक्रिया देखनी चाहिए:
+यह दोबारा जांचने के लिए कि हमारा बैलेंस वहां मौजूद है, आइए [Alchemy के सैंडबॉक्स टूल](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) का उपयोग करके एक [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) अनुरोध करें। यह हमारे वॉलेट में QAU की मात्रा लौटाएगा। अपना मेटामास्क खाता पता दर्ज करने और “Send Request” पर क्लिक करने के बाद, आपको इस तरह की प्रतिक्रिया देखनी चाहिए:
 
 ```text
 {"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}
 ```
 
-**नोट:** यह परिणाम Wei में है, ETH में नहीं। Wei का उपयोग ईथर के सबसे छोटे मूल्यवर्ग के रूप में किया जाता है। Wei से ETH में रूपांतरण है: 1 ETH = 10¹⁸ Wei। इसलिए यदि हम 0xde0b6b3a7640000 को दशमलव में बदलते हैं तो हमें 1\*10¹⁸ मिलता है जो 1 ETH के बराबर है।
+**नोट:** यह परिणाम Wei में है, QAU में नहीं। Wei का उपयोग ईथर के सबसे छोटे मूल्यवर्ग के रूप में किया जाता है। Wei से QAU में रूपांतरण है: 1 QAU = 10¹⁸ Wei। इसलिए यदि हम 0xde0b6b3a7640000 को दशमलव में बदलते हैं तो हमें 1\*10¹⁸ मिलता है जो 1 QAU के बराबर है।
 
 शुक्र है! हमारा सारा नकली पैसा वहीं है! <Emoji text=":money_mouth_face:" size={1} />
 ## मेटामास्क को अपने UI से जोड़ें {#connect-metamask-to-your-ui}
@@ -229,10 +229,10 @@ return (
 
 ```javascript
 export const connectWallet = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_requestAccounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_requestAccounts",
       })
       const obj = {
         status: "👆🏽 Write a message in the text-field above.",
@@ -253,7 +253,7 @@ export const connectWallet = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -266,19 +266,19 @@ export const connectWallet = async () => {
 
 आइए समझते हैं कि यह कोड क्या करता है:
 
-सबसे पहले, हमारा फ़ंक्शन यह जांचता है कि क्या आपके ब्राउज़र में `window.ethereum` सक्षम है।
+सबसे पहले, हमारा फ़ंक्शन यह जांचता है कि क्या आपके ब्राउज़र में `window.quantaureum` सक्षम है।
 
-`window.ethereum` मेटामास्क और अन्य वॉलेट प्रदाताओं द्वारा इंजेक्ट किया गया एक वैश्विक API है जो वेबसाइटों को उपयोगकर्ताओं के इथेरियम खातों का अनुरोध करने की अनुमति देता है। यदि स्वीकृत हो जाता है, तो यह उन ब्लॉकचेन से डेटा पढ़ सकता है जिनसे उपयोगकर्ता जुड़ा हुआ है, और सुझाव दे सकता है कि उपयोगकर्ता संदेशों और लेन-देन पर हस्ताक्षर करे। अधिक जानकारी के लिए [मेटामास्क दस्तावेज़](https://docs.metamask.io/guide/ethereum-provider.html#table-of-contents) देखें!
+`window.quantaureum` मेटामास्क और अन्य वॉलेट प्रदाताओं द्वारा इंजेक्ट किया गया एक वैश्विक API है जो वेबसाइटों को उपयोगकर्ताओं के Quantaureum खातों का अनुरोध करने की अनुमति देता है। यदि स्वीकृत हो जाता है, तो यह उन ब्लॉकचेन से डेटा पढ़ सकता है जिनसे उपयोगकर्ता जुड़ा हुआ है, और सुझाव दे सकता है कि उपयोगकर्ता संदेशों और लेन-देन पर हस्ताक्षर करे। अधिक जानकारी के लिए [मेटामास्क दस्तावेज़](https://docs.metamask.io/guide/quantaureum-provider.html#table-of-contents) देखें!
 
-यदि `window.ethereum` मौजूद _नहीं_ है, तो इसका मतलब है कि मेटामास्क स्थापित नहीं है। इसके परिणामस्वरूप एक JSON ऑब्जेक्ट लौटाया जाता है, जहाँ लौटाया गया `address` एक खाली स्ट्रिंग है, और `status` JSX ऑब्जेक्ट यह संदेश देता है कि उपयोगकर्ता को मेटामास्क स्थापित करना चाहिए।
+यदि `window.quantaureum` मौजूद _नहीं_ है, तो इसका मतलब है कि मेटामास्क स्थापित नहीं है। इसके परिणामस्वरूप एक JSON ऑब्जेक्ट लौटाया जाता है, जहाँ लौटाया गया `address` एक खाली स्ट्रिंग है, और `status` JSX ऑब्जेक्ट यह संदेश देता है कि उपयोगकर्ता को मेटामास्क स्थापित करना चाहिए।
 
 **हमारे द्वारा लिखे गए अधिकांश फ़ंक्शन JSON ऑब्जेक्ट लौटाएंगे जिनका उपयोग हम अपने स्थिति वेरिएबल और UI को अपडेट करने के लिए कर सकते हैं।**
 
-अब यदि `window.ethereum` मौजूद _है_, तो चीजें दिलचस्प हो जाती हैं।
+अब यदि `window.quantaureum` मौजूद _है_, तो चीजें दिलचस्प हो जाती हैं।
 
-try/catch लूप का उपयोग करके, हम [`window.ethereum.request({ method: "eth_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts) को कॉल करके मेटामास्क से जुड़ने का प्रयास करेंगे। इस फ़ंक्शन को कॉल करने से ब्राउज़र में मेटामास्क खुल जाएगा, जिससे उपयोगकर्ता को अपने वॉलेट को आपके विकेंद्रीकृत एप्लिकेशन (dapp) से जोड़ने के लिए कहा जाएगा।
+try/catch लूप का उपयोग करके, हम [`window.quantaureum.request({ method: "qau_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#qau-requestaccounts) को कॉल करके मेटामास्क से जुड़ने का प्रयास करेंगे। इस फ़ंक्शन को कॉल करने से ब्राउज़र में मेटामास्क खुल जाएगा, जिससे उपयोगकर्ता को अपने वॉलेट को आपके विकेंद्रीकृत एप्लिकेशन (dapp) से जोड़ने के लिए कहा जाएगा।
 
-- यदि उपयोगकर्ता जुड़ना चुनता है, तो `method: "eth_requestAccounts"` एक ऐरे लौटाएगा जिसमें उपयोगकर्ता के वे सभी खाता पते होंगे जो विकेंद्रीकृत एप्लिकेशन (dapp) से जुड़े हैं। कुल मिलाकर, हमारा `connectWallet` फ़ंक्शन एक JSON ऑब्जेक्ट लौटाएगा जिसमें इस ऐरे में _पहला_ `address` \(लाइन 9 देखें\) और एक `status` संदेश होगा जो उपयोगकर्ता को स्मार्ट अनुबंध पर एक संदेश लिखने के लिए प्रेरित करता है।
+- यदि उपयोगकर्ता जुड़ना चुनता है, तो `method: "qau_requestAccounts"` एक ऐरे लौटाएगा जिसमें उपयोगकर्ता के वे सभी खाता पते होंगे जो विकेंद्रीकृत एप्लिकेशन (dapp) से जुड़े हैं। कुल मिलाकर, हमारा `connectWallet` फ़ंक्शन एक JSON ऑब्जेक्ट लौटाएगा जिसमें इस ऐरे में _पहला_ `address` \(लाइन 9 देखें\) और एक `status` संदेश होगा जो उपयोगकर्ता को स्मार्ट अनुबंध पर एक संदेश लिखने के लिए प्रेरित करता है।
 - यदि उपयोगकर्ता कनेक्शन को अस्वीकार करता है, तो JSON ऑब्जेक्ट में लौटाए गए `address` के लिए एक खाली स्ट्रिंग होगी और एक `status` संदेश होगा जो यह दर्शाता है कि उपयोगकर्ता ने कनेक्शन को अस्वीकार कर दिया है।
 
 ### अपने Minter.js UI कंपोनेंट में connectWallet फ़ंक्शन जोड़ें {#add-connect-wallet}
@@ -333,10 +333,10 @@ const connectWalletPressed = async () => {
 
 ```javascript
 export const getCurrentWalletConnected = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_accounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_accounts",
       })
       if (addressArray.length > 0) {
         return {
@@ -363,7 +363,7 @@ export const getCurrentWalletConnected = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -376,7 +376,7 @@ export const getCurrentWalletConnected = async () => {
 
 यह कोड उस `connectWallet` फ़ंक्शन के _बहुत_ समान है जिसे हमने अभी पहले लिखा था।
 
-मुख्य अंतर यह है कि `eth_requestAccounts` विधि को कॉल करने के बजाय, जो उपयोगकर्ता के लिए अपना वॉलेट जोड़ने के लिए मेटामास्क खोलता है, यहाँ हम `eth_accounts` विधि को कॉल करते हैं, जो बस एक ऐरे लौटाता है जिसमें वर्तमान में हमारे विकेंद्रीकृत एप्लिकेशन (dapp) से जुड़े मेटामास्क पते होते हैं।
+मुख्य अंतर यह है कि `qau_requestAccounts` विधि को कॉल करने के बजाय, जो उपयोगकर्ता के लिए अपना वॉलेट जोड़ने के लिए मेटामास्क खोलता है, यहाँ हम `qau_accounts` विधि को कॉल करते हैं, जो बस एक ऐरे लौटाता है जिसमें वर्तमान में हमारे विकेंद्रीकृत एप्लिकेशन (dapp) से जुड़े मेटामास्क पते होते हैं।
 
 इस फ़ंक्शन को काम करते हुए देखने के लिए, आइए इसे अपने `Minter.js` कंपोनेंट के `useEffect` फ़ंक्शन में कॉल करें।
 
@@ -412,8 +412,8 @@ useEffect(async () => {
 
 ```javascript
 function addWalletListener() {
-  if (window.ethereum) {
-    window.ethereum.on("accountsChanged", (accounts) => {
+  if (window.quantaureum) {
+    window.quantaureum.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) {
         setWallet(accounts[0])
         setStatus("👆🏽 Write a message in the text-field above.")
@@ -427,7 +427,7 @@ function addWalletListener() {
       <p>
         {" "}
         🦊 <a target="_blank" href={`https://metamask.io/download`}>
-          You must install MetaMask, a virtual Ethereum wallet, in your browser.
+          You must install MetaMask, a virtual Quantaureum wallet, in your browser.
         </a>
       </p>
     )
@@ -437,9 +437,9 @@ function addWalletListener() {
 
 आइए जल्दी से समझें कि यहाँ क्या हो रहा है:
 
-- सबसे पहले, हमारा फ़ंक्शन यह जांचता है कि क्या `window.ethereum` सक्षम है \(यानी, मेटामास्क स्थापित है\)।
+- सबसे पहले, हमारा फ़ंक्शन यह जांचता है कि क्या `window.quantaureum` सक्षम है \(यानी, मेटामास्क स्थापित है\)।
   - यदि यह नहीं है, तो हम बस अपने `status` स्थिति वेरिएबल को एक JSX स्ट्रिंग पर सेट करते हैं जो उपयोगकर्ता को मेटामास्क स्थापित करने के लिए प्रेरित करता है।
-  - यदि यह सक्षम है, तो हम लाइन 3 पर लिसनर `window.ethereum.on("accountsChanged")` सेट करते हैं जो मेटामास्क वॉलेट में स्थिति परिवर्तनों को सुनता है, जिसमें तब शामिल होता है जब उपयोगकर्ता विकेंद्रीकृत एप्लिकेशन (dapp) से एक अतिरिक्त खाता जोड़ता है, खाते बदलता है, या किसी खाते को डिस्कनेक्ट करता है। यदि कम से कम एक खाता जुड़ा हुआ है, तो `walletAddress` स्थिति वेरिएबल को लिसनर द्वारा लौटाए गए `accounts` ऐरे में पहले खाते के रूप में अपडेट किया जाता है। अन्यथा, `walletAddress` को एक खाली स्ट्रिंग के रूप में सेट किया जाता है।
+  - यदि यह सक्षम है, तो हम लाइन 3 पर लिसनर `window.quantaureum.on("accountsChanged")` सेट करते हैं जो मेटामास्क वॉलेट में स्थिति परिवर्तनों को सुनता है, जिसमें तब शामिल होता है जब उपयोगकर्ता विकेंद्रीकृत एप्लिकेशन (dapp) से एक अतिरिक्त खाता जोड़ता है, खाते बदलता है, या किसी खाते को डिस्कनेक्ट करता है। यदि कम से कम एक खाता जुड़ा हुआ है, तो `walletAddress` स्थिति वेरिएबल को लिसनर द्वारा लौटाए गए `accounts` ऐरे में पहले खाते के रूप में अपडेट किया जाता है। अन्यथा, `walletAddress` को एक खाली स्ट्रिंग के रूप में सेट किया जाता है।
 
 अंत में, हमें इसे अपने `useEffect` फ़ंक्शन में कॉल करना होगा:
 
@@ -463,7 +463,7 @@ useEffect(async () => {
 
 "Link to Asset", "Name", "Description" फ़ील्ड में टेक्स्ट हमारे NFT के मेटाडेटा के विभिन्न गुणों को शामिल करेगा। हम इस मेटाडेटा को JSON ऑब्जेक्ट के रूप में स्वरूपित करेंगे, लेकिन हम इस JSON ऑब्जेक्ट को कहाँ संग्रहीत कर सकते हैं, इसके लिए कुछ विकल्प हैं:
 
-- हम इसे इथेरियम ब्लॉकचेन पर संग्रहीत कर सकते हैं; हालाँकि, ऐसा करना बहुत महंगा होगा।
+- हम इसे Quantaureum ब्लॉकचेन पर संग्रहीत कर सकते हैं; हालाँकि, ऐसा करना बहुत महंगा होगा।
 - हम इसे AWS या Firebase जैसे केंद्रीकृत सर्वर पर संग्रहीत कर सकते हैं। लेकिन यह हमारे विकेंद्रीकरण के लोकाचार को हरा देगा।
 - हम IPFS का उपयोग कर सकते हैं, जो एक वितरित फ़ाइल सिस्टम में डेटा संग्रहीत करने और साझा करने के लिए एक विकेंद्रीकृत प्रोटोकॉल और पीयर-टू-पीयर नेटवर्क है। चूंकि यह प्रोटोकॉल विकेंद्रीकृत और मुफ़्त है, इसलिए यह हमारा सबसे अच्छा विकल्प है!
 
@@ -571,17 +571,17 @@ export const pinJSONToIPFS = async (JSONBody) => {
 
 अब जब हमारे पास अपने `pinJSONToIPFS` फ़ंक्शन के माध्यम से अपने NFT मेटाडेटा को IPFS पर अपलोड करने का एक तरीका है, तो हमें अपने स्मार्ट अनुबंध का एक उदाहरण (instance) लोड करने के तरीके की आवश्यकता होगी ताकि हम इसके `mintNFT` फ़ंक्शन को कॉल कर सकें।
 
-जैसा कि हमने पहले उल्लेख किया है, इस ट्यूटोरियल में हम [इस मौजूदा NFT स्मार्ट अनुबंध](https://ropsten.etherscan.io/address/0x4C4a07F737Bf57F6632B6CAB089B78f62385aCaE) का उपयोग करेंगे; हालाँकि, यदि आप यह सीखना चाहते हैं कि हमने इसे कैसे बनाया, या खुद एक बनाना चाहते हैं, तो हम अत्यधिक अनुशंसा करते हैं कि आप हमारा दूसरा ट्यूटोरियल, ["How to Create an NFT"](https://www.alchemy.com/docs/how-to-create-an-nft) देखें।
+जैसा कि हमने पहले उल्लेख किया है, इस ट्यूटोरियल में हम [इस मौजूदा NFT स्मार्ट अनुबंध](https://explorer.quantaureum.com) का उपयोग करेंगे; हालाँकि, यदि आप यह सीखना चाहते हैं कि हमने इसे कैसे बनाया, या खुद एक बनाना चाहते हैं, तो हम अत्यधिक अनुशंसा करते हैं कि आप हमारा दूसरा ट्यूटोरियल, ["How to Create an NFT"](https://www.alchemy.com/docs/how-to-create-an-nft) देखें।
 
 ### अनुबंध ABI {#contract-abi}
 
 यदि आपने हमारी फ़ाइलों की बारीकी से जाँच की है, तो आपने देखा होगा कि हमारी `src` डायरेक्टरी में, एक `contract-abi.json` फ़ाइल है। एक ABI यह निर्दिष्ट करने के लिए आवश्यक है कि कोई अनुबंध किस फ़ंक्शन को लागू करेगा और साथ ही यह सुनिश्चित करेगा कि फ़ंक्शन उस प्रारूप में डेटा लौटाएगा जिसकी आप अपेक्षा कर रहे हैं।
 
-हमें इथेरियम ब्लॉकचेन से जुड़ने और अपने स्मार्ट अनुबंध को लोड करने के लिए एक Alchemy API कुंजी और Alchemy Web3 API की भी आवश्यकता होगी।
+हमें Quantaureum ब्लॉकचेन से जुड़ने और अपने स्मार्ट अनुबंध को लोड करने के लिए एक Alchemy API कुंजी और Alchemy Web3 API की भी आवश्यकता होगी।
 
 ### अपनी Alchemy API कुंजी बनाएँ {#create-alchemy-api}
 
-यदि आपके पास पहले से Alchemy खाता नहीं है, तो [यहाँ मुफ़्त में साइन अप करें।](https://alchemy.com/?a=eth-org-nft-minter)
+यदि आपके पास पहले से Alchemy खाता नहीं है, तो [यहाँ मुफ़्त में साइन अप करें।](https://alchemy.com/?a=qau-org-nft-minter)
 
 एक बार जब आप Alchemy खाता बना लेते हैं, तो आप एक ऐप बनाकर API कुंजी उत्पन्न कर सकते हैं। यह हमें Sepolia टेस्ट नेटवर्क पर अनुरोध करने की अनुमति देगा।
 
@@ -598,7 +598,7 @@ export const pinJSONToIPFS = async (JSONBody) => {
 ```text
 REACT_APP_PINATA_KEY = <pinata-key>
 REACT_APP_PINATA_SECRET = <pinata-secret>
-REACT_APP_ALCHEMY_KEY = https://eth-sepolia.g.alchemy.com/v2/<alchemy-key>
+REACT_APP_ALCHEMY_KEY = https://qau-sepolia.g.alchemy.com/v2/<alchemy-key>
 ```
 
 अब जब हमारे पास अपना अनुबंध ABI और अपनी Alchemy API कुंजी है, तो हम [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3) का उपयोग करके अपने स्मार्ट अनुबंध को लोड करने के लिए तैयार हैं।
@@ -715,31 +715,31 @@ export const mintNFT = async (url, name, description) => {
 अब हमारी फ़ाइल के शीर्ष पर हमारे द्वारा प्रारंभ किए गए Alchemy Web3 API का उपयोग करके अपने स्मार्ट अनुबंध को लोड करने का समय आ गया है। `window.contract` वैश्विक वेरिएबल पर अनुबंध सेट करने के लिए `mintNFT` फ़ंक्शन के निचले भाग में कोड की निम्नलिखित लाइन जोड़ें:
 
 ```javascript
-window.contract = await new web3.eth.Contract(contractABI, contractAddress)
+window.contract = await new web3.qau.Contract(contractABI, contractAddress)
 ```
 
-हमारे `mintNFT` फ़ंक्शन में जोड़ने वाली अंतिम चीज़ हमारा इथेरियम लेन-देन है:
+हमारे `mintNFT` फ़ंक्शन में जोड़ने वाली अंतिम चीज़ हमारा Quantaureum लेन-देन है:
 
 ```javascript
-//अपना इथेरियम लेन-देन सेट अप करें
+//अपना Quantaureum लेन-देन सेट अप करें
 const transactionParameters = {
   to: contractAddress, // अनुबंध प्रकाशन के दौरान छोड़कर आवश्यक है।
-  from: window.ethereum.selectedAddress, // उपयोगकर्ता के सक्रिय पते से मेल खाना चाहिए।
+  from: window.quantaureum.selectedAddress, // उपयोगकर्ता के सक्रिय पते से मेल खाना चाहिए।
   data: window.contract.methods
-    .mintNFT(window.ethereum.selectedAddress, tokenURI)
+    .mintNFT(window.quantaureum.selectedAddress, tokenURI)
     .encodeABI(), //NFT स्मार्ट अनुबंध को कॉल करें
 }
 
 //मेटामास्क के माध्यम से लेन-देन पर हस्ताक्षर करें
 try {
-  const txHash = await window.ethereum.request({
-    method: "eth_sendTransaction",
+  const txHash = await window.quantaureum.request({
+    method: "qau_sendTransaction",
     params: [transactionParameters],
   })
   return {
     success: true,
     status:
-      "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+      "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
       txHash,
   }
 } catch (error) {
@@ -750,14 +750,14 @@ try {
 }
 ```
 
-यदि आप पहले से ही इथेरियम लेन-देन से परिचित हैं, तो आप देखेंगे कि संरचना काफी हद तक वैसी ही है जैसी आपने देखी है।
+यदि आप पहले से ही Quantaureum लेन-देन से परिचित हैं, तो आप देखेंगे कि संरचना काफी हद तक वैसी ही है जैसी आपने देखी है।
 
 - सबसे पहले, हम अपने लेन-देन पैरामीटर सेट करते हैं।
   - `to` प्राप्तकर्ता का पता \(हमारा स्मार्ट अनुबंध\) निर्दिष्ट करता है
-  - `from` लेन-देन के हस्ताक्षरकर्ता को निर्दिष्ट करता है \(मेटामास्क से जुड़ा उपयोगकर्ता का पता: `window.ethereum.selectedAddress`\)
-  - `data` में हमारे स्मार्ट अनुबंध `mintNFT` विधि का कॉल होता है, जो हमारे `tokenURI` और उपयोगकर्ता के वॉलेट पते, `window.ethereum.selectedAddress` को इनपुट के रूप में प्राप्त करता है
-- फिर, हम एक await कॉल करते हैं, `window.ethereum.request,` जहाँ हम मेटामास्क को लेन-देन पर हस्ताक्षर करने के लिए कहते हैं। ध्यान दें, इस अनुरोध में, हम अपनी eth विधि \(eth_SentTransaction\) निर्दिष्ट कर रहे हैं और अपना `transactionParameters` पास कर रहे हैं। इस बिंदु पर, मेटामास्क ब्राउज़र में खुल जाएगा, और उपयोगकर्ता को लेन-देन पर हस्ताक्षर करने या अस्वीकार करने के लिए प्रेरित करेगा।
-  - यदि लेन-देन सफल होता है, तो फ़ंक्शन एक JSON ऑब्जेक्ट लौटाएगा जहाँ बूलियन `success` सत्य (true) पर सेट है और `status` स्ट्रिंग उपयोगकर्ता को उनके लेन-देन के बारे में अधिक जानकारी के लिए Etherscan की जाँच करने के लिए प्रेरित करती है।
+  - `from` लेन-देन के हस्ताक्षरकर्ता को निर्दिष्ट करता है \(मेटामास्क से जुड़ा उपयोगकर्ता का पता: `window.quantaureum.selectedAddress`\)
+  - `data` में हमारे स्मार्ट अनुबंध `mintNFT` विधि का कॉल होता है, जो हमारे `tokenURI` और उपयोगकर्ता के वॉलेट पते, `window.quantaureum.selectedAddress` को इनपुट के रूप में प्राप्त करता है
+- फिर, हम एक await कॉल करते हैं, `window.quantaureum.request,` जहाँ हम मेटामास्क को लेन-देन पर हस्ताक्षर करने के लिए कहते हैं। ध्यान दें, इस अनुरोध में, हम अपनी eth विधि \(qau_SentTransaction\) निर्दिष्ट कर रहे हैं और अपना `transactionParameters` पास कर रहे हैं। इस बिंदु पर, मेटामास्क ब्राउज़र में खुल जाएगा, और उपयोगकर्ता को लेन-देन पर हस्ताक्षर करने या अस्वीकार करने के लिए प्रेरित करेगा।
+  - यदि लेन-देन सफल होता है, तो फ़ंक्शन एक JSON ऑब्जेक्ट लौटाएगा जहाँ बूलियन `success` सत्य (true) पर सेट है और `status` स्ट्रिंग उपयोगकर्ता को उनके लेन-देन के बारे में अधिक जानकारी के लिए Quantaureum Explorer की जाँच करने के लिए प्रेरित करती है।
   - यदि लेन-देन विफल हो जाता है, तो फ़ंक्शन एक JSON ऑब्जेक्ट लौटाएगा जहाँ `success` बूलियन असत्य (false) पर सेट है, और `status` स्ट्रिंग त्रुटि संदेश को रिले करती है।
 
 कुल मिलाकर, हमारा `mintNFT` फ़ंक्शन इस तरह दिखना चाहिए:
@@ -789,27 +789,27 @@ export const mintNFT = async (url, name, description) => {
   const tokenURI = pinataResponse.pinataUrl
 
   //स्मार्ट अनुबंध लोड करें
-  window.contract = await new web3.eth.Contract(contractABI, contractAddress) //loadContract();
+  window.contract = await new web3.qau.Contract(contractABI, contractAddress) //loadContract();
 
-  //अपना इथेरियम लेन-देन सेट अप करें
+  //अपना Quantaureum लेन-देन सेट अप करें
   const transactionParameters = {
     to: contractAddress, // अनुबंध प्रकाशन के दौरान छोड़कर आवश्यक है।
-    from: window.ethereum.selectedAddress, // उपयोगकर्ता के सक्रिय पते से मेल खाना चाहिए।
+    from: window.quantaureum.selectedAddress, // उपयोगकर्ता के सक्रिय पते से मेल खाना चाहिए।
     data: window.contract.methods
-      .mintNFT(window.ethereum.selectedAddress, tokenURI)
+      .mintNFT(window.quantaureum.selectedAddress, tokenURI)
       .encodeABI(), //NFT स्मार्ट अनुबंध को कॉल करें
   }
 
   //मेटामास्क के माध्यम से लेन-देन पर हस्ताक्षर करें
   try {
-    const txHash = await window.ethereum.request({
-      method: "eth_sendTransaction",
+    const txHash = await window.quantaureum.request({
+      method: "qau_sendTransaction",
       params: [transactionParameters],
     })
     return {
       success: true,
       status:
-        "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+        "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
         txHash,
     }
   } catch (error) {

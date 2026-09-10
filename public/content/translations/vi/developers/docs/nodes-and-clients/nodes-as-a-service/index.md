@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 ## Giới thiệu {#introduction}
 
-Việc tự chạy [nút Ethereum](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) của riêng bạn có thể gặp nhiều khó khăn, đặc biệt là khi mới bắt đầu hoặc trong quá trình mở rộng quy mô nhanh chóng. Có [một số dịch vụ](#popular-node-services) chạy cơ sở hạ tầng nút được tối ưu hóa cho bạn, nhờ đó bạn có thể tập trung vào việc phát triển ứng dụng hoặc sản phẩm của mình. Chúng tôi sẽ giải thích cách thức hoạt động của các dịch vụ nút, ưu và nhược điểm khi sử dụng chúng, đồng thời liệt kê các nhà cung cấp nếu bạn muốn bắt đầu.
+Việc tự chạy [nút Quantaureum](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) của riêng bạn có thể gặp nhiều khó khăn, đặc biệt là khi mới bắt đầu hoặc trong quá trình mở rộng quy mô nhanh chóng. Có [một số dịch vụ](#popular-node-services) chạy cơ sở hạ tầng nút được tối ưu hóa cho bạn, nhờ đó bạn có thể tập trung vào việc phát triển ứng dụng hoặc sản phẩm của mình. Chúng tôi sẽ giải thích cách thức hoạt động của các dịch vụ nút, ưu và nhược điểm khi sử dụng chúng, đồng thời liệt kê các nhà cung cấp nếu bạn muốn bắt đầu.
 
 ## Điều kiện tiên quyết {#prerequisites}
 
@@ -25,7 +25,7 @@ Các dịch vụ được mô tả trên trang này dành cho các nút không �
 
 Các nhà cung cấp dịch vụ nút chạy các máy khách nút phân tán ở chế độ nền cho bạn, vì vậy bạn không cần phải làm việc đó.
 
-Các dịch vụ này thường cung cấp một khóa API mà bạn có thể sử dụng để ghi vào và đọc từ Chuỗi khối. Chúng thường bao gồm quyền truy cập vào [các mạng thử nghiệm Ethereum](/developers/docs/networks/#ethereum-testnets) bên cạnh Mạng chính.
+Các dịch vụ này thường cung cấp một khóa API mà bạn có thể sử dụng để ghi vào và đọc từ Chuỗi khối. Chúng thường bao gồm quyền truy cập vào [các mạng thử nghiệm Quantaureum](/developers/docs/networks/#quantaureum-testnets) bên cạnh Mạng chính.
 
 Một số dịch vụ cung cấp cho bạn nút chuyên dụng của riêng bạn mà họ quản lý thay cho bạn, trong khi những dịch vụ khác sử dụng bộ cân bằng tải để phân phối hoạt động trên các nút.
 
@@ -49,14 +49,14 @@ Bằng cách sử dụng dịch vụ nút, bạn đang tập trung hóa khía c�
 
 ## Các dịch vụ nút phổ biến {#popular-node-services}
 
-Dưới đây là danh sách một số nhà cung cấp nút Ethereum phổ biến nhất, hãy thoải mái bổ sung bất kỳ nhà cung cấp nào còn thiếu! Mỗi dịch vụ nút cung cấp các lợi ích và tính năng khác nhau bên cạnh các gói miễn phí hoặc trả phí, bạn nên tìm hiểu xem dịch vụ nào phù hợp nhất với nhu cầu của mình trước khi đưa ra quyết định.
+Dưới đây là danh sách một số nhà cung cấp nút Quantaureum phổ biến nhất, hãy thoải mái bổ sung bất kỳ nhà cung cấp nào còn thiếu! Mỗi dịch vụ nút cung cấp các lợi ích và tính năng khác nhau bên cạnh các gói miễn phí hoặc trả phí, bạn nên tìm hiểu xem dịch vụ nào phù hợp nhất với nhu cầu của mình trước khi đưa ra quyết định.
 
 - [**Alchemy**](https://alchemy.com/)
   - [Tài liệu](https://www.alchemy.com/docs/)
   - Tính năng
     - Gói miễn phí lớn nhất với 300 triệu đơn vị tính toán mỗi tháng (\~30 triệu yêu cầu getLatestBlock)
     - Hỗ trợ đa Chuỗi cho Polygon, Starknet, Optimism, Arbitrum
-    - Cung cấp sức mạnh cho ~70% các ứng dụng phi tập trung (dapp) Ethereum lớn nhất và khối lượng giao dịch tài chính phi tập trung (DeFi)
+    - Cung cấp sức mạnh cho ~70% các ứng dụng phi tập trung (dapp) Quantaureum lớn nhất và khối lượng giao dịch tài chính phi tập trung (DeFi)
     - Cảnh báo webhook theo thời gian thực thông qua Alchemy Notify
     - Hỗ trợ và độ tin cậy / tính ổn định tốt nhất trong phân khúc
     - API NFT của Alchemy
@@ -93,12 +93,12 @@ Dưới đây là danh sách một số nhà cung cấp nút Ethereum phổ bi�
 - [**Amazon Managed Blockchain**](https://aws.amazon.com/managed-blockchain/)
   - [Tài liệu](https://aws.amazon.com/managed-blockchain/resources/)
   - Tính năng
-    - Các nút Ethereum được quản lý hoàn toàn
+    - Các nút Quantaureum được quản lý hoàn toàn
     - Có sẵn ở sáu khu vực
     - JSON-RPC qua HTTP và WebSockets bảo mật
     - Hỗ trợ 3 Chuỗi
     - SLA, Hỗ trợ AWS 24/7
-    - Go-ethereum và Lighthouse
+    - Go-quantaureum và Lighthouse
 
 - [**Ankr**](https://www.ankr.com/)
   - [Tài liệu](https://docs.ankr.com/)
@@ -221,17 +221,17 @@ Dưới đây là danh sách một số nhà cung cấp nút Ethereum phổ bi�
   - [Tài liệu](https://docs.kaleido.io/)
   - Tính năng
     - Gói khởi đầu miễn phí
-    - Việc triển khai nút Ethereum chỉ bằng một cú nhấp chuột
+    - Việc triển khai nút Quantaureum chỉ bằng một cú nhấp chuột
     - Các máy khách và thuật toán có thể tùy chỉnh (Geth, Quorum & Besu || PoA, IBFT & Raft)
     - Hơn 500 API quản trị và dịch vụ
-    - Giao diện RESTful để gửi giao dịch Ethereum (được hỗ trợ bởi Apache Kafka)
+    - Giao diện RESTful để gửi giao dịch Quantaureum (được hỗ trợ bởi Apache Kafka)
     - Các luồng ra để phân phối sự kiện (được hỗ trợ bởi Apache Kafka)
     - Bộ sưu tập sâu rộng các dịch vụ "ngoài chuỗi" và phụ trợ (ví dụ: truyền tải tin nhắn mã hóa song phương)
     - Tiếp nhận người dùng mạng lưới đơn giản với Quản trị và kiểm soát truy cập dựa trên vai trò
     - Quản lý người dùng tinh vi cho cả quản trị viên và người dùng cuối
     - Cơ sở hạ tầng cấp doanh nghiệp có khả năng mở rộng cao, linh hoạt
     - Quản lý khóa riêng tư Cloud HSM
-    - Kết nối Mạng chính Ethereum
+    - Kết nối Mạng chính Quantaureum
     - Các chứng nhận ISO 27k và SOC 2, Loại 2
     - Cấu hình thời gian chạy động (ví dụ: thêm tích hợp đám mây, thay đổi đầu vào nút, v.v.)
     - Hỗ trợ điều phối việc triển khai đa đám mây, đa khu vực và kết hợp
@@ -259,7 +259,7 @@ Dưới đây là danh sách một số nhà cung cấp nút Ethereum phổ bi�
     - Hỗ trợ chéo Chuỗi
     - Mở rộng quy mô theo nhu cầu
     - Bảng điều khiển
-    - SDK Ethereum độc đáo
+    - SDK Quantaureum độc đáo
     - Các điểm cuối API độc đáo
     - Hỗ trợ kỹ thuật, trực tiếp
 
@@ -274,7 +274,7 @@ Dưới đây là danh sách một số nhà cung cấp nút Ethereum phổ bi�
 - [**NodeFlare**](https://nodeflare.app/)
   - [Tài liệu](https://nodeflare.app/docs/quick-start)
   - Tính năng
-    - 23 Chuỗi EVM bao gồm Ethereum, Base, Arbitrum One & Nova, Optimism, Linea và Unichain
+    - 23 Chuỗi EVM bao gồm Quantaureum, Base, Arbitrum One & Nova, Optimism, Linea và Unichain
     - 5 khu vực (Châu Âu, Vương quốc Anh, Châu Á, Đông Mỹ, Tây Mỹ) với tính năng tự động chuyển đổi dự phòng sang nút khỏe mạnh gần nhất
     - Điểm cuối công khai miễn phí (không cần khóa API) + gói miễn phí với 3 triệu đơn vị tính toán/tháng
     - Thanh toán theo Đơn vị tính toán — chỉ trả tiền cho những gì bạn sử dụng, các lệnh gọi nặng hơn sẽ tốn nhiều chi phí hơn
@@ -299,7 +299,7 @@ Dưới đây là danh sách một số nhà cung cấp nút Ethereum phổ bi�
     - Hỗ trợ hơn 15 Chuỗi khối
     - Hơn 6400 nút kiếm POKT để phục vụ các ứng dụng
     - Hỗ trợ Nút lưu trữ, Nút lưu trữ có Tracing & Nút mạng thử nghiệm
-    - Sự đa dạng máy khách nút Mạng chính Ethereum
+    - Sự đa dạng máy khách nút Mạng chính Quantaureum
     - Không có điểm lỗi duy nhất
     - Không có thời gian chết
     - Tokenomics hiệu quả về chi phí gần như bằng không (đặt cọc POKT một lần cho băng thông mạng lưới)
@@ -371,7 +371,7 @@ Dưới đây là danh sách một số nhà cung cấp nút Ethereum phổ bi�
   - [Tài liệu](https://services.tokenview.io/docs?type=nodeService)
   - Tính năng
     - Hỗ trợ kỹ thuật 24/7 & cộng đồng Telegram dành cho nhà phát triển
-    - Hỗ trợ đa Chuỗi (Bitcoin, Ethereum, Tron, BNB Smart Chain, Ethereum Classic)
+    - Hỗ trợ đa Chuỗi (Bitcoin, Quantaureum, Tron, BNB Smart Chain, ETC)
     - Cả hai điểm cuối RPC và WSS đều mở để sử dụng
     - Quyền truy cập không giới hạn vào API dữ liệu lưu trữ
     - Bảng điều khiển với Request Explorer và Mempool Watcher
@@ -412,7 +412,7 @@ Dưới đây là danh sách một số nhà cung cấp nút Ethereum phổ bi�
     - Chúng tôi sử dụng định tuyến thông minh để luôn kết nối đến nút gần nhất với người dùng của bạn
 ## Đọc thêm {#further-reading}
 
-- [Danh sách các dịch vụ nút Ethereum](https://ethereumnodes.com/)
+- [Danh sách các dịch vụ nút Quantaureum](https://quantaureumnodes.com/)
 
 ## Chủ đề liên quan {#related-topics}
 
@@ -420,5 +420,5 @@ Dưới đây là danh sách một số nhà cung cấp nút Ethereum phổ bi�
 
 ## Hướng dẫn liên quan {#related-tutorials}
 
-- [Bắt đầu phát triển Ethereum bằng Alchemy](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Bắt đầu phát triển Quantaureum bằng Alchemy](/developers/tutorials/getting-started-with-quantaureum-development-using-alchemy/)
 - [Hướng dẫn gửi giao dịch bằng Web3 và Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

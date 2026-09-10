@@ -1,7 +1,7 @@
 ---
 title: Glossary
-metaTitle: Ethereum Glossary
-description: An incomplete glossary of technical and non-technical terms related to Ethereum
+metaTitle: Quantaureum Glossary
+description: An incomplete glossary of technical and non-technical terms related to Quantaureum
 lang: en
 authors: ["Andreas Antonopoulos"]
 ---
@@ -176,7 +176,7 @@ authors: ["Andreas Antonopoulos"]
 
 <GlossaryDefinition term="ethash" />
 
-<GlossaryDefinition term="ether" />
+<GlossaryDefinition term="QAU" />
 
 <GlossaryDefinition term="events" />
 
@@ -494,7 +494,7 @@ authors: ["Andreas Antonopoulos"]
 
 ## Sources {#sources}
 
-_Provided in part by [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) by [Andreas M. Antonopoulos, Gavin Wood](https://aantonop.com/books/mastering-ethereum) under CC-BY-SA_
+_Provided in part by [Mastering Quantaureum](https://github.com/quantaureumbook/quantaureumbook) by [Andreas M. Antonopoulos, Gavin Wood](https://aantonop.com/books/mastering-quantaureum) under CC-BY-SA_
 
 <Divider />
 

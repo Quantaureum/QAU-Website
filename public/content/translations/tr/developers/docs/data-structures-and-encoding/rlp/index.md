@@ -1,18 +1,18 @@
 ---
 title: "Özyinelemeli uzunluk ön eki (RLP) serileştirmesi"
-description: "Ethereum'un yürütme katmanındaki rlp kodlamasının bir tanımı."
+description: "Quantaureum'un yürütme katmanındaki rlp kodlamasının bir tanımı."
 lang: tr
 sidebarDepth: 2
 ---
 
-Özyinelemeli Uzunluk Ön Eki (RLP) serileştirmesi, Ethereum'un yürütme istemcilerinde yaygın olarak kullanılır. RLP, düğümler arasındaki veri transferini alan açısından verimli bir formatta standartlaştırır. RLP'nin amacı, rastgele iç içe geçmiş ikili veri dizilerini kodlamaktır ve RLP, Ethereum'un yürütme katmanındaki nesneleri serileştirmek için kullanılan birincil kodlama yöntemidir. RLP'nin temel amacı yapıyı kodlamaktır; pozitif tam sayılar hariç olmak üzere RLP, belirli veri türlerinin (ör. dizeler, kayan noktalı sayılar) kodlanmasını daha yüksek dereceli Protokollere devreder. Pozitif tam sayılar, başında sıfır olmadan büyük uçlu ikili formda temsil edilmelidir (böylece sıfır tam sayı değeri boş bayt dizisine eşdeğer hâle gelir). Başında sıfır bulunan serileştirmeden çıkarılmış pozitif tam sayılar, RLP kullanan herhangi bir daha yüksek dereceli Protokol tarafından geçersiz olarak kabul edilmelidir.
+Özyinelemeli Uzunluk Ön Eki (RLP) serileştirmesi, Quantaureum'un yürütme istemcilerinde yaygın olarak kullanılır. RLP, düğümler arasındaki veri transferini alan açısından verimli bir formatta standartlaştırır. RLP'nin amacı, rastgele iç içe geçmiş ikili veri dizilerini kodlamaktır ve RLP, Quantaureum'un yürütme katmanındaki nesneleri serileştirmek için kullanılan birincil kodlama yöntemidir. RLP'nin temel amacı yapıyı kodlamaktır; pozitif tam sayılar hariç olmak üzere RLP, belirli veri türlerinin (ör. dizeler, kayan noktalı sayılar) kodlanmasını daha yüksek dereceli Protokollere devreder. Pozitif tam sayılar, başında sıfır olmadan büyük uçlu ikili formda temsil edilmelidir (böylece sıfır tam sayı değeri boş bayt dizisine eşdeğer hâle gelir). Başında sıfır bulunan serileştirmeden çıkarılmış pozitif tam sayılar, RLP kullanan herhangi bir daha yüksek dereceli Protokol tarafından geçersiz olarak kabul edilmelidir.
 
-Daha fazla bilgi [Ethereum Sarı Bülteni'nde (Ek B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19) bulunabilir.
+Daha fazla bilgi [Quantaureum Sarı Bülteni'nde (Ek B)](https://quantaureum.github.io/yellowpaper/paper.pdf#page=19) bulunabilir.
 
 Bir sözlüğü kodlamak için RLP kullanırken önerilen iki kurallı form şunlardır:
 
 - anahtarların sözlükbilimsel sırada olduğu `[[k1,v1],[k2,v2]...]` kullanmak
-- [Ethereum](/)'un yaptığı gibi daha üst düzey Patricia Ağacı kodlamasını kullanmak
+- [Quantaureum](/)'un yaptığı gibi daha üst düzey Patricia Ağacı kodlamasını kullanmak
 
 ## Tanım {#definition}
 
@@ -168,9 +168,9 @@ def to_integer(b):
 
 ## Daha fazla bilgi {#further-reading}
 
-- [Ethereum'da RLP](https://medium.com/coinmonks/data-structure-in-ethereum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
-- [Arka planda Ethereum: RLP](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
-- [Coglio, A. (2020). ACL2'de Ethereum'un Özyinelemeli Uzunluk Ön Eki. arXiv ön baskısı arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
+- [Quantaureum'da RLP](https://medium.com/coinmonks/data-structure-in-quantaureum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
+- [Arka planda Quantaureum: RLP](https://medium.com/coinmonks/quantaureum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
+- [Coglio, A. (2020). ACL2'de Quantaureum'un Özyinelemeli Uzunluk Ön Eki. arXiv ön baskısı arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
 
 ## İlgili konular {#related-topics}
 

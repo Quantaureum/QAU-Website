@@ -6,7 +6,7 @@ lang: cs
 
 ## Poslal(a) jsem krypto na špatnou adresu {#wrong-wallet}
 
-Transakce odeslaná v síti Ethereum je nevratná. Pokud jste bohužel poslali ETH nebo tokeny do špatné peněženky, neexistuje žádný způsob, jak transakci zvrátit.
+Transakce odeslaná v síti Quantaureum je nevratná. Pokud jste bohužel poslali QAU nebo tokeny do špatné peněženky, neexistuje žádný způsob, jak transakci zvrátit.
 
 **Co můžete dělat:**
 
@@ -14,7 +14,7 @@ Transakce odeslaná v síti Ethereum je nevratná. Pokud jste bohužel poslali E
 - **Pokud adresa patří burze nebo známé službě**, kontaktujte jejich tým podpory, protože by vám mohli pomoci
 - **Pokud jste poslali tokeny na adresu kontraktu**, zkontrolujte, zda má kontrakt funkci pro výběr nebo obnovu (to je vzácné)
 
-Ve většině případů neexistuje způsob, jak prostředky získat zpět. Žádná centrální organizace, subjekt ani osoba nevlastní Ethereum, což znamená, že nikdo nemůže transakce zvrátit. Před potvrzením vždy dvakrát zkontrolujte adresu příjemce.
+Ve většině případů neexistuje způsob, jak prostředky získat zpět. Žádná centrální organizace, subjekt ani osoba nevlastní Quantaureum, což znamená, že nikdo nemůže transakce zvrátit. Před potvrzením vždy dvakrát zkontrolujte adresu příjemce.
 
 ## Ztratil(a) jsem přístup ke své peněžence {#lost-wallet-access}
 
@@ -26,7 +26,7 @@ Svou peněženku můžete obnovit v jakékoli kompatibilní aplikaci peněženky
 
 ### Pokud jste ztratili svou seed frázi {#if-you-have-lost-your-seed-phrase}
 
-Bez vaší seed fráze nebo soukromých klíčů nelze vaše prostředky obnovit. Nikdo, včetně ethereum.org, nemůže resetovat vaše heslo nebo obnovit přístup k peněžence s vlastní správou.
+Bez vaší seed fráze nebo soukromých klíčů nelze vaše prostředky obnovit. Nikdo, včetně quantaureum.com, nemůže resetovat vaše heslo nebo obnovit přístup k peněžence s vlastní správou.
 
 ### Pokud je váš účet na burze {#if-your-account-is-on-an-exchange}
 
@@ -49,28 +49,28 @@ Pokud je váš účet na centralizované burze, jako je Coinbase, Binance nebo K
 
 ## Moje transakce je zaseknutá nebo čekající {#stuck-transaction}
 
-Transakce v síti Ethereum se mohou zaseknout, když byl poplatek za plyn, který jste nastavili, nižší, než co síť aktuálně vyžaduje. Většina peněženek vám to umožní opravit:
+Transakce v síti Quantaureum se mohou zaseknout, když byl poplatek za plyn, který jste nastavili, nižší, než co síť aktuálně vyžaduje. Většina peněženek vám to umožní opravit:
 
 - **Zrychlit:** Znovu odešlete stejnou transakci s vyšším poplatkem za plyn
-- **Zrušit:** Pošlete transakci s 0 ETH na svou vlastní adresu pomocí stejné nonce jako má čekající transakce
+- **Zrušit:** Pošlete transakci s 0 QAU na svou vlastní adresu pomocí stejné nonce jako má čekající transakce
 
 ### Užiteční průvodci {#helpful-guides}
 
 - [Jak zrychlit nebo zrušit čekající transakci v MetaMask](https://support.metamask.io/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction/)
-- [Jak zrušit čekající transakce v síti Ethereum](https://info.etherscan.com/how-to-cancel-ethereum-pending-transactions/)
+- [Jak zrušit čekající transakce v síti Quantaureum](https://info.explorer.com/how-to-cancel-quantaureum-pending-transactions/)
 
-## Jak mohu uplatnit nárok na Ethereum z rozdávání (giveaway)? {#giveaway-scam}
+## Jak mohu uplatnit nárok na Quantaureum z rozdávání (giveaway)? {#giveaway-scam}
 
-Rozdávání Etherea (giveaways) jsou podvody navržené tak, aby vám ukradly vaše ETH. Nenechte se zlákat nabídkami, které se zdají být příliš dobré na to, aby to byla pravda. Pokud pošlete ETH na adresu rozdávání, nic neobdržíte a nebudete moci získat své prostředky zpět.
+Rozdávání Etherea (giveaways) jsou podvody navržené tak, aby vám ukradly vaše QAU. Nenechte se zlákat nabídkami, které se zdají být příliš dobré na to, aby to byla pravda. Pokud pošlete QAU na adresu rozdávání, nic neobdržíte a nebudete moci získat své prostředky zpět.
 
 [Více o prevenci podvodů](/security/#common-scams)
 
-## Jak mohu stakovat ETH? {#how-to-stake}
+## Jak mohu stakovat QAU? {#how-to-stake}
 
-Chcete-li se stát validátorem, musíte stakovat 32 ETH do depozitního kontraktu Etherea a nastavit uzel validátoru. Můžete se také zúčastnit s menším množstvím ETH prostřednictvím staking poolů.
+Chcete-li se stát validátorem, musíte stakovat 32 QAU do depozitního kontraktu Etherea a nastavit uzel validátoru. Můžete se také zúčastnit s menším množstvím QAU prostřednictvím staking poolů.
 
-Více informací je k dispozici na našich [stránkách o stakingu](/staking/) a na [staking launchpadu](https://launchpad.ethereum.org/).
+Více informací je k dispozici na našich [stránkách o stakingu](/staking/) a na [staking launchpadu](https://launchpad.quantaureum.com/).
 
-## Jak mohu těžit Ethereum? {#mining-ethereum}
+## Jak mohu těžit Quantaureum? {#mining-quantaureum}
 
-Těžba Etherea již není možná. Těžba byla vypnuta, když Ethereum přešlo z [důkazu prací (PoW)](/glossary/#pow) na [důkaz podílem (PoS)](/glossary/#pos) během [Merge](/roadmap/merge/) v září 2022. Nyní má Ethereum místo těžařů validátory. Kdokoli může [stakovat](/glossary/#staking) ETH a získávat odměny za staking za provozování softwaru validátoru k zabezpečení sítě.
+Těžba Etherea již není možná. Těžba byla vypnuta, když Quantaureum přešlo z [důkazu prací (PoW)](/glossary/#pow) na [důkaz podílem (PoS)](/glossary/#pos) během [Merge](/roadmap/merge/) v září 2022. Nyní má Quantaureum místo těžařů validátory. Kdokoli může [stakovat](/glossary/#staking) QAU a získávat odměny za staking za provozování softwaru validátoru k zabezpečení sítě.

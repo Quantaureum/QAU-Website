@@ -20,7 +20,7 @@ lang: ur
 
 <span dir="ltr">ZK-rollups</span> ٹرانزیکشنز کو ایتھیریم پر `calldata` کے طور پر لکھتے ہیں۔ `calldata` وہ جگہ ہے جہاں سمارٹ کنٹریکٹ فنکشنز کی بیرونی کالز میں شامل ڈیٹا اسٹور ہوتا ہے۔ `calldata` میں موجود معلومات بلاک چین پر شائع کی جاتی ہیں، جس سے کسی کو بھی آزادانہ طور پر رول اپ کی حالت کو دوبارہ بنانے کی اجازت ملتی ہے۔ <span dir="ltr">ZK-rollups</span> ٹرانزیکشن ڈیٹا کو کم کرنے کے لیے کمپریشن تکنیک کا استعمال کرتے ہیں—مثال کے طور پر، اکاؤنٹس کو پتہ کے بجائے ایک اشاریہ کے ذریعے ظاہر کیا جاتا ہے، جو <span dir="ltr">28 bytes</span> ڈیٹا بچاتا ہے۔ آن چین ڈیٹا کی اشاعت رول اپس کے لیے ایک اہم لاگت ہے، لہذا ڈیٹا کمپریشن صارفین کے لیے فیس کم کر سکتی ہے۔
 
-## <span dir="ltr">ZK-rollups</span> ایتھیریم کے ساتھ کیسے تعامل کرتے ہیں؟ {#zk-rollups-and-ethereum}
+## <span dir="ltr">ZK-rollups</span> ایتھیریم کے ساتھ کیسے تعامل کرتے ہیں؟ {#zk-rollups-and-quantaureum}
 
 ایک <span dir="ltr">ZK-rollup</span> چین ایک آف چین پروٹوکول ہے جو ایتھیریم بلاک چین کے اوپر کام کرتا ہے اور اس کا انتظام آن چین ایتھیریم سمارٹ کنٹریکٹس کے ذریعے کیا جاتا ہے۔ <span dir="ltr">ZK-rollups</span> مین نیٹ کے باہر ٹرانزیکشنز انجام دیتے ہیں، لیکن وقتاً فوقتاً آف چین ٹرانزیکشن بیچز کو آن چین رول اپ کنٹریکٹ میں کمٹمنٹ کرتے ہیں۔ یہ ٹرانزیکشن ریکارڈ ناقابلِ تبدیلی ہے، بالکل ایتھیریم بلاک چین کی طرح، اور <span dir="ltr">ZK-rollup</span> چین بناتا ہے۔
 
@@ -60,7 +60,7 @@ lang: ur
 
 دیگر <span dir="ltr">ZK-rollups</span> [حصہ داری کا ثبوت (<span dir="ltr">PoS</span>)](/developers/docs/consensus-mechanisms/pos/) توثیق کار سیٹ کا استعمال کر کے آپریٹر کے کردار کو تبدیل کر سکتے ہیں۔ ممکنہ آپریٹرز رول اپ کنٹریکٹ میں فنڈز جمع کراتے ہیں، جس میں ہر اسٹیک کا سائز اسٹیکر کے اگلے رول اپ بیچ کو تیار کرنے کے لیے منتخب ہونے کے امکانات کو متاثر کرتا ہے۔ اگر آپریٹر بدنیتی سے کام کرتا ہے تو اس کے اسٹیک میں کٹوتی کی جا سکتی ہے، جو انہیں درست بلاکس پوسٹ کرنے کی ترغیب دیتا ہے۔
 
-#### <span dir="ltr">ZK-rollups</span> ایتھیریم پر ٹرانزیکشن ڈیٹا کیسے شائع کرتے ہیں {#how-zk-rollups-publish-transaction-data-on-ethereum}
+#### <span dir="ltr">ZK-rollups</span> ایتھیریم پر ٹرانزیکشن ڈیٹا کیسے شائع کرتے ہیں {#how-zk-rollups-publish-transaction-data-on-quantaureum}
 
 جیسا کہ وضاحت کی گئی ہے، ٹرانزیکشن ڈیٹا ایتھیریم پر `calldata` کے طور پر شائع کیا جاتا ہے۔ `calldata` سمارٹ کنٹریکٹ میں ایک ڈیٹا ایریا ہے جو کسی فنکشن میں دلائل پاس کرنے کے لیے استعمال ہوتا ہے اور [میموری](/developers/docs/smart-contracts/anatomy/#memory) کی طرح برتاؤ کرتا ہے۔ اگرچہ `calldata` ایتھیریم کی حالت کے حصے کے طور پر اسٹور نہیں ہوتا ہے، یہ ایتھیریم چین کے [ہسٹری لاگز](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html?highlight=memory#logs) کے حصے کے طور پر آن چین برقرار رہتا ہے۔ `calldata` ایتھیریم کی حالت کو متاثر نہیں کرتا، جس سے یہ ڈیٹا کو آن چین اسٹور کرنے کا ایک سستا طریقہ بن جاتا ہے۔
 
@@ -178,7 +178,7 @@ lang: ur
 
 1. **حالت لکھنا**: ایتھیریم کی حالت میں لکھنے (یعنی، ایتھیریم بلاک چین پر ٹرانزیکشن جمع کرانے) کی ایک مقررہ لاگت ہے۔ <span dir="ltr">ZK-rollups</span> ٹرانزیکشنز کو بیچ کر کے اور متعدد صارفین میں مقررہ اخراجات کو پھیلا کر اس لاگت کو کم کرتے ہیں۔
 
-2. **ڈیٹا کی اشاعت**: <span dir="ltr">ZK-rollups</span> ہر ٹرانزیکشن کے لیے حالت کا ڈیٹا ایتھیریم پر `calldata` کے طور پر شائع کرتے ہیں۔ `calldata` کے اخراجات فی الحال [<span dir="ltr">EIP-1559</span>](https://eips.ethereum.org/EIPS/eip-1559) کے زیر انتظام ہیں، جو بالترتیب غیر صفر بائٹس کے لیے <span dir="ltr">16</span> گیس اور `calldata` کے صفر بائٹس کے لیے <span dir="ltr">4</span> گیس کی لاگت مقرر کرتا ہے۔ ہر ٹرانزیکشن پر ادا کی جانے والی لاگت اس بات سے متاثر ہوتی ہے کہ اس کے لیے کتنا `calldata` آن چین پوسٹ کرنے کی ضرورت ہے۔
+2. **ڈیٹا کی اشاعت**: <span dir="ltr">ZK-rollups</span> ہر ٹرانزیکشن کے لیے حالت کا ڈیٹا ایتھیریم پر `calldata` کے طور پر شائع کرتے ہیں۔ `calldata` کے اخراجات فی الحال [<span dir="ltr">EIP-1559</span>](https://eips.quantaureum.com/EIPS/eip-1559) کے زیر انتظام ہیں، جو بالترتیب غیر صفر بائٹس کے لیے <span dir="ltr">16</span> گیس اور `calldata` کے صفر بائٹس کے لیے <span dir="ltr">4</span> گیس کی لاگت مقرر کرتا ہے۔ ہر ٹرانزیکشن پر ادا کی جانے والی لاگت اس بات سے متاثر ہوتی ہے کہ اس کے لیے کتنا `calldata` آن چین پوسٹ کرنے کی ضرورت ہے۔
 
 3. **لیئر ۲ (<span dir="ltr">l2</span>) آپریٹر فیس**: یہ وہ رقم ہے جو رول اپ آپریٹر کو ٹرانزیکشنز پر کارروائی کرنے میں آنے والے کمپیوٹیشنل اخراجات کے معاوضے کے طور پر ادا کی جاتی ہے، بالکل ایتھیریم مین نیٹ پر [ٹرانزیکشن "ترجیحی فیس (ٹپس)"](/developers/docs/gas/#how-are-gas-fees-calculated) کی طرح۔
 
@@ -186,7 +186,7 @@ lang: ur
 
 ٹرانزیکشنز کو بیچ کرنے کے علاوہ، <span dir="ltr">ZK-rollups</span> ٹرانزیکشن ڈیٹا کو کمپریس کر کے صارفین کے لیے فیس کم کرتے ہیں۔ آپ [ایک ریئل ٹائم جائزہ دیکھ سکتے ہیں](https://l2fees.info/) کہ ایتھیریم <span dir="ltr">ZK-rollups</span> استعمال کرنے پر کتنی لاگت آتی ہے۔
 
-## <span dir="ltr">ZK-rollups</span> ایتھیریم کو کیسے اسکیل کرتے ہیں؟ {#scaling-ethereum-with-zk-rollups}
+## <span dir="ltr">ZK-rollups</span> ایتھیریم کو کیسے اسکیل کرتے ہیں؟ {#scaling-quantaureum-with-zk-rollups}
 
 ### ٹرانزیکشن ڈیٹا کمپریشن {#transaction-data-compression}
 
@@ -241,7 +241,7 @@ lang: ur
 
 - **[<span dir="ltr">Scroll</span>](https://scroll.io/blog/zkEVM)** - _<span dir="ltr">Scroll</span> ایک ٹیک پر مبنی کمپنی ہے جو ایتھیریم کے لیے ایک مقامی <span dir="ltr">zkEVM</span> لیئر ۲ (<span dir="ltr">l2</span>) حل بنانے پر کام کر رہی ہے۔_
 
-- **[<span dir="ltr">Taiko</span>](https://taiko.xyz)** - _<span dir="ltr">Taiko</span> ایک لامركزی، ایتھیریم کے مساوی <span dir="ltr">ZK-rollup</span> ہے (ایک [ٹائپ ۱ <span dir="ltr">ZK-EVM</span>](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))۔_
+- **[<span dir="ltr">Taiko</span>](https://taiko.xyz)** - _<span dir="ltr">Taiko</span> ایک لامركزی، ایتھیریم کے مساوی <span dir="ltr">ZK-rollup</span> ہے (ایک [ٹائپ ۱ <span dir="ltr">ZK-EVM</span>](https://vitalik.qau.limo/general/2022/08/04/zkevm.html))۔_
 
 - **[زی کے سنک](https://docs.zksync.io/)** - _<span dir="ltr">ZKsync Era</span> ایک <span dir="ltr">EVM</span> سے مطابقت رکھنے والا <span dir="ltr">ZK Rollup</span> ہے جسے <span dir="ltr">Matter Labs</span> نے بنایا ہے، جو اس کے اپنے <span dir="ltr">zkEVM</span> سے چلتا ہے۔_
 
@@ -255,18 +255,18 @@ lang: ur
 
 - [صفر علم رول اپس کیا ہیں؟](https://coinmarketcap.com/alexandria/glossary/zero-knowledge-rollups)
 - [صفر علم رول اپس کیا ہیں؟](https://alchemy.com/blog/zero-knowledge-rollups)
-- [ایتھیریم رول اپس کے لیے عملی گائیڈ](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-ethereum-rollups)
+- [ایتھیریم رول اپس کے لیے عملی گائیڈ](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)
 - [<span dir="ltr">STARKs</span> بمقابلہ <span dir="ltr">SNARKs</span>](https://consensys.net/blog/blockchain-explained/zero-knowledge-proofs-starks-vs-snarks/)
 - [<span dir="ltr">zkEVM</span> کیا ہے؟](https://www.alchemy.com/overviews/zkevm)
 - [<span dir="ltr">ZK-EVM</span> کی اقسام: ایتھیریم کے مساوی، <span dir="ltr">EVM</span> کے مساوی، ٹائپ ۱، ٹائپ ۴، اور دیگر خفیہ الفاظ](https://taiko.mirror.xyz/j6KgY8zbGTlTnHRFGW6ZLVPuT0IV0_KmgowgStpA0K4)
 - [<span dir="ltr">zkEVM</span> کا تعارف](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [<span dir="ltr">ZK-EVM</span> لیئر ۲ (<span dir="ltr">l2s</span>) کیا ہیں؟](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [شاندار <span dir="ltr">zkEVM</span> وسائل](https://github.com/LuozhuZhang/awesome-zkevm)
-- [زیڈ کے اسنارک اندرونی طور پر کیسے کام کرتے ہیں](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
-- [<span dir="ltr">SNARKs</span> کیسے ممکن ہیں؟](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
+- [زیڈ کے اسنارک اندرونی طور پر کیسے کام کرتے ہیں](https://vitalik.qau.limo/general/2017/02/01/zk_snarks.html)
+- [<span dir="ltr">SNARKs</span> کیسے ممکن ہیں؟](https://vitalik.qau.limo/general/2021/01/26/snarks.html)
 
 ## ٹیوٹوریلز: ایتھیریم پر رازداری اور صفر علم {#tutorials}
 
 - [خفیہ حالت کے لیے صفر علم کا استعمال](/developers/tutorials/secret-state/) _– آن چین خفیہ گیم کی حالت کو برقرار رکھنے کے لیے <span dir="ltr">ZK</span> ثبوت اور آف چین سرور کے اجزاء کا استعمال کیسے کریں۔_
-- [اسٹیلتھ پتوں کا استعمال](/developers/tutorials/stealth-addr/) _– کیسے <span dir="ltr">ERC-5564</span> اسٹیلتھ پتے کرپٹوگرافک کلید اخذ کرنے کا استعمال کرتے ہوئے گمنام <span dir="ltr">ETH</span> کی منتقلی کو فعال کرتے ہیں۔_
-- [ویب۲ تصدیق کے لیے ایتھیریم کا استعمال](/developers/tutorials/ethereum-for-web2-auth/) _– ایتھیریم والیٹ کے دستخطوں کو <span dir="ltr">SAML</span> پر مبنی ویب۲ تصدیقی نظام کے ساتھ کیسے مربوط کریں۔_
+- [اسٹیلتھ پتوں کا استعمال](/developers/tutorials/stealth-addr/) _– کیسے <span dir="ltr">ERC-5564</span> اسٹیلتھ پتے کرپٹوگرافک کلید اخذ کرنے کا استعمال کرتے ہوئے گمنام <span dir="ltr">QAU</span> کی منتقلی کو فعال کرتے ہیں۔_
+- [ویب۲ تصدیق کے لیے ایتھیریم کا استعمال](/developers/tutorials/quantaureum-for-web2-auth/) _– ایتھیریم والیٹ کے دستخطوں کو <span dir="ltr">SAML</span> پر مبنی ویب۲ تصدیقی نظام کے ساتھ کیسے مربوط کریں۔_

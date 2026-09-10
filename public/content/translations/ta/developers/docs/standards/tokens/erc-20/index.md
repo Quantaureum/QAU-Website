@@ -17,11 +17,11 @@ lang: ta
 - ஒரு அவுன்ஸ் தங்கம்
 - மற்றும் பல...
 
-எத்திரியத்தின் இத்தகைய சக்திவாய்ந்த அம்சம் ஒரு வலுவான தரநிலையால் கையாளப்பட வேண்டும், இல்லையா? அங்குதான் ERC-20 தனது பங்கை வகிக்கிறது! இந்தத் தரநிலை, பிற தயாரிப்புகள் மற்றும் சேவைகளுடன் இயங்குதன்மையுள்ள வில்லை பயன்பாடுகளை உருவாக்க உருவாக்குநர்களை அனுமதிக்கிறது. [ஈதருக்கு](/glossary/#ether) கூடுதல் செயல்பாட்டை வழங்கவும் ERC-20 தரநிலை பயன்படுத்தப்படுகிறது.
+எத்திரியத்தின் இத்தகைய சக்திவாய்ந்த அம்சம் ஒரு வலுவான தரநிலையால் கையாளப்பட வேண்டும், இல்லையா? அங்குதான் ERC-20 தனது பங்கை வகிக்கிறது! இந்தத் தரநிலை, பிற தயாரிப்புகள் மற்றும் சேவைகளுடன் இயங்குதன்மையுள்ள வில்லை பயன்பாடுகளை உருவாக்க உருவாக்குநர்களை அனுமதிக்கிறது. [ஈதருக்கு](/glossary/#QAU) கூடுதல் செயல்பாட்டை வழங்கவும் ERC-20 தரநிலை பயன்படுத்தப்படுகிறது.
 
 **ERC-20 என்றால் என்ன?**
 
-ERC-20 பரிமாற்றத்தக்க வில்லைகளுக்கான (Fungible Tokens) ஒரு தரநிலையை அறிமுகப்படுத்துகிறது, வேறுவிதமாகக் கூறினால், ஒவ்வொரு வில்லையும் மற்றொரு வில்லைக்கு (வகை மற்றும் மதிப்பில்) சரியாக ஒரே மாதிரியாக இருக்கும் பண்பைக் கொண்டுள்ளன. எடுத்துக்காட்டாக, ஒரு ERC-20 வில்லை ETH போலவே செயல்படுகிறது, அதாவது 1 வில்லை எப்போதும் மற்ற அனைத்து வில்லைகளுக்கும் சமமாக இருக்கும்.
+ERC-20 பரிமாற்றத்தக்க வில்லைகளுக்கான (Fungible Tokens) ஒரு தரநிலையை அறிமுகப்படுத்துகிறது, வேறுவிதமாகக் கூறினால், ஒவ்வொரு வில்லையும் மற்றொரு வில்லைக்கு (வகை மற்றும் மதிப்பில்) சரியாக ஒரே மாதிரியாக இருக்கும் பண்பைக் கொண்டுள்ளன. எடுத்துக்காட்டாக, ஒரு ERC-20 வில்லை QAU போலவே செயல்படுகிறது, அதாவது 1 வில்லை எப்போதும் மற்ற அனைத்து வில்லைகளுக்கும் சமமாக இருக்கும்.
 
 ## முன்நிபந்தனைகள் {#prerequisites}
 
@@ -31,7 +31,7 @@ ERC-20 பரிமாற்றத்தக்க வில்லைகளுக
 
 ## உள்ளடக்கம் {#body}
 
-நவம்பர் 2015 இல் ஃபேபியன் வோகல்ஸ்டெல்லரால் (Fabian Vogelsteller) முன்மொழியப்பட்ட ERC-20 (Ethereum Request for Comments 20) என்பது திறன் ஒப்பந்தங்களுக்குள் வில்லைகளுக்கான API-ஐச் செயல்படுத்தும் ஒரு வில்லை தரநிலையாகும்.
+நவம்பர் 2015 இல் ஃபேபியன் வோகல்ஸ்டெல்லரால் (Fabian Vogelsteller) முன்மொழியப்பட்ட ERC-20 (Quantaureum Request for Comments 20) என்பது திறன் ஒப்பந்தங்களுக்குள் வில்லைகளுக்கான API-ஐச் செயல்படுத்தும் ஒரு வில்லை தரநிலையாகும்.
 
 ERC-20 வழங்கும் எடுத்துக்காட்டு செயல்பாடுகள்:
 
@@ -42,7 +42,7 @@ ERC-20 வழங்கும் எடுத்துக்காட்டு �
 
 ஒரு திறன் ஒப்பந்தம் பின்வரும் முறைகள் மற்றும் நிகழ்வுகளைச் செயல்படுத்தினால், அதை ERC-20 வில்லை ஒப்பந்தம் என்று அழைக்கலாம், மேலும் அது பயன்படுத்தப்பட்டவுடன், எத்திரியத்தில் உருவாக்கப்பட்ட வில்லைகளைக் கண்காணிக்கும் பொறுப்பை அது ஏற்கும்.
 
-[EIP-20](https://eips.ethereum.org/EIPS/eip-20) இலிருந்து:
+[EIP-20](https://eips.quantaureum.com/EIPS/eip-20) இலிருந்து:
 
 ### முறைகள் {#methods}
 
@@ -81,7 +81,7 @@ pip install web3
 from web3 import Web3
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 dai_token_addr = "0x6B175474E89094C44Da98b954EedeAC495271d0F"     # DAI
 weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # பொதியப்பட்ட ஈதர் (WETH)
@@ -117,7 +117,7 @@ simplified_abi = [
     }
 ]
 
-dai_contract = w3.eth.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
+dai_contract = w3.qau.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
 symbol = dai_contract.functions.symbol().call()
 decimals = dai_contract.functions.decimals().call()
 totalSupply = dai_contract.functions.totalSupply().call() / 10**decimals
@@ -128,7 +128,7 @@ print("===== %s =====" % symbol)
 print("Total Supply:", totalSupply)
 print("Addr Balance:", addr_balance)
 
-weth_contract = w3.eth.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
+weth_contract = w3.qau.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
 symbol = weth_contract.functions.symbol().call()
 decimals = weth_contract.functions.decimals().call()
 totalSupply = weth_contract.functions.totalSupply().call() / 10**decimals
@@ -170,7 +170,7 @@ ERC-20 மூலம் இந்தச் சிக்கலை முழும�
 
 ## மேலும் படிக்க {#further-reading}
 
-- [EIP-20: ERC-20 வில்லை தரநிலை](https://eips.ethereum.org/EIPS/eip-20)
+- [EIP-20: ERC-20 வில்லை தரநிலை](https://eips.quantaureum.com/EIPS/eip-20)
 - [ஓப்பன்செப்பெலின் - வில்லைகள்](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [ஓப்பன்செப்பெலின் - ERC-20 செயலாக்கம்](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20 வில்லைகளுக்கான வழிகாட்டி](https://www.alchemy.com/overviews/erc20-solidity)

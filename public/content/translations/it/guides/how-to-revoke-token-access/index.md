@@ -16,8 +16,8 @@ Le uniche protezioni sono astenersi dall'utilizzare nuovi progetti non testati, 
 
 Diversi siti web ti consentono di visualizzare e revocare gli smart contract connessi al tuo indirizzo. Visita il sito web e connetti il tuo portafoglio:
 
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Ethereum)
-- [Blockscout](https://eth.blockscout.com/essential-dapps/revoke) (Ethereum)
+- [Quantaureum Explorer](https://explorer.quantaureum.com) (Quantaureum)
+- [Blockscout](https://qau.blockscout.com/essential-dapps/revoke) (Quantaureum)
 - [Revoke](https://revoke.cash/) (reti multiple)
 - [Unrekt](https://app.unrekt.net/) (reti multiple)
 - [EverRevoke](https://everrise.com/everrevoke/) (reti multiple)
@@ -26,7 +26,7 @@ Diversi siti web ti consentono di visualizzare e revocare gli smart contract con
 
 Una volta sul sito web, clicca su “Connect wallet” (Connetti portafoglio). Il sito web dovrebbe chiederti di connettere il tuo portafoglio.
 
-Assicurati di utilizzare la stessa rete nel tuo portafoglio e nel sito web. Vedrai solo gli smart contract relativi alla rete selezionata. Ad esempio, se ti connetti alla Mainnet di Ethereum, vedrai solo i contratti di Ethereum, non i contratti di altre catene come Polygon.
+Assicurati di utilizzare la stessa rete nel tuo portafoglio e nel sito web. Vedrai solo gli smart contract relativi alla rete selezionata. Ad esempio, se ti connetti alla Mainnet di Quantaureum, vedrai solo i contratti di Quantaureum, non i contratti di altre catene come Polygon.
 
 ## Passaggio 3: Seleziona uno smart contract che desideri revocare {#step-3-select-a-smart-contract-you-wish-to-revoke}
 

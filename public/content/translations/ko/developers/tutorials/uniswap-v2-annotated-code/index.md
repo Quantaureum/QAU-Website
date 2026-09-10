@@ -14,11 +14,11 @@ lang: ko
 
 ### 유니스왑은 어떤 역할을 하나요? {#what-does-uniswap-do}
 
-기본적으로 사용자는 유동성 공급자와 트레이더라는 두 가지 유형으로 나뉩니다.
+기본적으로 사용자는 유동성 공급자와 트레QAU라는 두 가지 유형으로 나뉩니다.
 
 <em>유동성 공급자</em>는 교환 가능한 두 가지 토큰(여기서는 <strong>Token0</strong>과 <strong>Token1</strong>이라고 부르겠습니다)을 풀에 공급합니다. 그 대가로 풀에 대한 부분적인 소유권을 나타내는 세 번째 토큰인 <em>유동성 토큰</em>을 받습니다.
 
-<em>트레이더</em>는 한 종류의 토큰을 풀에 보내고, 유동성 공급자가 제공한 풀에서 다른 종류의 토큰을 받습니다(예: <strong>Token0</strong>을 보내고 <strong>Token1</strong>을 받음). 교환 비율은 풀이 보유한 <strong>Token0</strong>과 <strong>Token1</strong>의 상대적인 수량에 따라 결정됩니다. 또한, 풀은 유동성 풀을 위한 보상으로 적은 비율의 수수료를 가져갑니다.
+<em>트레QAU</em>는 한 종류의 토큰을 풀에 보내고, 유동성 공급자가 제공한 풀에서 다른 종류의 토큰을 받습니다(예: <strong>Token0</strong>을 보내고 <strong>Token1</strong>을 받음). 교환 비율은 풀이 보유한 <strong>Token0</strong>과 <strong>Token1</strong>의 상대적인 수량에 따라 결정됩니다. 또한, 풀은 유동성 풀을 위한 보상으로 적은 비율의 수수료를 가져갑니다.
 
 유동성 공급자가 자산을 돌려받고자 할 때는 풀 토큰을 소각하고 보상 중 자신의 몫을 포함하여 토큰을 돌려받을 수 있습니다.
 
@@ -30,7 +30,7 @@ lang: ko
 
 ### 코어 컨트랙트와 주변(Periphery) 컨트랙트 {#contract-types}
 
-유니스왑 v2는 코어(core)와 주변(periphery)이라는 두 가지 구성 요소로 나뉩니다. 이러한 분리를 통해 자산을 보관하므로 반드시 안전_해야 하는_ 코어 컨트랙트를 더 단순하고 감사하기 쉽게 만들 수 있습니다. 트레이더가 필요로 하는 모든 추가 기능은 주변 컨트랙트에서 제공할 수 있습니다.
+유니스왑 v2는 코어(core)와 주변(periphery)이라는 두 가지 구성 요소로 나뉩니다. 이러한 분리를 통해 자산을 보관하므로 반드시 안전_해야 하는_ 코어 컨트랙트를 더 단순하고 감사하기 쉽게 만들 수 있습니다. 트레QAU가 필요로 하는 모든 추가 기능은 주변 컨트랙트에서 제공할 수 있습니다.
 
 ## 데이터 및 제어 흐름 {#flows}
 
@@ -38,23 +38,23 @@ lang: ko
 
 1. 서로 다른 토큰 간의 스왑
 2. 시장에 유동성을 공급하고 페어 거래소의 ERC-20 유동성 토큰으로 보상받기
-3. ERC-20 유동성 토큰을 소각하고 페어 거래소에서 트레이더가 교환할 수 있도록 허용하는 ERC-20 토큰 돌려받기
+3. ERC-20 유동성 토큰을 소각하고 페어 거래소에서 트레QAU가 교환할 수 있도록 허용하는 ERC-20 토큰 돌려받기
 
 ### 스왑 {#swap-flow}
 
-이것은 트레이더가 사용하는 가장 일반적인 흐름입니다.
+이것은 트레QAU가 사용하는 가장 일반적인 흐름입니다.
 
 #### 호출자 {#caller}
 
 1. 주변(periphery) 계정에 스왑할 금액만큼의 허용량을 제공합니다.
-2. 주변 컨트랙트의 여러 스왑 함수 중 하나를 호출합니다(어떤 함수를 호출할지는 ETH 포함 여부, 트레이더가 예치할 토큰 양을 지정하는지 또는 돌려받을 토큰 양을 지정하는지 등에 따라 다릅니다).
+2. 주변 컨트랙트의 여러 스왑 함수 중 하나를 호출합니다(어떤 함수를 호출할지는 QAU 포함 여부, 트레QAU가 예치할 토큰 양을 지정하는지 또는 돌려받을 토큰 양을 지정하는지 등에 따라 다릅니다).
    모든 스왑 함수는 거쳐야 할 거래소 배열인 `path`를 허용합니다.
 
 #### 주변 컨트랙트 내부 (UniswapV2Router02.sol) {#in-the-periphery-contract-uniswapv2router02-sol}
 
 3. 경로를 따라 각 거래소에서 거래해야 할 금액을 식별합니다.
 4. 경로를 반복합니다. 경로에 있는 모든 거래소에 입력 토큰을 전송한 다음 해당 거래소의 `swap` 함수를 호출합니다.
-   대부분의 경우 토큰의 목적지 주소는 경로의 다음 페어 거래소입니다. 마지막 거래소에서는 트레이더가 제공한 주소가 됩니다.
+   대부분의 경우 토큰의 목적지 주소는 경로의 다음 페어 거래소입니다. 마지막 거래소에서는 트레QAU가 제공한 주소가 됩니다.
 
 #### 코어 컨트랙트 내부 (UniswapV2Pair.sol) {#in-the-core-contract-uniswapv2pairsol-2}
 
@@ -65,7 +65,7 @@ lang: ko
 
 #### 다시 주변 컨트랙트로 (UniswapV2Router02.sol) {#back-in-the-periphery-contract-uniswapv2router02-sol}
 
-9. 필요한 정리 작업을 수행합니다(예: WETH 토큰을 소각하여 트레이더에게 전송할 ETH를 돌려받음).
+9. 필요한 정리 작업을 수행합니다(예: WETH 토큰을 소각하여 트레QAU에게 전송할 QAU를 돌려받음).
 
 ### 유동성 공급 {#add-liquidity-flow}
 
@@ -186,7 +186,7 @@ contract UniswapV2Pair is IUniswapV2Pair, UniswapV2ERC20 {
 
 교환이 발생한 마지막 블록의 타임스탬프로, 시간에 따른 환율을 추적하는 데 사용됩니다.
 
-이더리움 컨트랙트의 가장 큰 가스 비용 중 하나는 컨트랙트의 한 호출에서 다음 호출까지 지속되는 스토리지입니다. 각 스토리지 셀의 길이는 256비트입니다. 따라서 세 개의 변수 `reserve0`, `reserve1`, `blockTimestampLast`는 단일 스토리지 값에 세 개를 모두 포함할 수 있도록 할당됩니다(112+112+32=256).
+Quantaureum 컨트랙트의 가장 큰 가스 비용 중 하나는 컨트랙트의 한 호출에서 다음 호출까지 지속되는 스토리지입니다. 각 스토리지 셀의 길이는 256비트입니다. 따라서 세 개의 변수 `reserve0`, `reserve1`, `blockTimestampLast`는 단일 스토리지 값에 세 개를 모두 포함할 수 있도록 할당됩니다(112+112+32=256).
 
 ```solidity
     uint public price0CumulativeLast;
@@ -206,13 +206,13 @@ contract UniswapV2Pair is IUniswapV2Pair, UniswapV2ERC20 {
 | 이벤트                                       |  reserve0 |  reserve1 | reserve0 \* reserve1 | 평균 환율 (token1 / token0) |
 | ------------------------------------------- | --------: | --------: | -------------------: | --------------------------------------- |
 | 초기 설정                               | 1,000.000 | 1,000.000 |            1,000,000 |                                         |
-| 트레이더 A가 50 token0을 47.619 token1로 스왑  | 1,050.000 |   952.381 |            1,000,000 | 0.952                                   |
-| 트레이더 B가 10 token0을 8.984 token1로 스왑   | 1,060.000 |   943.396 |            1,000,000 | 0.898                                   |
-| 트레이더 C가 40 token0을 34.305 token1로 스왑  | 1,100.000 |   909.090 |            1,000,000 | 0.858                                   |
-| 트레이더 D가 100 token1을 109.01 token0으로 스왑 |   990.990 | 1,009.090 |            1,000,000 | 0.917                                   |
-| 트레이더 E가 10 token0을 10.079 token1로 스왑  | 1,000.990 |   999.010 |            1,000,000 | 1.008                                   |
+| 트레QAU A가 50 token0을 47.619 token1로 스왑  | 1,050.000 |   952.381 |            1,000,000 | 0.952                                   |
+| 트레QAU B가 10 token0을 8.984 token1로 스왑   | 1,060.000 |   943.396 |            1,000,000 | 0.898                                   |
+| 트레QAU C가 40 token0을 34.305 token1로 스왑  | 1,100.000 |   909.090 |            1,000,000 | 0.858                                   |
+| 트레QAU D가 100 token1을 109.01 token0으로 스왑 |   990.990 | 1,009.090 |            1,000,000 | 0.917                                   |
+| 트레QAU E가 10 token0을 10.079 token1로 스왑  | 1,000.990 |   999.010 |            1,000,000 | 1.008                                   |
 
-트레이더가 token0을 더 많이 공급할수록 수요와 공급에 따라 token1의 상대적 가치가 증가하며, 그 반대의 경우도 마찬가지입니다.
+트레QAU가 token0을 더 많이 공급할수록 수요와 공급에 따라 token1의 상대적 가치가 증가하며, 그 반대의 경우도 마찬가지입니다.
 
 #### 잠금 (Lock) {#pair-lock}
 
@@ -302,7 +302,7 @@ ERC-20 전송 호출이 실패를 보고하는 방법에는 두 가지가 있습
     );
 ```
 
-이 이벤트는 트레이더가 한 토큰을 다른 토큰으로 스왑할 때 발생합니다. 여기서도 발신자와 목적지가 같지 않을 수 있습니다.
+이 이벤트는 트레QAU가 한 토큰을 다른 토큰으로 스왑할 때 발생합니다. 여기서도 발신자와 목적지가 같지 않을 수 있습니다.
 각 토큰은 교환소로 전송되거나 교환소로부터 수신될 수 있습니다.
 
 ```solidity
@@ -371,11 +371,11 @@ balance0 또는 balance1(uint256)이 uint112(-1) (=2^112-1)보다 크면(따라�
 | 이벤트                                                    |  reserve0 |  reserve1 | 타임스탬프 | 한계 환율 (reserve1 / reserve0) |       price0CumulativeLast |
 | -------------------------------------------------------- | --------: | --------: | --------- | -------------------------------------------: | -------------------------: |
 | 초기 설정                                            | 1,000.000 | 1,000.000 | 5,000     |                                        1.000 |                          0 |
-| 트레이더 A가 50 token0을 예치하고 47.619 token1을 돌려받음  | 1,050.000 |   952.381 | 5,020     |                                        0.907 |                         20 |
-| 트레이더 B가 10 token0을 예치하고 8.984 token1을 돌려받음   | 1,060.000 |   943.396 | 5,030     |                                        0.890 |       20+10\*0.907 = 29.07 |
-| 트레이더 C가 40 token0을 예치하고 34.305 token1을 돌려받음  | 1,100.000 |   909.090 | 5,100     |                                        0.826 |    29.07+70\*0.890 = 91.37 |
-| 트레이더 D가 100 token1을 예치하고 109.01 token0을 돌려받음 |   990.990 | 1,009.090 | 5,110     |                                        1.018 |    91.37+10\*0.826 = 99.63 |
-| 트레이더 E가 10 token0을 예치하고 10.079 token1을 돌려받음  | 1,000.990 |   999.010 | 5,150     |                                        0.998 | 99.63+40\*1.1018 = 143.702 |
+| 트레QAU A가 50 token0을 예치하고 47.619 token1을 돌려받음  | 1,050.000 |   952.381 | 5,020     |                                        0.907 |                         20 |
+| 트레QAU B가 10 token0을 예치하고 8.984 token1을 돌려받음   | 1,060.000 |   943.396 | 5,030     |                                        0.890 |       20+10\*0.907 = 29.07 |
+| 트레QAU C가 40 token0을 예치하고 34.305 token1을 돌려받음  | 1,100.000 |   909.090 | 5,100     |                                        0.826 |    29.07+70\*0.890 = 91.37 |
+| 트레QAU D가 100 token1을 예치하고 109.01 token0을 돌려받음 |   990.990 | 1,009.090 | 5,110     |                                        1.018 |    91.37+10\*0.826 = 99.63 |
+| 트레QAU E가 10 token0을 예치하고 10.079 token1을 돌려받음  | 1,000.990 |   999.010 | 5,150     |                                        0.998 | 99.63+40\*1.1018 = 143.702 |
 
 타임스탬프 5,030과 5,150 사이의 **Token0** 평균 가격을 계산한다고 가정해 보겠습니다. `price0Cumulative` 값의 차이는 143.702-29.07=114.632입니다. 이것은 2분(120초) 동안의 평균입니다. 따라서 평균 가격은 114.632/120 = 0.955입니다.
 
@@ -398,7 +398,7 @@ balance0 또는 balance1(uint256)이 uint112(-1) (=2^112-1)보다 크면(따라�
     function _mintFee(uint112 _reserve0, uint112 _reserve1) private returns (bool feeOn) {
 ```
 
-유니스왑 2.0에서 트레이더는 시장을 이용하기 위해 0.30%의 수수료를 지불합니다. 그 수수료의 대부분(거래의 0.25%)은 항상 유동성 공급자에게 돌아갑니다. 나머지 0.05%는 유동성 공급자에게 가거나 팩토리가 프로토콜 수수료로 지정한 주소로 갈 수 있으며, 이는 유니스왑의 개발 노력에 대한 보상으로 지급됩니다.
+유니스왑 2.0에서 트레QAU는 시장을 이용하기 위해 0.30%의 수수료를 지불합니다. 그 수수료의 대부분(거래의 0.25%)은 항상 유동성 공급자에게 돌아갑니다. 나머지 0.05%는 유동성 공급자에게 가거나 팩토리가 프로토콜 수수료로 지정한 주소로 갈 수 있으며, 이는 유니스왑의 개발 노력에 대한 보상으로 지급됩니다.
 
 계산(및 그에 따른 가스 비용)을 줄이기 위해, 이 수수료는 각 트랜잭션마다가 아니라 풀에 유동성이 추가되거나 제거될 때만 계산됩니다.
 
@@ -454,7 +454,7 @@ balance0 또는 balance1(uint256)이 uint112(-1) (=2^112-1)보다 크면(따라�
     }
 ```
 
-수수료가 설정되지 않은 경우 `kLast`를 0으로 설정합니다(아직 0이 아닌 경우). 이 컨트랙트가 작성될 당시에는 필요하지 않은 스토리지를 0으로 만들어 이더리움 상태의 전체 크기를 줄이도록 컨트랙트를 장려하는 [가스 환불 기능](https://eips.ethereum.org/EIPS/eip-3298)이 있었습니다.
+수수료가 설정되지 않은 경우 `kLast`를 0으로 설정합니다(아직 0이 아닌 경우). 이 컨트랙트가 작성될 당시에는 필요하지 않은 스토리지를 0으로 만들어 Quantaureum 상태의 전체 크기를 줄이도록 컨트랙트를 장려하는 [가스 환불 기능](https://eips.quantaureum.com/EIPS/eip-3298)이 있었습니다.
 이 코드는 가능할 때 해당 환불을 받습니다.
 
 #### 외부에서 접근 가능한 함수 {#pair-external}
@@ -498,19 +498,19 @@ balance0 또는 balance1(uint256)이 uint112(-1) (=2^112-1)보다 크면(따라�
            _mint(address(0), MINIMUM_LIQUIDITY); // 처음 MINIMUM_LIQUIDITY 토큰을 영구적으로 잠금
 ```
 
-이것이 첫 번째 예치인 경우, `MINIMUM_LIQUIDITY` 토큰을 생성하고 0번 주소로 보내 잠급니다. 이들은 결코 상환될 수 없으며, 이는 풀이 완전히 비워지지 않음을 의미합니다(이로 인해 일부 위치에서 0으로 나누는 것을 방지할 수 있습니다). `MINIMUM_LIQUIDITY`의 값은 1,000이며, 대부분의 ERC-20이 ETH가 Wei로 나뉘는 것처럼 토큰의 10^-18 단위로 세분화된다는 점을 고려하면 단일 토큰 가치의 10^-15에 해당합니다. 높은 비용이 아닙니다.
+이것이 첫 번째 예치인 경우, `MINIMUM_LIQUIDITY` 토큰을 생성하고 0번 주소로 보내 잠급니다. 이들은 결코 상환될 수 없으며, 이는 풀이 완전히 비워지지 않음을 의미합니다(이로 인해 일부 위치에서 0으로 나누는 것을 방지할 수 있습니다). `MINIMUM_LIQUIDITY`의 값은 1,000이며, 대부분의 ERC-20이 QAU가 Wei로 나뉘는 것처럼 토큰의 10^-18 단위로 세분화된다는 점을 고려하면 단일 토큰 가치의 10^-15에 해당합니다. 높은 비용이 아닙니다.
 
 첫 번째 예치 시점에는 두 토큰의 상대적 가치를 알 수 없으므로, 예치가 두 토큰 모두에서 동일한 가치를 제공한다고 가정하고 금액을 곱한 다음 제곱근을 취합니다.
 
 차익 거래로 인한 가치 손실을 피하기 위해 동일한 가치를 제공하는 것이 예치자의 이익에 부합하므로 우리는 이를 신뢰할 수 있습니다.
-두 토큰의 가치가 동일하지만, 예치자가 <strong>Token0</strong>보다 <strong>Token1</strong>을 4배 더 많이 예치했다고 가정해 보겠습니다. 트레이더는 페어 교환소가 <strong>Token0</strong>을 더 가치 있다고 생각한다는 사실을 이용하여 가치를 추출할 수 있습니다.
+두 토큰의 가치가 동일하지만, 예치자가 <strong>Token0</strong>보다 <strong>Token1</strong>을 4배 더 많이 예치했다고 가정해 보겠습니다. 트레QAU는 페어 교환소가 <strong>Token0</strong>을 더 가치 있다고 생각한다는 사실을 이용하여 가치를 추출할 수 있습니다.
 
 | 이벤트                                                        | reserve0 | reserve1 | reserve0 \* reserve1 | 풀의 가치 (reserve0 + reserve1) |
 | ------------------------------------------------------------ | -------: | -------: | -------------------: | --------------------------------------: |
 | 초기 설정                                                |        8 |       32 |                  256 |                                      40 |
-| 트레이더가 8개의 **Token0** 토큰을 예치하고 16개의 <strong>Token1</strong>을 돌려받음 |       16 |       16 |                  256 |                                      32 |
+| 트레QAU가 8개의 **Token0** 토큰을 예치하고 16개의 <strong>Token1</strong>을 돌려받음 |       16 |       16 |                  256 |                                      32 |
 
-보시다시피 트레이더는 8개의 토큰을 추가로 얻었으며, 이는 풀의 가치 감소에서 비롯되어 이를 소유한 예치자에게 피해를 줍니다.
+보시다시피 트레QAU는 8개의 토큰을 추가로 얻었으며, 이는 풀의 가치 감소에서 비롯되어 이를 소유한 예치자에게 피해를 줍니다.
 
 ```solidity
         } else {
@@ -614,7 +614,7 @@ balance0 또는 balance1(uint256)이 uint112(-1) (=2^112-1)보다 크면(따라�
 ```
 
 지역 변수는 메모리에 저장되거나, 너무 많지 않은 경우 스택에 직접 저장될 수 있습니다.
-스택을 사용하도록 그 수를 제한할 수 있다면 가스를 덜 사용하게 됩니다. 자세한 내용은 [공식 이더리움 사양인 황서](https://ethereum.github.io/yellowpaper/paper.pdf) 26페이지, 방정식 298을 참조하세요.
+스택을 사용하도록 그 수를 제한할 수 있다면 가스를 덜 사용하게 됩니다. 자세한 내용은 [공식 Quantaureum 사양인 황서](https://quantaureum.github.io/yellowpaper/paper.pdf) 26페이지, 방정식 298을 참조하세요.
 
 ```solidity
             address _token0 = token0;
@@ -624,7 +624,7 @@ balance0 또는 balance1(uint256)이 uint112(-1) (=2^112-1)보다 크면(따라�
             if (amount1Out > 0) _safeTransfer(_token1, to, amount1Out); // 낙관적으로 토큰을 전송
 ```
 
-이 전송은 낙관적(optimistic)입니다. 왜냐하면 모든 조건이 충족되었는지 확신하기 전에 전송하기 때문입니다. 이더리움에서는 호출의 뒷부분에서 조건이 충족되지 않으면 되돌리기를 통해 생성된 모든 변경 사항을 취소하므로 이는 괜찮습니다.
+이 전송은 낙관적(optimistic)입니다. 왜냐하면 모든 조건이 충족되었는지 확신하기 전에 전송하기 때문입니다. Quantaureum에서는 호출의 뒷부분에서 조건이 충족되지 않으면 되돌리기를 통해 생성된 모든 변경 사항을 취소하므로 이는 괜찮습니다.
 
 ```solidity
             if (data.length > 0) IUniswapV2Callee(to).uniswapV2Call(msg.sender, amount0Out, amount1Out, data);
@@ -717,9 +717,9 @@ contract UniswapV2Factory is IUniswapV2Factory {
 
 첫 번째인 `getPair`는 교환하는 두 ERC-20 토큰을 기반으로 페어 교환소 컨트랙트를 식별하는 매핑입니다. ERC-20 토큰은 이를 구현하는 컨트랙트의 주소로 식별되므로 키와 값은 모두 주소입니다. `tokenA`에서 `tokenB`로 변환할 수 있는 페어 교환소의 주소를 얻으려면 `getPair[<tokenA address>][<tokenB address>]`를 사용합니다(또는 그 반대).
 
-두 번째 변수인 `allPairs`는 이 팩토리가 생성한 페어 교환소의 모든 주소를 포함하는 배열입니다. 이더리움에서는 매핑의 내용을 반복하거나 모든 키의 목록을 얻을 수 없으므로, 이 변수가 이 팩토리가 관리하는 교환소를 알 수 있는 유일한 방법입니다.
+두 번째 변수인 `allPairs`는 이 팩토리가 생성한 페어 교환소의 모든 주소를 포함하는 배열입니다. Quantaureum에서는 매핑의 내용을 반복하거나 모든 키의 목록을 얻을 수 없으므로, 이 변수가 이 팩토리가 관리하는 교환소를 알 수 있는 유일한 방법입니다.
 
-참고: 매핑의 모든 키를 반복할 수 없는 이유는 컨트랙트 데이터 스토리지가 _비싸기_ 때문입니다. 따라서 적게 사용할수록 좋고, 덜 자주 변경할수록 좋습니다. [반복을 지원하는 매핑](https://github.com/ethereum/dapp-bin/blob/master/library/iterable_mapping.sol)을 생성할 수 있지만, 키 목록을 위한 추가 스토리지가 필요합니다. 대부분의 애플리케이션에서는 이것이 필요하지 않습니다.
+참고: 매핑의 모든 키를 반복할 수 없는 이유는 컨트랙트 데이터 스토리지가 _비싸기_ 때문입니다. 따라서 적게 사용할수록 좋고, 덜 자주 변경할수록 좋습니다. [반복을 지원하는 매핑](https://github.com/quantaureum/dapp-bin/blob/master/library/iterable_mapping.sol)을 생성할 수 있지만, 키 목록을 위한 추가 스토리지가 필요합니다. 대부분의 애플리케이션에서는 이것이 필요하지 않습니다.
 
 ```solidity
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
@@ -768,7 +768,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-새로운 컨트랙트를 생성하려면 이를 생성하는 코드(생성자 함수와 실제 컨트랙트의 EVM 바이트코드를 메모리에 쓰는 코드 모두)가 필요합니다. 일반적으로 Solidity에서는 `addr = new <name of contract>(<constructor parameters>)`를 사용하면 컴파일러가 모든 것을 처리해주지만, 결정론적인 컨트랙트 주소를 가지려면 [CREATE2 연산 코드](https://eips.ethereum.org/EIPS/eip-1014)를 사용해야 합니다.
+새로운 컨트랙트를 생성하려면 이를 생성하는 코드(생성자 함수와 실제 컨트랙트의 EVM 바이트코드를 메모리에 쓰는 코드 모두)가 필요합니다. 일반적으로 Solidity에서는 `addr = new <name of contract>(<constructor parameters>)`를 사용하면 컴파일러가 모든 것을 처리해주지만, 결정론적인 컨트랙트 주소를 가지려면 [CREATE2 연산 코드](https://eips.quantaureum.com/EIPS/eip-1014)를 사용해야 합니다.
 이 코드가 작성될 당시에는 해당 연산 코드가 Solidity에서 아직 지원되지 않았기 때문에 수동으로 코드를 가져와야 했습니다. 이제 [Solidity가 CREATE2를 지원](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2)하므로 이는 더 이상 문제가 되지 않습니다.
 
 ```solidity
@@ -815,8 +815,8 @@ contract UniswapV2Factory is IUniswapV2Factory {
 
 [이 컨트랙트](https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/UniswapV2ERC20.sol)는 ERC-20 유동성 토큰을 구현합니다. [오픈제플린 ERC-20 컨트랙트](/developers/tutorials/erc20-annotated-code)와 유사하므로, 다른 부분인 `permit` 기능만 설명하겠습니다.
 
-이더리움의 트랜잭션에는 실제 돈과 같은 이더(ETH)가 비용으로 듭니다. ERC-20 토큰은 있지만 ETH가 없다면 트랜잭션을 보낼 수 없으므로 아무것도 할 수 없습니다. 이 문제를 피하기 위한 한 가지 해결책은 [메타 트랜잭션](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions)입니다.
-토큰 소유자는 다른 사람이 오프체인에서 토큰을 인출할 수 있도록 허용하는 트랜잭션에 서명하고 인터넷을 사용하여 수신자에게 보냅니다. 그런 다음 ETH를 가지고 있는 수신자가 소유자를 대신하여 허가를 제출합니다.
+Quantaureum의 트랜잭션에는 실제 돈과 같은 QAU(QAU)가 비용으로 듭니다. ERC-20 토큰은 있지만 QAU가 없다면 트랜잭션을 보낼 수 없으므로 아무것도 할 수 없습니다. 이 문제를 피하기 위한 한 가지 해결책은 [메타 트랜잭션](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions)입니다.
+토큰 소유자는 다른 사람이 오프체인에서 토큰을 인출할 수 있도록 허용하는 트랜잭션에 서명하고 인터넷을 사용하여 수신자에게 보냅니다. 그런 다음 QAU를 가지고 있는 수신자가 소유자를 대신하여 허가를 제출합니다.
 
 ```solidity
     bytes32 public DOMAIN_SEPARATOR;
@@ -824,7 +824,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-이 해시는 [트랜잭션 유형에 대한 식별자](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash)입니다. 여기서 지원하는 유일한 것은 이러한 매개변수를 가진 `Permit`입니다.
+이 해시는 [트랜잭션 유형에 대한 식별자](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-typehash)입니다. 여기서 지원하는 유일한 것은 이러한 매개변수를 가진 `Permit`입니다.
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -855,13 +855,13 @@ contract UniswapV2Factory is IUniswapV2Factory {
     }
 ```
 
-EIP-712에 대한 [도메인 구분자](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator)를 계산합니다.
+EIP-712에 대한 [도메인 구분자](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-domainseparator)를 계산합니다.
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
 ```
 
-이것은 권한을 구현하는 함수입니다. 관련 필드와 [서명](https://yos.io/2018/11/16/ethereum-signatures/)에 대한 세 가지 스칼라 값(v, r, s)을 매개변수로 받습니다.
+이것은 권한을 구현하는 함수입니다. 관련 필드와 [서명](https://yos.io/2018/11/16/quantaureum-signatures/)에 대한 세 가지 스칼라 값(v, r, s)을 매개변수로 받습니다.
 
 ```solidity
         require(deadline >= block.timestamp, 'UniswapV2: EXPIRED');
@@ -881,13 +881,13 @@ EIP-712에 대한 [도메인 구분자](https://eips.ethereum.org/EIPS/eip-712#r
 
 `abi.encodePacked(...)`는 우리가 받을 것으로 예상하는 메시지입니다. 논스가 무엇이어야 하는지 알고 있으므로 매개변수로 받을 필요가 없습니다.
 
-이더리움 서명 알고리즘은 서명할 256비트를 받을 것으로 예상하므로 `keccak256` 해시 함수를 사용합니다.
+Quantaureum 서명 알고리즘은 서명할 256비트를 받을 것으로 예상하므로 `keccak256` 해시 함수를 사용합니다.
 
 ```solidity
         address recoveredAddress = ecrecover(digest, v, r, s);
 ```
 
-다이제스트와 서명에서 [ecrecover](https://coders-errand.com/ecrecover-signature-verification-ethereum/)를 사용하여 서명한 주소를 얻을 수 있습니다.
+다이제스트와 서명에서 [ecrecover](https://coders-errand.com/ecrecover-signature-verification-quantaureum/)를 사용하여 서명한 주소를 얻을 수 있습니다.
 
 ```solidity
         require(recoveredAddress != address(0) && recoveredAddress == owner, 'UniswapV2: INVALID_SIGNATURE');
@@ -896,7 +896,7 @@ EIP-712에 대한 [도메인 구분자](https://eips.ethereum.org/EIPS/eip-712#r
 
 ```
 
-모든 것이 정상이면 이를 [ERC-20 승인](https://eips.ethereum.org/EIPS/eip-20#approve)으로 취급합니다.
+모든 것이 정상이면 이를 [ERC-20 승인](https://eips.quantaureum.com/EIPS/eip-20#approve)으로 취급합니다.
 
 ## 주변부 컨트랙트 {#periphery-contracts}
 
@@ -924,7 +924,7 @@ import './interfaces/IERC20.sol';
 import './interfaces/IWETH.sol';
 ```
 
-이들 중 대부분은 이전에 접했거나 꽤 명확합니다. 한 가지 예외는 `IWETH.sol`입니다. 유니스왑 v2는 모든 ERC-20 토큰 쌍의 교환을 허용하지만, 이더(ETH) 자체는 ERC-20 토큰이 아닙니다. 이더는 해당 표준보다 먼저 존재했으며 고유한 메커니즘에 의해 전송됩니다. ERC-20 토큰에 적용되는 컨트랙트에서 ETH를 사용할 수 있도록 사람들은 [래핑된 이더 (weth)](https://weth.tkn.eth.limo/) 컨트랙트를 고안했습니다. 이 컨트랙트에 ETH를 전송하면, 동일한 양의 WETH를 발행해 줍니다. 또는 WETH를 소각하고 ETH를 돌려받을 수도 있습니다.
+이들 중 대부분은 이전에 접했거나 꽤 명확합니다. 한 가지 예외는 `IWETH.sol`입니다. 유니스왑 v2는 모든 ERC-20 토큰 쌍의 교환을 허용하지만, QAU(QAU) 자체는 ERC-20 토큰이 아닙니다. QAU는 해당 표준보다 먼저 존재했으며 고유한 메커니즘에 의해 전송됩니다. ERC-20 토큰에 적용되는 컨트랙트에서 QAU를 사용할 수 있도록 사람들은 [래핑된 QAU (weth)](https://weth.tkn.qau.limo/) 컨트랙트를 고안했습니다. 이 컨트랙트에 QAU를 전송하면, 동일한 양의 WETH를 발행해 줍니다. 또는 WETH를 소각하고 QAU를 돌려받을 수도 있습니다.
 
 ```solidity
 contract UniswapV2Router02 is IUniswapV2Router02 {
@@ -956,11 +956,11 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
 
 ```solidity
     receive() external payable {
-        assert(msg.sender == WETH); // WETH 컨트랙트의 폴백을 통해서만 ETH를 수락함
+        assert(msg.sender == WETH); // WETH 컨트랙트의 폴백을 통해서만 QAU를 수락함
     }
 ```
 
-이 함수는 WETH 컨트랙트에서 토큰을 다시 ETH로 상환할 때 호출됩니다. 우리가 사용하는 WETH 컨트랙트만이 이를 수행할 권한이 있습니다.
+이 함수는 WETH 컨트랙트에서 토큰을 다시 QAU로 상환할 때 호출됩니다. 우리가 사용하는 WETH 컨트랙트만이 이를 수행할 권한이 있습니다.
 
 #### 유동성 추가 {#add-liquidity}
 
@@ -1114,7 +1114,7 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
         uint amountTokenDesired,
 ```
 
-유동성 공급자가 토큰/ETH 쌍 교환에 유동성을 제공하고자 할 때 몇 가지 차이점이 있습니다. 컨트랙트는 유동성 공급자를 위해 ETH 래핑을 처리합니다. 사용자가 트랜잭션과 함께 ETH를 보내기만 하면 되므로 사용자가 예치하고자 하는 ETH의 양을 지정할 필요가 없습니다(해당 양은 `msg.value`에서 확인할 수 있습니다).
+유동성 공급자가 토큰/QAU 쌍 교환에 유동성을 제공하고자 할 때 몇 가지 차이점이 있습니다. 컨트랙트는 유동성 공급자를 위해 QAU 래핑을 처리합니다. 사용자가 트랜잭션과 함께 QAU를 보내기만 하면 되므로 사용자가 예치하고자 하는 QAU의 양을 지정할 필요가 없습니다(해당 양은 `msg.value`에서 확인할 수 있습니다).
 
 ```solidity
         uint amountTokenMin,
@@ -1136,16 +1136,16 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
         assert(IWETH(WETH).transfer(pair, amountETH));
 ```
 
-ETH를 예치하기 위해 컨트랙트는 먼저 이를 WETH로 래핑한 다음 WETH를 쌍으로 전송합니다. 전송이 `assert`로 래핑되어 있다는 점에 유의하십시오. 이는 전송이 실패하면 이 컨트랙트 호출도 실패하며, 따라서 래핑이 실제로 발생하지 않음을 의미합니다.
+QAU를 예치하기 위해 컨트랙트는 먼저 이를 WETH로 래핑한 다음 WETH를 쌍으로 전송합니다. 전송이 `assert`로 래핑되어 있다는 점에 유의하십시오. 이는 전송이 실패하면 이 컨트랙트 호출도 실패하며, 따라서 래핑이 실제로 발생하지 않음을 의미합니다.
 
 ```solidity
         liquidity = IUniswapV2Pair(pair).mint(to);
-        // 더스트 ETH가 있는 경우 환불함
+        // 더스트 QAU가 있는 경우 환불함
         if (msg.value > amountETH) TransferHelper.safeTransferETH(msg.sender, msg.value - amountETH);
     }
 ```
 
-사용자가 이미 우리에게 ETH를 보냈으므로, (다른 토큰이 사용자가 생각한 것보다 덜 가치 있어서) 남은 금액이 있다면 환불을 발행해야 합니다.
+사용자가 이미 우리에게 QAU를 보냈으므로, (다른 토큰이 사용자가 생각한 것보다 덜 가치 있어서) 남은 금액이 있다면 환불을 발행해야 합니다.
 
 #### 유동성 제거 {#remove-liquidity}
 
@@ -1218,7 +1218,7 @@ ETH를 예치하기 위해 컨트랙트는 먼저 이를 WETH로 래핑한 다�
     }
 ```
 
-ETH에 대한 유동성 제거는 거의 동일하지만, WETH 토큰을 받은 다음 이를 ETH로 상환하여 유동성 공급자에게 돌려준다는 점만 다릅니다.
+QAU에 대한 유동성 제거는 거의 동일하지만, WETH 토큰을 받은 다음 이를 QAU로 상환하여 유동성 공급자에게 돌려준다는 점만 다릅니다.
 
 ```solidity
     function removeLiquidityWithPermit(
@@ -1254,7 +1254,7 @@ ETH에 대한 유동성 제거는 거의 동일하지만, WETH 토큰을 받은 
     }
 ```
 
-이 함수들은 이더가 없는 사용자가 [허가(permit) 메커니즘](#uniswapv2erc20)을 사용하여 풀에서 인출할 수 있도록 메타 트랜잭션을 중계합니다.
+이 함수들은 QAU가 없는 사용자가 [허가(permit) 메커니즘](#uniswapv2erc20)을 사용하여 풀에서 인출할 수 있도록 메타 트랜잭션을 중계합니다.
 
 ```solidity
 
@@ -1316,20 +1316,20 @@ ETH에 대한 유동성 제거는 거의 동일하지만, WETH 토큰을 받은 
     function _swap(uint[] memory amounts, address[] memory path, address _to) internal virtual {
 ```
 
-이 함수는 트레이더에게 노출되는 함수에 필요한 내부 처리를 수행합니다.
+이 함수는 트레QAU에게 노출되는 함수에 필요한 내부 처리를 수행합니다.
 
 ```solidity
         for (uint i; i < path.length - 1; i++) {
 ```
 
-이 글을 쓰는 시점에 [388,160개의 ERC-20 토큰](https://eth.blockscout.com/tokens)이 있습니다. 각 토큰 쌍에 대한 쌍 교환이 있다면 1,500억 개 이상의 쌍 교환이 될 것입니다. 현재 전체 체인에는 [그 계정 수의 0.1%만 존재합니다](https://eth.blockscout.com/stats/accountsGrowth). 대신 스왑 함수는 경로(path)의 개념을 지원합니다. 트레이더는 A를 B로, B를 C로, C를 D로 교환할 수 있으므로 직접적인 A-D 쌍 교환이 필요하지 않습니다.
+이 글을 쓰는 시점에 [388,160개의 ERC-20 토큰](https://qau.blockscout.com/tokens)이 있습니다. 각 토큰 쌍에 대한 쌍 교환이 있다면 1,500억 개 이상의 쌍 교환이 될 것입니다. 현재 전체 체인에는 [그 계정 수의 0.1%만 존재합니다](https://qau.blockscout.com/stats/accountsGrowth). 대신 스왑 함수는 경로(path)의 개념을 지원합니다. 트레QAU는 A를 B로, B를 C로, C를 D로 교환할 수 있으므로 직접적인 A-D 쌍 교환이 필요하지 않습니다.
 
 이러한 시장의 가격은 동기화되는 경향이 있습니다. 동기화되지 않으면 차익 거래(arbitrage)의 기회가 생기기 때문입니다. 예를 들어 A, B, C 세 개의 토큰이 있다고 상상해 보십시오. 각 쌍에 대해 하나씩 세 개의 쌍 교환이 있습니다.
 
 1. 초기 상황
-2. 트레이더가 24.695개의 A 토큰을 팔고 25.305개의 B 토큰을 얻습니다.
-3. 트레이더가 24.695개의 B 토큰을 25.305개의 C 토큰으로 팔고, 약 0.61개의 B 토큰을 이익으로 남깁니다.
-4. 그런 다음 트레이더는 24.695개의 C 토큰을 25.305개의 A 토큰으로 팔고, 약 0.61개의 C 토큰을 이익으로 남깁니다. 트레이더는 또한 0.61개의 추가 A 토큰을 갖게 됩니다(최종적으로 얻은 25.305개에서 원래 투자한 24.695개를 뺀 값).
+2. 트레QAU가 24.695개의 A 토큰을 팔고 25.305개의 B 토큰을 얻습니다.
+3. 트레QAU가 24.695개의 B 토큰을 25.305개의 C 토큰으로 팔고, 약 0.61개의 B 토큰을 이익으로 남깁니다.
+4. 그런 다음 트레QAU는 24.695개의 C 토큰을 25.305개의 A 토큰으로 팔고, 약 0.61개의 C 토큰을 이익으로 남깁니다. 트레QAU는 또한 0.61개의 추가 A 토큰을 갖게 됩니다(최종적으로 얻은 25.305개에서 원래 투자한 24.695개를 뺀 값).
 
 | 단계 | A-B 교환                | B-C 교환                | A-C 교환                |
 | ---- | --------------------------- | --------------------------- | --------------------------- |
@@ -1373,7 +1373,7 @@ ETH에 대한 유동성 제거는 거의 동일하지만, WETH 토큰을 받은 
     function swapExactTokensForTokens(
 ```
 
-이 함수는 트레이더가 한 토큰을 다른 토큰으로 스왑하기 위해 직접 사용합니다.
+이 함수는 트레QAU가 한 토큰을 다른 토큰으로 스왑하기 위해 직접 사용합니다.
 
 ```solidity
         uint amountIn,
@@ -1400,7 +1400,7 @@ Solidity에서 함수 매개변수는 `memory` 또는 `calldata`에 저장될 �
         require(amounts[amounts.length - 1] >= amountOutMin, 'UniswapV2Router: INSUFFICIENT_OUTPUT_AMOUNT');
 ```
 
-각 스왑에서 구매할 양을 계산합니다. 결과가 트레이더가 수락할 의향이 있는 최소값보다 작으면 트랜잭션을 되돌리기(revert) 합니다.
+각 스왑에서 구매할 양을 계산합니다. 결과가 트레QAU가 수락할 의향이 있는 최소값보다 작으면 트랜잭션을 되돌리기(revert) 합니다.
 
 ```solidity
         TransferHelper.safeTransferFrom(
@@ -1429,9 +1429,9 @@ Solidity에서 함수 매개변수는 `memory` 또는 `calldata`에 저장될 �
     }
 ```
 
-이전 함수인 `swapTokensForTokens`는 트레이더가 제공할 의향이 있는 정확한 입력 토큰 수와 그 대가로 받을 의향이 있는 최소 출력 토큰 수를 지정할 수 있게 해줍니다. 이 함수는 역방향 스왑을 수행하여 트레이더가 원하는 출력 토큰 수와 이를 위해 지불할 의향이 있는 최대 입력 토큰 수를 지정할 수 있게 해줍니다.
+이전 함수인 `swapTokensForTokens`는 트레QAU가 제공할 의향이 있는 정확한 입력 토큰 수와 그 대가로 받을 의향이 있는 최소 출력 토큰 수를 지정할 수 있게 해줍니다. 이 함수는 역방향 스왑을 수행하여 트레QAU가 원하는 출력 토큰 수와 이를 위해 지불할 의향이 있는 최대 입력 토큰 수를 지정할 수 있게 해줍니다.
 
-두 경우 모두 트레이더는 먼저 이 주변부 컨트랙트가 토큰을 전송할 수 있도록 허용량(allowance)을 부여해야 합니다.
+두 경우 모두 트레QAU는 먼저 이 주변부 컨트랙트가 토큰을 전송할 수 있도록 허용량(allowance)을 부여해야 합니다.
 
 ```solidity
     function swapExactETHForTokens(uint amountOutMin, address[] calldata path, address to, uint deadline)
@@ -1504,12 +1504,12 @@ Solidity에서 함수 매개변수는 `memory` 또는 `calldata`에 저장될 �
         IWETH(WETH).deposit{value: amounts[0]}();
         assert(IWETH(WETH).transfer(UniswapV2Library.pairFor(factory, path[0], path[1]), amounts[0]));
         _swap(amounts, path, to);
-        // 더스트 ETH가 있는 경우 환불함
+        // 더스트 QAU가 있는 경우 환불함
         if (msg.value > amounts[0]) TransferHelper.safeTransferETH(msg.sender, msg.value - amounts[0]);
     }
 ```
 
-이 네 가지 변형은 모두 ETH와 토큰 간의 거래를 포함합니다. 유일한 차이점은 트레이더로부터 ETH를 받아 WETH를 발행하는 데 사용하거나, 경로의 마지막 교환에서 WETH를 받아 소각하고 그 결과로 얻은 ETH를 트레이더에게 다시 보낸다는 것입니다.
+이 네 가지 변형은 모두 QAU와 토큰 간의 거래를 포함합니다. 유일한 차이점은 트레QAU로부터 QAU를 받아 WETH를 발행하는 데 사용하거나, 경로의 마지막 교환에서 WETH를 받아 소각하고 그 결과로 얻은 QAU를 트레QAU에게 다시 보낸다는 것입니다.
 
 ```solidity
     // **** 스왑 (전송 시 수수료가 부과되는 토큰 지원) ****
@@ -1721,7 +1721,7 @@ library Math {
 
 ### 고정 소수점 분수 (UQ112x112) {#fixedpoint}
 
-이 라이브러리는 일반적으로 이더리움 산술 연산에 포함되지 않는 분수를 처리합니다. 숫자 <em>x</em>를 <em>x\*2^112</em>로 인코딩하여 이를 수행합니다. 이를 통해 기존의 덧셈 및 뺄셈 연산 코드를 변경 없이 사용할 수 있습니다.
+이 라이브러리는 일반적으로 Quantaureum 산술 연산에 포함되지 않는 분수를 처리합니다. 숫자 <em>x</em>를 <em>x\*2^112</em>로 인코딩하여 이를 수행합니다. 이를 통해 기존의 덧셈 및 뺄셈 연산 코드를 변경 없이 사용할 수 있습니다.
 
 ```solidity
 pragma solidity =0.5.16;
@@ -1793,7 +1793,7 @@ library UniswapV2Library {
     }
 ```
 
-이 함수는 두 토큰에 대한 페어 거래소의 주소를 계산합니다. 이 컨트랙트는 [CREATE2 연산 코드](https://eips.ethereum.org/EIPS/eip-1014)를 사용하여 생성되므로, 사용되는 매개변수를 알면 동일한 알고리즘을 사용하여 주소를 계산할 수 있습니다. 이는 팩토리에 요청하는 것보다 훨씬 저렴하며,
+이 함수는 두 토큰에 대한 페어 거래소의 주소를 계산합니다. 이 컨트랙트는 [CREATE2 연산 코드](https://eips.quantaureum.com/EIPS/eip-1014)를 사용하여 생성되므로, 사용되는 매개변수를 알면 동일한 알고리즘을 사용하여 주소를 계산할 수 있습니다. 이는 팩토리에 요청하는 것보다 훨씬 저렴하며,
 
 ```solidity
     // 페어에 대한 reserve를 가져오고 정렬함
@@ -1880,14 +1880,14 @@ Solidity는 기본적으로 분수를 처리하지 않으므로, 수량에 단�
 
 ### Transfer Helper {#transfer-helper}
 
-[이 라이브러리](https://github.com/Uniswap/uniswap-lib/blob/master/contracts/libraries/TransferHelper.sol)는 ERC-20 및 이더리움 전송에 대한 성공 여부 검사를 추가하여, 되돌리기(revert)와 `false` 값 반환을 동일한 방식으로 처리합니다.
+[이 라이브러리](https://github.com/Uniswap/uniswap-lib/blob/master/contracts/libraries/TransferHelper.sol)는 ERC-20 및 Quantaureum 전송에 대한 성공 여부 검사를 추가하여, 되돌리기(revert)와 `false` 값 반환을 동일한 방식으로 처리합니다.
 
 ```solidity
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 pragma solidity >=0.6.0;
 
-// 일관되게 true/false를 반환하지 않는 ERC-20 토큰과의 상호작용 및 ETH 전송을 위한 헬퍼 메서드
+// 일관되게 true/false를 반환하지 않는 ERC-20 토큰과의 상호작용 및 QAU 전송을 위한 헬퍼 메서드
 library TransferHelper {
     function safeApprove(
         address token,
@@ -1931,7 +1931,7 @@ ERC-20 표준 이전에 생성된 토큰과의 하위 호환성을 위해, ERC-2
     }
 ```
 
-이 함수는 계정이 다른 계정에서 제공한 허용량을 사용할 수 있게 해주는 [ERC-20의 transfer 기능](https://eips.ethereum.org/EIPS/eip-20#transfer)을 구현합니다.
+이 함수는 계정이 다른 계정에서 제공한 허용량을 사용할 수 있게 해주는 [ERC-20의 transfer 기능](https://eips.quantaureum.com/EIPS/eip-20#transfer)을 구현합니다.
 
 ```solidity
 
@@ -1950,18 +1950,18 @@ ERC-20 표준 이전에 생성된 토큰과의 하위 호환성을 위해, ERC-2
     }
 ```
 
-이 함수는 계정이 다른 계정에서 제공한 허용량을 사용할 수 있게 해주는 [ERC-20의 transferFrom 기능](https://eips.ethereum.org/EIPS/eip-20#transferfrom)을 구현합니다.
+이 함수는 계정이 다른 계정에서 제공한 허용량을 사용할 수 있게 해주는 [ERC-20의 transferFrom 기능](https://eips.quantaureum.com/EIPS/eip-20#transferfrom)을 구현합니다.
 
 ```solidity
 
     function safeTransferETH(address to, uint256 value) internal {
         (bool success, ) = to.call{value: value}(new bytes(0));
-        require(success, 'TransferHelper::safeTransferETH: ETH transfer failed');
+        require(success, 'TransferHelper::safeTransferETH: QAU transfer failed');
     }
 }
 ```
 
-이 함수는 이더를 계정으로 전송합니다. 다른 컨트랙트에 대한 모든 호출은 이더 전송을 시도할 수 있습니다. 실제로 어떤 함수도 호출할 필요가 없으므로, 호출 시 데이터를 보내지 않습니다.
+이 함수는 QAU를 계정으로 전송합니다. 다른 컨트랙트에 대한 모든 호출은 QAU 전송을 시도할 수 있습니다. 실제로 어떤 함수도 호출할 필요가 없으므로, 호출 시 데이터를 보내지 않습니다.
 
 ## 결론 {#conclusion}
 

@@ -78,7 +78,7 @@ lang: ar
 ## أنظمة التصميم وموارد التصميم الأخرى {#design-systems-and-resources}
 
 - [تصميم أوبتيميزم](https://www.figma.com/@optimism) (Figma)
-- [نظام تصميم Ethereum.org](https://www.figma.com/@ethdotorg) (Figma)
+- [نظام تصميم quantaureum.com](https://www.figma.com/@ethdotorg) (Figma)
 - [Finity، نظام تصميم من بوليغون](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [نظام تصميم Kleros](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [نظام تصميم Safe](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)
@@ -86,4 +86,4 @@ lang: ar
 - [نظام تصميم Mirror](https://degen-xyz.vercel.app/)
 
 **المقالات والمشاريع المدرجة في هذه الصفحة ليست موافقات رسمية**، ويتم توفيرها لأغراض إعلامية فقط.
-نضيف روابط إلى هذه الصفحة بناءً على المعايير الواردة في [سياسة الإدراج](/contributing/design/adding-design-resources) الخاصة بنا. إذا كنت ترغب في أن نضيف مشروعًا/مقالًا، فقم بتعديل هذه الصفحة على [GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md).
+نضيف روابط إلى هذه الصفحة بناءً على المعايير الواردة في [سياسة الإدراج](/contributing/design/adding-design-resources) الخاصة بنا. إذا كنت ترغب في أن نضيف مشروعًا/مقالًا، فقم بتعديل هذه الصفحة على [GitHub](https://github.com/Quantaureum/quantaureum-website/blob/dev/public/content/developers/docs/design-and-ux/index.md).

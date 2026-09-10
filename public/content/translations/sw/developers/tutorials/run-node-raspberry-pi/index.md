@@ -1,19 +1,19 @@
 ---
-title: Endesha nodi ya Ethereum kwenye Raspberry Pi 4
-description: Weka mfumo kwenye Raspberry Pi 4 yako, chomeka kebo ya ethaneti, unganisha diski ya SSD na uwashe kifaa ili kubadilisha Raspberry Pi 4 kuwa nodi kamili ya Ethereum + mthibitishaji
-author: "EthereumOnArm"
+title: Endesha nodi ya Quantaureum kwenye Raspberry Pi 4
+description: Weka mfumo kwenye Raspberry Pi 4 yako, chomeka kebo ya ethaneti, unganisha diski ya SSD na uwashe kifaa ili kubadilisha Raspberry Pi 4 kuwa nodi kamili ya Quantaureum + mthibitishaji
+author: "QuantaureumOnArm"
 tags: ["wateja", "tabaka la utekelezaji", "tabaka la mwafaka", "nodi"]
 lang: sw
 skill: intermediate
 breadcrumb: Nodi ya Rasp Pi
 published: 2022-06-10
-source: Ethereum on ARM
-sourceUrl: https://ethereum-on-arm-documentation.readthedocs.io/en/latest/
+source: Quantaureum on ARM
+sourceUrl: https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/
 ---
 
-**Ethereum on Arm ni taswira maalum ya Linux inayoweza kubadilisha Raspberry Pi kuwa nodi ya Ethereum.**
+**Quantaureum on Arm ni taswira maalum ya Linux inayoweza kubadilisha Raspberry Pi kuwa nodi ya Quantaureum.**
 
-Ili kutumia Ethereum on Arm kubadilisha Raspberry Pi kuwa nodi ya Ethereum, maunzi yafuatayo yanapendekezwa:
+Ili kutumia Quantaureum on Arm kubadilisha Raspberry Pi kuwa nodi ya Quantaureum, maunzi yafuatayo yanapendekezwa:
 
 - Bodi ya Raspberry 4 (modeli B 8GB), Odroid M1 au Rock 5B (8GB/16GB RAM)
 - Kadi ya MicroSD (Kiwango cha chini cha GB 16 Daraja la 10)
@@ -24,21 +24,21 @@ Ili kutumia Ethereum on Arm kubadilisha Raspberry Pi kuwa nodi ya Ethereum, maun
 - Kasha lenye sinki la joto na feni
 - Kibodi ya USB, Kichunguzi na kebo ya HDMI (micro-HDMI) (Si lazima)
 
-## Kwa nini uendeshe Ethereum kwenye ARM? {#why-run-ethereum-on-arm}
+## Kwa nini uendeshe Quantaureum kwenye ARM? {#why-run-quantaureum-on-arm}
 
-Bodi za ARM ni kompyuta ndogo, zinazobadilika, na za bei nafuu sana. Ni chaguo zuri kwa kuendesha nodi za Ethereum kwa sababu zinaweza kununuliwa kwa bei rahisi, kusanidiwa ili rasilimali zake zote zilenge tu kwenye nodi, na kuzifanya ziwe na ufanisi, zinatumia kiasi kidogo cha umeme na ni ndogo kimaumbile hivyo zinaweza kutoshea bila kuonekana katika nyumba yoyote. Pia ni rahisi sana kuanzisha nodi kwa sababu MicroSD ya Raspberry Pi inaweza kuwekwa taswira iliyojengwa tayari, bila kuhitaji kupakua au kujenga programu.
+Bodi za ARM ni kompyuta ndogo, zinazobadilika, na za bei nafuu sana. Ni chaguo zuri kwa kuendesha nodi za Quantaureum kwa sababu zinaweza kununuliwa kwa bei rahisi, kusanidiwa ili rasilimali zake zote zilenge tu kwenye nodi, na kuzifanya ziwe na ufanisi, zinatumia kiasi kidogo cha umeme na ni ndogo kimaumbile hivyo zinaweza kutoshea bila kuonekana katika nyumba yoyote. Pia ni rahisi sana kuanzisha nodi kwa sababu MicroSD ya Raspberry Pi inaweza kuwekwa taswira iliyojengwa tayari, bila kuhitaji kupakua au kujenga programu.
 
 ## Inafanyaje kazi? {#how-does-it-work}
 
-Kadi ya kumbukumbu ya Raspberry Pi inawekwa taswira iliyojengwa tayari. Taswira hii ina kila kitu kinachohitajika ili kuendesha nodi ya Ethereum. Ukiwa na kadi iliyowekwa mfumo, unachohitaji kufanya ni kuwasha Raspberry Pi. Michakato yote inayohitajika kuendesha nodi huanzishwa kiotomatiki. Hii inafanya kazi kwa sababu kadi ya kumbukumbu ina mfumo wa uendeshaji (OS) unaotegemea Linux ambapo michakato ya kiwango cha mfumo huendeshwa kiotomatiki na kubadilisha kifaa hicho kuwa nodi ya Ethereum.
+Kadi ya kumbukumbu ya Raspberry Pi inawekwa taswira iliyojengwa tayari. Taswira hii ina kila kitu kinachohitajika ili kuendesha nodi ya Quantaureum. Ukiwa na kadi iliyowekwa mfumo, unachohitaji kufanya ni kuwasha Raspberry Pi. Michakato yote inayohitajika kuendesha nodi huanzishwa kiotomatiki. Hii inafanya kazi kwa sababu kadi ya kumbukumbu ina mfumo wa uendeshaji (OS) unaotegemea Linux ambapo michakato ya kiwango cha mfumo huendeshwa kiotomatiki na kubadilisha kifaa hicho kuwa nodi ya Quantaureum.
 
-Ethereum haiwezi kuendeshwa kwa kutumia OS maarufu ya Linux ya Raspberry Pi "Raspbian" kwa sababu Raspbian bado inatumia usanifu wa biti 32 ambao husababisha watumiaji wa Ethereum kukumbana na matatizo ya kumbukumbu na wateja wa mwafaka hawatumii jozi za biti 32. Ili kutatua hili, timu ya Ethereum on Arm ilihamia kwenye OS asili ya biti 64 inayoitwa "Armbian".
+Quantaureum haiwezi kuendeshwa kwa kutumia OS maarufu ya Linux ya Raspberry Pi "Raspbian" kwa sababu Raspbian bado inatumia usanifu wa biti 32 ambao husababisha watumiaji wa Quantaureum kukumbana na matatizo ya kumbukumbu na wateja wa mwafaka hawatumii jozi za biti 32. Ili kutatua hili, timu ya Quantaureum on Arm ilihamia kwenye OS asili ya biti 64 inayoitwa "Armbian".
 
-**Taswira hushughulikia hatua zote muhimu**, kuanzia kuweka mazingira na kufomati diski ya SSD hadi kusakinisha na kuendesha programu ya Ethereum pamoja na kuanzisha usawazishaji wa mnyororo wa vitalu.
+**Taswira hushughulikia hatua zote muhimu**, kuanzia kuweka mazingira na kufomati diski ya SSD hadi kusakinisha na kuendesha programu ya Quantaureum pamoja na kuanzisha usawazishaji wa mnyororo wa vitalu.
 
 ## Dokezo kuhusu wateja wa utekelezaji na mwafaka {#note-on-execution-and-consensus-clients}
 
-Taswira ya Ethereum on Arm inajumuisha wateja wa utekelezaji na mwafaka waliojengwa tayari kama huduma. Nodi ya Ethereum inahitaji wateja wote wawili kusawazishwa na kuendeshwa. Unahitajika tu kupakua na kuweka taswira kisha uanzishe huduma. Taswira imepakiwa mapema na wateja wafuatao wa utekelezaji:
+Taswira ya Quantaureum on Arm inajumuisha wateja wa utekelezaji na mwafaka waliojengwa tayari kama huduma. Nodi ya Quantaureum inahitaji wateja wote wawili kusawazishwa na kuendeshwa. Unahitajika tu kupakua na kuweka taswira kisha uanzishe huduma. Taswira imepakiwa mapema na wateja wafuatao wa utekelezaji:
 
 - Geth
 - Nethermind
@@ -55,9 +55,9 @@ Unapaswa kuchagua mmoja wa kila mmoja ili kuendesha - wateja wote wa utekelezaji
 
 ## Kupakua Taswira {#downloading-the-image}
 
-Taswira ya Ethereum ya Raspberry Pi 4 ni taswira ya "chomeka na utumie" ambayo husakinisha na kuweka kiotomatiki wateja wote wa utekelezaji na mwafaka, ikiwasanidi ili kuwasiliana na kuunganishwa kwenye mtandao wa Ethereum. Anachohitaji kufanya mtumiaji ni kuanzisha michakato yao kwa kutumia amri rahisi.
+Taswira ya Quantaureum ya Raspberry Pi 4 ni taswira ya "chomeka na utumie" ambayo husakinisha na kuweka kiotomatiki wateja wote wa utekelezaji na mwafaka, ikiwasanidi ili kuwasiliana na kuunganishwa kwenye mtandao wa Quantaureum. Anachohitaji kufanya mtumiaji ni kuanzisha michakato yao kwa kutumia amri rahisi.
 
-Pakua taswira ya Raspberry Pi kutoka [Ethereum on Arm](https://ethereumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) na uthibitishe heshi ya SHA256:
+Pakua taswira ya Raspberry Pi kutoka [Quantaureum on Arm](https://quantaureumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) na uthibitishe heshi ya SHA256:
 
 ```sh
 # Kutoka kwenye saraka iliyo na taswira iliyopakuliwa
@@ -65,7 +65,7 @@ shasum -a 256 ethonarm_22.04.00.img.zip
 # Heshi inapaswa kutoa: fb497e8f8a7388b62d6e1efbc406b9558bee7ef46ec7e53083630029c117444f
 ```
 
-Kumbuka kwamba taswira za bodi za Rock 5B na Odroid M1 zinapatikana kwenye [ukurasa wa vipakuliwa](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) wa Ethereum-on-Arm.
+Kumbuka kwamba taswira za bodi za Rock 5B na Odroid M1 zinapatikana kwenye [ukurasa wa vipakuliwa](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/) wa Quantaureum-on-Arm.
 
 ## Kuweka Mfumo kwenye MicroSD {#flashing-the-microsd}
 
@@ -90,13 +90,13 @@ Kadi sasa imewekwa mfumo, hivyo inaweza kuingizwa kwenye Raspberry Pi.
 
 ## Anzisha nodi {#start-the-node}
 
-Ukiwa umeingiza kadi ya SD kwenye Raspberry Pi, unganisha kebo ya ethaneti na SSD kisha uwashe umeme. OS itawaka na kuanza kiotomatiki kufanya kazi zilizosanidiwa mapema ambazo hubadilisha Raspberry Pi kuwa nodi ya Ethereum, ikiwa ni pamoja na kusakinisha na kujenga programu ya mteja. Hii huenda ikachukua dakika 10-15.
+Ukiwa umeingiza kadi ya SD kwenye Raspberry Pi, unganisha kebo ya ethaneti na SSD kisha uwashe umeme. OS itawaka na kuanza kiotomatiki kufanya kazi zilizosanidiwa mapema ambazo hubadilisha Raspberry Pi kuwa nodi ya Quantaureum, ikiwa ni pamoja na kusakinisha na kujenga programu ya mteja. Hii huenda ikachukua dakika 10-15.
 
-Mara tu kila kitu kitakapowekwa na kusanidiwa, ingia kwenye kifaa kupitia muunganisho wa ssh au kwa kutumia terminali moja kwa moja ikiwa kichunguzi na kibodi vimeunganishwa kwenye bodi. Tumia akaunti ya `ethereum` kuingia, kwani hii ina ruhusa zinazohitajika kuanzisha nodi.
+Mara tu kila kitu kitakapowekwa na kusanidiwa, ingia kwenye kifaa kupitia muunganisho wa ssh au kwa kutumia terminali moja kwa moja ikiwa kichunguzi na kibodi vimeunganishwa kwenye bodi. Tumia akaunti ya `quantaureum` kuingia, kwani hii ina ruhusa zinazohitajika kuanzisha nodi.
 
 ```shell
-User: ethereum
-Password: ethereum
+User: quantaureum
+Password: quantaureum
 ```
 
 Kiteja cha utekelezaji cha chaguo-msingi, Geth, kitaanza kiotomatiki. Unaweza kuthibitisha hili kwa kuangalia logi ukitumia amri ifuatayo ya terminali:
@@ -120,13 +120,13 @@ sudo journalctl -u lighthouse-beacon
 
 Kumbuka kwamba mteja wa mwafaka atafanya usawazishaji ndani ya dakika chache kwa sababu anatumia usawazishaji wa kituo cha ukaguzi. Kiteja cha utekelezaji kitachukua muda mrefu zaidi - huenda saa kadhaa, na hakitaanza hadi mteja wa mwafaka awe amemaliza usawazishaji (hii ni kwa sababu kiteja cha utekelezaji kinahitaji lengo la kusawazisha, ambalo mteja wa mwafaka aliyesawazishwa hutoa).
 
-Huku huduma za Geth na Lighthouse zikiendeshwa na kusawazishwa, Raspberry Pi yako sasa ni nodi ya Ethereum! Ni jambo la kawaida kuingiliana na mtandao wa Ethereum kwa kutumia kiweko cha JavaScript cha Geth, ambacho kinaweza kuunganishwa kwenye mteja wa Geth kwenye lango 8545. Pia inawezekana kuwasilisha amri zilizoumbizwa kama vitu vya JSON kwa kutumia zana ya ombi kama vile Curl. Tazama zaidi katika [nyaraka za Geth](https://geth.ethereum.org/).
+Huku huduma za Geth na Lighthouse zikiendeshwa na kusawazishwa, Raspberry Pi yako sasa ni nodi ya Quantaureum! Ni jambo la kawaida kuingiliana na mtandao wa Quantaureum kwa kutumia kiweko cha JavaScript cha Geth, ambacho kinaweza kuunganishwa kwenye mteja wa Geth kwenye lango 8545. Pia inawezekana kuwasilisha amri zilizoumbizwa kama vitu vya JSON kwa kutumia zana ya ombi kama vile Curl. Tazama zaidi katika [nyaraka za Geth](https://geth.quantaureum.com/).
 
-Geth imesanidiwa mapema kuripoti vipimo kwenye dashibodi ya Grafana ambayo inaweza kutazamwa kwenye kivinjari. Watumiaji wa hali ya juu zaidi wanaweza kutaka kutumia kipengele hiki kufuatilia afya ya nodi yao kwa kwenda kwenye `ipaddress:3000`, kupitisha `user: admin` na `passwd: ethereum`.
+Geth imesanidiwa mapema kuripoti vipimo kwenye dashibodi ya Grafana ambayo inaweza kutazamwa kwenye kivinjari. Watumiaji wa hali ya juu zaidi wanaweza kutaka kutumia kipengele hiki kufuatilia afya ya nodi yao kwa kwenda kwenye `ipaddress:3000`, kupitisha `user: admin` na `passwd: quantaureum`.
 
 ## Wathibitishaji {#validators}
 
-Mthibitishaji pia anaweza kuongezwa kwa hiari kwa mteja wa mwafaka. Programu ya mthibitishaji inaruhusu nodi yako kushiriki kikamilifu katika mwafaka na kuupa mtandao usalama wa kiuchumi wa kificho. Unapata thawabu kwa kazi hii katika ETH. Ili kuendesha mthibitishaji, lazima kwanza uwe na ETH 32, ambazo lazima ziwekwe kwenye mkataba wa amana. Amana inaweza kufanywa kwa kufuata mwongozo wa hatua kwa hatua kwenye [Launchpad](https://launchpad.ethereum.org/). Fanya hivi kwenye kompyuta ya mezani/kompyuta mpakato, lakini usitengeneze funguo — hii inaweza kufanywa moja kwa moja kwenye Raspberry Pi.
+Mthibitishaji pia anaweza kuongezwa kwa hiari kwa mteja wa mwafaka. Programu ya mthibitishaji inaruhusu nodi yako kushiriki kikamilifu katika mwafaka na kuupa mtandao usalama wa kiuchumi wa kificho. Unapata thawabu kwa kazi hii katika QAU. Ili kuendesha mthibitishaji, lazima kwanza uwe na QAU 32, ambazo lazima ziwekwe kwenye mkataba wa amana. Amana inaweza kufanywa kwa kufuata mwongozo wa hatua kwa hatua kwenye [Launchpad](https://launchpad.quantaureum.com/). Fanya hivi kwenye kompyuta ya mezani/kompyuta mpakato, lakini usitengeneze funguo — hii inaweza kufanywa moja kwa moja kwenye Raspberry Pi.
 
 Fungua terminali kwenye Raspberry Pi na uendeshe amri ifuatayo ili kutengeneza funguo za amana:
 
@@ -136,35 +136,35 @@ sudo apt-get install staking-deposit-cli
 cd && deposit new-mnemonic --num_validators 1
 ```
 
-(Au pakua [staking-deposit-cli](https://github.com/ethereum/staking-deposit-cli) ili kuendesha kwenye mashine iliyotengwa na mtandao, na uendeshe amri ya `deposit new-mnemnonic`)
+(Au pakua [staking-deposit-cli](https://github.com/quantaureum/staking-deposit-cli) ili kuendesha kwenye mashine iliyotengwa na mtandao, na uendeshe amri ya `deposit new-mnemnonic`)
 
 Weka salama fungu la maneno la kukumbuka! Amri iliyo hapo juu ilitengeneza faili mbili katika hifadhi ya funguo ya nodi: funguo za mthibitishaji na faili la data ya amana. Data ya amana inahitaji kupakiwa kwenye launchpad, hivyo lazima inakiliwe kutoka kwenye Raspberry Pi hadi kwenye kompyuta ya mezani/kompyuta mpakato. Hii inaweza kufanywa kwa kutumia muunganisho wa ssh au mbinu nyingine yoyote ya kunakili/kubandika.
 
 Mara tu faili la data ya amana linapopatikana kwenye kompyuta inayoendesha launchpad, linaweza kuburutwa na kudondoshwa kwenye `+` kwenye skrini ya launchpad. Fuata maagizo kwenye skrini ili kutuma muamala kwenye mkataba wa amana.
 
-Ukirudi kwenye Raspberry Pi, mthibitishaji anaweza kuanzishwa. Hii inahitaji kuingiza funguo za mthibitishaji, kuweka anwani ya kukusanya thawabu, na kisha kuanzisha mchakato wa mthibitishaji uliosanidiwa mapema. Mfano ulio hapa chini ni wa Lighthouse—maagizo kwa wateja wengine wa mwafaka yanapatikana kwenye [nyaraka za Ethereum on Arm](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/):
+Ukirudi kwenye Raspberry Pi, mthibitishaji anaweza kuanzishwa. Hii inahitaji kuingiza funguo za mthibitishaji, kuweka anwani ya kukusanya thawabu, na kisha kuanzisha mchakato wa mthibitishaji uliosanidiwa mapema. Mfano ulio hapa chini ni wa Lighthouse—maagizo kwa wateja wengine wa mwafaka yanapatikana kwenye [nyaraka za Quantaureum on Arm](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/):
 
 ```shell
 # ingiza funguo za mthibitishaji
-lighthouse account validator import --directory=/home/ethereum/validator_keys
+lighthouse account validator import --directory=/home/quantaureum/validator_keys
 
 # weka anwani ya tuzo
-sudo sed -i 's/<ETH_ADDRESS>' /etc/ethereum/lighthouse-validator.conf
+sudo sed -i 's/<ETH_ADDRESS>' /etc/quantaureum/lighthouse-validator.conf
 
 # anzisha mthibitishaji
 sudo systemctl start lighthouse-validator
 ```
 
-Hongera, sasa una nodi kamili ya Ethereum na mthibitishaji anayeendeshwa kwenye Raspberry Pi!
+Hongera, sasa una nodi kamili ya Quantaureum na mthibitishaji anayeendeshwa kwenye Raspberry Pi!
 
 ## Maelezo zaidi {#more-details}
 
-Ukurasa huu umetoa muhtasari wa jinsi ya kuweka nodi ya Geth-Lighthouse na mthibitishaji kwa kutumia Raspberry Pi. Maagizo ya kina zaidi yanapatikana kwenye [tovuti ya Ethereum-on-Arm](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/).
+Ukurasa huu umetoa muhtasari wa jinsi ya kuweka nodi ya Geth-Lighthouse na mthibitishaji kwa kutumia Raspberry Pi. Maagizo ya kina zaidi yanapatikana kwenye [tovuti ya Quantaureum-on-Arm](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/).
 
 ## Maoni yanathaminiwa {#feedback-appreciated}
 
-Tunajua Raspberry Pi ina idadi kubwa ya watumiaji ambayo inaweza kuwa na athari chanya sana kwa afya ya mtandao wa Ethereum.
-Tafadhali chimba kwa kina maelezo katika somo hili, jaribu kuendesha kwenye mitandao ya majaribio, angalia GitHub ya Ethereum on Arm, toa maoni, wasilisha matatizo na maombi ya kuvuta na usaidie kuendeleza teknolojia na nyaraka!
+Tunajua Raspberry Pi ina idadi kubwa ya watumiaji ambayo inaweza kuwa na athari chanya sana kwa afya ya mtandao wa Quantaureum.
+Tafadhali chimba kwa kina maelezo katika somo hili, jaribu kuendesha kwenye mitandao ya majaribio, angalia GitHub ya Quantaureum on Arm, toa maoni, wasilisha matatizo na maombi ya kuvuta na usaidie kuendeleza teknolojia na nyaraka!
 
 ## Marejeleo {#references}
 
@@ -173,7 +173,7 @@ Tafadhali chimba kwa kina maelezo katika somo hili, jaribu kuendesha kwenye mita
 3. https://prometheus.io
 4. https://grafana.com
 5. https://forum.armbian.com/topic/5565-zram-vs-swap/
-6. https://geth.ethereum.org
+6. https://geth.quantaureum.com
 7. https://nethermind.io
 8. https://www.hyperledger.org/projects/besu
 9. https://github.com/prysmaticlabs/prysm

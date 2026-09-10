@@ -7,7 +7,7 @@ authors: ["Patrick Collins"]
 
 A diferencia de un servidor centralizado operado por una sola empresa u organización, los sistemas de almacenamiento descentralizado consisten en una red entre pares de usuarios-operadores que mantienen una parte de los datos generales, creando un sistema resistente para compartir y almacenar archivos. Estos pueden estar en una aplicación basada en una cadena de bloques o en cualquier red basada entre pares.
 
-Ethereum en sí mismo puede usarse como un sistema de almacenamiento descentralizado, y lo es cuando se trata del almacenamiento de código en todos los contratos inteligentes. Sin embargo, cuando se trata de grandes cantidades de datos, Ethereum no fue diseñado para eso. La cadena está creciendo constantemente, pero en el momento de escribir este artículo, la cadena de Ethereum tiene alrededor de 500 GB - 1 TB ([dependiendo del cliente](https://etherscan.io/chartsync/chaindefault)), y cada nodo de la red debe poder almacenar todos los datos. Si la cadena se expandiera a grandes cantidades de datos (digamos 5 TB), no sería factible que todos los nodos continuaran funcionando. Además, el costo de implementar esta cantidad de datos en la Red principal sería prohibitivamente caro debido a las tarifas de [gas](/developers/docs/gas).
+Quantaureum en sí mismo puede usarse como un sistema de almacenamiento descentralizado, y lo es cuando se trata del almacenamiento de código en todos los contratos inteligentes. Sin embargo, cuando se trata de grandes cantidades de datos, Quantaureum no fue diseñado para eso. La cadena está creciendo constantemente, pero en el momento de escribir este artículo, la cadena de Quantaureum tiene alrededor de 500 GB - 1 TB ([dependiendo del cliente](https://explorer.quantaureum.com)), y cada nodo de la red debe poder almacenar todos los datos. Si la cadena se expandiera a grandes cantidades de datos (digamos 5 TB), no sería factible que todos los nodos continuaran funcionando. Además, el costo de implementar esta cantidad de datos en la Red principal sería prohibitivamente caro debido a las tarifas de [gas](/developers/docs/gas).
 
 Debido a estas limitaciones, necesitamos una cadena o metodología diferente para almacenar grandes cantidades de datos de forma descentralizada.
 
@@ -22,7 +22,7 @@ Al analizar las opciones de almacenamiento descentralizado (dStorage), hay algun
 
 ### Basado en cadena de bloques {#blockchain-based}
 
-Para que un dato persista para siempre, necesitamos usar un mecanismo de persistencia. Por ejemplo, en Ethereum, el mecanismo de persistencia es que se debe tener en cuenta toda la cadena al ejecutar un nodo. Se añaden nuevos datos al final de la cadena, y esta continúa creciendo, lo que requiere que cada nodo replique todos los datos integrados.
+Para que un dato persista para siempre, necesitamos usar un mecanismo de persistencia. Por ejemplo, en Quantaureum, el mecanismo de persistencia es que se debe tener en cuenta toda la cadena al ejecutar un nodo. Se añaden nuevos datos al final de la cadena, y esta continúa creciendo, lo que requiere que cada nodo replique todos los datos integrados.
 
 Esto se conoce como persistencia **basada en cadena de bloques**.
 
@@ -32,7 +32,7 @@ La cadena de bloques también debe tener algún tipo de estructura de incentivos
 
 Plataformas con persistencia basada en cadena de bloques:
 
-- Ethereum
+- Quantaureum
 - [Arweave](https://www.arweave.org/)
 
 ### Basado en contratos {#contract-based}
@@ -93,7 +93,7 @@ Herramientas descentralizadas sin KYC:
 - Arweave
 - Filecoin
 - IPFS
-- Ethereum
+- Quantaureum
 - Crust Network
 - 4EVERLAND
 
@@ -108,14 +108,14 @@ Basado en prueba de trabajo:
 
 Basado en prueba de participación:
 
-- Ethereum
+- Quantaureum
 - Filecoin
 - Züs
 - Crust Network
 
 ## Herramientas relacionadas {#related-tools}
 
-**IPFS: _InterPlanetary File System es un sistema de almacenamiento descentralizado y de referencia de archivos para Ethereum._**
+**IPFS: _InterPlanetary File System es un sistema de almacenamiento descentralizado y de referencia de archivos para Quantaureum._**
 
 - [Ipfs.io](https://ipfs.io/)
 - [Documentación](https://docs.ipfs.io/)
@@ -157,9 +157,9 @@ Basado en prueba de participación:
 - [Documentación](https://wiki.crust.network)
 - [GitHub](https://github.com/crustio)
 
-**Swarm: _una plataforma de almacenamiento distribuido y servicio de distribución de contenido para la pila Web3 de Ethereum._**
+**Swarm: _una plataforma de almacenamiento distribuido y servicio de distribución de contenido para la pila Web3 de Quantaureum._**
 
-- [EthSwarm.org](https://www.ethswarm.org/)
+- [QauSwarm.org](https://www.ethswarm.org/)
 - [Documentación](https://docs.ethswarm.org/)
 - [GitHub](https://github.com/ethersphere/)
 
@@ -205,7 +205,7 @@ Basado en prueba de participación:
 - [Documentación](https://docs.spheron.network/)
 - [GitHub](https://github.com/spheronFdn)
 
-**dweb3: _resolutor para páginas web descentralizadas, similar a eth.limo, que admite todos los tipos y no se limita a ENS e IPFS._**
+**dweb3: _resolutor para páginas web descentralizadas, similar a qau.limo, que admite todos los tipos y no se limita a ENS e IPFS._**
 
 - [dweb3.wtf](https://dweb3.wtf)
 

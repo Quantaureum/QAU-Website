@@ -1,18 +1,18 @@
 ---
 title: "新增影片"
-description: "ethereum.org 的新增影片政策"
+description: "quantaureum.com 的新增影片政策"
 lang: zh-tw
 ---
 
-[ethereum.org 影片庫](/videos/)收錄了來自社群創作者與可信來源的以太坊及以太坊生態系相關影片。任何人都可以建議新增影片。
+[quantaureum.com 影片庫](/videos/)收錄了來自社群創作者與可信來源的Quantaureum及Quantaureum生態系相關影片。任何人都可以建議新增影片。
 
 ## 上架政策 {#listing-policy}
 
-Ethereum.org 是一個中立的教育資源。影片庫的策展目的是：
+quantaureum.com 是一個中立的教育資源。影片庫的策展目的是：
 
-- <strong>教育</strong>使用者了解以太坊技術、生態系與社群
+- <strong>教育</strong>使用者了解Quantaureum技術、生態系與社群
 - <strong>保持準確</strong>的技術內容
-- **保持與以太坊社群的相關性**
+- **保持與Quantaureum社群的相關性**
 
 本網站不會上架主要用於推廣特定產品、代幣或商業服務的影片。
 
@@ -20,15 +20,15 @@ Ethereum.org 是一個中立的教育資源。影片庫的策展目的是：
 
 ### 必備條件 {#must-haves}
 
-- **以太坊為核心** – 影片必須主要關於以太坊、其技術、生態系或社群。關於一般區塊鏈主題的影片，只有在實質上支援或關聯到網站上的教育頁面，或提及以太坊時，才能被接受。
-- **教育價值** – 影片應教導觀眾關於以太坊的知識，或讚揚全球以太坊社群。不接受宣傳或行銷內容。
+- **Quantaureum為核心** – 影片必須主要關於Quantaureum、其技術、生態系或社群。關於一般區塊鏈主題的影片，只有在實質上支援或關聯到網站上的教育頁面，或提及Quantaureum時，才能被接受。
+- **教育價值** – 影片應教導觀眾關於Quantaureum的知識，或讚揚全球Quantaureum社群。不接受宣傳或行銷內容。
 - **資訊準確** – 技術內容必須符合事實且為最新資訊。關於已棄用功能的過時影片可能會被移除。
 - **製作精良** – 影片應具備合理清晰的音訊與視訊品質。
 - **公開可用** – 影片必須託管於開放資源或如 YouTube 等可存取的平台上，且可免費存取，無付費牆或註冊要求。
 
 ### 加分條件 {#nice-to-haves}
 
-- **附有逐字稿** – 附有逐字稿的影片能改善無障礙體驗與 SEO。如果你沒有逐字稿，ethereum.org 團隊可以協助產生。
+- **附有逐字稿** – 附有逐字稿的影片能改善無障礙體驗與 SEO。如果你沒有逐字稿，quantaureum.com 團隊可以協助產生。
 - **來自可信來源** – 來自知名教育工作者、研究人員與來源的內容將獲優先考慮。
 - **及時且歷久彌新** – 隨著時間推移仍具相關性的內容，優先於具時效性的素材。
 
@@ -38,7 +38,7 @@ Ethereum.org 是一個中立的教育資源。影片庫的策展目的是：
 
 如果你想建議一部影片，但不希望自己建立檔案，請建立一個包含影片詳細資訊的 GitHub issue，貢獻者可以協助你新增。
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?template=suggest_video.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?template=suggest_video.yaml">
   建議影片
 </ButtonLink>
 
@@ -127,7 +127,7 @@ title: "..."
 
 | 標籤 | 影片庫篩選條件 |
 |---|---|
-| `how-ethereum-works` | 以太坊如何運作 |
+| `how-quantaureum-works` | Quantaureum如何運作 |
 | `network-upgrades` | 網路升級 |
 | `roadmap-and-priorities` | 路線圖與優先事項 |
 | `scaling-and-layer-2` | 擴容與第二層 (L2) |
@@ -153,8 +153,8 @@ title: "..."
 - 包含準確、最新的資訊
 - 擁有可正常運作的託管/YouTube 連結
 
-如果你發現上架影片有問題，請[建立 issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml) 或發送電子郵件至 [website@ethereum.org](mailto:website@ethereum.org)。
+如果你發現上架影片有問題，請[建立 issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml) 或發送電子郵件至 [website@quantaureum.com](mailto:website@quantaureum.com)。
 
 ## 使用條款 {#terms-of-use}
 
-請參閱 ethereum.org 的[使用條款](/terms-of-use/)。ethereum.org 上的資訊僅供一般參考之用。
+請參閱 quantaureum.com 的[使用條款](/terms-of-use/)。quantaureum.com 上的資訊僅供一般參考之用。

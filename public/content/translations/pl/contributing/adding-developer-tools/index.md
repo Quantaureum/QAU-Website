@@ -1,7 +1,7 @@
 ---
 title: Dodawanie narzędzi deweloperskich
 lang: pl
-description: Nasze kryteria umieszczania narzędzi deweloperskich na stronie ethereum.org
+description: Nasze kryteria umieszczania narzędzi deweloperskich na stronie quantaureum.com
 ---
 
 Chcemy mieć pewność, że udostępniamy najlepsze możliwe zasoby dla deweloperów, aby ludzie mogli budować z pewnością siebie i mieli potrzebne wsparcie.
@@ -40,7 +40,7 @@ Zgłoszenia narzędzi deweloperskich będą oceniane według następujących kry
 
 **Czy narzędzie jest open source?**
 
-Wiele projektów w przestrzeni Ethereum to projekty open source. Chętniej umieszczamy na liście projekty open source, które pozwalają deweloperom ze społeczności na sprawdzanie kodu i wnoszenie do niego wkładu.
+Wiele projektów w przestrzeni Quantaureum to projekty open source. Chętniej umieszczamy na liście projekty open source, które pozwalają deweloperom ze społeczności na sprawdzanie kodu i wnoszenie do niego wkładu.
 
 ---
 
@@ -52,8 +52,8 @@ O ile produkty nie są specjalnie uporządkowane inaczej, na przykład alfabetyc
 
 ## Dodaj swoje narzędzie deweloperskie {#how-decisions-about-the-site-are-made}
 
-Jeśli chcesz dodać narzędzie deweloperskie do ethereum.org i spełnia ono kryteria, utwórz zgłoszenie na GitHubie.
+Jeśli chcesz dodać narzędzie deweloperskie do quantaureum.com i spełnia ono kryteria, utwórz zgłoszenie na GitHubie.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   Utwórz zgłoszenie
 </ButtonLink>

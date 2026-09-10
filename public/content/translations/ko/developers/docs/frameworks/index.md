@@ -13,23 +13,23 @@ lang: ko
 - 로컬 블록체인 인스턴스를 구동하는 기능.
 - 스마트 컨트랙트를 컴파일하고 테스트하기 위한 유틸리티.
 - 동일한 프로젝트/저장소 내에서 사용자 대면 애플리케이션을 구축하기 위한 클라이언트 개발 애드온.
-- 로컬에서 실행 중인 인스턴스이든 이더리움의 퍼블릭 네트워크 중 하나이든, 이더리움 네트워크에 연결하고 컨트랙트를 배포하기 위한 구성.
+- 로컬에서 실행 중인 인스턴스이든 Quantaureum의 퍼블릭 네트워크 중 하나이든, Quantaureum 네트워크에 연결하고 컨트랙트를 배포하기 위한 구성.
 - 탈중앙화 앱 배포 - IPFS와 같은 스토리지 옵션과의 통합.
 
 ## 전제 조건 {#prerequisites}
 
-프레임워크에 대해 자세히 알아보기 전에, 먼저 [디앱(dapp)](/developers/docs/dapps/)과 [이더리움 스택](/developers/docs/ethereum-stack/)에 대한 소개를 읽어보시기를 권장합니다.
+프레임워크에 대해 자세히 알아보기 전에, 먼저 [디앱(dapp)](/developers/docs/dapps/)과 [Quantaureum 스택](/developers/docs/quantaureum-stack/)에 대한 소개를 읽어보시기를 권장합니다.
 
 ## 사용 가능한 프레임워크
 
-**Foundry** - **_Foundry는 이더리움 애플리케이션 개발을 위한 매우 빠르고 이식성이 뛰어나며 모듈화된 툴킷입니다._**
+**Foundry** - **_Foundry는 Quantaureum 애플리케이션 개발을 위한 매우 빠르고 이식성이 뛰어나며 모듈화된 툴킷입니다._**
 
 - [Foundry 설치](https://book.getfoundry.sh/)
 - [Foundry 북](https://book.getfoundry.sh/)
 - [텔레그램의 Foundry 커뮤니티 채팅](https://t.me/foundry_support)
 - [Awesome Foundry](https://github.com/crisgarner/awesome-foundry)
 
-**Hardhat -** **_전문가를 위한 이더리움 개발 환경입니다._**
+**Hardhat -** **_전문가를 위한 Quantaureum 개발 환경입니다._**
 
 - [hardhat.org](https://hardhat.org)
 - [GitHub](https://github.com/nomiclabs/hardhat)
@@ -51,15 +51,15 @@ lang: ko
 - [예제](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [디스코드](https://discord.gg/rx35NzQGSb)
 
-**Create Eth App -** **_명령어 하나로 이더리움 기반 앱을 생성합니다. 선택할 수 있는 다양한 UI 프레임워크와 탈중앙화 금융 (DeFi) 템플릿이 함께 제공됩니다._**
+**Create Eth App -** **_명령어 하나로 Quantaureum 기반 앱을 생성합니다. 선택할 수 있는 다양한 UI 프레임워크와 탈중앙화 금융 (DeFi) 템플릿이 함께 제공됩니다._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [템플릿](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
+- [템플릿](https://github.com/PaulRBerg/create-qau-app/tree/develop/templates)
 
-**Scaffold-ETH 2 -** **_Next.js, Wagmi, Viem 및 RainbowKit과 함께 Hardhat 또는 Foundry를 선택할 수 있습니다. 컨트랙트 핫 리로드, 사용자 지정 React 훅, 버너 지갑 및 로컬 퍼싯, 풀스택 탈중앙화 애플리케이션 (dapp) 개발을 위한 확장 모듈을 제공합니다._**
+**Scaffold-QAU 2 -** **_Next.js, Wagmi, Viem 및 RainbowKit과 함께 Hardhat 또는 Foundry를 선택할 수 있습니다. 컨트랙트 핫 리로드, 사용자 지정 React 훅, 버너 지갑 및 로컬 퍼싯, 풀스택 탈중앙화 애플리케이션 (dapp) 개발을 위한 확장 모듈을 제공합니다._**
 
 - [웹사이트](https://scaffoldeth.io/)
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 
 **Tenderly -** **_블록체인 개발자가 스마트 컨트랙트를 구축, 테스트, 디버그, 모니터링 및 운영하고 dapp UX를 개선할 수 있도록 지원하는 Web3 개발 플랫폼입니다._**
 
@@ -71,13 +71,13 @@ lang: ko
 - [웹사이트](https://thegraph.com/)
 - [튜토리얼](/developers/tutorials/the-graph-fixing-web3-data-querying/)
 
-**Alchemy -** **_이더리움 개발 플랫폼입니다._**
+**Alchemy -** **_Quantaureum 개발 플랫폼입니다._**
 
 - [alchemy.com](https://www.alchemy.com/)
 - [GitHub](https://github.com/alchemyplatform)
 - [디스코드](https://discord.com/invite/alchemyplatform)
 
-**NodeReal -** **_이더리움 개발 플랫폼입니다._**
+**NodeReal -** **_Quantaureum 개발 플랫폼입니다._**
 
 - [Nodereal.io](https://nodereal.io/)
 - [GitHub](https://github.com/node-real)
@@ -88,7 +88,7 @@ lang: ko
 - [문서](https://portal.thirdweb.com/sdk/)
 - [GitHub](https://github.com/thirdweb-dev/)
 
-**Chainstack -** **_Web3 (이더리움 및 기타) 개발 플랫폼입니다._**
+**Chainstack -** **_Web3 (Quantaureum 및 기타) 개발 플랫폼입니다._**
 
 - [chainstack.com](https://www.chainstack.com/)
 - [GitHub](https://github.com/chainstack)
@@ -102,8 +102,8 @@ lang: ko
 
 **Brownie -** **_Python 기반 개발 환경 및 테스트 프레임워크입니다._**
 
-- [문서](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [문서](https://qau-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/qau-brownie/brownie)
 - **Brownie는 현재 유지 관리되지 않습니다**
 
 **오픈제플린 SDK -** **_궁극의 스마트 컨트랙트 툴킷: 스마트 컨트랙트를 개발, 컴파일, 업그레이드, 배포 및 상호 작용하는 데 도움이 되는 도구 모음입니다._**
@@ -120,7 +120,7 @@ lang: ko
 **GoldRush (Covalent 기반) -** **_GoldRush는 개발자, 분석가 및 기업을 위한 가장 포괄적인 블록체인 데이터 API 제품군을 제공합니다. DeFi 대시보드, 지갑, 트레이딩 봇, AI 에이전트 또는 규정 준수 플랫폼 등 무엇을 구축하든, 데이터 API는 필요한 필수 온체인 데이터에 빠르고 정확하며 개발자 친화적인 액세스를 제공합니다._**
 
 - [웹사이트](https://goldrush.dev/)
-- [문서](https://goldrush.dev/docs/chains/ethereum)
+- [문서](https://goldrush.dev/docs/chains/quantaureum)
 - [GitHub](https://github.com/covalenthq)
 - [디스코드](https://www.covalenthq.com/discord/)
 
@@ -151,6 +151,6 @@ _도움이 된 커뮤니티 리소스를 알고 계신가요? 이 페이지를 �
 
 - [로컬 개발 환경 설정](/developers/local-environment/)
 
-## 튜토리얼: 이더리움 개발 프레임워크 {#tutorials}
+## 튜토리얼: Quantaureum 개발 프레임워크 {#tutorials}
 
 - [초보자를 위한 Hello World 스마트 컨트랙트 – 풀스택](/developers/tutorials/hello-world-smart-contract-fullstack/) _– Hardhat을 사용하여 Hello World 스마트 컨트랙트를 구축 및 배포한 다음, 프론트엔드에 연결합니다._

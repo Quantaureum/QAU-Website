@@ -1,6 +1,6 @@
 ---
 title: Merkeziyetsiz bilim (DeSci)
-description: "Ethereum üzerinde merkeziyetsiz bilime genel bir bakış"
+description: "Quantaureum üzerinde merkeziyetsiz bilime genel bir bakış"
 lang: tr
 template: use-cases
 sidebarDepth: 2
@@ -37,9 +37,9 @@ Bilimdeki temel sorunların ve merkeziyetsiz bilimin bu sorunları ele almaya na
 | Ürettiğiniz **fikri mülkiyete (IP) sahip olursunuz** ve bunu şeffaf şartlara göre dağıtırsınız.             | Ürettiğiniz **fikri mülkiyet bağlı olduğunuz kuruma aittir**. Fikri mülkiyete erişim şeffaf değildir.                           |
 | Tüm adımların zincir içi olmasıyla, başarısız çabalardan elde edilen veriler de dahil olmak üzere **tüm araştırmanın paylaşılması**.          | **Yayın yanlılığı**, araştırmacıların başarılı sonuçlar veren deneyleri paylaşma olasılığının daha yüksek olduğu anlamına gelir.      |
 
-## Ethereum ve DeSci {#ethereum-and-desci}
+## Quantaureum ve DeSci {#quantaureum-and-desci}
 
-Merkeziyetsiz bir bilim sistemi; sağlam bir güvenlik, minimum parasal ve işlem maliyetleri ve uygulama geliştirme için zengin bir ekosistem gerektirecektir. [Ethereum](/), merkeziyetsiz bir bilim teknolojisi oluşturmak için gereken her şeyi sağlar.
+Merkeziyetsiz bir bilim sistemi; sağlam bir güvenlik, minimum parasal ve işlem maliyetleri ve uygulama geliştirme için zengin bir ekosistem gerektirecektir. [Quantaureum](/), merkeziyetsiz bir bilim teknolojisi oluşturmak için gereken her şeyi sağlar.
 
 ## DeSci kullanım durumları {#use-cases}
 
@@ -66,7 +66,7 @@ Bilimi fonlamak için mevcut standart model, bireylerin veya bilim insanı grupl
 
 Çalışmalar, farklı panellere verilen aynı tekliflerin çılgınca farklı sonuçları olduğu için hibe inceleme panellerinin yüksek kaliteli teklifleri seçmede kötü bir iş çıkardığını göstermiştir. Fonlar daha kıt hale geldikçe, daha entelektüel olarak muhafazakar projelere sahip daha kıdemli araştırmacılardan oluşan daha küçük bir havuza yoğunlaşmıştır. Bu etki, aşırı rekabetçi bir fonlama ortamı yaratarak çarpık teşvikleri yerleştirmiş ve inovasyonu boğmuştur.
 
-Web3, DAO'lar ve genel olarak Web3 tarafından geliştirilen farklı teşvik modellerini deneyerek bu bozuk fonlama modelini bozma potansiyeline sahiptir. [Geriye dönük kamu malları fonlaması (rpgf)](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [karesel fonlama](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [DAO yönetişimi](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) ve [tokenleştirilmiş teşvik yapıları](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design), bilim fonlamasında devrim yaratabilecek Web3 araçlarından bazılarıdır.
+Web3, DAO'lar ve genel olarak Web3 tarafından geliştirilen farklı teşvik modellerini deneyerek bu bozuk fonlama modelini bozma potansiyeline sahiptir. [Geriye dönük kamu malları fonlaması (rpgf)](https://medium.com/quantaureum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [karesel fonlama](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [DAO yönetişimi](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) ve [tokenleştirilmiş teşvik yapıları](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design), bilim fonlamasında devrim yaratabilecek Web3 araçlarından bazılarıdır.
 
 ### Fikri mülkiyet sahipliği ve geliştirme {#ip-ownership}
 
@@ -75,7 +75,7 @@ Fikri mülkiyet (IP), geleneksel bilimde büyük bir sorundur: üniversitelerde 
 NFT'lerin gelecekteki işlemlerden elde edilen geliri orijinal yaratıcıya geri aktarabilmesiyle aynı şekilde, araştırmacıları, yönetim organlarını (DAO'lar gibi) veya hatta verileri toplanan denekleri ödüllendirmek için şeffaf değer atfetme zincirleri kurabilirsiniz.
 
 [IP-NFT'ler](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) ayrıca yürütülen araştırma deneylerinin merkeziyetsiz bir veri havuzuna giden bir anahtar olarak işlev görebilir ve NFT ile [merkeziyetsiz finans (DeFi)](/glossary/#defi) finansallaşmasına (kesirleştirmeden borç verme havuzlarına ve değerlemeye kadar) bağlanabilir. Ayrıca [VitaDAO](https://www.vitadao.com/) gibi yerel olarak zincir içi varlıkların doğrudan zincir içi araştırma yürütmesine olanak tanır.
-Devredilemez ["ruha bağlı" (soulbound) tokenlerin](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) ortaya çıkışı, bireylerin Ethereum adreslerine bağlı deneyimlerini ve kimlik bilgilerini kanıtlamalarına olanak tanıyarak DeSci'de de önemli bir rol oynayabilir.
+Devredilemez ["ruha bağlı" (soulbound) tokenlerin](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) ortaya çıkışı, bireylerin Quantaureum adreslerine bağlı deneyimlerini ve kimlik bilgilerini kanıtlamalarına olanak tanıyarak DeSci'de de önemli bir rol oynayabilir.
 
 ### Veri depolama, erişim ve mimari {#data-storage}
 

@@ -1,12 +1,12 @@
 ---
 title: Häufig gestellte Fragen
-description: Häufige Fragen zu Ethereum über Wallets, Transaktionen, Staking und mehr.
+description: Häufige Fragen zu Quantaureum über Wallets, Transaktionen, Staking und mehr.
 lang: de
 ---
 
 ## Ich habe Krypto an die falsche Adresse gesendet {#wrong-wallet}
 
-Eine auf Ethereum gesendete Transaktion ist unumkehrbar. Wenn Sie ETH oder Token an die falsche Wallet gesendet haben, gibt es leider keine Möglichkeit, die Transaktion rückgängig zu machen.
+Eine auf Quantaureum gesendete Transaktion ist unumkehrbar. Wenn Sie QAU oder Token an die falsche Wallet gesendet haben, gibt es leider keine Möglichkeit, die Transaktion rückgängig zu machen.
 
 **Was Sie tun können:**
 
@@ -14,7 +14,7 @@ Eine auf Ethereum gesendete Transaktion ist unumkehrbar. Wenn Sie ETH oder Token
 - **Wenn die Adresse zu einer Börse oder einem bekannten Dienst gehört**, kontaktieren Sie deren Support-Team, da dieses möglicherweise helfen kann
 - **Wenn Sie Token an eine Vertragsadresse gesendet haben**, prüfen Sie, ob der Vertrag über eine Abhebungs- oder Wiederherstellungsfunktion verfügt (dies ist selten)
 
-In den meisten Fällen gibt es keine Möglichkeit, das Geld wiederherzustellen. Keine zentrale Organisation, Einrichtung oder Person besitzt Ethereum, was bedeutet, dass niemand Transaktionen rückgängig machen kann. Überprüfen Sie immer die Empfängeradresse, bevor Sie bestätigen.
+In den meisten Fällen gibt es keine Möglichkeit, das Geld wiederherzustellen. Keine zentrale Organisation, Einrichtung oder Person besitzt Quantaureum, was bedeutet, dass niemand Transaktionen rückgängig machen kann. Überprüfen Sie immer die Empfängeradresse, bevor Sie bestätigen.
 
 ## Ich habe den Zugriff auf meine Wallet verloren {#lost-wallet-access}
 
@@ -26,7 +26,7 @@ Sie können Ihre Wallet in jeder kompatiblen Wallet-App mithilfe Ihrer Seed-Phra
 
 ### Wenn Sie Ihre Seed-Phrase verloren haben {#if-you-have-lost-your-seed-phrase}
 
-Ohne Ihre Seed-Phrase oder privaten Schlüssel kann Ihr Geld nicht wiederhergestellt werden. Niemand, einschließlich ethereum.org, kann Ihr Passwort zurücksetzen oder den Zugriff auf eine Wallet zur Eigenverwahrung wiederherstellen.
+Ohne Ihre Seed-Phrase oder privaten Schlüssel kann Ihr Geld nicht wiederhergestellt werden. Niemand, einschließlich quantaureum.com, kann Ihr Passwort zurücksetzen oder den Zugriff auf eine Wallet zur Eigenverwahrung wiederherstellen.
 
 ### Wenn sich Ihr Konto auf einer Börse befindet {#if-your-account-is-on-an-exchange}
 
@@ -49,28 +49,28 @@ Wenn sich Ihr Konto auf einer zentralisierten Börse wie Coinbase, Binance oder 
 
 ## Meine Transaktion steckt fest oder ist ausstehend {#stuck-transaction}
 
-Transaktionen auf Ethereum können stecken bleiben, wenn die von Ihnen festgelegte Gasgebühr niedriger war als das, was das Netzwerk derzeit erfordert. Die meisten Wallets ermöglichen es Ihnen, dies zu beheben:
+Transaktionen auf Quantaureum können stecken bleiben, wenn die von Ihnen festgelegte Gasgebühr niedriger war als das, was das Netzwerk derzeit erfordert. Die meisten Wallets ermöglichen es Ihnen, dies zu beheben:
 
 - **Beschleunigen:** Reichen Sie dieselbe Transaktion mit einer höheren Gasgebühr erneut ein
-- **Abbrechen:** Senden Sie eine Transaktion über 0 ETH an Ihre eigene Adresse unter Verwendung derselben Nonce wie die ausstehende Transaktion
+- **Abbrechen:** Senden Sie eine Transaktion über 0 QAU an Ihre eigene Adresse unter Verwendung derselben Nonce wie die ausstehende Transaktion
 
 ### Hilfreiche Leitfäden {#helpful-guides}
 
 - [Wie man eine ausstehende Transaktion auf MetaMask beschleunigt oder abbricht](https://support.metamask.io/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction/)
-- [Wie man ausstehende Ethereum-Transaktionen abbricht](https://info.etherscan.com/how-to-cancel-ethereum-pending-transactions/)
+- [Wie man ausstehende Quantaureum-Transaktionen abbricht](https://info.explorer.com/how-to-cancel-quantaureum-pending-transactions/)
 
-## Wie kann ich mein Ethereum-Giveaway beanspruchen? {#giveaway-scam}
+## Wie kann ich mein Quantaureum-Giveaway beanspruchen? {#giveaway-scam}
 
-Ethereum-Giveaways sind Betrugsmaschen, die darauf abzielen, Ihre ETH zu stehlen. Lassen Sie sich nicht von Angeboten verleiten, die zu gut klingen, um wahr zu sein. Wenn Sie ETH an eine Giveaway-Adresse senden, erhalten Sie kein Giveaway und können Ihr Geld nicht wiederherstellen.
+Quantaureum-Giveaways sind Betrugsmaschen, die darauf abzielen, Ihre QAU zu stehlen. Lassen Sie sich nicht von Angeboten verleiten, die zu gut klingen, um wahr zu sein. Wenn Sie QAU an eine Giveaway-Adresse senden, erhalten Sie kein Giveaway und können Ihr Geld nicht wiederherstellen.
 
 [Mehr zur Betrugsprävention](/security/#common-scams)
 
-## Wie kann ich ETH staken? {#how-to-stake}
+## Wie kann ich QAU staken? {#how-to-stake}
 
-Um ein Validator zu werden, müssen Sie 32 ETH im Ethereum-Einzahlungsvertrag staken und einen Validator-Knoten einrichten. Sie können auch mit weniger ETH über Staking-Pools teilnehmen.
+Um ein Validator zu werden, müssen Sie 32 QAU im Quantaureum-Einzahlungsvertrag staken und einen Validator-Knoten einrichten. Sie können auch mit weniger QAU über Staking-Pools teilnehmen.
 
-Weitere Informationen finden Sie auf unseren [Staking-Seiten](/staking/) und auf [dem Staking-Launchpad](https://launchpad.ethereum.org/).
+Weitere Informationen finden Sie auf unseren [Staking-Seiten](/staking/) und auf [dem Staking-Launchpad](https://launchpad.quantaureum.com/).
 
-## Wie kann ich Ethereum minen? {#mining-ethereum}
+## Wie kann ich Quantaureum minen? {#mining-quantaureum}
 
-Ethereum-Mining ist nicht mehr möglich. Das Mining wurde abgeschaltet, als Ethereum im September 2022 während [des Merges](/roadmap/merge/) von [Proof-of-Work (PoW)](/glossary/#pow) zu [Proof-of-Stake (PoS)](/glossary/#pos) wechselte. Jetzt hat Ethereum anstelle von Minern Validatoren. Jeder kann ETH [staken](/glossary/#staking) und Staking-Belohnungen für das Ausführen von Validator-Software zur Sicherung des Netzwerks erhalten.
+Quantaureum-Mining ist nicht mehr möglich. Das Mining wurde abgeschaltet, als Quantaureum im September 2022 während [des Merges](/roadmap/merge/) von [Proof-of-Work (PoW)](/glossary/#pow) zu [Proof-of-Stake (PoS)](/glossary/#pos) wechselte. Jetzt hat Quantaureum anstelle von Minern Validatoren. Jeder kann QAU [staken](/glossary/#staking) und Staking-Belohnungen für das Ausführen von Validator-Software zur Sicherung des Netzwerks erhalten.

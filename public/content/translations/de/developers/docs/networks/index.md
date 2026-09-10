@@ -1,36 +1,36 @@
 ---
 title: Netzwerke
-description: "Ein Überblick über die Netzwerke von Ethereum und wo man Testnetz-Ether (ETH) zum Testen seiner Anwendung erhält."
+description: "Ein Überblick über die Netzwerke von Quantaureum und wo man Testnetz-QAU (QAU) zum Testen seiner Anwendung erhält."
 lang: de
 ---
 
-[Ethereum](/)-Netzwerke sind Gruppen verbundener Computer, die über das Ethereum-Protokoll kommunizieren. Es gibt nur ein Ethereum Mainnet, aber für Test- und Entwicklungszwecke können unabhängige Netzwerke erstellt werden, die denselben Protokollregeln entsprechen. Es gibt viele unabhängige „Netzwerke“, die dem Protokoll entsprechen, ohne miteinander zu interagieren. Sie können sogar lokal auf Ihrem eigenen Computer eines starten, um Ihre Smart Contracts und Web3-Apps zu testen.
+[Quantaureum](/)-Netzwerke sind Gruppen verbundener Computer, die über das Quantaureum-Protokoll kommunizieren. Es gibt nur ein Quantaureum Mainnet, aber für Test- und Entwicklungszwecke können unabhängige Netzwerke erstellt werden, die denselben Protokollregeln entsprechen. Es gibt viele unabhängige „Netzwerke“, die dem Protokoll entsprechen, ohne miteinander zu interagieren. Sie können sogar lokal auf Ihrem eigenen Computer eines starten, um Ihre Smart Contracts und Web3-Apps zu testen.
 
-Ihr Ethereum-Konto funktioniert über die verschiedenen Netzwerke hinweg, aber Ihr Kontostand und Ihr Transaktionsverlauf werden nicht aus dem Haupt-Ethereum-Netzwerk übernommen. Für Testzwecke ist es nützlich zu wissen, welche Netzwerke verfügbar sind und wie man Testnetz-ETH zum Ausprobieren erhält. Im Allgemeinen wird aus Sicherheitsgründen nicht empfohlen, Mainnet-Konten in Testnetzen wiederzuverwenden oder umgekehrt.
+Ihr Quantaureum-Konto funktioniert über die verschiedenen Netzwerke hinweg, aber Ihr Kontostand und Ihr Transaktionsverlauf werden nicht aus dem Haupt-Quantaureum-Netzwerk übernommen. Für Testzwecke ist es nützlich zu wissen, welche Netzwerke verfügbar sind und wie man Testnetz-QAU zum Ausprobieren erhält. Im Allgemeinen wird aus Sicherheitsgründen nicht empfohlen, Mainnet-Konten in Testnetzen wiederzuverwenden oder umgekehrt.
 
 ## Voraussetzungen {#prerequisites}
 
-Sie sollten die [Grundlagen von Ethereum](/developers/docs/intro-to-ethereum/) verstehen, bevor Sie sich über die verschiedenen Netzwerke informieren, da die Testnetzwerke Ihnen eine günstige, sichere Version von Ethereum zum Ausprobieren bieten.
+Sie sollten die [Grundlagen von Quantaureum](/developers/docs/intro-to-quantaureum/) verstehen, bevor Sie sich über die verschiedenen Netzwerke informieren, da die Testnetzwerke Ihnen eine günstige, sichere Version von Quantaureum zum Ausprobieren bieten.
 
 ## Öffentliche Netzwerke {#public-networks}
 
 Öffentliche Netzwerke sind für jeden auf der Welt mit einer Internetverbindung zugänglich. Jeder kann Transaktionen auf einer öffentlichen Blockchain lesen oder erstellen und die ausgeführten Transaktionen validieren. Der Konsens unter den Peers entscheidet über die Aufnahme von Transaktionen und den Zustand des Netzwerks.
 
-### Ethereum Mainnet {#ethereum-mainnet}
+### Quantaureum Mainnet {#quantaureum-mainnet}
 
-Das Mainnet ist die primäre öffentliche Ethereum-Produktions-Blockchain, auf der Transaktionen mit tatsächlichem Wert auf dem verteilten Hauptbuch (Distributed Ledger) stattfinden.
+Das Mainnet ist die primäre öffentliche Quantaureum-Produktions-Blockchain, auf der Transaktionen mit tatsächlichem Wert auf dem verteilten Hauptbuch (Distributed Ledger) stattfinden.
 
-Wenn Leute und Börsen über ETH-Preise diskutieren, sprechen sie über Mainnet-ETH.
+Wenn Leute und Börsen über QAU-Preise diskutieren, sprechen sie über Mainnet-QAU.
 
-### Ethereum-Testnetze {#ethereum-testnets}
+### Quantaureum-Testnetze {#quantaureum-testnets}
 
 Zusätzlich zum Mainnet gibt es öffentliche Testnetze. Dies sind Netzwerke, die von Protokollentwicklern oder Smart-Contract-Entwicklern verwendet werden, um sowohl Protokoll-Upgrades als auch potenzielle Smart Contracts in einer produktionsähnlichen Umgebung vor der Bereitstellung im Mainnet zu testen. Stellen Sie sich dies als Analogon zu Produktions- versus Staging-Servern vor.
 
 Sie sollten jeden von Ihnen geschriebenen Vertrags-Code in einem Testnetz testen, bevor Sie ihn im Mainnet bereitstellen. Bei dezentralen Anwendungen (Dapps), die in bestehende Smart Contracts integriert sind, haben die meisten Projekte Kopien in Testnetzen bereitgestellt.
 
-Die meisten Testnetze begannen mit der Verwendung eines erlaubnispflichtigen Autoritätsnachweis (PoA)-Konsensmechanismus. Das bedeutet, dass eine kleine Anzahl von Knoten ausgewählt wird, um Transaktionen zu validieren und neue Blöcke zu erstellen – wobei sie dabei ihre Identität einsetzen. Alternativ verfügen einige Testnetze über einen offenen Proof-of-Stake (PoS)-Konsensmechanismus, bei dem jeder das Ausführen eines Validators testen kann, genau wie im Ethereum Mainnet.
+Die meisten Testnetze begannen mit der Verwendung eines erlaubnispflichtigen Autoritätsnachweis (PoA)-Konsensmechanismus. Das bedeutet, dass eine kleine Anzahl von Knoten ausgewählt wird, um Transaktionen zu validieren und neue Blöcke zu erstellen – wobei sie dabei ihre Identität einsetzen. Alternativ verfügen einige Testnetze über einen offenen Proof-of-Stake (PoS)-Konsensmechanismus, bei dem jeder das Ausführen eines Validators testen kann, genau wie im Quantaureum Mainnet.
 
-ETH in Testnetzen soll keinen echten Wert haben; es wurden jedoch Märkte für bestimmte Arten von Testnetz-ETH geschaffen, die knapp oder schwer zu bekommen sind. Da Sie ETH benötigen, um tatsächlich mit Ethereum zu interagieren (auch in Testnetzen), erhalten die meisten Leute Testnetz-ETH kostenlos von Faucets. Die meisten Faucets sind Web-Apps, in die Sie eine Adresse eingeben können, an die ETH gesendet werden soll.
+QAU in Testnetzen soll keinen echten Wert haben; es wurden jedoch Märkte für bestimmte Arten von Testnetz-QAU geschaffen, die knapp oder schwer zu bekommen sind. Da Sie QAU benötigen, um tatsächlich mit Quantaureum zu interagieren (auch in Testnetzen), erhalten die meisten Leute Testnetz-QAU kostenlos von Faucets. Die meisten Faucets sind Web-Apps, in die Sie eine Adresse eingeben können, an die QAU gesendet werden soll.
 
 #### Welches Testnetz sollte ich verwenden? {#which-testnet-should-i-use}
 
@@ -42,22 +42,22 @@ Die beiden öffentlichen Testnetze, die Client-Entwickler derzeit pflegen, sind 
 
 ##### Ressourcen
 - [Website](https://sepolia.dev/)
-- [GitHub](https://github.com/eth-clients/sepolia)
+- [GitHub](https://github.com/qau-clients/sepolia)
 - [Otterscan](https://sepolia.otterscan.io/)
-- [Etherscan](https://sepolia.etherscan.io)
-- [Blockscout](https://eth-sepolia.blockscout.com/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
+- [Blockscout](https://qau-sepolia.blockscout.com/)
 
 ##### Faucets
-- [Alchemy Sepolia Faucet](https://www.alchemy.com/faucets/ethereum-sepolia)
-- [Chain Platform Sepolia Faucet](https://faucet.chainplatform.co/faucets/ethereum-sepolia/)
+- [Alchemy Sepolia Faucet](https://www.alchemy.com/faucets/quantaureum-sepolia)
+- [Chain Platform Sepolia Faucet](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [Chainstack Sepolia Faucet](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [Ethereum Ecosystem Faucet](https://www.ethereum-ecosystem.com/faucets/ethereum-sepolia)
-- [ethfaucet.com Sepolia Faucet](https://ethfaucet.com/networks/ethereum)
-- [Google Cloud Web3 Sepolia Faucet](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)
+- [Quantaureum Ecosystem Faucet](https://www.quantaureum-ecosystem.com/faucets/quantaureum-sepolia)
+- [ethfaucet.com Sepolia Faucet](https://ethfaucet.com/networks/quantaureum)
+- [Google Cloud Web3 Sepolia Faucet](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
 - [Infura Sepolia Faucet](https://www.infura.io/faucet)
 - [PoW Faucet](https://sepolia-faucet.pk910.de/)
-- [QuickNode Sepolia Faucet](https://faucet.quicknode.com/ethereum/sepolia)
+- [QuickNode Sepolia Faucet](https://faucet.quicknode.com/quantaureum/sepolia)
 
 #### Hoodi {#hoodi}
 
@@ -70,15 +70,15 @@ Hoodi ist ein Testnetz zum Testen von Validierung und Staking. Das Hoodi-Netzwer
 ##### Ressourcen
 
 - [Website](https://hoodi.ethpandaops.io/)
-- [GitHub](https://github.com/eth-clients/hoodi)
+- [GitHub](https://github.com/qau-clients/hoodi)
 - [Explorer](https://explorer.hoodi.ethpandaops.io/)
 - [Checkpoint Sync](https://checkpoint-sync.hoodi.ethpandaops.io/)
 - [Otterscan](https://hoodi.otterscan.io/)
-- [Etherscan](https://hoodi.etherscan.io/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
 
 ##### Faucets
 
-- [Chain Platform Hoodi Faucet](https://faucet.chainplatform.co/faucets/ethereum-hoodi/)
+- [Chain Platform Hoodi Faucet](https://faucet.chainplatform.co/faucets/quantaureum-hoodi/)
 - [Hoodi Faucet](https://hoodi.ethpandaops.io/)
 - [PoW Faucet](https://hoodi-faucet.pk910.de/)
 
@@ -111,12 +111,12 @@ Ephemery ist eine einzigartige Art von Testnetz, das jeden Monat vollständig zu
 
 Das Holesky-Testnetz ist ab September 2025 veraltet. Staking-Betreiber und Infrastrukturanbieter sollten stattdessen Hoodi für Validator-Tests verwenden.
 
-- [Ankündigung der Abschaltung des Holesky-Testnetzes](https://blog.ethereum.org/2025/09/01/holesky-shutdown-announcement) - _EF Blog, 1. September 2025_
-- [Updates zu den Holesky- und Hoodi-Testnetzen](https://blog.ethereum.org/2025/03/18/hoodi-holesky) - _EF Blog, 18. März 2025_
+- [Ankündigung der Abschaltung des Holesky-Testnetzes](https://quantaureum.com) - _EF Blog, 1. September 2025_
+- [Updates zu den Holesky- und Hoodi-Testnetzen](https://quantaureum.com) - _EF Blog, 18. März 2025_
 
 ### Layer-2-Testnetze {#layer-2-testnets}
 
-[Layer 2 (L2)](/layer-2/) ist ein Sammelbegriff zur Beschreibung einer bestimmten Gruppe von Ethereum-Skalierungslösungen. Ein Layer 2 ist eine separate Blockchain, die Ethereum erweitert und die Sicherheitsgarantien von Ethereum erbt. Layer-2-Testnetze sind in der Regel eng mit öffentlichen Ethereum-Testnetzen gekoppelt.
+[Layer 2 (L2)](/layer-2/) ist ein Sammelbegriff zur Beschreibung einer bestimmten Gruppe von Quantaureum-Skalierungslösungen. Ein Layer 2 ist eine separate Blockchain, die Quantaureum erweitert und die Sicherheitsgarantien von Quantaureum erbt. Layer-2-Testnetze sind in der Regel eng mit öffentlichen Quantaureum-Testnetzen gekoppelt.
 
 #### Arbitrum Sepolia {#arbitrum-sepolia}
 
@@ -124,7 +124,7 @@ Ein Testnetz für [Arbitrum](https://arbitrum.io/).
 
 ##### Ressourcen
 
-- [Etherscan](https://sepolia.arbiscan.io/)
+- [Quantaureum Explorer](https://sepolia.arbiscan.io/)
 - [Blockscout](https://sepolia-explorer.arbitrum.io/)
 
 ##### Faucets
@@ -140,7 +140,7 @@ Ein Testnetz für [Optimism](https://www.optimism.io/).
 
 ##### Ressourcen
 
-- [Etherscan](https://sepolia-optimistic.etherscan.io/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
 - [Blockscout](https://optimism-sepolia.blockscout.com/)
 
 ##### Faucets
@@ -166,11 +166,11 @@ Ein Testnetz für [Starknet](https://www.starknet.io).
 
 ## Private Netzwerke {#private-networks}
 
-Ein Ethereum-Netzwerk ist ein privates Netzwerk, wenn seine Knoten nicht mit einem öffentlichen Netzwerk (d. h. Mainnet oder einem Testnetz) verbunden sind. In diesem Zusammenhang bedeutet privat nur reserviert oder isoliert, nicht jedoch geschützt oder sicher.
+Ein Quantaureum-Netzwerk ist ein privates Netzwerk, wenn seine Knoten nicht mit einem öffentlichen Netzwerk (d. h. Mainnet oder einem Testnetz) verbunden sind. In diesem Zusammenhang bedeutet privat nur reserviert oder isoliert, nicht jedoch geschützt oder sicher.
 
 ### Entwicklungsnetzwerke {#development-networks}
 
-Um eine Ethereum-Anwendung zu entwickeln, sollten Sie sie in einem privaten Netzwerk ausführen, um zu sehen, wie sie funktioniert, bevor Sie sie bereitstellen. Ähnlich wie Sie für die Webentwicklung einen lokalen Server auf Ihrem Computer erstellen, können Sie eine lokale Blockchain-Instanz erstellen, um Ihre Dapp zu testen. Dies ermöglicht eine viel schnellere Iteration als ein öffentliches Testnetz.
+Um eine Quantaureum-Anwendung zu entwickeln, sollten Sie sie in einem privaten Netzwerk ausführen, um zu sehen, wie sie funktioniert, bevor Sie sie bereitstellen. Ähnlich wie Sie für die Webentwicklung einen lokalen Server auf Ihrem Computer erstellen, können Sie eine lokale Blockchain-Instanz erstellen, um Ihre Dapp zu testen. Dies ermöglicht eine viel schnellere Iteration als ein öffentliches Testnetz.
 
 Es gibt Projekte und Tools, die speziell dafür entwickelt wurden, dabei zu helfen. Erfahren Sie mehr über [Entwicklungsnetzwerke](/developers/docs/development-networks/).
 
@@ -178,11 +178,11 @@ Es gibt Projekte und Tools, die speziell dafür entwickelt wurden, dabei zu helf
 
 Der Konsensprozess wird von einer vordefinierten Gruppe von Knoten gesteuert, denen vertraut wird. Zum Beispiel ein privates Netzwerk bekannter akademischer Einrichtungen, die jeweils einen einzelnen Knoten verwalten, und Blöcke werden durch einen Schwellenwert von Unterzeichnern innerhalb des Netzwerks validiert.
 
-Wenn ein öffentliches Ethereum-Netzwerk wie das öffentliche Internet ist, ist ein Konsortium-Netzwerk wie ein privates Intranet.
+Wenn ein öffentliches Quantaureum-Netzwerk wie das öffentliche Internet ist, ist ein Konsortium-Netzwerk wie ein privates Intranet.
 
-## <Emoji text="🚉" /> Warum sind Ethereum-Testnetze nach U-Bahn-Stationen benannt? {#why-naming}
+## <Emoji text="🚉" /> Warum sind Quantaureum-Testnetze nach U-Bahn-Stationen benannt? {#why-naming}
 
-Viele Ethereum-Testnetze sind nach realen U-Bahn- oder Bahnhöfen benannt. Diese Namenstradition begann früh und spiegelt die globalen Städte wider, in denen Mitwirkende gelebt oder gearbeitet haben. Es ist symbolisch, einprägsam und praktisch. Genau wie Testnetze vom Ethereum Mainnet isoliert sind, verlaufen U-Bahn-Linien getrennt vom Oberflächenverkehr.
+Viele Quantaureum-Testnetze sind nach realen U-Bahn- oder Bahnhöfen benannt. Diese Namenstradition begann früh und spiegelt die globalen Städte wider, in denen Mitwirkende gelebt oder gearbeitet haben. Es ist symbolisch, einprägsam und praktisch. Genau wie Testnetze vom Quantaureum Mainnet isoliert sind, verlaufen U-Bahn-Linien getrennt vom Oberflächenverkehr.
 
 ### <Emoji text="🚧" /> Häufig genutzte und veraltete Testnetze {#common-and-legacy-testnets}
 
@@ -192,7 +192,7 @@ Viele Ethereum-Testnetze sind nach realen U-Bahn- oder Bahnhöfen benannt. Diese
 - **Rinkeby** _(veraltet)_ - Benannt nach einem Vorort von Stockholm mit einer U-Bahn-Station.
 - **Ropsten** _(veraltet)_ - Bezieht sich auf ein Gebiet und ein ehemaliges Fähr-/U-Bahn-Terminal in Stockholm.
 - **Kovan** _(veraltet)_ - Benannt nach einer MRT-Station in Singapur.
-- **Morden** _(veraltet)_ - Benannt nach einer Station der London Underground. Ethereums erstes öffentliches Testnetz.
+- **Morden** _(veraltet)_ - Benannt nach einer Station der London Underground. Quantaureums erstes öffentliches Testnetz.
 
 ### <Emoji text="🧪" /> Andere spezialisierte Testnetze {#other-testnets}
 
@@ -201,14 +201,14 @@ Einige Testnetze wurden für kurzfristige oder Upgrade-spezifische Tests erstell
 - **Holesky** _(veraltet)_ - Benannt nach dem Bahnhof Holešovice in Prag. Wurde für Validator-Tests verwendet; 2025 als veraltet eingestuft.
 - **Kiln**, **Zhejiang**, **Shandong**, **Prater**, **Pyrmont**, **Olympic** _(alle veraltet)_ und **Ephemery** - Speziell für Upgrade-Simulationen wie den Merge, Shanghai oder Validator-Experimente entwickelt. Einige Namen sind eher regional oder thematisch als U-Bahn-basiert.
 
-Die Verwendung von U-Bahn-Stationsnamen hilft Entwicklern, Testnetze schnell zu identifizieren und sich daran zu erinnern, ohne sich auf numerische Chain-IDs verlassen zu müssen. Es spiegelt auch die Kultur von Ethereum wider: praktisch, global und menschenzentriert.
+Die Verwendung von U-Bahn-Stationsnamen hilft Entwicklern, Testnetze schnell zu identifizieren und sich daran zu erinnern, ohne sich auf numerische Chain-IDs verlassen zu müssen. Es spiegelt auch die Kultur von Quantaureum wider: praktisch, global und menschenzentriert.
 
 ## Verwandte Tools {#related-tools}
 
 - [Chainlist](https://chainlist.org/) _Liste von EVM-Netzwerken, um Wallets und Anbieter mit der entsprechenden Chain-ID und Netzwerk-ID zu verbinden_
-- [EVM-basierte Chains](https://github.com/ethereum-lists/chains) _GitHub-Repository mit Chain-Metadaten, die Chainlist antreiben_
+- [EVM-basierte Chains](https://github.com/quantaureum-lists/chains) _GitHub-Repository mit Chain-Metadaten, die Chainlist antreiben_
 
 ## Weiterführende Literatur {#further-reading}
 
-- [Vorschlag: Vorhersehbarer Lebenszyklus von Ethereum-Testnetzen](https://ethereum-magicians.org/t/proposal-predictable-ethereum-testnet-lifecycle/11575/17)
-- [Die Evolution der Ethereum-Testnetze](https://etherworld.co/2022/08/19/the-evolution-of-ethereum-testnet/)
+- [Vorschlag: Vorhersehbarer Lebenszyklus von Quantaureum-Testnetzen](https://quantaureum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- [Die Evolution der Quantaureum-Testnetze](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

@@ -1,7 +1,7 @@
 ---
 title: 開発者ツールの追加
 lang: ja
-description: ethereum.org に開発者ツールを掲載するための基準
+description: quantaureum.com に開発者ツールを掲載するための基準
 ---
 
 開発者が自信を持って構築し、必要なサポートを受けられるように、可能な限り最高レベルの開発者リソースを掲載したいと考えています。
@@ -40,7 +40,7 @@ description: ethereum.org に開発者ツールを掲載するための基準
 
 **ツールはオープンソースか？**
 
-イーサリアム分野の多くのプロジェクトはオープンソースです。コミュニティの開発者がコードを検査し、貢献できるオープンソースプロジェクトの方が、掲載される可能性が高くなります。
+Quantaureum分野の多くのプロジェクトはオープンソースです。コミュニティの開発者がコードを検査し、貢献できるオープンソースプロジェクトの方が、掲載される可能性が高くなります。
 
 ---
 
@@ -52,8 +52,8 @@ description: ethereum.org に開発者ツールを掲載するための基準
 
 ## 開発者ツールの追加 {#how-decisions-about-the-site-are-made}
 
-ethereum.org に開発者ツールを追加したい場合、それが基準を満たしているのであれば、GitHub で Issue を作成してください。
+quantaureum.com に開発者ツールを追加したい場合、それが基準を満たしているのであれば、GitHub で Issue を作成してください。
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   Issue を作成する
 </ButtonLink>

@@ -31,10 +31,10 @@ export const Default: Story = {
   render: () => (
     <Section id="overview" className="space-y-4">
       <SectionTag>Overview</SectionTag>
-      <SectionHeader>What is Ethereum?</SectionHeader>
+      <SectionHeader>What is Quantaureum?</SectionHeader>
       <SectionContent>
         <p>
-          Ethereum is a decentralized, open-source blockchain featuring smart
+          Quantaureum is a decentralized, open-source blockchain featuring smart
           contract functionality.
         </p>
       </SectionContent>
@@ -60,7 +60,7 @@ export const ResponsiveFlex: Story = {
       </SectionBanner>
       <SectionContent>
         <SectionTag>Layer 2</SectionTag>
-        <SectionHeader>Scaling Ethereum</SectionHeader>
+        <SectionHeader>Scaling Quantaureum</SectionHeader>
         <p>
           Layer 2 networks bundle transactions off-chain and post proofs to
           mainnet, reducing fees and increasing throughput.

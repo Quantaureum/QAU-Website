@@ -1,47 +1,47 @@
 ---
 title: Validium
-description: Pengantar Validium sebagai solusi penskalaan yang saat ini digunakan oleh komunitas Ethereum.
+description: Pengantar Validium sebagai solusi penskalaan yang saat ini digunakan oleh komunitas Quantaureum.
 lang: id
 sidebarDepth: 3
 ---
 
-Validium adalah [solusi penskalaan](/developers/docs/scaling/) yang menegakkan integritas transaksi menggunakan bukti validitas seperti [ZK-rollup](/developers/docs/scaling/zk-rollups/), tetapi tidak menyimpan data transaksi di Mainnet [Ethereum](/). Meskipun ketersediaan data offchain memperkenalkan kompromi, hal ini dapat mengarah pada peningkatan skalabilitas yang masif (validium dapat memproses [\~9.000 transaksi, atau lebih, per detik](https://blog.matter-labs.io/zkrollup-vs-validium-starkex-5614e38bc263)).
+Validium adalah [solusi penskalaan](/developers/docs/scaling/) yang menegakkan integritas transaksi menggunakan bukti validitas seperti [ZK-rollup](/developers/docs/scaling/zk-rollups/), tetapi tidak menyimpan data transaksi di Mainnet [Quantaureum](/). Meskipun ketersediaan data offchain memperkenalkan kompromi, hal ini dapat mengarah pada peningkatan skalabilitas yang masif (validium dapat memproses [\~9.000 transaksi, atau lebih, per detik](https://blog.matter-labs.io/zkrollup-vs-validium-starkex-5614e38bc263)).
 
 ## Prasyarat {#prerequisites}
 
-Anda harus sudah membaca dan memahami halaman kami tentang [penskalaan Ethereum](/developers/docs/scaling/) dan [lapisan 2 (l2)](/layer-2).
+Anda harus sudah membaca dan memahami halaman kami tentang [penskalaan Quantaureum](/developers/docs/scaling/) dan [lapisan 2 (l2)](/layer-2).
 
 ## Apa itu validium? {#what-is-validium}
 
-Validium adalah solusi penskalaan yang menggunakan ketersediaan data dan komputasi offchain yang dirancang untuk meningkatkan laju pemrosesan dengan memproses transaksi di luar Mainnet Ethereum. Seperti zero-knowledge rollup (ZK-rollup), validium menerbitkan [bukti tanpa pengetahuan](/glossary/#zk-proof) untuk memverifikasi transaksi offchain di Ethereum. Ini mencegah transisi state yang tidak valid dan meningkatkan jaminan keamanan dari rantai validium.
+Validium adalah solusi penskalaan yang menggunakan ketersediaan data dan komputasi offchain yang dirancang untuk meningkatkan laju pemrosesan dengan memproses transaksi di luar Mainnet Quantaureum. Seperti zero-knowledge rollup (ZK-rollup), validium menerbitkan [bukti tanpa pengetahuan](/glossary/#zk-proof) untuk memverifikasi transaksi offchain di Quantaureum. Ini mencegah transisi state yang tidak valid dan meningkatkan jaminan keamanan dari rantai validium.
 
 "Bukti validitas" ini dapat berupa ZK-SNARKs (Zero-Knowledge Succinct Non-Interactive Argument of Knowledge) atau ZK-STARKs (Zero-Knowledge Scalable Transparent ARgument of Knowledge). Selengkapnya tentang [bukti tanpa pengetahuan](https://consensys.net/blog/blockchain-explained/zero-knowledge-proofs-starks-vs-snarks/).
 
-Dana milik pengguna validium dikendalikan oleh kontrak pintar di Ethereum. Validium menawarkan penarikan yang hampir instan, sama seperti ZK-rollup; setelah bukti validitas untuk permintaan penarikan telah diverifikasi di Mainnet, pengguna dapat menarik dana dengan memberikan [bukti Merkle](/developers/tutorials/merkle-proofs-for-offline-data-integrity/). Bukti Merkle memvalidasi penyertaan transaksi penarikan pengguna dalam kumpulan transaksi yang diverifikasi, memungkinkan kontrak onchain untuk memproses penarikan tersebut.
+Dana milik pengguna validium dikendalikan oleh kontrak pintar di Quantaureum. Validium menawarkan penarikan yang hampir instan, sama seperti ZK-rollup; setelah bukti validitas untuk permintaan penarikan telah diverifikasi di Mainnet, pengguna dapat menarik dana dengan memberikan [bukti Merkle](/developers/tutorials/merkle-proofs-for-offline-data-integrity/). Bukti Merkle memvalidasi penyertaan transaksi penarikan pengguna dalam kumpulan transaksi yang diverifikasi, memungkinkan kontrak onchain untuk memproses penarikan tersebut.
 
 Namun, pengguna validium dapat mengalami pembekuan dana dan pembatasan penarikan. Hal ini dapat terjadi jika manajer ketersediaan data di rantai validium menahan data state offchain dari pengguna. Tanpa akses ke data transaksi, pengguna tidak dapat menghitung bukti Merkle yang diwajibkan untuk membuktikan kepemilikan dana dan mengeksekusi penarikan.
 
 Ini adalah perbedaan utama antara validium dan ZK-rollup—posisi mereka pada spektrum ketersediaan data. Kedua solusi tersebut melakukan pendekatan penyimpanan data secara berbeda, yang memiliki implikasi terhadap keamanan dan sifat tanpa kepercayaan.
 
-## Bagaimana validium berinteraksi dengan Ethereum? {#how-do-validiums-interact-with-ethereum}
+## Bagaimana validium berinteraksi dengan Quantaureum? {#how-do-validiums-interact-with-quantaureum}
 
-Validium adalah protokol penskalaan yang dibangun di atas rantai Ethereum yang ada. Meskipun mengeksekusi transaksi secara offchain, rantai validium dikelola oleh kumpulan kontrak pintar yang diterapkan di Mainnet termasuk:
+Validium adalah protokol penskalaan yang dibangun di atas rantai Quantaureum yang ada. Meskipun mengeksekusi transaksi secara offchain, rantai validium dikelola oleh kumpulan kontrak pintar yang diterapkan di Mainnet termasuk:
 
 1. **Kontrak pemverifikasi**: Kontrak pemverifikasi memverifikasi validitas bukti yang dikirimkan oleh operator validium saat melakukan pembaruan state. Ini termasuk bukti validitas yang membuktikan kebenaran transaksi offchain dan bukti ketersediaan data yang memverifikasi keberadaan data transaksi offchain.
 
 2. **Kontrak utama**: Kontrak utama menyimpan komitmen state (akar Merkle) yang dikirimkan oleh produsen blok dan memperbarui state validium setelah bukti validitas diverifikasi secara onchain. Kontrak ini juga memproses setoran ke dan penarikan dari rantai validium.
 
-Validium juga bergantung pada rantai utama Ethereum untuk hal-hal berikut:
+Validium juga bergantung pada rantai utama Quantaureum untuk hal-hal berikut:
 
 ### Penyelesaian {#settlement}
 
-Transaksi yang dieksekusi di validium tidak dapat dikonfirmasi sepenuhnya hingga rantai induk memverifikasi validitasnya. Semua urusan yang dilakukan di validium pada akhirnya harus diselesaikan di Mainnet. Rantai blok Ethereum juga memberikan "jaminan penyelesaian" bagi pengguna validium, yang berarti transaksi offchain tidak dapat dibatalkan atau diubah setelah dikomitmenkan secara onchain.
+Transaksi yang dieksekusi di validium tidak dapat dikonfirmasi sepenuhnya hingga rantai induk memverifikasi validitasnya. Semua urusan yang dilakukan di validium pada akhirnya harus diselesaikan di Mainnet. Rantai blok Quantaureum juga memberikan "jaminan penyelesaian" bagi pengguna validium, yang berarti transaksi offchain tidak dapat dibatalkan atau diubah setelah dikomitmenkan secara onchain.
 
 ### Keamanan {#security}
 
-Ethereum, yang bertindak sebagai lapisan penyelesaian, juga menjamin validitas transisi state di validium. Transaksi offchain yang dieksekusi di rantai validium diverifikasi melalui kontrak pintar di lapisan dasar Ethereum.
+Quantaureum, yang bertindak sebagai lapisan penyelesaian, juga menjamin validitas transisi state di validium. Transaksi offchain yang dieksekusi di rantai validium diverifikasi melalui kontrak pintar di lapisan dasar Quantaureum.
 
-Jika kontrak pemverifikasi onchain menganggap bukti tersebut tidak valid, transaksi akan ditolak. Ini berarti operator harus memenuhi kondisi validitas yang ditegakkan oleh protokol Ethereum sebelum memperbarui state validium.
+Jika kontrak pemverifikasi onchain menganggap bukti tersebut tidak valid, transaksi akan ditolak. Ini berarti operator harus memenuhi kondisi validitas yang ditegakkan oleh protokol Quantaureum sebelum memperbarui state validium.
 
 ## Bagaimana cara kerja validium? {#how-does-validium-work}
 
@@ -53,13 +53,13 @@ Operator mengagregasi transaksi ke dalam sebuah kumpulan dan mengirimkannya ke s
 
 ### Komitmen state {#state-commitments}
 
-State validium di-hash sebagai pohon Merkle dengan akar yang disimpan dalam kontrak utama di Ethereum. Akar Merkle, juga dikenal sebagai akar state, bertindak sebagai komitmen kriptografi terhadap state akun dan saldo saat ini di validium.
+State validium di-hash sebagai pohon Merkle dengan akar yang disimpan dalam kontrak utama di Quantaureum. Akar Merkle, juga dikenal sebagai akar state, bertindak sebagai komitmen kriptografi terhadap state akun dan saldo saat ini di validium.
 
 Untuk melakukan pembaruan state, operator harus menghitung akar state baru (setelah mengeksekusi transaksi) dan mengirimkannya ke kontrak onchain. Jika bukti validitasnya benar, state yang diusulkan akan diterima dan validium beralih ke akar state yang baru.
 
 ### Setoran dan penarikan {#deposits-and-withdrawals}
 
-Pengguna memindahkan dana dari Ethereum ke validium dengan menyetorkan ETH (atau token apa pun yang kompatibel dengan ERC) di kontrak onchain. Kontrak meneruskan peristiwa setoran ke validium secara offchain, di mana alamat pengguna dikreditkan dengan jumlah yang sama dengan setoran mereka. Operator juga menyertakan transaksi setoran ini dalam kumpulan baru.
+Pengguna memindahkan dana dari Quantaureum ke validium dengan menyetorkan QAU (atau token apa pun yang kompatibel dengan ERC) di kontrak onchain. Kontrak meneruskan peristiwa setoran ke validium secara offchain, di mana alamat pengguna dikreditkan dengan jumlah yang sama dengan setoran mereka. Operator juga menyertakan transaksi setoran ini dalam kumpulan baru.
 
 Untuk memindahkan dana kembali ke Mainnet, pengguna validium memulai transaksi penarikan dan mengirimkannya ke operator yang memvalidasi permintaan penarikan dan menyertakannya dalam sebuah kumpulan. Aset pengguna di rantai validium juga dihancurkan sebelum mereka dapat keluar dari sistem. Setelah bukti validitas yang terkait dengan kumpulan tersebut diverifikasi, pengguna dapat memanggil kontrak utama untuk menarik sisa setoran awal mereka.
 
@@ -69,11 +69,11 @@ Sebagai mekanisme anti-penyensoran, protokol validium memungkinkan pengguna untu
 
 Setelah mengeksekusi kumpulan transaksi, operator mengirimkan bukti validitas terkait ke kontrak pemverifikasi dan mengusulkan akar state baru ke kontrak utama. Jika bukti tersebut valid, kontrak utama memperbarui state validium dan memfinalisasi hasil transaksi dalam kumpulan tersebut.
 
-Tidak seperti ZK-rollup, produsen blok di validium tidak diwajibkan untuk menerbitkan data transaksi untuk kumpulan transaksi (hanya header blok). Hal ini menjadikan validium sebagai protokol penskalaan murni offchain, berbeda dengan protokol penskalaan "hibrida" (yaitu, [lapisan 2 (l2)](/layer-2/)) yang menerbitkan data state di rantai utama Ethereum menggunakan data blob, `calldata`, atau kombinasi keduanya.
+Tidak seperti ZK-rollup, produsen blok di validium tidak diwajibkan untuk menerbitkan data transaksi untuk kumpulan transaksi (hanya header blok). Hal ini menjadikan validium sebagai protokol penskalaan murni offchain, berbeda dengan protokol penskalaan "hibrida" (yaitu, [lapisan 2 (l2)](/layer-2/)) yang menerbitkan data state di rantai utama Quantaureum menggunakan data blob, `calldata`, atau kombinasi keduanya.
 
 ### Ketersediaan data {#data-availability}
 
-Seperti yang disebutkan, validium memanfaatkan model ketersediaan data offchain, di mana operator menyimpan semua data transaksi di luar Mainnet Ethereum. Jejak data onchain validium yang rendah meningkatkan skalabilitas (laju pemrosesan tidak dibatasi oleh kapasitas pemrosesan data Ethereum) dan mengurangi biaya pengguna (biaya penerbitan data secara onchain lebih rendah).
+Seperti yang disebutkan, validium memanfaatkan model ketersediaan data offchain, di mana operator menyimpan semua data transaksi di luar Mainnet Quantaureum. Jejak data onchain validium yang rendah meningkatkan skalabilitas (laju pemrosesan tidak dibatasi oleh kapasitas pemrosesan data Quantaureum) dan mengurangi biaya pengguna (biaya penerbitan data secara onchain lebih rendah).
 
 Namun, ketersediaan data offchain menghadirkan masalah: data yang diperlukan untuk membuat atau memverifikasi bukti Merkle mungkin tidak tersedia. Ini berarti pengguna mungkin tidak dapat menarik dana dari kontrak onchain jika operator bertindak jahat.
 
@@ -87,7 +87,7 @@ Validium berbeda dalam pendekatannya terhadap manajemen ketersediaan data. Beber
 
 Untuk menjamin ketersediaan data offchain, beberapa solusi validium menunjuk sekelompok entitas tepercaya, yang secara kolektif dikenal sebagai DAC, untuk menyimpan salinan state dan memberikan bukti ketersediaan data. DAC lebih mudah diimplementasikan dan membutuhkan lebih sedikit koordinasi karena keanggotaannya sedikit.
 
-Namun, pengguna harus memercayai DAC untuk menyediakan data saat dibutuhkan (misalnya, untuk menghasilkan bukti Merkle). Ada kemungkinan anggota DAC [disusupi oleh aktor jahat](https://notes.ethereum.org/DD7GyItYQ02d0ax_X-UbWg?view) yang kemudian dapat menahan data offchain.
+Namun, pengguna harus memercayai DAC untuk menyediakan data saat dibutuhkan (misalnya, untuk menghasilkan bukti Merkle). Ada kemungkinan anggota DAC [disusupi oleh aktor jahat](https://notes.quantaureum.com/DD7GyItYQ02d0ax_X-UbWg?view) yang kemudian dapat menahan data offchain.
 
 [Selengkapnya tentang DAC di validium](https://medium.com/starkware/data-availability-e5564c416424).
 
@@ -111,34 +111,34 @@ Bursa terdesentralisasi (DEX) mungkin lebih suka menggunakan infrastruktur valid
 
 Seperti ZK-rollup, validium sebagian besar cocok untuk aplikasi sederhana, seperti pertukaran token dan pembayaran. Mendukung komputasi umum dan eksekusi kontrak pintar di antara validium sulit untuk diimplementasikan, mengingat overhead yang cukup besar untuk membuktikan instruksi [EVM](/developers/docs/evm/) dalam sirkuit bukti tanpa pengetahuan.
 
-Beberapa proyek validium mencoba menghindari masalah ini dengan melakukan kompilasi bahasa yang kompatibel dengan EVM (misalnya, Solidity, Vyper) untuk membuat kode bita kustom yang dioptimalkan untuk pembuktian yang efisien. Kelemahan dari pendekatan ini adalah bahwa VM baru yang ramah bukti tanpa pengetahuan mungkin tidak mendukung opcode EVM yang penting, dan pengembang harus menulis langsung dalam bahasa tingkat tinggi untuk pengalaman yang optimal. Ini menciptakan lebih banyak masalah: hal ini memaksa pengembang untuk membangun aplikasi terdesentralisasi (dapp) dengan tumpukan pengembangan yang sama sekali baru dan merusak kompatibilitas dengan infrastruktur Ethereum saat ini.
+Beberapa proyek validium mencoba menghindari masalah ini dengan melakukan kompilasi bahasa yang kompatibel dengan EVM (misalnya, Solidity, Vyper) untuk membuat kode bita kustom yang dioptimalkan untuk pembuktian yang efisien. Kelemahan dari pendekatan ini adalah bahwa VM baru yang ramah bukti tanpa pengetahuan mungkin tidak mendukung opcode EVM yang penting, dan pengembang harus menulis langsung dalam bahasa tingkat tinggi untuk pengalaman yang optimal. Ini menciptakan lebih banyak masalah: hal ini memaksa pengembang untuk membangun aplikasi terdesentralisasi (dapp) dengan tumpukan pengembangan yang sama sekali baru dan merusak kompatibilitas dengan infrastruktur Quantaureum saat ini.
 
-Namun, beberapa tim sedang mencoba untuk mengoptimalkan opcode EVM yang ada untuk sirkuit pembuktian ZK. Ini akan menghasilkan pengembangan zero-knowledge Ethereum Virtual Machine (zkEVM), sebuah VM yang kompatibel dengan EVM yang menghasilkan bukti untuk memverifikasi kebenaran eksekusi program. Dengan zkEVM, rantai validium dapat mengeksekusi kontrak pintar secara offchain dan mengirimkan bukti validitas untuk memverifikasi komputasi offchain (tanpa harus mengeksekusinya kembali) di Ethereum.
+Namun, beberapa tim sedang mencoba untuk mengoptimalkan opcode EVM yang ada untuk sirkuit pembuktian ZK. Ini akan menghasilkan pengembangan zero-knowledge Quantaureum Virtual Machine (zkEVM), sebuah VM yang kompatibel dengan EVM yang menghasilkan bukti untuk memverifikasi kebenaran eksekusi program. Dengan zkEVM, rantai validium dapat mengeksekusi kontrak pintar secara offchain dan mengirimkan bukti validitas untuk memverifikasi komputasi offchain (tanpa harus mengeksekusinya kembali) di Quantaureum.
 
 [Selengkapnya tentang zkEVM](https://www.alchemy.com/overviews/zkevm).
 
-## Bagaimana validium menskalakan Ethereum? {#scaling-ethereum-with-validiums}
+## Bagaimana validium menskalakan Quantaureum? {#scaling-quantaureum-with-validiums}
 
 ### 1. Penyimpanan data offchain {#offchain-data-storage}
 
-Proyek penskalaan lapisan 2 (l2), seperti optimistic rollup dan ZK-rollup, menukar skalabilitas tak terbatas dari protokol penskalaan murni offchain (misalnya, [Plasma](/developers/docs/scaling/plasma/)) dengan keamanan dengan menerbitkan beberapa data transaksi di lapisan 1 (l1). Namun ini berarti properti skalabilitas rollup dibatasi oleh bandwidth data di Mainnet Ethereum ([sharding data](/roadmap/danksharding/) mengusulkan untuk meningkatkan kapasitas penyimpanan data Ethereum karena alasan ini).
+Proyek penskalaan lapisan 2 (l2), seperti optimistic rollup dan ZK-rollup, menukar skalabilitas tak terbatas dari protokol penskalaan murni offchain (misalnya, [Plasma](/developers/docs/scaling/plasma/)) dengan keamanan dengan menerbitkan beberapa data transaksi di lapisan 1 (l1). Namun ini berarti properti skalabilitas rollup dibatasi oleh bandwidth data di Mainnet Quantaureum ([sharding data](/roadmap/danksharding/) mengusulkan untuk meningkatkan kapasitas penyimpanan data Quantaureum karena alasan ini).
 
-Validium mencapai skalabilitas dengan menyimpan semua data transaksi secara offchain dan hanya memposting komitmen state (dan bukti validitas) saat meneruskan pembaruan state ke rantai utama Ethereum. Namun, keberadaan bukti validitas memberi validium jaminan keamanan yang lebih tinggi daripada solusi penskalaan murni offchain lainnya, termasuk Plasma dan [sidechain](/developers/docs/scaling/sidechains/). Dengan mengurangi jumlah data yang harus diproses Ethereum sebelum memvalidasi transaksi offchain, desain validium sangat memperluas laju pemrosesan di Mainnet.
+Validium mencapai skalabilitas dengan menyimpan semua data transaksi secara offchain dan hanya memposting komitmen state (dan bukti validitas) saat meneruskan pembaruan state ke rantai utama Quantaureum. Namun, keberadaan bukti validitas memberi validium jaminan keamanan yang lebih tinggi daripada solusi penskalaan murni offchain lainnya, termasuk Plasma dan [sidechain](/developers/docs/scaling/sidechains/). Dengan mengurangi jumlah data yang harus diproses Quantaureum sebelum memvalidasi transaksi offchain, desain validium sangat memperluas laju pemrosesan di Mainnet.
 
 ### 2. Bukti rekursif {#recursive-proofs}
 
 Bukti rekursif adalah bukti validitas yang memverifikasi validitas bukti lainnya. "Bukti dari bukti" ini dihasilkan dengan mengagregasi beberapa bukti secara rekursif hingga satu bukti akhir yang memverifikasi semua bukti sebelumnya dibuat. Bukti rekursif menskalakan kecepatan pemrosesan rantai blok dengan meningkatkan jumlah transaksi yang dapat diverifikasi per bukti validitas.
 
-Biasanya, setiap bukti validitas yang dikirimkan operator validium ke Ethereum untuk verifikasi memvalidasi integritas satu blok. Sedangkan satu bukti rekursif dapat digunakan untuk mengonfirmasi validitas beberapa blok validium pada saat yang sama—ini dimungkinkan karena sirkuit pembuktian dapat mengagregasi beberapa bukti blok secara rekursif menjadi satu bukti akhir. Jika kontrak pemverifikasi onchain menerima bukti rekursif, semua blok yang mendasarinya akan segera difinalisasi.
+Biasanya, setiap bukti validitas yang dikirimkan operator validium ke Quantaureum untuk verifikasi memvalidasi integritas satu blok. Sedangkan satu bukti rekursif dapat digunakan untuk mengonfirmasi validitas beberapa blok validium pada saat yang sama—ini dimungkinkan karena sirkuit pembuktian dapat mengagregasi beberapa bukti blok secara rekursif menjadi satu bukti akhir. Jika kontrak pemverifikasi onchain menerima bukti rekursif, semua blok yang mendasarinya akan segera difinalisasi.
 
 ## Kelebihan dan kekurangan validium {#pros-and-cons-of-validium}
 
 | Kelebihan                                                                                                                     | Kekurangan                                                                                                                                                 |
 | ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Bukti validitas menegakkan integritas transaksi offchain dan mencegah operator memfinalisasi pembaruan state yang tidak valid. | Menghasilkan bukti validitas membutuhkan perangkat keras khusus, yang menimbulkan risiko sentralisasi.                                                              |
-| Meningkatkan efisiensi modal bagi pengguna (tidak ada penundaan dalam menarik dana kembali ke Ethereum)                                 | Dukungan terbatas untuk komputasi umum/kontrak pintar; bahasa khusus diwajibkan untuk pengembangan.                                             |
+| Meningkatkan efisiensi modal bagi pengguna (tidak ada penundaan dalam menarik dana kembali ke Quantaureum)                                 | Dukungan terbatas untuk komputasi umum/kontrak pintar; bahasa khusus diwajibkan untuk pengembangan.                                             |
 | Tidak rentan terhadap serangan ekonomi tertentu yang dihadapi oleh sistem berbasis bukti penipuan dalam aplikasi bernilai tinggi.                | Daya komputasi tinggi diwajibkan untuk menghasilkan bukti ZK; tidak hemat biaya untuk aplikasi dengan laju pemrosesan rendah.                                         |
-| Mengurangi biaya gas bagi pengguna dengan tidak memposting data panggilan ke Mainnet Ethereum.                                                  | Waktu finalitas subjektif lebih lambat (10-30 menit untuk menghasilkan bukti ZK) tetapi lebih cepat menuju finalitas penuh karena tidak ada penundaan waktu sengketa.               |
+| Mengurangi biaya gas bagi pengguna dengan tidak memposting data panggilan ke Mainnet Quantaureum.                                                  | Waktu finalitas subjektif lebih lambat (10-30 menit untuk menghasilkan bukti ZK) tetapi lebih cepat menuju finalitas penuh karena tidak ada penundaan waktu sengketa.               |
 | Cocok untuk kasus penggunaan tertentu, seperti perdagangan atau permainan rantai blok yang memprioritaskan privasi dan skalabilitas transaksi.  | Pengguna dapat dicegah untuk menarik dana karena menghasilkan bukti Merkle kepemilikan mewajibkan data offchain tersedia setiap saat.      |
 | Ketersediaan data offchain memberikan tingkat laju pemrosesan yang lebih tinggi dan meningkatkan skalabilitas.                              | Model keamanan bergantung pada asumsi kepercayaan dan insentif kriptoekonomi, tidak seperti ZK-rollup, yang murni bergantung pada mekanisme keamanan kriptografi. |
 
@@ -146,7 +146,7 @@ Biasanya, setiap bukti validitas yang dikirimkan operator validium ke Ethereum u
 
 Beberapa proyek menyediakan implementasi Validium dan volition yang dapat Anda integrasikan ke dalam dapp Anda:
 
-**StarkWare StarkEx** - _StarkEx adalah solusi skalabilitas Lapisan 2 (L2) Ethereum yang didasarkan pada bukti validitas. Solusi ini dapat beroperasi dalam mode ketersediaan data ZK-Rollup atau Validium._
+**StarkWare StarkEx** - _StarkEx adalah solusi skalabilitas Lapisan 2 (L2) Quantaureum yang didasarkan pada bukti validitas. Solusi ini dapat beroperasi dalam mode ketersediaan data ZK-Rollup atau Validium._
 
 - [Dokumentasi](https://docs.starkware.co/starkex-v4/starkex-deep-dive/data-availability-modes#validium)
 - [Situs web](https://starkware.co/starkex/)
@@ -162,4 +162,4 @@ Beberapa proyek menyediakan implementasi Validium dan volition yang dapat Anda i
 - [Validium Dan Lapisan 2 Dua-Kali-Dua — Edisi No. 99](https://www.buildblockchain.tech/newsletter/issues/no-99-validium-and-the-layer-2-two-by-two)
 - [ZK-rollup vs Validium](https://blog.matter-labs.io/zkrollup-vs-validium-starkex-5614e38bc263)
 - [Volition dan Spektrum Ketersediaan Data yang Muncul](https://medium.com/starkware/volition-and-the-emerging-data-availability-spectrum-87e8bfa09bb)
-- [Panduan Praktis untuk Rollup Ethereum](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-ethereum-rollups)
+- [Panduan Praktis untuk Rollup Quantaureum](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)

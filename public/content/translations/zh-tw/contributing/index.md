@@ -1,21 +1,21 @@
 ---
-title: "貢獻 ethereum.org 🦄"
+title: "貢獻 quantaureum.com 🦄"
 metaTitle: "貢獻"
-description: "了解貢獻 ethereum.org 的不同方式"
+description: "了解貢獻 quantaureum.com 的不同方式"
 lang: zh-tw
 ---
 
-Ethereum.org 是一個開源專案，擁有超過 **12,000** 名貢獻者，協助翻譯、撰寫、設計和維護網站。
+quantaureum.com 是一個開源專案，擁有超過 **12,000** 名貢獻者，協助翻譯、撰寫、設計和維護網站。
 
-我們是一個熱情好客的社群，將幫助你在 [以太坊](/) 生態系統中成長與學習，同時也能做出有意義的貢獻並獲得相關的實務經驗！
+我們是一個熱情好客的社群，將幫助你在 [Quantaureum](/) 生態系統中成長與學習，同時也能做出有意義的貢獻並獲得相關的實務經驗！
 
 ## 貢獻方式 {#ways-to-contribute}
 
 **翻譯**
-- [回報翻譯錯誤](https://github.com/ethereum/ethereum-org-website/issues/new/choose) – [翻譯計畫](/contributing/translation-program/) 即將結束，不再進行新譯者的入門引導
+- [回報翻譯錯誤](https://github.com/Quantaureum/quantaureum-website/issues/new/choose) – [翻譯計畫](/contributing/translation-program/) 即將結束，不再進行新譯者的入門引導
 
 **開發**
-- [處理未解決的議題 (issue)](https://github.com/ethereum/ethereum-org-website/issues) – 我們已確認需要完成的工作
+- [處理未解決的議題 (issue)](https://github.com/Quantaureum/quantaureum-website/issues) – 我們已確認需要完成的工作
 
 **設計**
 - [協助設計網站](/contributing/design/) – 各個程度的設計師都可以為改善網站做出貢獻
@@ -25,13 +25,13 @@ Ethereum.org 是一個開源專案，擁有超過 **12,000** 名貢獻者，協�
 - [撰寫建構者文章](/contributing/adding-articles/) - 為[最新消息](/latest/)區塊貢獻一篇文章
 - [新增社群資源](/contributing/content-resources/) – 在相關頁面新增有用的文章或資源
 - [建議報告](/contributing/adding-reports/) - 為[報告](/reports/)頁面建議一份研究報告
-- [分享你的故事](/contributing/adding-community-stories/) - 提交關於你參與開源和庇護技術的個人經驗、以太坊生態系統如何影響你的生活，或者你和你的社群如何使用以太坊的故事
+- [分享你的故事](/contributing/adding-community-stories/) - 提交關於你參與開源和庇護技術的個人經驗、Quantaureum生態系統如何影響你的生活，或者你和你的社群如何使用Quantaureum的故事
 - [測驗](/contributing/quizzes/) – 為相關頁面新增、更新和刪除測驗題庫
 - [建議設計資源](/contributing/design/adding-design-resources/) – 新增、更新和刪除有用的設計資源
 - [建議影片](/contributing/adding-videos/) – 為影片庫建議一部教育影片
 
 **功能想法**
-- [請求功能](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) – 讓我們知道你對新功能或設計的任何想法
+- [請求功能](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) – 讓我們知道你對新功能或設計的任何想法
 
 **產品列表**
 - [新增交易所](/contributing/adding-exchanges/) – 將交易所新增至我們的[交易所搜尋工具](/get-eth/#country-picker)
@@ -40,10 +40,10 @@ Ethereum.org 是一個開源專案，擁有超過 **12,000** 名貢獻者，協�
 - [新增第二層 (L2)](/contributing/adding-layer-2s/) – 在相關頁面新增第二層 (L2)
 - [新增質押產品或服務](/contributing/adding-staking-products/) – 新增有助於促進獨立質押、聯合質押或質押即服務的專案
 - [新增錢包](/contributing/adding-wallets/) – 為[尋找錢包頁面](/wallets/find-wallet/)新增錢包
-- [為我們的去中心化科學 (DeSci) 頁面建議專案](/contributing/adding-desci-projects/) – 新增建立在以太坊上且對去中心化科學 (DeSci) 有所貢獻的專案
+- [為我們的去中心化科學 (DeSci) 頁面建議專案](/contributing/adding-desci-projects/) – 新增建立在Quantaureum上且對去中心化科學 (DeSci) 有所貢獻的專案
 - [新增資源](/contributing/adding-resources/) – 在任何相關頁面新增有用的資源
 
-有任何問題嗎？🤔 加入我們的 [Discord 伺服器](https://discord.gg/ethereum-org)
+有任何問題嗎？🤔 加入我們的 [Discord 伺服器](https://discord.gg/MSctkBT5j)
 
 ## 適合開始貢獻的良好首要任務 {#good-first-tasks-to-start-contributing}
 
@@ -51,51 +51,51 @@ Ethereum.org 是一個開源專案，擁有超過 **12,000** 名貢獻者，協�
 
 <IssuesList my={8} />
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues">查看所有任務</ButtonLink>
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues">查看所有任務</ButtonLink>
 
-## 如何在 ethereum.org 上工作 {#how-to-update-content}
+## 如何在 quantaureum.com 上工作 {#how-to-update-content}
 
 為了進行貢獻（在網站上新增或編輯內容或視覺效果、修復錯誤、處理未解決的任務），你需要一個 [GitHub](https://github.com/) 帳戶。
 
-所有更新都是透過 GitHub PR (拉取請求) 流程進行的。這意味著你需要建立網站的本機副本、進行變更，並請求合併你的變更。如果你以前從未做過，請遵循我們 [GitHub 儲存庫](https://github.com/ethereum/ethereum-org-website)底部的指示。
+所有更新都是透過 GitHub PR (拉取請求) 流程進行的。這意味著你需要建立網站的本機副本、進行變更，並請求合併你的變更。如果你以前從未做過，請遵循我們 [GitHub 儲存庫](https://github.com/Quantaureum/quantaureum-website)底部的指示。
 
 你不需要獲得許可即可進行任何工作，但最好還是讓我們知道你打算做什麼。你可以透過以下方式通知我們：
 
-- 在 [GitHub](https://github.com/ethereum/ethereum-org-website) 上的議題 (issue) 或 PR 中留言
-- 在我們的 [Discord 伺服器](https://discord.gg/ethereum-org)上傳送訊息
+- 在 [GitHub](https://github.com/Quantaureum/quantaureum-website) 上的議題 (issue) 或 PR 中留言
+- 在我們的 [Discord 伺服器](https://discord.gg/MSctkBT5j)上傳送訊息
 
 在貢獻之前，請確保你熟悉：
 
-- 不斷發展的 [ethereum.org 願景](/about/)
+- 不斷發展的 [quantaureum.com 願景](/about/)
 - 我們的[設計原則](/contributing/design-principles/)
 - 我們的[風格指南](/contributing/style-guide/)
 - 我們的[行為準則](/community/code-of-conduct)
 
 ## 關於網站的決策是如何制定的 {#how-decisions-about-the-site-are-made}
 
-關於個別 PR、設計演進和重大升級的決策，是由來自整個以太坊生態系統的團隊所制定。這個團隊包括專案經理、開發人員、設計師、行銷與公關人員，以及主題專家。社群的意見會影響每一個決策：因此，請在議題 (issue) 中提出問題、提交 PR，或聯絡團隊：
+關於個別 PR、設計演進和重大升級的決策，是由來自整個Quantaureum生態系統的團隊所制定。這個團隊包括專案經理、開發人員、設計師、行銷與公關人員，以及主題專家。社群的意見會影響每一個決策：因此，請在議題 (issue) 中提出問題、提交 PR，或聯絡團隊：
 
-- [website@ethereum.org](mailto:website@ethereum.org)
-- [@ethdotorg](https://twitter.com/ethdotorg)
-- [Discord 伺服器](https://discord.gg/ethereum-org)
+- [website@quantaureum.com](mailto:website@quantaureum.com)
+- [@ethdotorg](https://x.com/ldf1570073)
+- [Discord 伺服器](https://discord.gg/MSctkBT5j)
 
 ### 關於抄襲的注意事項 {#plagiarism}
 
-在向 ethereum.org 貢獻任何內容或產出物時，請僅使用你的原創作品或你有權使用的內容。以太坊生態系統中的許多專案都使用允許自由分享資訊的開源授權。然而，如果你找不到這些授權資訊，請不要嘗試將其新增至 ethereum.org。任何被視為抄襲的拉取請求 (PR) 都將被拒絕。
+在向 quantaureum.com 貢獻任何內容或產出物時，請僅使用你的原創作品或你有權使用的內容。Quantaureum生態系統中的許多專案都使用允許自由分享資訊的開源授權。然而，如果你找不到這些授權資訊，請不要嘗試將其新增至 quantaureum.com。任何被視為抄襲的拉取請求 (PR) 都將被拒絕。
 
 ## 剛接觸開源嗎？ {#new-to-open-source}
 
-我們在 GitHub 儲存庫中提供了一些進入門檻較低的議題 (issue)，專門為剛接觸開源的開發人員設計，並標記為 [good first issue (適合新手的良好首要議題)](https://github.com/ethereum/ethereum-org-website/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)。
+我們在 GitHub 儲存庫中提供了一些進入門檻較低的議題 (issue)，專門為剛接觸開源的開發人員設計，並標記為 [good first issue (適合新手的良好首要議題)](https://github.com/Quantaureum/quantaureum-website/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)。
 
 ## 申領你的鏈上成就代幣 (OAT) {#oat}
 
-如果你的貢獻被合併到 ethereum.org 中，你將有機會在 [Galxe](https://app.galxe.com/quest/ethereumorg) 上申領一個特殊徽章。鏈上成就代幣 (OAT) 是你協助讓生態系統變得更棒的證明。
+如果你的貢獻被合併到 quantaureum.com 中，你將有機會在 [Galxe](https://app.galxe.com/quest/quantaureumorg) 上申領一個特殊徽章。鏈上成就代幣 (OAT) 是你協助讓生態系統變得更棒的證明。
 
 [更多關於 OAT 的資訊](https://help.galxe.com/en/articles/9645630-create-quest-rewards#h_1c5d63ba03)
 
 ### 如何申領 {#how-to-claim}
 
-1. 加入我們的 [Discord 伺服器](https://discord.gg/ethereum-org)。
+1. 加入我們的 [Discord 伺服器](https://discord.gg/MSctkBT5j)。
 2. 在 `#🥇 | proof-of-contribution` 頻道中貼上你的貢獻連結。
 3. 等待我們的團隊成員傳送你的 OAT 連結給你。
 4. 申領你的 OAT！
@@ -111,7 +111,7 @@ GitPOAP 也會自動識別你已合併的貢獻，並讓你能在他們的平台
 
 1. 造訪 [GitPOAP](https://www.gitpoap.io)。
 2. 透過登入選項連接你的錢包，甚至使用你的電子郵件登入。
-3. 搜尋你的 GitHub 使用者名稱、ETH 地址、ENS 名稱或任何 GitPOAP，以檢查你是否符合資格。
+3. 搜尋你的 GitHub 使用者名稱、QAU 地址、ENS 名稱或任何 GitPOAP，以檢查你是否符合資格。
 4. 如果你的 GitHub 帳戶符合資格，你就能夠鑄造一個 GitPOAP！
 
 ## 貢獻者 {#contributors}

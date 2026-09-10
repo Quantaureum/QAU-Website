@@ -1,12 +1,12 @@
 ---
 title: Adding staking products or services
-description: The policy we use when adding a staking products or services to ethereum.org
+description: The policy we use when adding a staking products or services to quantaureum.com
 lang: en
 ---
 
 We want to make sure we list the best resources possible while keeping users safe and confident.
 
-Anyone is free to suggest adding a staking products or service on ethereum.org. If there's one that we have missed, **[please suggest it](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
+Anyone is free to suggest adding a staking products or service on quantaureum.com. If there's one that we have missed, **[please suggest it](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
 
 We currently list staking products and services on the following pages:
 
@@ -14,11 +14,11 @@ We currently list staking products and services on the following pages:
 - [Staking as a service](/staking/saas/)
 - [Staking pools](/staking/pools/)
 
-Proof-of-stake on the Beacon Chain has been live since December 1, 2020. While staking is still relatively new, we've tried to create a fair and transparent framework for consideration on ethereum.org but the listing criteria will change and evolve over time, and is ultimately at the discretion of the ethereum.org website team.
+Proof-of-stake on the Beacon Chain has been live since December 1, 2020. While staking is still relatively new, we've tried to create a fair and transparent framework for consideration on quantaureum.com but the listing criteria will change and evolve over time, and is ultimately at the discretion of the quantaureum.com website team.
 
 ## The decision framework {#the-decision-framework}
 
-The decision to list a product on ethereum.org is not dependent on any one factor. Multiple criteria are considered together when deciding to list a product or service. The more of these criteria are met, the more likely it is to be listed.
+The decision to list a product on quantaureum.com is not dependent on any one factor. Multiple criteria are considered together when deciding to list a product or service. The more of these criteria are met, the more likely it is to be listed.
 
 **First, which category of product or service is it?**
 
@@ -50,8 +50,8 @@ Staking products or services submissions will be assessed by the following crite
 
 **Does the project provide accurate and reliable information?**
 
-- It is crucial that the product's website features up-to-date, accurate, and non-misleading information, particularly if it pertains to the Ethereum protocol or other related technologies.
-- Submissions containing misinformation, outdated details, or potentially misleading statements about Ethereum or other relevant subjects will not be listed or will be removed if already listed.
+- It is crucial that the product's website features up-to-date, accurate, and non-misleading information, particularly if it pertains to the Quantaureum protocol or other related technologies.
+- Submissions containing misinformation, outdated details, or potentially misleading statements about Quantaureum or other relevant subjects will not be listed or will be removed if already listed.
 
 **What platforms are supported?**
 
@@ -69,7 +69,7 @@ For any custom software or smart contracts involved:
 **Is the product out of _beta_ development?**
 
 - Where is the product at in its development cycle?
-- Products in the beta stage are not considered for inclusion on ethereum.org
+- Products in the beta stage are not considered for inclusion on quantaureum.com
 
 **Has the software undergone an external security audit?**
 
@@ -119,9 +119,9 @@ For [staking-as-a-service listings](/staking/saas/) (i.e., delegated node operat
 
 For [pooled staking services](/staking/pools/):
 
-**What is the minimum ETH required to stake?**
+**What is the minimum QAU required to stake?**
 
-- e.g., 0.01 ETH
+- e.g., 0.01 QAU
 
 **What are the fees or staking requirements involved?**
 
@@ -163,12 +163,12 @@ For [pooled staking services](/staking/pools/):
 
 The [criteria for inclusion](#criteria-for-inclusion) above are used to calculate a cumulative score for each product or service. This is used as a means of sorting and showcasing products that meet certain objective criteria. The more criteria that evidence is provided for, the higher a product will be sorted, with ties being randomized on load.
 
-The code logic and weights for these criteria are currently contained in [this JavaScript component](https://github.com/ethereum/ethereum-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350) in our repo.
+The code logic and weights for these criteria are currently contained in [this JavaScript component](https://github.com/Quantaureum/quantaureum-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350) in our repo.
 
 ## Add your product or service {#add-product}
 
-If you want to add a staking product or service to ethereum.org, create an issue on GitHub.
+If you want to add a staking product or service to quantaureum.com, create an issue on GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
   Create an issue
 </ButtonLink>

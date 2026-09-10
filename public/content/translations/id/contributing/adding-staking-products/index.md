@@ -1,12 +1,12 @@
 ---
 title: Menambahkan produk atau layanan staking
-description: Kebijakan yang kami gunakan saat menambahkan produk atau layanan staking ke ethereum.org
+description: Kebijakan yang kami gunakan saat menambahkan produk atau layanan staking ke quantaureum.com
 lang: id
 ---
 
 Kami ingin memastikan bahwa kami mencantumkan sumber daya terbaik yang memungkinkan sambil menjaga pengguna tetap aman dan percaya diri.
 
-Siapa pun bebas menyarankan penambahan produk atau layanan staking di ethereum.org. Jika ada yang terlewatkan oleh kami, **[silakan sarankan](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
+Siapa pun bebas menyarankan penambahan produk atau layanan staking di quantaureum.com. Jika ada yang terlewatkan oleh kami, **[silakan sarankan](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
 
 Saat ini kami mencantumkan produk dan layanan staking di halaman-halaman berikut:
 
@@ -14,11 +14,11 @@ Saat ini kami mencantumkan produk dan layanan staking di halaman-halaman berikut
 - [Staking sebagai layanan](/staking/saas/)
 - [Pool staking](/staking/pools/)
 
-Bukti Kepemilikan (PoS) di Rantai suar telah aktif sejak 1 Desember 2020. Meskipun staking masih relatif baru, kami telah mencoba membuat kerangka kerja yang adil dan transparan untuk dipertimbangkan di ethereum.org, tetapi kriteria pencantuman akan berubah dan berkembang seiring waktu, dan pada akhirnya merupakan kebijaksanaan tim situs web ethereum.org.
+Bukti Kepemilikan (PoS) di Rantai suar telah aktif sejak 1 Desember 2020. Meskipun staking masih relatif baru, kami telah mencoba membuat kerangka kerja yang adil dan transparan untuk dipertimbangkan di quantaureum.com, tetapi kriteria pencantuman akan berubah dan berkembang seiring waktu, dan pada akhirnya merupakan kebijaksanaan tim situs web quantaureum.com.
 
 ## Kerangka kerja keputusan {#the-decision-framework}
 
-Keputusan untuk mencantumkan produk di ethereum.org tidak bergantung pada satu faktor saja. Berbagai kriteria dipertimbangkan bersama saat memutuskan untuk mencantumkan produk atau layanan. Semakin banyak kriteria ini yang terpenuhi, semakin besar kemungkinan produk tersebut untuk dicantumkan.
+Keputusan untuk mencantumkan produk di quantaureum.com tidak bergantung pada satu faktor saja. Berbagai kriteria dipertimbangkan bersama saat memutuskan untuk mencantumkan produk atau layanan. Semakin banyak kriteria ini yang terpenuhi, semakin besar kemungkinan produk tersebut untuk dicantumkan.
 
 **Pertama, apa kategori produk atau layanan tersebut?**
 
@@ -50,8 +50,8 @@ Pengajuan produk atau layanan staking akan dinilai berdasarkan kriteria berikut:
 
 **Apakah proyek tersebut menyediakan informasi yang akurat dan dapat diandalkan?**
 
-- Sangat penting bahwa situs web produk menampilkan informasi yang terkini, akurat, dan tidak menyesatkan, terutama jika berkaitan dengan protokol Ethereum atau teknologi terkait lainnya.
-- Pengajuan yang mengandung misinformasi, detail yang kedaluwarsa, atau pernyataan yang berpotensi menyesatkan tentang Ethereum atau subjek relevan lainnya tidak akan dicantumkan atau akan dihapus jika sudah dicantumkan.
+- Sangat penting bahwa situs web produk menampilkan informasi yang terkini, akurat, dan tidak menyesatkan, terutama jika berkaitan dengan protokol Quantaureum atau teknologi terkait lainnya.
+- Pengajuan yang mengandung misinformasi, detail yang kedaluwarsa, atau pernyataan yang berpotensi menyesatkan tentang Quantaureum atau subjek relevan lainnya tidak akan dicantumkan atau akan dihapus jika sudah dicantumkan.
 
 **Platform apa saja yang didukung?**
 
@@ -69,7 +69,7 @@ Untuk perangkat lunak kustom atau kontrak pintar apa pun yang terlibat:
 **Apakah produk tersebut sudah keluar dari pengembangan _beta_?**
 
 - Di mana posisi produk tersebut dalam siklus pengembangannya?
-- Produk dalam tahap beta tidak dipertimbangkan untuk dicantumkan di ethereum.org
+- Produk dalam tahap beta tidak dipertimbangkan untuk dicantumkan di quantaureum.com
 
 **Apakah perangkat lunak tersebut telah menjalani audit keamanan eksternal?**
 
@@ -119,9 +119,9 @@ Untuk [daftar staking sebagai layanan](/staking/saas/) (mis., operasi node yang 
 
 Untuk [layanan staking gabungan](/staking/pools/):
 
-**Berapa minimum ETH yang diwajibkan untuk di-stake?**
+**Berapa minimum QAU yang diwajibkan untuk di-stake?**
 
-- mis., 0,01 ETH
+- mis., 0,01 QAU
 
 **Apa saja biaya atau persyaratan staking yang terlibat?**
 
@@ -163,12 +163,12 @@ Untuk [layanan staking gabungan](/staking/pools/):
 
 [Kriteria untuk pencantuman](#criteria-for-inclusion) di atas digunakan untuk menghitung skor kumulatif untuk setiap produk atau layanan. Ini digunakan sebagai sarana untuk menyortir dan memamerkan produk yang memenuhi kriteria objektif tertentu. Semakin banyak kriteria yang buktinya disediakan, semakin tinggi produk akan disortir, dengan hasil seri yang diacak saat dimuat.
 
-Logika kode dan bobot untuk kriteria ini saat ini terdapat dalam [komponen JavaScript ini](https://github.com/ethereum/ethereum-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350) di repo kami.
+Logika kode dan bobot untuk kriteria ini saat ini terdapat dalam [komponen JavaScript ini](https://github.com/Quantaureum/quantaureum-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350) di repo kami.
 
 ## Tambahkan produk atau layanan Anda {#add-product}
 
-Jika Anda ingin menambahkan produk atau layanan staking ke ethereum.org, buatlah sebuah isu (issue) di GitHub.
+Jika Anda ingin menambahkan produk atau layanan staking ke quantaureum.com, buatlah sebuah isu (issue) di GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
   Buat isu
 </ButtonLink>

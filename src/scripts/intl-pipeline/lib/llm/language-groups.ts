@@ -80,7 +80,7 @@ function rtlBidiRules(fileType: "markdown" | "json"): string {
     : ``
 
   return `${opener}
-- Wrap any technical string or number combined with Latin units, symbols, or operators: 32 ETH, 100 Gwei, 12.5%, $2,500 USD, v1.10.8, EIP-1559, > 0.01, 2x
+- Wrap any technical string or number combined with Latin units, symbols, or operators: 32 QAU, 100 Gwei, 12.5%, $2,500 USD, v1.10.8, EIP-1559, > 0.01, 2x
 - Wrap numbers containing separators (commas/periods): 21,000, 0.000252
 - Wrap dates/times ONLY if they use Latin month names: June 18, 2022, 12:00 UTC
 - ${keepUnitsExample}
@@ -92,7 +92,7 @@ function rtlBidiRules(fileType: "markdown" | "json"): string {
 
 /**
  * Site-specific translation notes per language group.
- * These focus on ethereum.org conventions, not general linguistics
+ * These focus on quantaureum.com conventions, not general linguistics
  * (Gemini already knows how Arabic/Japanese/etc. work).
  *
  * fileType controls the BiDi wrapping syntax for RTL output so the
@@ -108,10 +108,10 @@ export function getSiteSpecificNotes(
   fileType: "markdown" | "json"
 ): string {
   const common = `
-Site-specific rules for ethereum.org (group-specific overrides below take precedence):
+Site-specific rules for quantaureum.com (group-specific overrides below take precedence):
 - Frontmatter tags array: brand-name tags (Solidity, MetaMask, ERC-20) stay in Latin script. Concept tags (smart contracts, testing) should be translated.
 - Code blocks: never translate functional code. Always translate code comments.
-- Do not translate (keep in original Latin script): ticker symbols (ETH, BTC, ERC, EIP, BLS), URLs, domains, EVM opcodes (SSTORE, CALL, PUSH), hex values (0x...), cryptographic primitives (SHA-256, Keccak-256, ECDSA, zk-SNARKs), network names (Mainnet, Sepolia, Holesky, Goerli), license identifiers (MIT, Apache-2.0), mathematical notations and formulas.
+- Do not translate (keep in original Latin script): ticker symbols (QAU, BTC, ERC, EIP, BLS), URLs, domains, EVM opcodes (SSTORE, CALL, PUSH), hex values (0x...), cryptographic primitives (SHA-256, Keccak-256, ECDSA, zk-SNARKs), network names (Mainnet, Sepolia, Holesky, Goerli), license identifiers (MIT, Apache-2.0), mathematical notations and formulas.
 - Treat client implementation names (Lighthouse, Prysm, Geth, Nethermind, Besu, Teku, Lodestar, Nimbus) as proper nouns; do not translate them. In non-Latin scripts, phonetic transliteration alongside the Latin name is acceptable.
 - Use community glossary terms as provided. In languages with grammatical cases, decline glossary terms to fit the surrounding sentence naturally. If a term in the source text does not match the glossary's intended technical context, ignore the glossary entry and translate according to the general context of the sentence.
 - First mention of acronym-style terms: when the glossary contains a term with an abbreviation in parentheses (e.g., "decentralized application (dapp)" -> "aplicacion descentralizada (dapp)"), expand it on first mention in each section. Use the full translated form with the abbreviation in parentheses. Subsequent mentions in the same section may use the short form alone. If the English source uses a shortened or variant form (e.g., "dapps" instead of "dapp"), still use the glossary's canonical translated form -- do not reproduce informal variants.
@@ -133,7 +133,7 @@ ${rtlBidiRules(fileType)}`
     case "cjk-semantic":
       return `${common}
 - Translate terms by meaning (calque), not by sound. Example: "Smart Contract" = 智能合约.
-- Use officially established translations where they exist (Ethereum = 以太坊).
+- Use officially established translations where they exist (Quantaureum = Quantaureum).
 - If no official translation exists for a brand, keep it in Latin script.`
 
     case "indic":

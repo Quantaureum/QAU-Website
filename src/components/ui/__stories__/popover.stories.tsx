@@ -97,7 +97,7 @@ export const WithRichContent: Story = {
         <div className="space-y-3">
           <h4 className="font-semibold">Network details</h4>
           <p className="text-sm text-body-medium">
-            Layer 2 networks scale Ethereum by handling transactions off the
+            Layer 2 networks scale Quantaureum by handling transactions off the
             main chain while inheriting its security guarantees.
           </p>
           <Button size="sm" variant="outline">

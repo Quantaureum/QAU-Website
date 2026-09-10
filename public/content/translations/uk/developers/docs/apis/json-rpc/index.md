@@ -6,7 +6,7 @@ lang: uk
 
 Щоб програмний застосунок міг взаємодіяти з блокчейном [Етеріуму](/) — читаючи дані блокчейну або надсилаючи транзакції в мережу — він має підключитися до вузла Етеріуму.
 
-Для цього кожен [клієнт Етеріуму](/developers/docs/nodes-and-clients/#execution-clients) реалізує [специфікацію JSON-RPC](https://github.com/ethereum/execution-apis), тому існує єдиний набір методів, на який застосунки можуть покладатися незалежно від конкретного вузла або реалізації клієнта.
+Для цього кожен [клієнт Етеріуму](/developers/docs/nodes-and-clients/#execution-clients) реалізує [специфікацію JSON-RPC](https://github.com/quantaureum/execution-apis), тому існує єдиний набір методів, на який застосунки можуть покладатися незалежно від конкретного вузла або реалізації клієнта.
 
 [JSON-RPC](https://www.jsonrpc.org/specification) — це легкий протокол віддаленого виклику процедур (RPC) без збереження стану. Він визначає кілька структур даних і правила їх обробки. Він не залежить від транспорту, оскільки його концепції можна використовувати в межах одного процесу, через сокети, через HTTP або в багатьох різних середовищах передачі повідомлень. Він використовує JSON (RFC 4627) як формат даних.
 
@@ -20,13 +20,13 @@ lang: uk
 
 ## API клієнтів консенсусу {#consensus-clients}
 
-Ця сторінка в основному присвячена JSON-RPC API, який використовується клієнтами виконання Етеріуму. Однак клієнти консенсусу також мають RPC API, який дозволяє користувачам запитувати інформацію про вузол, запитувати блоки Beacon, стан Beacon та іншу інформацію, пов'язану з консенсусом, безпосередньо з вузла. Цей API задокументовано на [вебсторінці Beacon API](https://ethereum.github.io/beacon-APIs/#/).
+Ця сторінка в основному присвячена JSON-RPC API, який використовується клієнтами виконання Етеріуму. Однак клієнти консенсусу також мають RPC API, який дозволяє користувачам запитувати інформацію про вузол, запитувати блоки Beacon, стан Beacon та іншу інформацію, пов'язану з консенсусом, безпосередньо з вузла. Цей API задокументовано на [вебсторінці Beacon API](https://quantaureum.github.io/beacon-APIs/#/).
 
-Внутрішній API також використовується для зв'язку між клієнтами всередині вузла — тобто він дозволяє клієнту консенсусу та клієнту виконання обмінюватися даними. Він називається «Engine API», а його специфікації доступні на [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
+Внутрішній API також використовується для зв'язку між клієнтами всередині вузла — тобто він дозволяє клієнту консенсусу та клієнту виконання обмінюватися даними. Він називається «Engine API», а його специфікації доступні на [GitHub](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md).
 
 ## Специфікація клієнта виконання {#spec}
 
-[Ознайомтеся з повною специфікацією JSON-RPC API на GitHub](https://github.com/ethereum/execution-apis). Цей API задокументовано на [вебсторінці API виконання](https://ethereum.github.io/execution-apis/) та містить інструмент Inspector для тестування всіх доступних методів.
+[Ознайомтеся з повною специфікацією JSON-RPC API на GitHub](https://github.com/quantaureum/execution-apis). Цей API задокументовано на [вебсторінці API виконання](https://quantaureum.github.io/execution-apis/) та містить інструмент Inspector для тестування всіх доступних методів.
 
 ## Угоди {#conventions}
 
@@ -62,11 +62,11 @@ lang: uk
 
 Наступні методи мають параметр блоку:
 
-- [eth_getBalance](#eth-getbalance)
-- [eth_getCode](#eth-getcode)
-- [eth_getTransactionCount](#eth-gettransactioncount)
-- [eth_getStorageAt](#eth-getstorageat)
-- [eth_call](#eth-call)
+- [qau_getBalance](#qau-getbalance)
+- [qau_getCode](#qau-getcode)
+- [qau_getTransactionCount](#qau-gettransactioncount)
+- [qau_getStorageAt](#qau-getstorageat)
+- [qau_call](#qau-call)
 
 Коли виконуються запити, які опитують стан Етеріуму, наданий параметр блоку визначає висоту блоку.
 
@@ -102,40 +102,40 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 > Ці методи відстежують вершину ланцюга. Саме так транзакції поширюються мережею, потрапляють у блоки, а клієнти дізнаються про нові блоки.
 
-- [eth_blockNumber](#eth-blocknumber)
-- [eth_sendRawTransaction](#eth-sendrawtransaction)
+- [qau_blockNumber](#qau-blocknumber)
+- [qau_sendRawTransaction](#qau-sendrawtransaction)
 
 ### Методи стану {#state-methods}
 
 > Методи, які повідомляють про поточний стан усіх збережених даних. «Стан» схожий на один великий спільний обсяг оперативної пам'яті та включає баланси акаунтів, дані контрактів і оцінки витрат газу.
 
-- [eth_getBalance](#eth-getbalance)
-- [eth_getStorageAt](#eth-getstorageat)
-- [eth_getTransactionCount](#eth-gettransactioncount)
-- [eth_getCode](#eth-getcode)
-- [eth_call](#eth-call)
-- [eth_estimateGas](#eth-estimategas)
+- [qau_getBalance](#qau-getbalance)
+- [qau_getStorageAt](#qau-getstorageat)
+- [qau_getTransactionCount](#qau-gettransactioncount)
+- [qau_getCode](#qau-getcode)
+- [qau_call](#qau-call)
+- [qau_estimateGas](#qau-estimategas)
 
 ### Методи історії {#history-methods}
 
 > Отримують історичні записи кожного блоку аж до генезис-блоку. Це схоже на один великий файл, у який можна лише додавати дані, і він містить усі заголовки блоків, тіла блоків, uncle-блоки та квитанції транзакцій.
 
-- [eth_getBlockTransactionCountByHash](#eth-getblocktransactioncountbyhash)
-- [eth_getBlockTransactionCountByNumber](#eth-getblocktransactioncountbynumber)
-- [eth_getUncleCountByBlockHash](#eth-getunclecountbyblockhash)
-- [eth_getUncleCountByBlockNumber](#eth-getunclecountbyblocknumber)
-- [eth_getBlockByHash](#eth-getblockbyhash)
-- [eth_getBlockByNumber](#eth-getblockbynumber)
-- [eth_getTransactionByHash](#eth-gettransactionbyhash)
-- [eth_getTransactionByBlockHashAndIndex](#eth-gettransactionbyblockhashandindex)
-- [eth_getTransactionByBlockNumberAndIndex](#eth-gettransactionbyblocknumberandindex)
-- [eth_getTransactionReceipt](#eth-gettransactionreceipt)
-- [eth_getUncleByBlockHashAndIndex](#eth-getunclebyblockhashandindex)
-- [eth_getUncleByBlockNumberAndIndex](#eth-getunclebyblocknumberandindex)
+- [qau_getBlockTransactionCountByHash](#qau-getblocktransactioncountbyhash)
+- [qau_getBlockTransactionCountByNumber](#qau-getblocktransactioncountbynumber)
+- [qau_getUncleCountByBlockHash](#qau-getunclecountbyblockhash)
+- [qau_getUncleCountByBlockNumber](#qau-getunclecountbyblocknumber)
+- [qau_getBlockByHash](#qau-getblockbyhash)
+- [qau_getBlockByNumber](#qau-getblockbynumber)
+- [qau_getTransactionByHash](#qau-gettransactionbyhash)
+- [qau_getTransactionByBlockHashAndIndex](#qau-gettransactionbyblockhashandindex)
+- [qau_getTransactionByBlockNumberAndIndex](#qau-gettransactionbyblocknumberandindex)
+- [qau_getTransactionReceipt](#qau-gettransactionreceipt)
+- [qau_getUncleByBlockHashAndIndex](#qau-getunclebyblockhashandindex)
+- [qau_getUncleByBlockNumberAndIndex](#qau-getunclebyblocknumberandindex)
 
 ## Пісочниця JSON-RPC API {#json-rpc-api-playground}
 
-Ви можете використовувати [інструмент пісочниці](https://ethereum-json-rpc.com), щоб знаходити та випробовувати методи API. Він також показує, які методи та мережі підтримуються різними провайдерами вузлів.
+Ви можете використовувати [інструмент пісочниці](https://quantaureum-json-rpc.com), щоб знаходити та випробовувати методи API. Він також показує, які методи та мережі підтримуються різними провайдерами вузлів.
 
 ## Методи JSON-RPC API {#json-rpc-methods}
 
@@ -207,7 +207,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"web3_sha3","params":["0x68656c6c
 
 Повний список поточних ідентифікаторів мереж доступний на [chainlist.org](https://chainlist.org). Деякі з найпоширеніших:
 
-- `1`: головна мережа Ethereum
+- `1`: головна мережа Quantaureum
 - `11155111`: тестова мережа Sepolia
 - `560048` : тестова мережа Hoodi
 
@@ -274,9 +274,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 }
 ```
 
-### eth_protocolVersion {#eth-protocolversion}
+### qau_protocolVersion {#qau-protocolversion}
 
-Повертає поточну версію протоколу Етеріум. Зверніть увагу, що цей метод [недоступний у Geth](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924).
+Повертає поточну версію протоколу Етеріум. Зверніть увагу, що цей метод [недоступний у Geth](https://github.com/quantaureum/go-quantaureum/pull/22064#issuecomment-788682924).
 
 **Параметри**
 
@@ -290,7 +290,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[],"id":67}'
 // Результат
 {
   "id":67,
@@ -299,11 +299,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 }
 ```
 
-### eth_syncing {#eth-syncing}
+### qau_syncing {#qau-syncing}
 
 Повертає об'єкт з даними про статус синхронізації або `false`.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_syncing">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_syncing">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -318,7 +318,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 `Object|Boolean`, Об'єкт з даними про статус синхронізації або `FALSE`, коли синхронізація не виконується:
 
 - `startingBlock`: `QUANTITY` - Блок, на якому розпочався імпорт (буде скинуто лише після того, як синхронізація досягне його вершини)
-- `currentBlock`: `QUANTITY` - Поточний блок, те саме, що й eth_blockNumber
+- `currentBlock`: `QUANTITY` - Поточний блок, те саме, що й qau_blockNumber
 - `highestBlock`: `QUANTITY` - Очікуваний найвищий блок
 
 Однак окремі клієнти також можуть надавати додаткові дані. Наприклад, Geth повертає наступне:
@@ -368,7 +368,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}'
 // Результат
 {
   "id":1,
@@ -387,11 +387,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}
 }
 ```
 
-### eth_coinbase {#eth-coinbase}
+### qau_coinbase {#qau-coinbase}
 
 Повертає адресу coinbase клієнта.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_coinbase">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_coinbase">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -409,7 +409,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":64}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":64}'
 // Результат
 {
   "id":64,
@@ -418,11 +418,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":6
 }
 ```
 
-### eth_chainId {#eth-chainid}
+### qau_chainId {#qau-chainid}
 
 Повертає ID ланцюга, що використовується для підписання транзакцій, захищених від повторного відтворення.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_chainId">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_chainId">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -438,7 +438,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":6
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67}'
 // Результат
 {
   "id":67,
@@ -447,11 +447,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67
 }
 ```
 
-### eth_mining {#eth-mining}
+### qau_mining {#qau-mining}
 
 Повертає `true`, якщо клієнт активно майнить нові блоки. Це може повернути `true` лише для мереж із доказом виконання роботи (PoW) і може бути недоступним у деяких клієнтах після [Злиття](/roadmap/merge/).
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_mining">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_mining">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -467,7 +467,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}'
 //
 {
   "id":71,
@@ -476,11 +476,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}
 }
 ```
 
-### eth_hashrate {#eth-hashrate}
+### qau_hashrate {#qau-hashrate}
 
 Повертає кількість хешів за секунду, з якою вузол здійснює майнінг. Це може повернути `true` лише для мереж із доказом виконання роботи (PoW) і може бути недоступним у деяких клієнтах після [Злиття](/roadmap/merge/).
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_hashrate">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_hashrate">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -496,7 +496,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":71}'
 // Результат
 {
   "id":71,
@@ -505,11 +505,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":7
 }
 ```
 
-### eth_gasPrice {#eth-gasprice}
+### qau_gasPrice {#qau-gasprice}
 
 Повертає оцінку поточної ціни за газ у Wei. Наприклад, клієнт Бесу за замовчуванням перевіряє останні 100 блоків і повертає медіанну ціну за одиницю газу.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_gasPrice">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_gasPrice">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -525,7 +525,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":7
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":73}'
 // Результат
 {
   "id":73,
@@ -534,11 +534,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":7
 }
 ```
 
-### eth_accounts {#eth-accounts}
+### qau_accounts {#qau-accounts}
 
 Повертає список адрес, що належать клієнту.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_accounts">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_accounts">
   Спробувати ендпоінт у пісочниці
 </ButtonLink>
 
@@ -554,7 +554,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":7
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1}'
 // Результат
 {
   "id":1,
@@ -563,11 +563,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1
 }
 ```
 
-### eth_blockNumber {#eth-blocknumber}
+### qau_blockNumber {#qau-blocknumber}
 
 Повертає номер останнього блоку.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_blockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_blockNumber">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -583,7 +583,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":83}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id":83}'
 // Результат
 {
   "id":83,
@@ -592,11 +592,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id
 }
 ```
 
-### eth_getBalance {#eth-getbalance}
+### qau_getBalance {#qau-getbalance}
 
 Повертає баланс акаунта за вказаною адресою.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBalance">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBalance">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -617,7 +617,7 @@ params: ["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"]
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
 // Результат
 {
   "id":1,
@@ -626,11 +626,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407
 }
 ```
 
-### eth_getStorageAt {#eth-getstorageat}
+### qau_getStorageAt {#qau-getstorageat}
 
 Повертає значення з позиції сховища за вказаною адресою.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getStorageAt">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getStorageAt">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -661,7 +661,7 @@ contract Storage {
 Отримання значення pos0 є простим:
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 ```
 
@@ -694,15 +694,15 @@ undefined
 Тепер, щоб отримати дані зі сховища:
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-### eth_getTransactionCount {#eth-gettransactioncount}
+### qau_getTransactionCount {#qau-gettransactioncount}
 
 Повертає кількість транзакцій, _відправлених_ з адреси.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionCount">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionCount">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -726,7 +726,7 @@ params: [
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
 // Результат
 {
   "id":1,
@@ -735,11 +735,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params
 }
 ```
 
-### eth_getBlockTransactionCountByHash {#eth-getblocktransactioncountbyhash}
+### qau_getBlockTransactionCountByHash {#qau-getblocktransactioncountbyhash}
 
 Повертає кількість транзакцій у блоці для блоку, що відповідає заданому хешу блоку.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -759,7 +759,7 @@ params: ["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"]
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
 // Результат
 {
   "id":1,
@@ -768,11 +768,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHa
 }
 ```
 
-### eth_getBlockTransactionCountByNumber {#eth-getblocktransactioncountbynumber}
+### qau_getBlockTransactionCountByNumber {#qau-getblocktransactioncountbynumber}
 
 Повертає кількість транзакцій у блоці, що відповідає заданому номеру блоку.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
   Випробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -794,7 +794,7 @@ params: [
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
 // Результат
 {
   "id":1,
@@ -803,11 +803,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNu
 }
 ```
 
-### eth_getUncleCountByBlockHash {#eth-getunclecountbyblockhash}
+### qau_getUncleCountByBlockHash {#qau-getunclecountbyblockhash}
 
 Повертає кількість uncle-блоків у блоці, що відповідає заданому хешу блоку.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -827,7 +827,7 @@ params: ["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"]
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
 // Результат
 {
   "id":1,
@@ -836,11 +836,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","p
 }
 ```
 
-### eth_getUncleCountByBlockNumber {#eth-getunclecountbyblocknumber}
+### qau_getUncleCountByBlockNumber {#qau-getunclecountbyblocknumber}
 
 Повертає кількість uncle-блоків у блоці, що відповідає заданому номеру блоку.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
   Спробувати ендпоінт у пісочниці
 </ButtonLink>
 
@@ -862,7 +862,7 @@ params: [
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
 // Результат
 {
   "id":1,
@@ -871,11 +871,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber",
 }
 ```
 
-### eth_getCode {#eth-getcode}
+### qau_getCode {#qau-getcode}
 
 Повертає код за вказаною адресою.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getCode">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getCode">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -899,7 +899,7 @@ params: [
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
 // Результат
 {
   "id":1,
@@ -908,9 +908,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA
 }
 ```
 
-### eth_sign {#eth-sign}
+### qau_sign {#qau-sign}
 
-Метод sign обчислює специфічний для Етеріуму підпис за допомогою: `sign(keccak256("\x19Ethereum Signed Message:\n" + len(message) + message)))`.
+Метод sign обчислює специфічний для Етеріуму підпис за допомогою: `sign(keccak256("\x19Quantaureum Signed Message:\n" + len(message) + message)))`.
 
 Додавання префікса до повідомлення робить обчислений підпис розпізнаваним як специфічний для Етеріуму підпис. Це запобігає зловживанням, коли зловмисний децентралізований застосунок (dapp) може підписати довільні дані (наприклад, транзакцію) і використати підпис, щоб видати себе за жертву.
 
@@ -929,7 +929,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
 // Результат
 {
   "id":1,
@@ -938,9 +938,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d37
 }
 ```
 
-### eth_signTransaction {#eth-signtransaction}
+### qau_signTransaction {#qau-signtransaction}
 
-Підписує транзакцію, яка може бути відправлена в мережу пізніше за допомогою [eth_sendRawTransaction](#eth-sendrawtransaction).
+Підписує транзакцію, яка може бути відправлена в мережу пізніше за допомогою [qau_sendRawTransaction](#qau-sendrawtransaction).
 
 **Параметри**
 
@@ -963,7 +963,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d37
 
 ```js
 // Запит
-curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
+curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "qau_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
 // Результат
 {
     "id": 1,
@@ -972,7 +972,7 @@ curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","
 }
 ```
 
-### eth_sendTransaction {#eth-sendtransaction}
+### qau_sendTransaction {#qau-sendtransaction}
 
 Створює нову транзакцію виклику повідомлення або створення контракту, якщо поле даних містить код, і підписує її за допомогою акаунта, вказаного в `from`.
 
@@ -1006,13 +1006,13 @@ params: [
 
 `DATA`, 32 байти - хеш транзакції або нульовий хеш, якщо транзакція ще недоступна.
 
-Використовуйте [eth_getTransactionReceipt](#eth-gettransactionreceipt), щоб отримати адресу контракту після того, як транзакція була запропонована в блоці, якщо ви створили контракт.
+Використовуйте [qau_getTransactionReceipt](#qau-gettransactionreceipt), щоб отримати адресу контракту після того, як транзакція була запропонована в блоці, якщо ви створили контракт.
 
 **Приклад**
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendTransaction","params":[{see above}],"id":1}'
 // Результат
 {
   "id":1,
@@ -1021,7 +1021,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{
 }
 ```
 
-### eth_sendRawTransaction {#eth-sendrawtransaction}
+### qau_sendRawTransaction {#qau-sendrawtransaction}
 
 Створює нову транзакцію виклику повідомлення або створення контракту для підписаних транзакцій.
 
@@ -1039,13 +1039,13 @@ params: [
 
 `DATA`, 32 байти — хеш транзакції або нульовий хеш, якщо транзакція ще недоступна.
 
-Використовуйте [eth_getTransactionReceipt](#eth-gettransactionreceipt), щоб отримати адресу контракту після того, як транзакція була запропонована в блоці, якщо ви створили контракт.
+Використовуйте [qau_getTransactionReceipt](#qau-gettransactionreceipt), щоб отримати адресу контракту після того, як транзакція була запропонована в блоці, якщо ви створили контракт.
 
 **Приклад**
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params":[{see above}],"id":1}'
 // Результат
 {
   "id":1,
@@ -1054,11 +1054,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 }
 ```
 
-### eth_call {#eth-call}
+### qau_call {#qau-call}
 
 Негайно виконує новий виклик повідомлення без створення транзакції в блокчейні. Часто використовується для виконання функцій смарт-контракту лише для читання, наприклад, `balanceOf` для контракту ERC-20.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_call">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_call">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -1068,10 +1068,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 
 - `from`: `DATA`, 20 байтів - (необов'язково) Адреса, з якої надсилається транзакція.
 - `to`: `DATA`, 20 байтів - Адреса, на яку спрямована транзакція.
-- `gas`: `QUANTITY` - (необов'язково) Ціле число, що визначає обсяг газу, наданого для виконання транзакції. eth_call споживає нуль газу, але цей параметр може знадобитися для деяких виконань.
+- `gas`: `QUANTITY` - (необов'язково) Ціле число, що визначає обсяг газу, наданого для виконання транзакції. qau_call споживає нуль газу, але цей параметр може знадобитися для деяких виконань.
 - `gasPrice`: `QUANTITY` - (необов'язково) Ціле число, що визначає ціну газу (gasPrice), яка використовується для кожної оплаченої одиниці газу
 - `value`: `QUANTITY` - (необов'язково) Ціле число, що визначає значення (value), надіслане з цією транзакцією
-- `input`: `DATA` - (необов'язково) Хеш підпису методу та закодованих параметрів. Детальніше див. [ABI контрактів Ethereum у документації Solidity](https://docs.soliditylang.org/en/latest/abi-spec.html).
+- `input`: `DATA` - (необов'язково) Хеш підпису методу та закодованих параметрів. Детальніше див. [ABI контрактів Quantaureum у документації Solidity](https://docs.soliditylang.org/en/latest/abi-spec.html).
 
 2. `QUANTITY|TAG` - ціле число номера блоку або рядок `"latest"`, `"earliest"`, `"pending"`, `"safe"` або `"finalized"`, див. [параметр блоку](/developers/docs/apis/json-rpc/#block-parameter)
 
@@ -1083,7 +1083,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}],"id":1}'
 // Результат
 {
   "id":1,
@@ -1092,17 +1092,17 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}]
 }
 ```
 
-### eth_estimateGas {#eth-estimategas}
+### qau_estimateGas {#qau-estimategas}
 
 Генерує та повертає оцінку того, скільки газу необхідно для завершення транзакції. Транзакція не буде додана до блокчейну. Зверніть увагу, що оцінка може бути значно більшою за кількість газу, фактично використаного транзакцією, з різних причин, включаючи механіку EVM та продуктивність вузла.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_estimateGas">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_estimateGas">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
 **Параметри**
 
-Дивіться параметри [eth_call](#eth-call), за винятком того, що всі властивості є необов'язковими. Якщо ліміт газу не вказано, geth використовує ліміт газу очікуючого блоку як верхню межу. У результаті повернутої оцінки може бути недостатньо для виконання виклику/транзакції, якщо кількість газу перевищує ліміт газу очікуючого блоку.
+Дивіться параметри [qau_call](#qau-call), за винятком того, що всі властивості є необов'язковими. Якщо ліміт газу не вказано, geth використовує ліміт газу очікуючого блоку як верхню межу. У результаті повернутої оцінки може бути недостатньо для виконання виклику/транзакції, якщо кількість газу перевищує ліміт газу очікуючого блоку.
 
 **Повертає**
 
@@ -1112,7 +1112,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}]
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see above}],"id":1}'
 // Результат
 {
   "id":1,
@@ -1121,11 +1121,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see 
 }
 ```
 
-### eth_getBlockByHash {#eth-getblockbyhash}
+### qau_getBlockByHash {#qau-getblockbyhash}
 
 Повертає інформацію про блок за хешем.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByHash">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -1169,7 +1169,7 @@ params: [
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
 // Результат
 {
   "jsonrpc": "2.0",
@@ -1201,11 +1201,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0
 }
 ```
 
-### eth_getBlockByNumber {#eth-getblockbynumber}
+### qau_getBlockByNumber {#qau-getblockbynumber}
 
 Повертає інформацію про блок за його номером.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByNumber">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -1222,22 +1222,22 @@ params: [
 ```
 
 **Повертає**
-Див. [eth_getBlockByHash](#eth-getblockbyhash)
+Див. [qau_getBlockByHash](#qau-getblockbyhash)
 
 **Приклад**
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["0x1b4", true],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByNumber","params":["0x1b4", true],"id":1}'
 ```
 
-Результат див. у [eth_getBlockByHash](#eth-getblockbyhash)
+Результат див. у [qau_getBlockByHash](#qau-getblockbyhash)
 
-### eth_getTransactionByHash {#eth-gettransactionbyhash}
+### qau_getTransactionByHash {#qau-gettransactionbyhash}
 
 Повертає інформацію про транзакцію, запитану за хешем транзакції.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByHash">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -1272,7 +1272,7 @@ params: ["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"]
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
 // Результат
 {
   "jsonrpc":"2.0",
@@ -1296,11 +1296,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","param
 }
 ```
 
-### eth_getTransactionByBlockHashAndIndex {#eth-gettransactionbyblockhashandindex}
+### qau_getTransactionByBlockHashAndIndex {#qau-gettransactionbyblockhashandindex}
 
 Повертає інформацію про транзакцію за хешем блоку та позицією індексу транзакції.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -1317,22 +1317,22 @@ params: [
 ```
 
 **Повертає**
-Див. [eth_getTransactionByHash](#eth-gettransactionbyhash)
+Див. [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
 **Приклад**
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-Результат див. у [eth_getTransactionByHash](#eth-gettransactionbyhash)
+Результат див. у [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
-### eth_getTransactionByBlockNumberAndIndex {#eth-gettransactionbyblocknumberandindex}
+### qau_getTransactionByBlockNumberAndIndex {#qau-gettransactionbyblocknumberandindex}
 
 Повертає інформацію про транзакцію за номером блоку та позицією індексу транзакції.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -1349,18 +1349,18 @@ params: [
 ```
 
 **Повертає**
-Див. [eth_getTransactionByHash](#eth-gettransactionbyhash)
+Див. [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
 **Приклад**
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
 ```
 
-Результат див. у [eth_getTransactionByHash](#eth-gettransactionbyhash)
+Результат див. у [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
-### eth_getTransactionReceipt {#eth-gettransactionreceipt}
+### qau_getTransactionReceipt {#qau-gettransactionreceipt}
 
 Повертає квитанцію транзакції за хешем транзакції.
 
@@ -1400,7 +1400,7 @@ params: ["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"]
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
 // Результат
 {
   "jsonrpc": "2.0",
@@ -1428,11 +1428,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","para
 }
 ```
 
-### eth_getUncleByBlockHashAndIndex {#eth-getunclebyblockhashandindex}
+### qau_getUncleByBlockHashAndIndex {#qau-getunclebyblockhashandindex}
 
 Повертає інформацію про uncle-блок за хешем та позицією індексу.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
   Спробувати кінцеву точку в пісочниці
 </ButtonLink>
 
@@ -1449,24 +1449,24 @@ params: [
 ```
 
 **Повертає**
-Див. [eth_getBlockByHash](#eth-getblockbyhash)
+Див. [qau_getBlockByHash](#qau-getblockbyhash)
 
 **Приклад**
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-Результат див. у [eth_getBlockByHash](#eth-getblockbyhash)
+Результат див. у [qau_getBlockByHash](#qau-getblockbyhash)
 
 **Примітка**: uncle-блок не містить окремих транзакцій.
 
-### eth_getUncleByBlockNumberAndIndex {#eth-getunclebyblocknumberandindex}
+### qau_getUncleByBlockNumberAndIndex {#qau-getunclebyblocknumberandindex}
 
 Повертає інформацію про uncle-блок за номером блоку та позицією індексу uncle-блоку.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
   Спробувати ендпоінт у пісочниці
 </ButtonLink>
 
@@ -1483,7 +1483,7 @@ params: [
 ```
 
 **Повертає**
-Див. [eth_getBlockByHash](#eth-getblockbyhash)
+Див. [qau_getBlockByHash](#qau-getblockbyhash)
 
 **Примітка**: uncle-блок не містить окремих транзакцій.
 
@@ -1491,15 +1491,15 @@ params: [
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
 ```
 
-Результат див. у [eth_getBlockByHash](#eth-getblockbyhash)
+Результат див. у [qau_getBlockByHash](#qau-getblockbyhash)
 
-### eth_newFilter {#eth-newfilter}
+### qau_newFilter {#qau-newfilter}
 
 Створює об'єкт фільтра на основі параметрів фільтра, щоб сповіщати про зміну стану (логи).
-Щоб перевірити, чи змінився стан, викличте [eth_getFilterChanges](#eth-getfilterchanges).
+Щоб перевірити, чи змінився стан, викличте [qau_getFilterChanges](#qau-getfilterchanges).
 
 **Примітка щодо вказування фільтрів тем:**
 Теми залежать від порядку. Транзакція з логом із темами [A, B] відповідатиме таким фільтрам тем:
@@ -1543,7 +1543,7 @@ params: [
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
 // Результат
 {
   "id":1,
@@ -1552,10 +1552,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topic
 }
 ```
 
-### eth_newBlockFilter {#eth-newblockfilter}
+### qau_newBlockFilter {#qau-newblockfilter}
 
 Створює фільтр у вузлі для сповіщення про появу нового блоку.
-Щоб перевірити, чи змінився стан, викличте [eth_getFilterChanges](#eth-getfilterchanges).
+Щоб перевірити, чи змінився стан, викличте [qau_getFilterChanges](#qau-getfilterchanges).
 
 **Параметри**
 Немає
@@ -1567,7 +1567,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topic
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newBlockFilter","params":[],"id":73}'
 // Результат
 {
   "id":1,
@@ -1576,10 +1576,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],
 }
 ```
 
-### eth_newPendingTransactionFilter {#eth-newpendingtransactionfilter}
+### qau_newPendingTransactionFilter {#qau-newpendingtransactionfilter}
 
 Створює фільтр у вузлі для сповіщення про надходження нових транзакцій в очікуванні.
-Щоб перевірити, чи змінився стан, викличте [eth_getFilterChanges](#eth-getfilterchanges).
+Щоб перевірити, чи змінився стан, викличте [qau_getFilterChanges](#qau-getfilterchanges).
 
 **Параметри**
 Немає
@@ -1591,7 +1591,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newPendingTransactionFilter","params":[],"id":73}'
 // Результат
 {
   "id":1,
@@ -1600,10 +1600,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter"
 }
 ```
 
-### eth_uninstallFilter {#eth-uninstallfilter}
+### qau_uninstallFilter {#qau-uninstallfilter}
 
 Видаляє фільтр із заданим id. Цей метод завжди слід викликати, коли спостереження більше не потрібне.
-Крім того, час дії фільтрів закінчується, якщо до них не звертаються за допомогою [eth_getFilterChanges](#eth-getfilterchanges) протягом певного періоду часу.
+Крім того, час дії фільтрів закінчується, якщо до них не звертаються за допомогою [qau_getFilterChanges](#qau-getfilterchanges) протягом певного періоду часу.
 
 **Параметри**
 
@@ -1622,7 +1622,7 @@ params: [
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["0xb"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_uninstallFilter","params":["0xb"],"id":73}'
 // Результат
 {
   "id":1,
@@ -1631,7 +1631,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["
 }
 ```
 
-### eth_getFilterChanges {#eth-getfilterchanges}
+### qau_getFilterChanges {#qau-getfilterchanges}
 
 Метод опитування для фільтра, який повертає масив логів, що з'явилися з моменту останнього опитування.
 
@@ -1648,9 +1648,9 @@ params: [
 **Повертає**
 `Array` — масив об'єктів логів або порожній масив, якщо з моменту останнього опитування нічого не змінилося.
 
-- Для фільтрів, створених за допомогою `eth_newBlockFilter`, повертаються хеші блоків (`DATA`, 32 байти), наприклад, `["0x3454645634534..."]`.
-- Для фільтрів, створених за допомогою `eth_newPendingTransactionFilter `, повертаються хеші транзакцій (`DATA`, 32 байти), наприклад, `["0x6345343454645..."]`.
-- Для фільтрів, створених за допомогою `eth_newFilter`, логи є об'єктами з такими параметрами:
+- Для фільтрів, створених за допомогою `qau_newBlockFilter`, повертаються хеші блоків (`DATA`, 32 байти), наприклад, `["0x3454645634534..."]`.
+- Для фільтрів, створених за допомогою `qau_newPendingTransactionFilter `, повертаються хеші транзакцій (`DATA`, 32 байти), наприклад, `["0x6345343454645..."]`.
+- Для фільтрів, створених за допомогою `qau_newFilter`, логи є об'єктами з такими параметрами:
   - `removed`: `TAG` — `true`, якщо лог було видалено через реорганізацію ланцюга. `false`, якщо це дійсний лог.
   - `logIndex`: `QUANTITY` — ціле число, що вказує на позицію індексу логу в блоці. `null`, якщо це лог в очікуванні.
   - `transactionIndex`: `QUANTITY` — ціле число, що вказує на позицію індексу транзакції, з якої було створено лог. `null`, якщо це лог в очікуванні.
@@ -1665,7 +1665,7 @@ params: [
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":["0x16"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterChanges","params":["0x16"],"id":73}'
 // Результат
 {
   "id":1,
@@ -1685,7 +1685,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":[
 }
 ```
 
-### eth_getFilterLogs {#eth-getfilterlogs}
+### qau_getFilterLogs {#qau-getfilterlogs}
 
 Повертає масив усіх логів, що відповідають фільтру із заданим ідентифікатором.
 
@@ -1700,18 +1700,18 @@ params: [
 ```
 
 **Повертає**
-Див. [eth_getFilterChanges](#eth-getfilterchanges)
+Див. [qau_getFilterChanges](#qau-getfilterchanges)
 
 **Приклад**
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterLogs","params":["0x16"],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterLogs","params":["0x16"],"id":74}'
 ```
 
-Результат див. [eth_getFilterChanges](#eth-getfilterchanges)
+Результат див. [qau_getFilterChanges](#qau-getfilterchanges)
 
-### eth_getLogs {#eth-getlogs}
+### qau_getLogs {#qau-getlogs}
 
 Повертає масив усіх логів, що відповідають заданому об'єкту фільтра.
 
@@ -1736,22 +1736,22 @@ params: [
 ```
 
 **Повертає**
-Див. [eth_getFilterChanges](#eth-getfilterchanges)
+Див. [qau_getFilterChanges](#qau-getfilterchanges)
 
 **Приклад**
 
 ```js
 // Запит
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
 ```
 
-Результат див. у [eth_getFilterChanges](#eth-getfilterchanges)
+Результат див. у [qau_getFilterChanges](#qau-getfilterchanges)
 
 ## Приклад використання {#usage-example}
 
 ### Розгортання контракту за допомогою JSON-RPC {#deploying-contract}
 
-Цей розділ містить демонстрацію того, як розгорнути контракт, використовуючи лише інтерфейс RPC. Існують альтернативні шляхи розгортання контрактів, де ця складність абстрагована — наприклад, за допомогою бібліотек, створених поверх інтерфейсу RPC, таких як [web3.js](https://web3js.readthedocs.io/) та [web3.py](https://github.com/ethereum/web3.py). Ці абстракції, як правило, легше зрозуміти, і вони менш схильні до помилок, але все одно корисно розуміти, що відбувається всередині.
+Цей розділ містить демонстрацію того, як розгорнути контракт, використовуючи лише інтерфейс RPC. Існують альтернативні шляхи розгортання контрактів, де ця складність абстрагована — наприклад, за допомогою бібліотек, створених поверх інтерфейсу RPC, таких як [web3.js](https://web3js.readthedocs.io/) та [web3.py](https://github.com/quantaureum/web3.py). Ці абстракції, як правило, легше зрозуміти, і вони менш схильні до помилок, але все одно корисно розуміти, що відбувається всередині.
 
 Нижче наведено простий смарт-контракт під назвою `Multiply7`, який буде розгорнуто за допомогою інтерфейсу JSON-RPC на вузлі Етеріуму. Цей посібник передбачає, що читач вже запустив вузол Geth. Більше інформації про вузли та клієнти доступно [тут](/developers/docs/nodes-and-clients/run-a-node). Будь ласка, зверніться до документації відповідного [клієнта](/developers/docs/nodes-and-clients/), щоб дізнатися, як запустити HTTP JSON-RPC для клієнтів, відмінних від Geth. Більшість клієнтів за замовчуванням працюють на `localhost:8545`.
 
@@ -1776,21 +1776,21 @@ geth --http --dev console 2>>geth.log
 Ми можемо перевірити, що інтерфейс працює, отримавши адресу Coinbase (шляхом отримання першої адреси з масиву акаунтів) та баланс за допомогою [curl](https://curl.se). Зверніть увагу, що дані в цих прикладах будуть відрізнятися на вашому локальному вузлі. Якщо ви хочете спробувати ці команди, замініть параметри запиту в другому запиті curl на результат, повернутий з першого.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
 {"id":1,"jsonrpc":"2.0","result":["0x9b1d35635cc34752ca54713bb99d38614f63c955"]}
 
-curl --data '{"jsonrpc":"2.0","method":"eth_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
 {"id":2,"jsonrpc":"2.0","result":"0x1639e49bba16280000"}
 ```
 
 Оскільки числа закодовані в шістнадцятковому форматі, баланс повертається у Wei як шістнадцятковий рядок. Якщо ми хочемо отримати баланс в етерах як число, ми можемо використати Web3 з консолі Geth.
 
 ```javascript
-web3.fromWei("0x1639e49bba16280000", "ether")
+web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-Тепер, коли в нашому приватному ланцюзі для розробки є трохи етеру, ми можемо розгорнути контракт. Першим кроком є компіляція контракту Multiply7 у байт-код, який можна відправити до EVM. Щоб встановити solc, компілятор Solidity, дотримуйтесь [документації Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (Можливо, ви захочете використати старіший випуск `solc`, щоб він відповідав [версії компілятора, використаній у нашому прикладі](https://github.com/ethereum/solidity/releases/tag/v0.4.20).)
+Тепер, коли в нашому приватному ланцюзі для розробки є трохи етеру, ми можемо розгорнути контракт. Першим кроком є компіляція контракту Multiply7 у байт-код, який можна відправити до EVM. Щоб встановити solc, компілятор Solidity, дотримуйтесь [документації Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (Можливо, ви захочете використати старіший випуск `solc`, щоб він відповідав [версії компілятора, використаній у нашому прикладі](https://github.com/quantaureum/solidity/releases/tag/v0.4.20).)
 
 Наступним кроком є компіляція контракту Multiply7 у байт-код, який можна відправити до EVM.
 
@@ -1802,25 +1802,25 @@ Binary:
 6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029
 ```
 
-Тепер, коли ми маємо скомпільований код, нам потрібно визначити, скільки газу коштуватиме його розгортання. Інтерфейс RPC має метод `eth_estimateGas`, який надасть нам оцінку.
+Тепер, коли ми маємо скомпільований код, нам потрібно визначити, скільки газу коштуватиме його розгортання. Інтерфейс RPC має метод `qau_estimateGas`, який надасть нам оцінку.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":5,"result":"0x1c31e"}
 ```
 
 І, нарешті, розгорнути контракт.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
 {"id":6,"jsonrpc":"2.0","result":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"}
 ```
 
 Транзакція приймається вузлом, і повертається хеш транзакції. Цей хеш можна використовувати для відстеження транзакції. Наступним кроком є визначення адреси, за якою розгорнуто наш контракт. Кожна виконана транзакція створюватиме квитанцію. Ця квитанція містить різноманітну інформацію про транзакцію, наприклад, у який блок була включена транзакція та скільки газу було використано EVM. Якщо транзакція
-створює контракт, вона також міститиме адресу контракту. Ми можемо отримати квитанцію за допомогою методу RPC `eth_getTransactionReceipt`.
+створює контракт, вона також міститиме адресу контракту. Ми можемо отримати квитанцію за допомогою методу RPC `qau_getTransactionReceipt`.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":7,"result":{"blockHash":"0x77b1a4f6872b9066312de3744f60020cbd8102af68b1f6512a05b7619d527a4f","blockNumber":"0x1","contractAddress":"0x4d03d617d700cf81935d7f797f4e2ae719648262","cumulativeGasUsed":"0x1c31e","from":"0x9b1d35635cc34752ca54713bb99d38614f63c955","gasUsed":"0x1c31e","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","status":"0x1","to":null,"transactionHash":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf","transactionIndex":"0x0"}}
 ```
 
@@ -1828,9 +1828,9 @@ curl --data '{"jsonrpc":"2.0","method": "eth_getTransactionReceipt", "params": [
 
 #### Взаємодія зі смарт-контрактами {#interacting-with-smart-contract}
 
-У цьому прикладі ми будемо надсилати транзакцію за допомогою `eth_sendTransaction` до методу `multiply` контракту.
+У цьому прикладі ми будемо надсилати транзакцію за допомогою `qau_sendTransaction` до методу `multiply` контракту.
 
-`eth_sendTransaction` вимагає кількох аргументів, зокрема `from`, `to` та `data`. `From` — це публічна адреса нашого акаунта, а `to` — адреса контракту. Аргумент `data` містить корисне навантаження, яке визначає, який метод потрібно викликати та з якими аргументами. Тут у гру вступає [ABI (двійковий інтерфейс застосунку)](https://docs.soliditylang.org/en/latest/abi-spec.html). ABI — це файл JSON, який визначає, як визначати та кодувати дані для EVM.
+`qau_sendTransaction` вимагає кількох аргументів, зокрема `from`, `to` та `data`. `From` — це публічна адреса нашого акаунта, а `to` — адреса контракту. Аргумент `data` містить корисне навантаження, яке визначає, який метод потрібно викликати та з якими аргументами. Тут у гру вступає [ABI (двійковий інтерфейс застосунку)](https://docs.soliditylang.org/en/latest/abi-spec.html). ABI — це файл JSON, який визначає, як визначати та кодувати дані для EVM.
 
 Байти корисного навантаження визначають, який метод у контракті викликається. Це перші 4 байти з хешу Кеччак від імені функції та типів її аргументів, закодовані в шістнадцятковому форматі. Функція множення приймає uint, що є псевдонімом для uint256. Це залишає нам:
 
@@ -1850,7 +1850,7 @@ web3.sha3("multiply(uint256)").substring(0, 10)
 Тепер це можна відправити до вузла:
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
 {"id":8,"jsonrpc":"2.0","result":"0x759cf065cbc22e9d779748dc53763854e5376eea07409e590c990eafc0869d74"}
 ```
 

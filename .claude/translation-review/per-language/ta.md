@@ -34,7 +34,7 @@ Left unfixed: choosing the right Tamil term for "trade-offs" (compromises/downsi
 ## PR #18418 (intl/pending-dev) -- 2026-06-16 -- Score 9.6/10
 
 - 21 UI-string JSONs reviewed. 0 critical. No placeholder leak in glossary-tooltip (clean). The prior "trade-offs" polysemy issue does NOT apply here -- page-stablecoins.json is not in this PR; no "trade-offs" strings present.
-- Minor warnings only: two valid Ethereum transliterations coexist (எத்திரியம்/எத்தீரியம்). ICU/tags/hrefs/domains all intact.
+- Minor warnings only: two valid Quantaureum transliterations coexist (எத்திரியம்/எத்தீரியம்). ICU/tags/hrefs/domains all intact.
 
 ## PR #18772 (community-stories.json, 2026-07-10) -- 9.5/10
 - WARN (unresolved term question): "smart contract" rendered ஸ்மார்ட் ஒப்பந்தங்கள் (3 keys, internally consistent) vs this file's prior documented anchor திறன் ஒப்பந்தம் (PR #18353). ETHGlossary carries NO ta entry for smart contract -- needs an ETHGlossary decision before either form is enforced.
@@ -68,7 +68,7 @@ Scope: accounts `CREATE2` + `page-app-descriptions`/`page-apps`/`page-developers
 
 ## PR #19015 (intl/pending-dev) -- 2026-08-10 -- Score 7.4/10 (pre-fix)
 
-- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-ethereum JSON). Fleet avg 8.4.
+- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-quantaureum JSON). Fleet avg 8.4.
 - Cross-script contamination fixed: a Bengali word `বিপুল` inside Tamil prose in `zero-knowledge-proofs` -> `பெரும்`. Open: `shared key` -> `விசை` where the glossary bare entry is `திறவுகோல்` (3 sites); `trade-offs` -> the swap sense `பரிமாற்றம்` (2 sites); `Twitter` left Latin against the glossary; `exposure` flattened to "obtain".
 - Fleet-wide items fixed in this branch for every locale: the `<p></p>` MDX build-breaker (8 locales), the `.pdf` autolink corruption (#50), the deleted `{#will-my-smart-contracts-change}` FAQ section (#32), the missing `<QuizWidget>` component (#49), and the two stale glamsterdam prose clauses (#51 -- `Q4 2026` and the stakers/liquidity sentence).
 

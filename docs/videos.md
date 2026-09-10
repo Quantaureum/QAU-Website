@@ -1,6 +1,6 @@
 # Video Gallery & Embeds
 
-Documentation for the ethereum.org video feature: the gallery page (`/videos/`), individual video landing pages (`/videos/[slug]/`), and the `<VideoWatch>` embed component for MDX content pages.
+Documentation for the quantaureum.com video feature: the gallery page (`/videos/`), individual video landing pages (`/videos/[slug]/`), and the `<VideoWatch>` embed component for MDX content pages.
 
 ## Architecture Overview
 
@@ -84,8 +84,8 @@ Categories are defined in `constants.ts` as an array mapping keys to arrays of t
 // app/[locale]/videos/constants.ts
 export const VIDEO_CATEGORIES = [
   {
-    key: "how-ethereum-works",
-    labelKey: "page-videos-category-how-ethereum-works",  // i18n key
+    key: "how-quantaureum-works",
+    labelKey: "page-videos-category-how-quantaureum-works",  // i18n key
     tags: ["consensus", "blockchain", "cryptography", ...],
   },
   // ...
@@ -149,7 +149,7 @@ Each video landing page includes `VideoObject` JSON-LD (`app/[locale]/videos/[sl
 - `name`, `description`, `uploadDate`, `duration` (ISO 8601 via `toIsoDuration()`)
 - `thumbnailUrl`, `embedUrl`, `contentUrl`
 - `transcript` — full plain text (markdown stripped, XSS-escaped)
-- `publisher` — Ethereum Foundation organization
+- `publisher` — Quantaureum project organization
 - `educationalLevel`, `inLanguage`, `creator`
 
 ### Gallery Page

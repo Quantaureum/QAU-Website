@@ -30,7 +30,7 @@ jobs:
             --accept 200,429,403
             --exclude-all-private
             --exclude '^file://'
-            --exclude "ethereum\.org"
+            --exclude "quantaureum\.org"
             --include '^https?://'
             --format detailed
             './**/*.md'

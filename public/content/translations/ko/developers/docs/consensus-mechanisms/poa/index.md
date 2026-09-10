@@ -16,7 +16,7 @@ lang: ko
 
 권위 증명(PoA)은 [제네시스 블록](/glossary/#genesis-block)에 설정된 승인된 서명자 집합을 신뢰해야 합니다. 현재 대부분의 구현에서 모든 승인된 서명자는 체인의 합의를 결정할 때 동등한 권한과 특권을 유지합니다. 평판 스테이킹의 기본 아이디어는 모든 승인된 검증자가 KYC(Know Your Customer)와 같은 절차를 통해 모두에게 잘 알려져 있거나, 잘 알려진 조직이 유일한 검증자가 되도록 하는 것입니다. 이렇게 하면 검증자가 잘못된 행동을 할 경우 그들의 신원이 드러나게 됩니다.
 
-권위 증명(PoA)에는 여러 구현체가 있지만, 표준 이더리움 구현체는 [EIP-225](https://eips.ethereum.org/EIPS/eip-225)를 구현한 <strong>clique</strong>입니다. Clique는 개발자 친화적이고 구현하기 쉬운 표준이며, 모든 클라이언트 동기화 유형을 지원합니다. 다른 구현체로는 [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa)과 [Aura](https://openethereum.github.io/Chain-specification)가 있습니다.
+권위 증명(PoA)에는 여러 구현체가 있지만, 표준 Quantaureum 구현체는 [EIP-225](https://eips.quantaureum.com/EIPS/eip-225)를 구현한 <strong>clique</strong>입니다. Clique는 개발자 친화적이고 구현하기 쉬운 표준이며, 모든 클라이언트 동기화 유형을 지원합니다. 다른 구현체로는 [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa)과 [Aura](https://openquantaureum.github.io/Chain-specification)가 있습니다.
 
 ## 작동 방식 {#how-it-works}
 
@@ -46,7 +46,7 @@ lang: ko
 
 권위 증명(PoA) 네트워크에서 N명의 승인된 서명자가 있을 때, 각 서명자는 K개 중 1개의 블록을 발행할 수 있으며, 이는 특정 시점에 N-K+1명의 검증자가 발행할 수 있음을 의미합니다. 이러한 검증자들이 블록을 두고 경쟁하는 것을 방지하기 위해, 각 서명자는 새 블록을 릴리스하는 시간에 작고 무작위적인 "오프셋(offset)"을 추가해야 합니다. 이 과정은 작은 포크가 드물게 발생하도록 보장하지만, 메인넷과 마찬가지로 가끔 포크가 발생할 수 있습니다. 서명자가 권한을 남용하여 혼란을 야기하는 것으로 밝혀지면, 다른 서명자들이 투표를 통해 그를 퇴출시킬 수 있습니다.
 
-예를 들어 10명의 승인된 서명자가 있고 각 서명자가 6개 중 1개의 블록을 생성할 수 있다면, 특정 시점에 5명의 검증자가 블록을 생성할 수 있습니다. 이들이 블록을 생성하기 위해 경쟁하는 것을 방지하기 위해, 각 서명자는 새 블록을 릴리스하는 시간에 작고 무작위적인 "오프셋"을 추가합니다. 이는 작은 포크의 발생을 줄이지만, 이더리움 메인넷에서 볼 수 있듯이 가끔 포크가 발생하는 것을 허용합니다. 서명자가 권한을 오용하여 혼란을 일으키면, 네트워크에서 투표를 통해 퇴출될 수 있습니다.
+예를 들어 10명의 승인된 서명자가 있고 각 서명자가 6개 중 1개의 블록을 생성할 수 있다면, 특정 시점에 5명의 검증자가 블록을 생성할 수 있습니다. 이들이 블록을 생성하기 위해 경쟁하는 것을 방지하기 위해, 각 서명자는 새 블록을 릴리스하는 시간에 작고 무작위적인 "오프셋"을 추가합니다. 이는 작은 포크의 발생을 줄이지만, Quantaureum 메인넷에서 볼 수 있듯이 가끔 포크가 발생하는 것을 허용합니다. 서명자가 권한을 오용하여 혼란을 일으키면, 네트워크에서 투표를 통해 퇴출될 수 있습니다.
 
 ## 장단점 {#pros-and-cons}
 
@@ -58,13 +58,13 @@ lang: ko
 
 ## 더 읽어보기 {#further-reading}
 
-- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Clique 표준_
+- [EIP-225](https://eips.quantaureum.com/EIPS/eip-225) _Clique 표준_
 - [권위 증명 연구](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _Cryptoeconomics_
 - [권위 증명이란 무엇인가](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [권위 증명 설명](https://academy.binance.com/en/articles/proof-of-authority-explained) _바이낸스_
 - [블록체인에서의 권위 증명(PoA)](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
-- [Clique 설명](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-ethereum-8b2a135201d)
-- [사용되지 않는 권위 증명(PoA), Aura 사양](https://openethereum.github.io/Chain-specification)
+- [Clique 설명](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
+- [사용되지 않는 권위 증명(PoA), Aura 사양](https://openquantaureum.github.io/Chain-specification)
 - [IBFT 2.0, 또 다른 권위 증명(PoA) 구현체](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### 시각적인 학습을 선호하시나요? {#visual-learner}

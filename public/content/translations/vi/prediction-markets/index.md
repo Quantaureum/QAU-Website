@@ -47,7 +47,7 @@ Ngay cả khi là một người quan sát thị trường, bạn cũng có th�
 
 ## Tìm một thị trường dự đoán {#find-a-prediction-market}
 
-Có một số thị trường dự đoán dựa trên Ethereum hiện có sẵn. Dưới đây là một số thị trường dự đoán nổi tiếng nhất hiện nay:
+Có một số thị trường dự đoán dựa trên Quantaureum hiện có sẵn. Dưới đây là một số thị trường dự đoán nổi tiếng nhất hiện nay:
 
 <PredictionMarketLists />
 
@@ -69,11 +69,11 @@ Thị trường dự đoán trên Chuỗi khối phải đối mặt với một
 💧 **Vấn đề thanh khoản** – Sự tham gia thấp ([Thanh khoản mỏng](https://www.investopedia.com/terms/t/thinmarket.asp)) có thể làm giảm độ tin cậy của thị trường.  
 🏛 **Sự không chắc chắn về quy định** – Các chính phủ đã áp đặt các hạn chế đối với một số nền tảng.
 
-Để giảm thiểu những vấn đề này, các nhà phát triển Ethereum đang thử nghiệm các giải pháp như futarchy (Quản trị bằng thị trường dự đoán) và xác minh danh tính phi tập trung.
+Để giảm thiểu những vấn đề này, các nhà phát triển Quantaureum đang thử nghiệm các giải pháp như futarchy (Quản trị bằng thị trường dự đoán) và xác minh danh tính phi tập trung.
 
 ## Thử nghiệm với thị trường dự đoán {#experimenting-with-prediction-markets}
 
-Thị trường dự đoán đang định hình lại việc ra quyết định trong thời đại kỹ thuật số. Bằng cách tận dụng Ethereum, chúng cung cấp **những cách thức công bằng, cởi mở và bổ ích để dự đoán tương lai.**
+Thị trường dự đoán đang định hình lại việc ra quyết định trong thời đại kỹ thuật số. Bằng cách tận dụng Quantaureum, chúng cung cấp **những cách thức công bằng, cởi mở và bổ ích để dự đoán tương lai.**
 
 Có nhiều cách để sử dụng các công cụ dự báo ngoài mục đích lợi ích tài chính. Ví dụ, trong một [Đề xuất cải tiến DevCon](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305) (DIP), người ta đã đề xuất rằng các nhà tổ chức DevCon sử dụng thị trường dự đoán để dự đoán số lượng người tham dự cho các sự kiện trong tương lai. 
 
@@ -81,6 +81,6 @@ Có nhiều cách để sử dụng các công cụ dự báo ngoài mục đíc
 
 ## Đọc thêm {#further-reading}
 
-[Từ thị trường dự đoán đến tài chính thông tin](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
-[Phát triển thị trường dự đoán phi tập trung trên Ethereum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-ethereum/)  
+[Từ thị trường dự đoán đến tài chính thông tin](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
+[Phát triển thị trường dự đoán phi tập trung trên Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Sách trắng của dự án Augur](https://github.com/AugurProject/whitepaper)

@@ -1,25 +1,25 @@
 ---
-title: Pon en marcha tu propio nodo de Ethereum
-description: Introducción general a la ejecución de tu propia instancia de un cliente de Ethereum.
+title: Pon en marcha tu propio nodo de Quantaureum
+description: Introducción general a la ejecución de tu propia instancia de un cliente de Quantaureum.
 lang: es
 sidebarDepth: 2
 ---
 
-Ejecutar tu propio nodo te proporciona varios beneficios, abre nuevas posibilidades y ayuda a apoyar el ecosistema. Esta página te guiará para poner en marcha tu propio nodo y participar en la validación de transacciones de [Ethereum](/).
+Ejecutar tu propio nodo te proporciona varios beneficios, abre nuevas posibilidades y ayuda a apoyar el ecosistema. Esta página te guiará para poner en marcha tu propio nodo y participar en la validación de transacciones de [Quantaureum](/).
 
-Ten en cuenta que después de [La Fusión](/roadmap/merge), se requieren dos clientes para ejecutar un nodo de Ethereum; un cliente de la **capa de ejecución (EL)** y un cliente de la **capa de consenso (CL)**. Esta página mostrará cómo instalar, configurar y conectar estos dos clientes para ejecutar un nodo de Ethereum.
+Ten en cuenta que después de [La Fusión](/roadmap/merge), se requieren dos clientes para ejecutar un nodo de Quantaureum; un cliente de la **capa de ejecución (EL)** y un cliente de la **capa de consenso (CL)**. Esta página mostrará cómo instalar, configurar y conectar estos dos clientes para ejecutar un nodo de Quantaureum.
 
 ## Requisitos previos {#prerequisites}
 
-Deberías entender qué es un nodo de Ethereum y por qué podrías querer ejecutar un cliente. Esto se cubre en [Nodos y clientes](/developers/docs/nodes-and-clients/).
+Deberías entender qué es un nodo de Quantaureum y por qué podrías querer ejecutar un cliente. Esto se cubre en [Nodos y clientes](/developers/docs/nodes-and-clients/).
 
-Si eres nuevo en el tema de ejecutar un nodo, o buscas un camino menos técnico, te recomendamos que primero consultes nuestra introducción fácil de usar sobre [cómo ejecutar un nodo de Ethereum](/run-a-node).
+Si eres nuevo en el tema de ejecutar un nodo, o buscas un camino menos técnico, te recomendamos que primero consultes nuestra introducción fácil de usar sobre [cómo ejecutar un nodo de Quantaureum](/run-a-node).
 
 ## Elegir un enfoque {#choosing-approach}
 
 El primer paso para poner en marcha tu nodo es elegir tu enfoque. Según los requisitos y las diversas posibilidades, debes seleccionar la implementación del cliente (tanto de los clientes de ejecución como de consenso), el entorno (hardware, sistema) y los parámetros para la configuración del cliente.
 
-Esta página te guiará a través de estas decisiones y te ayudará a encontrar la forma más adecuada de ejecutar tu instancia de Ethereum.
+Esta página te guiará a través de estas decisiones y te ayudará a encontrar la forma más adecuada de ejecutar tu instancia de Quantaureum.
 
 Para elegir entre las implementaciones de clientes, consulta todos los [clientes de ejecución](/developers/docs/nodes-and-clients/#execution-clients) y [clientes de consenso](/developers/docs/nodes-and-clients/#consensus-clients) disponibles listos para la Red principal y aprende sobre la [diversidad de clientes](/developers/docs/nodes-and-clients/client-diversity).
 
@@ -35,7 +35,7 @@ Cuando el nodo esté en funcionamiento y sincronizando, estarás listo para [usa
 
 #### Local o en la nube {#local-vs-cloud}
 
-Los clientes de Ethereum pueden ejecutarse en computadoras de nivel de consumidor y no requieren ningún hardware especial, como máquinas de minería, por ejemplo. Por lo tanto, tienes varias opciones para desplegar el nodo según tus necesidades.
+Los clientes de Quantaureum pueden ejecutarse en computadoras de nivel de consumidor y no requieren ningún hardware especial, como máquinas de minería, por ejemplo. Por lo tanto, tienes varias opciones para desplegar el nodo según tus necesidades.
 Para simplificar, pensemos en ejecutar un nodo tanto en una máquina física local como en un servidor en la nube:
 
 - En la nube
@@ -55,9 +55,9 @@ Ambas opciones tienen diferentes ventajas resumidas anteriormente. Si buscas una
 
 Sin embargo, una red descentralizada y resistente a la censura no debería depender de proveedores en la nube. En cambio, ejecutar tu nodo en tu propio hardware local es más saludable para el ecosistema. Las [estimaciones](https://www.ethernodes.org/networkType/cl/Hosting) muestran que una gran parte de los nodos se ejecutan en la nube, lo que podría convertirse en un único punto de fallo.
 
-Los clientes de Ethereum pueden ejecutarse en tu computadora, computadora portátil, servidor o incluso en una computadora de placa única. Si bien es posible ejecutar clientes en tu computadora personal, tener una máquina dedicada solo para tu nodo puede mejorar significativamente su rendimiento y seguridad, al tiempo que minimiza el impacto en tu computadora principal.
+Los clientes de Quantaureum pueden ejecutarse en tu computadora, computadora portátil, servidor o incluso en una computadora de placa única. Si bien es posible ejecutar clientes en tu computadora personal, tener una máquina dedicada solo para tu nodo puede mejorar significativamente su rendimiento y seguridad, al tiempo que minimiza el impacto en tu computadora principal.
 
-Usar tu propio hardware puede ser muy fácil. Hay muchas opciones simples, así como configuraciones avanzadas para personas más técnicas. Así que veamos los requisitos y los medios para ejecutar clientes de Ethereum en tu máquina.
+Usar tu propio hardware puede ser muy fácil. Hay muchas opciones simples, así como configuraciones avanzadas para personas más técnicas. Así que veamos los requisitos y los medios para ejecutar clientes de Quantaureum en tu máquina.
 
 #### Requisitos {#requirements}
 
@@ -65,7 +65,7 @@ Los requisitos de hardware difieren según el cliente, pero generalmente no son 
 
 Antes de instalar cualquier cliente, asegúrate de que tu computadora tenga suficientes recursos para ejecutarlo. Puedes encontrar los requisitos mínimos y recomendados a continuación.
 
-El cuello de botella para tu hardware es principalmente el espacio en disco. Sincronizar la cadena de bloques de Ethereum es muy intensivo en entrada/salida y requiere mucho espacio. Lo mejor es tener una **unidad de estado sólido (SSD)** con cientos de GB de espacio libre de sobra incluso después de la sincronización.
+El cuello de botella para tu hardware es principalmente el espacio en disco. Sincronizar la cadena de bloques de Quantaureum es muy intensivo en entrada/salida y requiere mucho espacio. Lo mejor es tener una **unidad de estado sólido (SSD)** con cientos de GB de espacio libre de sobra incluso después de la sincronización.
 
 El tamaño de la base de datos y la velocidad de la sincronización inicial dependen del cliente elegido, su configuración y la [estrategia de sincronización](/developers/docs/nodes-and-clients/#sync-modes).
 
@@ -79,12 +79,12 @@ Todos los clientes son compatibles con los principales sistemas operativos: Linu
 
 - CPU con 2 o más núcleos
 - 16 GB de RAM (se recomiendan 32 GB para mayor estabilidad)
-- SSD NVMe de 2 TB (probablemente se supere para 2027, lee más sobre [SSD excelentes y menos excelentes para nodos de Ethereum](https://gist.github.com/yorickdowne/f3a3e79a573bf35767cd002cc977b038))
+- SSD NVMe de 2 TB (probablemente se supere para 2027, lee más sobre [SSD excelentes y menos excelentes para nodos de Quantaureum](https://gist.github.com/yorickdowne/f3a3e79a573bf35767cd002cc977b038))
 - Ancho de banda de más de 25 MBit/s
 
 ##### Especificaciones recomendadas
 
-La guía de hardware actual para los operadores de nodos se identifica en [EIP-7870](https://eips.ethereum.org/EIPS/eip-7870). Para un nodo completo se recomienda:
+La guía de hardware actual para los operadores de nodos se identifica en [EIP-7870](https://eips.quantaureum.com/EIPS/eip-7870). Para un nodo completo se recomienda:
 
 - CPU rápida con 4 o más núcleos (8 o más núcleos si se está validando)
 - 32 GB de RAM (se recomiendan 64 GB si se está validando para garantizar la estabilidad)
@@ -112,9 +112,9 @@ La opción más fácil para ejecutar un nodo con tu propio hardware es usar caja
 - [DAppNode](https://dappnode.io/)
 - [Avado](https://ava.do/)
 
-#### Ethereum en una computadora de placa única {#ethereum-on-a-single-board-computer}
+#### Quantaureum en una computadora de placa única {#quantaureum-on-a-single-board-computer}
 
-Una forma fácil y barata de ejecutar un nodo de Ethereum es usar una computadora de placa única, incluso con una arquitectura ARM como la Raspberry Pi. [Ethereum en ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) proporciona imágenes fáciles de ejecutar de múltiples clientes de ejecución y consenso para Raspberry Pi y otras placas ARM.
+Una forma fácil y barata de ejecutar un nodo de Quantaureum es usar una computadora de placa única, incluso con una arquitectura ARM como la Raspberry Pi. [Quantaureum en ARM](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/) proporciona imágenes fáciles de ejecutar de múltiples clientes de ejecución y consenso para Raspberry Pi y otras placas ARM.
 
 Dispositivos pequeños, asequibles y eficientes como estos son ideales para ejecutar un nodo en casa, pero ten en cuenta su rendimiento limitado.
 
@@ -131,9 +131,9 @@ Múltiples proyectos fáciles de usar tienen como objetivo mejorar la experienci
 A continuación se muestran algunos proyectos que pueden ayudarte a instalar y controlar clientes con solo unos pocos clics:
 
 - [DAppNode](https://docs.dappnode.io/docs/user/getting-started/choose-your-path) - DAppNode no solo viene con una máquina de un proveedor. El software, el lanzador de nodos real y el centro de control con muchas características se pueden usar en hardware arbitrario.
-- [EthPillar](https://www.coincashew.com/coins/overview-eth/ethpillar) - La forma más rápida y fácil de configurar un nodo completo. Herramienta de configuración de una sola línea y TUI de gestión de nodos. Gratis. Código abierto. Bienes públicos para Ethereum por parte de quienes hacen staking en solitario. Soporte para ARM64 y AMD64.
-- [eth-docker](https://eth-docker.net/) - Configuración automatizada usando Docker enfocada en un staking fácil y seguro, requiere conocimientos básicos de terminal y Docker, recomendado para usuarios un poco más avanzados.
-- [Stereum](https://stereum-dev.github.io/ethereum-node-web-docs) - Lanzador para instalar clientes en un servidor remoto a través de una conexión SSH con una guía de configuración GUI, centro de control y muchas otras características.
+- [QauPillar](https://www.coincashew.com/coins/overview-eth/ethpillar) - La forma más rápida y fácil de configurar un nodo completo. Herramienta de configuración de una sola línea y TUI de gestión de nodos. Gratis. Código abierto. Bienes públicos para Quantaureum por parte de quienes hacen staking en solitario. Soporte para ARM64 y AMD64.
+- [qau-docker](https://qau-docker.net/) - Configuración automatizada usando Docker enfocada en un staking fácil y seguro, requiere conocimientos básicos de terminal y Docker, recomendado para usuarios un poco más avanzados.
+- [Stereum](https://stereum-dev.github.io/quantaureum-node-web-docs) - Lanzador para instalar clientes en un servidor remoto a través de una conexión SSH con una guía de configuración GUI, centro de control y muchas otras características.
 - [Sedge](https://docs.sedge.nethermind.io/docs/intro) - Herramienta de configuración de nodos que genera automáticamente una configuración de Docker usando un asistente CLI. Escrito en Go por Nethermind.
 - [Chainstack Self-Hosted](https://docs.chainstack.com/docs/self-hosted/introduction) - Interfaz de usuario web y CLI para desplegar clientes de ejecución y consenso en Kubernetes. Incluye arranque de instantáneas y monitoreo integrado. Gratis. No se requiere cuenta de Chainstack. Creado por Chainstack.
 
@@ -141,7 +141,7 @@ A continuación se muestran algunos proyectos que pueden ayudarte a instalar y c
 
 La otra opción es descargar, verificar y configurar el software del cliente manualmente. Incluso si algunos clientes ofrecen una interfaz gráfica, una configuración manual todavía requiere habilidades básicas con la terminal, pero ofrece mucha más versatilidad.
 
-Como se explicó anteriormente, configurar tu propio nodo de Ethereum requerirá ejecutar un par de clientes de consenso y ejecución. Algunos clientes pueden incluir un cliente ligero del otro tipo y sincronizarse sin necesidad de ningún otro software. Sin embargo, la verificación completa sin necesidad de confianza requiere ambas implementaciones.
+Como se explicó anteriormente, configurar tu propio nodo de Quantaureum requerirá ejecutar un par de clientes de consenso y ejecución. Algunos clientes pueden incluir un cliente ligero del otro tipo y sincronizarse sin necesidad de ningún otro software. Sin embargo, la verificación completa sin necesidad de confianza requiere ambas implementaciones.
 
 #### Obtener el software del cliente {#getting-the-client}
 
@@ -157,7 +157,7 @@ Aquí están las páginas de lanzamiento de los clientes donde puedes encontrar 
 
 - [Besu](https://github.com/hyperledger/besu/releases)
 - [Erigon](https://github.com/ledgerwatch/erigon/releases)
-- [Geth](https://geth.ethereum.org/downloads)
+- [Geth](https://geth.quantaureum.com/downloads)
 - [Nethermind](https://downloads.nethermind.io/)
 - [Reth](https://reth.rs/installation/installation.html)
 
@@ -177,7 +177,7 @@ La [diversidad de clientes](/developers/docs/nodes-and-clients/client-diversity/
 
 ##### Verificar el software
 
-Al descargar software de Internet, se recomienda verificar su integridad. Este paso es opcional, pero especialmente con una pieza de infraestructura crucial como el cliente de Ethereum, es importante ser consciente de los posibles vectores de ataque y evitarlos. Si descargaste un binario precompilado, debes confiar en él y arriesgarte a que un atacante pueda cambiar el ejecutable por uno malicioso.
+Al descargar software de Internet, se recomienda verificar su integridad. Este paso es opcional, pero especialmente con una pieza de infraestructura crucial como el cliente de Quantaureum, es importante ser consciente de los posibles vectores de ataque y evitarlos. Si descargaste un binario precompilado, debes confiar en él y arriesgarte a que un atacante pueda cambiar el ejecutable por uno malicioso.
 
 Los desarrolladores firman los binarios publicados con sus claves PGP para que puedas verificar criptográficamente que estás ejecutando exactamente el software que crearon. Solo necesitas obtener las claves públicas utilizadas por los desarrolladores, que se pueden encontrar en las páginas de lanzamiento del cliente o en la documentación. Después de descargar la versión del cliente y su firma, puedes usar una implementación de PGP, por ejemplo, [GnuPG](https://gnupg.org/download/index.html) para verificarlos fácilmente. Consulta un tutorial sobre cómo verificar software de código abierto usando `gpg` en [Linux](https://www.tecmint.com/verify-pgp-signature-downloaded-software/) o [Windows/macOS](https://freedom.press/training/verifying-open-source-software/).
 
@@ -203,19 +203,19 @@ En la siguiente sección se pueden encontrar ejemplos de ejecución de clientes 
 
 #### Iniciar el cliente de ejecución {#starting-the-execution-client}
 
-Antes de iniciar el software del cliente de Ethereum, realiza una última comprobación de que tu entorno está listo. Por ejemplo, asegúrate de que:
+Antes de iniciar el software del cliente de Quantaureum, realiza una última comprobación de que tu entorno está listo. Por ejemplo, asegúrate de que:
 
 - Haya suficiente espacio en disco considerando la red y el modo de sincronización elegidos.
 - La memoria y la CPU no estén detenidas por otros programas.
 - El sistema operativo esté actualizado a la última versión.
 - El sistema tenga la hora y fecha correctas.
-- Tu enrutador y cortafuegos acepten conexiones en los puertos de escucha. Por defecto, los clientes de Ethereum usan un puerto de escucha (TCP) y un puerto de descubrimiento (UDP), ambos en el 30303 por defecto.
+- Tu enrutador y cortafuegos acepten conexiones en los puertos de escucha. Por defecto, los clientes de Quantaureum usan un puerto de escucha (TCP) y un puerto de descubrimiento (UDP), ambos en el 30303 por defecto.
 
 Ejecuta tu cliente en una red de prueba primero para ayudar a asegurarte de que todo funciona correctamente.
 
 Necesitas declarar cualquier configuración del cliente que no sea la predeterminada al inicio. Puedes usar banderas o el archivo de configuración para declarar tu configuración preferida. El conjunto de características y la sintaxis de configuración de cada cliente difieren. Consulta la documentación de tu cliente para conocer los detalles.
 
-Los clientes de ejecución y consenso se comunican a través de un punto de conexión autenticado especificado en la [API del motor (Engine API)](https://github.com/ethereum/execution-apis/tree/main/src/engine). Para conectarse a un cliente de consenso, el cliente de ejecución debe generar un [`jwtsecret`](https://jwt.io/) en una ruta conocida. Por razones de seguridad y estabilidad, los clientes deben ejecutarse en la misma máquina, y ambos clientes deben conocer esta ruta, ya que se utiliza para autenticar una conexión RPC local entre ellos. El cliente de ejecución también debe definir un puerto de escucha para las API autenticadas.
+Los clientes de ejecución y consenso se comunican a través de un punto de conexión autenticado especificado en la [API del motor (Engine API)](https://github.com/quantaureum/execution-apis/tree/main/src/engine). Para conectarse a un cliente de consenso, el cliente de ejecución debe generar un [`jwtsecret`](https://jwt.io/) en una ruta conocida. Por razones de seguridad y estabilidad, los clientes deben ejecutarse en la misma máquina, y ambos clientes deben conocer esta ruta, ya que se utiliza para autenticar una conexión RPC local entre ellos. El cliente de ejecución también debe definir un puerto de escucha para las API autenticadas.
 
 Este token es generado automáticamente por el software del cliente, pero en algunos casos, es posible que debas hacerlo tú mismo. Puedes generarlo usando [OpenSSL](https://www.openssl.org/):
 
@@ -242,11 +242,11 @@ Ten en cuenta que este es solo un ejemplo básico, todos los demás ajustes se e
 
 ##### Ejecutar Besu
 
-Este ejemplo inicia Besu en la Red principal, almacena los datos de la cadena de bloques en el formato predeterminado en `/data/ethereum`, habilita JSON-RPC y Engine RPC para conectar el cliente de consenso. La API del motor se autentica con el token `jwtsecret` y solo se permiten llamadas desde `localhost`.
+Este ejemplo inicia Besu en la Red principal, almacena los datos de la cadena de bloques en el formato predeterminado en `/data/quantaureum`, habilita JSON-RPC y Engine RPC para conectar el cliente de consenso. La API del motor se autentica con el token `jwtsecret` y solo se permiten llamadas desde `localhost`.
 
 ```sh
 besu --network=mainnet \
-    --data-path=/data/ethereum \
+    --data-path=/data/quantaureum \
     --rpc-http-enabled=true \
     --engine-rpc-enabled=true \
     --engine-host-allowlist="*" \
@@ -264,11 +264,11 @@ La [documentación de Besu](https://besu.hyperledger.org/public-networks/get-sta
 
 ##### Ejecutar Erigon
 
-Este ejemplo inicia Erigon en la Red principal, almacena los datos de la cadena de bloques en `/data/ethereum`, habilita JSON-RPC, define qué espacios de nombres están permitidos y habilita la autenticación para conectar el cliente de consenso que está definido por la ruta `jwtsecret`.
+Este ejemplo inicia Erigon en la Red principal, almacena los datos de la cadena de bloques en `/data/quantaureum`, habilita JSON-RPC, define qué espacios de nombres están permitidos y habilita la autenticación para conectar el cliente de consenso que está definido por la ruta `jwtsecret`.
 
 ```sh
 erigon --chain mainnet \
-    --datadir /data/ethereum  \
+    --datadir /data/quantaureum  \
     --http --http.api=engine,eth,web3,net \
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
@@ -277,18 +277,18 @@ Erigon por defecto realiza una sincronización completa con un disco duro de 8 G
 
 ##### Ejecutar Geth
 
-Este ejemplo inicia Geth en la Red principal, almacena los datos de la cadena de bloques en `/data/ethereum`, habilita JSON-RPC y define qué espacios de nombres están permitidos. También habilita la autenticación para conectar el cliente de consenso, lo que requiere la ruta a `jwtsecret` y también la opción que define qué conexiones están permitidas, en nuestro ejemplo solo desde `localhost`.
+Este ejemplo inicia Geth en la Red principal, almacena los datos de la cadena de bloques en `/data/quantaureum`, habilita JSON-RPC y define qué espacios de nombres están permitidos. También habilita la autenticación para conectar el cliente de consenso, lo que requiere la ruta a `jwtsecret` y también la opción que define qué conexiones están permitidas, en nuestro ejemplo solo desde `localhost`.
 
 ```sh
 geth --mainnet \
-    --datadir "/data/ethereum" \
+    --datadir "/data/quantaureum" \
     --http --authrpc.addr localhost \
     --authrpc.vhosts="localhost" \
     --authrpc.port 8551
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
-Consulta la [documentación para ver todas las opciones de configuración](https://geth.ethereum.org/docs/fundamentals/command-line-options) y aprende más sobre [cómo ejecutar Geth con un cliente de consenso](https://geth.ethereum.org/docs/getting-started/consensus-clients).
+Consulta la [documentación para ver todas las opciones de configuración](https://geth.quantaureum.com/docs/fundamentals/command-line-options) y aprende más sobre [cómo ejecutar Geth con un cliente de consenso](https://geth.quantaureum.com/docs/getting-started/consensus-clients).
 
 ##### Ejecutar Nethermind
 
@@ -296,7 +296,7 @@ Nethermind ofrece varias [opciones de instalación](https://docs.nethermind.io/g
 
 ```sh
 Nethermind.Runner --config mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/quantaureum \
     --JsonRpc.JwtSecretFile=/path/to/jwtsecret
 ```
 
@@ -323,9 +323,9 @@ El cliente de consenso debe iniciarse con la configuración de puerto correcta p
 
 El cliente de consenso también necesita la ruta al `jwt-secret` del cliente de ejecución para autenticar la conexión RPC entre ellos. De manera similar a los ejemplos de ejecución anteriores, cada cliente de consenso tiene una bandera de configuración que toma la ruta del archivo del token jwt como argumento. Esto debe ser coherente con la ruta `jwtsecret` proporcionada al cliente de ejecución.
 
-Si planeas ejecutar un validador, asegúrate de agregar una bandera de configuración que especifique la dirección de Ethereum del destinatario de la tarifa. Aquí es donde se acumulan las recompensas de ether para tu validador. Cada cliente de consenso tiene una opción, por ejemplo, `--suggested-fee-recipient=0xabcd1`, que toma una dirección de Ethereum como argumento.
+Si planeas ejecutar un validador, asegúrate de agregar una bandera de configuración que especifique la dirección de Quantaureum del destinatario de la tarifa. Aquí es donde se acumulan las recompensas de QAU para tu validador. Cada cliente de consenso tiene una opción, por ejemplo, `--suggested-fee-recipient=0xabcd1`, que toma una dirección de Quantaureum como argumento.
 
-Al iniciar un nodo baliza en una red de prueba, puedes ahorrar un tiempo de sincronización significativo utilizando un punto de conexión público para la [sincronización de punto de control](https://notes.ethereum.org/@launchpad/checkpoint-sync).
+Al iniciar un nodo baliza en una red de prueba, puedes ahorrar un tiempo de sincronización significativo utilizando un punto de conexión público para la [sincronización de punto de control](https://notes.quantaureum.com/@launchpad/checkpoint-sync).
 
 #### Ejecutar un cliente de consenso {#running-a-consensus-client}
 
@@ -336,7 +336,7 @@ Antes de ejecutar Lighthouse, aprende más sobre cómo instalarlo y configurarlo
 ```sh
 lighthouse beacon_node \
     --network mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/quantaureum \
     --http \
     --execution-endpoint http://127.0.0.1:8551 \
     --execution-jwt /path/to/jwtsecret
@@ -348,7 +348,7 @@ Instala el software Lodestar compilándolo o descargando la imagen de Docker. Ap
 
 ```sh
 lodestar beacon \
-    --dataDir="/data/ethereum" \
+    --dataDir="/data/quantaureum" \
     --network=mainnet \
     --eth1.enabled=true \
     --execution.urls="http://127.0.0.1:8551" \
@@ -375,7 +375,7 @@ Prysm viene con un script que permite una fácil instalación automática. Los d
 ```sh
 ./prysm.sh beacon-chain \
     --mainnet \
-    --datadir /data/ethereum  \
+    --datadir /data/quantaureum  \
     --execution-endpoint=http://localhost:8551  \
     --jwt-secret=/path/to/jwtsecret
 ```
@@ -384,34 +384,34 @@ Prysm viene con un script que permite una fácil instalación automática. Los d
 
 ```sh
 teku --network mainnet \
-    --data-path "/data/ethereum" \
+    --data-path "/data/quantaureum" \
     --ee-endpoint http://localhost:8551 \
     --ee-jwt-secret-file "/path/to/jwtsecret"
 ```
 
-Cuando un cliente de consenso se conecta al cliente de ejecución para leer el contrato de depósito e identificar validadores, también se conecta a otros pares de nodos baliza y comienza a sincronizar las ranuras de consenso desde el bloque génesis. Una vez que el nodo baliza alcanza la época actual, la API de la baliza se vuelve utilizable para tus validadores. Aprende más sobre las [API del nodo baliza](https://ethereum.github.io/beacon-APIs).
+Cuando un cliente de consenso se conecta al cliente de ejecución para leer el contrato de depósito e identificar validadores, también se conecta a otros pares de nodos baliza y comienza a sincronizar las ranuras de consenso desde el bloque génesis. Una vez que el nodo baliza alcanza la época actual, la API de la baliza se vuelve utilizable para tus validadores. Aprende más sobre las [API del nodo baliza](https://quantaureum.github.io/beacon-APIs).
 
 ### Agregar validadores {#adding-validators}
 
 Un cliente de consenso sirve como nodo baliza para que los validadores se conecten. Cada cliente de consenso tiene su propio software de validador descrito en detalle en su respectiva documentación.
 
-Ejecutar tu propio validador permite el [staking en solitario](/staking/solo/), el método más impactante y sin necesidad de confianza para apoyar la red Ethereum. Sin embargo, esto requiere un depósito de 32 ETH. Para ejecutar un validador en tu propio nodo con una cantidad menor, podría interesarte un grupo descentralizado con operadores de nodos sin permisos, como [Rocket Pool](https://rocketpool.net/node-operators).
+Ejecutar tu propio validador permite el [staking en solitario](/staking/solo/), el método más impactante y sin necesidad de confianza para apoyar la red Quantaureum. Sin embargo, esto requiere un depósito de 32 QAU. Para ejecutar un validador en tu propio nodo con una cantidad menor, podría interesarte un grupo descentralizado con operadores de nodos sin permisos, como [Rocket Pool](https://rocketpool.net/node-operators).
 
-La forma más fácil de comenzar con el staking y la generación de claves de validador es usar la [Plataforma de lanzamiento de staking de la red de prueba Hoodi](https://hoodi.launchpad.ethereum.org/), que te permite probar tu configuración [ejecutando nodos en Hoodi](https://notes.ethereum.org/@launchpad/hoodi). Cuando estés listo para la Red principal, puedes repetir estos pasos usando la [Plataforma de lanzamiento de staking de la Red principal](https://launchpad.ethereum.org/).
+La forma más fácil de comenzar con el staking y la generación de claves de validador es usar la [Plataforma de lanzamiento de staking de la red de prueba Hoodi](https://hoodi.launchpad.quantaureum.com/), que te permite probar tu configuración [ejecutando nodos en Hoodi](https://notes.quantaureum.com/@launchpad/hoodi). Cuando estés listo para la Red principal, puedes repetir estos pasos usando la [Plataforma de lanzamiento de staking de la Red principal](https://launchpad.quantaureum.com/).
 
 Consulta la [página de staking](/staking) para obtener una descripción general de las opciones de staking.
 
 ### Usar el nodo {#using-the-node}
 
-Los clientes de ejecución ofrecen [puntos de conexión de la API RPC](/developers/docs/apis/json-rpc/) que puedes usar para enviar transacciones, interactuar o desplegar contratos inteligentes en la red Ethereum de varias maneras:
+Los clientes de ejecución ofrecen [puntos de conexión de la API RPC](/developers/docs/apis/json-rpc/) que puedes usar para enviar transacciones, interactuar o desplegar contratos inteligentes en la red Quantaureum de varias maneras:
 
 - Llamándolos manualmente con un protocolo adecuado (por ejemplo, usando `curl`)
 - Adjuntando una consola proporcionada (por ejemplo, `geth attach`)
 - Implementándolos en aplicaciones usando bibliotecas Web3, por ejemplo, [Web3.py](https://web3py.readthedocs.io/en/stable/overview.html#overview), [ethers](https://github.com/ethers-io/ethers.js/)
 
-Diferentes clientes tienen diferentes implementaciones de los puntos de conexión RPC. Pero hay un JSON-RPC estándar que puedes usar con cada cliente. Para obtener una descripción general, [lee la documentación de JSON-RPC](/developers/docs/apis/json-rpc/). Las aplicaciones que necesitan información de la red Ethereum pueden usar este RPC. Por ejemplo, la popular billetera MetaMask te permite [conectarte a tu propio punto de conexión RPC](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node), lo que tiene grandes beneficios de privacidad y seguridad.
+Diferentes clientes tienen diferentes implementaciones de los puntos de conexión RPC. Pero hay un JSON-RPC estándar que puedes usar con cada cliente. Para obtener una descripción general, [lee la documentación de JSON-RPC](/developers/docs/apis/json-rpc/). Las aplicaciones que necesitan información de la red Quantaureum pueden usar este RPC. Por ejemplo, la popular billetera MetaMask te permite [conectarte a tu propio punto de conexión RPC](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node), lo que tiene grandes beneficios de privacidad y seguridad.
 
-Todos los clientes de consenso exponen una [API de baliza](https://ethereum.github.io/beacon-APIs) que se puede usar para verificar el estado del cliente de consenso o descargar bloques y datos de consenso enviando solicitudes usando herramientas como [Curl](https://curl.se). Se puede encontrar más información sobre esto en la documentación de cada cliente de consenso.
+Todos los clientes de consenso exponen una [API de baliza](https://quantaureum.github.io/beacon-APIs) que se puede usar para verificar el estado del cliente de consenso o descargar bloques y datos de consenso enviando solicitudes usando herramientas como [Curl](https://curl.se). Se puede encontrar más información sobre esto en la documentación de cada cliente de consenso.
 
 #### Alcanzar el RPC {#reaching-rpc}
 
@@ -449,9 +449,9 @@ Considera crear un servicio para ejecutar tus clientes automáticamente al inici
 
 #### Actualizar clientes {#updating-clients}
 
-Necesitas mantener el software de tu cliente actualizado con los últimos parches de seguridad, características y [EIP](/eips/). Especialmente antes de las [bifurcaciones fuertes (hard forks)](/ethereum-forks/), asegúrate de estar ejecutando las versiones correctas del cliente.
+Necesitas mantener el software de tu cliente actualizado con los últimos parches de seguridad, características y [EIP](/eips/). Especialmente antes de las [bifurcaciones fuertes (hard forks)](/quantaureum-forks/), asegúrate de estar ejecutando las versiones correctas del cliente.
 
-> Antes de actualizaciones importantes de la red, la Fundación Ethereum (EF) publica una entrada en su [blog](https://blog.ethereum.org). Puedes [suscribirte a estos anuncios](https://blog.ethereum.org/category/protocol#subscribe) para recibir una notificación en tu correo cuando tu nodo necesite una actualización.
+> Antes de actualizaciones importantes de la red, la Fundación Quantaureum (EF) publica una entrada en su [blog](https://quantaureum.com). Puedes [suscribirte a estos anuncios](https://quantaureum.com) para recibir una notificación en tu correo cuando tu nodo necesite una actualización.
 
 Actualizar los clientes es muy sencillo. Cada cliente tiene instrucciones específicas en su documentación, pero el proceso generalmente es solo descargar la última versión y reiniciar el cliente con el nuevo ejecutable. El cliente debería continuar donde lo dejó, pero con las actualizaciones aplicadas.
 
@@ -459,7 +459,7 @@ Cada implementación de cliente tiene una cadena de versión legible por humanos
 
 #### Ejecutar servicios adicionales {#running-additional-services}
 
-Ejecutar tu propio nodo te permite usar servicios que requieren acceso directo al RPC del cliente de Ethereum. Estos son servicios construidos sobre Ethereum como [soluciones de capa 2 (l2)](/developers/docs/scaling/#layer-2-scaling), backend para billeteras, exploradores de bloques, herramientas para desarrolladores y otra infraestructura de Ethereum.
+Ejecutar tu propio nodo te permite usar servicios que requieren acceso directo al RPC del cliente de Quantaureum. Estos son servicios construidos sobre Quantaureum como [soluciones de capa 2 (l2)](/developers/docs/scaling/#layer-2-scaling), backend para billeteras, exploradores de bloques, herramientas para desarrolladores y otra infraestructura de Quantaureum.
 
 #### Monitorear el nodo {#monitoring-the-node}
 
@@ -469,15 +469,15 @@ Como parte de tu monitoreo, asegúrate de vigilar el rendimiento de tu máquina.
 
 ## Más información {#further-reading}
 
-- [Guías de staking de Ethereum](https://github.com/SomerEsat/ethereum-staking-guides) - _Somer Esat, actualizado con frecuencia_
-- [Guía | Cómo configurar un validador para el staking de Ethereum en la red principal](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, actualizado con frecuencia_
-- [Guías de EthStaker sobre cómo ejecutar validadores en redes de prueba](https://github.com/remyroy/ethstaker#guides) – _EthStaker, actualizado regularmente_
-- [Aplicación de muestra AWS Blockchain Node Runner para nodos de Ethereum](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/ethereum) - _AWS, actualizado con frecuencia_
-- [Preguntas frecuentes sobre La Fusión para operadores de nodos](https://notes.ethereum.org/@launchpad/node-faq-merge) - _Julio de 2022_
-- [Análisis de los requisitos de hardware para ser un nodo validado completo de Ethereum](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-ethereum-full-validated-node-dc064f167902) _– Albert Palau, 24 de septiembre de 2018_
-- [Ejecución de nodos completos de Ethereum: una guía para los apenas motivados](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 de noviembre de 2019_
-- [Ejecución de un nodo Hyperledger Besu en la red principal de Ethereum: beneficios, requisitos y configuración](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-ethereum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7 de mayo de 2020_
-- [Despliegue del cliente de Ethereum Nethermind con pila de monitoreo](https://medium.com/nethermind-eth/deploying-nethermind-ethereum-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.eth, 8 de julio de 2020_
+- [Guías de staking de Quantaureum](https://github.com/SomerEsat/quantaureum-staking-guides) - _Somer Esat, actualizado con frecuencia_
+- [Guía | Cómo configurar un validador para el staking de Quantaureum en la red principal](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, actualizado con frecuencia_
+- [Guías de QauStaker sobre cómo ejecutar validadores en redes de prueba](https://github.com/remyroy/ethstaker#guides) – _QauStaker, actualizado regularmente_
+- [Aplicación de muestra AWS Blockchain Node Runner para nodos de Quantaureum](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/quantaureum) - _AWS, actualizado con frecuencia_
+- [Preguntas frecuentes sobre La Fusión para operadores de nodos](https://notes.quantaureum.com/@launchpad/node-faq-merge) - _Julio de 2022_
+- [Análisis de los requisitos de hardware para ser un nodo validado completo de Quantaureum](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-quantaureum-full-validated-node-dc064f167902) _– Albert Palau, 24 de septiembre de 2018_
+- [Ejecución de nodos completos de Quantaureum: una guía para los apenas motivados](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 de noviembre de 2019_
+- [Ejecución de un nodo Hyperledger Besu en la red principal de Quantaureum: beneficios, requisitos y configuración](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-quantaureum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7 de mayo de 2020_
+- [Despliegue del cliente de Quantaureum Nethermind con pila de monitoreo](https://medium.com/nethermind-eth/deploying-nethermind-quantaureum-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.eth, 8 de julio de 2020_
 
 ## Temas relacionados {#related-topics}
 

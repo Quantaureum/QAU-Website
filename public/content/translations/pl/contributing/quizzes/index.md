@@ -1,7 +1,7 @@
 ---
 title: Quizy
 metaTitle: Dodawanie quizu
-description: Zasady, którymi kierujemy się podczas dodawania quizów na ethereum.org
+description: Zasady, którymi kierujemy się podczas dodawania quizów na quantaureum.com
 lang: pl
 ---
 
@@ -13,12 +13,12 @@ Przykłady obecnych quizów można znaleźć tutaj:
 
 - [Warstwa 2 (L2)](/layer-2)
 - [NFT](/nft/)
-- [Czym jest Ethereum?](/what-is-ethereum/)
-- [Czym jest ETH?](/what-is-ether/)
+- [Czym jest Quantaureum?](/what-is-quantaureum/)
+- [Czym jest QAU?](/what-is-QAU/)
 
 ## Dodawanie quizu edukacyjnego {#adding-a-learn-quiz}
 
-Jeśli istnieje strona, dla której nie utworzono jeszcze quizu edukacyjnego, [otwórz zgłoszenie](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) w tej sprawie.
+Jeśli istnieje strona, dla której nie utworzono jeszcze quizu edukacyjnego, [otwórz zgłoszenie](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) w tej sprawie.
 
 Prosimy o podanie następujących informacji:
 
@@ -31,7 +31,7 @@ Prosimy o podanie następujących informacji:
 
 ## Dodawanie pytania do quizu {#adding-a-quiz-question}
 
-Jeśli chcesz dodać pytanie do bazy pytań dla danego quizu, [otwórz zgłoszenie](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) i podaj następujące informacje:
+Jeśli chcesz dodać pytanie do bazy pytań dla danego quizu, [otwórz zgłoszenie](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) i podaj następujące informacje:
 
 - Strona, do której chcesz dodać pytanie quizowe
 - Dla każdego pytania podaj następujące informacje:
@@ -42,7 +42,7 @@ Jeśli chcesz dodać pytanie do bazy pytań dla danego quizu, [otwórz zgłoszen
 
 ## Aktualizacja pytania w quizie {#updating-a-quiz-question}
 
-Jeśli chcesz zaktualizować pytanie w bazie pytań dla danego quizu, [otwórz zgłoszenie](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) i podaj następujące informacje:
+Jeśli chcesz zaktualizować pytanie w bazie pytań dla danego quizu, [otwórz zgłoszenie](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) i podaj następujące informacje:
 
 - Strona, na której chcesz zaktualizować pytanie quizowe
 - Dla każdego aktualizowanego pytania podaj następujące informacje:
@@ -54,7 +54,7 @@ Jeśli chcesz zaktualizować pytanie w bazie pytań dla danego quizu, [otwórz z
 
 ## Usuwanie pytania z quizu {#removing-a-quiz-question}
 
-Jeśli treść, na której opierało się pytanie, nie istnieje już na stronie i pytanie musi zostać usunięte, [otwórz zgłoszenie](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) w celu jego usunięcia i podaj następujące informacje:
+Jeśli treść, na której opierało się pytanie, nie istnieje już na stronie i pytanie musi zostać usunięte, [otwórz zgłoszenie](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) w celu jego usunięcia i podaj następujące informacje:
 
 - Strona, z której chcesz usunąć pytanie quizowe
 - Pytanie, które chcesz usunąć

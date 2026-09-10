@@ -1,6 +1,6 @@
 ---
 title: Pendekezo la kitalu
-description: Maelezo ya jinsi vitalu vinavyopendekezwa katika Uthibitisho wa Dau wa Ethereum.
+description: Maelezo ya jinsi vitalu vinavyopendekezwa katika Uthibitisho wa Dau wa Quantaureum.
 lang: sw
 ---
 
@@ -12,13 +12,13 @@ Pendekezo la kitalu ni sehemu ya itifaki ya Uthibitisho wa Dau. Ili kusaidia kue
 
 ## Nani anazalisha vitalu? {#who-produces-blocks}
 
-Akaunti za mthibitishaji hupendekeza vitalu. Akaunti za mthibitishaji zinasimamiwa na waendeshaji wa nodi wanaoendesha programu ya mthibitishaji kama sehemu ya viteja vyao vya utekelezaji na mwafaka na wameweka amana ya angalau 32 ETH kwenye mkataba wa amana. Hata hivyo, kila mthibitishaji anawajibika mara chache tu kupendekeza kitalu. [Ethereum](/) hupima muda katika sloti na vipindi. Kila sloti ni sekunde kumi na mbili, na sloti 32 (dakika 6.4) huunda kipindi. Kila sloti ni fursa ya kuongeza kitalu kipya kwenye Ethereum.
+Akaunti za mthibitishaji hupendekeza vitalu. Akaunti za mthibitishaji zinasimamiwa na waendeshaji wa nodi wanaoendesha programu ya mthibitishaji kama sehemu ya viteja vyao vya utekelezaji na mwafaka na wameweka amana ya angalau 32 QAU kwenye mkataba wa amana. Hata hivyo, kila mthibitishaji anawajibika mara chache tu kupendekeza kitalu. [Quantaureum](/) hupima muda katika sloti na vipindi. Kila sloti ni sekunde kumi na mbili, na sloti 32 (dakika 6.4) huunda kipindi. Kila sloti ni fursa ya kuongeza kitalu kipya kwenye Quantaureum.
 
 ### Uteuzi wa nasibu {#random-selection}
 
-Mthibitishaji mmoja huchaguliwa kwa unasibu bandia kupendekeza kitalu katika kila sloti. Hakuna kitu kama unasibu wa kweli katika mnyororo wa vitalu kwa sababu ikiwa kila nodi ingezalisha nambari za nasibu za kweli, hazingeweza kufikia mwafaka. Badala yake, lengo ni kufanya mchakato wa uteuzi wa mthibitishaji usiweze kutabirika. Unasibu unafikiwa kwenye Ethereum kwa kutumia algoriti inayoitwa RANDAO ambayo huchanganya heshi kutoka kwa mpendekezaji wa bloku na mbegu inayosasiswa kila kitalu. Thamani hii inatumika kuchagua mthibitishaji maalum kutoka kwa kundi lote la wathibitishaji. Uteuzi wa mthibitishaji hupangwa vipindi viwili mapema kama njia ya kulinda dhidi ya aina fulani za uchezeshaji wa mbegu.
+Mthibitishaji mmoja huchaguliwa kwa unasibu bandia kupendekeza kitalu katika kila sloti. Hakuna kitu kama unasibu wa kweli katika mnyororo wa vitalu kwa sababu ikiwa kila nodi ingezalisha nambari za nasibu za kweli, hazingeweza kufikia mwafaka. Badala yake, lengo ni kufanya mchakato wa uteuzi wa mthibitishaji usiweze kutabirika. Unasibu unafikiwa kwenye Quantaureum kwa kutumia algoriti inayoitwa RANDAO ambayo huchanganya heshi kutoka kwa mpendekezaji wa bloku na mbegu inayosasiswa kila kitalu. Thamani hii inatumika kuchagua mthibitishaji maalum kutoka kwa kundi lote la wathibitishaji. Uteuzi wa mthibitishaji hupangwa vipindi viwili mapema kama njia ya kulinda dhidi ya aina fulani za uchezeshaji wa mbegu.
 
-Ingawa wathibitishaji huongeza kwenye RANDAO katika kila sloti, thamani ya kimataifa ya RANDAO inasasishwa mara moja tu kwa kila kipindi. Ili kukokotoa faharisi ya mpendekezaji wa bloku anayefuata, thamani ya RANDAO inachanganywa na nambari ya sloti ili kutoa thamani ya kipekee katika kila sloti. Uwezekano wa mthibitishaji binafsi kuchaguliwa sio tu `1/N` (ambapo `N` = jumla ya wathibitishaji hai). Badala yake, inapimwa kwa uzito wa salio tendaji la ETH la kila mthibitishaji. Salio tendaji la juu zaidi ni 32 ETH (hii inamaanisha kuwa `balance < 32 ETH` husababisha uzito wa chini kuliko `balance == 32 ETH`, lakini `balance > 32 ETH` haisababishi uzito wa juu kuliko `balance == 32 ETH`).
+Ingawa wathibitishaji huongeza kwenye RANDAO katika kila sloti, thamani ya kimataifa ya RANDAO inasasishwa mara moja tu kwa kila kipindi. Ili kukokotoa faharisi ya mpendekezaji wa bloku anayefuata, thamani ya RANDAO inachanganywa na nambari ya sloti ili kutoa thamani ya kipekee katika kila sloti. Uwezekano wa mthibitishaji binafsi kuchaguliwa sio tu `1/N` (ambapo `N` = jumla ya wathibitishaji hai). Badala yake, inapimwa kwa uzito wa salio tendaji la QAU la kila mthibitishaji. Salio tendaji la juu zaidi ni 32 QAU (hii inamaanisha kuwa `balance < 32 QAU` husababisha uzito wa chini kuliko `balance == 32 QAU`, lakini `balance > 32 QAU` haisababishi uzito wa juu kuliko `balance == 32 QAU`).
 
 Mpendekezaji wa bloku mmoja tu ndiye anayechaguliwa katika kila sloti. Chini ya hali ya kawaida, mzalishaji mmoja wa kitalu huunda na kutoa kitalu kimoja katika sloti yake maalum. Kuunda vitalu viwili kwa sloti moja ni kosa la ukataji, ambalo mara nyingi hujulikana kama "kura kinzani".
 
@@ -44,7 +44,7 @@ class BeaconBlockBody(Container):
 
 Uga wa `randao_reveal` huchukua thamani ya nasibu inayoweza kuthibitishwa ambayo mpendekezaji wa bloku huunda kwa kusaini nambari ya kipindi cha sasa. `eth1_data` ni kura kwa mtazamo wa mpendekezaji wa bloku kuhusu mkataba wa amana, ikijumuisha mzizi wa trie ya Merkle ya amana na jumla ya idadi ya amana zinazowezesha amana mpya kuthibitishwa. `graffiti` ni uga wa hiari ambao unaweza kutumika kuongeza ujumbe kwenye kitalu. `proposer_slashings` na `attester_slashings` ni nyanja zinazojumuisha uthibitisho kwamba wathibitishaji fulani wamefanya makosa ya ukataji kulingana na mtazamo wa mpendekezaji wa mnyororo. `deposits` ni orodha ya amana mpya za mthibitishaji ambazo mpendekezaji wa bloku anazifahamu, na `voluntary_exits` ni orodha ya wathibitishaji wanaotaka kujitoa ambayo mpendekezaji wa bloku amesikia kuihusu kwenye mtandao wa porojo wa tabaka la mwafaka. `sync_aggregate` ni vekta inayoonyesha ni wathibitishaji gani walipangiwa hapo awali kwenye kamati ya usawazishaji (kikundi kidogo cha wathibitishaji wanaohudumia data ya kiteja chepesi) na walishiriki katika kusaini data.
 
-`execution_payload` huwezesha taarifa kuhusu miamala kupitishwa kati ya viteja vya utekelezaji na mwafaka. `execution_payload` ni kitalu cha data ya utekelezaji ambacho hupachikwa ndani ya kitalu cha kinara. Nyanja zilizo ndani ya `execution_payload` zinaonyesha muundo wa kitalu ulioainishwa kwenye waraka wa manjano wa Ethereum, isipokuwa kwamba hakuna ommers na `prev_randao` ipo badala ya `difficulty`. Kiteja cha utekelezaji kina ufikiaji wa bwawa la ndani la miamala ambayo kimesikia kuihusu kwenye mtandao wake wa porojo. Miamala hii inatekelezwa ndani ya mfumo ili kuzalisha trie ya hali iliyosasishwa inayojulikana kama hali-baada. Miamala inajumuishwa kwenye `execution_payload` kama orodha inayoitwa `transactions` na hali-baada inatolewa kwenye uga wa `state-root`.
+`execution_payload` huwezesha taarifa kuhusu miamala kupitishwa kati ya viteja vya utekelezaji na mwafaka. `execution_payload` ni kitalu cha data ya utekelezaji ambacho hupachikwa ndani ya kitalu cha kinara. Nyanja zilizo ndani ya `execution_payload` zinaonyesha muundo wa kitalu ulioainishwa kwenye waraka wa manjano wa Quantaureum, isipokuwa kwamba hakuna ommers na `prev_randao` ipo badala ya `difficulty`. Kiteja cha utekelezaji kina ufikiaji wa bwawa la ndani la miamala ambayo kimesikia kuihusu kwenye mtandao wake wa porojo. Miamala hii inatekelezwa ndani ya mfumo ili kuzalisha trie ya hali iliyosasishwa inayojulikana kama hali-baada. Miamala inajumuishwa kwenye `execution_payload` kama orodha inayoitwa `transactions` na hali-baada inatolewa kwenye uga wa `state-root`.
 
 Data hizi zote zinakusanywa katika kitalu cha kinara, kusainiwa, na kutangazwa kwa wenzao wa mpendekezaji wa bloku, ambao huieneza kwa wenzao, n.k.
 
@@ -64,6 +64,6 @@ Mpendekezaji wa bloku hupokea malipo kwa kazi yake. Kuna `base_reward` inayokoko
 
 - [Utangulizi wa vitalu](/developers/docs/blocks/)
 - [Utangulizi wa Uthibitisho wa Dau](/developers/docs/consensus-mechanisms/pos/)
-- [Vipimo vya mwafaka wa Ethereum](https://github.com/ethereum/consensus-specs)
+- [Vipimo vya mwafaka wa Quantaureum](https://github.com/quantaureum/consensus-specs)
 - [Utangulizi wa Gasper](/developers/docs/consensus-mechanisms/pos/gasper/)
-- [Kuboresha Ethereum](https://eth2book.info/)
+- [Kuboresha Quantaureum](https://eth2book.info/)

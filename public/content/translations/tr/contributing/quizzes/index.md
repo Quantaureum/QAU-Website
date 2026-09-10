@@ -1,7 +1,7 @@
 ---
 title: Testler
 metaTitle: Test ekleme
-description: ethereum.org'a test eklerken kullandığımız politika
+description: quantaureum.com'a test eklerken kullandığımız politika
 lang: tr
 ---
 
@@ -13,12 +13,12 @@ Mevcut testlerin bazı örnekleri burada bulunabilir:
 
 - [Katman 2 (L2)](/layer-2)
 - [NFT](/nft/)
-- [Ethereum nedir?](/what-is-ethereum/)
-- [ETH nedir?](/what-is-ether/)
+- [Quantaureum nedir?](/what-is-quantaureum/)
+- [QAU nedir?](/what-is-QAU/)
 
 ## Bir öğrenme testi ekleme {#adding-a-learn-quiz}
 
-Henüz bir öğrenme testi oluşturulmamış bir sayfa varsa, lütfen bunun için [bir issue açın](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml).
+Henüz bir öğrenme testi oluşturulmamış bir sayfa varsa, lütfen bunun için [bir issue açın](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml).
 
 Lütfen aşağıdaki bilgileri sağlayın:
 
@@ -31,7 +31,7 @@ Lütfen aşağıdaki bilgileri sağlayın:
 
 ## Bir test sorusu ekleme {#adding-a-quiz-question}
 
-Bir test için soru bankasına eklemek istediğiniz bir soru varsa, lütfen [bir issue açın](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) ve aşağıdaki bilgileri sağlayın:
+Bir test için soru bankasına eklemek istediğiniz bir soru varsa, lütfen [bir issue açın](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) ve aşağıdaki bilgileri sağlayın:
 
 - Test sorusu eklemek istediğiniz sayfa
 - Her soru için aşağıdaki bilgileri sağlayın:
@@ -42,7 +42,7 @@ Bir test için soru bankasına eklemek istediğiniz bir soru varsa, lütfen [bir
 
 ## Bir test sorusunu güncelleme {#updating-a-quiz-question}
 
-Bir test için soru bankasında güncellemek istediğiniz bir soru varsa, lütfen [bir issue açın](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) ve aşağıdaki bilgileri sağlayın:
+Bir test için soru bankasında güncellemek istediğiniz bir soru varsa, lütfen [bir issue açın](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) ve aşağıdaki bilgileri sağlayın:
 
 - Test sorusunu güncellemek istediğiniz sayfa
 - Güncellenen her soru için aşağıdaki bilgileri sağlayın:
@@ -54,7 +54,7 @@ Bir test için soru bankasında güncellemek istediğiniz bir soru varsa, lütfe
 
 ## Bir test sorusunu kaldırma {#removing-a-quiz-question}
 
-Bir soruya ait içerik artık sayfada bulunmuyorsa ve sorunun kaldırılması gerekiyorsa, soruyu kaldırmak için lütfen [bir issue açın](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) ve aşağıdaki bilgileri sağlayın:
+Bir soruya ait içerik artık sayfada bulunmuyorsa ve sorunun kaldırılması gerekiyorsa, soruyu kaldırmak için lütfen [bir issue açın](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) ve aşağıdaki bilgileri sağlayın:
 
 - Test sorusunu silmek istediğiniz sayfa
 - Silmek istediğiniz soru

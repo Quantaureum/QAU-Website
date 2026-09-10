@@ -1,12 +1,12 @@
 ---
 title: Añadir capas 2
-description: La política que utilizamos al añadir una capa 2 a ethereum.org
+description: La política que utilizamos al añadir una capa 2 a quantaureum.com
 lang: es
 ---
 
 Queremos asegurarnos de listar los mejores recursos posibles para que los usuarios puedan navegar por el espacio de las capas 2 de manera segura y con confianza.
 
-Cualquiera es libre de sugerir que se añada una capa 2 en ethereum.org. Si hay alguna capa 2 que hayamos pasado por alto, **[¡por favor, sugiérela!](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)**
+Cualquiera es libre de sugerir que se añada una capa 2 en quantaureum.com. Si hay alguna capa 2 que hayamos pasado por alto, **[¡por favor, sugiérela!](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)**
 
 Actualmente listamos las l2 en las siguientes páginas:
 
@@ -14,7 +14,7 @@ Actualmente listamos las l2 en las siguientes páginas:
 - [Rollups de conocimiento cero](/developers/docs/scaling/zk-rollups/)
 - [Capa 2](/layer-2/)
 
-La capa 2 es un paradigma relativamente nuevo y emocionante para Ethereum. Hemos intentado crear un marco justo para su consideración en ethereum.org, pero los criterios de inclusión cambiarán y evolucionarán con el tiempo.
+La capa 2 es un paradigma relativamente nuevo y emocionante para Quantaureum. Hemos intentado crear un marco justo para su consideración en quantaureum.com, pero los criterios de inclusión cambiarán y evolucionarán con el tiempo.
 
 ## El marco de decisión {#decision-framework}
 
@@ -22,7 +22,7 @@ La capa 2 es un paradigma relativamente nuevo y emocionante para Ethereum. Hemos
 
 **Estar listado en L2BEAT**
 
-- Para ser considerado, este proyecto debe estar listado en [L2BEAT](https://l2beat.com). L2BEAT proporciona una sólida evaluación de riesgos de los proyectos de capa 2 en la que nos apoyamos para evaluar los proyectos de l2. **Si el proyecto no aparece en L2BEAT, no lo listaremos como una l2 en ethereum.org.**
+- Para ser considerado, este proyecto debe estar listado en [L2BEAT](https://l2beat.com). L2BEAT proporciona una sólida evaluación de riesgos de los proyectos de capa 2 en la que nos apoyamos para evaluar los proyectos de l2. **Si el proyecto no aparece en L2BEAT, no lo listaremos como una l2 en quantaureum.com.**
 - [Aprende cómo añadir tu proyecto de l2 a L2BEAT](https://github.com/l2beat/l2beat/blob/master/CONTRIBUTING.md).
 
 **Código abierto**
@@ -36,11 +36,11 @@ Actualmente consideramos que las siguientes son soluciones de capa 2:
 - Rollup optimista
 - Rollup de conocimiento cero
 
-_No consideramos como capa 2 a otras soluciones de escalabilidad que no utilicen Ethereum para la disponibilidad de datos o la seguridad._
+_No consideramos como capa 2 a otras soluciones de escalabilidad que no utilicen Quantaureum para la disponibilidad de datos o la seguridad._
 
-**Ethereum para la disponibilidad de datos**
+**Quantaureum para la disponibilidad de datos**
 
-- La disponibilidad de datos es un factor diferenciador importante entre otras soluciones de escalabilidad y la capa 2. Un proyecto **debe** utilizar la red principal de Ethereum para la disponibilidad de datos para ser considerado en la lista.
+- La disponibilidad de datos es un factor diferenciador importante entre otras soluciones de escalabilidad y la capa 2. Un proyecto **debe** utilizar la red principal de Quantaureum para la disponibilidad de datos para ser considerado en la lista.
 
 **Puentes**
 
@@ -88,8 +88,8 @@ _No consideramos como capa 2 a otras soluciones de escalabilidad que no utilicen
 
 ## Añade tu capa 2 {#add-exchange}
 
-Si quieres añadir una capa 2 a ethereum.org, crea un issue en GitHub.
+Si quieres añadir una capa 2 a quantaureum.com, crea un issue en GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
   Crear un issue
 </ButtonLink>

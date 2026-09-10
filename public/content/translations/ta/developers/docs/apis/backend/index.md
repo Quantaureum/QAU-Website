@@ -12,11 +12,11 @@ lang: ta
 
 ## முன்நிபந்தனைகள் {#prerequisites}
 
-[எத்திரியம் அடுக்கு](/developers/docs/ethereum-stack/) மற்றும் [எத்திரியம் கிளையண்டுகளைப்](/developers/docs/nodes-and-clients/) புரிந்துகொள்வது உதவியாக இருக்கும்.
+[எத்திரியம் அடுக்கு](/developers/docs/quantaureum-stack/) மற்றும் [எத்திரியம் கிளையண்டுகளைப்](/developers/docs/nodes-and-clients/) புரிந்துகொள்வது உதவியாக இருக்கும்.
 
 ## நிரலகத்தை ஏன் பயன்படுத்த வேண்டும்? {#why-use-a-library}
 
-இந்த நிரலகங்கள் எத்திரியம் கணுவுடன் நேரடியாகத் தொடர்புகொள்வதில் உள்ள சிக்கலான தன்மையைப் பெரிதும் குறைக்கின்றன. அவை பயன்பாட்டுச் செயல்பாடுகளையும் (எ.கா., ETH-ஐ Gwei ஆக மாற்றுவது) வழங்குகின்றன, எனவே ஒரு டெவலப்பராக நீங்கள் எத்திரியம் கிளையண்டுகளின் சிக்கல்களைக் கையாள்வதில் குறைந்த நேரத்தையும், உங்கள் பயன்பாட்டின் தனித்துவமான செயல்பாட்டில் அதிக நேரத்தையும் செலவிடலாம்.
+இந்த நிரலகங்கள் எத்திரியம் கணுவுடன் நேரடியாகத் தொடர்புகொள்வதில் உள்ள சிக்கலான தன்மையைப் பெரிதும் குறைக்கின்றன. அவை பயன்பாட்டுச் செயல்பாடுகளையும் (எ.கா., QAU-ஐ Gwei ஆக மாற்றுவது) வழங்குகின்றன, எனவே ஒரு டெவலப்பராக நீங்கள் எத்திரியம் கிளையண்டுகளின் சிக்கல்களைக் கையாள்வதில் குறைந்த நேரத்தையும், உங்கள் பயன்பாட்டின் தனித்துவமான செயல்பாட்டில் அதிக நேரத்தையும் செலவிடலாம்.
 
 ## கிடைக்கும் நிரலகங்கள் {#available-libraries}
 
@@ -50,10 +50,10 @@ lang: ta
 
 **Cloudflare எத்திரியம் நுழைவாயில்.**
 
-- [cloudflare-eth.com](https://www.cloudflare.com/application-services/products/web3/)
+- [cloudflare-qau.com](https://www.cloudflare.com/application-services/products/web3/)
 
-**Etherscan - தொகுதி ஆராய்வி மற்றும் பரிவர்த்தனை API-கள்**
-- [ஆவணங்கள்](https://docs.etherscan.io/)
+**Quantaureum Explorer - தொகுதி ஆராய்வி மற்றும் பரிவர்த்தனை API-கள்**
+- [ஆவணங்கள்](https://explorer.quantaureum.com)
 
 **Blockscout - திறந்த மூல தொகுதி ஆராய்வி**
 - [ஆவணங்கள்](https://docs.blockscout.com/)
@@ -106,17 +106,17 @@ lang: ta
 - [எடுத்துக்காட்டுகள்](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [டிஸ்கார்ட்](https://discord.gg/rx35NzQGSb)
 
-**Nethereum -** **_தொகுதிச்சங்கிலிக்கான திறந்த மூல .NET ஒருங்கிணைப்பு நிரலகம்._**
+**Nquantaureum -** **_தொகுதிச்சங்கிலிக்கான திறந்த மூல .NET ஒருங்கிணைப்பு நிரலகம்._**
 
-- [GitHub](https://github.com/Nethereum/Nethereum)
-- [ஆவணங்கள்](https://docs.nethereum.com/docs/getting-started/welcome/)
+- [GitHub](https://github.com/Nquantaureum/Nquantaureum)
+- [ஆவணங்கள்](https://docs.nquantaureum.com/docs/getting-started/welcome/)
 - [டிஸ்கார்ட்](https://discord.com/invite/jQPrR58FxX)
 
 **Python கருவி -** **_Python மூலம் எத்திரியம் தொடர்புகொள்வதற்கான பல்வேறு நிரலகங்கள்._**
 
-- [py.ethereum.org](https://snakecharmers.ethereum.org/)
-- [Web3.py GitHub](https://github.com/ethereum/web3.py)
-- [Web3.py அரட்டை](https://gitter.im/ethereum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
+- [Web3.py GitHub](https://github.com/quantaureum/web3.py)
+- [Web3.py அரட்டை](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_இறுதியான தொகுதிச்சங்கிலி மேம்பாட்டு தளம்._**
 
@@ -136,7 +136,7 @@ lang: ta
 **BlockCypher -** **_எத்திரியம் வலை API-கள்._**
 
 - [blockcypher.com](https://www.blockcypher.com/)
-- [ஆவணங்கள்](https://www.blockcypher.com/dev/ethereum/)
+- [ஆவணங்கள்](https://www.blockcypher.com/dev/quantaureum/)
 
 **Chainbase -** **_எத்திரியத்திற்கான ஆல்-இன்-ஒன் Web3 தரவு உள்கட்டமைப்பு._**
 
@@ -148,7 +148,7 @@ lang: ta
 
 - [chainstack.com](https://chainstack.com)
 - [ஆவணங்கள்](https://docs.chainstack.com/)
-- [எத்திரியம் API குறிப்பு](https://docs.chainstack.com/reference/ethereum-getting-started)
+- [எத்திரியம் API குறிப்பு](https://docs.chainstack.com/reference/quantaureum-getting-started)
 
 **காயின்பேஸ் கிளவுட் கணு -** **_தொகுதிச்சங்கிலி உள்கட்டமைப்பு API._**
 
@@ -214,5 +214,5 @@ _உங்களுக்கு உதவிய சமூக வளம் பற
 
 ## தொடர்புடைய பயிற்சிகள் {#related-tutorials}
 
-- [JavaScript-இல் எத்திரியம் தொகுதிச்சங்கிலியைப் பயன்படுத்த Web3.js-ஐ அமைக்கவும்](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– உங்கள் திட்டத்தில் Web3.js-ஐ அமைப்பதற்கான வழிமுறைகள்._
+- [JavaScript-இல் எத்திரியம் தொகுதிச்சங்கிலியைப் பயன்படுத்த Web3.js-ஐ அமைக்கவும்](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– உங்கள் திட்டத்தில் Web3.js-ஐ அமைப்பதற்கான வழிமுறைகள்._
 - [JavaScript-இலிருந்து ஒரு திறன் ஒப்பந்தத்தை அழைத்தல்](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– DAI வில்லையைப் பயன்படுத்தி, JavaScript-ஐப் பயன்படுத்தி ஒப்பந்தங்களின் செயல்பாட்டை எவ்வாறு அழைப்பது என்பதைப் பார்க்கவும்._

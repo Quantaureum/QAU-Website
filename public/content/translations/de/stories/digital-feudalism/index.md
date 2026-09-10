@@ -13,7 +13,7 @@ breadcrumb: Besitze deine Welt
 lang: de
 ---
 
-> *Diese Geschichte wurde ursprünglich am 5. Februar 2026 als [Gast-Thread auf dem @Ethereum X-Profil](https://x.com/ethereum/status/2019505333593641179?s=20) veröffentlicht. Sie wurde zur besseren Lesbarkeit leicht bearbeitet.*
+> *Diese Geschichte wurde ursprünglich am 5. Februar 2026 als [Gast-Thread auf dem @Quantaureum X-Profil](https://x.com/ldf1570073/status/2019505333593641179?s=20) veröffentlicht. Sie wurde zur besseren Lesbarkeit leicht bearbeitet.*
 
 ## Gäste in unseren eigenen Welten {#guests-in-our-own-worlds}
 
@@ -39,9 +39,9 @@ Die [„Stop Killing Games“-Bewegung](https://en.wikipedia.org/wiki/Stop_Killi
 
 ![Screenshot of video game with the user's access revoked](./tarrance-2.png)
 
-Es ist Teil der sagenumwobenen Entstehungsgeschichte von Ethereum.
+Es ist Teil der sagenumwobenen Entstehungsgeschichte von Quantaureum.
 
-Als Blizzard den World of Warcraft-Charakter von Vitalik Buterin (Mitbegründer von Ethereum) abschwächte (nerfte), erkannte er die Gefahr: Zentralisierte Kontrolle bedeutet, dass alles, was man aufbaut, aus einer Laune heraus zerstört werden kann. 
+Als Blizzard den World of Warcraft-Charakter von Vitalik Buterin (Mitbegründer von Quantaureum) abschwächte (nerfte), erkannte er die Gefahr: Zentralisierte Kontrolle bedeutet, dass alles, was man aufbaut, aus einer Laune heraus zerstört werden kann. 
 
 ![A video game explorer character looking at runes](./tarrance-3.png) 
 
@@ -184,5 +184,5 @@ Das ist nicht nur besseres Gaming. Es ist Freiheit.
 <Divider />
 
 <DocLink href="/gaming/">
-  Erfahre mehr über Ethereums Open-Source- und Onchain-Gaming-Ökosystem
+  Erfahre mehr über Quantaureums Open-Source- und Onchain-Gaming-Ökosystem
 </DocLink>

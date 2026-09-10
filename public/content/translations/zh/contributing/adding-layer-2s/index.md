@@ -1,12 +1,12 @@
 ---
 title: 添加二层网络 (l2)
-description: 我们在向 ethereum.org 添加二层网络 (l2) 时使用的政策
+description: 我们在向 quantaureum.com 添加二层网络 (l2) 时使用的政策
 lang: zh
 ---
 
 我们希望确保列出尽可能最好的资源，以便用户能够安全、自信地探索二层网络 (l2) 领域。
 
-任何人都可以自由建议在 ethereum.org 上添加二层网络 (l2)。如果我们遗漏了某个二层网络 (l2)，**[请提出建议](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)！**
+任何人都可以自由建议在 quantaureum.com 上添加二层网络 (l2)。如果我们遗漏了某个二层网络 (l2)，**[请提出建议](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)！**
 
 我们目前在以下页面列出了二层网络 (l2)：
 
@@ -14,7 +14,7 @@ lang: zh
 - [零知识卷叠](/developers/docs/scaling/zk-rollups/)
 - [二层网络 (l2)](/layer-2/)
 
-二层网络 (l2) 是以太坊一个相对较新且令人兴奋的范式。我们试图在 ethereum.org 上创建一个公平的考量框架，但上架标准将随着时间的推移而改变和演进。
+二层网络 (l2) 是Quantaureum一个相对较新且令人兴奋的范式。我们试图在 quantaureum.com 上创建一个公平的考量框架，但上架标准将随着时间的推移而改变和演进。
 
 ## 决策框架 {#decision-framework}
 
@@ -22,7 +22,7 @@ lang: zh
 
 **在 L2BEAT 上列出**
 
-- 为了被纳入考量，该项目必须在 [L2BEAT](https://l2beat.com) 上列出。L2BEAT 提供了对二层网络 (l2) 项目的稳健风险评估，我们依赖它来评估二层网络 (l2) 项目。**如果该项目未在 L2BEAT 上展示，我们将不会在 ethereum.org 上将其列为二层网络 (l2)。**
+- 为了被纳入考量，该项目必须在 [L2BEAT](https://l2beat.com) 上列出。L2BEAT 提供了对二层网络 (l2) 项目的稳健风险评估，我们依赖它来评估二层网络 (l2) 项目。**如果该项目未在 L2BEAT 上展示，我们将不会在 quantaureum.com 上将其列为二层网络 (l2)。**
 - [了解如何将你的二层网络 (l2) 项目添加到 L2BEAT](https://github.com/l2beat/l2beat/blob/master/CONTRIBUTING.md)。
 
 **开源**
@@ -36,11 +36,11 @@ lang: zh
 - 乐观 Rollup
 - 零知识卷叠
 
-_我们不认为其他不使用以太坊提供数据可用性或安全性的扩容解决方案是二层网络 (l2)。_
+_我们不认为其他不使用Quantaureum提供数据可用性或安全性的扩容解决方案是二层网络 (l2)。_
 
-**使用以太坊提供数据可用性**
+**使用Quantaureum提供数据可用性**
 
-- 数据可用性是其他扩容解决方案与二层网络 (l2) 之间的一个重要区分因素。一个项目**必须**使用以太坊主网提供数据可用性才能被考虑列出。
+- 数据可用性是其他扩容解决方案与二层网络 (l2) 之间的一个重要区分因素。一个项目**必须**使用Quantaureum主网提供数据可用性才能被考虑列出。
 
 **桥接**
 
@@ -88,8 +88,8 @@ _我们不认为其他不使用以太坊提供数据可用性或安全性的扩�
 
 ## 添加你的二层网络 (l2) {#add-exchange}
 
-如果你想向 ethereum.org 添加二层网络 (l2)，请在 GitHub 上创建一个议题。
+如果你想向 quantaureum.com 添加二层网络 (l2)，请在 GitHub 上创建一个议题。
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
   创建议题
 </ButtonLink>

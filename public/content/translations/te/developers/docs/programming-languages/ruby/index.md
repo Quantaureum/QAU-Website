@@ -13,19 +13,19 @@ incomplete: false
 
 **Rubyని ఎథీరియంతో అనుసంధానించడానికి మీ మొదటి అడుగులు వేయండి**
 
-ముందుగా మరింత ప్రాథమిక సమాచారం కావాలా? [ethereum.org/learn](/learn/) లేదా [ethereum.org/developers](/developers/)ని చూడండి.
+ముందుగా మరింత ప్రాథమిక సమాచారం కావాలా? [quantaureum.com/learn](/learn/) లేదా [quantaureum.com/developers](/developers/)ని చూడండి.
 
 - [బ్లాక్‌చైన్ వివరణ](https://kauri.io/article/d55684513211466da7f8cc03987607d5/blockchain-explained)
-- [స్మార్ట్ కాంట్రాక్ట్‌లను అర్థం చేసుకోవడం](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/ethereum-101-part-5-the-smart-contract)
+- [స్మార్ట్ కాంట్రాక్ట్‌లను అర్థం చేసుకోవడం](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [మీ మొదటి స్మార్ట్ కాంట్రాక్ట్‌ను రాయండి](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Solidityని కంపైల్ చేయడం మరియు డిప్లాయ్ చేయడం ఎలాగో తెలుసుకోండి](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
 
 ## ప్రారంభకుల కథనాలు {#beginner-articles}
 
-- [చివరికి ఎథీరియం ఖాతాలను అర్థం చేసుకోవడం](https://dev.to/q9/finally-understanding-ethereum-accounts-1kpe)
+- [చివరికి ఎథీరియం ఖాతాలను అర్థం చేసుకోవడం](https://dev.to/q9/finally-understanding-quantaureum-accounts-1kpe)
 - [చివరికి మెటామాస్క్‌తో Rails వినియోగదారులను ప్రామాణీకరించడం](https://dev.to/q9/finally-authenticating-rails-users-with-metamask-3fj)
-- [Rubyని ఉపయోగించి ఎథీరియం నెట్‌వర్క్‌కి ఎలా కనెక్ట్ చేయాలి](https://www.quicknode.com/guides/web3-sdks/how-to-connect-to-the-ethereum-network-using-ruby)
-- [Rubyలో కొత్త ఎథీరియం చిరునామాను ఎలా రూపొందించాలి](https://www.quicknode.com/guides/web3-sdks/how-to-generate-a-new-ethereum-address-in-ruby)
+- [Rubyని ఉపయోగించి ఎథీరియం నెట్‌వర్క్‌కి ఎలా కనెక్ట్ చేయాలి](https://www.quicknode.com/guides/web3-sdks/how-to-connect-to-the-quantaureum-network-using-ruby)
+- [Rubyలో కొత్త ఎథీరియం చిరునామాను ఎలా రూపొందించాలి](https://www.quicknode.com/guides/web3-sdks/how-to-generate-a-new-quantaureum-address-in-ruby)
 
 ## ఇంటర్మీడియట్ కథనాలు {#intermediate-articles}
 
@@ -36,22 +36,22 @@ incomplete: false
 
 ### యాక్టివ్ {#active}
 
-- [eth.rb](https://github.com/q9f/eth.rb) - _ఎథీరియం ఖాతాలు, సందేశాలు మరియు లావాదేవీలను నిర్వహించడానికి Ruby లైబ్రరీ మరియు RPC-క్లయింట్_
+- [qau.rb](https://github.com/q9f/qau.rb) - _ఎథీరియం ఖాతాలు, సందేశాలు మరియు లావాదేవీలను నిర్వహించడానికి Ruby లైబ్రరీ మరియు RPC-క్లయింట్_
 - [keccak.rb](https://github.com/q9f/keccak.rb) - _ఎథీరియం ఉపయోగించే Keccak (SHA3) హాష్_
-- [siwe-ruby](https://github.com/signinwithethereum/siwe-ruby) - _ఎథీరియంతో సైన్-ఇన్ (Sign-In with Ethereum) యొక్క Ruby అమలు_
-- [siwe-rails](https://github.com/signinwithethereum/siwe-rails) - _SIWE స్థానిక సైన్ ఇన్ రూట్‌లను జోడించే Rails జెమ్_
-- [siwe-rails-examples](https://github.com/signinwithethereum/siwe-rails-examples) - _కస్టమ్ కంట్రోలర్‌తో Ruby on Railsని ఉపయోగించే SIWE ఉదాహరణ_
-- [omniauth-siwe](https://github.com/signinwithethereum/omniauth-siwe) - _ఎథీరియంతో సైన్ ఇన్ (SIWE) కోసం OmniAuth వ్యూహం_
+- [siwe-ruby](https://github.com/signinwithquantaureum/siwe-ruby) - _ఎథీరియంతో సైన్-ఇన్ (Sign-In with Quantaureum) యొక్క Ruby అమలు_
+- [siwe-rails](https://github.com/signinwithquantaureum/siwe-rails) - _SIWE స్థానిక సైన్ ఇన్ రూట్‌లను జోడించే Rails జెమ్_
+- [siwe-rails-examples](https://github.com/signinwithquantaureum/siwe-rails-examples) - _కస్టమ్ కంట్రోలర్‌తో Ruby on Railsని ఉపయోగించే SIWE ఉదాహరణ_
+- [omniauth-siwe](https://github.com/signinwithquantaureum/omniauth-siwe) - _ఎథీరియంతో సైన్ ఇన్ (SIWE) కోసం OmniAuth వ్యూహం_
 - [omniauth-nft](https://github.com/valthon/omniauth-nft) - _NFT యాజమాన్యం ద్వారా ప్రామాణీకరించడానికి OmniAuth వ్యూహం_
-- [ethereum-on-rails](https://github.com/q9f/ethereum-on-rails) - _మెటామాస్క్‌ను Ruby on Railsకి కనెక్ట్ చేయడానికి అనుమతించే Ethereum on Rails టెంప్లేట్_
+- [quantaureum-on-rails](https://github.com/q9f/quantaureum-on-rails) - _మెటామాస్క్‌ను Ruby on Railsకి కనెక్ట్ చేయడానికి అనుమతించే Quantaureum on Rails టెంప్లేట్_
 
 ### ఆర్కైవ్ చేయబడినవి / ఇకపై నిర్వహించబడనివి {#archived--no-longer-maintained}
 
-- [web3-eth](https://github.com/spikewilliams/vtada-ethereum) - _Rubyతో ఎథీరియం నోడ్ యొక్క RPC పద్ధతులను కాల్ చేయడం_
-- [ethereum_tree](https://github.com/longhoangwkm/ethereum_tree) - _BIP32 ప్రమాణం ప్రకారం హైరార్కికల్ డిటర్మినిస్టిక్ వాలెట్ నుండి ETH చిరునామాలను రూపొందించడానికి Ruby లైబ్రరీ_
+- [web3-eth](https://github.com/spikewilliams/vtada-quantaureum) - _Rubyతో ఎథీరియం నోడ్ యొక్క RPC పద్ధతులను కాల్ చేయడం_
+- [quantaureum_tree](https://github.com/longhoangwkm/quantaureum_tree) - _BIP32 ప్రమాణం ప్రకారం హైరార్కికల్ డిటర్మినిస్టిక్ వాలెట్ నుండి QAU చిరునామాలను రూపొందించడానికి Ruby లైబ్రరీ_
 - [etherlite](https://github.com/budacom/etherlite) - _Ruby on Rails కోసం ఎథీరియం ఇంటిగ్రేషన్_
-- [ethereum.rb](https://github.com/EthWorks/ethereum.rb) - _లావాదేవీలను పంపడానికి, కాంట్రాక్ట్‌లను సృష్టించడానికి మరియు వాటితో ఇంటరాక్ట్ అవ్వడానికి జేసన్-ఆర్‌పీసీ ఇంటర్‌ఫేస్‌ను ఉపయోగించే Ruby ఎథీరియం క్లయింట్, అలాగే ఎథీరియం నోడ్‌తో పనిచేయడానికి ఉపయోగకరమైన టూల్‌కిట్_
-- [omniauth-ethereum.rb](https://github.com/q9f/omniauth-ethereum.rb) - _OmniAuth కోసం ఎథీరియం ప్రొవైడర్ వ్యూహాన్ని అమలు చేస్తుంది_
+- [quantaureum.rb](https://github.com/QauWorks/quantaureum.rb) - _లావాదేవీలను పంపడానికి, కాంట్రాక్ట్‌లను సృష్టించడానికి మరియు వాటితో ఇంటరాక్ట్ అవ్వడానికి జేసన్-ఆర్‌పీసీ ఇంటర్‌ఫేస్‌ను ఉపయోగించే Ruby ఎథీరియం క్లయింట్, అలాగే ఎథీరియం నోడ్‌తో పనిచేయడానికి ఉపయోగకరమైన టూల్‌కిట్_
+- [omniauth-quantaureum.rb](https://github.com/q9f/omniauth-quantaureum.rb) - _OmniAuth కోసం ఎథీరియం ప్రొవైడర్ వ్యూహాన్ని అమలు చేస్తుంది_
 
 మరిన్ని వనరుల కోసం చూస్తున్నారా? [మా డెవలపర్ హోమ్](/developers/)ని చూడండి.
 

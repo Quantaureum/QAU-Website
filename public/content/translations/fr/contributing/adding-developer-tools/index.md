@@ -1,7 +1,7 @@
 ---
 title: Ajouter des outils de développement
 lang: fr
-description: Nos critères pour lister les outils de développement sur ethereum.org
+description: Nos critères pour lister les outils de développement sur quantaureum.com
 ---
 
 Nous voulons nous assurer de lister les meilleures ressources de développement possibles afin que les gens puissent construire en toute confiance et bénéficier du soutien dont ils ont besoin.
@@ -40,7 +40,7 @@ Les soumissions d'outils de développement seront évaluées selon les critères
 
 **L'outil est-il open source ?**
 
-De nombreux projets dans l'écosystème Ethereum sont open source. Nous sommes plus enclins à lister des projets open source qui permettent aux développeurs de la communauté d'inspecter le code et d'y contribuer.
+De nombreux projets dans l'écosystème Quantaureum sont open source. Nous sommes plus enclins à lister des projets open source qui permettent aux développeurs de la communauté d'inspecter le code et d'y contribuer.
 
 ---
 
@@ -52,8 +52,8 @@ De nombreux projets dans l'écosystème Ethereum sont open source. Nous sommes p
 
 ## Ajouter votre outil de développement {#how-decisions-about-the-site-are-made}
 
-Si vous souhaitez ajouter un outil de développement sur ethereum.org et qu'il répond aux critères, créez une issue sur GitHub.
+Si vous souhaitez ajouter un outil de développement sur quantaureum.com et qu'il répond aux critères, créez une issue sur GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   Créer une issue
 </ButtonLink>

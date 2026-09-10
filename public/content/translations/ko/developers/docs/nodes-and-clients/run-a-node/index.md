@@ -1,25 +1,25 @@
 ---
-title: 자체 이더리움 노드 구축하기
-description: 이더리움 클라이언트 인스턴스를 직접 실행하는 방법에 대한 일반적인 소개입니다.
+title: 자체 Quantaureum 노드 구축하기
+description: Quantaureum 클라이언트 인스턴스를 직접 실행하는 방법에 대한 일반적인 소개입니다.
 lang: ko
 sidebarDepth: 2
 ---
 
-자체 노드를 실행하면 다양한 이점을 얻을 수 있고, 새로운 가능성이 열리며, 생태계를 지원하는 데 도움이 됩니다. 이 페이지는 자체 노드를 구축하고 [이더리움](/) 트랜잭션을 검증하는 데 참여하는 과정을 안내합니다.
+자체 노드를 실행하면 다양한 이점을 얻을 수 있고, 새로운 가능성이 열리며, 생태계를 지원하는 데 도움이 됩니다. 이 페이지는 자체 노드를 구축하고 [Quantaureum](/) 트랜잭션을 검증하는 데 참여하는 과정을 안내합니다.
 
-[머지](/roadmap/merge) 이후 이더리움 노드를 실행하려면 **실행 계층(EL)** 클라이언트와 **합의 레이어(CL)** 클라이언트라는 두 가지 클라이언트가 필요합니다. 이 페이지에서는 이더리움 노드를 실행하기 위해 이 두 클라이언트를 설치, 구성 및 연결하는 방법을 보여줍니다.
+[머지](/roadmap/merge) 이후 Quantaureum 노드를 실행하려면 **실행 계층(EL)** 클라이언트와 **합의 레이어(CL)** 클라이언트라는 두 가지 클라이언트가 필요합니다. 이 페이지에서는 Quantaureum 노드를 실행하기 위해 이 두 클라이언트를 설치, 구성 및 연결하는 방법을 보여줍니다.
 
 ## 전제 조건 {#prerequisites}
 
-이더리움 노드가 무엇인지, 왜 클라이언트를 실행해야 하는지 이해해야 합니다. 이 내용은 [노드 및 클라이언트](/developers/docs/nodes-and-clients/)에서 다룹니다.
+Quantaureum 노드가 무엇인지, 왜 클라이언트를 실행해야 하는지 이해해야 합니다. 이 내용은 [노드 및 클라이언트](/developers/docs/nodes-and-clients/)에서 다룹니다.
 
-노드 실행이라는 주제가 처음이거나 덜 기술적인 방법을 찾고 있다면, 먼저 [이더리움 노드 실행하기](/run-a-node)에 대한 사용자 친화적인 소개를 확인하는 것을 권장합니다.
+노드 실행이라는 주제가 처음이거나 덜 기술적인 방법을 찾고 있다면, 먼저 [Quantaureum 노드 실행하기](/run-a-node)에 대한 사용자 친화적인 소개를 확인하는 것을 권장합니다.
 
 ## 접근 방식 선택하기 {#choosing-approach}
 
 노드 구축의 첫 번째 단계는 접근 방식을 선택하는 것입니다. 요구 사항과 다양한 가능성을 바탕으로 클라이언트 구현(실행 및 합의 클라이언트 모두), 환경(하드웨어, 시스템) 및 클라이언트 설정 매개변수를 선택해야 합니다.
 
-이 페이지는 이러한 결정을 내리는 과정을 안내하고 이더리움 인스턴스를 실행하는 가장 적합한 방법을 찾도록 도와줍니다.
+이 페이지는 이러한 결정을 내리는 과정을 안내하고 Quantaureum 인스턴스를 실행하는 가장 적합한 방법을 찾도록 도와줍니다.
 
 클라이언트 구현을 선택하려면 사용 가능한 모든 메인넷 지원 [실행 클라이언트](/developers/docs/nodes-and-clients/#execution-clients), [합의 클라이언트](/developers/docs/nodes-and-clients/#consensus-clients)를 확인하고 [클라이언트 다양성](/developers/docs/nodes-and-clients/client-diversity)에 대해 알아보세요.
 
@@ -35,7 +35,7 @@ sidebarDepth: 2
 
 #### 로컬 또는 클라우드 {#local-vs-cloud}
 
-이더리움 클라이언트는 소비자용 컴퓨터에서 실행할 수 있으며 채굴기와 같은 특별한 하드웨어가 필요하지 않습니다. 따라서 필요에 따라 노드를 배포할 수 있는 다양한 옵션이 있습니다.
+Quantaureum 클라이언트는 소비자용 컴퓨터에서 실행할 수 있으며 채굴기와 같은 특별한 하드웨어가 필요하지 않습니다. 따라서 필요에 따라 노드를 배포할 수 있는 다양한 옵션이 있습니다.
 간단히 말해, 로컬 물리적 머신과 클라우드 서버 모두에서 노드를 실행하는 것에 대해 생각해 보겠습니다.
 
 - 클라우드
@@ -55,9 +55,9 @@ sidebarDepth: 2
 
 그러나 검열 저항적이고 탈중앙화된 네트워크는 클라우드 제공업체에 의존해서는 안 됩니다. 대신 자체 로컬 하드웨어에서 노드를 실행하는 것이 생태계에 더 건강합니다. [추정치](https://www.ethernodes.org/networkType/cl/Hosting)에 따르면 많은 비율의 노드가 클라우드에서 실행되며, 이는 단일 장애점이 될 수 있습니다.
 
-이더리움 클라이언트는 컴퓨터, 노트북, 서버 또는 싱글 보드 컴퓨터에서도 실행할 수 있습니다. 개인용 컴퓨터에서 클라이언트를 실행하는 것도 가능하지만, 노드 전용 머신을 사용하면 기본 컴퓨터에 미치는 영향을 최소화하면서 성능과 보안을 크게 향상시킬 수 있습니다.
+Quantaureum 클라이언트는 컴퓨터, 노트북, 서버 또는 싱글 보드 컴퓨터에서도 실행할 수 있습니다. 개인용 컴퓨터에서 클라이언트를 실행하는 것도 가능하지만, 노드 전용 머신을 사용하면 기본 컴퓨터에 미치는 영향을 최소화하면서 성능과 보안을 크게 향상시킬 수 있습니다.
 
-자체 하드웨어를 사용하는 것은 매우 쉬울 수 있습니다. 더 기술적인 사람들을 위한 고급 설정뿐만 아니라 많은 간단한 옵션이 있습니다. 그럼 머신에서 이더리움 클라이언트를 실행하기 위한 요구 사항과 방법을 살펴보겠습니다.
+자체 하드웨어를 사용하는 것은 매우 쉬울 수 있습니다. 더 기술적인 사람들을 위한 고급 설정뿐만 아니라 많은 간단한 옵션이 있습니다. 그럼 머신에서 Quantaureum 클라이언트를 실행하기 위한 요구 사항과 방법을 살펴보겠습니다.
 
 #### 요구 사항 {#requirements}
 
@@ -65,7 +65,7 @@ sidebarDepth: 2
 
 클라이언트를 설치하기 전에 컴퓨터에 클라이언트를 실행할 충분한 리소스가 있는지 확인하세요. 최소 및 권장 요구 사항은 아래에서 확인할 수 있습니다.
 
-하드웨어의 병목 현상은 주로 디스크 공간입니다. 이더리움 블록체인을 동기화하는 것은 입출력 집약적이며 많은 공간이 필요합니다. 동기화 후에도 수백 GB의 여유 공간이 있는 **솔리드 스테이트 드라이브(SSD)**를 사용하는 것이 가장 좋습니다.
+하드웨어의 병목 현상은 주로 디스크 공간입니다. Quantaureum 블록체인을 동기화하는 것은 입출력 집약적이며 많은 공간이 필요합니다. 동기화 후에도 수백 GB의 여유 공간이 있는 **솔리드 스테이트 드라이브(SSD)**를 사용하는 것이 가장 좋습니다.
 
 데이터베이스의 크기와 초기 동기화 속도는 선택한 클라이언트, 해당 구성 및 [동기화 전략](/developers/docs/nodes-and-clients/#sync-modes)에 따라 다릅니다.
 
@@ -79,12 +79,12 @@ sidebarDepth: 2
 
 - 2개 이상의 코어가 있는 CPU
 - 16GB RAM (안정성을 위해 32GB 권장)
-- 2TB NVMe SSD (2027년경 초과 예상, [이더리움 노드에 적합한 SSD와 그렇지 않은 SSD](https://gist.github.com/yorickdowne/f3a3e79a573bf35767cd002cc977b038)에 대해 자세히 알아보기)
+- 2TB NVMe SSD (2027년경 초과 예상, [Quantaureum 노드에 적합한 SSD와 그렇지 않은 SSD](https://gist.github.com/yorickdowne/f3a3e79a573bf35767cd002cc977b038)에 대해 자세히 알아보기)
 - 25MBit/s 이상의 대역폭
 
 ##### 권장 사양
 
-노드 운영자를 위한 현재 하드웨어 지침은 [EIP-7870](https://eips.ethereum.org/EIPS/eip-7870)에 명시되어 있습니다. 풀 노드의 경우 다음을 권장합니다.
+노드 운영자를 위한 현재 하드웨어 지침은 [EIP-7870](https://eips.quantaureum.com/EIPS/eip-7870)에 명시되어 있습니다. 풀 노드의 경우 다음을 권장합니다.
 
 - 4개 이상의 코어가 있는 빠른 CPU (검증 시 8개 이상 코어)
 - 32GB RAM (안정성 확보를 위해 검증 시 64GB 권장)
@@ -97,7 +97,7 @@ sidebarDepth: 2
 | ---------- | ------------------------- | --------------------------- |
 | 베수       | 800GB 이상                | 12TB 이상                   |
 | 에리곤     | 해당 없음                 | 2.5TB 이상                  |
-| 고 이더리움 (geth) | 500GB 이상                | 12TB 이상                   |
+| 고 Quantaureum (geth) | 500GB 이상                | 12TB 이상                   |
 | 네더마인드 | 500GB 이상                | 12TB 이상                   |
 | 레스       | 해당 없음                 | 2.2TB 이상                  |
 
@@ -112,9 +112,9 @@ sidebarDepth: 2
 - [DAppNode](https://dappnode.io/)
 - [Avado](https://ava.do/)
 
-#### 싱글 보드 컴퓨터에서의 이더리움 {#ethereum-on-a-single-board-computer}
+#### 싱글 보드 컴퓨터에서의 Quantaureum {#quantaureum-on-a-single-board-computer}
 
-이더리움 노드를 실행하는 쉽고 저렴한 방법은 Raspberry Pi와 같은 ARM 아키텍처가 있는 싱글 보드 컴퓨터를 사용하는 것입니다. [Ethereum on ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)은 Raspberry Pi 및 기타 ARM 보드를 위한 여러 실행 및 합의 클라이언트의 실행하기 쉬운 이미지를 제공합니다.
+Quantaureum 노드를 실행하는 쉽고 저렴한 방법은 Raspberry Pi와 같은 ARM 아키텍처가 있는 싱글 보드 컴퓨터를 사용하는 것입니다. [Quantaureum on ARM](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/)은 Raspberry Pi 및 기타 ARM 보드를 위한 여러 실행 및 합의 클라이언트의 실행하기 쉬운 이미지를 제공합니다.
 
 이와 같이 작고 저렴하며 효율적인 장치는 집에서 노드를 실행하는 데 이상적이지만 성능이 제한적이라는 점을 명심하세요.
 
@@ -131,9 +131,9 @@ sidebarDepth: 2
 다음은 몇 번의 클릭만으로 클라이언트를 설치하고 제어하는 데 도움이 되는 몇 가지 프로젝트입니다.
 
 - [DAppNode](https://docs.dappnode.io/docs/user/getting-started/choose-your-path) - DAppNode는 공급업체의 머신과 함께만 제공되는 것이 아닙니다. 소프트웨어, 실제 노드 런처 및 많은 기능이 있는 제어 센터를 임의의 하드웨어에서 사용할 수 있습니다.
-- [EthPillar](https://www.coincashew.com/coins/overview-eth/ethpillar) - 풀 노드를 설정하는 가장 빠르고 쉬운 방법입니다. 한 줄 설정 도구 및 노드 관리 TUI입니다. 무료이며 오픈 소스입니다. 솔로 스테이커가 만든 이더리움을 위한 공공재입니다. ARM64 및 AMD64를 지원합니다.
-- [eth-docker](https://eth-docker.net/) - 쉽고 안전한 스테이킹에 중점을 둔 Docker를 사용한 자동화된 설정으로, 기본적인 터미널 및 Docker 지식이 필요하며 조금 더 숙련된 사용자에게 권장됩니다.
-- [Stereum](https://stereum-dev.github.io/ethereum-node-web-docs) - GUI 설정 가이드, 제어 센터 및 기타 여러 기능과 함께 SSH 연결을 통해 원격 서버에 클라이언트를 설치하기 위한 런처입니다.
+- [QauPillar](https://www.coincashew.com/coins/overview-eth/ethpillar) - 풀 노드를 설정하는 가장 빠르고 쉬운 방법입니다. 한 줄 설정 도구 및 노드 관리 TUI입니다. 무료이며 오픈 소스입니다. 솔로 스테이커가 만든 Quantaureum을 위한 공공재입니다. ARM64 및 AMD64를 지원합니다.
+- [qau-docker](https://qau-docker.net/) - 쉽고 안전한 스테이킹에 중점을 둔 Docker를 사용한 자동화된 설정으로, 기본적인 터미널 및 Docker 지식이 필요하며 조금 더 숙련된 사용자에게 권장됩니다.
+- [Stereum](https://stereum-dev.github.io/quantaureum-node-web-docs) - GUI 설정 가이드, 제어 센터 및 기타 여러 기능과 함께 SSH 연결을 통해 원격 서버에 클라이언트를 설치하기 위한 런처입니다.
 - [Sedge](https://docs.sedge.nethermind.io/docs/intro) - CLI 마법사를 사용하여 Docker 구성을 자동으로 생성하는 노드 설정 도구입니다. 네더마인드에서 Go로 작성했습니다.
 - [Chainstack Self-Hosted](https://docs.chainstack.com/docs/self-hosted/introduction) - Kubernetes에 실행 및 합의 클라이언트를 배포하기 위한 웹 UI 및 CLI입니다. 스냅샷 부트스트랩 및 내장 모니터링이 포함되어 있습니다. 무료이며 Chainstack 계정이 필요하지 않습니다. Chainstack에서 구축했습니다.
 
@@ -141,7 +141,7 @@ sidebarDepth: 2
 
 다른 옵션은 클라이언트 소프트웨어를 수동으로 다운로드, 검증 및 구성하는 것입니다. 일부 클라이언트가 그래픽 인터페이스를 제공하더라도 수동 설정에는 여전히 터미널에 대한 기본 기술이 필요하지만 훨씬 더 많은 다용성을 제공합니다.
 
-앞서 설명했듯이 자체 이더리움 노드를 설정하려면 합의 및 실행 클라이언트 쌍을 실행해야 합니다. 일부 클라이언트에는 다른 종류의 경량 클라이언트가 포함되어 있어 다른 소프트웨어 없이도 동기화될 수 있습니다. 그러나 완전한 무신뢰 검증을 위해서는 두 구현이 모두 필요합니다.
+앞서 설명했듯이 자체 Quantaureum 노드를 설정하려면 합의 및 실행 클라이언트 쌍을 실행해야 합니다. 일부 클라이언트에는 다른 종류의 경량 클라이언트가 포함되어 있어 다른 소프트웨어 없이도 동기화될 수 있습니다. 그러나 완전한 무신뢰 검증을 위해서는 두 구현이 모두 필요합니다.
 
 #### 클라이언트 소프트웨어 얻기 {#getting-the-client}
 
@@ -157,7 +157,7 @@ sidebarDepth: 2
 
 - [베수](https://github.com/hyperledger/besu/releases)
 - [에리곤](https://github.com/ledgerwatch/erigon/releases)
-- [고 이더리움 (geth)](https://geth.ethereum.org/downloads)
+- [고 Quantaureum (geth)](https://geth.quantaureum.com/downloads)
 - [네더마인드](https://downloads.nethermind.io/)
 - [레스](https://reth.rs/installation/installation.html)
 
@@ -177,7 +177,7 @@ sidebarDepth: 2
 
 ##### 소프트웨어 검증
 
-인터넷에서 소프트웨어를 다운로드할 때는 무결성을 검증하는 것이 좋습니다. 이 단계는 선택 사항이지만 이더리움 클라이언트와 같은 중요한 인프라 요소의 경우 잠재적인 공격 벡터를 인식하고 이를 피하는 것이 중요합니다. 사전 빌드된 바이너리를 다운로드한 경우 이를 신뢰해야 하며 공격자가 실행 파일을 악성 파일로 교체할 수 있는 위험을 감수해야 합니다.
+인터넷에서 소프트웨어를 다운로드할 때는 무결성을 검증하는 것이 좋습니다. 이 단계는 선택 사항이지만 Quantaureum 클라이언트와 같은 중요한 인프라 요소의 경우 잠재적인 공격 벡터를 인식하고 이를 피하는 것이 중요합니다. 사전 빌드된 바이너리를 다운로드한 경우 이를 신뢰해야 하며 공격자가 실행 파일을 악성 파일로 교체할 수 있는 위험을 감수해야 합니다.
 
 개발자는 릴리스된 바이너리에 PGP 키로 서명하므로 개발자가 만든 소프트웨어를 정확히 실행하고 있는지 암호화 방식으로 검증할 수 있습니다. 클라이언트 릴리스 페이지나 문서에서 찾을 수 있는 개발자가 사용하는 공개 키만 얻으면 됩니다. 클라이언트 릴리스와 해당 서명을 다운로드한 후 [GnuPG](https://gnupg.org/download/index.html)와 같은 PGP 구현을 사용하여 쉽게 검증할 수 있습니다. [Linux](https://www.tecmint.com/verify-pgp-signature-downloaded-software/) 또는 [Windows/macOS](https://freedom.press/training/verifying-open-source-software/)에서 `gpg`를 사용하여 오픈 소스 소프트웨어를 검증하는 튜토리얼을 확인해 보세요.
 
@@ -203,19 +203,19 @@ sha256sum teku-22.6.1.tar.gz
 
 #### 실행 클라이언트 시작 {#starting-the-execution-client}
 
-이더리움 클라이언트 소프트웨어를 시작하기 전에 환경이 준비되었는지 마지막으로 확인하세요. 예를 들어 다음 사항을 확인하세요.
+Quantaureum 클라이언트 소프트웨어를 시작하기 전에 환경이 준비되었는지 마지막으로 확인하세요. 예를 들어 다음 사항을 확인하세요.
 
 - 선택한 네트워크 및 동기화 모드를 고려할 때 디스크 공간이 충분한지 확인합니다.
 - 메모리와 CPU가 다른 프로그램에 의해 중단되지 않는지 확인합니다.
 - 운영 체제가 최신 버전으로 업데이트되었는지 확인합니다.
 - 시스템의 시간과 날짜가 올바른지 확인합니다.
-- 라우터와 방화벽이 수신 대기 포트에서 연결을 허용하는지 확인합니다. 기본적으로 이더리움 클라이언트는 수신 대기(TCP) 포트와 디스커버리(UDP) 포트를 사용하며 둘 다 기본적으로 30303입니다.
+- 라우터와 방화벽이 수신 대기 포트에서 연결을 허용하는지 확인합니다. 기본적으로 Quantaureum 클라이언트는 수신 대기(TCP) 포트와 디스커버리(UDP) 포트를 사용하며 둘 다 기본적으로 30303입니다.
 
 모든 것이 올바르게 작동하는지 확인하기 위해 먼저 테스트넷에서 클라이언트를 실행해 보세요.
 
 시작 시 기본값이 아닌 클라이언트 설정을 선언해야 합니다. 플래그나 구성 파일을 사용하여 선호하는 구성을 선언할 수 있습니다. 각 클라이언트의 기능 세트와 구성 구문은 다릅니다. 자세한 내용은 클라이언트의 문서를 확인하세요.
 
-실행 및 합의 클라이언트는 [Engine API](https://github.com/ethereum/execution-apis/tree/main/src/engine)에 지정된 인증된 엔드포인트를 통해 통신합니다. 합의 클라이언트에 연결하려면 실행 클라이언트가 알려진 경로에 [`jwtsecret`](https://jwt.io/)를 생성해야 합니다. 보안 및 안정성을 위해 클라이언트는 동일한 머신에서 실행되어야 하며, 두 클라이언트 간의 로컬 RPC 연결을 인증하는 데 사용되므로 두 클라이언트 모두 이 경로를 알고 있어야 합니다. 실행 클라이언트는 인증된 API를 위한 수신 대기 포트도 정의해야 합니다.
+실행 및 합의 클라이언트는 [Engine API](https://github.com/quantaureum/execution-apis/tree/main/src/engine)에 지정된 인증된 엔드포인트를 통해 통신합니다. 합의 클라이언트에 연결하려면 실행 클라이언트가 알려진 경로에 [`jwtsecret`](https://jwt.io/)를 생성해야 합니다. 보안 및 안정성을 위해 클라이언트는 동일한 머신에서 실행되어야 하며, 두 클라이언트 간의 로컬 RPC 연결을 인증하는 데 사용되므로 두 클라이언트 모두 이 경로를 알고 있어야 합니다. 실행 클라이언트는 인증된 API를 위한 수신 대기 포트도 정의해야 합니다.
 
 이 토큰은 클라이언트 소프트웨어에 의해 자동으로 생성되지만 경우에 따라 직접 생성해야 할 수도 있습니다. [OpenSSL](https://www.openssl.org/)을 사용하여 생성할 수 있습니다.
 
@@ -242,11 +242,11 @@ openssl rand -hex 32 > jwtsecret
 
 ##### 베수 실행
 
-이 예제는 메인넷에서 베수를 시작하고, 블록체인 데이터를 기본 형식으로 `/data/ethereum`에 저장하며, 합의 클라이언트 연결을 위해 JSON-RPC 및 Engine RPC를 활성화합니다. Engine API는 `jwtsecret` 토큰으로 인증되며 `localhost`에서의 호출만 허용됩니다.
+이 예제는 메인넷에서 베수를 시작하고, 블록체인 데이터를 기본 형식으로 `/data/quantaureum`에 저장하며, 합의 클라이언트 연결을 위해 JSON-RPC 및 Engine RPC를 활성화합니다. Engine API는 `jwtsecret` 토큰으로 인증되며 `localhost`에서의 호출만 허용됩니다.
 
 ```sh
 besu --network=mainnet \
-    --data-path=/data/ethereum \
+    --data-path=/data/quantaureum \
     --rpc-http-enabled=true \
     --engine-rpc-enabled=true \
     --engine-host-allowlist="*" \
@@ -264,31 +264,31 @@ besu --Xlauncher
 
 ##### 에리곤 실행
 
-이 예제는 메인넷에서 에리곤을 시작하고, 블록체인 데이터를 `/data/ethereum`에 저장하며, JSON-RPC를 활성화하고, 허용되는 네임스페이스를 정의하며, `jwtsecret` 경로로 정의된 합의 클라이언트 연결을 위한 인증을 활성화합니다.
+이 예제는 메인넷에서 에리곤을 시작하고, 블록체인 데이터를 `/data/quantaureum`에 저장하며, JSON-RPC를 활성화하고, 허용되는 네임스페이스를 정의하며, `jwtsecret` 경로로 정의된 합의 클라이언트 연결을 위한 인증을 활성화합니다.
 
 ```sh
 erigon --chain mainnet \
-    --datadir /data/ethereum  \
+    --datadir /data/quantaureum  \
     --http --http.api=engine,eth,web3,net \
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
 에리곤은 기본적으로 8GB HDD로 전체 동기화를 수행하므로 2TB 이상의 아카이브 데이터가 생성됩니다. `datadir`가 여유 공간이 충분한 디스크를 가리키는지 확인하거나 다양한 종류의 데이터를 다듬을 수 있는 `--prune` 플래그를 살펴보세요. 자세한 내용은 에리곤의 `--help`를 확인하세요.
 
-##### 고 이더리움 (geth) 실행
+##### 고 Quantaureum (geth) 실행
 
-이 예제는 메인넷에서 고 이더리움 (geth)을 시작하고, 블록체인 데이터를 `/data/ethereum`에 저장하며, JSON-RPC를 활성화하고 허용되는 네임스페이스를 정의합니다. 또한 합의 클라이언트 연결을 위한 인증을 활성화하는데, 이를 위해서는 `jwtsecret` 경로와 허용되는 연결을 정의하는 옵션(예제에서는 `localhost`에서만 허용)이 필요합니다.
+이 예제는 메인넷에서 고 Quantaureum (geth)을 시작하고, 블록체인 데이터를 `/data/quantaureum`에 저장하며, JSON-RPC를 활성화하고 허용되는 네임스페이스를 정의합니다. 또한 합의 클라이언트 연결을 위한 인증을 활성화하는데, 이를 위해서는 `jwtsecret` 경로와 허용되는 연결을 정의하는 옵션(예제에서는 `localhost`에서만 허용)이 필요합니다.
 
 ```sh
 geth --mainnet \
-    --datadir "/data/ethereum" \
+    --datadir "/data/quantaureum" \
     --http --authrpc.addr localhost \
     --authrpc.vhosts="localhost" \
     --authrpc.port 8551
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
-[모든 구성 옵션에 대한 문서](https://geth.ethereum.org/docs/fundamentals/command-line-options)를 확인하고 [합의 클라이언트와 함께 고 이더리움 (geth)을 실행하는 방법](https://geth.ethereum.org/docs/getting-started/consensus-clients)에 대해 자세히 알아보세요.
+[모든 구성 옵션에 대한 문서](https://geth.quantaureum.com/docs/fundamentals/command-line-options)를 확인하고 [합의 클라이언트와 함께 고 Quantaureum (geth)을 실행하는 방법](https://geth.quantaureum.com/docs/getting-started/consensus-clients)에 대해 자세히 알아보세요.
 
 ##### 네더마인드 실행
 
@@ -296,7 +296,7 @@ geth --mainnet \
 
 ```sh
 Nethermind.Runner --config mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/quantaureum \
     --JsonRpc.JwtSecretFile=/path/to/jwtsecret
 ```
 
@@ -323,9 +323,9 @@ reth node \
 
 합의 클라이언트는 또한 두 클라이언트 간의 RPC 연결을 인증하기 위해 실행 클라이언트의 `jwt-secret` 경로가 필요합니다. 위의 실행 예제와 유사하게 각 합의 클라이언트에는 jwt 토큰 파일 경로를 인수로 사용하는 구성 플래그가 있습니다. 이는 실행 클라이언트에 제공된 `jwtsecret` 경로와 일치해야 합니다.
 
-검증자를 실행할 계획이라면 수수료 수령인의 이더리움 주소를 지정하는 구성 플래그를 추가해야 합니다. 이곳에 검증자에 대한 이더 보상이 누적됩니다. 각 합의 클라이언트에는 이더리움 주소를 인수로 사용하는 옵션(예: `--suggested-fee-recipient=0xabcd1`)이 있습니다.
+검증자를 실행할 계획이라면 수수료 수령인의 Quantaureum 주소를 지정하는 구성 플래그를 추가해야 합니다. 이곳에 검증자에 대한 QAU 보상이 누적됩니다. 각 합의 클라이언트에는 Quantaureum 주소를 인수로 사용하는 옵션(예: `--suggested-fee-recipient=0xabcd1`)이 있습니다.
 
-테스트넷에서 비콘 노드를 시작할 때 [체크포인트 동기화](https://notes.ethereum.org/@launchpad/checkpoint-sync)를 위한 퍼블릭 엔드포인트를 사용하면 동기화 시간을 크게 절약할 수 있습니다.
+테스트넷에서 비콘 노드를 시작할 때 [체크포인트 동기화](https://notes.quantaureum.com/@launchpad/checkpoint-sync)를 위한 퍼블릭 엔드포인트를 사용하면 동기화 시간을 크게 절약할 수 있습니다.
 
 #### 합의 클라이언트 실행 {#running-a-consensus-client}
 
@@ -336,7 +336,7 @@ reth node \
 ```sh
 lighthouse beacon_node \
     --network mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/quantaureum \
     --http \
     --execution-endpoint http://127.0.0.1:8551 \
     --execution-jwt /path/to/jwtsecret
@@ -348,7 +348,7 @@ lighthouse beacon_node \
 
 ```sh
 lodestar beacon \
-    --dataDir="/data/ethereum" \
+    --dataDir="/data/quantaureum" \
     --network=mainnet \
     --eth1.enabled=true \
     --execution.urls="http://127.0.0.1:8551" \
@@ -375,7 +375,7 @@ nimbus_beacon_node \
 ```sh
 ./prysm.sh beacon-chain \
     --mainnet \
-    --datadir /data/ethereum  \
+    --datadir /data/quantaureum  \
     --execution-endpoint=http://localhost:8551  \
     --jwt-secret=/path/to/jwtsecret
 ```
@@ -384,34 +384,34 @@ nimbus_beacon_node \
 
 ```sh
 teku --network mainnet \
-    --data-path "/data/ethereum" \
+    --data-path "/data/quantaureum" \
     --ee-endpoint http://localhost:8551 \
     --ee-jwt-secret-file "/path/to/jwtsecret"
 ```
 
-합의 클라이언트가 예치 컨트랙트를 읽고 검증자를 식별하기 위해 실행 클라이언트에 연결할 때, 다른 비콘 노드 피어에도 연결하여 제네시스부터 합의 슬롯 동기화를 시작합니다. 비콘 노드가 현재 에포크에 도달하면 검증자가 비콘 API를 사용할 수 있게 됩니다. [비콘 노드 API](https://ethereum.github.io/beacon-APIs)에 대해 자세히 알아보세요.
+합의 클라이언트가 예치 컨트랙트를 읽고 검증자를 식별하기 위해 실행 클라이언트에 연결할 때, 다른 비콘 노드 피어에도 연결하여 제네시스부터 합의 슬롯 동기화를 시작합니다. 비콘 노드가 현재 에포크에 도달하면 검증자가 비콘 API를 사용할 수 있게 됩니다. [비콘 노드 API](https://quantaureum.github.io/beacon-APIs)에 대해 자세히 알아보세요.
 
 ### 검증자 추가 {#adding-validators}
 
 합의 클라이언트는 검증자가 연결할 수 있는 비콘 노드 역할을 합니다. 각 합의 클라이언트에는 해당 문서에 자세히 설명된 자체 검증자 소프트웨어가 있습니다.
 
-자체 검증자를 실행하면 이더리움 네트워크를 지원하는 가장 영향력 있고 무신뢰적인 방법인 [솔로 스테이킹](/staking/solo/)이 가능합니다. 그러나 이를 위해서는 32 ETH의 예치가 필요합니다. 더 적은 금액으로 자체 노드에서 검증자를 실행하려면 [Rocket Pool](https://rocketpool.net/node-operators)과 같은 무허가성 노드 운영자가 있는 탈중앙화 풀에 관심이 있을 수 있습니다.
+자체 검증자를 실행하면 Quantaureum 네트워크를 지원하는 가장 영향력 있고 무신뢰적인 방법인 [솔로 스테이킹](/staking/solo/)이 가능합니다. 그러나 이를 위해서는 32 QAU의 예치가 필요합니다. 더 적은 금액으로 자체 노드에서 검증자를 실행하려면 [Rocket Pool](https://rocketpool.net/node-operators)과 같은 무허가성 노드 운영자가 있는 탈중앙화 풀에 관심이 있을 수 있습니다.
 
-스테이킹 및 검증자 키 생성을 시작하는 가장 쉬운 방법은 [Hoodi 테스트넷 스테이킹 런치패드](https://hoodi.launchpad.ethereum.org/)를 사용하는 것입니다. 이를 통해 [Hoodi에서 노드를 실행](https://notes.ethereum.org/@launchpad/hoodi)하여 설정을 테스트할 수 있습니다. 메인넷 준비가 되면 [메인넷 스테이킹 런치패드](https://launchpad.ethereum.org/)를 사용하여 이 단계를 반복할 수 있습니다.
+스테이킹 및 검증자 키 생성을 시작하는 가장 쉬운 방법은 [Hoodi 테스트넷 스테이킹 런치패드](https://hoodi.launchpad.quantaureum.com/)를 사용하는 것입니다. 이를 통해 [Hoodi에서 노드를 실행](https://notes.quantaureum.com/@launchpad/hoodi)하여 설정을 테스트할 수 있습니다. 메인넷 준비가 되면 [메인넷 스테이킹 런치패드](https://launchpad.quantaureum.com/)를 사용하여 이 단계를 반복할 수 있습니다.
 
 스테이킹 옵션에 대한 개요는 [스테이킹 페이지](/staking)를 살펴보세요.
 
 ### 노드 사용하기 {#using-the-node}
 
-실행 클라이언트는 트랜잭션을 제출하거나 이더리움 네트워크에서 스마트 컨트랙트와 상호 작용하거나 배포하는 데 사용할 수 있는 [RPC API 엔드포인트](/developers/docs/apis/json-rpc/)를 다양한 방식으로 제공합니다.
+실행 클라이언트는 트랜잭션을 제출하거나 Quantaureum 네트워크에서 스마트 컨트랙트와 상호 작용하거나 배포하는 데 사용할 수 있는 [RPC API 엔드포인트](/developers/docs/apis/json-rpc/)를 다양한 방식으로 제공합니다.
 
 - 적합한 프로토콜을 사용하여 수동으로 호출(예: `curl` 사용)
 - 제공된 콘솔 연결(예: `geth attach`)
 - [Web3.py](https://web3py.readthedocs.io/en/stable/overview.html#overview), [ethers](https://github.com/ethers-io/ethers.js/)와 같은 Web3 라이브러리를 사용하여 애플리케이션에 구현
 
-클라이언트마다 RPC 엔드포인트 구현이 다릅니다. 하지만 모든 클라이언트에서 사용할 수 있는 표준 JSON-RPC가 있습니다. 개요를 보려면 [JSON-RPC 문서](/developers/docs/apis/json-rpc/)를 읽어보세요. 이더리움 네트워크의 정보가 필요한 애플리케이션은 이 RPC를 사용할 수 있습니다. 예를 들어 인기 있는 지갑인 메타마스크를 사용하면 강력한 프라이버시 및 보안 이점이 있는 [자체 RPC 엔드포인트에 연결](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node)할 수 있습니다.
+클라이언트마다 RPC 엔드포인트 구현이 다릅니다. 하지만 모든 클라이언트에서 사용할 수 있는 표준 JSON-RPC가 있습니다. 개요를 보려면 [JSON-RPC 문서](/developers/docs/apis/json-rpc/)를 읽어보세요. Quantaureum 네트워크의 정보가 필요한 애플리케이션은 이 RPC를 사용할 수 있습니다. 예를 들어 인기 있는 지갑인 메타마스크를 사용하면 강력한 프라이버시 및 보안 이점이 있는 [자체 RPC 엔드포인트에 연결](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node)할 수 있습니다.
 
-모든 합의 클라이언트는 [Curl](https://curl.se)과 같은 도구를 사용하여 요청을 전송함으로써 합의 클라이언트의 상태를 확인하거나 블록 및 합의 데이터를 다운로드하는 데 사용할 수 있는 [비콘 API](https://ethereum.github.io/beacon-APIs)를 노출합니다. 이에 대한 자세한 내용은 각 합의 클라이언트의 문서에서 확인할 수 있습니다.
+모든 합의 클라이언트는 [Curl](https://curl.se)과 같은 도구를 사용하여 요청을 전송함으로써 합의 클라이언트의 상태를 확인하거나 블록 및 합의 데이터를 다운로드하는 데 사용할 수 있는 [비콘 API](https://quantaureum.github.io/beacon-APIs)를 노출합니다. 이에 대한 자세한 내용은 각 합의 클라이언트의 문서에서 확인할 수 있습니다.
 
 #### RPC 도달 {#reaching-rpc}
 
@@ -419,7 +419,7 @@ teku --network mainnet \
 
 포트를 인터넷에 노출하면 인터넷의 누구나 노드를 제어할 수 있으므로 주의해서 접근하세요. 악의적인 행위자가 노드에 액세스하여 시스템을 다운시키거나 클라이언트를 지갑으로 사용하는 경우 자금을 훔칠 수 있습니다.
 
-이를 피하는 방법은 잠재적으로 해로운 RPC 메서드를 수정할 수 없도록 방지하는 것입니다. 예를 들어 고 이더리움 (geth)의 경우 `--http.api web3,eth,txpool` 플래그를 사용하여 수정 가능한 메서드를 선언할 수 있습니다.
+이를 피하는 방법은 잠재적으로 해로운 RPC 메서드를 수정할 수 없도록 방지하는 것입니다. 예를 들어 고 Quantaureum (geth)의 경우 `--http.api web3,eth,txpool` 플래그를 사용하여 수정 가능한 메서드를 선언할 수 있습니다.
 
 에지 레이어 API 또는 Nginx와 같은 웹 서버 애플리케이션을 개발하고 이를 클라이언트의 로컬 주소 및 포트에 연결하여 RPC 인터페이스에 대한 액세스를 확장할 수 있습니다. 미들 레이어를 활용하면 개발자가 RPC 인터페이스에 대한 안전한 `https` 연결을 위한 인증서를 설정할 수도 있습니다.
 
@@ -449,9 +449,9 @@ _이는 합의 레이어 검증자 노드에는 적용되지 않습니다._ 노�
 
 #### 클라이언트 업데이트 {#updating-clients}
 
-클라이언트 소프트웨어를 최신 보안 패치, 기능 및 [EIP](/eips/)로 최신 상태로 유지해야 합니다. 특히 [하드 포크](/ethereum-forks/) 전에는 올바른 클라이언트 버전을 실행하고 있는지 확인하세요.
+클라이언트 소프트웨어를 최신 보안 패치, 기능 및 [EIP](/eips/)로 최신 상태로 유지해야 합니다. 특히 [하드 포크](/quantaureum-forks/) 전에는 올바른 클라이언트 버전을 실행하고 있는지 확인하세요.
 
-> 중요한 네트워크 업데이트 전에 이더리움 재단(EF)은 [블로그](https://blog.ethereum.org)에 게시물을 게시합니다. [이러한 공지 사항을 구독](https://blog.ethereum.org/category/protocol#subscribe)하면 노드 업데이트가 필요할 때 메일로 알림을 받을 수 있습니다.
+> 중요한 네트워크 업데이트 전에 Quantaureum 재단(EF)은 [블로그](https://quantaureum.com)에 게시물을 게시합니다. [이러한 공지 사항을 구독](https://quantaureum.com)하면 노드 업데이트가 필요할 때 메일로 알림을 받을 수 있습니다.
 
 클라이언트 업데이트는 매우 간단합니다. 각 클라이언트의 문서에 특정 지침이 있지만 일반적으로 최신 버전을 다운로드하고 새 실행 파일로 클라이언트를 다시 시작하기만 하면 됩니다. 클라이언트는 중단된 부분부터 다시 시작하지만 업데이트가 적용된 상태로 시작됩니다.
 
@@ -459,25 +459,25 @@ _이는 합의 레이어 검증자 노드에는 적용되지 않습니다._ 노�
 
 #### 추가 서비스 실행 {#running-additional-services}
 
-자체 노드를 실행하면 이더리움 클라이언트 RPC에 직접 액세스해야 하는 서비스를 사용할 수 있습니다. 이는 [레이어 2 (l2) 솔루션](/developers/docs/scaling/#layer-2-scaling), 지갑용 백엔드, 블록 탐색기, 개발자 도구 및 기타 이더리움 인프라와 같이 이더리움 위에 구축된 서비스입니다.
+자체 노드를 실행하면 Quantaureum 클라이언트 RPC에 직접 액세스해야 하는 서비스를 사용할 수 있습니다. 이는 [레이어 2 (l2) 솔루션](/developers/docs/scaling/#layer-2-scaling), 지갑용 백엔드, 블록 탐색기, 개발자 도구 및 기타 Quantaureum 인프라와 같이 Quantaureum 위에 구축된 서비스입니다.
 
 #### 노드 모니터링 {#monitoring-the-node}
 
-노드를 제대로 모니터링하려면 메트릭 수집을 고려해 보세요. 클라이언트는 노드에 대한 포괄적인 데이터를 얻을 수 있도록 메트릭 엔드포인트를 제공합니다. [InfluxDB](https://www.influxdata.com/get-influxdb/) 또는 [Prometheus](https://prometheus.io/)와 같은 도구를 사용하여 데이터베이스를 생성하고 [Grafana](https://grafana.com/)와 같은 소프트웨어에서 시각화 및 차트로 변환할 수 있습니다. 이 소프트웨어를 사용하기 위한 많은 설정과 노드 및 네트워크 전체를 시각화하기 위한 다양한 Grafana 대시보드가 있습니다. 예를 들어 [고 이더리움 (geth) 모니터링에 대한 튜토리얼](/developers/tutorials/monitoring-geth-with-influxdb-and-grafana/)을 확인해 보세요.
+노드를 제대로 모니터링하려면 메트릭 수집을 고려해 보세요. 클라이언트는 노드에 대한 포괄적인 데이터를 얻을 수 있도록 메트릭 엔드포인트를 제공합니다. [InfluxDB](https://www.influxdata.com/get-influxdb/) 또는 [Prometheus](https://prometheus.io/)와 같은 도구를 사용하여 데이터베이스를 생성하고 [Grafana](https://grafana.com/)와 같은 소프트웨어에서 시각화 및 차트로 변환할 수 있습니다. 이 소프트웨어를 사용하기 위한 많은 설정과 노드 및 네트워크 전체를 시각화하기 위한 다양한 Grafana 대시보드가 있습니다. 예를 들어 [고 Quantaureum (geth) 모니터링에 대한 튜토리얼](/developers/tutorials/monitoring-geth-with-influxdb-and-grafana/)을 확인해 보세요.
 
 모니터링의 일환으로 머신의 성능을 주시해야 합니다. 노드의 초기 동기화 중에 클라이언트 소프트웨어는 CPU 및 RAM에 매우 큰 부하를 줄 수 있습니다. Grafana 외에도 `htop` 또는 `uptime`와 같이 OS에서 제공하는 도구를 사용하여 이를 수행할 수 있습니다.
 
 ## 추가 자료 {#further-reading}
 
-- [이더리움 스테이킹 가이드](https://github.com/SomerEsat/ethereum-staking-guides) - _Somer Esat, 자주 업데이트됨_
-- [가이드 | 메인넷에서 이더리움 스테이킹을 위한 검증자 설정 방법](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, 자주 업데이트됨_
-- [테스트넷에서 검증자 실행에 대한 EthStaker 가이드](https://github.com/remyroy/ethstaker#guides) – _EthStaker, 정기적으로 업데이트됨_
-- [이더리움 노드용 샘플 AWS 블록체인 노드 러너 앱](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/ethereum) - _AWS, 자주 업데이트됨_
-- [노드 운영자를 위한 머지 FAQ](https://notes.ethereum.org/@launchpad/node-faq-merge) - _2022년 7월_
-- [이더리움 풀 검증 노드가 되기 위한 하드웨어 요구 사항 분석](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-ethereum-full-validated-node-dc064f167902) _– Albert Palau, 2018년 9월 24일_
-- [이더리움 풀 노드 실행: 동기가 부족한 사람들을 위한 가이드](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 2019년 11월 7일_
-- [이더리움 메인넷에서 Hyperledger 베수 노드 실행: 이점, 요구 사항 및 설정](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-ethereum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 2020년 5월 7일_
-- [모니터링 스택과 함께 네더마인드 이더리움 클라이언트 배포](https://medium.com/nethermind-eth/deploying-nethermind-ethereum-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.eth, 2020년 7월 8일_
+- [Quantaureum 스테이킹 가이드](https://github.com/SomerEsat/quantaureum-staking-guides) - _Somer Esat, 자주 업데이트됨_
+- [가이드 | 메인넷에서 Quantaureum 스테이킹을 위한 검증자 설정 방법](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, 자주 업데이트됨_
+- [테스트넷에서 검증자 실행에 대한 QauStaker 가이드](https://github.com/remyroy/ethstaker#guides) – _QauStaker, 정기적으로 업데이트됨_
+- [Quantaureum 노드용 샘플 AWS 블록체인 노드 러너 앱](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/quantaureum) - _AWS, 자주 업데이트됨_
+- [노드 운영자를 위한 머지 FAQ](https://notes.quantaureum.com/@launchpad/node-faq-merge) - _2022년 7월_
+- [Quantaureum 풀 검증 노드가 되기 위한 하드웨어 요구 사항 분석](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-quantaureum-full-validated-node-dc064f167902) _– Albert Palau, 2018년 9월 24일_
+- [Quantaureum 풀 노드 실행: 동기가 부족한 사람들을 위한 가이드](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 2019년 11월 7일_
+- [Quantaureum 메인넷에서 Hyperledger 베수 노드 실행: 이점, 요구 사항 및 설정](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-quantaureum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 2020년 5월 7일_
+- [모니터링 스택과 함께 네더마인드 Quantaureum 클라이언트 배포](https://medium.com/nethermind-eth/deploying-nethermind-quantaureum-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.eth, 2020년 7월 8일_
 
 ## 관련 주제 {#related-topics}
 

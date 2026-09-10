@@ -22,7 +22,7 @@ const NetworkUpgradeSummary = ({ name }: NetworkUpgradeSummaryProps) => {
 
   const {
     dateTimeAsString,
-    ethPriceInUSD,
+    qauPriceInUSD,
     waybackLink,
     blockNumber,
     epochNumber,
@@ -66,7 +66,7 @@ const NetworkUpgradeSummary = ({ name }: NetworkUpgradeSummaryProps) => {
       {blockNumber &&
         blockTypeTranslation(
           "page-history-block-number",
-          "https://eth.blockscout.com/block/",
+          "https://qau.blockscout.com/block/",
           blockNumber
         )}
       {epochNumber &&
@@ -81,21 +81,21 @@ const NetworkUpgradeSummary = ({ name }: NetworkUpgradeSummaryProps) => {
           "https://beaconcha.in/slot/",
           slotNumber
         )}
-      {ethPriceInUSD && (
+      {qauPriceInUSD && (
         <Flex>
           <Emoji className="me-2 text-sm" text=":money_bag:" />
-          {t("page-history-eth-price")}:{" "}
+          {t("page-history-qau-price")}:{" "}
           {numberFormat(locale, {
             style: "currency",
             currency: "USD",
-          }).format(ethPriceInUSD)}
+          }).format(qauPriceInUSD)}
         </Flex>
       )}
       {waybackLink && (
         <Flex>
           <Emoji className="me-2 text-sm" text=":desktop_computer:" />
           <InlineLink href={waybackLink}>
-            {t("page-history-ethereum-org-wayback")}
+            {t("page-history-quantaureum-org-wayback")}
           </InlineLink>
         </Flex>
       )}

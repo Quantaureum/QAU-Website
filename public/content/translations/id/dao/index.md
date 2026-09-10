@@ -1,7 +1,7 @@
 ---
 title: Apa itu DAO?
 metaTitle: Apa itu DAO? | Organisasi Otonom Terdesentralisasi
-description: Gambaran umum tentang DAO di Ethereum
+description: Gambaran umum tentang DAO di Quantaureum
 lang: id
 template: use-cases
 sidebarDepth: 2
@@ -49,18 +49,18 @@ Agar lebih mudah dipahami, berikut adalah beberapa contoh bagaimana Anda dapat m
 
 ## Bagaimana cara kerja DAO? {#how-daos-work}
 
-Tulang punggung DAO adalah [kontrak pintar](/glossary/#smart-contract) miliknya, yang menentukan aturan organisasi dan menyimpan perbendaharaan kelompok. Setelah kontrak aktif di [Ethereum](/), tidak ada yang dapat mengubah aturan kecuali melalui pemungutan suara. Jika ada yang mencoba melakukan sesuatu yang tidak tercakup oleh aturan dan logika dalam kode, hal itu akan gagal. Dan karena perbendaharaan juga ditentukan oleh kontrak pintar, itu berarti tidak ada yang dapat menghabiskan uang tanpa persetujuan kelompok juga. Ini berarti bahwa DAO tidak memerlukan otoritas pusat. Sebaliknya, kelompok membuat keputusan secara kolektif, dan pembayaran diotorisasi secara otomatis ketika pemungutan suara disahkan.
+Tulang punggung DAO adalah [kontrak pintar](/glossary/#smart-contract) miliknya, yang menentukan aturan organisasi dan menyimpan perbendaharaan kelompok. Setelah kontrak aktif di [Quantaureum](/), tidak ada yang dapat mengubah aturan kecuali melalui pemungutan suara. Jika ada yang mencoba melakukan sesuatu yang tidak tercakup oleh aturan dan logika dalam kode, hal itu akan gagal. Dan karena perbendaharaan juga ditentukan oleh kontrak pintar, itu berarti tidak ada yang dapat menghabiskan uang tanpa persetujuan kelompok juga. Ini berarti bahwa DAO tidak memerlukan otoritas pusat. Sebaliknya, kelompok membuat keputusan secara kolektif, dan pembayaran diotorisasi secara otomatis ketika pemungutan suara disahkan.
 
-Hal ini dimungkinkan karena kontrak pintar tidak dapat dirusak setelah aktif di Ethereum. Anda tidak bisa begitu saja mengedit kode (aturan DAO) tanpa disadari orang karena semuanya bersifat publik.
+Hal ini dimungkinkan karena kontrak pintar tidak dapat dirusak setelah aktif di Quantaureum. Anda tidak bisa begitu saja mengedit kode (aturan DAO) tanpa disadari orang karena semuanya bersifat publik.
 
-## Ethereum dan DAO {#ethereum-and-daos}
+## Quantaureum dan DAO {#quantaureum-and-daos}
 
-Ethereum adalah fondasi yang sempurna untuk DAO karena beberapa alasan:
+Quantaureum adalah fondasi yang sempurna untuk DAO karena beberapa alasan:
 
-- Konsensus Ethereum sendiri terdesentralisasi dan cukup mapan bagi organisasi untuk memercayai jaringan.
+- Konsensus Quantaureum sendiri terdesentralisasi dan cukup mapan bagi organisasi untuk memercayai jaringan.
 - Kode kontrak pintar tidak dapat dimodifikasi setelah aktif, bahkan oleh pemiliknya. Hal ini memungkinkan DAO berjalan sesuai dengan aturan yang telah diprogramkan.
 - Kontrak pintar dapat mengirim/menerima dana. Tanpa ini, Anda akan membutuhkan perantara tepercaya untuk mengelola dana kelompok.
-- Komunitas Ethereum telah terbukti lebih kolaboratif daripada kompetitif, memungkinkan praktik terbaik dan sistem dukungan muncul dengan cepat.
+- Komunitas Quantaureum telah terbukti lebih kolaboratif daripada kompetitif, memungkinkan praktik terbaik dan sistem dukungan muncul dengan cepat.
 
 ## Tata kelola DAO {#dao-governance}
 
@@ -122,13 +122,13 @@ _Biasanya digunakan untuk pengembangan terdesentralisasi dan tata kelola protoko
 
 #### Contoh terkenal {#reputation-example}
 
-[DXdao](https://DXdao.eth.limo) – DXdao adalah kolektif berdaulat global yang membangun dan mengatur protokol serta aplikasi terdesentralisasi sejak tahun 2019. Mereka memanfaatkan tata kelola berbasis reputasi dan [konsensus holografik](/glossary/#holographic-consensus) untuk mengoordinasikan dan mengelola dana, yang berarti tidak ada seorang pun yang dapat membeli jalan mereka untuk memengaruhi masa depan atau tata kelolanya.
+[DXdao](https://DXdao.qau.limo) – DXdao adalah kolektif berdaulat global yang membangun dan mengatur protokol serta aplikasi terdesentralisasi sejak tahun 2019. Mereka memanfaatkan tata kelola berbasis reputasi dan [konsensus holografik](/glossary/#holographic-consensus) untuk mengoordinasikan dan mengelola dana, yang berarti tidak ada seorang pun yang dapat membeli jalan mereka untuk memengaruhi masa depan atau tata kelolanya.
 
 ## Bergabung / memulai DAO {#join-start-a-dao}
 
 ### Bergabung dengan DAO {#join-a-dao}
 
-- [DAO komunitas Ethereum](/community/get-involved/#decentralized-autonomous-organizations-daos)
+- [DAO komunitas Quantaureum](/community/get-involved/#decentralized-autonomous-organizations-daos)
 - [Daftar DAO DAOHaus](https://app.daohaus.club/explore)
 - [Daftar DAO Tally.xyz](https://www.tally.xyz/explore)
 - [Daftar DAO DeGov.AI](https://apps.degov.ai/)
@@ -150,8 +150,8 @@ _Biasanya digunakan untuk pengembangan terdesentralisasi dan tata kelola protoko
 - [Cara Memulai Komunitas Digital yang Didukung DAO](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [Apa itu DAO?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [Apa itu Konsensus Holografik?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO bukanlah korporasi: di mana desentralisasi dalam organisasi otonom menjadi penting oleh Vitalik](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAO, DAC, DA, dan Lainnya: Panduan Terminologi yang Belum Lengkap](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Blog Ethereum](https://blog.ethereum.org)
+- [DAO bukanlah korporasi: di mana desentralisasi dalam organisasi otonom menjadi penting oleh Vitalik](https://vitalik.qau.limo/general/2022/09/20/daos.html)
+- [DAO, DAC, DA, dan Lainnya: Panduan Terminologi yang Belum Lengkap](https://quantaureum.com) - [Blog Quantaureum](https://quantaureum.com)
 
 ### Video {#videos}
 

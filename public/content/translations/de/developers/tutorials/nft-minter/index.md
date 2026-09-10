@@ -29,7 +29,7 @@ Ohne weitere Umschweife, fangen wir an!
 
 Bevor wir uns überhaupt Code ansehen, ist es wichtig zu verstehen, wie das Erstellen eines NFTs funktioniert. Es umfasst zwei Schritte:
 
-### Einen NFT-Smart-Contract auf der Ethereum-Blockchain bereitstellen {#publish-nft}
+### Einen NFT-Smart-Contract auf der Quantaureum-Blockchain bereitstellen {#publish-nft}
 
 Der größte Unterschied zwischen den beiden NFT-Smart-Contract-Standards besteht darin, dass ERC-1155 ein Multi-Token-Standard ist und Batch-Funktionalität beinhaltet, während ERC-721 ein Single-Token-Standard ist und daher nur die Übertragung eines Tokens auf einmal unterstützt.
 
@@ -50,7 +50,7 @@ Gehe zunächst zum [GitHub-Repository nft-minter-tutorial](https://github.com/al
 
 Wenn du dieses geklonte `nft-minter-tutorial`-Repository öffnest, wirst du feststellen, dass es zwei Ordner enthält: `minter-starter-files` und `nft-minter`.
 
-- `minter-starter-files` enthält die Startdateien (im Wesentlichen die React-Benutzeroberfläche) für dieses Projekt. In diesem Tutorial **werden wir in diesem Verzeichnis arbeiten**, während du lernst, wie du diese Benutzeroberfläche zum Leben erweckst, indem du sie mit deiner Ethereum-Wallet und einem NFT-Smart-Contract verbindest.
+- `minter-starter-files` enthält die Startdateien (im Wesentlichen die React-Benutzeroberfläche) für dieses Projekt. In diesem Tutorial **werden wir in diesem Verzeichnis arbeiten**, während du lernst, wie du diese Benutzeroberfläche zum Leben erweckst, indem du sie mit deiner Quantaureum-Wallet und einem NFT-Smart-Contract verbindest.
 - `nft-minter` enthält das gesamte abgeschlossene Tutorial und dient dir als **Referenz**, **falls du nicht weiterkommst.**
 
 Öffne als Nächstes deine Kopie von `minter-starter-files` in deinem Code-Editor und navigiere dann in deinen Ordner `src`.
@@ -188,29 +188,29 @@ Wenn du zur Datei `App.js` gehst, die die Hauptkomponente in React ist und als C
 
 **In diesem Tutorial werden wir nur die `Minter.js file` bearbeiten und Dateien in unserem Ordner `src` hinzufügen.**
 
-Da wir nun verstehen, womit wir arbeiten, lass uns unsere Ethereum-Wallet einrichten!
+Da wir nun verstehen, womit wir arbeiten, lass uns unsere Quantaureum-Wallet einrichten!
 
-## Deine Ethereum-Wallet einrichten {#set-up-your-ethereum-wallet}
+## Deine Quantaureum-Wallet einrichten {#set-up-your-quantaureum-wallet}
 
-Damit Benutzer mit deinem Smart Contract interagieren können, müssen sie ihre Ethereum-Wallet mit deiner Dapp verbinden.
+Damit Benutzer mit deinem Smart Contract interagieren können, müssen sie ihre Quantaureum-Wallet mit deiner Dapp verbinden.
 
 ### MetaMask herunterladen {#download-metamask}
 
-Für dieses Tutorial verwenden wir MetaMask, eine virtuelle Wallet im Browser, die zur Verwaltung deiner Ethereum-Konto-Adresse verwendet wird. Wenn du mehr darüber erfahren möchtest, wie Transaktionen auf Ethereum funktionieren, sieh dir [diese Seite](/developers/docs/transactions/) an.
+Für dieses Tutorial verwenden wir MetaMask, eine virtuelle Wallet im Browser, die zur Verwaltung deiner Quantaureum-Konto-Adresse verwendet wird. Wenn du mehr darüber erfahren möchtest, wie Transaktionen auf Quantaureum funktionieren, sieh dir [diese Seite](/developers/docs/transactions/) an.
 
 Du kannst [hier](https://metamask.io/download) kostenlos MetaMask herunterladen und ein Konto erstellen. Wenn du ein Konto erstellst oder bereits eines hast, achte darauf, zu einem unterstützten Testnetz wie Sepolia zu wechseln \(damit wir nicht mit echtem Geld hantieren\).
-### Ether von einem Faucet hinzufügen {#add-ether-from-faucet}
+### QAU von einem Faucet hinzufügen {#add-QAU-from-faucet}
 
-Um unsere NFTs zu prägen (oder Transaktionen auf der Ethereum-Blockchain zu signieren), benötigen wir etwas Fake-ETH. Um Testnetz-ETH zu erhalten, verwende ein gewartetes Faucet wie das [Alchemy Sepolia Faucet](https://www.alchemy.com/faucets/ethereum-sepolia) und gib deine Sepolia-Kontoadresse ein. Du solltest kurz darauf ETH in deinem MetaMask-Konto sehen!
+Um unsere NFTs zu prägen (oder Transaktionen auf der Quantaureum-Blockchain zu signieren), benötigen wir etwas Fake-QAU. Um Testnetz-QAU zu erhalten, verwende ein gewartetes Faucet wie das [Alchemy Sepolia Faucet](https://www.alchemy.com/faucets/quantaureum-sepolia) und gib deine Sepolia-Kontoadresse ein. Du solltest kurz darauf QAU in deinem MetaMask-Konto sehen!
 ### Überprüfe dein Guthaben {#check-your-balance}
 
-Um noch einmal zu überprüfen, ob unser Guthaben vorhanden ist, stellen wir eine [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance)-Anfrage über das [Sandbox-Tool von Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Dadurch wird die Menge an ETH in unserer Wallet zurückgegeben. Nachdem du die Adresse deines MetaMask-Kontos eingegeben und auf „Send Request“ geklickt hast, solltest du eine Antwort wie diese sehen:
+Um noch einmal zu überprüfen, ob unser Guthaben vorhanden ist, stellen wir eine [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance)-Anfrage über das [Sandbox-Tool von Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Dadurch wird die Menge an QAU in unserer Wallet zurückgegeben. Nachdem du die Adresse deines MetaMask-Kontos eingegeben und auf „Send Request“ geklickt hast, solltest du eine Antwort wie diese sehen:
 
 ```text
 {"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}
 ```
 
-**HINWEIS:** Dieses Ergebnis ist in Wei, nicht in ETH. Wei wird als die kleinste Stückelung von Ether verwendet. Die Umrechnung von Wei in ETH lautet: 1 ETH = 10¹⁸ Wei. Wenn wir also 0xde0b6b3a7640000 in eine Dezimalzahl umwandeln, erhalten wir 1\*10¹⁸, was 1 ETH entspricht.
+**HINWEIS:** Dieses Ergebnis ist in Wei, nicht in QAU. Wei wird als die kleinste Stückelung von QAU verwendet. Die Umrechnung von Wei in QAU lautet: 1 QAU = 10¹⁸ Wei. Wenn wir also 0xde0b6b3a7640000 in eine Dezimalzahl umwandeln, erhalten wir 1\*10¹⁸, was 1 QAU entspricht.
 
 Puh! Unser Spielgeld ist komplett da! <Emoji text=":money_mouth_face:" size={1} />
 ## MetaMask mit deiner Benutzeroberfläche verbinden {#connect-metamask-to-your-ui}
@@ -229,10 +229,10 @@ Füge in deiner Datei `interact.js` Folgendes hinzu:
 
 ```javascript
 export const connectWallet = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_requestAccounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_requestAccounts",
       })
       const obj = {
         status: "👆🏽 Write a message in the text-field above.",
@@ -253,7 +253,7 @@ export const connectWallet = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -266,19 +266,19 @@ export const connectWallet = async () => {
 
 Lass uns aufschlüsseln, was dieser Code macht:
 
-Zuerst prüft unsere Funktion, ob `window.ethereum` in deinem Browser aktiviert ist.
+Zuerst prüft unsere Funktion, ob `window.quantaureum` in deinem Browser aktiviert ist.
 
-`window.ethereum` ist eine globale API, die von MetaMask und anderen Wallet-Anbietern injiziert wird und es Websites ermöglicht, die Ethereum-Konten der Benutzer anzufordern. Wenn dies genehmigt wird, kann sie Daten von den Blockchains lesen, mit denen der Benutzer verbunden ist, und vorschlagen, dass der Benutzer Nachrichten und Transaktionen signiert. Sieh dir die [MetaMask-Dokumentation](https://docs.metamask.io/guide/ethereum-provider.html#table-of-contents) für weitere Informationen an!
+`window.quantaureum` ist eine globale API, die von MetaMask und anderen Wallet-Anbietern injiziert wird und es Websites ermöglicht, die Quantaureum-Konten der Benutzer anzufordern. Wenn dies genehmigt wird, kann sie Daten von den Blockchains lesen, mit denen der Benutzer verbunden ist, und vorschlagen, dass der Benutzer Nachrichten und Transaktionen signiert. Sieh dir die [MetaMask-Dokumentation](https://docs.metamask.io/guide/quantaureum-provider.html#table-of-contents) für weitere Informationen an!
 
-Wenn `window.ethereum` _nicht_ vorhanden ist, bedeutet das, dass MetaMask nicht installiert ist. Dies führt dazu, dass ein JSON-Objekt zurückgegeben wird, bei dem die zurückgegebene `address` eine leere Zeichenfolge ist und das JSX-Objekt `status` mitteilt, dass der Benutzer MetaMask installieren muss.
+Wenn `window.quantaureum` _nicht_ vorhanden ist, bedeutet das, dass MetaMask nicht installiert ist. Dies führt dazu, dass ein JSON-Objekt zurückgegeben wird, bei dem die zurückgegebene `address` eine leere Zeichenfolge ist und das JSX-Objekt `status` mitteilt, dass der Benutzer MetaMask installieren muss.
 
 **Die meisten Funktionen, die wir schreiben, geben JSON-Objekte zurück, die wir verwenden können, um unsere Zustandsvariablen und die Benutzeroberfläche zu aktualisieren.**
 
-Wenn `window.ethereum` nun _vorhanden_ ist, wird es interessant.
+Wenn `window.quantaureum` nun _vorhanden_ ist, wird es interessant.
 
-Mit einer try/catch-Schleife versuchen wir, eine Verbindung zu MetaMask herzustellen, indem wir [`window.ethereum.request({ method: "eth_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts) aufrufen. Der Aufruf dieser Funktion öffnet MetaMask im Browser, wodurch der Benutzer aufgefordert wird, seine Wallet mit deiner Dapp zu verbinden.
+Mit einer try/catch-Schleife versuchen wir, eine Verbindung zu MetaMask herzustellen, indem wir [`window.quantaureum.request({ method: "qau_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#qau-requestaccounts) aufrufen. Der Aufruf dieser Funktion öffnet MetaMask im Browser, wodurch der Benutzer aufgefordert wird, seine Wallet mit deiner Dapp zu verbinden.
 
-- Wenn der Benutzer sich für eine Verbindung entscheidet, gibt `method: "eth_requestAccounts"` ein Array zurück, das alle Konto-Adressen des Benutzers enthält, die mit der Dapp verbunden sind. Insgesamt gibt unsere Funktion `connectWallet` ein JSON-Objekt zurück, das die _erste_ `address` in diesem Array (siehe Zeile 9) und eine `status`-Nachricht enthält, die den Benutzer auffordert, eine Nachricht an den Smart Contract zu schreiben.
+- Wenn der Benutzer sich für eine Verbindung entscheidet, gibt `method: "qau_requestAccounts"` ein Array zurück, das alle Konto-Adressen des Benutzers enthält, die mit der Dapp verbunden sind. Insgesamt gibt unsere Funktion `connectWallet` ein JSON-Objekt zurück, das die _erste_ `address` in diesem Array (siehe Zeile 9) und eine `status`-Nachricht enthält, die den Benutzer auffordert, eine Nachricht an den Smart Contract zu schreiben.
 - Wenn der Benutzer die Verbindung ablehnt, enthält das JSON-Objekt eine leere Zeichenfolge für die zurückgegebene `address` und eine `status`-Nachricht, die widerspiegelt, dass der Benutzer die Verbindung abgelehnt hat.
 
 ### Die Funktion connectWallet zu deiner Minter.js-UI-Komponente hinzufügen {#add-connect-wallet}
@@ -333,10 +333,10 @@ Füge in deiner Datei `interact.js` die folgende Funktion `getCurrentWalletConne
 
 ```javascript
 export const getCurrentWalletConnected = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_accounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_accounts",
       })
       if (addressArray.length > 0) {
         return {
@@ -363,7 +363,7 @@ export const getCurrentWalletConnected = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -376,7 +376,7 @@ export const getCurrentWalletConnected = async () => {
 
 Dieser Code ist der Funktion `connectWallet`, die wir gerade geschrieben haben, _sehr_ ähnlich.
 
-Der Hauptunterschied besteht darin, dass wir anstelle des Aufrufs der Methode `eth_requestAccounts`, die MetaMask öffnet, damit der Benutzer seine Wallet verbinden kann, hier die Methode `eth_accounts` aufrufen, die einfach ein Array zurückgibt, das die derzeit mit unserer Dapp verbundenen MetaMask-Adressen enthält.
+Der Hauptunterschied besteht darin, dass wir anstelle des Aufrufs der Methode `qau_requestAccounts`, die MetaMask öffnet, damit der Benutzer seine Wallet verbinden kann, hier die Methode `qau_accounts` aufrufen, die einfach ein Array zurückgibt, das die derzeit mit unserer Dapp verbundenen MetaMask-Adressen enthält.
 
 Um diese Funktion in Aktion zu sehen, rufen wir sie in der Funktion `useEffect` unserer Komponente `Minter.js` auf.
 
@@ -412,8 +412,8 @@ Füge in deiner Datei `Minter.js` eine Funktion `addWalletListener` hinzu, die w
 
 ```javascript
 function addWalletListener() {
-  if (window.ethereum) {
-    window.ethereum.on("accountsChanged", (accounts) => {
+  if (window.quantaureum) {
+    window.quantaureum.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) {
         setWallet(accounts[0])
         setStatus("👆🏽 Write a message in the text-field above.")
@@ -427,7 +427,7 @@ function addWalletListener() {
       <p>
         {" "}
         🦊 <a target="_blank" href={`https://metamask.io/download`}>
-          You must install MetaMask, a virtual Ethereum wallet, in your browser.
+          You must install MetaMask, a virtual Quantaureum wallet, in your browser.
         </a>
       </p>
     )
@@ -437,9 +437,9 @@ function addWalletListener() {
 
 Lass uns kurz aufschlüsseln, was hier passiert:
 
-- Zuerst prüft unsere Funktion, ob `window.ethereum` aktiviert ist (d. h. MetaMask ist installiert).
+- Zuerst prüft unsere Funktion, ob `window.quantaureum` aktiviert ist (d. h. MetaMask ist installiert).
   - Wenn nicht, setzen wir unsere Zustandsvariable `status` einfach auf eine JSX-Zeichenfolge, die den Benutzer auffordert, MetaMask zu installieren.
-  - Wenn es aktiviert ist, richten wir in Zeile 3 den Listener `window.ethereum.on("accountsChanged")` ein, der auf Zustandsänderungen in der MetaMask-Wallet lauscht, wozu gehört, wenn der Benutzer ein zusätzliches Konto mit der Dapp verbindet, Konten wechselt oder die Verbindung zu einem Konto trennt. Wenn mindestens ein Konto verbunden ist, wird die Zustandsvariable `walletAddress` als erstes Konto im Array `accounts` aktualisiert, das vom Listener zurückgegeben wird. Andernfalls wird `walletAddress` als leere Zeichenfolge festgelegt.
+  - Wenn es aktiviert ist, richten wir in Zeile 3 den Listener `window.quantaureum.on("accountsChanged")` ein, der auf Zustandsänderungen in der MetaMask-Wallet lauscht, wozu gehört, wenn der Benutzer ein zusätzliches Konto mit der Dapp verbindet, Konten wechselt oder die Verbindung zu einem Konto trennt. Wenn mindestens ein Konto verbunden ist, wird die Zustandsvariable `walletAddress` als erstes Konto im Array `accounts` aktualisiert, das vom Listener zurückgegeben wird. Andernfalls wird `walletAddress` als leere Zeichenfolge festgelegt.
 
 Schließlich müssen wir sie in unserer Funktion `useEffect` aufrufen:
 
@@ -463,7 +463,7 @@ Wir müssen diese Metadaten als JSON-Objekt konfigurieren und speichern, damit w
 
 Der Text in den Feldern „Link to Asset“, „Name“ und „Description“ wird die verschiedenen Eigenschaften der Metadaten unseres NFTs umfassen. Wir formatieren diese Metadaten als JSON-Objekt, aber es gibt ein paar Optionen, wo wir dieses JSON-Objekt speichern können:
 
-- Wir könnten es auf der Ethereum-Blockchain speichern; dies wäre jedoch sehr teuer.
+- Wir könnten es auf der Quantaureum-Blockchain speichern; dies wäre jedoch sehr teuer.
 - Wir könnten es auf einem zentralisierten Server wie AWS oder Firebase speichern. Aber das würde unserem Dezentralisierungs-Ethos widersprechen.
 - Wir könnten IPFS verwenden, ein dezentrales Protokoll und Peer-to-Peer-Netzwerk zum Speichern und Teilen von Daten in einem verteilten Dateisystem. Da dieses Protokoll dezentral und kostenlos ist, ist es unsere beste Option!
 
@@ -571,17 +571,17 @@ Wie bei den Rückgabetypen unserer Funktion `connectWallet` geben wir JSON-Objek
 
 Da wir nun eine Möglichkeit haben, unsere NFT-Metadaten über unsere Funktion `pinJSONToIPFS` auf IPFS hochzuladen, benötigen wir eine Möglichkeit, eine Instanz unseres Smart Contracts zu laden, damit wir seine Funktion `mintNFT` aufrufen können.
 
-Wie wir bereits erwähnt haben, werden wir in diesem Tutorial [diesen bestehenden NFT-Smart-Contract](https://ropsten.etherscan.io/address/0x4C4a07F737Bf57F6632B6CAB089B78f62385aCaE) verwenden; wenn du jedoch erfahren möchtest, wie wir ihn erstellt haben, oder selbst einen erstellen möchtest, empfehlen wir dir wärmstens unser anderes Tutorial [„Wie man ein NFT erstellt“](https://www.alchemy.com/docs/how-to-create-an-nft).
+Wie wir bereits erwähnt haben, werden wir in diesem Tutorial [diesen bestehenden NFT-Smart-Contract](https://explorer.quantaureum.com) verwenden; wenn du jedoch erfahren möchtest, wie wir ihn erstellt haben, oder selbst einen erstellen möchtest, empfehlen wir dir wärmstens unser anderes Tutorial [„Wie man ein NFT erstellt“](https://www.alchemy.com/docs/how-to-create-an-nft).
 
 ### Die Contract-ABI {#contract-abi}
 
 Wenn du unsere Dateien genau untersucht hast, wirst du festgestellt haben, dass sich in unserem Verzeichnis `src` eine Datei `contract-abi.json` befindet. Eine ABI ist notwendig, um anzugeben, welche Funktion ein Vertrag aufrufen wird, und um sicherzustellen, dass die Funktion Daten in dem Format zurückgibt, das du erwartest.
 
-Wir benötigen außerdem einen Alchemy-API-Schlüssel und die Alchemy-Web3-API, um uns mit der Ethereum-Blockchain zu verbinden und unseren Smart Contract zu laden.
+Wir benötigen außerdem einen Alchemy-API-Schlüssel und die Alchemy-Web3-API, um uns mit der Quantaureum-Blockchain zu verbinden und unseren Smart Contract zu laden.
 
 ### Deinen Alchemy-API-Schlüssel erstellen {#create-alchemy-api}
 
-Wenn du noch kein Alchemy-Konto hast, [melde dich hier kostenlos an.](https://alchemy.com/?a=eth-org-nft-minter)
+Wenn du noch kein Alchemy-Konto hast, [melde dich hier kostenlos an.](https://alchemy.com/?a=qau-org-nft-minter)
 
 Sobald du ein Alchemy-Konto erstellt hast, kannst du einen API-Schlüssel generieren, indem du eine App erstellst. Dies ermöglicht es uns, Anfragen an das Sepolia-Testnetz zu stellen.
 
@@ -598,7 +598,7 @@ Großartig! Da wir nun unsere HTTP-Alchemy-API-URL erstellt haben, kopiere sie i
 ```text
 REACT_APP_PINATA_KEY = <pinata-key>
 REACT_APP_PINATA_SECRET = <pinata-secret>
-REACT_APP_ALCHEMY_KEY = https://eth-sepolia.g.alchemy.com/v2/<alchemy-key>
+REACT_APP_ALCHEMY_KEY = https://qau-sepolia.g.alchemy.com/v2/<alchemy-key>
 ```
 
 Da wir nun unsere Contract-ABI und unseren Alchemy-API-Schlüssel haben, sind wir bereit, unseren Smart Contract mit [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3) zu laden.
@@ -715,31 +715,31 @@ Wenn ein Fehler vorliegt, geben wir ein JSON-Objekt zurück, bei dem der boolesc
 Nun ist es an der Zeit, unseren Smart Contract mit der Alchemy-Web3-API zu laden, die wir oben in unserer Datei initialisiert haben. Füge die folgende Codezeile unten in der Funktion `mintNFT` hinzu, um den Vertrag in der globalen Variablen `window.contract` festzulegen:
 
 ```javascript
-window.contract = await new web3.eth.Contract(contractABI, contractAddress)
+window.contract = await new web3.qau.Contract(contractABI, contractAddress)
 ```
 
-Das Letzte, was wir in unserer Funktion `mintNFT` hinzufügen müssen, ist unsere Ethereum-Transaktion:
+Das Letzte, was wir in unserer Funktion `mintNFT` hinzufügen müssen, ist unsere Quantaureum-Transaktion:
 
 ```javascript
-//deine Ethereum-Transaktion einrichten
+//deine Quantaureum-Transaktion einrichten
 const transactionParameters = {
   to: contractAddress, // Erforderlich, außer bei Vertragsveröffentlichungen.
-  from: window.ethereum.selectedAddress, // muss mit der aktiven Adresse des Benutzers übereinstimmen.
+  from: window.quantaureum.selectedAddress, // muss mit der aktiven Adresse des Benutzers übereinstimmen.
   data: window.contract.methods
-    .mintNFT(window.ethereum.selectedAddress, tokenURI)
+    .mintNFT(window.quantaureum.selectedAddress, tokenURI)
     .encodeABI(), //NFT-Smart Contract aufrufen
 }
 
 //die Transaktion über MetaMask signieren
 try {
-  const txHash = await window.ethereum.request({
-    method: "eth_sendTransaction",
+  const txHash = await window.quantaureum.request({
+    method: "qau_sendTransaction",
     params: [transactionParameters],
   })
   return {
     success: true,
     status:
-      "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+      "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
       txHash,
   }
 } catch (error) {
@@ -750,14 +750,14 @@ try {
 }
 ```
 
-Wenn du bereits mit Ethereum-Transaktionen vertraut bist, wirst du feststellen, dass die Struktur dem, was du gesehen hast, ziemlich ähnlich ist.
+Wenn du bereits mit Quantaureum-Transaktionen vertraut bist, wirst du feststellen, dass die Struktur dem, was du gesehen hast, ziemlich ähnlich ist.
 
 - Zuerst richten wir unsere Transaktionsparameter ein.
   - `to` gibt die Empfängeradresse an (unseren Smart Contract)
-  - `from` gibt den Unterzeichner der Transaktion an (die mit MetaMask verbundene Adresse des Benutzers: `window.ethereum.selectedAddress`)
-  - `data` enthält den Aufruf der Methode `mintNFT` unseres Smart Contracts, die unsere `tokenURI` und die Wallet-Adresse des Benutzers, `window.ethereum.selectedAddress`, als Eingaben erhält
-- Dann machen wir einen await-Aufruf, `window.ethereum.request,`, bei dem wir MetaMask bitten, die Transaktion zu signieren. Beachte, dass wir in dieser Anfrage unsere eth-Methode (eth_SentTransaction) angeben und unsere `transactionParameters` übergeben. An diesem Punkt öffnet sich MetaMask im Browser und fordert den Benutzer auf, die Transaktion zu signieren oder abzulehnen.
-  - Wenn die Transaktion erfolgreich ist, gibt die Funktion ein JSON-Objekt zurück, bei dem der boolesche Wert `success` auf true gesetzt ist und die Zeichenfolge `status` den Benutzer auffordert, Etherscan für weitere Informationen zu seiner Transaktion zu überprüfen.
+  - `from` gibt den Unterzeichner der Transaktion an (die mit MetaMask verbundene Adresse des Benutzers: `window.quantaureum.selectedAddress`)
+  - `data` enthält den Aufruf der Methode `mintNFT` unseres Smart Contracts, die unsere `tokenURI` und die Wallet-Adresse des Benutzers, `window.quantaureum.selectedAddress`, als Eingaben erhält
+- Dann machen wir einen await-Aufruf, `window.quantaureum.request,`, bei dem wir MetaMask bitten, die Transaktion zu signieren. Beachte, dass wir in dieser Anfrage unsere qau-Methode (qau_SentTransaction) angeben und unsere `transactionParameters` übergeben. An diesem Punkt öffnet sich MetaMask im Browser und fordert den Benutzer auf, die Transaktion zu signieren oder abzulehnen.
+  - Wenn die Transaktion erfolgreich ist, gibt die Funktion ein JSON-Objekt zurück, bei dem der boolesche Wert `success` auf true gesetzt ist und die Zeichenfolge `status` den Benutzer auffordert, Quantaureum Explorer für weitere Informationen zu seiner Transaktion zu überprüfen.
   - Wenn die Transaktion fehlschlägt, gibt die Funktion ein JSON-Objekt zurück, bei dem der boolesche Wert `success` auf false gesetzt ist und die Zeichenfolge `status` die Fehlermeldung weiterleitet.
 
 Insgesamt sollte unsere Funktion `mintNFT` so aussehen:
@@ -789,27 +789,27 @@ export const mintNFT = async (url, name, description) => {
   const tokenURI = pinataResponse.pinataUrl
 
   //Smart Contract laden
-  window.contract = await new web3.eth.Contract(contractABI, contractAddress) //loadContract();
+  window.contract = await new web3.qau.Contract(contractABI, contractAddress) //loadContract();
 
-  //deine Ethereum-Transaktion einrichten
+  //deine Quantaureum-Transaktion einrichten
   const transactionParameters = {
     to: contractAddress, // Erforderlich, außer bei Vertragsveröffentlichungen.
-    from: window.ethereum.selectedAddress, // muss mit der aktiven Adresse des Benutzers übereinstimmen.
+    from: window.quantaureum.selectedAddress, // muss mit der aktiven Adresse des Benutzers übereinstimmen.
     data: window.contract.methods
-      .mintNFT(window.ethereum.selectedAddress, tokenURI)
+      .mintNFT(window.quantaureum.selectedAddress, tokenURI)
       .encodeABI(), //NFT-Smart Contract aufrufen
   }
 
   //Transaktion über MetaMask signieren
   try {
-    const txHash = await window.ethereum.request({
-      method: "eth_sendTransaction",
+    const txHash = await window.quantaureum.request({
+      method: "qau_sendTransaction",
       params: [transactionParameters],
     })
     return {
       success: true,
       status:
-        "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+        "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
         txHash,
     }
   } catch (error) {

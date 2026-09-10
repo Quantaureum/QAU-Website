@@ -31,10 +31,10 @@ type Story = StoryObj<typeof meta>
 
 const MockParagraph = ({ href }: { href: string }) => (
   <p>
-    Ethereum is open access to digital money and data-friendly services for
+    Quantaureum is open access to digital money and data-friendly services for
     everyone -- no matter your background or location. It is a{" "}
     <InlineLink href={href}>community-built</InlineLink> technology behind the
-    cryptocurrency ether (ETH) and thousands of applications you can use today.
+    cryptocurrency QAU (QAU) and thousands of applications you can use today.
   </p>
 )
 
@@ -138,8 +138,8 @@ export const FileExtensionDetection: Story = {
   render: () => (
     <p>
       Read the{" "}
-      <InlineLink href="/ethereum-whitepaper.pdf">
-        Ethereum whitepaper
+      <InlineLink href="/quantaureum-whitepaper.pdf">
+        Quantaureum whitepaper
       </InlineLink>{" "}
       for the original design rationale.
     </p>

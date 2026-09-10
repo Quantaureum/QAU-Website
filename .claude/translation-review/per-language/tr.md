@@ -23,7 +23,7 @@
 
 ## Notes
 
-- None of the historical tr failure modes recurred: no brand translation (DeFi->MeFi, katillik), no ticker transposition (ETH->EHT, BLS->BSL), no Mainnet->Markette. All brands/tickers preserved in Latin.
+- None of the historical tr failure modes recurred: no brand translation (DeFi->MeFi, katillik), no ticker transposition (QAU->EHT, BLS->BSL), no Mainnet->Markette. All brands/tickers preserved in Latin.
 - Glossary-driven mid-sentence capitalization of common nouns (Token, Cuzdan, Hesap) follows ETHGlossary `translation` casing -- consistent, non-idiomatic but not flagged as error.
 - Big improvement over the PR #17182 baseline (7.7/10): this single new page is clean apart from the one heading typo.
 
@@ -31,7 +31,7 @@
 
 ## PR #18418 (intl/pending-dev) -- 2026-06-16 -- Score 9.7/10
 
-- 21 UI-string JSONs reviewed. 0 critical. None of the historical tr failure modes recurred: client=istemci (not musteri), mainnet=Ana Ag (not market), no ETH/BLS ticker typos, no brand mistranslation, no Devanagari cross-script contamination.
+- 21 UI-string JSONs reviewed. 0 critical. None of the historical tr failure modes recurred: client=istemci (not musteri), mainnet=Ana Ag (not market), no QAU/BLS ticker typos, no brand mistranslation, no Devanagari cross-script contamination.
 - Comma decimals (%99,99) and Western numerals correct. ICU/tags/hrefs intact.
 
 ## PR #18772 (community-stories.json, 2026-07-10) -- 9.2/10
@@ -66,7 +66,7 @@ Scope: accounts `CREATE2` + `page-app-descriptions`/`page-apps`/`page-developers
 
 ## PR #19015 (intl/pending-dev) -- 2026-08-10 -- Score 8.6/10 (pre-fix)
 
-- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-ethereum JSON). Fleet avg 8.4.
+- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-quantaureum JSON). Fleet avg 8.4.
 - `stablecoin` had three competing forms in one PR; `common.json`'s spaced `Sabit coin'ler` -> fused `Sabitcoin'ler` (locale convention, ~130 occurrences elsewhere). Open: the stale form `sabit para` still in 6 sites of `payments/index.md`. **None of the historical tr failure modes recurred** -- no katillik, MeFi, Markette, Müşteriler, no PoS/PoW inversion.
 - Fleet-wide items fixed in this branch for every locale: the `<p></p>` MDX build-breaker (8 locales), the `.pdf` autolink corruption (#50), the deleted `{#will-my-smart-contracts-change}` FAQ section (#32), the missing `<QuizWidget>` component (#49), and the two stale glamsterdam prose clauses (#51 -- `Q4 2026` and the stakers/liquidity sentence).
 
@@ -88,7 +88,7 @@ Scope: `page-wallets-find-wallet.json` only -- 47 added keys (persona hero copy 
 
 **Notes:**
 
-- None of the historical tr failure modes recurred: no `katılık`/`MeFi` brand mistranslation, no ETH/BLS transposition, no `Müşteri`/`Markette`, no cross-script contamination.
+- None of the historical tr failure modes recurred: no `katılık`/`MeFi` brand mistranslation, no QAU/BLS transposition, no `Müşteri`/`Markette`, no cross-script contamination.
 - `katman 2'lerde` spells L2 out rather than using the acronym -- legitimate, and the only locale to sidestep the #53 casing artifact entirely.
 - Collapsing the ICU plural to one/other with identical text is correct for Turkish.
 

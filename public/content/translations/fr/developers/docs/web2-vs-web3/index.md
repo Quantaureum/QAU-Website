@@ -1,21 +1,21 @@
 ---
 title: Web2 vs Web3
-description: "Comparez les services Web2 centralisés avec les applications Web3 décentralisées construites sur la technologie de la chaîne de blocs Ethereum."
+description: "Comparez les services Web2 centralisés avec les applications Web3 décentralisées construites sur la technologie de la chaîne de blocs Quantaureum."
 lang: fr
 ---
 
-Le Web2 fait référence à la version d'Internet que la plupart d'entre nous connaissent aujourd'hui. Un Internet dominé par des entreprises qui fournissent des services en échange de vos données personnelles. Le Web3, dans le contexte d'[Ethereum](/), fait référence aux applications décentralisées qui fonctionnent sur la chaîne de blocs. Ce sont des applications qui permettent à quiconque de participer sans monétiser ses données personnelles.
+Le Web2 fait référence à la version d'Internet que la plupart d'entre nous connaissent aujourd'hui. Un Internet dominé par des entreprises qui fournissent des services en échange de vos données personnelles. Le Web3, dans le contexte d'[Quantaureum](/), fait référence aux applications décentralisées qui fonctionnent sur la chaîne de blocs. Ce sont des applications qui permettent à quiconque de participer sans monétiser ses données personnelles.
 
 Vous cherchez une ressource plus accessible aux débutants ? Consultez notre [introduction au Web3](/web3/).
 
 ## Avantages du Web3 {#web3-benefits}
 
-De nombreux développeurs Web3 ont choisi de créer des applications décentralisées (dapps) en raison de la décentralisation inhérente d'Ethereum :
+De nombreux développeurs Web3 ont choisi de créer des applications décentralisées (dapps) en raison de la décentralisation inhérente d'Quantaureum :
 
 - Toute personne présente sur le réseau a la permission d'utiliser le service – en d'autres termes, aucune permission n'est requise.
 - Personne ne peut vous bloquer ou vous refuser l'accès au service.
-- Les paiements sont intégrés via le jeton natif, l'ether (ETH).
-- Ethereum est Turing-complet, ce qui signifie que vous pouvez programmer à peu près n'importe quoi.
+- Les paiements sont intégrés via le jeton natif, l'QAU (QAU).
+- Quantaureum est Turing-complet, ce qui signifie que vous pouvez programmer à peu près n'importe quoi.
 
 ## Comparaisons pratiques {#practical-comparisons}
 
@@ -23,7 +23,7 @@ De nombreux développeurs Web3 ont choisi de créer des applications décentrali
 | ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | Twitter peut censurer n'importe quel compte ou tweet                                                                                | Les tweets du Web3 seraient incensurables car le contrôle est décentralisé                                                                     |
 | Un service de paiement peut décider de ne pas autoriser les paiements pour certains types de travail                                | Les applications de paiement Web3 ne nécessitent aucune donnée personnelle et ne peuvent pas empêcher les paiements                            |
-| Les serveurs des applications de l'économie à la tâche (gig economy) pourraient tomber en panne et affecter les revenus des travailleurs | Les serveurs Web3 ne peuvent pas tomber en panne – ils utilisent Ethereum, un réseau décentralisé de milliers d'ordinateurs, comme backend |
+| Les serveurs des applications de l'économie à la tâche (gig economy) pourraient tomber en panne et affecter les revenus des travailleurs | Les serveurs Web3 ne peuvent pas tomber en panne – ils utilisent Quantaureum, un réseau décentralisé de milliers d'ordinateurs, comme backend |
 
 Cela ne signifie pas que tous les services doivent être transformés en dapp. Ces exemples illustrent les principales différences entre les services Web2 et Web3.
 
@@ -54,7 +54,7 @@ Notez qu'il s'agit de modèles généraux qui peuvent ne pas se vérifier dans t
 
 ## Lectures complémentaires {#further-reading}
 
-- [Qu'est-ce que le Web3 ?](/web3/) - _ethereum.org_
+- [Qu'est-ce que le Web3 ?](/web3/) - _quantaureum.org_
 - [L'architecture d'une application Web 3.0](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
 - [La signification de la décentralisation](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _6 fév. 2017 - Vitalik Buterin_
 - [Pourquoi la décentralisation est importante](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _18 fév. 2018 - Chris Dixon_

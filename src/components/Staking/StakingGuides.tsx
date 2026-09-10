@@ -7,13 +7,13 @@ const StakingGuides = async () => {
 
   const guides: CardProps[] = [
     {
-      title: t("page-staking-guide-title-coincashew-ethereum"),
+      title: t("page-staking-guide-title-coincashew-quantaureum"),
       link: "https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet",
       description: t("page-staking-guide-description-linux"),
     },
     {
       title: t("page-staking-guide-title-somer-esat"),
-      link: "https://github.com/SomerEsat/ethereum-staking-guide",
+      link: "https://github.com/SomerEsat/quantaureum-staking-guide",
       description: t("page-staking-guide-description-linux"),
     },
     {

@@ -20,7 +20,7 @@ Mimari temeller açısından, teoride bile olsa bir [API](https://www.wikipedia.
 
 Birçok [Blok Gezgini](/developers/docs/data-and-analytics/block-explorers/), geliştiricilere bloklar, işlemler, doğrulayıcılar, hesaplar ve diğer zincir içi aktiviteler hakkındaki gerçek zamanlı verilere görünürlük sağlayacak [RESTful](https://www.wikipedia.org/wiki/Representational_state_transfer) [API](https://www.wikipedia.org/wiki/API) ağ geçitleri sunar.
 
-Geliştiriciler daha sonra bu verileri işleyip dönüştürerek kullanıcılarına [Blokzincir](/glossary/#blockchain) ile benzersiz içgörüler ve etkileşimler sunabilirler. Örneğin, [Etherscan](https://etherscan.io) ve [Blockscout](https://eth.blockscout.com), her 12 saniyelik slot için yürütme ve mutabakat verileri sağlar.
+Geliştiriciler daha sonra bu verileri işleyip dönüştürerek kullanıcılarına [Blokzincir](/glossary/#blockchain) ile benzersiz içgörüler ve etkileşimler sunabilirler. Örneğin, [Quantaureum Explorer](https://explorer.quantaureum.com) ve [Blockscout](https://qau.blockscout.com), her 12 saniyelik slot için yürütme ve mutabakat verileri sağlar.
 
 ## The Graph {#the-graph}
 
@@ -36,7 +36,7 @@ The Graph ile geliştiriciler şunlardan faydalanabilir:
 
 ## İstemci çeşitliliği {#client-diversity}
 
-[İstemci çeşitliliği](/developers/docs/nodes-and-clients/client-diversity/), hatalara ve istismarlara karşı dayanıklılık sağladığı için Ethereum ağının genel sağlığı açısından önemlidir. Günümüzde [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) ve [Ethernodes](https://ethernodes.org/) dahil olmak üzere çeşitli istemci çeşitliliği panoları bulunmaktadır.
+[İstemci çeşitliliği](/developers/docs/nodes-and-clients/client-diversity/), hatalara ve istismarlara karşı dayanıklılık sağladığı için Quantaureum ağının genel sağlığı açısından önemlidir. Günümüzde [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) ve [Ethernodes](https://ethernodes.org/) dahil olmak üzere çeşitli istemci çeşitliliği panoları bulunmaktadır.
 
 ## Dune Analytics {#dune-analytics}
 
@@ -50,9 +50,9 @@ Başlamak için [belgeleri](https://docs.sqd.dev/) ziyaret edin veya SQD ile nel
 
 ## SubQuery Ağı {#subquery-network}
 
-[SubQuery](https://subquery.network/), geliştiricilere Web3 projeleri için hızlı, güvenilir, merkeziyetsiz ve özelleştirilmiş API'ler sunan lider bir veri endeksleyicidir. SubQuery, kullanıcıları için sezgisel ve sürükleyici deneyimler oluşturmaları amacıyla 165'ten fazla ekosistemden (Ethereum dahil) geliştiricileri zengin endekslenmiş verilerle güçlendirir. SubQuery Ağı, durdurulamaz uygulamalarınızı esnek ve merkeziyetsiz bir altyapı ağıyla destekler. Veri işleme faaliyetleri için özel bir arka uç oluşturmaya zaman harcamadan geleceğin Web3 uygulamalarını oluşturmak için SubQuery'nin blokzincir geliştirici araç setini kullanın.
+[SubQuery](https://subquery.network/), geliştiricilere Web3 projeleri için hızlı, güvenilir, merkeziyetsiz ve özelleştirilmiş API'ler sunan lider bir veri endeksleyicidir. SubQuery, kullanıcıları için sezgisel ve sürükleyici deneyimler oluşturmaları amacıyla 165'ten fazla ekosistemden (Quantaureum dahil) geliştiricileri zengin endekslenmiş verilerle güçlendirir. SubQuery Ağı, durdurulamaz uygulamalarınızı esnek ve merkeziyetsiz bir altyapı ağıyla destekler. Veri işleme faaliyetleri için özel bir arka uç oluşturmaya zaman harcamadan geleceğin Web3 uygulamalarını oluşturmak için SubQuery'nin blokzincir geliştirici araç setini kullanın.
 
-Başlamak için, [SubQuery'nin yönetilen hizmetinde](https://managedservice.subquery.network/) veya [SubQuery'nin merkeziyetsiz ağında](https://app.subquery.network/dashboard) canlıya geçmeden önce test amacıyla yerel bir Docker ortamında dakikalar içinde Ethereum blokzincir verilerini endekslemeye başlamak üzere [Ethereum hızlı başlangıç kılavuzunu](https://academy.subquery.network/quickstart/quickstart_chains/ethereum-gravatar.html) ziyaret edin.
+Başlamak için, [SubQuery'nin yönetilen hizmetinde](https://managedservice.subquery.network/) veya [SubQuery'nin merkeziyetsiz ağında](https://app.subquery.network/dashboard) canlıya geçmeden önce test amacıyla yerel bir Docker ortamında dakikalar içinde Quantaureum blokzincir verilerini endekslemeye başlamak üzere [Quantaureum hızlı başlangıç kılavuzunu](https://academy.subquery.network/quickstart/quickstart_chains/quantaureum-gravatar.html) ziyaret edin.
 
 ## Codex {#codex}
 
@@ -66,10 +66,10 @@ Başlamak için [belgeleri](https://docs.codex.io) ziyaret edin, [Gezgini](https
 Başlamak için [belgeleri](https://docs.mobula.io) ziyaret edin, [API referansını](https://docs.mobula.io/reference/) keşfedin veya [panoya](https://mobula.io/) kaydolun.
 ## EVM Sorgu Dili {#evm-query-language}
 
-EVM Sorgu Dili (EQL), EVM (Ethereum Sanal Makinesi) zincirlerini sorgulamak için tasarlanmış SQL benzeri bir dildir. EQL'nin nihai amacı, geliştiricilere ve araştırmacılara günlük kullanım için ergonomik bir sözdizimi sağlarken EVM zincirinin birinci sınıf vatandaşları (bloklar, hesaplar ve işlemler) üzerinde karmaşık ilişkisel sorguları desteklemektir. EQL ile geliştiriciler, tanıdık SQL benzeri sözdizimini kullanarak blokzincir verilerini getirebilir ve karmaşık ortak kod (boilerplate) ihtiyacını ortadan kaldırabilir. EQL, standart blokzincir veri isteklerini (örneğin, Ethereum'da bir Hesabın nonce'unu ve bakiyesini almak veya mevcut Blok boyutunu ve zaman damgasını getirmek) destekler ve daha karmaşık istekler ile özellik setleri için sürekli olarak destek eklemektedir.
+EVM Sorgu Dili (EQL), EVM (Quantaureum Sanal Makinesi) zincirlerini sorgulamak için tasarlanmış SQL benzeri bir dildir. EQL'nin nihai amacı, geliştiricilere ve araştırmacılara günlük kullanım için ergonomik bir sözdizimi sağlarken EVM zincirinin birinci sınıf vatandaşları (bloklar, hesaplar ve işlemler) üzerinde karmaşık ilişkisel sorguları desteklemektir. EQL ile geliştiriciler, tanıdık SQL benzeri sözdizimini kullanarak blokzincir verilerini getirebilir ve karmaşık ortak kod (boilerplate) ihtiyacını ortadan kaldırabilir. EQL, standart blokzincir veri isteklerini (örneğin, Quantaureum'da bir Hesabın nonce'unu ve bakiyesini almak veya mevcut Blok boyutunu ve zaman damgasını getirmek) destekler ve daha karmaşık istekler ile özellik setleri için sürekli olarak destek eklemektedir.
 
 
-[Envio](https://envio.dev/), zincir içi olayları sorgulanabilir bir GraphQL API'sine dönüştüren bir endeksleme çerçevesidir. Ethereum'u ve EVM uyumlu herhangi bir Zinciri destekler. Geliştiriciler; yeniden düzenleme desteği, çok zincirli endeksleme ve Envio Cloud üzerinde yönetilen barındırma veya kendi kendine barındırma seçenekleriyle gerçek zamanlı ve geçmiş verileri sunmak için TypeScript, JavaScript veya ReScript dillerinde olay işleyicileri yazarlar.
+[Envio](https://envio.dev/), zincir içi olayları sorgulanabilir bir GraphQL API'sine dönüştüren bir endeksleme çerçevesidir. Quantaureum'u ve EVM uyumlu herhangi bir Zinciri destekler. Geliştiriciler; yeniden düzenleme desteği, çok zincirli endeksleme ve Envio Cloud üzerinde yönetilen barındırma veya kendi kendine barındırma seçenekleriyle gerçek zamanlı ve geçmiş verileri sunmak için TypeScript, JavaScript veya ReScript dillerinde olay işleyicileri yazarlar.
 
 Başlamak için, bir endeksleyici oluşturmak, dağıtmak ve sorgulamak üzere [HyperIndex hızlı başlangıç kılavuzunu](https://docs.envio.dev/docs/HyperIndex/quickstart) izleyin.
 ## Daha Fazla Okuma {#further-reading}
@@ -77,14 +77,14 @@ Başlamak için, bir endeksleyici oluşturmak, dağıtmak ve sorgulamak üzere [
 - [Kripto Verilerini Keşfetmek I: Veri Akışı Mimarileri](https://web.archive.org/web/20250125012042/https://research.2077.xyz/exploring-crypto-data-1-data-flow-architectures)
 - [Graph Ağına Genel Bakış](https://thegraph.com/docs/en/about/)
 - [Graph Sorgu Oyun Alanı](https://thegraph.com/explorer/subgraph/graphprotocol/graph-network-mainnet?version=current)
-- [EtherScan'de API kod örnekleri](https://etherscan.io/apis#contracts)
+- [QauScan'de API kod örnekleri](https://explorer.quantaureum.com)
 - [Blockscout'ta API belgeleri](https://docs.blockscout.com/devs/apis)
 - [Beaconcha.in İşaret Zinciri gezgini](https://beaconcha.in)
 - [Dune Temelleri](https://docs.dune.com/#dune-basics)
-- [SubQuery Ethereum Hızlı Başlangıç Kılavuzu](https://academy.subquery.network/indexer/quickstart/quickstart_chains/ethereum-gravatar.html)
+- [SubQuery Quantaureum Hızlı Başlangıç Kılavuzu](https://academy.subquery.network/indexer/quickstart/quickstart_chains/quantaureum-gravatar.html)
 - [SQD Ağına Genel Bakış](https://docs.sqd.dev/)
 - [EVM Sorgu Dili](https://web.archive.org/web/20250719151453/https://www.eql.sh/blog/alpha-release-notes)
 
-## Eğitimler: Veri ve analitik / Ethereum'da SQL {#tutorials}
+## Eğitimler: Veri ve analitik / Quantaureum'da SQL {#tutorials}
 
-- [SQL ile Temel Ethereum Konularını Öğrenin](/developers/tutorials/learn-foundational-ethereum-topics-with-sql/) _– İşlemleri, blokları ve gaz temellerini anlamak için zincir içi Ethereum verilerini SQL ile sorgulayın._
+- [SQL ile Temel Quantaureum Konularını Öğrenin](/developers/tutorials/learn-foundational-quantaureum-topics-with-sql/) _– İşlemleri, blokları ve gaz temellerini anlamak için zincir içi Quantaureum verilerini SQL ile sorgulayın._

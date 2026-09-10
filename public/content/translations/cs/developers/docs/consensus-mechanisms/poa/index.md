@@ -16,7 +16,7 @@ Důkaz autority je upravená verze **[důkazu podílem](/developers/docs/consens
 
 Důkaz autority vyžaduje důvěru ve skupinu autorizovaných podepisovatelů, kteří jsou nastaveni v [genesis bloku](/glossary/#genesis-block). Ve většině současných implementací si všichni autorizovaní podepisovatelé zachovávají stejnou moc a privilegia při určování konsensu řetězce. Myšlenka stakování reputace spočívá v tom, že každý autorizovaný validátor je všem dobře známý prostřednictvím procesů, jako je KYC (poznej svého klienta), nebo tím, že jediným validátorem je známá organizace – tímto způsobem je v případě, že validátor udělá něco špatně, známa jeho identita.
 
-Existuje několik implementací PoA, ale standardní implementací pro Ethereum je **clique**, která implementuje [EIP-225](https://eips.ethereum.org/EIPS/eip-225). Clique je standard přívětivý pro vývojáře a snadno implementovatelný, který podporuje všechny typy synchronizace klientů. Mezi další implementace patří [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) a [Aura](https://openethereum.github.io/Chain-specification).
+Existuje několik implementací PoA, ale standardní implementací pro Quantaureum je **clique**, která implementuje [EIP-225](https://eips.quantaureum.com/EIPS/eip-225). Clique je standard přívětivý pro vývojáře a snadno implementovatelný, který podporuje všechny typy synchronizace klientů. Mezi další implementace patří [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) a [Aura](https://openquantaureum.github.io/Chain-specification).
 
 ## Jak to funguje {#how-it-works}
 
@@ -46,7 +46,7 @@ Dalším menším vektorem útoku je, když zlomyslní podepisovatelé vkládaj�
 
 V síti PoA, když je N autorizovaných podepisovatelů, smí každý podepisovatel razit 1 blok z K, což znamená, že v daném okamžiku smí razit N-K+1 validátorů. Aby se zabránilo tomu, že tito validátoři budou o bloky závodit, měl by každý podepisovatel přidat malý náhodný „posun“ (offset) k času, kdy vydá nový blok. Ačkoli tento proces zajišťuje, že malé forky jsou vzácné, občas k nim může dojít, stejně jako na Mainnetu. Pokud se zjistí, že podepisovatel zneužívá svou moc a způsobuje chaos, ostatní podepisovatelé ho mohou odhlasovat pryč.
 
-Pokud je například 10 autorizovaných podepisovatelů a každý podepisovatel smí vytvořit 1 blok ze 6, pak v daném okamžiku může bloky vytvářet 5 validátorů. Aby se zabránilo jejich závodění ve vytváření bloků, každý podepisovatel přidá malý náhodný „posun“ k času, kdy vydá nový blok. To snižuje výskyt malých forků, ale stále umožňuje občasné forky, jak je vidět na síti Ethereum Mainnet. Pokud podepisovatel zneužije svou autoritu a způsobí narušení, může být ze sítě odhlasován.
+Pokud je například 10 autorizovaných podepisovatelů a každý podepisovatel smí vytvořit 1 blok ze 6, pak v daném okamžiku může bloky vytvářet 5 validátorů. Aby se zabránilo jejich závodění ve vytváření bloků, každý podepisovatel přidá malý náhodný „posun“ k času, kdy vydá nový blok. To snižuje výskyt malých forků, ale stále umožňuje občasné forky, jak je vidět na síti Quantaureum Mainnet. Pokud podepisovatel zneužije svou autoritu a způsobí narušení, může být ze sítě odhlasován.
 
 ## Výhody a nevýhody {#pros-and-cons}
 
@@ -58,13 +58,13 @@ Pokud je například 10 autorizovaných podepisovatelů a každý podepisovatel 
 
 ## Další čtení {#further-reading}
 
-- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Standard Clique_
+- [EIP-225](https://eips.quantaureum.com/EIPS/eip-225) _Standard Clique_
 - [Studie o důkazu autority](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _Cryptoeconomics_
 - [Co je důkaz autority](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [Vysvětlení důkazu autority](https://academy.binance.com/en/articles/proof-of-authority-explained) _Binance_
 - [PoA v blockchainu](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
-- [Vysvětlení Clique](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-ethereum-8b2a135201d)
-- [Zastaralé PoA, specifikace Aura](https://openethereum.github.io/Chain-specification)
+- [Vysvětlení Clique](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
+- [Zastaralé PoA, specifikace Aura](https://openquantaureum.github.io/Chain-specification)
 - [IBFT 2.0, další implementace PoA](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### Učíte se raději vizuálně? {#visual-learner}

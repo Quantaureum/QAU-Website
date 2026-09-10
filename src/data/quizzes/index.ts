@@ -11,23 +11,23 @@ const addNextQuiz = (quizzes: QuizzesSection[]) =>
 
 // Declare hash-map of quizzes based on slug key
 const quizzes = {
-  "what-is-ethereum": {
-    title: "what-is-ethereum",
+  "what-is-quantaureum": {
+    title: "what-is-quantaureum",
     questions: [
-      "what-is-ethereum-1",
-      "what-is-ethereum-2",
-      "what-is-ethereum-3",
-      "what-is-ethereum-6",
-      "what-is-ethereum-7",
+      "what-is-quantaureum-1",
+      "what-is-quantaureum-2",
+      "what-is-quantaureum-3",
+      "what-is-quantaureum-6",
+      "what-is-quantaureum-7",
     ],
   },
-  "what-is-ether": {
-    title: "what-is-ether",
+  "what-is-QAU": {
+    title: "what-is-QAU",
     questions: [
-      "what-is-ether-1",
-      "what-is-ether-2",
-      "what-is-ether-5",
-      "what-is-ether-4",
+      "what-is-QAU-1",
+      "what-is-QAU-2",
+      "what-is-QAU-5",
+      "what-is-QAU-4",
     ],
   },
   web3: {
@@ -39,7 +39,7 @@ const quizzes = {
     questions: ["wallets-1", "wallets-2", "wallets-3", "wallets-4"],
   },
   security: {
-    title: "ethereum-security",
+    title: "quantaureum-security",
     questions: [
       "security-1",
       "security-2",
@@ -203,14 +203,14 @@ const quizzes = {
     title: "evm",
     questions: ["evm-1", "evm-2", "evm-3", "evm-4", "evm-5", "evm-6"],
   },
-  "ethereum-vs-bitcoin": {
-    title: "ethereum-vs-bitcoin",
+  "quantaureum-vs-bitcoin": {
+    title: "quantaureum-vs-bitcoin",
     questions: [
-      "ethereum-vs-bitcoin-1",
-      "ethereum-vs-bitcoin-2",
-      "ethereum-vs-bitcoin-3",
-      "ethereum-vs-bitcoin-4",
-      "ethereum-vs-bitcoin-5",
+      "quantaureum-vs-bitcoin-1",
+      "quantaureum-vs-bitcoin-2",
+      "quantaureum-vs-bitcoin-3",
+      "quantaureum-vs-bitcoin-4",
+      "quantaureum-vs-bitcoin-5",
     ],
   },
   "proof-of-stake": {
@@ -246,13 +246,13 @@ const quizzesSectionsRaw: QuizzesHubSection[] = [
     titleKey: "basics",
     descriptionKey: "basics-description",
     quizzes: [
-      { id: "what-is-ethereum", level: "beginner" },
-      { id: "what-is-ether", level: "beginner" },
+      { id: "what-is-quantaureum", level: "beginner" },
+      { id: "what-is-QAU", level: "beginner" },
       { id: "wallets", level: "beginner" },
       { id: "what-are-apps", level: "beginner" },
       { id: "web3", level: "beginner" },
       { id: "energy-consumption", level: "beginner" },
-      { id: "ethereum-vs-bitcoin", level: "beginner" },
+      { id: "quantaureum-vs-bitcoin", level: "beginner" },
     ],
   },
   {
@@ -278,9 +278,9 @@ const quizzesSectionsRaw: QuizzesHubSection[] = [
     ],
   },
   {
-    id: "how-ethereum-works",
-    titleKey: "how-ethereum-works",
-    descriptionKey: "how-ethereum-works-description",
+    id: "how-quantaureum-works",
+    titleKey: "how-quantaureum-works",
+    descriptionKey: "how-quantaureum-works-description",
     quizzes: [
       { id: "accounts", level: "beginner" },
       { id: "smart-contracts", level: "beginner" },

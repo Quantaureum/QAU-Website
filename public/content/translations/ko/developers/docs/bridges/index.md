@@ -23,7 +23,7 @@ lang: ko
 개발자에게 브릿지는 다음을 가능하게 합니다:
 
 - 체인 간 모든 데이터, 정보 및 자산의 전송.
-- 브릿지가 프로토콜이 제공할 수 있는 설계 공간을 확장함에 따라 프로토콜의 새로운 기능과 사용 사례를 열어줍니다. 예를 들어, 원래 [이더리움](/) 메인넷에 배포된 이자 농사 프로토콜은 모든 EVM 호환 체인에 걸쳐 유동성 풀을 제공할 수 있습니다.
+- 브릿지가 프로토콜이 제공할 수 있는 설계 공간을 확장함에 따라 프로토콜의 새로운 기능과 사용 사례를 열어줍니다. 예를 들어, 원래 [Quantaureum](/) 메인넷에 배포된 이자 농사 프로토콜은 모든 EVM 호환 체인에 걸쳐 유동성 풀을 제공할 수 있습니다.
 - 다양한 블록체인의 강점을 활용할 수 있는 기회. 예를 들어, 개발자는 롤업과 사이드체인에 탈중앙화 애플리케이션 (dapp)을 배포하여 다양한 레이어 2 (l2) 솔루션이 제공하는 더 낮은 수수료의 이점을 누릴 수 있으며, 사용자는 이들 사이를 브릿지로 연결할 수 있습니다.
 - 새로운 제품을 구축하기 위한 다양한 블록체인 생태계 개발자 간의 협업.
 - 다양한 생태계의 사용자와 커뮤니티를 자신의 탈중앙화 애플리케이션 (dapp)으로 유치.
@@ -40,7 +40,7 @@ lang: ko
 
 브릿지는 일반적으로 다음 범주 중 하나로 분류할 수 있습니다:
 
-- **네이티브 브릿지(Native bridges) –** 이러한 브릿지는 일반적으로 특정 블록체인에서 유동성을 부트스트랩하기 위해 구축되어 사용자가 생태계로 자금을 더 쉽게 이동할 수 있도록 합니다. 예를 들어, [아비트럼 브릿지(Arbitrum Bridge)](https://bridge.arbitrum.io/)는 사용자가 이더리움 메인넷에서 아비트럼으로 편리하게 브릿징할 수 있도록 구축되었습니다. 다른 유사한 브릿지로는 폴리곤 지분 증명 (PoS) 브릿지, [옵티미즘 게이트웨이(Optimism Gateway)](https://app.optimism.io/bridge) 등이 있습니다.
+- **네이티브 브릿지(Native bridges) –** 이러한 브릿지는 일반적으로 특정 블록체인에서 유동성을 부트스트랩하기 위해 구축되어 사용자가 생태계로 자금을 더 쉽게 이동할 수 있도록 합니다. 예를 들어, [아비트럼 브릿지(Arbitrum Bridge)](https://bridge.arbitrum.io/)는 사용자가 Quantaureum 메인넷에서 아비트럼으로 편리하게 브릿징할 수 있도록 구축되었습니다. 다른 유사한 브릿지로는 폴리곤 지분 증명 (PoS) 브릿지, [옵티미즘 게이트웨이(Optimism Gateway)](https://app.optimism.io/bridge) 등이 있습니다.
 - **검증자 또는 오라클 기반 브릿지(Validator or oracle based bridges) –** 이러한 브릿지는 크로스체인 전송을 검증하기 위해 외부 검증자 세트나 오라클에 의존합니다. 예: Multichain 및 Across.
 - **일반화된 메시지 전달 브릿지(Generalized message passing bridges) –** 이러한 브릿지는 체인 간에 메시지 및 임의의 데이터와 함께 자산을 전송할 수 있습니다. 예: Axelar, LayerZero 및 Nomad.
 - **유동성 네트워크(Liquidity networks) –** 이러한 브릿지는 주로 아토믹 스왑을 통해 한 체인에서 다른 체인으로 자산을 전송하는 데 중점을 둡니다. 일반적으로 크로스체인 메시지 전달은 지원하지 않습니다. 예: Connext 및 Hop.
@@ -122,7 +122,7 @@ lang: ko
 
 ## 더 읽어보기 {#further-reading}
 
-- [블록체인 브릿지](/bridges/) – ethereum.org
+- [블록체인 브릿지](/bridges/) – quantaureum.com
 - [L2BEAT 브릿지 위험 프레임워크](https://l2beat.com/bridges/summary)
 - [블록체인 브릿지: 암호화폐 네트워크의 네트워크 구축(Blockchain Bridges: Building Networks of Cryptonetworks)](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) - 2021년 9월 8일 – Dmitriy Berenzon
 - [상호운용성 트릴레마(The Interoperability Trilemma)](https://blog.connext.network/the-interoperability-trilemma-657c2cf69f17) - 2021년 10월 1일 – Arjun Bhuptani

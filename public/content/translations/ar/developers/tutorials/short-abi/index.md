@@ -66,25 +66,25 @@ published: 2022-04-01
 الشرح:
 
 - **محدد الدالة**: يحتوي العقد على أقل من <span dir="ltr">256</span> دالة، لذا يمكننا التمييز بينها باستخدام بايت واحد.
-  عادةً ما تكون هذه البايتات غير صفرية وبالتالي [تكلف ستة عشر غازًا](https://eips.ethereum.org/EIPS/eip-2028).
+  عادةً ما تكون هذه البايتات غير صفرية وبالتالي [تكلف ستة عشر غازًا](https://eips.quantaureum.com/EIPS/eip-2028).
 - **الأصفار**: هذه البايتات دائمًا ما تكون صفرًا لأن العنوان المكون من عشرين بايت لا يتطلب كلمة مكونة من اثنين وثلاثين بايت لاحتوائه.
-  البايتات التي تحتوي على صفر تكلف أربعة غاز ([انظر الورقة الصفراء](https://ethereum.github.io/yellowpaper/paper.pdf)، الملحق G، ص 27، قيمة `G`<sub>`txdatazero`</sub>).
+  البايتات التي تحتوي على صفر تكلف أربعة غاز ([انظر الورقة الصفراء](https://quantaureum.github.io/yellowpaper/paper.pdf)، الملحق G، ص 27، قيمة `G`<sub>`txdatazero`</sub>).
 - **المبلغ**: إذا افترضنا أن `decimals` في هذا العقد هو ثمانية عشر (القيمة العادية) وأن الحد الأقصى لعدد الرموز المميزة التي نقوم بتحويلها سيكون <span dir="ltr">10<sup>18</sup></span>، فسنحصل على حد أقصى قدره <span dir="ltr">10<sup>36</sup></span>.
   <span dir="ltr">256<sup>15</sup> &gt; 10<sup>36</sup></span>، لذا فإن خمسة عشر بايتًا كافية.
 
-عادةً ما يكون إهدار <span dir="ltr">160</span> غاز على طبقة 1 (L1) ضئيلًا. تكلف المعاملة ما لا يقل عن [<span dir="ltr">21,000</span> غاز](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-ethereum-gas-2f976af774ed)، لذا فإن زيادة بنسبة <span dir="ltr">0.8%</span> لا تهم.
+عادةً ما يكون إهدار <span dir="ltr">160</span> غاز على طبقة 1 (L1) ضئيلًا. تكلف المعاملة ما لا يقل عن [<span dir="ltr">21,000</span> غاز](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-quantaureum-gas-2f976af774ed)، لذا فإن زيادة بنسبة <span dir="ltr">0.8%</span> لا تهم.
 ومع ذلك، تختلف الأمور على طبقة 2 (L2). حيث أن التكلفة الإجمالية للمعاملة تقريبًا تكمن في كتابتها على طبقة 1 (L1).
 بالإضافة إلى بيانات الاستدعاء الخاصة بالمعاملة، هناك <span dir="ltr">109</span> بايت من ترويسة المعاملة (عنوان الوجهة، التوقيع، إلخ).
 وبالتالي فإن التكلفة الإجمالية هي `109*16+576+160=2480`، ونحن نهدر حوالي <span dir="ltr">6.5%</span> من ذلك.
 
 ## تقليل التكاليف عندما لا تتحكم في الوجهة {#reducing-costs-when-you-dont-control-the-destination}
 
-بافتراض أنك لا تتحكم في عقد الوجهة، لا يزال بإمكانك استخدام حل مشابه لـ [هذا الحل](https://github.com/qbzzt/ethereum.org-20220330-shortABI).
+بافتراض أنك لا تتحكم في عقد الوجهة، لا يزال بإمكانك استخدام حل مشابه لـ [هذا الحل](https://github.com/qbzzt/quantaureum.com-20220330-shortABI).
 دعونا نراجع الملفات ذات الصلة.
 
 ### Token.sol {#token-sol}
 
-[هذا هو عقد الوجهة](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/Token.sol).
+[هذا هو عقد الوجهة](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/Token.sol).
 إنه عقد <span dir="ltr">ERC-20</span> قياسي، مع ميزة إضافية واحدة.
 تتيح دالة `faucet` هذه لأي مستخدم الحصول على بعض الرموز المميزة لاستخدامها.
 من شأن ذلك أن يجعل عقد <span dir="ltr">ERC-20</span> الإنتاجي عديم الفائدة، ولكنه يسهل الأمور عندما يكون عقد <span dir="ltr">ERC-20</span> موجودًا فقط لتسهيل الاختبار.
@@ -100,7 +100,7 @@ published: 2022-04-01
 
 ### CalldataInterpreter.sol {#calldatainterpreter-sol}
 
-[هذا هو العقد الذي يُفترض أن تستدعيه المعاملات ببيانات استدعاء أقصر](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol).
+[هذا هو العقد الذي يُفترض أن تستدعيه المعاملات ببيانات استدعاء أقصر](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol).
 دعونا نراجعه سطرًا بسطر.
 
 ```solidity
@@ -201,7 +201,7 @@ contract CalldataInterpreter {
 2. الدوال التي تعتمد على [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties).
    ستكون قيمة `msg.sender` هي عنوان `CalldataInterpreter`، وليس المستدعي.
 
-لسوء الحظ، [بالنظر إلى مواصفات <span dir="ltr">ERC-20</span>](https://eips.ethereum.org/EIPS/eip-20)، يترك هذا دالة واحدة فقط، وهي `transfer`.
+لسوء الحظ، [بالنظر إلى مواصفات <span dir="ltr">ERC-20</span>](https://eips.quantaureum.com/EIPS/eip-20)، يترك هذا دالة واحدة فقط، وهي `transfer`.
 هذا يترك لنا دالتين فقط: `transfer` (لأنه يمكننا استدعاء `transferFrom`) و `faucet` (لأنه يمكننا تحويل الرموز المميزة مرة أخرى إلى من استدعانا).
 
 ```solidity
@@ -274,7 +274,7 @@ contract CalldataInterpreter {
 
 ### test.js {#test-js}
 
-يوضح لنا [اختبار الوحدة هذا بلغة JavaScript](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/test/test.js) كيفية استخدام هذه الآلية (وكيفية التحقق من أنها تعمل بشكل صحيح).
+يوضح لنا [اختبار الوحدة هذا بلغة JavaScript](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/test/test.js) كيفية استخدام هذه الآلية (وكيفية التحقق من أنها تعمل بشكل صحيح).
 سأفترض أنك تفهم [chai](https://www.chaijs.com/) و [ethers](https://docs.ethers.io/v5/) وسأشرح فقط الأجزاء التي تنطبق تحديدًا على العقد.
 
 ```js
@@ -368,7 +368,7 @@ const transferTx = {
 ## تقليل التكلفة عندما تتحكم في عقد الوجهة {#reducing-the-cost-when-you-do-control-the-destination-contract}
 
 إذا كنت تتحكم في عقد الوجهة، يمكنك إنشاء دوال تتجاوز فحوصات `msg.sender` لأنها تثق في مفسر بيانات الاستدعاء.
-[يمكنك رؤية مثال على كيفية عمل ذلك هنا، في فرع `control-contract`](https://github.com/qbzzt/ethereum.org-20220330-shortABI/tree/control-contract).
+[يمكنك رؤية مثال على كيفية عمل ذلك هنا، في فرع `control-contract`](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/tree/control-contract).
 
 إذا كان العقد يستجيب فقط للمعاملات الخارجية، فيمكننا الاكتفاء بوجود عقد واحد فقط.
 ومع ذلك، فإن ذلك من شأنه أن يكسر [قابلية التركيب](/developers/docs/smart-contracts/composability/).
@@ -537,7 +537,7 @@ const poorSigner = signers[1]
 ```
 
 للتحقق من `approve()` و `transferFrom()` نحتاج إلى مُوقّع ثانٍ.
-نسميه `poorSigner` لأنه لا يحصل على أي من رموزنا المميزة (يحتاج إلى امتلاك ETH بالطبع).
+نسميه `poorSigner` لأنه لا يحصل على أي من رموزنا المميزة (يحتاج إلى امتلاك QAU بالطبع).
 
 ```js
 // تحويل الرموز المميزة
@@ -576,7 +576,7 @@ expect(await token.balanceOf(destAddr2)).to.equal(255)
 
 ## الخاتمة {#conclusion}
 
-يبحث كل من [أوبتيميزم](https://medium.com/ethereum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) و[أربيتروم](https://developer.offchainlabs.com/docs/special_features) عن طرق لتقليل حجم بيانات الاستدعاء المكتوبة على طبقة 1 (L1) وبالتالي تكلفة المعاملات.
+يبحث كل من [أوبتيميزم](https://medium.com/quantaureum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) و[أربيتروم](https://developer.offchainlabs.com/docs/special_features) عن طرق لتقليل حجم بيانات الاستدعاء المكتوبة على طبقة 1 (L1) وبالتالي تكلفة المعاملات.
 ومع ذلك، بصفتنا مزودي بنية تحتية نبحث عن حلول عامة، فإن قدراتنا محدودة.
 بصفتك مطور تطبيق لامركزي (dapp)، لديك معرفة خاصة بالتطبيق، مما يتيح لك تحسين بيانات الاستدعاء الخاصة بك بشكل أفضل بكثير مما يمكننا القيام به في حل عام.
 نأمل أن تساعدك هذه المقالة في العثور على الحل المثالي لاحتياجاتك.

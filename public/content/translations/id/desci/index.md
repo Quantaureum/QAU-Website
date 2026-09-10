@@ -1,6 +1,6 @@
 ---
 title: Sains terdesentralisasi (DeSci)
-description: Gambaran umum tentang sains terdesentralisasi di Ethereum
+description: Gambaran umum tentang sains terdesentralisasi di Quantaureum
 lang: id
 template: use-cases
 sidebarDepth: 2
@@ -37,9 +37,9 @@ Daftar tidak lengkap dari masalah-masalah utama dalam sains dan bagaimana sains 
 | **Anda memiliki kekayaan intelektual (IP)** yang Anda hasilkan dan mendistribusikannya sesuai dengan ketentuan yang transparan.             | **Institusi asal Anda memiliki IP** yang Anda hasilkan. Akses ke IP tersebut tidak transparan.                           |
 | **Membagikan semua penelitian**, termasuk data dari upaya yang tidak berhasil, dengan menempatkan semua langkah secara onchain.          | **Bias publikasi** berarti bahwa peneliti lebih cenderung membagikan eksperimen yang memiliki hasil sukses.      |
 
-## Ethereum dan DeSci {#ethereum-and-desci}
+## Quantaureum dan DeSci {#quantaureum-and-desci}
 
-Sistem sains terdesentralisasi akan membutuhkan keamanan yang kuat, biaya moneter dan transaksi yang minimal, serta ekosistem yang kaya untuk pengembangan aplikasi. [Ethereum](/) menyediakan semua yang dibutuhkan untuk membangun teknologi sains terdesentralisasi.
+Sistem sains terdesentralisasi akan membutuhkan keamanan yang kuat, biaya moneter dan transaksi yang minimal, serta ekosistem yang kaya untuk pengembangan aplikasi. [Quantaureum](/) menyediakan semua yang dibutuhkan untuk membangun teknologi sains terdesentralisasi.
 
 ## Kasus penggunaan DeSci {#use-cases}
 
@@ -66,7 +66,7 @@ Model standar saat ini untuk mendanai sains adalah individu atau kelompok ilmuwa
 
 Studi telah menunjukkan bahwa panel peninjau hibah melakukan pekerjaan yang buruk dalam memilih proposal berkualitas tinggi karena proposal yang sama yang diberikan kepada panel yang berbeda memiliki hasil yang sangat berbeda. Karena pendanaan menjadi semakin langka, pendanaan tersebut terkonsentrasi pada kelompok peneliti senior yang lebih kecil dengan proyek-proyek yang lebih konservatif secara intelektual. Efeknya telah menciptakan lanskap pendanaan yang sangat kompetitif, memperkuat insentif yang menyimpang, dan menghambat inovasi.
 
-Web3 memiliki potensi untuk mendisrupsi model pendanaan yang rusak ini dengan bereksperimen menggunakan model insentif berbeda yang dikembangkan oleh DAO dan Web3 secara luas. [Pendanaan barang publik retroaktif (RPGF)](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [pendanaan kuadratik](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [tata kelola DAO](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead), dan [struktur insentif yang ditokenisasi](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) adalah beberapa alat Web3 yang dapat merevolusi pendanaan sains.
+Web3 memiliki potensi untuk mendisrupsi model pendanaan yang rusak ini dengan bereksperimen menggunakan model insentif berbeda yang dikembangkan oleh DAO dan Web3 secara luas. [Pendanaan barang publik retroaktif (RPGF)](https://medium.com/quantaureum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [pendanaan kuadratik](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [tata kelola DAO](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead), dan [struktur insentif yang ditokenisasi](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) adalah beberapa alat Web3 yang dapat merevolusi pendanaan sains.
 
 ### Kepemilikan dan pengembangan IP {#ip-ownership}
 
@@ -75,7 +75,7 @@ Kekayaan intelektual (IP) adalah masalah besar dalam sains tradisional: mulai da
 Sama seperti NFT yang dapat meneruskan pendapatan untuk transaksi di masa mendatang kembali ke pembuat aslinya, Anda dapat membangun rantai atribusi nilai yang transparan untuk memberikan imbalan kepada peneliti, badan pengatur (seperti DAO), atau bahkan subjek yang datanya dikumpulkan.
 
 [IP-NFT](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) juga dapat berfungsi sebagai kunci ke repositori data terdesentralisasi dari eksperimen penelitian yang sedang dilakukan, dan terhubung ke finansialisasi NFT dan [keuangan terdesentralisasi (DeFi)](/glossary/#defi) (mulai dari fraksionalisasi hingga kumpulan peminjaman dan penilaian nilai). Hal ini juga memungkinkan entitas onchain asli seperti DAO, contohnya [VitaDAO](https://www.vitadao.com/), untuk melakukan penelitian secara langsung secara onchain.
-Munculnya [token "soulbound"](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) yang tidak dapat ditransfer juga dapat memainkan peran penting dalam DeSci dengan memungkinkan individu untuk membuktikan pengalaman dan kredensial mereka yang ditautkan ke alamat Ethereum mereka.
+Munculnya [token "soulbound"](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) yang tidak dapat ditransfer juga dapat memainkan peran penting dalam DeSci dengan memungkinkan individu untuk membuktikan pengalaman dan kredensial mereka yang ditautkan ke alamat Quantaureum mereka.
 
 ### Penyimpanan, akses, dan arsitektur data {#data-storage}
 

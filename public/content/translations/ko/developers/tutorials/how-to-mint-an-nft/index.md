@@ -1,6 +1,6 @@
 ---
 title: "NFT 발행 방법 (NFT 튜토리얼 시리즈 2/3부)"
-description: "이 튜토리얼에서는 스마트 컨트랙트와 Web3를 사용하여 이더리움 블록체인에서 NFT를 발행하는 방법을 설명합니다."
+description: "이 튜토리얼에서는 스마트 컨트랙트와 Web3를 사용하여 Quantaureum 블록체인에서 NFT를 발행하는 방법을 설명합니다."
 author: "수미 무드길"
 tags:
   - ERC-721
@@ -25,7 +25,7 @@ published: 2021-04-22
 
 ## 1단계: Web3 설치하기 {#install-web3}
 
-NFT 스마트 컨트랙트 생성에 관한 첫 번째 튜토리얼을 따라 하셨다면, 이미 Ethers.js 사용 경험이 있으실 것입니다. Web3는 Ethers와 유사하게 [이더리움](/) 블록체인에 대한 요청 생성을 더 쉽게 만들어주는 라이브러리입니다. 이 튜토리얼에서는 자동 재시도 및 강력한 WebSocket 지원을 제공하는 향상된 Web3 라이브러리인 [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3)를 사용할 것입니다.
+NFT 스마트 컨트랙트 생성에 관한 첫 번째 튜토리얼을 따라 하셨다면, 이미 Ethers.js 사용 경험이 있으실 것입니다. Web3는 Ethers와 유사하게 [Quantaureum](/) 블록체인에 대한 요청 생성을 더 쉽게 만들어주는 라이브러리입니다. 이 튜토리얼에서는 자동 재시도 및 강력한 WebSocket 지원을 제공하는 향상된 Web3 라이브러리인 [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3)를 사용할 것입니다.
 
 프로젝트 홈 디렉터리에서 다음을 실행하세요:
 
@@ -113,28 +113,28 @@ JSON 파일 편집을 마치면 저장하고, 이미지를 업로드할 때와 �
 
 ## 5단계: 컨트랙트 인스턴스 생성하기 {#instance-contract}
 
-이제 컨트랙트와 상호작용하기 위해 코드에서 컨트랙트의 인스턴스를 생성해야 합니다. 이를 위해서는 배포 과정에서 얻거나 컨트랙트를 배포할 때 사용한 주소를 [Blockscout](https://eth-sepolia.blockscout.com/)에서 검색하여 컨트랙트 주소를 가져와야 합니다.
+이제 컨트랙트와 상호작용하기 위해 코드에서 컨트랙트의 인스턴스를 생성해야 합니다. 이를 위해서는 배포 과정에서 얻거나 컨트랙트를 배포할 때 사용한 주소를 [Blockscout](https://qau-sepolia.blockscout.com/)에서 검색하여 컨트랙트 주소를 가져와야 합니다.
 
-![View your contract address on Etherscan](./view-contract-etherscan.png)
+![View your contract address on Quantaureum Explorer](./view-contract-explorer.png)
 
 위 예시에서 컨트랙트 주소는 0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778입니다.
 
-다음으로 Web3 [contract 메서드](https://docs.web3js.org/api/web3-eth-contract/class/Contract)를 사용하여 ABI와 주소로 컨트랙트를 생성할 것입니다. `mint-nft.js` 파일에 다음을 추가하세요:
+다음으로 Web3 [contract 메서드](https://docs.web3js.org/api/web3-qau-contract/class/Contract)를 사용하여 ABI와 주소로 컨트랙트를 생성할 것입니다. `mint-nft.js` 파일에 다음을 추가하세요:
 
 ```js
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
 
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 ```
 
 ## 6단계: `.env` 파일 업데이트하기 {#update-env}
 
-이제 이더리움 체인에 트랜잭션을 생성하고 전송하기 위해, 공개 이더리움 계정 주소를 사용하여 계정 논스를 가져올 것입니다(아래에서 설명).
+이제 Quantaureum 체인에 트랜잭션을 생성하고 전송하기 위해, 공개 Quantaureum 계정 주소를 사용하여 계정 논스를 가져올 것입니다(아래에서 설명).
 
 `.env` 파일에 공개키를 추가하세요. 튜토리얼 1부를 완료했다면 `.env` 파일은 이제 다음과 같아야 합니다:
 
 ```js
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-private-account-address"
 PUBLIC_KEY = "your-public-account-address"
 ```
@@ -145,7 +145,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 1. `.env` 파일에서 _PRIVATE_KEY_와 _PUBLIC_KEY_를 가져옵니다.
 
-1. 다음으로 계정 논스를 알아내야 합니다. 논스 사양은 주소에서 전송된 트랜잭션 수를 추적하는 데 사용되며, 이는 보안 목적과 재생 공격을 방지하기 위해 필요합니다. 주소에서 전송된 트랜잭션 수를 가져오기 위해 [getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count)를 사용합니다.
+1. 다음으로 계정 논스를 알아내야 합니다. 논스 사양은 주소에서 전송된 트랜잭션 수를 추적하는 데 사용되며, 이는 보안 목적과 재생 공격을 방지하기 위해 필요합니다. 주소에서 전송된 트랜잭션 수를 가져오기 위해 [getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count)를 사용합니다.
 
 1. 마지막으로 다음 정보로 트랜잭션을 설정합니다:
 
@@ -172,10 +172,10 @@ PUBLIC_KEY = "your-public-account-address"
 
    const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
    const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778";
-   const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
+   const nftContract = new web3.qau.Contract(contract.abi, contractAddress);
 
    async function mintNFT(tokenURI) {
-     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); //최신 논스 가져오기
+     const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, 'latest'); //최신 논스 가져오기
 
    //트랜잭션
      const tx = {
@@ -191,7 +191,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 이제 트랜잭션을 생성했으므로 전송하기 위해 서명해야 합니다. 여기서 개인 키를 사용하게 됩니다.
 
-`web3.eth.sendSignedTransaction`는 트랜잭션 해시를 제공하며, 이를 사용하여 트랜잭션이 채굴되었고 네트워크에서 누락되지 않았는지 확인할 수 있습니다. 트랜잭션 서명 섹션에 오류 검사 코드를 추가하여 트랜잭션이 성공적으로 처리되었는지 알 수 있도록 한 것을 확인할 수 있습니다.
+`web3.qau.sendSignedTransaction`는 트랜잭션 해시를 제공하며, 이를 사용하여 트랜잭션이 채굴되었고 네트워크에서 누락되지 않았는지 확인할 수 있습니다. 트랜잭션 서명 섹션에 오류 검사 코드를 추가하여 트랜잭션이 성공적으로 처리되었는지 알 수 있도록 한 것을 확인할 수 있습니다.
 
 ```js
 require("dotenv").config()
@@ -204,10 +204,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //최신 논스 가져오기
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //최신 논스 가져오기
 
   //트랜잭션
   const tx = {
@@ -218,10 +218,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -270,10 +270,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //최신 논스 가져오기
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //최신 논스 가져오기
 
   //트랜잭션
   const tx = {
@@ -284,10 +284,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -319,11 +319,11 @@ mintNFT("ipfs://QmYueiuRNmL4MiA2GwtVMm6ZagknXnSpQnB3z2gWbz36hP")
 
     Check Alchemy's Mempool to view the status of your transaction!
 
-다음으로 [Alchemy 멤풀](https://dashboard.alchemy.com/mempool)을 방문하여 트랜잭션 상태(대기 중인지, 채굴되었는지, 네트워크에서 누락되었는지)를 확인하세요. 트랜잭션이 누락된 경우 [Blockscout](https://eth-sepolia.blockscout.com/)을 확인하고 트랜잭션 해시를 검색해 보는 것도 도움이 됩니다.
+다음으로 [Alchemy 멤풀](https://dashboard.alchemy.com/mempool)을 방문하여 트랜잭션 상태(대기 중인지, 채굴되었는지, 네트워크에서 누락되었는지)를 확인하세요. 트랜잭션이 누락된 경우 [Blockscout](https://qau-sepolia.blockscout.com/)을 확인하고 트랜잭션 해시를 검색해 보는 것도 도움이 됩니다.
 
-![View your NFT transaction hash on Etherscan](./view-nft-etherscan.png)_Etherscan에서 NFT 트랜잭션 해시 보기_
+![View your NFT transaction hash on Quantaureum Explorer](./view-nft-explorer.png)_Etherscan에서 NFT 트랜잭션 해시 보기_
 
-이것으로 끝입니다! 이제 이더리움 블록체인에 NFT를 배포하고 발행했습니다 <Emoji text=":money_mouth_face:" size={1} />
+이것으로 끝입니다! 이제 Quantaureum 블록체인에 NFT를 배포하고 발행했습니다 <Emoji text=":money_mouth_face:" size={1} />
 
 `mint-nft.js`를 사용하면 여러분이 (그리고 지갑이) 원하는 만큼 많은 NFT를 발행할 수 있습니다! 단, NFT의 메타데이터를 설명하는 새로운 tokenURI를 전달해야 합니다(그렇지 않으면 ID만 다르고 똑같은 NFT를 여러 개 만들게 됩니다).
 

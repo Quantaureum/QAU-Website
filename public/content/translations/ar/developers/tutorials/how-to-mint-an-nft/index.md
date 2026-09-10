@@ -109,18 +109,18 @@ node scripts/mint-nft.js
 
 ## الخطوة 5: إنشاء نسخة من العقد الخاص بك {#instance-contract}
 
-الآن، للتفاعل مع عقدنا، نحتاج إلى إنشاء نسخة منه في الكود الخاص بنا. للقيام بذلك، سنحتاج إلى عنوان العقد الخاص بنا والذي يمكننا الحصول عليه من النشر أو [Blockscout](https://eth-sepolia.blockscout.com/) من خلال البحث عن العنوان الذي استخدمته لنشر العقد.
+الآن، للتفاعل مع عقدنا، نحتاج إلى إنشاء نسخة منه في الكود الخاص بنا. للقيام بذلك، سنحتاج إلى عنوان العقد الخاص بنا والذي يمكننا الحصول عليه من النشر أو [Blockscout](https://qau-sepolia.blockscout.com/) من خلال البحث عن العنوان الذي استخدمته لنشر العقد.
 
-![View your contract address on Etherscan](./view-contract-etherscan.png)
+![View your contract address on Quantaureum Explorer](./view-contract-explorer.png)
 
 في المثال أعلاه، عنوان العقد الخاص بنا هو <span dir="ltr">0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778</span>.
 
-بعد ذلك سنستخدم [طريقة العقد](https://docs.web3js.org/api/web3-eth-contract/class/Contract) في Web3 لإنشاء عقدنا باستخدام ABI والعنوان. في ملف `mint-nft.js` الخاص بك، أضف ما يلي:
+بعد ذلك سنستخدم [طريقة العقد](https://docs.web3js.org/api/web3-qau-contract/class/Contract) في Web3 لإنشاء عقدنا باستخدام ABI والعنوان. في ملف `mint-nft.js` الخاص بك، أضف ما يلي:
 
 ```js
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
 
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 ```
 
 ## الخطوة 6: تحديث ملف `.env` {#update-env}
@@ -130,7 +130,7 @@ const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
 أضف مفتاحك العام إلى ملف `.env` الخاص بك — إذا أكملت الجزء الأول من البرنامج التعليمي، فيجب أن يبدو ملف `.env` الخاص بنا الآن هكذا:
 
 ```js
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-private-account-address"
 PUBLIC_KEY = "your-public-account-address"
 ```
@@ -141,7 +141,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 1. احصل على _PRIVATE_KEY_ و _PUBLIC_KEY_ من ملف `.env`.
 
-1. بعد ذلك، سنحتاج إلى معرفة الرقم الفريد (nonce) للحساب. تُستخدم مواصفات الرقم الفريد لتتبع عدد المعاملات المرسلة من عنوانك — وهو ما نحتاجه لأغراض أمنية ولمنع هجمات إعادة الإرسال. للحصول على عدد المعاملات المرسلة من عنوانك، نستخدم [getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count).
+1. بعد ذلك، سنحتاج إلى معرفة الرقم الفريد (nonce) للحساب. تُستخدم مواصفات الرقم الفريد لتتبع عدد المعاملات المرسلة من عنوانك — وهو ما نحتاجه لأغراض أمنية ولمنع هجمات إعادة الإرسال. للحصول على عدد المعاملات المرسلة من عنوانك، نستخدم [getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count).
 
 1. أخيرًا، سنقوم بإعداد معاملتنا بالمعلومات التالية:
 
@@ -168,10 +168,10 @@ PUBLIC_KEY = "your-public-account-address"
 
    const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
    const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778";
-   const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
+   const nftContract = new web3.qau.Contract(contract.abi, contractAddress);
 
    async function mintNFT(tokenURI) {
-     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); //الحصول على أحدث رقم فريد
+     const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, 'latest'); //الحصول على أحدث رقم فريد
 
    //المعاملة
      const tx = {
@@ -187,7 +187,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 الآن بعد أن أنشأنا معاملتنا، نحتاج إلى توقيعها من أجل إرسالها. هنا سنستخدم مفتاحنا الخاص.
 
-سيعطينا `web3.eth.sendSignedTransaction` تجزئة المعاملة، والتي يمكننا استخدامها للتأكد من أنه تم تعدين معاملتنا ولم يتم إسقاطها بواسطة الشبكة. ستلاحظ في قسم توقيع المعاملة، أننا أضفنا بعض التحقق من الأخطاء حتى نعرف ما إذا كانت معاملتنا قد تمت بنجاح.
+سيعطينا `web3.qau.sendSignedTransaction` تجزئة المعاملة، والتي يمكننا استخدامها للتأكد من أنه تم تعدين معاملتنا ولم يتم إسقاطها بواسطة الشبكة. ستلاحظ في قسم توقيع المعاملة، أننا أضفنا بعض التحقق من الأخطاء حتى نعرف ما إذا كانت معاملتنا قد تمت بنجاح.
 
 ```js
 require("dotenv").config()
@@ -200,10 +200,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //الحصول على أحدث رقم فريد
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //الحصول على أحدث رقم فريد
 
   //المعاملة
   const tx = {
@@ -214,10 +214,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -266,10 +266,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //الحصول على أحدث رقم فريد
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //الحصول على أحدث رقم فريد
 
   //المعاملة
   const tx = {
@@ -280,10 +280,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -315,9 +315,9 @@ mintNFT("ipfs://QmYueiuRNmL4MiA2GwtVMm6ZagknXnSpQnB3z2gWbz36hP")
 
     تحقق من مجمع الذاكرة (Mempool) الخاص بـ Alchemy لعرض حالة معاملتك!
 
-بعد ذلك، قم بزيارة [مجمع الذاكرة في Alchemy](https://dashboard.alchemy.com/mempool) لمعرفة حالة معاملتك (سواء كانت معلقة أو تم تعدينها أو تم إسقاطها بواسطة الشبكة). إذا تم إسقاط معاملتك، فمن المفيد أيضًا التحقق من [Blockscout](https://eth-sepolia.blockscout.com/) والبحث عن تجزئة المعاملة الخاصة بك.
+بعد ذلك، قم بزيارة [مجمع الذاكرة في Alchemy](https://dashboard.alchemy.com/mempool) لمعرفة حالة معاملتك (سواء كانت معلقة أو تم تعدينها أو تم إسقاطها بواسطة الشبكة). إذا تم إسقاط معاملتك، فمن المفيد أيضًا التحقق من [Blockscout](https://qau-sepolia.blockscout.com/) والبحث عن تجزئة المعاملة الخاصة بك.
 
-![View your NFT transaction hash on Etherscan](./view-nft-etherscan.png)_عرض تجزئة معاملة NFT الخاصة بك على Etherscan_
+![View your NFT transaction hash on Quantaureum Explorer](./view-nft-explorer.png)_عرض تجزئة معاملة NFT الخاصة بك على Etherscan_
 
 وهذا كل شيء! لقد قمت الآن بنشر وسك NFT على سلسلة كتل إيثيريوم <Emoji text=":money_mouth_face:" size={1} />
 

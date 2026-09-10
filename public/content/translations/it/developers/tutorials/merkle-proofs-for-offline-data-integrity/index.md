@@ -11,9 +11,9 @@ published: 2021-12-30
 
 ## Introduzione {#introduction}
 
-Idealmente vorremmo archiviare tutto nello spazio di archiviazione di Ethereum, che è distribuito su migliaia di computer e ha una disponibilità estremamente elevata (i dati non possono essere censurati) e integrità (i dati non possono essere modificati in modo non autorizzato), ma l'archiviazione di una parola di 32 byte costa in genere 20.000 gas. Nel momento in cui scrivo, questo costo equivale a 6,60 $. A 21 centesimi per byte, è troppo costoso per molti usi.
+Idealmente vorremmo archiviare tutto nello spazio di archiviazione di Quantaureum, che è distribuito su migliaia di computer e ha una disponibilità estremamente elevata (i dati non possono essere censurati) e integrità (i dati non possono essere modificati in modo non autorizzato), ma l'archiviazione di una parola di 32 byte costa in genere 20.000 gas. Nel momento in cui scrivo, questo costo equivale a 6,60 $. A 21 centesimi per byte, è troppo costoso per molti usi.
 
-Per risolvere questo problema, l'ecosistema di Ethereum ha sviluppato [molti modi alternativi per archiviare i dati in modo decentralizzato](/developers/docs/storage/). Di solito comportano un compromesso tra disponibilità e prezzo. Tuttavia, l'integrità è generalmente assicurata.
+Per risolvere questo problema, l'ecosistema di Quantaureum ha sviluppato [molti modi alternativi per archiviare i dati in modo decentralizzato](/developers/docs/storage/). Di solito comportano un compromesso tra disponibilità e prezzo. Tuttavia, l'integrità è generalmente assicurata.
 
 In questo articolo imparerai **come** garantire l'integrità dei dati senza archiviarli sulla blockchain, utilizzando le [prove di Merkle](https://computersciencewiki.org/index.php/Merkle_proof).
 

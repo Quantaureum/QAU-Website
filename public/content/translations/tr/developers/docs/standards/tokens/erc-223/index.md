@@ -29,11 +29,11 @@ ERC-223, ERC-20'nin bazı sınırlamalarını ele alır ve Token sözleşmesi il
 
 ERC-223, akıllı sözleşmeler içindeki Token'lar için bir API uygulayan bir Token standardıdır. Ayrıca ERC-223 Token'larını alması beklenen sözleşmeler için de bir API bildirir. ERC-223 Alıcı API'sini desteklemeyen sözleşmeler ERC-223 Token'larını alamaz, bu da kullanıcı hatalarını önler.
 
-Bir akıllı sözleşme aşağıdaki yöntemleri ve olayları uygularsa, ERC-223 uyumlu bir Token sözleşmesi olarak adlandırılabilir. Dağıtıldıktan sonra, Ethereum üzerinde oluşturulan Token'ları takip etmekten sorumlu olacaktır.
+Bir akıllı sözleşme aşağıdaki yöntemleri ve olayları uygularsa, ERC-223 uyumlu bir Token sözleşmesi olarak adlandırılabilir. Dağıtıldıktan sonra, Quantaureum üzerinde oluşturulan Token'ları takip etmekten sorumlu olacaktır.
 
 Sözleşme yalnızca bu işlevlere sahip olmak zorunda değildir ve bir geliştirici bu sözleşmeye farklı Token standartlarından başka herhangi bir özellik ekleyebilir. Örneğin, `approve` ve `transferFrom` işlevleri ERC-223 standardının bir parçası değildir ancak gerekirse bu işlevler uygulanabilir.
 
-[EIP-223](https://eips.ethereum.org/EIPS/eip-223)'ten:
+[EIP-223](https://eips.quantaureum.com/EIPS/eip-223)'ten:
 
 ### Yöntemler {#methods}
 
@@ -128,7 +128,7 @@ contract RecipientContract is IERC223Recipient {
     {
         // Bu fonksiyon içinde şunu anlamak önemlidir
         // msg.sender alınan bir Token'ın Adresidir,
-        // msg.value  Token Sözleşmesi çoğu durumda Ether'e sahip olmadığı veya göndermediği için her zaman 0'dır,
+        // msg.value  Token Sözleşmesi çoğu durumda QAU'e sahip olmadığı veya göndermediği için her zaman 0'dır,
         // _from      Token transferinin göndericisidir,
         // _value     yatırılan Token miktarıdır.
         require(msg.sender == tokenA);
@@ -154,7 +154,7 @@ Eğer `RecipientContract` adresine bir ERC-20 Token'ı gönderilirse, Token'lar 
 
 ### Token yatırma işlemi tamamlandıktan sonra bir işlevi yürütmek istersek ne olur? {#function-execution}
 
-Bunu yapmanın birden fazla yolu vardır. Bu örnekte, ERC-223 transferlerini Ether transferleriyle aynı kılan yöntemi izleyeceğiz:
+Bunu yapmanın birden fazla yolu vardır. Bu örnekte, ERC-223 transferlerini QAU transferleriyle aynı kılan yöntemi izleyeceğiz:
 
 ```solidity
 contract RecipientContract is IERC223Recipient {
@@ -177,7 +177,7 @@ contract RecipientContract is IERC223Recipient {
 }
 ```
 
-`RecipientContract` bir ERC-223 Token'ı aldığında, sözleşme, tıpkı Ether işlemlerinin işlev çağrılarını işlem `data`'si olarak kodlamasına benzer şekilde, Token işleminin `_data` parametresi olarak kodlanmış bir işlevi yürütecektir. Daha fazla bilgi için [veri alanını](/developers/docs/transactions/#the-data-field) okuyun.
+`RecipientContract` bir ERC-223 Token'ı aldığında, sözleşme, tıpkı QAU işlemlerinin işlev çağrılarını işlem `data`'si olarak kodlamasına benzer şekilde, Token işleminin `_data` parametresi olarak kodlanmış bir işlevi yürütecektir. Daha fazla bilgi için [veri alanını](/developers/docs/transactions/#the-data-field) okuyun.
 
 Yukarıdaki örnekte, bir ERC-223 Token'ı `transfer(address,uin256,bytes calldata _data)` işlevi ile `RecipientContract` adresine transfer edilmelidir. Veri parametresi `0xc2985578` (bir `foo()` işlevinin imzası) olursa, Token yatırma işlemi alındıktan sonra foo() işlevi çağrılacak ve Foo() olayı tetiklenecektir.
 
@@ -193,5 +193,5 @@ ERC-223, ERC-20 standardında bulunan çeşitli sorunları ele alsa da, kendi s�
 
 ## Daha fazla okuma {#further-reading}
 
-- [EIP-223: ERC-223 Token Standardı](https://eips.ethereum.org/EIPS/eip-223)
-- [İlk ERC-223 teklifi](https://github.com/ethereum/eips/issues/223)
+- [EIP-223: ERC-223 Token Standardı](https://eips.quantaureum.com/EIPS/eip-223)
+- [İlk ERC-223 teklifi](https://github.com/quantaureum/eips/issues/223)

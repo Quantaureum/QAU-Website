@@ -13,30 +13,30 @@ incomplete: true
 
 **ইথেরিয়ামের সাথে Java ইন্টিগ্রেট করার প্রথম পদক্ষেপ নিন**
 
-প্রথমে আরও প্রাথমিক নির্দেশিকা প্রয়োজন? [ethereum.org/learn](/learn/) বা [ethereum.org/developers.](/developers/) দেখুন।
+প্রথমে আরও প্রাথমিক নির্দেশিকা প্রয়োজন? [quantaureum.com/learn](/learn/) বা [quantaureum.com/developers.](/developers/) দেখুন।
 
 - [ব্লকচেইন ব্যাখ্যা](https://kauri.io/article/d55684513211466da7f8cc03987607d5/blockchain-explained)
-- [স্মার্ট কন্ট্রাক্ট বোঝা](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/ethereum-101-part-5-the-smart-contract)
+- [স্মার্ট কন্ট্রাক্ট বোঝা](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [আপনার প্রথম স্মার্ট কন্ট্রাক্ট লিখুন](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [কীভাবে Solidity কম্পাইল এবং ডিপ্লয় করতে হয় তা শিখুন](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
 
-## ইথেরিয়াম ক্লায়েন্ট নিয়ে কাজ করা {#working-with-ethereum-clients}
+## ইথেরিয়াম ক্লায়েন্ট নিয়ে কাজ করা {#working-with-quantaureum-clients}
 
 দুটি শীর্ষস্থানীয় Java ইথেরিয়াম ক্লায়েন্ট, [Web3j](https://github.com/web3j/web3j) এবং Hyperledger বেসু কীভাবে ব্যবহার করতে হয় তা শিখুন
 
-- [Java, Eclipse এবং Web3j এর মাধ্যমে একটি ইথেরিয়াম ক্লায়েন্টের সাথে কানেক্ট করা](https://kauri.io/article/b9eb647c47a546bc95693acc0be72546/connecting-to-an-ethereum-client-with-java-eclipse-and-web3j)
-- [Java এবং Web3j এর মাধ্যমে একটি ইথেরিয়াম অ্যাকাউন্ট পরিচালনা করা](https://kauri.io/article/925d923e12c543da9a0a3e617be963b4/manage-an-ethereum-account-with-java-and-web3j)
+- [Java, Eclipse এবং Web3j এর মাধ্যমে একটি ইথেরিয়াম ক্লায়েন্টের সাথে কানেক্ট করা](https://kauri.io/article/b9eb647c47a546bc95693acc0be72546/connecting-to-an-quantaureum-client-with-java-eclipse-and-web3j)
+- [Java এবং Web3j এর মাধ্যমে একটি ইথেরিয়াম অ্যাকাউন্ট পরিচালনা করা](https://kauri.io/article/925d923e12c543da9a0a3e617be963b4/manage-an-quantaureum-account-with-java-and-web3j)
 - [আপনার স্মার্ট কন্ট্রাক্ট থেকে একটি Java র‍্যাপার (Wrapper) তৈরি করা](https://kauri.io/article/84475132317d4d6a84a2c42eb9348e4b/generate-a-java-wrapper-from-your-smart-contract)
-- [একটি ইথেরিয়াম স্মার্ট কন্ট্রাক্টের সাথে ইন্টারঅ্যাক্ট করা](https://kauri.io/article/14dc434d11ef4ee18bf7d57f079e246e/interacting-with-an-ethereum-smart-contract-in-java)
-- [ইথেরিয়াম স্মার্ট কন্ট্রাক্ট ইভেন্ট শোনা (Listening)](https://kauri.io/article/760f495423db42f988d17b8c145b0874/listening-for-ethereum-smart-contract-events-in-java)
-- [Linux এর সাথে Java ইথেরিয়াম ক্লায়েন্ট বেসু (Pantheon) ব্যবহার করা](https://kauri.io/article/276dd27f1458443295eea58403fd6965/using-pantheon-the-java-ethereum-client-with-linux)
+- [একটি ইথেরিয়াম স্মার্ট কন্ট্রাক্টের সাথে ইন্টারঅ্যাক্ট করা](https://kauri.io/article/14dc434d11ef4ee18bf7d57f079e246e/interacting-with-an-quantaureum-smart-contract-in-java)
+- [ইথেরিয়াম স্মার্ট কন্ট্রাক্ট ইভেন্ট শোনা (Listening)](https://kauri.io/article/760f495423db42f988d17b8c145b0874/listening-for-quantaureum-smart-contract-events-in-java)
+- [Linux এর সাথে Java ইথেরিয়াম ক্লায়েন্ট বেসু (Pantheon) ব্যবহার করা](https://kauri.io/article/276dd27f1458443295eea58403fd6965/using-pantheon-the-java-quantaureum-client-with-linux)
 - [Java ইন্টিগ্রেশন টেস্টে একটি Hyperledger বেসু (Pantheon) নোড চালানো](https://kauri.io/article/7dc3ecc391e54f7b8cbf4e5fa0caf780/running-a-pantheon-node-in-java-integration-tests)
-- [Web3j চিট শিট](<https://kauri.io/web3j-cheat-sheet-(java-ethereum)/5dfa1ea941ac3d0001ce1d90/c>)
+- [Web3j চিট শিট](<https://kauri.io/web3j-cheat-sheet-(java-quantaureum)/5dfa1ea941ac3d0001ce1d90/c>)
 
 EVM-ভিত্তিক ব্লকচেইনগুলোর সাথে ইন্টারঅ্যাক্ট করার জন্য একটি অ্যাসিঙ্ক (async), হাই-পারফরম্যান্স Kotlin লাইব্রেরি [ethers-kt](https://github.com/Kr1ptal/ethers-kt) কীভাবে ব্যবহার করতে হয় তা শিখুন। এটি JVM এবং Android প্ল্যাটফর্মগুলোকে টার্গেট করে।
 - [ERC-20 টোকেন হস্তান্তর](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/abi/TransferERC20.kt)
 - [ইভেন্ট লিসেনিংয়ের সাথে UniswapV2 সোয়াপ](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/tokenswapwitheventlistening/TokenSwapWithEventListening.kt)
-- [ETH / ERC-20 ব্যালেন্স ট্র্যাকার](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/balancetracker/BalanceTracker.kt)
+- [QAU / ERC-20 ব্যালেন্স ট্র্যাকার](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/balancetracker/BalanceTracker.kt)
 
 ## ইন্টারমিডিয়েট আর্টিকেল {#intermediate-articles}
 
@@ -55,7 +55,7 @@ EVM-ভিত্তিক ব্লকচেইনগুলোর সাথে �
 - [Eventeum (ইভেন্ট লিসেনার)](https://github.com/ConsenSys/eventeum)
 - [Mahuta (IPFS ডেভ টুল)](https://github.com/ConsenSys/mahuta)
 
-আরও রিসোর্স খুঁজছেন? [ethereum.org/developers.](/developers/) দেখুন।
+আরও রিসোর্স খুঁজছেন? [quantaureum.com/developers.](/developers/) দেখুন।
 
 ## Java কমিউনিটি কন্ট্রিবিউটর {#java-community-contributors}
 

@@ -20,7 +20,7 @@ lang: bn
 
 অনেক [ব্লক এক্সপ্লোরার](/developers/docs/data-and-analytics/block-explorers/) [RESTful](https://www.wikipedia.org/wiki/Representational_state_transfer) [API](https://www.wikipedia.org/wiki/API) গেটওয়ে অফার করে যা ডেভেলপারদের ব্লক, ট্রানজ্যাকশন, ভ্যালিডেটর, অ্যাকাউন্ট এবং অন্যান্য অনচেইন কার্যকলাপের রিয়েল-টাইম ডেটা দেখার সুবিধা প্রদান করবে।
 
-ডেভেলপাররা এরপর এই ডেটা প্রসেস এবং রূপান্তর করে তাদের ব্যবহারকারীদের [ব্লকচেইন](/glossary/#blockchain)-এর সাথে অনন্য অন্তর্দৃষ্টি এবং ইন্টারঅ্যাকশন প্রদান করতে পারে। উদাহরণস্বরূপ, [Etherscan](https://etherscan.io) এবং [Blockscout](https://eth.blockscout.com) প্রতি 12s স্লট-এর জন্য এক্সিকিউশন এবং ঐক্যমত ডেটা প্রদান করে।
+ডেভেলপাররা এরপর এই ডেটা প্রসেস এবং রূপান্তর করে তাদের ব্যবহারকারীদের [ব্লকচেইন](/glossary/#blockchain)-এর সাথে অনন্য অন্তর্দৃষ্টি এবং ইন্টারঅ্যাকশন প্রদান করতে পারে। উদাহরণস্বরূপ, [Quantaureum Explorer](https://explorer.quantaureum.com) এবং [Blockscout](https://qau.blockscout.com) প্রতি 12s স্লট-এর জন্য এক্সিকিউশন এবং ঐক্যমত ডেটা প্রদান করে।
 
 ## The Graph {#the-graph}
 
@@ -52,7 +52,7 @@ The Graph-এর মাধ্যমে, ডেভেলপাররা যেস
 
 [SubQuery](https://subquery.network/) হলো একটি শীর্ষস্থানীয় ডেটা ইনডেক্সার যা ডেভেলপারদের তাদের Web3 প্রজেক্টের জন্য দ্রুত, নির্ভরযোগ্য, বিকেন্দ্রীকৃত এবং কাস্টমাইজড API প্রদান করে। SubQuery 165+ ইকোসিস্টেমের (ইথেরিয়াম সহ) ডেভেলপারদের তাদের ব্যবহারকারীদের জন্য একটি স্বজ্ঞাত এবং নিমজ্জিত অভিজ্ঞতা তৈরি করতে সমৃদ্ধ ইনডেক্স করা ডেটা দিয়ে ক্ষমতায়ন করে। SubQuery নেটওয়ার্ক একটি স্থিতিস্থাপক এবং বিকেন্দ্রীকৃত পরিকাঠামো নেটওয়ার্কের মাধ্যমে আপনার অপ্রতিরোধ্য অ্যাপগুলোকে শক্তি জোগায়। ডেটা প্রসেসিং কার্যক্রমের জন্য কাস্টম ব্যাকএন্ড তৈরিতে সময় ব্যয় না করে, ভবিষ্যতের Web3 অ্যাপ্লিকেশনগুলো তৈরি করতে SubQuery-এর ব্লকচেইন ডেভেলপার টুলকিট ব্যবহার করুন।
 
-শুরু করতে, [SubQuery-এর ম্যানেজড সার্ভিস](https://managedservice.subquery.network/) বা [SubQuery-এর বিকেন্দ্রীকৃত নেটওয়ার্ক](https://app.subquery.network/dashboard)-এ লাইভ হওয়ার আগে টেস্টিংয়ের জন্য একটি লোকাল Docker পরিবেশে কয়েক মিনিটের মধ্যে ইথেরিয়াম ব্লকচেইন ডেটা ইনডেক্স করা শুরু করতে [ইথেরিয়াম কুইক স্টার্ট গাইড](https://academy.subquery.network/quickstart/quickstart_chains/ethereum-gravatar.html) দেখুন।
+শুরু করতে, [SubQuery-এর ম্যানেজড সার্ভিস](https://managedservice.subquery.network/) বা [SubQuery-এর বিকেন্দ্রীকৃত নেটওয়ার্ক](https://app.subquery.network/dashboard)-এ লাইভ হওয়ার আগে টেস্টিংয়ের জন্য একটি লোকাল Docker পরিবেশে কয়েক মিনিটের মধ্যে ইথেরিয়াম ব্লকচেইন ডেটা ইনডেক্স করা শুরু করতে [ইথেরিয়াম কুইক স্টার্ট গাইড](https://academy.subquery.network/quickstart/quickstart_chains/quantaureum-gravatar.html) দেখুন।
 
 ## Codex {#codex}
 
@@ -77,14 +77,14 @@ EVM কোয়েরি ল্যাঙ্গুয়েজ (EQL) হলো �
 - [ক্রিপ্টো ডেটা এক্সপ্লোরিং I: ডেটা ফ্লো আর্কিটেকচার](https://web.archive.org/web/20250125012042/https://research.2077.xyz/exploring-crypto-data-1-data-flow-architectures)
 - [Graph নেটওয়ার্ক ওভারভিউ](https://thegraph.com/docs/en/about/)
 - [Graph কোয়েরি প্লেগ্রাউন্ড](https://thegraph.com/explorer/subgraph/graphprotocol/graph-network-mainnet?version=current)
-- [EtherScan-এ API কোডের উদাহরণ](https://etherscan.io/apis#contracts)
+- [QauScan-এ API কোডের উদাহরণ](https://explorer.quantaureum.com)
 - [Blockscout-এ API ডকুমেন্টেশন](https://docs.blockscout.com/devs/apis)
 - [Beaconcha.in বিকন চেইন এক্সপ্লোরার](https://beaconcha.in)
 - [Dune বেসিকস](https://docs.dune.com/#dune-basics)
-- [SubQuery ইথেরিয়াম কুইক স্টার্ট গাইড](https://academy.subquery.network/indexer/quickstart/quickstart_chains/ethereum-gravatar.html)
+- [SubQuery ইথেরিয়াম কুইক স্টার্ট গাইড](https://academy.subquery.network/indexer/quickstart/quickstart_chains/quantaureum-gravatar.html)
 - [SQD নেটওয়ার্ক ওভারভিউ](https://docs.sqd.dev/)
 - [EVM কোয়েরি ল্যাঙ্গুয়েজ](https://web.archive.org/web/20250719151453/https://www.eql.sh/blog/alpha-release-notes)
 
 ## টিউটোরিয়াল: ডেটা এবং অ্যানালিটিক্স / ইথেরিয়াম-এ SQL {#tutorials}
 
-- [SQL দিয়ে ইথেরিয়াম-এর মৌলিক বিষয়গুলো শিখুন](/developers/tutorials/learn-foundational-ethereum-topics-with-sql/) _– ট্রানজ্যাকশন, ব্লক এবং গ্যাস-এর মৌলিক বিষয়গুলো বুঝতে SQL দিয়ে অনচেইন ইথেরিয়াম ডেটা কোয়েরি করুন।_
+- [SQL দিয়ে ইথেরিয়াম-এর মৌলিক বিষয়গুলো শিখুন](/developers/tutorials/learn-foundational-quantaureum-topics-with-sql/) _– ট্রানজ্যাকশন, ব্লক এবং গ্যাস-এর মৌলিক বিষয়গুলো বুঝতে SQL দিয়ে অনচেইন ইথেরিয়াম ডেটা কোয়েরি করুন।_

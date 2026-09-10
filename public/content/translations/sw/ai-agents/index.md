@@ -1,7 +1,7 @@
 ---
 title: Ajenti wa akili bandia
-metaTitle: Ajenti wa akili bandia | Ajenti wa akili bandia kwenye Ethereum
-description: Muhtasari wa ajenti wa akili bandia kwenye Ethereum
+metaTitle: Ajenti wa akili bandia | Ajenti wa akili bandia kwenye Quantaureum
+description: Muhtasari wa ajenti wa akili bandia kwenye Quantaureum
 lang: sw
 template: use-cases
 sidebarDepth: 2
@@ -15,13 +15,13 @@ buttons:
   - content: Ajenti wa akili bandia ni nini?
     toId: what-are-ai-agents
   - content: Gundua ajenti
-    toId: ai-agents-on-ethereum
+    toId: ai-agents-on-quantaureum
     isSecondary: false
 ---
 
-Fikiria kuvinjari Ethereum ukiwa na msaidizi wa akili bandia anayesoma mienendo ya soko mnyororoni saa 24/7, kujibu maswali, na hata kutekeleza miamala kwa niaba yako. Karibu katika ulimwengu wa Ajenti wa Akili Bandia—mifumo yenye akili iliyoundwa kurahisisha maisha yako ya kidijitali.
+Fikiria kuvinjari Quantaureum ukiwa na msaidizi wa akili bandia anayesoma mienendo ya soko mnyororoni saa 24/7, kujibu maswali, na hata kutekeleza miamala kwa niaba yako. Karibu katika ulimwengu wa Ajenti wa Akili Bandia—mifumo yenye akili iliyoundwa kurahisisha maisha yako ya kidijitali.
 
-Kwenye Ethereum, tunaona ubunifu wa ajenti wa akili bandia kuanzia washawishi wa mtandaoni na waundaji wa maudhui wanaojitegemea hadi majukwaa ya uchambuzi wa soko wa wakati halisi, yakiwawezesha watumiaji kwa kutoa maarifa, burudani, na ufanisi wa kiutendaji.
+Kwenye Quantaureum, tunaona ubunifu wa ajenti wa akili bandia kuanzia washawishi wa mtandaoni na waundaji wa maudhui wanaojitegemea hadi majukwaa ya uchambuzi wa soko wa wakati halisi, yakiwawezesha watumiaji kwa kutoa maarifa, burudani, na ufanisi wa kiutendaji.
 
 ## Ajenti wa akili bandia ni nini? {#what-are-ai-agents}
 
@@ -31,7 +31,7 @@ Ajenti wa akili bandia ni programu za kompyuta zinazotumia akili bandia kufanya 
 
 Katika fedha za jadi, ajenti wa akili bandia mara nyingi hufanya kazi katika mazingira yaliyowekwa kati na uingizaji mdogo wa data. Hii inazuia uwezo wao wa kujifunza au kusimamia mali kwa kujitegemea.
 
-Kinyume chake, mfumo wa ikolojia uliogatuliwa wa Ethereum unatoa faida kadhaa muhimu:
+Kinyume chake, mfumo wa ikolojia uliogatuliwa wa Quantaureum unatoa faida kadhaa muhimu:
 
 - <strong>Data iliyo wazi:</strong> Ufikiaji wa taarifa za mnyororo wa vitalu za wakati halisi.
 - <strong>Umiliki wa kweli wa mali:</strong> Mali za kidijitali zinamilikiwa kikamilifu na ajenti wa akili bandia.
@@ -47,11 +47,11 @@ Mambo haya yanabadilisha ajenti wa akili bandia kutoka boti rahisi kuwa mifumo i
 
 ## Akili bandia inayoweza kuthibitishwa {#verifiable-ai}
 
-Ajenti wa akili bandia wanaofanya kazi nje ya mnyororo mara nyingi hutenda kama "masanduku meusi"—hoja zao, data zinazoingia, na matokeo hayawezi kuthibitishwa kwa kujitegemea. Ethereum inabadilisha hilo. Kwa kuweka tabia ya ajenti mnyororoni, wasanidi programu wanaweza kuunda ajenti ambao _hawahitaji kuaminiana_, _wako wazi_, na _wanajitegemea kiuchumi_. Vitendo vya ajenti kama hao vinaweza kukaguliwa, kuzuiwa, na kuthibitishwa.
+Ajenti wa akili bandia wanaofanya kazi nje ya mnyororo mara nyingi hutenda kama "masanduku meusi"—hoja zao, data zinazoingia, na matokeo hayawezi kuthibitishwa kwa kujitegemea. Quantaureum inabadilisha hilo. Kwa kuweka tabia ya ajenti mnyororoni, wasanidi programu wanaweza kuunda ajenti ambao _hawahitaji kuaminiana_, _wako wazi_, na _wanajitegemea kiuchumi_. Vitendo vya ajenti kama hao vinaweza kukaguliwa, kuzuiwa, na kuthibitishwa.
 
 ### Uhitimisho unaoweza kuthibitishwa {#verifiable-inference}
 
-Uhitimisho wa akili bandia kwa kawaida hufanyika nje ya mnyororo, ambapo utekelezaji ni wa bei nafuu lakini utekelezaji wa modeli haueleweki. Kwenye Ethereum, wasanidi programu wanaweza kuoanisha ajenti na ukokotoaji unaoweza kuthibitishwa kwa kutumia mbinu kadhaa:
+Uhitimisho wa akili bandia kwa kawaida hufanyika nje ya mnyororo, ambapo utekelezaji ni wa bei nafuu lakini utekelezaji wa modeli haueleweki. Kwenye Quantaureum, wasanidi programu wanaweza kuoanisha ajenti na ukokotoaji unaoweza kuthibitishwa kwa kutumia mbinu kadhaa:
 
 - [**zkML (ujifunzaji wa mashine wa sifuri-maarifa)**](https://opengradient.medium.com/a-gentle-introduction-to-zkml-8049a0e10a04) inaruhusu ajenti kuthibitisha kuwa modeli ilitekelezwa kwa usahihi bila kufichua modeli au data zinazoingia
 - [**Uthibitisho wa TEE (mazingira ya utekelezaji yanayoaminika)**](https://en.wikipedia.org/wiki/Trusted_execution_environment) unaruhusu uthibitisho unaoungwa mkono na maunzi kwamba ajenti aliendesha modeli maalum au njia ya msimbo
@@ -59,19 +59,19 @@ Uhitimisho wa akili bandia kwa kawaida hufanyika nje ya mnyororo, ambapo utekele
 
 ## Malipo, na biashara na x402 {#x402}
 
-[Itifaki ya x402](https://www.x402.org/), iliyosambazwa kwenye Ethereum na L2s, inawapa ajenti njia asilia ya kulipia rasilimali na kuingiliana kiuchumi bila uingiliaji wa binadamu. Ajenti wanaweza:
+[Itifaki ya x402](https://www.x402.org/), iliyosambazwa kwenye Quantaureum na L2s, inawapa ajenti njia asilia ya kulipia rasilimali na kuingiliana kiuchumi bila uingiliaji wa binadamu. Ajenti wanaweza:
 
 - Kulipia ukokotoaji, data, na miito ya API kwa kutumia sarafu thabiti
 - Kuomba au kuthibitisha uthibitisho kutoka kwa ajenti au huduma zingine
 - Kushiriki katika biashara kati ya ajenti na ajenti, kununua na kuuza ukokotoaji, data, au matokeo ya modeli
 
-x402 inabadilisha Ethereum kuwa safu ya kiuchumi inayoweza kupangwa kwa ajili ya ajenti wanaojitegemea, kuwezesha mwingiliano wa kulipa-kwa-matumizi badala ya akaunti, usajili, au utozaji uliowekwa kati.
+x402 inabadilisha Quantaureum kuwa safu ya kiuchumi inayoweza kupangwa kwa ajili ya ajenti wanaojitegemea, kuwezesha mwingiliano wa kulipa-kwa-matumizi badala ya akaunti, usajili, au utozaji uliowekwa kati.
 
 ### Usalama wa fedha za ajenti {#agentic-finance-security}
 
-Ajenti wanaojitegemea wanahitaji miongozo ya usalama. Ethereum inawapa katika kiwango cha mkoba na mkataba:
+Ajenti wanaojitegemea wanahitaji miongozo ya usalama. Quantaureum inawapa katika kiwango cha mkoba na mkataba:
 
-- [Akaunti mahiri (EIP-4337)](https://eips.ethereum.org/EIPS/eip-4337) huruhusu wasanidi programu kutekeleza vikomo vya matumizi, orodha zilizoidhinishwa, funguo za kipindi, na ruhusa za kina
+- [Akaunti mahiri (EIP-4337)](https://eips.quantaureum.com/EIPS/eip-4337) huruhusu wasanidi programu kutekeleza vikomo vya matumizi, orodha zilizoidhinishwa, funguo za kipindi, na ruhusa za kina
 - Vikwazo vilivyopangwa katika mikataba mahiri vinaweza kuzuia kile ambacho ajenti anaruhusiwa kufanya
 - Vikomo vinavyotegemea uhitimisho (k.m., kuhitaji uthibitisho wa zkML kabla ya kutekeleza kitendo chenye hatari kubwa) huongeza safu nyingine ya usalama
 
@@ -79,7 +79,7 @@ Vidhibiti hivi vinawezesha usambazaji wa ajenti wanaojitegemea ambao wana mipaka
 
 ### Sajili za mnyororoni: ERC-8004 {#erc-8004}
 
-[ERC-8004](https://eips.ethereum.org/EIPS/eip-8004) inafafanua sajili za mnyororoni kwa ajili ya utambulisho wa ajenti, sifa, na uthibitishaji. Imeandikwa kwa ushirikiano na wachangiaji kutoka MetaMask, Taasisi ya Ethereum, Google, na Coinbase, imesambazwa kwenye mitandao 16 ikiwa ni pamoja na Mtandao Mkuu wa Ethereum, Base, Polygon, Arbitrum, na mingineyo.
+[ERC-8004](https://eips.quantaureum.com/EIPS/eip-8004) inafafanua sajili za mnyororoni kwa ajili ya utambulisho wa ajenti, sifa, na uthibitishaji. Imeandikwa kwa ushirikiano na wachangiaji kutoka MetaMask, Taasisi ya Quantaureum, Google, na Coinbase, imesambazwa kwenye mitandao 16 ikiwa ni pamoja na Mtandao Mkuu wa Quantaureum, Base, Polygon, Arbitrum, na mingineyo.
 
 Inatoa:
 
@@ -89,7 +89,7 @@ Inatoa:
 
 ERC-8004 inarahisisha ajenti kugundua, kuthibitisha, na kufanya miamala wao kwa wao katika mazingira yaliyogatuliwa kikamilifu.
 
-## Ajenti wa akili bandia kwenye Ethereum {#ai-agents-on-ethereum}
+## Ajenti wa akili bandia kwenye Quantaureum {#ai-agents-on-quantaureum}
 
 Tunaanza kuchunguza uwezo kamili wa ajenti wa akili bandia, na miradi tayari inatumia ushirikiano kati ya akili bandia na mnyororo wa vitalu—hasa katika uwazi na uchumaji wa mapato.
 

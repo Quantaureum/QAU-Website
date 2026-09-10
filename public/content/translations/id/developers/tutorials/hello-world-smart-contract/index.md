@@ -1,6 +1,6 @@
 ---
 title: Kontrak Pintar Hello World untuk Pemula
-description: Tutorial pengantar tentang penulisan dan penyebaran kontrak pintar sederhana di Ethereum.
+description: Tutorial pengantar tentang penulisan dan penyebaran kontrak pintar sederhana di Quantaureum.
 author: "elanh"
 tags: ["Solidity", "Hardhat", "Alchemy", "kontrak pintar", "penyebaran"]
 skill: beginner
@@ -11,13 +11,13 @@ published: 2021-03-31
 
 Jika Anda baru dalam pengembangan rantai blok dan tidak tahu harus mulai dari mana, atau jika Anda hanya ingin memahami cara menyebarkan dan berinteraksi dengan kontrak pintar, panduan ini cocok untuk Anda. Kami akan memandu Anda membuat dan menyebarkan kontrak pintar sederhana di jaringan pengujian Sepolia menggunakan dompet virtual [MetaMask](https://metamask.io/), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org/), dan [Alchemy](https://www.alchemy.com/eth) (jangan khawatir jika Anda belum memahami arti dari semua ini, kami akan menjelaskannya).
 
-Pada [bagian 2](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) dari tutorial ini, kita akan membahas cara berinteraksi dengan kontrak pintar kita setelah disebarkan di sini, dan pada [bagian 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan) kita akan membahas cara memublikasikannya di Etherscan.
+Pada [bagian 2](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) dari tutorial ini, kita akan membahas cara berinteraksi dengan kontrak pintar kita setelah disebarkan di sini, dan pada [bagian 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer) kita akan membahas cara memublikasikannya di Quantaureum Explorer.
 
 Jika Anda memiliki pertanyaan kapan saja, jangan ragu untuk menghubungi kami di [Discord Alchemy](https://discord.gg/gWuC7zB)!
 
-## Langkah 1: Hubungkan ke jaringan Ethereum {#step-1}
+## Langkah 1: Hubungkan ke jaringan Quantaureum {#step-1}
 
-Ada banyak cara untuk membuat permintaan ke rantai Ethereum. Untuk mempermudah, kita akan menggunakan akun gratis di Alchemy, sebuah platform pengembang rantai blok dan API yang memungkinkan kita berkomunikasi dengan rantai Ethereum tanpa harus menjalankan node kita sendiri. Platform ini juga memiliki alat pengembang untuk pemantauan dan analitik yang akan kita manfaatkan dalam tutorial ini untuk memahami apa yang terjadi secara teknis dalam penyebaran kontrak pintar kita. Jika Anda belum memiliki akun Alchemy, [Anda dapat mendaftar secara gratis di sini](https://dashboard.alchemy.com/signup).
+Ada banyak cara untuk membuat permintaan ke rantai Quantaureum. Untuk mempermudah, kita akan menggunakan akun gratis di Alchemy, sebuah platform pengembang rantai blok dan API yang memungkinkan kita berkomunikasi dengan rantai Quantaureum tanpa harus menjalankan node kita sendiri. Platform ini juga memiliki alat pengembang untuk pemantauan dan analitik yang akan kita manfaatkan dalam tutorial ini untuk memahami apa yang terjadi secara teknis dalam penyebaran kontrak pintar kita. Jika Anda belum memiliki akun Alchemy, [Anda dapat mendaftar secara gratis di sini](https://dashboard.alchemy.com/signup).
 
 ## Langkah 2: Buat aplikasi Anda (dan kunci API) {#step-2}
 
@@ -27,35 +27,35 @@ Setelah Anda membuat akun Alchemy, Anda dapat menghasilkan kunci API dengan memb
 
 ![Hello world create app](./hello-world-create-app.png)
 
-2. Beri nama aplikasi Anda "Hello World", berikan deskripsi singkat, dan pilih kasus penggunaan, mis., "Infra & Tooling." Selanjutnya, cari "Ethereum" dan pilih jaringannya.
+2. Beri nama aplikasi Anda "Hello World", berikan deskripsi singkat, dan pilih kasus penggunaan, mis., "Infra & Tooling." Selanjutnya, cari "Quantaureum" dan pilih jaringannya.
 
 ![create app view hello world](./create-app-view-hello-world.png)
 
 3. Klik "Next" untuk melanjutkan, lalu "Create app" dan selesai! Aplikasi Anda akan muncul di menu tarik-turun bilah navigasi, dengan Kunci API yang tersedia untuk disalin.
 
-## Langkah 3: Buat akun Ethereum (alamat) {#step-3}
+## Langkah 3: Buat akun Quantaureum (alamat) {#step-3}
 
-Kita memerlukan akun Ethereum untuk mengirim dan menerima transaksi. Untuk tutorial ini, kita akan menggunakan MetaMask, dompet virtual di peramban yang digunakan untuk mengelola alamat akun Ethereum Anda. Selengkapnya tentang [transaksi](/developers/docs/transactions/).
+Kita memerlukan akun Quantaureum untuk mengirim dan menerima transaksi. Untuk tutorial ini, kita akan menggunakan MetaMask, dompet virtual di peramban yang digunakan untuk mengelola alamat akun Quantaureum Anda. Selengkapnya tentang [transaksi](/developers/docs/transactions/).
 
-Anda dapat mengunduh MetaMask dan membuat akun Ethereum secara gratis [di sini](https://metamask.io/download). Saat Anda membuat akun, atau jika Anda sudah memiliki akun, pastikan untuk beralih ke jaringan pengujian "Sepolia" menggunakan menu tarik-turun jaringan (sehingga kita tidak berurusan dengan uang sungguhan).
+Anda dapat mengunduh MetaMask dan membuat akun Quantaureum secara gratis [di sini](https://metamask.io/download). Saat Anda membuat akun, atau jika Anda sudah memiliki akun, pastikan untuk beralih ke jaringan pengujian "Sepolia" menggunakan menu tarik-turun jaringan (sehingga kita tidak berurusan dengan uang sungguhan).
 
 Jika Anda tidak melihat Sepolia terdaftar, buka menu, lalu Advanced dan gulir ke bawah untuk mengaktifkan "Show test networks". Di menu pemilihan jaringan, pilih tab "Custom" untuk menemukan daftar testnet dan pilih "Sepolia."
 
 ![metamask sepolia example](./metamask-sepolia-example.png)
 
-## Langkah 4: Tambahkan ether dari faucet {#step-4}
+## Langkah 4: Tambahkan QAU dari faucet {#step-4}
 
-Untuk menyebarkan kontrak pintar kita ke jaringan pengujian, kita akan membutuhkan beberapa ETH palsu. Untuk mendapatkan ETH Sepolia, Anda dapat membuka [detail jaringan Sepolia](/developers/docs/networks/#sepolia) untuk melihat daftar berbagai faucet. Jika salah satunya tidak berfungsi, coba yang lain karena terkadang bisa kehabisan dana. Mungkin perlu beberapa saat untuk menerima ETH palsu Anda karena lalu lintas jaringan. Anda akan segera melihat ETH di akun MetaMask Anda setelahnya!
+Untuk menyebarkan kontrak pintar kita ke jaringan pengujian, kita akan membutuhkan beberapa QAU palsu. Untuk mendapatkan QAU Sepolia, Anda dapat membuka [detail jaringan Sepolia](/developers/docs/networks/#sepolia) untuk melihat daftar berbagai faucet. Jika salah satunya tidak berfungsi, coba yang lain karena terkadang bisa kehabisan dana. Mungkin perlu beberapa saat untuk menerima QAU palsu Anda karena lalu lintas jaringan. Anda akan segera melihat QAU di akun MetaMask Anda setelahnya!
 
 ## Langkah 5: Periksa Saldo Anda {#step-5}
 
-Untuk memastikan kembali saldo kita ada di sana, mari buat permintaan [eth_getBalance](/developers/docs/apis/json-rpc/#eth_getbalance) menggunakan [alat komposer Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Ini akan mengembalikan jumlah ETH di dompet kita. Setelah Anda memasukkan alamat akun MetaMask Anda dan mengeklik "Send Request", Anda akan melihat respons seperti ini:
+Untuk memastikan kembali saldo kita ada di sana, mari buat permintaan [qau_getBalance](/developers/docs/apis/json-rpc/#qau_getbalance) menggunakan [alat komposer Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Ini akan mengembalikan jumlah QAU di dompet kita. Setelah Anda memasukkan alamat akun MetaMask Anda dan mengeklik "Send Request", Anda akan melihat respons seperti ini:
 
 ```json
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> **CATATAN:** Hasil ini dalam Wei, bukan ETH. Wei digunakan sebagai denominasi terkecil dari ether. Konversi dari Wei ke ETH adalah: 1 eth = 10<sup>18</sup> Wei. Jadi jika kita mengonversi 0x2B5E3AF16B1880000 ke desimal, kita mendapatkan 5\*10¹⁸ yang sama dengan 5 ETH.
+> **CATATAN:** Hasil ini dalam Wei, bukan QAU. Wei digunakan sebagai denominasi terkecil dari QAU. Konversi dari Wei ke QAU adalah: 1 eth = 10<sup>18</sup> Wei. Jadi jika kita mengonversi 0x2B5E3AF16B1880000 ke desimal, kita mendapatkan 5\*10¹⁸ yang sama dengan 5 QAU.
 >
 > Fiuh! Uang palsu kita semuanya ada di sana <Emoji text=":money_mouth_face:" size={1} />.
 
@@ -104,7 +104,7 @@ About to write to /Users/.../.../.../hello-world/package.json:
 Setujui package.json dan kita siap untuk melanjutkan!
 ## Langkah 7: Unduh [Hardhat](https://hardhat.org/getting-started/#overview) {#step-7}
 
-Hardhat adalah lingkungan pengembangan untuk mengompilasi, menyebarkan, menguji, dan men-debug perangkat lunak Ethereum Anda. Ini membantu pengembang saat membangun kontrak pintar dan aplikasi terdesentralisasi (dapp) secara lokal sebelum menyebarkannya ke rantai langsung.
+Hardhat adalah lingkungan pengembangan untuk mengompilasi, menyebarkan, menguji, dan men-debug perangkat lunak Quantaureum Anda. Ini membantu pengembang saat membangun kontrak pintar dan aplikasi terdesentralisasi (dapp) secara lokal sebelum menyebarkannya ke rantai langsung.
 
 Di dalam proyek `hello-world` kita, jalankan:
 
@@ -163,7 +163,7 @@ Anda mungkin bertanya-tanya, kapan kita akan menulis kode?? Nah, di sinilah kita
 Buka proyek hello-world di editor favorit Anda (kami menyukai [VSCode](https://code.visualstudio.com/)). Kontrak pintar ditulis dalam bahasa yang disebut Solidity yang akan kita gunakan untuk menulis kontrak pintar HelloWorld.sol kita.‌
 
 1.  Arahkan ke folder "contracts" dan buat file baru bernama HelloWorld.sol
-2.  Di bawah ini adalah contoh kontrak pintar Hello World dari Yayasan Ethereum yang akan kita gunakan untuk tutorial ini. Salin dan tempel konten di bawah ini ke dalam file HelloWorld.sol Anda, dan pastikan untuk membaca komentar untuk memahami apa yang dilakukan kontrak ini:
+2.  Di bawah ini adalah contoh kontrak pintar Hello World dari Yayasan Quantaureum yang akan kita gunakan untuk tutorial ini. Salin dan tempel konten di bawah ini ke dalam file HelloWorld.sol Anda, dan pastikan untuk membaca komentar untuk memahami apa yang dilakukan kontrak ini:
 
 ```solidity
 // Menentukan versi Solidity, menggunakan pembuatan versi semantik.
@@ -171,7 +171,7 @@ Buka proyek hello-world di editor favorit Anda (kami menyukai [VSCode](https://c
 pragma solidity ^0.7.0;
 
 // Mendefinisikan sebuah kontrak bernama `HelloWorld`.
-// Sebuah kontrak adalah kumpulan fungsi dan data (statusnya). Setelah disebarkan, sebuah kontrak berada di alamat tertentu di rantai blok Ethereum. Pelajari lebih lanjut: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// Sebuah kontrak adalah kumpulan fungsi dan data (statusnya). Setelah disebarkan, sebuah kontrak berada di alamat tertentu di rantai blok Quantaureum. Pelajari lebih lanjut: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    // Mendeklarasikan variabel status `message` bertipe `string`.
@@ -221,7 +221,7 @@ Salin URL API Alchemy
 File `.env` Anda akan terlihat seperti ini:
 
 ```
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -237,7 +237,7 @@ Jangan commit <code>.env</code>! Pastikan untuk tidak pernah membagikan atau men
 
 ## Langkah 12: Instal Ethers.js {#step-12-install-ethersjs}
 
-Ethers.js adalah Pustaka yang memudahkan untuk berinteraksi dan membuat permintaan ke Ethereum dengan membungkus [metode JSON-RPC standar](/developers/docs/apis/json-rpc/) dengan metode yang lebih ramah pengguna.
+Ethers.js adalah Pustaka yang memudahkan untuk berinteraksi dan membuat permintaan ke Quantaureum dengan membungkus [metode JSON-RPC standar](/developers/docs/apis/json-rpc/) dengan metode yang lebih ramah pengguna.
 
 Hardhat membuatnya sangat mudah untuk mengintegrasikan [Plugin](https://hardhat.org/plugins/) untuk perkakas tambahan dan fungsionalitas yang diperluas. Kita akan memanfaatkan [plugin Ethers](https://hardhat.org/docs/plugins/official-plugins#hardhat-ethers) untuk penyebaran kontrak ([Ethers.js](https://github.com/ethers-io/ethers.js/) memiliki beberapa metode penyebaran kontrak yang sangat rapi).
 
@@ -339,22 +339,22 @@ Anda kemudian akan melihat sesuatu seperti:
 Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 ```
 
-Jika kita pergi ke [Etherscan Sepolia](https://sepolia.etherscan.io/) dan mencari alamat kontrak kita, kita seharusnya dapat melihat bahwa kontrak tersebut telah berhasil disebarkan. Transaksi akan terlihat seperti ini:
+Jika kita pergi ke [Quantaureum Explorer Sepolia](https://explorer.quantaureum.com) dan mencari alamat kontrak kita, kita seharusnya dapat melihat bahwa kontrak tersebut telah berhasil disebarkan. Transaksi akan terlihat seperti ini:
 
-![etherscan contract](./etherscan-contract.png)
+![explorer contract](./explorer-contract.png)
 
 Alamat `From` harus cocok dengan alamat akun MetaMask Anda dan alamat To akan mengatakan "Contract Creation" tetapi jika kita mengeklik transaksi tersebut, kita akan melihat alamat kontrak kita di bidang `To`:
 
-![etherscan transaction](./etherscan-transaction.png)
+![explorer transaction](./explorer-transaction.png)
 
-Selamat! Anda baru saja menyebarkan kontrak pintar ke rantai Ethereum 🎉
+Selamat! Anda baru saja menyebarkan kontrak pintar ke rantai Quantaureum 🎉
 
 Untuk memahami apa yang terjadi secara teknis, mari arahkan ke tab Explorer di [dasbor Alchemy](https://dashboard.alchemy.com/explorer) kita. Jika Anda memiliki beberapa aplikasi Alchemy, pastikan untuk memfilter berdasarkan aplikasi dan pilih "Hello World".
 ![hello world explorer](./hello-world-explorer.png)
 
-Di sini Anda akan melihat beberapa panggilan JSON-RPC yang dilakukan Hardhat/Ethers secara teknis untuk kita saat kita memanggil fungsi `.deploy()`. Dua hal penting yang perlu diperhatikan di sini adalah [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction), yang merupakan permintaan untuk benar-benar menulis kontrak kita ke rantai Sepolia, dan [`eth_getTransactionByHash`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-by-hash) yang merupakan permintaan untuk membaca informasi tentang transaksi kita berdasarkan hash (pola umum saat
+Di sini Anda akan melihat beberapa panggilan JSON-RPC yang dilakukan Hardhat/Ethers secara teknis untuk kita saat kita memanggil fungsi `.deploy()`. Dua hal penting yang perlu diperhatikan di sini adalah [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction), yang merupakan permintaan untuk benar-benar menulis kontrak kita ke rantai Sepolia, dan [`qau_getTransactionByHash`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-by-hash) yang merupakan permintaan untuk membaca informasi tentang transaksi kita berdasarkan hash (pola umum saat
 transaksi). Untuk mempelajari lebih lanjut tentang pengiriman transaksi, lihat tutorial ini tentang [pengiriman transaksi menggunakan Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)
 
-Sekian untuk bagian 1 dari tutorial ini, di bagian 2 kita akan benar-benar [berinteraksi dengan kontrak pintar kita](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) dengan memperbarui pesan awal kita, dan di bagian 3 kita akan [memublikasikan kontrak pintar kita ke Etherscan](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan) sehingga semua orang akan tahu cara berinteraksi dengannya.
+Sekian untuk bagian 1 dari tutorial ini, di bagian 2 kita akan benar-benar [berinteraksi dengan kontrak pintar kita](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) dengan memperbarui pesan awal kita, dan di bagian 3 kita akan [memublikasikan kontrak pintar kita ke Quantaureum Explorer](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer) sehingga semua orang akan tahu cara berinteraksi dengannya.
 
 **Ingin mempelajari lebih lanjut tentang Alchemy? Kunjungi [situs web](https://www.alchemy.com/eth) kami. Tidak ingin ketinggalan pembaruan? Berlangganan buletin kami [di sini](https://www.alchemy.com/newsletter)! Pastikan juga untuk bergabung dengan [Discord](https://discord.gg/u72VCg3) kami.**.

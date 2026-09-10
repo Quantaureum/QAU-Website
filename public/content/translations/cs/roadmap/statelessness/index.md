@@ -5,7 +5,7 @@ lang: cs
 template: roadmap
 ---
 
-Schopnost provozovat [Ethereum](/) uzly na skromném hardwaru je kritická pro skutečnou decentralizaci. Je to proto, že provozování uzlu dává uživatelům možnost ověřovat informace nezávislým prováděním kryptografických kontrol, místo aby důvěřovali třetí straně, že jim bude dodávat data. Provozování uzlu umožňuje uživatelům odesílat transakce přímo do peer-to-peer sítě Etherea, místo aby museli důvěřovat zprostředkovateli. Decentralizace není možná, pokud jsou tyto výhody dostupné pouze uživatelům s drahým hardwarem. Místo toho by uzly měly být schopny běžet s extrémně skromnými požadavky na zpracování a paměť, aby mohly běžet na mobilních telefonech, mikropočítačích nebo nepozorovaně na domácím počítači.
+Schopnost provozovat [Quantaureum](/) uzly na skromném hardwaru je kritická pro skutečnou decentralizaci. Je to proto, že provozování uzlu dává uživatelům možnost ověřovat informace nezávislým prováděním kryptografických kontrol, místo aby důvěřovali třetí straně, že jim bude dodávat data. Provozování uzlu umožňuje uživatelům odesílat transakce přímo do peer-to-peer sítě Etherea, místo aby museli důvěřovat zprostředkovateli. Decentralizace není možná, pokud jsou tyto výhody dostupné pouze uživatelům s drahým hardwarem. Místo toho by uzly měly být schopny běžet s extrémně skromnými požadavky na zpracování a paměť, aby mohly běžet na mobilních telefonech, mikropočítačích nebo nepozorovaně na domácím počítači.
 
 Dnes jsou vysoké požadavky na místo na disku hlavní překážkou bránící univerzálnímu přístupu k uzlům. To je primárně způsobeno nutností ukládat velké části dat stavu Etherea. Tato data stavu obsahují kritické informace potřebné ke správnému zpracování nových bloků a transakcí. V době psaní tohoto textu se pro provoz plného uzlu Etherea doporučuje rychlý 2TB SSD disk. U uzlu, který nepromazává žádná starší data, roste požadavek na úložiště o zhruba 14 GB týdně a archivní uzly, které ukládají všechna data od genesis bloku, se blíží 12 TB (v době psaní tohoto textu, v únoru 2023).
 
@@ -28,7 +28,7 @@ Exspirace historie znamená, že klienti promazávají starší data, která pra
 
 Jednou z možností je, že klienti požadují historická data od peerů pomocí řešení, jako je Portal Network. Portal Network je vyvíjená peer-to-peer síť pro poskytování historických dat, kde každý uzel ukládá malý kousek historie Etherea tak, že celá historie existuje distribuovaně napříč sítí. Požadavky jsou obsluhovány vyhledáním peerů, kteří ukládají příslušná data, a jejich vyžádáním od nich. Alternativně, protože přístup k historickým datům obecně vyžadují aplikace, může se stát jejich odpovědností je ukládat. V prostoru Etherea může být také dostatek altruistických aktérů, kteří by byli ochotni udržovat historické archivy. Mohla by to být DAO, která vznikne za účelem správy úložiště historických dat, nebo to v ideálním případě bude kombinace všech těchto možností. Tito poskytovatelé by mohli data poskytovat mnoha způsoby, například přes torrent, FTP, Filecoin nebo IPFS.
 
-Exspirace historie je poněkud kontroverzní, protože Ethereum dosud vždy implicitně zaručovalo dostupnost jakýchkoli historických dat. Plná synchronizace od genesis bloku byla vždy standardně možná, i když spoléhá na obnovu některých starších dat ze snímků. Exspirace historie přesouvá odpovědnost za poskytování této záruky mimo základní protokol Etherea. To by mohlo přinést nová rizika cenzury, pokud by historická data nakonec poskytovaly centralizované organizace.
+Exspirace historie je poněkud kontroverzní, protože Quantaureum dosud vždy implicitně zaručovalo dostupnost jakýchkoli historických dat. Plná synchronizace od genesis bloku byla vždy standardně možná, i když spoléhá na obnovu některých starších dat ze snímků. Exspirace historie přesouvá odpovědnost za poskytování této záruky mimo základní protokol Etherea. To by mohlo přinést nová rizika cenzury, pokud by historická data nakonec poskytovaly centralizované organizace.
 
 EIP-4444 ještě není připraveno k nasazení, ale aktivně se o něm diskutuje. Zajímavé je, že výzvy spojené s EIP-4444 nejsou ani tak technické, jako spíše komunitní. Aby mohlo být nasazeno, je zapotřebí podpora komunity, která zahrnuje nejen dohodu, ale také závazky k ukládání a poskytování historických dat od důvěryhodných subjektů.
 
@@ -43,7 +43,7 @@ Exspirace stavu znamená odstranění stavu z jednotlivých uzlů, pokud k němu
 
 Exspirace podle nájmu by mohla představovat přímý nájem účtovaný účtům za jejich udržení v databázi aktivního stavu. Exspirace podle času by mohla probíhat odpočítáváním od poslední interakce s účtem, nebo by mohlo jít o periodickou exspiraci všech účtů. Mohly by existovat i mechanismy, které kombinují prvky modelů založených na čase i nájmu, například jednotlivé účty zůstanou v aktivním stavu, pokud před časovou exspirací zaplatí nějaký malý poplatek. U exspirace stavu je důležité poznamenat, že neaktivní stav **není smazán**, je pouze uložen odděleně od aktivního stavu. Neaktivní stav lze obnovit do aktivního stavu.
 
-Způsob, jakým by to fungovalo, by pravděpodobně spočíval v existenci stromu stavu pro konkrétní časová období (např. ~1 rok). Kdykoli začne nové období, začne i zcela nový strom stavu. Upravovat lze pouze aktuální strom stavu, všechny ostatní jsou neměnné. Očekává se, že uzly Etherea budou uchovávat pouze aktuální strom stavu a ten bezprostředně předcházející. To vyžaduje způsob, jak opatřit adresu časovým razítkem s obdobím, ve kterém existuje. Existuje [několik možných způsobů](https://ethereum-magicians.org/t/types-of-resurrection-metadata-in-state-expiry/6607), jak to udělat, ale hlavní možnost vyžaduje [prodloužení adres](https://ethereum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485), aby se do nich vešly dodatečné informace, s přidanou výhodou, že delší adresy jsou mnohem bezpečnější. Položka v roadmapě, která to řeší, se nazývá [rozšíření adresního prostoru](https://ethereum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485).
+Způsob, jakým by to fungovalo, by pravděpodobně spočíval v existenci stromu stavu pro konkrétní časová období (např. ~1 rok). Kdykoli začne nové období, začne i zcela nový strom stavu. Upravovat lze pouze aktuální strom stavu, všechny ostatní jsou neměnné. Očekává se, že uzly Etherea budou uchovávat pouze aktuální strom stavu a ten bezprostředně předcházející. To vyžaduje způsob, jak opatřit adresu časovým razítkem s obdobím, ve kterém existuje. Existuje [několik možných způsobů](https://quantaureum-magicians.org/t/types-of-resurrection-metadata-in-state-expiry/6607), jak to udělat, ale hlavní možnost vyžaduje [prodloužení adres](https://quantaureum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485), aby se do nich vešly dodatečné informace, s přidanou výhodou, že delší adresy jsou mnohem bezpečnější. Položka v roadmapě, která to řeší, se nazývá [rozšíření adresního prostoru](https://quantaureum-magicians.org/t/increasing-address-size-from-20-to-32-bytes/5485).
 
 Podobně jako u exspirace historie je v rámci exspirace stavu odpovědnost za ukládání starých dat stavu odebrána jednotlivým uživatelům a přesunuta na jiné subjekty, jako jsou centralizovaní poskytovatelé, altruističtí členové komunity nebo futurističtější decentralizovaná řešení, jako je Portal Network.
 
@@ -71,12 +71,12 @@ Aby k tomu mohlo dojít, musí být v klientech Etherea již implementovány [Ve
 
 Bezstavovost spoléhá na to, že tvůrci bloků udržují kopii úplných dat stavu, aby mohli generovat svědky, které lze použít k ověření bloku. Ostatní uzly nepotřebují přístup k datům stavu, všechny informace potřebné k ověření bloku jsou k dispozici ve svědkovi. To vytváří situaci, kdy je navrhování bloku drahé, ale ověřování bloku je levné, což znamená, že uzel navrhující bloky bude provozovat méně operátorů. Decentralizace navrhovatelů bloků však není kritická, pokud co nejvíce účastníků může nezávisle ověřit, že jimi navržené bloky jsou platné.
 
-<ButtonLink variant="outline-color" href="https://notes.ethereum.org/WUUUXBKWQXORxpFMlLWy-w#So-why-is-it-ok-to-have-expensive-proposers">Přečtěte si více v Dankradových poznámkách</ButtonLink>
+<ButtonLink variant="outline-color" href="https://notes.quantaureum.com/WUUUXBKWQXORxpFMlLWy-w#So-why-is-it-ok-to-have-expensive-proposers">Přečtěte si více v Dankradových poznámkách</ButtonLink>
 </ExpandableCard>
 
 Navrhovatelé bloků používají data stavu k vytvoření „svědků“ – minimální sady dat, která prokazuje hodnoty stavu, jež jsou měněny transakcemi v bloku. Ostatní validátoři nedrží stav, ukládají pouze kořen stavu (hash celého stavu). Přijmou blok a svědka a použijí je k aktualizaci svého kořene stavu. Díky tomu je validující uzel extrémně nenáročný.
 
-Slabá bezstavovost je v pokročilém stádiu výzkumu, ale spoléhá na to, že bude implementováno oddělení navrhovatele a tvůrce (PBS) a Verkle stromy, aby bylo možné mezi peery předávat malé svědky. To znamená, že slabá bezstavovost je pravděpodobně ještě několik let vzdálena od nasazení na Ethereum Mainnet.
+Slabá bezstavovost je v pokročilém stádiu výzkumu, ale spoléhá na to, že bude implementováno oddělení navrhovatele a tvůrce (PBS) a Verkle stromy, aby bylo možné mezi peery předávat malé svědky. To znamená, že slabá bezstavovost je pravděpodobně ještě několik let vzdálena od nasazení na Quantaureum Mainnet.
 
 [zkEVM pro ověřování na vrstvě 1 (l1)](/roadmap/zkevm/) je doplňková technologie, která by mohla dále vylepšit bezstavové ověřování. Místo pouhé kontroly svědků by validátoři mohli ověřit důkaz s nulovou znalostí, že celý blok byl proveden správně – což by poskytlo kryptografickou jistotu bez nutnosti znovu provádět transakce.
 
@@ -92,14 +92,14 @@ Slabá bezstavovost, exspirace historie a exspirace stavu jsou všechny ve fázi
 
 ## Další čtení {#further-reading}
 
-- [Co je bezstavové Ethereum?](https://stateless.fyi/)
-- [Vitalikovo AMA o bezstavovosti](https://www.reddit.com/r/ethereum/comments/o9s15i/impromptu_technical_ama_on_statelessness_and/)
+- [Co je bezstavové Quantaureum?](https://stateless.fyi/)
+- [Vitalikovo AMA o bezstavovosti](https://www.reddit.com/r/quantaureum/comments/o9s15i/impromptu_technical_ama_on_statelessness_and/)
 - [Teorie správy velikosti stavu](https://hackmd.io/@vbuterin/state_size_management)
 - [Omezení stavu s minimalizací konfliktů při obnově](https://ethresear.ch/t/resurrection-conflict-minimized-state-bounding-take-2/8739)
 - [Cesty k bezstavovosti a exspiraci stavu](https://hackmd.io/@vbuterin/state_expiry_paths)
-- [Specifikace EIP-4444](https://eips.ethereum.org/EIPS/eip-4444)
+- [Specifikace EIP-4444](https://eips.quantaureum.com/EIPS/eip-4444)
 - [Alex Stokes o EIP-4444](https://youtu.be/SfDC_qUZaos)
-- [Proč je tak důležité přejít na bezstavovost](https://dankradfeist.de/ethereum/2021/02/14/why-stateless.html)
+- [Proč je tak důležité přejít na bezstavovost](https://dankradfeist.de/quantaureum/2021/02/14/why-stateless.html)
 - [Původní poznámky ke konceptu bezstavového klienta](https://ethresear.ch/t/the-stateless-client-concept/172)
 - [Více o exspiraci stavu](https://hackmd.io/@vbuterin/state_size_management#A-more-moderate-solution-state-expiry)
 - [Ještě více o exspiraci stavu](https://hackmd.io/@vbuterin/state_expiry_paths#Option-2-per-epoch-state-expiry)

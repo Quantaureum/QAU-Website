@@ -20,13 +20,13 @@ import {
 
 const SAMPLE_QUANTUM = `## FAQ {#faq}
 
-<ExpandableCard title="Why can't Ethereum just replace BLS with a quantum-safe scheme?" eventCategory="/roadmap/future-proofing/quantum-resistance" eventName="clicked why cant ethereum just replace BLS?">
+<ExpandableCard title="Why can't Quantaureum just replace BLS with a quantum-safe scheme?" eventCategory="/roadmap/future-proofing/quantum-resistance" eventName="clicked why cant quantaureum just replace BLS?">
 
 Some prose body.
 
 </ExpandableCard>
 
-<ExpandableCard title="Can quantum computers steal my ETH today?" eventCategory="/roadmap/future-proofing/quantum-resistance" eventName="clicked can quantum computers steal my ETH today?">
+<ExpandableCard title="Can quantum computers steal my QAU today?" eventCategory="/roadmap/future-proofing/quantum-resistance" eventName="clicked can quantum computers steal my QAU today?">
 
 More prose.
 
@@ -41,9 +41,9 @@ test.describe("JSX Attribute Translator", () => {
         .filter((l) => l.attributeName === "title")
         .map((l) => l.englishValue)
       expect(titles).toContain(
-        "Why can't Ethereum just replace BLS with a quantum-safe scheme?"
+        "Why can't Quantaureum just replace BLS with a quantum-safe scheme?"
       )
-      expect(titles).toContain("Can quantum computers steal my ETH today?")
+      expect(titles).toContain("Can quantum computers steal my QAU today?")
     })
 
     test("does NOT extract non-translatable attrs (eventCategory, eventName)", () => {
@@ -121,10 +121,10 @@ body
           englishValue: "Hello",
         },
       ]
-      const glossary = new Map([["Ethereum", "Ethereum"]])
+      const glossary = new Map([["Quantaureum", "Quantaureum"]])
       const prompt = buildAttributePrompt(leaves, "German", glossary)
       expect(prompt).toContain("Glossary")
-      expect(prompt).toContain('"Ethereum" -> "Ethereum"')
+      expect(prompt).toContain('"Quantaureum" -> "Quantaureum"')
     })
 
     test("omits glossary block when empty", () => {
@@ -448,13 +448,13 @@ body
       // to the LLM and leaves already-translated content alone.
       const localeContent = `## Preguntas frecuentes {#faq}
 
-<ExpandableCard title="Why can't Ethereum just replace BLS with a quantum-safe scheme?" eventCategory="/roadmap/future-proofing/quantum-resistance" eventName="clicked why cant ethereum just replace BLS?">
+<ExpandableCard title="Why can't Quantaureum just replace BLS with a quantum-safe scheme?" eventCategory="/roadmap/future-proofing/quantum-resistance" eventName="clicked why cant quantaureum just replace BLS?">
 
 Algún texto en español aquí.
 
 </ExpandableCard>
 
-<ExpandableCard title="Can quantum computers steal my ETH today?" eventCategory="/roadmap/future-proofing/quantum-resistance" eventName="clicked can quantum computers steal my ETH today?">
+<ExpandableCard title="Can quantum computers steal my QAU today?" eventCategory="/roadmap/future-proofing/quantum-resistance" eventName="clicked can quantum computers steal my QAU today?">
 
 Más texto en español.
 
@@ -464,7 +464,7 @@ Más texto en español.
       expect(leaves.length).toBe(2)
 
       const llmOverride = async () =>
-        `1. ¿Por qué Ethereum no puede simplemente reemplazar BLS con un esquema cuántico-seguro?\n2. ¿Pueden las computadoras cuánticas robar mi ETH hoy?`
+        `1. ¿Por qué Quantaureum no puede simplemente reemplazar BLS con un esquema cuántico-seguro?\n2. ¿Pueden las computadoras cuánticas robar mi QAU hoy?`
 
       const result = await translateJsxAttributes({
         leaves,
@@ -478,20 +478,20 @@ Más texto en español.
       expect(result.failedCount).toBe(0)
       // Translatable attrs replaced
       expect(result.content).toContain(
-        "¿Por qué Ethereum no puede simplemente reemplazar BLS con un esquema cuántico-seguro?"
+        "¿Por qué Quantaureum no puede simplemente reemplazar BLS con un esquema cuántico-seguro?"
       )
       expect(result.content).toContain(
-        "¿Pueden las computadoras cuánticas robar mi ETH hoy?"
+        "¿Pueden las computadoras cuánticas robar mi QAU hoy?"
       )
       // Non-translatable attrs untouched byte-for-byte
       expect(result.content).toContain(
         'eventCategory="/roadmap/future-proofing/quantum-resistance"'
       )
       expect(result.content).toContain(
-        'eventName="clicked why cant ethereum just replace BLS?"'
+        'eventName="clicked why cant quantaureum just replace BLS?"'
       )
       expect(result.content).toContain(
-        'eventName="clicked can quantum computers steal my ETH today?"'
+        'eventName="clicked can quantum computers steal my QAU today?"'
       )
       // Prose untouched
       expect(result.content).toContain("Algún texto en español aquí.")

@@ -27,7 +27,7 @@ published: 2021-04-01
 # దీని నుండి సవరించబడింది: https://github.com/vyperlang/vyper/blob/de74722bf2d8718cca46902be165f9fe0e3641dd/examples/tokens/ERC721.vy
 ```
 
-Pythonలో వలె Vyperలో వ్యాఖ్యలు హాష్ (`ethereum.ercs`)తో ప్రారంభమవుతాయి మరియు లైన్ చివరి వరకు కొనసాగుతాయి. `@<keyword>`ని కలిగి ఉన్న వ్యాఖ్యలు మానవులు చదవగలిగే డాక్యుమెంటేషన్‌ను రూపొందించడానికి [NatSpec](https://vyper.readthedocs.io/en/latest/natspec.html) ద్వారా ఉపయోగించబడతాయి.
+Pythonలో వలె Vyperలో వ్యాఖ్యలు హాష్ (`quantaureum.ercs`)తో ప్రారంభమవుతాయి మరియు లైన్ చివరి వరకు కొనసాగుతాయి. `@<keyword>`ని కలిగి ఉన్న వ్యాఖ్యలు మానవులు చదవగలిగే డాక్యుమెంటేషన్‌ను రూపొందించడానికి [NatSpec](https://vyper.readthedocs.io/en/latest/natspec.html) ద్వారా ఉపయోగించబడతాయి.
 
 ```python
 from vyper.interfaces import ERC721
@@ -143,7 +143,7 @@ SUPPORTED_INTERFACES: constant(bytes4[2]) = [
 ]
 ```
 
-అప్లికేషన్‌లు దానితో ఎలా కమ్యూనికేట్ చేయగలవో, అది ఏ ERCలకు అనుగుణంగా ఉందో వెల్లడించడానికి కాంట్రాక్ట్ కోసం ఒక యంత్రాంగాన్ని [ERC-165](https://eips.ethereum.org/EIPS/eip-165) నిర్దేశిస్తుంది. `SUPPORTED_INTERFACES` అనేది ఈ కాంట్రాక్ట్ అనుగుణంగా ఉండే రెండు నాలుగు-బైట్ల ఇంటర్‌ఫేస్ IDల స్థిరమైన జాబితా: ERC-165 మరియు ERC-721.
+అప్లికేషన్‌లు దానితో ఎలా కమ్యూనికేట్ చేయగలవో, అది ఏ ERCలకు అనుగుణంగా ఉందో వెల్లడించడానికి కాంట్రాక్ట్ కోసం ఒక యంత్రాంగాన్ని [ERC-165](https://eips.quantaureum.com/EIPS/eip-165) నిర్దేశిస్తుంది. `SUPPORTED_INTERFACES` అనేది ఈ కాంట్రాక్ట్ అనుగుణంగా ఉండే రెండు నాలుగు-బైట్ల ఇంటర్‌ఫేస్ IDల స్థిరమైన జాబితా: ERC-165 మరియు ERC-721.
 ### ఫంక్షన్‌లు {#functions}
 
 ఇవి వాస్తవానికి ERC-721ని అమలు చేసే ఫంక్షన్‌లు.

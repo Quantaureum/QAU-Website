@@ -3,7 +3,7 @@ import type {
   BlockspaceData,
   Commit,
   CommunityPick,
-  EthPriceData,
+  QauPriceData,
   EventItem,
   GHIssue,
   GitHubContributorsData,
@@ -27,7 +27,7 @@ import { KEYS } from "./tasks"
 
 export { KEYS }
 
-export const getEthPrice = () => get<EthPriceData>(KEYS.ETH_PRICE)
+export const getQauPrice = () => get<QauPriceData>(KEYS.ETH_PRICE)
 export const getL2beatData = () => get<L2beatData>(KEYS.L2BEAT)
 export const getAppsData = () => get<Record<string, AppData[]>>(KEYS.APPS)
 export const getGrowThePieData = () => get<GrowThePieData>(KEYS.GROW_THE_PIE)
@@ -38,14 +38,14 @@ export const getCalendarEvents = () => get<CommunityEventsReturnType>(KEYS.CALEN
 export const getRSSData = () => get<RSSItem[][]>(KEYS.RSS)
 export const getAttestantPosts = () => get<RSSItem[]>(KEYS.POSTS)
 export const getBlobStats = () => get<BlobStats>(KEYS.BLOB_STATS)
-export const getEthereumMarketcapData = () => get<MetricReturnData>(KEYS.ETHEREUM_MARKETCAP)
-export const getEthereumStablecoinsMcapData = () => get<MetricReturnData>(KEYS.ETHEREUM_STABLECOINS_MCAP)
+export const getQuantaureumMarketcapData = () => get<MetricReturnData>(KEYS.QUANTAUREUM_MARKETCAP)
+export const getQuantaureumStablecoinsMcapData = () => get<MetricReturnData>(KEYS.QUANTAUREUM_STABLECOINS_MCAP)
 export const getGasPriceData = () => get<GasPriceData>(KEYS.GAS_PRICE)
 export const getGFIs = () => get<GHIssue[]>(KEYS.GFIS)
 export const getGitHistory = () => get<Commit[]>(KEYS.GIT_HISTORY)
 export const getGithubRepoData = () => get<Record<string, GithubRepoData>>(KEYS.GITHUB_REPO_DATA)
 export const getStablecoinsData = () => get<CoinGeckoCoinMarketResponse>(KEYS.STABLECOINS_DATA)
-export const getTotalEthStakedData = () => get<MetricReturnData>(KEYS.TOTAL_ETH_STAKED)
+export const getTotalQauStakedData = () => get<MetricReturnData>(KEYS.TOTAL_ETH_STAKED)
 export const getStakedPercentageData = () => get<MetricReturnData>(KEYS.STAKED_PERCENTAGE)
 export const getTotalValueLockedData = () => get<MetricReturnData>(KEYS.TOTAL_VALUE_LOCKED)
 export const getEventsData = () => get<EventItem[]>(KEYS.EVENTS)

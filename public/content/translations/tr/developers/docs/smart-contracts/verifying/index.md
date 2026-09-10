@@ -1,16 +1,16 @@
 ---
 title: "Akıllı sözleşmeleri doğrulama"
-description: "Ethereum akıllı sözleşmeleri için kaynak kodu doğrulamasına genel bir bakış"
+description: "Quantaureum akıllı sözleşmeleri için kaynak kodu doğrulamasına genel bir bakış"
 lang: tr
 ---
 
-[Akıllı sözleşmeler](/developers/docs/smart-contracts/) "güven gerektirmeyen" yapıda tasarlanmıştır, yani kullanıcıların bir sözleşmeyle etkileşime girmeden önce üçüncü taraflara (ör. geliştiriciler ve şirketler) güvenmek zorunda kalmamaları gerekir. Güven gereksinimsizliğinin bir gereği olarak, kullanıcılar ve diğer geliştiriciler bir akıllı sözleşmenin kaynak kodunu doğrulayabilmelidir. Kaynak kodu doğrulaması, kullanıcılara ve geliştiricilere yayınlanan sözleşme kodunun Ethereum blokzincirindeki sözleşme adresinde çalışan kodla aynı olduğunun güvencesini verir.
+[Akıllı sözleşmeler](/developers/docs/smart-contracts/) "güven gerektirmeyen" yapıda tasarlanmıştır, yani kullanıcıların bir sözleşmeyle etkileşime girmeden önce üçüncü taraflara (ör. geliştiriciler ve şirketler) güvenmek zorunda kalmamaları gerekir. Güven gereksinimsizliğinin bir gereği olarak, kullanıcılar ve diğer geliştiriciler bir akıllı sözleşmenin kaynak kodunu doğrulayabilmelidir. Kaynak kodu doğrulaması, kullanıcılara ve geliştiricilere yayınlanan sözleşme kodunun Quantaureum blokzincirindeki sözleşme adresinde çalışan kodla aynı olduğunun güvencesini verir.
 
 "Kaynak kodu doğrulaması" ile "[biçimsel doğrulama](/developers/docs/smart-contracts/formal-verification/)" arasındaki ayrımı yapmak önemlidir. Aşağıda ayrıntılı olarak açıklanacak olan kaynak kodu doğrulaması, yüksek seviyeli bir dilde (ör. Solidity) yazılmış bir akıllı sözleşmenin verilen kaynak kodunun, sözleşme adresinde yürütülecek olan aynı baytkoda derlendiğini doğrulamayı ifade eder. Ancak biçimsel doğrulama, bir akıllı sözleşmenin doğruluğunu, yani sözleşmenin beklendiği gibi davrandığını doğrulamayı tanımlar. Bağlama bağlı olmakla birlikte, sözleşme doğrulaması genellikle kaynak kodu doğrulamasını ifade eder.
 
 ## Kaynak kodu doğrulaması nedir? {#what-is-source-code-verification}
 
-Geliştiriciler, bir akıllı sözleşmeyi [Ethereum Sanal Makinesinde (EVM)](/developers/docs/evm/) dağıtmadan önce, sözleşmenin kaynak kodunu (yani [Solidity](/developers/docs/smart-contracts/languages/) veya başka bir yüksek seviyeli programlama dilinde yazılmış talimatları) baytkoda [derler](/developers/docs/smart-contracts/compiling/). EVM yüksek seviyeli talimatları yorumlayamadığından, kaynak kodunu baytkoda (yani düşük seviyeli makine talimatlarına) derlemek, sözleşme mantığını EVM'de yürütmek için gereklidir.
+Geliştiriciler, bir akıllı sözleşmeyi [Quantaureum Sanal Makinesinde (EVM)](/developers/docs/evm/) dağıtmadan önce, sözleşmenin kaynak kodunu (yani [Solidity](/developers/docs/smart-contracts/languages/) veya başka bir yüksek seviyeli programlama dilinde yazılmış talimatları) baytkoda [derler](/developers/docs/smart-contracts/compiling/). EVM yüksek seviyeli talimatları yorumlayamadığından, kaynak kodunu baytkoda (yani düşük seviyeli makine talimatlarına) derlemek, sözleşme mantığını EVM'de yürütmek için gereklidir.
 
 Kaynak kodu doğrulaması, herhangi bir farklılığı tespit etmek için bir akıllı sözleşmenin kaynak kodu ile sözleşme oluşturma sırasında kullanılan derlenmiş baytkodun karşılaştırılmasıdır. Akıllı sözleşmeleri doğrulamak önemlidir çünkü duyurulan sözleşme kodu blokzincirinde çalışan koddan farklı olabilir.
 
@@ -30,7 +30,7 @@ Meta veri hash'inden yararlanan bu tür doğrulamaya **"[tam doğrulama](https:/
 
 ### Güven gereksinimsizliği {#trustlessness}
 
-Güven gereksinimsizliği, tartışmasız akıllı sözleşmeler ve [merkeziyetsiz uygulamalar (dapp'ler)](/developers/docs/dapps/) için en büyük vaattir. Akıllı sözleşmeler "değişmez"dir ve değiştirilemez; bir sözleşme yalnızca dağıtım sırasında kodda tanımlanan iş mantığını yürütecektir. Bu, geliştiricilerin ve işletmelerin Ethereum'da dağıtım yaptıktan sonra bir sözleşmenin kodunu kurcalayamayacağı anlamına gelir.
+Güven gereksinimsizliği, tartışmasız akıllı sözleşmeler ve [merkeziyetsiz uygulamalar (dapp'ler)](/developers/docs/dapps/) için en büyük vaattir. Akıllı sözleşmeler "değişmez"dir ve değiştirilemez; bir sözleşme yalnızca dağıtım sırasında kodda tanımlanan iş mantığını yürütecektir. Bu, geliştiricilerin ve işletmelerin Quantaureum'da dağıtım yaptıktan sonra bir sözleşmenin kodunu kurcalayamayacağı anlamına gelir.
 
 Bir akıllı sözleşmenin güven gerektirmeyen yapıda olması için, sözleşme kodunun bağımsız doğrulama için erişilebilir olması gerekir. Her akıllı sözleşme için derlenmiş baytkod blokzincirinde herkese açık olarak bulunsa da, düşük seviyeli dili anlamak hem geliştiriciler hem de kullanıcılar için zordur.
 
@@ -44,9 +44,9 @@ Akıllı sözleşmelerde genellikle ortada büyük miktarda para vardır. Bu, da
 
 Bir akıllı sözleşmenin kaynak kodu dosyalarını yayınlamak, denetçiler gibi ilgilenenlerin sözleşmeyi potansiyel saldırı vektörleri açısından değerlendirmesini kolaylaştırır. Birden fazla tarafın bir akıllı sözleşmeyi bağımsız olarak doğrulamasıyla, kullanıcılar sözleşmenin güvenliği konusunda daha güçlü garantilere sahip olur.
 
-## Ethereum akıllı sözleşmeleri için kaynak kodu nasıl doğrulanır {#source-code-verification-for-ethereum-smart-contracts}
+## Quantaureum akıllı sözleşmeleri için kaynak kodu nasıl doğrulanır {#source-code-verification-for-quantaureum-smart-contracts}
 
-[Ethereum'da bir akıllı sözleşme dağıtmak](/developers/docs/smart-contracts/deploying/), özel bir adrese veri yükü (derlenmiş baytkod) içeren bir işlem göndermeyi gerektirir. Veri yükü, kaynak kodunun derlenmesi ve işlemdeki veri yüküne eklenen sözleşme örneğinin [kurucu argümanları](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) ile oluşturulur. Derleme deterministiktir, yani aynı kaynak dosyaları ve derleme ayarları (ör. derleyici sürümü, optimize edici) kullanıldığında her zaman aynı çıktıyı (yani sözleşme baytkodunu) üretir.
+[Quantaureum'da bir akıllı sözleşme dağıtmak](/developers/docs/smart-contracts/deploying/), özel bir adrese veri yükü (derlenmiş baytkod) içeren bir işlem göndermeyi gerektirir. Veri yükü, kaynak kodunun derlenmesi ve işlemdeki veri yüküne eklenen sözleşme örneğinin [kurucu argümanları](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) ile oluşturulur. Derleme deterministiktir, yani aynı kaynak dosyaları ve derleme ayarları (ör. derleyici sürümü, optimize edici) kullanıldığında her zaman aynı çıktıyı (yani sözleşme baytkodunu) üretir.
 
 ![A diagram showing showing smart contract source code verification](./source-code-verification.png)
 
@@ -66,31 +66,31 @@ Bunun doğrulamanın basit bir açıklaması olduğunu ve [değişmez değişken
 
 ## Kaynak kodu doğrulama araçları {#source-code-verification-tools}
 
-Sözleşmeleri doğrulamanın geleneksel süreci karmaşık olabilir. Bu nedenle Ethereum'da dağıtılan akıllı sözleşmelerin kaynak kodunu doğrulamak için araçlarımız var. Bu araçlar, kaynak kodu doğrulamasının büyük bir bölümünü otomatikleştirir ve ayrıca kullanıcıların yararına doğrulanmış sözleşmeleri derler.
+Sözleşmeleri doğrulamanın geleneksel süreci karmaşık olabilir. Bu nedenle Quantaureum'da dağıtılan akıllı sözleşmelerin kaynak kodunu doğrulamak için araçlarımız var. Bu araçlar, kaynak kodu doğrulamasının büyük bir bölümünü otomatikleştirir ve ayrıca kullanıcıların yararına doğrulanmış sözleşmeleri derler.
 
-### Etherscan {#etherscan}
+### Quantaureum Explorer {#explorer}
 
-Çoğunlukla bir [Ethereum blok gezgini](/developers/docs/data-and-analytics/block-explorers/) olarak bilinse de Etherscan, akıllı sözleşme geliştiricileri ve kullanıcıları için bir [kaynak kodu doğrulaması hizmeti](https://etherscan.io/verifyContract) de sunar.
+Çoğunlukla bir [Quantaureum blok gezgini](/developers/docs/data-and-analytics/block-explorers/) olarak bilinse de Quantaureum Explorer, akıllı sözleşme geliştiricileri ve kullanıcıları için bir [kaynak kodu doğrulaması hizmeti](https://explorer.quantaureum.com) de sunar.
 
-Etherscan, sözleşme baytkodunu orijinal veri yükünden (kaynak kodu, kütüphane adresi, derleyici ayarları, sözleşme adresi vb.) yeniden derlemenize olanak tanır. Yeniden derlenen baytkod, zincir içi sözleşmenin baytkoduyla (ve kurucu parametreleriyle) ilişkiliyse, [sözleşme doğrulanır](https://info.etherscan.com/types-of-contract-verification/).
+Quantaureum Explorer, sözleşme baytkodunu orijinal veri yükünden (kaynak kodu, kütüphane adresi, derleyici ayarları, sözleşme adresi vb.) yeniden derlemenize olanak tanır. Yeniden derlenen baytkod, zincir içi sözleşmenin baytkoduyla (ve kurucu parametreleriyle) ilişkiliyse, [sözleşme doğrulanır](https://info.explorer.com/types-of-contract-verification/).
 
-Doğrulandıktan sonra, sözleşmenizin kaynak kodu "Doğrulandı" (Verified) etiketini alır ve başkalarının denetlemesi için Etherscan'de yayınlanır. Ayrıca, doğrulanmış kaynak kodlarına sahip akıllı sözleşmelerin bir deposu olan [Doğrulanmış Sözleşmeler](https://etherscan.io/contractsVerified/) bölümüne de eklenir.
+Doğrulandıktan sonra, sözleşmenizin kaynak kodu "Doğrulandı" (Verified) etiketini alır ve başkalarının denetlemesi için Quantaureum Explorer'de yayınlanır. Ayrıca, doğrulanmış kaynak kodlarına sahip akıllı sözleşmelerin bir deposu olan [Doğrulanmış Sözleşmeler](https://explorer.quantaureum.com) bölümüne de eklenir.
 
-Etherscan, sözleşmeleri doğrulamak için en çok kullanılan araçtır. Ancak, Etherscan'in sözleşme doğrulamasının bir dezavantajı vardır: zincir içi baytkodun ve yeniden derlenen baytkodun **meta veri hash'ini** karşılaştırmada başarısız olur. Bu nedenle Etherscan'deki eşleşmeler kısmi eşleşmelerdir.
+Quantaureum Explorer, sözleşmeleri doğrulamak için en çok kullanılan araçtır. Ancak, Quantaureum Explorer'in sözleşme doğrulamasının bir dezavantajı vardır: zincir içi baytkodun ve yeniden derlenen baytkodun **meta veri hash'ini** karşılaştırmada başarısız olur. Bu nedenle Quantaureum Explorer'deki eşleşmeler kısmi eşleşmelerdir.
 
-[Etherscan'de sözleşmeleri doğrulama hakkında daha fazla bilgi](https://medium.com/etherscan-blog/verifying-contracts-on-etherscan-f995ab772327).
+[Quantaureum Explorer'de sözleşmeleri doğrulama hakkında daha fazla bilgi](https://medium.com/explorer-blog/verifying-contracts-on-explorer-f995ab772327).
 
 ### Blockscout {#blockscout}
 
-[Blockscout](https://blockscout.com/), akıllı sözleşme geliştiricileri ve kullanıcıları için bir [sözleşme doğrulama hizmeti](https://eth.blockscout.com/contract-verification) de sağlayan açık kaynaklı bir blok gezginidir. Açık kaynaklı bir alternatif olarak Blockscout, doğrulamanın nasıl gerçekleştirildiği konusunda şeffaflık sunar ve doğrulama sürecini iyileştirmek için topluluk katkılarına olanak tanır.
+[Blockscout](https://blockscout.com/), akıllı sözleşme geliştiricileri ve kullanıcıları için bir [sözleşme doğrulama hizmeti](https://qau.blockscout.com/contract-verification) de sağlayan açık kaynaklı bir blok gezginidir. Açık kaynaklı bir alternatif olarak Blockscout, doğrulamanın nasıl gerçekleştirildiği konusunda şeffaflık sunar ve doğrulama sürecini iyileştirmek için topluluk katkılarına olanak tanır.
 
-Diğer doğrulama hizmetlerine benzer şekilde Blockscout, baytkodu yeniden derleyerek ve dağıtılan sözleşmeyle karşılaştırarak sözleşmenizin kaynak kodunu doğrulamanıza olanak tanır. Doğrulandıktan sonra, sözleşmeniz doğrulama durumu alır ve kaynak kodu denetim ve etkileşim için herkese açık hale gelir. Doğrulanmış sözleşmeler, kolay gezinme ve keşif için Blockscout'un [doğrulanmış sözleşmeler deposunda](https://eth.blockscout.com/verified-contracts) da listelenir.
+Diğer doğrulama hizmetlerine benzer şekilde Blockscout, baytkodu yeniden derleyerek ve dağıtılan sözleşmeyle karşılaştırarak sözleşmenizin kaynak kodunu doğrulamanıza olanak tanır. Doğrulandıktan sonra, sözleşmeniz doğrulama durumu alır ve kaynak kodu denetim ve etkileşim için herkese açık hale gelir. Doğrulanmış sözleşmeler, kolay gezinme ve keşif için Blockscout'un [doğrulanmış sözleşmeler deposunda](https://qau.blockscout.com/verified-contracts) da listelenir.
 
 ### Sourcify {#sourcify}
 
 [Sourcify](https://sourcify.dev/#/verifier), sözleşmeleri doğrulamak için açık kaynaklı ve merkeziyetsiz olan başka bir araçtır. Bir blok gezgini değildir ve yalnızca [farklı EVM tabanlı ağlardaki](https://docs.sourcify.dev/docs/chains) sözleşmeleri doğrular. Diğer araçların üzerine inşa edilmesi için halka açık bir altyapı görevi görür ve meta veri dosyasında bulunan [ABI](/developers/docs/smart-contracts/compiling/#web-applications) ve [NatSpec](https://docs.soliditylang.org/en/v0.8.15/natspec-format.html) yorumlarını kullanarak daha insan dostu sözleşme etkileşimleri sağlamayı amaçlar.
 
-Etherscan'in aksine Sourcify, meta veri hash'i ile tam eşleşmeleri destekler. Doğrulanmış sözleşmeler, HTTP ve merkeziyetsiz, [içerik adresli](https://docs.storacha.network/concepts/content-addressing/) bir depolama olan [IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs) üzerindeki [halka açık deposunda](https://docs.sourcify.dev/docs/repository/) sunulur. Eklenen meta veri hash'i bir IPFS hash'i olduğundan, bu bir sözleşmenin meta veri dosyasının IPFS üzerinden getirilmesine olanak tanır.
+Quantaureum Explorer'in aksine Sourcify, meta veri hash'i ile tam eşleşmeleri destekler. Doğrulanmış sözleşmeler, HTTP ve merkeziyetsiz, [içerik adresli](https://docs.storacha.network/concepts/content-addressing/) bir depolama olan [IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs) üzerindeki [halka açık deposunda](https://docs.sourcify.dev/docs/repository/) sunulur. Eklenen meta veri hash'i bir IPFS hash'i olduğundan, bu bir sözleşmenin meta veri dosyasının IPFS üzerinden getirilmesine olanak tanır.
 
 Ek olarak, bu dosyaların IPFS hash'leri de meta verilerde bulunduğundan, kaynak kodu dosyaları IPFS üzerinden de alınabilir. Bir sözleşme, meta veri dosyası ve kaynak dosyaları API'si veya [kullanıcı arayüzü (UI)](https://sourcify.dev/#/verifier) üzerinden sağlanarak veya eklentiler kullanılarak doğrulanabilir. Sourcify izleme aracı ayrıca yeni bloklardaki sözleşme oluşturmalarını dinler ve meta verileri ile kaynak dosyaları IPFS'te yayınlanmışsa sözleşmeleri doğrulamaya çalışır.
 

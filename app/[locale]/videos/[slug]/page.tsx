@@ -129,7 +129,7 @@ export async function generateMetadata(props: {
   return await getMetadata({
     locale,
     slug: ["videos", slug],
-    title: `${data.frontmatter.title} | ethereum.org`,
+    title: `${data.frontmatter.title} | quantaureum.com`,
     description: data.frontmatter.description,
   })
 }

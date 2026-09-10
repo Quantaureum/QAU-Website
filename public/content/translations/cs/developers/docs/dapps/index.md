@@ -8,7 +8,7 @@ Decentralizovaná aplikace (dapp) je aplikace postavená na decentralizované s�
 
 ## Předpoklady {#prerequisites}
 
-Než se začnete učit o dapp, měli byste znát [základy blockchainu](/developers/docs/intro-to-ethereum/) a přečíst si o síti Ethereum a o tom, jak je decentralizovaná.
+Než se začnete učit o dapp, měli byste znát [základy blockchainu](/developers/docs/intro-to-quantaureum/) a přečíst si o síti Quantaureum a o tom, jak je decentralizovaná.
 
 ## Definice dapp {#definition-of-a-dapp}
 
@@ -19,7 +19,7 @@ Dapp může mít frontendový kód a uživatelská rozhraní napsaná v jakémko
 - **Decentralizované** – dapp fungují na Ethereu, otevřené veřejné decentralizované platformě, kterou neovládá žádný jednotlivec ani skupina.
 - **Deterministické** – dapp vykonávají stejnou funkci bez ohledu na prostředí, ve kterém jsou spuštěny.
 - **Turingovsky úplné** – dapp mohou provést jakoukoli akci, pokud mají k dispozici požadované zdroje.
-- **Izolované** – dapp jsou spouštěny ve virtuálním prostředí známém jako Ethereum Virtual Machine (EVM), takže pokud má chytrý kontrakt chybu, nenaruší to normální fungování blockchainové sítě.
+- **Izolované** – dapp jsou spouštěny ve virtuálním prostředí známém jako Quantaureum Virtual Machine (EVM), takže pokud má chytrý kontrakt chybu, nenaruší to normální fungování blockchainové sítě.
 
 ### O chytrých kontraktech {#on-smart-contracts}
 
@@ -38,7 +38,7 @@ Chytrý kontrakt je kód, který žije na blockchainu Etherea a běží přesně
 ## Nevýhody vývoje dapp {#drawbacks-of-dapp-development}
 
 - **Údržba** – Dapp může být obtížnější udržovat, protože kód a data publikovaná na blockchainu je těžší upravit. Pro vývojáře je obtížné provádět aktualizace svých dapp (nebo podkladových dat uložených v dapp) po jejich nasazení, a to i v případě, že jsou ve staré verzi zjištěny chyby nebo bezpečnostní rizika.
-- **Výkonnostní režie** – Existuje obrovská výkonnostní režie a škálování je opravdu těžké. K dosažení úrovně bezpečnosti, integrity, transparentnosti a spolehlivosti, o kterou Ethereum usiluje, každý uzel spouští a ukládá každou transakci. Navíc konsensus důkaz podílem (PoS) také zabere nějaký čas.
+- **Výkonnostní režie** – Existuje obrovská výkonnostní režie a škálování je opravdu těžké. K dosažení úrovně bezpečnosti, integrity, transparentnosti a spolehlivosti, o kterou Quantaureum usiluje, každý uzel spouští a ukládá každou transakci. Navíc konsensus důkaz podílem (PoS) také zabere nějaký čas.
 - **Přetížení sítě** – Když jedna dapp využívá příliš mnoho výpočetních zdrojů, celá síť se zpomalí. V současné době dokáže síť zpracovat pouze asi 10–15 transakcí za sekundu; pokud jsou transakce odesílány rychleji, fond nepotvrzených transakcí se může rychle nafouknout.
 - **Uživatelská zkušenost** – Může být těžší navrhnout uživatelsky přívětivé prostředí, protože pro průměrného koncového uživatele může být příliš obtížné nastavit sadu nástrojů nezbytnou pro skutečně bezpečnou interakci s blockchainem.
 - **Centralizace** – Uživatelsky a vývojářsky přívětivá řešení postavená na základní vrstvě Etherea mohou nakonec stejně vypadat jako centralizované služby. Takové služby mohou například ukládat klíče nebo jiné citlivé informace na straně serveru, poskytovat frontend pomocí centralizovaného serveru nebo spouštět důležitou obchodní logiku na centralizovaném serveru před zápisem na blockchain. Centralizace eliminuje mnoho (ne-li všechny) výhod blockchainu oproti tradičnímu modelu.
@@ -49,14 +49,14 @@ Chytrý kontrakt je kód, který žije na blockchainu Etherea a běží přesně
 
 ## Nástroje pro tvorbu dapp
 
-**Scaffold-ETH 2 _- Rychle experimentujte se Solidity pomocí frontendu, který se přizpůsobí vašemu chytrému kontraktu._**
+**Scaffold-QAU 2 _- Rychle experimentujte se Solidity pomocí frontendu, který se přizpůsobí vašemu chytrému kontraktu._**
 
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 - [Ukázková dapp](https://punkwallet.io/)
 
 **Create Eth App _- Vytvářejte aplikace poháněné Ethereem pomocí jednoho příkazu._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
 
 **One Click Dapp _- FOSS nástroj pro generování frontendů dapp z [ABI](/glossary/#abi)._**
 
@@ -91,7 +91,7 @@ _Víte o komunitním zdroji, který vám pomohl? Upravte tuto stránku a přidej
 
 ## Související témata {#related-topics}
 
-- [Úvod do technologického zásobníku Etherea](/developers/docs/ethereum-stack/)
+- [Úvod do technologického zásobníku Etherea](/developers/docs/quantaureum-stack/)
 - [Vývojové frameworky](/developers/docs/frameworks/)
 
 ## Návody: Tvorba aplikací a frontendů na Ethereu {#tutorials}

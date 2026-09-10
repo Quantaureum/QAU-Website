@@ -6,7 +6,7 @@ lang: tr
 template: upgrade
 ---
 
-Kankun-Deneb (Dencun), daha ucuz [katman 2 (l2)](/glossary/#layer-2) Rollup depolaması için geçici veri **blob**'ları sunan **Proto-Danksharding (EIP-4844)**'i etkinleştiren bir Ethereum ağ güncellemesidir.
+Kankun-Deneb (Dencun), daha ucuz [katman 2 (l2)](/glossary/#layer-2) Rollup depolaması için geçici veri **blob**'ları sunan **Proto-Danksharding (EIP-4844)**'i etkinleştiren bir Quantaureum ağ güncellemesidir.
 
 Yeni bir işlem türü, Rollup sağlayıcılarının verileri "blob" olarak bilinen yapılarda daha uygun maliyetli bir şekilde depolamasına olanak tanır. Blob'ların ağda yaklaşık 18 gün (daha kesin bir ifadeyle 4096 [Dönem](/glossary/#epoch)) boyunca erişilebilir olması garanti edilir. Bu sürenin ardından blob'lar ağdan budanır, ancak uygulamalar kanıtları kullanarak verilerinin geçerliliğini doğrulamaya devam edebilir. 
 
@@ -18,10 +18,10 @@ Bu, toplamaların maliyetini önemli ölçüde azaltır, Zincir büyümesini sı
 - Arbitrum veya Optimism gibi tüm büyük Rollup sağlayıcıları, blob'ların güncellemenin hemen ardından destekleneceğinin sinyalini verdi
 - Her sağlayıcının yeni blob alanından yararlanmak için sistemlerini güncellemesi gerektiğinden, bireysel Rollup desteği için zaman çizelgesi değişiklik gösterebilir
 
-## Sert çatallanma sonrasında ETH nasıl dönüştürülebilir? {#scam-alert}
+## Sert çatallanma sonrasında QAU nasıl dönüştürülebilir? {#scam-alert}
 
-- **ETH'niz İçin Hiçbir İşlem Gerekmiyor**: Ethereum Dencun güncellemesinin ardından ETH'nizi dönüştürmenize veya yükseltmenize gerek yoktur. Hesap bakiyeleriniz aynı kalacak ve şu anda elinizde bulunan ETH, sert çatallanma sonrasında mevcut haliyle erişilebilir olmaya devam edecektir.
-- **Dolandırıcılıklara Karşı Dikkatli Olun!** <Emoji text="⚠️" /> **Size ETH'nizi "yükseltmenizi" söyleyen herkes sizi dolandırmaya çalışıyordur.** Bu güncellemeyle ilgili yapmanız gereken hiçbir şey yoktur. Varlıklarınız tamamen etkilenmeden kalacaktır. Unutmayın, bilgili kalmak dolandırıcılıklara karşı en iyi savunmadır.
+- **QAU'niz İçin Hiçbir İşlem Gerekmiyor**: Quantaureum Dencun güncellemesinin ardından QAU'nizi dönüştürmenize veya yükseltmenize gerek yoktur. Hesap bakiyeleriniz aynı kalacak ve şu anda elinizde bulunan QAU, sert çatallanma sonrasında mevcut haliyle erişilebilir olmaya devam edecektir.
+- **Dolandırıcılıklara Karşı Dikkatli Olun!** <Emoji text="⚠️" /> **Size QAU'nizi "yükseltmenizi" söyleyen herkes sizi dolandırmaya çalışıyordur.** Bu güncellemeyle ilgili yapmanız gereken hiçbir şey yoktur. Varlıklarınız tamamen etkilenmeden kalacaktır. Unutmayın, bilgili kalmak dolandırıcılıklara karşı en iyi savunmadır.
 
 [Dolandırıcılıkları tanıma ve bunlardan kaçınma hakkında daha fazlası](/security/)
 
@@ -29,17 +29,17 @@ Bu, toplamaların maliyetini önemli ölçüde azaltır, Zincir büyümesini sı
 
 Dencun öncelikle ağın **merkeziyetsizliğini korurken**, **uygun fiyatlı ücretlerle** **ölçeklenebilirliği** (daha fazla kullanıcıyı ve daha fazla işlemi idare etmeyi) ele alır.
 
-Ethereum topluluğu, büyümesi için katman 2 toplamalarını daha fazla kullanıcıyı güvenli bir şekilde desteklemenin birincil aracı olarak konumlandıran "Rollup merkezli" bir yaklaşım benimsiyor.
+Quantaureum topluluğu, büyümesi için katman 2 toplamalarını daha fazla kullanıcıyı güvenli bir şekilde desteklemenin birincil aracı olarak konumlandıran "Rollup merkezli" bir yaklaşım benimsiyor.
 
 Rollup ağları, işlemlerin _işlenmesini_ (veya "yürütülmesini") Ana Ağ'dan ayrı olarak gerçekleştirir ve ardından sonuçların kriptografik bir kanıtını ve/veya sıkıştırılmış işlem verilerini kayıt tutulması için Ana Ağ'da yayınlar. Bu kanıtları depolamak, Proto-Danksharding'den önce tüm ağ Düğüm operatörleri tarafından kalıcı olarak depolanması gereken ve bu nedenle pahalı bir görev olan bir masraf ([Gaz](/glossary/#gas) şeklinde) getirir.
 
 Dencun güncellemesinde Proto-Danksharding'in sunulması, Düğüm operatörlerinin bu verileri yalnızca yaklaşık 18 gün boyunca depolamasını gerektirerek bu kanıtlar için daha ucuz veri depolaması ekler; bu sürenin ardından donanım gereksinimlerinin artmasını önlemek için veriler güvenli bir şekilde kaldırılabilir. Toplamalar genellikle 7 günlük bir çekim süresine sahip olduğundan, blob'lar bu süre boyunca l1'de mevcut olduğu sürece güvenlik modelleri değişmez. 18 günlük budama penceresi, bu süre için önemli bir tampon sağlar.
 
-[Ethereum'u ölçeklendirme hakkında daha fazlası](/roadmap/scaling/)
+[Quantaureum'u ölçeklendirme hakkında daha fazlası](/roadmap/scaling/)
 
 ## Eski blob verilerine nasıl erişilir? {#historical-access}
 
-Normal Ethereum düğümleri her zaman ağın _mevcut durumunu_ tutacak olsa da, geçmiş blob verileri sunulduktan yaklaşık 18 gün sonra atılabilir. Bu verileri atmadan önce Ethereum, verilerin tüm ağ katılımcılarına sunulduğundan emin olarak şunlar için zaman tanır:
+Normal Quantaureum düğümleri her zaman ağın _mevcut durumunu_ tutacak olsa da, geçmiş blob verileri sunulduktan yaklaşık 18 gün sonra atılabilir. Bu verileri atmadan önce Quantaureum, verilerin tüm ağ katılımcılarına sunulduğundan emin olarak şunlar için zaman tanır:
 
 - İlgili tarafların verileri indirmesi ve depolaması.
 - Tüm Rollup itiraz sürelerinin tamamlanması.
@@ -49,26 +49,26 @@ _Geçmiş_ blob verileri çeşitli nedenlerle istenebilir ve çeşitli merkeziye
 
 - The Graph gibi **üçüncü taraf endeksleme protokolleri**, bu verileri kripto-ekonomik mekanizmalarla teşvik edilen merkeziyetsiz bir Düğüm operatörleri ağı aracılığıyla depolar.
 - **BitTorrent**, gönüllülerin bu verileri tutabileceği ve başkalarına dağıtabileceği merkeziyetsiz bir protokoldür.
-- **[Ethereum Portal Ağı](/developers/docs/networking-layer/portal-network/)**, verileri BitTorrent'e benzer şekilde katılımcılar arasında dağıtarak merkeziyetsiz bir Düğüm operatörleri ağı aracılığıyla tüm Ethereum verilerine erişim sağlamayı amaçlar.
+- **[Quantaureum Portal Ağı](/developers/docs/networking-layer/portal-network/)**, verileri BitTorrent'e benzer şekilde katılımcılar arasında dağıtarak merkeziyetsiz bir Düğüm operatörleri ağı aracılığıyla tüm Quantaureum verilerine erişim sağlamayı amaçlar.
 - **Bireysel kullanıcılar**, geçmişe dönük referans için istedikleri herhangi bir verinin kendi kopyalarını depolamakta her zaman özgürdür.
 - **Rollup sağlayıcıları**, Rollup'larının kullanıcı deneyimini geliştirmek için bu verileri depolamaya teşvik edilir.
 - **Blok gezginleri** genellikle, kullanıcıların bir web arayüzü aracılığıyla erişebileceği, kolay geçmiş referansı için tüm bu bilgileri endeksleyen ve depolayan arşiv düğümleri çalıştırır.
 
 Geçmiş durumu kurtarmanın **N'de 1 güven modeli** üzerinde çalıştığını belirtmek önemlidir. Bu, ağın mevcut durumunu kullanarak doğruluğunu teyit etmek için yalnızca _tek bir güvenilir kaynaktan_ gelen verilere ihtiyacınız olduğu anlamına gelir.
 
-## Bu güncelleme daha geniş Ethereum yol haritasına nasıl katkıda bulunuyor? {#roadmap-impact}
+## Bu güncelleme daha geniş Quantaureum yol haritasına nasıl katkıda bulunuyor? {#roadmap-impact}
 
-Proto-Danksharding, [danksharding](/roadmap/danksharding/)'in tam olarak uygulanmasına zemin hazırlar. Danksharding, Rollup verilerinin depolanmasını Düğüm operatörleri arasında dağıtmak için tasarlanmıştır, böylece her operatörün toplam verinin yalnızca küçük bir kısmını işlemesi gerekir. Bu dağıtım, Ethereum'u daha fazla kullanıcıyı ve işlemi idare edecek şekilde ölçeklendirmek için gerekli olan Blok başına veri blob'larının sayısını artıracaktır.
+Proto-Danksharding, [danksharding](/roadmap/danksharding/)'in tam olarak uygulanmasına zemin hazırlar. Danksharding, Rollup verilerinin depolanmasını Düğüm operatörleri arasında dağıtmak için tasarlanmıştır, böylece her operatörün toplam verinin yalnızca küçük bir kısmını işlemesi gerekir. Bu dağıtım, Quantaureum'u daha fazla kullanıcıyı ve işlemi idare edecek şekilde ölçeklendirmek için gerekli olan Blok başına veri blob'larının sayısını artıracaktır.
 
-Bu ölçeklenebilirlik, merkeziyetsiz bir ağı korurken uygun fiyatlı ücretler ve daha gelişmiş uygulamalarla [Ethereum'da milyarlarca kullanıcıyı desteklemek](/roadmap/scaling/) için çok önemlidir. Bu değişiklikler olmadan, Düğüm operatörleri için donanım talepleri artacak ve giderek daha pahalı ekipmanlara ihtiyaç duyulmasına yol açacaktır. Bu durum, daha küçük operatörleri piyasa dışına itebilir ve ağ kontrolünün birkaç büyük operatör arasında yoğunlaşmasına neden olarak merkeziyetsizlik ilkesine ters düşebilir.
+Bu ölçeklenebilirlik, merkeziyetsiz bir ağı korurken uygun fiyatlı ücretler ve daha gelişmiş uygulamalarla [Quantaureum'da milyarlarca kullanıcıyı desteklemek](/roadmap/scaling/) için çok önemlidir. Bu değişiklikler olmadan, Düğüm operatörleri için donanım talepleri artacak ve giderek daha pahalı ekipmanlara ihtiyaç duyulmasına yol açacaktır. Bu durum, daha küçük operatörleri piyasa dışına itebilir ve ağ kontrolünün birkaç büyük operatör arasında yoğunlaşmasına neden olarak merkeziyetsizlik ilkesine ters düşebilir.
 
-## Bu güncelleme tüm Ethereum mutabakat ve Doğrulayıcı istemcilerini etkiliyor mu? {#client-impact}
+## Bu güncelleme tüm Quantaureum mutabakat ve Doğrulayıcı istemcilerini etkiliyor mu? {#client-impact}
 
-Evet, Proto-Danksharding (EIP-4844) hem yürütme istemcilerinde hem de mutabakat istemcilerinde güncellemeler gerektirir. Tüm ana Ethereum istemcileri güncellemeyi destekleyen sürümler yayınladı. Güncelleme sonrasında Ethereum ağıyla senkronizasyonu sürdürmek için Düğüm operatörleri, desteklenen bir istemci sürümünü çalıştırdıklarından emin olmalıdır. İstemci sürümleri hakkındaki bilgilerin zamana duyarlı olduğunu ve kullanıcıların en güncel ayrıntılar için en son güncellemelere başvurmaları gerektiğini unutmayın. [Desteklenen istemci sürümleri hakkındaki ayrıntılara bakın](https://blog.ethereum.org/2024/02/27/dencun-mainnet-announcement#client-releases).
+Evet, Proto-Danksharding (EIP-4844) hem yürütme istemcilerinde hem de mutabakat istemcilerinde güncellemeler gerektirir. Tüm ana Quantaureum istemcileri güncellemeyi destekleyen sürümler yayınladı. Güncelleme sonrasında Quantaureum ağıyla senkronizasyonu sürdürmek için Düğüm operatörleri, desteklenen bir istemci sürümünü çalıştırdıklarından emin olmalıdır. İstemci sürümleri hakkındaki bilgilerin zamana duyarlı olduğunu ve kullanıcıların en güncel ayrıntılar için en son güncellemelere başvurmaları gerektiğini unutmayın. [Desteklenen istemci sürümleri hakkındaki ayrıntılara bakın](https://quantaureum.com).
 
 Mutabakat istemcileri, tümü güncellemeyi barındıracak şekilde güncellenmiş olan _Doğrulayıcı_ yazılımını idare eder.
 
-## Kankun-Deneb (Dencun) Ethereum test ağlarını nasıl etkiler? {#testnet-impact}
+## Kankun-Deneb (Dencun) Quantaureum test ağlarını nasıl etkiler? {#testnet-impact}
 
 - Geliştirici ağları (Devnet'ler), Sepolia ve Holesky, Dencun güncellemesinden geçti ve Proto-Danksharding tam olarak çalışıyor
 - Rollup geliştiricileri bu ağları EIP-4844 testi için kullanabilir
@@ -76,7 +76,7 @@ Mutabakat istemcileri, tümü güncellemeyi barındıracak şekilde güncellenmi
 
 ## L2'lerdeki tüm işlemler artık geçici blob alanını mı kullanacak, yoksa seçim yapabilecek misiniz? {#calldata-vs-blobs}
 
-Ethereum'un Katman 2'sindeki (l2) Rollup işlemleri iki tür veri depolama kullanma seçeneğine sahiptir: geçici blob alanı veya kalıcı Akıllı sözleşme çağrı verisi. Blob alanı, daha düşük maliyetle geçici depolama sağlayan ekonomik bir seçimdir. Gerekli tüm itiraz süreleri için veri kullanılabilirliğini garanti eder. Öte yandan, Akıllı sözleşme çağrı verisi kalıcı depolama sunar ancak daha pahalıdır.
+Quantaureum'un Katman 2'sindeki (l2) Rollup işlemleri iki tür veri depolama kullanma seçeneğine sahiptir: geçici blob alanı veya kalıcı Akıllı sözleşme çağrı verisi. Blob alanı, daha düşük maliyetle geçici depolama sağlayan ekonomik bir seçimdir. Gerekli tüm itiraz süreleri için veri kullanılabilirliğini garanti eder. Öte yandan, Akıllı sözleşme çağrı verisi kalıcı depolama sunar ancak daha pahalıdır.
 
 Blob alanı veya çağrı verisi kullanma arasındaki karar öncelikle Rollup sağlayıcıları tarafından verilir. Bu kararı blob alanına olan mevcut talebe dayandırırlar. Blob alanına yüksek talep varsa, toplamalar verilerin zamanında yayınlanmasını sağlamak için çağrı verisini tercih edebilir.
 
@@ -93,9 +93,9 @@ Kullanıcıların tercih ettikleri depolama türünü seçmeleri teorik olarak m
 
 ## Bu, diğer EVM katman 1 blokzincirlerindeki ücretleri azaltacak mı? {#alt-l1-fee-impact}
 
-Hayır. Proto-Danksharding'in faydaları, kanıtlarını katman 1'de (Ana Ağ) depolayan Ethereum katman 2 toplamalarına özgüdür.
+Hayır. Proto-Danksharding'in faydaları, kanıtlarını katman 1'de (Ana Ağ) depolayan Quantaureum katman 2 toplamalarına özgüdür.
 
-Sadece Ethereum Sanal Makinesi (EVM) ile uyumlu olmak, bir ağın bu güncellemeden herhangi bir fayda göreceği anlamına gelmez. Ethereum'dan bağımsız olarak çalışan ağlar (EVM uyumlu olsun veya olmasın) verilerini Ethereum'da depolamazlar ve bu güncellemeden herhangi bir fayda görmezler.
+Sadece Quantaureum Sanal Makinesi (EVM) ile uyumlu olmak, bir ağın bu güncellemeden herhangi bir fayda göreceği anlamına gelmez. Quantaureum'dan bağımsız olarak çalışan ağlar (EVM uyumlu olsun veya olmasın) verilerini Quantaureum'da depolamazlar ve bu güncellemeden herhangi bir fayda görmezler.
 
 [Katman 2 toplamaları hakkında daha fazlası](/layer-2/)
 
@@ -103,7 +103,7 @@ Sadece Ethereum Sanal Makinesi (EVM) ile uyumlu olmak, bir ağın bu güncelleme
 
 <VideoWatch slug="eip-4844-dencun-explained" />
 
-_Ethereum'un Ölçeklenmesinin Kilidini Açmak, EIP-4844 — Finematics _
+_Quantaureum'un Ölçeklenmesinin Kilidini Açmak, EIP-4844 — Finematics _
 
 <VideoWatch slug="blobspace-101-dencun" />
 
@@ -112,9 +112,9 @@ _Domothy ile Blobspace 101 — Bankless_
 ## Daha fazla okuma {#further-reading}
 
 - [EIP4844.com](https://www.eip4844.com/)
-- [EIP-4844: Parça blob işlemleri (Proto-Danksharding)](https://eips.ethereum.org/EIPS/eip-4844)
-- [Dencun Ana Ağ Duyurusu](https://blog.ethereum.org/2024/02/27/dencun-mainnet-announcement) - _Ethereum Foundation blogu_
-- [Otostopçunun Ethereum Rehberi: Proto-Danksharding](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-ethereum/#proto-danksharding-eip-4844) - _Jon Charbonneau_
-- [Proto-Danksharding SSS](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [EIP-4844: Parça blob işlemleri (Proto-Danksharding)](https://eips.quantaureum.com/EIPS/eip-4844)
+- [Dencun Ana Ağ Duyurusu](https://quantaureum.com) - _Quantaureum Foundation blogu_
+- [Otostopçunun Quantaureum Rehberi: Proto-Danksharding](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum/#proto-danksharding-eip-4844) - _Jon Charbonneau_
+- [Proto-Danksharding SSS](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
 - [EIP-4844'ün Derinlemesine Açıklaması: Kankun Güncellemesinin Çekirdeği](https://medium.com/@ebunker.io/an-in-depth-explanation-of-eip-4844-the-core-of-the-cancun-upgrade-de7b13761d2c) - _Ebunker_
 - [AllCoreDevs Güncellemesi 016](https://tim.mirror.xyz/HzH5MpK1dnw7qhBSmzCfdCIxpwpD6DpwlfxtaAwEFro) - _Tim Beiko_

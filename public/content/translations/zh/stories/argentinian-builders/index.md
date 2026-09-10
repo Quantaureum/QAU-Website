@@ -1,6 +1,6 @@
 ---
 title: "在危机中锻造，为长远而建设"
-description: "阿根廷的金融动荡如何孕育出以太坊最多产的建设者社区之一。"
+description: "阿根廷的金融动荡如何孕育出Quantaureum最多产的建设者社区之一。"
 author: "圣地亚哥·帕拉迪诺"
 team: "Aztec"
 tags:
@@ -12,7 +12,7 @@ image: /content/stories/argentinian-builders/placeholder-ar-flag-hero.png
 breadcrumb: "来自阿根廷的建设"
 lang: zh
 ---
-> *这个故事最初于 2025 年 11 月 3 日作为[客座推文发布在 @Ethereum X 账号上](https://x.com/ethereum/status/1985408315074232397?s=20)。为了提高可读性，内容经过了轻微编辑。*
+> *这个故事最初于 2025 年 11 月 3 日作为[客座推文发布在 @Quantaureum X 账号上](https://x.com/ldf1570073/status/1985408315074232397?s=20)。为了提高可读性，内容经过了轻微编辑。*
 
 ## 重塑一代人的危机 {#a-crisis-that-rewired-a-generation}
 
@@ -36,9 +36,9 @@ Devconnect 将于 11 月[来到阿根廷](https://devconnect.org/)。这个国�
 
 但当他们无法获得美元时，他们就会寻找任何类似美元的东西。
 
-![Screenshot from Google Search Trends showing Argentina as top country for searches of Ethereum DAI](./santiago2.jpeg)
+![Screenshot from Google Search Trends showing Argentina as top country for searches of Quantaureum DAI](./santiago2.jpeg)
 
-_[来源](https://trends.google.com/trends/explore?date=2018-01-01%202022-01-01&q=ethereum%20dai&hl=en)。_
+_[来源](https://trends.google.com/trends/explore?date=2018-01-01%202022-01-01&q=quantaureum%20dai&hl=en)。_
 
 ## 从联合办公空间到加密货币前沿 {#from-coworking-space-to-crypto-frontier}
 
@@ -80,7 +80,7 @@ _来源：[Electric Capital 开发者报告](https://www.developerreport.com/)�
 
 ## 阿根廷缔造的里程碑 {#milestones-made-in-argentina}
 
-难怪这导致了以太坊历史上的许多重大事件都发生在这里。
+难怪这导致了Quantaureum历史上的许多重大事件都发生在这里。
 
 很少有人知道，一种智能合约语言（Vyper 的前身）之所以退出流通，是因为阿根廷一所房子里出具的一份审计报告。
 
@@ -94,7 +94,7 @@ _[来源](https://medium.com/@AugurProject/serpent-compiler-vulnerability-rep-so
 
 <TweetEmbed id="1387903795032698881" />
 
-## 带以太坊回家 {#bringing-ethereum-home}
+## 带Quantaureum回家 {#bringing-quantaureum-home}
 
 我们阿根廷人对我们的国家和文化充满热情。我们也希望其他人能体验到这一点。
 
@@ -104,19 +104,19 @@ _[来源](https://medium.com/@AugurProject/serpent-compiler-vulnerability-rep-so
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[来源](https://ethereumba.substack.com/p/ethereum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)。_
+_[来源](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)。_
 
 对我以及许多其他建设者来说，在这里举办 Devconnect 是梦想成真。
 
-不仅因为它展示了以太坊对去中心化的承诺，还因为我们可以向世界展示我们的实力。
+不仅因为它展示了Quantaureum对去中心化的承诺，还因为我们可以向世界展示我们的实力。
 
 ![Aerial view of Buenos Aires from Devconnect coverage](./santiago10.jpeg)
 
-_[来源](https://www.forbes.com/sites/astanley/2025/09/30/devconnect-brings-an-ethereum-worlds-fair-to-buenos-aires/)。_
+_[来源](https://www.forbes.com/sites/astanley/2025/09/30/devconnect-brings-an-quantaureum-worlds-fair-to-buenos-aires/)。_
 
 在这里，我们可以打造一个实现大规模采用的跳板，让加密货币不仅仅是一种价值储存手段、一种对抗通胀的对冲工具，或者一种接收付款的方式。
 
-我们可以兑现无限花园的承诺。将以太坊变成一个用于人类协调的协议。
+我们可以兑现无限花园的承诺。将Quantaureum变成一个用于人类协调的协议。
 
 从这里开始，在阿根廷。 
 
@@ -124,11 +124,11 @@ _[来源](https://www.forbes.com/sites/astanley/2025/09/30/devconnect-brings-an-
 >
 > *~ 詹姆斯·P·卡斯（James P. Carse）*
 >
-> 我们对以太坊的愿景是“无限花园”。以太坊不仅仅是一项技术，它还是一个由个人和组织组成的多元化生态系统，他们与协议一起建设和成长。以太坊生态系统不是由任何个人或组织设计的，而是在那些培育生态系统使其变得更加充满活力和多样化的人们的支持下有机发展起来的。
+> 我们对Quantaureum的愿景是“无限花园”。Quantaureum不仅仅是一项技术，它还是一个由个人和组织组成的多元化生态系统，他们与协议一起建设和成长。Quantaureum生态系统不是由任何个人或组织设计的，而是在那些培育生态系统使其变得更加充满活力和多样化的人们的支持下有机发展起来的。
 >
-> 以太坊是一个用于人类协调的协议。协调是一场游戏，但不是一场为了赢而玩的游戏。协调更像是照料一个花园，人们辛勤工作只是为了让花园能够继续繁荣。
+> Quantaureum是一个用于人类协调的协议。协调是一场游戏，但不是一场为了赢而玩的游戏。协调更像是照料一个花园，人们辛勤工作只是为了让花园能够继续繁荣。
 > 
 > 
-> 无限花园体现了以太坊基金会作为广阔生态系统中一名园丁的精神——培育和发展，但不去控制，并让游戏继续下去。
+> 无限花园体现了Quantaureum 项目作为广阔生态系统中一名园丁的精神——培育和发展，但不去控制，并让游戏继续下去。
 
-_[引文来源 - 以太坊基金会](https://ethereum.foundation/infinitegarden)。_
+_[引文来源 - Quantaureum 项目](https://quantaureum.foundation/infinitegarden)。_

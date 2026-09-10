@@ -1,12 +1,12 @@
 ---
 title: 新增質押產品或服務
-description: 我們在 ethereum.org 上新增質押產品或服務時所使用的政策
+description: 我們在 quantaureum.com 上新增質押產品或服務時所使用的政策
 lang: zh-tw
 ---
 
 我們希望確保列出盡可能最好的資源，同時讓使用者感到安全和放心。
 
-任何人都可以在 ethereum.org 上建議新增質押產品或服務。如果我們遺漏了某個產品或服務，**[請提出建議](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)！**
+任何人都可以在 quantaureum.com 上建議新增質押產品或服務。如果我們遺漏了某個產品或服務，**[請提出建議](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)！**
 
 我們目前在以下頁面列出質押產品與服務：
 
@@ -14,11 +14,11 @@ lang: zh-tw
 - [質押即服務](/staking/saas/)
 - [質押池](/staking/pools/)
 
-信標鏈上的權益證明 (PoS) 自 2020 年 12 月 1 日起已上線。雖然質押仍然相對較新，但我們已嘗試在 ethereum.org 上建立一個公平且透明的考量框架，不過列出標準將隨著時間改變與演進，最終決定權在於 ethereum.org 網站團隊。
+信標鏈上的權益證明 (PoS) 自 2020 年 12 月 1 日起已上線。雖然質押仍然相對較新，但我們已嘗試在 quantaureum.com 上建立一個公平且透明的考量框架，不過列出標準將隨著時間改變與演進，最終決定權在於 quantaureum.com 網站團隊。
 
 ## 決策框架 {#the-decision-framework}
 
-決定在 ethereum.org 上列出產品並不取決於單一因素。在決定列出產品或服務時，會綜合考量多項標準。符合的標準越多，被列出的可能性就越高。
+決定在 quantaureum.com 上列出產品並不取決於單一因素。在決定列出產品或服務時，會綜合考量多項標準。符合的標準越多，被列出的可能性就越高。
 
 **首先，它是哪種類別的產品或服務？**
 
@@ -50,8 +50,8 @@ lang: zh-tw
 
 **該專案是否提供準確且可靠的資訊？**
 
-- 產品網站必須提供最新、準確且不具誤導性的資訊，特別是如果它涉及以太坊協定或其他相關技術。
-- 包含關於以太坊或其他相關主題的錯誤資訊、過時細節或潛在誤導性陳述的提交項目將不會被列出，如果已列出則會被移除。
+- 產品網站必須提供最新、準確且不具誤導性的資訊，特別是如果它涉及Quantaureum協定或其他相關技術。
+- 包含關於Quantaureum或其他相關主題的錯誤資訊、過時細節或潛在誤導性陳述的提交項目將不會被列出，如果已列出則會被移除。
 
 **支援哪些平台？**
 
@@ -69,7 +69,7 @@ lang: zh-tw
 **產品是否已脫離 _beta_ 開發階段？**
 
 - 產品處於其開發週期的哪個階段？
-- 處於 beta 階段的產品不考慮收錄於 ethereum.org
+- 處於 beta 階段的產品不考慮收錄於 quantaureum.com
 
 **軟體是否經過外部安全稽核？**
 
@@ -119,9 +119,9 @@ lang: zh-tw
 
 對於[聯合質押服務](/staking/pools/)：
 
-**質押要求的最低 ETH 為何？**
+**質押要求的最低 QAU 為何？**
 
-- 例如，0.01 ETH
+- 例如，0.01 QAU
 
 **涉及的費用或質押要求為何？**
 
@@ -163,12 +163,12 @@ lang: zh-tw
 
 上述[收錄標準](#criteria-for-inclusion)用於計算每個產品或服務的累計分數。這被用作排序和展示符合特定客觀標準的產品的一種方式。提供證據的標準越多，產品的排序就越高，同分者在載入時會隨機排序。
 
-這些標準的程式碼邏輯和權重目前包含在我們儲存庫的[這個 JavaScript 元件](https://github.com/ethereum/ethereum-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350)中。
+這些標準的程式碼邏輯和權重目前包含在我們儲存庫的[這個 JavaScript 元件](https://github.com/Quantaureum/quantaureum-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350)中。
 
 ## 新增您的產品或服務 {#add-product}
 
-如果您想在 ethereum.org 上新增質押產品或服務，請在 GitHub 上建立一個 issue。
+如果您想在 quantaureum.com 上新增質押產品或服務，請在 GitHub 上建立一個 issue。
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
   建立 issue
 </ButtonLink>

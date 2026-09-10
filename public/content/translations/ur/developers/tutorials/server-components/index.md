@@ -29,7 +29,7 @@ published: 2024-07-15
 
 ## نمونہ پروگرام {#sample-program}
 
-آپ [<span dir="ltr">GitHub</span> پر](https://github.com/qbzzt/20240715-server-component) ایک نمونہ سرور دیکھ سکتے ہیں۔ یہ سرور [اس کنٹریکٹ](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code) سے آنے والے ایونٹس کو سنتا ہے، جو <span dir="ltr">Hardhat</span> کے Greeter کا ایک ترمیم شدہ ورژن ہے۔ جب سلام (greeting) کو تبدیل کیا جاتا ہے، تو یہ اسے واپس تبدیل کر دیتا ہے۔
+آپ [<span dir="ltr">GitHub</span> پر](https://github.com/qbzzt/20240715-server-component) ایک نمونہ سرور دیکھ سکتے ہیں۔ یہ سرور [اس کنٹریکٹ](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code) سے آنے والے ایونٹس کو سنتا ہے، جو <span dir="ltr">Hardhat</span> کے Greeter کا ایک ترمیم شدہ ورژن ہے۔ جب سلام (greeting) کو تبدیل کیا جاتا ہے، تو یہ اسے واپس تبدیل کر دیتا ہے۔
 
 اسے چلانے کے لیے:
 
@@ -46,7 +46,7 @@ published: 2024-07-15
    npm install
    ```
 
-3. ایک ایسے اکاؤنٹ کی نجی کلید کی وضاحت کرنے کے لیے `.env` میں ترمیم کریں جس کے پاس ہولسکی آزمائشی نیٹ ورک پر <span dir="ltr">ETH</span> ہو۔ اگر آپ کے پاس ہولسکی پر <span dir="ltr">ETH</span> نہیں ہے، تو آپ [یہ فوسٹ استعمال کر سکتے ہیں](https://holesky-faucet.pk910.de/)۔
+3. ایک ایسے اکاؤنٹ کی نجی کلید کی وضاحت کرنے کے لیے `.env` میں ترمیم کریں جس کے پاس ہولسکی آزمائشی نیٹ ورک پر <span dir="ltr">QAU</span> ہو۔ اگر آپ کے پاس ہولسکی پر <span dir="ltr">QAU</span> نہیں ہے، تو آپ [یہ فوسٹ استعمال کر سکتے ہیں](https://holesky-faucet.pk910.de/)۔
 
    ```sh filename=".env" copy
    PRIVATE_KEY=0x <private key goes here>
@@ -58,7 +58,7 @@ published: 2024-07-15
    npm start
    ```
 
-5. ایک [بلاک ایکسپلورر](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract) پر جائیں، اور اس پتے سے مختلف پتہ استعمال کرتے ہوئے جس کے پاس نجی کلید ہے، سلام (greeting) میں ترمیم کریں۔ دیکھیں کہ سلام خود بخود واپس تبدیل ہو جاتا ہے۔
+5. ایک [بلاک ایکسپلورر](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract) پر جائیں، اور اس پتے سے مختلف پتہ استعمال کرتے ہوئے جس کے پاس نجی کلید ہے، سلام (greeting) میں ترمیم کریں۔ دیکھیں کہ سلام خود بخود واپس تبدیل ہو جاتا ہے۔
 
 ### یہ کیسے کام کرتا ہے؟ {#how-it-works}
 
@@ -92,7 +92,7 @@ import { privateKeyToAccount } from "viem/accounts"
 import { holesky } from "viem/chains"
 ```
 
-<span dir="ltr">Viem</span> میں بلاک چین استعمال کرنے کے لیے آپ کو اس کی تعریف درآمد کرنے کی ضرورت ہے۔ اس صورت میں، ہم [ہولسکی](https://github.com/eth-clients/holesky) آزمائشی بلاک چین سے جڑنا چاہتے ہیں۔
+<span dir="ltr">Viem</span> میں بلاک چین استعمال کرنے کے لیے آپ کو اس کی تعریف درآمد کرنے کی ضرورت ہے۔ اس صورت میں، ہم [ہولسکی](https://github.com/qau-clients/holesky) آزمائشی بلاک چین سے جڑنا چاہتے ہیں۔
 
 ```typescript
 // اس طرح ہم .env میں موجود تعریفات کو process.env میں شامل کرتے ہیں۔
@@ -182,7 +182,7 @@ const greeter = getContract({
 console.log(`Current greeting:`, await greeter.read.greet())
 ```
 
-کنٹریکٹ کے وہ فنکشنز جو صرف پڑھنے کے لیے ہیں ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) اور [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)) `read` کے تحت دستیاب ہیں۔ اس صورت میں، ہم اسے [`greet`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217) فنکشن تک رسائی حاصل کرنے کے لیے استعمال کرتے ہیں، جو سلام (greeting) واپس کرتا ہے۔
+کنٹریکٹ کے وہ فنکشنز جو صرف پڑھنے کے لیے ہیں ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) اور [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)) `read` کے تحت دستیاب ہیں۔ اس صورت میں، ہم اسے [`greet`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217) فنکشن تک رسائی حاصل کرنے کے لیے استعمال کرتے ہیں، جو سلام (greeting) واپس کرتا ہے۔
 
 <span dir="ltr">JavaScript</span> سنگل تھریڈڈ ہے، لہذا جب ہم کوئی طویل چلنے والا عمل شروع کرتے ہیں تو ہمیں [یہ بتانے کی ضرورت ہوتی ہے کہ ہم اسے غیر ہم آہنگ (asynchronously) طور پر کرتے ہیں](https://eloquentjavascript.net/11_async.html#h-XvLsfAhtsE)۔ بلاک چین کو کال کرنے کے لیے، یہاں تک کہ صرف پڑھنے کے عمل کے لیے بھی، کمپیوٹر اور بلاک چین نوڈ کے درمیان ایک راؤنڈ ٹرپ کی ضرورت ہوتی ہے۔ یہی وجہ ہے کہ ہم یہاں بتاتے ہیں کہ کوڈ کو نتیجے کے لیے `await` کرنے کی ضرورت ہے۔
 
@@ -200,10 +200,10 @@ const setGreeting = async (greeting: string): Promise<any> => {
 const txHash = await greeter.write.setGreeting([greeting])
 ```
 
-کنٹریکٹ کی مثال کے `write` فیلڈ میں وہ تمام فنکشنز ہوتے ہیں جو بلاک چین کی حالت میں لکھتے ہیں (وہ جن کے لیے ٹرانزیکشن بھیجنے کی ضرورت ہوتی ہے)، جیسے کہ [`setGreeting`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862)۔ پیرامیٹرز، اگر کوئی ہوں، ایک فہرست کے طور پر فراہم کیے جاتے ہیں، اور فنکشن ٹرانزیکشن کا ہیش واپس کرتا ہے۔
+کنٹریکٹ کی مثال کے `write` فیلڈ میں وہ تمام فنکشنز ہوتے ہیں جو بلاک چین کی حالت میں لکھتے ہیں (وہ جن کے لیے ٹرانزیکشن بھیجنے کی ضرورت ہوتی ہے)، جیسے کہ [`setGreeting`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862)۔ پیرامیٹرز، اگر کوئی ہوں، ایک فہرست کے طور پر فراہم کیے جاتے ہیں، اور فنکشن ٹرانزیکشن کا ہیش واپس کرتا ہے۔
 
 ```typescript
-    console.log(`Working on a fix, see https://eth-holesky.blockscout.com/tx/${txHash}`)
+    console.log(`Working on a fix, see https://qau-holesky.blockscout.com/tx/${txHash}`)
 
     return txHash
 }

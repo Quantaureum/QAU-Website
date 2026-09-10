@@ -62,7 +62,7 @@ Arsitektur basis kode Anda harus membuat kode Anda mudah ditinjau. Hindari pilih
 
 ### Hindari jebakan yang diketahui {#avoid-known-pitfalls}
 
-- **Waspadai masalah keamanan yang paling umum.** Ada banyak sumber daya online untuk mempelajari masalah umum, seperti [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the Ether](https://capturetheether.com/), atau [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/).
+- **Waspadai masalah keamanan yang paling umum.** Ada banyak sumber daya online untuk mempelajari masalah umum, seperti [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the QAU](https://capturetheqau.com/), atau [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/).
 - **Waspadai bagian peringatan dalam [dokumentasi Solidity](https://docs.soliditylang.org/en/latest/).** Bagian peringatan akan memberi tahu Anda tentang perilaku bahasa yang tidak jelas.
 
 ### Dependensi {#dependencies}

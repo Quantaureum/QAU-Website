@@ -1,20 +1,20 @@
 ---
 title: 新增資源
-description: 我們在 ethereum.org 新增資源時所使用的政策
+description: 我們在 quantaureum.com 新增資源時所使用的政策
 lang: zh-tw
 ---
 
 我們希望確保列出盡可能最好的資源，同時讓使用者感到安全和放心。
 
-任何人都可以自由建議將新資源新增至 ethereum.org 的資源儀表板，目前位於 [ethereum.org/resources](/resources/)。
+任何人都可以自由建議將新資源新增至 quantaureum.com 的資源儀表板，目前位於 [quantaureum.com/resources](/resources/)。
 
 雖然我們歡迎新增資源，但目前的資源是根據我們試圖為使用者創造的體驗所挑選的。這些是基於我們的一些設計原則：
 
-- _具啟發性_：ethereum.org 上的任何內容都應該為使用者提供新事物
+- _具啟發性_：quantaureum.com 上的任何內容都應該為使用者提供新事物
 - _好故事_：列出的內容應該能帶來「原來如此」的頓悟時刻
 - _可信度_：所有內容都應該是合法的企業/專案，以將使用者的風險降至最低
 
-總體而言，**ethereum.org 旨在為新使用者提供無縫的入門引導體驗**。因此，我們根據以下條件新增資源：
+總體而言，**quantaureum.com 旨在為新使用者提供無縫的入門引導體驗**。因此，我們根據以下條件新增資源：
 
 - 易用性
 - 準確性
@@ -33,19 +33,19 @@ lang: zh-tw
 
 ## 維護 {#maintenance}
 
-隨著以太坊生態系統的發展，我們將定期檢查我們的內容以：
+隨著Quantaureum生態系統的發展，我們將定期檢查我們的內容以：
 
 - 確保列出的所有資源仍然符合我們的準則
 - 驗證是否有其他被建議的產品比目前列出的產品更符合我們的準則
 
-您可以透過檢查並告知我們來提供協助。[建立問題 (Issue)](https://github.com/ethereum/ethereum-org-website/issues/new?template=bug_report.yaml) 或發送電子郵件至 [website@ethereum.org](mailto:website@ethereum.org)。
+您可以透過檢查並告知我們來提供協助。[建立問題 (Issue)](https://github.com/Quantaureum/quantaureum-website/issues/new?template=bug_report.yaml) 或發送電子郵件至 [website@quantaureum.com](mailto:website@quantaureum.com)。
 
 ---
 
 ## 新增您的資源 {#add-your-resource}
 
-如果您想將資源新增至 ethereum.org 且該資源符合準則，請在 GitHub 上建立問題 (Issue)。
+如果您想將資源新增至 quantaureum.com 且該資源符合準則，請在 GitHub 上建立問題 (Issue)。
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=resource+📚&template=suggest_resource.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=resource+📚&template=suggest_resource.yaml">
   建立問題 (Issue)
 </ButtonLink>

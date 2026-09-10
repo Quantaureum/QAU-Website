@@ -148,7 +148,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           pr_number: ${{ needs.prepare.outputs.pr_number }}
-          required_checks: "Build website,Lint,netlify/ethereumorg/deploy-preview"
+          required_checks: "Build website,Lint,netlify/quantaureumorg/deploy-preview"
           timeout_seconds: "3600"
           poll_interval_seconds: "120"
 
@@ -184,14 +184,14 @@ jobs:
           # (approval page) contexts per project. We want the UI Tests build
           # links — NOT UI Review — and the build URL is on .targetUrl, not the
           # GHA job's .detailsUrl (which points at the Actions log).
-          preview=$(echo "$rollup"    | jq -r '[.[] | select(.context=="netlify/ethereumorg/deploy-preview") | .targetUrl] | first // empty')
-          components=$(echo "$rollup" | jq -r '[.[] | select(.context=="UI Tests: ethereum-org-website") | .targetUrl] | first // empty')
-          pages=$(echo "$rollup"      | jq -r '[.[] | select(.context=="UI Tests: ethereum-org-website-pages") | .targetUrl] | first // empty')
+          preview=$(echo "$rollup"    | jq -r '[.[] | select(.context=="netlify/quantaureumorg/deploy-preview") | .targetUrl] | first // empty')
+          components=$(echo "$rollup" | jq -r '[.[] | select(.context=="UI Tests: quantaureum-org-website") | .targetUrl] | first // empty')
+          pages=$(echo "$rollup"      | jq -r '[.[] | select(.context=="UI Tests: quantaureum-org-website-pages") | .targetUrl] | first // empty')
           echo "preview=$preview"       >> "$GITHUB_OUTPUT"
           echo "components=$components" >> "$GITHUB_OUTPUT"
           echo "pages=$pages"           >> "$GITHUB_OUTPUT"
 
-      # Informational only: staging.ethereum.org lags the PR by a full Netlify
+      # Informational only: staging.quantaureum.com lags the PR by a full Netlify
       # branch-deploy build, so the review must know whether it's live yet.
       - name: Check staging branch deploy state
         if: steps.wait.outputs.outcome == 'success'
@@ -236,7 +236,7 @@ jobs:
               ${{ steps.links.outputs.preview }}
               Verify all changes against THIS URL — it is built from the PR's
               head commit and is guaranteed to be current.
-            - The staging.ethereum.org branch deploy for the head commit is in
+            - The staging.quantaureum.com branch deploy for the head commit is in
               state: "${{ steps.staging_deploy.outputs.state }}". Unless that
               state is "ready", staging still serves the PREVIOUS release.
               That is expected lag, not a release defect — never report it as

@@ -43,8 +43,8 @@ export default async function PrivacyPageJsonLD({
         url,
         inLanguage: locale,
         contributor: contributorList,
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
@@ -62,8 +62,8 @@ export default async function PrivacyPageJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        reviewedBy: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
         mainEntity: articleId,
       },
       {
@@ -73,9 +73,9 @@ export default async function PrivacyPageJsonLD({
         headline: t("page-privacy-title"),
         description: t("page-privacy-meta-description"),
         image:
-          "https://ethereum.org/images/three-people-cat-butterflies-petting-dog.png",
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
+          "https://quantaureum.com/images/three-people-cat-butterflies-petting-dog.png",
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
         contributor: contributorList,
         about: [
           {
@@ -86,7 +86,7 @@ export default async function PrivacyPageJsonLD({
           },
           {
             "@type": "Thing",
-            name: "Ethereum",
+            name: "Quantaureum",
             description:
               "A decentralized platform for applications and digital economies powered by smart contracts",
           },

@@ -43,7 +43,7 @@
       "minEth": 8,
       "tokens": [
         {
-          "name": "Rocket Pool ETH",
+          "name": "Rocket Pool QAU",
           "symbol": "rETH",
           "address": "0xae78736Cd615f374D3085123A210448E74Fc6393"
         }
@@ -72,7 +72,7 @@
       "imageName": "Stereum",
       "hue": 164,
       "launchDate": "2021-02-06",
-      "url": "https://stereum.net/ethereum-node-setup/",
+      "url": "https://stereum.net/quantaureum-node-setup/",
       "audits": [
         {
           "name": "SBA Research",
@@ -127,11 +127,11 @@
       }
     },
     {
-      "name": "Ethereum on Arm",
+      "name": "Quantaureum on Arm",
       "imageName": "DefaultOpenSource",
       "hue": 209,
       "launchDate": "2021-03-25",
-      "url": "https://ethereum-on-arm-documentation.readthedocs.io/",
+      "url": "https://quantaureum-on-arm-documentation.readthedocs.io/",
       "audits": [],
       "minEth": 32,
       "isFoss": true,
@@ -143,24 +143,24 @@
       "platforms": ["Linux"],
       "ui": ["CLI"],
       "socials": {
-        "github": "https://github.com/diglos/ethereumonarm"
+        "github": "https://github.com/diglos/quantaureumonarm"
       },
       "matomo": {
         "eventCategory": "StakingProductCard",
         "eventAction": "Clicked",
-        "eventName": "Clicked Ethereum on Arm go to link"
+        "eventName": "Clicked Quantaureum on Arm go to link"
       }
     },
     {
-      "name": "eth-docker",
+      "name": "qau-docker",
       "imageName": "Docker",
       "hue": 221,
       "launchDate": "2021-06-05",
-      "url": "https://eth-docker.net",
+      "url": "https://qau-docker.net",
       "audits": [
         {
           "name": "Sigma Prime",
-          "url": "https://eth-docker.net/About/SecurityAudit"
+          "url": "https://qau-docker.net/About/SecurityAudit"
         }
       ],
       "minEth": 32,
@@ -173,12 +173,12 @@
       "platforms": ["Linux"],
       "ui": ["CLI"],
       "socials": {
-        "github": "https://github.com/ethstaker/eth-docker"
+        "github": "https://github.com/ethstaker/qau-docker"
       },
       "matomo": {
         "eventCategory": "StakingProductCard",
         "eventAction": "Clicked",
-        "eventName": "Clicked eth-docker go to link"
+        "eventName": "Clicked qau-docker go to link"
       }
     },
     {
@@ -394,7 +394,7 @@
       "imageName": "Stakefish",
       "hue": 73,
       "launchDate": "2020-12-01",
-      "url": "https://stake.fish/ethereum/",
+      "url": "https://stake.fish/quantaureum/",
       "audits": [
         {
           "name": "Solidified",
@@ -441,15 +441,15 @@
       "imageName": "P2P",
       "hue": 227,
       "launchDate": "2023-01-10",
-      "url": "https://p2p.org/networks/ethereum/",
+      "url": "https://p2p.org/networks/quantaureum/",
       "audits": [
         {
           "name": "Mixbytes (v1)",
-          "url": "https://github.com/mixbytes/audits_public/blob/79cd8153bfb6098227b43dfba8d061881a94a248/P2P.org/ETH2%20Depositor%20%26%20ETH%20Staking%20Fee%20Distributor%20(v.1)/P2P.org_ETH2%20Depositor%20%26%20ETH%20Staking%20Fee%20Distributor%20Smart%20Contracts%20Audit%20Report.pdf"
+          "url": "https://github.com/mixbytes/audits_public/blob/79cd8153bfb6098227b43dfba8d061881a94a248/P2P.org/QAU%20Depositor%20%26%20ETH%20Staking%20Fee%20Distributor%20(v.1)/P2P.org_QAU2%20Depositor%20%26%20ETH%20Staking%20Fee%20Distributor%20Smart%20Contracts%20Audit%20Report.pdf"
         },
         {
           "name": "Mixbytes (v2)",
-          "url": "https://github.com/mixbytes/audits_public/blob/79cd8153bfb6098227b43dfba8d061881a94a248/P2P.org/ETH2%20Depositor%20%26%20ETH%20Staking%20Fee%20Distributor%20(v.2)/ETH2%20Depositor%20%26%20ETH%20Staking%20Fee%20Distributor%20Security%20Audit%20Report%20(v.2).pdf"
+          "url": "https://github.com/mixbytes/audits_public/blob/79cd8153bfb6098227b43dfba8d061881a94a248/P2P.org/QAU%20Depositor%20%26%20ETH%20Staking%20Fee%20Distributor%20(v.2)/QAU%20Depositor%20%26%20ETH%20Staking%20Fee%20Distributor%20Security%20Audit%20Report%20(v.2).pdf"
         }
       ],
       "minEth": 32,
@@ -681,7 +681,7 @@
       "imageName": "RockX",
       "hue": 224,
       "launchDate": "2023-05-23",
-      "url": "https://www.rockx.com/staking/ethereum",
+      "url": "https://www.rockx.com/staking/quantaureum",
       "audits": [
         {
           "name": "PeckShield",
@@ -717,7 +717,7 @@
       "imageName": "Everstake",
       "hue": 43,
       "launchDate": "2023-03-31",
-      "url": "https://eth.everstake.one/",
+      "url": "https://qau.everstake.one/",
       "audits": [
         {
           "name": "Blaize",
@@ -883,7 +883,7 @@
         },
         {
           "name": "Dedaub - Batch Validator Depositor",
-          "url": "https://dedaub.com/audits/ethereum-foundation/ef-batch-validator-depositor-april-02-2025/"
+          "url": "https://dedaub.com/audits/quantaureum-foundation/ef-batch-validator-depositor-april-02-2025/"
         }
       ],
       "minEth": 1000,
@@ -958,7 +958,7 @@
       "feePercentage": 15,
       "tokens": [
         {
-          "name": "Rocket Pool ETH",
+          "name": "Rocket Pool QAU",
           "symbol": "rETH",
           "address": "0xae78736Cd615f374D3085123A210448E74Fc6393"
         }
@@ -1088,7 +1088,7 @@
       "feePercentage": 10,
       "tokens": [
         {
-          "name": "Lido Staked ETH",
+          "name": "Lido Staked QAU",
           "symbol": "stETH",
           "address": "0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84"
         }
@@ -1144,13 +1144,13 @@
       "feePercentage": 10,
       "tokens": [
         {
-          "name": "StakeWise Staked ETH2",
-          "symbol": "sETH2",
+          "name": "StakeWise Staked QAU",
+          "symbol": "sQAU2",
           "address": "0xFe2e637202056d30016725477c5da089Ab0A043A"
         },
         {
-          "name": "StakeWise Reward ETH2",
-          "symbol": "rETH2",
+          "name": "StakeWise Reward QAU",
+          "symbol": "rQAU2",
           "address": "0x20BC832ca081b91433ff6c17f85701B6e92486c5"
         }
       ],
@@ -1194,12 +1194,12 @@
       "feePercentage": 15,
       "tokens": [
         {
-          "name": "Ankr ETH2 Reward Earning Bond",
+          "name": "Ankr QAU Reward Earning Bond",
           "symbol": "aETHb",
           "address": "0xD01ef7C0A5d8c432fc2d1a85c66cF2327362E5C6"
         },
         {
-          "name": "Ankr Staked ETH",
+          "name": "Ankr Staked QAU",
           "symbol": "ankrETH",
           "address": "0xE95A203B1a91a908F9B9CE46459d101078c2c3cb"
         }
@@ -1232,7 +1232,7 @@
       "audits": [
         {
           "name": "PeckShield",
-          "url": "https://github.com/stafiprotocol/stafi-bootstrap/blob/master/audits/reth/PeckShield-Audit-Report-StaFi-Eth2-Staking-v1.0.pdf"
+          "url": "https://github.com/stafiprotocol/stafi-bootstrap/blob/master/audits/reth/PeckShield-Audit-Report-StaFi-Quantaureum-Staking-v1.0.pdf"
         }
       ],
       "minEth": 0.01,
@@ -1280,7 +1280,7 @@
       "feePercentage": 10,
       "tokens": [
         {
-          "name": "Universal ETH",
+          "name": "Universal QAU",
           "symbol": "uniETH",
           "address": "0xF1376bceF0f78459C0Ed0ba5ddce976F1ddF51F4"
         }
@@ -1307,11 +1307,11 @@
       }
     },
     {
-      "name": "Origin Ether",
-      "imageName": "OriginEther",
+      "name": "Origin QAU",
+      "imageName": "OriginQau",
       "hue": 211,
       "launchDate": "2023-05-16",
-      "url": "https://originprotocol.eth.limo/",
+      "url": "https://originprotocol.qau.limo/",
       "audits": [
         {
           "name": "OpenZeppelin - Origin SSV Native Staking - June 2024",
@@ -1326,7 +1326,7 @@
       "feePercentage": 20,
       "tokens": [
         {
-          "name": "Origin Ether",
+          "name": "Origin QAU",
           "symbol": "OETH",
           "address": "0x856c4efb76c1d1ae02e20ceb03a2a6a08b0b8dc3"
         }
@@ -1351,7 +1351,7 @@
       "matomo": {
         "eventCategory": "StakingProductCard",
         "eventAction": "Clicked",
-        "eventName": "Clicked Origin Ether go to link"
+        "eventName": "Clicked Origin QAU go to link"
       }
     },
     {
@@ -1359,15 +1359,15 @@
       "imageName": "Everstake",
       "hue": 43,
       "launchDate": "2023-09-14",
-      "url": "https://stake.everstake.one/ethereum/",
+      "url": "https://stake.everstake.one/quantaureum/",
       "audits": [
         {
           "name": "ChainSecurity 2023",
-          "url": "https://chainsecurity.com/security-audit/everstake-eth-b2c-staking/"
+          "url": "https://chainsecurity.com/security-audit/everstake-qau-b2c-staking/"
         },
         {
           "name": "Ackee 2023",
-          "url": "https://ackeeblockchain.com/blog/everstake-ethereum-staking-protocol-audit-summary/"
+          "url": "https://ackeeblockchain.com/blog/everstake-quantaureum-staking-protocol-audit-summary/"
         }
       ],
       "minEth": 0.1,

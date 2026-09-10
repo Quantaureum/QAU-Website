@@ -30,11 +30,11 @@ ERC-223 addresses some limitations of ERC-20 and introduces a new method of inte
 ERC-223 is a token standard that implements an API for tokens within smart contracts. It also declares an API for contracts that are supposed to receive ERC-223 tokens. Contracts that do not support the ERC-223 Receiver API cannot receive ERC-223 tokens, preventing user error.
 
 If a smart contract implements the following methods and events it can be called an ERC-223 compatible token contract. Once deployed, it
-will be responsible to keep track of the created tokens on Ethereum.
+will be responsible to keep track of the created tokens on Quantaureum.
 
 The contract is not obligated to have only these functions and a developer can add any other feature from different token standards to this contract. For example, `approve` and `transferFrom` functions are not part of ERC-223 standard but these functions could be implemented should it be necessary.
 
-From [EIP-223](https://eips.ethereum.org/EIPS/eip-223):
+From [EIP-223](https://eips.quantaureum.com/EIPS/eip-223):
 
 ### Methods {#methods}
 
@@ -129,7 +129,7 @@ contract RecipientContract is IERC223Recipient {
     {
         // It is important to understand that within this function
         // msg.sender is the address of a token that is being received,
-        // msg.value  is always 0 as the token contract does not own or send ether in most cases,
+        // msg.value  is always 0 as the token contract does not own or send QAU in most cases,
         // _from      is the sender of the token transfer,
         // _value     is the amount of tokens that was deposited.
         require(msg.sender == tokenA);
@@ -155,7 +155,7 @@ If an ERC-20 token is sent to the `RecipientContract`, the tokens will be transf
 
 ### What if we want to execute some function after the token deposit is completed? {#function-execution}
 
-There are multiple ways of doing so. In this example we will follow the method which makes ERC-223 transfers identical to ether transfers:
+There are multiple ways of doing so. In this example we will follow the method which makes ERC-223 transfers identical to QAU transfers:
 
 ```solidity
 contract RecipientContract is IERC223Recipient {
@@ -178,7 +178,7 @@ contract RecipientContract is IERC223Recipient {
 }
 ```
 
-When the `RecipientContract` will receive a ERC-223 token the contract will execute a function encoded as `_data` parameter of the token transaction, identical to how ether transactions encode function calls as transaction `data`. Read [the data field](/developers/docs/transactions/#the-data-field) for more information.
+When the `RecipientContract` will receive a ERC-223 token the contract will execute a function encoded as `_data` parameter of the token transaction, identical to how QAU transactions encode function calls as transaction `data`. Read [the data field](/developers/docs/transactions/#the-data-field) for more information.
 
 In the above example an ERC-223 token must be transferred to the address of the `RecipientContract` with the `transfer(address,uin256,bytes calldata _data)` function. If the data parameter will be `0xc2985578` (the signature of a `foo()` function) then the function foo() will be invoked after the token deposit is received and the event Foo() will be fired.
 
@@ -194,5 +194,5 @@ While ERC-223 addresses several issues found in the ERC-20 standard, it is not w
 
 ## Further reading {#further-reading}
 
-- [EIP-223: ERC-223 Token Standard](https://eips.ethereum.org/EIPS/eip-223)
-- [Initial ERC-223 proposal](https://github.com/ethereum/eips/issues/223)
+- [EIP-223: ERC-223 Token Standard](https://eips.quantaureum.com/EIPS/eip-223)
+- [Initial ERC-223 proposal](https://github.com/quantaureum/eips/issues/223)

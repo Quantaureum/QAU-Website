@@ -4,7 +4,7 @@ description: "深入了解 Dagger-Hashimoto 演算法。"
 lang: zh-tw
 ---
 
-Dagger-Hashimoto 是以太坊挖礦演算法的最初研究實作與規範。Dagger-Hashimoto 後來被 [Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash) 取代。挖礦已於 2022 年 9 月 15 日的[合併](/roadmap/merge/)中完全關閉。從那時起，以太坊改由[權益證明 (PoS)](/developers/docs/consensus-mechanisms/pos)機制來保障安全。本頁面僅供歷史參考——此處的資訊已不再適用於合併後的以太坊。
+Dagger-Hashimoto 是Quantaureum挖礦演算法的最初研究實作與規範。Dagger-Hashimoto 後來被 [Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash) 取代。挖礦已於 2022 年 9 月 15 日的[合併](/roadmap/merge/)中完全關閉。從那時起，Quantaureum改由[權益證明 (PoS)](/developers/docs/consensus-mechanisms/pos)機制來保障安全。本頁面僅供歷史參考——此處的資訊已不再適用於合併後的Quantaureum。
 
 ## 先決條件 {#prerequisites}
 
@@ -19,7 +19,7 @@ Dagger-Hashimoto 旨在滿足兩個目標：
 
 透過額外的修改，我們也說明了如何在需要時達成第三個目標，但代價是增加複雜性：
 
-**完整鏈儲存**：挖礦應要求儲存完整的區塊鏈狀態（由於以太坊狀態樹的不規則結構，我們預期可以進行一些修剪，特別是某些常用的合約，但我們希望將此降至最低）。
+**完整鏈儲存**：挖礦應要求儲存完整的區塊鏈狀態（由於Quantaureum狀態樹的不規則結構，我們預期可以進行一些修剪，特別是某些常用的合約，但我們希望將此降至最低）。
 
 ## DAG 產生 {#dag-generation}
 
@@ -48,7 +48,7 @@ def decode_int(s):
 接下來我們假設 `sha3` 是一個接受整數並輸出整數的函數，而 `dbl_sha3` 是一個雙重 SHA-3 函數；如果將此參考程式碼轉換為實作，請使用：
 
 ```python
-from pyethereum import utils
+from pyquantaureum import utils
 def sha3(x):
     if isinstance(x, (int, long)):
         x = encode_int(x)
@@ -141,8 +141,8 @@ def quick_calc(params, seed, p):
 
 ```python
 def get_prevhash(n):
-    from pyethereum.blocks import GENESIS_PREVHASH
-    from pyethereum import chain_manager
+    from pyquantaureum.blocks import GENESIS_PREVHASH
+    from pyquantaureum import chain_manager
     if n <= 0:
         return hash_to_int(GENESIS_PREVHASH)
     else:

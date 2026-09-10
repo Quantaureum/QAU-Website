@@ -21,11 +21,11 @@ Manticore yêu cầu >= Python 3.6. Nó có thể được cài đặt thông qu
 ### Manticore thông qua Docker {#manticore-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_Lệnh cuối cùng chạy eth-security-toolbox trong một Docker có quyền truy cập vào thư mục hiện tại của bạn. Bạn có thể thay đổi các tệp từ máy chủ của mình và chạy các công cụ trên các tệp từ Docker_
+_Lệnh cuối cùng chạy qau-security-toolbox trong một Docker có quyền truy cập vào thư mục hiện tại của bạn. Bạn có thể thay đổi các tệp từ máy chủ của mình và chạy các công cụ trên các tệp từ Docker_
 
 Bên trong Docker, chạy:
 
@@ -198,18 +198,18 @@ Phần này mô tả chi tiết cách thao tác với một hợp đồng thông
 Điều đầu tiên bạn nên làm là khởi tạo một chuỗi khối mới bằng các lệnh sau:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 ```
 
-Một tài khoản không phải hợp đồng được tạo bằng cách sử dụng [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account):
+Một tài khoản không phải hợp đồng được tạo bằng cách sử dụng [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.quantaureum.ManticoreEVM.create_account):
 
 ```python
 user_account = m.create_account(balance=1000)
 ```
 
-Một hợp đồng Solidity có thể được triển khai bằng cách sử dụng [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract):
+Một hợp đồng Solidity có thể được triển khai bằng cách sử dụng [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.quantaureum.ManticoreEVM.create_contract):
 
 ```solidity
 source_code = '''
@@ -228,7 +228,7 @@ contract_account = m.solidity_create_contract(source_code, owner=user_account)
 
 #### Tóm tắt {#summary}
 
-- Bạn có thể tạo tài khoản người dùng và tài khoản hợp đồng bằng [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account) và [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract).
+- Bạn có thể tạo tài khoản người dùng và tài khoản hợp đồng bằng [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.quantaureum.ManticoreEVM.create_account) và [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.quantaureum.ManticoreEVM.create_contract).
 
 ### Thực thi các giao dịch {#executing-transactions}
 
@@ -239,7 +239,7 @@ Manticore hỗ trợ hai loại giao dịch:
 
 #### Giao dịch thô {#raw-transaction}
 
-Một giao dịch thô được thực thi bằng cách sử dụng [m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.ethereum.ManticoreEVM.transaction):
+Một giao dịch thô được thực thi bằng cách sử dụng [m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.quantaureum.ManticoreEVM.transaction):
 
 ```python
 m.transaction(caller=user_account,
@@ -250,8 +250,8 @@ m.transaction(caller=user_account,
 
 Người gọi, địa chỉ, dữ liệu hoặc giá trị của giao dịch có thể là cụ thể hoặc tượng trưng:
 
-- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.ethereum.ManticoreEVM.make_symbolic_value) tạo ra một giá trị tượng trưng.
-- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.ethereum.ManticoreEVM.make_symbolic_buffer) tạo ra một mảng byte tượng trưng.
+- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.quantaureum.ManticoreEVM.make_symbolic_value) tạo ra một giá trị tượng trưng.
+- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.quantaureum.ManticoreEVM.make_symbolic_buffer) tạo ra một mảng byte tượng trưng.
 
 Ví dụ:
 
@@ -269,7 +269,7 @@ Nếu dữ liệu là tượng trưng, Manticore sẽ khám phá tất cả các
 #### Giao dịch có tên {#named-transaction}
 
 Các hàm có thể được thực thi thông qua tên của chúng.
-Để thực thi `f(uint var)` với một giá trị tượng trưng, từ user_account và với 0 ether, hãy sử dụng:
+Để thực thi `f(uint var)` với một giá trị tượng trưng, từ user_account và với 0 QAU, hãy sử dụng:
 
 ```python
 symbolic_var = m.make_symbolic_value()
@@ -294,14 +294,14 @@ print("Results are in {}".format(m.workspace))
 
 ### Chấm dứt Khám phá {#terminate-the-exploration}
 
-Để dừng khám phá, hãy sử dụng [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.ethereum.ManticoreEVM.finalize). Không có giao dịch nào khác được gửi sau khi phương thức này được gọi và Manticore tạo ra các trường hợp kiểm thử cho mỗi đường dẫn được khám phá.
+Để dừng khám phá, hãy sử dụng [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.quantaureum.ManticoreEVM.finalize). Không có giao dịch nào khác được gửi sau khi phương thức này được gọi và Manticore tạo ra các trường hợp kiểm thử cho mỗi đường dẫn được khám phá.
 
 ### Tóm tắt: Chạy dưới Manticore {#summary-running-under-manticore}
 
 Kết hợp tất cả các bước trước đó lại với nhau, chúng ta có được:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -363,7 +363,7 @@ data = ABI.deserialize("uint", data)
 
 ### Cách tạo trường hợp kiểm thử {#how-to-generate-testcase}
 
-Sử dụng [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.ethereum.ManticoreEVM.generate_testcase) để tạo trường hợp kiểm thử:
+Sử dụng [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.quantaureum.ManticoreEVM.generate_testcase) để tạo trường hợp kiểm thử:
 
 ```python
 m.generate_testcase(state, 'BugFound')
@@ -380,7 +380,7 @@ m.generate_testcase(state, 'BugFound')
 ### Tóm tắt: Lấy Đường dẫn ném lỗi {#summary-getting-throwing-path}
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -482,7 +482,7 @@ if solver.check(state.constraints):
 Thêm ràng buộc vào mã trước đó, chúng ta có được:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 from manticore.core.smtlib.solver import Z3Solver
 
 solver = Z3Solver.instance()

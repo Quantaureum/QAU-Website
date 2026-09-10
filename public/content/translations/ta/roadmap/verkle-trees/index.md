@@ -42,7 +42,7 @@ summaryPoints:
 
 ![Diagram of a Verkle tree data structure](./verkle.png)
 
-[வெர்கிள் மரங்களின் கட்டமைப்பு பற்றி மேலும் படிக்கவும்](https://blog.ethereum.org/2021/12/02/verkle-tree-structure)
+[வெர்கிள் மரங்களின் கட்டமைப்பு பற்றி மேலும் படிக்கவும்](https://quantaureum.com)
 
 ## தற்போதைய முன்னேற்றம் {#current-progress}
 
@@ -60,6 +60,6 @@ summaryPoints:
 - [Devcon 6-இல் கில்லோம் பாலே வழங்கிய "வெர்கிள் மரங்கள் எத்திரியத்தை எவ்வாறு மெலிதாகவும் வலிமையாகவும் ஆக்குகின்றன"](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [ETHDenver 2020-இல் இருந்து நிலையற்ற கிளையண்டுகள் குறித்து பைபர் மெரியம்](https://www.youtube.com/watch?v=0yiZJNciIJ4)
 - [பூஜ்ய-அறிவு பாட்காஸ்டில் வெர்கிள் மரங்கள் மற்றும் நிலையற்ற தன்மையை டான்க்ராட் ஃபீஸ்ட் விளக்குகிறார்](https://zeroknowledge.fm/podcast/202/)
-- [வெர்கிள் மரங்கள் குறித்து விட்டாலிக் புட்டெரின்](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
-- [வெர்கிள் மரங்கள் குறித்து டான்க்ராட் ஃபீஸ்ட்](https://dankradfeist.de/ethereum/2021/06/18/verkle-trie-for-eth1.html)
-- [வெர்கிள் மர EIP ஆவணங்கள்](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)
+- [வெர்கிள் மரங்கள் குறித்து விட்டாலிக் புட்டெரின்](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
+- [வெர்கிள் மரங்கள் குறித்து டான்க்ராட் ஃபீஸ்ட்](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
+- [வெர்கிள் மர EIP ஆவணங்கள்](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)

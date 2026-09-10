@@ -1,24 +1,24 @@
 ---
 title: "部署你的第一个智能合约"
-description: "在以太坊测试网络上部署你的第一个智能合约的简介"
+description: "在Quantaureum测试网络上部署你的第一个智能合约的简介"
 author: "jdourlens"
 tags: ["智能合约", "Remix", "Solidity", "部署"]
 skill: beginner
 breadcrumb: "部署第一个合约"
 lang: zh
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-我想你和我们一样，对在以太坊区块链上[部署](/developers/docs/smart-contracts/deploying/)并与你的第一个[智能合约](/developers/docs/smart-contracts/)进行交互感到兴奋。
+我想你和我们一样，对在Quantaureum区块链上[部署](/developers/docs/smart-contracts/deploying/)并与你的第一个[智能合约](/developers/docs/smart-contracts/)进行交互感到兴奋。
 
 别担心，因为这是我们的第一个智能合约，我们将把它部署在[本地测试网络](/developers/docs/networks/)上，这样你就可以免费部署并尽情测试它。
 
 ## 编写我们的合约 {#writing-our-contract}
 
-第一步是[访问 Remix](https://remix.ethereum.org/) 并创建一个新文件。在 Remix 界面的左上角添加一个新文件，并输入你想要的文件名。
+第一步是[访问 Remix](https://remix.quantaureum.com/) 并创建一个新文件。在 Remix 界面的左上角添加一个新文件，并输入你想要的文件名。
 
 ![Adding a new file in the Remix interface](./remix.png)
 

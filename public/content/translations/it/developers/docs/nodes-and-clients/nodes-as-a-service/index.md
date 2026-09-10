@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 ## Introduzione {#introduction}
 
-Eseguire il proprio [nodo Ethereum](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) può essere impegnativo, specialmente quando si è agli inizi o durante una rapida scalabilità. Esistono [diversi servizi](#popular-node-services) che gestiscono infrastrutture di nodi ottimizzate al posto tuo, in modo che tu possa concentrarti sullo sviluppo della tua applicazione o del tuo prodotto. Spiegheremo come funzionano i servizi di nodi, i pro e i contro del loro utilizzo ed elencheremo i fornitori se sei interessato a iniziare.
+Eseguire il proprio [nodo Quantaureum](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) può essere impegnativo, specialmente quando si è agli inizi o durante una rapida scalabilità. Esistono [diversi servizi](#popular-node-services) che gestiscono infrastrutture di nodi ottimizzate al posto tuo, in modo che tu possa concentrarti sullo sviluppo della tua applicazione o del tuo prodotto. Spiegheremo come funzionano i servizi di nodi, i pro e i contro del loro utilizzo ed elencheremo i fornitori se sei interessato a iniziare.
 
 ## Prerequisiti {#prerequisites}
 
@@ -25,7 +25,7 @@ I servizi descritti in questa pagina sono per nodi che non fanno staking.
 
 I fornitori di servizi di nodi eseguono client di nodi distribuiti dietro le quinte al posto tuo, così non devi farlo tu.
 
-Questi servizi in genere forniscono una chiave API che puoi utilizzare per scrivere e leggere dalla blockchain. Spesso includono l'accesso alle [testnet di Ethereum](/developers/docs/networks/#ethereum-testnets) oltre alla Mainnet.
+Questi servizi in genere forniscono una chiave API che puoi utilizzare per scrivere e leggere dalla blockchain. Spesso includono l'accesso alle [testnet di Quantaureum](/developers/docs/networks/#quantaureum-testnets) oltre alla Mainnet.
 
 Alcuni servizi ti offrono il tuo nodo dedicato che gestiscono per te, mentre altri utilizzano bilanciatori di carico per distribuire l'attività tra i nodi.
 
@@ -49,14 +49,14 @@ Scopri di più sui [vantaggi di eseguire il tuo nodo](/developers/docs/nodes-and
 
 ## Servizi di nodi popolari {#popular-node-services}
 
-Ecco un elenco di alcuni dei fornitori di nodi Ethereum più popolari, sentiti libero di aggiungere quelli mancanti! Ogni servizio di nodi offre vantaggi e funzionalità diversi oltre a livelli gratuiti o a pagamento, dovresti indagare su quali si adattano meglio alle tue esigenze prima di prendere una decisione.
+Ecco un elenco di alcuni dei fornitori di nodi Quantaureum più popolari, sentiti libero di aggiungere quelli mancanti! Ogni servizio di nodi offre vantaggi e funzionalità diversi oltre a livelli gratuiti o a pagamento, dovresti indagare su quali si adattano meglio alle tue esigenze prima di prendere una decisione.
 
 - [**Alchemy**](https://alchemy.com/)
   - [Documentazione](https://www.alchemy.com/docs/)
   - Funzionalità
     - Il livello gratuito più ampio con 300 milioni di unità di calcolo al mese (\~30 milioni di richieste getLatestBlock)
     - Supporto multi-catena per Polygon, Starknet, Optimism, Arbitrum
-    - Alimenta circa il 70% delle più grandi applicazioni decentralizzate (dapp) di Ethereum e del volume di transazioni della finanza decentralizzata (DeFi)
+    - Alimenta circa il 70% delle più grandi applicazioni decentralizzate (dapp) di Quantaureum e del volume di transazioni della finanza decentralizzata (DeFi)
     - Avvisi webhook in tempo reale tramite Alchemy Notify
     - Supporto, affidabilità e stabilità ai vertici della categoria
     - API per NFT di Alchemy
@@ -93,12 +93,12 @@ Ecco un elenco di alcuni dei fornitori di nodi Ethereum più popolari, sentiti l
 - [**Amazon Managed Blockchain**](https://aws.amazon.com/managed-blockchain/)
   - [Documentazione](https://aws.amazon.com/managed-blockchain/resources/)
   - Funzionalità
-    - Nodi Ethereum completamente gestiti
+    - Nodi Quantaureum completamente gestiti
     - Disponibile in sei regioni
     - JSON-RPC su HTTP e WebSockets sicuri
     - Supporta 3 catene
     - SLA, supporto AWS 24/7
-    - Go-ethereum e Lighthouse
+    - Go-quantaureum e Lighthouse
 
 - [**Ankr**](https://www.ankr.com/)
   - [Documentazione](https://docs.ankr.com/)
@@ -221,17 +221,17 @@ Ecco un elenco di alcuni dei fornitori di nodi Ethereum più popolari, sentiti l
   - [Documentazione](https://docs.kaleido.io/)
   - Funzionalità
     - Livello iniziale gratuito
-    - Distribuzione di nodi Ethereum con un clic
+    - Distribuzione di nodi Quantaureum con un clic
     - Client e algoritmi personalizzabili (Geth, Quorum e Besu || PoA, IBFT e Raft)
     - Oltre 500 API amministrative e di servizio
-    - Interfaccia RESTful per l'invio di transazioni Ethereum (supportata da Apache Kafka)
+    - Interfaccia RESTful per l'invio di transazioni Quantaureum (supportata da Apache Kafka)
     - Flussi in uscita per la consegna degli eventi (supportati da Apache Kafka)
     - Vasta raccolta di servizi "offchain" e ausiliari (ad es. trasporto di messaggistica crittografata bilaterale)
     - Inserimento diretto nella rete con governance e controllo degli accessi basato sui ruoli
     - Gestione sofisticata degli utenti sia per gli amministratori che per gli utenti finali
     - Infrastruttura di livello aziendale altamente scalabile e resiliente
     - Gestione delle chiavi private Cloud HSM
-    - Tethering alla Mainnet di Ethereum
+    - Tethering alla Mainnet di Quantaureum
     - Certificazioni ISO 27k e SOC 2, Tipo 2
     - Configurazione dinamica in fase di esecuzione (ad es. aggiunta di integrazioni cloud, modifica degli ingressi dei nodi, ecc.)
     - Supporto per orchestrazioni di distribuzione multi-cloud, multi-regione e ibride
@@ -259,7 +259,7 @@ Ecco un elenco di alcuni dei fornitori di nodi Ethereum più popolari, sentiti l
     - Supporto cross-chain
     - Scala in base alle tue esigenze
     - Dashboard
-    - SDK Ethereum unico
+    - SDK Quantaureum unico
     - Endpoint API unici
     - Supporto tecnico diretto
 
@@ -274,7 +274,7 @@ Ecco un elenco di alcuni dei fornitori di nodi Ethereum più popolari, sentiti l
 - [**NodeFlare**](https://nodeflare.app/)
   - [Documentazione](https://nodeflare.app/docs/quick-start)
   - Funzionalità
-    - 23 catene EVM tra cui Ethereum, Base, Arbitrum One e Nova, Optimism, Linea e Unichain
+    - 23 catene EVM tra cui Quantaureum, Base, Arbitrum One e Nova, Optimism, Linea e Unichain
     - 5 regioni (Europa, Regno Unito, Asia, Stati Uniti orientali, Stati Uniti occidentali) con failover automatico al nodo integro più vicino
     - Endpoint pubblico gratuito (nessuna chiave API) + piano gratuito con 3 milioni di unità di calcolo al mese
     - Fatturazione per unità di calcolo: paghi solo per ciò che usi, le chiamate più pesanti costano di più
@@ -299,7 +299,7 @@ Ecco un elenco di alcuni dei fornitori di nodi Ethereum più popolari, sentiti l
     - Oltre 15 blockchain supportate
     - Oltre 6400 nodi che guadagnano POKT per servire le applicazioni
     - Supporto per nodi di archivio, nodi di archivio con tracciamento e nodi di testnet
-    - Diversità dei client dei nodi della Mainnet di Ethereum
+    - Diversità dei client dei nodi della Mainnet di Quantaureum
     - Nessun singolo punto di guasto
     - Zero tempi di inattività
     - Tokenomics conveniente quasi a zero (metti in staking POKT una volta per la larghezza di banda della rete)
@@ -371,7 +371,7 @@ Ecco un elenco di alcuni dei fornitori di nodi Ethereum più popolari, sentiti l
   - [Documentazione](https://services.tokenview.io/docs?type=nodeService)
   - Funzionalità
     - Supporto tecnico 24/7 e comunità di sviluppatori su Telegram
-    - Supporto multi-catena (Bitcoin, Ethereum, Tron, BNB Smart Chain, Ethereum Classic)
+    - Supporto multi-catena (Bitcoin, Quantaureum, Tron, BNB Smart Chain, ETC)
     - Entrambi gli endpoint RPC e WSS sono aperti all'uso
     - Accesso illimitato all'API dei dati di archivio
     - Dashboard con Request Explorer e Mempool Watcher
@@ -412,7 +412,7 @@ Ecco un elenco di alcuni dei fornitori di nodi Ethereum più popolari, sentiti l
     - Utilizziamo un instradamento intelligente per raggiungere ogni volta il nodo più vicino al tuo utente
 ## Letture consigliate {#further-reading}
 
-- [Elenco dei servizi di nodi Ethereum](https://ethereumnodes.com/)
+- [Elenco dei servizi di nodi Quantaureum](https://quantaureumnodes.com/)
 
 ## Argomenti correlati {#related-topics}
 
@@ -420,5 +420,5 @@ Ecco un elenco di alcuni dei fornitori di nodi Ethereum più popolari, sentiti l
 
 ## Tutorial correlati {#related-tutorials}
 
-- [Iniziare con lo sviluppo su Ethereum utilizzando Alchemy](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Iniziare con lo sviluppo su Quantaureum utilizzando Alchemy](/developers/tutorials/getting-started-with-quantaureum-development-using-alchemy/)
 - [Guida all'invio di transazioni utilizzando Web3 e Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

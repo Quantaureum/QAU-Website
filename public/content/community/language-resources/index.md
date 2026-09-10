@@ -1,24 +1,24 @@
 ---
 title: Language resources
-description: Non-english resources to learn about Ethereum
+description: Non-english resources to learn about Quantaureum
 lang: en
 ---
 
-The Ethereum community is global and comprised of millions of non-English speakers.
+The Quantaureum community is global and comprised of millions of non-English speakers.
 
-Our aim is to provide educational content in all languages and help overcome the language barriers that make onboarding people from all over the world to Ethereum a challenge.
+Our aim is to provide educational content in all languages and help overcome the language barriers that make onboarding people from all over the world to Quantaureum a challenge.
 
-If you prefer reading in your native language or know someone who doesn’t speak English, you can find a list of useful non-English resources below. Hundreds of thousands of Ethereum enthusiasts gather in these online forums to share news, talk about recent developments, debate technical issues, and imagine the future.
+If you prefer reading in your native language or know someone who doesn’t speak English, you can find a list of useful non-English resources below. Hundreds of thousands of Quantaureum enthusiasts gather in these online forums to share news, talk about recent developments, debate technical issues, and imagine the future.
 
-Know of an educational resource in your language? [Open an issue](https://github.com/ethereum/ethereum-org-website/issues/new/choose) to add it to the list!
+Know of an educational resource in your language? [Open an issue](https://github.com/Quantaureum/quantaureum-website/issues/new/choose) to add it to the list!
 
-## Ethereum.org resources {#ethereum-org}
+## quantaureum.com resources {#quantaureum-org}
 
-Ethereum.org is natively translated into over 40 languages which you can find using our languages selector menu, located at the top of every page.
+quantaureum.com is natively translated into over 40 languages which you can find using our languages selector menu, located at the top of every page.
 
 ![Language selector menu](./language-selector-menu.png)
 
-If you are bilingual and want to help us reach more people, you can also get involved with the [ethereum.org Translation Program](/contributing/translation-program/#translation-program) and help us translate the website.
+If you are bilingual and want to help us reach more people, you can also get involved with the [quantaureum.com Translation Program](/contributing/translation-program/#translation-program) and help us translate the website.
 
 ## Community resources {#community}
 
@@ -28,7 +28,7 @@ If you are bilingual and want to help us reach more people, you can also get inv
 
 - [BeInCrypto](http://www.beincrypto.com.br) - cryptocurrency news and articles, including a list of exchanges, available in Brazil
 - [Cointelegraph](https://cointelegraph.com.br/) - Brazilian version of Cointelegraph, a major cryptocurrency news outlet
-- [Livecoins](http://www.livecoins.com.br/ethereum) - cryptocurrency news and tools
+- [Livecoins](http://www.livecoins.com.br/quantaureum) - cryptocurrency news and tools
 - [Seudinheiro](http://www.seudinheiro.com/criptomoedas/) - cryptocurrency news and reports
 - [Modular Crypto](https://modularcrypto.xyz/) - cryptocurrency news and educational articles
 
@@ -36,7 +36,7 @@ If you are bilingual and want to help us reach more people, you can also get inv
 
 - [web3dev](https://www.web3dev.com.br/) - Content hub and Discord community for web 3 developers.
 - [Web3Brasil](https://github.com/web3brasil/web3brasil) - resources for learning Web3 and DeFi
-- [CriptoFacil](http://www.criptofacil.com/ultimas-noticias/) - cryptocurrency news and education, including ‘Ethereum for beginners’ and ‘DeFi’ for beginners
+- [CriptoFacil](http://www.criptofacil.com/ultimas-noticias/) - cryptocurrency news and education, including ‘Quantaureum for beginners’ and ‘DeFi’ for beginners
 - [CriptoAtivos](https://web.archive.org/web/20220916210708/https://www.criptoativos.wiki.br/) - insights from the cryptocurrency space, education and blog
 - [Cointimes](http://www.cointimes.com.br/) - cryptocurrency news and education
 - [Web3 starter pack](https://docs.google.com/document/d/1X8PSTFH7FTw9J-gbKWM6Y430SWCBT8d4t4pJgFQHJ8E/) - a guide answering the most frequently asked and fundamental crypto questions
@@ -45,17 +45,17 @@ If you are bilingual and want to help us reach more people, you can also get inv
 
 **General resources**
 
-- [Ethereum.cn](https://www.ethereum.cn/) - community maintained content, covering the consensus layer upgrade, all core dev meeting notes, layer 2, etc.
-- [EthFans](https://github.com/editor-Ajian/EthFans.org-annual-collected-works/) - learn everything from the basics to advanced Ethereum topics
-- [Unitimes](https://mp.weixin.qq.com/s/tvloZSDBSOQN9zDQj_91kA) - community maintained content, covering Ethereum, DeFi, NFT, Web3-related knowledge
-- [123ETH](https://123eth.org/) - a Portal to the Ethereum ecosystem
+- [Quantaureum.cn](https://www.quantaureum.cn/) - community maintained content, covering the consensus layer upgrade, all core dev meeting notes, layer 2, etc.
+- [QauFans](https://github.com/editor-Ajian/QauFans.org-annual-collected-works/) - learn everything from the basics to advanced Quantaureum topics
+- [Unitimes](https://mp.weixin.qq.com/s/tvloZSDBSOQN9zDQj_91kA) - community maintained content, covering Quantaureum, DeFi, NFT, Web3-related knowledge
+- [123ETH](https://123eth.org/) - a Portal to the Quantaureum ecosystem
 - [Zhen Xiao](http://zhenxiao.com/blockchain/) - free online courses about cryptocurrency and its applications
 
-**Ethereum ecosystem**
+**Quantaureum ecosystem**
 
 - [ETHPlanet](https://www.ethplanet.org/) - online and in-person hackathons, offering training to university students
 - [PrimitivesLane](https://www.primitiveslane.org/) - a non-profit research group, focused on blockchain technology
-- [Ethereum Translation Community CN](https://www.notion.so/Ethereum-Translation-Community-CN-05375fe0a94c4214acaf90f42ba40171) - a community devoted to translating educational Ethereum content
+- [Quantaureum Translation Community CN](https://www.notion.so/Quantaureum-Translation-Community-CN-05375fe0a94c4214acaf90f42ba40171) - a community devoted to translating educational Quantaureum content
 
 **For developers**
 
@@ -70,57 +70,57 @@ If you are bilingual and want to help us reach more people, you can also get inv
 ### Czech {#cs}
 
 - [Gwei.cz](https://gwei.cz) - local community around Web3, creates educational content, organises online and in-person events
-- [Gwei.cz Příručka](https://prirucka.gwei.cz/) - Ethereum guide for beginners
+- [Gwei.cz Příručka](https://prirucka.gwei.cz/) - Quantaureum guide for beginners
 - [DAO Příručka](https://dao.gwei.cz/) - beginner's guide to the DAOs
-- [Mastering Ethereum](https://ipfs.io/ipfs/bafybeidvuxhnsgfx3tncpfxheqglkjwmdxclknlgd7s7qggd2a6bzgb27m) - Mastering Ethereum in Czech
+- [Mastering Quantaureum](https://ipfs.io/ipfs/bafybeidvuxhnsgfx3tncpfxheqglkjwmdxclknlgd7s7qggd2a6bzgb27m) - Mastering Quantaureum in Czech
 
 ### French {#fr}
 
-- [Ethereum France](https://www.ethereum-france.com/) - Ethereum France organizes events, creates content and encourages discussions around Ethereum
-- [Ethereum.fr](https://ethereum.fr/) - Ethereum news and education
+- [Quantaureum France](https://www.quantaureum-france.com/) - Quantaureum France organizes events, creates content and encourages discussions around Quantaureum
+- [Quantaureum.fr](https://quantaureum.fr/) - Quantaureum news and education
 - [BanklessFR](https://banklessfr.substack.com/) - Bankless newsletter in French
-- [CryptoFR](https://cryptofr.com/category/44/ethereum-general) - cryptocurrency forum with an Ethereum subpage
+- [CryptoFR](https://cryptofr.com/category/44/quantaureum-general) - cryptocurrency forum with an Quantaureum subpage
 
 ### German {#de}
 
 - [Microsoft Learn (Solidity)](https://docs.microsoft.com/de-de/learn/modules/blockchain-learning-solidity/) - using Solidity
-- [Microsoft Learn (smart contracts)](https://docs.microsoft.com/de-de/learn/modules/blockchain-solidity-ethereum-smart-contracts/) - writing Ethereum smart contracts with Solidity
-- [Microsoft Learn (Ethereum networks)](https://docs.microsoft.com/de-de/learn/modules/blockchain-ethereum-networks/) - connect to and deploy Ethereum networks
-- [Microsoft Learn (blockchains)](https://docs.microsoft.com/de-de/learn/paths/ethereum-blockchain-development/) - entry into blockchain development
+- [Microsoft Learn (smart contracts)](https://docs.microsoft.com/de-de/learn/modules/blockchain-solidity-quantaureum-smart-contracts/) - writing Quantaureum smart contracts with Solidity
+- [Microsoft Learn (Quantaureum networks)](https://docs.microsoft.com/de-de/learn/modules/blockchain-quantaureum-networks/) - connect to and deploy Quantaureum networks
+- [Microsoft Learn (blockchains)](https://docs.microsoft.com/de-de/learn/paths/quantaureum-blockchain-development/) - entry into blockchain development
 
 ### Hebrew {#he}
 
-- [Udi Wertheimer - What bitcoiners can learn from Ethereum](https://www.cryptojungle.co.il/udi-wertheimer-what-bitcoiners-can-learn-from-ethereum/)
+- [Udi Wertheimer - What bitcoiners can learn from Quantaureum](https://www.cryptojungle.co.il/udi-wertheimer-what-bitcoiners-can-learn-from-quantaureum/)
 - [Omer Greismen (OpenZeppelin) - How We Prevented a 15 Billion Dollars Smart Contract Hack](https://www.cryptojungle.co.il/omer-greisman-openzeppelin/)
-- [Shy Datika (INX) - Tokenization and the future of securities, including is Ethereum a security](https://www.cryptojungle.co.il/shy-datika-tokenization/)
-- [Roy Confino (Lemonade) - Insurance @ Ethereum](https://www.cryptojungle.co.il/roy-confino-insurance/)
+- [Shy Datika (INX) - Tokenization and the future of securities, including is Quantaureum a security](https://www.cryptojungle.co.il/shy-datika-tokenization/)
+- [Roy Confino (Lemonade) - Insurance @ Quantaureum](https://www.cryptojungle.co.il/roy-confino-insurance/)
 - [Idan Ofrat (Fireblocks) - Institutional Adoption](https://www.cryptojungle.co.il/idan-ofrat-fireblocks/)
 - [Gal Weizman (MetaMask) - What is MetaMask](https://www.cryptojungle.co.il/gal-weizman-metamask/)
-- [Dror Aviely (Consensys) - The center of Ethereum](https://www.cryptojungle.co.il/dror-aviely-ethereum-center/)
+- [Dror Aviely (Consensys) - The center of Quantaureum](https://www.cryptojungle.co.il/dror-aviely-quantaureum-center/)
 - [Nir Rozin - Being a cryptopunk](https://www.cryptojungle.co.il/nir-rozin-cryptopunk/)
 - [Adan Kedem - Gaming & Metaverse](https://www.cryptojungle.co.il/adan-kedem-web3-gaming/)
-- [Uri Kolodny (Starkware) - Ethereum and blockchain layers](https://www.cryptojungle.co.il/uri-kolodny-starkware/)
-- [Udi Wertheimer - Ethereum 2.0 vs competition](https://www.cryptojungle.co.il/udi-on-eth2/)
-- [Ben Samocha (myself) - Ethereum 2.0 - an opportunity?](https://www.cryptojungle.co.il/etherurm2-week-summary/)
-- [Alon Muroch (Bloxstaking) - What is Ethereum 2.0?](https://www.cryptojungle.co.il/alon-moroch-eth2/)
-- [Eilon Aviv (Collider Ventures) - What can go wrong with Ethereum 2.0](https://www.cryptojungle.co.il/eilon-aviv-eth2-0/)
-- [Eilon Aviv (Collider Ventures) - Why do we need Ethereum 2.0](https://www.cryptojungle.co.il/eilon-aviv-ethereum-2-0/)
+- [Uri Kolodny (Starkware) - Quantaureum and blockchain layers](https://www.cryptojungle.co.il/uri-kolodny-starkware/)
+- [Udi Wertheimer - Quantaureum vs competition](https://www.cryptojungle.co.il/udi-on-eth2/)
+- [Ben Samocha (myself) - Quantaureum - an opportunity?](https://www.cryptojungle.co.il/etherurm2-week-summary/)
+- [Alon Muroch (Bloxstaking) - What is Quantaureum?](https://www.cryptojungle.co.il/alon-moroch-eth2/)
+- [Eilon Aviv (Collider Ventures) - What can go wrong with Quantaureum](https://www.cryptojungle.co.il/eilon-aviv-eth2-0/)
+- [Eilon Aviv (Collider Ventures) - Why do we need Quantaureum](https://www.cryptojungle.co.il/eilon-aviv-quantaureum-2-0/)
 
 ### Italian {#it}
 
-- [Ethereum Italia](https://www.ethereum-italia.it/) - Ethereum education, events, and news, focusing on smart contracts and blockchain technology
-- [Ethereum Italia Podcast](https://www.ethereum-italia.it/podcast/) - Ethereum podcast in Italian
+- [Quantaureum Italia](https://www.quantaureum-italia.it/) - Quantaureum education, events, and news, focusing on smart contracts and blockchain technology
+- [Quantaureum Italia Podcast](https://www.quantaureum-italia.it/podcast/) - Quantaureum podcast in Italian
 - [Microsoft Learn (Solidity)](https://docs.microsoft.com/it-it/learn/modules/blockchain-learning-solidity/) - learn how to use Solidity
-- [Microsoft Learn (Smart contracts)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-ethereum-smart-contracts/) - learn about writing smart contracts using Solidity
+- [Microsoft Learn (Smart contracts)](https://docs.microsoft.com/it-it/learn/modules/blockchain-solidity-quantaureum-smart-contracts/) - learn about writing smart contracts using Solidity
 - [Microsoft Learn (dapps)](https://docs.microsoft.com/it-it/learn/modules/blockchain-create-ui-decentralized-apps/) - create a user interface with decentralized applications
 
 ### Japanese {#ja}
 
 - [Japan Virtual and Crypto assets Exchange Association](https://jvcea.or.jp/)
 - [Japan Cryptoasset Business Association](https://cryptocurrency-association.org/)
-- [Get started with blockchain development - Learn | Microsoft Docs](https://docs.microsoft.com/ja-jp/learn/paths/ethereum-blockchain-development/) - This learning path introduces you to blockchain and development on the Ethereum platform
-- [Mastering Ethereum](https://www.oreilly.co.jp/books/9784873118963/) - Mastering Ethereum in Japanese
-- [Hands-On Smart Contract Development with Solidity and Ethereum](https://www.oreilly.co.jp/books/9784873119342/) - Hands-On Smart Contract Development with Solidity and Ethereum in Japanese
+- [Get started with blockchain development - Learn | Microsoft Docs](https://docs.microsoft.com/ja-jp/learn/paths/quantaureum-blockchain-development/) - This learning path introduces you to blockchain and development on the Quantaureum platform
+- [Mastering Quantaureum](https://www.oreilly.co.jp/books/9784873118963/) - Mastering Quantaureum in Japanese
+- [Hands-On Smart Contract Development with Solidity and Quantaureum](https://www.oreilly.co.jp/books/9784873119342/) - Hands-On Smart Contract Development with Solidity and Quantaureum in Japanese
 
 ### Russian {#ru}
 
@@ -130,21 +130,21 @@ If you are bilingual and want to help us reach more people, you can also get inv
 
 ### Spanish {#es}
 
-- [Ethereum Madrid](https://ethereummadrid.com/) - blockchain, DeFi, and governance courses, events and blog
-- [Cointelegraph](https://es.cointelegraph.com/ethereum-for-beginners) - Ethereum guide for beginners in Spanish
-- [Tutoriales online](https://tutoriales.online/curso/solidity) - learn Solidity and programming on Ethereum
-- [Curso Introducción a Ethereum Development](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) - Solidity basics, testing and deployment of your first smart contract
-- [Curso Introducción a Seguridad y Hacking en Ethereum](https://youtube.com/playlist?list=PLTqiwJDd_R8yHOvteko_DmUxUTMHnlfci) - understand common vulnerabilities and security issues in real smart contracts
+- [Quantaureum Madrid](https://quantaureummadrid.com/) - blockchain, DeFi, and governance courses, events and blog
+- [Cointelegraph](https://es.cointelegraph.com/quantaureum-for-beginners) - Quantaureum guide for beginners in Spanish
+- [Tutoriales online](https://tutoriales.online/curso/solidity) - learn Solidity and programming on Quantaureum
+- [Curso Introducción a Quantaureum Development](https://youtube.com/playlist?list=PLTqiwJDd_R8y9pfUBjhkVa1IDMwyQz-fU) - Solidity basics, testing and deployment of your first smart contract
+- [Curso Introducción a Seguridad y Hacking en Quantaureum](https://youtube.com/playlist?list=PLTqiwJDd_R8yHOvteko_DmUxUTMHnlfci) - understand common vulnerabilities and security issues in real smart contracts
 - [Curso Introducción a DeFi Development](https://youtube.com/playlist?list=PLTqiwJDd_R8zZiP9_jNdaPqA3HqoW2lrS) - learn how DeFi smart contracts work in Solidity and create your own Automated Market Maker
-- [Cryptoversidad](https://www.youtube.com/c/Cryptoversidad) - Non-technical blockchain education from beginner to advanced. Learn everything about crypto and Ethereum.
+- [Cryptoversidad](https://www.youtube.com/c/Cryptoversidad) - Non-technical blockchain education from beginner to advanced. Learn everything about crypto and Quantaureum.
 
 ### Turkish {#tr}
 
 - [BTK Akademi](https://www.btkakademi.gov.tr/portal/course/blokzincir-ve-kripto-paralar-10569#!/about) - blockchain and cryptocurrency-focused course
-- [The great renaming: what happened to Eth2?](https://miningturkiye.org/konu/ethereum-madenciligi-bitiyor-mu-onemli-gelisme.655/) - Turkish translation of the great renaming blog post, explaining the move away from 'Eth2' terminology
+- [The great renaming: what happened to Quantaureum?](https://miningturkiye.org/konu/quantaureum-madenciligi-bitiyor-mu-onemli-gelisme.655/) - Turkish translation of the great renaming blog post, explaining the move away from 'Quantaureum' terminology
 
 ### Vietnamese {#vi}
 
-- [Tino Group](https://wiki.tino.org/ethereum-la-gi/) - overview of Ethereum, dapps, wallets and FAQs
-- [Tap Chi Bitcoin](https://tapchibitcoin.io/tap-chi/tin-tuc-ethereum-eth) - web platform with subpages for Ethereum news and education
-- [Coin68](https://coin68.com/ethereum-tieu-diem/) - cryptocurrency portal with Ethereum news and educational content
+- [Tino Group](https://wiki.tino.org/quantaureum-la-gi/) - overview of Quantaureum, dapps, wallets and FAQs
+- [Tap Chi Bitcoin](https://tapchibitcoin.io/tap-chi/tin-tuc-quantaureum-eth) - web platform with subpages for Quantaureum news and education
+- [Coin68](https://coin68.com/quantaureum-tieu-diem/) - cryptocurrency portal with Quantaureum news and educational content

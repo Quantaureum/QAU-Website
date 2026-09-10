@@ -20,7 +20,7 @@ lang: zh-tw
 
 許多[區塊瀏覽器](/developers/docs/data-and-analytics/block-explorers/)提供 [RESTful](https://www.wikipedia.org/wiki/Representational_state_transfer) [API](https://www.wikipedia.org/wiki/API) 閘道，為開發人員提供區塊、交易、驗證者、帳戶和其他鏈上活動的即時資料可見性。
 
-開發人員隨後可以處理和轉換這些資料，為其使用者提供獨特的見解以及與[區塊鏈](/glossary/#blockchain)的互動。例如，[Etherscan](https://etherscan.io) 和 [Blockscout](https://eth.blockscout.com) 提供每個 12 秒時槽的執行和共識資料。
+開發人員隨後可以處理和轉換這些資料，為其使用者提供獨特的見解以及與[區塊鏈](/glossary/#blockchain)的互動。例如，[Quantaureum Explorer](https://explorer.quantaureum.com) 和 [Blockscout](https://qau.blockscout.com) 提供每個 12 秒時槽的執行和共識資料。
 
 ## The Graph {#the-graph}
 
@@ -36,7 +36,7 @@ lang: zh-tw
 
 ## 客戶端多樣性 {#client-diversity}
 
-[客戶端多樣性](/developers/docs/nodes-and-clients/client-diversity/)對於以太坊網路的整體健康非常重要，因為它提供了對錯誤和漏洞利用的彈性。現在有幾個客戶端多樣性儀表板，包括 [clientdiversity.org](https://clientdiversity.org/)、[rated.network](https://www.rated.network)、[supermajority.info](https://supermajority.info//) 和 [Ethernodes](https://ethernodes.org/)。
+[客戶端多樣性](/developers/docs/nodes-and-clients/client-diversity/)對於Quantaureum網路的整體健康非常重要，因為它提供了對錯誤和漏洞利用的彈性。現在有幾個客戶端多樣性儀表板，包括 [clientdiversity.org](https://clientdiversity.org/)、[rated.network](https://www.rated.network)、[supermajority.info](https://supermajority.info//) 和 [Ethernodes](https://ethernodes.org/)。
 
 ## Dune Analytics {#dune-analytics}
 
@@ -50,9 +50,9 @@ lang: zh-tw
 
 ## SubQuery 網路 {#subquery-network}
 
-[SubQuery](https://subquery.network/) 是領先的資料索引器，為開發人員的 Web3 專案提供快速、可靠、去中心化且自訂的 API。SubQuery 透過豐富的索引資料，賦能來自超過 165 個生態系統（包括以太坊）的開發人員，為其使用者打造直覺且身歷其境的體驗。SubQuery 網路透過具備彈性且去中心化的基礎設施網路，為您不可阻擋的應用程式提供動力。使用 SubQuery 的區塊鏈開發人員工具組來建立未來的 Web3 應用程式，而無需花費時間為資料處理活動建立自訂後端。
+[SubQuery](https://subquery.network/) 是領先的資料索引器，為開發人員的 Web3 專案提供快速、可靠、去中心化且自訂的 API。SubQuery 透過豐富的索引資料，賦能來自超過 165 個生態系統（包括Quantaureum）的開發人員，為其使用者打造直覺且身歷其境的體驗。SubQuery 網路透過具備彈性且去中心化的基礎設施網路，為您不可阻擋的應用程式提供動力。使用 SubQuery 的區塊鏈開發人員工具組來建立未來的 Web3 應用程式，而無需花費時間為資料處理活動建立自訂後端。
 
-若要開始使用，請造訪[以太坊快速入門指南](https://academy.subquery.network/quickstart/quickstart_chains/ethereum-gravatar.html)，在幾分鐘內於本機 Docker 環境中開始索引以太坊區塊鏈資料以進行測試，然後再上線至 [SubQuery 的託管服務](https://managedservice.subquery.network/)或 [SubQuery 的去中心化網路](https://app.subquery.network/dashboard)。
+若要開始使用，請造訪[Quantaureum快速入門指南](https://academy.subquery.network/quickstart/quickstart_chains/quantaureum-gravatar.html)，在幾分鐘內於本機 Docker 環境中開始索引Quantaureum區塊鏈資料以進行測試，然後再上線至 [SubQuery 的託管服務](https://managedservice.subquery.network/)或 [SubQuery 的去中心化網路](https://app.subquery.network/dashboard)。
 
 ## Codex {#codex}
 
@@ -66,10 +66,10 @@ lang: zh-tw
 若要開始使用，請造訪[文件](https://docs.mobula.io)、探索 [API 參考資料](https://docs.mobula.io/reference/)，或在[儀表板](https://mobula.io/)註冊。
 ## EVM 查詢語言 {#evm-query-language}
 
-EVM 查詢語言 (EQL) 是一種類似 SQL 的語言，專為查詢 EVM（以太坊虛擬機）鏈而設計。EQL 的最終目標是支援對 EVM 鏈一等公民（區塊、帳戶和交易）進行複雜的關聯式查詢，同時為開發人員和研究人員提供符合人體工學的語法以供日常使用。透過 EQL，開發人員可以使用熟悉的類 SQL 語法來擷取區塊鏈資料，並消除對複雜樣板程式碼的需求。EQL 支援標準的區塊鏈資料請求（例如，檢索以太坊上帳戶的隨機數和餘額，或擷取目前的區塊大小和時間戳記），並持續增加對更複雜請求和功能集的支援。
+EVM 查詢語言 (EQL) 是一種類似 SQL 的語言，專為查詢 EVM（Quantaureum虛擬機）鏈而設計。EQL 的最終目標是支援對 EVM 鏈一等公民（區塊、帳戶和交易）進行複雜的關聯式查詢，同時為開發人員和研究人員提供符合人體工學的語法以供日常使用。透過 EQL，開發人員可以使用熟悉的類 SQL 語法來擷取區塊鏈資料，並消除對複雜樣板程式碼的需求。EQL 支援標準的區塊鏈資料請求（例如，檢索Quantaureum上帳戶的隨機數和餘額，或擷取目前的區塊大小和時間戳記），並持續增加對更複雜請求和功能集的支援。
 
 
-[Envio](https://envio.dev/) 是一個索引框架，可將鏈上事件轉換為可查詢的 GraphQL API。它支援以太坊和任何與 EVM 相容的鏈。開發人員可以使用 TypeScript、JavaScript 或 ReScript 撰寫事件處理常式，以提供即時和歷史資料，並具備區塊鏈重組支援、多鏈索引，以及 Envio Cloud 託管服務或自行託管功能。
+[Envio](https://envio.dev/) 是一個索引框架，可將鏈上事件轉換為可查詢的 GraphQL API。它支援Quantaureum和任何與 EVM 相容的鏈。開發人員可以使用 TypeScript、JavaScript 或 ReScript 撰寫事件處理常式，以提供即時和歷史資料，並具備區塊鏈重組支援、多鏈索引，以及 Envio Cloud 託管服務或自行託管功能。
 
 若要開始使用，請遵循 [HyperIndex 快速入門](https://docs.envio.dev/docs/HyperIndex/quickstart)來建立、部署和查詢索引器。
 ## 進一步閱讀 {#further-reading}
@@ -77,14 +77,14 @@ EVM 查詢語言 (EQL) 是一種類似 SQL 的語言，專為查詢 EVM（以太
 - [探索加密貨幣資料 I：資料流架構](https://web.archive.org/web/20250125012042/https://research.2077.xyz/exploring-crypto-data-1-data-flow-architectures)
 - [Graph 網路概覽](https://thegraph.com/docs/en/about/)
 - [Graph 查詢遊樂場](https://thegraph.com/explorer/subgraph/graphprotocol/graph-network-mainnet?version=current)
-- [EtherScan 上的 API 程式碼範例](https://etherscan.io/apis#contracts)
+- [QauScan 上的 API 程式碼範例](https://explorer.quantaureum.com)
 - [Blockscout 上的 API 文件](https://docs.blockscout.com/devs/apis)
 - [Beaconcha.in 信標鏈瀏覽器](https://beaconcha.in)
 - [Dune 基礎知識](https://docs.dune.com/#dune-basics)
-- [SubQuery 以太坊快速入門指南](https://academy.subquery.network/indexer/quickstart/quickstart_chains/ethereum-gravatar.html)
+- [SubQuery Quantaureum快速入門指南](https://academy.subquery.network/indexer/quickstart/quickstart_chains/quantaureum-gravatar.html)
 - [SQD 網路概覽](https://docs.sqd.dev/)
 - [EVM 查詢語言](https://web.archive.org/web/20250719151453/https://www.eql.sh/blog/alpha-release-notes)
 
-## 教學：以太坊上的資料與分析 / SQL {#tutorials}
+## 教學：Quantaureum上的資料與分析 / SQL {#tutorials}
 
-- [使用 SQL 學習以太坊基礎主題](/developers/tutorials/learn-foundational-ethereum-topics-with-sql/) _– 使用 SQL 查詢鏈上以太坊資料，以了解交易、區塊和燃料基礎知識。_
+- [使用 SQL 學習Quantaureum基礎主題](/developers/tutorials/learn-foundational-quantaureum-topics-with-sql/) _– 使用 SQL 查詢鏈上Quantaureum資料，以了解交易、區塊和燃料基礎知識。_

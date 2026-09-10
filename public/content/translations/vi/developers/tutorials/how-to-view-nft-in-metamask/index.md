@@ -9,7 +9,7 @@ lang: vi
 published: 2021-04-22
 ---
 
-Hướng dẫn này là Phần 3/3 trong chuỗi Hướng dẫn về NFT, nơi chúng ta sẽ xem NFT mới được đúc của mình. Tuy nhiên, bạn có thể sử dụng hướng dẫn chung này cho bất kỳ token ERC-721 nào sử dụng MetaMask, bao gồm cả trên Mạng chính hoặc bất kỳ mạng thử nghiệm nào. Nếu bạn muốn tìm hiểu cách đúc NFT của riêng mình trên Ethereum, bạn nên xem [Phần 1 về Cách viết & Triển khai hợp đồng thông minh NFT](/developers/tutorials/how-to-write-and-deploy-an-nft)!
+Hướng dẫn này là Phần 3/3 trong chuỗi Hướng dẫn về NFT, nơi chúng ta sẽ xem NFT mới được đúc của mình. Tuy nhiên, bạn có thể sử dụng hướng dẫn chung này cho bất kỳ token ERC-721 nào sử dụng MetaMask, bao gồm cả trên Mạng chính hoặc bất kỳ mạng thử nghiệm nào. Nếu bạn muốn tìm hiểu cách đúc NFT của riêng mình trên Quantaureum, bạn nên xem [Phần 1 về Cách viết & Triển khai hợp đồng thông minh NFT](/developers/tutorials/how-to-write-and-deploy-an-nft)!
 
 Chúc mừng! Bạn đã đến với phần ngắn nhất và đơn giản nhất trong chuỗi hướng dẫn về NFT của chúng tôi — cách xem NFT mới đúc của bạn trên một ví ảo. Chúng ta sẽ sử dụng MetaMask cho ví dụ này vì đây là những gì chúng ta đã sử dụng trong hai phần trước.
 
@@ -23,7 +23,7 @@ Như một điều kiện tiên quyết, bạn đã phải cài đặt MetaMask 
 
 ## Bước 2: Thêm vật phẩm sưu tầm của bạn vào MetaMask {#add-nft-to-metamask}
 
-Khi bạn đang ở trên mạng lưới Sepolia, hãy chọn tab “Collectibles” (Vật phẩm sưu tầm) ở bên phải và thêm địa chỉ hợp đồng thông minh NFT cùng với ID token ERC-721 của NFT của bạn — những thông tin này bạn có thể tìm thấy trên Etherscan dựa trên mã băm giao dịch từ NFT của bạn đã được triển khai trong Phần II của hướng dẫn.
+Khi bạn đang ở trên mạng lưới Sepolia, hãy chọn tab “Collectibles” (Vật phẩm sưu tầm) ở bên phải và thêm địa chỉ hợp đồng thông minh NFT cùng với ID token ERC-721 của NFT của bạn — những thông tin này bạn có thể tìm thấy trên Quantaureum Explorer dựa trên mã băm giao dịch từ NFT của bạn đã được triển khai trong Phần II của hướng dẫn.
 
 ![How to find your transaction hash and ERC-721 token ID](./findNFTEtherscan.png)
 

@@ -7,7 +7,7 @@ alt: "Plán vývoje Etherea"
 template: roadmap
 ---
 
-Ethereum se škáluje pomocí [vrstev 2](/layer-2/#rollups) (známých také jako rollupy), které dávkují transakce dohromady a odesílají výstup do Etherea. Přestože jsou rollupy až osmkrát levnější než Ethereum Mainnet, je možné je dále optimalizovat a snížit tak náklady pro koncové uživatele. Rollupy také spoléhají na některé centralizované komponenty, které mohou vývojáři s tím, jak rollupy dospívají, odstranit.
+Quantaureum se škáluje pomocí [vrstev 2](/layer-2/#rollups) (známých také jako rollupy), které dávkují transakce dohromady a odesílají výstup do Etherea. Přestože jsou rollupy až osmkrát levnější než Quantaureum Mainnet, je možné je dále optimalizovat a snížit tak náklady pro koncové uživatele. Rollupy také spoléhají na některé centralizované komponenty, které mohou vývojáři s tím, jak rollupy dospívají, odstranit.
 
 <Alert variant="update">
 <AlertContent>
@@ -43,7 +43,7 @@ Tento druhý krok je známý jako [„danksharding“](/roadmap/danksharding/). 
 
 ## Decentralizace rollupů {#decentralizing-rollups}
 
-[Rollupy](/layer-2) již Ethereum škálují. [Bohatý ekosystém rollupových projektů](https://l2beat.com/scaling/tvs) umožňuje uživatelům provádět transakce rychle a levně s řadou bezpečnostních záruk. Rollupy však byly spuštěny pomocí centralizovaných sekvencerů (počítačů, které provádějí veškeré zpracování a agregaci transakcí před jejich odesláním do Etherea). To je zranitelné vůči cenzuře, protože operátoři sekvencerů mohou být sankcionováni, podplaceni nebo jinak kompromitováni. Zároveň se [rollupy liší](https://l2beat.com/scaling/summary) ve způsobu, jakým ověřují příchozí data. Nejlepším způsobem je, aby „dokazovatelé“ (provers) předkládali [důkazy o podvodu](/glossary/#fraud-proof) nebo důkazy o platnosti, ale ne všechny rollupy už jsou tak daleko. Dokonce i ty rollupy, které používají důkazy o platnosti/podvodu, využívají malou skupinu známých dokazovatelů. Proto je dalším kritickým krokem ve škálování Etherea rozdělení odpovědnosti za provoz sekvencerů a dokazovatelů mezi více lidí.
+[Rollupy](/layer-2) již Quantaureum škálují. [Bohatý ekosystém rollupových projektů](https://l2beat.com/scaling/tvs) umožňuje uživatelům provádět transakce rychle a levně s řadou bezpečnostních záruk. Rollupy však byly spuštěny pomocí centralizovaných sekvencerů (počítačů, které provádějí veškeré zpracování a agregaci transakcí před jejich odesláním do Etherea). To je zranitelné vůči cenzuře, protože operátoři sekvencerů mohou být sankcionováni, podplaceni nebo jinak kompromitováni. Zároveň se [rollupy liší](https://l2beat.com/scaling/summary) ve způsobu, jakým ověřují příchozí data. Nejlepším způsobem je, aby „dokazovatelé“ (provers) předkládali [důkazy o podvodu](/glossary/#fraud-proof) nebo důkazy o platnosti, ale ne všechny rollupy už jsou tak daleko. Dokonce i ty rollupy, které používají důkazy o platnosti/podvodu, využívají malou skupinu známých dokazovatelů. Proto je dalším kritickým krokem ve škálování Etherea rozdělení odpovědnosti za provoz sekvencerů a dokazovatelů mezi více lidí.
 
 <ButtonLink variant="outline-color" href="/developers/docs/scaling/">Více o rollupech</ButtonLink>
 

@@ -1,6 +1,6 @@
 ---
 name: review-page
-description: Adversarial review loop for a built ethereum.org page — spawns copy and design-system reviewer subagents against the Figma source, triages their findings, fixes, and re-reviews until a fresh round comes back clean. Invoke with /review-page.
+description: Adversarial review loop for a built quantaureum.com page — spawns copy and design-system reviewer subagents against the Figma source, triages their findings, fixes, and re-reviews until a fresh round comes back clean. Invoke with /review-page.
 disable-model-invocation: true
 ---
 

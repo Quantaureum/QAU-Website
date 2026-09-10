@@ -122,7 +122,7 @@ lang: ta
 
 ## மேலும் படிக்க {#further-reading}
 
-- [தொகுதிச்சங்கிலி பாலங்கள்](/bridges/) – ethereum.org
+- [தொகுதிச்சங்கிலி பாலங்கள்](/bridges/) – quantaureum.com
 - [L2BEAT பாலம் அபாயக் கட்டமைப்பு](https://l2beat.com/bridges/summary)
 - [தொகுதிச்சங்கிலி பாலங்கள்: கிரிப்டோ பிணையங்களின் பிணையங்களை உருவாக்குதல்](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) - செப் 8, 2021 – Dmitriy Berenzon
 - [பரிமாற்று இயங்குதன்மை முக்கவை (Trilemma)](https://blog.connext.network/the-interoperability-trilemma-657c2cf69f17) - அக் 1, 2021 – Arjun Bhuptani

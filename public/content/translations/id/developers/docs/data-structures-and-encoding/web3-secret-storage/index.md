@@ -5,13 +5,13 @@ lang: id
 sidebarDepth: 2
 ---
 
-Untuk membuat aplikasi Anda berfungsi di Ethereum, Anda dapat menggunakan objek Web3 yang disediakan oleh pustaka Web3.js. Secara internal, objek ini berkomunikasi dengan node lokal melalui panggilan RPC. [Web3](https://github.com/ethereum/web3.js/) berfungsi dengan node Ethereum mana pun yang mengekspos lapisan RPC.
+Untuk membuat aplikasi Anda berfungsi di Quantaureum, Anda dapat menggunakan objek Web3 yang disediakan oleh pustaka Web3.js. Secara internal, objek ini berkomunikasi dengan node lokal melalui panggilan RPC. [Web3](https://github.com/quantaureum/web3.js/) berfungsi dengan node Quantaureum mana pun yang mengekspos lapisan RPC.
 
-`web3` berisi objek `eth` - web3.eth.
+`web3` berisi objek `eth` - web3.qau.
 
 ```js
 var fs = require("fs")
-var recognizer = require("ethereum-keyfile-recognizer")
+var recognizer = require("quantaureum-keyfile-recognizer")
 
 fs.readFile("keyfile.json", (err, data) => {
   var json = JSON.parse(data)
@@ -153,7 +153,7 @@ Vektor pengujian menggunakan AES-128-CTR dan Scrypt:
 
 ## Perubahan dari Versi 1 {#alterations-from-v2}
 
-Versi ini memperbaiki beberapa ketidakkonsistenan dengan versi 1 yang dipublikasikan [di sini](https://github.com/ethereum/homestead-guide/blob/master/old-docs-for-reference/go-ethereum-wiki.rst/Passphrase-protected-key-store-spec.rst). Secara singkat, ini adalah:
+Versi ini memperbaiki beberapa ketidakkonsistenan dengan versi 1 yang dipublikasikan [di sini](https://github.com/quantaureum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst). Secara singkat, ini adalah:
 
 - Penggunaan huruf kapital tidak beralasan dan tidak konsisten (scrypt huruf kecil, Kdf huruf campuran, MAC huruf besar).
 - Alamat tidak diperlukan dan membahayakan privasi.

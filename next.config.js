@@ -42,7 +42,7 @@ module.exports = (phase) => {
         process.env.DEPLOY_PRIME_URL ||
         process.env.DEPLOY_URL ||
         process.env.URL ||
-        "https://ethereum.org",
+        "https://quantaureum.com",
       // Inline IS_VISUAL_TEST into the client bundle so client-side shuffles
       // (e.g. useStakingProductsCardGrid) can opt out of randomization during
       // visual test builds. Server code reads it from process.env directly.
@@ -95,6 +95,21 @@ module.exports = (phase) => {
       // https://docs.reown.com/appkit/next/core/installation#extra-configuration
       config.externals.push("pino-pretty", "lokijs", "encoding")
 
+      // Stub optional @x402/* peer packages that @coinbase/cdp-sdk imports
+      // lazily; we do not enable x402 payment flows.
+      const x402Stub = path.resolve(__dirname, "src/lib/stubs/optional-package.ts")
+      for (const mod of [
+        "@x402/core/client",
+        "@x402/core",
+        "@x402/evm/exact/client",
+        "@x402/evm/upto/client",
+        "@x402/evm",
+        "@x402/svm/exact/client",
+        "@x402/svm",
+      ]) {
+        config.resolve.alias[mod] = x402Stub
+      }
+
       return config
     },
     // Turbopack loader equivalents for the webpack() config above
@@ -105,6 +120,15 @@ module.exports = (phase) => {
         "*.svg": { loaders: ["@svgr/webpack"], as: "*.js" },
         "*.md": { loaders: ["raw-loader"], as: "*.js" },
         "*.mp3": { as: "*.static" },
+      },
+      resolveAlias: {
+        "@x402/core": "./src/lib/stubs/optional-package.ts",
+        "@x402/core/client": "./src/lib/stubs/optional-package.ts",
+        "@x402/evm": "./src/lib/stubs/optional-package.ts",
+        "@x402/evm/exact/client": "./src/lib/stubs/optional-package.ts",
+        "@x402/evm/upto/client": "./src/lib/stubs/optional-package.ts",
+        "@x402/svm": "./src/lib/stubs/optional-package.ts",
+        "@x402/svm/exact/client": "./src/lib/stubs/optional-package.ts",
       },
       // Suppress file-tracing warnings from the MDX pipeline. These files
       // use dynamic path.join/readFile to read markdown content at runtime.
@@ -206,14 +230,6 @@ module.exports = (phase) => {
       }
 
       return [
-        // Whitepaper PDF redirect (no locale prefix)
-        {
-          source:
-            "/669c9e2e2027310b6b3cdce6e1c52962/Ethereum_Whitepaper_-_Buterin_2014.pdf",
-          destination:
-            "/content/whitepaper/whitepaper-pdf/Ethereum_Whitepaper_-_Buterin_2014.pdf",
-          permanent: true,
-        },
         // All primary redirects
         ...redirects.flatMap(([source, destination, permanent]) =>
           createRedirect(source, destination, permanent)
@@ -325,8 +341,8 @@ module.exports = (phase) => {
 }
 
 module.exports = withSentryConfig(module.exports, {
-  org: "ethereumorg-ow",
-  project: "ethorg",
+  org: "quantaureum",
+  project: "quantaureum-website",
   silent: true,
   widenClientFileUpload: true,
 })

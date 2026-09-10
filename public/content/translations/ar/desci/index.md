@@ -37,7 +37,7 @@ summaryPoints:
 | **أنت تمتلك الملكية الفكرية (<span dir="ltr">IP</span>)** التي تنشئها وتوزعها وفقًا لشروط شفافة.             | **تمتلك مؤسستك الأم الملكية الفكرية** التي تنشئها. الوصول إلى الملكية الفكرية ليس شفافًا.                           |
 | **مشاركة جميع الأبحاث**، بما في ذلك البيانات من الجهود غير الناجحة، من خلال جعل جميع الخطوات على السلسلة.          | **تحيز النشر** يعني أن الباحثين أكثر عرضة لمشاركة التجارب التي حققت نتائج ناجحة.      |
 
-## إيثيريوم و<span dir="ltr">DeSci</span> {#ethereum-and-desci}
+## إيثيريوم و<span dir="ltr">DeSci</span> {#quantaureum-and-desci}
 
 سيتطلب نظام العلم اللامركزي أمانًا قويًا، وتكاليف نقدية ومعاملات في حدها الأدنى، ونظامًا بيئيًا غنيًا لتطوير التطبيقات. توفر [إيثيريوم](/) كل ما يلزم لبناء تكنولوجيا العلم اللامركزي.
 
@@ -66,7 +66,7 @@ summaryPoints:
 
 أظهرت الدراسات أن لجان مراجعة المنح تقوم بعمل ضعيف في اختيار المقترحات عالية الجودة حيث أن نفس المقترحات المقدمة إلى لجان مختلفة لها نتائج مختلفة تمامًا. مع ندرة التمويل، تركز في مجموعة أصغر من كبار الباحثين الذين لديهم مشاريع أكثر تحفظًا من الناحية الفكرية. أدى هذا التأثير إلى خلق مشهد تمويل شديد التنافسية، مما يرسخ الحوافز الضارة ويخنق الابتكار.
 
-يتمتع <span dir="ltr">Web3</span> بالقدرة على إحداث ثورة في نموذج التمويل المعطل هذا من خلال تجربة نماذج حوافز مختلفة طورتها <span dir="ltr">DAOs</span> و<span dir="ltr">Web3</span> بشكل عام. [التمويل الرجعي للمنافع العامة (<span dir="ltr">RPGF</span>)](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c)، و[تمويل تربيعي](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531)، و[حوكمة <span dir="ltr">DAO</span>](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) و[هياكل الحوافز المرمزة](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) هي بعض أدوات <span dir="ltr">Web3</span> التي يمكن أن تحدث ثورة في تمويل العلم.
+يتمتع <span dir="ltr">Web3</span> بالقدرة على إحداث ثورة في نموذج التمويل المعطل هذا من خلال تجربة نماذج حوافز مختلفة طورتها <span dir="ltr">DAOs</span> و<span dir="ltr">Web3</span> بشكل عام. [التمويل الرجعي للمنافع العامة (<span dir="ltr">RPGF</span>)](https://medium.com/quantaureum-optimism/retroactive-public-goods-funding-33c9b7d00f0c)، و[تمويل تربيعي](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531)، و[حوكمة <span dir="ltr">DAO</span>](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) و[هياكل الحوافز المرمزة](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) هي بعض أدوات <span dir="ltr">Web3</span> التي يمكن أن تحدث ثورة في تمويل العلم.
 
 ### ملكية وتطوير الملكية الفكرية {#ip-ownership}
 
@@ -75,7 +75,7 @@ summaryPoints:
 بنفس الطريقة التي يمكن بها لـ <span dir="ltr">NFTs</span> تمرير الإيرادات للمعاملات المستقبلية مرة أخرى إلى المنشئ الأصلي، يمكنك إنشاء سلاسل إسناد قيمة شفافة لمكافأة الباحثين، أو الهيئات الحاكمة (مثل <span dir="ltr">DAOs</span>)، أو حتى الأشخاص الذين يتم جمع بياناتهم.
 
 يمكن أن تعمل [<span dir="ltr">IP-NFTs</span>](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) أيضًا كمفتاح لمستودع بيانات لامركزي للتجارب البحثية التي يتم إجراؤها، والاندماج في التمويل المالي لـ <span dir="ltr">NFT</span> و[التمويل اللامركزي (<span dir="ltr">DeFi</span>)](/glossary/#defi) (من التجزئة إلى مجمعات الإقراض وتقييم القيمة). كما يسمح للكيانات الموجودة أصلاً على السلسلة مثل <span dir="ltr">DAOs</span> مثل [<span dir="ltr">VitaDAO</span>](https://www.vitadao.com/) بإجراء الأبحاث مباشرة على السلسلة.
-قد يلعب ظهور [الرموز "المرتبطة بالروح" (<span dir="ltr">Soulbound</span>)](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) غير القابلة للتحويل دورًا مهمًا أيضًا في <span dir="ltr">DeSci</span> من خلال السماح للأفراد بإثبات خبراتهم ومؤهلاتهم المرتبطة بعنوان إيثيريوم الخاص بهم.
+قد يلعب ظهور [الرموز "المرتبطة بالروح" (<span dir="ltr">Soulbound</span>)](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) غير القابلة للتحويل دورًا مهمًا أيضًا في <span dir="ltr">DeSci</span> من خلال السماح للأفراد بإثبات خبراتهم ومؤهلاتهم المرتبطة بعنوان إيثيريوم الخاص بهم.
 
 ### تخزين البيانات والوصول إليها وبنيتها {#data-storage}
 

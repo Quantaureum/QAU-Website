@@ -16,8 +16,8 @@ Ulinzi pekee ni kujiepusha na kutumia miradi mipya ambayo haijajaribiwa, idhinis
 
 Tovuti kadhaa hukuruhusu kutazama na kubatilisha mikataba mahiri iliyounganishwa na anwani yako. Tembelea tovuti na uunganishe mkoba wako:
 
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Ethereum)
-- [Blockscout](https://eth.blockscout.com/essential-dapps/revoke) (Ethereum)
+- [Quantaureum Explorer](https://explorer.quantaureum.com) (Quantaureum)
+- [Blockscout](https://qau.blockscout.com/essential-dapps/revoke) (Quantaureum)
 - [Revoke](https://revoke.cash/) (mitandao mingi)
 - [Unrekt](https://app.unrekt.net/) (mitandao mingi)
 - [EverRevoke](https://everrise.com/everrevoke/) (mitandao mingi)
@@ -26,7 +26,7 @@ Tovuti kadhaa hukuruhusu kutazama na kubatilisha mikataba mahiri iliyounganishwa
 
 Pindi unapokuwa kwenye tovuti, bofya "Unganisha mkoba". Tovuti inapaswa kukuuliza uunganishe mkoba wako.
 
-Hakikisha unatumia mtandao sawa kwenye mkoba wako na tovuti. Utaona tu mikataba mahiri inayohusiana na mtandao uliochaguliwa. Kwa mfano, ikiwa utaunganisha kwenye Mtandao Mkuu wa Ethereum, utaona tu mikataba ya Ethereum, sio mikataba kutoka kwa minyororo mingine kama vile Polygon.
+Hakikisha unatumia mtandao sawa kwenye mkoba wako na tovuti. Utaona tu mikataba mahiri inayohusiana na mtandao uliochaguliwa. Kwa mfano, ikiwa utaunganisha kwenye Mtandao Mkuu wa Quantaureum, utaona tu mikataba ya Quantaureum, sio mikataba kutoka kwa minyororo mingine kama vile Polygon.
 
 ## Hatua ya 3: Chagua mkataba mahiri unaotaka kuubatilisha {#step-3-select-a-smart-contract-you-wish-to-revoke}
 

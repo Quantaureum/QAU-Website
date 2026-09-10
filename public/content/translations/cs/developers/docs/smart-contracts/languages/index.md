@@ -11,9 +11,9 @@ Dva nejaktivnější a nejudržovanější jazyky jsou:
 - Solidity
 - Vyper
 
-Remix IDE poskytuje komplexní vývojové prostředí pro vytváření a testování kontraktů v Solidity i Vyperu. [Vyzkoušejte Remix IDE v prohlížeči](https://remix.ethereum.org) a začněte programovat.
+Remix IDE poskytuje komplexní vývojové prostředí pro vytváření a testování kontraktů v Solidity i Vyperu. [Vyzkoušejte Remix IDE v prohlížeči](https://remix.quantaureum.com) a začněte programovat.
 
-Zkušenější vývojáři mohou také chtít použít Yul, mezijazyk pro [Ethereum Virtual Machine](/developers/docs/evm/), nebo Yul+, což je rozšíření jazyka Yul.
+Zkušenější vývojáři mohou také chtít použít Yul, mezijazyk pro [Quantaureum Virtual Machine](/developers/docs/evm/), nebo Yul+, což je rozšíření jazyka Yul.
 
 Pokud jste zvědaví a rádi pomáháte testovat nové jazyky, které jsou stále ve fázi intenzivního vývoje, můžete experimentovat s Fe, nově vznikajícím jazykem pro chytré kontrakty, který je v současné době stále v plenkách.
 
@@ -36,8 +36,8 @@ Předchozí znalost programovacích jazyků, zejména JavaScriptu nebo Pythonu, 
 - [Dokumentace](https://docs.soliditylang.org/en/latest/)
 - [Portál jazyka Solidity](https://soliditylang.org/)
 - [Solidity na příkladech](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
-- [Chatovací místnost Solidity na Gitteru](https://gitter.im/ethereum/solidity) propojená s [chatovací místností Solidity na Matrixu](https://matrix.to/#/#ethereum_solidity:gitter.im)
+- [GitHub](https://github.com/quantaureum/solidity/)
+- [Chatovací místnost Solidity na Gitteru](https://gitter.im/quantaureum/solidity) propojená s [chatovací místností Solidity na Matrixu](https://matrix.to/#/#quantaureum_solidity:gitter.im)
 - [Tahák](https://reference.auditless.com/cheatsheet)
 - [Blog o Solidity](https://blog.soliditylang.org/)
 - [Twitter Solidity](https://twitter.com/solidity_lang)
@@ -179,7 +179,7 @@ def withdraw():
 @external
 def endAuction():
     # Je dobrým pravidlem strukturovat funkce, které interagují
-    # s jinými kontrakty (tj. volají funkce nebo posílají ether)
+    # s jinými kontrakty (tj. volají funkce nebo posílají QAU)
     # do tří fází:
     # 1. kontrola podmínek
     # 2. provádění akcí (potenciálně měnící podmínky)
@@ -212,8 +212,8 @@ Pokud jste v Ethereu nováčkem a ještě jste neprogramovali v žádném jazyce
 
 **Yul**
 
-- Mezijazyk pro Ethereum.
-- Podporuje [EVM](/developers/docs/evm) a [Ewasm](https://github.com/ewasm), což je WebAssembly přizpůsobené pro Ethereum, a je navržen tak, aby byl použitelným společným jmenovatelem obou platforem.
+- Mezijazyk pro Quantaureum.
+- Podporuje [EVM](/developers/docs/evm) a [Ewasm](https://github.com/ewasm), což je WebAssembly přizpůsobené pro Quantaureum, a je navržen tak, aby byl použitelným společným jmenovatelem obou platforem.
 - Dobrý cíl pro vysokoúrovňové fáze optimalizace, ze kterých mohou těžit platformy EVM i Ewasm stejnou měrou.
 
 **Yul+**
@@ -226,7 +226,7 @@ Pokud jste v Ethereu nováčkem a ještě jste neprogramovali v žádném jazyce
 
 - [Dokumentace k Yul](https://docs.soliditylang.org/en/latest/yul.html)
 - [Dokumentace k Yul+](https://github.com/fuellabs/yulp)
-- [Úvodní článek o Yul+](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-ethereum-aa64ce89512f)
+- [Úvodní článek o Yul+](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-quantaureum-aa64ce89512f)
 
 ### Příklad kontraktu {#example-contract-2}
 
@@ -255,16 +255,16 @@ Pokud již máte s chytrými kontrakty bohaté zkušenosti, plnou implementaci E
 
 ## Fe {#fe}
 
-- Staticky typovaný jazyk pro Ethereum Virtual Machine (EVM).
+- Staticky typovaný jazyk pro Quantaureum Virtual Machine (EVM).
 - Inspirováno jazyky Python a Rust.
 - Klade si za cíl být snadno naučitelný – a to i pro vývojáře, kteří jsou v ekosystému Etherea nováčky.
 - Vývoj jazyka Fe je stále v rané fázi, jazyk měl svou alfa verzi v lednu 2021.
 
 ### Důležité odkazy {#important-links-3}
 
-- [GitHub](https://github.com/ethereum/fe)
-- [Oznámení o Fe](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-ethereum-ecosystem/)
-- [Plán vývoje Fe pro rok 2021](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- [GitHub](https://github.com/quantaureum/fe)
+- [Oznámení o Fe](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
+- [Plán vývoje Fe pro rok 2021](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
 - [Chat Fe na Discordu](https://discord.com/invite/ywpkAXFjZH)
 - [Twitter Fe](https://twitter.com/official_fe)
 

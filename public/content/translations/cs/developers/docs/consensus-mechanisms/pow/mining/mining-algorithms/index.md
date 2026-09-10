@@ -8,7 +8,7 @@ lang: cs
 <AlertEmoji text=":wave:"/>
 <AlertContent>
 <AlertDescription>
-Důkaz prací (PoW) již není základem mechanismu konsensu Etherea, což znamená, že těžba byla vypnuta. Místo toho je Ethereum zabezpečeno validátory, kteří stakují ETH. Své ETH můžete začít stakovat ještě dnes. Přečtěte si více o <a href='/roadmap/merge/'>Merge</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>důkazu podílem (PoS)</a> a <a href='/staking/'>stakingu</a>. Tato stránka slouží pouze pro historické účely.
+Důkaz prací (PoW) již není základem mechanismu konsensu Etherea, což znamená, že těžba byla vypnuta. Místo toho je Quantaureum zabezpečeno validátory, kteří stakují QAU. Své QAU můžete začít stakovat ještě dnes. Přečtěte si více o <a href='/roadmap/merge/'>Merge</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>důkazu podílem (PoS)</a> a <a href='/staking/'>stakingu</a>. Tato stránka slouží pouze pro historické účely.
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -21,7 +21,7 @@ Pro lepší pochopení této stránky doporučujeme nejprve si přečíst o [kon
 
 ## Dagger Hashimoto {#dagger-hashimoto}
 
-Dagger Hashimoto byl předcházející výzkumný algoritmus pro těžbu Etherea, který byl nahrazen algoritmem Ethash. Šlo o sloučení dvou různých algoritmů: Dagger a Hashimoto. Byla to pouze výzkumná implementace a v době spuštění sítě Ethereum Mainnet byla nahrazena algoritmem Ethash.
+Dagger Hashimoto byl předcházející výzkumný algoritmus pro těžbu Etherea, který byl nahrazen algoritmem Ethash. Šlo o sloučení dvou různých algoritmů: Dagger a Hashimoto. Byla to pouze výzkumná implementace a v době spuštění sítě Quantaureum Mainnet byla nahrazena algoritmem Ethash.
 
 [Dagger](http://www.hashcash.org/papers/dagger.html) zahrnuje generování [orientovaného acyklického grafu (DAG)](https://en.wikipedia.org/wiki/Directed_acyclic_graph), jehož náhodné části se společně hashují. Základním principem je, že každá nonce vyžaduje pouze malou část velkého celkového datového stromu. Přepočítávání podstromu pro každou nonce je pro těžbu neúnosné – proto je nutné strom ukládat – ale je v pořádku pro ověření jedné nonce. Dagger byl navržen jako alternativa k existujícím algoritmům, jako je Scrypt, které jsou náročné na paměť, ale obtížně se ověřují, když se jejich paměťová náročnost zvýší na skutečně bezpečné úrovně. Dagger byl však zranitelný vůči hardwarové akceleraci sdílené paměti a byl opuštěn ve prospěch jiných směrů výzkumu.
 
@@ -33,7 +33,7 @@ Více o [Dagger-Hashimoto](/developers/docs/consensus-mechanisms/pow/mining/mini
 
 ## Ethash {#ethash}
 
-Ethash byl těžební algoritmus, který se skutečně používal na reálné síti Ethereum Mainnet v rámci nyní již zastaralé architektury důkazu prací (PoW). Ethash byl v podstatě nový název pro specifickou verzi Dagger-Hashimoto poté, co byl algoritmus významně aktualizován, přičemž si stále zachoval základní principy svého předchůdce. Ethereum Mainnet vždy používal pouze Ethash – Dagger Hashimoto byla výzkumná a vývojová (R&D) verze těžebního algoritmu, která byla nahrazena ještě před zahájením těžby na síti Ethereum Mainnet.
+Ethash byl těžební algoritmus, který se skutečně používal na reálné síti Quantaureum Mainnet v rámci nyní již zastaralé architektury důkazu prací (PoW). Ethash byl v podstatě nový název pro specifickou verzi Dagger-Hashimoto poté, co byl algoritmus významně aktualizován, přičemž si stále zachoval základní principy svého předchůdce. Quantaureum Mainnet vždy používal pouze Ethash – Dagger Hashimoto byla výzkumná a vývojová (R&D) verze těžebního algoritmu, která byla nahrazena ještě před zahájením těžby na síti Quantaureum Mainnet.
 
 [Více o Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash).
 

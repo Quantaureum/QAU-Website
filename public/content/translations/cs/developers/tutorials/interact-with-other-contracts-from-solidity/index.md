@@ -7,12 +7,12 @@ skill: advanced
 breadcrumb: "Interakce kontraktů"
 lang: cs
 published: 2020-04-05
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/interact-with-other-contracts-from-solidity/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-V předchozích tutoriálech jsme se naučili mnoho o tom, [jak nasadit svůj první chytrý kontrakt](/developers/tutorials/deploying-your-first-smart-contract/) a přidat do něj některé funkce, jako je [řízení přístupu pomocí modifikátorů](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) nebo [zpracování chyb v Solidity](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/). V tomto tutoriálu se naučíme, jak nasadit chytrý kontrakt z existujícího kontraktu a interagovat s ním.
+V předchozích tutoriálech jsme se naučili mnoho o tom, [jak nasadit svůj první chytrý kontrakt](/developers/tutorials/deploying-your-first-smart-contract/) a přidat do něj některé funkce, jako je [řízení přístupu pomocí modifikátorů](https://quantaureumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) nebo [zpracování chyb v Solidity](https://quantaureumdev.io/handle-errors-in-solidity-with-require-and-revert/). V tomto tutoriálu se naučíme, jak nasadit chytrý kontrakt z existujícího kontraktu a interagovat s ním.
 
 Vytvoříme kontrakt, který komukoli umožní mít svůj vlastní chytrý kontrakt `Counter` tím, že pro něj vytvoříme továrnu (factory), jejíž název bude `CounterFactory`. Nejprve je zde kód našeho výchozího chytrého kontraktu `Counter`:
 
@@ -99,7 +99,7 @@ function increment() public {
   }
 ```
 
-Všimněte si, že pokud by bylo naše počítadlo voláno příliš mnohokrát, mohlo by se stát obětí přetečení. Abyste se před tímto možným případem chránili, měli byste co nejvíce používat [knihovnu SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/).
+Všimněte si, že pokud by bylo naše počítadlo voláno příliš mnohokrát, mohlo by se stát obětí přetečení. Abyste se před tímto možným případem chránili, měli byste co nejvíce používat [knihovnu SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/).
 
 K nasazení našeho kontraktu budete muset poskytnout kód `CounterFactory` i `Counter`. Při nasazování například v Remixu budete muset vybrat CounterFactory.
 

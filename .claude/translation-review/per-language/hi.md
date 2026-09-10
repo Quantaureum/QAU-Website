@@ -34,7 +34,7 @@ Scope: accounts `CREATE2` + `page-app-descriptions`/`page-apps`/`page-developers
 
 ## PR #19015 (intl/pending-dev) -- 2026-08-10 -- Score 8.9/10 (pre-fix)
 
-- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-ethereum JSON). Fleet avg 8.4.
+- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-quantaureum JSON). Fleet avg 8.4.
 - `actor` -> `पक्ष` (was अभिनेता, film performer) -- hi `learn-quizzes.json` already rendered the same English phrase correctly, which is what confirmed it. Open: `non-trusted setup` twice rendered with the *untrustworthy* reading, which ETHGlossary's `trustless` note explicitly warns against -- native call.
 - Fleet-wide items fixed in this branch for every locale: the `<p></p>` MDX build-breaker (8 locales), the `.pdf` autolink corruption (#50), the deleted `{#will-my-smart-contracts-change}` FAQ section (#32), the missing `<QuizWidget>` component (#49), and the two stale glamsterdam prose clauses (#51 -- `Q4 2026` and the stakers/liquidity sentence).
 
@@ -85,5 +85,5 @@ Scope: new `component-devcon-banner.json` (6 keys). Fleet avg 9.9.
 
 - `Devcon` -> `डेवकॉन` in `title` and `subtitle`, matching devcon.org's own Hindi site. `logo-alt` stays Latin (title lockup / alt text).
 
-**Note:** devcon.org ships `डेवकॉन` (retroflex ड, the standard IT-loanword form -- cf. `डेवलपर`) while `blog.ethereum.org/hi` ships `देवकॉन` (dental द). devcon.org wins: it is the event's own India-facing site and more recent, and the blog is pipeline output rather than independent authority. Record `डेवकॉन` in the glossary entry so the two stop disagreeing.
+**Note:** devcon.org ships `डेवकॉन` (retroflex ड, the standard IT-loanword form -- cf. `डेवलपर`) while `blog.quantaureum.com/hi` ships `देवकॉन` (dental द). devcon.org wins: it is the event's own India-facing site and more recent, and the blog is pipeline output rather than independent authority. Record `डेवकॉन` in the glossary entry so the two stop disagreeing.
 

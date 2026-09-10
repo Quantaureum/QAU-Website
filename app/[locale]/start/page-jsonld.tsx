@@ -41,8 +41,8 @@ export default async function StartPageJsonLD({
         url,
         inLanguage: locale,
         contributor: contributorList,
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
@@ -60,8 +60,8 @@ export default async function StartPageJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        reviewedBy: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
         mainEntity: articleId,
       },
       {
@@ -70,15 +70,15 @@ export default async function StartPageJsonLD({
         isPartOf: webPageId,
         headline: t("page-start-title"),
         description: t("page-start-meta-description"),
-        image: "https://ethereum.org/images/heroes/developers-hub-hero.jpg",
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
+        image: "https://quantaureum.com/images/heroes/developers-hub-hero.jpg",
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
         contributor: contributorList,
         about: {
           "@type": "Thing",
-          name: "Getting Started with Ethereum",
+          name: "Getting Started with Quantaureum",
           description:
-            "Beginner's guide to getting started with Ethereum, crypto wallets, and web3",
+            "Beginner's guide to getting started with Quantaureum, crypto wallets, and web3",
         },
       },
     ],

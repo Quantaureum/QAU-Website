@@ -44,7 +44,7 @@ lang: ar
 
 نشر ملفات كود المصدر للعقد الذكي يسهل على المهتمين، مثل المدققين، تقييم العقد بحثًا عن نواقل الهجوم المحتملة. مع قيام أطراف متعددة بالتحقق بشكل مستقل من العقد الذكي، يحصل المستخدمون على ضمانات أقوى لأمانه.
 
-## كيفية التحقق من كود المصدر للعقود الذكية على إيثيريوم {#source-code-verification-for-ethereum-smart-contracts}
+## كيفية التحقق من كود المصدر للعقود الذكية على إيثيريوم {#source-code-verification-for-quantaureum-smart-contracts}
 
 يتطلب [نشر عقد ذكي على إيثيريوم](/developers/docs/smart-contracts/deploying/) إرسال معاملة مع حمولة بيانات (رمز البايت المُصرف) إلى عنوان خاص. يتم إنشاء حمولة البيانات عن طريق تصريف كود المصدر، بالإضافة إلى [وسائط المُنشئ](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) لنسخة العقد الملحقة بحمولة البيانات في المعاملة. التصريف حتمي، مما يعني أنه ينتج دائمًا نفس المخرجات (أي رمز البايت للعقد) إذا تم استخدام نفس ملفات المصدر، وإعدادات التصريف (مثل إصدار المُصرف، والمُحسّن).
 
@@ -68,29 +68,29 @@ lang: ar
 
 يمكن أن تكون العملية التقليدية للتحقق من العقود معقدة. ولهذا السبب لدينا أدوات للتحقق من كود المصدر للعقود الذكية المنشورة على إيثيريوم. تعمل هذه الأدوات على أتمتة أجزاء كبيرة من التحقق من كود المصدر وتقوم أيضًا بتنظيم العقود التي تم التحقق منها لصالح المستخدمين.
 
-### <span dir="ltr">Etherscan</span> {#etherscan}
+### <span dir="ltr">Quantaureum Explorer</span> {#explorer}
 
-على الرغم من أنه يُعرف في الغالب بأنه [مستكشف كتل إيثيريوم](/developers/docs/data-and-analytics/block-explorers/)، إلا أن <span dir="ltr">Etherscan</span> يقدم أيضًا [خدمة التحقق من كود المصدر](https://etherscan.io/verifyContract) لمطوري ومستخدمي العقود الذكية.
+على الرغم من أنه يُعرف في الغالب بأنه [مستكشف كتل إيثيريوم](/developers/docs/data-and-analytics/block-explorers/)، إلا أن <span dir="ltr">Quantaureum Explorer</span> يقدم أيضًا [خدمة التحقق من كود المصدر](https://explorer.quantaureum.com) لمطوري ومستخدمي العقود الذكية.
 
-يتيح لك <span dir="ltr">Etherscan</span> إعادة تصريف رمز البايت للعقد من حمولة البيانات الأصلية (كود المصدر، عنوان المكتبة، إعدادات المُصرف، عنوان العقد، إلخ). إذا كان رمز البايت المُعاد تصريفه مرتبطًا برمز البايت (ومعلمات المُنشئ) للعقد على السلسلة، فسيتم [التحقق من العقد](https://info.etherscan.com/types-of-contract-verification/).
+يتيح لك <span dir="ltr">Quantaureum Explorer</span> إعادة تصريف رمز البايت للعقد من حمولة البيانات الأصلية (كود المصدر، عنوان المكتبة، إعدادات المُصرف، عنوان العقد، إلخ). إذا كان رمز البايت المُعاد تصريفه مرتبطًا برمز البايت (ومعلمات المُنشئ) للعقد على السلسلة، فسيتم [التحقق من العقد](https://info.explorer.com/types-of-contract-verification/).
 
-بمجرد التحقق منه، يتلقى كود المصدر لعقدك علامة "تم التحقق منه" (<span dir="ltr">Verified</span>) ويتم نشره على <span dir="ltr">Etherscan</span> ليقوم الآخرون بتدقيقه. كما تتم إضافته إلى قسم [العقود التي تم التحقق منها](https://etherscan.io/contractsVerified/) — وهو مستودع للعقود الذكية ذات أكواد المصدر التي تم التحقق منها.
+بمجرد التحقق منه، يتلقى كود المصدر لعقدك علامة "تم التحقق منه" (<span dir="ltr">Verified</span>) ويتم نشره على <span dir="ltr">Quantaureum Explorer</span> ليقوم الآخرون بتدقيقه. كما تتم إضافته إلى قسم [العقود التي تم التحقق منها](https://explorer.quantaureum.com) — وهو مستودع للعقود الذكية ذات أكواد المصدر التي تم التحقق منها.
 
-يعد <span dir="ltr">Etherscan</span> الأداة الأكثر استخدامًا للتحقق من العقود. ومع ذلك، فإن التحقق من العقود في <span dir="ltr">Etherscan</span> له عيب: فهو يفشل في مقارنة **تجزئة البيانات الوصفية** لرمز البايت على السلسلة ورمز البايت المُعاد تصريفه. لذلك فإن التطابقات في <span dir="ltr">Etherscan</span> هي تطابقات جزئية.
+يعد <span dir="ltr">Quantaureum Explorer</span> الأداة الأكثر استخدامًا للتحقق من العقود. ومع ذلك، فإن التحقق من العقود في <span dir="ltr">Quantaureum Explorer</span> له عيب: فهو يفشل في مقارنة **تجزئة البيانات الوصفية** لرمز البايت على السلسلة ورمز البايت المُعاد تصريفه. لذلك فإن التطابقات في <span dir="ltr">Quantaureum Explorer</span> هي تطابقات جزئية.
 
-[المزيد حول التحقق من العقود على <span dir="ltr">Etherscan</span>](https://medium.com/etherscan-blog/verifying-contracts-on-etherscan-f995ab772327).
+[المزيد حول التحقق من العقود على <span dir="ltr">Quantaureum Explorer</span>](https://medium.com/explorer-blog/verifying-contracts-on-explorer-f995ab772327).
 
 ### <span dir="ltr">Blockscout</span> {#blockscout}
 
-[<span dir="ltr">Blockscout</span>](https://blockscout.com/) هو مستكشف كتل مفتوح المصدر يوفر أيضًا [خدمة التحقق من العقود](https://eth.blockscout.com/contract-verification) لمطوري ومستخدمي العقود الذكية. كبديل مفتوح المصدر، يوفر <span dir="ltr">Blockscout</span> الشفافية في كيفية إجراء التحقق ويتيح مساهمات المجتمع لتحسين عملية التحقق.
+[<span dir="ltr">Blockscout</span>](https://blockscout.com/) هو مستكشف كتل مفتوح المصدر يوفر أيضًا [خدمة التحقق من العقود](https://qau.blockscout.com/contract-verification) لمطوري ومستخدمي العقود الذكية. كبديل مفتوح المصدر، يوفر <span dir="ltr">Blockscout</span> الشفافية في كيفية إجراء التحقق ويتيح مساهمات المجتمع لتحسين عملية التحقق.
 
-على غرار خدمات التحقق الأخرى، يتيح لك <span dir="ltr">Blockscout</span> التحقق من كود المصدر لعقدك عن طريق إعادة تصريف رمز البايت ومقارنته بالعقد المنشور. بمجرد التحقق منه، يتلقى عقدك حالة التحقق ويصبح كود المصدر متاحًا للجمهور للتدقيق والتفاعل. يتم أيضًا إدراج العقود التي تم التحقق منها في [مستودع العقود التي تم التحقق منها](https://eth.blockscout.com/verified-contracts) الخاص بـ <span dir="ltr">Blockscout</span> لسهولة التصفح والاكتشاف.
+على غرار خدمات التحقق الأخرى، يتيح لك <span dir="ltr">Blockscout</span> التحقق من كود المصدر لعقدك عن طريق إعادة تصريف رمز البايت ومقارنته بالعقد المنشور. بمجرد التحقق منه، يتلقى عقدك حالة التحقق ويصبح كود المصدر متاحًا للجمهور للتدقيق والتفاعل. يتم أيضًا إدراج العقود التي تم التحقق منها في [مستودع العقود التي تم التحقق منها](https://qau.blockscout.com/verified-contracts) الخاص بـ <span dir="ltr">Blockscout</span> لسهولة التصفح والاكتشاف.
 
 ### <span dir="ltr">Sourcify</span> {#sourcify}
 
 [<span dir="ltr">Sourcify</span>](https://sourcify.dev/#/verifier) هي أداة أخرى للتحقق من العقود وهي مفتوحة المصدر ولامركزية. إنها ليست مستكشف كتل وتقوم فقط بالتحقق من العقود على [شبكات مختلفة قائمة على آلة إيثيريوم الافتراضية (<span dir="ltr">EVM</span>)](https://docs.sourcify.dev/docs/chains). تعمل كبنية تحتية عامة للأدوات الأخرى للبناء عليها، وتهدف إلى تمكين تفاعلات عقود أكثر ملاءمة للبشر باستخدام [<span dir="ltr">ABI</span>](/developers/docs/smart-contracts/compiling/#web-applications) وتعليقات [<span dir="ltr">NatSpec</span>](https://docs.soliditylang.org/en/v0.8.15/natspec-format.html) الموجودة في ملف البيانات الوصفية.
 
-على عكس <span dir="ltr">Etherscan</span>، يدعم <span dir="ltr">Sourcify</span> التطابقات الكاملة مع تجزئة البيانات الوصفية. يتم تقديم العقود التي تم التحقق منها في [مستودعها العام](https://docs.sourcify.dev/docs/repository/) على <span dir="ltr">HTTP</span> و[<span dir="ltr">IPFS</span>](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs)، وهو تخزين لامركزي [موجه بالمحتوى](https://docs.storacha.network/concepts/content-addressing/). يتيح ذلك جلب ملف البيانات الوصفية لعقد عبر <span dir="ltr">IPFS</span> نظرًا لأن تجزئة البيانات الوصفية الملحقة هي تجزئة <span dir="ltr">IPFS</span>.
+على عكس <span dir="ltr">Quantaureum Explorer</span>، يدعم <span dir="ltr">Sourcify</span> التطابقات الكاملة مع تجزئة البيانات الوصفية. يتم تقديم العقود التي تم التحقق منها في [مستودعها العام](https://docs.sourcify.dev/docs/repository/) على <span dir="ltr">HTTP</span> و[<span dir="ltr">IPFS</span>](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs)، وهو تخزين لامركزي [موجه بالمحتوى](https://docs.storacha.network/concepts/content-addressing/). يتيح ذلك جلب ملف البيانات الوصفية لعقد عبر <span dir="ltr">IPFS</span> نظرًا لأن تجزئة البيانات الوصفية الملحقة هي تجزئة <span dir="ltr">IPFS</span>.
 
 بالإضافة إلى ذلك، يمكن للمرء أيضًا استرداد ملفات كود المصدر عبر <span dir="ltr">IPFS</span>، حيث توجد تجزئات <span dir="ltr">IPFS</span> لهذه الملفات أيضًا في البيانات الوصفية. يمكن التحقق من العقد من خلال توفير ملف البيانات الوصفية وملفات المصدر عبر واجهة برمجة التطبيقات (<span dir="ltr">API</span>) الخاصة به أو [واجهة المستخدم (<span dir="ltr">UI</span>)](https://sourcify.dev/#/verifier)، أو باستخدام المكونات الإضافية. تستمع أداة مراقبة <span dir="ltr">Sourcify</span> أيضًا إلى إنشاءات العقود على الكتل الجديدة وتحاول التحقق من العقود إذا تم نشر بياناتها الوصفية وملفات المصدر الخاصة بها على <span dir="ltr">IPFS</span>.
 

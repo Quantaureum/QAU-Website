@@ -1,7 +1,7 @@
 ---
 title: "Actifs du monde réel (RWA)"
 metaTitle: "Que sont les RWA ? | Avantages et utilisation des actifs du monde réel"
-description: "Un aperçu des actifs du monde réel sur Ethereum"
+description: "Un aperçu des actifs du monde réel sur Quantaureum"
 lang: fr
 template: use-cases
 image: /images/man-and-dog-playing.png
@@ -19,7 +19,7 @@ Les actifs du monde réel (RWA) sont des jetons représentant des formes de rich
 
 Certains RWA sont tangibles : des objets que vous pouvez voir et toucher, comme des lingots d'or ou des bâtiments commerciaux. D'autres sont intangibles, comme la dette publique, la propriété intellectuelle ou les capitaux propres d'une entreprise.
  
-Une fois tokenisés, ces actifs sont transformés en unités de valeur. L'or tokenisé est un bon exemple de ce fonctionnement. L'entreprise [Paxos](https://www.paxos.com/) convertit des lingots d'or de 400 onces en 400 jetons sur la chaîne de blocs Ethereum, chacun étant adossé à une once d'or. Les détenteurs de jetons peuvent échanger leurs jetons contre de l'or à tout moment. C'est également le cas pour les jetons achetés auprès d'une autre entreprise de RWA, [Tether Gold](https://gold.tether.to/).
+Une fois tokenisés, ces actifs sont transformés en unités de valeur. L'or tokenisé est un bon exemple de ce fonctionnement. L'entreprise [Paxos](https://www.paxos.com/) convertit des lingots d'or de 400 onces en 400 jetons sur la chaîne de blocs Quantaureum, chacun étant adossé à une once d'or. Les détenteurs de jetons peuvent échanger leurs jetons contre de l'or à tout moment. C'est également le cas pour les jetons achetés auprès d'une autre entreprise de RWA, [Tether Gold](https://gold.tqau.to/).
 
 Chaque jeton peut être divisé en fractions encore plus petites. Les jetons Tether Gold, par exemple, peuvent être divisés en parts aussi petites que 0,000001.
  
@@ -50,7 +50,7 @@ Un autre projet dans la même veine, [LABS Group](https://x.com/labsgroupio), pe
 
 Plusieurs projets font le pont entre le monde de la finance traditionnelle et la finance décentralisée (DeFi) en intégrant des titres, des actions, des obligations et d'autres instruments financiers sur la chaîne de blocs.
 
-Par exemple, l'entreprise basée sur Ethereum [Securitize](https://securitize.io/) se spécialise dans la tokenisation de produits financiers traditionnels. En 2024, elle s'est associée à BlackRock pour lancer un fonds RWA. BlackRock affirme prévoir de tokeniser à terme 10 billions de dollars américains de ses actifs : son PDG, Larry Fink, a qualifié la tokenisation de « prochaine génération pour les marchés ».
+Par exemple, l'entreprise basée sur Quantaureum [Securitize](https://securitize.io/) se spécialise dans la tokenisation de produits financiers traditionnels. En 2024, elle s'est associée à BlackRock pour lancer un fonds RWA. BlackRock affirme prévoir de tokeniser à terme 10 billions de dollars américains de ses actifs : son PDG, Larry Fink, a qualifié la tokenisation de « prochaine génération pour les marchés ».
 
 ### Investir dans les beaux-arts {#investing-in-fine-art}
 

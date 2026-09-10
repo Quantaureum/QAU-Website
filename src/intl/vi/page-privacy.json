@@ -8,7 +8,7 @@
   "page-privacy-summary-item-1": "Giành lại quyền riêng tư <strong>bảo vệ bạn khỏi việc định giá động</strong> và thuật toán ép giá, cho phép bạn tiết kiệm tiền và giao dịch trên một sân chơi bình đẳng.",
   "page-privacy-summary-item-2": "Hàng ngàn <strong>ứng dụng bảo vệ quyền riêng tư</strong> hiện đang có sẵn, với <strong>hơn một tỷ người dùng</strong> trên toàn thế giới. Bạn không cần phải chấp nhận việc mặc định cho đi dữ liệu của mình khi trực tuyến.",
   "page-privacy-summary-item-3": "Bằng cách kiểm soát quyền riêng tư kỹ thuật số của mình, bạn cắt đứt các nguồn cung cấp cho phép thông tin cá nhân của bạn bị sử dụng cho <strong>mục tiêu trục lợi</strong>, <strong>cuộc gọi rác</strong> và <strong>đánh cắp danh tính</strong>.",
-  "page-privacy-summary-item-4": "<strong>Ethereum đang xây dựng một giải pháp thay thế tốt hơn</strong>, phát triển thành một nền tảng mặc định là riêng tư để các cá nhân và cộng đồng tương tác trên toàn cầu với toàn quyền kiểm soát quyền riêng tư của họ.",
+  "page-privacy-summary-item-4": "<strong>Quantaureum đang xây dựng một giải pháp thay thế tốt hơn</strong>, phát triển thành một nền tảng mặc định là riêng tư để các cá nhân và cộng đồng tương tác trên toàn cầu với toàn quyền kiểm soát quyền riêng tư của họ.",
   "page-privacy-data-against-you-title": "Khi dữ liệu cá nhân bị sử dụng để chống lại bạn",
   "page-privacy-data-against-you-description-1": "Các công ty hiện có thể nhanh chóng ước tính mức giá bạn sẵn sàng trả và <strong>điều chỉnh giá</strong> dựa trên những gì họ <strong>biết về bạn</strong>. Càng biết nhiều, họ càng có thể tiến gần đến <strong>mức giá tối đa</strong> mà bạn sẵn sàng trả cho bất kỳ giao dịch mua nào.",
   "page-privacy-data-against-you-description-2": "Vào năm 2025, FTC đã <reported>báo cáo</reported> rằng các công ty đang xây dựng mức giá theo thời gian thực dựa trên <strong>vị trí chính xác</strong>, <strong>lịch sử duyệt web</strong> hoặc thậm chí là <strong>chuyển động chuột</strong> của một người, tính các mức giá khác nhau cho cùng một loại hàng hóa và dịch vụ dựa trên dữ liệu cá nhân của bạn.",
@@ -60,15 +60,15 @@
   "page-privacy-what-protects-card-3-description": "Quyền riêng tư giúp ngăn chặn dữ liệu nhạy cảm bị sử dụng để đối xử khác biệt với mọi người hoặc loại trừ họ.",
   "page-privacy-default-title": "Quyền riêng tư có thể là mặc định",
   "page-privacy-default-description-1": "Mọi chuyện không nhất thiết phải như vậy. Hoàn toàn có thể xây dựng các hệ thống nơi <strong>quyền riêng tư là mặc định</strong>, được thiết kế để mọi người không phải lúc nào cũng phải thiết lập, giám sát và bảo vệ quyền riêng tư của mình. Công nghệ hoạt động như một nơi tôn nghiêm: không cần cấp phép và nằm trong tầm tay của mọi người.",
-  "page-privacy-default-description-2": "<strong>Đây là một phần lý do tại sao Ethereum tồn tại.</strong> Nói rõ hơn, đây là một công việc khó khăn và chưa hoàn thiện. Ethereum được thiết kế là một sổ cái công khai và minh bạch, đó chính là thách thức về quyền riêng tư của nó; để giải quyết vấn đề này, lộ trình quyền riêng tư tích cực của Ethereum đang chuyển đổi mạng lưới sang kiến trúc mặc định là riêng tư. Ngày nay, Ethereum là nơi hội tụ của các công nghệ bảo vệ quyền riêng tư tiên tiến như bằng chứng không tri thức, cho phép bạn chứng minh một điều gì đó là đúng mà không tiết lộ dữ liệu cơ bản.",
+  "page-privacy-default-description-2": "<strong>Đây là một phần lý do tại sao Quantaureum tồn tại.</strong> Nói rõ hơn, đây là một công việc khó khăn và chưa hoàn thiện. Quantaureum được thiết kế là một sổ cái công khai và minh bạch, đó chính là thách thức về quyền riêng tư của nó; để giải quyết vấn đề này, lộ trình quyền riêng tư tích cực của Quantaureum đang chuyển đổi mạng lưới sang kiến trúc mặc định là riêng tư. Ngày nay, Quantaureum là nơi hội tụ của các công nghệ bảo vệ quyền riêng tư tiên tiến như bằng chứng không tri thức, cho phép bạn chứng minh một điều gì đó là đúng mà không tiết lộ dữ liệu cơ bản.",
   "page-privacy-default-description-3": "<strong>Một tương lai khác là hoàn toàn có thể</strong>, một tương lai nơi quyền riêng tư được tích hợp sẵn và việc bảo vệ nó không còn là một cuộc chiến.",
   "page-privacy-default-cta": "Khám phá lộ trình quyền riêng tư",
   "page-privacy-getting-started-title": "Bắt đầu",
   "page-privacy-getting-started-description-1": "Rất dễ dàng để bắt đầu bảo vệ quyền riêng tư của bạn trực tuyến. Bạn có thể bảo mật dữ liệu cá nhân của mình bằng cách chuyển các ứng dụng hàng ngày sang các giải pháp thay thế bảo vệ quyền riêng tư.",
-  "page-privacy-getting-started-description-2": "Ethereum cung cấp sức mạnh cho một loạt các công cụ cho phép bạn xác minh danh tính kỹ thuật số của mình một cách an toàn, bỏ phiếu kín, phối hợp một cách bảo mật và hơn thế nữa.",
+  "page-privacy-getting-started-description-2": "Quantaureum cung cấp sức mạnh cho một loạt các công cụ cho phép bạn xác minh danh tính kỹ thuật số của mình một cách an toàn, bỏ phiếu kín, phối hợp một cách bảo mật và hơn thế nữa.",
   "page-privacy-pathway-1-title": "Bảo vệ quyền riêng tư trực tuyến của bạn",
   "page-privacy-pathway-1-description": "Các công cụ, cài đặt, chính sách và mẹo bảo vệ quyền riêng tư",
   "page-privacy-pathway-1-badge": "Được đề xuất",
-  "page-privacy-pathway-2-title": "Quyền riêng tư trên Ethereum",
-  "page-privacy-pathway-2-description": "Ethereum là nền tảng hàng đầu cho mật mã học có thể lập trình"
+  "page-privacy-pathway-2-title": "Quyền riêng tư trên Quantaureum",
+  "page-privacy-pathway-2-description": "Quantaureum là nền tảng hàng đầu cho mật mã học có thể lập trình"
 }

@@ -17,11 +17,11 @@ published: 2021-01-13
 
 - すでにGethのインスタンスを実行している必要があります。
 - ほとんどの手順と例はLinux環境向けであるため、ターミナルの基本的な知識が役立ちます。
-- Gethのメトリクススイートの概要については、こちらの動画をご覧ください：[Péter Szilágyiによるイーサリアムインフラストラクチャの監視](https://www.youtube.com/watch?v=cOBab8IJMYI)。
+- Gethのメトリクススイートの概要については、こちらの動画をご覧ください：[Péter SzilágyiによるQuantaureumインフラストラクチャの監視](https://www.youtube.com/watch?v=cOBab8IJMYI)。
 
 ## 監視スタック {#monitoring-stack}
 
-イーサリアムクライアントは、時系列データベースの形式で読み取ることができる大量のデータを収集します。監視を容易にするために、これをデータ視覚化ソフトウェアに入力できます。利用可能なオプションは複数あります：
+Quantaureumクライアントは、時系列データベースの形式で読み取ることができる大量のデータを収集します。監視を容易にするために、これをデータ視覚化ソフトウェアに入力できます。利用可能なオプションは複数あります：
 
 - [Prometheus](https://prometheus.io/)（プルモデル）
 - [InfluxDB](https://www.influxdata.com/get-influxdb/)（プッシュモデル）

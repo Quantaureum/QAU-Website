@@ -23,27 +23,27 @@ published: 2021-02-26
 
 ## शुरुआत करना {#getting-started}
 
-यह ट्यूटोरियल yarn का उपयोग करके परीक्षण सेटअप और रन को दर्शाता है, लेकिन यदि आप npm पसंद करते हैं तो कोई समस्या नहीं है - मैं आधिकारिक वॉफल [प्रलेखन](https://ethereum-waffle.readthedocs.io/en/latest/index.html) का उचित संदर्भ प्रदान करूंगा।
+यह ट्यूटोरियल yarn का उपयोग करके परीक्षण सेटअप और रन को दर्शाता है, लेकिन यदि आप npm पसंद करते हैं तो कोई समस्या नहीं है - मैं आधिकारिक वॉफल [प्रलेखन](https://quantaureum-waffle.readthedocs.io/en/latest/index.html) का उचित संदर्भ प्रदान करूंगा।
 
 ## निर्भरताएँ इंस्टॉल करें {#install-dependencies}
 
-अपने प्रोजेक्ट की dev निर्भरताओं में ethereum-waffle और typescript निर्भरताएँ [जोड़ें](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#installation)।
+अपने प्रोजेक्ट की dev निर्भरताओं में quantaureum-waffle और typescript निर्भरताएँ [जोड़ें](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#installation)।
 
 ```bash
-yarn add --dev ethereum-waffle ts-node typescript @types/jest
+yarn add --dev quantaureum-waffle ts-node typescript @types/jest
 ```
 
 ## उदाहरण स्मार्ट अनुबंध {#example-smart-contract}
 
-ट्यूटोरियल के दौरान हम एक सरल स्मार्ट अनुबंध उदाहरण - EtherSplitter पर काम करेंगे। यह किसी को भी कुछ wei भेजने और इसे दो पूर्वनिर्धारित रिसीवरों के बीच समान रूप से विभाजित करने की अनुमति देने के अलावा और कुछ नहीं करता है।
+ट्यूटोरियल के दौरान हम एक सरल स्मार्ट अनुबंध उदाहरण - QauSplitter पर काम करेंगे। यह किसी को भी कुछ wei भेजने और इसे दो पूर्वनिर्धारित रिसीवरों के बीच समान रूप से विभाजित करने की अनुमति देने के अलावा और कुछ नहीं करता है।
 स्प्लिट फ़ंक्शन के लिए यह आवश्यक है कि wei की संख्या सम हो, अन्यथा यह रिवर्ट हो जाएगा। दोनों रिसीवरों के लिए यह एक wei ट्रांसफर करता है, जिसके बाद ट्रांसफर इवेंट का उत्सर्जन होता है।
 
-EtherSplitter कोड के स्निपेट को `src/EtherSplitter.sol` में रखें।
+QauSplitter कोड के स्निपेट को `src/QauSplitter.sol` में रखें।
 
 ```solidity
 pragma solidity ^0.6.0;
 
-contract EtherSplitter {
+contract QauSplitter {
     address payable receiver1;
     address payable receiver2;
 
@@ -66,7 +66,7 @@ contract EtherSplitter {
 
 ## अनुबंध को कंपाइल करें {#compile-the-contract}
 
-अनुबंध को [कंपाइल करने](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) के लिए package.json फ़ाइल में निम्नलिखित प्रविष्टि जोड़ें:
+अनुबंध को [कंपाइल करने](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) के लिए package.json फ़ाइल में निम्नलिखित प्रविष्टि जोड़ें:
 
 ```json
 "scripts": {
@@ -85,11 +85,11 @@ contract EtherSplitter {
 }
 ```
 
-`yarn build` चलाएँ। परिणामस्वरूप, JSON प्रारूप में EtherSplitter कंपाइल किए गए अनुबंध के साथ `build` डायरेक्टरी दिखाई देगी।
+`yarn build` चलाएँ। परिणामस्वरूप, JSON प्रारूप में QauSplitter कंपाइल किए गए अनुबंध के साथ `build` डायरेक्टरी दिखाई देगी।
 
 ## परीक्षण सेटअप {#test-setup}
 
-वॉफल के साथ परीक्षण के लिए Chai मैचर्स और Mocha का उपयोग करना आवश्यक है, इसलिए आपको उन्हें अपने प्रोजेक्ट में [जोड़ना](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) होगा। अपनी package.json फ़ाइल को अपडेट करें और स्क्रिप्ट्स भाग में `test` प्रविष्टि जोड़ें:
+वॉफल के साथ परीक्षण के लिए Chai मैचर्स और Mocha का उपयोग करना आवश्यक है, इसलिए आपको उन्हें अपने प्रोजेक्ट में [जोड़ना](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) होगा। अपनी package.json फ़ाइल को अपडेट करें और स्क्रिप्ट्स भाग में `test` प्रविष्टि जोड़ें:
 
 ```json
 "scripts": {
@@ -98,27 +98,27 @@ contract EtherSplitter {
   }
 ```
 
-यदि आप अपने परीक्षणों को [निष्पादित](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) करना चाहते हैं, तो बस `yarn test` चलाएँ।
+यदि आप अपने परीक्षणों को [निष्पादित](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) करना चाहते हैं, तो बस `yarn test` चलाएँ।
 
 ## परीक्षण {#testing}
 
-अब `test` डायरेक्टरी बनाएँ और नई फ़ाइल `test\EtherSplitter.test.ts` बनाएँ।
+अब `test` डायरेक्टरी बनाएँ और नई फ़ाइल `test\QauSplitter.test.ts` बनाएँ।
 नीचे दिए गए स्निपेट को कॉपी करें और इसे हमारी परीक्षण फ़ाइल में पेस्ट करें।
 
 ```ts
 import { expect, use } from "chai"
 import { Contract } from "ethers"
-import { deployContract, MockProvider, solidity } from "ethereum-waffle"
-import EtherSplitter from "../build/EtherSplitter.json"
+import { deployContract, MockProvider, solidity } from "quantaureum-waffle"
+import QauSplitter from "../build/QauSplitter.json"
 
 use(solidity)
 
-describe("Ether Splitter", () => {
+describe("QAU Splitter", () => {
   const [sender, receiver1, receiver2] = new MockProvider().getWallets()
   let splitter: Contract
 
   beforeEach(async () => {
-    splitter = await deployContract(sender, EtherSplitter, [
+    splitter = await deployContract(sender, QauSplitter, [
       receiver1.address,
       receiver2.address,
     ])
@@ -129,9 +129,9 @@ describe("Ether Splitter", () => {
 ```
 
 शुरू करने से पहले कुछ शब्द।
-`MockProvider` ब्लॉकचेन का एक मॉक संस्करण प्रदान करता है। यह मॉक वॉलेट भी प्रदान करता है जो हमें EtherSplitter अनुबंध का परीक्षण करने के लिए काम आएंगे। हम प्रोवाइडर पर `getWallets()` विधि को कॉल करके दस वॉलेट तक प्राप्त कर सकते हैं। उदाहरण में, हम तीन वॉलेट प्राप्त करते हैं - प्रेषक के लिए और दो रिसीवरों के लिए।
+`MockProvider` ब्लॉकचेन का एक मॉक संस्करण प्रदान करता है। यह मॉक वॉलेट भी प्रदान करता है जो हमें QauSplitter अनुबंध का परीक्षण करने के लिए काम आएंगे। हम प्रोवाइडर पर `getWallets()` विधि को कॉल करके दस वॉलेट तक प्राप्त कर सकते हैं। उदाहरण में, हम तीन वॉलेट प्राप्त करते हैं - प्रेषक के लिए और दो रिसीवरों के लिए।
 
-अगला, हम 'स्प्लिटर' नामक एक चर घोषित करते हैं - यह हमारा मॉक EtherSplitter अनुबंध है। यह `deployContract` विधि द्वारा एक एकल परीक्षण के प्रत्येक निष्पादन से पहले बनाया जाता है। यह विधि पहले पैरामीटर के रूप में पास किए गए वॉलेट (हमारे मामले में प्रेषक का वॉलेट) से एक अनुबंध की तैनाती का अनुकरण करती है। दूसरा पैरामीटर परीक्षण किए गए अनुबंध का ABI और बाइटकोड है - हम वहां `build` डायरेक्टरी से कंपाइल किए गए EtherSplitter अनुबंध की json फ़ाइल पास करते हैं। तीसरा पैरामीटर अनुबंध के कंस्ट्रक्टर तर्कों के साथ एक ऐरे है, जो हमारे मामले में, रिसीवरों के दो पते हैं।
+अगला, हम 'स्प्लिटर' नामक एक चर घोषित करते हैं - यह हमारा मॉक QauSplitter अनुबंध है। यह `deployContract` विधि द्वारा एक एकल परीक्षण के प्रत्येक निष्पादन से पहले बनाया जाता है। यह विधि पहले पैरामीटर के रूप में पास किए गए वॉलेट (हमारे मामले में प्रेषक का वॉलेट) से एक अनुबंध की तैनाती का अनुकरण करती है। दूसरा पैरामीटर परीक्षण किए गए अनुबंध का ABI और बाइटकोड है - हम वहां `build` डायरेक्टरी से कंपाइल किए गए QauSplitter अनुबंध की json फ़ाइल पास करते हैं। तीसरा पैरामीटर अनुबंध के कंस्ट्रक्टर तर्कों के साथ एक ऐरे है, जो हमारे मामले में, रिसीवरों के दो पते हैं।
 
 ## changeBalances {#changebalances}
 
@@ -178,7 +178,7 @@ it("दूसरे रिसीवर को ट्रांसफर पर �
 })
 ```
 
-`emit` मैचर हमें यह जांचने की अनुमति देता है कि क्या किसी अनुबंध ने एक विधि को कॉल करने पर एक इवेंट उत्सर्जित किया है। `emit` मैचर के पैरामीटर के रूप में, हम उस मॉक अनुबंध को प्रदान करते हैं जिसके बारे में हम भविष्यवाणी करते हैं कि वह इवेंट उत्सर्जित करेगा, उस इवेंट के नाम के साथ। हमारे मामले में, मॉक अनुबंध `splitter` है और इवेंट का नाम - `Transfer`। हम उन तर्कों के सटीक मानों को भी सत्यापित कर सकते हैं जिनके साथ इवेंट उत्सर्जित हुआ था - हम `withArgs` मैचर में उतने ही तर्क पास करते हैं, जितने हमारी इवेंट घोषणा अपेक्षा करती है। EtherSplitter अनुबंध के मामले में, हम ट्रांसफर किए गए wei राशि के साथ प्रेषक और रिसीवर के पते पास करते हैं।
+`emit` मैचर हमें यह जांचने की अनुमति देता है कि क्या किसी अनुबंध ने एक विधि को कॉल करने पर एक इवेंट उत्सर्जित किया है। `emit` मैचर के पैरामीटर के रूप में, हम उस मॉक अनुबंध को प्रदान करते हैं जिसके बारे में हम भविष्यवाणी करते हैं कि वह इवेंट उत्सर्जित करेगा, उस इवेंट के नाम के साथ। हमारे मामले में, मॉक अनुबंध `splitter` है और इवेंट का नाम - `Transfer`। हम उन तर्कों के सटीक मानों को भी सत्यापित कर सकते हैं जिनके साथ इवेंट उत्सर्जित हुआ था - हम `withArgs` मैचर में उतने ही तर्क पास करते हैं, जितने हमारी इवेंट घोषणा अपेक्षा करती है। QauSplitter अनुबंध के मामले में, हम ट्रांसफर किए गए wei राशि के साथ प्रेषक और रिसीवर के पते पास करते हैं।
 
 ## revertedWith {#revertedwith}
 
@@ -192,7 +192,7 @@ it("जब Wei राशि विषम हो तो रिवर्ट हो
 })
 ```
 
-परीक्षण, यदि पास हो जाता है, तो हमें यह आश्वासन देगा कि लेनदेन वास्तव में रिवर्ट कर दिया गया था। हालाँकि, हमारे द्वारा `require` कथन में पास किए गए संदेशों और `revertedWith` में अपेक्षित संदेश के बीच एक सटीक मिलान भी होना चाहिए। यदि हम EtherSplitter अनुबंध के कोड पर वापस जाते हैं, तो wei राशि के लिए `require` कथन में, हम संदेश प्रदान करते हैं: 'Uneven wei amount not allowed'। यह उस संदेश से मेल खाता है जिसकी हम अपने परीक्षण में अपेक्षा करते हैं। यदि वे बराबर नहीं होते, तो परीक्षण विफल हो जाता।
+परीक्षण, यदि पास हो जाता है, तो हमें यह आश्वासन देगा कि लेनदेन वास्तव में रिवर्ट कर दिया गया था। हालाँकि, हमारे द्वारा `require` कथन में पास किए गए संदेशों और `revertedWith` में अपेक्षित संदेश के बीच एक सटीक मिलान भी होना चाहिए। यदि हम QauSplitter अनुबंध के कोड पर वापस जाते हैं, तो wei राशि के लिए `require` कथन में, हम संदेश प्रदान करते हैं: 'Uneven wei amount not allowed'। यह उस संदेश से मेल खाता है जिसकी हम अपने परीक्षण में अपेक्षा करते हैं। यदि वे बराबर नहीं होते, तो परीक्षण विफल हो जाता।
 
 ## बधाई हो! {#congratulations}
 

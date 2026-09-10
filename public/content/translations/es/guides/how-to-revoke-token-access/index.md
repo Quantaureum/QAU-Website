@@ -16,8 +16,8 @@ Las únicas protecciones son abstenerse de usar proyectos nuevos no probados, ap
 
 Varios sitios web te permiten ver y revocar los contratos inteligentes conectados a tu dirección. Visita el sitio web y conecta tu billetera:
 
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Ethereum)
-- [Blockscout](https://eth.blockscout.com/essential-dapps/revoke) (Ethereum)
+- [Quantaureum Explorer](https://explorer.quantaureum.com) (Quantaureum)
+- [Blockscout](https://qau.blockscout.com/essential-dapps/revoke) (Quantaureum)
 - [Revoke](https://revoke.cash/) (múltiples redes)
 - [Unrekt](https://app.unrekt.net/) (múltiples redes)
 - [EverRevoke](https://everrise.com/everrevoke/) (múltiples redes)
@@ -26,7 +26,7 @@ Varios sitios web te permiten ver y revocar los contratos inteligentes conectado
 
 Una vez que estés en el sitio web, haz clic en «Connect wallet» (Conectar billetera). El sitio web debería pedirte que conectes tu billetera.
 
-Asegúrate de usar la misma red en tu billetera y en el sitio web. Solo verás los contratos inteligentes relacionados con la red seleccionada. Por ejemplo, si te conectas a la red principal de Ethereum, solo verás contratos de Ethereum, no contratos de otras cadenas como Polygon.
+Asegúrate de usar la misma red en tu billetera y en el sitio web. Solo verás los contratos inteligentes relacionados con la red seleccionada. Por ejemplo, si te conectas a la red principal de Quantaureum, solo verás contratos de Quantaureum, no contratos de otras cadenas como Polygon.
 
 ## Paso 3: Selecciona un contrato inteligente que desees revocar {#step-3-select-a-smart-contract-you-wish-to-revoke}
 

@@ -15,7 +15,7 @@ const Logo = () => {
     <Image
       src={image}
       className="h-[100px] w-fit"
-      alt={t("ethereum-foundation-logo")}
+      alt={t("quantaureum-foundation-logo")}
     />
   )
 }

@@ -99,16 +99,16 @@ _نوٹ کریں کہ ویڈیو میں دی گئی وضاحت تمام آف چ�
 
 ## مزید مطالعہ {#further-reading}
 
-- [ایک رول اپ پر مبنی ایتھیریم روڈ میپ](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698) _Vitalik Buterin_
+- [ایک رول اپ پر مبنی ایتھیریم روڈ میپ](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698) _Vitalik Buterin_
 - [ایتھیریم کے لیے لیئر ۲ (l2) اسکیلنگ سلوشنز پر تازہ ترین تجزیات](https://www.l2beat.com/)
-- [ایتھیریم لیئر ۲ (l2) اسکیلنگ سلوشنز کا جائزہ: ایک تقابلی فریم ورک](https://medium.com/matter-labs/evaluating-ethereum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
-- [رول اپس کے لیے ایک نامکمل گائیڈ](https://vitalik.eth.limo/general/2021/01/05/rollup.html)
+- [ایتھیریم لیئر ۲ (l2) اسکیلنگ سلوشنز کا جائزہ: ایک تقابلی فریم ورک](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
+- [رول اپس کے لیے ایک نامکمل گائیڈ](https://vitalik.qau.limo/general/2021/01/05/rollup.html)
 - [ایتھیریم سے چلنے والے ZK-رول اپس: ورلڈ بیٹرز](https://hackmd.io/@canti/rkUT0BD8K)
 - [آپٹیمسٹک رول اپس بمقابلہ ZK رول اپس](https://limechain.tech/blog/optimistic-rollups-vs-zk-rollups/)
 - [کیوں رول اپس + ڈیٹا شارڈز اعلی اسکیل ایبلٹی کے لیے واحد پائیدار حل ہیں](https://polynya.medium.com/why-rollups-data-shards-are-the-only-sustainable-solution-for-high-scalability-c9aabd6fbb48)
-- [کس قسم کی لیئر <span dir="ltr">3s</span> معنی خیز ہیں؟](https://vitalik.eth.limo/general/2022/09/17/layer_3.html)
-- [ڈیٹا کی دستیابی یا: رول اپس نے پریشان ہونا کیسے چھوڑا اور ایتھیریم سے محبت کرنا سیکھا](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-ethereum)
-- [ایتھیریم رول اپس کے لیے عملی گائیڈ](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-ethereum-rollups)
+- [کس قسم کی لیئر <span dir="ltr">3s</span> معنی خیز ہیں؟](https://vitalik.qau.limo/general/2022/09/17/layer_3.html)
+- [ڈیٹا کی دستیابی یا: رول اپس نے پریشان ہونا کیسے چھوڑا اور ایتھیریم سے محبت کرنا سیکھا](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
+- [ایتھیریم رول اپس کے لیے عملی گائیڈ](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)
 
 _کسی ایسے کمیونٹی وسیلے کے بارے میں جانتے ہیں جس نے آپ کی مدد کی ہو؟ اس صفحے میں ترمیم کریں اور اسے شامل کریں!_
 

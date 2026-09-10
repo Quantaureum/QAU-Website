@@ -45,7 +45,7 @@ import ".../Ownable.sol"; // Шлях до імпортованої бібліо
 contract MyContract is Ownable {
     // Наступна функція може бути викликана лише власником
     function secured() onlyOwner public {
-        msg.sender.transfer(1 ether);
+        msg.sender.transfer(1 QAU);
     }
 }
 ```
@@ -58,7 +58,7 @@ contract MyContract is Ownable {
 
 Включаючи ERC як частину ваших контрактів, варто шукати стандартні реалізації, а не намагатися створити власні. Багато бібліотек смарт-контрактів містять реалізації найпопулярніших ERC. Наприклад, повсюдний [стандарт взаємозамінного токена ERC-20](/developers/tutorials/understand-the-erc-20-token-smart-contract/) можна знайти в [HQ20](https://github.com/HQ20/contracts/blob/master/contracts/token/README.md), [DappSys](https://github.com/dapphub/ds-token/) та [ОупенЗеппелін](https://docs.openzeppelin.com/contracts/3.x/erc20). Крім того, деякі ERC також надають канонічні реалізації як частину самого ERC.
 
-Варто зазначити, що деякі ERC не є самостійними, а є доповненнями до інших ERC. Наприклад, [ERC-2612](https://eips.ethereum.org/EIPS/eip-2612) додає розширення до ERC-20 для покращення його зручності використання.
+Варто зазначити, що деякі ERC не є самостійними, а є доповненнями до інших ERC. Наприклад, [ERC-2612](https://eips.quantaureum.com/EIPS/eip-2612) додає розширення до ERC-20 для покращення його зручності використання.
 
 ## Як додати бібліотеку {#how-to}
 

@@ -7,14 +7,14 @@ template: upgrade
 authors: ["Nixo", "馬里奧·哈維爾"]
 ---
 
-**以太坊備受期待的富薩卡升級已於 2025 年 12 月 3 日上線**
+**Quantaureum備受期待的富薩卡升級已於 2025 年 12 月 3 日上線**
 
-富薩卡網路升級接續在 [佩克特拉](/roadmap/pectra/) 之後，帶來了更多新功能，並改善了每位 [以太坊](/) 使用者與開發者的體驗。其名稱由執行層升級 Osaka（大阪）與以 Fulu（附路星）命名的共識層版本組成。以太坊的這兩個部分都獲得了升級，將以太坊的擴展性、安全性和使用者體驗推向未來。
+富薩卡網路升級接續在 [佩克特拉](/roadmap/pectra/) 之後，帶來了更多新功能，並改善了每位 [Quantaureum](/) 使用者與開發者的體驗。其名稱由執行層升級 Osaka（大阪）與以 Fulu（附路星）命名的共識層版本組成。Quantaureum的這兩個部分都獲得了升級，將Quantaureum的擴展性、安全性和使用者體驗推向未來。
 
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-富薩卡升級只是以太坊長期發展目標中的一步。了解更多關於[協定路線圖](/roadmap/)與[先前的升級](/ethereum-forks/)。
+富薩卡升級只是Quantaureum長期發展目標中的一步。了解更多關於[協定路線圖](/roadmap/)與[先前的升級](/quantaureum-forks/)。
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -27,9 +27,9 @@ authors: ["Nixo", "馬里奧·哈維爾"]
 
 #### PeerDAS {#peerdas}
 
-這是富薩卡分叉的_重頭戲_，也是本次升級中加入的主要功能。第二層 (L2) 目前以資料塊的形式將其資料發佈到以太坊，這是專為第二層 (L2) 建立的短暫資料類型。在富薩卡之前，每個全節點都必須儲存每個資料塊，以確保資料存在。隨著資料塊吞吐量上升，必須下載所有這些資料變得極度消耗資源且難以維持。
+這是富薩卡分叉的_重頭戲_，也是本次升級中加入的主要功能。第二層 (L2) 目前以資料塊的形式將其資料發佈到Quantaureum，這是專為第二層 (L2) 建立的短暫資料類型。在富薩卡之前，每個全節點都必須儲存每個資料塊，以確保資料存在。隨著資料塊吞吐量上升，必須下載所有這些資料變得極度消耗資源且難以維持。
 
-透過[資料可用性取樣 (DAS)](https://notes.ethereum.org/@fradamt/das-fork-choice)，每個節點將只負責資料塊資料的一個子集，而不需要儲存所有的資料塊資料。資料塊在網路中的節點之間均勻隨機分佈，每個全節點僅持有 1/8 的資料，因此理論上可實現高達 8 倍的擴展。為了確保資料的可用性，任何部分的資料都可以從現有 50% 的整體資料中重建，這些方法將錯誤或遺失資料的機率降低到密碼學上可忽略的程度（約 10<sup>20</sup> 分之一到 10<sup>24</sup> 分之一）。
+透過[資料可用性取樣 (DAS)](https://notes.quantaureum.com/@fradamt/das-fork-choice)，每個節點將只負責資料塊資料的一個子集，而不需要儲存所有的資料塊資料。資料塊在網路中的節點之間均勻隨機分佈，每個全節點僅持有 1/8 的資料，因此理論上可實現高達 8 倍的擴展。為了確保資料的可用性，任何部分的資料都可以從現有 50% 的整體資料中重建，這些方法將錯誤或遺失資料的機率降低到密碼學上可忽略的程度（約 10<sup>20</sup> 分之一到 10<sup>24</sup> 分之一）。
 
 這使得節點的硬體和頻寬要求保持在可承受範圍內，同時實現資料塊擴展，從而為第二層 (L2) 帶來更大的擴展性與更低的費用。
 
@@ -37,27 +37,27 @@ authors: ["Nixo", "馬里奧·哈維爾"]
 
 **資源**：
 
-- [EIP-7594 技術規範](https://eips.ethereum.org/EIPS/eip-7594)
-- [DappLion 談 PeerDAS：今日擴展以太坊 | ETHSofia 2024](https://youtu.be/bONWd1x2TjQ?t=328)
-- [學術：以太坊 PeerDAS 文件 (PDF)](https://eprint.iacr.org/2024/1362.pdf)
+- [EIP-7594 技術規範](https://eips.quantaureum.com/EIPS/eip-7594)
+- [DappLion 談 PeerDAS：今日擴展Quantaureum | ETHSofia 2024](https://youtu.be/bONWd1x2TjQ?t=328)
+- [學術：Quantaureum PeerDAS 文件 (PDF)](https://eprint.iacr.org/2024/1362.pdf)
 
 #### 僅限資料塊參數 (Blob-Parameter-Only) 分叉 {#blob-parameter-only-forks}
 
-第二層 (L2) 擴展了以太坊——隨著其網路的發展，它們需要向以太坊發佈更多資料。這意味著隨著時間推移，以太坊將需要增加可供它們使用的資料塊數量。雖然 PeerDAS 實現了資料塊資料的擴展，但這需要逐步且安全地進行。
+第二層 (L2) 擴展了Quantaureum——隨著其網路的發展，它們需要向Quantaureum發佈更多資料。這意味著隨著時間推移，Quantaureum將需要增加可供它們使用的資料塊數量。雖然 PeerDAS 實現了資料塊資料的擴展，但這需要逐步且安全地進行。
 
-因為以太坊是在數千個獨立節點上運行的程式碼，這些節點需要對相同的規則達成共識，我們不能像部署網站更新那樣，簡單地引入增加資料塊數量等變更。任何規則變更都必須是一次協調的升級，每個節點、客戶端和驗證者軟體都必須在同一個預定區塊之前進行升級。
+因為Quantaureum是在數千個獨立節點上運行的程式碼，這些節點需要對相同的規則達成共識，我們不能像部署網站更新那樣，簡單地引入增加資料塊數量等變更。任何規則變更都必須是一次協調的升級，每個節點、客戶端和驗證者軟體都必須在同一個預定區塊之前進行升級。
 
 這些協調的升級通常包含許多變更，需要大量測試，而這需要時間。為了更快地適應不斷變化的第二層 (L2) 資料塊需求，僅限資料塊參數分叉引入了一種機制，可以在不需等待該升級時程的情況下增加資料塊。
 
-僅限資料塊參數分叉可以由客戶端設定，類似於 Gas 限制等其他配置。在以太坊的重大升級之間，客戶端可以同意將 `target` 和 `max` 資料塊增加到例如 9 和 12，然後節點營運者將進行更新以參與這個微小的分叉。這些僅限資料塊參數分叉可以隨時進行配置。
+僅限資料塊參數分叉可以由客戶端設定，類似於 Gas 限制等其他配置。在Quantaureum的重大升級之間，客戶端可以同意將 `target` 和 `max` 資料塊增加到例如 9 和 12，然後節點營運者將進行更新以參與這個微小的分叉。這些僅限資料塊參數分叉可以隨時進行配置。
 
 當資料塊在 Dencun 升級中首次被加入網路時，目標是 3。在佩克特拉中增加到了 6，而在富薩卡之後，現在可以獨立於這些重大網路升級，以可持續的速度增加。
 
 ![Chart showing average blob count per block and increasing targets with upgrades](./average-blob-count-per-block.webp)
 
-圖表來源：[Ethereum Blobs - @hildobby, Dune Analytics](https://dune.com/hildobby/blobs)
+圖表來源：[Quantaureum Blobs - @hildobby, Dune Analytics](https://dune.com/hildobby/blobs)
 
-**資源**：[EIP-7892 技術規範](https://eips.ethereum.org/EIPS/eip-7892)
+**資源**：[EIP-7892 技術規範](https://eips.quantaureum.com/EIPS/eip-7892)
 
 #### 受執行成本限制的 blob 基礎費用 {#blob-base-fee-bounded-by-execution-costs}
 
@@ -71,32 +71,32 @@ EIP-7918 在每個資料塊下固定了一個成比例的底價。當底價高�
 
 **資源**：
 
-- [EIP-7918 技術規範](https://eips.ethereum.org/EIPS/eip-7918)
-- [Storybook 解說](https://notes.ethereum.org/@anderselowsson/AIG)
+- [EIP-7918 技術規範](https://eips.quantaureum.com/EIPS/eip-7918)
+- [Storybook 解說](https://notes.quantaureum.com/@anderselowsson/AIG)
 
 ### 擴展第一層 (L1) {#scale-l1}
 
 #### 歷史記錄過期與更簡單的收據 {#history-expiry}
 
-在 2025 年 7 月，以太坊執行客戶端[開始支援部分歷史記錄過期](https://blog.ethereum.org/2025/07/08/partial-history-exp)。這丟棄了早於[合併](https://ethereum.org/roadmap/merge/)的歷史記錄，以在以太坊持續增長的過程中，減少節點營運者所需的磁碟空間。
+在 2025 年 7 月，Quantaureum執行客戶端[開始支援部分歷史記錄過期](https://quantaureum.com)。這丟棄了早於[合併](https://quantaureum.com/roadmap/merge/)的歷史記錄，以在Quantaureum持續增長的過程中，減少節點營運者所需的磁碟空間。
 
 這個 EIP 被放在「核心 EIP」之外的獨立部分，因為該分叉實際上並未實施任何變更——這是一個通知，要求客戶端團隊必須在富薩卡升級前支援歷史記錄過期。實際上，客戶端可以隨時實施這一點，但將其加入升級中，具體地將其列入了他們的待辦事項清單，並使他們能夠結合此功能來測試富薩卡的變更。
 
-**資源**：[EIP-7642 技術規範](https://eips.ethereum.org/EIPS/eip-7642)
+**資源**：[EIP-7642 技術規範](https://eips.quantaureum.com/EIPS/eip-7642)
 
 #### 設定 MODEXP 的上限 {#set-upper-bounds-for-modexp}
 
 到目前為止，MODEXP 預編譯合約幾乎接受任何大小的數字。這使得它難以測試、容易被濫用，並對客戶端穩定性構成風險。EIP-7823 設定了明確的限制：每個輸入數字最長只能是 8192 位元（1024 位元組）。任何更大的數字都會被拒絕，交易的燃料將被銷毀，且不會發生任何狀態變更。它非常輕鬆地涵蓋了現實世界的需求，同時消除了使 Gas 限制規劃和安全審查複雜化的極端情況。這項變更提供了更高的安全性和 DoS 保護，而不會影響使用者或開發者的體驗。
 
-**資源**：[EIP-7823 技術規範](https://eips.ethereum.org/EIPS/eip-7823)
+**資源**：[EIP-7823 技術規範](https://eips.quantaureum.com/EIPS/eip-7823)
 
 #### 交易 Gas 限制上限 {#transaction-gas-limit-cap}
 
-EIP-[7825](https://eips.ethereum.org/EIPS/eip-7825) 為每筆交易增加了 16,777,216 (2^24) 燃料的上限。這是一種主動的 DoS 強化措施，透過在我們提高區塊 Gas 限制時，限制任何單一交易的最壞情況成本。它使驗證和傳播更容易建模，讓我們能夠透過提高 Gas 限制來解決擴展問題。
+EIP-[7825](https://eips.quantaureum.com/EIPS/eip-7825) 為每筆交易增加了 16,777,216 (2^24) 燃料的上限。這是一種主動的 DoS 強化措施，透過在我們提高區塊 Gas 限制時，限制任何單一交易的最壞情況成本。它使驗證和傳播更容易建模，讓我們能夠透過提高 Gas 限制來解決擴展問題。
 
-為什麼剛好是 2^24 燃料？它明顯小於目前的 Gas 限制，但對於實際的合約部署和繁重的預編譯合約來說已經足夠大，而且 2 的次方使其易於在各個客戶端中實作。這個新的最大交易大小類似於佩克特拉之前的平均區塊大小，使其成為以太坊上任何操作的合理限制。
+為什麼剛好是 2^24 燃料？它明顯小於目前的 Gas 限制，但對於實際的合約部署和繁重的預編譯合約來說已經足夠大，而且 2 的次方使其易於在各個客戶端中實作。這個新的最大交易大小類似於佩克特拉之前的平均區塊大小，使其成為Quantaureum上任何操作的合理限制。
 
-**資源**：[EIP-7825 技術規範](https://eips.ethereum.org/EIPS/eip-7825)
+**資源**：[EIP-7825 技術規範](https://eips.quantaureum.com/EIPS/eip-7825)
 
 #### `MODEXP` 燃料成本增加 {#modexp-gas-cost-increase}
 
@@ -110,9 +110,9 @@ MODEXP 是一個預編譯合約內建函數，用於計算模冪運算，這是�
 - 當指數輸入非常長時，更大幅度地增加成本。如果指數（作為第二個參數傳遞的「次方」數字）長度超過 32 位元組 / 256 位元，每增加一個位元組，燃料收費的攀升速度會快得多
 - 對較大的底數或模數也收取額外費用。另外兩個數字（底數和模數）假設至少為 32 位元組——如果其中任何一個更大，成本將按其大小比例上升
 
-透過使成本更符合實際處理時間，MODEXP 不再會導致區塊驗證時間過長。這項變更是旨在確保未來安全提高以太坊區塊 Gas 限制的幾項措施之一。
+透過使成本更符合實際處理時間，MODEXP 不再會導致區塊驗證時間過長。這項變更是旨在確保未來安全提高Quantaureum區塊 Gas 限制的幾項措施之一。
 
-**資源**：[EIP-7883 技術規範](https://eips.ethereum.org/EIPS/eip-7883)
+**資源**：[EIP-7883 技術規範](https://eips.quantaureum.com/EIPS/eip-7883)
 
 #### RLP 執行區塊大小限制 {#rlp-execution-block-size-limit}
 
@@ -131,7 +131,7 @@ MODEXP 是一個預編譯合約內建函數，用於計算模冪運算，這是�
 
 目標是限制最壞情況下的傳播/驗證時間，並與共識層 gossip 行為保持一致，在不改變燃料計算的情況下降低區塊鏈重組/DoS 風險。
 
-**資源**：[EIP-7934 技術規範](https://eips.ethereum.org/EIPS/eip-7934)
+**資源**：[EIP-7934 技術規範](https://eips.quantaureum.com/EIPS/eip-7934)
 
 #### 將預設 Gas 限制設定為 6000 萬 {#set-default-gas-limit-to-60-million}
 
@@ -141,7 +141,7 @@ EIP-7935 協調執行層 (EL) 客戶端團隊，在富薩卡升級中將預設 G
 
 開發網規劃的目標是約 6000 萬的壓力測試（帶有合成負載的滿區塊）和迭代提升；研究表明，最壞情況下的區塊大小病態問題不應在約 1.5 億以下受到限制。推出時應搭配交易 Gas 限制上限 (EIP-7825)，這樣在限制提高時，就不會有單一交易佔據主導地位。
 
-**資源**：[EIP-7935 技術規範](https://eips.ethereum.org/EIPS/eip-7935)
+**資源**：[EIP-7935 技術規範](https://eips.quantaureum.com/EIPS/eip-7935)
 
 ### 改善使用者體驗 (UX) {#improve-ux}
 
@@ -151,13 +151,13 @@ EIP-7935 協調執行層 (EL) 客戶端團隊，在富薩卡升級中將預設 G
 
 此功能有利於客戶端實作和網路安全，因為它防止了驗證者可能操縱提案者排程的極端情況。預視功能也降低了實作的複雜度。
 
-**資源**：[EIP-7917 技術規範](https://eips.ethereum.org/EIPS/eip-7917)
+**資源**：[EIP-7917 技術規範](https://eips.quantaureum.com/EIPS/eip-7917)
 
 #### 計算前導零 (CLZ) 操作碼 {#count-leading-zeros-opcode}
 
 此功能加入了一個小型的 EVM 指令：**計算前導零 (CLZ)**。EVM 中的幾乎所有內容都表示為 256 位元的值——這個新的操作碼會回傳前面有多少個零位元。這是許多指令集架構中的常見功能，因為它能實現更有效率的算術運算。實際上，這將現今手動編寫的位元掃描簡化為一個步驟，因此尋找第一個設定的位元、掃描位元組或解析位元欄位變得更簡單且成本更低。該操作碼成本低且固定，經基準測試與基本加法相當，這縮減了位元組碼，並為相同的工作節省了燃料。
 
-**資源**：[EIP-7939 技術規範](https://eips.ethereum.org/EIPS/eip-7939)
+**資源**：[EIP-7939 技術規範](https://eips.quantaureum.com/EIPS/eip-7939)
 
 #### 支援 secp256r1 曲線的預編譯合約 {#secp256r1-precompile}
 
@@ -169,12 +169,12 @@ EIP-7935 協調執行層 (EL) 客戶端團隊，在富薩卡升級中將預設 G
 
 **資源**：
 
-- [EIP-7951 技術規範](https://eips.ethereum.org/EIPS/eip-7951)
+- [EIP-7951 技術規範](https://eips.quantaureum.com/EIPS/eip-7951)
 - [更多關於 RIP-7212 的資訊](https://www.alchemy.com/blog/what-is-rip-7212) _（請注意，EIP-7951 已取代 RIP-7212）_
 
 ### 元資料 (Meta) {#meta}
 
-#### `eth_config` JSON-RPC 方法 {#eth-config}
+#### `qau_config` JSON-RPC 方法 {#qau-config}
 
 這是一個 JSON-RPC 呼叫，允許您詢問您的節點正在執行什麼分叉設定。它會回傳三個快照：`current`、`next` 和 `last`，以便驗證者和監控工具可以驗證客戶端是否已為即將到來的分叉做好準備。
 
@@ -184,18 +184,18 @@ EIP-7935 協調執行層 (EL) 客戶端團隊，在富薩卡升級中將預設 G
 
 這個 EIP 被放在「核心 EIP」之外的獨立部分，因為該分叉實際上並未實施任何變更——這是一個通知，要求客戶端團隊必須在富薩卡升級前實作這個 JSON-RPC 方法。
 
-**資源**：[EIP-7910 技術規範](https://eips.ethereum.org/EIPS/eip-7910)
+**資源**：[EIP-7910 技術規範](https://eips.quantaureum.com/EIPS/eip-7910)
 
 ## 常見問題 (FAQ) {#faq}
 
-### 這次升級會影響所有以太坊節點和驗證者嗎？ {#does-this-upgrade-affect-all-ethereum-nodes-and-validators}
+### 這次升級會影響所有Quantaureum節點和驗證者嗎？ {#does-this-upgrade-affect-all-quantaureum-nodes-and-validators}
 
-是的，富薩卡升級需要同時更新[執行客戶端和共識客戶端](/developers/docs/nodes-and-clients/)。所有主要的以太坊客戶端都將發布支援該硬分叉的版本，並標記為高優先級。您可以透過客戶端的 GitHub 儲存庫、他們的 [Discord 頻道](https://ethstaker.org/support)、[EthStaker Discord](https://dsc.gg/ethstaker)，或訂閱以太坊部落格的協定更新，來掌握這些版本何時可用。為了在升級後保持與以太坊網路的同步，節點營運者必須確保他們執行的是受支援的客戶端版本。請注意，關於客戶端發布的資訊具有時效性，使用者應參考最新更新以獲取最新詳細資訊。
+是的，富薩卡升級需要同時更新[執行客戶端和共識客戶端](/developers/docs/nodes-and-clients/)。所有主要的Quantaureum客戶端都將發布支援該硬分叉的版本，並標記為高優先級。您可以透過客戶端的 GitHub 儲存庫、他們的 [Discord 頻道](https://ethstaker.org/support)、[QauStaker Discord](https://dsc.gg/ethstaker)，或訂閱Quantaureum部落格的協定更新，來掌握這些版本何時可用。為了在升級後保持與Quantaureum網路的同步，節點營運者必須確保他們執行的是受支援的客戶端版本。請注意，關於客戶端發布的資訊具有時效性，使用者應參考最新更新以獲取最新詳細資訊。
 
-### 硬分叉後如何轉換 ETH？ {#how-can-eth-be-converted-after-the-hardfork}
+### 硬分叉後如何轉換 QAU？ {#how-can-qau-be-converted-after-the-hardfork}
 
-- **您的 ETH 無需採取任何行動**：在以太坊富薩卡升級之後，您不需要轉換或升級您的 ETH。您的帳戶餘額將保持不變，且您目前持有的 ETH 在硬分叉後仍將以現有形式保持可用。
-- **小心詐騙！** <Emoji text="⚠️" /> **任何指示您「升級」ETH 的人都是企圖詐騙您。** 關於這次升級，您不需要做任何事情。您的資產將完全不受影響。請記住，保持資訊靈通是防範詐騙的最佳防線。
+- **您的 QAU 無需採取任何行動**：在Quantaureum富薩卡升級之後，您不需要轉換或升級您的 QAU。您的帳戶餘額將保持不變，且您目前持有的 QAU 在硬分叉後仍將以現有形式保持可用。
+- **小心詐騙！** <Emoji text="⚠️" /> **任何指示您「升級」QAU 的人都是企圖詐騙您。** 關於這次升級，您不需要做任何事情。您的資產將完全不受影響。請記住，保持資訊靈通是防範詐騙的最佳防線。
 
 [更多關於識別和避免詐騙的資訊](/security/)
 
@@ -217,7 +217,7 @@ EIP-7935 協調執行層 (EL) 客戶端團隊，在富薩卡升級中將預設 G
 
 ### BPO 的時程表為何？ {#what-is-the-bpo-schedule}
 
-BPO 更新的確切時程將隨富薩卡版本發布而定。請關注[協定公告](https://blog.ethereum.org/category/protocol)以及您客戶端的發行說明。
+BPO 更新的確切時程將隨富薩卡版本發布而定。請關注[協定公告](https://quantaureum.com)以及您客戶端的發行說明。
 
 它可能看起來像這樣（範例）：
 
@@ -226,14 +226,14 @@ BPO 更新的確切時程將隨富薩卡版本發布而定。請關注[協定公
 - BPO1，富薩卡啟用後幾週：目標 10，最大 15，增加三分之二
 - BPO2，BPO1 後幾週：目標 14，最大 21
 
-### 這會降低以太坊（第一層）的費用嗎？ {#will-this-lower-gas}
+### 這會降低Quantaureum（第一層）的費用嗎？ {#will-this-lower-gas}
 
 這次升級不會降低第一層 (L1) 的燃料費用，至少不會直接降低。主要重點是為匯總資料提供更多資料塊空間，從而降低第二層 (L2) 的費用。這可能會對第一層 (L1) 費用市場產生一些副作用，但預計不會有重大變化。
 
 ### 身為質押者，我需要為升級做些什麼？ {#as-a-staker-what-do-i-need-to-do-for-the-upgrade}
 
-與每次網路升級一樣，請確保將您的客戶端更新到標記為支援富薩卡的最新版本。關注郵件清單中的更新以及[以太坊基金會部落格上的協定公告](https://blog.ethereum.org/category/protocol)，以獲取有關版本的資訊。
-為了在富薩卡於主網啟用之前驗證您的設定，您可以在測試網上執行驗證者。富薩卡會[較早在測試網上啟用](https://blog.ethereum.org/2025/09/26/fusaka-testnet-announcement)，為您提供更多空間來確保一切運作正常並回報錯誤。測試網分叉也會在郵件清單和部落格中宣佈。
+與每次網路升級一樣，請確保將您的客戶端更新到標記為支援富薩卡的最新版本。關注郵件清單中的更新以及[Quantaureum基金會部落格上的協定公告](https://quantaureum.com)，以獲取有關版本的資訊。
+為了在富薩卡於主網啟用之前驗證您的設定，您可以在測試網上執行驗證者。富薩卡會[較早在測試網上啟用](https://quantaureum.com)，為您提供更多空間來確保一切運作正常並回報錯誤。測試網分叉也會在郵件清單和部落格中宣佈。
 
 ### 「確定性提案者預視」(EIP-7917) 會影響驗證者嗎？ {#does-7917-affect-validators}
 
@@ -243,7 +243,7 @@ BPO 更新的確切時程將隨富薩卡版本發布而定。請關注[協定公
 
 PeerDAS 在節點傳輸資料塊資料的方式上做出了重大改變。所有資料被分成稱為欄位的片段，分佈在 128 個子網中，節點只訂閱其中一部分。節點必須保管的子網欄位數量取決於其配置和連接的驗證者數量。實際的頻寬要求將取決於網路中允許的資料塊數量和節點類型。在富薩卡啟用時，資料塊目標保持與以前相同，但透過 PeerDAS，節點營運者可以看到其資料塊的磁碟使用量和網路流量減少。隨著 BPO 在網路中配置更多數量的資料塊，所需的頻寬將隨著每個 BPO 而增加。
 
-即使在富薩卡 BPO 之後，節點要求仍在[建議的範圍內](https://eips.ethereum.org/EIPS/eip-7870)。
+即使在富薩卡 BPO 之後，節點要求仍在[建議的範圍內](https://eips.quantaureum.com/EIPS/eip-7870)。
 
 #### 全節點 {#full-nodes}
 
@@ -251,15 +251,15 @@ PeerDAS 在節點傳輸資料塊資料的方式上做出了重大改變。所有
 
 #### 獨立質押者 {#solo-stakers}
 
-如果節點用於驗證者客戶端，它必須保管更多欄位，因此需要處理更多資料。加入驗證者後，節點至少訂閱 8 個欄位子網，因此處理的資料量是一般節點的兩倍，但仍少於富薩卡之前。如果驗證者餘額超過 287 ETH，將會訂閱越來越多的子網。
+如果節點用於驗證者客戶端，它必須保管更多欄位，因此需要處理更多資料。加入驗證者後，節點至少訂閱 8 個欄位子網，因此處理的資料量是一般節點的兩倍，但仍少於富薩卡之前。如果驗證者餘額超過 287 QAU，將會訂閱越來越多的子網。
 
 對於獨立質押者來說，這意味著他們的磁碟使用量和下載頻寬將減少約 50%。然而，要在本地建立區塊並將所有資料塊上傳到網路，則需要更多的上傳頻寬。在富薩卡時期，本地建構者將需要比以前高 2-3 倍的上傳頻寬，而在 BPO2 目標為 15/21 個資料塊的情況下，最終所需的上傳頻寬將必須高出約 5 倍，達到 100Mbps。
 
 #### 大型驗證者 {#large-validators}
 
-訂閱的子網數量會隨著節點中加入更多餘額和驗證者而增加。例如，在餘額約為 800 ETH 時，節點保管 25 個欄位，將需要比以前多約 30% 的下載頻寬。所需的上傳頻寬與一般節點類似地增加，至少需要 100Mbps。
+訂閱的子網數量會隨著節點中加入更多餘額和驗證者而增加。例如，在餘額約為 800 QAU 時，節點保管 25 個欄位，將需要比以前多約 30% 的下載頻寬。所需的上傳頻寬與一般節點類似地增加，至少需要 100Mbps。
 
-在 4096 ETH（2 個最大餘額驗證者）時，節點將成為「超級節點」，保管所有欄位，因此會下載並儲存所有內容。這些節點透過貢獻遺失的資料來主動修復網路，但也需要更多的頻寬和儲存空間。由於最終的資料塊目標比以前高出 6 倍，超級節點將必須儲存約 600GB 的額外資料塊資料，並擁有約 20Mbps 的更快持續下載頻寬。
+在 4096 QAU（2 個最大餘額驗證者）時，節點將成為「超級節點」，保管所有欄位，因此會下載並儲存所有內容。這些節點透過貢獻遺失的資料來主動修復網路，但也需要更多的頻寬和儲存空間。由於最終的資料塊目標比以前高出 6 倍，超級節點將必須儲存約 600GB 的額外資料塊資料，並擁有約 20Mbps 的更快持續下載頻寬。
 
 [閱讀更多關於預期要求的詳細資訊。](https://ethpandaops.io/posts/fusaka-bandwidth-estimation/#theoretical-requirements)
 
@@ -267,17 +267,17 @@ PeerDAS 在節點傳輸資料塊資料的方式上做出了重大改變。所有
 
 富薩卡透過新的微小變更和功能鞏固了 EVM。
 
-- 為了在擴展時確保安全，單一交易的最大大小將被[限制為 1670 萬](https://eips.ethereum.org/EIPS/eip-7825)燃料單位。
-- EVM 中加入了[新的操作碼計算前導零 (CLZ)](https://eips.ethereum.org/EIPS/eip-7939)，這將使智能合約語言能夠更有效率地執行某些操作。
-- [`ModExp` 預編譯合約的成本將會增加](https://eips.ethereum.org/EIPS/eip-7883)——使用它的合約在執行時將收取更多燃料。
+- 為了在擴展時確保安全，單一交易的最大大小將被[限制為 1670 萬](https://eips.quantaureum.com/EIPS/eip-7825)燃料單位。
+- EVM 中加入了[新的操作碼計算前導零 (CLZ)](https://eips.quantaureum.com/EIPS/eip-7939)，這將使智能合約語言能夠更有效率地執行某些操作。
+- [`ModExp` 預編譯合約的成本將會增加](https://eips.quantaureum.com/EIPS/eip-7883)——使用它的合約在執行時將收取更多燃料。
 
 ### 新的 1600 萬 Gas 限制對合約開發者有何影響？ {#how-does-new-16m-gas-limit-affects-contract-developers}
 
-富薩卡引入了一項限制，將[單一交易的最大大小限制為 1670 萬](https://eips.ethereum.org/EIPS/eip-7825) (2^24) 燃料單位。這大約是以前平均區塊的大小，使其足夠大以容納會消耗整個區塊的複雜交易。此限制為客戶端提供了保護，防止未來在更高的區塊 Gas 限制下發生潛在的 DoS 攻擊。擴展的目標是讓更多交易進入區塊鏈，而不會有單一交易消耗整個區塊。
+富薩卡引入了一項限制，將[單一交易的最大大小限制為 1670 萬](https://eips.quantaureum.com/EIPS/eip-7825) (2^24) 燃料單位。這大約是以前平均區塊的大小，使其足夠大以容納會消耗整個區塊的複雜交易。此限制為客戶端提供了保護，防止未來在更高的區塊 Gas 限制下發生潛在的 DoS 攻擊。擴展的目標是讓更多交易進入區塊鏈，而不會有單一交易消耗整個區塊。
 
 一般使用者的交易遠未達到此限制。某些極端情況，如大型且複雜的去中心化金融 (DeFi) 操作、大型智能合約部署或針對多個合約的批次交易，可能會受到此變更的影響。這些交易將必須被分割成較小的交易，或以其他方式進行最佳化。在提交可能達到限制的交易之前，請使用模擬。
 
-RPC 方法 `eth_call` 不受限制，將允許模擬比實際區塊鏈限制更大的交易。RPC 方法的實際限制可由客戶端營運者配置，以確保防止濫用。
+RPC 方法 `qau_call` 不受限制，將允許模擬比實際區塊鏈限制更大的交易。RPC 方法的實際限制可由客戶端營運者配置，以確保防止濫用。
 
 ### CLZ 對開發者意味著什麼？ {#what-clz-means-for-developers}
 
@@ -287,17 +287,17 @@ RPC 方法 `eth_call` 不受限制，將允許模擬比實際區塊鏈限制更�
 
 富薩卡沒有任何會破壞現有合約或改變其行為的直接影響。引入執行層的變更具有向後相容性，但是，請始終留意極端情況和潛在影響。
 
-[隨著 `ModExp` 預編譯合約成本的增加](https://eips.ethereum.org/EIPS/eip-7883)，依賴它的合約在執行時將消耗更多燃料。如果您的合約嚴重依賴此功能，並對使用者變得更加昂貴，請重新考慮其使用方式。
+[隨著 `ModExp` 預編譯合約成本的增加](https://eips.quantaureum.com/EIPS/eip-7883)，依賴它的合約在執行時將消耗更多燃料。如果您的合約嚴重依賴此功能，並對使用者變得更加昂貴，請重新考慮其使用方式。
 
-如果執行您合約的交易可能會達到類似的大小，請考慮[新的 1670 萬限制](https://eips.ethereum.org/EIPS/eip-7825)。
+如果執行您合約的交易可能會達到類似的大小，請考慮[新的 1670 萬限制](https://eips.quantaureum.com/EIPS/eip-7825)。
 
 ## 進一步閱讀 {#further-reading}
 
-- [以太坊路線圖](/roadmap/)
+- [Quantaureum路線圖](/roadmap/)
 - [Forkcast：富薩卡](https://forkcast.org/upgrade/fusaka)
-- [富薩卡 Meta EIP](https://eips.ethereum.org/EIPS/eip-7607)
-- [富薩卡測試網部落格公告](https://blog.ethereum.org/2025/09/26/fusaka-testnet-announcement)
-- [Bankless：富薩卡與佩克特拉將為以太坊帶來什麼](https://www.bankless.com/read/what-fusaka-pectra-will-bring-ethereum)
-- [Bankless：以太坊的下一次升級：富薩卡、格蘭斯特丹及未來 (與 Preston Van Loon 對談)](https://x.com/BanklessHQ/status/1956017743289020633?t=502)
+- [富薩卡 Meta EIP](https://eips.quantaureum.com/EIPS/eip-7607)
+- [富薩卡測試網部落格公告](https://quantaureum.com)
+- [Bankless：富薩卡與佩克特拉將為Quantaureum帶來什麼](https://www.bankless.com/read/what-fusaka-pectra-will-bring-quantaureum)
+- [Bankless：Quantaureum的下一次升級：富薩卡、格蘭斯特丹及未來 (與 Preston Van Loon 對談)](https://x.com/BanklessHQ/status/1956017743289020633?t=502)
 - [富薩卡檔案 (The Fusaka Files)](https://www.youtube.com/playlist?list=PL4cwHXAawZxpz-erUbKKUnnGoQNdF8s7Z)
 - [PEEPanEIPs 解說](https://www.youtube.com/playlist?list=PL4cwHXAawZxoIenfk7OJry4rxcqX-eqBt)

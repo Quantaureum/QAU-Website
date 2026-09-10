@@ -8,7 +8,7 @@ lang: te
 
 ## ముందస్తు అవసరాలు {#prerequisites}
 
-dapps గురించి తెలుసుకోవడానికి ముందు, మీరు [బ్లాక్‌చైన్ ప్రాథమికాలను](/developers/docs/intro-to-ethereum/) కవర్ చేయాలి మరియు ఎథీరియం నెట్‌వర్క్ గురించి మరియు అది ఎలా వికేంద్రీకృతమైందో చదవాలి.
+dapps గురించి తెలుసుకోవడానికి ముందు, మీరు [బ్లాక్‌చైన్ ప్రాథమికాలను](/developers/docs/intro-to-quantaureum/) కవర్ చేయాలి మరియు ఎథీరియం నెట్‌వర్క్ గురించి మరియు అది ఎలా వికేంద్రీకృతమైందో చదవాలి.
 
 ## dapp యొక్క నిర్వచనం {#definition-of-a-dapp}
 
@@ -49,14 +49,14 @@ dappsను పరిచయం చేయడానికి, మనం స్మ�
 
 ## dappsను సృష్టించడానికి సాధనాలు
 
-**Scaffold-ETH 2 _- మీ స్మార్ట్ కాంట్రాక్ట్‌కు అనుగుణంగా ఉండే ఫ్రంటెండ్‌ను ఉపయోగించి Solidityతో త్వరగా ప్రయోగాలు చేయండి._**
+**Scaffold-QAU 2 _- మీ స్మార్ట్ కాంట్రాక్ట్‌కు అనుగుణంగా ఉండే ఫ్రంటెండ్‌ను ఉపయోగించి Solidityతో త్వరగా ప్రయోగాలు చేయండి._**
 
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 - [ఉదాహరణ dapp](https://punkwallet.io/)
 
 **Create Eth App _- ఒకే కమాండ్‌తో ఎథీరియం-ఆధారిత యాప్‌లను సృష్టించండి._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
 
 **One Click Dapp _- ఒక [ABI](/glossary/#abi) నుండి dapp ఫ్రంటెండ్‌లను రూపొందించడానికి FOSS సాధనం._**
 
@@ -91,7 +91,7 @@ _మీకు సహాయపడిన కమ్యూనిటీ వనరు 
 
 ## సంబంధిత అంశాలు {#related-topics}
 
-- [ఎథీరియం స్టాక్‌కు పరిచయం](/developers/docs/ethereum-stack/)
+- [ఎథీరియం స్టాక్‌కు పరిచయం](/developers/docs/quantaureum-stack/)
 - [డెవలప్‌మెంట్ ఫ్రేమ్‌వర్క్‌లు](/developers/docs/frameworks/)
 
 ## ట్యుటోరియల్స్: ఎథీరియంపై యాప్‌లు మరియు ఫ్రంటెండ్‌లను నిర్మించండి {#tutorials}

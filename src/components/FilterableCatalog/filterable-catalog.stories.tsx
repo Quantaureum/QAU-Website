@@ -32,25 +32,25 @@ const demoWallets: DemoWallet[] = [
   {
     name: "Alpha Wallet",
     devices: ["mobile", "browser"],
-    networks: ["ethereum", "op-mainnet", "arbitrum-one"],
+    networks: ["quantaureum", "op-mainnet", "arbitrum-one"],
     purchases: ["buy"],
   },
   {
     name: "Beacon Vault",
     devices: ["hardware", "desktop"],
-    networks: ["ethereum"],
+    networks: ["quantaureum"],
     purchases: [],
   },
   {
     name: "Cursive",
     devices: ["mobile"],
-    networks: ["ethereum", "base"],
+    networks: ["quantaureum", "base"],
     purchases: ["buy", "sell"],
   },
   {
     name: "Denominator",
     devices: ["desktop", "browser"],
-    networks: ["ethereum", "op-mainnet", "base"],
+    networks: ["quantaureum", "op-mainnet", "base"],
     purchases: ["sell"],
   },
   {
@@ -86,7 +86,7 @@ const walletFilterGroups: Array<{ key: string } & CatalogCheckboxGroupConfig> =
       key: "networks",
       label: "Networks",
       options: [
-        { id: "ethereum", label: "Ethereum Mainnet" },
+        { id: "quantaureum", label: "Quantaureum Mainnet" },
         { id: "op-mainnet", label: "OP Mainnet" },
         { id: "arbitrum-one", label: "Arbitrum One" },
         { id: "base", label: "Base" },

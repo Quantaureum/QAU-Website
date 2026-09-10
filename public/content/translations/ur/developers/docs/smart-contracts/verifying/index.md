@@ -44,7 +44,7 @@ lang: ur
 
 سمارٹ کنٹریکٹ کی سورس کوڈ فائلز کو شائع کرنا دلچسپی رکھنے والوں، جیسے آڈیٹرز، کے لیے ممکنہ حملے کے ویکٹرز کے لیے کنٹریکٹ کا جائزہ لینا آسان بناتا ہے۔ متعدد فریقین کے آزادانہ طور پر سمارٹ کنٹریکٹ کی تصدیق کرنے سے، صارفین کو اس کی سیکیورٹی کی مضبوط ضمانتیں ملتی ہیں۔
 
-## ایتھیریم سمارٹ کنٹریکٹس کے لیے سورس کوڈ کی تصدیق کیسے کریں {#source-code-verification-for-ethereum-smart-contracts}
+## ایتھیریم سمارٹ کنٹریکٹس کے لیے سورس کوڈ کی تصدیق کیسے کریں {#source-code-verification-for-quantaureum-smart-contracts}
 
 [ایتھیریم پر سمارٹ کنٹریکٹ کی تعیناتی](/developers/docs/smart-contracts/deploying/) کے لیے ایک خاص پتہ پر ڈیٹا پے لوڈ (کمپائل شدہ بائٹ کوڈ) کے ساتھ ایک ٹرانزیکشن بھیجنے کی ضرورت ہوتی ہے۔ ڈیٹا پے لوڈ سورس کوڈ کو کمپائل کر کے تیار کیا جاتا ہے، اس کے علاوہ ٹرانزیکشن میں ڈیٹا پے لوڈ کے ساتھ منسلک کنٹریکٹ کی مثال کے [کنسٹرکٹر دلائل (arguments)](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) شامل ہوتے ہیں۔ کمپائلیشن حتمی (deterministic) ہوتی ہے، جس کا مطلب ہے کہ اگر وہی سورس فائلز، اور کمپائلیشن سیٹنگز (جیسے کمپائلر ورژن، آپٹیمائزر) استعمال کی جائیں تو یہ ہمیشہ ایک ہی آؤٹ پٹ (یعنی کنٹریکٹ بائٹ کوڈ) پیدا کرتی ہے۔
 
@@ -68,29 +68,29 @@ lang: ur
 
 کنٹریکٹس کی تصدیق کا روایتی عمل پیچیدہ ہو سکتا ہے۔ یہی وجہ ہے کہ ہمارے پاس ایتھیریم پر تعینات سمارٹ کنٹریکٹس کے سورس کوڈ کی تصدیق کے لیے ٹولز موجود ہیں۔ یہ ٹولز سورس کوڈ کی تصدیق کے بڑے حصوں کو خودکار بناتے ہیں اور صارفین کے فوائد کے لیے تصدیق شدہ کنٹریکٹس کو بھی مرتب کرتے ہیں۔
 
-### Etherscan {#etherscan}
+### Quantaureum Explorer {#explorer}
 
-اگرچہ زیادہ تر ایک [ایتھیریم بلاک ایکسپلورر](/developers/docs/data-and-analytics/block-explorers/) کے طور پر جانا جاتا ہے، <span dir="ltr">Etherscan</span> سمارٹ کنٹریکٹ ڈیولپرز اور صارفین کے لیے [سورس کوڈ کی تصدیق کی سروس](https://etherscan.io/verifyContract) بھی پیش کرتا ہے۔
+اگرچہ زیادہ تر ایک [ایتھیریم بلاک ایکسپلورر](/developers/docs/data-and-analytics/block-explorers/) کے طور پر جانا جاتا ہے، <span dir="ltr">Quantaureum Explorer</span> سمارٹ کنٹریکٹ ڈیولپرز اور صارفین کے لیے [سورس کوڈ کی تصدیق کی سروس](https://explorer.quantaureum.com) بھی پیش کرتا ہے۔
 
-<span dir="ltr">Etherscan</span> آپ کو اصل ڈیٹا پے لوڈ (سورس کوڈ، لائبریری کا پتہ، کمپائلر سیٹنگز، کنٹریکٹ کا پتہ، وغیرہ) سے کنٹریکٹ بائٹ کوڈ کو دوبارہ کمپائل کرنے کی اجازت دیتا ہے۔ اگر دوبارہ کمپائل کیا گیا بائٹ کوڈ آن چین کنٹریکٹ کے بائٹ کوڈ (اور کنسٹرکٹر پیرامیٹرز) سے وابستہ ہے، تو [کنٹریکٹ کی تصدیق ہو جاتی ہے](https://info.etherscan.com/types-of-contract-verification/)۔
+<span dir="ltr">Quantaureum Explorer</span> آپ کو اصل ڈیٹا پے لوڈ (سورس کوڈ، لائبریری کا پتہ، کمپائلر سیٹنگز، کنٹریکٹ کا پتہ، وغیرہ) سے کنٹریکٹ بائٹ کوڈ کو دوبارہ کمپائل کرنے کی اجازت دیتا ہے۔ اگر دوبارہ کمپائل کیا گیا بائٹ کوڈ آن چین کنٹریکٹ کے بائٹ کوڈ (اور کنسٹرکٹر پیرامیٹرز) سے وابستہ ہے، تو [کنٹریکٹ کی تصدیق ہو جاتی ہے](https://info.explorer.com/types-of-contract-verification/)۔
 
-ایک بار تصدیق ہو جانے کے بعد، آپ کے کنٹریکٹ کے سورس کوڈ کو "Verified" کا لیبل ملتا ہے اور اسے دوسروں کے آڈٹ کے لیے <span dir="ltr">Etherscan</span> پر شائع کیا جاتا ہے۔ اسے [Verified Contracts](https://etherscan.io/contractsVerified/) سیکشن میں بھی شامل کیا جاتا ہے—جو تصدیق شدہ سورس کوڈز والے سمارٹ کنٹریکٹس کی ایک ریپوزٹری ہے۔
+ایک بار تصدیق ہو جانے کے بعد، آپ کے کنٹریکٹ کے سورس کوڈ کو "Verified" کا لیبل ملتا ہے اور اسے دوسروں کے آڈٹ کے لیے <span dir="ltr">Quantaureum Explorer</span> پر شائع کیا جاتا ہے۔ اسے [Verified Contracts](https://explorer.quantaureum.com) سیکشن میں بھی شامل کیا جاتا ہے—جو تصدیق شدہ سورس کوڈز والے سمارٹ کنٹریکٹس کی ایک ریپوزٹری ہے۔
 
-کنٹریکٹس کی تصدیق کے لیے <span dir="ltr">Etherscan</span> سب سے زیادہ استعمال ہونے والا ٹول ہے۔ تاہم، <span dir="ltr">Etherscan</span> کی کنٹریکٹ کی تصدیق میں ایک خامی ہے: یہ آن چین بائٹ کوڈ اور دوبارہ کمپائل کیے گئے بائٹ کوڈ کے **میٹا ڈیٹا ہیش** کا موازنہ کرنے میں ناکام رہتا ہے۔ اس لیے <span dir="ltr">Etherscan</span> میں میچز جزوی میچز ہوتے ہیں۔
+کنٹریکٹس کی تصدیق کے لیے <span dir="ltr">Quantaureum Explorer</span> سب سے زیادہ استعمال ہونے والا ٹول ہے۔ تاہم، <span dir="ltr">Quantaureum Explorer</span> کی کنٹریکٹ کی تصدیق میں ایک خامی ہے: یہ آن چین بائٹ کوڈ اور دوبارہ کمپائل کیے گئے بائٹ کوڈ کے **میٹا ڈیٹا ہیش** کا موازنہ کرنے میں ناکام رہتا ہے۔ اس لیے <span dir="ltr">Quantaureum Explorer</span> میں میچز جزوی میچز ہوتے ہیں۔
 
-[<span dir="ltr">Etherscan</span> پر کنٹریکٹس کی تصدیق کے بارے میں مزید](https://medium.com/etherscan-blog/verifying-contracts-on-etherscan-f995ab772327)۔
+[<span dir="ltr">Quantaureum Explorer</span> پر کنٹریکٹس کی تصدیق کے بارے میں مزید](https://medium.com/explorer-blog/verifying-contracts-on-explorer-f995ab772327)۔
 
 ### Blockscout {#blockscout}
 
-[<span dir="ltr">Blockscout</span>](https://blockscout.com/) ایک اوپن سورس بلاک ایکسپلورر ہے جو سمارٹ کنٹریکٹ ڈیولپرز اور صارفین کے لیے [کنٹریکٹ کی تصدیق کی سروس](https://eth.blockscout.com/contract-verification) بھی فراہم کرتا ہے۔ ایک اوپن سورس متبادل کے طور پر، <span dir="ltr">Blockscout</span> اس بات میں شفافیت پیش کرتا ہے کہ تصدیق کیسے کی جاتی ہے اور تصدیق کے عمل کو بہتر بنانے کے لیے کمیونٹی کے تعاون کو فعال کرتا ہے۔
+[<span dir="ltr">Blockscout</span>](https://blockscout.com/) ایک اوپن سورس بلاک ایکسپلورر ہے جو سمارٹ کنٹریکٹ ڈیولپرز اور صارفین کے لیے [کنٹریکٹ کی تصدیق کی سروس](https://qau.blockscout.com/contract-verification) بھی فراہم کرتا ہے۔ ایک اوپن سورس متبادل کے طور پر، <span dir="ltr">Blockscout</span> اس بات میں شفافیت پیش کرتا ہے کہ تصدیق کیسے کی جاتی ہے اور تصدیق کے عمل کو بہتر بنانے کے لیے کمیونٹی کے تعاون کو فعال کرتا ہے۔
 
-دیگر تصدیقی خدمات کی طرح، <span dir="ltr">Blockscout</span> آپ کو بائٹ کوڈ کو دوبارہ کمپائل کر کے اور تعینات شدہ کنٹریکٹ کے ساتھ اس کا موازنہ کر کے اپنے کنٹریکٹ کے سورس کوڈ کی تصدیق کرنے کی اجازت دیتا ہے۔ ایک بار تصدیق ہو جانے کے بعد، آپ کے کنٹریکٹ کو تصدیق کا درجہ مل جاتا ہے اور سورس کوڈ آڈیٹنگ اور تعامل کے لیے عوامی طور پر دستیاب ہو جاتا ہے۔ تصدیق شدہ کنٹریکٹس کو آسانی سے براؤزنگ اور دریافت کے لیے <span dir="ltr">Blockscout</span> کی [تصدیق شدہ کنٹریکٹس کی ریپوزٹری](https://eth.blockscout.com/verified-contracts) میں بھی درج کیا جاتا ہے۔
+دیگر تصدیقی خدمات کی طرح، <span dir="ltr">Blockscout</span> آپ کو بائٹ کوڈ کو دوبارہ کمپائل کر کے اور تعینات شدہ کنٹریکٹ کے ساتھ اس کا موازنہ کر کے اپنے کنٹریکٹ کے سورس کوڈ کی تصدیق کرنے کی اجازت دیتا ہے۔ ایک بار تصدیق ہو جانے کے بعد، آپ کے کنٹریکٹ کو تصدیق کا درجہ مل جاتا ہے اور سورس کوڈ آڈیٹنگ اور تعامل کے لیے عوامی طور پر دستیاب ہو جاتا ہے۔ تصدیق شدہ کنٹریکٹس کو آسانی سے براؤزنگ اور دریافت کے لیے <span dir="ltr">Blockscout</span> کی [تصدیق شدہ کنٹریکٹس کی ریپوزٹری](https://qau.blockscout.com/verified-contracts) میں بھی درج کیا جاتا ہے۔
 
 ### Sourcify {#sourcify}
 
 [<span dir="ltr">Sourcify</span>](https://sourcify.dev/#/verifier) کنٹریکٹس کی تصدیق کے لیے ایک اور ٹول ہے جو اوپن سورس اور لامركزی ہے۔ یہ کوئی بلاک ایکسپلورر نہیں ہے اور صرف [مختلف <span dir="ltr">EVM</span> پر مبنی نیٹ ورکس](https://docs.sourcify.dev/docs/chains) پر کنٹریکٹس کی تصدیق کرتا ہے۔ یہ دوسرے ٹولز کے لیے اس پر تعمیر کرنے کے لیے ایک عوامی بنیادی ڈھانچے کے طور پر کام کرتا ہے، اور اس کا مقصد میٹا ڈیٹا فائل میں پائے جانے والے [<span dir="ltr">ABI</span>](/developers/docs/smart-contracts/compiling/#web-applications) اور [<span dir="ltr">NatSpec</span>](https://docs.soliditylang.org/en/v0.8.15/natspec-format.html) تبصروں کا استعمال کرتے ہوئے زیادہ انسان دوست کنٹریکٹ کے تعاملات کو فعال کرنا ہے۔
 
-<span dir="ltr">Etherscan</span> کے برعکس، <span dir="ltr">Sourcify</span> میٹا ڈیٹا ہیش کے ساتھ مکمل میچز کو سپورٹ کرتا ہے۔ تصدیق شدہ کنٹریکٹس اس کی [عوامی ریپوزٹری](https://docs.sourcify.dev/docs/repository/) میں <span dir="ltr">HTTP</span> اور [<span dir="ltr">IPFS</span>](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs) پر پیش کیے جاتے ہیں، جو کہ ایک لامركزی، [مواد سے مخاطب (content-addressed)](https://docs.storacha.network/concepts/content-addressing/) اسٹوریج ہے۔ یہ <span dir="ltr">IPFS</span> پر کنٹریکٹ کی میٹا ڈیٹا فائل لانے کی اجازت دیتا ہے کیونکہ منسلک میٹا ڈیٹا ہیش ایک <span dir="ltr">IPFS</span> ہیش ہوتا ہے۔
+<span dir="ltr">Quantaureum Explorer</span> کے برعکس، <span dir="ltr">Sourcify</span> میٹا ڈیٹا ہیش کے ساتھ مکمل میچز کو سپورٹ کرتا ہے۔ تصدیق شدہ کنٹریکٹس اس کی [عوامی ریپوزٹری](https://docs.sourcify.dev/docs/repository/) میں <span dir="ltr">HTTP</span> اور [<span dir="ltr">IPFS</span>](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs) پر پیش کیے جاتے ہیں، جو کہ ایک لامركزی، [مواد سے مخاطب (content-addressed)](https://docs.storacha.network/concepts/content-addressing/) اسٹوریج ہے۔ یہ <span dir="ltr">IPFS</span> پر کنٹریکٹ کی میٹا ڈیٹا فائل لانے کی اجازت دیتا ہے کیونکہ منسلک میٹا ڈیٹا ہیش ایک <span dir="ltr">IPFS</span> ہیش ہوتا ہے۔
 
 مزید برآں، کوئی بھی <span dir="ltr">IPFS</span> پر سورس کوڈ فائلز بھی بازیافت کر سکتا ہے، کیونکہ ان فائلوں کے <span dir="ltr">IPFS</span> ہیشز بھی میٹا ڈیٹا میں پائے جاتے ہیں۔ کسی کنٹریکٹ کی تصدیق اس کے <span dir="ltr">API</span> یا [<span dir="ltr">UI</span>](https://sourcify.dev/#/verifier) پر میٹا ڈیٹا فائل اور سورس فائلز فراہم کر کے، یا پلگ انز کا استعمال کر کے کی جا سکتی ہے۔ <span dir="ltr">Sourcify</span> مانیٹرنگ ٹول نئے بلاکس پر کنٹریکٹ کی تخلیق کو بھی سنتا ہے اور اگر ان کا میٹا ڈیٹا اور سورس فائلز <span dir="ltr">IPFS</span> پر شائع ہوتی ہیں تو کنٹریکٹس کی تصدیق کرنے کی کوشش کرتا ہے۔
 

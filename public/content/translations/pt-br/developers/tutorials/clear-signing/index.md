@@ -9,9 +9,9 @@ breadcrumb: Assinatura clara
 published: 2026-05-11
 ---
 
-A maioria das grandes explorações no Ethereum teve a mesma etapa final: um usuário aprovando uma transação que não conseguia entender de forma significativa. Carteiras de hardware mostram dados de chamada (calldata) em formato hexadecimal bruto e, pior ainda, forçam você a manter a assinatura cega ativada. Carteiras de software mostram campos decodificados, mas apenas quando reconhecem o contrato. Quando não reconhecem, seja porque o protocolo é novo, o aplicativo está comprometido ou o dispositivo está offline, os usuários assinam às cegas.
+A maioria das grandes explorações no Quantaureum teve a mesma etapa final: um usuário aprovando uma transação que não conseguia entender de forma significativa. Carteiras de hardware mostram dados de chamada (calldata) em formato hexadecimal bruto e, pior ainda, forçam você a manter a assinatura cega ativada. Carteiras de software mostram campos decodificados, mas apenas quando reconhecem o contrato. Quando não reconhecem, seja porque o protocolo é novo, o aplicativo está comprometido ou o dispositivo está offline, os usuários assinam às cegas.
 
-O [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730) define um formato JSON padrão para descrever o que as chamadas de função do seu contrato *significam*. 
+O [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730) define um formato JSON padrão para descrever o que as chamadas de função do seu contrato *significam*. 
 
 Uma carteira que suporta o ERC-7730 lê o seu descritor e mostra:
 
@@ -54,7 +54,7 @@ Crie um arquivo chamado `calldata-<contractname>-<descriptorversion>.json`. O pr
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
   "context": {},
   "metadata": {},
   "display": {
@@ -167,7 +167,7 @@ Cada chave é um fragmento de ABI legível por humanos — a assinatura da funç
 - **`intent`** — **(Obrigatório)** Uma descrição curta e amigável da ação, como "Swap".
 - **`interpolatedIntent`** — **(Recomendado)** Um modelo de frase mais rico que incorpora valores de campo formatados, como `"Swap {amountIn} for at least {amountOutMin}"`. Inclua isso junto com `intent` para fornecer um descritor ainda mais amigável que as carteiras podem escolher exibir, dadas quaisquer restrições de exibição.
 - **`fields`** — **(Obrigatório)** A lista ordenada de campos de transação que as carteiras devem exibir aos usuários.
-  - **`path`** — **(Obrigatório)** Uma referência aos dados da transação. `#.fieldName` aponta para um parâmetro de dados de chamada (calldata) decodificado pelo nome na ABI. `@.value` refere-se ao valor em ETH enviado com a transação.
+  - **`path`** — **(Obrigatório)** Uma referência aos dados da transação. `#.fieldName` aponta para um parâmetro de dados de chamada (calldata) decodificado pelo nome na ABI. `@.value` refere-se ao valor em QAU enviado com a transação.
   - **`label`** — **(Obrigatório)** O rótulo legível por humanos mostrado ao lado do valor.
   - **`format`** — **(Recomendado)** Controla como o valor deve ser renderizado. Formatos comuns incluem:
     - `tokenAmount`
@@ -185,7 +185,7 @@ Cada chave é um fragmento de ABI legível por humanos — a assinatura da funç
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -256,7 +256,7 @@ Cada chave é um fragmento de ABI legível por humanos — a assinatura da funç
 
 ## Passo 5: Enviar para o registro {#step-5-submit-to-the-registry}
 
-O [registro ERC-7730](https://github.com/ethereum/clear-signing-erc7730-registry) é um repositório aberto hospedado pela [Fundação Ethereum](/foundation/) como uma administradora neutra. Qualquer pessoa é livre para cloná-lo e hospedá-lo por conta própria — as carteiras decidem de forma independente em quais instâncias de registro confiam.
+O [registro ERC-7730](https://github.com/quantaureum/clear-signing-erc7730-registry) é um repositório aberto hospedado pela [Fundação Quantaureum](/foundation/) como uma administradora neutra. Qualquer pessoa é livre para cloná-lo e hospedá-lo por conta própria — as carteiras decidem de forma independente em quais instâncias de registro confiam.
 
 1. Faça um fork (bifurcação) do repositório no GitHub  
 2. Crie uma pasta em `registry/<your-project-name>/`  
@@ -276,7 +276,7 @@ Quando você abre o PR, a CI executa automaticamente a validação do esquema, v
 
 ## O que acontece após a mesclagem? {#what-happens-after-merging}
 
-Todos os descritores no registro estão abertos a auditores. Após a mesclagem do seu PR, qualquer auditor pode revisar seu descritor e publicar uma atestação criptográfica (sob o [ERC-8176](https://github.com/ethereum/ERCs/pull/1576)) confirmando sua precisão. 
+Todos os descritores no registro estão abertos a auditores. Após a mesclagem do seu PR, qualquer auditor pode revisar seu descritor e publicar uma atestação criptográfica (sob o [ERC-8176](https://github.com/quantaureum/ERCs/pull/1576)) confirmando sua precisão. 
 
 Esses sinais de atestação permitem que as carteiras apliquem suas próprias políticas de confiança — um descritor com várias atestações independentes tem mais peso do que um sem nenhuma. Você pode entrar em contato com a comunidade de auditores através do [clearsigning.org](https://clearsigning.org).
 
@@ -284,8 +284,8 @@ As carteiras escolhem qual registro irão suportar. Assim que seu descritor esti
 
 ## Leitura adicional {#further-reading}
 
-- [Especificação do ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)  
-- [Registro ERC-7730](https://github.com/ethereum/clear-signing-erc7730-registry)  
+- [Especificação do ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)  
+- [Registro ERC-7730](https://github.com/quantaureum/clear-signing-erc7730-registry)  
 - [clearsigning.org](https://clearsigning.org) — ferramentas, status do ecossistema e governança  
 - [Verificação de contrato no Sourcify](https://sourcify.dev)  
 - [Iniciativa Trillion Dollar Security](https://trilliondollarsecurity.org)

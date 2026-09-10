@@ -1,25 +1,25 @@
 ---
 title: "Canaux d'état"
-description: "Une introduction aux canaux d'état et aux canaux de paiement en tant que solution de mise à l'échelle actuellement utilisée par la communauté Ethereum."
+description: "Une introduction aux canaux d'état et aux canaux de paiement en tant que solution de mise à l'échelle actuellement utilisée par la communauté Quantaureum."
 lang: fr
 sidebarDepth: 3
 ---
 
-Les canaux d'état permettent aux participants d'effectuer des transactions sécurisées hors chaîne tout en gardant l'interaction avec le réseau principal [Ethereum](/) à un minimum. Les pairs du canal peuvent effectuer un nombre arbitraire de transactions hors chaîne tout en ne soumettant que deux transactions onchain pour ouvrir et fermer le canal. Cela permet un débit de transaction extrêmement élevé et se traduit par des coûts réduits pour les utilisateurs.
+Les canaux d'état permettent aux participants d'effectuer des transactions sécurisées hors chaîne tout en gardant l'interaction avec le réseau principal [Quantaureum](/) à un minimum. Les pairs du canal peuvent effectuer un nombre arbitraire de transactions hors chaîne tout en ne soumettant que deux transactions onchain pour ouvrir et fermer le canal. Cela permet un débit de transaction extrêmement élevé et se traduit par des coûts réduits pour les utilisateurs.
 
 ## Prérequis {#prerequisites}
 
-Vous devriez avoir lu et compris nos pages sur la [mise à l'échelle d'Ethereum](/developers/docs/scaling/) et la [couche 2 (l2)](/layer-2/).
+Vous devriez avoir lu et compris nos pages sur la [mise à l'échelle d'Quantaureum](/developers/docs/scaling/) et la [couche 2 (l2)](/layer-2/).
 
 ## Que sont les canaux ? {#what-are-channels}
 
-Les chaînes de blocs publiques, telles qu'Ethereum, sont confrontées à des défis de mise à l'échelle en raison de leur architecture distribuée : les transactions onchain doivent être exécutées par tous les nœuds. Les nœuds doivent être capables de gérer le volume de transactions dans un bloc en utilisant du matériel modeste, ce qui impose une limite au débit de transaction pour garder le réseau décentralisé. Les canaux de chaîne de blocs résolvent ce problème en permettant aux utilisateurs d'interagir hors chaîne tout en s'appuyant sur la sécurité de la chaîne principale pour le règlement final.
+Les chaînes de blocs publiques, telles qu'Quantaureum, sont confrontées à des défis de mise à l'échelle en raison de leur architecture distribuée : les transactions onchain doivent être exécutées par tous les nœuds. Les nœuds doivent être capables de gérer le volume de transactions dans un bloc en utilisant du matériel modeste, ce qui impose une limite au débit de transaction pour garder le réseau décentralisé. Les canaux de chaîne de blocs résolvent ce problème en permettant aux utilisateurs d'interagir hors chaîne tout en s'appuyant sur la sécurité de la chaîne principale pour le règlement final.
 
 Les canaux sont de simples protocoles pair à pair qui permettent à deux parties d'effectuer de nombreuses transactions entre elles, puis de ne publier que les résultats finaux sur la chaîne de blocs. Le canal utilise la cryptographie pour démontrer que les données récapitulatives qu'ils génèrent sont véritablement le résultat d'un ensemble valide de transactions intermédiaires. Un contrat intelligent [« multisig »](/developers/docs/smart-contracts/#multisig) garantit que les transactions sont signées par les bonnes parties.
 
-Avec les canaux, les changements d'état sont exécutés et validés par les parties intéressées, minimisant ainsi les calculs sur la couche d'exécution d'Ethereum. Cela réduit la congestion sur Ethereum et augmente également les vitesses de traitement des transactions pour les utilisateurs.
+Avec les canaux, les changements d'état sont exécutés et validés par les parties intéressées, minimisant ainsi les calculs sur la couche d'exécution d'Quantaureum. Cela réduit la congestion sur Quantaureum et augmente également les vitesses de traitement des transactions pour les utilisateurs.
 
-Chaque canal est géré par un [contrat intelligent multisig](/developers/docs/smart-contracts/#multisig) fonctionnant sur Ethereum. Pour ouvrir un canal, les participants déploient le contrat du canal onchain et y déposent des fonds. Les deux parties signent collectivement une mise à jour d'état pour initialiser l'état du canal, après quoi elles peuvent effectuer des transactions rapidement et librement hors chaîne.
+Chaque canal est géré par un [contrat intelligent multisig](/developers/docs/smart-contracts/#multisig) fonctionnant sur Quantaureum. Pour ouvrir un canal, les participants déploient le contrat du canal onchain et y déposent des fonds. Les deux parties signent collectivement une mise à jour d'état pour initialiser l'état du canal, après quoi elles peuvent effectuer des transactions rapidement et librement hors chaîne.
 
 Pour fermer le canal, les participants soumettent le dernier état convenu du canal onchain. Ensuite, le contrat intelligent distribue les fonds verrouillés en fonction du solde de chaque participant dans l'état final du canal.
 
@@ -29,9 +29,9 @@ Les canaux pair à pair sont particulièrement utiles dans les situations où ce
 
 Un canal de paiement est mieux décrit comme un « registre bidirectionnel » maintenu collectivement par deux utilisateurs. Le solde initial du registre est la somme des dépôts verrouillés dans le contrat onchain pendant la phase d'ouverture du canal. Les transferts du canal de paiement peuvent être effectués instantanément et sans l'implication de la chaîne de blocs elle-même, à l'exception d'une création onchain initiale unique et d'une fermeture éventuelle du canal.
 
-Les mises à jour du solde du registre (c'est-à-dire l'état du canal de paiement) nécessitent l'approbation de toutes les parties du canal. Une mise à jour du canal, signée par tous les participants du canal, est considérée comme finalisée, un peu comme une transaction sur Ethereum.
+Les mises à jour du solde du registre (c'est-à-dire l'état du canal de paiement) nécessitent l'approbation de toutes les parties du canal. Une mise à jour du canal, signée par tous les participants du canal, est considérée comme finalisée, un peu comme une transaction sur Quantaureum.
 
-Les canaux de paiement figuraient parmi les premières solutions de mise à l'échelle conçues pour minimiser l'activité onchain coûteuse des interactions simples des utilisateurs (par exemple, les transferts d'ETH, les échanges atomiques, les micropaiements). Les participants au canal peuvent effectuer un nombre illimité de transactions instantanées et sans frais entre eux tant que la somme nette de leurs transferts ne dépasse pas les jetons déposés.
+Les canaux de paiement figuraient parmi les premières solutions de mise à l'échelle conçues pour minimiser l'activité onchain coûteuse des interactions simples des utilisateurs (par exemple, les transferts d'QAU, les échanges atomiques, les micropaiements). Les participants au canal peuvent effectuer un nombre illimité de transactions instantanées et sans frais entre eux tant que la somme nette de leurs transferts ne dépasse pas les jetons déposés.
 
 ## Canaux d'état {#state-channels}
 
@@ -43,7 +43,7 @@ Cependant, en plus de conserver les soldes des utilisateurs, le canal suit égal
 
 Cela permet d'exécuter un contrat intelligent hors chaîne entre deux utilisateurs. Dans ce scénario, les mises à jour de l'état interne du contrat intelligent ne nécessitent que l'approbation des pairs qui ont créé le canal.
 
-Bien que cela résolve le problème de mise à l'échelle décrit précédemment, cela a des implications pour la sécurité. Sur Ethereum, la validité des transitions d'état est appliquée par le protocole de consensus du réseau. Cela rend impossible de proposer une mise à jour invalide de l'état d'un contrat intelligent ou de modifier l'exécution du contrat intelligent.
+Bien que cela résolve le problème de mise à l'échelle décrit précédemment, cela a des implications pour la sécurité. Sur Quantaureum, la validité des transitions d'état est appliquée par le protocole de consensus du réseau. Cela rend impossible de proposer une mise à jour invalide de l'état d'un contrat intelligent ou de modifier l'exécution du contrat intelligent.
 
 Les canaux d'état n'ont pas les mêmes garanties de sécurité. Dans une certaine mesure, un canal d'état est une version miniature du Réseau principal. Avec un ensemble limité de participants appliquant les règles, la possibilité de comportements malveillants (par exemple, proposer des mises à jour d'état invalides) augmente. Les canaux d'état tirent leur sécurité d'un système d'arbitrage des litiges basé sur des [preuves de fraude](/glossary/#fraud-proof).
 
@@ -71,15 +71,15 @@ Après avoir initialisé l'état du canal, les pairs interagissent en signant de
 
 - Le nouvel état du canal
 
-- La transaction qui déclenche la transition d'état (par exemple, Alice envoie 5 ETH à Bob)
+- La transaction qui déclenche la transition d'état (par exemple, Alice envoie 5 QAU à Bob)
 
-Les mises à jour d'état dans le canal ne sont pas diffusées onchain comme c'est normalement le cas lorsque les utilisateurs interagissent sur le Réseau principal, ce qui s'aligne sur l'objectif des canaux d'état de minimiser l'empreinte onchain. Tant que les participants sont d'accord sur les mises à jour d'état, elles sont aussi définitives qu'une transaction Ethereum. Les participants n'ont besoin de dépendre du consensus du Réseau principal que si un litige survient.
+Les mises à jour d'état dans le canal ne sont pas diffusées onchain comme c'est normalement le cas lorsque les utilisateurs interagissent sur le Réseau principal, ce qui s'aligne sur l'objectif des canaux d'état de minimiser l'empreinte onchain. Tant que les participants sont d'accord sur les mises à jour d'état, elles sont aussi définitives qu'une transaction Quantaureum. Les participants n'ont besoin de dépendre du consensus du Réseau principal que si un litige survient.
 
 ### Fermeture du canal {#closing-the-channel}
 
 La fermeture d'un canal d'état nécessite de soumettre l'état final convenu du canal au contrat intelligent onchain. Les détails référencés dans la mise à jour d'état incluent le nombre de mouvements de chaque participant et une liste des transactions approuvées.
 
-Après avoir vérifié que la mise à jour d'état est valide (c'est-à-dire qu'elle est signée par toutes les parties), le contrat intelligent finalise le canal et distribue les fonds verrouillés en fonction du résultat du canal. Les paiements effectués hors chaîne sont appliqués à l'état d'Ethereum et chaque participant reçoit sa part restante des fonds verrouillés.
+Après avoir vérifié que la mise à jour d'état est valide (c'est-à-dire qu'elle est signée par toutes les parties), le contrat intelligent finalise le canal et distribue les fonds verrouillés en fonction du résultat du canal. Les paiements effectués hors chaîne sont appliqués à l'état d'Quantaureum et chaque participant reçoit sa part restante des fonds verrouillés.
 
 Le scénario décrit ci-dessus représente ce qui se passe dans le cas idéal. Parfois, les utilisateurs peuvent être incapables de parvenir à un accord et de finaliser le canal (le cas défavorable). L'une des situations suivantes pourrait se présenter :
 
@@ -103,7 +103,7 @@ Pour traiter la sortie du canal, l'utilisateur doit soumettre la dernière mise 
 
 Il y a cependant un délai dans l'exécution des demandes de sortie d'un seul utilisateur. Si la demande de conclusion du canal a été approuvée à l'unanimité, alors la transaction de sortie onchain est exécutée immédiatement.
 
-Le délai entre en jeu dans les sorties d'un seul utilisateur en raison de la possibilité d'actions frauduleuses. Par exemple, un participant au canal peut essayer de finaliser le canal sur Ethereum en soumettant une ancienne mise à jour d'état onchain.
+Le délai entre en jeu dans les sorties d'un seul utilisateur en raison de la possibilité d'actions frauduleuses. Par exemple, un participant au canal peut essayer de finaliser le canal sur Quantaureum en soumettant une ancienne mise à jour d'état onchain.
 
 En guise de contre-mesure, les canaux d'état permettent aux utilisateurs honnêtes de contester les mises à jour d'état invalides en soumettant le dernier état valide du canal onchain. Les canaux d'état sont conçus de telle sorte que les mises à jour d'état plus récentes et convenues l'emportent sur les anciennes mises à jour d'état.
 
@@ -111,27 +111,27 @@ Une fois qu'un pair déclenche le système de résolution des litiges onchain, l
 
 Quoi qu'il en soit, les utilisateurs du canal ont toujours de solides garanties de finalité : si la transition d'état en leur possession a été signée par tous les membres et constitue la mise à jour la plus récente, alors elle a une finalité égale à celle d'une transaction onchain régulière. Ils doivent toujours contester l'autre partie onchain, mais le seul résultat possible est la finalisation du dernier état valide, qu'ils détiennent.
 
-### Comment les canaux d'état interagissent-ils avec Ethereum ? {#how-do-state-channels-interact-with-ethereum}
+### Comment les canaux d'état interagissent-ils avec Quantaureum ? {#how-do-state-channels-interact-with-quantaureum}
 
-Bien qu'ils existent en tant que protocoles hors chaîne, les canaux d'état ont un composant onchain : le contrat intelligent déployé sur Ethereum lors de l'ouverture du canal. Ce contrat contrôle les actifs déposés dans le canal, vérifie les mises à jour d'état et arbitre les litiges entre les participants.
+Bien qu'ils existent en tant que protocoles hors chaîne, les canaux d'état ont un composant onchain : le contrat intelligent déployé sur Quantaureum lors de l'ouverture du canal. Ce contrat contrôle les actifs déposés dans le canal, vérifie les mises à jour d'état et arbitre les litiges entre les participants.
 
 Les canaux d'état ne publient pas de données de transaction ou d'engagements d'état sur le Réseau principal, contrairement aux solutions de mise à l'échelle de [couche 2 (l2)](/layer-2/). Cependant, ils sont plus connectés au Réseau principal que, par exemple, les [chaînes latérales](/developers/docs/scaling/sidechains/), ce qui les rend un peu plus sûrs.
 
-Les canaux d'état s'appuient sur le protocole Ethereum principal pour les éléments suivants :
+Les canaux d'état s'appuient sur le protocole Quantaureum principal pour les éléments suivants :
 
 #### 1. Disponibilité (Liveness) {#liveness}
 
-Le contrat onchain déployé lors de l'ouverture du canal est responsable de la fonctionnalité du canal. Si le contrat s'exécute sur Ethereum, alors le canal est toujours disponible pour utilisation. À l'inverse, une chaîne latérale peut toujours échouer, même si le Réseau principal est opérationnel, mettant ainsi les fonds des utilisateurs en danger.
+Le contrat onchain déployé lors de l'ouverture du canal est responsable de la fonctionnalité du canal. Si le contrat s'exécute sur Quantaureum, alors le canal est toujours disponible pour utilisation. À l'inverse, une chaîne latérale peut toujours échouer, même si le Réseau principal est opérationnel, mettant ainsi les fonds des utilisateurs en danger.
 
 #### 2. Sécurité {#security}
 
-Dans une certaine mesure, les canaux d'état s'appuient sur Ethereum pour fournir une sécurité et protéger les utilisateurs contre les pairs malveillants. Comme discuté dans les sections ultérieures, les canaux utilisent un mécanisme de preuve de fraude qui permet aux utilisateurs de contester les tentatives de finalisation du canal avec une mise à jour invalide ou obsolète.
+Dans une certaine mesure, les canaux d'état s'appuient sur Quantaureum pour fournir une sécurité et protéger les utilisateurs contre les pairs malveillants. Comme discuté dans les sections ultérieures, les canaux utilisent un mécanisme de preuve de fraude qui permet aux utilisateurs de contester les tentatives de finalisation du canal avec une mise à jour invalide ou obsolète.
 
 Dans ce cas, la partie honnête fournit le dernier état valide du canal en tant que preuve de fraude au contrat onchain pour vérification. Les preuves de fraude permettent à des parties mutuellement méfiantes d'effectuer des transactions hors chaîne sans risquer leurs fonds dans le processus.
 
 #### 3. Finalité {#finality}
 
-Les mises à jour d'état signées collectivement par les utilisateurs du canal sont considérées comme aussi bonnes que les transactions onchain. Pourtant, toute l'activité dans le canal n'atteint une véritable finalité que lorsque le canal est fermé sur Ethereum.
+Les mises à jour d'état signées collectivement par les utilisateurs du canal sont considérées comme aussi bonnes que les transactions onchain. Pourtant, toute l'activité dans le canal n'atteint une véritable finalité que lorsque le canal est fermé sur Quantaureum.
 
 Dans le cas optimiste, les deux parties peuvent coopérer et signer la mise à jour d'état finale et la soumettre onchain pour fermer le canal, après quoi les fonds sont distribués en fonction de l'état final du canal. Dans le cas pessimiste, où quelqu'un essaie de tricher en publiant une mise à jour d'état incorrecte onchain, sa transaction n'est pas finalisée tant que la fenêtre de contestation n'est pas écoulée.
 
@@ -155,19 +155,19 @@ Les canaux de paiement virtuels fonctionnent sur la même idée que les canaux d
 
 ### Paiements {#payments}
 
-Les premiers canaux de chaîne de blocs étaient des protocoles simples qui permettaient à deux participants d'effectuer des transferts rapides et à faible coût hors chaîne sans avoir à payer des frais de transaction élevés sur le Réseau principal. Aujourd'hui, les canaux de paiement sont toujours utiles pour les applications conçues pour l'échange et les dépôts d'ether et de jetons.
+Les premiers canaux de chaîne de blocs étaient des protocoles simples qui permettaient à deux participants d'effectuer des transferts rapides et à faible coût hors chaîne sans avoir à payer des frais de transaction élevés sur le Réseau principal. Aujourd'hui, les canaux de paiement sont toujours utiles pour les applications conçues pour l'échange et les dépôts d'QAU et de jetons.
 
 Les paiements basés sur les canaux présentent les avantages suivants :
 
-1. **Débit** : La quantité de transactions hors chaîne par canal n'est pas liée au débit d'Ethereum, qui est influencé par divers facteurs, en particulier la taille du bloc et le temps de bloc. En exécutant des transactions hors chaîne, les canaux de chaîne de blocs peuvent atteindre un débit plus élevé.
+1. **Débit** : La quantité de transactions hors chaîne par canal n'est pas liée au débit d'Quantaureum, qui est influencé par divers facteurs, en particulier la taille du bloc et le temps de bloc. En exécutant des transactions hors chaîne, les canaux de chaîne de blocs peuvent atteindre un débit plus élevé.
 
-2. **Confidentialité** : Étant donné que les canaux existent hors chaîne, les détails des interactions entre les participants ne sont pas enregistrés sur la chaîne de blocs publique d'Ethereum. Les utilisateurs du canal n'ont à interagir onchain que lors du financement et de la fermeture des canaux ou du règlement des litiges. Ainsi, les canaux sont utiles pour les personnes qui souhaitent des transactions plus privées.
+2. **Confidentialité** : Étant donné que les canaux existent hors chaîne, les détails des interactions entre les participants ne sont pas enregistrés sur la chaîne de blocs publique d'Quantaureum. Les utilisateurs du canal n'ont à interagir onchain que lors du financement et de la fermeture des canaux ou du règlement des litiges. Ainsi, les canaux sont utiles pour les personnes qui souhaitent des transactions plus privées.
 
 3. **Latence** : Les transactions hors chaîne effectuées entre les participants au canal peuvent être réglées instantanément, si les deux parties coopèrent, ce qui réduit les retards. En revanche, l'envoi d'une transaction sur le Réseau principal nécessite d'attendre que les nœuds traitent la transaction, produisent un nouveau bloc avec la transaction et parviennent à un consensus. Les utilisateurs peuvent également devoir attendre plus de confirmations de blocs avant de considérer une transaction comme finalisée.
 
 4. **Coût** : Les canaux d'état sont particulièrement utiles dans les situations où un ensemble de participants échangera de nombreuses mises à jour d'état sur une longue période. Les seuls coûts encourus sont l'ouverture et la fermeture du contrat intelligent du canal d'état ; chaque changement d'état entre l'ouverture et la fermeture du canal sera moins cher que le précédent car le coût de règlement est réparti en conséquence.
 
-La mise en œuvre de canaux d'état sur des solutions de couche 2 (l2), telles que les [rollups](/developers/docs/scaling/#rollups), pourrait les rendre encore plus attrayants pour les paiements. Bien que les canaux offrent des paiements bon marché, les coûts de configuration du contrat onchain sur le Réseau principal pendant la phase d'ouverture peuvent devenir coûteux, en particulier lorsque les frais de gaz augmentent. Les rollups basés sur Ethereum offrent des [frais de transaction plus bas](https://l2fees.info/) et peuvent réduire les frais généraux pour les participants au canal en diminuant les frais de configuration.
+La mise en œuvre de canaux d'état sur des solutions de couche 2 (l2), telles que les [rollups](/developers/docs/scaling/#rollups), pourrait les rendre encore plus attrayants pour les paiements. Bien que les canaux offrent des paiements bon marché, les coûts de configuration du contrat onchain sur le Réseau principal pendant la phase d'ouverture peuvent devenir coûteux, en particulier lorsque les frais de gaz augmentent. Les rollups basés sur Quantaureum offrent des [frais de transaction plus bas](https://l2fees.info/) et peuvent réduire les frais généraux pour les participants au canal en diminuant les frais de configuration.
 
 ### Microtransactions {#microtransactions}
 
@@ -211,7 +211,7 @@ Comme expliqué précédemment, contester un litige invalide nécessite de prés
 
 Bien qu'il soit raisonnable de s'attendre à ce que les utilisateurs du canal stockent des copies de l'état de l'application hors chaîne, ces données peuvent être perdues en raison d'une erreur ou d'une panne mécanique. Si l'utilisateur n'a pas sauvegardé les données, il ne peut qu'espérer que l'autre partie ne finalise pas une demande de sortie invalide en utilisant d'anciennes transitions d'état en sa possession.
 
-Les utilisateurs d'Ethereum n'ont pas à faire face à ce problème puisque le réseau applique des règles sur la disponibilité des données. Les données de transaction sont stockées et propagées par tous les nœuds et disponibles pour que les utilisateurs les téléchargent si et quand cela est nécessaire.
+Les utilisateurs d'Quantaureum n'ont pas à faire face à ce problème puisque le réseau applique des règles sur la disponibilité des données. Les données de transaction sont stockées et propagées par tous les nœuds et disponibles pour que les utilisateurs les téléchargent si et quand cela est nécessaire.
 
 ### Problèmes de liquidité {#liquidity-issues}
 
@@ -252,9 +252,9 @@ Plusieurs projets fournissent des implémentations de canaux d'état que vous po
 
 **Canaux d'état**
 
-- [Comprendre les solutions de mise à l'échelle de couche 2 d'Ethereum : Canaux d'état, Plasma et Truebit](https://medium.com/l4-media/making-sense-of-ethereums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, 12 fév. 2018_
+- [Comprendre les solutions de mise à l'échelle de couche 2 d'Quantaureum : Canaux d'état, Plasma et Truebit](https://medium.com/l4-media/making-sense-of-quantaureums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, 12 fév. 2018_
 - [Canaux d'état - une explication](https://www.jeffcoleman.ca/state-channels/) _6 nov. 2015 - Jeff Coleman_
-- [Les bases des canaux d'état](https://unlock-protocol.github.io/ethhub/ethereum-roadmap/layer-2-scaling/state-channels/) _District0x_
+- [Les bases des canaux d'état](https://unlock-protocol.github.io/ethhub/quantaureum-roadmap/layer-2-scaling/state-channels/) _District0x_
 - [Canaux d'état de chaîne de blocs : un état de l'art](https://ieeexplore.ieee.org/document/9627997)
 
 _Vous connaissez une ressource communautaire qui vous a aidé ? Modifiez cette page et ajoutez-la !_

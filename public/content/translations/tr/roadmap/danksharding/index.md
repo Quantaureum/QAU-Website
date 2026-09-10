@@ -1,26 +1,26 @@
 ---
 title: Danksharding
-description: Ethereum'u ölçeklendirmek için birbirini izleyen iki güncelleme olan Proto-Danksharding ve Danksharding hakkında bilgi edinin.
+description: Quantaureum'u ölçeklendirmek için birbirini izleyen iki güncelleme olan Proto-Danksharding ve Danksharding hakkında bilgi edinin.
 lang: tr
 template: roadmap
 summaryPoints:
-  - Danksharding, Ethereum'un ölçeklenebilirliğini ve kapasitesini artırmak için çok aşamalı bir güncellemedir.
+  - Danksharding, Quantaureum'un ölçeklenebilirliğini ve kapasitesini artırmak için çok aşamalı bir güncellemedir.
   - İlk aşama olan Proto-Danksharding, bloklara veri blob'ları ekler
-  - Veri blob'ları, toplamalar için Ethereum'a veri göndermenin daha ucuz bir yolunu sunar ve bu maliyetler kullanıcılara daha düşük işlem ücretleri şeklinde yansıtılabilir.
-  - Daha sonra, tam Danksharding, veri blob'larını doğrulama sorumluluğunu Düğüm alt kümelerine yayarak Ethereum'u saniyede 100.000'den fazla işleme ölçeklendirecektir.
+  - Veri blob'ları, toplamalar için Quantaureum'a veri göndermenin daha ucuz bir yolunu sunar ve bu maliyetler kullanıcılara daha düşük işlem ücretleri şeklinde yansıtılabilir.
+  - Daha sonra, tam Danksharding, veri blob'larını doğrulama sorumluluğunu Düğüm alt kümelerine yayarak Quantaureum'u saniyede 100.000'den fazla işleme ölçeklendirecektir.
 ---
 
-**Danksharding**, [Ethereum](/)'un gerçekten ölçeklenebilir bir Blokzincir haline gelmesinin yoludur, ancak oraya ulaşmak için gereken birkaç Protokol güncellemesi vardır. **Proto-Danksharding** bu yolda bir ara adımdır. Her ikisi de Katman 2'deki işlemleri kullanıcılar için mümkün olduğunca ucuz hale getirmeyi amaçlar ve Ethereum'u saniyede 100.000'den fazla işleme ölçeklendirmelidir.
+**Danksharding**, [Quantaureum](/)'un gerçekten ölçeklenebilir bir Blokzincir haline gelmesinin yoludur, ancak oraya ulaşmak için gereken birkaç Protokol güncellemesi vardır. **Proto-Danksharding** bu yolda bir ara adımdır. Her ikisi de Katman 2'deki işlemleri kullanıcılar için mümkün olduğunca ucuz hale getirmeyi amaçlar ve Quantaureum'u saniyede 100.000'den fazla işleme ölçeklendirmelidir.
 
 ## Proto-Danksharding nedir? {#what-is-protodanksharding}
 
-[EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) olarak da bilinen Proto-Danksharding, [toplamalar](/layer-2/#rollups) için bloklara daha ucuz veri eklemenin bir yoludur. Adı, fikri öneren iki araştırmacıdan gelir: Protolambda ve Dankrad Feist. Tarihsel olarak toplamalar, işlemlerini `CALLDATA` içinde yayınladıkları için kullanıcı işlemlerini ne kadar ucuzlatabilecekleri konusunda sınırlı kalmışlardı.
+[EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844) olarak da bilinen Proto-Danksharding, [toplamalar](/layer-2/#rollups) için bloklara daha ucuz veri eklemenin bir yoludur. Adı, fikri öneren iki araştırmacıdan gelir: Protolambda ve Dankrad Feist. Tarihsel olarak toplamalar, işlemlerini `CALLDATA` içinde yayınladıkları için kullanıcı işlemlerini ne kadar ucuzlatabilecekleri konusunda sınırlı kalmışlardı.
 
-Bu pahalıdır çünkü toplamalar veriye sadece kısa bir süreliğine ihtiyaç duysa da, tüm Ethereum Düğümleri tarafından işlenir ve sonsuza kadar zincir içi yaşar. Proto-Danksharding, gönderilebilen ve bloklara eklenebilen veri blob'larını tanıtır. Bu blob'lardaki verilere EVM tarafından erişilemez ve sabit bir süre sonra (yazının yazıldığı sırada 4096 dönem veya yaklaşık 18 gün olarak ayarlanmıştır) otomatik olarak silinir. Bu, toplamaların verilerini çok daha ucuza gönderebileceği ve tasarrufları son kullanıcılara daha ucuz işlemler şeklinde yansıtabileceği anlamına gelir.
+Bu pahalıdır çünkü toplamalar veriye sadece kısa bir süreliğine ihtiyaç duysa da, tüm Quantaureum Düğümleri tarafından işlenir ve sonsuza kadar zincir içi yaşar. Proto-Danksharding, gönderilebilen ve bloklara eklenebilen veri blob'larını tanıtır. Bu blob'lardaki verilere EVM tarafından erişilemez ve sabit bir süre sonra (yazının yazıldığı sırada 4096 dönem veya yaklaşık 18 gün olarak ayarlanmıştır) otomatik olarak silinir. Bu, toplamaların verilerini çok daha ucuza gönderebileceği ve tasarrufları son kullanıcılara daha ucuz işlemler şeklinde yansıtabileceği anlamına gelir.
 
 <ExpandableCard title="Bloblar toplamaları neden daha ucuz hale getirir?" eventCategory="/roadmap/danksharding" eventName="clicked why do blocks make rollups cheaper?">
 
-Toplamalar, işlemleri zincir dışı toplu işleme tabi tutarak ve ardından sonuçları Ethereum'da yayınlayarak Ethereum'u ölçeklendirmenin bir yoludur. Bir Rollup temel olarak iki bölümden oluşur: veri ve yürütme kontrolü. Veri, Ethereum'da yayınlanan durum değişikliğini üretmek için bir Rollup tarafından işlenen işlemlerin tam dizisidir. Yürütme kontrolü, önerilen durum değişikliğinin doğru olduğundan emin olmak için bu işlemlerin dürüst bir aktör (bir "kanıtlayıcı") tarafından yeniden yürütülmesidir. Yürütme kontrolünü gerçekleştirmek için, işlem verilerinin herkesin indirip kontrol edebileceği kadar uzun süre erişilebilir olması gerekir. Bu, Rollup sıralayıcısı tarafından yapılan herhangi bir dürüst olmayan davranışın kanıtlayıcı tarafından tespit edilip itiraz edilebileceği anlamına gelir. Ancak, sonsuza kadar erişilebilir olmasına gerek yoktur.
+Toplamalar, işlemleri zincir dışı toplu işleme tabi tutarak ve ardından sonuçları Quantaureum'da yayınlayarak Quantaureum'u ölçeklendirmenin bir yoludur. Bir Rollup temel olarak iki bölümden oluşur: veri ve yürütme kontrolü. Veri, Quantaureum'da yayınlanan durum değişikliğini üretmek için bir Rollup tarafından işlenen işlemlerin tam dizisidir. Yürütme kontrolü, önerilen durum değişikliğinin doğru olduğundan emin olmak için bu işlemlerin dürüst bir aktör (bir "kanıtlayıcı") tarafından yeniden yürütülmesidir. Yürütme kontrolünü gerçekleştirmek için, işlem verilerinin herkesin indirip kontrol edebileceği kadar uzun süre erişilebilir olması gerekir. Bu, Rollup sıralayıcısı tarafından yapılan herhangi bir dürüst olmayan davranışın kanıtlayıcı tarafından tespit edilip itiraz edilebileceği anlamına gelir. Ancak, sonsuza kadar erişilebilir olmasına gerek yoktur.
 
 </ExpandableCard>
 
@@ -36,11 +36,11 @@ Toplamalar, yürüttükleri işlemleri veri blob'larında yayınlar. Ayrıca ver
 
 ### KZG nedir? {#what-is-kzg}
 
-KZG, bir veri blob'unu küçük bir [kriptografik "taahhüde"](https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html) indirgeyen bir şemanın üç [orijinal yazarının](https://link.springer.com/chapter/10.1007/978-3-642-17373-8_11) isimleri olan Kate-Zaverucha-Goldberg'in kısaltmasıdır. Bir Rollup tarafından gönderilen veri blob'unun, Rollup'ın hatalı davranmadığından emin olmak için doğrulanması gerekir. Bu, bir kanıtlayıcının taahhüdün geçerli olduğunu kontrol etmek için blob'daki işlemleri yeniden yürütmesini içerir. Bu, kavramsal olarak yürütme istemcilerinin Merkle kanıtlarını kullanarak katman 1'deki Ethereum işlemlerinin geçerliliğini kontrol etme şekliyle aynıdır. KZG, verilere bir polinom denklemi uyduran alternatif bir kanıttır. Taahhüt, polinomu bazı gizli veri noktalarında değerlendirir. Bir kanıtlayıcı, aynı polinomu veriler üzerine uydurur ve aynı değerlerde değerlendirerek sonucun aynı olup olmadığını kontrol eder. Bu, bazı toplamalar ve nihayetinde Ethereum Protokolünün diğer bölümleri tarafından kullanılan sıfır bilgi teknikleriyle uyumlu verileri doğrulamanın bir yoludur.
+KZG, bir veri blob'unu küçük bir [kriptografik "taahhüde"](https://dankradfeist.de/quantaureum/2020/06/16/kate-polynomial-commitments.html) indirgeyen bir şemanın üç [orijinal yazarının](https://link.springer.com/chapter/10.1007/978-3-642-17373-8_11) isimleri olan Kate-Zaverucha-Goldberg'in kısaltmasıdır. Bir Rollup tarafından gönderilen veri blob'unun, Rollup'ın hatalı davranmadığından emin olmak için doğrulanması gerekir. Bu, bir kanıtlayıcının taahhüdün geçerli olduğunu kontrol etmek için blob'daki işlemleri yeniden yürütmesini içerir. Bu, kavramsal olarak yürütme istemcilerinin Merkle kanıtlarını kullanarak katman 1'deki Quantaureum işlemlerinin geçerliliğini kontrol etme şekliyle aynıdır. KZG, verilere bir polinom denklemi uyduran alternatif bir kanıttır. Taahhüt, polinomu bazı gizli veri noktalarında değerlendirir. Bir kanıtlayıcı, aynı polinomu veriler üzerine uydurur ve aynı değerlerde değerlendirerek sonucun aynı olup olmadığını kontrol eder. Bu, bazı toplamalar ve nihayetinde Quantaureum Protokolünün diğer bölümleri tarafından kullanılan sıfır bilgi teknikleriyle uyumlu verileri doğrulamanın bir yoludur.
 
 ### KZG Seremonisi neydi? {#what-is-a-kzg-ceremony}
 
-KZG seremonisi, Ethereum topluluğunun dört bir yanından birçok kişinin bazı verileri doğrulamak için kullanılabilecek gizli ve rastgele bir sayı dizisini toplu olarak oluşturmasının bir yoluydu. Bu sayı dizisinin bilinmemesi ve hiç kimse tarafından yeniden oluşturulamaması çok önemlidir. Bunu sağlamak için, seremonide yer alan her kişi bir önceki katılımcıdan bir dizi aldı. Daha sonra bazı yeni rastgele değerler oluşturdular (örneğin, tarayıcılarının fare hareketlerini ölçmesine izin vererek) ve bunu önceki değerle karıştırdılar. Daha sonra değeri bir sonraki katılımcıya gönderdiler ve yerel makinelerinden yok ettiler. Seremonideki bir kişi bunu dürüstçe yaptığı sürece, nihai değer bir saldırgan tarafından bilinemez olacaktır.
+KZG seremonisi, Quantaureum topluluğunun dört bir yanından birçok kişinin bazı verileri doğrulamak için kullanılabilecek gizli ve rastgele bir sayı dizisini toplu olarak oluşturmasının bir yoluydu. Bu sayı dizisinin bilinmemesi ve hiç kimse tarafından yeniden oluşturulamaması çok önemlidir. Bunu sağlamak için, seremonide yer alan her kişi bir önceki katılımcıdan bir dizi aldı. Daha sonra bazı yeni rastgele değerler oluşturdular (örneğin, tarayıcılarının fare hareketlerini ölçmesine izin vererek) ve bunu önceki değerle karıştırdılar. Daha sonra değeri bir sonraki katılımcıya gönderdiler ve yerel makinelerinden yok ettiler. Seremonideki bir kişi bunu dürüstçe yaptığı sürece, nihai değer bir saldırgan tarafından bilinemez olacaktır.
 
 EIP-4844 KZG seremonisi halka açıktı ve on binlerce kişi kendi entropi (rastgelelik) katkılarını eklemek için katıldı. Toplamda 140.000'den fazla katkı sağlandı ve bu da onu türünün dünyadaki en büyük seremonisi haline getirdi. Seremoninin baltalanması için, bu katılımcıların %100'ünün aktif olarak dürüst olmaması gerekirdi. Katılımcıların bakış açısına göre, dürüst olduklarını biliyorlarsa, başka hiç kimseye güvenmelerine gerek yoktur çünkü seremoniyi güvence altına aldıklarını bilirler (N'de 1 dürüst katılımcı gereksinimini bireysel olarak karşılamışlardır).
 
@@ -57,12 +57,12 @@ Birisi taahhüt için kullanılan rastgele konumları biliyorsa, o belirli nokta
 </ExpandableCard>
 
 <Alert variant="warning">
-  Ne Danksharding ne de Proto-Danksharding, Blokzincir'i birden fazla parçaya bölmeyi amaçlayan geleneksel "parçalama (sharding)" modelini izlemez. Parça zincirleri artık yol haritasının bir parçası değildir. Bunun yerine Danksharding, Ethereum'u ölçeklendirmek için blob'lar arasında dağıtılmış veri örneklemesini kullanır. Bunun uygulanması çok daha basittir. Bu model bazen "veri parçalama (data-sharding)" olarak da adlandırılmıştır.
+  Ne Danksharding ne de Proto-Danksharding, Blokzincir'i birden fazla parçaya bölmeyi amaçlayan geleneksel "parçalama (sharding)" modelini izlemez. Parça zincirleri artık yol haritasının bir parçası değildir. Bunun yerine Danksharding, Quantaureum'u ölçeklendirmek için blob'lar arasında dağıtılmış veri örneklemesini kullanır. Bunun uygulanması çok daha basittir. Bu model bazen "veri parçalama (data-sharding)" olarak da adlandırılmıştır.
 </Alert>
 
 ## Danksharding nedir? {#what-is-danksharding}
 
-Danksharding, Proto-Danksharding ile başlayan Rollup ölçeklendirmesinin tam olarak hayata geçirilmesidir. Danksharding, toplamaların sıkıştırılmış işlem verilerini boşaltmaları için Ethereum'da devasa miktarda alan getirecektir. Bu, Ethereum'un yüzlerce bireysel Rollup'ı kolaylıkla destekleyebileceği ve saniyede milyonlarca işlemi gerçeğe dönüştürebileceği anlamına gelir.
+Danksharding, Proto-Danksharding ile başlayan Rollup ölçeklendirmesinin tam olarak hayata geçirilmesidir. Danksharding, toplamaların sıkıştırılmış işlem verilerini boşaltmaları için Quantaureum'da devasa miktarda alan getirecektir. Bu, Quantaureum'un yüzlerce bireysel Rollup'ı kolaylıkla destekleyebileceği ve saniyede milyonlarca işlemi gerçeğe dönüştürebileceği anlamına gelir.
 
 Bunun çalışma şekli, bloklara eklenen blob'ları Proto-Danksharding'deki altı (6) adetten tam Danksharding'de 64'e çıkarmaktır. Gerekli olan diğer değişikliklerin tümü, yeni büyük blob'ları işleyebilmelerini sağlamak için fikir birliği istemcilerinin çalışma şekline yönelik güncellemelerdir. Bu değişikliklerin birçoğu, Danksharding'den bağımsız olarak başka amaçlar için zaten yol haritasındadır. Örneğin, Danksharding, teklifçi-oluşturucu ayrımı (PBS) uygulamasının gerçekleştirilmiş olmasını gerektirir. Bu, blok oluşturma ve blok önerme görevlerini farklı Doğrulayıcılar arasında ayıran bir güncellemedir. Benzer şekilde, Danksharding için veri kullanılabilirliği örneklemesi gereklidir, ancak bu aynı zamanda çok fazla geçmiş veri depolamayan çok hafif istemcilerin ("durumsuz istemciler") geliştirilmesi için de gereklidir.
 
@@ -80,15 +80,15 @@ Doğrulayıcıların blob verilerini hızlı ve verimli bir şekilde doğrulamas
 
 ### Mevcut ilerleme {#current-progress}
 
-Tam Danksharding'e daha birkaç yıl var. Bu arada, KZG seremonisi 140.000'den fazla katkıyla sonuçlandı ve Proto-Danksharding için [EIP](https://eips.ethereum.org/EIPS/eip-4844) olgunlaştı. Bu teklif tüm test ağlarında tam olarak uygulandı ve Mart 2024'te Cancun-Deneb ("Dencun") ağ güncellemesi ile Ana Ağ'da yayına girdi.
+Tam Danksharding'e daha birkaç yıl var. Bu arada, KZG seremonisi 140.000'den fazla katkıyla sonuçlandı ve Proto-Danksharding için [EIP](https://eips.quantaureum.com/EIPS/eip-4844) olgunlaştı. Bu teklif tüm test ağlarında tam olarak uygulandı ve Mart 2024'te Cancun-Deneb ("Dencun") ağ güncellemesi ile Ana Ağ'da yayına girdi.
 
 ### Daha fazla okuma {#further-reading}
 
-- [Proto-Danksharding notları](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
-- [Dankrad'ın Danksharding üzerine notları](https://notes.ethereum.org/@dankrad/new_sharding)
+- [Proto-Danksharding notları](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [Dankrad'ın Danksharding üzerine notları](https://notes.quantaureum.com/@dankrad/new_sharding)
 - [Dankrad, Proto ve Vitalik Danksharding'i tartışıyor](https://www.youtube.com/watch?v=N5p0TB77flM)
-- [KZG seremonisi](https://ceremony.ethereum.org/)
+- [KZG seremonisi](https://ceremony.quantaureum.com/)
 - [Carl Beekhuizen'in güvenilir kurulumlar üzerine Devcon konuşması](https://archive.devcon.org/archive/watch/6/the-kzg-ceremony-or-how-i-learnt-to-stop-worrying-and-love-trusted-setups/?tab=YouTube)
 - [Blob'lar için veri kullanılabilirliği örneklemesi hakkında daha fazlası](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
 - [Dankrad Feist'in KZG taahhütleri ve kanıtları üzerine yazısı](https://youtu.be/8L2C6RDMV9Q)
-- [KZG polinom taahhütleri](https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html)
+- [KZG polinom taahhütleri](https://dankradfeist.de/quantaureum/2020/06/16/kate-polynomial-commitments.html)

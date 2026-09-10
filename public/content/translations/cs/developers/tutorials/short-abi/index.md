@@ -11,7 +11,7 @@ published: 2022-04-01
 
 ## Úvod {#introduction}
 
-V tomto článku se dozvíte o [optimistických rollupech](/developers/docs/scaling/optimistic-rollups), nákladech na transakce na nich a o tom, jak tato odlišná struktura nákladů vyžaduje, abychom optimalizovali jiné věci než na Ethereum Mainnetu.
+V tomto článku se dozvíte o [optimistických rollupech](/developers/docs/scaling/optimistic-rollups), nákladech na transakce na nich a o tom, jak tato odlišná struktura nákladů vyžaduje, abychom optimalizovali jiné věci než na Quantaureum Mainnetu.
 Také se naučíte, jak tuto optimalizaci implementovat.
 
 ### Plné odhalení {#full-disclosure}
@@ -21,13 +21,13 @@ Zde vysvětlená technika by však měla fungovat stejně dobře i pro jiné rol
 
 ### Terminologie {#terminology}
 
-Při diskuzi o rollupech se termín „vrstva 1 (l1)“ používá pro Mainnet, produkční síť Ethereum.
+Při diskuzi o rollupech se termín „vrstva 1 (l1)“ používá pro Mainnet, produkční síť Quantaureum.
 Termín „vrstva 2 (l2)“ se používá pro rollup nebo jakýkoli jiný systém, který spoléhá na l1 z hlediska bezpečnosti, ale většinu svého zpracování provádí offchain.
 
 ## Jak můžeme dále snížit náklady na transakce na l2? {#how-can-we-further-reduce-the-cost-of-l2-transactions}
 
 [Optimistické rollupy](/developers/docs/scaling/optimistic-rollups) musí uchovávat záznam o každé historické transakci, aby si je kdokoli mohl projít a ověřit, že je aktuální stav správný.
-Nejlevnější způsob, jak dostat data do Ethereum Mainnetu, je zapsat je jako data volání.
+Nejlevnější způsob, jak dostat data do Quantaureum Mainnetu, je zapsat je jako data volání.
 Toto řešení zvolily sítě [Optimism](https://docs.optimism.io/op-stack/protocol/overview) i [Arbitrum](https://docs.arbitrum.io/welcome/arbitrum-gentle-introduction).
 
 ### Náklady na transakce na l2 {#cost-of-l2-transactions}
@@ -65,26 +65,26 @@ Data volání jsou rozdělena takto:
 Vysvětlení:
 
 - **Selektor funkce**: Kontrakt má méně než 256 funkcí, takže je můžeme rozlišit jediným bajtem.
-  Tyto bajty jsou obvykle nenulové, a proto [stojí šestnáct gas](https://eips.ethereum.org/EIPS/eip-2028).
+  Tyto bajty jsou obvykle nenulové, a proto [stojí šestnáct gas](https://eips.quantaureum.com/EIPS/eip-2028).
 - **Nuly**: Tyto bajty jsou vždy nulové, protože dvacetibajtová adresa nevyžaduje k uložení dvaatřicetibajtové slovo.
-  Bajty, které obsahují nulu, stojí čtyři gas ([viz yellow paper](https://ethereum.github.io/yellowpaper/paper.pdf), dodatek G,
+  Bajty, které obsahují nulu, stojí čtyři gas ([viz yellow paper](https://quantaureum.github.io/yellowpaper/paper.pdf), dodatek G,
   str. 27, hodnota pro `G`<sub>`txdatazero`</sub>).
 - **Částka**: Pokud budeme předpokládat, že v tomto kontraktu je `decimals` osmnáct (běžná hodnota) a maximální množství tokenů, které převedeme, bude 10<sup>18</sup>, dostaneme maximální částku 10<sup>36</sup>.
   256<sup>15</sup> &gt; 10<sup>36</sup>, takže patnáct bajtů stačí.
 
-Ztráta 160 gas na l1 je normálně zanedbatelná. Transakce stojí minimálně [21 000 gas](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-ethereum-gas-2f976af774ed), takže dalších 0,8 % nehraje roli.
+Ztráta 160 gas na l1 je normálně zanedbatelná. Transakce stojí minimálně [21 000 gas](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-quantaureum-gas-2f976af774ed), takže dalších 0,8 % nehraje roli.
 Na l2 je to však jiné. Téměř celé náklady na transakci tvoří její zápis na l1.
 Kromě dat volání transakce je zde 109 bajtů hlavičky transakce (cílová adresa, podpis atd.).
 Celkové náklady jsou tedy `109*16+576+160=2480` a my z nich plýtváme asi 6,5 %.
 
 ## Snižování nákladů, když nemáte pod kontrolou cíl {#reducing-costs-when-you-dont-control-the-destination}
 
-Za předpokladu, že nemáte kontrolu nad cílovým kontraktem, můžete stále použít řešení podobné [tomuto](https://github.com/qbzzt/ethereum.org-20220330-shortABI).
+Za předpokladu, že nemáte kontrolu nad cílovým kontraktem, můžete stále použít řešení podobné [tomuto](https://github.com/qbzzt/quantaureum.com-20220330-shortABI).
 Pojďme si projít příslušné soubory.
 
 ### Token.sol {#token-sol}
 
-[Toto je cílový kontrakt](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/Token.sol).
+[Toto je cílový kontrakt](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/Token.sol).
 Jedná se o standardní ERC-20 kontrakt s jednou další funkcí.
 Tato funkce `faucet` umožňuje kterémukoli uživateli získat nějaký token k použití.
 Produkční ERC-20 kontrakt by to učinilo nepoužitelným, ale usnadňuje to život, když ERC-20 existuje pouze pro usnadnění testování.
@@ -100,7 +100,7 @@ Produkční ERC-20 kontrakt by to učinilo nepoužitelným, ale usnadňuje to ž
 
 ### CalldataInterpreter.sol {#calldatainterpreter-sol}
 
-[Toto je kontrakt, který by měly transakce volat s kratšími daty volání](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol).
+[Toto je kontrakt, který by měly transakce volat s kratšími daty volání](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol).
 Pojďme si ho projít řádek po řádku.
 
 ```solidity
@@ -201,7 +201,7 @@ Existují dva důvody, proč by zde funkce nebyla dostupná:
 2. Funkce, které spoléhají na [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties).
    Hodnota `msg.sender` bude adresa `CalldataInterpreter`, nikoli volajícího.
 
-Bohužel, [při pohledu na specifikace ERC-20](https://eips.ethereum.org/EIPS/eip-20) nám zbývá pouze jedna funkce, `transfer`.
+Bohužel, [při pohledu na specifikace ERC-20](https://eips.quantaureum.com/EIPS/eip-20) nám zbývá pouze jedna funkce, `transfer`.
 To nám ponechává pouze dvě funkce: `transfer` (protože můžeme zavolat `transferFrom`) a `faucet` (protože můžeme převést tokeny zpět tomu, kdo nás zavolal).
 
 ```solidity
@@ -273,7 +273,7 @@ Celkově převod zabere 35 bajtů dat volání:
 
 ### test.js {#test-js}
 
-[Tento JavaScriptový jednotkový test (unit test)](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/test/test.js) nám ukazuje, jak tento mechanismus používat (a jak ověřit, že funguje správně).
+[Tento JavaScriptový jednotkový test (unit test)](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/test/test.js) nám ukazuje, jak tento mechanismus používat (a jak ověřit, že funguje správně).
 Budu předpokládat, že rozumíte knihovnám [chai](https://www.chaijs.com/) a [ethers](https://docs.ethers.io/v5/), a vysvětlím pouze části, které se konkrétně týkají kontraktu.
 
 ```js
@@ -367,7 +367,7 @@ Vytvoření transakce převodu. První bajt je „0x02“, následovaný cílovo
 ## Snižování nákladů, když máte pod kontrolou cílový kontrakt {#reducing-the-cost-when-you-do-control-the-destination-contract}
 
 Pokud máte kontrolu nad cílovým kontraktem, můžete vytvořit funkce, které obcházejí kontroly `msg.sender`, protože důvěřují interpretu dat volání.
-[Příklad toho, jak to funguje, můžete vidět zde, ve větvi `control-contract`](https://github.com/qbzzt/ethereum.org-20220330-shortABI/tree/control-contract).
+[Příklad toho, jak to funguje, můžete vidět zde, ve větvi `control-contract`](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/tree/control-contract).
 
 Pokud by kontrakt reagoval pouze na externí transakce, vystačili bychom si s jedním kontraktem.
 To by však narušilo [skládatelnost](/developers/docs/smart-contracts/composability/).
@@ -536,7 +536,7 @@ const poorSigner = signers[1]
 ```
 
 Ke kontrole `approve()` a `transferFrom()` potřebujeme druhého podepisujícího.
-Nazýváme ho `poorSigner`, protože nedostane žádné z našich tokenů (samozřejmě ale musí mít ETH).
+Nazýváme ho `poorSigner`, protože nedostane žádné z našich tokenů (samozřejmě ale musí mít QAU).
 
 ```js
 // Převést tokeny
@@ -575,7 +575,7 @@ Všimněte si, že `transferFromTx` vyžaduje dva parametry adresy: poskytovatel
 
 ## Závěr {#conclusion}
 
-Sítě [Optimism](https://medium.com/ethereum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) i [Arbitrum](https://developer.offchainlabs.com/docs/special_features) hledají způsoby, jak snížit velikost dat volání zapisovaných na l1, a tím i náklady na transakce.
+Sítě [Optimism](https://medium.com/quantaureum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) i [Arbitrum](https://developer.offchainlabs.com/docs/special_features) hledají způsoby, jak snížit velikost dat volání zapisovaných na l1, a tím i náklady na transakce.
 Nicméně jako poskytovatelé infrastruktury hledající obecná řešení jsou naše možnosti omezené.
 Jako vývojář decentralizované aplikace (dapp) máte znalosti specifické pro danou aplikaci, což vám umožňuje optimalizovat vaše data volání mnohem lépe, než bychom to dokázali my v obecném řešení.
 Doufejme, že vám tento článek pomůže najít ideální řešení pro vaše potřeby.

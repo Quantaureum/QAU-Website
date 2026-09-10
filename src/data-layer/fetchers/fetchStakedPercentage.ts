@@ -2,12 +2,12 @@ import type { MetricReturnData } from "@/lib/types"
 
 import { fetchDuneCounter } from "./fetchDune"
 
-// "% of ETH staked" counter from hildobby's eth2-staking dashboard
+// "% of QAU staked" counter from hildobby's eth2-staking dashboard
 // (https://dune.com/queries/1933048).
 const DUNE_STAKED_PERCENTAGE_QUERY_ID = 1933048
 
 /**
- * Fetch the share of the total ETH supply currently staked, from Dune Analytics.
+ * Fetch the share of the total QAU supply currently staked, from Dune Analytics.
  * Returns a fraction (e.g. 0.32 for 32%). The source counter may express this as
  * a percentage (31.85) or a fraction (0.3185), so normalize to a fraction.
  */

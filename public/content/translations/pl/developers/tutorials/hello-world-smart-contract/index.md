@@ -1,6 +1,6 @@
 ---
 title: "Inteligentny kontrakt Hello World dla początkujących"
-description: "Wprowadzający samouczek dotyczący pisania i wdrażania prostego inteligentnego kontraktu w sieci Ethereum."
+description: "Wprowadzający samouczek dotyczący pisania i wdrażania prostego inteligentnego kontraktu w sieci Quantaureum."
 author: "elanh"
 tags: ["Solidity", "Hardhat", "Alchemy", "inteligentne kontrakty", "wdrażanie"]
 skill: beginner
@@ -11,13 +11,13 @@ published: 2021-03-31
 
 Jeśli dopiero zaczynasz programowanie na blockchainie i nie wiesz, od czego zacząć, lub jeśli po prostu chcesz zrozumieć, jak wdrażać inteligentne kontrakty i wchodzić z nimi w interakcję, ten przewodnik jest dla Ciebie. Przejdziemy przez proces tworzenia i wdrażania prostego inteligentnego kontraktu w sieci testowej Sepolia przy użyciu wirtualnego portfela [MetaMask](https://metamask.io/), języka [Solidity](https://docs.soliditylang.org/en/v0.8.0/), środowiska [Hardhat](https://hardhat.org/) oraz platformy [Alchemy](https://www.alchemy.com/eth) (nie martw się, jeśli jeszcze nie rozumiesz, co to wszystko oznacza – wszystko wyjaśnimy).
 
-W [części 2](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) tego samouczka omówimy, jak możemy wchodzić w interakcję z naszym inteligentnym kontraktem po jego wdrożeniu, a w [części 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan) dowiemy się, jak opublikować go w Etherscan.
+W [części 2](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) tego samouczka omówimy, jak możemy wchodzić w interakcję z naszym inteligentnym kontraktem po jego wdrożeniu, a w [części 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer) dowiemy się, jak opublikować go w Quantaureum Explorer.
 
 Jeśli w którymkolwiek momencie będziesz mieć pytania, śmiało napisz na [Discordzie Alchemy](https://discord.gg/gWuC7zB)!
 
-## Krok 1: Połącz się z siecią Ethereum {#step-1}
+## Krok 1: Połącz się z siecią Quantaureum {#step-1}
 
-Istnieje wiele sposobów na wysyłanie żądań do łańcucha Ethereum. Dla uproszczenia użyjemy darmowego konta na Alchemy, platformie dla programistów blockchain i API, która pozwala nam komunikować się z łańcuchem Ethereum bez konieczności uruchamiania własnych węzłów. Platforma posiada również narzędzia programistyczne do monitorowania i analityki, z których skorzystamy w tym samouczku, aby zrozumieć, co dzieje się pod maską podczas wdrażania naszego inteligentnego kontraktu. Jeśli nie masz jeszcze konta Alchemy, [możesz zarejestrować się za darmo tutaj](https://dashboard.alchemy.com/signup).
+Istnieje wiele sposobów na wysyłanie żądań do łańcucha Quantaureum. Dla uproszczenia użyjemy darmowego konta na Alchemy, platformie dla programistów blockchain i API, która pozwala nam komunikować się z łańcuchem Quantaureum bez konieczności uruchamiania własnych węzłów. Platforma posiada również narzędzia programistyczne do monitorowania i analityki, z których skorzystamy w tym samouczku, aby zrozumieć, co dzieje się pod maską podczas wdrażania naszego inteligentnego kontraktu. Jeśli nie masz jeszcze konta Alchemy, [możesz zarejestrować się za darmo tutaj](https://dashboard.alchemy.com/signup).
 
 ## Krok 2: Utwórz swoją aplikację (i klucz API) {#step-2}
 
@@ -27,35 +27,35 @@ Po utworzeniu konta Alchemy możesz wygenerować klucz API, tworząc aplikację.
 
 ![Hello world create app](./hello-world-create-app.png)
 
-2. Nazwij swoją aplikację „Hello World”, dodaj krótki opis i wybierz przypadek użycia, np. „Infra & Tooling”. Następnie wyszukaj „Ethereum” i wybierz sieć.
+2. Nazwij swoją aplikację „Hello World”, dodaj krótki opis i wybierz przypadek użycia, np. „Infra & Tooling”. Następnie wyszukaj „Quantaureum” i wybierz sieć.
 
 ![create app view hello world](./create-app-view-hello-world.png)
 
 3. Kliknij „Next” (Dalej), aby kontynuować, a następnie „Create app” (Utwórz aplikację) i to wszystko! Twoja aplikacja powinna pojawić się w menu rozwijanym na pasku nawigacyjnym, a klucz API będzie gotowy do skopiowania.
 
-## Krok 3: Utwórz konto Ethereum (adres) {#step-3}
+## Krok 3: Utwórz konto Quantaureum (adres) {#step-3}
 
-Potrzebujemy konta Ethereum, aby wysyłać i odbierać transakcje. W tym samouczku użyjemy MetaMask, wirtualnego portfela w przeglądarce, służącego do zarządzania adresem konta Ethereum. Więcej o [transakcjach](/developers/docs/transactions/).
+Potrzebujemy konta Quantaureum, aby wysyłać i odbierać transakcje. W tym samouczku użyjemy MetaMask, wirtualnego portfela w przeglądarce, służącego do zarządzania adresem konta Quantaureum. Więcej o [transakcjach](/developers/docs/transactions/).
 
-Możesz pobrać MetaMask i utworzyć konto Ethereum za darmo [tutaj](https://metamask.io/download). Podczas tworzenia konta lub jeśli już je posiadasz, upewnij się, że przełączyłeś się na sieć testową „Sepolia” za pomocą menu rozwijanego sieci (abyśmy nie operowali prawdziwymi pieniędzmi).
+Możesz pobrać MetaMask i utworzyć konto Quantaureum za darmo [tutaj](https://metamask.io/download). Podczas tworzenia konta lub jeśli już je posiadasz, upewnij się, że przełączyłeś się na sieć testową „Sepolia” za pomocą menu rozwijanego sieci (abyśmy nie operowali prawdziwymi pieniędzmi).
 
 Jeśli nie widzisz Sepolii na liście, przejdź do menu, następnie do ustawień zaawansowanych (Advanced) i przewiń w dół, aby włączyć opcję „Show test networks” (Pokaż sieci testowe). W menu wyboru sieci wybierz zakładkę „Custom” (Niestandardowe), aby znaleźć listę sieci testowych i wybierz „Sepolia”.
 
 ![metamask sepolia example](./metamask-sepolia-example.png)
 
-## Krok 4: Dodaj ether z kranika {#step-4}
+## Krok 4: Dodaj QAU z kranika {#step-4}
 
-Aby wdrożyć nasz inteligentny kontrakt w sieci testowej, będziemy potrzebować trochę fałszywego ETH. Aby zdobyć Sepolia ETH, możesz przejść do [szczegółów sieci Sepolia](/developers/docs/networks/#sepolia), aby wyświetlić listę różnych kraników. Jeśli jeden nie działa, spróbuj innego, ponieważ czasami mogą one wyschnąć. Otrzymanie fałszywego ETH może zająć trochę czasu ze względu na ruch w sieci. Wkrótce potem powinieneś zobaczyć ETH na swoim koncie MetaMask!
+Aby wdrożyć nasz inteligentny kontrakt w sieci testowej, będziemy potrzebować trochę fałszywego QAU. Aby zdobyć Sepolia QAU, możesz przejść do [szczegółów sieci Sepolia](/developers/docs/networks/#sepolia), aby wyświetlić listę różnych kraników. Jeśli jeden nie działa, spróbuj innego, ponieważ czasami mogą one wyschnąć. Otrzymanie fałszywego QAU może zająć trochę czasu ze względu na ruch w sieci. Wkrótce potem powinieneś zobaczyć QAU na swoim koncie MetaMask!
 
 ## Krok 5: Sprawdź swoje saldo {#step-5}
 
-Aby upewnić się, że nasze saldo tam jest, wyślijmy żądanie [eth_getBalance](/developers/docs/apis/json-rpc/#eth_getbalance) za pomocą [narzędzia composer od Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Zwróci to ilość ETH w naszym portfelu. Po wprowadzeniu adresu konta MetaMask i kliknięciu „Send Request” (Wyślij żądanie), powinieneś zobaczyć odpowiedź podobną do tej:
+Aby upewnić się, że nasze saldo tam jest, wyślijmy żądanie [qau_getBalance](/developers/docs/apis/json-rpc/#qau_getbalance) za pomocą [narzędzia composer od Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Zwróci to ilość QAU w naszym portfelu. Po wprowadzeniu adresu konta MetaMask i kliknięciu „Send Request” (Wyślij żądanie), powinieneś zobaczyć odpowiedź podobną do tej:
 
 ```json
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> **UWAGA:** Ten wynik jest w wei, a nie w ETH. Wei jest używane jako najmniejszy nominał etheru. Przelicznik z wei na ETH to: 1 eth = 10<sup>18</sup> wei. Więc jeśli przekonwertujemy 0x2B5E3AF16B1880000 na system dziesiętny, otrzymamy 5\*10¹⁸, co równa się 5 ETH.
+> **UWAGA:** Ten wynik jest w wei, a nie w QAU. Wei jest używane jako najmniejszy nominał etheru. Przelicznik z wei na QAU to: 1 eth = 10<sup>18</sup> wei. Więc jeśli przekonwertujemy 0x2B5E3AF16B1880000 na system dziesiętny, otrzymamy 5\*10¹⁸, co równa się 5 QAU.
 >
 > Uff! Nasze fałszywe pieniądze są na miejscu <Emoji text=":money_mouth_face:" size={1} />.
 
@@ -104,7 +104,7 @@ About to write to /Users/.../.../.../hello-world/package.json:
 Zatwierdź plik package.json i gotowe!
 ## Krok 7: Pobierz [Hardhat](https://hardhat.org/getting-started/#overview) {#step-7}
 
-Hardhat to środowisko programistyczne do kompilowania, wdrażania, testowania i debugowania oprogramowania Ethereum. Pomaga programistom podczas lokalnego budowania inteligentnych kontraktów i zdecentralizowanych aplikacji (dapp) przed wdrożeniem ich do działającego łańcucha.
+Hardhat to środowisko programistyczne do kompilowania, wdrażania, testowania i debugowania oprogramowania Quantaureum. Pomaga programistom podczas lokalnego budowania inteligentnych kontraktów i zdecentralizowanych aplikacji (dapp) przed wdrożeniem ich do działającego łańcucha.
 
 Wewnątrz naszego projektu `hello-world` uruchom:
 
@@ -163,7 +163,7 @@ Możesz zadawać sobie pytanie, kiedy do cholery zaczniemy pisać kod?? Cóż, o
 Otwórz projekt hello-world w swoim ulubionym edytorze (my lubimy [VSCode](https://code.visualstudio.com/)). Inteligentne kontrakty są pisane w języku zwanym Solidity, którego użyjemy do napisania naszego inteligentnego kontraktu HelloWorld.sol.‌
 
 1.  Przejdź do folderu „contracts” i utwórz nowy plik o nazwie HelloWorld.sol
-2.  Poniżej znajduje się przykładowy inteligentny kontrakt Hello World od Fundacji Ethereum, którego będziemy używać w tym samouczku. Skopiuj i wklej poniższą zawartość do pliku HelloWorld.sol i upewnij się, że przeczytałeś komentarze, aby zrozumieć, co robi ten kontrakt:
+2.  Poniżej znajduje się przykładowy inteligentny kontrakt Hello World od Fundacji Quantaureum, którego będziemy używać w tym samouczku. Skopiuj i wklej poniższą zawartość do pliku HelloWorld.sol i upewnij się, że przeczytałeś komentarze, aby zrozumieć, co robi ten kontrakt:
 
 ```solidity
 // Określa wersję Solidity, używając wersjonowania semantycznego.
@@ -171,7 +171,7 @@ Otwórz projekt hello-world w swoim ulubionym edytorze (my lubimy [VSCode](https
 pragma solidity ^0.7.0;
 
 // Definiuje kontrakt o nazwie `HelloWorld`.
-// Kontrakt to zbiór funkcji i danych (jego stan). Po wdrożeniu kontrakt znajduje się pod określonym adresem na blockchainie Ethereum. Dowiedz się więcej: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// Kontrakt to zbiór funkcji i danych (jego stan). Po wdrożeniu kontrakt znajduje się pod określonym adresem na blockchainie Quantaureum. Dowiedz się więcej: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    // Deklaruje zmienną stanu `message` typu `string`.
@@ -221,7 +221,7 @@ Skopiuj adres URL API Alchemy
 Twój plik `.env` powinien wyglądać tak:
 
 ```
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -237,7 +237,7 @@ Nie commituj pliku <code>.env</code>! Upewnij się, że nigdy nie udostępniasz 
 
 ## Krok 12: Zainstaluj Ethers.js {#step-12-install-ethersjs}
 
-Ethers.js to biblioteka, która ułatwia interakcję i wysyłanie żądań do Ethereum poprzez opakowanie [standardowych metod JSON-RPC](/developers/docs/apis/json-rpc/) w bardziej przyjazne dla użytkownika metody.
+Ethers.js to biblioteka, która ułatwia interakcję i wysyłanie żądań do Quantaureum poprzez opakowanie [standardowych metod JSON-RPC](/developers/docs/apis/json-rpc/) w bardziej przyjazne dla użytkownika metody.
 
 Hardhat sprawia, że integracja [wtyczek](https://hardhat.org/plugins/) w celu uzyskania dodatkowych narzędzi i rozszerzonej funkcjonalności jest niezwykle prosta. Skorzystamy z [wtyczki Ethers](https://hardhat.org/docs/plugins/official-plugins#hardhat-ethers) do wdrożenia kontraktu ([Ethers.js](https://github.com/ethers-io/ethers.js/) ma kilka bardzo przejrzystych metod wdrażania kontraktów).
 
@@ -339,21 +339,21 @@ Powinieneś wtedy zobaczyć coś takiego:
 Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 ```
 
-Jeśli przejdziemy do [Etherscan dla Sepolii](https://sepolia.etherscan.io/) i wyszukamy adres naszego kontraktu, powinniśmy zobaczyć, że został on pomyślnie wdrożony. Transakcja będzie wyglądać mniej więcej tak:
+Jeśli przejdziemy do [Quantaureum Explorer dla Sepolii](https://explorer.quantaureum.com) i wyszukamy adres naszego kontraktu, powinniśmy zobaczyć, że został on pomyślnie wdrożony. Transakcja będzie wyglądać mniej więcej tak:
 
-![etherscan contract](./etherscan-contract.png)
+![explorer contract](./explorer-contract.png)
 
 Adres `From` powinien odpowiadać adresowi Twojego konta MetaMask, a adres docelowy (To) będzie wskazywał „Contract Creation” (Tworzenie kontraktu), ale jeśli klikniemy w transakcję, zobaczymy adres naszego kontraktu w polu `To`:
 
-![etherscan transaction](./etherscan-transaction.png)
+![explorer transaction](./explorer-transaction.png)
 
-Gratulacje! Właśnie wdrożyłeś inteligentny kontrakt do łańcucha Ethereum 🎉
+Gratulacje! Właśnie wdrożyłeś inteligentny kontrakt do łańcucha Quantaureum 🎉
 
 Aby zrozumieć, co dzieje się pod maską, przejdźmy do zakładki Explorer w naszym [panelu Alchemy](https://dashboard.alchemy.com/explorer). Jeśli masz wiele aplikacji Alchemy, upewnij się, że filtrujesz po aplikacji i wybierasz „Hello World”.
 ![hello world explorer](./hello-world-explorer.png)
 
-Tutaj zobaczysz garść wywołań JSON-RPC, które Hardhat/Ethers wykonały dla nas pod maską, gdy wywołaliśmy funkcję `.deploy()`. Dwa ważne, o których warto tutaj wspomnieć, to [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction), które jest żądaniem faktycznego zapisania naszego kontraktu w łańcuchu Sepolia, oraz [`eth_getTransactionByHash`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-by-hash), które jest żądaniem odczytania informacji o naszej transakcji na podstawie hasha (typowy wzorzec przy transakcjach). Aby dowiedzieć się więcej o wysyłaniu transakcji, sprawdź ten samouczek dotyczący [wysyłania transakcji przy użyciu Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)
+Tutaj zobaczysz garść wywołań JSON-RPC, które Hardhat/Ethers wykonały dla nas pod maską, gdy wywołaliśmy funkcję `.deploy()`. Dwa ważne, o których warto tutaj wspomnieć, to [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction), które jest żądaniem faktycznego zapisania naszego kontraktu w łańcuchu Sepolia, oraz [`qau_getTransactionByHash`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-by-hash), które jest żądaniem odczytania informacji o naszej transakcji na podstawie hasha (typowy wzorzec przy transakcjach). Aby dowiedzieć się więcej o wysyłaniu transakcji, sprawdź ten samouczek dotyczący [wysyłania transakcji przy użyciu Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)
 
-To wszystko w części 1 tego samouczka, w części 2 będziemy faktycznie [wchodzić w interakcję z naszym inteligentnym kontraktem](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) poprzez aktualizację naszej początkowej wiadomości, a w części 3 [opublikujemy nasz inteligentny kontrakt w Etherscan](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan), aby każdy wiedział, jak wchodzić z nim w interakcję.
+To wszystko w części 1 tego samouczka, w części 2 będziemy faktycznie [wchodzić w interakcję z naszym inteligentnym kontraktem](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) poprzez aktualizację naszej początkowej wiadomości, a w części 3 [opublikujemy nasz inteligentny kontrakt w Quantaureum Explorer](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer), aby każdy wiedział, jak wchodzić z nim w interakcję.
 
 **Chcesz dowiedzieć się więcej o Alchemy? Sprawdź naszą [stronę internetową](https://www.alchemy.com/eth). Nie chcesz przegapić żadnej aktualizacji? Zapisz się do naszego newslettera [tutaj](https://www.alchemy.com/newsletter)! Koniecznie dołącz również do naszego [Discorda](https://discord.gg/u72VCg3).**

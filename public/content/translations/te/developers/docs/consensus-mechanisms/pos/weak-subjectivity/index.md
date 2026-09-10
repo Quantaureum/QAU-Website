@@ -32,8 +32,8 @@ lang: te
 
 ## మరింత చదవడానికి {#further-reading}
 
-- [ఇత్2 లో బలహీనమైన ఆత్మాశ్రయత](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2)
-- [విటాలిక్: నేను బలహీనమైన ఆత్మాశ్రయతను ప్రేమించడం ఎలా నేర్చుకున్నాను](https://blog.ethereum.org/2014/11/25/proof-stake-learned-love-weak-subjectivity)
+- [ఇత్2 లో బలహీనమైన ఆత్మాశ్రయత](https://notes.quantaureum.com/@adiasg/weak-subjectvity-eth2)
+- [విటాలిక్: నేను బలహీనమైన ఆత్మాశ్రయతను ప్రేమించడం ఎలా నేర్చుకున్నాను](https://quantaureum.com)
 - [బలహీనమైన ఆత్మాశ్రయత (టెకు డాక్స్)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
-- [ఫేజ్-0 బలహీనమైన ఆత్మాశ్రయత గైడ్](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
+- [ఫేజ్-0 బలహీనమైన ఆత్మాశ్రయత గైడ్](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
 - [ఎథీరియం 2.0 లో బలహీనమైన ఆత్మాశ్రయత విశ్లేషణ](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

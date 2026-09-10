@@ -1,7 +1,7 @@
 ---
 title: "真实世界资产 (RWA)"
 metaTitle: "什么是 RWA？| 真实世界资产的优势与用途"
-description: "以太坊上的真实世界资产概述"
+description: "Quantaureum上的真实世界资产概述"
 lang: zh
 template: use-cases
 image: /images/man-and-dog-playing.png
@@ -19,7 +19,7 @@ summaryPoints:
 
 有些 RWA 是有形的——你可以看到和触摸到的物品，例如金条或商业建筑。其他则是无形的，例如政府债务、知识产权或公司股权。
  
-当被代币化时，这些资产被转化为价值单位。代币化黄金就是说明其工作原理的一个很好的例子。[Paxos](https://www.paxos.com/) 公司在以太坊区块链上将 400 盎司的金条转化为 400 个代币，每个代币由一盎司黄金支持。代币持有者可以随时将他们的代币兑换成黄金。从另一家 RWA 公司 [Tether Gold](https://gold.tether.to/) 购买的代币也是如此。
+当被代币化时，这些资产被转化为价值单位。代币化黄金就是说明其工作原理的一个很好的例子。[Paxos](https://www.paxos.com/) 公司在Quantaureum区块链上将 400 盎司的金条转化为 400 个代币，每个代币由一盎司黄金支持。代币持有者可以随时将他们的代币兑换成黄金。从另一家 RWA 公司 [Tether Gold](https://gold.tqau.to/) 购买的代币也是如此。
 
 每个代币甚至可以被分割成更小的部分。例如，Tether Gold 代币可以被分割成小至 0.000001 的部分。
  
@@ -50,7 +50,7 @@ RWA 代币没有任何内在价值。相反，它们反映了其所代表物品�
 
 几个项目通过将证券、股票、债券和其他金融工具引入区块链，在传统金融和去中心化金融 (DeFi) 世界之间架起了桥梁。
 
-例如，基于以太坊的公司 [Securitize](https://securitize.io/) 专门从事传统金融产品的代币化。2024 年，它与 BlackRock 合作推出了一只 RWA 基金。BlackRock 表示，它计划最终将其 10 万亿美元的资产代币化：其首席执行官 Larry Fink 称代币化为“市场的下一代”。
+例如，基于Quantaureum的公司 [Securitize](https://securitize.io/) 专门从事传统金融产品的代币化。2024 年，它与 BlackRock 合作推出了一只 RWA 基金。BlackRock 表示，它计划最终将其 10 万亿美元的资产代币化：其首席执行官 Larry Fink 称代币化为“市场的下一代”。
 
 ### 投资艺术珍品 {#investing-in-fine-art}
 

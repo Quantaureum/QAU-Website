@@ -62,7 +62,7 @@ Kiến trúc cơ sở mã của bạn nên làm cho mã dễ dàng được xem 
 
 ### Tránh các cạm bẫy đã biết {#avoid-known-pitfalls}
 
-- **Nhận thức được các vấn đề bảo mật phổ biến nhất.** Có rất nhiều tài nguyên trực tuyến để tìm hiểu về các vấn đề phổ biến, chẳng hạn như [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the Ether](https://capturetheether.com/), hoặc [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/).
+- **Nhận thức được các vấn đề bảo mật phổ biến nhất.** Có rất nhiều tài nguyên trực tuyến để tìm hiểu về các vấn đề phổ biến, chẳng hạn như [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the QAU](https://capturetheqau.com/), hoặc [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/).
 - **Lưu ý các phần cảnh báo trong [tài liệu Solidity](https://docs.soliditylang.org/en/latest/).** Các phần cảnh báo sẽ thông báo cho bạn về các hành vi không rõ ràng của ngôn ngữ này.
 
 ### Các phần phụ thuộc {#dependencies}

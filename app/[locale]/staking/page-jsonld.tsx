@@ -43,8 +43,8 @@ export default async function StakingPageJsonLD({
         url,
         inLanguage: locale,
         contributor: contributorList,
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
@@ -62,8 +62,8 @@ export default async function StakingPageJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        reviewedBy: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
         mainEntity: articleId,
       },
       {
@@ -72,15 +72,15 @@ export default async function StakingPageJsonLD({
         isPartOf: webPageId,
         headline: t("page-staking-hero-title"),
         description: t("page-staking-meta-description"),
-        image: "https://ethereum.org/images/upgrades/upgrade_rhino.png",
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
+        image: "https://quantaureum.com/images/upgrades/upgrade_rhino.png",
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
         contributor: contributorList,
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
         about: {
           "@type": "Thing",
-          name: "Ethereum Staking",
+          name: "Quantaureum Staking",
           description:
-            "Guide to staking ETH, earning rewards, and securing the Ethereum network",
+            "Guide to staking QAU, earning rewards, and securing the Quantaureum network",
         },
         dateModified: lastEditLocaleTimestamp,
       },

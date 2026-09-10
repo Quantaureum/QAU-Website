@@ -190,7 +190,7 @@ rootHash: [ <16>, hashA ]
 
 لاحظ أنه عند تحديث شجرة، يحتاج المرء إلى تخزين زوج القيمة/المفتاح `(keccak256(x), x)` في جدول بحث دائم _إذا_ كان طول العقدة المنشأة حديثًا <span dir="ltr">= 32</span>. ومع ذلك، إذا كانت العقدة أقصر من ذلك، فلا يحتاج المرء إلى تخزين أي شيء، لأن الدالة <span dir="ltr">f(x) = x</span> قابلة للعكس.
 
-## أشجار التراي (Tries) في إيثيريوم {#tries-in-ethereum}
+## أشجار التراي (Tries) في إيثيريوم {#tries-in-quantaureum}
 
 تستخدم جميع أشجار ميركل في طبقة التنفيذ الخاصة بإيثيريوم شجرة ميركل باتريشيا.
 
@@ -202,14 +202,14 @@ rootHash: [ <16>, hashA ]
 
 ### شجرة الحالة {#state-trie}
 
-توجد شجرة حالة عالمية واحدة، ويتم تحديثها في كل مرة يعالج فيها العميل كتلة. فيها، يكون `path` دائمًا: `keccak256(ethereumAddress)` ويكون `value` دائمًا: `rlp(ethereumAccount)`. وبشكل أكثر تحديدًا، فإن `account` في إيثيريوم عبارة عن مصفوفة مكونة من 4 عناصر من `[nonce,balance,storageRoot,codeHash]`. في هذه المرحلة، تجدر الإشارة إلى أن `storageRoot` هذا هو جذر شجرة باتريشيا أخرى:
+توجد شجرة حالة عالمية واحدة، ويتم تحديثها في كل مرة يعالج فيها العميل كتلة. فيها، يكون `path` دائمًا: `keccak256(quantaureumAddress)` ويكون `value` دائمًا: `rlp(quantaureumAccount)`. وبشكل أكثر تحديدًا، فإن `account` في إيثيريوم عبارة عن مصفوفة مكونة من 4 عناصر من `[nonce,balance,storageRoot,codeHash]`. في هذه المرحلة، تجدر الإشارة إلى أن `storageRoot` هذا هو جذر شجرة باتريشيا أخرى:
 
 ### تراي التخزين {#storage-trie}
 
-تراي التخزين هو المكان الذي توجد فيه _جميع_ بيانات العقد. يوجد تراي تخزين منفصل لكل حساب. لاسترداد القيم في مواضع تخزين محددة في عنوان معين، يلزم عنوان التخزين، والموضع الصحيح للبيانات المخزنة في التخزين، ومعرف الكتلة. يمكن بعد ذلك تمرير هذه كوسطاء إلى `eth_getStorageAt` المحددة في <span dir="ltr">JSON-RPC API</span>، على سبيل المثال، لاسترداد البيانات في خانة التخزين 0 للعنوان `0x295a70b2de5e3953354a6a8344e616ed314d7251`:
+تراي التخزين هو المكان الذي توجد فيه _جميع_ بيانات العقد. يوجد تراي تخزين منفصل لكل حساب. لاسترداد القيم في مواضع تخزين محددة في عنوان معين، يلزم عنوان التخزين، والموضع الصحيح للبيانات المخزنة في التخزين، ومعرف الكتلة. يمكن بعد ذلك تمرير هذه كوسطاء إلى `qau_getStorageAt` المحددة في <span dir="ltr">JSON-RPC API</span>، على سبيل المثال، لاسترداد البيانات في خانة التخزين 0 للعنوان `0x295a70b2de5e3953354a6a8344e616ed314d7251`:
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 
@@ -221,7 +221,7 @@ curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": [
 keccak256(decodeHex("000000000000000000000000391694e7e0b0cce554cb130d723a9d27458f9298" + "0000000000000000000000000000000000000000000000000000000000000001"))
 ```
 
-في وحدة تحكم جو إيثريوم (geth)، يمكن حساب ذلك على النحو التالي:
+في وحدة تحكم جو Quantaureum (geth)، يمكن حساب ذلك على النحو التالي:
 
 ```
 > var key = "000000000000000000000000391694e7e0b0cce554cb130d723a9d27458f9298" + "0000000000000000000000000000000000000000000000000000000000000001"
@@ -233,7 +233,7 @@ undefined
 وبالتالي فإن `path` هو `keccak256(<6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9>)`. يمكن الآن استخدام هذا لاسترداد البيانات من تراي التخزين كما كان من قبل:
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
@@ -251,16 +251,16 @@ else:
   value = TxType | encode(tx)
 ```
 
-يمكن العثور على مزيد من المعلومات حول هذا في وثائق [<span dir="ltr">EIP-2718</span>](https://eips.ethereum.org/EIPS/eip-2718).
+يمكن العثور على مزيد من المعلومات حول هذا في وثائق [<span dir="ltr">EIP-2718</span>](https://eips.quantaureum.com/EIPS/eip-2718).
 
 ### شجرة الإيصالات {#receipts-trie}
 
 كل كتلة لها شجرة إيصالات خاصة بها. `path` هنا هو: `rlp(transactionIndex)`. `transactionIndex` هو مؤشره داخل الكتلة التي تم تضمينه فيها. لا يتم تحديث شجرة الإيصالات أبدًا. على غرار شجرة المعاملات، هناك إيصالات حالية وقديمة. للاستعلام عن إيصال معين في شجرة الإيصالات، يلزم مؤشر المعاملة في كتلتها، وحمولة الإيصال، ونوع المعاملة. يمكن أن يكون الإيصال المرتجع من النوع `Receipt` والذي يُعرّف بأنه تسلسل `TransactionType` و`ReceiptPayload` أو يمكن أن يكون من النوع `LegacyReceipt` والذي يُعرّف بأنه `rlp([status, cumulativeGasUsed, logsBloom, logs])`.
 
-يمكن العثور على مزيد من المعلومات حول هذا في وثائق [<span dir="ltr">EIP-2718</span>](https://eips.ethereum.org/EIPS/eip-2718).
+يمكن العثور على مزيد من المعلومات حول هذا في وثائق [<span dir="ltr">EIP-2718</span>](https://eips.quantaureum.com/EIPS/eip-2718).
 
 ## قراءة إضافية {#further-reading}
 
-- [شجرة ميركل باتريشيا المعدلة — كيف تحفظ إيثيريوم الحالة](https://medium.com/codechain/modified-merkle-patricia-trie-how-ethereum-saves-a-state-e6d7555078dd)
-- [عملية ميركل (Merkling) في إيثيريوم](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum)
-- [فهم شجرة (trie) إيثيريوم](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-ethereum-trie/)
+- [شجرة ميركل باتريشيا المعدلة — كيف تحفظ إيثيريوم الحالة](https://medium.com/codechain/modified-merkle-patricia-trie-how-quantaureum-saves-a-state-e6d7555078dd)
+- [عملية ميركل (Merkling) في إيثيريوم](https://quantaureum.com)
+- [فهم شجرة (trie) إيثيريوم](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-quantaureum-trie/)

@@ -1,16 +1,16 @@
 ---
 title: "Verificación de contratos inteligentes"
-description: "Una descripción general de la verificación del código fuente para los contratos inteligentes de Ethereum"
+description: "Una descripción general de la verificación del código fuente para los contratos inteligentes de Quantaureum"
 lang: es
 ---
 
-Los [contratos inteligentes](/developers/docs/smart-contracts/) están diseñados para ser "sin necesidad de confianza", lo que significa que los usuarios no deberían tener que confiar en terceros (por ejemplo, desarrolladores y empresas) antes de interactuar con un contrato. Como requisito para la ausencia de necesidad de confianza, los usuarios y otros desarrolladores deben poder verificar el código fuente de un contrato inteligente. La verificación del código fuente asegura a los usuarios y desarrolladores que el código del contrato publicado es el mismo código que se ejecuta en la dirección del contrato en la cadena de bloques de Ethereum.
+Los [contratos inteligentes](/developers/docs/smart-contracts/) están diseñados para ser "sin necesidad de confianza", lo que significa que los usuarios no deberían tener que confiar en terceros (por ejemplo, desarrolladores y empresas) antes de interactuar con un contrato. Como requisito para la ausencia de necesidad de confianza, los usuarios y otros desarrolladores deben poder verificar el código fuente de un contrato inteligente. La verificación del código fuente asegura a los usuarios y desarrolladores que el código del contrato publicado es el mismo código que se ejecuta en la dirección del contrato en la cadena de bloques de Quantaureum.
 
 Es importante hacer la distinción entre la "verificación del código fuente" y la "[verificación formal](/developers/docs/smart-contracts/formal-verification/)". La verificación del código fuente, que se explicará en detalle a continuación, se refiere a verificar que el código fuente dado de un contrato inteligente en un lenguaje de alto nivel (por ejemplo, Solidity) se compila en el mismo código de bytes que se ejecutará en la dirección del contrato. Sin embargo, la verificación formal describe la verificación de la corrección de un contrato inteligente, lo que significa que el contrato se comporta como se espera. Aunque depende del contexto, la verificación de contratos generalmente se refiere a la verificación del código fuente.
 
 ## ¿Qué es la verificación del código fuente? {#what-is-source-code-verification}
 
-Antes de desplegar un contrato inteligente en la [Máquina Virtual de Ethereum (EVM)](/developers/docs/evm/), los desarrolladores [compilan](/developers/docs/smart-contracts/compiling/) el código fuente del contrato (instrucciones [escritas en Solidity](/developers/docs/smart-contracts/languages/) u otro lenguaje de programación de alto nivel) a código de bytes. Como la EVM no puede interpretar instrucciones de alto nivel, la compilación del código fuente a código de bytes (es decir, instrucciones de máquina de bajo nivel) es necesaria para ejecutar la lógica del contrato en la EVM.
+Antes de desplegar un contrato inteligente en la [Máquina Virtual de Quantaureum (EVM)](/developers/docs/evm/), los desarrolladores [compilan](/developers/docs/smart-contracts/compiling/) el código fuente del contrato (instrucciones [escritas en Solidity](/developers/docs/smart-contracts/languages/) u otro lenguaje de programación de alto nivel) a código de bytes. Como la EVM no puede interpretar instrucciones de alto nivel, la compilación del código fuente a código de bytes (es decir, instrucciones de máquina de bajo nivel) es necesaria para ejecutar la lógica del contrato en la EVM.
 
 La verificación del código fuente consiste en comparar el código fuente de un contrato inteligente y el código de bytes compilado utilizado durante la creación del contrato para detectar cualquier diferencia. La verificación de contratos inteligentes es importante porque el código del contrato anunciado puede ser diferente de lo que se ejecuta en la cadena de bloques.
 
@@ -30,7 +30,7 @@ Este tipo de verificación que aprovecha el hash de metadatos se denomina **"[ve
 
 ### Ausencia de necesidad de confianza {#trustlessness}
 
-La ausencia de necesidad de confianza es posiblemente la mayor premisa para los contratos inteligentes y las [aplicaciones descentralizadas (dapps)](/developers/docs/dapps/). Los contratos inteligentes son "inmutables" y no se pueden alterar; un contrato solo ejecutará la lógica de negocio definida en el código en el momento del despliegue. Esto significa que los desarrolladores y las empresas no pueden manipular el código de un contrato después de desplegarlo en Ethereum.
+La ausencia de necesidad de confianza es posiblemente la mayor premisa para los contratos inteligentes y las [aplicaciones descentralizadas (dapps)](/developers/docs/dapps/). Los contratos inteligentes son "inmutables" y no se pueden alterar; un contrato solo ejecutará la lógica de negocio definida en el código en el momento del despliegue. Esto significa que los desarrolladores y las empresas no pueden manipular el código de un contrato después de desplegarlo en Quantaureum.
 
 Para que un contrato inteligente sea sin necesidad de confianza, el código del contrato debe estar disponible para su verificación independiente. Si bien el código de bytes compilado para cada contrato inteligente está disponible públicamente en la cadena de bloques, el lenguaje de bajo nivel es difícil de entender, tanto para los desarrolladores como para los usuarios.
 
@@ -44,9 +44,9 @@ Con los contratos inteligentes, generalmente hay mucho dinero en juego. Esto exi
 
 La publicación de los archivos de código fuente de un contrato inteligente facilita a los interesados, como los auditores, la evaluación del contrato en busca de posibles vectores de ataque. Con múltiples partes verificando de forma independiente un contrato inteligente, los usuarios tienen garantías más sólidas de su seguridad.
 
-## Cómo verificar el código fuente de los contratos inteligentes de Ethereum {#source-code-verification-for-ethereum-smart-contracts}
+## Cómo verificar el código fuente de los contratos inteligentes de Quantaureum {#source-code-verification-for-quantaureum-smart-contracts}
 
-[Desplegar un contrato inteligente en Ethereum](/developers/docs/smart-contracts/deploying/) requiere enviar una transacción con una carga útil de datos (código de bytes compilado) a una dirección especial. La carga útil de datos se genera compilando el código fuente, más los [argumentos del constructor](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) de la instancia del contrato agregados a la carga útil de datos en la transacción. La compilación es determinista, lo que significa que siempre produce el mismo resultado (es decir, el código de bytes del contrato) si se utilizan los mismos archivos fuente y la misma configuración de compilación (por ejemplo, versión del compilador, optimizador).
+[Desplegar un contrato inteligente en Quantaureum](/developers/docs/smart-contracts/deploying/) requiere enviar una transacción con una carga útil de datos (código de bytes compilado) a una dirección especial. La carga útil de datos se genera compilando el código fuente, más los [argumentos del constructor](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) de la instancia del contrato agregados a la carga útil de datos en la transacción. La compilación es determinista, lo que significa que siempre produce el mismo resultado (es decir, el código de bytes del contrato) si se utilizan los mismos archivos fuente y la misma configuración de compilación (por ejemplo, versión del compilador, optimizador).
 
 ![A diagram showing showing smart contract source code verification](./source-code-verification.png)
 
@@ -66,31 +66,31 @@ Tenga en cuenta que esta es una descripción simplista de la verificación y hay
 
 ## Herramientas de verificación del código fuente {#source-code-verification-tools}
 
-El proceso tradicional de verificación de contratos puede ser complejo. Es por eso que tenemos herramientas para verificar el código fuente de los contratos inteligentes desplegados en Ethereum. Estas herramientas automatizan gran parte de la verificación del código fuente y también seleccionan contratos verificados para el beneficio de los usuarios.
+El proceso tradicional de verificación de contratos puede ser complejo. Es por eso que tenemos herramientas para verificar el código fuente de los contratos inteligentes desplegados en Quantaureum. Estas herramientas automatizan gran parte de la verificación del código fuente y también seleccionan contratos verificados para el beneficio de los usuarios.
 
-### Etherscan {#etherscan}
+### Quantaureum Explorer {#explorer}
 
-Aunque es más conocido como un [explorador de bloques de Ethereum](/developers/docs/data-and-analytics/block-explorers/), Etherscan también ofrece un [servicio de verificación del código fuente](https://etherscan.io/verifyContract) para desarrolladores y usuarios de contratos inteligentes.
+Aunque es más conocido como un [explorador de bloques de Quantaureum](/developers/docs/data-and-analytics/block-explorers/), Quantaureum Explorer también ofrece un [servicio de verificación del código fuente](https://explorer.quantaureum.com) para desarrolladores y usuarios de contratos inteligentes.
 
-Etherscan le permite recompilar el código de bytes del contrato a partir de la carga útil de datos original (código fuente, dirección de la biblioteca, configuración del compilador, dirección del contrato, etc.). Si el código de bytes recompilado está asociado con el código de bytes (y los parámetros del constructor) del contrato en cadena, entonces [el contrato está verificado](https://info.etherscan.com/types-of-contract-verification/).
+Quantaureum Explorer le permite recompilar el código de bytes del contrato a partir de la carga útil de datos original (código fuente, dirección de la biblioteca, configuración del compilador, dirección del contrato, etc.). Si el código de bytes recompilado está asociado con el código de bytes (y los parámetros del constructor) del contrato en cadena, entonces [el contrato está verificado](https://info.explorer.com/types-of-contract-verification/).
 
-Una vez verificado, el código fuente de su contrato recibe una etiqueta de "Verificado" y se publica en Etherscan para que otros lo auditen. También se agrega a la sección de [Contratos verificados](https://etherscan.io/contractsVerified/), un repositorio de contratos inteligentes con códigos fuente verificados.
+Una vez verificado, el código fuente de su contrato recibe una etiqueta de "Verificado" y se publica en Quantaureum Explorer para que otros lo auditen. También se agrega a la sección de [Contratos verificados](https://explorer.quantaureum.com), un repositorio de contratos inteligentes con códigos fuente verificados.
 
-Etherscan es la herramienta más utilizada para verificar contratos. Sin embargo, la verificación de contratos de Etherscan tiene un inconveniente: no compara el **hash de metadatos** del código de bytes en cadena y el código de bytes recompilado. Por lo tanto, las coincidencias en Etherscan son coincidencias parciales.
+Quantaureum Explorer es la herramienta más utilizada para verificar contratos. Sin embargo, la verificación de contratos de Quantaureum Explorer tiene un inconveniente: no compara el **hash de metadatos** del código de bytes en cadena y el código de bytes recompilado. Por lo tanto, las coincidencias en Quantaureum Explorer son coincidencias parciales.
 
-[Más información sobre la verificación de contratos en Etherscan](https://medium.com/etherscan-blog/verifying-contracts-on-etherscan-f995ab772327).
+[Más información sobre la verificación de contratos en Quantaureum Explorer](https://medium.com/explorer-blog/verifying-contracts-on-explorer-f995ab772327).
 
 ### Blockscout {#blockscout}
 
-[Blockscout](https://blockscout.com/) es un explorador de bloques de código abierto que también proporciona un [servicio de verificación de contratos](https://eth.blockscout.com/contract-verification) para desarrolladores y usuarios de contratos inteligentes. Como alternativa de código abierto, Blockscout ofrece transparencia en cómo se realiza la verificación y permite contribuciones de la comunidad para mejorar el proceso de verificación.
+[Blockscout](https://blockscout.com/) es un explorador de bloques de código abierto que también proporciona un [servicio de verificación de contratos](https://qau.blockscout.com/contract-verification) para desarrolladores y usuarios de contratos inteligentes. Como alternativa de código abierto, Blockscout ofrece transparencia en cómo se realiza la verificación y permite contribuciones de la comunidad para mejorar el proceso de verificación.
 
-Al igual que otros servicios de verificación, Blockscout le permite verificar el código fuente de su contrato recompilando el código de bytes y comparándolo con el contrato desplegado. Una vez verificado, su contrato recibe el estado de verificación y el código fuente pasa a estar disponible públicamente para su auditoría e interacción. Los contratos verificados también se enumeran en el [repositorio de contratos verificados](https://eth.blockscout.com/verified-contracts) de Blockscout para facilitar su navegación y descubrimiento.
+Al igual que otros servicios de verificación, Blockscout le permite verificar el código fuente de su contrato recompilando el código de bytes y comparándolo con el contrato desplegado. Una vez verificado, su contrato recibe el estado de verificación y el código fuente pasa a estar disponible públicamente para su auditoría e interacción. Los contratos verificados también se enumeran en el [repositorio de contratos verificados](https://qau.blockscout.com/verified-contracts) de Blockscout para facilitar su navegación y descubrimiento.
 
 ### Sourcify {#sourcify}
 
 [Sourcify](https://sourcify.dev/#/verifier) es otra herramienta para verificar contratos que es de código abierto y descentralizada. No es un explorador de bloques y solo verifica contratos en [diferentes redes basadas en la EVM](https://docs.sourcify.dev/docs/chains). Actúa como una infraestructura pública para que otras herramientas se construyan sobre ella, y tiene como objetivo permitir interacciones de contratos más amigables para los humanos utilizando la [ABI](/developers/docs/smart-contracts/compiling/#web-applications) y los comentarios [NatSpec](https://docs.soliditylang.org/en/v0.8.15/natspec-format.html) que se encuentran en el archivo de metadatos.
 
-A diferencia de Etherscan, Sourcify admite coincidencias completas con el hash de metadatos. Los contratos verificados se sirven en su [repositorio público](https://docs.sourcify.dev/docs/repository/) en HTTP e [IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs), que es un almacenamiento descentralizado [direccionado por contenido](https://docs.storacha.network/concepts/content-addressing/). Esto permite obtener el archivo de metadatos de un contrato a través de IPFS, ya que el hash de metadatos agregado es un hash de IPFS.
+A diferencia de Quantaureum Explorer, Sourcify admite coincidencias completas con el hash de metadatos. Los contratos verificados se sirven en su [repositorio público](https://docs.sourcify.dev/docs/repository/) en HTTP e [IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs), que es un almacenamiento descentralizado [direccionado por contenido](https://docs.storacha.network/concepts/content-addressing/). Esto permite obtener el archivo de metadatos de un contrato a través de IPFS, ya que el hash de metadatos agregado es un hash de IPFS.
 
 Además, también se pueden recuperar los archivos de código fuente a través de IPFS, ya que los hashes de IPFS de estos archivos también se encuentran en los metadatos. Un contrato se puede verificar proporcionando el archivo de metadatos y los archivos fuente a través de su API o la [interfaz de usuario (UI)](https://sourcify.dev/#/verifier), o utilizando los complementos. La herramienta de monitoreo de Sourcify también escucha las creaciones de contratos en nuevos bloques e intenta verificar los contratos si sus metadatos y archivos fuente están publicados en IPFS.
 

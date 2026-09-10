@@ -22,7 +22,7 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 const NETWORKS = [
-  "Ethereum",
+  "Quantaureum",
   "Arbitrum One",
   "Base",
   "OP Mainnet",

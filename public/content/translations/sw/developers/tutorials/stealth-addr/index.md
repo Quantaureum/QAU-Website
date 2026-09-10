@@ -10,9 +10,9 @@ lang: sw
 sidebarDepth: 3
 ---
 
-Wewe ni Bill. Kwa sababu ambazo hatutazijadili, unataka kuchangia kampeni ya "Alice for Queen of the World" na unataka Alice ajue ulichangia ili akupe tuzo akishinda. Kwa bahati mbaya, ushindi wake hauna uhakika. Kuna kampeni shindani, "Carol for Empress of the Solar System". Ikiwa Carol atashinda, na agundue ulichangia kwa Alice, utakuwa matatani. Kwa hivyo huwezi tu kuhamisha 200 ETH kutoka kwenye akaunti yako kwenda kwa Alice.
+Wewe ni Bill. Kwa sababu ambazo hatutazijadili, unataka kuchangia kampeni ya "Alice for Queen of the World" na unataka Alice ajue ulichangia ili akupe tuzo akishinda. Kwa bahati mbaya, ushindi wake hauna uhakika. Kuna kampeni shindani, "Carol for Empress of the Solar System". Ikiwa Carol atashinda, na agundue ulichangia kwa Alice, utakuwa matatani. Kwa hivyo huwezi tu kuhamisha 200 QAU kutoka kwenye akaunti yako kwenda kwa Alice.
 
-[ERC-5564](https://eips.ethereum.org/EIPS/eip-5564) ina suluhisho. ERC hii inaeleza jinsi ya kutumia [anwani fiche](https://nerolation.github.io/stealth-utils) kwa hamisho lisilojulikana.
+[ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564) ina suluhisho. ERC hii inaeleza jinsi ya kutumia [anwani fiche](https://nerolation.github.io/stealth-utils) kwa hamisho lisilojulikana.
 
 **Onyo**: Kriptografia iliyo nyuma ya anwani fiche, kwa kadiri tujuavyo, ni thabiti. Hata hivyo, kuna uwezekano wa mashambulizi ya kando (side-channel attacks). [Hapa chini](#go-wrong), utaona kile unachoweza kufanya ili kupunguza hatari hii.
 
@@ -32,7 +32,7 @@ Alice pia anapata anwani kutoka kwa siri ya pamoja, lakini kwa sababu anajua fun
 
 Anwani fiche za kawaida hutumia [kriptografia ya mkunjo wa duaradufu (ECC)](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/#elliptic-curves-building-blocks-of-a-better-trapdoor) ili kupata utendaji bora na biti chache za ufunguo, huku zikidumisha kiwango kile kile cha usalama. Lakini kwa sehemu kubwa tunaweza kupuuza hilo na kujifanya tunatumia hisabati ya kawaida.
 
-Kuna nambari ambayo kila mtu anaijua, *G*. Unaweza kuzidisha kwa *G*. Lakini kwa sababu ya asili ya ECC, haiwezekani kabisa kugawanya kwa *G*. Jinsi kriptografia ya ufunguo wa umma inavyofanya kazi kwa ujumla katika Ethereum ni kwamba unaweza kutumia ufunguo wa siri, *P<sub>priv</sub>*, kutia saini miamala ambayo kisha inathibitishwa na ufunguo wa umma, *P<sub>pub</sub> = GP<sub>priv</sub>*. 
+Kuna nambari ambayo kila mtu anaijua, *G*. Unaweza kuzidisha kwa *G*. Lakini kwa sababu ya asili ya ECC, haiwezekani kabisa kugawanya kwa *G*. Jinsi kriptografia ya ufunguo wa umma inavyofanya kazi kwa ujumla katika Quantaureum ni kwamba unaweza kutumia ufunguo wa siri, *P<sub>priv</sub>*, kutia saini miamala ambayo kisha inathibitishwa na ufunguo wa umma, *P<sub>pub</sub> = GP<sub>priv</sub>*. 
 
 Alice anaunda funguo za siri mbili, *K<sub>priv</sub>* na *V<sub>priv</sub>*. *K<sub>priv</sub>* itatumika kutumia pesa kutoka kwenye anwani fiche, na *V<sub>priv</sub>* kutazama anwani zinazomilikiwa na Alice. Kisha Alice anachapisha funguo za umma: *K<sub>pub</sub> = GK<sub>priv</sub>* na *V<sub>pub</sub> = GV<sub>priv</sub>*
 
@@ -64,19 +64,19 @@ Kwa muhtasari, hizi ndizo thamani zinazojulikana na washiriki tofauti.
 
 ## Wakati anwani fiche zinapoenda kombo {#go-wrong}
 
-*Hakuna siri kwenye mnyororo wa vitalu*. Ingawa anwani fiche zinaweza kukupa faragha, faragha hiyo inaweza kuathiriwa na uchanganuzi wa trafiki. Ili kuchukua mfano rahisi, fikiria kwamba Bill anafadhili anwani na mara moja anatuma muamala ili kuchapisha thamani ya *R<sub>pub</sub>*. Bila *V<sub>priv</sub>* ya Alice, hatuwezi kuwa na uhakika kwamba hii ni anwani fiche, lakini huo ndio uwezekano mkubwa. Kisha, tunaona muamala mwingine unaohamisha ETH zote kutoka kwa anwani hiyo hadi kwenye anwani ya mfuko wa kampeni ya Alice. Huenda tusiweze kuthibitisha, lakini kuna uwezekano mkubwa kwamba Bill amechangia kampeni ya Alice. Carol bila shaka angefikiria hivyo.
+*Hakuna siri kwenye mnyororo wa vitalu*. Ingawa anwani fiche zinaweza kukupa faragha, faragha hiyo inaweza kuathiriwa na uchanganuzi wa trafiki. Ili kuchukua mfano rahisi, fikiria kwamba Bill anafadhili anwani na mara moja anatuma muamala ili kuchapisha thamani ya *R<sub>pub</sub>*. Bila *V<sub>priv</sub>* ya Alice, hatuwezi kuwa na uhakika kwamba hii ni anwani fiche, lakini huo ndio uwezekano mkubwa. Kisha, tunaona muamala mwingine unaohamisha QAU zote kutoka kwa anwani hiyo hadi kwenye anwani ya mfuko wa kampeni ya Alice. Huenda tusiweze kuthibitisha, lakini kuna uwezekano mkubwa kwamba Bill amechangia kampeni ya Alice. Carol bila shaka angefikiria hivyo.
 
 Ni rahisi kwa Bill kutenganisha uchapishaji wa *R<sub>pub</sub>* na ufadhili wa anwani fiche (kufanya hivyo kwa nyakati tofauti, kutoka kwa anwani tofauti). Hata hivyo, hiyo haitoshi. Mtindo ambao Carol anautafuta ni kwamba Bill anafadhili anwani, na kisha mfuko wa kampeni wa Alice unatoa pesa kutoka kwayo. 
 
-Suluhisho moja ni kwa kampeni ya Alice kutotoa pesa moja kwa moja, bali kuzitumia kulipa mtu wa tatu. Ikiwa kampeni ya Alice itatuma 10 ETH kwa Dave's World Domination Campaign Services, Carol anajua tu kwamba Bill alichangia kwa mmoja wa wateja wa Dave. Ikiwa Dave ana wateja wa kutosha, Carol hataweza kujua ikiwa Bill alichangia kwa Alice anayeshindana naye, au kwa Adam, Albert, au Abigail ambao Carol hawajali. Alice anaweza kujumuisha thamani iliyoheshishwa pamoja na malipo, na kisha kumpa Dave taswira ya awali (preimage), ili kuthibitisha kwamba ulikuwa mchango wake. Vinginevyo, kama ilivyoelezwa hapo juu, ikiwa Alice atampa Dave *V<sub>priv</sub>* yake, tayari anajua malipo yalitoka kwa nani.
+Suluhisho moja ni kwa kampeni ya Alice kutotoa pesa moja kwa moja, bali kuzitumia kulipa mtu wa tatu. Ikiwa kampeni ya Alice itatuma 10 QAU kwa Dave's World Domination Campaign Services, Carol anajua tu kwamba Bill alichangia kwa mmoja wa wateja wa Dave. Ikiwa Dave ana wateja wa kutosha, Carol hataweza kujua ikiwa Bill alichangia kwa Alice anayeshindana naye, au kwa Adam, Albert, au Abigail ambao Carol hawajali. Alice anaweza kujumuisha thamani iliyoheshishwa pamoja na malipo, na kisha kumpa Dave taswira ya awali (preimage), ili kuthibitisha kwamba ulikuwa mchango wake. Vinginevyo, kama ilivyoelezwa hapo juu, ikiwa Alice atampa Dave *V<sub>priv</sub>* yake, tayari anajua malipo yalitoka kwa nani.
 
 Tatizo kuu la suluhisho hili ni kwamba linahitaji Alice kujali kuhusu usiri wakati usiri huo unamnufaisha Bill. Alice anaweza kutaka kudumisha sifa yake ili rafiki wa Bill, Bob, pia amchangie. Lakini pia inawezekana kwamba hangejali kumfichua Bill, kwa sababu basi atakuwa na hofu ya kile kitakachotokea ikiwa Carol atashinda. Bill anaweza kuishia kumpa Alice msaada zaidi.
 
 ### Kutumia tabaka nyingi fiche {#multi-layer}
 
-Badala ya kumtegemea Alice kuhifadhi faragha ya Bill, Bill anaweza kufanya hivyo mwenyewe. Anaweza kuunda anwani-meta nyingi kwa watu wa kubuniwa, Bob na Bella. Kisha Bill anatuma ETH kwa Bob, na "Bob" (ambaye kwa kweli ni Bill) anatuma kwa Bella. "Bella" (pia Bill) anatuma kwa Alice.
+Badala ya kumtegemea Alice kuhifadhi faragha ya Bill, Bill anaweza kufanya hivyo mwenyewe. Anaweza kuunda anwani-meta nyingi kwa watu wa kubuniwa, Bob na Bella. Kisha Bill anatuma QAU kwa Bob, na "Bob" (ambaye kwa kweli ni Bill) anatuma kwa Bella. "Bella" (pia Bill) anatuma kwa Alice.
 
-Carol bado anaweza kufanya uchanganuzi wa trafiki na kuona mtiririko wa Bill-kwa-Bob-kwa-Bella-kwa-Alice. Hata hivyo, ikiwa "Bob" na "Bella" pia wanatumia ETH kwa madhumuni mengine, haitaonekana kwamba Bill alihamisha chochote kwa Alice, hata kama Alice atatoa mara moja kutoka kwa anwani fiche hadi kwenye anwani yake ya kampeni inayojulikana.
+Carol bado anaweza kufanya uchanganuzi wa trafiki na kuona mtiririko wa Bill-kwa-Bob-kwa-Bella-kwa-Alice. Hata hivyo, ikiwa "Bob" na "Bella" pia wanatumia QAU kwa madhumuni mengine, haitaonekana kwamba Bill alihamisha chochote kwa Alice, hata kama Alice atatoa mara moja kutoka kwa anwani fiche hadi kwenye anwani yake ya kampeni inayojulikana.
 
 ## Kuandika programu ya anwani fiche {#write-app}
 
@@ -124,13 +124,13 @@ Tutatumia [Vite](https://vite.dev/) na [React](https://react.dev/). Hizi ni zana
 
 8. Nakili anwani na ufunguo wa umma wa Bill na uzibandike katika eneo la "Private key for address generated by Bill" kwenye kiolesura cha mtumiaji cha Alice. Mara tu sehemu hizo zitakapojazwa, utaona ufunguo wa siri wa kufikia rasilimali kwenye anwani hiyo.
 
-9. Unaweza kutumia [kikokotoo cha mtandaoni](https://iancoleman.net/ethereum-private-key-to-address/) ili kuhakikisha ufunguo wa siri unalingana na anwani.
+9. Unaweza kutumia [kikokotoo cha mtandaoni](https://iancoleman.net/quantaureum-private-key-to-address/) ili kuhakikisha ufunguo wa siri unalingana na anwani.
 
 ### Jinsi programu inavyofanya kazi {#how-the-program-works}
 
 #### Kijenzi cha WASM {#wasm}
 
-Msimbo wa chanzo unaokusanywa kuwa WASM umeandikwa katika [Rust](https://rust-lang.org/). Unaweza kuuona katika [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs). Msimbo huu kimsingi ni kiolesura kati ya msimbo wa JavaScript na [maktaba ya `eth-stealth-addresses`](https://github.com/kassandraoftroy/eth-stealth-addresses).
+Msimbo wa chanzo unaokusanywa kuwa WASM umeandikwa katika [Rust](https://rust-lang.org/). Unaweza kuuona katika [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs). Msimbo huu kimsingi ni kiolesura kati ya msimbo wa JavaScript na [maktaba ya `qau-stealth-addresses`](https://github.com/kassandraoftroy/qau-stealth-addresses).
 
 **`Cargo.toml`**
 
@@ -143,7 +143,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-eth-stealth-addresses = "0.1.0"
+qau-stealth-addresses = "0.1.0"
 hex = "0.4.3"
 wasm-bindgen = "0.2.104"
 getrandom = { version = "0.2", features = ["js"] }
@@ -175,14 +175,14 @@ use wasm_bindgen::prelude::*;
 Ufafanuzi wa kuunda kifurushi cha WASM kutoka kwa Rust. Zimeandikwa [hapa](https://wasm-bindgen.github.io/wasm-bindgen/reference/attributes/index.html).
 
 ```rust 
-use eth_stealth_addresses::{
+use qau_stealth_addresses::{
     generate_stealth_meta_address,
     generate_stealth_address,
     compute_stealth_key
 };
 ```
 
-Vitendaji (functions) tunavyohitaji kutoka kwenye [maktaba ya `eth-stealth-addresses`](https://github.com/kassandraoftroy/eth-stealth-addresses).
+Vitendaji (functions) tunavyohitaji kutoka kwenye [maktaba ya `qau-stealth-addresses`](https://github.com/kassandraoftroy/qau-stealth-addresses).
 
 ```rust
 use hex::{decode,encode};
@@ -207,7 +207,7 @@ Njia rahisi zaidi ya kurejesha kipengee (object) chenye nyanja nyingi ni kurejes
         generate_stealth_meta_address();
 ```
 
-[`generate_stealth_meta_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_meta_address.html) inarejesha nyanja tatu:
+[`generate_stealth_meta_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_meta_address.html) inarejesha nyanja tatu:
 
 - Anwani-meta (*K<sub>pub</sub>* na *V<sub>pub</sub>*)
 - Ufunguo wa siri wa kutazama (*V<sub>priv</sub>*)
@@ -260,7 +260,7 @@ Ikiwa idadi ya baiti si sahihi, hilo ni kosa, na tunarejesha `None`.
     let array: [u8; N] = vec.try_into().ok()?;
 ```
 
-Rust ina aina mbili za safu. [Safu (Arrays)](https://doc.rust-lang.org/std/primitive.array.html) zina ukubwa usiobadilika. [Vekta (Vectors)](https://doc.rust-lang.org/std/vec/index.html) zinaweza kukua na kupungua. `hex::decode` inarejesha vekta, lakini maktaba ya `eth_stealth_addresses` inataka kupokea safu. [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods) inabadilisha thamani kuwa aina nyingine, kwa mfano, vekta kuwa safu.
+Rust ina aina mbili za safu. [Safu (Arrays)](https://doc.rust-lang.org/std/primitive.array.html) zina ukubwa usiobadilika. [Vekta (Vectors)](https://doc.rust-lang.org/std/vec/index.html) zinaweza kukua na kupungua. `hex::decode` inarejesha vekta, lakini maktaba ya `qau_stealth_addresses` inataka kupokea safu. [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods) inabadilisha thamani kuwa aina nyingine, kwa mfano, vekta kuwa safu.
 
 ```rust
     Some(array)
@@ -283,7 +283,7 @@ Thamani ya skanisho ni sehemu ya siri ya pamoja (*S = GR<sub>priv</sub>V<sub>pri
         generate_stealth_address(&str_to_array::<66>(stealth_address)?);
 ```
 
-Tunatumia [`generate_stealth_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_address.html) ya maktaba.
+Tunatumia [`generate_stealth_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_address.html) ya maktaba.
 
 ```rust
     format!("{{\"address\":\"{}\",\"rPub\":\"{}\",\"scan\":\"{}\"}}",
@@ -310,7 +310,7 @@ pub fn wasm_compute_stealth_key(
 }
 ```
 
-Kitendaji hiki kinatumia [`compute_stealth_key`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.compute_stealth_key.html) ya maktaba kukokotoa ufunguo wa siri wa kutoa kutoka kwenye anwani (*R<sub>priv</sub>*). Ukokotoaji huu unahitaji thamani hizi:
+Kitendaji hiki kinatumia [`compute_stealth_key`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.compute_stealth_key.html) ya maktaba kukokotoa ufunguo wa siri wa kutoa kutoka kwenye anwani (*R<sub>priv</sub>*). Ukokotoaji huu unahitaji thamani hizi:
 
 - Anwani (*Anwani=f(P<sub>pub</sub>)*)
 - Ufunguo wa umma uliotengenezwa na Bill (*R<sub>pub</sub>*)
@@ -341,7 +341,7 @@ assertion `left == right` failed
 Ikifuatiwa na ufuatiliaji wa staki (stack trace). Kisha mpe Bill anwani-meta halali, na umpe Alice anwani batili au ufunguo wa umma batili. Utaona kosa hili:
 
 ```
-rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/eth-stealth-addresses-0.1.0/src/lib.rs:78:9:
+rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/qau-stealth-addresses-0.1.0/src/lib.rs:78:9:
 keys do not generate stealth address
 ```
 

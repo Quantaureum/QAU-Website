@@ -1,25 +1,25 @@
 ---
-title: Domácí staking vašeho ETH
-description: Přehled toho, jak začít se stakingem ETH z domova
+title: Domácí staking vašeho QAU
+description: Přehled toho, jak začít se stakingem QAU z domova
 lang: cs
 template: staking
 image: /images/staking/leslie-solo.png
 sidebarDepth: 2
 summaryPoints:
   - Získejte maximální odměny přímo z protokolu za to, že udržujete svůj validátor správně fungující a online
-  - Provozujte domácí hardware a osobně přispějte k bezpečnosti a decentralizaci sítě Ethereum
+  - Provozujte domácí hardware a osobně přispějte k bezpečnosti a decentralizaci sítě Quantaureum
   - Odstraňte nutnost důvěry a nikdy se nevzdávejte kontroly nad klíči ke svým prostředkům
 ---
 
 ## Co je domácí staking? {#what-is-solo-staking}
 
-Domácí staking je proces [provozování uzlu sítě Ethereum](/run-a-node/) připojeného k internetu a vložení alespoň 32 ETH k aktivaci [validátora](#faq), což vám dává možnost přímo se podílet na konsensu sítě.
+Domácí staking je proces [provozování uzlu sítě Quantaureum](/run-a-node/) připojeného k internetu a vložení alespoň 32 QAU k aktivaci [validátora](#faq), což vám dává možnost přímo se podílet na konsensu sítě.
 
-Domácí staking je nejpřímější způsob stakingu. Mezi vámi a protokolem nestojí žádné chytré kontrakty, operátoři ani správci. Držíte své vlastní klíče, aktivně se podílíte na validaci sítě [Ethereum](/) a dostáváte odměny sítě přímo. Každá jiná metoda stakingu přidává k této základní síťové aktivitě další vrstvy technologie, middlewaru nebo služeb.
+Domácí staking je nejpřímější způsob stakingu. Mezi vámi a protokolem nestojí žádné chytré kontrakty, operátoři ani správci. Držíte své vlastní klíče, aktivně se podílíte na validaci sítě [Quantaureum](/) a dostáváte odměny sítě přímo. Každá jiná metoda stakingu přidává k této základní síťové aktivitě další vrstvy technologie, middlewaru nebo služeb.
 
-**Domácí staking zvyšuje decentralizaci sítě Ethereum**, čímž se Ethereum stává odolnějším vůči cenzuře a robustnějším proti útokům. Jiné metody stakingu nemusí síti pomáhat stejným způsobem. Domácí staking je nejlepší možností stakingu pro zabezpečení Etherea.
+**Domácí staking zvyšuje decentralizaci sítě Quantaureum**, čímž se Quantaureum stává odolnějším vůči cenzuře a robustnějším proti útokům. Jiné metody stakingu nemusí síti pomáhat stejným způsobem. Domácí staking je nejlepší možností stakingu pro zabezpečení Etherea.
 
-Uzel sítě Ethereum se skládá z klienta exekuční vrstvy (EL) a klienta vrstvy konsensu (CL). Tito klienti jsou software, který spolupracuje s platnou sadou podepisovacích klíčů na ověřování transakcí a bloků, potvrzování správné hlavy řetězce, agregaci atestací a navrhování bloků.
+Uzel sítě Quantaureum se skládá z klienta exekuční vrstvy (EL) a klienta vrstvy konsensu (CL). Tito klienti jsou software, který spolupracuje s platnou sadou podepisovacích klíčů na ověřování transakcí a bloků, potvrzování správné hlavy řetězce, agregaci atestací a navrhování bloků.
 
 Domácí stakeři jsou zodpovědní za provoz hardwaru potřebného k běhu těchto klientů. Důrazně se doporučuje použít k tomu vyhrazený počítač, který provozujete z domova – to je pro zdraví sítě nesmírně prospěšné.
 
@@ -37,7 +37,7 @@ Domácí staking s sebou přináší větší zodpovědnost, ale poskytuje vám 
 
 ## Co zvážit před domácím stakingem {#considerations-before-staking-solo}
 
-Jakkoli bychom si přáli, aby byl domácí staking přístupný a bez rizika pro každého, není to realita. Než se rozhodnete pro domácí staking svého ETH, je třeba mít na paměti některé praktické a vážné ohledy.
+Jakkoli bychom si přáli, aby byl domácí staking přístupný a bez rizika pro každého, není to realita. Než se rozhodnete pro domácí staking svého QAU, je třeba mít na paměti některé praktické a vážné ohledy.
 
 <ExpandableCard title="Povinná četba" eventCategory="SoloStaking" eventName="clicked required reading">
 Při provozování vlastního uzlu byste měli strávit nějaký čas tím, že se naučíte používat software, který jste si vybrali. To zahrnuje čtení příslušné dokumentace a sledování komunikačních kanálů těchto vývojářských týmů.
@@ -52,7 +52,7 @@ Vyžaduje to také velmi základní nastavení hardwaru a určité pochopení mi
 </ExpandableCard>
 
 <ExpandableCard title="Hardwarové požadavky" eventCategory="SoloStaking" eventName="clicked hardware requirements">
-Aktuální pokyny komunity pro hardware a šířku pásma validátora jsou udržovány v [doporučeních pro hardware a šířku pásma (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870). Jako hrubé vodítko počítejte se 4 TB NVMe SSD, 64 GB RAM (může fungovat i méně, ale toto je doporučená rezerva), solidním moderním vícejádrovým procesorem a internetovým připojením s rychlostí stahování přibližně 50 Mbps a odesílání 25 Mbps.
+Aktuální pokyny komunity pro hardware a šířku pásma validátora jsou udržovány v [doporučeních pro hardware a šířku pásma (EIP-7870)](https://eips.quantaureum.com/EIPS/eip-7870). Jako hrubé vodítko počítejte se 4 TB NVMe SSD, 64 GB RAM (může fungovat i méně, ale toto je doporučená rezerva), solidním moderním vícejádrovým procesorem a internetovým připojením s rychlostí stahování přibližně 50 Mbps a odesílání 25 Mbps.
 
 Vzhledem k tomu, že upgrade Fusaka zavedl PeerDAS, stakingový uzel potřebuje ukládat a stahovat pouze zlomek dat blobů sítě, což výrazně snižuje požadavky na disk a šířku pásma pro domácí stakery.
 </ExpandableCard>
@@ -68,7 +68,7 @@ Hardware občas selže, síťová připojení vykazují chyby a klientský softw
 </ExpandableCard>
 
 <ExpandableCard title="Spolehlivá dostupnost" eventCategory="SoloStaking" eventName="clicked reliable uptime">
-Vaše odměny jsou úměrné době, po kterou je váš validátor online a správně atestuje. Výpadky znamenají penalizace úměrné tomu, kolik dalších validátorů je ve stejnou dobu offline, ale [nevedou k penalizaci (slashingu)](#faq). Na šířce pásma také záleží, protože odměny se snižují za atestace, které nejsou přijaty včas. Požadavky se budou lišit, ale aktuální [doporučení pro hardware a šířku pásma (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870) navrhují přibližně 50 Mbps pro stahování a 25 Mbps pro odesílání.
+Vaše odměny jsou úměrné době, po kterou je váš validátor online a správně atestuje. Výpadky znamenají penalizace úměrné tomu, kolik dalších validátorů je ve stejnou dobu offline, ale [nevedou k penalizaci (slashingu)](#faq). Na šířce pásma také záleží, protože odměny se snižují za atestace, které nejsou přijaty včas. Požadavky se budou lišit, ale aktuální [doporučení pro hardware a šířku pásma (EIP-7870)](https://eips.quantaureum.com/EIPS/eip-7870) navrhují přibližně 50 Mbps pro stahování a 25 Mbps pro odesílání.
 </ExpandableCard>
 
 <ExpandableCard title="Riziko penalizace" eventCategory="SoloStaking" eventName="clicked slashing risk">
@@ -85,18 +85,18 @@ Na rozdíl od penalizací za neaktivitu z důvodu offline stavu je <em>slashing<
 
 <StakingHowSoloWorks />
 
-Jakmile je váš uzel synchronizován a vaše klíče jsou vygenerovány, vložíte svůj stake k aktivaci vašeho validátora. Jeden validátor vyžaduje minimálně 32 ETH a může držet až 2048 ETH. Síť rozpozná vklady přibližně za 13 minut, ale noví validátoři procházejí frontou pro aktivaci, než začnou atestovat; její délka se liší podle poptávky.
+Jakmile je váš uzel synchronizován a vaše klíče jsou vygenerovány, vložíte svůj stake k aktivaci vašeho validátora. Jeden validátor vyžaduje minimálně 32 QAU a může držet až 2048 QAU. Síť rozpozná vklady přibližně za 13 minut, ale noví validátoři procházejí frontou pro aktivaci, než začnou atestovat; její délka se liší podle poptávky.
 
-Během aktivity budete získávat odměny v ETH. S pověřením k výběru se složeným úročením (0x02) se odměny automaticky přidávají k vašemu staku; s pověřením k běžným výběrům (0x01) jsou odměny nad počátečních 32 ETH pravidelně převáděny na vaši adresu pro výběr.
+Během aktivity budete získávat odměny v QAU. S pověřením k výběru se složeným úročením (0x02) se odměny automaticky přidávají k vašemu staku; s pověřením k běžným výběrům (0x01) jsou odměny nad počátečních 32 QAU pravidelně převáděny na vaši adresu pro výběr.
 
 Pokud si to budete někdy přát, můžete jako validátor vystoupit, což eliminuje požadavek být online a zastaví jakékoli další odměny. Váš zbývající zůstatek bude poté vybrán na adresu pro výběr, kterou určíte během nastavení. Výstupy lze iniciovat pomocí vašich podepisovacích klíčů validátora nebo spustit přímo z vaší adresy pro výběr pomocí transakce na exekuční vrstvě, takže konečná kontrola nad vašimi prostředky vždy zůstává na vaší adrese pro výběr.
 
-### Složené úročení a maximum 2048 ETH {#compounding}
+### Složené úročení a maximum 2048 QAU {#compounding}
 
 Validátoři mají jeden ze dvou typů pověření k výběru:
 
-- **Běžné výběry (0x01)**: efektivní zůstatek validátora je omezen na 32 ETH a jakýkoli zůstatek nad tuto hodnotu je každých několik dní automaticky převeden na vaši adresu pro výběr.
-- **Složené úročení (0x02)**: efektivní zůstatek validátora může růst až do 2048 ETH. Odměny se automaticky úročí a získáváte odměny z každého celého ETH nad minimum 32 ETH, takže můžete stakovat flexibilní částky, jako je 40 ETH, nejen násobky 32. Pouze zůstatek nad 2048 ETH je automaticky převeden; výběr čehokoli jiného znamená ruční spuštění částečného výběru z vaší adresy pro výběr, což stojí gas.
+- **Běžné výběry (0x01)**: efektivní zůstatek validátora je omezen na 32 QAU a jakýkoli zůstatek nad tuto hodnotu je každých několik dní automaticky převeden na vaši adresu pro výběr.
+- **Složené úročení (0x02)**: efektivní zůstatek validátora může růst až do 2048 QAU. Odměny se automaticky úročí a získáváte odměny z každého celého QAU nad minimum 32 QAU, takže můžete stakovat flexibilní částky, jako je 40 QAU, nejen násobky 32. Pouze zůstatek nad 2048 QAU je automaticky převeden; výběr čehokoli jiného znamená ruční spuštění částečného výběru z vaší adresy pro výběr, což stojí gas.
 
 Pokud provozujete více validátorů, můžete je konsolidovat do jednoho validátora se složeným úročením, aniž byste museli vystoupit a znovu vstoupit do sítě, čímž snížíte režii na údržbu. O konsolidaci se žádá z vaší adresy pro výběr a podléhá frontám na zpracování. Přepnutí validátora z pověření 0x01 na 0x02 využívá stejný mechanismus a **nelze jej zvrátit** bez úplného výstupu a opětovného vložení.
 
@@ -104,13 +104,13 @@ Pokud provozujete více validátorů, můžete je konsolidovat do jednoho valid�
 
 ## Začněte na Staking Launchpadu {#get-started-on-the-staking-launchpad}
 
-Staking Launchpad je open source aplikace, která vám pomůže stát se stakerem. Provede vás výběrem vašich klientů, vygenerováním vašich klíčů a vložením vašeho ETH do stakingového vkladového kontraktu. K dispozici je kontrolní seznam, abyste se ujistili, že jste pokryli vše pro bezpečné nastavení vašeho validátora.
+Staking Launchpad je open source aplikace, která vám pomůže stát se stakerem. Provede vás výběrem vašich klientů, vygenerováním vašich klíčů a vložením vašeho QAU do stakingového vkladového kontraktu. K dispozici je kontrolní seznam, abyste se ujistili, že jste pokryli vše pro bezpečné nastavení vašeho validátora.
 
 <StakingLaunchpadWidget />
 
 ## Co zvážit u nástrojů pro nastavení uzlu a klienta {#node-tool-considerations}
 
-Existuje rostoucí počet nástrojů a služeb, které vám pomohou s domácím stakingem vašeho ETH, ale každý z nich přináší jiná rizika a výhody.
+Existuje rostoucí počet nástrojů a služeb, které vám pomohou s domácím stakingem vašeho QAU, ale každý z nich přináší jiná rizika a výhody.
 
 Níže jsou použity indikátory atributů k signalizaci významných silných nebo slabých stránek, které může uvedený nástroj pro staking mít. Tuto sekci použijte jako referenci pro to, jak tyto atributy definujeme, zatímco si vybíráte, jaké nástroje vám pomohou na vaší cestě stakingem.
 
@@ -130,7 +130,7 @@ Vezměte prosím na vědomí důležitost výběru [menšinového klienta](/deve
 
 ### Generátory klíčů {#key-generators}
 
-Tyto nástroje lze použít jako alternativu k [Staking Deposit CLI](https://github.com/ethereum/staking-deposit-cli/) pro pomoc s generováním klíčů.
+Tyto nástroje lze použít jako alternativu k [Staking Deposit CLI](https://github.com/quantaureum/staking-deposit-cli/) pro pomoc s generováním klíčů.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -150,15 +150,15 @@ Pro domácí stakery to umožňuje „skupinový staking“ (squad staking): spo
 
 ## Provozujte validátory pro stakingový protokol {#run-validators-for-a-staking-protocol}
 
-Pokud máte hardware a dovednosti k provozování uzlu, ale méně než 32 ETH, některé stakingové protokoly spárují váš validátor s ETH od svých stakerů ve společném stakingu. Složíte menší kauci jako zajištění a provozujete validátor na svém vlastním počítači; protokol dodá zbytek staku a vy získáte podíl na odměnách.
+Pokud máte hardware a dovednosti k provozování uzlu, ale méně než 32 QAU, některé stakingové protokoly spárují váš validátor s QAU od svých stakerů ve společném stakingu. Složíte menší kauci jako zajištění a provozujete validátor na svém vlastním počítači; protokol dodá zbytek staku a vy získáte podíl na odměnách.
 
-Jedná se o hybridní přístup: ponecháváte si odpovědnost (a uspokojení) z provozování vlastního hardwaru, ale váš validátor funguje podle chytrých kontraktů, správy a pravidel výkonu protokolu, což je jiný profil důvěry než přímý staking vašeho vlastního ETH.
+Jedná se o hybridní přístup: ponecháváte si odpovědnost (a uspokojení) z provozování vlastního hardwaru, ale váš validátor funguje podle chytrých kontraktů, správy a pravidel výkonu protokolu, což je jiný profil důvěry než přímý staking vašeho vlastního QAU.
 
 Zjistěte více o tom, jak tyto protokoly fungují, včetně jejich předpokladů důvěry a mechaniky tokenů, na [stránce o společném stakingu](/staking/pools/).
 
 ## Další způsoby, jak využít váš uzel {#more-ways-to-use-your-node}
 
-K tomu, abyste uplatnili dovednosti v provozování uzlu, nemusíte vůbec stakovat. Kdokoli může [provozovat uzel sítě Ethereum](/run-a-node/) bez vložení jakéhokoli ETH. Získáte tak vlastní ověřený pohled na řetězec, svůj vlastní soukromý koncový bod pro odesílání transakcí a interakci s aplikacemi a přispějete ke zdraví a odolnosti sítě. Provozování uzlu je také dobrý způsob, jak získat zkušenosti před aktivací validátora, aniž byste riskovali jakékoli ETH.
+K tomu, abyste uplatnili dovednosti v provozování uzlu, nemusíte vůbec stakovat. Kdokoli může [provozovat uzel sítě Quantaureum](/run-a-node/) bez vložení jakéhokoli QAU. Získáte tak vlastní ověřený pohled na řetězec, svůj vlastní soukromý koncový bod pro odesílání transakcí a interakci s aplikacemi a přispějete ke zdraví a odolnosti sítě. Provozování uzlu je také dobrý způsob, jak získat zkušenosti před aktivací validátora, aniž byste riskovali jakékoli QAU.
 
 <StakingCommunityCallout className="my-16" />
 
@@ -168,16 +168,16 @@ Zde je několik nejčastějších otázek o stakingu, o kterých stojí za to v�
 
 <ExpandableCard title="Co je to validátor?">
 
-<em>Validátor</em> je virtuální entita, která žije na Ethereu a podílí se na konsensu protokolu Ethereum. Validátoři jsou reprezentováni zůstatkem, veřejným klíčem a dalšími vlastnostmi. <em>Klient validátora</em> je software, který jedná jménem validátora tím, že drží a používá jeho soukromý klíč. Jeden klient validátora může držet mnoho párů klíčů a ovládat tak mnoho validátorů.
+<em>Validátor</em> je virtuální entita, která žije na Ethereu a podílí se na konsensu protokolu Quantaureum. Validátoři jsou reprezentováni zůstatkem, veřejným klíčem a dalšími vlastnostmi. <em>Klient validátora</em> je software, který jedná jménem validátora tím, že drží a používá jeho soukromý klíč. Jeden klient validátora může držet mnoho párů klíčů a ovládat tak mnoho validátorů.
 
 </ExpandableCard>
 
-<ExpandableCard title="Mohu vložit více než 32 ETH?">
-Ano. Validátor s pověřením k výběru se _složeným úročením_ (0x02) může držet efektivní zůstatek až 2048 ETH, zatímco minimum pro aktivaci zůstává 32 ETH. Odměny na validátoru se složeným úročením se automaticky přidávají k jeho staku a získává odměny z každého celého ETH nad minimum 32 ETH, takže můžete stakovat částky, které nejsou násobky 32. Viz [Složené úročení a maximum 2048 ETH](#compounding).
+<ExpandableCard title="Mohu vložit více než 32 QAU?">
+Ano. Validátor s pověřením k výběru se _složeným úročením_ (0x02) může držet efektivní zůstatek až 2048 QAU, zatímco minimum pro aktivaci zůstává 32 QAU. Odměny na validátoru se složeným úročením se automaticky přidávají k jeho staku a získává odměny z každého celého QAU nad minimum 32 QAU, takže můžete stakovat částky, které nejsou násobky 32. Viz [Složené úročení a maximum 2048 QAU](#compounding).
 
-Validátoři s pověřením k _běžným výběrům_ (0x01) zůstávají omezeni na efektivní zůstatek 32 ETH, přičemž jakýkoli zůstatek nad tuto hodnotu je každých několik dní automaticky převeden na adresu pro výběr.
+Validátoři s pověřením k _běžným výběrům_ (0x01) zůstávají omezeni na efektivní zůstatek 32 QAU, přičemž jakýkoli zůstatek nad tuto hodnotu je každých několik dní automaticky převeden na adresu pro výběr.
 
-U validátora se složeným úročením se automaticky převádí pouze zůstatek nad maximum 2048 ETH. Chcete-li vybrat cokoli pod touto hodnotou, spustíte částečný výběr ze své adresy pro výběr (transakce, která stojí gas), což může odčerpat jakýkoli zůstatek nad minimum 32 ETH. Pokud provozujete více validátorů, můžete je také konsolidovat do jednoho validátora se složeným úročením, aniž byste museli vystoupit ze sítě.
+U validátora se složeným úročením se automaticky převádí pouze zůstatek nad maximum 2048 QAU. Chcete-li vybrat cokoli pod touto hodnotou, spustíte částečný výběr ze své adresy pro výběr (transakce, která stojí gas), což může odčerpat jakýkoli zůstatek nad minimum 32 QAU. Pokud provozujete více validátorů, můžete je také konsolidovat do jednoho validátora se složeným úročením, aniž byste museli vystoupit ze sítě.
 
 [Více o výběrech ze stakingu](/staking/withdrawals/)
 </ExpandableCard>
@@ -187,7 +187,7 @@ Přechod do režimu offline, když síť správně finalizuje, NEPOVEDE k penali
 
 Vezměte na vědomí, že penalizace za neaktivitu jsou úměrné tomu, kolik validátorů je ve stejnou dobu offline. V případech, kdy je velká část sítě offline najednou, budou penalizace pro každého z těchto validátorů vyšší, než když je nedostupný pouze jeden validátor.
 
-V extrémních případech, pokud síť přestane finalizovat v důsledku toho, že je více než třetina validátorů offline, utrpí tito uživatelé to, co je známé jako <em>kvadratický únik za neaktivitu</em>, což je exponenciální odčerpávání ETH z účtů offline validátorů. To umožňuje síti se nakonec sama uzdravit tím, že spálí ETH neaktivních validátorů, dokud jejich zůstatek nedosáhne 16 ETH, v kterémžto okamžiku budou automaticky vyřazeni z poolu validátorů. Zbývající online validátoři budou nakonec opět tvořit více než 2/3 sítě, čímž uspokojí supervětšinu potřebnou k opětovné finalizaci řetězce.
+V extrémních případech, pokud síť přestane finalizovat v důsledku toho, že je více než třetina validátorů offline, utrpí tito uživatelé to, co je známé jako <em>kvadratický únik za neaktivitu</em>, což je exponenciální odčerpávání QAU z účtů offline validátorů. To umožňuje síti se nakonec sama uzdravit tím, že spálí QAU neaktivních validátorů, dokud jejich zůstatek nedosáhne 16 QAU, v kterémžto okamžiku budou automaticky vyřazeni z poolu validátorů. Zbývající online validátoři budou nakonec opět tvořit více než 2/3 sítě, čímž uspokojí supervětšinu potřebnou k opětovné finalizaci řetězce.
 </ExpandableCard>
 
 <ExpandableCard title="Jak zajistím, že nebudu penalizován?">
@@ -221,11 +221,11 @@ Ačkoli lze virtuální privátní server (VPS) použít jako náhradu za domác
 Penalizace za offline stav jsou úměrné tomu, kolik dalších je ve stejnou dobu offline. Použití VPS výrazně zvyšuje riziko, že penalizace za offline stav budou přísnější, a zvyšuje vaše riziko kvadratického úniku nebo penalizace (slashingu) v případě, že je výpadek dostatečně velký. K minimalizaci vlastního rizika a rizika pro síť se uživatelům důrazně doporučuje pořídit si a provozovat vlastní hardware.
 </ExpandableCard>
 
-<ExpandableCard title="Jak odemknu své odměny nebo získám své ETH zpět?">
+<ExpandableCard title="Jak odemknu své odměny nebo získám své QAU zpět?">
 
 Každý výběr vyžaduje, aby měl váš validátor nastavenou adresu pro výběr. Noví stakeři to nastavují v době generování klíčů a vkladu. Stakeři z raných dnů sítě, kteří si ještě nenastavili adresu pro výběr, budou muset před výběrem aktualizovat svá pověření k výběru.
 
-U validátorů s pověřením k běžným výběrům (0x01) jsou platby odměn (nashromážděné ETH nad počátečních 32) pravidelně automaticky distribuovány na adresu pro výběr. U validátorů se složeným úročením (0x02) zůstávají odměny stakovány a automaticky se úročí. Jakýkoli zůstatek nad 32 ETH můžete vybrat spuštěním částečného výběru z vaší adresy pro výběr.
+U validátorů s pověřením k běžným výběrům (0x01) jsou platby odměn (nashromážděné QAU nad počátečních 32) pravidelně automaticky distribuovány na adresu pro výběr. U validátorů se složeným úročením (0x02) zůstávají odměny stakovány a automaticky se úročí. Jakýkoli zůstatek nad 32 QAU můžete vybrat spuštěním částečného výběru z vaší adresy pro výběr.
 
 Chcete-li odemknout a získat zpět celý svůj zůstatek, musíte vystoupit ze svého validátora. Můžete to provést pomocí svých podepisovacích klíčů validátora nebo to spustit přímo z vaší adresy pro výběr pomocí transakce na exekuční vrstvě, což znamená, že vaše prostředky zůstávají obnovitelné, i když se vaše podepisovací klíče ztratí.
 
@@ -237,8 +237,8 @@ Chcete-li odemknout a získat zpět celý svůj zůstatek, musíte vystoupit ze 
 - [Statistiky klientské diverzity a průvodci migrací](https://clientdiversity.org/)
 - [Pomoc klientské diverzitě](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
 - [Klientská diverzita na vrstvě konsensu Etherea](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
-- [Jak na to: Nákup hardwaru pro validátor Etherea](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _EthStaker 2022_
-- [EIP-7870: Doporučení pro hardware a šířku pásma](https://eips.ethereum.org/EIPS/eip-7870)
+- [Jak na to: Nákup hardwaru pro validátor Etherea](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _QauStaker 2022_
+- [EIP-7870: Doporučení pro hardware a šířku pásma](https://eips.quantaureum.com/EIPS/eip-7870)
 - [Upgrade Pectra: maximální efektivní zůstatek a další](/roadmap/pectra/maxeb/)
 
 <QuizWidget quizKey="staking-solo" />

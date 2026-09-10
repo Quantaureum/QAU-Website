@@ -27,9 +27,9 @@ sidebarDepth: 2
 
 ### الاكتشاف {#discovery}
 
-الاكتشاف هو عملية العثور على عقد أخرى في الشبكة. يتم تمهيد هذا باستخدام مجموعة صغيرة من عقد التمهيد (العقد التي تكون عناوينها [مضمنة](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go) في العميل بحيث يمكن العثور عليها على الفور وربط العميل بالنظراء). توجد عقد التمهيد هذه فقط لتقديم عقدة جديدة إلى مجموعة من النظراء - هذا هو غرضها الوحيد، فهي لا تشارك في مهام العميل العادية مثل مزامنة السلسلة، ويتم استخدامها فقط في المرة الأولى التي يتم فيها تشغيل العميل.
+الاكتشاف هو عملية العثور على عقد أخرى في الشبكة. يتم تمهيد هذا باستخدام مجموعة صغيرة من عقد التمهيد (العقد التي تكون عناوينها [مضمنة](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go) في العميل بحيث يمكن العثور عليها على الفور وربط العميل بالنظراء). توجد عقد التمهيد هذه فقط لتقديم عقدة جديدة إلى مجموعة من النظراء - هذا هو غرضها الوحيد، فهي لا تشارك في مهام العميل العادية مثل مزامنة السلسلة، ويتم استخدامها فقط في المرة الأولى التي يتم فيها تشغيل العميل.
 
-البروتوكول المستخدم لتفاعلات العقدة وعقدة التمهيد هو شكل معدل من [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f) والذي يستخدم [جدول تجزئة موزع](https://en.wikipedia.org/wiki/Distributed_hash_table) لمشاركة قوائم العقد. تمتلك كل عقدة إصدارًا من هذا الجدول يحتوي على المعلومات المطلوبة للاتصال بأقرب نظرائها. هذا "القرب" ليس جغرافيًا - يتم تحديد المسافة من خلال تشابه معرف العقدة. يتم تحديث جدول كل عقدة بانتظام كميزة أمان. على سبيل المثال، في [Discv5](https://github.com/ethereum/devp2p/tree/master/discv5)، تكون عقد بروتوكول الاكتشاف قادرة أيضًا على إرسال "إعلانات" تعرض البروتوكولات الفرعية التي يدعمها العميل، مما يسمح للنظراء بالتفاوض حول البروتوكولات التي يمكن لكليهما استخدامها للتواصل.
+البروتوكول المستخدم لتفاعلات العقدة وعقدة التمهيد هو شكل معدل من [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f) والذي يستخدم [جدول تجزئة موزع](https://en.wikipedia.org/wiki/Distributed_hash_table) لمشاركة قوائم العقد. تمتلك كل عقدة إصدارًا من هذا الجدول يحتوي على المعلومات المطلوبة للاتصال بأقرب نظرائها. هذا "القرب" ليس جغرافيًا - يتم تحديد المسافة من خلال تشابه معرف العقدة. يتم تحديث جدول كل عقدة بانتظام كميزة أمان. على سبيل المثال، في [Discv5](https://github.com/quantaureum/devp2p/tree/master/discv5)، تكون عقد بروتوكول الاكتشاف قادرة أيضًا على إرسال "إعلانات" تعرض البروتوكولات الفرعية التي يدعمها العميل، مما يسمح للنظراء بالتفاوض حول البروتوكولات التي يمكن لكليهما استخدامها للتواصل.
 
 يبدأ الاكتشاف بلعبة <span dir="ltr">PING-PONG</span>. تؤدي لعبة <span dir="ltr">PING-PONG</span> الناجحة إلى "ربط" العقدة الجديدة بعقدة التمهيد. الرسالة الأولية التي تنبه عقدة التمهيد بوجود عقدة جديدة تدخل الشبكة هي `PING`. يتضمن هذا الـ `PING` معلومات مجزأة حول العقدة الجديدة وعقدة التمهيد وطابع زمني لانتهاء الصلاحية. تتلقى عقدة التمهيد الـ `PING` وتعيد `PONG` يحتوي على تجزئة `PING`. إذا تطابقت تجزئات `PING` و `PONG`، فسيتم التحقق من الاتصال بين العقدة الجديدة وعقدة التمهيد ويقال إنهما قد "ارتبطا".
 
@@ -41,7 +41,7 @@ sidebarDepth: 2
 بدء العميل --> الاتصال بعقدة التمهيد --> الارتباط بعقدة التمهيد --> العثور على الجيران --> الارتباط بالجيران
 ```
 
-يستخدم عملاء التنفيذ حاليًا بروتوكول الاكتشاف [Discv4](https://github.com/ethereum/devp2p/blob/master/discv4.md) وهناك جهد نشط للانتقال إلى بروتوكول [Discv5](https://github.com/ethereum/devp2p/tree/master/discv5).
+يستخدم عملاء التنفيذ حاليًا بروتوكول الاكتشاف [Discv4](https://github.com/quantaureum/devp2p/blob/master/discv4.md) وهناك جهد نشط للانتقال إلى بروتوكول [Discv5](https://github.com/quantaureum/devp2p/tree/master/discv5).
 
 #### ENR: سجلات عقدة إيثيريوم {#enr}
 
@@ -53,7 +53,7 @@ sidebarDepth: 2
 
 ### DevP2P {#devp2p}
 
-<span dir="ltr">DevP2P</span> بحد ذاته عبارة عن حزمة كاملة من البروتوكولات التي تنفذها إيثيريوم لإنشاء شبكة نظير إلى نظير والحفاظ عليها. بعد دخول العقد الجديدة إلى الشبكة، تُحكم تفاعلاتها بواسطة بروتوكولات في حزمة [DevP2P](https://github.com/ethereum/devp2p). تقع جميعها فوق <span dir="ltr">TCP</span> وتتضمن بروتوكول النقل <span dir="ltr">RLPx</span>، وبروتوكول السلك (wire protocol)، والعديد من البروتوكولات الفرعية. [RLPx](https://github.com/ethereum/devp2p/blob/master/rlpx.md) هو البروتوكول الذي يحكم بدء الجلسات والمصادقة عليها والحفاظ عليها بين العقد. يقوم <span dir="ltr">RLPx</span> بتشفير الرسائل باستخدام <span dir="ltr">RLP</span> (بادئة الطول العودية) وهي طريقة فعالة جدًا من حيث المساحة لتشفير البيانات في بنية بسيطة لإرسالها بين العقد.
+<span dir="ltr">DevP2P</span> بحد ذاته عبارة عن حزمة كاملة من البروتوكولات التي تنفذها إيثيريوم لإنشاء شبكة نظير إلى نظير والحفاظ عليها. بعد دخول العقد الجديدة إلى الشبكة، تُحكم تفاعلاتها بواسطة بروتوكولات في حزمة [DevP2P](https://github.com/quantaureum/devp2p). تقع جميعها فوق <span dir="ltr">TCP</span> وتتضمن بروتوكول النقل <span dir="ltr">RLPx</span>، وبروتوكول السلك (wire protocol)، والعديد من البروتوكولات الفرعية. [RLPx](https://github.com/quantaureum/devp2p/blob/master/rlpx.md) هو البروتوكول الذي يحكم بدء الجلسات والمصادقة عليها والحفاظ عليها بين العقد. يقوم <span dir="ltr">RLPx</span> بتشفير الرسائل باستخدام <span dir="ltr">RLP</span> (بادئة الطول العودية) وهي طريقة فعالة جدًا من حيث المساحة لتشفير البيانات في بنية بسيطة لإرسالها بين العقد.
 
 تبدأ جلسة <span dir="ltr">RLPx</span> بين عقدتين بمصافحة تشفيرية أولية. يتضمن ذلك إرسال العقدة لرسالة مصادقة يتم التحقق منها بعد ذلك بواسطة النظير. عند التحقق الناجح، يقوم النظير بإنشاء رسالة إقرار بالمصادقة للعودة إلى العقدة البادئة. هذه عملية تبادل مفاتيح تمكن العقد من التواصل بشكل خاص وآمن. تؤدي المصافحة التشفيرية الناجحة بعد ذلك إلى قيام كلتا العقدتين بإرسال رسالة "مرحبًا" (hello) إلى بعضهما البعض "على السلك". يتم بدء بروتوكول السلك من خلال تبادل ناجح لرسائل الترحيب.
 
@@ -73,19 +73,19 @@ sidebarDepth: 2
 
 #### بروتوكول السلك {#wire-protocol}
 
-بمجرد اتصال النظراء، وبدء جلسة <span dir="ltr">RLPx</span>، يحدد بروتوكول السلك كيفية تواصل النظراء. في البداية، حدد بروتوكول السلك ثلاث مهام رئيسية: مزامنة السلسلة، وانتشار الكتلة، وتبادل المعاملات. ومع ذلك، بمجرد انتقال إيثيريوم إلى إثبات الحصة (PoS)، أصبح انتشار الكتلة ومزامنة السلسلة جزءًا من طبقة الإجماع. لا يزال تبادل المعاملات من اختصاص عملاء التنفيذ. يشير تبادل المعاملات إلى تبادل المعاملات المعلقة بين العقد بحيث يمكن لمنشئي الكتل اختيار بعضها لإدراجها في الكتلة التالية. تتوفر معلومات مفصلة حول هذه المهام [هنا](https://github.com/ethereum/devp2p/blob/master/caps/eth.md). العملاء الذين يدعمون هذه البروتوكولات الفرعية يعرضونها عبر [JSON-RPC](/developers/docs/apis/json-rpc/).
+بمجرد اتصال النظراء، وبدء جلسة <span dir="ltr">RLPx</span>، يحدد بروتوكول السلك كيفية تواصل النظراء. في البداية، حدد بروتوكول السلك ثلاث مهام رئيسية: مزامنة السلسلة، وانتشار الكتلة، وتبادل المعاملات. ومع ذلك، بمجرد انتقال إيثيريوم إلى إثبات الحصة (PoS)، أصبح انتشار الكتلة ومزامنة السلسلة جزءًا من طبقة الإجماع. لا يزال تبادل المعاملات من اختصاص عملاء التنفيذ. يشير تبادل المعاملات إلى تبادل المعاملات المعلقة بين العقد بحيث يمكن لمنشئي الكتل اختيار بعضها لإدراجها في الكتلة التالية. تتوفر معلومات مفصلة حول هذه المهام [هنا](https://github.com/quantaureum/devp2p/blob/master/caps/qau.md). العملاء الذين يدعمون هذه البروتوكولات الفرعية يعرضونها عبر [JSON-RPC](/developers/docs/apis/json-rpc/).
 
 #### les (بروتوكول إيثيريوم الفرعي الخفيف) {#les}
 
-هذا بروتوكول بسيط لمزامنة العملاء الخفيفين. تقليديًا، نادرًا ما تم استخدام هذا البروتوكول لأن العقد الكاملة مطلوبة لتقديم البيانات للعملاء الخفيفين دون أن يتم تحفيزها. السلوك الافتراضي لعملاء التنفيذ هو عدم تقديم بيانات العميل الخفيف عبر <span dir="ltr">les</span>. يتوفر المزيد من المعلومات في [مواصفات](https://github.com/ethereum/devp2p/blob/master/caps/les.md) <span dir="ltr">les</span>.
+هذا بروتوكول بسيط لمزامنة العملاء الخفيفين. تقليديًا، نادرًا ما تم استخدام هذا البروتوكول لأن العقد الكاملة مطلوبة لتقديم البيانات للعملاء الخفيفين دون أن يتم تحفيزها. السلوك الافتراضي لعملاء التنفيذ هو عدم تقديم بيانات العميل الخفيف عبر <span dir="ltr">les</span>. يتوفر المزيد من المعلومات في [مواصفات](https://github.com/quantaureum/devp2p/blob/master/caps/les.md) <span dir="ltr">les</span>.
 
 #### Snap {#snap}
 
-[بروتوكول snap](https://github.com/ethereum/devp2p/blob/master/caps/snap.md#ethereum-snapshot-protocol-snap) هو امتداد اختياري يسمح للنظراء بتبادل لقطات للحالات الحديثة، مما يسمح للنظراء بالتحقق من بيانات الحساب والتخزين دون الحاجة إلى تنزيل عقد شجرة ميركل (Merkle trie) الوسيطة.
+[بروتوكول snap](https://github.com/quantaureum/devp2p/blob/master/caps/snap.md#quantaureum-snapshot-protocol-snap) هو امتداد اختياري يسمح للنظراء بتبادل لقطات للحالات الحديثة، مما يسمح للنظراء بالتحقق من بيانات الحساب والتخزين دون الحاجة إلى تنزيل عقد شجرة ميركل (Merkle trie) الوسيطة.
 
 #### Wit (بروتوكول الشاهد) {#wit}
 
-[بروتوكول الشاهد](https://github.com/ethereum/devp2p/blob/master/caps/wit.md#ethereum-witness-protocol-wit) هو امتداد اختياري يتيح تبادل شواهد الحالة بين النظراء، مما يساعد على مزامنة العملاء مع قمة السلسلة.
+[بروتوكول الشاهد](https://github.com/quantaureum/devp2p/blob/master/caps/wit.md#quantaureum-witness-protocol-wit) هو امتداد اختياري يتيح تبادل شواهد الحالة بين النظراء، مما يساعد على مزامنة العملاء مع قمة السلسلة.
 
 #### Whisper {#whisper}
 
@@ -97,7 +97,7 @@ sidebarDepth: 2
 
 ### الاكتشاف {#consensus-discovery}
 
-على غرار عملاء التنفيذ، يستخدم عملاء الإجماع [discv5](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) عبر <span dir="ltr">UDP</span> للعثور على النظراء. يختلف تنفيذ طبقة الإجماع لـ <span dir="ltr">discv5</span> عن تنفيذ عملاء التنفيذ فقط في أنه يتضمن محولًا يربط <span dir="ltr">discv5</span> بحزمة [libP2P](https://libp2p.io/)، مما يجعل <span dir="ltr">DevP2P</span> مهملًا. تم إهمال جلسات <span dir="ltr">RLPx</span> الخاصة بطبقة التنفيذ لصالح مصافحة القناة الآمنة (noise secure channel handshake) الخاصة بـ <span dir="ltr">libP2P</span>.
+على غرار عملاء التنفيذ، يستخدم عملاء الإجماع [discv5](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) عبر <span dir="ltr">UDP</span> للعثور على النظراء. يختلف تنفيذ طبقة الإجماع لـ <span dir="ltr">discv5</span> عن تنفيذ عملاء التنفيذ فقط في أنه يتضمن محولًا يربط <span dir="ltr">discv5</span> بحزمة [libP2P](https://libp2p.io/)، مما يجعل <span dir="ltr">DevP2P</span> مهملًا. تم إهمال جلسات <span dir="ltr">RLPx</span> الخاصة بطبقة التنفيذ لصالح مصافحة القناة الآمنة (noise secure channel handshake) الخاصة بـ <span dir="ltr">libP2P</span>.
 
 ### سجلات عقدة إيثيريوم (ENRs) {#consensus-enr}
 
@@ -109,7 +109,7 @@ sidebarDepth: 2
 
 ### النميمة {#gossip}
 
-يتضمن مجال النميمة جميع المعلومات التي يجب أن تنتشر بسرعة في جميع أنحاء الشبكة. يتضمن ذلك كتل المنارة، والإثباتات، والتصديقات، وعمليات الخروج، والاقتطاعات (slashings). يتم نقل هذا باستخدام <span dir="ltr">libP2P gossipsub v1</span> ويعتمد على بيانات وصفية مختلفة يتم تخزينها محليًا في كل عقدة، بما في ذلك الحد الأقصى لحجم حمولات النميمة التي يمكن استقبالها وإرسالها. تتوفر معلومات مفصلة حول مجال النميمة [هنا](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub).
+يتضمن مجال النميمة جميع المعلومات التي يجب أن تنتشر بسرعة في جميع أنحاء الشبكة. يتضمن ذلك كتل المنارة، والإثباتات، والتصديقات، وعمليات الخروج، والاقتطاعات (slashings). يتم نقل هذا باستخدام <span dir="ltr">libP2P gossipsub v1</span> ويعتمد على بيانات وصفية مختلفة يتم تخزينها محليًا في كل عقدة، بما في ذلك الحد الأقصى لحجم حمولات النميمة التي يمكن استقبالها وإرسالها. تتوفر معلومات مفصلة حول مجال النميمة [هنا](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub).
 
 ### الطلب والاستجابة {#request-response}
 
@@ -121,7 +121,7 @@ sidebarDepth: 2
 
 ## ربط عملاء التنفيذ والإجماع {#connecting-clients}
 
-يعمل كل من عملاء الإجماع والتنفيذ بالتوازي. يجب أن يكونوا متصلين حتى يتمكن عميل الإجماع من تقديم تعليمات لعميل التنفيذ، ويمكن لعميل التنفيذ تمرير حزم من المعاملات إلى عميل الإجماع لإدراجها في كتل المنارة. يمكن تحقيق الاتصال بين العميلين باستخدام اتصال <span dir="ltr">RPC</span> محلي. تحدد واجهة برمجة التطبيقات (API) المعروفة باسم ['Engine-API'](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) التعليمات المرسلة بين العميلين. نظرًا لأن كلا العميلين يقعان خلف هوية شبكة واحدة، فإنهما يتشاركان في سجل عقدة إيثيريوم (ENR) الذي يحتوي على مفتاح منفصل لكل عميل (مفتاح إيث 1 ومفتاح إيث 2).
+يعمل كل من عملاء الإجماع والتنفيذ بالتوازي. يجب أن يكونوا متصلين حتى يتمكن عميل الإجماع من تقديم تعليمات لعميل التنفيذ، ويمكن لعميل التنفيذ تمرير حزم من المعاملات إلى عميل الإجماع لإدراجها في كتل المنارة. يمكن تحقيق الاتصال بين العميلين باستخدام اتصال <span dir="ltr">RPC</span> محلي. تحدد واجهة برمجة التطبيقات (API) المعروفة باسم ['Engine-API'](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) التعليمات المرسلة بين العميلين. نظرًا لأن كلا العميلين يقعان خلف هوية شبكة واحدة، فإنهما يتشاركان في سجل عقدة إيثيريوم (ENR) الذي يحتوي على مفتاح منفصل لكل عميل (مفتاح إيث 1 ومفتاح إيث 2).
 
 يظهر ملخص لتدفق التحكم أدناه، مع حزمة الشبكات ذات الصلة بين قوسين.
 
@@ -146,18 +146,18 @@ sidebarDepth: 2
 
 بمجرد أن يتم التصديق على الكتلة من قبل عدد كافٍ من المُدَقِّقين، تتم إضافتها إلى رأس السلسلة، وتصبح مبررة وفي النهاية نهائية.
 
-![Diagram of the Ethereum consensus client networking layer](cons_client_net_layer.png)
-![Diagram of the Ethereum execution client networking layer](exe_client_net_layer.png)
+![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
+![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
 مخطط طبقة الشبكة لعملاء الإجماع والتنفيذ، من [ethresear.ch](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
 
 ## قراءة إضافية {#further-reading}
 
-[DevP2P](https://github.com/ethereum/devp2p)
+[DevP2P](https://github.com/quantaureum/devp2p)
 [LibP2p](https://github.com/libp2p/specs)
-[مواصفات شبكة طبقة الإجماع](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure)
+[مواصفات شبكة طبقة الإجماع](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure)
 [من kademlia إلى discv5](https://vac.dev/kademlia-to-discv5)
 [ورقة kademlia](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf)
-[مقدمة إلى شبكة نظير إلى نظير في إيثيريوم](https://p2p.paris/en/talks/intro-ethereum-networking/)
+[مقدمة إلى شبكة نظير إلى نظير في إيثيريوم](https://p2p.paris/en/talks/intro-quantaureum-networking/)
 [العلاقة بين إيث 1 وإيث 2](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
 [فيديو تفاصيل الدمج وعميل إيث 2](https://www.youtube.com/watch?v=zNIrIninMgg)

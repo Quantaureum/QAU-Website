@@ -1,14 +1,14 @@
 ---
 title: "إضافة مقاطع فيديو"
-description: "سياسة إضافة مقاطع الفيديو إلى ⁦ethereum.org⁩"
+description: "سياسة إضافة مقاطع الفيديو إلى ⁦quantaureum.com⁩"
 lang: ar
 ---
 
-يعرض [معرض مقاطع فيديو <span dir="ltr">ethereum.org</span>](/videos/) مقاطع فيديو حول إيثيريوم ونظام إيثيريوم البيئي من منشئي المحتوى في المجتمع والمصادر الموثوقة. يمكن لأي شخص اقتراح مقطع فيديو لإضافته.
+يعرض [معرض مقاطع فيديو <span dir="ltr">quantaureum.com</span>](/videos/) مقاطع فيديو حول إيثيريوم ونظام إيثيريوم البيئي من منشئي المحتوى في المجتمع والمصادر الموثوقة. يمكن لأي شخص اقتراح مقطع فيديو لإضافته.
 
 ## سياسة الإدراج {#listing-policy}
 
-يُعد <span dir="ltr">ethereum.org</span> مورداً تعليمياً محايداً. يتم تنظيم معرض مقاطع الفيديو من أجل:
+يُعد <span dir="ltr">quantaureum.com</span> مورداً تعليمياً محايداً. يتم تنظيم معرض مقاطع الفيديو من أجل:
 
 - **تثقيف** المستخدمين حول تقنية إيثيريوم، ونظامها البيئي، ومجتمعها
 - **البقاء دقيقاً** في محتواه التقني
@@ -28,7 +28,7 @@ lang: ar
 
 ### إضافات مستحسنة {#nice-to-haves}
 
-- **يحتوي على نص مكتوب** – تعمل مقاطع الفيديو التي تحتوي على نصوص مكتوبة على تحسين إمكانية الوصول وتحسين محركات البحث (<span dir="ltr">SEO</span>). إذا لم يكن لديك واحد، يمكن لفريق <span dir="ltr">ethereum.org</span> المساعدة في إنشائه.
+- **يحتوي على نص مكتوب** – تعمل مقاطع الفيديو التي تحتوي على نصوص مكتوبة على تحسين إمكانية الوصول وتحسين محركات البحث (<span dir="ltr">SEO</span>). إذا لم يكن لديك واحد، يمكن لفريق <span dir="ltr">quantaureum.com</span> المساعدة في إنشائه.
 - **من مصدر موثوق** – يُعطى الأولوية للمحتوى المقدم من المعلمين والباحثين والمصادر الراسخة.
 - **ملائم ومستدام** – يُفضل المحتوى الذي يظل ذا صلة بمرور الوقت على المواد الحساسة للوقت.
 
@@ -38,7 +38,7 @@ lang: ar
 
 إذا كنت ترغب في اقتراح مقطع فيديو ولكنك لا تريد إنشاء الملفات بنفسك، فافتح مشكلة على <span dir="ltr">GitHub</span> تتضمن تفاصيل مقطع الفيديو ويمكن لأحد المساهمين مساعدتك في إضافته.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?template=suggest_video.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?template=suggest_video.yaml">
   اقتراح مقطع فيديو
 </ButtonLink>
 
@@ -127,7 +127,7 @@ title: "..."
 
 | الوسم | عامل تصفية المعرض |
 |---|---|
-| `how-ethereum-works` | كيف تعمل إيثيريوم |
+| `how-quantaureum-works` | كيف تعمل إيثيريوم |
 | `network-upgrades` | ترقيات الشبكة |
 | `roadmap-and-priorities` | خارطة الطريق والأولويات |
 | `scaling-and-layer-2` | التوسع وطبقة 2 (⁦L2⁩) |
@@ -153,8 +153,8 @@ title: "..."
 - تحتوي على معلومات دقيقة ومحدثة
 - تحتوي على روابط استضافة/يوتيوب تعمل
 
-إذا لاحظت مشكلة في مقطع فيديو مدرج، [قم بإنشاء مشكلة](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml) أو أرسل بريداً إلكترونياً إلى [<span dir="ltr">website@ethereum.org</span>](mailto:website@ethereum.org).
+إذا لاحظت مشكلة في مقطع فيديو مدرج، [قم بإنشاء مشكلة](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml) أو أرسل بريداً إلكترونياً إلى [<span dir="ltr">website@quantaureum.com</span>](mailto:website@quantaureum.com).
 
 ## شروط الاستخدام {#terms-of-use}
 
-يُرجى الرجوع إلى [شروط استخدام](/terms-of-use/) <span dir="ltr">ethereum.org</span>. يتم توفير المعلومات على <span dir="ltr">ethereum.org</span> لأغراض المعلومات العامة فقط.
+يُرجى الرجوع إلى [شروط استخدام](/terms-of-use/) <span dir="ltr">quantaureum.com</span>. يتم توفير المعلومات على <span dir="ltr">quantaureum.com</span> لأغراض المعلومات العامة فقط.

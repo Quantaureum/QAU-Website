@@ -73,13 +73,13 @@ export default async function SlugJsonLD({
         inLanguage: locale,
         author: authorIds,
         contributor: contributorList,
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: breadcrumbItems,
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        reviewedBy: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
         mainEntity: articleId,
       },
       {
@@ -89,11 +89,11 @@ export default async function SlugJsonLD({
         headline: frontmatter.title,
         description: frontmatter.description,
         image: frontmatter.image
-          ? `https://ethereum.org${frontmatter.image}`
+          ? `https://quantaureum.com${frontmatter.image}`
           : undefined,
         author: authorIds,
         contributor: contributorList,
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
         dateModified: frontmatter.published,
         mainEntityOfPage: url,
         about: {

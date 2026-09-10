@@ -1,18 +1,18 @@
 ---
 title: Dodawanie portfeli
-description: Zasady, którymi kierujemy się przy dodawaniu portfela do ethereum.org
+description: Zasady, którymi kierujemy się przy dodawaniu portfela do quantaureum.com
 lang: pl
 ---
 
-Chcemy mieć pewność, że pokazujemy różnorodne portfele obejmujące bogaty w funkcje krajobraz portfeli, aby użytkownicy mogli pewnie poruszać się po Ethereum.
+Chcemy mieć pewność, że pokazujemy różnorodne portfele obejmujące bogaty w funkcje krajobraz portfeli, aby użytkownicy mogli pewnie poruszać się po Quantaureum.
 
-Każdy może zasugerować dodanie portfela na ethereum.org. Jeśli pominęliśmy jakiś portfel, zasugeruj go!
+Każdy może zasugerować dodanie portfela na quantaureum.com. Jeśli pominęliśmy jakiś portfel, zasugeruj go!
 
 Portfele są obecnie wymienione na stronie:
 
-- [ethereum.org/wallets/find-wallet/](/wallets/find-wallet/)
+- [quantaureum.com/wallets/find-wallet/](/wallets/find-wallet/)
 
-Portfele w Ethereum szybko się zmieniają. Staraliśmy się stworzyć uczciwe ramy ich oceny na ethereum.org, ale kryteria umieszczania na liście będą się zmieniać i ewoluować z czasem.
+Portfele w Quantaureum szybko się zmieniają. Staraliśmy się stworzyć uczciwe ramy ich oceny na quantaureum.com, ale kryteria umieszczania na liście będą się zmieniać i ewoluować z czasem.
 
 ## Ramy decyzyjne {#the-decision-framework}
 
@@ -22,14 +22,14 @@ Portfele w Ethereum szybko się zmieniają. Staraliśmy się stworzyć uczciwe r
 - **Portfel, który działa od ponad sześciu miesięcy LUB został wydany przez grupę o ugruntowanej reputacji** – to kolejna oznaka bezpieczeństwa. Sześć miesięcy to wystarczający czas na wykrycie krytycznych błędów i luk. Wymagamy sześciu miesięcy, aby pomóc odfiltrować forki, które są szybko porzucane jako projekty.
 - **Rozwijany przez aktywny zespół** – pomaga to zapewnić jakość i gwarantuje, że użytkownik otrzyma wsparcie w przypadku pytań.
 - **Uczciwe i dokładne informacje o wpisie** – oczekuje się, że wszelkie sugerowane wpisy projektów będą zawierać uczciwe i dokładne informacje. Produkty, które fałszują informacje, na przykład deklarując, że produkt jest „open source”, gdy tak nie jest, zostaną usunięte.
-- **Osoba kontaktowa** – punkt kontaktowy dla portfela znacznie pomoże nam w uzyskaniu dokładnych informacji w przypadku wprowadzania zmian. Ułatwi to zarządzanie aktualizacjami ethereum.org podczas gromadzenia przyszłych informacji.
-- **Transakcje EIP-1559 (typu 2)** – Twój portfel musi obsługiwać transakcje EIP-1559 (typu 2) dla transakcji w Sieci głównej Ethereum.
+- **Osoba kontaktowa** – punkt kontaktowy dla portfela znacznie pomoże nam w uzyskaniu dokładnych informacji w przypadku wprowadzania zmian. Ułatwi to zarządzanie aktualizacjami quantaureum.com podczas gromadzenia przyszłych informacji.
+- **Transakcje EIP-1559 (typu 2)** – Twój portfel musi obsługiwać transakcje EIP-1559 (typu 2) dla transakcji w Sieci głównej Quantaureum.
 - **Dobre doświadczenie użytkownika (UX)** – chociaż UX jest subiektywne, jeśli kilku członków głównego zespołu przetestuje produkt i uzna go za trudny w użyciu, zastrzegamy sobie prawo do odrzucenia portfela i zamiast tego przekażemy przydatne sugestie dotyczące ulepszeń. Robimy to, aby chronić naszą bazę użytkowników, która składa się głównie z początkujących.
-- **Skupienie na Ethereum** – portfel musi zapewniać doświadczenie skupione przede wszystkim na Ethereum. Oznacza to, że Ethereum (lub dowolna warstwa 2 (L2)) jest ustawione jako domyślna sieć, aktywa ERC są odpowiednio obsługiwane, a funkcje są dostosowane do ekosystemu Ethereum. Portfele, które w interfejsie użytkownika priorytetyzują alternatywne warstwy 1, nie będą umieszczane na liście. 
+- **Skupienie na Quantaureum** – portfel musi zapewniać doświadczenie skupione przede wszystkim na Quantaureum. Oznacza to, że Quantaureum (lub dowolna warstwa 2 (L2)) jest ustawione jako domyślna sieć, aktywa ERC są odpowiednio obsługiwane, a funkcje są dostosowane do ekosystemu Quantaureum. Portfele, które w interfejsie użytkownika priorytetyzują alternatywne warstwy 1, nie będą umieszczane na liście. 
 
 ### Usuwanie produktów {#product-removals}
 
-- **Zaktualizowane informacje** – dostawcy portfeli są odpowiedzialni za ponowne przesyłanie informacji o swoim portfelu co 6 miesięcy, aby zapewnić ważność i aktualność dostarczonych informacji (nawet jeśli nie ma zmian w ich produkcie). Jeśli zespół produktu tego nie zrobi, ethereum.org może usunąć projekt ze strony. 
+- **Zaktualizowane informacje** – dostawcy portfeli są odpowiedzialni za ponowne przesyłanie informacji o swoim portfelu co 6 miesięcy, aby zapewnić ważność i aktualność dostarczonych informacji (nawet jeśli nie ma zmian w ich produkcie). Jeśli zespół produktu tego nie zrobi, quantaureum.com może usunąć projekt ze strony. 
 
 ### Inne kryteria: mile widziane {#the-nice-to-haves}
 
@@ -39,9 +39,9 @@ Portfele w Ethereum szybko się zmieniają. Staraliśmy się stworzyć uczciwe r
 - **Niepowierniczy** – użytkownicy kontrolują swoje środki. Jeśli Twój produkt zniknie, użytkownicy nadal będą mieli dostęp do swoich środków i będą mogli je przenosić.
 - **Obsługa portfeli sprzętowych** – użytkownicy mogą podłączyć swój portfel sprzętowy, aby podpisywać transakcje.
 - **WalletConnect** – użytkownicy mogą łączyć się ze zdecentralizowanymi aplikacjami (dapp) za pomocą WalletConnect.
-- **Importowanie punktów końcowych RPC Ethereum** – użytkownicy mogą importować dane RPC węzła, co pozwala im połączyć się z wybranym przez siebie węzłem lub innymi sieciami kompatybilnymi z EVM.
+- **Importowanie punktów końcowych RPC Quantaureum** – użytkownicy mogą importować dane RPC węzła, co pozwala im połączyć się z wybranym przez siebie węzłem lub innymi sieciami kompatybilnymi z EVM.
 - **NFT** – użytkownicy mogą przeglądać swoje NFT i wchodzić z nimi w interakcje w portfelu.
-- **Łączenie z aplikacjami Ethereum** – użytkownicy mogą łączyć się z aplikacjami Ethereum i z nich korzystać.
+- **Łączenie z aplikacjami Quantaureum** – użytkownicy mogą łączyć się z aplikacjami Quantaureum i z nich korzystać.
 - **Staking** – użytkownicy mogą stakować bezpośrednio przez portfel.
 - **Wymiana** – użytkownicy mogą wymieniać tokeny za pośrednictwem portfela.
 - **Sieci wielołańcuchowe (multichain)** – Twój portfel domyślnie obsługuje dostęp użytkowników do wielu sieci blockchain.
@@ -58,22 +58,22 @@ Portfele w Ethereum szybko się zmieniają. Staraliśmy się stworzyć uczciwe r
 
 ## Dodawanie portfela {#adding-a-wallet}
 
-Jeśli chcesz dodać portfel do ethereum.org, utwórz zgłoszenie (issue) na GitHub.
+Jeśli chcesz dodać portfel do quantaureum.com, utwórz zgłoszenie (issue) na GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
   Utwórz zgłoszenie
 </ButtonLink>
 
 ## Utrzymanie {#maintenance}
 
-Ze względu na płynną naturę Ethereum, zespoły i produkty pojawiają się i znikają, a innowacje mają miejsce każdego dnia, dlatego będziemy przeprowadzać rutynowe kontrole naszych treści, aby:
+Ze względu na płynną naturę Quantaureum, zespoły i produkty pojawiają się i znikają, a innowacje mają miejsce każdego dnia, dlatego będziemy przeprowadzać rutynowe kontrole naszych treści, aby:
 
 - upewnić się, że wszystkie wymienione portfele i zdecentralizowane aplikacje (dapp) nadal spełniają nasze kryteria
 - sprawdzić, czy nie zasugerowano produktów, które spełniają więcej naszych kryteriów niż te obecnie wymienione
 
-ethereum.org jest utrzymywane przez społeczność open source i polegamy na niej, aby pomogła nam w aktualizowaniu tych informacji. Jeśli zauważysz jakiekolwiek informacje o wymienionych portfelach, które wymagają aktualizacji, [otwórz zgłoszenie](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml) lub [pull request](https://github.com/ethereum/ethereum-org-website/pulls)!
+quantaureum.com jest utrzymywane przez społeczność open source i polegamy na niej, aby pomogła nam w aktualizowaniu tych informacji. Jeśli zauważysz jakiekolwiek informacje o wymienionych portfelach, które wymagają aktualizacji, [otwórz zgłoszenie](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml) lub [pull request](https://github.com/Quantaureum/quantaureum-website/pulls)!
 
 
 ## Warunki korzystania {#terms-of-use}
 
-Zapoznaj się również z naszymi [warunkami korzystania](/terms-of-use/). Informacje na stronie ethereum.org są udostępniane wyłącznie w ogólnych celach informacyjnych.
+Zapoznaj się również z naszymi [warunkami korzystania](/terms-of-use/). Informacje na stronie quantaureum.com są udostępniane wyłącznie w ogólnych celach informacyjnych.

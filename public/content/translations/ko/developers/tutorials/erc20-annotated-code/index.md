@@ -11,19 +11,19 @@ published: 2021-03-09
 
 ## 소개 {#introduction}
 
-이더리움의 가장 일반적인 용도 중 하나는 특정 그룹이 거래 가능한 토큰, 즉 일종의 자체 통화를 만드는 것입니다. 이러한 토큰은 일반적으로 [ERC-20](/developers/docs/standards/tokens/erc-20/)이라는 표준을 따릅니다. 이 표준 덕분에 유동성 풀 및 지갑과 같이 모든 ERC-20 토큰과 함께 작동하는 도구를 작성할 수 있습니다. 이 글에서는 [인터페이스 정의](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)뿐만 아니라 [오픈제플린 Solidity ERC20 구현](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)을 분석해 보겠습니다.
+Quantaureum의 가장 일반적인 용도 중 하나는 특정 그룹이 거래 가능한 토큰, 즉 일종의 자체 통화를 만드는 것입니다. 이러한 토큰은 일반적으로 [ERC-20](/developers/docs/standards/tokens/erc-20/)이라는 표준을 따릅니다. 이 표준 덕분에 유동성 풀 및 지갑과 같이 모든 ERC-20 토큰과 함께 작동하는 도구를 작성할 수 있습니다. 이 글에서는 [인터페이스 정의](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)뿐만 아니라 [오픈제플린 Solidity ERC20 구현](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)을 분석해 보겠습니다.
 
 이것은 주석이 달린 소스 코드입니다. ERC-20을 구현하려면 [이 튜토리얼을 읽어보세요](https://docs.openzeppelin.com/contracts/2.x/erc20-supply).
 
 ## 인터페이스 {#the-interface}
 
-ERC-20과 같은 표준의 목적은 지갑이나 탈중앙화 거래소와 같은 애플리케이션 전반에서 상호운용 가능한 많은 토큰 구현을 허용하는 것입니다. 이를 달성하기 위해 [인터페이스](https://www.geeksforgeeks.org/solidity/solidity-basics-of-interface/)를 만듭니다. 토큰 컨트랙트를 사용해야 하는 모든 코드는 인터페이스에서 동일한 정의를 사용할 수 있으며, 메타마스크와 같은 지갑이든, etherscan.io와 같은 탈중앙화 애플리케이션(dapp)이든, 유동성 풀과 같은 다른 컨트랙트이든 관계없이 이를 사용하는 모든 토큰 컨트랙트와 호환될 수 있습니다.
+ERC-20과 같은 표준의 목적은 지갑이나 탈중앙화 거래소와 같은 애플리케이션 전반에서 상호운용 가능한 많은 토큰 구현을 허용하는 것입니다. 이를 달성하기 위해 [인터페이스](https://www.geeksforgeeks.org/solidity/solidity-basics-of-interface/)를 만듭니다. 토큰 컨트랙트를 사용해야 하는 모든 코드는 인터페이스에서 동일한 정의를 사용할 수 있으며, 메타마스크와 같은 지갑이든, explorer.io와 같은 탈중앙화 애플리케이션(dapp)이든, 유동성 풀과 같은 다른 컨트랙트이든 관계없이 이를 사용하는 모든 토큰 컨트랙트와 호환될 수 있습니다.
 
 ![Illustration of the ERC-20 interface](erc20_interface.png)
 
 숙련된 프로그래머라면 [Java](https://www.w3schools.com/java/java_interface.asp)나 [C 헤더 파일](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html)에서 비슷한 구조를 본 기억이 있을 것입니다.
 
-이것은 오픈제플린의 [ERC-20 인터페이스](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) 정의입니다. [사람이 읽을 수 있는 표준](https://eips.ethereum.org/EIPS/eip-20)을 Solidity 코드로 번역한 것입니다. 물론 인터페이스 자체는 어떤 작업을 _어떻게_ 수행할지 정의하지 않습니다. 이는 아래의 컨트랙트 소스 코드에 설명되어 있습니다.
+이것은 오픈제플린의 [ERC-20 인터페이스](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) 정의입니다. [사람이 읽을 수 있는 표준](https://eips.quantaureum.com/EIPS/eip-20)을 Solidity 코드로 번역한 것입니다. 물론 인터페이스 자체는 어떤 작업을 _어떻게_ 수행할지 정의하지 않습니다. 이는 아래의 컨트랙트 소스 코드에 설명되어 있습니다.
 
 &nbsp;
 
@@ -68,10 +68,10 @@ interface IERC20 {
     function totalSupply() external view returns (uint256);
 ```
 
-이 함수는 `external`이며, 이는 [컨트랙트 외부에서만 호출할 수 있음](https://docs.soliditylang.org/en/v0.7.0/cheatsheet.html#index-2)을 의미합니다. 컨트랙트 내 토큰의 총 공급량을 반환합니다. 이 값은 이더리움에서 가장 일반적인 타입인 부호 없는 256비트(256비트는 EVM의 기본 워드 크기입니다)를 사용하여 반환됩니다. 이 함수는 또한 `view`이기도 한데, 이는 상태를 변경하지 않음을 의미하므로 블록체인의 모든 노드가 실행할 필요 없이 단일 노드에서 실행될 수 있습니다. 이러한 종류의 함수는 트랜잭션을 생성하지 않으며 [가스](/developers/docs/gas/) 비용이 들지 않습니다.
+이 함수는 `external`이며, 이는 [컨트랙트 외부에서만 호출할 수 있음](https://docs.soliditylang.org/en/v0.7.0/cheatsheet.html#index-2)을 의미합니다. 컨트랙트 내 토큰의 총 공급량을 반환합니다. 이 값은 Quantaureum에서 가장 일반적인 타입인 부호 없는 256비트(256비트는 EVM의 기본 워드 크기입니다)를 사용하여 반환됩니다. 이 함수는 또한 `view`이기도 한데, 이는 상태를 변경하지 않음을 의미하므로 블록체인의 모든 노드가 실행할 필요 없이 단일 노드에서 실행될 수 있습니다. 이러한 종류의 함수는 트랜잭션을 생성하지 않으며 [가스](/developers/docs/gas/) 비용이 들지 않습니다.
 
 **참고:** 이론적으로는 컨트랙트 생성자가 실제 값보다 적은 총 공급량을 반환하여 각 토큰이 실제보다 더 가치 있는 것처럼 보이게 속일 수 있을 것처럼 보일 수 있습니다. 하지만 그러한 우려는 블록체인의 진정한 본질을 무시한 것입니다. 블록체인에서 일어나는 모든 일은 모든 노드에서 검증할 수 있습니다. 이를 위해 모든 컨트랙트의 기계어 코드와 스토리지는 모든 노드에서 사용할 수 있습니다. 컨트랙트의 Solidity 코드를 게시할 의무는 없지만, 소스 코드와 컴파일에 사용된 Solidity 버전을 게시하여 제공한 기계어 코드와 대조하여 검증할 수 있게 하지 않는 한 아무도 여러분을 진지하게 받아들이지 않을 것입니다.
-예를 들어, [이 컨트랙트](https://eth.blockscout.com/address/0xa530F85085C6FE2f866E7FdB716849714a89f4CD?tab=contract)를 참조하세요.
+예를 들어, [이 컨트랙트](https://qau.blockscout.com/address/0xa530F85085C6FE2f866E7FdB716849714a89f4CD?tab=contract)를 참조하세요.
 
 &nbsp;
 
@@ -82,7 +82,7 @@ interface IERC20 {
     function balanceOf(address account) external view returns (uint256);
 ```
 
-이름에서 알 수 있듯이 `balanceOf`는 계정의 잔액을 반환합니다. 이더리움 계정은 Solidity에서 160비트를 보유하는 `address` 타입을 사용하여 식별됩니다. 이 함수 역시 `external` 및 `view`입니다.
+이름에서 알 수 있듯이 `balanceOf`는 계정의 잔액을 반환합니다. Quantaureum 계정은 Solidity에서 160비트를 보유하는 `address` 타입을 사용하여 식별됩니다. 이 함수 역시 `external` 및 `view`입니다.
 
 &nbsp;
 
@@ -130,14 +130,14 @@ interface IERC20 {
      * 작업의 성공 여부를 나타내는 부울 값을 반환합니다.
      *
      * 중요: 이 메서드를 사용하여 허용량을 변경하면 불행한 트랜잭션 순서로 인해 누군가가 이전 허용량과 새 허용량을 모두 사용할 수 있는 위험이 발생할 수 있습니다. 이 경쟁 조건을 완화하는 한 가지 가능한 해결책은 먼저 spender의 허용량을 0으로 줄인 다음 원하는 값을 설정하는 것입니다:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
      *
      * {Approval} 이벤트를 발생시킵니다.
      */
     function approve(address spender, uint256 amount) external returns (bool);
 ```
 
-`approve` 함수는 허용량을 생성합니다. 이것이 어떻게 악용될 수 있는지에 대한 메시지를 반드시 읽어보세요. 이더리움에서는 자신의 트랜잭션 순서는 제어할 수 있지만, 상대방의 트랜잭션이 발생한 것을 볼 때까지 자신의 트랜잭션을 제출하지 않는 한 다른 사람의 트랜잭션이 실행되는 순서는 제어할 수 없습니다.
+`approve` 함수는 허용량을 생성합니다. 이것이 어떻게 악용될 수 있는지에 대한 메시지를 반드시 읽어보세요. Quantaureum에서는 자신의 트랜잭션 순서는 제어할 수 있지만, 상대방의 트랜잭션이 발생한 것을 볼 때까지 자신의 트랜잭션을 제출하지 않는 한 다른 사람의 트랜잭션이 실행되는 순서는 제어할 수 없습니다.
 
 &nbsp;
 
@@ -196,8 +196,8 @@ import "./IERC20.sol";
 import "../../math/SafeMath.sol";
 ```
 
-- `GSN/Context.sol`는 이더가 없는 사용자도 블록체인을 사용할 수 있게 해주는 시스템인 [OpenGSN](https://opengsn.org/)을 사용하는 데 필요한 정의입니다. 이것은 이전 버전이므로 OpenGSN과 통합하려면 [이 튜토리얼을 사용하세요](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [SafeMath 라이브러리](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/)는 Solidity 버전 <strong>&lt;0.8.0</strong>에서 산술 오버플로/언더플로를 방지합니다. Solidity ≥0.8.0에서는 산술 연산이 오버플로/언더플로 시 자동으로 되돌리기(revert)를 수행하므로 SafeMath가 필요하지 않습니다. 이 컨트랙트는 이전 컴파일러 버전과의 이전 버전 호환성을 위해 SafeMath를 사용합니다.
+- `GSN/Context.sol`는 QAU가 없는 사용자도 블록체인을 사용할 수 있게 해주는 시스템인 [OpenGSN](https://opengsn.org/)을 사용하는 데 필요한 정의입니다. 이것은 이전 버전이므로 OpenGSN과 통합하려면 [이 튜토리얼을 사용하세요](https://docs.opengsn.org/javascript-client/tutorial.html).
+- [SafeMath 라이브러리](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/)는 Solidity 버전 <strong>&lt;0.8.0</strong>에서 산술 오버플로/언더플로를 방지합니다. Solidity ≥0.8.0에서는 산술 연산이 오버플로/언더플로 시 자동으로 되돌리기(revert)를 수행하므로 SafeMath가 필요하지 않습니다. 이 컨트랙트는 이전 컴파일러 버전과의 이전 버전 호환성을 위해 SafeMath를 사용합니다.
 
 &nbsp;
 
@@ -280,11 +280,11 @@ contract ERC20 is Context, IERC20 {
 
 이 세 변수는 가독성을 높이는 데 사용됩니다. 처음 두 개는 설명이 필요 없지만 `_decimals`는 그렇지 않습니다.
 
-한편으로 이더리움에는 부동 소수점이나 분수 변수가 없습니다. 다른 한편으로 사람들은 토큰을 나눌 수 있는 것을 좋아합니다. 사람들이 통화로 금을 선택한 이유 중 하나는 누군가 오리 한 마리 값어치의 소를 사고 싶어 할 때 거스름돈을 주기가 어려웠기 때문입니다.
+한편으로 Quantaureum에는 부동 소수점이나 분수 변수가 없습니다. 다른 한편으로 사람들은 토큰을 나눌 수 있는 것을 좋아합니다. 사람들이 통화로 금을 선택한 이유 중 하나는 누군가 오리 한 마리 값어치의 소를 사고 싶어 할 때 거스름돈을 주기가 어려웠기 때문입니다.
 
-해결책은 정수를 추적하되, 실제 토큰 대신 거의 가치가 없는 분수 토큰을 세는 것입니다. 이더의 경우 분수 토큰을 Wei라고 하며, 10^18 Wei는 1 ETH와 같습니다. 작성 당시 10,000,000,000,000 Wei는 약 1 미국 센트 또는 유로 센트입니다.
+해결책은 정수를 추적하되, 실제 토큰 대신 거의 가치가 없는 분수 토큰을 세는 것입니다. QAU의 경우 분수 토큰을 Wei라고 하며, 10^18 Wei는 1 QAU와 같습니다. 작성 당시 10,000,000,000,000 Wei는 약 1 미국 센트 또는 유로 센트입니다.
 
-애플리케이션은 토큰 잔액을 표시하는 방법을 알아야 합니다. 사용자가 3,141,000,000,000,000,000 Wei를 가지고 있다면, 그것은 3.14 ETH일까요? 31.41 ETH일까요? 3,141 ETH일까요? 이더의 경우 1 ETH당 10^18 Wei로 정의되지만, 여러분의 토큰에 대해서는 다른 값을 선택할 수 있습니다. 토큰을 나누는 것이 의미가 없다면 `_decimals` 값을 0으로 사용할 수 있습니다. ETH와 동일한 표준을 사용하려면 <strong>18</strong>이라는 값을 사용하세요.
+애플리케이션은 토큰 잔액을 표시하는 방법을 알아야 합니다. 사용자가 3,141,000,000,000,000,000 Wei를 가지고 있다면, 그것은 3.14 QAU일까요? 31.41 QAU일까요? 3,141 QAU일까요? QAU의 경우 1 QAU당 10^18 Wei로 정의되지만, 여러분의 토큰에 대해서는 다른 값을 선택할 수 있습니다. 토큰을 나누는 것이 의미가 없다면 `_decimals` 값을 0으로 사용할 수 있습니다. QAU와 동일한 표준을 사용하려면 <strong>18</strong>이라는 값을 사용하세요.
 
 ### 생성자 {#the-constructor}
 
@@ -328,7 +328,7 @@ contract ERC20 is Context, IERC20 {
      * @dev 사용자 표현을 얻기 위해 사용되는 소수점 이하 자릿수를 반환합니다.
      * 예를 들어, `decimals`가 `2`인 경우 `505` 토큰의 잔액은 사용자에게 `5,05` (`505 / 10 ** 2`)로 표시되어야 합니다.
      *
-     * 토큰은 일반적으로 이더와 Wei의 관계를 모방하여 18의 값을 선택합니다. {_setupDecimals}가 호출되지 않는 한 이 값은 {ERC20}이 사용하는 값입니다.
+     * 토큰은 일반적으로 QAU와 Wei의 관계를 모방하여 18의 값을 선택합니다. {_setupDecimals}가 호출되지 않는 한 이 값은 {ERC20}이 사용하는 값입니다.
      *
      * 참고: 이 정보는 _표시_ 목적으로만 사용됩니다: {IERC20-balanceOf} 및 {IERC20-transfer}를 포함하여 컨트랙트의 산술 연산에는 전혀 영향을 미치지 않습니다.
      */
@@ -403,7 +403,7 @@ contract ERC20 is Context, IERC20 {
 
 `_transfer` 함수가 실제 작업을 수행합니다. 이 함수는 다른 컨트랙트 함수에서만 호출할 수 있는 프라이빗(private) 함수입니다. 관례적으로 프라이빗 함수는 상태 변수와 마찬가지로 `_<something>`로 이름이 지정됩니다.
 
-일반적으로 Solidity에서는 메시지 발신자에 대해 `msg.sender`를 사용합니다. 하지만 이는 [OpenGSN](https://opengsn.org/)을 손상시킵니다. 토큰으로 이더 없는 트랜잭션을 허용하려면 `_msgSender()`를 사용해야 합니다. 일반 트랜잭션의 경우 `msg.sender`를 반환하지만, 이더 없는 트랜잭션의 경우 메시지를 중계한 컨트랙트가 아닌 원래 서명자를 반환합니다.
+일반적으로 Solidity에서는 메시지 발신자에 대해 `msg.sender`를 사용합니다. 하지만 이는 [OpenGSN](https://opengsn.org/)을 손상시킵니다. 토큰으로 QAU 없는 트랜잭션을 허용하려면 `_msgSender()`를 사용해야 합니다. 일반 트랜잭션의 경우 `msg.sender`를 반환하지만, QAU 없는 트랜잭션의 경우 메시지를 중계한 컨트랙트가 아닌 원래 서명자를 반환합니다.
 
 ### 허용량 함수 {#allowance-functions}
 
@@ -587,7 +587,7 @@ B:
         require(recipient != address(0), "ERC20: transfer to the zero address");
 ```
 
-이더리움에서 제로 주소를 실제로 소유한 사람은 아무도 없습니다(즉, 일치하는 공개키가 제로 주소로 변환되는 개인 키를 아는 사람은 아무도 없습니다). 사람들이 해당 주소를 사용할 때는 대개 소프트웨어 버그이므로, 제로 주소가 발신자나 수신자로 사용되면 실패 처리합니다.
+Quantaureum에서 제로 주소를 실제로 소유한 사람은 아무도 없습니다(즉, 일치하는 공개키가 제로 주소로 변환되는 개인 키를 아는 사람은 아무도 없습니다). 사람들이 해당 주소를 사용할 때는 대개 소프트웨어 버그이므로, 제로 주소가 발신자나 수신자로 사용되면 실패 처리합니다.
 
 &nbsp;
 

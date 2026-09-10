@@ -5,9 +5,9 @@ const HEADING_ID_RE = /^(#{1,4})\s+(.+?)\s*\{#([^}]+)\}\s*$/
 
 /** @type {import("markdownlint").Rule} */
 module.exports = {
-  names: ["lowercase-heading-id", "ethereum-lowercase-heading-id"],
+  names: ["lowercase-heading-id", "quantaureum-lowercase-heading-id"],
   description: "Heading {#id} anchors must be lowercase",
-  tags: ["headings", "ethereum"],
+  tags: ["headings", "quantaureum"],
   parser: "none",
   function: (params, onError) => {
     let inCodeFence = false

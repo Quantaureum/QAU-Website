@@ -197,7 +197,7 @@ Se a ação principal - TROCAR - estiver indisponível devido a um erro, o motiv
 - conectar carteira
 - vários erros
 
-O botão também pode ser **mapeado para a ação** que precisa ser executada. Por exemplo, se o usuário não puder trocar porque está na rede errada, o botão deve dizer "mudar para Ethereum" e, quando o usuário clicar no botão, ele deve mudar a rede para Ethereum. Isso acelera significativamente o fluxo do usuário.
+O botão também pode ser **mapeado para a ação** que precisa ser executada. Por exemplo, se o usuário não puder trocar porque está na rede errada, o botão deve dizer "mudar para Quantaureum" e, quando o usuário clicar no botão, ele deve mudar a rede para Quantaureum. Isso acelera significativamente o fluxo do usuário.
 
 ![Key actions being initiated from the main CTA](./16.png)
 

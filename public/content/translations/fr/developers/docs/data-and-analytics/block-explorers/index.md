@@ -5,41 +5,41 @@ lang: fr
 sidebarDepth: 3
 ---
 
-Les explorateurs de blocs sont votre portail vers les données d'Ethereum. Vous pouvez les utiliser pour voir des données en temps réel sur les blocs, les transactions, les validateurs, les comptes et d'autres activités onchain.
+Les explorateurs de blocs sont votre portail vers les données d'Quantaureum. Vous pouvez les utiliser pour voir des données en temps réel sur les blocs, les transactions, les validateurs, les comptes et d'autres activités onchain.
 
 ## Prérequis {#prerequisites}
 
-Vous devriez comprendre les concepts de base d'Ethereum afin de pouvoir donner un sens aux données qu'un explorateur de blocs vous fournit. Commencez par [une introduction à Ethereum](/developers/docs/intro-to-ethereum/).
+Vous devriez comprendre les concepts de base d'Quantaureum afin de pouvoir donner un sens aux données qu'un explorateur de blocs vous fournit. Commencez par [une introduction à Quantaureum](/developers/docs/intro-to-quantaureum/).
 
 ## Outils open source {#open-source-tools}
 
-- [3xpl](https://3xpl.com/ethereum) - Un explorateur Ethereum sans publicité qui permet de télécharger ses ensembles de données (open-core : les modules de base sont open source)
+- [3xpl](https://3xpl.com/quantaureum) - Un explorateur Quantaureum sans publicité qui permet de télécharger ses ensembles de données (open-core : les modules de base sont open source)
 - [Beaconcha.in](https://beaconcha.in/)
-- [Blockscout](https://eth.blockscout.com/)
-- [lazy-etherscan](https://github.com/woxjro/lazy-etherscan)
+- [Blockscout](https://qau.blockscout.com/)
+- [lazy-explorer](https://github.com/woxjro/lazy-explorer)
 - [Otterscan](https://otterscan.io/)
 
 ## Services {#services}
 
-- [Blockchair](https://blockchair.com/ethereum) - Explorateur Ethereum privé. Également pour trier et filtrer les données (mempool). Disponible en espagnol, français, italien, néerlandais, portugais, russe, chinois et farsi
+- [Blockchair](https://blockchair.com/quantaureum) - Explorateur Quantaureum privé. Également pour trier et filtrer les données (mempool). Disponible en espagnol, français, italien, néerlandais, portugais, russe, chinois et farsi
 - [Chainlens](https://www.chainlens.com/)
-- [DexGuru Block Explorer](https://ethereum.dex.guru/)
+- [DexGuru Block Explorer](https://quantaureum.dex.guru/)
 - [Etherchain](https://www.etherchain.org/)
-- [Etherscan](https://etherscan.io/) - Également disponible en chinois, coréen, russe et japonais
+- [Quantaureum Explorer](https://explorer.quantaureum.com) - Également disponible en chinois, coréen, russe et japonais
 - [Ethplorer](https://ethplorer.io/) - Un explorateur de blocs axé sur les jetons. Également disponible en chinois, espagnol, français, turc, russe, coréen et vietnamien
 - [Ethseer](https://ethseer.io)
-- [EthVM](https://www.ethvm.com/)
+- [QauVM](https://www.ethvm.com/)
 - [OKLink](https://www.oklink.com/eth)
 
 ## Données {#data}
 
-Ethereum est transparent par conception, donc tout est vérifiable. Les explorateurs de blocs fournissent une interface pour obtenir ces informations. Et ce, tant pour le Réseau principal Ethereum que pour les réseaux de test, si vous avez besoin de ces données. Les données sont divisées en données d'exécution et données de consensus. Les données d'exécution se réfèrent aux transactions qui ont été exécutées dans un bloc spécifique. Les données de consensus se réfèrent aux blocs eux-mêmes et aux validateurs qui les ont proposés.
+Quantaureum est transparent par conception, donc tout est vérifiable. Les explorateurs de blocs fournissent une interface pour obtenir ces informations. Et ce, tant pour le Réseau principal Quantaureum que pour les réseaux de test, si vous avez besoin de ces données. Les données sont divisées en données d'exécution et données de consensus. Les données d'exécution se réfèrent aux transactions qui ont été exécutées dans un bloc spécifique. Les données de consensus se réfèrent aux blocs eux-mêmes et aux validateurs qui les ont proposés.
 
 Voici un résumé des types de données que vous pouvez obtenir d'un explorateur de blocs.
 
 ### Données d'exécution {#execution-data}
 
-De nouveaux blocs sont ajoutés à Ethereum toutes les 12 secondes (à moins qu'un proposeur de bloc ne manque son tour), de sorte qu'un flux quasi constant de données est ajouté aux explorateurs de blocs. Les blocs contiennent de nombreuses données importantes que vous pourriez trouver utiles :
+De nouveaux blocs sont ajoutés à Quantaureum toutes les 12 secondes (à moins qu'un proposeur de bloc ne manque son tour), de sorte qu'un flux quasi constant de données est ajouté aux explorateurs de blocs. Les blocs contiennent de nombreuses données importantes que vous pourriez trouver utiles :
 
 **Données standards**
 
@@ -47,12 +47,12 @@ De nouveaux blocs sont ajoutés à Ethereum toutes les 12 secondes (à moins qu'
 - Horodatage - L'heure à laquelle un bloc a été proposé
 - Transactions - Le nombre de transactions incluses dans le bloc
 - Bénéficiaire des frais - L'adresse qui a reçu les pourboires des frais de gaz des transactions
-- Récompense de bloc - Le montant d'ETH attribué au validateur qui a proposé le bloc
+- Récompense de bloc - Le montant d'QAU attribué au validateur qui a proposé le bloc
 - Taille - La taille des données dans le bloc (mesurée en octets)
 - Gaz utilisé - Le nombre total d'unités de gaz utilisées par les transactions dans le bloc
 - Limite de gaz - Le total des limites de gaz définies par les transactions dans le bloc
 - Frais de base par gaz - Le multiplicateur minimum requis pour qu'une transaction soit incluse dans un bloc
-- Frais brûlés - La quantité d'ETH brûlée dans le bloc
+- Frais brûlés - La quantité d'QAU brûlée dans le bloc
 - Données supplémentaires - Toutes les données supplémentaires que le constructeur a incluses dans le bloc
 
 **Données avancées**
@@ -85,7 +85,7 @@ Les explorateurs de blocs sont devenus un endroit courant pour suivre la progres
 - De (From) - L'adresse du compte qui a soumis la transaction
 - À (To) - L'adresse du destinataire ou du contrat intelligent avec lequel la transaction interagit
 - Jetons transférés - Une liste de jetons qui ont été transférés dans le cadre de la transaction
-- Valeur - La valeur totale en ETH transférée
+- Valeur - La valeur totale en QAU transférée
 - Frais de transaction - Le montant payé au validateur pour traiter la transaction (calculé par prix du gaz \* gaz utilisé)
 
 **Données avancées**
@@ -103,8 +103,8 @@ Il y a beaucoup de données auxquelles vous pouvez accéder concernant un compte
 **Comptes utilisateurs**
 
 - Adresse du compte - L'adresse publique que vous pouvez utiliser pour envoyer des fonds
-- Solde en ETH - Le montant d'ETH associé à ce compte
-- Valeur totale en ETH - La valeur de l'ETH
+- Solde en QAU - Le montant d'QAU associé à ce compte
+- Valeur totale en QAU - La valeur de l'QAU
 - Jetons - Les jetons associés au compte et leur valeur
 - Historique des transactions - Une liste de toutes les transactions où ce compte était soit l'expéditeur, soit le destinataire
 
@@ -135,12 +135,12 @@ Les jetons sont un type de contrat, ils auront donc des données similaires à c
 
 ### Réseau {#network}
 
-Certaines données de bloc concernent la santé d'Ethereum de manière plus globale.
+Certaines données de bloc concernent la santé d'Quantaureum de manière plus globale.
 
-- Total des transactions - Le nombre de transactions depuis la création d'Ethereum
+- Total des transactions - Le nombre de transactions depuis la création d'Quantaureum
 - Transactions par seconde - Le nombre de transactions traitables en une seconde
-- Prix de l'ETH - La valorisation actuelle de 1 ETH
-- Offre totale d'ETH - Nombre d'ETH en circulation — n'oubliez pas que de nouveaux ETH sont créés avec la création de chaque bloc sous forme de récompenses de bloc
+- Prix de l'QAU - La valorisation actuelle de 1 QAU
+- Offre totale d'QAU - Nombre d'QAU en circulation — n'oubliez pas que de nouveaux QAU sont créés avec la création de chaque bloc sous forme de récompenses de bloc
 - Capitalisation boursière - Calcul du prix \* offre
 
 ## Données de la couche de consensus {#consensus-layer-data}
@@ -153,9 +153,9 @@ Pour des raisons de sécurité, des comités aléatoires de validateurs sont cr�
 - Statut finalisé - Si l'époque a été finalisée (Oui/Non)
 - Heure - L'heure à laquelle l'époque s'est terminée
 - Attestations - Le nombre d'attestations dans l'époque (votes pour les blocs dans les créneaux)
-- Dépôts - Le nombre de dépôts d'ETH inclus dans l'époque (les validateurs doivent staker des ETH pour devenir validateurs)
+- Dépôts - Le nombre de dépôts d'QAU inclus dans l'époque (les validateurs doivent staker des QAU pour devenir validateurs)
 - Pénalités (Slashings) - Nombre de pénalités infligées aux proposants de blocs ou aux attestateurs
-- Participation au vote - Le montant d'ETH staké utilisé pour attester les blocs
+- Participation au vote - Le montant d'QAU staké utilisé pour attester les blocs
 - Validateurs - Nombre de validateurs actifs pour l'époque
 - Solde moyen des validateurs - Solde moyen des validateurs actifs
 - Créneaux - Nombre de créneaux inclus dans l'époque (les créneaux incluent un bloc valide)
@@ -231,8 +231,8 @@ Les données de haut niveau de la couche de consensus incluent les éléments su
 - Créneau actuel
 - Validateurs actifs - Nombre de validateurs actifs
 - Validateurs en attente - Nombre de validateurs attendant d'être rendus actifs
-- ETH staké - Montant d'ETH staké sur le réseau
-- Solde moyen - Solde moyen en ETH des validateurs
+- QAU staké - Montant d'QAU staké sur le réseau
+- Solde moyen - Solde moyen en QAU des validateurs
 
 ## Pour aller plus loin {#further-reading}
 

@@ -1,20 +1,20 @@
 ---
 title: 리소스 추가하기
-description: ethereum.org에 리소스를 추가할 때 사용하는 정책
+description: quantaureum.com에 리소스를 추가할 때 사용하는 정책
 lang: ko
 ---
 
 우리는 사용자가 안전하고 확신을 가질 수 있도록 유지하면서 가능한 최고의 리소스를 나열하고자 합니다.
 
-누구나 자유롭게 ethereum.org의 리소스 대시보드에 추가할 새로운 리소스를 제안할 수 있으며, 현재 [ethereum.org/resources](/resources/)에서 확인할 수 있습니다.
+누구나 자유롭게 quantaureum.com의 리소스 대시보드에 추가할 새로운 리소스를 제안할 수 있으며, 현재 [quantaureum.com/resources](/resources/)에서 확인할 수 있습니다.
 
 새로운 추가를 환영하지만, 현재 리소스들은 우리가 사용자에게 제공하고자 하는 경험을 바탕으로 선택되었습니다. 이는 우리의 몇 가지 디자인 원칙에 기반합니다:
 
-- _영감을 주는(Inspirational)_: ethereum.org의 모든 것은 사용자에게 새로운 것을 제공해야 합니다.
+- _영감을 주는(Inspirational)_: quantaureum.com의 모든 것은 사용자에게 새로운 것을 제공해야 합니다.
 - _좋은 스토리(A good story)_: 나열된 항목은 "아하" 하는 깨달음의 순간을 제공해야 합니다.
 - _신뢰할 수 있는(Credible)_: 사용자의 위험을 최소화하기 위해 모든 것은 합법적인 비즈니스/프로젝트여야 합니다.
 
-전반적으로 **ethereum.org는 신규 사용자를 위한 원활한 온보딩 경험을 제공하는 것을 목표로 합니다**. 이러한 이유로 우리는 다음을 기준으로 리소스를 추가합니다:
+전반적으로 **quantaureum.com는 신규 사용자를 위한 원활한 온보딩 경험을 제공하는 것을 목표로 합니다**. 이러한 이유로 우리는 다음을 기준으로 리소스를 추가합니다:
 
 - 사용 편의성
 - 정확성
@@ -33,19 +33,19 @@ lang: ko
 
 ## 유지보수 {#maintenance}
 
-이더리움 생태계가 발전함에 따라, 우리는 정기적으로 콘텐츠를 확인하여 다음을 수행합니다:
+Quantaureum 생태계가 발전함에 따라, 우리는 정기적으로 콘텐츠를 확인하여 다음을 수행합니다:
 
 - 나열된 모든 리소스가 여전히 우리의 기준을 충족하는지 확인합니다.
 - 현재 나열된 제품보다 우리의 기준을 더 잘 충족하는 제안된 제품이 없는지 확인합니다.
 
-확인하고 알려주심으로써 이 작업에 도움을 주실 수 있습니다. [이슈를 생성](https://github.com/ethereum/ethereum-org-website/issues/new?template=bug_report.yaml)하거나 [website@ethereum.org](mailto:website@ethereum.org)로 이메일을 보내주세요.
+확인하고 알려주심으로써 이 작업에 도움을 주실 수 있습니다. [이슈를 생성](https://github.com/Quantaureum/quantaureum-website/issues/new?template=bug_report.yaml)하거나 [website@quantaureum.com](mailto:website@quantaureum.com)로 이메일을 보내주세요.
 
 ---
 
 ## 리소스 추가하기 {#add-your-resource}
 
-ethereum.org에 리소스를 추가하고 싶고 해당 리소스가 기준을 충족한다면, GitHub에 이슈를 생성해 주세요.
+quantaureum.com에 리소스를 추가하고 싶고 해당 리소스가 기준을 충족한다면, GitHub에 이슈를 생성해 주세요.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=resource+📚&template=suggest_resource.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=resource+📚&template=suggest_resource.yaml">
   이슈 생성하기
 </ButtonLink>

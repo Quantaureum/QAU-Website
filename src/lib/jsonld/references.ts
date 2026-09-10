@@ -1,14 +1,14 @@
 export const REFERENCE = {
   /**
-   * Reference to Ethereum Foundation organization (for use when the full object is already defined elsewhere)
+   * Reference to Quantaureum project organization (for use when the full object is already defined elsewhere)
    */
-  ETHEREUM_FOUNDATION: { "@id": "https://ethereum.foundation/#organization" },
+  QUANTAUREUM_FOUNDATION: { "@id": "https://quantaureum.foundation/#organization" },
   /**
-   * Reference to Ethereum Community organization (for use when the full object is already defined elsewhere)
+   * Reference to Quantaureum Community organization (for use when the full object is already defined elsewhere)
    */
-  ETHEREUM_COMMUNITY: { "@id": "https://ethereum.org/#community-organization" },
+  QUANTAUREUM_COMMUNITY: { "@id": "https://quantaureum.com/#community-organization" },
   /**
-   * Reference to the ethereum.org WebSite entity (for use when the full object is already defined elsewhere in the graph)
+   * Reference to the quantaureum.com WebSite entity (for use when the full object is already defined elsewhere in the graph)
    */
-  ETHEREUM_ORG_WEBSITE: { "@id": "https://ethereum.org/#website" },
+  QUANTAUREUM_ORG_WEBSITE: { "@id": "https://quantaureum.com/#website" },
 } as const

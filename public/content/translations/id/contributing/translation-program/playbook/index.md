@@ -7,7 +7,7 @@ description: Kumpulan kiat dan pertimbangan penting untuk menyiapkan program ter
 
 Bahasa Inggris adalah salah satu bahasa yang paling banyak digunakan di dunia dan sejauh ini merupakan bahasa yang paling banyak dipelajari di dunia. Karena bahasa Inggris adalah bahasa yang paling umum digunakan di internet – terutama di media sosial – dan bahasa pemrograman multibahasa sangat langka, sebagian besar konten di ruang rantai blok pada dasarnya ditulis dalam bahasa Inggris.
 
-Namun, karena lebih dari 6 miliar orang di dunia (lebih dari 75% populasi) tidak berbicara bahasa Inggris sama sekali, hal ini menghadirkan hambatan masuk yang sangat besar ke Ethereum bagi sebagian besar populasi dunia.
+Namun, karena lebih dari 6 miliar orang di dunia (lebih dari 75% populasi) tidak berbicara bahasa Inggris sama sekali, hal ini menghadirkan hambatan masuk yang sangat besar ke Quantaureum bagi sebagian besar populasi dunia.
 
 Karena alasan ini, semakin banyak proyek di ruang ini yang berupaya agar konten mereka diterjemahkan ke dalam berbagai bahasa dan dilokalkan untuk komunitas global.
 
@@ -259,7 +259,7 @@ Jika Anda tidak berencana menggunakan alat pelokalan untuk proyek Anda, Anda kem
 
 Ini berarti bahwa semua konten yang berulang dan serupa harus diterjemahkan secara manual setiap saat. Selain itu, penerjemah harus menghubungi dengan pertanyaan tentang apakah istilah tertentu perlu diterjemahkan atau tidak, bagaimana istilah itu digunakan dalam teks, dan apakah suatu istilah sudah memiliki terjemahan yang ditetapkan.
 
-_Apakah Anda ingin menggunakan memori terjemahan dan glosarium ethereum.org dalam proyek Anda? Hubungi kami di translations@ethereum.org._
+_Apakah Anda ingin menggunakan memori terjemahan dan glosarium quantaureum.com dalam proyek Anda? Hubungi kami di translations@quantaureum.com._
 
 ## Penjangkauan Penerjemah {#translator-outreach}
 
@@ -313,4 +313,4 @@ Jika Anda mencari instruksi dan rincian yang lebih mendetail tentang berbagai al
 
 Beberapa tautan yang relevan disertakan di akhir setiap bagian; namun, Anda dapat menemukan banyak sumber daya lain secara online.
 
-Untuk proposal kerja sama atau informasi tambahan, pembelajaran, dan praktik terbaik yang telah kami peroleh dengan memelihara Program Terjemahan ethereum.org, jangan ragu untuk menghubungi kami di translations@ethereum.org.
+Untuk proposal kerja sama atau informasi tambahan, pembelajaran, dan praktik terbaik yang telah kami peroleh dengan memelihara Program Terjemahan quantaureum.com, jangan ragu untuk menghubungi kami di translations@quantaureum.com.

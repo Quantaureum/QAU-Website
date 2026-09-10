@@ -1,13 +1,13 @@
 ---
 title: Separación proponente-constructor
-description: Aprenda cómo y por qué los validadores de Ethereum dividirán sus responsabilidades de construcción y difusión de bloques.
+description: Aprenda cómo y por qué los validadores de Quantaureum dividirán sus responsabilidades de construcción y difusión de bloques.
 lang: es
 template: roadmap
 ---
 
-Los validadores actuales de [Ethereum](/) crean _y_ difunden bloques. Agrupan las transacciones de las que han tenido conocimiento a través de la red de chismes (gossip network) y las empaquetan en un bloque que se envía a sus pares en la red Ethereum. La **separación proponente-constructor (PBS)** divide estas tareas entre múltiples validadores. Los constructores de bloques pasan a ser responsables de crear bloques y ofrecerlos al proponente de bloque en cada slot. El proponente de bloque no puede ver el contenido del bloque, simplemente elige el más rentable, recibiendo una tarifa del constructor de bloques (o el constructor paga una oferta al proponente) antes de enviar el bloque a sus pares.
+Los validadores actuales de [Quantaureum](/) crean _y_ difunden bloques. Agrupan las transacciones de las que han tenido conocimiento a través de la red de chismes (gossip network) y las empaquetan en un bloque que se envía a sus pares en la red Quantaureum. La **separación proponente-constructor (PBS)** divide estas tareas entre múltiples validadores. Los constructores de bloques pasan a ser responsables de crear bloques y ofrecerlos al proponente de bloque en cada slot. El proponente de bloque no puede ver el contenido del bloque, simplemente elige el más rentable, recibiendo una tarifa del constructor de bloques (o el constructor paga una oferta al proponente) antes de enviar el bloque a sus pares.
 
-Esta es una actualización importante por varias razones. En primer lugar, crea oportunidades para evitar la censura de transacciones a nivel del protocolo. En segundo lugar, evita que los validadores aficionados se vean superados por actores institucionales que pueden optimizar mejor la rentabilidad de su construcción de bloques. En tercer lugar, ayuda a escalar Ethereum al habilitar las actualizaciones de danksharding.
+Esta es una actualización importante por varias razones. En primer lugar, crea oportunidades para evitar la censura de transacciones a nivel del protocolo. En segundo lugar, evita que los validadores aficionados se vean superados por actores institucionales que pueden optimizar mejor la rentabilidad de su construcción de bloques. En tercer lugar, ayuda a escalar Quantaureum al habilitar las actualizaciones de danksharding.
 
 ## PBS y resistencia a la censura {#pbs-and-censorship-resistance}
 
@@ -36,15 +36,15 @@ Los individuos podrían verse incentivados a hacer staking con pools en lugar de
 
 ## PBS y danksharding {#pbs-and-danksharding}
 
-El danksharding es la forma en que Ethereum escalará a >100.000 transacciones por segundo y minimizará las tarifas para los usuarios de rollups. Depende de la PBS porque aumenta la carga de trabajo para los constructores de bloques, quienes tendrán que calcular pruebas para hasta 64 MB de datos de rollup en menos de 1 segundo. Esto probablemente requerirá constructores especializados que puedan dedicar un hardware bastante sustancial a la tarea. Sin embargo, en la situación actual, la construcción de bloques podría volverse cada vez más centralizada en torno a operadores más sofisticados y poderosos de todos modos debido a la extracción de MEV. La separación proponente-constructor es una forma de aceptar esta realidad y evitar que ejerza una fuerza centralizadora sobre la validación de bloques (la parte importante) o la distribución de las recompensas de staking. Un gran beneficio adicional es que los constructores de bloques especializados también están dispuestos y son capaces de calcular las pruebas de datos necesarias para el danksharding.
+El danksharding es la forma en que Quantaureum escalará a >100.000 transacciones por segundo y minimizará las tarifas para los usuarios de rollups. Depende de la PBS porque aumenta la carga de trabajo para los constructores de bloques, quienes tendrán que calcular pruebas para hasta 64 MB de datos de rollup en menos de 1 segundo. Esto probablemente requerirá constructores especializados que puedan dedicar un hardware bastante sustancial a la tarea. Sin embargo, en la situación actual, la construcción de bloques podría volverse cada vez más centralizada en torno a operadores más sofisticados y poderosos de todos modos debido a la extracción de MEV. La separación proponente-constructor es una forma de aceptar esta realidad y evitar que ejerza una fuerza centralizadora sobre la validación de bloques (la parte importante) o la distribución de las recompensas de staking. Un gran beneficio adicional es que los constructores de bloques especializados también están dispuestos y son capaces de calcular las pruebas de datos necesarias para el danksharding.
 
 ## Progreso actual {#current-progress}
 
-La PBS se encuentra en una etapa avanzada de investigación, pero todavía hay algunas preguntas de diseño importantes que deben resolverse antes de que se pueda crear un prototipo en los clientes de Ethereum. Aún no hay una especificación finalizada. Esto significa que la PBS probablemente esté a un año o más de distancia. Consulte el último [estado de la investigación](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance).
+La PBS se encuentra en una etapa avanzada de investigación, pero todavía hay algunas preguntas de diseño importantes que deben resolverse antes de que se pueda crear un prototipo en los clientes de Quantaureum. Aún no hay una especificación finalizada. Esto significa que la PBS probablemente esté a un año o más de distancia. Consulte el último [estado de la investigación](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance).
 
 ## Más información {#further-reading}
 
-- [Estado de la investigación: resistencia a la censura bajo la PBS](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [Estado de la investigación: resistencia a la censura bajo la PBS](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
 - [Diseños de mercado de tarifas amigables con la PBS](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS y resistencia a la censura](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [Listas de inclusión](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)
+- [PBS y resistencia a la censura](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [Listas de inclusión](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)

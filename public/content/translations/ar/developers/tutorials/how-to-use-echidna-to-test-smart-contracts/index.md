@@ -18,11 +18,11 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/tree/master/progr
 ### إيكيدنا من خلال Docker {#echidna-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_يقوم الأمر الأخير بتشغيل <span dir="ltr">eth-security-toolbox</span> في Docker لديه حق الوصول إلى دليلك الحالي. يمكنك تغيير الملفات من مضيفك، وتشغيل الأدوات على الملفات من Docker_
+_يقوم الأمر الأخير بتشغيل <span dir="ltr">qau-security-toolbox</span> في Docker لديه حق الوصول إلى دليلك الحالي. يمكنك تغيير الملفات من مضيفك، وتشغيل الأدوات على الملفات من Docker_
 
 داخل Docker، قم بتشغيل:
 
@@ -37,7 +37,7 @@ cd /home/training
 
 ## مقدمة عن الاختبار العشوائي القائم على الخصائص (Property-based fuzzing) {#introduction-to-property-based-fuzzing}
 
-إيكيدنا هي أداة اختبار عشوائي قائمة على الخصائص، وقد وصفناها في منشورات مدونتنا السابقة ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/)، [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/)، [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
+إيكيدنا هي أداة اختبار عشوائي قائمة على الخصائص، وقد وصفناها في منشورات مدونتنا السابقة ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-quantaureum/)، [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/)، [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
 
 ### الاختبار العشوائي (Fuzzing) {#fuzzing}
 

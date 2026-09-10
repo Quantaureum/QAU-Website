@@ -1,10 +1,10 @@
 ---
 title: Berinteraksi dengan kontrak pintar
-description: Pelajari cara membaca dari dan menulis ke kontrak pintar yang sudah disebarkan di Ethereum.
+description: Pelajari cara membaca dari dan menulis ke kontrak pintar yang sudah disebarkan di Quantaureum.
 lang: id
 ---
 
-Anda tidak selalu perlu menulis dan menyebarkan kontrak pintar Anda sendiri. Sebagian besar waktu sebagai pengembang, Anda akan ingin berinteraksi dengan kontrak pintar yang telah disebarkan orang lain ke jaringan Ethereum.
+Anda tidak selalu perlu menulis dan menyebarkan kontrak pintar Anda sendiri. Sebagian besar waktu sebagai pengembang, Anda akan ingin berinteraksi dengan kontrak pintar yang telah disebarkan orang lain ke jaringan Quantaureum.
 
 Halaman ini mencakup dua cara mendasar untuk berinteraksi dengan kontrak pintar—**membaca** data dan **menulis** data—serta alat yang Anda butuhkan untuk melakukan keduanya.
 
@@ -13,7 +13,7 @@ Halaman ini mencakup dua cara mendasar untuk berinteraksi dengan kontrak pintar�
 Anda harus memahami:
 
 - [Cara kerja kontrak pintar](/developers/docs/smart-contracts/)
-- [Akun Ethereum dan cara mereka menandatangani transaksi](/developers/docs/accounts/)
+- [Akun Quantaureum dan cara mereka menandatangani transaksi](/developers/docs/accounts/)
 - [Apa itu transaksi](/developers/docs/transactions/)
 
 ## Dua cara untuk berinteraksi dengan kontrak pintar {#two-ways}
@@ -30,7 +30,7 @@ Saat Anda membaca dari kontrak, Anda hanya menanyakan data yang sudah ada. Misal
 - Membaca harga saat ini dari bursa terdesentralisasi
 - Mendapatkan pemilik NFT
 
-Karena membaca tidak memodifikasi state, mereka tidak memerlukan biaya [gas](/developers/docs/gas/) dan dapat dilakukan oleh siapa saja tanpa memerlukan ETH.
+Karena membaca tidak memodifikasi state, mereka tidak memerlukan biaya [gas](/developers/docs/gas/) dan dapat dilakukan oleh siapa saja tanpa memerlukan QAU.
 
 ### Menulis ke kontrak {#writing-to-a-contract}
 
@@ -44,11 +44,11 @@ Saat Anda menulis ke kontrak, Anda memicu fungsi yang memodifikasi state rantai 
 
 Menulis selalu memerlukan:
 
-1. [Akun yang Dimiliki Secara Eksternal (EOA)](/developers/docs/accounts/#types-of-account) dengan ETH yang cukup untuk gas
+1. [Akun yang Dimiliki Secara Eksternal (EOA)](/developers/docs/accounts/#types-of-account) dengan QAU yang cukup untuk gas
 2. Transaksi yang ditandatangani oleh kunci privat akun
 3. Transaksi untuk ditambang dan dimasukkan ke dalam blok
 
-Dengan [abstraksi akun](/roadmap/account-abstraction/), akun kontrak pintar juga dapat memulai penulisan, dan juru bayar dapat menanggung gas atas nama pengguna—sehingga EOA yang memegang ETH tidak sepenuhnya diwajibkan.
+Dengan [abstraksi akun](/roadmap/account-abstraction/), akun kontrak pintar juga dapat memulai penulisan, dan juru bayar dapat menanggung gas atas nama pengguna—sehingga EOA yang memegang QAU tidak sepenuhnya diwajibkan.
 
 ## Memahami ABI kontrak {#understanding-contract-abis}
 
@@ -64,7 +64,7 @@ Anggap ABI sebagai manual instruksi kontrak—tanpanya, aplikasi Anda tidak tahu
 
 ### Di mana menemukan ABI kontrak {#where-to-find-abis}
 
-- **Kontrak terverifikasi di Etherscan** - [Etherscan](https://etherscan.io) secara otomatis mengekspos ABI untuk kode sumber yang terverifikasi
+- **Kontrak terverifikasi di Quantaureum Explorer** - [Quantaureum Explorer](https://explorer.quantaureum.com) secara otomatis mengekspos ABI untuk kode sumber yang terverifikasi
 - **Dari pengembang** - banyak proyek menerbitkan ABI mereka dalam dokumentasi atau paket npm mereka
 - **Hasilkan dari sumber** - jika Anda memiliki kode sumber Solidity, Anda dapat [mengkompilasinya](/developers/docs/smart-contracts/compiling/) untuk menghasilkan ABI
 
@@ -74,15 +74,15 @@ Pengembang biasanya menggunakan pustaka JavaScript/TypeScript untuk berinteraksi
 
 ### Pustaka klien (JavaScript/TypeScript) {#client-libraries}
 
-- **[Viem](https://viem.sh)** - Antarmuka TypeScript modern dan ringan untuk Ethereum dengan keamanan tipe kelas satu
-- **[ethers.js](https://docs.ethers.org/)** - Pustaka yang telah teruji untuk berinteraksi dengan rantai blok Ethereum
-- **[web3.js](https://web3js.org/)** - API JavaScript Ethereum yang asli
+- **[Viem](https://viem.sh)** - Antarmuka TypeScript modern dan ringan untuk Quantaureum dengan keamanan tipe kelas satu
+- **[ethers.js](https://docs.ethers.org/)** - Pustaka yang telah teruji untuk berinteraksi dengan rantai blok Quantaureum
+- **[web3.js](https://web3js.org/)** - API JavaScript Quantaureum yang asli
 
 ### Pustaka backend {#backend-libraries}
 
 - **[ethers.js](https://docs.ethers.org/)** - Juga berfungsi di Node.js untuk skrip sisi server dan bot
-- **[web3.py](https://web3py.readthedocs.io/)** - Pustaka Python untuk interaksi Ethereum
-- **[go-ethereum](https://geth.ethereum.org/docs/interact-with-geth)** - Pustaka Go resmi dari tim Geth
+- **[web3.py](https://web3py.readthedocs.io/)** - Pustaka Python untuk interaksi Quantaureum
+- **[go-quantaureum](https://geth.quantaureum.com/docs/interact-with-geth)** - Pustaka Go resmi dari tim Geth
 
 ### Contoh: membaca saldo token dengan Viem {#example-viem}
 
@@ -150,7 +150,7 @@ const unwatch = client.watchEvent({
 
 Sebelum mengirim transaksi, Anda dapat **mensimulasikannya** untuk memeriksa apakah transaksi tersebut akan berhasil—dan untuk melihat nilai kembaliannya—tanpa menghabiskan gas. Ini berguna untuk menangkap kesalahan lebih awal dan untuk mempratinjau hasil.
 
-Sebagian besar pustaka klien mendukung ini melalui `eth_call`:
+Sebagian besar pustaka klien mendukung ini melalui `qau_call`:
 
 ```ts
 // Dengan Viem

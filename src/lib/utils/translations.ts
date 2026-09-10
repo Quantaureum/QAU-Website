@@ -21,22 +21,22 @@ export const EXACT_PATH_NAMESPACE_MAP: Record<string, string> = {
   "/contributing/translation-program/contributors/":
     "page-contributing-translation-program-contributors",
   "/enterprise/": "page-enterprise",
-  "/ethereum-history-founder-and-ownership/":
-    "page-ethereum-history-founder-and-ownership",
-  "/ethereum-vs-bitcoin/": "page-ethereum-vs-bitcoin",
+  "/quantaureum-history-founder-and-ownership/":
+    "page-quantaureum-history-founder-and-ownership",
+  "/quantaureum-vs-bitcoin/": "page-quantaureum-vs-bitcoin",
   "/founders/": "page-founders",
   "/get-eth/": "page-get-eth",
   "/bug-bounty/": "page-bug-bounty",
   "/open-source/": "page-open-source",
   "/privacy/": "page-privacy",
-  "/privacy/ethereum/": "page-privacy-ethereum",
+  "/privacy/quantaureum/": "page-privacy-quantaureum",
   "/quizzes/": "learn-quizzes",
   "/reports/": "page-reports",
   "/reports/trillion-dollar-security/": "page-trillion-dollar-security",
   "/wallets/find-wallet/": "page-wallets-find-wallet",
   "/wallets/": "page-wallets",
-  "/what-is-ether/": "page-what-is-ether",
-  "/what-is-the-ethereum-network/": "page-what-is-the-ethereum-network",
+  "/what-is-QAU/": "page-what-is-QAU",
+  "/what-is-the-quantaureum-network/": "page-what-is-the-quantaureum-network",
 }
 
 export const PREFIX_PATH_NAMESPACE_MAP: Array<[string, string]> = [
@@ -58,7 +58,7 @@ export const PREFIX_PATH_NAMESPACE_MAP: Array<[string, string]> = [
   ["/apps/", "page-apps"],
   ["/energy-consumption/", "page-energy-consumption"],
   ["/eth/", "page-eth"],
-  ["/ethereum-forks/", "page-history"],
+  ["/quantaureum-forks/", "page-history"],
   ["/resources/", "page-resources"],
   ["/stablecoins/", "page-stablecoins"],
   // Ordering matters: /videos/ MUST be before /learn/ to prevent false positive matching
@@ -67,7 +67,7 @@ export const PREFIX_PATH_NAMESPACE_MAP: Array<[string, string]> = [
   ["/stories/", "page-stories"],
   ["/learn/", "page-learn"],
   ["/gas/", "page-gas"],
-  ["/what-is-ethereum/", "page-what-is-ethereum"],
+  ["/what-is-quantaureum/", "page-what-is-quantaureum"],
   ["/run-a-node/", "page-run-a-node"],
   ["/roadmap/", "page-roadmap"],
   ["/start/", "page-start"],
@@ -111,7 +111,7 @@ const GLOSSARY_TOOLTIP_PREFIXES: string[] = [
   "/stablecoins/",
   "/staking/",
   "/run-a-node/",
-  "/what-is-ethereum/",
+  "/what-is-quantaureum/",
   "/eth/",
   "/wallets/",
   "/gas/",

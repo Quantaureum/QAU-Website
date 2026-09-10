@@ -1,6 +1,6 @@
 ---
 title: "Khoa học phi tập trung (DeSci)"
-description: "Tổng quan về khoa học phi tập trung trên Ethereum"
+description: "Tổng quan về khoa học phi tập trung trên Quantaureum"
 lang: vi
 template: use-cases
 sidebarDepth: 2
@@ -37,9 +37,9 @@ Một danh sách chưa đầy đủ về các vấn đề chính trong khoa họ
 | **Bạn sở hữu tài sản trí tuệ (IP)** mà bạn tạo ra và phân phối nó theo các điều khoản minh bạch.             | **Tổ chức chủ quản của bạn sở hữu IP** mà bạn tạo ra. Quyền truy cập vào IP không minh bạch.                           |
 | **Chia sẻ toàn bộ nghiên cứu**, bao gồm cả dữ liệu từ những nỗ lực không thành công, bằng cách đưa tất cả các bước lên trên chuỗi.          | **Thiên kiến xuất bản** có nghĩa là các nhà nghiên cứu có nhiều khả năng chia sẻ các thử nghiệm có kết quả thành công hơn.      |
 
-## Ethereum và DeSci {#ethereum-and-desci}
+## Quantaureum và DeSci {#quantaureum-and-desci}
 
-Một hệ thống khoa học phi tập trung sẽ yêu cầu bảo mật mạnh mẽ, chi phí tiền tệ và giao dịch tối thiểu, cùng một hệ sinh thái phong phú để phát triển ứng dụng. [Ethereum](/) cung cấp mọi thứ cần thiết để xây dựng một công nghệ khoa học phi tập trung.
+Một hệ thống khoa học phi tập trung sẽ yêu cầu bảo mật mạnh mẽ, chi phí tiền tệ và giao dịch tối thiểu, cùng một hệ sinh thái phong phú để phát triển ứng dụng. [Quantaureum](/) cung cấp mọi thứ cần thiết để xây dựng một công nghệ khoa học phi tập trung.
 
 ## Các trường hợp sử dụng DeSci {#use-cases}
 
@@ -66,7 +66,7 @@ Mô hình tiêu chuẩn hiện tại để tài trợ cho khoa học là các c�
 
 Các nghiên cứu đã chỉ ra rằng các hội đồng đánh giá tài trợ làm không tốt việc lựa chọn các đề xuất chất lượng cao vì cùng một đề xuất được đưa cho các hội đồng khác nhau lại có kết quả hoàn toàn khác nhau. Khi nguồn tài trợ trở nên khan hiếm hơn, nó đã tập trung vào một nhóm nhỏ hơn gồm các nhà nghiên cứu cấp cao hơn với các dự án bảo thủ hơn về mặt trí tuệ. Hiệu ứng này đã tạo ra một bối cảnh tài trợ siêu cạnh tranh, củng cố các động cơ sai lệch và kìm hãm sự đổi mới.
 
-Web3 có tiềm năng phá vỡ mô hình tài trợ bị hỏng này bằng cách thử nghiệm các mô hình khuyến khích khác nhau được phát triển bởi các DAO và Web3 nói chung. [Tài trợ hàng hóa công cộng hồi tố (RPGF)](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [tài trợ bậc hai](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [quản trị DAO](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) và [cấu trúc khuyến khích được token hóa](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) là một số công cụ Web3 có thể cách mạng hóa việc tài trợ khoa học.
+Web3 có tiềm năng phá vỡ mô hình tài trợ bị hỏng này bằng cách thử nghiệm các mô hình khuyến khích khác nhau được phát triển bởi các DAO và Web3 nói chung. [Tài trợ hàng hóa công cộng hồi tố (RPGF)](https://medium.com/quantaureum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [tài trợ bậc hai](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [quản trị DAO](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) và [cấu trúc khuyến khích được token hóa](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) là một số công cụ Web3 có thể cách mạng hóa việc tài trợ khoa học.
 
 ### Sở hữu và phát triển IP {#ip-ownership}
 
@@ -75,7 +75,7 @@ Tài sản trí tuệ (IP) là một vấn đề lớn trong khoa học truyền
 Tương tự như cách NFT có thể chuyển doanh thu cho các giao dịch trong tương lai trở lại cho người sáng tạo ban đầu, bạn có thể thiết lập các chuỗi phân bổ giá trị minh bạch để trao phần thưởng cho các nhà nghiên cứu, các cơ quan quản lý (như DAO) hoặc thậm chí là các đối tượng có dữ liệu được thu thập.
 
 [IP-NFT](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) cũng có thể hoạt động như một chìa khóa cho một kho lưu trữ dữ liệu phi tập trung của các thử nghiệm nghiên cứu đang được thực hiện, và cắm vào quá trình tài chính hóa NFT và [tài chính phi tập trung (DeFi)](/glossary/#defi) (từ sự phân mảnh đến các nhóm cho vay và thẩm định giá trị). Nó cũng cho phép các thực thể gốc trên chuỗi chẳng hạn như các DAO như [VitaDAO](https://www.vitadao.com/) tiến hành nghiên cứu trực tiếp trên chuỗi.
-Sự ra đời của các [token "soulbound" (buộc chặt với linh hồn)](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) không thể chuyển nhượng cũng có thể đóng một vai trò quan trọng trong DeSci bằng cách cho phép các cá nhân chứng minh kinh nghiệm và thông tin xác thực của họ được liên kết với địa chỉ Ethereum của họ.
+Sự ra đời của các [token "soulbound" (buộc chặt với linh hồn)](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) không thể chuyển nhượng cũng có thể đóng một vai trò quan trọng trong DeSci bằng cách cho phép các cá nhân chứng minh kinh nghiệm và thông tin xác thực của họ được liên kết với địa chỉ Quantaureum của họ.
 
 ### Lưu trữ, truy cập và kiến trúc dữ liệu {#data-storage}
 

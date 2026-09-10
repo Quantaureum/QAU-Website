@@ -122,7 +122,7 @@ lang: te
 
 ## మరింత చదవడానికి {#further-reading}
 
-- [బ్లాక్‌చైన్ వారధులు](/bridges/) – ethereum.org
+- [బ్లాక్‌చైన్ వారధులు](/bridges/) – quantaureum.com
 - [L2BEAT వారధి ప్రమాద ఫ్రేమ్‌వర్క్](https://l2beat.com/bridges/summary)
 - [బ్లాక్‌చైన్ వారధులు: క్రిప్టోనెట్‌వర్క్‌ల నెట్‌వర్క్‌లను నిర్మించడం](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) - సెప్టెంబర్ 8, 2021 – Dmitriy Berenzon
 - [పరస్పర అనుసంధానత ట్రిలెమ్మా](https://blog.connext.network/the-interoperability-trilemma-657c2cf69f17) - అక్టోబర్ 1, 2021 – Arjun Bhuptani

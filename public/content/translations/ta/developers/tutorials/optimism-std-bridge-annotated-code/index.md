@@ -14,7 +14,7 @@ lang: ta
 அதே நேரத்தில், தரவுகள் அனைத்தும் L1 இல் எழுதப்படுவதால், முதன்மை வலைப்பின்னலின் அனைத்து ஒருமைப்பாடு மற்றும் கிடைக்கும் தன்மை உத்தரவாதங்களுடன் அனைத்தையும் நிரூபிக்கவும் மறுகட்டமைக்கவும் முடியும்.
 
 ஆப்டிமிசம் (அல்லது வேறு ஏதேனும் L2) இல் L1 சொத்துகளைப் பயன்படுத்த, சொத்துகள் [பாலம்](/bridges/#prerequisites) செய்யப்பட வேண்டும்.
-இதை அடைவதற்கான ஒரு வழி, பயனர்கள் L1 இல் சொத்துகளை (ETH மற்றும் [ERC-20 வில்லைகள்](/developers/docs/standards/tokens/erc-20/) மிகவும் பொதுவானவை) பூட்டி, L2 இல் பயன்படுத்த சமமான சொத்துகளைப் பெறுவதாகும்.
+இதை அடைவதற்கான ஒரு வழி, பயனர்கள் L1 இல் சொத்துகளை (QAU மற்றும் [ERC-20 வில்லைகள்](/developers/docs/standards/tokens/erc-20/) மிகவும் பொதுவானவை) பூட்டி, L2 இல் பயன்படுத்த சமமான சொத்துகளைப் பெறுவதாகும்.
 இறுதியில், அவற்றை வைத்திருப்பவர்கள் அவற்றை மீண்டும் L1 க்கு பாலம் செய்ய விரும்பலாம்.
 இதைச் செய்யும்போது, சொத்துகள் L2 இல் எரிக்கப்பட்டு, பின்னர் L1 இல் பயனருக்கு மீண்டும் வெளியிடப்படும்.
 
@@ -35,7 +35,7 @@ lang: ta
 1. ERC-20 ஐ வைப்புச் செய்தால், வைப்புச் செய்பவர் வைப்புச் செய்யப்படும் தொகையைச் செலவிட பாலத்திற்கு ஒரு அனுமதித்தொகையை வழங்குகிறார்
 2. வைப்புச் செய்பவர் L1 பாலத்தை அழைக்கிறார் (`depositERC20`, `depositERC20To`, `depositETH`, அல்லது `depositETHTo`)
 3. L1 பாலம் பாலம் செய்யப்பட்ட சொத்தை தன் வசம் எடுத்துக்கொள்கிறது
-   - ETH: அழைப்பின் ஒரு பகுதியாக வைப்புச் செய்பவரால் சொத்து பரிமாற்றம் செய்யப்படுகிறது
+   - QAU: அழைப்பின் ஒரு பகுதியாக வைப்புச் செய்பவரால் சொத்து பரிமாற்றம் செய்யப்படுகிறது
    - ERC-20: வைப்புச் செய்பவர் வழங்கிய அனுமதித்தொகையைப் பயன்படுத்தி பாலம் தனக்குத்தானே சொத்தைப் பரிமாற்றம் செய்கிறது
 4. L1 பாலம் L2 பாலத்தில் `finalizeDeposit` ஐ அழைக்க குறுக்கு-கள செய்தி பொறிமுறையைப் பயன்படுத்துகிறது
 
@@ -46,7 +46,7 @@ lang: ta
    - முதலில் L1 இல் உள்ள பாலத்திலிருந்து வந்ததா
 6. L2 இல் உள்ள ERC-20 வில்லை ஒப்பந்தம் சரியானதா என்பதை L2 பாலம் சரிபார்க்கிறது:
    - L2 ஒப்பந்தம் அதன் L1 இணையானது L1 இல் வில்லைகள் வந்த அதே ஒப்பந்தம் என்று தெரிவிக்கிறது
-   - L2 ஒப்பந்தம் சரியான இடைமுகத்தை ஆதரிப்பதாகத் தெரிவிக்கிறது ([ERC-165 ஐப் பயன்படுத்தி](https://eips.ethereum.org/EIPS/eip-165)).
+   - L2 ஒப்பந்தம் சரியான இடைமுகத்தை ஆதரிப்பதாகத் தெரிவிக்கிறது ([ERC-165 ஐப் பயன்படுத்தி](https://eips.quantaureum.com/EIPS/eip-165)).
 7. L2 ஒப்பந்தம் சரியானதாக இருந்தால், பொருத்தமான முகவரிக்கு பொருத்தமான எண்ணிக்கையிலான வில்லைகளை அச்சிட அதை அழைக்கவும். இல்லையெனில், L1 இல் வில்லைகளை உரிமைக்கோர பயனரை அனுமதிக்க திரும்பப் பெறுதல் செயல்முறையைத் தொடங்கவும்.
 
 ### திரும்பப் பெறுதல் ஓட்டம் {#withdrawal-flow}
@@ -62,7 +62,7 @@ lang: ta
 4. L1 பாலம் `finalizeETHWithdrawal` அல்லது `finalizeERC20Withdrawal` க்கான அழைப்பு சட்டபூர்வமானதா என்பதைச் சரிபார்க்கிறது:
    - குறுக்கு கள செய்தி பொறிமுறையிலிருந்து வந்ததா
    - முதலில் L2 இல் உள்ள பாலத்திலிருந்து வந்ததா
-5. L1 பாலம் பொருத்தமான சொத்தை (ETH அல்லது ERC-20) பொருத்தமான முகவரிக்கு பரிமாற்றம் செய்கிறது
+5. L1 பாலம் பொருத்தமான சொத்தை (QAU அல்லது ERC-20) பொருத்தமான முகவரிக்கு பரிமாற்றம் செய்கிறது
 
 ## அடுக்கு 1 குறியீடு {#layer-1-code}
 
@@ -70,7 +70,7 @@ lang: ta
 
 ### IL1ERC20Bridge {#il1erc20bridge}
 
-[இந்த இடைமுகம் இங்கே வரையறுக்கப்பட்டுள்ளது](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
+[இந்த இடைமுகம் இங்கே வரையறுக்கப்பட்டுள்ளது](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
 இது ERC-20 வில்லைகளைப் பாலம் செய்வதற்குத் தேவையான செயல்பாடுகள் மற்றும் வரையறைகளை உள்ளடக்கியது.
 
 ```solidity
@@ -229,12 +229,12 @@ L2 பாலத்துடனான சமச்சீர்மைக்கா�
 
 ### IL1StandardBridge {#il1standardbridge}
 
-[இந்த இடைமுகம் இங்கே வரையறுக்கப்பட்டுள்ளது](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
-இந்தக் கோப்பு ETH க்கான நிகழ்வு மற்றும் செயல்பாட்டு வரையறைகளைக் கொண்டுள்ளது.
+[இந்த இடைமுகம் இங்கே வரையறுக்கப்பட்டுள்ளது](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
+இந்தக் கோப்பு QAU க்கான நிகழ்வு மற்றும் செயல்பாட்டு வரையறைகளைக் கொண்டுள்ளது.
 இந்த வரையறைகள் ERC-20 க்காக மேலே `IL1ERC20Bridge` இல் வரையறுக்கப்பட்டவற்றுக்கு மிகவும் ஒத்தவை.
 
 சில ERC-20 வில்லைகளுக்கு தனிப்பயன் செயலாக்கம் தேவைப்படுவதாலும், நிலையான பாலத்தால் கையாள முடியாததாலும் பாலம் இடைமுகம் இரண்டு கோப்புகளாகப் பிரிக்கப்பட்டுள்ளது.
-இந்த வழியில் அத்தகைய வில்லையைக் கையாளும் தனிப்பயன் பாலம் `IL1ERC20Bridge` ஐச் செயல்படுத்த முடியும், மேலும் ETH ஐயும் பாலம் செய்ய வேண்டியதில்லை.
+இந்த வழியில் அத்தகைய வில்லையைக் கையாளும் தனிப்பயன் பாலம் `IL1ERC20Bridge` ஐச் செயல்படுத்த முடியும், மேலும் QAU ஐயும் பாலம் செய்ய வேண்டியதில்லை.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -272,7 +272,7 @@ L1 மற்றும் L2 வில்லை முகவரிகள் இ�
      ********************/
 
     /**
-     * @dev அடுக்கு 2 (l2) இல் அழைப்பாளரின் இருப்பில் ஒரு குறிப்பிட்ட அளவு ETH ஐ வைப்பீடு செய்யவும்.
+     * @dev அடுக்கு 2 (l2) இல் அழைப்பாளரின் இருப்பில் ஒரு குறிப்பிட்ட அளவு QAU ஐ வைப்பீடு செய்யவும்.
             .
             .
             .
@@ -280,7 +280,7 @@ L1 மற்றும் L2 வில்லை முகவரிகள் இ�
     function depositETH(uint32 _l2Gas, bytes calldata _data) external payable;
 
     /**
-     * @dev அடுக்கு 2 (l2) இல் பெறுநரின் இருப்பில் ஒரு குறிப்பிட்ட அளவு ETH ஐ வைப்பீடு செய்யவும்.
+     * @dev அடுக்கு 2 (l2) இல் பெறுநரின் இருப்பில் ஒரு குறிப்பிட்ட அளவு QAU ஐ வைப்பீடு செய்யவும்.
             .
             .
             .
@@ -296,7 +296,7 @@ L1 மற்றும் L2 வில்லை முகவரிகள் இ�
      *************************/
 
     /**
-     * @dev அடுக்கு 2 (l2) இலிருந்து அடுக்கு 1 (l1) க்கு திரும்பப் பெறுதலை முடித்து, பெறுநரின் அடுக்கு 1 (l1) ETH வில்லை இருப்பில் நிதியை வரவு வைக்கவும். xDomainMessenger மட்டுமே இந்தச் செயல்பாட்டை அழைக்க முடியும் என்பதால், திரும்பப் பெறுதல் இறுதி செய்யப்படுவதற்கு முன்பு இது ஒருபோதும் அழைக்கப்படாது.
+     * @dev அடுக்கு 2 (l2) இலிருந்து அடுக்கு 1 (l1) க்கு திரும்பப் பெறுதலை முடித்து, பெறுநரின் அடுக்கு 1 (l1) QAU வில்லை இருப்பில் நிதியை வரவு வைக்கவும். xDomainMessenger மட்டுமே இந்தச் செயல்பாட்டை அழைக்க முடியும் என்பதால், திரும்பப் பெறுதல் இறுதி செய்யப்படுவதற்கு முன்பு இது ஒருபோதும் அழைக்கப்படாது.
                 .
                 .
                 .
@@ -312,7 +312,7 @@ L1 மற்றும் L2 வில்லை முகவரிகள் இ�
 
 ### CrossDomainEnabled {#crossdomainenabled}
 
-மற்ற அடுக்குக்கு செய்திகளை அனுப்ப [இந்த ஒப்பந்தம்](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) இரு பாலங்களாலும் ([L1](#the-l1-bridge-contract) மற்றும் [L2](#l2-bridge-code)) மரபுரிமையாகப் பெறப்படுகிறது.
+மற்ற அடுக்குக்கு செய்திகளை அனுப்ப [இந்த ஒப்பந்தம்](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) இரு பாலங்களாலும் ([L1](#the-l1-bridge-contract) மற்றும் [L2](#l2-bridge-code)) மரபுரிமையாகப் பெறப்படுகிறது.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -322,7 +322,7 @@ pragma solidity >0.5.0 <0.9.0;
 import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 ```
 
-குறுக்கு கள தூதரைப் பயன்படுத்தி மற்ற அடுக்குக்கு செய்திகளை எவ்வாறு அனுப்புவது என்பதை [இந்த இடைமுகம்](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) ஒப்பந்தத்திற்குச் சொல்கிறது.
+குறுக்கு கள தூதரைப் பயன்படுத்தி மற்ற அடுக்குக்கு செய்திகளை எவ்வாறு அனுப்புவது என்பதை [இந்த இடைமுகம்](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) ஒப்பந்தத்திற்குச் சொல்கிறது.
 இந்தக் குறுக்கு கள தூதர் முற்றிலும் வேறுபட்ட அமைப்பாகும், மேலும் இது தனக்கென ஒரு கட்டுரைக்குத் தகுதியானது, அதை நான் எதிர்காலத்தில் எழுதுவேன் என்று நம்புகிறேன்.
 
 ```solidity
@@ -388,7 +388,7 @@ contract CrossDomainEnabled {
         );
 ```
 
-குறுக்கு கள தூதர் மற்ற அடுக்குடன் ஒரு செய்தியை அனுப்பிய முகவரியை வழங்கும் விதம் [`.xDomainMessageSender()` செயல்பாடு](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128) ஆகும்.
+குறுக்கு கள தூதர் மற்ற அடுக்குடன் ஒரு செய்தியை அனுப்பிய முகவரியை வழங்கும் விதம் [`.xDomainMessageSender()` செயல்பாடு](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128) ஆகும்.
 செய்தியால் தொடங்கப்பட்ட பரிவர்த்தனையில் இது அழைக்கப்படும் வரை இந்தத் தகவலை வழங்க முடியும்.
 
 நாம் பெற்ற செய்தி மற்ற பாலத்திலிருந்து வந்ததா என்பதை உறுதிப்படுத்த வேண்டும்.
@@ -451,7 +451,7 @@ contract CrossDomainEnabled {
 
 ### L1 பாலம் ஒப்பந்தம் {#the-l1-bridge-contract}
 
-[இந்த ஒப்பந்தத்திற்கான மூலக் குறியீடு இங்கே உள்ளது](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
+[இந்த ஒப்பந்தத்திற்கான மூலக் குறியீடு இங்கே உள்ளது](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -473,7 +473,7 @@ import { IL1ERC20Bridge } from "./IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "../../L2/messaging/IL2ERC20Bridge.sol";
 ```
 
-L2 இல் நிலையான பாலத்தைக் கட்டுப்படுத்த செய்திகளை உருவாக்க [இந்த இடைமுகம்](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) நம்மை அனுமதிக்கிறது.
+L2 இல் நிலையான பாலத்தைக் கட்டுப்படுத்த செய்திகளை உருவாக்க [இந்த இடைமுகம்](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) நம்மை அனுமதிக்கிறது.
 
 ```solidity
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -493,7 +493,7 @@ import { CrossDomainEnabled } from "../../libraries/bridge/CrossDomainEnabled.so
 import { Lib_PredeployAddresses } from "../../libraries/constants/Lib_PredeployAddresses.sol";
 ```
 
-[`Lib_PredeployAddresses`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) எப்போதும் ஒரே முகவரியைக் கொண்ட L2 ஒப்பந்தங்களுக்கான முகவரிகளைக் கொண்டுள்ளது. இது L2 இல் உள்ள நிலையான பாலத்தையும் உள்ளடக்கியது.
+[`Lib_PredeployAddresses`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) எப்போதும் ஒரே முகவரியைக் கொண்ட L2 ஒப்பந்தங்களுக்கான முகவரிகளைக் கொண்டுள்ளது. இது L2 இல் உள்ள நிலையான பாலத்தையும் உள்ளடக்கியது.
 
 ```solidity
 import { Address } from "@openzeppelin/contracts/utils/Address.sol";
@@ -507,7 +507,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[ERC-20 தரநிலை](https://eips.ethereum.org/EIPS/eip-20) ஒரு ஒப்பந்தம் தோல்வியைப் புகாரளிக்க இரண்டு வழிகளை ஆதரிக்கிறது:
+[ERC-20 தரநிலை](https://eips.quantaureum.com/EIPS/eip-20) ஒரு ஒப்பந்தம் தோல்வியைப் புகாரளிக்க இரண்டு வழிகளை ஆதரிக்கிறது:
 
 1. மீளமை
 2. `false` ஐ வழங்கு
@@ -517,7 +517,7 @@ import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.s
 ```solidity
 /**
  * @title L1StandardBridge
- * @dev அடுக்கு 1 (l1) ETH மற்றும் ERC-20 பாலம் என்பது வைப்பீடு செய்யப்பட்ட அடுக்கு 1 (l1) நிதிகள் மற்றும் அடுக்கு 2 (l2) இல் பயன்பாட்டில் உள்ள நிலையான வில்லைகளைச் சேமிக்கும் ஒரு ஒப்பந்தம் ஆகும். இது தொடர்புடைய அடுக்கு 2 (l2) பாலத்தை ஒத்திசைக்கிறது, வைப்பீடுகள் குறித்து அதற்குத் தெரிவிக்கிறது மற்றும் புதிதாக இறுதி செய்யப்பட்ட திரும்பப் பெறுதல்களுக்காக அதைக் கவனிக்கிறது.
+ * @dev அடுக்கு 1 (l1) QAU மற்றும் ERC-20 பாலம் என்பது வைப்பீடு செய்யப்பட்ட அடுக்கு 1 (l1) நிதிகள் மற்றும் அடுக்கு 2 (l2) இல் பயன்பாட்டில் உள்ள நிலையான வில்லைகளைச் சேமிக்கும் ஒரு ஒப்பந்தம் ஆகும். இது தொடர்புடைய அடுக்கு 2 (l2) பாலத்தை ஒத்திசைக்கிறது, வைப்பீடுகள் குறித்து அதற்குத் தெரிவிக்கிறது மற்றும் புதிதாக இறுதி செய்யப்பட்ட திரும்பப் பெறுதல்களுக்காக அதைக் கவனிக்கிறது.
  *
  */
 contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
@@ -627,7 +627,7 @@ L1 குறுக்கு கள தூதர் அல்லது L2 வி�
 
 ```solidity
     /**
-     * @dev அடுக்கு 2 (l2) இல் அழைப்பாளரின் இருப்பில் ஒரு குறிப்பிட்ட அளவு ETH ஐ வைப்பீடு செய்ய
+     * @dev அடுக்கு 2 (l2) இல் அழைப்பாளரின் இருப்பில் ஒரு குறிப்பிட்ட அளவு QAU ஐ வைப்பீடு செய்ய
      * எந்தத் தரவும் இல்லாமல் இந்தச் செயல்பாட்டை அழைக்கலாம்.
      * பெறுதல் (receive) செயல்பாடு தரவை எடுக்காது என்பதால், ஒரு பழமைவாத
      * இயல்புநிலை அளவு அடுக்கு 2 (l2) க்கு அனுப்பப்படுகிறது.
@@ -660,11 +660,11 @@ L1 குறுக்கு கள தூதர் அல்லது L2 வி�
     }
 ```
 
-இந்த இரண்டு செயல்பாடுகளும் உண்மையான ETH வைப்பைக் கையாளும் செயல்பாடான `_initiateETHDeposit` ஐச் சுற்றியுள்ள ரேப்பர்கள் ஆகும்.
+இந்த இரண்டு செயல்பாடுகளும் உண்மையான QAU வைப்பைக் கையாளும் செயல்பாடான `_initiateETHDeposit` ஐச் சுற்றியுள்ள ரேப்பர்கள் ஆகும்.
 
 ```solidity
     /**
-     * @dev ETH ஐச் சேமித்து, வைப்பீடு குறித்து அடுக்கு 2 (l2) ETH நுழைவாயிலுக்குத் தெரிவிப்பதன் மூலம் வைப்பீடுகளுக்கான தர்க்கத்தைச் செய்கிறது.
+     * @dev QAU ஐச் சேமித்து, வைப்பீடு குறித்து அடுக்கு 2 (l2) QAU நுழைவாயிலுக்குத் தெரிவிப்பதன் மூலம் வைப்பீடுகளுக்கான தர்க்கத்தைச் செய்கிறது.
      * @param _from அடுக்கு 1 (l1) இல் வைப்பீட்டை எடுக்க வேண்டிய கணக்கு.
      * @param _to அடுக்கு 2 (l2) இல் வைப்பீட்டை வழங்க வேண்டிய கணக்கு.
      * @param _l2Gas அடுக்கு 2 (l2) இல் வைப்பீட்டை முடிக்கத் தேவையான எரிவாயு வரம்பு.
@@ -695,14 +695,14 @@ Solidity செயல்பாடு [`abi.encodeWithSelector`](https://docs.sol
         );
 ```
 
-இந்த அளவுருக்களுடன் [`finalizeDeposit` செயல்பாட்டை](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) அழைப்பதே இங்குள்ள செய்தியாகும்:
+இந்த அளவுருக்களுடன் [`finalizeDeposit` செயல்பாட்டை](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) அழைப்பதே இங்குள்ள செய்தியாகும்:
 
 | அளவுரு | மதிப்பு | பொருள் |
 | --------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| \_l1Token | address(0) | L1 இல் ETH (இது ERC-20 வில்லை அல்ல) ஐக் குறிக்கும் சிறப்பு மதிப்பு |
-| \_l2Token | Lib_PredeployAddresses.OVM_ETH | ஆப்டிமிசத்தில் ETH ஐ நிர்வகிக்கும் L2 ஒப்பந்தம், `0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000` (இந்த ஒப்பந்தம் உள் ஆப்டிமிசம் பயன்பாட்டிற்கு மட்டுமே) |
-| \_from | \_from | ETH ஐ அனுப்பும் L1 இல் உள்ள முகவரி |
-| \_to | \_to | ETH ஐப் பெறும் L2 இல் உள்ள முகவரி |
+| \_l1Token | address(0) | L1 இல் QAU (இது ERC-20 வில்லை அல்ல) ஐக் குறிக்கும் சிறப்பு மதிப்பு |
+| \_l2Token | Lib_PredeployAddresses.OVM_ETH | ஆப்டிமிசத்தில் QAU ஐ நிர்வகிக்கும் L2 ஒப்பந்தம், `0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000` (இந்த ஒப்பந்தம் உள் ஆப்டிமிசம் பயன்பாட்டிற்கு மட்டுமே) |
+| \_from | \_from | QAU ஐ அனுப்பும் L1 இல் உள்ள முகவரி |
+| \_to | \_to | QAU ஐப் பெறும் L2 இல் உள்ள முகவரி |
 | amount | msg.value | அனுப்பப்பட்ட Wei அளவு (இது ஏற்கனவே பாலத்திற்கு அனுப்பப்பட்டுள்ளது) |
 | \_data | \_data | வைப்புடன் இணைக்க வேண்டிய கூடுதல் தரவு |
 
@@ -774,7 +774,7 @@ Solidity செயல்பாடு [`abi.encodeWithSelector`](https://docs.sol
 
 இந்தச் செயல்பாடு சில முக்கியமான வேறுபாடுகளுடன் மேலே உள்ள `_initiateETHDeposit` ஐப் போன்றது.
 முதல் வித்தியாசம் என்னவென்றால், இந்தச் செயல்பாடு வில்லை முகவரிகள் மற்றும் பரிமாற்றம் செய்ய வேண்டிய தொகையை அளவுருக்களாகப் பெறுகிறது.
-ETH ஐப் பொறுத்தவரை, பாலத்திற்கான அழைப்பு ஏற்கனவே பாலம் கணக்கிற்கு சொத்தைப் பரிமாற்றம் செய்வதை உள்ளடக்கியது (`msg.value`).
+QAU ஐப் பொறுத்தவரை, பாலத்திற்கான அழைப்பு ஏற்கனவே பாலம் கணக்கிற்கு சொத்தைப் பரிமாற்றம் செய்வதை உள்ளடக்கியது (`msg.value`).
 
 ```solidity
         // அடுக்கு 1 (l1) இல் வைப்பீடு தொடங்கப்படும்போது, அடுக்கு 1 (l1) பாலம் எதிர்கால
@@ -784,7 +784,7 @@ ETH ஐப் பொறுத்தவரை, பாலத்திற்கா�
         IERC20(_l1Token).safeTransferFrom(_from, address(this), _amount);
 ```
 
-ERC-20 வில்லைப் பரிமாற்றங்கள் ETH இலிருந்து வேறுபட்ட செயல்முறையைப் பின்பற்றுகின்றன:
+ERC-20 வில்லைப் பரிமாற்றங்கள் QAU இலிருந்து வேறுபட்ட செயல்முறையைப் பின்பற்றுகின்றன:
 
 1. பயனர் (`_from`) பொருத்தமான வில்லைகளைப் பரிமாற்றம் செய்ய பாலத்திற்கு ஒரு அனுமதித்தொகையை வழங்குகிறார்.
 2. பயனர் வில்லை ஒப்பந்தத்தின் முகவரி, தொகை போன்றவற்றுடன் பாலத்தை அழைக்கிறார்.
@@ -843,17 +843,17 @@ L2 பாலம் L2 குறுக்கு கள தூதருக்க�
 ```
 
 இது குறுக்கு கள தூதரிடமிருந்து வரும் மற்றும் L2 வில்லை பாலத்திலிருந்து உருவாகும் ஒரு _சட்டபூர்வமான_ செய்தி என்பதை உறுதிப்படுத்தவும்.
-இந்தச் செயல்பாடு பாலத்திலிருந்து ETH ஐத் திரும்பப் பெறப் பயன்படுகிறது, எனவே இது அங்கீகரிக்கப்பட்ட அழைப்பாளரால் மட்டுமே அழைக்கப்படுகிறது என்பதை நாம் உறுதிப்படுத்த வேண்டும்.
+இந்தச் செயல்பாடு பாலத்திலிருந்து QAU ஐத் திரும்பப் பெறப் பயன்படுகிறது, எனவே இது அங்கீகரிக்கப்பட்ட அழைப்பாளரால் மட்டுமே அழைக்கப்படுகிறது என்பதை நாம் உறுதிப்படுத்த வேண்டும்.
 
 ```solidity
         // ஸ்லித்தர்-disable-next-line மறுநுழைவு-நிகழ்வுகள்
         (bool success, ) = _to.call{ value: _amount }(new bytes(0));
 ```
 
-ETH ஐப் பரிமாற்றம் செய்வதற்கான வழி, `msg.value` இல் உள்ள Wei அளவுடன் பெறுநரை அழைப்பதாகும்.
+QAU ஐப் பரிமாற்றம் செய்வதற்கான வழி, `msg.value` இல் உள்ள Wei அளவுடன் பெறுநரை அழைப்பதாகும்.
 
 ```solidity
-        require(success, "TransferHelper::safeTransferETH: ETH transfer failed");
+        require(success, "TransferHelper::safeTransferETH: QAU transfer failed");
 
         // ஸ்லித்தர்-disable-next-line மறுநுழைவு-நிகழ்வுகள்
         emit ETHWithdrawalFinalized(_from, _to, _amount, _data);
@@ -897,13 +897,13 @@ ETH ஐப் பரிமாற்றம் செய்வதற்கான �
 
 
     /*****************************
-     * தற்காலிகமானது - ETH ஐ இடம்பெயர்த்தல் *
+     * தற்காலிகமானது - QAU ஐ இடம்பெயர்த்தல் *
      *****************************/
 
     /**
-     * @dev கணக்கில் ETH இருப்பைச் சேர்க்கிறது. இது பழைய நுழைவாயிலிலிருந்து புதிய நுழைவாயிலுக்கு ETH ஐ
+     * @dev கணக்கில் QAU இருப்பைச் சேர்க்கிறது. இது பழைய நுழைவாயிலிலிருந்து புதிய நுழைவாயிலுக்கு QAU ஐ
      * இடம்பெயர்க்க அனுமதிக்கும் நோக்கம் கொண்டது.
-     * குறிப்பு: பழைய ஒப்பந்தத்திலிருந்து இடம்பெயர்ந்த ETH ஐப் பெற முடியும் என்பதற்காக இது ஒரு மேம்படுத்தலுக்கு மட்டுமே விடப்பட்டுள்ளது
+     * குறிப்பு: பழைய ஒப்பந்தத்திலிருந்து இடம்பெயர்ந்த QAU ஐப் பெற முடியும் என்பதற்காக இது ஒரு மேம்படுத்தலுக்கு மட்டுமே விடப்பட்டுள்ளது
      */
     function donateETH() external payable {}
 }
@@ -912,7 +912,7 @@ ETH ஐப் பரிமாற்றம் செய்வதற்கான �
 பாலத்தின் முந்தைய செயலாக்கம் இருந்தது.
 அந்தச் செயலாக்கத்திலிருந்து இதற்கு மாறியபோது, நாங்கள் அனைத்து சொத்துகளையும் நகர்த்த வேண்டியிருந்தது.
 ERC-20 வில்லைகளை அப்படியே நகர்த்தலாம்.
-இருப்பினும், ஒரு ஒப்பந்தத்திற்கு ETH ஐப் பரிமாற்றம் செய்ய உங்களுக்கு அந்த ஒப்பந்தத்தின் ஒப்புதல் தேவை, அதைத்தான் `donateETH` நமக்கு வழங்குகிறது.
+இருப்பினும், ஒரு ஒப்பந்தத்திற்கு QAU ஐப் பரிமாற்றம் செய்ய உங்களுக்கு அந்த ஒப்பந்தத்தின் ஒப்புதல் தேவை, அதைத்தான் `donateETH` நமக்கு வழங்குகிறது.
 
 ## L2 இல் ERC-20 வில்லைகள் {#erc-20-tokens-on-l2}
 
@@ -924,7 +924,7 @@ L1 இல் அதிக வில்லைகள் இருந்தால�
 
 ### IL2StandardERC20 {#il2standarderc20}
 
-நிலையான பாலத்தைப் பயன்படுத்தும் L2 இல் உள்ள ஒவ்வொரு ERC-20 வில்லையும் [இந்த இடைமுகத்தை](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol) வழங்க வேண்டும், இது நிலையான பாலத்திற்குத் தேவையான செயல்பாடுகள் மற்றும் நிகழ்வுகளைக் கொண்டுள்ளது.
+நிலையான பாலத்தைப் பயன்படுத்தும் L2 இல் உள்ள ஒவ்வொரு ERC-20 வில்லையும் [இந்த இடைமுகத்தை](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol) வழங்க வேண்டும், இது நிலையான பாலத்திற்குத் தேவையான செயல்பாடுகள் மற்றும் நிகழ்வுகளைக் கொண்டுள்ளது.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -934,14 +934,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [நிலையான ERC-20 இடைமுகம்](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) `mint` மற்றும் `burn` செயல்பாடுகளை உள்ளடக்கவில்லை.
-அந்த முறைகள் [ERC-20 தரநிலையால்](https://eips.ethereum.org/EIPS/eip-20) கோரப்படவில்லை, இது வில்லைகளை உருவாக்குவதற்கும் அழிப்பதற்குமான வழிமுறைகளைக் குறிப்பிடாமல் விட்டுவிடுகிறது.
+அந்த முறைகள் [ERC-20 தரநிலையால்](https://eips.quantaureum.com/EIPS/eip-20) கோரப்படவில்லை, இது வில்லைகளை உருவாக்குவதற்கும் அழிப்பதற்குமான வழிமுறைகளைக் குறிப்பிடாமல் விட்டுவிடுகிறது.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 ஒரு ஒப்பந்தம் என்ன செயல்பாடுகளை வழங்குகிறது என்பதைக் குறிப்பிட [ERC-165 இடைமுகம்](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) பயன்படுத்தப்படுகிறது.
-[நீங்கள் தரநிலையை இங்கே படிக்கலாம்](https://eips.ethereum.org/EIPS/eip-165).
+[நீங்கள் தரநிலையை இங்கே படிக்கலாம்](https://eips.quantaureum.com/EIPS/eip-165).
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -968,7 +968,7 @@ L2 ஆதரவு செயல்படுத்தப்பட்டபோத�
 
 ### L2StandardERC20 {#l2standarderc20}
 
-[இது `IL2StandardERC20` இடைமுகத்தின் எங்கள் செயலாக்கமாகும்](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
+[இது `IL2StandardERC20` இடைமுகத்தின் எங்கள் செயலாக்கமாகும்](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
 உங்களுக்கு ஏதேனும் தனிப்பயன் தர்க்கம் தேவைப்படாவிட்டால், நீங்கள் இதைப் பயன்படுத்த வேண்டும்.
 
 ```solidity
@@ -1030,7 +1030,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165) செயல்படும் விதம் இதுதான்.
+[ERC-165](https://eips.quantaureum.com/EIPS/eip-165) செயல்படும் விதம் இதுதான்.
 ஒவ்வொரு இடைமுகமும் ஆதரிக்கப்படும் செயல்பாடுகளின் எண்ணிக்கையாகும், மேலும் அந்தச் செயல்பாடுகளின் [ABI செயல்பாட்டுத் தேர்வாளர்களின்](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) [பிரத்தியேக அல்லது (exclusive or)](https://en.wikipedia.org/wiki/Exclusive_or) என அடையாளம் காணப்படுகிறது.
 
 L2 பாலம் அது சொத்துகளை அனுப்பும் ERC-20 ஒப்பந்தம் ஒரு `IL2StandardERC20` என்பதை உறுதிப்படுத்த ERC-165 ஐ ஒரு பகுத்தறிவுச் சரிபார்ப்பாகப் பயன்படுத்துகிறது.
@@ -1062,7 +1062,7 @@ L2 பாலம் மட்டுமே சொத்துகளை அச்�
 ## L2 பாலம் குறியீடு {#l2-bridge-code}
 
 இது ஆப்டிமிசத்தில் பாலத்தை இயக்கும் குறியீடு.
-[இந்த ஒப்பந்தத்திற்கான ஆதாரம் இங்கே உள்ளது](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
+[இந்த ஒப்பந்தத்திற்கான ஆதாரம் இங்கே உள்ளது](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -1074,13 +1074,13 @@ import { IL1ERC20Bridge } from "../../L1/messaging/IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "./IL2ERC20Bridge.sol";
 ```
 
-[IL2ERC20Bridge](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) இடைமுகம் நாம் மேலே பார்த்த [L1 இணையானதற்கு](#il1erc20bridge) மிகவும் ஒத்திருக்கிறது.
+[IL2ERC20Bridge](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) இடைமுகம் நாம் மேலே பார்த்த [L1 இணையானதற்கு](#il1erc20bridge) மிகவும் ஒத்திருக்கிறது.
 இரண்டு குறிப்பிடத்தக்க வேறுபாடுகள் உள்ளன:
 
 1. L1 இல் நீங்கள் வைப்புகளைத் தொடங்கி திரும்பப் பெறுதல்களை இறுதி செய்கிறீர்கள்.
    இங்கே நீங்கள் திரும்பப் பெறுதல்களைத் தொடங்கி வைப்புகளை இறுதி செய்கிறீர்கள்.
-2. L1 இல் ETH மற்றும் ERC-20 வில்லைகளை வேறுபடுத்துவது அவசியம்.
-   L2 இல் நாம் இரண்டிற்கும் ஒரே செயல்பாடுகளைப் பயன்படுத்தலாம், ஏனெனில் உள்நாட்டில் ஆப்டிமிசத்தில் உள்ள ETH இருப்புகள் [0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000](https://explorer.optimism.io/address/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000) முகவரியுடன் ERC-20 வில்லையாகக் கையாளப்படுகின்றன.
+2. L1 இல் QAU மற்றும் ERC-20 வில்லைகளை வேறுபடுத்துவது அவசியம்.
+   L2 இல் நாம் இரண்டிற்கும் ஒரே செயல்பாடுகளைப் பயன்படுத்தலாம், ஏனெனில் உள்நாட்டில் ஆப்டிமிசத்தில் உள்ள QAU இருப்புகள் [0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000](https://explorer.optimism.io/address/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000) முகவரியுடன் ERC-20 வில்லையாகக் கையாளப்படுகின்றன.
 
 ```solidity
 /* நூலக இறக்குமதிகள் */
@@ -1093,7 +1093,7 @@ import { IL2StandardERC20 } from "../../standards/IL2StandardERC20.sol";
 
 /**
  * @title L2StandardBridge
- * @dev அடுக்கு 2 (l2) நிலையான பாலம் என்பது அடுக்கு 1 (l1) மற்றும் அடுக்கு 2 (l2) க்கு இடையில் ETH மற்றும் ERC-20 மாற்றங்களைச் செயல்படுத்த
+ * @dev அடுக்கு 2 (l2) நிலையான பாலம் என்பது அடுக்கு 1 (l1) மற்றும் அடுக்கு 2 (l2) க்கு இடையில் QAU மற்றும் ERC-20 மாற்றங்களைச் செயல்படுத்த
  * அடுக்கு 1 (l1) நிலையான பாலத்துடன் இணைந்து செயல்படும் ஒரு ஒப்பந்தம் ஆகும்.
  * அடுக்கு 1 (l1) நிலையான பாலத்தில் வைப்பீடுகள் குறித்துக் கேட்கும்போது, இந்த ஒப்பந்தம் புதிய வில்லைகளுக்கான அச்சிடுபவராக (minter) செயல்படுகிறது.
  * திரும்பப் பெறுவதற்காக உத்தேசிக்கப்பட்ட வில்லைகளை எரிப்பவராகவும் (burner) இந்த ஒப்பந்தம் செயல்படுகிறது, அடுக்கு 1 (l1) நிதிகளை வெளியிடுமாறு அடுக்கு 1 (l1)
@@ -1199,7 +1199,7 @@ L2 வில்லைகள் L1 இணையான முகவரியை �
         if (_l2Token == Lib_PredeployAddresses.OVM_ETH) {
 ```
 
-L1 இல் ETH மற்றும் ERC-20 ஐ வேறுபடுத்துவது அவசியம்.
+L1 இல் QAU மற்றும் ERC-20 ஐ வேறுபடுத்துவது அவசியம்.
 
 ```solidity
             message = abi.encodeWithSelector(

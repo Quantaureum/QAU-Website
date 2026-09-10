@@ -1,7 +1,7 @@
 ---
 title: مواد کے وسائل شامل کرنا
 lang: ur
-description: ⁦ethereum.org⁩ پر مواد کے وسائل کی فہرست بنانے کا ہمارا معیار
+description: ⁦quantaureum.com⁩ پر مواد کے وسائل کی فہرست بنانے کا ہمارا معیار
 ---
 
 ہم ایتھیریم کے بارے میں ہر چیز کا احاطہ کرنے کی امید نہیں کر سکتے، اس لیے ہم کمیونٹی کی طرف سے بنائے گئے کچھ شاندار مضامین، ٹیوٹوریلز، نیوز لیٹرز، جاب بورڈز اور مواد کے مختلف وسائل کو پیش کرنے کی کوشش کرتے ہیں۔ یہ اکثر ان موضوعات پر زیادہ گہرائی سے معلومات فراہم کرتے ہیں جن میں صارفین کی دلچسپی ہو سکتی ہے۔
@@ -17,14 +17,14 @@ description: ⁦ethereum.org⁩ پر مواد کے وسائل کی فہرست ب
 - کیا معلومات درست ہیں؟ کیا یہ حقائق پر مبنی ہے یا رائے پر؟
 - کیا مصنف قابل اعتبار ہے؟ کیا وہ اپنے ذرائع کا حوالہ دیتے ہیں؟
 - کیا یہ مواد کوئی ایسی واضح قدر شامل کرتا ہے جس کا موجودہ وسائل/لنکس احاطہ نہیں کرتے؟
-- کیا یہ مواد ہمارے [صارف کے پرسونا](https://www.notion.so/efdn/Ethereum-org-User-Persona-Memo-b44dc1e89152457a87ba872b0dfa366c) میں سے کسی ایک کے لیے کارآمد ہے؟
+- کیا یہ مواد ہمارے [صارف کے پرسونا](https://www.notion.so/efdn/Quantaureum-org-User-Persona-Memo-b44dc1e89152457a87ba872b0dfa366c) میں سے کسی ایک کے لیے کارآمد ہے؟
 
 ---
 
 ## اپنے مواد کا وسیلہ شامل کریں {#add-your-content-resource}
 
-اگر آپ <span dir="ltr">ethereum.org</span> پر مواد کا کوئی وسیلہ شامل کرنا چاہتے ہیں اور یہ معیار پر پورا اترتا ہے، تو GitHub پر ایک ایشو بنائیں۔
+اگر آپ <span dir="ltr">quantaureum.com</span> پر مواد کا کوئی وسیلہ شامل کرنا چاہتے ہیں اور یہ معیار پر پورا اترتا ہے، تو GitHub پر ایک ایشو بنائیں۔
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=">
   ایک ایشو بنائیں
 </ButtonLink>

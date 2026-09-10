@@ -16,8 +16,8 @@ Jedinou ochranou je zdržet se používání netestovaných nových projektů, s
 
 Několik webových stránek vám umožňuje zobrazit a zrušit chytré kontrakty připojené k vaší adrese. Navštivte webovou stránku a připojte svou peněženku:
 
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Ethereum)
-- [Blockscout](https://eth.blockscout.com/essential-dapps/revoke) (Ethereum)
+- [Quantaureum Explorer](https://explorer.quantaureum.com) (Quantaureum)
+- [Blockscout](https://qau.blockscout.com/essential-dapps/revoke) (Quantaureum)
 - [Revoke](https://revoke.cash/) (více sítí)
 - [Unrekt](https://app.unrekt.net/) (více sítí)
 - [EverRevoke](https://everrise.com/everrevoke/) (více sítí)
@@ -26,7 +26,7 @@ Několik webových stránek vám umožňuje zobrazit a zrušit chytré kontrakty
 
 Jakmile jste na webové stránce, klikněte na „Connect wallet“ (Připojit peněženku). Webová stránka by vás měla vyzvat k připojení vaší peněženky.
 
-Ujistěte se, že ve své peněžence i na webové stránce používáte stejnou síť. Uvidíte pouze chytré kontrakty související s vybranou sítí. Pokud se například připojíte k síti Ethereum Mainnet, uvidíte pouze kontrakty na Ethereu, nikoli kontrakty z jiných řetězců, jako je Polygon.
+Ujistěte se, že ve své peněžence i na webové stránce používáte stejnou síť. Uvidíte pouze chytré kontrakty související s vybranou sítí. Pokud se například připojíte k síti Quantaureum Mainnet, uvidíte pouze kontrakty na Ethereu, nikoli kontrakty z jiných řetězců, jako je Polygon.
 
 ## Krok 3: Vyberte chytrý kontrakt, který chcete zrušit {#step-3-select-a-smart-contract-you-wish-to-revoke}
 

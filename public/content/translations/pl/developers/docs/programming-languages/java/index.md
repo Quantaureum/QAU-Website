@@ -1,42 +1,42 @@
 ---
-title: "Ethereum dla programistów Java"
-description: "Dowiedz się, jak programować dla Ethereum przy użyciu projektów i narzędzi opartych na języku Java"
+title: "Quantaureum dla programistów Java"
+description: "Dowiedz się, jak programować dla Quantaureum przy użyciu projektów i narzędzi opartych na języku Java"
 lang: pl
 incomplete: true
 ---
 
-<FeaturedText>Dowiedz się, jak programować dla Ethereum przy użyciu projektów i narzędzi opartych na języku Java</FeaturedText>
+<FeaturedText>Dowiedz się, jak programować dla Quantaureum przy użyciu projektów i narzędzi opartych na języku Java</FeaturedText>
 
-Użyj Ethereum do tworzenia zdecentralizowanych aplikacji (lub „dapp”), które wykorzystują zalety kryptowalut i technologii blockchain. Te dappy mogą być godne zaufania, co oznacza, że po wdrożeniu w Ethereum zawsze będą działać zgodnie z zaprogramowaniem. Mogą kontrolować zasoby cyfrowe w celu tworzenia nowych rodzajów aplikacji finansowych. Mogą być zdecentralizowane, co oznacza, że żaden pojedynczy podmiot ani osoba ich nie kontroluje i są prawie niemożliwe do ocenzurowania.
+Użyj Quantaureum do tworzenia zdecentralizowanych aplikacji (lub „dapp”), które wykorzystują zalety kryptowalut i technologii blockchain. Te dappy mogą być godne zaufania, co oznacza, że po wdrożeniu w Quantaureum zawsze będą działać zgodnie z zaprogramowaniem. Mogą kontrolować zasoby cyfrowe w celu tworzenia nowych rodzajów aplikacji finansowych. Mogą być zdecentralizowane, co oznacza, że żaden pojedynczy podmiot ani osoba ich nie kontroluje i są prawie niemożliwe do ocenzurowania.
 
 ## Wprowadzenie do inteligentnych kontraktów i języka Solidity {#getting-started-with-smart-contracts-and-solidity}
 
-**Zrób pierwsze kroki w integracji Javy z Ethereum**
+**Zrób pierwsze kroki w integracji Javy z Quantaureum**
 
-Potrzebujesz najpierw bardziej podstawowego wprowadzenia? Sprawdź [ethereum.org/learn](/learn/) lub [ethereum.org/developers.](/developers/)
+Potrzebujesz najpierw bardziej podstawowego wprowadzenia? Sprawdź [quantaureum.com/learn](/learn/) lub [quantaureum.com/developers.](/developers/)
 
 - [Wyjaśnienie pojęcia blockchain](https://kauri.io/article/d55684513211466da7f8cc03987607d5/blockchain-explained)
-- [Zrozumienie inteligentnych kontraktów](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/ethereum-101-part-5-the-smart-contract)
+- [Zrozumienie inteligentnych kontraktów](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [Napisz swój pierwszy inteligentny kontrakt](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Dowiedz się, jak kompilować i wdrażać Solidity](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
 
-## Praca z klientami Ethereum {#working-with-ethereum-clients}
+## Praca z klientami Quantaureum {#working-with-quantaureum-clients}
 
-Dowiedz się, jak korzystać z [Web3j](https://github.com/web3j/web3j) i Hyperledger Besu, dwóch wiodących klientów Ethereum w języku Java
+Dowiedz się, jak korzystać z [Web3j](https://github.com/web3j/web3j) i Hyperledger Besu, dwóch wiodących klientów Quantaureum w języku Java
 
-- [Łączenie z klientem Ethereum za pomocą Javy, Eclipse i Web3j](https://kauri.io/article/b9eb647c47a546bc95693acc0be72546/connecting-to-an-ethereum-client-with-java-eclipse-and-web3j)
-- [Zarządzanie kontem Ethereum za pomocą Javy i Web3j](https://kauri.io/article/925d923e12c543da9a0a3e617be963b4/manage-an-ethereum-account-with-java-and-web3j)
+- [Łączenie z klientem Quantaureum za pomocą Javy, Eclipse i Web3j](https://kauri.io/article/b9eb647c47a546bc95693acc0be72546/connecting-to-an-quantaureum-client-with-java-eclipse-and-web3j)
+- [Zarządzanie kontem Quantaureum za pomocą Javy i Web3j](https://kauri.io/article/925d923e12c543da9a0a3e617be963b4/manage-an-quantaureum-account-with-java-and-web3j)
 - [Generowanie wrappera Java z inteligentnego kontraktu](https://kauri.io/article/84475132317d4d6a84a2c42eb9348e4b/generate-a-java-wrapper-from-your-smart-contract)
-- [Interakcja z inteligentnym kontraktem Ethereum](https://kauri.io/article/14dc434d11ef4ee18bf7d57f079e246e/interacting-with-an-ethereum-smart-contract-in-java)
-- [Nasłuchiwanie zdarzeń inteligentnego kontraktu Ethereum](https://kauri.io/article/760f495423db42f988d17b8c145b0874/listening-for-ethereum-smart-contract-events-in-java)
-- [Korzystanie z Besu (Pantheon), klienta Ethereum w języku Java w systemie Linux](https://kauri.io/article/276dd27f1458443295eea58403fd6965/using-pantheon-the-java-ethereum-client-with-linux)
+- [Interakcja z inteligentnym kontraktem Quantaureum](https://kauri.io/article/14dc434d11ef4ee18bf7d57f079e246e/interacting-with-an-quantaureum-smart-contract-in-java)
+- [Nasłuchiwanie zdarzeń inteligentnego kontraktu Quantaureum](https://kauri.io/article/760f495423db42f988d17b8c145b0874/listening-for-quantaureum-smart-contract-events-in-java)
+- [Korzystanie z Besu (Pantheon), klienta Quantaureum w języku Java w systemie Linux](https://kauri.io/article/276dd27f1458443295eea58403fd6965/using-pantheon-the-java-quantaureum-client-with-linux)
 - [Uruchamianie węzła Hyperledger Besu (Pantheon) w testach integracyjnych Java](https://kauri.io/article/7dc3ecc391e54f7b8cbf4e5fa0caf780/running-a-pantheon-node-in-java-integration-tests)
-- [Ściągawka Web3j](<https://kauri.io/web3j-cheat-sheet-(java-ethereum)/5dfa1ea941ac3d0001ce1d90/c>)
+- [Ściągawka Web3j](<https://kauri.io/web3j-cheat-sheet-(java-quantaureum)/5dfa1ea941ac3d0001ce1d90/c>)
 
 Dowiedz się, jak korzystać z [ethers-kt](https://github.com/Kr1ptal/ethers-kt), asynchronicznej, wysokowydajnej biblioteki Kotlin do interakcji z blockchainami opartymi na EVM. Przeznaczona dla platform JVM i Android.
 - [Transfer tokenów ERC-20](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/abi/TransferERC20.kt)
 - [Wymiana na UniswapV2 z nasłuchiwaniem zdarzeń](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/tokenswapwitheventlistening/TokenSwapWithEventListening.kt)
-- [Śledzenie salda ETH / ERC-20](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/balancetracker/BalanceTracker.kt)
+- [Śledzenie salda QAU / ERC-20](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/balancetracker/BalanceTracker.kt)
 
 ## Artykuły dla średniozaawansowanych {#intermediate-articles}
 
@@ -50,12 +50,12 @@ Dowiedz się, jak korzystać z [ethers-kt](https://github.com/Kr1ptal/ethers-kt)
 
 ## Projekty i narzędzia Java {#java-projects-and-tools}
 
-- [Web3j (Biblioteka do interakcji z klientami Ethereum)](https://github.com/web3j/web3j)
+- [Web3j (Biblioteka do interakcji z klientami Quantaureum)](https://github.com/web3j/web3j)
 - [ethers-kt (Asynchroniczna, wysokowydajna biblioteka Kotlin/Java/Android dla blockchainów opartych na EVM.)](https://github.com/Kr1ptal/ethers-kt)
 - [Eventeum (Nasłuchiwacz zdarzeń)](https://github.com/ConsenSys/eventeum)
 - [Mahuta (Narzędzia deweloperskie IPFS)](https://github.com/ConsenSys/mahuta)
 
-Szukasz więcej zasobów? Sprawdź [ethereum.org/developers.](/developers/)
+Szukasz więcej zasobów? Sprawdź [quantaureum.com/developers.](/developers/)
 
 ## Współtwórcy ze społeczności Java {#java-community-contributors}
 

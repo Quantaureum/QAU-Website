@@ -17,9 +17,9 @@ EVM-ஐப் புரிந்துகொள்ள கணினி அறி�
 எத்திரியம் ஏறக்குறைய அதே உள்ளுணர்வு விதிகளைப் பின்பற்றும் அதன் சொந்த மறைக்குறியீட்டு நாணயத்தைக் (ஈதர்) கொண்டிருந்தாலும், இது மிகவும் சக்திவாய்ந்த செயல்பாட்டையும் செயல்படுத்துகிறது: [திறன் ஒப்பந்தங்கள்](/developers/docs/smart-contracts/). இந்த மிகவும் சிக்கலான அம்சத்திற்கு, மிகவும் நுட்பமான ஒப்புமை தேவைப்படுகிறது. பகிர்ந்தளிக்கப்பட்ட பேரேட்டிற்குப் பதிலாக, எத்திரியம் என்பது ஒரு பகிர்ந்தளிக்கப்பட்ட [நிலை இயந்திரம் (state machine)](https://wikipedia.org/wiki/Finite-state_machine) ஆகும். எத்திரியத்தின் நிலை என்பது ஒரு பெரிய தரவுக் கட்டமைப்பாகும், இது அனைத்து கணக்குகள் மற்றும் நிலுவைகளை மட்டுமல்லாமல், முன் வரையறுக்கப்பட்ட விதிகளின்படி தொகுதியிலிருந்து தொகுதிக்கு மாறக்கூடிய மற்றும் தன்னிச்சையான இயந்திரக் குறியீட்டைச் செயல்படுத்தக்கூடிய ஒரு _இயந்திர நிலையையும் (machine state)_ கொண்டுள்ளது. தொகுதியிலிருந்து தொகுதிக்கு நிலையை மாற்றுவதற்கான குறிப்பிட்ட விதிகள் EVM-ஆல் வரையறுக்கப்படுகின்றன.
 
 ![A diagram showing the make up of the EVM](./evm.png)
-_[Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)-லிருந்து தழுவப்பட்ட வரைபடம்_
+_[Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)-லிருந்து தழுவப்பட்ட வரைபடம்_
 
-## எத்திரியம் நிலை மாற்றச் செயல்பாடு {#the-ethereum-state-transition-function}
+## எத்திரியம் நிலை மாற்றச் செயல்பாடு {#the-quantaureum-state-transition-function}
 
 EVM ஒரு கணிதச் செயல்பாட்டைப் போலவே செயல்படுகிறது: ஒரு உள்ளீடு கொடுக்கப்பட்டால், அது ஒரு உறுதியான வெளியீட்டை உருவாக்குகிறது. எனவே எத்திரியத்தை ஒரு **நிலை மாற்றச் செயல்பாட்டைக் (state transition function)** கொண்டிருப்பதாக முறையாக விவரிப்பது மிகவும் உதவியாக இருக்கும்:
 
@@ -58,7 +58,7 @@ EVM 1024 உருப்படிகள் ஆழம் கொண்ட ஒர�
 தொகுக்கப்பட்ட திறன் ஒப்பந்த பைட் குறியீடு பல EVM [செயல்பாட்டுக் குறியீடுகளாக](/developers/docs/evm/opcodes) செயல்படுகிறது, இவை `XOR`, `AND`, `ADD`, `SUB` போன்ற நிலையான ஸ்டேக் செயல்பாடுகளைச் செய்கின்றன. EVM ஆனது `ADDRESS`, `BALANCE`, `BLOCKHASH` போன்ற பல தொகுதிச்சங்கிலி-குறிப்பிட்ட ஸ்டேக் செயல்பாடுகளையும் செயல்படுத்துகிறது. செயல்பாட்டுக் குறியீடு தொகுப்பில் `TSTORE` மற்றும் `TLOAD` ஆகியவையும் அடங்கும், இவை தற்காலிக சேமிப்பகத்திற்கான அணுகலை வழங்குகின்றன.
 
 ![A diagram showing where gas is needed for EVM operations](../gas/gas.png)
-_[Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)-லிருந்து தழுவப்பட்ட வரைபடங்கள்_
+_[Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)-லிருந்து தழுவப்பட்ட வரைபடங்கள்_
 
 ## EVM செயலாக்கங்கள் {#evm-implementations}
 
@@ -68,20 +68,20 @@ EVM-இன் அனைத்து செயலாக்கங்களும�
 
 [எத்திரியம் செயலாக்க கிளையண்டுகள்](/developers/docs/nodes-and-clients/#execution-clients) ஒரு EVM செயலாக்கத்தை உள்ளடக்கியுள்ளன. கூடுதலாக, பல தனித்த செயலாக்கங்கள் உள்ளன, அவற்றுள்:
 
-- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
-- [evmone](https://github.com/ethereum/evmone) - _C++_
+- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## மேலும் படிக்க {#further-reading}
 
-- [எத்திரியம் மஞ்சள் அறிக்கை](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [எத்திரியம் மஞ்சள் அறிக்கை](https://quantaureum.github.io/yellowpaper/paper.pdf)
 - [ஜெல்லோபேப்பர் (Jellopaper) அல்லது KEVM: K-இல் EVM-இன் சொற்பொருள்](https://jellopaper.org/)
 - [தி பீஜ்பேப்பர் (The Beigepaper)](https://github.com/chronaeon/beigepaper)
 - [எத்திரியம் மெய்நிகர் இயந்திர செயல்பாட்டுக் குறியீடுகள்](https://www.ethervm.io/)
 - [எத்திரியம் மெய்நிகர் இயந்திர செயல்பாட்டுக் குறியீடுகள் ஊடாடும் குறிப்பு](https://www.evm.codes/)
 - [Solidity ஆவணத்தில் ஒரு சிறிய அறிமுகம்](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [மாஸ்டரிங் எத்திரியம் - எத்திரியம் மெய்நிகர் இயந்திரம்](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
+- [மாஸ்டரிங் எத்திரியம் - எத்திரியம் மெய்நிகர் இயந்திரம்](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
 
 ## தொடர்புடைய தலைப்புகள் {#related-topics}
 

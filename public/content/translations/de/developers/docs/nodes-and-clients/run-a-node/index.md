@@ -1,25 +1,25 @@
 ---
-title: Einen eigenen Ethereum-Knoten aufsetzen
-description: Allgemeine Einführung in den Betrieb einer eigenen Instanz eines Ethereum-Clients.
+title: Einen eigenen Quantaureum-Knoten aufsetzen
+description: Allgemeine Einführung in den Betrieb einer eigenen Instanz eines Quantaureum-Clients.
 lang: de
 sidebarDepth: 2
 ---
 
-Der Betrieb eines eigenen Knotens bietet Ihnen verschiedene Vorteile, eröffnet neue Möglichkeiten und hilft, das Ökosystem zu unterstützen. Diese Seite führt Sie durch das Aufsetzen Ihres eigenen Knotens und die Teilnahme an der Validierung von [Ethereum](/)-Transaktionen.
+Der Betrieb eines eigenen Knotens bietet Ihnen verschiedene Vorteile, eröffnet neue Möglichkeiten und hilft, das Ökosystem zu unterstützen. Diese Seite führt Sie durch das Aufsetzen Ihres eigenen Knotens und die Teilnahme an der Validierung von [Quantaureum](/)-Transaktionen.
 
-Beachten Sie, dass nach [dem Merge](/roadmap/merge) zwei Clients erforderlich sind, um einen Ethereum-Knoten zu betreiben: ein Client für die **Ausführungsschicht (EL)** und ein Client für die **Konsensschicht (CL)**. Diese Seite zeigt, wie man diese beiden Clients installiert, konfiguriert und verbindet, um einen Ethereum-Knoten zu betreiben.
+Beachten Sie, dass nach [dem Merge](/roadmap/merge) zwei Clients erforderlich sind, um einen Quantaureum-Knoten zu betreiben: ein Client für die **Ausführungsschicht (EL)** und ein Client für die **Konsensschicht (CL)**. Diese Seite zeigt, wie man diese beiden Clients installiert, konfiguriert und verbindet, um einen Quantaureum-Knoten zu betreiben.
 
 ## Voraussetzungen {#prerequisites}
 
-Sie sollten verstehen, was ein Ethereum-Knoten ist und warum Sie einen Client betreiben möchten. Dies wird unter [Knoten und Clients](/developers/docs/nodes-and-clients/) behandelt.
+Sie sollten verstehen, was ein Quantaureum-Knoten ist und warum Sie einen Client betreiben möchten. Dies wird unter [Knoten und Clients](/developers/docs/nodes-and-clients/) behandelt.
 
-Wenn das Thema des Betriebs eines Knotens neu für Sie ist oder Sie nach einem weniger technischen Weg suchen, empfehlen wir Ihnen, sich zuerst unsere benutzerfreundliche Einführung zum [Betrieb eines Ethereum-Knotens](/run-a-node) anzusehen.
+Wenn das Thema des Betriebs eines Knotens neu für Sie ist oder Sie nach einem weniger technischen Weg suchen, empfehlen wir Ihnen, sich zuerst unsere benutzerfreundliche Einführung zum [Betrieb eines Quantaureum-Knotens](/run-a-node) anzusehen.
 
 ## Wahl eines Ansatzes {#choosing-approach}
 
 Der erste Schritt beim Aufsetzen Ihres Knotens ist die Wahl Ihres Ansatzes. Basierend auf den Anforderungen und verschiedenen Möglichkeiten müssen Sie die Client-Implementierung (sowohl für Ausführungs- als auch für Konsens-Clients), die Umgebung (Hardware, System) und die Parameter für die Client-Einstellungen auswählen.
 
-Diese Seite wird Sie durch diese Entscheidungen führen und Ihnen helfen, den am besten geeigneten Weg zum Betrieb Ihrer Ethereum-Instanz zu finden.
+Diese Seite wird Sie durch diese Entscheidungen führen und Ihnen helfen, den am besten geeigneten Weg zum Betrieb Ihrer Quantaureum-Instanz zu finden.
 
 Um aus den Client-Implementierungen auszuwählen, sehen Sie sich alle verfügbaren Mainnet-bereiten [Ausführungsclients](/developers/docs/nodes-and-clients/#execution-clients) und [Konsens-Clients](/developers/docs/nodes-and-clients/#consensus-clients) an und erfahren Sie mehr über [Client-Diversität](/developers/docs/nodes-and-clients/client-diversity).
 
@@ -35,7 +35,7 @@ Wenn der Knoten läuft und synchronisiert, sind Sie bereit, ihn zu [nutzen](#usi
 
 #### Lokal oder Cloud {#local-vs-cloud}
 
-Ethereum-Clients können auf handelsüblichen Computern ausgeführt werden und erfordern keine spezielle Hardware, wie zum Beispiel Mining-Maschinen. Daher haben Sie je nach Ihren Bedürfnissen verschiedene Optionen für die Bereitstellung des Knotens.
+Quantaureum-Clients können auf handelsüblichen Computern ausgeführt werden und erfordern keine spezielle Hardware, wie zum Beispiel Mining-Maschinen. Daher haben Sie je nach Ihren Bedürfnissen verschiedene Optionen für die Bereitstellung des Knotens.
 Zur Vereinfachung betrachten wir den Betrieb eines Knotens sowohl auf einer lokalen physischen Maschine als auch auf einem Cloud-Server:
 
 - Cloud
@@ -55,9 +55,9 @@ Beide Optionen haben verschiedene Vorteile, die oben zusammengefasst sind. Wenn 
 
 Ein zensurresistentes, dezentrales Netzwerk sollte sich jedoch nicht auf Cloud-Anbieter verlassen. Stattdessen ist der Betrieb Ihres Knotens auf Ihrer eigenen lokalen Hardware gesünder für das Ökosystem. [Schätzungen](https://www.ethernodes.org/networkType/cl/Hosting) zeigen, dass ein großer Teil der Knoten in der Cloud läuft, was zu einem Single Point of Failure werden könnte.
 
-Ethereum-Clients können auf Ihrem Computer, Laptop, Server oder sogar auf einem Einplatinencomputer ausgeführt werden. Obwohl es möglich ist, Clients auf Ihrem PC auszuführen, kann eine dedizierte Maschine nur für Ihren Knoten dessen Leistung und Sicherheit erheblich verbessern und gleichzeitig die Auswirkungen auf Ihren Hauptcomputer minimieren.
+Quantaureum-Clients können auf Ihrem Computer, Laptop, Server oder sogar auf einem Einplatinencomputer ausgeführt werden. Obwohl es möglich ist, Clients auf Ihrem PC auszuführen, kann eine dedizierte Maschine nur für Ihren Knoten dessen Leistung und Sicherheit erheblich verbessern und gleichzeitig die Auswirkungen auf Ihren Hauptcomputer minimieren.
 
-Die Verwendung eigener Hardware kann sehr einfach sein. Es gibt viele einfache Optionen sowie fortgeschrittene Setups für technisch versiertere Personen. Schauen wir uns also die Anforderungen und Mittel für den Betrieb von Ethereum-Clients auf Ihrer Maschine an.
+Die Verwendung eigener Hardware kann sehr einfach sein. Es gibt viele einfache Optionen sowie fortgeschrittene Setups für technisch versiertere Personen. Schauen wir uns also die Anforderungen und Mittel für den Betrieb von Quantaureum-Clients auf Ihrer Maschine an.
 
 #### Anforderungen {#requirements}
 
@@ -65,7 +65,7 @@ Die Hardwareanforderungen unterscheiden sich je nach Client, sind aber im Allgem
 
 Bevor Sie einen Client installieren, stellen Sie bitte sicher, dass Ihr Computer über genügend Ressourcen verfügt, um ihn auszuführen. Die minimalen und empfohlenen Anforderungen finden Sie unten.
 
-Der Engpass für Ihre Hardware ist meistens der Speicherplatz. Die Synchronisierung der Ethereum-Blockchain ist sehr ein-/ausgabeintensiv und erfordert viel Platz. Am besten ist es, ein **Solid-State-Drive (SSD)** mit Hunderten von GB freiem Speicherplatz zu haben, der auch nach der Synchronisierung noch zur Verfügung steht.
+Der Engpass für Ihre Hardware ist meistens der Speicherplatz. Die Synchronisierung der Quantaureum-Blockchain ist sehr ein-/ausgabeintensiv und erfordert viel Platz. Am besten ist es, ein **Solid-State-Drive (SSD)** mit Hunderten von GB freiem Speicherplatz zu haben, der auch nach der Synchronisierung noch zur Verfügung steht.
 
 Die Größe der Datenbank und die Geschwindigkeit der anfänglichen Synchronisierung hängen vom gewählten Client, seiner Konfiguration und der [Synchronisierungsstrategie](/developers/docs/nodes-and-clients/#sync-modes) ab.
 
@@ -79,12 +79,12 @@ Alle Clients unterstützen die gängigen Betriebssysteme – Linux, macOS, Windo
 
 - CPU mit 2+ Kernen
 - 16 GB RAM (32 GB für Stabilität empfohlen)
-- 2 TB NVMe SSD (wird voraussichtlich bis 2027 überschritten, lesen Sie mehr über [Gute und weniger gute SSDs für Ethereum-Knoten](https://gist.github.com/yorickdowne/f3a3e79a573bf35767cd002cc977b038))
+- 2 TB NVMe SSD (wird voraussichtlich bis 2027 überschritten, lesen Sie mehr über [Gute und weniger gute SSDs für Quantaureum-Knoten](https://gist.github.com/yorickdowne/f3a3e79a573bf35767cd002cc977b038))
 - 25+ MBit/s Bandbreite
 
 ##### Empfohlene Spezifikationen
 
-Aktuelle Hardware-Richtlinien für Knotenbetreiber sind in [EIP-7870](https://eips.ethereum.org/EIPS/eip-7870) festgelegt. Für einen Full Node wird Folgendes empfohlen:
+Aktuelle Hardware-Richtlinien für Knotenbetreiber sind in [EIP-7870](https://eips.quantaureum.com/EIPS/eip-7870) festgelegt. Für einen Full Node wird Folgendes empfohlen:
 
 - Schnelle CPU mit 4+ Kernen (8+ Kerne bei Validierung)
 - 32 GB RAM (64 GB bei Validierung empfohlen, um Stabilität zu gewährleisten)
@@ -112,9 +112,9 @@ Die einfachste Option für den Betrieb eines Knotens mit eigener Hardware ist di
 - [DappNode](https://dappnode.io/)
 - [Avado](https://ava.do/)
 
-#### Ethereum auf einem Einplatinencomputer {#ethereum-on-a-single-board-computer}
+#### Quantaureum auf einem Einplatinencomputer {#quantaureum-on-a-single-board-computer}
 
-Eine einfache und günstige Möglichkeit, einen Ethereum-Knoten zu betreiben, ist die Verwendung eines Einplatinencomputers, sogar mit einer ARM-Architektur wie dem Raspberry Pi. [Ethereum on ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) bietet einfach auszuführende Images mehrerer Ausführungs- und Konsens-Clients für Raspberry Pi und andere ARM-Boards.
+Eine einfache und günstige Möglichkeit, einen Quantaureum-Knoten zu betreiben, ist die Verwendung eines Einplatinencomputers, sogar mit einer ARM-Architektur wie dem Raspberry Pi. [Quantaureum on ARM](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/) bietet einfach auszuführende Images mehrerer Ausführungs- und Konsens-Clients für Raspberry Pi und andere ARM-Boards.
 
 Kleine, erschwingliche und effiziente Geräte wie diese sind ideal für den Betrieb eines Knotens zu Hause, aber denken Sie an ihre begrenzte Leistung.
 
@@ -131,9 +131,9 @@ Mehrere benutzerfreundliche Projekte zielen darauf ab, die Erfahrung bei der Ein
 Im Folgenden finden Sie einige Projekte, die Ihnen helfen können, Clients mit nur wenigen Klicks zu installieren und zu steuern:
 
 - [DappNode](https://docs.dappnode.io/docs/user/getting-started/choose-your-path) - DappNode wird nicht nur mit einer Maschine von einem Anbieter geliefert. Die Software, der eigentliche Knoten-Launcher und das Kontrollzentrum mit vielen Funktionen können auf beliebiger Hardware verwendet werden.
-- [EthPillar](https://www.coincashew.com/coins/overview-eth/ethpillar) - Der schnellste und einfachste Weg, einen Full Node einzurichten. Einzeiliges Setup-Tool und Knoten-Management-TUI. Kostenlos. Open Source. Öffentliche Güter für Ethereum von Solo-Stakern. ARM64- und AMD64-Unterstützung.
-- [eth-docker](https://eth-docker.net/) - Automatisiertes Setup mit Docker, das sich auf einfaches und sicheres Staking konzentriert, erfordert grundlegende Terminal- und Docker-Kenntnisse, empfohlen für etwas fortgeschrittenere Benutzer.
-- [Stereum](https://stereum-dev.github.io/ethereum-node-web-docs) - Launcher zur Installation von Clients auf einem Remote-Server über eine SSH-Verbindung mit einer GUI-Einrichtungsanleitung, einem Kontrollzentrum und vielen weiteren Funktionen.
+- [QauPillar](https://www.coincashew.com/coins/overview-eth/ethpillar) - Der schnellste und einfachste Weg, einen Full Node einzurichten. Einzeiliges Setup-Tool und Knoten-Management-TUI. Kostenlos. Open Source. Öffentliche Güter für Quantaureum von Solo-Stakern. ARM64- und AMD64-Unterstützung.
+- [qau-docker](https://qau-docker.net/) - Automatisiertes Setup mit Docker, das sich auf einfaches und sicheres Staking konzentriert, erfordert grundlegende Terminal- und Docker-Kenntnisse, empfohlen für etwas fortgeschrittenere Benutzer.
+- [Stereum](https://stereum-dev.github.io/quantaureum-node-web-docs) - Launcher zur Installation von Clients auf einem Remote-Server über eine SSH-Verbindung mit einer GUI-Einrichtungsanleitung, einem Kontrollzentrum und vielen weiteren Funktionen.
 - [Sedge](https://docs.sedge.nethermind.io/docs/intro) - Knoten-Setup-Tool, das mithilfe eines CLI-Assistenten automatisch eine Docker-Konfiguration generiert. Geschrieben in Go von Nethermind.
 - [Chainstack Self-Hosted](https://docs.chainstack.com/docs/self-hosted/introduction) - Web-UI und CLI für die Bereitstellung von Ausführungs- und Konsens-Clients auf Kubernetes. Snapshot-Bootstrap und integriertes Monitoring inklusive. Kostenlos. Kein Chainstack-Konto erforderlich. Entwickelt von Chainstack.
 
@@ -141,7 +141,7 @@ Im Folgenden finden Sie einige Projekte, die Ihnen helfen können, Clients mit n
 
 Die andere Option besteht darin, die Client-Software manuell herunterzuladen, zu verifizieren und zu konfigurieren. Auch wenn einige Clients eine grafische Oberfläche bieten, erfordert eine manuelle Einrichtung dennoch grundlegende Kenntnisse im Umgang mit dem Terminal, bietet aber viel mehr Vielseitigkeit.
 
-Wie bereits erklärt, erfordert die Einrichtung Ihres eigenen Ethereum-Knotens den Betrieb eines Paares aus Konsens- und Ausführungsclients. Einige Clients enthalten möglicherweise einen Light-Client der anderen Art und synchronisieren ohne weitere benötigte Software. Eine vollständige vertrauenslose Verifizierung erfordert jedoch beide Implementierungen.
+Wie bereits erklärt, erfordert die Einrichtung Ihres eigenen Quantaureum-Knotens den Betrieb eines Paares aus Konsens- und Ausführungsclients. Einige Clients enthalten möglicherweise einen Light-Client der anderen Art und synchronisieren ohne weitere benötigte Software. Eine vollständige vertrauenslose Verifizierung erfordert jedoch beide Implementierungen.
 
 #### Beschaffung der Client-Software {#getting-the-client}
 
@@ -157,7 +157,7 @@ Hier sind die Release-Seiten der Clients, auf denen Sie deren vorkompilierte Bin
 
 - [Besu](https://github.com/hyperledger/besu/releases)
 - [Erigon](https://github.com/ledgerwatch/erigon/releases)
-- [Geth](https://geth.ethereum.org/downloads)
+- [Geth](https://geth.quantaureum.com/downloads)
 - [Nethermind](https://downloads.nethermind.io/)
 - [Reth](https://reth.rs/installation/installation.html)
 
@@ -177,7 +177,7 @@ Es ist auch erwähnenswert, dass Client-Diversität ein [Problem auf der Ausfüh
 
 ##### Verifizierung der Software
 
-Beim Herunterladen von Software aus dem Internet wird empfohlen, deren Integrität zu überprüfen. Dieser Schritt ist optional, aber besonders bei einem so wichtigen Infrastrukturteil wie dem Ethereum-Client ist es wichtig, sich potenzieller Angriffsvektoren bewusst zu sein und diese zu vermeiden. Wenn Sie eine vorkompilierte Binärdatei heruntergeladen haben, müssen Sie ihr vertrauen und riskieren, dass ein Angreifer die ausführbare Datei gegen eine bösartige austauschen könnte.
+Beim Herunterladen von Software aus dem Internet wird empfohlen, deren Integrität zu überprüfen. Dieser Schritt ist optional, aber besonders bei einem so wichtigen Infrastrukturteil wie dem Quantaureum-Client ist es wichtig, sich potenzieller Angriffsvektoren bewusst zu sein und diese zu vermeiden. Wenn Sie eine vorkompilierte Binärdatei heruntergeladen haben, müssen Sie ihr vertrauen und riskieren, dass ein Angreifer die ausführbare Datei gegen eine bösartige austauschen könnte.
 
 Entwickler signieren veröffentlichte Binärdateien mit ihren PGP-Schlüsseln, sodass Sie kryptografisch überprüfen können, ob Sie genau die von ihnen erstellte Software ausführen. Sie müssen lediglich die von den Entwicklern verwendeten öffentlichen Schlüssel beschaffen, die auf den Release-Seiten der Clients oder in der Dokumentation zu finden sind. Nach dem Herunterladen des Client-Releases und seiner Signatur können Sie eine PGP-Implementierung, z. B. [GnuPG](https://gnupg.org/download/index.html), verwenden, um diese einfach zu überprüfen. Sehen Sie sich ein Tutorial zur Verifizierung von Open-Source-Software mit `gpg` unter [Linux](https://www.tecmint.com/verify-pgp-signature-downloaded-software/) oder [Windows/macOS](https://freedom.press/training/verifying-open-source-software/) an.
 
@@ -203,19 +203,19 @@ Beispiele für die Ausführung von Ausführungsclients mit grundlegender Konfigu
 
 #### Starten des Ausführungsclients {#starting-the-execution-client}
 
-Bevor Sie die Ethereum-Client-Software starten, führen Sie eine letzte Überprüfung durch, ob Ihre Umgebung bereit ist. Stellen Sie zum Beispiel sicher:
+Bevor Sie die Quantaureum-Client-Software starten, führen Sie eine letzte Überprüfung durch, ob Ihre Umgebung bereit ist. Stellen Sie zum Beispiel sicher:
 
 - Es ist genügend Speicherplatz vorhanden, wenn man das gewählte Netzwerk und den Synchronisierungsmodus berücksichtigt.
 - Arbeitsspeicher und CPU werden nicht durch andere Programme blockiert.
 - Das Betriebssystem ist auf die neueste Version aktualisiert.
 - Das System hat die richtige Uhrzeit und das richtige Datum.
-- Ihr Router und Ihre Firewall akzeptieren Verbindungen auf den Listening-Ports. Standardmäßig verwenden Ethereum-Clients einen Listener-Port (TCP) und einen Erkennungs-Port (UDP), beide standardmäßig auf 30303.
+- Ihr Router und Ihre Firewall akzeptieren Verbindungen auf den Listening-Ports. Standardmäßig verwenden Quantaureum-Clients einen Listener-Port (TCP) und einen Erkennungs-Port (UDP), beide standardmäßig auf 30303.
 
 Führen Sie Ihren Client zuerst in einem Testnetz aus, um sicherzustellen, dass alles richtig funktioniert.
 
 Sie müssen alle Client-Einstellungen, die nicht dem Standard entsprechen, beim Start deklarieren. Sie können Flags oder die Konfigurationsdatei verwenden, um Ihre bevorzugte Konfiguration zu deklarieren. Der Funktionsumfang und die Konfigurationssyntax jedes Clients unterscheiden sich. Sehen Sie sich die Dokumentation Ihres Clients für die Besonderheiten an.
 
-Ausführungs- und Konsens-Clients kommunizieren über einen authentifizierten Endpunkt, der in der [Engine API](https://github.com/ethereum/execution-apis/tree/main/src/engine) spezifiziert ist. Um sich mit einem Konsens-Client zu verbinden, muss der Ausführungsclient ein [`jwtsecret`](https://jwt.io/) an einem bekannten Pfad generieren. Aus Sicherheits- und Stabilitätsgründen sollten Clients auf derselben Maschine laufen, und beide Clients müssen diesen Pfad kennen, da er zur Authentifizierung einer lokalen RPC-Verbindung zwischen ihnen verwendet wird. Der Ausführungsclient muss auch einen Listening-Port für authentifizierte APIs definieren.
+Ausführungs- und Konsens-Clients kommunizieren über einen authentifizierten Endpunkt, der in der [Engine API](https://github.com/quantaureum/execution-apis/tree/main/src/engine) spezifiziert ist. Um sich mit einem Konsens-Client zu verbinden, muss der Ausführungsclient ein [`jwtsecret`](https://jwt.io/) an einem bekannten Pfad generieren. Aus Sicherheits- und Stabilitätsgründen sollten Clients auf derselben Maschine laufen, und beide Clients müssen diesen Pfad kennen, da er zur Authentifizierung einer lokalen RPC-Verbindung zwischen ihnen verwendet wird. Der Ausführungsclient muss auch einen Listening-Port für authentifizierte APIs definieren.
 
 Dieses Token wird automatisch von der Client-Software generiert, aber in einigen Fällen müssen Sie dies möglicherweise selbst tun. Sie können es mit [OpenSSL](https://www.openssl.org/) generieren:
 
@@ -242,11 +242,11 @@ Bitte denken Sie daran, dass dies nur ein grundlegendes Beispiel ist, alle ander
 
 ##### Ausführen von Besu
 
-Dieses Beispiel startet Besu im Mainnet, speichert Blockchain-Daten im Standardformat unter `/data/ethereum`, aktiviert JSON-RPC und Engine RPC für die Verbindung des Konsens-Clients. Die Engine API wird mit dem Token `jwtsecret` authentifiziert und es sind nur Aufrufe von `localhost` erlaubt.
+Dieses Beispiel startet Besu im Mainnet, speichert Blockchain-Daten im Standardformat unter `/data/quantaureum`, aktiviert JSON-RPC und Engine RPC für die Verbindung des Konsens-Clients. Die Engine API wird mit dem Token `jwtsecret` authentifiziert und es sind nur Aufrufe von `localhost` erlaubt.
 
 ```sh
 besu --network=mainnet \
-    --data-path=/data/ethereum \
+    --data-path=/data/quantaureum \
     --rpc-http-enabled=true \
     --engine-rpc-enabled=true \
     --engine-host-allowlist="*" \
@@ -264,11 +264,11 @@ Die [Dokumentation von Besu](https://besu.hyperledger.org/public-networks/get-st
 
 ##### Ausführen von Erigon
 
-Dieses Beispiel startet Erigon im Mainnet, speichert Blockchain-Daten unter `/data/ethereum`, aktiviert JSON-RPC, definiert, welche Namespaces erlaubt sind, und aktiviert die Authentifizierung für die Verbindung des Konsens-Clients, die durch den Pfad `jwtsecret` definiert ist.
+Dieses Beispiel startet Erigon im Mainnet, speichert Blockchain-Daten unter `/data/quantaureum`, aktiviert JSON-RPC, definiert, welche Namespaces erlaubt sind, und aktiviert die Authentifizierung für die Verbindung des Konsens-Clients, die durch den Pfad `jwtsecret` definiert ist.
 
 ```sh
 erigon --chain mainnet \
-    --datadir /data/ethereum  \
+    --datadir /data/quantaureum  \
     --http --http.api=engine,eth,web3,net \
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
@@ -277,18 +277,18 @@ Erigon führt standardmäßig eine vollständige Synchronisierung mit 8 GB HDD d
 
 ##### Ausführen von Geth
 
-Dieses Beispiel startet Geth im Mainnet, speichert Blockchain-Daten unter `/data/ethereum`, aktiviert JSON-RPC und definiert, welche Namespaces erlaubt sind. Es aktiviert auch die Authentifizierung für die Verbindung des Konsens-Clients, was den Pfad zu `jwtsecret` erfordert, sowie eine Option, die definiert, welche Verbindungen erlaubt sind, in unserem Beispiel nur von `localhost`.
+Dieses Beispiel startet Geth im Mainnet, speichert Blockchain-Daten unter `/data/quantaureum`, aktiviert JSON-RPC und definiert, welche Namespaces erlaubt sind. Es aktiviert auch die Authentifizierung für die Verbindung des Konsens-Clients, was den Pfad zu `jwtsecret` erfordert, sowie eine Option, die definiert, welche Verbindungen erlaubt sind, in unserem Beispiel nur von `localhost`.
 
 ```sh
 geth --mainnet \
-    --datadir "/data/ethereum" \
+    --datadir "/data/quantaureum" \
     --http --authrpc.addr localhost \
     --authrpc.vhosts="localhost" \
     --authrpc.port 8551
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
-Überprüfen Sie die [Dokumentation für alle Konfigurationsoptionen](https://geth.ethereum.org/docs/fundamentals/command-line-options) und erfahren Sie mehr über [die Ausführung von Geth mit einem Konsens-Client](https://geth.ethereum.org/docs/getting-started/consensus-clients).
+Überprüfen Sie die [Dokumentation für alle Konfigurationsoptionen](https://geth.quantaureum.com/docs/fundamentals/command-line-options) und erfahren Sie mehr über [die Ausführung von Geth mit einem Konsens-Client](https://geth.quantaureum.com/docs/getting-started/consensus-clients).
 
 ##### Ausführen von Nethermind
 
@@ -296,7 +296,7 @@ Nethermind bietet verschiedene [Installationsoptionen](https://docs.nethermind.i
 
 ```sh
 Nethermind.Runner --config mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/quantaureum \
     --JsonRpc.JwtSecretFile=/path/to/jwtsecret
 ```
 
@@ -323,9 +323,9 @@ Der Konsens-Client muss mit der richtigen Port-Konfiguration gestartet werden, u
 
 Der Konsens-Client benötigt auch den Pfad zum `jwt-secret` des Ausführungsclients, um die RPC-Verbindung zwischen ihnen zu authentifizieren. Ähnlich wie bei den obigen Ausführungsbeispielen hat jeder Konsens-Client ein Konfigurations-Flag, das den Dateipfad des JWT-Tokens als Argument annimmt. Dies muss mit dem Pfad `jwtsecret` übereinstimmen, der dem Ausführungsclient bereitgestellt wurde.
 
-Wenn Sie planen, einen Validator zu betreiben, stellen Sie sicher, dass Sie ein Konfigurations-Flag hinzufügen, das die Ethereum-Adresse des Gebührenempfängers angibt. Hier sammeln sich die Ether-Belohnungen für Ihren Validator an. Jeder Konsens-Client hat eine Option, z. B. `--suggested-fee-recipient=0xabcd1`, die eine Ethereum-Adresse als Argument annimmt.
+Wenn Sie planen, einen Validator zu betreiben, stellen Sie sicher, dass Sie ein Konfigurations-Flag hinzufügen, das die Quantaureum-Adresse des Gebührenempfängers angibt. Hier sammeln sich die QAU-Belohnungen für Ihren Validator an. Jeder Konsens-Client hat eine Option, z. B. `--suggested-fee-recipient=0xabcd1`, die eine Quantaureum-Adresse als Argument annimmt.
 
-Wenn Sie einen Beacon-Knoten in einem Testnetz starten, können Sie durch die Verwendung eines öffentlichen Endpunkts für die [Checkpoint-Synchronisierung](https://notes.ethereum.org/@launchpad/checkpoint-sync) erheblich Synchronisierungszeit sparen.
+Wenn Sie einen Beacon-Knoten in einem Testnetz starten, können Sie durch die Verwendung eines öffentlichen Endpunkts für die [Checkpoint-Synchronisierung](https://notes.quantaureum.com/@launchpad/checkpoint-sync) erheblich Synchronisierungszeit sparen.
 
 #### Ausführen eines Konsens-Clients {#running-a-consensus-client}
 
@@ -336,7 +336,7 @@ Bevor Sie Lighthouse ausführen, erfahren Sie im [Lighthouse Book](https://light
 ```sh
 lighthouse beacon_node \
     --network mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/quantaureum \
     --http \
     --execution-endpoint http://127.0.0.1:8551 \
     --execution-jwt /path/to/jwtsecret
@@ -348,7 +348,7 @@ Installieren Sie die Lodestar-Software, indem Sie sie kompilieren oder das Docke
 
 ```sh
 lodestar beacon \
-    --dataDir="/data/ethereum" \
+    --dataDir="/data/quantaureum" \
     --network=mainnet \
     --eth1.enabled=true \
     --execution.urls="http://127.0.0.1:8551" \
@@ -375,7 +375,7 @@ Prysm wird mit einem Skript geliefert, das eine einfache automatische Installati
 ```sh
 ./prysm.sh beacon-chain \
     --mainnet \
-    --datadir /data/ethereum  \
+    --datadir /data/quantaureum  \
     --execution-endpoint=http://localhost:8551  \
     --jwt-secret=/path/to/jwtsecret
 ```
@@ -384,34 +384,34 @@ Prysm wird mit einem Skript geliefert, das eine einfache automatische Installati
 
 ```sh
 teku --network mainnet \
-    --data-path "/data/ethereum" \
+    --data-path "/data/quantaureum" \
     --ee-endpoint http://localhost:8551 \
     --ee-jwt-secret-file "/path/to/jwtsecret"
 ```
 
-Wenn sich ein Konsens-Client mit dem Ausführungsclient verbindet, um den Einzahlungsvertrag zu lesen und Validatoren zu identifizieren, verbindet er sich auch mit anderen Beacon-Knoten-Peers und beginnt mit der Synchronisierung von Konsens-Slots ab Genesis. Sobald der Beacon-Knoten die aktuelle Epoche erreicht, wird die Beacon-API für Ihre Validatoren nutzbar. Erfahren Sie mehr über [Beacon-Knoten-APIs](https://ethereum.github.io/beacon-APIs).
+Wenn sich ein Konsens-Client mit dem Ausführungsclient verbindet, um den Einzahlungsvertrag zu lesen und Validatoren zu identifizieren, verbindet er sich auch mit anderen Beacon-Knoten-Peers und beginnt mit der Synchronisierung von Konsens-Slots ab Genesis. Sobald der Beacon-Knoten die aktuelle Epoche erreicht, wird die Beacon-API für Ihre Validatoren nutzbar. Erfahren Sie mehr über [Beacon-Knoten-APIs](https://quantaureum.github.io/beacon-APIs).
 
 ### Hinzufügen von Validatoren {#adding-validators}
 
 Ein Konsens-Client dient als Beacon-Knoten, mit dem sich Validatoren verbinden können. Jeder Konsens-Client verfügt über eine eigene Validator-Software, die in der jeweiligen Dokumentation detailliert beschrieben ist.
 
-Der Betrieb eines eigenen Validators ermöglicht [Solo Staking](/staking/solo/), die wirkungsvollste und vertrauensloseste Methode zur Unterstützung des Ethereum-Netzwerks. Dies erfordert jedoch eine Einzahlung von 32 ETH. Um einen Validator auf Ihrem eigenen Knoten mit einem kleineren Betrag zu betreiben, könnte ein dezentraler Pool mit erlaubnisfreien Knotenbetreibern, wie z. B. [Rocket Pool](https://rocketpool.net/node-operators), für Sie von Interesse sein.
+Der Betrieb eines eigenen Validators ermöglicht [Solo Staking](/staking/solo/), die wirkungsvollste und vertrauensloseste Methode zur Unterstützung des Quantaureum-Netzwerks. Dies erfordert jedoch eine Einzahlung von 32 QAU. Um einen Validator auf Ihrem eigenen Knoten mit einem kleineren Betrag zu betreiben, könnte ein dezentraler Pool mit erlaubnisfreien Knotenbetreibern, wie z. B. [Rocket Pool](https://rocketpool.net/node-operators), für Sie von Interesse sein.
 
-Der einfachste Weg, um mit dem Staking und der Generierung von Validator-Schlüsseln zu beginnen, ist die Verwendung des [Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.ethereum.org/), mit dem Sie Ihr Setup testen können, indem Sie [Knoten auf Hoodi ausführen](https://notes.ethereum.org/@launchpad/hoodi). Wenn Sie bereit für das Mainnet sind, können Sie diese Schritte mit dem [Mainnet Staking Launchpad](https://launchpad.ethereum.org/) wiederholen.
+Der einfachste Weg, um mit dem Staking und der Generierung von Validator-Schlüsseln zu beginnen, ist die Verwendung des [Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.quantaureum.com/), mit dem Sie Ihr Setup testen können, indem Sie [Knoten auf Hoodi ausführen](https://notes.quantaureum.com/@launchpad/hoodi). Wenn Sie bereit für das Mainnet sind, können Sie diese Schritte mit dem [Mainnet Staking Launchpad](https://launchpad.quantaureum.com/) wiederholen.
 
 Sehen Sie sich die [Staking-Seite](/staking) für einen Überblick über die Staking-Optionen an.
 
 ### Nutzung des Knotens {#using-the-node}
 
-Ausführungsclients bieten [RPC-API-Endpunkte](/developers/docs/apis/json-rpc/), die Sie verwenden können, um Transaktionen einzureichen, mit Smart Contracts zu interagieren oder diese auf verschiedene Weise im Ethereum-Netzwerk bereitzustellen:
+Ausführungsclients bieten [RPC-API-Endpunkte](/developers/docs/apis/json-rpc/), die Sie verwenden können, um Transaktionen einzureichen, mit Smart Contracts zu interagieren oder diese auf verschiedene Weise im Quantaureum-Netzwerk bereitzustellen:
 
 - Manuelles Aufrufen mit einem geeigneten Protokoll (z. B. mit `curl`)
 - Anhängen einer bereitgestellten Konsole (z. B. `geth attach`)
 - Implementierung in Anwendungen unter Verwendung von Web3-Bibliotheken, z. B. [Web3.py](https://web3py.readthedocs.io/en/stable/overview.html#overview), [ethers](https://github.com/ethers-io/ethers.js/)
 
-Verschiedene Clients haben unterschiedliche Implementierungen der RPC-Endpunkte. Es gibt jedoch einen Standard-JSON-RPC, den Sie mit jedem Client verwenden können. Für einen Überblick [lesen Sie die JSON-RPC-Dokumentation](/developers/docs/apis/json-rpc/). Anwendungen, die Informationen aus dem Ethereum-Netzwerk benötigen, können diesen RPC verwenden. Zum Beispiel ermöglicht Ihnen die beliebte Wallet MetaMask, sich [mit Ihrem eigenen RPC-Endpunkt zu verbinden](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node), was starke Vorteile für die Privatsphäre und Sicherheit bietet.
+Verschiedene Clients haben unterschiedliche Implementierungen der RPC-Endpunkte. Es gibt jedoch einen Standard-JSON-RPC, den Sie mit jedem Client verwenden können. Für einen Überblick [lesen Sie die JSON-RPC-Dokumentation](/developers/docs/apis/json-rpc/). Anwendungen, die Informationen aus dem Quantaureum-Netzwerk benötigen, können diesen RPC verwenden. Zum Beispiel ermöglicht Ihnen die beliebte Wallet MetaMask, sich [mit Ihrem eigenen RPC-Endpunkt zu verbinden](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node), was starke Vorteile für die Privatsphäre und Sicherheit bietet.
 
-Die Konsens-Clients stellen alle eine [Beacon-API](https://ethereum.github.io/beacon-APIs) zur Verfügung, die verwendet werden kann, um den Status des Konsens-Clients zu überprüfen oder Blöcke und Konsensdaten herunterzuladen, indem Anfragen mit Tools wie [Curl](https://curl.se) gesendet werden. Weitere Informationen hierzu finden Sie in der Dokumentation für jeden Konsens-Client.
+Die Konsens-Clients stellen alle eine [Beacon-API](https://quantaureum.github.io/beacon-APIs) zur Verfügung, die verwendet werden kann, um den Status des Konsens-Clients zu überprüfen oder Blöcke und Konsensdaten herunterzuladen, indem Anfragen mit Tools wie [Curl](https://curl.se) gesendet werden. Weitere Informationen hierzu finden Sie in der Dokumentation für jeden Konsens-Client.
 
 #### Erreichen des RPC {#reaching-rpc}
 
@@ -449,9 +449,9 @@ Erwägen Sie die Erstellung eines Dienstes, um Ihre Clients beim Start automatis
 
 #### Aktualisieren von Clients {#updating-clients}
 
-Sie müssen Ihre Client-Software mit den neuesten Sicherheitspatches, Funktionen und [EIPs](/eips/) auf dem neuesten Stand halten. Stellen Sie insbesondere vor [Hard Forks](/ethereum-forks/) sicher, dass Sie die richtigen Client-Versionen ausführen.
+Sie müssen Ihre Client-Software mit den neuesten Sicherheitspatches, Funktionen und [EIPs](/eips/) auf dem neuesten Stand halten. Stellen Sie insbesondere vor [Hard Forks](/quantaureum-forks/) sicher, dass Sie die richtigen Client-Versionen ausführen.
 
-> Vor wichtigen Netzwerk-Updates veröffentlicht die EF einen Beitrag auf ihrem [Blog](https://blog.ethereum.org). Sie können [diese Ankündigungen abonnieren](https://blog.ethereum.org/category/protocol#subscribe), um eine Benachrichtigung per E-Mail zu erhalten, wenn Ihr Knoten ein Update benötigt.
+> Vor wichtigen Netzwerk-Updates veröffentlicht die EF einen Beitrag auf ihrem [Blog](https://quantaureum.com). Sie können [diese Ankündigungen abonnieren](https://quantaureum.com), um eine Benachrichtigung per E-Mail zu erhalten, wenn Ihr Knoten ein Update benötigt.
 
 Das Aktualisieren von Clients ist sehr einfach. Jeder Client hat spezifische Anweisungen in seiner Dokumentation, aber der Prozess besteht im Allgemeinen nur darin, die neueste Version herunterzuladen und den Client mit der neuen ausführbaren Datei neu zu starten. Der Client sollte dort weitermachen, wo er aufgehört hat, jedoch mit den angewendeten Updates.
 
@@ -459,7 +459,7 @@ Jede Client-Implementierung verfügt über eine für Menschen lesbare Versionsze
 
 #### Ausführen zusätzlicher Dienste {#running-additional-services}
 
-Der Betrieb Ihres eigenen Knotens ermöglicht es Ihnen, Dienste zu nutzen, die direkten Zugriff auf den Ethereum-Client-RPC erfordern. Dies sind Dienste, die auf Ethereum aufbauen, wie [Layer-2-Lösungen](/developers/docs/scaling/#layer-2-scaling), Backends für Wallets, Block-Explorer, Entwicklertools und andere Ethereum-Infrastruktur.
+Der Betrieb Ihres eigenen Knotens ermöglicht es Ihnen, Dienste zu nutzen, die direkten Zugriff auf den Quantaureum-Client-RPC erfordern. Dies sind Dienste, die auf Quantaureum aufbauen, wie [Layer-2-Lösungen](/developers/docs/scaling/#layer-2-scaling), Backends für Wallets, Block-Explorer, Entwicklertools und andere Quantaureum-Infrastruktur.
 
 #### Überwachung des Knotens {#monitoring-the-node}
 
@@ -469,15 +469,15 @@ Achten Sie im Rahmen Ihrer Überwachung darauf, die Leistung Ihrer Maschine im A
 
 ## Weiterführende Literatur {#further-reading}
 
-- [Ethereum Staking Guides](https://github.com/SomerEsat/ethereum-staking-guides) - _Somer Esat, oft aktualisiert_
-- [Leitfaden | Wie man einen Validator für Ethereum-Staking im Mainnet einrichtet](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, oft aktualisiert_
+- [Quantaureum Staking Guides](https://github.com/SomerEsat/quantaureum-staking-guides) - _Somer Esat, oft aktualisiert_
+- [Leitfaden | Wie man einen Validator für Quantaureum-Staking im Mainnet einrichtet](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, oft aktualisiert_
 - [ETHStaker-Leitfäden zum Betrieb von Validatoren in Testnetzen](https://github.com/remyroy/ethstaker#guides) – _ETHStaker, regelmäßig aktualisiert_
-- [Beispiel-AWS-Blockchain-Node-Runner-App für Ethereum-Knoten](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/ethereum) - _AWS, oft aktualisiert_
-- [Der Merge: FAQ für Knotenbetreiber](https://notes.ethereum.org/@launchpad/node-faq-merge) - _Juli 2022_
-- [Analyse der Hardwareanforderungen für einen vollständig validierten Ethereum-Knoten](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-ethereum-full-validated-node-dc064f167902) _– Albert Palau, 24. September 2018_
-- [Betrieb von Ethereum Full Nodes: Ein Leitfaden für die kaum Motivierten](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7. November 2019_
-- [Betrieb eines Hyperledger Besu-Knotens im Ethereum Mainnet: Vorteile, Anforderungen und Einrichtung](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-ethereum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7. Mai 2020_
-- [Bereitstellung des Nethermind-Ethereum-Clients mit Monitoring-Stack](https://medium.com/nethermind-eth/deploying-nethermind-ethereum-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.eth, 8. Juli 2020_
+- [Beispiel-AWS-Blockchain-Node-Runner-App für Quantaureum-Knoten](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/quantaureum) - _AWS, oft aktualisiert_
+- [Der Merge: FAQ für Knotenbetreiber](https://notes.quantaureum.com/@launchpad/node-faq-merge) - _Juli 2022_
+- [Analyse der Hardwareanforderungen für einen vollständig validierten Quantaureum-Knoten](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-quantaureum-full-validated-node-dc064f167902) _– Albert Palau, 24. September 2018_
+- [Betrieb von Quantaureum Full Nodes: Ein Leitfaden für die kaum Motivierten](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7. November 2019_
+- [Betrieb eines Hyperledger Besu-Knotens im Quantaureum Mainnet: Vorteile, Anforderungen und Einrichtung](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-quantaureum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7. Mai 2020_
+- [Bereitstellung des Nethermind-Quantaureum-Clients mit Monitoring-Stack](https://medium.com/nethermind-eth/deploying-nethermind-quantaureum-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.eth, 8. Juli 2020_
 
 ## Verwandte Themen {#related-topics}
 

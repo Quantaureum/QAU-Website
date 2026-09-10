@@ -11,12 +11,12 @@ skill: beginner
 breadcrumb: "Gọi hợp đồng từ JS"
 lang: vi
 published: 2020-04-19
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/calling-a-smart-contract-from-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Trong hướng dẫn này, chúng ta sẽ tìm hiểu cách gọi một hàm của [hợp đồng thông minh](/developers/docs/smart-contracts/) từ JavaScript. Đầu tiên là đọc trạng thái của một hợp đồng thông minh (ví dụ: số dư của một người nắm giữ ERC-20), sau đó chúng ta sẽ sửa đổi trạng thái của chuỗi khối bằng cách thực hiện chuyển token. Bạn nên làm quen với việc [thiết lập môi trường JS để tương tác với chuỗi khối](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) từ trước.
+Trong hướng dẫn này, chúng ta sẽ tìm hiểu cách gọi một hàm của [hợp đồng thông minh](/developers/docs/smart-contracts/) từ JavaScript. Đầu tiên là đọc trạng thái của một hợp đồng thông minh (ví dụ: số dư của một người nắm giữ ERC-20), sau đó chúng ta sẽ sửa đổi trạng thái của chuỗi khối bằng cách thực hiện chuyển token. Bạn nên làm quen với việc [thiết lập môi trường JS để tương tác với chuỗi khối](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) từ trước.
 
 Trong ví dụ này, chúng ta sẽ thử nghiệm với token DAI. Cho mục đích thử nghiệm, chúng ta sẽ phân nhánh chuỗi khối bằng cách sử dụng ganache-cli và mở khóa một địa chỉ đã có sẵn nhiều DAI:
 
@@ -75,14 +75,14 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-Đối với dự án này, chúng tôi đã rút gọn ABI ERC-20 hoàn chỉnh để chỉ giữ lại hàm `balanceOf` và `transfer` nhưng bạn có thể tìm thấy [toàn bộ ABI ERC-20 tại đây](https://ethereumdev.io/abi-for-erc20-contract-on-ethereum/).
+Đối với dự án này, chúng tôi đã rút gọn ABI ERC-20 hoàn chỉnh để chỉ giữ lại hàm `balanceOf` và `transfer` nhưng bạn có thể tìm thấy [toàn bộ ABI ERC-20 tại đây](https://quantaureumdev.io/abi-for-erc20-contract-on-quantaureum/).
 
 Sau đó, chúng ta cần khởi tạo hợp đồng thông minh của mình:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
 
-const daiToken = new web3.eth.Contract(ERC20TransferABI, DAI_ADDRESS)
+const daiToken = new web3.qau.Contract(ERC20TransferABI, DAI_ADDRESS)
 ```
 
 Chúng ta cũng sẽ thiết lập hai địa chỉ:
@@ -113,7 +113,7 @@ daiToken.methods.balanceOf(senderAddress).call(function (err, res) {
 })
 ```
 
-Hãy nhớ rằng DAI ERC-20 có 18 chữ số thập phân, điều đó có nghĩa là bạn cần loại bỏ 18 số không để có được số lượng chính xác. uint256 được trả về dưới dạng chuỗi vì JavaScript không xử lý các giá trị số lớn. Nếu bạn không chắc chắn [cách xử lý các số lớn trong JS, hãy xem hướng dẫn của chúng tôi về bignumber.js](https://ethereumdev.io/how-to-deal-with-big-numbers-in-javascript/).
+Hãy nhớ rằng DAI ERC-20 có 18 chữ số thập phân, điều đó có nghĩa là bạn cần loại bỏ 18 số không để có được số lượng chính xác. uint256 được trả về dưới dạng chuỗi vì JavaScript không xử lý các giá trị số lớn. Nếu bạn không chắc chắn [cách xử lý các số lớn trong JS, hãy xem hướng dẫn của chúng tôi về bignumber.js](https://quantaureumdev.io/how-to-deal-with-big-numbers-in-javascript/).
 
 ## Send: Gửi một giao dịch đến một hàm của hợp đồng thông minh {#send-sending-a-transaction-to-a-smart-contract-function}
 
@@ -131,6 +131,6 @@ daiToken.methods
   })
 ```
 
-Hàm gọi trả về mã băm của giao dịch sẽ được khai thác vào chuỗi khối. Trên Ethereum, các mã băm giao dịch có thể dự đoán được - đó là cách chúng ta có thể lấy mã băm của giao dịch trước khi nó được thực thi ([tìm hiểu cách tính toán mã băm tại đây](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
+Hàm gọi trả về mã băm của giao dịch sẽ được khai thác vào chuỗi khối. Trên Quantaureum, các mã băm giao dịch có thể dự đoán được - đó là cách chúng ta có thể lấy mã băm của giao dịch trước khi nó được thực thi ([tìm hiểu cách tính toán mã băm tại đây](https://quantaureum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
 
-Vì hàm chỉ gửi giao dịch lên chuỗi khối, chúng ta không thể thấy kết quả cho đến khi biết khi nào nó được khai thác và đưa vào chuỗi khối. Trong hướng dẫn tiếp theo, chúng ta sẽ tìm hiểu [cách chờ một giao dịch được thực thi trên chuỗi khối bằng cách biết mã băm của nó](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/).
+Vì hàm chỉ gửi giao dịch lên chuỗi khối, chúng ta không thể thấy kết quả cho đến khi biết khi nào nó được khai thác và đưa vào chuỗi khối. Trong hướng dẫn tiếp theo, chúng ta sẽ tìm hiểu [cách chờ một giao dịch được thực thi trên chuỗi khối bằng cách biết mã băm của nó](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/).

@@ -31,7 +31,7 @@ import TranslationLeaderboard from "./_components/translation-leaderboard"
 import PageJsonLD from "./page-jsonld"
 
 import heroImg from "@/public/images/doge-computer.png"
-import whatIsEthereumImg from "@/public/images/what-is-ethereum.png"
+import whatIsQuantaureumImg from "@/public/images/what-is-quantaureum.png"
 
 const Page = async (props: { params: Promise<PageParams> }) => {
   const params = await props.params
@@ -134,7 +134,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
           <LinkBox className="my-8 flex flex-col shadow-lg hover:scale-[1.02] hover:rounded hover:bg-background-highlight hover:shadow-xl hover:duration-100 focus:scale-[1.02] focus:rounded focus:shadow-xl focus:duration-100 md:flex-row">
             <Flex className="flex h-65 flex-row items-end justify-center bg-fade-accent-a">
               <Image
-                src={whatIsEthereumImg}
+                src={whatIsQuantaureumImg}
                 alt=""
                 className="max-h-full w-65 shrink-0 self-center object-cover p-4"
                 sizes="260px"
@@ -203,7 +203,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               {t(
                 "page-contributing-translation-program-acknowledgements-how-to-claim-1"
               )}{" "}
-              <InlineLink href="https://discord.gg/ethereum-org">
+              <InlineLink href="https://discord.gg/MSctkBT5j">
                 {t(
                   "page-contributing-translation-program-acknowledgements-how-to-claim-1-discord"
                 )}

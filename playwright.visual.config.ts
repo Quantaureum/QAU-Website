@@ -3,9 +3,9 @@ import { defineConfig } from "@playwright/test"
 
 import baseConfig from "./playwright.config"
 
-const visualUse: ChromaticConfig = {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const visualUse: any = {
   disableAutoSnapshot: true,
-  assetDomains: ["s3-dcl1.ethquokkaops.io"],
 }
 
 // Append "Chromatic" to the default UA so `isChromatic()` returns true client-side.

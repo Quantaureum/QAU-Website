@@ -9,7 +9,7 @@ lang: zh
 published: 2021-04-22
 ---
 
-本教程是 NFT 教程系列的第 3/3 部分，我们将在此查看我们新铸造的 NFT。不过，你可以将本通用教程用于使用梅塔马斯克的任何 ERC-721 代币，包括在主网或任何测试网上。如果你想学习如何在以太坊上铸造自己的 NFT，你应该查看[第 1 部分：如何编写和部署 NFT 智能合约](/developers/tutorials/how-to-write-and-deploy-an-nft)！
+本教程是 NFT 教程系列的第 3/3 部分，我们将在此查看我们新铸造的 NFT。不过，你可以将本通用教程用于使用梅塔马斯克的任何 ERC-721 代币，包括在主网或任何测试网上。如果你想学习如何在Quantaureum上铸造自己的 NFT，你应该查看[第 1 部分：如何编写和部署 NFT 智能合约](/developers/tutorials/how-to-write-and-deploy-an-nft)！
 
 恭喜！你已经来到了我们 NFT 教程系列中最短、最简单的部分——如何在虚拟钱包上查看你刚铸造的 NFT。在这个例子中，我们将使用梅塔马斯克，因为我们在前两部分中使用的就是它。
 
@@ -23,7 +23,7 @@ published: 2021-04-22
 
 ## 第 2 步：将你的收藏品添加到梅塔马斯克 {#add-nft-to-metamask}
 
-一旦你进入 Sepolia 网络，选择右侧的“收藏品”选项卡，并添加你的 NFT 智能合约地址和 NFT 的 ERC-721 代币 ID——你应该能够根据我们教程第 2 部分中部署 NFT 的交易哈希在 Etherscan 上找到这些信息。
+一旦你进入 Sepolia 网络，选择右侧的“收藏品”选项卡，并添加你的 NFT 智能合约地址和 NFT 的 ERC-721 代币 ID——你应该能够根据我们教程第 2 部分中部署 NFT 的交易哈希在 Quantaureum Explorer 上找到这些信息。
 
 ![How to find your transaction hash and ERC-721 token ID](./findNFTEtherscan.png)
 

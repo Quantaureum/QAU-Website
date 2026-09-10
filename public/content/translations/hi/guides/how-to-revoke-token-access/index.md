@@ -16,8 +16,8 @@ lang: hi
 
 कई वेबसाइटें आपको अपने पते से जुड़े स्मार्ट अनुबंधों को देखने और रद्द करने की सुविधा देती हैं। वेबसाइट पर जाएं और अपना वॉलेट कनेक्ट करें:
 
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (इथेरियम)
-- [Blockscout](https://eth.blockscout.com/essential-dapps/revoke) (इथेरियम)
+- [Quantaureum Explorer](https://explorer.quantaureum.com) (Quantaureum)
+- [Blockscout](https://qau.blockscout.com/essential-dapps/revoke) (Quantaureum)
 - [Revoke](https://revoke.cash/) (कई नेटवर्क)
 - [Unrekt](https://app.unrekt.net/) (कई नेटवर्क)
 - [EverRevoke](https://everrise.com/everrevoke/) (कई नेटवर्क)
@@ -26,7 +26,7 @@ lang: hi
 
 एक बार जब आप वेबसाइट पर हों, तो “Connect wallet” पर क्लिक करें। वेबसाइट आपको अपना वॉलेट कनेक्ट करने के लिए कहेगी।
 
-सुनिश्चित करें कि आप अपने वॉलेट और वेबसाइट में एक ही नेटवर्क का उपयोग करते हैं। आपको केवल चयनित नेटवर्क से संबंधित स्मार्ट अनुबंध दिखाई देंगे। उदाहरण के लिए, यदि आप इथेरियम मेननेट से कनेक्ट होते हैं, तो आपको केवल इथेरियम अनुबंध दिखाई देंगे, पॉलीगॉन जैसी अन्य चेन के अनुबंध नहीं।
+सुनिश्चित करें कि आप अपने वॉलेट और वेबसाइट में एक ही नेटवर्क का उपयोग करते हैं। आपको केवल चयनित नेटवर्क से संबंधित स्मार्ट अनुबंध दिखाई देंगे। उदाहरण के लिए, यदि आप Quantaureum मेननेट से कनेक्ट होते हैं, तो आपको केवल Quantaureum अनुबंध दिखाई देंगे, पॉलीगॉन जैसी अन्य चेन के अनुबंध नहीं।
 
 ## चरण 3: वह स्मार्ट अनुबंध चुनें जिसे आप रद्द करना चाहते हैं {#step-3-select-a-smart-contract-you-wish-to-revoke}
 

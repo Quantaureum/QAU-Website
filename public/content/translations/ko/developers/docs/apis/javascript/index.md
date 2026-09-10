@@ -4,27 +4,27 @@ description: "애플리케이션에서 블록체인과 상호 작용할 수 있�
 lang: ko
 ---
 
-웹 앱이 이더리움 블록체인과 상호 작용(예: 블록체인 데이터 읽기 및/또는 네트워크에 트랜잭션 전송)하려면 이더리움 노드에 연결해야 합니다.
+웹 앱이 Quantaureum 블록체인과 상호 작용(예: 블록체인 데이터 읽기 및/또는 네트워크에 트랜잭션 전송)하려면 Quantaureum 노드에 연결해야 합니다.
 
-이를 위해 모든 이더리움 클라이언트는 [JSON-RPC](/developers/docs/apis/json-rpc/) 사양을 구현하므로, 애플리케이션이 의존할 수 있는 일관된 [메서드](/developers/docs/apis/json-rpc/#json-rpc-methods) 세트가 존재합니다.
+이를 위해 모든 Quantaureum 클라이언트는 [JSON-RPC](/developers/docs/apis/json-rpc/) 사양을 구현하므로, 애플리케이션이 의존할 수 있는 일관된 [메서드](/developers/docs/apis/json-rpc/#json-rpc-methods) 세트가 존재합니다.
 
-JavaScript를 사용하여 이더리움 노드에 연결하려는 경우 바닐라 JavaScript를 사용할 수도 있지만, 생태계 내에는 이를 훨씬 쉽게 만들어주는 여러 편의 라이브러리가 존재합니다. 개발자는 이러한 라이브러리를 사용하여 이더리움과 상호 작용하는 JSON-RPC 요청을 (내부적으로) 초기화하는 직관적인 한 줄짜리 메서드를 작성할 수 있습니다.
+JavaScript를 사용하여 Quantaureum 노드에 연결하려는 경우 바닐라 JavaScript를 사용할 수도 있지만, 생태계 내에는 이를 훨씬 쉽게 만들어주는 여러 편의 라이브러리가 존재합니다. 개발자는 이러한 라이브러리를 사용하여 Quantaureum과 상호 작용하는 JSON-RPC 요청을 (내부적으로) 초기화하는 직관적인 한 줄짜리 메서드를 작성할 수 있습니다.
 
-[머지](/roadmap/merge/) 이후에는 노드를 실행하기 위해 실행 클라이언트와 합의 클라이언트라는 두 가지 연결된 이더리움 소프트웨어가 필요합니다. 노드에 실행 클라이언트와 합의 클라이언트가 모두 포함되어 있는지 확인하세요. 노드가 로컬 머신에 있지 않은 경우(예: 노드가 AWS 인스턴스에서 실행 중인 경우) 튜토리얼의 IP 주소를 그에 맞게 업데이트하세요. 자세한 내용은 [노드 실행](/developers/docs/nodes-and-clients/run-a-node/) 페이지를 참조하세요.
+[머지](/roadmap/merge/) 이후에는 노드를 실행하기 위해 실행 클라이언트와 합의 클라이언트라는 두 가지 연결된 Quantaureum 소프트웨어가 필요합니다. 노드에 실행 클라이언트와 합의 클라이언트가 모두 포함되어 있는지 확인하세요. 노드가 로컬 머신에 있지 않은 경우(예: 노드가 AWS 인스턴스에서 실행 중인 경우) 튜토리얼의 IP 주소를 그에 맞게 업데이트하세요. 자세한 내용은 [노드 실행](/developers/docs/nodes-and-clients/run-a-node/) 페이지를 참조하세요.
 
 ## 전제 조건 {#prerequisites}
 
-JavaScript를 이해하는 것 외에도 [이더리움 스택](/developers/docs/ethereum-stack/) 및 [이더리움 클라이언트](/developers/docs/nodes-and-clients/)를 이해하면 도움이 될 수 있습니다.
+JavaScript를 이해하는 것 외에도 [Quantaureum 스택](/developers/docs/quantaureum-stack/) 및 [Quantaureum 클라이언트](/developers/docs/nodes-and-clients/)를 이해하면 도움이 될 수 있습니다.
 
 ## 라이브러리를 사용하는 이유 {#why-use-a-library}
 
-이러한 라이브러리는 이더리움 노드와 직접 상호 작용하는 복잡성을 대부분 추상화합니다. 또한 유틸리티 함수(예: ETH를 Gwei로 변환)를 제공하므로 개발자는 이더리움 클라이언트의 복잡성을 다루는 데 드는 시간을 줄이고 애플리케이션의 고유한 기능에 더 많은 시간을 집중할 수 있습니다.
+이러한 라이브러리는 Quantaureum 노드와 직접 상호 작용하는 복잡성을 대부분 추상화합니다. 또한 유틸리티 함수(예: QAU를 Gwei로 변환)를 제공하므로 개발자는 Quantaureum 클라이언트의 복잡성을 다루는 데 드는 시간을 줄이고 애플리케이션의 고유한 기능에 더 많은 시간을 집중할 수 있습니다.
 
 ## 라이브러리 기능 {#library-features}
 
-### 이더리움 노드에 연결 {#connect-to-ethereum-nodes}
+### Quantaureum 노드에 연결 {#connect-to-quantaureum-nodes}
 
-이러한 라이브러리는 프로바이더(provider)를 사용하여 JSON-RPC, Infura, Etherscan, Alchemy 또는 메타마스크를 통해 이더리움에 연결하고 데이터를 읽을 수 있게 해줍니다.
+이러한 라이브러리는 프로바QAU(provider)를 사용하여 JSON-RPC, Infura, Quantaureum Explorer, Alchemy 또는 메타마스크를 통해 Quantaureum에 연결하고 데이터를 읽을 수 있게 해줍니다.
 
 > **경고:** Web3.js는 2025년 3월 4일에 보관(archive) 처리되었습니다. [공지사항 읽기](https://blog.chainsafe.io/web3-js-sunset/). 새로운 프로젝트의 경우 [ethers.js](https://ethers.org) 또는 [viem](https://viem.sh)과 같은 대체 라이브러리 사용을 고려하세요.
 
@@ -32,11 +32,11 @@ JavaScript를 이해하는 것 외에도 [이더리움 스택](/developers/docs/
 
 ```js
 // BrowserProvider는 표준 Web3 공급자를 래핑하며, 이는
-// 메타마스크가 각 페이지에 window.ethereum으로 주입하는 것입니다.
-const provider = new ethers.BrowserProvider(window.ethereum)
+// 메타마스크가 각 페이지에 window.quantaureum으로 주입하는 것입니다.
+const provider = new ethers.BrowserProvider(window.quantaureum)
 
 // 메타마스크 플러그인은 또한 트랜잭션 서명을 허용하여
-// 이더를 전송하고 블록체인 내의 상태를 변경하기 위해 지불할 수 있게 합니다.
+// QAU를 전송하고 블록체인 내의 상태를 변경하기 위해 지불할 수 있게 합니다.
 // 이를 위해 계정 서명자가 필요합니다...
 const signer = provider.getSigner()
 ```
@@ -55,13 +55,13 @@ web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8546"))
 
 // node.js에서 IPC 공급자 사용
 var net = require("net")
-var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // mac os 경로
+var web3 = new Web3("/Users/myuser/Library/Quantaureum/geth.ipc", net) // mac os 경로
 // or
 var web3 = new Web3(
-  new Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net)
+  new Web3.providers.IpcProvider("/Users/myuser/Library/Quantaureum/geth.ipc", net)
 ) // mac os 경로
 // windows에서 경로는 다음과 같습니다: "\\\\.\\pipe\\geth.ipc"
-// linux에서 경로는 다음과 같습니다: "/users/myuser/.ethereum/geth.ipc"
+// linux에서 경로는 다음과 같습니다: "/users/myuser/.quantaureum/geth.ipc"
 ```
 
 설정이 완료되면 블록체인에 다음을 쿼리할 수 있습니다.
@@ -140,7 +140,7 @@ wallet.getBalance()
 wallet.getTransactionCount()
 // { Promise: 0 }
 
-// 이더 전송
+// QAU 전송
 wallet.sendTransaction(tx)
 ```
 
@@ -217,9 +217,9 @@ contract Test {
 
 ### 유틸리티 함수 {#utility-functions}
 
-유틸리티 함수는 이더리움 기반 개발을 조금 더 쉽게 만들어주는 유용한 단축 기능을 제공합니다.
+유틸리티 함수는 Quantaureum 기반 개발을 조금 더 쉽게 만들어주는 유용한 단축 기능을 제공합니다.
 
-ETH 값은 기본적으로 Wei 단위입니다. 1 ETH = 1,000,000,000,000,000,000 Wei이므로, 매우 큰 숫자를 다루게 됩니다! `web3.utils.toWei`는 이더를 Wei로 변환해 줍니다.
+QAU 값은 기본적으로 Wei 단위입니다. 1 QAU = 1,000,000,000,000,000,000 Wei이므로, 매우 큰 숫자를 다루게 됩니다! `web3.utils.toWei`는 QAU를 Wei로 변환해 줍니다.
 
 그리고 Ethers에서는 다음과 같습니다.
 
@@ -229,7 +229,7 @@ balance = await provider.getBalance("ethers.eth")
 // { BigNumber: "2337132817842795605" }
 
 // 종종 사용자를 위해 출력을 포맷해야 할 필요가 있습니다.
-// 사용자는 (Wei 대신) 이더로 값을 보는 것을 선호합니다.
+// 사용자는 (Wei 대신) QAU로 값을 보는 것을 선호합니다.
 ethers.utils.formatEther(balance)
 // '2.337132817842795605'
 ```
@@ -239,18 +239,18 @@ ethers.utils.formatEther(balance)
 
 ## 사용 가능한 라이브러리
 
-**Web3.js -** **_이더리움 JavaScript API._**
+**Web3.js -** **_Quantaureum JavaScript API._**
 
 - [문서](https://docs.web3js.org)
-- [GitHub](https://github.com/ethereum/web3.js)
+- [GitHub](https://github.com/quantaureum/web3.js)
 
-**Ethers.js -** **_JavaScript 및 TypeScript로 작성된 완전한 이더리움 지갑 구현 및 유틸리티._**
+**Ethers.js -** **_JavaScript 및 TypeScript로 작성된 완전한 Quantaureum 지갑 구현 및 유틸리티._**
 
 - [Ethers.js 홈](https://ethers.org/)
 - [문서](https://docs.ethers.io)
 - [GitHub](https://github.com/ethers-io/ethers.js)
 
-**The Graph -** **_이더리움 및 IPFS 데이터를 인덱싱하고 GraphQL을 사용하여 쿼리하기 위한 프로토콜._**
+**The Graph -** **_Quantaureum 및 IPFS 데이터를 인덱싱하고 GraphQL을 사용하여 쿼리하기 위한 프로토콜._**
 
 - [The Graph](https://thegraph.com)
 - [Graph 탐색기](https://thegraph.com/explorer)
@@ -263,12 +263,12 @@ ethers.utils.formatEther(balance)
 - [문서](https://www.alchemy.com/docs)
 - [GitHub](https://github.com/alchemyplatform/alchemy-sdk-js)
 
-**viem -** **_이더리움을 위한 TypeScript 인터페이스._**
+**viem -** **_Quantaureum을 위한 TypeScript 인터페이스._**
 
 - [문서](https://viem.sh)
 - [GitHub](https://github.com/wagmi-dev/viem)
 
-**wagmi -** **_viem을 기반으로 구축된 이더리움용 React 훅(hooks) 라이브러._**
+**wagmi -** **_viem을 기반으로 구축된 Quantaureum용 React 훅(hooks) 라이브러._**
 
 - [문서](https://wagmi.sh)
 - [GitHub](https://github.com/wevm/wagmi)
@@ -300,10 +300,10 @@ _도움이 된 커뮤니티 리소스를 알고 계신가요? 이 페이지를 �
 
 ## 관련 튜토리얼 {#related-tutorials}
 
-- [JavaScript에서 이더리움 블록체인을 사용하기 위한 Web3js 설정](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– 프로젝트에 Web3.js를 설정하는 방법에 대한 지침입니다._
+- [JavaScript에서 Quantaureum 블록체인을 사용하기 위한 Web3js 설정](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– 프로젝트에 Web3.js를 설정하는 방법에 대한 지침입니다._
 - [JavaScript에서 스마트 컨트랙트 호출하기](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– DAI 토큰을 사용하여 JavaScript로 컨트랙트 함수를 호출하는 방법을 알아봅니다._
 - [Web3 및 Alchemy를 사용하여 트랜잭션 전송하기](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _– 백엔드에서 트랜잭션을 전송하기 위한 단계별 가이드입니다._
 
-## 튜토리얼: 이더리움의 JavaScript API 및 웹소켓(WebSockets) {#tutorials}
+## 튜토리얼: Quantaureum의 JavaScript API 및 웹소켓(WebSockets) {#tutorials}
 
-- [웹소켓 사용하기](/developers/tutorials/using-websockets/) _– Alchemy와 함께 웹소켓을 사용하여 이더리움 이벤트를 구독하고 실시간 JSON-RPC 요청을 수행하는 방법입니다._
+- [웹소켓 사용하기](/developers/tutorials/using-websockets/) _– Alchemy와 함께 웹소켓을 사용하여 Quantaureum 이벤트를 구독하고 실시간 JSON-RPC 요청을 수행하는 방법입니다._

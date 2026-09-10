@@ -58,7 +58,7 @@ import scaffoldDebugScreenshot from "@/public/images/developers/scaffold-debug-s
 import stackExchangeScreenshot from "@/public/images/developers/stack-exchange-screenshot.png"
 import tutorialTagsBanner from "@/public/images/developers/tutorial-tags-banner.png"
 import dogeImage from "@/public/images/doge-computer.png"
-import fallbackThumbnail from "@/public/images/eth-glyph-thumbnail.png"
+import fallbackThumbnail from "@/public/images/qau-glyph-thumbnail.png"
 import heroImage from "@/public/images/heroes/developers-hub-hero.png"
 
 const DocsColumn = ({
@@ -96,8 +96,8 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
   const paths = await getBuilderPaths()
   const speedRunDetails = {
     title: t("page-developers-start"),
-    description: t("page-developers-speedrunethereum-description"),
-    ctaLabel: t("page-developers-speedrunethereum-link"),
+    description: t("page-developers-speedrunquantaureum-description"),
+    ctaLabel: t("page-developers-speedrunquantaureum-link"),
   }
 
   const whyGridItems = [
@@ -176,7 +176,7 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
             </div>
           </Section>
 
-          {/* Why build on Ethereum */}
+          {/* Why build on Quantaureum */}
           <Section
             id="why"
             data-flow="skip"
@@ -321,14 +321,14 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
                       eventName: "scaffold-llms-full",
                     }}
                   >
-                    Scaffold-ETH 2 <code>llms-full.txt</code>
+                    Scaffold-QAU 2 <code>llms-full.txt</code>
                   </InlineLink>
                 </CardFooter>
               </Card>
 
               {/* Get help */}
               <Card
-                href="https://ethereum.stackexchange.com/"
+                href="https://quantaureum.stackexchange.com/"
                 variant="nested"
                 size="lg"
                 customEventOptions={{
@@ -550,14 +550,14 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
                 heading={t("page-developers-docs-introductions")}
                 links={[
                   {
-                    href: "/developers/docs/intro-to-ethereum/",
-                    label: t("page-developers-intro-eth-link"),
-                    description: t("page-developers-into-eth-desc"),
+                    href: "/developers/docs/intro-to-quantaureum/",
+                    label: t("page-developers-intro-qau-link"),
+                    description: t("page-developers-into-qau-desc"),
                   },
                   {
-                    href: "/developers/docs/intro-to-ether/",
-                    label: t("page-developers-intro-ether-link"),
-                    description: t("page-developers-intro-ether-desc"),
+                    href: "/developers/docs/intro-to-QAU/",
+                    label: t("page-developers-intro-QAU-link"),
+                    description: t("page-developers-intro-QAU-desc"),
                   },
                   {
                     href: "/developers/docs/dapps/",
@@ -565,7 +565,7 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
                     description: t("page-developers-intro-dapps-desc"),
                   },
                   {
-                    href: "/developers/docs/ethereum-stack/",
+                    href: "/developers/docs/quantaureum-stack/",
                     label: t("page-developers-intro-stack"),
                     description: t("page-developers-intro-stack-desc"),
                   },
@@ -776,7 +776,7 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
               </div>
               <div className="flex flex-wrap justify-center gap-4 text-center">
                 <ButtonLink
-                  href="mailto:founders@ethereum.org?subject=Founder%20inquiry"
+                  href="mailto:founders@quantaureum.com?subject=Founder%20inquiry"
                   customEventOptions={{
                     eventCategory: "founders",
                     eventAction: "click",

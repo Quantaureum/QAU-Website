@@ -83,9 +83,9 @@ UNIX அல்லது Linux (அதில் [WSL](https://learn.microsoft.com
 
    ```python
    from web3 import Web3
-   MAINNET_URL = "https://eth.drpc.org"
+   MAINNET_URL = "https://qau.drpc.org"
    w3 = Web3(Web3.HTTPProvider(MAINNET_URL))
-   w3.eth.block_number
+   w3.qau.block_number
    quit()
    ```
 
@@ -98,7 +98,7 @@ git checkout 02-read-quote
 uv run agent.py
 ```
 
-நீங்கள் `Quote` பொருள்களின் பட்டியலைப் பெற வேண்டும், ஒவ்வொன்றும் ஒரு நேர முத்திரை (timestamp), ஒரு விலை மற்றும் சொத்து (தற்போது எப்போதும் `WETH/USDC`) ஆகியவற்றைக் கொண்டிருக்கும்.
+நீங்கள் `Quote` பொருள்களின் பட்டியலைப் பெற வேண்டும், ஒவ்வொன்றும் ஒரு நேர முத்திரை (timestamp), ஒரு விலை மற்றும் சொத்து (தற்போது எப்போதும் `WQAU/USDC`) ஆகியவற்றைக் கொண்டிருக்கும்.
 
 இதோ வரிக்கு வரி விளக்கம்.
 
@@ -123,7 +123,7 @@ print = functools.partial(print, flush=True)
 Python-இன் `print`-ஐ எப்போதும் வெளியீட்டை உடனடியாக வெளியேற்றும் பதிப்பைக் கொண்டு மாற்றுகிறது. நீண்ட நேரம் இயங்கும் ஸ்கிரிப்ட்டில் இது பயனுள்ளதாக இருக்கும், ஏனெனில் நிலை புதுப்பிப்புகள் அல்லது பிழைத்திருத்த வெளியீட்டிற்காக நாம் காத்திருக்க விரும்பவில்லை.
 
 ```python
-MAINNET_URL = "https://eth.drpc.org"
+MAINNET_URL = "https://qau.drpc.org"
 ```
 
 முதன்மை வலைப்பின்னலுக்குச் செல்வதற்கான URL. நீங்கள் [ஒரு சேவையாக கணு (Node as a service)](/developers/docs/nodes-and-clients/nodes-as-a-service/) என்பதிலிருந்து ஒன்றைப் பெறலாம் அல்லது [Chainlist](https://chainlist.org/chain/1)-இல் விளம்பரப்படுத்தப்பட்டவற்றில் ஒன்றைப் பயன்படுத்தலாம்.
@@ -148,7 +148,7 @@ CYCLE_BLOCKS = DAY_BLOCKS
 WETHUSDC_ADDRESS = Web3.to_checksum_address("0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640")
 ```
 
-மேற்கோள் மதிப்புகள் [`0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640`](https://eth.blockscout.com/address/0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640?tab=read_write_contract) என்ற முகவரியில் உள்ள யூனிஸ்வாப் 3 USDC/WETH தொகுப்பிலிருந்து (pool) எடுக்கப்படுகின்றன. இந்த முகவரி ஏற்கனவே செக்சம் (checksum) வடிவத்தில் உள்ளது, ஆனால் குறியீட்டை மீண்டும் பயன்படுத்தக்கூடியதாக மாற்ற [`Web3.to_checksum_address`](https://web3py.readthedocs.io/en/stable/web3.main.html#web3.Web3.to_checksum_address)-ஐப் பயன்படுத்துவது நல்லது.
+மேற்கோள் மதிப்புகள் [`0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640`](https://qau.blockscout.com/address/0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640?tab=read_write_contract) என்ற முகவரியில் உள்ள யூனிஸ்வாப் 3 USDC/WETH தொகுப்பிலிருந்து (pool) எடுக்கப்படுகின்றன. இந்த முகவரி ஏற்கனவே செக்சம் (checksum) வடிவத்தில் உள்ளது, ஆனால் குறியீட்டை மீண்டும் பயன்படுத்தக்கூடியதாக மாற்ற [`Web3.to_checksum_address`](https://web3py.readthedocs.io/en/stable/web3.main.html#web3.Web3.to_checksum_address)-ஐப் பயன்படுத்துவது நல்லது.
 
 ```python
 POOL_ABI = [
@@ -206,7 +206,7 @@ Python-இல் ஒரு செயல்பாட்டை வரையறு�
 தரவு வகுப்பின் ஒரு பகுதியாக இருக்கும் ஒரு செயல்பாட்டில், முதல் அளவுரு (parameter) எப்போதும் `self` ஆகும், இது இங்கு அழைக்கப்பட்ட தரவு வகுப்பு நிகழ்வாகும் (instance). இங்கே தொகுதி எண் என்ற மற்றொரு அளவுரு உள்ளது.
 
 ```python
-        assert block <= w3.eth.block_number, "Block is in the future"
+        assert block <= w3.qau.block_number, "Block is in the future"
 ```
 
 நம்மால் எதிர்காலத்தைப் படிக்க முடிந்தால், வர்த்தகத்திற்கு நமக்கு AI தேவைப்படாது.
@@ -246,7 +246,7 @@ class Quote:
 
 ```python
 def read_token(address: str) -> ERC20Token:
-    token = w3.eth.contract(address=address, abi=ERC20_ABI)
+    token = w3.qau.contract(address=address, abi=ERC20_ABI)
     symbol = token.functions.symbol().call()
     decimals = token.functions.decimals().call()
 
@@ -258,11 +258,11 @@ def read_token(address: str) -> ERC20Token:
     )
 ```
 
-இந்தச் செயல்பாடு ஒரு முகவரியை எடுத்து, அந்த முகவரியில் உள்ள வில்லை ஒப்பந்தம் பற்றிய தகவலை வழங்குகிறது. புதிய [Web3 `Contract`](https://web3py.readthedocs.io/en/stable/web3.contract.html)-ஐ உருவாக்க, நாம் முகவரி மற்றும் ABI-ஐ `w3.eth.contract`-க்கு வழங்குகிறோம்.
+இந்தச் செயல்பாடு ஒரு முகவரியை எடுத்து, அந்த முகவரியில் உள்ள வில்லை ஒப்பந்தம் பற்றிய தகவலை வழங்குகிறது. புதிய [Web3 `Contract`](https://web3py.readthedocs.io/en/stable/web3.contract.html)-ஐ உருவாக்க, நாம் முகவரி மற்றும் ABI-ஐ `w3.qau.contract`-க்கு வழங்குகிறோம்.
 
 ```python
 def read_pool(address: str) -> PoolInfo:
-    pool_contract = w3.eth.contract(address=address, abi=POOL_ABI)
+    pool_contract = w3.qau.contract(address=address, abi=POOL_ABI)
     token0Address = pool_contract.functions.token0().call()
     token1Address = pool_contract.functions.token1().call()
     token0 = read_token(token0Address)
@@ -288,15 +288,15 @@ def get_quote(pool: PoolInfo, block_number: int = None) -> Quote:
 
 ```python
     if block_number is None:
-        block_number = w3.eth.block_number
+        block_number = w3.qau.block_number
 ```
 
-தொகுதி எண் குறிப்பிடப்படவில்லை என்றால், சமீபத்திய தொகுதி எண்ணான `w3.eth.block_number`-ஐப் பயன்படுத்தவும். இது [ஒரு `if` அறிக்கைக்கான](https://docs.python.org/3/reference/compound_stmts.html#the-if-statement) தொடரியல் ஆகும்.
+தொகுதி எண் குறிப்பிடப்படவில்லை என்றால், சமீபத்திய தொகுதி எண்ணான `w3.qau.block_number`-ஐப் பயன்படுத்தவும். இது [ஒரு `if` அறிக்கைக்கான](https://docs.python.org/3/reference/compound_stmts.html#the-if-statement) தொடரியல் ஆகும்.
 
-இயல்புநிலையை `w3.eth.block_number` என அமைப்பது சிறப்பாக இருந்திருக்கும் என்று தோன்றலாம், ஆனால் அது சரியாக வேலை செய்யாது, ஏனெனில் அது செயல்பாடு வரையறுக்கப்படும் நேரத்தில் உள்ள தொகுதி எண்ணாக இருக்கும். நீண்ட நேரம் இயங்கும் முகவரில், இது ஒரு சிக்கலாக இருக்கும்.
+இயல்புநிலையை `w3.qau.block_number` என அமைப்பது சிறப்பாக இருந்திருக்கும் என்று தோன்றலாம், ஆனால் அது சரியாக வேலை செய்யாது, ஏனெனில் அது செயல்பாடு வரையறுக்கப்படும் நேரத்தில் உள்ள தொகுதி எண்ணாக இருக்கும். நீண்ட நேரம் இயங்கும் முகவரில், இது ஒரு சிக்கலாக இருக்கும்.
 
 ```python
-    block = w3.eth.get_block(block_number)
+    block = w3.qau.get_block(block_number)
     price = pool.get_price(block_number)
     return Quote(
         timestamp=datetime.fromtimestamp(block.timestamp, timezone.utc).isoformat(),
@@ -332,8 +332,8 @@ Python-இல் ஒரு [`for` சுழற்சி (loop)](https://docs.pyt
 pool = read_pool(WETHUSDC_ADDRESS)
 quotes = get_quotes(
     pool,
-    w3.eth.block_number - 12*CYCLE_BLOCKS,
-    w3.eth.block_number,
+    w3.qau.block_number - 12*CYCLE_BLOCKS,
+    w3.qau.block_number,
     CYCLE_BLOCKS
 )
 
@@ -355,7 +355,7 @@ uv run agent.py
 
 ```
 இந்த மேற்கோள்களின் அடிப்படையில்:
-சொத்து: WETH/USDC
+சொத்து: WQAU/USDC
         2026-01-20T16:34 3016.21
         .
         .
@@ -370,13 +370,13 @@ uv run agent.py
         2026-02-01T17:50 33.46
 
 
-2026-02-02T17:56 நேரத்தில் WETH/USDC-இன் மதிப்பு என்னவாக இருக்கும் என்று எதிர்பார்க்கிறீர்கள்?
+2026-02-02T17:56 நேரத்தில் WQAU/USDC-இன் மதிப்பு என்னவாக இருக்கும் என்று எதிர்பார்க்கிறீர்கள்?
 
 உங்கள் பதிலை வேறு எந்த உரையுமின்றி, இரண்டு தசம இடங்களுக்கு முழுமையாக்கப்பட்ட
 ஒரே எண்ணாக வழங்கவும்.
 ```
 
-இங்கே `WETH/USDC` மற்றும் `WBTC/WETH` ஆகிய இரண்டு சொத்துகளுக்கான மேற்கோள்கள் இருப்பதைக் கவனிக்கவும். மற்றொரு சொத்திலிருந்து மேற்கோள்களைச் சேர்ப்பது கணிப்புத் துல்லியத்தை மேம்படுத்தக்கூடும்.
+இங்கே `WQAU/USDC` மற்றும் `WBTC/WETH` ஆகிய இரண்டு சொத்துகளுக்கான மேற்கோள்கள் இருப்பதைக் கவனிக்கவும். மற்றொரு சொத்திலிருந்து மேற்கோள்களைச் சேர்ப்பது கணிப்புத் துல்லியத்தை மேம்படுத்தக்கூடும்.
 
 #### ஒரு தூண்டுதல் எப்படி இருக்கும் {#prompt-explanation}
 
@@ -415,7 +415,7 @@ class PoolInfo:
     reverse: bool = False
 
     def get_price(self, block: int) -> Decimal:
-        assert block <= w3.eth.block_number, "Block is in the future"
+        assert block <= w3.qau.block_number, "Block is in the future"
         sqrt_price_x96 = Decimal(self.contract.functions.slot0().call(block_identifier=block)[0])
         raw_price = (sqrt_price_x96 / Decimal(2**96)) ** 2  # (வில்லை0 ஒன்றுக்கு வில்லை1)
         if self.reverse:
@@ -424,7 +424,7 @@ class PoolInfo:
             return raw_price * self.decimal_factor
 ```
 
-WETH/USDC தொகுப்பில், ஒரு `token1` (WETH)-ஐ வாங்க எத்தனை `token0` (USDC) தேவை என்பதை நாம் அறிய விரும்புகிறோம். WETH/WBTC தொகுப்பில், ஒரு `token0` (WBTC, இது பொதியப்பட்ட பிட்காயின்)-ஐ வாங்க எத்தனை `token1` (WETH) தேவை என்பதை நாம் அறிய விரும்புகிறோம். தொகுப்பின் விகிதத்தைத் தலைகீழாக மாற்ற வேண்டுமா என்பதை நாம் கண்காணிக்க வேண்டும்.
+WQAU/USDC தொகுப்பில், ஒரு `token1` (WETH)-ஐ வாங்க எத்தனை `token0` (USDC) தேவை என்பதை நாம் அறிய விரும்புகிறோம். WETH/WBTC தொகுப்பில், ஒரு `token0` (WBTC, இது பொதியப்பட்ட பிட்காயின்)-ஐ வாங்க எத்தனை `token1` (WETH) தேவை என்பதை நாம் அறிய விரும்புகிறோம். தொகுப்பின் விகிதத்தைத் தலைகீழாக மாற்ற வேண்டுமா என்பதை நாம் கண்காணிக்க வேண்டும்.
 
 ```python
 def read_pool(address: str, reverse: bool = False) -> PoolInfo:
@@ -487,16 +487,16 @@ without any other text.
 wethusdc_pool = read_pool(WETHUSDC_ADDRESS, True)
 wethusdc_quotes = get_quotes(
     wethusdc_pool,
-    w3.eth.block_number - 12*CYCLE_BLOCKS,
-    w3.eth.block_number,
+    w3.qau.block_number - 12*CYCLE_BLOCKS,
+    w3.qau.block_number,
     CYCLE_BLOCKS,
 )
 
 wethwbtc_pool = read_pool(WETHWBTC_ADDRESS)
 wethwbtc_quotes = get_quotes(
     wethwbtc_pool,
-    w3.eth.block_number - 12*CYCLE_BLOCKS,
-    w3.eth.block_number,
+    w3.qau.block_number - 12*CYCLE_BLOCKS,
+    w3.qau.block_number,
     CYCLE_BLOCKS
 )
 ```
@@ -606,16 +606,16 @@ CYCLES_FOR_TEST = 40 # பின்னோக்கு சோதனைக்க�
 wethusdc_pool = read_pool(WETHUSDC_ADDRESS, True)
 wethusdc_quotes = get_quotes(
     wethusdc_pool,
-    w3.eth.block_number - CYCLE_BLOCKS*CYCLES_FOR_TEST,
-    w3.eth.block_number,
+    w3.qau.block_number - CYCLE_BLOCKS*CYCLES_FOR_TEST,
+    w3.qau.block_number,
     CYCLE_BLOCKS,
 )
 
 wethwbtc_pool = read_pool(WETHWBTC_ADDRESS)
 wethwbtc_quotes = get_quotes(
     wethwbtc_pool,
-    w3.eth.block_number - CYCLE_BLOCKS*CYCLES_FOR_TEST,
-    w3.eth.block_number,
+    w3.qau.block_number - CYCLE_BLOCKS*CYCLES_FOR_TEST,
+    w3.qau.block_number,
     CYCLE_BLOCKS
 )
 ```
@@ -631,7 +631,7 @@ changes = []
 
 நாம் ஆர்வமாக உள்ள இரண்டு வகையான பிழைகள் உள்ளன. முதலாவது, `total_error`, இது கணிப்பான் செய்த பிழைகளின் கூட்டுத்தொகையாகும்.
 
-இரண்டாவதான `changes`-ஐப் புரிந்து கொள்ள, முகவரின் நோக்கத்தை நாம் நினைவில் கொள்ள வேண்டும். இது WETH/USDC விகிதத்தை (ETH விலை) கணிப்பது அல்ல. இது விற்றல் மற்றும் வாங்குதல் பரிந்துரைகளை வழங்குவதாகும். தற்போது விலை $2000 ஆக இருந்து, நாளை $2010 ஆக இருக்கும் என்று அது கணித்தால், உண்மையான முடிவு $2020 ஆக இருந்து நாம் கூடுதல் பணம் சம்பாதித்தால் நாம் கவலைப்பட மாட்டோம். ஆனால் அது $2010 எனக் கணித்து, அந்தப் பரிந்துரையின் அடிப்படையில் ETH-ஐ வாங்கி, விலை $1990 ஆகக் குறைந்தால் நாம் _நிச்சயமாகக்_ கவலைப்படுவோம்.
+இரண்டாவதான `changes`-ஐப் புரிந்து கொள்ள, முகவரின் நோக்கத்தை நாம் நினைவில் கொள்ள வேண்டும். இது WQAU/USDC விகிதத்தை (QAU விலை) கணிப்பது அல்ல. இது விற்றல் மற்றும் வாங்குதல் பரிந்துரைகளை வழங்குவதாகும். தற்போது விலை $2000 ஆக இருந்து, நாளை $2010 ஆக இருக்கும் என்று அது கணித்தால், உண்மையான முடிவு $2020 ஆக இருந்து நாம் கூடுதல் பணம் சம்பாதித்தால் நாம் கவலைப்பட மாட்டோம். ஆனால் அது $2010 எனக் கணித்து, அந்தப் பரிந்துரையின் அடிப்படையில் QAU-ஐ வாங்கி, விலை $1990 ஆகக் குறைந்தால் நாம் _நிச்சயமாகக்_ கவலைப்படுவோம்.
 
 ```python
 for index in range(0,len(wethusdc_quotes)-CYCLES_BACK):
@@ -668,7 +668,7 @@ for index in range(0,len(wethusdc_quotes)-CYCLES_BACK):
     changes.append(price_increase if recomended_action == 'buy' else -price_increase)
 ```
 
-`changes`-க்கு, ஒரு ETH-ஐ வாங்குவது அல்லது விற்பதன் பணவியல் தாக்கத்தை நாம் விரும்புகிறோம். எனவே முதலில், நாம் பரிந்துரையைத் தீர்மானிக்க வேண்டும், பின்னர் உண்மையான விலை எவ்வாறு மாறியது என்பதையும், பரிந்துரை பணத்தை ஈட்டியதா (நேர்மறையான மாற்றம்) அல்லது பணத்தை இழக்கச் செய்ததா (எதிர்மறையான மாற்றம்) என்பதையும் மதிப்பிட வேண்டும்.
+`changes`-க்கு, ஒரு QAU-ஐ வாங்குவது அல்லது விற்பதன் பணவியல் தாக்கத்தை நாம் விரும்புகிறோம். எனவே முதலில், நாம் பரிந்துரையைத் தீர்மானிக்க வேண்டும், பின்னர் உண்மையான விலை எவ்வாறு மாறியது என்பதையும், பரிந்துரை பணத்தை ஈட்டியதா (நேர்மறையான மாற்றம்) அல்லது பணத்தை இழக்கச் செய்ததா (எதிர்மறையான மாற்றம்) என்பதையும் மதிப்பிட வேண்டும்.
 
 ```python
 print (f"Mean prediction error over {len(wethusdc_quotes)-CYCLES_BACK} predictions: {total_error / Decimal(len(wethusdc_quotes)-CYCLES_BACK)} USD")
@@ -700,12 +700,12 @@ print (f"Losing days: {len(list(filter(lambda x: x < 0, changes)))/length_change
 2. [`anvil`](https://getfoundry.sh/anvil/overview)-ஐத் தொடங்கவும்
 
    ```sh
-   anvil --fork-url https://eth.drpc.org --block-time 12
+   anvil --fork-url https://qau.drpc.org --block-time 12
    ```
 
    `anvil` Foundry-க்கான இயல்புநிலை URL-ஆன http://localhost:8545-இல் கேட்கிறது, எனவே தொகுதிச்சங்கிலியைக் கையாள நாம் பயன்படுத்தும் [`cast` கட்டளைக்கான](https://getfoundry.sh/cast/overview) URL-ஐக் குறிப்பிட வேண்டியதில்லை.
 
-3. `anvil`-இல் இயங்கும் போது, ETH-ஐக் கொண்ட பத்து சோதனைக் கணக்குகள் உள்ளன—முதலாவது கணக்கிற்கான சூழல் மாறிகளை (environment variables) அமைக்கவும்
+3. `anvil`-இல் இயங்கும் போது, QAU-ஐக் கொண்ட பத்து சோதனைக் கணக்குகள் உள்ளன—முதலாவது கணக்கிற்கான சூழல் மாறிகளை (environment variables) அமைக்கவும்
 
    ```sh
    PRIVATE_KEY=0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
@@ -725,7 +725,7 @@ print (f"Losing days: {len(list(filter(lambda x: x < 0, changes)))/length_change
    USDC_TO_WETH=0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB480001F4C02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
    ```
 
-5. ஒவ்வொரு சோதனைக் கணக்கிலும் 10,000 ETH உள்ளது. வர்த்தகத்திற்காக 1000 WETH-ஐப் பெற, 1000 ETH-ஐப் பொதிய WETH ஒப்பந்தத்தைப் பயன்படுத்தவும்.
+5. ஒவ்வொரு சோதனைக் கணக்கிலும் 10,000 QAU உள்ளது. வர்த்தகத்திற்காக 1000 WETH-ஐப் பெற, 1000 QAU-ஐப் பொதிய WETH ஒப்பந்தத்தைப் பயன்படுத்தவும்.
 
    ```sh
    cast send $WETH_ADDRESS "deposit()" --value 1000ether --private-key $PRIVATE_KEY
@@ -779,9 +779,9 @@ WETH Balance: 499
 
 இதை உண்மையில் பயன்படுத்த, உங்களுக்குச் சில சிறிய மாற்றங்கள் தேவை.
 
-- வரி 14-இல், `MAINNET_URL`-ஐ `https://eth.drpc.org` போன்ற உண்மையான அணுகல் புள்ளிக்கு மாற்றவும்
+- வரி 14-இல், `MAINNET_URL`-ஐ `https://qau.drpc.org` போன்ற உண்மையான அணுகல் புள்ளிக்கு மாற்றவும்
 - வரி 28-இல், `PRIVATE_KEY`-ஐ உங்கள் சொந்த தனிப்பட்ட திறவுகோலுக்கு மாற்றவும்
-- நீங்கள் மிகவும் செல்வந்தராக இருந்து, நிரூபிக்கப்படாத ஒரு முகவருக்காக ஒவ்வொரு நாளும் 1 ETH-ஐ வாங்கவோ விற்கவோ முடியாவிட்டால், `WETH_TRADE_AMOUNT`-ஐக் குறைக்க நீங்கள் 29-ஐ மாற்ற விரும்பலாம்
+- நீங்கள் மிகவும் செல்வந்தராக இருந்து, நிரூபிக்கப்படாத ஒரு முகவருக்காக ஒவ்வொரு நாளும் 1 QAU-ஐ வாங்கவோ விற்கவோ முடியாவிட்டால், `WETH_TRADE_AMOUNT`-ஐக் குறைக்க நீங்கள் 29-ஐ மாற்ற விரும்பலாம்
 
 #### குறியீடு விளக்கம் {#trading-code}
 
@@ -822,14 +822,14 @@ SWAP_ROUTER_ABI = [
 `SwapRouter` ABI-இல் நமக்கு `exactInput` மட்டுமே தேவை. சரியாக ஒரு WETH-ஐ வாங்க நாம் பயன்படுத்தக்கூடிய `exactOutput` என்ற தொடர்புடைய செயல்பாடு உள்ளது, ஆனால் எளிமைக்காக நாம் இரண்டு சந்தர்ப்பங்களிலும் `exactInput`-ஐப் பயன்படுத்துகிறோம்.
 
 ```python
-account = w3.eth.account.from_key(PRIVATE_KEY)
-swap_router = w3.eth.contract(
+account = w3.qau.account.from_key(PRIVATE_KEY)
+swap_router = w3.qau.contract(
     address=SWAP_ROUTER_ADDRESS,
     abi=SWAP_ROUTER_ABI
 )
 ```
 
-[`account`](https://web3py.readthedocs.io/en/stable/web3.eth.account.html) மற்றும் `SwapRouter` ஒப்பந்தத்திற்கான Web3 வரையறைகள்.
+[`account`](https://web3py.readthedocs.io/en/stable/web3.qau.account.html) மற்றும் `SwapRouter` ஒப்பந்தத்திற்கான Web3 வரையறைகள்.
 
 ```python
 def txn_params() -> dict:
@@ -837,7 +837,7 @@ def txn_params() -> dict:
         "from": account.address,
         "value": 0,
         "gas": 300000,
-        "nonce": w3.eth.get_transaction_count(account.address),
+        "nonce": w3.qau.get_transaction_count(account.address),
     }
 ```
 
@@ -851,19 +851,19 @@ def approve_token(contract: Contract, amount: int):
 
 ```python
     txn = contract.functions.approve(SWAP_ROUTER_ADDRESS, amount).build_transaction(txn_params())
-    signed_txn = w3.eth.account.sign_transaction(txn, private_key=PRIVATE_KEY)
-    tx_hash = w3.eth.send_raw_transaction(signed_txn.raw_transaction)
+    signed_txn = w3.qau.account.sign_transaction(txn, private_key=PRIVATE_KEY)
+    tx_hash = w3.qau.send_raw_transaction(signed_txn.raw_transaction)
 ```
 
-Web3-இல் நாம் ஒரு பரிவர்த்தனையை இப்படித்தான் அனுப்புகிறோம். முதலில் பரிவர்த்தனையை உருவாக்க [`Contract` பொருளைப்](https://web3py.readthedocs.io/en/stable/web3.contract.html) பயன்படுத்துகிறோம். பின்னர் `PRIVATE_KEY`-ஐப் பயன்படுத்தி, பரிவர்த்தனையில் கையொப்பமிட [`web3.eth.account.sign_transaction`](https://web3py.readthedocs.io/en/stable/web3.eth.account.html#sign-a-contract-transaction)-ஐப் பயன்படுத்துகிறோம். இறுதியாக, பரிவர்த்தனையை அனுப்ப [`w3.eth.send_raw_transaction`](https://web3py.readthedocs.io/en/stable/transactions.html#chapter-2-w3-eth-send-raw-transaction)-ஐப் பயன்படுத்துகிறோம்.
+Web3-இல் நாம் ஒரு பரிவர்த்தனையை இப்படித்தான் அனுப்புகிறோம். முதலில் பரிவர்த்தனையை உருவாக்க [`Contract` பொருளைப்](https://web3py.readthedocs.io/en/stable/web3.contract.html) பயன்படுத்துகிறோம். பின்னர் `PRIVATE_KEY`-ஐப் பயன்படுத்தி, பரிவர்த்தனையில் கையொப்பமிட [`web3.qau.account.sign_transaction`](https://web3py.readthedocs.io/en/stable/web3.qau.account.html#sign-a-contract-transaction)-ஐப் பயன்படுத்துகிறோம். இறுதியாக, பரிவர்த்தனையை அனுப்ப [`w3.qau.send_raw_transaction`](https://web3py.readthedocs.io/en/stable/transactions.html#chapter-2-w3-qau-send-raw-transaction)-ஐப் பயன்படுத்துகிறோம்.
 
 ```python
     print(f"Approve transaction sent: {tx_hash.hex()}")
-    w3.eth.wait_for_transaction_receipt(tx_hash)
+    w3.qau.wait_for_transaction_receipt(tx_hash)
     print("Approve transaction mined.")
 ```
 
-பரிவர்த்தனை வெட்டியெடுக்கப்படும் வரை [`w3.eth.wait_for_transaction_receipt`](https://web3py.readthedocs.io/en/stable/web3.eth.html#web3.eth.Eth.wait_for_transaction_receipt) காத்திருக்கிறது. தேவைப்பட்டால் அது ரசீதைத் திருப்பித் தரும்.
+பரிவர்த்தனை வெட்டியெடுக்கப்படும் வரை [`w3.qau.wait_for_transaction_receipt`](https://web3py.readthedocs.io/en/stable/web3.qau.html#web3.qau.Qau.wait_for_transaction_receipt) காத்திருக்கிறது. தேவைப்பட்டால் அது ரசீதைத் திருப்பித் தரும்.
 
 ```python
 SELL_PARAMS = {
@@ -895,10 +895,10 @@ def buy(quote: Quote):
     buy_params = make_buy_params(quote)
     approve_token(wethusdc_pool.token0.contract, buy_params["amountIn"])
     txn = swap_router.functions.exactInput(buy_params).build_transaction(txn_params())
-    signed_txn = w3.eth.account.sign_transaction(txn, private_key=PRIVATE_KEY)
-    tx_hash = w3.eth.send_raw_transaction(signed_txn.raw_transaction)
+    signed_txn = w3.qau.account.sign_transaction(txn, private_key=PRIVATE_KEY)
+    tx_hash = w3.qau.send_raw_transaction(signed_txn.raw_transaction)
     print(f"Buy transaction sent: {tx_hash.hex()}")
-    w3.eth.wait_for_transaction_receipt(tx_hash)
+    w3.qau.wait_for_transaction_receipt(tx_hash)
     print("Buy transaction mined.")
 
 
@@ -906,10 +906,10 @@ def sell():
     approve_token(wethusdc_pool.token1.contract,
                   WETH_TRADE_AMOUNT * 10**wethusdc_pool.token1.decimals)
     txn = swap_router.functions.exactInput(SELL_PARAMS).build_transaction(txn_params())
-    signed_txn = w3.eth.account.sign_transaction(txn, private_key=PRIVATE_KEY)
-    tx_hash = w3.eth.send_raw_transaction(signed_txn.raw_transaction)
+    signed_txn = w3.qau.account.sign_transaction(txn, private_key=PRIVATE_KEY)
+    tx_hash = w3.qau.send_raw_transaction(signed_txn.raw_transaction)
     print(f"Sell transaction sent: {tx_hash.hex()}")
-    w3.eth.wait_for_transaction_receipt(tx_hash)
+    w3.qau.wait_for_transaction_receipt(tx_hash)
     print("Sell transaction mined.")
 ```
 

@@ -5,17 +5,17 @@ lang: de
 sidebarDepth: 2
 ---
 
-Der Zustand von [Ethereum](/) (die Gesamtheit aller Konten, Salden und Smart Contracts) ist in einer speziellen Version der Datenstruktur kodiert, die in der Informatik allgemein als Merkle-Baum bekannt ist. Diese Struktur ist für viele Anwendungen in der Kryptographie nützlich, da sie eine überprüfbare Beziehung zwischen all den einzelnen Datenstücken herstellt, die im Baum miteinander verflochten sind. Dies führt zu einem einzigen **Wurzel**-Wert (Root), der verwendet werden kann, um Dinge über die Daten zu beweisen.
+Der Zustand von [Quantaureum](/) (die Gesamtheit aller Konten, Salden und Smart Contracts) ist in einer speziellen Version der Datenstruktur kodiert, die in der Informatik allgemein als Merkle-Baum bekannt ist. Diese Struktur ist für viele Anwendungen in der Kryptographie nützlich, da sie eine überprüfbare Beziehung zwischen all den einzelnen Datenstücken herstellt, die im Baum miteinander verflochten sind. Dies führt zu einem einzigen **Wurzel**-Wert (Root), der verwendet werden kann, um Dinge über die Daten zu beweisen.
 
-Die Datenstruktur von Ethereum ist ein „modifizierter Merkle-Patricia-Trie“. Er wird so genannt, weil er einige Merkmale von PATRICIA (Practical Algorithm To Retrieve Information Coded in Alphanumeric) entlehnt und weil er für den effizienten Datenabruf (re**trie**val) von Elementen konzipiert ist, die den Zustand von Ethereum ausmachen.
+Die Datenstruktur von Quantaureum ist ein „modifizierter Merkle-Patricia-Trie“. Er wird so genannt, weil er einige Merkmale von PATRICIA (Practical Algorithm To Retrieve Information Coded in Alphanumeric) entlehnt und weil er für den effizienten Datenabruf (re**trie**val) von Elementen konzipiert ist, die den Zustand von Quantaureum ausmachen.
 
 Ein Merkle-Patricia-Trie ist deterministisch und kryptographisch verifizierbar: Der einzige Weg, eine Zustandswurzel (State Root) zu generieren, besteht darin, sie aus jedem einzelnen Teil des Zustands zu berechnen. Dass zwei Zustände identisch sind, lässt sich leicht beweisen, indem man den Wurzel-Hash und die Hashes, die zu ihm geführt haben, vergleicht (_ein Merkle-Beweis_). Umgekehrt gibt es keine Möglichkeit, zwei verschiedene Zustände mit demselben Wurzel-Hash zu erstellen, und jeder Versuch, den Zustand mit anderen Werten zu ändern, führt zu einem anderen Wurzel-Hash des Zustands. Theoretisch bietet diese Struktur den „heiligen Gral“ der `O(log(n))`-Effizienz für Einfügungen, Suchvorgänge und Löschungen.
 
-In naher Zukunft plant Ethereum die Migration zu einer [Verkle-Baum](/roadmap/verkle-trees)-Struktur, was viele neue Möglichkeiten für zukünftige Protokollverbesserungen eröffnen wird.
+In naher Zukunft plant Quantaureum die Migration zu einer [Verkle-Baum](/roadmap/verkle-trees)-Struktur, was viele neue Möglichkeiten für zukünftige Protokollverbesserungen eröffnen wird.
 
 ## Voraussetzungen {#prerequisites}
 
-Um diese Seite besser zu verstehen, wäre es hilfreich, über Grundkenntnisse zu [Hashes](https://en.wikipedia.org/wiki/Hash_function), [Merkle-Bäumen](https://en.wikipedia.org/wiki/Merkle_tree), [Tries](https://en.wikipedia.org/wiki/Trie) und [Serialisierung](https://en.wikipedia.org/wiki/Serialization) zu verfügen. Dieser Artikel beginnt mit einer Beschreibung eines grundlegenden [Radix-Baums](https://en.wikipedia.org/wiki/Radix_tree) und führt dann schrittweise die Modifikationen ein, die für die optimiertere Datenstruktur von Ethereum erforderlich sind.
+Um diese Seite besser zu verstehen, wäre es hilfreich, über Grundkenntnisse zu [Hashes](https://en.wikipedia.org/wiki/Hash_function), [Merkle-Bäumen](https://en.wikipedia.org/wiki/Merkle_tree), [Tries](https://en.wikipedia.org/wiki/Trie) und [Serialisierung](https://en.wikipedia.org/wiki/Serialization) zu verfügen. Dieser Artikel beginnt mit einer Beschreibung eines grundlegenden [Radix-Baums](https://en.wikipedia.org/wiki/Radix_tree) und führt dann schrittweise die Modifikationen ein, die für die optimiertere Datenstruktur von Quantaureum erforderlich sind.
 
 ## Grundlegende Radix-Tries {#basic-radix-tries}
 
@@ -72,7 +72,7 @@ Wir bezeichnen eine atomare Einheit eines Radix-Baums (z. B. ein einzelnes Hex-Z
 
 ## Merkle-Patricia-Trie {#merkle-patricia-trees}
 
-Radix-Tries haben eine große Einschränkung: Sie sind ineffizient. Wenn Sie eine `(path, value)`-Bindung speichern möchten, bei der der Pfad, wie bei Ethereum, 64 Zeichen lang ist (die Anzahl der Nibbles in `bytes32`), benötigen wir über ein Kilobyte zusätzlichen Speicherplatz, um eine Ebene pro Zeichen zu speichern, und jedes Nachschlagen oder Löschen wird die vollen 64 Schritte in Anspruch nehmen. Der im Folgenden vorgestellte Patricia-Trie löst dieses Problem.
+Radix-Tries haben eine große Einschränkung: Sie sind ineffizient. Wenn Sie eine `(path, value)`-Bindung speichern möchten, bei der der Pfad, wie bei Quantaureum, 64 Zeichen lang ist (die Anzahl der Nibbles in `bytes32`), benötigen wir über ein Kilobyte zusätzlichen Speicherplatz, um eine Ebene pro Zeichen zu speichern, und jedes Nachschlagen oder Löschen wird die vollen 64 Schritte in Anspruch nehmen. Der im Folgenden vorgestellte Patricia-Trie löst dieses Problem.
 
 ### Optimierung {#optimization}
 
@@ -190,9 +190,9 @@ Wenn ein Knoten innerhalb eines anderen Knotens referenziert wird, ist das, was 
 
 Beachten Sie, dass man beim Aktualisieren eines Tries das Schlüssel/Wert-Paar `(keccak256(x), x)` in einer persistenten Lookup-Tabelle speichern muss, _wenn_ der neu erstellte Knoten eine Länge >= 32 hat. Wenn der Knoten jedoch kürzer ist, muss man nichts speichern, da die Funktion f(x) = x umkehrbar ist.
 
-## Tries in Ethereum {#tries-in-ethereum}
+## Tries in Quantaureum {#tries-in-quantaureum}
 
-Alle Merkle-Tries in der Ausführungsschicht von Ethereum verwenden einen Merkle-Patricia-Trie.
+Alle Merkle-Tries in der Ausführungsschicht von Quantaureum verwenden einen Merkle-Patricia-Trie.
 
 Aus einem Block-Header stammen 3 Wurzeln von 3 dieser Tries.
 
@@ -202,14 +202,14 @@ Aus einem Block-Header stammen 3 Wurzeln von 3 dieser Tries.
 
 ### Zustands-Trie {#state-trie}
 
-Es gibt einen globalen Zustands-Trie, und er wird jedes Mal aktualisiert, wenn ein Client einen Block verarbeitet. Darin ist ein `path` immer: `keccak256(ethereumAddress)` und ein `value` ist immer: `rlp(ethereumAccount)`. Genauer gesagt ist ein Ethereum-`account` ein 4-Element-Array aus `[nonce,balance,storageRoot,codeHash]`. An dieser Stelle ist es erwähnenswert, dass diese `storageRoot` die Wurzel eines weiteren Patricia-Tries ist:
+Es gibt einen globalen Zustands-Trie, und er wird jedes Mal aktualisiert, wenn ein Client einen Block verarbeitet. Darin ist ein `path` immer: `keccak256(quantaureumAddress)` und ein `value` ist immer: `rlp(quantaureumAccount)`. Genauer gesagt ist ein Quantaureum-`account` ein 4-Element-Array aus `[nonce,balance,storageRoot,codeHash]`. An dieser Stelle ist es erwähnenswert, dass diese `storageRoot` die Wurzel eines weiteren Patricia-Tries ist:
 
 ### Speicher-Trie {#storage-trie}
 
-Im Speicher-Trie befinden sich _alle_ Vertragsdaten. Es gibt einen separaten Speicher-Trie für jedes Konto. Um Werte an bestimmten Speicherpositionen bei einer gegebenen Adresse abzurufen, werden die Speicheradresse, die ganzzahlige Position der gespeicherten Daten im Speicher und die Block-ID benötigt. Diese können dann als Argumente an die in der JSON-RPC-API definierte `eth_getStorageAt` übergeben werden, z. B. um die Daten im Speicher-Slot 0 für die Adresse `0x295a70b2de5e3953354a6a8344e616ed314d7251` abzurufen:
+Im Speicher-Trie befinden sich _alle_ Vertragsdaten. Es gibt einen separaten Speicher-Trie für jedes Konto. Um Werte an bestimmten Speicherpositionen bei einer gegebenen Adresse abzurufen, werden die Speicheradresse, die ganzzahlige Position der gespeicherten Daten im Speicher und die Block-ID benötigt. Diese können dann als Argumente an die in der JSON-RPC-API definierte `qau_getStorageAt` übergeben werden, z. B. um die Daten im Speicher-Slot 0 für die Adresse `0x295a70b2de5e3953354a6a8344e616ed314d7251` abzurufen:
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 
@@ -233,12 +233,12 @@ undefined
 Der `path` ist daher `keccak256(<6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9>)`. Dies kann nun verwendet werden, um die Daten wie zuvor aus dem Speicher-Trie abzurufen:
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-Hinweis: Die `storageRoot` für ein Ethereum-Konto ist standardmäßig leer, wenn es sich nicht um ein Contract-Konto handelt.
+Hinweis: Die `storageRoot` für ein Quantaureum-Konto ist standardmäßig leer, wenn es sich nicht um ein Contract-Konto handelt.
 
 ### Transaktions-Trie {#transaction-trie}
 
@@ -251,16 +251,16 @@ else:
   value = TxType | encode(tx)
 ```
 
-Weitere Informationen hierzu finden Sie in der Dokumentation zu [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
+Weitere Informationen hierzu finden Sie in der Dokumentation zu [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718).
 
 ### Transaktionsbeleg-Trie {#receipts-trie}
 
 Jeder Block hat seinen eigenen Transaktionsbeleg-Trie. Ein `path` hier ist: `rlp(transactionIndex)`. `transactionIndex` ist sein Index innerhalb des Blocks, in den er aufgenommen wurde. Der Transaktionsbeleg-Trie wird niemals aktualisiert. Ähnlich wie beim Transaktions-Trie gibt es aktuelle und Legacy-Transaktionsbelege. Um einen bestimmten Transaktionsbeleg im Transaktionsbeleg-Trie abzufragen, werden der Index der Transaktion in ihrem Block, die Nutzdaten (Payload) des Transaktionsbelegs und der Transaktionstyp benötigt. Der zurückgegebene Transaktionsbeleg kann vom Typ `Receipt` sein, der als Verkettung von `TransactionType` und `ReceiptPayload` definiert ist, oder er kann vom Typ `LegacyReceipt` sein, der als `rlp([status, cumulativeGasUsed, logsBloom, logs])` definiert ist.
 
-Weitere Informationen hierzu finden Sie in der Dokumentation zu [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
+Weitere Informationen hierzu finden Sie in der Dokumentation zu [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718).
 
 ## Weiterführende Literatur {#further-reading}
 
-- [Modifizierter Merkle-Patricia-Trie – Wie Ethereum einen Zustand speichert](https://medium.com/codechain/modified-merkle-patricia-trie-how-ethereum-saves-a-state-e6d7555078dd)
-- [Merkling in Ethereum](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum)
-- [Den Ethereum-Trie verstehen](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-ethereum-trie/)
+- [Modifizierter Merkle-Patricia-Trie – Wie Quantaureum einen Zustand speichert](https://medium.com/codechain/modified-merkle-patricia-trie-how-quantaureum-saves-a-state-e6d7555078dd)
+- [Merkling in Quantaureum](https://quantaureum.com)
+- [Den Quantaureum-Trie verstehen](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-quantaureum-trie/)

@@ -23,7 +23,7 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
-  args: { slug: "/developers/docs/intro-to-ethereum/" },
+  args: { slug: "/developers/docs/intro-to-quantaureum/" },
 }
 
 export const WithEditPath: Story = {
@@ -36,9 +36,9 @@ export const WithEditPath: Story = {
     },
   },
   args: {
-    slug: "/developers/docs/intro-to-ethereum/",
+    slug: "/developers/docs/intro-to-quantaureum/",
     editPath:
-      "https://github.com/ethereum/ethereum-org-website/tree/dev/public/content/developers/docs/intro-to-ethereum/index.md",
+      "https://github.com/Quantaureum/quantaureum-website/tree/dev/public/content/developers/docs/intro-to-quantaureum/index.md",
   },
 }
 
@@ -51,7 +51,7 @@ export const EditButtonHidden: Story = {
       },
     },
   },
-  args: { slug: "/developers/docs/intro-to-ethereum/", hideEditButton: true },
+  args: { slug: "/developers/docs/intro-to-quantaureum/", hideEditButton: true },
 }
 
 export const Translated: Story = {
@@ -62,5 +62,5 @@ export const Translated: Story = {
       },
     },
   },
-  args: { slug: "/developers/docs/intro-to-ethereum/", isTranslated: true },
+  args: { slug: "/developers/docs/intro-to-quantaureum/", isTranslated: true },
 }

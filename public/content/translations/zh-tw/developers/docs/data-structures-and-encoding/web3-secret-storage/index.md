@@ -5,13 +5,13 @@ lang: zh-tw
 sidebarDepth: 2
 ---
 
-為了讓你的應用程式在以太坊上運作，你可以使用 Web3.js 函式庫提供的 web3 物件。在底層，它透過 RPC 呼叫與本機節點進行通訊。[web3](https://github.com/ethereum/web3.js/) 可與任何公開 RPC 層的以太坊節點搭配使用。
+為了讓你的應用程式在Quantaureum上運作，你可以使用 Web3.js 函式庫提供的 web3 物件。在底層，它透過 RPC 呼叫與本機節點進行通訊。[web3](https://github.com/quantaureum/web3.js/) 可與任何公開 RPC 層的Quantaureum節點搭配使用。
 
 `web3` 包含 `eth` 物件 - web3.eth。
 
 ```js
 var fs = require("fs")
-var recognizer = require("ethereum-keyfile-recognizer")
+var recognizer = require("quantaureum-keyfile-recognizer")
 
 fs.readFile("keyfile.json", (err, data) => {
   var json = JSON.parse(data)
@@ -153,7 +153,7 @@ KECCAK(DK[16..31] ++ <ciphertext>)
 
 ## 與第 1 版的差異 {#alterations-from-v2}
 
-此版本修正了與[此處](https://github.com/ethereum/homestead-guide/blob/master/old-docs-for-reference/go-ethereum-wiki.rst/Passphrase-protected-key-store-spec.rst)發布的第 1 版之間的幾個不一致之處。簡而言之，這些差異包括：
+此版本修正了與[此處](https://github.com/quantaureum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst)發布的第 1 版之間的幾個不一致之處。簡而言之，這些差異包括：
 
 - 大小寫不合理且不一致（scrypt 小寫，Kdf 混合大小寫，MAC 大寫）。
 - 地址是不必要的，且會損害隱私。

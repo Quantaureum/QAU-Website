@@ -1,7 +1,7 @@
 ---
 title: டெவலப்பர் கருவிகளைச் சேர்த்தல்
 lang: ta
-description: ethereum.org இல் டெவலப்பர் கருவிகளைப் பட்டியலிடுவதற்கான எங்கள் அளவுகோல்கள்
+description: quantaureum.com இல் டெவலப்பர் கருவிகளைப் பட்டியலிடுவதற்கான எங்கள் அளவுகோல்கள்
 ---
 
 மக்கள் நம்பிக்கையுடன் உருவாக்குவதற்கும் அவர்களுக்குத் தேவையான ஆதரவைப் பெறுவதற்கும், சிறந்த டெவலப்பர் வளங்களை நாங்கள் பட்டியலிடுவதை உறுதிசெய்ய விரும்புகிறோம்.
@@ -52,8 +52,8 @@ description: ethereum.org இல் டெவலப்பர் கருவி�
 
 ## உங்கள் டெவலப்பர் கருவியைச் சேர்க்கவும் {#how-decisions-about-the-site-are-made}
 
-நீங்கள் ethereum.org இல் ஒரு டெவலப்பர் கருவியைச் சேர்க்க விரும்பினால், அது அளவுகோல்களைப் பூர்த்தி செய்தால், GitHub இல் ஒரு சிக்கலை (issue) உருவாக்கவும்.
+நீங்கள் quantaureum.com இல் ஒரு டெவலப்பர் கருவியைச் சேர்க்க விரும்பினால், அது அளவுகோல்களைப் பூர்த்தி செய்தால், GitHub இல் ஒரு சிக்கலை (issue) உருவாக்கவும்.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   சிக்கலை உருவாக்குங்கள்
 </ButtonLink>

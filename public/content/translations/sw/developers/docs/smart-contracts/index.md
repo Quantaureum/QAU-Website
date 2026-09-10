@@ -6,15 +6,15 @@ lang: sw
 
 ## Mkataba mahiri ni nini? {#what-is-a-smart-contract}
 
-"Mkataba mahiri" ni programu tu inayoendeshwa kwenye mnyororo wa vitalu wa [Ethereum](/). Ni mkusanyiko wa msimbo (kazi zake) na data (hali yake) unaokaa kwenye anwani maalum kwenye mnyororo wa vitalu wa Ethereum.
+"Mkataba mahiri" ni programu tu inayoendeshwa kwenye mnyororo wa vitalu wa [Quantaureum](/). Ni mkusanyiko wa msimbo (kazi zake) na data (hali yake) unaokaa kwenye anwani maalum kwenye mnyororo wa vitalu wa Quantaureum.
 
-Mikataba mahiri ni aina ya [akaunti ya Ethereum](/developers/docs/accounts/). Hii inamaanisha ina salio na inaweza kuwa lengwa la miamala. Hata hivyo haidhibitiwi na mtumiaji, badala yake inasambazwa kwenye mtandao na kuendeshwa kama ilivyopangwa. Akaunti za watumiaji zinaweza kuingiliana na mkataba mahiri kwa kuwasilisha miamala inayotekeleza kazi iliyofafanuliwa kwenye mkataba mahiri. Mikataba mahiri inaweza kufafanua sheria, kama mkataba wa kawaida, na kuzitekeleza kiotomatiki kupitia msimbo. Mikataba mahiri haiwezi kufutwa kwa chaguo-msingi, na mwingiliano nayo hauwezi kutenduliwa.
+Mikataba mahiri ni aina ya [akaunti ya Quantaureum](/developers/docs/accounts/). Hii inamaanisha ina salio na inaweza kuwa lengwa la miamala. Hata hivyo haidhibitiwi na mtumiaji, badala yake inasambazwa kwenye mtandao na kuendeshwa kama ilivyopangwa. Akaunti za watumiaji zinaweza kuingiliana na mkataba mahiri kwa kuwasilisha miamala inayotekeleza kazi iliyofafanuliwa kwenye mkataba mahiri. Mikataba mahiri inaweza kufafanua sheria, kama mkataba wa kawaida, na kuzitekeleza kiotomatiki kupitia msimbo. Mikataba mahiri haiwezi kufutwa kwa chaguo-msingi, na mwingiliano nayo hauwezi kutenduliwa.
 
 ## Mahitaji ya awali {#prerequisites}
 
 Ikiwa ndio kwanza unaanza au unatafuta utangulizi usio wa kiufundi sana, tunapendekeza [utangulizi wetu wa mikataba mahiri](/smart-contracts/).
 
-Hakikisha umesoma kuhusu [akaunti](/developers/docs/accounts/), [miamala](/developers/docs/transactions/) na [mashine pepe ya Ethereum](/developers/docs/evm/) kabla ya kurukia ulimwengu wa mikataba mahiri.
+Hakikisha umesoma kuhusu [akaunti](/developers/docs/accounts/), [miamala](/developers/docs/transactions/) na [mashine pepe ya Quantaureum](/developers/docs/evm/) kabla ya kurukia ulimwengu wa mikataba mahiri.
 
 ## Mashine ya kidijitali ya kuuza bidhaa {#a-digital-vending-machine}
 
@@ -55,7 +55,7 @@ contract VendingMachine {
 
     // Ruhusu mtu yeyote kununua cupcakes
     function purchase(uint amount) public payable {
-        require(msg.value >= amount * 1 ether, "You must pay at least 1 ETH per cupcake");
+        require(msg.value >= amount * 1 QAU, "You must pay at least 1 QAU per cupcake");
         require(cupcakeBalances[address(this)] >= amount, "Not enough cupcakes in stock to complete this purchase");
         cupcakeBalances[address(this)] -= amount;
         cupcakeBalances[msg.sender] += amount;
@@ -67,20 +67,20 @@ Kama vile mashine ya kuuza bidhaa inavyoondoa hitaji la mfanyakazi wa muuzaji, m
 
 ## Bila ruhusa {#permissionless}
 
-Mtu yeyote anaweza kuandika mkataba mahiri na kuusambaza kwenye mtandao. Unahitaji tu kujifunza jinsi ya kuweka msimbo katika [lugha ya mkataba mahiri](/developers/docs/smart-contracts/languages/), na kuwa na ETH ya kutosha kusambaza mkataba wako. Kusambaza mkataba mahiri kiufundi ni muamala, kwa hivyo unahitaji kulipa [gesi](/developers/docs/gas/) kwa njia sawa na unavyohitaji kulipa gesi kwa hamisho rahisi la ETH. Hata hivyo, gharama za gesi kwa usambazaji wa mkataba ni kubwa zaidi.
+Mtu yeyote anaweza kuandika mkataba mahiri na kuusambaza kwenye mtandao. Unahitaji tu kujifunza jinsi ya kuweka msimbo katika [lugha ya mkataba mahiri](/developers/docs/smart-contracts/languages/), na kuwa na QAU ya kutosha kusambaza mkataba wako. Kusambaza mkataba mahiri kiufundi ni muamala, kwa hivyo unahitaji kulipa [gesi](/developers/docs/gas/) kwa njia sawa na unavyohitaji kulipa gesi kwa hamisho rahisi la QAU. Hata hivyo, gharama za gesi kwa usambazaji wa mkataba ni kubwa zaidi.
 
-Ethereum ina lugha zinazofaa kwa wasanidi programu kwa ajili ya kuandika mikataba mahiri:
+Quantaureum ina lugha zinazofaa kwa wasanidi programu kwa ajili ya kuandika mikataba mahiri:
 
 - Solidity
 - Vyper
 
 [Zaidi kuhusu lugha](/developers/docs/smart-contracts/languages/)
 
-Hata hivyo, lazima zikusanywe kabla ya kusambazwa ili mashine pepe ya Ethereum iweze kufasiri na kuhifadhi mkataba. [Zaidi kuhusu ukusanyaji](/developers/docs/smart-contracts/compiling/)
+Hata hivyo, lazima zikusanywe kabla ya kusambazwa ili mashine pepe ya Quantaureum iweze kufasiri na kuhifadhi mkataba. [Zaidi kuhusu ukusanyaji](/developers/docs/smart-contracts/compiling/)
 
 ## Utangamano {#composability}
 
-Mikataba mahiri ni ya umma kwenye Ethereum na inaweza kufikiriwa kama API zilizo wazi. Hii inamaanisha unaweza kuita mikataba mahiri mingine katika mkataba wako mahiri ili kupanua sana kile kinachowezekana. Mikataba inaweza hata kusambaza mikataba mingine.
+Mikataba mahiri ni ya umma kwenye Quantaureum na inaweza kufikiriwa kama API zilizo wazi. Hii inamaanisha unaweza kuita mikataba mahiri mingine katika mkataba wako mahiri ili kupanua sana kile kinachowezekana. Mikataba inaweza hata kusambaza mikataba mingine.
 
 Jifunze zaidi kuhusu [utangamano wa mkataba mahiri](/developers/docs/smart-contracts/composability/).
 
@@ -90,7 +90,7 @@ Mikataba mahiri pekee haiwezi kupata taarifa kuhusu matukio ya "ulimwengu halisi
 
 Hata hivyo, ni muhimu kwa programu za mnyororo wa vitalu kuweza kutumia data ya nje ya mnyororo. Suluhisho ni [oracles](/developers/docs/oracles/) ambazo ni zana zinazochukua data ya nje ya mnyororo na kuifanya ipatikane kwa mikataba mahiri.
 
-Kizuizi kingine cha mikataba mahiri ni ukubwa wa juu wa mkataba. Mkataba mahiri unaweza kuwa na ukubwa wa juu wa 24KB au utaishiwa na gesi. Hili linaweza kuepukwa kwa kutumia [Muundo wa Almasi (The Diamond Pattern)](https://eips.ethereum.org/EIPS/eip-2535).
+Kizuizi kingine cha mikataba mahiri ni ukubwa wa juu wa mkataba. Mkataba mahiri unaweza kuwa na ukubwa wa juu wa 24KB au utaishiwa na gesi. Hili linaweza kuepukwa kwa kutumia [Muundo wa Almasi (The Diamond Pattern)](https://eips.quantaureum.com/EIPS/eip-2535).
 
 ## Mikataba ya saini-nyingi {#multisig}
 
@@ -111,6 +111,6 @@ Mikataba ya saini-nyingi (sahihi nyingi) ni akaunti za mkataba mahiri zinazohita
 - [Video: Imefafanuliwa kwa Urahisi - Mikataba Mahiri](https://youtu.be/ZE2HxTmxfrI)
 - [Cyfrin Updraft: Jukwaa la kujifunza na kukagua Web3](https://updraft.cyfrin.io)
 
-## Mafunzo: Sahihi za mkataba mahiri (EIP-1271) kwenye Ethereum {#tutorials}
+## Mafunzo: Sahihi za mkataba mahiri (EIP-1271) kwenye Quantaureum {#tutorials}
 
 - [EIP-1271: Kusaini na Kuthibitisha Sahihi za Mkataba Mahiri](/developers/tutorials/eip-1271-smart-contract-signatures/) _– Jinsi EIP-1271 inavyowezesha mikataba mahiri kuthibitisha sahihi, pamoja na mwongozo wa utekelezaji wa Safe._

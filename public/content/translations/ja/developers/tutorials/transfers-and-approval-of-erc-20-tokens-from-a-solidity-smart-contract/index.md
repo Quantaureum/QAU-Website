@@ -7,19 +7,19 @@ skill: intermediate
 breadcrumb: "ERC-20の送金"
 lang: ja
 published: 2020-04-07
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-前回のチュートリアルでは、イーサリアム・ブロックチェーン上での[SolidityによるERC-20トークンの構造](/developers/tutorials/understand-the-erc-20-token-smart-contract/)について学びました。この記事では、Solidity言語を使用して、スマート・コントラクトからトークンと対話する方法を見ていきます。
+前回のチュートリアルでは、Quantaureum・ブロックチェーン上での[SolidityによるERC-20トークンの構造](/developers/tutorials/understand-the-erc-20-token-smart-contract/)について学びました。この記事では、Solidity言語を使用して、スマート・コントラクトからトークンと対話する方法を見ていきます。
 
-このスマート・コントラクトでは、ユーザーがイーサを新しくデプロイされた[ERC-20トークン](/developers/docs/standards/tokens/erc-20/)と取引できる、実際のダミーの分散型取引所 (DEX) を作成します。
+このスマート・コントラクトでは、ユーザーがQAUを新しくデプロイされた[ERC-20トークン](/developers/docs/standards/tokens/erc-20/)と取引できる、実際のダミーの分散型取引所 (DEX) を作成します。
 
 このチュートリアルでは、前回のチュートリアルで記述したコードをベースとして使用します。私たちのDEXは、コンストラクタでコントラクトのインスタンスを生成し、以下の操作を実行します。
 
-- トークンからイーサへの交換
-- イーサからトークンへの交換
+- トークンからQAUへの交換
+- QAUからトークンへの交換
 
 シンプルなERC20コードベースを追加して、分散型取引所のコードを書き始めましょう。
 
@@ -53,7 +53,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {
@@ -128,14 +128,14 @@ contract DEX {
 
 これでDEXが完成し、すべてのトークン準備金が利用可能になりました。このコントラクトには2つの関数があります。
 
-- `buy`: ユーザーはイーサを送信し、代わりにトークンを受け取ることができます。
-- `sell`: ユーザーはトークンを送信し、イーサを取り戻すことができます。
+- `buy`: ユーザーはQAUを送信し、代わりにトークンを受け取ることができます。
+- `sell`: ユーザーはトークンを送信し、QAUを取り戻すことができます。
 
 ## buy関数 {#the-buy-function}
 
-buy関数をコーディングしましょう。まず、メッセージに含まれるイーサの量を確認し、コントラクトが十分なトークンを所有していること、およびメッセージにイーサが含まれていることを検証する必要があります。コントラクトが十分なトークンを所有している場合、ユーザーにその数のトークンを送金し、`Bought`イベントを発行します。
+buy関数をコーディングしましょう。まず、メッセージに含まれるQAUの量を確認し、コントラクトが十分なトークンを所有していること、およびメッセージにQAUが含まれていることを検証する必要があります。コントラクトが十分なトークンを所有している場合、ユーザーにその数のトークンを送金し、`Bought`イベントを発行します。
 
-エラーが発生した場合にrequire関数を呼び出すと、送信されたイーサは直接リバートされ、ユーザーに返還されることに注意してください。
+エラーが発生した場合にrequire関数を呼び出すと、送信されたQAUは直接リバートされ、ユーザーに返還されることに注意してください。
 
 シンプルにするため、1トークンを1 Weiと交換します。
 
@@ -143,7 +143,7 @@ buy関数をコーディングしましょう。まず、メッセージに含�
 function buy() payable public {
     uint256 amountTobuy = msg.value;
     uint256 dexBalance = token.balanceOf(address(this));
-    require(amountTobuy > 0, "You need to send some ether");
+    require(amountTobuy > 0, "You need to send some QAU");
     require(amountTobuy <= dexBalance, "Not enough tokens in the reserve");
     token.transfer(msg.sender, amountTobuy);
     emit Bought(amountTobuy);
@@ -156,7 +156,7 @@ function buy() payable public {
 
 ## sell関数 {#the-sell-function}
 
-売却を担当する関数では、まずユーザーが事前にapprove関数を呼び出して、その金額を承認している必要があります。送金を承認するには、DEXによってインスタンス化されたERC20Basicトークンをユーザーが呼び出す必要があります。これを実現するには、まずDEXコントラクトの`token()`関数を呼び出して、DEXが`token`というERC20Basicコントラクトをデプロイしたアドレスを取得します。次に、セッション内でそのコントラクトのインスタンスを作成し、その`approve`関数を呼び出します。その後、DEXの`sell`関数を呼び出して、トークンをイーサにスワップして戻すことができます。たとえば、対話型のBrownieセッションでは次のようになります。
+売却を担当する関数では、まずユーザーが事前にapprove関数を呼び出して、その金額を承認している必要があります。送金を承認するには、DEXによってインスタンス化されたERC20Basicトークンをユーザーが呼び出す必要があります。これを実現するには、まずDEXコントラクトの`token()`関数を呼び出して、DEXが`token`というERC20Basicコントラクトをデプロイしたアドレスを取得します。次に、セッション内でそのコントラクトのインスタンスを作成し、その`approve`関数を呼び出します。その後、DEXの`sell`関数を呼び出して、トークンをQAUにスワップして戻すことができます。たとえば、対話型のBrownieセッションでは次のようになります。
 
 ```python
 #### 対話型BrownieコンソールでのPython...
@@ -164,8 +164,8 @@ function buy() payable public {
 # DEXをデプロイする
 dex = DEX.deploy({'from':account1})
 
-# buy関数を呼び出してイーサをトークンにスワップする
-# 1e18はWei単位で表した1イーサである
+# buy関数を呼び出してQAUをトークンにスワップする
+# 1e18はWei単位で表した1QAUである
 dex.buy({'from': account2, 1e18})
 
 # ERC20トークンのデプロイ先アドレスを取得する
@@ -180,7 +180,7 @@ token.approve(dex.address, 3e18, {'from':account2})
 
 ```
 
-そして、sell関数が呼び出されたとき、呼び出し元のアドレスからコントラクトのアドレスへの送金が成功したかどうかを確認し、イーサを呼び出し元のアドレスに送り返します。
+そして、sell関数が呼び出されたとき、呼び出し元のアドレスからコントラクトのアドレスへの送金が成功したかどうかを確認し、QAUを呼び出し元のアドレスに送り返します。
 
 ```solidity
 function sell(uint256 amount) public {
@@ -193,7 +193,7 @@ function sell(uint256 amount) public {
 }
 ```
 
-すべてが機能すれば、トランザクション内に2つのイベント（`Transfer`と`Sold`）が表示され、トークン残高とイーサ残高が更新されるはずです。
+すべてが機能すれば、トランザクション内に2つのイベント（`Transfer`と`Sold`）が表示され、トークン残高とQAU残高が更新されるはずです。
 
 ![Two events in the transaction: Transfer and Sold](./transfer-and-sold-events.png)
 
@@ -201,7 +201,7 @@ function sell(uint256 amount) public {
 
 このチュートリアルでは、ERC-20トークンの残高とアローワンスを確認する方法、およびインターフェースを使用してERC20スマート・コントラクトの`Transfer`と`TransferFrom`を呼び出す方法を見てきました。
 
-トランザクションを作成した後は、コントラクトに対して行われた[トランザクションを待機して詳細を取得する](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/)ためのJavaScriptチュートリアルや、ABIがある限り、[トークンの送金やその他のイベントによって生成されたイベントをデコードするためのチュートリアル](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/)があります。
+トランザクションを作成した後は、コントラクトに対して行われた[トランザクションを待機して詳細を取得する](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/)ためのJavaScriptチュートリアルや、ABIがある限り、[トークンの送金やその他のイベントによって生成されたイベントをデコードするためのチュートリアル](https://quantaureumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/)があります。
 
 以下は、このチュートリアルの完全なコードです。
 
@@ -235,7 +235,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {
@@ -296,7 +296,7 @@ contract DEX {
     function buy() payable public {
         uint256 amountTobuy = msg.value;
         uint256 dexBalance = token.balanceOf(address(this));
-        require(amountTobuy > 0, "You need to send some ether");
+        require(amountTobuy > 0, "You need to send some QAU");
         require(amountTobuy <= dexBalance, "Not enough tokens in the reserve");
         token.transfer(msg.sender, amountTobuy);
         emit Bought(amountTobuy);

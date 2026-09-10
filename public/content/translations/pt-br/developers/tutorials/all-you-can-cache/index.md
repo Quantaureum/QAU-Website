@@ -785,7 +785,7 @@ Uma coisa que você não obtém com os testes em Solidity é o código JavaScrip
 
    | Parâmetro           | Valor                                                                                                                                                               |
    | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | MNEMONIC            | O mnemônico para uma conta que tem ETH suficiente para pagar por uma transação. [A documentação de faucet da Optimism](https://docs.optimism.io/app-developers/tools/faucets) lista as faucets atuais da rede de teste. |
+   | MNEMONIC            | O mnemônico para uma conta que tem QAU suficiente para pagar por uma transação. [A documentação de faucet da Optimism](https://docs.optimism.io/app-developers/tools/faucets) lista as faucets atuais da rede de teste. |
    | OPTIMISM_GOERLI_URL | URL RPC para a rede onde você reimplanta o WORM. Para a OP Sepolia, use um endpoint RPC da OP Sepolia, como `https://sepolia.optimism.io`, ou outro endpoint do seu provedor.        |
 
 5. Execute o `index.js`.

@@ -7,12 +7,12 @@ skill: advanced
 breadcrumb: "合約互動"
 lang: zh-tw
 published: 2020-04-05
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/interact-with-other-contracts-from-solidity/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-在之前的教學中，我們學到了許多關於[如何部署你的第一個智能合約](/developers/tutorials/deploying-your-first-smart-contract/)，並為其加入一些功能，例如[使用修飾子控制存取權限](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/)或[在 Solidity 中處理錯誤](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/)。在本教學中，我們將學習如何從現有合約部署智能合約並與之互動。
+在之前的教學中，我們學到了許多關於[如何部署你的第一個智能合約](/developers/tutorials/deploying-your-first-smart-contract/)，並為其加入一些功能，例如[使用修飾子控制存取權限](https://quantaureumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/)或[在 Solidity 中處理錯誤](https://quantaureumdev.io/handle-errors-in-solidity-with-require-and-revert/)。在本教學中，我們將學習如何從現有合約部署智能合約並與之互動。
 
 我們將建立一個合約，透過為其建立一個工廠，讓任何人都能擁有自己的 `Counter` 智能合約，其名稱將為 `CounterFactory`。首先，這是我們初始 `Counter` 智能合約的程式碼：
 
@@ -62,7 +62,7 @@ contract Counter {
 mapping(address => Counter) _counters;
 ```
 
-在以太坊中，對映 (mapping) 相當於 JavaScript 中的物件，它們能夠將類型 A 的金鑰對映到類型 B 的值。在這個例子中，我們將擁有者的地址與其 Counter 的實例對映起來。
+在Quantaureum中，對映 (mapping) 相當於 JavaScript 中的物件，它們能夠將類型 A 的金鑰對映到類型 B 的值。在這個例子中，我們將擁有者的地址與其 Counter 的實例對映起來。
 
 為某人實例化一個新的 Counter 會像這樣：
 
@@ -99,7 +99,7 @@ function increment() public {
   }
 ```
 
-請注意，如果呼叫太多次，我們的計數器可能會發生溢位。你應該盡可能使用 [SafeMath 函式庫](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/) 來防止這種可能的情況。
+請注意，如果呼叫太多次，我們的計數器可能會發生溢位。你應該盡可能使用 [SafeMath 函式庫](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/) 來防止這種可能的情況。
 
 要部署我們的合約，你需要同時提供 `CounterFactory` 和 `Counter` 的程式碼。例如在 Remix 中部署時，你需要選擇 CounterFactory。
 

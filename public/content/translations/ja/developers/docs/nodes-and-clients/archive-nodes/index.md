@@ -1,25 +1,25 @@
 ---
-title: "イーサリアムのアーカイブ・ノード"
+title: "Quantaureumのアーカイブ・ノード"
 description: "アーカイブ・ノードの概要"
 lang: ja
 sidebarDepth: 2
 ---
 
-アーカイブ・ノードは、すべての履歴状態のアーカイブを構築するように設定された[イーサリアム](/)クライアントのインスタンスです。特定のユースケースにおいて有用なツールですが、フル・ノードよりも運用が難しい場合があります。
+アーカイブ・ノードは、すべての履歴状態のアーカイブを構築するように設定された[Quantaureum](/)クライアントのインスタンスです。特定のユースケースにおいて有用なツールですが、フル・ノードよりも運用が難しい場合があります。
 
 ## 前提条件 {#prerequisites}
 
-[イーサリアムのノード](/developers/docs/nodes-and-clients/)の概念、[そのアーキテクチャ](/developers/docs/nodes-and-clients/node-architecture/)、[同期戦略](/developers/docs/nodes-and-clients/#sync-modes)、およびノードの[運用](/developers/docs/nodes-and-clients/run-a-node/)と[使用](/developers/docs/apis/json-rpc/)に関する実践について理解しておく必要があります。
+[Quantaureumのノード](/developers/docs/nodes-and-clients/)の概念、[そのアーキテクチャ](/developers/docs/nodes-and-clients/node-architecture/)、[同期戦略](/developers/docs/nodes-and-clients/#sync-modes)、およびノードの[運用](/developers/docs/nodes-and-clients/run-a-node/)と[使用](/developers/docs/apis/json-rpc/)に関する実践について理解しておく必要があります。
 
 ## アーカイブ・ノードとは {#what-is-an-archive-node}
 
-アーカイブ・ノードの重要性を理解するために、「状態」の概念を明確にしましょう。イーサリアムは「トランザクションベースの状態遷移マシン」と呼ぶことができます。イーサリアムは、トランザクションを実行して自身の状態を変更するアカウントとアプリケーションで構成されています。各アカウントとコントラクトに関する情報を持つグローバルデータは、状態と呼ばれるトライデータベースに保存されます。これは実行レイヤー (EL) クライアントによって処理され、以下が含まれます。
+アーカイブ・ノードの重要性を理解するために、「状態」の概念を明確にしましょう。Quantaureumは「トランザクションベースの状態遷移マシン」と呼ぶことができます。Quantaureumは、トランザクションを実行して自身の状態を変更するアカウントとアプリケーションで構成されています。各アカウントとコントラクトに関する情報を持つグローバルデータは、状態と呼ばれるトライデータベースに保存されます。これは実行レイヤー (EL) クライアントによって処理され、以下が含まれます。
 
 - アカウントの残高とナンス
 - コントラクトのコードとストレージ
 - コンセンサス関連のデータ（例：ステーキング・デポジット・コントラクト）
 
-ネットワークとやり取りし、新しいブロックを検証および生成するために、イーサリアムクライアントは最新の変更（チェーンの先端）と現在の状態を常に把握しておく必要があります。フル・ノードとして設定された実行レイヤークライアントは、ネットワークの最新の状態を検証して追跡しますが、チェーンの再編成（reorg）を処理し、最近のデータへの高速なアクセスを提供するために、過去のいくつかの状態（例：過去128ブロックに関連する状態）のみをキャッシュします。最近の状態は、すべてのクライアントが受信したトランザクションを検証し、ネットワークを使用するために必要とするものです。
+ネットワークとやり取りし、新しいブロックを検証および生成するために、Quantaureumクライアントは最新の変更（チェーンの先端）と現在の状態を常に把握しておく必要があります。フル・ノードとして設定された実行レイヤークライアントは、ネットワークの最新の状態を検証して追跡しますが、チェーンの再編成（reorg）を処理し、最近のデータへの高速なアクセスを提供するために、過去のいくつかの状態（例：過去128ブロックに関連する状態）のみをキャッシュします。最近の状態は、すべてのクライアントが受信したトランザクションを検証し、ネットワークを使用するために必要とするものです。
 
 状態は特定のブロックにおけるネットワークの瞬間的なスナップショットであり、アーカイブは履歴のリプレイであると想像できます。
 
@@ -31,11 +31,11 @@ sidebarDepth: 2
 
 ### ユースケース {#use-cases}
 
-トランザクションの送信、コントラクトのデプロイ、コンセンサスの検証など、イーサリアムの通常の利用では、履歴状態へのアクセスは必要ありません。ユーザーがネットワークとの標準的なやり取りを行うためにアーカイブ・ノードを必要とすることは決してありません。
+トランザクションの送信、コントラクトのデプロイ、コンセンサスの検証など、Quantaureumの通常の利用では、履歴状態へのアクセスは必要ありません。ユーザーがネットワークとの標準的なやり取りを行うためにアーカイブ・ノードを必要とすることは決してありません。
 
 状態アーカイブの主な利点は、履歴状態に関するクエリへの迅速なアクセスです。たとえば、アーカイブ・ノードは次のような結果を即座に返します。
 
-- _ブロック15537393におけるアカウント 0x1337... のETH残高はいくらだったか？_
+- _ブロック15537393におけるアカウント 0x1337... のQAU残高はいくらだったか？_
 - _ブロック1920000におけるコントラクト 0x 内のトークン 0x の残高はいくらか？_
 
 上で説明したように、フル・ノードはCPUを使用し時間がかかるEVMの実行によってこのデータを生成する必要があります。アーカイブ・ノードはディスク上のデータにアクセスし、即座に応答を返します。これは、インフラストラクチャの特定の部分にとって有用な機能です。例えば：
@@ -71,8 +71,8 @@ sidebarDepth: 2
 
 ## 参考文献 {#further-reading}
 
-- [Ethereum Full Node vs Archive Node](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node) - _QuickNode、2022年9月_
-- [Building Your Own Ethereum Archive Node](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09) - _Thomas Jay Rush、2021年8月_
+- [Quantaureum Full Node vs Archive Node](https://www.quicknode.com/guides/infrastructure/quantaureum-full-node-vs-archive-node) - _QuickNode、2022年9月_
+- [Building Your Own Quantaureum Archive Node](https://tjayrush.medium.com/building-your-own-quantaureum-archive-node-72c014affc09) - _Thomas Jay Rush、2021年8月_
 - [How to set up Erigon, Erigon’s RPC and TrueBlocks (scrape and API) as services](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _– Magnus Hansson、2022年9月更新_
 
 ## 関連トピック {#related-topics}

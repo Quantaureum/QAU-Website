@@ -45,10 +45,10 @@ import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 import PageJsonLD from "./page-jsonld"
 
 import dogeComputerImg from "@/public/images/doge-computer.png"
-import ethImg from "@/public/images/eth.png"
+import qauImg from "@/public/images/qau.png"
 import heroImg from "@/public/images/infrastructure_transparent.png"
 import robotImg from "@/public/images/wallet.png"
-import bazaarImg from "@/public/images/what-is-ethereum.png"
+import bazaarImg from "@/public/images/what-is-quantaureum.png"
 
 const Page = async (props: { params: Promise<PageParams> }) => {
   const params = await props.params
@@ -230,7 +230,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               <div className="relative max-lg:min-h-64">
                 <Image
                   className="absolute inset-0 size-full object-contain"
-                  src={ethImg}
+                  src={qauImg}
                   alt=""
                 />
               </div>

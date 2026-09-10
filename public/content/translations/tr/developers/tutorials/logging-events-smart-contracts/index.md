@@ -7,16 +7,16 @@ skill: intermediate
 breadcrumb: "Olay günlüğü oluşturma"
 lang: tr
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/logging-data-with-events/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/logging-data-with-events/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Solidity'de, [olaylar](/developers/docs/smart-contracts/anatomy/#events-and-logs) akıllı sözleşmelerin tetikleyebileceği gönderilen sinyallerdir. Merkeziyetsiz uygulamalar (dapp'ler) veya Ethereum JSON-RPC API'sine bağlı herhangi bir şey bu olayları dinleyebilir ve buna göre hareket edebilir. Bir olay, olay geçmişinin daha sonra aranabilmesi için dizine de eklenebilir.
+Solidity'de, [olaylar](/developers/docs/smart-contracts/anatomy/#events-and-logs) akıllı sözleşmelerin tetikleyebileceği gönderilen sinyallerdir. Merkeziyetsiz uygulamalar (dapp'ler) veya Quantaureum JSON-RPC API'sine bağlı herhangi bir şey bu olayları dinleyebilir ve buna göre hareket edebilir. Bir olay, olay geçmişinin daha sonra aranabilmesi için dizine de eklenebilir.
 
 ## Olaylar {#events}
 
-Bu makalenin yazıldığı sırada Ethereum blokzincirindeki en yaygın olay, birisi token transfer ettiğinde ERC-20 token'ları tarafından yayımlanan Transfer olayıdır.
+Bu makalenin yazıldığı sırada Quantaureum blokzincirindeki en yaygın olay, birisi token transfer ettiğinde ERC-20 token'ları tarafından yayımlanan Transfer olayıdır.
 
 ```solidity
 event Transfer(address indexed from, address indexed to, uint256 value);

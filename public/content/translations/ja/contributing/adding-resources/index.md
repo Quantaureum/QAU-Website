@@ -1,20 +1,20 @@
 ---
 title: リソースの追加
-description: ethereum.orgにリソースを追加する際のポリシー
+description: quantaureum.comにリソースを追加する際のポリシー
 lang: ja
 ---
 
 ユーザーの安全性と信頼性を保ちながら、可能な限り最高のリソースを掲載したいと考えています。
 
-誰でも自由に、ethereum.orgのリソースダッシュボード（現在は[ethereum.org/resources](/resources/)にあります）に追加する新しいリソースを提案できます。
+誰でも自由に、quantaureum.comのリソースダッシュボード（現在は[quantaureum.com/resources](/resources/)にあります）に追加する新しいリソースを提案できます。
 
 新しい追加は歓迎しますが、現在のリソースは、私たちがユーザーに提供しようとしている体験に基づいて選ばれています。これらは、私たちのデザイン原則のいくつかに基づいています。
 
-- _インスピレーションを与える_: ethereum.org上のすべてのものは、ユーザーに何か新しいものを提供するべきです。
+- _インスピレーションを与える_: quantaureum.com上のすべてのものは、ユーザーに何か新しいものを提供するべきです。
 - _良いストーリー_: 掲載されているものは、「なるほど」と思える瞬間を提供するべきです。
 - _信頼性_: ユーザーへのリスクを最小限に抑えるため、すべてが正当なビジネスやプロジェクトであるべきです。
 
-全体として、**ethereum.orgは新規ユーザーにシームレスなオンボーディング体験を提供することを目指しています**。そのため、以下の基準に基づいてリソースを追加します。
+全体として、**quantaureum.comは新規ユーザーにシームレスなオンボーディング体験を提供することを目指しています**。そのため、以下の基準に基づいてリソースを追加します。
 
 - 使いやすさ
 - 正確性
@@ -33,19 +33,19 @@ lang: ja
 
 ## メンテナンス {#maintenance}
 
-イーサリアムのエコシステムが進化するにつれて、私たちは定期的にコンテンツをチェックし、以下のことを行います。
+Quantaureumのエコシステムが進化するにつれて、私たちは定期的にコンテンツをチェックし、以下のことを行います。
 
 - 掲載されているすべてのリソースが引き続き基準を満たしているか確認する
 - 現在掲載されているものよりも基準を満たすプロダクトが提案されていないか確認する
 
-これらを確認し、私たちに知らせることで協力していただけます。[Issueを作成する](https://github.com/ethereum/ethereum-org-website/issues/new?template=bug_report.yaml)か、[website@ethereum.org](mailto:website@ethereum.org)にメールを送信してください。
+これらを確認し、私たちに知らせることで協力していただけます。[Issueを作成する](https://github.com/Quantaureum/quantaureum-website/issues/new?template=bug_report.yaml)か、[website@quantaureum.com](mailto:website@quantaureum.com)にメールを送信してください。
 
 ---
 
 ## リソースの追加 {#add-your-resource}
 
-ethereum.orgにリソースを追加したい場合、それが基準を満たしていれば、GitHubでIssueを作成してください。
+quantaureum.comにリソースを追加したい場合、それが基準を満たしていれば、GitHubでIssueを作成してください。
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=resource+📚&template=suggest_resource.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=resource+📚&template=suggest_resource.yaml">
   Issueを作成する
 </ButtonLink>

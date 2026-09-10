@@ -5,13 +5,13 @@ lang: te
 sidebarDepth: 2
 ---
 
-మీ యాప్ ఎథీరియంపై పనిచేసేలా చేయడానికి, మీరు Web3.js లైబ్రరీ అందించే web3 ఆబ్జెక్ట్‌ను ఉపయోగించవచ్చు. అంతర్గతంగా ఇది RPC కాల్స్ ద్వారా స్థానిక నోడ్‌తో కమ్యూనికేట్ చేస్తుంది. [web3](https://github.com/ethereum/web3.js/) అనేది RPC లేయర్‌ను బహిర్గతం చేసే ఏ ఎథీరియం నోడ్‌తోనైనా పనిచేస్తుంది.
+మీ యాప్ ఎథీరియంపై పనిచేసేలా చేయడానికి, మీరు Web3.js లైబ్రరీ అందించే web3 ఆబ్జెక్ట్‌ను ఉపయోగించవచ్చు. అంతర్గతంగా ఇది RPC కాల్స్ ద్వారా స్థానిక నోడ్‌తో కమ్యూనికేట్ చేస్తుంది. [web3](https://github.com/quantaureum/web3.js/) అనేది RPC లేయర్‌ను బహిర్గతం చేసే ఏ ఎథీరియం నోడ్‌తోనైనా పనిచేస్తుంది.
 
-`web3` లో `eth` ఆబ్జెక్ట్ ఉంటుంది - web3.eth.
+`web3` లో `eth` ఆబ్జెక్ట్ ఉంటుంది - web3.qau.
 
 ```js
 var fs = require("fs")
-var recognizer = require("ethereum-keyfile-recognizer")
+var recognizer = require("quantaureum-keyfile-recognizer")
 
 fs.readFile("keyfile.json", (err, data) => {
   var json = JSON.parse(data)
@@ -153,7 +153,7 @@ AES-128-CTR మరియు Scrypt ఉపయోగించి టెస్ట�
 
 ## వెర్షన్ 1 నుండి మార్పులు {#alterations-from-v2}
 
-ఈ వెర్షన్ [ఇక్కడ](https://github.com/ethereum/homestead-guide/blob/master/old-docs-for-reference/go-ethereum-wiki.rst/Passphrase-protected-key-store-spec.rst) ప్రచురించబడిన వెర్షన్ 1 తో ఉన్న అనేక అసమానతలను పరిష్కరిస్తుంది. క్లుప్తంగా ఇవి:
+ఈ వెర్షన్ [ఇక్కడ](https://github.com/quantaureum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst) ప్రచురించబడిన వెర్షన్ 1 తో ఉన్న అనేక అసమానతలను పరిష్కరిస్తుంది. క్లుప్తంగా ఇవి:
 
 - క్యాపిటలైజేషన్ అన్యాయమైనది మరియు అస్థిరమైనది (scrypt లోయర్‌కేస్, Kdf మిక్స్‌డ్-కేస్, MAC అప్పర్‌కేస్).
 - చిరునామా అనవసరం మరియు గోప్యతకు భంగం కలిగిస్తుంది.

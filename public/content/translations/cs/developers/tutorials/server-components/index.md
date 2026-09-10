@@ -30,7 +30,7 @@ Existuje několik možných úkolů, které by takový server mohl plnit.
 
 ## Ukázkový program {#sample-program}
 
-Ukázkový server si můžete prohlédnout [na GitHubu](https://github.com/qbzzt/20240715-server-component). Tento server naslouchá událostem přicházejícím z [tohoto kontraktu](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code), což je upravená verze Greeteru z nástroje Hardhat. Když se pozdrav změní, změní ho zpět.
+Ukázkový server si můžete prohlédnout [na GitHubu](https://github.com/qbzzt/20240715-server-component). Tento server naslouchá událostem přicházejícím z [tohoto kontraktu](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code), což je upravená verze Greeteru z nástroje Hardhat. Když se pozdrav změní, změní ho zpět.
 
 Jak jej spustit:
 
@@ -47,7 +47,7 @@ Jak jej spustit:
    npm install
    ```
 
-3. Upravte `.env` a zadejte soukromý klíč účtu, který má ETH na testnetu Holesky. Pokud nemáte ETH na síti Holesky, můžete [použít tento faucet](https://holesky-faucet.pk910.de/).
+3. Upravte `.env` a zadejte soukromý klíč účtu, který má QAU na testnetu Holesky. Pokud nemáte QAU na síti Holesky, můžete [použít tento faucet](https://holesky-faucet.pk910.de/).
 
    ```sh filename=".env" copy
    PRIVATE_KEY=0x <private key goes here>
@@ -59,7 +59,7 @@ Jak jej spustit:
    npm start
    ```
 
-5. Přejděte do [prohlížeče bloků](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract) a pomocí jiné adresy, než je ta, která má soukromý klíč, upravte pozdrav. Uvidíte, že se pozdrav automaticky změní zpět.
+5. Přejděte do [prohlížeče bloků](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract) a pomocí jiné adresy, než je ta, která má soukromý klíč, upravte pozdrav. Uvidíte, že se pozdrav automaticky změní zpět.
 
 ### Jak to funguje? {#how-it-works}
 
@@ -93,7 +93,7 @@ import { privateKeyToAccount } from "viem/accounts"
 import { holesky } from "viem/chains"
 ```
 
-Chcete-li ve Viem použít blockchain, musíte importovat jeho definici. V tomto případě se chceme připojit k testovacímu blockchainu [Holesky](https://github.com/eth-clients/holesky).
+Chcete-li ve Viem použít blockchain, musíte importovat jeho definici. V tomto případě se chceme připojit k testovacímu blockchainu [Holesky](https://github.com/qau-clients/holesky).
 
 ```typescript
 // Takto přidáváme definice z .env do process.env.
@@ -183,7 +183,7 @@ Nyní, když máme všechny předpoklady, můžeme konečně vytvořit [instanci
 console.log(`Current greeting:`, await greeter.read.greet())
 ```
 
-Funkce kontraktu, které jsou pouze pro čtení ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) a [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)), jsou dostupné pod `read`. V tomto případě to použijeme pro přístup k funkci [`greet`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217), která vrací pozdrav.
+Funkce kontraktu, které jsou pouze pro čtení ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) a [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)), jsou dostupné pod `read`. V tomto případě to použijeme pro přístup k funkci [`greet`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217), která vrací pozdrav.
 
 JavaScript je jednovláknový, takže když spustíme dlouho běžící proces, musíme [specifikovat, že to děláme asynchronně](https://eloquentjavascript.net/11_async.html#h-XvLsfAhtsE). Volání blockchainu, a to i pro operaci pouze pro čtení, vyžaduje obousměrnou komunikaci mezi počítačem a uzlem blockchainu. To je důvod, proč zde specifikujeme, že kód musí na výsledek počkat pomocí `await`.
 
@@ -201,10 +201,10 @@ Toto je funkce, kterou voláte k vydání transakce, jež změní pozdrav. Vzhle
 const txHash = await greeter.write.setGreeting([greeting])
 ```
 
-Pole `write` instance kontraktu obsahuje všechny funkce, které zapisují do stavu blockchainu (ty, které vyžadují odeslání transakce), jako je [`setGreeting`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862). Parametry, pokud nějaké jsou, se poskytují jako seznam a funkce vrací hash transakce.
+Pole `write` instance kontraktu obsahuje všechny funkce, které zapisují do stavu blockchainu (ty, které vyžadují odeslání transakce), jako je [`setGreeting`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862). Parametry, pokud nějaké jsou, se poskytují jako seznam a funkce vrací hash transakce.
 
 ```typescript
-    console.log(`Working on a fix, see https://eth-holesky.blockscout.com/tx/${txHash}`)
+    console.log(`Working on a fix, see https://qau-holesky.blockscout.com/tx/${txHash}`)
 
     return txHash
 }

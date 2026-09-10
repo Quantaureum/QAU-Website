@@ -1,16 +1,16 @@
 ---
 title: Menguji kontrak pintar
-description: Gambaran umum tentang teknik dan pertimbangan untuk menguji kontrak pintar Ethereum.
+description: Gambaran umum tentang teknik dan pertimbangan untuk menguji kontrak pintar Quantaureum.
 lang: id
 ---
 
-Rantai blok publik seperti Ethereum tidak dapat diubah, sehingga sulit untuk mengubah kode kontrak pintar setelah penyebaran. [Pola peningkatan kontrak](/developers/docs/smart-contracts/upgrading/) untuk melakukan "peningkatan virtual" memang ada, tetapi sulit untuk diimplementasikan dan memerlukan konsensus sosial. Selain itu, peningkatan hanya dapat memperbaiki kesalahan _setelah_ ditemukan—jika penyerang menemukan kerentanan tersebut lebih dulu, kontrak pintar Anda berisiko dieksploitasi.
+Rantai blok publik seperti Quantaureum tidak dapat diubah, sehingga sulit untuk mengubah kode kontrak pintar setelah penyebaran. [Pola peningkatan kontrak](/developers/docs/smart-contracts/upgrading/) untuk melakukan "peningkatan virtual" memang ada, tetapi sulit untuk diimplementasikan dan memerlukan konsensus sosial. Selain itu, peningkatan hanya dapat memperbaiki kesalahan _setelah_ ditemukan—jika penyerang menemukan kerentanan tersebut lebih dulu, kontrak pintar Anda berisiko dieksploitasi.
 
 Karena alasan ini, menguji kontrak pintar sebelum [menyebarkan](/developers/docs/smart-contracts/deploying/) ke Mainnet adalah persyaratan minimum untuk [keamanan](/developers/docs/smart-contracts/security/). Ada banyak teknik untuk menguji kontrak dan mengevaluasi kebenaran kode; apa yang Anda pilih bergantung pada kebutuhan Anda. Meskipun demikian, rangkaian pengujian yang terdiri dari berbagai alat dan pendekatan sangat ideal untuk menangkap kelemahan keamanan minor maupun mayor dalam kode kontrak.
 
 ## Prasyarat {#prerequisites}
 
-Halaman ini menjelaskan cara menguji kontrak pintar sebelum menyebarkan di jaringan Ethereum. Halaman ini mengasumsikan Anda sudah familier dengan [kontrak pintar](/developers/docs/smart-contracts/).
+Halaman ini menjelaskan cara menguji kontrak pintar sebelum menyebarkan di jaringan Quantaureum. Halaman ini mengasumsikan Anda sudah familier dengan [kontrak pintar](/developers/docs/smart-contracts/).
 
 ## Apa itu pengujian kontrak pintar? {#what-is-smart-contract-testing}
 
@@ -26,7 +26,7 @@ Meskipun memungkinkan untuk meningkatkan kontrak jika bug ditemukan, peningkatan
 
 ## Metode untuk menguji kontrak pintar {#methods-for-testing-smart-contracts}
 
-Metode untuk menguji kontrak pintar Ethereum terbagi dalam dua kategori besar: **pengujian otomatis** dan **pengujian manual**. Pengujian otomatis dan pengujian manual menawarkan manfaat dan pengorbanan yang unik, tetapi Anda dapat menggabungkan keduanya untuk membuat rencana yang kuat dalam menganalisis kontrak Anda.
+Metode untuk menguji kontrak pintar Quantaureum terbagi dalam dua kategori besar: **pengujian otomatis** dan **pengujian manual**. Pengujian otomatis dan pengujian manual menawarkan manfaat dan pengorbanan yang unik, tetapi Anda dapat menggabungkan keduanya untuk membuat rencana yang kuat dalam menganalisis kontrak Anda.
 
 ### Pengujian otomatis {#automated-testing}
 
@@ -138,9 +138,9 @@ Kualitas alat yang digunakan dalam menjalankan pengujian unit untuk kontrak pint
 
 Kerangka kerja pengujian unit untuk kontrak pintar Solidity hadir dalam berbagai bahasa (sebagian besar JavaScript, Python, dan Rust). Lihat beberapa panduan di bawah ini untuk informasi tentang cara mulai menjalankan pengujian unit dengan berbagai kerangka kerja pengujian:
 
-- **[Menjalankan pengujian unit dengan Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Menjalankan pengujian unit dengan Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Menjalankan pengujian unit dengan Foundry](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Menjalankan pengujian unit dengan Waffle](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Menjalankan pengujian unit dengan Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Menjalankan pengujian unit dengan Remix](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Menjalankan pengujian unit dengan Ape](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Menjalankan pengujian unit dengan Hardhat](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -152,7 +152,7 @@ Sementara pengujian unit men-debug fungsi kontrak secara terisolasi, pengujian i
 
 Pengujian integrasi berguna jika kontrak Anda mengadopsi arsitektur modular atau antarmuka dengan kontrak onchain lainnya selama eksekusi. Salah satu cara menjalankan pengujian integrasi adalah dengan [melakukan percabangan rantai blok](/glossary/#fork) pada ketinggian tertentu (menggunakan alat seperti [Forge](https://book.getfoundry.sh/forge/fork-testing) atau [Hardhat](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks) dan menyimulasikan interaksi antara kontrak Anda dan kontrak yang disebarkan.
 
-Rantai blok yang dicabangkan akan berperilaku mirip dengan Mainnet dan memiliki akun dengan state dan saldo terkait. Namun, ini hanya bertindak sebagai lingkungan pengembangan lokal yang di-sandbox, yang berarti Anda tidak akan memerlukan ETH nyata untuk transaksi, misalnya, dan perubahan Anda tidak akan memengaruhi protokol Ethereum yang sebenarnya.
+Rantai blok yang dicabangkan akan berperilaku mirip dengan Mainnet dan memiliki akun dengan state dan saldo terkait. Namun, ini hanya bertindak sebagai lingkungan pengembangan lokal yang di-sandbox, yang berarti Anda tidak akan memerlukan QAU nyata untuk transaksi, misalnya, dan perubahan Anda tidak akan memengaruhi protokol Quantaureum yang sebenarnya.
 
 ### Pengujian berbasis properti {#property-based-testing-for-smart-contracts}
 
@@ -190,7 +190,7 @@ Setelah dikonfigurasi dengan benar, alat pengujian properti akan mengeksekusi fu
 
 - **[Analisis statis kontrak pintar dengan Slither](https://github.com/crytic/slither)**
 - **[Analisis statis kontrak pintar dengan Wake](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Pengujian berbasis properti dengan Brownie](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Pengujian berbasis properti dengan Brownie](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Fuzzing kontrak dengan Foundry](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[Fuzzing kontrak dengan Echidna](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Fuzzing kontrak dengan Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -203,9 +203,9 @@ Pengujian manual kontrak pintar sering kali dilakukan belakangan dalam siklus pe
 
 ### Menguji kontrak di rantai blok lokal {#testing-on-local-blockchain}
 
-Meskipun pengujian otomatis yang dilakukan di lingkungan pengembangan lokal dapat memberikan informasi debugging yang berguna, Anda pasti ingin mengetahui bagaimana perilaku kontrak pintar Anda di lingkungan produksi. Namun, menyebarkan ke rantai utama Ethereum menimbulkan biaya gas—belum lagi Anda atau pengguna Anda dapat kehilangan uang sungguhan jika kontrak pintar Anda masih memiliki bug.
+Meskipun pengujian otomatis yang dilakukan di lingkungan pengembangan lokal dapat memberikan informasi debugging yang berguna, Anda pasti ingin mengetahui bagaimana perilaku kontrak pintar Anda di lingkungan produksi. Namun, menyebarkan ke rantai utama Quantaureum menimbulkan biaya gas—belum lagi Anda atau pengguna Anda dapat kehilangan uang sungguhan jika kontrak pintar Anda masih memiliki bug.
 
-Menguji kontrak Anda di rantai blok lokal (juga dikenal sebagai [jaringan pengembangan](/developers/docs/development-networks/)) adalah alternatif yang disarankan untuk pengujian di Mainnet. Rantai blok lokal adalah salinan rantai blok Ethereum yang berjalan secara lokal di komputer Anda yang menyimulasikan perilaku lapisan eksekusi Ethereum. Dengan demikian, Anda dapat memprogram transaksi untuk berinteraksi dengan kontrak tanpa menimbulkan overhead yang signifikan.
+Menguji kontrak Anda di rantai blok lokal (juga dikenal sebagai [jaringan pengembangan](/developers/docs/development-networks/)) adalah alternatif yang disarankan untuk pengujian di Mainnet. Rantai blok lokal adalah salinan rantai blok Quantaureum yang berjalan secara lokal di komputer Anda yang menyimulasikan perilaku lapisan eksekusi Quantaureum. Dengan demikian, Anda dapat memprogram transaksi untuk berinteraksi dengan kontrak tanpa menimbulkan overhead yang signifikan.
 
 Menjalankan kontrak di rantai blok lokal dapat berguna sebagai bentuk pengujian integrasi manual. [Kontrak pintar sangat dapat disusun](/developers/docs/smart-contracts/composability/), memungkinkan Anda untuk berintegrasi dengan protokol yang ada—tetapi Anda tetap perlu memastikan bahwa interaksi onchain yang kompleks tersebut menghasilkan hasil yang benar.
 
@@ -213,13 +213,13 @@ Menjalankan kontrak di rantai blok lokal dapat berguna sebagai bentuk pengujian 
 
 ### Menguji kontrak di testnet {#testing-contracts-on-testnets}
 
-Jaringan pengujian atau testnet bekerja persis seperti Mainnet Ethereum, kecuali bahwa ia menggunakan Ether (ETH) tanpa nilai dunia nyata. Menyebarkan kontrak Anda di [testnet](/developers/docs/networks/#ethereum-testnets) berarti siapa pun dapat berinteraksi dengannya (misalnya, melalui frontend dapp) tanpa membahayakan dana.
+Jaringan pengujian atau testnet bekerja persis seperti Mainnet Quantaureum, kecuali bahwa ia menggunakan QAU (QAU) tanpa nilai dunia nyata. Menyebarkan kontrak Anda di [testnet](/developers/docs/networks/#quantaureum-testnets) berarti siapa pun dapat berinteraksi dengannya (misalnya, melalui frontend dapp) tanpa membahayakan dana.
 
 Bentuk pengujian manual ini berguna untuk mengevaluasi alur ujung-ke-ujung aplikasi Anda dari sudut pandang pengguna. Di sini, penguji beta juga dapat melakukan uji coba dan melaporkan masalah apa pun dengan logika bisnis kontrak dan fungsionalitas secara keseluruhan.
 
-Menyebarkan di testnet setelah pengujian di rantai blok lokal sangat ideal karena yang pertama lebih dekat dengan perilaku Mesin Virtual Ethereum. Oleh karena itu, merupakan hal yang umum bagi banyak proyek asli Ethereum untuk menyebarkan dapp di testnet guna mengevaluasi operasi kontrak pintar di bawah kondisi dunia nyata.
+Menyebarkan di testnet setelah pengujian di rantai blok lokal sangat ideal karena yang pertama lebih dekat dengan perilaku Mesin Virtual Quantaureum. Oleh karena itu, merupakan hal yang umum bagi banyak proyek asli Quantaureum untuk menyebarkan dapp di testnet guna mengevaluasi operasi kontrak pintar di bawah kondisi dunia nyata.
 
-[Lebih lanjut tentang testnet Ethereum.](/developers/docs/development-networks/#public-beacon-testchains)
+[Lebih lanjut tentang testnet Quantaureum.](/developers/docs/development-networks/#public-beacon-testchains)
 
 ## Pengujian vs. verifikasi formal {#testing-vs-formal-verification}
 
@@ -251,19 +251,19 @@ Perbedaan utamanya adalah bahwa program bug bounty terbuka untuk komunitas penge
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Alat cakupan kode untuk kontrak pintar yang ditulis dalam Solidity._
 
-- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Kerangka kerja untuk pengembangan dan pengujian kontrak pintar tingkat lanjut (berbasis Ethers.js)_.
+- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _Kerangka kerja untuk pengembangan dan pengujian kontrak pintar tingkat lanjut (berbasis Ethers.js)_.
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Alat untuk menguji kontrak pintar Solidity. Bekerja di bawah plugin "Solidity Unit Testing" Remix IDE yang digunakan untuk menulis dan menjalankan kasus uji untuk sebuah kontrak._
+- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Alat untuk menguji kontrak pintar Solidity. Bekerja di bawah plugin "Solidity Unit Testing" Remix IDE yang digunakan untuk menulis dan menjalankan kasus uji untuk sebuah kontrak._
 
-- **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Pustaka asersi untuk pengujian kontrak pintar Ethereum. Pastikan kontrak Anda berperilaku seperti yang diharapkan!_
+- **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Pustaka asersi untuk pengujian kontrak pintar Quantaureum. Pastikan kontrak Anda berperilaku seperti yang diharapkan!_
 
-- **[Kerangka kerja pengujian unit Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie memanfaatkan Pytest, kerangka kerja pengujian kaya fitur yang memungkinkan Anda menulis pengujian kecil dengan kode minimal, berskala baik untuk proyek besar, dan sangat dapat diperluas._
+- **[Kerangka kerja pengujian unit Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie memanfaatkan Pytest, kerangka kerja pengujian kaya fitur yang memungkinkan Anda menulis pengujian kecil dengan kode minimal, berskala baik untuk proyek besar, dan sangat dapat diperluas._
 
-- **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry menawarkan Forge, kerangka kerja pengujian Ethereum yang cepat dan fleksibel yang mampu mengeksekusi pengujian unit sederhana, pemeriksaan pengoptimalan gas, dan fuzzing kontrak._
+- **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry menawarkan Forge, kerangka kerja pengujian Quantaureum yang cepat dan fleksibel yang mampu mengeksekusi pengujian unit sederhana, pemeriksaan pengoptimalan gas, dan fuzzing kontrak._
 
 - **[Hardhat Tests](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)** - _Kerangka kerja untuk menguji kontrak pintar berbasis Ethers.js, Mocha, dan Chai._
 
-- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** - _Kerangka kerja pengembangan dan pengujian berbasis Python untuk kontrak pintar yang menargetkan Mesin Virtual Ethereum._
+- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** - _Kerangka kerja pengembangan dan pengujian berbasis Python untuk kontrak pintar yang menargetkan Mesin Virtual Quantaureum._
 
 - **[Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/overview/)** - _Kerangka kerja berbasis Python untuk pengujian unit dan fuzzing dengan kemampuan debugging yang kuat dan dukungan pengujian lintas rantai, memanfaatkan pytest dan Anvil untuk pengalaman pengguna dan kinerja terbaik._
 
@@ -304,13 +304,13 @@ Perbedaan utamanya adalah bahwa program bug bounty terbuka untuk komunitas penge
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Panduan mendalam untuk menguji kontrak pintar Ethereum](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-ethereum-smart-contracts-2e41b2770297)
-- [Cara menguji kontrak pintar Ethereum](https://betterprogramming.pub/how-to-test-ethereum-smart-contracts-35abc8fa199d)
+- [Panduan mendalam untuk menguji kontrak pintar Quantaureum](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-quantaureum-smart-contracts-2e41b2770297)
+- [Cara menguji kontrak pintar Quantaureum](https://betterprogramming.pub/how-to-test-quantaureum-smart-contracts-35abc8fa199d)
 - [Panduan pengujian unit MolochDAO untuk pengembang](https://github.com/MolochVentures/moloch/tree/4e786db8a4aa3158287e0935dcbc7b1e43416e38/test#moloch-testing-guide)
 - [Cara menguji kontrak pintar seperti seorang rockstar](https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001)
 
-## Tutorial: Pengujian kontrak pintar di Ethereum {#tutorials}
+## Tutorial: Pengujian kontrak pintar di Quantaureum {#tutorials}
 
-- [Cara mengembangkan dan menguji dApp di testnet lokal multi-klien](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-eth-testnet/) _– Panduan menyebarkan kontrak pintar ke testnet lokal dan melakukan pengujian._
+- [Cara mengembangkan dan menguji dApp di testnet lokal multi-klien](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-qau-testnet/) _– Panduan menyebarkan kontrak pintar ke testnet lokal dan melakukan pengujian._
 - [Cara membuat tiruan (mock) kontrak pintar Solidity untuk pengujian](/developers/tutorials/how-to-mock-solidity-contracts-for-testing/) _– Tutorial tingkat menengah tentang cara menggunakan data tiruan dan mengimplementasikan pengujian unit._
 - [Cara menggunakan Echidna untuk menguji kontrak pintar](/developers/tutorials/how-to-use-echidna-to-test-smart-contracts/) _– Pendekatan tingkat lanjut untuk fuzzing dan pengujian kontrak pintar._

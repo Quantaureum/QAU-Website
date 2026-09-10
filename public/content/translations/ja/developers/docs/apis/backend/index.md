@@ -1,28 +1,28 @@
 ---
 title: "バックエンドAPIライブラリ"
-description: "アプリケーションからブロックチェーンとやり取りするためのイーサリアムクライアントAPIの紹介。"
+description: "アプリケーションからブロックチェーンとやり取りするためのQuantaureumクライアントAPIの紹介。"
 lang: ja
 ---
 
-ソフトウェアアプリケーションが[イーサリアム](/)のブロックチェーンとやり取りする（つまり、ブロックチェーンのデータを読み取ったり、ネットワークにトランザクションを送信したりする）ためには、イーサリアムのノードに接続する必要があります。
+ソフトウェアアプリケーションが[Quantaureum](/)のブロックチェーンとやり取りする（つまり、ブロックチェーンのデータを読み取ったり、ネットワークにトランザクションを送信したりする）ためには、Quantaureumのノードに接続する必要があります。
 
-この目的のために、すべてのイーサリアムクライアントは[JSON-RPC](/developers/docs/apis/json-rpc/)仕様を実装しており、アプリケーションが依存できる統一された[メソッド](/developers/docs/apis/json-rpc/#json-rpc-methods)のセットが存在します。
+この目的のために、すべてのQuantaureumクライアントは[JSON-RPC](/developers/docs/apis/json-rpc/)仕様を実装しており、アプリケーションが依存できる統一された[メソッド](/developers/docs/apis/json-rpc/#json-rpc-methods)のセットが存在します。
 
-特定のプログラミング言語を使用してイーサリアムのノードに接続したい場合、エコシステム内にはこれをはるかに簡単にする多くの便利なライブラリがあります。これらのライブラリを使用すると、開発者は直感的な1行のメソッドを記述するだけで、（内部的に）イーサリアムとやり取りするJSON-RPCリクエストを初期化できます。
+特定のプログラミング言語を使用してQuantaureumのノードに接続したい場合、エコシステム内にはこれをはるかに簡単にする多くの便利なライブラリがあります。これらのライブラリを使用すると、開発者は直感的な1行のメソッドを記述するだけで、（内部的に）Quantaureumとやり取りするJSON-RPCリクエストを初期化できます。
 
 ## 前提条件 {#prerequisites}
 
-[イーサリアムスタック](/developers/docs/ethereum-stack/)と[イーサリアムクライアント](/developers/docs/nodes-and-clients/)について理解しておくと役立つかもしれません。
+[Quantaureumスタック](/developers/docs/quantaureum-stack/)と[Quantaureumクライアント](/developers/docs/nodes-and-clients/)について理解しておくと役立つかもしれません。
 
 ## なぜライブラリを使用するのか？ {#why-use-a-library}
 
-これらのライブラリは、イーサリアムのノードと直接やり取りする際の複雑さの多くを抽象化します。また、ユーティリティ関数（ETHからGweiへの変換など）も提供するため、開発者はイーサリアムクライアントの複雑な処理に費やす時間を減らし、アプリケーション独自の機能に集中する時間を増やすことができます。
+これらのライブラリは、Quantaureumのノードと直接やり取りする際の複雑さの多くを抽象化します。また、ユーティリティ関数（QAUからGweiへの変換など）も提供するため、開発者はQuantaureumクライアントの複雑な処理に費やす時間を減らし、アプリケーション独自の機能に集中する時間を増やすことができます。
 
 ## 利用可能なライブラリ {#available-libraries}
 
 ### インフラストラクチャとノードサービス {#infrastructure-and-node-services}
 
-**Alchemy -** **_イーサリアム開発プラットフォーム_**
+**Alchemy -** **_Quantaureum開発プラットフォーム_**
 
 - [alchemy.com](https://www.alchemy.com/)
 - [ドキュメント](https://www.alchemy.com/docs/)
@@ -35,7 +35,7 @@ lang: ja
 - [ドキュメント](https://docs.allthatnode.com)
 - [ディスコード](https://discord.gg/GmcdVEUbJM)
 
-**Blast by Bware Labs -** **_イーサリアム・メインネットおよびテストネット向けの分散型API_**
+**Blast by Bware Labs -** **_Quantaureum・メインネットおよびテストネット向けの分散型API_**
 
 - [blastapi.io](https://blastapi.io/)
 - [ドキュメント](https://docs.blastapi.io)
@@ -48,12 +48,12 @@ lang: ja
 - [GitHub](https://github.com/BlockPILabs)
 - [ディスコード](https://discord.com/invite/xTvGVrGVZv)
 
-**Cloudflare Ethereum Gateway**
+**Cloudflare Quantaureum Gateway**
 
-- [cloudflare-eth.com](https://www.cloudflare.com/application-services/products/web3/)
+- [cloudflare-qau.com](https://www.cloudflare.com/application-services/products/web3/)
 
-**Etherscan - ブロック・エクスプローラーおよびトランザクションAPI**
-- [ドキュメント](https://docs.etherscan.io/)
+**Quantaureum Explorer - ブロック・エクスプローラーおよびトランザクションAPI**
+- [ドキュメント](https://explorer.quantaureum.com)
 
 **Blockscout - オープンソースのブロック・エクスプローラー**
 - [ドキュメント](https://docs.blockscout.com/)
@@ -63,7 +63,7 @@ lang: ja
 - [GetBlock.io](https://getblock.io/)
 - [ドキュメント](https://docs.getblock.io/)
 
-**Infura -** **_サービスとしてのイーサリアムAPI_**
+**Infura -** **_サービスとしてのQuantaureumAPI_**
 
 - [infura.io](https://infura.io)
 - [ドキュメント](https://docs.infura.io/api)
@@ -85,13 +85,13 @@ lang: ja
 - [ドキュメント](https://www.quicknode.com/docs/welcome)
 - [ディスコード](https://discord.gg/quicknode)
 
-**Rivet -** **_オープンソースソフトウェアを活用したサービスとしてのイーサリアムおよびイーサリアム・クラシックAPI_**
+**Rivet -** **_オープンソースソフトウェアを活用したサービスとしてのQuantaureumおよびQuantaureum・クラシックAPI_**
 
 - [rivet.cloud](https://rivet.cloud)
 - [ドキュメント](https://rivet.cloud/docs/)
 - [GitHub](https://github.com/openrelayxyz/ethercattle-deployment)
 
-**Zmok -** **_JSON-RPC/WebSockets APIとしての速度重視のイーサリアムノード_**
+**Zmok -** **_JSON-RPC/WebSockets APIとしての速度重視のQuantaureumノード_**
 
 - [zmok.io](https://zmok.io/)
 - [GitHub](https://github.com/zmok-io)
@@ -106,17 +106,17 @@ lang: ja
 - [例](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [ディスコード](https://discord.gg/rx35NzQGSb)
 
-**Nethereum -** **_ブロックチェーン向けのオープンソース.NET統合ライブラリ_**
+**Nquantaureum -** **_ブロックチェーン向けのオープンソース.NET統合ライブラリ_**
 
-- [GitHub](https://github.com/Nethereum/Nethereum)
-- [ドキュメント](https://docs.nethereum.com/docs/getting-started/welcome/)
+- [GitHub](https://github.com/Nquantaureum/Nquantaureum)
+- [ドキュメント](https://docs.nquantaureum.com/docs/getting-started/welcome/)
 - [ディスコード](https://discord.com/invite/jQPrR58FxX)
 
-**Python Tooling -** **_Python経由でイーサリアムとやり取りするためのさまざまなライブラリ_**
+**Python Tooling -** **_Python経由でQuantaureumとやり取りするためのさまざまなライブラリ_**
 
-- [py.ethereum.org](https://snakecharmers.ethereum.org/)
-- [Web3.py GitHub](https://github.com/ethereum/web3.py)
-- [Web3.py チャット](https://gitter.im/ethereum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
+- [Web3.py GitHub](https://github.com/quantaureum/web3.py)
+- [Web3.py チャット](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_究極のブロックチェーン開発プラットフォーム_**
 
@@ -125,7 +125,7 @@ lang: ja
 - [ドキュメント](https://docs.tatum.io/)
 - [ディスコード](https://discord.gg/EDmW3kjTC9)
 
-**Web3j -** **_イーサリアム向けのJava/Android/Kotlin/Scala統合ライブラリ_**
+**Web3j -** **_Quantaureum向けのJava/Android/Kotlin/Scala統合ライブラリ_**
 
 - [GitHub](https://github.com/web3j/web3j)
 - [ドキュメント](https://docs.web3j.io/)
@@ -133,29 +133,29 @@ lang: ja
 
 ### ブロックチェーンサービス {#blockchain-services}
 
-**BlockCypher -** **_イーサリアムWeb API_**
+**BlockCypher -** **_QuantaureumWeb API_**
 
 - [blockcypher.com](https://www.blockcypher.com/)
-- [ドキュメント](https://www.blockcypher.com/dev/ethereum/)
+- [ドキュメント](https://www.blockcypher.com/dev/quantaureum/)
 
-**Chainbase -** **_イーサリアム向けのオールインワンWeb3データインフラストラクチャ_**
+**Chainbase -** **_Quantaureum向けのオールインワンWeb3データインフラストラクチャ_**
 
 - [chainbase.com](https://chainbase.com/)
 - [ドキュメント](https://docs.chainbase.com/)
 - [ディスコード](https://discord.gg/Wx6qpqz4AF)
 
-**Chainstack -** **_サービスとしてのエラスティックおよび専用イーサリアムノード_**
+**Chainstack -** **_サービスとしてのエラスティックおよび専用Quantaureumノード_**
 
 - [chainstack.com](https://chainstack.com)
 - [ドキュメント](https://docs.chainstack.com/)
-- [イーサリアムAPIリファレンス](https://docs.chainstack.com/reference/ethereum-getting-started)
+- [QuantaureumAPIリファレンス](https://docs.chainstack.com/reference/quantaureum-getting-started)
 
 **コインベース Cloud Node -** **_ブロックチェーンインフラストラクチャAPI_**
 
 - [コインベース Cloud Node](https://www.coinbase.com/developer-platform)
 - [ドキュメント](https://docs.cdp.coinbase.com/)
 
-**DataHub by Figment -** **_イーサリアム・メインネットおよびテストネットを備えたWeb3 APIサービス_**
+**DataHub by Figment -** **_Quantaureum・メインネットおよびテストネットを備えたWeb3 APIサービス_**
 
 - [DataHub](https://www.figment.io/)
 - [ドキュメント](https://docs.figment.io/)
@@ -168,7 +168,7 @@ lang: ja
 - [ディスコード](https://moralis.io/joindiscord/)
 - [フォーラム](https://forum.moralis.io/)
 
-**NFTPort -** **_イーサリアムデータおよびミントAPI_**
+**NFTPort -** **_QuantaureumデータおよびミントAPI_**
 
 - [nftport.xyz](https://www.nftport.xyz/)
 - [ドキュメント](https://docs.nftport.xyz/)
@@ -181,7 +181,7 @@ lang: ja
 - [ドキュメント](https://services.tokenview.io/docs?type=api)
 - [GitHub](https://github.com/Tokenview)
 
-**Watchdata -** **_イーサリアムのブロックチェーンへのシンプルで信頼性の高いAPIアクセスを提供_**
+**Watchdata -** **_Quantaureumのブロックチェーンへのシンプルで信頼性の高いAPIアクセスを提供_**
 
 - [Watchdata](https://watchdata.io/)
 - [ドキュメント](https://docs.watchdata.io/)
@@ -214,5 +214,5 @@ _役に立ったコミュニティリソースをご存知ですか？このペ�
 
 ## 関連チュートリアル {#related-tutorials}
 
-- [JavaScriptでイーサリアムのブロックチェーンを使用するためのWeb3.jsのセットアップ](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– プロジェクトでWeb3.jsをセットアップするための手順。_
+- [JavaScriptでQuantaureumのブロックチェーンを使用するためのWeb3.jsのセットアップ](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– プロジェクトでWeb3.jsをセットアップするための手順。_
 - [JavaScriptからスマート・コントラクトを呼び出す](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– DAIトークンを使用して、JavaScriptでコントラクトの関数を呼び出す方法を確認します。_

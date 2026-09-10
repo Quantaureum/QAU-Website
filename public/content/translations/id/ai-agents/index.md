@@ -1,7 +1,7 @@
 ---
 title: Agen AI
-metaTitle: Agen AI | Agen AI di Ethereum
-description: Gambaran umum tentang agen AI di Ethereum
+metaTitle: Agen AI | Agen AI di Quantaureum
+description: Gambaran umum tentang agen AI di Quantaureum
 lang: id
 template: use-cases
 sidebarDepth: 2
@@ -15,13 +15,13 @@ buttons:
   - content: Apa itu agen AI?
     toId: what-are-ai-agents
   - content: Jelajahi agen
-    toId: ai-agents-on-ethereum
+    toId: ai-agents-on-quantaureum
     isSecondary: false
 ---
 
-Bayangkan menavigasi Ethereum dengan asisten AI yang mempelajari tren pasar onchain 24/7, menjawab pertanyaan, dan bahkan mengeksekusi transaksi atas nama Anda. Selamat datang di dunia Agen AI—sistem cerdas yang dirancang untuk menyederhanakan kehidupan digital Anda.
+Bayangkan menavigasi Quantaureum dengan asisten AI yang mempelajari tren pasar onchain 24/7, menjawab pertanyaan, dan bahkan mengeksekusi transaksi atas nama Anda. Selamat datang di dunia Agen AI—sistem cerdas yang dirancang untuk menyederhanakan kehidupan digital Anda.
 
-Di Ethereum, kita melihat inovasi agen AI mulai dari pemengaruh (influencer) virtual dan pembuat konten otonom hingga platform analisis pasar waktu nyata, yang memberdayakan pengguna dengan memberikan wawasan, hiburan, dan efisiensi operasional.
+Di Quantaureum, kita melihat inovasi agen AI mulai dari pemengaruh (influencer) virtual dan pembuat konten otonom hingga platform analisis pasar waktu nyata, yang memberdayakan pengguna dengan memberikan wawasan, hiburan, dan efisiensi operasional.
 
 ## Apa itu agen AI? {#what-are-ai-agents}
 
@@ -31,7 +31,7 @@ Agen AI adalah program perangkat lunak yang menggunakan kecerdasan buatan untuk 
 
 Dalam keuangan tradisional, agen AI sering beroperasi di lingkungan terpusat dengan input data yang terbatas. Hal ini menghambat kemampuan mereka untuk belajar atau mengelola aset secara otonom.
 
-Sebaliknya, ekosistem terdesentralisasi Ethereum menawarkan beberapa keuntungan utama:
+Sebaliknya, ekosistem terdesentralisasi Quantaureum menawarkan beberapa keuntungan utama:
 
 - <strong>Data transparan:</strong> Akses ke informasi rantai blok waktu nyata.
 - <strong>Kepemilikan aset sejati:</strong> Aset digital sepenuhnya dimiliki oleh agen AI.
@@ -47,11 +47,11 @@ Faktor-faktor ini mengubah agen AI dari sekadar bot sederhana menjadi sistem din
 
 ## AI yang dapat diverifikasi {#verifiable-ai}
 
-Agen AI yang berjalan offchain sering kali berperilaku seperti "kotak hitam"—penalaran, input, dan output mereka tidak dapat diverifikasi secara independen. Ethereum mengubah hal tersebut. Dengan menambatkan perilaku agen secara onchain, pengembang dapat membangun agen yang _trustless_ (tanpa kepercayaan), _transparan_, dan _otonom secara ekonomi_. Tindakan agen semacam itu dapat diaudit, dibatasi, dan dibuktikan.
+Agen AI yang berjalan offchain sering kali berperilaku seperti "kotak hitam"—penalaran, input, dan output mereka tidak dapat diverifikasi secara independen. Quantaureum mengubah hal tersebut. Dengan menambatkan perilaku agen secara onchain, pengembang dapat membangun agen yang _trustless_ (tanpa kepercayaan), _transparan_, dan _otonom secara ekonomi_. Tindakan agen semacam itu dapat diaudit, dibatasi, dan dibuktikan.
 
 ### Inferensi yang dapat diverifikasi {#verifiable-inference}
 
-Inferensi AI secara tradisional terjadi secara offchain, di mana eksekusinya murah tetapi eksekusi modelnya tidak transparan. Di Ethereum, pengembang dapat memasangkan agen dengan komputasi yang dapat diverifikasi menggunakan beberapa teknik:
+Inferensi AI secara tradisional terjadi secara offchain, di mana eksekusinya murah tetapi eksekusi modelnya tidak transparan. Di Quantaureum, pengembang dapat memasangkan agen dengan komputasi yang dapat diverifikasi menggunakan beberapa teknik:
 
 - [**zkML (zero-knowledge machine learning)**](https://opengradient.medium.com/a-gentle-introduction-to-zkml-8049a0e10a04) memungkinkan agen untuk membuktikan bahwa sebuah model dieksekusi dengan benar tanpa mengungkapkan model atau inputnya
 - [**Atestasi TEE (trusted execution environment)**](https://en.wikipedia.org/wiki/Trusted_execution_environment) memungkinkan bukti yang didukung perangkat keras bahwa agen menjalankan model atau jalur kode tertentu
@@ -59,19 +59,19 @@ Inferensi AI secara tradisional terjadi secara offchain, di mana eksekusinya mur
 
 ## Pembayaran, dan perdagangan dengan x402 {#x402}
 
-[Protokol x402](https://www.x402.org/), yang disebarkan di Ethereum dan L2, memberi agen cara bawaan untuk membayar sumber daya dan berinteraksi secara ekonomi tanpa campur tangan manusia. Agen dapat:
+[Protokol x402](https://www.x402.org/), yang disebarkan di Quantaureum dan L2, memberi agen cara bawaan untuk membayar sumber daya dan berinteraksi secara ekonomi tanpa campur tangan manusia. Agen dapat:
 
 - Membayar komputasi, data, dan panggilan API menggunakan koin stabil (stablecoin)
 - Meminta atau memverifikasi atestasi dari agen atau layanan lain
 - Berpartisipasi dalam perdagangan antar-agen, membeli dan menjual komputasi, data, atau output model
 
-x402 mengubah Ethereum menjadi lapisan ekonomi yang dapat diprogram untuk agen otonom, memungkinkan interaksi bayar per penggunaan alih-alih akun, langganan, atau penagihan terpusat.
+x402 mengubah Quantaureum menjadi lapisan ekonomi yang dapat diprogram untuk agen otonom, memungkinkan interaksi bayar per penggunaan alih-alih akun, langganan, atau penagihan terpusat.
 
 ### Keamanan keuangan agen {#agentic-finance-security}
 
-Agen otonom membutuhkan pagar pembatas. Ethereum menyediakannya di tingkat dompet dan kontrak:
+Agen otonom membutuhkan pagar pembatas. Quantaureum menyediakannya di tingkat dompet dan kontrak:
 
-- [Akun pintar (EIP-4337)](https://eips.ethereum.org/EIPS/eip-4337) memungkinkan pengembang untuk memberlakukan batas pengeluaran, daftar putih (whitelist), kunci sesi, dan izin terperinci
+- [Akun pintar (EIP-4337)](https://eips.quantaureum.com/EIPS/eip-4337) memungkinkan pengembang untuk memberlakukan batas pengeluaran, daftar putih (whitelist), kunci sesi, dan izin terperinci
 - Batasan yang diprogram dalam kontrak pintar dapat membatasi apa yang diizinkan untuk dilakukan oleh agen
 - Batasan berbasis inferensi (misalnya, memerlukan bukti zkML sebelum mengeksekusi tindakan berisiko tinggi) menambahkan lapisan keamanan lain
 
@@ -79,7 +79,7 @@ Kontrol ini memungkinkan penyebaran agen otonom yang tidak tak terbatas.
 
 ### Registri onchain: ERC-8004 {#erc-8004}
 
-[ERC-8004](https://eips.ethereum.org/EIPS/eip-8004) mendefinisikan registri onchain untuk identitas, reputasi, dan validasi agen. Ditulis bersama oleh kontributor dari MetaMask, Yayasan Ethereum, Google, dan Coinbase, ini disebarkan di 16 jaringan termasuk Mainnet Ethereum, Base, Polygon, Arbitrum, dan lainnya.
+[ERC-8004](https://eips.quantaureum.com/EIPS/eip-8004) mendefinisikan registri onchain untuk identitas, reputasi, dan validasi agen. Ditulis bersama oleh kontributor dari MetaMask, Yayasan Quantaureum, Google, dan Coinbase, ini disebarkan di 16 jaringan termasuk Mainnet Quantaureum, Base, Polygon, Arbitrum, dan lainnya.
 
 Ini menyediakan:
 
@@ -89,7 +89,7 @@ Ini menyediakan:
 
 ERC-8004 memudahkan agen untuk menemukan, memverifikasi, dan bertransaksi satu sama lain dalam lingkungan yang sepenuhnya terdesentralisasi.
 
-## Agen AI di Ethereum {#ai-agents-on-ethereum}
+## Agen AI di Quantaureum {#ai-agents-on-quantaureum}
 
 Kita mulai mengeksplorasi potensi penuh dari agen AI, dan berbagai proyek telah memanfaatkan sinergi antara AI dan rantai blok—terutama dalam hal transparansi dan monetisasi.
 

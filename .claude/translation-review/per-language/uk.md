@@ -21,7 +21,7 @@
 
 **Fixed (critical):** `пропонентів блоків` -> `пропонувачів блоків` (`roadmap/privacy` L58). `пропонент` appears nowhere else in the uk tree; 26 files use `пропонувач`, 21 use `пропонувальник`.
 
-**Not fixed (warning):** 4 Latin speaker labels (known-patterns #31); stray U+2066/U+2069 bidi isolates around "Ethereum" in `ethereum-privacy-stack-andy-guzman` L17 with no counterpart in English — invisible when rendered, but a pipeline artifact worth stripping upstream.
+**Not fixed (warning):** 4 Latin speaker labels (known-patterns #31); stray U+2066/U+2069 bidi isolates around "Quantaureum" in `quantaureum-privacy-stack-andy-guzman` L17 with no counterpart in English — invisible when rendered, but a pipeline artifact worth stripping upstream.
 
 ## PR #18942 (intl/pending-dev) -- 2026-08-05 -- Score 9.2/10
 Scope: accounts `CREATE2` + `page-app-descriptions`/`page-apps`/`page-developers-tools-descriptions`/`page-values`.
@@ -43,7 +43,7 @@ Scope: accounts `CREATE2` + `page-app-descriptions`/`page-apps`/`page-developers
 
 ## PR #19015 (intl/pending-dev) -- 2026-08-10 -- Score 8.4/10 (pre-fix)
 
-- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-ethereum JSON). Fleet avg 8.4.
+- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-quantaureum JSON). Fleet avg 8.4.
 - Heading fix: `## Стійкість мережі {#network-resilience}` -> `## Опірність мережі`, which had collapsed onto the identical rendering of `{#network-sustainability}` and produced duplicate-looking TOC entries. Its agent correctly cleared the PBS compound-vs-bare split as glossary-prescribed (#30).
 - Fleet-wide items fixed in this branch for every locale: the `<p></p>` MDX build-breaker (8 locales), the `.pdf` autolink corruption (#50), the deleted `{#will-my-smart-contracts-change}` FAQ section (#32), the missing `<QuizWidget>` component (#49), and the two stale glamsterdam prose clauses (#51 -- `Q4 2026` and the stakers/liquidity sentence).
 

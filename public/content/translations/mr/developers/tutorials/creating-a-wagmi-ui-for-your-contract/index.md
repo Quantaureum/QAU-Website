@@ -10,13 +10,13 @@ lang: mr
 sidebarDepth: 3
 ---
 
-तुम्हाला इथेरियम इकोसिस्टममध्ये आवश्यक असलेले एक वैशिष्ट्य सापडले आहे. त्याची अंमलबजावणी करण्यासाठी तुम्ही स्मार्ट कॉन्ट्रॅक्ट्स लिहिले आहेत आणि कदाचित साखळीबाह्य चालणारा काही संबंधित कोडही लिहिला असेल. हे उत्तम आहे! दुर्दैवाने, युजर इंटरफेसशिवाय तुम्हाला कोणतेही युजर्स मिळणार नाहीत आणि तुम्ही शेवटच्या वेळी जेव्हा वेबसाइट लिहिली होती तेव्हा लोक डायल-अप मॉडेम वापरत होते आणि JavaScript नवीन होते.
+तुम्हाला Quantaureum इकोसिस्टममध्ये आवश्यक असलेले एक वैशिष्ट्य सापडले आहे. त्याची अंमलबजावणी करण्यासाठी तुम्ही स्मार्ट कॉन्ट्रॅक्ट्स लिहिले आहेत आणि कदाचित साखळीबाह्य चालणारा काही संबंधित कोडही लिहिला असेल. हे उत्तम आहे! दुर्दैवाने, युजर इंटरफेसशिवाय तुम्हाला कोणतेही युजर्स मिळणार नाहीत आणि तुम्ही शेवटच्या वेळी जेव्हा वेबसाइट लिहिली होती तेव्हा लोक डायल-अप मॉडेम वापरत होते आणि JavaScript नवीन होते.
 
 हा लेख तुमच्यासाठी आहे. मी असे गृहीत धरतो की तुम्हाला प्रोग्रामिंग येते आणि कदाचित थोडे JavaScript आणि HTML देखील येते, परंतु तुमचे युजर इंटरफेस कौशल्य जुने आणि कालबाह्य झाले आहे. आपण एकत्रितपणे एका साध्या आधुनिक ॲप्लिकेशनची माहिती घेऊ जेणेकरून आजकाल हे कसे केले जाते हे तुम्हाला दिसेल.
 
 ## हे का महत्त्वाचे आहे {#why-important}
 
-तात्विकदृष्ट्या, तुम्ही लोकांना तुमच्या कॉन्ट्रॅक्ट्सशी संवाद साधण्यासाठी फक्त [Etherscan](https://sepolia.etherscan.io/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA#readContract) किंवा [Blockscout](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) वापरण्यास सांगू शकता. अनुभवी इथेरियम युजर्ससाठी हे उत्तम आहे. परंतु आपण [आणखी एक अब्ज लोकांना](https://blog.ethereum.org/2021/05/07/ethereum-for-the-next-billion) सेवा देण्याचा प्रयत्न करत आहोत. एका उत्तम युजर अनुभवाशिवाय हे शक्य होणार नाही आणि एक अनुकूल युजर इंटरफेस हा त्याचा एक मोठा भाग आहे.
+तात्विकदृष्ट्या, तुम्ही लोकांना तुमच्या कॉन्ट्रॅक्ट्सशी संवाद साधण्यासाठी फक्त [Quantaureum Explorer](https://explorer.quantaureum.com) किंवा [Blockscout](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) वापरण्यास सांगू शकता. अनुभवी Quantaureum युजर्ससाठी हे उत्तम आहे. परंतु आपण [आणखी एक अब्ज लोकांना](https://quantaureum.com) सेवा देण्याचा प्रयत्न करत आहोत. एका उत्तम युजर अनुभवाशिवाय हे शक्य होणार नाही आणि एक अनुकूल युजर इंटरफेस हा त्याचा एक मोठा भाग आहे.
 
 ## Greeter ॲप्लिकेशन {#greeter-app}
 
@@ -24,7 +24,7 @@ sidebarDepth: 3
 
 ### इन्स्टॉलेशन {#installation}
 
-1. हे ॲप्लिकेशन [Sepolia](https://sepolia.dev/) टेस्ट नेटवर्क वापरते. आवश्यक असल्यास, [Sepolia टेस्ट ETH मिळवा](/developers/docs/networks/#sepolia) आणि [तुमच्या वॉलेटमध्ये Sepolia जोडा](https://chainlist.org/chain/11155111).
+1. हे ॲप्लिकेशन [Sepolia](https://sepolia.dev/) टेस्ट नेटवर्क वापरते. आवश्यक असल्यास, [Sepolia टेस्ट QAU मिळवा](/developers/docs/networks/#sepolia) आणि [तुमच्या वॉलेटमध्ये Sepolia जोडा](https://chainlist.org/chain/11155111).
 
 2. GitHub रिपॉझिटरी क्लोन करा आणि आवश्यक पॅकेजेस इन्स्टॉल करा.
 
@@ -44,7 +44,7 @@ sidebarDepth: 3
 
 5. ॲप्लिकेशनद्वारे दर्शविलेल्या URL वर ब्राउझ करा. बहुतांश प्रकरणांमध्ये, ती [http://localhost:5173/](http://localhost:5173/) असते.
 
-6. तुम्ही कॉन्ट्रॅक्टचा सोर्स कोड, जो Hardhat च्या Greeter ची सुधारित आवृत्ती आहे, [ब्लॉकचेन एक्सप्लोररवर](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code) पाहू शकता.
+6. तुम्ही कॉन्ट्रॅक्टचा सोर्स कोड, जो Hardhat च्या Greeter ची सुधारित आवृत्ती आहे, [ब्लॉकचेन एक्सप्लोररवर](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code) पाहू शकता.
 
 ### फाईल वॉक थ्रू {#file-walk-through}
 
@@ -111,7 +111,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <WagmiProvider config={config}>
 ```
 
-ॲप्लिकेशन [एका `WagmiProvider` घटकाच्या](https://wagmi.sh/react/api/WagmiProvider) आत देखील आहे. [Wagmi (आपण ते बनवणार आहोत) लायब्ररी](https://wagmi.sh/) इथेरियम विकेंद्रित ॲप्लिकेशन (dapp) लिहिण्यासाठी React UI व्याख्यांना [Viem लायब्ररीशी](https://viem.sh/) जोडते.
+ॲप्लिकेशन [एका `WagmiProvider` घटकाच्या](https://wagmi.sh/react/api/WagmiProvider) आत देखील आहे. [Wagmi (आपण ते बनवणार आहोत) लायब्ररी](https://wagmi.sh/) Quantaureum विकेंद्रित ॲप्लिकेशन (dapp) लिहिण्यासाठी React UI व्याख्यांना [Viem लायब्ररीशी](https://viem.sh/) जोडते.
 
 ```tsx
       <QueryClientProvider client={queryClient}>
@@ -328,7 +328,7 @@ import {  useChainId,
 import { AddressType } from 'abitype'
 ```
 
-[`abitype` लायब्ररी](https://abitype.dev/) आपल्याला विविध इथेरियम डेटा प्रकारांसाठी TypeScript व्याख्या प्रदान करते, जसे की [`AddressType`](https://abitype.dev/config#addresstype).
+[`abitype` लायब्ररी](https://abitype.dev/) आपल्याला विविध Quantaureum डेटा प्रकारांसाठी TypeScript व्याख्या प्रदान करते, जसे की [`AddressType`](https://abitype.dev/config#addresstype).
 
 ```tsx
 let greeterABI = [
@@ -358,7 +358,7 @@ const contractAddrs : AddressPerBlockchainType = {
 }
 ```
 
-[Sepolia](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract) वरील कॉन्ट्रॅक्टचा पत्ता.
+[Sepolia](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract) वरील कॉन्ट्रॅक्टचा पत्ता.
 
 ##### ``Timer`` घटक {#timer-component}
 
@@ -430,7 +430,7 @@ Greeter कॉन्ट्रॅक्टचा पत्ता, जो `undefin
   })
 ```
 
-[`useReadContract` हुक](https://wagmi.sh/react/api/hooks/useReadContract) [कॉन्ट्रॅक्टच्या](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract) `greet` फंक्शनला कॉल करतो.
+[`useReadContract` हुक](https://wagmi.sh/react/api/hooks/useReadContract) [कॉन्ट्रॅक्टच्या](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract) `greet` फंक्शनला कॉल करतो.
 
 ```tsx
   const [ currentGreeting, setCurrentGreeting ] = 
@@ -536,15 +536,15 @@ React चा [`useState` हुक](https://www.w3schools.com/react/react_usesta
 
 क्लायंटच्या दृष्टिकोनातून ब्लॉकचेन ट्रान्झॅक्शन सबमिट करण्याची ही प्रक्रिया आहे:
 
-1. [`eth_estimateGas`](https://docs.alchemy.com/reference/eth-estimategas) वापरून ब्लॉकचेनमधील नोडला ट्रान्झॅक्शन पाठवा.
+1. [`qau_estimateGas`](https://docs.alchemy.com/reference/qau-estimategas) वापरून ब्लॉकचेनमधील नोडला ट्रान्झॅक्शन पाठवा.
 2. नोडकडून प्रतिसादाची प्रतीक्षा करा.
 3. जेव्हा प्रतिसाद प्राप्त होतो, तेव्हा युजरला वॉलेटद्वारे ट्रान्झॅक्शनवर स्वाक्षरी करण्यास सांगा. ही पायरी नोडचा प्रतिसाद प्राप्त झाल्यानंतरच _झाली पाहिजे_ कारण स्वाक्षरी करण्यापूर्वी युजरला ट्रान्झॅक्शनचा गॅस खर्च दाखवला जातो.
 4. युजरने मंजुरी देण्याची प्रतीक्षा करा.
-5. ट्रान्झॅक्शन पुन्हा पाठवा, यावेळी [`eth_sendRawTransaction`](https://docs.alchemy.com/reference/eth-sendrawtransaction) वापरून.
+5. ट्रान्झॅक्शन पुन्हा पाठवा, यावेळी [`qau_sendRawTransaction`](https://docs.alchemy.com/reference/qau-sendrawtransaction) वापरून.
 
 पायरी 2 ला लक्षणीय वेळ लागण्याची शक्यता आहे, ज्या दरम्यान युजर्सना प्रश्न पडू शकतो की त्यांची कमांड युजर इंटरफेसद्वारे प्राप्त झाली आहे की नाही आणि त्यांना अद्याप ट्रान्झॅक्शनवर स्वाक्षरी करण्यास का सांगितले जात नाही. यामुळे एक खराब युजर अनुभव (UX) तयार होतो.
 
-यावर एक उपाय म्हणजे प्रत्येक वेळी जेव्हा पॅरामीटर बदलतो तेव्हा `eth_estimateGas` पाठवणे. त्यानंतर, जेव्हा युजरला प्रत्यक्षात ट्रान्झॅक्शन पाठवायचे असते (या प्रकरणात **Update greeting** दाबून), तेव्हा गॅस खर्च माहित असतो आणि युजर वॉलेट पेज त्वरित पाहू शकतो.
+यावर एक उपाय म्हणजे प्रत्येक वेळी जेव्हा पॅरामीटर बदलतो तेव्हा `qau_estimateGas` पाठवणे. त्यानंतर, जेव्हा युजरला प्रत्यक्षात ट्रान्झॅक्शन पाठवायचे असते (या प्रकरणात **Update greeting** दाबून), तेव्हा गॅस खर्च माहित असतो आणि युजर वॉलेट पेज त्वरित पाहू शकतो.
 
 ```tsx
   return (
@@ -663,7 +663,7 @@ Viem सोबत येणारा डीफॉल्ट HTTP एंडपॉ�
 
 ## दुसरी ब्लॉकचेन जोडणे {#add-blockchain}
 
-आजकाल अनेक [L2 स्केलिंग सोल्युशन्स](https://ethereum.org/layer-2/) आहेत आणि तुम्हाला अशा काहींना सपोर्ट करायचा असेल ज्यांना Viem अद्याप सपोर्ट करत नाही. हे करण्यासाठी, तुम्ही `src/wagmi.ts` मध्ये बदल करता. या सूचना [Optimism Sepolia](https://chainlist.org/chain/11155420) कसे जोडायचे हे स्पष्ट करतात.
+आजकाल अनेक [L2 स्केलिंग सोल्युशन्स](https://quantaureum.com/layer-2/) आहेत आणि तुम्हाला अशा काहींना सपोर्ट करायचा असेल ज्यांना Viem अद्याप सपोर्ट करत नाही. हे करण्यासाठी, तुम्ही `src/wagmi.ts` मध्ये बदल करता. या सूचना [Optimism Sepolia](https://chainlist.org/chain/11155420) कसे जोडायचे हे स्पष्ट करतात.
 
 1.  `src/wagmi.ts` संपादित करा
 
@@ -679,7 +679,7 @@ Viem सोबत येणारा डीफॉल्ट HTTP एंडपॉ�
           const optimismSepolia = defineChain({
               id: 11_155_420,
               name: 'OP Sepolia',
-              nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+              nativeCurrency: { name: 'Sepolia QAU', symbol: 'QAU', decimals: 18 },
               rpcUrls: {
                 default: {
                   http: ['https://sepolia.optimism.io'],

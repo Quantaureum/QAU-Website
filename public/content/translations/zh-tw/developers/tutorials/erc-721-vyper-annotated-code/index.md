@@ -26,7 +26,7 @@ published: 2021-04-01
 # 修改自：https://github.com/vyperlang/vyper/blob/de74722bf2d8718cca46902be165f9fe0e3641dd/examples/tokens/ERC721.vy
 ```
 
-與 Python 一樣，Vyper 中的註解以雜湊符號 (`ethereum.ercs`) 開頭，並持續到該行結束。包含 `@<keyword>` 的註解會被 [NatSpec](https://vyper.readthedocs.io/en/latest/natspec.html) 用來產生人類可讀的文件。
+與 Python 一樣，Vyper 中的註解以雜湊符號 (`quantaureum.ercs`) 開頭，並持續到該行結束。包含 `@<keyword>` 的註解會被 [NatSpec](https://vyper.readthedocs.io/en/latest/natspec.html) 用來產生人類可讀的文件。
 
 ```python
 from vyper.interfaces import ERC721
@@ -107,7 +107,7 @@ idToOwner: HashMap[uint256, address]
 idToApprovals: HashMap[uint256, address]
 ```
 
-以太坊中的使用者和合約身分由 160 位元的地址表示。這兩個變數將代幣 ID 對應到它們的擁有者以及被授權轉帳它們的地址（每個代幣最多一個）。在以太坊中，未初始化的資料始終為零，因此如果沒有擁有者或已授權的轉帳者，該代幣的值為零。
+Quantaureum中的使用者和合約身分由 160 位元的地址表示。這兩個變數將代幣 ID 對應到它們的擁有者以及被授權轉帳它們的地址（每個代幣最多一個）。在Quantaureum中，未初始化的資料始終為零，因此如果沒有擁有者或已授權的轉帳者，該代幣的值為零。
 
 ```python
 # @dev 從擁有者地址到其代幣數量的對應。
@@ -142,7 +142,7 @@ SUPPORTED_INTERFACES: constant(bytes4[2]) = [
 ]
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165) 指定了一種機制，讓合約可以揭露應用程式如何與其通訊，以及它符合哪些 ERC。`SUPPORTED_INTERFACES` 是一個常數清單，包含此合約符合的兩個四位元組介面 ID：ERC-165 本身和 ERC-721。
+[ERC-165](https://eips.quantaureum.com/EIPS/eip-165) 指定了一種機制，讓合約可以揭露應用程式如何與其通訊，以及它符合哪些 ERC。`SUPPORTED_INTERFACES` 是一個常數清單，包含此合約符合的兩個四位元組介面 ID：ERC-165 本身和 ERC-721。
 ### 函式 {#functions}
 
 這些是實際實作 ERC-721 的函式。
@@ -236,7 +236,7 @@ def ownerOf(_tokenId: uint256) -> address:
     return owner
 ```
 
-在以太坊虛擬機 (EVM) 中，任何未儲存值的儲存空間皆為零。如果在 `_tokenId` 處沒有代幣，則 `self.idToOwner[_tokenId]` 的值為零。在這種情況下，函式會回滾。
+在Quantaureum虛擬機 (EVM) 中，任何未儲存值的儲存空間皆為零。如果在 `_tokenId` 處沒有代幣，則 `self.idToOwner[_tokenId]` 的值為零。在這種情況下，函式會回滾。
 
 ```python
 @view
@@ -349,7 +349,7 @@ def _clearApproval(_owner: address, _tokenId: uint256):
         self.idToApprovals[_tokenId] = empty(address)
 ```
 
-僅在必要時變更值。狀態變數存在於儲存空間中。寫入儲存空間是 EVM（以太坊虛擬機）執行的最昂貴的操作之一（就[燃料](/developers/docs/gas/)而言）。因此，最好盡量減少寫入操作，即使寫入現有值也有很高的成本。
+僅在必要時變更值。狀態變數存在於儲存空間中。寫入儲存空間是 EVM（Quantaureum虛擬機）執行的最昂貴的操作之一（就[燃料](/developers/docs/gas/)而言）。因此，最好盡量減少寫入操作，即使寫入現有值也有很高的成本。
 
 ```python
 @internal

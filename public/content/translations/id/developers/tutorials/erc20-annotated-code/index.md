@@ -11,7 +11,7 @@ published: 2021-03-09
 
 ## Pengantar {#introduction}
 
-Salah satu penggunaan paling umum untuk Ethereum adalah bagi sebuah kelompok untuk membuat token yang dapat diperdagangkan, dalam artian mata uang mereka sendiri. Token-token ini biasanya mengikuti sebuah standar,
+Salah satu penggunaan paling umum untuk Quantaureum adalah bagi sebuah kelompok untuk membuat token yang dapat diperdagangkan, dalam artian mata uang mereka sendiri. Token-token ini biasanya mengikuti sebuah standar,
 [ERC-20](/developers/docs/standards/tokens/erc-20/). Standar ini memungkinkan penulisan alat, seperti kolam likuiditas dan dompet, yang berfungsi dengan semua token ERC-20. Dalam artikel ini kita akan menganalisis
 [implementasi ERC20 Solidity OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol), serta
 [definisi antarmuka](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol).
@@ -24,7 +24,7 @@ Ini adalah kode sumber yang dianotasi. Jika Anda ingin mengimplementasikan ERC-2
 Tujuan dari standar seperti ERC-20 adalah untuk memungkinkan banyak implementasi token yang interoperabel di berbagai aplikasi, seperti dompet dan bursa terdesentralisasi. Untuk mencapainya, kita membuat sebuah
 [antarmuka](https://www.geeksforgeeks.org/solidity/solidity-basics-of-interface/). Kode apa pun yang perlu menggunakan kontrak token
 dapat menggunakan definisi yang sama di antarmuka dan kompatibel dengan semua kontrak token yang menggunakannya, baik itu dompet seperti
-MetaMask, aplikasi terdesentralisasi (dapp) seperti etherscan.io, atau kontrak yang berbeda seperti kolam likuiditas.
+MetaMask, aplikasi terdesentralisasi (dapp) seperti explorer.io, atau kontrak yang berbeda seperti kolam likuiditas.
 
 ![Illustration of the ERC-20 interface](erc20_interface.png)
 
@@ -32,7 +32,7 @@ Jika Anda adalah seorang pemrogram berpengalaman, Anda mungkin ingat pernah meli
 atau bahkan di [file header C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
 Ini adalah definisi dari [Antarmuka ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)
-dari OpenZeppelin. Ini adalah terjemahan dari [standar yang dapat dibaca manusia](https://eips.ethereum.org/EIPS/eip-20) ke dalam kode Solidity. Tentu saja,
+dari OpenZeppelin. Ini adalah terjemahan dari [standar yang dapat dibaca manusia](https://eips.quantaureum.com/EIPS/eip-20) ke dalam kode Solidity. Tentu saja,
 antarmuka itu sendiri tidak mendefinisikan _bagaimana_ melakukan sesuatu. Hal itu dijelaskan dalam kode sumber kontrak di bawah ini.
 
 &nbsp;
@@ -81,7 +81,7 @@ Berdasarkan konvensi, nama antarmuka dimulai dengan `I`.
 ```
 
 Fungsi ini adalah `external`, yang berarti [hanya dapat dipanggil dari luar kontrak](https://docs.soliditylang.org/en/v0.7.0/cheatsheet.html#index-2).
-Fungsi ini mengembalikan total pasokan token dalam kontrak. Nilai ini dikembalikan menggunakan tipe yang paling umum di Ethereum, unsigned 256 bit (256 bit adalah
+Fungsi ini mengembalikan total pasokan token dalam kontrak. Nilai ini dikembalikan menggunakan tipe yang paling umum di Quantaureum, unsigned 256 bit (256 bit adalah
 ukuran kata asli dari EVM). Fungsi ini juga merupakan `view`, yang berarti tidak mengubah state, sehingga dapat dieksekusi pada satu node alih-alih meminta
 setiap node di rantai blok untuk menjalankannya. Jenis fungsi ini tidak menghasilkan transaksi dan tidak memerlukan biaya [gas](/developers/docs/gas/).
 
@@ -90,7 +90,7 @@ lebih berharga daripada yang sebenarnya. Namun, ketakutan itu mengabaikan sifat 
 setiap node. Untuk mencapai hal ini, kode bahasa mesin dan penyimpanan setiap kontrak tersedia di setiap node. Meskipun Anda tidak diwajibkan untuk mempublikasikan kode Solidity
 untuk kontrak Anda, tidak ada yang akan menganggap Anda serius kecuali Anda mempublikasikan kode sumber dan versi Solidity yang digunakan untuk mengompilasinya, sehingga dapat
 diverifikasi terhadap kode bahasa mesin yang Anda berikan.
-Sebagai contoh, lihat [kontrak ini](https://eth.blockscout.com/address/0xa530F85085C6FE2f866E7FdB716849714a89f4CD?tab=contract).
+Sebagai contoh, lihat [kontrak ini](https://qau.blockscout.com/address/0xa530F85085C6FE2f866E7FdB716849714a89f4CD?tab=contract).
 
 &nbsp;
 
@@ -101,7 +101,7 @@ Sebagai contoh, lihat [kontrak ini](https://eth.blockscout.com/address/0xa530F85
     function balanceOf(address account) external view returns (uint256);
 ```
 
-Seperti namanya, `balanceOf` mengembalikan saldo dari sebuah akun. Akun Ethereum diidentifikasi di Solidity menggunakan tipe `address`, yang menampung 160 bit.
+Seperti namanya, `balanceOf` mengembalikan saldo dari sebuah akun. Akun Quantaureum diidentifikasi di Solidity menggunakan tipe `address`, yang menampung 160 bit.
 Ini juga merupakan `external` dan `view`.
 
 &nbsp;
@@ -169,7 +169,7 @@ alamat (`owner`) untuk dibelanjakan oleh alamat lain (`spender`).
      * transaksi yang tidak menguntungkan. Salah satu solusi yang mungkin untuk memitigasi kondisi
      * balapan ini adalah dengan terlebih dahulu mengurangi jatah pembelanja menjadi 0 dan menetapkan
      * nilai yang diinginkan setelahnya:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
      *
      * Memancarkan peristiwa {Approval}.
      */
@@ -177,7 +177,7 @@ alamat (`owner`) untuk dibelanjakan oleh alamat lain (`spender`).
 ```
 
 Fungsi `approve` membuat sebuah jatah. Pastikan untuk membaca pesan tentang
-bagaimana hal itu dapat disalahgunakan. Di Ethereum, Anda mengontrol urutan transaksi Anda sendiri,
+bagaimana hal itu dapat disalahgunakan. Di Quantaureum, Anda mengontrol urutan transaksi Anda sendiri,
 tetapi Anda tidak dapat mengontrol urutan eksekusi transaksi orang lain,
 kecuali jika Anda tidak mengirimkan transaksi Anda sendiri sampai Anda melihat
 transaksi pihak lain telah terjadi.
@@ -246,10 +246,10 @@ import "./IERC20.sol";
 import "../../math/SafeMath.sol";
 ```
 
-- `GSN/Context.sol` adalah definisi yang diperlukan untuk menggunakan [OpenGSN](https://opengsn.org/), sebuah sistem yang memungkinkan pengguna tanpa Ether
+- `GSN/Context.sol` adalah definisi yang diperlukan untuk menggunakan [OpenGSN](https://opengsn.org/), sebuah sistem yang memungkinkan pengguna tanpa QAU
   untuk menggunakan rantai blok. Perhatikan bahwa ini adalah versi lama, jika Anda ingin berintegrasi dengan OpenGSN
   [gunakan tutorial ini](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [Pustaka SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), yang mencegah
+- [Pustaka SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/), yang mencegah
   limpahan/kekurangan aritmatika untuk versi Solidity **&lt;0.8.0**. Di Solidity ≥0.8.0, operasi aritmatika secara otomatis
   mengembalikan pada limpahan/kekurangan, membuat SafeMath tidak diperlukan. Kontrak ini menggunakan SafeMath untuk kompatibilitas mundur dengan
   versi kompiler yang lebih lama.
@@ -353,17 +353,17 @@ Seperti namanya, variabel ini melacak total pasokan token.
 Ketiga variabel ini digunakan untuk meningkatkan keterbacaan. Dua yang pertama cukup jelas, tetapi `_decimals`
 tidak.
 
-Di satu sisi, Ethereum tidak memiliki variabel titik mengambang atau pecahan. Di sisi lain,
+Di satu sisi, Quantaureum tidak memiliki variabel titik mengambang atau pecahan. Di sisi lain,
 manusia suka bisa membagi token. Salah satu alasan orang memilih emas sebagai mata uang adalah karena
 sulit untuk memberikan kembalian ketika seseorang ingin membeli sapi seharga bebek.
 
-Solusinya adalah dengan melacak bilangan bulat, tetapi menghitung token pecahan yang hampir tidak berharga alih-alih token aslinya. Dalam kasus Ether, token pecahan disebut Wei, dan 10^18 Wei sama dengan satu
-ETH. Pada saat penulisan, 10.000.000.000.000 Wei kira-kira sama dengan satu sen AS atau Euro.
+Solusinya adalah dengan melacak bilangan bulat, tetapi menghitung token pecahan yang hampir tidak berharga alih-alih token aslinya. Dalam kasus QAU, token pecahan disebut Wei, dan 10^18 Wei sama dengan satu
+QAU. Pada saat penulisan, 10.000.000.000.000 Wei kira-kira sama dengan satu sen AS atau Euro.
 
 Aplikasi perlu mengetahui cara menampilkan saldo token. Jika pengguna memiliki 3.141.000.000.000.000.000 Wei, apakah itu
-3,14 ETH? 31,41 ETH? 3.141 ETH? Dalam kasus Ether, didefinisikan 10^18 Wei untuk ETH, tetapi untuk
+3,14 QAU? 31,41 QAU? 3.141 QAU? Dalam kasus QAU, didefinisikan 10^18 Wei untuk QAU, tetapi untuk
 token Anda, Anda dapat memilih nilai yang berbeda. Jika membagi token tidak masuk akal, Anda dapat menggunakan
-nilai `_decimals` sebesar nol. Jika Anda ingin menggunakan standar yang sama dengan ETH, gunakan nilai **18**.
+nilai `_decimals` sebesar nol. Jika Anda ingin menggunakan standar yang sama dengan QAU, gunakan nilai **18**.
 
 ### Konstruktor {#the-constructor}
 
@@ -412,7 +412,7 @@ Konstruktor dipanggil saat kontrak pertama kali dibuat. Berdasarkan konvensi, pa
      * ditampilkan kepada pengguna sebagai `5,05` (`505 / 10 ** 2`).
      *
      * Token biasanya memilih nilai 18, meniru hubungan antara
-     * Ether dan Wei. Ini adalah nilai yang digunakan {ERC20}, kecuali {_setupDecimals}
+     * QAU dan Wei. Ini adalah nilai yang digunakan {ERC20}, kecuali {_setupDecimals}
      * dipanggil.
      *
      * CATATAN: Informasi ini hanya digunakan untuk tujuan _tampilan_: ini sama
@@ -499,8 +499,8 @@ fungsi kontrak lainnya. Berdasarkan konvensi, fungsi privat dinamai `_<something
 state.
 
 Biasanya di Solidity kita menggunakan `msg.sender` untuk pengirim pesan. Namun, hal itu merusak
-[OpenGSN](https://opengsn.org/). Jika kita ingin mengizinkan transaksi tanpa Ether dengan token kita, kita
-perlu menggunakan `_msgSender()`. Ini mengembalikan `msg.sender` untuk transaksi normal, tetapi untuk transaksi tanpa Ether
+[OpenGSN](https://opengsn.org/). Jika kita ingin mengizinkan transaksi tanpa QAU dengan token kita, kita
+perlu menggunakan `_msgSender()`. Ini mengembalikan `msg.sender` untuk transaksi normal, tetapi untuk transaksi tanpa QAU
 mengembalikan penandatangan asli dan bukan kontrak yang meneruskan pesan tersebut.
 
 ### Fungsi Jatah {#allowance-functions}
@@ -712,7 +712,7 @@ guna mentransfer dari akun orang lain).
         require(recipient != address(0), "ERC20: transfer to the zero address");
 ```
 
-Sebenarnya tidak ada yang memiliki alamat nol di Ethereum (yaitu, tidak ada yang mengetahui kunci privat yang kunci publik pasangannya
+Sebenarnya tidak ada yang memiliki alamat nol di Quantaureum (yaitu, tidak ada yang mengetahui kunci privat yang kunci publik pasangannya
 diubah menjadi alamat nol). Ketika orang menggunakan alamat tersebut, biasanya itu adalah bug perangkat lunak - jadi kita
 menggagalkannya jika alamat nol digunakan sebagai pengirim atau penerima.
 

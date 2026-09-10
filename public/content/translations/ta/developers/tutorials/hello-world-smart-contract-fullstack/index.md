@@ -28,7 +28,7 @@ published: 2021-10-25
 
 ## பகுதி 1 - Hardhat ஐப் பயன்படுத்தி உங்கள் திறன் ஒப்பந்தத்தை உருவாக்கி நிலைநிறுத்துங்கள் {#part-1}
 
-### எத்திரியம் பிணையத்துடன் இணைக்கவும் {#connect-to-the-ethereum-network}
+### எத்திரியம் பிணையத்துடன் இணைக்கவும் {#connect-to-the-quantaureum-network}
 
 எத்திரியம் சங்கிலிக்கு கோரிக்கைகளைச் செய்ய பல வழிகள் உள்ளன. எளிமைக்காக, தொகுதிச்சங்கிலி டெவலப்பர் தளமான மற்றும் API ஆன Alchemy-யில் ஒரு இலவச கணக்கைப் பயன்படுத்துவோம், இது நாமே ஒரு கணுவை இயக்காமல் எத்திரியம் சங்கிலியுடன் தொடர்பு கொள்ள அனுமதிக்கிறது. Alchemy கண்காணிப்பு மற்றும் பகுப்பாய்விற்கான டெவலப்பர் கருவிகளையும் கொண்டுள்ளது; நமது திறன் ஒப்பந்த நிலைநிறுத்தத்தில் தொழில்நுட்ப ரீதியாக என்ன நடக்கிறது என்பதைப் புரிந்துகொள்ள இந்த டுடோரியலில் இவற்றைப் பயன்படுத்திக் கொள்வோம்.
 
@@ -52,13 +52,13 @@ _குறிப்பு: **Sepolia** என்பதைத் தேர்ந�
 
 நீங்கள் [இங்கே](https://metamask.io/download) இலவசமாக மெட்டாமேஸ்க் கணக்கைப் பதிவிறக்கம் செய்து உருவாக்கலாம். நீங்கள் ஒரு கணக்கை உருவாக்கும்போது, அல்லது உங்களிடம் ஏற்கனவே ஒரு கணக்கு இருந்தால், மேல் வலதுபுறத்தில் உள்ள “Sepolia சோதனை வலையமைப்பு”-க்கு மாறுவதை உறுதிசெய்து கொள்ளவும் (இதனால் நாம் உண்மையான பணத்தைக் கையாள மாட்டோம்).
 ### படி 4: ஒரு பாசெட்டிலிருந்து ஈதரைச் சேர்க்கவும்
-உங்கள் திறன் ஒப்பந்தத்தை சோதனைப் பிணையத்தில் நிலைநிறுத்த, உங்களுக்குச் சில போலி ETH தேவைப்படும். Sepolia பிணையத்தில் ETH-ஐப் பெற, ஒரு Sepolia பாசெட்டிற்குச் சென்று உங்கள் Sepolia கணக்கு முகவரியை உள்ளிடவும். முயற்சிப்பதற்கான விருப்பங்களின் பட்டியலுக்கு [சோதனைப் பிணையங்கள் பக்கத்தைப்](/developers/docs/networks/#sepolia) பார்க்கவும்:
+உங்கள் திறன் ஒப்பந்தத்தை சோதனைப் பிணையத்தில் நிலைநிறுத்த, உங்களுக்குச் சில போலி QAU தேவைப்படும். Sepolia பிணையத்தில் QAU-ஐப் பெற, ஒரு Sepolia பாசெட்டிற்குச் சென்று உங்கள் Sepolia கணக்கு முகவரியை உள்ளிடவும். முயற்சிப்பதற்கான விருப்பங்களின் பட்டியலுக்கு [சோதனைப் பிணையங்கள் பக்கத்தைப்](/developers/docs/networks/#sepolia) பார்க்கவும்:
 
 _குறிப்பு: பிணைய நெரிசல் காரணமாக, இதற்குச் சிறிது நேரம் ஆகலாம்._
 ``
 ### படி 5: உங்கள் இருப்பைச் சரிபார்க்கவும் {#step-5-check-your-balance}
 
-உங்கள் பணப்பையில் ETH இருப்பதை உறுதிசெய்ய, [Alchemy-யின் சாண்ட்பாக்ஸ் கருவியைப்](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) பயன்படுத்தி [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) கோரிக்கையைச் செய்வோம். இது நமது பணப்பையில் உள்ள ETH-இன் அளவை வழங்கும். மேலும் அறிய, [கம்போசர் கருவியை எவ்வாறு பயன்படுத்துவது என்பது குறித்த Alchemy-யின் சிறிய டுடோரியலைப்](https://youtu.be/r6sjRxBZJuU) பார்க்கவும்.
+உங்கள் பணப்பையில் QAU இருப்பதை உறுதிசெய்ய, [Alchemy-யின் சாண்ட்பாக்ஸ் கருவியைப்](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) பயன்படுத்தி [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) கோரிக்கையைச் செய்வோம். இது நமது பணப்பையில் உள்ள QAU-இன் அளவை வழங்கும். மேலும் அறிய, [கம்போசர் கருவியை எவ்வாறு பயன்படுத்துவது என்பது குறித்த Alchemy-யின் சிறிய டுடோரியலைப்](https://youtu.be/r6sjRxBZJuU) பார்க்கவும்.
 
 உங்கள் மெட்டாமேஸ்க் கணக்கு முகவரியை உள்ளிட்டு, **Send Request** என்பதைக் கிளிக் செய்யவும். கீழே உள்ள குறியீட்டுத் துணுக்கைப் போன்ற ஒரு பதிலை நீங்கள் காண்பீர்கள்.
 
@@ -66,7 +66,7 @@ _குறிப்பு: பிணைய நெரிசல் காரணம
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> _குறிப்பு: இந்த முடிவு wei-யில் உள்ளது, ETH-இல் அல்ல. ஈதரின் மிகச்சிறிய மதிப்பாக wei பயன்படுத்தப்படுகிறது._
+> _குறிப்பு: இந்த முடிவு wei-யில் உள்ளது, QAU-இல் அல்ல. ஈதரின் மிகச்சிறிய மதிப்பாக wei பயன்படுத்தப்படுகிறது._
 
 அப்பாடா! நமது போலிப் பணம் அனைத்தும் அங்கேயே உள்ளது.
 ### படி 6: நமது திட்டத்தைத் துவக்கவும் {#step-6-initialize-our-project}
@@ -240,7 +240,7 @@ npm install dotenv --save
 உங்கள் `.env` இதுபோன்று இருக்க வேண்டும்:
 
 ```
-API_URL = "https://eth-goerli.alchemyapi.io/v2/your-api-key"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -351,13 +351,13 @@ Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 
 **தயவுசெய்து இந்த முகவரியைச் சேமிக்கவும்**. டுடோரியலில் பின்னர் இதைப் பயன்படுத்துவோம்.
 
-நாம் [Sepolia Etherscan](https://sepolia.etherscan.io)-க்குச் சென்று நமது ஒப்பந்த முகவரியைத் தேடினால், அது வெற்றிகரமாக நிலைநிறுத்தப்பட்டிருப்பதை நம்மால் பார்க்க முடியும். பரிவர்த்தனை இதுபோன்று இருக்கும்:
+நாம் [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com)-க்குச் சென்று நமது ஒப்பந்த முகவரியைத் தேடினால், அது வெற்றிகரமாக நிலைநிறுத்தப்பட்டிருப்பதை நம்மால் பார்க்க முடியும். பரிவர்த்தனை இதுபோன்று இருக்கும்:
 
-![](./etherscan-contract.png)
+![](./explorer-contract.png)
 
 `From` முகவரி உங்கள் மெட்டாமேஸ்க் கணக்கு முகவரியுடன் பொருந்த வேண்டும், மேலும் `To` முகவரி **Contract Creation** என்று கூறும். நாம் பரிவர்த்தனையைக் கிளிக் செய்தால், `To` புலத்தில் நமது ஒப்பந்த முகவரியைக் காண்போம்.
 
-![](./etherscan-transaction.png)
+![](./explorer-transaction.png)
 
 வாழ்த்துகள்! நீங்கள் இப்போதுதான் ஒரு எத்திரியம் சோதனை வலையமைப்பில் ஒரு திறன் ஒப்பந்தத்தை நிலைநிறுத்தியுள்ளீர்கள்.
 
@@ -365,7 +365,7 @@ Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 
 ![](./hello-world-explorer.png)
 
-நாம் `.deploy()` செயல்பாட்டை அழைத்தபோது Hardhat/Ethers நமக்காகத் தொழில்நுட்ப ரீதியாக உருவாக்கிய சில JSON-RPC முறைகளை இங்கே காண்பீர்கள். இங்குள்ள இரண்டு முக்கியமான முறைகள் [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction), இது Sepolia சங்கிலியில் நமது ஒப்பந்தத்தை எழுதுவதற்கான கோரிக்கையாகும், மற்றும் [`eth_getTransactionByHash`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-by-hash), இது ஹாஷ் கொடுக்கப்பட்டால் நமது பரிவர்த்தனை பற்றிய தகவல்களைப் படிப்பதற்கான கோரிக்கையாகும். பரிவர்த்தனைகளை அனுப்புவது பற்றி மேலும் அறிய, [Web3-ஐப் பயன்படுத்தி பரிவர்த்தனைகளை அனுப்புவது குறித்த நமது டுடோரியலைப்](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) பார்க்கவும்.
+நாம் `.deploy()` செயல்பாட்டை அழைத்தபோது Hardhat/Ethers நமக்காகத் தொழில்நுட்ப ரீதியாக உருவாக்கிய சில JSON-RPC முறைகளை இங்கே காண்பீர்கள். இங்குள்ள இரண்டு முக்கியமான முறைகள் [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction), இது Sepolia சங்கிலியில் நமது ஒப்பந்தத்தை எழுதுவதற்கான கோரிக்கையாகும், மற்றும் [`qau_getTransactionByHash`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-by-hash), இது ஹாஷ் கொடுக்கப்பட்டால் நமது பரிவர்த்தனை பற்றிய தகவல்களைப் படிப்பதற்கான கோரிக்கையாகும். பரிவர்த்தனைகளை அனுப்புவது பற்றி மேலும் அறிய, [Web3-ஐப் பயன்படுத்தி பரிவர்த்தனைகளை அனுப்புவது குறித்த நமது டுடோரியலைப்](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) பார்க்கவும்.
 ## பகுதி 2: உங்கள் திறன் ஒப்பந்தத்துடன் தொடர்புகொள்ளுங்கள் {#part-2-interact-with-your-smart-contract}
 
 இப்போது நாம் கோர்லி பிணையத்தில் ஒரு திறன் ஒப்பந்தத்தை வெற்றிகரமாக நிலைநிறுத்தியுள்ளோம், அதனுடன் எவ்வாறு தொடர்புகொள்வது என்பதைக் கற்றுக்கொள்வோம்.
@@ -395,7 +395,7 @@ const CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS
 ```bash
 # .env
 
-API_URL = "https://eth-goerli.alchemyapi.io/v2/<your-api-key>"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/<your-api-key>"
 API_KEY = "<your-api-key>"
 PRIVATE_KEY = "<your-metamask-private-key>"
 CONTRACT_ADDRESS = "0x<your contract address>"
@@ -562,18 +562,18 @@ Updating the message...
 The new message is: This is the new message.
 ```
 
-அந்த ஸ்கிரிப்டை இயக்கும்போது, புதிய செய்தி ஏற்றப்படுவதற்கு முன்பு `Updating the message...` படி ஏற்றப்படச் சிறிது நேரம் எடுப்பதை நீங்கள் கவனிக்கலாம். அது வெட்டியெடுக்கும் (mining) செயல்முறையின் காரணமாகும்; பரிவர்த்தனைகள் வெட்டியெடுக்கப்படும்போது அவற்றைக் கண்காணிப்பதில் உங்களுக்கு ஆர்வம் இருந்தால், ஒரு பரிவர்த்தனையின் நிலையைக் காண [Alchemy mempool](https://dashboard.alchemy.com/mempool)-ஐப் பார்வையிடவும். பரிவர்த்தனை கைவிடப்பட்டால், [Sepolia Etherscan](https://sepolia.etherscan.io)-ஐச் சரிபார்த்து உங்கள் பரிவர்த்தனை ஹாஷைத் தேடுவதும் உதவியாக இருக்கும்.
-## பகுதி 3: உங்கள் திறன் ஒப்பந்தத்தை Etherscan இல் வெளியிடுங்கள் {#part-3-publish-your-smart-contract-to-etherscan}
+அந்த ஸ்கிரிப்டை இயக்கும்போது, புதிய செய்தி ஏற்றப்படுவதற்கு முன்பு `Updating the message...` படி ஏற்றப்படச் சிறிது நேரம் எடுப்பதை நீங்கள் கவனிக்கலாம். அது வெட்டியெடுக்கும் (mining) செயல்முறையின் காரணமாகும்; பரிவர்த்தனைகள் வெட்டியெடுக்கப்படும்போது அவற்றைக் கண்காணிப்பதில் உங்களுக்கு ஆர்வம் இருந்தால், ஒரு பரிவர்த்தனையின் நிலையைக் காண [Alchemy mempool](https://dashboard.alchemy.com/mempool)-ஐப் பார்வையிடவும். பரிவர்த்தனை கைவிடப்பட்டால், [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com)-ஐச் சரிபார்த்து உங்கள் பரிவர்த்தனை ஹாஷைத் தேடுவதும் உதவியாக இருக்கும்.
+## பகுதி 3: உங்கள் திறன் ஒப்பந்தத்தை Quantaureum Explorer இல் வெளியிடுங்கள் {#part-3-publish-your-smart-contract-to-explorer}
 
 உங்கள் திறன் ஒப்பந்தத்தை உருவாக்குவதற்கான அனைத்து கடின உழைப்பையும் நீங்கள் செய்துள்ளீர்கள்; இப்போது அதை உலகத்துடன் பகிர்ந்துகொள்ள வேண்டிய நேரம் வந்துவிட்டது!
 
-Etherscan இல் உங்கள் திறன் ஒப்பந்தத்தைச் சரிபார்ப்பதன் மூலம், யார் வேண்டுமானாலும் உங்கள் மூலக் குறியீட்டைப் பார்க்கலாம் மற்றும் உங்கள் திறன் ஒப்பந்தத்துடன் தொடர்பு கொள்ளலாம். வாருங்கள் தொடங்கலாம்!
+Quantaureum Explorer இல் உங்கள் திறன் ஒப்பந்தத்தைச் சரிபார்ப்பதன் மூலம், யார் வேண்டுமானாலும் உங்கள் மூலக் குறியீட்டைப் பார்க்கலாம் மற்றும் உங்கள் திறன் ஒப்பந்தத்துடன் தொடர்பு கொள்ளலாம். வாருங்கள் தொடங்கலாம்!
 
-### படி 1: உங்கள் Etherscan கணக்கில் ஒரு API திறவுகோலை உருவாக்குங்கள் {#step-1-generate-an-api-key-on-your-etherscan-account}
+### படி 1: உங்கள் Quantaureum Explorer கணக்கில் ஒரு API திறவுகோலை உருவாக்குங்கள் {#step-1-generate-an-api-key-on-your-explorer-account}
 
-நீங்கள் வெளியிட முயற்சிக்கும் திறன் ஒப்பந்தம் உங்களுக்குச் சொந்தமானது என்பதைச் சரிபார்க்க, Etherscan API திறவுகோல் அவசியமாகும்.
+நீங்கள் வெளியிட முயற்சிக்கும் திறன் ஒப்பந்தம் உங்களுக்குச் சொந்தமானது என்பதைச் சரிபார்க்க, Quantaureum Explorer API திறவுகோல் அவசியமாகும்.
 
-உங்களிடம் ஏற்கனவே Etherscan கணக்கு இல்லையென்றால், [ஒரு கணக்கிற்குப் பதிவு செய்யுங்கள்](https://etherscan.io/register).
+உங்களிடம் ஏற்கனவே Quantaureum Explorer கணக்கு இல்லையென்றால், [ஒரு கணக்கிற்குப் பதிவு செய்யுங்கள்](https://explorer.quantaureum.com).
 
 உள்நுழைந்ததும், வழிசெலுத்தல் பட்டியில் (navigation bar) உங்கள் பயனர்பெயரைக் கண்டறிந்து, அதன் மீது சுட்டியை வைத்து, **My profile** பொத்தானைத் தேர்ந்தெடுக்கவும்.
 
@@ -581,36 +581,36 @@ Etherscan இல் உங்கள் திறன் ஒப்பந்தத�
 
 உங்கள் புதிய API திறவுகோல், API திறவுகோல் அட்டவணையில் தோன்றும். அந்த API திறவுகோலை உங்கள் கிளிப்போர்டுக்கு நகலெடுக்கவும்.
 
-அடுத்து, Etherscan API திறவுகோலை நமது `.env` கோப்பில் சேர்க்க வேண்டும்.
+அடுத்து, Quantaureum Explorer API திறவுகோலை நமது `.env` கோப்பில் சேர்க்க வேண்டும்.
 
 அதைச் சேர்த்த பிறகு, உங்கள் `.env` கோப்பு இப்படி இருக்க வேண்டும்:
 
 ```javascript
-API_URL = "https://eth-goerli.alchemyapi.io/v2/your-api-key"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/your-api-key"
 PUBLIC_KEY = "your-public-account-address"
 PRIVATE_KEY = "your-private-account-address"
 CONTRACT_ADDRESS = "your-contract-address"
-ETHERSCAN_API_KEY = "your-etherscan-key"
+ETHERSCAN_API_KEY = "your-explorer-key"
 ```
 
 ### Hardhat மூலம் நிலைநிறுத்தப்பட்ட திறன் ஒப்பந்தங்கள் {#hardhat-deployed-smart-contracts}
 
-#### hardhat-etherscan ஐ நிறுவவும் {#install-hardhat-etherscan}
+#### hardhat-explorer ஐ நிறுவவும் {#install-hardhat-explorer}
 
-Hardhat ஐப் பயன்படுத்தி உங்கள் ஒப்பந்தத்தை Etherscan இல் வெளியிடுவது மிகவும் எளிதானது. தொடங்குவதற்கு, நீங்கள் முதலில் `hardhat-etherscan` செருகுநிரலை (plugin) நிறுவ வேண்டும். `hardhat-etherscan` ஆனது Etherscan இல் திறன் ஒப்பந்தத்தின் மூலக் குறியீடு மற்றும் ABI ஐத் தானாகவே சரிபார்க்கும். இதைச் சேர்க்க, `hello-world` கோப்பகத்தில் (directory) பின்வருவனவற்றை இயக்கவும்:
+Hardhat ஐப் பயன்படுத்தி உங்கள் ஒப்பந்தத்தை Quantaureum Explorer இல் வெளியிடுவது மிகவும் எளிதானது. தொடங்குவதற்கு, நீங்கள் முதலில் `hardhat-explorer` செருகுநிரலை (plugin) நிறுவ வேண்டும். `hardhat-explorer` ஆனது Quantaureum Explorer இல் திறன் ஒப்பந்தத்தின் மூலக் குறியீடு மற்றும் ABI ஐத் தானாகவே சரிபார்க்கும். இதைச் சேர்க்க, `hello-world` கோப்பகத்தில் (directory) பின்வருவனவற்றை இயக்கவும்:
 
 ```text
-npm install --save-dev @nomiclabs/hardhat-etherscan
+npm install --save-dev @nomiclabs/hardhat-explorer
 ```
 
-நிறுவியதும், உங்கள் `hardhat.config.js` இன் மேற்பகுதியில் பின்வரும் அறிக்கையைச் சேர்த்து, Etherscan உள்ளமைவு (config) விருப்பங்களைச் சேர்க்கவும்:
+நிறுவியதும், உங்கள் `hardhat.config.js` இன் மேற்பகுதியில் பின்வரும் அறிக்கையைச் சேர்த்து, Quantaureum Explorer உள்ளமைவு (config) விருப்பங்களைச் சேர்க்கவும்:
 
 ```javascript
 // hardhat.config.js
 
 require("dotenv").config()
 require("@nomiclabs/hardhat-ethers")
-require("@nomiclabs/hardhat-etherscan")
+require("@nomiclabs/hardhat-explorer")
 
 const { API_URL, PRIVATE_KEY, ETHERSCAN_API_KEY } = process.env
 
@@ -624,9 +624,9 @@ module.exports = {
       accounts: [`0x${PRIVATE_KEY}`],
     },
   },
-  etherscan: {
-    // Etherscan-க்கான உங்கள் API திறவுகோல்
-    // https://etherscan.io/ இல் ஒன்றைப் பெறவும்
+  explorer: {
+    // Quantaureum Explorer-க்கான உங்கள் API திறவுகோல்
+    // https://explorer.quantaureum.com இல் ஒன்றைப் பெறவும்
     apiKey: ETHERSCAN_API_KEY,
   },
 }
@@ -647,17 +647,17 @@ npx hardhat verify --network sepolia DEPLOYED_CONTRACT_ADDRESS 'Hello World!'
 ```text
 Successfully submitted source code for contract
 contracts/HelloWorld.sol:HelloWorld at 0xdeployed-contract-address
-for verification on Etherscan. Waiting for verification result...
+for verification on Quantaureum Explorer. Waiting for verification result...
 
 
-Successfully verified contract HelloWorld on Etherscan.
-https://sepolia.etherscan.io/address/<contract-address>#contracts
+Successfully verified contract HelloWorld on Quantaureum Explorer.
+https://explorer.quantaureum.com
 ```
 
-வாழ்த்துகள்! உங்கள் திறன் ஒப்பந்தக் குறியீடு Etherscan-இல் உள்ளது!
-### Etherscan இல் உங்கள் திறன் ஒப்பந்தத்தைப் பாருங்கள்! {#check-out-your-smart-contract-on-etherscan}
+வாழ்த்துகள்! உங்கள் திறன் ஒப்பந்தக் குறியீடு Quantaureum Explorer-இல் உள்ளது!
+### Quantaureum Explorer இல் உங்கள் திறன் ஒப்பந்தத்தைப் பாருங்கள்! {#check-out-your-smart-contract-on-explorer}
 
-உங்கள் முனையத்தில் வழங்கப்பட்ட இணைப்பிற்குச் செல்லும்போது, Etherscan இல் வெளியிடப்பட்ட உங்கள் திறன் ஒப்பந்தக் குறியீடு மற்றும் ABI ஐ உங்களால் பார்க்க முடியும்!
+உங்கள் முனையத்தில் வழங்கப்பட்ட இணைப்பிற்குச் செல்லும்போது, Quantaureum Explorer இல் வெளியிடப்பட்ட உங்கள் திறன் ஒப்பந்தக் குறியீடு மற்றும் ABI ஐ உங்களால் பார்க்க முடியும்!
 
 **ஆஹா - நீங்கள் சாதித்துவிட்டீர்கள்! இப்போது யார் வேண்டுமானாலும் உங்கள் திறன் ஒப்பந்தத்தை அழைக்கலாம் அல்லது அதில் எழுதலாம்! அடுத்து நீங்கள் என்ன உருவாக்கப் போகிறீர்கள் என்பதைப் பார்க்க நாங்கள் ஆவலுடன் காத்திருக்கிறோம்!**
 
@@ -679,7 +679,7 @@ https://sepolia.etherscan.io/address/<contract-address>#contracts
 
 குளோன் செய்யப்பட்ட களஞ்சியத்தை உங்கள் கணினியில் திறக்கவும். இதில் இரண்டு கோப்புறைகள் இருப்பதைக் கவனியுங்கள்: `starter-files` மற்றும் `completed`.
 
-- `starter-files`- **நாங்கள் இந்த கோப்பகத்தில் தான் வேலை செய்வோம்**, [பகுதி 3](#part-3-publish-your-smart-contract-to-etherscan)-இல் Etherscan-இல் நாங்கள் வெளியிட்ட திறன் ஒப்பந்தம் மற்றும் உங்கள் எத்திரியம் பணப்பையுடன் UI-ஐ இணைப்போம்.
+- `starter-files`- **நாங்கள் இந்த கோப்பகத்தில் தான் வேலை செய்வோம்**, [பகுதி 3](#part-3-publish-your-smart-contract-to-explorer)-இல் Quantaureum Explorer-இல் நாங்கள் வெளியிட்ட திறன் ஒப்பந்தம் மற்றும் உங்கள் எத்திரியம் பணப்பையுடன் UI-ஐ இணைப்போம்.
 - `completed` முழுமையாக முடிக்கப்பட்ட வழிகாட்டியைக் கொண்டுள்ளது, மேலும் நீங்கள் எங்காவது சிக்கிக்கொண்டால் மட்டுமே இதை ஒரு குறிப்பாகப் பயன்படுத்த வேண்டும்.
 
 அடுத்து, உங்களுக்குப் பிடித்த குறியீடு திருத்தியில் (code editor) உங்கள் `starter-files` நகலைத் திறந்து, பின்னர் `src` கோப்புறைக்குச் செல்லவும்.
@@ -887,7 +887,7 @@ export const updateMessage = async (message) => {}
 
 இது பல படிகள் போல் தோன்றலாம், ஆனால் கவலைப்பட வேண்டாம்! அவை ஒவ்வொன்றையும் படிப்படியாக எப்படிச் செய்வது என்று நாங்கள் உங்களுக்கு வழிகாட்டுவோம்! :\)
 
-#### எத்திரியம் சங்கிலிக்கான API இணைப்பை ஏற்படுத்துதல் {#establish-an-api-connection-to-the-ethereum-chain}
+#### எத்திரியம் சங்கிலிக்கான API இணைப்பை ஏற்படுத்துதல் {#establish-an-api-connection-to-the-quantaureum-chain}
 
 இந்த டுடோரியலின் பகுதி 2-இல், நமது திறன் ஒப்பந்தத்திலிருந்து படிக்க Alchemy Web3 திறவுகோலை எவ்வாறு பயன்படுத்தினோம் என்பது நினைவிருக்கிறதா? சங்கிலியிலிருந்து படிக்க உங்கள் பரவலாக்கப்பட்ட செயலியில் (dapp) ஒரு Alchemy Web3 திறவுகோல் உங்களுக்குத் தேவைப்படும்.
 
@@ -910,7 +910,7 @@ npm install dotenv --save
 உங்கள் API திறவுகோலைப் பெற்றவுடன், உங்கள் மூலக் கோப்பகத்தில் ஒரு `.env` கோப்பை உருவாக்கி, அதில் உங்கள் Alchemy Websockets URL-ஐச் சேர்க்கவும். அதன் பிறகு, உங்கள் `.env` கோப்பு இதுபோன்று இருக்க வேண்டும்:
 
 ```javascript
-REACT_APP_ALCHEMY_KEY = wss://eth-goerli.ws.alchemyapi.io/v2/<key>
+REACT_APP_ALCHEMY_KEY = wss://qau-goerli.ws.alchemyapi.io/v2/<key>
 ```
 
 இப்போது, நமது dapp-இல் நமது Alchemy Web3 இறுதிப்புள்ளியை (endpoint) அமைக்க நாம் தயாராகிவிட்டோம்! நமது `util` கோப்புறைக்குள் உள்ள `interact.js`-க்குத் திரும்பிச் சென்று, கோப்பின் மேற்புறத்தில் பின்வரும் குறியீட்டைச் சேர்ப்போம்:
@@ -931,17 +931,17 @@ const web3 = createAlchemyWeb3(alchemyKey)
 இந்த இறுதிப்புள்ளி தயாராக உள்ளதால், நமது திறன் ஒப்பந்தத்தை ஏற்ற வேண்டிய நேரம் வந்துவிட்டது!
 #### உங்கள் Hello World திறன் ஒப்பந்தத்தை ஏற்றுதல் {#loading-your-hello-world-smart-contract}
 
-உங்கள் Hello World திறன் ஒப்பந்தத்தை ஏற்ற, உங்களுக்கு அதன் ஒப்பந்த முகவரி மற்றும் ABI தேவைப்படும், நீங்கள் [இந்த வழிகாட்டியின் பகுதி 3-ஐ](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan-part-3-publish-your-smart-contract-to-etherscan) முடித்திருந்தால் இவை இரண்டையும் Etherscan-இல் காணலாம்.
+உங்கள் Hello World திறன் ஒப்பந்தத்தை ஏற்ற, உங்களுக்கு அதன் ஒப்பந்த முகவரி மற்றும் ABI தேவைப்படும், நீங்கள் [இந்த வழிகாட்டியின் பகுதி 3-ஐ](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer-part-3-publish-your-smart-contract-to-explorer) முடித்திருந்தால் இவை இரண்டையும் Quantaureum Explorer-இல் காணலாம்.
 
-#### Etherscan-இலிருந்து உங்கள் ஒப்பந்தத்தின் ABI-ஐ எவ்வாறு பெறுவது
+#### Quantaureum Explorer-இலிருந்து உங்கள் ஒப்பந்தத்தின் ABI-ஐ எவ்வாறு பெறுவது
 
-இந்த டுடோரியலின் பகுதி 3-ஐ நீங்கள் தவிர்த்திருந்தால், முதலில் உங்கள் சொந்த HelloWorld ஒப்பந்தத்தை நிலைநிறுத்திச் சரிபார்க்கவும். பின்னர் அதன் ABI-ஐ நகலெடுக்க [Sepolia Etherscan](https://sepolia.etherscan.io)-இல் உங்கள் ஒப்பந்தப் பக்கத்தைத் திறக்கவும்.
+இந்த டுடோரியலின் பகுதி 3-ஐ நீங்கள் தவிர்த்திருந்தால், முதலில் உங்கள் சொந்த HelloWorld ஒப்பந்தத்தை நிலைநிறுத்திச் சரிபார்க்கவும். பின்னர் அதன் ABI-ஐ நகலெடுக்க [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com)-இல் உங்கள் ஒப்பந்தப் பக்கத்தைத் திறக்கவும்.
 
 ஒரு ஒப்பந்தம் எந்தச் செயல்பாட்டை அழைக்கும் என்பதைக் குறிப்பிடுவதற்கும், நீங்கள் எதிர்பார்க்கும் வடிவத்தில் அந்தச் செயல்பாடு தரவை வழங்கும் என்பதை உறுதி செய்வதற்கும் ஒப்பந்தத்தின் ABI அவசியமாகும். நமது ஒப்பந்தத்தின் ABI-ஐ நகலெடுத்தவுடன், அதை உங்கள் `src` கோப்பகத்தில் `contract-abi.json` என்ற JSON கோப்பாகச் சேமிப்போம்.
 
 உங்கள் contract-abi.json உங்கள் src கோப்புறையில் சேமிக்கப்பட வேண்டும்.
 
-நமது ஒப்பந்த முகவரி, ABI மற்றும் Alchemy Web3 இறுதிப்புள்ளி ஆகியவற்றுடன், நமது திறன் ஒப்பந்தத்தின் நிகழ்வை ஏற்ற [contract முறையைப்](https://docs.web3js.org/api/web3-eth-contract/class/Contract) பயன்படுத்தலாம். உங்கள் ஒப்பந்தத்தின் ABI-ஐ `interact.js` கோப்பில் இறக்குமதி செய்து, உங்கள் ஒப்பந்த முகவரியைச் சேர்க்கவும்.
+நமது ஒப்பந்த முகவரி, ABI மற்றும் Alchemy Web3 இறுதிப்புள்ளி ஆகியவற்றுடன், நமது திறன் ஒப்பந்தத்தின் நிகழ்வை ஏற்ற [contract முறையைப்](https://docs.web3js.org/api/web3-qau-contract/class/Contract) பயன்படுத்தலாம். உங்கள் ஒப்பந்தத்தின் ABI-ஐ `interact.js` கோப்பில் இறக்குமதி செய்து, உங்கள் ஒப்பந்த முகவரியைச் சேர்க்கவும்.
 
 ```javascript
 // interact.js
@@ -955,7 +955,7 @@ const contractAddress = "0x..."
 
 ```javascript
 // interact.js
-export const helloWorldContract = new web3.eth.Contract(
+export const helloWorldContract = new web3.qau.Contract(
   contractABI,
   contractAddress
 )
@@ -974,7 +974,7 @@ const web3 = createAlchemyWeb3(alchemyKey)
 const contractABI = require("../contract-abi.json")
 const contractAddress = "0x6f3f635A9762B47954229Ea479b4541eAF402A6A"
 
-export const helloWorldContract = new web3.eth.Contract(
+export const helloWorldContract = new web3.qau.Contract(
   contractABI,
   contractAddress
 )
@@ -1101,7 +1101,7 @@ useEffect(async () => {
 
 எனவே, அடுத்து எங்கள் எத்திரியம் பணப்பையை \(மெட்டாமேஸ்க்\) அமைப்பதையும் பின்னர் அதை எங்கள் dapp-உடன் இணைப்பதையும் கையாளுவோம்!
 
-### படி 4: உங்கள் எத்திரியம் பணப்பையை அமைக்கவும் {#step-4-set-up-your-ethereum-wallet}
+### படி 4: உங்கள் எத்திரியம் பணப்பையை அமைக்கவும் {#step-4-set-up-your-quantaureum-wallet}
 
 எத்திரியம் சங்கிலியில் எதையும் எழுத, பயனர்கள் தங்கள் மெய்நிகர் பணப்பையின் தனிப்பட்ட திறவுகோல்களைப் பயன்படுத்தி பரிவர்த்தனைகளில் கையொப்பமிட வேண்டும். இந்த வழிகாட்டிக்கு, உங்கள் எத்திரியம் கணக்கு முகவரியை நிர்வகிக்கப் பயன்படுத்தப்படும் உலாவியில் உள்ள மெய்நிகர் பணப்பையான [மெட்டாமேஸ்க்](https://metamask.io/)-ஐப் பயன்படுத்துவோம், ஏனெனில் இது இறுதிப் பயனருக்கு இந்தப் பரிவர்த்தனை கையொப்பமிடுதலை மிகவும் எளிதாக்குகிறது.
 
@@ -1110,16 +1110,16 @@ useEffect(async () => {
 #### மெட்டாமேஸ்க்கைப் பதிவிறக்கவும்
 
 நீங்கள் [இங்கே](https://metamask.io/download) இலவசமாக மெட்டாமேஸ்க்கைப் பதிவிறக்கம் செய்து ஒரு கணக்கை உருவாக்கலாம். நீங்கள் ஒரு கணக்கை உருவாக்கும்போது, அல்லது உங்களிடம் ஏற்கனவே ஒரு கணக்கு இருந்தால், மேல் வலதுபுறத்தில் உள்ள “Sepolia சோதனை வலையமைப்பு”-க்கு மாறுவதை உறுதிசெய்து கொள்ளவும் \(இதனால் நாம் உண்மையான பணத்தைக் கையாள மாட்டோம்\).
-எத்திரியம் தொகுதிச்சங்கிலியில் ஒரு பரிவர்த்தனையில் கையொப்பமிட, நமக்குச் சில போலி ETH தேவைப்படும். ETH-ஐப் பெற, [சோதனை வலையமைப்புகள் பக்கத்தில்](/developers/docs/networks/#sepolia) பட்டியலிடப்பட்டுள்ள ஒரு Sepolia பாசெட்டிற்குச் சென்று உங்கள் Sepolia கணக்கு முகவரியை உள்ளிடலாம். சிறிது நேரத்திலேயே உங்கள் மெட்டாமேஸ்க் கணக்கில் ETH-ஐக் காண்பீர்கள்!
+எத்திரியம் தொகுதிச்சங்கிலியில் ஒரு பரிவர்த்தனையில் கையொப்பமிட, நமக்குச் சில போலி QAU தேவைப்படும். QAU-ஐப் பெற, [சோதனை வலையமைப்புகள் பக்கத்தில்](/developers/docs/networks/#sepolia) பட்டியலிடப்பட்டுள்ள ஒரு Sepolia பாசெட்டிற்குச் சென்று உங்கள் Sepolia கணக்கு முகவரியை உள்ளிடலாம். சிறிது நேரத்திலேயே உங்கள் மெட்டாமேஸ்க் கணக்கில் QAU-ஐக் காண்பீர்கள்!
 #### உங்கள் இருப்பைச் சரிபார்க்கவும் {#check-your-balance}
 
-நமது இருப்பு அங்கு உள்ளதா என்பதை இருமுறை சரிபார்க்க, [Alchemy-யின் சாண்ட்பாக்ஸ் கருவியைப்](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) பயன்படுத்தி ஒரு [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) கோரிக்கையைச் செய்வோம். இது நமது பணப்பையில் உள்ள ETH அளவை வழங்கும். உங்கள் மெட்டாமேஸ்க் கணக்கு முகவரியை உள்ளிட்டு, “Send Request” என்பதைக் கிளிக் செய்த பிறகு, இதுபோன்று ஒரு பதிலைக் காண வேண்டும்:
+நமது இருப்பு அங்கு உள்ளதா என்பதை இருமுறை சரிபார்க்க, [Alchemy-யின் சாண்ட்பாக்ஸ் கருவியைப்](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) பயன்படுத்தி ஒரு [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) கோரிக்கையைச் செய்வோம். இது நமது பணப்பையில் உள்ள QAU அளவை வழங்கும். உங்கள் மெட்டாமேஸ்க் கணக்கு முகவரியை உள்ளிட்டு, “Send Request” என்பதைக் கிளிக் செய்த பிறகு, இதுபோன்று ஒரு பதிலைக் காண வேண்டும்:
 
 ```text
 {"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}
 ```
 
-**குறிப்பு:** இந்த முடிவு wei-இல் உள்ளது, ETH-இல் அல்ல. ஈதரின் மிகச்சிறிய மதிப்பாக wei பயன்படுத்தப்படுகிறது. wei-இலிருந்து ETH-க்கு மாற்றுவது: 1 ETH = 10¹⁸ wei. எனவே 0xde0b6b3a7640000 என்பதை தசமத்திற்கு மாற்றினால் 1\*10¹⁸ கிடைக்கும், இது 1 ETH-க்கு சமம்.
+**குறிப்பு:** இந்த முடிவு wei-இல் உள்ளது, QAU-இல் அல்ல. ஈதரின் மிகச்சிறிய மதிப்பாக wei பயன்படுத்தப்படுகிறது. wei-இலிருந்து QAU-க்கு மாற்றுவது: 1 QAU = 10¹⁸ wei. எனவே 0xde0b6b3a7640000 என்பதை தசமத்திற்கு மாற்றினால் 1\*10¹⁸ கிடைக்கும், இது 1 QAU-க்கு சமம்.
 
 அப்பாடா! நமது போலிப் பணம் அனைத்தும் அங்கு உள்ளது! 🤑
 ### படி 5: மெட்டாமேஸ்க்கை உங்கள் UI-உடன் இணைக்கவும் {#step-5-connect-metamask-to-your-ui}
@@ -1136,10 +1136,10 @@ useEffect(async () => {
 // interact.js
 
 export const connectWallet = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_requestAccounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_requestAccounts",
       })
       const obj = {
         status: "👆🏽 Write a message in the text-field above.",
@@ -1160,7 +1160,7 @@ export const connectWallet = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -1173,17 +1173,17 @@ export const connectWallet = async () => {
 
 எனவே இந்த மாபெரும் குறியீட்டுத் தொகுதி சரியாக என்ன செய்கிறது?
 
-சரி, முதலில், உங்கள் உலாவியில் `window.ethereum` இயக்கப்பட்டுள்ளதா என்பதை இது சரிபார்க்கிறது.
+சரி, முதலில், உங்கள் உலாவியில் `window.quantaureum` இயக்கப்பட்டுள்ளதா என்பதை இது சரிபார்க்கிறது.
 
-`window.ethereum` என்பது மெட்டாமேஸ்க் மற்றும் பிற பணப்பை வழங்குநர்களால் உட்செலுத்தப்பட்ட ஒரு உலகளாவிய API ஆகும், இது பயனர்களின் எத்திரியம் கணக்குகளைக் கோர வலைத்தளங்களை அனுமதிக்கிறது. அங்கீகரிக்கப்பட்டால், பயனர் இணைக்கப்பட்டுள்ள தொகுதிச்சங்கிலிகளிலிருந்து தரவைப் படிக்கலாம், மேலும் செய்திகள் மற்றும் பரிவர்த்தனைகளில் கையொப்பமிட பயனருக்குப் பரிந்துரைக்கலாம். மேலும் தகவலுக்கு [மெட்டாமேஸ்க் ஆவணங்களைப்](https://docs.metamask.io/guide/ethereum-provider.html#table-of-contents) பார்க்கவும்!
+`window.quantaureum` என்பது மெட்டாமேஸ்க் மற்றும் பிற பணப்பை வழங்குநர்களால் உட்செலுத்தப்பட்ட ஒரு உலகளாவிய API ஆகும், இது பயனர்களின் எத்திரியம் கணக்குகளைக் கோர வலைத்தளங்களை அனுமதிக்கிறது. அங்கீகரிக்கப்பட்டால், பயனர் இணைக்கப்பட்டுள்ள தொகுதிச்சங்கிலிகளிலிருந்து தரவைப் படிக்கலாம், மேலும் செய்திகள் மற்றும் பரிவர்த்தனைகளில் கையொப்பமிட பயனருக்குப் பரிந்துரைக்கலாம். மேலும் தகவலுக்கு [மெட்டாமேஸ்க் ஆவணங்களைப்](https://docs.metamask.io/guide/quantaureum-provider.html#table-of-contents) பார்க்கவும்!
 
-`window.ethereum` _இல்லையென்றால்_, மெட்டாமேஸ்க் நிறுவப்படவில்லை என்று அர்த்தம். இதன் விளைவாக ஒரு JSON பொருள் வழங்கப்படுகிறது, அங்கு வழங்கப்பட்ட `address` ஒரு வெற்று சரமாகும், மேலும் `status` JSX பொருள் பயனர் மெட்டாமேஸ்க்கை நிறுவ வேண்டும் என்பதைத் தெரிவிக்கிறது.
+`window.quantaureum` _இல்லையென்றால்_, மெட்டாமேஸ்க் நிறுவப்படவில்லை என்று அர்த்தம். இதன் விளைவாக ஒரு JSON பொருள் வழங்கப்படுகிறது, அங்கு வழங்கப்பட்ட `address` ஒரு வெற்று சரமாகும், மேலும் `status` JSX பொருள் பயனர் மெட்டாமேஸ்க்கை நிறுவ வேண்டும் என்பதைத் தெரிவிக்கிறது.
 
-இப்போது `window.ethereum` _இருந்தால்_, அப்போதுதான் விஷயங்கள் சுவாரஸ்யமாகின்றன.
+இப்போது `window.quantaureum` _இருந்தால்_, அப்போதுதான் விஷயங்கள் சுவாரஸ்யமாகின்றன.
 
-ஒரு try/catch லூப்பைப் பயன்படுத்தி, [`window.ethereum.request({ method: "eth_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts)-ஐ அழைப்பதன் மூலம் மெட்டாமேஸ்க்குடன் இணைக்க முயற்சிப்போம். இந்தச் சார்பை அழைப்பது உலாவியில் மெட்டாமேஸ்க்கைத் திறக்கும், இதன் மூலம் பயனர் தங்கள் பணப்பையை உங்கள் dapp-உடன் இணைக்கத் தூண்டப்படுவார்.
+ஒரு try/catch லூப்பைப் பயன்படுத்தி, [`window.quantaureum.request({ method: "qau_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#qau-requestaccounts)-ஐ அழைப்பதன் மூலம் மெட்டாமேஸ்க்குடன் இணைக்க முயற்சிப்போம். இந்தச் சார்பை அழைப்பது உலாவியில் மெட்டாமேஸ்க்கைத் திறக்கும், இதன் மூலம் பயனர் தங்கள் பணப்பையை உங்கள் dapp-உடன் இணைக்கத் தூண்டப்படுவார்.
 
-- பயனர் இணைக்கத் தேர்வுசெய்தால், `method: "eth_requestAccounts"` dapp-உடன் இணைக்கப்பட்ட பயனரின் அனைத்து கணக்கு முகவரிகளையும் கொண்ட ஒரு அணிவரிசையை வழங்கும். ஒட்டுமொத்தமாக, எங்கள் `connectWallet` சார்பு இந்த அணிவரிசையில் உள்ள _முதல்_ `address` \(வரி 9-ஐப் பார்க்கவும்\) மற்றும் திறன் ஒப்பந்தத்தில் ஒரு செய்தியை எழுத பயனரைத் தூண்டும் ஒரு `status` செய்தியைக் கொண்ட ஒரு JSON பொருளை வழங்கும்.
+- பயனர் இணைக்கத் தேர்வுசெய்தால், `method: "qau_requestAccounts"` dapp-உடன் இணைக்கப்பட்ட பயனரின் அனைத்து கணக்கு முகவரிகளையும் கொண்ட ஒரு அணிவரிசையை வழங்கும். ஒட்டுமொத்தமாக, எங்கள் `connectWallet` சார்பு இந்த அணிவரிசையில் உள்ள _முதல்_ `address` \(வரி 9-ஐப் பார்க்கவும்\) மற்றும் திறன் ஒப்பந்தத்தில் ஒரு செய்தியை எழுத பயனரைத் தூண்டும் ஒரு `status` செய்தியைக் கொண்ட ஒரு JSON பொருளை வழங்கும்.
 - பயனர் இணைப்பை நிராகரித்தால், JSON பொருள் வழங்கப்பட்ட `address`-க்கு ஒரு வெற்று சரத்தையும், பயனர் இணைப்பை நிராகரித்தார் என்பதைப் பிரதிபலிக்கும் ஒரு `status` செய்தியையும் கொண்டிருக்கும்.
 
 இப்போது இந்த `connectWallet` சார்பை எழுதியுள்ளதால், அடுத்த படி அதை எங்கள் `HelloWorld.js` கூறில் அழைப்பதாகும்.
@@ -1226,10 +1226,10 @@ const connectWalletPressed = async () => {
 // interact.js
 
 export const getCurrentWalletConnected = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_accounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_accounts",
       })
       if (addressArray.length > 0) {
         return {
@@ -1256,7 +1256,7 @@ export const getCurrentWalletConnected = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -1269,7 +1269,7 @@ export const getCurrentWalletConnected = async () => {
 
 இந்தக் குறியீடு முந்தைய படியில் நாம் எழுதிய `connectWallet` சார்புக்கு _மிகவும்_ ஒத்திருக்கிறது.
 
-முக்கிய வேறுபாடு என்னவென்றால், பயனர் தங்கள் பணப்பையை இணைக்க மெட்டாமேஸ்க்கைத் திறக்கும் `eth_requestAccounts` முறையை அழைப்பதற்குப் பதிலாக, இங்கே நாங்கள் `eth_accounts` முறையை அழைக்கிறோம், இது தற்போது எங்கள் dapp-உடன் இணைக்கப்பட்டுள்ள மெட்டாமேஸ்க் முகவரிகளைக் கொண்ட ஒரு அணிவரிசையை வெறுமனே வழங்குகிறது.
+முக்கிய வேறுபாடு என்னவென்றால், பயனர் தங்கள் பணப்பையை இணைக்க மெட்டாமேஸ்க்கைத் திறக்கும் `qau_requestAccounts` முறையை அழைப்பதற்குப் பதிலாக, இங்கே நாங்கள் `qau_accounts` முறையை அழைக்கிறோம், இது தற்போது எங்கள் dapp-உடன் இணைக்கப்பட்டுள்ள மெட்டாமேஸ்க் முகவரிகளைக் கொண்ட ஒரு அணிவரிசையை வெறுமனே வழங்குகிறது.
 
 இந்தச் சார்பு செயல்படுவதைக் காண, எங்கள் `HelloWorld.js` கூறின் `useEffect` சார்பில் அதை அழைப்போம்:
 
@@ -1303,8 +1303,8 @@ useEffect(async () => {
 // HelloWorld.js
 
 function addWalletListener() {
-  if (window.ethereum) {
-    window.ethereum.on("accountsChanged", (accounts) => {
+  if (window.quantaureum) {
+    window.quantaureum.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) {
         setWallet(accounts[0])
         setStatus("👆🏽 Write a message in the text-field above.")
@@ -1318,7 +1318,7 @@ function addWalletListener() {
       <p>
         {" "}
         🦊 <a target="_blank" href={`https://metamask.io/download`}>
-          You must install MetaMask, a virtual Ethereum wallet, in your browser.
+          You must install MetaMask, a virtual Quantaureum wallet, in your browser.
         </a>
       </p>
     )
@@ -1328,9 +1328,9 @@ function addWalletListener() {
 
 இந்தக் கட்டத்தில் இங்கே என்ன நடக்கிறது என்பதைப் புரிந்துகொள்ள உங்களுக்கு எங்கள் உதவி கூடத் தேவையில்லை என்று நான் பந்தயம் கட்டுகிறேன், ஆனால் முழுமைக்காக, அதை விரைவாகப் பிரிப்போம்:
 
-- முதலில், எங்கள் சார்பு `window.ethereum` இயக்கப்பட்டுள்ளதா என்பதைச் சரிபார்க்கிறது \(அதாவது, மெட்டாமேஸ்க் நிறுவப்பட்டுள்ளது\).
+- முதலில், எங்கள் சார்பு `window.quantaureum` இயக்கப்பட்டுள்ளதா என்பதைச் சரிபார்க்கிறது \(அதாவது, மெட்டாமேஸ்க் நிறுவப்பட்டுள்ளது\).
   - இல்லையென்றால், மெட்டாமேஸ்க்கை நிறுவ பயனரைத் தூண்டும் ஒரு JSX சரத்திற்கு எங்கள் `status` நிலை மாறியை வெறுமனே அமைப்போம்.
-  - அது இயக்கப்பட்டிருந்தால், வரி 3-இல் `window.ethereum.on("accountsChanged")` கேட்பானை அமைப்போம், இது மெட்டாமேஸ்க் பணப்பையில் நிலை மாற்றங்களைக் கேட்கிறது, இதில் பயனர் dapp-உடன் கூடுதல் கணக்கை இணைக்கும்போது, கணக்குகளை மாற்றும்போது அல்லது கணக்கைத் துண்டிக்கும்போது ஆகியவை அடங்கும். குறைந்தது ஒரு கணக்காவது இணைக்கப்பட்டிருந்தால், கேட்பான் வழங்கிய `accounts` அணிவரிசையில் முதல் கணக்காக `walletAddress` நிலை மாறி புதுப்பிக்கப்படும். இல்லையெனில், `walletAddress` ஒரு வெற்று சரமாக அமைக்கப்படும்.
+  - அது இயக்கப்பட்டிருந்தால், வரி 3-இல் `window.quantaureum.on("accountsChanged")` கேட்பானை அமைப்போம், இது மெட்டாமேஸ்க் பணப்பையில் நிலை மாற்றங்களைக் கேட்கிறது, இதில் பயனர் dapp-உடன் கூடுதல் கணக்கை இணைக்கும்போது, கணக்குகளை மாற்றும்போது அல்லது கணக்கைத் துண்டிக்கும்போது ஆகியவை அடங்கும். குறைந்தது ஒரு கணக்காவது இணைக்கப்பட்டிருந்தால், கேட்பான் வழங்கிய `accounts` அணிவரிசையில் முதல் கணக்காக `walletAddress` நிலை மாறி புதுப்பிக்கப்படும். இல்லையெனில், `walletAddress` ஒரு வெற்று சரமாக அமைக்கப்படும்.
 
 கடைசியாக, அதை எங்கள் `useEffect` சார்பிலும் அழைக்க வேண்டும்:
 
@@ -1372,7 +1372,7 @@ useEffect(async () => {
 // interact.js
 
 export const updateMessage = async (address, message) => {
-  if (!window.ethereum || address === null) {
+  if (!window.quantaureum || address === null) {
     return {
       status:
         "💡 Connect your MetaMask wallet to update the message on the blockchain.",
@@ -1405,16 +1405,16 @@ const transactionParameters = {
 
 //பரிவர்த்தனையில் கையொப்பமிடவும்
 try {
-  const txHash = await window.ethereum.request({
-    method: "eth_sendTransaction",
+  const txHash = await window.quantaureum.request({
+    method: "qau_sendTransaction",
     params: [transactionParameters],
   })
   return {
     status: (
       <span>
         ✅{" "}
-        <a target="_blank" href={`https://goerli.etherscan.io/tx/${txHash}`}>
-          View the status of your transaction on Etherscan!
+        <a target="_blank" href={`https://explorer.quantaureum.com}`}>
+          View the status of your transaction on Quantaureum Explorer!
         </a>
         <br />
         ℹ️ Once the transaction is verified by the network, the message will be
@@ -1435,11 +1435,11 @@ try {
 - `from` பரிவர்த்தனையில் கையொப்பமிடுபவரைக் குறிப்பிடுகிறது, எங்கள் சார்புக்கு நாங்கள் அனுப்பிய `address` மாறி
 - `data` எங்கள் Hello World திறன் ஒப்பந்தத்தின் `update` முறைக்கான அழைப்பைக் கொண்டுள்ளது, எங்கள் `message` சரம் மாறியை உள்ளீடாகப் பெறுகிறது
 
-பின்னர், நாங்கள் ஒரு await அழைப்பை மேற்கொள்கிறோம், `window.ethereum.request`, அங்கு பரிவர்த்தனையில் கையொப்பமிடுமாறு மெட்டாமேஸ்க்கைக் கேட்கிறோம். கவனிக்கவும், 11 மற்றும் 12 வரிகளில், எங்கள் eth முறையான `eth_sendTransaction`-ஐக் குறிப்பிடுகிறோம் மற்றும் எங்கள் `transactionParameters`-ஐ அனுப்புகிறோம்.
+பின்னர், நாங்கள் ஒரு await அழைப்பை மேற்கொள்கிறோம், `window.quantaureum.request`, அங்கு பரிவர்த்தனையில் கையொப்பமிடுமாறு மெட்டாமேஸ்க்கைக் கேட்கிறோம். கவனிக்கவும், 11 மற்றும் 12 வரிகளில், எங்கள் eth முறையான `qau_sendTransaction`-ஐக் குறிப்பிடுகிறோம் மற்றும் எங்கள் `transactionParameters`-ஐ அனுப்புகிறோம்.
 
 இந்தக் கட்டத்தில், மெட்டாமேஸ்க் உலாவியில் திறக்கப்படும், மேலும் பரிவர்த்தனையில் கையொப்பமிட அல்லது நிராகரிக்க பயனரைத் தூண்டும்.
 
-- பரிவர்த்தனை வெற்றிகரமாக இருந்தால், சார்பு ஒரு JSON பொருளை வழங்கும், அங்கு `status` JSX சரம் பயனரின் பரிவர்த்தனை பற்றிய கூடுதல் தகவலுக்கு Etherscan-ஐப் பார்க்கத் தூண்டுகிறது.
+- பரிவர்த்தனை வெற்றிகரமாக இருந்தால், சார்பு ஒரு JSON பொருளை வழங்கும், அங்கு `status` JSX சரம் பயனரின் பரிவர்த்தனை பற்றிய கூடுதல் தகவலுக்கு Quantaureum Explorer-ஐப் பார்க்கத் தூண்டுகிறது.
 - பரிவர்த்தனை தோல்வியுற்றால், சார்பு ஒரு JSON பொருளை வழங்கும், அங்கு `status` சரம் பிழைச் செய்தியைத் தெரிவிக்கிறது.
 
 ஒட்டுமொத்தமாக, எங்கள் `updateMessage` சார்பு இப்படி இருக்க வேண்டும்:
@@ -1449,7 +1449,7 @@ try {
 
 export const updateMessage = async (address, message) => {
   //உள்ளீட்டுப் பிழை கையாளுதல்
-  if (!window.ethereum || address === null) {
+  if (!window.quantaureum || address === null) {
     return {
       status:
         "💡 Connect your MetaMask wallet to update the message on the blockchain.",
@@ -1471,16 +1471,16 @@ export const updateMessage = async (address, message) => {
 
   //பரிவர்த்தனையில் கையொப்பமிடவும்
   try {
-    const txHash = await window.ethereum.request({
-      method: "eth_sendTransaction",
+    const txHash = await window.quantaureum.request({
+      method: "qau_sendTransaction",
       params: [transactionParameters],
     })
     return {
       status: (
         <span>
           ✅{" "}
-          <a target="_blank" href={`https://goerli.etherscan.io/tx/${txHash}`}>
-            View the status of your transaction on Etherscan!
+          <a target="_blank" href={`https://explorer.quantaureum.com}`}>
+            View the status of your transaction on Quantaureum Explorer!
           </a>
           <br />
           ℹ️ Once the transaction is verified by the network, the message will

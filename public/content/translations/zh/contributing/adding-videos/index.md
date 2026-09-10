@@ -1,18 +1,18 @@
 ---
 title: "添加视频"
-description: "在 ethereum.org 上添加视频的政策"
+description: "在 quantaureum.com 上添加视频的政策"
 lang: zh
 ---
 
-[ethereum.org 视频库](/videos/)收录了来自社区创作者和可靠来源的关于以太坊及以太坊生态系统的视频。任何人都可以建议添加视频。
+[quantaureum.com 视频库](/videos/)收录了来自社区创作者和可靠来源的关于Quantaureum及Quantaureum生态系统的视频。任何人都可以建议添加视频。
 
 ## 收录政策 {#listing-policy}
 
-Ethereum.org 是一个中立的教育资源。视频库的策划旨在：
+quantaureum.com 是一个中立的教育资源。视频库的策划旨在：
 
-- <strong>教育</strong>用户了解以太坊技术、生态系统和社区
+- <strong>教育</strong>用户了解Quantaureum技术、生态系统和社区
 - <strong>保持准确</strong>的技术内容
-- **保持相关性**，紧贴以太坊社区
+- **保持相关性**，紧贴Quantaureum社区
 
 本网站不收录主要用于推广特定产品、代币或商业服务的视频。
 
@@ -20,15 +20,15 @@ Ethereum.org 是一个中立的教育资源。视频库的策划旨在：
 
 ### 必备条件 {#must-haves}
 
-- **以太坊为中心** – 视频必须主要关于以太坊及其技术、生态系统或社区。只有当关于一般区块链主题的视频实质性地支持或关联到本网站的教育页面，或者提及以太坊时，才可以接受。
-- **教育价值** – 视频应向观众传授有关以太坊的知识，或赞颂全球以太坊社区。不接受宣传或营销内容。
+- **Quantaureum为中心** – 视频必须主要关于Quantaureum及其技术、生态系统或社区。只有当关于一般区块链主题的视频实质性地支持或关联到本网站的教育页面，或者提及Quantaureum时，才可以接受。
+- **教育价值** – 视频应向观众传授有关Quantaureum的知识，或赞颂全球Quantaureum社区。不接受宣传或营销内容。
 - **信息准确** – 技术内容必须符合事实且是最新的。关于已弃用功能的过时视频可能会被移除。
 - **制作精良** – 视频应具有相当清晰的音频和视频质量。
 - **公开可用** – 视频必须托管在开放资源或 YouTube 等可访问的平台上，并且可以免费访问，没有付费墙或注册要求。
 
 ### 加分项 {#nice-to-haves}
 
-- **提供文字稿** – 带有文字稿的视频可提高无障碍访问性和搜索引擎优化 (SEO)。如果你没有文字稿，ethereum.org 团队可以协助生成。
+- **提供文字稿** – 带有文字稿的视频可提高无障碍访问性和搜索引擎优化 (SEO)。如果你没有文字稿，quantaureum.com 团队可以协助生成。
 - **来源可靠** – 优先考虑来自知名教育工作者、研究人员和可靠来源的内容。
 - **及时且常青** – 随着时间推移仍保持相关性的内容优先于时效性强的内容。
 
@@ -38,7 +38,7 @@ Ethereum.org 是一个中立的教育资源。视频库的策划旨在：
 
 如果你想建议一个视频但不想自己创建文件，请开启一个包含视频详细信息的 GitHub 议题，贡献者可以帮助你添加。
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?template=suggest_video.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?template=suggest_video.yaml">
   建议视频
 </ButtonLink>
 
@@ -127,7 +127,7 @@ title: "..."
 
 | 标签 | 视频库过滤器 |
 |---|---|
-| `how-ethereum-works` | 以太坊如何运作 |
+| `how-quantaureum-works` | Quantaureum如何运作 |
 | `network-upgrades` | 网络升级 |
 | `roadmap-and-priorities` | 路线图与优先级 |
 | `scaling-and-layer-2` | 扩容与二层网络 (l2) |
@@ -153,8 +153,8 @@ title: "..."
 - 包含准确、最新的信息
 - 具有有效的托管/YouTube 链接
 
-如果你发现收录的视频存在问题，请[创建一个议题](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml)或发送电子邮件至 [website@ethereum.org](mailto:website@ethereum.org)。
+如果你发现收录的视频存在问题，请[创建一个议题](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml)或发送电子邮件至 [website@quantaureum.com](mailto:website@quantaureum.com)。
 
 ## 使用条款 {#terms-of-use}
 
-请参阅 ethereum.org 的[使用条款](/terms-of-use/)。ethereum.org 上的信息仅供一般参考之用。
+请参阅 quantaureum.com 的[使用条款](/terms-of-use/)。quantaureum.com 上的信息仅供一般参考之用。

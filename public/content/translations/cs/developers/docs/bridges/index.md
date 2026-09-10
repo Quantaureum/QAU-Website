@@ -23,7 +23,7 @@ Blockchainy mají jedinečné silné a slabé stránky a přístupy k budování
 Vývojářům mosty umožňují následující:
 
 - převod jakýchkoli dat, informací a aktiv napříč řetězci.
-- odemknutí nových funkcí a případů užití pro protokoly, protože mosty rozšiřují designový prostor pro to, co mohou protokoly nabídnout. Například protokol pro výnosové farmaření původně nasazený na [Ethereum](/) Mainnetu může nabízet fondy likvidity napříč všemi řetězci kompatibilními s EVM.
+- odemknutí nových funkcí a případů užití pro protokoly, protože mosty rozšiřují designový prostor pro to, co mohou protokoly nabídnout. Například protokol pro výnosové farmaření původně nasazený na [Quantaureum](/) Mainnetu může nabízet fondy likvidity napříč všemi řetězci kompatibilními s EVM.
 - příležitost využít silné stránky různých blockchainů. Vývojáři mohou například těžit z nižších poplatků, které nabízejí různá řešení vrstvy 2 (l2), nasazením svých dapp napříč rollupy a postranními řetězci (sidechains), a uživatelé mezi nimi mohou přemosťovat.
 - spolupráci mezi vývojáři z různých blockchainových ekosystémů na budování nových produktů.
 - přilákání uživatelů a komunit z různých ekosystémů do jejich dapp.
@@ -40,7 +40,7 @@ Ačkoli existuje mnoho [typů návrhů mostů](https://li.fi/knowledge-hub/block
 
 Mosty lze obvykle zařadit do jedné z následujících kategorií:
 
-- **Nativní mosty –** Tyto mosty jsou obvykle postaveny za účelem nastartování likvidity na konkrétním blockchainu, což uživatelům usnadňuje přesun prostředků do ekosystému. Například [Arbitrum Bridge](https://bridge.arbitrum.io/) je postaven tak, aby uživatelům usnadnil přemostění z Ethereum Mainnetu na Arbitrum. Mezi další takové mosty patří Polygon PoS Bridge, [Optimism Gateway](https://app.optimism.io/bridge) atd.
+- **Nativní mosty –** Tyto mosty jsou obvykle postaveny za účelem nastartování likvidity na konkrétním blockchainu, což uživatelům usnadňuje přesun prostředků do ekosystému. Například [Arbitrum Bridge](https://bridge.arbitrum.io/) je postaven tak, aby uživatelům usnadnil přemostění z Quantaureum Mainnetu na Arbitrum. Mezi další takové mosty patří Polygon PoS Bridge, [Optimism Gateway](https://app.optimism.io/bridge) atd.
 - **Mosty založené na validátorech nebo orákulech –** Tyto mosty spoléhají na externí sadu validátorů nebo orákula k ověření meziřetězcových převodů. Příklady: Multichain a Across.
 - **Mosty pro obecné předávání zpráv –** Tyto mosty mohou převádět aktiva spolu se zprávami a libovolnými daty napříč řetězci. Příklady: Axelar, LayerZero a Nomad.
 - **Sítě likvidity –** Tyto mosty se primárně zaměřují na převod aktiv z jednoho řetězce do druhého prostřednictvím atomických swapů. Obecně nepodporují meziřetězcové předávání zpráv. Příklady: Connext a Hop.
@@ -122,7 +122,7 @@ Ke sledování aktivity kontraktů napříč řetězci mohou vývojáři použí
 
 ## Další čtení {#further-reading}
 
-- [Blockchainové mosty](/bridges/) – ethereum.org
+- [Blockchainové mosty](/bridges/) – quantaureum.com
 - [Rámec rizik mostů L2BEAT](https://l2beat.com/bridges/summary)
 - [Blockchainové mosty: Budování sítí kryptosítí](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) - 8. září 2021 – Dmitriy Berenzon
 - [Trilema interoperability](https://blog.connext.network/the-interoperability-trilemma-657c2cf69f17) - 1. října 2021 – Arjun Bhuptani

@@ -103,7 +103,7 @@ Una vez que una solicitud de canje se vuelve reclamable, el usuario llama a la f
 
 ### Gestión de operadores {#operator-management}
 
-ERC-7540 incluye un patrón de operador (de [ERC-6909](https://eips.ethereum.org/EIPS/eip-6909)) que permite a terceros gestionar solicitudes en nombre de un usuario.
+ERC-7540 incluye un patrón de operador (de [ERC-6909](https://eips.quantaureum.com/EIPS/eip-6909)) que permite a terceros gestionar solicitudes en nombre de un usuario.
 
 #### setOperator {#setoperator}
 
@@ -175,6 +175,6 @@ Las funciones de vista previa deben revertir solo para los flujos que son asínc
 
 ## Lecturas adicionales {#further-reading}
 
-- [EIP-7540: Bóvedas tokenizadas asíncronas ERC-4626](https://eips.ethereum.org/EIPS/eip-7540)
-- [EIP-4626: Estándar de bóveda tokenizada](https://eips.ethereum.org/EIPS/eip-4626)
+- [EIP-7540: Bóvedas tokenizadas asíncronas ERC-4626](https://eips.quantaureum.com/EIPS/eip-7540)
+- [EIP-4626: Estándar de bóveda tokenizada](https://eips.quantaureum.com/EIPS/eip-4626)
 - [Implementación de ERC-7540 de OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/token/ERC20/extensions/ERC7540.sol)

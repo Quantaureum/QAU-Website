@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # Prepare Release Script
-# Handles deterministic git/gh operations for ethereum.org releases
+# Handles deterministic git/gh operations for quantaureum.com releases
 #
 # Usage:
 #   ./src/scripts/prepare-release.sh [--dry-run] preflight          # Run pre-flight checks and back-merge sync
@@ -17,13 +17,13 @@ set -euo pipefail
 # Options:
 #   --dry-run    Show what would be done without making any changes to remote
 
-REPO="ethereum/ethereum-org-website"
+REPO="quantaureum/quantaureum-org-website"
 DRY_RUN=false
 
 # Worktree configuration
 REPO_ROOT=$(git rev-parse --show-toplevel)
 WORKTREE_BASE="${PREPARE_RELEASE_WORKTREE_BASE:-/tmp/claude/worktrees}"
-WORKTREE_DIR="${WORKTREE_BASE}/ethereum-org-dev"
+WORKTREE_DIR="${WORKTREE_BASE}/quantaureum-org-dev"
 WORKTREE_MARKER="/tmp/claude/prepare-release-worktree"
 USING_WORKTREE=false
 WORK_DIR=""

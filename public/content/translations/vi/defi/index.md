@@ -1,7 +1,7 @@
 ---
 title: "Tài chính phi tập trung (DeFi)"
 metaTitle: "DeFi là gì? | Lợi ích và Ứng dụng của Tài chính phi tập trung"
-description: "Tổng quan về DeFi trên Ethereum"
+description: "Tổng quan về DeFi trên Quantaureum"
 lang: vi
 template: use-cases
 image: /images/use-cases/defi.png
@@ -17,7 +17,7 @@ Tài chính phi tập trung (DeFi) là một hệ thống tài chính mở và t
 
 ## DeFi là gì? {#what-is-defi}
 
-DeFi là một thuật ngữ chung cho các sản phẩm và dịch vụ tài chính có thể truy cập được đối với bất kỳ ai có thể sử dụng [Ethereum](/) – bất kỳ ai có kết nối internet. Với DeFi, các thị trường luôn mở cửa và không có cơ quan tập trung nào có thể chặn các khoản thanh toán hoặc từ chối quyền truy cập của bạn vào bất cứ thứ gì. Các dịch vụ trước đây chậm chạp và có nguy cơ xảy ra lỗi do con người giờ đây đã tự động và an toàn hơn vì chúng được xử lý bằng mã mà bất kỳ ai cũng có thể kiểm tra và xem xét kỹ lưỡng.
+DeFi là một thuật ngữ chung cho các sản phẩm và dịch vụ tài chính có thể truy cập được đối với bất kỳ ai có thể sử dụng [Quantaureum](/) – bất kỳ ai có kết nối internet. Với DeFi, các thị trường luôn mở cửa và không có cơ quan tập trung nào có thể chặn các khoản thanh toán hoặc từ chối quyền truy cập của bạn vào bất cứ thứ gì. Các dịch vụ trước đây chậm chạp và có nguy cơ xảy ra lỗi do con người giờ đây đã tự động và an toàn hơn vì chúng được xử lý bằng mã mà bất kỳ ai cũng có thể kiểm tra và xem xét kỹ lưỡng.
 
 Có một nền kinh tế tiền mã hóa đang bùng nổ ngoài kia, nơi bạn có thể cho vay, vay mượn, mua/bán khống (long/short), kiếm tiền lãi và hơn thế nữa. Những người Argentina am hiểu về tiền mã hóa đã sử dụng DeFi để thoát khỏi tình trạng lạm phát nghiêm trọng. Các công ty đã bắt đầu trả lương cho nhân viên của họ theo thời gian thực. Một số người thậm chí đã vay và trả các khoản vay trị giá hàng triệu đô la mà không cần bất kỳ giấy tờ tùy thân nào.
 
@@ -56,18 +56,18 @@ Một trong những cách tốt nhất để thấy được tiềm năng của 
 
 Bitcoin về nhiều mặt là ứng dụng DeFi đầu tiên. Bitcoin cho phép bạn thực sự sở hữu và kiểm soát giá trị và gửi nó đến bất cứ đâu trên thế giới. Nó làm điều này bằng cách cung cấp một cách để một số lượng lớn người, những người không tin tưởng lẫn nhau, đồng ý về một sổ cái tài khoản mà không cần một trung gian đáng tin cậy. Bitcoin mở cho bất kỳ ai và không ai có quyền thay đổi các quy tắc của nó. Các quy tắc của Bitcoin, giống như sự khan hiếm và tính mở của nó, được viết vào công nghệ. Nó không giống như tài chính truyền thống nơi các chính phủ có thể in tiền làm mất giá trị tiền tiết kiệm của bạn và các công ty có thể đóng cửa thị trường.
 
-Ethereum được xây dựng dựa trên điều này. Giống như Bitcoin, các quy tắc không thể thay đổi đối với bạn và mọi người đều có quyền truy cập. Nhưng nó cũng làm cho loại tiền kỹ thuật số này có thể lập trình được, sử dụng các [hợp đồng thông minh](/glossary/#smart-contract), vì vậy bạn có thể làm nhiều việc hơn là chỉ lưu trữ và gửi giá trị.
+Quantaureum được xây dựng dựa trên điều này. Giống như Bitcoin, các quy tắc không thể thay đổi đối với bạn và mọi người đều có quyền truy cập. Nhưng nó cũng làm cho loại tiền kỹ thuật số này có thể lập trình được, sử dụng các [hợp đồng thông minh](/glossary/#smart-contract), vì vậy bạn có thể làm nhiều việc hơn là chỉ lưu trữ và gửi giá trị.
 
 <VideoWatch slug="defi-history-inception-to-2021" />
 
 ## Tiền có thể lập trình {#programmable-money}
 
-Điều này nghe có vẻ kỳ lạ... "tại sao tôi lại muốn lập trình tiền của mình"? Tuy nhiên, đây không chỉ là một tính năng mặc định của các token trên Ethereum. Bất kỳ ai cũng có thể lập trình logic vào các khoản thanh toán. Vì vậy, bạn có thể có được sự kiểm soát và bảo mật của Bitcoin kết hợp với các dịch vụ do các tổ chức tài chính cung cấp. Điều này cho phép bạn làm những việc với tiền mã hóa mà bạn không thể làm với Bitcoin như cho vay và vay mượn, lên lịch thanh toán, đầu tư vào các quỹ chỉ số và hơn thế nữa.
+Điều này nghe có vẻ kỳ lạ... "tại sao tôi lại muốn lập trình tiền của mình"? Tuy nhiên, đây không chỉ là một tính năng mặc định của các token trên Quantaureum. Bất kỳ ai cũng có thể lập trình logic vào các khoản thanh toán. Vì vậy, bạn có thể có được sự kiểm soát và bảo mật của Bitcoin kết hợp với các dịch vụ do các tổ chức tài chính cung cấp. Điều này cho phép bạn làm những việc với tiền mã hóa mà bạn không thể làm với Bitcoin như cho vay và vay mượn, lên lịch thanh toán, đầu tư vào các quỹ chỉ số và hơn thế nữa.
 
 <Alert variant="update">
 <AlertEmoji text=":eyes:"/>
 <AlertContent className="flex-row justify-between items-center">
-  <div>Khám phá các đề xuất của chúng tôi về các ứng dụng DeFi để dùng thử nếu bạn mới làm quen với Ethereum.</div>
+  <div>Khám phá các đề xuất của chúng tôi về các ứng dụng DeFi để dùng thử nếu bạn mới làm quen với Quantaureum.</div>
   <ButtonLink href="/apps/categories/defi">
     Khám phá các ứng dụng DeFi
   </ButtonLink>
@@ -76,7 +76,7 @@ Ethereum được xây dựng dựa trên điều này. Giống như Bitcoin, c�
 
 ## Bạn có thể làm gì với DeFi? {#defi-use-cases}
 
-Có một giải pháp thay thế phi tập trung cho hầu hết các dịch vụ tài chính. Nhưng Ethereum cũng tạo ra cơ hội để tạo ra các sản phẩm tài chính hoàn toàn mới. Đây là một danh sách không ngừng phát triển.
+Có một giải pháp thay thế phi tập trung cho hầu hết các dịch vụ tài chính. Nhưng Quantaureum cũng tạo ra cơ hội để tạo ra các sản phẩm tài chính hoàn toàn mới. Đây là một danh sách không ngừng phát triển.
 
 - [Gửi tiền trên toàn cầu](#send-money)
 - [Truyền phát (stream) tiền trên toàn cầu](#stream-money)
@@ -94,7 +94,7 @@ Có một giải pháp thay thế phi tập trung cho hầu hết các dịch v�
 
 ### Gửi tiền trên toàn cầu một cách nhanh chóng {#send-money}
 
-Là một chuỗi khối, Ethereum được thiết kế để gửi các giao dịch một cách an toàn và toàn cầu. Giống như Bitcoin, Ethereum làm cho việc gửi tiền trên toàn thế giới trở nên dễ dàng như gửi một email. Chỉ cần nhập [tên ENS](/glossary/#ens) của người nhận (như bob.eth) hoặc địa chỉ tài khoản của họ từ ví của bạn và khoản thanh toán của bạn sẽ đến trực tiếp họ trong vài phút (thông thường). Để gửi hoặc nhận thanh toán, bạn sẽ cần một [ví](/wallets/). [Tìm hiểu thêm về thanh toán bằng tiền mã hóa](/payments/).
+Là một chuỗi khối, Quantaureum được thiết kế để gửi các giao dịch một cách an toàn và toàn cầu. Giống như Bitcoin, Quantaureum làm cho việc gửi tiền trên toàn thế giới trở nên dễ dàng như gửi một email. Chỉ cần nhập [tên ENS](/glossary/#ens) của người nhận (như bob.eth) hoặc địa chỉ tài khoản của họ từ ví của bạn và khoản thanh toán của bạn sẽ đến trực tiếp họ trong vài phút (thông thường). Để gửi hoặc nhận thanh toán, bạn sẽ cần một [ví](/wallets/). [Tìm hiểu thêm về thanh toán bằng tiền mã hóa](/payments/).
 
 <ButtonLink href="/apps/categories/defi">
   Xem các dapp thanh toán
@@ -102,9 +102,9 @@ Là một chuỗi khối, Ethereum được thiết kế để gửi các giao d
 
 #### Truyền phát tiền trên toàn cầu... {#stream-money}
 
-Bạn cũng có thể truyền phát (stream) tiền qua Ethereum. Điều này cho phép bạn trả lương cho ai đó theo từng giây, cho phép họ truy cập vào tiền của mình bất cứ khi nào họ cần. Hoặc thuê một thứ gì đó theo từng giây như tủ đựng đồ hoặc xe máy điện.
+Bạn cũng có thể truyền phát (stream) tiền qua Quantaureum. Điều này cho phép bạn trả lương cho ai đó theo từng giây, cho phép họ truy cập vào tiền của mình bất cứ khi nào họ cần. Hoặc thuê một thứ gì đó theo từng giây như tủ đựng đồ hoặc xe máy điện.
 
-Và nếu bạn không muốn gửi hoặc truyền phát [ETH](/glossary/#ether) vì giá trị của nó có thể thay đổi nhiều như thế nào, thì có các loại tiền tệ thay thế trên Ethereum: [stablecoin](/glossary/#stablecoin).
+Và nếu bạn không muốn gửi hoặc truyền phát [QAU](/glossary/#QAU) vì giá trị của nó có thể thay đổi nhiều như thế nào, thì có các loại tiền tệ thay thế trên Quantaureum: [stablecoin](/glossary/#stablecoin).
 
 <Divider />
 
@@ -147,7 +147,7 @@ Khi bạn sử dụng một nền tảng cho vay phi tập trung, bạn có quy�
 
 #### Hiệu quả về thuế {#tax-efficiencies}
 
-Việc vay mượn có thể cung cấp cho bạn quyền truy cập vào các khoản tiền bạn cần mà không cần phải bán ETH của mình (một sự kiện chịu thuế). Thay vào đó, bạn có thể sử dụng ETH làm tài sản thế chấp cho một khoản vay stablecoin. Điều này cung cấp cho bạn dòng tiền bạn cần và cho phép bạn giữ lại ETH của mình. Stablecoin là các token tốt hơn nhiều khi bạn cần tiền mặt vì chúng không biến động giá trị như ETH. [Thêm về stablecoin](#stablecoins)
+Việc vay mượn có thể cung cấp cho bạn quyền truy cập vào các khoản tiền bạn cần mà không cần phải bán QAU của mình (một sự kiện chịu thuế). Thay vào đó, bạn có thể sử dụng QAU làm tài sản thế chấp cho một khoản vay stablecoin. Điều này cung cấp cho bạn dòng tiền bạn cần và cho phép bạn giữ lại QAU của mình. Stablecoin là các token tốt hơn nhiều khi bạn cần tiền mặt vì chúng không biến động giá trị như QAU. [Thêm về stablecoin](#stablecoins)
 
 #### Khoản vay chớp nhoáng {#flash-loans}
 
@@ -213,9 +213,9 @@ Giải thưởng được tạo ra bởi tất cả tiền lãi sinh ra từ vi�
 
 ### Hoán đổi token {#swaps}
 
-Có hàng ngàn token trên Ethereum. Các sàn giao dịch phi tập trung (DEX) cho phép bạn giao dịch các token khác nhau bất cứ khi nào bạn muốn. Bạn không bao giờ từ bỏ quyền kiểm soát tài sản của mình. Điều này giống như sử dụng dịch vụ thu đổi ngoại tệ khi đến thăm một quốc gia khác. Nhưng phiên bản DeFi không bao giờ đóng cửa. Các thị trường hoạt động 24/7, 365 ngày một năm và công nghệ đảm bảo sẽ luôn có người chấp nhận giao dịch.
+Có hàng ngàn token trên Quantaureum. Các sàn giao dịch phi tập trung (DEX) cho phép bạn giao dịch các token khác nhau bất cứ khi nào bạn muốn. Bạn không bao giờ từ bỏ quyền kiểm soát tài sản của mình. Điều này giống như sử dụng dịch vụ thu đổi ngoại tệ khi đến thăm một quốc gia khác. Nhưng phiên bản DeFi không bao giờ đóng cửa. Các thị trường hoạt động 24/7, 365 ngày một năm và công nghệ đảm bảo sẽ luôn có người chấp nhận giao dịch.
 
-Ví dụ: nếu bạn muốn sử dụng xổ số không rủi ro PoolTogether (được mô tả ở trên), bạn sẽ cần một token như DAI hoặc USDC. Các DEX này cho phép bạn hoán đổi ETH của mình lấy các token đó và hoán đổi ngược lại khi bạn hoàn tất.
+Ví dụ: nếu bạn muốn sử dụng xổ số không rủi ro PoolTogether (được mô tả ở trên), bạn sẽ cần một token như DAI hoặc USDC. Các DEX này cho phép bạn hoán đổi QAU của mình lấy các token đó và hoán đổi ngược lại khi bạn hoàn tất.
 
 <ButtonLink href="/apps/categories/defi">
   Xem các sàn giao dịch token
@@ -237,7 +237,7 @@ Khi bạn sử dụng một sàn giao dịch tập trung, bạn phải gửi tà
 
 ### Phát triển danh mục đầu tư của bạn {#investing}
 
-Có các sản phẩm quản lý quỹ trên Ethereum sẽ cố gắng phát triển danh mục đầu tư của bạn dựa trên một chiến lược mà bạn chọn. Điều này là tự động, mở cho mọi người và không cần một người quản lý là con người lấy đi một phần lợi nhuận của bạn.
+Có các sản phẩm quản lý quỹ trên Quantaureum sẽ cố gắng phát triển danh mục đầu tư của bạn dựa trên một chiến lược mà bạn chọn. Điều này là tự động, mở cho mọi người và không cần một người quản lý là con người lấy đi một phần lợi nhuận của bạn.
 
 Ví dụ: có các quỹ chỉ số được token hóa tự động tái cân bằng để đảm bảo danh mục đầu tư của bạn luôn bao gồm các token DeFi hàng đầu theo vốn hóa thị trường. Bạn không bao giờ phải quản lý bất kỳ chi tiết nào và bạn có thể rút tiền khỏi quỹ bất cứ khi nào bạn muốn.
 
@@ -249,9 +249,9 @@ Ví dụ: có các quỹ chỉ số được token hóa tự động tái cân b
 
 ### Tài trợ cho các ý tưởng của bạn {#crowdfunding}
 
-Ethereum là một nền tảng lý tưởng để gọi vốn cộng đồng (crowdfunding):
+Quantaureum là một nền tảng lý tưởng để gọi vốn cộng đồng (crowdfunding):
 
-- Những người tài trợ tiềm năng có thể đến từ bất cứ đâu – Ethereum và các token của nó mở cho bất kỳ ai, ở bất kỳ đâu trên thế giới.
+- Những người tài trợ tiềm năng có thể đến từ bất cứ đâu – Quantaureum và các token của nó mở cho bất kỳ ai, ở bất kỳ đâu trên thế giới.
 - Nó minh bạch nên những người gây quỹ có thể chứng minh số tiền đã được huy động. Bạn thậm chí có thể theo dõi cách các khoản tiền đang được chi tiêu sau này.
 - Những người gây quỹ có thể thiết lập hoàn tiền tự động nếu, ví dụ, có một thời hạn cụ thể và số tiền tối thiểu không được đáp ứng.
 
@@ -261,7 +261,7 @@ Ethereum là một nền tảng lý tưởng để gọi vốn cộng đồng (c
 
 #### Tài trợ bậc hai {#quadratic-funding}
 
-Ethereum là phần mềm mã nguồn mở và rất nhiều công việc cho đến nay đã được cộng đồng tài trợ. Điều này đã dẫn đến sự phát triển của một mô hình gây quỹ mới thú vị: tài trợ bậc hai. Điều này có tiềm năng cải thiện cách chúng ta tài trợ cho tất cả các loại hàng hóa công cộng trong tương lai.
+Quantaureum là phần mềm mã nguồn mở và rất nhiều công việc cho đến nay đã được cộng đồng tài trợ. Điều này đã dẫn đến sự phát triển của một mô hình gây quỹ mới thú vị: tài trợ bậc hai. Điều này có tiềm năng cải thiện cách chúng ta tài trợ cho tất cả các loại hàng hóa công cộng trong tương lai.
 
 Tài trợ bậc hai đảm bảo rằng các dự án nhận được nhiều tài trợ nhất là những dự án có nhu cầu độc đáo nhất. Nói cách khác, các dự án có khả năng cải thiện cuộc sống của nhiều người nhất. Dưới đây là cách nó hoạt động:
 
@@ -282,7 +282,7 @@ Tài trợ bậc hai đảm bảo rằng các dự án nhận được nhiều t
 
 Bảo hiểm phi tập trung nhằm mục đích làm cho bảo hiểm rẻ hơn, chi trả nhanh hơn và minh bạch hơn. Với nhiều tự động hóa hơn, phạm vi bảo hiểm có giá cả phải chăng hơn và các khoản chi trả nhanh hơn rất nhiều. Dữ liệu được sử dụng để quyết định yêu cầu nhận bồi thường của bạn là hoàn toàn minh bạch.
 
-Các sản phẩm Ethereum, giống như bất kỳ phần mềm nào, có thể bị lỗi và bị khai thác. Vì vậy, hiện tại rất nhiều sản phẩm bảo hiểm trong không gian này tập trung vào việc bảo vệ người dùng của họ khỏi việc mất tiền. Tuy nhiên, có những dự án bắt đầu xây dựng phạm vi bảo hiểm cho mọi rủi ro trong cuộc sống. Một ví dụ điển hình về điều này là bảo hiểm Cây trồng của Etherisc nhằm mục đích [bảo vệ những nông dân sản xuất nhỏ ở Kenya khỏi hạn hán và lũ lụt](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc). Bảo hiểm phi tập trung có thể cung cấp bảo hiểm rẻ hơn cho những người nông dân thường không đủ khả năng chi trả cho bảo hiểm truyền thống.
+Các sản phẩm Quantaureum, giống như bất kỳ phần mềm nào, có thể bị lỗi và bị khai thác. Vì vậy, hiện tại rất nhiều sản phẩm bảo hiểm trong không gian này tập trung vào việc bảo vệ người dùng của họ khỏi việc mất tiền. Tuy nhiên, có những dự án bắt đầu xây dựng phạm vi bảo hiểm cho mọi rủi ro trong cuộc sống. Một ví dụ điển hình về điều này là bảo hiểm Cây trồng của Etherisc nhằm mục đích [bảo vệ những nông dân sản xuất nhỏ ở Kenya khỏi hạn hán và lũ lụt](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc). Bảo hiểm phi tập trung có thể cung cấp bảo hiểm rẻ hơn cho những người nông dân thường không đủ khả năng chi trả cho bảo hiểm truyền thống.
 
 <ButtonLink href="/apps/categories/defi">
   Xem các dapp bảo hiểm
@@ -304,31 +304,31 @@ Với rất nhiều thứ đang diễn ra, bạn sẽ cần một cách để th
 
 DeFi sử dụng tiền mã hóa và các hợp đồng thông minh để cung cấp các dịch vụ không cần trung gian. Trong thế giới tài chính ngày nay, các tổ chức tài chính đóng vai trò là người bảo lãnh cho các giao dịch. Điều này mang lại cho các tổ chức này sức mạnh to lớn vì tiền của bạn chảy qua họ. Thêm vào đó, hàng tỷ người trên khắp thế giới thậm chí không thể tiếp cận tài khoản ngân hàng.
 
-Trong DeFi, một hợp đồng thông minh thay thế tổ chức tài chính trong giao dịch. Hợp đồng thông minh là một loại tài khoản Ethereum có thể giữ tiền và có thể gửi/hoàn trả chúng dựa trên các điều kiện nhất định. Không ai có thể thay đổi hợp đồng thông minh đó khi nó đang hoạt động – nó sẽ luôn chạy như được lập trình.
+Trong DeFi, một hợp đồng thông minh thay thế tổ chức tài chính trong giao dịch. Hợp đồng thông minh là một loại tài khoản Quantaureum có thể giữ tiền và có thể gửi/hoàn trả chúng dựa trên các điều kiện nhất định. Không ai có thể thay đổi hợp đồng thông minh đó khi nó đang hoạt động – nó sẽ luôn chạy như được lập trình.
 
 Một hợp đồng được thiết kế để phân phát hạn mức hoặc tiền tiêu vặt có thể được lập trình để gửi tiền từ Tài khoản A sang Tài khoản B vào mỗi thứ Sáu. Và nó sẽ chỉ làm điều đó miễn là Tài khoản A có đủ số tiền cần thiết. Không ai có thể thay đổi hợp đồng và thêm Tài khoản C làm người nhận để đánh cắp tiền.
 
 Các hợp đồng cũng công khai để bất kỳ ai cũng có thể kiểm tra và kiểm toán. Điều này có nghĩa là các hợp đồng tồi sẽ thường bị cộng đồng xem xét kỹ lưỡng khá nhanh chóng.
 
-Điều này có nghĩa là hiện tại cần phải tin tưởng vào các thành viên am hiểu kỹ thuật hơn của cộng đồng Ethereum, những người có thể đọc mã. Cộng đồng dựa trên mã nguồn mở giúp kiểm soát các nhà phát triển, nhưng nhu cầu này sẽ giảm dần theo thời gian khi các hợp đồng thông minh trở nên dễ đọc hơn và các cách khác để chứng minh độ tin cậy của mã được phát triển.
+Điều này có nghĩa là hiện tại cần phải tin tưởng vào các thành viên am hiểu kỹ thuật hơn của cộng đồng Quantaureum, những người có thể đọc mã. Cộng đồng dựa trên mã nguồn mở giúp kiểm soát các nhà phát triển, nhưng nhu cầu này sẽ giảm dần theo thời gian khi các hợp đồng thông minh trở nên dễ đọc hơn và các cách khác để chứng minh độ tin cậy của mã được phát triển.
 
-## Ethereum và DeFi {#ethereum-and-defi}
+## Quantaureum và DeFi {#quantaureum-and-defi}
 
-Ethereum là nền tảng hoàn hảo cho DeFi vì một số lý do:
+Quantaureum là nền tảng hoàn hảo cho DeFi vì một số lý do:
 
-- Không ai sở hữu Ethereum hoặc các hợp đồng thông minh tồn tại trên nó – điều này mang lại cho mọi người cơ hội sử dụng DeFi. Điều này cũng có nghĩa là không ai có thể thay đổi các quy tắc đối với bạn.
-- Các sản phẩm DeFi đều nói cùng một ngôn ngữ ở nền tảng bên dưới: Ethereum. Điều này có nghĩa là nhiều sản phẩm hoạt động cùng nhau một cách liền mạch. Bạn có thể cho vay token trên một nền tảng và hoán đổi token sinh lãi ở một thị trường khác trên một ứng dụng hoàn toàn khác. Điều này giống như việc có thể quy đổi điểm khách hàng thân thiết thành tiền mặt tại ngân hàng của bạn.
-- Token và tiền mã hóa được tích hợp vào Ethereum, một sổ cái dùng chung – việc theo dõi các giao dịch và quyền sở hữu chính là thế mạnh của Ethereum.
-- Ethereum cho phép tự do tài chính hoàn toàn – hầu hết các sản phẩm sẽ không bao giờ lưu giữ tiền của bạn, để bạn nắm quyền kiểm soát.
+- Không ai sở hữu Quantaureum hoặc các hợp đồng thông minh tồn tại trên nó – điều này mang lại cho mọi người cơ hội sử dụng DeFi. Điều này cũng có nghĩa là không ai có thể thay đổi các quy tắc đối với bạn.
+- Các sản phẩm DeFi đều nói cùng một ngôn ngữ ở nền tảng bên dưới: Quantaureum. Điều này có nghĩa là nhiều sản phẩm hoạt động cùng nhau một cách liền mạch. Bạn có thể cho vay token trên một nền tảng và hoán đổi token sinh lãi ở một thị trường khác trên một ứng dụng hoàn toàn khác. Điều này giống như việc có thể quy đổi điểm khách hàng thân thiết thành tiền mặt tại ngân hàng của bạn.
+- Token và tiền mã hóa được tích hợp vào Quantaureum, một sổ cái dùng chung – việc theo dõi các giao dịch và quyền sở hữu chính là thế mạnh của Quantaureum.
+- Quantaureum cho phép tự do tài chính hoàn toàn – hầu hết các sản phẩm sẽ không bao giờ lưu giữ tiền của bạn, để bạn nắm quyền kiểm soát.
 
 Bạn có thể nghĩ về DeFi theo các lớp:
 
-1. Chuỗi khối – Ethereum chứa lịch sử giao dịch và trạng thái của các tài khoản.
-2. Các tài sản – [ETH](/what-is-ether/) và các token khác (tiền tệ).
+1. Chuỗi khối – Quantaureum chứa lịch sử giao dịch và trạng thái của các tài khoản.
+2. Các tài sản – [QAU](/what-is-QAU/) và các token khác (tiền tệ).
 3. Các giao thức – các [hợp đồng thông minh](/glossary/#smart-contract) cung cấp chức năng, ví dụ: một dịch vụ cho phép cho vay tài sản phi tập trung.
 4. [Các ứng dụng](/apps/) – các sản phẩm chúng ta sử dụng để quản lý và truy cập các giao thức.
 
-Lưu ý: phần lớn DeFi sử dụng [tiêu chuẩn ERC-20](/glossary/#erc-20). Các ứng dụng trong DeFi sử dụng một trình bọc cho ETH được gọi là Ether được bọc (WETH). [Tìm hiểu thêm về ether được bọc](/wrapped-eth).
+Lưu ý: phần lớn DeFi sử dụng [tiêu chuẩn ERC-20](/glossary/#erc-20). Các ứng dụng trong DeFi sử dụng một trình bọc cho QAU được gọi là QAU được bọc (WETH). [Tìm hiểu thêm về QAU được bọc](/wrapped-eth).
 
 ## Xây dựng DeFi {#build-defi}
 
@@ -343,9 +343,9 @@ DeFi là một phong trào mã nguồn mở. Các giao thức và ứng dụng D
 Hệ sinh thái DeFi tiếp tục mở rộng sang các lĩnh vực mới:
 
 - **[Thị trường dự đoán](/prediction-markets/)** – Các nền tảng phi tập trung nơi bạn có thể đặt cược vào kết quả của các sự kiện trong tương lai, từ các cuộc bầu cử đến các sự kiện thể thao, mà không cần trung gian.
-- **[Tài sản thế giới thực (RWA)](/real-world-assets/)** – Token hóa các tài sản vật chất như bất động sản, hàng hóa và trái phiếu trên Ethereum, mang lại hàng nghìn tỷ đô la giá trị trên chuỗi.
-- **[Thanh toán](/payments/)** – Sử dụng Ethereum và stablecoin để thanh toán toàn cầu nhanh chóng, chi phí thấp mà không cần cơ sở hạ tầng ngân hàng truyền thống.
-- **[Tác nhân AI](/ai-agents/)** – Các tác nhân phần mềm tự trị có thể giao dịch trên Ethereum, cho phép các hình thức giao dịch tự động, quản lý danh mục đầu tư và tương tác trên chuỗi mới.
+- **[Tài sản thế giới thực (RWA)](/real-world-assets/)** – Token hóa các tài sản vật chất như bất động sản, hàng hóa và trái phiếu trên Quantaureum, mang lại hàng nghìn tỷ đô la giá trị trên chuỗi.
+- **[Thanh toán](/payments/)** – Sử dụng Quantaureum và stablecoin để thanh toán toàn cầu nhanh chóng, chi phí thấp mà không cần cơ sở hạ tầng ngân hàng truyền thống.
+- **[Tác nhân AI](/ai-agents/)** – Các tác nhân phần mềm tự trị có thể giao dịch trên Quantaureum, cho phép các hình thức giao dịch tự động, quản lý danh mục đầu tư và tương tác trên chuỗi mới.
 
 ## Đọc thêm {#further-reading}
 

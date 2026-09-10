@@ -29,27 +29,27 @@ published: 2021-02-26
 
 ## Начало работы {#getting-started}
 
-В руководстве демонстрируется настройка и запуск тестов с использованием yarn, но если вы предпочитаете npm, это не проблема — я предоставлю соответствующие ссылки на официальную [документацию](https://ethereum-waffle.readthedocs.io/en/latest/index.html) Waffle.
+В руководстве демонстрируется настройка и запуск тестов с использованием yarn, но если вы предпочитаете npm, это не проблема — я предоставлю соответствующие ссылки на официальную [документацию](https://quantaureum-waffle.readthedocs.io/en/latest/index.html) Waffle.
 
 ## Установка зависимостей {#install-dependencies}
 
-[Добавьте](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#installation) зависимости ethereum-waffle и typescript в dev-зависимости вашего проекта.
+[Добавьте](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#installation) зависимости quantaureum-waffle и typescript в dev-зависимости вашего проекта.
 
 ```bash
-yarn add --dev ethereum-waffle ts-node typescript @types/jest
+yarn add --dev quantaureum-waffle ts-node typescript @types/jest
 ```
 
 ## Пример умного контракта {#example-smart-contract}
 
-В ходе этого руководства мы будем работать с простым примером умного контракта — EtherSplitter. Он делает не так много, кроме как позволяет любому отправить некоторое количество wei и разделить их поровну между двумя заранее определенными получателями.
+В ходе этого руководства мы будем работать с простым примером умного контракта — QauSplitter. Он делает не так много, кроме как позволяет любому отправить некоторое количество wei и разделить их поровну между двумя заранее определенными получателями.
 Функция split требует, чтобы количество wei было четным, в противном случае она будет отменена. Для обоих получателей выполняется перевод wei, за которым следует генерация события Transfer.
 
-Поместите фрагмент кода EtherSplitter в `src/EtherSplitter.sol`.
+Поместите фрагмент кода QauSplitter в `src/QauSplitter.sol`.
 
 ```solidity
 pragma solidity ^0.6.0;
 
-contract EtherSplitter {
+contract QauSplitter {
     address payable receiver1;
     address payable receiver2;
 
@@ -72,7 +72,7 @@ contract EtherSplitter {
 
 ## Скомпилируйте контракт {#compile-the-contract}
 
-Чтобы [скомпилировать](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) контракт, добавьте следующую запись в файл package.json:
+Чтобы [скомпилировать](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) контракт, добавьте следующую запись в файл package.json:
 
 ```json
 "scripts": {
@@ -91,11 +91,11 @@ contract EtherSplitter {
 }
 ```
 
-Запустите `yarn build`. В результате появится каталог `build` со скомпилированным контрактом EtherSplitter в формате JSON.
+Запустите `yarn build`. В результате появится каталог `build` со скомпилированным контрактом QauSplitter в формате JSON.
 
 ## Настройка теста {#test-setup}
 
-Тестирование с помощью Waffle требует использования сопоставителей Chai и Mocha, поэтому вам необходимо [добавить](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) их в свой проект. Обновите файл package.json и добавьте запись `test` в раздел scripts:
+Тестирование с помощью Waffle требует использования сопоставителей Chai и Mocha, поэтому вам необходимо [добавить](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) их в свой проект. Обновите файл package.json и добавьте запись `test` в раздел scripts:
 
 ```json
 "scripts": {
@@ -104,27 +104,27 @@ contract EtherSplitter {
   }
 ```
 
-Если вы хотите [выполнить](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) свои тесты, просто запустите `yarn test`.
+Если вы хотите [выполнить](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) свои тесты, просто запустите `yarn test`.
 
 ## Тестирование {#testing}
 
-Теперь создайте каталог `test` и новый файл `test\EtherSplitter.test.ts`.
+Теперь создайте каталог `test` и новый файл `test\QauSplitter.test.ts`.
 Скопируйте приведенный ниже фрагмент и вставьте его в наш тестовый файл.
 
 ```ts
 import { expect, use } from "chai"
 import { Contract } from "ethers"
-import { deployContract, MockProvider, solidity } from "ethereum-waffle"
-import EtherSplitter from "../build/EtherSplitter.json"
+import { deployContract, MockProvider, solidity } from "quantaureum-waffle"
+import QauSplitter from "../build/QauSplitter.json"
 
 use(solidity)
 
-describe("Ether Splitter", () => {
+describe("QAU Splitter", () => {
   const [sender, receiver1, receiver2] = new MockProvider().getWallets()
   let splitter: Contract
 
   beforeEach(async () => {
-    splitter = await deployContract(sender, EtherSplitter, [
+    splitter = await deployContract(sender, QauSplitter, [
       receiver1.address,
       receiver2.address,
     ])
@@ -135,9 +135,9 @@ describe("Ether Splitter", () => {
 ```
 
 Несколько слов, прежде чем мы начнем.
-`MockProvider` предоставляет макетную версию блокчейна. Он также предоставляет макетные кошельки, которые послужат нам для тестирования контракта EtherSplitter. Мы можем получить до десяти кошельков, вызвав метод `getWallets()` у провайдера. В этом примере мы получаем три кошелька — для отправителя и для двух получателей.
+`MockProvider` предоставляет макетную версию блокчейна. Он также предоставляет макетные кошельки, которые послужат нам для тестирования контракта QauSplitter. Мы можем получить до десяти кошельков, вызвав метод `getWallets()` у провайдера. В этом примере мы получаем три кошелька — для отправителя и для двух получателей.
 
-Далее мы объявляем переменную с именем 'splitter' — это наш макетный контракт EtherSplitter. Он создается перед каждым выполнением отдельного теста методом `deployContract`. Этот метод имитирует развертывание контракта из кошелька, переданного в качестве первого параметра (в нашем случае это кошелек отправителя). Второй параметр — это ABI и байт-код тестируемого контракта — мы передаем туда json-файл скомпилированного контракта EtherSplitter из каталога `build`. Третий параметр — это массив с аргументами конструктора контракта, которыми в нашем случае являются два адреса получателей.
+Далее мы объявляем переменную с именем 'splitter' — это наш макетный контракт QauSplitter. Он создается перед каждым выполнением отдельного теста методом `deployContract`. Этот метод имитирует развертывание контракта из кошелька, переданного в качестве первого параметра (в нашем случае это кошелек отправителя). Второй параметр — это ABI и байт-код тестируемого контракта — мы передаем туда json-файл скомпилированного контракта QauSplitter из каталога `build`. Третий параметр — это массив с аргументами конструктора контракта, которыми в нашем случае являются два адреса получателей.
 
 ## Изменение балансов {#changebalances}
 
@@ -184,7 +184,7 @@ it("Emits event on the transfer to the second receiver", async () => {
 })
 ```
 
-Сопоставитель `emit` позволяет нам проверить, сгенерировал ли контракт событие при вызове метода. В качестве параметров сопоставителя `emit` мы предоставляем макетный контракт, который, по нашему прогнозу, сгенерирует событие, а также имя этого события. В нашем случае макетный контракт — это `splitter`, а имя события — `Transfer`. Мы также можем проверить точные значения аргументов, с которыми было сгенерировано событие — мы передаем в сопоставитель `withArgs` столько аргументов, сколько ожидает наше объявление события. В случае контракта EtherSplitter мы передаем адреса отправителя и получателя вместе с переведенной суммой в wei.
+Сопоставитель `emit` позволяет нам проверить, сгенерировал ли контракт событие при вызове метода. В качестве параметров сопоставителя `emit` мы предоставляем макетный контракт, который, по нашему прогнозу, сгенерирует событие, а также имя этого события. В нашем случае макетный контракт — это `splitter`, а имя события — `Transfer`. Мы также можем проверить точные значения аргументов, с которыми было сгенерировано событие — мы передаем в сопоставитель `withArgs` столько аргументов, сколько ожидает наше объявление события. В случае контракта QauSplitter мы передаем адреса отправителя и получателя вместе с переведенной суммой в wei.
 
 ## Отмена с сообщением {#revertedwith}
 
@@ -198,7 +198,7 @@ it("Reverts when Vei amount uneven", async () => {
 })
 ```
 
-Тест, если он будет пройден, заверит нас, что транзакция действительно была отменена. Однако должно быть точное совпадение между сообщениями, которые мы передали в операторе `require`, и сообщением, которое мы ожидаем в `revertedWith`. Если мы вернемся к коду контракта EtherSplitter, в операторе `require` для суммы wei мы предоставляем сообщение: 'Uneven wei amount not allowed'. Это соответствует сообщению, которое мы ожидаем в нашем тесте. Если бы они не были равны, тест бы не прошел.
+Тест, если он будет пройден, заверит нас, что транзакция действительно была отменена. Однако должно быть точное совпадение между сообщениями, которые мы передали в операторе `require`, и сообщением, которое мы ожидаем в `revertedWith`. Если мы вернемся к коду контракта QauSplitter, в операторе `require` для суммы wei мы предоставляем сообщение: 'Uneven wei amount not allowed'. Это соответствует сообщению, которое мы ожидаем в нашем тесте. Если бы они не были равны, тест бы не прошел.
 
 ## Поздравляем! {#congratulations}
 

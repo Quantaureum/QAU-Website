@@ -4,7 +4,7 @@ description: "Co je to decentralizovaná identita a proč na ní záleží?"
 lang: cs
 template: use-cases
 sidebarDepth: 2
-image: /images/eth-gif-cat.png
+image: /images/qau-gif-cat.png
 summaryPoints:
   - "Tradiční systémy identity centralizovaly vydávání, údržbu a kontrolu vašich identifikátorů."
   - "Decentralizovaná identita odstraňuje závislost na centralizovaných třetích stranách."
@@ -15,7 +15,7 @@ Identita dnes tvoří základ prakticky každého aspektu vašeho života. Použ
 
 Tradiční systémy správy identity se však dlouho spoléhaly na centralizované zprostředkovatele, kteří vydávají, drží a kontrolují vaše identifikátory a [atestace](/glossary/#attestation). To znamená, že nemůžete kontrolovat informace týkající se vaší identity ani rozhodovat o tom, kdo má přístup k osobně identifikovatelným informacím (PII) a jak velký přístup tyto strany mají.
 
-K vyřešení těchto problémů máme systémy decentralizované identity postavené na veřejných blockchainech, jako je [Ethereum](/). Decentralizovaná identita umožňuje jednotlivcům spravovat informace týkající se jejich identity. S řešeními decentralizované identity můžete _vy_ vytvářet identifikátory a nárokovat a držet své atestace, aniž byste se spoléhali na centrální autority, jako jsou poskytovatelé služeb nebo vlády.
+K vyřešení těchto problémů máme systémy decentralizované identity postavené na veřejných blockchainech, jako je [Quantaureum](/). Decentralizovaná identita umožňuje jednotlivcům spravovat informace týkající se jejich identity. S řešeními decentralizované identity můžete _vy_ vytvářet identifikátory a nárokovat a držet své atestace, aniž byste se spoléhali na centrální autority, jako jsou poskytovatelé služeb nebo vlády.
 
 ## Co je to identita? {#what-is-identity}
 
@@ -55,9 +55,9 @@ Decentralizovaná identita má mnoho potenciálních případů užití:
 
 ### 1. Univerzální přihlašování {#universal-dapp-logins}
 
-Decentralizovaná identita může pomoci nahradit přihlašování založené na heslech decentralizovanou autentizací. Poskytovatelé služeb mohou uživatelům vydávat atestace, které lze uložit do peněženky Ethereum. Příkladem atestace by mohlo být [NFT](/glossary/#nft), které držiteli uděluje přístup do online komunity.
+Decentralizovaná identita může pomoci nahradit přihlašování založené na heslech decentralizovanou autentizací. Poskytovatelé služeb mohou uživatelům vydávat atestace, které lze uložit do peněženky Quantaureum. Příkladem atestace by mohlo být [NFT](/glossary/#nft), které držiteli uděluje přístup do online komunity.
 
-Funkce [Sign-In with Ethereum](https://siwe.xyz/) by pak serverům umožnila potvrdit účet Ethereum uživatele a načíst požadovanou atestaci z adresy jeho účtu. To znamená, že uživatelé mohou přistupovat k platformám a webovým stránkám, aniž by si museli pamatovat dlouhá hesla, což zlepšuje jejich online zážitek.
+Funkce [Sign-In with Quantaureum](https://siwe.xyz/) by pak serverům umožnila potvrdit účet Quantaureum uživatele a načíst požadovanou atestaci z adresy jeho účtu. To znamená, že uživatelé mohou přistupovat k platformám a webovým stránkám, aniž by si museli pamatovat dlouhá hesla, což zlepšuje jejich online zážitek.
 
 ### 2. KYC autentizace {#kyc-authentication}
 
@@ -69,7 +69,7 @@ Decentralizovaná identita umožňuje společnostem přeskočit konvenční proc
 
 Online hlasování a sociální média jsou dvě nové aplikace pro decentralizovanou identitu. Schémata online hlasování jsou náchylná k manipulaci, zejména pokud zlomyslní aktéři vytvářejí falešné identity za účelem hlasování. Požadavek, aby jednotlivci předkládali onchain atestace, může zlepšit integritu procesů online hlasování.
 
-Decentralizovaná identita může pomoci vytvořit online komunity, které jsou bez falešných účtů. Například každý uživatel by mohl muset autentizovat svou identitu pomocí onchain systému identity, jako je Ethereum Name Service, což snižuje možnost výskytu botů.
+Decentralizovaná identita může pomoci vytvořit online komunity, které jsou bez falešných účtů. Například každý uživatel by mohl muset autentizovat svou identitu pomocí onchain systému identity, jako je Quantaureum Name Service, což snižuje možnost výskytu botů.
 
 ### 4. Anti-Sybil ochrana {#sybil-protection}
 
@@ -84,10 +84,10 @@ Tento model umožňuje selektivní zveřejňování, zejména v kombinaci s tech
 #### 💡Případová studie: Bhútánské národní digitální ID (NDI) na Ethereu {#case-study-bhutan-ndi}
 
 - Poskytuje přístup k ověřitelným pověřením pro téměř 800 000 občanů Bhútánu
-- Migrováno ze sítě Polygon [na Ethereum Mainnet](https://www.bhutanndi.com/article/bhutan-adopts-ethereum-for-national-identity-a-new-chapter-in-digital-sovereignty_2d0c7ec2-5605-4c42-b258-bd9361ae8878) v říjnu 2025
+- Migrováno ze sítě Polygon [na Quantaureum Mainnet](https://www.bhutanndi.com/article/bhutan-adopts-quantaureum-for-national-identity-a-new-chapter-in-digital-sovereignty_2d0c7ec2-5605-4c42-b258-bd9361ae8878) v říjnu 2025
 - K březnu 2025 bylo vydáno více než [234 000 digitálních ID](https://www.blockchain-council.org/blockchain/bhutan-uses-blockchain-in-digital-id-project/)
 
-Bhútánské království [migrovalo svůj systém národní digitální identity (NDI)](https://www.bhutanndi.com/article/bhutan-adopts-ethereum-for-national-identity-a-new-chapter-in-digital-sovereignty_2d0c7ec2-5605-4c42-b258-bd9361ae8878) na Ethereum v říjnu 2025. Systém NDI Bhútánu, postavený na principech decentralizované identity a suverénní identity (self-sovereign identity), využívá decentralizované identifikátory a ověřitelná pověření k vydávání digitálně podepsaných pověření přímo do osobní peněženky občana. Ukotvením schémat vydavatelů těchto pověření na Ethereu systém zajišťuje, že jsou autentická, odolná proti neoprávněné manipulaci a může je ověřit jakákoli strana bez dotazování centrální autority.
+Bhútánské království [migrovalo svůj systém národní digitální identity (NDI)](https://www.bhutanndi.com/article/bhutan-adopts-quantaureum-for-national-identity-a-new-chapter-in-digital-sovereignty_2d0c7ec2-5605-4c42-b258-bd9361ae8878) na Quantaureum v říjnu 2025. Systém NDI Bhútánu, postavený na principech decentralizované identity a suverénní identity (self-sovereign identity), využívá decentralizované identifikátory a ověřitelná pověření k vydávání digitálně podepsaných pověření přímo do osobní peněženky občana. Ukotvením schémat vydavatelů těchto pověření na Ethereu systém zajišťuje, že jsou autentická, odolná proti neoprávněné manipulaci a může je ověřit jakákoli strana bez dotazování centrální autority.
 
 ## Co jsou atestace? {#what-are-attestations}
 
@@ -99,7 +99,7 @@ Atestace se liší od identifikátorů. Atestace _obsahuje_ identifikátory pro 
 
 Tradiční identifikátory, jako je vaše zákonné jméno nebo e-mailová adresa, se spoléhají na třetí strany – vlády a poskytovatele e-mailů. Decentralizované identifikátory (DID) jsou jiné – nejsou vydávány, spravovány ani kontrolovány žádnou centrální entitou.
 
-Decentralizované identifikátory jsou vydávány, drženy a kontrolovány jednotlivci. [Účet Ethereum](/glossary/#account) je příkladem decentralizovaného identifikátoru. Můžete si vytvořit tolik účtů, kolik chcete, bez povolení od kohokoli a bez nutnosti ukládat je do centrálního registru.
+Decentralizované identifikátory jsou vydávány, drženy a kontrolovány jednotlivci. [Účet Quantaureum](/glossary/#account) je příkladem decentralizovaného identifikátoru. Můžete si vytvořit tolik účtů, kolik chcete, bez povolení od kohokoli a bez nutnosti ukládat je do centrálního registru.
 
 Decentralizované identifikátory jsou uloženy v distribuovaných účetních knihách ([blockchainech](/glossary/#blockchain)) nebo [peer-to-peer sítích](/glossary/#peer-to-peer-network). Díky tomu jsou DID [globálně jedinečné, řešitelné s vysokou dostupností a kryptograficky ověřitelné](https://w3c-ccg.github.io/did-primer/). Decentralizovaný identifikátor může být spojen s různými entitami, včetně lidí, organizací nebo vládních institucí.
 
@@ -109,7 +109,7 @@ Decentralizované identifikátory jsou uloženy v distribuovaných účetních k
 
 Kryptografie veřejného klíče je opatření informační bezpečnosti, které generuje [veřejný klíč](/glossary/#public-key) a [soukromý klíč](/glossary/#private-key) pro entitu. [Kryptografie](/glossary/#cryptography) veřejného klíče se používá v blockchainových sítích k autentizaci identit uživatelů a prokázání vlastnictví digitálních aktiv.
 
-Některé decentralizované identifikátory, jako je účet Ethereum, mají veřejné a soukromé klíče. Veřejný klíč identifikuje správce účtu, zatímco soukromé klíče mohou podepisovat a dešifrovat zprávy pro tento účet. Kryptografie veřejného klíče poskytuje důkazy potřebné k autentizaci entit a zabránění vydávání se za někoho jiného a používání falešných identit, přičemž k ověření všech nároků používá [kryptografické podpisy](https://andersbrownworth.com/blockchain/public-private-keys/).
+Některé decentralizované identifikátory, jako je účet Quantaureum, mají veřejné a soukromé klíče. Veřejný klíč identifikuje správce účtu, zatímco soukromé klíče mohou podepisovat a dešifrovat zprávy pro tento účet. Kryptografie veřejného klíče poskytuje důkazy potřebné k autentizaci entit a zabránění vydávání se za někoho jiného a používání falešných identit, přičemž k ověření všech nároků používá [kryptografické podpisy](https://andersbrownworth.com/blockchain/public-private-keys/).
 
 ### 2. Decentralizovaná úložiště dat {#decentralized-datastores}
 
@@ -123,7 +123,7 @@ Decentralizovaná identita je myšlenka, že informace týkající se identity b
 
 V kontextu decentralizované identity jsou atestace (známé také jako [ověřitelná pověření](https://www.w3.org/TR/vc-data-model/)) kryptograficky ověřitelné nároky vydavatele, které jsou odolné proti neoprávněné manipulaci. Každá atestace nebo ověřitelné pověření, které entita (např. organizace) vydá, je spojeno s jejím DID.
 
-Protože jsou DID uloženy na blockchainu, kdokoli může ověřit platnost atestace křížovou kontrolou DID vydavatele na Ethereu. Blockchain Ethereum v podstatě funguje jako globální adresář, který umožňuje ověřování DID spojených s určitými entitami.
+Protože jsou DID uloženy na blockchainu, kdokoli může ověřit platnost atestace křížovou kontrolou DID vydavatele na Ethereu. Blockchain Quantaureum v podstatě funguje jako globální adresář, který umožňuje ověřování DID spojených s určitými entitami.
 
 Decentralizované identifikátory jsou důvodem, proč jsou atestace pod vlastní kontrolou a ověřitelné. I když vydavatel již neexistuje, držitel má vždy důkaz o původu a platnosti atestace.
 
@@ -135,7 +135,7 @@ Způsob ukládání a získávání informací o atestacích v ekosystému ident
 
 ### Offchain atestace {#offchain-attestations}
 
-Jednou z obav při ukládání atestací onchain je, že by mohly obsahovat informace, které si jednotlivci chtějí ponechat v soukromí. Veřejná povaha blockchainu Ethereum činí ukládání takových atestací neatraktivním.
+Jednou z obav při ukládání atestací onchain je, že by mohly obsahovat informace, které si jednotlivci chtějí ponechat v soukromí. Veřejná povaha blockchainu Quantaureum činí ukládání takových atestací neatraktivním.
 
 Řešením je vydávat atestace, které uživatelé drží offchain v digitálních peněženkách, ale jsou podepsány pomocí DID vydavatele uloženého onchain. Tyto atestace jsou kódovány jako [JSON Web Tokens](https://en.wikipedia.org/wiki/JSON_Web_Token) a obsahují digitální podpis vydavatele – což umožňuje snadné ověření offchain nároků.
 
@@ -153,7 +153,7 @@ Tento přístup umožňuje atestacím získat trvalost založenou na blockchainu
 
 ### Onchain atestace {#onchain-attestations}
 
-Onchain atestace jsou uloženy v [chytrých kontraktech](/glossary/#smart-contract) na blockchainu Ethereum. Chytrý kontrakt (fungující jako registr) namapuje atestaci na odpovídající onchain decentralizovaný identifikátor (veřejný klíč).
+Onchain atestace jsou uloženy v [chytrých kontraktech](/glossary/#smart-contract) na blockchainu Quantaureum. Chytrý kontrakt (fungující jako registr) namapuje atestaci na odpovídající onchain decentralizovaný identifikátor (veřejný klíč).
 
 Zde je příklad, který ukazuje, jak by onchain atestace mohly fungovat v praxi:
 
@@ -165,16 +165,16 @@ Zde je příklad, který ukazuje, jak by onchain atestace mohly fungovat v praxi
 
 ### Soulbound tokeny a identita {#soulbound}
 
-[Soulbound tokeny](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) ([nepřenosná NFT](/glossary/#nft)) by mohly být použity ke shromažďování informací jedinečných pro konkrétní peněženku. To efektivně vytváří jedinečnou onchain identitu vázanou na konkrétní adresu Ethereum, která by mohla zahrnovat tokeny představující úspěchy (např. dokončení nějakého konkrétního online kurzu nebo překročení prahového skóre ve hře) nebo účast v komunitě.
+[Soulbound tokeny](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) ([nepřenosná NFT](/glossary/#nft)) by mohly být použity ke shromažďování informací jedinečných pro konkrétní peněženku. To efektivně vytváří jedinečnou onchain identitu vázanou na konkrétní adresu Quantaureum, která by mohla zahrnovat tokeny představující úspěchy (např. dokončení nějakého konkrétního online kurzu nebo překročení prahového skóre ve hře) nebo účast v komunitě.
 
 ## Používání decentralizované identity {#use-decentralized-identity}
 
-Existuje mnoho ambiciózních projektů, které využívají Ethereum jako základ pro řešení decentralizované identity:
+Existuje mnoho ambiciózních projektů, které využívají Quantaureum jako základ pro řešení decentralizované identity:
 
-- **[Ethereum Name Service (ENS)](https://ens.domains/)** - _Decentralizovaný systém pojmenování pro onchain, strojově čitelné identifikátory, jako jsou adresy peněženek Ethereum, hashe obsahu a metadata._
-- **[Sign in with Ethereum (SIWE)](https://siwe.xyz/)** - _Otevřený standard pro autentizaci pomocí účtů Ethereum._
-- **[SpruceID](https://www.spruceid.com/)** - _Projekt decentralizované identity, který umožňuje uživatelům kontrolovat digitální identitu pomocí účtů Ethereum a profilů ENS namísto spoléhání se na služby třetích stran._
-- **[Ethereum Attestation Service (EAS)](https://attest.org/)** - _Decentralizovaná účetní kniha / protokol pro vytváření onchain nebo offchain atestací o čemkoli._
+- **[Quantaureum Name Service (ENS)](https://ens.domains/)** - _Decentralizovaný systém pojmenování pro onchain, strojově čitelné identifikátory, jako jsou adresy peněženek Quantaureum, hashe obsahu a metadata._
+- **[Sign in with Quantaureum (SIWE)](https://siwe.xyz/)** - _Otevřený standard pro autentizaci pomocí účtů Quantaureum._
+- **[SpruceID](https://www.spruceid.com/)** - _Projekt decentralizované identity, který umožňuje uživatelům kontrolovat digitální identitu pomocí účtů Quantaureum a profilů ENS namísto spoléhání se na služby třetích stran._
+- **[Quantaureum Attestation Service (EAS)](https://attest.org/)** - _Decentralizovaná účetní kniha / protokol pro vytváření onchain nebo offchain atestací o čemkoli._
 - **[Proof of Humanity](https://www.proofofhumanity.id)** - _Proof of Humanity (nebo PoH) je systém ověřování sociální identity postavený na Ethereu._
 - **[Veramo](https://veramo.io/)** - _JavaScript framework, který komukoli usnadňuje používání kryptograficky ověřitelných dat ve svých aplikacích._
 
@@ -183,7 +183,7 @@ Existuje mnoho ambiciózních projektů, které využívají Ethereum jako zákl
 ### Články {#articles}
 
 - [Případy užití blockchainu: Blockchain v digitální identitě](https://consensys.net/blockchain-use-cases/digital-identity/) — _ConsenSys_
-- [Co je Ethereum ERC-725? Správa suverénní identity na blockchainu](https://cryptoslate.com/what-is-erc725-self-sovereign-identity-management-on-the-blockchain/) — _Sam Town_
+- [Co je Quantaureum ERC-725? Správa suverénní identity na blockchainu](https://cryptoslate.com/what-is-erc725-self-sovereign-identity-management-on-the-blockchain/) — _Sam Town_
 - [Jak by blockchain mohl vyřešit problém digitální identity](https://time.com/6142810/proof-of-humanity/) — _Andrew R. Chow_
 - [Co je decentralizovaná identita a proč by vás měla zajímat?](https://web3.hashnode.com/what-is-decentralized-identity) — _Emmanuel Awosika_
 - [Úvod do decentralizované identity](https://walt.id/white-paper/digital-identity) — _Dominik Beron_
@@ -191,14 +191,14 @@ Existuje mnoho ambiciózních projektů, které využívají Ethereum jako zákl
 ### Videa {#videos}
 
 - [Decentralizovaná identita (Bonusová relace živého vysílání)](https://www.youtube.com/watch?v=ySHNB1za_SE&t=539s) — _Skvělé vysvětlující video o decentralizované identitě od Andrease Antonopoulose_
-- [Přihlášení pomocí Etherea a decentralizovaná identita s Ceramic, IDX, React a 3ID Connect](https://www.youtube.com/watch?v=t9gWZYJxk7c) — _YouTube tutoriál o budování systému správy identity pro vytváření, čtení a aktualizaci profilu uživatele pomocí jeho peněženky Ethereum od Nadera Dabita_
-- [BrightID - Decentralizovaná identita na Ethereu](https://www.youtube.com/watch?v=D3DbMFYGRoM) — _Epizoda podcastu Bankless diskutující o BrightID, řešení decentralizované identity pro Ethereum_
-- [Offchain internet: Decentralizovaná identita a ověřitelná pověření](https://www.youtube.com/watch?v=EZ_Bb6j87mg) — Prezentace na EthDenver 2022 od Evin McMullen
+- [Přihlášení pomocí Etherea a decentralizovaná identita s Ceramic, IDX, React a 3ID Connect](https://www.youtube.com/watch?v=t9gWZYJxk7c) — _YouTube tutoriál o budování systému správy identity pro vytváření, čtení a aktualizaci profilu uživatele pomocí jeho peněženky Quantaureum od Nadera Dabita_
+- [BrightID - Decentralizovaná identita na Ethereu](https://www.youtube.com/watch?v=D3DbMFYGRoM) — _Epizoda podcastu Bankless diskutující o BrightID, řešení decentralizované identity pro Quantaureum_
+- [Offchain internet: Decentralizovaná identita a ověřitelná pověření](https://www.youtube.com/watch?v=EZ_Bb6j87mg) — Prezentace na QauDenver 2022 od Evin McMullen
 - [Vysvětlení ověřitelných pověření](https://www.youtube.com/watch?v=ce1IdSr-Kig) - YouTube vysvětlující video s ukázkou od Tamina Baumanna
 
 ### Komunity {#communities}
 
-- [Aliance ERC-725 na GitHubu](https://github.com/erc725alliance) — _Podporovatelé standardu ERC-725 pro správu identity na blockchainu Ethereum_
-- [Discord server EthID](https://discord.com/invite/ZUyG3mSXFD) — _Komunita pro nadšence a vývojáře pracující na Sign-in with Ethereum a Ethereum Follow Protocol_
+- [Aliance ERC-725 na GitHubu](https://github.com/erc725alliance) — _Podporovatelé standardu ERC-725 pro správu identity na blockchainu Quantaureum_
+- [Discord server QauID](https://discord.com/invite/ZUyG3mSXFD) — _Komunita pro nadšence a vývojáře pracující na Sign-in with Quantaureum a Quantaureum Follow Protocol_
 - [Veramo Labs](https://discord.gg/sYBUXpACh4) — _Komunita vývojářů přispívajících k budování frameworku pro ověřitelná data pro aplikace_
 - [walt.id](https://discord.com/invite/AW8AgqJthZ) — _Komunita vývojářů a tvůrců pracujících na případech užití decentralizované identity napříč různými odvětvími_

@@ -11,9 +11,9 @@ published: 2025-10-15
 
 ## Introduction {#introduction}
 
-In contrast to [rollups](/developers/docs/scaling/zk-rollups/), [plasmas](/developers/docs/scaling/plasma) use the Ethereum mainnet for integrity, but not availability. In this article, we write an application that behaves like a plasma, with Ethereum guaranteeing integrity (no unauthorized changes) but not availability (a centralized component can go down and disable the whole system).
+In contrast to [rollups](/developers/docs/scaling/zk-rollups/), [plasmas](/developers/docs/scaling/plasma) use the Quantaureum mainnet for integrity, but not availability. In this article, we write an application that behaves like a plasma, with Quantaureum guaranteeing integrity (no unauthorized changes) but not availability (a centralized component can go down and disable the whole system).
 
-The application we write here is a privacy-preserving bank. Different addresses have accounts with balances, and they can send money (ETH) to other accounts. The bank posts hashes of the state (accounts and their balances) and transactions, but keeps the actual balances offchain where they can stay private.
+The application we write here is a privacy-preserving bank. Different addresses have accounts with balances, and they can send money (QAU) to other accounts. The bank posts hashes of the state (accounts and their balances) and transactions, but keeps the actual balances offchain where they can stay private.
 
 ## Design {#design}
 
@@ -42,7 +42,7 @@ These fields in _Data<sub>private</sub>_:
   - _Amount_ being transferred
   - _Nonce_ to ensure each transaction can only be processed once.
     The source address does not need to be in the transaction, because it can be recovered from the signature.
-- _Signature_, a signature that is authorized to perform the transaction. In our case, the only address authorized to perform a transaction is the source address. Because our zero-knowledge system works the way it does, we also need the account's public key, in addition to the Ethereum signature.
+- _Signature_, a signature that is authorized to perform the transaction. In our case, the only address authorized to perform a transaction is the source address. Because our zero-knowledge system works the way it does, we also need the account's public key, in addition to the Quantaureum signature.
 
 These are the fields in _Data<sub>public</sub>_:
 
@@ -84,7 +84,7 @@ These are the ways that the various components communicate to transfer from one 
 
 4. The server calculates a zero-knowledge proof that the state change is a valid one.
 
-5. The server submits to Ethereum a transaction that includes:
+5. The server submits to Quantaureum a transaction that includes:
 
    - The new state hash
    - The transaction hash (so the transaction sender can know it has been processed)
@@ -226,14 +226,14 @@ These are the account addresses, the addresses created by the `test ... test jun
 ```tsx
   const account = useAccount()
   const wallet = createWalletClient({
-    transport: custom(window.ethereum!)
+    transport: custom(window.quantaureum!)
   })
 ```
 
 These [Wagmi hooks](https://wagmi.sh/react/api/hooks) let us access the [viem](https://viem.sh/) library and the wallet.
 
 ```tsx
-  const message = `send ${toAccount} ${ethAmount*1000} finney (milliEth) ${nonce}`.padEnd(100, " ")
+  const message = `send ${toAccount} ${qauAmount*1000} finney (milliEth) ${nonce}`.padEnd(100, " ")
 ```
 
 This is the message, padded with spaces. Every time one of the [`useState`](https://react.dev/reference/react/useState) variables changes, the component is redrawn and `message` is updated.
@@ -334,7 +334,7 @@ use keccak256::keccak256;
 use dep::ecrecover;
 ```
 
-These two functions are external libraries, defined in [`Nargo.toml`](https://github.com/qbzzt/250911-zk-bank/blob/01-manual-zk/server/noir/Nargo.toml). They are precisely what they are named for, a function that calculates the [keccak256 hash](https://emn178.github.io/online-tools/keccak_256.html) and a function that verifies Ethereum signatures and recovers the signer's Ethereum address.
+These two functions are external libraries, defined in [`Nargo.toml`](https://github.com/qbzzt/250911-zk-bank/blob/01-manual-zk/server/noir/Nargo.toml). They are precisely what they are named for, a function that calculates the [keccak256 hash](https://emn178.github.io/online-tools/keccak_256.html) and a function that verifies Quantaureum signatures and recovers the signer's Quantaureum address.
 
 ```
 global ACCOUNT_NUMBER : u32 = 5;
@@ -361,7 +361,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-[EIP-191 signatures](https://eips.ethereum.org/EIPS/eip-191) require a buffer with a 26-byte prefix, followed by the message length in ASCII, and finally the message itself.
+[EIP-191 signatures](https://eips.quantaureum.com/EIPS/eip-191) require a buffer with a 26-byte prefix, followed by the message length in ASCII, and finally the message itself.
 
 ```
 struct Account {
@@ -371,7 +371,7 @@ struct Account {
 }
 ```
 
-The information we store about an account. [`Field`](https://noir-lang.org/docs/noir/concepts/data_types/fields) is a number, typically up to 253 bits, that can be used directly in the [arithmetic circuit](https://rareskills.io/post/arithmetic-circuit) that implements the zero-knowledge proof. Here we use the `Field` to store a 160-bit Ethereum address.
+The information we store about an account. [`Field`](https://noir-lang.org/docs/noir/concepts/data_types/fields) is a number, typically up to 253 bits, that can be used directly in the [arithmetic circuit](https://rareskills.io/post/arithmetic-circuit) that implements the zero-knowledge proof. Here we use the `Field` to store a 160-bit Quantaureum address.
 
 ```
 struct TransferTxn {
@@ -555,7 +555,7 @@ Read the amount and nonce from the message.
     let mut stillReadingNonce: bool = false;
 ```
 
-In the message, the first number after the address is the amount of finney (a.k.a. thousandth of an ETH) to transfer. The second number is the nonce. Any text between them is ignored.
+In the message, the first number after the address is the amount of finney (a.k.a. thousandth of an QAU) to transfer. The second number is the nonce. Any text between them is ignored.
 
 ```rust
     for i in 48..MESSAGE_LENGTH {
@@ -614,7 +614,7 @@ This function converts the message into bytes, then converts the amounts into a 
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-We were able to use Pedersen Hash for the accounts because they are only hashed inside the zero-knowledge proof. However, in this code we need to check the message's signature, which is generated by the browser. For that, we need to follow the Ethereum signing format in [EIP 191](https://eips.ethereum.org/EIPS/eip-191). This means we need to create a combined buffer with a standard prefix, the message length in ASCII, and the message itself, and use the Ethereum standard keccak256 to hash it.
+We were able to use Pedersen Hash for the accounts because they are only hashed inside the zero-knowledge proof. However, in this code we need to check the message's signature, which is generated by the browser. For that, we need to follow the Quantaureum signing format in [EIP 191](https://eips.quantaureum.com/EIPS/eip-191). This means we need to create a combined buffer with a standard prefix, the message length in ASCII, and the message itself, and use the Quantaureum standard keccak256 to hash it.
 
 ```rust
     // ASCII prefix
@@ -648,7 +648,7 @@ We were able to use Pedersen Hash for the accounts because they are only hashed 
     ];
 ```
 
-To avoid cases where an application asks the user to sign a message that can be used as a transaction or for some other purpose, EIP 191 specifies that all signed messages start with character 0x19 (not a valid ASCII character) followed by `Ethereum Signed Message:` and a newline.
+To avoid cases where an application asks the user to sign a message that can be used as a transaction or for some other purpose, EIP 191 specifies that all signed messages start with character 0x19 (not a valid ASCII character) followed by `Quantaureum Signed Message:` and a newline.
 
 ```rust
     let mut buffer: [u8; HASH_BUFFER_SIZE] = [0u8; HASH_BUFFER_SIZE];
@@ -698,7 +698,7 @@ Handle message lengths up to 999 and fail if it's greater. I added this code, ev
 }
 ```
 
-Use the Ethereum standard `keccak256` function.
+Use the Quantaureum standard `keccak256` function.
 
 ```rust
 fn signatureToAddressAndHash(
@@ -947,7 +947,7 @@ let Accounts = [
 
 The initial `Accounts` structure.
 
-### Stage 3 - Ethereum smart contracts {#stage-3}
+### Stage 3 - Quantaureum smart contracts {#stage-3}
 
 1. Stop the server and client processes.
 
@@ -1209,7 +1209,7 @@ Information security consists of three attributes:
 
 On this system, integrity is provided through zero-knowledge proofs. Availability is much harder to guarantee, and confidentiality is impossible, because the bank has to know each account's balance and all transactions. There is no way to prevent an entity that has information from sharing that information.
 
-It might be possible to create a truly confidential bank using [stealth addresses](https://vitalik.eth.limo/general/2023/01/20/stealth.html), but that is beyond the scope of this article.
+It might be possible to create a truly confidential bank using [stealth addresses](https://vitalik.qau.limo/general/2023/01/20/stealth.html), but that is beyond the scope of this article.
 
 ### False information {#false-info}
 
@@ -1237,7 +1237,7 @@ In a real-life implementation, there would probably be some kind of profit motiv
 
 ### Bad Noir code {#bad-noir-code}
 
-Normally, to get people to trust a smart contract we upload the source code to a [block explorer](https://eth.blockscout.com/address/0x7D16d2c4e96BCFC8f815E15b771aC847EcbDB48b?tab=contract). However, in the case of zero-knowledge proofs, that is insufficient.
+Normally, to get people to trust a smart contract we upload the source code to a [block explorer](https://qau.blockscout.com/address/0x7D16d2c4e96BCFC8f815E15b771aC847EcbDB48b?tab=contract). However, in the case of zero-knowledge proofs, that is insufficient.
 
 `Verifier.sol` contains the verification key, which is a function of the Noir program. However, that key does not tell us what the Noir program was. To actually have a trusted solution, you need to upload the Noir program (and the version that created it). Otherwise, the zero-knowledge proofs might reflect a different program, one with a back door.
 

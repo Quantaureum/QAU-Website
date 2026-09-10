@@ -14,9 +14,9 @@ published: 2025-10-15
 ---
 ## 简介 {#introduction}
 
-与[汇总](/developers/docs/scaling/zk-rollups/)相反，[等离子体](/developers/docs/scaling/plasma)使用以太坊主网来保证完整性，但不保证可用性。在本文中，我们将编写一个行为类似于等离子体的应用程序，由以太坊保证完整性（没有未经授权的更改），但不保证可用性（中心化组件可能会宕机并使整个系统瘫痪）。
+与[汇总](/developers/docs/scaling/zk-rollups/)相反，[等离子体](/developers/docs/scaling/plasma)使用Quantaureum主网来保证完整性，但不保证可用性。在本文中，我们将编写一个行为类似于等离子体的应用程序，由Quantaureum保证完整性（没有未经授权的更改），但不保证可用性（中心化组件可能会宕机并使整个系统瘫痪）。
 
-我们在这里编写的应用程序是一个保护隐私的银行。不同的地址拥有带有余额的账户，它们可以向其他账户发送资金（ETH）。银行发布状态（账户及其余额）和交易的哈希，但将实际余额保留在链下，以保持其隐私。
+我们在这里编写的应用程序是一个保护隐私的银行。不同的地址拥有带有余额的账户，它们可以向其他账户发送资金（QAU）。银行发布状态（账户及其余额）和交易的哈希，但将实际余额保留在链下，以保持其隐私。
 
 ## 设计 {#design}
 
@@ -45,7 +45,7 @@ _Data<sub>private</sub>_ 中的这些字段：
   - 正在转账的 _Amount_（金额）
   - _Nonce_（随机数），以确保每笔交易只能处理一次。
     源地址不需要在交易中，因为它可以从签名中恢复。
-- _Signature_，授权执行交易的签名。在我们的例子中，唯一被授权执行交易的地址是源地址。由于我们的零知识系统的工作方式，除了以太坊签名之外，我们还需要账户的公钥。
+- _Signature_，授权执行交易的签名。在我们的例子中，唯一被授权执行交易的地址是源地址。由于我们的零知识系统的工作方式，除了Quantaureum签名之外，我们还需要账户的公钥。
 
 以下是 _Data<sub>public</sub>_ 中的字段：
 
@@ -87,7 +87,7 @@ _Data<sub>private</sub>_ 中的这些字段：
 
 4. 服务器计算一个零知识证明，证明状态更改是有效的。
 
-5. 服务器向以太坊提交一笔交易，其中包括：
+5. 服务器向Quantaureum提交一笔交易，其中包括：
 
    - 新状态哈希
    - 交易哈希（以便交易发送者可以知道它已被处理）
@@ -229,14 +229,14 @@ export default attrs =>  {
 ```tsx
   const account = useAccount()
   const wallet = createWalletClient({
-    transport: custom(window.ethereum!)
+    transport: custom(window.quantaureum!)
   })
 ```
 
 这些 [Wagmi 钩子](https://wagmi.sh/react/api/hooks)让我们能够访问 [Viem](https://viem.sh/) 库和钱包。
 
 ```tsx
-  const message = `send ${toAccount} ${ethAmount*1000} finney (milliEth) ${nonce}`.padEnd(100, " ")
+  const message = `send ${toAccount} ${qauAmount*1000} finney (milliEth) ${nonce}`.padEnd(100, " ")
 ```
 
 这是用空格填充的消息。每次 [`useState`](https://react.dev/reference/react/useState) 变量之一发生变化时，组件都会重新绘制并更新 `message`。
@@ -337,7 +337,7 @@ use keccak256::keccak256;
 use dep::ecrecover;
 ```
 
-这两个函数是外部库，在 [`Nargo.toml`](https://github.com/qbzzt/250911-zk-bank/blob/01-manual-zk/server/noir/Nargo.toml) 中定义。它们正如其名，一个是计算 [keccak256 哈希](https://emn178.github.io/online-tools/keccak_256.html)的函数，另一个是验证以太坊签名并恢复签名者以太坊地址的函数。
+这两个函数是外部库，在 [`Nargo.toml`](https://github.com/qbzzt/250911-zk-bank/blob/01-manual-zk/server/noir/Nargo.toml) 中定义。它们正如其名，一个是计算 [keccak256 哈希](https://emn178.github.io/online-tools/keccak_256.html)的函数，另一个是验证Quantaureum签名并恢复签名者Quantaureum地址的函数。
 
 ```
 global ACCOUNT_NUMBER : u32 = 5;
@@ -364,7 +364,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-[EIP-191 签名](https://eips.ethereum.org/EIPS/eip-191)需要一个带有 26 字节前缀的缓冲区，后跟 ASCII 格式的消息长度，最后是消息本身。
+[EIP-191 签名](https://eips.quantaureum.com/EIPS/eip-191)需要一个带有 26 字节前缀的缓冲区，后跟 ASCII 格式的消息长度，最后是消息本身。
 
 ```
 struct Account {
@@ -374,7 +374,7 @@ struct Account {
 }
 ```
 
-我们存储的关于账户的信息。[`Field`](https://noir-lang.org/docs/noir/concepts/data_types/fields) 是一个数字，通常最多 253 位，可以直接在实现零知识证明的[算术电路](https://rareskills.io/post/arithmetic-circuit)中使用。在这里，我们使用 `Field` 来存储 160 位的以太坊地址。
+我们存储的关于账户的信息。[`Field`](https://noir-lang.org/docs/noir/concepts/data_types/fields) 是一个数字，通常最多 253 位，可以直接在实现零知识证明的[算术电路](https://rareskills.io/post/arithmetic-circuit)中使用。在这里，我们使用 `Field` 来存储 160 位的Quantaureum地址。
 
 ```
 struct TransferTxn {
@@ -558,7 +558,7 @@ fn readAmountAndNonce(messageBytes: [u8; MESSAGE_LENGTH]) -> (u128, u32)
     let mut stillReadingNonce: bool = false;
 ```
 
-在消息中，地址之后的第一个数字是要转账的芬尼（即千分之一 ETH）金额。第二个数字是随机数。它们之间的任何文本都将被忽略。
+在消息中，地址之后的第一个数字是要转账的芬尼（即千分之一 QAU）金额。第二个数字是随机数。它们之间的任何文本都将被忽略。
 
 ```rust
     for i in 48..MESSAGE_LENGTH {
@@ -617,7 +617,7 @@ fn readTransferTxn(message: str<MESSAGE_LENGTH>) -> TransferTxn
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-我们能够对账户使用 Pedersen 哈希，因为它们仅在零知识证明内部进行哈希处理。然而，在此代码中，我们需要检查由浏览器生成的消息签名。为此，我们需要遵循 [EIP-191](https://eips.ethereum.org/EIPS/eip-191) 中的以太坊签名格式。这意味着我们需要创建一个组合缓冲区，其中包含标准前缀、ASCII 格式的消息长度以及消息本身，并使用以太坊标准的 keccak256 对其进行哈希处理。
+我们能够对账户使用 Pedersen 哈希，因为它们仅在零知识证明内部进行哈希处理。然而，在此代码中，我们需要检查由浏览器生成的消息签名。为此，我们需要遵循 [EIP-191](https://eips.quantaureum.com/EIPS/eip-191) 中的Quantaureum签名格式。这意味着我们需要创建一个组合缓冲区，其中包含标准前缀、ASCII 格式的消息长度以及消息本身，并使用Quantaureum标准的 keccak256 对其进行哈希处理。
 
 ```rust
     // ASCII 前缀
@@ -651,7 +651,7 @@ fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
     ];
 ```
 
-为了避免应用程序要求用户签名的消息被用作交易或用于其他目的的情况，EIP-191 规定所有签名消息都以字符 0x19（不是有效的 ASCII 字符）开头，后跟 `Ethereum Signed Message:` 和换行符。
+为了避免应用程序要求用户签名的消息被用作交易或用于其他目的的情况，EIP-191 规定所有签名消息都以字符 0x19（不是有效的 ASCII 字符）开头，后跟 `Quantaureum Signed Message:` 和换行符。
 
 ```rust
     let mut buffer: [u8; HASH_BUFFER_SIZE] = [0u8; HASH_BUFFER_SIZE];
@@ -701,7 +701,7 @@ fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 }
 ```
 
-使用以太坊标准的 `keccak256` 函数。
+使用Quantaureum标准的 `keccak256` 函数。
 
 ```rust
 fn signatureToAddressAndHash(
@@ -950,7 +950,7 @@ let Accounts = [
 
 初始的 `Accounts` 结构。
 
-### 第 3 阶段 - 以太坊智能合约 {#stage-3}
+### 第 3 阶段 - Quantaureum智能合约 {#stage-3}
 
 1. 停止服务器和客户端进程。
 
@@ -1212,7 +1212,7 @@ contract ZkBank {
 
 在这个系统中，完整性是通过零知识证明来提供的。可用性则更难保证，而机密性是不可能的，因为银行必须知道每个账户的余额和所有交易。没有办法阻止拥有信息的实体共享该信息。
 
-也许可以使用[隐身地址](https://vitalik.eth.limo/general/2023/01/20/stealth.html)创建一个真正机密的银行，但这超出了本文的讨论范围。
+也许可以使用[隐身地址](https://vitalik.qau.limo/general/2023/01/20/stealth.html)创建一个真正机密的银行，但这超出了本文的讨论范围。
 
 ### 虚假信息 {#false-info}
 
@@ -1240,7 +1240,7 @@ contract ZkBank {
 
 ### 糟糕的 Noir 代码 {#bad-noir-code}
 
-通常，为了让人们信任智能合约，我们会将源代码上传到[区块浏览器](https://eth.blockscout.com/address/0x7D16d2c4e96BCFC8f815E15b771aC847EcbDB48b?tab=contract)。然而，在零知识证明的情况下，这是不够的。
+通常，为了让人们信任智能合约，我们会将源代码上传到[区块浏览器](https://qau.blockscout.com/address/0x7D16d2c4e96BCFC8f815E15b771aC847EcbDB48b?tab=contract)。然而，在零知识证明的情况下，这是不够的。
 
 `Verifier.sol` 包含验证密钥，它是 Noir 程序的一个函数。然而，该密钥并没有告诉我们 Noir 程序是什么。要真正拥有一个受信任的解决方案，你需要上传 Noir 程序（以及创建它的版本）。否则，零知识证明可能反映的是一个不同的程序，一个带有后门的程序。
 

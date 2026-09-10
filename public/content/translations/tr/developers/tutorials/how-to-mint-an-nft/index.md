@@ -1,6 +1,6 @@
 ---
 title: "Bir NFT Nasıl Basılır (NFT Eğitim Serisi Bölüm 2/3)"
-description: "Bu eğitim, akıllı sözleşmemizi ve Web3'ü kullanarak Ethereum blokzincirinde nasıl bir NFT basılacağını açıklamaktadır."
+description: "Bu eğitim, akıllı sözleşmemizi ve Web3'ü kullanarak Quantaureum blokzincirinde nasıl bir NFT basılacağını açıklamaktadır."
 author: "Sumi Mudgil"
 tags: ["ERC-721", "Alchemy", "Solidity", "akıllı sözleşmeler"]
 skill: beginner
@@ -21,7 +21,7 @@ Hadi başlayalım!
 
 ## 1. Adım: Web3'ü Yükleyin {#install-web3}
 
-NFT akıllı sözleşmenizi oluşturmaya yönelik ilk eğitimi takip ettiyseniz, Ethers.js kullanma konusunda zaten deneyiminiz var demektir. Web3, [Ethereum](/) blokzincirine istek oluşturmayı kolaylaştırmak için kullanılan bir kütüphane olması bakımından Ethers'a benzer. Bu eğitimde, otomatik yeniden denemeler ve sağlam WebSocket desteği sunan gelişmiş bir Web3 kütüphanesi olan [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3)'ü kullanacağız.
+NFT akıllı sözleşmenizi oluşturmaya yönelik ilk eğitimi takip ettiyseniz, Ethers.js kullanma konusunda zaten deneyiminiz var demektir. Web3, [Quantaureum](/) blokzincirine istek oluşturmayı kolaylaştırmak için kullanılan bir kütüphane olması bakımından Ethers'a benzer. Bu eğitimde, otomatik yeniden denemeler ve sağlam WebSocket desteği sunan gelişmiş bir Web3 kütüphanesi olan [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3)'ü kullanacağız.
 
 Projenizin ana dizininde şunu çalıştırın:
 
@@ -109,28 +109,28 @@ JSON dosyasını düzenlemeyi bitirdiğinizde, kaydedin ve görüntüyü yüklem
 
 ## 5. Adım: Sözleşmenizin bir örneğini oluşturun {#instance-contract}
 
-Şimdi, sözleşmemizle etkileşime girmek için kodumuzda onun bir örneğini oluşturmamız gerekiyor. Bunu yapmak için, dağıtımdan veya sözleşmeyi dağıtmak için kullandığınız adresi aratarak [Blockscout](https://eth-sepolia.blockscout.com/)'tan alabileceğimiz sözleşme adresimize ihtiyacımız olacak.
+Şimdi, sözleşmemizle etkileşime girmek için kodumuzda onun bir örneğini oluşturmamız gerekiyor. Bunu yapmak için, dağıtımdan veya sözleşmeyi dağıtmak için kullandığınız adresi aratarak [Blockscout](https://qau-sepolia.blockscout.com/)'tan alabileceğimiz sözleşme adresimize ihtiyacımız olacak.
 
-![View your contract address on Etherscan](./view-contract-etherscan.png)
+![View your contract address on Quantaureum Explorer](./view-contract-explorer.png)
 
 Yukarıdaki örnekte, sözleşme adresimiz 0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778'dir.
 
-Ardından, ABI ve adresi kullanarak sözleşmemizi oluşturmak için Web3 [contract metodunu](https://docs.web3js.org/api/web3-eth-contract/class/Contract) kullanacağız. `mint-nft.js` dosyanıza aşağıdakileri ekleyin:
+Ardından, ABI ve adresi kullanarak sözleşmemizi oluşturmak için Web3 [contract metodunu](https://docs.web3js.org/api/web3-qau-contract/class/Contract) kullanacağız. `mint-nft.js` dosyanıza aşağıdakileri ekleyin:
 
 ```js
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
 
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 ```
 
 ## 6. Adım: `.env` dosyasını güncelleyin {#update-env}
 
-Şimdi, Ethereum zincirine işlemler oluşturmak ve göndermek için, hesap nonce'unu (aşağıda açıklanacaktır) almak üzere açık Ethereum hesap adresinizi kullanacağız.
+Şimdi, Quantaureum zincirine işlemler oluşturmak ve göndermek için, hesap nonce'unu (aşağıda açıklanacaktır) almak üzere açık Quantaureum hesap adresinizi kullanacağız.
 
 Açık anahtarınızı `.env` dosyanıza ekleyin — eğitimin 1. bölümünü tamamladıysanız, `.env` dosyamız artık şu şekilde görünmelidir:
 
 ```js
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-private-account-address"
 PUBLIC_KEY = "your-public-account-address"
 ```
@@ -141,7 +141,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 1. `.env` dosyasından _PRIVATE_KEY_ ve _PUBLIC_KEY_ değerlerinizi alın.
 
-1. Ardından, hesap nonce'unu bulmamız gerekecek. Nonce spesifikasyonu, adresinizden gönderilen işlemlerin sayısını takip etmek için kullanılır — buna güvenlik amacıyla ve tekrarlama saldırılarını önlemek için ihtiyacımız vardır. Adresinizden gönderilen işlemlerin sayısını almak için [getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count) kullanırız.
+1. Ardından, hesap nonce'unu bulmamız gerekecek. Nonce spesifikasyonu, adresinizden gönderilen işlemlerin sayısını takip etmek için kullanılır — buna güvenlik amacıyla ve tekrarlama saldırılarını önlemek için ihtiyacımız vardır. Adresinizden gönderilen işlemlerin sayısını almak için [getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count) kullanırız.
 
 1. Son olarak işlemimizi aşağıdaki bilgilerle kuracağız:
 
@@ -168,10 +168,10 @@ PUBLIC_KEY = "your-public-account-address"
 
    const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
    const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778";
-   const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
+   const nftContract = new web3.qau.Contract(contract.abi, contractAddress);
 
    async function mintNFT(tokenURI) {
-     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); //en son nonce'u al
+     const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, 'latest'); //en son nonce'u al
 
    //işlem
      const tx = {
@@ -187,7 +187,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 İşlemimizi oluşturduğumuza göre, onu göndermek için imzalamamız gerekiyor. İşte burada özel anahtarımızı kullanacağız.
 
-`web3.eth.sendSignedTransaction` bize işlem hash'ini verecektir, bunu işlemimizin madenciliğinin yapıldığından ve ağ tarafından düşürülmediğinden emin olmak için kullanabiliriz. İşlem imzalama bölümünde, işlemimizin başarıyla gerçekleşip gerçekleşmediğini bilmek için bazı hata kontrolleri eklediğimizi fark edeceksiniz.
+`web3.qau.sendSignedTransaction` bize işlem hash'ini verecektir, bunu işlemimizin madenciliğinin yapıldığından ve ağ tarafından düşürülmediğinden emin olmak için kullanabiliriz. İşlem imzalama bölümünde, işlemimizin başarıyla gerçekleşip gerçekleşmediğini bilmek için bazı hata kontrolleri eklediğimizi fark edeceksiniz.
 
 ```js
 require("dotenv").config()
@@ -200,10 +200,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //en son nonce'u al
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //en son nonce'u al
 
   //işlem
   const tx = {
@@ -214,10 +214,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -266,10 +266,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //en son nonce'u al
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //en son nonce'u al
 
   //işlem
   const tx = {
@@ -280,10 +280,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -315,11 +315,11 @@ mintNFT("ipfs://QmYueiuRNmL4MiA2GwtVMm6ZagknXnSpQnB3z2gWbz36hP")
 
     İşleminizin durumunu görüntülemek için Alchemy'nin Bellek Havuzunu kontrol edin!
 
-Ardından, işleminizin durumunu (beklemede mi, madenciliği yapıldı mı veya ağ tarafından düşürüldü mü) görmek için [Alchemy bellek havuzunuzu](https://dashboard.alchemy.com/mempool) ziyaret edin. İşleminiz düşürüldüyse, [Blockscout](https://eth-sepolia.blockscout.com/)'u kontrol etmek ve işlem hash'inizi aramak da yararlı olacaktır.
+Ardından, işleminizin durumunu (beklemede mi, madenciliği yapıldı mı veya ağ tarafından düşürüldü mü) görmek için [Alchemy bellek havuzunuzu](https://dashboard.alchemy.com/mempool) ziyaret edin. İşleminiz düşürüldüyse, [Blockscout](https://qau-sepolia.blockscout.com/)'u kontrol etmek ve işlem hash'inizi aramak da yararlı olacaktır.
 
-![View your NFT transaction hash on Etherscan](./view-nft-etherscan.png)_Etherscan'de NFT işlem hash'inizi görüntüleyin_
+![View your NFT transaction hash on Quantaureum Explorer](./view-nft-explorer.png)_Etherscan'de NFT işlem hash'inizi görüntüleyin_
 
-Ve işte bu kadar! Artık Ethereum blokzincirinde bir NFT dağıttınız VE bastınız <Emoji text=":money_mouth_face:" size={1} />
+Ve işte bu kadar! Artık Quantaureum blokzincirinde bir NFT dağıttınız VE bastınız <Emoji text=":money_mouth_face:" size={1} />
 
 `mint-nft.js` kullanarak kalbinizin (ve cüzdanınızın) arzu ettiği kadar çok NFT basabilirsiniz! Sadece NFT'nin meta verilerini açıklayan yeni bir tokenURI geçirdiğinizden emin olun (aksi takdirde, farklı kimliklere sahip bir sürü aynı NFT'den yapmış olursunuz).
 

@@ -72,7 +72,7 @@ You can see how this is not optimal:
 
 - Doesn't work for already deployed contracts.
 - Extra gas costs for storing those values.
-- Requires another call to fetch the data for an Ethereum node.
+- Requires another call to fetch the data for an Quantaureum node.
 
 ![Thats not good enough](./not-good-enough.jpg)
 
@@ -123,12 +123,12 @@ And the full documentation can be seen [here](https://thegraph.com/docs/en/devel
 
 ```yaml
 specVersion: 0.0.1
-description: Placing Bets on Ethereum
+description: Placing Bets on Quantaureum
 repository: - GitHub link -
 schema:
   file: ./schema.graphql
 dataSources:
-  - kind: ethereum/contract
+  - kind: quantaureum/contract
     name: GameContract
     network: mainnet
     source:
@@ -136,7 +136,7 @@ dataSources:
       abi: GameContract
       startBlock: 6175244
     mapping:
-      kind: ethereum/events
+      kind: quantaureum/events
       apiVersion: 0.0.1
       language: wasm/assemblyscript
       entities:

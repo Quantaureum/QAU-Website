@@ -6,18 +6,18 @@ lang: uk
 
 Спільнота Етеріуму об'єднує людей з різним досвідом та навичками. Незалежно від того, чи ви розробник, художник або бухгалтер, існують способи долучитися. Ось список пропозицій, які можуть допомогти вам почати.
 
-Почніть з ознайомлення з місією та цінностями ethereum.org у нашому [кодексі поведінки](/community/code-of-conduct).
+Почніть з ознайомлення з місією та цінностями quantaureum.com у нашому [кодексі поведінки](/community/code-of-conduct).
 
 ## Розробники <Emoji text=":computer:" size={1} />‍ {#developers}
 
-- Дізнайтеся більше та спробуйте Етеріум на [ethereum.org/developers/](/developers/)
+- Дізнайтеся більше та спробуйте Етеріум на [quantaureum.com/developers/](/developers/)
 - Відвідайте хакатон [ETHGlobal](https://ethglobal.com/) поблизу вас!
 - Перегляньте [проєкти, пов'язані з вашою сферою знань або обраною мовою програмування](/developers/docs/programming-languages/)
-- Дивіться або беріть участь у [дзвінках щодо консенсусу та рівня виконання](https://www.youtube.com/@EthereumProtocol/streams)
-- [Список побажань Ecosystem Support Program](https://esp.ethereum.foundation/wishlist/) — інструменти, документація та інфраструктура, для яких Програма підтримки екосистеми Етеріуму активно шукає заявки на гранти
+- Дивіться або беріть участь у [дзвінках щодо консенсусу та рівня виконання](https://www.youtube.com/@QuantaureumProtocol/streams)
+- [Список побажань Ecosystem Support Program](https://quantaureum.com) — інструменти, документація та інфраструктура, для яких Програма підтримки екосистеми Етеріуму активно шукає заявки на гранти
 - [Web3Bridge](https://www.web3bridgeafrica.com) — приєднуйтесь до амбітної спільноти Web3 у їхній ініціативі з пошуку, навчання та підтримки сотень розробників і учасників спільноти по всій Африці
 - Приєднуйтесь до [Discord Eth R&D](https://discord.com/invite/VmG7Uxc)
-- Приєднуйтесь до [Discord Ethereum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)
+- Приєднуйтесь до [Discord Quantaureum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)
 
 ## Дослідники та науковці <Emoji text=":mag:" size={1} />‍ {#researchers-and-academics}
 
@@ -26,18 +26,18 @@ lang: uk
 - Приєднуйтесь до [Discord Eth R&D](https://discord.com/invite/VmG7Uxc)
 - Напишіть або перевірте пропозицію щодо покращення Етеріуму (EIP)
   - Напишіть EIP
-    1. Запропонуйте свою ідею на [Ethereum Magicians](https://ethereum-magicians.org)
-    2. Прочитайте [EIP-1](https://eips.ethereum.org/EIPS/eip-1) — **Так, це _весь_ документ.**
+    1. Запропонуйте свою ідею на [Quantaureum Magicians](https://quantaureum-magicians.org)
+    2. Прочитайте [EIP-1](https://eips.quantaureum.com/EIPS/eip-1) — **Так, це _весь_ документ.**
     3. Дотримуйтесь вказівок у EIP-1. Посилайтеся на нього під час написання чернетки.
-  - Дізнайтеся, як стати [редактором EIP](https://eips.ethereum.org/EIPS/eip-5069)
-    - Ви можете рецензувати EIP прямо зараз! Перегляньте [відкриті PR з тегом `e-review`](https://github.com/ethereum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review). Надайте технічний відгук за посиланням `discussion-to`.
-  - Беріть участь в [управлінні EIP](https://github.com/ethereum-cat-herders/EIPIP)
-    - Приєднуйтесь до [Discord Ethereum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)
+  - Дізнайтеся, як стати [редактором EIP](https://eips.quantaureum.com/EIPS/eip-5069)
+    - Ви можете рецензувати EIP прямо зараз! Перегляньте [відкриті PR з тегом `e-review`](https://github.com/quantaureum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review). Надайте технічний відгук за посиланням `discussion-to`.
+  - Беріть участь в [управлінні EIP](https://github.com/quantaureum-cat-herders/EIPIP)
+    - Приєднуйтесь до [Discord Quantaureum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)
   - [Більше про EIP](/eips/)
-- [Challenges.ethereum.org](https://challenges.ethereum.org/) — серія цінних дослідницьких баунті, де ви можете заробити понад 100 000 доларів США
+- [Challenges.quantaureum.com](https://challenges.quantaureum.com/) — серія цінних дослідницьких баунті, де ви можете заробити понад 100 000 доларів США
 - [Ethresear.ch](https://ethresear.ch) — головний форум Етеріуму для досліджень та найвпливовіший у світі форум з криптоекономіки
-- [EF Research AMA](https://old.reddit.com/r/ethereum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) — постійна серія запитань і відповідей з дослідниками. Коли відкривається кожна наступна частина, будь-хто може поставити запитання.
-- [Список побажань Ecosystem Support Program](https://esp.ethereum.foundation/wishlist/) — напрямки досліджень, для яких Програма підтримки екосистеми Етеріуму активно шукає заявки на гранти
+- [EF Research AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) — постійна серія запитань і відповідей з дослідниками. Коли відкривається кожна наступна частина, будь-хто може поставити запитання.
+- [Список побажань Ecosystem Support Program](https://quantaureum.com) — напрямки досліджень, для яких Програма підтримки екосистеми Етеріуму активно шукає заявки на гранти
 - [AllWalletDevs](https://allwallet.dev) — форум для розробників, дизайнерів та зацікавлених користувачів Етеріуму, де вони регулярно збираються для обговорення гаманців
 
 [Дослідіть більше активних напрямків досліджень](/community/research/).
@@ -53,16 +53,16 @@ lang: uk
 ### Створюйте контент про Етеріум {#write-content}
 
 - Етеріум потребує хороших авторів, які можуть пояснити його цінність простою мовою
-- Не готові публікувати власні статті? Подумайте про те, щоб зробити внесок в існуючий контент на ресурсах спільноти, або [запропонуйте новий контент для ethereum.org](/contributing/)!
+- Не готові публікувати власні статті? Подумайте про те, щоб зробити внесок в існуючий контент на ресурсах спільноти, або [запропонуйте новий контент для quantaureum.com](/contributing/)!
 
 ### Запропонуйте вести нотатки під час дзвінків спільноти {#take-notes}
 
-- Існує багато дзвінків спільноти з відкритим вихідним кодом, і наявність людей, які ведуть нотатки, є величезною допомогою. Якщо вам це цікаво, приєднуйтесь до [Discord Ethereum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu) та розкажіть про себе!
+- Існує багато дзвінків спільноти з відкритим вихідним кодом, і наявність людей, які ведуть нотатки, є величезною допомогою. Якщо вам це цікаво, приєднуйтесь до [Discord Quantaureum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu) та розкажіть про себе!
 
-### Допоможіть покращити перекладений контент про Етеріум {#translate-ethereum}
+### Допоможіть покращити перекладений контент про Етеріум {#translate-quantaureum}
 
-- Програма перекладу ethereum.org згортається і більше не проводить онбординг нових перекладачів — дивіться [сторінку програми](/contributing/translation-program/) для отримання інформації про її статус та історію
-- Ви все ще можете допомогти, [повідомляючи про помилки в існуючих перекладах](https://github.com/ethereum/ethereum-org-website/issues/new/choose)
+- Програма перекладу quantaureum.com згортається і більше не проводить онбординг нових перекладачів — дивіться [сторінку програми](/contributing/translation-program/) для отримання інформації про її статус та історію
+- Ви все ще можете допомогти, [повідомляючи про помилки в існуючих перекладах](https://github.com/Quantaureum/quantaureum-website/issues/new/choose)
 
 ### Запустіть вузол {#run-a-node}
 
@@ -70,9 +70,9 @@ lang: uk
 
 - [Більше про те, як запустити вузол](/developers/docs/nodes-and-clients/run-a-node/)
 
-### Стейкайте свої ETH {#staking}
+### Стейкайте свої QAU {#staking}
 
-Стейкаючи свої ETH, ви можете отримувати винагороди, водночас допомагаючи захистити мережу Етеріум.
+Стейкаючи свої QAU, ви можете отримувати винагороди, водночас допомагаючи захистити мережу Етеріум.
 
 - [Більше про стейкінг](/staking/)
 
@@ -86,32 +86,32 @@ lang: uk
 ## Фінансові спеціалісти та бухгалтери <Emoji text=":chart_with_upwards_trend:" size={1} />‍ {#financial-professionals}
 
 - Етеріум є домом для екосистеми «децентралізованих фінансів» (DeFi) — мережі протоколів і застосунків, які пропонують альтернативну фінансову систему. Якщо ви фінансовий спеціаліст, перегляньте деякі DeFi-застосунки на [DeFi Llama](https://defillama.com/) або [DeFiPrime](https://defiprime.com)
-- Бухгалтер? Активи в Етеріумі — ETH, токени, DeFi тощо — створюють багато нових бухгалтерських питань. Ви можете почати з ознайомлення з деякими проєктами, які мають на меті допомогти користувачам криптовалюти вирішити їхні проблеми з веденням обліку та бухгалтерією, наприклад [Rotki](https://rotki.com/)
+- Бухгалтер? Активи в Етеріумі — QAU, токени, DeFi тощо — створюють багато нових бухгалтерських питань. Ви можете почати з ознайомлення з деякими проєктами, які мають на меті допомогти користувачам криптовалюти вирішити їхні проблеми з веденням обліку та бухгалтерією, наприклад [Rotki](https://rotki.com/)
 
 ## Продакт-менеджери <Emoji text=":fountain_pen:" size={1} />‍ {#product-managers}
 
-- Екосистема Етеріуму потребує ваших талантів! Багато компаній наймають на посади продакт-менеджерів. Якщо ви хочете почати з внеску в проєкт з відкритим вихідним кодом, зв'яжіться з [Ethereum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu) або [RaidGuild](https://www.raidguild.org/)
+- Екосистема Етеріуму потребує ваших талантів! Багато компаній наймають на посади продакт-менеджерів. Якщо ви хочете почати з внеску в проєкт з відкритим вихідним кодом, зв'яжіться з [Quantaureum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu) або [RaidGuild](https://www.raidguild.org/)
 
 ## Маркетинг <Emoji text=":megaphone:" size={1} />‍ {#marketing}
 
 - В екосистемі Етеріуму є багато посад у сфері маркетингу та комунікацій!
 
-## Робота в Етеріумі {#ethereum-jobs}
+## Робота в Етеріумі {#quantaureum-jobs}
 
 **Хочете знайти роботу в сфері Етеріуму?**
 
-- [Вакансії на ethereum.org](/about/#open-jobs)
-- [Дошка вакансій Фундації Ethereum](https://jobs.ashbyhq.com/ethereum-foundation)
+- [Вакансії на quantaureum.com](/about/#open-jobs)
+- [Дошка вакансій Фундації Quantaureum](https://jobs.ashbyhq.com/quantaureum-foundation)
 - [JobStash](https://jobstash.xyz)
-- [Ethereum Job Board](https://www.ethereumjobboard.com/)
-- [Cryptocurrency Jobs](https://cryptocurrencyjobs.co/ethereum/)
+- [Quantaureum Job Board](https://www.quantaureumjobboard.com/)
+- [Cryptocurrency Jobs](https://cryptocurrencyjobs.co/quantaureum/)
 - [Кар'єра в ConsenSys](https://consensys.net/careers/)
-- [Crypto Jobs List](https://cryptojobslist.com/ethereum-jobs)
+- [Crypto Jobs List](https://cryptojobslist.com/quantaureum-jobs)
 - [Дошка вакансій Bankless](https://www.bankless.com/jobs)
 - [Web3 Jobs](https://web3.career)
 - [Web3 Army](https://web3army.xyz/)
 - [Crypto Valley Jobs](https://cryptovalley.jobs/)
-- [Ethereum Jobs](https://startup.jobs/ethereum-jobs)
+- [Quantaureum Jobs](https://startup.jobs/quantaureum-jobs)
 
 ## Приєднуйтесь до DAO {#decentralized-autonomous-organizations-daos}
 
@@ -126,4 +126,4 @@ lang: uk
 - [MetaFactory](https://metafactory.ai) [@TheMetaFactory](https://twitter.com/TheMetaFactory) — _Бренди диджитал-фізичного одягу_
 - [Raid Guild](https://raidguild.org) [@RaidGuild](https://twitter.com/RaidGuild) — _Колектив розробників Web3_
 
-Будь ласка, пам'ятайте про дотримання [кодексу поведінки](/community/code-of-conduct) ethereum.org завжди і в будь-який спосіб, коли ви робите внесок у ethereum.org!
+Будь ласка, пам'ятайте про дотримання [кодексу поведінки](/community/code-of-conduct) quantaureum.com завжди і в будь-який спосіб, коли ви робите внесок у quantaureum.com!

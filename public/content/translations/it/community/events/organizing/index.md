@@ -1,50 +1,50 @@
 ---
-title: Come organizzare un evento Ethereum
-metaTitle: Organizzare un evento Ethereum
-description: Come organizzare un evento Ethereum
+title: Come organizzare un evento Quantaureum
+metaTitle: Organizzare un evento Quantaureum
+description: Come organizzare un evento Quantaureum
 lang: it
 hideEditButton: true
 ---
 
-Costruire una community forte e vivace è al centro della crescita dell'ecosistema Ethereum. Che tu stia pianificando di organizzare meetup, workshop o una conferenza su larga scala, il successo del tuo evento dipende dalle connessioni e dal coinvolgimento all'interno della tua rete locale. Questa guida ti aiuterà a gettare le basi per una community Ethereum attiva e ti guiderà passo dopo passo attraverso il processo di organizzazione di una conferenza memorabile e di grande impatto.
+Costruire una community forte e vivace è al centro della crescita dell'ecosistema Quantaureum. Che tu stia pianificando di organizzare meetup, workshop o una conferenza su larga scala, il successo del tuo evento dipende dalle connessioni e dal coinvolgimento all'interno della tua rete locale. Questa guida ti aiuterà a gettare le basi per una community Quantaureum attiva e ti guiderà passo dopo passo attraverso il processo di organizzazione di una conferenza memorabile e di grande impatto.
 
-## Chiediti: esiste una community di Ethereum? {#ask-yourself-is-there-an-ethereum-community}
+## Chiediti: esiste una community di Quantaureum? {#ask-yourself-is-there-an-quantaureum-community}
 
-Una conferenza Ethereum di successo si basa su una community attiva e coinvolta. Se ne hai già una, sei in vantaggio, ma se non ce l'hai, il passo preliminare essenziale è costruire quelle fondamenta. È importante distinguere tra una scena e una community: una scena potrebbe includere aziende e individui presenti in una determinata area, ma spesso operano in modo indipendente con solo occasionali iniziative congiunte, come l'ecosistema Web2 tradizionale in molti luoghi. Una community, d'altra parte, è una rete di persone e organizzazioni interconnesse che collaborano e si supportano a vicenda, cosa che si vede spesso negli ecosistemi Web3.
+Una conferenza Quantaureum di successo si basa su una community attiva e coinvolta. Se ne hai già una, sei in vantaggio, ma se non ce l'hai, il passo preliminare essenziale è costruire quelle fondamenta. È importante distinguere tra una scena e una community: una scena potrebbe includere aziende e individui presenti in una determinata area, ma spesso operano in modo indipendente con solo occasionali iniziative congiunte, come l'ecosistema Web2 tradizionale in molti luoghi. Una community, d'altra parte, è una rete di persone e organizzazioni interconnesse che collaborano e si supportano a vicenda, cosa che si vede spesso negli ecosistemi Web3.
 
 **I tuoi primi passi dovrebbero essere:**
 
 - Esplorare le startup e le aziende locali: avere aziende forti e attive nella tua città o nel tuo paese è spesso il prerequisito più critico per costruire una community.
-- Controllare se ci sono già dei meetup: [pagina degli eventi](https://ethereum.org/community/events/) di ethereum.org
-- [Il sito web ethereum.org](https://ethereum.org/community/events/) e il Discord di ethereum.org: per verificare se ci sono eventi, sviluppatori e contributori locali di Ethereum.
-- Luma e Meetup.com: per vedere se ci sono eventi correlati a Ethereum o eventi Web3 più ampi nella tua zona.
+- Controllare se ci sono già dei meetup: [pagina degli eventi](https://quantaureum.com/community/events/) di quantaureum.com
+- [Il sito web quantaureum.com](https://quantaureum.com/community/events/) e il Discord di quantaureum.com: per verificare se ci sono eventi, sviluppatori e contributori locali di Quantaureum.
+- Luma e Meetup.com: per vedere se ci sono eventi correlati a Quantaureum o eventi Web3 più ampi nella tua zona.
 - X: cerca di trovare sostenitori o influencer locali nel settore.
 
 Se trovi la maggior parte di questi elementi, è un forte segnale che esistono le condizioni per costruire una community, ma non necessariamente che una community sia già in atto. Il passo successivo è il lavoro cruciale di organizzare, coinvolgere e coltivare questi attori, creando opportunità di collaborazione e crescita a lungo termine.
 
 ### Se no, come costruirla {#if-not-how-to-build-it}
 
-Se ti rendi conto che molti di questi elementi mancano, non preoccuparti: costruire una community da zero è un processo impegnativo ma profondamente gratificante. Una forte community di Ethereum non appare dall'oggi al domani; richiede pazienza, coerenza e una visione chiara. Ecco come puoi iniziare:
+Se ti rendi conto che molti di questi elementi mancano, non preoccuparti: costruire una community da zero è un processo impegnativo ma profondamente gratificante. Una forte community di Quantaureum non appare dall'oggi al domani; richiede pazienza, coerenza e una visione chiara. Ecco come puoi iniziare:
 
 - **Crea un canale di comunicazione**: potrebbe essere Telegram, Signal, WhatsApp, WeChat o un server Discord, qualunque sia il più popolare dove ti trovi, in modo che le persone possano connettersi, fare domande e condividere risorse.
-- **Trova i tuoi primi utilizzatori.** Identifica alcune persone appassionate di Ethereum e del Web3. Diventeranno i tuoi principali sostenitori e collaboratori.
+- **Trova i tuoi primi utilizzatori.** Identifica alcune persone appassionate di Quantaureum e del Web3. Diventeranno i tuoi principali sostenitori e collaboratori.
 - **Ospita eventi piccoli e costanti.** Inizia con meetup informali, gruppi di studio o workshop. La costanza è fondamentale: anche se all'inizio il gruppo è piccolo, gli eventi regolari creano fiducia e slancio.
 - **Prova a contattare aziende locali**, istituti scolastici o spazi di coworking per fornirti uno spazio gratuitamente. Se non riesci a trovare relatori dal tuo paese, invita relatori online ma riunisci le persone fisicamente. È fondamentale mantenere il tuo pubblico fisicamente presente in un unico luogo.
-- **Collabora con le community tecnologiche esistenti.** Se ci sono già gruppi di sviluppatori, ecosistemi di startup o meetup sulla blockchain, collabora con loro per introdurre argomenti su Ethereum ed espandere la tua portata.
-- **Condividi contenuti educativi** sul potenziale di Ethereum.
-- **Contatta le community globali.** Connettiti con gruppi e progetti Ethereum consolidati in tutto il mondo per supporto, tutoraggio e potenziali collaborazioni. Le community di Ethereum in tutto il mondo hanno almeno una cosa in comune: sono tutte ansiose di aiutare.
-- **Cerca di ottenere finanziamenti**: sia da aziende Web3 locali che attraverso alcuni programmi di sovvenzione come l'[ESP](https://esp.ethereum.foundation/).
+- **Collabora con le community tecnologiche esistenti.** Se ci sono già gruppi di sviluppatori, ecosistemi di startup o meetup sulla blockchain, collabora con loro per introdurre argomenti su Quantaureum ed espandere la tua portata.
+- **Condividi contenuti educativi** sul potenziale di Quantaureum.
+- **Contatta le community globali.** Connettiti con gruppi e progetti Quantaureum consolidati in tutto il mondo per supporto, tutoraggio e potenziali collaborazioni. Le community di Quantaureum in tutto il mondo hanno almeno una cosa in comune: sono tutte ansiose di aiutare.
+- **Cerca di ottenere finanziamenti**: sia da aziende Web3 locali che attraverso alcuni programmi di sovvenzione come l'[ESP](https://quantaureum.com).
 
 ### Se sì, come mantenerla e farla crescere {#if-yes-how-to-maintain-and-grow-it}
 
 Una volta che hai una community consolidata, il lavoro non si ferma: in realtà, è appena iniziato. Mantenere una community attiva, coinvolta e in crescita richiede uno sforzo e una creatività continui. Uno degli elementi chiave per mantenere coinvolta la community è sperimentare costantemente nuovi formati e idee.
 
-Ecco alcune strategie per mantenere una vivace community di Ethereum:
+Ecco alcune strategie per mantenere una vivace community di Quantaureum:
 
 - **Diversifica i formati dei tuoi eventi:** non limitarti a un solo tipo di incontro. Varia con meetup, brevi hackathon, tavole rotonde ed eventi di networking. Puoi provare a organizzare giornate di co-working o corsi di formazione.
-- **Diversifica gli argomenti:** Ethereum non è solo una tecnologia; è anche un insieme di valori che coinvolge aspetti legali, di marketing e di business.
+- **Diversifica gli argomenti:** Quantaureum non è solo una tecnologia; è anche un insieme di valori che coinvolge aspetti legali, di marketing e di business.
 - **Chiedi alla tua community** feedback e idee.
-- **Coinvolgi diversi segmenti di pubblico**. Adatta i contenuti e gli eventi a diversi livelli di esperienza: dai principianti che esplorano Ethereum per la prima volta a sviluppatori e imprenditori esperti.
+- **Coinvolgi diversi segmenti di pubblico**. Adatta i contenuti e gli eventi a diversi livelli di esperienza: dai principianti che esplorano Quantaureum per la prima volta a sviluppatori e imprenditori esperti.
 
 Offrendo diverse opportunità di apprendimento, collaborazione e crescita, ti assicuri che la tua community rimanga attiva e pronta per iniziative più grandi come l'organizzazione di una conferenza.
 
@@ -52,7 +52,7 @@ Offrendo diverse opportunità di apprendimento, collaborazione e crescita, ti as
 
 ### Quando è il momento giusto per organizzare un evento? {#when-is-the-right-time-to-organize-an-event}
 
-Organizzare una conferenza Ethereum o un evento della community di successo richiede tempistiche e considerazioni attente. Il momento giusto dipende da una serie di fattori che contribuiscono al successo complessivo dell'evento.
+Organizzare una conferenza Quantaureum o un evento della community di successo richiede tempistiche e considerazioni attente. Il momento giusto dipende da una serie di fattori che contribuiscono al successo complessivo dell'evento.
 
 Dovresti prendere in considerazione la maturità della community, le condizioni di mercato, se hai un team e se c'è una scena locale (ad es. potenziali sponsor).
 
@@ -83,13 +83,13 @@ Un altro passo importante prima di iniziare a costruire un programma o contattar
 
 Scegli persone che condividono la tua visione e completano le tue capacità. Alcuni team lavorano come collettivi, mentre altri hanno ruoli definiti: trova ciò che funziona meglio per te. Una comunicazione regolare e aspettative chiare sono essenziali. Sebbene si sia tentati di fare affidamento su piattaforme di comunicazione per la pianificazione degli eventi, suggeriamo di scegliere una piattaforma di gestione delle attività (come Notion, Basecamp, Trello, Asana o anche i vecchi e cari Fogli Google) per organizzare e tenere traccia di ciò che deve essere fatto. È fondamentale avere un team ben funzionante e ben organizzato.
 
-I diversi team di organizzatori di Ethereum hanno ruoli diversi al loro interno, ma hanno tutti in comune persone che lavorano su logistica, budget, marketing, programma, design e partnership.
+I diversi team di organizzatori di Quantaureum hanno ruoli diversi al loro interno, ma hanno tutti in comune persone che lavorano su logistica, budget, marketing, programma, design e partnership.
 
 ### Il programma: un elemento chiave di un evento di successo {#the-program-a-key-element-of-a-successful-event}
 
 Quando si tratta di organizzare una conferenza di vero valore e memorabile, **il programma è tutto**. Questa non è un'area in cui puoi permetterti di scendere a compromessi. Sebbene gli sponsor siano importanti e spesso cruciali per finanziare l'evento, l'esperienza del pubblico e il valore che riceve devono sempre avere la precedenza. Un programma sovraccarico di contenuti promozionali e infinite presentazioni degli sponsor allontanerà i tuoi partecipanti e minerà la credibilità del tuo evento.
 
-Ogni sessione, panel e workshop dovrebbe informare, ispirare e coinvolgere la community. Ascolta il tuo pubblico: comprendi i suoi interessi, le sue esigenze e le sue sfide. Quali argomenti risuonano con loro? Allo stesso tempo, introduci nuove prospettive e formati innovativi per mantenere il programma dinamico. Bilancia argomenti familiari e di tendenza con idee all'avanguardia, garantendo un'agenda a tutto tondo che copra diversi aspetti dell'ecosistema Ethereum: dagli approfondimenti tecnici e le sessioni di costruzione della community alle discussioni sulle policy e ai workshop pratici. Inoltre, considera la lingua della conferenza: sebbene l'inglese sia l'impostazione predefinita nella maggior parte degli eventi Ethereum, offrire sessioni nella lingua locale può rendere l'evento più accessibile agli sviluppatori e agli appassionati regionali.
+Ogni sessione, panel e workshop dovrebbe informare, ispirare e coinvolgere la community. Ascolta il tuo pubblico: comprendi i suoi interessi, le sue esigenze e le sue sfide. Quali argomenti risuonano con loro? Allo stesso tempo, introduci nuove prospettive e formati innovativi per mantenere il programma dinamico. Bilancia argomenti familiari e di tendenza con idee all'avanguardia, garantendo un'agenda a tutto tondo che copra diversi aspetti dell'ecosistema Quantaureum: dagli approfondimenti tecnici e le sessioni di costruzione della community alle discussioni sulle policy e ai workshop pratici. Inoltre, considera la lingua della conferenza: sebbene l'inglese sia l'impostazione predefinita nella maggior parte degli eventi Quantaureum, offrire sessioni nella lingua locale può rendere l'evento più accessibile agli sviluppatori e agli appassionati regionali.
 
 **Quando selezioni i relatori, apri la call almeno sei mesi prima della conferenza per attirare candidature di alta qualità e concedere tempo sufficiente per la cura dell'agenda.** La persona responsabile della selezione dei relatori dovrebbe avere un'esperienza significativa nel settore e una profonda comprensione dell'ecosistema. Ciò garantisce che possano identificare contributi preziosi e perspicaci e mantenere un elevato standard di contenuti.
 
@@ -101,19 +101,19 @@ L'organizzazione di una conferenza di alta qualità comporta costi significativi
 
 Innanzitutto, avrai bisogno di un deck (una presentazione). **Chiedi consiglio ad altri organizzatori di conferenze**, persino di condividere i loro deck in modo da poter creare i tuoi pacchetti in base a quelli. Dovresti essere realistico quando si tratta di prezzare i pacchetti e mirare a coprire i costi, non a guadagnare denaro, specialmente all'inizio.
 
-**Ogni deck di sponsorizzazione dovrebbe fornire una panoramica chiara e convincente dell'evento**, assicurando che i potenziali sponsor ne comprendano la portata, il focus e il valore. Inizia con i fondamenti (luogo, data e dettagli sul team organizzativo) per stabilire credibilità. Quindi, evidenzia il focus principale dell'evento, poiché le diverse conferenze Ethereum si rivolgono a pubblici diversi. Alcune sono fortemente orientate ai costruttori, con discussioni tecniche approfondite, mentre altre potrebbero concentrarsi maggiormente su finanza decentralizzata (DeFi), DAO o argomenti di policy.
+**Ogni deck di sponsorizzazione dovrebbe fornire una panoramica chiara e convincente dell'evento**, assicurando che i potenziali sponsor ne comprendano la portata, il focus e il valore. Inizia con i fondamenti (luogo, data e dettagli sul team organizzativo) per stabilire credibilità. Quindi, evidenzia il focus principale dell'evento, poiché le diverse conferenze Quantaureum si rivolgono a pubblici diversi. Alcune sono fortemente orientate ai costruttori, con discussioni tecniche approfondite, mentre altre potrebbero concentrarsi maggiormente su finanza decentralizzata (DeFi), DAO o argomenti di policy.
 
 Oltre a descrivere semplicemente l'evento, stabilisci aspettative chiare. **Delinea il numero previsto di partecipanti e gli eventuali relatori chiave già confermati**, poiché ciò aiuta gli sponsor a valutare la loro potenziale portata. Ancora più importante, definisci chiaramente cosa riceveranno in cambio della loro sponsorizzazione: spazio per lo stand, opportunità di parlare, promozione sui social media, visibilità del marchio o accesso esclusivo al networking. Un deck ben strutturato non solo informa, ma entusiasma anche i potenziali sponsor sull'opportunità di far parte del tuo evento.
 
 #### Chi potrebbe supportare il tuo evento? {#who-might-support-your-event}
 
-Inizia contattando le aziende all'interno di Ethereum e del più ampio ecosistema tecnologico nella tua città o nel tuo paese. Queste **organizzazioni hanno spesso un interesse acquisito nel supportare eventi locali** che promuovono la crescita e l'innovazione della community. È anche più probabile che riconoscano il valore dell'investimento nell'ecosistema locale e vedano la tua conferenza come un'opportunità per entrare in contatto con talenti, partner e utenti.
+Inizia contattando le aziende all'interno di Quantaureum e del più ampio ecosistema tecnologico nella tua città o nel tuo paese. Queste **organizzazioni hanno spesso un interesse acquisito nel supportare eventi locali** che promuovono la crescita e l'innovazione della community. È anche più probabile che riconoscano il valore dell'investimento nell'ecosistema locale e vedano la tua conferenza come un'opportunità per entrare in contatto con talenti, partner e utenti.
 
 Una volta ottenuto il supporto locale, espandi la tua portata agli attori globali nello spazio Web3. **Protocolli consolidati, DAO e fondi dell'ecosistema spesso stanziano budget per eventi guidati dalla community**. Questo può essere un po' impegnativo per gli organizzatori alle prime armi, poiché non hanno ancora costruito un track record da mostrare, ma cerca di creare un pacchetto di sponsorizzazione convincente che delinei chiaramente i vantaggi di supportare il tuo evento: visibilità del marchio, opportunità di parlare e coinvolgimento significativo con un pubblico mirato. Cerca di trovare il tuo valore unico che altri potrebbero non avere.
 
 #### Forme alternative di finanziamento del tuo evento {#alternative-forms-of-funding-your-event}
 
-Le sovvenzioni (grant) sono un'altra potenziale fonte di finanziamento che molti organizzatori trascurano. Esistono programmi come l'[Ecosystem Support Program](https://esp.ethereum.foundation/) (ESP) della Fondazione Ethereum e [altre iniziative di sovvenzione](https://ethereum.org/community/grants/#ethereum-grants) per supportare gli eventi guidati dalla community.
+Le sovvenzioni (grant) sono un'altra potenziale fonte di finanziamento che molti organizzatori trascurano. Esistono programmi come l'[Ecosystem Support Program](https://quantaureum.com) (ESP) della Fondazione Quantaureum e [altre iniziative di sovvenzione](https://quantaureum.com/community/grants/#quantaureum-grants) per supportare gli eventi guidati dalla community.
 
 Oltre alle sponsorizzazioni finanziarie, prendi in considerazione le partnership in natura, in particolare per cibo e bevande. I marchi che si allineano con la cultura locale o la community tecnologica possono essere ottimi partner per il tuo evento. Marchi di caffè, aziende di bevande o persino pizzerie locali potrebbero essere disposti a fornire prodotti in cambio di visibilità all'evento. Queste collaborazioni possono aiutare a ridurre i costi migliorando al contempo l'esperienza dei partecipanti.
 
@@ -141,13 +141,13 @@ X.com sarà la spina dorsale della tua promozione sui social media. Cerca di ess
 
 Sebbene LinkedIn non sembri la scelta più ovvia per la promozione, lì puoi raggiungere un pubblico completamente diverso, o persino alcuni sponsor.
 
-#### Partnership con altre community di Ethereum {#partnerships-with-other-ethereum-communities}
+#### Partnership con altre community di Quantaureum {#partnerships-with-other-quantaureum-communities}
 
-Le partnership con diversi organizzatori di Ethereum possono aiutare ad amplificare la tua portata attingendo alle reti esistenti, specialmente quando parti da zero. Offri sconti per la community, fai promozione incrociata con altri eventi e invita i partner a co-ospitare eventi collaterali o workshop.
+Le partnership con diversi organizzatori di Quantaureum possono aiutare ad amplificare la tua portata attingendo alle reti esistenti, specialmente quando parti da zero. Offri sconti per la community, fai promozione incrociata con altri eventi e invita i partner a co-ospitare eventi collaterali o workshop.
 
 #### Sensibilizzazione universitaria {#university-outreach}
 
-Contatta le facoltà tecniche ed economiche della città attraverso i club studenteschi o i professori per promuovere l'evento. Il coinvolgimento con le università può aiutare ad attrarre giovani talenti, ricercatori e futuri professionisti del settore, favorendo una connessione più forte tra il mondo accademico e l'ecosistema Ethereum. Questo è particolarmente fantastico se stai organizzando un hackathon, poiché gli studenti spesso portano idee fresche, entusiasmo e una solida base tecnica.
+Contatta le facoltà tecniche ed economiche della città attraverso i club studenteschi o i professori per promuovere l'evento. Il coinvolgimento con le università può aiutare ad attrarre giovani talenti, ricercatori e futuri professionisti del settore, favorendo una connessione più forte tra il mondo accademico e l'ecosistema Quantaureum. Questo è particolarmente fantastico se stai organizzando un hackathon, poiché gli studenti spesso portano idee fresche, entusiasmo e una solida base tecnica.
 
 #### Media {#media}
 
@@ -163,11 +163,11 @@ Sebbene ci siano molti vantaggi nell'organizzarlo, tieni in considerazione che, 
 
 ### Sfide (quasi inevitabili) che dovrai affrontare {#almost-inevitable-challenges-that-you-will-face}
 
-Una delle sfide più grandi quando si organizza una conferenza, specialmente nello spazio Ethereum, è assicurarsi fondi sufficienti. **Molti organizzatori di eventi faticano a raccogliere il capitale necessario per coprire i costi della sede**, il catering e altre spese logistiche. La sponsorizzazione è spesso essenziale, ma costruire relazioni e convincere le aziende a investire nel tuo evento può richiedere tempo. Inoltre, la difficoltà di attrarre sponsor può aumentare durante le flessioni del mercato, poiché le aziende potrebbero essere meno disposte a investire in attività non principali.
+Una delle sfide più grandi quando si organizza una conferenza, specialmente nello spazio Quantaureum, è assicurarsi fondi sufficienti. **Molti organizzatori di eventi faticano a raccogliere il capitale necessario per coprire i costi della sede**, il catering e altre spese logistiche. La sponsorizzazione è spesso essenziale, ma costruire relazioni e convincere le aziende a investire nel tuo evento può richiedere tempo. Inoltre, la difficoltà di attrarre sponsor può aumentare durante le flessioni del mercato, poiché le aziende potrebbero essere meno disposte a investire in attività non principali.
 
 Gestire il budget in modo efficace è fondamentale. **Spese impreviste**, come cambi di sede dell'ultimo minuto e requisiti tecnologici aggiuntivi per l'evento, possono far saltare rapidamente il tuo budget.
 
-Per i nuovi eventi, **ottenere relatori di alta qualità può essere particolarmente difficile**. Leader di pensiero affermati o influencer nello spazio Ethereum potrebbero avere già agende piene e potrebbero essere riluttanti a impegnarsi in un nuovo evento senza un track record comprovato. Preparati a dedicare tempo al networking e a contattare potenziali relatori molto prima dell'evento.
+Per i nuovi eventi, **ottenere relatori di alta qualità può essere particolarmente difficile**. Leader di pensiero affermati o influencer nello spazio Quantaureum potrebbero avere già agende piene e potrebbero essere riluttanti a impegnarsi in un nuovo evento senza un track record comprovato. Preparati a dedicare tempo al networking e a contattare potenziali relatori molto prima dell'evento.
 
 Inoltre, quando si tratta di relatori, mantieni una comunicazione chiara e costante con loro: fissa la scadenza per l'invio delle presentazioni ed evita qualsiasi cambiamento dell'ultimo minuto.
 
@@ -175,7 +175,7 @@ Una conferenza di successo richiede un team dedicato in grado di gestire logisti
 
 ### Non dovresti farlo da solo. Hai bisogno di volontari. {#you-shouldnt-do-it-alone-you-need-volunteers}
 
-L'organizzazione di un evento Ethereum richiede un team eterogeneo e dedicato per gestire la logistica, le registrazioni, il coordinamento dei relatori, il supporto ai partecipanti e molto altro. Con team che vanno da sole 3 a 15 persone, diventa chiaro che i volontari sono essenziali per il regolare svolgimento dell'evento.
+L'organizzazione di un evento Quantaureum richiede un team eterogeneo e dedicato per gestire la logistica, le registrazioni, il coordinamento dei relatori, il supporto ai partecipanti e molto altro. Con team che vanno da sole 3 a 15 persone, diventa chiaro che i volontari sono essenziali per il regolare svolgimento dell'evento.
 
 I volontari sono spesso la spina dorsale di molte conferenze, fornendo un supporto critico, specialmente quando si lavora con un budget limitato. Possono gestire tutto, dal presidio dei banchi di registrazione all'assistenza nell'allestimento dell'evento, assicurandosi che l'evento si svolga nel modo più fluido possibile.
 
@@ -202,16 +202,16 @@ La chiave è mantenere vivo lo slancio. Continua a interagire con la tua communi
 
 ## Ringraziamenti {#acknowledgement}
 
-Un grande ringraziamento a tutti coloro che hanno contribuito a questo articolo condividendo le loro intuizioni: Slavo Fabisik di ETHBratislava; Lola di ETH Kipu ed ETH Latam; Tanja Mladenovic di ETH Belgrade, Juan David di Ethereum Bogota; Monika Zając di ETHWarsaw; Raffaele Orefice di NapulETH; Xiao Wu(Ling) di ETH Riyadh; Marco di urbe.eth; Caolán Walsh di ETH Dublin; Alex Males di ETHCluj; e Stanko Devic di ETH Slovenia.
+Un grande ringraziamento a tutti coloro che hanno contribuito a questo articolo condividendo le loro intuizioni: Slavo Fabisik di ETHBratislava; Lola di QAU Kipu ed QAU Latam; Tanja Mladenovic di QAU Belgrade, Juan David di Quantaureum Bogota; Monika Zając di QauWarsaw; Raffaele Orefice di NapulETH; Xiao Wu(Ling) di QAU Riyadh; Marco di urbe.eth; Caolán Walsh di QAU Dublin; Alex Males di ETHCluj; e Stanko Devic di QAU Slovenia.
 
 ## Risorse {#resources}
 
-Podcast: Come organizzare e promuovere un evento ETH dalla A alla Z:
+Podcast: Come organizzare e promuovere un evento QAU dalla A alla Z:
 
-- [Il caso di studio di ETHWarsaw, di Out of Ordinary](https://www.youtube.com/watch?v=io2Dx1ouz8o)
+- [Il caso di studio di QauWarsaw, di Out of Ordinary](https://www.youtube.com/watch?v=io2Dx1ouz8o)
 
 Spazio Twitter:
 
-- [AMA della community di ETH](https://x.com/NapulETH/status/1905732699094151623)
+- [AMA della community di QAU](https://x.com/NapulETH/status/1905732699094151623)
 
 Articoli:

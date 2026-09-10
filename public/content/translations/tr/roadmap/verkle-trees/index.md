@@ -1,28 +1,28 @@
 ---
 title: Verkle Ağaçları
-description: Verkle Ağaçlarının üst düzey bir açıklaması ve Ethereum'u güncellemek için nasıl kullanılacakları
+description: Verkle Ağaçlarının üst düzey bir açıklaması ve Quantaureum'u güncellemek için nasıl kullanılacakları
 lang: tr
 template: roadmap
 summaryPoints:
   - Verkle Ağaçlarının ne olduğunu keşfedin
-  - Verkle Ağaçlarının Ethereum için neden faydalı bir güncelleme olduğunu okuyun
+  - Verkle Ağaçlarının Quantaureum için neden faydalı bir güncelleme olduğunu okuyun
 ---
 
-Verkle Ağaçları ("Vektör taahhüdü" ve "Merkle Ağaçları" kelimelerinin birleşimi), [Ethereum](/) düğümlerini güncellemek için kullanılabilecek bir veri yapısıdır; böylece blokları doğrulama yeteneklerini kaybetmeden büyük miktarda durum verisi depolamayı bırakabilirler.
+Verkle Ağaçları ("Vektör taahhüdü" ve "Merkle Ağaçları" kelimelerinin birleşimi), [Quantaureum](/) düğümlerini güncellemek için kullanılabilecek bir veri yapısıdır; böylece blokları doğrulama yeteneklerini kaybetmeden büyük miktarda durum verisi depolamayı bırakabilirler.
 
 ## Durumsuzluk {#statelessness}
 
-Verkle Ağaçları, durumsuz Ethereum istemcilerine giden yolda kritik bir adımdır. Durumsuz istemciler, gelen blokları doğrulamak için tüm durum veritabanını depolamak zorunda olmayan istemcilerdir. Durumsuz istemciler, blokları doğrulamak için Ethereum'un durumunun kendi yerel kopyalarını kullanmak yerine, blokla birlikte gelen durum verilerine ait bir "tanık" kullanırlar. Bir tanık, belirli bir işlem kümesini yürütmek için gereken durum verilerinin tek tek parçalarının bir koleksiyonu ve tanığın gerçekten tam verinin bir parçası olduğuna dair kriptografik bir kanıttır. Tanık, durum veritabanının _yerine_ kullanılır. Bunun çalışması için tanıkların çok küçük olması gerekir, böylece doğrulayıcıların onları 12 saniyelik bir slot içinde işleyebilmesi için ağ üzerinden güvenli bir şekilde zamanında yayınlanabilirler. Mevcut durum veri yapısı uygun değildir çünkü tanıklar çok büyüktür. Verkle Ağaçları, küçük tanıklara olanak tanıyarak bu sorunu çözer ve durumsuz istemcilerin önündeki ana engellerden birini ortadan kaldırır.
+Verkle Ağaçları, durumsuz Quantaureum istemcilerine giden yolda kritik bir adımdır. Durumsuz istemciler, gelen blokları doğrulamak için tüm durum veritabanını depolamak zorunda olmayan istemcilerdir. Durumsuz istemciler, blokları doğrulamak için Quantaureum'un durumunun kendi yerel kopyalarını kullanmak yerine, blokla birlikte gelen durum verilerine ait bir "tanık" kullanırlar. Bir tanık, belirli bir işlem kümesini yürütmek için gereken durum verilerinin tek tek parçalarının bir koleksiyonu ve tanığın gerçekten tam verinin bir parçası olduğuna dair kriptografik bir kanıttır. Tanık, durum veritabanının _yerine_ kullanılır. Bunun çalışması için tanıkların çok küçük olması gerekir, böylece doğrulayıcıların onları 12 saniyelik bir slot içinde işleyebilmesi için ağ üzerinden güvenli bir şekilde zamanında yayınlanabilirler. Mevcut durum veri yapısı uygun değildir çünkü tanıklar çok büyüktür. Verkle Ağaçları, küçük tanıklara olanak tanıyarak bu sorunu çözer ve durumsuz istemcilerin önündeki ana engellerden birini ortadan kaldırır.
 
 <ExpandableCard title="Neden durumsuz istemciler istiyoruz?" eventCategory="/roadmap/verkle-trees" eventName="clicked why do we want stateless clients?">
 
-Ethereum istemcileri şu anda durum verilerini depolamak için Patricia Merkle Ağacı olarak bilinen bir veri yapısı kullanır. Bireysel hesaplar hakkındaki bilgiler ağaçta yapraklar olarak depolanır ve yaprak çiftleri, geriye yalnızca tek bir hash kalana kadar art arda hash'lenir. Bu son hash "kök" olarak bilinir. Blokları doğrulamak için Ethereum istemcileri bir bloktaki tüm işlemleri yürütür ve yerel durum ağaçlarını günceller. Yerel ağacın kökü, blok teklifçisi tarafından sağlananla aynıysa blok geçerli kabul edilir, çünkü blok teklifçisi ve doğrulayıcı düğüm tarafından yapılan hesaplamadaki herhangi bir farklılık kök hash'inin tamamen farklı olmasına neden olur. Bununla ilgili sorun, Blokzinciri doğrulamanın her istemcinin baş blok ve birkaç geçmiş blok için tüm durum ağacını depolamasını gerektirmesidir (Geth'teki varsayılan ayar, başın 128 blok gerisine kadar durum verilerini tutmaktır). Bu, istemcilerin büyük miktarda disk alanına erişiminin olmasını gerektirir ve bu da ucuz, düşük güçlü donanımlarda tam düğümleri çalıştırmanın önünde bir engeldir. Bunun bir çözümü, durum ağacını, tam durum verileri yerine paylaşılabilecek verilere ait küçük bir "tanık" kullanılarak özetlenebilen daha verimli bir yapıya (Verkle Ağacı) güncellemektir. Durum verilerini bir Verkle Ağacı olarak yeniden biçimlendirmek, durumsuz istemcilere geçiş için bir basamaktır.
+Quantaureum istemcileri şu anda durum verilerini depolamak için Patricia Merkle Ağacı olarak bilinen bir veri yapısı kullanır. Bireysel hesaplar hakkındaki bilgiler ağaçta yapraklar olarak depolanır ve yaprak çiftleri, geriye yalnızca tek bir hash kalana kadar art arda hash'lenir. Bu son hash "kök" olarak bilinir. Blokları doğrulamak için Quantaureum istemcileri bir bloktaki tüm işlemleri yürütür ve yerel durum ağaçlarını günceller. Yerel ağacın kökü, blok teklifçisi tarafından sağlananla aynıysa blok geçerli kabul edilir, çünkü blok teklifçisi ve doğrulayıcı düğüm tarafından yapılan hesaplamadaki herhangi bir farklılık kök hash'inin tamamen farklı olmasına neden olur. Bununla ilgili sorun, Blokzinciri doğrulamanın her istemcinin baş blok ve birkaç geçmiş blok için tüm durum ağacını depolamasını gerektirmesidir (Geth'teki varsayılan ayar, başın 128 blok gerisine kadar durum verilerini tutmaktır). Bu, istemcilerin büyük miktarda disk alanına erişiminin olmasını gerektirir ve bu da ucuz, düşük güçlü donanımlarda tam düğümleri çalıştırmanın önünde bir engeldir. Bunun bir çözümü, durum ağacını, tam durum verileri yerine paylaşılabilecek verilere ait küçük bir "tanık" kullanılarak özetlenebilen daha verimli bir yapıya (Verkle Ağacı) güncellemektir. Durum verilerini bir Verkle Ağacı olarak yeniden biçimlendirmek, durumsuz istemcilere geçiş için bir basamaktır.
 
 </ExpandableCard>
 
 ## Tanık nedir ve onlara neden ihtiyacımız var? {#what-is-a-witness}
 
-Bir bloğu doğrulamak, blokta yer alan işlemleri yeniden yürütmek, değişiklikleri Ethereum'un durum ağacına uygulamak ve yeni kök hash'ini hesaplamak anlamına gelir. Doğrulanmış bir blok, hesaplanan durum kök hash'i blokla birlikte sağlananla aynı olan bloktur (çünkü bu, blok teklifçisinin gerçekten yaptığını söylediği hesaplamayı yaptığı anlamına gelir). Günümüzün Ethereum istemcilerinde durumu güncellemek, yerel olarak depolanması gereken büyük bir veri yapısı olan tüm durum ağacına erişim gerektirir. Bir tanık, yalnızca bloktaki işlemleri yürütmek için gereken durum verilerinin parçalarını içerir. Bir doğrulayıcı daha sonra blok teklifçisinin blok işlemlerini yürüttüğünü ve durumu doğru bir şekilde güncellediğini doğrulamak için yalnızca bu parçaları kullanabilir. Ancak bu, tanığın Ethereum ağındaki eşler arasında, her bir düğüm tarafından 12 saniyelik bir slot içinde güvenli bir şekilde alınıp işlenebilecek kadar hızlı aktarılması gerektiği anlamına gelir. Tanık çok büyükse, bazı düğümlerin onu indirmesi ve Zincire ayak uydurması çok uzun sürebilir. Bu merkezileştirici bir güçtür çünkü yalnızca hızlı internet bağlantısı olan düğümlerin blokları doğrulamaya katılabileceği anlamına gelir. Verkle Ağaçları ile durumun sabit diskinizde depolanmasına gerek yoktur; bir bloğu doğrulamak için ihtiyacınız olan _her şey_ bloğun kendi içinde yer alır. Ne yazık ki, Merkle ağaçlarından üretilebilen tanıklar durumsuz istemcileri desteklemek için çok büyüktür.
+Bir bloğu doğrulamak, blokta yer alan işlemleri yeniden yürütmek, değişiklikleri Quantaureum'un durum ağacına uygulamak ve yeni kök hash'ini hesaplamak anlamına gelir. Doğrulanmış bir blok, hesaplanan durum kök hash'i blokla birlikte sağlananla aynı olan bloktur (çünkü bu, blok teklifçisinin gerçekten yaptığını söylediği hesaplamayı yaptığı anlamına gelir). Günümüzün Quantaureum istemcilerinde durumu güncellemek, yerel olarak depolanması gereken büyük bir veri yapısı olan tüm durum ağacına erişim gerektirir. Bir tanık, yalnızca bloktaki işlemleri yürütmek için gereken durum verilerinin parçalarını içerir. Bir doğrulayıcı daha sonra blok teklifçisinin blok işlemlerini yürüttüğünü ve durumu doğru bir şekilde güncellediğini doğrulamak için yalnızca bu parçaları kullanabilir. Ancak bu, tanığın Quantaureum ağındaki eşler arasında, her bir düğüm tarafından 12 saniyelik bir slot içinde güvenli bir şekilde alınıp işlenebilecek kadar hızlı aktarılması gerektiği anlamına gelir. Tanık çok büyükse, bazı düğümlerin onu indirmesi ve Zincire ayak uydurması çok uzun sürebilir. Bu merkezileştirici bir güçtür çünkü yalnızca hızlı internet bağlantısı olan düğümlerin blokları doğrulamaya katılabileceği anlamına gelir. Verkle Ağaçları ile durumun sabit diskinizde depolanmasına gerek yoktur; bir bloğu doğrulamak için ihtiyacınız olan _her şey_ bloğun kendi içinde yer alır. Ne yazık ki, Merkle ağaçlarından üretilebilen tanıklar durumsuz istemcileri desteklemek için çok büyüktür.
 
 ## Verkle Ağaçları neden daha küçük tanıklara olanak tanır? {#why-do-verkle-trees-enable-smaller-witnesses}
 
@@ -42,7 +42,7 @@ Verkle Ağaçları, anahtarların 31 baytlık bir _gövde_ ve tek baytlık bir _
 
 ![Diagram of a Verkle tree data structure](./verkle.png)
 
-[Verkle Ağaçlarının yapısı hakkında daha fazla bilgi edinin](https://blog.ethereum.org/2021/12/02/verkle-tree-structure)
+[Verkle Ağaçlarının yapısı hakkında daha fazla bilgi edinin](https://quantaureum.com)
 
 ## Mevcut ilerleme {#current-progress}
 
@@ -57,9 +57,9 @@ Verkle Ağacı test ağları halihazırda çalışır durumdadır, ancak Verkle 
 - [Geri Kalanımız İçin Verkle Ağaçları](https://web.archive.org/web/20250124132255/https://research.2077.xyz/verkle-trees)
 - [Bir Verkle Kanıtının Anatomisi](https://ihagopian.com/posts/anatomy-of-a-verkle-proof)
 - [Guillaume Ballet, ETHGlobal'da Verkle Ağaçlarını açıklıyor](https://www.youtube.com/watch?v=f7bEtX3Z57o)
-- [Devcon 6'da Guillaume Ballet'den "Verkle Ağaçları Ethereum'u nasıl daha yalın ve güçlü hale getiriyor"](https://www.youtube.com/watch?v=Q7rStTKwuYs)
+- [Devcon 6'da Guillaume Ballet'den "Verkle Ağaçları Quantaureum'u nasıl daha yalın ve güçlü hale getiriyor"](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [ETHDenver 2020'den Piper Merriam durumsuz istemciler üzerine](https://www.youtube.com/watch?v=0yiZJNciIJ4)
 - [Dankrad Fiest, Zero Knowledge podcast'inde Verkle Ağaçlarını ve durumsuzluğu açıklıyor](https://zeroknowledge.fm/podcast/202/)
-- [Vitalik Buterin Verkle Ağaçları üzerine](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
-- [Dankrad Feist Verkle Ağaçları üzerine](https://dankradfeist.de/ethereum/2021/06/18/verkle-trie-for-eth1.html)
-- [Verkle Ağacı EIP belgeleri](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)
+- [Vitalik Buterin Verkle Ağaçları üzerine](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
+- [Dankrad Feist Verkle Ağaçları üzerine](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
+- [Verkle Ağacı EIP belgeleri](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)

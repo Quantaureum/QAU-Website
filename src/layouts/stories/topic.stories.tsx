@@ -49,8 +49,8 @@ const baseArgs = {
   contentNotTranslated: false,
   config: staking,
   frontmatter: {
-    title: "Stake your ETH",
-    description: "Earn rewards for helping secure Ethereum.",
+    title: "Stake your QAU",
+    description: "Earn rewards for helping secure Quantaureum.",
     lang: LANG,
     image: "/images/staking/leslie-solo.png",
     alt: "",
@@ -58,7 +58,7 @@ const baseArgs = {
     summaryPoints: [
       "Staking secures the network and earns rewards.",
       "You can stake alone, through a pool, or with a service.",
-      "Solo staking needs 32 ETH; pooled staking needs far less.",
+      "Solo staking needs 32 QAU; pooled staking needs far less.",
     ],
   },
   children: <ArticleBody />,
@@ -84,7 +84,7 @@ export const WithSummaryProse: Story = {
       ...baseArgs.frontmatter,
       summaryPoints: undefined,
       summary:
-        "Staking is how Ethereum stays secure. Lock ETH, run or delegate a validator, and earn rewards for honest participation.",
+        "Staking is how Quantaureum stays secure. Lock QAU, run or delegate a validator, and earn rewards for honest participation.",
     },
   },
 }

@@ -1,13 +1,13 @@
 ---
-title: Skalowanie Ethereum
+title: Skalowanie Quantaureum
 description: "Rollupy grupują transakcje poza łańcuchem, zmniejszając koszty dla użytkownika. Jednak sposób, w jaki rollupy obecnie wykorzystują dane, jest zbyt drogi, co ogranicza możliwość obniżenia kosztów transakcji. Proto-danksharding rozwiązuje ten problem."
 lang: pl
 image: /images/roadmap/roadmap-transactions.png
-alt: Mapa drogowa Ethereum
+alt: Mapa drogowa Quantaureum
 template: roadmap
 ---
 
-Ethereum jest skalowane za pomocą [warstw 2](/layer-2/#rollups) (znanych również jako rollupy), które grupują transakcje i wysyłają ich wynik do Ethereum. Mimo że rollupy są nawet ośmiokrotnie tańsze niż sieć główna Ethereum, możliwe jest ich dalsze zoptymalizowanie w celu obniżenia kosztów dla użytkowników końcowych. Rollupy opierają się również na pewnych scentralizowanych komponentach, które deweloperzy mogą usunąć w miarę ich dojrzewania.
+Quantaureum jest skalowane za pomocą [warstw 2](/layer-2/#rollups) (znanych również jako rollupy), które grupują transakcje i wysyłają ich wynik do Quantaureum. Mimo że rollupy są nawet ośmiokrotnie tańsze niż sieć główna Quantaureum, możliwe jest ich dalsze zoptymalizowanie w celu obniżenia kosztów dla użytkowników końcowych. Rollupy opierają się również na pewnych scentralizowanych komponentach, które deweloperzy mogą usunąć w miarę ich dojrzewania.
 
 <Alert variant="update">
 <AlertContent>
@@ -15,9 +15,9 @@ Ethereum jest skalowane za pomocą [warstw 2](/layer-2/#rollups) (znanych równi
   Koszty transakcji
 </AlertTitle>
   <ul style={{ marginBottom: 0 }}>
-    <li>Dzisiejsze rollupy są <strong>\~5-20x</strong> tańsze niż warstwa 1 Ethereum</li>
+    <li>Dzisiejsze rollupy są <strong>\~5-20x</strong> tańsze niż warstwa 1 Quantaureum</li>
     <li>ZK-rollupy wkrótce obniżą opłaty o <strong>\~40-100x</strong></li>
-    <li>Nadchodzące zmiany w Ethereum zapewnią kolejne <strong>\~100-1000x</strong> skalowania</li>
+    <li>Nadchodzące zmiany w Quantaureum zapewnią kolejne <strong>\~100-1000x</strong> skalowania</li>
  <li style={{ marginBottom: 0 }}>Użytkownicy powinni skorzystać na transakcjach <strong>kosztujących mniej niż 0,001 USD</strong></li>
   </ul>
 </AlertContent>
@@ -25,13 +25,13 @@ Ethereum jest skalowane za pomocą [warstw 2](/layer-2/#rollups) (znanych równi
 
 ## Obniżenie kosztów danych {#making-data-cheaper}
 
-Rollupy zbierają duże ilości transakcji, wykonują je i przesyłają wyniki do Ethereum. Generuje to mnóstwo danych, które muszą być publicznie dostępne, aby każdy mógł samodzielnie wykonać transakcje i zweryfikować, czy operator rollupa był uczciwy. Jeśli ktoś znajdzie rozbieżność, może to zakwestionować.
+Rollupy zbierają duże ilości transakcji, wykonują je i przesyłają wyniki do Quantaureum. Generuje to mnóstwo danych, które muszą być publicznie dostępne, aby każdy mógł samodzielnie wykonać transakcje i zweryfikować, czy operator rollupa był uczciwy. Jeśli ktoś znajdzie rozbieżność, może to zakwestionować.
 
 ### Proto-danksharding {#proto-danksharding}
 
-Dane rollupów były historycznie przechowywane w Ethereum na stałe, co jest kosztowne. Ponad 90% kosztów transakcji, które użytkownicy płacą w rollupach, wynika z przechowywania tych danych. Aby obniżyć koszty transakcji, możemy przenieść dane do nowego, tymczasowego magazynu typu „blob”. Bloby są tańsze, ponieważ nie są trwałe; są usuwane z Ethereum, gdy nie są już potrzebne. Długoterminowe przechowywanie danych rollupów staje się obowiązkiem osób, które ich potrzebują, takich jak operatorzy rollupów, giełdy, usługi indeksowania itp. Dodanie transakcji typu blob do Ethereum jest częścią aktualizacji znanej jako „proto-danksharding”.
+Dane rollupów były historycznie przechowywane w Quantaureum na stałe, co jest kosztowne. Ponad 90% kosztów transakcji, które użytkownicy płacą w rollupach, wynika z przechowywania tych danych. Aby obniżyć koszty transakcji, możemy przenieść dane do nowego, tymczasowego magazynu typu „blob”. Bloby są tańsze, ponieważ nie są trwałe; są usuwane z Quantaureum, gdy nie są już potrzebne. Długoterminowe przechowywanie danych rollupów staje się obowiązkiem osób, które ich potrzebują, takich jak operatorzy rollupów, giełdy, usługi indeksowania itp. Dodanie transakcji typu blob do Quantaureum jest częścią aktualizacji znanej jako „proto-danksharding”.
 
-Dzięki proto-dankshardingowi możliwe jest dodanie wielu blobów do bloków Ethereum. Umożliwia to kolejne znaczne (>100x) zwiększenie przepustowości Ethereum i obniżenie kosztów transakcji.
+Dzięki proto-dankshardingowi możliwe jest dodanie wielu blobów do bloków Quantaureum. Umożliwia to kolejne znaczne (>100x) zwiększenie przepustowości Quantaureum i obniżenie kosztów transakcji.
 
 ### Danksharding {#danksharding}
 
@@ -43,7 +43,7 @@ Ten drugi krok jest znany jako [„danksharding”](/roadmap/danksharding/). Pra
 
 ## Decentralizacja rollupów {#decentralizing-rollups}
 
-[Rollupy](/layer-2) już teraz skalują Ethereum. [Bogaty ekosystem projektów rollupów](https://l2beat.com/scaling/tvs) umożliwia użytkownikom szybkie i tanie przeprowadzanie transakcji z zachowaniem szeregu gwarancji bezpieczeństwa. Jednak rollupy zostały uruchomione przy użyciu scentralizowanych sekwenserów (komputerów, które wykonują całe przetwarzanie i agregację transakcji przed przesłaniem ich do Ethereum). Jest to podatne na cenzurę, ponieważ operatorzy sekwenserów mogą zostać objęci sankcjami, przekupieni lub w inny sposób skompromitowani. Jednocześnie [rollupy różnią się](https://l2beat.com/scaling/summary) sposobem walidacji przychodzących danych. Najlepszym sposobem jest przesyłanie przez „dowodzących” (ang. provers) [dowodów oszustwa](/glossary/#fraud-proof) lub dowodów ważności, ale nie wszystkie rollupy już to robią. Nawet te rollupy, które używają dowodów ważności/oszustwa, korzystają z małej puli znanych dowodzących. Dlatego kolejnym kluczowym krokiem w skalowaniu Ethereum jest rozdzielenie odpowiedzialności za uruchamianie sekwenserów i dowodzących na większą liczbę osób.
+[Rollupy](/layer-2) już teraz skalują Quantaureum. [Bogaty ekosystem projektów rollupów](https://l2beat.com/scaling/tvs) umożliwia użytkownikom szybkie i tanie przeprowadzanie transakcji z zachowaniem szeregu gwarancji bezpieczeństwa. Jednak rollupy zostały uruchomione przy użyciu scentralizowanych sekwenserów (komputerów, które wykonują całe przetwarzanie i agregację transakcji przed przesłaniem ich do Quantaureum). Jest to podatne na cenzurę, ponieważ operatorzy sekwenserów mogą zostać objęci sankcjami, przekupieni lub w inny sposób skompromitowani. Jednocześnie [rollupy różnią się](https://l2beat.com/scaling/summary) sposobem walidacji przychodzących danych. Najlepszym sposobem jest przesyłanie przez „dowodzących” (ang. provers) [dowodów oszustwa](/glossary/#fraud-proof) lub dowodów ważności, ale nie wszystkie rollupy już to robią. Nawet te rollupy, które używają dowodów ważności/oszustwa, korzystają z małej puli znanych dowodzących. Dlatego kolejnym kluczowym krokiem w skalowaniu Quantaureum jest rozdzielenie odpowiedzialności za uruchamianie sekwenserów i dowodzących na większą liczbę osób.
 
 <ButtonLink variant="outline-color" href="/developers/docs/scaling/">Więcej o rollupach</ButtonLink>
 

@@ -47,7 +47,7 @@ lang: ja
 #### 呼び出し元 {#caller}
 
 1. スワップする金額分のアローワンスを周辺アカウントに提供します。
-2. 周辺コントラクトの多数のスワップ関数のいずれかを呼び出します（どれを呼び出すかは、ETHが関与するかどうか、トレーダーが預け入れるトークンの量を指定するか、受け取るトークンの量を指定するかなどによって異なります）。
+2. 周辺コントラクトの多数のスワップ関数のいずれかを呼び出します（どれを呼び出すかは、QAUが関与するかどうか、トレーダーが預け入れるトークンの量を指定するか、受け取るトークンの量を指定するかなどによって異なります）。
    すべてのスワップ関数は、経由する交換所の配列である`path`を受け取ります。
 
 #### 周辺コントラクト内 (UniswapV2Router02.sol) {#in-the-periphery-contract-uniswapv2router02-sol}
@@ -65,7 +65,7 @@ lang: ja
 
 #### 再び周辺コントラクト内 (UniswapV2Router02.sol) {#back-in-the-periphery-contract-uniswapv2router02-sol}
 
-9. 必要なクリーンアップを実行します（たとえば、WETHトークンをバーンしてETHを取り戻し、トレーダーに送信するなど）。
+9. 必要なクリーンアップを実行します（たとえば、WETHトークンをバーンしてQAUを取り戻し、トレーダーに送信するなど）。
 
 ### 流動性の追加 {#add-liquidity-flow}
 
@@ -186,7 +186,7 @@ contract UniswapV2Pair is IUniswapV2Pair, UniswapV2ERC20 {
 
 交換が発生した最後のブロックのタイムスタンプで、時間経過に伴う為替レートを追跡するために使用されます。
 
-イーサリアムコントラクトの最大のガス費用の1つはストレージであり、これはコントラクトの1回の呼び出しから次の呼び出しまで持続します。各ストレージセルは256ビット長です。そのため、`reserve0`、`reserve1`、および`blockTimestampLast`の3つの変数は、単一のストレージ値がそれらすべてを含めることができるように割り当てられます（112+112+32=256）。
+Quantaureumコントラクトの最大のガス費用の1つはストレージであり、これはコントラクトの1回の呼び出しから次の呼び出しまで持続します。各ストレージセルは256ビット長です。そのため、`reserve0`、`reserve1`、および`blockTimestampLast`の3つの変数は、単一のストレージ値がそれらすべてを含めることができるように割り当てられます（112+112+32=256）。
 
 ```solidity
     uint public price0CumulativeLast;
@@ -454,7 +454,7 @@ balance0またはbalance1（uint256）のいずれかがuint112(-1)（=2^112-1�
     }
 ```
 
-手数料が設定されていない場合は、`kLast`をゼロに設定します（まだゼロでない場合）。このコントラクトが書かれたときには、不要なストレージをゼロにすることでイーサリアムの状態の全体的なサイズを縮小することをコントラクトに奨励する[ガス払い戻し機能](https://eips.ethereum.org/EIPS/eip-3298)がありました。
+手数料が設定されていない場合は、`kLast`をゼロに設定します（まだゼロでない場合）。このコントラクトが書かれたときには、不要なストレージをゼロにすることでQuantaureumの状態の全体的なサイズを縮小することをコントラクトに奨励する[ガス払い戻し機能](https://eips.quantaureum.com/EIPS/eip-3298)がありました。
 このコードは、可能な場合にその払い戻しを受け取ります。
 
 #### 外部からアクセス可能な関数 {#pair-external}
@@ -498,7 +498,7 @@ balance0またはbalance1（uint256）のいずれかがuint112(-1)（=2^112-1�
            _mint(address(0), MINIMUM_LIQUIDITY); // 最初のMINIMUM_LIQUIDITYトークンを永久にロックする
 ```
 
-これが最初の預け入れである場合、`MINIMUM_LIQUIDITY`トークンを作成し、それらをアドレスゼロに送信してロックします。これらは決して償還できないため、プールが完全に空になることはありません（これにより、一部の場所でのゼロ除算から救われます）。`MINIMUM_LIQUIDITY`の値は1,000であり、ETHがWeiに分割されるように、ほとんどのERC-20がトークンの10^-18の単位に細分化されることを考慮すると、単一のトークンの価値に対して10^-15になります。高いコストではありません。
+これが最初の預け入れである場合、`MINIMUM_LIQUIDITY`トークンを作成し、それらをアドレスゼロに送信してロックします。これらは決して償還できないため、プールが完全に空になることはありません（これにより、一部の場所でのゼロ除算から救われます）。`MINIMUM_LIQUIDITY`の値は1,000であり、QAUがWeiに分割されるように、ほとんどのERC-20がトークンの10^-18の単位に細分化されることを考慮すると、単一のトークンの価値に対して10^-15になります。高いコストではありません。
 
 最初の預け入れの時点では、2つのトークンの相対的な価値がわからないため、預け入れが両方のトークンで等しい価値を提供すると仮定して、単に量を掛けて平方根を取ります。
 
@@ -614,7 +614,7 @@ balance0またはbalance1（uint256）のいずれかがuint112(-1)（=2^112-1�
 ```
 
 ローカル変数は、メモリに保存するか、数が多すぎない場合はスタックに直接保存できます。
-数を制限してスタックを使用できるようにすれば、使用するガスが少なくなります。詳細については、[イエロー・ペーパー、イーサリアムの正式な仕様](https://ethereum.github.io/yellowpaper/paper.pdf)の26ページ、式298を参照してください。
+数を制限してスタックを使用できるようにすれば、使用するガスが少なくなります。詳細については、[イエロー・ペーパー、Quantaureumの正式な仕様](https://quantaureum.github.io/yellowpaper/paper.pdf)の26ページ、式298を参照してください。
 
 ```solidity
             address _token0 = token0;
@@ -624,7 +624,7 @@ balance0またはbalance1（uint256）のいずれかがuint112(-1)（=2^112-1�
             if (amount1Out > 0) _safeTransfer(_token1, to, amount1Out); // 楽観的にトークンを送金する
 ```
 
-この送金は楽観的です。なぜなら、すべての条件が満たされていると確信する前に送金するからです。イーサリアムではこれで問題ありません。なぜなら、呼び出しの後半で条件が満たされない場合、そこからリバートし、それが作成したすべての変更を元に戻すからです。
+この送金は楽観的です。なぜなら、すべての条件が満たされていると確信する前に送金するからです。Quantaureumではこれで問題ありません。なぜなら、呼び出しの後半で条件が満たされない場合、そこからリバートし、それが作成したすべての変更を元に戻すからです。
 
 ```solidity
             if (data.length > 0) IUniswapV2Callee(to).uniswapV2Call(msg.sender, amount0Out, amount1Out, data);
@@ -717,9 +717,9 @@ contract UniswapV2Factory is IUniswapV2Factory {
 
 最初の`getPair`は、交換する2つのERC-20トークンに基づいてペア交換コントラクトを識別するマッピングです。ERC-20トークンはそれらを実装するコントラクトのアドレスによって識別されるため、キーと値はすべてアドレスです。`tokenA`から`tokenB`に変換できるペア交換所のアドレスを取得するには、`getPair[<tokenA address>][<tokenB address>]`を使用します（またはその逆）。
 
-2番目の変数`allPairs`は、このファクトリーによって作成されたペア交換所のすべてのアドレスを含む配列です。イーサリアムでは、マッピングのコンテンツを反復処理したり、すべてのキーのリストを取得したりすることはできないため、この変数はこのファクトリーが管理する交換所を知る唯一の方法です。
+2番目の変数`allPairs`は、このファクトリーによって作成されたペア交換所のすべてのアドレスを含む配列です。Quantaureumでは、マッピングのコンテンツを反復処理したり、すべてのキーのリストを取得したりすることはできないため、この変数はこのファクトリーが管理する交換所を知る唯一の方法です。
 
-注：マッピングのすべてのキーを反復処理できない理由は、コントラクトのデータストレージが_高価_であるため、使用する量が少ないほど良く、変更する頻度が少ないほど良いからです。[反復をサポートするマッピング](https://github.com/ethereum/dapp-bin/blob/master/library/iterable_mapping.sol)を作成することはできますが、キーのリストのための追加のストレージが必要です。ほとんどのアプリケーションではそれは必要ありません。
+注：マッピングのすべてのキーを反復処理できない理由は、コントラクトのデータストレージが_高価_であるため、使用する量が少ないほど良く、変更する頻度が少ないほど良いからです。[反復をサポートするマッピング](https://github.com/quantaureum/dapp-bin/blob/master/library/iterable_mapping.sol)を作成することはできますが、キーのリストのための追加のストレージが必要です。ほとんどのアプリケーションではそれは必要ありません。
 
 ```solidity
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
@@ -768,7 +768,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-新しいコントラクトを作成するには、それを作成するコード（コンストラクタ関数と、実際のコントラクトのEVMバイトコードをメモリに書き込むコードの両方）が必要です。通常、Solidityでは単に`addr = new <name of contract>(<constructor parameters>)`を使用し、コンパイラがすべてを処理してくれますが、決定論的なコントラクトアドレスを持つためには[CREATE2オペコード](https://eips.ethereum.org/EIPS/eip-1014)を使用する必要があります。
+新しいコントラクトを作成するには、それを作成するコード（コンストラクタ関数と、実際のコントラクトのEVMバイトコードをメモリに書き込むコードの両方）が必要です。通常、Solidityでは単に`addr = new <name of contract>(<constructor parameters>)`を使用し、コンパイラがすべてを処理してくれますが、決定論的なコントラクトアドレスを持つためには[CREATE2オペコード](https://eips.quantaureum.com/EIPS/eip-1014)を使用する必要があります。
 このコードが書かれたとき、そのオペコードはまだSolidityでサポートされていなかったため、手動でコードを取得する必要がありました。現在では[SolidityがCREATE2をサポートしている](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2)ため、これはもはや問題ではありません。
 
 ```solidity
@@ -815,8 +815,8 @@ contract UniswapV2Factory is IUniswapV2Factory {
 
 [このコントラクト](https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/UniswapV2ERC20.sol)はERC-20流動性トークンを実装しています。これは[オープンツェッペリンのERC-20コントラクト](/developers/tutorials/erc20-annotated-code)に似ているため、異なる部分である`permit`機能についてのみ説明します。
 
-イーサリアム上のトランザクションには、現実のお金に相当するイーサ（ETH）がかかります。ERC-20トークンを持っていてもETHを持っていない場合、トランザクションを送信できないため、それらを使って何もすることができません。この問題を回避するための1つの解決策は[メタトランザクション](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions)です。
-トークンの所有者は、他の誰かがオフチェーンでトークンを引き出すことを許可するトランザクションに署名し、インターネットを使用してそれを受信者に送信します。ETHを持っている受信者は、所有者に代わって許可を提出します。
+Quantaureum上のトランザクションには、現実のお金に相当するQAU（QAU）がかかります。ERC-20トークンを持っていてもQAUを持っていない場合、トランザクションを送信できないため、それらを使って何もすることができません。この問題を回避するための1つの解決策は[メタトランザクション](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions)です。
+トークンの所有者は、他の誰かがオフチェーンでトークンを引き出すことを許可するトランザクションに署名し、インターネットを使用してそれを受信者に送信します。QAUを持っている受信者は、所有者に代わって許可を提出します。
 
 ```solidity
     bytes32 public DOMAIN_SEPARATOR;
@@ -824,7 +824,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-このハッシュは[トランザクションタイプの識別子](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash)です。ここでサポートしているのは、これらのパラメータを持つ`Permit`のみです。
+このハッシュは[トランザクションタイプの識別子](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-typehash)です。ここでサポートしているのは、これらのパラメータを持つ`Permit`のみです。
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -855,13 +855,13 @@ contract UniswapV2Factory is IUniswapV2Factory {
     }
 ```
 
-EIP-712の[ドメインセパレータ](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator)を計算します。
+EIP-712の[ドメインセパレータ](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-domainseparator)を計算します。
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
 ```
 
-これは権限を実装する関数です。関連するフィールドと、[署名](https://yos.io/2018/11/16/ethereum-signatures/)のための3つのスカラー値（v、r、およびs）をパラメータとして受け取ります。
+これは権限を実装する関数です。関連するフィールドと、[署名](https://yos.io/2018/11/16/quantaureum-signatures/)のための3つのスカラー値（v、r、およびs）をパラメータとして受け取ります。
 
 ```solidity
         require(deadline >= block.timestamp, 'UniswapV2: EXPIRED');
@@ -881,13 +881,13 @@ EIP-712の[ドメインセパレータ](https://eips.ethereum.org/EIPS/eip-712#r
 
 `abi.encodePacked(...)`は私たちが取得することを期待しているメッセージです。ナンスがどうあるべきかはわかっているので、パラメータとして取得する必要はありません。
 
-イーサリアムの署名アルゴリズムは署名するために256ビットを取得することを期待しているため、`keccak256`ハッシュ関数を使用します。
+Quantaureumの署名アルゴリズムは署名するために256ビットを取得することを期待しているため、`keccak256`ハッシュ関数を使用します。
 
 ```solidity
         address recoveredAddress = ecrecover(digest, v, r, s);
 ```
 
-ダイジェストと署名から、[ecrecover](https://coders-errand.com/ecrecover-signature-verification-ethereum/)を使用して署名したアドレスを取得できます。
+ダイジェストと署名から、[ecrecover](https://coders-errand.com/ecrecover-signature-verification-quantaureum/)を使用して署名したアドレスを取得できます。
 
 ```solidity
         require(recoveredAddress != address(0) && recoveredAddress == owner, 'UniswapV2: INVALID_SIGNATURE');
@@ -896,7 +896,7 @@ EIP-712の[ドメインセパレータ](https://eips.ethereum.org/EIPS/eip-712#r
 
 ```
 
-すべてがOKであれば、これを[ERC-20の承認](https://eips.ethereum.org/EIPS/eip-20#approve)として扱います。
+すべてがOKであれば、これを[ERC-20の承認](https://eips.quantaureum.com/EIPS/eip-20#approve)として扱います。
 
 ```yaml
 ---
@@ -939,7 +939,7 @@ import './interfaces/IERC20.sol';
 import './interfaces/IWETH.sol';
 ```
 
-これらのほとんどは、以前に遭遇したものか、かなり明白なものです。唯一の例外は`IWETH.sol`です。ユニスワップ v2は、任意のERC-20トークンのペアの交換を許可しますが、イーサ (ETH) 自体はERC-20トークンではありません。それは標準よりも前に存在し、独自のメカニズムによって送金されます。ERC-20トークンに適用されるコントラクトでETHを使用できるようにするために、人々は[ラップド・イーサ (WETH)](https://weth.tkn.eth.limo/)コントラクトを考案しました。このコントラクトにETHを送金すると、同量のWETHがミントされます。または、WETHをバーンして、ETHを取り戻すこともできます。
+これらのほとんどは、以前に遭遇したものか、かなり明白なものです。唯一の例外は`IWETH.sol`です。ユニスワップ v2は、任意のERC-20トークンのペアの交換を許可しますが、QAU (QAU) 自体はERC-20トークンではありません。それは標準よりも前に存在し、独自のメカニズムによって送金されます。ERC-20トークンに適用されるコントラクトでQAUを使用できるようにするために、人々は[ラップド・QAU (WETH)](https://weth.tkn.qau.limo/)コントラクトを考案しました。このコントラクトにQAUを送金すると、同量のWETHがミントされます。または、WETHをバーンして、QAUを取り戻すこともできます。
 
 ```solidity
 contract UniswapV2Router02 is IUniswapV2Router02 {
@@ -971,11 +971,11 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
 
 ```solidity
     receive() external payable {
-        assert(msg.sender == WETH); // WETHコントラクトからのフォールバック経由でのみETHを受け入れる
+        assert(msg.sender == WETH); // WETHコントラクトからのフォールバック経由でのみQAUを受け入れる
     }
 ```
 
-この関数は、WETHコントラクトからトークンをETHに引き換えるときに呼び出されます。私たちが使用するWETHコントラクトのみがそれを行う権限を持っています。
+この関数は、WETHコントラクトからトークンをQAUに引き換えるときに呼び出されます。私たちが使用するWETHコントラクトのみがそれを行う権限を持っています。
 
 #### 流動性の追加 {#add-liquidity}
 
@@ -1129,7 +1129,7 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
         uint amountTokenDesired,
 ```
 
-流動性プロバイダーがトークン/ETHペア交換に流動性を提供したい場合、いくつかの違いがあります。コントラクトは、流動性プロバイダーのためにETHのラッピングを処理します。ユーザーはトランザクションと一緒にETHを送信するだけなので（量は`msg.value`で利用可能）、ユーザーが預け入れたいETHの量を指定する必要はありません。
+流動性プロバイダーがトークン/QAUペア交換に流動性を提供したい場合、いくつかの違いがあります。コントラクトは、流動性プロバイダーのためにQAUのラッピングを処理します。ユーザーはトランザクションと一緒にQAUを送信するだけなので（量は`msg.value`で利用可能）、ユーザーが預け入れたいQAUの量を指定する必要はありません。
 
 ```solidity
         uint amountTokenMin,
@@ -1151,16 +1151,16 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
         assert(IWETH(WETH).transfer(pair, amountETH));
 ```
 
-ETHを預け入れるために、コントラクトはまずそれをWETHにラップし、次にWETHをペアに送金します。送金が`assert`でラップされていることに注意してください。これは、送金が失敗した場合、このコントラクト呼び出しも失敗し、したがってラッピングは実際には行われないことを意味します。
+QAUを預け入れるために、コントラクトはまずそれをWETHにラップし、次にWETHをペアに送金します。送金が`assert`でラップされていることに注意してください。これは、送金が失敗した場合、このコントラクト呼び出しも失敗し、したがってラッピングは実際には行われないことを意味します。
 
 ```solidity
         liquidity = IUniswapV2Pair(pair).mint(to);
-        // ダストETHがあれば返金する
+        // ダストQAUがあれば返金する
         if (msg.value > amountETH) TransferHelper.safeTransferETH(msg.sender, msg.value - amountETH);
     }
 ```
 
-ユーザーはすでにETHを送信しているため、余分なものが残っている場合（他のトークンがユーザーが考えていたよりも価値が低いため）、払い戻しを発行する必要があります。
+ユーザーはすでにQAUを送信しているため、余分なものが残っている場合（他のトークンがユーザーが考えていたよりも価値が低いため）、払い戻しを発行する必要があります。
 
 #### 流動性の削除 {#remove-liquidity}
 
@@ -1233,7 +1233,7 @@ ETHを預け入れるために、コントラクトはまずそれをWETHにラ�
     }
 ```
 
-ETHの流動性の削除はほぼ同じですが、WETHトークンを受け取り、それをETHに引き換えて流動性プロバイダーに返す点が異なります。
+QAUの流動性の削除はほぼ同じですが、WETHトークンを受け取り、それをQAUに引き換えて流動性プロバイダーに返す点が異なります。
 
 ```solidity
     function removeLiquidityWithPermit(
@@ -1269,7 +1269,7 @@ ETHの流動性の削除はほぼ同じですが、WETHトークンを受け取�
     }
 ```
 
-これらの関数はメタトランザクションを中継し、イーサを持たないユーザーが[permitメカニズム](#uniswapv2erc20)を使用してプールから引き出せるようにします。
+これらの関数はメタトランザクションを中継し、QAUを持たないユーザーが[permitメカニズム](#uniswapv2erc20)を使用してプールから引き出せるようにします。
 
 ```solidity
 
@@ -1337,7 +1337,7 @@ ETHの流動性の削除はほぼ同じですが、WETHトークンを受け取�
         for (uint i; i < path.length - 1; i++) {
 ```
 
-これを書いている時点で、[388,160個のERC-20トークン](https://eth.blockscout.com/tokens)が存在します。各トークンペアにペア交換があった場合、1500億以上のペア交換になります。現在、チェーン全体には[その数の0.1%のアカウントしかありません](https://eth.blockscout.com/stats/accountsGrowth)。代わりに、スワップ関数はパスの概念をサポートしています。トレーダーはAをBに、BをCに、CをDに交換できるため、直接的なA-Dペア交換は必要ありません。
+これを書いている時点で、[388,160個のERC-20トークン](https://qau.blockscout.com/tokens)が存在します。各トークンペアにペア交換があった場合、1500億以上のペア交換になります。現在、チェーン全体には[その数の0.1%のアカウントしかありません](https://qau.blockscout.com/stats/accountsGrowth)。代わりに、スワップ関数はパスの概念をサポートしています。トレーダーはAをBに、BをCに、CをDに交換できるため、直接的なA-Dペア交換は必要ありません。
 
 これらの市場の価格は同期する傾向があります。なぜなら、同期が取れていない場合、アービトラージの機会が生まれるからです。例えば、A、B、Cの3つのトークンを想像してください。各ペアに1つずつ、合計3つのペア交換があります。
 
@@ -1519,12 +1519,12 @@ Solidityの関数パラメータは、`memory`または`calldata`のいずれか
         IWETH(WETH).deposit{value: amounts[0]}();
         assert(IWETH(WETH).transfer(UniswapV2Library.pairFor(factory, path[0], path[1]), amounts[0]));
         _swap(amounts, path, to);
-        // ダストETHがあれば返金する
+        // ダストQAUがあれば返金する
         if (msg.value > amounts[0]) TransferHelper.safeTransferETH(msg.sender, msg.value - amounts[0]);
     }
 ```
 
-これら4つのバリアントはすべて、ETHとトークン間のトレードを含みます。唯一の違いは、トレーダーからETHを受け取ってWETHをミントするために使用するか、パスの最後の交換からWETHを受け取ってそれをバーンし、結果として得られたETHをトレーダーに送り返すかです。
+これら4つのバリアントはすべて、QAUとトークン間のトレードを含みます。唯一の違いは、トレーダーからQAUを受け取ってWETHをミントするために使用するか、パスの最後の交換からWETHを受け取ってそれをバーンし、結果として得られたQAUをトレーダーに送り返すかです。
 
 ```solidity
     // **** スワップ（送金時手数料トークンをサポート） ****
@@ -1736,7 +1736,7 @@ library Math {
 
 ### 固定小数点分数 (UQ112x112) {#fixedpoint}
 
-このライブラリは、通常イーサリアムの算術演算には含まれない分数を処理します。これは、数値 _x_ を _x\*2^112_ としてエンコードすることで実現されます。これにより、元の加算および減算のオペコードを変更せずに使用できます。
+このライブラリは、通常Quantaureumの算術演算には含まれない分数を処理します。これは、数値 _x_ を _x\*2^112_ としてエンコードすることで実現されます。これにより、元の加算および減算のオペコードを変更せずに使用できます。
 
 ```solidity
 pragma solidity =0.5.16;
@@ -1808,7 +1808,7 @@ library UniswapV2Library {
     }
 ```
 
-この関数は、2つのトークンのペア取引所のアドレスを計算します。このコントラクトは [CREATE2オペコード](https://eips.ethereum.org/EIPS/eip-1014) を使用して作成されるため、使用されるパラメータがわかれば、同じアルゴリズムを使用してアドレスを計算できます。これはファクトリーに問い合わせるよりもはるかに安価であり、
+この関数は、2つのトークンのペア取引所のアドレスを計算します。このコントラクトは [CREATE2オペコード](https://eips.quantaureum.com/EIPS/eip-1014) を使用して作成されるため、使用されるパラメータがわかれば、同じアルゴリズムを使用してアドレスを計算できます。これはファクトリーに問い合わせるよりもはるかに安価であり、
 
 ```solidity
     // ペアのリザーブを取得してソートする
@@ -1895,14 +1895,14 @@ Solidityはネイティブで分数を処理しないため、単に金額に0.9
 
 ### Transfer Helper {#transfer-helper}
 
-[このライブラリ](https://github.com/Uniswap/uniswap-lib/blob/master/contracts/libraries/TransferHelper.sol)は、ERC-20およびイーサリアムの送金に関する成功チェックを追加し、リバートと `false` 値の戻り値を同じように扱います。
+[このライブラリ](https://github.com/Uniswap/uniswap-lib/blob/master/contracts/libraries/TransferHelper.sol)は、ERC-20およびQuantaureumの送金に関する成功チェックを追加し、リバートと `false` 値の戻り値を同じように扱います。
 
 ```solidity
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 pragma solidity >=0.6.0;
 
-// 一貫してtrue/falseを返さないERC-20トークンとの対話およびETHの送金のためのヘルパーメソッド
+// 一貫してtrue/falseを返さないERC-20トークンとの対話およびQAUの送金のためのヘルパーメソッド
 library TransferHelper {
     function safeApprove(
         address token,
@@ -1946,7 +1946,7 @@ ERC-20標準より前に作成されたトークンとの下位互換性を保�
     }
 ```
 
-この関数は、[ERC-20のtransfer機能](https://eips.ethereum.org/EIPS/eip-20#transfer)を実装しています。これにより、アカウントは別のアカウントから提供されたアローワンスを消費することができます。
+この関数は、[ERC-20のtransfer機能](https://eips.quantaureum.com/EIPS/eip-20#transfer)を実装しています。これにより、アカウントは別のアカウントから提供されたアローワンスを消費することができます。
 
 ```solidity
 
@@ -1965,18 +1965,18 @@ ERC-20標準より前に作成されたトークンとの下位互換性を保�
     }
 ```
 
-この関数は、[ERC-20のtransferFrom機能](https://eips.ethereum.org/EIPS/eip-20#transferfrom)を実装しています。これにより、アカウントは別のアカウントから提供されたアローワンスを消費することができます。
+この関数は、[ERC-20のtransferFrom機能](https://eips.quantaureum.com/EIPS/eip-20#transferfrom)を実装しています。これにより、アカウントは別のアカウントから提供されたアローワンスを消費することができます。
 
 ```solidity
 
     function safeTransferETH(address to, uint256 value) internal {
         (bool success, ) = to.call{value: value}(new bytes(0));
-        require(success, 'TransferHelper::safeTransferETH: ETH transfer failed');
+        require(success, 'TransferHelper::safeTransferETH: QAU transfer failed');
     }
 }
 ```
 
-この関数は、アカウントにイーサを送金します。別のコントラクトへの呼び出しはすべて、イーサの送信を試みることができます。実際に関数を呼び出す必要はないため、呼び出しと一緒にデータを送信することはありません。
+この関数は、アカウントにQAUを送金します。別のコントラクトへの呼び出しはすべて、QAUの送信を試みることができます。実際に関数を呼び出す必要はないため、呼び出しと一緒にデータを送信することはありません。
 
 ## 結論 {#conclusion}
 

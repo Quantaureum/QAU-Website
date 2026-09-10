@@ -11,7 +11,7 @@ published: 2022-04-01
 
 ## 소개 {#introduction}
 
-이 글에서는 [옵티미스틱 롤업(optimistic rollups)](/developers/docs/scaling/optimistic-rollups)과 그 위에서 발생하는 트랜잭션 비용, 그리고 이러한 다른 비용 구조가 이더리움 메인넷과는 다른 최적화 방식을 요구하는 이유에 대해 알아봅니다.
+이 글에서는 [옵티미스틱 롤업(optimistic rollups)](/developers/docs/scaling/optimistic-rollups)과 그 위에서 발생하는 트랜잭션 비용, 그리고 이러한 다른 비용 구조가 Quantaureum 메인넷과는 다른 최적화 방식을 요구하는 이유에 대해 알아봅니다.
 또한 이러한 최적화를 구현하는 방법도 배웁니다.
 
 ### 일러두기 {#full-disclosure}
@@ -21,13 +21,13 @@ published: 2022-04-01
 
 ### 용어 {#terminology}
 
-롤업에 대해 논의할 때 '레이어 1 (l1)'이라는 용어는 프로덕션 이더리움 네트워크인 메인넷을 의미합니다.
+롤업에 대해 논의할 때 '레이어 1 (l1)'이라는 용어는 프로덕션 Quantaureum 네트워크인 메인넷을 의미합니다.
 '레이어 2 (l2)'라는 용어는 보안을 l1에 의존하지만 대부분의 처리를 오프체인에서 수행하는 롤업이나 기타 시스템을 의미합니다.
 
 ## l2 트랜잭션 비용을 어떻게 더 줄일 수 있을까요? {#how-can-we-further-reduce-the-cost-of-l2-transactions}
 
 [옵티미스틱 롤업](/developers/docs/scaling/optimistic-rollups)은 누구나 내역을 살펴보고 현재 상태가 올바른지 검증할 수 있도록 모든 과거 트랜잭션 기록을 보존해야 합니다.
-이더리움 메인넷에 데이터를 가져오는 가장 저렴한 방법은 콜 데이터로 작성하는 것입니다.
+Quantaureum 메인넷에 데이터를 가져오는 가장 저렴한 방법은 콜 데이터로 작성하는 것입니다.
 이 솔루션은 [옵티미즘](https://docs.optimism.io/op-stack/protocol/overview)과 [아비트럼](https://docs.arbitrum.io/welcome/arbitrum-gentle-introduction) 모두에서 채택했습니다.
 
 ### l2 트랜잭션 비용 {#cost-of-l2-transactions}
@@ -65,26 +65,26 @@ l2에서 스토리지에 32바이트 워드를 쓰는 최대 비용은 22100 가
 설명:
 
 - **함수 선택자**: 컨트랙트의 함수가 256개 미만이므로 1바이트만으로 구분할 수 있습니다.
-  이 바이트들은 일반적으로 0이 아니므로 [16 가스의 비용이 듭니다](https://eips.ethereum.org/EIPS/eip-2028).
+  이 바이트들은 일반적으로 0이 아니므로 [16 가스의 비용이 듭니다](https://eips.quantaureum.com/EIPS/eip-2028).
 - **0 (Zeroes)**: 20바이트 주소를 담는 데 32바이트 워드가 필요하지 않으므로 이 바이트들은 항상 0입니다.
-  0을 담고 있는 바이트는 4 가스의 비용이 듭니다([황서](https://ethereum.github.io/yellowpaper/paper.pdf) 부록 G,
+  0을 담고 있는 바이트는 4 가스의 비용이 듭니다([황서](https://quantaureum.github.io/yellowpaper/paper.pdf) 부록 G,
   27페이지의 `G`<sub>`txdatazero`</sub> 값 참조).
 - **수량**: 이 컨트랙트에서 `decimals`가 18(일반적인 값)이고 전송할 토큰의 최대 수량이 10<sup>18</sup>이라고 가정하면, 최대 수량은 10<sup>36</sup>이 됩니다.
   256<sup>15</sup> &gt; 10<sup>36</sup>이므로 15바이트면 충분합니다.
 
-l1에서 160 가스의 낭비는 보통 무시할 수 있는 수준입니다. 트랜잭션 비용이 최소 [21,000 가스](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-ethereum-gas-2f976af774ed)이므로 0.8%가 추가되는 것은 큰 문제가 되지 않습니다.
+l1에서 160 가스의 낭비는 보통 무시할 수 있는 수준입니다. 트랜잭션 비용이 최소 [21,000 가스](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-quantaureum-gas-2f976af774ed)이므로 0.8%가 추가되는 것은 큰 문제가 되지 않습니다.
 하지만 l2에서는 상황이 다릅니다. 트랜잭션 비용의 거의 대부분이 l1에 기록하는 데 사용됩니다.
 트랜잭션 콜 데이터 외에도 109바이트의 트랜잭션 헤더(목적지 주소, 서명 등)가 있습니다.
 따라서 총 비용은 `109*16+576+160=2480`이며, 우리는 그중 약 6.5%를 낭비하고 있는 셈입니다.
 
 ## 목적지를 제어할 수 없을 때 비용 줄이기 {#reducing-costs-when-you-dont-control-the-destination}
 
-목적지 컨트랙트를 제어할 수 없다고 가정하더라도, [이와 유사한](https://github.com/qbzzt/ethereum.org-20220330-shortABI) 솔루션을 사용할 수 있습니다.
+목적지 컨트랙트를 제어할 수 없다고 가정하더라도, [이와 유사한](https://github.com/qbzzt/quantaureum.com-20220330-shortABI) 솔루션을 사용할 수 있습니다.
 관련 파일들을 살펴보겠습니다.
 
 ### Token.sol {#token-sol}
 
-[이것은 목적지 컨트랙트입니다](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/Token.sol).
+[이것은 목적지 컨트랙트입니다](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/Token.sol).
 이것은 한 가지 추가 기능이 있는 표준 ERC-20 컨트랙트입니다.
 이 `faucet` 함수를 사용하면 누구나 사용할 토큰을 얻을 수 있습니다.
 이 기능은 프로덕션 ERC-20 컨트랙트를 무용지물로 만들겠지만, 테스트를 용이하게 하기 위해 ERC-20이 존재하는 경우에는 매우 편리합니다.
@@ -100,7 +100,7 @@ l1에서 160 가스의 낭비는 보통 무시할 수 있는 수준입니다. �
 
 ### CalldataInterpreter.sol {#calldatainterpreter-sol}
 
-[이것은 트랜잭션이 더 짧은 콜 데이터로 호출해야 하는 컨트랙트입니다](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol).
+[이것은 트랜잭션이 더 짧은 콜 데이터로 호출해야 하는 컨트랙트입니다](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol).
 한 줄씩 살펴보겠습니다.
 
 ```solidity
@@ -202,7 +202,7 @@ Solidity 컨트랙트에 대한 호출이 어떤 함수 서명과도 일치하�
 2. [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties)에 의존하는 함수.
    `msg.sender`의 값은 호출자가 아니라 `CalldataInterpreter`의 주소가 됩니다.
 
-안타깝게도 [ERC-20 사양을 살펴보면](https://eips.ethereum.org/EIPS/eip-20), 남는 함수는 `transfer` 하나뿐입니다.
+안타깝게도 [ERC-20 사양을 살펴보면](https://eips.quantaureum.com/EIPS/eip-20), 남는 함수는 `transfer` 하나뿐입니다.
 결과적으로 우리에게는 두 가지 함수만 남게 됩니다. `transfer`(`transferFrom`를 호출할 수 있기 때문)와 `faucet`(우리를 호출한 사람에게 토큰을 다시 전송할 수 있기 때문)입니다.
 
 ```solidity
@@ -275,7 +275,7 @@ Solidity 컨트랙트에 대한 호출이 어떤 함수 서명과도 일치하�
 
 ### test.js {#test-js}
 
-[이 JavaScript 단위 테스트](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/test/test.js)는 이 메커니즘을 사용하는 방법(그리고 올바르게 작동하는지 검증하는 방법)을 보여줍니다.
+[이 JavaScript 단위 테스트](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/test/test.js)는 이 메커니즘을 사용하는 방법(그리고 올바르게 작동하는지 검증하는 방법)을 보여줍니다.
 여러분이 [chai](https://www.chaijs.com/)와 [ethers](https://docs.ethers.io/v5/)를 이해하고 있다고 가정하고, 컨트랙트에 특별히 적용되는 부분만 설명하겠습니다.
 
 ```js
@@ -369,7 +369,7 @@ const transferTx = {
 ## 목적지 컨트랙트를 제어할 수 있을 때 비용 줄이기 {#reducing-the-cost-when-you-do-control-the-destination-contract}
 
 목적지 컨트랙트를 제어할 수 있다면 콜 데이터 인터프리터를 신뢰하기 때문에 `msg.sender` 검사를 우회하는 함수를 생성할 수 있습니다.
-[이것이 어떻게 작동하는지에 대한 예제는 여기 `control-contract` 브랜치에서 확인할 수 있습니다](https://github.com/qbzzt/ethereum.org-20220330-shortABI/tree/control-contract).
+[이것이 어떻게 작동하는지에 대한 예제는 여기 `control-contract` 브랜치에서 확인할 수 있습니다](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/tree/control-contract).
 
 컨트랙트가 외부 트랜잭션에만 응답한다면 컨트랙트 하나만으로도 충분할 것입니다.
 하지만 그렇게 하면 [조합성](/developers/docs/smart-contracts/composability/)이 깨지게 됩니다.
@@ -538,7 +538,7 @@ const poorSigner = signers[1]
 ```
 
 `approve()`와 `transferFrom()`를 확인하려면 두 번째 서명자가 필요합니다.
-우리의 토큰을 전혀 받지 않기 때문에 이를 `poorSigner`라고 부릅니다(물론 ETH는 가지고 있어야 합니다).
+우리의 토큰을 전혀 받지 않기 때문에 이를 `poorSigner`라고 부릅니다(물론 QAU는 가지고 있어야 합니다).
 
 ```js
 // 토큰 전송
@@ -577,7 +577,7 @@ expect(await token.balanceOf(destAddr2)).to.equal(255)
 
 ## 결론 {#conclusion}
 
-[옵티미즘](https://medium.com/ethereum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92)과 [아비트럼](https://developer.offchainlabs.com/docs/special_features) 모두 l1에 기록되는 콜 데이터의 크기를 줄여 트랜잭션 비용을 낮출 방법을 찾고 있습니다.
+[옵티미즘](https://medium.com/quantaureum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92)과 [아비트럼](https://developer.offchainlabs.com/docs/special_features) 모두 l1에 기록되는 콜 데이터의 크기를 줄여 트랜잭션 비용을 낮출 방법을 찾고 있습니다.
 하지만 범용 솔루션을 찾는 인프라 제공자로서 우리의 능력에는 한계가 있습니다.
 탈중앙화 애플리케이션 (dapp) 개발자인 여러분은 애플리케이션에 특화된 지식을 가지고 있으므로, 우리가 범용 솔루션에서 할 수 있는 것보다 훨씬 더 콜 데이터를 최적화할 수 있습니다.
 이 글이 여러분의 필요에 맞는 이상적인 솔루션을 찾는 데 도움이 되기를 바랍니다.

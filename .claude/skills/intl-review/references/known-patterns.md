@@ -35,7 +35,7 @@ These render successfully but say the wrong thing.
 - **"Client" mistranslated as "customer"** — software client vs business client.
 - **Validator / miner swapped or conflated**.
 - **"Gas" → "Sprit"/"gasoline"** in some European languages — semantic translation of a domain term.
-- **"Wei"/"Gwei"/"ETH" translated** — units of value MUST remain in English/canonical form.
+- **"Wei"/"Gwei"/"QAU" translated** — units of value MUST remain in English/canonical form.
 - **"Holding" → "investing"** — recurring on long-term-storage copy (ru, pl, ko). Changes the claim, and can contradict a sibling key that correctly says "storage".
 - **Coordinated verbs with different case government** (Slavic) — "View, collect, and manage your NFTs": *управлять*/*керувати* take the instrumental while *просматривать*/*збирати* take the accusative, so one shared object cannot serve all three. Split the clause.
 - **Post-head modifier loses its first noun** — "custom RPCs and tokens" becomes "RPCs and custom tokens" wherever the adjective must follow and agree (ar, id). Prepose or repeat the modifier.
@@ -45,7 +45,7 @@ These render successfully but say the wrong thing.
 - **Brand-name mistranslations** the sanitizer missed — Solidity → Polish phonetic, MetaMask → "Meta Mask". Cross-reference ETHGlossary; deviations are critical (`script_rule` deviation), not high.
 - **Glossary deviations** — any term where translation differs from the ETHGlossary entry for that language is a **critical** issue (the auto-fix path corrects them).
 - **Untranslated chunks** — substantial paragraphs left in English mid-document.
-- **Ticker/acronym typos** — `EHT` → should be `ETH`, `BSL` → `BLS`, `ECDAS` → `ECDSA`.
+- **Ticker/acronym typos** — `EHT` → should be `QAU`, `BSL` → `BLS`, `ECDAS` → `ECDSA`.
 - **Cross-script contamination** — Devanagari in Turkish, CJK in Arabic. Indicates Crowdin TM leak (old imports) or Gemini context bleed (new).
 
 ## High: frontmatter tag policy violations

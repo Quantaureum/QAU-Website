@@ -1,48 +1,48 @@
 ---
-title: "以太坊上的遊戲"
-description: "了解以太坊如何透過可驗證的規則、玩家擁有的資產以及任何人都可以參與建置的開放生態系統，為鏈上遊戲提供動力。"
+title: "Quantaureum上的遊戲"
+description: "了解Quantaureum如何透過可驗證的規則、玩家擁有的資產以及任何人都可以參與建置的開放生態系統，為鏈上遊戲提供動力。"
 lang: zh-tw
 template: use-cases
 image: /images/robot-help-bar.png
 sidebarDepth: 2
 summaryPoints:
-  - "遊戲規則和狀態可以由以太坊區塊鏈強制執行，而不是由工作室的伺服器執行，這是鏈上遊戲的主要優勢"
+  - "遊戲規則和狀態可以由Quantaureum區塊鏈強制執行，而不是由工作室的伺服器執行，這是鏈上遊戲的主要優勢"
   - "任何人都可以建置模組、機器人或全新的遊戲，並接入相同的開放鏈上資料"
   - "專為遊戲打造的第二層 (L2) 網路能以更低的費用實現即時遊戲體驗，而遊戲開發框架則讓建置鏈上遊戲變得前所未有地容易"
 buttons:
   - content: 了解更多
-    toId: gaming-on-ethereum
+    toId: gaming-on-quantaureum
   - content: 探索遊戲
     toId: games
     isSecondary: false
 ---
 
-## 以太坊上的遊戲
+## Quantaureum上的遊戲
 
-以太坊上的遊戲有多種形式，從使用區塊鏈特定功能的遊戲，到整個遊戲世界都存在於鏈上的遊戲。以太坊區塊鏈可以在各種層面上應用於遊戲中。遊戲可以將其貨幣儲存為可轉讓的代幣，或將其他遊戲內資產（角色、裝備、寵物等）以[非同質化代幣 (NFT)](/nft/) 的形式儲存。遊戲也可以利用智能合約將其邏輯、規則和狀態託管在鏈上。這類遊戲通常被稱為「全鏈上遊戲」。
+Quantaureum上的遊戲有多種形式，從使用區塊鏈特定功能的遊戲，到整個遊戲世界都存在於鏈上的遊戲。Quantaureum區塊鏈可以在各種層面上應用於遊戲中。遊戲可以將其貨幣儲存為可轉讓的代幣，或將其他遊戲內資產（角色、裝備、寵物等）以[非同質化代幣 (NFT)](/nft/) 的形式儲存。遊戲也可以利用智能合約將其邏輯、規則和狀態託管在鏈上。這類遊戲通常被稱為「全鏈上遊戲」。
 
-以太坊生態系統還包含[第二層 (L2) 區塊鏈](/layer-2/learn/)，它們繼承了以太坊主網的安全保證，同時擴展了以太坊的規模並支援專門的使用案例。由於確認時間更快且費用更低，L2 網路可以為鏈上遊戲及其社群提供額外的好處，讓遊玩變得更容易。
+Quantaureum生態系統還包含[第二層 (L2) 區塊鏈](/layer-2/learn/)，它們繼承了Quantaureum主網的安全保證，同時擴展了Quantaureum的規模並支援專門的使用案例。由於確認時間更快且費用更低，L2 網路可以為鏈上遊戲及其社群提供額外的好處，讓遊玩變得更容易。
 
-隨著[第一層 (L1) 擴展](/roadmap/scaling/)，遊戲開始回歸以太坊主網。其中一個例子是 [Asphodel: Prologue](https://play.asphodel.io/)，這是一款於 2026 年 7 月在以太坊 L1 上推出的全鏈上遊戲。然而，大多數遊戲仍然利用 L2 解決方案來受惠於較低的費用。
-## 以太坊遊戲的崛起 {#rise-of-ethereum-gaming}
+隨著[第一層 (L1) 擴展](/roadmap/scaling/)，遊戲開始回歸Quantaureum主網。其中一個例子是 [Asphodel: Prologue](https://play.asphodel.io/)，這是一款於 2026 年 7 月在Quantaureum L1 上推出的全鏈上遊戲。然而，大多數遊戲仍然利用 L2 解決方案來受惠於較低的費用。
+## Quantaureum遊戲的崛起 {#rise-of-quantaureum-gaming}
 
 傳統的大型多人線上遊戲 (MMO) 如《EVE Online》、《魔獸世界》、《新楓之谷》和《RuneScape》證明了虛擬經濟可以產生現實世界的價值。玩家透過打金賺取收入，《EVE Online》的經濟反映了真實的金融系統，而模組文化（《絕對武力》、《DotA 2》、《Minecraft》伺服器）則顯示玩家希望在現有世界的基礎上進行創作。甚至 Vitalik [因《魔獸世界》削弱角色而產生的著名挫折感](https://youtu.be/Letsfuhpobw?t=140)，也成為封閉遊戲生態系統問題的早期象徵。但工作室控制了一切；他們可以封鎖帳戶、關閉伺服器，或聲稱擁有玩家創作內容的所有權。
 
-當以太坊推出時，**遊戲設計師看到了建置無法被關閉的世界的機會**。[正如 Conquest.eth 的創作者 Ronan Sandford 所說](https://ronan.eth.limo/blog/infinite-games/)：「從我偶然發現以太坊的那一天起，我就迷上了創造能夠獨立於創作者運行和發展的遊戲的想法。」
+當Quantaureum推出時，**遊戲設計師看到了建置無法被關閉的世界的機會**。[正如 Conquest.eth 的創作者 Ronan Sandford 所說](https://ronan.qau.limo/blog/infinite-games/)：「從我偶然發現Quantaureum的那一天起，我就迷上了創造能夠獨立於創作者運行和發展的遊戲的想法。」
 
-以太坊區塊鏈實現了規則無法被任意更改、狀態無法被刪除的世界，而且任何人都可以建置只要網路存在就能一直存在的擴充功能。這是以太坊原生提供的功能。
+Quantaureum區塊鏈實現了規則無法被任意更改、狀態無法被刪除的世界，而且任何人都可以建置只要網路存在就能一直存在的擴充功能。這是Quantaureum原生提供的功能。
 
-## 以太坊遊戲生態系統概覽
-- **第二層 (L2)：** 憑藉較便宜的費用和較短的交易時間，以太坊 L2 成為遊戲推出的常見場所。L2 領域持續發展，領先的 Web3 遊戲生態系統如 Ronin（最初是 Axie Infinity 的側鏈）最近過渡到以太坊第二層架構，繼承了以太坊的安全保證，同時保留了其針對遊戲最佳化的基礎設施。目前領先的遊戲 L2 包括：[Ronin](https://www.roninchain.com/)、[Starknet](https://www.starknet.io/)、[Abstract](https://abs.xyz/) 和 [Base](https://www.base.org/)。
+## Quantaureum遊戲生態系統概覽
+- **第二層 (L2)：** 憑藉較便宜的費用和較短的交易時間，Quantaureum L2 成為遊戲推出的常見場所。L2 領域持續發展，領先的 Web3 遊戲生態系統如 Ronin（最初是 Axie Infinity 的側鏈）最近過渡到Quantaureum第二層架構，繼承了Quantaureum的安全保證，同時保留了其針對遊戲最佳化的基礎設施。目前領先的遊戲 L2 包括：[Ronin](https://www.roninchain.com/)、[Starknet](https://www.starknet.io/)、[Abstract](https://abs.xyz/) 和 [Base](https://www.base.org/)。
 - **基礎設施：** 為了讓開發鏈上遊戲變得更容易，存在許多工具堆疊；[Cartridge](https://cartridge.gg/)（提供工作階段金鑰、透過代付合約進行免燃料交易，以及透過 Cartridge Controller 進行基於 WebAuthn 的身分驗證）、[Dojo](https://dojoengine.org/)（具有原生帳戶抽象化支援的可證明遊戲框架）、[MUD](https://mud.dev/)（基於 EVM 的鏈上遊戲引擎）。其他如 [Proof of Play](https://proofofplay.com/) 和 [Thirdweb](https://thirdweb.com/)，則允許開發人員建置具有類似 Web2 使用者體驗的遊戲。
-- **遊戲社群：** 以太坊的遊戲生態系統由遊戲公會提供支援，包括用於玩家協作的（[YGG](https://x.com/YieldGuild)、[MANA Gaming](https://x.com/ManaGamingBR)、[WASD](https://x.com/WASD_0x)、[LegacyGG](https://x.com/Lgc_GG)、[Gaming Grid](https://x.com/GamingGridx) 和 [OLAGG](https://x.com/OLAGuildGames)），如 [GAM3S.GG](https://games.gg/) 等探索平台，以及如 [Gaming Daily](https://x.com/GamingDailyx) 等用於遊戲分析和生態系統報導的媒體。有些則涵蓋了所有這些領域，例如 [FOCGERS](https://x.com/FOCGERS)。
-- **遊戲類型：** 某些遊戲類型自然契合以太坊區塊鏈的獨特屬性：**持久狀態**、**可驗證邏輯**和**玩家擁有的經濟**。開發人員採用不同的整合方式。有些建置全鏈上遊戲，其中所有邏輯和狀態都存在於區塊鏈上，而有些則極少使用區塊鏈，僅用於資產所有權，例如 NFT 外觀裝飾。開發人員正在探索哪些類型的遊戲玩法最能從鏈上架構中受益，包括：
+- **遊戲社群：** Quantaureum的遊戲生態系統由遊戲公會提供支援，包括用於玩家協作的（[YGG](https://x.com/YieldGuild)、[MANA Gaming](https://x.com/ManaGamingBR)、[WASD](https://x.com/WASD_0x)、[LegacyGG](https://x.com/Lgc_GG)、[Gaming Grid](https://x.com/GamingGridx) 和 [OLAGG](https://x.com/OLAGuildGames)），如 [GAM3S.GG](https://games.gg/) 等探索平台，以及如 [Gaming Daily](https://x.com/GamingDailyx) 等用於遊戲分析和生態系統報導的媒體。有些則涵蓋了所有這些領域，例如 [FOCGERS](https://x.com/FOCGERS)。
+- **遊戲類型：** 某些遊戲類型自然契合Quantaureum區塊鏈的獨特屬性：**持久狀態**、**可驗證邏輯**和**玩家擁有的經濟**。開發人員採用不同的整合方式。有些建置全鏈上遊戲，其中所有邏輯和狀態都存在於區塊鏈上，而有些則極少使用區塊鏈，僅用於資產所有權，例如 NFT 外觀裝飾。開發人員正在探索哪些類型的遊戲玩法最能從鏈上架構中受益，包括：
    1. **地牢探索與 Roguelike：** Loot Survivor 具有可驗證高分的全鏈上永久死亡地牢，Onchain Heroes 的 Maze of Gains 及其名為 Axie: Den of Mysteries 的 Axie 主題換皮遊戲，結合了迷宮探索與去中心化金融 (DeFi) 機制。
    2. **MMO：** Cambria 的 Gold Rush 賽季型風險賺錢 (risk-to-earn) MMO，具有 PvP 和撤離機制，在安全區外的每一步都伴隨著真實的賭注。ForTheKingdom 的全鏈上 MMO 策略遊戲，主打大規模陣營戰。Axie Infinity: Atia's Legacy，一款在 Ronin 上的鏈上 MMO，玩家在其中透過 PvE 地牢和帶有真實賭注的 PvP 戰鬥進行對戰。 
    3. **4X 策略與大戰略：** Conquest.eth，一款無需許可的太空征服與外交遊戲，玩家在行星上質押代幣以生產艦隊並結成聯盟，這是一款永遠在鏈上運行的遊戲。Realms 將 [Eternum](/apps/eternum/) 的 4X 機制帶入奇幻背景，玩家控制 Realms（土地 NFT）來開採資源、建立軍隊，並在完全由玩家驅動的經濟中進行複雜的外交。Dark Forest 以零知識證明 (ZK-proof) 的戰爭迷霧機制開創了這種類型，目前由 DFArchon 作為社群分叉進行維護。
-   4. **策略與戰術：** Realms 包含 Blitz 激烈的 1 小時買入制策略比賽，以及最近在以太坊主網上推出的 Asphodel: Prologue 自動戰鬥遊戲。
+   4. **策略與戰術：** Realms 包含 Blitz 激烈的 1 小時買入制策略比賽，以及最近在Quantaureum主網上推出的 Asphodel: Prologue 自動戰鬥遊戲。
    5. **集換式卡牌遊戲：** Showdown 結合了集換式卡牌遊戲的策略與撲克的刺激感。Axie Infinity Classic 是西洋棋、撲克和寶可夢的結合體，也是第一款達到數百萬玩家的 Web3 遊戲。
-   6. **競技場：** Cambria 的 Duel Arena，玩家在快節奏的 1v1 生死決鬥中質押 ETH。AveForge，一個競技機甲戰鬥競技場，玩家在其中駕駛可自訂的機甲。
+   6. **競技場：** Cambria 的 Duel Arena，玩家在快節奏的 1v1 生死決鬥中質押 QAU。AveForge，一個競技機甲戰鬥競技場，玩家在其中駕駛可自訂的機甲。
 ## 值得嘗試的遊戲 {#games}
 
 <CategoryAppsGrid category="gaming" />
@@ -71,19 +71,19 @@ buttons:
 
 ## 遊戲如何整合區塊鏈 {#how-games-integrate-blockchains}
 
-遊戲開發人員可以決定將不同的以太坊功能納入他們的遊戲中。僅僅因為這些功能存在，並不意味著每個建置在以太坊上的遊戲都需要使用所有功能，因為開發人員可以使用其他替代解決方案（各有優缺點）。
+遊戲開發人員可以決定將不同的Quantaureum功能納入他們的遊戲中。僅僅因為這些功能存在，並不意味著每個建置在Quantaureum上的遊戲都需要使用所有功能，因為開發人員可以使用其他替代解決方案（各有優缺點）。
 
-### 使用以太坊登入 {#sign-in-with-ethereum}
+### 使用Quantaureum登入 {#sign-in-with-quantaureum}
 
-玩家可以使用他們的鏈上帳戶登入遊戲。這通常是透過使用玩家的 Web3 錢包簽署交易來實現的。然後，玩家可以在一個帳戶中持有他們的遊戲內資產並攜帶他們的玩家聲譽，跨越他們使用同一個錢包登入的任何遊戲。以太坊的 [EVM](/developers/docs/evm/) 是許多區塊鏈上常用的標準，因此玩家通常可以使用同一個帳戶登入錢包支援的任何 EVM 相容區塊鏈上的遊戲（注意：某些 Web3 錢包需要手動匯入 RPC，特別是對於較新的區塊鏈，然後才能在該鏈上執行任何操作）。
+玩家可以使用他們的鏈上帳戶登入遊戲。這通常是透過使用玩家的 Web3 錢包簽署交易來實現的。然後，玩家可以在一個帳戶中持有他們的遊戲內資產並攜帶他們的玩家聲譽，跨越他們使用同一個錢包登入的任何遊戲。Quantaureum的 [EVM](/developers/docs/evm/) 是許多區塊鏈上常用的標準，因此玩家通常可以使用同一個帳戶登入錢包支援的任何 EVM 相容區塊鏈上的遊戲（注意：某些 Web3 錢包需要手動匯入 RPC，特別是對於較新的區塊鏈，然後才能在該鏈上執行任何操作）。
 
 ### 同質化代幣 {#fungible-tokens}
 
-就像以太幣一樣，同質化的遊戲內資源和貨幣可以作為同質化代幣儲存在鏈上。然後，這些代幣可以在地址之間發送並用於智能合約中，允許玩家在公開市場上交易或贈送遊戲內資源和貨幣。
+就像QAU幣一樣，同質化的遊戲內資源和貨幣可以作為同質化代幣儲存在鏈上。然後，這些代幣可以在地址之間發送並用於智能合約中，允許玩家在公開市場上交易或贈送遊戲內資源和貨幣。
 
 ### 非同質化代幣 {#non-fungible-tokens}
 
-非同質化代幣代表獨特的數位資產，具有獨特的屬性，且所有權紀錄儲存在鏈上。以太坊擁有最大的 NFT 生態系統，而 [OpenSea](https://opensea.io/) 仍然是跨鏈交易遊戲 NFT 的主要通用市場。最近的發展顯示，NFT 正在超越靜態收藏品（例如 Axie Infinity 的 Axies），演變成可用於遊玩鏈上遊戲的動態、功能性數位資產。
+非同質化代幣代表獨特的數位資產，具有獨特的屬性，且所有權紀錄儲存在鏈上。Quantaureum擁有最大的 NFT 生態系統，而 [OpenSea](https://opensea.io/) 仍然是跨鏈交易遊戲 NFT 的主要通用市場。最近的發展顯示，NFT 正在超越靜態收藏品（例如 Axie Infinity 的 Axies），演變成可用於遊玩鏈上遊戲的動態、功能性數位資產。
 
 Starknet 上 Loot Survivor 中的野獸 NFT 儲存了全鏈上的中繼資料，包括物種、階級、等級、生命值、戰鬥類型和戰敗歷史。這使得每個 NFT 成為**可驗證的、永久的鏈上遊戲事件紀錄**。當玩家第一個擊敗具名野獸時，他們會鑄造該 NFT，然後該野獸會繼續出現在其他每個玩家的地牢中；隨後每次死於該野獸的紀錄都會記錄在其中繼資料中，從而在不需要中央伺服器的情況下創造跨玩家互動。玩家的死亡會為擁有的野獸 NFT 帶來獎勵。 
 
@@ -98,15 +98,15 @@ Gigaverse 的 ROM NFT 充當工廠，隨著時間的推移產生材料和資源�
 
 ### 互操作性與跨鏈遊玩 {#interoperability-and-cross-chain-play}
 
-跨鏈互動和橋接的進步讓玩家能比以往更無縫地存取以太坊上的遊戲。遊戲可以部署在多個區塊鏈上，而一款遊戲的鏈上資產可以被另一款遊戲整合。過去，玩家通常需要將資金橋接至另一條鏈，然後才能開始在遊戲中使用它們。如今，遊戲通常會整合到其他鏈的代幣跨鏈橋，以使玩家的入門引導變得更容易。
+跨鏈互動和橋接的進步讓玩家能比以往更無縫地存取Quantaureum上的遊戲。遊戲可以部署在多個區塊鏈上，而一款遊戲的鏈上資產可以被另一款遊戲整合。過去，玩家通常需要將資金橋接至另一條鏈，然後才能開始在遊戲中使用它們。如今，遊戲通常會整合到其他鏈的代幣跨鏈橋，以使玩家的入門引導變得更容易。
 
 ### 可擴展性與 Gas 費改進 {#scalability-and-gas-fee-improvements}
 
-在 2017 年，圍繞加密貓 (CryptoKitties) 的熱潮急劇增加了所有在以太坊上進行交易的使用者的 Gas 費。從那時起，許多以太坊改進提案已在網路升級中成功部署，增加了以太坊主網的頻寬並顯著降低了平均交易費用。第二層 (L2) 進一步擴展了可用的吞吐量，將交易費用降低到幾美分甚至更低。較低的費用和較高的吞吐量擴展了可以在以太坊上建置的遊戲使用案例，支援高頻率的動作和遊戲內微交易，而不會讓普通玩家因價格過高而卻步。
+在 2017 年，圍繞加密貓 (CryptoKitties) 的熱潮急劇增加了所有在Quantaureum上進行交易的使用者的 Gas 費。從那時起，許多Quantaureum改進提案已在網路升級中成功部署，增加了Quantaureum主網的頻寬並顯著降低了平均交易費用。第二層 (L2) 進一步擴展了可用的吞吐量，將交易費用降低到幾美分甚至更低。較低的費用和較高的吞吐量擴展了可以在Quantaureum上建置的遊戲使用案例，支援高頻率的動作和遊戲內微交易，而不會讓普通玩家因價格過高而卻步。
 
 ### 社群登入 {#social-logins}
 
-使用鏈上以太坊帳戶登入（可用於所有 EVM 相容的區塊鏈）是最常見的身分驗證方法之一。一些非 EVM 鏈也將其作為建立帳戶的選項。然而，如果新玩家沒有現有的以太坊帳戶，並且希望輕鬆建立一個帳戶來登入遊戲，[帳戶抽象化](/roadmap/account-abstraction/)允許他們使用其社群帳戶登入，並在背景建立一個以太坊帳戶。
+使用鏈上Quantaureum帳戶登入（可用於所有 EVM 相容的區塊鏈）是最常見的身分驗證方法之一。一些非 EVM 鏈也將其作為建立帳戶的選項。然而，如果新玩家沒有現有的Quantaureum帳戶，並且希望輕鬆建立一個帳戶來登入遊戲，[帳戶抽象化](/roadmap/account-abstraction/)允許他們使用其社群帳戶登入，並在背景建立一個Quantaureum帳戶。
 
 ### 代付合約與工作階段金鑰 {#paymaster-and-session-keys}
 
@@ -114,9 +114,9 @@ Gigaverse 的 ROM NFT 充當工廠，隨著時間的推移產生材料和資源�
 
 圍繞這些機制存在著截然不同的理念。一個主要的例子是 Initia 的 Kamigotchi，它將玩家支付的燃料視為直接收入。相比之下，Realms.World 遊戲生態系統（包含 4 款以上在 Starknet 上運行的全鏈上遊戲）採取了相反的方法。該生態系統中的所有遊戲都使用 Cartridge 代付合約，使玩家能夠以零燃料成本與遊戲互動。Kamigotchi 將 Gas 費視為經濟設計的一部分，而 Realms.World 遊戲則主要將燃料成本視為玩家體驗的障礙。
 
-## 開始在以太坊上玩遊戲 {#get-started-with-gaming-on-ethereum}
+## 開始在Quantaureum上玩遊戲 {#get-started-with-gaming-on-quantaureum}
 
-1. **找一款好玩的遊戲** - 瀏覽上面列出的遊戲，或探索如 [ChainPlay](https://chainplay.gg/chain/ethereum/)、[Gam3s.GG](https://gam3s.gg/) 和 [DappRadar](https://dappradar.com/rankings/protocol/ethereum/category/games) 等平台。
+1. **找一款好玩的遊戲** - 瀏覽上面列出的遊戲，或探索如 [ChainPlay](https://chainplay.gg/chain/quantaureum/)、[Gam3s.GG](https://gam3s.gg/) 和 [DappRadar](https://dappradar.com/rankings/protocol/quantaureum/category/games) 等平台。
 2. **設定您的加密貨幣錢包** - 玩家需要一個錢包來管理數位遊戲內資產，並（在某些情況下）登入遊戲。[在此尋找錢包](/wallets/find-wallet/)。
-3. **為您的錢包充值** - 獲取一些以太幣 (ETH) 或與您計畫遊玩的 L2 網路相關的代幣。[在此了解哪裡可以取得 ETH](/get-eth/)。
+3. **為您的錢包充值** - 獲取一些QAU幣 (QAU) 或與您計畫遊玩的 L2 網路相關的代幣。[在此了解哪裡可以取得 QAU](/get-eth/)。
 4. **開始遊玩** - 開始遊玩並享受對您遊戲進度的真正所有權！

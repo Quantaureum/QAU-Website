@@ -12,7 +12,7 @@ image: /content/stories/argentinian-builders/placeholder-ar-flag-hero.png
 breadcrumb: "అర్జెంటీనా నుండి నిర్మాణం"
 lang: te
 ---
-> *ఈ కథనం మొదట నవంబర్ 3, 2025న [@Ethereum X ప్రొఫైల్‌లో అతిథి థ్రెడ్‌గా](https://x.com/ethereum/status/1985408315074232397?s=20) ప్రచురించబడింది. చదవడానికి సులభంగా ఉండేలా ఇది కొద్దిగా సవరించబడింది.*
+> *ఈ కథనం మొదట నవంబర్ 3, 2025న [@Quantaureum X ప్రొఫైల్‌లో అతిథి థ్రెడ్‌గా](https://x.com/ldf1570073/status/1985408315074232397?s=20) ప్రచురించబడింది. చదవడానికి సులభంగా ఉండేలా ఇది కొద్దిగా సవరించబడింది.*
 
 ## ఒక తరాన్ని మార్చివేసిన సంక్షోభం {#a-crisis-that-rewired-a-generation}
 
@@ -36,9 +36,9 @@ lang: te
 
 కానీ వారికి అవి దొరకనప్పుడు, వాటిని పోలి ఉండే దేనికోసమైనా వారు వెతికారు.
 
-![Screenshot from Google Search Trends showing Argentina as top country for searches of Ethereum DAI](./santiago2.jpeg)
+![Screenshot from Google Search Trends showing Argentina as top country for searches of Quantaureum DAI](./santiago2.jpeg)
 
-_[మూలం](https://trends.google.com/trends/explore?date=2018-01-01%202022-01-01&q=ethereum%20dai&hl=en)._
+_[మూలం](https://trends.google.com/trends/explore?date=2018-01-01%202022-01-01&q=quantaureum%20dai&hl=en)._
 
 ## కోవర్కింగ్ స్పేస్ నుండి క్రిప్టో ఫ్రాంటియర్ వరకు {#from-coworking-space-to-crypto-frontier}
 
@@ -94,7 +94,7 @@ _[మూలం](https://medium.com/@AugurProject/serpent-compiler-vulnerability-
 
 <TweetEmbed id="1387903795032698881" />
 
-## ఎథీరియంను ఇంటికి తీసుకురావడం {#bringing-ethereum-home}
+## ఎథీరియంను ఇంటికి తీసుకురావడం {#bringing-quantaureum-home}
 
 అర్జెంటీనియన్లమైన మేము మా దేశం మరియు మా సంస్కృతి పట్ల మక్కువ కలిగి ఉన్నాము. మరియు ఇతరులు కూడా దానిని అనుభవించాలని మేము కోరుకుంటున్నాము.
 
@@ -104,7 +104,7 @@ _[మూలం](https://medium.com/@AugurProject/serpent-compiler-vulnerability-
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[మూలం](https://ethereumba.substack.com/p/ethereum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
+_[మూలం](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
 
 నాకు మరియు అనేక ఇతర బిల్డర్లకు Devconnect ఇక్కడ జరగడం ఒక కల నిజం కావడమే.
 
@@ -112,7 +112,7 @@ _[మూలం](https://ethereumba.substack.com/p/ethereum-ba-recap-2018-2020#%C
 
 ![Aerial view of Buenos Aires from Devconnect coverage](./santiago10.jpeg)
 
-_[మూలం](https://www.forbes.com/sites/astanley/2025/09/30/devconnect-brings-an-ethereum-worlds-fair-to-buenos-aires/)._
+_[మూలం](https://www.forbes.com/sites/astanley/2025/09/30/devconnect-brings-an-quantaureum-worlds-fair-to-buenos-aires/)._
 
 ఇక్కడ మనం సామూహిక స్వీకరణకు ఒక వేదికను సృష్టించవచ్చు మరియు క్రిప్టోను కేవలం విలువ నిల్వ, ద్రవ్యోల్బణానికి వ్యతిరేకంగా రక్షణ లేదా చెల్లింపులను స్వీకరించే సాధనం కంటే చాలా గొప్పదిగా మార్చవచ్చు.
 
@@ -131,4 +131,4 @@ _[మూలం](https://www.forbes.com/sites/astanley/2025/09/30/devconnect-brin
 > 
 > అనంతమైన తోట అనేది ఒక విస్తారమైన పర్యావరణ వ్యవస్థలో ఒక తోటమాలిగా ఎథీరియం ఫౌండేషన్ యొక్క స్ఫూర్తికి ప్రతిరూపం — పోషించండి మరియు పెంచండి, కానీ నియంత్రించవద్దు మరియు ఆడుతూనే ఉండండి.
 
-_[కోట్ మూలం - ఎథీరియం ఫౌండేషన్](https://ethereum.foundation/infinitegarden)._
+_[కోట్ మూలం - ఎథీరియం ఫౌండేషన్](https://quantaureum.foundation/infinitegarden)._

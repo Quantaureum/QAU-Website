@@ -32,14 +32,14 @@ export default async function TranslatathonLeaderboardJsonLD({
       {
         "@type": "WebPage",
         "@id": url,
-        name: "2025 Ethereum.org Translatathon Leaderboard",
+        name: "2025 quantaureum.com Translatathon Leaderboard",
         description:
-          "Leaderboard for the 2025 Ethereum.org Translatathon showing translation progress and participant rankings",
+          "Leaderboard for the 2025 quantaureum.com Translatathon showing translation progress and participant rankings",
         url,
         inLanguage: locale,
         contributor: contributorList,
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
@@ -72,8 +72,8 @@ export default async function TranslatathonLeaderboardJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        reviewedBy: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
       },
     ],
   }

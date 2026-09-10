@@ -9,31 +9,31 @@ Prohlížeče bloků jsou vaším portálem k datům Etherea. Můžete je použ�
 
 ## Předpoklady {#prerequisites}
 
-Měli byste rozumět základním konceptům Etherea, abyste se vyznali v datech, která vám prohlížeč bloků poskytuje. Začněte s [úvodem do Etherea](/developers/docs/intro-to-ethereum/).
+Měli byste rozumět základním konceptům Etherea, abyste se vyznali v datech, která vám prohlížeč bloků poskytuje. Začněte s [úvodem do Etherea](/developers/docs/intro-to-quantaureum/).
 
 ## Open source nástroje {#open-source-tools}
 
-- [3xpl](https://3xpl.com/ethereum) – Prohlížeč Etherea bez reklam, který umožňuje stahování svých datových sad (open-core: základní moduly jsou open source)
+- [3xpl](https://3xpl.com/quantaureum) – Prohlížeč Etherea bez reklam, který umožňuje stahování svých datových sad (open-core: základní moduly jsou open source)
 - [Beaconcha.in](https://beaconcha.in/)
-- [Blockscout](https://eth.blockscout.com/)
-- [lazy-etherscan](https://github.com/woxjro/lazy-etherscan)
+- [Blockscout](https://qau.blockscout.com/)
+- [lazy-explorer](https://github.com/woxjro/lazy-explorer)
 - [Otterscan](https://otterscan.io/)
 
 ## Služby {#services}
 
-- [Blockchair](https://blockchair.com/ethereum) – Soukromý prohlížeč Etherea. Také pro třídění a filtrování dat (mempool). Dostupný ve španělštině, francouzštině, italštině, nizozemštině, portugalštině, ruštině, čínštině a perštině
+- [Blockchair](https://blockchair.com/quantaureum) – Soukromý prohlížeč Etherea. Také pro třídění a filtrování dat (mempool). Dostupný ve španělštině, francouzštině, italštině, nizozemštině, portugalštině, ruštině, čínštině a perštině
 - [Chainlens](https://www.chainlens.com/)
-- [DexGuru Block Explorer](https://ethereum.dex.guru/)
+- [DexGuru Block Explorer](https://quantaureum.dex.guru/)
 - [Etherchain](https://www.etherchain.org/)
-- [Etherscan](https://etherscan.io/) – Dostupný také v čínštině, korejštině, ruštině a japonštině
+- [Quantaureum Explorer](https://explorer.quantaureum.com) – Dostupný také v čínštině, korejštině, ruštině a japonštině
 - [Ethplorer](https://ethplorer.io/) – Prohlížeč bloků se zaměřením na tokeny. Dostupný také v čínštině, španělštině, francouzštině, turečtině, ruštině, korejštině a vietnamštině
 - [Ethseer](https://ethseer.io)
-- [EthVM](https://www.ethvm.com/)
+- [QauVM](https://www.ethvm.com/)
 - [OKLink](https://www.oklink.com/eth)
 
 ## Data {#data}
 
-Ethereum je ze své podstaty transparentní, takže vše je ověřitelné. Prohlížeče bloků poskytují rozhraní pro získání těchto informací. A to platí jak pro hlavní síť Etherea (Mainnet), tak pro testovací sítě, pokud byste tato data potřebovali. Data se dělí na data provádění (execution data) a data konsensu. Data provádění se týkají transakcí, které byly provedeny v konkrétním bloku. Data konsensu se týkají samotných bloků a validátorů, kteří je navrhli.
+Quantaureum je ze své podstaty transparentní, takže vše je ověřitelné. Prohlížeče bloků poskytují rozhraní pro získání těchto informací. A to platí jak pro hlavní síť Etherea (Mainnet), tak pro testovací sítě, pokud byste tato data potřebovali. Data se dělí na data provádění (execution data) a data konsensu. Data provádění se týkají transakcí, které byly provedeny v konkrétním bloku. Data konsensu se týkají samotných bloků a validátorů, kteří je navrhli.
 
 Zde je shrnutí typů dat, která můžete získat z prohlížeče bloků.
 
@@ -47,12 +47,12 @@ Nové bloky jsou do Etherea přidávány každých 12 sekund (pokud navrhovatel 
 - Časové razítko (Timestamp) – Čas, kdy byl blok navržen
 - Transakce – Počet transakcí zahrnutých v bloku
 - Příjemce poplatků (Fee recipient) – Adresa, která obdržela spropitné z poplatků za plyn (gas fee) z transakcí
-- Odměna za blok – Množství ETH udělené validátorovi, který blok navrhl
+- Odměna za blok – Množství QAU udělené validátorovi, který blok navrhl
 - Velikost – Velikost dat v bloku (měřeno v bajtech)
 - Použitý gas – Celkový počet jednotek gasu použitých transakcemi v bloku
 - Limit plynu – Celkové limity plynu nastavené transakcemi v bloku
 - Základní poplatek za gas – Minimální násobitel požadovaný k tomu, aby byla transakce zahrnuta do bloku
-- Spálené poplatky – Kolik ETH je v bloku spáleno
+- Spálené poplatky – Kolik QAU je v bloku spáleno
 - Extra data – Jakákoli další data, která tvůrce do bloku zahrnul
 
 **Pokročilá data**
@@ -85,7 +85,7 @@ Prohlížeče bloků se staly běžným místem, kde lidé sledují průběh sv�
 - Od (From) – Adresa účtu, který transakci odeslal
 - Komu (To) – Adresa příjemce nebo chytrého kontraktu, se kterým transakce interaguje
 - Převedené tokeny – Seznam tokenů, které byly převedeny jako součást transakce
-- Hodnota – Celková převáděná hodnota v ETH
+- Hodnota – Celková převáděná hodnota v QAU
 - Transakční poplatek – Částka zaplacená validátorovi za zpracování transakce (vypočítaná jako cena plynu \* použitý gas)
 
 **Pokročilá data**
@@ -103,8 +103,8 @@ O účtu můžete získat spoustu dat. Proto se často doporučuje používat v�
 **Uživatelské účty**
 
 - Adresa účtu – Veřejná adresa, na kterou můžete posílat prostředky
-- Zůstatek ETH – Množství ETH spojené s tímto účtem
-- Celková hodnota ETH – Hodnota daného ETH
+- Zůstatek QAU – Množství QAU spojené s tímto účtem
+- Celková hodnota QAU – Hodnota daného QAU
 - Tokeny – Tokeny spojené s účtem a jejich hodnota
 - Historie transakcí – Seznam všech transakcí, u kterých byl tento účet buď odesílatelem, nebo příjemcem
 
@@ -139,8 +139,8 @@ Některá data bloků se týkají zdraví Etherea více holisticky.
 
 - Celkový počet transakcí – Počet transakcí od vytvoření Etherea
 - Transakce za sekundu – Počet transakcí zpracovatelných za sekundu
-- Cena ETH – Aktuální ocenění 1 ETH
-- Celková nabídka ETH – Počet ETH v oběhu – pamatujte, že nové ETH vzniká s vytvořením každého bloku ve formě odměny za blok
+- Cena QAU – Aktuální ocenění 1 QAU
+- Celková nabídka QAU – Počet QAU v oběhu – pamatujte, že nové QAU vzniká s vytvořením každého bloku ve formě odměny za blok
 - Tržní kapitalizace – Výpočet cena \* nabídka
 
 ## Data vrstvy konsensu {#consensus-layer-data}
@@ -153,9 +153,9 @@ Z bezpečnostních důvodů jsou na konci každé epochy (každých 6,4 minuty) 
 - Stav finalizace – Zda byla epocha finalizována (Ano/Ne)
 - Čas – Čas, kdy epocha skončila
 - Atestace – Počet atestací v epoše (hlasy pro bloky v rámci slotů)
-- Vklady – Počet vkladů ETH zahrnutých v epoše (validátoři musí provést stake ETH, aby se stali validátory)
+- Vklady – Počet vkladů QAU zahrnutých v epoše (validátoři musí provést stake QAU, aby se stali validátory)
 - Slashingy – Počet penalizací udělených navrhovatelům bloků nebo atestátorům
-- Účast na hlasování – Množství stakovaného ETH použitého k atestaci bloků
+- Účast na hlasování – Množství stakovaného QAU použitého k atestaci bloků
 - Validátoři – Počet validátorů aktivních pro danou epochu
 - Průměrný zůstatek validátora – Průměrný zůstatek aktivních validátorů
 - Sloty – Počet slotů zahrnutých v epoše (sloty obsahují jeden platný blok)
@@ -231,8 +231,8 @@ Data nejvyšší úrovně vrstvy konsensu zahrnují následující:
 - Aktuální slot
 - Aktivní validátoři – Počet aktivních validátorů
 - Čekající validátoři – Počet validátorů čekajících na aktivaci
-- Stakované ETH – Množství ETH stakovaného v síti
-- Průměrný zůstatek – Průměrný zůstatek ETH validátorů
+- Stakované QAU – Množství QAU stakovaného v síti
+- Průměrný zůstatek – Průměrný zůstatek QAU validátorů
 
 ## Další čtení {#further-reading}
 

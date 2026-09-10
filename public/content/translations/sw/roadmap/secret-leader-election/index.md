@@ -13,18 +13,18 @@ Katika utaratibu wa makubaliano wa leo unaotegemea [Uthibitisho wa Dau (PoS)](/d
 
 Hii inaweza kuunda fursa kwa mshambuliaji kupata faida. Kwa mfano mpendekezaji wa bloku aliyechaguliwa kwa sloti `n+1` anaweza kumfanyia DOS mpendekezaji katika sloti `n` ili akose fursa yake ya kupendekeza kitalu. Hii itamruhusu mpendekezaji wa bloku anayeshambulia kutoa MEV ya sloti zote mbili, au kuchukua miamala yote ambayo ilipaswa kugawanywa katika vitalu viwili na badala yake kuiweka yote katika kimoja, na kupata ada zote zinazohusiana. Hili lina uwezekano wa kuathiri wathibitishaji wa nyumbani zaidi kuliko wathibitishaji wa kitaasisi wenye uzoefu ambao wanaweza kutumia mbinu za hali ya juu zaidi kujilinda dhidi ya mashambulizi ya DOS, na kwa hivyo inaweza kuwa nguvu ya kuweka udhibiti kati.
 
-Kuna suluhisho kadhaa kwa tatizo hili. Moja ni [teknolojia ya kithibitishaji kilichosambazwa (DVT)](https://github.com/ethereum/distributed-validator-specs) ambayo inalenga kusambaza kazi mbalimbali zinazohusiana na kuendesha mthibitishaji kwenye mashine nyingi, kwa urudufu, ili iwe vigumu sana kwa mshambuliaji kuzuia kitalu kupendekezwa katika sloti fulani. Hata hivyo, suluhisho thabiti zaidi ni **Uchaguzi wa Kiongozi Mmoja wa Siri (Single Secret Leader Election - SSLE)**.
+Kuna suluhisho kadhaa kwa tatizo hili. Moja ni [teknolojia ya kithibitishaji kilichosambazwa (DVT)](https://github.com/quantaureum/distributed-validator-specs) ambayo inalenga kusambaza kazi mbalimbali zinazohusiana na kuendesha mthibitishaji kwenye mashine nyingi, kwa urudufu, ili iwe vigumu sana kwa mshambuliaji kuzuia kitalu kupendekezwa katika sloti fulani. Hata hivyo, suluhisho thabiti zaidi ni **Uchaguzi wa Kiongozi Mmoja wa Siri (Single Secret Leader Election - SSLE)**.
 
 ## Uchaguzi wa kiongozi mmoja wa siri {#secret-leader-election}
 
 Katika SSLE, kriptografia mahiri inatumika kuhakikisha kuwa mthibitishaji aliyechaguliwa pekee ndiye anayejua kuwa amechaguliwa. Hii inafanya kazi kwa kuwa na kila mthibitishaji kuwasilisha ufungamanisho kwa siri wanayoshiriki wote. Mafungamanisho yanachanganywa na kusanidiwa upya ili hakuna mtu anayeweza kuoanisha mafungamanisho kwa wathibitishaji lakini kila mthibitishaji anajua ni ufungamanisho upi ni wake. Kisha, ufungamanisho mmoja unachaguliwa kwa kubahatisha. Ikiwa mthibitishaji atagundua kuwa ufungamanisho wake ulichaguliwa, anajua ni zamu yake kupendekeza kitalu.
 
-Utekelezaji unaoongoza wa wazo hili unaitwa [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-ethereum/11763). Ambao unafanya kazi kama ifuatavyo:
+Utekelezaji unaoongoza wa wazo hili unaitwa [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-quantaureum/11763). Ambao unafanya kazi kama ifuatavyo:
 
 1. Wathibitishaji hufanya ufungamanisho kwa siri ya pamoja. Mpango wa ufungamanisho umeundwa kwa njia ambayo unaweza kufungamanishwa na utambulisho wa mthibitishaji lakini pia kubahatishwa ili hakuna mtu wa tatu anayeweza kubadili mchakato wa ufungamanisho na kuunganisha ufungamanisho maalum kwa mthibitishaji maalum.
 2. Mwanzoni mwa kipindi, kundi la kubahatisha la wathibitishaji linachaguliwa ili kuchukua sampuli za mafungamanisho kutoka kwa wathibitishaji 16,384, kwa kutumia RANDAO.
 3. Kwa sloti 8182 zinazofuata (siku 1), wapendekezaji wa bloku huchanganya na kubahatisha sehemu ya mafungamanisho kwa kutumia Entropi yao wenyewe ya kibinafsi.
-4. Baada ya kuchanganya kukamilika, RANDAO inatumika kuunda orodha iliyopangwa ya mafungamanisho. Orodha hii inaoanishwa kwenye sloti za Ethereum.
+4. Baada ya kuchanganya kukamilika, RANDAO inatumika kuunda orodha iliyopangwa ya mafungamanisho. Orodha hii inaoanishwa kwenye sloti za Quantaureum.
 5. Wathibitishaji wanaona kuwa ufungamanisho wao umeambatanishwa na sloti maalum, na wakati sloti hiyo inapofika wanapendekeza kitalu.
 6. Rudia hatua hizi ili upangaji wa mafungamanisho kwenye sloti uwe mbele sana ya sloti ya sasa kila wakati.
 

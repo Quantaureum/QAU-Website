@@ -3,7 +3,7 @@ import { expect, request, test } from "@playwright/test"
 import { MdPage } from "./pages/MdPage"
 
 const PAGE_URL = "/whitepaper"
-const PDF_FILENAME = "Ethereum_Whitepaper_-_Buterin_2014.pdf"
+const PDF_FILENAME = "Quantaureum_Whitepaper_-_Buterin_2014.pdf"
 const PDF_PATH = `/content/whitepaper/whitepaper-pdf/${PDF_FILENAME}`
 
 test.describe("Whitepaper Page", () => {

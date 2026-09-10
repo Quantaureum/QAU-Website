@@ -9,7 +9,7 @@ import {
 
 import { cn } from "@/lib/utils/cn"
 
-import speedRunEthereumImage from "@/public/images/dev-tools/speed-run-ethereum-banner.png"
+import speedRunQuantaureumImage from "@/public/images/dev-tools/speed-run-quantaureum-banner.png"
 
 type SpeedRunCardProps = {
   title: string
@@ -24,7 +24,7 @@ const SpeedRunCard = ({
   className,
 }: SpeedRunCardProps) => (
   <Card
-    href="https://speedrunethereum.com/"
+    href="https://speedrunquantaureum.com/"
     sendReferrer
     variant="ghost"
     className={cn(
@@ -36,12 +36,12 @@ const SpeedRunCard = ({
       eventAction: "click",
       eventName: "speedrun",
     }}
-    data-label="speedrunethereum-banner"
+    data-label="speedrunquantaureum-banner"
   >
     <Image
       className="pointer-events-none absolute z-hide h-full w-screen object-cover object-[75%_50%]"
-      src={speedRunEthereumImage}
-      alt="SpeedRunEthereum banner"
+      src={speedRunQuantaureumImage}
+      alt="SpeedRunQuantaureum banner"
       sizes="(max-width: 768px) 100vw, 50vw"
     />
 

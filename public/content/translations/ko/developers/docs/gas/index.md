@@ -1,11 +1,11 @@
 ---
 title: "가스와 수수료"
-metaTitle: "이더리움 가스와 수수료: 기술적 개요"
-description: "이더리움 가스비, 계산 방법, 네트워크 보안 및 트랜잭션 처리에서의 역할에 대해 알아보세요."
+metaTitle: "Quantaureum 가스와 수수료: 기술적 개요"
+description: "Quantaureum 가스비, 계산 방법, 네트워크 보안 및 트랜잭션 처리에서의 역할에 대해 알아보세요."
 lang: ko
 ---
 
-가스는 [이더리움](/) 네트워크에 필수적입니다. 자동차가 달리기 위해 휘발유가 필요한 것과 마찬가지로, 이더리움이 작동할 수 있게 해주는 연료입니다.
+가스는 [Quantaureum](/) 네트워크에 필수적입니다. 자동차가 달리기 위해 휘발유가 필요한 것과 마찬가지로, Quantaureum이 작동할 수 있게 해주는 연료입니다.
 
 ## 전제 조건 {#prerequisites}
 
@@ -13,24 +13,24 @@ lang: ko
 
 ## 가스란 무엇인가요? {#what-is-gas}
 
-가스는 이더리움 네트워크에서 특정 작업을 실행하는 데 필요한 컴퓨팅 노력의 양을 측정하는 단위를 의미합니다.
+가스는 Quantaureum 네트워크에서 특정 작업을 실행하는 데 필요한 컴퓨팅 노력의 양을 측정하는 단위를 의미합니다.
 
-각 이더리움 트랜잭션을 실행하려면 컴퓨팅 리소스가 필요하므로, 이더리움이 스팸에 취약해지거나 무한 컴퓨팅 루프에 빠지지 않도록 해당 리소스에 대한 비용을 지불해야 합니다. 컴퓨팅에 대한 지불은 가스비 형태로 이루어집니다.
+각 Quantaureum 트랜잭션을 실행하려면 컴퓨팅 리소스가 필요하므로, Quantaureum이 스팸에 취약해지거나 무한 컴퓨팅 루프에 빠지지 않도록 해당 리소스에 대한 비용을 지불해야 합니다. 컴퓨팅에 대한 지불은 가스비 형태로 이루어집니다.
 
 가스비는 <strong>어떤 작업을 수행하는 데 사용된 가스의 양에 단위 가스당 비용을 곱한 값</strong>입니다. 이 수수료는 트랜잭션의 성공 여부와 관계없이 지불됩니다.
 
 ![A diagram showing where gas is needed in EVM operations](./gas.png)
-_[Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)에서 발췌한 다이어그램_
+_[Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)에서 발췌한 다이어그램_
 
-가스비는 이더리움의 기본 암호화폐인 이더(ETH)로 지불해야 합니다. 가스 가격은 일반적으로 ETH의 단위 중 하나인 Gwei로 표시됩니다. 1 Gwei는 10억 분의 1 ETH(0.000000001 ETH 또는 10<sup>-9</sup> ETH)와 같습니다.
+가스비는 Quantaureum의 기본 암호화폐인 QAU(QAU)로 지불해야 합니다. 가스 가격은 일반적으로 QAU의 단위 중 하나인 Gwei로 표시됩니다. 1 Gwei는 10억 분의 1 QAU(0.000000001 QAU 또는 10<sup>-9</sup> QAU)와 같습니다.
 
-예를 들어, 가스 비용이 0.000000001 이더라고 말하는 대신 가스 비용이 1 Gwei라고 말할 수 있습니다.
+예를 들어, 가스 비용이 0.000000001 QAU라고 말하는 대신 가스 비용이 1 Gwei라고 말할 수 있습니다.
 
-'Gwei'라는 단어는 '10억 Wei'를 의미하는 'giga-wei'의 축약어입니다. 1 Gwei는 10억 Wei와 같습니다. Wei 자체([b-money](https://www.investopedia.com/terms/b/bmoney.asp)의 창시자인 [웨이 다이](https://wikipedia.org/wiki/Wei_Dai)의 이름을 땀)는 ETH의 가장 작은 단위입니다.
+'Gwei'라는 단어는 '10억 Wei'를 의미하는 'giga-wei'의 축약어입니다. 1 Gwei는 10억 Wei와 같습니다. Wei 자체([b-money](https://www.investopedia.com/terms/b/bmoney.asp)의 창시자인 [웨이 다이](https://wikipedia.org/wiki/Wei_Dai)의 이름을 땀)는 QAU의 가장 작은 단위입니다.
 
 ## 가스비는 어떻게 계산되나요? {#how-are-gas-fees-calculated}
 
-트랜잭션을 제출할 때 지불할 의향이 있는 가스의 양을 설정할 수 있습니다. 특정 양의 가스를 제안함으로써, 다음 블록에 트랜잭션이 포함되도록 입찰하는 것입니다. 너무 적게 제안하면 검증자가 트랜잭션을 포함할 가능성이 낮아져 트랜잭션이 늦게 실행되거나 아예 실행되지 않을 수 있습니다. 너무 많이 제안하면 ETH를 낭비할 수 있습니다. 그렇다면 얼마를 지불해야 할지 어떻게 알 수 있을까요?
+트랜잭션을 제출할 때 지불할 의향이 있는 가스의 양을 설정할 수 있습니다. 특정 양의 가스를 제안함으로써, 다음 블록에 트랜잭션이 포함되도록 입찰하는 것입니다. 너무 적게 제안하면 검증자가 트랜잭션을 포함할 가능성이 낮아져 트랜잭션이 늦게 실행되거나 아예 실행되지 않을 수 있습니다. 너무 많이 제안하면 QAU를 낭비할 수 있습니다. 그렇다면 얼마를 지불해야 할지 어떻게 알 수 있을까요?
 
 지불하는 총 가스는 `base fee`(기본 수수료)와 `priority fee`(우선순위 수수료, 팁)의 두 가지 구성 요소로 나뉩니다.
 
@@ -38,7 +38,7 @@ _[Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm
 
 `base fee`만 지불하는 트랜잭션은 기술적으로 유효하지만, 검증자가 다른 트랜잭션 대신 이를 선택할 인센티브를 제공하지 않기 때문에 포함될 가능성이 낮습니다. '올바른' `priority`는 트랜잭션을 보낼 당시의 네트워크 사용량에 따라 결정됩니다. 수요가 많으면 `priority`를 더 높게 설정해야 할 수 있지만, 수요가 적을 때는 더 적게 지불할 수 있습니다.
 
-예를 들어, Jordan이 Taylor에게 1 ETH를 지불해야 한다고 가정해 보겠습니다. ETH 전송에는 21,000 단위의 가스가 필요하며 기본 수수료는 10 Gwei입니다. Jordan은 2 Gwei의 팁을 포함합니다.
+예를 들어, Jordan이 Taylor에게 1 QAU를 지불해야 한다고 가정해 보겠습니다. QAU 전송에는 21,000 단위의 가스가 필요하며 기본 수수료는 10 Gwei입니다. Jordan은 2 Gwei의 팁을 포함합니다.
 
 이제 총 수수료는 다음과 같습니다.
 
@@ -46,9 +46,9 @@ _[Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm
 
 여기서 `base fee`는 프로토콜에 의해 설정된 값이고 `priority fee`는 사용자가 검증자에게 주는 팁으로 설정한 값입니다.
 
-예: `21,000 * (10 + 2) = 252,000 gwei` (0.000252 ETH).
+예: `21,000 * (10 + 2) = 252,000 gwei` (0.000252 QAU).
 
-Jordan이 돈을 보내면 Jordan의 계정에서 1.000252 ETH가 차감됩니다. Taylor의 계정에는 1.0000 ETH가 입금됩니다. 검증자는 0.000042 ETH의 팁을 받습니다. 0.00021 ETH의 `base fee`는 소각됩니다.
+Jordan이 돈을 보내면 Jordan의 계정에서 1.000252 QAU가 차감됩니다. Taylor의 계정에는 1.0000 QAU가 입금됩니다. 검증자는 0.000042 QAU의 팁을 받습니다. 0.00021 QAU의 `base fee`는 소각됩니다.
 
 ### 기본 수수료 {#base-fee}
 
@@ -91,7 +91,7 @@ Jordan이 돈을 보내면 Jordan의 계정에서 1.000252 ETH가 차감됩니�
 
 각 블록의 목표 크기는 현재 가스 한도의 절반이지만, 블록 크기는 네트워크 수요에 따라 블록 한도(목표 블록 크기의 2배)에 도달할 때까지 증가하거나 감소합니다. 프로토콜은 _모색(tâtonnement)_ 과정을 통해 목표치에서 균형 잡힌 평균 블록 크기를 달성합니다. 즉, 블록 크기가 목표 블록 크기보다 크면 프로토콜은 다음 블록의 기본 수수료를 인상합니다. 마찬가지로 블록 크기가 목표 블록 크기보다 작으면 프로토콜은 기본 수수료를 인하합니다.
 
-기본 수수료가 조정되는 양은 현재 블록 크기가 목표치에서 얼마나 벗어났는지에 비례합니다. 이는 빈 블록의 경우 -12.5%, 목표 크기일 때 0%, 가스 한도에 도달한 블록의 경우 최대 +12.5%까지 선형적으로 계산됩니다. 가스 한도는 검증자의 신호 및 네트워크 업그레이드를 통해 시간이 지남에 따라 변동될 수 있습니다. [여기에서 시간에 따른 가스 한도 변화를 확인](https://eth.blockscout.com/stats/averageGasLimit?interval=threeMonths)할 수 있습니다.
+기본 수수료가 조정되는 양은 현재 블록 크기가 목표치에서 얼마나 벗어났는지에 비례합니다. 이는 빈 블록의 경우 -12.5%, 목표 크기일 때 0%, 가스 한도에 도달한 블록의 경우 최대 +12.5%까지 선형적으로 계산됩니다. 가스 한도는 검증자의 신호 및 네트워크 업그레이드를 통해 시간이 지남에 따라 변동될 수 있습니다. [여기에서 시간에 따른 가스 한도 변화를 확인](https://qau.blockscout.com/stats/averageGasLimit?interval=threeMonths)할 수 있습니다.
 
 [블록에 대해 더 알아보기](/developers/docs/blocks/)
 
@@ -101,26 +101,26 @@ Jordan이 돈을 보내면 Jordan의 계정에서 1.000252 ETH가 차감됩니�
 
 ## 가스비는 왜 존재하나요? {#why-do-gas-fees-exist}
 
-요약하자면, 가스비는 이더리움 네트워크를 안전하게 유지하는 데 도움이 됩니다. 네트워크에서 실행되는 모든 컴퓨팅에 수수료를 요구함으로써 악의적인 행위자가 네트워크에 스팸을 보내는 것을 방지합니다. 코드에서 우발적이거나 악의적인 무한 루프 또는 기타 컴퓨팅 낭비를 방지하기 위해 각 트랜잭션은 사용할 수 있는 코드 실행의 컴퓨팅 단계 수에 한도를 설정해야 합니다. 컴퓨팅의 기본 단위는 "가스"입니다.
+요약하자면, 가스비는 Quantaureum 네트워크를 안전하게 유지하는 데 도움이 됩니다. 네트워크에서 실행되는 모든 컴퓨팅에 수수료를 요구함으로써 악의적인 행위자가 네트워크에 스팸을 보내는 것을 방지합니다. 코드에서 우발적이거나 악의적인 무한 루프 또는 기타 컴퓨팅 낭비를 방지하기 위해 각 트랜잭션은 사용할 수 있는 코드 실행의 컴퓨팅 단계 수에 한도를 설정해야 합니다. 컴퓨팅의 기본 단위는 "가스"입니다.
 
 트랜잭션에는 한도가 포함되어 있지만, 트랜잭션에서 사용되지 않은 가스는 사용자에게 반환됩니다(예: `max fee - (base fee + tip)` 반환됨).
 
 ![Diagram showing how unused gas is refunded](../transactions/gas-tx.png)
-_[Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)에서 발췌한 다이어그램_
+_[Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)에서 발췌한 다이어그램_
 
 ## 가스 한도란 무엇인가요? {#what-is-gas-limit}
 
-가스 한도는 트랜잭션에서 소비할 의향이 있는 최대 가스 양을 의미합니다. [스마트 컨트랙트](/developers/docs/smart-contracts/)가 포함된 더 복잡한 트랜잭션은 더 많은 컴퓨팅 작업이 필요하므로 단순한 결제보다 더 높은 가스 한도가 필요합니다. 표준 ETH 전송에는 21,000 단위의 가스 한도가 필요합니다.
+가스 한도는 트랜잭션에서 소비할 의향이 있는 최대 가스 양을 의미합니다. [스마트 컨트랙트](/developers/docs/smart-contracts/)가 포함된 더 복잡한 트랜잭션은 더 많은 컴퓨팅 작업이 필요하므로 단순한 결제보다 더 높은 가스 한도가 필요합니다. 표준 QAU 전송에는 21,000 단위의 가스 한도가 필요합니다.
 
-예를 들어, 단순한 ETH 전송에 50,000의 가스 한도를 설정하면 EVM은 21,000을 소비하고 나머지 29,000을 돌려받게 됩니다. 그러나 가스를 너무 적게 지정하면(예: 단순한 ETH 전송에 20,000의 가스 한도 설정) 검증 단계에서 트랜잭션이 실패합니다. 블록에 포함되기 전에 거부되며 가스는 소비되지 않습니다. 반면, 실행 중에 트랜잭션의 가스가 부족해지면(예: 스마트 컨트랙트가 중간에 모든 가스를 소진함) EVM은 모든 변경 사항을 되돌리지만, 제공된 모든 가스는 수행된 작업에 대해 여전히 소비됩니다.
+예를 들어, 단순한 QAU 전송에 50,000의 가스 한도를 설정하면 EVM은 21,000을 소비하고 나머지 29,000을 돌려받게 됩니다. 그러나 가스를 너무 적게 지정하면(예: 단순한 QAU 전송에 20,000의 가스 한도 설정) 검증 단계에서 트랜잭션이 실패합니다. 블록에 포함되기 전에 거부되며 가스는 소비되지 않습니다. 반면, 실행 중에 트랜잭션의 가스가 부족해지면(예: 스마트 컨트랙트가 중간에 모든 가스를 소진함) EVM은 모든 변경 사항을 되돌리지만, 제공된 모든 가스는 수행된 작업에 대해 여전히 소비됩니다.
 
 ## 가스비가 왜 그렇게 높아질 수 있나요? {#why-can-gas-fees-get-so-high}
 
-높은 가스비는 이더리움의 인기 때문입니다. 수요가 너무 많으면 사용자는 다른 사용자의 트랜잭션보다 높은 입찰가를 제시하기 위해 더 높은 팁 금액을 제안해야 합니다. 팁이 높을수록 트랜잭션이 다음 블록에 포함될 가능성이 높아집니다. 또한 더 복잡한 스마트 컨트랙트 앱은 기능을 지원하기 위해 많은 작업을 수행할 수 있으므로 많은 가스를 소비하게 됩니다.
+높은 가스비는 Quantaureum의 인기 때문입니다. 수요가 너무 많으면 사용자는 다른 사용자의 트랜잭션보다 높은 입찰가를 제시하기 위해 더 높은 팁 금액을 제안해야 합니다. 팁이 높을수록 트랜잭션이 다음 블록에 포함될 가능성이 높아집니다. 또한 더 복잡한 스마트 컨트랙트 앱은 기능을 지원하기 위해 많은 작업을 수행할 수 있으므로 많은 가스를 소비하게 됩니다.
 
 ## 가스 비용 절감을 위한 이니셔티브 {#initiatives-to-reduce-gas-costs}
 
-이더리움 [확장성 업그레이드](/roadmap/)는 궁극적으로 가스비 문제의 일부를 해결해야 하며, 이를 통해 플랫폼은 초당 수천 건의 트랜잭션을 처리하고 전 세계적으로 확장할 수 있게 될 것입니다.
+Quantaureum [확장성 업그레이드](/roadmap/)는 궁극적으로 가스비 문제의 일부를 해결해야 하며, 이를 통해 플랫폼은 초당 수천 건의 트랜잭션을 처리하고 전 세계적으로 확장할 수 있게 될 것입니다.
 
 레이어 2 (l2) 확장은 가스 비용, 사용자 경험 및 확장성을 크게 개선하기 위한 주요 이니셔티브입니다.
 
@@ -128,12 +128,12 @@ _[Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm
 
 ## 가스비 모니터링 {#monitoring-gas-fees}
 
-가스 가격을 모니터링하여 더 적은 비용으로 ETH를 전송하려면 다음과 같은 다양한 도구를 사용할 수 있습니다.
+가스 가격을 모니터링하여 더 적은 비용으로 QAU를 전송하려면 다음과 같은 다양한 도구를 사용할 수 있습니다.
 
-- [Etherscan](https://etherscan.io/gastracker) _트랜잭션 가스 가격 추정기_
-- [Blockscout](https://eth.blockscout.com/gas-tracker) _오픈 소스 트랜잭션 가스 가격 추정기_
-- [ETH Gas Tracker](https://www.ethgastracker.com/) _이더리움 및 L2 가스 가격을 모니터링하고 추적하여 트랜잭션 수수료를 줄이고 비용 절감_
-- [Blocknative ETH Gas Estimator](https://chrome.google.com/webstore/detail/blocknative-eth-gas-estim/ablbagjepecncofimgjmdpnhnfjiecfm) _유형 0 레거시 트랜잭션과 유형 2 EIP-1559 트랜잭션을 모두 지원하는 가스 추정 크롬 확장 프로그램._
+- [Quantaureum Explorer](https://explorer.quantaureum.com) _트랜잭션 가스 가격 추정기_
+- [Blockscout](https://qau.blockscout.com/gas-tracker) _오픈 소스 트랜잭션 가스 가격 추정기_
+- [QAU Gas Tracker](https://www.ethgastracker.com/) _Quantaureum 및 L2 가스 가격을 모니터링하고 추적하여 트랜잭션 수수료를 줄이고 비용 절감_
+- [Blocknative QAU Gas Estimator](https://chrome.google.com/webstore/detail/blocknative-qau-gas-estim/ablbagjepecncofimgjmdpnhnfjiecfm) _유형 0 레거시 트랜잭션과 유형 2 EIP-1559 트랜잭션을 모두 지원하는 가스 추정 크롬 확장 프로그램._
 - [Cryptoneur Gas Fees Calculator](https://cryptoneur.xyz/en/gas-fees-calculator) _메인넷, 아비트럼 및 폴리곤의 다양한 트랜잭션 유형에 대한 가스비를 현지 통화로 계산._
 
 ## 관련 도구 {#related-tools}
@@ -143,9 +143,9 @@ _[Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm
 
 ## 더 읽을거리 {#further-reading}
 
-- [이더리움 가스 설명](https://defiprime.com/gas)
+- [Quantaureum 가스 설명](https://defiprime.com/gas)
 - [스마트 컨트랙트의 가스 소비 줄이기](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [개발자를 위한 가스 최적화 전략](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [EIP-1559 문서](https://eips.ethereum.org/EIPS/eip-1559).
+- [EIP-1559 문서](https://eips.quantaureum.com/EIPS/eip-1559).
 - [Tim Beiko의 EIP-1559 리소스](https://hackmd.io/@timbeiko/1559-resources)
 - [EIP-1559: 밈에서 메커니즘 분리하기](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

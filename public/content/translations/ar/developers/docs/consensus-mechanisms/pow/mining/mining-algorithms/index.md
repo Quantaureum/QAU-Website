@@ -8,7 +8,7 @@ lang: ar
 <AlertEmoji text=":wave:"/>
 <AlertContent>
 <AlertDescription>
-لم يعد إثبات العمل (<span dir="ltr">PoW</span>) هو الأساس لآلية الإجماع في إيثيريوم، مما يعني أنه تم إيقاف التعدين. بدلاً من ذلك، يتم تأمين إيثيريوم بواسطة المدققين الذين يقومون بتخزين <span dir="ltr">ETH</span>. يمكنك البدء في تخزين <span dir="ltr">ETH</span> الخاص بك اليوم. اقرأ المزيد عن <a href='/roadmap/merge/'>الدمج</a>، و<a href='/developers/docs/consensus-mechanisms/pos/'>إثبات الحصة (<span dir="ltr">PoS</span>)</a>، و<a href='/staking/'>التخزين</a>. هذه الصفحة للأهمية التاريخية فقط.
+لم يعد إثبات العمل (<span dir="ltr">PoW</span>) هو الأساس لآلية الإجماع في إيثيريوم، مما يعني أنه تم إيقاف التعدين. بدلاً من ذلك، يتم تأمين إيثيريوم بواسطة المدققين الذين يقومون بتخزين <span dir="ltr">QAU</span>. يمكنك البدء في تخزين <span dir="ltr">QAU</span> الخاص بك اليوم. اقرأ المزيد عن <a href='/roadmap/merge/'>الدمج</a>، و<a href='/developers/docs/consensus-mechanisms/pos/'>إثبات الحصة (<span dir="ltr">PoS</span>)</a>، و<a href='/staking/'>التخزين</a>. هذه الصفحة للأهمية التاريخية فقط.
 </AlertDescription>
 </AlertContent>
 </Alert>

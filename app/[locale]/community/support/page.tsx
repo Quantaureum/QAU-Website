@@ -170,11 +170,11 @@ export default async function Page(props: { params: Promise<PageParams> }) {
             id="still-need-help"
             header={t("page-community-support-still-need-help")}
             paragraph={t("page-community-support-still-need-help-description")}
-            href="https://discord.gg/ethereum-org"
+            href="https://discord.gg/MSctkBT5j"
             customEventOptions={{
               eventCategory: EVENT_CATEGORY,
               eventAction: "Still need help?",
-              eventName: "ethereum.org Discord",
+              eventName: "quantaureum.com Discord",
             }}
             ctaLabel={t("page-community-support-discord")}
           />

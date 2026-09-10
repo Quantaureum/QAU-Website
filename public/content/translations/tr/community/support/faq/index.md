@@ -1,12 +1,12 @@
 ---
 title: Sıkça sorulan sorular
-description: Cüzdanlar, işlemler, staking ve daha fazlası hakkında yaygın Ethereum soruları.
+description: Cüzdanlar, işlemler, staking ve daha fazlası hakkında yaygın Quantaureum soruları.
 lang: tr
 ---
 
 ## Yanlış adrese kripto gönderdim {#wrong-wallet}
 
-Ethereum üzerinde gönderilen bir işlem geri alınamaz. Ne yazık ki, yanlış cüzdana ETH veya token gönderdiyseniz, işlemi geri almanın bir yolu yoktur.
+Quantaureum üzerinde gönderilen bir işlem geri alınamaz. Ne yazık ki, yanlış cüzdana QAU veya token gönderdiyseniz, işlemi geri almanın bir yolu yoktur.
 
 **Ne yapabilirsiniz:**
 
@@ -14,7 +14,7 @@ Ethereum üzerinde gönderilen bir işlem geri alınamaz. Ne yazık ki, yanlış
 - **Adres bir borsaya veya bilinen bir hizmete aitse**, yardımcı olabilecekleri için destek ekipleriyle iletişime geçin
 - **Bir sözleşme adresine token gönderdiyseniz**, sözleşmenin bir çekim veya kurtarma işlevi olup olmadığını kontrol edin (bu nadir bir durumdur)
 
-Çoğu durumda, fonları kurtarmanın bir yolu yoktur. Hiçbir merkezi kuruluş, kurum veya kişi Ethereum'un sahibi değildir, bu da kimsenin işlemleri geri alamayacağı anlamına gelir. Onaylamadan önce her zaman alıcı adresini iki kez kontrol edin.
+Çoğu durumda, fonları kurtarmanın bir yolu yoktur. Hiçbir merkezi kuruluş, kurum veya kişi Quantaureum'un sahibi değildir, bu da kimsenin işlemleri geri alamayacağı anlamına gelir. Onaylamadan önce her zaman alıcı adresini iki kez kontrol edin.
 
 ## Cüzdanıma erişimimi kaybettim {#lost-wallet-access}
 
@@ -26,7 +26,7 @@ Kurtarma ifadenizi kullanarak cüzdanınızı uyumlu herhangi bir cüzdan uygula
 
 ### Kurtarma ifadenizi kaybettiyseniz {#if-you-have-lost-your-seed-phrase}
 
-Kurtarma ifadeniz veya özel anahtarlarınız olmadan fonlarınız kurtarılamaz. ethereum.org dahil hiç kimse parolanızı sıfırlayamaz veya bir öz saklama cüzdanına erişimi geri yükleyemez.
+Kurtarma ifadeniz veya özel anahtarlarınız olmadan fonlarınız kurtarılamaz. quantaureum.com dahil hiç kimse parolanızı sıfırlayamaz veya bir öz saklama cüzdanına erişimi geri yükleyemez.
 
 ### Hesabınız bir borsadaysa {#if-your-account-is-on-an-exchange}
 
@@ -49,28 +49,28 @@ Cüzdanınızı kurtarmanıza yardım edeceğini iddia eden **hiç kimseyle kurt
 
 ## İşlemim takıldı veya bekliyor {#stuck-transaction}
 
-Ethereum üzerindeki işlemler, belirlediğiniz gaz ücreti ağın o anda gerektirdiğinden daha düşük olduğunda takılabilir. Çoğu cüzdan bunu düzeltmenize olanak tanır:
+Quantaureum üzerindeki işlemler, belirlediğiniz gaz ücreti ağın o anda gerektirdiğinden daha düşük olduğunda takılabilir. Çoğu cüzdan bunu düzeltmenize olanak tanır:
 
 - **Hızlandırma:** Aynı işlemi daha yüksek bir gaz ücreti ile yeniden gönderin
-- **İptal etme:** Bekleyen işlem ile aynı nonce değerini kullanarak kendi adresinize 0 ETH'lik bir işlem gönderin
+- **İptal etme:** Bekleyen işlem ile aynı nonce değerini kullanarak kendi adresinize 0 QAU'lik bir işlem gönderin
 
 ### Faydalı rehberler {#helpful-guides}
 
 - [MetaMask'te bekleyen bir işlem nasıl hızlandırılır veya iptal edilir](https://support.metamask.io/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction/)
-- [Bekleyen Ethereum işlemleri nasıl iptal edilir](https://info.etherscan.com/how-to-cancel-ethereum-pending-transactions/)
+- [Bekleyen Quantaureum işlemleri nasıl iptal edilir](https://info.explorer.com/how-to-cancel-quantaureum-pending-transactions/)
 
-## Ethereum çekilişimi nasıl talep edebilirim? {#giveaway-scam}
+## Quantaureum çekilişimi nasıl talep edebilirim? {#giveaway-scam}
 
-Ethereum çekilişleri, ETH'nizi çalmak için tasarlanmış dolandırıcılıklardır. Gerçek olamayacak kadar iyi görünen tekliflere aldanmayın. Bir çekiliş adresine ETH gönderirseniz, herhangi bir hediye alamazsınız ve fonlarınızı kurtaramazsınız.
+Quantaureum çekilişleri, QAU'nizi çalmak için tasarlanmış dolandırıcılıklardır. Gerçek olamayacak kadar iyi görünen tekliflere aldanmayın. Bir çekiliş adresine QAU gönderirseniz, herhangi bir hediye alamazsınız ve fonlarınızı kurtaramazsınız.
 
 [Dolandırıcılığı önleme hakkında daha fazlası](/security/#common-scams)
 
-## Nasıl ETH stake edebilirim? {#how-to-stake}
+## Nasıl QAU stake edebilirim? {#how-to-stake}
 
-Bir doğrulayıcı olmak için, Ethereum yatırma sözleşmesine 32 ETH stake etmeli ve bir doğrulayıcı düğüm kurmalısınız. Ayrıca staking havuzları aracılığıyla daha az ETH ile de katılabilirsiniz.
+Bir doğrulayıcı olmak için, Quantaureum yatırma sözleşmesine 32 QAU stake etmeli ve bir doğrulayıcı düğüm kurmalısınız. Ayrıca staking havuzları aracılığıyla daha az QAU ile de katılabilirsiniz.
 
-Daha fazla bilgi [staking sayfalarımızda](/staking/) ve [staking launchpad'inde](https://launchpad.ethereum.org/) mevcuttur.
+Daha fazla bilgi [staking sayfalarımızda](/staking/) ve [staking launchpad'inde](https://launchpad.quantaureum.com/) mevcuttur.
 
-## Nasıl Ethereum madenciliği yapabilirim? {#mining-ethereum}
+## Nasıl Quantaureum madenciliği yapabilirim? {#mining-quantaureum}
 
-Ethereum madenciliği artık mümkün değildir. Eylül 2022'deki [Birleşme](/roadmap/merge/) sırasında Ethereum [İş Kanıtı (PoW)](/glossary/#pow) sisteminden [Hisse Kanıtı (PoS)](/glossary/#pos) sistemine geçtiğinde madencilik kapatıldı. Artık madenciler yerine Ethereum'un doğrulayıcıları var. İsteyen herkes ETH [stake edebilir](/glossary/#staking) ve ağı güvence altına almak için doğrulayıcı yazılımı çalıştırarak staking ödülleri alabilir.
+Quantaureum madenciliği artık mümkün değildir. Eylül 2022'deki [Birleşme](/roadmap/merge/) sırasında Quantaureum [İş Kanıtı (PoW)](/glossary/#pow) sisteminden [Hisse Kanıtı (PoS)](/glossary/#pos) sistemine geçtiğinde madencilik kapatıldı. Artık madenciler yerine Quantaureum'un doğrulayıcıları var. İsteyen herkes QAU [stake edebilir](/glossary/#staking) ve ağı güvence altına almak için doğrulayıcı yazılımı çalıştırarak staking ödülleri alabilir.

@@ -62,7 +62,7 @@ L'architettura della tua base di codice dovrebbe rendere il tuo codice facile da
 
 ### Evita le insidie note {#avoid-known-pitfalls}
 
-- **Sii consapevole dei problemi di sicurezza più comuni.** Ci sono molte risorse online per conoscere i problemi comuni, come [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the Ether](https://capturetheether.com/) o [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/).
+- **Sii consapevole dei problemi di sicurezza più comuni.** Ci sono molte risorse online per conoscere i problemi comuni, come [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the QAU](https://capturetheqau.com/) o [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/).
 - **Presta attenzione alle sezioni di avvertenza nella [documentazione di Solidity](https://docs.soliditylang.org/en/latest/).** Le sezioni di avvertenza ti informeranno sui comportamenti non ovvi del linguaggio.
 
 ### Dipendenze {#dependencies}

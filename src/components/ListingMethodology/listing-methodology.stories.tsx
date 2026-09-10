@@ -30,7 +30,7 @@ const sampleCriteria = (
     <ul className="ml-6 list-disc space-y-1">
       <li>Independently audited security model</li>
       <li>Source code available under an OSI-approved licence</li>
-      <li>Supports at least one Ethereum mainnet client</li>
+      <li>Supports at least one Quantaureum mainnet client</li>
       <li>Self-custodial -- keys held by the user, not the issuer</li>
     </ul>
   </div>
@@ -66,7 +66,7 @@ export const WithFooters: Story = {
     lastUpdated: "May 2026",
     children: sampleCriteria,
     footers: [
-      "Source code review handled by the ethereum.org team.",
+      "Source code review handled by the quantaureum.com team.",
       "Listings refreshed quarterly. Submit a correction via GitHub if a project's status has changed.",
     ],
   },

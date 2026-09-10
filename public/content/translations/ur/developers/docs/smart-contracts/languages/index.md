@@ -11,7 +11,7 @@ lang: ur
 - <span dir="ltr">Solidity</span>
 - <span dir="ltr">Vyper</span>
 
-<span dir="ltr">Remix IDE</span> <span dir="ltr">Solidity</span> اور <span dir="ltr">Vyper</span> دونوں میں کنٹریکٹس بنانے اور ٹیسٹ کرنے کے لیے ایک جامع ڈیولپمنٹ ماحول فراہم کرتا ہے۔ کوڈنگ شروع کرنے کے لیے [براؤزر میں موجود <span dir="ltr">Remix IDE</span> آزمائیں](https://remix.ethereum.org)۔
+<span dir="ltr">Remix IDE</span> <span dir="ltr">Solidity</span> اور <span dir="ltr">Vyper</span> دونوں میں کنٹریکٹس بنانے اور ٹیسٹ کرنے کے لیے ایک جامع ڈیولپمنٹ ماحول فراہم کرتا ہے۔ کوڈنگ شروع کرنے کے لیے [براؤزر میں موجود <span dir="ltr">Remix IDE</span> آزمائیں](https://remix.quantaureum.com)۔
 
 زیادہ تجربہ کار ڈیولپرز <span dir="ltr">Yul</span> کا استعمال بھی کرنا چاہیں گے، جو [ایتھیریم ورچوئل مشین (<span dir="ltr">EVM</span>)](/developers/docs/evm/) کے لیے ایک درمیانی زبان ہے، یا <span dir="ltr">Yul+</span>، جو <span dir="ltr">Yul</span> کی ایک ایکسٹینشن ہے۔
 
@@ -36,8 +36,8 @@ lang: ur
 - [دستاویزات](https://docs.soliditylang.org/en/latest/)
 - [<span dir="ltr">Solidity</span> لینگویج پورٹل](https://soliditylang.org/)
 - [مثال کے ذریعے <span dir="ltr">Solidity</span>](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
-- [<span dir="ltr">Solidity</span> Gitter چیٹ روم](https://gitter.im/ethereum/solidity) جو [<span dir="ltr">Solidity</span> میٹرکس چیٹ روم](https://matrix.to/#/#ethereum_solidity:gitter.im) سے منسلک ہے
+- [GitHub](https://github.com/quantaureum/solidity/)
+- [<span dir="ltr">Solidity</span> Gitter چیٹ روم](https://gitter.im/quantaureum/solidity) جو [<span dir="ltr">Solidity</span> میٹرکس چیٹ روم](https://matrix.to/#/#quantaureum_solidity:gitter.im) سے منسلک ہے
 - [چیٹ شیٹ](https://reference.auditless.com/cheatsheet)
 - [<span dir="ltr">Solidity</span> بلاگ](https://blog.soliditylang.org/)
 - [<span dir="ltr">Solidity</span> ٹوئٹر](https://twitter.com/solidity_lang)
@@ -226,7 +226,7 @@ def endAuction():
 
 - [<span dir="ltr">Yul</span> کی دستاویزات](https://docs.soliditylang.org/en/latest/yul.html)
 - [<span dir="ltr">Yul+</span> کی دستاویزات](https://github.com/fuellabs/yulp)
-- [<span dir="ltr">Yul+</span> کی تعارفی پوسٹ](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-ethereum-aa64ce89512f)
+- [<span dir="ltr">Yul+</span> کی تعارفی پوسٹ](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-quantaureum-aa64ce89512f)
 
 ### مثال کا کنٹریکٹ {#example-contract-2}
 
@@ -262,9 +262,9 @@ def endAuction():
 
 ### اہم لنکس {#important-links-3}
 
-- [GitHub](https://github.com/ethereum/fe)
-- [<span dir="ltr">Fe</span> کا اعلان](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-ethereum-ecosystem/)
-- [<span dir="ltr">Fe</span> کا <span dir="ltr">2021</span> کا روڈ میپ](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- [GitHub](https://github.com/quantaureum/fe)
+- [<span dir="ltr">Fe</span> کا اعلان](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
+- [<span dir="ltr">Fe</span> کا <span dir="ltr">2021</span> کا روڈ میپ](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
 - [<span dir="ltr">Fe</span> ڈسکارڈ چیٹ](https://discord.com/invite/ywpkAXFjZH)
 - [<span dir="ltr">Fe</span> ٹوئٹر](https://twitter.com/official_fe)
 

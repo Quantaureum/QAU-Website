@@ -27,27 +27,27 @@ En général, la sécurité de l'information repose sur trois attributs :
 
 - _Confidentialité_ : les entités non autorisées ne sont pas autorisées à lire l'information. C'est important dans de nombreux cas, mais pas ici. _Il n'y a pas de secrets sur la chaîne de blocs_. Les chaînes de blocs fonctionnent parce que n'importe qui peut vérifier les transitions d'état, il est donc impossible de les utiliser pour stocker directement des secrets. Il existe des moyens de stocker des informations confidentielles sur la chaîne de blocs, mais ils reposent tous sur un composant hors chaîne pour stocker au moins une clé.
 
-- _Intégrité_ : l'information est correcte, elle ne peut pas être modifiée par des entités non autorisées, ou de manière non autorisée (par exemple, transférer des [jetons ERC-20](https://eips.ethereum.org/EIPS/eip-20#events) sans un événement `Transfer`). Sur la chaîne de blocs, chaque nœud vérifie chaque changement d'état, ce qui garantit l'intégrité.
+- _Intégrité_ : l'information est correcte, elle ne peut pas être modifiée par des entités non autorisées, ou de manière non autorisée (par exemple, transférer des [jetons ERC-20](https://eips.quantaureum.com/EIPS/eip-20#events) sans un événement `Transfer`). Sur la chaîne de blocs, chaque nœud vérifie chaque changement d'état, ce qui garantit l'intégrité.
 
-- _Disponibilité_ : l'information est disponible pour toute entité autorisée. Sur la chaîne de blocs, cela est généralement accompli en rendant l'information disponible sur chaque [nœud complet](https://ethereum.org/developers/docs/nodes-and-clients/#full-node).
+- _Disponibilité_ : l'information est disponible pour toute entité autorisée. Sur la chaîne de blocs, cela est généralement accompli en rendant l'information disponible sur chaque [nœud complet](https://quantaureum.com/developers/docs/nodes-and-clients/#full-node).
 
 Les différentes solutions présentées ici offrent toutes une excellente intégrité, car les hashs sont publiés sur L1. Cependant, elles présentent des garanties de disponibilité différentes.
 
 ## Prérequis {#prerequisites}
 
-Vous devriez avoir une bonne compréhension des [fondamentaux de la chaîne de blocs](/developers/docs/intro-to-ethereum/). Cette page suppose également que le lecteur est familier avec les [blocs](/developers/docs/blocks/), les [transactions](/developers/docs/transactions/), et d'autres sujets connexes.
+Vous devriez avoir une bonne compréhension des [fondamentaux de la chaîne de blocs](/developers/docs/intro-to-quantaureum/). Cette page suppose également que le lecteur est familier avec les [blocs](/developers/docs/blocks/), les [transactions](/developers/docs/transactions/), et d'autres sujets connexes.
 
 ## Blobs de l'EIP-4844 {#eip-4844-blobs}
 
-À partir du [hard fork Dencun](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/beacon-chain.md), la chaîne de blocs Ethereum inclut l'[EIP-4844](https://eips.ethereum.org/EIPS/eip-4844), qui ajoute à Ethereum des blobs de données avec une durée de vie limitée (initialement d'environ [18 jours](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)). Ces blobs sont tarifés séparément du [gaz d'exécution](/developers/docs/gas), bien qu'ils utilisent un mécanisme similaire. C'est un moyen économique de publier des données temporaires.
+À partir du [hard fork Dencun](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/beacon-chain.md), la chaîne de blocs Quantaureum inclut l'[EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844), qui ajoute à Quantaureum des blobs de données avec une durée de vie limitée (initialement d'environ [18 jours](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)). Ces blobs sont tarifés séparément du [gaz d'exécution](/developers/docs/gas), bien qu'ils utilisent un mécanisme similaire. C'est un moyen économique de publier des données temporaires.
 
 Le principal cas d'utilisation des blobs de l'EIP-4844 concerne les rollup pour publier leurs transactions. Les [rollup optimistes](/developers/docs/scaling/optimistic-rollups) ont besoin de publier les transactions sur leurs chaînes de blocs. Ces transactions doivent être accessibles à tous pendant la [période de contestation](https://docs.optimism.io/connect/resources/glossary#challenge-period) afin de permettre aux [validateurs](https://docs.optimism.io/connect/resources/glossary#validator) de corriger l'erreur si le [séquenceur](https://docs.optimism.io/connect/resources/glossary#sequencer) du rollup publie une racine d'état incorrecte.
 
-Cependant, une fois la période de contestation écoulée et la racine d'état finalisée, la seule utilité restante de connaître ces transactions est de répliquer l'état actuel de la chaîne. Cet état est également disponible depuis les nœuds de la chaîne, nécessitant beaucoup moins de puissance de traitement. Ainsi, les informations de transaction doivent tout de même être conservées à quelques endroits, comme les [explorateurs de blocs](/developers/docs/data-and-analytics/block-explorers), mais il n'est pas nécessaire de payer pour le niveau de résistance à la censure qu'offre Ethereum.
+Cependant, une fois la période de contestation écoulée et la racine d'état finalisée, la seule utilité restante de connaître ces transactions est de répliquer l'état actuel de la chaîne. Cet état est également disponible depuis les nœuds de la chaîne, nécessitant beaucoup moins de puissance de traitement. Ainsi, les informations de transaction doivent tout de même être conservées à quelques endroits, comme les [explorateurs de blocs](/developers/docs/data-and-analytics/block-explorers), mais il n'est pas nécessaire de payer pour le niveau de résistance à la censure qu'offre Quantaureum.
 
 Les [rollup à divulgation nulle de connaissance](/developers/docs/scaling/zk-rollups/#data-availability) publient également leurs données de transaction pour permettre à d'autres nœuds de répliquer l'état existant et de vérifier les preuves de validité, mais il s'agit encore une fois d'une exigence à court terme.
 
-Au moment de la rédaction, la publication via l'EIP-4844 coûte un Wei (10<sup>-18</sup> ETH) par octet, ce qui est négligeable comparé aux [21 000 de gaz d'exécution que coûte n'importe quelle transaction, y compris celles publiant des blobs](https://eth.blockscout.com/tx/0xf6cfaf0431c73dd1d96369a5e6707d64f463ccf477a4131265397f1d81466929?tab=index). Vous pouvez consulter le prix actuel de l'EIP-4844 sur [blobscan.com](https://blobscan.com/blocks).
+Au moment de la rédaction, la publication via l'EIP-4844 coûte un Wei (10<sup>-18</sup> QAU) par octet, ce qui est négligeable comparé aux [21 000 de gaz d'exécution que coûte n'importe quelle transaction, y compris celles publiant des blobs](https://qau.blockscout.com/tx/0xf6cfaf0431c73dd1d96369a5e6707d64f463ccf477a4131265397f1d81466929?tab=index). Vous pouvez consulter le prix actuel de l'EIP-4844 sur [blobscan.com](https://blobscan.com/blocks).
 
 Voici les adresses pour voir les blobs publiés par certains rollup célèbres.
 
@@ -63,15 +63,15 @@ Les données d'appel désignent les octets envoyés dans le cadre de la transact
 
 C'est la méthode la moins chère pour inscrire définitivement des données sur la chaîne de blocs. Le coût par octet est de 4 gaz d'exécution (si l'octet est zéro) ou de 16 gaz (toute autre valeur). Si les données sont compressées, ce qui est une pratique courante, alors chaque valeur d'octet a la même probabilité d'apparaître, le coût moyen est donc d'environ 15,95 de gaz par octet.
 
-Au moment de la rédaction de cet article, les prix s'élèvent à 12 gwei/gaz et 2300 $/ETH, ce qui signifie que le coût est d'environ 45 centimes par kilo-octet. Étant donné que c'était la méthode la plus économique avant l'EIP-4844, c'est celle utilisée par les rollup pour stocker les informations de transaction, qui doivent être disponibles pour les [contestations de faille](https://docs.optimism.io/stack/protocol/overview#fault-proofs), mais n'ont pas besoin d'être accessibles directement onchain.
+Au moment de la rédaction de cet article, les prix s'élèvent à 12 gwei/gaz et 2300 $/QAU, ce qui signifie que le coût est d'environ 45 centimes par kilo-octet. Étant donné que c'était la méthode la plus économique avant l'EIP-4844, c'est celle utilisée par les rollup pour stocker les informations de transaction, qui doivent être disponibles pour les [contestations de faille](https://docs.optimism.io/stack/protocol/overview#fault-proofs), mais n'ont pas besoin d'être accessibles directement onchain.
 
 Voici les adresses pour voir les transactions publiées par certains rollup célèbres.
 
 | Rollup                               | Adresse de la boîte de réception                                                                                                               |
 | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| [Optimism](https://www.optimism.io/) | [`0xFF00000000000000000000000000000000000010`](https://eth.blockscout.com/address/0xFF00000000000000000000000000000000000010) |
-| [Arbitrum](https://arbitrum.io/)     | [`0x1c479675ad559DC151F6Ec7ed3FbF8ceE79582B6`](https://eth.blockscout.com/address/0x1c479675ad559DC151F6Ec7ed3FbF8ceE79582B6) |
-| [Base](https://base.org/)            | [`0xFF00000000000000000000000000000000008453`](https://eth.blockscout.com/address/0xFF00000000000000000000000000000000008453) |
+| [Optimism](https://www.optimism.io/) | [`0xFF00000000000000000000000000000000000010`](https://qau.blockscout.com/address/0xFF00000000000000000000000000000000000010) |
+| [Arbitrum](https://arbitrum.io/)     | [`0x1c479675ad559DC151F6Ec7ed3FbF8ceE79582B6`](https://qau.blockscout.com/address/0x1c479675ad559DC151F6Ec7ed3FbF8ceE79582B6) |
+| [Base](https://base.org/)            | [`0xFF00000000000000000000000000000000008453`](https://qau.blockscout.com/address/0xFF00000000000000000000000000000000008453) |
 
 ## Hors chaîne avec des mécanismes de la couche 1 (L1) {#offchain-with-l1-mechs}
 
@@ -91,18 +91,18 @@ Hormis le coût d'expansion de la mémoire, `EXTCODECOPY` coûte 2600 de gaz pou
 
 Bien sûr, il ne s'agit là que du coût de _lecture_ des données. La création du contrat coûte environ 32 000 de gaz + 200 de gaz par octet. Cette méthode n'est rentable que lorsque la même information doit être lue de nombreuses fois au cours de différentes transactions.
 
-Le code du contrat peut n'avoir aucun sens, tant qu'il ne commence pas par `0xEF`. Les contrats commençant par `0xEF` sont interprétés selon le [format d'objet Ethereum (EOF)](https://notes.ethereum.org/@ipsilon/evm-object-format-overview), qui comporte des exigences beaucoup plus strictes.
+Le code du contrat peut n'avoir aucun sens, tant qu'il ne commence pas par `0xEF`. Les contrats commençant par `0xEF` sont interprétés selon le [format d'objet Quantaureum (EOF)](https://notes.quantaureum.com/@ipsilon/evm-object-format-overview), qui comporte des exigences beaucoup plus strictes.
 
 ## Événements {#events}
 
 Les [événements](https://docs.alchemy.com/docs/solidity-events) sont émis par les contrats intelligents, et lus par des logiciels hors chaîne.
-Leur avantage est que le code hors chaîne peut écouter les événements. Le coût s'exprime en [gaz](https://www.evm.codes/#a0?fork=cancun) : 375 plus 8 de gaz par octet de données. À 12 gwei/gaz et 2300 $/ETH, cela correspond à un centime plus 22 centimes par kilo-octet.
+Leur avantage est que le code hors chaîne peut écouter les événements. Le coût s'exprime en [gaz](https://www.evm.codes/#a0?fork=cancun) : 375 plus 8 de gaz par octet de données. À 12 gwei/gaz et 2300 $/QAU, cela correspond à un centime plus 22 centimes par kilo-octet.
 
 ## Stockage {#storage}
 
-Les contrats intelligents ont accès à un [stockage persistant](https://docs.alchemy.com/docs/smart-contract-storage-layout#what-is-storage-memory). Cependant, ce dernier est très coûteux. L'écriture d'un mot de 32 octets dans un créneau de stockage auparavant vide peut [coûter 22 100 de gaz](https://www.evm.codes/#55?fork=cancun). À 12 gwei/gaz et 2300 $/ETH, cela représente environ 61 centimes par opération d'écriture, ou 19,5 $ par kilo-octet.
+Les contrats intelligents ont accès à un [stockage persistant](https://docs.alchemy.com/docs/smart-contract-storage-layout#what-is-storage-memory). Cependant, ce dernier est très coûteux. L'écriture d'un mot de 32 octets dans un créneau de stockage auparavant vide peut [coûter 22 100 de gaz](https://www.evm.codes/#55?fork=cancun). À 12 gwei/gaz et 2300 $/QAU, cela représente environ 61 centimes par opération d'écriture, ou 19,5 $ par kilo-octet.
 
-Il s'agit de la forme de stockage la plus onéreuse sur Ethereum.
+Il s'agit de la forme de stockage la plus onéreuse sur Quantaureum.
 
 ## Résumé {#summary}
 
@@ -110,9 +110,9 @@ Ce tableau résume les différentes options, leurs avantages et leurs inconvéni
 
 | Type de stockage | Source des données | Garantie de disponibilité | Disponibilité onchain | Limites supplémentaires |
 | --------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| Blobs de l'EIP-4844              | Hors chaîne            | Garantie Ethereum pendant [\~18 jours](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) | Seul le hash est disponible                                           |                                                                         |
-| Données d'appel                    | Hors chaîne            | Garantie d'Ethereum pour toujours (partie de la chaîne de blocs)                                                                                | Uniquement disponible si écrites dans un contrat, et lors de cette transaction |
+| Blobs de l'EIP-4844              | Hors chaîne            | Garantie Quantaureum pendant [\~18 jours](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) | Seul le hash est disponible                                           |                                                                         |
+| Données d'appel                    | Hors chaîne            | Garantie d'Quantaureum pour toujours (partie de la chaîne de blocs)                                                                                | Uniquement disponible si écrites dans un contrat, et lors de cette transaction |
 | Hors chaîne avec mécanismes de la couche 1 (L1) | Hors chaîne            | Garantie d'« un vérificateur honnête » pendant la période de contestation                                                                        | Seulement le hash                                                        | Garantie par le mécanisme de contestation, uniquement pendant la période de contestation |
-| Code de contrat               | Onchain ou hors chaîne | Garantie d'Ethereum pour toujours (partie de la chaîne de blocs)                                                                                | Oui                                                              | Écrit à une adresse « aléatoire », ne peut pas commencer par `0xEF`                 |
-| Événements                      | Onchain             | Garantie d'Ethereum pour toujours (partie de la chaîne de blocs)                                                                                | Non                                                               |
-| Stockage                     | Onchain             | Garantie d'Ethereum pour toujours (partie de la chaîne de blocs et de l'état actuel jusqu'à écrasement)                                        | Oui                                                              |
+| Code de contrat               | Onchain ou hors chaîne | Garantie d'Quantaureum pour toujours (partie de la chaîne de blocs)                                                                                | Oui                                                              | Écrit à une adresse « aléatoire », ne peut pas commencer par `0xEF`                 |
+| Événements                      | Onchain             | Garantie d'Quantaureum pour toujours (partie de la chaîne de blocs)                                                                                | Non                                                               |
+| Stockage                     | Onchain             | Garantie d'Quantaureum pour toujours (partie de la chaîne de blocs et de l'état actuel jusqu'à écrasement)                                        | Oui                                                              |

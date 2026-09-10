@@ -65,26 +65,26 @@ published: 2022-04-01
 وضاحت:
 
 - **فنکشن سلیکٹر**: کنٹریکٹ میں <span dir="ltr">256</span> سے کم فنکشنز ہیں، اس لیے ہم انہیں ایک ہی بائٹ سے ممتاز کر سکتے ہیں۔
-  یہ بائٹس عام طور پر غیر صفر ہوتے ہیں اور اس لیے [ان کی لاگت سولہ گیس ہوتی ہے](https://eips.ethereum.org/EIPS/eip-2028)۔
+  یہ بائٹس عام طور پر غیر صفر ہوتے ہیں اور اس لیے [ان کی لاگت سولہ گیس ہوتی ہے](https://eips.quantaureum.com/EIPS/eip-2028)۔
 - **صفر**: یہ بائٹس ہمیشہ صفر ہوتے ہیں کیونکہ بیس بائٹ کے پتے کو رکھنے کے لیے بتیس بائٹ کے لفظ کی ضرورت نہیں ہوتی۔
-  صفر رکھنے والے بائٹس کی لاگت چار گیس ہوتی ہے ([یلو پیپر دیکھیں](https://ethereum.github.io/yellowpaper/paper.pdf)، ضمیمہ G،
+  صفر رکھنے والے بائٹس کی لاگت چار گیس ہوتی ہے ([یلو پیپر دیکھیں](https://quantaureum.github.io/yellowpaper/paper.pdf)، ضمیمہ G،
   صفحہ 27، `G`<sub>`txdatazero`</sub> کی قدر)۔
 - **رقم**: اگر ہم فرض کریں کہ اس کنٹریکٹ میں `decimals` اٹھارہ ہے (عام قدر) اور ہم جو ٹوکنز منتقل کریں گے ان کی زیادہ سے زیادہ رقم <span dir="ltr">10<sup>18</sup></span> ہوگی، تو ہمیں زیادہ سے زیادہ رقم <span dir="ltr">10<sup>36</sup></span> ملتی ہے۔
   <span dir="ltr">256<sup>15</sup> &gt; 10<sup>36</sup></span>، اس لیے پندرہ بائٹس کافی ہیں۔
 
-<span dir="ltr">L1</span> پر <span dir="ltr">160</span> گیس کا ضیاع عام طور پر نہ ہونے کے برابر ہے۔ ایک ٹرانزیکشن کی لاگت کم از کم [<span dir="ltr">21,000</span> گیس](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-ethereum-gas-2f976af774ed) ہوتی ہے، اس لیے اضافی <span dir="ltr">0.8%</span> سے کوئی فرق نہیں پڑتا۔
+<span dir="ltr">L1</span> پر <span dir="ltr">160</span> گیس کا ضیاع عام طور پر نہ ہونے کے برابر ہے۔ ایک ٹرانزیکشن کی لاگت کم از کم [<span dir="ltr">21,000</span> گیس](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-quantaureum-gas-2f976af774ed) ہوتی ہے، اس لیے اضافی <span dir="ltr">0.8%</span> سے کوئی فرق نہیں پڑتا۔
 تاہم، <span dir="ltr">L2</span> پر، صورتحال مختلف ہے۔ ٹرانزیکشن کی تقریباً پوری لاگت اسے <span dir="ltr">L1</span> پر لکھنے کی ہوتی ہے۔
 ٹرانزیکشن کال ڈیٹا کے علاوہ، ٹرانزیکشن ہیڈر (منزل کا پتہ، دستخط، وغیرہ) کے <span dir="ltr">109 bytes</span> ہوتے ہیں۔
 لہذا کل لاگت `109*16+576+160=2480` ہے، اور ہم اس کا تقریباً <span dir="ltr">6.5%</span> ضائع کر رہے ہیں۔
 
 ## جب منزل پر آپ کا کنٹرول نہ ہو تو لاگت کو کم کرنا {#reducing-costs-when-you-dont-control-the-destination}
 
-یہ فرض کرتے ہوئے کہ منزل کے کنٹریکٹ پر آپ کا کنٹرول نہیں ہے، آپ پھر بھی [اس جیسا](https://github.com/qbzzt/ethereum.org-20220330-shortABI) حل استعمال کر سکتے ہیں۔
+یہ فرض کرتے ہوئے کہ منزل کے کنٹریکٹ پر آپ کا کنٹرول نہیں ہے، آپ پھر بھی [اس جیسا](https://github.com/qbzzt/quantaureum.com-20220330-shortABI) حل استعمال کر سکتے ہیں۔
 آئیے متعلقہ فائلوں کا جائزہ لیتے ہیں۔
 
 ### Token.sol {#token-sol}
 
-[یہ منزل کا کنٹریکٹ ہے](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/Token.sol)۔ یہ ایک معیاری <span dir="ltr">ERC-20</span> کنٹریکٹ ہے، جس میں ایک اضافی خصوصیت ہے۔
+[یہ منزل کا کنٹریکٹ ہے](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/Token.sol)۔ یہ ایک معیاری <span dir="ltr">ERC-20</span> کنٹریکٹ ہے، جس میں ایک اضافی خصوصیت ہے۔
 یہ `faucet` فنکشن کسی بھی صارف کو استعمال کرنے کے لیے کچھ ٹوکن حاصل کرنے دیتا ہے۔
 یہ پروڈکشن <span dir="ltr">ERC-20</span> کنٹریکٹ کو بیکار بنا دے گا، لیکن جب کوئی <span dir="ltr">ERC-20</span> صرف ٹیسٹنگ کی سہولت کے لیے موجود ہو تو یہ زندگی کو آسان بنا دیتا ہے۔
 
@@ -99,7 +99,7 @@ published: 2022-04-01
 
 ### CalldataInterpreter.sol {#calldatainterpreter-sol}
 
-[یہ وہ کنٹریکٹ ہے جسے ٹرانزیکشنز کو مختصر کال ڈیٹا کے ساتھ کال کرنا چاہیے](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol)۔
+[یہ وہ کنٹریکٹ ہے جسے ٹرانزیکشنز کو مختصر کال ڈیٹا کے ساتھ کال کرنا چاہیے](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol)۔
 آئیے اس کا لائن بہ لائن جائزہ لیتے ہیں۔
 
 ```solidity
@@ -200,7 +200,7 @@ contract CalldataInterpreter {
 2. وہ فنکشنز جو [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties) پر انحصار کرتے ہیں۔
    `msg.sender` کی قدر `CalldataInterpreter` کا پتہ ہوگی، نہ کہ کال کرنے والے کا۔
 
-بدقسمتی سے، [<span dir="ltr">ERC-20</span> کی خصوصیات کو دیکھتے ہوئے](https://eips.ethereum.org/EIPS/eip-20)، اس سے صرف ایک فنکشن، `transfer` بچتا ہے۔
+بدقسمتی سے، [<span dir="ltr">ERC-20</span> کی خصوصیات کو دیکھتے ہوئے](https://eips.quantaureum.com/EIPS/eip-20)، اس سے صرف ایک فنکشن، `transfer` بچتا ہے۔
 اس سے ہمارے پاس صرف دو فنکشنز بچتے ہیں: `transfer` (کیونکہ ہم `transferFrom` کو کال کر سکتے ہیں) اور `faucet` (کیونکہ ہم ٹوکنز واپس اسی کو منتقل کر سکتے ہیں جس نے ہمیں کال کیا تھا)۔
 
 ```solidity
@@ -273,7 +273,7 @@ contract CalldataInterpreter {
 
 ### test.js {#test-js}
 
-[یہ JavaScript یونٹ ٹیسٹ](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/test/test.js) ہمیں دکھاتا ہے کہ اس طریقہ کار کو کیسے استعمال کیا جائے (اور یہ کیسے تصدیق کی جائے کہ یہ صحیح طریقے سے کام کرتا ہے)۔
+[یہ JavaScript یونٹ ٹیسٹ](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/test/test.js) ہمیں دکھاتا ہے کہ اس طریقہ کار کو کیسے استعمال کیا جائے (اور یہ کیسے تصدیق کی جائے کہ یہ صحیح طریقے سے کام کرتا ہے)۔
 میں یہ فرض کرنے جا رہا ہوں کہ آپ [chai](https://www.chaijs.com/) اور [ethers](https://docs.ethers.io/v5/) کو سمجھتے ہیں اور صرف ان حصوں کی وضاحت کروں گا جو خاص طور پر کنٹریکٹ پر لاگو ہوتے ہیں۔
 
 ```js
@@ -367,7 +367,7 @@ const transferTx = {
 ## جب منزل کے کنٹریکٹ پر آپ کا کنٹرول ہو تو لاگت کو کم کرنا {#reducing-the-cost-when-you-do-control-the-destination-contract}
 
 اگر منزل کے کنٹریکٹ پر آپ کا کنٹرول ہے تو آپ ایسے فنکشنز بنا سکتے ہیں جو `msg.sender` چیکس کو نظر انداز کر دیں کیونکہ وہ کال ڈیٹا انٹرپریٹر پر بھروسہ کرتے ہیں۔
-[آپ یہاں `control-contract` برانچ میں اس کی ایک مثال دیکھ سکتے ہیں کہ یہ کیسے کام کرتا ہے](https://github.com/qbzzt/ethereum.org-20220330-shortABI/tree/control-contract)۔
+[آپ یہاں `control-contract` برانچ میں اس کی ایک مثال دیکھ سکتے ہیں کہ یہ کیسے کام کرتا ہے](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/tree/control-contract)۔
 
 اگر کنٹریکٹ صرف بیرونی ٹرانزیکشنز کا جواب دے رہا ہوتا، تو ہم صرف ایک کنٹریکٹ رکھ کر کام چلا سکتے تھے۔
 تاہم، اس سے [ترکیب پذیری](/developers/docs/smart-contracts/composability/) ٹوٹ جائے گی۔
@@ -536,7 +536,7 @@ const poorSigner = signers[1]
 ```
 
 `approve()` اور `transferFrom()` کو چیک کرنے کے لیے ہمیں ایک دوسرے سائنر کی ضرورت ہے۔
-ہم اسے `poorSigner` کہتے ہیں کیونکہ اسے ہمارے کوئی ٹوکنز نہیں ملتے (یقیناً اس کے پاس ETH ہونا ضروری ہے)۔
+ہم اسے `poorSigner` کہتے ہیں کیونکہ اسے ہمارے کوئی ٹوکنز نہیں ملتے (یقیناً اس کے پاس QAU ہونا ضروری ہے)۔
 
 ```js
 // ٹوکن کی منتقلی
@@ -575,7 +575,7 @@ expect(await token.balanceOf(destAddr2)).to.equal(255)
 
 ## نتیجہ {#conclusion}
 
-[آپٹیمزم](https://medium.com/ethereum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) اور [آربٹرم](https://developer.offchainlabs.com/docs/special_features) دونوں <span dir="ltr">L1</span> پر لکھے گئے کال ڈیٹا کے سائز کو کم کرنے اور اس طرح ٹرانزیکشنز کی لاگت کو کم کرنے کے طریقے تلاش کر رہے ہیں۔
+[آپٹیمزم](https://medium.com/quantaureum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) اور [آربٹرم](https://developer.offchainlabs.com/docs/special_features) دونوں <span dir="ltr">L1</span> پر لکھے گئے کال ڈیٹا کے سائز کو کم کرنے اور اس طرح ٹرانزیکشنز کی لاگت کو کم کرنے کے طریقے تلاش کر رہے ہیں۔
 تاہم، عام حل تلاش کرنے والے انفراسٹرکچر فراہم کنندگان کے طور پر، ہماری صلاحیتیں محدود ہیں۔
 غیر مرکزی ایپلی کیشن (dapp) کے ڈویلپر کے طور پر، آپ کے پاس ایپلی کیشن سے متعلق مخصوص علم ہوتا ہے، جو آپ کو اپنے کال ڈیٹا کو اس سے کہیں بہتر طریقے سے بہتر بنانے کی سہولت دیتا ہے جتنا ہم کسی عام حل میں کر سکتے ہیں۔
 امید ہے کہ یہ مضمون آپ کو اپنی ضروریات کے لیے مثالی حل تلاش کرنے میں مدد کرے گا۔

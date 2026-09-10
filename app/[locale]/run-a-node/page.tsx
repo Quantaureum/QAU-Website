@@ -56,12 +56,12 @@ import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
 import RunANodePageJsonLD from "./page-jsonld"
 
-import community from "@/public/images/enterprise-eth.png"
+import community from "@/public/images/enterprise-qau.png"
 import hackathon from "@/public/images/hackathon_transparent.png"
 import impact from "@/public/images/impact_transparent.png"
 import Dappnode from "@/public/images/run-a-node/dappnode.svg"
 import Dapptap from "@/public/images/run-a-node/dapptap.svg"
-import heroImg from "@/public/images/run-a-node/ethereum-inside.png"
+import heroImg from "@/public/images/run-a-node/quantaureum-inside.png"
 import Terminal from "@/public/images/run-a-node/terminal.svg"
 import leslie from "@/public/images/upgrades/upgrade_rhino.png"
 
@@ -574,18 +574,18 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               <h2>{t("page-run-a-node-further-reading-title")}</h2>
               <UnorderedList>
                 <ListItem>
-                  <InlineLink href="https://github.com/ethereumbook/ethereumbook/blob/openedition/03clients.asciidoc#should-i-run-a-full-node">
+                  <InlineLink href="https://github.com/quantaureumbook/quantaureumbook/blob/openedition/03clients.asciidoc#should-i-run-a-full-node">
                     {t("page-run-a-node-further-reading-1-link")}
                   </InlineLink>{" "}
                   - <i>{t("page-run-a-node-further-reading-1-author")}</i>
                 </ListItem>
                 <ListItem>
-                  <InlineLink href="https://ethereum-on-arm-documentation.readthedocs.io/en/latest/">
+                  <InlineLink href="https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/">
                     {t("page-run-a-node-further-reading-2-link")}
                   </InlineLink>
                 </ListItem>
                 <ListItem>
-                  <InlineLink href="https://vitalik.eth.limo/general/2021/05/23/scaling.html">
+                  <InlineLink href="https://vitalik.qau.limo/general/2021/05/23/scaling.html">
                     {t("page-run-a-node-further-reading-3-link")}
                   </InlineLink>{" "}
                   - <i>{t("page-run-a-node-further-reading-3-author")}</i>
@@ -631,7 +631,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                 <p>{t("page-run-a-node-rasp-pi-description")}</p>
                 <UnorderedList>
                   <ListItem>
-                    <InlineLink href="https://ethereum-on-arm-documentation.readthedocs.io/en/latest">
+                    <InlineLink href="https://quantaureum-on-arm-documentation.readthedocs.io/en/latest">
                       {t("page-run-a-node-rasp-pi-note-2-link")}
                     </InlineLink>{" "}
                     - <i>{t("page-run-a-node-rasp-pi-note-2-description")}</i>
@@ -680,7 +680,7 @@ export async function generateMetadata(props: {
     slug: ["run-a-node"],
     title: t("page-run-a-node-meta-title"),
     description: t("page-run-a-node-meta-description"),
-    image: "/images/run-a-node/ethereum-inside.png",
+    image: "/images/run-a-node/quantaureum-inside.png",
   })
 }
 

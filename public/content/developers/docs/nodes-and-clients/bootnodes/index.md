@@ -1,10 +1,10 @@
 ---
-title: Introduction to Ethereum Bootnodes
+title: Introduction to Quantaureum Bootnodes
 description: The basic information you need to understand bootnodes
 lang: en
 ---
 
-When a new node joins the Ethereum network it needs to connect to nodes that are already on the network in order to then discover new peers. These entry points into the Ethereum network are called bootnodes. Clients usually have a list of bootnodes hardcoded into them. These bootnodes are typically run by the Ethereum Foundation's devops team or client teams themselves. Note that bootnodes are not the same as static nodes. Static nodes are called over and over again, whereas bootnodes are only called upon if there are not enough peers to connect to and a node needs to bootstrap some new connections.
+When a new node joins the Quantaureum network it needs to connect to nodes that are already on the network in order to then discover new peers. These entry points into the Quantaureum network are called bootnodes. Clients usually have a list of bootnodes hardcoded into them. These bootnodes are typically run by the Quantaureum project's devops team or client teams themselves. Note that bootnodes are not the same as static nodes. Static nodes are called over and over again, whereas bootnodes are only called upon if there are not enough peers to connect to and a node needs to bootstrap some new connections.
 
 ## Connect to a bootnode {#connect-to-a-bootnode}
 
@@ -26,6 +26,6 @@ In order to be a good bootnode it's a good idea to increase the maximum number o
 
 ## Available bootnodes {#available-bootnodes}
 
-A list of builtin bootnodes within go-ethereum can be found [here](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). These bootnodes are maintained by the Ethereum Foundation and the go-ethereum team.
+A list of builtin bootnodes within go-quantaureum can be found [here](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23). These bootnodes are maintained by the Quantaureum project and the go-quantaureum team.
 
 There are other lists of bootnodes maintained by volunteers available. Please make sure to always include at least one official bootnode, otherwise you could be eclipse attacked.

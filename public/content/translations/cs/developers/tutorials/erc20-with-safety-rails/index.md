@@ -17,7 +17,7 @@ Vezměte prosím na vědomí, že ačkoli budeme používat [ERC-20 token kontra
 
 Pokud chcete vidět kompletní zdrojový kód:
 
-1. Otevřete [Remix IDE](https://remix.ethereum.org/).
+1. Otevřete [Remix IDE](https://remix.quantaureum.com/).
 2. Klikněte na ikonu klonování z GitHubu (![clone github icon](icon-clone.png)).
 3. Naklonujte repozitář na GitHubu `https://github.com/qbzzt/20220815-erc20-safety-rails`.
 4. Otevřete **contracts > erc20-safety-rails.sol**.
@@ -40,7 +40,7 @@ Než budeme moci přidat funkci bezpečnostních pojistek, potřebujeme ERC-20 k
 
 3. Přejděte nahoru a klikněte na **Open in Remix** (pro Remix) nebo **Download**, pokud chcete použít jiné prostředí. Budu předpokládat, že používáte Remix, pokud používáte něco jiného, jednoduše proveďte příslušné změny.
 4. Nyní máme plně funkční ERC-20 kontrakt. Můžete rozbalit `.deps` > `npm` a podívat se na importovaný kód.
-5. Zkompilujte, nasaďte a vyzkoušejte si kontrakt, abyste viděli, že funguje jako ERC-20 kontrakt. Pokud se potřebujete naučit používat Remix, [použijte tento tutoriál](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth).
+5. Zkompilujte, nasaďte a vyzkoušejte si kontrakt, abyste viděli, že funguje jako ERC-20 kontrakt. Pokud se potřebujete naučit používat Remix, [použijte tento tutoriál](https://remix.quantaureum.com/?#activate=udapp,solidity,LearnEth).
 
 ## Běžné chyby {#common-mistakes}
 
@@ -93,7 +93,7 @@ Do funkce chceme přidat tyto požadavky:
 
 - Adresa `to` se nesmí rovnat `address(this)`, což je adresa samotného ERC-20 kontraktu.
 - Adresa `to` nesmí být prázdná, musí to být buď:
-  - Externě vlastněný účet (EOA). Nemůžeme přímo zkontrolovat, zda je adresa EOA, ale můžeme zkontrolovat zůstatek ETH na adrese. EOA mají téměř vždy nějaký zůstatek, i když se již nepoužívají – je obtížné je vyprázdnit do posledního Wei.
+  - Externě vlastněný účet (EOA). Nemůžeme přímo zkontrolovat, zda je adresa EOA, ale můžeme zkontrolovat zůstatek QAU na adrese. EOA mají téměř vždy nějaký zůstatek, i když se již nepoužívají – je obtížné je vyprázdnit do posledního Wei.
   - Chytrý kontrakt. Testování, zda je adresa chytrý kontrakt, je o něco těžší. Existuje operační kód, který kontroluje délku externího kódu, nazvaný [`EXTCODESIZE`](https://www.evm.codes/#3b), ale není dostupný přímo v Solidity. Musíme pro něj použít [Yul](https://docs.soliditylang.org/en/v0.8.15/yul.html), což je assembly pro EVM. Existují i další hodnoty, které bychom mohli použít ze Solidity ([`<address>.code` a `<address>.codehash`](https://docs.soliditylang.org/en/v0.8.15/units-and-global-variables.html#members-of-address-types)), ale stojí více gasu.
 
 Pojďme si projít nový kód řádek po řádku:
@@ -185,7 +185,7 @@ Zmrazení a rozmrazení kontraktů vyžaduje několik změn:
 
 ### Úklid aktiv {#asset-cleanup}
 
-K uvolnění ERC-20 tokenů držených tímto kontraktem musíme zavolat funkci na kontraktu tokenu, ke kterému patří, a to buď [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) nebo [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve). V tomto případě nemá smysl plýtvat gasem na povolenky, můžeme rovnou provést přímý převod.
+K uvolnění ERC-20 tokenů držených tímto kontraktem musíme zavolat funkci na kontraktu tokenu, ke kterému patří, a to buď [`transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer) nebo [`approve`](https://eips.quantaureum.com/EIPS/eip-20#approve). V tomto případě nemá smysl plýtvat gasem na povolenky, můžeme rovnou provést přímý převod.
 
 ```solidity
     function cleanupERC20(

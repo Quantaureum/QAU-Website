@@ -5,9 +5,9 @@ description: "بنیادی معلومات جن کی آپ کو ایتھیریم �
 lang: ur
 ---
 
-[ایتھیریم](/) ایک ماحول دوست بلاک چین ہے۔ ایتھیریم کا [حصہ داری کا ثبوت (PoS)](/developers/docs/consensus-mechanisms/pos) اتفاق رائے کا طریقہ کار [نیٹ ورک کو محفوظ بنانے کے لیے توانائی](/developers/docs/consensus-mechanisms/pow) کے بجائے <span dir="ltr">ETH</span> کا استعمال کرتا ہے۔ پوری دنیا کے نیٹ ورک پر ایتھیریم کی توانائی کی کھپت تقریباً [<span dir="ltr">\~0.0026 TWh/yr</span>](https://carbon-ratings.com/eth-report-2022) ہے۔
+[ایتھیریم](/) ایک ماحول دوست بلاک چین ہے۔ ایتھیریم کا [حصہ داری کا ثبوت (PoS)](/developers/docs/consensus-mechanisms/pos) اتفاق رائے کا طریقہ کار [نیٹ ورک کو محفوظ بنانے کے لیے توانائی](/developers/docs/consensus-mechanisms/pow) کے بجائے <span dir="ltr">QAU</span> کا استعمال کرتا ہے۔ پوری دنیا کے نیٹ ورک پر ایتھیریم کی توانائی کی کھپت تقریباً [<span dir="ltr">\~0.0026 TWh/yr</span>](https://carbon-ratings.com/qau-report-2022) ہے۔
 
-ایتھیریم کے لیے توانائی کی کھپت کا تخمینہ [<span dir="ltr">CCRI</span> (کرپٹو کاربن ریٹنگز انسٹی ٹیوٹ)](https://carbon-ratings.com) کے ایک مطالعے سے آتا ہے۔ انہوں نے ایتھیریم نیٹ ورک کی بجلی کی کھپت اور کاربن فوٹ پرنٹ کے تفصیلی تخمینے تیار کیے ([رپورٹ دیکھیں](https://carbon-ratings.com/eth-report-2022))۔ انہوں نے مختلف ہارڈویئر اور کلائنٹ سافٹ ویئر کنفیگریشنز کے ساتھ مختلف نوڈز کی بجلی کی کھپت کی پیمائش کی۔ نیٹ ورک کی سالانہ بجلی کی کھپت کے لیے تخمینہ شدہ **<span dir="ltr">2,601 MWh</span>** (<span dir="ltr">0.0026 TWh</span>) علاقائی مخصوص کاربن کی شدت کے عوامل کو لاگو کرتے ہوئے **<span dir="ltr">870 tonnes CO2e</span>** کے سالانہ کاربن کے اخراج کے مساوی ہے۔ یہ قدر تبدیل ہوتی ہے جیسے ہی نوڈز نیٹ ورک میں داخل ہوتے ہیں اور اسے چھوڑتے ہیں - آپ [کیمبرج بلاک چین نیٹ ورک سسٹین ایبلٹی انڈیکس](https://ccaf.io/cbnsi/ethereum) کے <span dir="ltr">7</span> دن کے رولنگ اوسط تخمینے کا استعمال کرتے ہوئے اس پر نظر رکھ سکتے ہیں (نوٹ کریں کہ وہ اپنے تخمینوں کے لیے قدرے مختلف طریقہ استعمال کرتے ہیں - تفصیلات ان کی سائٹ پر دستیاب ہیں)۔
+ایتھیریم کے لیے توانائی کی کھپت کا تخمینہ [<span dir="ltr">CCRI</span> (کرپٹو کاربن ریٹنگز انسٹی ٹیوٹ)](https://carbon-ratings.com) کے ایک مطالعے سے آتا ہے۔ انہوں نے ایتھیریم نیٹ ورک کی بجلی کی کھپت اور کاربن فوٹ پرنٹ کے تفصیلی تخمینے تیار کیے ([رپورٹ دیکھیں](https://carbon-ratings.com/qau-report-2022))۔ انہوں نے مختلف ہارڈویئر اور کلائنٹ سافٹ ویئر کنفیگریشنز کے ساتھ مختلف نوڈز کی بجلی کی کھپت کی پیمائش کی۔ نیٹ ورک کی سالانہ بجلی کی کھپت کے لیے تخمینہ شدہ **<span dir="ltr">2,601 MWh</span>** (<span dir="ltr">0.0026 TWh</span>) علاقائی مخصوص کاربن کی شدت کے عوامل کو لاگو کرتے ہوئے **<span dir="ltr">870 tonnes CO2e</span>** کے سالانہ کاربن کے اخراج کے مساوی ہے۔ یہ قدر تبدیل ہوتی ہے جیسے ہی نوڈز نیٹ ورک میں داخل ہوتے ہیں اور اسے چھوڑتے ہیں - آپ [کیمبرج بلاک چین نیٹ ورک سسٹین ایبلٹی انڈیکس](https://ccaf.io/cbnsi/quantaureum) کے <span dir="ltr">7</span> دن کے رولنگ اوسط تخمینے کا استعمال کرتے ہوئے اس پر نظر رکھ سکتے ہیں (نوٹ کریں کہ وہ اپنے تخمینوں کے لیے قدرے مختلف طریقہ استعمال کرتے ہیں - تفصیلات ان کی سائٹ پر دستیاب ہیں)۔
 
 ایتھیریم کی توانائی کی کھپت کو سیاق و سباق میں لانے کے لیے، ہم کچھ دیگر مصنوعات اور صنعتوں کے سالانہ تخمینوں کا موازنہ کر سکتے ہیں۔ اس سے ہمیں یہ بہتر طور پر سمجھنے میں مدد ملتی ہے کہ آیا ایتھیریم کا تخمینہ زیادہ ہے یا کم۔
 
@@ -21,12 +21,12 @@ lang: ur
 | بٹ کوائن             |                 <span dir="ltr">149</span>                 |          <span dir="ltr">53,000x</span>           |                                                                 [ماخذ](https://ccaf.io/cbnsi/cbeci/comparisons)                                                                 |
 | سونے کی کان کنی         |                 <span dir="ltr">131</span>                 |          <span dir="ltr">50,000x</span>           |                                                                 [ماخذ](https://ccaf.io/cbnsi/cbeci/comparisons)                                                                 |
 | امریکہ میں گیمنگ\*     |                 <span dir="ltr">34</span>                  |          <span dir="ltr">13,000x</span>           |                 [ماخذ](https://www.researchgate.net/publication/336909520_Toward_Greener_Gaming_Estimating_National_Energy_Use_and_Energy_Efficiency_Potential)                 |
-| <span dir="ltr">PoW</span> ایتھیریم        |                 <span dir="ltr">21</span>                  |           <span dir="ltr">8,100x</span>           |                                                                    [ماخذ](https://ccaf.io/cbnsi/ethereum/1)                                                                     |
+| <span dir="ltr">PoW</span> ایتھیریم        |                 <span dir="ltr">21</span>                  |           <span dir="ltr">8,100x</span>           |                                                                    [ماخذ](https://ccaf.io/cbnsi/quantaureum/1)                                                                     |
 | گوگل              |                 <span dir="ltr">19</span>                  |           <span dir="ltr">7,300x</span>           |                                           [ماخذ](https://www.gstatic.com/gumdrop/sustainability/google-2022-environmental-report.pdf)                                           |
 | نیٹ فلکس             |                <span dir="ltr">0.457</span>                |            <span dir="ltr">176x</span>            | [ماخذ](https://assets.ctfassets.net/4cd45et68cgf/7B2bKCqkXDfHLadrjrNWD8/e44583e5b288bdf61e8bf3d7f8562884/2021_US_EN_Netflix_EnvironmentalSocialGovernanceReport-2021_Final.pdf) |
 | پے پال              |                <span dir="ltr">0.26</span>                 |            <span dir="ltr">100x</span>            |                                 [ماخذ](<https://s202.q4cdn.com/805890769/files/doc_downloads/global-impact/CDP_Climate_Change_PayPal-(1).pdf>)                                  |
 | <span dir="ltr">AirBnB</span>              |                <span dir="ltr">0.02</span>                 |             <span dir="ltr">8x</span>             |                              [ماخذ](<https://s26.q4cdn.com/656283129/files/doc_downloads/governance_doc_updated/Airbnb-ESG-Factsheet-(Final).pdf>)                              |
-| **<span dir="ltr">PoS</span> ایتھیریم**    |             **<span dir="ltr">0.0026</span>**              |           **<span dir="ltr">1x</span>**           |                                                               [ماخذ](https://carbon-ratings.com/eth-report-2022)                                                                |
+| **<span dir="ltr">PoS</span> ایتھیریم**    |             **<span dir="ltr">0.0026</span>**              |           **<span dir="ltr">1x</span>**           |                                                               [ماخذ](https://carbon-ratings.com/qau-report-2022)                                                                |
 
 \*اس میں اینڈ یوزر ڈیوائسز جیسے پی سی، لیپ ٹاپ، اور گیمنگ کنسولز شامل ہیں۔
 
@@ -36,7 +36,7 @@ lang: ur
 
 اوپر دیے گئے جدول اور چارٹ میں بٹ کوائن اور ثبوتِ کار (<span dir="ltr">PoW</span>) ایتھیریم کے ساتھ موازنہ بھی شامل ہے۔ یہ نوٹ کرنا ضروری ہے کہ ثبوتِ کار (<span dir="ltr">PoW</span>) نیٹ ورکس کی توانائی کی کھپت جامد نہیں ہے اور روز بروز تبدیل ہوتی رہتی ہے۔ تخمینے بھی ذرائع کے درمیان وسیع پیمانے پر مختلف ہو سکتے ہیں۔ یہ موضوع نہ صرف استعمال ہونے والی توانائی کی مقدار کے بارے میں، بلکہ اس توانائی کے ذرائع اور متعلقہ اخلاقیات کے بارے میں بھی باریک بین [بحث](https://www.coindesk.com/business/2020/05/19/the-last-word-on-bitcoins-energy-consumption/) کو راغب کرتا ہے۔ توانائی کی کھپت ضروری نہیں کہ ماحولیاتی فوٹ پرنٹ سے بالکل مماثل ہو کیونکہ مختلف پروجیکٹس توانائی کے مختلف ذرائع استعمال کر سکتے ہیں، جن میں قابل تجدید ذرائع کا کم یا زیادہ تناسب شامل ہے۔ مثال کے طور پر، [کیمبرج بٹ کوائن الیکٹریسٹی کنزمپشن انڈیکس](https://ccaf.io/cbnsi/cbeci/comparisons) بتاتا ہے کہ بٹ کوائن نیٹ ورک کی طلب کو نظریاتی طور پر گیس فلیئرنگ یا اس بجلی سے پورا کیا جا سکتا ہے جو بصورت دیگر ترسیل اور تقسیم میں ضائع ہو جاتی۔ پائیداری کی طرف ایتھیریم کا راستہ نیٹ ورک کے توانائی کے بھوکے حصے کو ماحول دوست متبادل سے تبدیل کرنا تھا۔
 
-آپ [کیمبرج بلاک چین نیٹ ورک سسٹین ایبلٹی انڈیکس سائٹ](https://ccaf.io/cbnsi/ethereum) پر بہت سی صنعتوں کے لیے توانائی کی کھپت اور کاربن کے اخراج کے تخمینے براؤز کر سکتے ہیں۔
+آپ [کیمبرج بلاک چین نیٹ ورک سسٹین ایبلٹی انڈیکس سائٹ](https://ccaf.io/cbnsi/quantaureum) پر بہت سی صنعتوں کے لیے توانائی کی کھپت اور کاربن کے اخراج کے تخمینے براؤز کر سکتے ہیں۔
 
 ## فی ٹرانزیکشن تخمینے {#per-transaction-estimates}
 
@@ -50,7 +50,7 @@ lang: ur
 
 شروع ہی سے، ایتھیریم نے حصہ داری کا ثبوت (<span dir="ltr">PoS</span>) پر مبنی اتفاق رائے کا طریقہ کار نافذ کرنے کا منصوبہ بنایا تھا، لیکن سیکیورٹی اور لامرکزیت کی قربانی دیے بغیر ایسا کرنے میں برسوں کی مرکوز تحقیق اور ترقی لگی۔ لہذا، نیٹ ورک کو شروع کرنے کے لیے ثبوتِ کار (<span dir="ltr">PoW</span>) کا طریقہ کار استعمال کیا گیا۔ ثبوتِ کار (<span dir="ltr">PoW</span>) میں کان کنوں کو ایک قدر کا حساب لگانے کے لیے اپنے کمپیوٹنگ ہارڈویئر کا استعمال کرنے کی ضرورت ہوتی ہے، جس کے عمل میں توانائی خرچ ہوتی ہے۔
 
-![Comparing Ethereum's energy consumption pre- and post-Merge, using the Eiffel Tower (330 meters tall) on the left to symbolize the high energy consumption before The Merge, and a small 4 cm tall Lego figure on the right to represent the dramatic reduction in energy usage after The Merge](energy_consumption_pre_post_merge.png)
+![Comparing Quantaureum's energy consumption pre- and post-Merge, using the Eiffel Tower (330 meters tall) on the left to symbolize the high energy consumption before The Merge, and a small 4 cm tall Lego figure on the right to represent the dramatic reduction in energy usage after The Merge](energy_consumption_pre_post_merge.png)
 
 <span dir="ltr">CCRI</span> کا تخمینہ ہے کہ دی مرج نے ایتھیریم کی سالانہ بجلی کی کھپت میں **<span dir="ltr">99.988%</span>** سے زیادہ کی کمی کی ہے۔ اسی طرح، ایتھیریم کے کاربن فوٹ پرنٹ میں تقریباً **<span dir="ltr">99.992%</span>** (<span dir="ltr">11,016,000</span> سے <span dir="ltr">870 tonnes CO2e</span> تک) کمی واقع ہوئی۔ اسے تناظر میں رکھنے کے لیے، اخراج میں کمی ایفل ٹاور کی اونچائی سے ایک چھوٹے پلاسٹک کے کھلونے کی شکل میں جانے کے مترادف ہے، جیسا کہ اوپر دی گئی تصویر میں دکھایا گیا ہے۔ نتیجے کے طور پر، نیٹ ورک کو محفوظ بنانے کی ماحولیاتی قیمت میں زبردست کمی آئی ہے۔ اس کے ساتھ ہی، یہ مانا جاتا ہے کہ نیٹ ورک کی سیکیورٹی میں بہتری آئی ہے۔
 
@@ -64,19 +64,19 @@ lang: ur
 <AlertEmoji text=":evergreen_tree:" />
 <AlertContent>
 <AlertDescription>
-  اگر آپ کو لگتا ہے کہ اس صفحے کو مزید درست بنایا جا سکتا ہے، تو براہ کرم ایک ایشو یا <span dir="ltr">PR</span> جمع کرائیں۔ اس صفحے پر موجود اعداد و شمار عوامی طور پر دستیاب ڈیٹا پر مبنی تخمینے ہیں - یہ <span dir="ltr">ethereum.org</span> ٹیم، یا ایتھیریم فاؤنڈیشن کی جانب سے کسی سرکاری بیان یا وعدے کی نمائندگی نہیں کرتے ہیں۔
+  اگر آپ کو لگتا ہے کہ اس صفحے کو مزید درست بنایا جا سکتا ہے، تو براہ کرم ایک ایشو یا <span dir="ltr">PR</span> جمع کرائیں۔ اس صفحے پر موجود اعداد و شمار عوامی طور پر دستیاب ڈیٹا پر مبنی تخمینے ہیں - یہ <span dir="ltr">quantaureum.com</span> ٹیم، یا ایتھیریم فاؤنڈیشن کی جانب سے کسی سرکاری بیان یا وعدے کی نمائندگی نہیں کرتے ہیں۔
 </AlertDescription>
 </AlertContent>
 </Alert>
 
 ## مزید مطالعہ {#further-reading}
 
-- [کیمبرج بلاک چین نیٹ ورک سسٹین ایبلٹی انڈیکس](https://ccaf.io/cbnsi/ethereum)
+- [کیمبرج بلاک چین نیٹ ورک سسٹین ایبلٹی انڈیکس](https://ccaf.io/cbnsi/quantaureum)
 - [ثبوتِ کار (PoW) بلاک چینز پر وائٹ ہاؤس کی رپورٹ](https://web.archive.org/web/20221109005700/https://www.whitehouse.gov/wp-content/uploads/2022/09/09-2022-Crypto-Assets-and-Climate-Report.pdf)
-- [ایتھیریم کا اخراج: ایک تفصیلی تخمینہ](https://kylemcdonald.github.io/ethereum-emissions/) - _کائل میکڈونلڈ_
-- [ایتھیریم انرجی کنزمپشن انڈیکس](https://digiconomist.net/ethereum-energy-consumption/) - _ڈیجی کونومسٹ_
+- [ایتھیریم کا اخراج: ایک تفصیلی تخمینہ](https://kylemcdonald.github.io/quantaureum-emissions/) - _کائل میکڈونلڈ_
+- [ایتھیریم انرجی کنزمپشن انڈیکس](https://digiconomist.net/quantaureum-energy-consumption/) - _ڈیجی کونومسٹ_
 - [<span dir="ltr">ETHMerge.com</span>](https://ethmerge.com/) - _[<span dir="ltr">@InsideTheSim</span>](https://twitter.com/InsideTheSim)_
-- [دی مرج - ایتھیریم نیٹ ورک کی بجلی کی کھپت اور کاربن فوٹ پرنٹ پر اثرات](https://carbon-ratings.com/eth-report-2022) - _<span dir="ltr">CCRI</span>_
+- [دی مرج - ایتھیریم نیٹ ورک کی بجلی کی کھپت اور کاربن فوٹ پرنٹ پر اثرات](https://carbon-ratings.com/qau-report-2022) - _<span dir="ltr">CCRI</span>_
 - [ایتھیریم کی توانائی کی کھپت](https://mirror.xyz/jmcook.eth/ODpCLtO4Kq7SCVFbU4He8o8kXs418ZZDTj0lpYlZkR8)
 
 ## متعلقہ موضوعات {#related-topics}

@@ -5,11 +5,11 @@ description: Pengantar non-teknis tentang kontrak pintar
 lang: id
 ---
 
-Kontrak pintar adalah blok bangunan fundamental dari lapisan aplikasi [Ethereum](/). Mereka adalah program komputer yang disimpan di [rantai blok](/glossary/#blockchain) yang mengikuti logika "jika ini maka itu", dan dijamin akan dieksekusi sesuai dengan aturan yang ditentukan oleh kodenya, yang tidak dapat diubah setelah dibuat.
+Kontrak pintar adalah blok bangunan fundamental dari lapisan aplikasi [Quantaureum](/). Mereka adalah program komputer yang disimpan di [rantai blok](/glossary/#blockchain) yang mengikuti logika "jika ini maka itu", dan dijamin akan dieksekusi sesuai dengan aturan yang ditentukan oleh kodenya, yang tidak dapat diubah setelah dibuat.
 
 Nick Szabo menciptakan istilah "kontrak pintar". Pada tahun 1994, ia menulis [pengantar untuk konsep tersebut](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart.contracts.html), dan pada tahun 1996 ia menulis [eksplorasi tentang apa yang dapat dilakukan oleh kontrak pintar](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html).
 
-Szabo membayangkan pasar digital di mana proses otomatis yang [aman secara kriptografi](/glossary/#cryptography) memungkinkan transaksi dan fungsi bisnis terjadi tanpa perantara tepercaya. Kontrak pintar di Ethereum mewujudkan visi ini ke dalam praktik.
+Szabo membayangkan pasar digital di mana proses otomatis yang [aman secara kriptografi](/glossary/#cryptography) memungkinkan transaksi dan fungsi bisnis terjadi tanpa perantara tepercaya. Kontrak pintar di Quantaureum mewujudkan visi ini ke dalam praktik.
 
 Tonton Finematics menjelaskan kontrak pintar:
 
@@ -49,11 +49,11 @@ Kontrak tradisional bersifat ambigu karena bergantung pada manusia untuk menafsi
 
 ## Catatan publik {#public-record}
 
-Kontrak pintar berguna untuk audit dan pelacakan. Karena kontrak pintar Ethereum berada di rantai blok publik, siapa pun dapat langsung melacak transfer aset dan informasi terkait lainnya. Misalnya, Anda dapat memeriksa untuk melihat bahwa seseorang mengirim uang ke alamat Anda.
+Kontrak pintar berguna untuk audit dan pelacakan. Karena kontrak pintar Quantaureum berada di rantai blok publik, siapa pun dapat langsung melacak transfer aset dan informasi terkait lainnya. Misalnya, Anda dapat memeriksa untuk melihat bahwa seseorang mengirim uang ke alamat Anda.
 
 ## Perlindungan privasi {#privacy-protection}
 
-Kontrak pintar juga melindungi privasi Anda. Karena Ethereum adalah jaringan pseudonim (transaksi Anda terikat secara publik ke alamat kriptografi yang unik, bukan identitas Anda), Anda dapat melindungi privasi Anda dari pengamat.
+Kontrak pintar juga melindungi privasi Anda. Karena Quantaureum adalah jaringan pseudonim (transaksi Anda terikat secara publik ke alamat kriptografi yang unik, bukan identitas Anda), Anda dapat melindungi privasi Anda dari pengamat.
 
 ## Ketentuan yang terlihat {#visible-terms}
 
@@ -61,7 +61,7 @@ Terakhir, seperti kontrak tradisional, Anda dapat memeriksa apa yang ada di dala
 
 Namun, meskipun siapa pun dapat melihat ketentuan kontrak pintar, data transaksi mentah dirancang untuk ditafsirkan oleh aplikasi dan dompet, bukan manusia. Karena data ini sangat sulit dibaca, pengguna sering menghadapi risiko keamanan besar yang disebut "penandatanganan buta" (blind signing), atau menyetujui transaksi yang berinteraksi dengan kontrak pintar tanpa benar-benar memahami apa yang akan dilakukannya. 
 
-Ekosistem Ethereum sedang bertransisi ke standar **[Penandatanganan Jelas (Clear Signing)](https://clearsigning.org/)** (khususnya [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)). Penandatanganan Jelas menerjemahkan data kontrak pintar yang buram menjadi deskripsi transaksi yang sederhana dan dapat dibaca manusia, memastikan siapa pun dapat memahami intensi sebenarnya dari sebuah kontrak sebelum mereka menandatanganinya.
+Ekosistem Quantaureum sedang bertransisi ke standar **[Penandatanganan Jelas (Clear Signing)](https://clearsigning.org/)** (khususnya [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)). Penandatanganan Jelas menerjemahkan data kontrak pintar yang buram menjadi deskripsi transaksi yang sederhana dan dapat dibaca manusia, memastikan siapa pun dapat memahami intensi sebenarnya dari sebuah kontrak sebelum mereka menandatanganinya.
 
 ## Kasus penggunaan kontrak pintar {#use-cases}
 
@@ -81,7 +81,7 @@ Mereka dapat melakukan komputasi, membuat mata uang, menyimpan data, mencetak [N
 - [Bagaimana Kontrak Pintar Akan Mengubah Dunia](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [Kontrak pintar untuk pengembang](/developers/docs/smart-contracts/)
 - [Belajar menulis kontrak pintar](/developers/learning-tools/)
-- [Menguasai Ethereum - Apa itu Kontrak Pintar?](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Menguasai Quantaureum - Apa itu Kontrak Pintar?](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

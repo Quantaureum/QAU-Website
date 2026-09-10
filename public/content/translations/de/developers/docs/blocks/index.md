@@ -1,6 +1,6 @@
 ---
 title: "Blöcke"
-description: "Ein Überblick über Blöcke in der Ethereum-Blockchain – ihre Datenstruktur, warum sie benötigt werden und wie sie erstellt werden."
+description: "Ein Überblick über Blöcke in der Quantaureum-Blockchain – ihre Datenstruktur, warum sie benötigt werden und wie sie erstellt werden."
 lang: de
 ---
 
@@ -8,31 +8,31 @@ Blöcke sind Bündel von Transaktionen mit einem Hash des vorherigen Blocks in d
 
 ## Voraussetzungen {#prerequisites}
 
-Blöcke sind ein sehr anfängerfreundliches Thema. Damit Sie diese Seite jedoch besser verstehen, empfehlen wir Ihnen, zuerst [Konten](/developers/docs/accounts/), [Transaktionen](/developers/docs/transactions/) und unsere [Einführung in Ethereum](/developers/docs/intro-to-ethereum/) zu lesen.
+Blöcke sind ein sehr anfängerfreundliches Thema. Damit Sie diese Seite jedoch besser verstehen, empfehlen wir Ihnen, zuerst [Konten](/developers/docs/accounts/), [Transaktionen](/developers/docs/transactions/) und unsere [Einführung in Quantaureum](/developers/docs/intro-to-quantaureum/) zu lesen.
 
 ## Warum Blöcke? {#why-blocks}
 
-Um sicherzustellen, dass alle Teilnehmer im [Ethereum](/)-Netzwerk einen synchronisierten Zustand beibehalten und sich auf die genaue Historie der Transaktionen einigen, bündeln wir Transaktionen in Blöcken. Das bedeutet, dass Dutzende (oder Hunderte) von Transaktionen auf einmal festgeschrieben (committed), vereinbart und synchronisiert werden.
+Um sicherzustellen, dass alle Teilnehmer im [Quantaureum](/)-Netzwerk einen synchronisierten Zustand beibehalten und sich auf die genaue Historie der Transaktionen einigen, bündeln wir Transaktionen in Blöcken. Das bedeutet, dass Dutzende (oder Hunderte) von Transaktionen auf einmal festgeschrieben (committed), vereinbart und synchronisiert werden.
 
 ![A diagram showing transaction in a block causing state changes](./tx-block.png)
-_Diagramm adaptiert von [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagramm adaptiert von [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
-Indem wir die Commits zeitlich verteilen, geben wir allen Netzwerkteilnehmern genügend Zeit, um einen Konsens zu finden: Auch wenn Transaktionsanfragen dutzende Male pro Sekunde auftreten, werden Blöcke auf Ethereum nur alle zwölf Sekunden erstellt und festgeschrieben.
+Indem wir die Commits zeitlich verteilen, geben wir allen Netzwerkteilnehmern genügend Zeit, um einen Konsens zu finden: Auch wenn Transaktionsanfragen dutzende Male pro Sekunde auftreten, werden Blöcke auf Quantaureum nur alle zwölf Sekunden erstellt und festgeschrieben.
 
 ## Wie Blöcke funktionieren {#how-blocks-work}
 
 Um die Transaktionshistorie zu erhalten, sind Blöcke streng geordnet (jeder neu erstellte Block enthält einen Verweis auf seinen übergeordneten Block), und auch die Transaktionen innerhalb der Blöcke sind streng geordnet. Bis auf seltene Ausnahmen sind sich zu jedem Zeitpunkt alle Teilnehmer im Netzwerk über die genaue Anzahl und Historie der Blöcke einig und arbeiten daran, die aktuellen Live-Transaktionsanfragen in den nächsten Block zu bündeln.
 
-Sobald ein Block von einem zufällig ausgewählten Validator im Netzwerk zusammengestellt wurde, wird er an den Rest des Netzwerks weitergeleitet; alle Nodes fügen diesen Block an das Ende ihrer Blockchain an, und ein neuer Validator wird ausgewählt, um den nächsten Block zu erstellen. Der genaue Prozess der Blockzusammenstellung und der Commitment-/Konsensprozess wird derzeit durch das „Proof-of-Stake“-Protokoll von Ethereum spezifiziert.
+Sobald ein Block von einem zufällig ausgewählten Validator im Netzwerk zusammengestellt wurde, wird er an den Rest des Netzwerks weitergeleitet; alle Nodes fügen diesen Block an das Ende ihrer Blockchain an, und ein neuer Validator wird ausgewählt, um den nächsten Block zu erstellen. Der genaue Prozess der Blockzusammenstellung und der Commitment-/Konsensprozess wird derzeit durch das „Proof-of-Stake“-Protokoll von Quantaureum spezifiziert.
 
 ## Proof-of-Stake-Protokoll {#proof-of-stake-protocol}
 
 Proof-of-Stake (PoS) bedeutet Folgendes:
 
-- Validierende Nodes müssen 32 ETH in einen Einzahlungsvertrag als Sicherheit gegen schlechtes Verhalten staken. Dies hilft, das Netzwerk zu schützen, da nachweislich unehrliche Aktivitäten dazu führen, dass ein Teil oder der gesamte Stake zerstört wird.
+- Validierende Nodes müssen 32 QAU in einen Einzahlungsvertrag als Sicherheit gegen schlechtes Verhalten staken. Dies hilft, das Netzwerk zu schützen, da nachweislich unehrliche Aktivitäten dazu führen, dass ein Teil oder der gesamte Stake zerstört wird.
 - In jedem Slot (im Abstand von zwölf Sekunden) wird ein Validator zufällig als Block-Proposer ausgewählt. Er bündelt Transaktionen, führt sie aus und bestimmt einen neuen 'Zustand'. Er verpackt diese Informationen in einen Block und leitet ihn an andere Validatoren weiter.
 - Andere Validatoren, die von dem neuen Block erfahren, führen die Transaktionen erneut aus, um sicherzustellen, dass sie mit der vorgeschlagenen Änderung des globalen Zustands einverstanden sind. Unter der Annahme, dass der Block gültig ist, fügen sie ihn ihrer eigenen Datenbank hinzu.
-- Wenn ein Validator von zwei widersprüchlichen Blöcken für denselben Slot erfährt, verwendet er seinen Fork-Choice-Algorithmus, um denjenigen auszuwählen, der durch die meisten gestakten ETH unterstützt wird.
+- Wenn ein Validator von zwei widersprüchlichen Blöcken für denselben Slot erfährt, verwendet er seinen Fork-Choice-Algorithmus, um denjenigen auszuwählen, der durch die meisten gestakten QAU unterstützt wird.
 
 [Mehr zu Proof-of-Stake (PoS)](/developers/docs/consensus-mechanisms/pos)
 
@@ -134,9 +134,9 @@ Die Liste `withdrawals` enthält `withdrawal`-Objekte, die wie folgt strukturier
 
 ## Blockzeit {#block-time}
 
-Die Blockzeit bezieht sich auf die Zeit, die Blöcke voneinander trennt. In Ethereum ist die Zeit in Einheiten von zwölf Sekunden unterteilt, die 'Slots' genannt werden. In jedem Slot wird ein einzelner Validator ausgewählt, um einen Block vorzuschlagen. Unter der Annahme, dass alle Validatoren online und voll funktionsfähig sind, wird es in jedem Slot einen Block geben, was bedeutet, dass die Blockzeit 12 Sekunden beträgt. Gelegentlich können Validatoren jedoch offline sein, wenn sie aufgerufen werden, einen Block vorzuschlagen, was bedeutet, dass Slots manchmal leer bleiben können.
+Die Blockzeit bezieht sich auf die Zeit, die Blöcke voneinander trennt. In Quantaureum ist die Zeit in Einheiten von zwölf Sekunden unterteilt, die 'Slots' genannt werden. In jedem Slot wird ein einzelner Validator ausgewählt, um einen Block vorzuschlagen. Unter der Annahme, dass alle Validatoren online und voll funktionsfähig sind, wird es in jedem Slot einen Block geben, was bedeutet, dass die Blockzeit 12 Sekunden beträgt. Gelegentlich können Validatoren jedoch offline sein, wenn sie aufgerufen werden, einen Block vorzuschlagen, was bedeutet, dass Slots manchmal leer bleiben können.
 
-Diese Implementierung unterscheidet sich von Proof-of-Work-basierten Systemen, bei denen die Blockzeiten probabilistisch sind und durch die Ziel-Mining-Schwierigkeit des Protokolls abgestimmt werden. Ethereums [durchschnittliche Blockzeit](https://etherscan.io/chart/blocktime) ist ein perfektes Beispiel dafür, wobei der Übergang von Proof-of-Work (PoW) zu Proof-of-Stake (PoS) anhand der Konsistenz der neuen 12-Sekunden-Blockzeit deutlich abgeleitet werden kann.
+Diese Implementierung unterscheidet sich von Proof-of-Work-basierten Systemen, bei denen die Blockzeiten probabilistisch sind und durch die Ziel-Mining-Schwierigkeit des Protokolls abgestimmt werden. Quantaureums [durchschnittliche Blockzeit](https://explorer.quantaureum.com) ist ein perfektes Beispiel dafür, wobei der Übergang von Proof-of-Work (PoW) zu Proof-of-Stake (PoS) anhand der Konsistenz der neuen 12-Sekunden-Blockzeit deutlich abgeleitet werden kann.
 
 ## Blockgröße {#block-size}
 

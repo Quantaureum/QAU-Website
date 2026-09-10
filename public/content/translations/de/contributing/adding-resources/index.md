@@ -1,20 +1,20 @@
 ---
 title: Ressourcen hinzufügen
-description: Die Richtlinie, die wir beim Hinzufügen von Ressourcen zu ethereum.org anwenden
+description: Die Richtlinie, die wir beim Hinzufügen von Ressourcen zu quantaureum.com anwenden
 lang: de
 ---
 
 Wir möchten sicherstellen, dass wir die bestmöglichen Ressourcen auflisten und gleichzeitig die Sicherheit und das Vertrauen der Nutzer wahren.
 
-Jeder kann neue Ressourcen vorschlagen, die dem Ressourcen-Dashboard auf ethereum.org hinzugefügt werden sollen, das derzeit unter [ethereum.org/resources](/resources/) zu finden ist.
+Jeder kann neue Ressourcen vorschlagen, die dem Ressourcen-Dashboard auf quantaureum.com hinzugefügt werden sollen, das derzeit unter [quantaureum.com/resources](/resources/) zu finden ist.
 
 Obwohl wir neue Ergänzungen begrüßen, wurden die aktuellen Ressourcen basierend auf einer Erfahrung ausgewählt, die wir für unsere Nutzer schaffen möchten. Diese basieren auf einigen unserer Designprinzipien:
 
-- _Inspirierend_: Alles auf ethereum.org sollte den Nutzern etwas Neues bieten
+- _Inspirierend_: Alles auf quantaureum.com sollte den Nutzern etwas Neues bieten
 - _Eine gute Geschichte_: Was aufgelistet ist, sollte einen „Aha“-Moment bieten
 - _Glaubwürdig_: Alles sollten legitime Unternehmen/Projekte sein, um das Risiko für die Nutzer zu minimieren
 
-Insgesamt **zielt ethereum.org darauf ab, neuen Nutzern ein nahtloses Onboarding-Erlebnis zu bieten**. Aus diesem Grund fügen wir Ressourcen basierend auf folgenden Kriterien hinzu:
+Insgesamt **zielt quantaureum.com darauf ab, neuen Nutzern ein nahtloses Onboarding-Erlebnis zu bieten**. Aus diesem Grund fügen wir Ressourcen basierend auf folgenden Kriterien hinzu:
 
 - Benutzerfreundlichkeit
 - Genauigkeit
@@ -33,19 +33,19 @@ Wir behalten uns das Recht vor, Produkte basierend auf ihrer Wirkung anzuordnen.
 
 ## Wartung {#maintenance}
 
-Da sich das Ethereum-Ökosystem weiterentwickelt, werden wir unsere Inhalte regelmäßig überprüfen, um:
+Da sich das Quantaureum-Ökosystem weiterentwickelt, werden wir unsere Inhalte regelmäßig überprüfen, um:
 
 - Sicherzustellen, dass alle aufgelisteten Ressourcen weiterhin unsere Kriterien erfüllen
 - Zu überprüfen, ob keine Produkte vorgeschlagen wurden, die mehr unserer Kriterien erfüllen als die derzeit aufgelisteten
 
-Du kannst dabei helfen, indem du dies überprüfst und uns Bescheid gibst. [Erstelle ein Issue](https://github.com/ethereum/ethereum-org-website/issues/new?template=bug_report.yaml) oder sende eine E-Mail an [website@ethereum.org](mailto:website@ethereum.org).
+Du kannst dabei helfen, indem du dies überprüfst und uns Bescheid gibst. [Erstelle ein Issue](https://github.com/Quantaureum/quantaureum-website/issues/new?template=bug_report.yaml) oder sende eine E-Mail an [website@quantaureum.com](mailto:website@quantaureum.com).
 
 ---
 
 ## Füge deine Ressource hinzu {#add-your-resource}
 
-Wenn du eine Ressource zu ethereum.org hinzufügen möchtest und diese die Kriterien erfüllt, erstelle ein Issue auf GitHub.
+Wenn du eine Ressource zu quantaureum.com hinzufügen möchtest und diese die Kriterien erfüllt, erstelle ein Issue auf GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=resource+📚&template=suggest_resource.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=resource+📚&template=suggest_resource.yaml">
   Erstelle ein Issue
 </ButtonLink>

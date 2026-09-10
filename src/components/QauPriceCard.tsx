@@ -1,0 +1,96 @@
+"use client"
+
+import { ArrowUpRight, Info } from "lucide-react"
+import { useLocale, useTranslations } from "next-intl"
+
+import Tooltip from "@/components/Tooltip"
+import InlineLink from "@/components/ui/Link"
+import { Skeleton } from "@/components/ui/skeleton"
+
+import { cn } from "@/lib/utils/cn"
+import { formatPriceUSD, numberToPercent } from "@/lib/utils/numbers"
+
+import { Flex } from "./ui/flex"
+
+import { useGasQauPrice } from "@/hooks/useGasQauPrice"
+
+const QauPriceCard = ({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) => {
+  const locale = useLocale()
+  const t = useTranslations("common")
+  const { qauPrice, qauPercentChange24h } = useGasQauPrice()
+
+  const isLoading = qauPrice === 0
+  const hasChange = typeof qauPercentChange24h === "number"
+  const isNegativeChange = hasChange && qauPercentChange24h < 0
+
+  const tooltipContent = (
+    <div>
+      {t("data-provided-by")}{" "}
+      <InlineLink href="https://www.coingecko.com/en/coins/quantaureum">
+        coingecko.com
+      </InlineLink>
+    </div>
+  )
+
+  return (
+    <Flex
+      className={cn(
+        "w-full max-w-[320px] flex-col items-center gap-2 rounded-base border bg-background px-8 py-5",
+        className
+      )}
+      {...props}
+    >
+      <h4 className="m-0 flex items-center text-sm leading-xs font-medium tracking-wider uppercase">
+        {t("qau-current-price")}&nbsp;
+        <Tooltip content={tooltipContent}>
+          <Info className="size-[0.875em] text-sm" />
+        </Tooltip>
+      </h4>
+
+      <div className="flex w-full items-center justify-center text-4xl leading-xs">
+        {isLoading ? (
+          <Skeleton className="h-[1lh] w-48" />
+        ) : (
+          formatPriceUSD(qauPrice, locale)
+        )}
+      </div>
+
+      {/* min-h-[33px] prevents jump when price loads */}
+      <Flex className="min-h-[33px] w-full flex-wrap items-center justify-center gap-x-2 gap-y-1">
+        <div className="flex h-7 items-center">
+          {isLoading ? (
+            <Skeleton className="h-full w-20" />
+          ) : (
+            hasChange && (
+              <span
+                className={cn(
+                  "flex items-center text-2xl leading-xs",
+                  isNegativeChange ? "text-error" : "text-success"
+                )}
+              >
+                {numberToPercent(qauPercentChange24h, locale, {
+                  minimumFractionDigits: 2,
+                  maximumFractionDigits: 2,
+                })}
+                <ArrowUpRight
+                  className={cn(
+                    "rtl:-scale-x-100",
+                    isNegativeChange && "-scale-y-100 rtl:-scale-100"
+                  )}
+                />
+              </span>
+            )
+          )}
+        </div>
+        <div className="text-center text-sm leading-xs tracking-wider text-body-medium uppercase">
+          ({t("last-24-hrs")})
+        </div>
+      </Flex>
+    </Flex>
+  )
+}
+
+export default QauPriceCard

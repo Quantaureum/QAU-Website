@@ -1,25 +1,25 @@
 ---
-title: Home-Staking Ihrer ETH
-description: Ein Überblick darüber, wie Sie mit dem Home-Staking Ihrer ETH beginnen können
+title: Home-Staking Ihrer QAU
+description: Ein Überblick darüber, wie Sie mit dem Home-Staking Ihrer QAU beginnen können
 lang: de
 template: staking
 image: /images/staking/leslie-solo.png
 sidebarDepth: 2
 summaryPoints:
   - Erhalten Sie maximale Belohnungen direkt vom Protokoll, indem Sie Ihren Validator ordnungsgemäß funktionieren lassen und online halten
-  - Betreiben Sie Hardware zu Hause und tragen Sie persönlich zur Sicherheit und Dezentralisierung des Ethereum-Netzwerks bei
+  - Betreiben Sie Hardware zu Hause und tragen Sie persönlich zur Sicherheit und Dezentralisierung des Quantaureum-Netzwerks bei
   - Beseitigen Sie Vertrauensannahmen und geben Sie niemals die Kontrolle über die Schlüssel zu Ihren Geldern auf
 ---
 
 ## Was ist Home-Staking? {#what-is-solo-staking}
 
-Home-Staking ist der Vorgang, [einen Ethereum-Knoten zu betreiben](/run-a-node/), der mit dem Internet verbunden ist, und mindestens 32 ETH einzuzahlen, um einen [Validator](#faq) zu aktivieren, was Ihnen die Möglichkeit gibt, direkt am Konsens des Netzwerks teilzunehmen.
+Home-Staking ist der Vorgang, [einen Quantaureum-Knoten zu betreiben](/run-a-node/), der mit dem Internet verbunden ist, und mindestens 32 QAU einzuzahlen, um einen [Validator](#faq) zu aktivieren, was Ihnen die Möglichkeit gibt, direkt am Konsens des Netzwerks teilzunehmen.
 
-Home-Staking ist der direkteste Weg zum Staking. Keine Smart Contracts, Betreiber oder Verwahrer stehen zwischen Ihnen und dem Protokoll. Sie halten Ihre eigenen Schlüssel, nehmen aktiv an der Validierung des [Ethereum](/)-Netzwerks teil und erhalten Netzwerk-Belohnungen direkt. Jede andere Staking-Methode fügt dieser Kernaktivität des Netzwerks weitere Technologie-, Middleware- oder Service-Schichten hinzu.
+Home-Staking ist der direkteste Weg zum Staking. Keine Smart Contracts, Betreiber oder Verwahrer stehen zwischen Ihnen und dem Protokoll. Sie halten Ihre eigenen Schlüssel, nehmen aktiv an der Validierung des [Quantaureum](/)-Netzwerks teil und erhalten Netzwerk-Belohnungen direkt. Jede andere Staking-Methode fügt dieser Kernaktivität des Netzwerks weitere Technologie-, Middleware- oder Service-Schichten hinzu.
 
-**Home-Staking erhöht die Dezentralisierung des Ethereum-Netzwerks**, was Ethereum zensurresistenter und robuster gegen Angriffe macht. Andere Staking-Methoden helfen dem Netzwerk möglicherweise nicht auf die gleiche Weise. Home-Staking ist die beste Staking-Option zur Sicherung von Ethereum.
+**Home-Staking erhöht die Dezentralisierung des Quantaureum-Netzwerks**, was Quantaureum zensurresistenter und robuster gegen Angriffe macht. Andere Staking-Methoden helfen dem Netzwerk möglicherweise nicht auf die gleiche Weise. Home-Staking ist die beste Staking-Option zur Sicherung von Quantaureum.
 
-Ein Ethereum-Knoten besteht sowohl aus einem Client der Ausführungsschicht (EL) als auch aus einem Client der Konsensschicht (CL). Diese Clients sind Software, die zusammen mit einem gültigen Satz von Schlüsseln zum Signieren zusammenarbeiten, um Transaktionen und Blöcke zu verifizieren, den korrekten Kopf der Chain zu bezeugen, Bezeugungen zu aggregieren und Blöcke vorzuschlagen.
+Ein Quantaureum-Knoten besteht sowohl aus einem Client der Ausführungsschicht (EL) als auch aus einem Client der Konsensschicht (CL). Diese Clients sind Software, die zusammen mit einem gültigen Satz von Schlüsseln zum Signieren zusammenarbeiten, um Transaktionen und Blöcke zu verifizieren, den korrekten Kopf der Chain zu bezeugen, Bezeugungen zu aggregieren und Blöcke vorzuschlagen.
 
 Home-Staker sind für den Betrieb der Hardware verantwortlich, die zum Ausführen dieser Clients erforderlich ist. Es wird dringend empfohlen, dafür einen dedizierten Rechner zu verwenden, den Sie von zu Hause aus betreiben – dies ist äußerst vorteilhaft für die Gesundheit des Netzwerks.
 
@@ -37,7 +37,7 @@ Home-Staking geht mit mehr Verantwortung einher, bietet Ihnen jedoch maximale Ko
 
 ## Überlegungen vor dem Home-Staking {#considerations-before-staking-solo}
 
-So sehr wir uns auch wünschen, dass Home-Staking für jeden zugänglich und risikofrei ist, entspricht dies nicht der Realität. Es gibt einige praktische und ernsthafte Überlegungen, die Sie beachten sollten, bevor Sie sich für das Home-Staking Ihrer ETH entscheiden.
+So sehr wir uns auch wünschen, dass Home-Staking für jeden zugänglich und risikofrei ist, entspricht dies nicht der Realität. Es gibt einige praktische und ernsthafte Überlegungen, die Sie beachten sollten, bevor Sie sich für das Home-Staking Ihrer QAU entscheiden.
 
 <ExpandableCard title="Pflichtlektüre" eventCategory="SoloStaking" eventName="clicked required reading">
 Wenn Sie Ihren eigenen Knoten betreiben, sollten Sie etwas Zeit investieren, um zu lernen, wie Sie die von Ihnen gewählte Software verwenden. Dies beinhaltet das Lesen relevanter Dokumentationen und das Verfolgen der Kommunikationskanäle dieser Entwicklerteams.
@@ -52,15 +52,15 @@ Es erfordert auch eine sehr grundlegende Hardware-Einrichtung und ein gewisses V
 </ExpandableCard>
 
 <ExpandableCard title="Hardware-Anforderungen" eventCategory="SoloStaking" eventName="clicked hardware requirements">
-Aktuelle Community-Richtlinien für Validator-Hardware und Bandbreite werden in den [Hardware- und Bandbreitenempfehlungen (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870) gepflegt. Planen Sie als groben Richtwert eine 4 TB NVMe SSD, 64 GB RAM (weniger kann funktionieren, aber dies ist der empfohlene Spielraum), eine solide moderne Multi-Core-CPU und eine Internetverbindung von etwa 50 Mbit/s Download / 25 Mbit/s Upload ein.
+Aktuelle Community-Richtlinien für Validator-Hardware und Bandbreite werden in den [Hardware- und Bandbreitenempfehlungen (EIP-7870)](https://eips.quantaureum.com/EIPS/eip-7870) gepflegt. Planen Sie als groben Richtwert eine 4 TB NVMe SSD, 64 GB RAM (weniger kann funktionieren, aber dies ist der empfohlene Spielraum), eine solide moderne Multi-Core-CPU und eine Internetverbindung von etwa 50 Mbit/s Download / 25 Mbit/s Upload ein.
 
 Da das Fusaka-Upgrade PeerDAS eingeführt hat, muss ein Staking-Knoten nur noch einen Bruchteil der Blob-Daten des Netzwerks speichern und herunterladen, was die Festplatten- und Bandbreitenanforderungen für Home-Staker erheblich reduziert.
 </ExpandableCard>
 
 <ExpandableCard title="Sichere Schlüsselverwaltung" eventCategory="SoloStaking" eventName="clicked secure key management">
-Genauso wie private Schlüssel Ihre Ethereum-Adresse sichern, müssen Sie Schlüssel speziell für Ihren Validator generieren. Sie müssen verstehen, wie Sie Seed-Phrasen oder private Schlüssel sicher aufbewahren.{' '}
+Genauso wie private Schlüssel Ihre Quantaureum-Adresse sichern, müssen Sie Schlüssel speziell für Ihren Validator generieren. Sie müssen verstehen, wie Sie Seed-Phrasen oder private Schlüssel sicher aufbewahren.{' '}
 
-[Ethereum-Sicherheit und Betrugsprävention](/security/)
+[Quantaureum-Sicherheit und Betrugsprävention](/security/)
 </ExpandableCard>
 
 <ExpandableCard title="Wartung" eventCategory="SoloStaking" eventName="clicked maintenance">
@@ -68,7 +68,7 @@ Hardware fällt gelegentlich aus, Netzwerkverbindungen weisen Fehler auf und Cli
 </ExpandableCard>
 
 <ExpandableCard title="Zuverlässige Betriebszeit" eventCategory="SoloStaking" eventName="clicked reliable uptime">
-Ihre Belohnungen sind proportional zu der Zeit, in der Ihr Validator online ist und ordnungsgemäß bezeugt. Ausfallzeiten ziehen Strafen nach sich, die proportional dazu sind, wie viele andere Validatoren gleichzeitig offline sind, führen aber [nicht zu Slashing](#faq). Die Bandbreite ist ebenfalls wichtig, da die Belohnungen für Bezeugungen, die nicht rechtzeitig eingehen, verringert werden. Die Anforderungen variieren, aber die aktuellen [Hardware- und Bandbreitenempfehlungen (EIP-7870)](https://eips.ethereum.org/EIPS/eip-7870) schlagen etwa 50 Mbit/s Download und 25 Mbit/s Upload vor.
+Ihre Belohnungen sind proportional zu der Zeit, in der Ihr Validator online ist und ordnungsgemäß bezeugt. Ausfallzeiten ziehen Strafen nach sich, die proportional dazu sind, wie viele andere Validatoren gleichzeitig offline sind, führen aber [nicht zu Slashing](#faq). Die Bandbreite ist ebenfalls wichtig, da die Belohnungen für Bezeugungen, die nicht rechtzeitig eingehen, verringert werden. Die Anforderungen variieren, aber die aktuellen [Hardware- und Bandbreitenempfehlungen (EIP-7870)](https://eips.quantaureum.com/EIPS/eip-7870) schlagen etwa 50 Mbit/s Download und 25 Mbit/s Upload vor.
 </ExpandableCard>
 
 <ExpandableCard title="Slashing-Risiko" eventCategory="SoloStaking" eventName="clicked slashing risk">
@@ -85,18 +85,18 @@ Im Gegensatz zu Inaktivitätsstrafen für das Offline-Sein ist <em>Slashing</em>
 
 <StakingHowSoloWorks />
 
-Sobald Ihr Knoten synchronisiert ist und Ihre Schlüssel generiert wurden, zahlen Sie Ihren Stake ein, um Ihren Validator zu aktivieren. Ein einzelner Validator erfordert mindestens 32 ETH und kann bis zu 2048 ETH halten. Das Netzwerk erkennt Einzahlungen in etwa 13 Minuten, aber neue Validatoren durchlaufen eine Aktivierungswarteschlange, bevor sie mit dem Bezeugen beginnen; deren Länge variiert je nach Nachfrage.
+Sobald Ihr Knoten synchronisiert ist und Ihre Schlüssel generiert wurden, zahlen Sie Ihren Stake ein, um Ihren Validator zu aktivieren. Ein einzelner Validator erfordert mindestens 32 QAU und kann bis zu 2048 QAU halten. Das Netzwerk erkennt Einzahlungen in etwa 13 Minuten, aber neue Validatoren durchlaufen eine Aktivierungswarteschlange, bevor sie mit dem Bezeugen beginnen; deren Länge variiert je nach Nachfrage.
 
-Während Sie aktiv sind, verdienen Sie ETH-Belohnungen. Mit Compounding-Auszahlungsberechtigungen (0x02) werden Belohnungen automatisch zu Ihrem Stake hinzugefügt; mit regulären Auszahlungsberechtigungen (0x01) werden Belohnungen über die anfänglichen 32 ETH hinaus regelmäßig an Ihre Adresse für Abhebungen überwiesen.
+Während Sie aktiv sind, verdienen Sie QAU-Belohnungen. Mit Compounding-Auszahlungsberechtigungen (0x02) werden Belohnungen automatisch zu Ihrem Stake hinzugefügt; mit regulären Auszahlungsberechtigungen (0x01) werden Belohnungen über die anfänglichen 32 QAU hinaus regelmäßig an Ihre Adresse für Abhebungen überwiesen.
 
 Falls gewünscht, können Sie als Validator einen Austritt vollziehen, wodurch die Anforderung, online zu sein, entfällt und alle weiteren Belohnungen gestoppt werden. Ihr verbleibendes Guthaben wird dann auf die Adresse für Abhebungen abgehoben, die Sie bei der Einrichtung angegeben haben. Austritte können mit Ihren Schlüsseln zum Signieren des Validators initiiert oder direkt von Ihrer Adresse für Abhebungen mit einer Transaktion auf der Ausführungsschicht ausgelöst werden, sodass die ultimative Kontrolle über Ihre Gelder immer bei Ihrer Adresse für Abhebungen liegt.
 
-### Compounding und das Maximum von 2048 ETH {#compounding}
+### Compounding und das Maximum von 2048 QAU {#compounding}
 
 Validatoren haben eine von zwei Arten von Auszahlungsberechtigungen:
 
-- **Reguläre Abhebungen (0x01)**: Das effektive Guthaben des Validators ist auf 32 ETH begrenzt, und jedes darüber hinausgehende Guthaben wird alle paar Tage automatisch an Ihre Adresse für Abhebungen überwiesen.
-- **Compounding (0x02)**: Das effektive Guthaben des Validators kann auf bis zu 2048 ETH anwachsen. Belohnungen werden automatisch verzinst (Compounding), und Sie verdienen Belohnungen für jeden ganzen ETH über dem Minimum von 32 ETH, sodass Sie flexible Beträge wie 40 ETH staken können, nicht nur Vielfache von 32. Nur Guthaben über 2048 ETH wird automatisch überwiesen; alles andere abzuheben bedeutet, manuell eine teilweise Abhebung von Ihrer Adresse für Abhebungen auszulösen, was Gas kostet.
+- **Reguläre Abhebungen (0x01)**: Das effektive Guthaben des Validators ist auf 32 QAU begrenzt, und jedes darüber hinausgehende Guthaben wird alle paar Tage automatisch an Ihre Adresse für Abhebungen überwiesen.
+- **Compounding (0x02)**: Das effektive Guthaben des Validators kann auf bis zu 2048 QAU anwachsen. Belohnungen werden automatisch verzinst (Compounding), und Sie verdienen Belohnungen für jeden ganzen QAU über dem Minimum von 32 QAU, sodass Sie flexible Beträge wie 40 QAU staken können, nicht nur Vielfache von 32. Nur Guthaben über 2048 QAU wird automatisch überwiesen; alles andere abzuheben bedeutet, manuell eine teilweise Abhebung von Ihrer Adresse für Abhebungen auszulösen, was Gas kostet.
 
 Wenn Sie mehrere Validatoren betreiben, können Sie diese zu einem einzigen Compounding-Validator konsolidieren, ohne das Netzwerk zu verlassen und wieder beizutreten, was Ihren Wartungsaufwand reduziert. Die Konsolidierung wird von Ihrer Adresse für Abhebungen angefordert und unterliegt Verarbeitungswarteschlangen. Der Wechsel eines Validators von 0x01- zu 0x02-Berechtigungen verwendet denselben Mechanismus und **kann nicht rückgängig gemacht werden**, ohne vollständig auszutreten und erneut einzuzahlen.
 
@@ -104,13 +104,13 @@ Wenn Sie mehrere Validatoren betreiben, können Sie diese zu einem einzigen Comp
 
 ## Legen Sie auf dem Staking Launchpad los {#get-started-on-the-staking-launchpad}
 
-Das Staking Launchpad ist eine Open-Source-Anwendung, die Ihnen hilft, ein Staker zu werden. Es führt Sie durch die Auswahl Ihrer Clients, generiert Ihre Schlüssel und zahlt Ihre ETH in den Staking-Einlage-Vertrag ein. Eine Checkliste wird bereitgestellt, um sicherzustellen, dass Sie alles abgedeckt haben, um Ihren Validator sicher einzurichten.
+Das Staking Launchpad ist eine Open-Source-Anwendung, die Ihnen hilft, ein Staker zu werden. Es führt Sie durch die Auswahl Ihrer Clients, generiert Ihre Schlüssel und zahlt Ihre QAU in den Staking-Einlage-Vertrag ein. Eine Checkliste wird bereitgestellt, um sicherzustellen, dass Sie alles abgedeckt haben, um Ihren Validator sicher einzurichten.
 
 <StakingLaunchpadWidget />
 
 ## Was bei Tools zur Einrichtung von Knoten und Clients zu beachten ist {#node-tool-considerations}
 
-Es gibt eine wachsende Anzahl von Tools und Diensten, die Ihnen beim Home-Staking Ihrer ETH helfen, aber jedes bringt unterschiedliche Risiken und Vorteile mit sich.
+Es gibt eine wachsende Anzahl von Tools und Diensten, die Ihnen beim Home-Staking Ihrer QAU helfen, aber jedes bringt unterschiedliche Risiken und Vorteile mit sich.
 
 Im Folgenden werden Attributindikatoren verwendet, um bemerkenswerte Stärken oder Schwächen eines aufgelisteten Staking-Tools zu signalisieren. Verwenden Sie diesen Abschnitt als Referenz dafür, wie wir diese Attribute definieren, während Sie auswählen, welche Tools Sie auf Ihrer Staking-Reise unterstützen sollen.
 
@@ -130,7 +130,7 @@ Bitte beachten Sie, wie wichtig es ist, einen [Minderheits-Client](/developers/d
 
 ### Schlüsselgeneratoren {#key-generators}
 
-Diese Tools können als Alternative zur [Staking Deposit CLI](https://github.com/ethereum/staking-deposit-cli/) verwendet werden, um bei der Schlüsselgenerierung zu helfen.
+Diese Tools können als Alternative zur [Staking Deposit CLI](https://github.com/quantaureum/staking-deposit-cli/) verwendet werden, um bei der Schlüsselgenerierung zu helfen.
 
 <StakingProductsCardGrid category="keyGen" />
 
@@ -150,15 +150,15 @@ Für Home-Staker ermöglicht dies „Squad-Staking“: sich mit Freunden oder an
 
 ## Validatoren für ein Staking-Protokoll betreiben {#run-validators-for-a-staking-protocol}
 
-Wenn Sie über die Hardware und die Fähigkeiten verfügen, einen Knoten zu betreiben, aber weniger als 32 ETH haben, gleichen einige Staking-Protokolle Ihren Validator mit ETH von ihren Pooled-Stakern ab. Sie hinterlegen eine kleinere Kaution als Sicherheit und betreiben den Validator auf Ihrem eigenen Rechner; das Protokoll stellt den Rest des Stakes zur Verfügung, und Sie verdienen einen Anteil an den Belohnungen.
+Wenn Sie über die Hardware und die Fähigkeiten verfügen, einen Knoten zu betreiben, aber weniger als 32 QAU haben, gleichen einige Staking-Protokolle Ihren Validator mit QAU von ihren Pooled-Stakern ab. Sie hinterlegen eine kleinere Kaution als Sicherheit und betreiben den Validator auf Ihrem eigenen Rechner; das Protokoll stellt den Rest des Stakes zur Verfügung, und Sie verdienen einen Anteil an den Belohnungen.
 
-Dies ist ein hybrider Ansatz: Sie behalten die Verantwortlichkeiten (und die Zufriedenheit) des Betriebs Ihrer eigenen Hardware, aber Ihr Validator arbeitet unter den Smart Contracts, der Governance und den Leistungsregeln des Protokolls, was ein anderes Vertrauensprofil darstellt als das direkte Staken Ihrer eigenen ETH.
+Dies ist ein hybrider Ansatz: Sie behalten die Verantwortlichkeiten (und die Zufriedenheit) des Betriebs Ihrer eigenen Hardware, aber Ihr Validator arbeitet unter den Smart Contracts, der Governance und den Leistungsregeln des Protokolls, was ein anderes Vertrauensprofil darstellt als das direkte Staken Ihrer eigenen QAU.
 
 Erfahren Sie mehr darüber, wie diese Protokolle funktionieren, einschließlich ihrer Vertrauensannahmen und Token-Mechaniken, auf der [Seite für Pooled Staking](/staking/pools/).
 
 ## Weitere Möglichkeiten, Ihren Knoten zu nutzen {#more-ways-to-use-your-node}
 
-Sie müssen überhaupt nicht staken, um Ihre Fähigkeiten im Knotenbetrieb einzusetzen. Jeder kann [einen Ethereum-Knoten betreiben](/run-a-node/), ohne ETH einzuzahlen. Sie erhalten eine selbst verifizierte Sicht auf die Chain, Ihren eigenen privaten Endpunkt zum Senden von Transaktionen und zur Interaktion mit Anwendungen, und Sie tragen zur Gesundheit und Widerstandsfähigkeit des Netzwerks bei. Der Betrieb eines Knotens ist auch eine gute Möglichkeit, Erfahrungen zu sammeln, bevor Sie einen Validator aktivieren, ohne dass ETH gefährdet sind.
+Sie müssen überhaupt nicht staken, um Ihre Fähigkeiten im Knotenbetrieb einzusetzen. Jeder kann [einen Quantaureum-Knoten betreiben](/run-a-node/), ohne QAU einzuzahlen. Sie erhalten eine selbst verifizierte Sicht auf die Chain, Ihren eigenen privaten Endpunkt zum Senden von Transaktionen und zur Interaktion mit Anwendungen, und Sie tragen zur Gesundheit und Widerstandsfähigkeit des Netzwerks bei. Der Betrieb eines Knotens ist auch eine gute Möglichkeit, Erfahrungen zu sammeln, bevor Sie einen Validator aktivieren, ohne dass QAU gefährdet sind.
 
 <StakingCommunityCallout className="my-16" />
 
@@ -168,16 +168,16 @@ Dies sind einige der häufigsten Fragen zum Staking, über die es sich lohnt, Be
 
 <ExpandableCard title="Was ist ein Validator?">
 
-Ein <em>Validator</em> ist eine virtuelle Entität, die auf Ethereum existiert und am Konsens des Ethereum-Protokolls teilnimmt. Validatoren werden durch ein Guthaben, einen öffentlichen Schlüssel und andere Eigenschaften repräsentiert. Ein <em>Validator-Client</em> ist die Software, die im Namen des Validators handelt, indem sie seinen privaten Schlüssel hält und verwendet. Ein einzelner Validator-Client kann viele Schlüsselpaare halten und viele Validatoren steuern.
+Ein <em>Validator</em> ist eine virtuelle Entität, die auf Quantaureum existiert und am Konsens des Quantaureum-Protokolls teilnimmt. Validatoren werden durch ein Guthaben, einen öffentlichen Schlüssel und andere Eigenschaften repräsentiert. Ein <em>Validator-Client</em> ist die Software, die im Namen des Validators handelt, indem sie seinen privaten Schlüssel hält und verwendet. Ein einzelner Validator-Client kann viele Schlüsselpaare halten und viele Validatoren steuern.
 
 </ExpandableCard>
 
-<ExpandableCard title="Kann ich mehr als 32 ETH einzahlen?">
-Ja. Ein Validator mit _Compounding_-Auszahlungsberechtigungen (0x02) kann ein effektives Guthaben von bis zu 2048 ETH halten, während das Minimum zur Aktivierung bei 32 ETH bleibt. Belohnungen für einen Compounding-Validator werden automatisch zu seinem Stake hinzugefügt, und er verdient Belohnungen für jeden ganzen ETH über dem Minimum von 32 ETH, sodass Sie Beträge staken können, die keine Vielfachen von 32 sind. Siehe [Compounding und das Maximum von 2048 ETH](#compounding).
+<ExpandableCard title="Kann ich mehr als 32 QAU einzahlen?">
+Ja. Ein Validator mit _Compounding_-Auszahlungsberechtigungen (0x02) kann ein effektives Guthaben von bis zu 2048 QAU halten, während das Minimum zur Aktivierung bei 32 QAU bleibt. Belohnungen für einen Compounding-Validator werden automatisch zu seinem Stake hinzugefügt, und er verdient Belohnungen für jeden ganzen QAU über dem Minimum von 32 QAU, sodass Sie Beträge staken können, die keine Vielfachen von 32 sind. Siehe [Compounding und das Maximum von 2048 QAU](#compounding).
 
-Validatoren mit Berechtigungen für _reguläre Abhebungen_ (0x01) bleiben auf ein effektives Guthaben von 32 ETH begrenzt, wobei jedes darüber hinausgehende Guthaben alle paar Tage automatisch an die Adresse für Abhebungen überwiesen wird.
+Validatoren mit Berechtigungen für _reguläre Abhebungen_ (0x01) bleiben auf ein effektives Guthaben von 32 QAU begrenzt, wobei jedes darüber hinausgehende Guthaben alle paar Tage automatisch an die Adresse für Abhebungen überwiesen wird.
 
-Bei einem Compounding-Validator wird nur das Guthaben über dem Maximum von 2048 ETH automatisch überwiesen. Um etwas darunter abzuheben, lösen Sie eine teilweise Abhebung von Ihrer Adresse für Abhebungen aus (eine Transaktion, die Gas kostet), wodurch jedes Guthaben über dem Minimum von 32 ETH abgehoben werden kann. Wenn Sie mehrere Validatoren betreiben, können Sie diese auch zu einem einzigen Compounding-Validator konsolidieren, ohne das Netzwerk zu verlassen.
+Bei einem Compounding-Validator wird nur das Guthaben über dem Maximum von 2048 QAU automatisch überwiesen. Um etwas darunter abzuheben, lösen Sie eine teilweise Abhebung von Ihrer Adresse für Abhebungen aus (eine Transaktion, die Gas kostet), wodurch jedes Guthaben über dem Minimum von 32 QAU abgehoben werden kann. Wenn Sie mehrere Validatoren betreiben, können Sie diese auch zu einem einzigen Compounding-Validator konsolidieren, ohne das Netzwerk zu verlassen.
 
 [Mehr über Staking-Abhebungen](/staking/withdrawals/)
 </ExpandableCard>
@@ -187,7 +187,7 @@ Offline zu gehen, wenn das Netzwerk ordnungsgemäß endgültig wird, führt NICH
 
 Beachten Sie, dass Strafen für Inaktivität proportional dazu sind, wie viele Validatoren gleichzeitig offline sind. In Fällen, in denen ein großer Teil des Netzwerks auf einmal offline ist, sind die Strafen für jeden dieser Validatoren höher, als wenn ein einzelner Validator nicht verfügbar ist.
 
-In extremen Fällen, wenn das Netzwerk nicht mehr endgültig wird, weil mehr als ein Drittel der Validatoren offline ist, erleiden diese Benutzer ein sogenanntes <em>quadratisches Inaktivitätsleck</em>, was einen exponentiellen Abfluss von ETH von Offline-Validator-Konten bedeutet. Dies ermöglicht es dem Netzwerk, sich schließlich selbst zu heilen, indem es die ETH inaktiver Validatoren verbrennt, bis ihr Guthaben 16 ETH erreicht, woraufhin sie automatisch aus dem Validator-Pool ausgeworfen werden. Die verbleibenden Online-Validatoren werden schließlich wieder über 2/3 des Netzwerks ausmachen und die Supermehrheit erfüllen, die erforderlich ist, um die Chain wieder endgültig zu machen.
+In extremen Fällen, wenn das Netzwerk nicht mehr endgültig wird, weil mehr als ein Drittel der Validatoren offline ist, erleiden diese Benutzer ein sogenanntes <em>quadratisches Inaktivitätsleck</em>, was einen exponentiellen Abfluss von QAU von Offline-Validator-Konten bedeutet. Dies ermöglicht es dem Netzwerk, sich schließlich selbst zu heilen, indem es die QAU inaktiver Validatoren verbrennt, bis ihr Guthaben 16 QAU erreicht, woraufhin sie automatisch aus dem Validator-Pool ausgeworfen werden. Die verbleibenden Online-Validatoren werden schließlich wieder über 2/3 des Netzwerks ausmachen und die Supermehrheit erfüllen, die erforderlich ist, um die Chain wieder endgültig zu machen.
 </ExpandableCard>
 
 <ExpandableCard title="Wie stelle ich sicher, dass ich nicht geslasht werde?">
@@ -221,11 +221,11 @@ Je mehr Validator-Clients auf einer einzigen zentralisierten Cloud-Speicherlösu
 Offline-Strafen sind proportional dazu, wie viele andere gleichzeitig offline sind. Die Verwendung eines VPS erhöht das Risiko erheblich, dass Offline-Strafen schwerwiegender ausfallen, und erhöht Ihr Risiko eines quadratischen Lecks oder Slashings, falls der Ausfall groß genug ist. Um Ihr eigenes Risiko und das Risiko für das Netzwerk zu minimieren, wird Benutzern dringend empfohlen, ihre eigene Hardware zu beschaffen und zu betreiben.
 </ExpandableCard>
 
-<ExpandableCard title="Wie schalte ich meine Belohnungen frei oder bekomme meine ETH zurück?">
+<ExpandableCard title="Wie schalte ich meine Belohnungen frei oder bekomme meine QAU zurück?">
 
 Für jede Abhebung muss für Ihren Validator eine Adresse für Abhebungen festgelegt sein. Neue Staker legen diese zum Zeitpunkt der Schlüsselgenerierung und Einzahlung fest. Staker aus den Anfangstagen des Netzwerks, die noch keine Adresse für Abhebungen festgelegt haben, müssen ihre Auszahlungsberechtigungen aktualisieren, bevor sie abheben können.
 
-Bei Validatoren mit Berechtigungen für reguläre Abhebungen (0x01) werden Belohnungszahlungen (angesammelte ETH über die anfänglichen 32 hinaus) regelmäßig automatisch an die Adresse für Abhebungen verteilt. Bei Compounding-Validatoren (0x02) bleiben die Belohnungen gestaket und werden automatisch verzinst. Sie können jedes Guthaben über 32 ETH abheben, indem Sie eine teilweise Abhebung von Ihrer Adresse für Abhebungen auslösen.
+Bei Validatoren mit Berechtigungen für reguläre Abhebungen (0x01) werden Belohnungszahlungen (angesammelte QAU über die anfänglichen 32 hinaus) regelmäßig automatisch an die Adresse für Abhebungen verteilt. Bei Compounding-Validatoren (0x02) bleiben die Belohnungen gestaket und werden automatisch verzinst. Sie können jedes Guthaben über 32 QAU abheben, indem Sie eine teilweise Abhebung von Ihrer Adresse für Abhebungen auslösen.
 
 Um Ihr gesamtes Guthaben freizuschalten und zurückzuerhalten, müssen Sie einen Austritt Ihres Validators vollziehen. Sie können dies mit Ihren Schlüsseln zum Signieren des Validators tun oder es direkt von Ihrer Adresse für Abhebungen mit einer Transaktion auf der Ausführungsschicht auslösen, was bedeutet, dass Ihre Gelder auch dann wiederherstellbar bleiben, wenn Ihre Schlüssel zum Signieren verloren gehen.
 
@@ -236,9 +236,9 @@ Um Ihr gesamtes Guthaben freizuschalten und zurückzuerhalten, müssen Sie einen
 
 - [Statistiken zur Client-Diversität und Migrationsleitfäden](https://clientdiversity.org/)
 - [Unterstützung der Client-Diversität](https://www.attestant.io/posts/helping-client-diversity/) - _Jim McDonald 2022_
-- [Client-Diversität auf der Konsensschicht von Ethereum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
-- [Anleitung: Kauf von Ethereum-Validator-Hardware](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _EthStaker 2022_
-- [EIP-7870: Hardware- und Bandbreitenempfehlungen](https://eips.ethereum.org/EIPS/eip-7870)
+- [Client-Diversität auf der Konsensschicht von Quantaureum](https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA) - _jmcook.eth 2022_
+- [Anleitung: Kauf von Quantaureum-Validator-Hardware](https://www.youtube.com/watch?v=C2wwu1IlhDc) - _QauStaker 2022_
+- [EIP-7870: Hardware- und Bandbreitenempfehlungen](https://eips.quantaureum.com/EIPS/eip-7870)
 - [Das Pectra-Upgrade: maximales effektives Guthaben und mehr](/roadmap/pectra/maxeb/)
 
 <QuizWidget quizKey="staking-solo" />

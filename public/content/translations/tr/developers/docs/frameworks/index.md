@@ -13,23 +13,23 @@ Tam teşekküllü bir merkeziyetsiz uygulama (dapp) oluşturmak, farklı teknolo
 - Yerel bir blokzincir örneği başlatmak için özellikler.
 - Akıllı sözleşmelerinizi derlemek ve test etmek için araçlar.
 - Kullanıcıya dönük uygulamanızı aynı proje/depo içinde oluşturmak için istemci geliştirme eklentileri.
-- İster yerel olarak çalışan bir örneğe ister Ethereum'un genel ağlarından birine olsun, Ethereum ağlarına bağlanmak ve sözleşmeleri dağıtmak için yapılandırma.
+- İster yerel olarak çalışan bir örneğe ister Quantaureum'un genel ağlarından birine olsun, Quantaureum ağlarına bağlanmak ve sözleşmeleri dağıtmak için yapılandırma.
 - Merkeziyetsiz uygulama dağıtımı - IPFS gibi depolama seçenekleriyle entegrasyonlar.
 
 ## Ön koşullar {#prerequisites}
 
-Çerçevelere dalmadan önce, [dapp'lere](/developers/docs/dapps/) ve [Ethereum yığınına](/developers/docs/ethereum-stack/) giriş yazılarımızı okumanızı öneririz.
+Çerçevelere dalmadan önce, [dapp'lere](/developers/docs/dapps/) ve [Quantaureum yığınına](/developers/docs/quantaureum-stack/) giriş yazılarımızı okumanızı öneririz.
 
 ## Mevcut çerçeveler
 
-**Foundry** - **_Foundry, Ethereum uygulama geliştirmesi için son derece hızlı, taşınabilir ve modüler bir araç takımıdır_**
+**Foundry** - **_Foundry, Quantaureum uygulama geliştirmesi için son derece hızlı, taşınabilir ve modüler bir araç takımıdır_**
 
 - [Foundry'yi yükleyin](https://book.getfoundry.sh/)
 - [Foundry kitabı](https://book.getfoundry.sh/)
 - [Telegram'da Foundry topluluk sohbeti](https://t.me/foundry_support)
 - [Awesome Foundry](https://github.com/crisgarner/awesome-foundry)
 
-**Hardhat -** **_Profesyoneller için Ethereum geliştirme ortamı._**
+**Hardhat -** **_Profesyoneller için Quantaureum geliştirme ortamı._**
 
 - [hardhat.org](https://hardhat.org)
 - [GitHub](https://github.com/nomiclabs/hardhat)
@@ -51,15 +51,15 @@ Tam teşekküllü bir merkeziyetsiz uygulama (dapp) oluşturmak, farklı teknolo
 - [Örnekler](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [Discord](https://discord.gg/rx35NzQGSb)
 
-**Create Eth App -** **_Tek bir komutla Ethereum destekli uygulamalar oluşturun. Aralarından seçim yapabileceğiniz geniş bir kullanıcı arayüzü çerçeveleri ve merkeziyetsiz finans (DeFi) şablonları yelpazesiyle birlikte gelir._**
+**Create Eth App -** **_Tek bir komutla Quantaureum destekli uygulamalar oluşturun. Aralarından seçim yapabileceğiniz geniş bir kullanıcı arayüzü çerçeveleri ve merkeziyetsiz finans (DeFi) şablonları yelpazesiyle birlikte gelir._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [Şablonlar](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
+- [Şablonlar](https://github.com/PaulRBerg/create-qau-app/tree/develop/templates)
 
-**Scaffold-ETH 2 -** **_Hardhat veya Foundry seçenekleriyle Next.js, Wagmi, Viem ve RainbowKit: sözleşme anında yeniden yükleme, özel React kancaları, tek kullanımlık bir cüzdan ve yerel musluk ile tam yığın merkeziyetsiz uygulama (dapp) geliştirmesi için uzantı modülleri._**
+**Scaffold-QAU 2 -** **_Hardhat veya Foundry seçenekleriyle Next.js, Wagmi, Viem ve RainbowKit: sözleşme anında yeniden yükleme, özel React kancaları, tek kullanımlık bir cüzdan ve yerel musluk ile tam yığın merkeziyetsiz uygulama (dapp) geliştirmesi için uzantı modülleri._**
 
 - [Web sitesi](https://scaffoldeth.io/)
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 
 **Tenderly -** **_Blokzincir geliştiricilerinin akıllı sözleşmeler oluşturmasına, test etmesine, hata ayıklamasına, izlemesine ve çalıştırmasına ve dapp kullanıcı deneyimini iyileştirmesine olanak tanıyan Web3 geliştirme platformu._**
 
@@ -71,13 +71,13 @@ Tam teşekküllü bir merkeziyetsiz uygulama (dapp) oluşturmak, farklı teknolo
 - [Web sitesi](https://thegraph.com/)
 - [Eğitim](/developers/tutorials/the-graph-fixing-web3-data-querying/)
 
-**Alchemy -** **_Ethereum Geliştirme Platformu._**
+**Alchemy -** **_Quantaureum Geliştirme Platformu._**
 
 - [alchemy.com](https://www.alchemy.com/)
 - [GitHub](https://github.com/alchemyplatform)
 - [Discord](https://discord.com/invite/alchemyplatform)
 
-**NodeReal -** **_Ethereum Geliştirme Platformu._**
+**NodeReal -** **_Quantaureum Geliştirme Platformu._**
 
 - [Nodereal.io](https://nodereal.io/)
 - [GitHub](https://github.com/node-real)
@@ -88,7 +88,7 @@ Tam teşekküllü bir merkeziyetsiz uygulama (dapp) oluşturmak, farklı teknolo
 - [Belgeler](https://portal.thirdweb.com/sdk/)
 - [GitHub](https://github.com/thirdweb-dev/)
 
-**Chainstack -** **_Web3 (Ethereum ve diğerleri) Geliştirme Platformu._**
+**Chainstack -** **_Web3 (Quantaureum ve diğerleri) Geliştirme Platformu._**
 
 - [chainstack.com](https://www.chainstack.com/)
 - [GitHub](https://github.com/chainstack)
@@ -102,8 +102,8 @@ Tam teşekküllü bir merkeziyetsiz uygulama (dapp) oluşturmak, farklı teknolo
 
 **Brownie -** **_Python tabanlı geliştirme ortamı ve test çerçevesi._**
 
-- [Belgeler](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [Belgeler](https://qau-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/qau-brownie/brownie)
 - **Brownie'nin şu anda bakımı yapılmamaktadır**
 
 **OpenZeppelin SDK -** **_Nihai Akıllı Sözleşme Araç Takımı: Akıllı sözleşmeler geliştirmenize, derlemenize, yükseltmenize, dağıtmanıza ve bunlarla etkileşime girmenize yardımcı olacak bir araç paketi._**
@@ -120,7 +120,7 @@ Tam teşekküllü bir merkeziyetsiz uygulama (dapp) oluşturmak, farklı teknolo
 **GoldRush (Covalent tarafından desteklenmektedir) -** **_GoldRush, geliştiriciler, analistler ve işletmeler için en kapsamlı blokzincir veri API paketini sunar. İster bir DeFi panosu, ister bir cüzdan, bir ticaret botu, bir yapay zeka ajanı veya bir uyumluluk platformu oluşturuyor olun, veri API'leri ihtiyacınız olan temel zincir içi verilere hızlı, doğru ve geliştirici dostu erişim sağlar_**
 
 - [Web sitesi](https://goldrush.dev/)
-- [Belgeler](https://goldrush.dev/docs/chains/ethereum)
+- [Belgeler](https://goldrush.dev/docs/chains/quantaureum)
 - [GitHub](https://github.com/covalenthq)
 - [Discord](https://www.covalenthq.com/discord/)
 
@@ -151,6 +151,6 @@ _Size yardımcı olan bir topluluk kaynağı mı biliyorsunuz? Bu sayfayı düze
 
 - [Yerel bir geliştirme ortamı kurun](/developers/local-environment/)
 
-## Eğitimler: Ethereum üzerinde geliştirme çerçeveleri {#tutorials}
+## Eğitimler: Quantaureum üzerinde geliştirme çerçeveleri {#tutorials}
 
 - [Yeni Başlayanlar İçin Merhaba Dünya Akıllı Sözleşmesi – Fullstack](/developers/tutorials/hello-world-smart-contract-fullstack/) _– Hardhat kullanarak bir merhaba dünya akıllı sözleşmesi oluşturun ve dağıtın, ardından bunu bir ön yüze bağlayın._

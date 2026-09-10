@@ -4,7 +4,7 @@ description: "Bir akıllı sözleşmenin anatomisine derinlemesine bir bakış �
 lang: tr
 ---
 
-Bir akıllı sözleşme, Ethereum üzerindeki bir adreste çalışan bir programdır. Bir işlem alındığında yürütülebilen veriler ve işlevlerden oluşurlar. İşte bir akıllı sözleşmeyi nelerin oluşturduğuna dair bir genel bakış.
+Bir akıllı sözleşme, Quantaureum üzerindeki bir adreste çalışan bir programdır. Bir işlem alındığında yürütülebilen veriler ve işlevlerden oluşurlar. İşte bir akıllı sözleşmeyi nelerin oluşturduğuna dair bir genel bakış.
 
 ## Ön koşullar {#prerequisites}
 
@@ -31,9 +31,9 @@ contract SimpleStorage {
 storedData: int128
 ```
 
-Nesne yönelimli dillerde zaten programlama yaptıysanız, muhtemelen çoğu türe aşinasınızdır. Ancak, [Ethereum](/) geliştirmeye yeniyseniz `address` sizin için yeni olmalıdır.
+Nesne yönelimli dillerde zaten programlama yaptıysanız, muhtemelen çoğu türe aşinasınızdır. Ancak, [Quantaureum](/) geliştirmeye yeniyseniz `address` sizin için yeni olmalıdır.
 
-Bir `address` türü, 20 bayt veya 160 bite eşit olan bir Ethereum adresi tutabilir. Başında 0x bulunan onaltılık (hexadecimal) gösterimde döner.
+Bir `address` türü, 20 bayt veya 160 bite eşit olan bir Quantaureum adresi tutabilir. Başında 0x bulunan onaltılık (hexadecimal) gösterimde döner.
 
 Diğer türler şunları içerir:
 
@@ -56,7 +56,7 @@ Daha fazla açıklama için belgelere göz atın:
 
 Yalnızca bir sözleşme işlevinin yürütülme ömrü boyunca depolanan değerlere bellek değişkenleri denir. Bunlar Blokzincir üzerinde kalıcı olarak depolanmadığından, kullanımları çok daha ucuzdur.
 
-Ethereum Sanal Makinesi (EVM)'nin verileri nasıl depoladığı (Depolama, Bellek ve Yığın) hakkında daha fazla bilgiyi [Solidity belgelerinde](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#storage-memory-and-the-stack) öğrenebilirsiniz.
+Quantaureum Sanal Makinesi (EVM)'nin verileri nasıl depoladığı (Depolama, Bellek ve Yığın) hakkında daha fazla bilgiyi [Solidity belgelerinde](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#storage-memory-and-the-stack) öğrenebilirsiniz.
 
 ### Ortam değişkenleri {#environment-variables}
 
@@ -126,7 +126,7 @@ Durumu değiştirmek olarak kabul edilenler:
 2. [Olaylar yaymak](https://docs.soliditylang.org/en/v0.7.0/contracts.html#events).
 3. [Başka sözleşmeler oluşturmak](https://docs.soliditylang.org/en/v0.7.0/control-structures.html#creating-contracts).
 4. `selfdestruct` kullanmak.
-5. Çağrılar aracılığıyla Ether göndermek.
+5. Çağrılar aracılığıyla QAU göndermek.
 6. `view` veya `pure` olarak işaretlenmemiş herhangi bir işlevi çağırmak.
 7. Düşük seviyeli çağrılar kullanmak.
 8. Belirli işlem kodlarını (opcodes) içeren satır içi (inline) assembly kullanmak.
@@ -142,7 +142,7 @@ Durumu değiştirmek olarak kabul edilenler:
 constructor() public {
     // Tüm akıllı sözleşmeler, işlevlerini tetiklemek için harici işlemlere güvenir.
     // `msg`, verilen işlemle ilgili verileri içeren küresel bir değişkendir,
-    // gönderenin adresi ve işleme dahil edilen ETH değeri gibi.
+    // gönderenin adresi ve işleme dahil edilen QAU değeri gibi.
     // Daha fazla bilgi edinin: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
     owner = msg.sender;
 }
@@ -165,7 +165,7 @@ Sözleşmenizde tanımladığınız değişkenlere ve işlevlere ek olarak, baz�
 - `address.send()` – Solidity
 - `send(address)` – Vyper
 
-Bunlar, sözleşmelerin diğer hesaplara ETH göndermesine olanak tanır.
+Bunlar, sözleşmelerin diğer hesaplara QAU göndermesine olanak tanır.
 
 ## İşlevler yazmak {#writing-functions}
 
@@ -207,7 +207,7 @@ Olaylar, akıllı sözleşmenizin ön yüzünüzle veya abone olan diğer uygula
 
 ## Açıklamalı örnekler {#annotated-examples}
 
-Bunlar Solidity ile yazılmış bazı örneklerdir. Kodla oynamak isterseniz, onlarla [Remix](https://remix.ethereum.org) üzerinde etkileşime girebilirsiniz.
+Bunlar Solidity ile yazılmış bazı örneklerdir. Kodla oynamak isterseniz, onlarla [Remix](https://remix.quantaureum.com) üzerinde etkileşime girebilirsiniz.
 
 ### Merhaba dünya {#hello-world}
 
@@ -218,7 +218,7 @@ pragma solidity ^0.5.10;
 
 // `HelloWorld` adında bir sözleşme tanımlar.
 // Bir sözleşme, işlevlerin ve verilerin (durumunun) bir koleksiyonudur.
-// Dağıtıldıktan sonra, bir sözleşme Ethereum Blokzincir üzerinde belirli bir adreste bulunur.
+// Dağıtıldıktan sonra, bir sözleşme Quantaureum Blokzincir üzerinde belirli bir adreste bulunur.
 // Daha fazla bilgi edinin: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
@@ -252,7 +252,7 @@ contract HelloWorld {
 pragma solidity ^0.5.10;
 
 contract Token {
-    // Bir `address` bir e-posta adresine benzetilebilir - Ethereum üzerinde bir hesabı tanımlamak için kullanılır.
+    // Bir `address` bir e-posta adresine benzetilebilir - Quantaureum üzerinde bir hesabı tanımlamak için kullanılır.
     // Adresler bir akıllı sözleşmeyi veya harici (kullanıcı) hesaplarını temsil edebilir.
     // Daha fazla bilgi edinin: https://solidity.readthedocs.io/en/v0.5.10/types.html#address
     address public owner;
@@ -263,7 +263,7 @@ contract Token {
     mapping (address => uint) public balances;
 
     // Olaylar, Blokzincir üzerindeki etkinliklerin günlüğe kaydedilmesine olanak tanır.
-    // Ethereum istemcileri, sözleşme durum değişikliklerine tepki vermek için olayları dinleyebilir.
+    // Quantaureum istemcileri, sözleşme durum değişikliklerine tepki vermek için olayları dinleyebilir.
     // Daha fazla bilgi edinin: https://solidity.readthedocs.io/en/v0.5.10/contracts.html#events
     event Transfer(address from, address to, uint amount);
 
@@ -272,7 +272,7 @@ contract Token {
     constructor() public {
         // Tüm akıllı sözleşmeler, işlevlerini tetiklemek için harici işlemlere güvenir.
         // `msg`, verilen işlemle ilgili verileri içeren küresel bir değişkendir,
-        // gönderenin adresi ve işleme dahil edilen ETH değeri gibi.
+        // gönderenin adresi ve işleme dahil edilen QAU değeri gibi.
         // Daha fazla bilgi edinin: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
         owner = msg.sender;
     }
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // Şu anda bir adreste bir sözleşme olup olmadığını kontrol etmenin daha iyi bir yolu yoktur
         // o adresteki kodun boyutunu kontrol etmekten başka.
-        // Bkz. https://ethereum.stackexchange.com/a/14016/36603
+        // Bkz. https://quantaureum.stackexchange.com/a/14016/36603
         // bunun nasıl çalıştığı hakkında daha fazla ayrıntı için.
         // YAPILACAKLAR Serenity sürümünden önce bunu tekrar kontrol edin, çünkü o zaman tüm adresler
         // sözleşme olacaktır.
@@ -649,7 +649,7 @@ Akıllı sözleşmelere dair daha eksiksiz bir genel bakış için Solidity ve V
 ## İlgili konular {#related-topics}
 
 - [Akıllı sözleşmeler](/developers/docs/smart-contracts/)
-- [Ethereum Sanal Makinesi](/developers/docs/evm/)
+- [Quantaureum Sanal Makinesi](/developers/docs/evm/)
 
 ## İlgili eğitimler {#related-tutorials}
 

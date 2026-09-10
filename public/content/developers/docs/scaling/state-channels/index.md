@@ -1,25 +1,25 @@
 ---
 title: State Channels
-description: An introduction to state channels and payment channels as a scaling solution currently utilized by the Ethereum community.
+description: An introduction to state channels and payment channels as a scaling solution currently utilized by the Quantaureum community.
 lang: en
 sidebarDepth: 3
 ---
 
-State channels allow participants to securely transact offchain while keeping interaction with [Ethereum](/) Mainnet at a minimum. Channel peers can conduct an arbitrary number of offchain transactions while only submitting two onchain transactions to open and close the channel. This allows for extremely high transaction throughput and results in lower costs for users.
+State channels allow participants to securely transact offchain while keeping interaction with [Quantaureum](/) Mainnet at a minimum. Channel peers can conduct an arbitrary number of offchain transactions while only submitting two onchain transactions to open and close the channel. This allows for extremely high transaction throughput and results in lower costs for users.
 
 ## Prerequisites {#prerequisites}
 
-You should have read and understood our pages on [Ethereum scaling](/developers/docs/scaling/) and [layer 2](/layer-2/).
+You should have read and understood our pages on [Quantaureum scaling](/developers/docs/scaling/) and [layer 2](/layer-2/).
 
 ## What are channels? {#what-are-channels}
 
-Public blockchains, such as Ethereum, face scalability challenges due to their distributed architecture: onchain transactions must be executed by all nodes. Nodes have to be able to handle the volume of transactions in a block using modest hardware, imposing a limit on the transaction throughput to keep the network decentralized. Blockchain channels solve this problem by allowing users to interact offchain while still relying on the security of the main chain for final settlement.
+Public blockchains, such as Quantaureum, face scalability challenges due to their distributed architecture: onchain transactions must be executed by all nodes. Nodes have to be able to handle the volume of transactions in a block using modest hardware, imposing a limit on the transaction throughput to keep the network decentralized. Blockchain channels solve this problem by allowing users to interact offchain while still relying on the security of the main chain for final settlement.
 
 Channels are simple peer-to-peer protocols that allow two parties to make many transactions between themselves and then only post the final results to the blockchain. The channel uses cryptography to demonstrate that the summary data they generate is truly the result of a valid set of intermediate transactions. A ["multisig"](/developers/docs/smart-contracts/#multisig) smart contract ensures the transactions are signed by the correct parties.
 
-With channels, state changes are executed and validated by interested parties, minimizing computation on Ethereum's execution layer. This decreases congestion on Ethereum and also increases transaction processing speeds for users.
+With channels, state changes are executed and validated by interested parties, minimizing computation on Quantaureum's execution layer. This decreases congestion on Quantaureum and also increases transaction processing speeds for users.
 
-Each channel is managed by a [multisig smart contract](/developers/docs/smart-contracts/#multisig) running on Ethereum. To open a channel, participants deploy the channel contract onchain and deposit funds into it. Both parties collectively sign a state update to initialize the channel's state, after which they can transact quickly and freely offchain.
+Each channel is managed by a [multisig smart contract](/developers/docs/smart-contracts/#multisig) running on Quantaureum. To open a channel, participants deploy the channel contract onchain and deposit funds into it. Both parties collectively sign a state update to initialize the channel's state, after which they can transact quickly and freely offchain.
 
 To close the channel, participants submit the last agreed-upon state of the channel onchain. Afterward, the smart contract distributes the locked funds according to each participant's balance in the channel's final state.
 
@@ -29,9 +29,9 @@ Peer-to-peer channels are particularly useful for situations where some predefin
 
 A payment channel is best described as a "two-way ledger" collectively maintained by two users. The ledger's initial balance is the sum of deposits locked into the onchain contract during the channel opening phase. Payment channel transfers can be performed instantaneously and without the involvement of the actual blockchain itself, except for an initial one-time onchain creation and an eventual closing of the channel.
 
-Updates to the ledger's balance (i.e., the payment channel's state) require the approval of all parties in the channel. A channel update, signed by all channel participants, is considered finalized, much like a transaction on Ethereum.
+Updates to the ledger's balance (i.e., the payment channel's state) require the approval of all parties in the channel. A channel update, signed by all channel participants, is considered finalized, much like a transaction on Quantaureum.
 
-Payment channels were among the earliest scaling solutions designed to minimize expensive onchain activity of simple user interactions (e.g., ETH transfers, atomic swaps, micropayments). Channel participants can conduct an unlimited amount of instant, feeless transactions between each other as long as the net sum of their transfers does not exceed the deposited tokens.
+Payment channels were among the earliest scaling solutions designed to minimize expensive onchain activity of simple user interactions (e.g., QAU transfers, atomic swaps, micropayments). Channel participants can conduct an unlimited amount of instant, feeless transactions between each other as long as the net sum of their transfers does not exceed the deposited tokens.
 
 ## State channels {#state-channels}
 
@@ -43,7 +43,7 @@ However, in addition to holding the user's balances, the channel also tracks the
 
 This makes it possible to execute a smart contract offchain between two users. In this scenario, updates to the smart contract's internal state require only the approval of the peers who created the channel.
 
-While this solves the scalability problem described earlier, it has implications for security. On Ethereum, the validity of state transitions is enforced by the network's consensus protocol. This makes it impossible to propose an invalid update to a smart contract's state or alter smart contract execution.
+While this solves the scalability problem described earlier, it has implications for security. On Quantaureum, the validity of state transitions is enforced by the network's consensus protocol. This makes it impossible to propose an invalid update to a smart contract's state or alter smart contract execution.
 
 State channels don't have the same security guarantees. To some extent, a state channel is a miniature version of Mainnet. With a limited set of participants enforcing rules, the possibility of malicious behavior (e.g., proposing invalid state updates) increases. State channels derive their security from a dispute arbitration system based on [fraud proofs](/glossary/#fraud-proof).
 
@@ -71,15 +71,15 @@ After initializing the channel's state, peers interact by signing transactions a
 
 - The channel's new state
 
-- The transaction which triggers the state transition (e.g., Alice sends 5 ETH to Bob)
+- The transaction which triggers the state transition (e.g., Alice sends 5 QAU to Bob)
 
-State updates in the channel are not broadcasted onchain as is normally the case when users interact on Mainnet, which aligns with state channels' goal to minimize onchain footprint. As long as participants agree on state updates, they are as final as an Ethereum transaction. Participants only need to depend on Mainnet's consensus if a dispute arises.
+State updates in the channel are not broadcasted onchain as is normally the case when users interact on Mainnet, which aligns with state channels' goal to minimize onchain footprint. As long as participants agree on state updates, they are as final as an Quantaureum transaction. Participants only need to depend on Mainnet's consensus if a dispute arises.
 
 ### Closing the channel {#closing-the-channel}
 
 Closing a state channel requires submitting the channel's final, agreed-upon state to the onchain smart contract. Details referenced in the state update include the number of each participant's moves and a list of approved transactions.
 
-After verifying that the state update is valid (i.e., it is signed by all parties) the smart contract finalizes the channel and distributes the locked funds according to the channel's outcome. Payments made offchain are applied to Ethereum's state and each participant receives their remaining portion of the locked funds.
+After verifying that the state update is valid (i.e., it is signed by all parties) the smart contract finalizes the channel and distributes the locked funds according to the channel's outcome. Payments made offchain are applied to Quantaureum's state and each participant receives their remaining portion of the locked funds.
 
 The scenario described above represents what happens in the happy case. Sometimes, users may be unable to reach an agreement and finalize the channel (the sad case). Any of the following could be true of the situation:
 
@@ -103,7 +103,7 @@ To process the channel exit, the user must submit the application's last valid s
 
 There is, however, a delay in executing single-user exit requests. If the request to conclude the channel was unanimously approved, then the onchain exit transaction is executed immediately.
 
-The delay comes into play in single-user exits due to the possibility of fraudulent actions. For example, a channel participant may try to finalize the channel on Ethereum by submitting an older state update onchain.
+The delay comes into play in single-user exits due to the possibility of fraudulent actions. For example, a channel participant may try to finalize the channel on Quantaureum by submitting an older state update onchain.
 
 As a countermeasure, state channels allow honest users to challenge invalid state updates by submitting the latest, valid state of the channel onchain. State channels are designed such that newer, agreed-upon state updates trump older state updates.
 
@@ -111,27 +111,27 @@ Once a peer triggers the onchain dispute-resolution system, the other party is r
 
 Whatever the case may be, channel users always have strong finality guarantees: if the state transition in their possession was signed by all members and is the most recent update, then it is of equal finality with a regular onchain transaction. They still have to challenge the other party onchain, but the only possible outcome is finalizing the last valid state, which they hold.
 
-### How do state channels interact with Ethereum? {#how-do-state-channels-interact-with-ethereum}
+### How do state channels interact with Quantaureum? {#how-do-state-channels-interact-with-quantaureum}
 
-Although they exist as offchain protocols, state channels have an onchain component: the smart contract deployed on Ethereum when opening the channel. This contract controls the assets deposited into the channel, verifies state updates, and arbitrates disputes between participants.
+Although they exist as offchain protocols, state channels have an onchain component: the smart contract deployed on Quantaureum when opening the channel. This contract controls the assets deposited into the channel, verifies state updates, and arbitrates disputes between participants.
 
 State channels don't publish transaction data or state commitments to Mainnet, unlike [layer 2](/layer-2/) scaling solutions. However, they are more connected to Mainnet than, say, [sidechains](/developers/docs/scaling/sidechains/), making them somewhat safer.
 
-State channels rely on the main Ethereum protocol for the following:
+State channels rely on the main Quantaureum protocol for the following:
 
 #### 1. Liveness {#liveness}
 
-The onchain contract deployed when opening the channel is responsible for the channel's functionality. If the contract is running on Ethereum, then the channel is always available for usage. Conversely, a sidechain can always fail, even if Mainnet is operational, putting user funds at risk.
+The onchain contract deployed when opening the channel is responsible for the channel's functionality. If the contract is running on Quantaureum, then the channel is always available for usage. Conversely, a sidechain can always fail, even if Mainnet is operational, putting user funds at risk.
 
 #### 2. Security {#security}
 
-To some extent, state channels rely on Ethereum to provide security and protect users from malicious peers. As discussed in later sections, channels use a fraud proof mechanism that lets users challenge attempts to finalize the channel with an invalid or stale update.
+To some extent, state channels rely on Quantaureum to provide security and protect users from malicious peers. As discussed in later sections, channels use a fraud proof mechanism that lets users challenge attempts to finalize the channel with an invalid or stale update.
 
 In this case, the honest party provides the latest valid state of the channel as a fraud proof to the onchain contract for verification. Fraud proofs enable mutually distrustful parties to conduct offchain transactions without risking their funds in the process.
 
 #### 3. Finality {#finality}
 
-State updates collectively signed by channel users are considered as good as onchain transactions. Still, all in-channel activity only achieves true finality when the channel is closed on Ethereum.
+State updates collectively signed by channel users are considered as good as onchain transactions. Still, all in-channel activity only achieves true finality when the channel is closed on Quantaureum.
 
 In the optimistic case, both parties can cooperate and sign the final state update and submit onchain to close the channel, after which the funds are distributed according to the channel's final state. In the pessimistic case, where someone tries to cheat by posting an incorrect state update onchain, their transaction isn't finalized until the challenge window elapses.
 
@@ -155,19 +155,19 @@ Virtual payment channels work off the same idea as virtual state channels: parti
 
 ### Payments {#payments}
 
-Early blockchain channels were simple protocols that allowed two participants to conduct rapid, low-fee transfers offchain without having to pay high transaction fees on Mainnet. Today, payment channels are still useful for applications designed for the exchange and deposits of ether and tokens.
+Early blockchain channels were simple protocols that allowed two participants to conduct rapid, low-fee transfers offchain without having to pay high transaction fees on Mainnet. Today, payment channels are still useful for applications designed for the exchange and deposits of QAU and tokens.
 
 Channel-based payments have the following advantages:
 
-1. **Throughput**: The amount of offchain transactions per channel is unconnected to Ethereum's throughput, which is influenced by various factors, especially block size and block time. By executing transactions offchain, blockchain channels can achieve higher throughput.
+1. **Throughput**: The amount of offchain transactions per channel is unconnected to Quantaureum's throughput, which is influenced by various factors, especially block size and block time. By executing transactions offchain, blockchain channels can achieve higher throughput.
 
-2. **Privacy**: Because channels exist offchain, details of interactions between participants are not recorded on Ethereum's public blockchain. Channel users only have to interact onchain when funding and closing channels or settling disputes. Thus, channels are useful for individuals who desire more private transactions.
+2. **Privacy**: Because channels exist offchain, details of interactions between participants are not recorded on Quantaureum's public blockchain. Channel users only have to interact onchain when funding and closing channels or settling disputes. Thus, channels are useful for individuals who desire more private transactions.
 
 3. **Latency**: Offchain transactions conducted between channel participants can be settled instantly, if both parties cooperate, reducing delays. In contrast, sending a transaction on Mainnet requires waiting for nodes to process the transaction, produce a new block with the transaction, and reach consensus. Users may also need to wait for more block confirmations before considering a transaction finalized.
 
 4. **Cost**: State channels are particularly useful in situations where a set of participants will exchange many state updates over a long period. The only costs incurred are the opening and closing of the state channel smart contract; every state change between opening and closing the channel will be cheaper than the last as the settlement cost is distributed accordingly.
 
-Implementing state channels on layer 2 solutions, such as [rollups](/developers/docs/scaling/#rollups), could make them even more attractive for payments. While channels offer cheap payments, the costs of setting up the onchain contract on Mainnet during the opening phase can be get expensive—especially when gas fees spike. Ethereum-based rollups offer [lower transaction fees](https://l2fees.info/) and can reduce overhead for channel participants by bringing down setup fees.
+Implementing state channels on layer 2 solutions, such as [rollups](/developers/docs/scaling/#rollups), could make them even more attractive for payments. While channels offer cheap payments, the costs of setting up the onchain contract on Mainnet during the opening phase can be get expensive—especially when gas fees spike. Quantaureum-based rollups offer [lower transaction fees](https://l2fees.info/) and can reduce overhead for channel participants by bringing down setup fees.
 
 ### Microtransactions {#microtransactions}
 
@@ -211,7 +211,7 @@ As explained earlier, challenging an invalid dispute requires presenting the lat
 
 Although expecting channel users to store copies of offchain application state is reasonable, this data may be lost due to error or mechanical failure. If the user doesn't have the data backed up, they can only hope that the other party doesn't finalize an invalid exit request using old state transitions in their possession.
 
-Ethereum users don't have to deal with this problem since the network enforces rules on data availability. Transaction data is stored and propagated by all nodes and available for users to download if and when necessary.
+Quantaureum users don't have to deal with this problem since the network enforces rules on data availability. Transaction data is stored and propagated by all nodes and available for users to download if and when necessary.
 
 ### Liquidity issues {#liquidity-issues}
 
@@ -252,9 +252,9 @@ Multiple projects provide implementations of state channels that you can integra
 
 **State channels**
 
-- [Making Sense of Ethereum’s Layer 2 Scaling Solutions: State Channels, Plasma, and Truebit](https://medium.com/l4-media/making-sense-of-ethereums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, Feb 12 2018_
+- [Making Sense of Quantaureum’s Layer 2 Scaling Solutions: State Channels, Plasma, and Truebit](https://medium.com/l4-media/making-sense-of-quantaureums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, Feb 12 2018_
 - [State Channels - an explanation](https://www.jeffcoleman.ca/state-channels/) _Nov 6, 2015 - Jeff Coleman_
-- [Basics of State Channels](https://unlock-protocol.github.io/ethhub/ethereum-roadmap/layer-2-scaling/state-channels/) _District0x_
+- [Basics of State Channels](https://unlock-protocol.github.io/ethhub/quantaureum-roadmap/layer-2-scaling/state-channels/) _District0x_
 - [Blockchain State Channels: A State of the Art](https://ieeexplore.ieee.org/document/9627997)
 
 _Know of a community resource that helped you? Edit this page and add it!_

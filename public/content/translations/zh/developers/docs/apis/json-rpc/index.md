@@ -1,32 +1,32 @@
 ---
 title: JSON-RPC API
-description: "适用于以太坊客户端的无状态、轻量级远程过程调用 (RPC) 协议。"
+description: "适用于Quantaureum客户端的无状态、轻量级远程过程调用 (RPC) 协议。"
 lang: zh
 ---
 
-为了使软件应用程序能够与[以太坊](/)区块链进行交互（无论是读取区块链数据还是向网络发送交易），它必须连接到一个以太坊节点。
+为了使软件应用程序能够与[Quantaureum](/)区块链进行交互（无论是读取区块链数据还是向网络发送交易），它必须连接到一个Quantaureum节点。
 
-为此，每个[以太坊客户端](/developers/docs/nodes-and-clients/#execution-clients)都实现了 [JSON-RPC 规范](https://github.com/ethereum/execution-apis)，因此无论具体的节点或客户端实现如何，应用程序都可以依赖一组统一的方法。
+为此，每个[Quantaureum客户端](/developers/docs/nodes-and-clients/#execution-clients)都实现了 [JSON-RPC 规范](https://github.com/quantaureum/execution-apis)，因此无论具体的节点或客户端实现如何，应用程序都可以依赖一组统一的方法。
 
 [JSON-RPC](https://www.jsonrpc.org/specification) 是一种无状态、轻量级的远程过程调用 (RPC) 协议。它定义了多种数据结构及其处理规则。它与传输方式无关，因为这些概念可以在同一进程内、通过套接字、通过 HTTP 或在许多不同的消息传递环境中使用。它使用 JSON (RFC 4627) 作为数据格式。
 
 ## 客户端实现 {#client-implementations}
 
-在实现 JSON-RPC 规范时，各个以太坊客户端可能会使用不同的编程语言。请参阅各个[客户端文档](/developers/docs/nodes-and-clients/#execution-clients)，了解与特定编程语言相关的更多详细信息。我们建议查看每个客户端的文档，以获取最新的 API 支持信息。
+在实现 JSON-RPC 规范时，各个Quantaureum客户端可能会使用不同的编程语言。请参阅各个[客户端文档](/developers/docs/nodes-and-clients/#execution-clients)，了解与特定编程语言相关的更多详细信息。我们建议查看每个客户端的文档，以获取最新的 API 支持信息。
 
 ## 便捷库 {#convenience-libraries}
 
-虽然你可以选择通过 JSON-RPC API 直接与以太坊客户端交互，但对于去中心化应用 (dapp) 开发者来说，通常有更简单的选择。有许多 [JavaScript](/developers/docs/apis/javascript/#available-libraries) 和 [后端 API](/developers/docs/apis/backend/#available-libraries) 库在 JSON-RPC API 之上提供了封装。借助这些库，开发者可以使用他们选择的编程语言编写直观的单行方法，从而（在底层）初始化与以太坊交互的 JSON-RPC 请求。
+虽然你可以选择通过 JSON-RPC API 直接与Quantaureum客户端交互，但对于去中心化应用 (dapp) 开发者来说，通常有更简单的选择。有许多 [JavaScript](/developers/docs/apis/javascript/#available-libraries) 和 [后端 API](/developers/docs/apis/backend/#available-libraries) 库在 JSON-RPC API 之上提供了封装。借助这些库，开发者可以使用他们选择的编程语言编写直观的单行方法，从而（在底层）初始化与Quantaureum交互的 JSON-RPC 请求。
 
 ## 共识客户端 API {#consensus-clients}
 
-本页面主要介绍以太坊执行客户端使用的 JSON-RPC API。不过，共识客户端也有一个 RPC API，允许用户查询有关节点的信息，请求信标区块、信标状态以及直接从节点获取其他与共识相关的信息。此 API 的文档位于 [信标 API 网页](https://ethereum.github.io/beacon-APIs/#/)。
+本页面主要介绍Quantaureum执行客户端使用的 JSON-RPC API。不过，共识客户端也有一个 RPC API，允许用户查询有关节点的信息，请求信标区块、信标状态以及直接从节点获取其他与共识相关的信息。此 API 的文档位于 [信标 API 网页](https://quantaureum.github.io/beacon-APIs/#/)。
 
-节点内的客户端间通信也使用一个内部 API——也就是说，它使共识客户端和执行客户端能够交换数据。这被称为“引擎 API”（Engine API），其规范可在 [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) 上获取。
+节点内的客户端间通信也使用一个内部 API——也就是说，它使共识客户端和执行客户端能够交换数据。这被称为“引擎 API”（Engine API），其规范可在 [GitHub](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) 上获取。
 
 ## 执行客户端规范 {#spec}
 
-[在 GitHub 上阅读完整的 JSON-RPC API 规范](https://github.com/ethereum/execution-apis)。此 API 记录在[执行 API 网页](https://ethereum.github.io/execution-apis/)上，并包含一个检查器（Inspector），用于尝试所有可用的方法。
+[在 GitHub 上阅读完整的 JSON-RPC API 规范](https://github.com/quantaureum/execution-apis)。此 API 记录在[执行 API 网页](https://quantaureum.github.io/execution-apis/)上，并包含一个检查器（Inspector），用于尝试所有可用的方法。
 
 ## 约定 {#conventions}
 
@@ -62,13 +62,13 @@ lang: zh
 
 以下方法具有区块参数：
 
-- [eth_getBalance](#eth-getbalance)
-- [eth_getCode](#eth-getcode)
-- [eth_getTransactionCount](#eth-gettransactioncount)
-- [eth_getStorageAt](#eth-getstorageat)
-- [eth_call](#eth-call)
+- [qau_getBalance](#qau-getbalance)
+- [qau_getCode](#qau-getcode)
+- [qau_getTransactionCount](#qau-gettransactioncount)
+- [qau_getStorageAt](#qau-getstorageat)
+- [qau_call](#qau-call)
 
-当发出查询以太坊状态的请求时，提供的区块参数决定了区块的高度。
+当发出查询Quantaureum状态的请求时，提供的区块参数决定了区块的高度。
 
 区块参数可以使用以下选项：
 
@@ -85,7 +85,7 @@ lang: zh
 
 ## Curl 示例 {#curl-examples}
 
-下面提供了通过向以太坊节点发出 [curl](https://curl.se) 请求来使用 JSON_RPC API 的示例。每个示例都包含对特定端点、其参数、返回类型的描述，以及如何使用它的实际示例。
+下面提供了通过向Quantaureum节点发出 [curl](https://curl.se) 请求来使用 JSON_RPC API 的示例。每个示例都包含对特定端点、其参数、返回类型的描述，以及如何使用它的实际示例。
 
 curl 请求可能会返回与内容类型相关的错误消息。这是因为 `--data` 选项将内容类型设置为 `application/x-www-form-urlencoded`。如果你的节点确实对此报错，请通过在调用开头放置 `-H "Content-Type: application/json"` 来手动设置标头。这些示例也不包含 URL/IP 和端口组合，它必须是提供给 curl 的最后一个参数（例如 `127.0.0.1:8545`）。包含这些附加数据的完整 curl 请求采用以下形式：
 
@@ -95,46 +95,46 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 ## Gossip、状态与历史 {#gossip-state-history}
 
-少数核心 JSON-RPC 方法需要来自以太坊网络的数据，它们可以清晰地分为三个主要类别：_Gossip、状态和历史_。使用这些部分中的链接跳转到每个方法，或者使用目录浏览整个方法列表。
+少数核心 JSON-RPC 方法需要来自Quantaureum网络的数据，它们可以清晰地分为三个主要类别：_Gossip、状态和历史_。使用这些部分中的链接跳转到每个方法，或者使用目录浏览整个方法列表。
 
 ### Gossip 方法 {#gossip-methods}
 
 > 这些方法跟踪链的头部。这就是交易在网络中传播、进入区块以及客户端发现新区块的方式。
 
-- [eth_blockNumber](#eth-blocknumber)
-- [eth_sendRawTransaction](#eth-sendrawtransaction)
+- [qau_blockNumber](#qau-blocknumber)
+- [qau_sendRawTransaction](#qau-sendrawtransaction)
 
 ### 状态方法 {#state-methods}
 
 > 报告所有已存储数据当前状态的方法。“状态”就像一块巨大的共享内存（RAM），包括账户余额、合约数据和 Gas 估算。
 
-- [eth_getBalance](#eth-getbalance)
-- [eth_getStorageAt](#eth-getstorageat)
-- [eth_getTransactionCount](#eth-gettransactioncount)
-- [eth_getCode](#eth-getcode)
-- [eth_call](#eth-call)
-- [eth_estimateGas](#eth-estimategas)
+- [qau_getBalance](#qau-getbalance)
+- [qau_getStorageAt](#qau-getstorageat)
+- [qau_getTransactionCount](#qau-gettransactioncount)
+- [qau_getCode](#qau-getcode)
+- [qau_call](#qau-call)
+- [qau_estimateGas](#qau-estimategas)
 
 ### 历史方法 {#history-methods}
 
 > 获取追溯到创世区块的每个区块的历史记录。这就像一个巨大的仅追加文件，包括所有区块头、区块体、叔块和交易收据。
 
-- [eth_getBlockTransactionCountByHash](#eth-getblocktransactioncountbyhash)
-- [eth_getBlockTransactionCountByNumber](#eth-getblocktransactioncountbynumber)
-- [eth_getUncleCountByBlockHash](#eth-getunclecountbyblockhash)
-- [eth_getUncleCountByBlockNumber](#eth-getunclecountbyblocknumber)
-- [eth_getBlockByHash](#eth-getblockbyhash)
-- [eth_getBlockByNumber](#eth-getblockbynumber)
-- [eth_getTransactionByHash](#eth-gettransactionbyhash)
-- [eth_getTransactionByBlockHashAndIndex](#eth-gettransactionbyblockhashandindex)
-- [eth_getTransactionByBlockNumberAndIndex](#eth-gettransactionbyblocknumberandindex)
-- [eth_getTransactionReceipt](#eth-gettransactionreceipt)
-- [eth_getUncleByBlockHashAndIndex](#eth-getunclebyblockhashandindex)
-- [eth_getUncleByBlockNumberAndIndex](#eth-getunclebyblocknumberandindex)
+- [qau_getBlockTransactionCountByHash](#qau-getblocktransactioncountbyhash)
+- [qau_getBlockTransactionCountByNumber](#qau-getblocktransactioncountbynumber)
+- [qau_getUncleCountByBlockHash](#qau-getunclecountbyblockhash)
+- [qau_getUncleCountByBlockNumber](#qau-getunclecountbyblocknumber)
+- [qau_getBlockByHash](#qau-getblockbyhash)
+- [qau_getBlockByNumber](#qau-getblockbynumber)
+- [qau_getTransactionByHash](#qau-gettransactionbyhash)
+- [qau_getTransactionByBlockHashAndIndex](#qau-gettransactionbyblockhashandindex)
+- [qau_getTransactionByBlockNumberAndIndex](#qau-gettransactionbyblocknumberandindex)
+- [qau_getTransactionReceipt](#qau-gettransactionreceipt)
+- [qau_getUncleByBlockHashAndIndex](#qau-getunclebyblockhashandindex)
+- [qau_getUncleByBlockNumberAndIndex](#qau-getunclebyblocknumberandindex)
 
 ## JSON-RPC API 演练场 {#json-rpc-api-playground}
 
-你可以使用[演练场工具](https://ethereum-json-rpc.com)来发现和尝试 API 方法。它还会向你展示各个节点提供商支持哪些方法和网络。
+你可以使用[演练场工具](https://quantaureum-json-rpc.com)来发现和尝试 API 方法。它还会向你展示各个节点提供商支持哪些方法和网络。
 
 ## JSON-RPC API 方法 {#json-rpc-methods}
 
@@ -206,7 +206,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"web3_sha3","params":["0x68656c6c
 
 当前网络 ID 的完整列表可在 [chainlist.org](https://chainlist.org) 查看。一些常见的网络 ID 包括：
 
-- `1`：以太坊主网
+- `1`：Quantaureum主网
 - `11155111`：Sepolia 测试网
 - `560048`：Hoodi 测试网
 
@@ -273,9 +273,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 }
 ```
 
-### eth_protocolVersion {#eth-protocolversion}
+### qau_protocolVersion {#qau-protocolversion}
 
-返回当前的以太坊协议版本。请注意，此方法[在 Geth 中不可用](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924)。
+返回当前的Quantaureum协议版本。请注意，此方法[在 Geth 中不可用](https://github.com/quantaureum/go-quantaureum/pull/22064#issuecomment-788682924)。
 
 **参数**
 
@@ -283,13 +283,13 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 **返回**
 
-`String` - 当前的以太坊协议版本
+`String` - 当前的Quantaureum协议版本
 
 **示例**
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[],"id":67}'
 // 结果
 {
   "id":67,
@@ -298,11 +298,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 }
 ```
 
-### eth_syncing {#eth-syncing}
+### qau_syncing {#qau-syncing}
 
 返回一个包含同步状态数据的对象，或者返回 `false`。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_syncing">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_syncing">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -317,7 +317,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 `Object|Boolean`，一个包含同步状态数据的对象，或者在未同步时返回 `FALSE`：
 
 - `startingBlock`: `QUANTITY` - 开始导入的区块（只有在同步到达其头部后才会重置）
-- `currentBlock`: `QUANTITY` - 当前区块，与 eth_blockNumber 相同
+- `currentBlock`: `QUANTITY` - 当前区块，与 qau_blockNumber 相同
 - `highestBlock`: `QUANTITY` - 估计的最高区块
 
 但是，各个客户端也可能提供额外的数据。例如，Geth 返回以下内容：
@@ -367,7 +367,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}'
 // 结果
 {
   "id":1,
@@ -386,11 +386,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}
 }
 ```
 
-### eth_coinbase {#eth-coinbase}
+### qau_coinbase {#qau-coinbase}
 
 返回客户端的 Coinbase 地址。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_coinbase">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_coinbase">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -408,7 +408,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":64}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":64}'
 // 结果
 {
   "id":64,
@@ -417,11 +417,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":6
 }
 ```
 
-### eth_chainId {#eth-chainid}
+### qau_chainId {#qau-chainid}
 
 返回用于签名防重放交易的链 ID。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_chainId">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_chainId">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -437,7 +437,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":6
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67}'
 // 结果
 {
   "id":67,
@@ -446,11 +446,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67
 }
 ```
 
-### eth_mining {#eth-mining}
+### qau_mining {#qau-mining}
 
 如果客户端正在积极挖掘新区块，则返回 `true`。这只能在工作量证明 (PoW) 网络中返回 `true`，并且自[合并](/roadmap/merge/)以来，在某些客户端中可能不可用。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_mining">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_mining">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -466,7 +466,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}'
 //
 {
   "id":71,
@@ -475,11 +475,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}
 }
 ```
 
-### eth_hashrate {#eth-hashrate}
+### qau_hashrate {#qau-hashrate}
 
 返回节点挖矿时每秒的哈希次数。这只能为工作量证明网络返回 `true`，并且自[合并](/roadmap/merge/)以来，在某些客户端中可能不可用。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_hashrate">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_hashrate">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -495,7 +495,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":71}'
 // 结果
 {
   "id":71,
@@ -504,11 +504,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":7
 }
 ```
 
-### eth_gasPrice {#eth-gasprice}
+### qau_gasPrice {#qau-gasprice}
 
 返回当前每单位 Gas 价格的估算值（单位为 Wei）。例如，贝苏客户端默认检查最近的 100 个区块并返回 Gas 单价的中位数。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_gasPrice">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_gasPrice">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -524,7 +524,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":7
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":73}'
 // 结果
 {
   "id":73,
@@ -533,11 +533,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":7
 }
 ```
 
-### eth_accounts {#eth-accounts}
+### qau_accounts {#qau-accounts}
 
 返回客户端拥有的地址列表。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_accounts">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_accounts">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -553,7 +553,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":7
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1}'
 // 结果
 {
   "id":1,
@@ -562,11 +562,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1
 }
 ```
 
-### eth_blockNumber {#eth-blocknumber}
+### qau_blockNumber {#qau-blocknumber}
 
 返回最新区块的编号。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_blockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_blockNumber">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -582,7 +582,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":83}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id":83}'
 // 结果
 {
   "id":83,
@@ -591,11 +591,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id
 }
 ```
 
-### eth_getBalance {#eth-getbalance}
+### qau_getBalance {#qau-getbalance}
 
 返回给定地址的账户余额。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBalance">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBalance">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -616,7 +616,7 @@ params: ["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"]
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
 // 结果
 {
   "id":1,
@@ -625,11 +625,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407
 }
 ```
 
-### eth_getStorageAt {#eth-getstorageat}
+### qau_getStorageAt {#qau-getstorageat}
 
 返回给定地址的存储位置的值。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getStorageAt">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getStorageAt">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -660,7 +660,7 @@ contract Storage {
 检索 pos0 的值非常简单：
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 ```
 
@@ -693,15 +693,15 @@ undefined
 现在来获取存储：
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-### eth_getTransactionCount {#eth-gettransactioncount}
+### qau_getTransactionCount {#qau-gettransactioncount}
 
 返回从某个地址_发出_的交易数量。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionCount">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionCount">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -725,7 +725,7 @@ params: [
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
 // 结果
 {
   "id":1,
@@ -734,11 +734,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params
 }
 ```
 
-### eth_getBlockTransactionCountByHash {#eth-getblocktransactioncountbyhash}
+### qau_getBlockTransactionCountByHash {#qau-getblocktransactioncountbyhash}
 
 返回与给定区块哈希匹配的区块中的交易数量。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -758,7 +758,7 @@ params: ["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"]
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
 // 结果
 {
   "id":1,
@@ -767,11 +767,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHa
 }
 ```
 
-### eth_getBlockTransactionCountByNumber {#eth-getblocktransactioncountbynumber}
+### qau_getBlockTransactionCountByNumber {#qau-getblocktransactioncountbynumber}
 
 返回与给定区块编号匹配的区块中的交易数量。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -793,7 +793,7 @@ params: [
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
 // 结果
 {
   "id":1,
@@ -802,11 +802,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNu
 }
 ```
 
-### eth_getUncleCountByBlockHash {#eth-getunclecountbyblockhash}
+### qau_getUncleCountByBlockHash {#qau-getunclecountbyblockhash}
 
 返回与给定区块哈希匹配的区块中的叔块数量。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -826,7 +826,7 @@ params: ["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"]
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
 // 结果
 {
   "id":1,
@@ -835,11 +835,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","p
 }
 ```
 
-### eth_getUncleCountByBlockNumber {#eth-getunclecountbyblocknumber}
+### qau_getUncleCountByBlockNumber {#qau-getunclecountbyblocknumber}
 
 返回与给定区块号匹配的区块中的叔块数量。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -861,7 +861,7 @@ params: [
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
 // 结果
 {
   "id":1,
@@ -870,11 +870,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber",
 }
 ```
 
-### eth_getCode {#eth-getcode}
+### qau_getCode {#qau-getcode}
 
 返回给定地址的代码。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getCode">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getCode">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -898,7 +898,7 @@ params: [
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
 // 结果
 {
   "id":1,
@@ -907,11 +907,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA
 }
 ```
 
-### eth_sign {#eth-sign}
+### qau_sign {#qau-sign}
 
-sign 方法使用 `sign(keccak256("\x19Ethereum Signed Message:\n" + len(message) + message)))` 计算以太坊特定的签名。
+sign 方法使用 `sign(keccak256("\x19Quantaureum Signed Message:\n" + len(message) + message)))` 计算Quantaureum特定的签名。
 
-通过在消息中添加前缀，可以使计算出的签名被识别为以太坊特定的签名。这可以防止恶意去中心化应用 (dapp) 签署任意数据（例如交易）并使用该签名冒充受害者的滥用行为。
+通过在消息中添加前缀，可以使计算出的签名被识别为Quantaureum特定的签名。这可以防止恶意去中心化应用 (dapp) 签署任意数据（例如交易）并使用该签名冒充受害者的滥用行为。
 
 注意：用于签名的地址必须已解锁。
 
@@ -928,7 +928,7 @@ sign 方法使用 `sign(keccak256("\x19Ethereum Signed Message:\n" + len(message
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
 // 结果
 {
   "id":1,
@@ -937,9 +937,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d37
 }
 ```
 
-### eth_signTransaction {#eth-signtransaction}
+### qau_signTransaction {#qau-signtransaction}
 
-签名一笔交易，该交易可以在稍后使用 [eth_sendRawTransaction](#eth-sendrawtransaction) 提交到网络。
+签名一笔交易，该交易可以在稍后使用 [qau_sendRawTransaction](#qau-sendrawtransaction) 提交到网络。
 
 **参数**
 
@@ -962,7 +962,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d37
 
 ```js
 // 请求
-curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
+curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "qau_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
 // 结果
 {
     "id": 1,
@@ -971,7 +971,7 @@ curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","
 }
 ```
 
-### eth_sendTransaction {#eth-sendtransaction}
+### qau_sendTransaction {#qau-sendtransaction}
 
 如果 data 字段包含代码，则创建新的消息调用交易或合约创建交易，并使用 `from` 中指定的账户对其进行签名。
 
@@ -1005,13 +1005,13 @@ params: [
 
 `DATA`，32 字节 - 交易哈希；如果交易尚不可用，则为零哈希。
 
-在你创建合约时，如果交易已被打包到区块中，请使用 [eth_getTransactionReceipt](#eth-gettransactionreceipt) 获取合约地址。
+在你创建合约时，如果交易已被打包到区块中，请使用 [qau_getTransactionReceipt](#qau-gettransactionreceipt) 获取合约地址。
 
 **示例**
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendTransaction","params":[{see above}],"id":1}'
 // 结果
 {
   "id":1,
@@ -1020,7 +1020,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{
 }
 ```
 
-### eth_sendRawTransaction {#eth-sendrawtransaction}
+### qau_sendRawTransaction {#qau-sendrawtransaction}
 
 为已签名的交易创建新的消息调用交易或合约创建。
 
@@ -1038,13 +1038,13 @@ params: [
 
 `DATA`，32 字节 - 交易哈希，如果交易尚不可用，则为零哈希。
 
-如果你创建了合约，在交易被打包进区块后，请使用 [eth_getTransactionReceipt](#eth-gettransactionreceipt) 来获取合约地址。
+如果你创建了合约，在交易被打包进区块后，请使用 [qau_getTransactionReceipt](#qau-gettransactionreceipt) 来获取合约地址。
 
 **示例**
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params":[{see above}],"id":1}'
 // 结果
 {
   "id":1,
@@ -1053,11 +1053,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 }
 ```
 
-### eth_call {#eth-call}
+### qau_call {#qau-call}
 
 立即执行一个新的消息调用，而无需在区块链上创建交易。通常用于执行只读的智能合约函数，例如 ERC-20 合约的 `balanceOf`。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_call">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_call">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -1067,10 +1067,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 
 - `from`: `DATA`，20 字节 - （可选）发送交易的地址。
 - `to`: `DATA`，20 字节 - 交易指向的地址。
-- `gas`: `QUANTITY` - （可选）为交易执行提供的 Gas 整数。eth_call 消耗零 Gas，但某些执行可能需要此参数。
+- `gas`: `QUANTITY` - （可选）为交易执行提供的 Gas 整数。qau_call 消耗零 Gas，但某些执行可能需要此参数。
 - `gasPrice`: `QUANTITY` - （可选）用于每个付费 Gas 的 gasPrice 整数
 - `value`: `QUANTITY` - （可选）随此交易发送的值的整数
-- `input`: `DATA` - （可选）方法签名和编码参数的哈希。有关详细信息，请参阅 [Solidity 文档中的以太坊合约 ABI](https://docs.soliditylang.org/en/latest/abi-spec.html)。
+- `input`: `DATA` - （可选）方法签名和编码参数的哈希。有关详细信息，请参阅 [Solidity 文档中的Quantaureum合约 ABI](https://docs.soliditylang.org/en/latest/abi-spec.html)。
 
 2. `QUANTITY|TAG` - 整数区块号，或字符串 `"latest"`、`"earliest"`、`"pending"`、`"safe"` 或 `"finalized"`，请参阅[区块参数](/developers/docs/apis/json-rpc/#block-parameter)
 
@@ -1082,7 +1082,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}],"id":1}'
 // 结果
 {
   "id":1,
@@ -1091,17 +1091,17 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}]
 }
 ```
 
-### eth_estimateGas {#eth-estimategas}
+### qau_estimateGas {#qau-estimategas}
 
 生成并返回完成该交易所需 Gas 的估算值。该交易不会被添加到区块链中。请注意，由于 EVM 机制和节点性能等多种原因，估算值可能会大大超过交易实际使用的 Gas 量。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_estimateGas">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_estimateGas">
   在演练场中尝试此端点
 </ButtonLink>
 
 **参数**
 
-参见 [eth_call](#eth-call) 参数，但所有属性都是可选的。如果未指定 gas 上限，Geth 会将待处理区块的区块 gas 上限作为上限。因此，当 Gas 量高于待处理区块的 gas 上限时，返回的估算值可能不足以执行该调用/交易。
+参见 [qau_call](#qau-call) 参数，但所有属性都是可选的。如果未指定 gas 上限，Geth 会将待处理区块的区块 gas 上限作为上限。因此，当 Gas 量高于待处理区块的 gas 上限时，返回的估算值可能不足以执行该调用/交易。
 
 **返回值**
 
@@ -1111,7 +1111,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}]
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see above}],"id":1}'
 // 结果
 {
   "id":1,
@@ -1120,11 +1120,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see 
 }
 ```
 
-### eth_getBlockByHash {#eth-getblockbyhash}
+### qau_getBlockByHash {#qau-getblockbyhash}
 
 根据哈希返回关于某个区块的信息。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByHash">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -1168,7 +1168,7 @@ params: [
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
 // 结果
 {
   "jsonrpc": "2.0",
@@ -1200,11 +1200,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0
 }
 ```
 
-### eth_getBlockByNumber {#eth-getblockbynumber}
+### qau_getBlockByNumber {#qau-getblockbynumber}
 
 根据区块号返回有关区块的信息。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByNumber">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -1221,22 +1221,22 @@ params: [
 ```
 
 **返回值**
-请参阅 [eth_getBlockByHash](#eth-getblockbyhash)
+请参阅 [qau_getBlockByHash](#qau-getblockbyhash)
 
 **示例**
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["0x1b4", true],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByNumber","params":["0x1b4", true],"id":1}'
 ```
 
-结果请参阅 [eth_getBlockByHash](#eth-getblockbyhash)
+结果请参阅 [qau_getBlockByHash](#qau-getblockbyhash)
 
-### eth_getTransactionByHash {#eth-gettransactionbyhash}
+### qau_getTransactionByHash {#qau-gettransactionbyhash}
 
 返回通过交易哈希请求的交易信息。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByHash">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -1271,7 +1271,7 @@ params: ["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"]
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
 // 结果
 {
   "jsonrpc":"2.0",
@@ -1295,11 +1295,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","param
 }
 ```
 
-### eth_getTransactionByBlockHashAndIndex {#eth-gettransactionbyblockhashandindex}
+### qau_getTransactionByBlockHashAndIndex {#qau-gettransactionbyblockhashandindex}
 
 通过区块哈希和交易索引位置返回有关交易的信息。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -1316,22 +1316,22 @@ params: [
 ```
 
 **返回值**
-请参阅 [eth_getTransactionByHash](#eth-gettransactionbyhash)
+请参阅 [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
 **示例**
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-结果请参阅 [eth_getTransactionByHash](#eth-gettransactionbyhash)
+结果请参阅 [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
-### eth_getTransactionByBlockNumberAndIndex {#eth-gettransactionbyblocknumberandindex}
+### qau_getTransactionByBlockNumberAndIndex {#qau-gettransactionbyblocknumberandindex}
 
 通过区块号和交易索引位置返回关于某笔交易的信息。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -1348,18 +1348,18 @@ params: [
 ```
 
 **返回值**
-请参阅 [eth_getTransactionByHash](#eth-gettransactionbyhash)
+请参阅 [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
 **示例**
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
 ```
 
-结果请参阅 [eth_getTransactionByHash](#eth-gettransactionbyhash)
+结果请参阅 [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
-### eth_getTransactionReceipt {#eth-gettransactionreceipt}
+### qau_getTransactionReceipt {#qau-gettransactionreceipt}
 
 通过交易哈希返回交易的收据。
 
@@ -1399,7 +1399,7 @@ params: ["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"]
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
 // 结果
 {
   "jsonrpc": "2.0",
@@ -1427,11 +1427,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","para
 }
 ```
 
-### eth_getUncleByBlockHashAndIndex {#eth-getunclebyblockhashandindex}
+### qau_getUncleByBlockHashAndIndex {#qau-getunclebyblockhashandindex}
 
 通过哈希和叔块索引位置返回关于某个区块的叔块信息。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -1448,24 +1448,24 @@ params: [
 ```
 
 **返回**
-请参阅 [eth_getBlockByHash](#eth-getblockbyhash)
+请参阅 [qau_getBlockByHash](#qau-getblockbyhash)
 
 **示例**
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-结果请参阅 [eth_getBlockByHash](#eth-getblockbyhash)
+结果请参阅 [qau_getBlockByHash](#qau-getblockbyhash)
 
 **注意**：叔块不包含单独的交易。
 
-### eth_getUncleByBlockNumberAndIndex {#eth-getunclebyblocknumberandindex}
+### qau_getUncleByBlockNumberAndIndex {#qau-getunclebyblocknumberandindex}
 
 返回有关指定区块编号和叔块索引位置的叔块信息。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
   在演练场中尝试端点
 </ButtonLink>
 
@@ -1482,7 +1482,7 @@ params: [
 ```
 
 **返回**
-请参阅 [eth_getBlockByHash](#eth-getblockbyhash)
+请参阅 [qau_getBlockByHash](#qau-getblockbyhash)
 
 **注意**：叔块不包含单独的交易。
 
@@ -1490,15 +1490,15 @@ params: [
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
 ```
 
-结果请参阅 [eth_getBlockByHash](#eth-getblockbyhash)
+结果请参阅 [qau_getBlockByHash](#qau-getblockbyhash)
 
-### eth_newFilter {#eth-newfilter}
+### qau_newFilter {#qau-newfilter}
 
 根据过滤器选项创建一个过滤器对象，以便在状态发生变化（日志）时发出通知。
-要检查状态是否已更改，请调用 [eth_getFilterChanges](#eth-getfilterchanges)。
+要检查状态是否已更改，请调用 [qau_getFilterChanges](#qau-getfilterchanges)。
 
 **关于指定主题过滤器的说明：**
 主题是依赖于顺序的。包含主题 [A, B] 的日志的交易将与以下主题过滤器匹配：
@@ -1542,7 +1542,7 @@ params: [
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
 // 结果
 {
   "id":1,
@@ -1551,10 +1551,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topic
 }
 ```
 
-### eth_newBlockFilter {#eth-newblockfilter}
+### qau_newBlockFilter {#qau-newblockfilter}
 
 在节点中创建一个过滤器，以便在有新区块到达时发出通知。
-要检查状态是否已更改，请调用 [eth_getFilterChanges](#eth-getfilterchanges)。
+要检查状态是否已更改，请调用 [qau_getFilterChanges](#qau-getfilterchanges)。
 
 **参数**
 无
@@ -1566,7 +1566,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topic
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newBlockFilter","params":[],"id":73}'
 // 结果
 {
   "id":1,
@@ -1575,10 +1575,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],
 }
 ```
 
-### eth_newPendingTransactionFilter {#eth-newpendingtransactionfilter}
+### qau_newPendingTransactionFilter {#qau-newpendingtransactionfilter}
 
 在节点中创建一个过滤器，以便在新的待处理交易到达时发出通知。
-要检查状态是否已更改，请调用 [eth_getFilterChanges](#eth-getfilterchanges)。
+要检查状态是否已更改，请调用 [qau_getFilterChanges](#qau-getfilterchanges)。
 
 **参数**
 无
@@ -1590,7 +1590,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newPendingTransactionFilter","params":[],"id":73}'
 // 结果
 {
   "id":1,
@@ -1599,10 +1599,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter"
 }
 ```
 
-### eth_uninstallFilter {#eth-uninstallfilter}
+### qau_uninstallFilter {#qau-uninstallfilter}
 
 卸载具有给定 ID 的过滤器。当不再需要监听时，应始终调用此方法。
-此外，如果一段时间内没有使用 [eth_getFilterChanges](#eth-getfilterchanges) 请求过滤器，它们将会超时。
+此外，如果一段时间内没有使用 [qau_getFilterChanges](#qau-getfilterchanges) 请求过滤器，它们将会超时。
 
 **参数**
 
@@ -1621,7 +1621,7 @@ params: [
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["0xb"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_uninstallFilter","params":["0xb"],"id":73}'
 // 结果
 {
   "id":1,
@@ -1630,7 +1630,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["
 }
 ```
 
-### eth_getFilterChanges {#eth-getfilterchanges}
+### qau_getFilterChanges {#qau-getfilterchanges}
 
 过滤器的轮询方法，返回自上次轮询以来发生的日志数组。
 
@@ -1647,9 +1647,9 @@ params: [
 **返回**
 `Array` - 日志对象数组，如果自上次轮询以来没有任何变化，则返回空数组。
 
-- 对于使用 `eth_newBlockFilter` 创建的过滤器，返回的是区块哈希（`DATA`，32 字节），例如 `["0x3454645634534..."]`。
-- 对于使用 `eth_newPendingTransactionFilter ` 创建的过滤器，返回的是交易哈希（`DATA`，32 字节），例如 `["0x6345343454645..."]`。
-- 对于使用 `eth_newFilter` 创建的过滤器，日志是包含以下参数的对象：
+- 对于使用 `qau_newBlockFilter` 创建的过滤器，返回的是区块哈希（`DATA`，32 字节），例如 `["0x3454645634534..."]`。
+- 对于使用 `qau_newPendingTransactionFilter ` 创建的过滤器，返回的是交易哈希（`DATA`，32 字节），例如 `["0x6345343454645..."]`。
+- 对于使用 `qau_newFilter` 创建的过滤器，日志是包含以下参数的对象：
   - `removed`: `TAG` - 如果由于链重组导致日志被移除，则为 `true`。如果是有效日志，则为 `false`。
   - `logIndex`: `QUANTITY` - 日志在区块中索引位置的整数。如果是待处理日志，则为 `null`。
   - `transactionIndex`: `QUANTITY` - 创建该日志的交易索引位置的整数。如果是待处理日志，则为 `null`。
@@ -1664,7 +1664,7 @@ params: [
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":["0x16"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterChanges","params":["0x16"],"id":73}'
 // 结果
 {
   "id":1,
@@ -1684,7 +1684,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":[
 }
 ```
 
-### eth_getFilterLogs {#eth-getfilterlogs}
+### qau_getFilterLogs {#qau-getfilterlogs}
 
 返回与给定 id 的过滤器匹配的所有日志的数组。
 
@@ -1699,18 +1699,18 @@ params: [
 ```
 
 **返回值**
-请参阅 [eth_getFilterChanges](#eth-getfilterchanges)
+请参阅 [qau_getFilterChanges](#qau-getfilterchanges)
 
 **示例**
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterLogs","params":["0x16"],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterLogs","params":["0x16"],"id":74}'
 ```
 
-结果请参阅 [eth_getFilterChanges](#eth-getfilterchanges)
+结果请参阅 [qau_getFilterChanges](#qau-getfilterchanges)
 
-### eth_getLogs {#eth-getlogs}
+### qau_getLogs {#qau-getlogs}
 
 返回与给定过滤器对象匹配的所有日志的数组。
 
@@ -1735,24 +1735,24 @@ params: [
 ```
 
 **返回值**
-请参阅 [eth_getFilterChanges](#eth-getfilterchanges)
+请参阅 [qau_getFilterChanges](#qau-getfilterchanges)
 
 **示例**
 
 ```js
 // 请求
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
 ```
 
-结果请参阅 [eth_getFilterChanges](#eth-getfilterchanges)
+结果请参阅 [qau_getFilterChanges](#qau-getfilterchanges)
 
 ## 用法示例 {#usage-example}
 
 ### 使用 JSON-RPC 部署合约 {#deploying-contract}
 
-本节包含仅使用 RPC 接口部署合约的演示。还有其他部署合约的途径可以抽象掉这种复杂性——例如，使用构建在 RPC 接口之上的库，如 [Web3.js](https://web3js.readthedocs.io/) 和 [Web3.py](https://github.com/ethereum/web3.py)。这些抽象通常更容易理解且不易出错，但了解其底层原理仍然很有帮助。
+本节包含仅使用 RPC 接口部署合约的演示。还有其他部署合约的途径可以抽象掉这种复杂性——例如，使用构建在 RPC 接口之上的库，如 [Web3.js](https://web3js.readthedocs.io/) 和 [Web3.py](https://github.com/quantaureum/web3.py)。这些抽象通常更容易理解且不易出错，但了解其底层原理仍然很有帮助。
 
-以下是一个名为 `Multiply7` 的简单智能合约，它将使用 JSON-RPC 接口部署到以太坊节点。本教程假设读者已经在运行一个 Geth 节点。有关节点和客户端的更多信息，请参见[此处](/developers/docs/nodes-and-clients/run-a-node)。请参阅各个[客户端](/developers/docs/nodes-and-clients/)文档，了解如何为非 Geth 客户端启动 HTTP JSON-RPC。大多数客户端默认在 `localhost:8545` 上提供服务。
+以下是一个名为 `Multiply7` 的简单智能合约，它将使用 JSON-RPC 接口部署到Quantaureum节点。本教程假设读者已经在运行一个 Geth 节点。有关节点和客户端的更多信息，请参见[此处](/developers/docs/nodes-and-clients/run-a-node)。请参阅各个[客户端](/developers/docs/nodes-and-clients/)文档，了解如何为非 Geth 客户端启动 HTTP JSON-RPC。大多数客户端默认在 `localhost:8545` 上提供服务。
 
 ```javascript
 contract Multiply7 {
@@ -1764,7 +1764,7 @@ contract Multiply7 {
 }
 ```
 
-首先要做的是确保 HTTP RPC 接口已启用。这意味着我们在启动时为 Geth 提供 `--http` 标志。在本例中，我们在私有开发链上使用 Geth 节点。使用这种方法，我们不需要真实网络上的以太币。
+首先要做的是确保 HTTP RPC 接口已启用。这意味着我们在启动时为 Geth 提供 `--http` 标志。在本例中，我们在私有开发链上使用 Geth 节点。使用这种方法，我们不需要真实网络上的QAU。
 
 ```bash
 geth --http --dev console 2>>geth.log
@@ -1775,21 +1775,21 @@ geth --http --dev console 2>>geth.log
 我们可以通过使用 [curl](https://curl.se) 检索 Coinbase 地址（通过从账户数组中获取第一个地址）和余额来验证接口是否正在运行。请注意，这些示例中的数据在你的本地节点上会有所不同。如果你想尝试这些命令，请将第二个 curl 请求中的请求参数替换为第一个请求返回的结果。
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
 {"id":1,"jsonrpc":"2.0","result":["0x9b1d35635cc34752ca54713bb99d38614f63c955"]}
 
-curl --data '{"jsonrpc":"2.0","method":"eth_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
 {"id":2,"jsonrpc":"2.0","result":"0x1639e49bba16280000"}
 ```
 
-由于数字是十六进制编码的，余额将以十六进制字符串的形式返回，单位为 Wei。如果我们想以数字形式获取以太币余额，我们可以使用 Geth 控制台中的 web3。
+由于数字是十六进制编码的，余额将以十六进制字符串的形式返回，单位为 Wei。如果我们想以数字形式获取QAU余额，我们可以使用 Geth 控制台中的 web3。
 
 ```javascript
-web3.fromWei("0x1639e49bba16280000", "ether")
+web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-现在我们的私有开发链上有一些以太币了，我们可以部署合约。第一步是将 Multiply7 合约编译为可以发送到 EVM 的字节码。要安装 Solidity 编译器 solc，请遵循 [Solidity 文档](https://docs.soliditylang.org/en/latest/installing-solidity.html)。（你可能希望使用较旧的 `solc` 版本，以匹配[我们示例中使用的编译器版本](https://github.com/ethereum/solidity/releases/tag/v0.4.20)。）
+现在我们的私有开发链上有一些QAU了，我们可以部署合约。第一步是将 Multiply7 合约编译为可以发送到 EVM 的字节码。要安装 Solidity 编译器 solc，请遵循 [Solidity 文档](https://docs.soliditylang.org/en/latest/installing-solidity.html)。（你可能希望使用较旧的 `solc` 版本，以匹配[我们示例中使用的编译器版本](https://github.com/quantaureum/solidity/releases/tag/v0.4.20)。）
 
 下一步是将 Multiply7 合约编译为可以发送到 EVM 的字节码。
 
@@ -1801,24 +1801,24 @@ Binary:
 6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029
 ```
 
-现在我们有了编译后的代码，我们需要确定部署它需要花费多少 Gas。RPC 接口有一个 `eth_estimateGas` 方法，可以为我们提供估算值。
+现在我们有了编译后的代码，我们需要确定部署它需要花费多少 Gas。RPC 接口有一个 `qau_estimateGas` 方法，可以为我们提供估算值。
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":5,"result":"0x1c31e"}
 ```
 
 最后部署合约。
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
 {"id":6,"jsonrpc":"2.0","result":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"}
 ```
 
-交易被节点接受并返回一个交易哈希。此哈希可用于跟踪交易。下一步是确定我们合约部署的地址。每笔执行的交易都会创建一个收据。此收据包含有关交易的各种信息，例如交易包含在哪个区块中以及 EVM 使用了多少 Gas。如果交易创建了一个合约，它还将包含合约地址。我们可以使用 `eth_getTransactionReceipt` RPC 方法检索收据。
+交易被节点接受并返回一个交易哈希。此哈希可用于跟踪交易。下一步是确定我们合约部署的地址。每笔执行的交易都会创建一个收据。此收据包含有关交易的各种信息，例如交易包含在哪个区块中以及 EVM 使用了多少 Gas。如果交易创建了一个合约，它还将包含合约地址。我们可以使用 `qau_getTransactionReceipt` RPC 方法检索收据。
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":7,"result":{"blockHash":"0x77b1a4f6872b9066312de3744f60020cbd8102af68b1f6512a05b7619d527a4f","blockNumber":"0x1","contractAddress":"0x4d03d617d700cf81935d7f797f4e2ae719648262","cumulativeGasUsed":"0x1c31e","from":"0x9b1d35635cc34752ca54713bb99d38614f63c955","gasUsed":"0x1c31e","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","status":"0x1","to":null,"transactionHash":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf","transactionIndex":"0x0"}}
 ```
 
@@ -1826,9 +1826,9 @@ curl --data '{"jsonrpc":"2.0","method": "eth_getTransactionReceipt", "params": [
 
 #### 与智能合约交互 {#interacting-with-smart-contract}
 
-在本例中，我们将使用 `eth_sendTransaction` 向合约的 `multiply` 方法发送一笔交易。
+在本例中，我们将使用 `qau_sendTransaction` 向合约的 `multiply` 方法发送一笔交易。
 
-`eth_sendTransaction` 需要几个参数，特别是 `from`、`to` 和 `data`。`From` 是我们账户的公共地址，`to` 是合约地址。`data` 参数包含一个有效负载，该负载定义了必须调用哪个方法以及使用哪些参数。这就是 [ABI（应用程序二进制接口）](https://docs.soliditylang.org/en/latest/abi-spec.html) 发挥作用的地方。ABI 是一个 JSON 文件，定义了如何为 EVM 定义和编码数据。
+`qau_sendTransaction` 需要几个参数，特别是 `from`、`to` 和 `data`。`From` 是我们账户的公共地址，`to` 是合约地址。`data` 参数包含一个有效负载，该负载定义了必须调用哪个方法以及使用哪些参数。这就是 [ABI（应用程序二进制接口）](https://docs.soliditylang.org/en/latest/abi-spec.html) 发挥作用的地方。ABI 是一个 JSON 文件，定义了如何为 EVM 定义和编码数据。
 
 有效负载的字节定义了调用合约中的哪个方法。这是对函数名称及其参数类型进行 Keccak 哈希计算后的前 4 个字节，并进行了十六进制编码。multiply 函数接受一个 uint，它是 uint256 的别名。这给我们留下了：
 
@@ -1848,7 +1848,7 @@ web3.sha3("multiply(uint256)").substring(0, 10)
 现在可以将其发送到节点：
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
 {"id":8,"jsonrpc":"2.0","result":"0x759cf065cbc22e9d779748dc53763854e5376eea07409e590c990eafc0869d74"}
 ```
 

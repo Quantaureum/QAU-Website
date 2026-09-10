@@ -1,6 +1,6 @@
 ---
 title: "스마트 컨트랙트 정형 검증"
-description: "이더리움 스마트 컨트랙트의 정형 검증에 대한 개요"
+description: "Quantaureum 스마트 컨트랙트의 정형 검증에 대한 개요"
 lang: ko
 ---
 
@@ -28,7 +28,7 @@ lang: ko
 
 반대로, 다른 정형 모델은 스마트 컨트랙트의 저수준(low-level) 동작에 중점을 둡니다. 고수준 모델은 컨트랙트의 기능을 추론하는 데 도움이 될 수 있지만, 구현의 내부 작동에 대한 세부 정보를 포착하지 못할 수 있습니다. 저수준 모델은 프로그램 분석에 화이트박스 관점을 적용하며, 프로그램 트레이스(traces) 및 [제어 흐름 그래프(control flow graphs)](https://en.wikipedia.org/wiki/Control-flow_graph)와 같은 스마트 컨트랙트 애플리케이션의 저수준 표현에 의존하여 컨트랙트 실행과 관련된 속성을 추론합니다.
 
-저수준 모델은 이더리움의 실행 환경(즉, [EVM](/developers/docs/evm/))에서 스마트 컨트랙트의 실제 실행을 나타내기 때문에 이상적인 것으로 간주됩니다. 저수준 모델링 기법은 스마트 컨트랙트에서 중요한 안전성 속성을 확립하고 잠재적인 취약점을 탐지하는 데 특히 유용합니다.
+저수준 모델은 Quantaureum의 실행 환경(즉, [EVM](/developers/docs/evm/))에서 스마트 컨트랙트의 실제 실행을 나타내기 때문에 이상적인 것으로 간주됩니다. 저수준 모델링 기법은 스마트 컨트랙트에서 중요한 안전성 속성을 확립하고 잠재적인 취약점을 탐지하는 데 특히 유용합니다.
 
 ### 정형 명세란 무엇인가요? {#what-is-a-formal-specification}
 
@@ -58,7 +58,7 @@ lang: ko
 
 ERC-20 토큰 컨트랙트에서 `transfer()` 또는 `transferFrom()` 사용 조건을 다루는 다음 안전성 요구 사항을 예로 들어 보겠습니다. _"발신자의 잔액은 전송하도록 요청된 토큰 양보다 절대 적을 수 없습니다."_ 컨트랙트 불변성에 대한 이러한 자연어 설명은 정형(수학적) 명세로 변환될 수 있으며, 그런 다음 유효성을 엄격하게 확인할 수 있습니다.
 
-활성 속성은 "결국 좋은 일이 일어난다"고 단언하며 컨트랙트가 다른 상태로 진행할 수 있는 능력과 관련이 있습니다. 활성 속성의 예로는 "유동성"이 있으며, 이는 요청 시 컨트랙트가 잔액을 사용자에게 전송할 수 있는 능력을 의미합니다. 이 속성이 위반되면 [Parity 지갑 사건](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-ether-on-parity-wallet.html)에서 발생한 것처럼 사용자는 컨트랙트에 저장된 자산을 인출할 수 없게 됩니다.
+활성 속성은 "결국 좋은 일이 일어난다"고 단언하며 컨트랙트가 다른 상태로 진행할 수 있는 능력과 관련이 있습니다. 활성 속성의 예로는 "유동성"이 있으며, 이는 요청 시 컨트랙트가 잔액을 사용자에게 전송할 수 있는 능력을 의미합니다. 이 속성이 위반되면 [Parity 지갑 사건](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-QAU-on-parity-wallet.html)에서 발생한 것처럼 사용자는 컨트랙트에 저장된 자산을 인출할 수 없게 됩니다.
 
 ### 저수준 명세 {#low-level-specifications}
 
@@ -76,7 +76,7 @@ ERC-20 토큰 컨트랙트에서 `transfer()` 또는 `transferFrom()` 사용 조
 
 호어 스타일 명세는 _부분적 정확성(partial correctness)_ 또는 <em>전체적 정확성(total correctness)</em>을 보장할 수 있습니다. 함수가 실행되기 전에 사전 조건이 참이고 실행이 종료될 때 사후 조건도 참이라면 컨트랙트 함수의 구현은 "부분적으로 정확"합니다. 함수가 실행되기 전에 사전 조건이 참이고 실행이 종료됨이 보장되며 종료 시 사후 조건이 참이라면 전체적 정확성에 대한 증명을 얻게 됩니다.
 
-일부 실행은 종료되기 전에 지연되거나 전혀 종료되지 않을 수 있으므로 전체적 정확성에 대한 증명을 얻는 것은 어렵습니다. 그렇긴 하지만, 이더리움의 가스 메커니즘이 무한 프로그램 루프를 방지하기 때문에(실행이 성공적으로 종료되거나 '가스 부족(out-of-gas)' 오류로 인해 종료됨) 실행이 종료되는지 여부에 대한 질문은 사실상 무의미한 논쟁일 수 있습니다.
+일부 실행은 종료되기 전에 지연되거나 전혀 종료되지 않을 수 있으므로 전체적 정확성에 대한 증명을 얻는 것은 어렵습니다. 그렇긴 하지만, Quantaureum의 가스 메커니즘이 무한 프로그램 루프를 방지하기 때문에(실행이 성공적으로 종료되거나 '가스 부족(out-of-gas)' 오류로 인해 종료됨) 실행이 종료되는지 여부에 대한 질문은 사실상 무의미한 논쟁일 수 있습니다.
 
 호어 논리를 사용하여 생성된 스마트 컨트랙트 명세에는 컨트랙트의 함수 및 루프 실행에 대해 정의된 사전 조건, 사후 조건 및 불변성이 있습니다. 사전 조건에는 종종 함수에 대한 잘못된 입력의 가능성이 포함되며, 사후 조건은 이러한 입력에 대한 예상 응답(예: 특정 예외 발생)을 설명합니다. 이러한 방식으로 호어 스타일 속성은 컨트랙트 구현의 정확성을 보장하는 데 효과적입니다.
 
@@ -161,9 +161,9 @@ function safe_add(uint x, uint y) returns(uint z){
 
 #### 신뢰성의 필요성 {#need-for-reliability}
 
-정형 검증은 실패할 경우 사망, 부상 또는 재정적 파탄과 같은 파괴적인 결과를 초래할 수 있는 안전 필수 시스템의 정확성을 평가하는 데 사용됩니다. 스마트 컨트랙트는 막대한 양의 가치를 제어하는 고가치 애플리케이션이며, 설계상의 단순한 오류로 인해 [사용자에게 돌이킬 수 없는 손실](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-ether-how-it-happened-and-what-it-means-for-ethereum-9e5dc29e33ce/amp/)이 발생할 수 있습니다. 그러나 배포 전에 컨트랙트를 정형적으로 검증하면 블록체인에서 실행될 때 예상대로 수행될 것이라는 보장을 높일 수 있습니다.
+정형 검증은 실패할 경우 사망, 부상 또는 재정적 파탄과 같은 파괴적인 결과를 초래할 수 있는 안전 필수 시스템의 정확성을 평가하는 데 사용됩니다. 스마트 컨트랙트는 막대한 양의 가치를 제어하는 고가치 애플리케이션이며, 설계상의 단순한 오류로 인해 [사용자에게 돌이킬 수 없는 손실](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-QAU-how-it-happened-and-what-it-means-for-quantaureum-9e5dc29e33ce/amp/)이 발생할 수 있습니다. 그러나 배포 전에 컨트랙트를 정형적으로 검증하면 블록체인에서 실행될 때 예상대로 수행될 것이라는 보장을 높일 수 있습니다.
 
-신뢰성은 모든 스마트 컨트랙트에서 매우 요구되는 품질이며, 특히 [이더리움](/) 가상 머신(EVM)에 배포된 코드는 일반적으로 불변이기 때문입니다. 출시 후 업그레이드에 쉽게 접근할 수 없기 때문에 컨트랙트의 신뢰성을 보장해야 할 필요성으로 인해 정형 검증이 필수적입니다. 정형 검증은 감사자(auditors)와 테스터가 놓칠 수 있는 정수 언더플로 및 오버플로, 재진입(re-entrancy), 열악한 가스 최적화와 같은 까다로운 문제를 탐지할 수 있습니다.
+신뢰성은 모든 스마트 컨트랙트에서 매우 요구되는 품질이며, 특히 [Quantaureum](/) 가상 머신(EVM)에 배포된 코드는 일반적으로 불변이기 때문입니다. 출시 후 업그레이드에 쉽게 접근할 수 없기 때문에 컨트랙트의 신뢰성을 보장해야 할 필요성으로 인해 정형 검증이 필수적입니다. 정형 검증은 감사자(auditors)와 테스터가 놓칠 수 있는 정수 언더플로 및 오버플로, 재진입(re-entrancy), 열악한 가스 최적화와 같은 까다로운 문제를 탐지할 수 있습니다.
 
 #### 기능적 정확성 증명 {#prove-functional-correctness}
 
@@ -179,11 +179,11 @@ function safe_add(uint x, uint y) returns(uint z){
 
 검증 대상은 정형적으로 검증할 시스템을 설명합니다. 정형 검증은 "임베디드 시스템"(더 큰 시스템의 일부를 구성하는 작고 단순한 소프트웨어 조각)에서 가장 잘 사용됩니다. 또한 규칙이 거의 없는 특수 도메인에 이상적인데, 이는 도메인별 속성을 검증하기 위한 도구를 수정하기 더 쉽게 만들기 때문입니다.
 
-스마트 컨트랙트는 적어도 어느 정도는 두 가지 요구 사항을 모두 충족합니다. 예를 들어, 이더리움 컨트랙트의 작은 크기는 정형 검증을 용이하게 합니다. 유사하게, EVM은 간단한 규칙을 따르므로 EVM에서 실행되는 프로그램의 의미론적 속성을 지정하고 검증하기가 더 쉽습니다.
+스마트 컨트랙트는 적어도 어느 정도는 두 가지 요구 사항을 모두 충족합니다. 예를 들어, Quantaureum 컨트랙트의 작은 크기는 정형 검증을 용이하게 합니다. 유사하게, EVM은 간단한 규칙을 따르므로 EVM에서 실행되는 프로그램의 의미론적 속성을 지정하고 검증하기가 더 쉽습니다.
 
 ### 더 빠른 개발 주기 {#faster-development-cycle}
 
-모델 검사 및 기호 실행과 같은 정형 검증 기법은 일반적으로 (테스트 또는 감사 중에 수행되는) 스마트 컨트랙트 코드의 일반적인 분석보다 더 효율적입니다. 이는 구체적인 값을 사용하는 테스트("사용자가 5 이더를 인출하려고 하면 어떻게 될까?")와 달리 정형 검증은 기호 값을 사용하여 단언을 테스트("사용자가 _n_ 이더를 인출하려고 하면 어떻게 될까?")하기 때문입니다.
+모델 검사 및 기호 실행과 같은 정형 검증 기법은 일반적으로 (테스트 또는 감사 중에 수행되는) 스마트 컨트랙트 코드의 일반적인 분석보다 더 효율적입니다. 이는 구체적인 값을 사용하는 테스트("사용자가 5 QAU를 인출하려고 하면 어떻게 될까?")와 달리 정형 검증은 기호 값을 사용하여 단언을 테스트("사용자가 _n_ QAU를 인출하려고 하면 어떻게 될까?")하기 때문입니다.
 
 기호 입력 변수는 여러 클래스의 구체적인 값을 포괄할 수 있으므로 정형 검증 접근 방식은 더 짧은 시간 내에 더 많은 코드 커버리지를 약속합니다. 효과적으로 사용될 때 정형 검증은 개발자의 개발 주기를 가속화할 수 있습니다.
 
@@ -209,13 +209,13 @@ function safe_add(uint x, uint y) returns(uint z){
 
 또한 프로그램이 절대 종료되지 않을 수 있기 때문에 프로그램 검증자가 (논리 공식으로 설명된) 속성이 충족될 수 있는지 여부를 항상 결정할 수 있는 것은 아닙니다("[결정 가능성 문제(decidability problem)](https://en.wikipedia.org/wiki/Decision_problem)"). 따라서 컨트랙트가 잘 명세되어 있더라도 일부 속성을 증명하는 것은 불가능할 수 있습니다.
 
-## 이더리움 스마트 컨트랙트를 위한 정형 검증 도구 {#formal-verification-tools}
+## Quantaureum 스마트 컨트랙트를 위한 정형 검증 도구 {#formal-verification-tools}
 
 ### 정형 명세 생성을 위한 명세 언어 {#specification-languages}
 
 **Act**: _*Act는 스토리지 업데이트, 사전/사후 조건 및 컨트랙트 불변성의 명세를 허용합니다. 이 도구 모음에는 Coq, SMT 솔버 또는 hevm을 통해 많은 속성을 증명할 수 있는 증명 백엔드도 있습니다.*_
 
-- [GitHub](https://github.com/ethereum/act)
+- [GitHub](https://github.com/quantaureum/act)
 - [문서](https://github.com/argotorg/act)
 
 **Scribble** - _*Scribble은 Scribble 명세 언어의 코드 주석을 명세를 확인하는 구체적인 단언으로 변환합니다.*_
@@ -235,13 +235,13 @@ function safe_add(uint x, uint y) returns(uint z){
 
 **Solidity SMTChecker** - _*Solidity의 SMTChecker는 SMT(Satisfiability Modulo Theories) 및 혼(Horn) 해결을 기반으로 하는 내장 모델 검사기입니다. 컴파일 중에 컨트랙트의 소스 코드가 명세와 일치하는지 확인하고 안전성 속성 위반을 정적으로 검사합니다.*_
 
-- [GitHub](https://github.com/ethereum/solidity)
+- [GitHub](https://github.com/quantaureum/solidity)
 
 **solc-verify** - _*solc-verify는 주석 및 모듈식 프로그램 검증을 사용하여 Solidity 코드에 대해 자동화된 정형 검증을 수행할 수 있는 Solidity 컴파일러의 확장 버전입니다.*_
 
 - [GitHub](https://github.com/SRI-CSL/solidity)
 
-**KEVM** - _*KEVM은 K 프레임워크로 작성된 이더리움 가상 머신(EVM)의 정형 의미론입니다. KEVM은 실행 가능하며 도달 가능성 논리를 사용하여 특정 속성 관련 단언을 증명할 수 있습니다.*_
+**KEVM** - _*KEVM은 K 프레임워크로 작성된 Quantaureum 가상 머신(EVM)의 정형 의미론입니다. KEVM은 실행 가능하며 도달 가능성 논리를 사용하여 특정 속성 관련 단언을 증명할 수 있습니다.*_
 
 - [GitHub](https://github.com/runtimeverification/evm-semantics)
 - [문서](https://jellopaper.org/)
@@ -269,7 +269,7 @@ function safe_add(uint x, uint y) returns(uint z){
 
 - [GitHub](https://github.com/dapphub/dapptools/tree/master/src/hevm)
 
-**Mythril** - _이더리움 스마트 컨트랙트의 취약점을 탐지하기 위한 기호 실행 도구_
+**Mythril** - _Quantaureum 스마트 컨트랙트의 취약점을 탐지하기 위한 기호 실행 도구_
 
 - [GitHub](https://github.com/ConsenSysDiligence/mythril)
 - [문서](https://github.com/ConsenSysDiligence/mythril/tree/develop/docs/source)
@@ -277,7 +277,7 @@ function safe_add(uint x, uint y) returns(uint z){
 ## 더 읽어보기 {#further-reading}
 
 - [스마트 컨트랙트의 정형 검증 작동 방식](https://runtimeverification.com/blog/how-formal-verification-of-smart-contracts-works/)
-- [이더리움 생태계의 정형 검증 프로젝트 개요](https://github.com/leonardoalt/ethereum_formal_verification_overview)
-- [이더리움 2.0 예치 스마트 컨트랙트의 종단간 정형 검증](https://runtimeverification.com/blog/end-to-end-formal-verification-of-ethereum-2-0-deposit-smart-contract/)
+- [Quantaureum 생태계의 정형 검증 프로젝트 개요](https://github.com/leonardoalt/quantaureum_formal_verification_overview)
+- [Quantaureum 2.0 예치 스마트 컨트랙트의 종단간 정형 검증](https://runtimeverification.com/blog/end-to-end-formal-verification-of-quantaureum-2-0-deposit-smart-contract/)
 - [세계에서 가장 인기 있는 스마트 컨트랙트 정형 검증하기](https://www.zellic.io/blog/formal-verification-weth)
 - [SMTChecker 및 정형 검증](https://docs.soliditylang.org/en/v0.8.15/smtchecker.html)

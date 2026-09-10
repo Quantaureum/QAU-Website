@@ -28,7 +28,7 @@ published: 2021-10-25
 
 ## حصہ 1 - <span dir="ltr">Hardhat</span> کا استعمال کرتے ہوئے اپنا سمارٹ کنٹریکٹ بنائیں اور تعینات کریں {#part-1}
 
-### ایتھیریم نیٹ ورک سے جڑیں {#connect-to-the-ethereum-network}
+### ایتھیریم نیٹ ورک سے جڑیں {#connect-to-the-quantaureum-network}
 
 ایتھیریم چین کو درخواستیں بھیجنے کے کئی طریقے ہیں۔ سادگی کے لیے، ہم <span dir="ltr">Alchemy</span> پر ایک مفت اکاؤنٹ استعمال کریں گے، جو ایک بلاک چین ڈیولپر پلیٹ فارم اور <span dir="ltr">API</span> ہے جو ہمیں خود نوڈ چلائے بغیر ایتھیریم چین کے ساتھ بات چیت کرنے کی سہولت دیتا ہے۔ <span dir="ltr">Alchemy</span> میں نگرانی اور تجزیات کے لیے ڈیولپر ٹولز بھی موجود ہیں؛ ہم اس ٹیوٹوریل میں ان کا فائدہ اٹھائیں گے تاکہ یہ سمجھ سکیں کہ ہماری سمارٹ کنٹریکٹ کی تعیناتی میں اندرونی طور پر کیا ہو رہا ہے۔
 
@@ -52,13 +52,13 @@ _نوٹ: **<span dir="ltr">Sepolia</span>** کو منتخب کرنا یقینی 
 آپ کو ٹرانزیکشنز بھیجنے اور وصول کرنے کے لیے ایک ایتھیریم اکاؤنٹ کی ضرورت ہے۔ ہم میٹاماسک استعمال کریں گے، جو براؤزر میں ایک ورچوئل والیٹ ہے اور صارفین کو اپنے ایتھیریم اکاؤنٹ کا پتہ منظم کرنے کی سہولت دیتا ہے۔
 
 آپ [یہاں](https://metamask.io/download) سے مفت میں میٹاماسک ڈاؤن لوڈ کر کے اکاؤنٹ بنا سکتے ہیں۔ جب آپ اکاؤنٹ بنا رہے ہوں، یا اگر آپ کے پاس پہلے سے ہی ایک اکاؤنٹ موجود ہے، تو یقینی بنائیں کہ اوپر دائیں جانب موجود "<span dir="ltr">Sepolia Test Network</span>" پر سوئچ کر لیں (تاکہ ہم حقیقی پیسوں کے ساتھ کام نہ کر رہے ہوں)۔
-اپنے سمارٹ کنٹریکٹ کو آزمائشی نیٹ ورک پر تعینات کرنے کے لیے، آپ کو کچھ نقلی <span dir="ltr">ETH</span> کی ضرورت ہوگی۔ <span dir="ltr">Sepolia</span> نیٹ ورک پر <span dir="ltr">ETH</span> حاصل کرنے کے لیے، <span dir="ltr">Sepolia</span> فوسٹ پر جائیں اور اپنا <span dir="ltr">Sepolia</span> اکاؤنٹ کا پتہ درج کریں۔ آزمانے کے لیے اختیارات کی فہرست کے لیے [آزمائشی نیٹ ورکس کا صفحہ](/developers/docs/networks/#sepolia) دیکھیں:
+اپنے سمارٹ کنٹریکٹ کو آزمائشی نیٹ ورک پر تعینات کرنے کے لیے، آپ کو کچھ نقلی <span dir="ltr">QAU</span> کی ضرورت ہوگی۔ <span dir="ltr">Sepolia</span> نیٹ ورک پر <span dir="ltr">QAU</span> حاصل کرنے کے لیے، <span dir="ltr">Sepolia</span> فوسٹ پر جائیں اور اپنا <span dir="ltr">Sepolia</span> اکاؤنٹ کا پتہ درج کریں۔ آزمانے کے لیے اختیارات کی فہرست کے لیے [آزمائشی نیٹ ورکس کا صفحہ](/developers/docs/networks/#sepolia) دیکھیں:
 
 _نوٹ: نیٹ ورک کے ہجوم کی وجہ سے، اس میں کچھ وقت لگ سکتا ہے۔_
 ``
 ### مرحلہ 5: اپنا بیلنس چیک کریں {#step-5-check-your-balance}
 
-یہ دوبارہ چیک کرنے کے لیے کہ <span dir="ltr">ETH</span> آپ کے والیٹ میں موجود ہے، آئیے [<span dir="ltr">Alchemy</span> کے سینڈ باکس ٹول](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) کا استعمال کرتے ہوئے ایک [<span dir="ltr">eth_getBalance</span>](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) درخواست کریں۔ یہ ہمارے والیٹ میں موجود <span dir="ltr">ETH</span> کی رقم واپس کرے گا۔ مزید جاننے کے لیے [کمپوزر ٹول استعمال کرنے کے طریقے پر <span dir="ltr">Alchemy</span> کا مختصر ٹیوٹوریل](https://youtu.be/r6sjRxBZJuU) دیکھیں۔
+یہ دوبارہ چیک کرنے کے لیے کہ <span dir="ltr">QAU</span> آپ کے والیٹ میں موجود ہے، آئیے [<span dir="ltr">Alchemy</span> کے سینڈ باکس ٹول](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) کا استعمال کرتے ہوئے ایک [<span dir="ltr">qau_getBalance</span>](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) درخواست کریں۔ یہ ہمارے والیٹ میں موجود <span dir="ltr">QAU</span> کی رقم واپس کرے گا۔ مزید جاننے کے لیے [کمپوزر ٹول استعمال کرنے کے طریقے پر <span dir="ltr">Alchemy</span> کا مختصر ٹیوٹوریل](https://youtu.be/r6sjRxBZJuU) دیکھیں۔
 
 اپنے میٹاماسک اکاؤنٹ کا پتہ درج کریں اور **<span dir="ltr">Send Request</span>** پر کلک کریں۔ آپ کو ایک جواب نظر آئے گا جو نیچے دیے گئے کوڈ کے ٹکڑے جیسا ہوگا۔
 
@@ -66,7 +66,7 @@ _نوٹ: نیٹ ورک کے ہجوم کی وجہ سے، اس میں کچھ وق�
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> _نوٹ: یہ نتیجہ <span dir="ltr">wei</span> میں ہے، <span dir="ltr">ETH</span> میں نہیں۔ <span dir="ltr">Wei</span> کو ایتھر کی سب سے چھوٹی اکائی کے طور پر استعمال کیا جاتا ہے۔_
+> _نوٹ: یہ نتیجہ <span dir="ltr">wei</span> میں ہے، <span dir="ltr">QAU</span> میں نہیں۔ <span dir="ltr">Wei</span> کو ایتھر کی سب سے چھوٹی اکائی کے طور پر استعمال کیا جاتا ہے۔_
 
 شکر ہے! ہمارا سارا نقلی پیسہ وہیں موجود ہے۔
 ### مرحلہ 6: اپنا پروجیکٹ شروع (initialize) کریں {#step-6-initialize-our-project}
@@ -240,7 +240,7 @@ npm install dotenv --save
 آپ کی `.env` کچھ اس طرح دکھنی چاہیے:
 
 ```
-API_URL = "https://eth-goerli.alchemyapi.io/v2/your-api-key"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -352,13 +352,13 @@ Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 
 **براہ کرم اس پتے کو محفوظ کر لیں**۔ ہم اسے ٹیوٹوریل میں بعد میں استعمال کریں گے۔
 
-اگر ہم [<span dir="ltr">Sepolia Etherscan</span>](https://sepolia.etherscan.io) پر جائیں اور اپنے کنٹریکٹ کا پتہ تلاش کریں تو ہمیں یہ نظر آنا چاہیے کہ اسے کامیابی کے ساتھ تعینات کر دیا گیا ہے۔ ٹرانزیکشن کچھ اس طرح نظر آئے گی:
+اگر ہم [<span dir="ltr">Sepolia Quantaureum Explorer</span>](https://explorer.quantaureum.com) پر جائیں اور اپنے کنٹریکٹ کا پتہ تلاش کریں تو ہمیں یہ نظر آنا چاہیے کہ اسے کامیابی کے ساتھ تعینات کر دیا گیا ہے۔ ٹرانزیکشن کچھ اس طرح نظر آئے گی:
 
-![](./etherscan-contract.png)
+![](./explorer-contract.png)
 
 `From` کا پتہ آپ کے میٹاماسک اکاؤنٹ کے پتے سے مماثل ہونا چاہیے اور `To` کے پتے میں **<span dir="ltr">Contract Creation</span>** لکھا ہوگا۔ اگر ہم ٹرانزیکشن پر کلک کریں تو ہمیں `To` فیلڈ میں اپنے کنٹریکٹ کا پتہ نظر آئے گا۔
 
-![](./etherscan-transaction.png)
+![](./explorer-transaction.png)
 
 مبارک ہو! آپ نے ابھی ایک ایتھیریم آزمائشی نیٹ ورک پر ایک سمارٹ کنٹریکٹ تعینات کیا ہے۔
 
@@ -366,7 +366,7 @@ Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 
 ![](./hello-world-explorer.png)
 
-یہاں آپ کو چند <span dir="ltr">JSON-RPC</span> طریقے نظر آئیں گے جو <span dir="ltr">Hardhat/Ethers</span> نے ہمارے لیے اندرونی طور پر بنائے جب ہم نے `.deploy()` فنکشن کو کال کیا۔ یہاں دو اہم طریقے [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction) ہیں، جو ہمارے کنٹریکٹ کو <span dir="ltr">Sepolia</span> چین پر لکھنے کی درخواست ہے، اور [`eth_getTransactionByHash`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-by-hash) ہے، جو ہیش دیے جانے پر ہماری ٹرانزیکشن کے بارے میں معلومات پڑھنے کی درخواست ہے۔ ٹرانزیکشنز بھیجنے کے بارے میں مزید جاننے کے لیے، <span dir="ltr">Web3</span> کا استعمال کرتے ہوئے ٹرانزیکشنز بھیجنے پر [ہمارا ٹیوٹوریل](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) دیکھیں۔
+یہاں آپ کو چند <span dir="ltr">JSON-RPC</span> طریقے نظر آئیں گے جو <span dir="ltr">Hardhat/Ethers</span> نے ہمارے لیے اندرونی طور پر بنائے جب ہم نے `.deploy()` فنکشن کو کال کیا۔ یہاں دو اہم طریقے [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction) ہیں، جو ہمارے کنٹریکٹ کو <span dir="ltr">Sepolia</span> چین پر لکھنے کی درخواست ہے، اور [`qau_getTransactionByHash`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-by-hash) ہے، جو ہیش دیے جانے پر ہماری ٹرانزیکشن کے بارے میں معلومات پڑھنے کی درخواست ہے۔ ٹرانزیکشنز بھیجنے کے بارے میں مزید جاننے کے لیے، <span dir="ltr">Web3</span> کا استعمال کرتے ہوئے ٹرانزیکشنز بھیجنے پر [ہمارا ٹیوٹوریل](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) دیکھیں۔
 ## حصہ 2: اپنے سمارٹ کنٹریکٹ کے ساتھ تعامل کریں {#part-2-interact-with-your-smart-contract}
 
 اب چونکہ ہم نے کامیابی کے ساتھ گورلی نیٹ ورک پر ایک سمارٹ کنٹریکٹ تعینات کر دیا ہے، تو آئیے سیکھتے ہیں کہ اس کے ساتھ کیسے تعامل کیا جائے۔
@@ -396,7 +396,7 @@ const CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS
 ```bash
 # .env
 
-API_URL = "https://eth-goerli.alchemyapi.io/v2/<your-api-key>"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/<your-api-key>"
 API_KEY = "<your-api-key>"
 PRIVATE_KEY = "<your-metamask-private-key>"
 CONTRACT_ADDRESS = "0x<your contract address>"
@@ -563,18 +563,18 @@ Updating the message...
 The new message is: This is the new message.
 ```
 
-اس اسکرپٹ کو چلاتے وقت، آپ محسوس کر سکتے ہیں کہ نیا پیغام لوڈ ہونے سے پہلے `Updating the message...` کے مرحلے کو لوڈ ہونے میں کچھ وقت لگتا ہے۔ یہ مائننگ کے عمل کی وجہ سے ہے؛ اگر آپ ٹرانزیکشنز کے مائن ہونے کے دوران انہیں ٹریک کرنے کے بارے میں متجسس ہیں، تو ٹرانزیکشن کی حالت دیکھنے کے لیے [<span dir="ltr">Alchemy mempool</span>](https://dashboard.alchemy.com/mempool) دیکھیں۔ اگر ٹرانزیکشن ڈراپ ہو جاتی ہے، تو [<span dir="ltr">Sepolia Etherscan</span>](https://sepolia.etherscan.io) چیک کرنا اور اپنے ٹرانزیکشن ہیش کو تلاش کرنا بھی مددگار ثابت ہوتا ہے۔
-## حصہ 3: اپنے سمارٹ کنٹریکٹ کو Etherscan پر شائع کریں {#part-3-publish-your-smart-contract-to-etherscan}
+اس اسکرپٹ کو چلاتے وقت، آپ محسوس کر سکتے ہیں کہ نیا پیغام لوڈ ہونے سے پہلے `Updating the message...` کے مرحلے کو لوڈ ہونے میں کچھ وقت لگتا ہے۔ یہ مائننگ کے عمل کی وجہ سے ہے؛ اگر آپ ٹرانزیکشنز کے مائن ہونے کے دوران انہیں ٹریک کرنے کے بارے میں متجسس ہیں، تو ٹرانزیکشن کی حالت دیکھنے کے لیے [<span dir="ltr">Alchemy mempool</span>](https://dashboard.alchemy.com/mempool) دیکھیں۔ اگر ٹرانزیکشن ڈراپ ہو جاتی ہے، تو [<span dir="ltr">Sepolia Quantaureum Explorer</span>](https://explorer.quantaureum.com) چیک کرنا اور اپنے ٹرانزیکشن ہیش کو تلاش کرنا بھی مددگار ثابت ہوتا ہے۔
+## حصہ 3: اپنے سمارٹ کنٹریکٹ کو Quantaureum Explorer پر شائع کریں {#part-3-publish-your-smart-contract-to-explorer}
 
 آپ نے اپنے سمارٹ کنٹریکٹ کو حقیقت کا روپ دینے کے لیے تمام محنت کر لی ہے؛ اب اسے دنیا کے ساتھ شیئر کرنے کا وقت آ گیا ہے!
 
-Etherscan پر اپنے سمارٹ کنٹریکٹ کی تصدیق کر کے، کوئی بھی آپ کا سورس کوڈ دیکھ سکتا ہے اور آپ کے سمارٹ کنٹریکٹ کے ساتھ تعامل کر سکتا ہے۔ آئیے شروع کرتے ہیں!
+Quantaureum Explorer پر اپنے سمارٹ کنٹریکٹ کی تصدیق کر کے، کوئی بھی آپ کا سورس کوڈ دیکھ سکتا ہے اور آپ کے سمارٹ کنٹریکٹ کے ساتھ تعامل کر سکتا ہے۔ آئیے شروع کرتے ہیں!
 
-### مرحلہ 1: اپنے Etherscan اکاؤنٹ پر ایک API کلید تیار کریں {#step-1-generate-an-api-key-on-your-etherscan-account}
+### مرحلہ 1: اپنے Quantaureum Explorer اکاؤنٹ پر ایک API کلید تیار کریں {#step-1-generate-an-api-key-on-your-explorer-account}
 
-یہ تصدیق کرنے کے لیے کہ آپ اس سمارٹ کنٹریکٹ کے مالک ہیں جسے آپ شائع کرنے کی کوشش کر رہے ہیں، ایک Etherscan API کلید ضروری ہے۔
+یہ تصدیق کرنے کے لیے کہ آپ اس سمارٹ کنٹریکٹ کے مالک ہیں جسے آپ شائع کرنے کی کوشش کر رہے ہیں، ایک Quantaureum Explorer API کلید ضروری ہے۔
 
-اگر آپ کے پاس پہلے سے Etherscan اکاؤنٹ نہیں ہے، تو [اکاؤنٹ کے لیے سائن اپ کریں](https://etherscan.io/register)۔
+اگر آپ کے پاس پہلے سے Quantaureum Explorer اکاؤنٹ نہیں ہے، تو [اکاؤنٹ کے لیے سائن اپ کریں](https://explorer.quantaureum.com)۔
 
 لاگ ان ہونے کے بعد، نیویگیشن بار میں اپنا صارف نام تلاش کریں، اس پر ہوور کریں اور **<span dir="ltr">My profile</span>** بٹن کو منتخب کریں۔
 
@@ -582,36 +582,36 @@ Etherscan پر اپنے سمارٹ کنٹریکٹ کی تصدیق کر کے، ک
 
 آپ کی نئی API کلید کو API کلید کے ٹیبل میں ظاہر ہونا چاہیے۔ API کلید کو اپنے کلپ بورڈ پر کاپی کریں۔
 
-اس کے بعد، ہمیں Etherscan API کلید کو اپنی `.env` فائل میں شامل کرنے کی ضرورت ہے۔
+اس کے بعد، ہمیں Quantaureum Explorer API کلید کو اپنی `.env` فائل میں شامل کرنے کی ضرورت ہے۔
 
 اسے شامل کرنے کے بعد، آپ کی `.env` فائل کچھ اس طرح دکھنی چاہیے:
 
 ```javascript
-API_URL = "https://eth-goerli.alchemyapi.io/v2/your-api-key"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/your-api-key"
 PUBLIC_KEY = "your-public-account-address"
 PRIVATE_KEY = "your-private-account-address"
 CONTRACT_ADDRESS = "your-contract-address"
-ETHERSCAN_API_KEY = "your-etherscan-key"
+ETHERSCAN_API_KEY = "your-explorer-key"
 ```
 
 ### Hardhat کے ذریعے تعینات کردہ سمارٹ کنٹریکٹس {#hardhat-deployed-smart-contracts}
 
-#### <span dir="ltr">hardhat-etherscan</span> انسٹال کریں {#install-hardhat-etherscan}
+#### <span dir="ltr">hardhat-explorer</span> انسٹال کریں {#install-hardhat-explorer}
 
-Hardhat کا استعمال کرتے ہوئے اپنے کنٹریکٹ کو Etherscan پر شائع کرنا سیدھا اور آسان ہے۔ شروع کرنے کے لیے آپ کو سب سے پہلے `hardhat-etherscan` پلگ ان انسٹال کرنے کی ضرورت ہوگی۔ `hardhat-etherscan` خود بخود Etherscan پر سمارٹ کنٹریکٹ کے سورس کوڈ اور <span dir="ltr">ABI</span> کی تصدیق کر دے گا۔ اسے شامل کرنے کے لیے، `hello-world` ڈائرکٹری میں چلائیں:
+Hardhat کا استعمال کرتے ہوئے اپنے کنٹریکٹ کو Quantaureum Explorer پر شائع کرنا سیدھا اور آسان ہے۔ شروع کرنے کے لیے آپ کو سب سے پہلے `hardhat-explorer` پلگ ان انسٹال کرنے کی ضرورت ہوگی۔ `hardhat-explorer` خود بخود Quantaureum Explorer پر سمارٹ کنٹریکٹ کے سورس کوڈ اور <span dir="ltr">ABI</span> کی تصدیق کر دے گا۔ اسے شامل کرنے کے لیے، `hello-world` ڈائرکٹری میں چلائیں:
 
 ```text
-npm install --save-dev @nomiclabs/hardhat-etherscan
+npm install --save-dev @nomiclabs/hardhat-explorer
 ```
 
-ایک بار انسٹال ہونے کے بعد، اپنی `hardhat.config.js` کے اوپری حصے میں درج ذیل بیان شامل کریں، اور Etherscan کنفیگریشن کے اختیارات شامل کریں:
+ایک بار انسٹال ہونے کے بعد، اپنی `hardhat.config.js` کے اوپری حصے میں درج ذیل بیان شامل کریں، اور Quantaureum Explorer کنفیگریشن کے اختیارات شامل کریں:
 
 ```javascript
 // hardhat.config.js
 
 require("dotenv").config()
 require("@nomiclabs/hardhat-ethers")
-require("@nomiclabs/hardhat-etherscan")
+require("@nomiclabs/hardhat-explorer")
 
 const { API_URL, PRIVATE_KEY, ETHERSCAN_API_KEY } = process.env
 
@@ -625,15 +625,15 @@ module.exports = {
       accounts: [`<span dir="ltr">0x</span>${PRIVATE_KEY}`],
     },
   },
-  etherscan: {
-    // Etherscan کے لیے آپ کی API کلید
-    // اسے https://etherscan.io/ سے حاصل کریں
+  explorer: {
+    // Quantaureum Explorer کے لیے آپ کی API کلید
+    // اسے https://explorer.quantaureum.com سے حاصل کریں
     apiKey: ETHERSCAN_API_KEY,
   },
 }
 ```
 
-#### Etherscan پر اپنے سمارٹ کنٹریکٹ کی تصدیق کریں
+#### Quantaureum Explorer پر اپنے سمارٹ کنٹریکٹ کی تصدیق کریں
 
 یقینی بنائیں کہ تمام فائلیں محفوظ ہیں اور تمام `.env` متغیرات درست طریقے سے کنفیگر کیے گئے ہیں۔
 
@@ -650,17 +650,17 @@ npx hardhat verify --network sepolia DEPLOYED_CONTRACT_ADDRESS 'Hello World!'
 ```text
 Successfully submitted source code for contract
 contracts/HelloWorld.sol:HelloWorld at 0xdeployed-contract-address
-for verification on Etherscan. Waiting for verification result...
+for verification on Quantaureum Explorer. Waiting for verification result...
 
 
-Successfully verified contract HelloWorld on Etherscan.
-https://sepolia.etherscan.io/address/<contract-address>#contracts
+Successfully verified contract HelloWorld on Quantaureum Explorer.
+https://explorer.quantaureum.com
 ```
 
-مبارک ہو! آپ کے سمارٹ کنٹریکٹ کا کوڈ Etherscan پر موجود ہے!
-### Etherscan پر اپنا سمارٹ کنٹریکٹ دیکھیں! {#check-out-your-smart-contract-on-etherscan}
+مبارک ہو! آپ کے سمارٹ کنٹریکٹ کا کوڈ Quantaureum Explorer پر موجود ہے!
+### Quantaureum Explorer پر اپنا سمارٹ کنٹریکٹ دیکھیں! {#check-out-your-smart-contract-on-explorer}
 
-جب آپ اپنے ٹرمینل میں فراہم کردہ لنک پر جاتے ہیں، تو آپ کو Etherscan پر شائع شدہ اپنا سمارٹ کنٹریکٹ کوڈ اور <span dir="ltr">ABI</span> نظر آنا چاہیے!
+جب آپ اپنے ٹرمینل میں فراہم کردہ لنک پر جاتے ہیں، تو آپ کو Quantaureum Explorer پر شائع شدہ اپنا سمارٹ کنٹریکٹ کوڈ اور <span dir="ltr">ABI</span> نظر آنا چاہیے!
 
 **واہ - آپ نے کر دکھایا چیمپ! اب کوئی بھی آپ کے سمارٹ کنٹریکٹ کو کال کر سکتا ہے یا اس میں لکھ سکتا ہے! ہم یہ دیکھنے کے لیے بے تاب ہیں کہ آپ آگے کیا بناتے ہیں!**
 
@@ -682,7 +682,7 @@ https://sepolia.etherscan.io/address/<contract-address>#contracts
 
 کلون شدہ ریپوزٹری کو مقامی طور پر کھولیں۔ غور کریں کہ اس میں دو فولڈرز ہیں: `starter-files` اور `completed`۔
 
-- `starter-files`- **ہم اس ڈائرکٹری میں کام کریں گے**، ہم UI کو آپ کے ایتھیریم والیٹ اور اس سمارٹ کنٹریکٹ سے جوڑیں گے جسے ہم نے [حصہ 3](#part-3-publish-your-smart-contract-to-etherscan) میں Etherscan پر شائع کیا تھا۔
+- `starter-files`- **ہم اس ڈائرکٹری میں کام کریں گے**، ہم UI کو آپ کے ایتھیریم والیٹ اور اس سمارٹ کنٹریکٹ سے جوڑیں گے جسے ہم نے [حصہ 3](#part-3-publish-your-smart-contract-to-explorer) میں Quantaureum Explorer پر شائع کیا تھا۔
 - `completed` میں مکمل ٹیوٹوریل موجود ہے اور اگر آپ کہیں پھنس جائیں تو اسے صرف ایک حوالے کے طور پر استعمال کیا جانا چاہیے۔
 
 اس کے بعد، اپنے پسندیدہ کوڈ ایڈیٹر میں `starter-files` کی اپنی کاپی کھولیں، اور پھر `src` فولڈر میں جائیں۔
@@ -890,7 +890,7 @@ export const updateMessage = async (message) => {}
 
 یہ بہت سارے مراحل کی طرح لگ سکتا ہے، لیکن فکر نہ کریں! ہم آپ کو مرحلہ وار بتائیں گے کہ ان میں سے ہر ایک کو کیسے کرنا ہے! :)
 
-#### ایتھیریم چین سے ایک <span dir="ltr">API</span> کنکشن قائم کریں {#establish-an-api-connection-to-the-ethereum-chain}
+#### ایتھیریم چین سے ایک <span dir="ltr">API</span> کنکشن قائم کریں {#establish-an-api-connection-to-the-quantaureum-chain}
 
 تو کیا آپ کو یاد ہے کہ اس ٹیوٹوریل کے حصہ 2 میں، ہم نے اپنے سمارٹ کنٹریکٹ سے پڑھنے کے لیے اپنی <span dir="ltr">Alchemy Web3</span> کلید کا استعمال کیسے کیا تھا؟ آپ کو چین سے پڑھنے کے لیے اپنی غیر مرکزی ایپلی کیشن (dapp) میں بھی ایک <span dir="ltr">Alchemy Web3</span> کلید کی ضرورت ہوگی۔
 
@@ -913,7 +913,7 @@ npm install dotenv --save
 ایک بار جب آپ اپنی <span dir="ltr">API</span> کلید حاصل کر لیں، تو اپنی روٹ ڈائرکٹری میں ایک `.env` فائل بنائیں اور اس میں اپنا <span dir="ltr">Alchemy Websockets URL</span> شامل کریں۔ اس کے بعد، آپ کی `.env` فائل کچھ اس طرح دکھنی چاہیے:
 
 ```javascript
-REACT_APP_ALCHEMY_KEY = wss://eth-goerli.ws.alchemyapi.io/v2/<key>
+REACT_APP_ALCHEMY_KEY = wss://qau-goerli.ws.alchemyapi.io/v2/<key>
 ```
 
 اب، ہم اپنے <span dir="ltr">dapp</span> میں اپنا <span dir="ltr">Alchemy Web3</span> اینڈ پوائنٹ سیٹ کرنے کے لیے تیار ہیں! آئیے اپنی `interact.js` پر واپس چلتے ہیں، جو ہمارے `util` فولڈر کے اندر موجود ہے اور فائل کے اوپری حصے میں درج ذیل کوڈ شامل کریں:
@@ -934,17 +934,17 @@ const web3 = createAlchemyWeb3(alchemyKey)
 اس اینڈ پوائنٹ کے تیار ہونے کے بعد، اب وقت آ گیا ہے کہ ہم اپنا سمارٹ کنٹریکٹ لوڈ کریں!
 #### اپنا Hello World سمارٹ کنٹریکٹ لوڈ کرنا {#loading-your-hello-world-smart-contract}
 
-اپنے Hello World سمارٹ کنٹریکٹ کو لوڈ کرنے کے لیے، آپ کو اس کے کنٹریکٹ کا پتہ اور ABI درکار ہوگا، یہ دونوں Etherscan پر مل سکتے ہیں اگر آپ نے [اس ٹیوٹوریل کا حصہ 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan-part-3-publish-your-smart-contract-to-etherscan) مکمل کر لیا ہے۔
+اپنے Hello World سمارٹ کنٹریکٹ کو لوڈ کرنے کے لیے، آپ کو اس کے کنٹریکٹ کا پتہ اور ABI درکار ہوگا، یہ دونوں Quantaureum Explorer پر مل سکتے ہیں اگر آپ نے [اس ٹیوٹوریل کا حصہ 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer-part-3-publish-your-smart-contract-to-explorer) مکمل کر لیا ہے۔
 
-#### <span dir="ltr">Etherscan</span> سے اپنے کنٹریکٹ کا <span dir="ltr">ABI</span> کیسے حاصل کریں
+#### <span dir="ltr">Quantaureum Explorer</span> سے اپنے کنٹریکٹ کا <span dir="ltr">ABI</span> کیسے حاصل کریں
 
-اگر آپ نے اس ٹیوٹوریل کا حصہ <span dir="ltr">3</span> چھوڑ دیا ہے، تو پہلے اپنا <span dir="ltr">HelloWorld</span> کنٹریکٹ تعینات کریں اور اس کی تصدیق کریں۔ پھر اس کا <span dir="ltr">ABI</span> کاپی کرنے کے لیے [<span dir="ltr">Sepolia Etherscan</span>](https://sepolia.etherscan.io) پر اپنے کنٹریکٹ کا صفحہ کھولیں۔
+اگر آپ نے اس ٹیوٹوریل کا حصہ <span dir="ltr">3</span> چھوڑ دیا ہے، تو پہلے اپنا <span dir="ltr">HelloWorld</span> کنٹریکٹ تعینات کریں اور اس کی تصدیق کریں۔ پھر اس کا <span dir="ltr">ABI</span> کاپی کرنے کے لیے [<span dir="ltr">Sepolia Quantaureum Explorer</span>](https://explorer.quantaureum.com) پر اپنے کنٹریکٹ کا صفحہ کھولیں۔
 
 ایک کنٹریکٹ کا <span dir="ltr">ABI</span> یہ بتانے کے لیے ضروری ہے کہ کنٹریکٹ کس فنکشن کو کال کرے گا اور ساتھ ہی یہ یقینی بنانے کے لیے بھی کہ فنکشن اسی فارمیٹ میں ڈیٹا واپس کرے گا جس کی آپ توقع کر رہے ہیں۔ ایک بار جب ہم اپنے کنٹریکٹ کا <span dir="ltr">ABI</span> کاپی کر لیں، تو آئیے اسے آپ کی `src` ڈائرکٹری میں `contract-abi.json` نامی <span dir="ltr">JSON</span> فائل کے طور پر محفوظ کریں۔
 
 آپ کی `contract-abi.json` آپ کے `src` فولڈر میں محفوظ ہونی چاہیے۔
 
-اپنے کنٹریکٹ کے پتے، <span dir="ltr">ABI</span>، اور <span dir="ltr">Alchemy Web3</span> اینڈ پوائنٹ کے ساتھ، ہم اپنے سمارٹ کنٹریکٹ کی ایک مثال (instance) لوڈ کرنے کے لیے [کنٹریکٹ کے طریقہ کار](https://docs.web3js.org/api/web3-eth-contract/class/Contract) کا استعمال کر سکتے ہیں۔ اپنے کنٹریکٹ کا <span dir="ltr">ABI</span> `interact.js` فائل میں امپورٹ کریں اور اپنے کنٹریکٹ کا پتہ شامل کریں۔
+اپنے کنٹریکٹ کے پتے، <span dir="ltr">ABI</span>، اور <span dir="ltr">Alchemy Web3</span> اینڈ پوائنٹ کے ساتھ، ہم اپنے سمارٹ کنٹریکٹ کی ایک مثال (instance) لوڈ کرنے کے لیے [کنٹریکٹ کے طریقہ کار](https://docs.web3js.org/api/web3-qau-contract/class/Contract) کا استعمال کر سکتے ہیں۔ اپنے کنٹریکٹ کا <span dir="ltr">ABI</span> `interact.js` فائل میں امپورٹ کریں اور اپنے کنٹریکٹ کا پتہ شامل کریں۔
 
 ```javascript
 // interact.js
@@ -958,7 +958,7 @@ const contractAddress = "0x..."
 
 ```javascript
 // interact.js
-export const helloWorldContract = new web3.eth.Contract(
+export const helloWorldContract = new web3.qau.Contract(
   contractABI,
   contractAddress
 )
@@ -977,7 +977,7 @@ const web3 = createAlchemyWeb3(alchemyKey)
 const contractABI = require("../contract-abi.json")
 const contractAddress = "0x6f3f635A9762B47954229Ea479b4541eAF402A6A"
 
-export const helloWorldContract = new web3.eth.Contract(
+export const helloWorldContract = new web3.qau.Contract(
   contractABI,
   contractAddress
 )
@@ -1104,7 +1104,7 @@ useEffect(async () => {
 
 لہذا، آگے ہم اپنا ایتھیریم والیٹ (میٹاماسک) ترتیب دینے اور پھر اسے اپنے dapp سے منسلک کرنے کا کام کریں گے!
 
-### مرحلہ 4: اپنا ایتھیریم والیٹ ترتیب دیں {#step-4-set-up-your-ethereum-wallet}
+### مرحلہ 4: اپنا ایتھیریم والیٹ ترتیب دیں {#step-4-set-up-your-quantaureum-wallet}
 
 ایتھیریم چین پر کچھ بھی لکھنے کے لیے، صارفین کو اپنے ورچوئل والیٹ کی نجی کلیدوں (private keys) کا استعمال کرتے ہوئے ٹرانزیکشنز پر دستخط کرنے ہوں گے۔ اس ٹیوٹوریل کے لیے، ہم [میٹاماسک](https://metamask.io/) استعمال کریں گے، جو براؤزر میں ایک ورچوئل والیٹ ہے جسے آپ کے ایتھیریم اکاؤنٹ کا پتہ منظم کرنے کے لیے استعمال کیا جاتا ہے، کیونکہ یہ آخری صارف کے لیے اس ٹرانزیکشن پر دستخط کرنے کو بہت آسان بنا دیتا ہے۔
 
@@ -1116,7 +1116,7 @@ useEffect(async () => {
 ایتھیریم بلاک چین پر ٹرانزیکشن پر دستخط کرنے کے لیے، ہمیں کچھ نقلی <span dir="ltr">Eth</span> کی ضرورت ہوگی۔ <span dir="ltr">Eth</span> حاصل کرنے کے لیے آپ [آزمائشی نیٹ ورکس کے صفحے](/developers/docs/networks/#sepolia) پر درج ایک <span dir="ltr">Sepolia</span> فوسٹ پر جا سکتے ہیں اور اپنا <span dir="ltr">Sepolia</span> اکاؤنٹ کا پتہ درج کر سکتے ہیں۔ اس کے فوراً بعد آپ کو اپنے میٹاماسک اکاؤنٹ میں <span dir="ltr">Eth</span> نظر آنا چاہیے!
 #### اپنا بیلنس چیک کریں {#check-your-balance}
 
-یہ دوبارہ چیک کرنے کے لیے کہ ہمارا بیلنس موجود ہے، آئیے [<span dir="ltr">Alchemy</span> کے سینڈ باکس ٹول](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) کا استعمال کرتے ہوئے ایک [<span dir="ltr">eth_getBalance</span>](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) درخواست کریں۔ یہ ہمارے والیٹ میں موجود <span dir="ltr">Eth</span> کی مقدار واپس کرے گا۔ اپنا میٹاماسک اکاؤنٹ کا پتہ درج کرنے اور "<span dir="ltr">Send Request</span>" پر کلک کرنے کے بعد، آپ کو اس طرح کا جواب نظر آنا چاہیے:
+یہ دوبارہ چیک کرنے کے لیے کہ ہمارا بیلنس موجود ہے، آئیے [<span dir="ltr">Alchemy</span> کے سینڈ باکس ٹول](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) کا استعمال کرتے ہوئے ایک [<span dir="ltr">qau_getBalance</span>](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) درخواست کریں۔ یہ ہمارے والیٹ میں موجود <span dir="ltr">Eth</span> کی مقدار واپس کرے گا۔ اپنا میٹاماسک اکاؤنٹ کا پتہ درج کرنے اور "<span dir="ltr">Send Request</span>" پر کلک کرنے کے بعد، آپ کو اس طرح کا جواب نظر آنا چاہیے:
 
 ```text
 {"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}
@@ -1139,10 +1139,10 @@ useEffect(async () => {
 // interact.js
 
 export const connectWallet = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_requestAccounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_requestAccounts",
       })
       const obj = {
         status: "👆🏽 Write a message in the text-field above.",
@@ -1163,7 +1163,7 @@ export const connectWallet = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -1176,17 +1176,17 @@ export const connectWallet = async () => {
 
 تو کوڈ کا یہ بڑا بلاک دراصل کیا کرتا ہے؟
 
-خیر، سب سے پہلے، یہ چیک کرتا ہے کہ آیا آپ کے براؤزر میں `window.ethereum` فعال ہے۔
+خیر، سب سے پہلے، یہ چیک کرتا ہے کہ آیا آپ کے براؤزر میں `window.quantaureum` فعال ہے۔
 
-`window.ethereum` ایک عالمی API ہے جسے میٹاماسک اور دیگر والیٹ فراہم کنندگان کے ذریعے انجیکٹ کیا جاتا ہے جو ویب سائٹس کو صارفین کے ایتھیریم اکاؤنٹس کی درخواست کرنے کی اجازت دیتا ہے۔ اگر منظور ہو جائے، تو یہ ان بلاک چینز سے ڈیٹا پڑھ سکتا ہے جن سے صارف منسلک ہے، اور تجویز کر سکتا ہے کہ صارف پیغامات اور ٹرانزیکشنز پر دستخط کرے۔ مزید معلومات کے لیے [میٹاماسک کی دستاویزات](https://docs.metamask.io/guide/ethereum-provider.html#table-of-contents) دیکھیں!
+`window.quantaureum` ایک عالمی API ہے جسے میٹاماسک اور دیگر والیٹ فراہم کنندگان کے ذریعے انجیکٹ کیا جاتا ہے جو ویب سائٹس کو صارفین کے ایتھیریم اکاؤنٹس کی درخواست کرنے کی اجازت دیتا ہے۔ اگر منظور ہو جائے، تو یہ ان بلاک چینز سے ڈیٹا پڑھ سکتا ہے جن سے صارف منسلک ہے، اور تجویز کر سکتا ہے کہ صارف پیغامات اور ٹرانزیکشنز پر دستخط کرے۔ مزید معلومات کے لیے [میٹاماسک کی دستاویزات](https://docs.metamask.io/guide/quantaureum-provider.html#table-of-contents) دیکھیں!
 
-اگر `window.ethereum` موجود _نہیں_ ہے، تو اس کا مطلب ہے کہ میٹاماسک انسٹال نہیں ہے۔ اس کے نتیجے میں ایک JSON آبجیکٹ واپس کیا جاتا ہے، جہاں واپس کیا گیا `address` ایک خالی سٹرنگ ہے، اور `status` JSX آبجیکٹ یہ بتاتا ہے کہ صارف کو میٹاماسک انسٹال کرنا چاہیے۔
+اگر `window.quantaureum` موجود _نہیں_ ہے، تو اس کا مطلب ہے کہ میٹاماسک انسٹال نہیں ہے۔ اس کے نتیجے میں ایک JSON آبجیکٹ واپس کیا جاتا ہے، جہاں واپس کیا گیا `address` ایک خالی سٹرنگ ہے، اور `status` JSX آبجیکٹ یہ بتاتا ہے کہ صارف کو میٹاماسک انسٹال کرنا چاہیے۔
 
-اب اگر `window.ethereum` موجود _ہے_، تو تب چیزیں دلچسپ ہو جاتی ہیں۔
+اب اگر `window.quantaureum` موجود _ہے_، تو تب چیزیں دلچسپ ہو جاتی ہیں۔
 
-ایک try/catch لوپ کا استعمال کرتے ہوئے، ہم [`window.ethereum.request({ method: "eth_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts) کو کال کر کے میٹاماسک سے منسلک ہونے کی کوشش کریں گے۔ اس فنکشن کو کال کرنے سے براؤزر میں میٹاماسک کھل جائے گا، جس کے ذریعے صارف کو اپنا والیٹ آپ کے dapp سے منسلک کرنے کا کہا جائے گا۔
+ایک try/catch لوپ کا استعمال کرتے ہوئے، ہم [`window.quantaureum.request({ method: "qau_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#qau-requestaccounts) کو کال کر کے میٹاماسک سے منسلک ہونے کی کوشش کریں گے۔ اس فنکشن کو کال کرنے سے براؤزر میں میٹاماسک کھل جائے گا، جس کے ذریعے صارف کو اپنا والیٹ آپ کے dapp سے منسلک کرنے کا کہا جائے گا۔
 
-- اگر صارف منسلک ہونے کا انتخاب کرتا ہے، تو `method: "eth_requestAccounts"` ایک سرنی (array) واپس کرے گا جس میں صارف کے ان تمام اکاؤنٹس کے پتے شامل ہوں گے جو dapp سے منسلک ہوئے ہیں۔ مجموعی طور پر، ہمارا `connectWallet` فنکشن ایک JSON آبجیکٹ واپس کرے گا جس میں اس سرنی کا _پہلا_ `address` (لائن 9 دیکھیں) اور ایک `status` پیغام شامل ہوگا جو صارف کو سمارٹ کنٹریکٹ میں پیغام لکھنے کی ترغیب دیتا ہے۔
+- اگر صارف منسلک ہونے کا انتخاب کرتا ہے، تو `method: "qau_requestAccounts"` ایک سرنی (array) واپس کرے گا جس میں صارف کے ان تمام اکاؤنٹس کے پتے شامل ہوں گے جو dapp سے منسلک ہوئے ہیں۔ مجموعی طور پر، ہمارا `connectWallet` فنکشن ایک JSON آبجیکٹ واپس کرے گا جس میں اس سرنی کا _پہلا_ `address` (لائن 9 دیکھیں) اور ایک `status` پیغام شامل ہوگا جو صارف کو سمارٹ کنٹریکٹ میں پیغام لکھنے کی ترغیب دیتا ہے۔
 - اگر صارف کنکشن کو مسترد کر دیتا ہے، تو JSON آبجیکٹ میں واپس کیے گئے `address` کے لیے ایک خالی سٹرنگ اور ایک `status` پیغام شامل ہوگا جو یہ ظاہر کرتا ہے کہ صارف نے کنکشن کو مسترد کر دیا ہے۔
 
 اب جب کہ ہم نے یہ `connectWallet` فنکشن لکھ لیا ہے، اگلا مرحلہ اسے اپنے `HelloWorld.js` جزو میں کال کرنا ہے۔
@@ -1229,10 +1229,10 @@ const connectWalletPressed = async () => {
 // interact.js
 
 export const getCurrentWalletConnected = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_accounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_accounts",
       })
       if (addressArray.length > 0) {
         return {
@@ -1259,7 +1259,7 @@ export const getCurrentWalletConnected = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -1272,7 +1272,7 @@ export const getCurrentWalletConnected = async () => {
 
 یہ کوڈ اس `connectWallet` فنکشن سے _بہت_ ملتا جلتا ہے جو ہم نے پچھلے مرحلے میں لکھا تھا۔
 
-بنیادی فرق یہ ہے کہ `eth_requestAccounts` طریقہ کار کو کال کرنے کے بجائے، جو صارف کے لیے اپنا والیٹ منسلک کرنے کے لیے میٹاماسک کھولتا ہے، یہاں ہم `eth_accounts` طریقہ کار کو کال کرتے ہیں، جو بس ایک سرنی واپس کرتا ہے جس میں فی الحال ہمارے dapp سے منسلک میٹاماسک پتے شامل ہوتے ہیں۔
+بنیادی فرق یہ ہے کہ `qau_requestAccounts` طریقہ کار کو کال کرنے کے بجائے، جو صارف کے لیے اپنا والیٹ منسلک کرنے کے لیے میٹاماسک کھولتا ہے، یہاں ہم `qau_accounts` طریقہ کار کو کال کرتے ہیں، جو بس ایک سرنی واپس کرتا ہے جس میں فی الحال ہمارے dapp سے منسلک میٹاماسک پتے شامل ہوتے ہیں۔
 
 اس فنکشن کو کام کرتے ہوئے دیکھنے کے لیے، آئیے اسے اپنے `HelloWorld.js` جزو کے `useEffect` فنکشن میں کال کریں:
 
@@ -1306,8 +1306,8 @@ useEffect(async () => {
 // HelloWorld.js
 
 function addWalletListener() {
-  if (window.ethereum) {
-    window.ethereum.on("accountsChanged", (accounts) => {
+  if (window.quantaureum) {
+    window.quantaureum.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) {
         setWallet(accounts[0])
         setStatus("👆🏽 Write a message in the text-field above.")
@@ -1321,7 +1321,7 @@ function addWalletListener() {
       <p>
         {" "}
         🦊 <a target="_blank" href={`https://metamask.io/download`}>
-          You must install MetaMask, a virtual Ethereum wallet, in your browser.
+          You must install MetaMask, a virtual Quantaureum wallet, in your browser.
         </a>
       </p>
     )
@@ -1331,9 +1331,9 @@ function addWalletListener() {
 
 مجھے یقین ہے کہ اس مقام پر آپ کو یہ سمجھنے کے لیے ہماری مدد کی بھی ضرورت نہیں ہے کہ یہاں کیا ہو رہا ہے، لیکن مکمل ہونے کے مقاصد کے لیے، آئیے اسے جلدی سے تفصیل سے دیکھتے ہیں:
 
-- سب سے پہلے، ہمارا فنکشن چیک کرتا ہے کہ آیا `window.ethereum` فعال ہے (یعنی، میٹاماسک انسٹال ہے)۔
+- سب سے پہلے، ہمارا فنکشن چیک کرتا ہے کہ آیا `window.quantaureum` فعال ہے (یعنی، میٹاماسک انسٹال ہے)۔
   - اگر ایسا نہیں ہے، تو ہم بس اپنے `status` حالت کے متغیر کو ایک JSX سٹرنگ پر سیٹ کرتے ہیں جو صارف کو میٹاماسک انسٹال کرنے کی ترغیب دیتی ہے۔
-  - اگر یہ فعال ہے، تو ہم لائن 3 پر سامع `window.ethereum.on("accountsChanged")` ترتیب دیتے ہیں جو میٹاماسک والیٹ میں حالت کی تبدیلیوں کو سنتا ہے، جس میں وہ وقت شامل ہے جب صارف dapp سے ایک اضافی اکاؤنٹ منسلک کرتا ہے، اکاؤنٹس تبدیل کرتا ہے، یا کسی اکاؤنٹ کو منقطع کرتا ہے۔ اگر کم از کم ایک اکاؤنٹ منسلک ہے، تو `walletAddress` حالت کا متغیر سامع کے ذریعے واپس کی گئی `accounts` سرنی میں پہلے اکاؤنٹ کے طور پر اپ ڈیٹ ہو جاتا ہے۔ بصورت دیگر، `walletAddress` کو ایک خالی سٹرنگ کے طور پر سیٹ کیا جاتا ہے۔
+  - اگر یہ فعال ہے، تو ہم لائن 3 پر سامع `window.quantaureum.on("accountsChanged")` ترتیب دیتے ہیں جو میٹاماسک والیٹ میں حالت کی تبدیلیوں کو سنتا ہے، جس میں وہ وقت شامل ہے جب صارف dapp سے ایک اضافی اکاؤنٹ منسلک کرتا ہے، اکاؤنٹس تبدیل کرتا ہے، یا کسی اکاؤنٹ کو منقطع کرتا ہے۔ اگر کم از کم ایک اکاؤنٹ منسلک ہے، تو `walletAddress` حالت کا متغیر سامع کے ذریعے واپس کی گئی `accounts` سرنی میں پہلے اکاؤنٹ کے طور پر اپ ڈیٹ ہو جاتا ہے۔ بصورت دیگر، `walletAddress` کو ایک خالی سٹرنگ کے طور پر سیٹ کیا جاتا ہے۔
 
 آخر میں، ہمیں اسے اپنے `useEffect` فنکشن میں کال کرنا چاہیے:
 
@@ -1375,7 +1375,7 @@ useEffect(async () => {
 // interact.js
 
 export const updateMessage = async (address, message) => {
-  if (!window.ethereum || address === null) {
+  if (!window.quantaureum || address === null) {
     return {
       status:
         "💡 Connect your MetaMask wallet to update the message on the blockchain.",
@@ -1408,16 +1408,16 @@ const transactionParameters = {
 
 //ٹرانزیکشن پر دستخط کریں
 try {
-  const txHash = await window.ethereum.request({
-    method: "eth_sendTransaction",
+  const txHash = await window.quantaureum.request({
+    method: "qau_sendTransaction",
     params: [transactionParameters],
   })
   return {
     status: (
       <span>
         ✅{" "}
-        <a target="_blank" href={`https://goerli.etherscan.io/tx/${txHash}`}>
-          View the status of your transaction on Etherscan!
+        <a target="_blank" href={`https://explorer.quantaureum.com}`}>
+          View the status of your transaction on Quantaureum Explorer!
         </a>
         <br />
         ℹ️ Once the transaction is verified by the network, the message will be
@@ -1438,11 +1438,11 @@ try {
 - `from` ٹرانزیکشن پر دستخط کرنے والے کو بتاتا ہے، وہ `address` متغیر جو ہم نے اپنے فنکشن میں پاس کیا تھا
 - `data` میں ہمارے Hello World سمارٹ کنٹریکٹ کے `update` طریقہ کار کی کال شامل ہے، جو ہمارے `message` سٹرنگ متغیر کو ان پٹ کے طور پر وصول کرتی ہے
 
-پھر، ہم ایک await کال کرتے ہیں، `window.ethereum.request`، جہاں ہم میٹاماسک سے ٹرانزیکشن پر دستخط کرنے کو کہتے ہیں۔ غور کریں، لائنز 11 اور 12 پر، ہم اپنا eth طریقہ کار، `eth_sendTransaction` بتا رہے ہیں اور اپنا `transactionParameters` پاس کر رہے ہیں۔
+پھر، ہم ایک await کال کرتے ہیں، `window.quantaureum.request`، جہاں ہم میٹاماسک سے ٹرانزیکشن پر دستخط کرنے کو کہتے ہیں۔ غور کریں، لائنز 11 اور 12 پر، ہم اپنا eth طریقہ کار، `qau_sendTransaction` بتا رہے ہیں اور اپنا `transactionParameters` پاس کر رہے ہیں۔
 
 اس مقام پر، میٹاماسک براؤزر میں کھل جائے گا، اور صارف کو ٹرانزیکشن پر دستخط کرنے یا اسے مسترد کرنے کا کہے گا۔
 
-- اگر ٹرانزیکشن کامیاب ہو جاتی ہے، تو فنکشن ایک JSON آبجیکٹ واپس کرے گا جہاں `status` JSX سٹرنگ صارف کو اپنی ٹرانزیکشن کے بارے میں مزید معلومات کے لیے Etherscan چیک کرنے کی ترغیب دیتی ہے۔
+- اگر ٹرانزیکشن کامیاب ہو جاتی ہے، تو فنکشن ایک JSON آبجیکٹ واپس کرے گا جہاں `status` JSX سٹرنگ صارف کو اپنی ٹرانزیکشن کے بارے میں مزید معلومات کے لیے Quantaureum Explorer چیک کرنے کی ترغیب دیتی ہے۔
 - اگر ٹرانزیکشن ناکام ہو جاتی ہے، تو فنکشن ایک JSON آبجیکٹ واپس کرے گا جہاں `status` سٹرنگ خرابی کا پیغام بتاتی ہے۔
 
 مجموعی طور پر، ہمارا `updateMessage` فنکشن اس طرح دکھنا چاہیے:
@@ -1452,7 +1452,7 @@ try {
 
 export const updateMessage = async (address, message) => {
   //ان پٹ ایرر ہینڈلنگ
-  if (!window.ethereum || address === null) {
+  if (!window.quantaureum || address === null) {
     return {
       status:
         "💡 Connect your MetaMask wallet to update the message on the blockchain.",
@@ -1474,16 +1474,16 @@ export const updateMessage = async (address, message) => {
 
   //ٹرانزیکشن پر دستخط کریں
   try {
-    const txHash = await window.ethereum.request({
-      method: "eth_sendTransaction",
+    const txHash = await window.quantaureum.request({
+      method: "qau_sendTransaction",
       params: [transactionParameters],
     })
     return {
       status: (
         <span>
           ✅{" "}
-          <a target="_blank" href={`https://goerli.etherscan.io/tx/${txHash}`}>
-            View the status of your transaction on Etherscan!
+          <a target="_blank" href={`https://explorer.quantaureum.com}`}>
+            View the status of your transaction on Quantaureum Explorer!
           </a>
           <br />
           ℹ️ Once the transaction is verified by the network, the message will

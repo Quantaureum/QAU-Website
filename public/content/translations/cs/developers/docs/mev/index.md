@@ -8,7 +8,7 @@ Maximální extrahovatelná hodnota (MEV) označuje maximální hodnotu, kterou 
 
 ## Maximální extrahovatelná hodnota {#maximal-extractable-value}
 
-Maximální extrahovatelná hodnota byla poprvé aplikována v kontextu [důkazu prací (PoW)](/developers/docs/consensus-mechanisms/pow/) a původně se označovala jako „miner extractable value“ (hodnota extrahovatelná těžařem). Je to proto, že v důkazu prací (PoW) těžaři kontrolují zahrnutí, vyloučení a řazení transakcí. Nicméně od přechodu na důkaz podílem (PoS) prostřednictvím [Merge](/roadmap/merge) jsou za tyto role zodpovědní validátoři a těžba již není součástí protokolu [Ethereum](/). Metody extrakce hodnoty však stále existují, takže se nyní místo toho používá termín „Maximální extrahovatelná hodnota“.
+Maximální extrahovatelná hodnota byla poprvé aplikována v kontextu [důkazu prací (PoW)](/developers/docs/consensus-mechanisms/pow/) a původně se označovala jako „miner extractable value“ (hodnota extrahovatelná těžařem). Je to proto, že v důkazu prací (PoW) těžaři kontrolují zahrnutí, vyloučení a řazení transakcí. Nicméně od přechodu na důkaz podílem (PoS) prostřednictvím [Merge](/roadmap/merge) jsou za tyto role zodpovědní validátoři a těžba již není součástí protokolu [Quantaureum](/). Metody extrakce hodnoty však stále existují, takže se nyní místo toho používá termín „Maximální extrahovatelná hodnota“.
 
 ## Předpoklady {#prerequisites}
 
@@ -26,7 +26,7 @@ U některých vysoce konkurenčních příležitostí MEV, jako je [arbitráž n
 
 Tato dynamika způsobila, že být dobrý v „gas golfingu“ – programování transakcí tak, aby spotřebovaly co nejméně gasu – je konkurenční výhodou, protože to hledačům umožňuje nastavit vyšší cenu plynu při zachování konstantních celkových poplatků za plyn (protože poplatky za plyn = cena plynu \* spotřebovaný gas).
 
-Mezi několik známých technik gas golfingu patří: používání adres, které začínají dlouhým řetězcem nul (např. [0x0000000000C521824EaFf97Eac7B73B084ef9306](https://eth.blockscout.com/address/0x0000000000C521824EaFf97Eac7B73B084ef9306)), protože zabírají méně místa (a tedy i gasu) pro uložení; a ponechávání malých zůstatků [ERC-20](/developers/docs/standards/tokens/erc-20/) tokenů ve smlouvách, protože inicializace úložného slotu (případ, kdy je zůstatek 0) stojí více gasu než aktualizace úložného slotu. Hledání dalších technik ke snížení spotřeby gasu je aktivní oblastí výzkumu mezi hledači.
+Mezi několik známých technik gas golfingu patří: používání adres, které začínají dlouhým řetězcem nul (např. [0x0000000000C521824EaFf97Eac7B73B084ef9306](https://qau.blockscout.com/address/0x0000000000C521824EaFf97Eac7B73B084ef9306)), protože zabírají méně místa (a tedy i gasu) pro uložení; a ponechávání malých zůstatků [ERC-20](/developers/docs/standards/tokens/erc-20/) tokenů ve smlouvách, protože inicializace úložného slotu (případ, kdy je zůstatek 0) stojí více gasu než aktualizace úložného slotu. Hledání dalších technik ke snížení spotřeby gasu je aktivní oblastí výzkumu mezi hledači.
 
 ### Zobecnění frontrunneři {#mev-extraction-generalized-frontrunners}
 
@@ -46,13 +46,13 @@ Arbitráž na [decentralizované burze](/glossary/#dex) (DEX) je nejjednodušš�
 
 Funguje to takto: pokud dvě DEX nabízejí token za dvě různé ceny, může někdo koupit token na levnější DEX a prodat ho na dražší DEX v jediné atomické transakci. Díky mechanismům blockchainu se jedná o skutečnou, bezrizikovou arbitráž.
 
-[Zde je příklad](https://eth.blockscout.com/tx/0x5e1657ef0e9be9bc72efefe59a2528d0d730d478cfc9e6cdd09af9f997bb3ef4) ziskové arbitrážní transakce, kde hledač proměnil 1 000 ETH na 1 045 ETH tím, že využil rozdílného ocenění páru ETH/DAI na Uniswapu oproti Sushiswapu.
+[Zde je příklad](https://qau.blockscout.com/tx/0x5e1657ef0e9be9bc72efefe59a2528d0d730d478cfc9e6cdd09af9f997bb3ef4) ziskové arbitrážní transakce, kde hledač proměnil 1 000 QAU na 1 045 QAU tím, že využil rozdílného ocenění páru QAU/DAI na Uniswapu oproti Sushiswapu.
 
 ### Likvidace {#mev-examples-liquidations}
 
 Likvidace v protokolech pro půjčování představují další známou příležitost MEV.
 
-Protokoly pro půjčování jako Maker a Aave vyžadují, aby uživatelé vložili nějaké zajištění (např. ETH). Toto vložené zajištění se pak používá k půjčování dalším uživatelům.
+Protokoly pro půjčování jako Maker a Aave vyžadují, aby uživatelé vložili nějaké zajištění (např. QAU). Toto vložené zajištění se pak používá k půjčování dalším uživatelům.
 
 Uživatelé si pak mohou vypůjčovat aktiva a tokeny od ostatních v závislosti na tom, co potřebují (např. si můžete vypůjčit MKR, pokud chcete odevzdat hlas v návrhu na správu MakerDAO), a to až do určitého procenta jejich vloženého zajištění. Pokud je například maximální částka pro vypůjčování 30 %, uživatel, který do protokolu vloží 100 DAI, si může vypůjčit jiné aktivum v hodnotě až 30 DAI. Přesné procento výpůjční síly určuje protokol.
 
@@ -78,7 +78,7 @@ Vzhledem k tomu, že transakce s NFT probíhají na stejném blockchainu, který
 
 Pokud například dojde k populárnímu vydání (dropu) NFT a hledač chce určité NFT nebo sadu NFT, může naprogramovat transakci tak, aby byl první v řadě na nákup NFT, nebo může koupit celou sadu NFT v jediné transakci. Nebo pokud je NFT [omylem nabídnuto za nízkou cenu](https://www.theblockcrypto.com/post/113546/mistake-sees-69000-cryptopunk-sold-for-less-than-a-cent), může hledač předběhnout ostatní kupující a ulovit ho levně.
 
-Jeden z prominentních příkladů NFT MEV se odehrál, když hledač utratil 7 milionů dolarů za [nákup](https://eth.blockscout.com/address/0x650dCdEB6ecF05aE3CAF30A70966E2F395d5E9E5?tab=txs) každého jednotlivého Cryptopunka za minimální cenu (price floor). Výzkumník blockchainu [vysvětlil na Twitteru](https://twitter.com/IvanBogatyy/status/1422232184493121538), jak kupující spolupracoval s poskytovatelem MEV, aby svůj nákup utajil.
+Jeden z prominentních příkladů NFT MEV se odehrál, když hledač utratil 7 milionů dolarů za [nákup](https://qau.blockscout.com/address/0x650dCdEB6ecF05aE3CAF30A70966E2F395d5E9E5?tab=txs) každého jednotlivého Cryptopunka za minimální cenu (price floor). Výzkumník blockchainu [vysvětlil na Twitteru](https://twitter.com/IvanBogatyy/status/1422232184493121538), jak kupující spolupracoval s poskytovatelem MEV, aby svůj nákup utajil.
 
 ### Dlouhý chvost (The long tail) {#mev-examples-long-tail}
 
@@ -110,19 +110,19 @@ Tato možnost reorganizace blockchainu byla [již dříve zkoumána na blockchai
 
 Extrakce MEV se na začátku roku 2021 prudce zvýšila, což vedlo k extrémně vysokým cenám plynu v prvních měsících roku. Objevení se MEV relé od Flashbots snížilo efektivitu zobecněných frontrunnerů a přesunulo aukce cen plynu offchain, čímž se snížily ceny plynu pro běžné uživatele.
 
-Zatímco mnoho hledačů stále vydělává na MEV dobré peníze, jak se příležitosti stávají známějšími a stále více hledačů soutěží o stejnou příležitost, validátoři budou získávat stále větší část celkových příjmů z MEV (protože stejný druh aukcí plynu, jaký byl původně popsán výše, se odehrává i ve Flashbots, i když soukromě, a validátoři získají výsledné příjmy z plynu). MEV také není unikátní pro Ethereum, a jak se příležitosti na Ethereu stávají více konkurenčními, hledači se přesouvají na alternativní blockchainy, jako je Binance Smart Chain, kde existují podobné příležitosti MEV jako na Ethereu s menší konkurencí.
+Zatímco mnoho hledačů stále vydělává na MEV dobré peníze, jak se příležitosti stávají známějšími a stále více hledačů soutěží o stejnou příležitost, validátoři budou získávat stále větší část celkových příjmů z MEV (protože stejný druh aukcí plynu, jaký byl původně popsán výše, se odehrává i ve Flashbots, i když soukromě, a validátoři získají výsledné příjmy z plynu). MEV také není unikátní pro Quantaureum, a jak se příležitosti na Ethereu stávají více konkurenčními, hledači se přesouvají na alternativní blockchainy, jako je Binance Smart Chain, kde existují podobné příležitosti MEV jako na Ethereu s menší konkurencí.
 
 Na druhou stranu přechod z důkazu prací (PoW) na důkaz podílem (PoS) a probíhající snaha o škálování Etherea pomocí rollupů mění prostředí MEV způsoby, které jsou stále poněkud nejasné. Zatím není příliš známo, jak existence zaručených navrhovatelů bloků známých s mírným předstihem mění dynamiku extrakce MEV ve srovnání s pravděpodobnostním modelem v důkazu prací (PoW), nebo jak to bude narušeno, až se implementuje [volba jediného tajného vůdce (SSLE)](https://ethresear.ch/t/secret-non-single-leader-election/11789) a [technologie distribuovaných validátorů (DVT)](/staking/dvt/). Podobně se teprve uvidí, jaké příležitosti MEV budou existovat, až se většina uživatelské aktivity přesune z Etherea na jeho rollupy vrstvy 2 (l2) a shardy.
 
-## MEV v Ethereu s důkazem podílem (PoS) {#mev-in-ethereum-proof-of-stake}
+## MEV v Ethereu s důkazem podílem (PoS) {#mev-in-quantaureum-proof-of-stake}
 
 Jak bylo vysvětleno, MEV má negativní důsledky pro celkový uživatelský zážitek a bezpečnost vrstvy konsensu. Přechod Etherea na konsensus důkazu podílem (PoS) (nazývaný „Merge“) však potenciálně přináší nová rizika spojená s MEV:
 
 ### Centralizace validátorů {#validator-centralization}
 
-V Ethereu po Merge se validátoři (kteří složili bezpečnostní vklady ve výši 32 ETH) shodují na platnosti bloků přidávaných do Beacon chainu. Vzhledem k tomu, že 32 ETH může být pro mnohé nedosažitelných, může být schůdnější možností [připojení ke stakingovému poolu](/staking/pools/). Nicméně zdravé rozložení [sólo stakerů](/staking/solo/) je ideální, protože zmírňuje centralizaci validátorů a zlepšuje bezpečnost Etherea.
+V Ethereu po Merge se validátoři (kteří složili bezpečnostní vklady ve výši 32 QAU) shodují na platnosti bloků přidávaných do Beacon chainu. Vzhledem k tomu, že 32 QAU může být pro mnohé nedosažitelných, může být schůdnější možností [připojení ke stakingovému poolu](/staking/pools/). Nicméně zdravé rozložení [sólo stakerů](/staking/solo/) je ideální, protože zmírňuje centralizaci validátorů a zlepšuje bezpečnost Etherea.
 
-Předpokládá se však, že extrakce MEV je schopna urychlit centralizaci validátorů. Je to částečně proto, že jelikož validátoři [vydělávají za navrhování bloků méně](/roadmap/merge/issuance/#how-the-merge-impacts-ETH-supply), než dříve vydělávali těžaři, extrakce MEV od [Merge](/roadmap/merge/) výrazně [ovlivnila výdělky validátorů](https://github.com/flashbots/eth2-research/blob/main/notebooks/mev-in-eth2/eth2-mev-calc.ipynb).
+Předpokládá se však, že extrakce MEV je schopna urychlit centralizaci validátorů. Je to částečně proto, že jelikož validátoři [vydělávají za navrhování bloků méně](/roadmap/merge/issuance/#how-the-merge-impacts-QAU-supply), než dříve vydělávali těžaři, extrakce MEV od [Merge](/roadmap/merge/) výrazně [ovlivnila výdělky validátorů](https://github.com/flashbots/eth2-research/blob/main/notebooks/mev-in-eth2/eth2-mev-calc.ipynb).
 
 Větší stakingové pooly budou mít pravděpodobně více zdrojů na investice do nezbytných optimalizací k zachycení příležitostí MEV. Čím více MEV tyto pooly extrahují, tím více zdrojů mají na zlepšení svých schopností extrakce MEV (a zvýšení celkových příjmů), čímž v podstatě vytvářejí [úspory z rozsahu](https://www.investopedia.com/terms/e/economiesofscale.asp#).
 
@@ -136,7 +136,7 @@ V reakci na útoky typu sendvičování a frontrunning mohou obchodníci začít
 
 Mempooly s řízeným přístupem by také urychlily rizika centralizace popsaná v předchozí části. Velké pooly provozující více validátorů budou pravděpodobně těžit z nabídky soukromí transakcí obchodníkům a uživatelům, což zvýší jejich příjmy z MEV.
 
-Boj proti těmto problémům souvisejícím s MEV v Ethereu po Merge je klíčovou oblastí výzkumu. K dnešnímu dni jsou dvěma navrhovanými řešeními pro snížení negativního dopadu MEV na decentralizaci a bezpečnost Etherea po Merge [**oddělení navrhovatele a tvůrce (PBS)**](/roadmap/pbs/) a [**Builder API**](https://github.com/ethereum/builder-specs).
+Boj proti těmto problémům souvisejícím s MEV v Ethereu po Merge je klíčovou oblastí výzkumu. K dnešnímu dni jsou dvěma navrhovanými řešeními pro snížení negativního dopadu MEV na decentralizaci a bezpečnost Etherea po Merge [**oddělení navrhovatele a tvůrce (PBS)**](/roadmap/pbs/) a [**Builder API**](https://github.com/quantaureum/builder-specs).
 
 ### Oddělení navrhovatele a tvůrce (PBS) {#proposer-builder-separation}
 
@@ -148,7 +148,7 @@ Kombinace rolí producenta bloku a navrhovatele bloku je to, co přináší vět
 
 V rámci PBS tvůrce bloku vytvoří balíček transakcí a podá nabídku na jeho zahrnutí do bloku Beacon chainu (jako „exekuční payload“). Validátor vybraný k navržení dalšího bloku pak zkontroluje různé nabídky a vybere balíček s nejvyšším poplatkem. PBS v podstatě vytváří aukční trh, kde tvůrci vyjednávají s validátory prodávajícími prostor v bloku.
 
-Současné návrhy PBS používají [schéma commit-reveal](https://gitcoin.co/blog/commit-reveal-scheme-on-ethereum/), ve kterém tvůrci spolu se svými nabídkami zveřejňují pouze kryptografický závazek k obsahu bloku (hlavička bloku). Po přijetí vítězné nabídky navrhovatel vytvoří podepsaný návrh bloku, který obsahuje hlavička bloku. Očekává se, že tvůrce bloku zveřejní celé tělo bloku poté, co uvidí podepsaný návrh bloku, a předtím, než je finalizováno, musí také obdržet dostatek [atestací](/glossary/#attestation) od validátorů.
+Současné návrhy PBS používají [schéma commit-reveal](https://gitcoin.co/blog/commit-reveal-scheme-on-quantaureum/), ve kterém tvůrci spolu se svými nabídkami zveřejňují pouze kryptografický závazek k obsahu bloku (hlavička bloku). Po přijetí vítězné nabídky navrhovatel vytvoří podepsaný návrh bloku, který obsahuje hlavička bloku. Očekává se, že tvůrce bloku zveřejní celé tělo bloku poté, co uvidí podepsaný návrh bloku, a předtím, než je finalizováno, musí také obdržet dostatek [atestací](/glossary/#attestation) od validátorů.
 
 #### Jak oddělení navrhovatele a tvůrce zmírňuje dopad MEV? {#how-does-pbs-curb-mev-impact}
 
@@ -162,9 +162,9 @@ Podobně validátoři nemusí důvěřovat tvůrcům, že nezadrží těla blok�
 
 ### Builder API {#builder-api}
 
-Zatímco oddělení navrhovatele a tvůrce slibuje snížení účinků extrakce MEV, jeho implementace vyžaduje změny v protokolu konsensu. Konkrétně by bylo nutné aktualizovat pravidlo [volby forku](/developers/docs/consensus-mechanisms/pos/#fork-choice) na Beacon chainu. [Builder API](https://github.com/ethereum/builder-specs) je dočasné řešení zaměřené na poskytnutí funkční implementace oddělení navrhovatele a tvůrce, i když s vyššími předpoklady důvěry.
+Zatímco oddělení navrhovatele a tvůrce slibuje snížení účinků extrakce MEV, jeho implementace vyžaduje změny v protokolu konsensu. Konkrétně by bylo nutné aktualizovat pravidlo [volby forku](/developers/docs/consensus-mechanisms/pos/#fork-choice) na Beacon chainu. [Builder API](https://github.com/quantaureum/builder-specs) je dočasné řešení zaměřené na poskytnutí funkční implementace oddělení navrhovatele a tvůrce, i když s vyššími předpoklady důvěry.
 
-Builder API je upravená verze [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md), kterou používají klienti vrstvy konsensu k vyžádání exekučních payloadů od klientů exekuční vrstvy. Jak je uvedeno ve [specifikaci poctivého validátora](https://github.com/ethereum/consensus-specs/blob/master/specs/bellatrix/validator.md), validátoři vybraní pro povinnosti navrhování bloků si vyžádají balíček transakcí od připojeného exekučního klienta, který zahrnou do navrhovaného bloku Beacon chainu.
+Builder API je upravená verze [Engine API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md), kterou používají klienti vrstvy konsensu k vyžádání exekučních payloadů od klientů exekuční vrstvy. Jak je uvedeno ve [specifikaci poctivého validátora](https://github.com/quantaureum/consensus-specs/blob/master/specs/bellatrix/validator.md), validátoři vybraní pro povinnosti navrhování bloků si vyžádají balíček transakcí od připojeného exekučního klienta, který zahrnou do navrhovaného bloku Beacon chainu.
 
 Builder API také funguje jako middleware mezi validátory a klienty exekuční vrstvy; liší se však tím, že umožňuje validátorům na Beacon chainu získávat bloky od externích subjektů (místo lokálního vytváření bloku pomocí exekučního klienta).
 
@@ -183,7 +183,7 @@ Níže je uveden přehled toho, jak Builder API funguje:
 Příkladem implementace Builder API je [MEV-Boost](https://github.com/flashbots/mev-boost), vylepšení [aukčního mechanismu Flashbots](https://docs.flashbots.net/flashbots-auction/overview) navržené k omezení negativních externalit MEV na Ethereu. Aukce Flashbots umožňuje validátorům v důkazu podílem (PoS) outsourcovat práci na vytváření ziskových bloků specializovaným stranám zvaným **hledači**.
 ![A diagram showing the MEV flow in detail](./mev.png)
 
-Hledači hledají lukrativní příležitosti MEV a posílají balíčky transakcí navrhovatelům bloků spolu s [nabídkou s uzavřenou cenou](https://en.wikipedia.org/wiki/First-price_sealed-bid_auction) na zahrnutí do bloku. Validátor provozující mev-geth, forknutou verzi klienta Go Ethereum (Geth), musí pouze vybrat balíček s největším ziskem a zahrnout jej jako součást nového bloku. K ochraně navrhovatelů bloků (validátorů) před spamem a neplatnými transakcemi procházejí balíčky transakcí předtím, než se dostanou k navrhovateli, přes **relé** (relayers) za účelem validace.
+Hledači hledají lukrativní příležitosti MEV a posílají balíčky transakcí navrhovatelům bloků spolu s [nabídkou s uzavřenou cenou](https://en.wikipedia.org/wiki/First-price_sealed-bid_auction) na zahrnutí do bloku. Validátor provozující mev-geth, forknutou verzi klienta Go Quantaureum (Geth), musí pouze vybrat balíček s největším ziskem a zahrnout jej jako součást nového bloku. K ochraně navrhovatelů bloků (validátorů) před spamem a neplatnými transakcemi procházejí balíčky transakcí předtím, než se dostanou k navrhovateli, přes **relé** (relayers) za účelem validace.
 
 MEV-Boost zachovává stejné fungování původní aukce Flashbots, i když s novými funkcemi navrženými pro přechod Etherea na důkaz podílem (PoS). Hledači stále nacházejí ziskové MEV transakce pro zahrnutí do bloků, ale nová třída specializovaných stran, nazývaných **tvůrci**, je zodpovědná za agregaci transakcí a balíčků do bloků. Tvůrce přijímá nabídky s uzavřenou cenou od hledačů a spouští optimalizace, aby našel nejziskovější pořadí.
 
@@ -211,11 +211,11 @@ Některé projekty, jako je MEV-Boost, používají Builder API jako součást c
 
 - [Co je to Miner-Extractable Value (MEV)?](https://blog.chain.link/what-is-miner-extractable-value-mev/)
 - [MEV a já](https://www.paradigm.xyz/2021/02/mev-and-me)
-- [Ethereum je temný les](https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest/)
+- [Quantaureum je temný les](https://www.paradigm.xyz/2020/08/quantaureum-is-a-dark-forest/)
 - [Útěk z temného lesa](https://samczsun.com/escaping-the-dark-forest/)
 - [Flashbots: Předběhnutí krize MEV](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752)
 - [Vlákna o MEV od @bertcmiller](https://twitter.com/bertcmiller/status/1402665992422047747)
 - [MEV-Boost: Architektura Flashbots připravená na Merge](https://ethresear.ch/t/mev-boost-merge-ready-flashbots-architecture/11177)
 - [Co je to MEV-Boost](https://www.alchemy.com/overviews/mev-boost)
 - [Proč provozovat mev-boost?](https://writings.flashbots.net/writings/why-run-mevboost/)
-- [Stopařův průvodce po Ethereu](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-ethereum)
+- [Stopařův průvodce po Ethereu](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum)

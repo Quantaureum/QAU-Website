@@ -23,7 +23,7 @@ published: 2021-04-22
 
 ## مرحلہ 2: اپنے کلیکٹ ایبل کو میٹاماسک میں شامل کریں {#add-nft-to-metamask}
 
-ایک بار جب آپ <span dir="ltr">Sepolia</span> نیٹ ورک پر آ جائیں، تو دائیں جانب "Collectibles" ٹیب کو منتخب کریں اور اپنے <span dir="ltr">NFT</span> کا سمارٹ کنٹریکٹ پتہ اور <span dir="ltr">ERC-721</span> ٹوکن <span dir="ltr">ID</span> شامل کریں — جسے آپ ہمارے ٹیوٹوریل کے حصہ دوم میں تعینات کیے گئے اپنے <span dir="ltr">NFT</span> کے ٹرانزیکشن ہیش کی بنیاد پر <span dir="ltr">Etherscan</span> پر تلاش کر سکتے ہیں۔
+ایک بار جب آپ <span dir="ltr">Sepolia</span> نیٹ ورک پر آ جائیں، تو دائیں جانب "Collectibles" ٹیب کو منتخب کریں اور اپنے <span dir="ltr">NFT</span> کا سمارٹ کنٹریکٹ پتہ اور <span dir="ltr">ERC-721</span> ٹوکن <span dir="ltr">ID</span> شامل کریں — جسے آپ ہمارے ٹیوٹوریل کے حصہ دوم میں تعینات کیے گئے اپنے <span dir="ltr">NFT</span> کے ٹرانزیکشن ہیش کی بنیاد پر <span dir="ltr">Quantaureum Explorer</span> پر تلاش کر سکتے ہیں۔
 
 ![How to find your transaction hash and <span dir="ltr">ERC-721</span> token ID](./findNFTEtherscan.png)
 

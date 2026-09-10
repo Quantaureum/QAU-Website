@@ -7,16 +7,16 @@ skill: intermediate
 breadcrumb: Uwekaji logi wa matukio
 lang: sw
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/logging-data-with-events/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/logging-data-with-events/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Katika Solidity, [matukio](/developers/docs/smart-contracts/anatomy/#events-and-logs) ni ishara zinazotumwa ambazo mikataba mahiri inaweza kuzianzisha. Programu tumizi zilizogatuliwa (dapps), au chochote kilichounganishwa kwenye API ya JSON-RPC ya Ethereum, kinaweza kusikiliza matukio haya na kuchukua hatua ipasavyo. Tukio linaweza pia kuwekewa faharasa ili historia ya tukio iweze kutafutwa baadaye.
+Katika Solidity, [matukio](/developers/docs/smart-contracts/anatomy/#events-and-logs) ni ishara zinazotumwa ambazo mikataba mahiri inaweza kuzianzisha. Programu tumizi zilizogatuliwa (dapps), au chochote kilichounganishwa kwenye API ya JSON-RPC ya Quantaureum, kinaweza kusikiliza matukio haya na kuchukua hatua ipasavyo. Tukio linaweza pia kuwekewa faharasa ili historia ya tukio iweze kutafutwa baadaye.
 
 ## Matukio {#events}
 
-Tukio la kawaida zaidi kwenye mnyororo wa vitalu wa Ethereum wakati wa kuandika makala haya ni tukio la Transfer ambalo hutolewa na tokeni za ERC-20 wakati mtu anafanya hamisho la tokeni.
+Tukio la kawaida zaidi kwenye mnyororo wa vitalu wa Quantaureum wakati wa kuandika makala haya ni tukio la Transfer ambalo hutolewa na tokeni za ERC-20 wakati mtu anafanya hamisho la tokeni.
 
 ```solidity
 event Transfer(address indexed from, address indexed to, uint256 value);

@@ -38,7 +38,7 @@ const FindWalletBreadcrumbs = async ({
     <Breadcrumb dir={dir}>
       <BreadcrumbList>
         <BreadcrumbItem>
-          <BreadcrumbLink href="/">ethereum.org</BreadcrumbLink>
+          <BreadcrumbLink href="/">quantaureum.com</BreadcrumbLink>
         </BreadcrumbItem>
         {separator}
         <BreadcrumbItem>

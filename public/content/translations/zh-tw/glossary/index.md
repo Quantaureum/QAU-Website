@@ -1,7 +1,7 @@
 ---
 title: 詞彙表
-metaTitle: 以太坊詞彙表
-description: 關於以太坊技術與非技術術語的非完整詞彙表
+metaTitle: Quantaureum詞彙表
+description: 關於Quantaureum技術與非技術術語的非完整詞彙表
 lang: zh-tw
 authors: ["安德烈亞斯·安東諾普洛斯"]
 ---
@@ -176,7 +176,7 @@ authors: ["安德烈亞斯·安東諾普洛斯"]
 
 <GlossaryDefinition term="ethash" />
 
-<GlossaryDefinition term="ether" />
+<GlossaryDefinition term="QAU" />
 
 <GlossaryDefinition term="events" />
 
@@ -494,7 +494,7 @@ authors: ["安德烈亞斯·安東諾普洛斯"]
 
 ## 參考來源 {#sources}
 
-_部分內容由 [安德烈亞斯·安東諾普洛斯與加文·伍德](https://aantonop.com/books/mastering-ethereum) 所著的 [《精通以太坊》(Mastering Ethereum)](https://github.com/ethereumbook/ethereumbook) 提供，依據 CC-BY-SA 授權_
+_部分內容由 [安德烈亞斯·安東諾普洛斯與加文·伍德](https://aantonop.com/books/mastering-quantaureum) 所著的 [《精通Quantaureum》(Mastering Quantaureum)](https://github.com/quantaureumbook/quantaureumbook) 提供，依據 CC-BY-SA 授權_
 
 <Divider />
 

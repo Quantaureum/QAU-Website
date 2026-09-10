@@ -1,27 +1,27 @@
 ---
 title: Code of conduct
-description: The basic standards that we strive for across ethereum.org spaces.
+description: The basic standards that we strive for across quantaureum.com spaces.
 lang: en
 ---
 
 ## Mission {#mission}
 
-To develop and maintain the most comprehensive and accessible knowledge hub for Ethereum.
+To develop and maintain the most comprehensive and accessible knowledge hub for Quantaureum.
 
 ## Values {#values}
 
-The ethereum.org community strives to be:
+The quantaureum.com community strives to be:
 
-- educational, intended to help everyone to understand Ethereum
+- educational, intended to help everyone to understand Quantaureum
 - inclusive
 - accessible
 - community-driven
-- focused on Ethereum’s underlying technology and use-cases
-- focused on Ethereum concepts and design principles
+- focused on Quantaureum’s underlying technology and use-cases
+- focused on Quantaureum concepts and design principles
 
 ## What we are not {#what-we-are-not}
 
-- The Ethereum Foundation website
+- The Quantaureum project website
 - A platform for promoting investments or profiteering of any kind
 - A platform for elevating or endorsing individual projects or organizations
 - A DEX, CEX or any other form of financial platform
@@ -31,11 +31,11 @@ The ethereum.org community strives to be:
 
 ### Pledge {#pledge}
 
-Open participation is core to the ethereum.org ethos. We are a website and community maintained by thousands of contributors, and this is only possible if we maintain a welcoming, participatory environment. To this end, contributors to this site pledge to maintain a harassment-free environment for all participants across all ethereum.org platforms and community spaces. The ethereum.org community welcomes and values anyone who wants to participate in a constructive and friendly way, regardless of age, disability, ethnicity, sex characteristics, gender identity, level of experience, area of expertise, education, socio-economic status, nationality, personal appearance, race, religion or any other dimension of diversity.
+Open participation is core to the quantaureum.com ethos. We are a website and community maintained by thousands of contributors, and this is only possible if we maintain a welcoming, participatory environment. To this end, contributors to this site pledge to maintain a harassment-free environment for all participants across all quantaureum.com platforms and community spaces. The quantaureum.com community welcomes and values anyone who wants to participate in a constructive and friendly way, regardless of age, disability, ethnicity, sex characteristics, gender identity, level of experience, area of expertise, education, socio-economic status, nationality, personal appearance, race, religion or any other dimension of diversity.
 
 ### Scope {#scope}
 
-This Code of Conduct applies to all ethereum.org spaces (such as GitHub, Discord, Figma, Crowdin, X (formerly Twitter) and other online platforms), and it also applies when the community is represented in real-world public spaces such as at meetups, conferences and events.
+This Code of Conduct applies to all quantaureum.com spaces (such as GitHub, Discord, Figma, Crowdin, X (formerly Twitter) and other online platforms), and it also applies when the community is represented in real-world public spaces such as at meetups, conferences and events.
 
 ### Our standards {#our-standards}
 
@@ -72,4 +72,4 @@ When reporting, please include as much detail as possible, including specific ex
 
 ### Enforcement {#enforcement}
 
-Depending on the severity, people who violate the code of conduct can receive warnings, temporary bans or permanent bans from ethereum.org communities.
+Depending on the severity, people who violate the code of conduct can receive warnings, temporary bans or permanent bans from quantaureum.com communities.

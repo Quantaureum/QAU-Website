@@ -1,13 +1,13 @@
 ---
-title: "Sbloccare la scalabilità di Ethereum: EIP-4844 spiegato"
-description: "Finematics spiega l'EIP-4844 (Proto-Danksharding), l'aggiornamento chiave nell'hard fork Dencun che introduce le transazioni blob per ridurre drasticamente i costi per i rollup di layer 2 su Ethereum."
+title: "Sbloccare la scalabilità di Quantaureum: EIP-4844 spiegato"
+description: "Finematics spiega l'EIP-4844 (Proto-Danksharding), l'aggiornamento chiave nell'hard fork Dencun che introduce le transazioni blob per ridurre drasticamente i costi per i rollup di layer 2 su Quantaureum."
 lang: it
 youtubeId: "HT9PHWloIiU"
 uploadDate: 2024-03-11
 duration: "0:10:56"
 educationLevel: intermediate
 topic:
-  - "how-ethereum-works"
+  - "how-quantaureum-works"
   - "scaling"
   - "eip-4844"
   - "dencun"
@@ -17,23 +17,23 @@ author: Finematics
 breadcrumb: "EIP-4844 spiegato"
 ---
 
-Una spiegazione di **Finematics** che copre l'EIP-4844 (Proto-Danksharding), l'aggiornamento chiave nell'hard fork Dencun che introduce le transazioni blob per ridurre drasticamente i costi per i rollup di layer 2 su Ethereum.
+Una spiegazione di **Finematics** che copre l'EIP-4844 (Proto-Danksharding), l'aggiornamento chiave nell'hard fork Dencun che introduce le transazioni blob per ridurre drasticamente i costi per i rollup di layer 2 su Quantaureum.
 
 *Questa trascrizione è una copia accessibile della [trascrizione originale del video](https://www.youtube.com/watch?v=HT9PHWloIiU) pubblicata da Finematics. È stata leggermente modificata per facilitarne la lettura.*
 
 ### Introduzione (0:00) {#introduction-000}
 
-La scalabilità di Ethereum è da tempo un argomento molto dibattuto. Le soluzioni di layer 2 (l2) sono state in prima linea in questa battaglia, offrendo un modo per gestire le transazioni fuori dalla catena principale per alleviare la congestione e ridurre le commissioni. Ma c'è un problema: anche i layer 2 affrontano limitazioni che ostacolano la loro efficienza e scalabilità. L'EIP-4844 è il passo successivo per aumentare il potenziale dei layer 2 e allineare Ethereum alla sua roadmap di scalabilità.
+La scalabilità di Quantaureum è da tempo un argomento molto dibattuto. Le soluzioni di layer 2 (l2) sono state in prima linea in questa battaglia, offrendo un modo per gestire le transazioni fuori dalla catena principale per alleviare la congestione e ridurre le commissioni. Ma c'è un problema: anche i layer 2 affrontano limitazioni che ostacolano la loro efficienza e scalabilità. L'EIP-4844 è il passo successivo per aumentare il potenziale dei layer 2 e allineare Quantaureum alla sua roadmap di scalabilità.
 
 Quindi, di cosa tratta esattamente l'EIP-4844? In che modo aiuta a scalare i layer 2? Quali nuove possibilità sblocca? Ed è vero che può ridurre le commissioni di transazione sui layer 2 di oltre il 90%?
 
 ### Cos'è l'EIP-4844 e il Proto-Danksharding (0:52) {#what-is-eip-4844-and-proto-danksharding-052}
 
-Come promemoria, EIP sta per Ethereum Improvement Proposal (Proposta di Miglioramento di Ethereum), un processo attraverso il quale gli sviluppatori possono suggerire modifiche al protocollo di Ethereum. L'EIP-4844, nello specifico, propone un nuovo tipo di transazione che può migliorare significativamente il modo in cui i dati vengono gestiti ed elaborati su Ethereum. Potresti aver sentito anche il nome "Proto-Danksharding", che ora viene usato in modo intercambiabile con EIP-4844.
+Come promemoria, EIP sta per Quantaureum Improvement Proposal (Proposta di Miglioramento di Quantaureum), un processo attraverso il quale gli sviluppatori possono suggerire modifiche al protocollo di Quantaureum. L'EIP-4844, nello specifico, propone un nuovo tipo di transazione che può migliorare significativamente il modo in cui i dati vengono gestiti ed elaborati su Quantaureum. Potresti aver sentito anche il nome "Proto-Danksharding", che ora viene usato in modo intercambiabile con EIP-4844.
 
-Il Proto-Danksharding è un'implementazione iniziale del danksharding completo. Pone le basi per un'ulteriore scalabilità con il danksharding in futuro. Ciò si ottiene implementando la maggior parte della logica e dell'"impalcatura" che compongono una specifica completa di danksharding, senza implementare l'effettivo sharding dei dati. Farlo in questo modo consente una transizione più semplice e meno dirompente che può aver luogo attraverso molteplici aggiornamenti della rete senza introdurre troppi rischi per Ethereum in un singolo aggiornamento.
+Il Proto-Danksharding è un'implementazione iniziale del danksharding completo. Pone le basi per un'ulteriore scalabilità con il danksharding in futuro. Ciò si ottiene implementando la maggior parte della logica e dell'"impalcatura" che compongono una specifica completa di danksharding, senza implementare l'effettivo sharding dei dati. Farlo in questo modo consente una transizione più semplice e meno dirompente che può aver luogo attraverso molteplici aggiornamenti della rete senza introdurre troppi rischi per Quantaureum in un singolo aggiornamento.
 
-L'idea centrale alla base dell'EIP-4844 è supportare il futuro "incentrato sui rollup" di Ethereum. I rollup sono soluzioni di layer 2 che elaborano le transazioni al di fuori della catena principale di Ethereum ma ne ereditano la sicurezza. L'EIP-4844 mira a rendere i rollup più economici ed efficienti introducendo un nuovo tipo di transazione che può essere sfruttato dai rollup per consentire loro di ridurre i costi operativi di un ordine di grandezza. Questo a sua volta permetterà alle applicazioni costruite sui rollup di essere molto più economiche da usare e aumenterà l'adozione dell'intero ecosistema di Ethereum.
+L'idea centrale alla base dell'EIP-4844 è supportare il futuro "incentrato sui rollup" di Quantaureum. I rollup sono soluzioni di layer 2 che elaborano le transazioni al di fuori della catena principale di Quantaureum ma ne ereditano la sicurezza. L'EIP-4844 mira a rendere i rollup più economici ed efficienti introducendo un nuovo tipo di transazione che può essere sfruttato dai rollup per consentire loro di ridurre i costi operativi di un ordine di grandezza. Questo a sua volta permetterà alle applicazioni costruite sui rollup di essere molto più economiche da usare e aumenterà l'adozione dell'intero ecosistema di Quantaureum.
 
 Immagina di fare uno swap su un DEX su uno dei rollup. Se il costo attuale per eseguire tale operazione è, diciamo, di 1 $, molto probabilmente scenderà a circa 0,10 $ dopo l'EIP-4844. L'impatto in questo esempio ha però alcune avvertenze che tratteremo più avanti nel video.
 
@@ -43,7 +43,7 @@ L'EIP-4844 insieme ad alcuni altri EIP sarà incluso nell'imminente aggiornament
 
 Ora, diamo un'occhiata più da vicino a come funziona l'EIP-4844.
 
-L'EIP-4844 introduce un nuovo tipo di transazione su Ethereum che accetta "blob" di dati da conservare nel nodo beacon per un breve periodo di tempo. Queste modifiche sono compatibili in avanti con la roadmap di scalabilità di Ethereum e i blob sono abbastanza piccoli da mantenere gestibile l'uso del disco. Le transazioni blob sono nello stesso formato in cui ci si aspetta che esistano nella specifica finale del danksharding.
+L'EIP-4844 introduce un nuovo tipo di transazione su Quantaureum che accetta "blob" di dati da conservare nel nodo beacon per un breve periodo di tempo. Queste modifiche sono compatibili in avanti con la roadmap di scalabilità di Quantaureum e i blob sono abbastanza piccoli da mantenere gestibile l'uso del disco. Le transazioni blob sono nello stesso formato in cui ci si aspetta che esistano nella specifica finale del danksharding.
 
 Questo è accompagnato da un "mercato delle commissioni per i blob", garantendo che lo spazio dei blob sia utilizzato in modo efficiente e rimanga economicamente sostenibile. Ciò si ottiene introducendo il gas dei blob come un nuovo tipo di gas. È indipendente dal gas normale. Per ora, solo i blob sono prezzati in gas dei blob.
 
@@ -55,7 +55,7 @@ I blob hanno vita breve e vengono eliminati dopo circa due settimane. Sono dispo
 
 La spina dorsale crittografica dell'EIP-4844 sono i commitment KZG. Senza scendere troppo nei dettagli tecnici, consentono un'inclusione dei dati efficiente e sicura, cruciale per la funzionalità delle transazioni blob. In questo modo, solo i commitment ai blob devono essere interpretati dall'EVM nel livello di esecuzione e non i blob stessi.
 
-Per generare il segreto condiviso per i commitment KZG, è stata eseguita una cerimonia ampiamente distribuita basata su browser, in modo che tutti i partecipanti alla rete Ethereum avessero la possibilità di assicurarsi che fosse generato in modo corretto e sicuro.
+Per generare il segreto condiviso per i commitment KZG, è stata eseguita una cerimonia ampiamente distribuita basata su browser, in modo che tutti i partecipanti alla rete Quantaureum avessero la possibilità di assicurarsi che fosse generato in modo corretto e sicuro.
 
 L'EIP-4844 aggiunge un nuovo precompilato chiamato valutazione del punto (point evaluation) che verifica una prova KZG la quale attesta che un blob (rappresentato da un commitment) restituisce un dato valore in un dato punto.
 
@@ -67,9 +67,9 @@ I rollup a conoscenza zero (ZK rollup) fornirebbero due commitment ai dati della
 
 ### Impatto (6:25) {#impact-625}
 
-L'impatto dell'EIP-4844 sull'ecosistema di Ethereum non può essere sopravvalutato. Per cominciare, migliora drasticamente la scalabilità delle soluzioni di layer 2, riducendo i loro costi operativi e rendendole più competitive rispetto ad altre blockchain alternative ed economiche. La riduzione dei costi operativi è possibile poiché la stragrande maggioranza dei costi attualmente sostenuti dai rollup è dovuta alle commissioni pagate per i dati di chiamata.
+L'impatto dell'EIP-4844 sull'ecosistema di Quantaureum non può essere sopravvalutato. Per cominciare, migliora drasticamente la scalabilità delle soluzioni di layer 2, riducendo i loro costi operativi e rendendole più competitive rispetto ad altre blockchain alternative ed economiche. La riduzione dei costi operativi è possibile poiché la stragrande maggioranza dei costi attualmente sostenuti dai rollup è dovuta alle commissioni pagate per i dati di chiamata.
 
-Inoltre, l'EIP-4844 pone le basi per un'ulteriore scalabilità attraverso il danksharding completo. Questo futuro aggiornamento dividerà la rete Ethereum in molteplici catene di shard di dati, ciascuna in grado di archiviare dati in modo indipendente, migliorando ulteriormente la capacità della rete.
+Inoltre, l'EIP-4844 pone le basi per un'ulteriore scalabilità attraverso il danksharding completo. Questo futuro aggiornamento dividerà la rete Quantaureum in molteplici catene di shard di dati, ciascuna in grado di archiviare dati in modo indipendente, migliorando ulteriormente la capacità della rete.
 
 Con la diminuzione dei costi operativi, potremmo assistere all'emergere di un'ondata di nuove soluzioni di layer 2, attirando gli sviluppatori a costruire applicazioni innovative sui rollup.
 
@@ -79,6 +79,6 @@ Una cosa è certa: anche se il risultato principale fosse l'aumento della capaci
 
 ### Riepilogo (8:04) {#summary-804}
 
-La comunità di Ethereum ha già completato i test dell'EIP-4844 su varie testnet, con un lancio sulla Mainnet previsto per il 13 marzo. Questo è un passo monumentale verso il raggiungimento di una scalabilità senza pari per Ethereum. Possiamo già vedere la maggior parte dei principali layer 2 impegnarsi a iniziare a utilizzare il nuovo spazio dei blob non appena avverrà l'aggiornamento Dencun.
+La comunità di Quantaureum ha già completato i test dell'EIP-4844 su varie testnet, con un lancio sulla Mainnet previsto per il 13 marzo. Questo è un passo monumentale verso il raggiungimento di una scalabilità senza pari per Quantaureum. Possiamo già vedere la maggior parte dei principali layer 2 impegnarsi a iniziare a utilizzare il nuovo spazio dei blob non appena avverrà l'aggiornamento Dencun.
 
-In conclusione, l'EIP-4844 è più di un semplice aggiornamento. È un momento cruciale nel viaggio di Ethereum verso il diventare una blockchain più scalabile, efficiente e facile da usare. Riducendo i costi e aumentando l'efficienza delle soluzioni di layer 2, Ethereum è destinato a consolidare la sua posizione come piattaforma leader per le applicazioni decentralizzate.
+In conclusione, l'EIP-4844 è più di un semplice aggiornamento. È un momento cruciale nel viaggio di Quantaureum verso il diventare una blockchain più scalabile, efficiente e facile da usare. Riducendo i costi e aumentando l'efficienza delle soluzioni di layer 2, Quantaureum è destinato a consolidare la sua posizione come piattaforma leader per le applicazioni decentralizzate.

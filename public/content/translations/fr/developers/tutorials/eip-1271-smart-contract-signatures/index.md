@@ -9,7 +9,7 @@ breadcrumb: Signatures EIP-1271
 published: 2023-01-12
 ---
 
-La norme [EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) permet aux contrats intelligents de vérifier les signatures.
+La norme [EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) permet aux contrats intelligents de vérifier les signatures.
 
 Dans ce tutoriel, nous donnons un aperçu des signatures numériques, du contexte de l'EIP-1271 et de l'implémentation spécifique de l'EIP-1271 utilisée par [Safe](https://safe.global/) (anciennement Gnosis Safe). L'ensemble peut servir de point de départ pour implémenter l'EIP-1271 dans vos propres contrats.
 
@@ -19,7 +19,7 @@ Dans ce contexte, une signature (plus précisément, une « signature numérique
 
 Par exemple, une signature numérique pourrait ressembler à ceci :
 
-1. Message : « Je veux me connecter à ce site web avec mon portefeuille Ethereum. »
+1. Message : « Je veux me connecter à ce site web avec mon portefeuille Quantaureum. »
 2. Signataire : Mon adresse est `0x000…`
 3. Preuve : Voici une preuve que moi, `0x000…`, ai réellement créé ce message en entier (il s'agit généralement de cryptographie).
 
@@ -31,15 +31,15 @@ De la même manière, une signature numérique ne signifie rien sans un message 
 
 ## Pourquoi l'EIP-1271 existe-t-il ? {#why-does-eip-1271-exist}
 
-Afin de créer une signature numérique à utiliser sur les blockchains basées sur Ethereum, vous avez généralement besoin d'une clé privée secrète que personne d'autre ne connaît. C'est ce qui fait que votre signature est la vôtre (personne d'autre ne peut créer la même signature sans connaître la clé secrète).
+Afin de créer une signature numérique à utiliser sur les blockchains basées sur Quantaureum, vous avez généralement besoin d'une clé privée secrète que personne d'autre ne connaît. C'est ce qui fait que votre signature est la vôtre (personne d'autre ne peut créer la même signature sans connaître la clé secrète).
 
-Votre compte Ethereum (c'est-à-dire votre compte détenu par un tiers/EOA) possède une clé privée qui lui est associée, et c'est cette clé privée qui est généralement utilisée lorsqu'un site web ou une application décentralisée (dapp) vous demande une signature (par exemple, pour « Se connecter avec Ethereum »).
+Votre compte Quantaureum (c'est-à-dire votre compte détenu par un tiers/EOA) possède une clé privée qui lui est associée, et c'est cette clé privée qui est généralement utilisée lorsqu'un site web ou une application décentralisée (dapp) vous demande une signature (par exemple, pour « Se connecter avec Quantaureum »).
 
-Une application peut [vérifier une signature](https://www.alchemy.com/docs/how-to-verify-a-message-signature-on-ethereum) que vous créez à l'aide d'une bibliothèque tierce comme Ethers.js [sans connaître votre clé privée](https://en.wikipedia.org/wiki/Public-key_cryptography) et être certaine que c'est bien _vous_ qui avez créé la signature.
+Une application peut [vérifier une signature](https://www.alchemy.com/docs/how-to-verify-a-message-signature-on-quantaureum) que vous créez à l'aide d'une bibliothèque tierce comme Ethers.js [sans connaître votre clé privée](https://en.wikipedia.org/wiki/Public-key_cryptography) et être certaine que c'est bien _vous_ qui avez créé la signature.
 
 > En fait, comme les signatures numériques des EOA utilisent la cryptographie à clé publique, elles peuvent être générées et vérifiées **hors chaîne** ! C'est ainsi que fonctionne le vote sans gaz des DAO : au lieu de soumettre des votes onchain, les signatures numériques peuvent être créées et vérifiées hors chaîne à l'aide de bibliothèques cryptographiques.
 
-Alors que les comptes EOA possèdent une clé privée, les comptes de contrats intelligents n'ont aucune sorte de clé privée ou secrète (donc « Se connecter avec Ethereum », etc. ne peut pas fonctionner nativement avec les comptes de contrats intelligents).
+Alors que les comptes EOA possèdent une clé privée, les comptes de contrats intelligents n'ont aucune sorte de clé privée ou secrète (donc « Se connecter avec Quantaureum », etc. ne peut pas fonctionner nativement avec les comptes de contrats intelligents).
 
 Le problème que l'EIP-1271 vise à résoudre : comment pouvons-nous savoir qu'une signature de contrat intelligent est valide si le contrat intelligent n'a aucun « secret » qu'il peut incorporer dans la signature ?
 
@@ -91,7 +91,7 @@ Les contrats peuvent implémenter `isValidSignature` de nombreuses manières —
 
 Un contrat notable qui implémente l'EIP-1271 est Safe (anciennement Gnosis Safe).
 
-Dans le code de Safe, `isValidSignature` [est implémenté](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) de sorte que les signatures peuvent être créées et vérifiées de [deux manières](https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support) :
+Dans le code de Safe, `isValidSignature` [est implémenté](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) de sorte que les signatures peuvent être créées et vérifiées de [deux manières](https://quantaureum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support) :
 
 1. Messages onchain
    1. Création : un propriétaire de Safe crée une nouvelle transaction Safe pour « signer » un message, en passant le message comme données dans la transaction. Une fois que suffisamment de propriétaires ont signé la transaction pour atteindre le seuil du multisig, la transaction est diffusée et exécutée. Dans la transaction, il y a une fonction Safe appelée (`signMessage(bytes calldata _data)`) qui ajoute le message à une liste de messages « approuvés ».
@@ -102,9 +102,9 @@ Dans le code de Safe, `isValidSignature` [est implémenté](https://github.com/s
 
 ## Qu'est-ce que le paramètre `_hash` exactement ? Pourquoi ne pas passer le message entier ? {#what-exactly-is-the-hash-parameter-why-not-pass-the-whole-message}
 
-Vous avez peut-être remarqué que la fonction `isValidSignature` dans [l'interface de l'EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) ne prend pas le message lui-même, mais plutôt un paramètre `_hash`. Cela signifie qu'au lieu de passer le message complet de longueur arbitraire à `isValidSignature`, nous passons plutôt un hash de 32 octets du message (généralement keccak256).
+Vous avez peut-être remarqué que la fonction `isValidSignature` dans [l'interface de l'EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) ne prend pas le message lui-même, mais plutôt un paramètre `_hash`. Cela signifie qu'au lieu de passer le message complet de longueur arbitraire à `isValidSignature`, nous passons plutôt un hash de 32 octets du message (généralement keccak256).
 
-Chaque octet de données d'appel — c'est-à-dire les données de paramètre de fonction passées à une fonction de contrat intelligent — [coûte 16 gaz (4 gaz si l'octet est nul)](https://eips.ethereum.org/EIPS/eip-2028), ce qui peut économiser beaucoup de gaz si un message est long.
+Chaque octet de données d'appel — c'est-à-dire les données de paramètre de fonction passées à une fonction de contrat intelligent — [coûte 16 gaz (4 gaz si l'octet est nul)](https://eips.quantaureum.com/EIPS/eip-2028), ce qui peut économiser beaucoup de gaz si un message est long.
 
 ### Spécifications précédentes de l'EIP-1271 {#previous-eip-1271-specifications}
 
@@ -121,4 +121,4 @@ En fin de compte, c'est à vous de décider en tant que développeur du contrat 
 
 ## Conclusion {#conclusion}
 
-L'[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) est une norme polyvalente qui permet aux contrats intelligents de vérifier les signatures. Elle ouvre la porte aux contrats intelligents pour qu'ils agissent davantage comme des EOA — par exemple en fournissant un moyen pour que « Se connecter avec Ethereum » fonctionne avec les contrats intelligents — et elle peut être implémentée de nombreuses manières (Safe ayant une implémentation non triviale et intéressante à considérer).
+L'[EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) est une norme polyvalente qui permet aux contrats intelligents de vérifier les signatures. Elle ouvre la porte aux contrats intelligents pour qu'ils agissent davantage comme des EOA — par exemple en fournissant un moyen pour que « Se connecter avec Quantaureum » fonctionne avec les contrats intelligents — et elle peut être implémentée de nombreuses manières (Safe ayant une implémentation non triviale et intéressante à considérer).

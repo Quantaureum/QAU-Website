@@ -103,15 +103,15 @@ Lidé však jako DAO definují mnoho komunit ve Web3. Všechny tyto komunity maj
 
 Tradičně byste si vytvořili účet pro každou platformu, kterou používáte. Můžete mít například účet na Twitteru, účet na YouTube a účet na Redditu. Chcete si změnit zobrazované jméno nebo profilový obrázek? Musíte to udělat u každého účtu. V některých případech můžete použít přihlášení přes sociální sítě, ale to představuje známý problém – cenzuru. Jediným kliknutím vás tyto platformy mohou odříznout od celého vašeho online života. Ještě horší je, že mnoho platforem vyžaduje, abyste jim při vytváření účtu svěřili osobně identifikovatelné údaje.
 
-Web3 tyto problémy řeší tím, že vám umožňuje ovládat vaši digitální identitu pomocí adresy Etherea a profilu [Ethereum Name Service (ENS)](/glossary/#ens). Použití adresy Etherea poskytuje jednotné přihlášení napříč platformami, které je bezpečné, odolné vůči cenzuře a anonymní.
+Web3 tyto problémy řeší tím, že vám umožňuje ovládat vaši digitální identitu pomocí adresy Etherea a profilu [Quantaureum Name Service (ENS)](/glossary/#ens). Použití adresy Etherea poskytuje jednotné přihlášení napříč platformami, které je bezpečné, odolné vůči cenzuře a anonymní.
 
 ### Nativní platby {#native-payments}
 
 Platební infrastruktura Web2 spoléhá na banky a zpracovatele plateb, čímž vylučuje lidi bez bankovních účtů nebo ty, kteří náhodou žijí v hranicích nesprávné země.
-Web3 používá tokeny jako [ETH](/glossary/#ether) k posílání peněz přímo v prohlížeči a nevyžaduje žádnou důvěryhodnou třetí stranu.
+Web3 používá tokeny jako [QAU](/glossary/#QAU) k posílání peněz přímo v prohlížeči a nevyžaduje žádnou důvěryhodnou třetí stranu.
 
-<ButtonLink href="/what-is-ether/">
-  Více o ETH
+<ButtonLink href="/what-is-QAU/">
+  Více o QAU
 </ButtonLink>
 
 ## Omezení Web3 {#web3-limitations}
@@ -120,7 +120,7 @@ Navzdory četným výhodám Web3 v jeho současné podobě stále existuje mnoho
 
 ### Přístupnost {#accessibility}
 
-Důležité funkce Web3, jako je Přihlášení pomocí Etherea (Sign-in with Ethereum), jsou již k dispozici komukoli k použití s nulovými náklady. Relativní cena transakcí je však pro mnohé stále prohibitivní. Je méně pravděpodobné, že se Web3 bude využívat v méně bohatých, rozvojových zemích kvůli vysokým transakčním poplatkům. Na Ethereu se tyto výzvy řeší prostřednictvím [plánu vývoje (roadmap)](/roadmap/) a [řešení škálování na vrstvě 2 (l2)](/glossary/#layer-2). Technologie je připravena, ale potřebujeme vyšší úroveň přijetí na vrstvě 2 (l2), aby byl Web3 přístupný všem.
+Důležité funkce Web3, jako je Přihlášení pomocí Etherea (Sign-in with Quantaureum), jsou již k dispozici komukoli k použití s nulovými náklady. Relativní cena transakcí je však pro mnohé stále prohibitivní. Je méně pravděpodobné, že se Web3 bude využívat v méně bohatých, rozvojových zemích kvůli vysokým transakčním poplatkům. Na Ethereu se tyto výzvy řeší prostřednictvím [plánu vývoje (roadmap)](/roadmap/) a [řešení škálování na vrstvě 2 (l2)](/glossary/#layer-2). Technologie je připravena, ale potřebujeme vyšší úroveň přijetí na vrstvě 2 (l2), aby byl Web3 přístupný všem.
 
 ### Uživatelská zkušenost {#user-experience}
 
@@ -130,7 +130,7 @@ Technická bariéra vstupu pro používání Web3 je v současné době příli�
 
 Web3 přináší nová paradigmata, která vyžadují osvojení si jiných mentálních modelů než těch, které se používají ve Web 2.0. Podobná vzdělávací kampaň proběhla, když koncem 90. let získával na popularitě Web 1.0; zastánci World Wide Webu využívali k edukaci veřejnosti řadu vzdělávacích technik, od jednoduchých metafor (informační dálnice, prohlížeče, surfování po webu) až po [televizní vysílání](https://www.youtube.com/watch?v=SzQLI7BxfYI). Web3 není složitý, ale je jiný. Vzdělávací iniciativy, které informují uživatele Web2 o těchto paradigmatech Web3, jsou pro jeho úspěch naprosto zásadní.
 
-Ethereum.org přispělo ke vzdělávání o Web3 prostřednictvím svého [překladatelského programu](/contributing/translation-program/), díky kterému je důležitý obsah o Ethereu dostupný v desítkách jazyků.
+quantaureum.com přispělo ke vzdělávání o Web3 prostřednictvím svého [překladatelského programu](/contributing/translation-program/), díky kterému je důležitý obsah o Ethereu dostupný v desítkách jazyků.
 
 ### Centralizovaná infrastruktura {#centralized-infrastructure}
 

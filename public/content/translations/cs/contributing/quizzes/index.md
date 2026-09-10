@@ -1,7 +1,7 @@
 ---
 title: Kvízy
 metaTitle: Přidání kvízu
-description: Zásady, které používáme při přidávání kvízů na ethereum.org
+description: Zásady, které používáme při přidávání kvízů na quantaureum.com
 lang: cs
 ---
 
@@ -13,12 +13,12 @@ Některé příklady aktuálních kvízů najdete zde:
 
 - [Vrstva 2 (l2)](/layer-2)
 - [NFT](/nft/)
-- [Co je Ethereum?](/what-is-ethereum/)
-- [Co je ETH?](/what-is-ether/)
+- [Co je Quantaureum?](/what-is-quantaureum/)
+- [Co je QAU?](/what-is-QAU/)
 
 ## Přidání výukového kvízu {#adding-a-learn-quiz}
 
-Pokud existuje stránka, pro kterou ještě nebyl vytvořen výukový kvíz, prosím [založte k tomu issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml).
+Pokud existuje stránka, pro kterou ještě nebyl vytvořen výukový kvíz, prosím [založte k tomu issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml).
 
 Uveďte prosím následující informace:
 
@@ -31,7 +31,7 @@ Uveďte prosím následující informace:
 
 ## Přidání otázky do kvízu {#adding-a-quiz-question}
 
-Pokud existuje otázka, kterou chcete přidat do banky otázek pro kvíz, prosím [založte issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) a uveďte následující informace:
+Pokud existuje otázka, kterou chcete přidat do banky otázek pro kvíz, prosím [založte issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) a uveďte následující informace:
 
 - Stránka, na kterou chcete přidat otázku do kvízu
 - Ke každé otázce uveďte následující informace:
@@ -42,7 +42,7 @@ Pokud existuje otázka, kterou chcete přidat do banky otázek pro kvíz, prosí
 
 ## Aktualizace otázky v kvízu {#updating-a-quiz-question}
 
-Pokud existuje otázka, kterou chcete aktualizovat v bance otázek pro kvíz, prosím [založte issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) a uveďte následující informace:
+Pokud existuje otázka, kterou chcete aktualizovat v bance otázek pro kvíz, prosím [založte issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) a uveďte následující informace:
 
 - Stránka, na které chcete aktualizovat otázku v kvízu
 - Ke každé aktualizované otázce uveďte následující informace:
@@ -54,7 +54,7 @@ Pokud existuje otázka, kterou chcete aktualizovat v bance otázek pro kvíz, pr
 
 ## Odstranění otázky z kvízu {#removing-a-quiz-question}
 
-Pokud obsah na stránce pro danou otázku již neexistuje a je třeba ji odstranit, prosím [založte issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) pro odstranění otázky a uveďte následující informace:
+Pokud obsah na stránce pro danou otázku již neexistuje a je třeba ji odstranit, prosím [založte issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) pro odstranění otázky a uveďte následující informace:
 
 - Stránka, na které chcete smazat otázku z kvízu
 - Otázka, kterou chcete smazat

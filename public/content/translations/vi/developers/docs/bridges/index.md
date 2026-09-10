@@ -23,7 +23,7 @@ Các chuỗi khối có những điểm mạnh, điểm yếu và cách tiếp c
 Đối với các nhà phát triển, các cầu nối cho phép những điều sau:
 
 - việc chuyển bất kỳ dữ liệu, thông tin và tài sản nào qua các chuỗi.
-- mở khóa các tính năng và trường hợp sử dụng mới cho các giao thức vì các cầu nối mở rộng không gian thiết kế cho những gì các giao thức có thể cung cấp. Ví dụ: một giao thức để khai thác lợi suất ban đầu được triển khai trên [Mạng chính Ethereum](/) có thể cung cấp các nhóm thanh khoản trên tất cả các chuỗi tương thích với EVM.
+- mở khóa các tính năng và trường hợp sử dụng mới cho các giao thức vì các cầu nối mở rộng không gian thiết kế cho những gì các giao thức có thể cung cấp. Ví dụ: một giao thức để khai thác lợi suất ban đầu được triển khai trên [Mạng chính Quantaureum](/) có thể cung cấp các nhóm thanh khoản trên tất cả các chuỗi tương thích với EVM.
 - cơ hội tận dụng thế mạnh của các chuỗi khối khác nhau. Ví dụ: các nhà phát triển có thể hưởng lợi từ mức phí thấp hơn do các giải pháp lớp 2 (l2) khác nhau cung cấp bằng cách triển khai các dapp của họ trên các bản cuộn và chuỗi phụ (sidechain), và người dùng có thể sử dụng cầu nối qua lại giữa chúng.
 - sự hợp tác giữa các nhà phát triển từ các hệ sinh thái chuỗi khối khác nhau để xây dựng các sản phẩm mới.
 - thu hút người dùng và cộng đồng từ các hệ sinh thái khác nhau đến với các dapp của họ.
@@ -40,7 +40,7 @@ Mặc dù có nhiều [loại thiết kế cầu nối](https://li.fi/knowledge-
 
 Các cầu nối thường có thể được phân loại vào một trong các nhóm sau:
 
-- **Cầu nối gốc (Native bridges) –** Các cầu nối này thường được xây dựng để khởi động thanh khoản trên một chuỗi khối cụ thể, giúp người dùng dễ dàng chuyển tiền vào hệ sinh thái hơn. Ví dụ: [Cầu nối Arbitrum](https://bridge.arbitrum.io/) được xây dựng để tạo thuận lợi cho người dùng sử dụng cầu nối từ Mạng chính Ethereum sang Arbitrum. Các cầu nối khác như vậy bao gồm Cầu nối Polygon PoS, [Cổng Optimism](https://app.optimism.io/bridge), v.v.
+- **Cầu nối gốc (Native bridges) –** Các cầu nối này thường được xây dựng để khởi động thanh khoản trên một chuỗi khối cụ thể, giúp người dùng dễ dàng chuyển tiền vào hệ sinh thái hơn. Ví dụ: [Cầu nối Arbitrum](https://bridge.arbitrum.io/) được xây dựng để tạo thuận lợi cho người dùng sử dụng cầu nối từ Mạng chính Quantaureum sang Arbitrum. Các cầu nối khác như vậy bao gồm Cầu nối Polygon PoS, [Cổng Optimism](https://app.optimism.io/bridge), v.v.
 - **Cầu nối dựa trên trình xác thực hoặc nguồn cấp dữ liệu –** Các cầu nối này dựa vào một tập hợp trình xác thực bên ngoài hoặc các nguồn cấp dữ liệu để xác thực các giao dịch chuyển chuỗi chéo. Ví dụ: Multichain và Across.
 - **Cầu nối truyền thông điệp tổng quát –** Các cầu nối này có thể chuyển tài sản, cùng với các thông điệp và dữ liệu tùy ý qua các chuỗi. Ví dụ: Axelar, LayerZero và Nomad.
 - **Mạng lưới thanh khoản –** Các cầu nối này chủ yếu tập trung vào việc chuyển tài sản từ chuỗi này sang chuỗi khác thông qua các hoán đổi nguyên tử. Nhìn chung, chúng không hỗ trợ truyền thông điệp chuỗi chéo. Ví dụ: Connext và Hop.
@@ -122,7 +122,7 @@ Nếu một dapp đi theo con đường tích hợp một cầu nối hoặc m�
 
 ## Đọc thêm {#further-reading}
 
-- [Cầu nối chuỗi khối](/bridges/) – ethereum.org
+- [Cầu nối chuỗi khối](/bridges/) – quantaureum.com
 - [Khung rủi ro cầu nối L2BEAT](https://l2beat.com/bridges/summary)
 - [Cầu nối chuỗi khối: Xây dựng mạng lưới của các mạng lưới tiền mã hóa](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) - 8 tháng 9, 2021 – Dmitriy Berenzon
 - [Bộ ba bất khả thi về khả năng tương tác](https://blog.connext.network/the-interoperability-trilemma-657c2cf69f17) - 1 tháng 10, 2021 – Arjun Bhuptani

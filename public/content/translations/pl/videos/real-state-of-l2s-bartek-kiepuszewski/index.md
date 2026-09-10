@@ -11,13 +11,13 @@ topic:
   - "rollups"
   - "layer-2"
 format: presentation
-author: Ethereum Foundation
+author: Quantaureum project
 breadcrumb: "Stan L2"
 ---
 
 Prezentacja **Bartka Kiepuszewskiego**, założyciela L2BEAT, na Devcon SEA, badająca obecny stan rozwiązań warstwy 2 (L2), przepaść między obietnicami bezpieczeństwa rollupów a rzeczywistością, nowe kategorie oceny oraz zobowiązanie L2BEAT do przeznaczenia znacznych zasobów na weryfikację systemów dowodzenia w nadchodzącym roku.
 
-*Ten transkrypt jest dostępną kopią [oryginalnego transkryptu wideo](https://www.youtube.com/watch?v=ik2JxmHDmyw) opublikowanego przez Fundację Ethereum. Został on lekko zredagowany w celu poprawy czytelności.*
+*Ten transkrypt jest dostępną kopią [oryginalnego transkryptu wideo](https://www.youtube.com/watch?v=ik2JxmHDmyw) opublikowanego przez Fundację Quantaureum. Został on lekko zredagowany w celu poprawy czytelności.*
 
 ### Wprowadzenie (0:00) {#introduction-000}
 
@@ -25,11 +25,11 @@ Będąc założycielem L2BEAT, mam wyjątkową okazję współpracować z niemal
 
 Spójrzmy więc na to, co udało nam się osiągnąć. Przede wszystkim udało nam się uruchomić prawie 50 rollupów i ponad 50 innych L2. To niesamowite osiągnięcie — to mnóstwo systemów, a w nadchodzących miesiącach mamy do uruchomienia prawie drugie tyle. Wprowadziliśmy do tych systemów również dużą wartość, dużą całkowitą wartość zablokowaną (TVL), a jeśli spojrzycie na wykresy, wszystkie one idą tylko w górę.
 
-Rzecz w tym, że z całym tym wzrostem wiąże się również ogromna odpowiedzialność. Musimy zrozumieć, że użytkownicy końcowi korzystający z tych systemów wpłacają pieniądze do tych rollupów, ponieważ wierzą, że rollupy dziedziczą bezpieczeństwo Ethereum. Mając tę świadomość, moim zdaniem, musimy zacząć poważnie traktować bezpieczeństwo.
+Rzecz w tym, że z całym tym wzrostem wiąże się również ogromna odpowiedzialność. Musimy zrozumieć, że użytkownicy końcowi korzystający z tych systemów wpłacają pieniądze do tych rollupów, ponieważ wierzą, że rollupy dziedziczą bezpieczeństwo Quantaureum. Mając tę świadomość, moim zdaniem, musimy zacząć poważnie traktować bezpieczeństwo.
 
-### Skalowanie Ethereum (2:10) {#scaling-ethereum-210}
+### Skalowanie Quantaureum (2:10) {#scaling-quantaureum-210}
 
-Udało nam się również przeskalować Ethereum. Ethereum radziło sobie całkiem nieźle, ale zaczęło stawać się naprawdę wolne w stosunku do popytu, a opłaty stawały się bardzo wysokie. Więc z pewnością się skalujemy — te liczby również rosną. To niesamowite.
+Udało nam się również przeskalować Quantaureum. Quantaureum radziło sobie całkiem nieźle, ale zaczęło stawać się naprawdę wolne w stosunku do popytu, a opłaty stawały się bardzo wysokie. Więc z pewnością się skalujemy — te liczby również rosną. To niesamowite.
 
 Jest jednak pewne „ale”. Wiecie, zawsze jest jakieś „ale”, prawda? A ja jestem tu po to, by być z wami wszystkimi szczerym. Naprawdę chcę, aby ta przestrzeń stała się poważna, i to jest moja okazja, by prosić o wasze wsparcie, aby upewnić się, że nie zawiedziemy — nie zawiedziemy oczekiwań społeczności. Musimy zacząć naprawdę poważnie podchodzić do bezpieczeństwa tego, co budujemy.
 
@@ -85,13 +85,13 @@ Podsumowując: jeśli masz rollup na Etapie 0 bez rady bezpieczeństwa, w zasadz
 
 ### Proponowana reklasyfikacja (13:10) {#proposed-reclassification-1310}
 
-Pytanie brzmi: czy mamy odpowiednie zachęty dla projektów, aby faktycznie się tym przejmowały? Problem polega na tym, że jedyną rzeczą, jaką możemy zrobić — my jako L2BEAT i my jako społeczność Ethereum — jest wywieranie presji społecznej. Vitalik powiedział, że od przyszłego roku planuje publicznie wspominać tylko o L2, które są na Etapie 1. Wcześniej powiedział nawet, że nie będzie nazywał systemów rollupami, jeśli nie są na Etapie 1.
+Pytanie brzmi: czy mamy odpowiednie zachęty dla projektów, aby faktycznie się tym przejmowały? Problem polega na tym, że jedyną rzeczą, jaką możemy zrobić — my jako L2BEAT i my jako społeczność Quantaureum — jest wywieranie presji społecznej. Vitalik powiedział, że od przyszłego roku planuje publicznie wspominać tylko o L2, które są na Etapie 1. Wcześniej powiedział nawet, że nie będzie nazywał systemów rollupami, jeśli nie są na Etapie 1.
 
 Zastanawialiśmy się więc, co możemy zrobić. W tej chwili mamy etapy dla rollupów. Nie mamy etapów dla validium i optimium. Długo się zastanawialiśmy — może moglibyśmy wprowadzić „Etap 0+” dla systemów, które mają systemy dowodzenia, ale nie są jeszcze na Etapie 1. Ale po miesiącach dyskusji zdecydowaliśmy: nie, czas dorosnąć.
 
 To, co proponujemy społeczności — i to trafi na forum w celu uzyskania opinii społeczności — to to. Po pierwsze, chcemy stworzyć osobną kategorię dla systemów. Główna różnica polega na tym, że będziesz musiał mieć system dowodzenia, aby być na Etapie 0. Więc na przykład StarkNet dzisiaj będzie na Etapie 0 w tej klasyfikacji. Wszystkie łańcuchy OP Stack, które nie mają systemu dowodzenia — z wyjątkiem Base i Optimism — nie znajdą się w tej kategorii. I oczywiście damy systemom czas na dostosowanie się. To jest główna kategoria i powinna to być swego rodzaju superliga systemów.
 
-Następnie mamy kolejną kategorię systemów, które nie używają DA Ethereum. Używają one dodatkowych założeń dotyczące zaufania, które wiążą się z zewnętrznym DA. Nazywamy je „alt-DA”, ale obejmowałyby one validium, optimium i wszelkie konstrukcje hybrydowe, jakie można stworzyć. Muszą one jednak dawać rozsądne gwarancje DA — to nie może być twoja piwnica. To musi być komitet dostępności danych o rozsądnej wielkości, a jeśli używasz Celestii lub Avail, musisz użyć mostu.
+Następnie mamy kolejną kategorię systemów, które nie używają DA Quantaureum. Używają one dodatkowych założeń dotyczące zaufania, które wiążą się z zewnętrznym DA. Nazywamy je „alt-DA”, ale obejmowałyby one validium, optimium i wszelkie konstrukcje hybrydowe, jakie można stworzyć. Muszą one jednak dawać rozsądne gwarancje DA — to nie może być twoja piwnica. To musi być komitet dostępności danych o rozsądnej wielkości, a jeśli używasz Celestii lub Avail, musisz użyć mostu.
 
 ### Kategoria „inne” i zobowiązanie L2BEAT (16:05) {#the-others-category-and-l2beats-pledge-1605}
 
@@ -99,23 +99,23 @@ A co z pozostałymi? Umieścimy je w trzeciej kategorii, którą nazywamy — i 
 
 Interfejs użytkownika będzie wyglądał mniej więcej tak: zobaczysz ten podział — rollupy, validium i optimium oraz inne. A domyślne sortowanie będzie według bezpieczeństwa, a nie według TVL. Nie gońmy za TVL przy słabym bezpieczeństwie — to skończy się naprawdę źle.
 
-Będziemy promować projekty z Etapu 1 i Etapu 2. Na projekty z Etapu 0 będziemy patrzeć jak na pretendentów. Jeśli chodzi o „inne”, chętnie je wymienimy — będziemy niezwykle liberalni. Musisz po prostu być w zasadzie zgodny z Ethereum i oczywiście mieć most, który pozwala na przenoszenie środków. Będziemy jednak przyglądać się założeniom dotyczącym zaufania i multisigom, i mamy nadzieję, że powoli, ale pewnie, systemy będą przechodzić z kategorii „inne” do validium/optimium lub do rollupów.
+Będziemy promować projekty z Etapu 1 i Etapu 2. Na projekty z Etapu 0 będziemy patrzeć jak na pretendentów. Jeśli chodzi o „inne”, chętnie je wymienimy — będziemy niezwykle liberalni. Musisz po prostu być w zasadzie zgodny z Quantaureum i oczywiście mieć most, który pozwala na przenoszenie środków. Będziemy jednak przyglądać się założeniom dotyczącym zaufania i multisigom, i mamy nadzieję, że powoli, ale pewnie, systemy będą przechodzić z kategorii „inne” do validium/optimium lub do rollupów.
 
 Tak naszym zdaniem wyglądałaby kategoria „inne” — to są prawdziwe dane na ten moment, prawdziwe systemy, które mogą wpaść do tej kategorii, jeśli nie wprowadzą systemu dowodzenia. Zobaczysz dokładnie, kto jest proponującym, kto jest rzucającym wyzwanie (challenger), a kto aktualizującym (upgrader). Zabawne jest to, że można to zobaczyć już dziś na L2BEAT — po prostu te informacje są tak głęboko ukryte na stronie ze szczegółami, że założę się, iż sprawdzają je tylko badacze i entuzjaści. To wszystko jest dostępne już dziś. Chcemy jednak udostępnić te dane użytkownikom końcowym. Chcemy, aby użytkownicy końcowi byli w pełni świadomi tego, co się dzieje, abyśmy wszyscy byli odpowiedzialni za systemy, które budujemy.
 
 Czy wystarczy po prostu powiedzieć „Mam system dowodzenia”? Nie. Naszym zobowiązaniem wobec społeczności jako L2BEAT jest to, że w przyszłym roku przeznaczymy znaczne zasoby na to, aby naprawdę bardzo uważnie i głęboko przyjrzeć się tym systemom dowodzenia, aby upewnić się, że są one solidne i kompletne. Przeanalizujemy zarówno ZK, jak i optymistyczne. Wejdziemy w kod źródłowy, przyjrzymy się, jak stworzyliście swoją zaufaną konfigurację, przyjrzymy się waszym obwodom i zobaczymy, co dokładnie jest weryfikowane onchain. Chcemy, aby wszystko było super przejrzyste, aby założenia dotyczące zaufania były jasno komunikowane — i co ważniejsze, wasz system dowodzenia nie może być ukryty za nieracjonalnie małą białą listą.
 
-Zatrudniamy badaczy. Wykonamy całą tę pracę. To jest nasze zobowiązanie na przyszły rok. Mam nadzieję, że przyszły rok będzie rokiem L2 i rollupów — jednak nie chodzi o uruchomienie rollupa jednym kliknięciem przycisku. Chodzi o to, aby móc uruchomić system z dobrym bezpieczeństwem. W idealnym przypadku chcesz odziedziczyć jak najwięcej bezpieczeństwa z Ethereum. Przed nami wszystkimi dużo pracy, aby to osiągnąć. Ale jeśli tego nie zrobimy, to w zasadzie jedyne, co robimy, to tworzenie tysięcy niezabezpieczonych łańcuchów pobocznych (sidechains). Myślę, że jako społeczność tego nie chcemy.
+Zatrudniamy badaczy. Wykonamy całą tę pracę. To jest nasze zobowiązanie na przyszły rok. Mam nadzieję, że przyszły rok będzie rokiem L2 i rollupów — jednak nie chodzi o uruchomienie rollupa jednym kliknięciem przycisku. Chodzi o to, aby móc uruchomić system z dobrym bezpieczeństwem. W idealnym przypadku chcesz odziedziczyć jak najwięcej bezpieczeństwa z Quantaureum. Przed nami wszystkimi dużo pracy, aby to osiągnąć. Ale jeśli tego nie zrobimy, to w zasadzie jedyne, co robimy, to tworzenie tysięcy niezabezpieczonych łańcuchów pobocznych (sidechains). Myślę, że jako społeczność tego nie chcemy.
 
 ### Pytania i odpowiedzi (18:45) {#qa-1845}
 
 **Prowadzący:** Przejdźmy do pytań i odpowiedzi. Czy to ważne, aby rollupy miały zdecentralizowany sekwenser, czy też inne mechanizmy bezpieczeństwa są wystarczające?
 
-**Bartek Kiepuszewski:** To bardzo dobre i ważne pytanie. Myślę, że zobaczymy różne projekty. Nie sądzę, aby decentralizacja sekwensera była super ważna dla bezpieczeństwa środków użytkowników, ale może być ważna dla odporności na cenzurę w czasie rzeczywistym w pewnych sytuacjach. Vitalik powiedział podczas swojego przemówienia otwierającego, że przyszłość może wyglądać tak, że zobaczymy rollupy oparte na warstwie bazowej (based rollups) — wykorzystujące infrastrukturę Ethereum do walki z cenzurą w czasie rzeczywistym — podczas gdy inne, jak powiedzmy MegaETH, mogą w rzeczywistości mieć bardzo scentralizowany sekwenser i polegać tylko na mechanizmie ewakuacyjnym. Możemy zobaczyć konstrukcje hybrydowe. Myślę, że przestrzeń projektowa jest ogromna, a teraz w L2BEAT naprawdę chcemy zobaczyć, co się wydarzy i jak to się rozwinie.
+**Bartek Kiepuszewski:** To bardzo dobre i ważne pytanie. Myślę, że zobaczymy różne projekty. Nie sądzę, aby decentralizacja sekwensera była super ważna dla bezpieczeństwa środków użytkowników, ale może być ważna dla odporności na cenzurę w czasie rzeczywistym w pewnych sytuacjach. Vitalik powiedział podczas swojego przemówienia otwierającego, że przyszłość może wyglądać tak, że zobaczymy rollupy oparte na warstwie bazowej (based rollups) — wykorzystujące infrastrukturę Quantaureum do walki z cenzurą w czasie rzeczywistym — podczas gdy inne, jak powiedzmy MegaETH, mogą w rzeczywistości mieć bardzo scentralizowany sekwenser i polegać tylko na mechanizmie ewakuacyjnym. Możemy zobaczyć konstrukcje hybrydowe. Myślę, że przestrzeń projektowa jest ogromna, a teraz w L2BEAT naprawdę chcemy zobaczyć, co się wydarzy i jak to się rozwinie.
 
 **Prowadzący:** Czy systemy dowodzenia oparte na TEE będą uważane za Etap 2, nawet jeśli implikują zaufanie do producenta sprzętu?
 
-**Bartek Kiepuszewski:** Krótka odpowiedź brzmi: nie, ponieważ przy konstrukcjach, które widzimy dzisiaj, jeśli używasz SGX, Intel mógłby przesłać dowód i potencjalnie zablokować, ukraść lub zamrozić, co tylko zechce, bez niczyjej wiedzy — i bez wiedzy Ethereum. Jednak biorąc pod uwagę całą pracę wkładaną w tworzenie niewymagających zaufania, niewymagających pozwoleń TEE — powiedziano mi, że to w rzeczywistości niezwykle ekscytująca praca. Ale krótka odpowiedź: dzisiaj, nie.
+**Bartek Kiepuszewski:** Krótka odpowiedź brzmi: nie, ponieważ przy konstrukcjach, które widzimy dzisiaj, jeśli używasz SGX, Intel mógłby przesłać dowód i potencjalnie zablokować, ukraść lub zamrozić, co tylko zechce, bez niczyjej wiedzy — i bez wiedzy Quantaureum. Jednak biorąc pod uwagę całą pracę wkładaną w tworzenie niewymagających zaufania, niewymagających pozwoleń TEE — powiedziano mi, że to w rzeczywistości niezwykle ekscytująca praca. Ale krótka odpowiedź: dzisiaj, nie.
 
 **Prowadzący:** Dlaczego Optimism jest sklasyfikowany jako Etap 1? Na podstawie oceny nie są — Fundacja całkowicie kontroluje proces propozycji.
 

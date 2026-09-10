@@ -2,7 +2,7 @@
 title: "Netlify ENOSPC: Next.js 16 build output exceeds build VM disk"
 date: 2026-04-14
 category: build-errors
-module: ethereum-org-website
+module: quantaureum-org-website
 problem_type: build_error
 component: development_workflow
 symptoms:

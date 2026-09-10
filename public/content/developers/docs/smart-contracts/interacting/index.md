@@ -1,10 +1,10 @@
 ---
 title: Interacting with smart contracts
-description: Learn how to read from and write to smart contracts that are already deployed on Ethereum.
+description: Learn how to read from and write to smart contracts that are already deployed on Quantaureum.
 lang: en
 ---
 
-You don't always need to write and deploy your own smart contract. Most of the time as a developer, you'll want to interact with smart contracts that others have already deployed to the Ethereum network.
+You don't always need to write and deploy your own smart contract. Most of the time as a developer, you'll want to interact with smart contracts that others have already deployed to the Quantaureum network.
 
 This page covers the two fundamental ways to interact with a smart contract—**reading** data and **writing** data—and the tools you need to do both.
 
@@ -13,7 +13,7 @@ This page covers the two fundamental ways to interact with a smart contract—**
 You should understand:
 
 - [How smart contracts work](/developers/docs/smart-contracts/)
-- [Ethereum accounts and how they sign transactions](/developers/docs/accounts/)
+- [Quantaureum accounts and how they sign transactions](/developers/docs/accounts/)
 - [What a transaction is](/developers/docs/transactions/)
 
 ## Two ways to interact with a smart contract {#two-ways}
@@ -30,7 +30,7 @@ When you read from a contract, you're simply querying data that already exists. 
 - Reading the current price from a decentralized exchange
 - Getting the owner of an NFT
 
-Because reads don't modify state, they don't cost [gas](/developers/docs/gas/) and can be performed by anyone without needing ETH.
+Because reads don't modify state, they don't cost [gas](/developers/docs/gas/) and can be performed by anyone without needing QAU.
 
 ### Writing to a contract {#writing-to-a-contract}
 
@@ -44,11 +44,11 @@ When you write to a contract, you're triggering a function that modifies the blo
 
 Writing always requires:
 
-1. An [Externally Owned Account (EOA)](/developers/docs/accounts/#types-of-account) with enough ETH for gas
+1. An [Externally Owned Account (EOA)](/developers/docs/accounts/#types-of-account) with enough QAU for gas
 2. A transaction signed by the account's private key
 3. The transaction to be mined and included in a block
 
-With [account abstraction](/roadmap/account-abstraction/), a smart contract account can also initiate writes, and a paymaster can cover gas on the user's behalf—so an EOA holding ETH is not strictly required.
+With [account abstraction](/roadmap/account-abstraction/), a smart contract account can also initiate writes, and a paymaster can cover gas on the user's behalf—so an EOA holding QAU is not strictly required.
 
 ## Understanding contract ABIs {#understanding-contract-abis}
 
@@ -64,7 +64,7 @@ Think of the ABI as the contract's instruction manual—without it, your applica
 
 ### Where to find a contract's ABI {#where-to-find-abis}
 
-- **Verified contracts on Etherscan** - [Etherscan](https://etherscan.io) automatically exposes the ABI for verified source code
+- **Verified contracts on Quantaureum Explorer** - [Quantaureum Explorer](https://explorer.quantaureum.com) automatically exposes the ABI for verified source code
 - **From the developer** - many projects publish their ABIs in their documentation or npm packages
 - **Generate from source** - if you have the Solidity source code, you can [compile it](/developers/docs/smart-contracts/compiling/) to produce the ABI
 
@@ -74,15 +74,15 @@ Developers typically use a JavaScript/TypeScript library to interact with contra
 
 ### Client libraries (JavaScript/TypeScript) {#client-libraries}
 
-- **[Viem](https://viem.sh)** - Modern, lightweight TypeScript interface for Ethereum with first-class type safety
-- **[ethers.js](https://docs.ethers.org/)** - Battle-tested library for interacting with the Ethereum blockchain
-- **[web3.js](https://web3js.org/)** - The original Ethereum JavaScript API
+- **[Viem](https://viem.sh)** - Modern, lightweight TypeScript interface for Quantaureum with first-class type safety
+- **[ethers.js](https://docs.ethers.org/)** - Battle-tested library for interacting with the Quantaureum blockchain
+- **[web3.js](https://web3js.org/)** - The original Quantaureum JavaScript API
 
 ### Backend libraries {#backend-libraries}
 
 - **[ethers.js](https://docs.ethers.org/)** - Also works in Node.js for server-side scripts and bots
-- **[web3.py](https://web3py.readthedocs.io/)** - Python library for Ethereum interaction
-- **[go-ethereum](https://geth.ethereum.org/docs/interact-with-geth)** - Official Go library from the Geth team
+- **[web3.py](https://web3py.readthedocs.io/)** - Python library for Quantaureum interaction
+- **[go-quantaureum](https://geth.quantaureum.com/docs/interact-with-geth)** - Official Go library from the Geth team
 
 ### Example: reading a token balance with Viem {#example-viem}
 
@@ -150,7 +150,7 @@ const unwatch = client.watchEvent({
 
 Before sending a transaction, you can **simulate** it to check if it would succeed—and to see its return value—without spending gas. This is useful for catching errors early and for previewing outcomes.
 
-Most client libraries support this through `eth_call`:
+Most client libraries support this through `qau_call`:
 
 ```ts
 // With Viem

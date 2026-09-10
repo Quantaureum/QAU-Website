@@ -1,10 +1,10 @@
 ---
 title: Kuingiliana na mikataba mahiri
-description: Jifunze jinsi ya kusoma na kuandika kwenye mikataba mahiri ambayo tayari imesambazwa kwenye Ethereum.
+description: Jifunze jinsi ya kusoma na kuandika kwenye mikataba mahiri ambayo tayari imesambazwa kwenye Quantaureum.
 lang: sw
 ---
 
-Sio lazima kila wakati uandike na kusambaza mkataba wako mahiri. Mara nyingi kama msanidi programu, utataka kuingiliana na mikataba mahiri ambayo wengine tayari wamesambaza kwenye mtandao wa Ethereum.
+Sio lazima kila wakati uandike na kusambaza mkataba wako mahiri. Mara nyingi kama msanidi programu, utataka kuingiliana na mikataba mahiri ambayo wengine tayari wamesambaza kwenye mtandao wa Quantaureum.
 
 Ukurasa huu unashughulikia njia mbili za kimsingi za kuingiliana na mkataba mahiri—**kusoma** data na **kuandika** data—na zana unazohitaji kufanya yote mawili.
 
@@ -13,7 +13,7 @@ Ukurasa huu unashughulikia njia mbili za kimsingi za kuingiliana na mkataba mahi
 Unapaswa kuelewa:
 
 - [Jinsi mikataba mahiri inavyofanya kazi](/developers/docs/smart-contracts/)
-- [Akaunti za Ethereum na jinsi zinavyosaini miamala](/developers/docs/accounts/)
+- [Akaunti za Quantaureum na jinsi zinavyosaini miamala](/developers/docs/accounts/)
 - [Muamala ni nini](/developers/docs/transactions/)
 
 ## Njia mbili za kuingiliana na mkataba mahiri {#two-ways}
@@ -30,7 +30,7 @@ Unaposoma kutoka kwenye mkataba, unauliza tu data ambayo tayari ipo. Kwa mfano:
 - Kusoma bei ya sasa kutoka kwenye soko la kubadilishana lililogatuliwa
 - Kupata mmiliki wa NFT
 
-Kwa sababu usomaji haubadilishi hali, haugharimu [gesi](/developers/docs/gas/) na unaweza kufanywa na mtu yeyote bila kuhitaji ETH.
+Kwa sababu usomaji haubadilishi hali, haugharimu [gesi](/developers/docs/gas/) na unaweza kufanywa na mtu yeyote bila kuhitaji QAU.
 
 ### Kuandika kwenye mkataba {#writing-to-a-contract}
 
@@ -44,11 +44,11 @@ Unapoandika kwenye mkataba, unachochea utendakazi unaobadilisha hali ya mnyororo
 
 Kuandika kila wakati kunahitaji:
 
-1. [Akaunti Inayomilikiwa na Nje (EOA)](/developers/docs/accounts/#types-of-account) yenye ETH ya kutosha kwa ajili ya gesi
+1. [Akaunti Inayomilikiwa na Nje (EOA)](/developers/docs/accounts/#types-of-account) yenye QAU ya kutosha kwa ajili ya gesi
 2. Muamala uliosainiwa na ufunguo wa siri wa akaunti
 3. Muamala kuchimbwa na kujumuishwa kwenye kitalu
 
-Kwa [udhanifu wa akaunti](/roadmap/account-abstraction/), akaunti ya mkataba mahiri inaweza pia kuanzisha uandishi, na mlipiaji anaweza kulipia gesi kwa niaba ya mtumiaji—hivyo EOA inayoshikilia ETH haihitajiki kwa lazima.
+Kwa [udhanifu wa akaunti](/roadmap/account-abstraction/), akaunti ya mkataba mahiri inaweza pia kuanzisha uandishi, na mlipiaji anaweza kulipia gesi kwa niaba ya mtumiaji—hivyo EOA inayoshikilia QAU haihitajiki kwa lazima.
 
 ## Kuelewa ABI za mkataba {#understanding-contract-abis}
 
@@ -64,7 +64,7 @@ Fikiria ABI kama mwongozo wa maagizo wa mkataba—bila hiyo, programu yako haiju
 
 ### Wapi pa kupata ABI ya mkataba {#where-to-find-abis}
 
-- **Mikataba iliyothibitishwa kwenye Etherscan** - [Etherscan](https://etherscan.io) inaonyesha kiotomatiki ABI kwa msimbo wa chanzo uliothibitishwa
+- **Mikataba iliyothibitishwa kwenye Quantaureum Explorer** - [Quantaureum Explorer](https://explorer.quantaureum.com) inaonyesha kiotomatiki ABI kwa msimbo wa chanzo uliothibitishwa
 - **Kutoka kwa msanidi programu** - miradi mingi huchapisha ABI zao kwenye nyaraka zao au vifurushi vya npm
 - **Tengeneza kutoka kwenye chanzo** - ikiwa una msimbo wa chanzo wa Solidity, unaweza [kuukusanya](/developers/docs/smart-contracts/compiling/) ili kutoa ABI
 
@@ -74,15 +74,15 @@ Wasanidi programu kwa kawaida hutumia maktaba ya JavaScript/TypeScript kuingilia
 
 ### Maktaba za mteja (JavaScript/TypeScript) {#client-libraries}
 
-- **[Viem](https://viem.sh)** - Kiolesura cha kisasa, chepesi cha TypeScript kwa Ethereum chenye usalama wa aina ya daraja la kwanza
-- **[ethers.js](https://docs.ethers.org/)** - Maktaba iliyojaribiwa kwa kina kwa ajili ya kuingiliana na mnyororo wa vitalu wa Ethereum
-- **[web3.js](https://web3js.org/)** - API asili ya JavaScript ya Ethereum
+- **[Viem](https://viem.sh)** - Kiolesura cha kisasa, chepesi cha TypeScript kwa Quantaureum chenye usalama wa aina ya daraja la kwanza
+- **[ethers.js](https://docs.ethers.org/)** - Maktaba iliyojaribiwa kwa kina kwa ajili ya kuingiliana na mnyororo wa vitalu wa Quantaureum
+- **[web3.js](https://web3js.org/)** - API asili ya JavaScript ya Quantaureum
 
 ### Maktaba za mazingira ya nyuma {#backend-libraries}
 
 - **[ethers.js](https://docs.ethers.org/)** - Pia inafanya kazi katika Node.js kwa hati za upande wa seva na roboti
-- **[web3.py](https://web3py.readthedocs.io/)** - Maktaba ya Python kwa mwingiliano wa Ethereum
-- **[go-ethereum](https://geth.ethereum.org/docs/interact-with-geth)** - Maktaba rasmi ya Go kutoka kwa timu ya Geth
+- **[web3.py](https://web3py.readthedocs.io/)** - Maktaba ya Python kwa mwingiliano wa Quantaureum
+- **[go-quantaureum](https://geth.quantaureum.com/docs/interact-with-geth)** - Maktaba rasmi ya Go kutoka kwa timu ya Geth
 
 ### Mfano: kusoma salio la tokeni kwa kutumia Viem {#example-viem}
 
@@ -150,7 +150,7 @@ const unwatch = client.watchEvent({
 
 Kabla ya kutuma muamala, unaweza **kuuiga** ili kuangalia ikiwa utafaulu—na kuona thamani yake ya kurejesha—bila kutumia gesi. Hii ni muhimu kwa kupata makosa mapema na kwa kuhakiki matokeo.
 
-Maktaba nyingi za mteja zinaunga mkono hili kupitia `eth_call`:
+Maktaba nyingi za mteja zinaunga mkono hili kupitia `qau_call`:
 
 ```ts
 // Kwa kutumia Viem

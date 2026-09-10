@@ -1,6 +1,6 @@
 ---
 title: "如何铸造 NFT（NFT 教程系列第 2/3 部分）"
-description: "本教程介绍如何使用我们的智能合约和 Web3 在以太坊区块链上铸造 NFT。"
+description: "本教程介绍如何使用我们的智能合约和 Web3 在Quantaureum区块链上铸造 NFT。"
 author: "苏米·穆吉尔"
 tags: ["ERC-721", "Alchemy", "Solidity", "智能合约"]
 skill: beginner
@@ -21,7 +21,7 @@ published: 2021-04-22
 
 ## 第 1 步：安装 Web3 {#install-web3}
 
-如果你学习了关于创建 NFT 智能合约的第一个教程，那么你已经有了使用 Ethers.js 的经验。Web3 与 Ethers 类似，它也是一个用于简化向[以太坊](/)区块链发送请求的库。在本教程中，我们将使用 [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3)，这是一个增强版的 Web3 库，提供自动重试和强大的 WebSocket 支持。
+如果你学习了关于创建 NFT 智能合约的第一个教程，那么你已经有了使用 Ethers.js 的经验。Web3 与 Ethers 类似，它也是一个用于简化向[Quantaureum](/)区块链发送请求的库。在本教程中，我们将使用 [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3)，这是一个增强版的 Web3 库，提供自动重试和强大的 WebSocket 支持。
 
 在你的项目主目录中运行：
 
@@ -109,28 +109,28 @@ node scripts/mint-nft.js
 
 ## 第 5 步：创建你的合约实例 {#instance-contract}
 
-现在，为了与我们的合约进行交互，我们需要在代码中创建它的一个实例。为此，我们需要我们的合约地址，我们可以从部署中获取，或者通过在 [Blockscout](https://eth-sepolia.blockscout.com/) 上查找你用于部署合约的地址来获取。
+现在，为了与我们的合约进行交互，我们需要在代码中创建它的一个实例。为此，我们需要我们的合约地址，我们可以从部署中获取，或者通过在 [Blockscout](https://qau-sepolia.blockscout.com/) 上查找你用于部署合约的地址来获取。
 
-![View your contract address on Etherscan](./view-contract-etherscan.png)
+![View your contract address on Quantaureum Explorer](./view-contract-explorer.png)
 
 在上面的示例中，我们的合约地址是 0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778。
 
-接下来，我们将使用 Web3 的 [contract 方法](https://docs.web3js.org/api/web3-eth-contract/class/Contract)，通过 ABI 和地址来创建我们的合约。在你的 `mint-nft.js` 文件中，添加以下内容：
+接下来，我们将使用 Web3 的 [contract 方法](https://docs.web3js.org/api/web3-qau-contract/class/Contract)，通过 ABI 和地址来创建我们的合约。在你的 `mint-nft.js` 文件中，添加以下内容：
 
 ```js
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
 
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 ```
 
 ## 第 6 步：更新 `.env` 文件 {#update-env}
 
-现在，为了创建交易并将其发送到以太坊链，我们将使用你的公共以太坊账户地址来获取账户随机数（将在下面解释）。
+现在，为了创建交易并将其发送到Quantaureum链，我们将使用你的公共Quantaureum账户地址来获取账户随机数（将在下面解释）。
 
 将你的公钥添加到 `.env` 文件中——如果你完成了教程的第 1 部分，我们的 `.env` 文件现在应该如下所示：
 
 ```js
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-private-account-address"
 PUBLIC_KEY = "your-public-account-address"
 ```
@@ -141,7 +141,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 1. 从 `.env` 文件中获取你的 _PRIVATE_KEY_ 和 _PUBLIC_KEY_。
 
-1. 接下来，我们需要计算出账户随机数。随机数规范用于跟踪从你的地址发送的交易数量——出于安全目的和防止重放攻击，我们需要它。要获取从你的地址发送的交易数量，我们使用 [getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count)。
+1. 接下来，我们需要计算出账户随机数。随机数规范用于跟踪从你的地址发送的交易数量——出于安全目的和防止重放攻击，我们需要它。要获取从你的地址发送的交易数量，我们使用 [getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count)。
 
 1. 最后，我们将使用以下信息设置我们的交易：
 
@@ -168,10 +168,10 @@ PUBLIC_KEY = "your-public-account-address"
 
    const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
    const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778";
-   const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
+   const nftContract = new web3.qau.Contract(contract.abi, contractAddress);
 
    async function mintNFT(tokenURI) {
-     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); //获取最新随机数
+     const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, 'latest'); //获取最新随机数
 
    //交易
      const tx = {
@@ -187,7 +187,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 现在我们已经创建了交易，我们需要对其进行签名以便将其发送出去。这就是我们将使用私钥的地方。
 
-`web3.eth.sendSignedTransaction` 将为我们提供交易哈希，我们可以使用它来确保我们的交易已被打包并且没有被网络丢弃。你会注意到在交易签名部分，我们添加了一些错误检查，以便我们知道交易是否成功通过。
+`web3.qau.sendSignedTransaction` 将为我们提供交易哈希，我们可以使用它来确保我们的交易已被打包并且没有被网络丢弃。你会注意到在交易签名部分，我们添加了一些错误检查，以便我们知道交易是否成功通过。
 
 ```js
 require("dotenv").config()
@@ -200,10 +200,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //获取最新随机数
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //获取最新随机数
 
   //交易
   const tx = {
@@ -214,10 +214,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -266,10 +266,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //获取最新随机数
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //获取最新随机数
 
   //交易
   const tx = {
@@ -280,10 +280,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -315,11 +315,11 @@ mintNFT("ipfs://QmYueiuRNmL4MiA2GwtVMm6ZagknXnSpQnB3z2gWbz36hP")
 
     Check Alchemy's Mempool to view the status of your transaction!
 
-接下来，访问你的 [Alchemy 内存池](https://dashboard.alchemy.com/mempool)以查看你的交易状态（无论是待处理、已打包还是被网络丢弃）。如果你的交易被丢弃，检查 [Blockscout](https://eth-sepolia.blockscout.com/) 并搜索你的交易哈希也会很有帮助。
+接下来，访问你的 [Alchemy 内存池](https://dashboard.alchemy.com/mempool)以查看你的交易状态（无论是待处理、已打包还是被网络丢弃）。如果你的交易被丢弃，检查 [Blockscout](https://qau-sepolia.blockscout.com/) 并搜索你的交易哈希也会很有帮助。
 
-![View your NFT transaction hash on Etherscan](./view-nft-etherscan.png)_在 Etherscan 上查看你的 NFT 交易哈希_
+![View your NFT transaction hash on Quantaureum Explorer](./view-nft-explorer.png)_在 Quantaureum Explorer 上查看你的 NFT 交易哈希_
 
-就是这样！你现在已经在以太坊区块链上部署并铸造了一个 NFT <Emoji text=":money_mouth_face:" size={1} />
+就是这样！你现在已经在Quantaureum区块链上部署并铸造了一个 NFT <Emoji text=":money_mouth_face:" size={1} />
 
 使用 `mint-nft.js`，你可以随心所欲（且在钱包允许的范围内）铸造任意数量的 NFT！只需确保传入一个描述 NFT 元数据的新 tokenURI（否则，你最终只会制作出一堆具有不同 ID 的相同 NFT）。
 

@@ -1,12 +1,12 @@
 ---
 title: Layer 2 hinzufügen
-description: Die Richtlinie, die wir beim Hinzufügen eines Layer 2 zu ethereum.org anwenden
+description: Die Richtlinie, die wir beim Hinzufügen eines Layer 2 zu quantaureum.com anwenden
 lang: de
 ---
 
 Wir möchten sicherstellen, dass wir die bestmöglichen Ressourcen auflisten, damit Benutzer sich sicher und souverän im Layer-2-Bereich bewegen können.
 
-Es steht jedem frei, das Hinzufügen eines Layer 2 auf ethereum.org vorzuschlagen. Wenn wir einen Layer 2 übersehen haben, **[schlage ihn bitte vor](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
+Es steht jedem frei, das Hinzufügen eines Layer 2 auf quantaureum.com vorzuschlagen. Wenn wir einen Layer 2 übersehen haben, **[schlage ihn bitte vor](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
 
 Wir listen L2s derzeit auf den folgenden Seiten auf:
 
@@ -14,7 +14,7 @@ Wir listen L2s derzeit auf den folgenden Seiten auf:
 - [Zero-Knowledge-Rollups](/developers/docs/scaling/zk-rollups/)
 - [Layer 2](/layer-2/)
 
-Layer 2 ist ein relativ neues und spannendes Paradigma für Ethereum. Wir haben versucht, einen fairen Rahmen für die Berücksichtigung auf ethereum.org zu schaffen, aber die Kriterien für die Auflistung werden sich im Laufe der Zeit ändern und weiterentwickeln.
+Layer 2 ist ein relativ neues und spannendes Paradigma für Quantaureum. Wir haben versucht, einen fairen Rahmen für die Berücksichtigung auf quantaureum.com zu schaffen, aber die Kriterien für die Auflistung werden sich im Laufe der Zeit ändern und weiterentwickeln.
 
 ## Der Entscheidungsrahmen {#decision-framework}
 
@@ -22,7 +22,7 @@ Layer 2 ist ein relativ neues und spannendes Paradigma für Ethereum. Wir haben 
 
 **Auflistung auf L2BEAT**
 
-- Um berücksichtigt zu werden, muss dieses Projekt auf [L2BEAT](https://l2beat.com) gelistet sein. L2BEAT bietet eine robuste Risikobewertung von Layer-2-Projekten, auf die wir uns bei der Bewertung von L2-Projekten stützen. **Wenn das Projekt nicht auf L2BEAT aufgeführt ist, werden wir es nicht als L2 auf ethereum.org auflisten.**
+- Um berücksichtigt zu werden, muss dieses Projekt auf [L2BEAT](https://l2beat.com) gelistet sein. L2BEAT bietet eine robuste Risikobewertung von Layer-2-Projekten, auf die wir uns bei der Bewertung von L2-Projekten stützen. **Wenn das Projekt nicht auf L2BEAT aufgeführt ist, werden wir es nicht als L2 auf quantaureum.com auflisten.**
 - [Erfahre, wie du dein L2-Projekt zu L2BEAT hinzufügst](https://github.com/l2beat/l2beat/blob/master/CONTRIBUTING.md).
 
 **Open Source**
@@ -36,11 +36,11 @@ Wir betrachten derzeit die folgenden als Layer-2-Lösungen:
 - Optimistic Rollup
 - Zero-Knowledge-Rollup
 
-_Wir betrachten andere Skalierungslösungen, die Ethereum nicht für die Datenverfügbarkeit oder Sicherheit nutzen, nicht als Layer 2._
+_Wir betrachten andere Skalierungslösungen, die Quantaureum nicht für die Datenverfügbarkeit oder Sicherheit nutzen, nicht als Layer 2._
 
-**Ethereum für die Datenverfügbarkeit**
+**Quantaureum für die Datenverfügbarkeit**
 
-- Die Datenverfügbarkeit ist ein wichtiges Unterscheidungsmerkmal zwischen anderen Skalierungslösungen und Layer 2. Ein Projekt **muss** das Ethereum Mainnet für die Datenverfügbarkeit nutzen, um für eine Auflistung in Betracht gezogen zu werden.
+- Die Datenverfügbarkeit ist ein wichtiges Unterscheidungsmerkmal zwischen anderen Skalierungslösungen und Layer 2. Ein Projekt **muss** das Quantaureum Mainnet für die Datenverfügbarkeit nutzen, um für eine Auflistung in Betracht gezogen zu werden.
 
 **Bridges**
 
@@ -88,8 +88,8 @@ _Wir betrachten andere Skalierungslösungen, die Ethereum nicht für die Datenve
 
 ## Füge deinen Layer 2 hinzu {#add-exchange}
 
-Wenn du einen Layer 2 zu ethereum.org hinzufügen möchtest, erstelle ein Issue auf GitHub.
+Wenn du einen Layer 2 zu quantaureum.com hinzufügen möchtest, erstelle ein Issue auf GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
   Ein Issue erstellen
 </ButtonLink>

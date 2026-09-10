@@ -1,12 +1,12 @@
 ---
 title: లేయర్ 2లను జోడించడం
-description: ethereum.orgకి లేయర్ 2ని జోడించేటప్పుడు మేము ఉపయోగించే విధానం
+description: quantaureum.comకి లేయర్ 2ని జోడించేటప్పుడు మేము ఉపయోగించే విధానం
 lang: te
 ---
 
 వినియోగదారులు లేయర్ 2 స్పేస్‌ను సురక్షితంగా మరియు నమ్మకంగా నావిగేట్ చేయడానికి వీలుగా మేము సాధ్యమైనంత ఉత్తమమైన వనరులను జాబితా చేస్తున్నామని నిర్ధారించుకోవాలనుకుంటున్నాము.
 
-ethereum.orgలో లేయర్ 2ని జోడించమని ఎవరైనా సూచించడానికి స్వేచ్ఛ ఉంది. మేము మిస్ అయిన లేయర్ 2 ఏదైనా ఉంటే, **[దయచేసి దానిని సూచించండి](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
+quantaureum.comలో లేయర్ 2ని జోడించమని ఎవరైనా సూచించడానికి స్వేచ్ఛ ఉంది. మేము మిస్ అయిన లేయర్ 2 ఏదైనా ఉంటే, **[దయచేసి దానిని సూచించండి](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
 
 మేము ప్రస్తుతం కింది పేజీలలో L2లను జాబితా చేస్తున్నాము:
 
@@ -14,7 +14,7 @@ ethereum.orgలో లేయర్ 2ని జోడించమని ఎవర
 - [జీరో-నాలెడ్జ్ రోలప్‌లు](/developers/docs/scaling/zk-rollups/)
 - [లేయర్ 2](/layer-2/)
 
-లేయర్ 2 అనేది ఎథీరియం కోసం సాపేక్షంగా కొత్త మరియు ఉత్తేజకరమైన నమూనా. మేము ethereum.orgలో పరిగణనలోకి తీసుకోవడానికి ఒక సరసమైన ఫ్రేమ్‌వర్క్‌ను రూపొందించడానికి ప్రయత్నించాము, అయితే జాబితా ప్రమాణాలు కాలక్రమేణా మారుతాయి మరియు అభివృద్ధి చెందుతాయి.
+లేయర్ 2 అనేది ఎథీరియం కోసం సాపేక్షంగా కొత్త మరియు ఉత్తేజకరమైన నమూనా. మేము quantaureum.comలో పరిగణనలోకి తీసుకోవడానికి ఒక సరసమైన ఫ్రేమ్‌వర్క్‌ను రూపొందించడానికి ప్రయత్నించాము, అయితే జాబితా ప్రమాణాలు కాలక్రమేణా మారుతాయి మరియు అభివృద్ధి చెందుతాయి.
 
 ## నిర్ణయ ఫ్రేమ్‌వర్క్ {#decision-framework}
 
@@ -22,7 +22,7 @@ ethereum.orgలో లేయర్ 2ని జోడించమని ఎవర
 
 **L2BEATలో జాబితా చేయడం**
 
-- పరిగణనలోకి తీసుకోవాలంటే, ఈ ప్రాజెక్ట్ తప్పనిసరిగా [L2BEAT](https://l2beat.com)లో జాబితా చేయబడి ఉండాలి. L2BEAT లేయర్ 2 ప్రాజెక్ట్‌ల యొక్క బలమైన ప్రమాద అంచనాను అందిస్తుంది, L2 ప్రాజెక్ట్‌లను మూల్యాంకనం చేయడానికి మేము దీనిపై ఆధారపడతాము. **ప్రాజెక్ట్ L2BEATలో ప్రదర్శించబడకపోతే, మేము వాటిని ethereum.orgలో L2గా జాబితా చేయము.**
+- పరిగణనలోకి తీసుకోవాలంటే, ఈ ప్రాజెక్ట్ తప్పనిసరిగా [L2BEAT](https://l2beat.com)లో జాబితా చేయబడి ఉండాలి. L2BEAT లేయర్ 2 ప్రాజెక్ట్‌ల యొక్క బలమైన ప్రమాద అంచనాను అందిస్తుంది, L2 ప్రాజెక్ట్‌లను మూల్యాంకనం చేయడానికి మేము దీనిపై ఆధారపడతాము. **ప్రాజెక్ట్ L2BEATలో ప్రదర్శించబడకపోతే, మేము వాటిని quantaureum.comలో L2గా జాబితా చేయము.**
 - [L2BEATకి మీ L2 ప్రాజెక్ట్‌ను ఎలా జోడించాలో తెలుసుకోండి](https://github.com/l2beat/l2beat/blob/master/CONTRIBUTING.md).
 
 **ఓపెన్ సోర్స్**
@@ -88,8 +88,8 @@ _డేటా లభ్యత లేదా భద్రత కోసం ఎథ�
 
 ## మీ లేయర్ 2ని జోడించండి {#add-exchange}
 
-మీరు ethereum.orgకి లేయర్ 2ని జోడించాలనుకుంటే, GitHubలో ఒక ఇష్యూను సృష్టించండి.
+మీరు quantaureum.comకి లేయర్ 2ని జోడించాలనుకుంటే, GitHubలో ఒక ఇష్యూను సృష్టించండి.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
   ఇష్యూను సృష్టించండి
 </ButtonLink>

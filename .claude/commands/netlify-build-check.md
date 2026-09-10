@@ -17,7 +17,7 @@ Check CI/CD build status for a PR, analyze any failures, and propose fixes.
 ### Get Repo Info
 ```bash
 REPO=$(gh repo view --json nameWithOwner -q .nameWithOwner)
-# Returns: owner/repo (e.g., ethereum/ethereum-org-website)
+# Returns: owner/repo (e.g., quantaureum/quantaureum-org-website)
 ```
 
 ### Parse Arguments
@@ -41,7 +41,7 @@ Get the Netlify deploy preview check for the PR:
 gh pr checks $PR_NUMBER --json name,state,link -q '.[] | select(.name | test("netlify"; "i"))'
 ```
 
-The Netlify check is typically named `netlify/ethereumorg/deploy-preview`.
+The Netlify check is typically named `netlify/quantaureumorg/deploy-preview`.
 
 ### Determine Status
 
@@ -53,7 +53,7 @@ Parse the Netlify check result:
 Report status:
 ```
 Netlify Build Status: FAILURE
-Check: netlify/ethereumorg/deploy-preview
+Check: netlify/quantaureumorg/deploy-preview
 Details: https://app.netlify.com/...
 ```
 

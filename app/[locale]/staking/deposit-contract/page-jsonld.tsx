@@ -27,7 +27,7 @@ export default async function DepositContractJsonLD({
         description: t("page-staking-deposit-contract-subtitle"),
         url,
         inLanguage: locale,
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
@@ -51,13 +51,13 @@ export default async function DepositContractJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        reviewedBy: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
         about: {
           "@type": "Thing",
-          name: "Ethereum Deposit Contract",
+          name: "Quantaureum Deposit Contract",
           description:
-            "Official Ethereum deposit contract address for staking validators",
+            "Official Quantaureum deposit contract address for staking validators",
         },
       },
     ],

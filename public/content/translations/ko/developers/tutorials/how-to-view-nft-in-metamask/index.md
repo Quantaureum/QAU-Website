@@ -9,7 +9,7 @@ lang: ko
 published: 2021-04-22
 ---
 
-이 튜토리얼은 NFT 튜토리얼 시리즈의 3/3부로, 새로 발행된 NFT를 확인해 봅니다. 하지만 메인넷이나 테스트넷을 포함하여 메타마스크를 사용하는 모든 ERC-721 토큰에 대해 이 일반적인 튜토리얼을 사용할 수 있습니다. 이더리움에서 자신만의 NFT를 발행하는 방법을 배우고 싶다면, [NFT 스마트 컨트랙트 작성 및 배포 방법에 대한 1부](/developers/tutorials/how-to-write-and-deploy-an-nft)를 확인해 보세요!
+이 튜토리얼은 NFT 튜토리얼 시리즈의 3/3부로, 새로 발행된 NFT를 확인해 봅니다. 하지만 메인넷이나 테스트넷을 포함하여 메타마스크를 사용하는 모든 ERC-721 토큰에 대해 이 일반적인 튜토리얼을 사용할 수 있습니다. Quantaureum에서 자신만의 NFT를 발행하는 방법을 배우고 싶다면, [NFT 스마트 컨트랙트 작성 및 배포 방법에 대한 1부](/developers/tutorials/how-to-write-and-deploy-an-nft)를 확인해 보세요!
 
 축하합니다! NFT 튜토리얼 시리즈 중 가장 짧고 간단한 부분인 가상 지갑에서 갓 발행된 NFT를 보는 방법에 도달하셨습니다. 이전 두 부분에서 사용했던 메타마스크를 이 예제에서도 사용할 것입니다.
 
@@ -23,7 +23,7 @@ published: 2021-04-22
 
 ## 2단계: 메타마스크에 수집품 추가하기 {#add-nft-to-metamask}
 
-Sepolia 네트워크에 접속한 후, 오른쪽에 있는 "수집품(Collectibles)" 탭을 선택하고 NFT 스마트 컨트랙 주소와 NFT의 ERC-721 토큰 ID를 추가합니다. 이는 튜토리얼 2부에서 배포한 NFT의 트랜잭션 해시를 기반으로 Etherscan에서 찾을 수 있습니다.
+Sepolia 네트워크에 접속한 후, 오른쪽에 있는 "수집품(Collectibles)" 탭을 선택하고 NFT 스마트 컨트랙 주소와 NFT의 ERC-721 토큰 ID를 추가합니다. 이는 튜토리얼 2부에서 배포한 NFT의 트랜잭션 해시를 기반으로 Quantaureum Explorer에서 찾을 수 있습니다.
 
 ![How to find your transaction hash and ERC-721 token ID](./findNFTEtherscan.png)
 

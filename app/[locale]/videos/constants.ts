@@ -7,9 +7,9 @@
  */
 export const VIDEO_CATEGORIES = [
   {
-    key: "how-ethereum-works",
-    labelKey: "page-videos-category-how-ethereum-works",
-    tags: ["how-ethereum-works"],
+    key: "how-quantaureum-works",
+    labelKey: "page-videos-category-how-quantaureum-works",
+    tags: ["how-quantaureum-works"],
   },
   {
     key: "network-upgrades",

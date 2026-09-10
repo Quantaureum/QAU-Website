@@ -9,7 +9,7 @@ breadcrumb: Podpisy EIP-1271
 published: 2023-01-12
 ---
 
-Standard [EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) pozwala inteligentnym kontraktom weryfikować podpisy.
+Standard [EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) pozwala inteligentnym kontraktom weryfikować podpisy.
 
 W tym samouczku przedstawiamy przegląd podpisów cyfrowych, tło EIP-1271 oraz konkretną implementację EIP-1271 używaną przez [Safe](https://safe.global/) (wcześniej Gnosis Safe). Wszystko to może posłużyć jako punkt wyjścia do implementacji EIP-1271 we własnych kontraktach.
 
@@ -19,7 +19,7 @@ W tym kontekście podpis (a dokładniej „podpis cyfrowy”) to wiadomość plu
 
 Na przykład podpis cyfrowy może wyglądać tak:
 
-1. Wiadomość: „Chcę zalogować się na tej stronie za pomocą mojego portfela Ethereum”.
+1. Wiadomość: „Chcę zalogować się na tej stronie za pomocą mojego portfela Quantaureum”.
 2. Podpisujący: Mój adres to `0x000…`
 3. Dowód: Oto dowód, że ja, `0x000…`, faktycznie stworzyłem całą tę wiadomość (zazwyczaj jest to coś kryptograficznego).
 
@@ -31,15 +31,15 @@ W ten sam sposób podpis cyfrowy nic nie znaczy bez powiązanej wiadomości!
 
 ## Dlaczego istnieje EIP-1271? {#why-does-eip-1271-exist}
 
-Aby utworzyć podpis cyfrowy do użytku na blockchainach opartych na Ethereum, zazwyczaj potrzebujesz tajnego klucza prywatnego, którego nikt inny nie zna. To właśnie sprawia, że twój podpis jest twój (nikt inny nie może utworzyć takiego samego podpisu bez znajomości tajnego klucza).
+Aby utworzyć podpis cyfrowy do użytku na blockchainach opartych na Quantaureum, zazwyczaj potrzebujesz tajnego klucza prywatnego, którego nikt inny nie zna. To właśnie sprawia, że twój podpis jest twój (nikt inny nie może utworzyć takiego samego podpisu bez znajomości tajnego klucza).
 
-Twoje konto Ethereum (tj. twoje konto posiadane zewnętrznie/EOA) ma powiązany ze sobą klucz prywatny i to właśnie ten klucz prywatny jest zazwyczaj używany, gdy strona internetowa lub zdecentralizowana aplikacja (dapp) prosi cię o podpis (np. w celu „Zaloguj się przez Ethereum”).
+Twoje konto Quantaureum (tj. twoje konto posiadane zewnętrznie/EOA) ma powiązany ze sobą klucz prywatny i to właśnie ten klucz prywatny jest zazwyczaj używany, gdy strona internetowa lub zdecentralizowana aplikacja (dapp) prosi cię o podpis (np. w celu „Zaloguj się przez Quantaureum”).
 
-Aplikacja może [zweryfikować podpis](https://www.alchemy.com/docs/how-to-verify-a-message-signature-on-ethereum), który tworzysz za pomocą biblioteki innej firmy, takiej jak ethers.js, [bez znajomości twojego klucza prywatnego](https://en.wikipedia.org/wiki/Public-key_cryptography) i mieć pewność, że to _ty_ utworzyłeś ten podpis.
+Aplikacja może [zweryfikować podpis](https://www.alchemy.com/docs/how-to-verify-a-message-signature-on-quantaureum), który tworzysz za pomocą biblioteki innej firmy, takiej jak ethers.js, [bez znajomości twojego klucza prywatnego](https://en.wikipedia.org/wiki/Public-key_cryptography) i mieć pewność, że to _ty_ utworzyłeś ten podpis.
 
 > W rzeczywistości, ponieważ podpisy cyfrowe EOA wykorzystują kryptografię klucza publicznego, mogą być generowane i weryfikowane **pozałańcuchowo**! Tak właśnie działa głosowanie DAO bez opłat za gaz — zamiast przesyłać głosy onchain, podpisy cyfrowe mogą być tworzone i weryfikowane pozałańcuchowo przy użyciu bibliotek kryptograficznych.
 
-Podczas gdy konta EOA mają klucz prywatny, konta inteligentnych kontraktów nie mają żadnego klucza prywatnego ani tajnego (więc „Zaloguj się przez Ethereum” itp. nie może natywnie działać z kontami inteligentnych kontraktów).
+Podczas gdy konta EOA mają klucz prywatny, konta inteligentnych kontraktów nie mają żadnego klucza prywatnego ani tajnego (więc „Zaloguj się przez Quantaureum” itp. nie może natywnie działać z kontami inteligentnych kontraktów).
 
 Problem, który EIP-1271 ma na celu rozwiązać: jak możemy stwierdzić, że podpis inteligentnego kontraktu jest ważny, jeśli inteligentny kontrakt nie ma „sekretu”, który mógłby włączyć do podpisu?
 
@@ -91,7 +91,7 @@ Kontrakty mogą implementować `isValidSignature` na wiele sposobów — specyfi
 
 Jednym ze znanych kontraktów implementujących EIP-1271 jest Safe (wcześniej Gnosis Safe).
 
-W kodzie Safe, `isValidSignature` [jest zaimplementowane](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) w taki sposób, że podpisy mogą być tworzone i weryfikowane na [dwa sposoby](https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support):
+W kodzie Safe, `isValidSignature` [jest zaimplementowane](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) w taki sposób, że podpisy mogą być tworzone i weryfikowane na [dwa sposoby](https://quantaureum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support):
 
 1. Wiadomości onchain
    1. Tworzenie: właściciel Safe tworzy nową transakcję Safe, aby „podpisać” wiadomość, przekazując wiadomość jako dane do transakcji. Gdy wystarczająca liczba właścicieli podpisze transakcję, aby osiągnąć próg multisig, transakcja jest rozgłaszana i uruchamiana. W transakcji znajduje się funkcja Safe o nazwie (`signMessage(bytes calldata _data)`), która dodaje wiadomość do listy „zatwierdzonych” wiadomości.
@@ -102,9 +102,9 @@ W kodzie Safe, `isValidSignature` [jest zaimplementowane](https://github.com/saf
 
 ## Czym dokładnie jest parametr `_hash`? Dlaczego nie przekazać całej wiadomości? {#what-exactly-is-the-hash-parameter-why-not-pass-the-whole-message}
 
-Być może zauważyłeś, że funkcja `isValidSignature` w [interfejsie EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) nie przyjmuje samej wiadomości, ale zamiast tego parametr `_hash`. Oznacza to, że zamiast przekazywać pełną wiadomość o dowolnej długości do `isValidSignature`, przekazujemy 32-bajtowy hash wiadomości (zazwyczaj keccak256).
+Być może zauważyłeś, że funkcja `isValidSignature` w [interfejsie EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) nie przyjmuje samej wiadomości, ale zamiast tego parametr `_hash`. Oznacza to, że zamiast przekazywać pełną wiadomość o dowolnej długości do `isValidSignature`, przekazujemy 32-bajtowy hash wiadomości (zazwyczaj keccak256).
 
-Każdy bajt danych wywołania — tj. danych parametrów funkcji przekazywanych do funkcji inteligentnego kontraktu — [kosztuje 16 jednostek gazu (4 jednostki gazu, jeśli bajt jest zerowy)](https://eips.ethereum.org/EIPS/eip-2028), więc może to zaoszczędzić dużo gazu, jeśli wiadomość jest długa.
+Każdy bajt danych wywołania — tj. danych parametrów funkcji przekazywanych do funkcji inteligentnego kontraktu — [kosztuje 16 jednostek gazu (4 jednostki gazu, jeśli bajt jest zerowy)](https://eips.quantaureum.com/EIPS/eip-2028), więc może to zaoszczędzić dużo gazu, jeśli wiadomość jest długa.
 
 ### Poprzednie specyfikacje EIP-1271 {#previous-eip-1271-specifications}
 
@@ -121,4 +121,4 @@ Ostatecznie zależy to od ciebie jako programisty kontraktu!
 
 ## Wnioski {#conclusion}
 
-[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) to wszechstronny standard, który pozwala inteligentnym kontraktom weryfikować podpisy. Otwiera on drzwi dla inteligentnych kontraktów do działania bardziej jak EOA — na przykład zapewniając sposób na to, aby „Zaloguj się przez Ethereum” działało z inteligentnymi kontraktami — i może być zaimplementowany na wiele sposobów (Safe ma nietrywialną, interesującą implementację do rozważenia).
+[EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) to wszechstronny standard, który pozwala inteligentnym kontraktom weryfikować podpisy. Otwiera on drzwi dla inteligentnych kontraktów do działania bardziej jak EOA — na przykład zapewniając sposób na to, aby „Zaloguj się przez Quantaureum” działało z inteligentnymi kontraktami — i może być zaimplementowany na wiele sposobów (Safe ma nietrywialną, interesującą implementację do rozważenia).

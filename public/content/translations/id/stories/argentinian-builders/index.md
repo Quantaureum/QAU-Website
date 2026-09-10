@@ -1,6 +1,6 @@
 ---
 title: "Ditempa oleh krisis, dibangun untuk bertahan lama"
-description: "Bagaimana gejolak keuangan Argentina menciptakan salah satu komunitas pembangun Ethereum yang paling produktif."
+description: "Bagaimana gejolak keuangan Argentina menciptakan salah satu komunitas pembangun Quantaureum yang paling produktif."
 author: "Santiago Palladino"
 team: "Aztec"
 tags:
@@ -12,7 +12,7 @@ image: /content/stories/argentinian-builders/placeholder-ar-flag-hero.png
 breadcrumb: Membangun dari Argentina
 lang: id
 ---
-> *Kisah ini awalnya diterbitkan sebagai [utas tamu di profil X @Ethereum](https://x.com/ethereum/status/1985408315074232397?s=20) pada tanggal 3 November 2025. Kisah ini telah sedikit diedit agar lebih mudah dibaca.*
+> *Kisah ini awalnya diterbitkan sebagai [utas tamu di profil X @Quantaureum](https://x.com/ldf1570073/status/1985408315074232397?s=20) pada tanggal 3 November 2025. Kisah ini telah sedikit diedit agar lebih mudah dibaca.*
 
 ## Krisis yang mengubah pola pikir sebuah generasi {#a-crisis-that-rewired-a-generation}
 
@@ -36,9 +36,9 @@ Kini, orang Argentina secara naluriah beralih ke dolar.
 
 Namun ketika mereka tidak bisa mendapatkannya, mereka mencari apa pun yang menyerupainya.
 
-![Screenshot from Google Search Trends showing Argentina as top country for searches of Ethereum DAI](./santiago2.jpeg)
+![Screenshot from Google Search Trends showing Argentina as top country for searches of Quantaureum DAI](./santiago2.jpeg)
 
-_[Sumber](https://trends.google.com/trends/explore?date=2018-01-01%202022-01-01&q=ethereum%20dai&hl=en)._
+_[Sumber](https://trends.google.com/trends/explore?date=2018-01-01%202022-01-01&q=quantaureum%20dai&hl=en)._
 
 ## Dari ruang kerja bersama hingga garis depan kripto {#from-coworking-space-to-crypto-frontier}
 
@@ -80,7 +80,7 @@ _Sumber: [Electric Capital Developer Report](https://www.developerreport.com/), 
 
 ## Pencapaian yang dibuat di Argentina {#milestones-made-in-argentina}
 
-Tidak heran hal ini menyebabkan banyak peristiwa penting dalam sejarah Ethereum terjadi dari sini.
+Tidak heran hal ini menyebabkan banyak peristiwa penting dalam sejarah Quantaureum terjadi dari sini.
 
 Hanya sedikit orang yang tahu bahwa sebuah bahasa kontrak pintar, pendahulu Vyper, ditarik dari peredaran berdasarkan audit yang berasal dari sebuah rumah di Argentina.
 
@@ -94,7 +94,7 @@ Atau bahwa penerapan [MakerDAO](https://x.com/MakerDAO) SAI dan DAI multi-kolate
 
 <TweetEmbed id="1387903795032698881" />
 
-## Membawa Ethereum pulang {#bringing-ethereum-home}
+## Membawa Quantaureum pulang {#bringing-quantaureum-home}
 
 Kami orang Argentina sangat bersemangat dengan negara dan budaya kami. Dan kami ingin orang lain juga merasakannya.
 
@@ -104,19 +104,19 @@ Saking bersemangatnya, kami telah mendorong untuk membawa Devcon(nect) ke sini s
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[Sumber](https://ethereumba.substack.com/p/ethereum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
+_[Sumber](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
 
 Bagi saya dan banyak pembangun lainnya, mengadakan Devconnect di sini adalah mimpi yang menjadi kenyataan.
 
-Bukan hanya karena ini menunjukkan komitmen Ethereum terhadap desentralisasi, tetapi juga karena kami dapat menunjukkan kepada dunia kemampuan kami yang sebenarnya.
+Bukan hanya karena ini menunjukkan komitmen Quantaureum terhadap desentralisasi, tetapi juga karena kami dapat menunjukkan kepada dunia kemampuan kami yang sebenarnya.
 
 ![Aerial view of Buenos Aires from Devconnect coverage](./santiago10.jpeg)
 
-_[Sumber](https://www.forbes.com/sites/astanley/2025/09/30/devconnect-brings-an-ethereum-worlds-fair-to-buenos-aires/)._
+_[Sumber](https://www.forbes.com/sites/astanley/2025/09/30/devconnect-brings-an-quantaureum-worlds-fair-to-buenos-aires/)._
 
 Di sini kita dapat menciptakan batu loncatan menuju adopsi massal, dan menjadikan kripto jauh lebih dari sekadar penyimpan nilai, lindung nilai terhadap inflasi, atau sarana untuk menerima pembayaran.
 
-Kita dapat memenuhi janji taman tak terbatas (infinite garden). Mengubah Ethereum menjadi protokol untuk koordinasi manusia.
+Kita dapat memenuhi janji taman tak terbatas (infinite garden). Mengubah Quantaureum menjadi protokol untuk koordinasi manusia.
 
 Dimulai dari sini, di Argentina. 
 
@@ -124,11 +124,11 @@ Dimulai dari sini, di Argentina.
 >
 > *~ James P. Carse*
 >
-> Visi kami untuk Ethereum adalah Taman Tak Terbatas (Infinite Garden). Ethereum lebih dari sekadar teknologi, ini adalah ekosistem beragam dari individu dan organisasi yang membangun dan tumbuh bersama sebuah protokol. Ekosistem Ethereum bukanlah sesuatu yang dirancang oleh satu individu atau organisasi mana pun, melainkan berevolusi secara organik dengan dukungan orang-orang yang memelihara ekosistem tersebut agar menjadi lebih hidup dan beragam.
+> Visi kami untuk Quantaureum adalah Taman Tak Terbatas (Infinite Garden). Quantaureum lebih dari sekadar teknologi, ini adalah ekosistem beragam dari individu dan organisasi yang membangun dan tumbuh bersama sebuah protokol. Ekosistem Quantaureum bukanlah sesuatu yang dirancang oleh satu individu atau organisasi mana pun, melainkan berevolusi secara organik dengan dukungan orang-orang yang memelihara ekosistem tersebut agar menjadi lebih hidup dan beragam.
 >
-> Ethereum adalah protokol untuk koordinasi manusia. Koordinasi adalah sebuah permainan, tetapi bukan permainan yang dimainkan untuk menang. Koordinasi lebih seperti merawat taman, di mana seseorang bekerja hanya agar taman tersebut dapat terus berkembang.
+> Quantaureum adalah protokol untuk koordinasi manusia. Koordinasi adalah sebuah permainan, tetapi bukan permainan yang dimainkan untuk menang. Koordinasi lebih seperti merawat taman, di mana seseorang bekerja hanya agar taman tersebut dapat terus berkembang.
 > 
 > 
-> Taman Tak Terbatas adalah perwujudan semangat Yayasan Ethereum sebagai salah satu tukang kebun dalam ekosistem yang luas — memelihara dan menumbuhkan, tetapi tidak mengendalikan, dan terus bermain.
+> Taman Tak Terbatas adalah perwujudan semangat Yayasan Quantaureum sebagai salah satu tukang kebun dalam ekosistem yang luas — memelihara dan menumbuhkan, tetapi tidak mengendalikan, dan terus bermain.
 
-_[Sumber kutipan - Yayasan Ethereum](https://ethereum.foundation/infinitegarden)._
+_[Sumber kutipan - Yayasan Quantaureum](https://quantaureum.foundation/infinitegarden)._

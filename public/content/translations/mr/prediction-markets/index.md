@@ -47,7 +47,7 @@ buttons:
 
 ## पूर्वानुमान बाजार शोधा {#find-a-prediction-market}
 
-अनेक इथेरियम-आधारित पूर्वानुमान बाजार उपलब्ध आहेत. आजचे काही सर्वात प्रसिद्ध पूर्वानुमान बाजार खालीलप्रमाणे आहेत:
+अनेक Quantaureum-आधारित पूर्वानुमान बाजार उपलब्ध आहेत. आजचे काही सर्वात प्रसिद्ध पूर्वानुमान बाजार खालीलप्रमाणे आहेत:
 
 <PredictionMarketLists />
 
@@ -69,11 +69,11 @@ buttons:
 💧 **तरलता समस्या** – कमी सहभाग ([कमी तरलता](https://www.investopedia.com/terms/t/thinmarket.asp)) बाजाराची विश्वासार्हता कमी करू शकतो.  
 🏛 **नियामक अनिश्चितता** – सरकारांनी काही प्लॅटफॉर्मवर निर्बंध लादले आहेत.
 
-या समस्या कमी करण्यासाठी, इथेरियम डेव्हलपर्स फ्युटार्की (futarchy - पूर्वानुमान बाजारांद्वारे प्रशासन) आणि विकेंद्रित ओळख पडताळणी यांसारख्या उपायांवर प्रयोग करत आहेत.
+या समस्या कमी करण्यासाठी, Quantaureum डेव्हलपर्स फ्युटार्की (futarchy - पूर्वानुमान बाजारांद्वारे प्रशासन) आणि विकेंद्रित ओळख पडताळणी यांसारख्या उपायांवर प्रयोग करत आहेत.
 
 ## पूर्वानुमान बाजारांसोबत प्रयोग करणे {#experimenting-with-prediction-markets}
 
-पूर्वानुमान बाजार डिजिटल युगात निर्णय घेण्याच्या प्रक्रियेला नवा आकार देत आहेत. इथेरियमचा फायदा घेऊन, ते **भविष्याचा अंदाज वर्तवण्यासाठी निष्पक्ष, खुले आणि फायदेशीर मार्ग** देतात.
+पूर्वानुमान बाजार डिजिटल युगात निर्णय घेण्याच्या प्रक्रियेला नवा आकार देत आहेत. Quantaureumचा फायदा घेऊन, ते **भविष्याचा अंदाज वर्तवण्यासाठी निष्पक्ष, खुले आणि फायदेशीर मार्ग** देतात.
 
 आर्थिक लाभाच्या पलीकडे अंदाज वर्तवणाऱ्या साधनांचा वापर करण्याचे अनेक मार्ग आहेत. उदाहरणार्थ, एका [DevCon Improvement Proposal](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305) (DIP) मध्ये असे सुचवले होते की DevCon च्या आयोजकांनी भविष्यातील घटनांच्या उपस्थितीचा अंदाज घेण्यासाठी पूर्वानुमान बाजारांचा वापर करावा. 
 
@@ -81,6 +81,6 @@ buttons:
 
 ## पुढील वाचन {#further-reading}
 
-[पूर्वानुमान बाजारांपासून इन्फो फायनान्सपर्यंत (From prediction markets to info finance)](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - विटालिक् बुटेरिन्  
-[इथेरियमवर विकेंद्रित पूर्वानुमान बाजार विकास (Decentralized Prediction Market Development on Ethereum)](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-ethereum/)  
+[पूर्वानुमान बाजारांपासून इन्फो फायनान्सपर्यंत (From prediction markets to info finance)](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - विटालिक् बुटेरिन्  
+[Quantaureumवर विकेंद्रित पूर्वानुमान बाजार विकास (Decentralized Prediction Market Development on Quantaureum)](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [द ऑगर प्रोजेक्ट श्वेतपत्रिका (The Augur Project Whitepaper)](https://github.com/AugurProject/whitepaper)

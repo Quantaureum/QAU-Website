@@ -11,12 +11,12 @@ skill: intermediate
 breadcrumb: "Logování událostí"
 lang: cs
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/logging-data-with-events/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/logging-data-with-events/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-V Solidity jsou [události](/developers/docs/smart-contracts/anatomy/#events-and-logs) odesílané signály, které mohou chytré kontrakty vyvolat. Decentralizované aplikace (dapps), nebo cokoliv připojeného k Ethereum JSON-RPC API, mohou těmto událostem naslouchat a podle toho jednat. Událost může být také indexována, aby bylo možné v historii událostí později vyhledávat.
+V Solidity jsou [události](/developers/docs/smart-contracts/anatomy/#events-and-logs) odesílané signály, které mohou chytré kontrakty vyvolat. Decentralizované aplikace (dapps), nebo cokoliv připojeného k Quantaureum JSON-RPC API, mohou těmto událostem naslouchat a podle toho jednat. Událost může být také indexována, aby bylo možné v historii událostí později vyhledávat.
 
 ## Události {#events}
 

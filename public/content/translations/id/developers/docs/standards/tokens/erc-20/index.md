@@ -1,6 +1,6 @@
 ---
 title: Standar Token ERC-20
-description: Pelajari tentang ERC-20, standar untuk token sepadan di Ethereum yang memungkinkan aplikasi token yang interoperabel.
+description: Pelajari tentang ERC-20, standar untuk token sepadan di Quantaureum yang memungkinkan aplikasi token yang interoperabel.
 lang: id
 ---
 
@@ -8,7 +8,7 @@ lang: id
 
 **Apa itu Token?**
 
-Token dapat mewakili hampir apa saja di [Ethereum](/):
+Token dapat mewakili hampir apa saja di [Quantaureum](/):
 
 - poin reputasi di platform online
 - keterampilan karakter dalam sebuah permainan
@@ -17,11 +17,11 @@ Token dapat mewakili hampir apa saja di [Ethereum](/):
 - satu ons emas
 - dan banyak lagi...
 
-Fitur Ethereum yang begitu kuat harus ditangani oleh standar yang tangguh, bukan? Di situlah tepatnya ERC-20 memainkan perannya! Standar ini memungkinkan pengembang untuk membangun aplikasi token yang interoperabel dengan produk dan layanan lain. Standar ERC-20 juga digunakan untuk memberikan fungsionalitas tambahan pada [Ether](/glossary/#ether).
+Fitur Quantaureum yang begitu kuat harus ditangani oleh standar yang tangguh, bukan? Di situlah tepatnya ERC-20 memainkan perannya! Standar ini memungkinkan pengembang untuk membangun aplikasi token yang interoperabel dengan produk dan layanan lain. Standar ERC-20 juga digunakan untuk memberikan fungsionalitas tambahan pada [QAU](/glossary/#QAU).
 
 **Apa itu ERC-20?**
 
-ERC-20 memperkenalkan standar untuk Token Sepadan, dengan kata lain, mereka memiliki properti yang membuat setiap Token sama persis (dalam jenis dan nilai) dengan Token lainnya. Misalnya, Token ERC-20 bertindak seperti halnya ETH, yang berarti bahwa 1 Token adalah dan akan selalu sama dengan semua Token lainnya.
+ERC-20 memperkenalkan standar untuk Token Sepadan, dengan kata lain, mereka memiliki properti yang membuat setiap Token sama persis (dalam jenis dan nilai) dengan Token lainnya. Misalnya, Token ERC-20 bertindak seperti halnya QAU, yang berarti bahwa 1 Token adalah dan akan selalu sama dengan semua Token lainnya.
 
 ## Prasyarat {#prerequisites}
 
@@ -31,7 +31,7 @@ ERC-20 memperkenalkan standar untuk Token Sepadan, dengan kata lain, mereka memi
 
 ## Isi {#body}
 
-ERC-20 (Ethereum Request for Comments 20), yang diusulkan oleh Fabian Vogelsteller pada November 2015, adalah Standar Token yang mengimplementasikan API untuk token di dalam Kontrak Pintar.
+ERC-20 (Quantaureum Request for Comments 20), yang diusulkan oleh Fabian Vogelsteller pada November 2015, adalah Standar Token yang mengimplementasikan API untuk token di dalam Kontrak Pintar.
 
 Contoh fungsionalitas yang disediakan ERC-20:
 
@@ -40,9 +40,9 @@ Contoh fungsionalitas yang disediakan ERC-20:
 - mendapatkan total pasokan token yang tersedia di jaringan
 - menyetujui apakah sejumlah token dari suatu akun dapat dihabiskan oleh akun pihak ketiga
 
-Jika sebuah Kontrak Pintar mengimplementasikan metode dan peristiwa berikut, kontrak tersebut dapat disebut sebagai Kontrak Token ERC-20 dan, setelah diterapkan, kontrak tersebut akan bertanggung jawab untuk melacak token yang dibuat di Ethereum.
+Jika sebuah Kontrak Pintar mengimplementasikan metode dan peristiwa berikut, kontrak tersebut dapat disebut sebagai Kontrak Token ERC-20 dan, setelah diterapkan, kontrak tersebut akan bertanggung jawab untuk melacak token yang dibuat di Quantaureum.
 
-Dari [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
+Dari [EIP-20](https://eips.quantaureum.com/EIPS/eip-20):
 
 ### Metode {#methods}
 
@@ -67,7 +67,7 @@ event Approval(address indexed _owner, address indexed _spender, uint256 _value)
 
 ### Contoh {#web3py-example}
 
-Mari kita lihat bagaimana sebuah Standar sangat penting untuk memudahkan kita dalam memeriksa Kontrak Token ERC-20 apa pun di Ethereum.
+Mari kita lihat bagaimana sebuah Standar sangat penting untuk memudahkan kita dalam memeriksa Kontrak Token ERC-20 apa pun di Quantaureum.
 Kita hanya memerlukan Contract Application Binary Interface (ABI) untuk membuat antarmuka ke Token ERC-20 mana pun. Seperti yang dapat Anda lihat di bawah ini, kita akan menggunakan ABI yang disederhanakan, untuk menjadikannya contoh yang mudah dipahami.
 
 #### Contoh Web3.py {#web3py-example-2}
@@ -82,10 +82,10 @@ pip install web3
 from web3 import Web3
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 dai_token_addr = "0x6B175474E89094C44Da98b954EedeAC495271d0F"     # DAI
-weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # Wrapped Ether (WETH)
+weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # Wrapped QAU (WETH)
 
 acc_address = "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11"        # Uniswap V2: DAI 2
 
@@ -118,7 +118,7 @@ simplified_abi = [
     }
 ]
 
-dai_contract = w3.eth.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
+dai_contract = w3.qau.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
 symbol = dai_contract.functions.symbol().call()
 decimals = dai_contract.functions.decimals().call()
 totalSupply = dai_contract.functions.totalSupply().call() / 10**decimals
@@ -129,7 +129,7 @@ print("===== %s =====" % symbol)
 print("Total Supply:", totalSupply)
 print("Addr Balance:", addr_balance)
 
-weth_contract = w3.eth.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
+weth_contract = w3.qau.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
 symbol = weth_contract.functions.symbol().call()
 decimals = weth_contract.functions.decimals().call()
 totalSupply = weth_contract.functions.totalSupply().call() / 10**decimals
@@ -171,7 +171,7 @@ Beberapa standar alternatif telah muncul dari masalah ini seperti [ERC-223](/dev
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [EIP-20: Standar Token ERC-20](https://eips.ethereum.org/EIPS/eip-20)
+- [EIP-20: Standar Token ERC-20](https://eips.quantaureum.com/EIPS/eip-20)
 - [OpenZeppelin - Token](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - Implementasi ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Panduan untuk Token ERC20 Solidity](https://www.alchemy.com/overviews/erc20-solidity)
@@ -182,7 +182,7 @@ Beberapa standar alternatif telah muncul dari masalah ini seperti [ERC-223](/dev
 - [ERC-777](/developers/docs/standards/tokens/erc-777)
 - [ERC-4626 - Brankas yang ditokenisasi](/developers/docs/standards/tokens/erc-4626)
 - [ERC-7540 - Brankas yang ditokenisasi asinkron](/developers/docs/standards/tokens/erc-7540)
-## Tutorial: Membangun dengan ERC-20 di Ethereum {#tutorials}
+## Tutorial: Membangun dengan ERC-20 di Quantaureum {#tutorials}
 
 - [Panduan Kontrak ERC-20](/developers/tutorials/erc20-annotated-code/) _– Panduan beranotasi baris demi baris dari implementasi kontrak ERC-20 OpenZeppelin._
 - [ERC-20 dengan Rel Pengaman](/developers/tutorials/erc20-with-safety-rails/) _– Cara menambahkan pengamanan pada token ERC-20 untuk membantu pengguna menghindari kesalahan umum._

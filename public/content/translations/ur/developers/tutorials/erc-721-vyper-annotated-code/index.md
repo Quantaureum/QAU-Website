@@ -27,7 +27,7 @@ published: 2021-04-01
 # یہاں سے ترمیم شدہ: https://github.com/vyperlang/vyper/blob/de74722bf2d8718cca46902be165f9fe0e3641dd/examples/tokens/ERC721.vy
 ```
 
-Vyper میں تبصرے (comments)، بالکل Python کی طرح، ایک ہیش (`ethereum.ercs`) سے شروع ہوتے ہیں اور لائن کے آخر تک جاری رہتے ہیں۔ وہ تبصرے جن میں
+Vyper میں تبصرے (comments)، بالکل Python کی طرح، ایک ہیش (`quantaureum.ercs`) سے شروع ہوتے ہیں اور لائن کے آخر تک جاری رہتے ہیں۔ وہ تبصرے جن میں
 `@<keyword>` شامل ہوتا ہے، انہیں [NatSpec](https://vyper.readthedocs.io/en/latest/natspec.html) انسانوں کے پڑھنے کے قابل دستاویزات (documentation) تیار کرنے کے لیے استعمال کرتا ہے۔
 
 ```python
@@ -144,7 +144,7 @@ SUPPORTED_INTERFACES: constant(bytes4[2]) = [
 ]
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165) ایک کنٹریکٹ کے لیے یہ ظاہر کرنے کا طریقہ کار متعین کرتا ہے کہ ایپلی کیشنز اس کے ساتھ کیسے بات چیت کر سکتی ہیں، اور یہ کن <span dir="ltr">ERCs</span> کی تعمیل کرتا ہے۔ `SUPPORTED_INTERFACES` ان دو چار بائٹ انٹرفیس آئی ڈیز کی ایک مستقل فہرست ہے جن کی یہ کنٹریکٹ تعمیل کرتا ہے: خود <span dir="ltr">ERC-165</span> اور <span dir="ltr">ERC-721</span>۔
+[ERC-165](https://eips.quantaureum.com/EIPS/eip-165) ایک کنٹریکٹ کے لیے یہ ظاہر کرنے کا طریقہ کار متعین کرتا ہے کہ ایپلی کیشنز اس کے ساتھ کیسے بات چیت کر سکتی ہیں، اور یہ کن <span dir="ltr">ERCs</span> کی تعمیل کرتا ہے۔ `SUPPORTED_INTERFACES` ان دو چار بائٹ انٹرفیس آئی ڈیز کی ایک مستقل فہرست ہے جن کی یہ کنٹریکٹ تعمیل کرتا ہے: خود <span dir="ltr">ERC-165</span> اور <span dir="ltr">ERC-721</span>۔
 ### فنکشنز {#functions}
 
 یہ وہ فنکشنز ہیں جو دراصل <span dir="ltr">ERC-721</span> کو نافذ کرتے ہیں۔

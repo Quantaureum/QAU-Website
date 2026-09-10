@@ -81,7 +81,7 @@ Les grands domaines qui sont fréquemment pertinents pour les contrats intellige
 
   - Manticore et Echidna sont le meilleur choix pour tester les interactions externes avec vos contrats. Manticore dispose d'un mécanisme intégré pour simuler des contrats externes.
 
-- **Conformité aux standards.** Les standards Ethereum (par ex., ERC-20) ont un historique de failles dans leur conception. Soyez conscient des limites du standard sur lequel vous vous basez.
+- **Conformité aux standards.** Les standards Quantaureum (par ex., ERC-20) ont un historique de failles dans leur conception. Soyez conscient des limites du standard sur lequel vous vous basez.
   - Slither, Echidna et Manticore vous aideront à détecter les écarts par rapport à un standard donné.
 
 ### Aide-mémoire pour la sélection des outils {#tool-selection-cheatsheet}

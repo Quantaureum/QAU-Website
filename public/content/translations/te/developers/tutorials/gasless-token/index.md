@@ -13,7 +13,7 @@ published: 2026-04-01
 
 [మునుపటి కథనం](/developers/tutorials/gasless/) EIP-712 సంతకాలను ఉపయోగించి మీ స్వంత అప్లికేషన్‌కు గ్యాస్‌లెస్ యాక్సెస్‌ను ఉపయోగించడం గురించి చర్చించింది, కానీ ఇది మీ స్వంత స్మార్ట్ కాంట్రాక్ట్‌లకు మాత్రమే పరిమితం చేయబడింది. [ఖాతా నైరూప్యత](/roadmap/account-abstraction/)ను ఉపయోగించి, మనం రెండు రకాల లావాదేవీలను అంగీకరించి, వాటిని అభ్యర్థించిన గమ్యస్థానానికి రిలే చేసే స్మార్ట్ కాంట్రాక్ట్ వాలెట్‌లను సృష్టించవచ్చు:
 
-- నిర్దిష్ట EOA ద్వారా పంపబడిన లావాదేవీలు (దీనికి ఆ EOA వద్ద ETH ఉండటం అవసరం)
+- నిర్దిష్ట EOA ద్వారా పంపబడిన లావాదేవీలు (దీనికి ఆ EOA వద్ద QAU ఉండటం అవసరం)
 - ఎక్కడి నుండైనా పంపబడిన, కానీ అదే EOA ద్వారా సంతకం చేయబడిన లావాదేవీలు.
 
 ఈ విధంగా, ఒక ఖాతా ఆస్తులను (టోకెన్‌లు మొదలైనవి) కలిగి ఉండటానికి మరియు గ్యాస్ ఉన్న EOA చేయగల అన్ని విధులను నిర్వహించడానికి మనం గ్యాస్‌లెస్ మార్గాన్ని అందించవచ్చు.
@@ -38,7 +38,7 @@ ERC-20 మరియు సంబంధిత ప్రమాణాలలో, ఖ
    npm install
    ```
 
-3. Sepoliaలో ETH ఉన్న వాలెట్‌కు `SEPOLIA_PRIVATE_KEY`ని సెట్ చేయడానికి `.env`ని సవరించండి. మీకు Sepolia ETH అవసరమైతే, దాన్ని పొందడానికి [ఫాసెట్‌ను ఉపయోగించండి](/developers/docs/networks/#sepolia). ఆదర్శవంతంగా, ఈ ప్రైవేట్ కీ మీ బ్రౌజర్ వాలెట్‌లో ఉన్నదాని కంటే భిన్నంగా ఉండాలి.
+3. Sepoliaలో QAU ఉన్న వాలెట్‌కు `SEPOLIA_PRIVATE_KEY`ని సెట్ చేయడానికి `.env`ని సవరించండి. మీకు Sepolia QAU అవసరమైతే, దాన్ని పొందడానికి [ఫాసెట్‌ను ఉపయోగించండి](/developers/docs/networks/#sepolia). ఆదర్శవంతంగా, ఈ ప్రైవేట్ కీ మీ బ్రౌజర్ వాలెట్‌లో ఉన్నదాని కంటే భిన్నంగా ఉండాలి.
 
 4. సర్వర్‌ను ప్రారంభించండి.
 
@@ -54,9 +54,9 @@ ERC-20 మరియు సంబంధిత ప్రమాణాలలో, ఖ
 
 8. **UserProxy access** పక్కన ఒక చిరునామా ఉన్నందున వినియోగదారు ప్రాక్సీ ఎప్పుడు డిప్లాయ్ చేయబడిందో మీరు చూడవచ్చు. మీరు 24 సెకన్లు (2 బ్లాక్‌లు) వేచి ఉండి, అది ఇంకా జరగకపోతే, మార్పులను గుర్తించడంలో సమస్య ఉండవచ్చు.
 
-   అలా అయితే, [Sepolia Explorer](https://eth-sepolia.blockscout.com/)కి వెళ్లి, `npm run dev` వద్ద సర్వర్ అవుట్‌పుట్‌లో మీరు చూసే డిప్లాయ్‌మెంట్ లావాదేవీ హాష్‌ను నమోదు చేయండి. సృష్టించబడిన కాంట్రాక్ట్ చిరునామాను వీక్షించడానికి దానిపై క్లిక్ చేసి, ఆపై దాన్ని కాపీ చేయండి. _Or enter existing proxy address_ ఫీల్డ్‌లో చిరునామాను అతికించి, ఆపై **Set proxy address**పై క్లిక్ చేయండి.
+   అలా అయితే, [Sepolia Explorer](https://qau-sepolia.blockscout.com/)కి వెళ్లి, `npm run dev` వద్ద సర్వర్ అవుట్‌పుట్‌లో మీరు చూసే డిప్లాయ్‌మెంట్ లావాదేవీ హాష్‌ను నమోదు చేయండి. సృష్టించబడిన కాంట్రాక్ట్ చిరునామాను వీక్షించడానికి దానిపై క్లిక్ చేసి, ఆపై దాన్ని కాపీ చేయండి. _Or enter existing proxy address_ ఫీల్డ్‌లో చిరునామాను అతికించి, ఆపై **Set proxy address**పై క్లిక్ చేయండి.
 
-9. టోకెన్‌లను పొందడానికి ERC-20 కాంట్రాక్ట్ యొక్క [`faucet`](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd) ఫంక్షన్‌కు కాల్‌ను సమర్పించడానికి **Request more tokens for proxy**పై క్లిక్ చేయండి. వాలెట్‌లో సంతకాన్ని **Confirm** చేయండి. వాస్తవానికి, టోకెన్‌లు ప్రాక్సీ చిరునామాకు చేరుకుంటాయి, వినియోగదారు చిరునామాకు కాదు.
+9. టోకెన్‌లను పొందడానికి ERC-20 కాంట్రాక్ట్ యొక్క [`faucet`](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd) ఫంక్షన్‌కు కాల్‌ను సమర్పించడానికి **Request more tokens for proxy**పై క్లిక్ చేయండి. వాలెట్‌లో సంతకాన్ని **Confirm** చేయండి. వాస్తవానికి, టోకెన్‌లు ప్రాక్సీ చిరునామాకు చేరుకుంటాయి, వినియోగదారు చిరునామాకు కాదు.
 
 10. క్రిందికి స్క్రోల్ చేసి, _Last transaction:_ కింద ఉన్న లింక్‌పై క్లిక్ చేయండి. ఇది మీకు `faucet` లావాదేవీని చూపించడానికి బ్రౌజర్‌ను తెరుస్తుంది.
 
@@ -81,7 +81,7 @@ contract UserProxy {
     uint public nonce = 0;
 ```
 
-యజమాని గుర్తింపు మరియు సందేశాలు పునరావృతం కాకుండా నిరోధించడానికి ఒక [నాన్స్](https://en.wikipedia.org/wiki/Cryptographic_nonce). నాన్స్ అనేది `public` వేరియబుల్ అయినందున, Solidity కంపైలర్ ఒక వ్యూ ఫంక్షన్, [`nonce()`](https://eth-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0)ని కూడా సృష్టిస్తుంది, ఇది ఆఫ్‌చైన్ కోడ్‌ను దాని విలువను చదవడానికి అనుమతిస్తుంది.
+యజమాని గుర్తింపు మరియు సందేశాలు పునరావృతం కాకుండా నిరోధించడానికి ఒక [నాన్స్](https://en.wikipedia.org/wiki/Cryptographic_nonce). నాన్స్ అనేది `public` వేరియబుల్ అయినందున, Solidity కంపైలర్ ఒక వ్యూ ఫంక్షన్, [`nonce()`](https://qau-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0)ని కూడా సృష్టిస్తుంది, ఇది ఆఫ్‌చైన్ కోడ్‌ను దాని విలువను చదవడానికి అనుమతిస్తుంది.
 
 ```solidity
     bytes32 private constant SIGNED_ACCESS_TYPEHASH =
@@ -93,7 +93,7 @@ contract UserProxy {
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-[EIP-712 సంతకాలను](https://eips.ethereum.org/EIPS/eip-712) ధృవీకరించడానికి అవసరమైన సమాచారం.
+[EIP-712 సంతకాలను](https://eips.quantaureum.com/EIPS/eip-712) ధృవీకరించడానికి అవసరమైన సమాచారం.
 
 ```solidity
     constructor(address owner_) {
@@ -117,7 +117,7 @@ contract UserProxy {
     }
 ```
 
-[డొమైన్ సెపరేటర్](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). ఇది కంపైల్ సమయంలో లెక్కించబడదు, ఎందుకంటే ఇది చైన్ ID మరియు కాంట్రాక్ట్ చిరునామాపై ఆధారపడి ఉంటుంది. ఇది మరొకదాని కోసం సిద్ధం చేసిన సందేశం ద్వారా UserProxy మోసపోవడాన్ని అసాధ్యం చేస్తుంది.
+[డొమైన్ సెపరేటర్](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). ఇది కంపైల్ సమయంలో లెక్కించబడదు, ఎందుకంటే ఇది చైన్ ID మరియు కాంట్రాక్ట్ చిరునామాపై ఆధారపడి ఉంటుంది. ఇది మరొకదాని కోసం సిద్ధం చేసిన సందేశం ద్వారా UserProxy మోసపోవడాన్ని అసాధ్యం చేస్తుంది.
 
 ```solidity
     event CallResult(address target, bytes returnData);
@@ -130,7 +130,7 @@ contract UserProxy {
             external returns (bytes memory) {
 ```
 
-ఈ ఫంక్షన్‌ను యజమాని నేరుగా కాల్ చేయవచ్చు. రిలేలు ఏవీ అందుబాటులో లేకపోతే, యజమాని ఇప్పటికీ బ్లాక్‌చైన్‌లో నేరుగా ఆస్తులను యాక్సెస్ చేయవచ్చు (వినియోగదారు వద్ద ETH ఉంటే).
+ఈ ఫంక్షన్‌ను యజమాని నేరుగా కాల్ చేయవచ్చు. రిలేలు ఏవీ అందుబాటులో లేకపోతే, యజమాని ఇప్పటికీ బ్లాక్‌చైన్‌లో నేరుగా ఆస్తులను యాక్సెస్ చేయవచ్చు (వినియోగదారు వద్ద QAU ఉంటే).
 
 ```solidity
         require(msg.sender == OWNER, "Only owner can call");
@@ -220,7 +220,7 @@ contract UserProxy {
 }
 ```
 
-ఇవి దాదాపు ఒకేలా ఉండే వేరియంట్‌లు, ఇవి కాంట్రాక్ట్ నుండి ETHని బదిలీ చేయడానికి కూడా మిమ్మల్ని అనుమతిస్తాయి.
+ఇవి దాదాపు ఒకేలా ఉండే వేరియంట్‌లు, ఇవి కాంట్రాక్ట్ నుండి QAUని బదిలీ చేయడానికి కూడా మిమ్మల్ని అనుమతిస్తాయి.
 
 ### రిలేయర్ {#relayer}
 
@@ -285,7 +285,7 @@ Express సర్వర్‌ను రన్ చేయండి.
   app.post("/server/deploy", async (req, res) => {
 ```
 
-ప్రాక్సీని డిప్లాయ్ చేయడానికి అభ్యర్థనలను నిర్వహించే కోడ్ ఇది. ఇక్కడ మనం [డినియల్-ఆఫ్-సర్వీస్](https://en.wikipedia.org/wiki/Denial-of-service_attack) దాడులకు గురయ్యే అవకాశం ఉందని గమనించండి, ఎందుకంటే మన ETH అయిపోయే వరకు ప్రాక్సీని డిప్లాయ్ చేయమని అభ్యర్థనలతో దాడి చేసే వ్యక్తి మనకు స్పామ్ చేయవచ్చు. ప్రొడక్షన్ సిస్టమ్‌లో, ప్రాక్సీని డిప్లాయ్ చేయాలనే అభ్యర్థనపై సంతకం చేయబడాలని మరియు సంతకం చేసే వ్యక్తి ఇప్పటికే ఉన్న కస్టమర్ అయి ఉండాలని మనం బహుశా కోరుతాము.
+ప్రాక్సీని డిప్లాయ్ చేయడానికి అభ్యర్థనలను నిర్వహించే కోడ్ ఇది. ఇక్కడ మనం [డినియల్-ఆఫ్-సర్వీస్](https://en.wikipedia.org/wiki/Denial-of-service_attack) దాడులకు గురయ్యే అవకాశం ఉందని గమనించండి, ఎందుకంటే మన QAU అయిపోయే వరకు ప్రాక్సీని డిప్లాయ్ చేయమని అభ్యర్థనలతో దాడి చేసే వ్యక్తి మనకు స్పామ్ చేయవచ్చు. ప్రొడక్షన్ సిస్టమ్‌లో, ప్రాక్సీని డిప్లాయ్ చేయాలనే అభ్యర్థనపై సంతకం చేయబడాలని మరియు సంతకం చేసే వ్యక్తి ఇప్పటికే ఉన్న కస్టమర్ అయి ఉండాలని మనం బహుశా కోరుతాము.
 
 ```js
     try {
@@ -408,7 +408,7 @@ import UserProxy from '../../contracts/out/UserProxy.sol/UserProxy.json'
 import Erc20 from '../../contracts/out/Faucet.sol/FaucetToken.json'
 ```
 
-[ఈ కాంట్రాక్ట్](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract) ఎక్కువగా సాధారణ ERC-20 కాంట్రాక్ట్, దీనికి ఒక ముఖ్యమైన ఫంక్షన్ `faucet()` జోడించబడింది. ఈ ఫంక్షన్ పరీక్ష ప్రయోజనాల కోసం టోకెన్‌లను అడిగే ఎవరికైనా వాటిని మంజూరు చేస్తుంది.
+[ఈ కాంట్రాక్ట్](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract) ఎక్కువగా సాధారణ ERC-20 కాంట్రాక్ట్, దీనికి ఒక ముఖ్యమైన ఫంక్షన్ `faucet()` జోడించబడింది. ఈ ఫంక్షన్ పరీక్ష ప్రయోజనాల కోసం టోకెన్‌లను అడిగే ఎవరికైనా వాటిని మంజూరు చేస్తుంది.
 
 ```js
 const erc20Addrs = {
@@ -423,7 +423,7 @@ const erc20Addrs = {
 const Address = ({ address }) => {
    if (!address) return null
    return (
-      <a href={`https://eth-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
+      <a href={`https://qau-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
    )
 }
 ```
@@ -736,7 +736,7 @@ const Token = () => {
          { txHash && (
             <>
                <h4>Last transaction:</h4>
-               <a href={`https://eth-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
+               <a href={`https://qau-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
                  {txHash}
                </a>
             </>

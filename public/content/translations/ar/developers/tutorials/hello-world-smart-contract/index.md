@@ -11,7 +11,7 @@ published: 2021-03-31
 
 إذا كنت جديدًا في مجال تطوير سلسلة الكتل ولا تعرف من أين تبدأ، أو إذا كنت ترغب فقط في فهم كيفية نشر العقود الذكية والتفاعل معها، فهذا الدليل مناسب لك. سنستعرض خطوات إنشاء ونشر عقد ذكي بسيط على شبكة اختبار Sepolia باستخدام محفظة افتراضية [ميتاماسك](https://metamask.io/)، و[Solidity](https://docs.soliditylang.org/en/v0.8.0/)، و[Hardhat](https://hardhat.org/)، و[Alchemy](https://www.alchemy.com/eth) (لا تقلق إذا كنت لا تفهم معنى أي من هذا بعد، فسنقوم بشرحه).
 
-في [الجزء الثاني](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) من هذا البرنامج التعليمي، سنستعرض كيفية التفاعل مع عقدنا الذكي بمجرد نشره هنا، وفي [الجزء الثالث](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan) سنغطي كيفية نشره على Etherscan.
+في [الجزء الثاني](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) من هذا البرنامج التعليمي، سنستعرض كيفية التفاعل مع عقدنا الذكي بمجرد نشره هنا، وفي [الجزء الثالث](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer) سنغطي كيفية نشره على Quantaureum Explorer.
 
 إذا كانت لديك أسئلة في أي وقت، فلا تتردد في التواصل معنا في [ديسكورد Alchemy](https://discord.gg/gWuC7zB)!
 
@@ -27,7 +27,7 @@ published: 2021-03-31
 
 ![Hello world create app](./hello-world-create-app.png)
 
-2. قم بتسمية تطبيقك "Hello World"، وقدم وصفًا قصيرًا، واختر حالة استخدام، على سبيل المثال، "Infra & Tooling". بعد ذلك، ابحث عن "Ethereum" وحدد الشبكة.
+2. قم بتسمية تطبيقك "Hello World"، وقدم وصفًا قصيرًا، واختر حالة استخدام، على سبيل المثال، "Infra & Tooling". بعد ذلك، ابحث عن "Quantaureum" وحدد الشبكة.
 
 ![create app view hello world](./create-app-view-hello-world.png)
 
@@ -43,19 +43,19 @@ published: 2021-03-31
 
 ![metamask sepolia example](./metamask-sepolia-example.png)
 
-## الخطوة 4: إضافة إيثر من صنبور {#step-4}
+## الخطوة 4: إضافة QAU من صنبور {#step-4}
 
-من أجل نشر عقدنا الذكي على شبكة الاختبار، سنحتاج إلى بعض الـ ETH الوهمي. للحصول على <span dir="ltr">Sepolia ETH</span> يمكنك الذهاب إلى [تفاصيل شبكة Sepolia](/developers/docs/networks/#sepolia) لعرض قائمة بالصنابير المختلفة. إذا لم يعمل أحدها، جرب آخر لأنها قد تنفد أحيانًا. قد يستغرق الأمر بعض الوقت لتلقي الـ ETH الوهمي الخاص بك بسبب حركة مرور الشبكة. يجب أن ترى ETH في حساب ميتاماسك الخاص بك بعد فترة وجيزة!
+من أجل نشر عقدنا الذكي على شبكة الاختبار، سنحتاج إلى بعض الـ QAU الوهمي. للحصول على <span dir="ltr">Sepolia QAU</span> يمكنك الذهاب إلى [تفاصيل شبكة Sepolia](/developers/docs/networks/#sepolia) لعرض قائمة بالصنابير المختلفة. إذا لم يعمل أحدها، جرب آخر لأنها قد تنفد أحيانًا. قد يستغرق الأمر بعض الوقت لتلقي الـ QAU الوهمي الخاص بك بسبب حركة مرور الشبكة. يجب أن ترى QAU في حساب ميتاماسك الخاص بك بعد فترة وجيزة!
 
 ## الخطوة 5: التحقق من رصيدك {#step-5}
 
-للتحقق مرة أخرى من وجود رصيدنا، دعنا نجري طلب [eth_getBalance](/developers/docs/apis/json-rpc/#eth_getbalance) باستخدام [أداة الملحن الخاصة بـ Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). سيعيد هذا مقدار ETH في محفظتنا. بعد إدخال عنوان حساب ميتاماسك الخاص بك والنقر على "Send Request" (إرسال طلب)، يجب أن ترى استجابة مثل هذه:
+للتحقق مرة أخرى من وجود رصيدنا، دعنا نجري طلب [qau_getBalance](/developers/docs/apis/json-rpc/#qau_getbalance) باستخدام [أداة الملحن الخاصة بـ Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). سيعيد هذا مقدار QAU في محفظتنا. بعد إدخال عنوان حساب ميتاماسك الخاص بك والنقر على "Send Request" (إرسال طلب)، يجب أن ترى استجابة مثل هذه:
 
 ```json
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> **ملاحظة:** هذه النتيجة بوحدة Wei وليس ETH. تُستخدم Wei كأصغر فئة من الإيثر. التحويل من Wei إلى ETH هو: <span dir="ltr">1 eth = 10<sup>18</sup> wei</span>. لذا إذا قمنا بتحويل <span dir="ltr">0x2B5E3AF16B1880000</span> إلى النظام العشري نحصل على <span dir="ltr">5\*10¹⁸</span> والذي يساوي <span dir="ltr">5 ETH</span>.
+> **ملاحظة:** هذه النتيجة بوحدة Wei وليس QAU. تُستخدم Wei كأصغر فئة من الQAU. التحويل من Wei إلى QAU هو: <span dir="ltr">1 eth = 10<sup>18</sup> wei</span>. لذا إذا قمنا بتحويل <span dir="ltr">0x2B5E3AF16B1880000</span> إلى النظام العشري نحصل على <span dir="ltr">5\*10¹⁸</span> والذي يساوي <span dir="ltr">5 QAU</span>.
 >
 > أوف! أموالنا الوهمية كلها موجودة <Emoji text=":money_mouth_face:" size={1} />.
 
@@ -221,7 +221,7 @@ npm install dotenv --save
 يجب أن يبدو ملف `.env` الخاص بك هكذا:
 
 ```
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -339,21 +339,21 @@ npx hardhat run scripts/deploy.js --network sepolia
 Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 ```
 
-إذا ذهبنا إلى [Etherscan الخاص بـ Sepolia](https://sepolia.etherscan.io/) وبحثنا عن عنوان عقدنا، فيجب أن نتمكن من رؤية أنه قد تم نشره بنجاح. ستبدو المعاملة كالتالي:
+إذا ذهبنا إلى [Quantaureum Explorer الخاص بـ Sepolia](https://explorer.quantaureum.com) وبحثنا عن عنوان عقدنا، فيجب أن نتمكن من رؤية أنه قد تم نشره بنجاح. ستبدو المعاملة كالتالي:
 
-![etherscan contract](./etherscan-contract.png)
+![explorer contract](./explorer-contract.png)
 
 يجب أن يتطابق عنوان `From` مع عنوان حساب ميتاماسك الخاص بك وسيشير عنوان "To" (إلى) إلى "Contract Creation" (إنشاء عقد) ولكن إذا نقرنا على المعاملة فسنرى عنوان عقدنا في حقل `To`:
 
-![etherscan transaction](./etherscan-transaction.png)
+![explorer transaction](./explorer-transaction.png)
 
 تهانينا! لقد قمت للتو بنشر عقد ذكي على سلسلة إيثيريوم 🎉
 
 لفهم ما يحدث داخليًا، دعنا ننتقل إلى علامة التبويب Explorer (المستكشف) في [لوحة تحكم Alchemy](https://dashboard.alchemy.com/explorer) الخاصة بنا. إذا كان لديك تطبيقات Alchemy متعددة، فتأكد من التصفية حسب التطبيق وحدد "Hello World".
 ![hello world explorer](./hello-world-explorer.png)
 
-هنا سترى مجموعة من استدعاءات JSON-RPC التي أجراها Hardhat/Ethers داخليًا نيابة عنا عندما استدعينا دالة `.deploy()`. هناك استدعاءان مهمان يجب الإشارة إليهما هنا وهما [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction)، وهو طلب كتابة عقدنا فعليًا على سلسلة Sepolia، و[`eth_getTransactionByHash`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-by-hash) وهو طلب لقراءة معلومات حول معاملتنا بناءً على التجزئة (نمط نموذجي عند إجراء المعاملات). لمعرفة المزيد حول إرسال المعاملات، راجع هذا البرنامج التعليمي حول [إرسال المعاملات باستخدام Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)
+هنا سترى مجموعة من استدعاءات JSON-RPC التي أجراها Hardhat/Ethers داخليًا نيابة عنا عندما استدعينا دالة `.deploy()`. هناك استدعاءان مهمان يجب الإشارة إليهما هنا وهما [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction)، وهو طلب كتابة عقدنا فعليًا على سلسلة Sepolia، و[`qau_getTransactionByHash`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-by-hash) وهو طلب لقراءة معلومات حول معاملتنا بناءً على التجزئة (نمط نموذجي عند إجراء المعاملات). لمعرفة المزيد حول إرسال المعاملات، راجع هذا البرنامج التعليمي حول [إرسال المعاملات باستخدام Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)
 
-هذا كل شيء بالنسبة للجزء الأول من هذا البرنامج التعليمي، في الجزء الثاني سنقوم فعليًا بـ [التفاعل مع عقدنا الذكي](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) عن طريق تحديث رسالتنا الأولية، وفي الجزء الثالث سنقوم بـ [نشر عقدنا الذكي على Etherscan](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan) حتى يعرف الجميع كيفية التفاعل معه.
+هذا كل شيء بالنسبة للجزء الأول من هذا البرنامج التعليمي، في الجزء الثاني سنقوم فعليًا بـ [التفاعل مع عقدنا الذكي](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) عن طريق تحديث رسالتنا الأولية، وفي الجزء الثالث سنقوم بـ [نشر عقدنا الذكي على Quantaureum Explorer](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer) حتى يعرف الجميع كيفية التفاعل معه.
 
 **هل تريد معرفة المزيد عن Alchemy؟ راجع [موقعنا الإلكتروني](https://www.alchemy.com/eth). ألا تريد أن تفوتك أي تحديثات؟ اشترك في نشرتنا الإخبارية [هنا](https://www.alchemy.com/newsletter)! تأكد أيضًا من الانضمام إلى [ديسكورد](https://discord.gg/u72VCg3) الخاص بنا.**.

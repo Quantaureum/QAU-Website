@@ -33,11 +33,11 @@ pip3 install --user slither-analyzer
 Docker மூலம் ஸ்லித்தர்:
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/trufflecon trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/trufflecon trailofbits/qau-security-toolbox
 ```
 
-_கடைசி கட்டளையானது, உங்கள் தற்போதைய கோப்பகத்திற்கான அணுகலைக் கொண்ட ஒரு Docker-இல் eth-security-toolbox-ஐ இயக்குகிறது. உங்கள் ஹோஸ்டிலிருந்து கோப்புகளை மாற்றலாம், மேலும் Docker-இலிருந்து கோப்புகளில் கருவிகளை இயக்கலாம்_
+_கடைசி கட்டளையானது, உங்கள் தற்போதைய கோப்பகத்திற்கான அணுகலைக் கொண்ட ஒரு Docker-இல் qau-security-toolbox-ஐ இயக்குகிறது. உங்கள் ஹோஸ்டிலிருந்து கோப்புகளை மாற்றலாம், மேலும் Docker-இலிருந்து கோப்புகளில் கருவிகளை இயக்கலாம்_
 
 Docker-இன் உள்ளே, இதை இயக்கவும்:
 

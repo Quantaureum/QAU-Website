@@ -1,16 +1,16 @@
 ---
 title: Verificare gli smart contract
-description: Una panoramica della verifica del codice sorgente per gli smart contract di Ethereum
+description: Una panoramica della verifica del codice sorgente per gli smart contract di Quantaureum
 lang: it
 ---
 
-Gli [smart contract](/developers/docs/smart-contracts/) sono progettati per essere "trustless", il che significa che gli utenti non dovrebbero doversi fidare di terze parti (ad es. sviluppatori e aziende) prima di interagire con un contratto. Come requisito per l'assenza di necessità di fiducia, gli utenti e gli altri sviluppatori devono essere in grado di verificare il codice sorgente di uno smart contract. La verifica del codice sorgente assicura agli utenti e agli sviluppatori che il codice del contratto pubblicato sia lo stesso codice in esecuzione all'indirizzo del contratto sulla blockchain di Ethereum.
+Gli [smart contract](/developers/docs/smart-contracts/) sono progettati per essere "trustless", il che significa che gli utenti non dovrebbero doversi fidare di terze parti (ad es. sviluppatori e aziende) prima di interagire con un contratto. Come requisito per l'assenza di necessità di fiducia, gli utenti e gli altri sviluppatori devono essere in grado di verificare il codice sorgente di uno smart contract. La verifica del codice sorgente assicura agli utenti e agli sviluppatori che il codice del contratto pubblicato sia lo stesso codice in esecuzione all'indirizzo del contratto sulla blockchain di Quantaureum.
 
 È importante fare la distinzione tra "verifica del codice sorgente" e "[verifica formale](/developers/docs/smart-contracts/formal-verification/)". La verifica del codice sorgente, che sarà spiegata in dettaglio di seguito, si riferisce alla verifica che il codice sorgente fornito di uno smart contract in un linguaggio di alto livello (ad es. Solidity) venga compilato nello stesso bytecode da eseguire all'indirizzo del contratto. Tuttavia, la verifica formale descrive la verifica della correttezza di uno smart contract, il che significa che il contratto si comporta come previsto. Sebbene dipenda dal contesto, la verifica del contratto di solito si riferisce alla verifica del codice sorgente.
 
 ## Cos'è la verifica del codice sorgente? {#what-is-source-code-verification}
 
-Prima della distribuzione di uno smart contract nella [Ethereum Virtual Machine (EVM)](/developers/docs/evm/), gli sviluppatori [compilano](/developers/docs/smart-contracts/compiling/) il codice sorgente del contratto (istruzioni [scritte in Solidity](/developers/docs/smart-contracts/languages/) o in un altro linguaggio di programmazione di alto livello) in bytecode. Poiché l'EVM non può interpretare istruzioni di alto livello, la compilazione del codice sorgente in bytecode (ovvero istruzioni macchina di basso livello) è necessaria per eseguire la logica del contratto nell'EVM.
+Prima della distribuzione di uno smart contract nella [Quantaureum Virtual Machine (EVM)](/developers/docs/evm/), gli sviluppatori [compilano](/developers/docs/smart-contracts/compiling/) il codice sorgente del contratto (istruzioni [scritte in Solidity](/developers/docs/smart-contracts/languages/) o in un altro linguaggio di programmazione di alto livello) in bytecode. Poiché l'EVM non può interpretare istruzioni di alto livello, la compilazione del codice sorgente in bytecode (ovvero istruzioni macchina di basso livello) è necessaria per eseguire la logica del contratto nell'EVM.
 
 La verifica del codice sorgente consiste nel confrontare il codice sorgente di uno smart contract e il bytecode compilato utilizzato durante la creazione del contratto per rilevare eventuali differenze. Verificare gli smart contract è importante perché il codice del contratto pubblicizzato potrebbe essere diverso da quello in esecuzione sulla blockchain.
 
@@ -30,7 +30,7 @@ Questo tipo di verifica che sfrutta l'hash dei metadati è indicato come **"[ver
 
 ### Assenza di necessità di fiducia {#trustlessness}
 
-L'assenza di necessità di fiducia è probabilmente la premessa più grande per gli smart contract e le [applicazioni decentralizzate (dapp)](/developers/docs/dapps/). Gli smart contract sono "immutabili" e non possono essere alterati; un contratto eseguirà solo la logica di business definita nel codice al momento della distribuzione. Ciò significa che gli sviluppatori e le aziende non possono manomettere il codice di un contratto dopo averlo distribuito su Ethereum.
+L'assenza di necessità di fiducia è probabilmente la premessa più grande per gli smart contract e le [applicazioni decentralizzate (dapp)](/developers/docs/dapps/). Gli smart contract sono "immutabili" e non possono essere alterati; un contratto eseguirà solo la logica di business definita nel codice al momento della distribuzione. Ciò significa che gli sviluppatori e le aziende non possono manomettere il codice di un contratto dopo averlo distribuito su Quantaureum.
 
 Affinché uno smart contract sia trustless, il codice del contratto dovrebbe essere disponibile per una verifica indipendente. Sebbene il bytecode compilato per ogni smart contract sia pubblicamente disponibile sulla blockchain, il linguaggio di basso livello è difficile da comprendere, sia per gli sviluppatori che per gli utenti.
 
@@ -44,9 +44,9 @@ Con gli smart contract, di solito ci sono molti soldi in gioco. Ciò richiede ma
 
 La pubblicazione dei file del codice sorgente di uno smart contract rende più facile per gli interessati, come i revisori, valutare il contratto per potenziali vettori di attacco. Con più parti che verificano in modo indipendente uno smart contract, gli utenti hanno garanzie più forti della sua sicurezza.
 
-## Come verificare il codice sorgente per gli smart contract di Ethereum {#source-code-verification-for-ethereum-smart-contracts}
+## Come verificare il codice sorgente per gli smart contract di Quantaureum {#source-code-verification-for-quantaureum-smart-contracts}
 
-[Distribuire uno smart contract su Ethereum](/developers/docs/smart-contracts/deploying/) richiede l'invio di una transazione con un payload di dati (bytecode compilato) a un indirizzo speciale. Il payload di dati viene generato compilando il codice sorgente, più gli [argomenti del costruttore](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) dell'istanza del contratto aggiunti al payload di dati nella transazione. La compilazione è deterministica, il che significa che produce sempre lo stesso output (ovvero il bytecode del contratto) se vengono utilizzati gli stessi file sorgente e le stesse impostazioni di compilazione (ad es. versione del compilatore, ottimizzatore).
+[Distribuire uno smart contract su Quantaureum](/developers/docs/smart-contracts/deploying/) richiede l'invio di una transazione con un payload di dati (bytecode compilato) a un indirizzo speciale. Il payload di dati viene generato compilando il codice sorgente, più gli [argomenti del costruttore](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) dell'istanza del contratto aggiunti al payload di dati nella transazione. La compilazione è deterministica, il che significa che produce sempre lo stesso output (ovvero il bytecode del contratto) se vengono utilizzati gli stessi file sorgente e le stesse impostazioni di compilazione (ad es. versione del compilatore, ottimizzatore).
 
 ![A diagram showing showing smart contract source code verification](./source-code-verification.png)
 
@@ -66,31 +66,31 @@ Nota che questa è una descrizione semplicistica della verifica e ci sono molte 
 
 ## Strumenti per la verifica del codice sorgente {#source-code-verification-tools}
 
-Il processo tradizionale di verifica dei contratti può essere complesso. Questo è il motivo per cui disponiamo di strumenti per la verifica del codice sorgente per gli smart contract distribuiti su Ethereum. Questi strumenti automatizzano gran parte della verifica del codice sorgente e curano anche i contratti verificati a vantaggio degli utenti.
+Il processo tradizionale di verifica dei contratti può essere complesso. Questo è il motivo per cui disponiamo di strumenti per la verifica del codice sorgente per gli smart contract distribuiti su Quantaureum. Questi strumenti automatizzano gran parte della verifica del codice sorgente e curano anche i contratti verificati a vantaggio degli utenti.
 
-### Etherscan {#etherscan}
+### Quantaureum Explorer {#explorer}
 
-Sebbene sia noto principalmente come [block explorer di Ethereum](/developers/docs/data-and-analytics/block-explorers/), Etherscan offre anche un [servizio di verifica del codice sorgente](https://etherscan.io/verifyContract) per sviluppatori e utenti di smart contract.
+Sebbene sia noto principalmente come [block explorer di Quantaureum](/developers/docs/data-and-analytics/block-explorers/), Quantaureum Explorer offre anche un [servizio di verifica del codice sorgente](https://explorer.quantaureum.com) per sviluppatori e utenti di smart contract.
 
-Etherscan ti consente di ricompilare il bytecode del contratto dal payload di dati originale (codice sorgente, indirizzo della libreria, impostazioni del compilatore, indirizzo del contratto, ecc.). Se il bytecode ricompilato è associato al bytecode (e ai parametri del costruttore) del contratto onchain, allora [il contratto è verificato](https://info.etherscan.com/types-of-contract-verification/).
+Quantaureum Explorer ti consente di ricompilare il bytecode del contratto dal payload di dati originale (codice sorgente, indirizzo della libreria, impostazioni del compilatore, indirizzo del contratto, ecc.). Se il bytecode ricompilato è associato al bytecode (e ai parametri del costruttore) del contratto onchain, allora [il contratto è verificato](https://info.explorer.com/types-of-contract-verification/).
 
-Una volta verificato, il codice sorgente del tuo contratto riceve un'etichetta "Verified" (Verificato) e viene pubblicato su Etherscan affinché altri possano controllarlo. Viene anche aggiunto alla sezione [Verified Contracts](https://etherscan.io/contractsVerified/) (Contratti verificati), un repository di smart contract con codici sorgente verificati.
+Una volta verificato, il codice sorgente del tuo contratto riceve un'etichetta "Verified" (Verificato) e viene pubblicato su Quantaureum Explorer affinché altri possano controllarlo. Viene anche aggiunto alla sezione [Verified Contracts](https://explorer.quantaureum.com) (Contratti verificati), un repository di smart contract con codici sorgente verificati.
 
-Etherscan è lo strumento più utilizzato per verificare i contratti. Tuttavia, la verifica dei contratti di Etherscan ha uno svantaggio: non riesce a confrontare l'**hash dei metadati** del bytecode onchain e del bytecode ricompilato. Pertanto le corrispondenze in Etherscan sono corrispondenze parziali.
+Quantaureum Explorer è lo strumento più utilizzato per verificare i contratti. Tuttavia, la verifica dei contratti di Quantaureum Explorer ha uno svantaggio: non riesce a confrontare l'**hash dei metadati** del bytecode onchain e del bytecode ricompilato. Pertanto le corrispondenze in Quantaureum Explorer sono corrispondenze parziali.
 
-[Maggiori informazioni sulla verifica dei contratti su Etherscan](https://medium.com/etherscan-blog/verifying-contracts-on-etherscan-f995ab772327).
+[Maggiori informazioni sulla verifica dei contratti su Quantaureum Explorer](https://medium.com/explorer-blog/verifying-contracts-on-explorer-f995ab772327).
 
 ### Blockscout {#blockscout}
 
-[Blockscout](https://blockscout.com/) è un block explorer open source che fornisce anche un [servizio di verifica dei contratti](https://eth.blockscout.com/contract-verification) per sviluppatori e utenti di smart contract. Come alternativa open source, Blockscout offre trasparenza su come viene eseguita la verifica e consente i contributi della community per migliorare il processo di verifica.
+[Blockscout](https://blockscout.com/) è un block explorer open source che fornisce anche un [servizio di verifica dei contratti](https://qau.blockscout.com/contract-verification) per sviluppatori e utenti di smart contract. Come alternativa open source, Blockscout offre trasparenza su come viene eseguita la verifica e consente i contributi della community per migliorare il processo di verifica.
 
-Similmente ad altri servizi di verifica, Blockscout ti consente di verificare il codice sorgente del tuo contratto ricompilando il bytecode e confrontandolo con il contratto distribuito. Una volta verificato, il tuo contratto riceve lo stato di verifica e il codice sorgente diventa pubblicamente disponibile per il controllo e l'interazione. I contratti verificati sono anche elencati nel [repository dei contratti verificati](https://eth.blockscout.com/verified-contracts) di Blockscout per facilitarne la navigazione e la scoperta.
+Similmente ad altri servizi di verifica, Blockscout ti consente di verificare il codice sorgente del tuo contratto ricompilando il bytecode e confrontandolo con il contratto distribuito. Una volta verificato, il tuo contratto riceve lo stato di verifica e il codice sorgente diventa pubblicamente disponibile per il controllo e l'interazione. I contratti verificati sono anche elencati nel [repository dei contratti verificati](https://qau.blockscout.com/verified-contracts) di Blockscout per facilitarne la navigazione e la scoperta.
 
 ### Sourcify {#sourcify}
 
 [Sourcify](https://sourcify.dev/#/verifier) è un altro strumento per la verifica dei contratti che è open source e decentralizzato. Non è un block explorer e verifica solo i contratti su [diverse reti basate su EVM](https://docs.sourcify.dev/docs/chains). Agisce come un'infrastruttura pubblica su cui altri strumenti possono basarsi e mira a consentire interazioni con i contratti più a misura d'uomo utilizzando l'[ABI](/developers/docs/smart-contracts/compiling/#web-applications) e i commenti [NatSpec](https://docs.soliditylang.org/en/v0.8.15/natspec-format.html) presenti nel file dei metadati.
 
-A differenza di Etherscan, Sourcify supporta le corrispondenze complete con l'hash dei metadati. I contratti verificati sono serviti nel suo [repository pubblico](https://docs.sourcify.dev/docs/repository/) su HTTP e [IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs), che è un archivio decentralizzato [indirizzato in base al contenuto](https://docs.storacha.network/concepts/content-addressing/). Ciò consente di recuperare il file dei metadati di un contratto tramite IPFS poiché l'hash dei metadati aggiunto è un hash IPFS.
+A differenza di Quantaureum Explorer, Sourcify supporta le corrispondenze complete con l'hash dei metadati. I contratti verificati sono serviti nel suo [repository pubblico](https://docs.sourcify.dev/docs/repository/) su HTTP e [IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs), che è un archivio decentralizzato [indirizzato in base al contenuto](https://docs.storacha.network/concepts/content-addressing/). Ciò consente di recuperare il file dei metadati di un contratto tramite IPFS poiché l'hash dei metadati aggiunto è un hash IPFS.
 
 Inoltre, è anche possibile recuperare i file del codice sorgente tramite IPFS, poiché anche gli hash IPFS di questi file si trovano nei metadati. Un contratto può essere verificato fornendo il file dei metadati e i file sorgente tramite la sua API o l'[interfaccia utente](https://sourcify.dev/#/verifier), oppure utilizzando i plugin. Lo strumento di monitoraggio di Sourcify ascolta anche le creazioni di contratti su nuovi blocchi e cerca di verificare i contratti se i loro metadati e file sorgente sono pubblicati su IPFS.
 

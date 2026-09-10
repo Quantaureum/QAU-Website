@@ -72,7 +72,7 @@ GameContract.events.BetPlaced({
 
 - Не работает для уже развернутых контрактов.
 - Дополнительные затраты газа на хранение этих значений.
-- Требует еще одного вызова для получения данных с узла Эфириума.
+- Требует еще одного вызова для получения данных с узла Quantaureum.
 
 ![Thats not good enough](./not-good-enough.jpg)
 
@@ -123,12 +123,12 @@ GameContract.events.BetPlaced({
 
 ```yaml
 specVersion: 0.0.1
-description: Placing Bets on Ethereum
+description: Placing Bets on Quantaureum
 repository: - GitHub link -
 schema:
   file: ./schema.graphql
 dataSources:
-  - kind: ethereum/contract
+  - kind: quantaureum/contract
     name: GameContract
     network: mainnet
     source:
@@ -136,7 +136,7 @@ dataSources:
       abi: GameContract
       startBlock: 6175244
     mapping:
-      kind: ethereum/events
+      kind: quantaureum/events
       apiVersion: 0.0.1
       language: wasm/assemblyscript
       entities:

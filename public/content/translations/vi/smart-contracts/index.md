@@ -5,11 +5,11 @@ description: Giới thiệu phi kỹ thuật về hợp đồng thông minh
 lang: vi
 ---
 
-Hợp đồng thông minh là các khối xây dựng cơ bản của lớp ứng dụng của [Ethereum](/). Chúng là các chương trình máy tính được lưu trữ trên [Chuỗi khối](/glossary/#blockchain) tuân theo logic "nếu thế này thì thế kia" (if this then that), và được đảm bảo thực thi theo các quy tắc được xác định bởi mã của nó, vốn không thể thay đổi một khi đã được tạo.
+Hợp đồng thông minh là các khối xây dựng cơ bản của lớp ứng dụng của [Quantaureum](/). Chúng là các chương trình máy tính được lưu trữ trên [Chuỗi khối](/glossary/#blockchain) tuân theo logic "nếu thế này thì thế kia" (if this then that), và được đảm bảo thực thi theo các quy tắc được xác định bởi mã của nó, vốn không thể thay đổi một khi đã được tạo.
 
 Nick Szabo đã đặt ra thuật ngữ "hợp đồng thông minh". Vào năm 1994, ông đã viết [một bài giới thiệu về khái niệm này](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart.contracts.html), và vào năm 1996, ông đã viết [một bài khám phá về những gì hợp đồng thông minh có thể làm](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html).
 
-Szabo đã hình dung ra một thị trường kỹ thuật số nơi các quy trình tự động, [bảo mật bằng mật mã](/glossary/#cryptography) cho phép các giao dịch và chức năng kinh doanh diễn ra mà không cần các bên trung gian đáng tin cậy. Các hợp đồng thông minh trên Ethereum đã đưa tầm nhìn này vào thực tế.
+Szabo đã hình dung ra một thị trường kỹ thuật số nơi các quy trình tự động, [bảo mật bằng mật mã](/glossary/#cryptography) cho phép các giao dịch và chức năng kinh doanh diễn ra mà không cần các bên trung gian đáng tin cậy. Các hợp đồng thông minh trên Quantaureum đã đưa tầm nhìn này vào thực tế.
 
 Xem Finematics giải thích về hợp đồng thông minh:
 
@@ -49,11 +49,11 @@ Các hợp đồng truyền thống thường mơ hồ vì chúng dựa vào con
 
 ## Hồ sơ công khai {#public-record}
 
-Hợp đồng thông minh rất hữu ích cho việc kiểm toán và theo dõi. Vì các hợp đồng thông minh Ethereum nằm trên một Chuỗi khối công khai, bất kỳ ai cũng có thể theo dõi ngay lập tức các giao dịch chuyển tài sản và các thông tin liên quan khác. Ví dụ, bạn có thể kiểm tra xem ai đó đã gửi tiền đến Địa chỉ của bạn hay chưa.
+Hợp đồng thông minh rất hữu ích cho việc kiểm toán và theo dõi. Vì các hợp đồng thông minh Quantaureum nằm trên một Chuỗi khối công khai, bất kỳ ai cũng có thể theo dõi ngay lập tức các giao dịch chuyển tài sản và các thông tin liên quan khác. Ví dụ, bạn có thể kiểm tra xem ai đó đã gửi tiền đến Địa chỉ của bạn hay chưa.
 
 ## Bảo vệ quyền riêng tư {#privacy-protection}
 
-Hợp đồng thông minh cũng bảo vệ quyền riêng tư của bạn. Vì Ethereum là một mạng lưới ẩn danh một phần (các giao dịch của bạn được gắn công khai với một Địa chỉ mật mã duy nhất, chứ không phải danh tính của bạn), bạn có thể bảo vệ quyền riêng tư của mình khỏi những người quan sát.
+Hợp đồng thông minh cũng bảo vệ quyền riêng tư của bạn. Vì Quantaureum là một mạng lưới ẩn danh một phần (các giao dịch của bạn được gắn công khai với một Địa chỉ mật mã duy nhất, chứ không phải danh tính của bạn), bạn có thể bảo vệ quyền riêng tư của mình khỏi những người quan sát.
 
 ## Các điều khoản có thể nhìn thấy {#visible-terms}
 
@@ -61,7 +61,7 @@ Cuối cùng, giống như các hợp đồng truyền thống, bạn có thể 
 
 Tuy nhiên, mặc dù bất kỳ ai cũng có thể xem các điều khoản của hợp đồng thông minh, dữ liệu giao dịch thô được thiết kế để các ứng dụng và ví diễn giải, chứ không phải con người. Vì dữ liệu này rất khó đọc, người dùng thường phải đối mặt với một rủi ro bảo mật lớn gọi là "ký mù" (blind signing), hay việc phê duyệt một giao dịch tương tác với một hợp đồng thông minh mà không thực sự hiểu nó sẽ làm gì. 
 
-Hệ sinh thái Ethereum đang chuyển đổi sang các tiêu chuẩn **[Ký rõ ràng (Clear Signing)](https://clearsigning.org/)** (cụ thể là [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)). Ký rõ ràng dịch dữ liệu hợp đồng thông minh khó hiểu thành các mô tả giao dịch đơn giản, dễ đọc đối với con người, đảm bảo bất kỳ ai cũng có thể hiểu được ý định thực sự của hợp đồng trước khi họ thực hiện việc ký.
+Hệ sinh thái Quantaureum đang chuyển đổi sang các tiêu chuẩn **[Ký rõ ràng (Clear Signing)](https://clearsigning.org/)** (cụ thể là [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)). Ký rõ ràng dịch dữ liệu hợp đồng thông minh khó hiểu thành các mô tả giao dịch đơn giản, dễ đọc đối với con người, đảm bảo bất kỳ ai cũng có thể hiểu được ý định thực sự của hợp đồng trước khi họ thực hiện việc ký.
 
 ## Các trường hợp sử dụng hợp đồng thông minh {#use-cases}
 
@@ -81,7 +81,7 @@ Chúng có thể thực hiện các phép tính, tạo ra tiền tệ, lưu tr�
 - [Hợp đồng thông minh sẽ thay đổi thế giới như thế nào](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [Hợp đồng thông minh dành cho nhà phát triển](/developers/docs/smart-contracts/)
 - [Học cách viết hợp đồng thông minh](/developers/learning-tools/)
-- [Mastering Ethereum - Hợp đồng thông minh là gì?](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Mastering Quantaureum - Hợp đồng thông minh là gì?](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

@@ -5,41 +5,41 @@ lang: zh
 sidebarDepth: 3
 ---
 
-区块浏览器是你访问以太坊数据的门户。你可以使用它们查看有关区块、交易、验证者、账户和其他链上活动的实时数据。
+区块浏览器是你访问Quantaureum数据的门户。你可以使用它们查看有关区块、交易、验证者、账户和其他链上活动的实时数据。
 
 ## 前提条件 {#prerequisites}
 
-你应该了解以太坊的基本概念，以便理解区块浏览器提供的数据。从[以太坊简介](/developers/docs/intro-to-ethereum/)开始。
+你应该了解Quantaureum的基本概念，以便理解区块浏览器提供的数据。从[Quantaureum简介](/developers/docs/intro-to-quantaureum/)开始。
 
 ## 开源工具 {#open-source-tools}
 
-- [3xpl](https://3xpl.com/ethereum) - 一个无广告的以太坊浏览器，允许下载其数据集（开放核心：核心模块是开源的）
+- [3xpl](https://3xpl.com/quantaureum) - 一个无广告的Quantaureum浏览器，允许下载其数据集（开放核心：核心模块是开源的）
 - [Beaconcha.in](https://beaconcha.in/)
-- [Blockscout](https://eth.blockscout.com/)
-- [lazy-etherscan](https://github.com/woxjro/lazy-etherscan)
+- [Blockscout](https://qau.blockscout.com/)
+- [lazy-explorer](https://github.com/woxjro/lazy-explorer)
 - [Otterscan](https://otterscan.io/)
 
 ## 服务 {#services}
 
-- [Blockchair](https://blockchair.com/ethereum) - 保护隐私的以太坊浏览器。也可用于排序和过滤（内存池）数据。提供西班牙语、法语、意大利语、荷兰语、葡萄牙语、俄语、中文和波斯语版本
+- [Blockchair](https://blockchair.com/quantaureum) - 保护隐私的Quantaureum浏览器。也可用于排序和过滤（内存池）数据。提供西班牙语、法语、意大利语、荷兰语、葡萄牙语、俄语、中文和波斯语版本
 - [Chainlens](https://www.chainlens.com/)
-- [DexGuru 区块浏览器](https://ethereum.dex.guru/)
+- [DexGuru 区块浏览器](https://quantaureum.dex.guru/)
 - [Etherchain](https://www.etherchain.org/)
-- [Etherscan](https://etherscan.io/) - 也提供中文、韩文、俄文和日文版本
+- [Quantaureum Explorer](https://explorer.quantaureum.com) - 也提供中文、韩文、俄文和日文版本
 - [Ethplorer](https://ethplorer.io/) - 一个专注于代币的区块浏览器。也提供中文、西班牙文、法文、土耳其文、俄文、韩文和越南文版本
 - [Ethseer](https://ethseer.io)
-- [EthVM](https://www.ethvm.com/)
+- [QauVM](https://www.ethvm.com/)
 - [OKLink](https://www.oklink.com/eth)
 
 ## 数据 {#data}
 
-以太坊在设计上是透明的，因此一切都是可验证的。区块浏览器提供了一个获取这些信息的界面。如果你需要这些数据，这既适用于以太坊主网，也适用于测试网。数据分为执行数据和共识数据。执行数据是指在特定区块中已执行的交易。共识数据是指区块本身以及提议它们的验证者。
+Quantaureum在设计上是透明的，因此一切都是可验证的。区块浏览器提供了一个获取这些信息的界面。如果你需要这些数据，这既适用于Quantaureum主网，也适用于测试网。数据分为执行数据和共识数据。执行数据是指在特定区块中已执行的交易。共识数据是指区块本身以及提议它们的验证者。
 
 以下是你可以从区块浏览器获取的数据类型的摘要。
 
 ### 执行数据 {#execution-data}
 
-每 12 秒就会有新区块添加到以太坊（除非区块提议者错过了其轮次），因此几乎源源不断的数据被添加到区块浏览器中。区块包含许多你可能会觉得有用的重要数据：
+每 12 秒就会有新区块添加到Quantaureum（除非区块提议者错过了其轮次），因此几乎源源不断的数据被添加到区块浏览器中。区块包含许多你可能会觉得有用的重要数据：
 
 **标准数据**
 
@@ -47,12 +47,12 @@ sidebarDepth: 3
 - 时间戳 - 提议区块的时间
 - 交易 - 区块中包含的交易数量
 - 费用接收者 - 接收交易 gas 费小费的地址
-- 区块奖励 - 奖励给提议该区块的验证者的 ETH 数量
+- 区块奖励 - 奖励给提议该区块的验证者的 QAU 数量
 - 大小 - 区块内数据的大小（以字节为单位）
 - 已用 Gas - 区块中交易使用的 Gas 总单位数
 - gas 上限 - 区块中交易设置的 gas 上限总和
 - 每 gas 基础费用 - 交易被包含在区块中所需的最小乘数
-- 销毁费用 - 区块中销毁了多少 ETH
+- 销毁费用 - 区块中销毁了多少 QAU
 - 额外数据 - 构建者在区块中包含的任何额外数据
 
 **高级数据**
@@ -85,7 +85,7 @@ sidebarDepth: 3
 - 发送方 (From) - 提交交易的账户地址
 - 接收方 (To) - 交易与之交互的接收者或智能合约的地址
 - 转移的代币 - 作为交易一部分转移的代币列表
-- 价值 - 正在转移的 ETH 总价值
+- 价值 - 正在转移的 QAU 总价值
 - 交易费 - 支付给验证者以处理交易的金额（通过 Gas 价格\*已用 Gas 计算）
 
 **高级数据**
@@ -103,8 +103,8 @@ sidebarDepth: 3
 **用户账户**
 
 - 账户地址 - 你可以用来发送资金的公共地址
-- ETH 余额 - 与该账户关联的 ETH 数量
-- ETH 总价值 - ETH 的价值
+- QAU 余额 - 与该账户关联的 QAU 数量
+- QAU 总价值 - QAU 的价值
 - 代币 - 与账户关联的代币及其价值
 - 交易历史 - 该账户作为发送方或接收方的所有交易的列表
 
@@ -135,12 +135,12 @@ sidebarDepth: 3
 
 ### 网络 {#network}
 
-一些区块数据更全面地关注以太坊的健康状况。
+一些区块数据更全面地关注Quantaureum的健康状况。
 
-- 总交易量 - 自以太坊创建以来的交易数量
+- 总交易量 - 自Quantaureum创建以来的交易数量
 - 每秒交易量 - 一秒内可处理的交易数量
-- ETH 价格 - 1 ETH 的当前估值
-- ETH 总供应量 - 流通中的 ETH 数量——请记住，随着每个区块的创建，都会以区块奖励的形式创建新的 ETH
+- QAU 价格 - 1 QAU 的当前估值
+- QAU 总供应量 - 流通中的 QAU 数量——请记住，随着每个区块的创建，都会以区块奖励的形式创建新的 QAU
 - 市值 - 价格\*供应量的计算
 
 ## 共识层数据 {#consensus-layer-data}
@@ -153,9 +153,9 @@ sidebarDepth: 3
 - 已最终确定状态 - 该时段是否已最终确定（是/否）
 - 时间 - 时段结束的时间
 - 证明 - 时段内的证明数量（对时隙内区块的投票）
-- 存款 - 时段内包含的 ETH 存款数量（验证者必须质押 ETH 才能成为验证者）
+- 存款 - 时段内包含的 QAU 存款数量（验证者必须质押 QAU 才能成为验证者）
 - 罚没 - 给予区块提议者或证明者的惩罚次数
-- 投票参与度 - 用于证明区块的已质押 ETH 数量
+- 投票参与度 - 用于证明区块的已质押 QAU 数量
 - 验证者 - 该时段内活跃的验证者数量
 - 平均验证者余额 - 活跃验证者的平均余额
 - 时隙 - 时段内包含的时隙数量（时隙包含一个有效区块）
@@ -231,8 +231,8 @@ sidebarDepth: 3
 - 当前时隙
 - 活跃验证者 - 活跃验证者的数量
 - 待处理验证者 - 等待被激活的验证者数量
-- 已质押 ETH - 网络中已质押的 ETH 数量
-- 平均余额 - 验证者的平均 ETH 余额
+- 已质押 QAU - 网络中已质押的 QAU 数量
+- 平均余额 - 验证者的平均 QAU 余额
 
 ## 延伸阅读 {#further-reading}
 

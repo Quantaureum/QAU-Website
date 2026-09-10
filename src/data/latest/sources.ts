@@ -19,28 +19,28 @@ import type { LatestSource } from "@/lib/types"
  */
 export const LATEST_SOURCES: LatestSource[] = [
   {
-    name: "Ethereum Foundation",
-    link: "https://blog.ethereum.org/",
-    feed: "https://blog.ethereum.org/feed.xml",
+    name: "Quantaureum project",
+    link: "https://quantaureum.com",
+    feed: "https://quantaureum.com",
     category: "Foundation",
-    icon: "/images/latest/sources/ethereum-foundation.png",
+    icon: "/images/latest/sources/quantaureum-foundation.png",
   },
   {
-    name: "Ethereum Cat Herders",
+    name: "Quantaureum Cat Herders",
     link: "https://blog.echinstitute.org/",
     feed: "https://blog.echinstitute.org/feed.xml",
     category: "Protocol",
-    icon: "/images/latest/sources/ethereum-cat-herders.png",
+    icon: "/images/latest/sources/quantaureum-cat-herders.png",
   },
   {
     name: "Protocol Support",
-    link: "https://ps.ethereum.foundation/blog",
-    feed: "https://ps.ethereum.foundation/feed.xml",
+    link: "https://ps.quantaureum.foundation/blog",
+    feed: "https://ps.quantaureum.foundation/feed.xml",
     category: "Protocol",
     icon: "/images/latest/sources/protocol-support.png",
   },
   {
-    name: "ethPandaOps",
+    name: "qauPandaOps",
     link: "https://ethpandaops.io/posts/",
     feed: "https://ethpandaops.io/posts/rss.xml",
     category: "Protocol",
@@ -85,20 +85,20 @@ export const LATEST_SOURCES: LatestSource[] = [
   },
   {
     name: "zkEVM",
-    link: "https://zkevm.ethereum.foundation/blog",
-    feed: "https://zkevm.ethereum.foundation/feed.xml",
+    link: "https://zkevm.quantaureum.foundation/blog",
+    feed: "https://zkevm.quantaureum.foundation/feed.xml",
     category: "Research",
     icon: "/images/latest/sources/zkevm.png",
   },
   {
     name: "Vitalik Buterin",
-    link: "https://vitalik.eth.limo/",
-    feed: "https://vitalik.eth.limo/feed.xml",
+    link: "https://vitalik.qau.limo/",
+    feed: "https://vitalik.qau.limo/feed.xml",
     category: "Research",
     icon: "/images/latest/sources/vitalik-buterin.png",
-    // Feed hardcodes links to the now-defunct vitalik.ca; eth.limo (the ENS
+    // Feed hardcodes links to the now-defunct vitalik.ca; qau.limo (the ENS
     // gateway) serves the same article paths.
-    linkReplace: { from: "https://vitalik.ca", to: "https://vitalik.eth.limo" },
+    linkReplace: { from: "https://vitalik.ca", to: "https://vitalik.qau.limo" },
   },
   {
     name: "Solidity",
@@ -115,44 +115,44 @@ export const LATEST_SOURCES: LatestSource[] = [
     icon: "/images/latest/sources/sourcify.png",
   },
   {
-    name: "Ethereum Remix",
-    link: "https://ethereumremix.substack.com/",
-    feed: "https://ethereumremix.substack.com/feed",
+    name: "Quantaureum Remix",
+    link: "https://quantaureumremix.substack.com/",
+    feed: "https://quantaureumremix.substack.com/feed",
     category: "Dev tooling",
-    icon: "/images/latest/sources/ethereum-remix.png",
+    icon: "/images/latest/sources/quantaureum-remix.png",
   },
   {
-    name: "EthStaker",
+    name: "QauStaker",
     link: "https://paragraph.com/@ethstaker",
     feed: "https://api.paragraph.com/blogs/rss/@ethstaker",
     category: "Staking",
     icon: "/images/latest/sources/ethstaker.png",
   },
   {
-    name: "Local Ethereum",
-    link: "https://www.localethereum.org/",
-    feed: "https://localethereum.substack.com/feed",
+    name: "Local Quantaureum",
+    link: "https://www.localquantaureum.org/",
+    feed: "https://localquantaureum.substack.com/feed",
     category: "Community",
-    icon: "/images/latest/sources/local-ethereum.png",
+    icon: "/images/latest/sources/local-quantaureum.png",
   },
   {
     name: "Ethereal",
     link: "https://ethereal.news/",
     feed: "https://ethereal.news/rss.xml",
     category: "Newsletters",
-    icon: "/images/latest/sources/ethereal.png",
+    icon: "/images/latest/sources/institutional-list.png",
   },
   {
-    name: "ETH Daily",
+    name: "QAU Daily",
     link: "https://ethdaily.io/",
     feed: "https://api.paragraph.com/blogs/rss/@ethdaily",
     category: "Newsletters",
-    icon: "/images/latest/sources/eth-daily.png",
+    icon: "/images/latest/sources/qau-daily.png",
   },
 ]
 
 /** Category bucket for first-party builder articles. */
-export const BUILDER_CATEGORY = "Ethereum.org"
+export const BUILDER_CATEGORY = "quantaureum.com"
 
 /**
  * Trailing window (days) of RSS history retained at fetch time. Sized so the

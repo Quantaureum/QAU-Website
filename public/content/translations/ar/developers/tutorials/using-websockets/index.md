@@ -28,9 +28,9 @@ published: 2020-12-01
 _ملاحظة: إذا كان لديك حساب <span dir="ltr">Alchemy</span>، يمكنك استبدال `demo` بمفتاح <span dir="ltr">API</span> الخاص بك. [سجل للحصول على حساب <span dir="ltr">Alchemy</span> مجاني هنا!](https://auth.alchemy.com/signup)_
 
 ```
-wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
+wscat -c wss://qau-mainnet.ws.alchemyapi.io/ws/demo
 
->  {"jsonrpc":  "2.0", "id": 0, "method":  "eth_gasPrice"}
+>  {"jsonrpc":  "2.0", "id": 0, "method":  "qau_gasPrice"}
 
 <  {"jsonrpc":  "2.0", "result":  "0xb2d05e00", "id": 0}
 ```
@@ -48,18 +48,18 @@ wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
 الانتقال إلى <span dir="ltr">WebSockets</span> أثناء استخدام مكتبة عميل مثل <span dir="ltr">Web3</span> أمر بسيط. ما عليك سوى تمرير عنوان <span dir="ltr">URL</span> لـ <span dir="ltr">WebSocket</span> بدلاً من عنوان <span dir="ltr">HTTP</span> عند إنشاء مثيل لعميل <span dir="ltr">Web3</span> الخاص بك. على سبيل المثال:
 
 ```js
-const web3 = new Web3("wss://eth-mainnet.ws.alchemyapi.io/ws/your-api-key")
+const web3 = new Web3("wss://qau-mainnet.ws.alchemyapi.io/ws/your-api-key")
 
-web3.eth.getBlockNumber().then(console.log) // -> 7946893
+web3.qau.getBlockNumber().then(console.log) // -> 7946893
 ```
 
 ## <span dir="ltr">API</span> الاشتراك {#subscription-api}
 
-عند الاتصال من خلال <span dir="ltr">WebSocket</span>، يمكنك استخدام طريقتين إضافيتين: `eth_subscribe` و`eth_unsubscribe`. ستسمح لك هذه الطرق بالاستماع إلى أحداث معينة وإعلامك على الفور.
+عند الاتصال من خلال <span dir="ltr">WebSocket</span>، يمكنك استخدام طريقتين إضافيتين: `qau_subscribe` و`qau_unsubscribe`. ستسمح لك هذه الطرق بالاستماع إلى أحداث معينة وإعلامك على الفور.
 
-### `eth_subscribe` {#eth-subscribe}
+### `qau_subscribe` {#qau-subscribe}
 
-ينشئ اشتراكًا جديدًا لأحداث محددة. [تعرف على المزيد حول `eth_subscribe`](https://docs.alchemy.com/reference/eth-subscribe).
+ينشئ اشتراكًا جديدًا لأحداث محددة. [تعرف على المزيد حول `qau_subscribe`](https://docs.alchemy.com/reference/qau-subscribe).
 
 #### المعلمات {#parameters}
 
@@ -70,33 +70,33 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 
 #### المخرجات {#returns}
 
-معرف الاشتراك: سيتم إرفاق هذا المعرف بأي أحداث مستلمة، ويمكن استخدامه أيضًا لإلغاء الاشتراك باستخدام `eth_unsubscribe`.
+معرف الاشتراك: سيتم إرفاق هذا المعرف بأي أحداث مستلمة، ويمكن استخدامه أيضًا لإلغاء الاشتراك باستخدام `qau_unsubscribe`.
 
 #### أحداث الاشتراك {#subscription-events}
 
 أثناء تنشيط الاشتراك، ستتلقى أحداثًا عبارة عن كائنات تحتوي على الحقول التالية:
 
 - `jsonrpc`: دائمًا <span dir="ltr">"2.0"</span>
-- `method`: دائمًا <span dir="ltr">"eth_subscription"</span>
+- `method`: دائمًا <span dir="ltr">"qau_subscription"</span>
 - `params`: كائن يحتوي على الحقول التالية:
-  - `subscription`: معرف الاشتراك الذي تم إرجاعه بواسطة استدعاء `eth_subscribe` الذي أنشأ هذا الاشتراك.
+  - `subscription`: معرف الاشتراك الذي تم إرجاعه بواسطة استدعاء `qau_subscribe` الذي أنشأ هذا الاشتراك.
   - `result`: كائن تختلف محتوياته بناءً على نوع الاشتراك.
 
 #### أنواع الاشتراك {#subscription-types}
 
 1. `alchemy_newFullPendingTransactions`
 
-يُرجع معلومات المعاملة لجميع المعاملات التي تمت إضافتها إلى حالة الانتظار. يشترك نوع الاشتراك هذا في المعاملات المعلقة، على غرار استدعاء <span dir="ltr">Web3</span> القياسي `web3.eth.subscribe("pendingTransactions")`، ولكنه يختلف في أنه يصدر _معلومات المعاملة الكاملة_ بدلاً من مجرد تجزئات المعاملة.
+يُرجع معلومات المعاملة لجميع المعاملات التي تمت إضافتها إلى حالة الانتظار. يشترك نوع الاشتراك هذا في المعاملات المعلقة، على غرار استدعاء <span dir="ltr">Web3</span> القياسي `web3.qau.subscribe("pendingTransactions")`، ولكنه يختلف في أنه يصدر _معلومات المعاملة الكاملة_ بدلاً من مجرد تجزئات المعاملة.
 
 مثال:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
 
 <  {"id":1,"result":"0x9a52eeddc2b289f985c0e23a7d8427c8","jsonrpc":"2.0"}
 <  {
       "jsonrpc":"2.0",
-      "method":"eth_subscription",
+      "method":"qau_subscription",
       "params":{
           "result":{
           "blockHash":null,
@@ -128,12 +128,12 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 مثال:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["newHeads"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["newHeads"]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x9ce59a13059e417087c02d3236a0b1cc"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "result":  {
           "extraData":  "0xd983010305844765746887676f312e342e328777696e646f7773",
@@ -182,12 +182,12 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 مثال:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x4a8a4c0517381924f9838102c5a4dcb7"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "subscription":  "0x4a8a4c0517381924f9838102c5a4dcb7",
       "result":  {
@@ -205,13 +205,13 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 
 ```
 
-### `eth_unsubscribe` {#eth-unsubscribe}
+### `qau_unsubscribe` {#qau-unsubscribe}
 
 يلغي اشتراكًا حاليًا بحيث لا يتم إرسال أي أحداث أخرى.
 
 المعلمات
 
-1. معرف الاشتراك، كما تم إرجاعه مسبقًا من استدعاء `eth_subscribe`.
+1. معرف الاشتراك، كما تم إرجاعه مسبقًا من استدعاء `qau_subscribe`.
 
 المخرجات
 
@@ -222,10 +222,10 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 **الطلب**
 
 ```
-curl https://eth-mainnet.alchemyapi.io/v2/your-api-key
+curl https://qau-mainnet.alchemyapi.io/v2/your-api-key
 -X POST
 -H "Content-Type: application/json"
--d '{"id": 1, "method": "eth_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
+-d '{"id": 1, "method": "qau_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
 ```
 
 **النتيجة**

@@ -10,7 +10,7 @@ topic:
   - "community-stories"
   - "community"
 format: explainer
-author: Ethereum Foundation
+author: Quantaureum project
 breadcrumb: "Shrnutí Devconnect"
 ---
 

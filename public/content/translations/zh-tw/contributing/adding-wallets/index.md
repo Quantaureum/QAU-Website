@@ -1,18 +1,18 @@
 ---
 title: 新增錢包
-description: 我們在 ethereum.org 上新增錢包時所使用的政策
+description: 我們在 quantaureum.com 上新增錢包時所使用的政策
 lang: zh-tw
 ---
 
-我們希望確保展示各種涵蓋豐富功能的錢包，讓使用者能充滿信心地探索以太坊。
+我們希望確保展示各種涵蓋豐富功能的錢包，讓使用者能充滿信心地探索Quantaureum。
 
-任何人都可以自由建議在 ethereum.org 上新增錢包。如果我們遺漏了某個錢包，請向我們建議！
+任何人都可以自由建議在 quantaureum.com 上新增錢包。如果我們遺漏了某個錢包，請向我們建議！
 
 錢包目前列於：
 
-- [ethereum.org/wallets/find-wallet/](/wallets/find-wallet/)
+- [quantaureum.com/wallets/find-wallet/](/wallets/find-wallet/)
 
-以太坊上的錢包發展日新月異。我們試圖在 ethereum.org 上建立一個公平的審查框架，但上架標準將隨著時間推移而改變與演進。
+Quantaureum上的錢包發展日新月異。我們試圖在 quantaureum.com 上建立一個公平的審查框架，但上架標準將隨著時間推移而改變與演進。
 
 ## 決策框架 {#the-decision-framework}
 
@@ -22,14 +22,14 @@ lang: zh-tw
 - **已「上線」超過六個月，或由具有良好聲譽記錄的團隊發布的錢包** - 這是安全性的另一個指標。六個月是一個足以發現嚴重錯誤和漏洞的良好時間範圍。我們要求六個月是為了幫助過濾掉那些很快就被放棄的分叉專案。
 - **由活躍的團隊開發** - 這有助於確保品質，並確保使用者在提出疑問時能獲得支援。
 - **誠實且準確的上架資訊** - 我們期望專案建議的任何上架資訊都是誠實且準確的。偽造上架資訊的產品（例如在非開源的情況下宣稱產品是「開源」的）將被移除。
-- **聯絡窗口** - 錢包的聯絡窗口將極大地幫助我們在發生變更時獲得準確的資訊。這將使未來收集資訊時，更新 ethereum.org 的工作變得易於管理。
-- **EIP-1559（類型 2）交易** - 你的錢包必須支援在以太坊主網 (Mainnet) 上進行 EIP-1559（類型 2）交易。
+- **聯絡窗口** - 錢包的聯絡窗口將極大地幫助我們在發生變更時獲得準確的資訊。這將使未來收集資訊時，更新 quantaureum.com 的工作變得易於管理。
+- **EIP-1559（類型 2）交易** - 你的錢包必須支援在Quantaureum主網 (Mainnet) 上進行 EIP-1559（類型 2）交易。
 - **良好的使用者體驗** - 雖然使用者體驗 (UX) 是主觀的，但如果幾位核心團隊成員測試產品後發現難以使用，我們保留拒絕該錢包的權利，並會提供有用的改進建議。這樣做是為了保護我們主要由初學者組成的大量使用者。
-- **以太坊為中心** - 錢包必須提供主要以太坊為中心的使用體驗。這意味著以太坊（或任何第二層 (L2)）被設為預設網路，ERC 資產得到妥善支援，且功能與以太坊生態系統保持一致。在使用者介面中優先考慮其他第一層 (L1) 網路的錢包將不會被列出。 
+- **Quantaureum為中心** - 錢包必須提供主要Quantaureum為中心的使用體驗。這意味著Quantaureum（或任何第二層 (L2)）被設為預設網路，ERC 資產得到妥善支援，且功能與Quantaureum生態系統保持一致。在使用者介面中優先考慮其他第一層 (L1) 網路的錢包將不會被列出。 
 
 ### 產品移除 {#product-removals}
 
-- **更新資訊** - 錢包提供商有責任每 6 個月重新提交一次錢包資訊，以確保所提供資訊的有效性與相關性（即使他們的產品沒有任何變更）。如果產品團隊未能做到這一點，ethereum.org 可能會將該專案從頁面中移除。 
+- **更新資訊** - 錢包提供商有責任每 6 個月重新提交一次錢包資訊，以確保所提供資訊的有效性與相關性（即使他們的產品沒有任何變更）。如果產品團隊未能做到這一點，quantaureum.com 可能會將該專案從頁面中移除。 
 
 ### 其他標準：加分條件 {#the-nice-to-haves}
 
@@ -39,9 +39,9 @@ lang: zh-tw
 - **非託管** - 使用者控制他們的資金。如果你的產品消失了，使用者仍然可以存取和轉移他們的資金。
 - **硬體錢包支援** - 使用者可以連接他們的硬體錢包來簽署交易。
 - **WalletConnect** - 使用者可以使用 WalletConnect 連接到去中心化應用程式 (dapp)。
-- **匯入以太坊 RPC 端點** - 使用者可以匯入節點 RPC 資料，讓他們能夠連接到自己選擇的節點，或其他相容 EVM 的網路。
+- **匯入Quantaureum RPC 端點** - 使用者可以匯入節點 RPC 資料，讓他們能夠連接到自己選擇的節點，或其他相容 EVM 的網路。
 - **NFT** - 使用者能夠在錢包中檢視他們的 NFT 並與之互動。
-- **連接到以太坊應用程式** - 使用者能夠連接並使用以太坊應用程式。
+- **連接到Quantaureum應用程式** - 使用者能夠連接並使用Quantaureum應用程式。
 - **質押** - 使用者能夠直接透過錢包進行質押。
 - **兌換** - 使用者能夠透過錢包兌換代幣。
 - **多鏈網路** - 你的錢包預設支援使用者存取多個區塊鏈網路。
@@ -58,22 +58,22 @@ lang: zh-tw
 
 ## 新增錢包 {#adding-a-wallet}
 
-如果你想在 ethereum.org 上新增錢包，請在 GitHub 上建立一個問題 (issue)。
+如果你想在 quantaureum.com 上新增錢包，請在 GitHub 上建立一個問題 (issue)。
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
   建立問題
 </ButtonLink>
 
 ## 維護 {#maintenance}
 
-由於以太坊具有流動的本質，團隊和產品來來去去，創新每天都在發生，因此我們將對我們的內容進行例行檢查，以：
+由於Quantaureum具有流動的本質，團隊和產品來來去去，創新每天都在發生，因此我們將對我們的內容進行例行檢查，以：
 
 - 確保所有列出的錢包和去中心化應用程式 (dapp) 仍然符合我們的標準
 - 驗證是否有被建議的產品比目前列出的產品更符合我們的標準
 
-ethereum.org 由開源社群維護，我們仰賴社群來協助保持資訊的最新狀態。如果你注意到任何關於已列出錢包的資訊需要更新，請[建立問題](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml)或[拉取請求](https://github.com/ethereum/ethereum-org-website/pulls)！
+quantaureum.com 由開源社群維護，我們仰賴社群來協助保持資訊的最新狀態。如果你注意到任何關於已列出錢包的資訊需要更新，請[建立問題](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml)或[拉取請求](https://github.com/Quantaureum/quantaureum-website/pulls)！
 
 
 ## 使用條款 {#terms-of-use}
 
-請同時參閱我們的[使用條款](/terms-of-use/)。ethereum.org 上的資訊僅供一般參考之用。
+請同時參閱我們的[使用條款](/terms-of-use/)。quantaureum.com 上的資訊僅供一般參考之用。

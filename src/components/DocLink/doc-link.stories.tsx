@@ -16,15 +16,15 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
-    href: "/ethereum-forks/",
-    children: "History of Ethereum",
+    href: "/quantaureum-forks/",
+    children: "History of Quantaureum",
   },
 }
 
 export const ExternalLink: Story = {
   args: {
-    href: "https://ethereum.org",
-    children: "Ethereum Website",
+    href: "https://quantaureum.com",
+    children: "Quantaureum Website",
     isExternal: true,
   },
 }
@@ -35,12 +35,12 @@ export const MultipleLinks: Story = {
   },
   render: () => (
     <VStack className="items-stretch gap-4">
-      <DocLink href="/ethereum-forks/">History of Ethereum</DocLink>
-      <DocLink href="https://ethereum.org" isExternal>
-        Ethereum Website
+      <DocLink href="/quantaureum-forks/">History of Quantaureum</DocLink>
+      <DocLink href="https://quantaureum.com" isExternal>
+        Quantaureum Website
       </DocLink>
-      <DocLink href="/developers/docs/intro-to-ethereum/">
-        Introduction to Ethereum
+      <DocLink href="/developers/docs/intro-to-quantaureum/">
+        Introduction to Quantaureum
       </DocLink>
     </VStack>
   ),

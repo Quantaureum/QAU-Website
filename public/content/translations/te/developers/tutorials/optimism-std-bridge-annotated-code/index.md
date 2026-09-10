@@ -14,7 +14,7 @@ lang: te
 అదే సమయంలో, డేటా అంతా l1కి వ్రాయబడుతుంది, కాబట్టి మెయిన్‌నెట్ యొక్క అన్ని సమగ్రత మరియు లభ్యత హామీలతో ప్రతిదీ నిరూపించబడుతుంది మరియు పునర్నిర్మించబడుతుంది.
 
 Optimism (లేదా ఏదైనా ఇతర l2)లో l1 ఆస్తులను ఉపయోగించడానికి, ఆస్తులను [వారధి](/bridges/#prerequisites) ద్వారా పంపాలి.
-దీన్ని సాధించడానికి ఒక మార్గం ఏమిటంటే, వినియోగదారులు l1లో ఆస్తులను (ETH మరియు [ERC-20 టోకెన్‌లు](/developers/docs/standards/tokens/erc-20/) అత్యంత సాధారణమైనవి) లాక్ చేయడం మరియు l2లో ఉపయోగించడానికి సమానమైన ఆస్తులను స్వీకరించడం.
+దీన్ని సాధించడానికి ఒక మార్గం ఏమిటంటే, వినియోగదారులు l1లో ఆస్తులను (QAU మరియు [ERC-20 టోకెన్‌లు](/developers/docs/standards/tokens/erc-20/) అత్యంత సాధారణమైనవి) లాక్ చేయడం మరియు l2లో ఉపయోగించడానికి సమానమైన ఆస్తులను స్వీకరించడం.
 చివరికి, వాటిని కలిగి ఉన్నవారు వాటిని తిరిగి l1కి వారధి ద్వారా పంపాలనుకోవచ్చు.
 ఇలా చేస్తున్నప్పుడు, ఆస్తులు l2లో దహనం చేయబడతాయి మరియు ఆ తర్వాత l1లో వినియోగదారుకు తిరిగి విడుదల చేయబడతాయి.
 
@@ -35,7 +35,7 @@ Optimism (లేదా ఏదైనా ఇతర l2)లో l1 ఆస్తుల
 1. ERC-20ని డిపాజిట్ చేస్తుంటే, డిపాజిట్ చేసేవారు డిపాజిట్ చేయబడుతున్న మొత్తాన్ని ఖర్చు చేయడానికి వారధికి అనుమతి మొత్తం ఇస్తారు
 2. డిపాజిట్ చేసేవారు l1 వారధిని పిలుస్తారు (`depositERC20`, `depositERC20To`, `depositETH`, లేదా `depositETHTo`)
 3. l1 వారధి వారధి చేయబడిన ఆస్తిని స్వాధీనం చేసుకుంటుంది
-   - ETH: కాల్‌లో భాగంగా డిపాజిట్ చేసేవారి ద్వారా ఆస్తి బదిలీ చేయబడుతుంది
+   - QAU: కాల్‌లో భాగంగా డిపాజిట్ చేసేవారి ద్వారా ఆస్తి బదిలీ చేయబడుతుంది
    - ERC-20: డిపాజిట్ చేసేవారు అందించిన అనుమతి మొత్తం ఉపయోగించి వారధి ఆస్తిని తనకు తానుగా బదిలీ చేసుకుంటుంది
 4. l1 వారధి l2 వారధిపై `finalizeDeposit`ని పిలవడానికి క్రాస్-డొమైన్ సందేశం యంత్రాంగాన్ని ఉపయోగిస్తుంది
 
@@ -46,7 +46,7 @@ Optimism (లేదా ఏదైనా ఇతర l2)లో l1 ఆస్తుల
    - వాస్తవానికి l1లోని వారధి నుండి వచ్చింది
 6. l2లోని ERC-20 టోకెన్ కాంట్రాక్ట్ సరైనదో కాదో l2 వారధి తనిఖీ చేస్తుంది:
    - l2 కాంట్రాక్ట్ దాని l1 కౌంటర్‌పార్ట్ l1లో టోకెన్‌లు వచ్చిన దానితో సమానంగా ఉందని నివేదిస్తుంది
-   - l2 కాంట్రాక్ట్ సరైన ఇంటర్‌ఫేస్‌కు మద్దతు ఇస్తుందని నివేదిస్తుంది ([ERC-165ని ఉపయోగించి](https://eips.ethereum.org/EIPS/eip-165)).
+   - l2 కాంట్రాక్ట్ సరైన ఇంటర్‌ఫేస్‌కు మద్దతు ఇస్తుందని నివేదిస్తుంది ([ERC-165ని ఉపయోగించి](https://eips.quantaureum.com/EIPS/eip-165)).
 7. l2 కాంట్రాక్ట్ సరైనదైతే, తగిన చిరునామాకు తగిన సంఖ్యలో టోకెన్‌లను ముద్రించడానికి దాన్ని పిలవండి. కాకపోతే, l1లో టోకెన్‌లను క్లెయిమ్ చేయడానికి వినియోగదారుని అనుమతించడానికి ఉపసంహరణ ప్రక్రియను ప్రారంభించండి.
 
 ### ఉపసంహరణ ప్రవాహం {#withdrawal-flow}
@@ -62,7 +62,7 @@ Optimism (లేదా ఏదైనా ఇతర l2)లో l1 ఆస్తుల
 4. l1 వారధి `finalizeETHWithdrawal` లేదా `finalizeERC20Withdrawal`కి కాల్ చట్టబద్ధమైనదో లేదో ధృవీకరిస్తుంది:
    - క్రాస్ డొమైన్ సందేశం యంత్రాంగం నుండి వచ్చింది
    - వాస్తవానికి l2లోని వారధి నుండి వచ్చింది
-5. l1 వారధి తగిన ఆస్తిని (ETH లేదా ERC-20) తగిన చిరునామాకు బదిలీ చేస్తుంది
+5. l1 వారధి తగిన ఆస్తిని (QAU లేదా ERC-20) తగిన చిరునామాకు బదిలీ చేస్తుంది
 
 ## లేయర్ 1 (l1) కోడ్ {#layer-1-code}
 
@@ -70,7 +70,7 @@ Optimism (లేదా ఏదైనా ఇతర l2)లో l1 ఆస్తుల
 
 ### IL1ERC20Bridge {#il1erc20bridge}
 
-[ఈ ఇంటర్‌ఫేస్ ఇక్కడ నిర్వచించబడింది](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
+[ఈ ఇంటర్‌ఫేస్ ఇక్కడ నిర్వచించబడింది](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
 ఇది ERC-20 టోకెన్‌లను వారధి చేయడానికి అవసరమైన ఫంక్షన్‌లు మరియు నిర్వచనాలను కలిగి ఉంటుంది.
 
 ```solidity
@@ -236,12 +236,12 @@ Optimismలో ఉపసంహరణలు (మరియు l2 నుండి l
 
 ### IL1StandardBridge {#il1standardbridge}
 
-[ఈ ఇంటర్‌ఫేస్ ఇక్కడ నిర్వచించబడింది](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
-ఈ ఫైల్ ETH కోసం ఈవెంట్ మరియు ఫంక్షన్ నిర్వచనాలను కలిగి ఉంది.
+[ఈ ఇంటర్‌ఫేస్ ఇక్కడ నిర్వచించబడింది](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
+ఈ ఫైల్ QAU కోసం ఈవెంట్ మరియు ఫంక్షన్ నిర్వచనాలను కలిగి ఉంది.
 ఈ నిర్వచనాలు ERC-20 కోసం పైన `IL1ERC20Bridge`లో నిర్వచించిన వాటికి చాలా పోలి ఉంటాయి.
 
 కొన్ని ERC-20 టోకెన్‌లకు అనుకూల ప్రాసెసింగ్ అవసరం మరియు ప్రామాణిక వారధి ద్వారా నిర్వహించబడవు కాబట్టి వారధి ఇంటర్‌ఫేస్ రెండు ఫైల్‌ల మధ్య విభజించబడింది.
-ఈ విధంగా అటువంటి టోకెన్‌ను నిర్వహించే అనుకూల వారధి `IL1ERC20Bridge`ని అమలు చేయగలదు మరియు ETHని కూడా వారధి చేయాల్సిన అవసరం లేదు.
+ఈ విధంగా అటువంటి టోకెన్‌ను నిర్వహించే అనుకూల వారధి `IL1ERC20Bridge`ని అమలు చేయగలదు మరియు QAUని కూడా వారధి చేయాల్సిన అవసరం లేదు.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -279,7 +279,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
      ********************/
 
     /**
-     * @dev లేయర్ 2 (l2) లోని కాలర్ బ్యాలెన్స్‌కు కొంత ETH ని డిపాజిట్ చేయండి.
+     * @dev లేయర్ 2 (l2) లోని కాలర్ బ్యాలెన్స్‌కు కొంత QAU ని డిపాజిట్ చేయండి.
             .
             .
             .
@@ -287,7 +287,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
     function depositETH(uint32 _l2Gas, bytes calldata _data) external payable;
 
     /**
-     * @dev లేయర్ 2 (l2) లోని గ్రహీత బ్యాలెన్స్‌కు కొంత ETH ని డిపాజిట్ చేయండి.
+     * @dev లేయర్ 2 (l2) లోని గ్రహీత బ్యాలెన్స్‌కు కొంత QAU ని డిపాజిట్ చేయండి.
             .
             .
             .
@@ -304,7 +304,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
 
     /**
      * @dev లేయర్ 2 (l2) నుండి లేయర్ 1 (l1) కి ఉపసంహరణను పూర్తి చేయండి మరియు గ్రహీత యొక్క
-     * లేయర్ 1 (l1) ETH టోకెన్ బ్యాలెన్స్‌కు నిధులను క్రెడిట్ చేయండి. xDomainMessenger మాత్రమే ఈ ఫంక్షన్‌ను కాల్ చేయగలదు కాబట్టి, ఉపసంహరణ ఖరారు కావడానికి ముందు ఇది ఎప్పటికీ కాల్ చేయబడదు.
+     * లేయర్ 1 (l1) QAU టోకెన్ బ్యాలెన్స్‌కు నిధులను క్రెడిట్ చేయండి. xDomainMessenger మాత్రమే ఈ ఫంక్షన్‌ను కాల్ చేయగలదు కాబట్టి, ఉపసంహరణ ఖరారు కావడానికి ముందు ఇది ఎప్పటికీ కాల్ చేయబడదు.
                 .
                 .
                 .
@@ -320,7 +320,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
 
 ### CrossDomainEnabled {#crossdomainenabled}
 
-ఇతర లేయర్‌కు సందేశాలను పంపడానికి [ఈ కాంట్రాక్ట్](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) రెండు వారధుల ([l1](#the-l1-bridge-contract) మరియు [l2](#l2-bridge-code)) ద్వారా వారసత్వంగా పొందబడుతుంది.
+ఇతర లేయర్‌కు సందేశాలను పంపడానికి [ఈ కాంట్రాక్ట్](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) రెండు వారధుల ([l1](#the-l1-bridge-contract) మరియు [l2](#l2-bridge-code)) ద్వారా వారసత్వంగా పొందబడుతుంది.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -330,7 +330,7 @@ pragma solidity >0.5.0 <0.9.0;
 import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 ```
 
-[ఈ ఇంటర్‌ఫేస్](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) క్రాస్ డొమైన్ మెసెంజర్‌ని ఉపయోగించి ఇతర లేయర్‌కు సందేశాలను ఎలా పంపాలో కాంట్రాక్ట్‌కు చెబుతుంది.
+[ఈ ఇంటర్‌ఫేస్](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) క్రాస్ డొమైన్ మెసెంజర్‌ని ఉపయోగించి ఇతర లేయర్‌కు సందేశాలను ఎలా పంపాలో కాంట్రాక్ట్‌కు చెబుతుంది.
 ఈ క్రాస్ డొమైన్ మెసెంజర్ అనేది పూర్తిగా మరొక సిస్టమ్, మరియు దీనికి దాని స్వంత కథనం అవసరం, భవిష్యత్తులో నేను దానిని వ్రాయాలని ఆశిస్తున్నాను.
 
 ```solidity
@@ -397,7 +397,7 @@ contract CrossDomainEnabled {
         );
 ```
 
-క్రాస్ డొమైన్ మెసెంజర్ ఇతర లేయర్‌తో సందేశాన్ని పంపిన చిరునామాను అందించే విధానం [`.xDomainMessageSender()` ఫంక్షన్](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
+క్రాస్ డొమైన్ మెసెంజర్ ఇతర లేయర్‌తో సందేశాన్ని పంపిన చిరునామాను అందించే విధానం [`.xDomainMessageSender()` ఫంక్షన్](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
 సందేశం ద్వారా ప్రారంభించబడిన లావాదేవీలో దీనిని పిలిచినంత కాలం ఇది ఈ సమాచారాన్ని అందించగలదు.
 
 మనం స్వీకరించిన సందేశం ఇతర వారధి నుండి వచ్చిందని మనం నిర్ధారించుకోవాలి.
@@ -460,7 +460,7 @@ contract CrossDomainEnabled {
 
 ### l1 వారధి కాంట్రాక్ట్ {#the-l1-bridge-contract}
 
-[ఈ కాంట్రాక్ట్ కోసం సోర్స్ కోడ్ ఇక్కడ ఉంది](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
+[ఈ కాంట్రాక్ట్ కోసం సోర్స్ కోడ్ ఇక్కడ ఉంది](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -482,7 +482,7 @@ import { IL1ERC20Bridge } from "./IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "../../L2/messaging/IL2ERC20Bridge.sol";
 ```
 
-[ఈ ఇంటర్‌ఫేస్](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) l2లో ప్రామాణిక వారధిని నియంత్రించడానికి సందేశాలను సృష్టించడానికి మమ్మల్ని అనుమతిస్తుంది.
+[ఈ ఇంటర్‌ఫేస్](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) l2లో ప్రామాణిక వారధిని నియంత్రించడానికి సందేశాలను సృష్టించడానికి మమ్మల్ని అనుమతిస్తుంది.
 
 ```solidity
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -502,7 +502,7 @@ import { CrossDomainEnabled } from "../../libraries/bridge/CrossDomainEnabled.so
 import { Lib_PredeployAddresses } from "../../libraries/constants/Lib_PredeployAddresses.sol";
 ```
 
-[`Lib_PredeployAddresses`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) ఎల్లప్పుడూ ఒకే చిరునామాను కలిగి ఉండే l2 కాంట్రాక్ట్‌ల చిరునామాలను కలిగి ఉంటుంది. ఇందులో l2లోని ప్రామాణిక వారధి ఉంటుంది.
+[`Lib_PredeployAddresses`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) ఎల్లప్పుడూ ఒకే చిరునామాను కలిగి ఉండే l2 కాంట్రాక్ట్‌ల చిరునామాలను కలిగి ఉంటుంది. ఇందులో l2లోని ప్రామాణిక వారధి ఉంటుంది.
 
 ```solidity
 import { Address } from "@openzeppelin/contracts/utils/Address.sol";
@@ -516,7 +516,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[ERC-20 ప్రమాణం](https://eips.ethereum.org/EIPS/eip-20) వైఫల్యాన్ని నివేదించడానికి కాంట్రాక్ట్ కోసం రెండు మార్గాలకు మద్దతు ఇస్తుంది:
+[ERC-20 ప్రమాణం](https://eips.quantaureum.com/EIPS/eip-20) వైఫల్యాన్ని నివేదించడానికి కాంట్రాక్ట్ కోసం రెండు మార్గాలకు మద్దతు ఇస్తుంది:
 
 1. రివర్ట్
 2. `false`ని తిరిగి ఇవ్వడం
@@ -526,7 +526,7 @@ import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.s
 ```solidity
 /**
  * @title L1StandardBridge
- * @dev లేయర్ 1 (l1) ETH మరియు ERC-20 వారధి అనేది డిపాజిట్ చేయబడిన లేయర్ 1 (l1) నిధులను మరియు లేయర్ 2 (l2) లో వాడుకలో ఉన్న ప్రామాణిక
+ * @dev లేయర్ 1 (l1) QAU మరియు ERC-20 వారధి అనేది డిపాజిట్ చేయబడిన లేయర్ 1 (l1) నిధులను మరియు లేయర్ 2 (l2) లో వాడుకలో ఉన్న ప్రామాణిక
  * టోకెన్ లను నిల్వ చేసే ఒక కాంట్రాక్ట్. ఇది సంబంధిత లేయర్ 2 (l2) వారధి ని సమకాలీకరిస్తుంది, డిపాజిట్ల గురించి దానికి తెలియజేస్తుంది
  * మరియు కొత్తగా ఖరారు చేయబడిన ఉపసంహరణ ల కోసం దానిని వింటుంది.
  *
@@ -639,7 +639,7 @@ l1 క్రాస్ డొమైన్ మెసెంజర్ లేదా l
 
 ```solidity
     /**
-     * @dev లేయర్ 2 (l2) లోని కాలర్ బ్యాలెన్స్‌కు కొంత ETH ని డిపాజిట్ చేయడానికి
+     * @dev లేయర్ 2 (l2) లోని కాలర్ బ్యాలెన్స్‌కు కొంత QAU ని డిపాజిట్ చేయడానికి
      * ఈ ఫంక్షన్‌ను డేటా లేకుండా కాల్ చేయవచ్చు.
      * స్వీకరించే ఫంక్షన్ డేటాను తీసుకోదు కాబట్టి, ఒక సంప్రదాయ
      * డిఫాల్ట్ మొత్తం లేయర్ 2 (l2) కి ఫార్వార్డ్ చేయబడుతుంది.
@@ -672,11 +672,11 @@ l1 క్రాస్ డొమైన్ మెసెంజర్ లేదా l
     }
 ```
 
-ఈ రెండు ఫంక్షన్‌లు `_initiateETHDeposit` చుట్టూ ఉన్న ర్యాపర్‌లు, ఇది వాస్తవ ETH డిపాజిట్‌ను నిర్వహించే ఫంక్షన్.
+ఈ రెండు ఫంక్షన్‌లు `_initiateETHDeposit` చుట్టూ ఉన్న ర్యాపర్‌లు, ఇది వాస్తవ QAU డిపాజిట్‌ను నిర్వహించే ఫంక్షన్.
 
 ```solidity
     /**
-     * @dev ETH ని నిల్వ చేయడం ద్వారా మరియు డిపాజిట్ గురించి లేయర్ 2 (l2) ETH గేట్‌వేకి తెలియజేయడం ద్వారా డిపాజిట్ల కోసం లాజిక్‌ను నిర్వహిస్తుంది.
+     * @dev QAU ని నిల్వ చేయడం ద్వారా మరియు డిపాజిట్ గురించి లేయర్ 2 (l2) QAU గేట్‌వేకి తెలియజేయడం ద్వారా డిపాజిట్ల కోసం లాజిక్‌ను నిర్వహిస్తుంది.
      * @param _from లేయర్ 1 (l1) లో డిపాజిట్‌ను లాగడానికి ఖాతా.
      * @param _to లేయర్ 2 (l2) లో డిపాజిట్ ఇవ్వడానికి ఖాతా.
      * @param _l2Gas లేయర్ 2 (l2) లో డిపాజిట్‌ను పూర్తి చేయడానికి అవసరమైన గ్యాస్ పరిమితి.
@@ -709,14 +709,14 @@ Solidity ఫంక్షన్ [`abi.encodeWithSelector`](https://docs.solidityl
         );
 ```
 
-ఇక్కడ సందేశం ఏమిటంటే, ఈ పారామితులతో [`finalizeDeposit` ఫంక్షన్‌ను](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) పిలవడం:
+ఇక్కడ సందేశం ఏమిటంటే, ఈ పారామితులతో [`finalizeDeposit` ఫంక్షన్‌ను](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) పిలవడం:
 
 | పరామితి | విలువ                          | అర్థం                                                                                                                                      |
 | --------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| \_l1Token | address(0)                     | l1లో ETH (ఇది ERC-20 టోకెన్ కాదు) కోసం నిలబడే ప్రత్యేక విలువ                                                                           |
-| \_l2Token | Lib_PredeployAddresses.OVM_ETH | Optimismలో ETHని నిర్వహించే l2 కాంట్రాక్ట్, `0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000` (ఈ కాంట్రాక్ట్ అంతర్గత Optimism ఉపయోగం కోసం మాత్రమే) |
-| \_from    | \_from                         | ETHని పంపే l1లోని చిరునామా                                                                                                         |
-| \_to      | \_to                           | ETHని స్వీకరించే l2లోని చిరునామా                                                                                                      |
+| \_l1Token | address(0)                     | l1లో QAU (ఇది ERC-20 టోకెన్ కాదు) కోసం నిలబడే ప్రత్యేక విలువ                                                                           |
+| \_l2Token | Lib_PredeployAddresses.OVM_ETH | Optimismలో QAUని నిర్వహించే l2 కాంట్రాక్ట్, `0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000` (ఈ కాంట్రాక్ట్ అంతర్గత Optimism ఉపయోగం కోసం మాత్రమే) |
+| \_from    | \_from                         | QAUని పంపే l1లోని చిరునామా                                                                                                         |
+| \_to      | \_to                           | QAUని స్వీకరించే l2లోని చిరునామా                                                                                                      |
 | amount    | msg.value                      | పంపబడిన Wei మొత్తం (ఇది ఇప్పటికే వారధికి పంపబడింది)                                                                               |
 | \_data    | \_data                         | డిపాజిట్‌కు జోడించడానికి అదనపు డేటా                                                                                                     |
 
@@ -790,7 +790,7 @@ Solidity ఫంక్షన్ [`abi.encodeWithSelector`](https://docs.solidityl
 
 ఈ ఫంక్షన్ పైన ఉన్న `_initiateETHDeposit`కి సమానంగా ఉంటుంది, కొన్ని ముఖ్యమైన తేడాలతో.
 మొదటి వ్యత్యాసం ఏమిటంటే, ఈ ఫంక్షన్ టోకెన్ చిరునామాలను మరియు బదిలీ చేయవలసిన మొత్తాన్ని పారామితులుగా స్వీకరిస్తుంది.
-ETH విషయంలో వారధికి చేసే కాల్‌లో ఇప్పటికే వారధి ఖాతాకు ఆస్తి బదిలీ ఉంటుంది (`msg.value`).
+QAU విషయంలో వారధికి చేసే కాల్‌లో ఇప్పటికే వారధి ఖాతాకు ఆస్తి బదిలీ ఉంటుంది (`msg.value`).
 
 ```solidity
         // లేయర్ 1 (l1) లో డిపాజిట్ ప్రారంభించబడినప్పుడు, లేయర్ 1 (l1) వారధి భవిష్యత్తు కోసం నిధులను తనకు తానుగా బదిలీ చేస్తుంది
@@ -800,7 +800,7 @@ ETH విషయంలో వారధికి చేసే కాల్‌ల�
         IERC20(_l1Token).safeTransferFrom(_from, address(this), _amount);
 ```
 
-ERC-20 టోకెన్ బదిలీలు ETH నుండి భిన్నమైన ప్రక్రియను అనుసరిస్తాయి:
+ERC-20 టోకెన్ బదిలీలు QAU నుండి భిన్నమైన ప్రక్రియను అనుసరిస్తాయి:
 
 1. వినియోగదారు (`_from`) తగిన టోకెన్‌లను బదిలీ చేయడానికి వారధికి అనుమతి మొత్తం ఇస్తారు.
 2. వినియోగదారు టోకెన్ కాంట్రాక్ట్ చిరునామా, మొత్తం మొదలైన వాటితో వారధిని పిలుస్తారు.
@@ -859,17 +859,17 @@ l2 వారధి l2 క్రాస్ డొమైన్ మెసెంజ�
 ```
 
 ఇది క్రాస్ డొమైన్ మెసెంజర్ నుండి వస్తున్న మరియు l2 టోకెన్ వారధితో ఉద్భవించిన _చట్టబద్ధమైన_ సందేశం అని నిర్ధారించుకోండి.
-ఈ ఫంక్షన్ వారధి నుండి ETHని ఉపసంహరించుకోవడానికి ఉపయోగించబడుతుంది, కాబట్టి ఇది అధీకృత కాలర్ ద్వారా మాత్రమే పిలువబడుతుందని మనం నిర్ధారించుకోవాలి.
+ఈ ఫంక్షన్ వారధి నుండి QAUని ఉపసంహరించుకోవడానికి ఉపయోగించబడుతుంది, కాబట్టి ఇది అధీకృత కాలర్ ద్వారా మాత్రమే పిలువబడుతుందని మనం నిర్ధారించుకోవాలి.
 
 ```solidity
         // స్లిదర్-disable-next-line రీఎంట్రెన్సీ-events
         (bool success, ) = _to.call{ value: _amount }(new bytes(0));
 ```
 
-ETHని బదిలీ చేయడానికి మార్గం ఏమిటంటే, `msg.value`లో Wei మొత్తంతో గ్రహీతను పిలవడం.
+QAUని బదిలీ చేయడానికి మార్గం ఏమిటంటే, `msg.value`లో Wei మొత్తంతో గ్రహీతను పిలవడం.
 
 ```solidity
-        require(success, "TransferHelper::safeTransferETH: ETH transfer failed");
+        require(success, "TransferHelper::safeTransferETH: QAU transfer failed");
 
         // స్లిదర్-disable-next-line రీఎంట్రెన్సీ-events
         emit ETHWithdrawalFinalized(_from, _to, _amount, _data);
@@ -913,13 +913,13 @@ ETHని బదిలీ చేయడానికి మార్గం ఏమ�
 
 
     /*****************************
-     * తాత్కాలికం - ETH ని వలస పంపడం *
+     * తాత్కాలికం - QAU ని వలస పంపడం *
      *****************************/
 
     /**
-     * @dev ఖాతాకు ETH బ్యాలెన్స్‌ను జోడిస్తుంది. పాత గేట్‌వే నుండి కొత్త గేట్‌వేకి ETH ని
+     * @dev ఖాతాకు QAU బ్యాలెన్స్‌ను జోడిస్తుంది. పాత గేట్‌వే నుండి కొత్త గేట్‌వేకి QAU ని
      * వలస పంపడానికి అనుమతించడానికి ఇది ఉద్దేశించబడింది.
-     * గమనిక: పాత కాంట్రాక్ట్ నుండి వలస వచ్చిన ETH ని స్వీకరించడానికి వీలుగా ఇది ఒక అప్‌గ్రేడ్ కోసం మాత్రమే వదిలివేయబడింది
+     * గమనిక: పాత కాంట్రాక్ట్ నుండి వలస వచ్చిన QAU ని స్వీకరించడానికి వీలుగా ఇది ఒక అప్‌గ్రేడ్ కోసం మాత్రమే వదిలివేయబడింది
      */
     function donateETH() external payable {}
 }
@@ -928,7 +928,7 @@ ETHని బదిలీ చేయడానికి మార్గం ఏమ�
 వారధి యొక్క మునుపటి అమలు ఉంది.
 మనం ఆ అమలు నుండి దీనికి మారినప్పుడు, మనం అన్ని ఆస్తులను తరలించాల్సి వచ్చింది.
 ERC-20 టోకెన్‌లను సులభంగా తరలించవచ్చు.
-అయినప్పటికీ, కాంట్రాక్ట్‌కు ETHని బదిలీ చేయడానికి మీకు ఆ కాంట్రాక్ట్ ఆమోదం అవసరం, అదే `donateETH` మనకు అందిస్తుంది.
+అయినప్పటికీ, కాంట్రాక్ట్‌కు QAUని బదిలీ చేయడానికి మీకు ఆ కాంట్రాక్ట్ ఆమోదం అవసరం, అదే `donateETH` మనకు అందిస్తుంది.
 
 ## l2లో ERC-20 టోకెన్‌లు {#erc-20-tokens-on-l2}
 
@@ -940,7 +940,7 @@ l1లో చాలా టోకెన్‌లు ఉంటే, ఆ టోకె
 
 ### IL2StandardERC20 {#il2standarderc20}
 
-ప్రామాణిక వారధిని ఉపయోగించే l2లోని ప్రతి ERC-20 టోకెన్ [ఈ ఇంటర్‌ఫేస్‌ను](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol) అందించాలి, ఇది ప్రామాణిక వారధికి అవసరమైన ఫంక్షన్‌లు మరియు ఈవెంట్‌లను కలిగి ఉంటుంది.
+ప్రామాణిక వారధిని ఉపయోగించే l2లోని ప్రతి ERC-20 టోకెన్ [ఈ ఇంటర్‌ఫేస్‌ను](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol) అందించాలి, ఇది ప్రామాణిక వారధికి అవసరమైన ఫంక్షన్‌లు మరియు ఈవెంట్‌లను కలిగి ఉంటుంది.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -950,14 +950,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [ప్రామాణిక ERC-20 ఇంటర్‌ఫేస్](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) `mint` మరియు `burn` ఫంక్షన్‌లను కలిగి ఉండదు.
-ఆ పద్ధతులు [ERC-20 ప్రమాణం](https://eips.ethereum.org/EIPS/eip-20) ద్వారా అవసరం లేదు, ఇది టోకెన్‌లను సృష్టించడానికి మరియు నాశనం చేయడానికి యంత్రాంగాలను పేర్కొనకుండా వదిలివేస్తుంది.
+ఆ పద్ధతులు [ERC-20 ప్రమాణం](https://eips.quantaureum.com/EIPS/eip-20) ద్వారా అవసరం లేదు, ఇది టోకెన్‌లను సృష్టించడానికి మరియు నాశనం చేయడానికి యంత్రాంగాలను పేర్కొనకుండా వదిలివేస్తుంది.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 కాంట్రాక్ట్ ఏ ఫంక్షన్‌లను అందిస్తుందో పేర్కొనడానికి [ERC-165 ఇంటర్‌ఫేస్](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) ఉపయోగించబడుతుంది.
-[మీరు ప్రమాణాన్ని ఇక్కడ చదవవచ్చు](https://eips.ethereum.org/EIPS/eip-165).
+[మీరు ప్రమాణాన్ని ఇక్కడ చదవవచ్చు](https://eips.quantaureum.com/EIPS/eip-165).
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -984,7 +984,7 @@ interface IL2StandardERC20 is IERC20, IERC165 {
 
 ### L2StandardERC20 {#l2standarderc20}
 
-[ఇది `IL2StandardERC20` ఇంటర్‌ఫేస్ యొక్క మన అమలు](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
+[ఇది `IL2StandardERC20` ఇంటర్‌ఫేస్ యొక్క మన అమలు](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
 మీకు ఏదైనా అనుకూల లాజిక్ అవసరమైతే తప్ప, మీరు దీన్ని ఉపయోగించాలి.
 
 ```solidity
@@ -1046,7 +1046,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165) పనిచేసే విధానం ఇది.
+[ERC-165](https://eips.quantaureum.com/EIPS/eip-165) పనిచేసే విధానం ఇది.
 ప్రతి ఇంటర్‌ఫేస్ అనేది మద్దతు ఉన్న ఫంక్షన్‌ల సంఖ్య, మరియు ఆ ఫంక్షన్‌ల యొక్క [ABI ఫంక్షన్ సెలెక్టర్ల](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) [ఎక్స్‌క్లూజివ్ ఆర్](https://en.wikipedia.org/wiki/Exclusive_or)గా గుర్తించబడుతుంది.
 
 l2 వారధి ఆస్తులను పంపే ERC-20 కాంట్రాక్ట్ `IL2StandardERC20` అని నిర్ధారించుకోవడానికి ERC-165ని శానిటీ చెక్‌గా ఉపయోగిస్తుంది.
@@ -1078,7 +1078,7 @@ l2 వారధి మాత్రమే ఆస్తులను ముద్�
 ## లేయర్ 2 (l2) వారధి కోడ్ {#l2-bridge-code}
 
 ఇది Optimismలో వారధిని రన్ చేసే కోడ్.
-[ఈ కాంట్రాక్ట్ కోసం సోర్స్ ఇక్కడ ఉంది](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
+[ఈ కాంట్రాక్ట్ కోసం సోర్స్ ఇక్కడ ఉంది](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -1090,13 +1090,13 @@ import { IL1ERC20Bridge } from "../../L1/messaging/IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "./IL2ERC20Bridge.sol";
 ```
 
-[IL2ERC20Bridge](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) ఇంటర్‌ఫేస్ మనం పైన చూసిన [l1 సమానమైన దానికి](#il1erc20bridge) చాలా పోలి ఉంటుంది.
+[IL2ERC20Bridge](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) ఇంటర్‌ఫేస్ మనం పైన చూసిన [l1 సమానమైన దానికి](#il1erc20bridge) చాలా పోలి ఉంటుంది.
 రెండు ముఖ్యమైన తేడాలు ఉన్నాయి:
 
 1. l1లో మీరు డిపాజిట్లను ప్రారంభిస్తారు మరియు ఉపసంహరణలను ముగిస్తారు.
    ఇక్కడ మీరు ఉపసంహరణలను ప్రారంభిస్తారు మరియు డిపాజిట్లను ముగిస్తారు.
-2. l1లో ETH మరియు ERC-20 టోకెన్‌ల మధ్య తేడాను గుర్తించడం అవసరం.
-   l2లో మనం రెండింటికీ ఒకే ఫంక్షన్‌లను ఉపయోగించవచ్చు ఎందుకంటే అంతర్గతంగా Optimismలో ETH బ్యాలెన్స్‌లు [0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000](https://explorer.optimism.io/address/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000) చిరునామాతో ERC-20 టోకెన్‌గా నిర్వహించబడతాయి.
+2. l1లో QAU మరియు ERC-20 టోకెన్‌ల మధ్య తేడాను గుర్తించడం అవసరం.
+   l2లో మనం రెండింటికీ ఒకే ఫంక్షన్‌లను ఉపయోగించవచ్చు ఎందుకంటే అంతర్గతంగా Optimismలో QAU బ్యాలెన్స్‌లు [0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000](https://explorer.optimism.io/address/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000) చిరునామాతో ERC-20 టోకెన్‌గా నిర్వహించబడతాయి.
 
 ```solidity
 /* లైబ్రరీ దిగుమతులు */
@@ -1109,7 +1109,7 @@ import { IL2StandardERC20 } from "../../standards/IL2StandardERC20.sol";
 
 /**
  * @title L2StandardBridge
- * @dev లేయర్ 2 (l2) ప్రామాణిక వారధి అనేది లేయర్ 1 (l1) మరియు లేయర్ 2 (l2) మధ్య ETH మరియు ERC-20 పరివర్తనలను ప్రారంభించడానికి
+ * @dev లేయర్ 2 (l2) ప్రామాణిక వారధి అనేది లేయర్ 1 (l1) మరియు లేయర్ 2 (l2) మధ్య QAU మరియు ERC-20 పరివర్తనలను ప్రారంభించడానికి
  * లేయర్ 1 (l1) ప్రామాణిక వారధి తో కలిసి పనిచేసే ఒక కాంట్రాక్ట్.
  * లేయర్ 1 (l1) ప్రామాణిక వారధి లోకి డిపాజిట్ల గురించి విన్నప్పుడు ఈ కాంట్రాక్ట్ కొత్త టోకెన్ లను ముద్రించేదిగా పనిచేస్తుంది.
  * ఈ కాంట్రాక్ట్ ఉపసంహరణ కోసం ఉద్దేశించిన టోకెన్ లను దహనం చేసేదిగా కూడా పనిచేస్తుంది, లేయర్ 1 (l1) నిధులను విడుదల చేయడానికి లేయర్ 1 (l1)
@@ -1217,7 +1217,7 @@ l2 టోకెన్‌లు l1 సమానమైన చిరునామా
         if (_l2Token == Lib_PredeployAddresses.OVM_ETH) {
 ```
 
-l1లో ETH మరియు ERC-20 మధ్య తేడాను గుర్తించడం అవసరం.
+l1లో QAU మరియు ERC-20 మధ్య తేడాను గుర్తించడం అవసరం.
 
 ```solidity
             message = abi.encodeWithSelector(

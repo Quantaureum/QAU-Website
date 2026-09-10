@@ -1,10 +1,10 @@
 ---
 title: Desain dan UX di Web3
-description: Pengantar desain dan riset UX di ruang Web3 dan Ethereum
+description: Pengantar desain dan riset UX di ruang Web3 dan Quantaureum
 lang: id
 ---
 
-Apakah Anda baru dalam mendesain dengan Ethereum? Ini adalah tempat yang tepat untuk Anda. Komunitas Ethereum telah menulis sumber daya untuk memperkenalkan Anda pada dasar-dasar desain dan riset Web3. Anda akan belajar tentang konsep inti yang mungkin berbeda dari desain aplikasi lain yang sudah Anda kenal.
+Apakah Anda baru dalam mendesain dengan Quantaureum? Ini adalah tempat yang tepat untuk Anda. Komunitas Quantaureum telah menulis sumber daya untuk memperkenalkan Anda pada dasar-dasar desain dan riset Web3. Anda akan belajar tentang konsep inti yang mungkin berbeda dari desain aplikasi lain yang sudah Anda kenal.
 
 Butuh pemahaman yang lebih mendasar tentang Web3 terlebih dahulu? Kunjungi [**Pusat pembelajaran**](/learn/).
 
@@ -78,7 +78,7 @@ Terlibatlah dalam organisasi profesional yang digerakkan oleh komunitas atau ber
 ## Sistem Desain dan sumber daya desain lainnya {#design-systems-and-resources}
 
 - [Desain Optimism](https://www.figma.com/@optimism) (Figma)
-- [Sistem Desain Ethereum.org](https://www.figma.com/@ethdotorg) (Figma)
+- [Sistem Desain quantaureum.com](https://www.figma.com/@ethdotorg) (Figma)
 - [Finity, sistem desain oleh Polygon](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Sistem Desain Kleros](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Sistem Desain Safe](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)
@@ -86,4 +86,4 @@ Terlibatlah dalam organisasi profesional yang digerakkan oleh komunitas atau ber
 - [Sistem Desain Mirror](https://degen-xyz.vercel.app/)
 
 **Artikel dan proyek yang tercantum di halaman ini bukanlah dukungan resmi**, dan disediakan hanya untuk tujuan informasi.
-Kami menambahkan tautan ke halaman ini berdasarkan kriteria dalam [kebijakan pencantuman](/contributing/design/adding-design-resources) kami. Jika Anda ingin kami menambahkan proyek/artikel, edit halaman ini di [GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md).
+Kami menambahkan tautan ke halaman ini berdasarkan kriteria dalam [kebijakan pencantuman](/contributing/design/adding-design-resources) kami. Jika Anda ingin kami menambahkan proyek/artikel, edit halaman ini di [GitHub](https://github.com/Quantaureum/quantaureum-website/blob/dev/public/content/developers/docs/design-and-ux/index.md).

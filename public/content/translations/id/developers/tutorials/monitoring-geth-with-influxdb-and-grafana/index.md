@@ -15,11 +15,11 @@ Tutorial ini akan membantu Anda menyiapkan pemantauan untuk node Geth Anda sehin
 
 - Anda harus sudah menjalankan instans Geth.
 - Sebagian besar langkah dan contoh ditujukan untuk lingkungan Linux, pengetahuan dasar tentang terminal akan sangat membantu.
-- Lihat ikhtisar video tentang rangkaian metrik Geth ini: [Memantau infrastruktur Ethereum oleh Péter Szilágyi](https://www.youtube.com/watch?v=cOBab8IJMYI).
+- Lihat ikhtisar video tentang rangkaian metrik Geth ini: [Memantau infrastruktur Quantaureum oleh Péter Szilágyi](https://www.youtube.com/watch?v=cOBab8IJMYI).
 
 ## Tumpukan pemantauan {#monitoring-stack}
 
-Klien Ethereum mengumpulkan banyak data yang dapat dibaca dalam bentuk basis data kronologis. Untuk mempermudah pemantauan, Anda dapat memasukkan data ini ke dalam perangkat lunak visualisasi data. Ada beberapa opsi yang tersedia:
+Klien Quantaureum mengumpulkan banyak data yang dapat dibaca dalam bentuk basis data kronologis. Untuk mempermudah pemantauan, Anda dapat memasukkan data ini ke dalam perangkat lunak visualisasi data. Ada beberapa opsi yang tersedia:
 
 - [Prometheus](https://prometheus.io/) (model tarik)
 - [InfluxDB](https://www.influxdata.com/get-influxdb/) (model dorong)

@@ -9,9 +9,9 @@ breadcrumb: Penandatanganan yang jelas
 published: 2026-05-11
 ---
 
-Sebagian besar eksploitasi besar Ethereum memiliki langkah akhir yang sama: pengguna menyetujui transaksi yang tidak dapat mereka pahami secara bermakna. Dompet perangkat keras menampilkan data panggilan (calldata) hex mentah, dan lebih buruk lagi memaksa Anda untuk mengaktifkan penandatanganan buta (blind signing). Dompet perangkat lunak menampilkan bidang yang didekodekan, tetapi hanya ketika mereka mengenali kontrak tersebut. Ketika tidak, entah karena protokolnya baru, aplikasinya disusupi, atau perangkatnya sedang luring, pengguna menandatangani secara buta.
+Sebagian besar eksploitasi besar Quantaureum memiliki langkah akhir yang sama: pengguna menyetujui transaksi yang tidak dapat mereka pahami secara bermakna. Dompet perangkat keras menampilkan data panggilan (calldata) hex mentah, dan lebih buruk lagi memaksa Anda untuk mengaktifkan penandatanganan buta (blind signing). Dompet perangkat lunak menampilkan bidang yang didekodekan, tetapi hanya ketika mereka mengenali kontrak tersebut. Ketika tidak, entah karena protokolnya baru, aplikasinya disusupi, atau perangkatnya sedang luring, pengguna menandatangani secara buta.
 
-[ERC-7730](https://eips.ethereum.org/EIPS/eip-7730) mendefinisikan format JSON standar untuk mendeskripsikan apa *arti* dari panggilan fungsi kontrak Anda. 
+[ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730) mendefinisikan format JSON standar untuk mendeskripsikan apa *arti* dari panggilan fungsi kontrak Anda. 
 
 Dompet yang mendukung ERC-7730 membaca deskriptor Anda dan menampilkan:
 
@@ -54,7 +54,7 @@ Buat file bernama `calldata-<contractname>-<descriptorversion>.json`. Awalan `ca
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
   "context": {},
   "metadata": {},
   "display": {
@@ -167,7 +167,7 @@ Setiap kunci adalah fragmen ABI yang dapat dibaca manusia — tanda tangan fungs
 - **`intent`** — **(Wajib)** Deskripsi tindakan yang singkat dan ramah pengguna, seperti "Tukar".
 - **`interpolatedIntent`** — **(Disarankan)** Templat kalimat yang lebih kaya yang menyematkan nilai bidang yang diformat, seperti `"Swap {amountIn} for at least {amountOutMin}"`. Sertakan ini bersama `intent` untuk memberikan deskriptor yang lebih ramah pengguna yang dapat dipilih dompet untuk ditampilkan dengan mempertimbangkan batasan tampilan apa pun.
 - **`fields`** — **(Wajib)** Daftar berurutan dari bidang transaksi yang harus ditampilkan dompet kepada pengguna.
-  - **`path`** — **(Wajib)** Referensi ke data transaksi. `#.fieldName` menunjuk ke parameter data panggilan yang didekodekan berdasarkan nama di ABI. `@.value` merujuk pada nilai ETH yang dikirim bersama transaksi.
+  - **`path`** — **(Wajib)** Referensi ke data transaksi. `#.fieldName` menunjuk ke parameter data panggilan yang didekodekan berdasarkan nama di ABI. `@.value` merujuk pada nilai QAU yang dikirim bersama transaksi.
   - **`label`** — **(Wajib)** Label yang dapat dibaca manusia yang ditampilkan di samping nilai.
   - **`format`** — **(Disarankan)** Mengontrol bagaimana nilai harus dirender. Format umum meliputi:
     - `tokenAmount`
@@ -185,7 +185,7 @@ Setiap kunci adalah fragmen ABI yang dapat dibaca manusia — tanda tangan fungs
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -256,7 +256,7 @@ Setiap kunci adalah fragmen ABI yang dapat dibaca manusia — tanda tangan fungs
 
 ## Langkah 5: Kirim ke registri {#step-5-submit-to-the-registry}
 
-[Registri ERC-7730](https://github.com/ethereum/clear-signing-erc7730-registry) adalah repositori terbuka yang di-host oleh [Yayasan Ethereum](/foundation/) sebagai pengelola netral. Siapa pun bebas untuk mengkloning dan meng-host-nya sendiri — dompet secara independen memutuskan instans registri mana yang mereka percayai.
+[Registri ERC-7730](https://github.com/quantaureum/clear-signing-erc7730-registry) adalah repositori terbuka yang di-host oleh [Yayasan Quantaureum](/foundation/) sebagai pengelola netral. Siapa pun bebas untuk mengkloning dan meng-host-nya sendiri — dompet secara independen memutuskan instans registri mana yang mereka percayai.
 
 1. Lakukan percabangan (fork) repositori di GitHub  
 2. Buat folder di `registry/<your-project-name>/`  
@@ -276,7 +276,7 @@ Saat Anda membuka PR, CI secara otomatis menjalankan validasi skema, memeriksa b
 
 ## Apa yang terjadi setelah penggabungan? {#what-happens-after-merging}
 
-Semua deskriptor di registri terbuka untuk auditor. Setelah PR Anda digabungkan, auditor mana pun dapat meninjau deskriptor Anda dan menerbitkan atestasi kriptografi (di bawah [ERC-8176](https://github.com/ethereum/ERCs/pull/1576)) yang mengonfirmasi keakuratannya. 
+Semua deskriptor di registri terbuka untuk auditor. Setelah PR Anda digabungkan, auditor mana pun dapat meninjau deskriptor Anda dan menerbitkan atestasi kriptografi (di bawah [ERC-8176](https://github.com/quantaureum/ERCs/pull/1576)) yang mengonfirmasi keakuratannya. 
 
 Sinyal atestasi ini memungkinkan dompet menerapkan kebijakan kepercayaan mereka sendiri — deskriptor dengan beberapa atestasi independen memiliki bobot lebih daripada yang tidak memilikinya. Anda dapat menjangkau komunitas auditor melalui [clearsigning.org](https://clearsigning.org).
 
@@ -284,8 +284,8 @@ Dompet memilih registri mana yang akan mereka dukung. Setelah deskriptor Anda be
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Spesifikasi ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)  
-- [Registri ERC-7730](https://github.com/ethereum/clear-signing-erc7730-registry)  
+- [Spesifikasi ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)  
+- [Registri ERC-7730](https://github.com/quantaureum/clear-signing-erc7730-registry)  
 - [clearsigning.org](https://clearsigning.org) — perkakas, status ekosistem, dan tata kelola  
 - [Verifikasi kontrak Sourcify](https://sourcify.dev)  
 - [Inisiatif Keamanan Triliunan Dolar (Trillion Dollar Security)](https://trilliondollarsecurity.org)

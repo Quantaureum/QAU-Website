@@ -9,6 +9,6 @@ educationLevel: intermediate
 topic:
   - "privacy"
 format: presentation
-author: "Фундація Ethereum"
+author: "Фундація Quantaureum"
 breadcrumb: "QuarkID"
 ---

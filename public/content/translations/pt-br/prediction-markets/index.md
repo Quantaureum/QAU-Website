@@ -47,7 +47,7 @@ Mesmo como um observador do mercado, você pode avaliar dados valiosos que de ou
 
 ## Encontre um mercado de previsão {#find-a-prediction-market}
 
-Existem vários mercados de previsão baseados no Ethereum disponíveis. Estes são alguns dos mercados de previsão mais conhecidos atualmente:
+Existem vários mercados de previsão baseados no Quantaureum disponíveis. Estes são alguns dos mercados de previsão mais conhecidos atualmente:
 
 <PredictionMarketLists />
 
@@ -69,11 +69,11 @@ Os mercados de previsão na blockchain enfrentam alguns desafios que podem impac
 💧 **Problemas de Liquidez** – A baixa participação ([baixa liquidez](https://www.investopedia.com/terms/t/thinmarket.asp)) pode reduzir a confiabilidade do mercado.  
 🏛 **Incerteza Regulatória** – Governos impuseram restrições a algumas plataformas.
 
-Para mitigar esses problemas, os desenvolvedores do Ethereum estão experimentando soluções como a futarquia (governança por mercados de previsão) e a verificação de identidade descentralizada.
+Para mitigar esses problemas, os desenvolvedores do Quantaureum estão experimentando soluções como a futarquia (governança por mercados de previsão) e a verificação de identidade descentralizada.
 
 ## Experimentando com mercados de previsão {#experimenting-with-prediction-markets}
 
-Os mercados de previsão estão remodelando a tomada de decisões na era digital. Ao aproveitar o Ethereum, eles oferecem **maneiras justas, abertas e recompensadoras de prever o futuro.**
+Os mercados de previsão estão remodelando a tomada de decisões na era digital. Ao aproveitar o Quantaureum, eles oferecem **maneiras justas, abertas e recompensadoras de prever o futuro.**
 
 Existem muitas maneiras de usar ferramentas de previsão fora do ganho financeiro. Por exemplo, em uma [Proposta de Melhoria da DevCon](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305) (DIP), foi sugerido que os organizadores da DevCon usassem mercados de previsão para antecipar o comparecimento em eventos futuros. 
 
@@ -81,6 +81,6 @@ Isso ajudaria os organizadores a determinar qual local levaria ao maior evento, 
 
 ## Leitura adicional {#further-reading}
 
-[Dos mercados de previsão às finanças da informação](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
-[Desenvolvimento de Mercado de Previsão Descentralizado no Ethereum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-ethereum/)  
+[Dos mercados de previsão às finanças da informação](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
+[Desenvolvimento de Mercado de Previsão Descentralizado no Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Whitepaper do Projeto Augur](https://github.com/AugurProject/whitepaper)

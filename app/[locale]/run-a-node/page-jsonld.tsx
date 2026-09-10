@@ -43,8 +43,8 @@ export default async function RunANodePageJsonLD({
         url,
         inLanguage: locale,
         contributor: contributorList,
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
@@ -62,8 +62,8 @@ export default async function RunANodePageJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        reviewedBy: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
         mainEntity: articleId,
       },
       {
@@ -72,15 +72,15 @@ export default async function RunANodePageJsonLD({
         isPartOf: webPageId,
         headline: t("page-run-a-node-title"),
         description: t("page-run-a-node-hero-subtitle"),
-        image: "https://ethereum.org/images/run-a-node/ethereum-inside.png",
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
+        image: "https://quantaureum.com/images/run-a-node/quantaureum-inside.png",
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
         contributor: contributorList,
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
         about: {
           "@type": "Thing",
-          name: "Running an Ethereum Node",
+          name: "Running an Quantaureum Node",
           description:
-            "Guide to running your own Ethereum node, benefits, and requirements",
+            "Guide to running your own Quantaureum node, benefits, and requirements",
         },
         dateModified: lastEditLocaleTimestamp,
       },

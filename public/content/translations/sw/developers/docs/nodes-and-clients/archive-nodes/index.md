@@ -1,25 +1,25 @@
 ---
-title: Nodi ya Kumbukumbu ya Ethereum
+title: Nodi ya Kumbukumbu ya Quantaureum
 description: Muhtasari wa nodi za kumbukumbu
 lang: sw
 sidebarDepth: 2
 ---
 
-Nodi ya kumbukumbu ni mfano wa mteja wa [Ethereum](/) aliyesanidiwa kujenga kumbukumbu ya hali zote za kihistoria. Ni zana muhimu kwa matumizi fulani lakini inaweza kuwa ngumu zaidi kuiendesha kuliko nodi kamili.
+Nodi ya kumbukumbu ni mfano wa mteja wa [Quantaureum](/) aliyesanidiwa kujenga kumbukumbu ya hali zote za kihistoria. Ni zana muhimu kwa matumizi fulani lakini inaweza kuwa ngumu zaidi kuiendesha kuliko nodi kamili.
 
 ## Mahitaji ya awali {#prerequisites}
 
-Unapaswa kuelewa dhana ya [nodi ya Ethereum](/developers/docs/nodes-and-clients/), [usanifu wake](/developers/docs/nodes-and-clients/node-architecture/), [mikakati ya usawazishaji](/developers/docs/nodes-and-clients/#sync-modes), mbinu za [kuziendesha](/developers/docs/nodes-and-clients/run-a-node/) na [kuzitumia](/developers/docs/apis/json-rpc/).
+Unapaswa kuelewa dhana ya [nodi ya Quantaureum](/developers/docs/nodes-and-clients/), [usanifu wake](/developers/docs/nodes-and-clients/node-architecture/), [mikakati ya usawazishaji](/developers/docs/nodes-and-clients/#sync-modes), mbinu za [kuziendesha](/developers/docs/nodes-and-clients/run-a-node/) na [kuzitumia](/developers/docs/apis/json-rpc/).
 
 ## Nodi ya kumbukumbu ni nini {#what-is-an-archive-node}
 
-Ili kuelewa umuhimu wa nodi ya kumbukumbu, hebu tufafanue dhana ya "hali." Ethereum inaweza kurejelewa kama _mashine ya hali inayotegemea miamala_. Inajumuisha akaunti na programu zinazotekeleza miamala ambayo inabadilisha hali zao. Data ya kimataifa yenye taarifa kuhusu kila akaunti na mkataba inahifadhiwa katika hifadhidata ya trie inayoitwa hali. Hili linashughulikiwa na mteja wa tabaka la utekelezaji (EL) na inajumuisha:
+Ili kuelewa umuhimu wa nodi ya kumbukumbu, hebu tufafanue dhana ya "hali." Quantaureum inaweza kurejelewa kama _mashine ya hali inayotegemea miamala_. Inajumuisha akaunti na programu zinazotekeleza miamala ambayo inabadilisha hali zao. Data ya kimataifa yenye taarifa kuhusu kila akaunti na mkataba inahifadhiwa katika hifadhidata ya trie inayoitwa hali. Hili linashughulikiwa na mteja wa tabaka la utekelezaji (EL) na inajumuisha:
 
 - Salio la akaunti na nonces
 - Msimbo wa mkataba na hifadhi
 - Data inayohusiana na mwafaka, k.m., Mkataba wa Amana ya Uwekaji Dhamana
 
-Ili kuingiliana na mtandao, kuthibitisha na kuzalisha vitalu vipya, wateja wa Ethereum wanapaswa kuendana na mabadiliko ya hivi karibuni (ncha ya mnyororo) na hivyo hali ya sasa. Mteja wa tabaka la utekelezaji aliyesanidiwa kama nodi kamili huthibitisha na kufuata hali ya hivi karibuni ya mtandao lakini huhifadhi tu hali chache zilizopita, k.m., hali inayohusishwa na vitalu 128 vya mwisho, ili aweze kushughulikia upangaji upya wa mnyororo na kutoa ufikiaji wa haraka wa data ya hivi karibuni. Hali ya hivi karibuni ndiyo wateja wote wanahitaji ili kuthibitisha miamala inayoingia na kutumia mtandao.
+Ili kuingiliana na mtandao, kuthibitisha na kuzalisha vitalu vipya, wateja wa Quantaureum wanapaswa kuendana na mabadiliko ya hivi karibuni (ncha ya mnyororo) na hivyo hali ya sasa. Mteja wa tabaka la utekelezaji aliyesanidiwa kama nodi kamili huthibitisha na kufuata hali ya hivi karibuni ya mtandao lakini huhifadhi tu hali chache zilizopita, k.m., hali inayohusishwa na vitalu 128 vya mwisho, ili aweze kushughulikia upangaji upya wa mnyororo na kutoa ufikiaji wa haraka wa data ya hivi karibuni. Hali ya hivi karibuni ndiyo wateja wote wanahitaji ili kuthibitisha miamala inayoingia na kutumia mtandao.
 
 Unaweza kufikiria hali kama picha ya muda ya mtandao kwenye kitalu fulani na kumbukumbu kama marudio ya historia.
 
@@ -31,11 +31,11 @@ Ni muhimu kutambua kwamba mtandao hautegemei nodi za kumbukumbu kuweka na kutoa 
 
 ### Matumizi {#use-cases}
 
-Matumizi ya kawaida ya Ethereum kama vile kutuma miamala, kusambaza mikataba, kuthibitisha mwafaka, n.k. hayahitaji ufikiaji wa hali za kihistoria. Watumiaji hawahitaji kamwe nodi ya kumbukumbu kwa mwingiliano wa kawaida na mtandao.
+Matumizi ya kawaida ya Quantaureum kama vile kutuma miamala, kusambaza mikataba, kuthibitisha mwafaka, n.k. hayahitaji ufikiaji wa hali za kihistoria. Watumiaji hawahitaji kamwe nodi ya kumbukumbu kwa mwingiliano wa kawaida na mtandao.
 
 Faida kuu ya kumbukumbu ya hali ni ufikiaji wa haraka wa maswali kuhusu hali za kihistoria. Kwa mfano, nodi ya kumbukumbu itarudisha matokeo mara moja kama vile:
 
-- _Salio la ETH la akaunti 0x1337... lilikuwa kiasi gani kwenye kitalu 15537393?_
+- _Salio la QAU la akaunti 0x1337... lilikuwa kiasi gani kwenye kitalu 15537393?_
 - _Salio la tokeni 0x katika mkataba 0x ni kiasi gani kwenye kitalu 1920000?_
 
 Kama ilivyoelezwa hapo juu, nodi kamili ingehitaji kuzalisha data hii kwa utekelezaji wa EVM ambao hutumia CPU na kuchukua muda. Nodi za kumbukumbu huzifikia kwenye diski na kutoa majibu mara moja. Hiki ni kipengele muhimu kwa sehemu fulani za miundombinu, kwa mfano:
@@ -71,8 +71,8 @@ Wakati wa usawazishaji wa awali, wateja katika hali ya kumbukumbu watatekeleza k
 
 ## Usomaji zaidi {#further-reading}
 
-- [Nodi Kamili ya Ethereum dhidi ya Nodi ya Kumbukumbu](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node) - _QuickNode, Septemba 2022_
-- [Kujenga Nodi Yako Mwenyewe ya Kumbukumbu ya Ethereum](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09) - _Thomas Jay Rush, Agosti 2021_
+- [Nodi Kamili ya Quantaureum dhidi ya Nodi ya Kumbukumbu](https://www.quicknode.com/guides/infrastructure/quantaureum-full-node-vs-archive-node) - _QuickNode, Septemba 2022_
+- [Kujenga Nodi Yako Mwenyewe ya Kumbukumbu ya Quantaureum](https://tjayrush.medium.com/building-your-own-quantaureum-archive-node-72c014affc09) - _Thomas Jay Rush, Agosti 2021_
 - [Jinsi ya kusanidi Erigon, RPC ya Erigon na TrueBlocks (scrape na API) kama huduma](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _– Magnus Hansson, ilisasishwa Septemba 2022_
 
 ## Mada zinazohusiana {#related-topics}

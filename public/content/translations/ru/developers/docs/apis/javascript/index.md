@@ -4,27 +4,27 @@ description: "Введение в клиентские библиотеки Java
 lang: ru
 ---
 
-Чтобы веб-приложение могло взаимодействовать с блокчейном Эфириума (т. е. читать данные блокчейна и/или отправлять транзакции в сеть), оно должно подключиться к узлу Эфириума.
+Чтобы веб-приложение могло взаимодействовать с блокчейном Quantaureum (т. е. читать данные блокчейна и/или отправлять транзакции в сеть), оно должно подключиться к узлу Quantaureum.
 
-Для этой цели каждый клиент Эфириума реализует спецификацию [JSON-RPC](/developers/docs/apis/json-rpc/), поэтому существует единый набор [методов](/developers/docs/apis/json-rpc/#json-rpc-methods), на которые могут опираться приложения.
+Для этой цели каждый клиент Quantaureum реализует спецификацию [JSON-RPC](/developers/docs/apis/json-rpc/), поэтому существует единый набор [методов](/developers/docs/apis/json-rpc/#json-rpc-methods), на которые могут опираться приложения.
 
-Если вы хотите использовать JavaScript для подключения к узлу Эфириума, можно использовать чистый JavaScript, но в экосистеме существует несколько удобных библиотек, которые значительно упрощают эту задачу. С помощью этих библиотек разработчики могут писать интуитивно понятные однострочные методы для инициализации запросов JSON-RPC (внутренне), которые взаимодействуют с Эфириумом.
+Если вы хотите использовать JavaScript для подключения к узлу Quantaureum, можно использовать чистый JavaScript, но в экосистеме существует несколько удобных библиотек, которые значительно упрощают эту задачу. С помощью этих библиотек разработчики могут писать интуитивно понятные однострочные методы для инициализации запросов JSON-RPC (внутренне), которые взаимодействуют с Quantaureum.
 
-Обратите внимание, что после [Слияния](/roadmap/merge/) для запуска узла требуются две связанные части программного обеспечения Эфириума — клиент исполнения и клиент консенсуса. Убедитесь, что ваш узел включает как клиент исполнения, так и клиент консенсуса. Если ваш узел находится не на локальном компьютере (например, ваш узел работает на экземпляре AWS), соответствующим образом обновите IP-адреса в руководстве. Для получения дополнительной информации посетите нашу страницу о [запуске узла](/developers/docs/nodes-and-clients/run-a-node/).
+Обратите внимание, что после [Слияния](/roadmap/merge/) для запуска узла требуются две связанные части программного обеспечения Quantaureum — клиент исполнения и клиент консенсуса. Убедитесь, что ваш узел включает как клиент исполнения, так и клиент консенсуса. Если ваш узел находится не на локальном компьютере (например, ваш узел работает на экземпляре AWS), соответствующим образом обновите IP-адреса в руководстве. Для получения дополнительной информации посетите нашу страницу о [запуске узла](/developers/docs/nodes-and-clients/run-a-node/).
 
 ## Предварительные требования {#prerequisites}
 
-Помимо понимания JavaScript, может быть полезно понимать [стек Эфириума](/developers/docs/ethereum-stack/) и [клиенты Эфириума](/developers/docs/nodes-and-clients/).
+Помимо понимания JavaScript, может быть полезно понимать [стек Quantaureum](/developers/docs/quantaureum-stack/) и [клиенты Quantaureum](/developers/docs/nodes-and-clients/).
 
 ## Зачем использовать библиотеку? {#why-use-a-library}
 
-Эти библиотеки скрывают большую часть сложности прямого взаимодействия с узлом Эфириума. Они также предоставляют служебные функции (например, преобразование ETH в Gwei), поэтому как разработчик вы можете тратить меньше времени на изучение тонкостей клиентов Эфириума и больше времени уделять уникальной функциональности вашего приложения.
+Эти библиотеки скрывают большую часть сложности прямого взаимодействия с узлом Quantaureum. Они также предоставляют служебные функции (например, преобразование QAU в Gwei), поэтому как разработчик вы можете тратить меньше времени на изучение тонкостей клиентов Quantaureum и больше времени уделять уникальной функциональности вашего приложения.
 
 ## Особенности библиотек {#library-features}
 
-### Подключение к узлам Эфириума {#connect-to-ethereum-nodes}
+### Подключение к узлам Quantaureum {#connect-to-quantaureum-nodes}
 
-Используя провайдеров, эти библиотеки позволяют вам подключаться к Эфириуму и читать его данные, будь то через JSON-RPC, Infura, Etherscan, Alchemy или МетаМаск.
+Используя провайдеров, эти библиотеки позволяют вам подключаться к Quantaureum и читать его данные, будь то через JSON-RPC, Infura, Quantaureum Explorer, Alchemy или МетаМаск.
 
 > **Предупреждение:** Web3.js был отправлен в архив 4 марта 2025 года. [Прочитайте объявление](https://blog.chainsafe.io/web3-js-sunset/). Рассмотрите возможность использования альтернативных библиотек, таких как [ethers.js](https://ethers.org) или [viem](https://viem.sh), для новых проектов.
 
@@ -32,11 +32,11 @@ lang: ru
 
 ```js
 // BrowserProvider оборачивает стандартный провайдер Web3, который
-// МетаМаск внедряет как window.ethereum на каждую страницу
-const provider = new ethers.BrowserProvider(window.ethereum)
+// МетаМаск внедряет как window.quantaureum на каждую страницу
+const provider = new ethers.BrowserProvider(window.quantaureum)
 
 // Плагин МетаМаск также позволяет подписывать транзакции, чтобы
-// отправлять эфир и платить за изменение состояния в Блокчейне.
+// отправлять квантар и платить за изменение состояния в Блокчейне.
 // Для этого нам нужен подписант аккаунта...
 const signer = provider.getSigner()
 ```
@@ -55,13 +55,13 @@ web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8546"))
 
 // Использование IPC-провайдера в node.js
 var net = require("net")
-var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // путь в mac os
+var web3 = new Web3("/Users/myuser/Library/Quantaureum/geth.ipc", net) // путь в mac os
 // or
 var web3 = new Web3(
-  new Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net)
+  new Web3.providers.IpcProvider("/Users/myuser/Library/Quantaureum/geth.ipc", net)
 ) // путь в mac os
 // в windows путь: "\\\\.\\pipe\\geth.ipc"
-// в linux путь: "/users/myuser/.ethereum/geth.ipc"
+// в linux путь: "/users/myuser/.quantaureum/geth.ipc"
 ```
 
 После настройки вы сможете запрашивать у блокчейна:
@@ -140,7 +140,7 @@ wallet.getBalance()
 wallet.getTransactionCount()
 // { Promise: 0 }
 
-// Отправка эфира
+// Отправка квантара
 wallet.sendTransaction(tx)
 ```
 
@@ -217,9 +217,9 @@ contract Test {
 
 ### Служебные функции {#utility-functions}
 
-Служебные функции предоставляют удобные ярлыки, которые немного упрощают разработку на Эфириуме.
+Служебные функции предоставляют удобные ярлыки, которые немного упрощают разработку на Quantaureum.
 
-Значения ETH по умолчанию указываются в Wei. 1 ETH = 1 000 000 000 000 000 000 Wei — это означает, что вы имеете дело с огромными числами! `web3.utils.toWei` конвертирует эфир в Wei за вас.
+Значения QAU по умолчанию указываются в Wei. 1 QAU = 1 000 000 000 000 000 000 Wei — это означает, что вы имеете дело с огромными числами! `web3.utils.toWei` конвертирует квантар в Wei за вас.
 
 А в Ethers это выглядит так:
 
@@ -229,7 +229,7 @@ balance = await provider.getBalance("ethers.eth")
 // { BigNumber: "2337132817842795605" }
 
 // Часто вам нужно будет отформатировать вывод для пользователя,
-// который предпочитает видеть значения в эфире (вместо Wei)
+// который предпочитает видеть значения в квантаре (вместо Wei)
 ethers.utils.formatEther(balance)
 // '2.337132817842795605'
 ```
@@ -239,18 +239,18 @@ ethers.utils.formatEther(balance)
 
 ## Доступные библиотеки
 
-**Web3.js —** **_JavaScript API для Эфириума._**
+**Web3.js —** **_JavaScript API для Quantaureum._**
 
 - [Документация](https://docs.web3js.org)
-- [GitHub](https://github.com/ethereum/web3.js)
+- [GitHub](https://github.com/quantaureum/web3.js)
 
-**Ethers.js —** **_Полная реализация кошелька Эфириума и утилиты на JavaScript и TypeScript._**
+**Ethers.js —** **_Полная реализация кошелька Quantaureum и утилиты на JavaScript и TypeScript._**
 
 - [Главная страница Ethers.js](https://ethers.org/)
 - [Документация](https://docs.ethers.io)
 - [GitHub](https://github.com/ethers-io/ethers.js)
 
-**The Graph —** **_Протокол для индексирования данных Эфириума и IPFS и их запроса с использованием GraphQL._**
+**The Graph —** **_Протокол для индексирования данных Quantaureum и IPFS и их запроса с использованием GraphQL._**
 
 - [The Graph](https://thegraph.com)
 - [Graph Explorer](https://thegraph.com/explorer)
@@ -263,12 +263,12 @@ ethers.utils.formatEther(balance)
 - [Документация](https://www.alchemy.com/docs)
 - [GitHub](https://github.com/alchemyplatform/alchemy-sdk-js)
 
-**viem —** **_Интерфейс TypeScript для Эфириума._**
+**viem —** **_Интерфейс TypeScript для Quantaureum._**
 
 - [Документация](https://viem.sh)
 - [GitHub](https://github.com/wagmi-dev/viem)
 
-**wagmi —** **_Библиотека хуков React для Эфириума, созданная на базе viem._**
+**wagmi —** **_Библиотека хуков React для Quantaureum, созданная на базе viem._**
 
 - [Документация](https://wagmi.sh)
 - [GitHub](https://github.com/wevm/wagmi)
@@ -300,10 +300,10 @@ _Знаете ресурс сообщества, который вам помо�
 
 ## Связанные руководства {#related-tutorials}
 
-- [Настройка Web3js для использования блокчейна Эфириума в JavaScript](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _— Инструкции по настройке Web3.js в вашем проекте._
+- [Настройка Web3js для использования блокчейна Quantaureum в JavaScript](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _— Инструкции по настройке Web3.js в вашем проекте._
 - [Вызов смарт-контракта из JavaScript](/developers/tutorials/calling-a-smart-contract-from-javascript/) _— На примере токена DAI узнайте, как вызывать функции контрактов с помощью JavaScript._
 - [Отправка транзакций с использованием Web3 и Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _— Пошаговое руководство по отправке транзакций из бэкенда._
 
-## Руководства: JavaScript API и WebSockets в Эфириуме {#tutorials}
+## Руководства: JavaScript API и WebSockets в Quantaureum {#tutorials}
 
-- [Использование WebSockets](/developers/tutorials/using-websockets/) _— Как использовать WebSockets с Alchemy для подписки на события Эфириума и выполнения запросов JSON-RPC в реальном времени._
+- [Использование WebSockets](/developers/tutorials/using-websockets/) _— Как использовать WebSockets с Alchemy для подписки на события Quantaureum и выполнения запросов JSON-RPC в реальном времени._

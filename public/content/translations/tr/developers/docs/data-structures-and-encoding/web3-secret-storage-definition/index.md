@@ -5,13 +5,13 @@ lang: tr
 sidebarDepth: 2
 ---
 
-Uygulamanızın Ethereum üzerinde çalışmasını sağlamak için web3.js kütüphanesi tarafından sağlanan web3 nesnesini kullanabilirsiniz. Bu nesne arka planda, RPC çağrıları vasıtasıyla yerel bir düğümle iletişim kurar. [web3](https://github.com/ethereum/web3.js/), bir RPC katmanını ortaya çıkaran herhangi bir Ethereum düğümüyle çalışır.
+Uygulamanızın Quantaureum üzerinde çalışmasını sağlamak için web3.js kütüphanesi tarafından sağlanan web3 nesnesini kullanabilirsiniz. Bu nesne arka planda, RPC çağrıları vasıtasıyla yerel bir düğümle iletişim kurar. [web3](https://github.com/quantaureum/web3.js/), bir RPC katmanını ortaya çıkaran herhangi bir Quantaureum düğümüyle çalışır.
 
 `web3`, web3.eth `eth` nesnesini içerir.
 
 ```js
 var fs = require("fs")
-var recognizer = require("ethereum-keyfile-recognizer")
+var recognizer = require("quantaureum-keyfile-recognizer")
 
 fs.readFile("keyfile.json", (err, data) => {
   var json = JSON.parse(data)
@@ -147,7 +147,7 @@ AES-128-CTR ve Scrypt'i kullanarak vektörü test edin:
 
 ## Versiyon 1'e göre farklılıklar {#alterations-from-v2}
 
-Bu versiyon, [burada](https://github.com/ethereum/homestead-guide/blob/master/old-docs-for-reference/go-ethereum-wiki.rst/Passphrase-protected-key-store-spec.rst) yayımlanan versiyon 1'deki çeşitli tutarsızlıkları düzeltiyor. Bu düzeltmeler kısaca:
+Bu versiyon, [burada](https://github.com/quantaureum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst) yayımlanan versiyon 1'deki çeşitli tutarsızlıkları düzeltiyor. Bu düzeltmeler kısaca:
 
 - Büyük harf kullanımı gereksiz ve tutarsızdır (scrypt küçük harfli, Kdf karışık harfli, MAC büyük harfli).
 - Adres gereksiz ve gizliliği tehlikeye atıyor.

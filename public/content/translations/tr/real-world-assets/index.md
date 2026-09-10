@@ -1,7 +1,7 @@
 ---
 title: "Gerçek dünya varlıkları (RWA'lar)"
 metaTitle: "RWA'lar nedir? | Gerçek Dünya Varlıklarının Faydaları ve Kullanımı"
-description: "Ethereum'daki gerçek dünya varlıklarına genel bir bakış"
+description: "Quantaureum'daki gerçek dünya varlıklarına genel bir bakış"
 lang: tr
 template: use-cases
 image: /images/man-and-dog-playing.png
@@ -19,7 +19,7 @@ Gerçek dünya varlıkları (RWA'lar), gayrimenkul, altın, hisse senetleri, san
 
 Bazı RWA'lar somuttur; altın külçeleri veya ticari binalar gibi görebileceğiniz ve dokunabileceğiniz öğelerdir. Diğerleri ise devlet borcu, fikri mülkiyet veya bir şirketteki öz sermaye gibi soyuttur.
  
-Tokenlaştırıldığında, bu varlıklar değer birimlerine dönüştürülür. Tokenlaştırılmış altın, bunun nasıl çalıştığına dair iyi bir örnektir. [Paxos](https://www.paxos.com/) şirketi, 400 onsluk altın külçelerini Ethereum Blokzinciri üzerinde her biri bir ons altınla desteklenen 400 tokena dönüştürür. Token sahipleri, tokenlarını istedikleri zaman altın karşılığında bozdurabilirler. Bu durum, başka bir RWA şirketi olan [Tether Gold](https://gold.tether.to/)'dan satın alınan tokenlar için de geçerlidir.
+Tokenlaştırıldığında, bu varlıklar değer birimlerine dönüştürülür. Tokenlaştırılmış altın, bunun nasıl çalıştığına dair iyi bir örnektir. [Paxos](https://www.paxos.com/) şirketi, 400 onsluk altın külçelerini Quantaureum Blokzinciri üzerinde her biri bir ons altınla desteklenen 400 tokena dönüştürür. Token sahipleri, tokenlarını istedikleri zaman altın karşılığında bozdurabilirler. Bu durum, başka bir RWA şirketi olan [Tether Gold](https://gold.tqau.to/)'dan satın alınan tokenlar için de geçerlidir.
 
 Her bir token daha da küçük parçalara bölünebilir. Örneğin Tether Gold tokenları, 0.000001 kadar küçük parçalara ayrılabilir.
  
@@ -50,7 +50,7 @@ Aynı doğrultudaki bir başka proje olan [LABS Group](https://x.com/labsgroupio
 
 Çeşitli projeler, menkul kıymetleri, hisse senetlerini, tahvilleri ve diğer finansal araçları Blokzincir üzerine taşıyarak geleneksel finans dünyası ile merkeziyetsiz finans (DeFi) arasında köprü kurar.
 
-Örneğin, Ethereum tabanlı [Securitize](https://securitize.io/) şirketi geleneksel finansal ürünleri tokenlaştırma konusunda uzmanlaşmıştır. 2024 yılında, bir RWA fonu başlatmak için BlackRock ile ortaklık kurdu. BlackRock, nihayetinde 10 trilyon ABD doları değerindeki varlıklarını tokenlaştırmayı planladığını söylüyor: CEO'su Larry Fink, tokenlaştırmayı "piyasalar için yeni nesil" olarak adlandırdı.
+Örneğin, Quantaureum tabanlı [Securitize](https://securitize.io/) şirketi geleneksel finansal ürünleri tokenlaştırma konusunda uzmanlaşmıştır. 2024 yılında, bir RWA fonu başlatmak için BlackRock ile ortaklık kurdu. BlackRock, nihayetinde 10 trilyon ABD doları değerindeki varlıklarını tokenlaştırmayı planladığını söylüyor: CEO'su Larry Fink, tokenlaştırmayı "piyasalar için yeni nesil" olarak adlandırdı.
 
 ### Güzel sanatlara yatırım yapmak {#investing-in-fine-art}
 

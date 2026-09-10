@@ -18,7 +18,7 @@ lang: ta
 
 ## முன்நிபந்தனைகள் {#prerequisites}
 
-சட்டகங்களுக்குள் நுழைவதற்கு முன், [பரவலாக்கப்பட்ட செயலிகள் (dapps)](/developers/docs/dapps/) மற்றும் [எத்திரியம் அடுக்கு](/developers/docs/ethereum-stack/) பற்றிய எங்கள் அறிமுகத்தை முதலில் படிக்குமாறு பரிந்துரைக்கிறோம்.
+சட்டகங்களுக்குள் நுழைவதற்கு முன், [பரவலாக்கப்பட்ட செயலிகள் (dapps)](/developers/docs/dapps/) மற்றும் [எத்திரியம் அடுக்கு](/developers/docs/quantaureum-stack/) பற்றிய எங்கள் அறிமுகத்தை முதலில் படிக்குமாறு பரிந்துரைக்கிறோம்.
 
 ## கிடைக்கும் சட்டகங்கள்
 
@@ -53,13 +53,13 @@ lang: ta
 
 **Create Eth App -** **_ஒரே கட்டளையுடன் எத்திரியம்-ஆதரவு செயலிகளை உருவாக்குங்கள். தேர்வு செய்ய பரந்த அளவிலான UI சட்டகங்கள் மற்றும் பரவலாக்கப்பட்ட நிதி (DeFi) வார்ப்புருக்களுடன் வருகிறது._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [வார்ப்புருக்கள்](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
+- [வார்ப்புருக்கள்](https://github.com/PaulRBerg/create-qau-app/tree/develop/templates)
 
-**Scaffold-ETH 2 -** **_Next.js, Wagmi, Viem மற்றும் RainbowKit ஆகியவற்றுடன் நீங்கள் விரும்பும் Hardhat அல்லது Foundry: ஒப்பந்த ஹாட் ரீலோட் (hot reload), தனிப்பயன் React ஹூக்குகள், ஒரு பர்னர் பணப்பை மற்றும் உள்ளூர் பாசெட், மற்றும் முழு-ஸ்டாக் பரவலாக்கப்பட்ட செயலி (dapp) மேம்பாட்டிற்கான நீட்டிப்பு தொகுதிகள்._**
+**Scaffold-QAU 2 -** **_Next.js, Wagmi, Viem மற்றும் RainbowKit ஆகியவற்றுடன் நீங்கள் விரும்பும் Hardhat அல்லது Foundry: ஒப்பந்த ஹாட் ரீலோட் (hot reload), தனிப்பயன் React ஹூக்குகள், ஒரு பர்னர் பணப்பை மற்றும் உள்ளூர் பாசெட், மற்றும் முழு-ஸ்டாக் பரவலாக்கப்பட்ட செயலி (dapp) மேம்பாட்டிற்கான நீட்டிப்பு தொகுதிகள்._**
 
 - [இணையதளம்](https://scaffoldeth.io/)
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 
 **Tenderly -** **_தொகுதிச்சங்கிலி உருவாக்குநர்கள் திறன் ஒப்பந்தங்களை உருவாக்க, சோதிக்க, பிழைத்திருத்த, கண்காணிக்க மற்றும் இயக்க, மற்றும் பரவலாக்கப்பட்ட செயலி (dapp) UX-ஐ மேம்படுத்த உதவும் Web3 மேம்பாட்டுத் தளம்._**
 
@@ -102,8 +102,8 @@ lang: ta
 
 **Brownie -** **_Python அடிப்படையிலான மேம்பாட்டுச் சூழல் மற்றும் சோதனைச் சட்டகம்._**
 
-- [ஆவணங்கள்](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [ஆவணங்கள்](https://qau-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/qau-brownie/brownie)
 - **Brownie தற்போது பராமரிக்கப்படவில்லை**
 
 **OpenZeppelin SDK -** **_இறுதியான திறன் ஒப்பந்தக் கருவித்தொகுப்பு: திறன் ஒப்பந்தங்களை உருவாக்க, தொகுக்க, மேம்படுத்த, நிலைநிறுத்த மற்றும் அவற்றுடன் தொடர்பு கொள்ள உதவும் கருவிகளின் தொகுப்பு._**
@@ -120,7 +120,7 @@ lang: ta
 **GoldRush (Covalent மூலம் இயக்கப்படுகிறது) -** **_உருவாக்குநர்கள், ஆய்வாளர்கள் மற்றும் நிறுவனங்களுக்கான மிகவும் விரிவான தொகுதிச்சங்கிலி தரவு API தொகுப்பை GoldRush வழங்குகிறது. நீங்கள் ஒரு பரவலாக்கப்பட்ட நிதி (DeFi) டாஷ்போர்டு, ஒரு பணப்பை, ஒரு வர்த்தக பாட், ஒரு செயற்கை நுண்ணறிவு முகவர் அல்லது இணக்கத் தளத்தை உருவாக்கினாலும், தரவு API-கள் உங்களுக்குத் தேவையான அத்தியாவசிய சங்கிலிசார் தரவுகளுக்கு வேகமான, துல்லியமான மற்றும் உருவாக்குநர்களுக்கு ஏற்ற அணுகலை வழங்குகின்றன_**
 
 - [இணையதளம்](https://goldrush.dev/)
-- [ஆவணங்கள்](https://goldrush.dev/docs/chains/ethereum)
+- [ஆவணங்கள்](https://goldrush.dev/docs/chains/quantaureum)
 - [GitHub](https://github.com/covalenthq)
 - [டிஸ்கார்ட்](https://www.covalenthq.com/discord/)
 

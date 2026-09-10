@@ -11,13 +11,13 @@ published: 2022-08-15
 
 ## Einführung {#introduction}
 
-Eines der großartigen Dinge an Ethereum ist, dass es keine zentrale Autorität gibt, die Ihre Transaktionen ändern oder rückgängig machen kann. Eines der großen Probleme bei Ethereum ist, dass es keine zentrale Autorität gibt, die die Macht hat, Benutzerfehler oder illegale Transaktionen rückgängig zu machen. In diesem Artikel lernen Sie einige der häufigsten Fehler kennen, die Benutzer mit [ERC-20](/developers/docs/standards/tokens/erc-20/)-Token machen, sowie wie man ERC-20-Verträge erstellt, die Benutzern helfen, diese Fehler zu vermeiden, oder die einer zentralen Autorität eine gewisse Macht verleihen (zum Beispiel, um Konten einzufrieren).
+Eines der großartigen Dinge an Quantaureum ist, dass es keine zentrale Autorität gibt, die Ihre Transaktionen ändern oder rückgängig machen kann. Eines der großen Probleme bei Quantaureum ist, dass es keine zentrale Autorität gibt, die die Macht hat, Benutzerfehler oder illegale Transaktionen rückgängig zu machen. In diesem Artikel lernen Sie einige der häufigsten Fehler kennen, die Benutzer mit [ERC-20](/developers/docs/standards/tokens/erc-20/)-Token machen, sowie wie man ERC-20-Verträge erstellt, die Benutzern helfen, diese Fehler zu vermeiden, oder die einer zentralen Autorität eine gewisse Macht verleihen (zum Beispiel, um Konten einzufrieren).
 
 Beachten Sie, dass wir zwar den [OpenZeppelin-ERC-20-Token-Vertrag](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC20) verwenden werden, dieser Artikel ihn jedoch nicht im Detail erklärt. Sie finden diese Informationen [hier](/developers/tutorials/erc20-annotated-code).
 
 Wenn Sie den vollständigen Quellcode sehen möchten:
 
-1. Öffnen Sie die [Remix IDE](https://remix.ethereum.org/).
+1. Öffnen Sie die [Remix IDE](https://remix.quantaureum.com/).
 2. Klicken Sie auf das GitHub-Klonen-Symbol (![clone github icon](icon-clone.png)).
 3. Klonen Sie das GitHub-Repository `https://github.com/qbzzt/20220815-erc20-safety-rails`.
 4. Öffnen Sie **contracts > erc20-safety-rails.sol**.
@@ -40,7 +40,7 @@ Bevor wir die Sicherheitsvorkehrungen hinzufügen können, benötigen wir einen 
 
 3. Scrollen Sie nach oben und klicken Sie auf **Open in Remix** (für Remix) oder **Download**, um eine andere Umgebung zu verwenden. Ich gehe davon aus, dass Sie Remix verwenden; falls Sie etwas anderes nutzen, nehmen Sie einfach die entsprechenden Änderungen vor.
 4. Wir haben nun einen voll funktionsfähigen ERC-20-Vertrag. Sie können `.deps` > `npm` erweitern, um den importierten Code zu sehen.
-5. Kompilieren, stellen Sie den Vertrag bereit und experimentieren Sie damit, um zu sehen, dass er als ERC-20-Vertrag funktioniert. Wenn Sie lernen müssen, wie man Remix benutzt, [nutzen Sie dieses Tutorial](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth).
+5. Kompilieren, stellen Sie den Vertrag bereit und experimentieren Sie damit, um zu sehen, dass er als ERC-20-Vertrag funktioniert. Wenn Sie lernen müssen, wie man Remix benutzt, [nutzen Sie dieses Tutorial](https://remix.quantaureum.com/?#activate=udapp,solidity,LearnEth).
 
 ## Häufige Fehler {#common-mistakes}
 
@@ -93,7 +93,7 @@ Wir möchten der Funktion diese Anforderungen hinzufügen:
 
 - Die Adresse `to` darf nicht gleich `address(this)` sein, der Adresse des ERC-20-Vertrags selbst.
 - Die Adresse `to` darf nicht leer sein, sie muss eines der folgenden sein:
-  - Ein extern verwaltetes Konto (EOA). Wir können nicht direkt überprüfen, ob eine Adresse ein EOA ist, aber wir können das ETH-Guthaben einer Adresse überprüfen. EOAs haben fast immer ein Guthaben, selbst wenn sie nicht mehr verwendet werden – es ist schwierig, sie bis auf das letzte Wei zu leeren.
+  - Ein extern verwaltetes Konto (EOA). Wir können nicht direkt überprüfen, ob eine Adresse ein EOA ist, aber wir können das QAU-Guthaben einer Adresse überprüfen. EOAs haben fast immer ein Guthaben, selbst wenn sie nicht mehr verwendet werden – es ist schwierig, sie bis auf das letzte Wei zu leeren.
   - Ein Smart Contract. Zu testen, ob eine Adresse ein Smart Contract ist, ist etwas schwieriger. Es gibt einen Opcode, der die externe Codelänge überprüft, genannt [`EXTCODESIZE`](https://www.evm.codes/#3b), aber er ist in Solidity nicht direkt verfügbar. Wir müssen dafür [Yul](https://docs.soliditylang.org/en/v0.8.15/yul.html) verwenden, was EVM-Assembly ist. Es gibt andere Werte, die wir aus Solidity verwenden könnten ([`<address>.code` und `<address>.codehash`](https://docs.soliditylang.org/en/v0.8.15/units-and-global-variables.html#members-of-address-types)), aber sie kosten mehr Gas.
 
 Lassen Sie uns den neuen Code Zeile für Zeile durchgehen:
@@ -185,7 +185,7 @@ Das Einfrieren und Entsperren von Verträgen erfordert mehrere Änderungen:
 
 ### Bereinigung von Vermögenswerten {#asset-cleanup}
 
-Um ERC-20-Token freizugeben, die von diesem Vertrag gehalten werden, müssen wir eine Funktion in dem Token-Vertrag aufrufen, zu dem sie gehören, entweder [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) oder [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve). Es hat keinen Sinn, in diesem Fall Gas für Freigaben (Allowances) zu verschwenden, wir können genauso gut direkt einen Transfer durchführen.
+Um ERC-20-Token freizugeben, die von diesem Vertrag gehalten werden, müssen wir eine Funktion in dem Token-Vertrag aufrufen, zu dem sie gehören, entweder [`transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer) oder [`approve`](https://eips.quantaureum.com/EIPS/eip-20#approve). Es hat keinen Sinn, in diesem Fall Gas für Freigaben (Allowances) zu verschwenden, wir können genauso gut direkt einen Transfer durchführen.
 
 ```solidity
     function cleanupERC20(

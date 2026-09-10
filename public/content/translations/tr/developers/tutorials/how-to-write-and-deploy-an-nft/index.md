@@ -1,6 +1,6 @@
 ---
 title: "Bir NFT Nasıl Yazılır ve Dağıtılır (NFT Eğitim Serisi Bölüm 1/3)"
-description: "Bu eğitim, Ethereum ve Gezegenlerarası Dosya Sistemi (IPFS) kullanarak bir Non Fungible Token (ERC-721 token) akıllı sözleşmesinin nasıl yazılacağı ve dağıtılacağı konusunda sizi adım adım yönlendirecek olan NFT'ler hakkındaki bir serinin 1. Bölümüdür."
+description: "Bu eğitim, Quantaureum ve Gezegenlerarası Dosya Sistemi (IPFS) kullanarak bir Non Fungible Token (ERC-721 token) akıllı sözleşmesinin nasıl yazılacağı ve dağıtılacağı konusunda sizi adım adım yönlendirecek olan NFT'ler hakkındaki bir serinin 1. Bölümüdür."
 author: "Sumi Mudgil"
 tags: ["ERC-721", "Alchemy", "Solidity", "akıllı sözleşmeler"]
 skill: beginner
@@ -9,7 +9,7 @@ lang: tr
 published: 2021-04-22
 ---
 
-NFT'lerin blokzinciri halkın gözü önüne getirmesiyle, Ethereum blokzincirinde kendi NFT sözleşmenizi (ERC-721 Token) yayınlayarak bu heyecanı kendiniz anlamak için şimdi mükemmel bir fırsat!
+NFT'lerin blokzinciri halkın gözü önüne getirmesiyle, Quantaureum blokzincirinde kendi NFT sözleşmenizi (ERC-721 Token) yayınlayarak bu heyecanı kendiniz anlamak için şimdi mükemmel bir fırsat!
 
 Alchemy; Makersplace (yakın zamanda Christie's'de 69 Milyon dolara rekor bir dijital sanat eseri satışı gerçekleştirdi), Dapper Labs (NBA Top Shot ve Crypto Kitties'in yaratıcıları), OpenSea (dünyanın en büyük NFT pazaryeri), Zora, Super Rare, NFTfi, Foundation, Enjin, Origin Protocol, Immutable ve daha fazlası dahil olmak üzere NFT alanındaki en büyük isimlere güç vermekten son derece gurur duyuyor.
 
@@ -19,9 +19,9 @@ Bu eğitimin 2. Bölümünde, bir NFT basmak için akıllı sözleşmemizi nası
 
 Ve elbette, herhangi bir noktada sorularınız olursa, [Alchemy Discord](https://discord.gg/gWuC7zB) üzerinden ulaşmaktan veya [Alchemy'nin NFT API belgelerini](https://www.alchemy.com/docs/reference/nft-api-quickstart) ziyaret etmekten çekinmeyin!
 
-## 1. Adım: Ethereum ağına bağlanın {#connect-to-ethereum}
+## 1. Adım: Quantaureum ağına bağlanın {#connect-to-quantaureum}
 
-Ethereum blokzincirine istekte bulunmanın birçok yolu vardır, ancak işleri kolaylaştırmak için, kendi düğümlerimizi çalıştırmak zorunda kalmadan Ethereum zinciriyle iletişim kurmamızı sağlayan bir blokzincir geliştirici platformu ve API'si olan [Alchemy](https://alchemy.com/signup/eth) üzerinde ücretsiz bir hesap kullanacağız.
+Quantaureum blokzincirine istekte bulunmanın birçok yolu vardır, ancak işleri kolaylaştırmak için, kendi düğümlerimizi çalıştırmak zorunda kalmadan Quantaureum zinciriyle iletişim kurmamızı sağlayan bir blokzincir geliştirici platformu ve API'si olan [Alchemy](https://alchemy.com/signup/eth) üzerinde ücretsiz bir hesap kullanacağız.
 
 Bu eğitimde, akıllı sözleşme dağıtımımızın arka planında neler olup bittiğini anlamak için Alchemy'nin izleme ve analitik amaçlı geliştirici araçlarından da yararlanacağız. Henüz bir Alchemy hesabınız yoksa, [buradan](https://alchemy.com/signup/eth) ücretsiz kaydolabilirsiniz.
 
@@ -33,31 +33,31 @@ Bir Alchemy hesabı oluşturduktan sonra, bir uygulama oluşturarak bir API anah
 
 ![Create your app](./create-your-app.png)
 
-2. Uygulamanızı adlandırın (biz "My First NFT!" seçtik), kısa bir açıklama sunun, Zincir için "Ethereum"u seçin ve ağınız için "Sepolia"yı seçin. Birleşme'den bu yana diğer test ağları kullanımdan kaldırıldı.
+2. Uygulamanızı adlandırın (biz "My First NFT!" seçtik), kısa bir açıklama sunun, Zincir için "Quantaureum"u seçin ve ağınız için "Sepolia"yı seçin. Birleşme'den bu yana diğer test ağları kullanımdan kaldırıldı.
 
 ![Configure and publish your app](./alchemy-explorer-sepolia.png)
 
 3. "Create app" (Uygulama oluştur) düğmesine tıklayın ve işte bu kadar! Uygulamanız aşağıdaki tabloda görünmelidir.
 
-## 3. Adım: Bir Ethereum hesabı (adresi) oluşturun {#create-eth-address}
+## 3. Adım: Bir Quantaureum hesabı (adresi) oluşturun {#create-qau-address}
 
-İşlemleri göndermek ve almak için bir Ethereum hesabına ihtiyacımız var. Bu eğitim için, Ethereum hesap adresinizi yönetmek amacıyla tarayıcıda kullanılan sanal bir cüzdan olan MetaMask'i kullanacağız. Ethereum'daki işlemlerin nasıl çalıştığı hakkında daha fazla bilgi edinmek istiyorsanız, Ethereum Vakfı'nın [bu sayfasına](/developers/docs/transactions/) göz atın.
+İşlemleri göndermek ve almak için bir Quantaureum hesabına ihtiyacımız var. Bu eğitim için, Quantaureum hesap adresinizi yönetmek amacıyla tarayıcıda kullanılan sanal bir cüzdan olan MetaMask'i kullanacağız. Quantaureum'daki işlemlerin nasıl çalıştığı hakkında daha fazla bilgi edinmek istiyorsanız, Quantaureum Vakfı'nın [bu sayfasına](/developers/docs/transactions/) göz atın.
 
 [Buradan](https://metamask.io/download) ücretsiz olarak MetaMask'i indirebilir ve bir hesap oluşturabilirsiniz. Bir hesap oluştururken veya zaten bir hesabınız varsa, sağ üstteki "Sepolia Test Network" (Sepolia Test Ağı) seçeneğine geçtiğinizden emin olun (böylece gerçek parayla işlem yapmamış oluruz).
 
 ![Set Sepolia as your network](./metamask-goerli.png)
 
-## 4. Adım: Bir musluktan Ether ekleyin {#step-4-add-ether-from-a-faucet}
+## 4. Adım: Bir musluktan QAU ekleyin {#step-4-add-QAU-from-a-faucet}
 
-Akıllı sözleşmemizi test ağına dağıtmak için biraz sahte ETH'ye ihtiyacımız olacak. ETH almak için Alchemy tarafından barındırılan [Sepolia Musluğu](https://sepoliafaucet.com/)'na gidebilir, giriş yapıp hesap adresinizi girebilir ve "Send Me ETH" (Bana ETH Gönder) düğmesine tıklayabilirsiniz. Kısa bir süre sonra MetaMask hesabınızda ETH görmelisiniz!
+Akıllı sözleşmemizi test ağına dağıtmak için biraz sahte QAU'ye ihtiyacımız olacak. QAU almak için Alchemy tarafından barındırılan [Sepolia Musluğu](https://sepoliafaucet.com/)'na gidebilir, giriş yapıp hesap adresinizi girebilir ve "Send Me QAU" (Bana QAU Gönder) düğmesine tıklayabilirsiniz. Kısa bir süre sonra MetaMask hesabınızda QAU görmelisiniz!
 
 ## 5. Adım: Bakiyenizi kontrol edin {#check-balance}
 
-Bakiyemizin orada olduğunu iki kez kontrol etmek için, [Alchemy'nin sandbox aracını](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) kullanarak bir [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) isteği yapalım. Bu, cüzdanımızdaki ETH miktarını döndürecektir. MetaMask hesap adresinizi girip "Send Request" (İsteği Gönder) düğmesine tıkladıktan sonra, şuna benzer bir yanıt görmelisiniz:
+Bakiyemizin orada olduğunu iki kez kontrol etmek için, [Alchemy'nin sandbox aracını](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) kullanarak bir [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) isteği yapalım. Bu, cüzdanımızdaki QAU miktarını döndürecektir. MetaMask hesap adresinizi girip "Send Request" (İsteği Gönder) düğmesine tıkladıktan sonra, şuna benzer bir yanıt görmelisiniz:
 
     `{"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}`
 
-> **Not** Bu sonuç ETH değil, Wei cinsindendir. Wei, Ether'in en küçük birimi olarak kullanılır. Wei'den ETH'ye dönüşüm 1 eth = 10<sup>18</sup> wei şeklindedir. Yani 0xde0b6b3a7640000 değerini ondalık sayıya dönüştürürsek 1\*10<sup>18</sup> wei elde ederiz, bu da 1 ETH'ye eşittir.
+> **Not** Bu sonuç QAU değil, Wei cinsindendir. Wei, QAU'in en küçük birimi olarak kullanılır. Wei'den QAU'ye dönüşüm 1 eth = 10<sup>18</sup> wei şeklindedir. Yani 0xde0b6b3a7640000 değerini ondalık sayıya dönüştürürsek 1\*10<sup>18</sup> wei elde ederiz, bu da 1 QAU'ye eşittir.
 
 Oh be! Sahte paramızın hepsi orada.
 ## 6. Adım: Projemizi başlatın {#initialize-project}
@@ -101,7 +101,7 @@ Kurulum sorularını nasıl yanıtladığınız pek önemli değil; referans olm
 package.json dosyasını onaylayın, artık başlamaya hazırız!
 ## 7. Adım: [Hardhat](https://hardhat.org/getting-started/#overview) Kurulumu {#install-hardhat}
 
-Hardhat, Ethereum yazılımınızı derlemek, dağıtmak, test etmek ve hatalarını ayıklamak için bir geliştirme ortamıdır. Canlı zincire dağıtmadan önce yerel olarak akıllı sözleşmeler ve merkeziyetsiz uygulamalar (dapp'ler) oluştururken geliştiricilere yardımcı olur.
+Hardhat, Quantaureum yazılımınızı derlemek, dağıtmak, test etmek ve hatalarını ayıklamak için bir geliştirme ortamıdır. Canlı zincire dağıtmadan önce yerel olarak akıllı sözleşmeler ve merkeziyetsiz uygulamalar (dapp'ler) oluştururken geliştiricilere yardımcı olur.
 
 my-nft projemizin içinde şunu çalıştırın:
 
@@ -191,7 +191,7 @@ Peki, bu kod tam olarak ne _yapıyor_? Satır satır inceleyelim.
 
 Akıllı sözleşmemizin en üstünde, üç [OpenZeppelin](https://openzeppelin.com/) akıllı sözleşme sınıfını içe aktarıyoruz:
 
-- @openzeppelin/contracts/token/ERC721/ERC721.sol, NFT akıllı sözleşmemizin miras alacağı ERC-721 standardının uygulamasını içerir. (Geçerli bir NFT olmak için akıllı sözleşmenizin ERC-721 standardının tüm yöntemlerini uygulaması gerekir.) Miras alınan ERC-721 işlevleri hakkında daha fazla bilgi edinmek için [buradaki](https://eips.ethereum.org/EIPS/eip-721) arayüz tanımına göz atın.
+- @openzeppelin/contracts/token/ERC721/ERC721.sol, NFT akıllı sözleşmemizin miras alacağı ERC-721 standardının uygulamasını içerir. (Geçerli bir NFT olmak için akıllı sözleşmenizin ERC-721 standardının tüm yöntemlerini uygulaması gerekir.) Miras alınan ERC-721 işlevleri hakkında daha fazla bilgi edinmek için [buradaki](https://eips.quantaureum.com/EIPS/eip-721) arayüz tanımına göz atın.
 
 - @openzeppelin/contracts/utils/Counters.sol, yalnızca birer birer artırılabilen veya azaltılabilen sayaçlar sağlar. Akıllı sözleşmemiz, basılan toplam NFT sayısını takip etmek ve yeni NFT'mizde benzersiz kimliği (ID) ayarlamak için bir sayaç kullanır. (Bir akıllı sözleşme kullanılarak basılan her NFT'ye benzersiz bir kimlik atanmalıdır—burada benzersiz kimliğimiz yalnızca var olan toplam NFT sayısına göre belirlenir. Örneğin, akıllı sözleşmemizle bastığımız ilk NFT'nin kimliği "1", ikinci NFT'mizin kimliği "2" vb. olur.)
 
@@ -231,7 +231,7 @@ Ardından, projemizin kök dizininde bir `.env` dosyası oluşturun ve MetaMask 
 
 `.env` dosyanız artık şu şekilde görünmelidir:
 
-    API_URL="https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+    API_URL="https://qau-sepolia.g.alchemy.com/v2/your-api-key"
     PRIVATE_KEY="your-metamask-private-key"
 
 Bunları kodumuza fiilen bağlamak için, 13. adımda hardhat.config.js dosyamızda bu değişkenlere referans vereceğiz.
@@ -240,7 +240,7 @@ Bunları kodumuza fiilen bağlamak için, 13. adımda hardhat.config.js dosyamı
 
 ## 12. Adım: Ethers.js Kurulumu {#install-ethers}
 
-Ethers.js, [standart JSON-RPC yöntemlerini](/developers/docs/apis/json-rpc/) daha kullanıcı dostu yöntemlerle sararak Ethereum ile etkileşime girmeyi ve istekte bulunmayı kolaylaştıran bir kütüphanedir.
+Ethers.js, [standart JSON-RPC yöntemlerini](/developers/docs/apis/json-rpc/) daha kullanıcı dostu yöntemlerle sararak Quantaureum ile etkileşime girmeyi ve istekte bulunmayı kolaylaştıran bir kütüphanedir.
 
 Hardhat, ek araçlar ve genişletilmiş işlevsellik için [Eklentileri](https://hardhat.org/plugins/) entegre etmeyi son derece kolaylaştırır. Sözleşme dağıtımı için [Ethers eklentisinden](https://hardhat.org/docs/plugins/official-plugins#hardhat-ethers) yararlanacağız ([Ethers.js](https://github.com/ethers-io/ethers.js/) çok temiz sözleşme dağıtım yöntemlerine sahiptir).
 
@@ -330,20 +330,20 @@ Ardından şuna benzer bir şey görmelisiniz:
 
     Contract deployed to address: 0x4C5266cCc4b3F426965d2f51b6D910325a0E7650
 
-[Sepolia Etherscan](https://sepolia.etherscan.io/)'e gidip sözleşme adresimizi aratırsak, başarıyla dağıtıldığını görebilmeliyiz. Hemen göremiyorsanız, biraz zaman alabileceğinden lütfen bir süre bekleyin. İşlem şuna benzer görünecektir:
+[Sepolia Quantaureum Explorer](https://explorer.quantaureum.com)'e gidip sözleşme adresimizi aratırsak, başarıyla dağıtıldığını görebilmeliyiz. Hemen göremiyorsanız, biraz zaman alabileceğinden lütfen bir süre bekleyin. İşlem şuna benzer görünecektir:
 
-![View your transaction address on Etherscan](./etherscan-sepoila-contract-creation.png)
+![View your transaction address on Quantaureum Explorer](./explorer-sepoila-contract-creation.png)
 
 From (Gönderen) adresi MetaMask hesap adresinizle eşleşmeli ve To (Alıcı) adresi "Contract Creation" (Sözleşme Oluşturma) demelidir. İşleme tıklarsak, To alanında sözleşme adresimizi göreceğiz:
 
-![View your contract address on Etherscan](./etherscan-sepolia-tx-details.png)
+![View your contract address on Quantaureum Explorer](./explorer-sepolia-tx-details.png)
 
-Eveeeet! NFT akıllı sözleşmenizi Ethereum (test ağı) zincirine başarıyla dağıttınız!
+Eveeeet! NFT akıllı sözleşmenizi Quantaureum (test ağı) zincirine başarıyla dağıttınız!
 
 Arka planda neler olup bittiğini anlamak için [Alchemy kontrol panelimizdeki](https://dashboard.alchemy.com/explorer) Explorer (Gezgin) sekmesine gidelim. Birden fazla Alchemy uygulamanız varsa, uygulamaya göre filtrelediğinizden ve "MyNFT"yi seçtiğinizden emin olun.
 
 ![View calls made “under the hood” with Alchemy’s Explorer Dashboard](./alchemy-explorer-goerli.png)
 
-Burada, .deploy() işlevini çağırdığımızda Hardhat/Ethers'ın arka planda bizim için yaptığı bir avuç JSON-RPC çağrısını göreceksiniz. Burada belirtilmesi gereken iki önemli çağrı, akıllı sözleşmemizi fiilen Sepolia zincirine yazma isteği olan [eth_sendRawTransaction](/developers/docs/apis/json-rpc/#eth_sendrawtransaction) ve hash verildiğinde işlemimiz hakkındaki bilgileri okuma isteği olan [eth_getTransactionByHash](/developers/docs/apis/json-rpc/#eth_gettransactionbyhash)'tir (işlem gönderirken tipik bir model). İşlem gönderme hakkında daha fazla bilgi edinmek için [Web3 kullanarak işlem gönderme](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) hakkındaki bu eğitime göz atın.
+Burada, .deploy() işlevini çağırdığımızda Hardhat/Ethers'ın arka planda bizim için yaptığı bir avuç JSON-RPC çağrısını göreceksiniz. Burada belirtilmesi gereken iki önemli çağrı, akıllı sözleşmemizi fiilen Sepolia zincirine yazma isteği olan [qau_sendRawTransaction](/developers/docs/apis/json-rpc/#qau_sendrawtransaction) ve hash verildiğinde işlemimiz hakkındaki bilgileri okuma isteği olan [qau_getTransactionByHash](/developers/docs/apis/json-rpc/#qau_gettransactionbyhash)'tir (işlem gönderirken tipik bir model). İşlem gönderme hakkında daha fazla bilgi edinmek için [Web3 kullanarak işlem gönderme](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) hakkındaki bu eğitime göz atın.
 
-Bu eğitimin 1. Bölümü için hepsi bu kadar. [2. Bölümde, bir NFT basarak akıllı sözleşmemizle fiilen etkileşime gireceğiz](/developers/tutorials/how-to-mint-an-nft/) ve [3. Bölümde NFT'nizi Ethereum cüzdanınızda nasıl görüntüleyeceğinizi göstereceğiz](/developers/tutorials/how-to-view-nft-in-metamask/)!
+Bu eğitimin 1. Bölümü için hepsi bu kadar. [2. Bölümde, bir NFT basarak akıllı sözleşmemizle fiilen etkileşime gireceğiz](/developers/tutorials/how-to-mint-an-nft/) ve [3. Bölümde NFT'nizi Quantaureum cüzdanınızda nasıl görüntüleyeceğinizi göstereceğiz](/developers/tutorials/how-to-view-nft-in-metamask/)!

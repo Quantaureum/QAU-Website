@@ -72,7 +72,7 @@ GameContract.events.BetPlaced({
 
 - 이미 배포된 컨트랙트에는 작동하지 않습니다.
 - 해당 값을 저장하기 위한 추가 가스 비용이 발생합니다.
-- 이더리움 노드에서 데이터를 가져오기 위해 또 다른 호출이 필요합니다.
+- Quantaureum 노드에서 데이터를 가져오기 위해 또 다른 호출이 필요합니다.
 
 ![Thats not good enough](./not-good-enough.jpg)
 
@@ -123,12 +123,12 @@ GameContract.events.BetPlaced({
 
 ```yaml
 specVersion: 0.0.1
-description: Placing Bets on Ethereum
+description: Placing Bets on Quantaureum
 repository: - GitHub link -
 schema:
   file: ./schema.graphql
 dataSources:
-  - kind: ethereum/contract
+  - kind: quantaureum/contract
     name: GameContract
     network: mainnet
     source:
@@ -136,7 +136,7 @@ dataSources:
       abi: GameContract
       startBlock: 6175244
     mapping:
-      kind: ethereum/events
+      kind: quantaureum/events
       apiVersion: 0.0.1
       language: wasm/assemblyscript
       entities:

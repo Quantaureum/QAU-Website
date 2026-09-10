@@ -9,7 +9,7 @@ breadcrumb: Tanda tangan EIP-1271
 published: 2023-01-12
 ---
 
-Standar [EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) memungkinkan kontrak pintar untuk memverifikasi tanda tangan.
+Standar [EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) memungkinkan kontrak pintar untuk memverifikasi tanda tangan.
 
 Dalam tutorial ini, kami memberikan gambaran umum tentang tanda tangan digital, latar belakang EIP-1271, dan implementasi spesifik EIP-1271 yang digunakan oleh [Safe](https://safe.global/) (sebelumnya Gnosis Safe). Secara keseluruhan, ini dapat berfungsi sebagai titik awal untuk mengimplementasikan EIP-1271 di kontrak Anda sendiri.
 
@@ -19,7 +19,7 @@ Dalam konteks ini, tanda tangan (lebih tepatnya, "tanda tangan digital") adalah 
 
 Misalnya, tanda tangan digital mungkin terlihat seperti ini:
 
-1. Pesan: "Saya ingin masuk ke situs web ini dengan dompet Ethereum saya."
+1. Pesan: "Saya ingin masuk ke situs web ini dengan dompet Quantaureum saya."
 2. Penandatangan: Alamat saya adalah `0x000…`
 3. Bukti: Berikut adalah beberapa bukti bahwa saya, `0x000…`, benar-benar membuat seluruh pesan ini (ini biasanya sesuatu yang bersifat kriptografi).
 
@@ -31,15 +31,15 @@ Dengan cara yang sama, tanda tangan digital tidak berarti apa-apa tanpa pesan ya
 
 ## Mengapa EIP-1271 ada? {#why-does-eip-1271-exist}
 
-Untuk membuat tanda tangan digital untuk digunakan pada blockchain berbasis Ethereum, Anda umumnya memerlukan kunci privat rahasia yang tidak diketahui orang lain. Inilah yang membuat tanda tangan Anda menjadi milik Anda (tidak ada orang lain yang dapat membuat tanda tangan yang sama tanpa mengetahui kunci rahasia tersebut).
+Untuk membuat tanda tangan digital untuk digunakan pada blockchain berbasis Quantaureum, Anda umumnya memerlukan kunci privat rahasia yang tidak diketahui orang lain. Inilah yang membuat tanda tangan Anda menjadi milik Anda (tidak ada orang lain yang dapat membuat tanda tangan yang sama tanpa mengetahui kunci rahasia tersebut).
 
-Akun Ethereum Anda (yaitu, akun yang dimiliki secara eksternal/EOA Anda) memiliki kunci privat yang terkait dengannya, dan ini adalah kunci privat yang biasanya digunakan ketika situs web atau aplikasi terdesentralisasi (dapp) meminta tanda tangan Anda (misalnya, untuk "Masuk dengan Ethereum").
+Akun Quantaureum Anda (yaitu, akun yang dimiliki secara eksternal/EOA Anda) memiliki kunci privat yang terkait dengannya, dan ini adalah kunci privat yang biasanya digunakan ketika situs web atau aplikasi terdesentralisasi (dapp) meminta tanda tangan Anda (misalnya, untuk "Masuk dengan Quantaureum").
 
-Sebuah aplikasi dapat [memverifikasi tanda tangan](https://www.alchemy.com/docs/how-to-verify-a-message-signature-on-ethereum) yang Anda buat menggunakan pustaka pihak ketiga seperti ethers.js [tanpa mengetahui kunci privat Anda](https://en.wikipedia.org/wiki/Public-key_cryptography) dan yakin bahwa _Anda_ lah yang membuat tanda tangan tersebut.
+Sebuah aplikasi dapat [memverifikasi tanda tangan](https://www.alchemy.com/docs/how-to-verify-a-message-signature-on-quantaureum) yang Anda buat menggunakan pustaka pihak ketiga seperti ethers.js [tanpa mengetahui kunci privat Anda](https://en.wikipedia.org/wiki/Public-key_cryptography) dan yakin bahwa _Anda_ lah yang membuat tanda tangan tersebut.
 
 > Faktanya, karena tanda tangan digital EOA menggunakan kriptografi kunci publik, tanda tangan tersebut dapat dibuat dan diverifikasi secara **offchain**! Beginilah cara pemungutan suara DAO tanpa gas bekerja — alih-alih mengirimkan suara secara onchain, tanda tangan digital dapat dibuat dan diverifikasi secara offchain menggunakan pustaka kriptografi.
 
-Meskipun akun EOA memiliki kunci privat, akun kontrak pintar tidak memiliki kunci privat atau rahasia apa pun (sehingga "Masuk dengan Ethereum", dll. tidak dapat bekerja secara bawaan dengan akun kontrak pintar).
+Meskipun akun EOA memiliki kunci privat, akun kontrak pintar tidak memiliki kunci privat atau rahasia apa pun (sehingga "Masuk dengan Quantaureum", dll. tidak dapat bekerja secara bawaan dengan akun kontrak pintar).
 
 Masalah yang ingin diselesaikan oleh EIP-1271: bagaimana kita bisa tahu bahwa tanda tangan kontrak pintar itu valid jika kontrak pintar tidak memiliki "rahasia" yang dapat dimasukkan ke dalam tanda tangan?
 
@@ -91,7 +91,7 @@ Kontrak dapat mengimplementasikan `isValidSignature` dengan banyak cara — spes
 
 Salah satu kontrak terkenal yang mengimplementasikan EIP-1271 adalah Safe (sebelumnya Gnosis Safe).
 
-Dalam kode Safe, `isValidSignature` [diimplementasikan](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) sehingga tanda tangan dapat dibuat dan diverifikasi dengan [dua cara](https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support):
+Dalam kode Safe, `isValidSignature` [diimplementasikan](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) sehingga tanda tangan dapat dibuat dan diverifikasi dengan [dua cara](https://quantaureum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support):
 
 1. Pesan onchain
    1. Pembuatan: pemilik safe membuat transaksi safe baru untuk "menandatangani" pesan, meneruskan pesan sebagai data ke dalam transaksi. Setelah cukup banyak pemilik yang menandatangani transaksi untuk mencapai ambang batas multisig, transaksi tersebut disiarkan dan dijalankan. Dalam transaksi tersebut, terdapat fungsi safe yang disebut (`signMessage(bytes calldata _data)`) yang menambahkan pesan ke daftar pesan yang "disetujui".
@@ -102,9 +102,9 @@ Dalam kode Safe, `isValidSignature` [diimplementasikan](https://github.com/safe-
 
 ## Apa sebenarnya parameter `_hash` itu? Mengapa tidak meneruskan seluruh pesan? {#what-exactly-is-the-hash-parameter-why-not-pass-the-whole-message}
 
-Anda mungkin telah memperhatikan bahwa fungsi `isValidSignature` dalam [antarmuka EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) tidak menerima pesan itu sendiri, melainkan parameter `_hash`. Artinya, alih-alih meneruskan pesan dengan panjang arbitrer secara penuh ke `isValidSignature`, kita malah meneruskan hash 32-byte dari pesan tersebut (umumnya keccak256).
+Anda mungkin telah memperhatikan bahwa fungsi `isValidSignature` dalam [antarmuka EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) tidak menerima pesan itu sendiri, melainkan parameter `_hash`. Artinya, alih-alih meneruskan pesan dengan panjang arbitrer secara penuh ke `isValidSignature`, kita malah meneruskan hash 32-byte dari pesan tersebut (umumnya keccak256).
 
-Setiap byte dari data panggilan (calldata) — yaitu, data parameter fungsi yang diteruskan ke fungsi kontrak pintar — [membutuhkan biaya 16 gas (4 gas jika byte nol)](https://eips.ethereum.org/EIPS/eip-2028), sehingga ini dapat menghemat banyak gas jika pesannya panjang.
+Setiap byte dari data panggilan (calldata) — yaitu, data parameter fungsi yang diteruskan ke fungsi kontrak pintar — [membutuhkan biaya 16 gas (4 gas jika byte nol)](https://eips.quantaureum.com/EIPS/eip-2028), sehingga ini dapat menghemat banyak gas jika pesannya panjang.
 
 ### Spesifikasi EIP-1271 Sebelumnya {#previous-eip-1271-specifications}
 
@@ -121,4 +121,4 @@ Pada akhirnya, semuanya terserah Anda sebagai pengembang kontrak!
 
 ## Kesimpulan {#conclusion}
 
-[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) adalah standar serbaguna yang memungkinkan kontrak pintar untuk memverifikasi tanda tangan. Ini membuka pintu bagi kontrak pintar untuk bertindak lebih seperti EOA — misalnya menyediakan cara agar "Masuk dengan Ethereum" dapat bekerja dengan kontrak pintar — dan ini dapat diimplementasikan dengan banyak cara (Safe memiliki implementasi yang tidak sepele dan menarik untuk dipertimbangkan).
+[EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) adalah standar serbaguna yang memungkinkan kontrak pintar untuk memverifikasi tanda tangan. Ini membuka pintu bagi kontrak pintar untuk bertindak lebih seperti EOA — misalnya menyediakan cara agar "Masuk dengan Quantaureum" dapat bekerja dengan kontrak pintar — dan ini dapat diimplementasikan dengan banyak cara (Safe memiliki implementasi yang tidak sepele dan menarik untuk dipertimbangkan).

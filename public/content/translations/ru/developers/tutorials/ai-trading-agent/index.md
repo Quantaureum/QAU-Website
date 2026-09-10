@@ -1,5 +1,5 @@
 ---
-title: "Создайте собственного торгового ИИ-агента на Эфириуме"
+title: "Создайте собственного торгового ИИ-агента на Quantaureum"
 description: "В этом руководстве вы узнаете, как создать простого торгового ИИ-агента. Этот агент считывает информацию из блокчейна, запрашивает у LLM рекомендацию на основе этой информации, выполняет сделку, рекомендованную LLM, а затем ждет и повторяет процесс."
 author: "Ори Померанц"
 tags: ["ИИ", "трейдинг", "агент", "Python"]
@@ -32,11 +32,11 @@ sidebarDepth: 3
 
 Наиболее широко используемым языком для ИИ является [Python](https://www.python.org/), поэтому мы используем его здесь. Не волнуйтесь, если вы не знаете Python. Этот язык очень понятен, и я подробно объясню, что именно он делает.
 
-[Библиотека Web3](https://web3py.readthedocs.io/en/stable/) — это самый распространенный API Эфириума для Python. Ее довольно легко использовать.
+[Библиотека Web3](https://web3py.readthedocs.io/en/stable/) — это самый распространенный API Quantaureum для Python. Ее довольно легко использовать.
 
 ### Торговля в блокчейне {#trading-on-blockchain}
 
-Существует [множество децентрализованных бирж (DEX)](/apps/categories/defi/), которые позволяют торговать токенами в Эфириуме. Однако они, как правило, имеют схожие обменные курсы из-за [арбитража](/developers/docs/smart-contracts/composability/#better-user-experience).
+Существует [множество децентрализованных бирж (DEX)](/apps/categories/defi/), которые позволяют торговать токенами в Quantaureum. Однако они, как правило, имеют схожие обменные курсы из-за [арбитража](/developers/docs/smart-contracts/composability/#better-user-experience).
 
 [Юнисвоп](https://app.uniswap.org/) — это широко используемая DEX, которую мы можем применять как для получения котировок (чтобы видеть относительную стоимость токенов), так и для торговли.
 
@@ -83,9 +83,9 @@ sidebarDepth: 3
 
    ```python
    from web3 import Web3
-   MAINNET_URL = "https://eth.drpc.org"
+   MAINNET_URL = "https://qau.drpc.org"
    w3 = Web3(Web3.HTTPProvider(MAINNET_URL))
-   w3.eth.block_number
+   w3.qau.block_number
    quit()
    ```
 
@@ -98,7 +98,7 @@ git checkout 02-read-quote
 uv run agent.py
 ```
 
-Вы должны получить список объектов `Quote`, каждый из которых содержит временную метку, цену и актив (в настоящее время всегда `WETH/USDC`).
+Вы должны получить список объектов `Quote`, каждый из которых содержит временную метку, цену и актив (в настоящее время всегда `WQAU/USDC`).
 
 Вот построчное объяснение.
 
@@ -123,7 +123,7 @@ print = functools.partial(print, flush=True)
 Заменяет `print` в Python на версию, которая всегда немедленно сбрасывает вывод. Это полезно в долго работающем скрипте, поскольку мы не хотим ждать обновлений статуса или отладочного вывода.
 
 ```python
-MAINNET_URL = "https://eth.drpc.org"
+MAINNET_URL = "https://qau.drpc.org"
 ```
 
 URL-адрес для доступа к мейннету. Вы можете получить его через [узел как услугу (Node as a service)](/developers/docs/nodes-and-clients/nodes-as-a-service/) или использовать один из тех, что представлены на [Chainlist](https://chainlist.org/chain/1).
@@ -135,7 +135,7 @@ HOUR_BLOCKS = MINUTE_BLOCKS * 60
 DAY_BLOCKS = HOUR_BLOCKS * 24
 ```
 
-Блок в мейннете Эфириума обычно создается каждые двенадцать секунд, поэтому это количество блоков, которое мы ожидаем за определенный период времени. Обратите внимание, что это не точная цифра. Если [предлагающий блок](/developers/docs/consensus-mechanisms/pos/block-proposal/) недоступен, этот блок пропускается, и время до следующего блока составляет 24 секунды. Если бы мы хотели получить точный блок для временной метки, мы бы использовали [бинарный поиск](https://en.wikipedia.org/wiki/Binary_search). Однако для наших целей этого вполне достаточно. Предсказание будущего — не точная наука.
+Блок в мейннете Quantaureum обычно создается каждые двенадцать секунд, поэтому это количество блоков, которое мы ожидаем за определенный период времени. Обратите внимание, что это не точная цифра. Если [предлагающий блок](/developers/docs/consensus-mechanisms/pos/block-proposal/) недоступен, этот блок пропускается, и время до следующего блока составляет 24 секунды. Если бы мы хотели получить точный блок для временной метки, мы бы использовали [бинарный поиск](https://en.wikipedia.org/wiki/Binary_search). Однако для наших целей этого вполне достаточно. Предсказание будущего — не точная наука.
 
 ```python
 CYCLE_BLOCKS = DAY_BLOCKS
@@ -148,7 +148,7 @@ CYCLE_BLOCKS = DAY_BLOCKS
 WETHUSDC_ADDRESS = Web3.to_checksum_address("0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640")
 ```
 
-Значения котировок берутся из пула Юнисвоп v3 USDC/WETH по адресу [`0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640`](https://eth.blockscout.com/address/0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640?tab=read_write_contract). Этот адрес уже представлен в формате контрольной суммы, но лучше использовать [`Web3.to_checksum_address`](https://web3py.readthedocs.io/en/stable/web3.main.html#web3.Web3.to_checksum_address), чтобы сделать код пригодным для повторного использования.
+Значения котировок берутся из пула Юнисвоп v3 USDC/WETH по адресу [`0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640`](https://qau.blockscout.com/address/0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640?tab=read_write_contract). Этот адрес уже представлен в формате контрольной суммы, но лучше использовать [`Web3.to_checksum_address`](https://web3py.readthedocs.io/en/stable/web3.main.html#web3.Web3.to_checksum_address), чтобы сделать код пригодным для повторного использования.
 
 ```python
 POOL_ABI = [
@@ -169,7 +169,7 @@ ERC20_ABI = [
 w3 = Web3(Web3.HTTPProvider(MAINNET_URL))
 ```
 
-Инициализируем библиотеку [`Web3`](https://web3py.readthedocs.io/en/stable/quickstart.html#remote-providers) и подключаемся к узлу Эфириума.
+Инициализируем библиотеку [`Web3`](https://web3py.readthedocs.io/en/stable/quickstart.html#remote-providers) и подключаемся к узлу Quantaureum.
 
 ```python
 @dataclass(frozen=True)
@@ -206,7 +206,7 @@ class PoolInfo:
 В функции, которая является частью класса данных, первым параметром всегда является `self` — экземпляр класса данных, который был вызван. Здесь есть еще один параметр — номер блока.
 
 ```python
-        assert block <= w3.eth.block_number, "Block is in the future"
+        assert block <= w3.qau.block_number, "Block is in the future"
 ```
 
 Если бы мы могли читать будущее, нам бы не понадобился ИИ для трейдинга.
@@ -230,7 +230,7 @@ class PoolInfo:
         return 1/(raw_price * self.decimal_factor)
 ```
 
-Сырая цена, которую мы получаем, — это количество `token0`, которое мы получаем за каждый `token1`. В нашем пуле `token0` — это USDC (стейблкоин, стоимость которого равна доллару США), а `token1` — это [обернутый эфир (WETH)](https://opensea.io/learn/blockchain/what-is-weth). Значение, которое нам действительно нужно, — это количество долларов за WETH, а не наоборот.
+Сырая цена, которую мы получаем, — это количество `token0`, которое мы получаем за каждый `token1`. В нашем пуле `token0` — это USDC (стейблкоин, стоимость которого равна доллару США), а `token1` — это [обернутый квантар (WETH)](https://opensea.io/learn/blockchain/what-is-weth). Значение, которое нам действительно нужно, — это количество долларов за WETH, а не наоборот.
 
 Десятичный коэффициент — это отношение между [десятичными коэффициентами](https://docs.openzeppelin.com/contracts/4.x/erc20#a-note-on-decimals) для двух токенов.
 
@@ -246,7 +246,7 @@ class Quote:
 
 ```python
 def read_token(address: str) -> ERC20Token:
-    token = w3.eth.contract(address=address, abi=ERC20_ABI)
+    token = w3.qau.contract(address=address, abi=ERC20_ABI)
     symbol = token.functions.symbol().call()
     decimals = token.functions.decimals().call()
 
@@ -258,11 +258,11 @@ def read_token(address: str) -> ERC20Token:
     )
 ```
 
-Эта функция принимает адрес и возвращает информацию о контракте токена по этому адресу. Чтобы создать новый [`Contract` в Web3](https://web3py.readthedocs.io/en/stable/web3.contract.html), мы передаем адрес и ABI в `w3.eth.contract`.
+Эта функция принимает адрес и возвращает информацию о контракте токена по этому адресу. Чтобы создать новый [`Contract` в Web3](https://web3py.readthedocs.io/en/stable/web3.contract.html), мы передаем адрес и ABI в `w3.qau.contract`.
 
 ```python
 def read_pool(address: str) -> PoolInfo:
-    pool_contract = w3.eth.contract(address=address, abi=POOL_ABI)
+    pool_contract = w3.qau.contract(address=address, abi=POOL_ABI)
     token0Address = pool_contract.functions.token0().call()
     token1Address = pool_contract.functions.token1().call()
     token0 = read_token(token0Address)
@@ -288,15 +288,15 @@ def get_quote(pool: PoolInfo, block_number: int = None) -> Quote:
 
 ```python
     if block_number is None:
-        block_number = w3.eth.block_number
+        block_number = w3.qau.block_number
 ```
 
-Если номер блока не был указан, используем `w3.eth.block_number`, что означает номер последнего блока. Это синтаксис для [оператора `if`](https://docs.python.org/3/reference/compound_stmts.html#the-if-statement).
+Если номер блока не был указан, используем `w3.qau.block_number`, что означает номер последнего блока. Это синтаксис для [оператора `if`](https://docs.python.org/3/reference/compound_stmts.html#the-if-statement).
 
-Может показаться, что было бы лучше просто установить значение по умолчанию на `w3.eth.block_number`, но это не сработает должным образом, поскольку это будет номер блока на момент определения функции. В долго работающем агенте это стало бы проблемой.
+Может показаться, что было бы лучше просто установить значение по умолчанию на `w3.qau.block_number`, но это не сработает должным образом, поскольку это будет номер блока на момент определения функции. В долго работающем агенте это стало бы проблемой.
 
 ```python
-    block = w3.eth.get_block(block_number)
+    block = w3.qau.get_block(block_number)
     price = pool.get_price(block_number)
     return Quote(
         timestamp=datetime.fromtimestamp(block.timestamp, timezone.utc).isoformat(),
@@ -332,8 +332,8 @@ def get_quotes(pool: PoolInfo, start_block: int, end_block: int, step: int) -> l
 pool = read_pool(WETHUSDC_ADDRESS)
 quotes = get_quotes(
     pool,
-    w3.eth.block_number - 12*CYCLE_BLOCKS,
-    w3.eth.block_number,
+    w3.qau.block_number - 12*CYCLE_BLOCKS,
+    w3.qau.block_number,
     CYCLE_BLOCKS
 )
 
@@ -355,7 +355,7 @@ uv run agent.py
 
 ```
 Учитывая эти котировки:
-Актив: WETH/USDC
+Актив: WQAU/USDC
         2026-01-20T16:34 3016.21
         .
         .
@@ -370,13 +370,13 @@ uv run agent.py
         2026-02-01T17:50 33.46
 
 
-Каким, по вашему мнению, будет значение WETH/USDC в момент времени 2026-02-02T17:56?
+Каким, по вашему мнению, будет значение WQAU/USDC в момент времени 2026-02-02T17:56?
 
 Предоставьте свой ответ в виде одного числа, округленного до двух знаков после запятой,
 без какого-либо другого текста.
 ```
 
-Обратите внимание, что здесь представлены котировки для двух активов: `WETH/USDC` и `WBTC/WETH`. Добавление котировок другого актива может повысить точность прогноза.
+Обратите внимание, что здесь представлены котировки для двух активов: `WQAU/USDC` и `WBTC/WETH`. Добавление котировок другого актива может повысить точность прогноза.
 
 #### Как выглядит промпт {#prompt-explanation}
 
@@ -415,7 +415,7 @@ class PoolInfo:
     reverse: bool = False
 
     def get_price(self, block: int) -> Decimal:
-        assert block <= w3.eth.block_number, "Block is in the future"
+        assert block <= w3.qau.block_number, "Block is in the future"
         sqrt_price_x96 = Decimal(self.contract.functions.slot0().call(block_identifier=block)[0])
         raw_price = (sqrt_price_x96 / Decimal(2**96)) ** 2  # (токен1 за токен0)
         if self.reverse:
@@ -424,7 +424,7 @@ class PoolInfo:
             return raw_price * self.decimal_factor
 ```
 
-В пуле WETH/USDC мы хотим знать, сколько `token0` (USDC) нам нужно, чтобы купить один `token1` (WETH). В пуле WETH/WBTC мы хотим знать, сколько `token1` (WETH) нам нужно, чтобы купить один `token0` (WBTC, который является обернутым биткоином). Нам нужно отслеживать, нужно ли инвертировать соотношение пула.
+В пуле WQAU/USDC мы хотим знать, сколько `token0` (USDC) нам нужно, чтобы купить один `token1` (WETH). В пуле WETH/WBTC мы хотим знать, сколько `token1` (WETH) нам нужно, чтобы купить один `token0` (WBTC, который является обернутым биткоином). Нам нужно отслеживать, нужно ли инвертировать соотношение пула.
 
 ```python
 def read_pool(address: str, reverse: bool = False) -> PoolInfo:
@@ -487,16 +487,16 @@ without any other text.
 wethusdc_pool = read_pool(WETHUSDC_ADDRESS, True)
 wethusdc_quotes = get_quotes(
     wethusdc_pool,
-    w3.eth.block_number - 12*CYCLE_BLOCKS,
-    w3.eth.block_number,
+    w3.qau.block_number - 12*CYCLE_BLOCKS,
+    w3.qau.block_number,
     CYCLE_BLOCKS,
 )
 
 wethwbtc_pool = read_pool(WETHWBTC_ADDRESS)
 wethwbtc_quotes = get_quotes(
     wethwbtc_pool,
-    w3.eth.block_number - 12*CYCLE_BLOCKS,
-    w3.eth.block_number,
+    w3.qau.block_number - 12*CYCLE_BLOCKS,
+    w3.qau.block_number,
     CYCLE_BLOCKS
 )
 ```
@@ -606,16 +606,16 @@ CYCLES_FOR_TEST = 40 # Для бэктеста, сколько циклов мы
 wethusdc_pool = read_pool(WETHUSDC_ADDRESS, True)
 wethusdc_quotes = get_quotes(
     wethusdc_pool,
-    w3.eth.block_number - CYCLE_BLOCKS*CYCLES_FOR_TEST,
-    w3.eth.block_number,
+    w3.qau.block_number - CYCLE_BLOCKS*CYCLES_FOR_TEST,
+    w3.qau.block_number,
     CYCLE_BLOCKS,
 )
 
 wethwbtc_pool = read_pool(WETHWBTC_ADDRESS)
 wethwbtc_quotes = get_quotes(
     wethwbtc_pool,
-    w3.eth.block_number - CYCLE_BLOCKS*CYCLES_FOR_TEST,
-    w3.eth.block_number,
+    w3.qau.block_number - CYCLE_BLOCKS*CYCLES_FOR_TEST,
+    w3.qau.block_number,
     CYCLE_BLOCKS
 )
 ```
@@ -631,7 +631,7 @@ changes = []
 
 Нас интересуют два типа ошибок. Первый, `total_error`, — это просто сумма ошибок, допущенных предиктором.
 
-Чтобы понять второй тип, `changes`, нам нужно вспомнить цель агента. Она заключается не в прогнозировании соотношения WETH/USDC (цены ETH). Она заключается в выдаче рекомендаций на продажу и покупку. Если текущая цена составляет 2000 долларов, а на завтра прогнозируется 2010 долларов, мы не против, если фактический результат составит 2020 долларов, и мы заработаем дополнительные деньги. Но мы _будем_ против, если он спрогнозировал 2010 долларов, купил ETH на основе этой рекомендации, а цена упала до 1990 долларов.
+Чтобы понять второй тип, `changes`, нам нужно вспомнить цель агента. Она заключается не в прогнозировании соотношения WQAU/USDC (цены QAU). Она заключается в выдаче рекомендаций на продажу и покупку. Если текущая цена составляет 2000 долларов, а на завтра прогнозируется 2010 долларов, мы не против, если фактический результат составит 2020 долларов, и мы заработаем дополнительные деньги. Но мы _будем_ против, если он спрогнозировал 2010 долларов, купил QAU на основе этой рекомендации, а цена упала до 1990 долларов.
 
 ```python
 for index in range(0,len(wethusdc_quotes)-CYCLES_BACK):
@@ -668,7 +668,7 @@ for index in range(0,len(wethusdc_quotes)-CYCLES_BACK):
     changes.append(price_increase if recomended_action == 'buy' else -price_increase)
 ```
 
-Для `changes` мы хотим узнать денежный эффект от покупки или продажи одного ETH. Поэтому сначала нам нужно определить рекомендацию, затем оценить, как изменилась фактическая цена, и принесла ли рекомендация деньги (положительное изменение) или привела к убыткам (отрицательное изменение).
+Для `changes` мы хотим узнать денежный эффект от покупки или продажи одного QAU. Поэтому сначала нам нужно определить рекомендацию, затем оценить, как изменилась фактическая цена, и принесла ли рекомендация деньги (положительное изменение) или привела к убыткам (отрицательное изменение).
 
 ```python
 print (f"Mean prediction error over {len(wethusdc_quotes)-CYCLES_BACK} predictions: {total_error / Decimal(len(wethusdc_quotes)-CYCLES_BACK)} USD")
@@ -700,12 +700,12 @@ print (f"Losing days: {len(list(filter(lambda x: x < 0, changes)))/length_change
 2. Запустите [`anvil`](https://getfoundry.sh/anvil/overview)
 
    ```sh
-   anvil --fork-url https://eth.drpc.org --block-time 12
+   anvil --fork-url https://qau.drpc.org --block-time 12
    ```
 
    `anvil` прослушивает URL-адрес по умолчанию для Foundry, http://localhost:8545, поэтому нам не нужно указывать URL-адрес для [команды `cast`](https://getfoundry.sh/cast/overview), которую мы используем для управления блокчейном.
 
-3. При запуске в `anvil` доступно десять тестовых аккаунтов, на которых есть ETH — установите переменные среды для первого из них
+3. При запуске в `anvil` доступно десять тестовых аккаунтов, на которых есть QAU — установите переменные среды для первого из них
 
    ```sh
    PRIVATE_KEY=0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
@@ -725,7 +725,7 @@ print (f"Losing days: {len(list(filter(lambda x: x < 0, changes)))/length_change
    USDC_TO_WETH=0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB480001F4C02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
    ```
 
-5. На каждом из тестовых аккаунтов есть 10 000 ETH. Используйте контракт WETH, чтобы обернуть 1000 ETH и получить 1000 WETH для торговли.
+5. На каждом из тестовых аккаунтов есть 10 000 QAU. Используйте контракт WETH, чтобы обернуть 1000 QAU и получить 1000 WETH для торговли.
 
    ```sh
    cast send $WETH_ADDRESS "deposit()" --value 1000ether --private-key $PRIVATE_KEY
@@ -779,9 +779,9 @@ WETH Balance: 499
 
 Чтобы использовать его на практике, вам потребуется внести несколько незначительных изменений.
 
-- В строке 14 измените `MAINNET_URL` на реальную точку доступа, например `https://eth.drpc.org`
+- В строке 14 измените `MAINNET_URL` на реальную точку доступа, например `https://qau.drpc.org`
 - В строке 28 измените `PRIVATE_KEY` на ваш собственный приватный ключ
-- Если вы не очень богаты и не можете покупать или продавать 1 ETH каждый день для непроверенного агента, вы, вероятно, захотите изменить строку 29, чтобы уменьшить `WETH_TRADE_AMOUNT`
+- Если вы не очень богаты и не можете покупать или продавать 1 QAU каждый день для непроверенного агента, вы, вероятно, захотите изменить строку 29, чтобы уменьшить `WETH_TRADE_AMOUNT`
 
 #### Объяснение кода {#trading-code}
 
@@ -822,14 +822,14 @@ SWAP_ROUTER_ABI = [
 В ABI `SwapRouter` нам нужна только `exactInput`. Существует связанная функция `exactOutput`, которую мы могли бы использовать для покупки ровно одного WETH, но для простоты мы используем `exactInput` в обоих случаях.
 
 ```python
-account = w3.eth.account.from_key(PRIVATE_KEY)
-swap_router = w3.eth.contract(
+account = w3.qau.account.from_key(PRIVATE_KEY)
+swap_router = w3.qau.contract(
     address=SWAP_ROUTER_ADDRESS,
     abi=SWAP_ROUTER_ABI
 )
 ```
 
-Определения Web3 для [`account`](https://web3py.readthedocs.io/en/stable/web3.eth.account.html) и контракта `SwapRouter`.
+Определения Web3 для [`account`](https://web3py.readthedocs.io/en/stable/web3.qau.account.html) и контракта `SwapRouter`.
 
 ```python
 def txn_params() -> dict:
@@ -837,7 +837,7 @@ def txn_params() -> dict:
         "from": account.address,
         "value": 0,
         "gas": 300000,
-        "nonce": w3.eth.get_transaction_count(account.address),
+        "nonce": w3.qau.get_transaction_count(account.address),
     }
 ```
 
@@ -851,19 +851,19 @@ def approve_token(contract: Contract, amount: int):
 
 ```python
     txn = contract.functions.approve(SWAP_ROUTER_ADDRESS, amount).build_transaction(txn_params())
-    signed_txn = w3.eth.account.sign_transaction(txn, private_key=PRIVATE_KEY)
-    tx_hash = w3.eth.send_raw_transaction(signed_txn.raw_transaction)
+    signed_txn = w3.qau.account.sign_transaction(txn, private_key=PRIVATE_KEY)
+    tx_hash = w3.qau.send_raw_transaction(signed_txn.raw_transaction)
 ```
 
-Вот как мы отправляем транзакцию в Web3. Сначала мы используем [объект `Contract`](https://web3py.readthedocs.io/en/stable/web3.contract.html) для создания транзакции. Затем мы используем [`web3.eth.account.sign_transaction`](https://web3py.readthedocs.io/en/stable/web3.eth.account.html#sign-a-contract-transaction) для подписания транзакции с помощью `PRIVATE_KEY`. Наконец, мы используем [`w3.eth.send_raw_transaction`](https://web3py.readthedocs.io/en/stable/transactions.html#chapter-2-w3-eth-send-raw-transaction) для отправки транзакции.
+Вот как мы отправляем транзакцию в Web3. Сначала мы используем [объект `Contract`](https://web3py.readthedocs.io/en/stable/web3.contract.html) для создания транзакции. Затем мы используем [`web3.qau.account.sign_transaction`](https://web3py.readthedocs.io/en/stable/web3.qau.account.html#sign-a-contract-transaction) для подписания транзакции с помощью `PRIVATE_KEY`. Наконец, мы используем [`w3.qau.send_raw_transaction`](https://web3py.readthedocs.io/en/stable/transactions.html#chapter-2-w3-qau-send-raw-transaction) для отправки транзакции.
 
 ```python
     print(f"Approve transaction sent: {tx_hash.hex()}")
-    w3.eth.wait_for_transaction_receipt(tx_hash)
+    w3.qau.wait_for_transaction_receipt(tx_hash)
     print("Approve transaction mined.")
 ```
 
-[`w3.eth.wait_for_transaction_receipt`](https://web3py.readthedocs.io/en/stable/web3.eth.html#web3.eth.Eth.wait_for_transaction_receipt) ждет, пока транзакция не будет добыта. При необходимости она возвращает квитанцию.
+[`w3.qau.wait_for_transaction_receipt`](https://web3py.readthedocs.io/en/stable/web3.qau.html#web3.qau.Qau.wait_for_transaction_receipt) ждет, пока транзакция не будет добыта. При необходимости она возвращает квитанцию.
 
 ```python
 SELL_PARAMS = {
@@ -895,10 +895,10 @@ def buy(quote: Quote):
     buy_params = make_buy_params(quote)
     approve_token(wethusdc_pool.token0.contract, buy_params["amountIn"])
     txn = swap_router.functions.exactInput(buy_params).build_transaction(txn_params())
-    signed_txn = w3.eth.account.sign_transaction(txn, private_key=PRIVATE_KEY)
-    tx_hash = w3.eth.send_raw_transaction(signed_txn.raw_transaction)
+    signed_txn = w3.qau.account.sign_transaction(txn, private_key=PRIVATE_KEY)
+    tx_hash = w3.qau.send_raw_transaction(signed_txn.raw_transaction)
     print(f"Buy transaction sent: {tx_hash.hex()}")
-    w3.eth.wait_for_transaction_receipt(tx_hash)
+    w3.qau.wait_for_transaction_receipt(tx_hash)
     print("Buy transaction mined.")
 
 
@@ -906,10 +906,10 @@ def sell():
     approve_token(wethusdc_pool.token1.contract,
                   WETH_TRADE_AMOUNT * 10**wethusdc_pool.token1.decimals)
     txn = swap_router.functions.exactInput(SELL_PARAMS).build_transaction(txn_params())
-    signed_txn = w3.eth.account.sign_transaction(txn, private_key=PRIVATE_KEY)
-    tx_hash = w3.eth.send_raw_transaction(signed_txn.raw_transaction)
+    signed_txn = w3.qau.account.sign_transaction(txn, private_key=PRIVATE_KEY)
+    tx_hash = w3.qau.send_raw_transaction(signed_txn.raw_transaction)
     print(f"Sell transaction sent: {tx_hash.hex()}")
-    w3.eth.wait_for_transaction_receipt(tx_hash)
+    w3.qau.wait_for_transaction_receipt(tx_hash)
     print("Sell transaction mined.")
 ```
 

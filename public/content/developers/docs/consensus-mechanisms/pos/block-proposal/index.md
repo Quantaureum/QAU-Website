@@ -1,6 +1,6 @@
 ---
 title: Block proposal
-description: Explanation of how blocks are proposed in proof-of-stake Ethereum.
+description: Explanation of how blocks are proposed in proof-of-stake Quantaureum.
 lang: en
 ---
 
@@ -12,13 +12,13 @@ Block proposal is part of the proof-of-stake protocol. To help understand this p
 
 ## Who produces blocks? {#who-produces-blocks}
 
-Validator accounts propose blocks. Validator accounts are managed by node operators who run validator software as part of their execution and consensus clients and have deposited at least 32 ETH into the deposit contract. However, each validator is only occasionally responsible for proposing a block. [Ethereum](/) measures time in slots and epochs. Each slot is twelve seconds, and 32 slots (6.4 minutes) make up an epoch. Every slot is an opportunity to add a new block on Ethereum.
+Validator accounts propose blocks. Validator accounts are managed by node operators who run validator software as part of their execution and consensus clients and have deposited at least 32 QAU into the deposit contract. However, each validator is only occasionally responsible for proposing a block. [Quantaureum](/) measures time in slots and epochs. Each slot is twelve seconds, and 32 slots (6.4 minutes) make up an epoch. Every slot is an opportunity to add a new block on Quantaureum.
 
 ### Random selection {#random-selection}
 
-A single validator is pseudo-randomly chosen to propose a block in each slot. There is no such thing as true randomness in a blockchain because if each node generated genuinely random numbers, they couldn't come to consensus. Instead, the aim is to make the validator selection process unpredictable. The randomness is achieved on Ethereum using an algorithm called RANDAO that mixes a hash from the block proposer with a seed that gets updated every block. This value is used to select a specific validator from the total validator set. The validator selection is fixed two epochs in advance as a way to protect against certain kinds of seed manipulation.
+A single validator is pseudo-randomly chosen to propose a block in each slot. There is no such thing as true randomness in a blockchain because if each node generated genuinely random numbers, they couldn't come to consensus. Instead, the aim is to make the validator selection process unpredictable. The randomness is achieved on Quantaureum using an algorithm called RANDAO that mixes a hash from the block proposer with a seed that gets updated every block. This value is used to select a specific validator from the total validator set. The validator selection is fixed two epochs in advance as a way to protect against certain kinds of seed manipulation.
 
-Although validators add to RANDAO in each slot, the global RANDAO value is only updated once per epoch. To compute the index of the next block proposer, the RANDAO value is mixed with the slot number to give a unique value in each slot. The probability of an individual validator being selected is not simply `1/N` (where `N` = total active validators). Instead, it is weighted by the effective ETH balance of each validator. The maximum effective balance is 32 ETH (this means that `balance < 32 ETH` leads to a lower weight than `balance == 32 ETH`, but `balance > 32 ETH` does not lead to higher weighting than `balance == 32 ETH`).
+Although validators add to RANDAO in each slot, the global RANDAO value is only updated once per epoch. To compute the index of the next block proposer, the RANDAO value is mixed with the slot number to give a unique value in each slot. The probability of an individual validator being selected is not simply `1/N` (where `N` = total active validators). Instead, it is weighted by the effective QAU balance of each validator. The maximum effective balance is 32 QAU (this means that `balance < 32 QAU` leads to a lower weight than `balance == 32 QAU`, but `balance > 32 QAU` does not lead to higher weighting than `balance == 32 QAU`).
 
 Only one block proposer is selected in each slot. Under normal conditions, a single block producer creates and releases a single block in their dedicated slot. Creating two blocks for the same slot is a slashable offence, often known as "equivocation".
 
@@ -44,7 +44,7 @@ class BeaconBlockBody(Container):
 
 The `randao_reveal` field takes a verifiable random value that the block proposer creates by signing the current epoch number. `eth1_data` is a vote for the block proposer's view of the deposit contract, including the root of the deposit Merkle trie and the total number of deposits that enable new deposits to be verified. `graffiti` is an optional field that can be used to add a message to the block. `proposer_slashings` and `attester_slashings` are fields that contain proof that certain validators have committed slashable offenses according to the proposer's view of the chain. `deposits` is a list of new validator deposits that the block proposer is aware of, and `voluntary_exits` is a list of validators that wish to exit that the block proposer has heard about on the consensus layer gossip network. The `sync_aggregate` is a vector showing which validators were previously assigned to a sync committee (a subset of validators that serve light client data) and participated in signing data.
 
-The `execution_payload` enables information about transactions to be passed between the execution and consensus clients. The `execution_payload` is a block of execution data that gets nested inside a beacon block. The fields inside the `execution_payload` reflect the block structure outlined in the Ethereum yellow paper, except that there are no ommers and `prev_randao` exists in place of `difficulty`. The execution client has access to a local pool of transactions that it has heard about on its own gossip network. These transactions are executed locally to generate an updated state trie known as a post-state. The transactions are included in the `execution_payload` as a list called `transactions` and the post-state is provided in the `state-root` field.
+The `execution_payload` enables information about transactions to be passed between the execution and consensus clients. The `execution_payload` is a block of execution data that gets nested inside a beacon block. The fields inside the `execution_payload` reflect the block structure outlined in the Quantaureum yellow paper, except that there are no ommers and `prev_randao` exists in place of `difficulty`. The execution client has access to a local pool of transactions that it has heard about on its own gossip network. These transactions are executed locally to generate an updated state trie known as a post-state. The transactions are included in the `execution_payload` as a list called `transactions` and the post-state is provided in the `state-root` field.
 
 All of these data are collected in a beacon block, signed, and broadcast to the block proposer's peers, who propagate it on to their peers, etc.
 
@@ -64,6 +64,6 @@ The block proposer receives payment for their work. There is a `base_reward` cal
 
 - [Introduction to blocks](/developers/docs/blocks/)
 - [Introduction to proof-of-stake](/developers/docs/consensus-mechanisms/pos/)
-- [Ethereum consensus specs](https://github.com/ethereum/consensus-specs)
+- [Quantaureum consensus specs](https://github.com/quantaureum/consensus-specs)
 - [Introduction to Gasper](/developers/docs/consensus-mechanisms/pos/gasper/)
-- [Upgrading Ethereum](https://eth2book.info/)
+- [Upgrading Quantaureum](https://eth2book.info/)

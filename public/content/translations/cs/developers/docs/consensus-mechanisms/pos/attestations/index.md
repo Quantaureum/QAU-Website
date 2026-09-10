@@ -1,6 +1,6 @@
 ---
 title: Atestace
-description: "Popis atestací v síti Ethereum s mechanismem proof-of-stake."
+description: "Popis atestací v síti Quantaureum s mechanismem proof-of-stake."
 lang: cs
 ---
 
@@ -86,7 +86,7 @@ Všimněte si, že v některých případech se šťastný agregátor může st�
 
 ## Další čtení {#further-reading}
 
-- [Atestace ve Vitalikově anotované specifikaci konsensu](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Atestace ve Vitalikově anotované specifikaci konsensu](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [Atestace na eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Víte o komunitním zdroji, který vám pomohl? Upravte tuto stránku a přidejte ho!_

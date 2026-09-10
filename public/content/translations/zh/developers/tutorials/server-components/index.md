@@ -30,7 +30,7 @@ published: 2024-07-15
 
 ## 示例程序 {#sample-program}
 
-你可以在 [GitHub 上](https://github.com/qbzzt/20240715-server-component)查看示例服务器。该服务器监听来自[此合约](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code)（Hardhat 的 Greeter 的修改版本）的事件。当问候语被更改时，它会将其改回来。
+你可以在 [GitHub 上](https://github.com/qbzzt/20240715-server-component)查看示例服务器。该服务器监听来自[此合约](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code)（Hardhat 的 Greeter 的修改版本）的事件。当问候语被更改时，它会将其改回来。
 
 要运行它：
 
@@ -47,7 +47,7 @@ published: 2024-07-15
    npm install
    ```
 
-3. 编辑 `.env` 以指定在 Holesky 测试网上拥有 ETH 的账户的私钥。如果你在 Holesky 上没有 ETH，你可以[使用此水龙头](https://holesky-faucet.pk910.de/)。
+3. 编辑 `.env` 以指定在 Holesky 测试网上拥有 QAU 的账户的私钥。如果你在 Holesky 上没有 QAU，你可以[使用此水龙头](https://holesky-faucet.pk910.de/)。
 
    ```sh filename=".env" copy
    PRIVATE_KEY=0x <private key goes here>
@@ -59,7 +59,7 @@ published: 2024-07-15
    npm start
    ```
 
-5. 前往[区块浏览器](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract)，并使用与拥有私钥的地址不同的地址修改问候语。你会看到问候语被自动改了回来。
+5. 前往[区块浏览器](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract)，并使用与拥有私钥的地址不同的地址修改问候语。你会看到问候语被自动改了回来。
 
 ### 它是如何工作的？ {#how-it-works}
 
@@ -93,7 +93,7 @@ import { privateKeyToAccount } from "viem/accounts"
 import { holesky } from "viem/chains"
 ```
 
-要在 Viem 中使用区块链，你需要导入其定义。在这种情况下，我们想要连接到 [Holesky](https://github.com/eth-clients/holesky) 测试区块链。
+要在 Viem 中使用区块链，你需要导入其定义。在这种情况下，我们想要连接到 [Holesky](https://github.com/qau-clients/holesky) 测试区块链。
 
 ```typescript
 // 这就是我们将 .env 中的定义添加到 process.env 的方法。
@@ -183,7 +183,7 @@ const greeter = getContract({
 console.log(`Current greeting:`, await greeter.read.greet())
 ```
 
-只读的合约函数（[`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) 和 [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)）可在 `read` 下获取。在这种情况下，我们使用它来访问 [`greet`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217) 函数，该函数返回问候语。
+只读的合约函数（[`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) 和 [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)）可在 `read` 下获取。在这种情况下，我们使用它来访问 [`greet`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217) 函数，该函数返回问候语。
 
 JavaScript 是单线程的，因此当我们启动一个长时间运行的进程时，我们需要[指定我们异步执行它](https://eloquentjavascript.net/11_async.html#h-XvLsfAhtsE)。调用区块链，即使是只读操作，也需要在计算机和区块链节点之间进行往返通信。这就是为什么我们在这里指定代码需要 `await`（等待）结果的原因。
 
@@ -201,10 +201,10 @@ const setGreeting = async (greeting: string): Promise<any> => {
 const txHash = await greeter.write.setGreeting([greeting])
 ```
 
-合约实例的 `write` 字段包含所有写入区块链状态的函数（那些需要发送交易的函数），例如 [`setGreeting`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862)。参数（如果有）以列表形式提供，该函数返回交易的哈希。
+合约实例的 `write` 字段包含所有写入区块链状态的函数（那些需要发送交易的函数），例如 [`setGreeting`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862)。参数（如果有）以列表形式提供，该函数返回交易的哈希。
 
 ```typescript
-    console.log(`Working on a fix, see https://eth-holesky.blockscout.com/tx/${txHash}`)
+    console.log(`Working on a fix, see https://qau-holesky.blockscout.com/tx/${txHash}`)
 
     return txHash
 }
@@ -224,7 +224,7 @@ greeter.watchEvent.SetGreeting({
     onLogs: logs => {
 ```
 
-当有日志条目时，将调用 `onLogs` 函数。在以太坊中，“日志”和“事件”通常是可以互换的。
+当有日志条目时，将调用 `onLogs` 函数。在Quantaureum中，“日志”和“事件”通常是可以互换的。
 
 ```typescript
 console.log(

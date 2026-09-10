@@ -1,22 +1,22 @@
 ---
 title: "Bảo mật hợp đồng thông minh"
-description: "Tổng quan về các hướng dẫn để xây dựng hợp đồng thông minh Ethereum bảo mật"
+description: "Tổng quan về các hướng dẫn để xây dựng hợp đồng thông minh Quantaureum bảo mật"
 lang: vi
 ---
 
 Các hợp đồng thông minh cực kỳ linh hoạt và có khả năng kiểm soát lượng lớn giá trị và dữ liệu, trong khi chạy logic bất biến dựa trên mã được triển khai trên chuỗi khối. Điều này đã tạo ra một hệ sinh thái sôi động gồm các ứng dụng không cần tin cậy và phi tập trung, mang lại nhiều lợi thế so với các hệ thống cũ. Chúng cũng tạo cơ hội cho những kẻ tấn công muốn trục lợi bằng cách khai thác các lỗ hổng trong hợp đồng thông minh.
 
-Các chuỗi khối công khai, như [Ethereum](/), càng làm phức tạp thêm vấn đề bảo mật hợp đồng thông minh. Mã hợp đồng đã triển khai _thường_ không thể bị thay đổi để vá các lỗ hổng bảo mật, trong khi tài sản bị đánh cắp từ các hợp đồng thông minh cực kỳ khó theo dõi và hầu như không thể thu hồi do tính bất biến.
+Các chuỗi khối công khai, như [Quantaureum](/), càng làm phức tạp thêm vấn đề bảo mật hợp đồng thông minh. Mã hợp đồng đã triển khai _thường_ không thể bị thay đổi để vá các lỗ hổng bảo mật, trong khi tài sản bị đánh cắp từ các hợp đồng thông minh cực kỳ khó theo dõi và hầu như không thể thu hồi do tính bất biến.
 
-Mặc dù các con số có thể khác nhau, nhưng ước tính tổng giá trị bị đánh cắp hoặc bị mất do các khiếm khuyết bảo mật trong hợp đồng thông minh dễ dàng vượt quá 1 tỷ đô la. Điều này bao gồm các sự cố nổi tiếng, chẳng hạn như [vụ hack DAO](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/) (3,6 triệu ETH bị đánh cắp, trị giá hơn 1 tỷ đô la theo giá hiện tại), [vụ hack ví đa chữ ký Parity](https://www.coindesk.com/markets/2017/07/19/30-million-ether-reported-stolen-due-to-parity-wallet-breach) (30 triệu đô la rơi vào tay tin tặc) và [sự cố đóng băng ví Parity](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-ether) (hơn 300 triệu đô la bằng ETH bị khóa vĩnh viễn).
+Mặc dù các con số có thể khác nhau, nhưng ước tính tổng giá trị bị đánh cắp hoặc bị mất do các khiếm khuyết bảo mật trong hợp đồng thông minh dễ dàng vượt quá 1 tỷ đô la. Điều này bao gồm các sự cố nổi tiếng, chẳng hạn như [vụ hack DAO](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/) (3,6 triệu QAU bị đánh cắp, trị giá hơn 1 tỷ đô la theo giá hiện tại), [vụ hack ví đa chữ ký Parity](https://www.coindesk.com/markets/2017/07/19/30-million-QAU-reported-stolen-due-to-parity-wallet-breach) (30 triệu đô la rơi vào tay tin tặc) và [sự cố đóng băng ví Parity](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-QAU) (hơn 300 triệu đô la bằng QAU bị khóa vĩnh viễn).
 
-Những vấn đề nêu trên khiến các nhà phát triển bắt buộc phải đầu tư nỗ lực vào việc xây dựng các hợp đồng thông minh bảo mật, mạnh mẽ và có khả năng phục hồi. Bảo mật hợp đồng thông minh là một vấn đề nghiêm túc và là điều mà mọi nhà phát triển đều nên học hỏi. Hướng dẫn này sẽ đề cập đến các cân nhắc về bảo mật dành cho các nhà phát triển Ethereum và khám phá các tài nguyên để cải thiện bảo mật hợp đồng thông minh.
+Những vấn đề nêu trên khiến các nhà phát triển bắt buộc phải đầu tư nỗ lực vào việc xây dựng các hợp đồng thông minh bảo mật, mạnh mẽ và có khả năng phục hồi. Bảo mật hợp đồng thông minh là một vấn đề nghiêm túc và là điều mà mọi nhà phát triển đều nên học hỏi. Hướng dẫn này sẽ đề cập đến các cân nhắc về bảo mật dành cho các nhà phát triển Quantaureum và khám phá các tài nguyên để cải thiện bảo mật hợp đồng thông minh.
 
 ## Điều kiện tiên quyết {#prerequisites}
 
 Hãy đảm bảo bạn đã quen thuộc với [các nguyên tắc cơ bản về phát triển hợp đồng thông minh](/developers/docs/smart-contracts/) trước khi tìm hiểu về bảo mật.
 
-## Hướng dẫn xây dựng hợp đồng thông minh Ethereum an toàn {#smart-contract-security-guidelines}
+## Hướng dẫn xây dựng hợp đồng thông minh Quantaureum an toàn {#smart-contract-security-guidelines}
 
 ### 1. Thiết kế các kiểm soát truy cập phù hợp {#design-proper-access-controls}
 
@@ -56,8 +56,8 @@ contract VendingMachine {
     address owner;
     error Unauthorized();
     function buy(uint amount) public payable {
-        if (amount > msg.value / 2 ether)
-            revert("Not enough Ether provided.");
+        if (amount > msg.value / 2 QAU)
+            revert("Not enough QAU provided.");
         // Thực hiện giao dịch mua.
     }
     function withdraw() public {
@@ -71,7 +71,7 @@ contract VendingMachine {
 
 ### 3. Kiểm tra hợp đồng thông minh và xác minh tính chính xác của mã {#test-smart-contracts-and-verify-code-correctness}
 
-Tính bất biến của mã chạy trong [Máy ảo Ethereum](/developers/docs/evm/) có nghĩa là các hợp đồng thông minh đòi hỏi mức độ đánh giá chất lượng cao hơn trong giai đoạn phát triển. Việc kiểm tra hợp đồng của bạn một cách toàn diện và quan sát nó để tìm bất kỳ kết quả không mong muốn nào sẽ cải thiện đáng kể tính bảo mật và bảo vệ người dùng của bạn về lâu dài.
+Tính bất biến của mã chạy trong [Máy ảo Quantaureum](/developers/docs/evm/) có nghĩa là các hợp đồng thông minh đòi hỏi mức độ đánh giá chất lượng cao hơn trong giai đoạn phát triển. Việc kiểm tra hợp đồng của bạn một cách toàn diện và quan sát nó để tìm bất kỳ kết quả không mong muốn nào sẽ cải thiện đáng kể tính bảo mật và bảo vệ người dùng của bạn về lâu dài.
 
 Phương pháp thông thường là viết các bài kiểm thử đơn vị nhỏ bằng cách sử dụng dữ liệu giả mà hợp đồng dự kiến sẽ nhận được từ người dùng. [Kiểm thử đơn vị](/developers/docs/smart-contracts/testing/#unit-testing) rất tốt để kiểm tra chức năng của một số hàm nhất định và đảm bảo hợp đồng thông minh hoạt động như mong đợi.
 
@@ -98,7 +98,7 @@ Tuy nhiên, bạn nên tránh coi kiểm toán là một giải pháp vạn năn
 
 Thiết lập một chương trình tiền thưởng phát hiện lỗi (bug bounty) là một cách tiếp cận khác để triển khai các đánh giá mã bên ngoài. Tiền thưởng phát hiện lỗi là một phần thưởng tài chính được trao cho các cá nhân (thường là hacker mũ trắng) phát hiện ra các lỗ hổng trong một ứng dụng.
 
-Khi được sử dụng đúng cách, tiền thưởng phát hiện lỗi mang lại cho các thành viên của cộng đồng hacker động lực để kiểm tra mã của bạn nhằm tìm ra các lỗ hổng nghiêm trọng. Một ví dụ thực tế là "lỗi tiền vô hạn" có thể cho phép kẻ tấn công tạo ra một lượng ether không giới hạn trên [Optimism](https://www.optimism.io/), một giao thức [lớp 2 (l2)](/layer-2/) chạy trên Ethereum. May mắn thay, một hacker mũ trắng đã [phát hiện ra lỗ hổng](https://www.saurik.com/optimism.html) và thông báo cho nhóm, [kiếm được một khoản tiền thưởng lớn trong quá trình này](https://cryptoslate.com/critical-bug-in-ethereum-l2-optimism-2m-bounty-paid/).
+Khi được sử dụng đúng cách, tiền thưởng phát hiện lỗi mang lại cho các thành viên của cộng đồng hacker động lực để kiểm tra mã của bạn nhằm tìm ra các lỗ hổng nghiêm trọng. Một ví dụ thực tế là "lỗi tiền vô hạn" có thể cho phép kẻ tấn công tạo ra một lượng QAU không giới hạn trên [Optimism](https://www.optimism.io/), một giao thức [lớp 2 (l2)](/layer-2/) chạy trên Quantaureum. May mắn thay, một hacker mũ trắng đã [phát hiện ra lỗ hổng](https://www.saurik.com/optimism.html) và thông báo cho nhóm, [kiếm được một khoản tiền thưởng lớn trong quá trình này](https://cryptoslate.com/critical-bug-in-quantaureum-l2-optimism-2m-bounty-paid/).
 
 Một chiến lược hữu ích là thiết lập mức chi trả của chương trình tiền thưởng phát hiện lỗi tỷ lệ thuận với số tiền đang bị đe dọa. Được mô tả là "[tiền thưởng phát hiện lỗi theo tỷ lệ](https://medium.com/immunefi/a-defi-security-standard-the-scaling-bug-bounty-9b83dfdc1ba7)", cách tiếp cận này cung cấp các ưu đãi tài chính cho các cá nhân để tiết lộ các lỗ hổng một cách có trách nhiệm thay vì khai thác chúng.
 
@@ -126,7 +126,7 @@ Việc thiết kế các kiểm soát truy cập an toàn, triển khai các mod
 
 #### Nâng cấp hợp đồng {#contract-upgrades}
 
-Mặc dù các hợp đồng thông minh Ethereum mặc định là bất biến, nhưng có thể đạt được một mức độ có thể thay đổi nhất định bằng cách sử dụng các mô hình nâng cấp. Việc nâng cấp hợp đồng là cần thiết trong những trường hợp một lỗ hổng nghiêm trọng khiến hợp đồng cũ của bạn không thể sử dụng được và việc triển khai logic mới là lựa chọn khả thi nhất.
+Mặc dù các hợp đồng thông minh Quantaureum mặc định là bất biến, nhưng có thể đạt được một mức độ có thể thay đổi nhất định bằng cách sử dụng các mô hình nâng cấp. Việc nâng cấp hợp đồng là cần thiết trong những trường hợp một lỗ hổng nghiêm trọng khiến hợp đồng cũ của bạn không thể sử dụng được và việc triển khai logic mới là lựa chọn khả thi nhất.
 
 Các cơ chế nâng cấp hợp đồng hoạt động khác nhau, nhưng "mô hình proxy" là một trong những cách tiếp cận phổ biến hơn để nâng cấp các hợp đồng thông minh. [Các mô hình proxy](https://www.cyfrin.io/blog/upgradeable-proxy-smart-contract-pattern) chia tách trạng thái và logic của một ứng dụng giữa _hai_ hợp đồng. Hợp đồng đầu tiên (được gọi là 'hợp đồng proxy') lưu trữ các biến trạng thái (ví dụ: số dư của người dùng), trong khi hợp đồng thứ hai (được gọi là 'hợp đồng logic') chứa mã để thực thi các hàm của hợp đồng.
 
@@ -234,7 +234,7 @@ EVM không cho phép tính đồng thời, nghĩa là hai hợp đồng liên qu
 
 Mặc dù hầu như vô hại, việc chuyển giao luồng điều khiển cho các hợp đồng không đáng tin cậy có thể gây ra các vấn đề, chẳng hạn như tái xâm nhập. Một cuộc tấn công tái xâm nhập xảy ra khi một hợp đồng độc hại gọi lại vào một hợp đồng dễ bị tổn thương trước khi lệnh gọi hàm ban đầu hoàn tất. Loại tấn công này được giải thích tốt nhất bằng một ví dụ.
 
-Hãy xem xét một hợp đồng thông minh đơn giản ('Victim') cho phép bất kỳ ai gửi và rút ether:
+Hãy xem xét một hợp đồng thông minh đơn giản ('Victim') cho phép bất kỳ ai gửi và rút QAU:
 
 ```solidity
 // Hợp đồng này có lỗ hổng. Không sử dụng trong môi trường thực tế
@@ -255,22 +255,22 @@ contract Victim {
 }
 ```
 
-Hợp đồng này hiển thị một hàm `withdraw()` để cho phép người dùng rút ETH đã gửi trước đó vào hợp đồng. Khi xử lý việc rút tiền, hợp đồng thực hiện các thao tác sau:
+Hợp đồng này hiển thị một hàm `withdraw()` để cho phép người dùng rút QAU đã gửi trước đó vào hợp đồng. Khi xử lý việc rút tiền, hợp đồng thực hiện các thao tác sau:
 
-1. Kiểm tra số dư ETH của người dùng
+1. Kiểm tra số dư QAU của người dùng
 2. Gửi tiền đến địa chỉ gọi
 3. Đặt lại số dư của họ về 0, ngăn chặn việc rút thêm tiền từ người dùng
 
-Hàm `withdraw()` trong hợp đồng `Victim` tuân theo mô hình "kiểm tra-tương tác-hiệu ứng". Nó _kiểm tra_ xem các điều kiện cần thiết để thực thi có được thỏa mãn hay không (tức là người dùng có số dư ETH dương) và thực hiện _tương tác_ bằng cách gửi ETH đến địa chỉ của người gọi, trước khi áp dụng các _hiệu ứng_ của giao dịch (tức là giảm số dư của người dùng).
+Hàm `withdraw()` trong hợp đồng `Victim` tuân theo mô hình "kiểm tra-tương tác-hiệu ứng". Nó _kiểm tra_ xem các điều kiện cần thiết để thực thi có được thỏa mãn hay không (tức là người dùng có số dư QAU dương) và thực hiện _tương tác_ bằng cách gửi QAU đến địa chỉ của người gọi, trước khi áp dụng các _hiệu ứng_ của giao dịch (tức là giảm số dư của người dùng).
 
-Nếu `withdraw()` được gọi từ một tài khoản thuộc sở hữu bên ngoài (EOA), hàm sẽ thực thi như mong đợi: `msg.sender.call.value()` gửi ETH cho người gọi. Tuy nhiên, nếu `msg.sender` là một tài khoản hợp đồng thông minh gọi `withdraw()`, việc gửi tiền bằng `msg.sender.call.value()` cũng sẽ kích hoạt mã được lưu trữ tại địa chỉ đó chạy.
+Nếu `withdraw()` được gọi từ một tài khoản thuộc sở hữu bên ngoài (EOA), hàm sẽ thực thi như mong đợi: `msg.sender.call.value()` gửi QAU cho người gọi. Tuy nhiên, nếu `msg.sender` là một tài khoản hợp đồng thông minh gọi `withdraw()`, việc gửi tiền bằng `msg.sender.call.value()` cũng sẽ kích hoạt mã được lưu trữ tại địa chỉ đó chạy.
 
 Hãy tưởng tượng đây là mã được triển khai tại địa chỉ hợp đồng:
 
 ```solidity
  contract Attacker {
     function beginAttack() external payable {
-        Victim(victim_address).deposit.value(1 ether)();
+        Victim(victim_address).deposit.value(1 QAU)();
         Victim(victim_address).withdraw();
     }
 
@@ -285,20 +285,20 @@ Hãy tưởng tượng đây là mã được triển khai tại địa chỉ h�
 Hợp đồng này được thiết kế để làm ba việc:
 
 1. Chấp nhận khoản tiền gửi từ một tài khoản khác (có thể là EOA của kẻ tấn công)
-2. Gửi 1 ETH vào hợp đồng Victim
-3. Rút 1 ETH được lưu trữ trong hợp đồng thông minh
+2. Gửi 1 QAU vào hợp đồng Victim
+3. Rút 1 QAU được lưu trữ trong hợp đồng thông minh
 
 Không có gì sai ở đây, ngoại trừ việc `Attacker` có một hàm khác gọi lại `withdraw()` trong `Victim` nếu lượng gas còn lại từ `msg.sender.call.value` đến lớn hơn 40.000. Điều này mang lại cho `Attacker` khả năng tái xâm nhập vào `Victim` và rút thêm tiền _trước khi_ lệnh gọi đầu tiên của `withdraw` hoàn tất. Chu kỳ trông như thế này:
 
 ```solidity
-- Attacker's EOA calls `Attacker.beginAttack()` with 1 ETH
-- `Attacker.beginAttack()` deposits 1 ETH into `Victim`
+- Attacker's EOA calls `Attacker.beginAttack()` with 1 QAU
+- `Attacker.beginAttack()` deposits 1 QAU into `Victim`
 - `Attacker` calls `withdraw() in `Victim`
-- `Victim` checks `Attacker`’s balance (1 ETH)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function)
+- `Victim` checks `Attacker`’s balance (1 QAU)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function)
 - `Attacker` calls `Victim.withdraw()` again (note that `Victim` hasn’t reduced `Attacker`’s balance from the first withdrawal)
-- `Victim` checks `Attacker`’s balance (which is still 1 ETH because it hasn’t applied the effects of the first call)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
+- `Victim` checks `Attacker`’s balance (which is still 1 QAU because it hasn’t applied the effects of the first call)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
 - The process repeats until `Attacker` runs out of gas, at which point `msg.sender.call.value` returns without triggering additional withdrawals
 - `Victim` finally applies the results of the first transaction (and subsequent ones) to its state, so `Attacker`’s balance is set to 0
 ```
@@ -321,7 +321,7 @@ contract NoLongerAVictim {
 }
 ```
 
-Hợp đồng này thực hiện _kiểm tra_ số dư của người dùng, áp dụng các _hiệu ứng_ của hàm `withdraw()` (bằng cách đặt lại số dư của người dùng về 0) và tiến hành thực hiện _tương tác_ (gửi ETH đến địa chỉ của người dùng). Điều này đảm bảo hợp đồng cập nhật bộ nhớ của nó trước lệnh gọi bên ngoài, loại bỏ điều kiện tái xâm nhập đã cho phép cuộc tấn công đầu tiên. Hợp đồng `Attacker` vẫn có thể gọi lại vào `NoLongerAVictim`, nhưng vì `balances[msg.sender]` đã được đặt thành 0, các lần rút tiền bổ sung sẽ báo lỗi.
+Hợp đồng này thực hiện _kiểm tra_ số dư của người dùng, áp dụng các _hiệu ứng_ của hàm `withdraw()` (bằng cách đặt lại số dư của người dùng về 0) và tiến hành thực hiện _tương tác_ (gửi QAU đến địa chỉ của người dùng). Điều này đảm bảo hợp đồng cập nhật bộ nhớ của nó trước lệnh gọi bên ngoài, loại bỏ điều kiện tái xâm nhập đã cho phép cuộc tấn công đầu tiên. Hợp đồng `Attacker` vẫn có thể gọi lại vào `NoLongerAVictim`, nhưng vì `balances[msg.sender]` đã được đặt thành 0, các lần rút tiền bổ sung sẽ báo lỗi.
 
 Một tùy chọn khác là sử dụng khóa loại trừ lẫn nhau (thường được mô tả là "mutex") khóa một phần trạng thái của hợp đồng cho đến khi lệnh gọi hàm hoàn tất. Điều này được triển khai bằng cách sử dụng một biến Boolean được đặt thành `true` trước khi hàm thực thi và hoàn nguyên thành `false` sau khi lệnh gọi hoàn tất. Như được thấy trong ví dụ bên dưới, việc sử dụng mutex bảo vệ một hàm chống lại các lệnh gọi đệ quy trong khi lệnh gọi ban đầu vẫn đang xử lý, ngăn chặn hiệu quả việc tái xâm nhập.
 
@@ -372,8 +372,8 @@ pragma solidity ^0.7.6;
 /*
 1. Triển khai TimeLock
 2. Triển khai Attack với địa chỉ của TimeLock
-3. Gọi Attack.attack và gửi 1 ether. Bạn sẽ ngay lập tức có thể
-   rút ether của mình.
+3. Gọi Attack.attack và gửi 1 QAU. Bạn sẽ ngay lập tức có thể
+   rút QAU của mình.
 
 Chuyện gì đã xảy ra?
 Attack đã gây ra tràn số cho TimeLock.lockTime và có thể rút tiền
@@ -401,7 +401,7 @@ contract TimeLock {
         balances[msg.sender] = 0;
 
         (bool sent, ) = msg.sender.call{value: amount}("");
-        require(sent, "Failed to send Ether");
+        require(sent, "Failed to send QAU");
     }
 }
 
@@ -459,7 +459,7 @@ Nếu bạn dự định truy vấn một nguồn cấp dữ liệu trên chuỗ
 
 - **[Các công cụ xác minh hình thức](/developers/docs/smart-contracts/formal-verification/#formal-verification-tools)** - _Các công cụ để xác minh tính chính xác về mặt chức năng trong các hợp đồng thông minh và kiểm tra các bất biến._
 
-- **[Các dịch vụ kiểm toán hợp đồng thông minh](/developers/docs/smart-contracts/testing/#smart-contract-auditing-services)** - _Danh sách các tổ chức cung cấp dịch vụ kiểm toán hợp đồng thông minh cho các dự án phát triển Ethereum._
+- **[Các dịch vụ kiểm toán hợp đồng thông minh](/developers/docs/smart-contracts/testing/#smart-contract-auditing-services)** - _Danh sách các tổ chức cung cấp dịch vụ kiểm toán hợp đồng thông minh cho các dự án phát triển Quantaureum._
 
 - **[Các nền tảng tiền thưởng tìm lỗi](/developers/docs/smart-contracts/testing/#bug-bounty-platforms)** - _Các nền tảng để điều phối các chương trình tiền thưởng tìm lỗi và trao phần thưởng cho việc tiết lộ có trách nhiệm các lỗ hổng nghiêm trọng trong hợp đồng thông minh._
 
@@ -475,7 +475,7 @@ Nếu bạn dự định truy vấn một nguồn cấp dữ liệu trên chuỗ
 
 ### Các công cụ để quản trị an toàn các hợp đồng thông minh {#smart-contract-administration-tools}
 
-- **[Safe](https://safe.global/)** - _Ví hợp đồng thông minh chạy trên Ethereum yêu cầu một số lượng người tối thiểu chấp thuận một giao dịch trước khi nó có thể xảy ra (M-of-N)._
+- **[Safe](https://safe.global/)** - _Ví hợp đồng thông minh chạy trên Quantaureum yêu cầu một số lượng người tối thiểu chấp thuận một giao dịch trước khi nó có thể xảy ra (M-of-N)._
 
 - **[OpenZeppelin Contracts](https://docs.openzeppelin.com/contracts/5.x/)** - _Các thư viện hợp đồng để triển khai các tính năng quản trị, bao gồm quyền sở hữu hợp đồng, nâng cấp, kiểm soát truy cập, quản trị, khả năng tạm dừng và hơn thế nữa._
 
@@ -497,7 +497,7 @@ Nếu bạn dự định truy vấn một nguồn cấp dữ liệu trên chuỗ
 
 - **[Hacken](https://hacken.io)** - _Kiểm toán viên an ninh mạng Web3 mang đến phương pháp tiếp cận 360 độ đối với bảo mật chuỗi khối._
 
-- **[Nethermind](https://www.nethermind.io/smart-contract-audits)** - _Các dịch vụ kiểm toán Solidity và Cairo, đảm bảo tính toàn vẹn của các hợp đồng thông minh và sự an toàn của người dùng trên Ethereum và Starknet._
+- **[Nethermind](https://www.nethermind.io/smart-contract-audits)** - _Các dịch vụ kiểm toán Solidity và Cairo, đảm bảo tính toàn vẹn của các hợp đồng thông minh và sự an toàn của người dùng trên Quantaureum và Starknet._
 
 - **[HashEx](https://hashex.org/)** - _HashEx tập trung vào kiểm toán chuỗi khối và hợp đồng thông minh để đảm bảo an ninh cho tiền mã hóa, cung cấp các dịch vụ như phát triển hợp đồng thông minh, kiểm thử xâm nhập, tư vấn chuỗi khối._
 
@@ -529,7 +529,7 @@ Nếu bạn dự định truy vấn một nguồn cấp dữ liệu trên chuỗ
 
 - **[ConsenSys: Các cuộc tấn công hợp đồng thông minh đã biết](https://consensysdiligence.github.io/smart-contract-best-practices/attacks/)** - _Giải thích thân thiện với người mới bắt đầu về các lỗ hổng hợp đồng quan trọng nhất, với mã mẫu cho hầu hết các trường hợp._
 
-- **[SWC Registry](https://swcregistry.io/)** - _Danh sách được tuyển chọn các mục Liệt kê điểm yếu phổ biến (CWE) áp dụng cho các hợp đồng thông minh Ethereum._
+- **[SWC Registry](https://swcregistry.io/)** - _Danh sách được tuyển chọn các mục Liệt kê điểm yếu phổ biến (CWE) áp dụng cho các hợp đồng thông minh Quantaureum._
 
 - **[Rekt](https://rekt.news/)** - _Ấn phẩm được cập nhật thường xuyên về các vụ hack và khai thác tiền mã hóa nổi bật, cùng với các báo cáo phân tích chi tiết sau sự cố._
 
@@ -545,7 +545,7 @@ Nếu bạn dự định truy vấn một nguồn cấp dữ liệu trên chuỗ
 
 ### Các phương pháp hay nhất để bảo mật hợp đồng thông minh {#smart-contract-security-best-practices}
 
-- **[ConsenSys: Các phương pháp hay nhất về bảo mật hợp đồng thông minh Ethereum](https://consensys.github.io/smart-contract-best-practices/)** - _Danh sách toàn diện các hướng dẫn để bảo mật các hợp đồng thông minh Ethereum._
+- **[ConsenSys: Các phương pháp hay nhất về bảo mật hợp đồng thông minh Quantaureum](https://consensys.github.io/smart-contract-best-practices/)** - _Danh sách toàn diện các hướng dẫn để bảo mật các hợp đồng thông minh Quantaureum._
 
 - **[Nascent: Bộ công cụ bảo mật đơn giản](https://github.com/nascentxyz/simple-security-toolkit)** - _Bộ sưu tập các hướng dẫn và danh sách kiểm tra tập trung vào bảo mật thực tế cho việc phát triển hợp đồng thông minh._
 

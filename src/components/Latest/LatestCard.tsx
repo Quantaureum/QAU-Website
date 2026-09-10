@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/card"
 import { Tag } from "@/components/ui/tag"
 
-import fallbackThumbnail from "@/public/images/eth-glyph-thumbnail.png"
+import fallbackThumbnail from "@/public/images/qau-glyph-thumbnail.png"
 
 type LatestCardProps = {
   href: string

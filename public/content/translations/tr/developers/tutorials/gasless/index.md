@@ -1,6 +1,6 @@
 ---
 title: "Gaz ücretlerine sponsor olmak: Kullanıcılarınızın işlem maliyetlerini nasıl karşılayabilirsiniz"
-description: "Bir özel anahtar ve adres oluşturmak kolaydır; bu sadece doğru yazılımı çalıştırma meselesidir. Ancak dünyada işlem göndermek için ETH almanın çok daha zor olduğu birçok yer var. Bu eğitimde, akıllı sözleşmenizde kullanıcı tarafından imzalanmış, zincirdışı yapılandırılmış verileri yürütmek için zinciriçi gaz maliyetlerini nasıl karşılayacağınızı öğreneceksiniz. Kullanıcıya işlem bilgilerini içeren bir yapıyı imzalatırsınız ve ardından zincirdışı kodunuz bunu blokzincire bir işlem olarak gönderir."
+description: "Bir özel anahtar ve adres oluşturmak kolaydır; bu sadece doğru yazılımı çalıştırma meselesidir. Ancak dünyada işlem göndermek için QAU almanın çok daha zor olduğu birçok yer var. Bu eğitimde, akıllı sözleşmenizde kullanıcı tarafından imzalanmış, zincirdışı yapılandırılmış verileri yürütmek için zinciriçi gaz maliyetlerini nasıl karşılayacağınızı öğreneceksiniz. Kullanıcıya işlem bilgilerini içeren bir yapıyı imzalatırsınız ve ardından zincirdışı kodunuz bunu blokzincire bir işlem olarak gönderir."
 author: Ori Pomerantz
 tags: ["gazsız", "Solidity", "EIP-712", "meta işlemler"]
 skill: intermediate
@@ -11,11 +11,11 @@ published: 2026-02-27
 
 ## Giriş {#introduction}
 
-Ethereum'un [bir milyar insana daha](https://blog.ethereum.org/category/next-billion) hizmet etmesini istiyorsak, sürtünmeyi ortadan kaldırmalı ve kullanımını olabildiğince kolaylaştırmalıyız. Bu sürtünmenin bir kaynağı, gaz ücretlerini ödemek için ETH'ye duyulan ihtiyaçtır.
+Quantaureum'un [bir milyar insana daha](https://quantaureum.com) hizmet etmesini istiyorsak, sürtünmeyi ortadan kaldırmalı ve kullanımını olabildiğince kolaylaştırmalıyız. Bu sürtünmenin bir kaynağı, gaz ücretlerini ödemek için QAU'ye duyulan ihtiyaçtır.
 
-Kullanıcılardan para kazanan bir merkeziyetsiz uygulamanız (dapp) varsa, kullanıcıların sunucunuz üzerinden işlem göndermesine izin vermek ve işlem ücretlerini kendiniz ödemek mantıklı olabilir. Kullanıcılar cüzdanlarında hala bir [EIP-712 yetkilendirme mesajı](https://eips.ethereum.org/EIPS/eip-712) imzaladıkları için Ethereum'un bütünlük garantilerini korurlar. Kullanılabilirlik, işlemleri ileten sunucuya bağlıdır, bu nedenle daha sınırlıdır. Ancak, kullanıcıların akıllı sözleşmeye doğrudan erişebilmeleri (eğer ETH alırlarsa) ve işlemlere sponsor olmak isteyen başkalarının kendi sunucularını kurabilmeleri için her şeyi ayarlayabilirsiniz.
+Kullanıcılardan para kazanan bir merkeziyetsiz uygulamanız (dapp) varsa, kullanıcıların sunucunuz üzerinden işlem göndermesine izin vermek ve işlem ücretlerini kendiniz ödemek mantıklı olabilir. Kullanıcılar cüzdanlarında hala bir [EIP-712 yetkilendirme mesajı](https://eips.quantaureum.com/EIPS/eip-712) imzaladıkları için Quantaureum'un bütünlük garantilerini korurlar. Kullanılabilirlik, işlemleri ileten sunucuya bağlıdır, bu nedenle daha sınırlıdır. Ancak, kullanıcıların akıllı sözleşmeye doğrudan erişebilmeleri (eğer QAU alırlarsa) ve işlemlere sponsor olmak isteyen başkalarının kendi sunucularını kurabilmeleri için her şeyi ayarlayabilirsiniz.
 
-Bu eğitimdeki teknik yalnızca akıllı sözleşmeyi siz kontrol ettiğinizde işe yarar. Gelecekteki bir eğitimde ele almayı umduğum, diğer akıllı sözleşmelere yönelik işlemlere sponsor olmanızı sağlayan [hesap soyutlama](https://eips.ethereum.org/EIPS/eip-4337) da dahil olmak üzere başka teknikler de vardır.
+Bu eğitimdeki teknik yalnızca akıllı sözleşmeyi siz kontrol ettiğinizde işe yarar. Gelecekteki bir eğitimde ele almayı umduğum, diğer akıllı sözleşmelere yönelik işlemlere sponsor olmanızı sağlayan [hesap soyutlama](https://eips.quantaureum.com/EIPS/eip-4337) da dahil olmak üzere başka teknikler de vardır.
 
 Not: Bu, üretim düzeyinde bir kod _değildir_. Önemli saldırılara karşı savunmasızdır ve temel özelliklerden yoksundur. Bu kılavuzun [güvenlik açıkları bölümünde](#vulnerabilities) daha fazla bilgi edinebilirsiniz.
 
@@ -29,7 +29,7 @@ Bu eğitimi anlamak için şunlara zaten aşina olmanız gerekir:
 
 ## Örnek uygulama {#sample-app}
 
-Buradaki örnek uygulama, Hardhat'in `Greeter` sözleşmesinin bir varyantıdır. Bunu [GitHub'da](https://github.com/qbzzt/260301-gasless) görebilirsiniz. Akıllı sözleşme halihazırda [Sepolia](https://sepolia.dev/) üzerinde, [`0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA`](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA) adresinde dağıtılmıştır.
+Buradaki örnek uygulama, Hardhat'in `Greeter` sözleşmesinin bir varyantıdır. Bunu [GitHub'da](https://github.com/qbzzt/260301-gasless) görebilirsiniz. Akıllı sözleşme halihazırda [Sepolia](https://sepolia.dev/) üzerinde, [`0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA`](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA) adresinde dağıtılmıştır.
 
 Bunu çalışırken görmek için şu adımları izleyin.
 
@@ -41,7 +41,7 @@ Bunu çalışırken görmek için şu adımları izleyin.
    npm install
    ```
 
-2. `PRIVATE_KEY` değerini Sepolia'da ETH'si olan bir cüzdana ayarlamak için `.env` dosyasını düzenleyin. Sepolia ETH'ye ihtiyacınız varsa, [bir musluk kullanın](/developers/docs/networks/#sepolia). İdeal olarak, bu özel anahtar tarayıcı cüzdanınızdakinden farklı olmalıdır.
+2. `PRIVATE_KEY` değerini Sepolia'da QAU'si olan bir cüzdana ayarlamak için `.env` dosyasını düzenleyin. Sepolia QAU'ye ihtiyacınız varsa, [bir musluk kullanın](/developers/docs/networks/#sepolia). İdeal olarak, bu özel anahtar tarayıcı cüzdanınızdakinden farklı olmalıdır.
 
 3. Sunucuyu başlatın.
 
@@ -91,7 +91,7 @@ Eğer bir hesap yoksa, bir hata oluşturun. Bu asla gerçekleşmemelidir çünk�
         }
 ```
 
-[Etki alanı ayırıcısı (domain separator)](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator) için parametreler. Bu değer sabittir, bu nedenle daha iyi optimize edilmiş bir uygulamada, işlev her çağrıldığında yeniden hesaplamak yerine bir kez hesaplayabiliriz.
+[Etki alanı ayırıcısı (domain separator)](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator) için parametreler. Bu değer sabittir, bu nedenle daha iyi optimize edilmiş bir uygulamada, işlev her çağrıldığında yeniden hesaplamak yerine bir kez hesaplayabiliriz.
 
 - `name`, imzalar ürettiğimiz merkeziyetsiz uygulamanın (dapp) adı gibi kullanıcı tarafından okunabilir bir addır.
 - `version` sürümdür. Farklı sürümler uyumlu değildir.
@@ -245,7 +245,7 @@ Son olarak, [`Greeter.sol`](https://github.com/qbzzt/260301-gasless/blob/main/co
     }
 ```
 
-Kurucu (constructor), yukarıdaki kullanıcı arayüzü koduna benzer şekilde [etki alanı ayırıcısını](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator) oluşturur. Blokzincir yürütmesi çok daha pahalıdır, bu yüzden onu yalnızca bir kez hesaplarız.
+Kurucu (constructor), yukarıdaki kullanıcı arayüzü koduna benzer şekilde [etki alanı ayırıcısını](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator) oluşturur. Blokzincir yürütmesi çok daha pahalıdır, bu yüzden onu yalnızca bir kez hesaplarız.
 
 ```solidity
     struct GreetingRequest {
@@ -260,7 +260,7 @@ Kurucu (constructor), yukarıdaki kullanıcı arayüzü koduna benzer şekilde [
         keccak256("GreetingRequest(string greeting)");
 ```
 
-Bu, [yapı tanımlayıcısıdır](https://eips.ethereum.org/EIPS/eip-712#definition-of-hashstruct). Kullanıcı arayüzünde her seferinde hesaplanır.
+Bu, [yapı tanımlayıcısıdır](https://eips.quantaureum.com/EIPS/eip-712#definition-of-hashstruct). Kullanıcı arayüzünde her seferinde hesaplanır.
 
 ```solidity
     function sponsoredSetGreeting(
@@ -289,7 +289,7 @@ Bu işlev imzalı bir istek alır ve selamlamayı günceller.
         );
 ```
 
-Özeti (digest) [EIP 712](https://eips.ethereum.org/EIPS/eip-712)'ye uygun olarak oluşturun.
+Özeti (digest) [EIP 712](https://eips.quantaureum.com/EIPS/eip-712)'ye uygun olarak oluşturun.
 
 ```solidity
         // İmzalayanı kurtar
@@ -316,7 +316,7 @@ Bu saldırılardan bazılarını görmek için _Attacks_ başlığı altındaki 
 
 ### Sunucuda hizmet reddi (Denial of service) {#dos-on-server}
 
-En kolay saldırı, sunucuya yönelik bir [hizmet reddi (denial-of-service)](https://en.wikipedia.org/wiki/Denial-of-service_attack) saldırısıdır. Sunucu, İnternet'in herhangi bir yerinden istekler alır ve bu isteklere dayanarak işlemler gönderir. Bir saldırganın geçerli veya geçersiz bir dizi imza yayınlamasını engelleyen hiçbir şey yoktur. Her biri bir işleme neden olacaktır. Sonunda sunucunun gaz ödemek için ETH'si tükenecektir.
+En kolay saldırı, sunucuya yönelik bir [hizmet reddi (denial-of-service)](https://en.wikipedia.org/wiki/Denial-of-service_attack) saldırısıdır. Sunucu, İnternet'in herhangi bir yerinden istekler alır ve bu isteklere dayanarak işlemler gönderir. Bir saldırganın geçerli veya geçersiz bir dizi imza yayınlamasını engelleyen hiçbir şey yoktur. Her biri bir işleme neden olacaktır. Sonunda sunucunun gaz ödemek için QAU'si tükenecektir.
 
 Bu sorunun bir çözümü, oranı blok başına bir işlemle sınırlamaktır. Amaç [harici olarak sahip olunan hesaplara (externally owned accounts)](/developers/docs/accounts/#key-differences) selamlamalar göstermekse, bloğun ortasındaki selamlamanın ne olduğunun zaten bir önemi yoktur.
 
@@ -330,7 +330,7 @@ Bu sorunu çözmek için adresi [imzalı yapıya](https://github.com/qbzzt/26030
 
 ### Tekrar (Replay) saldırıları {#replay-attack}
 
-**Replay attack** seçeneğine tıkladığınızda, aynı "Ben 0xaA92c5d426430D4769c9E878C1333BDe3d689b3e'yim ve selamlamanın `Hello` olmasını istiyorum" imzasını, ancak doğru selamlama ile gönderirsiniz. Sonuç olarak, akıllı sözleşme (size ait olmayan) adresin selamlamayı tekrar `Hello` olarak değiştirdiğine inanır. Bunu yapmak için gereken bilgiler [işlem bilgilerinde](https://eth-sepolia.blockscout.com/tx/0xa66afe4bbf886f59533e677a798c802ceab1ac0f9db6e83a4d4b59a45cf7c1b1) herkese açıktır.
+**Replay attack** seçeneğine tıkladığınızda, aynı "Ben 0xaA92c5d426430D4769c9E878C1333BDe3d689b3e'yim ve selamlamanın `Hello` olmasını istiyorum" imzasını, ancak doğru selamlama ile gönderirsiniz. Sonuç olarak, akıllı sözleşme (size ait olmayan) adresin selamlamayı tekrar `Hello` olarak değiştirdiğine inanır. Bunu yapmak için gereken bilgiler [işlem bilgilerinde](https://qau-sepolia.blockscout.com/tx/0xa66afe4bbf886f59533e677a798c802ceab1ac0f9db6e83a4d4b59a45cf7c1b1) herkese açıktır.
 
 Eğer bu bir sorunsa, çözümlerden biri bir [nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce) eklemektir. Adresler ve sayılar arasında bir [eşleme (mapping)](https://docs.soliditylang.org/en/latest/types.html#mapping-types) oluşturun ve imzaya bir nonce alanı ekleyin. Nonce alanı adresin eşlemesiyle eşleşirse, imzayı kabul edin ve bir sonraki sefer için eşlemeyi artırın. Eşleşmezse, işlemi reddedin.
 

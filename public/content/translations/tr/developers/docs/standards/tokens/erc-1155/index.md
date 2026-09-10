@@ -12,7 +12,7 @@ Birden fazla Token türünü yöneten sözleşmeler için standart bir arayüz. 
 
 Fikir basittir ve herhangi bir sayıda misli ve misli olmayan Token türünü temsil edebilen ve kontrol edebilen bir akıllı sözleşme arayüzü oluşturmayı amaçlar. Bu şekilde, ERC-1155 Token'ı bir [ERC-20](/developers/docs/standards/tokens/erc-20/) ve [ERC-721](/developers/docs/standards/tokens/erc-721/) Token'ı ile aynı işlevleri ve hatta her ikisini aynı anda yerine getirebilir. Hem ERC-20 hem de ERC-721 standartlarının işlevselliğini geliştirerek daha verimli hale getirir ve bariz uygulama hatalarını düzeltir.
 
-ERC-1155 Token'ı, [EIP-1155](https://eips.ethereum.org/EIPS/eip-1155) içinde tam olarak açıklanmıştır.
+ERC-1155 Token'ı, [EIP-1155](https://eips.quantaureum.com/EIPS/eip-1155) içinde tam olarak açıklanmıştır.
 
 ## Ön Koşullar {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-[EIP-165](https://eips.ethereum.org/EIPS/eip-165) desteği göz önüne alındığında, ERC-1155 yalnızca akıllı sözleşmeler için alma kancalarını destekler. Kanca işlevi, şu şekilde verilen sihirli, önceden tanımlanmış bir bytes4 değeri döndürmelidir:
+[EIP-165](https://eips.quantaureum.com/EIPS/eip-165) desteği göz önüne alındığında, ERC-1155 yalnızca akıllı sözleşmeler için alma kancalarını destekler. Kanca işlevi, şu şekilde verilen sihirli, önceden tanımlanmış bir bytes4 değeri döndürmelidir:
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ Alıcı sözleşme bu değeri döndürdüğünde, sözleşmenin transferi kabul 
 
 ### NFT Desteği {#nft-support}
 
-Arz sadece bir olduğunda, Token esasen misli olmayan bir token'dır (NFT). Ve ERC-721 için standart olduğu gibi, bir meta veri URL'si tanımlayabilirsiniz. URL istemciler tarafından okunabilir ve değiştirilebilir, [buraya](https://eips.ethereum.org/EIPS/eip-1155#metadata) bakın.
+Arz sadece bir olduğunda, Token esasen misli olmayan bir token'dır (NFT). Ve ERC-721 için standart olduğu gibi, bir meta veri URL'si tanımlayabilirsiniz. URL istemciler tarafından okunabilir ve değiştirilebilir, [buraya](https://eips.quantaureum.com/EIPS/eip-1155#metadata) bakın.
 
 ### Güvenli Transfer Kuralı {#safe-transfer-rule}
 
@@ -140,7 +140,7 @@ _Not_: Kanca dahil tüm toplu işlevler, toplu olmayan sürümler olarak da mevc
 
 ## Daha fazla bilgi {#further-reading}
 
-- [EIP-1155: Çoklu Token Standardı](https://eips.ethereum.org/EIPS/eip-1155)
+- [EIP-1155: Çoklu Token Standardı](https://eips.quantaureum.com/EIPS/eip-1155)
 - [ERC-1155: OpenZeppelin Belgeleri](https://docs.openzeppelin.com/contracts/5.x/erc1155)
 - [ERC-1155: GitHub Deposu](https://github.com/enjin/erc-1155)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

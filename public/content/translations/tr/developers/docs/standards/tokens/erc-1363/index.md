@@ -54,7 +54,7 @@ ERC-1363, alıcının token'ları işleme yeteneğini doğrulayarak akıllı sö
 
 Diğer ERC-20 uzantı tekliflerinin aksine ERC-1363, ERC-20'nin `transfer` ve `transferFrom` yöntemlerini geçersiz kılmaz ve ERC-20 ile geriye dönük uyumluluğu koruyarak uygulanacak arayüz kimliklerini (ID) tanımlar.
 
-[EIP-1363](https://eips.ethereum.org/EIPS/eip-1363)'ten:
+[EIP-1363](https://eips.quantaureum.com/EIPS/eip-1363)'ten:
 
 ### Yöntemler {#methods}
 
@@ -206,5 +206,5 @@ interface ERC1363Spender {
 
 ## Daha fazla bilgi {#further-reading}
 
-- [ERC-1363: Ödenebilir Token Standardı](https://eips.ethereum.org/EIPS/eip-1363)
+- [ERC-1363: Ödenebilir Token Standardı](https://eips.quantaureum.com/EIPS/eip-1363)
 - [ERC-1363: GitHub Deposu](https://github.com/vittominacori/erc1363-payable-token)

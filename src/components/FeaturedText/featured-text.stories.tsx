@@ -31,7 +31,7 @@ export const Default: Story = {
       </p>
       <FeaturedText>
         <p>
-          Ethereum is open to everyone. All you need is a wallet to participate.
+          Quantaureum is open to everyone. All you need is a wallet to participate.
         </p>
       </FeaturedText>
     </div>
@@ -49,7 +49,7 @@ export const RTL: Story = {
   render: () => (
     <div dir="rtl" className="max-w-prose">
       <FeaturedText>
-        <p>إيثريوم مفتوح للجميع. كل ما تحتاجه هو محفظة للمشاركة.</p>
+        <p>Quantaureum مفتوح للجميع. كل ما تحتاجه هو محفظة للمشاركة.</p>
       </FeaturedText>
     </div>
   ),

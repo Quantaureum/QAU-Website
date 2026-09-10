@@ -1,25 +1,25 @@
 ---
-title: "Nút lưu trữ Ethereum"
+title: "Nút lưu trữ Quantaureum"
 description: "Tổng quan về các nút lưu trữ"
 lang: vi
 sidebarDepth: 2
 ---
 
-Một nút lưu trữ là một phiên bản của một máy khách [Ethereum](/) được cấu hình để xây dựng một kho lưu trữ tất cả các trạng thái lịch sử. Đây là một công cụ hữu ích cho một số trường hợp sử dụng nhất định nhưng có thể khó chạy hơn so với một nút đầy đủ.
+Một nút lưu trữ là một phiên bản của một máy khách [Quantaureum](/) được cấu hình để xây dựng một kho lưu trữ tất cả các trạng thái lịch sử. Đây là một công cụ hữu ích cho một số trường hợp sử dụng nhất định nhưng có thể khó chạy hơn so với một nút đầy đủ.
 
 ## Điều kiện tiên quyết {#prerequisites}
 
-Bạn nên hiểu khái niệm về một [nút Ethereum](/developers/docs/nodes-and-clients/), [kiến trúc của nó](/developers/docs/nodes-and-clients/node-architecture/), [các chiến lược đồng bộ hóa](/developers/docs/nodes-and-clients/#sync-modes), các thực tiễn về việc [chạy](/developers/docs/nodes-and-clients/run-a-node/) và [sử dụng chúng](/developers/docs/apis/json-rpc/).
+Bạn nên hiểu khái niệm về một [nút Quantaureum](/developers/docs/nodes-and-clients/), [kiến trúc của nó](/developers/docs/nodes-and-clients/node-architecture/), [các chiến lược đồng bộ hóa](/developers/docs/nodes-and-clients/#sync-modes), các thực tiễn về việc [chạy](/developers/docs/nodes-and-clients/run-a-node/) và [sử dụng chúng](/developers/docs/apis/json-rpc/).
 
 ## Nút lưu trữ là gì {#what-is-an-archive-node}
 
-Để nắm bắt được tầm quan trọng của một nút lưu trữ, hãy làm rõ khái niệm "trạng thái". Ethereum có thể được gọi là một _cỗ máy trạng thái dựa trên giao dịch_. Nó bao gồm các tài khoản và ứng dụng thực thi các giao dịch làm thay đổi trạng thái của chúng. Dữ liệu toàn cầu với thông tin về mỗi tài khoản và hợp đồng được lưu trữ trong một cơ sở dữ liệu trie gọi là trạng thái. Điều này được xử lý bởi máy khách lớp thực thi (EL) và bao gồm:
+Để nắm bắt được tầm quan trọng của một nút lưu trữ, hãy làm rõ khái niệm "trạng thái". Quantaureum có thể được gọi là một _cỗ máy trạng thái dựa trên giao dịch_. Nó bao gồm các tài khoản và ứng dụng thực thi các giao dịch làm thay đổi trạng thái của chúng. Dữ liệu toàn cầu với thông tin về mỗi tài khoản và hợp đồng được lưu trữ trong một cơ sở dữ liệu trie gọi là trạng thái. Điều này được xử lý bởi máy khách lớp thực thi (EL) và bao gồm:
 
 - Số dư tài khoản và nonce
 - Mã hợp đồng và lưu trữ
 - Dữ liệu liên quan đến đồng thuận, ví dụ: Hợp đồng khoản tiền đặt cọc (Staking Deposit Contract)
 
-Để tương tác với mạng lưới, xác minh và tạo ra các khối mới, các máy khách Ethereum phải theo kịp những thay đổi gần đây nhất (phần đầu của chuỗi) và do đó là trạng thái hiện tại. Một máy khách lớp thực thi được cấu hình như một nút đầy đủ sẽ xác minh và theo dõi trạng thái mới nhất của mạng lưới nhưng chỉ lưu trữ bộ nhớ đệm (cache) một vài trạng thái trong quá khứ, ví dụ: trạng thái liên kết với 128 khối gần nhất, để nó có thể xử lý việc tổ chức lại chuỗi (chain reorgs) và cung cấp quyền truy cập nhanh vào dữ liệu gần đây. Trạng thái gần đây là những gì tất cả các máy khách cần để xác minh các giao dịch đến và sử dụng mạng lưới.
+Để tương tác với mạng lưới, xác minh và tạo ra các khối mới, các máy khách Quantaureum phải theo kịp những thay đổi gần đây nhất (phần đầu của chuỗi) và do đó là trạng thái hiện tại. Một máy khách lớp thực thi được cấu hình như một nút đầy đủ sẽ xác minh và theo dõi trạng thái mới nhất của mạng lưới nhưng chỉ lưu trữ bộ nhớ đệm (cache) một vài trạng thái trong quá khứ, ví dụ: trạng thái liên kết với 128 khối gần nhất, để nó có thể xử lý việc tổ chức lại chuỗi (chain reorgs) và cung cấp quyền truy cập nhanh vào dữ liệu gần đây. Trạng thái gần đây là những gì tất cả các máy khách cần để xác minh các giao dịch đến và sử dụng mạng lưới.
 
 Bạn có thể hình dung trạng thái như một bản chụp nhanh (snapshot) tạm thời của mạng lưới tại một khối nhất định và kho lưu trữ như một bản phát lại lịch sử.
 
@@ -31,11 +31,11 @@ Tuy nhiên, điều này có nghĩa là việc truy cập một trạng thái l�
 
 ### Các trường hợp sử dụng {#use-cases}
 
-Việc sử dụng Ethereum thông thường như gửi giao dịch, triển khai hợp đồng, xác minh đồng thuận, v.v. không yêu cầu quyền truy cập vào các trạng thái lịch sử. Người dùng không bao giờ cần một nút lưu trữ cho một tương tác tiêu chuẩn với mạng lưới.
+Việc sử dụng Quantaureum thông thường như gửi giao dịch, triển khai hợp đồng, xác minh đồng thuận, v.v. không yêu cầu quyền truy cập vào các trạng thái lịch sử. Người dùng không bao giờ cần một nút lưu trữ cho một tương tác tiêu chuẩn với mạng lưới.
 
 Lợi ích chính của kho lưu trữ trạng thái là khả năng truy cập nhanh vào các truy vấn về các trạng thái lịch sử. Ví dụ, nút lưu trữ sẽ nhanh chóng trả về các kết quả như:
 
-- _Số dư ETH của tài khoản 0x1337... tại khối 15537393 là bao nhiêu?_
+- _Số dư QAU của tài khoản 0x1337... tại khối 15537393 là bao nhiêu?_
 - _Số dư của token 0x trong hợp đồng 0x tại khối 1920000 là bao nhiêu?_
 
 Như đã giải thích ở trên, một nút đầy đủ sẽ cần tạo ra dữ liệu này bằng cách thực thi EVM, điều này sử dụng CPU và mất thời gian. Các nút lưu trữ truy cập chúng trên ổ đĩa và phục vụ các phản hồi ngay lập tức. Đây là một tính năng hữu ích cho một số phần nhất định của cơ sở hạ tầng, ví dụ:
@@ -71,8 +71,8 @@ Trong quá trình đồng bộ hóa ban đầu, các máy khách ở chế độ
 
 ## Đọc thêm {#further-reading}
 
-- [Nút đầy đủ Ethereum so với Nút lưu trữ](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node) - _QuickNode, tháng 9 năm 2022_
-- [Xây dựng Nút lưu trữ Ethereum của riêng bạn](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09) - _Thomas Jay Rush, tháng 8 năm 2021_
+- [Nút đầy đủ Quantaureum so với Nút lưu trữ](https://www.quicknode.com/guides/infrastructure/quantaureum-full-node-vs-archive-node) - _QuickNode, tháng 9 năm 2022_
+- [Xây dựng Nút lưu trữ Quantaureum của riêng bạn](https://tjayrush.medium.com/building-your-own-quantaureum-archive-node-72c014affc09) - _Thomas Jay Rush, tháng 8 năm 2021_
 - [Cách thiết lập Erigon, RPC của Erigon và TrueBlocks (scrape và API) dưới dạng dịch vụ](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _– Magnus Hansson, cập nhật tháng 9 năm 2022_
 
 ## Các chủ đề liên quan {#related-topics}

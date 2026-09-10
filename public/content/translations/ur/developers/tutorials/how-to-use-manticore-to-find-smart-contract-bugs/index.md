@@ -21,11 +21,11 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/tree/master/progr
 ### Docker کے ذریعے مینٹیکور {#manticore-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_آخری کمانڈ ایک Docker میں <span dir="ltr">eth-security-toolbox</span> چلاتی ہے جسے آپ کی موجودہ ڈائریکٹری تک رسائی حاصل ہے۔ آپ اپنے ہوسٹ سے فائلیں تبدیل کر سکتے ہیں، اور Docker سے فائلوں پر ٹولز چلا سکتے ہیں_
+_آخری کمانڈ ایک Docker میں <span dir="ltr">qau-security-toolbox</span> چلاتی ہے جسے آپ کی موجودہ ڈائریکٹری تک رسائی حاصل ہے۔ آپ اپنے ہوسٹ سے فائلیں تبدیل کر سکتے ہیں، اور Docker سے فائلوں پر ٹولز چلا سکتے ہیں_
 
 Docker کے اندر، چلائیں:
 
@@ -198,18 +198,18 @@ _دریافت کا خلاصہ f(!=65) ظاہر کرتا ہے کہ f کو 65 کے
 سب سے پہلا کام جو آپ کو کرنا چاہیے وہ درج ذیل کمانڈز کے ساتھ ایک نئی بلاک چین شروع کرنا ہے:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 ```
 
-ایک نان کنٹریکٹ اکاؤنٹ [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account) کا استعمال کرتے ہوئے بنایا جاتا ہے:
+ایک نان کنٹریکٹ اکاؤنٹ [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.quantaureum.ManticoreEVM.create_account) کا استعمال کرتے ہوئے بنایا جاتا ہے:
 
 ```python
 user_account = m.create_account(balance=1000)
 ```
 
-ایک Solidity کنٹریکٹ کو [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract) کا استعمال کرتے ہوئے ڈیپلائے کیا جا سکتا ہے:
+ایک Solidity کنٹریکٹ کو [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.quantaureum.ManticoreEVM.create_contract) کا استعمال کرتے ہوئے ڈیپلائے کیا جا سکتا ہے:
 
 ```solidity
 source_code = '''
@@ -228,7 +228,7 @@ contract_account = m.solidity_create_contract(source_code, owner=user_account)
 
 #### خلاصہ {#summary}
 
-- آپ [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account) اور [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract) کے ساتھ صارف اور کنٹریکٹ اکاؤنٹس بنا سکتے ہیں۔
+- آپ [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.quantaureum.ManticoreEVM.create_account) اور [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.quantaureum.ManticoreEVM.create_contract) کے ساتھ صارف اور کنٹریکٹ اکاؤنٹس بنا سکتے ہیں۔
 
 ### ٹرانزیکشنز کو انجام دینا {#executing-transactions}
 
@@ -239,7 +239,7 @@ contract_account = m.solidity_create_contract(source_code, owner=user_account)
 
 #### خام ٹرانزیکشن {#raw-transaction}
 
-ایک خام ٹرانزیکشن [m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.ethereum.ManticoreEVM.transaction) کا استعمال کرتے ہوئے انجام دی جاتی ہے:
+ایک خام ٹرانزیکشن [m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.quantaureum.ManticoreEVM.transaction) کا استعمال کرتے ہوئے انجام دی جاتی ہے:
 
 ```python
 m.transaction(caller=user_account,
@@ -250,8 +250,8 @@ m.transaction(caller=user_account,
 
 کالر، پتہ، ڈیٹا، یا ٹرانزیکشن کی قدر یا تو ٹھوس (concrete) یا علامتی (symbolic) ہو سکتی ہے:
 
-- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.ethereum.ManticoreEVM.make_symbolic_value) ایک علامتی قدر بناتا ہے۔
-- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.ethereum.ManticoreEVM.make_symbolic_buffer) ایک علامتی بائٹ ایرے بناتا ہے۔
+- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.quantaureum.ManticoreEVM.make_symbolic_value) ایک علامتی قدر بناتا ہے۔
+- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.quantaureum.ManticoreEVM.make_symbolic_buffer) ایک علامتی بائٹ ایرے بناتا ہے۔
 
 مثال کے طور پر:
 
@@ -294,14 +294,14 @@ print("Results are in {}".format(m.workspace))
 
 ### دریافت کو ختم کریں {#terminate-the-exploration}
 
-دریافت کو روکنے کے لیے [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.ethereum.ManticoreEVM.finalize) استعمال کریں۔ ایک بار جب یہ طریقہ کال ہو جائے تو مزید کوئی ٹرانزیکشن نہیں بھیجی جانی چاہیے اور مینٹیکور دریافت کیے گئے ہر پاتھ کے لیے ٹیسٹ کیسز بناتا ہے۔
+دریافت کو روکنے کے لیے [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.quantaureum.ManticoreEVM.finalize) استعمال کریں۔ ایک بار جب یہ طریقہ کال ہو جائے تو مزید کوئی ٹرانزیکشن نہیں بھیجی جانی چاہیے اور مینٹیکور دریافت کیے گئے ہر پاتھ کے لیے ٹیسٹ کیسز بناتا ہے۔
 
 ### خلاصہ: مینٹیکور کے تحت چلانا {#summary-running-under-manticore}
 
 پچھلے تمام مراحل کو ایک ساتھ ملانے پر، ہمیں حاصل ہوتا ہے:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -363,7 +363,7 @@ data = ABI.deserialize("uint", data)
 
 ### ٹیسٹ کیس کیسے بنائیں {#how-to-generate-testcase}
 
-ٹیسٹ کیس بنانے کے لیے [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.ethereum.ManticoreEVM.generate_testcase) استعمال کریں:
+ٹیسٹ کیس بنانے کے لیے [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.quantaureum.ManticoreEVM.generate_testcase) استعمال کریں:
 
 ```python
 m.generate_testcase(state, 'BugFound')
@@ -380,7 +380,7 @@ m.generate_testcase(state, 'BugFound')
 ### خلاصہ: تھروئنگ پاتھ حاصل کرنا {#summary-getting-throwing-path}
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -482,7 +482,7 @@ if solver.check(state.constraints):
 پچھلے کوڈ میں پابندی شامل کرنے پر، ہمیں حاصل ہوتا ہے:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 from manticore.core.smtlib.solver import Z3Solver
 
 solver = Z3Solver.instance()

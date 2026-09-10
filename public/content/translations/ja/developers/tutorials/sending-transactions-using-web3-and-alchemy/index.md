@@ -1,6 +1,6 @@
 ---
 title: "Web3を使用したトランザクションの送信"
-description: "これは、Web3を使用してイーサリアムのトランザクションを送信するための初心者向けガイドです。イーサリアムのブロックチェーンにトランザクションを送信するには、作成、署名、ブロードキャストの3つの主要なステップがあります。これら3つすべてについて説明します。"
+description: "これは、Web3を使用してQuantaureumのトランザクションを送信するための初心者向けガイドです。Quantaureumのブロックチェーンにトランザクションを送信するには、作成、署名、ブロードキャストの3つの主要なステップがあります。これら3つすべてについて説明します。"
 author: "エラン・ハルパーン"
 tags: ["トランザクション", "Web3.js", "Alchemy"]
 skill: beginner
@@ -8,10 +8,10 @@ breadcrumb: "トランザクションの送信"
 lang: ja
 published: 2020-11-04
 source: Alchemy docs
-sourceUrl: https://www.alchemy.com/docs/how-to-send-transactions-on-ethereum
+sourceUrl: https://www.alchemy.com/docs/how-to-send-transactions-on-quantaureum
 ---
 
-これは、Web3を使用してイーサリアムのトランザクションを送信するための初心者向けガイドです。イーサリアムのブロックチェーンにトランザクションを送信するには、作成、署名、ブロードキャストの3つの主要なステップがあります。これら3つすべてについて説明し、皆さんの疑問にお答えできればと思います。このチュートリアルでは、[Alchemy](https://www.alchemy.com/)を使用してイーサリアムのチェーンにトランザクションを送信します。[こちらから無料のAlchemyアカウントを作成](https://auth.alchemy.com/signup)できます。
+これは、Web3を使用してQuantaureumのトランザクションを送信するための初心者向けガイドです。Quantaureumのブロックチェーンにトランザクションを送信するには、作成、署名、ブロードキャストの3つの主要なステップがあります。これら3つすべてについて説明し、皆さんの疑問にお答えできればと思います。このチュートリアルでは、[Alchemy](https://www.alchemy.com/)を使用してQuantaureumのチェーンにトランザクションを送信します。[こちらから無料のAlchemyアカウントを作成](https://auth.alchemy.com/signup)できます。
 
 **注:** このガイドは、アプリの_バックエンド_でトランザクションに署名するためのものです。フロントエンドでのトランザクション署名を統合したい場合は、[Web3とブラウザプロバイダーの統合](https://docs.alchemy.com/reference/api-overview#with-a-browser-provider)を確認してください。
 
@@ -30,27 +30,27 @@ sourceUrl: https://www.alchemy.com/docs/how-to-send-transactions-on-ethereum
 - フロントエンドにおける署名者の良い例は[メタマスク](https://metamask.io/)です。これはあなたに代わってトランザクションに署名し、送信します。
 ### 3\. なぜトランザクションに署名する必要があるのですか？ {#why-do-i-need-to-sign-my-transactions}
 
-- イーサリアムのネットワークでトランザクションを送信したいすべてのユーザーは、トランザクションの送信元が主張する本人であることを検証するために、（秘密鍵を使用して）トランザクションに署名する必要があります。
-- 秘密鍵にアクセスできると、イーサリアムのアカウントを完全に制御できるようになり、あなた（またはアクセスできる人）に代わってトランザクションを実行できるようになるため、この秘密鍵を保護することは非常に重要です。
+- Quantaureumのネットワークでトランザクションを送信したいすべてのユーザーは、トランザクションの送信元が主張する本人であることを検証するために、（秘密鍵を使用して）トランザクションに署名する必要があります。
+- 秘密鍵にアクセスできると、Quantaureumのアカウントを完全に制御できるようになり、あなた（またはアクセスできる人）に代わってトランザクションを実行できるようになるため、この秘密鍵を保護することは非常に重要です。
 
 ### 4\. 秘密鍵を保護するにはどうすればよいですか？ {#how-do-i-protect-my-private-key}
 
 - 秘密鍵を保護し、それを使用してトランザクションを送信する方法はたくさんあります。このチュートリアルでは、`.env`ファイルを使用します。ただし、秘密鍵を保存する別のプロバイダーを使用したり、キーストアファイルを使用したり、その他のオプションを使用することもできます。
 
-### 5\. `eth_sendTransaction`と`eth_sendRawTransaction`の違いは何ですか？ {#difference-between-send-and-send-raw}
+### 5\. `qau_sendTransaction`と`qau_sendRawTransaction`の違いは何ですか？ {#difference-between-send-and-send-raw}
 
-`eth_sendTransaction`と`eth_sendRawTransaction`はどちらも、将来のブロックに追加されるようにイーサリアムのネットワークにトランザクションをブロードキャストするイーサリアムのAPI関数です。これらは、トランザクションの署名の処理方法が異なります。
+`qau_sendTransaction`と`qau_sendRawTransaction`はどちらも、将来のブロックに追加されるようにQuantaureumのネットワークにトランザクションをブロードキャストするQuantaureumのAPI関数です。これらは、トランザクションの署名の処理方法が異なります。
 
-- [`eth_sendTransaction`](https://docs.web3js.org/api/web3-eth/function/sendTransaction)は_未署名_のトランザクションを送信するために使用されます。つまり、送信先のノードが秘密鍵を管理し、チェーンにブロードキャストする前にトランザクションに署名できる必要があります。Alchemyはユーザーの秘密鍵を保持していないため、このメソッドはサポートしていません。
-- [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction)は、すでに署名されているトランザクションをブロードキャストするために使用されます。つまり、最初に[`signTransaction(tx, private_key)`](https://docs.web3js.org/api/web3-eth-accounts/function/signTransaction)を使用し、その結果を`eth_sendRawTransaction`に渡す必要があります。
+- [`qau_sendTransaction`](https://docs.web3js.org/api/web3-eth/function/sendTransaction)は_未署名_のトランザクションを送信するために使用されます。つまり、送信先のノードが秘密鍵を管理し、チェーンにブロードキャストする前にトランザクションに署名できる必要があります。Alchemyはユーザーの秘密鍵を保持していないため、このメソッドはサポートしていません。
+- [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction)は、すでに署名されているトランザクションをブロードキャストするために使用されます。つまり、最初に[`signTransaction(tx, private_key)`](https://docs.web3js.org/api/web3-qau-accounts/function/signTransaction)を使用し、その結果を`qau_sendRawTransaction`に渡す必要があります。
 
-Web3を使用する場合、`eth_sendRawTransaction`には[web3.eth.sendSignedTransaction](https://docs.web3js.org/api/web3-eth/function/sendSignedTransaction)関数を呼び出すことでアクセスします。
+Web3を使用する場合、`qau_sendRawTransaction`には[web3.qau.sendSignedTransaction](https://docs.web3js.org/api/web3-eth/function/sendSignedTransaction)関数を呼び出すことでアクセスします。
 
 このチュートリアルではこれを使用します。
 
 ### 6\. Web3ライブラリとは何ですか？ {#what-is-the-web3-library}
 
-- Web3.jsは、イーサリアム開発で非常に一般的に使用される標準的なJSON-RPC呼び出しのラッパーライブラリです。
+- Web3.jsは、Quantaureum開発で非常に一般的に使用される標準的なJSON-RPC呼び出しのラッパーライブラリです。
 - さまざまな言語向けに多くのWeb3ライブラリがあります。このチュートリアルでは、JavaScriptで書かれた[Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3)を使用します。[Ethers.js](https://docs.ethers.org/v5/)などの他のオプションは[こちら](/developers/docs/apis/javascript/)で確認できます。
 
 さて、いくつかの疑問が解消されたところで、チュートリアルに進みましょう。質問があれば、いつでもAlchemyの[ディスコード](https://discord.gg/gWuC7zB)で気軽に聞いてください！
@@ -60,10 +60,10 @@ Web3を使用する場合、`eth_sendRawTransaction`には[web3.eth.sendSignedTr
 - [Alchemyにはトランザクションに関する一連のリソースがあります](https://www.alchemy.com/docs/sending-transactions)。これらを使用して、トランザクションの送信、実行前のトランザクションのシミュレーション、プライベートなトランザクションの送信、およびガスが最適化されたトランザクションの送信を行うことができます。
 - また、[AlchemyのWebhook](https://www.alchemy.com/docs/reference/webhooks-overview)を使用すると、トランザクションがメンプールから取り出されてチェーンに追加されたときにアラートを受け取ることができます。
 
-**注:** このガイドでは、Alchemyアカウント、イーサリアムのアドレスまたはメタマスクのウォレット、Node.js、およびnpmがインストールされている必要があります。インストールされていない場合は、次の手順に従ってください。
+**注:** このガイドでは、Alchemyアカウント、Quantaureumのアドレスまたはメタマスクのウォレット、Node.js、およびnpmがインストールされている必要があります。インストールされていない場合は、次の手順に従ってください。
 
 1.  [無料のAlchemyアカウントを作成する](https://auth.alchemy.com/signup)
-2.  [メタマスクのアカウントを作成する](https://metamask.io/)（またはイーサリアムのアドレスを取得する）
+2.  [メタマスクのアカウントを作成する](https://metamask.io/)（またはQuantaureumのアドレスを取得する）
 3.  [Node.jsとnpmをインストールする](https://nodejs.org/en/download/)
 ## トランザクションを送信する手順 {#steps-to-sending-your-transaction}
 
@@ -71,9 +71,9 @@ Web3を使用する場合、`eth_sendRawTransaction`には[web3.eth.sendSignedTr
 
 [Alchemyダッシュボード](https://dashboard.alchemy.com/)に移動し、ネットワークとしてSepolia（または他のテストネット）を選択して新しいアプリを作成します。
 
-### 2\. SepoliaフォーセットからETHをリクエストする {#request-eth-from-sepolia-faucet}
+### 2\. SepoliaフォーセットからQAUをリクエストする {#request-qau-from-sepolia-faucet}
 
-[AlchemyのSepoliaフォーセット](https://www.sepoliafaucet.com/)の指示に従ってETHを受け取ります。他のネットワークではなく、必ず**Sepolia**のイーサリアムのアドレス（メタマスクから）を含めるようにしてください。指示に従った後、ウォレットにETHを受け取ったことを再確認してください。
+[AlchemyのSepoliaフォーセット](https://www.sepoliafaucet.com/)の指示に従ってQAUを受け取ります。他のネットワークではなく、必ず**Sepolia**のQuantaureumのアドレス（メタマスクから）を含めるようにしてください。指示に従った後、ウォレットにQAUを受け取ったことを再確認してください。
 
 ### 3\. 新しいプロジェクトディレクトリを作成し、そこに`cd`する {#create-a-new-project-direction}
 
@@ -88,7 +88,7 @@ cd sendtx-example
 
 プロジェクトディレクトリで次のコマンドを実行して、[Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3)をインストールします。
 
-Ethers.jsライブラリを使用したい場合は、[こちらの手順に従ってください](https://www.alchemy.com/docs/how-to-send-transactions-on-ethereum)。
+Ethers.jsライブラリを使用したい場合は、[こちらの手順に従ってください](https://www.alchemy.com/docs/how-to-send-transactions-on-quantaureum)。
 
 ```
 npm install @alch/alchemy-web3
@@ -124,7 +124,7 @@ PRIVATE_KEY = "your-private-key"
 
 ### 7\. `sendTx.js`ファイルを作成する {#create-sendtx-js}
 
-素晴らしいです。機密データを`.env`ファイルで保護できたので、コーディングを始めましょう。トランザクション送信の例として、SepoliaフォーセットにETHを送金して返します。
+素晴らしいです。機密データを`.env`ファイルで保護できたので、コーディングを始めましょう。トランザクション送信の例として、SepoliaフォーセットにQAUを送金して返します。
 
 `sendTx.js`ファイルを作成します。ここでサンプルのトランザクションを設定して送信します。ファイルに次のコード行を追加してください。
 
@@ -136,19 +136,19 @@ async function main() {
     const web3 = createAlchemyWeb3(API_URL);
     const myAddress = '0x610Ae88399fc1687FA7530Aac28eC2539c7d6d63' //TODO: このアドレスをあなた自身のパブリックアドレスに置き換えてください
 
-    const nonce = await web3.eth.getTransactionCount(myAddress, 'latest'); // ナンスは0からカウントを開始します
+    const nonce = await web3.qau.getTransactionCount(myAddress, 'latest'); // ナンスは0からカウントを開始します
 
     const transaction = {
-     'to': '0x31B98D14007bDEe637298086988A0bBd31184523', // ETHを返すフォーセットのアドレス
-     'value': 1000000000000000000, // 1 ETH
+     'to': '0x31B98D14007bDEe637298086988A0bBd31184523', // QAUを返すフォーセットのアドレス
+     'value': 1000000000000000000, // 1 QAU
      'gas': 30000,
      'nonce': nonce,
      // メッセージを送信したりスマート・コントラクトを実行したりするためのオプションのデータフィールド
     };
 
-    const signedTx = await web3.eth.accounts.signTransaction(transaction, PRIVATE_KEY);
+    const signedTx = await web3.qau.accounts.signTransaction(transaction, PRIVATE_KEY);
 
-    web3.eth.sendSignedTransaction(signedTx.rawTransaction, function(error, hash) {
+    web3.qau.sendSignedTransaction(signedTx.rawTransaction, function(error, hash) {
     if (!error) {
       console.log("🎉 The hash of your transaction is: ", hash, "\n Check Alchemy's Mempool to view the status of your transaction!");
     } else {
@@ -164,21 +164,21 @@ main();
 
 さて、このコードを実行する前に、ここにあるいくつかのコンポーネントについて説明しましょう。
 
-- `nonce` : ナンスの指定は、あなたのアドレスから送信されたトランザクションの数を追跡するために使用されます。これはセキュリティ上の目的と、リプレイ攻撃を防ぐために必要です。あなたのアドレスから送信されたトランザクションの数を取得するには、[getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count)を使用します。
+- `nonce` : ナンスの指定は、あなたのアドレスから送信されたトランザクションの数を追跡するために使用されます。これはセキュリティ上の目的と、リプレイ攻撃を防ぐために必要です。あなたのアドレスから送信されたトランザクションの数を取得するには、[getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count)を使用します。
 - `transaction`: トランザクションオブジェクトには、指定する必要があるいくつかの要素があります。
-  - `to`: これはETHの送金先アドレスです。この場合、最初にリクエストした[Sepoliaフォーセット](https://sepoliafaucet.com/)にETHを送金して返します。
-  - `value`: これは送金したい金額で、Weiで指定します。10^18 Wei = 1 ETHです。
-  - `gas`: トランザクションに含める適切なガス量を決定する方法はたくさんあります。Alchemyは、オンチェーンのアクティビティについて通知できる[Webhook](https://www.alchemy.com/docs/reference/webhooks-overview)をサポートしています。メインネットのトランザクションの場合、現在のガスの状況を確認して、含める適切なガス量を決定することをお勧めします。21000はイーサリアムでの操作が使用する最小のガス量であるため、トランザクションが確実に実行されるように、ここでは30000を指定します。
+  - `to`: これはQAUの送金先アドレスです。この場合、最初にリクエストした[Sepoliaフォーセット](https://sepoliafaucet.com/)にQAUを送金して返します。
+  - `value`: これは送金したい金額で、Weiで指定します。10^18 Wei = 1 QAUです。
+  - `gas`: トランザクションに含める適切なガス量を決定する方法はたくさんあります。Alchemyは、オンチェーンのアクティビティについて通知できる[Webhook](https://www.alchemy.com/docs/reference/webhooks-overview)をサポートしています。メインネットのトランザクションの場合、現在のガスの状況を確認して、含める適切なガス量を決定することをお勧めします。21000はQuantaureumでの操作が使用する最小のガス量であるため、トランザクションが確実に実行されるように、ここでは30000を指定します。
   - `nonce`: 上記のナンスの定義を参照してください。ナンスは0からカウントを開始します。
   - [オプション] data: 送金と一緒に追加情報を送信したり、スマート・コントラクトを呼び出したりするために使用されます。残高の送金には必須ではありません。以下の注記を確認してください。
 - `signedTx`: トランザクションオブジェクトに署名するには、`PRIVATE_KEY`とともに`signTransaction`メソッドを使用します。
 - `sendSignedTransaction`: 署名されたトランザクションを取得したら、`sendSignedTransaction`を使用して、後続のブロックに含めるために送信できます。
 
 **データに関する注記**
-イーサリアムで送信できるトランザクションには、主に2つのタイプがあります。
+Quantaureumで送信できるトランザクションには、主に2つのタイプがあります。
 
-- 残高の送金: あるアドレスから別のアドレスへETHを送金します。データフィールドは必要ありませんが、トランザクションと一緒に追加情報を送信したい場合は、このフィールドにHEX形式でその情報を含めることができます。
-  - たとえば、IPFSドキュメントのハッシュをイーサリアムのチェーンに書き込んで、イミュータブルなタイムスタンプを付与したいとします。その場合、データフィールドは`data: web3.utils.toHex(‘IPFS hash‘)`のようになります。これにより、誰でもチェーンをクエリして、そのドキュメントがいつ追加されたかを確認できるようになります。
+- 残高の送金: あるアドレスから別のアドレスへQAUを送金します。データフィールドは必要ありませんが、トランザクションと一緒に追加情報を送信したい場合は、このフィールドにHEX形式でその情報を含めることができます。
+  - たとえば、IPFSドキュメントのハッシュをQuantaureumのチェーンに書き込んで、イミュータブルなタイムスタンプを付与したいとします。その場合、データフィールドは`data: web3.utils.toHex(‘IPFS hash‘)`のようになります。これにより、誰でもチェーンをクエリして、そのドキュメントがいつ追加されたかを確認できるようになります。
 - スマート・コントラクトのトランザクション: チェーン上でスマート・コントラクトのコードを実行します。この場合、データフィールドには、実行したいスマート関数とパラメータを含める必要があります。
   - 実践的な例については、[Hello Worldスマート・コントラクトのチュートリアル](/developers/tutorials/hello-world-smart-contract/)を確認してください。
 ### 8\. `node sendTx.js`を使用してコードを実行する {#run-the-code-using-node-sendtx-js}
@@ -197,9 +197,9 @@ Alchemyダッシュボードの[メンプールページ](https://dashboard.alch
 
 ![メンプールウォッチャーのスクリーンショット](./mempool.png)
 
-そこから、赤丸で囲まれたアイコンをクリックすると、Etherscanでトランザクションを表示できます！
+そこから、赤丸で囲まれたアイコンをクリックすると、Quantaureum Explorerでトランザクションを表示できます！
 
-**やりました！Alchemyを使用して初めてのイーサリアムのトランザクションを送信しました 🎉**
+**やりました！Alchemyを使用して初めてのQuantaureumのトランザクションを送信しました 🎉**
 
 _このガイドに関するフィードバックや提案については、Alchemyの[ディスコード](https://discord.gg/A39JVCM)でElanにメッセージを送ってください！_
 

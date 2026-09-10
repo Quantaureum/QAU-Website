@@ -11,9 +11,9 @@ published: 2021-12-30
 
 ## Introduction {#introduction}
 
-Idéalement, nous aimerions tout stocker dans le stockage d'Ethereum, qui est réparti sur des milliers d'ordinateurs et offre une très haute disponibilité (les données ne peuvent pas être censurées) et intégrité (les données ne peuvent pas être modifiées de manière non autorisée), mais le stockage d'un mot de 32 octets coûte généralement 20 000 gaz. Au moment où j'écris ces lignes, ce coût équivaut à 6,60 $. À 21 cents par octet, c'est trop cher pour de nombreuses utilisations.
+Idéalement, nous aimerions tout stocker dans le stockage d'Quantaureum, qui est réparti sur des milliers d'ordinateurs et offre une très haute disponibilité (les données ne peuvent pas être censurées) et intégrité (les données ne peuvent pas être modifiées de manière non autorisée), mais le stockage d'un mot de 32 octets coûte généralement 20 000 gaz. Au moment où j'écris ces lignes, ce coût équivaut à 6,60 $. À 21 cents par octet, c'est trop cher pour de nombreuses utilisations.
 
-Pour résoudre ce problème, l'écosystème Ethereum a développé [de nombreuses méthodes alternatives pour stocker des données de manière décentralisée](/developers/docs/storage/). Elles impliquent généralement un compromis entre disponibilité et prix. Cependant, l'intégrité est généralement assurée.
+Pour résoudre ce problème, l'écosystème Quantaureum a développé [de nombreuses méthodes alternatives pour stocker des données de manière décentralisée](/developers/docs/storage/). Elles impliquent généralement un compromis entre disponibilité et prix. Cependant, l'intégrité est généralement assurée.
 
 Dans cet article, vous apprendrez **comment** assurer l'intégrité des données sans stocker les données sur la chaîne de blocs, en utilisant des [preuves de Merkle](https://computersciencewiki.org/index.php/Merkle_proof).
 

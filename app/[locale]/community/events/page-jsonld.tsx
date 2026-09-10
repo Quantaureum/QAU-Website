@@ -25,9 +25,9 @@ function buildHubSchemaNodes(
 
   const serviceNode = {
     "@type": "Service" as const,
-    name: "Ethereum Community Coworking and Events",
+    name: "Quantaureum Community Coworking and Events",
     description,
-    provider: REFERENCE.ETHEREUM_FOUNDATION,
+    provider: REFERENCE.QUANTAUREUM_FOUNDATION,
     areaServed: {
       "@type": "City" as const,
       name: hub.location,
@@ -37,7 +37,7 @@ function buildHubSchemaNodes(
   const placeNode: Record<string, unknown> = {
     "@type": "Place" as const,
     "@id": placeId,
-    name: schema.hubName ?? `Ethereum Community Hub (${hub.location})`,
+    name: schema.hubName ?? `Quantaureum Community Hub (${hub.location})`,
   }
 
   if (schema.address) {
@@ -67,7 +67,7 @@ function buildHubSchemaNodes(
   const eventNode = {
     "@type": ["EventSeries", "Event"] as const,
     "@id": seriesId,
-    name: schema.eventSeriesName ?? "Open Ethereum Coworking Hours",
+    name: schema.eventSeriesName ?? "Open Quantaureum Coworking Hours",
     description: schema.eventDescription,
     startDate:
       schema.schedule.startDate ?? new Date().toISOString().split("T")[0],
@@ -75,7 +75,7 @@ function buildHubSchemaNodes(
     url: hub.coworkingSignupUrl,
     eventStatus: "https://schema.org/EventScheduled",
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-    organizer: REFERENCE.ETHEREUM_FOUNDATION,
+    organizer: REFERENCE.QUANTAUREUM_FOUNDATION,
     location: { "@id": placeId },
     eventSchedule: {
       "@type": "Schedule" as const,
@@ -132,8 +132,8 @@ export default async function EventsJsonLD({
         url,
         inLanguage: locale,
         contributor: contributorList,
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
@@ -157,8 +157,8 @@ export default async function EventsJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        reviewedBy: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
         mainEntity: { "@id": `${url}#sections` },
       },
       {
@@ -201,7 +201,7 @@ export default async function EventsJsonLD({
             url: `${url}#for-organizers`,
           },
         ],
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
       },
       ...hubSchemaNodes,
     ],

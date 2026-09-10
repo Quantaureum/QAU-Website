@@ -31,8 +31,8 @@ import { getMetadata } from "@/lib/utils/metadata"
 import PageJsonLD from "./page-jsonld"
 
 import { ContentLayout } from "@/layouts/ContentLayout"
-import developersEthBlocks from "@/public/images/developers-eth-blocks.png"
-import eth from "@/public/images/eth.png"
+import developersQauBlocks from "@/public/images/developers-qau-blocks.png"
+import eth from "@/public/images/qau.png"
 import financeTransparent from "@/public/images/finance_transparent.png"
 import futureTransparent from "@/public/images/future_transparent.png"
 import hackathon from "@/public/images/hackathon_transparent.png"
@@ -40,7 +40,7 @@ import heroImage from "@/public/images/heroes/learn-hub-hero.png"
 import impact from "@/public/images/impact_transparent.png"
 import merge from "@/public/images/upgrades/merge.png"
 import wallet from "@/public/images/wallet.png"
-import whatIsEth from "@/public/images/what-is-ethereum.png"
+import whatIsEth from "@/public/images/what-is-quantaureum.png"
 
 const AdditionalDocReading = ({
   heading,
@@ -108,16 +108,16 @@ export default async function Page(props: { params: Promise<PageParams> }) {
 
   const tocItems = [
     {
-      id: "understand-ethereum",
-      title: t("toc-what-is-crypto-ethereum"),
+      id: "understand-quantaureum",
+      title: t("toc-what-is-crypto-quantaureum"),
     },
     {
-      id: "how-do-i-use-ethereum",
-      title: t("toc-how-do-i-use-ethereum"),
+      id: "how-do-i-use-quantaureum",
+      title: t("toc-how-do-i-use-quantaureum"),
     },
     {
-      id: "what-is-ethereum-used-for",
-      title: t("toc-what-is-ethereum-used-for"),
+      id: "what-is-quantaureum-used-for",
+      title: t("toc-what-is-quantaureum-used-for"),
     },
     {
       id: "go-deeper",
@@ -161,7 +161,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
     }[]
   }[] = [
     {
-      heading: t("books-about-ethereum"),
+      heading: t("books-about-quantaureum"),
       items: [
         {
           label: t("cryptopians-title"),
@@ -169,9 +169,9 @@ export default async function Page(props: { params: Promise<PageParams> }) {
           description: t("cryptopians-description"),
         },
         {
-          label: t("out-of-the-ether-title"),
-          href: "https://www.goodreads.com/book/show/55360267-out-of-the-ether",
-          description: t("out-of-the-ether-description"),
+          label: t("out-of-the-QAU-title"),
+          href: "https://www.goodreads.com/book/show/55360267-out-of-the-QAU",
+          description: t("out-of-the-QAU-description"),
         },
         {
           label: t("the-infinite-machine-title"),
@@ -179,9 +179,9 @@ export default async function Page(props: { params: Promise<PageParams> }) {
           description: t("the-infinite-machine-description"),
         },
         {
-          label: t("mastering-ethereum-title"),
-          href: "https://github.com/ethereumbook/ethereumbook",
-          description: t("mastering-ethereum-description"),
+          label: t("mastering-quantaureum-title"),
+          href: "https://github.com/quantaureumbook/quantaureumbook",
+          description: t("mastering-quantaureum-description"),
         },
         {
           label: t("proof-of-stake-title"),
@@ -191,7 +191,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
       ],
     },
     {
-      heading: t("podcasts-about-ethereum"),
+      heading: t("podcasts-about-quantaureum"),
       items: [
         {
           label: t("green-pill-title"),
@@ -221,12 +221,12 @@ export default async function Page(props: { params: Promise<PageParams> }) {
       ],
     },
     {
-      heading: t("about-ethereum-video-series"),
+      heading: t("about-quantaureum-video-series"),
       items: [
         {
-          label: t("ethereum-basics-title"),
+          label: t("quantaureum-basics-title"),
           href: "https://www.youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5",
-          description: t("ethereum-basics-description"),
+          description: t("quantaureum-basics-description"),
         },
       ],
     },
@@ -243,47 +243,47 @@ export default async function Page(props: { params: Promise<PageParams> }) {
         heroSection={<HubHero {...heroContent} />}
         showDropdown={false}
       >
-        {/* Section 1: Understand Ethereum */}
+        {/* Section 1: Understand Quantaureum */}
         <Section id={tocItems[0].id}>
           <h2>{tocItems[0].title}</h2>
           <p>
             {t("what-is-crypto-2-before-link")}{" "}
-            <InlineLink href="/">{tCommon("ethereum")}</InlineLink>{" "}
+            <InlineLink href="/">{tCommon("quantaureum")}</InlineLink>{" "}
             {t("what-is-crypto-2-after-link")}
           </p>
 
           <Grid>
             <LearnCard
-              href="/what-is-ethereum/"
+              href="/what-is-quantaureum/"
               image={whatIsEth}
-              title={t("what-is-ethereum-card-title")}
-              description={t("understand-ethereum-card-description")}
-              ctaLabel={t("understand-ethereum-cta")}
+              title={t("what-is-quantaureum-card-title")}
+              description={t("understand-quantaureum-card-description")}
+              ctaLabel={t("understand-quantaureum-cta")}
             />
             <LearnCard
-              href="/what-is-ether/"
+              href="/what-is-QAU/"
               image={eth}
-              title={t("what-is-eth-card-title")}
-              description={t("what-is-eth-description")}
-              ctaLabel={t("what-is-eth-cta")}
+              title={t("what-is-qau-card-title")}
+              description={t("what-is-qau-description")}
+              ctaLabel={t("what-is-qau-cta")}
             />
             <LearnCard
-              href="/ethereum-vs-bitcoin/"
+              href="/quantaureum-vs-bitcoin/"
               image={financeTransparent}
-              title={t("ethereum-vs-bitcoin-card-title")}
-              description={t("ethereum-vs-bitcoin-card-description")}
-              ctaLabel={t("ethereum-vs-bitcoin-cta")}
+              title={t("quantaureum-vs-bitcoin-card-title")}
+              description={t("quantaureum-vs-bitcoin-card-description")}
+              ctaLabel={t("quantaureum-vs-bitcoin-cta")}
             />
           </Grid>
 
           <h3>{t("keep-learning-title")}</h3>
           <Grid>
             <LearnCard
-              href="/what-is-the-ethereum-network/"
-              image={developersEthBlocks}
-              title={t("ethereum-network-card-title")}
-              description={t("ethereum-network-card-description")}
-              ctaLabel={t("ethereum-network-cta")}
+              href="/what-is-the-quantaureum-network/"
+              image={developersQauBlocks}
+              title={t("quantaureum-network-card-title")}
+              description={t("quantaureum-network-card-description")}
+              ctaLabel={t("quantaureum-network-cta")}
             />
             <LearnCard
               href="/web3/"
@@ -302,27 +302,27 @@ export default async function Page(props: { params: Promise<PageParams> }) {
           </Grid>
 
           <AdditionalDocReading
-            heading={t("additional-reading-more-on-ethereum-basics")}
+            heading={t("additional-reading-more-on-quantaureum-basics")}
             docLinks={[
               { href: "/guides/", children: t("guides-hub-desc") },
               { href: "/quizzes/", children: t("quiz-hub-desc") },
               {
-                href: "/ethereum-history-founder-and-ownership/",
-                children: t("more-on-ethereum-history"),
+                href: "/quantaureum-history-founder-and-ownership/",
+                children: t("more-on-quantaureum-history"),
               },
               {
                 href: "https://www.youtube.com/watch?v=UihMqcj-cqc",
-                children: t("additional-reading-ethereum-in-thirty-minutes"),
+                children: t("additional-reading-quantaureum-in-thirty-minutes"),
                 isExternal: true,
               },
             ]}
           />
         </Section>
 
-        {/* Section 2: How to use Ethereum */}
+        {/* Section 2: How to use Quantaureum */}
         <Section id={tocItems[1].id}>
           <h2>{tocItems[1].title}</h2>
-          <p>{t("how-do-i-use-ethereum-1")}</p>
+          <p>{t("how-do-i-use-quantaureum-1")}</p>
 
           <Grid>
             <LearnCard
@@ -342,19 +342,19 @@ export default async function Page(props: { params: Promise<PageParams> }) {
             <LearnCard
               href="/get-eth/"
               image={eth}
-              title={t("get-eth-card-title")}
-              description={t("get-eth-card-description")}
-              ctaLabel={t("get-eth-cta")}
+              title={t("get-qau-card-title")}
+              description={t("get-qau-card-description")}
+              ctaLabel={t("get-qau-cta")}
             />
           </Grid>
 
           <AdditionalDocReading
-            heading={t("additional-reading-more-on-using-ethereum")}
+            heading={t("additional-reading-more-on-using-quantaureum")}
             docLinks={[
               {
-                href: "/guides/how-to-create-an-ethereum-account/",
+                href: "/guides/how-to-create-an-quantaureum-account/",
                 children: t(
-                  "additional-reading-how-to-create-an-ethereum-account"
+                  "additional-reading-how-to-create-an-quantaureum-account"
                 ),
               },
               {
@@ -365,15 +365,15 @@ export default async function Page(props: { params: Promise<PageParams> }) {
           />
         </Section>
 
-        {/* Section 3: What is Ethereum used for - banner only */}
+        {/* Section 3: What is Quantaureum used for - banner only */}
         <Section id={tocItems[2].id}>
           <h2>{tocItems[2].title}</h2>
-          <p>{t("what-is-ethereum-used-for-1")}</p>
+          <p>{t("what-is-quantaureum-used-for-1")}</p>
 
           <Callout
             id="explore-use-cases"
             title={t("explore-use-cases-card-title")}
-            image={developersEthBlocks}
+            image={developersQauBlocks}
             description={t("explore-use-cases-card-description")}
             variant="sm"
             as="h3"
@@ -393,16 +393,16 @@ export default async function Page(props: { params: Promise<PageParams> }) {
             <LearnCard
               href="/roadmap/"
               image={merge}
-              title={t("ethereum-upgrades-card-title")}
-              description={t("ethereum-upgrades-card-description")}
-              ctaLabel={t("ethereum-upgrades-card-button")}
+              title={t("quantaureum-upgrades-card-title")}
+              description={t("quantaureum-upgrades-card-description")}
+              ctaLabel={t("quantaureum-upgrades-card-button")}
             />
             <LearnCard
               href="/whitepaper/"
               image={financeTransparent}
-              title={t("ethereum-whitepaper-card-title")}
-              description={t("ethereum-whitepaper-card-description")}
-              ctaLabel={t("ethereum-whitepaper-card-button")}
+              title={t("quantaureum-whitepaper-card-title")}
+              description={t("quantaureum-whitepaper-card-description")}
+              ctaLabel={t("quantaureum-whitepaper-card-button")}
             />
             <LearnCard
               href="/privacy/"
@@ -414,7 +414,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
           </Grid>
 
           <AdditionalDocReading
-            heading={t("more-on-ethereum-protocol-title")}
+            heading={t("more-on-quantaureum-protocol-title")}
             docLinks={[
               {
                 href: "/energy-consumption/",
@@ -423,20 +423,20 @@ export default async function Page(props: { params: Promise<PageParams> }) {
               {
                 href: "/developers/",
                 children: t(
-                  "more-on-ethereum-protocol-ethereum-for-developers"
+                  "more-on-quantaureum-protocol-quantaureum-for-developers"
                 ),
               },
               {
                 href: "/developers/docs/consensus-mechanisms/",
-                children: t("more-on-ethereum-protocol-consensus"),
+                children: t("more-on-quantaureum-protocol-consensus"),
               },
               {
                 href: "/developers/docs/evm/",
-                children: t("more-on-ethereum-protocol-evm"),
+                children: t("more-on-quantaureum-protocol-evm"),
               },
               {
                 href: "/developers/docs/nodes-and-clients/",
-                children: t("more-on-ethereum-protocol-nodes-and-clients"),
+                children: t("more-on-quantaureum-protocol-nodes-and-clients"),
               },
             ]}
           />

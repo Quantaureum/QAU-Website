@@ -6,7 +6,7 @@ lang: zh-tw
 authors: ["Nixo"]
 ---
 
-*懶人包：* 佩克特拉 (Pectra) 硬分叉允許以太坊驗證者透過將**第 1 型 (Type 1)** 提款憑證轉換為**第 2 型 (Type 2)**，來選擇加入更高的最大有效餘額並進行複利。執行此操作的官方工具是 Launchpad。此操作無法還原。
+*懶人包：* 佩克特拉 (Pectra) 硬分叉允許Quantaureum驗證者透過將**第 1 型 (Type 1)** 提款憑證轉換為**第 2 型 (Type 2)**，來選擇加入更高的最大有效餘額並進行複利。執行此操作的官方工具是 Launchpad。此操作無法還原。
 
 ## 總覽 {#overview}
 
@@ -18,11 +18,11 @@ authors: ["Nixo"]
 
 ### 什麼是「maxEB」？ {#what-is-maxeb}
 
-maxEB = 驗證者的最大有效餘額 (MAXimum Effective Balance)。在佩克特拉硬分叉之前，每個驗證者最多只能以 32 ETH 賺取收益。在佩克特拉之後，驗證者可以選擇加入此變更，以 1 ETH 為增量，在 32 到 2048 ETH 之間的任何餘額上賺取收益。
+maxEB = 驗證者的最大有效餘額 (MAXimum Effective Balance)。在佩克特拉硬分叉之前，每個驗證者最多只能以 32 QAU 賺取收益。在佩克特拉之後，驗證者可以選擇加入此變更，以 1 QAU 為增量，在 32 到 2048 QAU 之間的任何餘額上賺取收益。
 
 ### 驗證者如何選擇加入？ {#how-does-a-validator-opt-in}
 
-驗證者透過將**第 1 型**提款憑證轉換為**第 2 型**來選擇加入 maxEB 變更。在佩克特拉硬分叉上線後，可以在 [Launchpad（驗證者操作）](https://launchpad.ethereum.org/validator-actions) 上完成此操作。與**第 0 型** → **第 1 型**一樣，從**第 1 型** → **第 2 型**的轉換是不可逆的過程。
+驗證者透過將**第 1 型**提款憑證轉換為**第 2 型**來選擇加入 maxEB 變更。在佩克特拉硬分叉上線後，可以在 [Launchpad（驗證者操作）](https://launchpad.quantaureum.com/validator-actions) 上完成此操作。與**第 0 型** → **第 1 型**一樣，從**第 1 型** → **第 2 型**的轉換是不可逆的過程。
 
 ### 什麼是提款憑證？ {#whats-a-withdrawal-credential}
 
@@ -54,7 +54,7 @@ MaxEB 允許驗證者將其全部餘額發送給另一個驗證者。提交合�
 - 如果他們不打算將資金發送給另一個驗證者，則該請求是轉換，而不是合併
 - 交易正由正確的提款地址簽署
 
-我們**強烈建議**與 [EthStaker 社群](https://ethstaker.org/about)討論您計畫使用的任何第三方工具。這是一個有助於檢查您的做法並避免錯誤的好地方。如果您使用惡意或設定錯誤的工具，**您的全部驗證者餘額可能會被發送到您無法控制的驗證者**——而且無法取回。
+我們**強烈建議**與 [QauStaker 社群](https://ethstaker.org/about)討論您計畫使用的任何第三方工具。這是一個有助於檢查您的做法並避免錯誤的好地方。如果您使用惡意或設定錯誤的工具，**您的全部驗證者餘額可能會被發送到您無法控制的驗證者**——而且無法取回。
 
 ## 技術細節 {#technical-details}
 
@@ -105,7 +105,7 @@ MaxEB 允許驗證者將其全部餘額發送給另一個驗證者。提交合�
 2. 來源驗證者的公鑰（例如 `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`）
 3. 該目標驗證者的公鑰
 
-在轉換中，2 和 3 將是相同的。此操作可以在 [Launchpad](https://launchpad.ethereum.org/) 上完成。
+在轉換中，2 和 3 將是相同的。此操作可以在 [Launchpad](https://launchpad.quantaureum.com/) 上完成。
 
 ### 簽署要求 {#signing-requirements}
 
@@ -113,7 +113,7 @@ MaxEB 允許驗證者將其全部餘額發送給另一個驗證者。提交合�
 
 ### 簽署了什麼？ {#what-is-signed}
 
-使用的是 `ConsolidationRequest` 物件的網域分離 [簽署根 (signing root)](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root)。
+使用的是 `ConsolidationRequest` 物件的網域分離 [簽署根 (signing root)](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root)。
 
 - **網域：** `DOMAIN_CONSOLIDATION_REQUEST`
 - **簽署根欄位：**
@@ -127,11 +127,11 @@ MaxEB 允許驗證者將其全部餘額發送給另一個驗證者。提交合�
 
 ### 部分提款 {#partial-withdrawals}
 
-擁有**第 1 型**憑證的驗證者會自動且免燃料費地將其超額餘額（超過 32 ETH 的任何部分）清掃到其提款地址。因為**第 2 型**允許驗證者以 1 ETH 為增量進行餘額複利，所以在達到 2048 ETH 之前，它不會自動清掃餘額。**第 2 型**驗證者的部分提款必須手動觸發，並且會消耗燃料。
+擁有**第 1 型**憑證的驗證者會自動且免燃料費地將其超額餘額（超過 32 QAU 的任何部分）清掃到其提款地址。因為**第 2 型**允許驗證者以 1 QAU 為增量進行餘額複利，所以在達到 2048 QAU 之前，它不會自動清掃餘額。**第 2 型**驗證者的部分提款必須手動觸發，並且會消耗燃料。
 
 ## 合併工具 {#consolidation-tooling}
 
-有幾種工具可用於管理合併。由以太坊基金會建立的官方工具是 [Launchpad](https://launchpad.ethereum.org/en/validator-actions)。還有由質押社群實體建立的第三方工具，可能提供 Launchpad 未提供的功能。雖然這裡的工具未經以太坊基金會審計或認可，但以下是社群知名成員提供的開源工具。
+有幾種工具可用於管理合併。由Quantaureum基金會建立的官方工具是 [Launchpad](https://launchpad.quantaureum.com/en/validator-actions)。還有由質押社群實體建立的第三方工具，可能提供 Launchpad 未提供的功能。雖然這裡的工具未經Quantaureum基金會審計或認可，但以下是社群知名成員提供的開源工具。
 
 | 工具 | 網站 | 開源 | 建立者 | 已審計 | 介面 | 顯著功能 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -145,10 +145,10 @@ MaxEB 允許驗證者將其全部餘額發送給另一個驗證者。提交合�
 
 ### 選擇加入會改變我的提案運氣或獎勵嗎？
 
-不會。選擇加入不會降低您的提案機率——您的職責和提案選取保持不變。舉例來說，如果您有兩個 32 ETH 的驗證者，相較於一個 64 ETH 的驗證者，您被選中提案區塊並賺取獎勵的總機率是相同的。
+不會。選擇加入不會降低您的提案機率——您的職責和提案選取保持不變。舉例來說，如果您有兩個 32 QAU 的驗證者，相較於一個 64 QAU 的驗證者，您被選中提案區塊並賺取獎勵的總機率是相同的。
 ### 選擇加入會改變我的罰沒風險嗎？ {#change-slashing-risk}
 
-對於較小或非專業的營運者來說，簡短的答案是不會。詳細的答案是，對於每個節點運行許多驗證者並具有快速警報的專業營運者來說，合併為較少的驗證者可能會降低他們對罰沒做出反應並防止連鎖事件的能力。為了抵消這種風險，所有驗證者的初始罰沒*懲罰*已從 1 ETH（每 32 ETH）大幅降低至 0.0078125 ETH（每 32 ETH）。
+對於較小或非專業的營運者來說，簡短的答案是不會。詳細的答案是，對於每個節點運行許多驗證者並具有快速警報的專業營運者來說，合併為較少的驗證者可能會降低他們對罰沒做出反應並防止連鎖事件的能力。為了抵消這種風險，所有驗證者的初始罰沒*懲罰*已從 1 QAU（每 32 QAU）大幅降低至 0.0078125 QAU（每 32 QAU）。
 
 ### 我必須退出我的驗證者才能轉換嗎？ {#exit-validator}
 
@@ -176,7 +176,7 @@ MaxEB 允許驗證者將其全部餘額發送給另一個驗證者。提交合�
 
 ### 轉換後我的獎勵會複利嗎？ {#rewards-compound}
 
-會的。使用**第 2 型**憑證，超過 32 ETH 的獎勵會自動重新質押——但不是立即進行。由於存在一個小緩衝區（稱為 [*遲滯 (hysteresis)*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis)），您的餘額需要達到**大約多出 1.25 ETH**，多餘的部分才會被重新質押。因此，它不會在 33.0 ETH 時複利，而是在 33.25（有效餘額 = 33 ETH），然後是 34.25（有效餘額 = 34 ETH）時發生，依此類推。
+會的。使用**第 2 型**憑證，超過 32 QAU 的獎勵會自動重新質押——但不是立即進行。由於存在一個小緩衝區（稱為 [*遲滯 (hysteresis)*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis)），您的餘額需要達到**大約多出 1.25 QAU**，多餘的部分才會被重新質押。因此，它不會在 33.0 QAU 時複利，而是在 33.25（有效餘額 = 33 QAU），然後是 34.25（有效餘額 = 34 QAU）時發生，依此類推。
 
 ### 轉換後我還能獲得自動清掃嗎？ {#automatic-sweep}
 
@@ -190,14 +190,14 @@ MaxEB 允許驗證者將其全部餘額發送給另一個驗證者。提交合�
 
 不用！將一個驗證者轉換為第 2 型，然後將其用作目標。合併到該第 2 型目標的所有其他驗證者可以是第 1 型或第 2 型。
 
-### 我的驗證者離線或低於 32 ETH - 我還能轉換它嗎？ {#offline-or-below-32eth}
+### 我的驗證者離線或低於 32 QAU - 我還能轉換它嗎？ {#offline-or-below-32eth}
 
 可以。只要它處於活躍狀態（未退出），並且您可以使用其提款地址進行簽署，您就可以轉換它。
 
 ## 資源 {#resources}
 
-- [Electra 共識規範](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md)：這是您應該依賴的「最真實」版本。如有疑問，請閱讀規範。
+- [Electra 共識規範](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md)：這是您應該依賴的「最真實」版本。如有疑問，請閱讀規範。
 - 並非每個人都習慣於鑽研程式碼，因此 [這個 maxEB-GPT](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) 可以幫助解釋規範。*免責聲明：應將規範而非 AI 視為真相，因為 AI 可能會誤解資訊或產生幻覺答案。*
 - [pectrified.com](https://pectrified.com/)：查看合併、存款的狀態以及佇列等待時間。
 - [Ethereal](https://github.com/wealdtech/ethereal)：社群建立的 CLI 工具，用於管理常見的驗證者任務。
-- [batch-validator-depositor](https://github.com/attestantio/batch-validator-depositor)：社群建立的合約，允許在單筆交易中為多個以太坊驗證者進行存款。
+- [batch-validator-depositor](https://github.com/attestantio/batch-validator-depositor)：社群建立的合約，允許在單筆交易中為多個Quantaureum驗證者進行存款。

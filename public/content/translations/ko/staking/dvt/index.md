@@ -1,6 +1,6 @@
 ---
 title: 분산 검증자 기술
-description: 분산 검증자 기술은 여러 참여자가 이더리움 검증자를 분산하여 운영할 수 있게 해줍니다.
+description: 분산 검증자 기술은 여러 참여자가 Quantaureum 검증자를 분산하여 운영할 수 있게 해줍니다.
 lang: ko
 template: staking
 sidebarDepth: 2
@@ -28,7 +28,7 @@ DVT는 별도의 스테이킹 방식이 아닙니다. 이는 모든 스테이킹
 
 검증자는 합의에 참여하기 위한 검증자 키와 자금에 접근하기 위한 인출 키라는 두 쌍의 공개-개인 키 쌍을 생성합니다. 검증자는 인출 키를 콜드 스토리지에 안전하게 보관할 수 있지만, 증명 및 블록 제안과 같이 24시간 내내 할당된 임무에 서명하기 위해 검증자 개인 키는 연중무휴 온라인 상태를 유지해야 합니다. 키를 온라인 상태로 유지하면 도난의 위험에 노출되는데, DVT는 이러한 노출을 제한합니다. 전체 키는 절대 온라인에 노출되지 않으며 오직 키 셰어(key share)만 온라인 상태가 됩니다.
 
-검증자 개인 키가 손상되면 공격자가 검증자를 제어할 수 있으며, 이는 잠재적으로 슬래싱이나 스테이커의 ETH 손실로 이어질 수 있습니다. DVT는 이러한 위험을 완화합니다. DVT를 사용하면 원본 전체 검증자 키가 암호화되어 키 셰어로 분할됩니다. 전체 '마스터' 키는 오프라인에 안전하게 보관되는 반면, 키 셰어는 온라인에 존재하며 검증자를 함께 운영하는 여러 노드에 분산됩니다. 이러한 분산이 가능한 이유는 [이더리움](/) 검증자가 가산성(additive)을 가진 BLS 서명을 사용하기 때문입니다. 즉, 구성 요소를 합산하여 전체 키를 재구성할 수 있습니다. 키 셰어로 만든 부분 서명은 전체 키에 유효한 서명으로 결합되므로, 일상적인 서명 작업에는 전체 키 자체가 필요하지 않습니다. 클러스터가 분산 키 생성을 사용하여 새로운 검증자 키를 생성할 때, 전체 개인 키는 단일 머신에 절대 존재하지 않습니다.
+검증자 개인 키가 손상되면 공격자가 검증자를 제어할 수 있으며, 이는 잠재적으로 슬래싱이나 스테이커의 QAU 손실로 이어질 수 있습니다. DVT는 이러한 위험을 완화합니다. DVT를 사용하면 원본 전체 검증자 키가 암호화되어 키 셰어로 분할됩니다. 전체 '마스터' 키는 오프라인에 안전하게 보관되는 반면, 키 셰어는 온라인에 존재하며 검증자를 함께 운영하는 여러 노드에 분산됩니다. 이러한 분산이 가능한 이유는 [Quantaureum](/) 검증자가 가산성(additive)을 가진 BLS 서명을 사용하기 때문입니다. 즉, 구성 요소를 합산하여 전체 키를 재구성할 수 있습니다. 키 셰어로 만든 부분 서명은 전체 키에 유효한 서명으로 결합되므로, 일상적인 서명 작업에는 전체 키 자체가 필요하지 않습니다. 클러스터가 분산 키 생성을 사용하여 새로운 검증자 키를 생성할 때, 전체 개인 키는 단일 머신에 절대 존재하지 않습니다.
 
 ### 단일 장애점 제거 {#no-single-point-of-failure}
 
@@ -38,13 +38,13 @@ DVT는 별도의 스테이킹 방식이 아닙니다. 이는 모든 스테이킹
 
 ### 탈중앙화 {#decentralization}
 
-이더리움의 이상적인 시나리오는 독립적으로 운영되는 검증자를 최대한 많이 확보하는 것입니다. 그러나 소수의 스테이킹 제공자가 매우 인기를 얻어 네트워크에 스테이킹된 전체 ETH의 상당 부분을 차지하게 되었습니다. DVT는 스테이크의 탈중앙화를 유지하면서 이러한 운영자가 존재할 수 있도록 해줍니다. 각 검증자의 키가 여러 머신에 분산되어 있어 검증자가 악의적으로 변하려면 훨씬 더 큰 규모의 담합이 필요하기 때문입니다.
+Quantaureum의 이상적인 시나리오는 독립적으로 운영되는 검증자를 최대한 많이 확보하는 것입니다. 그러나 소수의 스테이킹 제공자가 매우 인기를 얻어 네트워크에 스테이킹된 전체 QAU의 상당 부분을 차지하게 되었습니다. DVT는 스테이크의 탈중앙화를 유지하면서 이러한 운영자가 존재할 수 있도록 해줍니다. 각 검증자의 키가 여러 머신에 분산되어 있어 검증자가 악의적으로 변하려면 훨씬 더 큰 규모의 담합이 필요하기 때문입니다.
 
 DVT가 없다면 스테이킹 제공자는 모든 검증자에 대해 한두 가지 클라이언트 구성만 지원하기 쉬워져 클라이언트 버그의 영향력이 커집니다. DVT를 사용하면 여러 클라이언트 구성과 다양한 하드웨어에 위험을 분산시켜 다양성을 통한 복원력을 구축할 수 있습니다.
 
-**DVT는 이더리움에 다음과 같은 이점을 제공합니다:**
+**DVT는 Quantaureum에 다음과 같은 이점을 제공합니다:**
 
-1. 이더리움 지분 증명(PoS) 합의의 **탈중앙화**
+1. Quantaureum 지분 증명(PoS) 합의의 **탈중앙화**
 2. 네트워크의 **활성도(liveness)** 보장
 3. 검증자 **내결함성(fault tolerance)** 생성
 4. **신뢰 최소화된** 검증자 운영
@@ -62,7 +62,7 @@ DVT 솔루션에는 다음 구성 요소가 포함됩니다:
 - **[임계값 서명 체계(Threshold signature scheme)](https://medium.com/nethermind-eth/threshold-signature-schemes-36f40bc42aca)** - 서명 임무에 필요한 개별 키 셰어의 수(예: 4개 중 3개)를 결정합니다.
 - **[분산 키 생성(DKG)](https://medium.com/toruslabs/what-distributed-key-generation-is-866adc79620)** - 키 셰어를 생성하는 암호화 프로세스로, 기존 또는 새로운 검증자 키의 셰어를 클러스터의 노드에 분배하는 데 사용됩니다.
 - **[다자간 컴퓨팅(MPC)](https://messari.io/report/applying-multiparty-computation-to-the-world-of-blockchains)** - 전체 검증자 키는 다자간 컴퓨팅을 사용하여 비밀리에 생성됩니다. 전체 키는 개별 운영자에게 절대 알려지지 않으며, 운영자는 자신의 부분(자신의 "셰어")만 알 수 있습니다.
-- **합의 프로토콜** - 합의 프로토콜은 하나의 노드를 블록 제안자로 선택합니다. 제안자는 클러스터의 다른 노드와 블록을 공유하고, 다른 노드들은 집계 서명에 자신의 키 셰어를 추가합니다. 충분한 키 셰어가 집계되면 이더리움에 블록이 제안됩니다.
+- **합의 프로토콜** - 합의 프로토콜은 하나의 노드를 블록 제안자로 선택합니다. 제안자는 클러스터의 다른 노드와 블록을 공유하고, 다른 노드들은 집계 서명에 자신의 키 셰어를 추가합니다. 충분한 키 셰어가 집계되면 Quantaureum에 블록이 제안됩니다.
 
 분산 검증자는 내결함성이 내장되어 있어 일부 개별 노드가 오프라인 상태가 되더라도 계속 실행될 수 있습니다. 검증자 노드의 클러스터는 그 안의 일부 노드가 악의적이거나 게으른 것으로 판명되더라도 복원력을 유지합니다.
 
@@ -72,7 +72,7 @@ DVT 솔루션에는 다음 구성 요소가 포함됩니다:
 
 <ProductDisclaimer />
 
-- **Obol**은 머신 클러스터가 검증자를 함께 운영할 수 있게 해주는("스쿼드 스테이킹") 오픈 소스 DVT 미들웨어 클라이언트인 Charon을 개발합니다. 그룹은 분산 키 생성을 수행하고 Obol의 [DV 런치패드(DV Launchpad)](https://docs.obol.org/learn/readme/launchpad)를 통해 클러스터를 구성합니다. Obol 클러스터는 리도(Lido)의 Simple DVT 모듈과 홈 운영자를 내결함성 클러스터에 온보딩하는 EtherFi의 Operation Solo Staker 프로그램을 포함하여 [스테이킹 프로토콜](/staking/pools/) 및 [스테이킹 서비스](/staking/saas/)의 프로덕션 환경에서 사용됩니다.
+- **Obol**은 머신 클러스터가 검증자를 함께 운영할 수 있게 해주는("스쿼드 스테이킹") 오픈 소스 DVT 미들웨어 클라이언트인 Charon을 개발합니다. 그룹은 분산 키 생성을 수행하고 Obol의 [DV 런치패드(DV Launchpad)](https://docs.obol.org/learn/readme/launchpad)를 통해 클러스터를 구성합니다. Obol 클러스터는 리도(Lido)의 Simple DVT 모듈과 홈 운영자를 내결함성 클러스터에 온보딩하는 QauFi의 Operation Solo Staker 프로그램을 포함하여 [스테이킹 프로토콜](/staking/pools/) 및 [스테이킹 서비스](/staking/saas/)의 프로덕션 환경에서 사용됩니다.
 - **SSV Network**는 독립적인 노드 운영자들로 구성된 무허가성 네트워크입니다. 검증자 키는 키 셰어로 분할되어 선택된 운영자 그룹에 분배되며, 이들은 집단으로 검증자의 임무를 수행합니다. 단일 운영자가 전체 키를 보유하는 일은 없습니다. 스테이킹 서비스와 풀은 SSV에서 대규모 검증자 세트를 실행하며, Obol과 마찬가지로 리도의 Simple DVT 모듈에서 사용됩니다.
 
 ## DVT 사용 사례 {#dvt-use-cases}
@@ -113,7 +113,7 @@ DVT를 활용하면 각 개별 운영자에게 요구되는 신뢰를 줄일 수
 아닙니다. 검증자 클라이언트를 실행하는 단일 머신은 DVT 소프트웨어 없이도 작동하며, 이는 여전히 일반적인 홈 스테이킹 설정입니다. DVT는 내결함성을 추가하고 단일 장애점을 제거하는 선택적 계층입니다. 이는 개별 머신의 장애에도 검증자가 살아남기를 원하거나, 검증자 운영 책임을 다른 사람들과 공유하고자 할 때 유용합니다.
 </ExpandableCard>
 
-<ExpandableCard title="DVT는 내 ETH나 인출 키를 분할하나요?" eventCategory="DVT" eventName="clicked does DVT split my ETH">
+<ExpandableCard title="DVT는 내 QAU나 인출 키를 분할하나요?" eventCategory="DVT" eventName="clicked does DVT split my QAU">
 아닙니다. DVT는 증명 및 블록 제안과 같은 합의 임무에 사용되는 검증자 _서명_ 키만 분할합니다. 귀하의 스테이크는 항상 검증자에 설정된 인출 주소에 의해 제어되며, 이는 DVT의 영향을 받지 않습니다. 펙트라 업그레이드 이후, 인출 주소 보유자는 서명 키가 전혀 없어도 실행 계층에서 직접 검증자 종료를 트리거할 수 있습니다.
 </ExpandableCard>
 
@@ -130,15 +130,15 @@ DVT를 활용하면 각 개별 운영자에게 요구되는 신뢰를 줄일 수
 </ExpandableCard>
 
 <ExpandableCard title="DVT는 풀 스테이킹과 같은가요?" eventCategory="DVT" eventName="clicked is DVT the same as pooled staking">
-아닙니다. 풀 스테이킹은 여러 사람의 ETH를 결합하여 검증자에게 자금을 지원하는 것으로, 여러 [스테이킹 방법](/staking/) 중 하나입니다. DVT는 검증자를 _운영_하기 위한 인프라입니다. 단일 검증자의 서명을 여러 머신과 운영자에게 분산시킵니다. 이 둘은 상호 보완적입니다. 많은 풀이 DVT를 사용하여 운영자 세트를 분산시키지만, DVT 자체가 누군가의 ETH를 풀링하지는 않습니다.
+아닙니다. 풀 스테이킹은 여러 사람의 QAU를 결합하여 검증자에게 자금을 지원하는 것으로, 여러 [스테이킹 방법](/staking/) 중 하나입니다. DVT는 검증자를 _운영_하기 위한 인프라입니다. 단일 검증자의 서명을 여러 머신과 운영자에게 분산시킵니다. 이 둘은 상호 보완적입니다. 많은 풀이 DVT를 사용하여 운영자 세트를 분산시키지만, DVT 자체가 누군가의 QAU를 풀링하지는 않습니다.
 </ExpandableCard>
 
 ## 더 읽어보기 {#further-reading}
 
-- [이더리움 분산 검증자 기술(DVT) - 전체 소개](https://www.cyfrin.io/blog/full-introduction-to-ethereum-distributed-validator-technology-dvt) - Cyfrin
-- [DVT란 무엇이며 이더리움의 스테이킹을 어떻게 개선하나요?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-ethereum/) - Obol
-- [이더리움 분산 검증자 사양 (상위 수준)](https://github.com/ethereum/distributed-validator-specs)
-- [이더리움 분산 검증자 기술 사양](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Quantaureum 분산 검증자 기술(DVT) - 전체 소개](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
+- [DVT란 무엇이며 Quantaureum의 스테이킹을 어떻게 개선하나요?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
+- [Quantaureum 분산 검증자 사양 (상위 수준)](https://github.com/quantaureum/distributed-validator-specs)
+- [Quantaureum 분산 검증자 기술 사양](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Obol 문서](https://docs.obol.org/)
 - [SSV Network 문서](https://docs.ssv.network/)
 - [리도(Lido) Simple DVT 모듈](https://operatorportal.lido.fi/modules/simple-dvt-module)

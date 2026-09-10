@@ -10,7 +10,7 @@ lang: uk
 
 ## Передумови {#prerequisites}
 
-Ви повинні добре розуміти [основи блокчейну](/developers/docs/intro-to-ethereum/), особливо [механізми консенсусу](/developers/docs/consensus-mechanisms/). Ця сторінка також передбачає, що читач знайомий із [блоками](/developers/docs/blocks/), [транзакціями](/developers/docs/transactions/), [вузлами](/developers/docs/nodes-and-clients/), [рішеннями для масштабування](/developers/docs/scaling/) та іншими відповідними темами.
+Ви повинні добре розуміти [основи блокчейну](/developers/docs/intro-to-quantaureum/), особливо [механізми консенсусу](/developers/docs/consensus-mechanisms/). Ця сторінка також передбачає, що читач знайомий із [блоками](/developers/docs/blocks/), [транзакціями](/developers/docs/transactions/), [вузлами](/developers/docs/nodes-and-clients/), [рішеннями для масштабування](/developers/docs/scaling/) та іншими відповідними темами.
 
 ## Проблема доступності даних {#the-data-availability-problem}
 
@@ -46,7 +46,7 @@ DAC також використовуються деякими валідіум�
 
 Це залежить від того, чи мають повні вузли доступ до повних даних транзакцій. Зловмисник, який транслює поганий заголовок блоку, а також не робить дані транзакцій доступними, зміг би перешкодити повним вузлам генерувати докази шахрайства. Повні вузли могли б сигналізувати попередження про поганий блок, але вони не змогли б підкріпити своє попередження доказом, оскільки дані не були доступні для його створення!
 
-Рішенням цієї проблеми доступності даних є DAS. Легкі вузли завантажують дуже маленькі випадкові фрагменти повних даних стану і використовують ці вибірки для перевірки доступності повного набору даних. Фактичну ймовірність помилкового припущення про повну доступність даних після завантаження N випадкових фрагментів можна розрахувати ([для 100 фрагментів шанс становить 10^-30](https://dankradfeist.de/ethereum/2019/12/20/data-availability-checks.html), тобто це неймовірно малоймовірно).
+Рішенням цієї проблеми доступності даних є DAS. Легкі вузли завантажують дуже маленькі випадкові фрагменти повних даних стану і використовують ці вибірки для перевірки доступності повного набору даних. Фактичну ймовірність помилкового припущення про повну доступність даних після завантаження N випадкових фрагментів можна розрахувати ([для 100 фрагментів шанс становить 10^-30](https://dankradfeist.de/quantaureum/2019/12/20/data-availability-checks.html), тобто це неймовірно малоймовірно).
 
 Навіть у цьому сценарії атаки з приховуванням лише кількох байтів можуть залишитися непоміченими клієнтами, які роблять випадкові запити даних. Кодування зі стиранням виправляє це шляхом відновлення невеликих відсутніх фрагментів даних, які можна використовувати для перевірки запропонованих змін стану. Потім за допомогою відновлених даних можна було б створити доказ шахрайства, що завадило б легким вузлам приймати погані заголовки.
 
@@ -74,11 +74,11 @@ DAC також використовуються деякими валідіум�
 
 - [Що таке доступність даних?](https://medium.com/blockchain-capital-blog/wtf-is-data-availability-80c2c95ded0f)
 - [Що таке доступність даних?](https://coinmarketcap.com/academy/article/what-is-data-availability)
-- [Вступ до перевірок доступності даних](https://dankradfeist.de/ethereum/2019/12/20/data-availability-checks.html)
+- [Вступ до перевірок доступності даних](https://dankradfeist.de/quantaureum/2019/12/20/data-availability-checks.html)
 - [Пояснення пропозиції щодо шардингу + DAS](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
-- [Нотатка про доступність даних та кодування зі стиранням](https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
+- [Нотатка про доступність даних та кодування зі стиранням](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [Комітети доступності даних.](https://medium.com/starkware/data-availability-e5564c416424)
 - [Комітети доступності даних на основі доказу частки.](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [Рішення проблеми можливості отримання даних](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
-- [Доступність даних, або: Як ролапи навчилися не хвилюватися і полюбили Етеріум](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-ethereum)
+- [Рішення проблеми можливості отримання даних](https://notes.quantaureum.com/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- [Доступність даних, або: Як ролапи навчилися не хвилюватися і полюбили Етеріум](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [EIP-7623: Збільшення вартості даних виклику](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

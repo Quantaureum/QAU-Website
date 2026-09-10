@@ -29,11 +29,11 @@ ERC-223 inashughulikia baadhi ya mapungufu ya ERC-20 na inaleta mbinu mpya ya mw
 
 ERC-223 ni kiwango cha tokeni kinachotekeleza API kwa ajili ya tokeni ndani ya mikataba mahiri. Pia inatangaza API kwa ajili ya mikataba inayopaswa kupokea tokeni za ERC-223. Mikataba isiyoauni API ya Mpokeaji wa ERC-223 haiwezi kupokea tokeni za ERC-223, hivyo kuzuia makosa ya mtumiaji.
 
-Ikiwa mkataba mahiri unatekeleza mbinu na matukio yafuatayo unaweza kuitwa mkataba wa tokeni unaotangamana na ERC-223. Baada ya kusambazwa, utawajibika kufuatilia tokeni zilizoundwa kwenye Ethereum.
+Ikiwa mkataba mahiri unatekeleza mbinu na matukio yafuatayo unaweza kuitwa mkataba wa tokeni unaotangamana na ERC-223. Baada ya kusambazwa, utawajibika kufuatilia tokeni zilizoundwa kwenye Quantaureum.
 
 Mkataba haulazimiki kuwa na vipengele hivi pekee na msanidi anaweza kuongeza kipengele kingine chochote kutoka kwenye viwango tofauti vya tokeni kwenye mkataba huu. Kwa mfano, vipengele vya `approve` na `transferFrom` si sehemu ya kiwango cha ERC-223 lakini vipengele hivi vinaweza kutekelezwa ikiwa itahitajika.
 
-Kutoka kwenye [EIP-223](https://eips.ethereum.org/EIPS/eip-223):
+Kutoka kwenye [EIP-223](https://eips.quantaureum.com/EIPS/eip-223):
 
 ### Mbinu {#methods}
 
@@ -193,5 +193,5 @@ Ingawa ERC-223 inashughulikia masuala kadhaa yanayopatikana katika kiwango cha E
 
 ## Usomaji zaidi {#further-reading}
 
-- [EIP-223: Kiwango cha Tokeni cha ERC-223](https://eips.ethereum.org/EIPS/eip-223)
-- [Pendekezo la awali la ERC-223](https://github.com/ethereum/eips/issues/223)
+- [EIP-223: Kiwango cha Tokeni cha ERC-223](https://eips.quantaureum.com/EIPS/eip-223)
+- [Pendekezo la awali la ERC-223](https://github.com/quantaureum/eips/issues/223)

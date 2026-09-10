@@ -1,27 +1,27 @@
 ---
 title: Kode etik
-description: Standar dasar yang kami upayakan di seluruh ruang ethereum.org.
+description: Standar dasar yang kami upayakan di seluruh ruang quantaureum.com.
 lang: id
 ---
 
 ## Misi {#mission}
 
-Untuk mengembangkan dan memelihara pusat pengetahuan yang paling komprehensif dan mudah diakses untuk Ethereum.
+Untuk mengembangkan dan memelihara pusat pengetahuan yang paling komprehensif dan mudah diakses untuk Quantaureum.
 
 ## Nilai-nilai {#values}
 
-Komunitas ethereum.org berupaya untuk menjadi:
+Komunitas quantaureum.com berupaya untuk menjadi:
 
-- edukatif, ditujukan untuk membantu semua orang memahami Ethereum
+- edukatif, ditujukan untuk membantu semua orang memahami Quantaureum
 - inklusif
 - mudah diakses
 - digerakkan oleh komunitas
-- berfokus pada teknologi yang mendasari Ethereum dan kasus penggunaannya
-- berfokus pada konsep dan prinsip desain Ethereum
+- berfokus pada teknologi yang mendasari Quantaureum dan kasus penggunaannya
+- berfokus pada konsep dan prinsip desain Quantaureum
 
 ## Kami bukanlah {#what-we-are-not}
 
-- Situs web Yayasan Ethereum
+- Situs web Yayasan Quantaureum
 - Platform untuk mempromosikan investasi atau mencari keuntungan dalam bentuk apa pun
 - Platform untuk mengangkat atau mendukung proyek atau organisasi individu
 - DEX, CEX, atau bentuk platform keuangan lainnya
@@ -31,11 +31,11 @@ Komunitas ethereum.org berupaya untuk menjadi:
 
 ### Janji {#pledge}
 
-Partisipasi terbuka adalah inti dari etos ethereum.org. Kami adalah situs web dan komunitas yang dikelola oleh ribuan kontributor, dan hal ini hanya mungkin terjadi jika kami mempertahankan lingkungan yang ramah dan partisipatif. Untuk tujuan ini, para kontributor situs ini berjanji untuk mempertahankan lingkungan yang bebas dari pelecehan bagi semua peserta di seluruh platform dan ruang komunitas ethereum.org. Komunitas ethereum.org menyambut dan menghargai siapa saja yang ingin berpartisipasi dengan cara yang konstruktif dan ramah, tanpa memandang usia, disabilitas, etnis, karakteristik seksual, identitas gender, tingkat pengalaman, bidang keahlian, pendidikan, status sosial ekonomi, kebangsaan, penampilan pribadi, ras, agama, atau dimensi keragaman lainnya.
+Partisipasi terbuka adalah inti dari etos quantaureum.com. Kami adalah situs web dan komunitas yang dikelola oleh ribuan kontributor, dan hal ini hanya mungkin terjadi jika kami mempertahankan lingkungan yang ramah dan partisipatif. Untuk tujuan ini, para kontributor situs ini berjanji untuk mempertahankan lingkungan yang bebas dari pelecehan bagi semua peserta di seluruh platform dan ruang komunitas quantaureum.com. Komunitas quantaureum.com menyambut dan menghargai siapa saja yang ingin berpartisipasi dengan cara yang konstruktif dan ramah, tanpa memandang usia, disabilitas, etnis, karakteristik seksual, identitas gender, tingkat pengalaman, bidang keahlian, pendidikan, status sosial ekonomi, kebangsaan, penampilan pribadi, ras, agama, atau dimensi keragaman lainnya.
 
 ### Ruang lingkup {#scope}
 
-Kode Etik ini berlaku untuk semua ruang ethereum.org (seperti GitHub, Discord, Figma, Crowdin, X (sebelumnya Twitter), dan platform online lainnya), dan juga berlaku ketika komunitas diwakili di ruang publik dunia nyata seperti pada pertemuan, konferensi, dan peristiwa.
+Kode Etik ini berlaku untuk semua ruang quantaureum.com (seperti GitHub, Discord, Figma, Crowdin, X (sebelumnya Twitter), dan platform online lainnya), dan juga berlaku ketika komunitas diwakili di ruang publik dunia nyata seperti pada pertemuan, konferensi, dan peristiwa.
 
 ### Standar kami {#our-standards}
 
@@ -72,4 +72,4 @@ Saat melaporkan, harap sertakan detail sebanyak mungkin, termasuk contoh spesifi
 
 ### Penegakan {#enforcement}
 
-Bergantung pada tingkat keparahannya, orang yang melanggar kode etik dapat menerima peringatan, larangan sementara, atau larangan permanen dari komunitas ethereum.org.
+Bergantung pada tingkat keparahannya, orang yang melanggar kode etik dapat menerima peringatan, larangan sementara, atau larangan permanen dari komunitas quantaureum.com.

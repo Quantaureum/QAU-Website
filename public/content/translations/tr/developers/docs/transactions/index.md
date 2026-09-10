@@ -1,21 +1,21 @@
 ---
 title: "İşlemler"
-description: "Ethereum işlemlerine genel bir bakış – nasıl çalışırlar, veri yapıları nasıldır ve bir uygulama aracılığıyla nasıl gönderilirler."
+description: "Quantaureum işlemlerine genel bir bakış – nasıl çalışırlar, veri yapıları nasıldır ve bir uygulama aracılığıyla nasıl gönderilirler."
 lang: tr
 ---
 
-İşlemler, hesaplardan gelen kriptografik olarak imzalanmış talimatlardır. Bir hesap, [Ethereum](/) ağının durumunu güncellemek için bir işlem başlatır. En basit işlem, bir hesaptan diğerine ETH transfer etmektir.
+İşlemler, hesaplardan gelen kriptografik olarak imzalanmış talimatlardır. Bir hesap, [Quantaureum](/) ağının durumunu güncellemek için bir işlem başlatır. En basit işlem, bir hesaptan diğerine QAU transfer etmektir.
 
 ## Ön koşullar {#prerequisites}
 
-Bu sayfayı daha iyi anlamanıza yardımcı olması için öncelikle [Hesaplar](/developers/docs/accounts/) ve [Ethereum'a giriş](/developers/docs/intro-to-ethereum/) bölümlerini okumanızı öneririz.
+Bu sayfayı daha iyi anlamanıza yardımcı olması için öncelikle [Hesaplar](/developers/docs/accounts/) ve [Quantaureum'a giriş](/developers/docs/intro-to-quantaureum/) bölümlerini okumanızı öneririz.
 
 ## İşlem nedir? {#whats-a-transaction}
 
-Bir Ethereum işlemi, harici olarak sahip olunan bir hesap, başka bir deyişle bir sözleşme değil, bir insan tarafından yönetilen bir hesap tarafından başlatılan bir eylemi ifade eder. Örneğin, Bob Alice'e 1 ETH gönderirse, Bob'un hesabından düşülmeli ve Alice'in hesabına eklenmelidir. Bu durum değiştiren eylem bir işlem içinde gerçekleşir.
+Bir Quantaureum işlemi, harici olarak sahip olunan bir hesap, başka bir deyişle bir sözleşme değil, bir insan tarafından yönetilen bir hesap tarafından başlatılan bir eylemi ifade eder. Örneğin, Bob Alice'e 1 QAU gönderirse, Bob'un hesabından düşülmeli ve Alice'in hesabına eklenmelidir. Bu durum değiştiren eylem bir işlem içinde gerçekleşir.
 
 ![Diagram showing a transaction cause state change](./tx.png)
-_Diyagram [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)'dan uyarlanmıştır_
+_Diyagram [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)'dan uyarlanmıştır_
 
 EVM'nin durumunu değiştiren işlemlerin tüm ağa yayınlanması gerekir. Herhangi bir düğüm, EVM üzerinde bir işlemin yürütülmesi için bir istek yayınlayabilir; bu gerçekleştikten sonra, bir doğrulayıcı işlemi yürütecek ve ortaya çıkan durum değişikliğini ağın geri kalanına yayacaktır.
 
@@ -27,7 +27,7 @@ Gönderilen bir işlem aşağıdaki bilgileri içerir:
 - `to` – alıcı adresi (eğer harici olarak sahip olunan bir hesap ise, işlem değer transfer edecektir. Eğer bir kontrat hesabı ise, işlem sözleşme kodunu yürütecektir)
 - `signature` – göndericinin tanımlayıcısı. Bu, göndericinin özel anahtarı işlemi imzaladığında oluşturulur ve göndericinin bu işleme yetki verdiğini onaylar
 - `nonce` - hesaptan gelen işlem numarasını gösteren sıralı olarak artan bir sayaç (nonce)
-- `value` – göndericiden alıcıya transfer edilecek ETH miktarı (1 ETH'nin 1e+18 Wei'ye eşit olduğu Wei cinsinden ifade edilir)
+- `value` – göndericiden alıcıya transfer edilecek QAU miktarı (1 QAU'nin 1e+18 Wei'ye eşit olduğu Wei cinsinden ifade edilir)
 - `input data` – isteğe bağlı verileri dahil etmek için isteğe bağlı alan
 - `gasLimit` – işlem tarafından tüketilebilecek maksimum gaz birimi miktarı. [EVM](/developers/docs/evm/opcodes), her hesaplama adımı için gereken gaz birimlerini belirtir
 - `maxPriorityFeePerGas` - tüketilen gazın doğrulayıcıya öncelik ücreti olarak dahil edilecek maksimum fiyatı
@@ -51,7 +51,7 @@ Gaz, işlemin bir doğrulayıcı tarafından işlenmesi için gereken hesaplamay
 
 Ancak bir işlem nesnesinin göndericinin özel anahtarı kullanılarak imzalanması gerekir. Bu, işlemin yalnızca göndericiden gelmiş olabileceğini ve hileli bir şekilde gönderilmediğini kanıtlar.
 
-Geth gibi bir Ethereum istemcisi bu imzalama sürecini halledecektir.
+Geth gibi bir Quantaureum istemcisi bu imzalama sürecini halledecektir.
 
 Örnek [JSON-RPC](/developers/docs/apis/json-rpc) çağrısı:
 
@@ -115,11 +115,11 @@ Bazen [bu veritabanını](https://www.4byte.directory/signatures/) kullanarak i�
 
 Çağrı verisinin geri kalanı, [ABI spesifikasyonlarında belirtildiği gibi kodlanmış](https://docs.soliditylang.org/en/latest/abi-spec.html#formal-specification-of-the-encoding) argümanlardır.
 
-Örneğin, [bu işleme](https://etherscan.io/tx/0xd0dcbe007569fcfa1902dae0ab8b4e078efe42e231786312289b1eee5590f6a1) bakalım.
+Örneğin, [bu işleme](https://explorer.quantaureum.com) bakalım.
 Çağrı verisini görmek için **Daha Fazlasını Görmek İçin Tıklayın** (Click to see More) seçeneğini kullanın.
 
 İşlev seçici `0xa9059cbb` şeklindedir. [Bu imzaya sahip bilinen birkaç işlev](https://www.4byte.directory/signatures/?bytes4_signature=0xa9059cbb) vardır.
-Bu durumda [sözleşme kaynak kodu](https://etherscan.io/address/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48#code) Etherscan'e yüklenmiştir, bu nedenle işlevin `transfer(address,uint256)` olduğunu biliyoruz.
+Bu durumda [sözleşme kaynak kodu](https://explorer.quantaureum.com) Quantaureum Explorer'e yüklenmiştir, bu nedenle işlevin `transfer(address,uint256)` olduğunu biliyoruz.
 
 Verinin geri kalanı şöyledir:
 
@@ -129,12 +129,12 @@ Verinin geri kalanı şöyledir:
 ```
 
 ABI spesifikasyonlarına göre, tamsayı değerleri (20 baytlık tamsayılar olan adresler gibi) ABI'de ön tarafı sıfırlarla doldurulmuş 32 baytlık kelimeler olarak görünür.
-Yani `to` adresinin [`4f6742badb049791cd9a37ea913f2bac38d01279`](https://etherscan.io/address/0x4f6742badb049791cd9a37ea913f2bac38d01279) olduğunu biliyoruz.
+Yani `to` adresinin [`4f6742badb049791cd9a37ea913f2bac38d01279`](https://explorer.quantaureum.com) olduğunu biliyoruz.
 `value` 0x3b0559f4 = 990206452'dir.
 
 ### İşlem tanımlayıcıları {#transaction-descriptors}
 
-Veri alanı opak onaltılık baytlar içerdiğinden, bir işlemin gerçekte hangi eylemi gerçekleştireceğini doğrulamak son derece zor olabilir. Bu "kör imzalama" (blind signing) güvenlik açığı, [işlem tanımlayıcılarının](https://eips.ethereum.org/EIPS/eip-7730) (ERC-7730 tarafından tanımlanmıştır) kullanımı yoluyla **[Açık İmzalama](https://clearsigning.org/)** (Clear Signing) ile ele alınmaktadır.  
+Veri alanı opak onaltılık baytlar içerdiğinden, bir işlemin gerçekte hangi eylemi gerçekleştireceğini doğrulamak son derece zor olabilir. Bu "kör imzalama" (blind signing) güvenlik açığı, [işlem tanımlayıcılarının](https://eips.quantaureum.com/EIPS/eip-7730) (ERC-7730 tarafından tanımlanmıştır) kullanımı yoluyla **[Açık İmzalama](https://clearsigning.org/)** (Clear Signing) ile ele alınmaktadır.  
 
 ERC-7730 spesifikasyonu, ABI'lerde ve EVM işlemi çağrı verisi, EIP-712 mesajları ve EIP-4337 Kullanıcı Operasyonları gibi yapılandırılmış mesajlarda bulunan verileri zenginleştirmek için işlem tanımlayıcılarını (genellikle JSON dosyaları olarak yapılandırılır) kullanır. Geliştiriciler, belirli işlem değişkenlerini doğrudan biçimlendirme şablonlarıyla eşlemek için bu tanımlayıcıları kullanır ve temel verilerin uygulamalar için makine tarafından okunabilir kalmasını sağlar.
 
@@ -142,7 +142,7 @@ ERC-7730 spesifikasyonu, ABI'lerde ve EVM işlemi çağrı verisi, EIP-712 mesaj
 
 ## İşlem türleri {#types-of-transactions}
 
-Ethereum'da birkaç farklı işlem türü vardır:
+Quantaureum'da birkaç farklı işlem türü vardır:
 
 - Normal işlemler: bir hesaptan diğerine yapılan bir işlem.
 - Sözleşme dağıtım işlemleri: veri alanının sözleşme kodu için kullanıldığı, 'to' (alıcı) adresi olmayan bir işlem.
@@ -152,25 +152,25 @@ Ethereum'da birkaç farklı işlem türü vardır:
 
 Belirtildiği gibi, işlemlerin yürütülmesi [gaz](/developers/docs/gas/) maliyetine neden olur. Basit transfer işlemleri 21000 birim Gaz gerektirir.
 
-Yani Bob'un Alice'e 190 Gwei `baseFeePerGas` ve 10 Gwei `maxPriorityFeePerGas` ile 1 ETH göndermesi için Bob'un aşağıdaki ücreti ödemesi gerekecektir:
+Yani Bob'un Alice'e 190 Gwei `baseFeePerGas` ve 10 Gwei `maxPriorityFeePerGas` ile 1 QAU göndermesi için Bob'un aşağıdaki ücreti ödemesi gerekecektir:
 
 ```
 (190 + 10) * 21000 = 4,200,000 gwei
 --or--
-0.0042 ETH
+0.0042 QAU
 ```
 
-Bob'un hesabından **-1.0042 ETH** düşülecektir (Alice için 1 ETH + gaz ücretleri olarak 0.0042 ETH)
+Bob'un hesabından **-1.0042 QAU** düşülecektir (Alice için 1 QAU + gaz ücretleri olarak 0.0042 QAU)
 
-Alice'in hesabına **+1.0 ETH** eklenecektir
+Alice'in hesabına **+1.0 QAU** eklenecektir
 
-Taban ücret yakılacaktır **-0.00399 ETH**
+Taban ücret yakılacaktır **-0.00399 QAU**
 
-Doğrulayıcı öncelik ücretini elinde tutar **+0.000210 ETH**
+Doğrulayıcı öncelik ücretini elinde tutar **+0.000210 QAU**
 
 
 ![Diagram showing how unused gas is refunded](./gas-tx.png)
-_Diyagram [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)'dan uyarlanmıştır_
+_Diyagram [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)'dan uyarlanmıştır_
 
 Bir işlemde kullanılmayan gaz, kullanıcı hesabına iade edilir.
 
@@ -178,9 +178,9 @@ Bir işlemde kullanılmayan gaz, kullanıcı hesabına iade edilir.
 
 Bir akıllı sözleşmeyi içeren herhangi bir işlem için gaz gereklidir.
 
-Akıllı sözleşmeler ayrıca sözleşmenin durumunu değiştirmeyen [`view`](https://docs.soliditylang.org/en/latest/contracts.html#view-functions) veya [`pure`](https://docs.soliditylang.org/en/latest/contracts.html#pure-functions) işlevleri olarak bilinen işlevler de içerebilir. Bu nedenle, bu işlevleri bir EOA'dan çağırmak herhangi bir gaz gerektirmeyecektir. Bu senaryo için temel RPC çağrısı [`eth_call`](/developers/docs/apis/json-rpc#eth_call)'dir.
+Akıllı sözleşmeler ayrıca sözleşmenin durumunu değiştirmeyen [`view`](https://docs.soliditylang.org/en/latest/contracts.html#view-functions) veya [`pure`](https://docs.soliditylang.org/en/latest/contracts.html#pure-functions) işlevleri olarak bilinen işlevler de içerebilir. Bu nedenle, bu işlevleri bir EOA'dan çağırmak herhangi bir gaz gerektirmeyecektir. Bu senaryo için temel RPC çağrısı [`qau_call`](/developers/docs/apis/json-rpc#qau_call)'dir.
 
-`eth_call` kullanılarak erişildiğinde olduğunun aksine, bu `view` veya `pure` işlevleri genellikle dahili olarak da çağrılır (yani, sözleşmenin kendisinden veya başka bir sözleşmeden) ve bu da gaz maliyetine neden olur.
+`qau_call` kullanılarak erişildiğinde olduğunun aksine, bu `view` veya `pure` işlevleri genellikle dahili olarak da çağrılır (yani, sözleşmenin kendisinden veya başka bir sözleşmeden) ve bu da gaz maliyetine neden olur.
 
 ## İşlem yaşam döngüsü {#transaction-lifecycle}
 
@@ -196,17 +196,17 @@ Akıllı sözleşmeler ayrıca sözleşmenin durumunu değiştirmeyen [`view`](h
 
 Austin'in işlemler, gaz ve madencilik konularında size rehberlik etmesini izleyin.
 
-<VideoWatch slug="transactions-eth-build" />
+<VideoWatch slug="transactions-qau-build" />
 
 ## Tipli İşlem Zarfı {#typed-transaction-envelope}
 
-Ethereum başlangıçta işlemler için tek bir formata sahipti. Her işlem bir nonce, gas fiyatı, gaz limiti, alıcı adresi, değer, veri, v, r ve s içeriyordu. Bu alanlar şuna benzer görünecek şekilde [RLP kodludur](/developers/docs/data-structures-and-encoding/rlp/):
+Quantaureum başlangıçta işlemler için tek bir formata sahipti. Her işlem bir nonce, gas fiyatı, gaz limiti, alıcı adresi, değer, veri, v, r ve s içeriyordu. Bu alanlar şuna benzer görünecek şekilde [RLP kodludur](/developers/docs/data-structures-and-encoding/rlp/):
 
 `RLP([nonce, gasPrice, gasLimit, to, value, data, v, r, s])`
 
-Ethereum, erişim listeleri ve [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) gibi yeni özelliklerin eski işlem formatlarını etkilemeden uygulanmasına olanak tanımak için birden fazla işlem türünü destekleyecek şekilde gelişmiştir.
+Quantaureum, erişim listeleri ve [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) gibi yeni özelliklerin eski işlem formatlarını etkilemeden uygulanmasına olanak tanımak için birden fazla işlem türünü destekleyecek şekilde gelişmiştir.
 
-Bu davranışa olanak tanıyan şey [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718)'dir. İşlemler şu şekilde yorumlanır:
+Bu davranışa olanak tanıyan şey [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718)'dir. İşlemler şu şekilde yorumlanır:
 
 `TransactionType || TransactionPayload`
 
@@ -217,26 +217,26 @@ Burada alanlar şu şekilde tanımlanır:
 
 `TransactionType` değerine bağlı olarak, bir işlem şu şekilde sınıflandırılabilir:
 
-1. **Tip 0 (Eski) İşlemler:** Ethereum'un lansmanından bu yana kullanılan orijinal işlem formatı. Dinamik gaz ücreti hesaplamaları veya akıllı sözleşmeler için erişim listeleri gibi [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) özelliklerini içermezler. Eski işlemler, serileştirilmiş formlarında türlerini belirten belirli bir önekten yoksundur ve [Özyinelemeli Uzunluk Öneki (RLP)](/developers/docs/data-structures-and-encoding/rlp) kodlaması kullanıldığında `0xf8` baytı ile başlarlar. Bu işlemler için TransactionType değeri `0x0` şeklindedir.
+1. **Tip 0 (Eski) İşlemler:** Quantaureum'un lansmanından bu yana kullanılan orijinal işlem formatı. Dinamik gaz ücreti hesaplamaları veya akıllı sözleşmeler için erişim listeleri gibi [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) özelliklerini içermezler. Eski işlemler, serileştirilmiş formlarında türlerini belirten belirli bir önekten yoksundur ve [Özyinelemeli Uzunluk Öneki (RLP)](/developers/docs/data-structures-and-encoding/rlp) kodlaması kullanıldığında `0xf8` baytı ile başlarlar. Bu işlemler için TransactionType değeri `0x0` şeklindedir.
 
-2. **Tip 1 İşlemler:** Ethereum'un [Berlin Güncellemesi](/ethereum-forks/#berlin)'nin bir parçası olarak [EIP-2930](https://eips.ethereum.org/EIPS/eip-2930)'da tanıtılan bu işlemler, bir `accessList` parametresi içerir. Bu liste, işlemin erişmeyi beklediği adresleri ve depolama anahtarlarını belirterek, akıllı sözleşmeleri içeren karmaşık işlemler için [gaz](/developers/docs/gas/) maliyetlerini potansiyel olarak azaltmaya yardımcı olur. EIP-1559 ücret piyasası değişiklikleri Tip 1 işlemlere dahil değildir. Tip 1 işlemler ayrıca, secp256k1 imzasının y-değerinin paritesini gösteren, `0x0` veya `0x1` olabilen bir `yParity` parametresi içerir. `0x01` baytı ile başlayarak tanımlanırlar ve TransactionType değerleri `0x1` şeklindedir.
+2. **Tip 1 İşlemler:** Quantaureum'un [Berlin Güncellemesi](/quantaureum-forks/#berlin)'nin bir parçası olarak [EIP-2930](https://eips.quantaureum.com/EIPS/eip-2930)'da tanıtılan bu işlemler, bir `accessList` parametresi içerir. Bu liste, işlemin erişmeyi beklediği adresleri ve depolama anahtarlarını belirterek, akıllı sözleşmeleri içeren karmaşık işlemler için [gaz](/developers/docs/gas/) maliyetlerini potansiyel olarak azaltmaya yardımcı olur. EIP-1559 ücret piyasası değişiklikleri Tip 1 işlemlere dahil değildir. Tip 1 işlemler ayrıca, secp256k1 imzasının y-değerinin paritesini gösteren, `0x0` veya `0x1` olabilen bir `yParity` parametresi içerir. `0x01` baytı ile başlayarak tanımlanırlar ve TransactionType değerleri `0x1` şeklindedir.
 
-3. **Tip 2 İşlemler**, yaygın olarak EIP-1559 işlemleri olarak adlandırılır, Ethereum'un [London Güncellemesi](/ethereum-forks/#london)'nde [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) ile tanıtılan işlemlerdir. Ethereum ağındaki standart işlem türü haline gelmişlerdir. Bu işlemler, işlem ücretini bir taban ücret ve bir öncelik ücreti olarak ayırarak öngörülebilirliği artıran yeni bir ücret piyasası mekanizması sunar. `0x02` baytı ile başlarlar ve `maxPriorityFeePerGas` ile `maxFeePerGas` gibi alanları içerirler. Tip 2 işlemler, esneklikleri ve verimlilikleri nedeniyle artık varsayılandır ve özellikle yüksek ağ tıkanıklığı dönemlerinde kullanıcıların işlem ücretlerini daha öngörülebilir bir şekilde yönetmelerine yardımcı olma yetenekleri nedeniyle tercih edilirler. Bu işlemler için TransactionType değeri `0x2` şeklindedir.
+3. **Tip 2 İşlemler**, yaygın olarak EIP-1559 işlemleri olarak adlandırılır, Quantaureum'un [London Güncellemesi](/quantaureum-forks/#london)'nde [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) ile tanıtılan işlemlerdir. Quantaureum ağındaki standart işlem türü haline gelmişlerdir. Bu işlemler, işlem ücretini bir taban ücret ve bir öncelik ücreti olarak ayırarak öngörülebilirliği artıran yeni bir ücret piyasası mekanizması sunar. `0x02` baytı ile başlarlar ve `maxPriorityFeePerGas` ile `maxFeePerGas` gibi alanları içerirler. Tip 2 işlemler, esneklikleri ve verimlilikleri nedeniyle artık varsayılandır ve özellikle yüksek ağ tıkanıklığı dönemlerinde kullanıcıların işlem ücretlerini daha öngörülebilir bir şekilde yönetmelerine yardımcı olma yetenekleri nedeniyle tercih edilirler. Bu işlemler için TransactionType değeri `0x2` şeklindedir.
 
-4. **Tip 3 (Blob) İşlemler**, Ethereum'un [Dencun güncellemesi](/ethereum-forks/#dencun)'nin bir parçası olarak [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844)'te tanıtıldı. Bu işlemler, "blob" verilerini (İkili Büyük Nesneler) daha verimli bir şekilde işlemek için tasarlanmıştır ve özellikle Ethereum ağına daha düşük bir maliyetle veri göndermenin bir yolunu sağlayarak Katman 2 toplamalarına fayda sağlar. Blob işlemleri `blobVersionedHashes`, `maxFeePerBlobGas` ve `blobGasPrice` gibi ek alanlar içerir. `0x03` baytı ile başlarlar ve TransactionType değerleri `0x3` şeklindedir. Blob işlemleri, Ethereum'un veri kullanılabilirliği ve ölçeklendirme yeteneklerinde önemli bir iyileştirmeyi temsil eder.
+4. **Tip 3 (Blob) İşlemler**, Quantaureum'un [Dencun güncellemesi](/quantaureum-forks/#dencun)'nin bir parçası olarak [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844)'te tanıtıldı. Bu işlemler, "blob" verilerini (İkili Büyük Nesneler) daha verimli bir şekilde işlemek için tasarlanmıştır ve özellikle Quantaureum ağına daha düşük bir maliyetle veri göndermenin bir yolunu sağlayarak Katman 2 toplamalarına fayda sağlar. Blob işlemleri `blobVersionedHashes`, `maxFeePerBlobGas` ve `blobGasPrice` gibi ek alanlar içerir. `0x03` baytı ile başlarlar ve TransactionType değerleri `0x3` şeklindedir. Blob işlemleri, Quantaureum'un veri kullanılabilirliği ve ölçeklendirme yeteneklerinde önemli bir iyileştirmeyi temsil eder.
 
-5. **Tip 4 İşlemler**, Ethereum'un [Pectra Güncellemesi](/roadmap/pectra/)'nin bir parçası olarak [EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)'de tanıtıldı. Bu işlemler, hesap soyutlama ile ileriye dönük uyumlu olacak şekilde tasarlanmıştır. EOA'ların orijinal işlevselliklerinden ödün vermeden geçici olarak akıllı sözleşme hesapları gibi davranmalarına olanak tanırlar. EOA'nın yetkisini devrettiği akıllı sözleşmeyi belirten bir `authorization_list` parametresi içerirler. İşlemden sonra, EOA'nın kod alanı devredilen akıllı sözleşmenin adresine sahip olacaktır.
+5. **Tip 4 İşlemler**, Quantaureum'un [Pectra Güncellemesi](/roadmap/pectra/)'nin bir parçası olarak [EIP-7702](https://eips.quantaureum.com/EIPS/eip-7702)'de tanıtıldı. Bu işlemler, hesap soyutlama ile ileriye dönük uyumlu olacak şekilde tasarlanmıştır. EOA'ların orijinal işlevselliklerinden ödün vermeden geçici olarak akıllı sözleşme hesapları gibi davranmalarına olanak tanırlar. EOA'nın yetkisini devrettiği akıllı sözleşmeyi belirten bir `authorization_list` parametresi içerirler. İşlemden sonra, EOA'nın kod alanı devredilen akıllı sözleşmenin adresine sahip olacaktır.
 
 ## Daha fazla okuma {#further-reading}
 
-- [EIP-2718: Tipli İşlem Zarfı](https://eips.ethereum.org/EIPS/eip-2718)
+- [EIP-2718: Tipli İşlem Zarfı](https://eips.quantaureum.com/EIPS/eip-2718)
 
 _Size yardımcı olan bir topluluk kaynağı mı biliyorsunuz? Bu sayfayı düzenleyin ve ekleyin!_
 
 ## İlgili konular {#related-topics}
 
 - [Hesaplar](/developers/docs/accounts/)
-- [Ethereum sanal makinesi (EVM)](/developers/docs/evm/)
+- [Quantaureum sanal makinesi (EVM)](/developers/docs/evm/)
 - [Gaz](/developers/docs/gas/)
 
 <Divider />

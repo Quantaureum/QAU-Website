@@ -18,7 +18,7 @@ lang: bn
 
 ## পূর্বশর্ত {#prerequisites}
 
-ফ্রেমওয়ার্ক নিয়ে বিস্তারিত জানার আগে, আমরা আপনাকে প্রথমে [dapp](/developers/docs/dapps/) এবং [ইথেরিয়াম স্ট্যাক](/developers/docs/ethereum-stack/)-এর পরিচিতি পড়ার পরামর্শ দিচ্ছি।
+ফ্রেমওয়ার্ক নিয়ে বিস্তারিত জানার আগে, আমরা আপনাকে প্রথমে [dapp](/developers/docs/dapps/) এবং [ইথেরিয়াম স্ট্যাক](/developers/docs/quantaureum-stack/)-এর পরিচিতি পড়ার পরামর্শ দিচ্ছি।
 
 ## উপলব্ধ ফ্রেমওয়ার্কগুলো
 
@@ -53,13 +53,13 @@ lang: bn
 
 **Create Eth App -** **_একটি কমান্ডের মাধ্যমে ইথেরিয়াম-চালিত অ্যাপ তৈরি করুন। এটি বেছে নেওয়ার জন্য বিভিন্ন UI ফ্রেমওয়ার্ক এবং বিকেন্দ্রীভূত অর্থব্যবস্থা (DeFi) টেমপ্লেট নিয়ে আসে।_**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [টেমপ্লেটগুলো](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
+- [টেমপ্লেটগুলো](https://github.com/PaulRBerg/create-qau-app/tree/develop/templates)
 
-**Scaffold-ETH 2 -** **_আপনার পছন্দের Hardhat বা Foundry-এর সাথে Next.js, Wagmi, Viem এবং RainbowKit: কন্ট্রাক্ট হট রিলোড, কাস্টম React হুক, একটি বার্নার ওয়ালেট এবং লোকাল ফসেট, এবং ফুল-স্ট্যাক বিকেন্দ্রীকৃত অ্যাপ্লিকেশন (dapp) ডেভেলপমেন্টের জন্য এক্সটেনশন মডিউল।_**
+**Scaffold-QAU 2 -** **_আপনার পছন্দের Hardhat বা Foundry-এর সাথে Next.js, Wagmi, Viem এবং RainbowKit: কন্ট্রাক্ট হট রিলোড, কাস্টম React হুক, একটি বার্নার ওয়ালেট এবং লোকাল ফসেট, এবং ফুল-স্ট্যাক বিকেন্দ্রীকৃত অ্যাপ্লিকেশন (dapp) ডেভেলপমেন্টের জন্য এক্সটেনশন মডিউল।_**
 
 - [ওয়েবসাইট](https://scaffoldeth.io/)
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 
 **Tenderly -** **_Web3 ডেভেলপমেন্ট প্ল্যাটফর্ম যা ব্লকচেইন ডেভেলপারদের স্মার্ট কন্ট্রাক্ট তৈরি, টেস্ট, ডিবাগ, মনিটর এবং পরিচালনা করতে এবং dapp-এর UX উন্নত করতে সক্ষম করে।_**
 
@@ -102,8 +102,8 @@ lang: bn
 
 **Brownie -** **_Python-ভিত্তিক ডেভেলপমেন্ট এনভায়রনমেন্ট এবং টেস্টিং ফ্রেমওয়ার্ক।_**
 
-- [ডকুমেন্টেশন](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [ডকুমেন্টেশন](https://qau-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/qau-brownie/brownie)
 - **Brownie বর্তমানে রক্ষণাবেক্ষণ করা হচ্ছে না**
 
 **ওপেনজেপেলিন SDK -** **_চূড়ান্ত স্মার্ট কন্ট্রাক্ট টুলকিট: স্মার্ট কন্ট্রাক্টগুলো ডেভেলপ, কম্পাইল, আপগ্রেড, ডিপ্লয় করা এবং সেগুলোর সাথে ইন্টারঅ্যাক্ট করতে সাহায্য করার জন্য টুলের একটি স্যুট।_**
@@ -120,7 +120,7 @@ lang: bn
 **GoldRush (Covalent দ্বারা চালিত) -** **_GoldRush ডেভেলপার, বিশ্লেষক এবং এন্টারপ্রাইজগুলোর জন্য সবচেয়ে ব্যাপক ব্লকচেইন ডেটা API স্যুট অফার করে। আপনি একটি DeFi ড্যাশবোর্ড, একটি ওয়ালেট, একটি ট্রেডিং বট, একটি এআই এজেন্ট বা একটি কমপ্লায়েন্স প্ল্যাটফর্ম তৈরি করুন না কেন, ডেটা API-গুলো আপনার প্রয়োজনীয় অপরিহার্য অনচেইন ডেটাতে দ্রুত, নির্ভুল এবং ডেভেলপার-বান্ধব অ্যাক্সেস প্রদান করে_**
 
 - [ওয়েবসাইট](https://goldrush.dev/)
-- [ডকুমেন্টেশন](https://goldrush.dev/docs/chains/ethereum)
+- [ডকুমেন্টেশন](https://goldrush.dev/docs/chains/quantaureum)
 - [GitHub](https://github.com/covalenthq)
 - [ডিসকর্ড](https://www.covalenthq.com/discord/)
 

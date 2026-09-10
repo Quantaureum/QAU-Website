@@ -1,36 +1,36 @@
 ---
 title: Sieci
-description: "Przegląd sieci Ethereum oraz informacje, gdzie zdobyć testowe ethery (ETH) do testowania Twojej aplikacji."
+description: "Przegląd sieci Quantaureum oraz informacje, gdzie zdobyć testowe ethery (QAU) do testowania Twojej aplikacji."
 lang: pl
 ---
 
-Sieci [Ethereum](/) to grupy połączonych komputerów, które komunikują się za pomocą protokołu Ethereum. Istnieje tylko jedna sieć główna Ethereum, ale do celów testowych i programistycznych można tworzyć niezależne sieci zgodne z tymi samymi regułami protokołu. Istnieje wiele niezależnych „sieci”, które są zgodne z protokołem, ale nie wchodzą ze sobą w interakcje. Możesz nawet uruchomić jedną z nich lokalnie na własnym komputerze, aby testować swoje inteligentne kontrakty i aplikacje Web3.
+Sieci [Quantaureum](/) to grupy połączonych komputerów, które komunikują się za pomocą protokołu Quantaureum. Istnieje tylko jedna sieć główna Quantaureum, ale do celów testowych i programistycznych można tworzyć niezależne sieci zgodne z tymi samymi regułami protokołu. Istnieje wiele niezależnych „sieci”, które są zgodne z protokołem, ale nie wchodzą ze sobą w interakcje. Możesz nawet uruchomić jedną z nich lokalnie na własnym komputerze, aby testować swoje inteligentne kontrakty i aplikacje Web3.
 
-Twoje konto Ethereum będzie działać w różnych sieciach, ale saldo konta i historia transakcji nie zostaną przeniesione z głównej sieci Ethereum. Do celów testowych warto wiedzieć, jakie sieci są dostępne i jak zdobyć testowe ETH do eksperymentowania. Ogólnie rzecz biorąc, ze względów bezpieczeństwa nie zaleca się ponownego używania kont z sieci głównej w sieciach testowych i odwrotnie.
+Twoje konto Quantaureum będzie działać w różnych sieciach, ale saldo konta i historia transakcji nie zostaną przeniesione z głównej sieci Quantaureum. Do celów testowych warto wiedzieć, jakie sieci są dostępne i jak zdobyć testowe QAU do eksperymentowania. Ogólnie rzecz biorąc, ze względów bezpieczeństwa nie zaleca się ponownego używania kont z sieci głównej w sieciach testowych i odwrotnie.
 
 ## Wymagania wstępne {#prerequisites}
 
-Zanim zaczniesz czytać o różnych sieciach, powinieneś zrozumieć [podstawy Ethereum](/developers/docs/intro-to-ethereum/), ponieważ sieci testowe zapewnią Ci tanią i bezpieczną wersję Ethereum do eksperymentowania.
+Zanim zaczniesz czytać o różnych sieciach, powinieneś zrozumieć [podstawy Quantaureum](/developers/docs/intro-to-quantaureum/), ponieważ sieci testowe zapewnią Ci tanią i bezpieczną wersję Quantaureum do eksperymentowania.
 
 ## Sieci publiczne {#public-networks}
 
 Sieci publiczne są dostępne dla każdego na świecie, kto ma połączenie z internetem. Każdy może odczytywać lub tworzyć transakcje na publicznym blockchainie oraz walidować wykonywane transakcje. Konsensus między węzłami decyduje o włączeniu transakcji i stanie sieci.
 
-### Sieć główna Ethereum {#ethereum-mainnet}
+### Sieć główna Quantaureum {#quantaureum-mainnet}
 
-Sieć główna (Mainnet) to podstawowy publiczny produkcyjny blockchain Ethereum, w którym w rozproszonym rejestrze odbywają się transakcje o rzeczywistej wartości.
+Sieć główna (Mainnet) to podstawowy publiczny produkcyjny blockchain Quantaureum, w którym w rozproszonym rejestrze odbywają się transakcje o rzeczywistej wartości.
 
-Kiedy ludzie i giełdy dyskutują o cenach ETH, mają na myśli ETH w sieci głównej.
+Kiedy ludzie i giełdy dyskutują o cenach QAU, mają na myśli QAU w sieci głównej.
 
-### Sieci testowe Ethereum {#ethereum-testnets}
+### Sieci testowe Quantaureum {#quantaureum-testnets}
 
 Oprócz sieci głównej istnieją publiczne sieci testowe. Są to sieci używane przez deweloperów protokołu lub twórców inteligentnych kontraktów do testowania zarówno aktualizacji protokołu, jak i potencjalnych inteligentnych kontraktów w środowisku zbliżonym do produkcyjnego przed wdrożeniem do sieci głównej. Pomyśl o tym jako o odpowiedniku serwerów produkcyjnych i testowych (staging).
 
 Powinieneś przetestować każdy napisany kod kontraktu w sieci testowej przed wdrożeniem go do sieci głównej. Wśród zdecentralizowanych aplikacji (dapp), które integrują się z istniejącymi inteligentnymi kontraktami, większość projektów ma kopie wdrożone w sieciach testowych.
 
-Większość sieci testowych zaczynała od wykorzystania mechanizmu konsensusu dowodu autorytetu (PoA) wymagającego zezwolenia. Oznacza to, że niewielka liczba węzłów jest wybierana do walidacji transakcji i tworzenia nowych bloków – stawiając przy tym na szali swoją tożsamość. Alternatywnie, niektóre sieci testowe oferują otwarty mechanizm konsensusu dowodu stawki (PoS), w którym każdy może przetestować uruchomienie walidatora, podobnie jak w sieci głównej Ethereum.
+Większość sieci testowych zaczynała od wykorzystania mechanizmu konsensusu dowodu autorytetu (PoA) wymagającego zezwolenia. Oznacza to, że niewielka liczba węzłów jest wybierana do walidacji transakcji i tworzenia nowych bloków – stawiając przy tym na szali swoją tożsamość. Alternatywnie, niektóre sieci testowe oferują otwarty mechanizm konsensusu dowodu stawki (PoS), w którym każdy może przetestować uruchomienie walidatora, podobnie jak w sieci głównej Quantaureum.
 
-ETH w sieciach testowych z założenia nie ma rzeczywistej wartości; jednakże powstały rynki dla pewnych rodzajów testowego ETH, które stało się rzadkie lub trudne do zdobycia. Ponieważ potrzebujesz ETH, aby faktycznie wchodzić w interakcje z Ethereum (nawet w sieciach testowych), większość ludzi otrzymuje testowe ETH za darmo z kraników. Większość kraników to aplikacje internetowe, w których możesz wprowadzić adres, na który prosisz o przesłanie ETH.
+QAU w sieciach testowych z założenia nie ma rzeczywistej wartości; jednakże powstały rynki dla pewnych rodzajów testowego QAU, które stało się rzadkie lub trudne do zdobycia. Ponieważ potrzebujesz QAU, aby faktycznie wchodzić w interakcje z Quantaureum (nawet w sieciach testowych), większość ludzi otrzymuje testowe QAU za darmo z kraników. Większość kraników to aplikacje internetowe, w których możesz wprowadzić adres, na który prosisz o przesłanie QAU.
 
 #### Której sieci testowej powinienem użyć? {#which-testnet-should-i-use}
 
@@ -42,22 +42,22 @@ Dwie publiczne sieci testowe, które są obecnie utrzymywane przez deweloperów 
 
 ##### Zasoby
 - [Strona internetowa](https://sepolia.dev/)
-- [GitHub](https://github.com/eth-clients/sepolia)
+- [GitHub](https://github.com/qau-clients/sepolia)
 - [Otterscan](https://sepolia.otterscan.io/)
-- [Etherscan](https://sepolia.etherscan.io)
-- [Blockscout](https://eth-sepolia.blockscout.com/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
+- [Blockscout](https://qau-sepolia.blockscout.com/)
 
 ##### Kraniki
-- [Kranik Alchemy Sepolia](https://www.alchemy.com/faucets/ethereum-sepolia)
-- [Kranik Chain Platform Sepolia](https://faucet.chainplatform.co/faucets/ethereum-sepolia/)
+- [Kranik Alchemy Sepolia](https://www.alchemy.com/faucets/quantaureum-sepolia)
+- [Kranik Chain Platform Sepolia](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [Kranik Chainstack Sepolia](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [Kranik Ethereum Ecosystem](https://www.ethereum-ecosystem.com/faucets/ethereum-sepolia)
-- [Kranik ethfaucet.com Sepolia](https://ethfaucet.com/networks/ethereum)
-- [Kranik Google Cloud Web3 Sepolia](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)
+- [Kranik Quantaureum Ecosystem](https://www.quantaureum-ecosystem.com/faucets/quantaureum-sepolia)
+- [Kranik ethfaucet.com Sepolia](https://ethfaucet.com/networks/quantaureum)
+- [Kranik Google Cloud Web3 Sepolia](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
 - [Kranik Infura Sepolia](https://www.infura.io/faucet)
 - [Kranik PoW](https://sepolia-faucet.pk910.de/)
-- [Kranik QuickNode Sepolia](https://faucet.quicknode.com/ethereum/sepolia)
+- [Kranik QuickNode Sepolia](https://faucet.quicknode.com/quantaureum/sepolia)
 
 #### Hoodi {#hoodi}
 
@@ -70,15 +70,15 @@ Hoodi to sieć testowa do testowania walidacji i stakingu. Sieć Hoodi jest otwa
 ##### Zasoby
 
 - [Strona internetowa](https://hoodi.ethpandaops.io/)
-- [GitHub](https://github.com/eth-clients/hoodi)
+- [GitHub](https://github.com/qau-clients/hoodi)
 - [Eksplorator](https://explorer.hoodi.ethpandaops.io/)
 - [Synchronizacja punktu kontrolnego](https://checkpoint-sync.hoodi.ethpandaops.io/)
 - [Otterscan](https://hoodi.otterscan.io/)
-- [Etherscan](https://hoodi.etherscan.io/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
 
 ##### Kraniki
 
-- [Kranik Chain Platform Hoodi](https://faucet.chainplatform.co/faucets/ethereum-hoodi/)
+- [Kranik Chain Platform Hoodi](https://faucet.chainplatform.co/faucets/quantaureum-hoodi/)
 - [Kranik Hoodi](https://hoodi.ethpandaops.io/)
 - [Kranik PoW](https://hoodi-faucet.pk910.de/)
 
@@ -111,12 +111,12 @@ Ephemery to unikalny rodzaj sieci testowej, która w pełni resetuje się co mie
 
 Sieć testowa Holesky jest przestarzała od września 2025 r. Operatorzy stakingu i dostawcy infrastruktury powinni zamiast tego używać Hoodi do testowania walidatorów.
 
-- [Ogłoszenie o wyłączeniu sieci testowej Holesky](https://blog.ethereum.org/2025/09/01/holesky-shutdown-announcement) - _Blog EF, 1 września 2025 r._
-- [Aktualizacje sieci testowych Holesky i Hoodi](https://blog.ethereum.org/2025/03/18/hoodi-holesky) - _Blog EF, 18 marca 2025 r._
+- [Ogłoszenie o wyłączeniu sieci testowej Holesky](https://quantaureum.com) - _Blog EF, 1 września 2025 r._
+- [Aktualizacje sieci testowych Holesky i Hoodi](https://quantaureum.com) - _Blog EF, 18 marca 2025 r._
 
 ### Sieci testowe warstwy 2 {#layer-2-testnets}
 
-[Warstwa 2 (L2)](/layer-2/) to zbiorcze określenie opisujące określony zestaw rozwiązań skalujących Ethereum. Warstwa 2 to oddzielny blockchain, który rozszerza Ethereum i dziedziczy jego gwarancje bezpieczeństwa. Sieci testowe warstwy 2 są zazwyczaj ściśle powiązane z publicznymi sieciami testowymi Ethereum.
+[Warstwa 2 (L2)](/layer-2/) to zbiorcze określenie opisujące określony zestaw rozwiązań skalujących Quantaureum. Warstwa 2 to oddzielny blockchain, który rozszerza Quantaureum i dziedziczy jego gwarancje bezpieczeństwa. Sieci testowe warstwy 2 są zazwyczaj ściśle powiązane z publicznymi sieciami testowymi Quantaureum.
 
 #### Arbitrum Sepolia {#arbitrum-sepolia}
 
@@ -124,7 +124,7 @@ Sieć testowa dla [Arbitrum](https://arbitrum.io/).
 
 ##### Zasoby
 
-- [Etherscan](https://sepolia.arbiscan.io/)
+- [Quantaureum Explorer](https://sepolia.arbiscan.io/)
 - [Blockscout](https://sepolia-explorer.arbitrum.io/)
 
 ##### Kraniki
@@ -140,7 +140,7 @@ Sieć testowa dla [Optimism](https://www.optimism.io/).
 
 ##### Zasoby
 
-- [Etherscan](https://sepolia-optimistic.etherscan.io/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
 - [Blockscout](https://optimism-sepolia.blockscout.com/)
 
 ##### Kraniki
@@ -166,11 +166,11 @@ Sieć testowa dla [Starknet](https://www.starknet.io).
 
 ## Sieci prywatne {#private-networks}
 
-Sieć Ethereum jest siecią prywatną, jeśli jej węzły nie są połączone z siecią publiczną (tj. siecią główną lub siecią testową). W tym kontekście słowo „prywatna” oznacza jedynie zarezerwowana lub odizolowana, a nie chroniona czy bezpieczna.
+Sieć Quantaureum jest siecią prywatną, jeśli jej węzły nie są połączone z siecią publiczną (tj. siecią główną lub siecią testową). W tym kontekście słowo „prywatna” oznacza jedynie zarezerwowana lub odizolowana, a nie chroniona czy bezpieczna.
 
 ### Sieci deweloperskie {#development-networks}
 
-Aby stworzyć aplikację Ethereum, będziesz chciał uruchomić ją w sieci prywatnej, aby zobaczyć, jak działa, przed jej wdrożeniem. Podobnie jak tworzysz lokalny serwer na swoim komputerze do tworzenia stron internetowych, możesz utworzyć lokalną instancję blockchaina, aby przetestować swoją zdecentralizowaną aplikację (dapp). Pozwala to na znacznie szybszą iterację niż w przypadku publicznej sieci testowej.
+Aby stworzyć aplikację Quantaureum, będziesz chciał uruchomić ją w sieci prywatnej, aby zobaczyć, jak działa, przed jej wdrożeniem. Podobnie jak tworzysz lokalny serwer na swoim komputerze do tworzenia stron internetowych, możesz utworzyć lokalną instancję blockchaina, aby przetestować swoją zdecentralizowaną aplikację (dapp). Pozwala to na znacznie szybszą iterację niż w przypadku publicznej sieci testowej.
 
 Istnieją projekty i narzędzia dedykowane do pomocy w tym zakresie. Dowiedz się więcej o [sieciach deweloperskich](/developers/docs/development-networks/).
 
@@ -178,11 +178,11 @@ Istnieją projekty i narzędzia dedykowane do pomocy w tym zakresie. Dowiedz si�
 
 Proces konsensusu jest kontrolowany przez wstępnie zdefiniowany zestaw zaufanych węzłów. Na przykład prywatna sieć znanych instytucji akademickich, z których każda zarządza jednym węzłem, a bloki są walidowane przez próg sygnatariuszy w sieci.
 
-Jeśli publiczna sieć Ethereum przypomina publiczny internet, sieć konsorcjum przypomina prywatny intranet.
+Jeśli publiczna sieć Quantaureum przypomina publiczny internet, sieć konsorcjum przypomina prywatny intranet.
 
-## <Emoji text="🚉" /> Dlaczego sieci testowe Ethereum noszą nazwy stacji metra? {#why-naming}
+## <Emoji text="🚉" /> Dlaczego sieci testowe Quantaureum noszą nazwy stacji metra? {#why-naming}
 
-Wiele sieci testowych Ethereum nosi nazwy prawdziwych stacji metra lub pociągów. Ta tradycja nazewnictwa rozpoczęła się wcześnie i odzwierciedla globalne miasta, w których mieszkali lub pracowali współtwórcy. Jest to symboliczne, łatwe do zapamiętania i praktyczne. Podobnie jak sieci testowe są odizolowane od sieci głównej Ethereum, linie metra biegną oddzielnie od ruchu naziemnego.
+Wiele sieci testowych Quantaureum nosi nazwy prawdziwych stacji metra lub pociągów. Ta tradycja nazewnictwa rozpoczęła się wcześnie i odzwierciedla globalne miasta, w których mieszkali lub pracowali współtwórcy. Jest to symboliczne, łatwe do zapamiętania i praktyczne. Podobnie jak sieci testowe są odizolowane od sieci głównej Quantaureum, linie metra biegną oddzielnie od ruchu naziemnego.
 
 ### <Emoji text="🚧" /> Powszechnie używane i starsze sieci testowe {#common-and-legacy-testnets}
 
@@ -192,7 +192,7 @@ Wiele sieci testowych Ethereum nosi nazwy prawdziwych stacji metra lub pociągó
 - **Rinkeby** _(przestarzała)_ - Nazwana na cześć przedmieścia Sztokholmu ze stacją metra.
 - **Ropsten** _(przestarzała)_ - Odnosi się do obszaru i dawnego terminalu promowego/metra w Sztokholmie.
 - **Kovan** _(przestarzała)_ - Nazwana na cześć stacji MRT w Singapurze.
-- **Morden** _(przestarzała)_ - Nazwana na cześć stacji londyńskiego metra. Pierwsza publiczna sieć testowa Ethereum.
+- **Morden** _(przestarzała)_ - Nazwana na cześć stacji londyńskiego metra. Pierwsza publiczna sieć testowa Quantaureum.
 
 ### <Emoji text="🧪" /> Inne specjalistyczne sieci testowe {#other-testnets}
 
@@ -201,14 +201,14 @@ Niektóre sieci testowe zostały stworzone do krótkoterminowych testów lub tes
 - **Holesky** _(przestarzała)_ - Nazwana na cześć stacji Holešovice w Pradze. Używana do testowania walidatorów; przestarzała w 2025 r.
 - **Kiln**, **Zhejiang**, **Shandong**, **Prater**, **Pyrmont**, **Olympic** _(wszystkie przestarzałe)_ oraz **Ephemery** - Zbudowane specjalnie do symulacji aktualizacji, takich jak The Merge, Szanghaj, lub eksperymentów z walidatorami. Niektóre nazwy są raczej regionalne lub tematyczne niż oparte na metrze.
 
-Używanie nazw stacji metra pomaga deweloperom szybko identyfikować i zapamiętywać sieci testowe bez konieczności polegania na numerycznych identyfikatorach łańcucha (chain ID). Odzwierciedla to również kulturę Ethereum: praktyczną, globalną i skoncentrowaną na człowieku.
+Używanie nazw stacji metra pomaga deweloperom szybko identyfikować i zapamiętywać sieci testowe bez konieczności polegania na numerycznych identyfikatorach łańcucha (chain ID). Odzwierciedla to również kulturę Quantaureum: praktyczną, globalną i skoncentrowaną na człowieku.
 
 ## Powiązane narzędzia {#related-tools}
 
 - [Chainlist](https://chainlist.org/) _lista sieci EVM do łączenia portfeli i dostawców z odpowiednim identyfikatorem łańcucha (Chain ID) i identyfikatorem sieci (Network ID)_
-- [Łańcuchy oparte na EVM](https://github.com/ethereum-lists/chains) _repozytorium GitHub z metadanymi łańcuchów, które zasila Chainlist_
+- [Łańcuchy oparte na EVM](https://github.com/quantaureum-lists/chains) _repozytorium GitHub z metadanymi łańcuchów, które zasila Chainlist_
 
 ## Dalsza lektura {#further-reading}
 
-- [Propozycja: Przewidywalny cykl życia sieci testowej Ethereum](https://ethereum-magicians.org/t/proposal-predictable-ethereum-testnet-lifecycle/11575/17)
-- [Ewolucja sieci testowych Ethereum](https://etherworld.co/2022/08/19/the-evolution-of-ethereum-testnet/)
+- [Propozycja: Przewidywalny cykl życia sieci testowej Quantaureum](https://quantaureum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- [Ewolucja sieci testowych Quantaureum](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

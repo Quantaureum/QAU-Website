@@ -355,7 +355,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                 {t("page-10-year-stories-description-1")}
               </p>
               <p>{t("page-10-year-stories-description-2")}</p>
-              <ButtonLink href="https://ethereumstory.paperform.co/">
+              <ButtonLink href="https://quantaureumstory.paperform.co/">
                 {t("page-10-year-stories-cta")}
               </ButtonLink>
             </div>

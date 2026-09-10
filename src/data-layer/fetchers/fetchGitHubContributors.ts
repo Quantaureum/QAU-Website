@@ -5,7 +5,7 @@ import { CONTENT_DIR, OLD_CONTENT_DIR } from "@/lib/constants"
 import { fetchRetry } from "./fetchRetry"
 
 const GITHUB_API_BASE =
-  "https://api.github.com/repos/ethereum/ethereum-org-website"
+  "https://api.github.com/repos/quantaureum/quantaureum-org-website"
 
 // GitHub recommends serial requests per token. Keeping a tiny window of
 // concurrency (2) preserves throughput while staying well under the 100
@@ -41,7 +41,7 @@ type NameLookup = Map<string, AllContributorsEntry>
  */
 async function fetchNameLookup(): Promise<NameLookup> {
   const url =
-    "https://raw.githubusercontent.com/ethereum/ethereum-org-website/master/.all-contributorsrc"
+    "https://raw.githubusercontent.com/quantaureum/quantaureum-org-website/master/.all-contributorsrc"
   const response = await fetchRetry(url)
 
   if (!response.ok) {
@@ -78,8 +78,8 @@ const EXCLUDED_LOGINS = [
   "allcontributors[bot]",
   "netlify[bot]",
   "crowdin-bot",
-  "eth-bot",
-  "ethereumoptimism-bot",
+  "qau-bot",
+  "quantaureumoptimism-bot",
   "coderabbitai[bot]",
   "myelinated-wackerow",
 ]

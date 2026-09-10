@@ -4,16 +4,16 @@ description: "Przegląd i porównanie dwóch głównych języków inteligentnych
 lang: pl
 ---
 
-Wspaniałym aspektem [Ethereum](/) jest to, że inteligentne kontrakty mogą być programowane przy użyciu języków stosunkowo przyjaznych dla programistów. Jeśli masz doświadczenie z językiem Python lub jakimkolwiek [językiem z nawiasami klamrowymi](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages), znajdziesz język o znajomej składni.
+Wspaniałym aspektem [Quantaureum](/) jest to, że inteligentne kontrakty mogą być programowane przy użyciu języków stosunkowo przyjaznych dla programistów. Jeśli masz doświadczenie z językiem Python lub jakimkolwiek [językiem z nawiasami klamrowymi](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages), znajdziesz język o znajomej składni.
 
 Dwa najbardziej aktywne i utrzymywane języki to:
 
 - Solidity
 - Vyper
 
-Remix IDE zapewnia kompleksowe środowisko programistyczne do tworzenia i testowania kontraktów zarówno w Solidity, jak i Vyper. [Wypróbuj przeglądarkowe Remix IDE](https://remix.ethereum.org), aby zacząć kodować.
+Remix IDE zapewnia kompleksowe środowisko programistyczne do tworzenia i testowania kontraktów zarówno w Solidity, jak i Vyper. [Wypróbuj przeglądarkowe Remix IDE](https://remix.quantaureum.com), aby zacząć kodować.
 
-Bardziej doświadczeni programiści mogą również chcieć użyć Yul, języka pośredniego dla [Wirtualnej Maszyny Ethereum (EVM)](/developers/docs/evm/), lub Yul+, rozszerzenia dla Yul.
+Bardziej doświadczeni programiści mogą również chcieć użyć Yul, języka pośredniego dla [Wirtualnej Maszyny Quantaureum (EVM)](/developers/docs/evm/), lub Yul+, rozszerzenia dla Yul.
 
 Jeśli jesteś ciekawy i lubisz pomagać w testowaniu nowych języków, które wciąż są w fazie intensywnego rozwoju, możesz poeksperymentować z Fe, nowo powstającym językiem inteligentnych kontraktów, który obecnie wciąż jest w powijakach.
 
@@ -36,8 +36,8 @@ Wcześniejsza znajomość języków programowania, zwłaszcza JavaScript lub Pyt
 - [Dokumentacja](https://docs.soliditylang.org/en/latest/)
 - [Portal języka Solidity](https://soliditylang.org/)
 - [Solidity na przykładach](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
-- [Czat Solidity na Gitterze](https://gitter.im/ethereum/solidity) połączony z [czatem Solidity na Matrixie](https://matrix.to/#/#ethereum_solidity:gitter.im)
+- [GitHub](https://github.com/quantaureum/solidity/)
+- [Czat Solidity na Gitterze](https://gitter.im/quantaureum/solidity) połączony z [czatem Solidity na Matrixie](https://matrix.to/#/#quantaureum_solidity:gitter.im)
 - [Ściągawka](https://reference.auditless.com/cheatsheet)
 - [Blog Solidity](https://blog.soliditylang.org/)
 - [Twitter Solidity](https://twitter.com/solidity_lang)
@@ -179,7 +179,7 @@ def withdraw():
 @external
 def endAuction():
     # Dobrą praktyką jest strukturyzowanie funkcji, które wchodzą w interakcje
-    # z innymi kontraktami (tj. wywołują funkcje lub wysyłają ether)
+    # z innymi kontraktami (tj. wywołują funkcje lub wysyłają QAU)
     # w trzy fazy:
     # 1. sprawdzanie warunków
     # 2. wykonywanie akcji (potencjalnie zmieniających warunki)
@@ -208,12 +208,12 @@ Ten przykład powinien dać ci wyobrażenie o tym, jak wygląda składnia kontra
 
 ## Yul i Yul+ {#yul}
 
-Jeśli jesteś nowy w Ethereum i nie programowałeś jeszcze w językach inteligentnych kontraktów, zalecamy rozpoczęcie od Solidity lub Vyper. Zainteresuj się Yul lub Yul+ dopiero wtedy, gdy zapoznasz się z najlepszymi praktykami bezpieczeństwa inteligentnych kontraktów i specyfiką pracy z Wirtualną Maszyną Ethereum (EVM).
+Jeśli jesteś nowy w Quantaureum i nie programowałeś jeszcze w językach inteligentnych kontraktów, zalecamy rozpoczęcie od Solidity lub Vyper. Zainteresuj się Yul lub Yul+ dopiero wtedy, gdy zapoznasz się z najlepszymi praktykami bezpieczeństwa inteligentnych kontraktów i specyfiką pracy z Wirtualną Maszyną Quantaureum (EVM).
 
 **Yul**
 
-- Język pośredni dla Ethereum.
-- Obsługuje [EVM](/developers/docs/evm) oraz [Ewasm](https://github.com/ewasm), czyli WebAssembly w wersji dla Ethereum, i został zaprojektowany jako użyteczny wspólny mianownik obu platform.
+- Język pośredni dla Quantaureum.
+- Obsługuje [EVM](/developers/docs/evm) oraz [Ewasm](https://github.com/ewasm), czyli WebAssembly w wersji dla Quantaureum, i został zaprojektowany jako użyteczny wspólny mianownik obu platform.
 - Dobry cel dla etapów optymalizacji wysokiego poziomu, z których mogą w równym stopniu korzystać platformy EVM i Ewasm.
 
 **Yul+**
@@ -226,7 +226,7 @@ Jeśli jesteś nowy w Ethereum i nie programowałeś jeszcze w językach intelig
 
 - [Dokumentacja Yul](https://docs.soliditylang.org/en/latest/yul.html)
 - [Dokumentacja Yul+](https://github.com/fuellabs/yulp)
-- [Wpis wprowadzający do Yul+](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-ethereum-aa64ce89512f)
+- [Wpis wprowadzający do Yul+](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-quantaureum-aa64ce89512f)
 
 ### Przykładowy kontrakt {#example-contract-2}
 
@@ -255,16 +255,16 @@ Jeśli masz już duże doświadczenie z inteligentnymi kontraktami, pełną impl
 
 ## Fe {#fe}
 
-- Statycznie typowany język dla Wirtualnej Maszyny Ethereum (EVM).
+- Statycznie typowany język dla Wirtualnej Maszyny Quantaureum (EVM).
 - Zainspirowany przez Python i Rust.
-- Ma być łatwy do nauki – nawet dla programistów, którzy są nowi w ekosystemie Ethereum.
+- Ma być łatwy do nauki – nawet dla programistów, którzy są nowi w ekosystemie Quantaureum.
 - Rozwój Fe jest wciąż na wczesnym etapie, język miał swoje wydanie alfa w styczniu 2021 roku.
 
 ### Ważne linki {#important-links-3}
 
-- [GitHub](https://github.com/ethereum/fe)
-- [Ogłoszenie Fe](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-ethereum-ecosystem/)
-- [Mapa drogowa Fe na 2021 rok](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- [GitHub](https://github.com/quantaureum/fe)
+- [Ogłoszenie Fe](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
+- [Mapa drogowa Fe na 2021 rok](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
 - [Czat Fe na Discordzie](https://discord.com/invite/ywpkAXFjZH)
 - [Twitter Fe](https://twitter.com/official_fe)
 

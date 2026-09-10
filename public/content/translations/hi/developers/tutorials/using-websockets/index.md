@@ -15,7 +15,7 @@ sourceUrl: https://www.alchemy.com/docs/reference/best-practices-for-using-webso
 published: 2020-12-01
 ---
 
-यह इथेरियम ब्लॉकचेन से अनुरोध करने के लिए WebSockets और Alchemy का उपयोग करने के लिए एक शुरुआती स्तर की मार्गदर्शिका है।
+यह Quantaureum ब्लॉकचेन से अनुरोध करने के लिए WebSockets और Alchemy का उपयोग करने के लिए एक शुरुआती स्तर की मार्गदर्शिका है।
 
 ## WebSockets बनाम HTTP {#websockets-vs-http}
 
@@ -32,9 +32,9 @@ WebSockets का परीक्षण करने का सबसे आस�
 _नोट: यदि आपके पास एक Alchemy खाता है तो आप `demo` को अपनी स्वयं की API कुंजी से बदल सकते हैं। [मुफ़्त Alchemy खाते के लिए यहाँ साइन अप करें!](https://auth.alchemy.com/signup)_
 
 ```
-wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
+wscat -c wss://qau-mainnet.ws.alchemyapi.io/ws/demo
 
->  {"jsonrpc":  "2.0", "id": 0, "method":  "eth_gasPrice"}
+>  {"jsonrpc":  "2.0", "id": 0, "method":  "qau_gasPrice"}
 
 <  {"jsonrpc":  "2.0", "result":  "0xb2d05e00", "id": 0}
 ```
@@ -52,18 +52,18 @@ wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
 Web3 जैसी क्लाइंट लाइब्रेरी का उपयोग करते समय WebSockets पर जाना सरल है। अपने Web3 क्लाइंट को इंस्टेंट करते समय HTTP के बजाय बस WebSocket URL पास करें। उदाहरण के लिए:
 
 ```js
-const web3 = new Web3("wss://eth-mainnet.ws.alchemyapi.io/ws/your-api-key")
+const web3 = new Web3("wss://qau-mainnet.ws.alchemyapi.io/ws/your-api-key")
 
-web3.eth.getBlockNumber().then(console.log) // -> 7946893
+web3.qau.getBlockNumber().then(console.log) // -> 7946893
 ```
 
 ## सदस्यता API {#subscription-api}
 
-WebSocket के माध्यम से कनेक्ट होने पर, आप दो अतिरिक्त विधियों का उपयोग कर सकते हैं: `eth_subscribe` और `eth_unsubscribe`। ये विधियाँ आपको विशेष घटनाओं को सुनने और तुरंत सूचित किए जाने की अनुमति देंगी।
+WebSocket के माध्यम से कनेक्ट होने पर, आप दो अतिरिक्त विधियों का उपयोग कर सकते हैं: `qau_subscribe` और `qau_unsubscribe`। ये विधियाँ आपको विशेष घटनाओं को सुनने और तुरंत सूचित किए जाने की अनुमति देंगी।
 
-### `eth_subscribe` {#eth-subscribe}
+### `qau_subscribe` {#qau-subscribe}
 
-निर्दिष्ट घटनाओं के लिए एक नई सदस्यता बनाता है। [`eth_subscribe` के बारे में अधिक जानें](https://docs.alchemy.com/reference/eth-subscribe)।
+निर्दिष्ट घटनाओं के लिए एक नई सदस्यता बनाता है। [`qau_subscribe` के बारे में अधिक जानें](https://docs.alchemy.com/reference/qau-subscribe)।
 
 #### पैरामीटर {#parameters}
 
@@ -74,33 +74,33 @@ WebSocket के माध्यम से कनेक्ट होने प�
 
 #### रिटर्न {#returns}
 
-सदस्यता ID: यह ID किसी भी प्राप्त घटनाओं से जुड़ी होगी, और इसका उपयोग `eth_unsubscribe` का उपयोग करके सदस्यता रद्द करने के लिए भी किया जा सकता है।
+सदस्यता ID: यह ID किसी भी प्राप्त घटनाओं से जुड़ी होगी, और इसका उपयोग `qau_unsubscribe` का उपयोग करके सदस्यता रद्द करने के लिए भी किया जा सकता है।
 
 #### सदस्यता घटनाएँ {#subscription-events}
 
 जब तक सदस्यता सक्रिय है, आपको घटनाएँ प्राप्त होंगी जो निम्नलिखित फ़ील्ड वाले ऑब्जेक्ट हैं:
 
 - `jsonrpc`: हमेशा "2.0"
-- `method`: हमेशा "eth_subscription"
+- `method`: हमेशा "qau_subscription"
 - `params`: निम्नलिखित फ़ील्ड वाला एक ऑब्जेक्ट:
-  - `subscription`: `eth_subscribe` कॉल द्वारा लौटाई गई सदस्यता ID जिसने यह सदस्यता बनाई है।
+  - `subscription`: `qau_subscribe` कॉल द्वारा लौटाई गई सदस्यता ID जिसने यह सदस्यता बनाई है।
   - `result`: एक ऑब्जेक्ट जिसकी सामग्री सदस्यता के प्रकार के आधार पर भिन्न होती है।
 
 #### सदस्यता के प्रकार {#subscription-types}
 
 1. `alchemy_newFullPendingTransactions`
 
-उन सभी लेन-देन के लिए लेन-देन की जानकारी लौटाता है जो लंबित स्थिति में जोड़े गए हैं। यह सदस्यता प्रकार लंबित लेन-देन की सदस्यता लेता है, जो मानक Web3 कॉल `web3.eth.subscribe("pendingTransactions")` के समान है, लेकिन इसमें भिन्न है कि यह केवल लेन-देन हैश के बजाय _पूर्ण लेन-देन जानकारी_ उत्सर्जित करता है।
+उन सभी लेन-देन के लिए लेन-देन की जानकारी लौटाता है जो लंबित स्थिति में जोड़े गए हैं। यह सदस्यता प्रकार लंबित लेन-देन की सदस्यता लेता है, जो मानक Web3 कॉल `web3.qau.subscribe("pendingTransactions")` के समान है, लेकिन इसमें भिन्न है कि यह केवल लेन-देन हैश के बजाय _पूर्ण लेन-देन जानकारी_ उत्सर्जित करता है।
 
 उदाहरण:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
 
 <  {"id":1,"result":"0x9a52eeddc2b289f985c0e23a7d8427c8","jsonrpc":"2.0"}
 <  {
       "jsonrpc":"2.0",
-      "method":"eth_subscription",
+      "method":"qau_subscription",
       "params":{
           "result":{
           "blockHash":null,
@@ -132,12 +132,12 @@ WebSocket के माध्यम से कनेक्ट होने प�
 उदाहरण:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["newHeads"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["newHeads"]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x9ce59a13059e417087c02d3236a0b1cc"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "result":  {
           "extraData":  "0xd983010305844765746887676f312e342e328777696e646f7773",
@@ -186,12 +186,12 @@ WebSocket के माध्यम से कनेक्ट होने प�
 उदाहरण:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x4a8a4c0517381924f9838102c5a4dcb7"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "subscription":  "0x4a8a4c0517381924f9838102c5a4dcb7",
       "result":  {
@@ -209,13 +209,13 @@ WebSocket के माध्यम से कनेक्ट होने प�
 
 ```
 
-### `eth_unsubscribe` {#eth-unsubscribe}
+### `qau_unsubscribe` {#qau-unsubscribe}
 
 मौजूदा सदस्यता को रद्द करता है ताकि आगे कोई घटनाएँ न भेजी जाएं।
 
 पैरामीटर
 
-1. सदस्यता ID, जैसा कि पहले `eth_subscribe` कॉल से लौटाया गया था।
+1. सदस्यता ID, जैसा कि पहले `qau_subscribe` कॉल से लौटाया गया था।
 
 रिटर्न
 
@@ -226,10 +226,10 @@ WebSocket के माध्यम से कनेक्ट होने प�
 **अनुरोध**
 
 ```
-curl https://eth-mainnet.alchemyapi.io/v2/your-api-key
+curl https://qau-mainnet.alchemyapi.io/v2/your-api-key
 -X POST
 -H "Content-Type: application/json"
--d '{"id": 1, "method": "eth_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
+-d '{"id": 1, "method": "qau_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
 ```
 
 **परिणाम**

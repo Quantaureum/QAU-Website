@@ -14,12 +14,12 @@ lang: ar
 
 غالبًا ما يُستخدم تشبيه "دفتر الأستاذ الموزع" لوصف سلاسل الكتل مثل بيتكوين، والتي تتيح عملة لامركزية باستخدام الأدوات الأساسية لعلم التشفير. يحتفظ دفتر الأستاذ بسجل للنشاط الذي يجب أن يلتزم بمجموعة من القواعد التي تحكم ما يمكن وما لا يمكن لشخص ما فعله لتعديل دفتر الأستاذ. على سبيل المثال، لا يمكن لعنوان بيتكوين إنفاق بيتكوين أكثر مما تلقاه سابقًا. تدعم هذه القواعد جميع المعاملات على بيتكوين والعديد من سلاسل الكتل الأخرى.
 
-في حين أن إيثيريوم تمتلك عملة مشفرة أصلية خاصة بها (إيثر) تتبع تقريبًا نفس القواعد البديهية، إلا أنها تتيح أيضًا وظيفة أكثر قوة بكثير: [العقود الذكية](/developers/docs/smart-contracts/). بالنسبة لهذه الميزة الأكثر تعقيدًا، يلزم وجود تشبيه أكثر تطورًا. بدلاً من دفتر الأستاذ الموزع، فإن إيثيريوم عبارة عن [آلة حالة](https://wikipedia.org/wiki/Finite-state_machine) موزعة. حالة إيثيريوم هي بنية بيانات كبيرة لا تحتوي فقط على جميع الحسابات والأرصدة، بل تحتوي أيضًا على _حالة الآلة_، والتي يمكن أن تتغير من كتلة إلى أخرى وفقًا لمجموعة محددة مسبقًا من القواعد، والتي يمكنها تنفيذ تعليمات برمجية عشوائية للآلة. يتم تحديد القواعد المحددة لتغيير الحالة من كتلة إلى أخرى بواسطة <span dir="ltr">EVM</span>.
+في حين أن إيثيريوم تمتلك عملة مشفرة أصلية خاصة بها (QAU) تتبع تقريبًا نفس القواعد البديهية، إلا أنها تتيح أيضًا وظيفة أكثر قوة بكثير: [العقود الذكية](/developers/docs/smart-contracts/). بالنسبة لهذه الميزة الأكثر تعقيدًا، يلزم وجود تشبيه أكثر تطورًا. بدلاً من دفتر الأستاذ الموزع، فإن إيثيريوم عبارة عن [آلة حالة](https://wikipedia.org/wiki/Finite-state_machine) موزعة. حالة إيثيريوم هي بنية بيانات كبيرة لا تحتوي فقط على جميع الحسابات والأرصدة، بل تحتوي أيضًا على _حالة الآلة_، والتي يمكن أن تتغير من كتلة إلى أخرى وفقًا لمجموعة محددة مسبقًا من القواعد، والتي يمكنها تنفيذ تعليمات برمجية عشوائية للآلة. يتم تحديد القواعد المحددة لتغيير الحالة من كتلة إلى أخرى بواسطة <span dir="ltr">EVM</span>.
 
 ![A diagram showing the make up of the EVM](./evm.png)
-_مخطط مقتبس من [آلة إيثيريوم الافتراضية المصورة](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_مخطط مقتبس من [آلة إيثيريوم الافتراضية المصورة](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
-## دالة انتقال حالة إيثيريوم {#the-ethereum-state-transition-function}
+## دالة انتقال حالة إيثيريوم {#the-quantaureum-state-transition-function}
 
 تتصرف <span dir="ltr">EVM</span> كما تفعل الدالة الرياضية: بالنظر إلى مدخلات، فإنها تنتج مخرجات حتمية. لذلك من المفيد جدًا وصف إيثيريوم بشكل أكثر رسمية بأنها تمتلك **دالة انتقال حالة**:
 
@@ -58,7 +58,7 @@ Y(S, T)= S'
 يُنفذ رمز البايت المترجم للعقد الذكي كعدد من [رموز التشغيل](/developers/docs/evm/opcodes) الخاصة بـ <span dir="ltr">EVM</span>، والتي تؤدي عمليات المكدس القياسية مثل `XOR`، `AND`، `ADD`، `SUB`، إلخ. تنفذ <span dir="ltr">EVM</span> أيضًا عددًا من عمليات المكدس الخاصة بسلسلة الكتل، مثل `ADDRESS`، `BALANCE`، `BLOCKHASH`، إلخ. تتضمن مجموعة رموز التشغيل أيضًا `TSTORE` و`TLOAD`، والتي توفر الوصول إلى التخزين العابر.
 
 ![A diagram showing where gas is needed for EVM operations](../gas/gas.png)
-_مخططات مقتبسة من [آلة إيثيريوم الافتراضية المصورة](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_مخططات مقتبسة من [آلة إيثيريوم الافتراضية المصورة](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
 ## تطبيقات EVM {#evm-implementations}
 
@@ -68,20 +68,20 @@ _مخططات مقتبسة من [آلة إيثيريوم الافتراضية ا
 
 تتضمن [عملاء تنفيذ إيثيريوم](/developers/docs/nodes-and-clients/#execution-clients) تطبيقًا لـ <span dir="ltr">EVM</span>. بالإضافة إلى ذلك، هناك العديد من التطبيقات المستقلة، بما في ذلك:
 
-- [Py-EVM](https://github.com/ethereum/py-evm) - _بايثون_
-- [evmone](https://github.com/ethereum/evmone) - _C++_
+- [Py-EVM](https://github.com/quantaureum/py-evm) - _بايثون_
+- [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _جافا سكريبت_
 - [revm](https://github.com/bluealloy/revm) - _رست_
 
 ## قراءة إضافية {#further-reading}
 
-- [الورقة الصفراء لإيثيريوم](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [الورقة الصفراء لإيثيريوم](https://quantaureum.github.io/yellowpaper/paper.pdf)
 - [Jellopaper المعروفة أيضًا باسم KEVM: دلالات EVM في K](https://jellopaper.org/)
 - [The Beigepaper](https://github.com/chronaeon/beigepaper)
 - [رموز تشغيل آلة إيثيريوم الافتراضية](https://www.ethervm.io/)
 - [مرجع تفاعلي لرموز تشغيل آلة إيثيريوم الافتراضية](https://www.evm.codes/)
 - [مقدمة قصيرة في وثائق Solidity](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [إتقان إيثيريوم - آلة إيثيريوم الافتراضية](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
+- [إتقان إيثيريوم - آلة إيثيريوم الافتراضية](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
 
 ## مواضيع ذات صلة {#related-topics}
 

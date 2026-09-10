@@ -6,7 +6,7 @@ import type { SimulatorNavProps } from "@/lib/types"
 
 import { cn } from "@/lib/utils/cn"
 
-import { EthGlyphIcon } from "../../icons"
+import { QauGlyphIcon } from "../../icons"
 
 type HomeScreenProps = HTMLAttributes<HTMLDivElement> & SimulatorNavProps
 
@@ -34,7 +34,7 @@ export const HomeScreen = ({ nav, ...props }: HomeScreenProps) => {
             exit={{ opacity: 0 }}
             onClick={nav.progressStepper}
           >
-            <EthGlyphIcon className="size-[1em] text-2xl text-background sm:text-3xl" />
+            <QauGlyphIcon className="size-[1em] text-2xl text-background sm:text-3xl" />
           </motion.button>
         ) : (
           <motion.div

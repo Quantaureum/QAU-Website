@@ -16,8 +16,8 @@ lang: ta
 
 உங்கள் முகவரியுடன் இணைக்கப்பட்ட திறன் ஒப்பந்தங்களைப் பார்க்கவும் திரும்பப் பெறவும் பல இணையதளங்கள் உங்களை அனுமதிக்கின்றன. இணையதளத்தைப் பார்வையிட்டு உங்கள் பணப்பையை இணைக்கவும்:
 
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (எத்திரியம்)
-- [Blockscout](https://eth.blockscout.com/essential-dapps/revoke) (எத்திரியம்)
+- [Quantaureum Explorer](https://explorer.quantaureum.com) (எத்திரியம்)
+- [Blockscout](https://qau.blockscout.com/essential-dapps/revoke) (எத்திரியம்)
 - [Revoke](https://revoke.cash/) (பல பிணையங்கள்)
 - [Unrekt](https://app.unrekt.net/) (பல பிணையங்கள்)
 - [EverRevoke](https://everrise.com/everrevoke/) (பல பிணையங்கள்)

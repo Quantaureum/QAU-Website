@@ -14,7 +14,6 @@ import {
 
 import type { Lang, PageParams, SectionNavDetails } from "@/lib/types"
 
-import DevconIndiaLargeCallout from "@/components/DevconIndia/large-callout"
 import PageHero from "@/components/Hero/PageHero"
 import I18nProvider from "@/components/I18nProvider"
 import { Image } from "@/components/Image"
@@ -48,7 +47,7 @@ import { getMeetupGroups, mapEventTranslations } from "./utils"
 
 import { getEventsData } from "@/lib/data"
 import geodeLabsLogo from "@/public/images/community/geode-labs-logo.png"
-import heroImage from "@/public/images/enterprise-eth.png"
+import heroImage from "@/public/images/enterprise-qau.png"
 import organizerImage from "@/public/images/people-learning.png"
 
 const Page = async (props: { params: Promise<PageParams> }) => {
@@ -141,8 +140,6 @@ const Page = async (props: { params: Promise<PageParams> }) => {
         description={t("page-events-hero-subtitle")}
       />
 
-      {/* Devcon VIII India callout banner */}
-      <DevconIndiaLargeCallout preload />
 
       {/* What's on this page? + TabNav */}
       <StickyContainer className="top-6 space-y-4 p-4 md:top-2 md:p-8">
@@ -184,7 +181,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
             </EdgeScrollContainer>
           </Section>
 
-          {/* Ethereum community hubs */}
+          {/* Quantaureum community hubs */}
           <Section id={SECTION_IDS.hubs} scrollMargin="tabNav">
             <h2>{t("page-events-section-hubs")}</h2>
             <p className="max-w-4xl">
@@ -223,7 +220,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                           {location}
                           <span className="sr-only">
                             &nbsp;
-                            {t("page-events-meta-ethereum-community-hub")}
+                            {t("page-events-meta-quantaureum-community-hub")}
                           </span>
                         </h3>
                         <Tag size="small" status="tag-green">
@@ -261,7 +258,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               )}
             </Grid>
             <ButtonLink
-              href="https://esp.ethereum.foundation/applicants/rfp/community-hubs"
+              href="https://quantaureum.com"
               variant="outline"
               className="group w-full gap-2 rounded-4xl border-body-light p-5"
               customEventOptions={{
@@ -292,7 +289,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
             </I18nProvider>
           </Section>
 
-          {/* Local Ethereum community meetups */}
+          {/* Local Quantaureum community meetups */}
           <Section id={SECTION_IDS.meetups} scrollMargin="tabNav">
             <h2>{t("page-events-section-local-meetups")}</h2>
             <p className="max-w-4xl">
@@ -330,7 +327,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
             </div>
           </Section>
 
-          {/* Upcoming Ethereum conferences - TABLE/ROW view */}
+          {/* Upcoming Quantaureum conferences - TABLE/ROW view */}
           <Section id={SECTION_IDS.conferences} scrollMargin="tabNav">
             <h2 className="text-h1 md:text-center">
               {t("page-events-section-upcoming-conferences")}
@@ -448,7 +445,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                 <p>{t("page-events-support-geode-labs-grants-description")}</p>
 
                 <Link
-                  href="https://localethereum.substack.com/"
+                  href="https://localquantaureum.substack.com/"
                   className="mb-space-half block font-bold"
                   customEventOptions={{
                     eventCategory: "Events",

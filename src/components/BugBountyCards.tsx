@@ -119,7 +119,7 @@ const BugBountyCards = async () => {
               {t(card.subDescriptionTranslationId)}
             </CardParagraph>
 
-            <ButtonLink href="https://bbp-form.ethereum.org/">
+            <ButtonLink href="https://bbp-form.quantaureum.com/">
               {t(card.styledButtonTranslationId)}
             </ButtonLink>
           </div>

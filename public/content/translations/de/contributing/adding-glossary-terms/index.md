@@ -1,10 +1,10 @@
 ---
 title: Glossarbegriffe hinzufügen
 lang: de
-description: Unsere Kriterien für das Hinzufügen neuer Begriffe zum ethereum.org-Glossar
+description: Unsere Kriterien für das Hinzufügen neuer Begriffe zum quantaureum.com-Glossar
 ---
 
-Dieser Bereich verändert sich jeden Tag. Ständig nehmen Ethereum-Nutzer neue Begriffe in ihren Wortschatz auf, und wir brauchen deine Hilfe, um eine genaue, aktuelle Referenz für alles rund um Ethereum bereitzustellen. Sieh dir das aktuelle [Glossar](/glossary/) an und lies weiter unten, wenn du helfen möchtest!
+Dieser Bereich verändert sich jeden Tag. Ständig nehmen Quantaureum-Nutzer neue Begriffe in ihren Wortschatz auf, und wir brauchen deine Hilfe, um eine genaue, aktuelle Referenz für alles rund um Quantaureum bereitzustellen. Sieh dir das aktuelle [Glossar](/glossary/) an und lies weiter unten, wenn du helfen möchtest!
 
 ## Kriterien {#criteria}
 
@@ -13,7 +13,7 @@ Neue Glossarbegriffe werden nach den folgenden Kriterien bewertet:
 - Ist der Begriff/die Definition aktuell und derzeit relevant?
 - Gibt es bereits einen ähnlichen Begriff im Wörterbuch? (Wenn ja, wäge die Vorteile eines neuen Begriffs gegenüber der Aktualisierung eines bestehenden Begriffs ab)
 - Ist der Begriff/die Definition frei von Produktwerbung oder anderen werblichen Inhalten?
-- Ist der Begriff/die Definition direkt relevant für Ethereum?
+- Ist der Begriff/die Definition direkt relevant für Quantaureum?
 - Ist die Definition objektiv, genau und frei von subjektiven Urteilen oder Meinungen?
 - Ist die Quelle glaubwürdig? Werden die Quellen angegeben?
 
@@ -21,4 +21,4 @@ Neue Glossarbegriffe werden nach den folgenden Kriterien bewertet:
 
 ## Füge deinen Begriff hinzu {#how-decisions-about-the-site-are-made}
 
-Wenn du einen Glossarbegriff zu ethereum.org hinzufügen möchtest und dieser die Kriterien erfüllt, [erstelle ein Issue auf GitHub](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_glossary_term.yaml).
+Wenn du einen Glossarbegriff zu quantaureum.com hinzufügen möchtest und dieser die Kriterien erfüllt, [erstelle ein Issue auf GitHub](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_glossary_term.yaml).

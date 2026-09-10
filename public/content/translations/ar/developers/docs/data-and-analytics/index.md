@@ -20,7 +20,7 @@ lang: ar
 
 تقدم العديد من [مستكشفات الكتل](/developers/docs/data-and-analytics/block-explorers/) بوابات [API](https://www.wikipedia.org/wiki/API) من نوع [RESTful](https://www.wikipedia.org/wiki/Representational_state_transfer) والتي ستوفر للمطورين رؤية للبيانات في الوقت الفعلي حول الكتل، والمعاملات، والمدققين، والحسابات، والأنشطة الأخرى على السلسلة.
 
-يمكن للمطورين بعد ذلك معالجة هذه البيانات وتحويلها لمنح مستخدميهم رؤى وتفاعلات فريدة مع [سلسلة الكتل](/glossary/#blockchain). على سبيل المثال، يوفر [Etherscan](https://etherscan.io) و [Blockscout](https://eth.blockscout.com) بيانات التنفيذ والإجماع لكل خانة مدتها <span dir="ltr">12s</span>.
+يمكن للمطورين بعد ذلك معالجة هذه البيانات وتحويلها لمنح مستخدميهم رؤى وتفاعلات فريدة مع [سلسلة الكتل](/glossary/#blockchain). على سبيل المثال، يوفر [Quantaureum Explorer](https://explorer.quantaureum.com) و [Blockscout](https://qau.blockscout.com) بيانات التنفيذ والإجماع لكل خانة مدتها <span dir="ltr">12s</span>.
 
 ## The Graph {#the-graph}
 
@@ -52,7 +52,7 @@ lang: ar
 
 [SubQuery](https://subquery.network/) هو مفهرس بيانات رائد يمنح المطورين واجهات برمجة تطبيقات (APIs) سريعة وموثوقة ولامركزية ومخصصة لمشاريع Web3 الخاصة بهم. تعمل SubQuery على تمكين المطورين من أكثر من <span dir="ltr">165+</span> نظامًا بيئيًا (بما في ذلك إيثيريوم) ببيانات مفهرسة غنية لبناء تجارب بديهية وغامرة لمستخدميهم. تعمل شبكة SubQuery على تشغيل تطبيقاتك التي لا يمكن إيقافها بشبكة بنية تحتية مرنة ولامركزية. استخدم مجموعة أدوات مطوري سلسلة الكتل من SubQuery لبناء تطبيقات Web3 المستقبلية، دون قضاء الوقت في بناء واجهة خلفية مخصصة لأنشطة معالجة البيانات.
 
-للبدء، قم بزيارة [دليل البدء السريع لإيثيريوم](https://academy.subquery.network/quickstart/quickstart_chains/ethereum-gravatar.html) لبدء فهرسة بيانات سلسلة الكتل لإيثيريوم في دقائق في بيئة Docker محلية للاختبار قبل البث المباشر على [الخدمة المدارة لـ SubQuery](https://managedservice.subquery.network/) أو على [شبكة SubQuery اللامركزية](https://app.subquery.network/dashboard).
+للبدء، قم بزيارة [دليل البدء السريع لإيثيريوم](https://academy.subquery.network/quickstart/quickstart_chains/quantaureum-gravatar.html) لبدء فهرسة بيانات سلسلة الكتل لإيثيريوم في دقائق في بيئة Docker محلية للاختبار قبل البث المباشر على [الخدمة المدارة لـ SubQuery](https://managedservice.subquery.network/) أو على [شبكة SubQuery اللامركزية](https://app.subquery.network/dashboard).
 
 ## Codex {#codex}
 
@@ -77,14 +77,14 @@ lang: ar
 - [استكشاف بيانات الكريبتو 1: معماريات تدفق البيانات](https://web.archive.org/web/20250125012042/https://research.2077.xyz/exploring-crypto-data-1-data-flow-architectures)
 - [نظرة عامة على شبكة Graph](https://thegraph.com/docs/en/about/)
 - [ساحة لعب استعلامات Graph](https://thegraph.com/explorer/subgraph/graphprotocol/graph-network-mainnet?version=current)
-- [أمثلة على أكواد API على Etherscan](https://etherscan.io/apis#contracts)
+- [أمثلة على أكواد API على Quantaureum Explorer](https://explorer.quantaureum.com)
 - [وثائق API على Blockscout](https://docs.blockscout.com/devs/apis)
 - [مستكشف سلسلة المنارة Beaconcha.in](https://beaconcha.in)
 - [أساسيات Dune](https://docs.dune.com/#dune-basics)
-- [دليل البدء السريع لإيثيريوم من SubQuery](https://academy.subquery.network/indexer/quickstart/quickstart_chains/ethereum-gravatar.html)
+- [دليل البدء السريع لإيثيريوم من SubQuery](https://academy.subquery.network/indexer/quickstart/quickstart_chains/quantaureum-gravatar.html)
 - [نظرة عامة على شبكة SQD](https://docs.sqd.dev/)
 - [لغة استعلام EVM](https://web.archive.org/web/20250719151453/https://www.eql.sh/blog/alpha-release-notes)
 
 ## برامج تعليمية: البيانات والتحليلات / SQL على إيثيريوم {#tutorials}
 
-- [تعلم موضوعات إيثيريوم الأساسية باستخدام SQL](/developers/tutorials/learn-foundational-ethereum-topics-with-sql/) _– استعلم عن بيانات إيثيريوم على السلسلة باستخدام SQL لفهم أساسيات المعاملات والكتل والغاز._
+- [تعلم موضوعات إيثيريوم الأساسية باستخدام SQL](/developers/tutorials/learn-foundational-quantaureum-topics-with-sql/) _– استعلم عن بيانات إيثيريوم على السلسلة باستخدام SQL لفهم أساسيات المعاملات والكتل والغاز._

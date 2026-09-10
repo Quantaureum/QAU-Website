@@ -18,11 +18,11 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/tree/master/progr
 ### Docker経由でのエキドナ {#echidna-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_最後のコマンドは、現在のディレクトリにアクセスできるDocker内でeth-security-toolboxを実行します。ホストからファイルを変更し、Dockerからそのファイルに対してツールを実行できます。_
+_最後のコマンドは、現在のディレクトリにアクセスできるDocker内でqau-security-toolboxを実行します。ホストからファイルを変更し、Dockerからそのファイルに対してツールを実行できます。_
 
 Docker内で以下を実行します:
 
@@ -37,7 +37,7 @@ cd /home/training
 
 ## プロパティベースのファジングの概要 {#introduction-to-property-based-fuzzing}
 
-エキドナはプロパティベースのファザーであり、以前のブログ記事（[1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/)、[2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/)、[3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)）で説明しています。
+エキドナはプロパティベースのファザーであり、以前のブログ記事（[1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-quantaureum/)、[2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/)、[3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)）で説明しています。
 
 ### ファジング {#fuzzing}
 

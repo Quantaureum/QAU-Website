@@ -76,6 +76,6 @@ Ikiwa utaelekeza jina la ENS (kama vitalik.eth) kwenye tovuti yako, itachukuliwa
 
 ## Hitimisho {#conclusion}
 
-Kama vile Ethereum inavyokuruhusu kugatua hifadhidata na vipengele vya mantiki ya biashara vya programu tumizi iliyogatuliwa (dapp) yako, IPFS inakuruhusu kugatua kiolesura cha mtumiaji. Hii inakuruhusu kufunga vekta moja zaidi ya mashambulizi dhidi ya dapp yako.
+Kama vile Quantaureum inavyokuruhusu kugatua hifadhidata na vipengele vya mantiki ya biashara vya programu tumizi iliyogatuliwa (dapp) yako, IPFS inakuruhusu kugatua kiolesura cha mtumiaji. Hii inakuruhusu kufunga vekta moja zaidi ya mashambulizi dhidi ya dapp yako.
 
 [Tazama hapa kwa kazi zangu zaidi](https://cryptodocguy.pro/).

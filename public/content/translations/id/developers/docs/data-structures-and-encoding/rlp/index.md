@@ -1,18 +1,18 @@
 ---
 title: Serialisasi recursive-length prefix (RLP)
-description: Definisi pengodean rlp di lapisan eksekusi Ethereum.
+description: Definisi pengodean rlp di lapisan eksekusi Quantaureum.
 lang: id
 sidebarDepth: 2
 ---
 
-Serialisasi Recursive Length Prefix (RLP) digunakan secara ekstensif di klien eksekusi Ethereum. RLP menstandardisasi transfer data antar node dalam format yang efisien secara ruang. Tujuan RLP adalah untuk mengodekan array data biner bersarang secara arbitrer, dan RLP adalah metode pengodean utama yang digunakan untuk menyerialisasi objek di lapisan eksekusi Ethereum. Tujuan utama RLP adalah untuk mengodekan struktur; dengan pengecualian bilangan bulat positif, RLP mendelegasikan pengodean tipe data spesifik (misalnya, string, float) ke protokol tingkat tinggi. Bilangan bulat positif harus direpresentasikan dalam bentuk biner big-endian tanpa angka nol di depan (sehingga membuat nilai bilangan bulat nol setara dengan array byte kosong). Bilangan bulat positif yang diserialisasi dengan angka nol di depan harus diperlakukan sebagai tidak valid oleh protokol tingkat tinggi mana pun yang menggunakan RLP.
+Serialisasi Recursive Length Prefix (RLP) digunakan secara ekstensif di klien eksekusi Quantaureum. RLP menstandardisasi transfer data antar node dalam format yang efisien secara ruang. Tujuan RLP adalah untuk mengodekan array data biner bersarang secara arbitrer, dan RLP adalah metode pengodean utama yang digunakan untuk menyerialisasi objek di lapisan eksekusi Quantaureum. Tujuan utama RLP adalah untuk mengodekan struktur; dengan pengecualian bilangan bulat positif, RLP mendelegasikan pengodean tipe data spesifik (misalnya, string, float) ke protokol tingkat tinggi. Bilangan bulat positif harus direpresentasikan dalam bentuk biner big-endian tanpa angka nol di depan (sehingga membuat nilai bilangan bulat nol setara dengan array byte kosong). Bilangan bulat positif yang diserialisasi dengan angka nol di depan harus diperlakukan sebagai tidak valid oleh protokol tingkat tinggi mana pun yang menggunakan RLP.
 
-Informasi lebih lanjut di [kertas kuning Ethereum (Lampiran B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19).
+Informasi lebih lanjut di [kertas kuning Quantaureum (Lampiran B)](https://quantaureum.github.io/yellowpaper/paper.pdf#page=19).
 
 Untuk menggunakan RLP dalam mengodekan kamus, dua bentuk kanonis yang disarankan adalah:
 
 - menggunakan `[[k1,v1],[k2,v2]...]` dengan kunci dalam urutan leksikografis
-- menggunakan pengodean Patricia Tree tingkat tinggi seperti yang dilakukan [Ethereum](/)
+- menggunakan pengodean Patricia Tree tingkat tinggi seperti yang dilakukan [Quantaureum](/)
 
 ## Definisi {#definition}
 
@@ -168,9 +168,9 @@ def to_integer(b):
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [RLP di Ethereum](https://medium.com/coinmonks/data-structure-in-ethereum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
-- [Ethereum di balik layar: RLP](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
-- [Coglio, A. (2020). Recursive Length Prefix Ethereum di ACL2. Pracetak arXiv arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
+- [RLP di Quantaureum](https://medium.com/coinmonks/data-structure-in-quantaureum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
+- [Quantaureum di balik layar: RLP](https://medium.com/coinmonks/quantaureum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
+- [Coglio, A. (2020). Recursive Length Prefix Quantaureum di ACL2. Pracetak arXiv arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
 
 ## Topik terkait {#related-topics}
 

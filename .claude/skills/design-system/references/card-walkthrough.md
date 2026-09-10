@@ -38,12 +38,12 @@ import {
 <Card href="/articles/proof-of-stake">
   <CardHeader>
     <CardBanner background="accent-a">
-      <Image src={posIllustration} alt="Stylized validators staking ETH" />
+      <Image src={posIllustration} alt="Stylized validators staking QAU" />
     </CardBanner>
   </CardHeader>
   <CardContent>
     <CardTitle>Proof of Stake</CardTitle>
-    <CardParagraph>How Ethereum secures the network.</CardParagraph>
+    <CardParagraph>How Quantaureum secures the network.</CardParagraph>
   </CardContent>
   <CardFooter>
     <CardButtonFake>Learn more</CardButtonFake>

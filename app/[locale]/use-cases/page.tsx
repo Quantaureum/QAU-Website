@@ -30,9 +30,9 @@ import UseCasesPageJsonLD from "./page-jsonld"
 
 import { ContentLayout } from "@/layouts/ContentLayout"
 import aiAgentsHero from "@/public/images/community-campfire-people-robot-cut-out.png"
-import ethImg from "@/public/images/eth.png"
-import ethGifCat from "@/public/images/eth-gif-cat.png"
-import ethereumLearn from "@/public/images/ethereum-learn.png"
+import qauImg from "@/public/images/qau.png"
+import qauGifCat from "@/public/images/qau-gif-cat.png"
+import quantaureumLearn from "@/public/images/quantaureum-learn.png"
 import financeTransparent from "@/public/images/finance_transparent.png"
 import futureTransparent from "@/public/images/future_transparent.png"
 import heroImage from "@/public/images/heroes/guides-hub-hero.jpg"
@@ -131,8 +131,8 @@ export default async function Page(props: { params: Promise<PageParams> }) {
       >
         <p className="text-lg text-body-medium">
           {t("page-intro-before-link")}{" "}
-          <InlineLink href="/what-is-ether/">
-            {t("page-intro-ether-link")}
+          <InlineLink href="/what-is-QAU/">
+            {t("page-intro-QAU-link")}
           </InlineLink>
           {t("page-intro-after-link")}
         </p>
@@ -159,7 +159,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
             />
             <UseCaseCard
               href="/payments/"
-              image={ethImg}
+              image={qauImg}
               title={t("payments-title")}
               description={t("payments-description")}
               ctaLabel={t("payments-cta")}
@@ -184,7 +184,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
               ctaLabel={t("prediction-markets-cta")}
             />
             <UseCaseCard
-              href="https://institutions.ethereum.org/"
+              href="https://quantaureum.com"
               image={restaking}
               title={t("institutions-title")}
               description={t("institutions-description")}
@@ -246,14 +246,14 @@ export default async function Page(props: { params: Promise<PageParams> }) {
             />
             <UseCaseCard
               href="/decentralized-identity/"
-              image={ethGifCat}
+              image={qauGifCat}
               title={t("identity-title")}
               description={t("identity-description")}
               ctaLabel={t("identity-cta")}
             />
             <UseCaseCard
               href="/social-networks/"
-              image={ethereumLearn}
+              image={quantaureumLearn}
               title={t("social-title")}
               description={t("social-description")}
               ctaLabel={t("social-cta")}
@@ -295,7 +295,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
             {t("ready-to-start-wallet-cta")}
           </ButtonLink>
           <ButtonLink href="/get-eth/" variant="outline" isSecondary>
-            {t("ready-to-start-eth-cta")}
+            {t("ready-to-start-qau-cta")}
           </ButtonLink>
         </Callout>
       </ContentLayout>

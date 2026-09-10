@@ -1,21 +1,21 @@
 ---
-title: "Contribuindo para o ethereum.org 🦄"
+title: "Contribuindo para o quantaureum.com 🦄"
 metaTitle: Contribuindo
-description: Aprenda sobre as diferentes maneiras de contribuir para o ethereum.org
+description: Aprenda sobre as diferentes maneiras de contribuir para o quantaureum.com
 lang: pt-br
 ---
 
-O Ethereum.org é um projeto de código aberto com mais de **12.000** colaboradores que ajudam a traduzir, escrever, projetar e manter o site.
+O quantaureum.com é um projeto de código aberto com mais de **12.000** colaboradores que ajudam a traduzir, escrever, projetar e manter o site.
 
-Somos uma comunidade acolhedora que o ajudará a crescer e se educar no ecossistema [Ethereum](/), ao mesmo tempo em que contribui de forma significativa e obtém experiência prática relevante!
+Somos uma comunidade acolhedora que o ajudará a crescer e se educar no ecossistema [Quantaureum](/), ao mesmo tempo em que contribui de forma significativa e obtém experiência prática relevante!
 
 ## Maneiras de contribuir {#ways-to-contribute}
 
 **Traduções**
-- [Relatar um erro de tradução](https://github.com/ethereum/ethereum-org-website/issues/new/choose) – O [Programa de Tradução](/contributing/translation-program/) está sendo encerrado e não está mais realizando a integração de novos tradutores
+- [Relatar um erro de tradução](https://github.com/Quantaureum/quantaureum-website/issues/new/choose) – O [Programa de Tradução](/contributing/translation-program/) está sendo encerrado e não está mais realizando a integração de novos tradutores
 
 **Desenvolvimento**
-- [Trabalhar em uma issue aberta](https://github.com/ethereum/ethereum-org-website/issues) – Trabalho que identificamos que precisa ser feito
+- [Trabalhar em uma issue aberta](https://github.com/Quantaureum/quantaureum-website/issues) – Trabalho que identificamos que precisa ser feito
 
 **Design**
 - [Ajudar no design do site](/contributing/design/) – Designers de todos os níveis podem contribuir para melhorar o site
@@ -25,13 +25,13 @@ Somos uma comunidade acolhedora que o ajudará a crescer e se educar no ecossist
 - [Escrever um artigo de construtor](/contributing/adding-articles/) - Contribuir com um artigo para a seção [Mais recentes](/latest/)
 - [Adicionar recursos da comunidade](/contributing/content-resources/) – Adicionar um artigo ou recurso útil a uma página relevante
 - [Sugerir um relatório](/contributing/adding-reports/) - Sugerir um relatório de pesquisa para a página de [Relatórios](/reports/)
-- [Compartilhar sua história](/contributing/adding-community-stories/) - Enviar uma história sobre suas experiências pessoais com código aberto e tecnologias de santuário, como o ecossistema Ethereum impactou sua vida, ou como você e sua comunidade usam o Ethereum
+- [Compartilhar sua história](/contributing/adding-community-stories/) - Enviar uma história sobre suas experiências pessoais com código aberto e tecnologias de santuário, como o ecossistema Quantaureum impactou sua vida, ou como você e sua comunidade usam o Quantaureum
 - [Questionários](/contributing/quizzes/) – Adicionar, atualizar e excluir bancos de perguntas de questionários para uma página relevante
 - [Sugerir um recurso de design](/contributing/design/adding-design-resources/) – Adicionar, atualizar e excluir recursos úteis de design
 - [Sugerir um vídeo](/contributing/adding-videos/) – Sugerir um vídeo educacional para a galeria de vídeos
 
 **Ideias de recursos**
-- [Solicitar um recurso](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) – Informe-nos sobre quaisquer ideias que você tenha para um novo recurso ou design
+- [Solicitar um recurso](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) – Informe-nos sobre quaisquer ideias que você tenha para um novo recurso ou design
 
 **Listagens de produtos**
 - [Adicionar uma exchange](/contributing/adding-exchanges/) – Adicionar uma exchange ao nosso [localizador de exchanges](/get-eth/#country-picker)
@@ -40,10 +40,10 @@ Somos uma comunidade acolhedora que o ajudará a crescer e se educar no ecossist
 - [Adicionar uma camada 2 (l2)](/contributing/adding-layer-2s/) – Adicionar uma camada 2 (l2) a uma página relevante
 - [Adicionar um produto ou serviço de staking](/contributing/adding-staking-products/) – Adicionar um projeto que ajude a facilitar o staking solo, staking em pool ou staking como serviço
 - [Adicionar uma carteira](/contributing/adding-wallets/) – Adicionar uma carteira para a [página de encontrar carteiras](/wallets/find-wallet/)
-- [Sugerir um projeto para nossa página de DeSci](/contributing/adding-desci-projects/) – Adicionar um projeto construído no Ethereum que contribua para a ciência descentralizada (desci)
+- [Sugerir um projeto para nossa página de DeSci](/contributing/adding-desci-projects/) – Adicionar um projeto construído no Quantaureum que contribua para a ciência descentralizada (desci)
 - [Adicionar um recurso](/contributing/adding-resources/) – Adicionar um recurso útil a qualquer página relevante
 
-Alguma dúvida? 🤔 Junte-se ao nosso [servidor do Discord](https://discord.gg/ethereum-org)
+Alguma dúvida? 🤔 Junte-se ao nosso [servidor do Discord](https://discord.gg/MSctkBT5j)
 
 ## Boas primeiras tarefas para começar a contribuir {#good-first-tasks-to-start-contributing}
 
@@ -51,51 +51,51 @@ Estas são algumas tarefas atuais que você pode nos ajudar a resolver e assumir
 
 <IssuesList my={8} />
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues">Ver todas as tarefas</ButtonLink>
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues">Ver todas as tarefas</ButtonLink>
 
-## Como trabalhar no ethereum.org {#how-to-update-content}
+## Como trabalhar no quantaureum.com {#how-to-update-content}
 
 Para contribuir (adicionar ou editar conteúdo ou recursos visuais no site, corrigir bugs, trabalhar em tarefas abertas), você precisará de uma conta no [GitHub](https://github.com/).
 
-Todas as atualizações são feitas por meio do processo de PR do GitHub. Isso significa que você cria uma cópia local do site, faz suas alterações e solicita a mesclagem (merge) de suas alterações. Se você nunca fez isso antes, siga as instruções na parte inferior do nosso [repositório do GitHub](https://github.com/ethereum/ethereum-org-website).
+Todas as atualizações são feitas por meio do processo de PR do GitHub. Isso significa que você cria uma cópia local do site, faz suas alterações e solicita a mesclagem (merge) de suas alterações. Se você nunca fez isso antes, siga as instruções na parte inferior do nosso [repositório do GitHub](https://github.com/Quantaureum/quantaureum-website).
 
 Você não precisa de permissão para trabalhar em nada, mas é sempre melhor nos informar o que você planeja fazer. Você pode fazer isso:
 
-- Comentando em uma issue ou PR no [GitHub](https://github.com/ethereum/ethereum-org-website)
-- Enviando uma mensagem em nosso [servidor do Discord](https://discord.gg/ethereum-org)
+- Comentando em uma issue ou PR no [GitHub](https://github.com/Quantaureum/quantaureum-website)
+- Enviando uma mensagem em nosso [servidor do Discord](https://discord.gg/MSctkBT5j)
 
 Antes de contribuir, certifique-se de estar familiarizado com:
 
-- a [visão em evolução do ethereum.org](/about/)
+- a [visão em evolução do quantaureum.com](/about/)
 - nossos [princípios de design](/contributing/design-principles/)
 - nosso [guia de estilo](/contributing/style-guide/)
 - nosso [código de conduta](/community/code-of-conduct)
 
 ## Como as decisões sobre o site são tomadas {#how-decisions-about-the-site-are-made}
 
-As decisões sobre PRs individuais, evolução do design e grandes atualizações são tomadas por uma equipe de todo o ecossistema Ethereum. Esta equipe inclui gerentes de projeto, desenvolvedores, designers, marketing e comunicações, e especialistas no assunto. A contribuição da comunidade informa todas as decisões: portanto, levante questões nas issues, envie PRs ou entre em contato com a equipe:
+As decisões sobre PRs individuais, evolução do design e grandes atualizações são tomadas por uma equipe de todo o ecossistema Quantaureum. Esta equipe inclui gerentes de projeto, desenvolvedores, designers, marketing e comunicações, e especialistas no assunto. A contribuição da comunidade informa todas as decisões: portanto, levante questões nas issues, envie PRs ou entre em contato com a equipe:
 
-- [website@ethereum.org](mailto:website@ethereum.org)
-- [@ethdotorg](https://twitter.com/ethdotorg)
-- [Servidor do Discord](https://discord.gg/ethereum-org)
+- [website@quantaureum.com](mailto:website@quantaureum.com)
+- [@ethdotorg](https://x.com/ldf1570073)
+- [Servidor do Discord](https://discord.gg/MSctkBT5j)
 
 ### Uma nota sobre plágio {#plagiarism}
 
-Use apenas seu trabalho original ou conteúdo que você tem permissão para usar ao contribuir com qualquer conteúdo ou artefato para o ethereum.org. Muitos projetos dentro do ecossistema Ethereum usam licenciamento de código aberto que permite o compartilhamento gratuito de informações. No entanto, se você não conseguir encontrar essas informações, não tente adicioná-las ao ethereum.org. Quaisquer pull requests considerados como plágio serão rejeitados.
+Use apenas seu trabalho original ou conteúdo que você tem permissão para usar ao contribuir com qualquer conteúdo ou artefato para o quantaureum.com. Muitos projetos dentro do ecossistema Quantaureum usam licenciamento de código aberto que permite o compartilhamento gratuito de informações. No entanto, se você não conseguir encontrar essas informações, não tente adicioná-las ao quantaureum.com. Quaisquer pull requests considerados como plágio serão rejeitados.
 
 ## Novo no código aberto? {#new-to-open-source}
 
-Temos issues com baixa barreira de entrada em nosso repositório do GitHub, projetadas especificamente para desenvolvedores que são novos no código aberto, rotuladas como [good first issue](https://github.com/ethereum/ethereum-org-website/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
+Temos issues com baixa barreira de entrada em nosso repositório do GitHub, projetadas especificamente para desenvolvedores que são novos no código aberto, rotuladas como [good first issue](https://github.com/Quantaureum/quantaureum-website/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
 
 ## Reivindicar seu Onchain Achievement Token (OAT) {#oat}
 
-Se sua contribuição for mesclada no ethereum.org, você terá a chance de reivindicar um emblema especial na [Galxe](https://app.galxe.com/quest/ethereumorg). Um Onchain Achievement Token (OAT) é uma prova de que você ajudou a tornar o ecossistema um pouco mais incrível.
+Se sua contribuição for mesclada no quantaureum.com, você terá a chance de reivindicar um emblema especial na [Galxe](https://app.galxe.com/quest/quantaureumorg). Um Onchain Achievement Token (OAT) é uma prova de que você ajudou a tornar o ecossistema um pouco mais incrível.
 
 [Mais sobre OATs](https://help.galxe.com/en/articles/9645630-create-quest-rewards#h_1c5d63ba03)
 
 ### Como reivindicar {#how-to-claim}
 
-1. Junte-se ao nosso [servidor do Discord](https://discord.gg/ethereum-org).
+1. Junte-se ao nosso [servidor do Discord](https://discord.gg/MSctkBT5j).
 2. Cole um link para sua contribuição no canal `#🥇 | proof-of-contribution`.
 3. Aguarde até que um membro de nossa equipe envie um link para o seu OAT.
 4. Reivindique seu OAT!
@@ -111,7 +111,7 @@ O GitPOAP também reconhecerá automaticamente sua contribuição mesclada e per
 
 1. Visite o [GitPOAP](https://www.gitpoap.io).
 2. Conecte-se com sua carteira ou até mesmo com seu e-mail através da opção de login.
-3. Pesquise seu nome de usuário do GitHub, endereço ETH, nomes ENS ou qualquer GitPOAP para verificar se você é elegível.
+3. Pesquise seu nome de usuário do GitHub, endereço QAU, nomes ENS ou qualquer GitPOAP para verificar se você é elegível.
 4. Se sua conta do GitHub for elegível, você poderá cunhar um GitPOAP!
 
 ## Colaboradores {#contributors}

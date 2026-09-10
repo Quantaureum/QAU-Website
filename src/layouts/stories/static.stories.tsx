@@ -46,8 +46,8 @@ const baseArgs = {
   contributors: CONTRIBUTORS,
   contentNotTranslated: false,
   frontmatter: {
-    title: "Ethereum community",
-    description: "Meet the people building and using Ethereum.",
+    title: "Quantaureum community",
+    description: "Meet the people building and using Quantaureum.",
     lang: LANG,
   },
   children: <ArticleBody />,

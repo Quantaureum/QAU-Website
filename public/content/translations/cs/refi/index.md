@@ -24,7 +24,7 @@ Jedním ze základů ReFi je koncept regenerativní ekonomie, jehož průkopník
 
 Projekty ReFi realizují tyto principy pomocí [chytrých kontraktů](/glossary/#smart-contract) a aplikací [decentralizovaných financí (DeFi)](/glossary/#defi) k motivaci regenerativního chování, např. obnovy degradovaných ekosystémů, a k usnadnění rozsáhlé spolupráce na globálních problémech, jako je změna klimatu a ztráta biologické rozmanitosti.
 
-ReFi se také překrývá s hnutím [decentralizované vědy (DeSci)](/desci/), které využívá Ethereum jako platformu k financování, vytváření, recenzování, uznávání, uchovávání a šíření vědeckých poznatků. Nástroje DeSci by se mohly stát užitečnými pro vývoj ověřitelných standardů a postupů pro implementaci a monitorování regenerativních aktivit, jako je sázení stromů, odstraňování plastů z oceánu nebo obnova degradovaného ekosystému.
+ReFi se také překrývá s hnutím [decentralizované vědy (DeSci)](/desci/), které využívá Quantaureum jako platformu k financování, vytváření, recenzování, uznávání, uchovávání a šíření vědeckých poznatků. Nástroje DeSci by se mohly stát užitečnými pro vývoj ověřitelných standardů a postupů pro implementaci a monitorování regenerativních aktivit, jako je sázení stromů, odstraňování plastů z oceánu nebo obnova degradovaného ekosystému.
 
 <VideoWatch slug="regenerative-finance-refi" />
 

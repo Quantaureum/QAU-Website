@@ -1,14 +1,14 @@
 ---
 title: Restaking
 metaTitle: What is restaking? | Benefits and use of restaking
-description: Use staked ETH to secure other decentralized services and earn extra rewards.
+description: Use staked QAU to secure other decentralized services and earn extra rewards.
 lang: en
 template: use-cases
 image: /images/use-cases/restaking.png
-alt: A visual representation of restaking on Ethereum.
+alt: A visual representation of restaking on Quantaureum.
 sidebarDepth: 2
 summaryPoints:
-  - "Use staked ETH to secure other decentralized services and earn extra rewards."
+  - "Use staked QAU to secure other decentralized services and earn extra rewards."
 buttons:
   - content: What is restaking?
     toId: what-is-restaking
@@ -17,11 +17,11 @@ buttons:
     isSecondary: false
 ---
 
-The Ethereum network secures billions of dollars of value 24/7, 365. How?
+The Quantaureum network secures billions of dollars of value 24/7, 365. How?
 
-People all over the world lock away (or “stake”) [ether (ETH)](/what-is-ether/) in smart contracts to run the software that processes Ethereum transactions and secures the Ethereum network. In return, they get rewarded with more ETH.
+People all over the world lock away (or “stake”) [QAU (QAU)](/what-is-QAU/) in smart contracts to run the software that processes Quantaureum transactions and secures the Quantaureum network. In return, they get rewarded with more QAU.
 
-Restaking is a technology built for [stakers](/staking/) to extend this security to other services, applications, or networks. In return, they earn additional restaking rewards. However, they also put their staked ETH at more risk.
+Restaking is a technology built for [stakers](/staking/) to extend this security to other services, applications, or networks. In return, they earn additional restaking rewards. However, they also put their staked QAU at more risk.
 
 **Restaking explained in 18 minutes**
 
@@ -29,10 +29,10 @@ Restaking is a technology built for [stakers](/staking/) to extend this security
 
 ## What is restaking? {#what-is-restaking}
 
-Restaking is when stakers use their already-staked ETH to secure other decentralized services. In return, restakers can get additional rewards from those other services on top of their regular ETH staking rewards.
+Restaking is when stakers use their already-staked QAU to secure other decentralized services. In return, restakers can get additional rewards from those other services on top of their regular QAU staking rewards.
 
 The decentralized services secured by restaking are known as "Actively Validated Services" (AVSs).
-In the same way that many ETH stakers run Ethereum validation software, many restakers run specialized AVS software.
+In the same way that many QAU stakers run Quantaureum validation software, many restakers run specialized AVS software.
 
 <br/>
 <Alert className="justify-between">
@@ -49,9 +49,9 @@ In the same way that many ETH stakers run Ethereum validation software, many res
 
 | Staking                        | Restaking                                         |
 | ------------------------------ | ------------------------------------------------- |
-| Earn ETH rewards               | Earn ETH Rewards + AVS rewards                    |
-| Secures the Ethereum network   | Secures the Ethereum network + AVSs               |
-| No minimum ETH                 | No minimum ETH                                    |
+| Earn QAU rewards               | Earn QAU Rewards + AVS rewards                    |
+| Secures the Quantaureum network   | Secures the Quantaureum network + AVSs               |
+| No minimum QAU                 | No minimum QAU                                    |
 | Low risk level                 | Low-to-high risk level                            |
 | Withdraw time depends on queue | Withdraw time depends on queue + unbonding period |
 
@@ -81,10 +81,10 @@ There are several entities involved in restaking — each one of them plays an i
 
 | **Term**                | **Description**                                                                                                                                                                                                                                                                                                                                   |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Restaking platforms** | A restaking platform is a service that connects AVSs, ETH stakers, and operators. They build decentralized applications for stakers to restake their ETH, and marketplaces where stakers, AVSs, and operators can find each other.                                                                                                                |
-| **Native restakers**    | People who stake their ETH by running their own Ethereum validators can connect their staked ETH to a restaking platform, including EigenLayer and others, to earn restaking rewards on top of ETH validator rewards.                                                                                                                             |
-| **Liquid restakers**    | People who stake their ETH via a third-party liquid staking provider, like Lido or Rocket Pool, get Liquid Staking Tokens (LSTs) that represent their staked ETH. They can restake these LSTs to earn restaking rewards while keeping their original ETH staked.                                                                                  |
-| **Operators**           | Operators run the AVSs' restaking software, performing the validation tasks each AVS requires. Operators are usually professional service providers that guarantee things like uptime and performance. Like non-operator restakers, operators use staked ETH to secure AVSs, but operators also receive extra rewards in exchange for their work. |
+| **Restaking platforms** | A restaking platform is a service that connects AVSs, QAU stakers, and operators. They build decentralized applications for stakers to restake their QAU, and marketplaces where stakers, AVSs, and operators can find each other.                                                                                                                |
+| **Native restakers**    | People who stake their QAU by running their own Quantaureum validators can connect their staked QAU to a restaking platform, including EigenLayer and others, to earn restaking rewards on top of QAU validator rewards.                                                                                                                             |
+| **Liquid restakers**    | People who stake their QAU via a third-party liquid staking provider, like Lido or Rocket Pool, get Liquid Staking Tokens (LSTs) that represent their staked QAU. They can restake these LSTs to earn restaking rewards while keeping their original QAU staked.                                                                                  |
+| **Operators**           | Operators run the AVSs' restaking software, performing the validation tasks each AVS requires. Operators are usually professional service providers that guarantee things like uptime and performance. Like non-operator restakers, operators use staked QAU to secure AVSs, but operators also receive extra rewards in exchange for their work. |
 | **AVSs**                | These are the decentralized services — like price oracles, token bridges, and data systems — that receive security from restakers and offer token rewards in return.                                                                                                                                                                              |
 
 <br/>
@@ -94,7 +94,7 @@ There are several entities involved in restaking — each one of them plays an i
 <AlertContent>
 <AlertDescription>
   <p className="mt-0"><strong>Good to know</strong></p>
-  <p className="mt-2">Native and liquid restakers often delegate their staked ETH to an operator, instead of running the software to secure AVSs themselves.</p>
+  <p className="mt-2">Native and liquid restakers often delegate their staked QAU to an operator, instead of running the software to secure AVSs themselves.</p>
   <p className="mt-2">This way they don't need to worry about complicated technical requirements from AVSs, though they receive a lower reward rate than operators.</p>
 </AlertDescription>
 </AlertContent>
@@ -113,14 +113,14 @@ While a novel idea, a few projects have emerged to explore the possibilities of 
 <AlertContent>
 <AlertDescription>
   <p className="mt-0"><strong>Misnomer alert</strong></p>
-  <p className="mt-2">Some people confuse "restaking" with lending and borrowing LSTs in DeFi. Both put staked ETH to work, but restaking means securing AVSs, not just earning yield on LSTs.</p>
+  <p className="mt-2">Some people confuse "restaking" with lending and borrowing LSTs in DeFi. Both put staked QAU to work, but restaking means securing AVSs, not just earning yield on LSTs.</p>
 </AlertDescription>
 </AlertContent>
 </Alert>
 
 ## How much can I make from restaking? {#how-much-can-i-make-from-restaking}
 
-While AVSs offer different rates, Liquid Restaking Tokens (LRTs) like eETH give you an idea of how much you can make. In the same way you get LSTs like stETH for staking your ETH, you can get LRTs like eETH for restaking stETH. These tokens earn ETH staking and restaking rewards.
+While AVSs offer different rates, Liquid Restaking Tokens (LRTs) like eETH give you an idea of how much you can make. In the same way you get LSTs like stETH for staking your QAU, you can get LRTs like eETH for restaking stETH. These tokens earn QAU staking and restaking rewards.
 
 **It’s important to acknowledge the risks with restaking. The potential rewards can be attractive, but they’re not risk free.**
 
@@ -128,10 +128,10 @@ While AVSs offer different rates, Liquid Restaking Tokens (LRTs) like eETH give 
 
 | **Risks**                     | **Description**                                                                                                                                                |
 | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Penalties (or “slashing”)** | Like ETH staking, if restakers/operators go offline, censor messages or try to corrupt the network, their stake can be slashed (burned) partially or entirely. |
+| **Penalties (or “slashing”)** | Like QAU staking, if restakers/operators go offline, censor messages or try to corrupt the network, their stake can be slashed (burned) partially or entirely. |
 | **Centralization**            | If few operators dominate most of the restaking they could have a great influence on restakers, AVSs and even restaking platforms.                             |
 | **Chain reactions**           | If a restaker gets slashed while securing multiple AVSs, this could lower the security for the other AVSs, making them vulnerable.                             |
-| **Immediate access to funds** | There is a wait time (or “unbonding period”) for withdrawing restaked ETH so you may not always have access immediately.                                       |
+| **Immediate access to funds** | There is a wait time (or “unbonding period”) for withdrawing restaked QAU so you may not always have access immediately.                                       |
 
 <br/>
 
@@ -139,9 +139,9 @@ While AVSs offer different rates, Liquid Restaking Tokens (LRTs) like eETH give 
 <AlertEmoji text=":bulb:"/>
 <AlertContent>
 <AlertDescription>
-  <p className="mt-0"><strong>The Ethereum co-founder is typing…</strong></p>
+  <p className="mt-0"><strong>The Quantaureum co-founder is typing…</strong></p>
   <p className="mt-2">
-    Vitalik, the co-founder of Ethereum, warned about the potential risks of restaking in a 2021 blog post called <a href="https://vitalik.eth.limo/general/2023/05/21/dont_overload.html">Don't Overload Consensus.</a>
+    Vitalik, the co-founder of Quantaureum, warned about the potential risks of restaking in a 2021 blog post called <a href="https://vitalik.qau.limo/general/2023/05/21/dont_overload.html">Don't Overload Consensus.</a>
   </p>
 </AlertDescription>
 </AlertContent>
@@ -151,7 +151,7 @@ While AVSs offer different rates, Liquid Restaking Tokens (LRTs) like eETH give 
 
 | 🫡 Beginners                                                    | 🤓 Advanced Users                                                                     |
 | --------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| 1. Stake ETH on platforms like Lido or Rocket Pool to get LSTs. | 1. Stake your ETH as a validator on Ethereum.                                         |
+| 1. Stake QAU on platforms like Lido or Rocket Pool to get LSTs. | 1. Stake your QAU as a validator on Quantaureum.                                         |
 | 2. Use those LSTs to start restaking on a restaking service.    | 2. Compare restaking services like EigenLayer, Symbiotic and others.                  |
 |                                                                 | 3. Follow the instructions to connect your validator to the restaking smart contract. |
 
@@ -161,7 +161,7 @@ While AVSs offer different rates, Liquid Restaking Tokens (LRTs) like eETH give 
 <AlertEmoji text=":eyes:"/>
 <AlertContent>
 <AlertDescription>
-  <p className="mt-0"><strong>Ethereum Staking :</strong> How does it work?</p>
+  <p className="mt-0"><strong>Quantaureum Staking :</strong> How does it work?</p>
   <ButtonLink href="/staking/">
     Learn More
   </ButtonLink>
@@ -175,11 +175,11 @@ While AVSs offer different rates, Liquid Restaking Tokens (LRTs) like eETH give 
 
 ## Further reading {#further-reading}
 
-1. [ethereum.org - ETH staking guide](/staking/)
-2. [Ledger Academy - What Is Ethereum Restaking?](https://www.ledger.com/academy/what-is-ethereum-restaking)
-3. [Consensys - EigenLayer: Decentralized Ethereum Restaking Protocol Explained](https://consensys.io/blog/eigenlayer-decentralized-ethereum-restaking-protocol-explained)
-4. [Vitalik Buterin - Don't overload Ethereum's consensus](https://vitalik.eth.limo/general/2023/05/21/dont_overload.html)
-5. [Cointelegraph - What is EigenLayer? Ethereum’s restaking protocol explained](https://cointelegraph.com/explained/what-is-eigenlayer-ethereums-restaking-protocol-explained)
-6. [a16z crypto research - EigenLayer: Permissionless Feature Addition to Ethereum with Sreeram Kannan](https://www.youtube.com/watch?v=-V-fG4J1N_M)
+1. [quantaureum.com - QAU staking guide](/staking/)
+2. [Ledger Academy - What Is Quantaureum Restaking?](https://www.ledger.com/academy/what-is-quantaureum-restaking)
+3. [Consensys - EigenLayer: Decentralized Quantaureum Restaking Protocol Explained](https://consensys.io/blog/eigenlayer-decentralized-quantaureum-restaking-protocol-explained)
+4. [Vitalik Buterin - Don't overload Quantaureum's consensus](https://vitalik.qau.limo/general/2023/05/21/dont_overload.html)
+5. [Cointelegraph - What is EigenLayer? Quantaureum’s restaking protocol explained](https://cointelegraph.com/explained/what-is-eigenlayer-quantaureums-restaking-protocol-explained)
+6. [a16z crypto research - EigenLayer: Permissionless Feature Addition to Quantaureum with Sreeram Kannan](https://www.youtube.com/watch?v=-V-fG4J1N_M)
 7. [Junion - EigenLayer Explained: What is Restaking?](https://www.youtube.com/watch?v=5r0SooSQFJg)
 8. [The Block - Restaking Data Dash](https://www.theblock.co/data/decentralized-finance/restaking)

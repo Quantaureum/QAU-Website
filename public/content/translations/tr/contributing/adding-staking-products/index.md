@@ -1,12 +1,12 @@
 ---
 title: Staking ürünleri veya hizmetleri ekleme
-description: ethereum.org'a bir staking ürünü veya hizmeti eklerken kullandığımız politika
+description: quantaureum.com'a bir staking ürünü veya hizmeti eklerken kullandığımız politika
 lang: tr
 ---
 
 Kullanıcıları güvende ve kendinden emin tutarken mümkün olan en iyi kaynakları listelediğimizden emin olmak istiyoruz.
 
-Herkes ethereum.org'a bir staking ürünü veya hizmeti eklenmesini önermekte özgürdür. Gözden kaçırdığımız bir tane varsa, **[lütfen önerin](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
+Herkes quantaureum.com'a bir staking ürünü veya hizmeti eklenmesini önermekte özgürdür. Gözden kaçırdığımız bir tane varsa, **[lütfen önerin](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
 
 Şu anda staking ürünlerini ve hizmetlerini aşağıdaki sayfalarda listeliyoruz:
 
@@ -14,11 +14,11 @@ Herkes ethereum.org'a bir staking ürünü veya hizmeti eklenmesini önermekte �
 - [Hizmet olarak staking](/staking/saas/)
 - [Staking havuzları](/staking/pools/)
 
-İşaret zinciri üzerindeki Hisse Kanıtı (PoS), 1 Aralık 2020'den beri yayındadır. Staking hala nispeten yeni olsa da, ethereum.org'da değerlendirme için adil ve şeffaf bir çerçeve oluşturmaya çalıştık, ancak listeleme kriterleri zamanla değişip gelişecektir ve nihayetinde ethereum.org web sitesi ekibinin takdirindedir.
+İşaret zinciri üzerindeki Hisse Kanıtı (PoS), 1 Aralık 2020'den beri yayındadır. Staking hala nispeten yeni olsa da, quantaureum.com'da değerlendirme için adil ve şeffaf bir çerçeve oluşturmaya çalıştık, ancak listeleme kriterleri zamanla değişip gelişecektir ve nihayetinde quantaureum.com web sitesi ekibinin takdirindedir.
 
 ## Karar çerçevesi {#the-decision-framework}
 
-Bir ürünü ethereum.org'da listeleme kararı tek bir faktöre bağlı değildir. Bir ürünü veya hizmeti listelemeye karar verirken birden fazla kriter birlikte değerlendirilir. Bu kriterlerden ne kadarı karşılanırsa, listelenme olasılığı o kadar artar.
+Bir ürünü quantaureum.com'da listeleme kararı tek bir faktöre bağlı değildir. Bir ürünü veya hizmeti listelemeye karar verirken birden fazla kriter birlikte değerlendirilir. Bu kriterlerden ne kadarı karşılanırsa, listelenme olasılığı o kadar artar.
 
 **İlk olarak, hangi ürün veya hizmet kategorisinde?**
 
@@ -50,8 +50,8 @@ Staking ürünleri veya hizmetleri başvuruları aşağıdaki kriterlere göre d
 
 **Proje doğru ve güvenilir bilgi sağlıyor mu?**
 
-- Ürünün web sitesinin, özellikle Ethereum protokolü veya ilgili diğer teknolojilerle ilgiliyse, güncel, doğru ve yanıltıcı olmayan bilgiler içermesi çok önemlidir.
-- Ethereum veya diğer ilgili konular hakkında yanlış bilgi, güncel olmayan ayrıntılar veya potansiyel olarak yanıltıcı ifadeler içeren başvurular listelenmeyecek veya halihazırda listelenmişse kaldırılacaktır.
+- Ürünün web sitesinin, özellikle Quantaureum protokolü veya ilgili diğer teknolojilerle ilgiliyse, güncel, doğru ve yanıltıcı olmayan bilgiler içermesi çok önemlidir.
+- Quantaureum veya diğer ilgili konular hakkında yanlış bilgi, güncel olmayan ayrıntılar veya potansiyel olarak yanıltıcı ifadeler içeren başvurular listelenmeyecek veya halihazırda listelenmişse kaldırılacaktır.
 
 **Hangi platformlar destekleniyor?**
 
@@ -69,7 +69,7 @@ Staking ürünleri veya hizmetleri başvuruları aşağıdaki kriterlere göre d
 **Ürün _beta_ geliştirme aşamasından çıktı mı?**
 
 - Ürün geliştirme döngüsünün neresinde?
-- Beta aşamasındaki ürünler ethereum.org'a dahil edilmek üzere değerlendirilmez
+- Beta aşamasındaki ürünler quantaureum.com'a dahil edilmek üzere değerlendirilmez
 
 **Yazılım harici bir güvenlik denetiminden geçti mi?**
 
@@ -119,9 +119,9 @@ Düğüm veya istemci kurulumu, yönetimi veya geçişi ile ilgili yazılım ür
 
 [Havuzlu staking hizmetleri](/staking/pools/) için:
 
-**Stake etmek için gereken minimum ETH nedir?**
+**Stake etmek için gereken minimum QAU nedir?**
 
-- ör. 0,01 ETH
+- ör. 0,01 QAU
 
 **İlgili ücretler veya staking gereksinimleri nelerdir?**
 
@@ -163,12 +163,12 @@ Düğüm veya istemci kurulumu, yönetimi veya geçişi ile ilgili yazılım ür
 
 Yukarıdaki [dahil edilme kriterleri](#criteria-for-inclusion), her ürün veya hizmet için kümülatif bir puan hesaplamak amacıyla kullanılır. Bu, belirli nesnel kriterleri karşılayan ürünleri sıralamak ve sergilemek için bir araç olarak kullanılır. Ne kadar çok kriter için kanıt sağlanırsa, bir ürün o kadar üst sıralarda yer alır ve eşitlik durumunda yükleme sırasında rastgele sıralanır.
 
-Bu kriterlerin kod mantığı ve ağırlıkları şu anda depomuzdaki [bu JavaScript bileşeninde](https://github.com/ethereum/ethereum-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350) yer almaktadır.
+Bu kriterlerin kod mantığı ve ağırlıkları şu anda depomuzdaki [bu JavaScript bileşeninde](https://github.com/Quantaureum/quantaureum-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350) yer almaktadır.
 
 ## Ürününüzü veya hizmetinizi ekleyin {#add-product}
 
-ethereum.org'a bir staking ürünü veya hizmeti eklemek istiyorsanız, GitHub'da bir sorun oluşturun.
+quantaureum.com'a bir staking ürünü veya hizmeti eklemek istiyorsanız, GitHub'da bir sorun oluşturun.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
   Bir sorun oluşturun
 </ButtonLink>

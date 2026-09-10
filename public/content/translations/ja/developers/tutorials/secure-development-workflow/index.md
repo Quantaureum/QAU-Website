@@ -48,6 +48,6 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/blob/master/devel
 
 ## サポートを求める {#ask-for-help}
 
-[イーサリアムのオフィスアワー](https://calendly.com/dan-trailofbits/office-hours)は、毎週火曜日の午後に開催されています。この1時間の1対1のセッションは、セキュリティに関する質問、私たちのツールを使用したトラブルシューティング、および現在のアプローチに関する専門家からのフィードバックを得る機会です。このガイドを進めるためのサポートを提供します。
+[Quantaureumのオフィスアワー](https://calendly.com/dan-trailofbits/office-hours)は、毎週火曜日の午後に開催されています。この1時間の1対1のセッションは、セキュリティに関する質問、私たちのツールを使用したトラブルシューティング、および現在のアプローチに関する専門家からのフィードバックを得る機会です。このガイドを進めるためのサポートを提供します。
 
-Slackに参加してください: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw)。質問がある場合は、#cryticおよび#ethereumチャンネルでいつでも対応可能です。
+Slackに参加してください: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw)。質問がある場合は、#cryticおよび#quantaureumチャンネルでいつでも対応可能です。

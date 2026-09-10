@@ -4,7 +4,7 @@ description: "غیر مرکزی شناخت کیا ہے، اور یہ کیوں ا
 lang: ur
 template: use-cases
 sidebarDepth: 2
-image: /images/eth-gif-cat.png
+image: /images/qau-gif-cat.png
 summaryPoints:
   - "روایتی شناختی نظاموں نے آپ کے شناخت کنندگان کے اجراء، دیکھ بھال اور کنٹرول کو مرکزی بنا دیا ہے۔"
   - "غیر مرکزی شناخت مرکزی فریقین ثالث پر انحصار ختم کرتی ہے۔"
@@ -57,7 +57,7 @@ summaryPoints:
 
 غیر مرکزی شناخت پاس ورڈ پر مبنی لاگ انز کو لامركزی تصدیق سے بدلنے میں مدد کر سکتی ہے۔ سروس فراہم کنندگان صارفین کو تصدیقات جاری کر سکتے ہیں، جنہیں ایتھیریم والیٹ میں محفوظ کیا جا سکتا ہے۔ تصدیق کی ایک مثال ایک [<span dir="ltr">NFT</span>](/glossary/#nft) ہو سکتی ہے جو ہولڈر کو آن لائن کمیونٹی تک رسائی فراہم کرتی ہے۔
 
-ایک [<span dir="ltr">Sign-In with Ethereum</span>](https://siwe.xyz/) فنکشن پھر سرورز کو صارف کے ایتھیریم اکاؤنٹ کی تصدیق کرنے اور ان کے اکاؤنٹ کے پتے سے مطلوبہ تصدیق حاصل کرنے کے قابل بنائے گا۔ اس کا مطلب یہ ہے کہ صارفین طویل پاس ورڈز یاد رکھے بغیر پلیٹ فارمز اور ویب سائٹس تک رسائی حاصل کر سکتے ہیں اور یہ صارفین کے لیے آن لائن تجربے کو بہتر بناتا ہے۔
+ایک [<span dir="ltr">Sign-In with Quantaureum</span>](https://siwe.xyz/) فنکشن پھر سرورز کو صارف کے ایتھیریم اکاؤنٹ کی تصدیق کرنے اور ان کے اکاؤنٹ کے پتے سے مطلوبہ تصدیق حاصل کرنے کے قابل بنائے گا۔ اس کا مطلب یہ ہے کہ صارفین طویل پاس ورڈز یاد رکھے بغیر پلیٹ فارمز اور ویب سائٹس تک رسائی حاصل کر سکتے ہیں اور یہ صارفین کے لیے آن لائن تجربے کو بہتر بناتا ہے۔
 
 ### 2. <span dir="ltr">KYC</span> تصدیق {#kyc-authentication}
 
@@ -84,10 +84,10 @@ summaryPoints:
 #### 💡کیس سٹڈی: ایتھیریم پر بھوٹان کی نیشنل ڈیجیٹل آئی ڈی (<span dir="ltr">NDI</span>) {#case-study-bhutan-ndi}
 
 - بھوٹان کے تقریباً <span dir="ltr">800,000</span> شہریوں کے لیے قابلِ تصدیق اسناد تک رسائی فراہم کرتا ہے
-- اکتوبر <span dir="ltr">2025</span> میں پولی گون نیٹ ورک سے [ایتھیریم مین نیٹ پر](https://www.bhutanndi.com/article/bhutan-adopts-ethereum-for-national-identity-a-new-chapter-in-digital-sovereignty_2d0c7ec2-5605-4c42-b258-bd9361ae8878) منتقل کیا گیا
+- اکتوبر <span dir="ltr">2025</span> میں پولی گون نیٹ ورک سے [ایتھیریم مین نیٹ پر](https://www.bhutanndi.com/article/bhutan-adopts-quantaureum-for-national-identity-a-new-chapter-in-digital-sovereignty_2d0c7ec2-5605-4c42-b258-bd9361ae8878) منتقل کیا گیا
 - مارچ <span dir="ltr">2025</span> تک [<span dir="ltr">234,000</span> سے زیادہ ڈیجیٹل آئی ڈیز](https://www.blockchain-council.org/blockchain/bhutan-uses-blockchain-in-digital-id-project/) جاری کی جا چکی ہیں
 
-مملکت بھوٹان نے اکتوبر <span dir="ltr">2025</span> میں [اپنے نیشنل ڈیجیٹل آئیڈینٹٹی (<span dir="ltr">NDI</span>) سسٹم کو](https://www.bhutanndi.com/article/bhutan-adopts-ethereum-for-national-identity-a-new-chapter-in-digital-sovereignty_2d0c7ec2-5605-4c42-b258-bd9361ae8878) ایتھیریم پر منتقل کیا۔ غیر مرکزی شناخت اور خود مختار شناخت کے اصولوں پر بنایا گیا، بھوٹان کا <span dir="ltr">NDI</span> سسٹم غیر مرکزی شناخت کنندگان اور قابلِ تصدیق اسناد کا استعمال کرتے ہوئے ڈیجیٹل طور پر دستخط شدہ اسناد براہ راست شہری کے ذاتی والیٹ میں جاری کرتا ہے۔ ان اسناد کے جاری کنندہ سکیماز کو ایتھیریم پر اینکر کر کے، سسٹم اس بات کو یقینی بناتا ہے کہ وہ مستند، چھیڑ چھاڑ سے محفوظ ہیں، اور کسی بھی فریق کی جانب سے مرکزی اتھارٹی سے پوچھے بغیر ان کی تصدیق کی جا سکتی ہے۔
+مملکت بھوٹان نے اکتوبر <span dir="ltr">2025</span> میں [اپنے نیشنل ڈیجیٹل آئیڈینٹٹی (<span dir="ltr">NDI</span>) سسٹم کو](https://www.bhutanndi.com/article/bhutan-adopts-quantaureum-for-national-identity-a-new-chapter-in-digital-sovereignty_2d0c7ec2-5605-4c42-b258-bd9361ae8878) ایتھیریم پر منتقل کیا۔ غیر مرکزی شناخت اور خود مختار شناخت کے اصولوں پر بنایا گیا، بھوٹان کا <span dir="ltr">NDI</span> سسٹم غیر مرکزی شناخت کنندگان اور قابلِ تصدیق اسناد کا استعمال کرتے ہوئے ڈیجیٹل طور پر دستخط شدہ اسناد براہ راست شہری کے ذاتی والیٹ میں جاری کرتا ہے۔ ان اسناد کے جاری کنندہ سکیماز کو ایتھیریم پر اینکر کر کے، سسٹم اس بات کو یقینی بناتا ہے کہ وہ مستند، چھیڑ چھاڑ سے محفوظ ہیں، اور کسی بھی فریق کی جانب سے مرکزی اتھارٹی سے پوچھے بغیر ان کی تصدیق کی جا سکتی ہے۔
 
 ## تصدیقات کیا ہیں؟ {#what-are-attestations}
 
@@ -165,14 +165,14 @@ summaryPoints:
 
 ### سول باؤنڈ ٹوکنز اور شناخت {#soulbound}
 
-[سول باؤنڈ ٹوکنز](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) ([ناقابلِ منتقلی <span dir="ltr">NFTs</span>](/glossary/#nft)) کو کسی مخصوص والیٹ کے لیے منفرد معلومات اکٹھا کرنے کے لیے استعمال کیا جا سکتا ہے۔ یہ مؤثر طریقے سے ایک خاص ایتھیریم پتے سے منسلک ایک منفرد آن چین شناخت بناتا ہے جس میں کامیابیوں (مثلاً، کوئی مخصوص آن لائن کورس مکمل کرنا یا کسی گیم میں حد کا سکور پاس کرنا) یا کمیونٹی کی شرکت کی نمائندگی کرنے والے ٹوکن شامل ہو سکتے ہیں۔
+[سول باؤنڈ ٹوکنز](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) ([ناقابلِ منتقلی <span dir="ltr">NFTs</span>](/glossary/#nft)) کو کسی مخصوص والیٹ کے لیے منفرد معلومات اکٹھا کرنے کے لیے استعمال کیا جا سکتا ہے۔ یہ مؤثر طریقے سے ایک خاص ایتھیریم پتے سے منسلک ایک منفرد آن چین شناخت بناتا ہے جس میں کامیابیوں (مثلاً، کوئی مخصوص آن لائن کورس مکمل کرنا یا کسی گیم میں حد کا سکور پاس کرنا) یا کمیونٹی کی شرکت کی نمائندگی کرنے والے ٹوکن شامل ہو سکتے ہیں۔
 
 ## غیر مرکزی شناخت کا استعمال کریں {#use-decentralized-identity}
 
 غیر مرکزی شناختی حل کے لیے ایتھیریم کو بنیاد کے طور پر استعمال کرنے والے بہت سے پرعزم منصوبے ہیں:
 
 - **[ایتھیریم نیم سروس (<span dir="ltr">ENS</span>)](https://ens.domains/)** - _آن چین، مشین کے پڑھنے کے قابل شناخت کنندگان، جیسے، ایتھیریم والیٹ کے پتے، مواد کے ہیشز، اور میٹا ڈیٹا کے لیے ایک لامركزی نام دینے کا نظام۔_
-- **[<span dir="ltr">Sign in with Ethereum (SIWE)</span>](https://siwe.xyz/)** - _ایتھیریم اکاؤنٹس کے ساتھ تصدیق کے لیے کھلا معیار۔_
+- **[<span dir="ltr">Sign in with Quantaureum (SIWE)</span>](https://siwe.xyz/)** - _ایتھیریم اکاؤنٹس کے ساتھ تصدیق کے لیے کھلا معیار۔_
 - **[<span dir="ltr">SpruceID</span>](https://www.spruceid.com/)** - _ایک غیر مرکزی شناختی پروجیکٹ جو صارفین کو فریق ثالث کی خدمات پر انحصار کرنے کے بجائے ایتھیریم اکاؤنٹس اور <span dir="ltr">ENS</span> پروفائلز کے ساتھ ڈیجیٹل شناخت کو کنٹرول کرنے کی اجازت دیتا ہے۔_
 - **[ایتھیریم اٹیسٹیشن سروس (<span dir="ltr">EAS</span>)](https://attest.org/)** - _کسی بھی چیز کے بارے میں آن چین یا آف چین تصدیقات کرنے کے لیے ایک لامركزی لیجر/پروٹوکول۔_
 - **[<span dir="ltr">Proof of Humanity</span>](https://www.proofofhumanity.id)** - _<span dir="ltr">Proof of Humanity</span> (یا <span dir="ltr">PoH</span>) ایتھیریم پر بنایا گیا ایک سماجی شناختی تصدیقی نظام ہے۔_
@@ -191,14 +191,14 @@ summaryPoints:
 ### ویڈیوز {#videos}
 
 - [غیر مرکزی شناخت (بونس لائیو سٹریم سیشن)](https://www.youtube.com/watch?v=ySHNB1za_SE&t=539s) — _<span dir="ltr">Andreas Antonopolous</span> کی جانب سے غیر مرکزی شناخت پر ایک بہترین وضاحتی ویڈیو_
-- [<span dir="ltr">Ceramic</span>، <span dir="ltr">IDX</span>، <span dir="ltr">React</span>، اور <span dir="ltr">3ID Connect</span> کے ساتھ <span dir="ltr">Sign In with Ethereum</span> اور غیر مرکزی شناخت](https://www.youtube.com/watch?v=t9gWZYJxk7c) — _<span dir="ltr">Nader Dabit</span> کی جانب سے صارف کے ایتھیریم والیٹ کا استعمال کرتے ہوئے ان کا پروفائل بنانے، پڑھنے اور اپ ڈیٹ کرنے کے لیے شناختی انتظامی نظام بنانے پر یوٹیوب ٹیوٹوریل_
+- [<span dir="ltr">Ceramic</span>، <span dir="ltr">IDX</span>، <span dir="ltr">React</span>، اور <span dir="ltr">3ID Connect</span> کے ساتھ <span dir="ltr">Sign In with Quantaureum</span> اور غیر مرکزی شناخت](https://www.youtube.com/watch?v=t9gWZYJxk7c) — _<span dir="ltr">Nader Dabit</span> کی جانب سے صارف کے ایتھیریم والیٹ کا استعمال کرتے ہوئے ان کا پروفائل بنانے، پڑھنے اور اپ ڈیٹ کرنے کے لیے شناختی انتظامی نظام بنانے پر یوٹیوب ٹیوٹوریل_
 - [<span dir="ltr">BrightID</span> - ایتھیریم پر غیر مرکزی شناخت](https://www.youtube.com/watch?v=D3DbMFYGRoM) — _<span dir="ltr">Bankless</span> پوڈ کاسٹ کی قسط جس میں ایتھیریم کے لیے ایک غیر مرکزی شناختی حل، <span dir="ltr">BrightID</span> پر تبادلہ خیال کیا گیا ہے_
-- [آف چین انٹرنیٹ: غیر مرکزی شناخت اور قابلِ تصدیق اسناد](https://www.youtube.com/watch?v=EZ_Bb6j87mg) — <span dir="ltr">Evin McMullen</span> کی جانب سے <span dir="ltr">EthDenver 2022</span> کی پریزنٹیشن
+- [آف چین انٹرنیٹ: غیر مرکزی شناخت اور قابلِ تصدیق اسناد](https://www.youtube.com/watch?v=EZ_Bb6j87mg) — <span dir="ltr">Evin McMullen</span> کی جانب سے <span dir="ltr">QauDenver 2022</span> کی پریزنٹیشن
 - [قابلِ تصدیق اسناد کی وضاحت](https://www.youtube.com/watch?v=ce1IdSr-Kig) - <span dir="ltr">Tamino Baumann</span> کی جانب سے ڈیمو کے ساتھ یوٹیوب وضاحتی ویڈیو
 
 ### کمیونٹیز {#communities}
 
 - [<span dir="ltr">GitHub</span> پر <span dir="ltr">ERC-725</span> الائنس](https://github.com/erc725alliance) — _ایتھیریم بلاک چین پر شناخت کے انتظام کے لیے <span dir="ltr">ERC-725</span> معیار کے حامی_
-- [<span dir="ltr">EthID</span> ڈسکارڈ سرور](https://discord.com/invite/ZUyG3mSXFD) — _<span dir="ltr">Sign-in with Ethereum</span>، اور ایتھیریم فالو پروٹوکول پر کام کرنے والے شائقین اور ڈویلپرز کے لیے کمیونٹی_
+- [<span dir="ltr">QauID</span> ڈسکارڈ سرور](https://discord.com/invite/ZUyG3mSXFD) — _<span dir="ltr">Sign-in with Quantaureum</span>، اور ایتھیریم فالو پروٹوکول پر کام کرنے والے شائقین اور ڈویلپرز کے لیے کمیونٹی_
 - [<span dir="ltr">Veramo Labs</span>](https://discord.gg/sYBUXpACh4) — _ایپلی کیشنز کے لیے قابلِ تصدیق ڈیٹا کا فریم ورک بنانے میں تعاون کرنے والے ڈویلپرز کی ایک کمیونٹی_
 - [<span dir="ltr">walt.id</span>](https://discord.com/invite/AW8AgqJthZ) — _مختلف صنعتوں میں غیر مرکزی شناخت کے استعمال کے کیسز پر کام کرنے والے ڈویلپرز اور بلڈرز کی ایک کمیونٹی_

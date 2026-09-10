@@ -1,5 +1,5 @@
 /**
- * Syncs network upgrade facts from ethereum/forkcast into the generated store.
+ * Syncs network upgrade facts from quantaureum/forkcast into the generated store.
  *
  *   pnpm sync-upgrades
  *

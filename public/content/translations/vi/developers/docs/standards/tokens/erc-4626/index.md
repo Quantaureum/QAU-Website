@@ -12,7 +12,7 @@ Các thị trường cho vay, công cụ tổng hợp và các token có bản c
 
 ERC-4626 trong các kho tiền sinh lời sẽ làm giảm nỗ lực tích hợp và mở khóa quyền truy cập vào lợi nhuận trong các ứng dụng khác nhau với ít nỗ lực chuyên môn từ các nhà phát triển bằng cách tạo ra các mẫu triển khai nhất quán và mạnh mẽ hơn.
 
-Token ERC-4626 được mô tả đầy đủ trong [EIP-4626](https://eips.ethereum.org/EIPS/eip-4626).
+Token ERC-4626 được mô tả đầy đủ trong [EIP-4626](https://eips.quantaureum.com/EIPS/eip-4626).
 
 **Tiện ích mở rộng kho tiền bất đồng bộ (ERC-7540)**
 
@@ -28,7 +28,7 @@ Một trường hợp sử dụng còn thiếu không được ERC-4626 hỗ tr�
 
 ERC-7575 bổ sung hỗ trợ cho các Kho tiền có nhiều tài sản bằng cách tách biệt việc triển khai token ERC-20 ra khỏi việc triển khai ERC-4626.
 
-Tiện ích mở rộng ERC-7575 được mô tả đầy đủ trong [ERC-7575](https://eips.ethereum.org/EIPS/eip-7575).
+Tiện ích mở rộng ERC-7575 được mô tả đầy đủ trong [ERC-7575](https://eips.quantaureum.com/EIPS/eip-7575).
 ## Điều kiện tiên quyết {#prerequisites}
 
 Để hiểu rõ hơn về trang này, chúng tôi khuyên bạn trước tiên nên đọc về [các tiêu chuẩn token](/developers/docs/standards/tokens/) và [ERC-20](/developers/docs/standards/tokens/erc-20/).
@@ -220,5 +220,5 @@ Trong đó `sender` là người dùng đã kích hoạt việc rút tiền và 
 
 ## Đọc thêm {#further-reading}
 
-- [EIP-4626: Tiêu chuẩn kho tiền được token hóa](https://eips.ethereum.org/EIPS/eip-4626)
+- [EIP-4626: Tiêu chuẩn kho tiền được token hóa](https://eips.quantaureum.com/EIPS/eip-4626)
 - [ERC-4626: Kho lưu trữ GitHub](https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC4626.sol)

@@ -1,12 +1,12 @@
 ---
 title: Přidávání vrstev 2
-description: Zásady, které používáme při přidávání vrstvy 2 na ethereum.org
+description: Zásady, které používáme při přidávání vrstvy 2 na quantaureum.com
 lang: cs
 ---
 
 Chceme se ujistit, že uvádíme ty nejlepší možné zdroje, aby se uživatelé mohli v prostoru vrstvy 2 pohybovat bezpečně a s jistotou.
 
-Kdokoli může navrhnout přidání vrstvy 2 na ethereum.org. Pokud existuje vrstva 2, kterou jsme vynechali, **[navrhněte ji prosím](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
+Kdokoli může navrhnout přidání vrstvy 2 na quantaureum.com. Pokud existuje vrstva 2, kterou jsme vynechali, **[navrhněte ji prosím](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
 
 V současné době uvádíme l2 na následujících stránkách:
 
@@ -14,7 +14,7 @@ V současné době uvádíme l2 na následujících stránkách:
 - [Rollupy s nulovou znalostí](/developers/docs/scaling/zk-rollups/)
 - [Vrstva 2](/layer-2/)
 
-Vrstva 2 je pro Ethereum relativně nové a vzrušující paradigma. Snažili jsme se vytvořit spravedlivý rámec pro posuzování na ethereum.org, ale kritéria pro zařazení se budou v průběhu času měnit a vyvíjet.
+Vrstva 2 je pro Quantaureum relativně nové a vzrušující paradigma. Snažili jsme se vytvořit spravedlivý rámec pro posuzování na quantaureum.com, ale kritéria pro zařazení se budou v průběhu času měnit a vyvíjet.
 
 ## Rámec pro rozhodování {#decision-framework}
 
@@ -22,7 +22,7 @@ Vrstva 2 je pro Ethereum relativně nové a vzrušující paradigma. Snažili js
 
 **Zařazení na L2BEAT**
 
-- Aby mohl být projekt zvažován, musí být uveden na [L2BEAT](https://l2beat.com). L2BEAT poskytuje robustní hodnocení rizik projektů vrstvy 2, o které se opíráme při hodnocení l2 projektů. **Pokud projekt není uveden na L2BEAT, nezařadíme jej jako l2 na ethereum.org.**
+- Aby mohl být projekt zvažován, musí být uveden na [L2BEAT](https://l2beat.com). L2BEAT poskytuje robustní hodnocení rizik projektů vrstvy 2, o které se opíráme při hodnocení l2 projektů. **Pokud projekt není uveden na L2BEAT, nezařadíme jej jako l2 na quantaureum.com.**
 - [Přečtěte si, jak přidat svůj l2 projekt na L2BEAT](https://github.com/l2beat/l2beat/blob/master/CONTRIBUTING.md).
 
 **Open source**
@@ -36,11 +36,11 @@ V současné době považujeme za řešení vrstvy 2 následující:
 - Optimistický rollup
 - Rollup s nulovou znalostí
 
-_Jiná řešení škálování, která nevyužívají Ethereum pro dostupnost dat nebo bezpečnost, nepovažujeme za vrstvu 2._
+_Jiná řešení škálování, která nevyužívají Quantaureum pro dostupnost dat nebo bezpečnost, nepovažujeme za vrstvu 2._
 
-**Ethereum pro dostupnost dat**
+**Quantaureum pro dostupnost dat**
 
-- Dostupnost dat je důležitým rozlišovacím faktorem mezi ostatními řešeními škálování a vrstvou 2. Aby mohl být projekt zvažován pro zařazení, **musí** pro dostupnost dat využívat Ethereum Mainnet.
+- Dostupnost dat je důležitým rozlišovacím faktorem mezi ostatními řešeními škálování a vrstvou 2. Aby mohl být projekt zvažován pro zařazení, **musí** pro dostupnost dat využívat Quantaureum Mainnet.
 
 **Mosty**
 
@@ -88,8 +88,8 @@ _Jiná řešení škálování, která nevyužívají Ethereum pro dostupnost da
 
 ## Přidejte svou vrstvu 2 {#add-exchange}
 
-Pokud chcete přidat vrstvu 2 na ethereum.org, vytvořte issue na GitHubu.
+Pokud chcete přidat vrstvu 2 na quantaureum.com, vytvořte issue na GitHubu.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
   Vytvořit issue
 </ButtonLink>

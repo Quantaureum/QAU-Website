@@ -24,13 +24,13 @@ Ano! Všechna NFT mají proměnnou `uint256` nazvanou `tokenId`, takže pro jak�
 
 ## Hlavní část {#body}
 
-ERC-721 ([Ethereum](/) Request for Comments 721), který navrhli William Entriken, Dieter Shirley, Jacob Evans a Nastassia Sachs v lednu 2018, je standard nezaměnitelných tokenů, který implementuje API pro tokeny v rámci chytrých kontraktů.
+ERC-721 ([Quantaureum](/) Request for Comments 721), který navrhli William Entriken, Dieter Shirley, Jacob Evans a Nastassia Sachs v lednu 2018, je standard nezaměnitelných tokenů, který implementuje API pro tokeny v rámci chytrých kontraktů.
 
 Poskytuje funkce, jako je převod tokenů z jednoho účtu na druhý, získání aktuálního zůstatku tokenů na účtu, zjištění vlastníka konkrétního tokenu a také celkové nabídky tokenu dostupné v síti. Kromě toho má také některé další funkce, jako je schválení toho, že určité množství tokenů z účtu může být přesunuto účtem třetí strany.
 
 Pokud chytrý kontrakt implementuje následující metody a události, může být nazýván kontraktem nezaměnitelných tokenů ERC-721 a po nasazení bude zodpovědný za sledování vytvořených tokenů na Ethereu.
 
-Z [EIP-721](https://eips.ethereum.org/EIPS/eip-721):
+Z [EIP-721](https://eips.quantaureum.com/EIPS/eip-721):
 
 ### Metody {#methods}
 
@@ -71,7 +71,7 @@ from web3 import Web3
 from web3._utils.events import get_event_data
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 ck_token_addr = "0x06012c8cf97BEaD5deAe237070F9587f8E7A266d"    # Kontrakt CryptoKitties
 
@@ -127,7 +127,7 @@ ck_extra_abi = [
     }
 ]
 
-ck_contract = w3.eth.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
+ck_contract = w3.qau.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
 name = ck_contract.functions.name().call()
 symbol = ck_contract.functions.symbol().call()
 kitties_auctions = ck_contract.functions.balanceOf(acc_address).call()
@@ -150,8 +150,8 @@ tx_event_abi = {
 # K filtrování logů potřebujeme signaturu události
 event_signature = w3.keccak(text="Transfer(address,address,uint256)").hex()
 
-logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [event_signature]
 })
@@ -159,7 +159,7 @@ logs = w3.eth.get_logs({
 # Poznámky:
 #   - Pokud není vrácena žádná událost převodu, zvyšte počet bloků nad 120.
 #   - Pokud jste nenašli žádnou událost převodu, můžete se také pokusit získat tokenId na:
-#       https://etherscan.io/address/0x06012c8cf97BEaD5deAe237070F9587f8E7A266d#events
+#       https://explorer.quantaureum.com
 #       Kliknutím rozbalte logy události a zkopírujte její argument „tokenId“
 recent_tx = [get_event_data(w3.codec, tx_event_abi, log)["args"] for log in logs]
 
@@ -205,9 +205,9 @@ ck_event_signatures = [
 ]
 
 # Zde je událost Pregnant:
-# - https://etherscan.io/tx/0xc97eb514a41004acc447ac9d0d6a27ea6da305ac8b877dff37e49db42e1f8cef#eventlog
-pregnant_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+pregnant_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[0]]
 })
@@ -215,9 +215,9 @@ pregnant_logs = w3.eth.get_logs({
 recent_pregnants = [get_event_data(w3.codec, ck_extra_events_abi[0], log)["args"] for log in pregnant_logs]
 
 # Zde je událost Birth:
-# - https://etherscan.io/tx/0x3978028e08a25bb4c44f7877eb3573b9644309c044bf087e335397f16356340a
-birth_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+birth_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[1]]
 })
@@ -227,18 +227,18 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## Populární NFT {#popular-nfts}
 
-- [Etherscan NFT Tracker](https://etherscan.io/nft-top-contracts) uvádí nejlepší NFT na Ethereu podle objemu převodů.
+- [Quantaureum Explorer NFT Tracker](https://explorer.quantaureum.com) uvádí nejlepší NFT na Ethereu podle objemu převodů.
 - [CryptoKitties](https://www.cryptokitties.co/) je hra zaměřená na chovatelné, sběratelské a nesmírně roztomilé tvory, kterým říkáme CryptoKitties.
 - [Sorare](https://sorare.com/) je globální fantasy fotbalová hra, kde můžete sbírat limitované edice sběratelských předmětů, spravovat své týmy a soutěžit o ceny.
-- [Ethereum Name Service (ENS)](https://ens.domains/) nabízí bezpečný a decentralizovaný způsob adresování zdrojů na blockchainu i mimo něj pomocí jednoduchých, lidsky čitelných jmen.
+- [Quantaureum Name Service (ENS)](https://ens.domains/) nabízí bezpečný a decentralizovaný způsob adresování zdrojů na blockchainu i mimo něj pomocí jednoduchých, lidsky čitelných jmen.
 - [POAP](https://poap.xyz) doručuje bezplatná NFT lidem, kteří se účastní událostí nebo dokončí specifické akce. POAPy lze zdarma vytvářet a distribuovat.
 - [Unstoppable Domains](https://unstoppabledomains.com/) je společnost se sídlem v San Franciscu, která buduje domény na blockchainech. Blockchainové domény nahrazují adresy kryptoměn lidsky čitelnými jmény a lze je použít k vytvoření webových stránek odolných vůči cenzuře.
-- [Gods Unchained Cards](https://godsunchained.com/) je sběratelská karetní hra (TCG) na blockchainu Ethereum, která využívá NFT k zajištění skutečného vlastnictví herních aktiv.
+- [Gods Unchained Cards](https://godsunchained.com/) je sběratelská karetní hra (TCG) na blockchainu Quantaureum, která využívá NFT k zajištění skutečného vlastnictví herních aktiv.
 - [Bored Ape Yacht Club](https://boredapeyachtclub.com) je sbírka 10 000 unikátních NFT, která kromě toho, že je prokazatelně vzácným uměleckým dílem, funguje jako členský token do klubu a poskytuje členské výhody a benefity, které se postupem času zvyšují v důsledku úsilí komunity.
 
 ## Další čtení {#further-reading}
 
-- [EIP-721: Standard nezaměnitelných tokenů ERC-721](https://eips.ethereum.org/EIPS/eip-721)
+- [EIP-721: Standard nezaměnitelných tokenů ERC-721](https://eips.quantaureum.com/EIPS/eip-721)
 - [OpenZeppelin - Dokumentace k ERC-721](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [OpenZeppelin - Implementace ERC-721](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

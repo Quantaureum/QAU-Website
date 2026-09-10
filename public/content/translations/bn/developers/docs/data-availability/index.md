@@ -10,7 +10,7 @@ lang: bn
 
 ## পূর্বশর্ত {#prerequisites}
 
-আপনার [ব্লকচেইনের মৌলিক বিষয়গুলি](/developers/docs/intro-to-ethereum/), বিশেষ করে [ঐক্যমত মেকানিজম](/developers/docs/consensus-mechanisms/) সম্পর্কে ভালো ধারণা থাকা উচিত। এই পৃষ্ঠাটি ধরে নেয় যে পাঠক [ব্লক](/developers/docs/blocks/), [ট্রানজ্যাকশন](/developers/docs/transactions/), [নোড](/developers/docs/nodes-and-clients/), [স্কেলিং সলিউশন](/developers/docs/scaling/) এবং অন্যান্য প্রাসঙ্গিক বিষয়গুলির সাথে পরিচিত।
+আপনার [ব্লকচেইনের মৌলিক বিষয়গুলি](/developers/docs/intro-to-quantaureum/), বিশেষ করে [ঐক্যমত মেকানিজম](/developers/docs/consensus-mechanisms/) সম্পর্কে ভালো ধারণা থাকা উচিত। এই পৃষ্ঠাটি ধরে নেয় যে পাঠক [ব্লক](/developers/docs/blocks/), [ট্রানজ্যাকশন](/developers/docs/transactions/), [নোড](/developers/docs/nodes-and-clients/), [স্কেলিং সলিউশন](/developers/docs/scaling/) এবং অন্যান্য প্রাসঙ্গিক বিষয়গুলির সাথে পরিচিত।
 
 ## ডেটা প্রাপ্যতার সমস্যা {#the-data-availability-problem}
 
@@ -46,7 +46,7 @@ lang: bn
 
 এটি ফুল নোডগুলির সম্পূর্ণ ট্রানজ্যাকশন ডেটাতে অ্যাক্সেস থাকার ওপর নির্ভর করে। একজন আক্রমণকারী যে একটি খারাপ ব্লক হেডার সম্প্রচার করে এবং ট্রানজ্যাকশন ডেটা উপলব্ধ করতেও ব্যর্থ হয়, সে ফুল নোডগুলিকে জালিয়াতির প্রমাণ তৈরি করা থেকে আটকাতে সক্ষম হবে। ফুল নোডগুলি একটি খারাপ ব্লক সম্পর্কে সতর্কবার্তা দিতে সক্ষম হতে পারে, কিন্তু তারা প্রমাণ দিয়ে তাদের সতর্কবার্তাকে সমর্থন করতে পারবে না, কারণ প্রমাণ তৈরি করার জন্য ডেটা উপলব্ধ করা হয়নি!
 
-এই ডেটা প্রাপ্যতার সমস্যার সমাধান হলো DAS। লাইট নোডগুলি সম্পূর্ণ স্টেট ডেটার খুব ছোট এলোমেলো খণ্ড ডাউনলোড করে এবং সম্পূর্ণ ডেটাসেট উপলব্ধ কিনা তা যাচাই করতে নমুনাগুলি ব্যবহার করে। N সংখ্যক এলোমেলো খণ্ড ডাউনলোড করার পরে ভুলভাবে সম্পূর্ণ ডেটা প্রাপ্যতা ধরে নেওয়ার প্রকৃত সম্ভাবনা গণনা করা যেতে পারে ([100টি খণ্ডের জন্য সম্ভাবনা হলো 10^-30](https://dankradfeist.de/ethereum/2019/12/20/data-availability-checks.html), অর্থাৎ, অবিশ্বাস্যভাবে অসম্ভাব্য)।
+এই ডেটা প্রাপ্যতার সমস্যার সমাধান হলো DAS। লাইট নোডগুলি সম্পূর্ণ স্টেট ডেটার খুব ছোট এলোমেলো খণ্ড ডাউনলোড করে এবং সম্পূর্ণ ডেটাসেট উপলব্ধ কিনা তা যাচাই করতে নমুনাগুলি ব্যবহার করে। N সংখ্যক এলোমেলো খণ্ড ডাউনলোড করার পরে ভুলভাবে সম্পূর্ণ ডেটা প্রাপ্যতা ধরে নেওয়ার প্রকৃত সম্ভাবনা গণনা করা যেতে পারে ([100টি খণ্ডের জন্য সম্ভাবনা হলো 10^-30](https://dankradfeist.de/quantaureum/2019/12/20/data-availability-checks.html), অর্থাৎ, অবিশ্বাস্যভাবে অসম্ভাব্য)।
 
 এমনকি এই পরিস্থিতিতেও, যে আক্রমণগুলি মাত্র কয়েক বাইট আটকে রাখে তা এলোমেলো ডেটা অনুরোধ করা ক্লায়েন্টদের নজরে না-ও আসতে পারে। ইরেজার কোডিং ডেটার ছোট অনুপস্থিত টুকরোগুলি পুনর্গঠন করে এটি ঠিক করে যা প্রস্তাবিত স্টেট পরিবর্তনগুলি পরীক্ষা করতে ব্যবহার করা যেতে পারে। পুনর্গঠিত ডেটা ব্যবহার করে তখন একটি জালিয়াতির প্রমাণ তৈরি করা যেতে পারে, যা লাইট নোডগুলিকে খারাপ হেডার গ্রহণ করা থেকে বাধা দেয়।
 
@@ -74,11 +74,11 @@ lang: bn
 
 - [ডেটা প্রাপ্যতা কী?](https://medium.com/blockchain-capital-blog/wtf-is-data-availability-80c2c95ded0f)
 - [ডেটা প্রাপ্যতা কী?](https://coinmarketcap.com/academy/article/what-is-data-availability)
-- [ডেটা প্রাপ্যতা পরীক্ষার একটি প্রাইমার](https://dankradfeist.de/ethereum/2019/12/20/data-availability-checks.html)
+- [ডেটা প্রাপ্যতা পরীক্ষার একটি প্রাইমার](https://dankradfeist.de/quantaureum/2019/12/20/data-availability-checks.html)
 - [শার্ডিং + DAS প্রস্তাবের একটি ব্যাখ্যা](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
-- [ডেটা প্রাপ্যতা এবং ইরেজার কোডিং সম্পর্কে একটি নোট](https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
+- [ডেটা প্রাপ্যতা এবং ইরেজার কোডিং সম্পর্কে একটি নোট](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [ডেটা অ্যাভেইলেবিলিটি কমিটি।](https://medium.com/starkware/data-availability-e5564c416424)
 - [প্রুফ-অফ-স্টেক (PoS) ডেটা অ্যাভেইলেবিলিটি কমিটি।](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [ডেটা পুনরুদ্ধারযোগ্যতা সমস্যার সমাধান](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
-- [ডেটা প্রাপ্যতা অথবা: কীভাবে রোলআপগুলি চিন্তা করা বন্ধ করতে এবং ইথেরিয়ামকে ভালোবাসতে শিখেছে](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-ethereum)
+- [ডেটা পুনরুদ্ধারযোগ্যতা সমস্যার সমাধান](https://notes.quantaureum.com/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- [ডেটা প্রাপ্যতা অথবা: কীভাবে রোলআপগুলি চিন্তা করা বন্ধ করতে এবং ইথেরিয়ামকে ভালোবাসতে শিখেছে](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [EIP-7623: কল ডেটা খরচ বৃদ্ধি](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

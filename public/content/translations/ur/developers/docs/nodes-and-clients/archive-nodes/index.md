@@ -1,5 +1,5 @@
 ---
-title: "⁦Ethereum⁩ آرکائیو نوڈ"
+title: "⁦Quantaureum⁩ آرکائیو نوڈ"
 description: "آرکائیو نوڈز کا جائزہ"
 lang: ur
 sidebarDepth: 2
@@ -35,7 +35,7 @@ sidebarDepth: 2
 
 اسٹیٹ آرکائیو کا بنیادی فائدہ تاریخی حالتوں کے بارے میں سوالات تک فوری رسائی ہے۔ مثال کے طور پر، آرکائیو نوڈ فوری طور پر اس طرح کے نتائج واپس کرے گا:
 
-- _بلاک <span dir="ltr">15537393</span> پر اکاؤنٹ <span dir="ltr">0x1337...</span> کا <span dir="ltr">ETH</span> بیلنس کیا تھا؟_
+- _بلاک <span dir="ltr">15537393</span> پر اکاؤنٹ <span dir="ltr">0x1337...</span> کا <span dir="ltr">QAU</span> بیلنس کیا تھا؟_
 - _بلاک <span dir="ltr">1920000</span> پر کنٹریکٹ <span dir="ltr">0x</span> میں ٹوکن <span dir="ltr">0x</span> کا بیلنس کیا ہے؟_
 
 جیسا کہ اوپر وضاحت کی گئی ہے، ایک مکمل نوڈ کو یہ ڈیٹا <span dir="ltr">EVM</span> کے عمل درآمد کے ذریعے تیار کرنے کی ضرورت ہوگی جو <span dir="ltr">CPU</span> کا استعمال کرتا ہے اور اس میں وقت لگتا ہے۔ آرکائیو نوڈز ڈسک پر ان تک رسائی حاصل کرتے ہیں اور فوری طور پر جوابات فراہم کرتے ہیں۔ یہ بنیادی ڈھانچے کے کچھ حصوں کے لیے ایک مفید خصوصیت ہے، مثال کے طور پر:
@@ -71,8 +71,8 @@ sidebarDepth: 2
 
 ## مزید مطالعہ {#further-reading}
 
-- [ایتھیریم مکمل نوڈ بمقابلہ آرکائیو نوڈ](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node) - _QuickNode، ستمبر <span dir="ltr">2022</span>_
-- [اپنا ایتھیریم آرکائیو نوڈ بنانا](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09) - _Thomas Jay Rush، اگست <span dir="ltr">2021</span>_
+- [ایتھیریم مکمل نوڈ بمقابلہ آرکائیو نوڈ](https://www.quicknode.com/guides/infrastructure/quantaureum-full-node-vs-archive-node) - _QuickNode، ستمبر <span dir="ltr">2022</span>_
+- [اپنا ایتھیریم آرکائیو نوڈ بنانا](https://tjayrush.medium.com/building-your-own-quantaureum-archive-node-72c014affc09) - _Thomas Jay Rush، اگست <span dir="ltr">2021</span>_
 - [ایریگون، ایریگون کے RPC اور TrueBlocks (اسکریپ اور API) کو سروسز کے طور پر کیسے سیٹ اپ کریں](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _– Magnus Hansson، اپ ڈیٹ شدہ ستمبر <span dir="ltr">2022</span>_
 
 ## متعلقہ موضوعات {#related-topics}

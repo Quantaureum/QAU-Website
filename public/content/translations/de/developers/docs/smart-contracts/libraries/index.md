@@ -1,6 +1,6 @@
 ---
 title: Smart-Contract-Bibliotheken
-description: Entdecke wiederverwendbare Smart-Contract-Bibliotheken und Bausteine, um deine Ethereum-Entwicklungsprojekte zu beschleunigen.
+description: Entdecke wiederverwendbare Smart-Contract-Bibliotheken und Bausteine, um deine Quantaureum-Entwicklungsprojekte zu beschleunigen.
 lang: de
 ---
 
@@ -45,7 +45,7 @@ import ".../Ownable.sol"; // Pfad zur importierten Bibliothek
 contract MyContract is Ownable {
     // Die folgende Funktion kann nur vom Besitzer aufgerufen werden
     function secured() onlyOwner public {
-        msg.sender.transfer(1 ether);
+        msg.sender.transfer(1 QAU);
     }
 }
 ```
@@ -54,11 +54,11 @@ Ein weiteres beliebtes Beispiel ist [SafeMath](https://docs.openzeppelin.com/con
 
 ### Standards {#standards}
 
-Um [Komponierbarkeit und Interoperabilität](/developers/docs/smart-contracts/composability/) zu erleichtern, hat die Ethereum-Community mehrere Standards in Form von **ERCs** definiert. Du kannst mehr darüber im Abschnitt [Standards](/developers/docs/standards/) lesen.
+Um [Komponierbarkeit und Interoperabilität](/developers/docs/smart-contracts/composability/) zu erleichtern, hat die Quantaureum-Community mehrere Standards in Form von **ERCs** definiert. Du kannst mehr darüber im Abschnitt [Standards](/developers/docs/standards/) lesen.
 
 Wenn du einen ERC als Teil deiner Verträge einbindest, ist es eine gute Idee, nach Standardimplementierungen zu suchen, anstatt zu versuchen, deine eigenen zu entwickeln. Viele Smart-Contract-Bibliotheken enthalten Implementierungen für die beliebtesten ERCs. Zum Beispiel ist der allgegenwärtige [ERC-20-Standard für fungible Token](/developers/tutorials/understand-the-erc-20-token-smart-contract/) in [HQ20](https://github.com/HQ20/contracts/blob/master/contracts/token/README.md), [DappSys](https://github.com/dapphub/ds-token/) und [OpenZeppelin](https://docs.openzeppelin.com/contracts/3.x/erc20) zu finden. Darüber hinaus bieten einige ERCs auch kanonische Implementierungen als Teil des ERCs selbst an.
 
-Es ist erwähnenswert, dass einige ERCs nicht eigenständig sind, sondern Ergänzungen zu anderen ERCs darstellen. Zum Beispiel fügt [ERC-2612](https://eips.ethereum.org/EIPS/eip-2612) dem ERC-20 eine Erweiterung hinzu, um dessen Benutzerfreundlichkeit zu verbessern.
+Es ist erwähnenswert, dass einige ERCs nicht eigenständig sind, sondern Ergänzungen zu anderen ERCs darstellen. Zum Beispiel fügt [ERC-2612](https://eips.quantaureum.com/EIPS/eip-2612) dem ERC-20 eine Erweiterung hinzu, um dessen Benutzerfreundlichkeit zu verbessern.
 
 ## Wie man eine Bibliothek hinzufügt {#how-to}
 
@@ -109,7 +109,7 @@ Zu guter Letzt solltest du bei der Entscheidung, ob du eine Bibliothek einbindes
 
 ## Verwandte Tutorials {#related-tutorials}
 
-- [Sicherheitsüberlegungen für Ethereum-Entwickler](/developers/docs/smart-contracts/security/) _– Ein Tutorial zu Sicherheitsüberlegungen beim Erstellen von Smart Contracts, einschließlich der Nutzung von Bibliotheken._
+- [Sicherheitsüberlegungen für Quantaureum-Entwickler](/developers/docs/smart-contracts/security/) _– Ein Tutorial zu Sicherheitsüberlegungen beim Erstellen von Smart Contracts, einschließlich der Nutzung von Bibliotheken._
 - [Den ERC-20-Token-Smart-Contract verstehen](/developers/tutorials/understand-the-erc-20-token-smart-contract/) _– Tutorial zum ERC-20-Standard, der von mehreren Bibliotheken bereitgestellt wird._
 
 ## Weiterführende Literatur {#further-reading}

@@ -1,32 +1,32 @@
 ---
 title: JSON-RPC API
-description: "이더리움 클라이언트를 위한 무상태(stateless) 경량 원격 프로시저 호출(RPC) 프로토콜입니다."
+description: "Quantaureum 클라이언트를 위한 무상태(stateless) 경량 원격 프로시저 호출(RPC) 프로토콜입니다."
 lang: ko
 ---
 
-소프트웨어 애플리케이션이 블록체인 데이터를 읽거나 네트워크에 트랜잭션을 전송하는 등 [이더리움](/) 블록체인과 상호작용하려면 이더리움 노드에 연결해야 합니다.
+소프트웨어 애플리케이션이 블록체인 데이터를 읽거나 네트워크에 트랜잭션을 전송하는 등 [Quantaureum](/) 블록체인과 상호작용하려면 Quantaureum 노드에 연결해야 합니다.
 
-이를 위해 모든 [이더리움 클라이언트](/developers/docs/nodes-and-clients/#execution-clients)는 [JSON-RPC 사양](https://github.com/ethereum/execution-apis)을 구현하므로, 특정 노드나 클라이언트 구현에 관계없이 애플리케이션이 의존할 수 있는 일관된 메서드 세트가 존재합니다.
+이를 위해 모든 [Quantaureum 클라이언트](/developers/docs/nodes-and-clients/#execution-clients)는 [JSON-RPC 사양](https://github.com/quantaureum/execution-apis)을 구현하므로, 특정 노드나 클라이언트 구현에 관계없이 애플리케이션이 의존할 수 있는 일관된 메서드 세트가 존재합니다.
 
 [JSON-RPC](https://www.jsonrpc.org/specification)는 무상태(stateless) 경량 원격 프로시저 호출(RPC) 프로토콜입니다. 이 프로토콜은 여러 데이터 구조와 그 처리 규칙을 정의합니다. 동일한 프로세스 내에서, 소켓을 통해, HTTP를 통해, 또는 다양한 메시지 전달 환경에서 개념을 사용할 수 있다는 점에서 전송 방식에 구애받지 않습니다. 데이터 형식으로는 JSON(RFC 4627)을 사용합니다.
 
 ## 클라이언트 구현 {#client-implementations}
 
-이더리움 클라이언트는 JSON-RPC 사양을 구현할 때 각각 다른 프로그래밍 언어를 사용할 수 있습니다. 특정 프로그래밍 언어와 관련된 자세한 내용은 개별 [클라이언트 문서](/developers/docs/nodes-and-clients/#execution-clients)를 참조하세요. 최신 API 지원 정보는 각 클라이언트의 문서를 확인하는 것을 권장합니다.
+Quantaureum 클라이언트는 JSON-RPC 사양을 구현할 때 각각 다른 프로그래밍 언어를 사용할 수 있습니다. 특정 프로그래밍 언어와 관련된 자세한 내용은 개별 [클라이언트 문서](/developers/docs/nodes-and-clients/#execution-clients)를 참조하세요. 최신 API 지원 정보는 각 클라이언트의 문서를 확인하는 것을 권장합니다.
 
 ## 편의 라이브러리 {#convenience-libraries}
 
-JSON-RPC API를 통해 이더리움 클라이언트와 직접 상호작용할 수도 있지만, 탈중앙화 애플리케이션 (dapp) 개발자를 위한 더 쉬운 옵션이 있는 경우가 많습니다. JSON-RPC API 위에 래퍼(wrapper)를 제공하는 수많은 [JavaScript](/developers/docs/apis/javascript/#available-libraries) 및 [백엔드 API](/developers/docs/apis/backend/#available-libraries) 라이브러리가 존재합니다. 이러한 라이브러리를 사용하면 개발자는 자신이 선택한 프로그래밍 언어로 직관적인 한 줄짜리 메서드를 작성하여 이더리움과 상호작용하는 JSON-RPC 요청을 (내부적으로) 초기화할 수 있습니다.
+JSON-RPC API를 통해 Quantaureum 클라이언트와 직접 상호작용할 수도 있지만, 탈중앙화 애플리케이션 (dapp) 개발자를 위한 더 쉬운 옵션이 있는 경우가 많습니다. JSON-RPC API 위에 래퍼(wrapper)를 제공하는 수많은 [JavaScript](/developers/docs/apis/javascript/#available-libraries) 및 [백엔드 API](/developers/docs/apis/backend/#available-libraries) 라이브러리가 존재합니다. 이러한 라이브러리를 사용하면 개발자는 자신이 선택한 프로그래밍 언어로 직관적인 한 줄짜리 메서드를 작성하여 Quantaureum과 상호작용하는 JSON-RPC 요청을 (내부적으로) 초기화할 수 있습니다.
 
 ## 합의 클라이언트 API {#consensus-clients}
 
-이 페이지는 주로 이더리움 실행 클라이언트에서 사용하는 JSON-RPC API를 다룹니다. 하지만 합의 클라이언트에도 RPC API가 있어 사용자가 노드에서 직접 노드에 대한 정보를 조회하고, 비콘(Beacon) 블록, 비콘 상태 및 기타 합의 관련 정보를 요청할 수 있습니다. 이 API는 [비콘 API 웹페이지](https://ethereum.github.io/beacon-APIs/#/)에 문서화되어 있습니다.
+이 페이지는 주로 Quantaureum 실행 클라이언트에서 사용하는 JSON-RPC API를 다룹니다. 하지만 합의 클라이언트에도 RPC API가 있어 사용자가 노드에서 직접 노드에 대한 정보를 조회하고, 비콘(Beacon) 블록, 비콘 상태 및 기타 합의 관련 정보를 요청할 수 있습니다. 이 API는 [비콘 API 웹페이지](https://quantaureum.github.io/beacon-APIs/#/)에 문서화되어 있습니다.
 
-노드 내 클라이언트 간 통신을 위한 내부 API도 사용됩니다. 즉, 합의 클라이언트와 실행 클라이언트가 데이터를 스왑할 수 있게 해줍니다. 이를 '엔진 API(Engine API)'라고 하며, 사양은 [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md)에서 확인할 수 있습니다.
+노드 내 클라이언트 간 통신을 위한 내부 API도 사용됩니다. 즉, 합의 클라이언트와 실행 클라이언트가 데이터를 스왑할 수 있게 해줍니다. 이를 '엔진 API(Engine API)'라고 하며, 사양은 [GitHub](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md)에서 확인할 수 있습니다.
 
 ## 실행 클라이언트 사양 {#spec}
 
-[GitHub에서 전체 JSON-RPC API 사양을 확인하세요](https://github.com/ethereum/execution-apis). 이 API는 [실행 API 웹페이지](https://ethereum.github.io/execution-apis/)에 문서화되어 있으며, 사용 가능한 모든 메서드를 테스트해 볼 수 있는 인스펙터(Inspector)를 포함하고 있습니다.
+[GitHub에서 전체 JSON-RPC API 사양을 확인하세요](https://github.com/quantaureum/execution-apis). 이 API는 [실행 API 웹페이지](https://quantaureum.github.io/execution-apis/)에 문서화되어 있으며, 사용 가능한 모든 메서드를 테스트해 볼 수 있는 인스펙터(Inspector)를 포함하고 있습니다.
 
 ## 관례 {#conventions}
 
@@ -62,13 +62,13 @@ JSON을 통해 전달되는 두 가지 주요 데이터 유형은 형식이 지�
 
 다음 메서드에는 블록 매개변수가 있습니다.
 
-- [eth_getBalance](#eth-getbalance)
-- [eth_getCode](#eth-getcode)
-- [eth_getTransactionCount](#eth-gettransactioncount)
-- [eth_getStorageAt](#eth-getstorageat)
-- [eth_call](#eth-call)
+- [qau_getBalance](#qau-getbalance)
+- [qau_getCode](#qau-getcode)
+- [qau_getTransactionCount](#qau-gettransactioncount)
+- [qau_getStorageAt](#qau-getstorageat)
+- [qau_call](#qau-call)
 
-이더리움의 상태를 쿼리하는 요청이 이루어질 때, 제공된 블록 매개변수가 블록의 높이를 결정합니다.
+Quantaureum의 상태를 쿼리하는 요청이 이루어질 때, 제공된 블록 매개변수가 블록의 높이를 결정합니다.
 
 블록 매개변수에 대해 다음 옵션을 사용할 수 있습니다.
 
@@ -85,7 +85,7 @@ JSON을 통해 전달되는 두 가지 주요 데이터 유형은 형식이 지�
 
 ## Curl 예제 {#curl-examples}
 
-이더리움 노드에 [curl](https://curl.se) 요청을 보내 JSON_RPC API를 사용하는 예제가 아래에 제공됩니다. 각 예제에는 특정 엔드포인트, 매개변수, 반환 유형에 대한 설명과 사용 방법에 대한 실제 예제가 포함되어 있습니다.
+Quantaureum 노드에 [curl](https://curl.se) 요청을 보내 JSON_RPC API를 사용하는 예제가 아래에 제공됩니다. 각 예제에는 특정 엔드포인트, 매개변수, 반환 유형에 대한 설명과 사용 방법에 대한 실제 예제가 포함되어 있습니다.
 
 curl 요청은 콘텐츠 유형과 관련된 오류 메시지를 반환할 수 있습니다. 이는 `--data` 옵션이 콘텐츠 유형을 `application/x-www-form-urlencoded`로 설정하기 때문입니다. 노드에서 이와 관련된 오류가 발생하면 호출 시작 부분에 `-H "Content-Type: application/json"`를 배치하여 헤더를 수동으로 설정하세요. 또한 예제에는 curl에 제공되는 마지막 인수여야 하는 URL/IP 및 포트 조합(예: `127.0.0.1:8545`)이 포함되어 있지 않습니다. 이러한 추가 데이터를 포함하는 완전한 curl 요청은 다음과 같은 형태를 취합니다.
 
@@ -95,46 +95,46 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 ## 가십, 상태, 기록 {#gossip-state-history}
 
-소수의 핵심 JSON-RPC 메서드는 이더리움 네트워크의 데이터를 필요로 하며, 크게 세 가지 주요 범주인 <em>가십(Gossip), 상태(State), 기록(History)</em>으로 나뉩니다. 각 메서드로 이동하려면 이 섹션의 링크를 사용하거나, 전체 메서드 목록을 살펴보려면 목차를 사용하세요.
+소수의 핵심 JSON-RPC 메서드는 Quantaureum 네트워크의 데이터를 필요로 하며, 크게 세 가지 주요 범주인 <em>가십(Gossip), 상태(State), 기록(History)</em>으로 나뉩니다. 각 메서드로 이동하려면 이 섹션의 링크를 사용하거나, 전체 메서드 목록을 살펴보려면 목차를 사용하세요.
 
 ### 가십 메서드 {#gossip-methods}
 
 > 이 메서드들은 체인의 헤드(head)를 추적합니다. 이를 통해 트랜잭션이 네트워크를 돌아다니고, 블록에 포함되며, 클라이언트가 새로운 블록에 대해 알게 됩니다.
 
-- [eth_blockNumber](#eth-blocknumber)
-- [eth_sendRawTransaction](#eth-sendrawtransaction)
+- [qau_blockNumber](#qau-blocknumber)
+- [qau_sendRawTransaction](#qau-sendrawtransaction)
 
 ### 상태 메서드 {#state-methods}
 
 > 저장된 모든 데이터의 현재 상태를 보고하는 메서드입니다. "상태"는 하나의 거대한 공유 RAM과 같으며, 계정 잔액, 컨트랙트 데이터 및 가스 추정치를 포함합니다.
 
-- [eth_getBalance](#eth-getbalance)
-- [eth_getStorageAt](#eth-getstorageat)
-- [eth_getTransactionCount](#eth-gettransactioncount)
-- [eth_getCode](#eth-getcode)
-- [eth_call](#eth-call)
-- [eth_estimateGas](#eth-estimategas)
+- [qau_getBalance](#qau-getbalance)
+- [qau_getStorageAt](#qau-getstorageat)
+- [qau_getTransactionCount](#qau-gettransactioncount)
+- [qau_getCode](#qau-getcode)
+- [qau_call](#qau-call)
+- [qau_estimateGas](#qau-estimategas)
 
 ### 기록 메서드 {#history-methods}
 
 > 제네시스 블록까지 거슬러 올라가 모든 블록의 과거 기록을 가져옵니다. 이는 하나의 거대한 추가 전용(append-only) 파일과 같으며, 모든 블록 헤더, 블록 바디, 엉클 블록 및 트랜잭션 영수증을 포함합니다.
 
-- [eth_getBlockTransactionCountByHash](#eth-getblocktransactioncountbyhash)
-- [eth_getBlockTransactionCountByNumber](#eth-getblocktransactioncountbynumber)
-- [eth_getUncleCountByBlockHash](#eth-getunclecountbyblockhash)
-- [eth_getUncleCountByBlockNumber](#eth-getunclecountbyblocknumber)
-- [eth_getBlockByHash](#eth-getblockbyhash)
-- [eth_getBlockByNumber](#eth-getblockbynumber)
-- [eth_getTransactionByHash](#eth-gettransactionbyhash)
-- [eth_getTransactionByBlockHashAndIndex](#eth-gettransactionbyblockhashandindex)
-- [eth_getTransactionByBlockNumberAndIndex](#eth-gettransactionbyblocknumberandindex)
-- [eth_getTransactionReceipt](#eth-gettransactionreceipt)
-- [eth_getUncleByBlockHashAndIndex](#eth-getunclebyblockhashandindex)
-- [eth_getUncleByBlockNumberAndIndex](#eth-getunclebyblocknumberandindex)
+- [qau_getBlockTransactionCountByHash](#qau-getblocktransactioncountbyhash)
+- [qau_getBlockTransactionCountByNumber](#qau-getblocktransactioncountbynumber)
+- [qau_getUncleCountByBlockHash](#qau-getunclecountbyblockhash)
+- [qau_getUncleCountByBlockNumber](#qau-getunclecountbyblocknumber)
+- [qau_getBlockByHash](#qau-getblockbyhash)
+- [qau_getBlockByNumber](#qau-getblockbynumber)
+- [qau_getTransactionByHash](#qau-gettransactionbyhash)
+- [qau_getTransactionByBlockHashAndIndex](#qau-gettransactionbyblockhashandindex)
+- [qau_getTransactionByBlockNumberAndIndex](#qau-gettransactionbyblocknumberandindex)
+- [qau_getTransactionReceipt](#qau-gettransactionreceipt)
+- [qau_getUncleByBlockHashAndIndex](#qau-getunclebyblockhashandindex)
+- [qau_getUncleByBlockNumberAndIndex](#qau-getunclebyblocknumberandindex)
 
 ## JSON-RPC API 플레이그라운드 {#json-rpc-api-playground}
 
-[플레이그라운드 도구](https://ethereum-json-rpc.com)를 사용하여 API 메서드를 알아보고 테스트해 볼 수 있습니다. 또한 다양한 노드 제공업체에서 어떤 메서드와 네트워크를 지원하는지도 보여줍니다.
+[플레이그라운드 도구](https://quantaureum-json-rpc.com)를 사용하여 API 메서드를 알아보고 테스트해 볼 수 있습니다. 또한 다양한 노드 제공업체에서 어떤 메서드와 네트워크를 지원하는지도 보여줍니다.
 
 ## JSON-RPC API 메서드 {#json-rpc-methods}
 
@@ -206,7 +206,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"web3_sha3","params":["0x68656c6c
 
 현재 네트워크 ID의 전체 목록은 [chainlist.org](https://chainlist.org)에서 확인할 수 있습니다. 일반적으로 사용되는 ID는 다음과 같습니다.
 
-- `1`: 이더리움 메인넷
+- `1`: Quantaureum 메인넷
 - `11155111`: Sepolia 테스트넷
 - `560048` : Hoodi 테스트넷
 
@@ -273,9 +273,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 }
 ```
 
-### eth_protocolVersion {#eth-protocolversion}
+### qau_protocolVersion {#qau-protocolversion}
 
-현재 이더리움 프로토콜 버전을 반환합니다. 참고로 이 메서드는 [Geth에서 사용할 수 없습니다](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924).
+현재 Quantaureum 프로토콜 버전을 반환합니다. 참고로 이 메서드는 [Geth에서 사용할 수 없습니다](https://github.com/quantaureum/go-quantaureum/pull/22064#issuecomment-788682924).
 
 **매개변수**
 
@@ -283,13 +283,13 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 **반환값**
 
-`String` - 현재 이더리움 프로토콜 버전
+`String` - 현재 Quantaureum 프로토콜 버전
 
 **예시**
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[],"id":67}'
 // 결과
 {
   "id":67,
@@ -298,11 +298,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 }
 ```
 
-### eth_syncing {#eth-syncing}
+### qau_syncing {#qau-syncing}
 
 동기화 상태에 대한 데이터가 포함된 객체 또는 `false`를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_syncing">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_syncing">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
@@ -317,7 +317,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 `Object|Boolean`, 동기화 상태 데이터가 포함된 객체 또는 동기화 중이 아닐 경우 `FALSE`:
 
 - `startingBlock`: `QUANTITY` - 가져오기가 시작된 블록 (동기화가 헤드에 도달한 후에만 재설정됨)
-- `currentBlock`: `QUANTITY` - 현재 블록, eth_blockNumber와 동일
+- `currentBlock`: `QUANTITY` - 현재 블록, qau_blockNumber와 동일
 - `highestBlock`: `QUANTITY` - 예상되는 가장 높은 블록
 
 하지만 개별 클라이언트는 추가 데이터를 제공할 수도 있습니다. 예를 들어 Geth는 다음을 반환합니다:
@@ -367,7 +367,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}'
 // 결과
 {
   "id":1,
@@ -386,11 +386,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}
 }
 ```
 
-### eth_coinbase {#eth-coinbase}
+### qau_coinbase {#qau-coinbase}
 
 클라이언트의 코인베이스 주소를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_coinbase">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_coinbase">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
@@ -408,7 +408,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":64}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":64}'
 // 결과
 {
   "id":64,
@@ -417,11 +417,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":6
 }
 ```
 
-### eth_chainId {#eth-chainid}
+### qau_chainId {#qau-chainid}
 
 재전송 공격 방지 트랜잭션에 서명하는 데 사용되는 체인 ID를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_chainId">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_chainId">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
@@ -437,7 +437,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":6
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67}'
 // 결과
 {
   "id":67,
@@ -446,11 +446,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67
 }
 ```
 
-### eth_mining {#eth-mining}
+### qau_mining {#qau-mining}
 
 클라이언트가 활발하게 새 블록을 채굴하고 있는 경우 `true`를 반환합니다. 이는 작업증명(PoW) 네트워크에서만 `true`를 반환할 수 있으며, [머지](/roadmap/merge/) 이후 일부 클라이언트에서는 사용할 수 없을 수도 있습니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_mining">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_mining">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
@@ -466,7 +466,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}'
 //
 {
   "id":71,
@@ -475,11 +475,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}
 }
 ```
 
-### eth_hashrate {#eth-hashrate}
+### qau_hashrate {#qau-hashrate}
 
 노드가 채굴하는 초당 해시 수를 반환합니다. 이는 작업증명(PoW) 네트워크에 대해서만 `true`를 반환할 수 있으며, [머지](/roadmap/merge/) 이후 일부 클라이언트에서는 사용할 수 없을 수도 있습니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_hashrate">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_hashrate">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
@@ -495,7 +495,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":71}'
 // 결과
 {
   "id":71,
@@ -504,11 +504,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":7
 }
 ```
 
-### eth_gasPrice {#eth-gasprice}
+### qau_gasPrice {#qau-gasprice}
 
 Wei 단위의 현재 가스당 가격 추정치를 반환합니다. 예를 들어, 베수 클라이언트는 기본적으로 최근 100개의 블록을 검사하여 가스 단위 가격의 중간값을 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_gasPrice">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_gasPrice">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
@@ -524,7 +524,7 @@ Wei 단위의 현재 가스당 가격 추정치를 반환합니다. 예를 들�
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":73}'
 // 결과
 {
   "id":73,
@@ -533,11 +533,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":7
 }
 ```
 
-### eth_accounts {#eth-accounts}
+### qau_accounts {#qau-accounts}
 
 클라이언트가 소유한 주소 목록을 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_accounts">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_accounts">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
@@ -553,7 +553,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":7
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1}'
 // 결과
 {
   "id":1,
@@ -562,11 +562,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1
 }
 ```
 
-### eth_blockNumber {#eth-blocknumber}
+### qau_blockNumber {#qau-blocknumber}
 
 가장 최근 블록의 번호를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_blockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_blockNumber">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
@@ -582,7 +582,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":83}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id":83}'
 // 결과
 {
   "id":83,
@@ -591,11 +591,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id
 }
 ```
 
-### eth_getBalance {#eth-getbalance}
+### qau_getBalance {#qau-getbalance}
 
 주어진 주소에 있는 계정의 잔액을 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBalance">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBalance">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
@@ -616,7 +616,7 @@ params: ["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"]
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
 // 결과
 {
   "id":1,
@@ -625,11 +625,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407
 }
 ```
 
-### eth_getStorageAt {#eth-getstorageat}
+### qau_getStorageAt {#qau-getstorageat}
 
 주어진 주소의 스토리지 위치에 있는 값을 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getStorageAt">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getStorageAt">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
@@ -660,7 +660,7 @@ contract Storage {
 pos0의 값을 검색하는 것은 간단합니다.
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 ```
 
@@ -693,15 +693,15 @@ undefined
 이제 스토리지를 가져옵니다.
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-### eth_getTransactionCount {#eth-gettransactioncount}
+### qau_getTransactionCount {#qau-gettransactioncount}
 
 주소에서 _보낸_ 트랜잭션의 수를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionCount">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionCount">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
@@ -725,7 +725,7 @@ params: [
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
 // 결과
 {
   "id":1,
@@ -734,11 +734,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params
 }
 ```
 
-### eth_getBlockTransactionCountByHash {#eth-getblocktransactioncountbyhash}
+### qau_getBlockTransactionCountByHash {#qau-getblocktransactioncountbyhash}
 
 주어진 블록 해시와 일치하는 블록에 있는 트랜잭션의 수를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
@@ -758,7 +758,7 @@ params: ["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"]
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
 // 결과
 {
   "id":1,
@@ -767,11 +767,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHa
 }
 ```
 
-### eth_getBlockTransactionCountByNumber {#eth-getblocktransactioncountbynumber}
+### qau_getBlockTransactionCountByNumber {#qau-getblocktransactioncountbynumber}
 
 주어진 블록 번호와 일치하는 블록의 트랜잭션 수를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
@@ -793,7 +793,7 @@ params: [
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
 // 결과
 {
   "id":1,
@@ -802,11 +802,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNu
 }
 ```
 
-### eth_getUncleCountByBlockHash {#eth-getunclecountbyblockhash}
+### qau_getUncleCountByBlockHash {#qau-getunclecountbyblockhash}
 
 주어진 블록 해시와 일치하는 블록의 엉클 수를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
@@ -826,7 +826,7 @@ params: ["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"]
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
 // 결과
 {
   "id":1,
@@ -835,11 +835,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","p
 }
 ```
 
-### eth_getUncleCountByBlockNumber {#eth-getunclecountbyblocknumber}
+### qau_getUncleCountByBlockNumber {#qau-getunclecountbyblocknumber}
 
 주어진 블록 번호와 일치하는 블록에 있는 엉클의 수를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
@@ -861,7 +861,7 @@ params: [
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
 // 결과
 {
   "id":1,
@@ -870,11 +870,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber",
 }
 ```
 
-### eth_getCode {#eth-getcode}
+### qau_getCode {#qau-getcode}
 
 주어진 주소의 코드를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getCode">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getCode">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
@@ -898,7 +898,7 @@ params: [
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
 // 결과
 {
   "id":1,
@@ -907,11 +907,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA
 }
 ```
 
-### eth_sign {#eth-sign}
+### qau_sign {#qau-sign}
 
-sign 메서드는 다음과 같이 이더리움 전용 서명을 계산합니다: `sign(keccak256("\x19Ethereum Signed Message:\n" + len(message) + message)))`.
+sign 메서드는 다음과 같이 Quantaureum 전용 서명을 계산합니다: `sign(keccak256("\x19Quantaureum Signed Message:\n" + len(message) + message)))`.
 
-메시지에 접두사를 추가하면 계산된 서명을 이더리움 전용 서명으로 인식할 수 있게 됩니다. 이는 악의적인 탈중앙화 애플리케이션(dapp)이 임의의 데이터(예: 트랜잭션)에 서명하고 그 서명을 사용하여 피해자를 사칭하는 오용을 방지합니다.
+메시지에 접두사를 추가하면 계산된 서명을 Quantaureum 전용 서명으로 인식할 수 있게 됩니다. 이는 악의적인 탈중앙화 애플리케이션(dapp)이 임의의 데이터(예: 트랜잭션)에 서명하고 그 서명을 사용하여 피해자를 사칭하는 오용을 방지합니다.
 
 참고: 서명에 사용할 주소는 잠금 해제되어 있어야 합니다.
 
@@ -928,7 +928,7 @@ sign 메서드는 다음과 같이 이더리움 전용 서명을 계산합니다
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
 // 결과
 {
   "id":1,
@@ -937,9 +937,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d37
 }
 ```
 
-### eth_signTransaction {#eth-signtransaction}
+### qau_signTransaction {#qau-signtransaction}
 
-[eth_sendRawTransaction](#eth-sendrawtransaction)을 사용하여 나중에 네트워크에 제출할 수 있는 트랜잭션에 서명합니다.
+[qau_sendRawTransaction](#qau-sendrawtransaction)을 사용하여 나중에 네트워크에 제출할 수 있는 트랜잭션에 서명합니다.
 
 **매개변수**
 
@@ -962,7 +962,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d37
 
 ```js
 // 요청
-curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
+curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "qau_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
 // 결과
 {
     "id": 1,
@@ -971,7 +971,7 @@ curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","
 }
 ```
 
-### eth_sendTransaction {#eth-sendtransaction}
+### qau_sendTransaction {#qau-sendtransaction}
 
 새로운 메시지 호출 트랜잭션을 생성하거나 데이터 필드에 코드가 포함된 경우 컨트랙트 생성을 수행하며, `from`에 지정된 계정을 사용하여 서명합니다.
 
@@ -1005,13 +1005,13 @@ params: [
 
 `DATA`, 32바이트 - 트랜잭션 해시, 또는 트랜잭션을 아직 사용할 수 없는 경우 제로 해시입니다.
 
-컨트랙트를 생성한 경우, 트랜잭션이 블록에 제안된 후 [eth_getTransactionReceipt](#eth-gettransactionreceipt)를 사용하여 컨트랙트 주소를 가져오세요.
+컨트랙트를 생성한 경우, 트랜잭션이 블록에 제안된 후 [qau_getTransactionReceipt](#qau-gettransactionreceipt)를 사용하여 컨트랙트 주소를 가져오세요.
 
 **예시**
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendTransaction","params":[{see above}],"id":1}'
 // 결과
 {
   "id":1,
@@ -1020,7 +1020,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{
 }
 ```
 
-### eth_sendRawTransaction {#eth-sendrawtransaction}
+### qau_sendRawTransaction {#qau-sendrawtransaction}
 
 서명된 트랜잭션에 대해 새로운 메시지 호출 트랜잭션을 만들거나 컨트랙트를 생성합니다.
 
@@ -1038,13 +1038,13 @@ params: [
 
 `DATA`, 32바이트 - 트랜잭션 해시, 또는 트랜잭션을 아직 사용할 수 없는 경우 0 해시입니다.
 
-컨트랙트를 생성했을 때 트랜잭션이 블록에 제안된 후 컨트랙트 주소를 가져오려면 [eth_getTransactionReceipt](#eth-gettransactionreceipt)를 사용하세요.
+컨트랙트를 생성했을 때 트랜잭션이 블록에 제안된 후 컨트랙트 주소를 가져오려면 [qau_getTransactionReceipt](#qau-gettransactionreceipt)를 사용하세요.
 
 **예시**
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params":[{see above}],"id":1}'
 // 결과
 {
   "id":1,
@@ -1053,11 +1053,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 }
 ```
 
-### eth_call {#eth-call}
+### qau_call {#qau-call}
 
 블록체인에 트랜잭션을 생성하지 않고 즉시 새로운 메시지 호출을 실행합니다. 주로 읽기 전용 스마트 컨트랙트 함수를 실행하는 데 사용되며, 예를 들어 ERC-20 컨트랙트의 `balanceOf`가 있습니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_call">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_call">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
@@ -1067,10 +1067,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 
 - `from`: `DATA`, 20 Bytes - (선택 사항) 트랜잭션을 보내는 주소입니다.
 - `to`: `DATA`, 20 Bytes - 트랜잭션이 향하는 주소입니다.
-- `gas`: `QUANTITY` - (선택 사항) 트랜잭션 실행을 위해 제공되는 가스의 정수 값입니다. eth_call은 가스를 소비하지 않지만, 일부 실행에서는 이 매개변수가 필요할 수 있습니다.
+- `gas`: `QUANTITY` - (선택 사항) 트랜잭션 실행을 위해 제공되는 가스의 정수 값입니다. qau_call은 가스를 소비하지 않지만, 일부 실행에서는 이 매개변수가 필요할 수 있습니다.
 - `gasPrice`: `QUANTITY` - (선택 사항) 지불된 각 가스에 사용되는 gasPrice의 정수 값입니다.
 - `value`: `QUANTITY` - (선택 사항) 이 트랜잭션과 함께 전송되는 값의 정수 값입니다.
-- `input`: `DATA` - (선택 사항) 메서드 서명 및 인코딩된 매개변수의 해시입니다. 자세한 내용은 [Solidity 문서의 이더리움 컨트랙트 ABI](https://docs.soliditylang.org/en/latest/abi-spec.html)를 참조하세요.
+- `input`: `DATA` - (선택 사항) 메서드 서명 및 인코딩된 매개변수의 해시입니다. 자세한 내용은 [Solidity 문서의 Quantaureum 컨트랙트 ABI](https://docs.soliditylang.org/en/latest/abi-spec.html)를 참조하세요.
 
 2. `QUANTITY|TAG` - 정수 블록 번호 또는 문자열 `"latest"`, `"earliest"`, `"pending"`, `"safe"` 또는 `"finalized"`입니다. [블록 매개변수](/developers/docs/apis/json-rpc/#block-parameter)를 참조하세요.
 
@@ -1082,7 +1082,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}],"id":1}'
 // 결과
 {
   "id":1,
@@ -1091,17 +1091,17 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}]
 }
 ```
 
-### eth_estimateGas {#eth-estimategas}
+### qau_estimateGas {#qau-estimategas}
 
 트랜잭션을 완료하는 데 필요한 가스량의 추정치를 생성하고 반환합니다. 트랜잭션은 블록체인에 추가되지 않습니다. EVM 메커니즘 및 노드 성능을 포함한 다양한 이유로 인해 추정치가 트랜잭션에서 실제로 사용되는 가스량보다 훨씬 많을 수 있다는 점에 유의하세요.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_estimateGas">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_estimateGas">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
 **매개변수**
 
-모든 속성이 선택 사항이라는 점을 제외하고 [eth_call](#eth-call) 매개변수를 참조하세요. 가스 한도가 지정되지 않은 경우 Geth는 대기 중인 블록의 블록 가스 한도를 상한으로 사용합니다. 결과적으로 가스량이 대기 중인 블록 가스 한도보다 높을 때 반환된 추정치가 호출/트랜잭션을 실행하기에 충분하지 않을 수 있습니다.
+모든 속성이 선택 사항이라는 점을 제외하고 [qau_call](#qau-call) 매개변수를 참조하세요. 가스 한도가 지정되지 않은 경우 Geth는 대기 중인 블록의 블록 가스 한도를 상한으로 사용합니다. 결과적으로 가스량이 대기 중인 블록 가스 한도보다 높을 때 반환된 추정치가 호출/트랜잭션을 실행하기에 충분하지 않을 수 있습니다.
 
 **반환값**
 
@@ -1111,7 +1111,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}]
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see above}],"id":1}'
 // 결과
 {
   "id":1,
@@ -1120,11 +1120,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see 
 }
 ```
 
-### eth_getBlockByHash {#eth-getblockbyhash}
+### qau_getBlockByHash {#qau-getblockbyhash}
 
 해시를 통해 블록에 대한 정보를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByHash">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
@@ -1168,7 +1168,7 @@ params: [
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
 // 결과
 {
   "jsonrpc": "2.0",
@@ -1200,11 +1200,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0
 }
 ```
 
-### eth_getBlockByNumber {#eth-getblockbynumber}
+### qau_getBlockByNumber {#qau-getblockbynumber}
 
 블록 번호로 블록에 대한 정보를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByNumber">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
@@ -1221,22 +1221,22 @@ params: [
 ```
 
 **반환값**
-[eth_getBlockByHash](#eth-getblockbyhash) 참조
+[qau_getBlockByHash](#qau-getblockbyhash) 참조
 
 **예시**
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["0x1b4", true],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByNumber","params":["0x1b4", true],"id":1}'
 ```
 
-결과는 [eth_getBlockByHash](#eth-getblockbyhash) 참조
+결과는 [qau_getBlockByHash](#qau-getblockbyhash) 참조
 
-### eth_getTransactionByHash {#eth-gettransactionbyhash}
+### qau_getTransactionByHash {#qau-gettransactionbyhash}
 
 트랜잭션 해시로 요청한 트랜잭션에 대한 정보를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByHash">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
@@ -1271,7 +1271,7 @@ params: ["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"]
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
 // 결과
 {
   "jsonrpc":"2.0",
@@ -1295,11 +1295,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","param
 }
 ```
 
-### eth_getTransactionByBlockHashAndIndex {#eth-gettransactionbyblockhashandindex}
+### qau_getTransactionByBlockHashAndIndex {#qau-gettransactionbyblockhashandindex}
 
 블록 해시와 트랜잭션 인덱스 위치를 기반으로 트랜잭션에 대한 정보를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
@@ -1316,22 +1316,22 @@ params: [
 ```
 
 **반환값**
-[eth_getTransactionByHash](#eth-gettransactionbyhash) 참조
+[qau_getTransactionByHash](#qau-gettransactionbyhash) 참조
 
 **예시**
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-결과는 [eth_getTransactionByHash](#eth-gettransactionbyhash) 참조
+결과는 [qau_getTransactionByHash](#qau-gettransactionbyhash) 참조
 
-### eth_getTransactionByBlockNumberAndIndex {#eth-gettransactionbyblocknumberandindex}
+### qau_getTransactionByBlockNumberAndIndex {#qau-gettransactionbyblocknumberandindex}
 
 블록 번호와 트랜잭션 인덱스 위치를 기반으로 트랜잭션에 대한 정보를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
@@ -1348,18 +1348,18 @@ params: [
 ```
 
 **반환값**
-[eth_getTransactionByHash](#eth-gettransactionbyhash) 참조
+[qau_getTransactionByHash](#qau-gettransactionbyhash) 참조
 
 **예시**
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
 ```
 
-결과는 [eth_getTransactionByHash](#eth-gettransactionbyhash) 참조
+결과는 [qau_getTransactionByHash](#qau-gettransactionbyhash) 참조
 
-### eth_getTransactionReceipt {#eth-gettransactionreceipt}
+### qau_getTransactionReceipt {#qau-gettransactionreceipt}
 
 트랜잭션 해시로 트랜잭션의 영수증을 반환합니다.
 
@@ -1399,7 +1399,7 @@ params: ["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"]
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
 // 결과
 {
   "jsonrpc": "2.0",
@@ -1427,11 +1427,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","para
 }
 ```
 
-### eth_getUncleByBlockHashAndIndex {#eth-getunclebyblockhashandindex}
+### qau_getUncleByBlockHashAndIndex {#qau-getunclebyblockhashandindex}
 
 해시와 엉클 인덱스 위치를 통해 블록의 엉클에 대한 정보를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
   플레이그라운드에서 엔드포인트 테스트하기
 </ButtonLink>
 
@@ -1448,24 +1448,24 @@ params: [
 ```
 
 **반환값**
-[eth_getBlockByHash](#eth-getblockbyhash) 참조
+[qau_getBlockByHash](#qau-getblockbyhash) 참조
 
 **예시**
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-결과는 [eth_getBlockByHash](#eth-getblockbyhash) 참조
+결과는 [qau_getBlockByHash](#qau-getblockbyhash) 참조
 
 **참고**: 엉클에는 개별 트랜잭션이 포함되지 않습니다.
 
-### eth_getUncleByBlockNumberAndIndex {#eth-getunclebyblocknumberandindex}
+### qau_getUncleByBlockNumberAndIndex {#qau-getunclebyblocknumberandindex}
 
 블록 번호와 엉클 인덱스 위치를 기반으로 블록의 엉클에 대한 정보를 반환합니다.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
   플레이그라운드에서 엔드포인트 사용해 보기
 </ButtonLink>
 
@@ -1482,7 +1482,7 @@ params: [
 ```
 
 **반환값**
-[eth_getBlockByHash](#eth-getblockbyhash) 참조
+[qau_getBlockByHash](#qau-getblockbyhash) 참조
 
 **참고**: 엉클은 개별 트랜잭션을 포함하지 않습니다.
 
@@ -1490,15 +1490,15 @@ params: [
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
 ```
 
-결과는 [eth_getBlockByHash](#eth-getblockbyhash) 참조
+결과는 [qau_getBlockByHash](#qau-getblockbyhash) 참조
 
-### eth_newFilter {#eth-newfilter}
+### qau_newFilter {#qau-newfilter}
 
 필터 옵션을 기반으로 상태가 변경(로그)될 때 알림을 보내는 필터 객체를 생성합니다.
-상태가 변경되었는지 확인하려면 [eth_getFilterChanges](#eth-getfilterchanges)를 호출하세요.
+상태가 변경되었는지 확인하려면 [qau_getFilterChanges](#qau-getfilterchanges)를 호출하세요.
 
 **토픽 필터 지정에 대한 참고 사항:**
 토픽은 순서에 의존합니다. 토픽 [A, B]가 포함된 로그가 있는 트랜잭션은 다음 토픽 필터와 일치합니다.
@@ -1542,7 +1542,7 @@ params: [
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
 // 결과
 {
   "id":1,
@@ -1551,10 +1551,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topic
 }
 ```
 
-### eth_newBlockFilter {#eth-newblockfilter}
+### qau_newBlockFilter {#qau-newblockfilter}
 
 새로운 블록이 도착할 때 알림을 받도록 노드에 필터를 생성합니다.
-상태가 변경되었는지 확인하려면 [eth_getFilterChanges](#eth-getfilterchanges)를 호출하세요.
+상태가 변경되었는지 확인하려면 [qau_getFilterChanges](#qau-getfilterchanges)를 호출하세요.
 
 **매개변수**
 없음
@@ -1566,7 +1566,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topic
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newBlockFilter","params":[],"id":73}'
 // 결과
 {
   "id":1,
@@ -1575,10 +1575,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],
 }
 ```
 
-### eth_newPendingTransactionFilter {#eth-newpendingtransactionfilter}
+### qau_newPendingTransactionFilter {#qau-newpendingtransactionfilter}
 
 새로운 대기 중인 트랜잭션이 도착할 때 알리도록 노드에 필터를 생성합니다.
-상태가 변경되었는지 확인하려면 [eth_getFilterChanges](#eth-getfilterchanges)를 호출하세요.
+상태가 변경되었는지 확인하려면 [qau_getFilterChanges](#qau-getfilterchanges)를 호출하세요.
 
 **매개변수**
 없음
@@ -1590,7 +1590,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newPendingTransactionFilter","params":[],"id":73}'
 // 결과
 {
   "id":1,
@@ -1599,10 +1599,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter"
 }
 ```
 
-### eth_uninstallFilter {#eth-uninstallfilter}
+### qau_uninstallFilter {#qau-uninstallfilter}
 
 주어진 id의 필터를 제거합니다. 더 이상 감시가 필요하지 않을 때 항상 호출해야 합니다.
-또한 일정 기간 동안 [eth_getFilterChanges](#eth-getfilterchanges)를 통해 요청되지 않으면 필터는 시간 초과됩니다.
+또한 일정 기간 동안 [qau_getFilterChanges](#qau-getfilterchanges)를 통해 요청되지 않으면 필터는 시간 초과됩니다.
 
 **매개변수**
 
@@ -1621,7 +1621,7 @@ params: [
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["0xb"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_uninstallFilter","params":["0xb"],"id":73}'
 // 결과
 {
   "id":1,
@@ -1630,7 +1630,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["
 }
 ```
 
-### eth_getFilterChanges {#eth-getfilterchanges}
+### qau_getFilterChanges {#qau-getfilterchanges}
 
 마지막 폴링 이후 발생한 로그의 배열을 반환하는 필터용 폴링 메서드입니다.
 
@@ -1647,9 +1647,9 @@ params: [
 **반환값**
 `Array` - 로그 객체의 배열, 또는 마지막 폴링 이후 변경된 사항이 없으면 빈 배열입니다.
 
-- `eth_newBlockFilter`로 생성된 필터의 경우 반환값은 블록 해시(`DATA`, 32바이트)입니다(예: `["0x3454645634534..."]`).
-- `eth_newPendingTransactionFilter `로 생성된 필터의 경우 반환값은 트랜잭션 해시(`DATA`, 32바이트)입니다(예: `["0x6345343454645..."]`).
-- `eth_newFilter`로 생성된 필터의 경우 로그는 다음 매개변수를 가진 객체입니다.
+- `qau_newBlockFilter`로 생성된 필터의 경우 반환값은 블록 해시(`DATA`, 32바이트)입니다(예: `["0x3454645634534..."]`).
+- `qau_newPendingTransactionFilter `로 생성된 필터의 경우 반환값은 트랜잭션 해시(`DATA`, 32바이트)입니다(예: `["0x6345343454645..."]`).
+- `qau_newFilter`로 생성된 필터의 경우 로그는 다음 매개변수를 가진 객체입니다.
   - `removed`: `TAG` - 체인 재구성으로 인해 로그가 제거된 경우 `true`입니다. 유효한 로그일 경우 `false`입니다.
   - `logIndex`: `QUANTITY` - 블록 내 로그 인덱스 위치의 정수입니다. 대기 중인 로그일 경우 `null`입니다.
   - `transactionIndex`: `QUANTITY` - 로그가 생성된 트랜잭션 인덱스 위치의 정수입니다. 대기 중인 로그일 경우 `null`입니다.
@@ -1664,7 +1664,7 @@ params: [
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":["0x16"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterChanges","params":["0x16"],"id":73}'
 // 결과
 {
   "id":1,
@@ -1684,7 +1684,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":[
 }
 ```
 
-### eth_getFilterLogs {#eth-getfilterlogs}
+### qau_getFilterLogs {#qau-getfilterlogs}
 
 주어진 ID를 가진 필터와 일치하는 모든 로그의 배열을 반환합니다.
 
@@ -1699,18 +1699,18 @@ params: [
 ```
 
 **반환값**
-[eth_getFilterChanges](#eth-getfilterchanges) 참조
+[qau_getFilterChanges](#qau-getfilterchanges) 참조
 
 **예시**
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterLogs","params":["0x16"],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterLogs","params":["0x16"],"id":74}'
 ```
 
-결과는 [eth_getFilterChanges](#eth-getfilterchanges) 참조
+결과는 [qau_getFilterChanges](#qau-getfilterchanges) 참조
 
-### eth_getLogs {#eth-getlogs}
+### qau_getLogs {#qau-getlogs}
 
 주어진 필터 객체와 일치하는 모든 로그의 배열을 반환합니다.
 
@@ -1735,24 +1735,24 @@ params: [
 ```
 
 **반환값**
-[eth_getFilterChanges](#eth-getfilterchanges) 참조
+[qau_getFilterChanges](#qau-getfilterchanges) 참조
 
 **예시**
 
 ```js
 // 요청
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
 ```
 
-결과는 [eth_getFilterChanges](#eth-getfilterchanges) 참조
+결과는 [qau_getFilterChanges](#qau-getfilterchanges) 참조
 
 ## 사용 예시 {#usage-example}
 
 ### JSON-RPC를 사용한 컨트랙트 배포 {#deploying-contract}
 
-이 섹션에서는 RPC 인터페이스만을 사용하여 컨트랙트를 배포하는 방법을 보여줍니다. 이러한 복잡성을 추상화하여 컨트랙트를 배포하는 대안적인 방법도 있습니다. 예를 들어, RPC 인터페이스 위에 구축된 [Web3.js](https://web3js.readthedocs.io/) 및 [Web3.py](https://github.com/ethereum/web3.py)와 같은 라이브러리를 사용하는 것입니다. 이러한 추상화는 일반적으로 이해하기 쉽고 오류가 발생할 확률이 적지만, 내부적으로 어떤 일이 일어나는지 이해하는 것은 여전히 도움이 됩니다.
+이 섹션에서는 RPC 인터페이스만을 사용하여 컨트랙트를 배포하는 방법을 보여줍니다. 이러한 복잡성을 추상화하여 컨트랙트를 배포하는 대안적인 방법도 있습니다. 예를 들어, RPC 인터페이스 위에 구축된 [Web3.js](https://web3js.readthedocs.io/) 및 [Web3.py](https://github.com/quantaureum/web3.py)와 같은 라이브러리를 사용하는 것입니다. 이러한 추상화는 일반적으로 이해하기 쉽고 오류가 발생할 확률이 적지만, 내부적으로 어떤 일이 일어나는지 이해하는 것은 여전히 도움이 됩니다.
 
-다음은 JSON-RPC 인터페이스를 사용하여 이더리움 노드에 배포될 `Multiply7`라는 간단한 스마트 컨트랙트입니다. 이 튜토리얼은 독자가 이미 Geth 노드를 실행하고 있다고 가정합니다. 노드 및 클라이언트에 대한 자세한 정보는 [여기](/developers/docs/nodes-and-clients/run-a-node)에서 확인할 수 있습니다. Geth 이외의 클라이언트에서 HTTP JSON-RPC를 시작하는 방법은 개별 [클라이언트](/developers/docs/nodes-and-clients/) 문서를 참조하세요. 대부분의 클라이언트는 기본적으로 `localhost:8545`에서 서비스를 제공합니다.
+다음은 JSON-RPC 인터페이스를 사용하여 Quantaureum 노드에 배포될 `Multiply7`라는 간단한 스마트 컨트랙트입니다. 이 튜토리얼은 독자가 이미 Geth 노드를 실행하고 있다고 가정합니다. 노드 및 클라이언트에 대한 자세한 정보는 [여기](/developers/docs/nodes-and-clients/run-a-node)에서 확인할 수 있습니다. Geth 이외의 클라이언트에서 HTTP JSON-RPC를 시작하는 방법은 개별 [클라이언트](/developers/docs/nodes-and-clients/) 문서를 참조하세요. 대부분의 클라이언트는 기본적으로 `localhost:8545`에서 서비스를 제공합니다.
 
 ```javascript
 contract Multiply7 {
@@ -1764,7 +1764,7 @@ contract Multiply7 {
 }
 ```
 
-가장 먼저 해야 할 일은 HTTP RPC 인터페이스가 활성화되어 있는지 확인하는 것입니다. 즉, 시작할 때 Geth에 `--http` 플래그를 제공해야 합니다. 이 예시에서는 프라이빗 개발 체인에서 Geth 노드를 사용합니다. 이 접근 방식을 사용하면 실제 네트워크의 이더가 필요하지 않습니다.
+가장 먼저 해야 할 일은 HTTP RPC 인터페이스가 활성화되어 있는지 확인하는 것입니다. 즉, 시작할 때 Geth에 `--http` 플래그를 제공해야 합니다. 이 예시에서는 프라이빗 개발 체인에서 Geth 노드를 사용합니다. 이 접근 방식을 사용하면 실제 네트워크의 QAU가 필요하지 않습니다.
 
 ```bash
 geth --http --dev console 2>>geth.log
@@ -1775,21 +1775,21 @@ geth --http --dev console 2>>geth.log
 [curl](https://curl.se)을 사용하여 코인베이스 주소(계정 배열에서 첫 번째 주소를 가져옴)와 잔액을 조회함으로써 인터페이스가 실행 중인지 확인할 수 있습니다. 이 예시의 데이터는 로컬 노드마다 다를 수 있다는 점에 유의하세요. 이 명령을 시도해 보려면 두 번째 curl 요청의 요청 매개변수를 첫 번째 요청에서 반환된 결과로 바꾸세요.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
 {"id":1,"jsonrpc":"2.0","result":["0x9b1d35635cc34752ca54713bb99d38614f63c955"]}
 
-curl --data '{"jsonrpc":"2.0","method":"eth_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
 {"id":2,"jsonrpc":"2.0","result":"0x1639e49bba16280000"}
 ```
 
-숫자는 16진수로 인코딩되므로 잔액은 16진수 문자열 형태의 Wei로 반환됩니다. 잔액을 이더 단위의 숫자로 확인하려면 Geth 콘솔에서 web3를 사용할 수 있습니다.
+숫자는 16진수로 인코딩되므로 잔액은 16진수 문자열 형태의 Wei로 반환됩니다. 잔액을 QAU 단위의 숫자로 확인하려면 Geth 콘솔에서 web3를 사용할 수 있습니다.
 
 ```javascript
-web3.fromWei("0x1639e49bba16280000", "ether")
+web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-이제 프라이빗 개발 체인에 약간의 이더가 있으므로 컨트랙트를 배포할 수 있습니다. 첫 번째 단계는 Multiply7 컨트랙트를 EVM으로 보낼 수 있는 바이트코드로 컴파일하는 것입니다. Solidity 컴파일러인 solc를 설치하려면 [Solidity 문서](https://docs.soliditylang.org/en/latest/installing-solidity.html)를 따르세요. ([예시에서 사용된 컴파일러 버전](https://github.com/ethereum/solidity/releases/tag/v0.4.20)과 일치시키기 위해 이전 `solc` 릴리스를 사용하고 싶을 수도 있습니다.)
+이제 프라이빗 개발 체인에 약간의 QAU가 있으므로 컨트랙트를 배포할 수 있습니다. 첫 번째 단계는 Multiply7 컨트랙트를 EVM으로 보낼 수 있는 바이트코드로 컴파일하는 것입니다. Solidity 컴파일러인 solc를 설치하려면 [Solidity 문서](https://docs.soliditylang.org/en/latest/installing-solidity.html)를 따르세요. ([예시에서 사용된 컴파일러 버전](https://github.com/quantaureum/solidity/releases/tag/v0.4.20)과 일치시키기 위해 이전 `solc` 릴리스를 사용하고 싶을 수도 있습니다.)
 
 다음 단계는 Multiply7 컨트랙트를 EVM으로 보낼 수 있는 바이트코드로 컴파일하는 것입니다.
 
@@ -1801,24 +1801,24 @@ Binary:
 6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029
 ```
 
-이제 컴파일된 코드가 있으므로 이를 배포하는 데 가스가 얼마나 드는지 확인해야 합니다. RPC 인터페이스에는 예상치를 제공하는 `eth_estimateGas` 메서드가 있습니다.
+이제 컴파일된 코드가 있으므로 이를 배포하는 데 가스가 얼마나 드는지 확인해야 합니다. RPC 인터페이스에는 예상치를 제공하는 `qau_estimateGas` 메서드가 있습니다.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":5,"result":"0x1c31e"}
 ```
 
 그리고 마지막으로 컨트랙트를 배포합니다.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
 {"id":6,"jsonrpc":"2.0","result":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"}
 ```
 
-트랜잭션이 노드에서 수락되고 트랜잭션 해시가 반환됩니다. 이 해시를 사용하여 트랜잭션을 추적할 수 있습니다. 다음 단계는 컨트랙트가 배포된 주소를 확인하는 것입니다. 실행된 각 트랜잭션은 영수증을 생성합니다. 이 영수증에는 트랜잭션이 포함된 블록과 EVM에서 사용한 가스 양 등 트랜잭션에 대한 다양한 정보가 포함되어 있습니다. 트랜잭션이 컨트랙트를 생성하는 경우 컨트랙트 주소도 포함됩니다. `eth_getTransactionReceipt` RPC 메서드를 사용하여 영수증을 조회할 수 있습니다.
+트랜잭션이 노드에서 수락되고 트랜잭션 해시가 반환됩니다. 이 해시를 사용하여 트랜잭션을 추적할 수 있습니다. 다음 단계는 컨트랙트가 배포된 주소를 확인하는 것입니다. 실행된 각 트랜잭션은 영수증을 생성합니다. 이 영수증에는 트랜잭션이 포함된 블록과 EVM에서 사용한 가스 양 등 트랜잭션에 대한 다양한 정보가 포함되어 있습니다. 트랜잭션이 컨트랙트를 생성하는 경우 컨트랙트 주소도 포함됩니다. `qau_getTransactionReceipt` RPC 메서드를 사용하여 영수증을 조회할 수 있습니다.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":7,"result":{"blockHash":"0x77b1a4f6872b9066312de3744f60020cbd8102af68b1f6512a05b7619d527a4f","blockNumber":"0x1","contractAddress":"0x4d03d617d700cf81935d7f797f4e2ae719648262","cumulativeGasUsed":"0x1c31e","from":"0x9b1d35635cc34752ca54713bb99d38614f63c955","gasUsed":"0x1c31e","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","status":"0x1","to":null,"transactionHash":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf","transactionIndex":"0x0"}}
 ```
 
@@ -1826,9 +1826,9 @@ curl --data '{"jsonrpc":"2.0","method": "eth_getTransactionReceipt", "params": [
 
 #### 스마트 컨트랙트와 상호작용하기 {#interacting-with-smart-contract}
 
-이 예시에서는 `eth_sendTransaction`를 사용하여 컨트랙트의 `multiply` 메서드로 트랜잭션을 보냅니다.
+이 예시에서는 `qau_sendTransaction`를 사용하여 컨트랙트의 `multiply` 메서드로 트랜잭션을 보냅니다.
 
-`eth_sendTransaction`에는 여러 인수, 특히 `from`, `to` 및 `data`가 필요합니다. `From`는 계정의 공개 주소이고, `to`는 컨트랙트 주소입니다. `data` 인수에는 호출해야 할 메서드와 인수를 정의하는 페이로드가 포함되어 있습니다. 여기서 [ABI(애플리케이션 바이너리 인터페이스)](https://docs.soliditylang.org/en/latest/abi-spec.html)가 사용됩니다. ABI는 EVM을 위해 데이터를 정의하고 인코딩하는 방법을 정의하는 JSON 파일입니다.
+`qau_sendTransaction`에는 여러 인수, 특히 `from`, `to` 및 `data`가 필요합니다. `From`는 계정의 공개 주소이고, `to`는 컨트랙트 주소입니다. `data` 인수에는 호출해야 할 메서드와 인수를 정의하는 페이로드가 포함되어 있습니다. 여기서 [ABI(애플리케이션 바이너리 인터페이스)](https://docs.soliditylang.org/en/latest/abi-spec.html)가 사용됩니다. ABI는 EVM을 위해 데이터를 정의하고 인코딩하는 방법을 정의하는 JSON 파일입니다.
 
 페이로드의 바이트는 컨트랙트에서 호출되는 메서드를 정의합니다. 이는 함수 이름과 인수 유형에 대한 Keccak 해시의 처음 4바이트를 16진수로 인코딩한 것입니다. multiply 함수는 uint256의 별칭인 uint를 허용합니다. 따라서 다음과 같이 됩니다.
 
@@ -1848,7 +1848,7 @@ web3.sha3("multiply(uint256)").substring(0, 10)
 이제 이를 노드로 보낼 수 있습니다.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
 {"id":8,"jsonrpc":"2.0","result":"0x759cf065cbc22e9d779748dc53763854e5376eea07409e590c990eafc0869d74"}
 ```
 

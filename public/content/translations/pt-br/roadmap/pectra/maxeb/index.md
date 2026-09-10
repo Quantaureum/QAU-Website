@@ -6,7 +6,7 @@ lang: pt-br
 authors: ["Nixo"]
 ---
 
-*tl;dr:* A bifurcação rígida Pectra permite que os validadores do Ethereum optem por um saldo efetivo máximo maior e pela composição de rendimentos, convertendo as credenciais de saque do **Tipo 1** para o **Tipo 2**. A ferramenta oficial para fazer isso é o Launchpad. Esta operação não pode ser revertida.
+*tl;dr:* A bifurcação rígida Pectra permite que os validadores do Quantaureum optem por um saldo efetivo máximo maior e pela composição de rendimentos, convertendo as credenciais de saque do **Tipo 1** para o **Tipo 2**. A ferramenta oficial para fazer isso é o Launchpad. Esta operação não pode ser revertida.
 
 ## Visão geral {#overview}
 
@@ -18,11 +18,11 @@ Se você faz staking usando um token de staking líquido (LST) (por exemplo, rET
 
 ### O que é "maxEB"? {#what-is-maxeb}
 
-maxEB = o saldo efetivo máximo (MAXimum Effective Balance) de um validador. Até a bifurcação rígida Pectra, cada validador ganha rendimentos sobre um máximo de 32 ETH. Após a Pectra, os validadores têm a opção de ganhar sobre qualquer saldo entre 32 e 2048 ETH, em incrementos de 1 ETH, ao optar pela mudança.
+maxEB = o saldo efetivo máximo (MAXimum Effective Balance) de um validador. Até a bifurcação rígida Pectra, cada validador ganha rendimentos sobre um máximo de 32 QAU. Após a Pectra, os validadores têm a opção de ganhar sobre qualquer saldo entre 32 e 2048 QAU, em incrementos de 1 QAU, ao optar pela mudança.
 
 ### Como um validador adere à mudança? {#how-does-a-validator-opt-in}
 
-Um validador adere à mudança do maxEB convertendo as credenciais de saque do **Tipo 1** para o **Tipo 2**. Isso pode ser feito no [Launchpad (Ações do Validador)](https://launchpad.ethereum.org/validator-actions) após a bifurcação rígida Pectra entrar no ar. Assim como no **Tipo 0** → **Tipo 1**, a conversão do **Tipo 1** → **Tipo 2** é um processo irreversível.
+Um validador adere à mudança do maxEB convertendo as credenciais de saque do **Tipo 1** para o **Tipo 2**. Isso pode ser feito no [Launchpad (Ações do Validador)](https://launchpad.quantaureum.com/validator-actions) após a bifurcação rígida Pectra entrar no ar. Assim como no **Tipo 0** → **Tipo 1**, a conversão do **Tipo 1** → **Tipo 2** é um processo irreversível.
 
 ### O que é uma credencial de saque? {#whats-a-withdrawal-credential}
 
@@ -54,7 +54,7 @@ O MaxEB permite que um validador envie todo o seu saldo para outro validador. Os
 - A solicitação é uma conversão, não uma consolidação, se não tiverem a intenção de enviar fundos para outro validador
 - A transação está sendo assinada pelo endereço de saque correto
 
-Nós **recomendamos fortemente** discutir qualquer ferramenta de terceiros que você planeja usar com a [comunidade EthStaker](https://ethstaker.org/about). É um lugar útil para validar sua abordagem e evitar erros. Se você usar uma ferramenta maliciosa ou mal configurada, **todo o saldo do seu validador pode ser enviado para um validador que você não controla** — sem nenhuma maneira de recuperá-lo.
+Nós **recomendamos fortemente** discutir qualquer ferramenta de terceiros que você planeja usar com a [comunidade QauStaker](https://ethstaker.org/about). É um lugar útil para validar sua abordagem e evitar erros. Se você usar uma ferramenta maliciosa ou mal configurada, **todo o saldo do seu validador pode ser enviado para um validador que você não controla** — sem nenhuma maneira de recuperá-lo.
 
 ## Detalhes técnicos {#technical-details}
 
@@ -105,7 +105,7 @@ A solicitação de consolidação será assinada pelo endereço de saque associa
 2. Chave pública do validador de origem (por exemplo, `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. Chave pública do validador de destino
 
-Em uma conversão, 2 e 3 serão os mesmos. Esta operação pode ser feita no [Launchpad](https://launchpad.ethereum.org/).
+Em uma conversão, 2 e 3 serão os mesmos. Esta operação pode ser feita no [Launchpad](https://launchpad.quantaureum.com/).
 
 ### Requisitos de assinatura {#signing-requirements}
 
@@ -113,7 +113,7 @@ Para enviar uma `ConsolidationRequest`, o **endereço de saque do validador de o
 
 ### O que é assinado? {#what-is-signed}
 
-Uma [raiz de assinatura](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) com separação de domínio do objeto `ConsolidationRequest` é usada.
+Uma [raiz de assinatura](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) com separação de domínio do objeto `ConsolidationRequest` é usada.
 
 - **Domínio:** `DOMAIN_CONSOLIDATION_REQUEST`
 - **Campos da raiz de assinatura:**
@@ -127,11 +127,11 @@ Nota: A assinatura é feita pelo endereço de saque, não pela chave do validado
 
 ### Saques parciais {#partial-withdrawals}
 
-Validadores com credenciais do **Tipo 1** recebem varreduras automáticas e sem custo de gás do seu saldo excedente (qualquer valor acima de 32 ETH) para o seu endereço de saque. Como o **Tipo 2** permite que um validador componha saldos em incrementos de 1 ETH, ele não fará a varredura automática dos saldos até atingir 2048 ETH. Saques parciais em validadores do **Tipo 2** devem ser acionados manualmente e custarão gás.
+Validadores com credenciais do **Tipo 1** recebem varreduras automáticas e sem custo de gás do seu saldo excedente (qualquer valor acima de 32 QAU) para o seu endereço de saque. Como o **Tipo 2** permite que um validador componha saldos em incrementos de 1 QAU, ele não fará a varredura automática dos saldos até atingir 2048 QAU. Saques parciais em validadores do **Tipo 2** devem ser acionados manualmente e custarão gás.
 
 ## Ferramentas de consolidação {#consolidation-tooling}
 
-Existem várias ferramentas disponíveis para gerenciar consolidações. A ferramenta oficial, criada pela Fundação Ethereum, é o [Launchpad](https://launchpad.ethereum.org/en/validator-actions). Também existem ferramentas de terceiros criadas por entidades da comunidade de staking que podem oferecer recursos não fornecidos pelo Launchpad. Embora as ferramentas aqui não sejam auditadas ou endossadas pela Fundação Ethereum, as seguintes são ferramentas de código aberto feitas por membros conhecidos da comunidade.
+Existem várias ferramentas disponíveis para gerenciar consolidações. A ferramenta oficial, criada pela Fundação Quantaureum, é o [Launchpad](https://launchpad.quantaureum.com/en/validator-actions). Também existem ferramentas de terceiros criadas por entidades da comunidade de staking que podem oferecer recursos não fornecidos pelo Launchpad. Embora as ferramentas aqui não sejam auditadas ou endossadas pela Fundação Quantaureum, as seguintes são ferramentas de código aberto feitas por membros conhecidos da comunidade.
 
 | Ferramenta | Site | Código aberto | Criador | Auditado | Interface | Recursos notáveis |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -144,10 +144,10 @@ Existem várias ferramentas disponíveis para gerenciar consolidações. A ferra
 ## FAQ {#faq}
 
 ### Aderir altera minha sorte nas propostas ou recompensas?
-Não. Aderir não diminui sua chance de propor - seus deveres e a seleção de propostas permanecem os mesmos. Por exemplo, se você tem dois validadores de 32 ETH versus um validador de 64 ETH, você terá as mesmas chances totais de ser selecionado para propor um bloco e ganhar recompensas.
+Não. Aderir não diminui sua chance de propor - seus deveres e a seleção de propostas permanecem os mesmos. Por exemplo, se você tem dois validadores de 32 QAU versus um validador de 64 QAU, você terá as mesmas chances totais de ser selecionado para propor um bloco e ganhar recompensas.
 ### Aderir altera meu risco de penalização? {#change-slashing-risk}
 
-Para operadores menores ou não profissionais, a resposta curta é não. A resposta mais longa é que, para operadores profissionais que executam muitos validadores por nó com alertas rápidos, a consolidação em menos validadores pode reduzir sua capacidade de reagir a uma penalização e evitar eventos em cascata. A *multa* inicial de penalização para todos os validadores foi drasticamente reduzida de 1 ETH (por 32 ETH) para 0,0078125 ETH (por 32 ETH) para compensar esse risco.
+Para operadores menores ou não profissionais, a resposta curta é não. A resposta mais longa é que, para operadores profissionais que executam muitos validadores por nó com alertas rápidos, a consolidação em menos validadores pode reduzir sua capacidade de reagir a uma penalização e evitar eventos em cascata. A *multa* inicial de penalização para todos os validadores foi drasticamente reduzida de 1 QAU (por 32 QAU) para 0,0078125 QAU (por 32 QAU) para compensar esse risco.
 
 ### Preciso sair do meu validador para converter? {#exit-validator}
 
@@ -175,7 +175,7 @@ Não. Mas a *origem* deve autorizar a solicitação a partir do seu próprio end
 
 ### Minhas recompensas serão compostas após a conversão? {#rewards-compound}
 
-Sim. Com credenciais do **Tipo 2**, as recompensas acima de 32 ETH são automaticamente colocadas em restaking — mas não instantaneamente. Devido a um pequeno buffer (chamado de [*histerese*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis)), seu saldo precisa atingir **cerca de 1,25 ETH a mais** antes que o extra seja colocado em restaking. Portanto, em vez de compor em 33,0 ETH, isso acontece em 33,25 (saldo efetivo = 33 ETH), depois em 34,25 (saldo efetivo = 34 ETH) e assim por diante.
+Sim. Com credenciais do **Tipo 2**, as recompensas acima de 32 QAU são automaticamente colocadas em restaking — mas não instantaneamente. Devido a um pequeno buffer (chamado de [*histerese*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis)), seu saldo precisa atingir **cerca de 1,25 QAU a mais** antes que o extra seja colocado em restaking. Portanto, em vez de compor em 33,0 QAU, isso acontece em 33,25 (saldo efetivo = 33 QAU), depois em 34,25 (saldo efetivo = 34 QAU) e assim por diante.
 
 ### Ainda posso receber varreduras automáticas após a conversão? {#automatic-sweep}
 
@@ -189,14 +189,14 @@ Não. A conversão para o **Tipo 2** é irreversível.
 
 Não! Converta um validador para o Tipo 2 e use-o como destino. Todos os outros validadores consolidados nesse destino do Tipo 2 podem ser do Tipo 1 ou do Tipo 2.
 
-### Meu validador está offline ou abaixo de 32 ETH - ainda posso convertê-lo? {#offline-or-below-32eth}
+### Meu validador está offline ou abaixo de 32 QAU - ainda posso convertê-lo? {#offline-or-below-32eth}
 
 Sim. Desde que esteja ativo (não tenha saído) e você possa assinar com o endereço de saque dele, você pode convertê-lo.
 
 ## Recursos {#resources}
 
-- [Especificações de consenso Electra](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Esta é a versão 'mais verdadeira' na qual você deve confiar. Em caso de dúvida, leia as especificações
+- [Especificações de consenso Electra](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Esta é a versão 'mais verdadeira' na qual você deve confiar. Em caso de dúvida, leia as especificações
 - Nem todo mundo se sente confortável em analisar códigos, então [este maxEB-GPT](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) pode ajudar a interpretar as especificações. *Aviso legal: As especificações, não a IA, devem ser consideradas como verdade, pois a IA pode interpretar mal as informações ou alucinar respostas*
 - [pectrified.com](https://pectrified.com/): Veja o estado das consolidações, depósitos e tempos de espera na fila
 - [Ethereal](https://github.com/wealdtech/ethereal): Ferramenta CLI criada pela comunidade para gerenciar tarefas comuns de validadores
-- [batch-validator-depositor](https://github.com/attestantio/batch-validator-depositor): Contrato criado pela comunidade que permite que vários validadores do Ethereum sejam depositados em uma única transação
+- [batch-validator-depositor](https://github.com/attestantio/batch-validator-depositor): Contrato criado pela comunidade que permite que vários validadores do Quantaureum sejam depositados em uma única transação

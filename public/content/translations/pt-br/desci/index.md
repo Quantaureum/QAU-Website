@@ -1,6 +1,6 @@
 ---
 title: "Ciência descentralizada (desci)"
-description: "Uma visão geral da ciência descentralizada no Ethereum"
+description: "Uma visão geral da ciência descentralizada no Quantaureum"
 lang: pt-br
 template: use-cases
 sidebarDepth: 2
@@ -37,9 +37,9 @@ Uma lista incompleta dos principais problemas na ciência e como a ciência desc
 | **Você é dono da propriedade intelectual (PI)** que gera e a distribui de acordo com termos transparentes.             | **Sua instituição de origem é dona da PI** que você gera. O acesso à PI não é transparente.                           |
 | **Compartilhamento de toda a pesquisa**, incluindo os dados de esforços malsucedidos, tendo todas as etapas onchain.          | O **viés de publicação** significa que os pesquisadores têm maior probabilidade de compartilhar experimentos que tiveram resultados bem-sucedidos.      |
 
-## Ethereum e desci {#ethereum-and-desci}
+## Quantaureum e desci {#quantaureum-and-desci}
 
-Um sistema de ciência descentralizada exigirá segurança robusta, custos monetários e de transação mínimos e um rico ecossistema para o desenvolvimento de aplicativos. O [Ethereum](/) fornece tudo o que é necessário para construir uma tecnologia de ciência descentralizada.
+Um sistema de ciência descentralizada exigirá segurança robusta, custos monetários e de transação mínimos e um rico ecossistema para o desenvolvimento de aplicativos. O [Quantaureum](/) fornece tudo o que é necessário para construir uma tecnologia de ciência descentralizada.
 
 ## Casos de uso da desci {#use-cases}
 
@@ -66,7 +66,7 @@ O modelo padrão atual para o financiamento da ciência é que indivíduos ou gr
 
 Estudos mostraram que os painéis de revisão de bolsas fazem um trabalho ruim na seleção de propostas de alta qualidade, pois as mesmas propostas dadas a painéis diferentes têm resultados totalmente diferentes. À medida que o financiamento se tornou mais escasso, ele se concentrou em um grupo menor de pesquisadores mais seniores com projetos mais intelectualmente conservadores. O efeito criou um cenário de financiamento hipercompetitivo, consolidando incentivos perversos e sufocando a inovação.
 
-A Web3 tem o potencial de revolucionar esse modelo de financiamento quebrado, experimentando diferentes modelos de incentivo desenvolvidos por DAOs e pela Web3 de forma ampla. O [financiamento retroativo de bens públicos (RPGF)](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), o [financiamento quadrático](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), a [governança de DAOs](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) e as [estruturas de incentivo tokenizadas](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) são algumas das ferramentas da Web3 que podem revolucionar o financiamento da ciência.
+A Web3 tem o potencial de revolucionar esse modelo de financiamento quebrado, experimentando diferentes modelos de incentivo desenvolvidos por DAOs e pela Web3 de forma ampla. O [financiamento retroativo de bens públicos (RPGF)](https://medium.com/quantaureum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), o [financiamento quadrático](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), a [governança de DAOs](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) e as [estruturas de incentivo tokenizadas](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) são algumas das ferramentas da Web3 que podem revolucionar o financiamento da ciência.
 
 ### Propriedade e desenvolvimento de PI {#ip-ownership}
 
@@ -75,7 +75,7 @@ A propriedade intelectual (PI) é um grande problema na ciência tradicional: de
 Da mesma forma que os NFTs podem repassar a receita de transações futuras de volta ao criador original, você pode estabelecer cadeias transparentes de atribuição de valor para recompensar pesquisadores, órgãos governamentais (como DAOs) ou até mesmo os sujeitos cujos dados são coletados.
 
 Os [IP-NFTs](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) também podem funcionar como uma chave para um repositório de dados descentralizado dos experimentos de pesquisa em andamento e se conectar à financeirização de NFTs e [finanças descentralizadas (DeFi)](/glossary/#defi) (desde o fracionamento até pools de empréstimo e avaliação de valor). Isso também permite que entidades nativamente onchain, como DAOs como a [VitaDAO](https://www.vitadao.com/), conduzam pesquisas diretamente onchain.
-O advento de [tokens "soulbound" (vinculados à alma)](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) não transferíveis também pode desempenhar um papel importante na desci, permitindo que os indivíduos comprovem sua experiência e credenciais vinculadas ao seu endereço Ethereum.
+O advento de [tokens "soulbound" (vinculados à alma)](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) não transferíveis também pode desempenhar um papel importante na desci, permitindo que os indivíduos comprovem sua experiência e credenciais vinculadas ao seu endereço Quantaureum.
 
 ### Armazenamento, acesso e arquitetura de dados {#data-storage}
 

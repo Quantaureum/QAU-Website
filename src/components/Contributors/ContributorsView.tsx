@@ -58,7 +58,7 @@ const ContributorCard = ({ contributor }: { contributor: Contributor }) => {
 const ContributorsView = ({ contributors }: ContributorsViewProps) => (
   <>
     <p>
-      Thanks to our {contributors.length} Ethereum community members who have
+      Thanks to our {contributors.length} Quantaureum community members who have
       contributed so far!
     </p>
 

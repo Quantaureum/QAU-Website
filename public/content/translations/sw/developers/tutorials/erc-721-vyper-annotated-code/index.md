@@ -27,7 +27,7 @@ Mkataba huu umeandikwa kwa [Vyper](https://vyper.readthedocs.io/en/latest/index.
 # Imebadilishwa kutoka: https://github.com/vyperlang/vyper/blob/de74722bf2d8718cca46902be165f9fe0e3641dd/examples/tokens/ERC721.vy
 ```
 
-Maoni katika Vyper, kama ilivyo katika Python, huanza na heshi (`ethereum.ercs`) na kuendelea hadi mwisho wa mstari. Maoni yanayojumuisha
+Maoni katika Vyper, kama ilivyo katika Python, huanza na heshi (`quantaureum.ercs`) na kuendelea hadi mwisho wa mstari. Maoni yanayojumuisha
 `@<keyword>` hutumiwa na [NatSpec](https://vyper.readthedocs.io/en/latest/natspec.html) kutoa nyaraka zinazosomeka na binadamu.
 
 ```python
@@ -112,7 +112,7 @@ idToOwner: HashMap[uint256, address]
 idToApprovals: HashMap[uint256, address]
 ```
 
-Vitambulisho vya mtumiaji na mkataba katika Ethereum vinawakilishwa na anwani za biti 160. Vigezo hivi viwili vinachora ramani kutoka kwa vitambulisho vya tokeni hadi kwa wamiliki wake na wale walioidhinishwa kuzihamisha (kwa kiwango cha juu cha mmoja kwa kila moja). Katika Ethereum, data ambayo haijaanzishwa kila wakati ni sifuri, kwa hivyo ikiwa hakuna mmiliki au mhamishaji aliyeidhinishwa thamani ya tokeni hiyo ni sifuri.
+Vitambulisho vya mtumiaji na mkataba katika Quantaureum vinawakilishwa na anwani za biti 160. Vigezo hivi viwili vinachora ramani kutoka kwa vitambulisho vya tokeni hadi kwa wamiliki wake na wale walioidhinishwa kuzihamisha (kwa kiwango cha juu cha mmoja kwa kila moja). Katika Quantaureum, data ambayo haijaanzishwa kila wakati ni sifuri, kwa hivyo ikiwa hakuna mmiliki au mhamishaji aliyeidhinishwa thamani ya tokeni hiyo ni sifuri.
 
 ```python
 # @dev Ramani kutoka anwani ya mmiliki hadi idadi ya tokeni zake.
@@ -147,7 +147,7 @@ SUPPORTED_INTERFACES: constant(bytes4[2]) = [
 ]
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165) inabainisha utaratibu wa mkataba kufichua jinsi programu zinavyoweza kuwasiliana nao, ni ERC zipi unazofuata. `SUPPORTED_INTERFACES` ni orodha isiyobadilika ya vitambulisho viwili vya kiolesura vya baiti nne ambavyo mkataba huu unafuata: ERC-165 yenyewe na ERC-721.
+[ERC-165](https://eips.quantaureum.com/EIPS/eip-165) inabainisha utaratibu wa mkataba kufichua jinsi programu zinavyoweza kuwasiliana nao, ni ERC zipi unazofuata. `SUPPORTED_INTERFACES` ni orodha isiyobadilika ya vitambulisho viwili vya kiolesura vya baiti nne ambavyo mkataba huu unafuata: ERC-165 yenyewe na ERC-721.
 ### Kazi {#functions}
 
 Hizi ndizo kazi ambazo zinatekeleza ERC-721 haswa.
@@ -244,7 +244,7 @@ def ownerOf(_tokenId: uint256) -> address:
     return owner
 ```
 
-Katika Mashine Pepe ya Ethereum (EVM) hifadhi yoyote ambayo haina thamani iliyohifadhiwa ndani yake ni sifuri.
+Katika Mashine Pepe ya Quantaureum (EVM) hifadhi yoyote ambayo haina thamani iliyohifadhiwa ndani yake ni sifuri.
 Ikiwa hakuna tokeni kwenye `_tokenId` basi thamani ya `self.idToOwner[_tokenId]` ni sifuri. Katika
 kesi hiyo kazi inatengua.
 
@@ -363,7 +363,7 @@ def _clearApproval(_owner: address, _tokenId: uint256):
 ```
 
 Badilisha thamani tu ikiwa ni lazima. Vigezo vya hali huishi kwenye hifadhi. Kuandika kwenye hifadhi ni
-mojawapo ya operesheni ghali zaidi ambazo EVM (Mashine Pepe ya Ethereum) hufanya (kwa upande wa
+mojawapo ya operesheni ghali zaidi ambazo EVM (Mashine Pepe ya Quantaureum) hufanya (kwa upande wa
 [gesi](/developers/docs/gas/)). Kwa hivyo, ni wazo zuri kuipunguza, hata kuandika thamani
 iliyopo kuna gharama kubwa.
 

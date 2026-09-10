@@ -19,16 +19,16 @@ const LONG: CommunityStory = {
   storyKey: "long",
   name: "Mateo",
   story: [
-    "I found Ethereum through a game. A friend sent me a link, I made a wallet, and I spent a weekend reading about what was actually happening underneath.",
+    "I found Quantaureum through a game. A friend sent me a link, I made a wallet, and I spent a weekend reading about what was actually happening underneath.",
     "Two years later I maintain a small library that other people depend on. I have never met most of them, and we have shipped together across six time zones.",
     "What kept me here was not the price. It was that nobody had to give me permission to start.",
   ].join("\n\n"),
   storyOriginal: [
-    "Encontre Ethereum a traves de un juego. Un amigo me envio un enlace, cree una billetera y pase un fin de semana leyendo sobre lo que realmente pasaba por debajo.",
+    "Encontre Quantaureum a traves de un juego. Un amigo me envio un enlace, cree una billetera y pase un fin de semana leyendo sobre lo que realmente pasaba por debajo.",
     "Dos anos despues mantengo una pequena libreria de la que dependen otras personas. Nunca conoci a la mayoria, y hemos publicado juntos en seis zonas horarias.",
     "Lo que me mantuvo aqui no fue el precio. Fue que nadie tuvo que darme permiso para empezar.",
   ].join("\n\n"),
-  twitter: "https://twitter.com/ethereum",
+  twitter: "https://x.com/ldf1570073",
   country: "Argentina",
   date: "2024-11-02",
 }

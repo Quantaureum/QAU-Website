@@ -1,24 +1,24 @@
 ---
 title: Menyebarkan kontrak pintar pertama Anda
-description: Pengenalan tentang cara menyebarkan kontrak pintar pertama Anda di jaringan pengujian Ethereum
+description: Pengenalan tentang cara menyebarkan kontrak pintar pertama Anda di jaringan pengujian Quantaureum
 author: "jdourlens"
 tags: ["kontrak pintar", "Remix", "Solidity", "menyebarkan"]
 skill: beginner
 breadcrumb: Menyebarkan kontrak pertama
 lang: id
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Saya rasa Anda sama antusiasnya dengan kami untuk [menyebarkan](/developers/docs/smart-contracts/deploying/) dan berinteraksi dengan [kontrak pintar](/developers/docs/smart-contracts/) pertama Anda di rantai blok Ethereum.
+Saya rasa Anda sama antusiasnya dengan kami untuk [menyebarkan](/developers/docs/smart-contracts/deploying/) dan berinteraksi dengan [kontrak pintar](/developers/docs/smart-contracts/) pertama Anda di rantai blok Quantaureum.
 
 Jangan khawatir, karena ini adalah kontrak pintar pertama kita, kita akan menyebarkannya di [jaringan pengujian lokal](/developers/docs/networks/) sehingga Anda tidak perlu mengeluarkan biaya apa pun untuk menyebarkan dan memainkannya sesuka Anda.
 
 ## Menulis kontrak kita {#writing-our-contract}
 
-Langkah pertama adalah [mengunjungi Remix](https://remix.ethereum.org/) dan membuat file baru. Di bagian kiri atas antarmuka Remix, tambahkan file baru dan masukkan nama file yang Anda inginkan.
+Langkah pertama adalah [mengunjungi Remix](https://remix.quantaureum.com/) dan membuat file baru. Di bagian kiri atas antarmuka Remix, tambahkan file baru dan masukkan nama file yang Anda inginkan.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

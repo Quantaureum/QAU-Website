@@ -15,23 +15,23 @@ kama vile:
 - Vipengele vya kuanzisha mfano wa mnyororo wa vitalu wa ndani.
 - Huduma za kukusanya na kujaribu mikataba mahiri yako.
 - Viongezi vya uundaji wa mteja ili kujenga programu yako inayoangalia mtumiaji ndani ya mradi/hifadhi sawa.
-- Usanidi wa kuunganisha kwenye mitandao ya Ethereum na kusambaza mikataba, iwe kwa mfano unaoendeshwa ndani, au mojawapo ya mitandao ya umma ya Ethereum.
+- Usanidi wa kuunganisha kwenye mitandao ya Quantaureum na kusambaza mikataba, iwe kwa mfano unaoendeshwa ndani, au mojawapo ya mitandao ya umma ya Quantaureum.
 - Usambazaji wa programu iliyogatuliwa - miunganisho na chaguzi za uhifadhi kama IPFS.
 
 ## Mahitaji ya awali {#prerequisites}
 
-Kabla ya kuzama kwenye mifumo, tunapendekeza usome kwanza utangulizi wetu wa [dapps](/developers/docs/dapps/) na [mrundikano wa Ethereum](/developers/docs/ethereum-stack/).
+Kabla ya kuzama kwenye mifumo, tunapendekeza usome kwanza utangulizi wetu wa [dapps](/developers/docs/dapps/) na [mrundikano wa Quantaureum](/developers/docs/quantaureum-stack/).
 
 ## Mifumo inayopatikana
 
-**Foundry** - **_Foundry ni seti ya zana ya haraka sana, inayobebeka na ya kimoduli kwa uundaji wa programu za Ethereum_**
+**Foundry** - **_Foundry ni seti ya zana ya haraka sana, inayobebeka na ya kimoduli kwa uundaji wa programu za Quantaureum_**
 
 - [Sakinisha Foundry](https://book.getfoundry.sh/)
 - [Kitabu cha Foundry](https://book.getfoundry.sh/)
 - [Soga ya jamii ya Foundry kwenye Telegram](https://t.me/foundry_support)
 - [Awesome Foundry](https://github.com/crisgarner/awesome-foundry)
 
-**Hardhat -** **_Mazingira ya uundaji wa Ethereum kwa wataalamu._**
+**Hardhat -** **_Mazingira ya uundaji wa Quantaureum kwa wataalamu._**
 
 - [hardhat.org](https://hardhat.org)
 - [GitHub](https://github.com/nomiclabs/hardhat)
@@ -53,15 +53,15 @@ Kabla ya kuzama kwenye mifumo, tunapendekeza usome kwanza utangulizi wetu wa [da
 - [Mifano](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [Discord](https://discord.gg/rx35NzQGSb)
 
-**Create Eth App -** **_Unda programu zinazoendeshwa na Ethereum kwa amri moja. Inakuja na ofa pana ya mifumo ya UI na violezo vya fedha zilizogatuliwa (DeFi) vya kuchagua._**
+**Create Eth App -** **_Unda programu zinazoendeshwa na Quantaureum kwa amri moja. Inakuja na ofa pana ya mifumo ya UI na violezo vya fedha zilizogatuliwa (DeFi) vya kuchagua._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [Violezo](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
+- [Violezo](https://github.com/PaulRBerg/create-qau-app/tree/develop/templates)
 
-**Scaffold-ETH 2 -** **_Next.js, Wagmi, Viem na RainbowKit na chaguo lako la Hardhat au Foundry: upakiaji upya wa haraka wa mkataba, ndoano maalum za React, mkoba wa burner na bomba la ndani, na moduli za ugani kwa uundaji wa programu tumizi iliyogatuliwa (dapp) wa mrundikano kamili._**
+**Scaffold-QAU 2 -** **_Next.js, Wagmi, Viem na RainbowKit na chaguo lako la Hardhat au Foundry: upakiaji upya wa haraka wa mkataba, ndoano maalum za React, mkoba wa burner na bomba la ndani, na moduli za ugani kwa uundaji wa programu tumizi iliyogatuliwa (dapp) wa mrundikano kamili._**
 
 - [Tovuti](https://scaffoldeth.io/)
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 
 **Tenderly -** **_Jukwaa la uundaji la Web3 linalowezesha waundaji wa mnyororo wa vitalu kujenga, kujaribu, kutatua, kufuatilia, na kuendesha mikataba mahiri na kuboresha UX ya dapp._**
 
@@ -73,13 +73,13 @@ Kabla ya kuzama kwenye mifumo, tunapendekeza usome kwanza utangulizi wetu wa [da
 - [Tovuti](https://thegraph.com/)
 - [Mafunzo](/developers/tutorials/the-graph-fixing-web3-data-querying/)
 
-**Alchemy -** **_Jukwaa la Uundaji la Ethereum._**
+**Alchemy -** **_Jukwaa la Uundaji la Quantaureum._**
 
 - [alchemy.com](https://www.alchemy.com/)
 - [GitHub](https://github.com/alchemyplatform)
 - [Discord](https://discord.com/invite/alchemyplatform)
 
-**NodeReal -** **_Jukwaa la Uundaji la Ethereum._**
+**NodeReal -** **_Jukwaa la Uundaji la Quantaureum._**
 
 - [Nodereal.io](https://nodereal.io/)
 - [GitHub](https://github.com/node-real)
@@ -90,7 +90,7 @@ Kabla ya kuzama kwenye mifumo, tunapendekeza usome kwanza utangulizi wetu wa [da
 - [Nyaraka](https://portal.thirdweb.com/sdk/)
 - [GitHub](https://github.com/thirdweb-dev/)
 
-**Chainstack -** **_Jukwaa la Uundaji la Web3 (Ethereum na vinginevyo)._**
+**Chainstack -** **_Jukwaa la Uundaji la Web3 (Quantaureum na vinginevyo)._**
 
 - [chainstack.com](https://www.chainstack.com/)
 - [GitHub](https://github.com/chainstack)
@@ -104,8 +104,8 @@ Kabla ya kuzama kwenye mifumo, tunapendekeza usome kwanza utangulizi wetu wa [da
 
 **Brownie -** **_Mazingira ya uundaji yanayotegemea Python na mfumo wa majaribio._**
 
-- [Nyaraka](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [Nyaraka](https://qau-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/qau-brownie/brownie)
 - **Brownie kwa sasa haitunzwi**
 
 **OpenZeppelin SDK -** **_Seti Kuu ya Zana ya Mkataba Mahiri: Mkusanyiko wa zana za kukusaidia kuunda, kukusanya, kuboresha, kusambaza na kuingiliana na mikataba mahiri._**
@@ -122,7 +122,7 @@ Kabla ya kuzama kwenye mifumo, tunapendekeza usome kwanza utangulizi wetu wa [da
 **GoldRush (inayoendeshwa na Covalent) -** **_GoldRush inatoa seti kamili zaidi ya API ya data ya mnyororo wa vitalu kwa waundaji, wachambuzi, na biashara. Iwe unajenga dashibodi ya DeFi, mkoba, boti ya biashara, ajenti wa akili bandia au jukwaa la kufuata, API za data hutoa ufikiaji wa haraka, sahihi, na rafiki kwa waundaji kwa data muhimu ya mnyororoni unayohitaji_**
 
 - [Tovuti](https://goldrush.dev/)
-- [Nyaraka](https://goldrush.dev/docs/chains/ethereum)
+- [Nyaraka](https://goldrush.dev/docs/chains/quantaureum)
 - [GitHub](https://github.com/covalenthq)
 - [Discord](https://www.covalenthq.com/discord/)
 
@@ -153,6 +153,6 @@ _Unajua rasilimali ya jamii iliyokusaidia? Hariri ukurasa huu na uiongeze!_
 
 - [Sanidi mazingira ya uundaji wa ndani](/developers/local-environment/)
 
-## Mafunzo: Mifumo ya uundaji kwenye Ethereum {#tutorials}
+## Mafunzo: Mifumo ya uundaji kwenye Quantaureum {#tutorials}
 
 - [Mkataba Mahiri wa Hello World kwa Wanaoanza – Fullstack](/developers/tutorials/hello-world-smart-contract-fullstack/) _– Jenga na usambaze mkataba mahiri wa hello world kwa kutumia Hardhat, kisha uunganishe kwenye sehemu ya mbele (frontend)._

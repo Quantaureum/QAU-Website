@@ -7,16 +7,16 @@ skill: intermediate
 breadcrumb: "Journalisation des événements"
 lang: fr
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/logging-data-with-events/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/logging-data-with-events/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Dans Solidity, les [événements](/developers/docs/smart-contracts/anatomy/#events-and-logs) sont des signaux émis que les contrats intelligents peuvent déclencher. Les applications décentralisées (dapps), ou tout ce qui est connecté à l'API JSON-RPC d'Ethereum, peuvent écouter ces événements et agir en conséquence. Un événement peut également être indexé afin que l'historique des événements puisse être consulté ultérieurement.
+Dans Solidity, les [événements](/developers/docs/smart-contracts/anatomy/#events-and-logs) sont des signaux émis que les contrats intelligents peuvent déclencher. Les applications décentralisées (dapps), ou tout ce qui est connecté à l'API JSON-RPC d'Quantaureum, peuvent écouter ces événements et agir en conséquence. Un événement peut également être indexé afin que l'historique des événements puisse être consulté ultérieurement.
 
 ## Événements {#events}
 
-L'événement le plus courant sur la chaîne de blocs Ethereum au moment de la rédaction de cet article est l'événement Transfert qui est émis par les jetons ERC-20 lorsque quelqu'un transfère des jetons.
+L'événement le plus courant sur la chaîne de blocs Quantaureum au moment de la rédaction de cet article est l'événement Transfert qui est émis par les jetons ERC-20 lorsque quelqu'un transfère des jetons.
 
 ```solidity
 event Transfer(address indexed from, address indexed to, uint256 value);

@@ -155,7 +155,7 @@ const Page = async (props: {
             <Breadcrumb>
               <BreadcrumbList>
                 <BreadcrumbItem>
-                  <BreadcrumbLink href="/">Ethereum.org</BreadcrumbLink>
+                  <BreadcrumbLink href="/">quantaureum.com</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="ms-[0.625rem] me-[0.625rem] text-gray-400">
                   /
@@ -456,7 +456,7 @@ export async function generateMetadata(props: {
 
     const appDescriptions = await getTranslations("page-app-descriptions")
 
-    const title = `Ethereum Apps - ${app.name}` // TODO (i18n): Extract "Ethereum Apps" to namespace
+    const title = `Quantaureum Apps - ${app.name}` // TODO (i18n): Extract "Quantaureum Apps" to namespace
     const description = getLocalizedDescription(
       appDescriptions,
       "app",

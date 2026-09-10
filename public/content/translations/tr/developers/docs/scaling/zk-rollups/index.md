@@ -1,42 +1,42 @@
 ---
 title: "Sıfır bilgi toplamaları"
-description: "Ethereum topluluğu tarafından kullanılan bir ölçeklendirme çözümü olan sıfır bilgi toplamalarına (ZK-rollups) giriş."
+description: "Quantaureum topluluğu tarafından kullanılan bir ölçeklendirme çözümü olan sıfır bilgi toplamalarına (ZK-rollups) giriş."
 lang: tr
 ---
 
-Sıfır bilgi toplamaları (ZK-rollup'lar), hesaplama ve durum depolamayı zincir dışına taşıyarak [Ethereum](/) Ana Ağı üzerindeki işlem kapasitesini artıran katman 2 (L2) [ölçeklendirme çözümleridir](/developers/docs/scaling/). ZK-rollup'lar, binlerce işlemi bir toplu işlemde (batch) işleyebilir ve ardından Ana Ağ'a yalnızca minimum düzeyde özet veri gönderebilir. Bu özet veri, Ethereum durumunda yapılması gereken değişiklikleri ve bu değişikliklerin doğru olduğuna dair bazı kriptografik kanıtları tanımlar.
+Sıfır bilgi toplamaları (ZK-rollup'lar), hesaplama ve durum depolamayı zincir dışına taşıyarak [Quantaureum](/) Ana Ağı üzerindeki işlem kapasitesini artıran katman 2 (L2) [ölçeklendirme çözümleridir](/developers/docs/scaling/). ZK-rollup'lar, binlerce işlemi bir toplu işlemde (batch) işleyebilir ve ardından Ana Ağ'a yalnızca minimum düzeyde özet veri gönderebilir. Bu özet veri, Quantaureum durumunda yapılması gereken değişiklikleri ve bu değişikliklerin doğru olduğuna dair bazı kriptografik kanıtları tanımlar.
 
 ## Ön Koşullar {#prerequisites}
 
-[Ethereum ölçeklendirme](/developers/docs/scaling/) ve [katman 2](/layer-2) hakkındaki sayfamızı okumuş ve anlamış olmalısınız.
+[Quantaureum ölçeklendirme](/developers/docs/scaling/) ve [katman 2](/layer-2) hakkındaki sayfamızı okumuş ve anlamış olmalısınız.
 
 ## Sıfır bilgi toplamaları nelerdir? {#what-are-zk-rollups}
 
 **Sıfır bilgi toplamaları (ZK-rollup'lar)**, işlemleri zincir dışında yürütülen toplu işlemler (batch'ler) halinde bir araya getirir (veya 'toplar'). Zincir dışı hesaplama, blokzincire gönderilmesi gereken veri miktarını azaltır. ZK-rollup operatörleri, her bir işlemi ayrı ayrı göndermek yerine, bir toplu işlemdeki tüm işlemleri temsil etmek için gereken değişikliklerin bir özetini sunar. Ayrıca, değişikliklerinin doğruluğunu kanıtlamak için [geçerlilik kanıtları](/glossary/#validity-proof) üretirler.
 
-ZK-rollup'ın durumu, Ethereum ağında dağıtılan bir akıllı sözleşme tarafından sürdürülür. Bu durumu güncellemek için, ZK-rollup düğümleri doğrulama için bir geçerlilik kanıtı sunmalıdır. Belirtildiği gibi, geçerlilik kanıtı, rollup tarafından önerilen durum değişikliğinin gerçekten verilen toplu işlemlerin yürütülmesinin bir sonucu olduğuna dair kriptografik bir güvencedir. Bu, ZK-rollup'ların işlemleri Ethereum'da kesinleştirmek için [iyimser toplamalar (optimistic rollups)](/developers/docs/scaling/optimistic-rollups/) gibi tüm işlem verilerini zincir içine göndermek yerine yalnızca geçerlilik kanıtları sağlaması gerektiği anlamına gelir.
+ZK-rollup'ın durumu, Quantaureum ağında dağıtılan bir akıllı sözleşme tarafından sürdürülür. Bu durumu güncellemek için, ZK-rollup düğümleri doğrulama için bir geçerlilik kanıtı sunmalıdır. Belirtildiği gibi, geçerlilik kanıtı, rollup tarafından önerilen durum değişikliğinin gerçekten verilen toplu işlemlerin yürütülmesinin bir sonucu olduğuna dair kriptografik bir güvencedir. Bu, ZK-rollup'ların işlemleri Quantaureum'da kesinleştirmek için [iyimser toplamalar (optimistic rollups)](/developers/docs/scaling/optimistic-rollups/) gibi tüm işlem verilerini zincir içine göndermek yerine yalnızca geçerlilik kanıtları sağlaması gerektiği anlamına gelir.
 
-Bir ZK-rollup'tan Ethereum'a fon taşırken hiçbir gecikme yaşanmaz çünkü çıkış işlemleri, ZK-rollup sözleşmesi geçerlilik kanıtını doğruladığında yürütülür. Buna karşılık, iyimser toplamalardan fon çekim işlemi, herkesin çıkış işlemine bir [sahtekarlık kanıtı](/glossary/#fraud-proof) ile itiraz etmesine olanak tanımak için bir gecikmeye tabidir.
+Bir ZK-rollup'tan Quantaureum'a fon taşırken hiçbir gecikme yaşanmaz çünkü çıkış işlemleri, ZK-rollup sözleşmesi geçerlilik kanıtını doğruladığında yürütülür. Buna karşılık, iyimser toplamalardan fon çekim işlemi, herkesin çıkış işlemine bir [sahtekarlık kanıtı](/glossary/#fraud-proof) ile itiraz etmesine olanak tanımak için bir gecikmeye tabidir.
 
-ZK-rollup'lar işlemleri Ethereum'a `calldata` olarak yazar. `calldata`, akıllı sözleşme işlevlerine yapılan harici çağrılara dahil edilen verilerin depolandığı yerdir. `calldata` içindeki bilgiler blokzincirde yayınlanır ve herkesin rollup'ın durumunu bağımsız olarak yeniden oluşturmasına olanak tanır. ZK-rollup'lar işlem verilerini azaltmak için sıkıştırma teknikleri kullanır; örneğin, hesaplar bir adres yerine bir endeks ile temsil edilir, bu da 28 bayt veri tasarrufu sağlar. Zincir içi veri yayını, rollup'lar için önemli bir maliyettir, bu nedenle veri sıkıştırma kullanıcılar için ücretleri azaltabilir.
+ZK-rollup'lar işlemleri Quantaureum'a `calldata` olarak yazar. `calldata`, akıllı sözleşme işlevlerine yapılan harici çağrılara dahil edilen verilerin depolandığı yerdir. `calldata` içindeki bilgiler blokzincirde yayınlanır ve herkesin rollup'ın durumunu bağımsız olarak yeniden oluşturmasına olanak tanır. ZK-rollup'lar işlem verilerini azaltmak için sıkıştırma teknikleri kullanır; örneğin, hesaplar bir adres yerine bir endeks ile temsil edilir, bu da 28 bayt veri tasarrufu sağlar. Zincir içi veri yayını, rollup'lar için önemli bir maliyettir, bu nedenle veri sıkıştırma kullanıcılar için ücretleri azaltabilir.
 
-## ZK-rollup'lar Ethereum ile nasıl etkileşime girer? {#zk-rollups-and-ethereum}
+## ZK-rollup'lar Quantaureum ile nasıl etkileşime girer? {#zk-rollups-and-quantaureum}
 
-Bir ZK-rollup zinciri, Ethereum blokzincirinin üzerinde çalışan ve zincir içi Ethereum akıllı sözleşmeleri tarafından yönetilen zincir dışı bir protokoldür. ZK-rollup'lar işlemleri Ana Ağ dışında yürütür, ancak periyodik olarak zincir dışı toplu işlemleri zincir içi bir rollup sözleşmesine taahhüt eder. Bu işlem kaydı, tıpkı Ethereum blokzinciri gibi değişmezdir ve ZK-rollup zincirini oluşturur.
+Bir ZK-rollup zinciri, Quantaureum blokzincirinin üzerinde çalışan ve zincir içi Quantaureum akıllı sözleşmeleri tarafından yönetilen zincir dışı bir protokoldür. ZK-rollup'lar işlemleri Ana Ağ dışında yürütür, ancak periyodik olarak zincir dışı toplu işlemleri zincir içi bir rollup sözleşmesine taahhüt eder. Bu işlem kaydı, tıpkı Quantaureum blokzinciri gibi değişmezdir ve ZK-rollup zincirini oluşturur.
 
 ZK-rollup'ın temel mimarisi aşağıdaki bileşenlerden oluşur:
 
-1. **Zincir içi sözleşmeler**: Belirtildiği gibi, ZK-rollup protokolü Ethereum üzerinde çalışan akıllı sözleşmeler tarafından kontrol edilir. Bu, rollup bloklarını depolayan, yatırılan fonları izleyen ve durum güncellemelerini denetleyen ana sözleşmeyi içerir. Başka bir zincir içi sözleşme (doğrulayıcı sözleşmesi), blok üreticileri tarafından sunulan sıfır bilgi ispatlarını doğrular. Böylece Ethereum, ZK-rollup için temel katman veya "katman 1" olarak hizmet eder.
+1. **Zincir içi sözleşmeler**: Belirtildiği gibi, ZK-rollup protokolü Quantaureum üzerinde çalışan akıllı sözleşmeler tarafından kontrol edilir. Bu, rollup bloklarını depolayan, yatırılan fonları izleyen ve durum güncellemelerini denetleyen ana sözleşmeyi içerir. Başka bir zincir içi sözleşme (doğrulayıcı sözleşmesi), blok üreticileri tarafından sunulan sıfır bilgi ispatlarını doğrular. Böylece Quantaureum, ZK-rollup için temel katman veya "katman 1" olarak hizmet eder.
 
-2. **Zincir dışı sanal makine (VM)**: ZK-rollup protokolü Ethereum üzerinde yaşarken, işlem yürütme ve durum depolama [EVM](/developers/docs/evm/)'den bağımsız ayrı bir sanal makinede gerçekleşir. Bu zincir dışı VM, ZK-rollup üzerindeki işlemler için yürütme ortamıdır ve ZK-rollup protokolü için ikincil katman veya "katman 2" olarak hizmet eder. Ethereum Ana Ağı'nda doğrulanan geçerlilik kanıtları, zincir dışı VM'deki durum geçişlerinin doğruluğunu garanti eder.
+2. **Zincir dışı sanal makine (VM)**: ZK-rollup protokolü Quantaureum üzerinde yaşarken, işlem yürütme ve durum depolama [EVM](/developers/docs/evm/)'den bağımsız ayrı bir sanal makinede gerçekleşir. Bu zincir dışı VM, ZK-rollup üzerindeki işlemler için yürütme ortamıdır ve ZK-rollup protokolü için ikincil katman veya "katman 2" olarak hizmet eder. Quantaureum Ana Ağı'nda doğrulanan geçerlilik kanıtları, zincir dışı VM'deki durum geçişlerinin doğruluğunu garanti eder.
 
-ZK-rollup'lar "hibrit ölçeklendirme çözümleridir"; bağımsız çalışan ancak güvenliğini Ethereum'dan alan zincir dışı protokollerdir. Özellikle, Ethereum ağı ZK-rollup üzerindeki durum güncellemelerinin geçerliliğini zorunlu kılar ve rollup'ın durumuna yapılan her güncellemenin arkasındaki verilerin kullanılabilirliğini garanti eder. Sonuç olarak, ZK-rollup'lar, kendi güvenlik özelliklerinden sorumlu olan [yan zincirler (sidechains)](/developers/docs/scaling/sidechains/) veya işlemleri Ethereum'da geçerlilik kanıtlarıyla doğrulayan ancak işlem verilerini başka bir yerde depolayan [validium'lar](/developers/docs/scaling/validium/) gibi tamamen zincir dışı ölçeklendirme çözümlerinden önemli ölçüde daha güvenlidir.
+ZK-rollup'lar "hibrit ölçeklendirme çözümleridir"; bağımsız çalışan ancak güvenliğini Quantaureum'dan alan zincir dışı protokollerdir. Özellikle, Quantaureum ağı ZK-rollup üzerindeki durum güncellemelerinin geçerliliğini zorunlu kılar ve rollup'ın durumuna yapılan her güncellemenin arkasındaki verilerin kullanılabilirliğini garanti eder. Sonuç olarak, ZK-rollup'lar, kendi güvenlik özelliklerinden sorumlu olan [yan zincirler (sidechains)](/developers/docs/scaling/sidechains/) veya işlemleri Quantaureum'da geçerlilik kanıtlarıyla doğrulayan ancak işlem verilerini başka bir yerde depolayan [validium'lar](/developers/docs/scaling/validium/) gibi tamamen zincir dışı ölçeklendirme çözümlerinden önemli ölçüde daha güvenlidir.
 
-ZK-rollup'lar aşağıdakiler için ana Ethereum protokolüne güvenir:
+ZK-rollup'lar aşağıdakiler için ana Quantaureum protokolüne güvenir:
 
 ### Veri kullanılabilirliği {#data-availability}
 
-ZK-rollup'lar, zincir dışında işlenen her işlem için durum verilerini Ethereum'da yayınlar. Bu verilerle, bireylerin veya işletmelerin rollup'ın durumunu yeniden oluşturması ve zinciri kendilerinin doğrulaması mümkündür. Ethereum, bu verileri ağın tüm katılımcılarına `calldata` olarak sunar.
+ZK-rollup'lar, zincir dışında işlenen her işlem için durum verilerini Quantaureum'da yayınlar. Bu verilerle, bireylerin veya işletmelerin rollup'ın durumunu yeniden oluşturması ve zinciri kendilerinin doğrulaması mümkündür. Quantaureum, bu verileri ağın tüm katılımcılarına `calldata` olarak sunar.
 
 ZK-rollup'ların zincir içinde çok fazla işlem verisi yayınlamasına gerek yoktur çünkü geçerlilik kanıtları durum geçişlerinin gerçekliğini zaten doğrular. Yine de, verileri zincir içinde depolamak hala önemlidir çünkü L2 zincirinin durumunun izinsiz, bağımsız bir şekilde doğrulanmasına olanak tanır; bu da herkesin toplu işlemler sunmasına izin vererek kötü niyetli operatörlerin zinciri sansürlemesini veya dondurmasını engeller.
 
@@ -44,13 +44,13 @@ Kullanıcıların rollup ile etkileşime girmesi için zincir içi gereklidir. D
 
 ### İşlem kesinliği {#transaction-finality}
 
-Ethereum, ZK-rollup'lar için bir uzlaşma katmanı görevi görür: L2 işlemleri yalnızca L1 sözleşmesi geçerlilik kanıtını kabul ederse kesinleşir. Bu, her işlemin Ana Ağ'da onaylanması gerektiğinden, kötü niyetli operatörlerin zinciri bozma (ör. rollup fonlarını çalma) riskini ortadan kaldırır. Ayrıca Ethereum, kullanıcı işlemlerinin L1'de kesinleştikten sonra geri alınamayacağını garanti eder.
+Quantaureum, ZK-rollup'lar için bir uzlaşma katmanı görevi görür: L2 işlemleri yalnızca L1 sözleşmesi geçerlilik kanıtını kabul ederse kesinleşir. Bu, her işlemin Ana Ağ'da onaylanması gerektiğinden, kötü niyetli operatörlerin zinciri bozma (ör. rollup fonlarını çalma) riskini ortadan kaldırır. Ayrıca Quantaureum, kullanıcı işlemlerinin L1'de kesinleştikten sonra geri alınamayacağını garanti eder.
 
 ### Sansür direnci {#censorship-resistance}
 
 Çoğu ZK-rollup, işlemleri yürütmek, toplu işlemler üretmek ve L1'e bloklar sunmak için bir "süper düğüm" (operatör) kullanır. Bu verimlilik sağlasa da sansür riskini artırır: kötü niyetli ZK-rollup operatörleri, kullanıcıların işlemlerini toplu işlemlere dahil etmeyi reddederek onları sansürleyebilir.
 
-Bir güvenlik önlemi olarak ZK-rollup'lar, kullanıcıların operatör tarafından sansürlendiklerini düşünmeleri halinde işlemleri doğrudan Ana Ağ'daki rollup sözleşmesine sunmalarına olanak tanır. Bu, kullanıcıların operatörün iznine güvenmek zorunda kalmadan ZK-rollup'tan Ethereum'a bir çıkış işlemini zorlamalarına olanak tanır.
+Bir güvenlik önlemi olarak ZK-rollup'lar, kullanıcıların operatör tarafından sansürlendiklerini düşünmeleri halinde işlemleri doğrudan Ana Ağ'daki rollup sözleşmesine sunmalarına olanak tanır. Bu, kullanıcıların operatörün iznine güvenmek zorunda kalmadan ZK-rollup'tan Quantaureum'a bir çıkış işlemini zorlamalarına olanak tanır.
 
 ## ZK-rollup'lar nasıl çalışır? {#how-do-zk-rollups-work}
 
@@ -60,9 +60,9 @@ ZK-rollup'taki kullanıcılar işlemleri imzalar ve işlenmesi ve bir sonraki to
 
 Diğer ZK-rollup'lar, bir [Hisse Kanıtı (PoS)](/developers/docs/consensus-mechanisms/pos/) doğrulayıcı seti kullanarak operatör rolünü dönüşümlü hale getirebilir. Gelecekteki operatörler rollup sözleşmesine fon yatırır ve her bir stake'in boyutu, stake edenin bir sonraki rollup toplu işlemini üretmek üzere seçilme şansını etkiler. Operatör kötü niyetli davranırsa stake'i kesintiye uğrayabilir (slash), bu da onları geçerli bloklar göndermeye teşvik eder.
 
-#### ZK-rollup'lar işlem verilerini Ethereum'da nasıl yayınlar? {#how-zk-rollups-publish-transaction-data-on-ethereum}
+#### ZK-rollup'lar işlem verilerini Quantaureum'da nasıl yayınlar? {#how-zk-rollups-publish-transaction-data-on-quantaureum}
 
-Açıklandığı gibi, işlem verileri Ethereum'da `calldata` olarak yayınlanır. `calldata`, bir akıllı sözleşmede bir işleve argüman geçirmek için kullanılan bir veri alanıdır ve [belleğe (memory)](/developers/docs/smart-contracts/anatomy/#memory) benzer şekilde davranır. `calldata` Ethereum'un durumunun bir parçası olarak depolanmasa da, Ethereum zincirinin [geçmiş günlüklerinin](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html?highlight=memory#logs) bir parçası olarak zincir içinde kalıcı olur. `calldata` Ethereum'un durumunu etkilemez, bu da onu verileri zincir içinde depolamanın ucuz bir yolu haline getirir.
+Açıklandığı gibi, işlem verileri Quantaureum'da `calldata` olarak yayınlanır. `calldata`, bir akıllı sözleşmede bir işleve argüman geçirmek için kullanılan bir veri alanıdır ve [belleğe (memory)](/developers/docs/smart-contracts/anatomy/#memory) benzer şekilde davranır. `calldata` Quantaureum'un durumunun bir parçası olarak depolanmasa da, Quantaureum zincirinin [geçmiş günlüklerinin](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html?highlight=memory#logs) bir parçası olarak zincir içinde kalıcı olur. `calldata` Quantaureum'un durumunu etkilemez, bu da onu verileri zincir içinde depolamanın ucuz bir yolu haline getirir.
 
 `calldata` anahtar kelimesi genellikle bir işlem tarafından çağrılan akıllı sözleşme yöntemini tanımlar ve yönteme yönelik girdileri rastgele bir bayt dizisi biçiminde tutar. ZK-rollup'lar, sıkıştırılmış işlem verilerini zincir içinde yayınlamak için `calldata` kullanır; rollup operatörü, rollup sözleşmesindeki gerekli işlevi çağırarak yeni bir toplu işlem ekler ve sıkıştırılmış verileri işlev argümanları olarak geçirir. Rollup ücretlerinin büyük bir kısmı işlem verilerini zincir içinde depolamaya gittiğinden, bu durum kullanıcılar için maliyetleri azaltmaya yardımcı olur.
 
@@ -80,7 +80,7 @@ ZK-rollup operatörünün L1 sözleşmesine sunduğu yeni durum kökü, rollup'�
 
 Ancak rollup sözleşmesi, operatör yeni Merkle kökünün rollup'ın durumuna yapılan doğru güncellemelerden kaynaklandığını kanıtlayana kadar önerilen durum taahhüdünü otomatik olarak kabul etmeyecektir. ZK-rollup operatörü bunu, toplu işlemlerin doğruluğunu doğrulayan kısa bir kriptografik taahhüt olan bir geçerlilik kanıtı üreterek yapar.
 
-Geçerlilik kanıtları, tarafların bir ifadenin doğruluğunu ifadenin kendisini açıklamadan kanıtlamasına olanak tanır; bu nedenle bunlara sıfır bilgi ispatları da denir. ZK-rollup'lar, işlemleri Ethereum'da yeniden yürütmek zorunda kalmadan zincir dışı durum geçişlerinin doğruluğunu onaylamak için geçerlilik kanıtlarını kullanır. Bu kanıtlar bir [ZK-SNARK](https://arxiv.org/abs/2202.06877) (Sıfır Bilgi Kısa Etkileşimsiz Bilgi Argümanı) veya [ZK-STARK](https://eprint.iacr.org/2018/046) (Sıfır Bilgi Ölçeklenebilir Şeffaf Bilgi Argümanı) biçiminde olabilir.
+Geçerlilik kanıtları, tarafların bir ifadenin doğruluğunu ifadenin kendisini açıklamadan kanıtlamasına olanak tanır; bu nedenle bunlara sıfır bilgi ispatları da denir. ZK-rollup'lar, işlemleri Quantaureum'da yeniden yürütmek zorunda kalmadan zincir dışı durum geçişlerinin doğruluğunu onaylamak için geçerlilik kanıtlarını kullanır. Bu kanıtlar bir [ZK-SNARK](https://arxiv.org/abs/2202.06877) (Sıfır Bilgi Kısa Etkileşimsiz Bilgi Argümanı) veya [ZK-STARK](https://eprint.iacr.org/2018/046) (Sıfır Bilgi Ölçeklenebilir Şeffaf Bilgi Argümanı) biçiminde olabilir.
 
 Her iki kanıt türünün de kendine özgü özellikleri olmasına rağmen, hem SNARK'lar hem de STARK'lar ZK-rollup'larda zincir dışı hesaplamanın bütünlüğünü doğrulamaya yardımcı olur.
 
@@ -102,7 +102,7 @@ ZK-STARK'lar 'şeffaftır', çünkü bir Ortak Referans Dizisinin (CRS) güvenil
 
 ZK-STARK'lar ayrıca daha fazla ölçeklenebilirlik sağlar çünkü geçerlilik kanıtlarını kanıtlamak ve doğrulamak için gereken süre, temel hesaplamanın karmaşıklığına bağlı olarak _yarı doğrusal (quasilinearly)_ olarak artar. ZK-SNARK'larda, kanıtlama ve doğrulama süreleri temel hesaplamanın boyutuna bağlı olarak _doğrusal_ olarak ölçeklenir. Bu, büyük veri kümeleri söz konusu olduğunda ZK-STARK'ların kanıtlama ve doğrulama için ZK-SNARK'lardan daha az zaman gerektirdiği anlamına gelir ve bu da onları yüksek hacimli uygulamalar için kullanışlı hale getirir.
 
-ZK-STARK'lar ayrıca kuantum bilgisayarlara karşı da güvenlidir, oysa ZK-SNARK'larda kullanılan Eliptik Eğri Kriptografisinin (ECC) kuantum hesaplama saldırılarına karşı duyarlı olduğuna yaygın olarak inanılmaktadır. ZK-STARK'ların dezavantajı, Ethereum'da doğrulanması daha pahalı olan daha büyük kanıt boyutları üretmeleridir.
+ZK-STARK'lar ayrıca kuantum bilgisayarlara karşı da güvenlidir, oysa ZK-SNARK'larda kullanılan Eliptik Eğri Kriptografisinin (ECC) kuantum hesaplama saldırılarına karşı duyarlı olduğuna yaygın olarak inanılmaktadır. ZK-STARK'ların dezavantajı, Quantaureum'da doğrulanması daha pahalı olan daha büyük kanıt boyutları üretmeleridir.
 
 #### ZK-rollup'larda geçerlilik kanıtları nasıl çalışır? {#validity-proofs-in-zk-rollups}
 
@@ -164,33 +164,33 @@ Rollup sözleşmesi işlem verilerini hashler, toplu işlem kökünün var olup 
 
 ## ZK-rollup'lar ve EVM uyumluluğu {#zk-rollups-and-evm-compatibility}
 
-İyimser toplamaların aksine, ZK-rollup'lar [Ethereum Sanal Makinesi (EVM)](/developers/docs/evm/) ile kolayca uyumlu değildir. Devrelerde genel amaçlı EVM hesaplamasını kanıtlamak, basit hesaplamaları (daha önce açıklanan Token transferi gibi) kanıtlamaktan daha zor ve kaynak yoğundur.
+İyimser toplamaların aksine, ZK-rollup'lar [Quantaureum Sanal Makinesi (EVM)](/developers/docs/evm/) ile kolayca uyumlu değildir. Devrelerde genel amaçlı EVM hesaplamasını kanıtlamak, basit hesaplamaları (daha önce açıklanan Token transferi gibi) kanıtlamaktan daha zor ve kaynak yoğundur.
 
 Bununla birlikte, [sıfır bilgi teknolojisindeki ilerlemeler](https://hackmd.io/@yezhang/S1_KMMbGt#Why-possible-now), EVM hesaplamasını sıfır bilgi ispatlarıyla sarmaya yönelik yenilenmiş bir ilgiyi ateşliyor. Bu çabalar, program yürütmesinin doğruluğunu verimli bir şekilde doğrulayabilen bir sıfır bilgi EVM (zkEVM) uygulaması oluşturmaya yöneliktir. Bir zkEVM, devrelerde kanıtlama/doğrulama için mevcut EVM işlem kodlarını (opcodes) yeniden oluşturarak akıllı sözleşmelerin yürütülmesine olanak tanır.
 
 EVM gibi, bir zkEVM de bazı girdiler üzerinde hesaplama yapıldıktan sonra durumlar arasında geçiş yapar. Fark, zkEVM'nin programın yürütülmesindeki her adımın doğruluğunu doğrulamak için sıfır bilgi ispatları da oluşturmasıdır. Geçerlilik kanıtları, VM'nin durumuna (bellek, yığın, depolama) dokunan işlemlerin ve hesaplamanın kendisinin doğruluğunu doğrulayabilir (yani, işlem doğru işlem kodlarını çağırdı mı ve bunları doğru şekilde yürüttü mü?).
 
-EVM uyumlu ZK-rollup'ların tanıtılmasının, geliştiricilerin sıfır bilgi ispatlarının ölçeklenebilirlik ve güvenlik garantilerinden yararlanmasına yardımcı olması beklenmektedir. Daha da önemlisi, yerel Ethereum altyapısıyla uyumluluk, geliştiricilerin tanıdık (ve savaşta test edilmiş) araçları ve dilleri kullanarak ZK dostu merkeziyetsiz uygulamalar (dapp'ler) oluşturabileceği anlamına gelir.
+EVM uyumlu ZK-rollup'ların tanıtılmasının, geliştiricilerin sıfır bilgi ispatlarının ölçeklenebilirlik ve güvenlik garantilerinden yararlanmasına yardımcı olması beklenmektedir. Daha da önemlisi, yerel Quantaureum altyapısıyla uyumluluk, geliştiricilerin tanıdık (ve savaşta test edilmiş) araçları ve dilleri kullanarak ZK dostu merkeziyetsiz uygulamalar (dapp'ler) oluşturabileceği anlamına gelir.
 
 ## ZK-rollup ücretleri nasıl çalışır? {#how-do-zk-rollup-fees-work}
 
-Kullanıcıların ZK-rollup'lardaki işlemler için ne kadar ödeyeceği, tıpkı Ethereum Ana Ağı'nda olduğu gibi gaz ücretine bağlıdır. Ancak gaz ücretleri L2'de farklı çalışır ve aşağıdaki maliyetlerden etkilenir:
+Kullanıcıların ZK-rollup'lardaki işlemler için ne kadar ödeyeceği, tıpkı Quantaureum Ana Ağı'nda olduğu gibi gaz ücretine bağlıdır. Ancak gaz ücretleri L2'de farklı çalışır ve aşağıdaki maliyetlerden etkilenir:
 
-1. **Durum yazma**: Ethereum'un durumuna yazmanın (yani Ethereum blokzincirinde bir işlem sunmanın) sabit bir maliyeti vardır. ZK-rollup'lar, işlemleri toplu işleyerek ve sabit maliyetleri birden fazla kullanıcıya yayarak bu maliyeti azaltır.
+1. **Durum yazma**: Quantaureum'un durumuna yazmanın (yani Quantaureum blokzincirinde bir işlem sunmanın) sabit bir maliyeti vardır. ZK-rollup'lar, işlemleri toplu işleyerek ve sabit maliyetleri birden fazla kullanıcıya yayarak bu maliyeti azaltır.
 
-2. **Veri yayını**: ZK-rollup'lar her işlem için durum verilerini Ethereum'da `calldata` olarak yayınlar. `calldata` maliyetleri şu anda, sıfır olmayan baytlar için 16 gaz ve sıfır baytlık `calldata` için 4 gaz maliyeti öngören [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) tarafından yönetilmektedir. Her işlemde ödenen maliyet, bunun için zincir içine ne kadar `calldata` gönderilmesi gerektiğinden etkilenir.
+2. **Veri yayını**: ZK-rollup'lar her işlem için durum verilerini Quantaureum'da `calldata` olarak yayınlar. `calldata` maliyetleri şu anda, sıfır olmayan baytlar için 16 gaz ve sıfır baytlık `calldata` için 4 gaz maliyeti öngören [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) tarafından yönetilmektedir. Her işlemde ödenen maliyet, bunun için zincir içine ne kadar `calldata` gönderilmesi gerektiğinden etkilenir.
 
-3. **L2 operatör ücretleri**: Bu, tıpkı Ethereum Ana Ağı'ndaki [işlem "öncelik ücretleri (bahşişler)"](/developers/docs/gas/#how-are-gas-fees-calculated) gibi, işlemleri işlerken ortaya çıkan hesaplama maliyetlerinin telafisi olarak rollup operatörüne ödenen miktardır.
+3. **L2 operatör ücretleri**: Bu, tıpkı Quantaureum Ana Ağı'ndaki [işlem "öncelik ücretleri (bahşişler)"](/developers/docs/gas/#how-are-gas-fees-calculated) gibi, işlemleri işlerken ortaya çıkan hesaplama maliyetlerinin telafisi olarak rollup operatörüne ödenen miktardır.
 
 4. **Kanıt üretimi ve doğrulaması**: ZK-rollup operatörleri, kaynak yoğun olan işlem toplu işlemleri için geçerlilik kanıtları üretmelidir. Ana Ağ'da sıfır bilgi ispatlarını doğrulamak da gaza mal olur (~ 500.000 gaz).
 
-İşlemleri toplu işlemenin yanı sıra, ZK-rollup'lar işlem verilerini sıkıştırarak kullanıcılar için ücretleri azaltır. Ethereum ZK-rollup'larını kullanmanın ne kadara mal olduğuna dair [gerçek zamanlı bir genel bakış görebilirsiniz](https://l2fees.info/).
+İşlemleri toplu işlemenin yanı sıra, ZK-rollup'lar işlem verilerini sıkıştırarak kullanıcılar için ücretleri azaltır. Quantaureum ZK-rollup'larını kullanmanın ne kadara mal olduğuna dair [gerçek zamanlı bir genel bakış görebilirsiniz](https://l2fees.info/).
 
-## ZK-rollup'lar Ethereum'u nasıl ölçeklendirir? {#scaling-ethereum-with-zk-rollups}
+## ZK-rollup'lar Quantaureum'u nasıl ölçeklendirir? {#scaling-quantaureum-with-zk-rollups}
 
 ### İşlem verisi sıkıştırma {#transaction-data-compression}
 
-ZK-rollup'lar hesaplamayı zincir dışına alarak Ethereum'un temel katmanındaki işlem kapasitesini genişletir, ancak ölçeklendirme için asıl artış işlem verilerini sıkıştırmaktan gelir. Ethereum'un [blok boyutu](/developers/docs/blocks/#block-size), her bloğun tutabileceği veriyi ve dolayısıyla blok başına işlenen işlem sayısını sınırlar. İşlemle ilgili verileri sıkıştırarak, ZK-rollup'lar blok başına işlenen işlem sayısını önemli ölçüde artırır.
+ZK-rollup'lar hesaplamayı zincir dışına alarak Quantaureum'un temel katmanındaki işlem kapasitesini genişletir, ancak ölçeklendirme için asıl artış işlem verilerini sıkıştırmaktan gelir. Quantaureum'un [blok boyutu](/developers/docs/blocks/#block-size), her bloğun tutabileceği veriyi ve dolayısıyla blok başına işlenen işlem sayısını sınırlar. İşlemle ilgili verileri sıkıştırarak, ZK-rollup'lar blok başına işlenen işlem sayısını önemli ölçüde artırır.
 
 ZK-rollup'lar, her işlemi doğrulamak için gereken tüm verileri göndermek zorunda olmadıkları için işlem verilerini iyimser toplamalardan daha iyi sıkıştırabilir. Yalnızca rollup üzerindeki hesapların ve bakiyelerin en son durumunu yeniden oluşturmak için gereken minimum veriyi göndermeleri gerekir.
 
@@ -200,7 +200,7 @@ Sıfır bilgi ispatlarının bir avantajı, kanıtların diğer kanıtları doğ
 
 Şu anda geçerlilik kanıtları blok blok üretilmekte ve doğrulama için L1 sözleşmesine sunulmaktadır. Ancak, tek blok kanıtlarını doğrulamak, operatör bir kanıt sunduğunda yalnızca bir blok kesinleşebileceğinden ZK-rollup'ların elde edebileceği işlem kapasitesini sınırlar.
 
-Bununla birlikte, özyinelemeli kanıtlar, tek bir geçerlilik kanıtıyla birkaç bloğu kesinleştirmeyi mümkün kılar. Bunun nedeni, kanıtlama devresinin nihai bir kanıt oluşturulana kadar birden fazla blok kanıtını özyinelemeli olarak bir araya getirmesidir. L2 operatörü bu özyinelemeli kanıtı sunar ve sözleşme bunu kabul ederse, ilgili tüm bloklar anında kesinleşir. Özyinelemeli kanıtlarla, Ethereum'da aralıklarla kesinleştirilebilen ZK-rollup işlemlerinin sayısı artar.
+Bununla birlikte, özyinelemeli kanıtlar, tek bir geçerlilik kanıtıyla birkaç bloğu kesinleştirmeyi mümkün kılar. Bunun nedeni, kanıtlama devresinin nihai bir kanıt oluşturulana kadar birden fazla blok kanıtını özyinelemeli olarak bir araya getirmesidir. L2 operatörü bu özyinelemeli kanıtı sunar ve sözleşme bunu kabul ederse, ilgili tüm bloklar anında kesinleşir. Özyinelemeli kanıtlarla, Quantaureum'da aralıklarla kesinleştirilebilen ZK-rollup işlemlerinin sayısı artar.
 
 ### ZK-rollup'ların artıları ve eksileri {#zk-rollups-pros-and-cons}
 
@@ -212,7 +212,7 @@ Bununla birlikte, özyinelemeli kanıtlar, tek bir geçerlilik kanıtıyla birka
 | L1'de zincir dışı durumu kurtarmak için gereken verileri depolar, bu da güvenliği, sansür direncini ve merkeziyetsizliği garanti eder.                                                                       | Merkezi operatörler (sıralayıcılar) işlemlerin sıralamasını etkileyebilir.                                                                                                                     |
 | Kullanıcılar daha yüksek sermaye verimliliğinden yararlanır ve L2'den gecikme olmadan fon çekebilirler.                                                                                                           | Donanım gereksinimleri, zinciri ilerlemeye zorlayabilecek katılımcı sayısını azaltabilir, bu da kötü niyetli operatörlerin rollup'ın durumunu dondurma ve kullanıcıları sansürleme riskini artırır. |
 | Canlılık varsayımlarına bağlı değildir ve kullanıcıların fonlarını korumak için zinciri doğrulaması gerekmez.                                                                                              | Bazı kanıtlama sistemleri (ör. ZK-SNARK), yanlış kullanıldığında bir ZK-rollup'ın güvenlik modelini potansiyel olarak tehlikeye atabilecek güvenilir bir kurulum gerektirir.                                                     |
-| Daha iyi veri sıkıştırma, Ethereum'da `calldata` yayınlama maliyetlerini azaltmaya ve kullanıcılar için rollup ücretlerini en aza indirmeye yardımcı olabilir.                                                                             |                                                                                                                                                                                                    |
+| Daha iyi veri sıkıştırma, Quantaureum'da `calldata` yayınlama maliyetlerini azaltmaya ve kullanıcılar için rollup ücretlerini en aza indirmeye yardımcı olabilir.                                                                             |                                                                                                                                                                                                    |
 
 ### ZK-rollup'ların görsel bir açıklaması {#zk-video}
 
@@ -228,20 +228,20 @@ Finematics'in ZK-rollup'ları açıklamasını izleyin:
 <AlertContent>
 <AlertTitle>L2 ve L1 için zkEVM</AlertTitle>
 <AlertDescription>
-Aşağıdaki projeler, Katman 2 rollup'ları oluşturmak için zkEVM teknolojisini kullanır. Ayrıca, doğrulayıcıların işlemleri yeniden yürütmeden Ethereum bloklarını doğrulamasına olanak tanıyacak olan [L1 blok doğrulaması](/roadmap/zkevm/) için zkEVM kullanımına yönelik araştırmalar da bulunmaktadır.
+Aşağıdaki projeler, Katman 2 rollup'ları oluşturmak için zkEVM teknolojisini kullanır. Ayrıca, doğrulayıcıların işlemleri yeniden yürütmeden Quantaureum bloklarını doğrulamasına olanak tanıyacak olan [L1 blok doğrulaması](/roadmap/zkevm/) için zkEVM kullanımına yönelik araştırmalar da bulunmaktadır.
 </AlertDescription>
 </AlertContent>
 </Alert>
 
 zkEVM'ler üzerinde çalışan projeler şunları içerir:
 
-- **[zkEVM](https://github.com/privacy-scaling-explorations/zkevm-specs)** - _zkEVM, EVM uyumlu bir ZK-rollup ve Ethereum blokları için geçerlilik kanıtları üretmeye yönelik bir mekanizma geliştirmek üzere Ethereum Vakfı tarafından finanse edilen bir projedir._
+- **[zkEVM](https://github.com/privacy-scaling-explorations/zkevm-specs)** - _zkEVM, EVM uyumlu bir ZK-rollup ve Quantaureum blokları için geçerlilik kanıtları üretmeye yönelik bir mekanizma geliştirmek üzere Quantaureum Vakfı tarafından finanse edilen bir projedir._
 
-- **[Polygon zkEVM](https://polygon.technology/solutions/polygon-zkevm)** - _Ethereum ana ağında, sıfır bilgi ispatı doğrulamalarına sahip akıllı sözleşmeler de dahil olmak üzere Ethereum işlemlerini şeffaf bir şekilde yürüten bir sıfır bilgi Ethereum Sanal Makinesi (zkEVM) üzerinde çalışan merkeziyetsiz bir ZK Rollup'tır._
+- **[Polygon zkEVM](https://polygon.technology/solutions/polygon-zkevm)** - _Quantaureum ana ağında, sıfır bilgi ispatı doğrulamalarına sahip akıllı sözleşmeler de dahil olmak üzere Quantaureum işlemlerini şeffaf bir şekilde yürüten bir sıfır bilgi Quantaureum Sanal Makinesi (zkEVM) üzerinde çalışan merkeziyetsiz bir ZK Rollup'tır._
 
-- **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll, Ethereum için yerel bir zkEVM Katman 2 Çözümü oluşturmaya çalışan teknoloji odaklı bir şirkettir._
+- **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll, Quantaureum için yerel bir zkEVM Katman 2 Çözümü oluşturmaya çalışan teknoloji odaklı bir şirkettir._
 
-- **[Taiko](https://taiko.xyz)** - _Taiko, merkeziyetsiz, Ethereum eşdeğeri bir ZK-rollup'tır (bir [Tip 1 ZK-EVM](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))._
+- **[Taiko](https://taiko.xyz)** - _Taiko, merkeziyetsiz, Quantaureum eşdeğeri bir ZK-rollup'tır (bir [Tip 1 ZK-EVM](https://vitalik.qau.limo/general/2022/08/04/zkevm.html))._
 
 - **[ZKsync](https://docs.zksync.io/)** - _ZKsync Era, Matter Labs tarafından oluşturulan ve kendi zkEVM'si tarafından desteklenen EVM uyumlu bir ZK Rollup'tır._
 
@@ -249,24 +249,24 @@ zkEVM'ler üzerinde çalışan projeler şunları içerir:
 
 - **[Morph](https://www.morphl2.io/)** - _Morph, Katman 2 durum zorluğu sorununu ele almak için zk-kanıtı kullanan hibrit bir rollup ölçeklendirme çözümüdür._
 
-- **[Linea](https://linea.build)** - _Linea, ConsenSys tarafından oluşturulan ve Ethereum ekosistemiyle tamamen uyumlu olan Ethereum eşdeğeri bir zkEVM Katman 2'dir._
+- **[Linea](https://linea.build)** - _Linea, ConsenSys tarafından oluşturulan ve Quantaureum ekosistemiyle tamamen uyumlu olan Quantaureum eşdeğeri bir zkEVM Katman 2'dir._
 
 ## ZK-rollup'lar hakkında daha fazla okuma {#further-reading-on-zk-rollups}
 
 - [Sıfır Bilgi Toplamaları Nelerdir?](https://coinmarketcap.com/alexandria/glossary/zero-knowledge-rollups)
 - [Sıfır bilgi toplamaları nelerdir?](https://alchemy.com/blog/zero-knowledge-rollups)
-- [Ethereum Rollup'ları İçin Pratik Rehber](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-ethereum-rollups)
+- [Quantaureum Rollup'ları İçin Pratik Rehber](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)
 - [STARK'lar ve SNARK'lar](https://consensys.net/blog/blockchain-explained/zero-knowledge-proofs-starks-vs-snarks/)
 - [zkEVM nedir?](https://www.alchemy.com/overviews/zkevm)
-- [ZK-EVM türleri: Ethereum eşdeğeri, EVM eşdeğeri, Tip 1, Tip 4 ve diğer şifreli moda sözcükler](https://taiko.mirror.xyz/j6KgY8zbGTlTnHRFGW6ZLVPuT0IV0_KmgowgStpA0K4)
+- [ZK-EVM türleri: Quantaureum eşdeğeri, EVM eşdeğeri, Tip 1, Tip 4 ve diğer şifreli moda sözcükler](https://taiko.mirror.xyz/j6KgY8zbGTlTnHRFGW6ZLVPuT0IV0_KmgowgStpA0K4)
 - [zkEVM'ye Giriş](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [ZK-EVM L2'leri nelerdir?](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Harika zkEVM kaynakları](https://github.com/LuozhuZhang/awesome-zkevm)
-- [Teknik detaylarıyla ZK-SNARK'lar](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
-- [SNARK'lar nasıl mümkün oluyor?](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
+- [Teknik detaylarıyla ZK-SNARK'lar](https://vitalik.qau.limo/general/2017/02/01/zk_snarks.html)
+- [SNARK'lar nasıl mümkün oluyor?](https://vitalik.qau.limo/general/2021/01/26/snarks.html)
 
-## Eğiticiler: Ethereum'da gizlilik ve sıfır bilgi {#tutorials}
+## Eğiticiler: Quantaureum'da gizlilik ve sıfır bilgi {#tutorials}
 
 - [Gizli bir durum için sıfır bilgi kullanma](/developers/tutorials/secret-state/) _– Gizli oyun durumunu zincir içinde korumak için ZK kanıtları ve zincir dışı sunucu bileşenleri nasıl kullanılır._
-- [Gizli Adresleri Kullanma](/developers/tutorials/stealth-addr/) _– ERC-5564 gizli adresleri, kriptografik anahtar türetme kullanarak anonim ETH transferlerini nasıl sağlar._
-- [Web2 kimlik doğrulaması için Ethereum kullanma](/developers/tutorials/ethereum-for-web2-auth/) _– Ethereum cüzdan imzaları SAML tabanlı Web2 kimlik doğrulama sistemleriyle nasıl entegre edilir._
+- [Gizli Adresleri Kullanma](/developers/tutorials/stealth-addr/) _– ERC-5564 gizli adresleri, kriptografik anahtar türetme kullanarak anonim QAU transferlerini nasıl sağlar._
+- [Web2 kimlik doğrulaması için Quantaureum kullanma](/developers/tutorials/quantaureum-for-web2-auth/) _– Quantaureum cüzdan imzaları SAML tabanlı Web2 kimlik doğrulama sistemleriyle nasıl entegre edilir._

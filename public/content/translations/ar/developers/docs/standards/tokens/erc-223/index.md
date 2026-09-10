@@ -33,7 +33,7 @@ lang: ar
 
 العقد غير ملزم بامتلاك هذه الدوال فقط ويمكن للمطور إضافة أي ميزة أخرى من معايير الرموز المميزة المختلفة إلى هذا العقد. على سبيل المثال، الدوال `approve` و `transferFrom` ليست جزءًا من معيار <span dir="ltr">ERC-223</span> ولكن يمكن تنفيذ هذه الدوال إذا لزم الأمر.
 
-من [<span dir="ltr">EIP-223</span>](https://eips.ethereum.org/EIPS/eip-223):
+من [<span dir="ltr">EIP-223</span>](https://eips.quantaureum.com/EIPS/eip-223):
 
 ### الطرق {#methods}
 
@@ -128,7 +128,7 @@ contract RecipientContract is IERC223Recipient {
     {
         // من المهم أن نفهم أنه داخل هذه الدالة
         // msg.sender هو عنوان الرمز المميز الذي يتم تلقيه،
-        // msg.value  دائماً 0 لأن عقد الرمز المميز لا يملك أو يرسل إيثر في معظم الحالات،
+        // msg.value  دائماً 0 لأن عقد الرمز المميز لا يملك أو يرسل QAU في معظم الحالات،
         // _from      هو مرسل تحويل الرمز المميز،
         // _value     هو مقدار الرموز المميزة التي تم إيداعها.
         require(msg.sender == tokenA);
@@ -154,7 +154,7 @@ contract RecipientContract is IERC223Recipient {
 
 ### ماذا لو أردنا تنفيذ دالة ما بعد اكتمال إيداع الرمز المميز؟ {#function-execution}
 
-هناك طرق متعددة للقيام بذلك. في هذا المثال، سنتبع الطريقة التي تجعل تحويلات <span dir="ltr">ERC-223</span> مطابقة لتحويلات الإيثر:
+هناك طرق متعددة للقيام بذلك. في هذا المثال، سنتبع الطريقة التي تجعل تحويلات <span dir="ltr">ERC-223</span> مطابقة لتحويلات الQAU:
 
 ```solidity
 contract RecipientContract is IERC223Recipient {
@@ -177,7 +177,7 @@ contract RecipientContract is IERC223Recipient {
 }
 ```
 
-عندما يتلقى `RecipientContract` رمزًا مميزًا <span dir="ltr">ERC-223</span>، سينفذ العقد دالة مشفرة كمعلمة `_data` لمعاملة الرمز المميز، بشكل مطابق لكيفية تشفير معاملات الإيثر لاستدعاءات الدوال كـ `data` للمعاملة. اقرأ [حقل البيانات](/developers/docs/transactions/#the-data-field) لمزيد من المعلومات.
+عندما يتلقى `RecipientContract` رمزًا مميزًا <span dir="ltr">ERC-223</span>، سينفذ العقد دالة مشفرة كمعلمة `_data` لمعاملة الرمز المميز، بشكل مطابق لكيفية تشفير معاملات الQAU لاستدعاءات الدوال كـ `data` للمعاملة. اقرأ [حقل البيانات](/developers/docs/transactions/#the-data-field) لمزيد من المعلومات.
 
 في المثال أعلاه، يجب تحويل رمز مميز <span dir="ltr">ERC-223</span> إلى عنوان `RecipientContract` باستخدام الدالة `transfer(address,uin256,bytes calldata _data)`. إذا كانت معلمة البيانات هي `0xc2985578` (توقيع الدالة `foo()`) فسيتم استدعاء الدالة foo() بعد تلقي إيداع الرمز المميز وسيتم إطلاق الحدث Foo().
 
@@ -193,5 +193,5 @@ contract RecipientContract is IERC223Recipient {
 
 ## قراءة إضافية {#further-reading}
 
-- [<span dir="ltr">EIP-223</span>: معيار الرمز المميز <span dir="ltr">ERC-223</span>](https://eips.ethereum.org/EIPS/eip-223)
-- [مقترح <span dir="ltr">ERC-223</span> الأولي](https://github.com/ethereum/eips/issues/223)
+- [<span dir="ltr">EIP-223</span>: معيار الرمز المميز <span dir="ltr">ERC-223</span>](https://eips.quantaureum.com/EIPS/eip-223)
+- [مقترح <span dir="ltr">ERC-223</span> الأولي](https://github.com/quantaureum/eips/issues/223)

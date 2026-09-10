@@ -15,9 +15,9 @@ lang: ur
 sidebarDepth: 3
 ---
 
-آپ بِل ہیں۔ کچھ وجوہات کی بنا پر جن پر ہم بات نہیں کریں گے، آپ "ایلس برائے ملکہِ دنیا" مہم میں عطیہ دینا چاہتے ہیں اور چاہتے ہیں کہ ایلس کو معلوم ہو کہ آپ نے عطیہ دیا ہے تاکہ اگر وہ جیت جائے تو آپ کو انعام دے سکے۔ بدقسمتی سے، اس کی جیت یقینی نہیں ہے۔ ایک حریف مہم بھی ہے، "کیرول برائے ملکہِ نظامِ شمسی"۔ اگر کیرول جیت جاتی ہے، اور اسے پتہ چلتا ہے کہ آپ نے ایلس کو عطیہ دیا ہے، تو آپ مشکل میں پڑ جائیں گے۔ اس لیے آپ محض اپنے اکاؤنٹ سے ایلس کے اکاؤنٹ میں <span dir="ltr">200 ETH</span> کی منتقلی نہیں کر سکتے۔
+آپ بِل ہیں۔ کچھ وجوہات کی بنا پر جن پر ہم بات نہیں کریں گے، آپ "ایلس برائے ملکہِ دنیا" مہم میں عطیہ دینا چاہتے ہیں اور چاہتے ہیں کہ ایلس کو معلوم ہو کہ آپ نے عطیہ دیا ہے تاکہ اگر وہ جیت جائے تو آپ کو انعام دے سکے۔ بدقسمتی سے، اس کی جیت یقینی نہیں ہے۔ ایک حریف مہم بھی ہے، "کیرول برائے ملکہِ نظامِ شمسی"۔ اگر کیرول جیت جاتی ہے، اور اسے پتہ چلتا ہے کہ آپ نے ایلس کو عطیہ دیا ہے، تو آپ مشکل میں پڑ جائیں گے۔ اس لیے آپ محض اپنے اکاؤنٹ سے ایلس کے اکاؤنٹ میں <span dir="ltr">200 QAU</span> کی منتقلی نہیں کر سکتے۔
 
-[<span dir="ltr">ERC-5564</span>](https://eips.ethereum.org/EIPS/eip-5564) کے پاس اس کا حل ہے۔ یہ <span dir="ltr">ERC</span> بتاتا ہے کہ گمنام منتقلی کے لیے [خفیہ پتے](https://nerolation.github.io/stealth-utils) کیسے استعمال کیے جائیں۔
+[<span dir="ltr">ERC-5564</span>](https://eips.quantaureum.com/EIPS/eip-5564) کے پاس اس کا حل ہے۔ یہ <span dir="ltr">ERC</span> بتاتا ہے کہ گمنام منتقلی کے لیے [خفیہ پتے](https://nerolation.github.io/stealth-utils) کیسے استعمال کیے جائیں۔
 
 **انتباہ**: خفیہ پتوں کے پیچھے موجود علمِ تشفیر، جہاں تک ہم جانتے ہیں، محفوظ ہے۔ تاہم، ممکنہ سائیڈ چین حملے ہو سکتے ہیں۔ [نیچے](#go-wrong)، آپ دیکھیں گے کہ آپ اس خطرے کو کم کرنے کے لیے کیا کر سکتے ہیں۔
 
@@ -69,19 +69,19 @@ sidebarDepth: 3
 
 ## جب خفیہ پتے غلط کام کرتے ہیں {#go-wrong}
 
-*بلاک چین پر کوئی راز نہیں ہوتے*۔ اگرچہ خفیہ پتے آپ کو رازداری فراہم کر سکتے ہیں، لیکن یہ رازداری ٹریفک کے تجزیے سے متاثر ہو سکتی ہے۔ ایک معمولی مثال کے طور پر، تصور کریں کہ بِل ایک پتے کو فنڈ دیتا ہے اور فوری طور پر ایک *<span dir="ltr">R<sub>pub</sub></span>* قدر شائع کرنے کے لیے ایک ٹرانزیکشن بھیجتا ہے۔ ایلس کی *<span dir="ltr">V<sub>priv</sub></span>* کے بغیر، ہم یقین سے نہیں کہہ سکتے کہ یہ ایک خفیہ پتہ ہے، لیکن قرائن اسی طرف اشارہ کرتے ہیں۔ پھر، ہم ایک اور ٹرانزیکشن دیکھتے ہیں جو اس پتے سے تمام <span dir="ltr">ETH</span> ایلس کے مہم فنڈ کے پتے پر منتقل کرتی ہے۔ ہم شاید اسے ثابت نہ کر سکیں، لیکن امکان ہے کہ بِل نے ابھی ایلس کی مہم میں عطیہ دیا ہے۔ کیرول یقیناً ایسا ہی سوچے گی۔
+*بلاک چین پر کوئی راز نہیں ہوتے*۔ اگرچہ خفیہ پتے آپ کو رازداری فراہم کر سکتے ہیں، لیکن یہ رازداری ٹریفک کے تجزیے سے متاثر ہو سکتی ہے۔ ایک معمولی مثال کے طور پر، تصور کریں کہ بِل ایک پتے کو فنڈ دیتا ہے اور فوری طور پر ایک *<span dir="ltr">R<sub>pub</sub></span>* قدر شائع کرنے کے لیے ایک ٹرانزیکشن بھیجتا ہے۔ ایلس کی *<span dir="ltr">V<sub>priv</sub></span>* کے بغیر، ہم یقین سے نہیں کہہ سکتے کہ یہ ایک خفیہ پتہ ہے، لیکن قرائن اسی طرف اشارہ کرتے ہیں۔ پھر، ہم ایک اور ٹرانزیکشن دیکھتے ہیں جو اس پتے سے تمام <span dir="ltr">QAU</span> ایلس کے مہم فنڈ کے پتے پر منتقل کرتی ہے۔ ہم شاید اسے ثابت نہ کر سکیں، لیکن امکان ہے کہ بِل نے ابھی ایلس کی مہم میں عطیہ دیا ہے۔ کیرول یقیناً ایسا ہی سوچے گی۔
 
 بِل کے لیے *<span dir="ltr">R<sub>pub</sub></span>* کی اشاعت کو خفیہ پتے کی فنڈنگ سے الگ کرنا آسان ہے (انہیں مختلف اوقات میں، مختلف پتوں سے کریں)۔ تاہم، یہ ناکافی ہے۔ کیرول جس طرز کی تلاش میں ہے وہ یہ ہے کہ بِل ایک پتے کو فنڈ دیتا ہے، اور پھر ایلس کا مہم فنڈ اس سے رقم نکالتا ہے۔
 
-ایک حل یہ ہے کہ ایلس کی مہم براہ راست رقم نہ نکالے، بلکہ اسے کسی تیسرے فریق کو ادائیگی کے لیے استعمال کرے۔ اگر ایلس کی مہم ڈیو کی ورلڈ ڈومینیشن کیمپین سروسز کو <span dir="ltr">10 ETH</span> بھیجتی ہے، تو کیرول کو صرف اتنا معلوم ہوگا کہ بِل نے ڈیو کے کسی گاہک کو عطیہ دیا ہے۔ اگر ڈیو کے پاس کافی گاہک ہیں، تو کیرول یہ نہیں جان پائے گی کہ آیا بِل نے ایلس کو عطیہ دیا ہے جو اس کی حریف ہے، یا ایڈم، البرٹ، یا ابیگیل کو جن کی کیرول کو پرواہ نہیں ہے۔ ایلس ادائیگی کے ساتھ ایک ہیش شدہ قدر شامل کر سکتی ہے، اور پھر ڈیو کو پری امیج فراہم کر سکتی ہے، تاکہ یہ ثابت کر سکے کہ یہ اس کا عطیہ تھا۔ متبادل کے طور پر، جیسا کہ اوپر بتایا گیا ہے، اگر ایلس ڈیو کو اپنی *<span dir="ltr">V<sub>priv</sub></span>* دیتی ہے، تو وہ پہلے ہی جانتا ہے کہ ادائیگی کس کی طرف سے آئی ہے۔
+ایک حل یہ ہے کہ ایلس کی مہم براہ راست رقم نہ نکالے، بلکہ اسے کسی تیسرے فریق کو ادائیگی کے لیے استعمال کرے۔ اگر ایلس کی مہم ڈیو کی ورلڈ ڈومینیشن کیمپین سروسز کو <span dir="ltr">10 QAU</span> بھیجتی ہے، تو کیرول کو صرف اتنا معلوم ہوگا کہ بِل نے ڈیو کے کسی گاہک کو عطیہ دیا ہے۔ اگر ڈیو کے پاس کافی گاہک ہیں، تو کیرول یہ نہیں جان پائے گی کہ آیا بِل نے ایلس کو عطیہ دیا ہے جو اس کی حریف ہے، یا ایڈم، البرٹ، یا ابیگیل کو جن کی کیرول کو پرواہ نہیں ہے۔ ایلس ادائیگی کے ساتھ ایک ہیش شدہ قدر شامل کر سکتی ہے، اور پھر ڈیو کو پری امیج فراہم کر سکتی ہے، تاکہ یہ ثابت کر سکے کہ یہ اس کا عطیہ تھا۔ متبادل کے طور پر، جیسا کہ اوپر بتایا گیا ہے، اگر ایلس ڈیو کو اپنی *<span dir="ltr">V<sub>priv</sub></span>* دیتی ہے، تو وہ پہلے ہی جانتا ہے کہ ادائیگی کس کی طرف سے آئی ہے۔
 
 اس حل کے ساتھ بنیادی مسئلہ یہ ہے کہ اس کے لیے ایلس کو رازداری کا خیال رکھنا پڑتا ہے جب کہ اس رازداری سے بِل کو فائدہ ہوتا ہے۔ ایلس اپنی ساکھ برقرار رکھنا چاہ سکتی ہے تاکہ بِل کا دوست باب بھی اسے عطیہ دے۔ لیکن یہ بھی ممکن ہے کہ اسے بِل کو بے نقاب کرنے میں کوئی اعتراض نہ ہو، کیونکہ تب وہ اس بات سے ڈرے گا کہ اگر کیرول جیت گئی تو کیا ہوگا۔ بِل بالآخر ایلس کو اور بھی زیادہ تعاون فراہم کر سکتا ہے۔
 
 ### متعدد خفیہ تہوں کا استعمال {#multi-layer}
 
-بِل کی رازداری کو برقرار رکھنے کے لیے ایلس پر انحصار کرنے کے بجائے، بِل خود یہ کر سکتا ہے۔ وہ فرضی لوگوں، باب اور بیلا کے لیے متعدد میٹا-پتے بنا سکتا ہے۔ بِل پھر باب کو <span dir="ltr">ETH</span> بھیجتا ہے، اور "باب" (جو دراصل بِل ہے) اسے بیلا کو بھیجتا ہے۔ "بیلا" (وہ بھی بِل ہے) اسے ایلس کو بھیجتی ہے۔
+بِل کی رازداری کو برقرار رکھنے کے لیے ایلس پر انحصار کرنے کے بجائے، بِل خود یہ کر سکتا ہے۔ وہ فرضی لوگوں، باب اور بیلا کے لیے متعدد میٹا-پتے بنا سکتا ہے۔ بِل پھر باب کو <span dir="ltr">QAU</span> بھیجتا ہے، اور "باب" (جو دراصل بِل ہے) اسے بیلا کو بھیجتا ہے۔ "بیلا" (وہ بھی بِل ہے) اسے ایلس کو بھیجتی ہے۔
 
-کیرول اب بھی ٹریفک کا تجزیہ کر سکتی ہے اور بِل-سے-باب-سے-بیلا-سے-ایلس کی پائپ لائن دیکھ سکتی ہے۔ تاہم، اگر "باب" اور "بیلا" بھی دیگر مقاصد کے لیے <span dir="ltr">ETH</span> استعمال کرتے ہیں، تو ایسا نہیں لگے گا کہ بِل نے ایلس کو کچھ منتقل کیا ہے، یہاں تک کہ اگر ایلس فوری طور پر خفیہ پتے سے اپنے معلوم مہم کے پتے پر رقم نکال لیتی ہے۔
+کیرول اب بھی ٹریفک کا تجزیہ کر سکتی ہے اور بِل-سے-باب-سے-بیلا-سے-ایلس کی پائپ لائن دیکھ سکتی ہے۔ تاہم، اگر "باب" اور "بیلا" بھی دیگر مقاصد کے لیے <span dir="ltr">QAU</span> استعمال کرتے ہیں، تو ایسا نہیں لگے گا کہ بِل نے ایلس کو کچھ منتقل کیا ہے، یہاں تک کہ اگر ایلس فوری طور پر خفیہ پتے سے اپنے معلوم مہم کے پتے پر رقم نکال لیتی ہے۔
 
 ## خفیہ پتے کی ایپلیکیشن لکھنا {#write-app}
 
@@ -129,13 +129,13 @@ sidebarDepth: 3
 
 8. پتہ اور بِل کی عوامی کلید کاپی کریں اور انہیں ایلس کے یوزر انٹرفیس کے "<span dir="ltr">Private key for address generated by Bill</span>" والے حصے میں پیسٹ کریں۔ ایک بار جب وہ فیلڈز پُر ہو جائیں گی، تو آپ کو اس پتے پر موجود اثاثوں تک رسائی کے لیے نجی کلید نظر آئے گی۔
 
-9. آپ یہ یقینی بنانے کے لیے کہ نجی کلید پتے سے مطابقت رکھتی ہے، [ایک آن لائن کیلکولیٹر](https://iancoleman.net/ethereum-private-key-to-address/) استعمال کر سکتے ہیں۔
+9. آپ یہ یقینی بنانے کے لیے کہ نجی کلید پتے سے مطابقت رکھتی ہے، [ایک آن لائن کیلکولیٹر](https://iancoleman.net/quantaureum-private-key-to-address/) استعمال کر سکتے ہیں۔
 
 ### پروگرام کیسے کام کرتا ہے {#how-the-program-works}
 
 #### <span dir="ltr">WASM</span> جزو {#wasm}
 
-وہ سورس کوڈ جو <span dir="ltr">WASM</span> میں مرتب ہوتا ہے [Rust](https://rust-lang.org/) میں لکھا گیا ہے۔ آپ اسے [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs) میں دیکھ سکتے ہیں۔ یہ کوڈ بنیادی طور پر JavaScript کوڈ اور [`eth-stealth-addresses` لائبریری](https://github.com/kassandraoftroy/eth-stealth-addresses) کے درمیان ایک انٹرفیس ہے۔
+وہ سورس کوڈ جو <span dir="ltr">WASM</span> میں مرتب ہوتا ہے [Rust](https://rust-lang.org/) میں لکھا گیا ہے۔ آپ اسے [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs) میں دیکھ سکتے ہیں۔ یہ کوڈ بنیادی طور پر JavaScript کوڈ اور [`qau-stealth-addresses` لائبریری](https://github.com/kassandraoftroy/qau-stealth-addresses) کے درمیان ایک انٹرفیس ہے۔
 
 **`Cargo.toml`**
 
@@ -148,7 +148,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-eth-stealth-addresses = "0.1.0"
+qau-stealth-addresses = "0.1.0"
 hex = "0.4.3"
 wasm-bindgen = "0.2.104"
 getrandom = { version = "0.2", features = ["js"] }
@@ -180,14 +180,14 @@ use wasm_bindgen::prelude::*;
 Rust سے <span dir="ltr">WASM</span> پیکیج بنانے کی تعریفیں۔ ان کی دستاویزات [یہاں](https://wasm-bindgen.github.io/wasm-bindgen/reference/attributes/index.html) موجود ہیں۔
 
 ```rust 
-use eth_stealth_addresses::{
+use qau_stealth_addresses::{
     generate_stealth_meta_address,
     generate_stealth_address,
     compute_stealth_key
 };
 ```
 
-وہ فنکشنز جن کی ہمیں [`eth-stealth-addresses` لائبریری](https://github.com/kassandraoftroy/eth-stealth-addresses) سے ضرورت ہے۔
+وہ فنکشنز جن کی ہمیں [`qau-stealth-addresses` لائبریری](https://github.com/kassandraoftroy/qau-stealth-addresses) سے ضرورت ہے۔
 
 ```rust
 use hex::{decode,encode};
@@ -212,7 +212,7 @@ pub fn wasm_generate_stealth_meta_address() -> String {
         generate_stealth_meta_address();
 ```
 
-[`generate_stealth_meta_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_meta_address.html) تین فیلڈز واپس کرتا ہے:
+[`generate_stealth_meta_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_meta_address.html) تین فیلڈز واپس کرتا ہے:
 
 - میٹا-پتہ (*<span dir="ltr">K<sub>pub</sub></span>* اور *<span dir="ltr">V<sub>pub</sub></span>*)
 - دیکھنے کی نجی کلید (*<span dir="ltr">V<sub>priv</sub></span>*)
@@ -265,7 +265,7 @@ fn str_to_array<const N: usize>(s: &str) -> Option<[u8; N]> {
     let array: [u8; N] = vec.try_into().ok()?;
 ```
 
-Rust میں ایریز کی دو اقسام ہیں۔ [ایریز](https://doc.rust-lang.org/std/primitive.array.html) کا سائز مقرر ہوتا ہے۔ [ویکٹرز](https://doc.rust-lang.org/std/vec/index.html) بڑھ اور سکڑ سکتے ہیں۔ `hex::decode` ایک ویکٹر واپس کرتا ہے، لیکن `eth_stealth_addresses` لائبریری ایریز وصول کرنا چاہتی ہے۔ [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods) ایک قدر کو دوسری قسم میں تبدیل کرتا ہے، مثال کے طور پر، ایک ویکٹر کو ایرے میں۔
+Rust میں ایریز کی دو اقسام ہیں۔ [ایریز](https://doc.rust-lang.org/std/primitive.array.html) کا سائز مقرر ہوتا ہے۔ [ویکٹرز](https://doc.rust-lang.org/std/vec/index.html) بڑھ اور سکڑ سکتے ہیں۔ `hex::decode` ایک ویکٹر واپس کرتا ہے، لیکن `qau_stealth_addresses` لائبریری ایریز وصول کرنا چاہتی ہے۔ [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods) ایک قدر کو دوسری قسم میں تبدیل کرتا ہے، مثال کے طور پر، ایک ویکٹر کو ایرے میں۔
 
 ```rust
     Some(array)
@@ -288,7 +288,7 @@ pub fn wasm_generate_stealth_address(stealth_address: &str) -> Option<String> {
         generate_stealth_address(&str_to_array::<66>(stealth_address)?);
 ```
 
-ہم لائبریری کا [`generate_stealth_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_address.html) استعمال کرتے ہیں۔
+ہم لائبریری کا [`generate_stealth_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_address.html) استعمال کرتے ہیں۔
 
 ```rust
     format!("{{\"address\":\"{}\",\"rPub\":\"{}\",\"scan\":\"{}\"}}",
@@ -315,7 +315,7 @@ pub fn wasm_compute_stealth_key(
 }
 ```
 
-یہ فنکشن پتے سے رقم نکالنے کے لیے نجی کلید (*<span dir="ltr">R<sub>priv</sub></span>*) کا حساب لگانے کے لیے لائبریری کا [`compute_stealth_key`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.compute_stealth_key.html) استعمال کرتا ہے۔ اس حساب کے لیے ان اقدار کی ضرورت ہوتی ہے:
+یہ فنکشن پتے سے رقم نکالنے کے لیے نجی کلید (*<span dir="ltr">R<sub>priv</sub></span>*) کا حساب لگانے کے لیے لائبریری کا [`compute_stealth_key`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.compute_stealth_key.html) استعمال کرتا ہے۔ اس حساب کے لیے ان اقدار کی ضرورت ہوتی ہے:
 
 - پتہ (*<span dir="ltr">Address=f(P<sub>pub</sub>)</span>*)
 - بِل کی طرف سے تیار کردہ عوامی کلید (*<span dir="ltr">R<sub>pub</sub></span>*)
@@ -346,7 +346,7 @@ assertion `left == right` failed
 اس کے بعد ایک اسٹیک ٹریس (stack trace) ہوگا۔ پھر بِل کو درست میٹا-پتہ دیں، اور ایلس کو یا تو ایک غلط پتہ یا ایک غلط عوامی کلید دیں۔ آپ کو یہ ایرر نظر آئے گا:
 
 ```
-rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/eth-stealth-addresses-0.1.0/src/lib.rs:78:9:
+rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/qau-stealth-addresses-0.1.0/src/lib.rs:78:9:
 keys do not generate stealth address
 ```
 

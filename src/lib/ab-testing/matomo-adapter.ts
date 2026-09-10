@@ -92,7 +92,7 @@ async function fetchMatomoExperiments(): Promise<Record<string, ABTestConfig>> {
   const response = await fetch(
     `${matomoUrl}/index.php?module=API&method=AbTesting.getAllExperiments&idSite=${siteId}&format=json&token_auth=${apiToken}`,
     {
-      headers: { "User-Agent": "ethereum.org-flags-adapter/1.0" },
+      headers: { "User-Agent": "quantaureum.com-flags-adapter/1.0" },
       // Bound the worst case: a hanging Matomo must never stall page
       // requests for longer than this
       signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),

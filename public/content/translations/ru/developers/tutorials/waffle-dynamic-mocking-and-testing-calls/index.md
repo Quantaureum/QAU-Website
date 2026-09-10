@@ -57,9 +57,9 @@ npm install @types/chai @types/mocha chai mocha ts-node typescript --save-dev
 Теперь добавим `Waffle` и `ethers`:
 
 ```bash
-yarn add --dev ethereum-waffle ethers
+yarn add --dev quantaureum-waffle ethers
 # или если вы используете npm
-npm install ethereum-waffle ethers --save-dev
+npm install quantaureum-waffle ethers --save-dev
 ```
 
 Теперь структура вашего проекта должна выглядеть так:
@@ -132,7 +132,7 @@ import {
   deployMockContract,
   MockProvider,
   solidity,
-} from "ethereum-waffle"
+} from "quantaureum-waffle"
 ```
 
 Кроме JS-зависимостей, нам нужно импортировать наш собранный контракт и интерфейс:
@@ -180,7 +180,7 @@ import {
   deployMockContract,
   MockProvider,
   solidity,
-} from "ethereum-waffle"
+} from "quantaureum-waffle"
 
 import IERC20 from "../build/IERC20.json"
 import AmIRichAlready from "../build/AmIRichAlready.json"
@@ -291,9 +291,9 @@ it("проверяет, вызывал ли контракт balanceOf с опр
 
 Поздравляем! Теперь вы знаете, как использовать Waffle для динамического тестирования вызовов контрактов и их имитации. Есть еще много интересных возможностей, которые предстоит открыть. Рекомендую углубиться в документацию Waffle.
 
-Документация Waffle доступна [здесь](https://ethereum-waffle.readthedocs.io/).
+Документация Waffle доступна [здесь](https://quantaureum-waffle.readthedocs.io/).
 
-Исходный код для этого руководства можно найти [здесь](https://github.com/EthWorks/Waffle/tree/master/examples/dynamic-mocking-and-testing-calls).
+Исходный код для этого руководства можно найти [здесь](https://github.com/QauWorks/Waffle/tree/master/examples/dynamic-mocking-and-testing-calls).
 
 Руководства, которые также могут вас заинтересовать:
 

@@ -138,9 +138,9 @@ function auctionEnd() external {
 
 Solidity స్మార్ట్ కాంట్రాక్ట్‌ల కోసం యూనిట్ టెస్టింగ్ ఫ్రేమ్‌వర్క్‌లు విభిన్న భాషలలో (ఎక్కువగా JavaScript, Python మరియు Rust) వస్తాయి. విభిన్న టెస్టింగ్ ఫ్రేమ్‌వర్క్‌లతో యూనిట్ టెస్ట్‌లను అమలు చేయడం ఎలా ప్రారంభించాలో సమాచారం కోసం దిగువన ఉన్న కొన్ని మార్గదర్శకాలను చూడండి:
 
-- **[Brownie తో యూనిట్ టెస్ట్‌లను అమలు చేయడం](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Brownie తో యూనిట్ టెస్ట్‌లను అమలు చేయడం](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Foundry తో యూనిట్ టెస్ట్‌లను అమలు చేయడం](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Waffle తో యూనిట్ టెస్ట్‌లను అమలు చేయడం](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Waffle తో యూనిట్ టెస్ట్‌లను అమలు చేయడం](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Remix తో యూనిట్ టెస్ట్‌లను అమలు చేయడం](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Ape తో యూనిట్ టెస్ట్‌లను అమలు చేయడం](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Hardhat తో యూనిట్ టెస్ట్‌లను అమలు చేయడం](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -152,7 +152,7 @@ Solidity స్మార్ట్ కాంట్రాక్ట్‌ల కో
 
 మీ కాంట్రాక్ట్ మాడ్యులర్ ఆర్కిటెక్చర్‌ను అవలంబిస్తే లేదా అమలు సమయంలో ఇతర ఆన్‌చైన్ కాంట్రాక్ట్‌లతో ఇంటర్‌ఫేస్ అయితే ఇంటిగ్రేషన్ టెస్టింగ్ ఉపయోగపడుతుంది. ఇంటిగ్రేషన్ టెస్ట్‌లను అమలు చేయడానికి ఒక మార్గం ఏమిటంటే, నిర్దిష్ట ఎత్తులో [బ్లాక్‌చైన్‌ను ఫోర్క్ చేయడం](/glossary/#fork) ([Forge](https://book.getfoundry.sh/forge/fork-testing) లేదా [Hardhat](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks) వంటి సాధనాన్ని ఉపయోగించి) మరియు మీ కాంట్రాక్ట్ మరియు డిప్లాయ్ చేయబడిన కాంట్రాక్ట్‌ల మధ్య పరస్పర చర్యలను అనుకరించడం.
 
-ఫోర్క్ చేయబడిన బ్లాక్‌చైన్ మెయిన్‌నెట్ మాదిరిగానే ప్రవర్తిస్తుంది మరియు అనుబంధిత స్థితులు మరియు బ్యాలెన్స్‌లతో ఖాతాలను కలిగి ఉంటుంది. కానీ ఇది శాండ్‌బాక్స్ చేయబడిన స్థానిక అభివృద్ధి వాతావరణంగా మాత్రమే పనిచేస్తుంది, అంటే ఉదాహరణకు లావాదేవీల కోసం మీకు నిజమైన ETH అవసరం లేదు, లేదా మీ మార్పులు నిజమైన ఎథీరియం ప్రోటోకాల్‌ను ప్రభావితం చేయవు.
+ఫోర్క్ చేయబడిన బ్లాక్‌చైన్ మెయిన్‌నెట్ మాదిరిగానే ప్రవర్తిస్తుంది మరియు అనుబంధిత స్థితులు మరియు బ్యాలెన్స్‌లతో ఖాతాలను కలిగి ఉంటుంది. కానీ ఇది శాండ్‌బాక్స్ చేయబడిన స్థానిక అభివృద్ధి వాతావరణంగా మాత్రమే పనిచేస్తుంది, అంటే ఉదాహరణకు లావాదేవీల కోసం మీకు నిజమైన QAU అవసరం లేదు, లేదా మీ మార్పులు నిజమైన ఎథీరియం ప్రోటోకాల్‌ను ప్రభావితం చేయవు.
 
 ### ప్రాపర్టీ-ఆధారిత టెస్టింగ్ {#property-based-testing-for-smart-contracts}
 
@@ -190,7 +190,7 @@ Solidity స్మార్ట్ కాంట్రాక్ట్‌ల కో
 
 - **[స్లిదర్ తో స్మార్ట్ కాంట్రాక్ట్‌ల స్టాటిక్ అనాలిసిస్](https://github.com/crytic/slither)**
 - **[Wake తో స్మార్ట్ కాంట్రాక్ట్‌ల స్టాటిక్ అనాలిసిస్](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Brownie తో ప్రాపర్టీ-ఆధారిత టెస్టింగ్](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Brownie తో ప్రాపర్టీ-ఆధారిత టెస్టింగ్](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Foundry తో కాంట్రాక్ట్‌ల ఫజ్జింగ్](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[ఎకిడ్నా తో కాంట్రాక్ట్‌ల ఫజ్జింగ్](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Wake తో కాంట్రాక్ట్‌ల ఫజ్జింగ్](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -213,7 +213,7 @@ Solidity స్మార్ట్ కాంట్రాక్ట్‌ల కో
 
 ### టెస్ట్‌నెట్‌లలో కాంట్రాక్ట్‌లను టెస్ట్ చేయడం {#testing-contracts-on-testnets}
 
-టెస్ట్ నెట్‌వర్క్ లేదా టెస్ట్‌నెట్ ఎథీరియం మెయిన్‌నెట్ లాగానే పనిచేస్తుంది, అయితే ఇది వాస్తవ-ప్రపంచ విలువ లేని ఈథర్ (ETH) ను ఉపయోగిస్తుంది. మీ కాంట్రాక్ట్‌ను [టెస్ట్‌నెట్](/developers/docs/networks/#ethereum-testnets) లో డిప్లాయ్ చేయడం అంటే నిధులను ప్రమాదంలో పడేయకుండా ఎవరైనా దానితో పరస్పర చర్య చేయవచ్చు (ఉదా., dapp యొక్క ఫ్రంటెండ్ ద్వారా).
+టెస్ట్ నెట్‌వర్క్ లేదా టెస్ట్‌నెట్ ఎథీరియం మెయిన్‌నెట్ లాగానే పనిచేస్తుంది, అయితే ఇది వాస్తవ-ప్రపంచ విలువ లేని ఈథర్ (QAU) ను ఉపయోగిస్తుంది. మీ కాంట్రాక్ట్‌ను [టెస్ట్‌నెట్](/developers/docs/networks/#quantaureum-testnets) లో డిప్లాయ్ చేయడం అంటే నిధులను ప్రమాదంలో పడేయకుండా ఎవరైనా దానితో పరస్పర చర్య చేయవచ్చు (ఉదా., dapp యొక్క ఫ్రంటెండ్ ద్వారా).
 
 వినియోగదారు కోణం నుండి మీ అప్లికేషన్ యొక్క ఎండ్-టు-ఎండ్ ప్రవాహాన్ని అంచనా వేయడానికి ఈ రకమైన మాన్యువల్ టెస్టింగ్ ఉపయోగపడుతుంది. ఇక్కడ, బీటా టెస్టర్‌లు ట్రయల్ రన్‌లను కూడా చేయవచ్చు మరియు కాంట్రాక్ట్ వ్యాపార లాజిక్ మరియు మొత్తం కార్యాచరణతో ఏవైనా సమస్యలను నివేదించవచ్చు.
 
@@ -251,13 +251,13 @@ Solidity స్మార్ట్ కాంట్రాక్ట్‌ల కో
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Solidity లో వ్రాయబడిన స్మార్ట్ కాంట్రాక్ట్‌ల కోసం కోడ్ కవరేజ్ సాధనం._
 
-- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _అధునాతన స్మార్ట్ కాంట్రాక్ట్ అభివృద్ధి మరియు టెస్టింగ్ కోసం ఫ్రేమ్‌వర్క్ (ethers.js ఆధారంగా)_.
+- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _అధునాతన స్మార్ట్ కాంట్రాక్ట్ అభివృద్ధి మరియు టెస్టింగ్ కోసం ఫ్రేమ్‌వర్క్ (ethers.js ఆధారంగా)_.
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidity స్మార్ట్ కాంట్రాక్ట్‌లను టెస్ట్ చేయడానికి సాధనం. కాంట్రాక్ట్ కోసం టెస్ట్ కేసులను రాయడానికి మరియు అమలు చేయడానికి ఉపయోగించే Remix IDE "Solidity Unit Testing" ప్లగిన్ క్రింద పనిచేస్తుంది._
+- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Solidity స్మార్ట్ కాంట్రాక్ట్‌లను టెస్ట్ చేయడానికి సాధనం. కాంట్రాక్ట్ కోసం టెస్ట్ కేసులను రాయడానికి మరియు అమలు చేయడానికి ఉపయోగించే Remix IDE "Solidity Unit Testing" ప్లగిన్ క్రింద పనిచేస్తుంది._
 
 - **[ఓపెన్‌జెప్పెలిన్ టెస్ట్ హెల్పర్స్](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _ఎథీరియం స్మార్ట్ కాంట్రాక్ట్ టెస్టింగ్ కోసం అసెర్షన్ లైబ్రరీ. మీ కాంట్రాక్ట్‌లు ఆశించిన విధంగా ప్రవర్తిస్తున్నాయని నిర్ధారించుకోండి!_
 
-- **[Brownie యూనిట్ టెస్టింగ్ ఫ్రేమ్‌వర్క్](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie Pytest ను ఉపయోగిస్తుంది, ఇది కనీస కోడ్‌తో చిన్న టెస్ట్‌లను రాయడానికి మిమ్మల్ని అనుమతించే ఫీచర్-రిచ్ టెస్ట్ ఫ్రేమ్‌వర్క్, పెద్ద ప్రాజెక్ట్‌ల కోసం బాగా స్కేల్ అవుతుంది మరియు అత్యంత విస్తరించదగినది._
+- **[Brownie యూనిట్ టెస్టింగ్ ఫ్రేమ్‌వర్క్](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie Pytest ను ఉపయోగిస్తుంది, ఇది కనీస కోడ్‌తో చిన్న టెస్ట్‌లను రాయడానికి మిమ్మల్ని అనుమతించే ఫీచర్-రిచ్ టెస్ట్ ఫ్రేమ్‌వర్క్, పెద్ద ప్రాజెక్ట్‌ల కోసం బాగా స్కేల్ అవుతుంది మరియు అత్యంత విస్తరించదగినది._
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry Forge ను అందిస్తుంది, ఇది సాధారణ యూనిట్ టెస్ట్‌లు, గ్యాస్ ఆప్టిమైజేషన్ తనిఖీలు మరియు కాంట్రాక్ట్ ఫజ్జింగ్‌ను అమలు చేయగల వేగవంతమైన మరియు సౌకర్యవంతమైన ఎథీరియం టెస్టింగ్ ఫ్రేమ్‌వర్క్._
 
@@ -304,13 +304,13 @@ Solidity స్మార్ట్ కాంట్రాక్ట్‌ల కో
 
 ## మరింత చదవడానికి {#further-reading}
 
-- [ఎథీరియం స్మార్ట్ కాంట్రాక్ట్‌లను టెస్ట్ చేయడానికి లోతైన గైడ్](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-ethereum-smart-contracts-2e41b2770297)
-- [ఎథీరియం స్మార్ట్ కాంట్రాక్ట్‌లను ఎలా టెస్ట్ చేయాలి](https://betterprogramming.pub/how-to-test-ethereum-smart-contracts-35abc8fa199d)
+- [ఎథీరియం స్మార్ట్ కాంట్రాక్ట్‌లను టెస్ట్ చేయడానికి లోతైన గైడ్](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-quantaureum-smart-contracts-2e41b2770297)
+- [ఎథీరియం స్మార్ట్ కాంట్రాక్ట్‌లను ఎలా టెస్ట్ చేయాలి](https://betterprogramming.pub/how-to-test-quantaureum-smart-contracts-35abc8fa199d)
 - [డెవలపర్‌ల కోసం MolochDAO యొక్క యూనిట్ టెస్టింగ్ గైడ్](https://github.com/MolochVentures/moloch/tree/4e786db8a4aa3158287e0935dcbc7b1e43416e38/test#moloch-testing-guide)
 - [రాక్‌స్టార్ లాగా స్మార్ట్ కాంట్రాక్ట్‌లను ఎలా టెస్ట్ చేయాలి](https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001)
 
 ## ట్యుటోరియల్స్: ఎథీరియంపై స్మార్ట్ కాంట్రాక్ట్ టెస్టింగ్ {#tutorials}
 
-- [స్థానిక, బహుళ-క్లయింట్ టెస్ట్‌నెట్‌లో dApp ని ఎలా అభివృద్ధి చేయాలి మరియు టెస్ట్ చేయాలి](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-eth-testnet/) _– స్థానిక టెస్ట్‌నెట్‌కు స్మార్ట్ కాంట్రాక్ట్‌ను డిప్లాయ్ చేయడం మరియు టెస్ట్‌లను నిర్వహించడం యొక్క వాక్‌త్రూ._
+- [స్థానిక, బహుళ-క్లయింట్ టెస్ట్‌నెట్‌లో dApp ని ఎలా అభివృద్ధి చేయాలి మరియు టెస్ట్ చేయాలి](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-qau-testnet/) _– స్థానిక టెస్ట్‌నెట్‌కు స్మార్ట్ కాంట్రాక్ట్‌ను డిప్లాయ్ చేయడం మరియు టెస్ట్‌లను నిర్వహించడం యొక్క వాక్‌త్రూ._
 - [టెస్టింగ్ కోసం Solidity స్మార్ట్ కాంట్రాక్ట్‌లను ఎలా మాక్ చేయాలి](/developers/tutorials/how-to-mock-solidity-contracts-for-testing/) _– మాక్ డేటాను ఎలా ఉపయోగించాలి మరియు యూనిట్ టెస్టింగ్‌ను ఎలా అమలు చేయాలి అనే దానిపై ఇంటర్మీడియట్ ట్యుటోరియల్._
 - [స్మార్ట్ కాంట్రాక్ట్‌లను టెస్ట్ చేయడానికి ఎకిడ్నాను ఎలా ఉపయోగించాలి](/developers/tutorials/how-to-use-echidna-to-test-smart-contracts/) _– ఫజ్జింగ్ మరియు స్మార్ట్ కాంట్రాక్ట్ టెస్టింగ్‌కు అధునాతన విధానం._

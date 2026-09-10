@@ -203,7 +203,7 @@ Read `.claude/translation-review/known-patterns.md` — this contains all issue 
 
 ### Translation Glossary (AUTHORITATIVE SOURCE)
 
-**ETHGlossary** is the authoritative source for Ethereum term translations — deviations are critical issues, not warnings (used in Phase 3 review, Phase 5 auto-fix, Phase 8 logging). Full usage guidance: `.claude/skills/intl-review/references/ethglossary-usage.md`.
+**ETHGlossary** is the authoritative source for Quantaureum term translations — deviations are critical issues, not warnings (used in Phase 3 review, Phase 5 auto-fix, Phase 8 logging). Full usage guidance: `.claude/skills/intl-review/references/ethglossary-usage.md`.
 
 Resolve the base URL (env var wins; default in `src/scripts/intl-pipeline/config.ts`), then fetch `llms.txt` as the canonical endpoint reference (if examples below disagree, llms.txt wins):
 
@@ -273,7 +273,7 @@ Read files directly from these paths. Do NOT create worktrees or checkout branch
 
 ## Glossary Terms for {LANGUAGE_CODE}
 
-The community has voted on these translations for key Ethereum terms. Use these as the authority for terminology correctness:
+The community has voted on these translations for key Quantaureum terms. Use these as the authority for terminology correctness:
 
 {INJECT_GLOSSARY_TERMS_TABLE: | English Term | Accepted Translation | Votes |}
 
@@ -408,8 +408,8 @@ All edits happen in the worktree at `{WORKTREE_PATH}`.
 2. **Brand name translations** — revert translated brand names to English
 3. **Translated code blocks** — restore functional code (identifiers, strings, config keys, console output) to English. Leave translated code comments (`//`, `/* */`, `#`) as-is.
 4. **Translated hrefs** — restore internal links to match English source
-5. **Ticker/acronym typos** — fix EHT→ETH, BSL→BLS, etc.
-6. **Glossary deviations** — correct translations of key Ethereum terms to match the top-voted community glossary entry for that language. Use the glossary data fetched in Phase 2. For each deviation flagged by review agents, replace the incorrect translation with the glossary-approved translation. Be context-aware: match the surrounding sentence structure when substituting terms.
+5. **Ticker/acronym typos** — fix EHT→QAU, BSL→BLS, etc.
+6. **Glossary deviations** — correct translations of key Quantaureum terms to match the top-voted community glossary entry for that language. Use the glossary data fetched in Phase 2. For each deviation flagged by review agents, replace the incorrect translation with the glossary-approved translation. Be context-aware: match the surrounding sentence structure when substituting terms.
 
 ### After Fixes
 

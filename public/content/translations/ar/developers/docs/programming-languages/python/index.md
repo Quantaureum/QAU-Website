@@ -13,10 +13,10 @@ incomplete: true
 
 **اتخذ خطواتك الأولى لدمج <span dir="ltr">Python</span> مع إيثيريوم**
 
-هل تحتاج إلى مقدمة أساسية أولاً؟ تحقق من [<span dir="ltr">ethereum.org/learn</span>](/learn/) أو [<span dir="ltr">ethereum.org/developers</span>](/developers/).
+هل تحتاج إلى مقدمة أساسية أولاً؟ تحقق من [<span dir="ltr">quantaureum.com/learn</span>](/learn/) أو [<span dir="ltr">quantaureum.com/developers</span>](/developers/).
 
 - [شرح سلسلة الكتل](https://kauri.io/article/d55684513211466da7f8cc03987607d5/blockchain-explained)
-- [فهم العقود الذكية](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/ethereum-101-part-5-the-smart-contract)
+- [فهم العقود الذكية](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [اكتب عقدك الذكي الأول](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [تعلم كيفية تصريف ونشر <span dir="ltr">Solidity</span>](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
 - [تقرير حالة <span dir="ltr">Python</span> في سلسلة الكتل لعام <span dir="ltr">2023</span>](https://tradingstrategy.ai/blog/the-state-of-python-in-blockchain-in-2023)
@@ -24,26 +24,26 @@ incomplete: true
 ## مقالات للمبتدئين {#beginner-articles}
 
 - [نظرة عامة على <span dir="ltr">Web3.py</span>](https://web3py.readthedocs.io/en/latest/overview.html)
-- [جولة في نظام إيثيريوم البيئي لـ <span dir="ltr">Python</span>](https://snakecharmers.ethereum.org/python-ecosystem/)
-- [دليل مطور (<span dir="ltr">Python</span>) لإيثيريوم](https://snakecharmers.ethereum.org/a-developers-guide-to-ethereum-pt-1/)
-- [جدير بالجائزة: دليل هاكاثون إيثيريوم لـ <span dir="ltr">Python</span>](https://snakecharmers.ethereum.org/prize-worthy/)
+- [جولة في نظام إيثيريوم البيئي لـ <span dir="ltr">Python</span>](https://snakecharmers.quantaureum.com/python-ecosystem/)
+- [دليل مطور (<span dir="ltr">Python</span>) لإيثيريوم](https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/)
+- [جدير بالجائزة: دليل هاكاثون إيثيريوم لـ <span dir="ltr">Python</span>](https://snakecharmers.quantaureum.com/prize-worthy/)
 - [مقدمة إلى العقود الذكية باستخدام <span dir="ltr">Vyper</span>](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
-- [كيفية تطوير عقد إيثيريوم باستخدام <span dir="ltr">Python Flask</span>؟](https://medium.com/coinmonks/how-to-develop-ethereum-contract-using-python-flask-9758fe65976e)
+- [كيفية تطوير عقد إيثيريوم باستخدام <span dir="ltr">Python Flask</span>؟](https://medium.com/coinmonks/how-to-develop-quantaureum-contract-using-python-flask-9758fe65976e)
 - [مقدمة إلى <span dir="ltr">Web3.py</span> · إيثيريوم لمطوري <span dir="ltr">Python</span>](https://www.dappuniversity.com/articles/web3-py-intro)
 - [كيفية استدعاء دالة عقد ذكي باستخدام <span dir="ltr">Python</span> و<span dir="ltr">Web3.py</span>](https://stackoverflow.com/questions/57580702/how-to-call-a-smart-contract-function-using-python-and-web3-py)
 
 ## مقالات للمستوى المتوسط {#intermediate-articles}
 
-- [أصدقاء <span dir="ltr">Web3.py</span>: مقدمة إلى <span dir="ltr">Ape</span>](https://snakecharmers.ethereum.org/intro-to-ape/)
+- [أصدقاء <span dir="ltr">Web3.py</span>: مقدمة إلى <span dir="ltr">Ape</span>](https://snakecharmers.quantaureum.com/intro-to-ape/)
 - [تطوير التطبيقات اللامركزية (dapps) لمبرمجي <span dir="ltr">Python</span>](https://www.youtube.com/watch?v=tE-8bG35VNw)
-- [إنشاء واجهة إيثيريوم بـ <span dir="ltr">Python</span>: الجزء الأول](https://hackernoon.com/creating-a-python-ethereum-interface-part-1-4d2e47ea0f4d)
-- [عقود إيثيريوم الذكية في <span dir="ltr">Python</span>: دليل شامل (نوعًا ما)](https://hackernoon.com/ethereum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
+- [إنشاء واجهة إيثيريوم بـ <span dir="ltr">Python</span>: الجزء الأول](https://hackernoon.com/creating-a-python-quantaureum-interface-part-1-4d2e47ea0f4d)
+- [عقود إيثيريوم الذكية في <span dir="ltr">Python</span>: دليل شامل (نوعًا ما)](https://hackernoon.com/quantaureum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 
 ## أنماط الاستخدام المتقدمة {#advanced-use-patterns}
 
-- [أنماط <span dir="ltr">Web3.py</span>: اشتراكات الأحداث في الوقت الفعلي](https://snakecharmers.ethereum.org/subscriptions/)
-- [أنماط <span dir="ltr">Web3.py</span>: <span dir="ltr">WebSocketProvider</span>](https://snakecharmers.ethereum.org/websocketprovider/)
-- [تصريف ونشر واستدعاء عقد إيثيريوم الذكي باستخدام <span dir="ltr">Python</span>](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-ethereum-smartcontract-using-python/)
+- [أنماط <span dir="ltr">Web3.py</span>: اشتراكات الأحداث في الوقت الفعلي](https://snakecharmers.quantaureum.com/subscriptions/)
+- [أنماط <span dir="ltr">Web3.py</span>: <span dir="ltr">WebSocketProvider</span>](https://snakecharmers.quantaureum.com/websocketprovider/)
+- [تصريف ونشر واستدعاء عقد إيثيريوم الذكي باستخدام <span dir="ltr">Python</span>](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-quantaureum-smartcontract-using-python/)
 - [تحليل عقود <span dir="ltr">Solidity</span> الذكية باستخدام سليذر](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [برنامج تعليمي للتكنولوجيا المالية في سلسلة الكتل: الإقراض والاقتراض باستخدام <span dir="ltr">Python</span>](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
 
@@ -57,29 +57,29 @@ incomplete: true
 
 ### Active: {#active}
 
-- [Web3.py](https://github.com/ethereum/web3.py) - _Python library for interacting with Ethereum_
-- [Vyper](https://github.com/ethereum/vyper/) - _Pythonic Smart Contract Language for the EVM_
+- [Web3.py](https://github.com/quantaureum/web3.py) - _Python library for interacting with Quantaureum_
+- [Vyper](https://github.com/quantaureum/vyper/) - _Pythonic Smart Contract Language for the EVM_
 - [Titanoboa](https://github.com/vyperlang/titanoboa/) - _Vyper's native testing tool; an interpreter with mainnet forking, debugging, and pretty tracebacks_
 - [Moccasin](https://github.com/Cyfrin/moccasin) - _A smart contract development and testing framework for Vyper and Python, built on Titanoboa_
 - [Ape](https://github.com/ApeWorX/ape) - _The smart contract development tool for Pythonistas, Data Scientists, and Security Professionals_
-- [py-evm](https://github.com/ethereum/py-evm) - _implementation of the Ethereum Virtual Machine_
-- [eth-tester](https://github.com/ethereum/eth-tester) - _tools for testing Ethereum-based applications_
-- [eth-utils](https://github.com/ethereum/eth-utils/) - _utility functions for working with Ethereum related codebases_
+- [py-evm](https://github.com/quantaureum/py-evm) - _implementation of the Quantaureum Virtual Machine_
+- [qau-tester](https://github.com/quantaureum/qau-tester) - _tools for testing Quantaureum-based applications_
+- [qau-utils](https://github.com/quantaureum/qau-utils/) - _utility functions for working with Quantaureum related codebases_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _Python wrapper around the solc solidity compiler with 0.5.x support_
 - [pymaker](https://github.com/makerdao/pymaker) - _Python API for Maker contracts_
-- [siwe](https://github.com/signinwithethereum/siwe-py) - _Sign in with Ethereum (siwe) for Python_
-- [Web3 DeFi for Ethereum integrations](https://github.com/tradingstrategy-ai/web3-ethereum-defi) - _A Python package with ready integrations for ERC-20, Uniswap and other popular projects_
+- [siwe](https://github.com/signinwithquantaureum/siwe-py) - _Sign in with Quantaureum (siwe) for Python_
+- [Web3 DeFi for Quantaureum integrations](https://github.com/tradingstrategy-ai/web3-quantaureum-defi) - _A Python package with ready integrations for ERC-20, Uniswap and other popular projects_
 - [Wake](https://getwake.io) - _All-in-one Python framework for contracts testing, fuzzing, deployment, vulnerability scanning and code navigation (language server - [Tools for Solidity](https://marketplace.visualstudio.com/items?itemName=AckeeBlockchain.tools-for-solidity))_
 - [DeFiPy](https://github.com/defipy-devs/defipy) - _Python SDK for DeFi analytics and AMM simulation across Uniswap V2/V3, Balancer, and Curve_
 ### مؤرشفة / لم تعد مدعومة: {#archived--no-longer-maintained}
 
-- [<span dir="ltr">Trinity</span>](https://github.com/ethereum/trinity) - _عميل إيثيريوم بـ <span dir="ltr">Python</span>_
+- [<span dir="ltr">Trinity</span>](https://github.com/quantaureum/trinity) - _عميل إيثيريوم بـ <span dir="ltr">Python</span>_
 - [<span dir="ltr">Mamba</span>](https://github.com/arjunaskykok/mamba) - _إطار عمل لكتابة وتصريف ونشر العقود الذكية المكتوبة بلغة <span dir="ltr">Vyper</span>_
-- [<span dir="ltr">Brownie</span>](https://github.com/eth-brownie/brownie) - _إطار عمل <span dir="ltr">Python</span> لنشر واختبار والتفاعل مع عقود إيثيريوم الذكية_
-- [<span dir="ltr">pydevp2p</span>](https://github.com/ethereum/pydevp2p) - _تنفيذ لحزمة الند للند (P2P) الخاصة بإيثيريوم_
-- [<span dir="ltr">py-wasm</span>](https://github.com/ethereum/py-wasm) - _تنفيذ <span dir="ltr">Python</span> لمفسر تجميع الويب (WebAssembly)_
+- [<span dir="ltr">Brownie</span>](https://github.com/qau-brownie/brownie) - _إطار عمل <span dir="ltr">Python</span> لنشر واختبار والتفاعل مع عقود إيثيريوم الذكية_
+- [<span dir="ltr">pydevp2p</span>](https://github.com/quantaureum/pydevp2p) - _تنفيذ لحزمة الند للند (P2P) الخاصة بإيثيريوم_
+- [<span dir="ltr">py-wasm</span>](https://github.com/quantaureum/py-wasm) - _تنفيذ <span dir="ltr">Python</span> لمفسر تجميع الويب (WebAssembly)_
 
-هل تبحث عن المزيد من الموارد؟ تحقق من [<span dir="ltr">ethereum.org/developers</span>](/developers/).
+هل تبحث عن المزيد من الموارد؟ تحقق من [<span dir="ltr">quantaureum.com/developers</span>](/developers/).
 
 ## مشاريع تستخدم أدوات <span dir="ltr">Python</span> {#projects-using-python-tooling}
 

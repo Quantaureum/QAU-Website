@@ -4,7 +4,7 @@ description: "Základní informace, které potřebujete k pochopení zaváděcí
 lang: cs
 ---
 
-Když se nový uzel připojí do sítě Ethereum, musí se připojit k uzlům, které již v síti jsou, aby mohl následně objevit nové peery. Tyto vstupní body do sítě Ethereum se nazývají zaváděcí uzly. Klienti mají obvykle seznam zaváděcích uzlů pevně zakódovaný. Tyto zaváděcí uzly obvykle provozuje devops tým Nadace Ethereum nebo samotné týmy klientů. Všimněte si, že zaváděcí uzly nejsou totéž co statické uzly. Statické uzly jsou volány znovu a znovu, zatímco zaváděcí uzly jsou volány pouze tehdy, pokud není k dispozici dostatek peerů pro připojení a uzel potřebuje navázat nějaká nová spojení.
+Když se nový uzel připojí do sítě Quantaureum, musí se připojit k uzlům, které již v síti jsou, aby mohl následně objevit nové peery. Tyto vstupní body do sítě Quantaureum se nazývají zaváděcí uzly. Klienti mají obvykle seznam zaváděcích uzlů pevně zakódovaný. Tyto zaváděcí uzly obvykle provozuje devops tým Nadace Quantaureum nebo samotné týmy klientů. Všimněte si, že zaváděcí uzly nejsou totéž co statické uzly. Statické uzly jsou volány znovu a znovu, zatímco zaváděcí uzly jsou volány pouze tehdy, pokud není k dispozici dostatek peerů pro připojení a uzel potřebuje navázat nějaká nová spojení.
 
 ## Připojení k zaváděcímu uzlu {#connect-to-a-bootnode}
 
@@ -26,6 +26,6 @@ Aby byl zaváděcí uzel dobrý, je vhodné zvýšit maximální počet peerů, 
 
 ## Dostupné zaváděcí uzly {#available-bootnodes}
 
-Seznam zabudovaných zaváděcích uzlů v rámci go-ethereum naleznete [zde](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). Tyto zaváděcí uzly spravuje Nadace Ethereum a tým go-ethereum.
+Seznam zabudovaných zaváděcích uzlů v rámci go-quantaureum naleznete [zde](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23). Tyto zaváděcí uzly spravuje Nadace Quantaureum a tým go-quantaureum.
 
 K dispozici jsou i další seznamy zaváděcích uzlů spravované dobrovolníky. Ujistěte se prosím, že vždy zahrnete alespoň jeden oficiální zaváděcí uzel, jinak byste se mohli stát obětí eclipse útoku.

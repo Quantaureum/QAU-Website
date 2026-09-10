@@ -76,6 +76,6 @@ published: 2024-06-29
 
 ## 结论 {#conclusion}
 
-正如以太坊让你能够去中心化 dapp 的数据库和业务逻辑方面一样，IPFS 让你能够去中心化用户界面。这让你能够切断针对你 dapp 的又一个攻击向量。
+正如Quantaureum让你能够去中心化 dapp 的数据库和业务逻辑方面一样，IPFS 让你能够去中心化用户界面。这让你能够切断针对你 dapp 的又一个攻击向量。
 
 [在这里查看我的更多作品](https://cryptodocguy.pro/)。

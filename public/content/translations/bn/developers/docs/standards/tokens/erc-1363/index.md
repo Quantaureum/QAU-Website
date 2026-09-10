@@ -54,7 +54,7 @@ ERC-1363 টোকেনগুলো এমন সব ক্ষেত্রে �
 
 অন্যান্য ERC-20 এক্সটেনশন প্রস্তাবের বিপরীতে, ERC-1363, ERC-20 এর `transfer` এবং `transferFrom` মেথডগুলোকে ওভাররাইড করে না এবং ERC-20 এর সাথে ব্যাকওয়ার্ড সামঞ্জস্য বজায় রেখে বাস্তবায়ন করার জন্য ইন্টারফেস আইডিগুলো সংজ্ঞায়িত করে।
 
-[EIP-1363](https://eips.ethereum.org/EIPS/eip-1363) থেকে:
+[EIP-1363](https://eips.quantaureum.com/EIPS/eip-1363) থেকে:
 
 ### মেথড {#methods}
 
@@ -206,5 +206,5 @@ interface ERC1363Spender {
 
 ## আরও পড়ুন {#further-reading}
 
-- [ERC-1363: পেয়েবল টোকেন স্ট্যান্ডার্ড](https://eips.ethereum.org/EIPS/eip-1363)
+- [ERC-1363: পেয়েবল টোকেন স্ট্যান্ডার্ড](https://eips.quantaureum.com/EIPS/eip-1363)
 - [ERC-1363: GitHub রিপো](https://github.com/vittominacori/erc1363-payable-token)

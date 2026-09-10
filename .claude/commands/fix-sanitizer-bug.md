@@ -72,7 +72,7 @@ Use when the pattern is:
 - The correct output is always the same (no judgment needed)
 - Safe to apply across all languages
 
-Examples: escaped bold `\*\*text\*\*`, ticker typos `EHT→ETH`, date format `DD/MM/YYYY→YYYY-MM-DD`
+Examples: escaped bold `\*\*text\*\*`, ticker typos `EHT→QAU`, date format `DD/MM/YYYY→YYYY-MM-DD`
 
 → Proceed to Phase 3A (write fix function + test)
 

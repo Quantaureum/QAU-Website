@@ -11,7 +11,7 @@ published: 2022-04-01
 
 ## Introducción {#introduction}
 
-En este artículo, aprenderá sobre los [rollups optimistas](/developers/docs/scaling/optimistic-rollups), el costo de las transacciones en ellos y cómo esa estructura de costos diferente requiere que optimicemos para cosas distintas que en la red principal de Ethereum.
+En este artículo, aprenderá sobre los [rollups optimistas](/developers/docs/scaling/optimistic-rollups), el costo de las transacciones en ellos y cómo esa estructura de costos diferente requiere que optimicemos para cosas distintas que en la red principal de Quantaureum.
 También aprenderá cómo implementar esta optimización.
 
 ### Divulgación completa {#full-disclosure}
@@ -21,13 +21,13 @@ Sin embargo, la técnica explicada aquí debería funcionar igual de bien para o
 
 ### Terminología {#terminology}
 
-Al hablar de rollups, el término 'capa 1 (l1)' se utiliza para la Red principal, la red de producción de Ethereum.
+Al hablar de rollups, el término 'capa 1 (l1)' se utiliza para la Red principal, la red de producción de Quantaureum.
 El término 'capa 2 (l2)' se utiliza para el rollup o cualquier otro sistema que dependa de la l1 para su seguridad, pero que realiza la mayor parte de su procesamiento fuera de la cadena.
 
 ## ¿Cómo podemos reducir aún más el costo de las transacciones de la l2? {#how-can-we-further-reduce-the-cost-of-l2-transactions}
 
 Los [rollups optimistas](/developers/docs/scaling/optimistic-rollups) tienen que conservar un registro de cada transacción histórica para que cualquiera pueda revisarlas y verificar que el estado actual sea correcto.
-La forma más barata de introducir datos en la red principal de Ethereum es escribirlos como datos de llamada.
+La forma más barata de introducir datos en la red principal de Quantaureum es escribirlos como datos de llamada.
 Esta solución fue elegida tanto por [Optimism](https://docs.optimism.io/op-stack/protocol/overview) como por [Arbitrum](https://docs.arbitrum.io/welcome/arbitrum-gentle-introduction).
 
 ### Costo de las transacciones de la l2 {#cost-of-l2-transactions}
@@ -65,26 +65,26 @@ Los datos de llamada se dividen de la siguiente manera:
 Explicación:
 
 - **Selector de función**: El contrato tiene menos de 256 funciones, por lo que podemos distinguirlas con un solo byte.
-  Estos bytes normalmente no son cero y, por lo tanto, [cuestan dieciséis de gas](https://eips.ethereum.org/EIPS/eip-2028).
+  Estos bytes normalmente no son cero y, por lo tanto, [cuestan dieciséis de gas](https://eips.quantaureum.com/EIPS/eip-2028).
 - **Ceros**: Estos bytes siempre son cero porque una dirección de veinte bytes no requiere una palabra de treinta y dos bytes para contenerla.
-  Los bytes que contienen cero cuestan cuatro de gas ([consulte el Libro Amarillo](https://ethereum.github.io/yellowpaper/paper.pdf), Apéndice G,
+  Los bytes que contienen cero cuestan cuatro de gas ([consulte el Libro Amarillo](https://quantaureum.github.io/yellowpaper/paper.pdf), Apéndice G,
   pág. 27, el valor para `G`<sub>`txdatazero`</sub>).
 - **Cantidad**: Si asumimos que en este contrato `decimals` es dieciocho (el valor normal) y la cantidad máxima de tokens que transferimos será de 10<sup>18</sup>, obtenemos una cantidad máxima de 10<sup>36</sup>.
   256<sup>15</sup> &gt; 10<sup>36</sup>, por lo que quince bytes son suficientes.
 
-Un desperdicio de 160 de gas en la l1 normalmente es insignificante. Una transacción cuesta al menos [21.000 de gas](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-ethereum-gas-2f976af774ed), por lo que un 0,8 % adicional no importa.
+Un desperdicio de 160 de gas en la l1 normalmente es insignificante. Una transacción cuesta al menos [21.000 de gas](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-quantaureum-gas-2f976af774ed), por lo que un 0,8 % adicional no importa.
 Sin embargo, en la l2, las cosas son diferentes. Casi todo el costo de la transacción es escribirla en la l1.
 Además de los datos de llamada de la transacción, hay 109 bytes de encabezado de transacción (dirección de destino, firma, etc.).
 Por lo tanto, el costo total es `109*16+576+160=2480`, y estamos desperdiciando aproximadamente el 6,5 % de eso.
 
 ## Reducción de costos cuando no se controla el destino {#reducing-costs-when-you-dont-control-the-destination}
 
-Asumiendo que no tiene control sobre el contrato de destino, aún puede usar una solución similar a [esta](https://github.com/qbzzt/ethereum.org-20220330-shortABI).
+Asumiendo que no tiene control sobre el contrato de destino, aún puede usar una solución similar a [esta](https://github.com/qbzzt/quantaureum.com-20220330-shortABI).
 Repasemos los archivos relevantes.
 
 ### Token.sol {#token-sol}
 
-[Este es el contrato de destino](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/Token.sol).
+[Este es el contrato de destino](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/Token.sol).
 Es un contrato ERC-20 estándar, con una característica adicional.
 Esta función `faucet` permite a cualquier usuario obtener algunos tokens para usar.
 Haría inútil un contrato ERC-20 de producción, pero facilita la vida cuando un ERC-20 existe solo para facilitar las pruebas.
@@ -100,7 +100,7 @@ Haría inútil un contrato ERC-20 de producción, pero facilita la vida cuando u
 
 ### CalldataInterpreter.sol {#calldatainterpreter-sol}
 
-[Este es el contrato al que se supone que deben llamar las transacciones con datos de llamada más cortos](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol).
+[Este es el contrato al que se supone que deben llamar las transacciones con datos de llamada más cortos](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol).
 Repasémoslo línea por línea.
 
 ```solidity
@@ -201,7 +201,7 @@ Hay dos razones por las que una función no estaría disponible aquí:
 2. Las funciones que dependen de [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties).
    El valor de `msg.sender` va a ser la dirección de `CalldataInterpreter`, no la del llamador.
 
-Desafortunadamente, [al observar las especificaciones del ERC-20](https://eips.ethereum.org/EIPS/eip-20), esto deja solo una función, `transfer`.
+Desafortunadamente, [al observar las especificaciones del ERC-20](https://eips.quantaureum.com/EIPS/eip-20), esto deja solo una función, `transfer`.
 Esto nos deja con solo dos funciones: `transfer` (porque podemos llamar a `transferFrom`) y `faucet` (porque podemos transferir los tokens de vuelta a quien nos llamó).
 
 ```solidity
@@ -274,7 +274,7 @@ En general, una transferencia requiere 35 bytes de datos de llamada:
 
 ### test.js {#test-js}
 
-[Esta prueba unitaria en JavaScript](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/test/test.js) nos muestra cómo usar este mecanismo (y cómo verificar que funciona correctamente).
+[Esta prueba unitaria en JavaScript](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/test/test.js) nos muestra cómo usar este mecanismo (y cómo verificar que funciona correctamente).
 Voy a asumir que entiende [chai](https://www.chaijs.com/) y [ethers](https://docs.ethers.io/v5/) y solo explicaré las partes que se aplican específicamente al contrato.
 
 ```js
@@ -368,7 +368,7 @@ Cree una transacción de transferencia. El primer byte es "0x02", seguido de la 
 ## Reducción del costo cuando sí se controla el contrato de destino {#reducing-the-cost-when-you-do-control-the-destination-contract}
 
 Si tiene control sobre el contrato de destino, puede crear funciones que omitan las comprobaciones de `msg.sender` porque confían en el intérprete de datos de llamada.
-[Puede ver un ejemplo de cómo funciona esto aquí, en la rama `control-contract`](https://github.com/qbzzt/ethereum.org-20220330-shortABI/tree/control-contract).
+[Puede ver un ejemplo de cómo funciona esto aquí, en la rama `control-contract`](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/tree/control-contract).
 
 Si el contrato respondiera solo a transacciones externas, podríamos arreglárnoslas con tener un solo contrato.
 Sin embargo, eso rompería la [composabilidad](/developers/docs/smart-contracts/composability/).
@@ -537,7 +537,7 @@ const poorSigner = signers[1]
 ```
 
 Para comprobar `approve()` y `transferFrom()` necesitamos un segundo firmante.
-Lo llamamos `poorSigner` porque no obtiene ninguno de nuestros tokens (por supuesto, sí necesita tener ETH).
+Lo llamamos `poorSigner` porque no obtiene ninguno de nuestros tokens (por supuesto, sí necesita tener QAU).
 
 ```js
 // Transferir tokens
@@ -576,7 +576,7 @@ Tenga en cuenta que `transferFromTx` requiere dos parámetros de dirección: el 
 
 ## Conclusión {#conclusion}
 
-Tanto [Optimism](https://medium.com/ethereum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) como [Arbitrum](https://developer.offchainlabs.com/docs/special_features) están buscando formas de reducir el tamaño de los datos de llamada escritos en la l1 y, por lo tanto, el costo de las transacciones.
+Tanto [Optimism](https://medium.com/quantaureum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) como [Arbitrum](https://developer.offchainlabs.com/docs/special_features) están buscando formas de reducir el tamaño de los datos de llamada escritos en la l1 y, por lo tanto, el costo de las transacciones.
 Sin embargo, como proveedores de infraestructura que buscan soluciones genéricas, nuestras capacidades son limitadas.
 Como desarrollador de aplicaciones descentralizadas (dapp), usted tiene conocimientos específicos de la aplicación, lo que le permite optimizar sus datos de llamada mucho mejor de lo que podríamos hacerlo nosotros en una solución genérica.
 Esperamos que este artículo le ayude a encontrar la solución ideal para sus necesidades.

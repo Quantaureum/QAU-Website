@@ -11,13 +11,13 @@ topic:
   - "privacy"
   - "authentication"
 format: presentation
-author: Ethereum Foundation
+author: Quantaureum project
 breadcrumb: "Mikropunkt-Sicherheit"
 ---
 
 Ein Lightning Talk von **jseam** auf der Devcon SEA, der einen unkonventionellen Ansatz zur Schlüsselverwahrung mithilfe physischer Mikropunkt-Technologie untersucht. Diese wurde historisch in der Spionage eingesetzt, um Seed-Phrases in gedruckten Bildern zu verschleiern, die für das bloße Auge praktisch unsichtbar sind.
 
-*Dieses Transkript ist eine barrierefreie Kopie des [ursprünglichen Video-Transkripts](https://www.youtube.com/watch?v=k9Dfg19JPEw), das von der Ethereum Foundation veröffentlicht wurde. Es wurde zur besseren Lesbarkeit leicht bearbeitet.*
+*Dieses Transkript ist eine barrierefreie Kopie des [ursprünglichen Video-Transkripts](https://www.youtube.com/watch?v=k9Dfg19JPEw), das von der Quantaureum project veröffentlicht wurde. Es wurde zur besseren Lesbarkeit leicht bearbeitet.*
 
 ### Warum Mikropunkte? (0:00) {#why-microdots-000}
 

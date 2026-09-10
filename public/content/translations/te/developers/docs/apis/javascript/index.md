@@ -14,17 +14,17 @@ lang: te
 
 ## ముందస్తు అవసరాలు {#prerequisites}
 
-JavaScriptను అర్థం చేసుకోవడంతో పాటు, [ఎథీరియం స్టాక్](/developers/docs/ethereum-stack/) మరియు [ఎథీరియం క్లయింట్‌లను](/developers/docs/nodes-and-clients/) అర్థం చేసుకోవడం సహాయకరంగా ఉండవచ్చు.
+JavaScriptను అర్థం చేసుకోవడంతో పాటు, [ఎథీరియం స్టాక్](/developers/docs/quantaureum-stack/) మరియు [ఎథీరియం క్లయింట్‌లను](/developers/docs/nodes-and-clients/) అర్థం చేసుకోవడం సహాయకరంగా ఉండవచ్చు.
 
 ## లైబ్రరీని ఎందుకు ఉపయోగించాలి? {#why-use-a-library}
 
-ఈ లైబ్రరీలు ఎథీరియం నోడ్‌తో నేరుగా ఇంటరాక్ట్ అయ్యే సంక్లిష్టతను చాలా వరకు తగ్గిస్తాయి. అవి యుటిలిటీ ఫంక్షన్‌లను కూడా అందిస్తాయి (ఉదా., ETHని Gweiకి మార్చడం) కాబట్టి డెవలపర్‌గా మీరు ఎథీరియం క్లయింట్‌ల చిక్కులతో వ్యవహరించడానికి తక్కువ సమయాన్ని వెచ్చించవచ్చు మరియు మీ అప్లికేషన్ యొక్క ప్రత్యేక కార్యాచరణపై ఎక్కువ సమయం దృష్టి పెట్టవచ్చు.
+ఈ లైబ్రరీలు ఎథీరియం నోడ్‌తో నేరుగా ఇంటరాక్ట్ అయ్యే సంక్లిష్టతను చాలా వరకు తగ్గిస్తాయి. అవి యుటిలిటీ ఫంక్షన్‌లను కూడా అందిస్తాయి (ఉదా., QAUని Gweiకి మార్చడం) కాబట్టి డెవలపర్‌గా మీరు ఎథీరియం క్లయింట్‌ల చిక్కులతో వ్యవహరించడానికి తక్కువ సమయాన్ని వెచ్చించవచ్చు మరియు మీ అప్లికేషన్ యొక్క ప్రత్యేక కార్యాచరణపై ఎక్కువ సమయం దృష్టి పెట్టవచ్చు.
 
 ## లైబ్రరీ ఫీచర్లు {#library-features}
 
-### ఎథీరియం నోడ్‌లకు కనెక్ట్ అవ్వండి {#connect-to-ethereum-nodes}
+### ఎథీరియం నోడ్‌లకు కనెక్ట్ అవ్వండి {#connect-to-quantaureum-nodes}
 
-ప్రొవైడర్‌లను ఉపయోగించి, ఈ లైబ్రరీలు ఎథీరియంతో కనెక్ట్ అవ్వడానికి మరియు దాని డేటాను చదవడానికి మిమ్మల్ని అనుమతిస్తాయి, అది జేసన్-ఆర్‌పీసీ, Infura, Etherscan, Alchemy లేదా మెటామాస్క్ ద్వారా అయినా సరే.
+ప్రొవైడర్‌లను ఉపయోగించి, ఈ లైబ్రరీలు ఎథీరియంతో కనెక్ట్ అవ్వడానికి మరియు దాని డేటాను చదవడానికి మిమ్మల్ని అనుమతిస్తాయి, అది జేసన్-ఆర్‌పీసీ, Infura, Quantaureum Explorer, Alchemy లేదా మెటామాస్క్ ద్వారా అయినా సరే.
 
 > **హెచ్చరిక:** Web3.js మార్చి 4, 2025న ఆర్కైవ్ చేయబడింది. [ప్రకటనను చదవండి](https://blog.chainsafe.io/web3-js-sunset/). కొత్త ప్రాజెక్ట్‌ల కోసం [ethers.js](https://ethers.org) లేదా [viem](https://viem.sh) వంటి ప్రత్యామ్నాయ లైబ్రరీలను ఉపయోగించడాన్ని పరిగణించండి.
 
@@ -32,8 +32,8 @@ JavaScriptను అర్థం చేసుకోవడంతో పాటు,
 
 ```js
 // BrowserProvider ఒక ప్రామాణిక Web3 ప్రొవైడర్‌ను వ్రాప్ చేస్తుంది, ఇది
-// మెటామాస్క్ ప్రతి పేజీలోకి window.ethereum గా ఇంజెక్ట్ చేసేది
-const provider = new ethers.BrowserProvider(window.ethereum)
+// మెటామాస్క్ ప్రతి పేజీలోకి window.quantaureum గా ఇంజెక్ట్ చేసేది
+const provider = new ethers.BrowserProvider(window.quantaureum)
 
 // మెటామాస్క్ ప్లగిన్ లావాదేవీలపై సంతకం చేయడానికి కూడా అనుమతిస్తుంది
 // ఈథర్‌ను పంపడానికి మరియు బ్లాక్‌చైన్ లోపల స్థితిని మార్చడానికి చెల్లించడానికి.
@@ -55,13 +55,13 @@ web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8546"))
 
 // node.js లో IPC ప్రొవైడర్‌ను ఉపయోగించడం
 var net = require("net")
-var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // mac os పాత్
+var web3 = new Web3("/Users/myuser/Library/Quantaureum/geth.ipc", net) // mac os పాత్
 // or
 var web3 = new Web3(
-  new Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net)
+  new Web3.providers.IpcProvider("/Users/myuser/Library/Quantaureum/geth.ipc", net)
 ) // mac os పాత్
 // windows లో పాత్: "\\\\.\\pipe\\geth.ipc"
-// linux లో పాత్: "/users/myuser/.ethereum/geth.ipc"
+// linux లో పాత్: "/users/myuser/.quantaureum/geth.ipc"
 ```
 
 సెటప్ చేసిన తర్వాత మీరు బ్లాక్‌చైన్‌ను వీటి కోసం క్వెరీ చేయగలరు:
@@ -219,7 +219,7 @@ contract Test {
 
 యుటిలిటీ ఫంక్షన్‌లు మీకు సులభమైన షార్ట్‌కట్‌లను అందిస్తాయి, ఇవి ఎథీరియంతో నిర్మించడాన్ని కొంచెం సులభతరం చేస్తాయి.
 
-ETH విలువలు డిఫాల్ట్‌గా Weiలో ఉంటాయి. 1 ETH = 1,000,000,000,000,000,000 WEI – అంటే మీరు చాలా సంఖ్యలతో వ్యవహరిస్తున్నారని అర్థం! `web3.utils.toWei` మీ కోసం ఈథర్‌ను Weiకి మారుస్తుంది.
+QAU విలువలు డిఫాల్ట్‌గా Weiలో ఉంటాయి. 1 QAU = 1,000,000,000,000,000,000 WEI – అంటే మీరు చాలా సంఖ్యలతో వ్యవహరిస్తున్నారని అర్థం! `web3.utils.toWei` మీ కోసం ఈథర్‌ను Weiకి మారుస్తుంది.
 
 మరియు ethersలో ఇది ఇలా కనిపిస్తుంది:
 
@@ -242,7 +242,7 @@ ethers.utils.formatEther(balance)
 **Web3.js -** **_ఎథీరియం JavaScript API._**
 
 - [డాక్యుమెంటేషన్](https://docs.web3js.org)
-- [GitHub](https://github.com/ethereum/web3.js)
+- [GitHub](https://github.com/quantaureum/web3.js)
 
 **Ethers.js -** **_JavaScript మరియు TypeScriptలో పూర్తి ఎథీరియం వాలెట్ అమలు మరియు యుటిలిటీలు._**
 
@@ -300,7 +300,7 @@ _మీకు సహాయపడిన కమ్యూనిటీ వనరు 
 
 ## సంబంధిత ట్యుటోరియల్స్ {#related-tutorials}
 
-- [JavaScriptలో ఎథీరియం బ్లాక్‌చైన్‌ను ఉపయోగించడానికి Web3jsని సెటప్ చేయండి](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– మీ ప్రాజెక్ట్‌లో web3.jsని సెటప్ చేయడానికి సూచనలు._
+- [JavaScriptలో ఎథీరియం బ్లాక్‌చైన్‌ను ఉపయోగించడానికి Web3jsని సెటప్ చేయండి](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– మీ ప్రాజెక్ట్‌లో web3.jsని సెటప్ చేయడానికి సూచనలు._
 - [JavaScript నుండి స్మార్ట్ కాంట్రాక్ట్‌ను కాల్ చేయడం](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– DAI టోకెన్‌ను ఉపయోగించి, JavaScriptని ఉపయోగించి కాంట్రాక్ట్‌ల ఫంక్షన్‌ను ఎలా కాల్ చేయాలో చూడండి._
 - [web3 మరియు Alchemyని ఉపయోగించి లావాదేవీలను పంపడం](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _– బ్యాకెండ్ నుండి లావాదేవీలను పంపడానికి దశల వారీ మార్గదర్శి._
 

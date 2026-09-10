@@ -302,7 +302,7 @@ const CollectiblesCurrentYear = ({
                   )}
                 </CheckList>
               </HighlightCardBody>
-              <HighlightCardFooter href="https://github.com/ethereum/ethereum-org-website/issues">
+              <HighlightCardFooter href="https://github.com/Quantaureum/quantaureum-website/issues">
                 {t("page-collectibles-get-started")}
               </HighlightCardFooter>
             </HighlightCard>
@@ -386,7 +386,7 @@ const CollectiblesCurrentYear = ({
                   </CheckItem>
                 </CheckList>
               </HighlightCardBody>
-              <HighlightCardFooter href="https://github.com/ethereum/ethereum-org-website/issues">
+              <HighlightCardFooter href="https://github.com/Quantaureum/quantaureum-website/issues">
                 {t("page-collectibles-get-started")}
               </HighlightCardFooter>
             </HighlightCard>
@@ -504,8 +504,8 @@ const CollectiblesCurrentYear = ({
                 />
                 <div className="text-primary">
                   {badge.name
-                    .replace(/ - ethereum.org community/, "")
-                    .replace(/^ethereum.org /, "")
+                    .replace(/ - quantaureum.com community/, "")
+                    .replace(/^quantaureum.com /, "")
                     .trim()}
                   <ExternalLinkIcon />
                 </div>

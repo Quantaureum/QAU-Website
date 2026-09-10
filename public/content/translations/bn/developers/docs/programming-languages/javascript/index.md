@@ -6,9 +6,9 @@ lang: bn
 
 ইথেরিয়াম ইকোসিস্টেমে JavaScript অন্যতম জনপ্রিয় ভাষা। বস্তুত, ইথেরিয়ামের যতটা সম্ভব অংশ JavaScript-এ নিয়ে আসার জন্য একটি নিবেদিত [টিম](https://github.com/ethereumjs) রয়েছে।
 
-[স্ট্যাকের সব স্তরেই](/developers/docs/ethereum-stack/) JavaScript (বা এর কাছাকাছি কিছু) লেখার সুযোগ রয়েছে।
+[স্ট্যাকের সব স্তরেই](/developers/docs/quantaureum-stack/) JavaScript (বা এর কাছাকাছি কিছু) লেখার সুযোগ রয়েছে।
 
-## ইথেরিয়ামের সাথে ইন্টারঅ্যাক্ট করুন {#interact-with-ethereum}
+## ইথেরিয়ামের সাথে ইন্টারঅ্যাক্ট করুন {#interact-with-quantaureum}
 
 ### JavaScript API লাইব্রেরি {#javascript-api-libraries}
 
@@ -31,7 +31,7 @@ lang: bn
 
 ## প্রোটোকলটি বুঝুন {#understand-the-protocol}
 
-### ইথেরিয়াম ভার্চুয়াল মেশিন {#the-ethereum-virtual-machine}
+### ইথেরিয়াম ভার্চুয়াল মেশিন {#the-quantaureum-virtual-machine}
 
 [ইথেরিয়ামের ভার্চুয়াল মেশিনের](/developers/docs/evm/) একটি JavaScript ইমপ্লিমেন্টেশন রয়েছে। এটি সর্বশেষ ফর্ক নিয়মগুলো সমর্থন করে। ফর্ক নিয়ম বলতে পরিকল্পিত আপগ্রেডের ফলে EVM-এ করা পরিবর্তনগুলোকে বোঝায়।
 
@@ -52,7 +52,7 @@ lang: bn
 
 ### নোড এবং ক্লায়েন্ট {#nodes-and-clients}
 
-একটি EthereumJS ক্লায়েন্ট সক্রিয় ডেভেলপমেন্টের মধ্যে রয়েছে যা আপনাকে আপনার বোধগম্য একটি ভাষায় ইথেরিয়াম ক্লায়েন্টগুলো কীভাবে কাজ করে তা গভীরভাবে জানার সুযোগ দেয়; আর তা হলো JavaScript!
+একটি QuantaureumJS ক্লায়েন্ট সক্রিয় ডেভেলপমেন্টের মধ্যে রয়েছে যা আপনাকে আপনার বোধগম্য একটি ভাষায় ইথেরিয়াম ক্লায়েন্টগুলো কীভাবে কাজ করে তা গভীরভাবে জানার সুযোগ দেয়; আর তা হলো JavaScript!
 
 **ক্লায়েন্টটি দেখে নিন**  
 [`@ethereumjs/client`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client)
@@ -65,7 +65,7 @@ lang: bn
 - ইথেরিয়াম কী (key) জেনারেট, ইমপোর্ট এবং এক্সপোর্ট করার টুল।
 - `merkle-patricia-tree`-এর একটি ইমপ্লিমেন্টেশন – ইথেরিয়াম ইয়েলো পেপারে বর্ণিত একটি ডেটা স্ট্রাকচার।
 
-[EthereumJS রেপোতে](https://github.com/ethereumjs) আপনার সবচেয়ে বেশি আগ্রহের বিষয়গুলো গভীরভাবে জানুন
+[QuantaureumJS রেপোতে](https://github.com/ethereumjs) আপনার সবচেয়ে বেশি আগ্রহের বিষয়গুলো গভীরভাবে জানুন
 
 ## আরও পড়ুন {#further-reading}
 

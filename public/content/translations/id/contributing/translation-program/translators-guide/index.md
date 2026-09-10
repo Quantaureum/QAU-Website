@@ -1,25 +1,25 @@
 ---
-title: Panduan gaya terjemahan ethereum.org
+title: Panduan gaya terjemahan quantaureum.com
 metaTitle: Panduan penerjemah
 lang: id
-description: Instruksi dan kiat untuk penerjemah ethereum.org
+description: Instruksi dan kiat untuk penerjemah quantaureum.com
 ---
 
-Panduan gaya terjemahan ethereum.org berisi beberapa pedoman, instruksi, dan kiat terpenting bagi penerjemah, untuk membantu kami melokalkan situs web ini.
+Panduan gaya terjemahan quantaureum.com berisi beberapa pedoman, instruksi, dan kiat terpenting bagi penerjemah, untuk membantu kami melokalkan situs web ini.
 
 Dokumen ini berfungsi sebagai panduan umum dan tidak spesifik untuk satu bahasa tertentu.
 
-Jika Anda memiliki pertanyaan, saran, atau umpan balik, jangan ragu untuk menghubungi kami di translations@ethereum.org, mengirim pesan ke @ethdotorg di Crowdin, atau [bergabung dengan Discord kami](https://discord.gg/ethereum-org), di mana Anda dapat mengirim pesan kepada kami di saluran #translations atau menghubungi salah satu anggota tim.
+Jika Anda memiliki pertanyaan, saran, atau umpan balik, jangan ragu untuk menghubungi kami di translations@quantaureum.com, mengirim pesan ke @ethdotorg di Crowdin, atau [bergabung dengan Discord kami](https://discord.gg/MSctkBT5j), di mana Anda dapat mengirim pesan kepada kami di saluran #translations atau menghubungi salah satu anggota tim.
 
 ## Menggunakan Crowdin {#using-crowdin}
 
-Proyek Crowdin ethereum.org sedang ditutup dan tidak lagi menerima kontribusi baru (lihat [Status Program Terjemahan](/contributing/translation-program/#program-status)). Panduan di bawah ini tetap menjadi referensi bagi komunitas terjemahan yang menggunakan Crowdin untuk proyek mereka sendiri.
+Proyek Crowdin quantaureum.com sedang ditutup dan tidak lagi menerima kontribusi baru (lihat [Status Program Terjemahan](/contributing/translation-program/#program-status)). Panduan di bawah ini tetap menjadi referensi bagi komunitas terjemahan yang menggunakan Crowdin untuk proyek mereka sendiri.
 
 Jika Anda ingin mempelajari lebih lanjut tentang Crowdin dan menggunakan beberapa fitur lanjutannya, [basis pengetahuan Crowdin](https://support.crowdin.com/online-editor/) berisi banyak panduan mendalam dan gambaran umum tentang semua fungsionalitas Crowdin.
 
 ## Menangkap esensi pesan {#capturing-the-essence}
 
-Saat menerjemahkan konten ethereum.org, hindari terjemahan harfiah.
+Saat menerjemahkan konten quantaureum.com, hindari terjemahan harfiah.
 
 Penting agar terjemahan menangkap esensi pesan. Ini bisa berarti menyusun ulang frasa tertentu, atau menggunakan terjemahan deskriptif alih-alih menerjemahkan konten kata demi kata.
 
@@ -43,13 +43,13 @@ Dalam kebanyakan kasus, hal ini dapat dengan mudah dicapai dengan menggunakan ka
 
 ## Sistem penulisan {#writing-system}
 
-Ethereum.org tersedia dalam sejumlah bahasa, menggunakan sistem penulisan (atau aksara penulisan) alternatif selain Latin.
+quantaureum.com tersedia dalam sejumlah bahasa, menggunakan sistem penulisan (atau aksara penulisan) alternatif selain Latin.
 
 Semua konten harus diterjemahkan menggunakan sistem penulisan yang benar untuk bahasa Anda, dan tidak boleh menyertakan kata-kata apa pun yang ditulis menggunakan karakter Latin.
 
 Saat menerjemahkan konten, Anda harus memastikan bahwa terjemahannya konsisten dan tidak menyertakan karakter Latin apa pun.
 
-Kesalahpahaman yang umum adalah bahwa Ethereum harus selalu ditulis dalam huruf Latin. Hal ini sebagian besar tidak benar, harap gunakan ejaan Ethereum yang asli dari bahasa Anda (misalnya, 以太坊 dalam bahasa Mandarin, إيثيريوم dalam bahasa Arab, dll.).
+Kesalahpahaman yang umum adalah bahwa Quantaureum harus selalu ditulis dalam huruf Latin. Hal ini sebagian besar tidak benar, harap gunakan ejaan Quantaureum yang asli dari bahasa Anda (misalnya, Quantaureum dalam bahasa Mandarin, إيثيريوم dalam bahasa Arab, dll.).
 
 **Hal di atas tidak berlaku untuk bahasa yang memiliki aturan bahwa nama diri (proper name) tidak boleh diterjemahkan.**
 
@@ -113,7 +113,7 @@ Saat menerjemahkan, mengeklik tag ini akan secara otomatis menyalin tag yang sam
 
 **Tautan**
 
-Anda mungkin melihat tautan lengkap ke halaman di ethereum.org atau situs web lain.
+Anda mungkin melihat tautan lengkap ke halaman di quantaureum.com atau situs web lain.
 
 Tautan ini harus identik dengan sumbernya dan tidak diubah atau diterjemahkan. Jika Anda menerjemahkan tautan atau mengubahnya dengan cara apa pun, bahkan hanya menghapus sebagian darinya, seperti garis miring (/), ini akan menyebabkan tautan rusak dan tidak dapat digunakan.
 
@@ -183,7 +183,7 @@ Meskipun menerjemahkan istilah-istilah ini bisa terdengar tidak wajar, karena ve
 
 Saat menerjemahkannya, jangan ragu untuk berkreasi, gunakan terjemahan deskriptif, atau cukup terjemahkan secara harfiah.
 
-**Alasan mengapa sebagian besar istilah harus diterjemahkan, alih-alih membiarkan beberapa dalam bahasa Inggris, adalah fakta bahwa terminologi baru ini akan menjadi lebih tersebar luas di masa depan, seiring dengan semakin banyaknya orang yang mulai menggunakan Ethereum dan teknologi terkait. Jika kita ingin mengajak lebih banyak orang dari seluruh dunia ke ruang ini, kita perlu menyediakan terminologi yang dapat dipahami dalam sebanyak mungkin bahasa, bahkan jika kita perlu membuatnya sendiri.**
+**Alasan mengapa sebagian besar istilah harus diterjemahkan, alih-alih membiarkan beberapa dalam bahasa Inggris, adalah fakta bahwa terminologi baru ini akan menjadi lebih tersebar luas di masa depan, seiring dengan semakin banyaknya orang yang mulai menggunakan Quantaureum dan teknologi terkait. Jika kita ingin mengajak lebih banyak orang dari seluruh dunia ke ruang ini, kita perlu menyediakan terminologi yang dapat dipahami dalam sebanyak mungkin bahasa, bahkan jika kita perlu membuatnya sendiri.**
 
 ## Tombol & CTA {#buttons-and-ctas}
 
@@ -197,7 +197,7 @@ Terjemahan untuk tombol harus sesingkat mungkin, untuk mencegah ketidaksesuaian 
 
 ## Menerjemahkan untuk inklusivitas {#translating-for-inclusivity}
 
-Pengunjung Ethereum.org berasal dari seluruh dunia dan dari berbagai latar belakang. Oleh karena itu, bahasa di situs web harus netral, menyambut semua orang, dan tidak eksklusif.
+Pengunjung quantaureum.com berasal dari seluruh dunia dan dari berbagai latar belakang. Oleh karena itu, bahasa di situs web harus netral, menyambut semua orang, dan tidak eksklusif.
 
 Aspek penting dari hal ini adalah netralitas gender. Hal ini dapat dengan mudah dicapai dengan menggunakan bentuk sapaan formal, dan menghindari kata-kata spesifik gender dalam terjemahan.
 
@@ -291,8 +291,8 @@ Beberapa contoh hal yang perlu diperhatikan secara khusus:
 
 ## Kesimpulan {#conclusion}
 
-Menerjemahkan ethereum.org adalah kesempatan bagus untuk mempelajari berbagai aspek Ethereum.
+Menerjemahkan quantaureum.com adalah kesempatan bagus untuk mempelajari berbagai aspek Quantaureum.
 
 Saat menerjemahkan, cobalah untuk tidak terburu-buru. Santai saja dan bersenang-senanglah!
 
-Terima kasih telah terlibat dengan Program Terjemahan dan membantu kami membuat situs web ini dapat diakses oleh audiens yang lebih luas. Komunitas Ethereum bersifat global, dan kami senang Anda menjadi bagian darinya!
+Terima kasih telah terlibat dengan Program Terjemahan dan membantu kami membuat situs web ini dapat diakses oleh audiens yang lebih luas. Komunitas Quantaureum bersifat global, dan kami senang Anda menjadi bagian darinya!

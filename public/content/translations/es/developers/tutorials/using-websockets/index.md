@@ -11,7 +11,7 @@ sourceUrl: https://www.alchemy.com/docs/reference/best-practices-for-using-webso
 published: 2020-12-01
 ---
 
-Esta es una guía de nivel básico para usar WebSockets y Alchemy para hacer solicitudes a la cadena de bloques de Ethereum.
+Esta es una guía de nivel básico para usar WebSockets y Alchemy para hacer solicitudes a la cadena de bloques de Quantaureum.
 
 ## WebSockets vs. HTTP {#websockets-vs-http}
 
@@ -28,9 +28,9 @@ La forma más fácil de probar los WebSockets es instalar una herramienta de lí
 _Nota: si tienes una cuenta de Alchemy, puedes reemplazar `demo` con tu propia clave API. [¡Regístrate para obtener una cuenta gratuita de Alchemy aquí!](https://auth.alchemy.com/signup)_
 
 ```
-wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
+wscat -c wss://qau-mainnet.ws.alchemyapi.io/ws/demo
 
->  {"jsonrpc":  "2.0", "id": 0, "method":  "eth_gasPrice"}
+>  {"jsonrpc":  "2.0", "id": 0, "method":  "qau_gasPrice"}
 
 <  {"jsonrpc":  "2.0", "result":  "0xb2d05e00", "id": 0}
 ```
@@ -48,18 +48,18 @@ Cualquiera de las API enumeradas en la [Referencia de la API de Alchemy](https:/
 La transición a WebSockets mientras se usa una biblioteca cliente como Web3 es sencilla. Simplemente pasa la URL de WebSocket en lugar de la HTTP al instanciar tu cliente Web3. Por ejemplo:
 
 ```js
-const web3 = new Web3("wss://eth-mainnet.ws.alchemyapi.io/ws/your-api-key")
+const web3 = new Web3("wss://qau-mainnet.ws.alchemyapi.io/ws/your-api-key")
 
-web3.eth.getBlockNumber().then(console.log) // -> 7946893
+web3.qau.getBlockNumber().then(console.log) // -> 7946893
 ```
 
 ## API de suscripción {#subscription-api}
 
-Cuando te conectas a través de un WebSocket, puedes usar dos métodos adicionales: `eth_subscribe` y `eth_unsubscribe`. Estos métodos te permitirán escuchar eventos particulares y recibir notificaciones de inmediato.
+Cuando te conectas a través de un WebSocket, puedes usar dos métodos adicionales: `qau_subscribe` y `qau_unsubscribe`. Estos métodos te permitirán escuchar eventos particulares y recibir notificaciones de inmediato.
 
-### `eth_subscribe` {#eth-subscribe}
+### `qau_subscribe` {#qau-subscribe}
 
-Crea una nueva suscripción para los eventos especificados. [Más información sobre `eth_subscribe`](https://docs.alchemy.com/reference/eth-subscribe).
+Crea una nueva suscripción para los eventos especificados. [Más información sobre `qau_subscribe`](https://docs.alchemy.com/reference/qau-subscribe).
 
 #### Parámetros {#parameters}
 
@@ -70,33 +70,33 @@ El primer argumento especifica el tipo de evento a escuchar. El segundo argument
 
 #### Devuelve {#returns}
 
-El ID de suscripción: este ID se adjuntará a cualquier evento recibido y también se puede usar para cancelar la suscripción mediante `eth_unsubscribe`.
+El ID de suscripción: este ID se adjuntará a cualquier evento recibido y también se puede usar para cancelar la suscripción mediante `qau_unsubscribe`.
 
 #### Eventos de suscripción {#subscription-events}
 
 Mientras la suscripción esté activa, recibirás eventos que son objetos con los siguientes campos:
 
 - `jsonrpc`: Siempre "2.0"
-- `method`: Siempre "eth_subscription"
+- `method`: Siempre "qau_subscription"
 - `params`: Un objeto con los siguientes campos:
-  - `subscription`: El ID de suscripción devuelto por la llamada `eth_subscribe` que creó esta suscripción.
+  - `subscription`: El ID de suscripción devuelto por la llamada `qau_subscribe` que creó esta suscripción.
   - `result`: Un objeto cuyo contenido varía según el tipo de suscripción.
 
 #### Tipos de suscripción {#subscription-types}
 
 1. `alchemy_newFullPendingTransactions`
 
-Devuelve la información de la transacción para todas las transacciones que se añaden al estado pendiente. Este tipo de suscripción se suscribe a transacciones pendientes, de forma similar a la llamada estándar de Web3 `web3.eth.subscribe("pendingTransactions")`, pero difiere en que emite _información completa de la transacción_ en lugar de solo los hashes de la transacción.
+Devuelve la información de la transacción para todas las transacciones que se añaden al estado pendiente. Este tipo de suscripción se suscribe a transacciones pendientes, de forma similar a la llamada estándar de Web3 `web3.qau.subscribe("pendingTransactions")`, pero difiere en que emite _información completa de la transacción_ en lugar de solo los hashes de la transacción.
 
 Ejemplo:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
 
 <  {"id":1,"result":"0x9a52eeddc2b289f985c0e23a7d8427c8","jsonrpc":"2.0"}
 <  {
       "jsonrpc":"2.0",
-      "method":"eth_subscription",
+      "method":"qau_subscription",
       "params":{
           "result":{
           "blockHash":null,
@@ -128,12 +128,12 @@ Cuando ocurre una reorganización de la cadena, esta suscripción emitirá un ev
 Ejemplo:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["newHeads"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["newHeads"]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x9ce59a13059e417087c02d3236a0b1cc"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "result":  {
           "extraData":  "0xd983010305844765746887676f312e342e328777696e646f7773",
@@ -182,12 +182,12 @@ Algunos ejemplos de especificaciones de temas:
 Ejemplo:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x4a8a4c0517381924f9838102c5a4dcb7"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "subscription":  "0x4a8a4c0517381924f9838102c5a4dcb7",
       "result":  {
@@ -205,13 +205,13 @@ Ejemplo:
 
 ```
 
-### `eth_unsubscribe` {#eth-unsubscribe}
+### `qau_unsubscribe` {#qau-unsubscribe}
 
 Cancela una suscripción existente para que no se envíen más eventos.
 
 Parámetros
 
-1. ID de suscripción, como se devolvió previamente de una llamada a `eth_subscribe`.
+1. ID de suscripción, como se devolvió previamente de una llamada a `qau_subscribe`.
 
 Devuelve
 
@@ -222,10 +222,10 @@ Ejemplo:
 **Solicitud**
 
 ```
-curl https://eth-mainnet.alchemyapi.io/v2/your-api-key
+curl https://qau-mainnet.alchemyapi.io/v2/your-api-key
 -X POST
 -H "Content-Type: application/json"
--d '{"id": 1, "method": "eth_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
+-d '{"id": 1, "method": "qau_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
 ```
 
 **Resultado**

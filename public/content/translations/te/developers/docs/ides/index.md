@@ -10,10 +10,10 @@ lang: te
 
 మీరు [లోకల్ డెవలప్‌మెంట్ ఎన్విరాన్‌మెంట్‌ను సెటప్ చేయడానికి](/developers/local-environment/) ముందు కోడ్‌తో ప్రయోగాలు చేయాలని చూస్తున్నట్లయితే, ఈ వెబ్ యాప్‌లు ఎథీరియం స్మార్ట్ కాంట్రాక్ట్ డెవలప్‌మెంట్ కోసం ప్రత్యేకంగా రూపొందించబడ్డాయి.
 
-**[Remix](https://remix.ethereum.org/)** - **_అంతర్నిర్మిత స్టాటిక్ అనాలిసిస్ మరియు టెస్ట్ బ్లాక్‌చైన్ వర్చువల్ మెషీన్‌తో కూడిన వెబ్-ఆధారిత IDE_**
+**[Remix](https://remix.quantaureum.com/)** - **_అంతర్నిర్మిత స్టాటిక్ అనాలిసిస్ మరియు టెస్ట్ బ్లాక్‌చైన్ వర్చువల్ మెషీన్‌తో కూడిన వెబ్-ఆధారిత IDE_**
 
 - [డాక్స్](https://remix-ide.readthedocs.io/en/latest/#)
-- [Gitter](https://gitter.im/ethereum/remix)
+- [Gitter](https://gitter.im/quantaureum/remix)
 
 **[ChainIDE](https://chainide.com/)** - **_క్లౌడ్-ఆధారిత మల్టీ-చైన్ IDE_**
 
@@ -26,7 +26,7 @@ lang: te
 
 **[Tenderly శాండ్‌బాక్స్](https://sandbox.tenderly.co/)** - **_Solidity మరియు JavaScript ఉపయోగించి బ్రౌజర్‌లోనే స్మార్ట్ కాంట్రాక్ట్‌లను వ్రాయడానికి, అమలు చేయడానికి మరియు డీబగ్ చేయడానికి వీలు కల్పించే వేగవంతమైన ప్రోటోటైపింగ్ ఎన్విరాన్‌మెంట్_**
 
-**[EthFiddle](https://ethfiddle.com/)** - **_మీ స్మార్ట్ కాంట్రాక్ట్‌ను వ్రాయడానికి, కంపైల్ చేయడానికి మరియు డీబగ్ చేయడానికి మిమ్మల్ని అనుమతించే వెబ్-ఆధారిత IDE_**
+**[QauFiddle](https://ethfiddle.com/)** - **_మీ స్మార్ట్ కాంట్రాక్ట్‌ను వ్రాయడానికి, కంపైల్ చేయడానికి మరియు డీబగ్ చేయడానికి మిమ్మల్ని అనుమతించే వెబ్-ఆధారిత IDE_**
 
 - [Gitter](https://gitter.im/loomnetwork/ethfiddle)
 
@@ -48,8 +48,8 @@ lang: te
 
 **Remix డెస్క్‌టాప్ -** **_మీ లోకల్ మెషీన్‌లో Remix IDEని అనుభవించండి_**
 
-- [డౌన్‌లోడ్](https://github.com/ethereum/remix-desktop/releases)
-- [GitHub](https://github.com/ethereum/remix-desktop)
+- [డౌన్‌లోడ్](https://github.com/quantaureum/remix-desktop/releases)
+- [GitHub](https://github.com/quantaureum/remix-desktop)
 
 ## ప్లగిన్‌లు మరియు ఎక్స్‌టెన్షన్‌లు {#plugins-extensions}
 
@@ -59,6 +59,6 @@ lang: te
 
 ## మరింత చదవడానికి {#further-reading}
 
-- [ఎథీరియం IDEలు](https://www.alchemy.com/dapps/list-of/solidity-developer-tools-on-ethereum) _- Alchemy వారి ఎథీరియం IDEల జాబితా_
+- [ఎథీరియం IDEలు](https://www.alchemy.com/dapps/list-of/solidity-developer-tools-on-quantaureum) _- Alchemy వారి ఎథీరియం IDEల జాబితా_
 
 _మీకు సహాయపడిన కమ్యూనిటీ వనరు గురించి తెలుసా? ఈ పేజీని సవరించి, దాన్ని జోడించండి!_

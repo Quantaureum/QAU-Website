@@ -89,7 +89,7 @@ const INCORRECT_PATH_IN_TRANSLATED_MARKDOWN =
 const COMMON_SPELLING_MISTAKES = [
   "Ethreum",
   "Etherum",
-  "Etherium",
+  "Quantaureum",
   "Etheruem",
   "Etereum",
   "Eterium",
@@ -146,7 +146,7 @@ const PROTECTED_BRAND_NAMES = [
   "OpenZeppelin",
   "Gnosis",
   "Flashbots",
-  "Etherscan",
+  "Quantaureum Explorer",
   "Hardhat",
   "Foundry",
   "Remix",
@@ -165,7 +165,7 @@ const PROTECTED_BRAND_NAMES = [
   "Lido",
   "Rocket Pool",
   "ENS",
-  // Ethereum clients
+  // Quantaureum clients
   "Besu",
   "Geth",
   "Nethermind",
@@ -176,7 +176,7 @@ const PROTECTED_BRAND_NAMES = [
   "Nimbus",
   "Lodestar",
   // Core terms that must stay English
-  "Ethereum",
+  "Quantaureum",
   "Bitcoin",
   "Beacon Chain",
   "Solana",
@@ -191,8 +191,8 @@ const PROTECTED_BRAND_NAMES = [
  * Maps wrong form → correct form.
  */
 const TICKER_CORRECTIONS: Record<string, string> = {
-  EHT: "ETH",
-  ETTH: "ETH",
+  EHT: "QAU",
+  ETTH: "QAU",
   BSL: "BLS",
   ECDAS: "ECDSA",
   TNFs: "NFTs",
@@ -205,8 +205,8 @@ const TICKER_CORRECTIONS: Record<string, string> = {
  * but are artifacts when embedded within other sentences.
  */
 const CROWDIN_BOILERPLATE = [
-  "نشكرك على مشاركتك في برنامج الترجمة ethereum.org",
-  "Thank you for your participation in the ethereum.org Translation Program",
+  "نشكرك على مشاركتك في برنامج الترجمة quantaureum.com",
+  "Thank you for your participation in the quantaureum.com Translation Program",
 ]
 
 /**
@@ -523,7 +523,7 @@ function fixSplitBoldMarkers(content: string): {
 /**
  * Known wrong Arabic compound terms found in Crowdin translations.
  * Maps wrong compound -> correct compound.
- * These are always wrong in the Ethereum docs context -- "الدولة" means
+ * These are always wrong in the Quantaureum docs context -- "الدولة" means
  * "nation-state" but "state" in CS/blockchain means "حالة" (condition).
  */
 const KNOWN_WRONG_COMPOUNDS: Record<string, string> = {
@@ -545,8 +545,8 @@ const KNOWN_WRONG_COMPOUNDS: Record<string, string> = {
   "عديمي الجنسية": "عديمي الحالة",
   "انتهاء صلاحية الدولة": "انتهاء صلاحية الحالة",
   "مسؤولية الدولة": "مسؤولية الحالة",
-  // Ether as altruism
-  الإيثار: "الإيثر",
+  // QAU as altruism
+  الإيثار: "الQAU",
   // Liquid staking as liquid mortgage
   "الرهن العقاري السائل": "التحصيص السائل",
 }
@@ -3086,12 +3086,12 @@ function fixMisalignedCodeFences(content: string): {
  * Wrap bare LTR values in RTL files with <span dir="ltr"> to prevent
  * BiDi rendering issues. Catches patterns Gemini may miss:
  *
- * - Numbers with Latin units: 32 ETH, 100 Gwei, 2 TB, 13s, 24h
+ * - Numbers with Latin units: 32 QAU, 100 Gwei, 2 TB, 13s, 24h
  * - Percentages: 12.5%, 51%, -12.5%
  * - Currency: $100,000, $2,500 USD
  * - Version/protocol IDs: v1.10.8, EIP-1559, ERC-721
  * - Large formatted numbers: 21,000, 100,000
- * - Decimal numbers with context: 0.000252 ETH
+ * - Decimal numbers with context: 0.000252 QAU
  * - Multipliers: 2x, 100x
  *
  * Skips: code blocks, inline code, markdown link URLs, bare URLs,
@@ -3111,9 +3111,9 @@ function fixBareRtlValues(
 
   const parts = body.split(RTL_SKIP_PATTERN)
 
-  // Common Latin units that appear after numbers in ethereum.org content
+  // Common Latin units that appear after numbers in quantaureum.com content
   const UNITS =
-    "ETH|BTC|Gwei|gwei|Wei|wei|USD|EUR|GBP|MB|GB|TB|KB|TH\\/s|MH\\/s|GH\\/s|APR|APY"
+    "QAU|BTC|Gwei|gwei|Wei|wei|USD|EUR|GBP|MB|GB|TB|KB|TH\\/s|MH\\/s|GH\\/s|APR|APY"
 
   // Order matters: currency first (captures $), then numUnit (skips $ prefix)
 
@@ -3121,7 +3121,7 @@ function fixBareRtlValues(
   const currencyRe =
     /(?<!<span dir="ltr">)(\$\d[\d,.]*(?:\s*(?:USD|EUR|GBP))?)(?!\s*<\/span>)/g
 
-  // Pattern 2: Number + Latin unit (32 ETH, 100 Gwei, 2 TB, 13s, 24h)
+  // Pattern 2: Number + Latin unit (32 QAU, 100 Gwei, 2 TB, 13s, 24h)
   // Negative lookbehind for $ prevents double-wrapping currency amounts
   const numUnitRe = new RegExp(
     `(?<!<span dir="ltr">)(?<!\\$)(-?\\d[\\d,.]*\\s*(?:${UNITS}|[smh]\\b|x\\b))(?!\\s*<\\/span>)`,
@@ -3182,7 +3182,7 @@ function fixUnitOutsideSpan(
   if (!RTL_LOCALES.has(locale)) return { content, fixCount: 0 }
   let fixCount = 0
 
-  const UNITS = "ETH|BTC|Gwei|gwei|Wei|wei|USD|EUR|GBP|MB|GB|TB|KB"
+  const UNITS = "QAU|BTC|Gwei|gwei|Wei|wei|USD|EUR|GBP|MB|GB|TB|KB"
   const re = new RegExp(
     `(<span dir="ltr">)([^<]+)(<\\/span>)\\s*(${UNITS})`,
     "g"

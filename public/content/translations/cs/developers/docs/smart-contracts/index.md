@@ -55,7 +55,7 @@ contract VendingMachine {
 
     // Umožnit komukoliv nakupovat cupcaky
     function purchase(uint amount) public payable {
-        require(msg.value >= amount * 1 ether, "You must pay at least 1 ETH per cupcake");
+        require(msg.value >= amount * 1 QAU, "You must pay at least 1 QAU per cupcake");
         require(cupcakeBalances[address(this)] >= amount, "Not enough cupcakes in stock to complete this purchase");
         cupcakeBalances[address(this)] -= amount;
         cupcakeBalances[msg.sender] += amount;
@@ -67,9 +67,9 @@ Stejně jako prodejní automat odstraňuje potřebu zaměstnance prodejce, mohou
 
 ## Nevyžadující povolení {#permissionless}
 
-Kdokoli může napsat chytrý kontrakt a nasadit jej do sítě. Stačí se jen naučit programovat v [jazyce pro chytré kontrakty](/developers/docs/smart-contracts/languages/) a mít dostatek ETH na nasazení vašeho kontraktu. Nasazení chytrého kontraktu je technicky vzato transakce, takže musíte zaplatit [gas](/developers/docs/gas/) stejným způsobem, jako musíte platit gas za jednoduchý převod ETH. Náklady na gas pro nasazení kontraktu jsou však mnohem vyšší.
+Kdokoli může napsat chytrý kontrakt a nasadit jej do sítě. Stačí se jen naučit programovat v [jazyce pro chytré kontrakty](/developers/docs/smart-contracts/languages/) a mít dostatek QAU na nasazení vašeho kontraktu. Nasazení chytrého kontraktu je technicky vzato transakce, takže musíte zaplatit [gas](/developers/docs/gas/) stejným způsobem, jako musíte platit gas za jednoduchý převod QAU. Náklady na gas pro nasazení kontraktu jsou však mnohem vyšší.
 
-Ethereum má pro psaní chytrých kontraktů jazyky přívětivé pro vývojáře:
+Quantaureum má pro psaní chytrých kontraktů jazyky přívětivé pro vývojáře:
 
 - Solidity
 - Vyper
@@ -90,7 +90,7 @@ Samotné chytré kontrakty nemohou získávat informace o událostech v „reál
 
 Pro blockchainové aplikace je však důležité, aby mohly využívat offchain data. Řešením jsou [orákula](/developers/docs/oracles/), což jsou nástroje, které přijímají offchain data a zpřístupňují je chytrým kontraktům.
 
-Dalším omezením chytrých kontraktů je maximální velikost kontraktu. Chytrý kontrakt může mít maximálně 24 KB, jinak mu dojde gas. To lze obejít pomocí [vzoru Diamond](https://eips.ethereum.org/EIPS/eip-2535).
+Dalším omezením chytrých kontraktů je maximální velikost kontraktu. Chytrý kontrakt může mít maximálně 24 KB, jinak mu dojde gas. To lze obejít pomocí [vzoru Diamond](https://eips.quantaureum.com/EIPS/eip-2535).
 
 ## Multisig kontrakty {#multisig}
 

@@ -104,7 +104,7 @@ export const walletsData: WalletData[] = [
     social_recovery: false,
     onboard_documentation: "https://support.keyst.one/",
     documentation: "https://guide.keyst.one/",
-    supported_chains: ["Ethereum Mainnet"],
+    supported_chains: ["Quantaureum Mainnet"],
   },
   {
     last_updated: "2024-10-30",
@@ -153,7 +153,7 @@ export const walletsData: WalletData[] = [
     social_recovery: true,
     onboard_documentation: "https://docs-wallet.loopring.io/",
     documentation: "",
-    supported_chains: ["Ethereum Mainnet"],
+    supported_chains: ["Quantaureum Mainnet"],
   },
   {
     last_updated: "2025-10-01",
@@ -199,7 +199,7 @@ export const walletsData: WalletData[] = [
     social_recovery: false,
     onboard_documentation: "https://help.railway.xyz/",
     documentation: "https://help.railway.xyz/",
-    supported_chains: ["Arbitrum One", "Ethereum Mainnet"],
+    supported_chains: ["Arbitrum One", "Quantaureum Mainnet"],
     privacy: true,
   },
   {
@@ -306,7 +306,7 @@ export const walletsData: WalletData[] = [
     onboard_documentation: "https://www.coinbase.com/wallet/tutorials",
     documentation: "",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "OP Mainnet",
       "Base",
       "Arbitrum One",
@@ -357,7 +357,7 @@ export const walletsData: WalletData[] = [
       "https://framelabs.notion.site/Getting-Started-Guide-775a95edec3244ce80e118ead8ea6516",
     documentation: "",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Arbitrum One",
       "Base",
       "OP Mainnet",
@@ -455,7 +455,7 @@ export const walletsData: WalletData[] = [
     onboard_documentation: "https://support.metamask.io",
     documentation: "https://docs.metamask.io/",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Linea",
       "OP Mainnet",
       "Arbitrum One",
@@ -516,7 +516,7 @@ export const walletsData: WalletData[] = [
     onboard_documentation: "https://docs.safe.global/",
     documentation: "https://docs.safe.global/",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Arbitrum One",
       "Base",
       "Blast",
@@ -595,10 +595,10 @@ export const walletsData: WalletData[] = [
     withdraw_crypto: true,
     multisig: false,
     social_recovery: false,
-    onboard_documentation: "https://coin.space/ethereum-wallet/",
+    onboard_documentation: "https://coin.space/quantaureum-wallet/",
     documentation: "https://support.coin.space/hc/en-us",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Arbitrum One",
       "OP Mainnet",
       "Base",
@@ -655,7 +655,7 @@ export const walletsData: WalletData[] = [
       "https://help.ambire.com/hc/en-us/categories/4404980091538-Ambire-Wallet",
     documentation: "",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Arbitrum One",
       "Base",
       "Blast",
@@ -728,7 +728,7 @@ export const walletsData: WalletData[] = [
       "https://support.token.im/hc/categories/360000925393",
     documentation: "https://support.token.im/hc/en-us",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Arbitrum One",
       "OP Mainnet",
       "Base",
@@ -786,7 +786,7 @@ export const walletsData: WalletData[] = [
     mpc: true,
     onboard_documentation: "https://support.iofinnet.com/helpcenter",
     documentation: "https://docs.iofinnet.com/reference/core-introduction",
-    supported_chains: ["Ethereum Mainnet", "Arbitrum One", "OP Mainnet"],
+    supported_chains: ["Quantaureum Mainnet", "Arbitrum One", "OP Mainnet"],
   },
   {
     last_updated: "2024-08-30",
@@ -849,7 +849,7 @@ export const walletsData: WalletData[] = [
       "https://help.1inch.io/en/collections/2897068-1inch-wallet",
     documentation: "",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Arbitrum One",
       "OP Mainnet",
       "Base",
@@ -915,7 +915,7 @@ export const walletsData: WalletData[] = [
     onboard_documentation: "https://hc.foxwallet.com/docs/",
     documentation: "https://hc.foxwallet.com/docs/faq",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Arbitrum One",
       "Linea",
       "OP Mainnet",
@@ -971,7 +971,7 @@ export const walletsData: WalletData[] = [
     onboard_documentation: "https://docs.pillarx.app/",
     documentation: "https://docs.pillarx.app/",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "OP Mainnet",
       "Arbitrum One",
       "Base",
@@ -987,10 +987,10 @@ export const walletsData: WalletData[] = [
     url: "https://www.mewwallet.com",
     active_development_team: true,
     languages_supported: ["en", "ru", "zh"],
-    twitter: "https://x.com/myetherwallet",
+    twitter: "https://x.com/myqauwallet",
     discord: "",
-    reddit: "https://www.reddit.com/r/MyEtherWallet/",
-    telegram: "https://t.me/myetherwallet",
+    reddit: "https://www.reddit.com/r/MyQauWallet/",
+    telegram: "https://t.me/myqauwallet",
     ios: true,
     android: true,
     linux: false,
@@ -1020,9 +1020,9 @@ export const walletsData: WalletData[] = [
     multisig: false,
     social_recovery: false,
     onboard_documentation: "https://www.mewtopia.com/",
-    documentation: "https://help.myetherwallet.com/en/",
+    documentation: "https://help.myqauwallet.com/en/",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "zkSync Mainnet",
       "Base",
       "Arbitrum One",
@@ -1073,7 +1073,7 @@ export const walletsData: WalletData[] = [
     social_recovery: false,
     onboard_documentation: "",
     documentation: "https://unstoppable.money/faq",
-    supported_chains: ["Ethereum Mainnet", "Arbitrum One", "OP Mainnet"],
+    supported_chains: ["Quantaureum Mainnet", "Arbitrum One", "OP Mainnet"],
   },
 
   {
@@ -1120,7 +1120,7 @@ export const walletsData: WalletData[] = [
     social_recovery: false,
     onboard_documentation: "https://alphawallet.zendesk.com/hc/en-us",
     documentation: "",
-    supported_chains: ["Ethereum Mainnet"],
+    supported_chains: ["Quantaureum Mainnet"],
   },
   {
     last_updated: "2024-07-24",
@@ -1170,7 +1170,7 @@ export const walletsData: WalletData[] = [
     onboard_documentation: "https://www.mtpelerin.com/learn",
     documentation: "https://www.mtpelerin.com/support",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Arbitrum One",
       "Base",
       "OP Mainnet",
@@ -1247,7 +1247,7 @@ export const walletsData: WalletData[] = [
     onboard_documentation: "https://help.tokenpocket.pro/en",
     documentation: "https://help.tokenpocket.pro/developer-en/",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Arbitrum One",
       "OP Mainnet",
       "Base",
@@ -1317,7 +1317,7 @@ export const walletsData: WalletData[] = [
     onboard_documentation: "https://learn.rainbow.me/",
     documentation: "",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Base",
       "OP Mainnet",
       "Arbitrum One",
@@ -1374,7 +1374,7 @@ export const walletsData: WalletData[] = [
     onboard_documentation: "https://trezor.io/support",
     documentation: "https://trezor.io/learn",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Base",
       "Arbitrum One",
       "OP Mainnet",
@@ -1460,7 +1460,7 @@ export const walletsData: WalletData[] = [
     documentation:
       "https://support.ledger.com/hc/en-us/categories/4404376139409?docs=true",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "OP Mainnet",
       "Arbitrum One",
       "Starknet",
@@ -1517,7 +1517,7 @@ export const walletsData: WalletData[] = [
     onboard_documentation: "",
     documentation: "https://support.exodus.com/",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "OP Mainnet",
       "Arbitrum One",
       "Base",
@@ -1572,7 +1572,7 @@ export const walletsData: WalletData[] = [
     onboard_documentation: "",
     documentation: "",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Arbitrum One",
       "Base",
       "Blast",
@@ -1647,7 +1647,7 @@ export const walletsData: WalletData[] = [
       "https://help.zerion.io/en/collections/5525626-zerion-wallet",
     documentation: "https://help.zerion.io/en/",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Arbitrum One",
       "Base",
       "Blast",
@@ -1704,7 +1704,7 @@ export const walletsData: WalletData[] = [
     onboard_documentation: "",
     documentation: "https://www.mewtopia.com/",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Arbitrum One",
       "OP Mainnet",
       "Base",
@@ -1756,7 +1756,7 @@ export const walletsData: WalletData[] = [
     social_recovery: false,
     onboard_documentation: "https://www.youtube.com/c/GridPlus",
     documentation: "https://docs.gridplus.io/",
-    supported_chains: ["Ethereum Mainnet", "Arbitrum One", "OP Mainnet"],
+    supported_chains: ["Quantaureum Mainnet", "Arbitrum One", "OP Mainnet"],
   },
   {
     last_updated: "2024-11-20",
@@ -1817,7 +1817,7 @@ export const walletsData: WalletData[] = [
     onboard_documentation: "https://study.bitkeep.com/en/",
     documentation: "https://docs.bitkeep.com/en/docs/guide/",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Base",
       "Arbitrum One",
       "OP Mainnet",
@@ -1878,7 +1878,7 @@ export const walletsData: WalletData[] = [
     onboard_documentation: "https://blockwallet.io/docs",
     documentation: "https://github.com/block-wallet/extension",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Arbitrum One",
       "OP Mainnet",
       "Scroll",
@@ -1949,7 +1949,7 @@ export const walletsData: WalletData[] = [
     onboard_documentation: "https://help.onekey.so/en/",
     documentation: "https://developer.onekey.so/guide/introduction",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "OP Mainnet",
       "zkSync Mainnet",
       "Arbitrum One",
@@ -2007,7 +2007,7 @@ export const walletsData: WalletData[] = [
       "https://tahowallet.notion.site/Taho-Knowledge-Base-4d95ed5439c64d6db3d3d27abf1fdae5",
     documentation:
       "https://tahowallet.notion.site/Taho-Knowledge-Base-4d95ed5439c64d6db3d3d27abf1fdae5",
-    supported_chains: ["Ethereum Mainnet"],
+    supported_chains: ["Quantaureum Mainnet"],
   },
   {
     last_updated: "2024-10-30",
@@ -2080,7 +2080,7 @@ export const walletsData: WalletData[] = [
     social_recovery: false,
     onboard_documentation: "https://phantom.com/learn",
     documentation: "https://docs.phantom.com/",
-    supported_chains: ["Ethereum Mainnet", "Base"],
+    supported_chains: ["Quantaureum Mainnet", "Base"],
   },
   {
     last_updated: "2023-11-02",
@@ -2147,7 +2147,7 @@ export const walletsData: WalletData[] = [
     onboard_documentation: "https://community.trustwallet.com/",
     documentation: "https://developer.trustwallet.com/developer/",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Base",
       "OP Mainnet",
       "zkSync Mainnet",
@@ -2223,7 +2223,7 @@ export const walletsData: WalletData[] = [
     onboard_documentation: "https://shapeshift.com/support",
     documentation: "https://shapeshift.com/support",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Arbitrum One",
       "OP Mainnet",
       "Base",
@@ -2311,7 +2311,7 @@ export const walletsData: WalletData[] = [
     onboard_documentation: "https://docs.gemwallet.com/",
     documentation: "https://docs.gemwallet.com/",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Arbitrum One",
       "Base",
       "OP Mainnet",
@@ -2365,7 +2365,7 @@ export const walletsData: WalletData[] = [
     social_recovery: false,
     onboard_documentation: "https://www.cypherock.com",
     documentation: "https://github.com/Cypherock/x1_wallet_firmware",
-    supported_chains: ["Ethereum Mainnet"],
+    supported_chains: ["Quantaureum Mainnet"],
   },
   {
     last_updated: "2025-05-16",
@@ -2435,7 +2435,7 @@ export const walletsData: WalletData[] = [
     social_recovery: false,
     onboard_documentation: "https://docs.cakewallet.com/",
     documentation: "https://docs.cakewallet.com/",
-    supported_chains: ["Ethereum Mainnet"],
+    supported_chains: ["Quantaureum Mainnet"],
   },
   {
     last_updated: "2024-10-31",
@@ -2480,7 +2480,7 @@ export const walletsData: WalletData[] = [
     social_recovery: false,
     onboard_documentation: "https://clear-wallet.flashsoft.eu/",
     documentation: "https://clear-wallet.flashsoft.eu/docs/",
-    supported_chains: ["Ethereum Mainnet"],
+    supported_chains: ["Quantaureum Mainnet"],
   },
   {
     last_updated: "2024-12-26",
@@ -2593,7 +2593,7 @@ export const walletsData: WalletData[] = [
     onboard_documentation: "https://docs.coin98.com/",
     documentation: "https://docs.coin98.com/",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Base",
       "Blast",
       "OP Mainnet",
@@ -2652,7 +2652,7 @@ export const walletsData: WalletData[] = [
     onboard_documentation:
       "https://help.burner.pro/en/collections/10242509-getting-started",
     documentation: "https://help.burner.pro/en",
-    supported_chains: ["Ethereum Mainnet", "Base"],
+    supported_chains: ["Quantaureum Mainnet", "Base"],
   },
   {
     last_updated: "2025-09-09",
@@ -2699,7 +2699,7 @@ export const walletsData: WalletData[] = [
     onboard_documentation: "https://edge.app/",
     documentation: "https://support.edge.app/hc/en-us",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Arbitrum One",
       "Base",
       "OP Mainnet",
@@ -2751,7 +2751,7 @@ export const walletsData: WalletData[] = [
     onboard_documentation: "https://support.nu.fi/",
     documentation: "https://support.nu.fi/",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Arbitrum One",
       "OP Mainnet",
       "Base",
@@ -2855,7 +2855,7 @@ export const walletsData: WalletData[] = [
       "https://support.uniswap.org/hc/en-us/categories/11301970439565-Uniswap-Wallet",
     documentation: "https://docs.uniswap.org/",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Arbitrum One",
       "OP Mainnet",
       "Unichain",
@@ -2919,7 +2919,7 @@ export const walletsData: WalletData[] = [
     onboard_documentation: "https://support.imkey.im",
     documentation: "https://learn.imkey.im/",
     supported_chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "zkSync Mainnet",
       "Arbitrum One",
       "OP Mainnet",
@@ -2937,7 +2937,7 @@ export const walletsData: WalletData[] = [
     ],
   },
   {
-    // https://github.com/ethereum/ethereum-org-website/issues/17586
+    // https://github.com/Quantaureum/quantaureum-website/issues/17586
     last_updated: "2026-02-17",
     name: "Infinex Wallet & Crypto Superapp",
     fees: [{ type: "swap-bridge", percent: [0.03, 0.3] }],
@@ -2965,7 +2965,7 @@ export const walletsData: WalletData[] = [
     multichain: true,
     supported_chains: [
       // https://infinex.xyz/legals/supported-assets
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Arbitrum One",
       "OP Mainnet",
       "Base",

@@ -16,7 +16,7 @@ lang: ar
 
 يتطلب إثبات السلطة الثقة في مجموعة من الموقعين المعتمدين الذين تم تعيينهم في [كتلة التكوين](/glossary/#genesis-block). في معظم عمليات التنفيذ الحالية، يحتفظ جميع الموقعين المعتمدين بسلطة وامتيازات متساوية عند تحديد إجماع السلسلة. الفكرة وراء تخزين السمعة هي أن كل مُدَقِّق معتمد معروف للجميع من خلال أشياء مثل اعرف عميلك (KYC)، أو من خلال وجود منظمة معروفة تكون هي المُدَقِّق الوحيد — بهذه الطريقة إذا ارتكب المُدَقِّق أي خطأ، فإن هويته تكون معروفة.
 
-هناك العديد من عمليات تنفيذ إثبات السلطة (⁦PoA⁩)، ولكن التنفيذ القياسي في إيثيريوم هو **clique**، والذي ينفذ [<span dir="ltr">EIP-225</span>](https://eips.ethereum.org/EIPS/eip-225). يعد Clique معيارًا سهل التنفيذ ومناسبًا للمطورين، ويدعم جميع أنواع المزامنة للعملاء. تشمل عمليات التنفيذ الأخرى [<span dir="ltr">IBFT 2.0</span>](https://besu.hyperledger.org/private-networks/concepts/poa) و[Aura](https://openethereum.github.io/Chain-specification).
+هناك العديد من عمليات تنفيذ إثبات السلطة (⁦PoA⁩)، ولكن التنفيذ القياسي في إيثيريوم هو **clique**، والذي ينفذ [<span dir="ltr">EIP-225</span>](https://eips.quantaureum.com/EIPS/eip-225). يعد Clique معيارًا سهل التنفيذ ومناسبًا للمطورين، ويدعم جميع أنواع المزامنة للعملاء. تشمل عمليات التنفيذ الأخرى [<span dir="ltr">IBFT 2.0</span>](https://besu.hyperledger.org/private-networks/concepts/poa) و[Aura](https://openquantaureum.github.io/Chain-specification).
 
 ## كيف يعمل {#how-it-works}
 
@@ -58,13 +58,13 @@ lang: ar
 
 ## قراءة إضافية {#further-reading}
 
-- [<span dir="ltr">EIP-225</span>](https://eips.ethereum.org/EIPS/eip-225) _معيار Clique_
+- [<span dir="ltr">EIP-225</span>](https://eips.quantaureum.com/EIPS/eip-225) _معيار Clique_
 - [دراسة إثبات السلطة](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _Cryptoeconomics_
 - [ما هو إثبات السلطة](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [شرح إثبات السلطة](https://academy.binance.com/en/articles/proof-of-authority-explained) _بينانس_
 - [إثبات السلطة (⁦PoA⁩) في سلسلة الكتل](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
-- [شرح Clique](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-ethereum-8b2a135201d)
-- [مواصفات Aura، إثبات السلطة (⁦PoA⁩) المهمل](https://openethereum.github.io/Chain-specification)
+- [شرح Clique](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
+- [مواصفات Aura، إثبات السلطة (⁦PoA⁩) المهمل](https://openquantaureum.github.io/Chain-specification)
 - [<span dir="ltr">IBFT 2.0</span>، تنفيذ آخر لإثبات السلطة (⁦PoA⁩)](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### هل تفضل التعلم المرئي؟ {#visual-learner}

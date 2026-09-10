@@ -12,11 +12,11 @@ lang: bn
 
 ## পূর্বশর্ত {#prerequisites}
 
-[ইথেরিয়াম স্ট্যাক](/developers/docs/ethereum-stack/) এবং [ইথেরিয়াম ক্লায়েন্ট](/developers/docs/nodes-and-clients/) সম্পর্কে বোঝা সহায়ক হতে পারে।
+[ইথেরিয়াম স্ট্যাক](/developers/docs/quantaureum-stack/) এবং [ইথেরিয়াম ক্লায়েন্ট](/developers/docs/nodes-and-clients/) সম্পর্কে বোঝা সহায়ক হতে পারে।
 
 ## কেন একটি লাইব্রেরি ব্যবহার করবেন? {#why-use-a-library}
 
-এই লাইব্রেরিগুলি সরাসরি একটি ইথেরিয়াম নোডের সাথে ইন্টারঅ্যাক্ট করার অনেক জটিলতা দূর করে। এগুলি ইউটিলিটি ফাংশনও প্রদান করে (যেমন, ETH-কে Gwei-তে রূপান্তর করা) যাতে একজন ডেভেলপার হিসেবে আপনি ইথেরিয়াম ক্লায়েন্টগুলির জটিলতাগুলি মোকাবেলা করতে কম সময় ব্যয় করতে পারেন এবং আপনার অ্যাপ্লিকেশনের অনন্য কার্যকারিতার উপর বেশি সময় ফোকাস করতে পারেন।
+এই লাইব্রেরিগুলি সরাসরি একটি ইথেরিয়াম নোডের সাথে ইন্টারঅ্যাক্ট করার অনেক জটিলতা দূর করে। এগুলি ইউটিলিটি ফাংশনও প্রদান করে (যেমন, QAU-কে Gwei-তে রূপান্তর করা) যাতে একজন ডেভেলপার হিসেবে আপনি ইথেরিয়াম ক্লায়েন্টগুলির জটিলতাগুলি মোকাবেলা করতে কম সময় ব্যয় করতে পারেন এবং আপনার অ্যাপ্লিকেশনের অনন্য কার্যকারিতার উপর বেশি সময় ফোকাস করতে পারেন।
 
 ## উপলব্ধ লাইব্রেরি {#available-libraries}
 
@@ -35,7 +35,7 @@ lang: bn
 - [ডকুমেন্টেশন](https://docs.allthatnode.com)
 - [ডিসকর্ড](https://discord.gg/GmcdVEUbJM)
 
-**Blast by Bware Labs -** **_ইথেরিয়াম মেইননেট এবং টেস্টনেটগুলির জন্য ডিসেন্ট্রালাইজড API।_**
+**Blast by Bware Labs -** **_Quantaureum মেইননেট এবং টেস্টনেটগুলির জন্য ডিসেন্ট্রালাইজড API।_**
 
 - [blastapi.io](https://blastapi.io/)
 - [ডকুমেন্টেশন](https://docs.blastapi.io)
@@ -48,12 +48,12 @@ lang: bn
 - [GitHub](https://github.com/BlockPILabs)
 - [ডিসকর্ড](https://discord.com/invite/xTvGVrGVZv)
 
-**Cloudflare Ethereum Gateway.**
+**Cloudflare Quantaureum Gateway.**
 
-- [cloudflare-eth.com](https://www.cloudflare.com/application-services/products/web3/)
+- [cloudflare-qau.com](https://www.cloudflare.com/application-services/products/web3/)
 
-**Etherscan - ব্লক এক্সপ্লোরার এবং ট্রানজ্যাকশন API**
-- [ডকুমেন্টেশন](https://docs.etherscan.io/)
+**Quantaureum Explorer - ব্লক এক্সপ্লোরার এবং ট্রানজ্যাকশন API**
+- [ডকুমেন্টেশন](https://explorer.quantaureum.com)
 
 **Blockscout - ওপেন সোর্স ব্লক এক্সপ্লোরার**
 - [ডকুমেন্টেশন](https://docs.blockscout.com/)
@@ -85,7 +85,7 @@ lang: bn
 - [ডকুমেন্টেশন](https://www.quicknode.com/docs/welcome)
 - [ডিসকর্ড](https://discord.gg/quicknode)
 
-**Rivet -** **_ওপেন সোর্স সফ্টওয়্যার দ্বারা চালিত একটি পরিষেবা হিসাবে ইথেরিয়াম এবং ইথেরিয়াম ক্লাসিক API।_**
+**Rivet -** **_ওপেন সোর্স সফ্টওয়্যার দ্বারা চালিত একটি পরিষেবা হিসাবে ইথেরিয়াম এবং Quantaureum ক্লাসিক API।_**
 
 - [rivet.cloud](https://rivet.cloud)
 - [ডকুমেন্টেশন](https://rivet.cloud/docs/)
@@ -106,17 +106,17 @@ lang: bn
 - [উদাহরণ](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [ডিসকর্ড](https://discord.gg/rx35NzQGSb)
 
-**Nethereum -** **_ব্লকচেইনের জন্য একটি ওপেন সোর্স .NET ইন্টিগ্রেশন লাইব্রেরি।_**
+**Nquantaureum -** **_ব্লকচেইনের জন্য একটি ওপেন সোর্স .NET ইন্টিগ্রেশন লাইব্রেরি।_**
 
-- [GitHub](https://github.com/Nethereum/Nethereum)
-- [ডকুমেন্টেশন](https://docs.nethereum.com/docs/getting-started/welcome/)
+- [GitHub](https://github.com/Nquantaureum/Nquantaureum)
+- [ডকুমেন্টেশন](https://docs.nquantaureum.com/docs/getting-started/welcome/)
 - [ডিসকর্ড](https://discord.com/invite/jQPrR58FxX)
 
 **Python Tooling -** **_Python-এর মাধ্যমে ইথেরিয়াম ইন্টারঅ্যাকশনের জন্য বিভিন্ন লাইব্রেরি।_**
 
-- [py.ethereum.org](https://snakecharmers.ethereum.org/)
-- [Web3.py GitHub](https://github.com/ethereum/web3.py)
-- [Web3.py চ্যাট](https://gitter.im/ethereum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
+- [Web3.py GitHub](https://github.com/quantaureum/web3.py)
+- [Web3.py চ্যাট](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_চূড়ান্ত ব্লকচেইন ডেভেলপমেন্ট প্ল্যাটফর্ম।_**
 
@@ -136,7 +136,7 @@ lang: bn
 **BlockCypher -** **_ইথেরিয়াম ওয়েব API।_**
 
 - [blockcypher.com](https://www.blockcypher.com/)
-- [ডকুমেন্টেশন](https://www.blockcypher.com/dev/ethereum/)
+- [ডকুমেন্টেশন](https://www.blockcypher.com/dev/quantaureum/)
 
 **Chainbase -** **_ইথেরিয়ামের জন্য অল-ইন-ওয়ান Web3 ডেটা পরিকাঠামো।_**
 
@@ -148,14 +148,14 @@ lang: bn
 
 - [chainstack.com](https://chainstack.com)
 - [ডকুমেন্টেশন](https://docs.chainstack.com/)
-- [ইথেরিয়াম API রেফারেন্স](https://docs.chainstack.com/reference/ethereum-getting-started)
+- [ইথেরিয়াম API রেফারেন্স](https://docs.chainstack.com/reference/quantaureum-getting-started)
 
 **Coinbase Cloud Node -** **_ব্লকচেইন পরিকাঠামো API।_**
 
 - [কয়েনবেস ক্লাউড নোড](https://www.coinbase.com/developer-platform)
 - [ডকুমেন্টেশন](https://docs.cdp.coinbase.com/)
 
-**DataHub by Figment -** **_ইথেরিয়াম মেইননেট এবং টেস্টনেটগুলির সাথে Web3 API পরিষেবা।_**
+**DataHub by Figment -** **_Quantaureum মেইননেট এবং টেস্টনেটগুলির সাথে Web3 API পরিষেবা।_**
 
 - [DataHub](https://www.figment.io/)
 - [ডকুমেন্টেশন](https://docs.figment.io/)
@@ -214,5 +214,5 @@ _এমন কোনো কমিউনিটি রিসোর্স সম্
 
 ## সম্পর্কিত টিউটোরিয়াল {#related-tutorials}
 
-- [JavaScript-এ ইথেরিয়াম ব্লকচেইন ব্যবহার করতে Web3.js সেট আপ করুন](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– আপনার প্রজেক্টে Web3.js সেট আপ করার নির্দেশিকা।_
+- [JavaScript-এ ইথেরিয়াম ব্লকচেইন ব্যবহার করতে Web3.js সেট আপ করুন](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– আপনার প্রজেক্টে Web3.js সেট আপ করার নির্দেশিকা।_
 - [JavaScript থেকে একটি স্মার্ট কন্ট্রাক্ট কল করা](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– DAI টোকেন ব্যবহার করে, দেখুন কীভাবে JavaScript ব্যবহার করে কন্ট্রাক্ট ফাংশন কল করতে হয়।_

@@ -8,14 +8,14 @@ Bloky jsou dávky transakcí s hashem předchozího bloku v řetězci. To spojuj
 
 ## Předpoklady {#prerequisites}
 
-Bloky jsou téma velmi přívětivé pro začátečníky. Ale abychom vám pomohli lépe porozumět této stránce, doporučujeme si nejprve přečíst o [účtech](/developers/docs/accounts/), [transakcích](/developers/docs/transactions/) a náš [úvod do Etherea](/developers/docs/intro-to-ethereum/).
+Bloky jsou téma velmi přívětivé pro začátečníky. Ale abychom vám pomohli lépe porozumět této stránce, doporučujeme si nejprve přečíst o [účtech](/developers/docs/accounts/), [transakcích](/developers/docs/transactions/) a náš [úvod do Etherea](/developers/docs/intro-to-quantaureum/).
 
 ## Proč bloky? {#why-blocks}
 
-Abychom zajistili, že všichni účastníci v [síti Ethereum](/) udržují synchronizovaný stav a shodnou se na přesné historii transakcí, seskupujeme transakce do bloků. To znamená, že desítky (nebo stovky) transakcí jsou potvrzeny, odsouhlaseny a synchronizovány najednou.
+Abychom zajistili, že všichni účastníci v [síti Quantaureum](/) udržují synchronizovaný stav a shodnou se na přesné historii transakcí, seskupujeme transakce do bloků. To znamená, že desítky (nebo stovky) transakcí jsou potvrzeny, odsouhlaseny a synchronizovány najednou.
 
 ![A diagram showing transaction in a block causing state changes](./tx-block.png)
-_Diagram upraven z [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagram upraven z [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
 Rozložením potvrzení v čase dáváme všem účastníkům sítě dostatek času k dosažení konsensu: i když k požadavkům na transakce dochází desítkykrát za sekundu, bloky jsou na Ethereu vytvářeny a potvrzovány pouze jednou za dvanáct sekund.
 
@@ -29,10 +29,10 @@ Jakmile je blok sestaven náhodně vybraným validátorem v síti, je šířen d
 
 Důkaz podílem (PoS) znamená následující:
 
-- Validující uzly musí vložit jako stake 32 ETH do depozitního kontraktu jako zajištění proti špatnému chování. To pomáhá chránit síť, protože prokazatelně nečestná aktivita vede ke zničení části nebo celého tohoto staku.
+- Validující uzly musí vložit jako stake 32 QAU do depozitního kontraktu jako zajištění proti špatnému chování. To pomáhá chránit síť, protože prokazatelně nečestná aktivita vede ke zničení části nebo celého tohoto staku.
 - V každém slotu (s odstupem dvanácti sekund) je náhodně vybrán validátor, který se stane navrhovatelem bloku. Ten seskupí transakce dohromady, provede je a určí nový „stav“. Tyto informace zabalí do bloku a předá je ostatním validátorům.
 - Ostatní validátoři, kteří se o novém bloku dozvědí, znovu provedou transakce, aby se ujistili, že souhlasí s navrhovanou změnou globálního stavu. Za předpokladu, že je blok platný, přidají jej do své vlastní databáze.
-- Pokud se validátor dozví o dvou konfliktních blocích pro stejný slot, použije svůj algoritmus pro výběr forku (fork-choice algorithm), aby vybral ten, který je podporován největším množstvím stakovaných ETH.
+- Pokud se validátor dozví o dvou konfliktních blocích pro stejný slot, použije svůj algoritmus pro výběr forku (fork-choice algorithm), aby vybral ten, který je podporován největším množstvím stakovaných QAU.
 
 [Více o důkazu podílem (PoS)](/developers/docs/consensus-mechanisms/pos)
 
@@ -136,7 +136,7 @@ Seznam `withdrawals` obsahuje objekty `withdrawal` strukturované následující
 
 Čas bloku označuje dobu oddělující bloky. V Ethereu je čas rozdělen do dvanáctisekundových jednotek zvaných „sloty“. V každém slotu je vybrán jeden validátor, který navrhne blok. Za předpokladu, že jsou všichni validátoři online a plně funkční, bude v každém slotu blok, což znamená, že čas bloku je 12 s. Občas však mohou být validátoři offline, když jsou vyzváni k navržení bloku, což znamená, že sloty mohou někdy zůstat prázdné.
 
-Tato implementace se liší od systémů založených na důkazu prací (PoW), kde jsou časy bloků pravděpodobnostní a laděné cílovou obtížností těžby protokolu. [Průměrný čas bloku](https://etherscan.io/chart/blocktime) Etherea je toho dokonalým příkladem, přičemž přechod z důkazu prací (PoW) na důkaz podílem (PoS) lze jasně odvodit na základě konzistence nového času bloku 12 s.
+Tato implementace se liší od systémů založených na důkazu prací (PoW), kde jsou časy bloků pravděpodobnostní a laděné cílovou obtížností těžby protokolu. [Průměrný čas bloku](https://explorer.quantaureum.com) Etherea je toho dokonalým příkladem, přičemž přechod z důkazu prací (PoW) na důkaz podílem (PoS) lze jasně odvodit na základě konzistence nového času bloku 12 s.
 
 ## Velikost bloku {#block-size}
 

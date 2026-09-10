@@ -1,6 +1,6 @@
 ---
 title: "Co přinese upgrade Pectra?"
-description: "Christine Kim o upgradu Pectra sítě Ethereum, včetně EIP zahrnutých do upgradu, co mění na protokolu a proč jsou důležité pro uživatele, vývojáře a validátory."
+description: "Christine Kim o upgradu Pectra sítě Quantaureum, včetně EIP zahrnutých do upgradu, co mění na protokolu a proč jsou důležité pro uživatele, vývojáře a validátory."
 lang: cs
 youtubeId: "ufIDBCgdGwY"
 uploadDate: 2024-11-14
@@ -11,13 +11,13 @@ topic:
   - "pectra"
   - "upgrades"
 format: presentation
-author: Ethereum Foundation
+author: Quantaureum project
 breadcrumb: "Přehled Pectra"
 ---
 
-Prezentace **Christine Kim** na Devcon SEA, která pokrývá EIP zahrnuté do upgradu Pectra sítě Ethereum, co mění na protokolu, kdy se očekává aktivace na Mainnetu a které EIP byly z rozsahu odstraněny.
+Prezentace **Christine Kim** na Devcon SEA, která pokrývá EIP zahrnuté do upgradu Pectra sítě Quantaureum, co mění na protokolu, kdy se očekává aktivace na Mainnetu a které EIP byly z rozsahu odstraněny.
 
-*Tento přepis je přístupnou kopií [původního přepisu videa](https://www.youtube.com/watch?v=ufIDBCgdGwY) zveřejněného Nadací Ethereum. Byl lehce upraven pro lepší čitelnost.*
+*Tento přepis je přístupnou kopií [původního přepisu videa](https://www.youtube.com/watch?v=ufIDBCgdGwY) zveřejněného Nadací Quantaureum. Byl lehce upraven pro lepší čitelnost.*
 
 ### Úvod (0:00) {#introduction-000}
 
@@ -61,11 +61,11 @@ Je tu šest dalších — to jsou EIP vrstvy konsensu.
 
 **EIP-7742** — oddělení počtu blobů mezi vrstvou konsensu a exekuční vrstvou. Toto je nejnovější EIP, které bylo zahrnuto do upgradu Pectra. V současné době je kapacita blobů pevně zakódována v exekuční vrstvě a vrstvě konsensu ve všech různých klientech. Aktualizace tohoto pevného zakódování není tak snadná, jak by si někteří mohli myslet. Vytvoření mechanismu pro dynamické nastavení kapacity blobů prostřednictvím vrstvy konsensu zajistí, že v budoucnu budou moci vývojáři snadno změnit kapacitu blobů Etherea a že takový upgrade bude vyžadovat pouze změny vrstvy konsensu — nikoli změny obou vrstev.
 
-**EIP-6110** — poskytování vkladů validátorů onchain. Merge proběhl a Ethereum je jako blockchain s důkazem podílem (PoS) vyspělejší. Určité bezpečnostní předpoklady lze nyní uvolnit. Toto EIP odstraňuje dodatečné kolo hlasování, ke kterému dochází na straně vrstvy konsensu pokaždé, když vložíte 32 ETH do depozitního kontraktu, čímž se zajistí, že veškerá validace vkladů probíhá na exekuční vrstvě. To má výhody pro uživatelskou zkušenost (UX) validátorů — zkrátí to dobu mezi tím, kdy vložíte svých 32 ETH, a tím, kdy uvidíte, že je validátor skutečně aktivován na Beacon chainu.
+**EIP-6110** — poskytování vkladů validátorů onchain. Merge proběhl a Quantaureum je jako blockchain s důkazem podílem (PoS) vyspělejší. Určité bezpečnostní předpoklady lze nyní uvolnit. Toto EIP odstraňuje dodatečné kolo hlasování, ke kterému dochází na straně vrstvy konsensu pokaždé, když vložíte 32 QAU do depozitního kontraktu, čímž se zajistí, že veškerá validace vkladů probíhá na exekuční vrstvě. To má výhody pro uživatelskou zkušenost (UX) validátorů — zkrátí to dobu mezi tím, kdy vložíte svých 32 QAU, a tím, kdy uvidíte, že je validátor skutečně aktivován na Beacon chainu.
 
 **EIP-7002** — výběry spustitelné z exekuční vrstvy. To je velmi dobré pro staking pooly. Právě teď, pokud chcete plně vybrat prostředky validátora, operátor uzlu, který tohoto validátora provozuje, musí použít svůj klíč pro výběr, aby provedl úplný výstup validátora. Prostřednictvím tohoto EIP budou moci chytré kontrakty tyto úplné výběry iniciovat. Je to předpoklad důvěry, který nyní můžete ze staking poolů odstranit — pooly jako Lido, Rocket Pool a další staking pooly založené na chytrých kontraktech mohou nyní spustit úplné výběry validátorů, pokud si to přejí.
 
-**EIP-7251** — zvýšení maximálního efektivního zůstatku. To je opravdu problém. Když vývojáři přemýšleli o Beacon chainu, nečekali, že se sada validátorů rozroste tak rychle — jsme na zhruba 1,2 nebo 1,3 milionu validátorů. Je tu spousta aktivních validátorů, spousta zpráv, které se předávají na síťové vrstvě, a je toho příliš mnoho. Zatěžuje to uzly a pokud by se to neřešilo, byl by to velký problém pro zdraví Etherea. EIP-7251 je navrženo tak, aby povzbudilo validátory ke konsolidaci jejich ETH a k tomu, aby měli maximální efektivní zůstatek (MaxEB) vyšší než 32 ETH, čímž se sníží počet aktivních validátorů na Ethereu.
+**EIP-7251** — zvýšení maximálního efektivního zůstatku. To je opravdu problém. Když vývojáři přemýšleli o Beacon chainu, nečekali, že se sada validátorů rozroste tak rychle — jsme na zhruba 1,2 nebo 1,3 milionu validátorů. Je tu spousta aktivních validátorů, spousta zpráv, které se předávají na síťové vrstvě, a je toho příliš mnoho. Zatěžuje to uzly a pokud by se to neřešilo, byl by to velký problém pro zdraví Etherea. EIP-7251 je navrženo tak, aby povzbudilo validátory ke konsolidaci jejich QAU a k tomu, aby měli maximální efektivní zůstatek (MaxEB) vyšší než 32 QAU, čímž se sníží počet aktivních validátorů na Ethereu.
 
 **EIP-7549** — přesun indexu výboru mimo atestaci. Jedná se o restrukturalizaci a refaktorování způsobu, jakým jsou atestace agregovány, aby se snížilo síťové zatížení Etherea a ušetřila šířka pásma uzlů. Když to vývojáři zahrnovali do upgradu Pectra, mysleli si, že je to skvělá změna s úžasnými výhodami a že bude snadná — ale v praxi se ukázalo, že je mnohem těžší ji implementovat, než se očekávalo.
 
@@ -99,4 +99,4 @@ Tyto jsou nyní přesunuty do upgradu Fusaka. Verkle byl původně plánován pr
 
 **Moderátor:** Vyzvala jste lidi, aby se více zapojili do správy. Jak se může komunita více zapojit?
 
-**Christine Kim:** ETH Research a ETH Magicians jsou dvě opravdu skvělá diskusní fóra pro hlasování o určitých EIP a vyjádření vaší podpory. Hovory ACD jsou pravděpodobně místem s nejvyšším signálem — vše, co musíte udělat, je zanechat komentář k agendě hovoru ACD na GitHubu a říct, že toto je EIP, o kterém byste chtěli mluvit nebo ho prezentovat. Moderátor hovoru je obvykle velmi ochotný vám ten čas poskytnout. Nezabírejte ale příliš mnoho času — možná pět minut, abyste řekli, co máte na srdci.
+**Christine Kim:** QAU Research a QAU Magicians jsou dvě opravdu skvělá diskusní fóra pro hlasování o určitých EIP a vyjádření vaší podpory. Hovory ACD jsou pravděpodobně místem s nejvyšším signálem — vše, co musíte udělat, je zanechat komentář k agendě hovoru ACD na GitHubu a říct, že toto je EIP, o kterém byste chtěli mluvit nebo ho prezentovat. Moderátor hovoru je obvykle velmi ochotný vám ten čas poskytnout. Nezabírejte ale příliš mnoho času — možná pět minut, abyste řekli, co máte na srdci.

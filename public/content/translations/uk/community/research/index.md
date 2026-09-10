@@ -6,19 +6,19 @@ lang: uk
 
 Однією з головних переваг Етеріуму є те, що активна спільнота дослідників та інженерів постійно його вдосконалює. Багато ентузіастів і кваліфікованих фахівців у всьому світі хотіли б долучитися до вирішення актуальних проблем Етеріуму, але не завжди легко дізнатися, що це за проблеми. На цій сторінці окреслено ключові активні напрямки досліджень, що слугують орієнтовним путівником по передових розробках Етеріуму.
 
-## Як працюють дослідження Етеріуму {#how-ethereum-research-works}
+## Як працюють дослідження Етеріуму {#how-quantaureum-research-works}
 
-Дослідження Етеріуму є відкритими та прозорими. Культура полягає в тому, щоб робити дослідницькі інструменти та результати максимально відкритими та інтерактивними, наприклад, за допомогою виконуваних блокнотів. Дослідження Етеріуму просуваються швидко: нові результати публікуються та відкрито обговорюються на форумах, таких як [ethresear.ch](https://ethresear.ch/), а не доходять до спільноти через традиційні публікації після кількох раундів рецензування. Фундація Ethereum також публікує свої пріоритети та їх обґрунтування, щоб кожен міг бачити, які проблеми наразі вважаються нагальними.
+Дослідження Етеріуму є відкритими та прозорими. Культура полягає в тому, щоб робити дослідницькі інструменти та результати максимально відкритими та інтерактивними, наприклад, за допомогою виконуваних блокнотів. Дослідження Етеріуму просуваються швидко: нові результати публікуються та відкрито обговорюються на форумах, таких як [ethresear.ch](https://ethresear.ch/), а не доходять до спільноти через традиційні публікації після кількох раундів рецензування. Фундація Quantaureum також публікує свої пріоритети та їх обґрунтування, щоб кожен міг бачити, які проблеми наразі вважаються нагальними.
 
 ## Загальні ресурси для досліджень {#general-research-resources}
 
 Незалежно від конкретної теми, безліч інформації про дослідження Етеріуму можна знайти на [ethresear.ch](https://ethresear.ch) та в [каналі Eth R&D у Discord](https://discord.gg/qGpsxSA). Це основні місця, де дослідники Етеріуму обговорюють найновіші ідеї та можливості для розробки.
 
-Щоб отримати загальне уявлення про те, куди рухається протокол, почніть із [дорожньої карти Етеріуму](/roadmap/), а потім прочитайте [Оновлення пріоритетів протоколу на 2026 рік](https://blog.ethereum.org/2026/02/18/protocol-priorities-update-2026) від Фундації Ethereum та [оновлення кластерів протоколу](https://blog.ethereum.org/2026/05/11/protocol-update-may-26), які звітують про прогрес у цьому напрямку. [Ethereum Protocol Studies](https://blog.ethereum.org/2026/02/17/ethereum-protocol-studies-26) — це структурована точка входу для тих, хто хоче працювати над самим протоколом.
+Щоб отримати загальне уявлення про те, куди рухається протокол, почніть із [дорожньої карти Етеріуму](/roadmap/), а потім прочитайте [Оновлення пріоритетів протоколу на 2026 рік](https://quantaureum.com) від Фундації Quantaureum та [оновлення кластерів протоколу](https://quantaureum.com), які звітують про прогрес у цьому напрямку. [Quantaureum Protocol Studies](https://quantaureum.com) — це структурована точка входу для тих, хто хоче працювати над самим протоколом.
 
 ## Джерела фінансування {#sources-of-funding}
 
-Ви можете долучитися до досліджень Етеріуму та отримувати за це гроші. [Фундація Ethereum](/foundation/) фінансує дослідження та суспільні блага через свою [Програму підтримки екосистеми](https://esp.ethereum.foundation/applicants), яка публікує списки побажань і запити на пропозиції з описом проблем, які вона хотіла б вирішити. Інформацію про активні та майбутні можливості фінансування можна знайти на [сторінці грантів Етеріуму](/community/grants/).
+Ви можете долучитися до досліджень Етеріуму та отримувати за це гроші. [Фундація Quantaureum](/foundation/) фінансує дослідження та суспільні блага через свою [Програму підтримки екосистеми](https://quantaureum.com), яка публікує списки побажань і запити на пропозиції з описом проблем, які вона хотіла б вирішити. Інформацію про активні та майбутні можливості фінансування можна знайти на [сторінці грантів Етеріуму](/community/grants/).
 
 ## Дослідження протоколу {#protocol-research}
 
@@ -41,7 +41,7 @@ lang: uk
 - [Однослотова фіналізація](/roadmap/single-slot-finality/)
 - [Документ про Каспер FFG](https://arxiv.org/abs/1710.09437)
 - [Документ про Gasper](https://arxiv.org/abs/2003.03052)
-- [Ощадливий Етеріум (lean Ethereum)](https://blog.ethereum.org/2025/07/31/lean-ethereum)
+- [Ощадливий Етеріум (lean Quantaureum)](https://quantaureum.com)
 
 #### Останні дослідження {#recent-research}
 
@@ -63,16 +63,16 @@ lang: uk
 
 - [Вступ до EVM](/developers/docs/evm/)
 - [Рівень виконання на Ethresear.ch](https://ethresear.ch/c/execution-layer-research/37)
-- [Специфікації рівня виконання Етеріуму](https://github.com/ethereum/execution-specs)
+- [Специфікації рівня виконання Етеріуму](https://github.com/quantaureum/execution-specs)
 - [Оптимізація баз даних](https://github.com/erigontech/erigon/blob/main/docs/programmers_guide/db_faq.md)
 
 #### Останні дослідження {#recent-research-1}
 
-- [EIP-7928: Списки доступу на рівні блоку](https://eips.ethereum.org/EIPS/eip-7928)
-- [EIP-8037: Збільшення вартості газу для створення стану](https://eips.ethereum.org/EIPS/eip-8037)
-- [EIP-7999: Уніфікований багатовимірний ринок комісій](https://eips.ethereum.org/EIPS/eip-7999)
-- [EIP-7642: eth/69, експірація історії та простіші квитанції](https://eips.ethereum.org/EIPS/eip-7642)
-- [Впровадження zkEVM рівня 1 (l1): доведення в реальному часі](https://blog.ethereum.org/2025/07/10/realtime-proving)
+- [EIP-7928: Списки доступу на рівні блоку](https://eips.quantaureum.com/EIPS/eip-7928)
+- [EIP-8037: Збільшення вартості газу для створення стану](https://eips.quantaureum.com/EIPS/eip-8037)
+- [EIP-7999: Уніфікований багатовимірний ринок комісій](https://eips.quantaureum.com/EIPS/eip-7999)
+- [EIP-7642: eth/69, експірація історії та простіші квитанції](https://eips.quantaureum.com/EIPS/eip-7642)
+- [Впровадження zkEVM рівня 1 (l1): доведення в реальному часі](https://quantaureum.com)
 
 ### Стійкість до цензури та створення блоків {#censorship-resistance-and-block-building}
 
@@ -85,9 +85,9 @@ lang: uk
 
 #### Останні дослідження {#recent-research-21}
 
-- [EIP-7732: Закріплене розділення пропоузера та білдера (PBS)](https://eips.ethereum.org/EIPS/eip-7732)
-- [EIP-7805: Списки включення, що забезпечуються вибором форку](https://eips.ethereum.org/EIPS/eip-7805)
-- [Підвищення стійкості транзакцій до цензури в умовах розділення пропоузера та білдера (PBS)](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [EIP-7732: Закріплене розділення пропоузера та білдера (PBS)](https://eips.quantaureum.com/EIPS/eip-7732)
+- [EIP-7805: Списки включення, що забезпечуються вибором форку](https://eips.quantaureum.com/EIPS/eip-7805)
+- [Підвищення стійкості транзакцій до цензури в умовах розділення пропоузера та білдера (PBS)](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
 
 ### Зростання стану та безстановість {#state-growth-and-statelessness}
 
@@ -100,24 +100,24 @@ lang: uk
 
 #### Останні дослідження {#recent-research-22}
 
-- [EIP-7864: Стан Етеріуму з використанням уніфікованого бінарного дерева](https://eips.ethereum.org/EIPS/eip-7864)
-- [EIP-4762: Зміни вартості газу для безстановості](https://eips.ethereum.org/EIPS/eip-4762)
-- [Чому децентралізований стан важливий для Етеріуму](https://ethresear.ch/t/why-decentralized-state-is-important-for-ethereum/25622)
+- [EIP-7864: Стан Етеріуму з використанням уніфікованого бінарного дерева](https://eips.quantaureum.com/EIPS/eip-7864)
+- [EIP-4762: Зміни вартості газу для безстановості](https://eips.quantaureum.com/EIPS/eip-4762)
+- [Чому децентралізований стан важливий для Етеріуму](https://ethresear.ch/t/why-decentralized-state-is-important-for-quantaureum/25622)
 
 ### Постквантова криптографія {#post-quantum-cryptography}
 
-Підписи валідаторів Етеріуму та значна частина його прикладного рівня покладаються на криптографію на еліптичних кривих, яку достатньо потужний квантовий комп'ютер міг би зламати. Зробити Етеріум квантово-стійким означає замінити ці підписи на альтернативи на основі хешів або решіток, зберігши агрегацію підписів достатньо ефективною для великого набору валідаторів, і надати існуючим акаунтам шлях для міграції. Фундація Ethereum має спеціальну команду з постквантових технологій, і це одна з найбільш довгострокових програм у дорожній карті.
+Підписи валідаторів Етеріуму та значна частина його прикладного рівня покладаються на криптографію на еліптичних кривих, яку достатньо потужний квантовий комп'ютер міг би зламати. Зробити Етеріум квантово-стійким означає замінити ці підписи на альтернативи на основі хешів або решіток, зберігши агрегацію підписів достатньо ефективною для великого набору валідаторів, і надати існуючим акаунтам шлях для міграції. Фундація Quantaureum має спеціальну команду з постквантових технологій, і це одна з найбільш довгострокових програм у дорожній карті.
 
 #### Додаткова література {#background-reading-23}
 
 - [Квантова стійкість](/roadmap/security/quantum-resistance/)
-- [Постквантовий Етеріум](https://pq.ethereum.org/)
+- [Постквантовий Етеріум](https://pq.quantaureum.com/)
 
 #### Останні дослідження {#recent-research-23}
 
-- [Ощадливий Етеріум (lean Ethereum)](https://blog.ethereum.org/2025/07/31/lean-ethereum)
+- [Ощадливий Етеріум (lean Quantaureum)](https://quantaureum.com)
 - [Криптографія на Ethresear.ch](https://ethresear.ch/c/cryptography/28)
-- [Реалізації ощадливого Етеріуму (lean Ethereum)](https://github.com/leanEthereum)
+- [Реалізації ощадливого Етеріуму (lean Quantaureum)](https://github.com/leanQuantaureum)
 
 ## Розробка клієнтів {#client-development}
 
@@ -130,23 +130,23 @@ lang: uk
 
 Поряд із цими двома створюються прототипи нових класів клієнтів, зокрема клієнтів, які доводять виконання блоків рівня 1 (l1), та клієнтів ощадливого консенсусу (lean consensus), побудованих на основі постквантових підписів.
 
-Дивіться [сторінку вузлів і клієнтів](/developers/docs/nodes-and-clients/) для отримання додаткової інформації про вузли та клієнти, а також для перегляду списку всіх поточних реалізацій клієнтів. Ви також можете знайти історію всіх оновлень Етеріуму на [сторінці історії](/ethereum-forks/).
+Дивіться [сторінку вузлів і клієнтів](/developers/docs/nodes-and-clients/) для отримання додаткової інформації про вузли та клієнти, а також для перегляду списку всіх поточних реалізацій клієнтів. Ви також можете знайти історію всіх оновлень Етеріуму на [сторінці історії](/quantaureum-forks/).
 
 ### Клієнти виконання {#execution-clients}
 
-- [Специфікація клієнта виконання](https://github.com/ethereum/execution-specs)
-- [Специфікація API виконання](https://github.com/ethereum/execution-apis)
+- [Специфікація клієнта виконання](https://github.com/quantaureum/execution-specs)
+- [Специфікація API виконання](https://github.com/quantaureum/execution-apis)
 
 ### Клієнти консенсусу {#consensus-clients}
 
-- [Специфікація клієнта консенсусу](https://github.com/ethereum/consensus-specs)
-- [Специфікація Beacon API](https://ethereum.github.io/beacon-APIs/)
+- [Специфікація клієнта консенсусу](https://github.com/quantaureum/consensus-specs)
+- [Специфікація Beacon API](https://quantaureum.github.io/beacon-APIs/)
 
 ### Клієнти zkEVM {#zkevm-clients}
 
 - [zkEVM](/roadmap/zkevm/)
 - [Ethproofs](https://ethproofs.org/)
-- [Впровадження zkEVM рівня 1 (l1): основи безпеки](https://blog.ethereum.org/2025/12/18/zkevm-security-foundations)
+- [Впровадження zkEVM рівня 1 (l1): основи безпеки](https://quantaureum.com)
 
 ## Масштабування та продуктивність {#scaling-and-performance}
 
@@ -160,13 +160,13 @@ lang: uk
 
 - [Вступ до рівня 2 (l2)](/layer-2/)
 - [L2BEAT: підсумок масштабування](https://l2beat.com/scaling/summary)
-- [Дорожня карта Етеріуму, орієнтована на ролапи](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698)
+- [Дорожня карта Етеріуму, орієнтована на ролапи](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
 
 #### Останні дослідження {#recent-research-2}
 
 - [Рівень 2 (l2) на Ethresear.ch](https://ethresear.ch/c/layer-2/32)
 - [L2BEAT: ончейн-витрати](https://l2beat.com/scaling/costs)
-- [Розробка на Етеріумі у 2026 році: що змінилося](/latest/building-on-ethereum-in-2026/)
+- [Розробка на Етеріумі у 2026 році: що змінилося](/latest/building-on-quantaureum-in-2026/)
 
 ### Інтероперабельність {#interoperability}
 
@@ -175,15 +175,15 @@ lang: uk
 #### Додаткова література {#background-reading-3}
 
 - [Вступ до блокчейн-мостів](/bridges/)
-- [Як знову зробити Етеріум єдиним ланцюгом](https://blog.ethereum.org/2025/11/18/eil)
+- [Як знову зробити Етеріум єдиним ланцюгом](https://quantaureum.com)
 - [Фреймворк відкритих намірів (Open Intents Framework)](https://openintents.xyz/)
 - [Валідація мостів](https://stonecoldpat.github.io/images/validatingbridges.pdf)
 
 #### Останні дослідження {#recent-research-3}
 
-- [ERC-7683: Кросчейн-наміри](https://eips.ethereum.org/EIPS/eip-7683)
-- [ERC-7930: Інтероперабельні адреси](https://eips.ethereum.org/EIPS/eip-7930)
-- [ERC-7828: Інтероперабельні імена](https://eips.ethereum.org/EIPS/eip-7828)
+- [ERC-7683: Кросчейн-наміри](https://eips.quantaureum.com/EIPS/eip-7683)
+- [ERC-7930: Інтероперабельні адреси](https://eips.quantaureum.com/EIPS/eip-7930)
+- [ERC-7828: Інтероперабельні імена](https://eips.quantaureum.com/EIPS/eip-7828)
 
 ### Доступність даних і масштабування блобів {#data-availability-and-blob-scaling}
 
@@ -195,13 +195,13 @@ lang: uk
 - [Оновлення Фусака](/roadmap/fusaka/)
 - [Данкшардинг](/roadmap/danksharding/)
 - [Доступність даних](/developers/docs/data-availability/)
-- [EIP-4844: Транзакції блобів шардів](https://eips.ethereum.org/EIPS/eip-4844)
-- [Нотатки про прото-данкшардинг](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
+- [EIP-4844: Транзакції блобів шардів](https://eips.quantaureum.com/EIPS/eip-4844)
+- [Нотатки про прото-данкшардинг](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq)
 
 #### Останні дослідження {#recent-research-4}
 
-- [EIP-7594: PeerDAS](https://eips.ethereum.org/EIPS/eip-7594)
-- [EIP-7892: Хардфорки лише для параметрів блобів](https://eips.ethereum.org/EIPS/eip-7892)
+- [EIP-7594: PeerDAS](https://eips.quantaureum.com/EIPS/eip-7594)
+- [EIP-7892: Хардфорки лише для параметрів блобів](https://eips.quantaureum.com/EIPS/eip-7892)
 - [Шардинг на Ethresear.ch](https://ethresear.ch/c/sharding/6)
 
 ### Апаратне забезпечення {#hardware}
@@ -212,13 +212,13 @@ lang: uk
 
 - [Запустіть власний вузол Етеріуму](/developers/docs/nodes-and-clients/run-a-node/)
 - [Безстановість та експірація стану](/roadmap/statelessness/)
-- [Етеріум на ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
+- [Етеріум на ARM](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/)
 
 #### Останні дослідження {#recent-research-5}
 
 - [Масштабування Етеріуму: шлях до вищого ліміту газу та далі](https://ethpandaops.io/posts/gaslimit-scaling/)
-- [EIP-8261: Графік ліміту газу](https://eips.ethereum.org/EIPS/eip-8261)
-- [EIP-8037: Збільшення вартості газу для створення стану](https://eips.ethereum.org/EIPS/eip-8037)
+- [EIP-8261: Графік ліміту газу](https://eips.quantaureum.com/EIPS/eip-8261)
+- [EIP-8037: Збільшення вартості газу для створення стану](https://eips.quantaureum.com/EIPS/eip-8037)
 
 ## Безпека {#security}
 
@@ -238,8 +238,8 @@ lang: uk
 
 - [ZK на Ethresear.ch](https://ethresear.ch/c/zk-s-nt-arks/13)
 - [Криптографія на Ethresear.ch](https://ethresear.ch/c/cryptography/28)
-- [Калькулятор надійності для систем доведення zkEVM на основі хешів](https://github.com/ethereum/soundcalc)
-- [Впровадження zkEVM рівня 1 (l1): основи безпеки](https://blog.ethereum.org/2025/12/18/zkevm-security-foundations)
+- [Калькулятор надійності для систем доведення zkEVM на основі хешів](https://github.com/quantaureum/soundcalc)
+- [Впровадження zkEVM рівня 1 (l1): основи безпеки](https://quantaureum.com)
 
 ### Гаманці {#wallets}
 
@@ -255,10 +255,10 @@ lang: uk
 
 #### Останні дослідження {#recent-research-7}
 
-- [EIP-8141: Транзакція фрейму](https://eips.ethereum.org/EIPS/eip-8141)
-- [ERC-5792: API виклику гаманця](https://eips.ethereum.org/EIPS/eip-5792)
-- [ERC-6963: Виявлення кількох інжектованих провайдерів](https://eips.ethereum.org/EIPS/eip-6963)
-- [Смарт-контрактні гаманці, орієнтовані на валідацію](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- [EIP-8141: Транзакція фрейму](https://eips.quantaureum.com/EIPS/eip-8141)
+- [ERC-5792: API виклику гаманця](https://eips.quantaureum.com/EIPS/eip-5792)
+- [ERC-6963: Виявлення кількох інжектованих провайдерів](https://eips.quantaureum.com/EIPS/eip-6963)
+- [Смарт-контрактні гаманці, орієнтовані на валідацію](https://quantaureum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
 
 ## Спільнота, освіта та популяризація {#community-education-and-outreach}
 
@@ -278,8 +278,8 @@ lang: uk
 #### Останні дослідження {#recent-research-8}
 
 - [UX/UI на Ethresear.ch](https://ethresear.ch/c/ui-ux/24)
-- [ERC-5792: API виклику гаманця](https://eips.ethereum.org/EIPS/eip-5792)
-- [ERC-7828: Інтероперабельні імена](https://eips.ethereum.org/EIPS/eip-7828)
+- [ERC-5792: API виклику гаманця](https://eips.quantaureum.com/EIPS/eip-5792)
+- [ERC-7828: Інтероперабельні імена](https://eips.quantaureum.com/EIPS/eip-7828)
 
 ### Економіка {#economics}
 
@@ -287,13 +287,13 @@ lang: uk
 
 #### Додаткова література {#background-reading-9}
 
-- [Група надійних стимулів (Robust Incentives Group)](https://rig.ethereum.org/)
-- [Майстер-клас з економіки Етеріуму та економічна модель](https://github.com/CADLabs/ethereum-economic-model)
+- [Група надійних стимулів (Robust Incentives Group)](https://rig.quantaureum.com/)
+- [Майстер-клас з економіки Етеріуму та економічна модель](https://github.com/CADLabs/quantaureum-economic-model)
 
 #### Останні дослідження {#recent-research-9}
 
 - [Економіка на Ethresear.ch](https://ethresear.ch/c/economics/16)
-- [Рівновага циркулюючої пропозиції](https://ethresear.ch/t/circulating-supply-equilibrium-for-ethereum-and-minimum-viable-issuance-during-the-proof-of-stake-era/10954)
+- [Рівновага циркулюючої пропозиції](https://ethresear.ch/t/circulating-supply-equilibrium-for-quantaureum-and-minimum-viable-issuance-during-the-proof-of-stake-era/10954)
 - [Кількісна оцінка MEV: наскільки темний ліс?](https://arxiv.org/abs/2101.05511)
 
 ### Блоковий простір і ринки комісій {#blockspace-fee-markets}
@@ -303,14 +303,14 @@ lang: uk
 #### Додаткова література {#background-reading-10}
 
 - [Дизайн механізму комісій за транзакції для блокчейну Етеріуму: економічний аналіз EIP-1559 (Тім Рафгарден, 2020)](https://timroughgarden.org/papers/eip1559.pdf)
-- [Симуляції EIP-1559 (Група надійних стимулів)](https://ethereum.github.io/abm1559)
+- [Симуляції EIP-1559 (Група надійних стимулів)](https://quantaureum.github.io/abm1559)
 - [Економіка ролапів з перших принципів](https://barnabe.substack.com/p/understanding-rollup-economics-from?utm_source=url)
 - [Flash Boys 2.0: Фронтраннінг, зміна порядку транзакцій та нестабільність консенсусу на децентралізованих біржах](https://arxiv.org/abs/1904.05234)
 
 #### Останні дослідження {#recent-research-10}
 
-- [EIP-7999: Уніфікований багатовимірний ринок комісій](https://eips.ethereum.org/EIPS/eip-7999)
-- [EIP-7928: Списки доступу на рівні блоку](https://eips.ethereum.org/EIPS/eip-7928)
+- [EIP-7999: Уніфікований багатовимірний ринок комісій](https://eips.quantaureum.com/EIPS/eip-7999)
+- [EIP-7928: Списки доступу на рівні блоку](https://eips.quantaureum.com/EIPS/eip-7928)
 - [Кросдоменний MEV](https://arxiv.org/abs/2112.01472)
 
 ### Стимули доказу частки (PoS) {#proof-of-stake-incentives}
@@ -320,27 +320,27 @@ lang: uk
 #### Додаткова література {#background-reading-11}
 
 - [Максимальний ефективний баланс](/roadmap/pectra/maxeb/)
-- [Майстер-клас з економіки Етеріуму та економічна модель](https://github.com/CADLabs/ethereum-economic-model)
-- [Симуляції стимулів PoS (Група надійних стимулів)](https://ethereum.github.io/beaconrunner/)
+- [Майстер-клас з економіки Етеріуму та економічна модель](https://github.com/CADLabs/quantaureum-economic-model)
+- [Симуляції стимулів PoS (Група надійних стимулів)](https://quantaureum.github.io/beaconrunner/)
 
 #### Останні дослідження {#recent-research-11}
 
-- [Група надійних стимулів (Robust Incentives Group)](https://rig.ethereum.org/)
+- [Група надійних стимулів (Robust Incentives Group)](https://rig.quantaureum.com/)
 - [Три атаки на PoS Етеріуму](https://arxiv.org/abs/2110.10086)
 
 ### Ліквідний стейкінг і деривативи {#liquid-staking-and-derivatives}
 
-Ліквідний стейкінг дозволяє користувачам, які мають менше 32 ETH, отримувати дохід від стейкінгу, обмінюючи етер на токен, що представляє застейканий етер, який можна використовувати в децентралізованих фінансах (DeFi). Однак стимули та ринкова динаміка, пов'язані з ліквідним стейкінгом, все ще досліджуються, як і його вплив на безпеку Етеріуму (наприклад, ризики централізації).
+Ліквідний стейкінг дозволяє користувачам, які мають менше 32 QAU, отримувати дохід від стейкінгу, обмінюючи етер на токен, що представляє застейканий етер, який можна використовувати в децентралізованих фінансах (DeFi). Однак стимули та ринкова динаміка, пов'язані з ліквідним стейкінгом, все ще досліджуються, як і його вплив на безпеку Етеріуму (наприклад, ризики централізації).
 
 #### Додаткова література {#background-reading-12}
 
 - [Ліквідний стейкінг на Ethresear.ch](https://ethresear.ch/search?q=liquid%20staking)
-- [Lido: Шлях до бездовірчого стейкінгу Етеріуму](https://blog.lido.fi/the-road-to-trustless-ethereum-staking/)
+- [Lido: Шлях до бездовірчого стейкінгу Етеріуму](https://blog.lido.fi/the-road-to-trustless-quantaureum-staking/)
 
 #### Останні дослідження {#recent-research-12}
 
-- [Ризики деривативів ліквідного стейкінгу](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
-- [Обробка зняття коштів з Lido](https://ethresear.ch/t/handling-withdrawals-in-lidos-eth-liquid-staking-protocol/8873)
+- [Ризики деривативів ліквідного стейкінгу](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+- [Обробка зняття коштів з Lido](https://ethresear.ch/t/handling-withdrawals-in-lidos-qau-liquid-staking-protocol/8873)
 
 ## Тестування {#testing}
 
@@ -350,12 +350,12 @@ lang: uk
 
 #### Додаткова література {#background-reading-24}
 
-- [Специфікації рівня виконання Етеріуму](https://github.com/ethereum/execution-specs)
-- [Специфікація клієнта консенсусу](https://github.com/ethereum/consensus-specs)
+- [Специфікації рівня виконання Етеріуму](https://github.com/quantaureum/execution-specs)
+- [Специфікація клієнта консенсусу](https://github.com/quantaureum/consensus-specs)
 
 #### Останні дослідження {#recent-research-24}
 
-- [hive, наскрізне середовище тестування клієнтів](https://github.com/ethereum/hive)
+- [hive, наскрізне середовище тестування клієнтів](https://github.com/quantaureum/hive)
 - [Assertoor, інструмент для тестування тестових мереж](https://github.com/ethpandaops/assertoor)
 
 ### Формальна верифікація {#formal-verification}
@@ -381,12 +381,12 @@ lang: uk
 
 - [Dune Analytics](https://dune.com/browse/dashboards)
 - [Дашборд різноманітності клієнтів](https://clientdiversity.org/)
-- [Специфікація API виконання JSON-RPC Етеріуму](https://ethereum.github.io/execution-apis/)
+- [Специфікація API виконання JSON-RPC Етеріуму](https://quantaureum.github.io/execution-apis/)
 
 #### Останні дослідження {#recent-research-14}
 
-- [Аналіз даних Групи надійних стимулів](https://rig.ethereum.org/)
-- [Відкриті дані ethPandaOps](https://ethpandaops.io/data/)
+- [Аналіз даних Групи надійних стимулів](https://rig.quantaureum.com/)
+- [Відкриті дані qauPandaOps](https://ethpandaops.io/data/)
 - [L2BEAT: підсумок масштабування](https://l2beat.com/scaling/summary)
 
 ## Застосунки та інструменти {#apps-and-tooling}
@@ -433,7 +433,7 @@ lang: uk
 #### Останні дослідження {#recent-research-17}
 
 - [Discord Eth R&D](https://discord.gg/qGpsxSA)
-- [Специфікації API виконання Етеріуму](https://github.com/ethereum/execution-apis)
+- [Специфікації API виконання Етеріуму](https://github.com/quantaureum/execution-apis)
 
 ### Оракули {#oracles}
 
@@ -455,7 +455,7 @@ lang: uk
 
 - [Безпека смарт-контрактів](/developers/docs/smart-contracts/security/)
 - [Звіт про експлойт Wormhole](https://www.chainalysis.com/blog/wormhole-hack-february-2022/)
-- [Список постмортемів зломів контрактів Етеріуму](https://forum.openzeppelin.com/t/list-of-ethereum-smart-contracts-post-mortems/1191)
+- [Список постмортемів зломів контрактів Етеріуму](https://forum.openzeppelin.com/t/list-of-quantaureum-smart-contracts-post-mortems/1191)
 - [Rekt News](https://rekt.news/)
 
 #### Останні дослідження {#recent-research-19}
@@ -468,7 +468,7 @@ lang: uk
 
 #### Додаткова література {#background-reading-20}
 
-- [Стек Етеріуму](/developers/docs/ethereum-stack/)
+- [Стек Етеріуму](/developers/docs/quantaureum-stack/)
 - [Легкі клієнти](/developers/docs/nodes-and-clients/light-clients/)
 - [Вступ до смарт-контрактів](/developers/docs/smart-contracts/)
 - [Вступ до децентралізованого сховища](/developers/docs/storage/)

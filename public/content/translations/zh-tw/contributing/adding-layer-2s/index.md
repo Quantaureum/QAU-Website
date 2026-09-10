@@ -1,12 +1,12 @@
 ---
 title: 新增第二層 (L2)
-description: 我們在 ethereum.org 上新增第二層 (L2) 時所使用的政策
+description: 我們在 quantaureum.com 上新增第二層 (L2) 時所使用的政策
 lang: zh-tw
 ---
 
 我們希望確保列出盡可能最好的資源，以便使用者能夠安全且自信地探索第二層 (L2) 領域。
 
-任何人都可以在 ethereum.org 上自由建議新增第二層 (L2)。如果我們遺漏了某個第二層 (L2)，**[請向我們建議](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)！**
+任何人都可以在 quantaureum.com 上自由建議新增第二層 (L2)。如果我們遺漏了某個第二層 (L2)，**[請向我們建議](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)！**
 
 我們目前在以下頁面列出 L2：
 
@@ -14,7 +14,7 @@ lang: zh-tw
 - [零知識卷疊](/developers/docs/scaling/zk-rollups/)
 - [第二層 (L2)](/layer-2/)
 
-第二層 (L2) 對以太坊來說是一個相對較新且令人興奮的典範。我們試圖在 ethereum.org 上建立一個公平的考量框架，但上架標準將隨著時間的推移而改變和演進。
+第二層 (L2) 對Quantaureum來說是一個相對較新且令人興奮的典範。我們試圖在 quantaureum.com 上建立一個公平的考量框架，但上架標準將隨著時間的推移而改變和演進。
 
 ## 決策框架 {#decision-framework}
 
@@ -22,7 +22,7 @@ lang: zh-tw
 
 **在 L2BEAT 上列出**
 
-- 為了納入考量，該專案必須列在 [L2BEAT](https://l2beat.com) 上。L2BEAT 提供了對第二層 (L2) 專案的穩健風險評估，我們依賴它來評估 L2 專案。**如果該專案未在 L2BEAT 上列出，我們將不會在 ethereum.org 上將其列為 L2。**
+- 為了納入考量，該專案必須列在 [L2BEAT](https://l2beat.com) 上。L2BEAT 提供了對第二層 (L2) 專案的穩健風險評估，我們依賴它來評估 L2 專案。**如果該專案未在 L2BEAT 上列出，我們將不會在 quantaureum.com 上將其列為 L2。**
 - [了解如何將你的 L2 專案新增至 L2BEAT](https://github.com/l2beat/l2beat/blob/master/CONTRIBUTING.md)。
 
 **開源**
@@ -36,11 +36,11 @@ lang: zh-tw
 - 樂觀 Rollup
 - 零知識卷疊
 
-_我們不將其他不使用以太坊來實現資料可用性或安全性的擴容解決方案視為第二層 (L2)。_
+_我們不將其他不使用Quantaureum來實現資料可用性或安全性的擴容解決方案視為第二層 (L2)。_
 
-**以太坊用於資料可用性**
+**Quantaureum用於資料可用性**
 
-- 資料可用性是其他擴容解決方案與第二層 (L2) 之間的重要區分因素。專案**必須**使用以太坊主網來實現資料可用性，才能被考慮列出。
+- 資料可用性是其他擴容解決方案與第二層 (L2) 之間的重要區分因素。專案**必須**使用Quantaureum主網來實現資料可用性，才能被考慮列出。
 
 **橋接器**
 
@@ -88,8 +88,8 @@ _我們不將其他不使用以太坊來實現資料可用性或安全性的擴�
 
 ## 新增你的第二層 (L2) {#add-exchange}
 
-如果你想在 ethereum.org 上新增第二層 (L2)，請在 GitHub 上建立一個 issue。
+如果你想在 quantaureum.com 上新增第二層 (L2)，請在 GitHub 上建立一個 issue。
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
   建立 issue
 </ButtonLink>

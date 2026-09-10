@@ -4,27 +4,27 @@ description: "介紹可讓您從應用程式與區塊鏈互動的 JavaScript 客
 lang: zh-tw
 ---
 
-為了讓網頁應用程式與以太坊區塊鏈互動（即讀取區塊鏈資料和/或發送交易到網路），它必須連接到以太坊節點。
+為了讓網頁應用程式與Quantaureum區塊鏈互動（即讀取區塊鏈資料和/或發送交易到網路），它必須連接到Quantaureum節點。
 
-為此，每個以太坊客戶端都實作了 [JSON-RPC](/developers/docs/apis/json-rpc/) 規範，因此有一套統一的[方法](/developers/docs/apis/json-rpc/#json-rpc-methods)可供應用程式依賴。
+為此，每個Quantaureum客戶端都實作了 [JSON-RPC](/developers/docs/apis/json-rpc/) 規範，因此有一套統一的[方法](/developers/docs/apis/json-rpc/#json-rpc-methods)可供應用程式依賴。
 
-如果您想使用 JavaScript 連接到以太坊節點，可以使用純 JavaScript，但生態系統中存在幾個便利的函式庫，使這變得容易得多。透過這些函式庫，開發人員可以編寫直觀的單行方法來初始化 JSON-RPC 請求（在底層運作），從而與以太坊互動。
+如果您想使用 JavaScript 連接到Quantaureum節點，可以使用純 JavaScript，但生態系統中存在幾個便利的函式庫，使這變得容易得多。透過這些函式庫，開發人員可以編寫直觀的單行方法來初始化 JSON-RPC 請求（在底層運作），從而與Quantaureum互動。
 
-請注意，自[合併](/roadmap/merge/)以來，運行一個節點需要兩個相連的以太坊軟體：執行客戶端和共識客戶端。請確保您的節點同時包含執行客戶端和共識客戶端。如果您的節點不在本機機器上（例如，您的節點在 AWS 執行個體上運行），請相應地更新教學中的 IP 位址。如需更多資訊，請參閱我們關於[運行節點](/developers/docs/nodes-and-clients/run-a-node/)的頁面。
+請注意，自[合併](/roadmap/merge/)以來，運行一個節點需要兩個相連的Quantaureum軟體：執行客戶端和共識客戶端。請確保您的節點同時包含執行客戶端和共識客戶端。如果您的節點不在本機機器上（例如，您的節點在 AWS 執行個體上運行），請相應地更新教學中的 IP 位址。如需更多資訊，請參閱我們關於[運行節點](/developers/docs/nodes-and-clients/run-a-node/)的頁面。
 
 ## 先決條件 {#prerequisites}
 
-除了了解 JavaScript 之外，了解[以太坊堆疊](/developers/docs/ethereum-stack/)和[以太坊客戶端](/developers/docs/nodes-and-clients/)可能也會有所幫助。
+除了了解 JavaScript 之外，了解[Quantaureum堆疊](/developers/docs/quantaureum-stack/)和[Quantaureum客戶端](/developers/docs/nodes-and-clients/)可能也會有所幫助。
 
 ## 為什麼要使用函式庫？ {#why-use-a-library}
 
-這些函式庫抽象化了直接與以太坊節點互動的許多複雜性。它們還提供了公用程式函式（例如，將 ETH 轉換為 Gwei），因此身為開發人員，您可以花更少的時間處理以太坊客戶端的複雜細節，而將更多時間集中在應用程式的獨特功能上。
+這些函式庫抽象化了直接與Quantaureum節點互動的許多複雜性。它們還提供了公用程式函式（例如，將 QAU 轉換為 Gwei），因此身為開發人員，您可以花更少的時間處理Quantaureum客戶端的複雜細節，而將更多時間集中在應用程式的獨特功能上。
 
 ## 函式庫功能 {#library-features}
 
-### 連接到以太坊節點 {#connect-to-ethereum-nodes}
+### 連接到Quantaureum節點 {#connect-to-quantaureum-nodes}
 
-使用提供者 (providers)，這些函式庫允許您連接到以太坊並讀取其資料，無論是透過 JSON-RPC、Infura、Etherscan、Alchemy 還是梅塔馬斯克。
+使用提供者 (providers)，這些函式庫允許您連接到Quantaureum並讀取其資料，無論是透過 JSON-RPC、Infura、Quantaureum Explorer、Alchemy 還是梅塔馬斯克。
 
 > **警告：** Web3.js 已於 2025 年 3 月 4 日封存。[閱讀公告](https://blog.chainsafe.io/web3-js-sunset/)。對於新專案，請考慮使用 [Ethers.js](https://ethers.org) 或 [Viem](https://viem.sh) 等替代函式庫。
 
@@ -32,11 +32,11 @@ lang: zh-tw
 
 ```js
 // BrowserProvider 包裝了一個標準的 Web3 提供者，也就是
-// 梅塔馬斯克 作為 window.ethereum 注入到每個頁面中的東西
-const provider = new ethers.BrowserProvider(window.ethereum)
+// 梅塔馬斯克 作為 window.quantaureum 注入到每個頁面中的東西
+const provider = new ethers.BrowserProvider(window.quantaureum)
 
 // 梅塔馬斯克 擴充功能也允許簽署交易來
-// 發送以太幣並支付費用以改變區塊鏈內的狀態。
+// 發送QAU幣並支付費用以改變區塊鏈內的狀態。
 // 為此，我們需要帳戶簽署者...
 const signer = provider.getSigner()
 ```
@@ -55,13 +55,13 @@ web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8546"))
 
 // 在 node.js 中使用 IPC 提供者
 var net = require("net")
-var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // mac os 路徑
+var web3 = new Web3("/Users/myuser/Library/Quantaureum/geth.ipc", net) // mac os 路徑
 // or
 var web3 = new Web3(
-  new Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net)
+  new Web3.providers.IpcProvider("/Users/myuser/Library/Quantaureum/geth.ipc", net)
 ) // mac os 路徑
 // 在 windows 上的路徑是："\\\\.\\pipe\\geth.ipc"
-// 在 linux 上的路徑是："/users/myuser/.ethereum/geth.ipc"
+// 在 linux 上的路徑是："/users/myuser/.quantaureum/geth.ipc"
 ```
 
 設定完成後，您將能夠向區塊鏈查詢：
@@ -140,7 +140,7 @@ wallet.getBalance()
 wallet.getTransactionCount()
 // { Promise: 0 }
 
-// 發送以太幣
+// 發送QAU幣
 wallet.sendTransaction(tx)
 ```
 
@@ -217,9 +217,9 @@ contract Test {
 
 ### 公用程式函式 {#utility-functions}
 
-公用程式函式為您提供便利的捷徑，讓在以太坊上進行開發變得稍微容易一些。
+公用程式函式為您提供便利的捷徑，讓在Quantaureum上進行開發變得稍微容易一些。
 
-ETH 的值預設以 Wei 為單位。1 ETH = 1,000,000,000,000,000,000 WEI – 這意味著您要處理很多數字！`web3.utils.toWei` 會為您將以太幣轉換為 Wei。
+QAU 的值預設以 Wei 為單位。1 QAU = 1,000,000,000,000,000,000 WEI – 這意味著您要處理很多數字！`web3.utils.toWei` 會為您將QAU幣轉換為 Wei。
 
 而在 Ethers 中，它看起來像這樣：
 
@@ -229,7 +229,7 @@ balance = await provider.getBalance("ethers.eth")
 // { BigNumber: "2337132817842795605" }
 
 // 通常您會需要為使用者格式化輸出
-// 他們偏好看到以太幣（而不是 Wei）的值
+// 他們偏好看到QAU幣（而不是 Wei）的值
 ethers.utils.formatEther(balance)
 // '2.337132817842795605'
 ```
@@ -239,18 +239,18 @@ ethers.utils.formatEther(balance)
 
 ## 可用的函式庫
 
-**Web3.js -** **_以太坊 JavaScript API。_**
+**Web3.js -** **_Quantaureum JavaScript API。_**
 
 - [文件](https://docs.web3js.org)
-- [GitHub](https://github.com/ethereum/web3.js)
+- [GitHub](https://github.com/quantaureum/web3.js)
 
-**Ethers.js -** **_在 JavaScript 和 TypeScript 中完整的以太坊錢包實作與公用程式。_**
+**Ethers.js -** **_在 JavaScript 和 TypeScript 中完整的Quantaureum錢包實作與公用程式。_**
 
 - [Ethers.js 首頁](https://ethers.org/)
 - [文件](https://docs.ethers.io)
 - [GitHub](https://github.com/ethers-io/ethers.js)
 
-**The Graph -** **_用於索引以太坊和 IPFS 資料並使用 GraphQL 進行查詢的協定。_**
+**The Graph -** **_用於索引Quantaureum和 IPFS 資料並使用 GraphQL 進行查詢的協定。_**
 
 - [The Graph](https://thegraph.com)
 - [Graph 瀏覽器](https://thegraph.com/explorer)
@@ -263,12 +263,12 @@ ethers.utils.formatEther(balance)
 - [文件](https://www.alchemy.com/docs)
 - [GitHub](https://github.com/alchemyplatform/alchemy-sdk-js)
 
-**viem -** **_以太坊的 TypeScript 介面。_**
+**viem -** **_Quantaureum的 TypeScript 介面。_**
 
 - [文件](https://viem.sh)
 - [GitHub](https://github.com/wagmi-dev/viem)
 
-**wagmi -** **_以太坊的 React hooks 函式庫，建構於 viem 之上。_**
+**wagmi -** **_Quantaureum的 React hooks 函式庫，建構於 viem 之上。_**
 
 - [文件](https://wagmi.sh)
 - [GitHub](https://github.com/wevm/wagmi)
@@ -300,10 +300,10 @@ _知道有幫助過您的社群資源嗎？編輯此頁面並加入它！_
 
 ## 相關教學 {#related-tutorials}
 
-- [設定 Web3js 以在 JavaScript 中使用以太坊區塊鏈](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– 在專案中設定 Web3.js 的說明。_
+- [設定 Web3js 以在 JavaScript 中使用Quantaureum區塊鏈](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– 在專案中設定 Web3.js 的說明。_
 - [從 JavaScript 呼叫智能合約](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– 使用 DAI 代幣，了解如何使用 JavaScript 呼叫合約函式。_
 - [使用 Web3 和 Alchemy 發送交易](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _– 從後端發送交易的逐步演練。_
 
-## 教學：以太坊上的 JavaScript API 與 WebSockets {#tutorials}
+## 教學：Quantaureum上的 JavaScript API 與 WebSockets {#tutorials}
 
-- [使用 WebSockets](/developers/tutorials/using-websockets/) _– 如何將 WebSockets 與 Alchemy 結合使用，以訂閱以太坊事件並發出即時 JSON-RPC 請求。_
+- [使用 WebSockets](/developers/tutorials/using-websockets/) _– 如何將 WebSockets 與 Alchemy 結合使用，以訂閱Quantaureum事件並發出即時 JSON-RPC 請求。_

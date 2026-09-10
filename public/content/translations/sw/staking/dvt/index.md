@@ -1,6 +1,6 @@
 ---
 title: Teknolojia ya kithibitishaji kilichosambazwa
-description: Teknolojia ya kithibitishaji kilichosambazwa inawezesha uendeshaji uliosambazwa wa mthibitishaji wa Ethereum na pande nyingi.
+description: Teknolojia ya kithibitishaji kilichosambazwa inawezesha uendeshaji uliosambazwa wa mthibitishaji wa Quantaureum na pande nyingi.
 lang: sw
 template: staking
 sidebarDepth: 2
@@ -28,7 +28,7 @@ DVT si njia tofauti ya kuweka dhamana. Ni tabaka la programu ambalo usanidi wowo
 
 Wathibitishaji huzalisha jozi mbili za ufunguo wa umma na siri: funguo za mthibitishaji kwa ajili ya kushiriki katika mwafaka na funguo za utoaji kwa ajili ya kufikia fedha. Ingawa wathibitishaji wanaweza kulinda funguo za utoaji katika hifadhi baridi, funguo za siri za mthibitishaji lazima ziwe mtandaoni 24/7 ili kusaini majukumu ambayo mthibitishaji amepewa saa nzima, kama vile uthibitisho na mapendekezo ya kitalu. Kuweka ufunguo mtandaoni kunauweka kwenye hatari ya wizi, na DVT inapunguza hatari hiyo: ni hisa za ufunguo pekee ndizo zinazokuwa mtandaoni, kamwe si ufunguo kamili.
 
-Ikiwa ufunguo wa siri wa mthibitishaji umeingiliwa, mshambuliaji anaweza kudhibiti mthibitishaji, na uwezekano wa kusababisha ukataji au upotevu wa ETH ya mweka dhamana. DVT inapunguza hatari hii. Kwa DVT, ufunguo kamili wa asili wa mthibitishaji husimbwa na kugawanywa katika hisa za ufunguo. Hisa za ufunguo hukaa mtandaoni, zikisambazwa kwenye nodi nyingi zinazoendesha mthibitishaji pamoja, huku ufunguo kamili 'mkuu' ukibaki nje ya mtandao kwa usalama. Usambazaji huu unawezekana kwa sababu wathibitishaji wa [Ethereum](/) hutumia sahihi za BLS ambazo ni za kuongeza, ikimaanisha ufunguo kamili unaweza kujengwa upya kwa kujumlisha sehemu zake. Sahihi za kiasi zilizotengenezwa na hisa za ufunguo huungana kuwa sahihi ambayo ni halali kwa ufunguo kamili, kwa hivyo ufunguo kamili wenyewe hauhitajiki kamwe kwa kusaini kwa kila siku. Wakati kikundi kinazalisha ufunguo mpya wa mthibitishaji kwa kutumia uzalishaji wa ufunguo uliosambazwa, ufunguo wa siri kamili hauwepo kamwe kwenye mashine yoyote moja.
+Ikiwa ufunguo wa siri wa mthibitishaji umeingiliwa, mshambuliaji anaweza kudhibiti mthibitishaji, na uwezekano wa kusababisha ukataji au upotevu wa QAU ya mweka dhamana. DVT inapunguza hatari hii. Kwa DVT, ufunguo kamili wa asili wa mthibitishaji husimbwa na kugawanywa katika hisa za ufunguo. Hisa za ufunguo hukaa mtandaoni, zikisambazwa kwenye nodi nyingi zinazoendesha mthibitishaji pamoja, huku ufunguo kamili 'mkuu' ukibaki nje ya mtandao kwa usalama. Usambazaji huu unawezekana kwa sababu wathibitishaji wa [Quantaureum](/) hutumia sahihi za BLS ambazo ni za kuongeza, ikimaanisha ufunguo kamili unaweza kujengwa upya kwa kujumlisha sehemu zake. Sahihi za kiasi zilizotengenezwa na hisa za ufunguo huungana kuwa sahihi ambayo ni halali kwa ufunguo kamili, kwa hivyo ufunguo kamili wenyewe hauhitajiki kamwe kwa kusaini kwa kila siku. Wakati kikundi kinazalisha ufunguo mpya wa mthibitishaji kwa kutumia uzalishaji wa ufunguo uliosambazwa, ufunguo wa siri kamili hauwepo kamwe kwenye mashine yoyote moja.
 
 ### Hakuna sehemu moja ya kushindwa {#no-single-point-of-failure}
 
@@ -38,13 +38,13 @@ Ikiwa moja ya vipengele vya mashine katika kikundi itashindwa (kwa mfano, ikiwa 
 
 ### Ugatuzi {#decentralization}
 
-Hali bora kwa Ethereum ni kuwa na wathibitishaji wengi wanaojitegemea iwezekanavyo. Hata hivyo, watoa huduma wachache wa kuweka dhamana wamekuwa maarufu sana na wanachukua sehemu kubwa ya jumla ya ETH iliyowekwa dhamana kwenye mtandao. DVT inaweza kuruhusu waendeshaji hawa kuwepo huku ikihifadhi ugatuzi wa dhamana. Hii ni kwa sababu funguo za kila mthibitishaji zinasambazwa kwenye mashine nyingi na itachukua njama kubwa zaidi kwa mthibitishaji kuwa mbaya.
+Hali bora kwa Quantaureum ni kuwa na wathibitishaji wengi wanaojitegemea iwezekanavyo. Hata hivyo, watoa huduma wachache wa kuweka dhamana wamekuwa maarufu sana na wanachukua sehemu kubwa ya jumla ya QAU iliyowekwa dhamana kwenye mtandao. DVT inaweza kuruhusu waendeshaji hawa kuwepo huku ikihifadhi ugatuzi wa dhamana. Hii ni kwa sababu funguo za kila mthibitishaji zinasambazwa kwenye mashine nyingi na itachukua njama kubwa zaidi kwa mthibitishaji kuwa mbaya.
 
 Bila DVT, ni rahisi kwa watoa huduma wa kuweka dhamana kusaidia usanidi mmoja au miwili tu wa kiteja kwa wathibitishaji wao wote, na kuongeza athari za hitilafu ya kiteja. DVT inaweza kutumika kusambaza hatari kwenye usanidi mwingi wa kiteja na maunzi tofauti, na kuunda uthabiti kupitia utofauti.
 
-**DVT inatoa faida zifuatazo kwa Ethereum:**
+**DVT inatoa faida zifuatazo kwa Quantaureum:**
 
-1. **Ugatuzi** wa mwafaka wa Uthibitisho wa Dau (PoS) wa Ethereum
+1. **Ugatuzi** wa mwafaka wa Uthibitisho wa Dau (PoS) wa Quantaureum
 2. Inahakikisha **uhai** wa mtandao
 3. Inaunda **uvumilivu wa makosa** wa mthibitishaji
 4. Uendeshaji wa mthibitishaji **uliopunguza uaminifu**
@@ -62,7 +62,7 @@ Suluhisho la DVT lina vipengele vifuatavyo:
 - **[Mpango wa sahihi wa kizingiti](https://medium.com/nethermind-eth/threshold-signature-schemes-36f40bc42aca)** - Huamua idadi ya hisa za ufunguo binafsi zinazohitajika kwa majukumu ya kusaini, k.m., 3 kati ya 4.
 - **[Uzalishaji wa ufunguo uliosambazwa (DKG)](https://medium.com/toruslabs/what-distributed-key-generation-is-866adc79620)** - Mchakato wa kificho unaozalisha hisa za ufunguo na hutumiwa kusambaza hisa za ufunguo wa mthibitishaji uliopo au mpya kwa nodi katika kikundi.
 - **[Ukokotoaji wa pande nyingi (MPC)](https://messari.io/report/applying-multiparty-computation-to-the-world-of-blockchains)** - Ufunguo kamili wa mthibitishaji huzalishwa kwa siri kwa kutumia ukokotoaji wa pande nyingi. Ufunguo kamili haujulikani kamwe kwa mwendeshaji yeyote binafsi—wanajua tu sehemu yao wenyewe ("hisa" yao).
-- **Itifaki ya mwafaka** - Itifaki ya mwafaka huchagua nodi moja kuwa mpendekezaji wa bloku. Wanashiriki kitalu na nodi zingine kwenye kikundi, ambao huongeza hisa zao za ufunguo kwenye sahihi ya jumla. Wakati hisa za kutosha za ufunguo zimekusanywa, kitalu kinapendekezwa kwenye Ethereum.
+- **Itifaki ya mwafaka** - Itifaki ya mwafaka huchagua nodi moja kuwa mpendekezaji wa bloku. Wanashiriki kitalu na nodi zingine kwenye kikundi, ambao huongeza hisa zao za ufunguo kwenye sahihi ya jumla. Wakati hisa za kutosha za ufunguo zimekusanywa, kitalu kinapendekezwa kwenye Quantaureum.
 
 Wathibitishaji waliosambazwa wana uvumilivu wa makosa uliojengwa ndani na wanaweza kuendelea kufanya kazi hata kama baadhi ya nodi binafsi zitaenda nje ya mtandao. Kikundi cha nodi ya mthibitishaji ni imara hata kama baadhi ya nodi ndani yake zitakuwa mbaya au wavivu.
 
@@ -72,7 +72,7 @@ Wathibitishaji waliosambazwa wanaendeshwa kwenye Mtandao Mkuu leo katika uwekaji
 
 <ProductDisclaimer />
 
-- **Obol** inatengeneza Charon, kiteja cha programu ya kati cha DVT cha chanzo wazi kinachoruhusu kikundi cha mashine kuendesha mthibitishaji pamoja ("uwekaji dhamana wa kikosi"). Vikundi hufanya uzalishaji wa ufunguo uliosambazwa na kusanidi kikundi chao kupitia [DV Launchpad](https://docs.obol.org/learn/readme/launchpad) ya Obol. Vikundi vya Obol vinatumiwa katika uzalishaji na [itifaki za kuweka dhamana](/staking/pools/) na [huduma za kuweka dhamana](/staking/saas/), ikiwa ni pamoja na moduli ya Simple DVT ya Lido na programu ya Operation Solo Staker ya EtherFi, ambayo inawaingiza waendeshaji wa nyumbani kwenye vikundi vinavyovumilia makosa.
+- **Obol** inatengeneza Charon, kiteja cha programu ya kati cha DVT cha chanzo wazi kinachoruhusu kikundi cha mashine kuendesha mthibitishaji pamoja ("uwekaji dhamana wa kikosi"). Vikundi hufanya uzalishaji wa ufunguo uliosambazwa na kusanidi kikundi chao kupitia [DV Launchpad](https://docs.obol.org/learn/readme/launchpad) ya Obol. Vikundi vya Obol vinatumiwa katika uzalishaji na [itifaki za kuweka dhamana](/staking/pools/) na [huduma za kuweka dhamana](/staking/saas/), ikiwa ni pamoja na moduli ya Simple DVT ya Lido na programu ya Operation Solo Staker ya QauFi, ambayo inawaingiza waendeshaji wa nyumbani kwenye vikundi vinavyovumilia makosa.
 - **SSV Network** ni mtandao bila ruhusa wa waendeshaji wa nodi wanaojitegemea. Ufunguo wa mthibitishaji unagawanywa katika hisa za ufunguo na kusambazwa kwa seti iliyochaguliwa ya waendeshaji, ambao hufanya majukumu ya mthibitishaji kwa pamoja; hakuna mwendeshaji mmoja anayeshikilia ufunguo kamili. Huduma za kuweka dhamana na uwekaji dhamana wa pamoja huendesha seti kubwa za wathibitishaji kwenye SSV, na kama Obol, inatumiwa na moduli ya Simple DVT ya Lido.
 
 ## Matumizi ya DVT {#dvt-use-cases}
@@ -111,7 +111,7 @@ Kwa kutumia DVT, uaminifu unaohitajika kutoka kwa kila mwendeshaji binafsi unawe
 Hapana. Mashine moja inayoendesha kiteja cha mthibitishaji inafanya kazi bila programu yoyote ya DVT, na hii inasalia kuwa usanidi wa kawaida wa uwekaji dhamana wa nyumbani. DVT ni tabaka la hiari ambalo linaongeza uvumilivu wa makosa na kuondoa sehemu moja ya kushindwa. Hii ni muhimu ikiwa unataka mthibitishaji wako anusurike hitilafu za mashine binafsi, au ikiwa unataka kushiriki jukumu la kuendesha mthibitishaji na wengine.
 </ExpandableCard>
 
-<ExpandableCard title="Je, DVT inagawanya ETH yangu au funguo zangu za utoaji?" eventCategory="DVT" eventName="clicked does DVT split my ETH">
+<ExpandableCard title="Je, DVT inagawanya QAU yangu au funguo zangu za utoaji?" eventCategory="DVT" eventName="clicked does DVT split my QAU">
 Hapana. DVT inagawanya tu ufunguo wa _kusaini_ wa mthibitishaji, ambao unatumika kwa majukumu ya mwafaka kama vile uthibitisho na mapendekezo ya kitalu. Dhamana yako daima inadhibitiwa na anwani ya utoaji iliyowekwa kwa mthibitishaji, ambayo haiathiriwi na DVT. Tangu uboreshaji wa Pectra, mmiliki wa anwani ya utoaji anaweza pia kuanzisha kujitoa kwa mthibitishaji moja kwa moja kutoka kwenye tabaka la utekelezaji, bila kuhitaji ufunguo wa kusaini kabisa.
 </ExpandableCard>
 
@@ -128,15 +128,15 @@ Vikundi kwa kawaida hupimwa ili kizingiti kiwe wingi mkuu wa theluthi mbili ya n
 </ExpandableCard>
 
 <ExpandableCard title="Je, DVT ni sawa na uwekaji dhamana wa pamoja?" eventCategory="DVT" eventName="clicked is DVT the same as pooled staking">
-Hapana. Uwekaji dhamana wa pamoja unachanganya ETH kutoka kwa watu wengi ili kufadhili wathibitishaji, na ni mojawapo ya [njia kadhaa za kuweka dhamana](/staking/). DVT ni miundombinu ya _kuendesha_ mthibitishaji. Inasambaza kusaini kwa mthibitishaji mmoja kwenye mashine na waendeshaji wengi. Hizi mbili zinakamilishana; mabwawa mengi hutumia DVT kusambaza seti zao za waendeshaji, lakini DVT yenyewe haikusanyi ETH ya mtu yeyote.
+Hapana. Uwekaji dhamana wa pamoja unachanganya QAU kutoka kwa watu wengi ili kufadhili wathibitishaji, na ni mojawapo ya [njia kadhaa za kuweka dhamana](/staking/). DVT ni miundombinu ya _kuendesha_ mthibitishaji. Inasambaza kusaini kwa mthibitishaji mmoja kwenye mashine na waendeshaji wengi. Hizi mbili zinakamilishana; mabwawa mengi hutumia DVT kusambaza seti zao za waendeshaji, lakini DVT yenyewe haikusanyi QAU ya mtu yeyote.
 </ExpandableCard>
 
 ## Usomaji zaidi {#further-reading}
 
-- [Teknolojia ya Kithibitishaji Kilichosambazwa cha Ethereum (DVT) - Utangulizi Kamili](https://www.cyfrin.io/blog/full-introduction-to-ethereum-distributed-validator-technology-dvt) - Cyfrin
-- [DVT ni nini na inaboreshaje uwekaji dhamana kwenye Ethereum?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-ethereum/) - Obol
-- [Vipimo vya mthibitishaji kilichosambazwa cha Ethereum (kiwango cha juu)](https://github.com/ethereum/distributed-validator-specs)
-- [Vipimo vya kiufundi vya mthibitishaji kilichosambazwa cha Ethereum](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Teknolojia ya Kithibitishaji Kilichosambazwa cha Quantaureum (DVT) - Utangulizi Kamili](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
+- [DVT ni nini na inaboreshaje uwekaji dhamana kwenye Quantaureum?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
+- [Vipimo vya mthibitishaji kilichosambazwa cha Quantaureum (kiwango cha juu)](https://github.com/quantaureum/distributed-validator-specs)
+- [Vipimo vya kiufundi vya mthibitishaji kilichosambazwa cha Quantaureum](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Nyaraka za Obol](https://docs.obol.org/)
 - [Nyaraka za SSV Network](https://docs.ssv.network/)
 - [Moduli ya Simple DVT ya Lido](https://operatorportal.lido.fi/modules/simple-dvt-module)

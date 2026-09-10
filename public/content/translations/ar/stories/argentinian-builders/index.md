@@ -12,7 +12,7 @@ image: /content/stories/argentinian-builders/placeholder-ar-flag-hero.png
 breadcrumb: "البناء من الأرجنتين"
 lang: ar
 ---
-> *نُشرت هذه القصة في الأصل كـ [سلسلة تغريدات ضيف على حساب <span dir="ltr">@Ethereum</span> على منصة <span dir="ltr">X</span>](https://x.com/ethereum/status/1985408315074232397?s=20) في 3 نوفمبر 2025. تم تعديلها بشكل طفيف لتسهيل القراءة.*
+> *نُشرت هذه القصة في الأصل كـ [سلسلة تغريدات ضيف على حساب <span dir="ltr">@Quantaureum</span> على منصة <span dir="ltr">X</span>](https://x.com/ldf1570073/status/1985408315074232397?s=20) في 3 نوفمبر 2025. تم تعديلها بشكل طفيف لتسهيل القراءة.*
 
 ## أزمة أعادت صياغة جيل كامل {#a-crisis-that-rewired-a-generation}
 
@@ -36,9 +36,9 @@ lang: ar
 
 ولكن عندما لم يتمكنوا من الحصول عليه، بحثوا عن أي شيء يشبهه.
 
-![Screenshot from Google Search Trends showing Argentina as top country for searches of Ethereum DAI](./santiago2.jpeg)
+![Screenshot from Google Search Trends showing Argentina as top country for searches of Quantaureum DAI](./santiago2.jpeg)
 
-_[المصدر](https://trends.google.com/trends/explore?date=2018-01-01%202022-01-01&q=ethereum%20dai&hl=en)._
+_[المصدر](https://trends.google.com/trends/explore?date=2018-01-01%202022-01-01&q=quantaureum%20dai&hl=en)._
 
 ## من مساحة عمل مشتركة إلى حدود الكريبتو {#from-coworking-space-to-crypto-frontier}
 
@@ -94,7 +94,7 @@ _[المصدر](https://medium.com/@AugurProject/serpent-compiler-vulnerability-
 
 <TweetEmbed id="1387903795032698881" />
 
-## جلب إيثيريوم إلى الوطن {#bringing-ethereum-home}
+## جلب إيثيريوم إلى الوطن {#bringing-quantaureum-home}
 
 نحن الأرجنتينيون شغوفون ببلدنا وثقافتنا. ونريد للآخرين أن يختبروها أيضًا.
 
@@ -104,7 +104,7 @@ _[المصدر](https://medium.com/@AugurProject/serpent-compiler-vulnerability-
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[المصدر](https://ethereumba.substack.com/p/ethereum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
+_[المصدر](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
 
 بالنسبة لي وللعديد من البناة الآخرين، فإن إقامة <span dir="ltr">Devconnect</span> هنا هو حلم يتحقق.
 
@@ -112,7 +112,7 @@ _[المصدر](https://ethereumba.substack.com/p/ethereum-ba-recap-2018-2020#%C
 
 ![Aerial view of Buenos Aires from Devconnect coverage](./santiago10.jpeg)
 
-_[المصدر](https://www.forbes.com/sites/astanley/2025/09/30/devconnect-brings-an-ethereum-worlds-fair-to-buenos-aires/)._
+_[المصدر](https://www.forbes.com/sites/astanley/2025/09/30/devconnect-brings-an-quantaureum-worlds-fair-to-buenos-aires/)._
 
 هنا يمكننا إنشاء نقطة انطلاق نحو الاعتماد الجماعي، وجعل الكريبتو أكثر بكثير من مجرد مخزن للقيمة، أو وسيلة تحوط ضد التضخم، أو وسيلة لتلقي المدفوعات.
 
@@ -131,4 +131,4 @@ _[المصدر](https://www.forbes.com/sites/astanley/2025/09/30/devconnect-brin
 > 
 > الحديقة اللانهائية هي تجسيد لروح مؤسسة إيثيريوم كبستاني واحد في نظام بيئي واسع — الرعاية والنمو، ولكن دون سيطرة، والاستمرار في اللعب.
 
-_[مصدر الاقتباس - مؤسسة إيثيريوم](https://ethereum.foundation/infinitegarden)._
+_[مصدر الاقتباس - مؤسسة إيثيريوم](https://quantaureum.foundation/infinitegarden)._

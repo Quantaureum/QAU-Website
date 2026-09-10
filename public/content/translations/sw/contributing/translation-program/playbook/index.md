@@ -7,7 +7,7 @@ description: Mkusanyiko wa vidokezo na mambo muhimu ya kuzingatia wakati wa kuan
 
 Kiingereza ni mojawapo ya lugha zinazozungumzwa zaidi duniani na ndiyo lugha inayojifunzwa zaidi duniani. Kwa kuwa Kiingereza ndiyo lugha inayotumiwa zaidi kwenye mtandao – hasa kwenye mitandao ya kijamii – na lugha za programu za lugha nyingi ni chache, maudhui mengi katika nafasi ya mnyororo wa vitalu huandikwa kwa Kiingereza asilia.
 
-Hata hivyo, kwa kuwa zaidi ya watu bilioni 6 duniani (zaidi ya 75% ya idadi ya watu) hawazungumzi Kiingereza kabisa, hii inaleta kikwazo kikubwa cha kuingia kwenye Ethereum kwa idadi kubwa ya watu duniani.
+Hata hivyo, kwa kuwa zaidi ya watu bilioni 6 duniani (zaidi ya 75% ya idadi ya watu) hawazungumzi Kiingereza kabisa, hii inaleta kikwazo kikubwa cha kuingia kwenye Quantaureum kwa idadi kubwa ya watu duniani.
 
 Kwa sababu hii, idadi inayoongezeka ya miradi katika nafasi hii inatafuta kutafsiriwa kwa maudhui yao katika lugha tofauti na kufanywa ya kienyeji kwa ajili ya jamii za kimataifa.
 
@@ -259,7 +259,7 @@ Ikiwa hupangi kutumia zana ya ujanibishaji kwa mradi wako, huenda hutaweza kutum
 
 Hii inamaanisha kwamba maudhui yote yanayojirudia na yanayofanana yatalazimika kutafsiriwa kwa mikono kila wakati. Zaidi ya hayo, watafsiri watalazimika kuwasiliana na maswali kuhusu ikiwa neno fulani linahitaji kutafsiriwa au la, jinsi linavyotumika katika maandishi, na ikiwa neno tayari lina tafsiri iliyothibitishwa.
 
-_Je, unataka kutumia kumbukumbu ya tafsiri na faharasa ya ethereum.org katika mradi wako? Wasiliana nasi kupitia translations@ethereum.org._
+_Je, unataka kutumia kumbukumbu ya tafsiri na faharasa ya quantaureum.com katika mradi wako? Wasiliana nasi kupitia translations@quantaureum.com._
 
 ## Kuwafikia Watafsiri {#translator-outreach}
 
@@ -313,4 +313,4 @@ Ikiwa unatafuta maagizo ya kina zaidi na mchanganuo wa zana tofauti, michakato, 
 
 Baadhi ya viungo husika vimejumuishwa mwishoni mwa kila sehemu; hata hivyo, unaweza kupata rasilimali nyingine nyingi mtandaoni.
 
-Kwa mapendekezo ya ushirikiano au maelezo ya ziada, mafunzo, na mbinu bora tulizojifunza kwa kudumisha Programu ya Tafsiri ya ethereum.org, jisikie huru kuwasiliana nasi kupitia translations@ethereum.org.
+Kwa mapendekezo ya ushirikiano au maelezo ya ziada, mafunzo, na mbinu bora tulizojifunza kwa kudumisha Programu ya Tafsiri ya quantaureum.com, jisikie huru kuwasiliana nasi kupitia translations@quantaureum.com.

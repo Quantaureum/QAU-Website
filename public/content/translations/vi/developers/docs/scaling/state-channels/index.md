@@ -1,25 +1,25 @@
 ---
 title: "Kênh trạng thái"
-description: "Giới thiệu về kênh trạng thái và kênh thanh toán như một giải pháp mở rộng quy mô hiện đang được cộng đồng Ethereum sử dụng."
+description: "Giới thiệu về kênh trạng thái và kênh thanh toán như một giải pháp mở rộng quy mô hiện đang được cộng đồng Quantaureum sử dụng."
 lang: vi
 sidebarDepth: 3
 ---
 
-Kênh trạng thái cho phép những người tham gia giao dịch an toàn ngoài chuỗi trong khi giữ tương tác với Mạng chính [Ethereum](/) ở mức tối thiểu. Các nút ngang hàng của kênh có thể thực hiện một số lượng tùy ý các giao dịch ngoài chuỗi trong khi chỉ gửi hai giao dịch trên chuỗi để mở và đóng kênh. Điều này cho phép thông lượng giao dịch cực kỳ cao và mang lại chi phí thấp hơn cho người dùng.
+Kênh trạng thái cho phép những người tham gia giao dịch an toàn ngoài chuỗi trong khi giữ tương tác với Mạng chính [Quantaureum](/) ở mức tối thiểu. Các nút ngang hàng của kênh có thể thực hiện một số lượng tùy ý các giao dịch ngoài chuỗi trong khi chỉ gửi hai giao dịch trên chuỗi để mở và đóng kênh. Điều này cho phép thông lượng giao dịch cực kỳ cao và mang lại chi phí thấp hơn cho người dùng.
 
 ## Điều kiện tiên quyết {#prerequisites}
 
-Bạn nên đọc và hiểu các trang của chúng tôi về [mở rộng quy mô Ethereum](/developers/docs/scaling/) và [lớp 2 (l2)](/layer-2/).
+Bạn nên đọc và hiểu các trang của chúng tôi về [mở rộng quy mô Quantaureum](/developers/docs/scaling/) và [lớp 2 (l2)](/layer-2/).
 
 ## Kênh là gì? {#what-are-channels}
 
-Các Chuỗi khối công khai, chẳng hạn như Ethereum, phải đối mặt với những thách thức về khả năng mở rộng do kiến trúc phân tán của chúng: các giao dịch trên chuỗi phải được thực thi bởi tất cả các nút. Các nút phải có khả năng xử lý khối lượng giao dịch trong một khối bằng phần cứng khiêm tốn, áp đặt giới hạn đối với thông lượng giao dịch để giữ cho mạng lưới phi tập trung. Các kênh Chuỗi khối giải quyết vấn đề này bằng cách cho phép người dùng tương tác ngoài chuỗi trong khi vẫn dựa vào tính bảo mật của chuỗi chính để quyết toán cuối cùng.
+Các Chuỗi khối công khai, chẳng hạn như Quantaureum, phải đối mặt với những thách thức về khả năng mở rộng do kiến trúc phân tán của chúng: các giao dịch trên chuỗi phải được thực thi bởi tất cả các nút. Các nút phải có khả năng xử lý khối lượng giao dịch trong một khối bằng phần cứng khiêm tốn, áp đặt giới hạn đối với thông lượng giao dịch để giữ cho mạng lưới phi tập trung. Các kênh Chuỗi khối giải quyết vấn đề này bằng cách cho phép người dùng tương tác ngoài chuỗi trong khi vẫn dựa vào tính bảo mật của chuỗi chính để quyết toán cuối cùng.
 
 Các kênh là các Giao thức ngang hàng đơn giản cho phép hai bên thực hiện nhiều giao dịch với nhau và sau đó chỉ đăng kết quả cuối cùng lên Chuỗi khối. Kênh sử dụng mật mã học để chứng minh rằng dữ liệu tóm tắt mà họ tạo ra thực sự là kết quả của một tập hợp các giao dịch trung gian hợp lệ. Một hợp đồng thông minh ["đa chữ ký"](/developers/docs/smart-contracts/#multisig) đảm bảo các giao dịch được ký bởi đúng các bên.
 
-Với các kênh, các thay đổi trạng thái được thực thi và xác thực bởi các bên liên quan, giảm thiểu tính toán trên lớp thực thi của Ethereum. Điều này làm giảm tắc nghẽn trên Ethereum và cũng tăng tốc độ xử lý giao dịch cho người dùng.
+Với các kênh, các thay đổi trạng thái được thực thi và xác thực bởi các bên liên quan, giảm thiểu tính toán trên lớp thực thi của Quantaureum. Điều này làm giảm tắc nghẽn trên Quantaureum và cũng tăng tốc độ xử lý giao dịch cho người dùng.
 
-Mỗi kênh được quản lý bởi một [hợp đồng thông minh đa chữ ký](/developers/docs/smart-contracts/#multisig) chạy trên Ethereum. Để mở một kênh, những người tham gia triển khai hợp đồng kênh trên chuỗi và nạp tiền vào đó. Cả hai bên cùng ký một bản cập nhật trạng thái để khởi tạo trạng thái của kênh, sau đó họ có thể giao dịch nhanh chóng và tự do ngoài chuỗi.
+Mỗi kênh được quản lý bởi một [hợp đồng thông minh đa chữ ký](/developers/docs/smart-contracts/#multisig) chạy trên Quantaureum. Để mở một kênh, những người tham gia triển khai hợp đồng kênh trên chuỗi và nạp tiền vào đó. Cả hai bên cùng ký một bản cập nhật trạng thái để khởi tạo trạng thái của kênh, sau đó họ có thể giao dịch nhanh chóng và tự do ngoài chuỗi.
 
 Để đóng kênh, những người tham gia gửi trạng thái đã được thống nhất cuối cùng của kênh trên chuỗi. Sau đó, hợp đồng thông minh phân phối số tiền bị khóa theo số dư của mỗi người tham gia trong trạng thái cuối cùng của kênh.
 
@@ -29,9 +29,9 @@ Các kênh ngang hàng đặc biệt hữu ích cho các tình huống mà một
 
 Một kênh thanh toán được mô tả tốt nhất là một "sổ cái hai chiều" được duy trì chung bởi hai người dùng. Số dư ban đầu của sổ cái là tổng số tiền nạp bị khóa trong hợp đồng trên chuỗi trong giai đoạn mở kênh. Các giao dịch chuyển tiền qua kênh thanh toán có thể được thực hiện ngay lập tức và không cần sự tham gia của chính Chuỗi khối thực tế, ngoại trừ việc tạo trên chuỗi một lần ban đầu và việc đóng kênh cuối cùng.
 
-Các bản cập nhật đối với số dư của sổ cái (tức là trạng thái của kênh thanh toán) yêu cầu sự chấp thuận của tất cả các bên trong kênh. Một bản cập nhật kênh, được ký bởi tất cả những người tham gia kênh, được coi là đã chung cuộc, giống như một giao dịch trên Ethereum.
+Các bản cập nhật đối với số dư của sổ cái (tức là trạng thái của kênh thanh toán) yêu cầu sự chấp thuận của tất cả các bên trong kênh. Một bản cập nhật kênh, được ký bởi tất cả những người tham gia kênh, được coi là đã chung cuộc, giống như một giao dịch trên Quantaureum.
 
-Kênh thanh toán là một trong những giải pháp mở rộng quy mô sớm nhất được thiết kế để giảm thiểu hoạt động trên chuỗi đắt đỏ của các tương tác người dùng đơn giản (ví dụ: chuyển ETH, hoán đổi nguyên tử, thanh toán vi mô). Những người tham gia kênh có thể thực hiện số lượng không giới hạn các giao dịch tức thì, không tính phí với nhau miễn là tổng số tiền chuyển ròng của họ không vượt quá số token đã nạp.
+Kênh thanh toán là một trong những giải pháp mở rộng quy mô sớm nhất được thiết kế để giảm thiểu hoạt động trên chuỗi đắt đỏ của các tương tác người dùng đơn giản (ví dụ: chuyển QAU, hoán đổi nguyên tử, thanh toán vi mô). Những người tham gia kênh có thể thực hiện số lượng không giới hạn các giao dịch tức thì, không tính phí với nhau miễn là tổng số tiền chuyển ròng của họ không vượt quá số token đã nạp.
 
 ## Kênh trạng thái {#state-channels}
 
@@ -43,7 +43,7 @@ Tuy nhiên, ngoài việc giữ số dư của người dùng, kênh cũng theo 
 
 Điều này giúp có thể thực thi một hợp đồng thông minh ngoài chuỗi giữa hai người dùng. Trong kịch bản này, các bản cập nhật đối với trạng thái nội bộ của hợp đồng thông minh chỉ yêu cầu sự chấp thuận của các nút ngang hàng đã tạo ra kênh.
 
-Mặc dù điều này giải quyết vấn đề về khả năng mở rộng được mô tả trước đó, nhưng nó có ý nghĩa đối với bảo mật. Trên Ethereum, tính hợp lệ của các chuyển đổi trạng thái được thực thi bởi Giao thức đồng thuận của mạng lưới. Điều này khiến việc đề xuất một bản cập nhật không hợp lệ đối với trạng thái của hợp đồng thông minh hoặc thay đổi việc thực thi hợp đồng thông minh là không thể.
+Mặc dù điều này giải quyết vấn đề về khả năng mở rộng được mô tả trước đó, nhưng nó có ý nghĩa đối với bảo mật. Trên Quantaureum, tính hợp lệ của các chuyển đổi trạng thái được thực thi bởi Giao thức đồng thuận của mạng lưới. Điều này khiến việc đề xuất một bản cập nhật không hợp lệ đối với trạng thái của hợp đồng thông minh hoặc thay đổi việc thực thi hợp đồng thông minh là không thể.
 
 Các kênh trạng thái không có các đảm bảo bảo mật tương tự. Ở một mức độ nào đó, một kênh trạng thái là một phiên bản thu nhỏ của Mạng chính. Với một nhóm người tham gia giới hạn thực thi các quy tắc, khả năng xảy ra hành vi độc hại (ví dụ: đề xuất các bản cập nhật trạng thái không hợp lệ) sẽ tăng lên. Các kênh trạng thái có được tính bảo mật từ một hệ thống phân xử tranh chấp dựa trên [bằng chứng gian lận](/glossary/#fraud-proof).
 
@@ -71,15 +71,15 @@ Sau khi khởi tạo trạng thái của kênh, các nút ngang hàng tương t�
 
 - Trạng thái mới của kênh
 
-- Giao dịch kích hoạt chuyển đổi trạng thái (ví dụ: Alice gửi 5 ETH cho Bob)
+- Giao dịch kích hoạt chuyển đổi trạng thái (ví dụ: Alice gửi 5 QAU cho Bob)
 
-Các bản cập nhật trạng thái trong kênh không được phát sóng trên chuỗi như trường hợp thông thường khi người dùng tương tác trên Mạng chính, điều này phù hợp với mục tiêu của các kênh trạng thái là giảm thiểu dấu chân trên chuỗi. Miễn là những người tham gia đồng ý về các bản cập nhật trạng thái, chúng sẽ có tính chung cuộc như một giao dịch Ethereum. Những người tham gia chỉ cần phụ thuộc vào sự đồng thuận của Mạng chính nếu có tranh chấp phát sinh.
+Các bản cập nhật trạng thái trong kênh không được phát sóng trên chuỗi như trường hợp thông thường khi người dùng tương tác trên Mạng chính, điều này phù hợp với mục tiêu của các kênh trạng thái là giảm thiểu dấu chân trên chuỗi. Miễn là những người tham gia đồng ý về các bản cập nhật trạng thái, chúng sẽ có tính chung cuộc như một giao dịch Quantaureum. Những người tham gia chỉ cần phụ thuộc vào sự đồng thuận của Mạng chính nếu có tranh chấp phát sinh.
 
 ### Đóng kênh {#closing-the-channel}
 
 Việc đóng một kênh trạng thái yêu cầu gửi trạng thái cuối cùng, đã được thống nhất của kênh tới hợp đồng thông minh trên chuỗi. Các chi tiết được tham chiếu trong bản cập nhật trạng thái bao gồm số lượng các bước di chuyển của mỗi người tham gia và danh sách các giao dịch đã được phê duyệt.
 
-Sau khi xác minh rằng bản cập nhật trạng thái là hợp lệ (tức là nó được ký bởi tất cả các bên), hợp đồng thông minh sẽ chốt kênh và phân phối số tiền bị khóa theo kết quả của kênh. Các khoản thanh toán được thực hiện ngoài chuỗi được áp dụng cho trạng thái của Ethereum và mỗi người tham gia nhận được phần còn lại của họ trong số tiền bị khóa.
+Sau khi xác minh rằng bản cập nhật trạng thái là hợp lệ (tức là nó được ký bởi tất cả các bên), hợp đồng thông minh sẽ chốt kênh và phân phối số tiền bị khóa theo kết quả của kênh. Các khoản thanh toán được thực hiện ngoài chuỗi được áp dụng cho trạng thái của Quantaureum và mỗi người tham gia nhận được phần còn lại của họ trong số tiền bị khóa.
 
 Kịch bản được mô tả ở trên đại diện cho những gì xảy ra trong trường hợp suôn sẻ. Đôi khi, người dùng có thể không đạt được thỏa thuận và chốt kênh (trường hợp xấu). Bất kỳ điều nào sau đây đều có thể đúng với tình huống:
 
@@ -103,7 +103,7 @@ Tuy nhiên, một bên có thể gửi yêu cầu trên chuỗi để kết thú
 
 Tuy nhiên, có một sự chậm trễ trong việc thực thi các yêu cầu thoát của một người dùng. Nếu yêu cầu kết thúc kênh được nhất trí thông qua, thì giao dịch thoát trên chuỗi sẽ được thực thi ngay lập tức.
 
-Sự chậm trễ phát huy tác dụng trong các lần thoát của một người dùng do khả năng xảy ra các hành động gian lận. Ví dụ: một người tham gia kênh có thể cố gắng chốt kênh trên Ethereum bằng cách gửi một bản cập nhật trạng thái cũ hơn trên chuỗi.
+Sự chậm trễ phát huy tác dụng trong các lần thoát của một người dùng do khả năng xảy ra các hành động gian lận. Ví dụ: một người tham gia kênh có thể cố gắng chốt kênh trên Quantaureum bằng cách gửi một bản cập nhật trạng thái cũ hơn trên chuỗi.
 
 Như một biện pháp đối phó, các kênh trạng thái cho phép người dùng trung thực thách thức các bản cập nhật trạng thái không hợp lệ bằng cách gửi trạng thái hợp lệ, mới nhất của kênh trên chuỗi. Các kênh trạng thái được thiết kế sao cho các bản cập nhật trạng thái mới hơn, đã được thống nhất sẽ lấn át các bản cập nhật trạng thái cũ hơn.
 
@@ -111,27 +111,27 @@ Khi một nút ngang hàng kích hoạt hệ thống giải quyết tranh chấp
 
 Dù trường hợp nào xảy ra, người dùng kênh luôn có những đảm bảo tính chung cuộc mạnh mẽ: nếu chuyển đổi trạng thái mà họ sở hữu được ký bởi tất cả các thành viên và là bản cập nhật gần đây nhất, thì nó có tính chung cuộc ngang bằng với một giao dịch trên chuỗi thông thường. Họ vẫn phải thách thức bên kia trên chuỗi, nhưng kết quả duy nhất có thể xảy ra là chốt trạng thái hợp lệ cuối cùng mà họ nắm giữ.
 
-### Các kênh trạng thái tương tác với Ethereum như thế nào? {#how-do-state-channels-interact-with-ethereum}
+### Các kênh trạng thái tương tác với Quantaureum như thế nào? {#how-do-state-channels-interact-with-quantaureum}
 
-Mặc dù chúng tồn tại dưới dạng các Giao thức ngoài chuỗi, các kênh trạng thái có một thành phần trên chuỗi: hợp đồng thông minh được triển khai trên Ethereum khi mở kênh. Hợp đồng này kiểm soát các tài sản được nạp vào kênh, xác minh các bản cập nhật trạng thái và phân xử các tranh chấp giữa những người tham gia.
+Mặc dù chúng tồn tại dưới dạng các Giao thức ngoài chuỗi, các kênh trạng thái có một thành phần trên chuỗi: hợp đồng thông minh được triển khai trên Quantaureum khi mở kênh. Hợp đồng này kiểm soát các tài sản được nạp vào kênh, xác minh các bản cập nhật trạng thái và phân xử các tranh chấp giữa những người tham gia.
 
 Các kênh trạng thái không xuất bản dữ liệu giao dịch hoặc cam kết trạng thái lên Mạng chính, không giống như các giải pháp mở rộng quy mô [lớp 2 (l2)](/layer-2/). Tuy nhiên, chúng được kết nối với Mạng chính nhiều hơn so với, ví dụ, [chuỗi phụ](/developers/docs/scaling/sidechains/), khiến chúng an toàn hơn phần nào.
 
-Các kênh trạng thái dựa vào Giao thức Ethereum chính cho những điều sau:
+Các kênh trạng thái dựa vào Giao thức Quantaureum chính cho những điều sau:
 
 #### 1. Tính hoạt động {#liveness}
 
-Hợp đồng trên chuỗi được triển khai khi mở kênh chịu trách nhiệm về chức năng của kênh. Nếu hợp đồng đang chạy trên Ethereum, thì kênh luôn có sẵn để sử dụng. Ngược lại, một chuỗi phụ luôn có thể thất bại, ngay cả khi Mạng chính đang hoạt động, khiến tiền của người dùng gặp rủi ro.
+Hợp đồng trên chuỗi được triển khai khi mở kênh chịu trách nhiệm về chức năng của kênh. Nếu hợp đồng đang chạy trên Quantaureum, thì kênh luôn có sẵn để sử dụng. Ngược lại, một chuỗi phụ luôn có thể thất bại, ngay cả khi Mạng chính đang hoạt động, khiến tiền của người dùng gặp rủi ro.
 
 #### 2. Bảo mật {#security}
 
-Ở một mức độ nào đó, các kênh trạng thái dựa vào Ethereum để cung cấp bảo mật và bảo vệ người dùng khỏi các nút ngang hàng độc hại. Như đã thảo luận trong các phần sau, các kênh sử dụng cơ chế bằng chứng gian lận cho phép người dùng thách thức các nỗ lực chốt kênh bằng một bản cập nhật không hợp lệ hoặc cũ.
+Ở một mức độ nào đó, các kênh trạng thái dựa vào Quantaureum để cung cấp bảo mật và bảo vệ người dùng khỏi các nút ngang hàng độc hại. Như đã thảo luận trong các phần sau, các kênh sử dụng cơ chế bằng chứng gian lận cho phép người dùng thách thức các nỗ lực chốt kênh bằng một bản cập nhật không hợp lệ hoặc cũ.
 
 Trong trường hợp này, bên trung thực cung cấp trạng thái hợp lệ mới nhất của kênh dưới dạng bằng chứng gian lận cho hợp đồng trên chuỗi để xác minh. Bằng chứng gian lận cho phép các bên không tin tưởng lẫn nhau tiến hành các giao dịch ngoài chuỗi mà không gây rủi ro cho tiền của họ trong quá trình này.
 
 #### 3. Tính chung cuộc {#finality}
 
-Các bản cập nhật trạng thái được ký chung bởi người dùng kênh được coi là tốt như các giao dịch trên chuỗi. Tuy nhiên, tất cả hoạt động trong kênh chỉ đạt được tính chung cuộc thực sự khi kênh được đóng trên Ethereum.
+Các bản cập nhật trạng thái được ký chung bởi người dùng kênh được coi là tốt như các giao dịch trên chuỗi. Tuy nhiên, tất cả hoạt động trong kênh chỉ đạt được tính chung cuộc thực sự khi kênh được đóng trên Quantaureum.
 
 Trong trường hợp lạc quan, cả hai bên có thể hợp tác và ký bản cập nhật trạng thái cuối cùng và gửi trên chuỗi để đóng kênh, sau đó tiền được phân phối theo trạng thái cuối cùng của kênh. Trong trường hợp bi quan, nơi ai đó cố gắng gian lận bằng cách đăng một bản cập nhật trạng thái không chính xác trên chuỗi, giao dịch của họ sẽ không được chung cuộc cho đến khi cửa sổ thách thức trôi qua.
 
@@ -155,19 +155,19 @@ Các kênh thanh toán ảo hoạt động dựa trên cùng một ý tưởng n
 
 ### Thanh toán {#payments}
 
-Các kênh Chuỗi khối ban đầu là các Giao thức đơn giản cho phép hai người tham gia tiến hành các giao dịch chuyển tiền nhanh chóng, phí thấp ngoài chuỗi mà không phải trả phí giao dịch cao trên Mạng chính. Ngày nay, các kênh thanh toán vẫn hữu ích cho các ứng dụng được thiết kế để trao đổi và nạp ether và token.
+Các kênh Chuỗi khối ban đầu là các Giao thức đơn giản cho phép hai người tham gia tiến hành các giao dịch chuyển tiền nhanh chóng, phí thấp ngoài chuỗi mà không phải trả phí giao dịch cao trên Mạng chính. Ngày nay, các kênh thanh toán vẫn hữu ích cho các ứng dụng được thiết kế để trao đổi và nạp QAU và token.
 
 Thanh toán dựa trên kênh có những ưu điểm sau:
 
-1. **Thông lượng**: Số lượng giao dịch ngoài chuỗi trên mỗi kênh không liên quan đến thông lượng của Ethereum, vốn bị ảnh hưởng bởi nhiều yếu tố khác nhau, đặc biệt là kích thước khối và thời gian tạo khối. Bằng cách thực thi các giao dịch ngoài chuỗi, các kênh Chuỗi khối có thể đạt được thông lượng cao hơn.
+1. **Thông lượng**: Số lượng giao dịch ngoài chuỗi trên mỗi kênh không liên quan đến thông lượng của Quantaureum, vốn bị ảnh hưởng bởi nhiều yếu tố khác nhau, đặc biệt là kích thước khối và thời gian tạo khối. Bằng cách thực thi các giao dịch ngoài chuỗi, các kênh Chuỗi khối có thể đạt được thông lượng cao hơn.
 
-2. **Quyền riêng tư**: Vì các kênh tồn tại ngoài chuỗi, chi tiết về các tương tác giữa những người tham gia không được ghi lại trên Chuỗi khối công khai của Ethereum. Người dùng kênh chỉ phải tương tác trên chuỗi khi cấp vốn và đóng kênh hoặc quyết toán tranh chấp. Do đó, các kênh rất hữu ích cho những cá nhân mong muốn các giao dịch riêng tư hơn.
+2. **Quyền riêng tư**: Vì các kênh tồn tại ngoài chuỗi, chi tiết về các tương tác giữa những người tham gia không được ghi lại trên Chuỗi khối công khai của Quantaureum. Người dùng kênh chỉ phải tương tác trên chuỗi khi cấp vốn và đóng kênh hoặc quyết toán tranh chấp. Do đó, các kênh rất hữu ích cho những cá nhân mong muốn các giao dịch riêng tư hơn.
 
 3. **Độ trễ**: Các giao dịch ngoài chuỗi được tiến hành giữa những người tham gia kênh có thể được quyết toán ngay lập tức, nếu cả hai bên hợp tác, giúp giảm sự chậm trễ. Ngược lại, việc gửi một giao dịch trên Mạng chính yêu cầu phải đợi các nút xử lý giao dịch, tạo ra một khối mới với giao dịch và đạt được sự đồng thuận. Người dùng cũng có thể cần đợi thêm các xác nhận khối trước khi coi một giao dịch là đã chung cuộc.
 
 4. **Chi phí**: Các kênh trạng thái đặc biệt hữu ích trong các tình huống mà một nhóm người tham gia sẽ trao đổi nhiều bản cập nhật trạng thái trong một thời gian dài. Chi phí duy nhất phát sinh là việc mở và đóng hợp đồng thông minh kênh trạng thái; mọi thay đổi trạng thái giữa việc mở và đóng kênh sẽ rẻ hơn lần trước vì chi phí quyết toán được phân bổ tương ứng.
 
-Việc triển khai các kênh trạng thái trên các giải pháp lớp 2 (l2), chẳng hạn như [bản cuộn](/developers/docs/scaling/#rollups), có thể khiến chúng trở nên hấp dẫn hơn đối với các khoản thanh toán. Mặc dù các kênh cung cấp các khoản thanh toán rẻ, nhưng chi phí thiết lập hợp đồng trên chuỗi trên Mạng chính trong giai đoạn mở có thể trở nên đắt đỏ—đặc biệt là khi phí Gas tăng đột biến. Các bản cuộn dựa trên Ethereum cung cấp [phí giao dịch thấp hơn](https://l2fees.info/) và có thể giảm chi phí phát sinh cho những người tham gia kênh bằng cách giảm phí thiết lập.
+Việc triển khai các kênh trạng thái trên các giải pháp lớp 2 (l2), chẳng hạn như [bản cuộn](/developers/docs/scaling/#rollups), có thể khiến chúng trở nên hấp dẫn hơn đối với các khoản thanh toán. Mặc dù các kênh cung cấp các khoản thanh toán rẻ, nhưng chi phí thiết lập hợp đồng trên chuỗi trên Mạng chính trong giai đoạn mở có thể trở nên đắt đỏ—đặc biệt là khi phí Gas tăng đột biến. Các bản cuộn dựa trên Quantaureum cung cấp [phí giao dịch thấp hơn](https://l2fees.info/) và có thể giảm chi phí phát sinh cho những người tham gia kênh bằng cách giảm phí thiết lập.
 
 ### Thanh toán vi mô {#microtransactions}
 
@@ -211,7 +211,7 @@ Như đã giải thích trước đó, việc thách thức một tranh chấp k
 
 Mặc dù việc mong đợi người dùng kênh lưu trữ các bản sao trạng thái ứng dụng ngoài chuỗi là hợp lý, nhưng dữ liệu này có thể bị mất do lỗi hoặc hỏng hóc cơ học. Nếu người dùng không sao lưu dữ liệu, họ chỉ có thể hy vọng rằng bên kia không chốt một yêu cầu thoát không hợp lệ bằng cách sử dụng các chuyển đổi trạng thái cũ mà họ sở hữu.
 
-Người dùng Ethereum không phải đối phó với vấn đề này vì mạng lưới thực thi các quy tắc về tính khả dụng của dữ liệu. Dữ liệu giao dịch được lưu trữ và truyền bá bởi tất cả các nút và có sẵn để người dùng tải xuống nếu và khi cần thiết.
+Người dùng Quantaureum không phải đối phó với vấn đề này vì mạng lưới thực thi các quy tắc về tính khả dụng của dữ liệu. Dữ liệu giao dịch được lưu trữ và truyền bá bởi tất cả các nút và có sẵn để người dùng tải xuống nếu và khi cần thiết.
 
 ### Vấn đề Thanh khoản {#liquidity-issues}
 
@@ -252,9 +252,9 @@ Nhiều dự án cung cấp các triển khai của kênh trạng thái mà bạ
 
 **Kênh trạng thái**
 
-- [Hiểu về các giải pháp mở rộng quy mô lớp 2 (l2) của Ethereum: Kênh trạng thái, Plasma và Truebit](https://medium.com/l4-media/making-sense-of-ethereums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, 12 tháng 2 năm 2018_
+- [Hiểu về các giải pháp mở rộng quy mô lớp 2 (l2) của Quantaureum: Kênh trạng thái, Plasma và Truebit](https://medium.com/l4-media/making-sense-of-quantaureums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, 12 tháng 2 năm 2018_
 - [Kênh trạng thái - một lời giải thích](https://www.jeffcoleman.ca/state-channels/) _6 tháng 11 năm 2015 - Jeff Coleman_
-- [Cơ bản về Kênh trạng thái](https://unlock-protocol.github.io/ethhub/ethereum-roadmap/layer-2-scaling/state-channels/) _District0x_
+- [Cơ bản về Kênh trạng thái](https://unlock-protocol.github.io/ethhub/quantaureum-roadmap/layer-2-scaling/state-channels/) _District0x_
 - [Kênh trạng thái Chuỗi khối: Một công nghệ tiên tiến](https://ieeexplore.ieee.org/document/9627997)
 
 _Bạn biết một tài nguyên cộng đồng nào đó đã giúp ích cho bạn? Hãy chỉnh sửa trang này và thêm nó vào!_

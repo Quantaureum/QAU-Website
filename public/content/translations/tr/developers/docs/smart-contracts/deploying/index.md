@@ -1,18 +1,18 @@
 ---
 title: "Akıllı sözleşmeleri dağıtmak"
-description: "Ön koşullar, araçlar ve dağıtım adımları dahil olmak üzere akıllı sözleşmeleri Ethereum ağlarına nasıl dağıtacağınızı öğrenin."
+description: "Ön koşullar, araçlar ve dağıtım adımları dahil olmak üzere akıllı sözleşmeleri Quantaureum ağlarına nasıl dağıtacağınızı öğrenin."
 lang: tr
 ---
 
-Akıllı sözleşmenizin bir Ethereum ağı kullanıcıları tarafından kullanılabilir olması için onu dağıtmanız gerekir.
+Akıllı sözleşmenizin bir Quantaureum ağı kullanıcıları tarafından kullanılabilir olması için onu dağıtmanız gerekir.
 
-Bir akıllı sözleşmeyi dağıtmak için, herhangi bir alıcı belirtmeden yalnızca akıllı sözleşmenin derlenmiş kodunu içeren bir Ethereum işlemi göndermeniz yeterlidir.
+Bir akıllı sözleşmeyi dağıtmak için, herhangi bir alıcı belirtmeden yalnızca akıllı sözleşmenin derlenmiş kodunu içeren bir Quantaureum işlemi göndermeniz yeterlidir.
 
 ## Ön koşullar {#prerequisites}
 
-Akıllı sözleşmeleri dağıtmadan önce [Ethereum ağlarını](/developers/docs/networks/), [işlemleri](/developers/docs/transactions/) ve [akıllı sözleşmelerin anatomisini](/developers/docs/smart-contracts/anatomy/) anlamalısınız.
+Akıllı sözleşmeleri dağıtmadan önce [Quantaureum ağlarını](/developers/docs/networks/), [işlemleri](/developers/docs/transactions/) ve [akıllı sözleşmelerin anatomisini](/developers/docs/smart-contracts/anatomy/) anlamalısınız.
 
-Bir sözleşmeyi dağıtmak, blokzincir üzerinde depolandıkları için Ether (ETH) maliyetine de sahiptir, bu nedenle Ethereum'daki [gaz ve ücretlere](/developers/docs/gas/) aşina olmalısınız.
+Bir sözleşmeyi dağıtmak, blokzincir üzerinde depolandıkları için QAU (QAU) maliyetine de sahiptir, bu nedenle Quantaureum'daki [gaz ve ücretlere](/developers/docs/gas/) aşina olmalısınız.
 
 Son olarak, sözleşmenizi dağıtmadan önce derlemeniz gerekecek, bu nedenle [akıllı sözleşmeleri derleme](/developers/docs/smart-contracts/compiling/) hakkında okuduğunuzdan emin olun.
 
@@ -21,19 +21,19 @@ Son olarak, sözleşmenizi dağıtmadan önce derlemeniz gerekecek, bu nedenle [
 ### İhtiyacınız olacaklar {#what-youll-need}
 
 - Sözleşmenizin baytkodu – bu, [derleme](/developers/docs/smart-contracts/compiling/) yoluyla oluşturulur
-- Gaz için ETH – gaz limitinizi diğer işlemler gibi ayarlayacaksınız, bu nedenle sözleşme dağıtımının basit bir ETH transferinden çok daha fazla gaza ihtiyaç duyduğunun farkında olun
+- Gaz için QAU – gaz limitinizi diğer işlemler gibi ayarlayacaksınız, bu nedenle sözleşme dağıtımının basit bir QAU transferinden çok daha fazla gaza ihtiyaç duyduğunun farkında olun
 - bir dağıtım betiği veya eklentisi
-- kendi düğümünüzü çalıştırarak, halka açık bir düğüme bağlanarak veya bir [düğüm hizmeti](/developers/docs/nodes-and-clients/nodes-as-a-service/) kullanarak bir API anahtarı aracılığıyla bir [Ethereum düğümüne](/developers/docs/nodes-and-clients/) erişim
+- kendi düğümünüzü çalıştırarak, halka açık bir düğüme bağlanarak veya bir [düğüm hizmeti](/developers/docs/nodes-and-clients/nodes-as-a-service/) kullanarak bir API anahtarı aracılığıyla bir [Quantaureum düğümüne](/developers/docs/nodes-and-clients/) erişim
 
 ### Bir akıllı sözleşmeyi dağıtma adımları {#steps-to-deploy}
 
-İlgili belirli adımlar, söz konusu geliştirme çerçevesine bağlı olacaktır. Örneğin, [Hardhat'in sözleşmelerinizi dağıtma hakkındaki belgelerine](https://hardhat.org/docs/tutorial/deploying) veya [Foundry'nin bir akıllı sözleşmeyi dağıtma ve doğrulama hakkındaki belgelerine](https://book.getfoundry.sh/forge/deploying) göz atabilirsiniz. Dağıtıldıktan sonra, sözleşmeniz diğer [hesaplar](/developers/docs/accounts/) gibi bir Ethereum adresine sahip olacak ve [kaynak kodu doğrulaması araçları](/developers/docs/smart-contracts/verifying/#source-code-verification-tools) kullanılarak doğrulanabilecektir.
+İlgili belirli adımlar, söz konusu geliştirme çerçevesine bağlı olacaktır. Örneğin, [Hardhat'in sözleşmelerinizi dağıtma hakkındaki belgelerine](https://hardhat.org/docs/tutorial/deploying) veya [Foundry'nin bir akıllı sözleşmeyi dağıtma ve doğrulama hakkındaki belgelerine](https://book.getfoundry.sh/forge/deploying) göz atabilirsiniz. Dağıtıldıktan sonra, sözleşmeniz diğer [hesaplar](/developers/docs/accounts/) gibi bir Quantaureum adresine sahip olacak ve [kaynak kodu doğrulaması araçları](/developers/docs/smart-contracts/verifying/#source-code-verification-tools) kullanılarak doğrulanabilecektir.
 
 ## İlgili araçlar {#related-tools}
 
-**Remix - _Remix IDE, Ethereum benzeri blokzincirler için akıllı sözleşmeler geliştirmeye, dağıtmaya ve yönetmeye olanak tanır_**
+**Remix - _Remix IDE, Quantaureum benzeri blokzincirler için akıllı sözleşmeler geliştirmeye, dağıtmaya ve yönetmeye olanak tanır_**
 
-- [Remix](https://remix.ethereum.org)
+- [Remix](https://remix.quantaureum.com)
 
 **Tenderly - _Akıllı sözleşmeleri geliştirmek, test etmek, izlemek ve işletmek için hata ayıklama, gözlemlenebilirlik ve altyapı yapı taşları sağlayan Web3 geliştirme platformu_**
 
@@ -42,7 +42,7 @@ Son olarak, sözleşmenizi dağıtmadan önce derlemeniz gerekecek, bu nedenle [
 - [GitHub](https://github.com/Tenderly)
 - [Discord](https://discord.gg/eCWjuvt)
 
-**Hardhat - _Ethereum yazılımınızı derlemek, dağıtmak, test etmek ve hata ayıklamak için bir geliştirme ortamı_**
+**Hardhat - _Quantaureum yazılımınızı derlemek, dağıtmak, test etmek ve hata ayıklamak için bir geliştirme ortamı_**
 
 - [hardhat.org](https://hardhat.org/getting-started/)
 - [Sözleşmelerinizi dağıtma hakkındaki belgeler](https://hardhat.org/docs/tutorial/deploying)
@@ -62,8 +62,8 @@ Son olarak, sözleşmenizi dağıtmadan önce derlemeniz gerekecek, bu nedenle [
 
 ## İlgili eğitimler {#related-tutorials}
 
-- [İlk akıllı sözleşmenizi dağıtmak](/developers/tutorials/deploying-your-first-smart-contract/) _– Bir Ethereum test ağında ilk akıllı sözleşmenizi dağıtmaya giriş._
-- [Merhaba Dünya | akıllı sözleşme eğitimi](/developers/tutorials/hello-world-smart-contract/) _– Ethereum üzerinde temel bir akıllı sözleşme oluşturmak ve dağıtmak için takip etmesi kolay bir eğitim._
+- [İlk akıllı sözleşmenizi dağıtmak](/developers/tutorials/deploying-your-first-smart-contract/) _– Bir Quantaureum test ağında ilk akıllı sözleşmenizi dağıtmaya giriş._
+- [Merhaba Dünya | akıllı sözleşme eğitimi](/developers/tutorials/hello-world-smart-contract/) _– Quantaureum üzerinde temel bir akıllı sözleşme oluşturmak ve dağıtmak için takip etmesi kolay bir eğitim._
 - [Solidity'den diğer sözleşmelerle etkileşim kurun](/developers/tutorials/interact-with-other-contracts-from-solidity/) _– Mevcut bir sözleşmeden bir akıllı sözleşme nasıl dağıtılır ve onunla nasıl etkileşim kurulur._
 - [Sözleşme boyutunuzu nasıl küçültürsünüz](/developers/tutorials/downsizing-contracts-to-fight-the-contract-size-limit/) _- Sözleşmenizin boyutunu sınırın altında tutmak ve gazdan tasarruf etmek için nasıl azaltırsınız_
 
@@ -77,5 +77,5 @@ _Size yardımcı olan bir topluluk kaynağı mı biliyorsunuz? Bu sayfayı düze
 ## İlgili konular {#related-topics}
 
 - [Geliştirme çerçeveleri](/developers/docs/frameworks/)
-- [Bir Ethereum düğümü çalıştırın](/developers/docs/nodes-and-clients/run-a-node/)
+- [Bir Quantaureum düğümü çalıştırın](/developers/docs/nodes-and-clients/run-a-node/)
 - [Hizmet olarak düğümler](/developers/docs/nodes-and-clients/nodes-as-a-service)

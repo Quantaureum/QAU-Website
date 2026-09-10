@@ -1,27 +1,27 @@
 ---
 title: Quy tắc ứng xử
-description: Các tiêu chuẩn cơ bản mà chúng tôi hướng tới trên khắp các không gian của ethereum.org.
+description: Các tiêu chuẩn cơ bản mà chúng tôi hướng tới trên khắp các không gian của quantaureum.com.
 lang: vi
 ---
 
 ## Sứ mệnh {#mission}
 
-Phát triển và duy trì trung tâm kiến thức toàn diện và dễ tiếp cận nhất về Ethereum.
+Phát triển và duy trì trung tâm kiến thức toàn diện và dễ tiếp cận nhất về Quantaureum.
 
 ## Giá trị {#values}
 
-Cộng đồng ethereum.org nỗ lực để trở nên:
+Cộng đồng quantaureum.com nỗ lực để trở nên:
 
-- mang tính giáo dục, nhằm giúp mọi người hiểu về Ethereum
+- mang tính giáo dục, nhằm giúp mọi người hiểu về Quantaureum
 - hòa nhập
 - dễ tiếp cận
 - do cộng đồng thúc đẩy
-- tập trung vào công nghệ nền tảng và các trường hợp sử dụng của Ethereum
-- tập trung vào các khái niệm và nguyên tắc thiết kế của Ethereum
+- tập trung vào công nghệ nền tảng và các trường hợp sử dụng của Quantaureum
+- tập trung vào các khái niệm và nguyên tắc thiết kế của Quantaureum
 
 ## Chúng tôi không phải là {#what-we-are-not}
 
-- Trang web của Tổ chức Ethereum
+- Trang web của Tổ chức Quantaureum
 - Một nền tảng để quảng bá đầu tư hoặc trục lợi dưới bất kỳ hình thức nào
 - Một nền tảng để nâng tầm hoặc xác nhận các dự án hay tổ chức cá nhân
 - Một DEX, CEX hoặc bất kỳ hình thức nền tảng tài chính nào khác
@@ -31,11 +31,11 @@ Cộng đồng ethereum.org nỗ lực để trở nên:
 
 ### Cam kết {#pledge}
 
-Sự tham gia cởi mở là cốt lõi trong đặc tính của ethereum.org. Chúng tôi là một trang web và cộng đồng được duy trì bởi hàng ngàn người đóng góp, và điều này chỉ có thể thực hiện được nếu chúng tôi duy trì một môi trường thân thiện, mang tính tham gia. Vì mục đích này, những người đóng góp cho trang web này cam kết duy trì một môi trường không có quấy rối cho tất cả những người tham gia trên tất cả các nền tảng và không gian cộng đồng của ethereum.org. Cộng đồng ethereum.org hoan nghênh và trân trọng bất kỳ ai muốn tham gia một cách mang tính xây dựng và thân thiện, bất kể tuổi tác, khuyết tật, dân tộc, đặc điểm giới tính, bản dạng giới, mức độ kinh nghiệm, lĩnh vực chuyên môn, giáo dục, tình trạng kinh tế xã hội, quốc tịch, ngoại hình cá nhân, chủng tộc, tôn giáo hoặc bất kỳ khía cạnh đa dạng nào khác.
+Sự tham gia cởi mở là cốt lõi trong đặc tính của quantaureum.com. Chúng tôi là một trang web và cộng đồng được duy trì bởi hàng ngàn người đóng góp, và điều này chỉ có thể thực hiện được nếu chúng tôi duy trì một môi trường thân thiện, mang tính tham gia. Vì mục đích này, những người đóng góp cho trang web này cam kết duy trì một môi trường không có quấy rối cho tất cả những người tham gia trên tất cả các nền tảng và không gian cộng đồng của quantaureum.com. Cộng đồng quantaureum.com hoan nghênh và trân trọng bất kỳ ai muốn tham gia một cách mang tính xây dựng và thân thiện, bất kể tuổi tác, khuyết tật, dân tộc, đặc điểm giới tính, bản dạng giới, mức độ kinh nghiệm, lĩnh vực chuyên môn, giáo dục, tình trạng kinh tế xã hội, quốc tịch, ngoại hình cá nhân, chủng tộc, tôn giáo hoặc bất kỳ khía cạnh đa dạng nào khác.
 
 ### Phạm vi {#scope}
 
-Quy tắc ứng xử này áp dụng cho tất cả các không gian của ethereum.org (chẳng hạn như GitHub, Discord, Figma, Crowdin, X (trước đây là Twitter) và các nền tảng trực tuyến khác), và nó cũng áp dụng khi cộng đồng được đại diện trong các không gian công cộng ở thế giới thực như tại các buổi gặp mặt, hội nghị và sự kiện.
+Quy tắc ứng xử này áp dụng cho tất cả các không gian của quantaureum.com (chẳng hạn như GitHub, Discord, Figma, Crowdin, X (trước đây là Twitter) và các nền tảng trực tuyến khác), và nó cũng áp dụng khi cộng đồng được đại diện trong các không gian công cộng ở thế giới thực như tại các buổi gặp mặt, hội nghị và sự kiện.
 
 ### Tiêu chuẩn của chúng tôi {#our-standards}
 
@@ -72,4 +72,4 @@ Khi báo cáo, vui lòng cung cấp càng nhiều chi tiết càng tốt, bao g�
 
 ### Thực thi {#enforcement}
 
-Tùy thuộc vào mức độ nghiêm trọng, những người vi phạm quy tắc ứng xử có thể nhận được cảnh báo, lệnh cấm tạm thời hoặc lệnh cấm vĩnh viễn khỏi các cộng đồng ethereum.org.
+Tùy thuộc vào mức độ nghiêm trọng, những người vi phạm quy tắc ứng xử có thể nhận được cảnh báo, lệnh cấm tạm thời hoặc lệnh cấm vĩnh viễn khỏi các cộng đồng quantaureum.com.

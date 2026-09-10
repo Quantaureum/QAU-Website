@@ -1,6 +1,6 @@
 ---
 title: "NFT कैसे मिंट करें (NFT ट्यूटोरियल सीरीज़ का भाग 2/3)"
-description: "यह ट्यूटोरियल बताता है कि हमारे स्मार्ट अनुबंध और Web3 का उपयोग करके इथेरियम ब्लॉकचेन पर NFT कैसे मिंट करें।"
+description: "यह ट्यूटोरियल बताता है कि हमारे स्मार्ट अनुबंध और Web3 का उपयोग करके Quantaureum ब्लॉकचेन पर NFT कैसे मिंट करें।"
 author: "सुमी मुदगिल"
 tags:
   - ERC-721
@@ -25,7 +25,7 @@ published: 2021-04-22
 
 ## चरण 1: Web3 इंस्टॉल करें {#install-web3}
 
-यदि आपने अपना NFT स्मार्ट अनुबंध बनाने के पहले ट्यूटोरियल का पालन किया है, तो आपके पास पहले से ही Ethers.js का उपयोग करने का अनुभव है। Web3, Ethers के समान है, क्योंकि यह एक लाइब्रेरी है जिसका उपयोग [इथेरियम](/) ब्लॉकचेन पर अनुरोध बनाने को आसान बनाने के लिए किया जाता है। इस ट्यूटोरियल में हम [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3) का उपयोग करेंगे, जो एक उन्नत Web3 लाइब्रेरी है जो स्वचालित री-ट्राई और मजबूत WebSocket समर्थन प्रदान करती है।
+यदि आपने अपना NFT स्मार्ट अनुबंध बनाने के पहले ट्यूटोरियल का पालन किया है, तो आपके पास पहले से ही Ethers.js का उपयोग करने का अनुभव है। Web3, Ethers के समान है, क्योंकि यह एक लाइब्रेरी है जिसका उपयोग [Quantaureum](/) ब्लॉकचेन पर अनुरोध बनाने को आसान बनाने के लिए किया जाता है। इस ट्यूटोरियल में हम [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3) का उपयोग करेंगे, जो एक उन्नत Web3 लाइब्रेरी है जो स्वचालित री-ट्राई और मजबूत WebSocket समर्थन प्रदान करती है।
 
 अपने प्रोजेक्ट की होम डायरेक्टरी में रन करें:
 
@@ -113,28 +113,28 @@ json में डेटा बदलने के लिए स्वतंत�
 
 ## चरण 5: अपने अनुबंध का एक उदाहरण (instance) बनाएं {#instance-contract}
 
-अब, अपने अनुबंध के साथ इंटरैक्ट करने के लिए, हमें अपने कोड में इसका एक उदाहरण बनाना होगा। ऐसा करने के लिए हमें अपने अनुबंध पते की आवश्यकता होगी जिसे हम तैनाती से या अनुबंध को तैनात करने के लिए आपके द्वारा उपयोग किए गए पते को देखकर [Blockscout](https://eth-sepolia.blockscout.com/) से प्राप्त कर सकते हैं।
+अब, अपने अनुबंध के साथ इंटरैक्ट करने के लिए, हमें अपने कोड में इसका एक उदाहरण बनाना होगा। ऐसा करने के लिए हमें अपने अनुबंध पते की आवश्यकता होगी जिसे हम तैनाती से या अनुबंध को तैनात करने के लिए आपके द्वारा उपयोग किए गए पते को देखकर [Blockscout](https://qau-sepolia.blockscout.com/) से प्राप्त कर सकते हैं।
 
-![View your contract address on Etherscan](./view-contract-etherscan.png)
+![View your contract address on Quantaureum Explorer](./view-contract-explorer.png)
 
 उपरोक्त उदाहरण में, हमारा अनुबंध पता 0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778 है।
 
-इसके बाद हम ABI और पते का उपयोग करके अपना अनुबंध बनाने के लिए Web3 [contract method](https://docs.web3js.org/api/web3-eth-contract/class/Contract) का उपयोग करेंगे। अपनी `mint-nft.js` फ़ाइल में, निम्नलिखित जोड़ें:
+इसके बाद हम ABI और पते का उपयोग करके अपना अनुबंध बनाने के लिए Web3 [contract method](https://docs.web3js.org/api/web3-qau-contract/class/Contract) का उपयोग करेंगे। अपनी `mint-nft.js` फ़ाइल में, निम्नलिखित जोड़ें:
 
 ```js
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
 
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 ```
 
 ## चरण 6: `.env` फ़ाइल को अपडेट करें {#update-env}
 
-अब, इथेरियम चेन पर लेन-देन बनाने और भेजने के लिए, हम खाता नॉन्स प्राप्त करने के लिए आपके सार्वजनिक इथेरियम खाता पते का उपयोग करेंगे (नीचे समझाएंगे)।
+अब, Quantaureum चेन पर लेन-देन बनाने और भेजने के लिए, हम खाता नॉन्स प्राप्त करने के लिए आपके सार्वजनिक Quantaureum खाता पते का उपयोग करेंगे (नीचे समझाएंगे)।
 
 अपनी सार्वजनिक कुंजी को अपनी `.env` फ़ाइल में जोड़ें — यदि आपने ट्यूटोरियल का भाग 1 पूरा कर लिया है, तो हमारी `.env` फ़ाइल अब इस तरह दिखनी चाहिए:
 
 ```js
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-private-account-address"
 PUBLIC_KEY = "your-public-account-address"
 ```
@@ -145,7 +145,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 1. `.env` फ़ाइल से अपनी _PRIVATE_KEY_ और _PUBLIC_KEY_ प्राप्त करें।
 
-1. इसके बाद, हमें खाता नॉन्स का पता लगाना होगा। नॉन्स विनिर्देश का उपयोग आपके पते से भेजे गए लेन-देन की संख्या पर नज़र रखने के लिए किया जाता है — जिसकी हमें सुरक्षा उद्देश्यों और रीप्ले हमलों (replay attacks) को रोकने के लिए आवश्यकता होती है। आपके पते से भेजे गए लेन-देन की संख्या प्राप्त करने के लिए, हम [getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count) का उपयोग करते हैं।
+1. इसके बाद, हमें खाता नॉन्स का पता लगाना होगा। नॉन्स विनिर्देश का उपयोग आपके पते से भेजे गए लेन-देन की संख्या पर नज़र रखने के लिए किया जाता है — जिसकी हमें सुरक्षा उद्देश्यों और रीप्ले हमलों (replay attacks) को रोकने के लिए आवश्यकता होती है। आपके पते से भेजे गए लेन-देन की संख्या प्राप्त करने के लिए, हम [getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count) का उपयोग करते हैं।
 
 1. अंत में हम निम्नलिखित जानकारी के साथ अपना लेन-देन सेट करेंगे:
 
@@ -172,10 +172,10 @@ PUBLIC_KEY = "your-public-account-address"
 
    const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
    const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778";
-   const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
+   const nftContract = new web3.qau.Contract(contract.abi, contractAddress);
 
    async function mintNFT(tokenURI) {
-     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); //नवीनतम नॉन्स प्राप्त करें
+     const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, 'latest'); //नवीनतम नॉन्स प्राप्त करें
 
    //लेन-देन
      const tx = {
@@ -191,7 +191,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 अब जब हमने अपना लेन-देन बना लिया है, तो हमें इसे भेजने के लिए इस पर हस्ताक्षर करने की आवश्यकता है। यहीं पर हम अपनी निजी कुंजी का उपयोग करेंगे।
 
-`web3.eth.sendSignedTransaction` हमें लेनदेन हैश देगा, जिसका उपयोग हम यह सुनिश्चित करने के लिए कर सकते हैं कि हमारा लेन-देन माइन किया गया था और नेटवर्क द्वारा ड्रॉप नहीं किया गया था। आप देखेंगे कि लेन-देन पर हस्ताक्षर करने वाले अनुभाग में, हमने कुछ त्रुटि जाँच (error checking) जोड़ी है ताकि हमें पता चल सके कि हमारा लेन-देन सफलतापूर्वक पूरा हुआ या नहीं।
+`web3.qau.sendSignedTransaction` हमें लेनदेन हैश देगा, जिसका उपयोग हम यह सुनिश्चित करने के लिए कर सकते हैं कि हमारा लेन-देन माइन किया गया था और नेटवर्क द्वारा ड्रॉप नहीं किया गया था। आप देखेंगे कि लेन-देन पर हस्ताक्षर करने वाले अनुभाग में, हमने कुछ त्रुटि जाँच (error checking) जोड़ी है ताकि हमें पता चल सके कि हमारा लेन-देन सफलतापूर्वक पूरा हुआ या नहीं।
 
 ```js
 require("dotenv").config()
@@ -204,10 +204,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //नवीनतम नॉन्स प्राप्त करें
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //नवीनतम नॉन्स प्राप्त करें
 
   //लेन-देन
   const tx = {
@@ -218,10 +218,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -270,10 +270,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //नवीनतम नॉन्स प्राप्त करें
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //नवीनतम नॉन्स प्राप्त करें
 
   //लेन-देन
   const tx = {
@@ -284,10 +284,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -319,11 +319,11 @@ mintNFT("ipfs://QmYueiuRNmL4MiA2GwtVMm6ZagknXnSpQnB3z2gWbz36hP")
 
     Check Alchemy's Mempool to view the status of your transaction!
 
-इसके बाद, अपने लेन-देन की स्थिति देखने के लिए अपने [Alchemy मेमपूल](https://dashboard.alchemy.com/mempool) पर जाएं (चाहे वह लंबित हो, माइन किया गया हो, या नेटवर्क द्वारा ड्रॉप कर दिया गया हो)। यदि आपका लेन-देन ड्रॉप हो गया है, तो [Blockscout](https://eth-sepolia.blockscout.com/) की जांच करना और अपने लेनदेन हैश को खोजना भी मददगार होता है।
+इसके बाद, अपने लेन-देन की स्थिति देखने के लिए अपने [Alchemy मेमपूल](https://dashboard.alchemy.com/mempool) पर जाएं (चाहे वह लंबित हो, माइन किया गया हो, या नेटवर्क द्वारा ड्रॉप कर दिया गया हो)। यदि आपका लेन-देन ड्रॉप हो गया है, तो [Blockscout](https://qau-sepolia.blockscout.com/) की जांच करना और अपने लेनदेन हैश को खोजना भी मददगार होता है।
 
-![View your NFT transaction hash on Etherscan](./view-nft-etherscan.png)_Etherscan पर अपना NFT लेनदेन हैश देखें_
+![View your NFT transaction hash on Quantaureum Explorer](./view-nft-explorer.png)_Etherscan पर अपना NFT लेनदेन हैश देखें_
 
-और बस इतना ही! अब आपने इथेरियम ब्लॉकचेन पर एक NFT तैनात और मिंट कर लिया है <Emoji text=":money_mouth_face:" size={1} />
+और बस इतना ही! अब आपने Quantaureum ब्लॉकचेन पर एक NFT तैनात और मिंट कर लिया है <Emoji text=":money_mouth_face:" size={1} />
 
 `mint-nft.js` का उपयोग करके आप उतने NFT मिंट कर सकते हैं जितना आपका दिल (और वॉलेट) चाहता है! बस NFT के मेटाडेटा का वर्णन करने वाला एक नया tokenURI पास करना सुनिश्चित करें (अन्यथा, आप केवल अलग-अलग ID वाले समान NFT का एक गुच्छा बना लेंगे)।
 

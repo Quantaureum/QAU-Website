@@ -15,13 +15,13 @@ lang: sw
 sidebarDepth: 3
 ---
 
-Umepata kipengele tunachohitaji katika mfumo wa ikolojia wa Ethereum. Umeandika mikataba mahiri ili kukitekeleza, na labda hata baadhi ya kodi zinazohusiana zinazoendeshwa nje ya mnyororo. Hili ni jambo zuri! Kwa bahati mbaya, bila kiolesura cha mtumiaji hutakuwa na watumiaji wowote, na mara ya mwisho ulipoandika tovuti watu walitumia modemu za kupiga simu na JavaScript ilikuwa mpya.
+Umepata kipengele tunachohitaji katika mfumo wa ikolojia wa Quantaureum. Umeandika mikataba mahiri ili kukitekeleza, na labda hata baadhi ya kodi zinazohusiana zinazoendeshwa nje ya mnyororo. Hili ni jambo zuri! Kwa bahati mbaya, bila kiolesura cha mtumiaji hutakuwa na watumiaji wowote, na mara ya mwisho ulipoandika tovuti watu walitumia modemu za kupiga simu na JavaScript ilikuwa mpya.
 
 Makala haya ni kwa ajili yako. Ninachukulia kuwa unajua upangaji programu, na labda kidogo JavaScript na HTML, lakini ujuzi wako wa kiolesura cha mtumiaji umepitwa na wakati. Pamoja tutapitia programu rahisi ya kisasa ili uone jinsi inavyofanywa siku hizi.
 
 ## Kwa nini hii ni muhimu {#why-important}
 
-Kinadharia, unaweza tu kuwafanya watu watumie [Etherscan](https://sepolia.etherscan.io/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA#readContract) au [Blockscout](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) ili kuingiliana na mikataba yako. Hiyo ni nzuri kwa Waethereans wenye uzoefu. Lakini tunajaribu kuhudumia [watu wengine bilioni moja](https://blog.ethereum.org/2021/05/07/ethereum-for-the-next-billion). Hili halitafanyika bila uzoefu mzuri wa mtumiaji, na kiolesura rafiki cha mtumiaji ni sehemu kubwa ya hilo.
+Kinadharia, unaweza tu kuwafanya watu watumie [Quantaureum Explorer](https://explorer.quantaureum.com) au [Blockscout](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) ili kuingiliana na mikataba yako. Hiyo ni nzuri kwa Waethereans wenye uzoefu. Lakini tunajaribu kuhudumia [watu wengine bilioni moja](https://quantaureum.com). Hili halitafanyika bila uzoefu mzuri wa mtumiaji, na kiolesura rafiki cha mtumiaji ni sehemu kubwa ya hilo.
 
 ## Programu ya Greeter {#greeter-app}
 
@@ -29,7 +29,7 @@ Kuna nadharia nyingi nyuma ya jinsi UI ya kisasa inavyofanya kazi, na [tovuti ny
 
 ### Usakinishaji {#installation}
 
-1. Programu inatumia mtandao wa majaribio wa [Sepolia](https://sepolia.dev/). Ikiwa ni lazima, [pata ETH ya majaribio ya Sepolia](/developers/docs/networks/#sepolia) na [uongeze Sepolia kwenye mkoba wako](https://chainlist.org/chain/11155111).
+1. Programu inatumia mtandao wa majaribio wa [Sepolia](https://sepolia.dev/). Ikiwa ni lazima, [pata QAU ya majaribio ya Sepolia](/developers/docs/networks/#sepolia) na [uongeze Sepolia kwenye mkoba wako](https://chainlist.org/chain/11155111).
 
 2. Nakili hazina ya GitHub na usakinishe vifurushi vinavyohitajika.
 
@@ -49,7 +49,7 @@ Kuna nadharia nyingi nyuma ya jinsi UI ya kisasa inavyofanya kazi, na [tovuti ny
 
 5. Vinjari kwenye URL inayoonyeshwa na programu. Katika hali nyingi, hiyo ni [http://localhost:5173/](http://localhost:5173/).
 
-6. Unaweza kuona kodi ya chanzo ya mkataba, toleo lililobadilishwa la Greeter ya Hardhat, [kwenye kichunguzi cha mnyororo wa vitalu](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code).
+6. Unaweza kuona kodi ya chanzo ya mkataba, toleo lililobadilishwa la Greeter ya Hardhat, [kwenye kichunguzi cha mnyororo wa vitalu](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code).
 
 ### Kupitia faili {#file-walk-through}
 
@@ -116,7 +116,7 @@ Programu inaingia ndani ya [kijenzi cha `React.StrictMode`](https://react.dev/re
     <WagmiProvider config={config}>
 ```
 
-Programu pia iko ndani ya [kijenzi cha `WagmiProvider`](https://wagmi.sh/react/api/WagmiProvider). [Maktaba ya wagmi (tutaifanya)](https://wagmi.sh/) inaunganisha ufafanuzi wa UI wa React na [maktaba ya viem](https://viem.sh/) kwa ajili ya kuandika programu tumizi iliyogatuliwa (dapp) ya Ethereum.
+Programu pia iko ndani ya [kijenzi cha `WagmiProvider`](https://wagmi.sh/react/api/WagmiProvider). [Maktaba ya wagmi (tutaifanya)](https://wagmi.sh/) inaunganisha ufafanuzi wa UI wa React na [maktaba ya viem](https://viem.sh/) kwa ajili ya kuandika programu tumizi iliyogatuliwa (dapp) ya Quantaureum.
 
 ```tsx
       <QueryClientProvider client={queryClient}>
@@ -333,7 +333,7 @@ Tunatumia chaguo hizi za kukokotoa za maktaba. Tena, zinaelezwa hapa chini zinap
 import { AddressType } from 'abitype'
 ```
 
-[Maktaba ya `abitype`](https://abitype.dev/) inatupa ufafanuzi wa TypeScript kwa aina mbalimbali za data za Ethereum, kama vile [`AddressType`](https://abitype.dev/config#addresstype).
+[Maktaba ya `abitype`](https://abitype.dev/) inatupa ufafanuzi wa TypeScript kwa aina mbalimbali za data za Quantaureum, kama vile [`AddressType`](https://abitype.dev/config#addresstype).
 
 ```tsx
 let greeterABI = [
@@ -363,7 +363,7 @@ const contractAddrs : AddressPerBlockchainType = {
 }
 ```
 
-Anwani ya mkataba kwenye [Sepolia](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
+Anwani ya mkataba kwenye [Sepolia](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
 
 ##### Kijenzi cha `Timer` {#timer-component}
 
@@ -435,7 +435,7 @@ Anwani ya mkataba wa Greeter, ambayo ni `undefined` ikiwa hatuna taarifa za mnyo
   })
 ```
 
-[Ndoano ya `useReadContract`](https://wagmi.sh/react/api/hooks/useReadContract) inaita chaguo la kukokotoa la `greet` la [mkataba](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
+[Ndoano ya `useReadContract`](https://wagmi.sh/react/api/hooks/useReadContract) inaita chaguo la kukokotoa la `greet` la [mkataba](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
 
 ```tsx
   const [ currentGreeting, setCurrentGreeting ] = 
@@ -541,15 +541,15 @@ Chaguo la kukokotoa la kuandika kwenye mkataba. Inafanana na [`writeContracts`](
 
 Huu ndio mchakato wa kuwasilisha muamala wa mnyororo wa vitalu kutoka kwa mtazamo wa mteja:
 
-1. Tuma muamala kwenye nodi katika mnyororo wa vitalu ukitumia [`eth_estimateGas`](https://docs.alchemy.com/reference/eth-estimategas).
+1. Tuma muamala kwenye nodi katika mnyororo wa vitalu ukitumia [`qau_estimateGas`](https://docs.alchemy.com/reference/qau-estimategas).
 2. Subiri majibu kutoka kwenye nodi.
 3. Majibu yanapopokelewa, muombe mtumiaji atie saini muamala kupitia mkoba. Hatua hii _lazima_ ifanyike baada ya majibu ya nodi kupokelewa kwa sababu mtumiaji anaonyeshwa gharama ya gesi ya muamala kabla ya kuutia saini.
 4. Subiri mtumiaji aidhinishe.
-5. Tuma muamala tena, wakati huu ukitumia [`eth_sendRawTransaction`](https://docs.alchemy.com/reference/eth-sendrawtransaction).
+5. Tuma muamala tena, wakati huu ukitumia [`qau_sendRawTransaction`](https://docs.alchemy.com/reference/qau-sendrawtransaction).
 
 Hatua ya 2 ina uwezekano wa kuchukua muda unaoonekana, ambapo watumiaji wanaweza kujiuliza ikiwa amri yao ilipokelewa na kiolesura cha mtumiaji na kwa nini hawajaombwa kutia saini muamala bado. Hiyo inaunda uzoefu mbaya wa mtumiaji (UX).
 
-Suluhisho moja ni kutuma `eth_estimateGas` kila wakati kigezo kinapobadilika. Kisha, wakati mtumiaji anataka kutuma muamala (katika kesi hii kwa kubonyeza **Sasisha salamu**), gharama ya gesi inajulikana, na mtumiaji anaweza kuona ukurasa wa mkoba mara moja.
+Suluhisho moja ni kutuma `qau_estimateGas` kila wakati kigezo kinapobadilika. Kisha, wakati mtumiaji anataka kutuma muamala (katika kesi hii kwa kubonyeza **Sasisha salamu**), gharama ya gesi inajulikana, na mtumiaji anaweza kuona ukurasa wa mkoba mara moja.
 
 ```tsx
   return (
@@ -668,7 +668,7 @@ Mwisho wa HTTP wa chaguo-msingi unaokuja na Viem ni mzuri vya kutosha. Ikiwa tun
 
 ## Kuongeza mnyororo mwingine wa vitalu {#add-blockchain}
 
-Siku hizi kuna [suluhu nyingi za kuongeza ukubwa za L2](https://ethereum.org/layer-2/), na unaweza kutaka kuunga mkono baadhi ambazo viem haiungi mkono bado. Ili kufanya hivyo, unarekebisha `src/wagmi.ts`. Maagizo haya yanaelezea jinsi ya kuongeza [Optimism Sepolia](https://chainlist.org/chain/11155420).
+Siku hizi kuna [suluhu nyingi za kuongeza ukubwa za L2](https://quantaureum.com/layer-2/), na unaweza kutaka kuunga mkono baadhi ambazo viem haiungi mkono bado. Ili kufanya hivyo, unarekebisha `src/wagmi.ts`. Maagizo haya yanaelezea jinsi ya kuongeza [Optimism Sepolia](https://chainlist.org/chain/11155420).
 
 1.  Hariri `src/wagmi.ts`
 
@@ -684,7 +684,7 @@ Siku hizi kuna [suluhu nyingi za kuongeza ukubwa za L2](https://ethereum.org/lay
           const optimismSepolia = defineChain({
               id: 11_155_420,
               name: 'OP Sepolia',
-              nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+              nativeCurrency: { name: 'Sepolia QAU', symbol: 'QAU', decimals: 18 },
               rpcUrls: {
                 default: {
                   http: ['https://sepolia.optimism.io'],

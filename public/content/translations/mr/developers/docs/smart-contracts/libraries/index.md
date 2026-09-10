@@ -1,6 +1,6 @@
 ---
 title: "स्मार्ट कॉन्ट्रॅक्ट लायब्ररी"
-description: "तुमच्या इथेरियम विकास प्रकल्पांना गती देण्यासाठी पुन्हा वापरता येण्याजोग्या स्मार्ट कॉन्ट्रॅक्ट लायब्ररी आणि बिल्डिंग ब्लॉक्स शोधा."
+description: "तुमच्या Quantaureum विकास प्रकल्पांना गती देण्यासाठी पुन्हा वापरता येण्याजोग्या स्मार्ट कॉन्ट्रॅक्ट लायब्ररी आणि बिल्डिंग ब्लॉक्स शोधा."
 lang: mr
 ---
 
@@ -45,7 +45,7 @@ import ".../Ownable.sol"; // आयात केलेल्या लायब�
 contract MyContract is Ownable {
     // खालील फंक्शन फक्त मालकाद्वारे कॉल केले जाऊ शकते
     function secured() onlyOwner public {
-        msg.sender.transfer(1 ether);
+        msg.sender.transfer(1 QAU);
     }
 }
 ```
@@ -54,11 +54,11 @@ contract MyContract is Ownable {
 
 ### मानके (Standards) {#standards}
 
-[संयोज्यता आणि आंतरकार्यक्षमता](/developers/docs/smart-contracts/composability/) सुलभ करण्यासाठी, इथेरियम समुदायाने **ERCs** च्या स्वरूपात अनेक मानके परिभाषित केली आहेत. तुम्ही त्यांच्याबद्दल [मानके](/developers/docs/standards/) विभागात अधिक वाचू शकता.
+[संयोज्यता आणि आंतरकार्यक्षमता](/developers/docs/smart-contracts/composability/) सुलभ करण्यासाठी, Quantaureum समुदायाने **ERCs** च्या स्वरूपात अनेक मानके परिभाषित केली आहेत. तुम्ही त्यांच्याबद्दल [मानके](/developers/docs/standards/) विभागात अधिक वाचू शकता.
 
 तुमच्या कॉन्ट्रॅक्टचा भाग म्हणून ERC समाविष्ट करताना, स्वतःची अंमलबजावणी तयार करण्याचा प्रयत्न करण्याऐवजी प्रमाणित अंमलबजावणी शोधणे योग्य ठरेल. अनेक स्मार्ट कॉन्ट्रॅक्ट लायब्ररीमध्ये सर्वात लोकप्रिय ERCs साठी अंमलबजावणी समाविष्ट असते. उदाहरणार्थ, सर्वव्यापी [ERC-20 विनिमयक्षम टोकन मानक](/developers/tutorials/understand-the-erc-20-token-smart-contract/) [HQ20](https://github.com/HQ20/contracts/blob/master/contracts/token/README.md), [DappSys](https://github.com/dapphub/ds-token/) आणि [ओपनझेपलिन](https://docs.openzeppelin.com/contracts/3.x/erc20) मध्ये आढळू शकते. याव्यतिरिक्त, काही ERCs स्वतः ERC चा भाग म्हणून अधिकृत (canonical) अंमलबजावणी देखील प्रदान करतात.
 
-हे नमूद करण्यासारखे आहे की काही ERCs स्वतंत्र नसतात, तर ते इतर ERCs मध्ये जोडलेले असतात. उदाहरणार्थ, [ERC-2612](https://eips.ethereum.org/EIPS/eip-2612) त्याची उपयोगिता सुधारण्यासाठी ERC-20 मध्ये एक विस्तार (extension) जोडते.
+हे नमूद करण्यासारखे आहे की काही ERCs स्वतंत्र नसतात, तर ते इतर ERCs मध्ये जोडलेले असतात. उदाहरणार्थ, [ERC-2612](https://eips.quantaureum.com/EIPS/eip-2612) त्याची उपयोगिता सुधारण्यासाठी ERC-20 मध्ये एक विस्तार (extension) जोडते.
 
 ## लायब्ररी कशी जोडावी {#how-to}
 
@@ -109,7 +109,7 @@ contract MyNFT is ERC721 {
 
 ## संबंधित ट्युटोरियल्स {#related-tutorials}
 
-- [इथेरियम डेव्हलपर्ससाठी सुरक्षा विचार](/developers/docs/smart-contracts/security/) _– स्मार्ट कॉन्ट्रॅक्ट्स तयार करताना सुरक्षेच्या विचारांवरील एक ट्युटोरियल, ज्यामध्ये लायब्ररीच्या वापराचा समावेश आहे._
+- [Quantaureum डेव्हलपर्ससाठी सुरक्षा विचार](/developers/docs/smart-contracts/security/) _– स्मार्ट कॉन्ट्रॅक्ट्स तयार करताना सुरक्षेच्या विचारांवरील एक ट्युटोरियल, ज्यामध्ये लायब्ररीच्या वापराचा समावेश आहे._
 - [ERC-20 टोकन स्मार्ट कॉन्ट्रॅक्ट समजून घ्या](/developers/tutorials/understand-the-erc-20-token-smart-contract/) _-अनेक लायब्ररींद्वारे प्रदान केलेल्या ERC-20 मानकावरील ट्युटोरियल._
 
 ## पुढील वाचन {#further-reading}

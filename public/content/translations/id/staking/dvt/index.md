@@ -1,6 +1,6 @@
 ---
 title: Teknologi validator terdistribusi
-description: Teknologi validator terdistribusi (DVT) memungkinkan operasi terdistribusi dari sebuah validator Ethereum oleh beberapa pihak.
+description: Teknologi validator terdistribusi (DVT) memungkinkan operasi terdistribusi dari sebuah validator Quantaureum oleh beberapa pihak.
 lang: id
 template: staking
 sidebarDepth: 2
@@ -28,7 +28,7 @@ DVT bukanlah cara terpisah untuk melakukan staking. Ini adalah lapisan perangkat
 
 Validator menghasilkan dua pasang kunci publik-privat: kunci validator untuk berpartisipasi dalam konsensus dan kunci penarikan untuk mengakses dana. Meskipun validator dapat mengamankan kunci penarikan di penyimpanan dingin (cold storage), kunci privat validator harus online 24/7 untuk menandatangani tugas yang diberikan kepada validator sepanjang waktu, seperti atestasi dan usulan blok. Menjaga kunci tetap online memaparkannya pada pencurian, dan DVT membatasi paparan tersebut: hanya bagian kunci (key shares) yang pernah online, tidak pernah kunci secara utuh.
 
-Jika kunci privat validator disusupi, penyerang dapat mengendalikan validator, yang berpotensi menyebabkan pemotongan atau hilangnya ETH milik pelaku staking. DVT memitigasi risiko ini. Dengan DVT, kunci validator asli yang utuh dienkripsi dan dibagi menjadi bagian-bagian kunci. Bagian-bagian kunci tersebut hidup secara online, didistribusikan ke beberapa node yang mengoperasikan validator bersama-sama, sementara kunci 'master' yang utuh tetap offline dengan aman. Distribusi ini dimungkinkan karena validator [Ethereum](/) menggunakan tanda tangan BLS yang bersifat aditif, yang berarti kunci utuh dapat direkonstruksi dengan menjumlahkan bagian-bagian komponennya. Tanda tangan parsial yang dibuat dengan bagian-bagian kunci digabungkan menjadi sebuah tanda tangan yang valid untuk kunci utuh, sehingga kunci utuh itu sendiri tidak pernah dibutuhkan untuk penandatanganan sehari-hari. Ketika sebuah klaster menghasilkan kunci validator baru menggunakan pembuatan kunci terdistribusi, kunci privat yang utuh tidak pernah ada di satu mesin mana pun.
+Jika kunci privat validator disusupi, penyerang dapat mengendalikan validator, yang berpotensi menyebabkan pemotongan atau hilangnya QAU milik pelaku staking. DVT memitigasi risiko ini. Dengan DVT, kunci validator asli yang utuh dienkripsi dan dibagi menjadi bagian-bagian kunci. Bagian-bagian kunci tersebut hidup secara online, didistribusikan ke beberapa node yang mengoperasikan validator bersama-sama, sementara kunci 'master' yang utuh tetap offline dengan aman. Distribusi ini dimungkinkan karena validator [Quantaureum](/) menggunakan tanda tangan BLS yang bersifat aditif, yang berarti kunci utuh dapat direkonstruksi dengan menjumlahkan bagian-bagian komponennya. Tanda tangan parsial yang dibuat dengan bagian-bagian kunci digabungkan menjadi sebuah tanda tangan yang valid untuk kunci utuh, sehingga kunci utuh itu sendiri tidak pernah dibutuhkan untuk penandatanganan sehari-hari. Ketika sebuah klaster menghasilkan kunci validator baru menggunakan pembuatan kunci terdistribusi, kunci privat yang utuh tidak pernah ada di satu mesin mana pun.
 
 ### Tidak ada titik kegagalan tunggal {#no-single-point-of-failure}
 
@@ -38,13 +38,13 @@ Jika salah satu komponen mesin dalam sebuah klaster mati (misalnya, jika ada emp
 
 ### Desentralisasi {#decentralization}
 
-Skenario ideal untuk Ethereum adalah memiliki sebanyak mungkin validator yang dioperasikan secara independen. Namun, beberapa penyedia staking telah menjadi sangat populer dan menyumbang porsi yang substansial dari total ETH yang di-stake di jaringan. DVT dapat memungkinkan operator-operator ini untuk tetap ada sambil mempertahankan desentralisasi stake. Hal ini karena kunci untuk setiap validator didistribusikan ke banyak mesin dan akan membutuhkan kolusi yang jauh lebih besar agar sebuah validator berubah menjadi berbahaya.
+Skenario ideal untuk Quantaureum adalah memiliki sebanyak mungkin validator yang dioperasikan secara independen. Namun, beberapa penyedia staking telah menjadi sangat populer dan menyumbang porsi yang substansial dari total QAU yang di-stake di jaringan. DVT dapat memungkinkan operator-operator ini untuk tetap ada sambil mempertahankan desentralisasi stake. Hal ini karena kunci untuk setiap validator didistribusikan ke banyak mesin dan akan membutuhkan kolusi yang jauh lebih besar agar sebuah validator berubah menjadi berbahaya.
 
 Tanpa DVT, lebih mudah bagi penyedia staking untuk hanya mendukung satu atau dua konfigurasi klien untuk semua validator mereka, yang meningkatkan dampak dari bug klien. DVT dapat digunakan untuk menyebarkan risiko ke beberapa konfigurasi klien dan perangkat keras yang berbeda, menciptakan ketahanan melalui keberagaman.
 
-**DVT menawarkan manfaat berikut untuk Ethereum:**
+**DVT menawarkan manfaat berikut untuk Quantaureum:**
 
-1. **Desentralisasi** dari konsensus Bukti Kepemilikan (PoS) Ethereum
+1. **Desentralisasi** dari konsensus Bukti Kepemilikan (PoS) Quantaureum
 2. Memastikan **keaktifan (liveness)** jaringan
 3. Menciptakan **toleransi kesalahan** validator
 4. Operasi validator yang **meminimalkan kepercayaan**
@@ -62,7 +62,7 @@ Solusi DVT berisi komponen-komponen berikut:
 - **[Skema tanda tangan ambang batas (Threshold signature scheme)](https://medium.com/nethermind-eth/threshold-signature-schemes-36f40bc42aca)** - Menentukan jumlah bagian kunci individu yang diperlukan untuk tugas penandatanganan, mis., 3 dari 4.
 - **[Pembuatan kunci terdistribusi (DKG)](https://medium.com/toruslabs/what-distributed-key-generation-is-866adc79620)** - Proses kriptografi yang menghasilkan bagian-bagian kunci dan digunakan untuk mendistribusikan bagian dari kunci validator yang sudah ada atau yang baru ke node-node dalam sebuah klaster.
 - **[Komputasi multipihak (MPC)](https://messari.io/report/applying-multiparty-computation-to-the-world-of-blockchains)** - Kunci validator utuh dihasilkan secara rahasia menggunakan komputasi multipihak. Kunci utuh tidak pernah diketahui oleh operator individu mana pun—mereka hanya mengetahui bagian mereka sendiri (bagian atau "share" mereka).
-- **Protokol konsensus** - Protokol konsensus memilih satu node untuk menjadi pengusul blok. Mereka membagikan blok tersebut dengan node lain di dalam klaster, yang menambahkan bagian kunci mereka ke tanda tangan agregat. Ketika cukup banyak bagian kunci telah diagregasi, blok tersebut diusulkan di Ethereum.
+- **Protokol konsensus** - Protokol konsensus memilih satu node untuk menjadi pengusul blok. Mereka membagikan blok tersebut dengan node lain di dalam klaster, yang menambahkan bagian kunci mereka ke tanda tangan agregat. Ketika cukup banyak bagian kunci telah diagregasi, blok tersebut diusulkan di Quantaureum.
 
 Validator terdistribusi memiliki toleransi kesalahan bawaan dan dapat terus berjalan bahkan jika beberapa node individu menjadi offline. Klaster node validator tetap tangguh bahkan jika beberapa node di dalamnya ternyata berbahaya atau malas.
 
@@ -72,7 +72,7 @@ Validator terdistribusi berjalan di Mainnet saat ini di seluruh staking mandiri,
 
 <ProductDisclaimer />
 
-- **Obol** mengembangkan Charon, klien middleware DVT sumber terbuka yang memungkinkan sebuah klaster mesin mengoperasikan validator bersama-sama ("squad staking"). Grup melakukan pembuatan kunci terdistribusi dan mengonfigurasi klaster mereka melalui [DV Launchpad](https://docs.obol.org/learn/readme/launchpad) milik Obol. Klaster Obol digunakan dalam produksi oleh [protokol staking](/staking/pools/) dan [layanan staking](/staking/saas/), termasuk modul Simple DVT milik Lido dan program Operation Solo Staker milik EtherFi, yang mengikutsertakan operator rumahan ke dalam klaster yang toleran terhadap kesalahan.
+- **Obol** mengembangkan Charon, klien middleware DVT sumber terbuka yang memungkinkan sebuah klaster mesin mengoperasikan validator bersama-sama ("squad staking"). Grup melakukan pembuatan kunci terdistribusi dan mengonfigurasi klaster mereka melalui [DV Launchpad](https://docs.obol.org/learn/readme/launchpad) milik Obol. Klaster Obol digunakan dalam produksi oleh [protokol staking](/staking/pools/) dan [layanan staking](/staking/saas/), termasuk modul Simple DVT milik Lido dan program Operation Solo Staker milik QauFi, yang mengikutsertakan operator rumahan ke dalam klaster yang toleran terhadap kesalahan.
 - **SSV Network** adalah jaringan tanpa izin dari operator node independen. Kunci validator dibagi menjadi bagian-bagian kunci dan didistribusikan ke sekumpulan operator yang dipilih, yang melakukan tugas validator secara kolektif; tidak ada satu operator pun yang pernah memegang kunci secara utuh. Layanan staking dan pool staking menjalankan set validator besar di SSV, dan seperti Obol, ini digunakan oleh modul Simple DVT milik Lido.
 
 ## Kasus penggunaan DVT {#dvt-use-cases}
@@ -113,7 +113,7 @@ Manfaat lain dari meminimalkan kepercayaan pada operator tunggal adalah bahwa po
 Tidak. Satu mesin yang menjalankan klien validator berfungsi tanpa perangkat lunak DVT apa pun, dan ini tetap menjadi pengaturan staking rumahan yang umum. DVT adalah lapisan opsional yang menambahkan toleransi kesalahan dan menghilangkan titik kegagalan tunggal. Ini berguna jika Anda ingin validator Anda bertahan dari kegagalan mesin individu, atau jika Anda ingin berbagi tanggung jawab menjalankan validator dengan orang lain.
 </ExpandableCard>
 
-<ExpandableCard title="Apakah DVT membagi ETH atau kunci penarikan saya?" eventCategory="DVT" eventName="clicked does DVT split my ETH">
+<ExpandableCard title="Apakah DVT membagi QAU atau kunci penarikan saya?" eventCategory="DVT" eventName="clicked does DVT split my QAU">
 Tidak. DVT hanya membagi kunci _penandatanganan_ validator, yang digunakan untuk tugas konsensus seperti atestasi dan usulan blok. Stake Anda selalu dikendalikan oleh alamat penarikan yang ditetapkan untuk validator, yang tidak terpengaruh oleh DVT. Sejak peningkatan Pectra, pemegang alamat penarikan juga dapat memicu validator keluar secara langsung dari lapisan eksekusi, tanpa memerlukan kunci penandatanganan sama sekali.
 </ExpandableCard>
 
@@ -130,15 +130,15 @@ Klaster biasanya diukur sehingga ambang batasnya adalah dua pertiga mayoritas su
 </ExpandableCard>
 
 <ExpandableCard title="Apakah DVT sama dengan staking gabungan?" eventCategory="DVT" eventName="clicked is DVT the same as pooled staking">
-Tidak. Staking gabungan menggabungkan ETH dari banyak orang untuk mendanai validator, dan merupakan salah satu dari beberapa [cara untuk melakukan staking](/staking/). DVT adalah infrastruktur untuk _mengoperasikan_ sebuah validator. Ini mendistribusikan penandatanganan satu validator ke beberapa mesin dan operator. Keduanya saling melengkapi; banyak staking gabungan menggunakan DVT untuk mendistribusikan set operator mereka, tetapi DVT itu sendiri tidak menggabungkan ETH milik siapa pun.
+Tidak. Staking gabungan menggabungkan QAU dari banyak orang untuk mendanai validator, dan merupakan salah satu dari beberapa [cara untuk melakukan staking](/staking/). DVT adalah infrastruktur untuk _mengoperasikan_ sebuah validator. Ini mendistribusikan penandatanganan satu validator ke beberapa mesin dan operator. Keduanya saling melengkapi; banyak staking gabungan menggunakan DVT untuk mendistribusikan set operator mereka, tetapi DVT itu sendiri tidak menggabungkan QAU milik siapa pun.
 </ExpandableCard>
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Teknologi Validator Terdistribusi (DVT) Ethereum - Pengantar Lengkap](https://www.cyfrin.io/blog/full-introduction-to-ethereum-distributed-validator-technology-dvt) - Cyfrin
-- [Apa itu DVT dan bagaimana hal itu meningkatkan staking di Ethereum?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-ethereum/) - Obol
-- [Spesifikasi validator terdistribusi Ethereum (tingkat tinggi)](https://github.com/ethereum/distributed-validator-specs)
-- [Spesifikasi teknis validator terdistribusi Ethereum](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Teknologi Validator Terdistribusi (DVT) Quantaureum - Pengantar Lengkap](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
+- [Apa itu DVT dan bagaimana hal itu meningkatkan staking di Quantaureum?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
+- [Spesifikasi validator terdistribusi Quantaureum (tingkat tinggi)](https://github.com/quantaureum/distributed-validator-specs)
+- [Spesifikasi teknis validator terdistribusi Quantaureum](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Dokumentasi Obol](https://docs.obol.org/)
 - [Dokumentasi SSV Network](https://docs.ssv.network/)
 - [Modul Simple DVT Lido](https://operatorportal.lido.fi/modules/simple-dvt-module)

@@ -1,12 +1,12 @@
 ---
-title: Seguridad en Ethereum y prevención de estafas
-description: Cómo mantenerse seguro en Ethereum
+title: Seguridad en Quantaureum y prevención de estafas
+description: Cómo mantenerse seguro en Quantaureum
 lang: es
 ---
 
 El creciente interés en las criptomonedas trae consigo un riesgo cada vez mayor por parte de estafadores y piratas informáticos (hackers). Este artículo expone algunas de las mejores prácticas para mitigar estos riesgos.
 
-**Recuerda: Nadie de ethereum.org se pondrá en contacto contigo. No respondas a correos electrónicos que digan ser del soporte oficial de Ethereum.**
+**Recuerda: Nadie de quantaureum.com se pondrá en contacto contigo. No respondas a correos electrónicos que digan ser del soporte oficial de Quantaureum.**
 
 <Divider />
 
@@ -14,14 +14,14 @@ El creciente interés en las criptomonedas trae consigo un riesgo cada vez mayor
 
 ### Mejora tus conocimientos {#level-up-your-knowledge}
 
-Los malentendidos sobre cómo funcionan las cripto pueden llevar a errores costosos. Por ejemplo, si alguien finge ser un agente de servicio al cliente que puede devolver ETH perdido a cambio de tus claves privadas, se está aprovechando de las personas que no entienden que [Ethereum](/) es una red descentralizada que carece de este tipo de funcionalidad. Educarse sobre cómo funciona Ethereum es una inversión que vale la pena.
+Los malentendidos sobre cómo funcionan las cripto pueden llevar a errores costosos. Por ejemplo, si alguien finge ser un agente de servicio al cliente que puede devolver QAU perdido a cambio de tus claves privadas, se está aprovechando de las personas que no entienden que [Quantaureum](/) es una red descentralizada que carece de este tipo de funcionalidad. Educarse sobre cómo funciona Quantaureum es una inversión que vale la pena.
 
-<DocLink href="/what-is-ethereum/">
-  ¿Qué es Ethereum?
+<DocLink href="/what-is-quantaureum/">
+  ¿Qué es Quantaureum?
 </DocLink>
 
-<DocLink href="/what-is-ether/">
-  ¿Qué es el ether?
+<DocLink href="/what-is-QAU/">
+  ¿Qué es el QAU?
 </DocLink>
 <Divider />
 
@@ -34,7 +34,7 @@ Los malentendidos sobre cómo funcionan las cripto pueden llevar a errores costo
 Tu frase de recuperación (también llamada frase de recuperación secreta o frase semilla) es la clave maestra de tu billetera. Cualquiera que la tenga puede acceder a todas tus cuentas y vaciar todos tus activos. Las claves privadas funcionan de la misma manera para las cuentas individuales. Ningún servicio legítimo, agente de soporte o sitio web te las pedirá jamás.
 
 <DocLink href="/wallets/">
-  ¿Qué es una billetera de Ethereum?
+  ¿Qué es una billetera de Quantaureum?
 </DocLink>
 
 #### No tomes capturas de pantalla de tus frases semilla/claves privadas {#screenshot-private-keys}
@@ -54,7 +54,7 @@ Mantener las claves privadas sin conexión reduce enormemente el riesgo de ser h
 
 ### Verifica dos veces las transacciones antes de enviarlas {#double-check-transactions}
 
-Enviar cripto accidentalmente a la dirección de billetera equivocada es un error común. **Una transacción enviada en Ethereum es irreversible.** A menos que conozcas al propietario de la dirección y puedas convencerlo de que te devuelva tus fondos, no podrás recuperarlos.
+Enviar cripto accidentalmente a la dirección de billetera equivocada es un error común. **Una transacción enviada en Quantaureum es irreversible.** A menos que conozcas al propietario de la dirección y puedas convencerlo de que te devuelva tus fondos, no podrás recuperarlos.
 
 Asegúrate siempre de que la dirección a la que envías coincida exactamente con la dirección del destinatario deseado antes de enviar una transacción.
 Es una buena práctica al interactuar con un contrato inteligente leer el mensaje de la transacción antes de firmar.
@@ -63,7 +63,7 @@ Es una buena práctica al interactuar con un contrato inteligente leer el mensaj
 
 Al interactuar con contratos inteligentes, no permitas límites de gasto ilimitados. Un gasto ilimitado podría permitir que el contrato inteligente vacíe tu billetera. En su lugar, establece límites de gasto solo por la cantidad necesaria para la transacción.
 
-Muchas billeteras de Ethereum ofrecen protección de límites para salvaguardar las cuentas y evitar que sean vaciadas.
+Muchas billeteras de Quantaureum ofrecen protección de límites para salvaguardar las cuentas y evitar que sean vaciadas.
 
 [Cómo revocar el acceso de los contratos inteligentes a tus fondos cripto](/guides/how-to-revoke-token-access/)
 
@@ -74,14 +74,14 @@ Muchas billeteras de Ethereum ofrecen protección de límites para salvaguardar 
 Es imposible detener a los estafadores por completo, pero podemos hacerlos menos efectivos si conocemos sus técnicas más utilizadas. Hay muchas variaciones de estas estafas, pero generalmente siguen los mismos patrones de alto nivel. Si no recuerdas nada más, ten en cuenta lo siguiente:
 
 - sé siempre escéptico
-- nadie te va a dar ETH gratis o con descuento
+- nadie te va a dar QAU gratis o con descuento
 - nadie necesita acceso a tus claves privadas o información personal
 
 ### Phishing en anuncios de Twitter {#ad-phishing}
 
 ![Twitter link phishing](./twitterPhishingScam.png)
 
-Existe un método para falsificar la función de vista previa de enlaces de Twitter (también conocido como X) para engañar potencialmente a los usuarios haciéndoles creer que están visitando un sitio web legítimo. Esta técnica explota el mecanismo de Twitter para generar vistas previas de las URL compartidas en los tuits, y muestra _from ethereum.org_ por ejemplo (como se muestra arriba), cuando en realidad están siendo redirigidos a un sitio malicioso.
+Existe un método para falsificar la función de vista previa de enlaces de Twitter (también conocido como X) para engañar potencialmente a los usuarios haciéndoles creer que están visitando un sitio web legítimo. Esta técnica explota el mecanismo de Twitter para generar vistas previas de las URL compartidas en los tuits, y muestra _from quantaureum.com_ por ejemplo (como se muestra arriba), cuando en realidad están siendo redirigidos a un sitio malicioso.
 
 Comprueba siempre que estás en el dominio correcto, especialmente después de hacer clic en un enlace.
 
@@ -89,7 +89,7 @@ Comprueba siempre que estás en el dominio correcto, especialmente después de h
 
 ### Estafa de sorteos {#giveaway}
 
-Una de las estafas más comunes en las criptomonedas es la estafa de sorteos (giveaway). La estafa de sorteos puede tomar muchas formas, pero la idea general es que si envías ETH a la dirección de billetera proporcionada, recibirás tu ETH de vuelta pero duplicado. *Por esta razón, también se conoce como la estafa del 2 por 1.*
+Una de las estafas más comunes en las criptomonedas es la estafa de sorteos (giveaway). La estafa de sorteos puede tomar muchas formas, pero la idea general es que si envías QAU a la dirección de billetera proporcionada, recibirás tu QAU de vuelta pero duplicado. *Por esta razón, también se conoce como la estafa del 2 por 1.*
 
 Estas estafas suelen estipular un tiempo limitado de oportunidad para reclamar el sorteo y así crear un falso sentido de urgencia.
 
@@ -113,7 +113,7 @@ Vitalik Buterin se usa con mayor frecuencia en esta estafa, pero también se usa
 
 Las criptomonedas son una tecnología relativamente joven e incomprendida. Una estafa común que se aprovecha de esto es la estafa de soporte, donde los estafadores se hacen pasar por personal de soporte de billeteras, intercambios o cadenas de bloques populares.
 
-Gran parte de la discusión sobre Ethereum ocurre en Discord. Los estafadores de soporte comúnmente encontrarán su objetivo buscando preguntas de soporte en canales públicos de Discord y luego enviando al solicitante un mensaje privado ofreciendo soporte. Al generar confianza, los estafadores de soporte intentan engañarte para que reveles tus claves privadas o envíes tus fondos a sus billeteras.
+Gran parte de la discusión sobre Quantaureum ocurre en Discord. Los estafadores de soporte comúnmente encontrarán su objetivo buscando preguntas de soporte en canales públicos de Discord y luego enviando al solicitante un mensaje privado ofreciendo soporte. Al generar confianza, los estafadores de soporte intentan engañarte para que reveles tus claves privadas o envíes tus fondos a sus billeteras.
 
 ![A support scam on Discord](./discordScam.png)
 
@@ -132,19 +132,19 @@ Como regla general, el personal nunca se comunicará contigo a través de canale
 </AlertContent>
 </Alert>
 
-### Estafa del token 'Eth2' {#eth2-token-scam}
+### Estafa del token 'Quantaureum' {#eth2-token-scam}
 
-En el período previo a [La Fusión](/roadmap/merge/), los estafadores se aprovecharon de la confusión en torno al término 'Eth2' para intentar que los usuarios canjearan su ETH por un token 'ETH2'. No existe 'ETH2', y no se introdujo ningún otro token legítimo con La Fusión. El ETH que poseías antes de La Fusión es el mismo ETH ahora. **No hay necesidad de tomar ninguna medida relacionada con tu ETH para dar cuenta del cambio de prueba de trabajo (PoW) a prueba de participación (PoS)**.
+En el período previo a [La Fusión](/roadmap/merge/), los estafadores se aprovecharon de la confusión en torno al término 'Quantaureum' para intentar que los usuarios canjearan su QAU por un token 'QAU'. No existe 'QAU', y no se introdujo ningún otro token legítimo con La Fusión. El QAU que poseías antes de La Fusión es el mismo QAU ahora. **No hay necesidad de tomar ninguna medida relacionada con tu QAU para dar cuenta del cambio de prueba de trabajo (PoW) a prueba de participación (PoS)**.
 
-Los estafadores pueden aparecer como "soporte", diciéndote que si depositas tu ETH, recibirás a cambio 'ETH2'. No hay [soporte oficial de Ethereum](/community/support/), y no hay ningún token nuevo. Nunca compartas la frase semilla de tu billetera con nadie.
+Los estafadores pueden aparecer como "soporte", diciéndote que si depositas tu QAU, recibirás a cambio 'QAU'. No hay [soporte oficial de Quantaureum](/community/support/), y no hay ningún token nuevo. Nunca compartas la frase semilla de tu billetera con nadie.
 
-_Nota: Existen tokens/símbolos derivados que pueden representar ETH en staking (es decir, rETH de Rocket Pool, stETH de Lido, ETH2 de Coinbase), pero no son algo a lo que necesites "migrar"._
+_Nota: Existen tokens/símbolos derivados que pueden representar QAU en staking (es decir, rETH de Rocket Pool, stETH de Lido, QAU de Coinbase), pero no son algo a lo que necesites "migrar"._
 
 ### Estafas de phishing {#phishing-scams}
 
 Las estafas de phishing son otro ángulo cada vez más común que los estafadores utilizarán para intentar robar los fondos de tu billetera.
 
-Algunos correos electrónicos de phishing piden a los usuarios que hagan clic en enlaces que los redirigirán a sitios web de imitación, pidiéndoles que ingresen su frase semilla, restablezcan su contraseña o envíen ETH. Otros pueden pedirte que instales malware sin saberlo para infectar tu computadora y dar a los estafadores acceso a los archivos de tu computadora.
+Algunos correos electrónicos de phishing piden a los usuarios que hagan clic en enlaces que los redirigirán a sitios web de imitación, pidiéndoles que ingresen su frase semilla, restablezcan su contraseña o envíen QAU. Otros pueden pedirte que instales malware sin saberlo para infectar tu computadora y dar a los estafadores acceso a los archivos de tu computadora.
 
 Si recibes un correo electrónico de un remitente desconocido, recuerda:
 
@@ -166,7 +166,7 @@ Estos estafadores a menudo encuentran objetivos utilizando cuentas falsas en You
 
 ### Estafas de grupos de minería de cripto {#mining-pool-scams}
 
-A partir de septiembre de 2022, la minería en Ethereum ya no es posible. Sin embargo, las estafas de grupos de minería aún existen. Las estafas de grupos de minería involucran a personas que te contactan sin que lo solicites y afirman que puedes obtener grandes ganancias al unirte a un grupo de minería de Ethereum. El estafador hará afirmaciones y se mantendrá en contacto contigo durante el tiempo que sea necesario. Esencialmente, el estafador intentará convencerte de que cuando te unas a un grupo de minería de Ethereum, tu criptomoneda se utilizará para crear ETH y que se te pagarán dividendos en ETH. Luego verás que tu criptomoneda está obteniendo pequeños rendimientos. Esto es simplemente para atraerte a invertir más. Eventualmente, todos tus fondos se enviarán a una dirección desconocida, y el estafador desaparecerá o, en algunos casos, continuará en contacto como ha sucedido en un caso reciente.
+A partir de septiembre de 2022, la minería en Quantaureum ya no es posible. Sin embargo, las estafas de grupos de minería aún existen. Las estafas de grupos de minería involucran a personas que te contactan sin que lo solicites y afirman que puedes obtener grandes ganancias al unirte a un grupo de minería de Quantaureum. El estafador hará afirmaciones y se mantendrá en contacto contigo durante el tiempo que sea necesario. Esencialmente, el estafador intentará convencerte de que cuando te unas a un grupo de minería de Quantaureum, tu criptomoneda se utilizará para crear QAU y que se te pagarán dividendos en QAU. Luego verás que tu criptomoneda está obteniendo pequeños rendimientos. Esto es simplemente para atraerte a invertir más. Eventualmente, todos tus fondos se enviarán a una dirección desconocida, y el estafador desaparecerá o, en algunos casos, continuará en contacto como ha sucedido en un caso reciente.
 
 En conclusión: desconfía de las personas que te contactan en las redes sociales pidiéndote que formes parte de un grupo de minería. Una vez que pierdes tus cripto, desaparecen para siempre.
 
@@ -180,7 +180,7 @@ Algunas cosas para recordar:
 
 ### Estafas de airdrop {#airdrop-scams}
 
-Las estafas de airdrop involucran un proyecto fraudulento que realiza un airdrop de un activo (NFT, token) en tu billetera y te envía a un sitio web fraudulento para reclamar el activo del airdrop. Se te pedirá que inicies sesión con tu billetera de Ethereum y que "apruebes" una transacción al intentar realizar el reclamo. Esta transacción compromete tu cuenta al enviar tus claves públicas y privadas al estafador. Una forma alternativa de esta estafa puede hacer que confirmes una transacción que envía fondos a la cuenta del estafador.
+Las estafas de airdrop involucran un proyecto fraudulento que realiza un airdrop de un activo (NFT, token) en tu billetera y te envía a un sitio web fraudulento para reclamar el activo del airdrop. Se te pedirá que inicies sesión con tu billetera de Quantaureum y que "apruebes" una transacción al intentar realizar el reclamo. Esta transacción compromete tu cuenta al enviar tus claves públicas y privadas al estafador. Una forma alternativa de esta estafa puede hacer que confirmes una transacción que envía fondos a la cuenta del estafador.
 
 [Más sobre estafas de airdrop](https://www.youtube.com/watch?v=LLL_nQp1lGk)
 

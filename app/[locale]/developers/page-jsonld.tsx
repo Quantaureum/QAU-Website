@@ -46,8 +46,8 @@ export default async function DevelopersPageJsonLD({
         url,
         inLanguage: locale,
         contributor: contributorList,
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
@@ -65,8 +65,8 @@ export default async function DevelopersPageJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        reviewedBy: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
         mainEntity: { "@id": `${url}#developers` },
       },
       {
@@ -74,7 +74,7 @@ export default async function DevelopersPageJsonLD({
         "@id": `${url}#developers`,
         name: t("page-developer-meta-title"),
         description:
-          "Comprehensive resources for building on Ethereum including tutorials, tools, documentation, and courses",
+          "Comprehensive resources for building on Quantaureum including tutorials, tools, documentation, and courses",
         url,
         numberOfItems: paths.length + courses.length + hackathons.length,
         itemListElement: [
@@ -99,7 +99,7 @@ export default async function DevelopersPageJsonLD({
             url: hackathon.link,
           })),
         ],
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
       },
     ],
   }

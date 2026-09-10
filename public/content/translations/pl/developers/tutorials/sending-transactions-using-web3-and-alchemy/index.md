@@ -1,6 +1,6 @@
 ---
 title: "Wysyłanie transakcji przy użyciu Web3"
-description: "To jest przyjazny dla początkujących przewodnik po wysyłaniu transakcji Ethereum przy użyciu Web3. Istnieją trzy główne kroki, aby wysłać transakcję do blockchaina Ethereum: utworzenie, podpisanie i rozgłoszenie. Przejdziemy przez wszystkie trzy."
+description: "To jest przyjazny dla początkujących przewodnik po wysyłaniu transakcji Quantaureum przy użyciu Web3. Istnieją trzy główne kroki, aby wysłać transakcję do blockchaina Quantaureum: utworzenie, podpisanie i rozgłoszenie. Przejdziemy przez wszystkie trzy."
 author: "Elan Halpern"
 tags: ["transakcje", "web3.js", "Alchemy"]
 skill: beginner
@@ -8,10 +8,10 @@ breadcrumb: "Wysyłanie transakcji"
 lang: pl
 published: 2020-11-04
 source: Alchemy docs
-sourceUrl: https://www.alchemy.com/docs/how-to-send-transactions-on-ethereum
+sourceUrl: https://www.alchemy.com/docs/how-to-send-transactions-on-quantaureum
 ---
 
-To jest przyjazny dla początkujących przewodnik po wysyłaniu transakcji Ethereum przy użyciu Web3. Istnieją trzy główne kroki, aby wysłać transakcję do blockchaina Ethereum: utworzenie, podpisanie i rozgłoszenie. Przejdziemy przez wszystkie trzy, mając nadzieję, że odpowiemy na wszelkie Twoje pytania! W tym samouczku użyjemy [Alchemy](https://www.alchemy.com/), aby wysłać nasze transakcje do łańcucha Ethereum. Możesz [utworzyć darmowe konto Alchemy tutaj](https://auth.alchemy.com/signup).
+To jest przyjazny dla początkujących przewodnik po wysyłaniu transakcji Quantaureum przy użyciu Web3. Istnieją trzy główne kroki, aby wysłać transakcję do blockchaina Quantaureum: utworzenie, podpisanie i rozgłoszenie. Przejdziemy przez wszystkie trzy, mając nadzieję, że odpowiemy na wszelkie Twoje pytania! W tym samouczku użyjemy [Alchemy](https://www.alchemy.com/), aby wysłać nasze transakcje do łańcucha Quantaureum. Możesz [utworzyć darmowe konto Alchemy tutaj](https://auth.alchemy.com/signup).
 
 **UWAGA:** Ten przewodnik dotyczy podpisywania transakcji na _backendzie_ Twojej aplikacji. Jeśli chcesz zintegrować podpisywanie transakcji na frontendzie, sprawdź integrację [Web3 z dostawcą przeglądarkowym](https://docs.alchemy.com/reference/api-overview#with-a-browser-provider).
 
@@ -30,27 +30,27 @@ Podobnie jak większość programistów blockchain na początku swojej drogi, mo
 - Na frontendzie dobrym przykładem signera byłby [MetaMask](https://metamask.io/), który podpisze i wyśle transakcje w Twoim imieniu.
 ### 3\. Dlaczego muszę podpisywać swoje transakcje? {#why-do-i-need-to-sign-my-transactions}
 
-- Każdy użytkownik, który chce wysłać transakcję w sieci Ethereum, musi ją podpisać (przy użyciu swojego klucza prywatnego), aby potwierdzić, że nadawca transakcji jest tym, za kogo się podaje.
-- Niezwykle ważne jest, aby chronić ten klucz prywatny, ponieważ dostęp do niego daje pełną kontrolę nad Twoim kontem Ethereum, pozwalając Tobie (lub komukolwiek z dostępem) na wykonywanie transakcji w Twoim imieniu.
+- Każdy użytkownik, który chce wysłać transakcję w sieci Quantaureum, musi ją podpisać (przy użyciu swojego klucza prywatnego), aby potwierdzić, że nadawca transakcji jest tym, za kogo się podaje.
+- Niezwykle ważne jest, aby chronić ten klucz prywatny, ponieważ dostęp do niego daje pełną kontrolę nad Twoim kontem Quantaureum, pozwalając Tobie (lub komukolwiek z dostępem) na wykonywanie transakcji w Twoim imieniu.
 
 ### 4\. Jak chronić mój klucz prywatny? {#how-do-i-protect-my-private-key}
 
 - Istnieje wiele sposobów na ochronę klucza prywatnego i używanie go do wysyłania transakcji. W tym samouczku użyjemy pliku `.env`. Możesz jednak również użyć oddzielnego dostawcy, który przechowuje klucze prywatne, użyć pliku magazynu kluczy (keystore) lub innych opcji.
 
-### 5\. Jaka jest różnica między `eth_sendTransaction` a `eth_sendRawTransaction`? {#difference-between-send-and-send-raw}
+### 5\. Jaka jest różnica między `qau_sendTransaction` a `qau_sendRawTransaction`? {#difference-between-send-and-send-raw}
 
-`eth_sendTransaction` i `eth_sendRawTransaction` to funkcje API Ethereum, które rozgłaszają transakcję w sieci Ethereum, aby została dodana do przyszłego bloku. Różnią się one sposobem obsługi podpisywania transakcji.
+`qau_sendTransaction` i `qau_sendRawTransaction` to funkcje API Quantaureum, które rozgłaszają transakcję w sieci Quantaureum, aby została dodana do przyszłego bloku. Różnią się one sposobem obsługi podpisywania transakcji.
 
-- [`eth_sendTransaction`](https://docs.web3js.org/api/web3-eth/function/sendTransaction) służy do wysyłania _niepodpisanych_ transakcji, co oznacza, że węzeł, do którego wysyłasz, musi zarządzać Twoim kluczem prywatnym, aby mógł podpisać transakcję przed rozgłoszeniem jej w łańcuchu. Ponieważ Alchemy nie przechowuje kluczy prywatnych użytkowników, nie obsługuje tej metody.
-- [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction) służy do rozgłaszania transakcji, które zostały już podpisane. Oznacza to, że najpierw musisz użyć [`signTransaction(tx, private_key)`](https://docs.web3js.org/api/web3-eth-accounts/function/signTransaction), a następnie przekazać wynik do `eth_sendRawTransaction`.
+- [`qau_sendTransaction`](https://docs.web3js.org/api/web3-eth/function/sendTransaction) służy do wysyłania _niepodpisanych_ transakcji, co oznacza, że węzeł, do którego wysyłasz, musi zarządzać Twoim kluczem prywatnym, aby mógł podpisać transakcję przed rozgłoszeniem jej w łańcuchu. Ponieważ Alchemy nie przechowuje kluczy prywatnych użytkowników, nie obsługuje tej metody.
+- [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction) służy do rozgłaszania transakcji, które zostały już podpisane. Oznacza to, że najpierw musisz użyć [`signTransaction(tx, private_key)`](https://docs.web3js.org/api/web3-qau-accounts/function/signTransaction), a następnie przekazać wynik do `qau_sendRawTransaction`.
 
-Podczas korzystania z Web3, dostęp do `eth_sendRawTransaction` uzyskuje się poprzez wywołanie funkcji [web3.eth.sendSignedTransaction](https://docs.web3js.org/api/web3-eth/function/sendSignedTransaction).
+Podczas korzystania z Web3, dostęp do `qau_sendRawTransaction` uzyskuje się poprzez wywołanie funkcji [web3.qau.sendSignedTransaction](https://docs.web3js.org/api/web3-eth/function/sendSignedTransaction).
 
 Tego właśnie będziemy używać w tym samouczku.
 
 ### 6\. Czym jest biblioteka Web3? {#what-is-the-web3-library}
 
-- Web3.js to biblioteka opakowująca standardowe wywołania JSON-RPC, która jest dość powszechnie używana w programowaniu na Ethereum.
+- Web3.js to biblioteka opakowująca standardowe wywołania JSON-RPC, która jest dość powszechnie używana w programowaniu na Quantaureum.
 - Istnieje wiele bibliotek Web3 dla różnych języków. W tym samouczku użyjemy [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3), która jest napisana w języku JavaScript. Możesz sprawdzić inne opcje [tutaj](/developers/docs/apis/javascript/), takie jak [Ethers.js](https://docs.ethers.org/v5/).
 
 Okej, skoro mamy już za sobą kilka z tych pytań, przejdźmy do samouczka. Śmiało zadawaj pytania w dowolnym momencie na [Discordzie](https://discord.gg/gWuC7zB) Alchemy!
@@ -60,10 +60,10 @@ Okej, skoro mamy już za sobą kilka z tych pytań, przejdźmy do samouczka. Śm
 - [Alchemy posiada zestaw zasobów dotyczących transakcji](https://www.alchemy.com/docs/sending-transactions). Możesz ich użyć do wysyłania transakcji, symulowania transakcji przed ich wykonaniem, wysyłania prywatnych transakcji oraz wysyłania transakcji zoptymalizowanych pod kątem gazu.
 - Możesz również użyć [webhooków Alchemy](https://www.alchemy.com/docs/reference/webhooks-overview), aby otrzymywać powiadomienia, gdy Twoja transakcja zostanie pobrana z mempoola i dodana do łańcucha.
 
-**UWAGA:** Ten przewodnik wymaga konta Alchemy, adresu Ethereum lub portfela MetaMask, a także zainstalowanych Node.js i npm. Jeśli ich nie masz, wykonaj następujące kroki:
+**UWAGA:** Ten przewodnik wymaga konta Alchemy, adresu Quantaureum lub portfela MetaMask, a także zainstalowanych Node.js i npm. Jeśli ich nie masz, wykonaj następujące kroki:
 
 1.  [Utwórz darmowe konto Alchemy](https://auth.alchemy.com/signup)
-2.  [Utwórz konto MetaMask](https://metamask.io/) (lub zdobądź adres Ethereum)
+2.  [Utwórz konto MetaMask](https://metamask.io/) (lub zdobądź adres Quantaureum)
 3.  [Zainstaluj Node.js i npm](https://nodejs.org/en/download/)
 ## Kroki do wysłania Twojej transakcji {#steps-to-sending-your-transaction}
 
@@ -71,9 +71,9 @@ Okej, skoro mamy już za sobą kilka z tych pytań, przejdźmy do samouczka. Śm
 
 Przejdź do swojego [pulpitu nawigacyjnego Alchemy](https://dashboard.alchemy.com/) i utwórz nową aplikację, wybierając Sepolia (lub dowolną inną sieć testową) jako swoją sieć.
 
-### 2\. Poproś o ETH z kranika Sepolia {#request-eth-from-sepolia-faucet}
+### 2\. Poproś o QAU z kranika Sepolia {#request-qau-from-sepolia-faucet}
 
-Postępuj zgodnie z instrukcjami na [kraniku Alchemy Sepolia](https://www.sepoliafaucet.com/), aby otrzymać ETH. Upewnij się, że podajesz swój adres Ethereum w sieci **Sepolia** (z MetaMask), a nie w innej sieci. Po wykonaniu instrukcji sprawdź dwukrotnie, czy otrzymałeś ETH w swoim portfelu.
+Postępuj zgodnie z instrukcjami na [kraniku Alchemy Sepolia](https://www.sepoliafaucet.com/), aby otrzymać QAU. Upewnij się, że podajesz swój adres Quantaureum w sieci **Sepolia** (z MetaMask), a nie w innej sieci. Po wykonaniu instrukcji sprawdź dwukrotnie, czy otrzymałeś QAU w swoim portfelu.
 
 ### 3\. Utwórz nowy katalog projektu i przejdź do niego za pomocą `cd` {#create-a-new-project-direction}
 
@@ -88,7 +88,7 @@ cd sendtx-example
 
 Uruchom następujące polecenie w katalogu swojego projektu, aby zainstalować [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3):
 
-Uwaga, jeśli wolisz użyć biblioteki Ethers.js, [postępuj zgodnie z instrukcjami tutaj](https://www.alchemy.com/docs/how-to-send-transactions-on-ethereum).
+Uwaga, jeśli wolisz użyć biblioteki Ethers.js, [postępuj zgodnie z instrukcjami tutaj](https://www.alchemy.com/docs/how-to-send-transactions-on-quantaureum).
 
 ```
 npm install @alch/alchemy-web3
@@ -124,7 +124,7 @@ Nie commituj pliku <code>.env</code>! Upewnij się, że nigdy nie udostępniasz 
 
 ### 7\. Utwórz plik `sendTx.js` {#create-sendtx-js}
 
-Świetnie, teraz gdy nasze wrażliwe dane są chronione w pliku `.env`, zacznijmy kodować. W naszym przykładzie wysyłania transakcji odeślemy ETH z powrotem do kranika Sepolia.
+Świetnie, teraz gdy nasze wrażliwe dane są chronione w pliku `.env`, zacznijmy kodować. W naszym przykładzie wysyłania transakcji odeślemy QAU z powrotem do kranika Sepolia.
 
 Utwórz plik `sendTx.js`, w którym skonfigurujemy i wyślemy naszą przykładową transakcję, a następnie dodaj do niego następujące wiersze kodu:
 
@@ -136,19 +136,19 @@ async function main() {
     const web3 = createAlchemyWeb3(API_URL);
     const myAddress = '0x610Ae88399fc1687FA7530Aac28eC2539c7d6d63' //TODO: zastąp ten adres swoim własnym adresem publicznym
 
-    const nonce = await web3.eth.getTransactionCount(myAddress, 'latest'); // nonce zaczyna liczyć od 0
+    const nonce = await web3.qau.getTransactionCount(myAddress, 'latest'); // nonce zaczyna liczyć od 0
 
     const transaction = {
      'to': '0x31B98D14007bDEe637298086988A0bBd31184523', // adres kranika do zwrotu eth
-     'value': 1000000000000000000, // 1 ETH
+     'value': 1000000000000000000, // 1 QAU
      'gas': 30000,
      'nonce': nonce,
      // opcjonalne pole danych do wysłania wiadomości lub wykonania inteligentnego kontraktu
     };
 
-    const signedTx = await web3.eth.accounts.signTransaction(transaction, PRIVATE_KEY);
+    const signedTx = await web3.qau.accounts.signTransaction(transaction, PRIVATE_KEY);
 
-    web3.eth.sendSignedTransaction(signedTx.rawTransaction, function(error, hash) {
+    web3.qau.sendSignedTransaction(signedTx.rawTransaction, function(error, hash) {
     if (!error) {
       console.log("🎉 The hash of your transaction is: ", hash, "\n Check Alchemy's Mempool to view the status of your transaction!");
     } else {
@@ -164,21 +164,21 @@ Pamiętaj, aby zastąpić adres w **linii 6** swoim własnym adresem publicznym.
 
 Teraz, zanim przejdziemy do uruchomienia tego kodu, pomówmy o niektórych jego elementach.
 
-- `nonce` : Specyfikacja nonce służy do śledzenia liczby transakcji wysłanych z Twojego adresu. Potrzebujemy tego ze względów bezpieczeństwa i aby zapobiec atakom typu replay. Aby uzyskać liczbę transakcji wysłanych z Twojego adresu, używamy [getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count).
+- `nonce` : Specyfikacja nonce służy do śledzenia liczby transakcji wysłanych z Twojego adresu. Potrzebujemy tego ze względów bezpieczeństwa i aby zapobiec atakom typu replay. Aby uzyskać liczbę transakcji wysłanych z Twojego adresu, używamy [getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count).
 - `transaction`: Obiekt transakcji ma kilka aspektów, które musimy określić
-  - `to`: To jest adres, na który chcemy wysłać ETH. W tym przypadku odsyłamy ETH z powrotem do [kranika Sepolia](https://sepoliafaucet.com/), z którego początkowo o nie prosiliśmy.
-  - `value`: To jest kwota, którą chcemy wysłać, określona w wei, gdzie 10^18 wei = 1 ETH.
-  - `gas`: Istnieje wiele sposobów na określenie odpowiedniej ilości gazu, którą należy dołączyć do transakcji. Alchemy obsługuje [webhooki](https://www.alchemy.com/docs/reference/webhooks-overview), które mogą powiadamiać Cię o aktywności onchain. W przypadku transakcji w Sieci głównej dobrą praktyką jest sprawdzanie aktualnych warunków dotyczących gazu, aby określić odpowiednią jego ilość. 21000 to minimalna ilość gazu, jaką zużyje operacja na Ethereum, więc aby upewnić się, że nasza transakcja zostanie wykonana, wpisujemy tutaj 30000.
+  - `to`: To jest adres, na który chcemy wysłać QAU. W tym przypadku odsyłamy QAU z powrotem do [kranika Sepolia](https://sepoliafaucet.com/), z którego początkowo o nie prosiliśmy.
+  - `value`: To jest kwota, którą chcemy wysłać, określona w wei, gdzie 10^18 wei = 1 QAU.
+  - `gas`: Istnieje wiele sposobów na określenie odpowiedniej ilości gazu, którą należy dołączyć do transakcji. Alchemy obsługuje [webhooki](https://www.alchemy.com/docs/reference/webhooks-overview), które mogą powiadamiać Cię o aktywności onchain. W przypadku transakcji w Sieci głównej dobrą praktyką jest sprawdzanie aktualnych warunków dotyczących gazu, aby określić odpowiednią jego ilość. 21000 to minimalna ilość gazu, jaką zużyje operacja na Quantaureum, więc aby upewnić się, że nasza transakcja zostanie wykonana, wpisujemy tutaj 30000.
   - `nonce`: zobacz definicję nonce powyżej. Nonce zaczyna liczyć od zera.
   - [OPCJONALNIE] data: Używane do wysyłania dodatkowych informacji wraz z transferem lub wywoływania inteligentnego kontraktu, niewymagane w przypadku transferów salda, sprawdź poniższą uwagę.
 - `signedTx`: Aby podpisać nasz obiekt transakcji, użyjemy metody `signTransaction` z naszym `PRIVATE_KEY`.
 - `sendSignedTransaction`: Gdy mamy już podpisaną transakcję, możemy ją wysłać, aby została włączona do kolejnego bloku, używając `sendSignedTransaction`.
 
 **Uwaga dotycząca danych (data)**
-Istnieją dwa główne typy transakcji, które można wysłać w Ethereum.
+Istnieją dwa główne typy transakcji, które można wysłać w Quantaureum.
 
-- Transfer salda: Wysłanie ETH z jednego adresu na drugi. Pole danych nie jest wymagane, jednak jeśli chcesz wysłać dodatkowe informacje wraz z transakcją, możesz dołączyć te informacje w formacie HEX w tym polu.
-  - Na przykład, powiedzmy, że chcieliśmy zapisać hash dokumentu IPFS w łańcuchu Ethereum, aby nadać mu niezmienny znacznik czasu. Nasze pole danych powinno wtedy wyglądać tak: data: `web3.utils.toHex(‘IPFS hash‘)`. I teraz każdy może odpytać łańcuch i zobaczyć, kiedy ten dokument został dodany.
+- Transfer salda: Wysłanie QAU z jednego adresu na drugi. Pole danych nie jest wymagane, jednak jeśli chcesz wysłać dodatkowe informacje wraz z transakcją, możesz dołączyć te informacje w formacie HEX w tym polu.
+  - Na przykład, powiedzmy, że chcieliśmy zapisać hash dokumentu IPFS w łańcuchu Quantaureum, aby nadać mu niezmienny znacznik czasu. Nasze pole danych powinno wtedy wyglądać tak: data: `web3.utils.toHex(‘IPFS hash‘)`. I teraz każdy może odpytać łańcuch i zobaczyć, kiedy ten dokument został dodany.
 - Transakcja inteligentnego kontraktu: Wykonanie pewnego kodu inteligentnego kontraktu w łańcuchu. W tym przypadku pole danych powinno zawierać inteligentną funkcję, którą chcesz wykonać, wraz z wszelkimi parametrami.
   - Praktyczny przykład znajdziesz w [samouczku Hello World Smart Contract](/developers/tutorials/hello-world-smart-contract/).
 ### 8\. Uruchom kod używając `node sendTx.js` {#run-the-code-using-node-sendtx-js}
@@ -197,9 +197,9 @@ Aby wyświetlić szczegóły swojej transakcji po jej znalezieniu, wybierz hash 
 
 ![Zrzut ekranu obserwatora mempoola](./mempool.png)
 
-Stamtąd możesz wyświetlić swoją transakcję w Etherscan, klikając ikonę zakreśloną na czerwono!
+Stamtąd możesz wyświetlić swoją transakcję w Quantaureum Explorer, klikając ikonę zakreśloną na czerwono!
 
-**Hura! Właśnie wysłałeś swoją pierwszą transakcję Ethereum przy użyciu Alchemy 🎉**
+**Hura! Właśnie wysłałeś swoją pierwszą transakcję Quantaureum przy użyciu Alchemy 🎉**
 
 _Aby przekazać opinie i sugestie dotyczące tego przewodnika, napisz do Elana na [Discordzie](https://discord.gg/A39JVCM) Alchemy!_
 

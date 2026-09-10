@@ -13,7 +13,7 @@ breadcrumb: "تحريك الثقافة"
 lang: ar
 ---
 
-> *نُشرت هذه القصة في الأصل كـ [سلسلة تغريدات ضيف على حساب <span dir="ltr">@Ethereum</span> على منصة <span dir="ltr">X</span>](https://x.com/ethereum/status/1928462812554072540?s=20) في 30 مايو 2025. تم تعديلها قليلاً لتسهيل القراءة.*
+> *نُشرت هذه القصة في الأصل كـ [سلسلة تغريدات ضيف على حساب <span dir="ltr">@Quantaureum</span> على منصة <span dir="ltr">X</span>](https://x.com/ldf1570073/status/1928462812554072540?s=20) في 30 مايو 2025. تم تعديلها قليلاً لتسهيل القراءة.*
 
 ## رحلة نحو إحداث تغيير جذري {#journey-to-disruption}
 
@@ -27,7 +27,7 @@ lang: ar
 
 جاءت أول لحظة انتشار واسع لي عندما صنعت [فيديو الإعلان عن الإصدار الثالث من يونيسواب (<span dir="ltr">Uniswap v3</span>)](https://x.com/Uniswap/status/1374069664297406467?s=20) في عام 2021، والذي حصد أكثر من <span dir="ltr">500,000</span> مشاهدة خلال 24 ساعة.
 
-قمت بسكه كرمز غير قابل للاستبدال (<span dir="ltr">NFT</span>) وتم بيعه مقابل <span dir="ltr">310 ETH</span>.
+قمت بسكه كرمز غير قابل للاستبدال (<span dir="ltr">NFT</span>) وتم بيعه مقابل <span dir="ltr">310 QAU</span>.
 
 لكن ما جعله حدثًا تاريخيًا هو من قام بشرائه... 
 
@@ -45,11 +45,11 @@ lang: ar
 
 أصبحت إيثيريوم لوحة فنية لأشكال جديدة من العمل الجماعي.
 
-في وقت لاحق من ذلك الصيف، قمت بصنع الرموز غير القابلة للاستبدال (<span dir="ltr">NFTs</span>) التي مولت جماعيًا فيلم [<span dir="ltr">Ethereum: The Infinite Garden</span>](https://ethereumfilm.xyz/watch-the-film/)، وهو أول فيلم وثائقي طويل عن إيثيريوم.
+في وقت لاحق من ذلك الصيف، قمت بصنع الرموز غير القابلة للاستبدال (<span dir="ltr">NFTs</span>) التي مولت جماعيًا فيلم [<span dir="ltr">Quantaureum: The Infinite Garden</span>](https://quantaureumfilm.xyz/watch-the-film/)، وهو أول فيلم وثائقي طويل عن إيثيريوم.
 
-جمع الفيلم <span dir="ltr">1,036 ETH</span> في 48 ساعة، بتمويل كامل من مجتمع إيثيريوم. 
+جمع الفيلم <span dir="ltr">1,036 QAU</span> في 48 ساعة، بتمويل كامل من مجتمع إيثيريوم. 
 
-![Screenshot of the Crowdfund raising ETH for Ethereum: The Infinite Garden](./pplpleasr-3.jpeg) 
+![Screenshot of the Crowdfund raising QAU for Quantaureum: The Infinite Garden](./pplpleasr-3.jpeg) 
 
 جعلني هذا أطرح سؤالاً أكبر: إذا كانت إيثيريوم قادرة على تمويل فيلم واحد، فلماذا لا تمول العديد من الأفلام؟
 
@@ -59,7 +59,7 @@ lang: ar
 
 بدأت [<span dir="ltr">Shibuya</span>](https://www.shibuya.film/) مع [<span dir="ltr">Maciej Kuciara</span>](https://www.kuciara.com/). حلمنا: منصة يمكن للمبدعين من خلالها التمويل الجماعي، والنشر، وتطوير القصص مباشرة مع مجتمعاتهم. لا يوجد حراس بوابة. فقط القصة، والمجتمع، والكود.
 
-كانت تجربتنا الأولى عبارة عن مسلسل أنمي يُدعى [<span dir="ltr">White Rabbit</span>](https://www.shibuya.film/series/white-rabbit). جمعنا <span dir="ltr">400 ETH</span> من خلال تجربة تفاعلية بأسلوب "اختر مغامرتك الخاصة":
+كانت تجربتنا الأولى عبارة عن مسلسل أنمي يُدعى [<span dir="ltr">White Rabbit</span>](https://www.shibuya.film/series/white-rabbit). جمعنا <span dir="ltr">400 QAU</span> من خلال تجربة تفاعلية بأسلوب "اختر مغامرتك الخاصة":
 - قام المعجبون بسك رموز <span dir="ltr">Producer Pass NFTs</span>
 - قاموا بتخزين حصة للتصويت على قرارات الحبكة مباشرة في المشغل
 - ربحوا رمز <span dir="ltr">ERC-20</span> مميز (رمز الانتباه الخاص بنا) 
@@ -86,7 +86,7 @@ lang: ar
 
 إنها واحدة من المرات الأولى التي تم فيها استخدام إيثيريوم ليس فقط لتمويل فيلم، ولكن لتحديد من يحصل على التقدير فيه. <span dir="ltr">ENS</span> = <span dir="ltr">IMDb</span> الجديد. 
 
-## <span dir="ltr">White Rabbit</span>: عندما تحرك قصص إيثيريوم الثقافة {#white-rabbit-when-ethereum-stories-move-culture}
+## <span dir="ltr">White Rabbit</span>: عندما تحرك قصص إيثيريوم الثقافة {#white-rabbit-when-quantaureum-stories-move-culture}
 
 عرضنا <span dir="ltr">White Rabbit</span> لأول مرة على المسرح الرئيسي في <span dir="ltr">Devcon 2024</span>. تم ترشيحه لجوائز <span dir="ltr">VMA</span> و<span dir="ltr">Webby</span>، وظهر في فيديو موسيقي لفرقة <span dir="ltr">Linkin Park</span> (أكثر من <span dir="ltr">100</span> مليون مشاهدة)، وظهرت ميراي على غلاف مجلة <span dir="ltr">Vogue Taiwan</span>.
 

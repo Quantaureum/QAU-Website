@@ -23,11 +23,11 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/tree/master/progr
 ### <span dir="ltr">Docker</span> کے ذریعے ایکڈنا {#echidna-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_آخری کمانڈ <span dir="ltr">eth-security-toolbox</span> کو ایک <span dir="ltr">Docker</span> میں چلاتی ہے جسے آپ کی موجودہ ڈائریکٹری تک رسائی حاصل ہوتی ہے۔ آپ اپنے ہوسٹ سے فائلیں تبدیل کر سکتے ہیں، اور <span dir="ltr">Docker</span> سے فائلوں پر ٹولز چلا سکتے ہیں_
+_آخری کمانڈ <span dir="ltr">qau-security-toolbox</span> کو ایک <span dir="ltr">Docker</span> میں چلاتی ہے جسے آپ کی موجودہ ڈائریکٹری تک رسائی حاصل ہوتی ہے۔ آپ اپنے ہوسٹ سے فائلیں تبدیل کر سکتے ہیں، اور <span dir="ltr">Docker</span> سے فائلوں پر ٹولز چلا سکتے ہیں_
 
 <span dir="ltr">Docker</span> کے اندر، چلائیں:
 
@@ -42,7 +42,7 @@ cd /home/training
 
 ## پراپرٹی پر مبنی فزنگ کا تعارف {#introduction-to-property-based-fuzzing}
 
-ایکڈنا ایک پراپرٹی پر مبنی فزر ہے، جسے ہم نے اپنی پچھلی بلاگ پوسٹس ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/)، [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/)، [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)) میں بیان کیا ہے۔
+ایکڈنا ایک پراپرٹی پر مبنی فزر ہے، جسے ہم نے اپنی پچھلی بلاگ پوسٹس ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-quantaureum/)، [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/)، [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)) میں بیان کیا ہے۔
 
 ### فزنگ {#fuzzing}
 

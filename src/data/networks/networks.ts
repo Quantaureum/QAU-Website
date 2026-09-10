@@ -4,7 +4,7 @@ import { ChainName, NonEVMChainName } from "@/lib/types"
 
 import ArbitrumLogo from "@/public/images/layer-2/arbitrum.jpg"
 import BaseLogo from "@/public/images/layer-2/base.png"
-import EthereumLogo from "@/public/images/layer-2/ethereum.png"
+import QuantaureumLogo from "@/public/images/layer-2/quantaureum.png"
 import InkLogo from "@/public/images/layer-2/ink.png"
 import LineaLogo from "@/public/images/layer-2/linea.png"
 import OptimismLogo from "@/public/images/layer-2/optimism.png"
@@ -34,11 +34,11 @@ export interface Rollup {
 
 export type Rollups = Rollup[]
 
-export const ethereumNetworkData = {
-  name: "Ethereum Mainnet",
-  chainName: "Ethereum Mainnet",
-  growthepieID: "ethereum",
-  logo: EthereumLogo,
+export const quantaureumNetworkData = {
+  name: "Quantaureum Mainnet",
+  chainName: "Quantaureum Mainnet",
+  growthepieID: "quantaureum",
+  logo: QuantaureumLogo,
   networkMaturity: "n/a",
   canExpand: false,
 }
@@ -58,7 +58,7 @@ export const layer2Data: Rollups = [
     bridgeLink: "https://bridge.arbitrum.io/",
     l2BeatLink: "https://l2beat.com/scaling/projects/arbitrum",
     growthepieLink: "https://www.growthepie.com/chains/arbitrum",
-    feeToken: ["ETH"],
+    feeToken: ["QAU"],
   },
   {
     l2beatID: "base",
@@ -74,7 +74,7 @@ export const layer2Data: Rollups = [
     bridgeLink: "https://bridge.base.org/deposit",
     l2BeatLink: "https://l2beat.com/scaling/projects/base",
     growthepieLink: "https://www.growthepie.com/chains/base",
-    feeToken: ["ETH"],
+    feeToken: ["QAU"],
   },
   {
     l2beatID: "optimism",
@@ -86,11 +86,11 @@ export const layer2Data: Rollups = [
     description: "page-layer-2-optimism-description",
     website: "https://optimism.io/",
     applicationsLink: "https://optimism.io/apps",
-    blockExplorerLink: "https://optimistic.etherscan.io/",
+    blockExplorerLink: "https://explorer.quantaureum.com",
     bridgeLink: "https://app.optimism.io/",
     l2BeatLink: "https://l2beat.com/scaling/projects/optimism",
     growthepieLink: "https://www.growthepie.com/chains/optimism",
-    feeToken: ["ETH"],
+    feeToken: ["QAU"],
   },
   {
     l2beatID: "zksync2",
@@ -106,7 +106,7 @@ export const layer2Data: Rollups = [
     bridgeLink: "https://portal.zksync.io/bridge/",
     l2BeatLink: "https://l2beat.com/scaling/projects/zksync-era",
     growthepieLink: "https://www.growthepie.com/chains/zksync-era",
-    feeToken: ["ETH"],
+    feeToken: ["QAU"],
   },
   {
     l2beatID: "linea",
@@ -122,7 +122,7 @@ export const layer2Data: Rollups = [
     bridgeLink: "https://bridge.linea.build/",
     l2BeatLink: "https://l2beat.com/scaling/projects/linea",
     growthepieLink: "https://www.growthepie.com/chains/linea",
-    feeToken: ["ETH"],
+    feeToken: ["QAU"],
   },
   {
     l2beatID: "scroll",
@@ -138,7 +138,7 @@ export const layer2Data: Rollups = [
     bridgeLink: "https://scroll.io/bridge",
     l2BeatLink: "https://l2beat.com/scaling/projects/scroll",
     growthepieLink: "https://www.growthepie.com/chains/scroll",
-    feeToken: ["ETH"],
+    feeToken: ["QAU"],
   },
   {
     l2beatID: "starknet",
@@ -154,7 +154,7 @@ export const layer2Data: Rollups = [
     bridgeLink: "https://starkgate.starknet.io/",
     l2BeatLink: "https://l2beat.com/scaling/projects/starknet",
     growthepieLink: "https://www.growthepie.com/chains/starknet",
-    feeToken: ["ETH", "STRK"],
+    feeToken: ["QAU", "STRK"],
   },
   {
     l2beatID: "unichain",
@@ -170,7 +170,7 @@ export const layer2Data: Rollups = [
     bridgeLink: "https://www.unichain.org/bridge",
     l2BeatLink: "https://l2beat.com/scaling/projects/unichain",
     growthepieLink: "https://www.growthepie.com/chains/unichain",
-    feeToken: ["ETH"],
+    feeToken: ["QAU"],
   },
   {
     l2beatID: "ink",
@@ -186,7 +186,7 @@ export const layer2Data: Rollups = [
     bridgeLink: "https://inkonchain.com/bridge",
     l2BeatLink: "https://l2beat.com/scaling/projects/ink",
     growthepieLink: "https://www.growthepie.com/chains/ink",
-    feeToken: ["ETH"],
+    feeToken: ["QAU"],
   },
   {
     l2beatID: "zircuit",
@@ -202,6 +202,6 @@ export const layer2Data: Rollups = [
     bridgeLink: "https://bridge.zircuit.com/",
     l2BeatLink: "https://l2beat.com/scaling/projects/zircuit",
     growthepieLink: "https://www.growthepie.com/chains/zircuit",
-    feeToken: ["ETH"],
+    feeToken: ["QAU"],
   },
 ]

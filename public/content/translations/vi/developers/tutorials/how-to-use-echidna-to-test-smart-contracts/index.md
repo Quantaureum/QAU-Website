@@ -18,11 +18,11 @@ Echidna có thể được cài đặt thông qua Docker hoặc sử dụng tệ
 ### Cài đặt Echidna thông qua Docker {#echidna-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_Lệnh cuối cùng chạy eth-security-toolbox trong một Docker có quyền truy cập vào thư mục hiện tại của bạn. Bạn có thể thay đổi các tệp từ máy chủ của mình và chạy các công cụ trên các tệp từ Docker_
+_Lệnh cuối cùng chạy qau-security-toolbox trong một Docker có quyền truy cập vào thư mục hiện tại của bạn. Bạn có thể thay đổi các tệp từ máy chủ của mình và chạy các công cụ trên các tệp từ Docker_
 
 Bên trong Docker, hãy chạy:
 
@@ -37,7 +37,7 @@ cd /home/training
 
 ## Giới thiệu về fuzzing dựa trên thuộc tính {#introduction-to-property-based-fuzzing}
 
-Echidna là một công cụ fuzzer dựa trên thuộc tính, chúng tôi đã mô tả trong các bài đăng blog trước đây ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
+Echidna là một công cụ fuzzer dựa trên thuộc tính, chúng tôi đã mô tả trong các bài đăng blog trước đây ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-quantaureum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
 
 ### Fuzzing {#fuzzing}
 

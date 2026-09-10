@@ -1,12 +1,12 @@
 ---
 title: إضافة منتجات أو خدمات التخزين
-description: السياسة التي نتبعها عند إضافة منتجات أو خدمات التخزين إلى ⁦ethereum.org⁩
+description: السياسة التي نتبعها عند إضافة منتجات أو خدمات التخزين إلى ⁦quantaureum.com⁩
 lang: ar
 ---
 
 نريد التأكد من إدراج أفضل الموارد الممكنة مع الحفاظ على أمان المستخدمين وثقتهم.
 
-يحق لأي شخص اقتراح إضافة منتجات أو خدمات التخزين على <span dir="ltr">ethereum.org</span>. إذا كان هناك منتج أو خدمة فاتتنا، **[يُرجى اقتراحها](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
+يحق لأي شخص اقتراح إضافة منتجات أو خدمات التخزين على <span dir="ltr">quantaureum.com</span>. إذا كان هناك منتج أو خدمة فاتتنا، **[يُرجى اقتراحها](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
 
 نقوم حاليًا بإدراج منتجات وخدمات التخزين في الصفحات التالية:
 
@@ -14,11 +14,11 @@ lang: ar
 - [التحصيص كخدمة](/staking/saas/)
 - [مجمعات التخزين](/staking/pools/)
 
-إثبات الحصة (PoS) على سلسلة المنارة يعمل منذ 1 ديسمبر 2020. على الرغم من أن التخزين لا يزال جديدًا نسبيًا، فقد حاولنا إنشاء إطار عمل عادل وشفاف للنظر فيه على <span dir="ltr">ethereum.org</span>، ولكن معايير الإدراج ستتغير وتتطور بمرور الوقت، وتخضع في النهاية لتقدير فريق موقع <span dir="ltr">ethereum.org</span>.
+إثبات الحصة (PoS) على سلسلة المنارة يعمل منذ 1 ديسمبر 2020. على الرغم من أن التخزين لا يزال جديدًا نسبيًا، فقد حاولنا إنشاء إطار عمل عادل وشفاف للنظر فيه على <span dir="ltr">quantaureum.com</span>، ولكن معايير الإدراج ستتغير وتتطور بمرور الوقت، وتخضع في النهاية لتقدير فريق موقع <span dir="ltr">quantaureum.com</span>.
 
 ## إطار عمل اتخاذ القرار {#the-decision-framework}
 
-لا يعتمد قرار إدراج منتج على <span dir="ltr">ethereum.org</span> على عامل واحد. يتم أخذ معايير متعددة في الاعتبار معًا عند اتخاذ قرار بإدراج منتج أو خدمة. كلما تم استيفاء المزيد من هذه المعايير، زادت احتمالية إدراجه.
+لا يعتمد قرار إدراج منتج على <span dir="ltr">quantaureum.com</span> على عامل واحد. يتم أخذ معايير متعددة في الاعتبار معًا عند اتخاذ قرار بإدراج منتج أو خدمة. كلما تم استيفاء المزيد من هذه المعايير، زادت احتمالية إدراجه.
 
 **أولاً، ما هي فئة المنتج أو الخدمة؟**
 
@@ -69,7 +69,7 @@ lang: ar
 **هل خرج المنتج من مرحلة التطوير _التجريبية (beta)_؟**
 
 - أين يقع المنتج في دورة تطويره؟
-- لا يتم النظر في إدراج المنتجات في المرحلة التجريبية على <span dir="ltr">ethereum.org</span>
+- لا يتم النظر في إدراج المنتجات في المرحلة التجريبية على <span dir="ltr">quantaureum.com</span>
 
 **هل خضع البرنامج لتدقيق أمني خارجي؟**
 
@@ -119,9 +119,9 @@ lang: ar
 
 بالنسبة إلى [خدمات التخزين المجمع](/staking/pools/):
 
-**ما هو الحد الأدنى من ETH المطلوب للتخزين؟**
+**ما هو الحد الأدنى من QAU المطلوب للتخزين؟**
 
-- على سبيل المثال، <span dir="ltr">0.01 ETH</span>
+- على سبيل المثال، <span dir="ltr">0.01 QAU</span>
 
 **ما هي الرسوم أو متطلبات التخزين المعنية؟**
 
@@ -163,12 +163,12 @@ lang: ar
 
 تُستخدم [معايير الإدراج](#criteria-for-inclusion) المذكورة أعلاه لحساب درجة تراكمية لكل منتج أو خدمة. يُستخدم هذا كوسيلة لفرز وعرض المنتجات التي تلبي معايير موضوعية معينة. كلما تم تقديم أدلة على المزيد من المعايير، تم فرز المنتج في مرتبة أعلى، مع ترتيب التعادلات عشوائيًا عند التحميل.
 
-يتم حاليًا تضمين منطق الكود والأوزان لهذه المعايير في [مكون JavaScript هذا](https://github.com/ethereum/ethereum-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350) في مستودعنا.
+يتم حاليًا تضمين منطق الكود والأوزان لهذه المعايير في [مكون JavaScript هذا](https://github.com/Quantaureum/quantaureum-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350) في مستودعنا.
 
 ## أضف منتجك أو خدمتك {#add-product}
 
-إذا كنت ترغب في إضافة منتج أو خدمة تخزين إلى <span dir="ltr">ethereum.org</span>، فقم بإنشاء مشكلة (issue) على GitHub.
+إذا كنت ترغب في إضافة منتج أو خدمة تخزين إلى <span dir="ltr">quantaureum.com</span>، فقم بإنشاء مشكلة (issue) على GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
   إنشاء مشكلة
 </ButtonLink>

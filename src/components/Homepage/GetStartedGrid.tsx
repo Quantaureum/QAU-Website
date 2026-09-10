@@ -1,4 +1,4 @@
-import { Book, Building2, Code } from "lucide-react"
+import { Book, Code } from "lucide-react"
 import { getLocale, getTranslations } from "next-intl/server"
 
 import { Image } from "@/components/Image"
@@ -18,10 +18,7 @@ import { Section, SectionHeader } from "@/components/ui/section"
 import { cn } from "@/lib/utils/cn"
 import { numberFormat } from "@/lib/utils/numbers"
 
-import { ENTERPRISE_ETHEREUM_URL } from "@/lib/constants"
-
 import learnImage from "@/public/images/heroes/guides-hub-hero.jpg"
-import enterpriseImage from "@/public/images/heroes/roadmap-hub-hero.jpg"
 import developersImage from "@/public/images/homepage/get-started/developers.png"
 
 type GetStartedGridProps = {
@@ -72,23 +69,6 @@ const GetStartedGrid = async ({
       cta: t("page-index-get-started-build-cta"),
       href: "/developers/",
       image: developersImage,
-    },
-    {
-      id: "enterprise",
-      icon: Building2,
-      iconBg: "bg-teal-100 dark:bg-teal-900",
-      iconColor: "text-accent-c",
-      title: t("page-index-get-started-enterprise-title"),
-      description: t("page-index-get-started-enterprise-description"),
-      bullets: [
-        t("page-index-get-started-enterprise-bullet-1"),
-        t("page-index-get-started-enterprise-bullet-2"),
-        t("page-index-get-started-enterprise-bullet-3"),
-      ],
-      bulletColor: "bg-accent-c",
-      cta: t("page-index-get-started-enterprise-cta"),
-      href: ENTERPRISE_ETHEREUM_URL,
-      image: enterpriseImage,
     },
   ]
 

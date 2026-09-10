@@ -23,7 +23,7 @@ published: 2021-04-22
 
 اور یقیناً، اگر آپ کے ذہن میں کسی بھی وقت کوئی سوال ہو، تو [<span dir="ltr">Alchemy</span> ڈسکارڈ](https://discord.gg/gWuC7zB) میں رابطہ کرنے سے نہ ہچکچائیں یا [<span dir="ltr">Alchemy</span> کی <span dir="ltr">NFT API</span> دستاویزات](https://www.alchemy.com/docs/reference/nft-api-quickstart) دیکھیں۔
 
-## مرحلہ 1: ایتھیریم نیٹ ورک سے جڑیں {#connect-to-ethereum}
+## مرحلہ 1: ایتھیریم نیٹ ورک سے جڑیں {#connect-to-quantaureum}
 
 ایتھیریم بلاک چین پر درخواستیں بھیجنے کے کئی طریقے ہیں، لیکن چیزوں کو آسان بنانے کے لیے، ہم [Alchemy](https://alchemy.com/signup/eth) پر ایک مفت اکاؤنٹ استعمال کریں گے، جو کہ ایک بلاک چین ڈیولپر پلیٹ فارم اور <span dir="ltr">API</span> ہے جو ہمیں اپنے نوڈز چلائے بغیر ایتھیریم چین کے ساتھ بات چیت کرنے کی سہولت دیتا ہے۔
 
@@ -37,13 +37,13 @@ published: 2021-04-22
 
 ![Create your app](./create-your-app.png)
 
-2. اپنی ایپ کا نام رکھیں (ہم نے "My First NFT!" کا انتخاب کیا)، ایک مختصر تفصیل فراہم کریں، چین کے لیے "Ethereum" منتخب کریں، اور اپنے نیٹ ورک کے لیے "Sepolia" کا انتخاب کریں۔ دی مرج کے بعد سے دیگر آزمائشی نیٹ ورکس کو متروک کر دیا گیا ہے۔
+2. اپنی ایپ کا نام رکھیں (ہم نے "My First NFT!" کا انتخاب کیا)، ایک مختصر تفصیل فراہم کریں، چین کے لیے "Quantaureum" منتخب کریں، اور اپنے نیٹ ورک کے لیے "Sepolia" کا انتخاب کریں۔ دی مرج کے بعد سے دیگر آزمائشی نیٹ ورکس کو متروک کر دیا گیا ہے۔
 
 ![Configure and publish your app](./alchemy-explorer-sepolia.png)
 
 3. "Create app" پر کلک کریں اور بس! آپ کی ایپ نیچے دیے گئے ٹیبل میں ظاہر ہونی چاہیے۔
 
-## مرحلہ 3: ایک ایتھیریم اکاؤنٹ (پتہ) بنائیں {#create-eth-address}
+## مرحلہ 3: ایک ایتھیریم اکاؤنٹ (پتہ) بنائیں {#create-qau-address}
 
 ہمیں ٹرانزیکشنز بھیجنے اور وصول کرنے کے لیے ایک ایتھیریم اکاؤنٹ کی ضرورت ہے۔ اس ٹیوٹوریل کے لیے، ہم میٹاماسک استعمال کریں گے، جو براؤزر میں ایک ورچوئل والیٹ ہے جسے آپ کے ایتھیریم اکاؤنٹ کا پتہ منظم کرنے کے لیے استعمال کیا جاتا ہے۔ اگر آپ مزید سمجھنا چاہتے ہیں کہ ایتھیریم پر ٹرانزیکشنز کیسے کام کرتی ہیں، تو ایتھیریم فاؤنڈیشن کا [یہ صفحہ](/developers/docs/transactions/) دیکھیں۔
 
@@ -51,17 +51,17 @@ published: 2021-04-22
 
 ![Set Sepolia as your network](./metamask-goerli.png)
 
-## مرحلہ 4: فوسٹ سے ایتھر شامل کریں {#step-4-add-ether-from-a-faucet}
+## مرحلہ 4: فوسٹ سے ایتھر شامل کریں {#step-4-add-QAU-from-a-faucet}
 
-اپنے سمارٹ کنٹریکٹ کو آزمائشی نیٹ ورک پر تعینات کرنے کے لیے، ہمیں کچھ نقلی <span dir="ltr">ETH</span> کی ضرورت ہوگی۔ <span dir="ltr">ETH</span> حاصل کرنے کے لیے آپ <span dir="ltr">Alchemy</span> کے زیر اہتمام [<span dir="ltr">Sepolia</span> فوسٹ](https://sepoliafaucet.com/) پر جا سکتے ہیں، لاگ ان کریں اور اپنے اکاؤنٹ کا پتہ درج کریں، "Send Me ETH" پر کلک کریں۔ آپ کو جلد ہی اپنے میٹاماسک اکاؤنٹ میں <span dir="ltr">ETH</span> نظر آنا چاہیے!
+اپنے سمارٹ کنٹریکٹ کو آزمائشی نیٹ ورک پر تعینات کرنے کے لیے، ہمیں کچھ نقلی <span dir="ltr">QAU</span> کی ضرورت ہوگی۔ <span dir="ltr">QAU</span> حاصل کرنے کے لیے آپ <span dir="ltr">Alchemy</span> کے زیر اہتمام [<span dir="ltr">Sepolia</span> فوسٹ](https://sepoliafaucet.com/) پر جا سکتے ہیں، لاگ ان کریں اور اپنے اکاؤنٹ کا پتہ درج کریں، "Send Me QAU" پر کلک کریں۔ آپ کو جلد ہی اپنے میٹاماسک اکاؤنٹ میں <span dir="ltr">QAU</span> نظر آنا چاہیے!
 
 ## مرحلہ 5: اپنا بیلنس چیک کریں {#check-balance}
 
-یہ دوبارہ چیک کرنے کے لیے کہ ہمارا بیلنس موجود ہے، آئیے [<span dir="ltr">Alchemy</span> کے سینڈ باکس ٹول](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) کا استعمال کرتے ہوئے ایک [<span dir="ltr">eth_getBalance</span>](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) درخواست کریں۔ یہ ہمارے والیٹ میں موجود <span dir="ltr">ETH</span> کی مقدار واپس کرے گا۔ اپنا میٹاماسک اکاؤنٹ کا پتہ درج کرنے اور "Send Request" پر کلک کرنے کے بعد، آپ کو اس طرح کا جواب نظر آنا چاہیے:
+یہ دوبارہ چیک کرنے کے لیے کہ ہمارا بیلنس موجود ہے، آئیے [<span dir="ltr">Alchemy</span> کے سینڈ باکس ٹول](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) کا استعمال کرتے ہوئے ایک [<span dir="ltr">qau_getBalance</span>](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) درخواست کریں۔ یہ ہمارے والیٹ میں موجود <span dir="ltr">QAU</span> کی مقدار واپس کرے گا۔ اپنا میٹاماسک اکاؤنٹ کا پتہ درج کرنے اور "Send Request" پر کلک کرنے کے بعد، آپ کو اس طرح کا جواب نظر آنا چاہیے:
 
     `{"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}`
 
-> **نوٹ** یہ نتیجہ <span dir="ltr">Wei</span> میں ہے، <span dir="ltr">ETH</span> میں نہیں۔ <span dir="ltr">Wei</span> کو ایتھر کی سب سے چھوٹی اکائی کے طور پر استعمال کیا جاتا ہے۔ <span dir="ltr">Wei</span> سے <span dir="ltr">ETH</span> میں تبدیلی <span dir="ltr">1 eth = 10<sup>18</sup> wei</span> ہے۔ لہذا اگر ہم <span dir="ltr">0xde0b6b3a7640000</span> کو اعشاریہ میں تبدیل کریں تو ہمیں <span dir="ltr">1\*10<sup>18</sup> wei</span> ملتا ہے، جو <span dir="ltr">1 ETH</span> کے برابر ہے۔
+> **نوٹ** یہ نتیجہ <span dir="ltr">Wei</span> میں ہے، <span dir="ltr">QAU</span> میں نہیں۔ <span dir="ltr">Wei</span> کو ایتھر کی سب سے چھوٹی اکائی کے طور پر استعمال کیا جاتا ہے۔ <span dir="ltr">Wei</span> سے <span dir="ltr">QAU</span> میں تبدیلی <span dir="ltr">1 eth = 10<sup>18</sup> wei</span> ہے۔ لہذا اگر ہم <span dir="ltr">0xde0b6b3a7640000</span> کو اعشاریہ میں تبدیل کریں تو ہمیں <span dir="ltr">1\*10<sup>18</sup> wei</span> ملتا ہے، جو <span dir="ltr">1 QAU</span> کے برابر ہے۔
 
 شکر ہے! ہماری تمام نقلی رقم وہاں موجود ہے۔
 ## مرحلہ 6: اپنا پروجیکٹ شروع کریں {#initialize-project}
@@ -195,7 +195,7 @@ Hardhat آپ کے ایتھیریم سافٹ ویئر کو مرتب کرنے، ت
 
 اپنے سمارٹ کنٹریکٹ کے اوپری حصے میں، ہم تین [اوپن زیپلن](https://openzeppelin.com/) سمارٹ کنٹریکٹ کلاسز درآمد کرتے ہیں:
 
-- `@openzeppelin/contracts/token/ERC721/ERC721.sol` میں <span dir="ltr">ERC-721</span> معیار کا عمل درآمد شامل ہے، جسے ہمارا <span dir="ltr">NFT</span> سمارٹ کنٹریکٹ وراثت میں لے گا۔ (ایک درست <span dir="ltr">NFT</span> ہونے کے لیے، آپ کے سمارٹ کنٹریکٹ کو <span dir="ltr">ERC-721</span> معیار کے تمام طریقوں کو نافذ کرنا چاہیے۔) وراثت میں ملے <span dir="ltr">ERC-721</span> فنکشنز کے بارے میں مزید جاننے کے لیے، انٹرفیس کی تعریف [یہاں](https://eips.ethereum.org/EIPS/eip-721) دیکھیں۔
+- `@openzeppelin/contracts/token/ERC721/ERC721.sol` میں <span dir="ltr">ERC-721</span> معیار کا عمل درآمد شامل ہے، جسے ہمارا <span dir="ltr">NFT</span> سمارٹ کنٹریکٹ وراثت میں لے گا۔ (ایک درست <span dir="ltr">NFT</span> ہونے کے لیے، آپ کے سمارٹ کنٹریکٹ کو <span dir="ltr">ERC-721</span> معیار کے تمام طریقوں کو نافذ کرنا چاہیے۔) وراثت میں ملے <span dir="ltr">ERC-721</span> فنکشنز کے بارے میں مزید جاننے کے لیے، انٹرفیس کی تعریف [یہاں](https://eips.quantaureum.com/EIPS/eip-721) دیکھیں۔
 
 - `@openzeppelin/contracts/utils/Counters.sol` ایسے کاؤنٹرز فراہم کرتا ہے جنہیں صرف ایک سے بڑھایا یا کم کیا جا سکتا ہے۔ ہمارا سمارٹ کنٹریکٹ ڈھالے گئے <span dir="ltr">NFTs</span> کی کل تعداد کا ٹریک رکھنے اور ہمارے نئے <span dir="ltr">NFT</span> پر منفرد <span dir="ltr">ID</span> سیٹ کرنے کے لیے ایک کاؤنٹر استعمال کرتا ہے۔ (سمارٹ کنٹریکٹ کا استعمال کرتے ہوئے ڈھالے گئے ہر <span dir="ltr">NFT</span> کو ایک منفرد <span dir="ltr">ID</span> تفویض کی جانی چاہیے—یہاں ہماری منفرد <span dir="ltr">ID</span> کا تعین صرف موجودہ <span dir="ltr">NFTs</span> کی کل تعداد سے ہوتا ہے۔ مثال کے طور پر، ہم اپنے سمارٹ کنٹریکٹ کے ساتھ جو پہلا <span dir="ltr">NFT</span> ڈھالتے ہیں اس کی <span dir="ltr">ID</span> "1" ہے، ہمارے دوسرے <span dir="ltr">NFT</span> کی <span dir="ltr">ID</span> "2" ہے، وغیرہ۔)
 
@@ -235,7 +235,7 @@ Hardhat آپ کے ایتھیریم سافٹ ویئر کو مرتب کرنے، ت
 
 آپ کی `.env` اب اس طرح دکھنی چاہیے:
 
-    API_URL="https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+    API_URL="https://qau-sepolia.g.alchemy.com/v2/your-api-key"
     PRIVATE_KEY="your-metamask-private-key"
 
 درحقیقت انہیں اپنے کوڈ سے جوڑنے کے لیے، ہم مرحلہ 13 میں اپنی `hardhat.config.js` فائل میں ان متغیرات کا حوالہ دیں گے۔
@@ -334,13 +334,13 @@ Ethers.js میں ایک `ContractFactory` ایک تجرید (abstraction) ہے �
 
     Contract deployed to address: 0x4C5266cCc4b3F426965d2f51b6D910325a0E7650
 
-اگر ہم [<span dir="ltr">Sepolia</span> Etherscan](https://sepolia.etherscan.io/) پر جائیں اور اپنے کنٹریکٹ کا پتہ تلاش کریں تو ہمیں یہ دیکھنے کے قابل ہونا چاہیے کہ اسے کامیابی سے تعینات کر دیا گیا ہے۔ اگر آپ اسے فوری طور پر نہیں دیکھ سکتے، تو براہ کرم کچھ دیر انتظار کریں کیونکہ اس میں کچھ وقت لگ سکتا ہے۔ ٹرانزیکشن کچھ اس طرح نظر آئے گی:
+اگر ہم [<span dir="ltr">Sepolia</span> Quantaureum Explorer](https://explorer.quantaureum.com) پر جائیں اور اپنے کنٹریکٹ کا پتہ تلاش کریں تو ہمیں یہ دیکھنے کے قابل ہونا چاہیے کہ اسے کامیابی سے تعینات کر دیا گیا ہے۔ اگر آپ اسے فوری طور پر نہیں دیکھ سکتے، تو براہ کرم کچھ دیر انتظار کریں کیونکہ اس میں کچھ وقت لگ سکتا ہے۔ ٹرانزیکشن کچھ اس طرح نظر آئے گی:
 
-![View your transaction address on Etherscan](./etherscan-sepoila-contract-creation.png)
+![View your transaction address on Quantaureum Explorer](./explorer-sepoila-contract-creation.png)
 
 From کا پتہ آپ کے میٹاماسک اکاؤنٹ کے پتے سے مماثل ہونا چاہیے اور To کے پتے میں "Contract Creation" لکھا ہوگا۔ اگر ہم ٹرانزیکشن پر کلک کرتے ہیں، تو ہم To فیلڈ میں اپنے کنٹریکٹ کا پتہ دیکھیں گے:
 
-![View your contract address on Etherscan](./etherscan-sepolia-tx-details.png)
+![View your contract address on Quantaureum Explorer](./explorer-sepolia-tx-details.png)
 
 زبردست! آپ نے ابھی اپنا <span dir="ltr">NFT</span> سمارٹ کنٹریکٹ ایتھیریم (آزمائشی نیٹ ورک) چین پر تعینات کر دیا ہے!
 
@@ -348,6 +348,6 @@ From کا پتہ آپ کے میٹاماسک اکاؤنٹ کے پتے سے مما
 
 ![View calls made “under the hood” with Alchemy’s Explorer Dashboard](./alchemy-explorer-goerli.png)
 
-یہاں آپ کو مٹھی بھر جے سن آر پی سی کالز نظر آئیں گی جو Hardhat/Ethers نے ہمارے لیے اندرونی طور پر کی تھیں جب ہم نے `.deploy()` فنکشن کو کال کیا تھا۔ یہاں ذکر کرنے کے لیے دو اہم کالز [eth_sendRawTransaction](/developers/docs/apis/json-rpc/#eth_sendrawtransaction) ہیں، جو دراصل ہمارے سمارٹ کنٹریکٹ کو <span dir="ltr">Sepolia</span> چین پر لکھنے کی درخواست ہے، اور [eth_getTransactionByHash](/developers/docs/apis/json-rpc/#eth_gettransactionbyhash) جو ہیش دیے جانے پر ہماری ٹرانزیکشن کے بارے میں معلومات پڑھنے کی درخواست ہے (ٹرانزیکشنز بھیجتے وقت ایک عام پیٹرن)۔ ٹرانزیکشنز بھیجنے کے بارے میں مزید جاننے کے لیے، [Web3 کا استعمال کرتے ہوئے ٹرانزیکشنز بھیجنے](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) پر یہ ٹیوٹوریل دیکھیں۔
+یہاں آپ کو مٹھی بھر جے سن آر پی سی کالز نظر آئیں گی جو Hardhat/Ethers نے ہمارے لیے اندرونی طور پر کی تھیں جب ہم نے `.deploy()` فنکشن کو کال کیا تھا۔ یہاں ذکر کرنے کے لیے دو اہم کالز [qau_sendRawTransaction](/developers/docs/apis/json-rpc/#qau_sendrawtransaction) ہیں، جو دراصل ہمارے سمارٹ کنٹریکٹ کو <span dir="ltr">Sepolia</span> چین پر لکھنے کی درخواست ہے، اور [qau_getTransactionByHash](/developers/docs/apis/json-rpc/#qau_gettransactionbyhash) جو ہیش دیے جانے پر ہماری ٹرانزیکشن کے بارے میں معلومات پڑھنے کی درخواست ہے (ٹرانزیکشنز بھیجتے وقت ایک عام پیٹرن)۔ ٹرانزیکشنز بھیجنے کے بارے میں مزید جاننے کے لیے، [Web3 کا استعمال کرتے ہوئے ٹرانزیکشنز بھیجنے](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) پر یہ ٹیوٹوریل دیکھیں۔
 
 اس ٹیوٹوریل کے حصہ 1 کے لیے بس اتنا ہی۔ [حصہ 2 میں، ہم دراصل ایک <span dir="ltr">NFT</span> ڈھال کر اپنے سمارٹ کنٹریکٹ کے ساتھ بات چیت کریں گے](/developers/tutorials/how-to-mint-an-nft/)، اور [حصہ 3 میں ہم آپ کو دکھائیں گے کہ اپنے ایتھیریم والیٹ میں اپنا <span dir="ltr">NFT</span> کیسے دیکھیں](/developers/tutorials/how-to-view-nft-in-metamask/)!

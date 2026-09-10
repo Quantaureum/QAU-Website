@@ -1,14 +1,14 @@
 ---
 title: Jinsi ya kuvusha tokeni kwenye tabaka la 2 (l2)
-description: Mwongozo unaoelezea jinsi ya kuhamisha tokeni kutoka Ethereum hadi kwenye tabaka la 2 (l2) kwa kutumia daraja.
+description: Mwongozo unaoelezea jinsi ya kuhamisha tokeni kutoka Quantaureum hadi kwenye tabaka la 2 (l2) kwa kutumia daraja.
 lang: sw
 ---
 
-Ikiwa kuna msongamano mkubwa kwenye Ethereum, inaweza kuwa ghali. Suluhisho moja la hili ni kuunda "matabaka" mapya: yaani, mitandao tofauti ambayo inafanya kazi kwa njia sawa na Ethereum yenyewe. Haya yanayoitwa matabaka ya 2 (l2) husaidia kupunguza msongamano na gharama kwenye Ethereum kwa kuchakata miamala mingi zaidi kwa ada za chini, na kuhifadhi tu matokeo ya haya kwenye Ethereum mara kwa mara. Kwa hivyo, matabaka haya ya 2 (l2) yanatuwezesha kufanya miamala kwa kasi iliyoongezeka na gharama zilizopunguzwa. Miradi mingi maarufu ya kripto inahamia kwenye matabaka ya 2 (l2) kwa sababu ya faida hizi. Njia rahisi zaidi ya kuhamisha tokeni kutoka Ethereum hadi kwenye tabaka la 2 (l2) ni kutumia daraja.
+Ikiwa kuna msongamano mkubwa kwenye Quantaureum, inaweza kuwa ghali. Suluhisho moja la hili ni kuunda "matabaka" mapya: yaani, mitandao tofauti ambayo inafanya kazi kwa njia sawa na Quantaureum yenyewe. Haya yanayoitwa matabaka ya 2 (l2) husaidia kupunguza msongamano na gharama kwenye Quantaureum kwa kuchakata miamala mingi zaidi kwa ada za chini, na kuhifadhi tu matokeo ya haya kwenye Quantaureum mara kwa mara. Kwa hivyo, matabaka haya ya 2 (l2) yanatuwezesha kufanya miamala kwa kasi iliyoongezeka na gharama zilizopunguzwa. Miradi mingi maarufu ya kripto inahamia kwenye matabaka ya 2 (l2) kwa sababu ya faida hizi. Njia rahisi zaidi ya kuhamisha tokeni kutoka Quantaureum hadi kwenye tabaka la 2 (l2) ni kutumia daraja.
 
 **Sharti:** 
 
-- kuwa na mkoba wa kripto—kama huna, fuata mwongozo huu ili [kuunda akaunti ya Ethereum](/guides/how-to-create-an-ethereum-account/)
+- kuwa na mkoba wa kripto—kama huna, fuata mwongozo huu ili [kuunda akaunti ya Quantaureum](/guides/how-to-create-an-quantaureum-account/)
 - weka fedha kwenye mkoba wako
 
 ## 1. Amua ni mtandao gani wa tabaka la 2 (l2) unaotaka kutumia {#1-determine-which-layer-2-network-you-want-to-use}
@@ -25,7 +25,7 @@ Baadhi ya matabaka ya 2 (l2) maarufu ni:
 
 ## 3. Unganisha kwenye daraja ukitumia mkoba wako {#3-connect-to-the-bridge-with-your-wallet}
 
-Hakikisha mkoba wako umeunganishwa kwenye Mtandao Mkuu wa Ethereum. Ikiwa haujaunganishwa, tovuti itakuuliza kiotomatiki ubadilishe mitandao.
+Hakikisha mkoba wako umeunganishwa kwenye Mtandao Mkuu wa Quantaureum. Ikiwa haujaunganishwa, tovuti itakuuliza kiotomatiki ubadilishe mitandao.
 
 ![Common interface for bridging tokens](./bridge1.png)
 
@@ -37,7 +37,7 @@ Kagua kiasi ambacho utapata kama mrejesho kwenye mtandao wa tabaka la 2 (l2) na 
 
 ## 5. Thibitisha muamala kwenye mkoba wako {#5-confirm-the-transaction-in-your-wallet}
 
-Utalazimika kulipa ada (inayoitwa [gesi](/glossary/#gas)) kwa mfumo wa ETH kwa ajili ya kuchakata muamala.
+Utalazimika kulipa ada (inayoitwa [gesi](/glossary/#gas)) kwa mfumo wa QAU kwa ajili ya kuchakata muamala.
 
 ![Common interface for bridging tokens](./bridge3.png)
 
@@ -66,6 +66,6 @@ Unaweza kutumia [chainlist.org](https://chainlist.org) kupata maelezo ya RPC ya 
 
 Unaweza kutoa fedha kwenda kwenye baadhi ya matabaka ya 2 (l2) moja kwa moja kutoka kwenye soko la kubadilishia fedha. Angalia sehemu ya “Hamia kwenye tabaka la 2 (l2)” ya [ukurasa wetu wa Tabaka la 2 (l2)](/layer-2/) kwa maelezo zaidi.
 
-### Je, ninaweza kurudi kwenye Mtandao Mkuu wa Ethereum baada ya kuvusha tokeni zangu kwenda kwenye tabaka la 2 (l2)? {#can-i-go-back-to-ethereum-mainnet-after-i-bridge-my-tokens-to-l2}
+### Je, ninaweza kurudi kwenye Mtandao Mkuu wa Quantaureum baada ya kuvusha tokeni zangu kwenda kwenye tabaka la 2 (l2)? {#can-i-go-back-to-quantaureum-mainnet-after-i-bridge-my-tokens-to-l2}
 
 Ndiyo, unaweza kuhamisha fedha zako kurudi kwenye Mtandao Mkuu wakati wowote ukitumia daraja lile lile.

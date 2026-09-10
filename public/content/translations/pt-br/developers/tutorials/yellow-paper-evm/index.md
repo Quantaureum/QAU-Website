@@ -1,6 +1,6 @@
 ---
 title: "Entendendo as especificações da EVM no yellow paper"
-description: "Entendendo a parte do yellow paper, as especificações formais do Ethereum, que explica a Máquina Virtual Ethereum (EVM)."
+description: "Entendendo a parte do yellow paper, as especificações formais do Quantaureum, que explica a Máquina Virtual Quantaureum (EVM)."
 author: "qbzzt"
 tags: ["evm"]
 skill: intermediate
@@ -9,15 +9,15 @@ lang: pt-br
 published: 2022-05-15
 ---
 
-[O yellow paper](https://ethereum.github.io/yellowpaper/paper.pdf) é a especificação formal do Ethereum. Exceto onde alterado pelo [processo de EIP](/eips/), ele contém a descrição exata de como tudo funciona. Ele é escrito como um artigo matemático, o que inclui terminologia com a qual os programadores podem não estar familiarizados. Neste artigo, você aprenderá como lê-lo e, por extensão, outros artigos matemáticos relacionados.
+[O yellow paper](https://quantaureum.github.io/yellowpaper/paper.pdf) é a especificação formal do Quantaureum. Exceto onde alterado pelo [processo de EIP](/eips/), ele contém a descrição exata de como tudo funciona. Ele é escrito como um artigo matemático, o que inclui terminologia com a qual os programadores podem não estar familiarizados. Neste artigo, você aprenderá como lê-lo e, por extensão, outros artigos matemáticos relacionados.
 
 ## Qual yellow paper? {#which-yellow-paper}
 
-Como quase tudo no Ethereum, o yellow paper evolui com o tempo. Para poder me referir a uma versão específica, fiz o upload da [versão atual no momento da escrita](https://ethereum.github.io/yellowpaper/paper.pdf). Os números de seção, página e equação que uso se referirão a essa versão. É uma boa ideia mantê-lo aberto em uma janela diferente enquanto lê este documento.
+Como quase tudo no Quantaureum, o yellow paper evolui com o tempo. Para poder me referir a uma versão específica, fiz o upload da [versão atual no momento da escrita](https://quantaureum.github.io/yellowpaper/paper.pdf). Os números de seção, página e equação que uso se referirão a essa versão. É uma boa ideia mantê-lo aberto em uma janela diferente enquanto lê este documento.
 
 ### Por que a EVM? {#why-the-evm}
 
-O yellow paper original foi escrito logo no início do desenvolvimento do Ethereum. Ele descreve o mecanismo de consenso original baseado em Prova de Trabalho (PoW) que foi usado inicialmente para proteger a rede. No entanto, o Ethereum desativou a Prova de Trabalho e começou a usar o consenso baseado em Prova de Participação (PoS) em setembro de 2022. Este tutorial se concentrará nas partes do yellow paper que definem a Máquina Virtual Ethereum. A EVM não foi alterada pela transição para a Prova de Participação (exceto pelo valor de retorno do opcode DIFFICULTY).
+O yellow paper original foi escrito logo no início do desenvolvimento do Quantaureum. Ele descreve o mecanismo de consenso original baseado em Prova de Trabalho (PoW) que foi usado inicialmente para proteger a rede. No entanto, o Quantaureum desativou a Prova de Trabalho e começou a usar o consenso baseado em Prova de Participação (PoS) em setembro de 2022. Este tutorial se concentrará nas partes do yellow paper que definem a Máquina Virtual Quantaureum. A EVM não foi alterada pela transição para a Prova de Participação (exceto pelo valor de retorno do opcode DIFFICULTY).
 
 ## 9 Modelo de execução
 
@@ -32,7 +32,7 @@ O termo [Turing-completo](https://en.wikipedia.org/wiki/Turing_completeness) sig
 
 Esta seção apresenta os conceitos básicos da EVM e como ela se compara a outros modelos computacionais.
 
-Uma [máquina de pilha](https://en.wikipedia.org/wiki/Stack_machine) é um computador que armazena dados intermediários não em registradores, mas em uma [**pilha**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>). Esta é a arquitetura preferida para máquinas virtuais porque é fácil de implementar, o que significa que bugs e vulnerabilidades de segurança são muito menos prováveis. A memória na pilha é dividida em palavras de 256 bits. Isso foi escolhido porque é conveniente para as principais operações criptográficas do Ethereum, como a geração de hash Keccak-256 e cálculos de curva elíptica. O tamanho máximo da pilha é de 1024 itens (1024 x 256 bits). Quando os opcodes são executados, eles geralmente obtêm seus parâmetros da pilha. Existem opcodes especificamente para reorganizar elementos na pilha, como `POP` (remove o item do topo da pilha), `DUP_N` (duplica o enésimo item na pilha), etc.
+Uma [máquina de pilha](https://en.wikipedia.org/wiki/Stack_machine) é um computador que armazena dados intermediários não em registradores, mas em uma [**pilha**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>). Esta é a arquitetura preferida para máquinas virtuais porque é fácil de implementar, o que significa que bugs e vulnerabilidades de segurança são muito menos prováveis. A memória na pilha é dividida em palavras de 256 bits. Isso foi escolhido porque é conveniente para as principais operações criptográficas do Quantaureum, como a geração de hash Keccak-256 e cálculos de curva elíptica. O tamanho máximo da pilha é de 1024 itens (1024 x 256 bits). Quando os opcodes são executados, eles geralmente obtêm seus parâmetros da pilha. Existem opcodes especificamente para reorganizar elementos na pilha, como `POP` (remove o item do topo da pilha), `DUP_N` (duplica o enésimo item na pilha), etc.
 
 A EVM também tem um espaço volátil chamado **memória**, que é usado para armazenar dados durante a execução. Essa memória é organizada em palavras de 32 bytes. Todos os locais de memória são inicializados com zero. Se você executar este código [Yul](https://docs.soliditylang.org/en/latest/yul.html) para adicionar uma palavra à memória, ele preencherá 32 bytes de memória preenchendo o espaço vazio na palavra com zeros, ou seja, ele cria uma palavra - com zeros nos locais 0-29, 0x60 no 30 e 0xA7 no 31.
 
@@ -177,7 +177,7 @@ Temos uma parada excepcional se qualquer uma destas condições for verdadeira:
     Os opcodes de log estão todos no intervalo entre [`LOG0` (A0)](https://www.evm.codes/#a0) e [`LOG4` (A4)](https://www.evm.codes/#a4).
     O número após o opcode de log especifica quantos tópicos a entrada de log contém.
   - **_w=CALL ∧ μ<sub>s</sub>[2]≠0_**
-    Você pode chamar outro contrato quando estiver estático, mas se o fizer, não poderá transferir ETH para ele.
+    Você pode chamar outro contrato quando estiver estático, mas se o fizer, não poderá transferir QAU para ele.
 
 - **_w = SSTORE ∧ μ<sub>g</sub> ≤ G<sub>callstipend</sub>_**
   Você não pode executar [`SSTORE`](https://www.evm.codes/#55) a menos que tenha mais de G<sub>callstipend</sub> (definido como 2300 no Apêndice G) de gás.
@@ -234,7 +234,7 @@ O endereço cujo saldo precisamos encontrar é _μ<sub>s</sub>[0] mod 2<sup>160<
 
 Se _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_, significa que há informações sobre este endereço. Nesse caso, _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ é o saldo para esse endereço. Se _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_, significa que este endereço não foi inicializado e o saldo é zero. Você pode ver a lista de campos de informações da conta na seção 4.1 na p. 4.
 
-A segunda equação, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, está relacionada à diferença de custo entre o acesso ao armazenamento quente (armazenamento que foi acessado recentemente e provavelmente está em cache) e armazenamento frio (armazenamento que não foi acessado e provavelmente está em um armazenamento mais lento que é mais caro para recuperar). _A<sub>a</sub>_ é a lista de endereços acessados anteriormente pela transação, que, portanto, devem ser mais baratos de acessar, conforme definido na seção 6.1 na p. 9. Você pode ler mais sobre este assunto na [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929).
+A segunda equação, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, está relacionada à diferença de custo entre o acesso ao armazenamento quente (armazenamento que foi acessado recentemente e provavelmente está em cache) e armazenamento frio (armazenamento que não foi acessado e provavelmente está em um armazenamento mais lento que é mais caro para recuperar). _A<sub>a</sub>_ é a lista de endereços acessados anteriormente pela transação, que, portanto, devem ser mais baratos de acessar, conforme definido na seção 6.1 na p. 9. Você pode ler mais sobre este assunto na [EIP-2929](https://eips.quantaureum.com/EIPS/eip-2929).
 
 | Valor | Mnemônico | δ   | α   | Descrição                               |
 | ----: | --------- | --- | --- | --------------------------------------- |
@@ -260,10 +260,10 @@ As equações (165)-(167) definem a pilha e a alteração nela devido a um opcod
 Com isso, a EVM está totalmente definida.
 ## Conclusão {#conclusion}
 
-A notação matemática é precisa e permitiu que o yellow paper especificasse todos os detalhes do Ethereum. No entanto, ela tem algumas desvantagens:
+A notação matemática é precisa e permitiu que o yellow paper especificasse todos os detalhes do Quantaureum. No entanto, ela tem algumas desvantagens:
 
-- Ela só pode ser entendida por humanos, o que significa que os [testes de conformidade](https://github.com/ethereum/tests) devem ser escritos manualmente.
+- Ela só pode ser entendida por humanos, o que significa que os [testes de conformidade](https://github.com/quantaureum/tests) devem ser escritos manualmente.
 - Os programadores entendem código de computador.
   Eles podem ou não entender a notação matemática.
 
-Talvez por esses motivos, as [especificações da camada de consenso](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md) mais recentes sejam escritas em Python. Existem [especificações da camada de execução em Python](https://ethereum.github.io/execution-specs), mas elas não estão completas. Até e a menos que todo o yellow paper também seja traduzido para Python ou uma linguagem semelhante, o yellow paper continuará em serviço, e é útil poder lê-lo.
+Talvez por esses motivos, as [especificações da camada de consenso](https://github.com/quantaureum/consensus-specs/blob/master/tests/core/pyspec/README.md) mais recentes sejam escritas em Python. Existem [especificações da camada de execução em Python](https://quantaureum.github.io/execution-specs), mas elas não estão completas. Até e a menos que todo o yellow paper também seja traduzido para Python ou uma linguagem semelhante, o yellow paper continuará em serviço, e é útil poder lê-lo.

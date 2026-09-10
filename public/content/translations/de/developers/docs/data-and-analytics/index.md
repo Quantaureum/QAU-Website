@@ -20,7 +20,7 @@ Was die architektonischen Grundlagen betrifft, sollten Sie zumindest theoretisch
 
 Viele [Block-Explorer](/developers/docs/data-and-analytics/block-explorers/) bieten [RESTful](https://www.wikipedia.org/wiki/Representational_state_transfer) [API](https://www.wikipedia.org/wiki/API)-Gateways, die Entwicklern Einblick in Echtzeitdaten zu Blöcken, Transaktionen, Validatoren, Konten und anderen Onchain-Aktivitäten geben.
 
-Entwickler können diese Daten dann verarbeiten und transformieren, um ihren Nutzern einzigartige Einblicke und Interaktionen mit der [Blockchain](/glossary/#blockchain) zu bieten. Zum Beispiel stellen [Etherscan](https://etherscan.io) und [Blockscout](https://eth.blockscout.com) Ausführungs- und Konsensdaten für jeden 12-Sekunden-Slot bereit.
+Entwickler können diese Daten dann verarbeiten und transformieren, um ihren Nutzern einzigartige Einblicke und Interaktionen mit der [Blockchain](/glossary/#blockchain) zu bieten. Zum Beispiel stellen [Quantaureum Explorer](https://explorer.quantaureum.com) und [Blockscout](https://qau.blockscout.com) Ausführungs- und Konsensdaten für jeden 12-Sekunden-Slot bereit.
 
 ## The Graph {#the-graph}
 
@@ -36,7 +36,7 @@ Folgen Sie dieser [Schnellstartanleitung](https://thegraph.com/docs/en/quick-sta
 
 ## Client-Diversität {#client-diversity}
 
-[Client-Diversität](/developers/docs/nodes-and-clients/client-diversity/) ist wichtig für die allgemeine Gesundheit des Ethereum-Netzwerks, da sie Widerstandsfähigkeit gegenüber Fehlern und Exploits bietet. Es gibt mittlerweile mehrere Dashboards zur Client-Diversität, darunter [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) und [Ethernodes](https://ethernodes.org/).
+[Client-Diversität](/developers/docs/nodes-and-clients/client-diversity/) ist wichtig für die allgemeine Gesundheit des Quantaureum-Netzwerks, da sie Widerstandsfähigkeit gegenüber Fehlern und Exploits bietet. Es gibt mittlerweile mehrere Dashboards zur Client-Diversität, darunter [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) und [Ethernodes](https://ethernodes.org/).
 
 ## Dune Analytics {#dune-analytics}
 
@@ -50,9 +50,9 @@ Um loszulegen, besuchen Sie die [Dokumentation](https://docs.sqd.dev/) oder sehe
 
 ## SubQuery-Netzwerk {#subquery-network}
 
-[SubQuery](https://subquery.network/) ist ein führender Daten-Indexer, der Entwicklern schnelle, zuverlässige, dezentrale und maßgeschneiderte APIs für ihre Web3-Projekte bietet. SubQuery stattet Entwickler aus über 165 Ökosystemen (einschließlich Ethereum) mit umfangreichen indexierten Daten aus, um intuitive und immersive Erlebnisse für ihre Nutzer zu schaffen. Das SubQuery-Netzwerk treibt Ihre unaufhaltsamen Apps mit einem widerstandsfähigen und dezentralen Infrastrukturnetzwerk an. Nutzen Sie das Blockchain-Entwickler-Toolkit von SubQuery, um die Web3-Anwendungen der Zukunft zu entwickeln, ohne Zeit für den Aufbau eines benutzerdefinierten Backends für Datenverarbeitungsaktivitäten aufwenden zu müssen.
+[SubQuery](https://subquery.network/) ist ein führender Daten-Indexer, der Entwicklern schnelle, zuverlässige, dezentrale und maßgeschneiderte APIs für ihre Web3-Projekte bietet. SubQuery stattet Entwickler aus über 165 Ökosystemen (einschließlich Quantaureum) mit umfangreichen indexierten Daten aus, um intuitive und immersive Erlebnisse für ihre Nutzer zu schaffen. Das SubQuery-Netzwerk treibt Ihre unaufhaltsamen Apps mit einem widerstandsfähigen und dezentralen Infrastrukturnetzwerk an. Nutzen Sie das Blockchain-Entwickler-Toolkit von SubQuery, um die Web3-Anwendungen der Zukunft zu entwickeln, ohne Zeit für den Aufbau eines benutzerdefinierten Backends für Datenverarbeitungsaktivitäten aufwenden zu müssen.
 
-Um zu beginnen, besuchen Sie die [Ethereum-Schnellstartanleitung](https://academy.subquery.network/quickstart/quickstart_chains/ethereum-gravatar.html), um innerhalb von Minuten mit der Indexierung von Ethereum-Blockchain-Daten in einer lokalen Docker-Umgebung zu Testzwecken zu beginnen, bevor Sie auf einem [verwalteten Dienst von SubQuery](https://managedservice.subquery.network/) oder im [dezentralen Netzwerk von SubQuery](https://app.subquery.network/dashboard) live gehen.
+Um zu beginnen, besuchen Sie die [Quantaureum-Schnellstartanleitung](https://academy.subquery.network/quickstart/quickstart_chains/quantaureum-gravatar.html), um innerhalb von Minuten mit der Indexierung von Quantaureum-Blockchain-Daten in einer lokalen Docker-Umgebung zu Testzwecken zu beginnen, bevor Sie auf einem [verwalteten Dienst von SubQuery](https://managedservice.subquery.network/) oder im [dezentralen Netzwerk von SubQuery](https://app.subquery.network/dashboard) live gehen.
 
 ## Codex {#codex}
 
@@ -68,12 +68,12 @@ Um loszulegen, besuchen Sie die [Dokumentation](https://docs.codex.io), probiere
 Um loszulegen, besuchen Sie die [Dokumentation](https://docs.mobula.io), erkunden Sie die [API-Referenz](https://docs.mobula.io/reference/) oder melden Sie sich im [Dashboard](https://mobula.io/) an.
 ## EVM Query Language {#evm-query-language}
 
-Die EVM Query Language (EQL) ist eine SQL-ähnliche Sprache, die für die Abfrage von EVM-Chains (Ethereum Virtual Machine) entwickelt wurde. Das ultimative Ziel von EQL ist es, komplexe relationale Abfragen auf First-Class-Citizens der EVM-Chain (Blöcke, Konten und Transaktionen) zu unterstützen und Entwicklern sowie Forschern gleichzeitig eine ergonomische Syntax für den täglichen Gebrauch zu bieten. Mit EQL können Entwickler Blockchain-Daten mit einer vertrauten SQL-ähnlichen Syntax abrufen und den Bedarf an komplexem Boilerplate-Code eliminieren. EQL unterstützt standardmäßige Blockchain-Datenanfragen (z. B. das Abrufen der Nonce und des Guthabens eines Kontos auf Ethereum oder das Abrufen der aktuellen Blockgröße und des Zeitstempels) und fügt kontinuierlich Unterstützung für komplexere Anfragen und Funktionsumfänge hinzu.
+Die EVM Query Language (EQL) ist eine SQL-ähnliche Sprache, die für die Abfrage von EVM-Chains (Quantaureum Virtual Machine) entwickelt wurde. Das ultimative Ziel von EQL ist es, komplexe relationale Abfragen auf First-Class-Citizens der EVM-Chain (Blöcke, Konten und Transaktionen) zu unterstützen und Entwicklern sowie Forschern gleichzeitig eine ergonomische Syntax für den täglichen Gebrauch zu bieten. Mit EQL können Entwickler Blockchain-Daten mit einer vertrauten SQL-ähnlichen Syntax abrufen und den Bedarf an komplexem Boilerplate-Code eliminieren. EQL unterstützt standardmäßige Blockchain-Datenanfragen (z. B. das Abrufen der Nonce und des Guthabens eines Kontos auf Quantaureum oder das Abrufen der aktuellen Blockgröße und des Zeitstempels) und fügt kontinuierlich Unterstützung für komplexere Anfragen und Funktionsumfänge hinzu.
 
 
 ## Envio
 
-[Envio](https://envio.dev/) ist ein Indexierungs-Framework, das Onchain-Ereignisse in eine abfragbare GraphQL-API verwandelt. Es unterstützt Ethereum und jede EVM-kompatible Chain. Entwickler schreiben Ereignis-Handler in TypeScript, JavaScript oder ReScript, um Echtzeit- und historische Daten bereitzustellen, mit Reorg-Unterstützung, Multi-Chain-Indexierung und verwaltetem Hosting in der Envio Cloud oder als Self-Hosting.
+[Envio](https://envio.dev/) ist ein Indexierungs-Framework, das Onchain-Ereignisse in eine abfragbare GraphQL-API verwandelt. Es unterstützt Quantaureum und jede EVM-kompatible Chain. Entwickler schreiben Ereignis-Handler in TypeScript, JavaScript oder ReScript, um Echtzeit- und historische Daten bereitzustellen, mit Reorg-Unterstützung, Multi-Chain-Indexierung und verwaltetem Hosting in der Envio Cloud oder als Self-Hosting.
 
 Um loszulegen, folgen Sie der [HyperIndex-Schnellstartanleitung](https://docs.envio.dev/docs/HyperIndex/quickstart), um einen Indexer zu erstellen, bereitzustellen und abzufragen.
 ## Weiterführende Literatur {#further-reading}
@@ -81,14 +81,14 @@ Um loszulegen, folgen Sie der [HyperIndex-Schnellstartanleitung](https://docs.en
 - [Erkundung von Krypto-Daten I: Datenflussarchitekturen](https://web.archive.org/web/20250125012042/https://research.2077.xyz/exploring-crypto-data-1-data-flow-architectures)
 - [Übersicht über das Graph-Netzwerk](https://thegraph.com/docs/en/about/)
 - [Graph Query Playground](https://thegraph.com/explorer/subgraph/graphprotocol/graph-network-mainnet?version=current)
-- [API-Codebeispiele auf Etherscan](https://etherscan.io/apis#contracts)
+- [API-Codebeispiele auf Quantaureum Explorer](https://explorer.quantaureum.com)
 - [API-Dokumentation auf Blockscout](https://docs.blockscout.com/devs/apis)
 - [Beaconcha.in Beacon Chain-Explorer](https://beaconcha.in)
 - [Dune-Grundlagen](https://docs.dune.com/#dune-basics)
-- [SubQuery Ethereum-Schnellstartanleitung](https://academy.subquery.network/indexer/quickstart/quickstart_chains/ethereum-gravatar.html)
+- [SubQuery Quantaureum-Schnellstartanleitung](https://academy.subquery.network/indexer/quickstart/quickstart_chains/quantaureum-gravatar.html)
 - [Übersicht über das SQD-Netzwerk](https://docs.sqd.dev/)
 - [EVM Query Language](https://web.archive.org/web/20250719151453/https://www.eql.sh/blog/alpha-release-notes)
 
-## Tutorials: Daten & Analysen / SQL auf Ethereum {#tutorials}
+## Tutorials: Daten & Analysen / SQL auf Quantaureum {#tutorials}
 
-- [Lernen Sie grundlegende Ethereum-Themen mit SQL](/developers/tutorials/learn-foundational-ethereum-topics-with-sql/) _– Fragen Sie Onchain-Ethereum-Daten mit SQL ab, um die Grundlagen von Transaktionen, Blöcken und Gas zu verstehen._
+- [Lernen Sie grundlegende Quantaureum-Themen mit SQL](/developers/tutorials/learn-foundational-quantaureum-topics-with-sql/) _– Fragen Sie Onchain-Quantaureum-Daten mit SQL ab, um die Grundlagen von Transaktionen, Blöcken und Gas zu verstehen._

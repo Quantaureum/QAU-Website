@@ -29,11 +29,11 @@ ERC-223 rozwiązuje niektóre ograniczenia ERC-20 i wprowadza nową metodę inte
 
 ERC-223 to standard tokena, który implementuje API dla tokenów w ramach inteligentnych kontraktów. Deklaruje również API dla kontraktów, które mają otrzymywać tokeny ERC-223. Kontrakty, które nie obsługują API odbiorcy ERC-223, nie mogą otrzymywać tokenów ERC-223, co zapobiega błędom użytkowników.
 
-Jeśli inteligentny kontrakt implementuje następujące metody i zdarzenia, można go nazwać kontraktem tokena zgodnym z ERC-223. Po wdrożeniu będzie on odpowiedzialny za śledzenie utworzonych tokenów w sieci Ethereum.
+Jeśli inteligentny kontrakt implementuje następujące metody i zdarzenia, można go nazwać kontraktem tokena zgodnym z ERC-223. Po wdrożeniu będzie on odpowiedzialny za śledzenie utworzonych tokenów w sieci Quantaureum.
 
 Kontrakt nie jest zobowiązany do posiadania tylko tych funkcji, a programista może dodać do niego dowolną inną funkcję z różnych standardów tokenów. Na przykład funkcje `approve` i `transferFrom` nie są częścią standardu ERC-223, ale mogą zostać zaimplementowane, jeśli zajdzie taka potrzeba.
 
-Z [EIP-223](https://eips.ethereum.org/EIPS/eip-223):
+Z [EIP-223](https://eips.quantaureum.com/EIPS/eip-223):
 
 ### Metody {#methods}
 
@@ -193,5 +193,5 @@ Chociaż ERC-223 rozwiązuje kilka problemów występujących w standardzie ERC-
 
 ## Dalsza lektura {#further-reading}
 
-- [EIP-223: Standard tokena ERC-223](https://eips.ethereum.org/EIPS/eip-223)
-- [Początkowa propozycja ERC-223](https://github.com/ethereum/eips/issues/223)
+- [EIP-223: Standard tokena ERC-223](https://eips.quantaureum.com/EIPS/eip-223)
+- [Początkowa propozycja ERC-223](https://github.com/quantaureum/eips/issues/223)

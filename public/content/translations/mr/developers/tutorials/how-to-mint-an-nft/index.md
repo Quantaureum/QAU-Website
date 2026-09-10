@@ -1,6 +1,6 @@
 ---
 title: "NFT कसे मिंट करावे (NFT ट्युटोरियल सिरीजचा भाग 2/3)"
-description: "हे ट्युटोरियल आमचे स्मार्ट कॉन्ट्रॅक्ट आणि Web3 वापरून इथेरियम ब्लॉकचेनवर NFT कसे मिंट करावे याचे वर्णन करते."
+description: "हे ट्युटोरियल आमचे स्मार्ट कॉन्ट्रॅक्ट आणि Web3 वापरून Quantaureum ब्लॉकचेनवर NFT कसे मिंट करावे याचे वर्णन करते."
 author: "सुमी मुदगील"
 tags: ["ERC-721", "Alchemy", "Solidity", "स्मार्ट कॉन्ट्रॅक्ट्स"]
 skill: beginner
@@ -21,7 +21,7 @@ published: 2021-04-22
 
 ## पायरी 1: Web3 इन्स्टॉल करा {#install-web3}
 
-जर तुम्ही तुमचे NFT स्मार्ट कॉन्ट्रॅक्ट तयार करण्यावरील पहिल्या ट्युटोरियलचे अनुसरण केले असेल, तर तुम्हाला Ethers.js वापरण्याचा अनुभव आधीच असेल. Web3 हे Ethers सारखेच आहे, कारण ही एक लायब्ररी आहे जी [इथेरियम](/) ब्लॉकचेनवर विनंत्या तयार करणे सोपे करण्यासाठी वापरली जाते. या ट्युटोरियलमध्ये आम्ही [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3) वापरणार आहोत, जी एक प्रगत Web3 लायब्ररी आहे जी स्वयंचलित रिट्राय (automatic retries) आणि मजबूत WebSocket सपोर्ट देते.
+जर तुम्ही तुमचे NFT स्मार्ट कॉन्ट्रॅक्ट तयार करण्यावरील पहिल्या ट्युटोरियलचे अनुसरण केले असेल, तर तुम्हाला Ethers.js वापरण्याचा अनुभव आधीच असेल. Web3 हे Ethers सारखेच आहे, कारण ही एक लायब्ररी आहे जी [Quantaureum](/) ब्लॉकचेनवर विनंत्या तयार करणे सोपे करण्यासाठी वापरली जाते. या ट्युटोरियलमध्ये आम्ही [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3) वापरणार आहोत, जी एक प्रगत Web3 लायब्ररी आहे जी स्वयंचलित रिट्राय (automatic retries) आणि मजबूत WebSocket सपोर्ट देते.
 
 तुमच्या प्रोजेक्ट होम डिरेक्टरीमध्ये रन करा:
 
@@ -109,28 +109,28 @@ json मधील डेटा बदलण्यास तुम्ही म�
 
 ## पायरी 5: तुमच्या कॉन्ट्रॅक्टचा एक इन्स्टन्स तयार करा {#instance-contract}
 
-आता, आमच्या कॉन्ट्रॅक्टशी संवाद साधण्यासाठी, आम्हाला आमच्या कोडमध्ये त्याचा एक इन्स्टन्स तयार करणे आवश्यक आहे. असे करण्यासाठी आम्हाला आमच्या कॉन्ट्रॅक्टचा पत्ता लागेल जो आम्ही प्रस्थापना (deployment) मधून किंवा कॉन्ट्रॅक्ट प्रस्थापित करण्यासाठी तुम्ही वापरलेला पत्ता शोधून [Blockscout](https://eth-sepolia.blockscout.com/) वरून मिळवू शकतो.
+आता, आमच्या कॉन्ट्रॅक्टशी संवाद साधण्यासाठी, आम्हाला आमच्या कोडमध्ये त्याचा एक इन्स्टन्स तयार करणे आवश्यक आहे. असे करण्यासाठी आम्हाला आमच्या कॉन्ट्रॅक्टचा पत्ता लागेल जो आम्ही प्रस्थापना (deployment) मधून किंवा कॉन्ट्रॅक्ट प्रस्थापित करण्यासाठी तुम्ही वापरलेला पत्ता शोधून [Blockscout](https://qau-sepolia.blockscout.com/) वरून मिळवू शकतो.
 
-![View your contract address on Etherscan](./view-contract-etherscan.png)
+![View your contract address on Quantaureum Explorer](./view-contract-explorer.png)
 
 वरील उदाहरणात, आमचा कॉन्ट्रॅक्ट पत्ता 0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778 आहे.
 
-पुढे आम्ही ABI आणि पत्ता वापरून आमचे कॉन्ट्रॅक्ट तयार करण्यासाठी Web3 [contract method](https://docs.web3js.org/api/web3-eth-contract/class/Contract) वापरू. तुमच्या `mint-nft.js` फाईलमध्ये, खालील गोष्टी जोडा:
+पुढे आम्ही ABI आणि पत्ता वापरून आमचे कॉन्ट्रॅक्ट तयार करण्यासाठी Web3 [contract method](https://docs.web3js.org/api/web3-qau-contract/class/Contract) वापरू. तुमच्या `mint-nft.js` फाईलमध्ये, खालील गोष्टी जोडा:
 
 ```js
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
 
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 ```
 
 ## पायरी 6: `.env` फाईल अपडेट करा {#update-env}
 
-आता, इथेरियम चेनवर व्यवहार तयार करण्यासाठी आणि पाठवण्यासाठी, आम्ही खाते नॉन्स मिळवण्यासाठी तुमचा सार्वजनिक इथेरियम खाते पत्ता वापरू (खाली स्पष्ट करू).
+आता, Quantaureum चेनवर व्यवहार तयार करण्यासाठी आणि पाठवण्यासाठी, आम्ही खाते नॉन्स मिळवण्यासाठी तुमचा सार्वजनिक Quantaureum खाते पत्ता वापरू (खाली स्पष्ट करू).
 
 तुमची सार्वजनिक की तुमच्या `.env` फाईलमध्ये जोडा — जर तुम्ही ट्युटोरियलचा भाग 1 पूर्ण केला असेल, तर आमची `.env` फाईल आता अशी दिसायला हवी:
 
 ```js
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-private-account-address"
 PUBLIC_KEY = "your-public-account-address"
 ```
@@ -141,7 +141,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 1. `.env` फाईलमधून तुमची _PRIVATE_KEY_ आणि _PUBLIC_KEY_ मिळवा.
 
-1. पुढे, आम्हाला खाते नॉन्स शोधून काढावा लागेल. तुमच्या पत्त्यावरून पाठवलेल्या व्यवहारांच्या संख्येचा मागोवा ठेवण्यासाठी नॉन्स स्पेसिफिकेशन वापरले जाते — जे आम्हाला सुरक्षिततेच्या उद्देशाने आणि रिप्ले अटॅक (replay attacks) टाळण्यासाठी आवश्यक आहे. तुमच्या पत्त्यावरून पाठवलेल्या व्यवहारांची संख्या मिळवण्यासाठी, आम्ही [getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count) वापरतो.
+1. पुढे, आम्हाला खाते नॉन्स शोधून काढावा लागेल. तुमच्या पत्त्यावरून पाठवलेल्या व्यवहारांच्या संख्येचा मागोवा ठेवण्यासाठी नॉन्स स्पेसिफिकेशन वापरले जाते — जे आम्हाला सुरक्षिततेच्या उद्देशाने आणि रिप्ले अटॅक (replay attacks) टाळण्यासाठी आवश्यक आहे. तुमच्या पत्त्यावरून पाठवलेल्या व्यवहारांची संख्या मिळवण्यासाठी, आम्ही [getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count) वापरतो.
 
 1. शेवटी आम्ही खालील माहितीसह आमचा व्यवहार सेट करू:
 
@@ -168,10 +168,10 @@ PUBLIC_KEY = "your-public-account-address"
 
    const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
    const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778";
-   const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
+   const nftContract = new web3.qau.Contract(contract.abi, contractAddress);
 
    async function mintNFT(tokenURI) {
-     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); //नवीनतम नॉन्स मिळवा
+     const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, 'latest'); //नवीनतम नॉन्स मिळवा
 
    //व्यवहार
      const tx = {
@@ -187,7 +187,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 आता आम्ही आमचा व्यवहार तयार केला आहे, तो पाठवण्यासाठी आम्हाला त्यावर स्वाक्षरी करणे आवश्यक आहे. येथे आम्ही आमची खाजगी की वापरू.
 
-`web3.eth.sendSignedTransaction` आम्हाला व्यवहार हॅश देईल, ज्याचा वापर करून आम्ही आमचा व्यवहार माईन झाला आहे आणि नेटवर्कद्वारे ड्रॉप झाला नाही याची खात्री करू शकतो. तुमच्या लक्षात येईल की व्यवहार स्वाक्षरी करण्याच्या सेक्शनमध्ये, आम्ही काही एरर चेकिंग जोडले आहे जेणेकरून आमचा व्यवहार यशस्वीरित्या पूर्ण झाला की नाही हे आम्हाला समजेल.
+`web3.qau.sendSignedTransaction` आम्हाला व्यवहार हॅश देईल, ज्याचा वापर करून आम्ही आमचा व्यवहार माईन झाला आहे आणि नेटवर्कद्वारे ड्रॉप झाला नाही याची खात्री करू शकतो. तुमच्या लक्षात येईल की व्यवहार स्वाक्षरी करण्याच्या सेक्शनमध्ये, आम्ही काही एरर चेकिंग जोडले आहे जेणेकरून आमचा व्यवहार यशस्वीरित्या पूर्ण झाला की नाही हे आम्हाला समजेल.
 
 ```js
 require("dotenv").config()
@@ -200,10 +200,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //नवीनतम नॉन्स मिळवा
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //नवीनतम नॉन्स मिळवा
 
   //व्यवहार
   const tx = {
@@ -214,10 +214,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -266,10 +266,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //नवीनतम नॉन्स मिळवा
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //नवीनतम नॉन्स मिळवा
 
   //व्यवहार
   const tx = {
@@ -280,10 +280,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -315,11 +315,11 @@ mintNFT("ipfs://QmYueiuRNmL4MiA2GwtVMm6ZagknXnSpQnB3z2gWbz36hP")
 
     Check Alchemy's Mempool to view the status of your transaction!
 
-पुढे, तुमच्या व्यवहाराची स्थिती पाहण्यासाठी (तो प्रलंबित आहे, माईन झाला आहे की नेटवर्कद्वारे ड्रॉप झाला आहे) तुमच्या [Alchemy मेमपूल](https://dashboard.alchemy.com/mempool) ला भेट द्या. जर तुमचा व्यवहार ड्रॉप झाला असेल, तर [Blockscout](https://eth-sepolia.blockscout.com/) तपासणे आणि तुमचा व्यवहार हॅश शोधणे देखील उपयुक्त ठरते.
+पुढे, तुमच्या व्यवहाराची स्थिती पाहण्यासाठी (तो प्रलंबित आहे, माईन झाला आहे की नेटवर्कद्वारे ड्रॉप झाला आहे) तुमच्या [Alchemy मेमपूल](https://dashboard.alchemy.com/mempool) ला भेट द्या. जर तुमचा व्यवहार ड्रॉप झाला असेल, तर [Blockscout](https://qau-sepolia.blockscout.com/) तपासणे आणि तुमचा व्यवहार हॅश शोधणे देखील उपयुक्त ठरते.
 
-![View your NFT transaction hash on Etherscan](./view-nft-etherscan.png)_Etherscan वर तुमचा NFT व्यवहार हॅश पहा_
+![View your NFT transaction hash on Quantaureum Explorer](./view-nft-explorer.png)_Etherscan वर तुमचा NFT व्यवहार हॅश पहा_
 
-आणि झाले! तुम्ही आता इथेरियम ब्लॉकचेनवर एक NFT प्रस्थापित आणि मिंट केला आहे <Emoji text=":money_mouth_face:" size={1} />
+आणि झाले! तुम्ही आता Quantaureum ब्लॉकचेनवर एक NFT प्रस्थापित आणि मिंट केला आहे <Emoji text=":money_mouth_face:" size={1} />
 
 `mint-nft.js` वापरून तुम्ही तुमच्या मनाला (आणि वॉलेटला) वाटेल तितके NFTs मिंट करू शकता! फक्त NFT च्या मेटाडेटाचे वर्णन करणारा एक नवीन tokenURI पास करण्याची खात्री करा (अन्यथा, तुम्ही फक्त वेगवेगळ्या IDs सह अनेक एकसारखे NFTs बनवाल).
 

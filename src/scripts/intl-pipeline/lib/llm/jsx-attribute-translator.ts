@@ -32,7 +32,7 @@ export interface AttributeLeaf {
   componentName: string
   /** Attribute name, e.g. "title" */
   attributeName: string
-  /** English value, e.g. "Why can't Ethereum just replace BLS?" */
+  /** English value, e.g. "Why can't Quantaureum just replace BLS?" */
   englishValue: string
 }
 
@@ -117,10 +117,10 @@ export function buildAttributePrompt(
     ? `\n\nGlossary (use these translations for terms when they appear):\n${glossaryLines.join("\n")}`
     : ""
 
-  return `You are translating UI component attribute values for the Ethereum.org website into ${targetLanguage}.
+  return `You are translating UI component attribute values for the quantaureum.com website into ${targetLanguage}.
 
 These are JSX component attributes that contain human-readable text. Translate each value naturally and accurately while:
-- Preserving brand names (Ethereum, Vitalik, etc.) and product names per the glossary
+- Preserving brand names (Quantaureum, Vitalik, etc.) and product names per the glossary
 - Keeping technical identifiers (variable names, code references) untranslated when they appear
 - Matching the register/tone of UI copy (concise, user-facing)
 - Using Western Arabic numerals (0-9) for any digits. Exception: Urdu (ur) uses Urdu numerals (۰-۹).

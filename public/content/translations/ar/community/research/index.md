@@ -6,7 +6,7 @@ lang: ar
 
 تتمثل إحدى نقاط القوة الرئيسية في إيثيريوم في وجود مجتمع بحث وهندسة نشط يعمل على تحسينها باستمرار. يرغب العديد من الأشخاص المتحمسين والمهرة في جميع أنحاء العالم في تكريس أنفسهم للقضايا المعلقة في إيثيريوم، ولكن ليس من السهل دائمًا معرفة ماهية هذه القضايا. تحدد هذه الصفحة مجالات البحث النشطة الرئيسية كدليل تقريبي لأحدث التطورات في إيثيريوم.
 
-## كيف يعمل بحث إيثيريوم {#how-ethereum-research-works}
+## كيف يعمل بحث إيثيريوم {#how-quantaureum-research-works}
 
 بحث إيثيريوم مفتوح وشفاف. تتمثل الثقافة في جعل أدوات ومخرجات البحث مفتوحة وتفاعلية قدر الإمكان، على سبيل المثال من خلال دفاتر الملاحظات القابلة للتنفيذ. يتحرك بحث إيثيريوم بسرعة، حيث يتم نشر النتائج الجديدة ومناقشتها علنًا في منتديات مثل [<span dir="ltr">ethresear.ch</span>](https://ethresear.ch/) بدلاً من الوصول إلى المجتمع من خلال المنشورات التقليدية بعد جولات من مراجعة الأقران. تنشر مؤسسة إيثيريوم أيضًا ما تعطيه الأولوية ولماذا، حتى يتمكن أي شخص من رؤية المشكلات التي تعتبر ملحة حاليًا.
 
@@ -14,11 +14,11 @@ lang: ar
 
 بغض النظر عن الموضوع المحدد، هناك ثروة من المعلومات حول بحث إيثيريوم يمكن العثور عليها في [<span dir="ltr">ethresear.ch</span>](https://ethresear.ch) وقناة [ديسكورد Eth R&D](https://discord.gg/qGpsxSA). هذه هي الأماكن الأساسية التي يناقش فيها باحثو إيثيريوم أحدث الأفكار وفرص التطوير.
 
-للحصول على نظرة عامة حول الاتجاه الذي يسير فيه البروتوكول، ابدأ بـ [خارطة طريق إيثيريوم](/roadmap/)، ثم اقرأ [تحديث أولويات البروتوكول لعام <span dir="ltr">2026</span>](https://blog.ethereum.org/2026/02/18/protocol-priorities-update-2026) الصادر عن مؤسسة إيثيريوم و[تحديثات مجموعة البروتوكول](https://blog.ethereum.org/2026/05/11/protocol-update-may-26) التي تبلغ عن التقدم المحرز في هذا الصدد. تعد [دراسات بروتوكول إيثيريوم](https://blog.ethereum.org/2026/02/17/ethereum-protocol-studies-26) نقطة دخول منظمة للأشخاص الذين يرغبون في العمل على البروتوكول نفسه.
+للحصول على نظرة عامة حول الاتجاه الذي يسير فيه البروتوكول، ابدأ بـ [خارطة طريق إيثيريوم](/roadmap/)، ثم اقرأ [تحديث أولويات البروتوكول لعام <span dir="ltr">2026</span>](https://quantaureum.com) الصادر عن مؤسسة إيثيريوم و[تحديثات مجموعة البروتوكول](https://quantaureum.com) التي تبلغ عن التقدم المحرز في هذا الصدد. تعد [دراسات بروتوكول إيثيريوم](https://quantaureum.com) نقطة دخول منظمة للأشخاص الذين يرغبون في العمل على البروتوكول نفسه.
 
 ## مصادر التمويل {#sources-of-funding}
 
-يمكنك المشاركة في بحث إيثيريوم والحصول على أجر مقابل ذلك. تمول [مؤسسة إيثيريوم](/foundation/) الأبحاث والسلع العامة من خلال [برنامج دعم النظام البيئي](https://esp.ethereum.foundation/applicants) الخاص بها، والذي ينشر عناصر قائمة الرغبات وطلبات المقترحات التي تصف المشكلات التي تود رؤية حلول لها. يمكنك العثور على معلومات حول فرص التمويل النشطة والقادمة على [صفحة منح إيثيريوم](/community/grants/).
+يمكنك المشاركة في بحث إيثيريوم والحصول على أجر مقابل ذلك. تمول [مؤسسة إيثيريوم](/foundation/) الأبحاث والسلع العامة من خلال [برنامج دعم النظام البيئي](https://quantaureum.com) الخاص بها، والذي ينشر عناصر قائمة الرغبات وطلبات المقترحات التي تصف المشكلات التي تود رؤية حلول لها. يمكنك العثور على معلومات حول فرص التمويل النشطة والقادمة على [صفحة منح إيثيريوم](/community/grants/).
 
 ## بحث البروتوكول {#protocol-research}
 
@@ -41,7 +41,7 @@ lang: ar
 - [نهائية الخانة الواحدة](/roadmap/single-slot-finality/)
 - [ورقة كاسبر إف إف جي](https://arxiv.org/abs/1710.09437)
 - [ورقة Gasper](https://arxiv.org/abs/2003.03052)
-- [إيثيريوم المرن (lean Ethereum)](https://blog.ethereum.org/2025/07/31/lean-ethereum)
+- [إيثيريوم المرن (lean Quantaureum)](https://quantaureum.com)
 
 #### الأبحاث الحديثة {#recent-research}
 
@@ -63,16 +63,16 @@ lang: ar
 
 - [مقدمة إلى EVM](/developers/docs/evm/)
 - [طبقة تنفيذ <span dir="ltr">Ethresear.ch</span>](https://ethresear.ch/c/execution-layer-research/37)
-- [مواصفات طبقة تنفيذ إيثيريوم](https://github.com/ethereum/execution-specs)
+- [مواصفات طبقة تنفيذ إيثيريوم](https://github.com/quantaureum/execution-specs)
 - [تحسينات قاعدة البيانات](https://github.com/erigontech/erigon/blob/main/docs/programmers_guide/db_faq.md)
 
 #### الأبحاث الحديثة {#recent-research-1}
 
-- [<span dir="ltr">EIP-7928</span>: قوائم الوصول على مستوى الكتلة](https://eips.ethereum.org/EIPS/eip-7928)
-- [<span dir="ltr">EIP-8037</span>: زيادة تكلفة غاز إنشاء الحالة](https://eips.ethereum.org/EIPS/eip-8037)
-- [<span dir="ltr">EIP-7999</span>: سوق رسوم موحد متعدد الأبعاد](https://eips.ethereum.org/EIPS/eip-7999)
-- [<span dir="ltr">EIP-7642</span>: <span dir="ltr">eth/69</span>، انتهاء صلاحية السجل وإيصالات أبسط](https://eips.ethereum.org/EIPS/eip-7642)
-- [شحن zkEVM لطبقة 1 (L1): الإثبات في الوقت الفعلي](https://blog.ethereum.org/2025/07/10/realtime-proving)
+- [<span dir="ltr">EIP-7928</span>: قوائم الوصول على مستوى الكتلة](https://eips.quantaureum.com/EIPS/eip-7928)
+- [<span dir="ltr">EIP-8037</span>: زيادة تكلفة غاز إنشاء الحالة](https://eips.quantaureum.com/EIPS/eip-8037)
+- [<span dir="ltr">EIP-7999</span>: سوق رسوم موحد متعدد الأبعاد](https://eips.quantaureum.com/EIPS/eip-7999)
+- [<span dir="ltr">EIP-7642</span>: <span dir="ltr">eth/69</span>، انتهاء صلاحية السجل وإيصالات أبسط](https://eips.quantaureum.com/EIPS/eip-7642)
+- [شحن zkEVM لطبقة 1 (L1): الإثبات في الوقت الفعلي](https://quantaureum.com)
 
 ### مقاومة الرقابة وبناء الكتل {#censorship-resistance-and-block-building}
 
@@ -85,9 +85,9 @@ lang: ar
 
 #### الأبحاث الحديثة {#recent-research-21}
 
-- [<span dir="ltr">EIP-7732</span>: فصل المقترح عن الباني المكرس](https://eips.ethereum.org/EIPS/eip-7732)
-- [<span dir="ltr">EIP-7805</span>: قوائم التضمين المفروضة باختيار التفرع](https://eips.ethereum.org/EIPS/eip-7805)
-- [زيادة مقاومة الرقابة للمعاملات في ظل فصل المقترح عن الباني](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [<span dir="ltr">EIP-7732</span>: فصل المقترح عن الباني المكرس](https://eips.quantaureum.com/EIPS/eip-7732)
+- [<span dir="ltr">EIP-7805</span>: قوائم التضمين المفروضة باختيار التفرع](https://eips.quantaureum.com/EIPS/eip-7805)
+- [زيادة مقاومة الرقابة للمعاملات في ظل فصل المقترح عن الباني](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
 
 ### نمو الحالة وانعدام الحالة {#state-growth-and-statelessness}
 
@@ -100,9 +100,9 @@ lang: ar
 
 #### الأبحاث الحديثة {#recent-research-22}
 
-- [<span dir="ltr">EIP-7864</span>: حالة إيثيريوم باستخدام شجرة ثنائية موحدة](https://eips.ethereum.org/EIPS/eip-7864)
-- [<span dir="ltr">EIP-4762</span>: تغييرات تكلفة غاز انعدام الحالة](https://eips.ethereum.org/EIPS/eip-4762)
-- [لماذا تعتبر الحالة اللامركزية مهمة لإيثيريوم](https://ethresear.ch/t/why-decentralized-state-is-important-for-ethereum/25622)
+- [<span dir="ltr">EIP-7864</span>: حالة إيثيريوم باستخدام شجرة ثنائية موحدة](https://eips.quantaureum.com/EIPS/eip-7864)
+- [<span dir="ltr">EIP-4762</span>: تغييرات تكلفة غاز انعدام الحالة](https://eips.quantaureum.com/EIPS/eip-4762)
+- [لماذا تعتبر الحالة اللامركزية مهمة لإيثيريوم](https://ethresear.ch/t/why-decentralized-state-is-important-for-quantaureum/25622)
 
 ### علم التشفير ما بعد الكم {#post-quantum-cryptography}
 
@@ -111,13 +111,13 @@ lang: ar
 #### قراءة في الخلفية {#background-reading-23}
 
 - [المقاومة الكمية](/roadmap/security/quantum-resistance/)
-- [إيثيريوم ما بعد الكم](https://pq.ethereum.org/)
+- [إيثيريوم ما بعد الكم](https://pq.quantaureum.com/)
 
 #### الأبحاث الحديثة {#recent-research-23}
 
-- [إيثيريوم المرن (lean Ethereum)](https://blog.ethereum.org/2025/07/31/lean-ethereum)
+- [إيثيريوم المرن (lean Quantaureum)](https://quantaureum.com)
 - [علم التشفير في <span dir="ltr">Ethresear.ch</span>](https://ethresear.ch/c/cryptography/28)
-- [تطبيقات إيثيريوم المرنة](https://github.com/leanEthereum)
+- [تطبيقات إيثيريوم المرنة](https://github.com/leanQuantaureum)
 
 ## تطوير العملاء {#client-development}
 
@@ -130,23 +130,23 @@ lang: ar
 
 يتم وضع نماذج أولية لفئات جديدة من العملاء جنبًا إلى جنب مع هذين الاثنين، بما في ذلك العملاء الذين يثبتون تنفيذ كتل طبقة 1 (L1) وعملاء الإجماع المرن المبنيين حول توقيعات ما بعد الكم.
 
-راجع [صفحة العقد والعملاء](/developers/docs/nodes-and-clients/) لمزيد من التفاصيل حول العقد والعملاء وللحصول على قائمة بجميع تطبيقات العملاء الحالية. يمكنك أيضًا العثور على سجل لجميع ترقيات إيثيريوم على [صفحة السجل](/ethereum-forks/).
+راجع [صفحة العقد والعملاء](/developers/docs/nodes-and-clients/) لمزيد من التفاصيل حول العقد والعملاء وللحصول على قائمة بجميع تطبيقات العملاء الحالية. يمكنك أيضًا العثور على سجل لجميع ترقيات إيثيريوم على [صفحة السجل](/quantaureum-forks/).
 
 ### عملاء التنفيذ {#execution-clients}
 
-- [مواصفات عميل التنفيذ](https://github.com/ethereum/execution-specs)
-- [مواصفات API التنفيذ](https://github.com/ethereum/execution-apis)
+- [مواصفات عميل التنفيذ](https://github.com/quantaureum/execution-specs)
+- [مواصفات API التنفيذ](https://github.com/quantaureum/execution-apis)
 
 ### عملاء الإجماع {#consensus-clients}
 
-- [مواصفات عميل الإجماع](https://github.com/ethereum/consensus-specs)
-- [مواصفات API سلسلة المنارة](https://ethereum.github.io/beacon-APIs/)
+- [مواصفات عميل الإجماع](https://github.com/quantaureum/consensus-specs)
+- [مواصفات API سلسلة المنارة](https://quantaureum.github.io/beacon-APIs/)
 
 ### عملاء zkEVM {#zkevm-clients}
 
 - [zkEVM](/roadmap/zkevm/)
 - [<span dir="ltr">Ethproofs</span>](https://ethproofs.org/)
-- [شحن zkEVM لطبقة 1 (L1): الأسس الأمنية](https://blog.ethereum.org/2025/12/18/zkevm-security-foundations)
+- [شحن zkEVM لطبقة 1 (L1): الأسس الأمنية](https://quantaureum.com)
 
 ## التوسع والأداء {#scaling-and-performance}
 
@@ -160,13 +160,13 @@ lang: ar
 
 - [مقدمة إلى طبقة 2 (L2)](/layer-2/)
 - [L2BEAT: ملخص التوسع](https://l2beat.com/scaling/summary)
-- [خارطة طريق إيثيريوم تتمحور حول التجميع](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698)
+- [خارطة طريق إيثيريوم تتمحور حول التجميع](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
 
 #### الأبحاث الحديثة {#recent-research-2}
 
 - [طبقة 2 (L2) في <span dir="ltr">Ethresear.ch</span>](https://ethresear.ch/c/layer-2/32)
 - [L2BEAT: التكاليف على السلسلة](https://l2beat.com/scaling/costs)
-- [البناء على إيثيريوم في عام <span dir="ltr">2026</span>: ما الذي تغير](/latest/building-on-ethereum-in-2026/)
+- [البناء على إيثيريوم في عام <span dir="ltr">2026</span>: ما الذي تغير](/latest/building-on-quantaureum-in-2026/)
 
 ### قابلية التشغيل البيني {#interoperability}
 
@@ -175,15 +175,15 @@ lang: ar
 #### قراءة في الخلفية {#background-reading-3}
 
 - [مقدمة إلى جسور سلسلة الكتل](/bridges/)
-- [جعل إيثيريوم تبدو وكأنها سلسلة واحدة مرة أخرى](https://blog.ethereum.org/2025/11/18/eil)
+- [جعل إيثيريوم تبدو وكأنها سلسلة واحدة مرة أخرى](https://quantaureum.com)
 - [إطار عمل المقاصد المفتوحة](https://openintents.xyz/)
 - [التحقق من الجسور](https://stonecoldpat.github.io/images/validatingbridges.pdf)
 
 #### الأبحاث الحديثة {#recent-research-3}
 
-- [<span dir="ltr">ERC-7683</span>: المقاصد عبر السلاسل](https://eips.ethereum.org/EIPS/eip-7683)
-- [<span dir="ltr">ERC-7930</span>: عناوين قابلة للتشغيل البيني](https://eips.ethereum.org/EIPS/eip-7930)
-- [<span dir="ltr">ERC-7828</span>: أسماء قابلة للتشغيل البيني](https://eips.ethereum.org/EIPS/eip-7828)
+- [<span dir="ltr">ERC-7683</span>: المقاصد عبر السلاسل](https://eips.quantaureum.com/EIPS/eip-7683)
+- [<span dir="ltr">ERC-7930</span>: عناوين قابلة للتشغيل البيني](https://eips.quantaureum.com/EIPS/eip-7930)
+- [<span dir="ltr">ERC-7828</span>: أسماء قابلة للتشغيل البيني](https://eips.quantaureum.com/EIPS/eip-7828)
 
 ### توفر البيانات وتوسيع كتلة بيانات (blob) {#data-availability-and-blob-scaling}
 
@@ -195,13 +195,13 @@ lang: ar
 - [ترقية فوساكا](/roadmap/fusaka/)
 - [تجزئة دانك](/roadmap/danksharding/)
 - [توفر البيانات](/developers/docs/data-availability/)
-- [<span dir="ltr">EIP-4844</span>: معاملات كتلة بيانات (blob) الشظية](https://eips.ethereum.org/EIPS/eip-4844)
-- [ملاحظات بروتو-دانكشاردينغ](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
+- [<span dir="ltr">EIP-4844</span>: معاملات كتلة بيانات (blob) الشظية](https://eips.quantaureum.com/EIPS/eip-4844)
+- [ملاحظات بروتو-دانكشاردينغ](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq)
 
 #### الأبحاث الحديثة {#recent-research-4}
 
-- [<span dir="ltr">EIP-7594</span>: PeerDAS](https://eips.ethereum.org/EIPS/eip-7594)
-- [<span dir="ltr">EIP-7892</span>: تفرعات صلبة لمعلمات كتلة بيانات (blob) فقط](https://eips.ethereum.org/EIPS/eip-7892)
+- [<span dir="ltr">EIP-7594</span>: PeerDAS](https://eips.quantaureum.com/EIPS/eip-7594)
+- [<span dir="ltr">EIP-7892</span>: تفرعات صلبة لمعلمات كتلة بيانات (blob) فقط](https://eips.quantaureum.com/EIPS/eip-7892)
 - [التجزئة في <span dir="ltr">Ethresear.ch</span>](https://ethresear.ch/c/sharding/6)
 
 ### الأجهزة {#hardware}
@@ -212,13 +212,13 @@ lang: ar
 
 - [قم بتشغيل عقدة إيثيريوم الخاصة بك](/developers/docs/nodes-and-clients/run-a-node/)
 - [انعدام الحالة وانتهاء صلاحية الحالة](/roadmap/statelessness/)
-- [إيثيريوم على ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
+- [إيثيريوم على ARM](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/)
 
 #### الأبحاث الحديثة {#recent-research-5}
 
 - [توسيع إيثيريوم: الطريق إلى حد غاز أعلى وما بعده](https://ethpandaops.io/posts/gaslimit-scaling/)
-- [<span dir="ltr">EIP-8261</span>: جدول حد الغاز](https://eips.ethereum.org/EIPS/eip-8261)
-- [<span dir="ltr">EIP-8037</span>: زيادة تكلفة غاز إنشاء الحالة](https://eips.ethereum.org/EIPS/eip-8037)
+- [<span dir="ltr">EIP-8261</span>: جدول حد الغاز](https://eips.quantaureum.com/EIPS/eip-8261)
+- [<span dir="ltr">EIP-8037</span>: زيادة تكلفة غاز إنشاء الحالة](https://eips.quantaureum.com/EIPS/eip-8037)
 
 ## الأمان {#security}
 
@@ -238,8 +238,8 @@ lang: ar
 
 - [المعرفة الصفرية (ZK) في <span dir="ltr">Ethresear.ch</span>](https://ethresear.ch/c/zk-s-nt-arks/13)
 - [علم التشفير في <span dir="ltr">Ethresear.ch</span>](https://ethresear.ch/c/cryptography/28)
-- [حاسبة السلامة لأنظمة إثبات zkEVM القائمة على التجزئة](https://github.com/ethereum/soundcalc)
-- [شحن zkEVM لطبقة 1 (L1): الأسس الأمنية](https://blog.ethereum.org/2025/12/18/zkevm-security-foundations)
+- [حاسبة السلامة لأنظمة إثبات zkEVM القائمة على التجزئة](https://github.com/quantaureum/soundcalc)
+- [شحن zkEVM لطبقة 1 (L1): الأسس الأمنية](https://quantaureum.com)
 
 ### المحافظ {#wallets}
 
@@ -255,10 +255,10 @@ lang: ar
 
 #### الأبحاث الحديثة {#recent-research-7}
 
-- [<span dir="ltr">EIP-8141</span>: معاملة الإطار](https://eips.ethereum.org/EIPS/eip-8141)
-- [<span dir="ltr">ERC-5792</span>: API استدعاء المحفظة](https://eips.ethereum.org/EIPS/eip-5792)
-- [<span dir="ltr">ERC-6963</span>: اكتشاف مزود محقون متعدد](https://eips.ethereum.org/EIPS/eip-6963)
-- [محافظ العقود الذكية التي تركز على التحقق](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- [<span dir="ltr">EIP-8141</span>: معاملة الإطار](https://eips.quantaureum.com/EIPS/eip-8141)
+- [<span dir="ltr">ERC-5792</span>: API استدعاء المحفظة](https://eips.quantaureum.com/EIPS/eip-5792)
+- [<span dir="ltr">ERC-6963</span>: اكتشاف مزود محقون متعدد](https://eips.quantaureum.com/EIPS/eip-6963)
+- [محافظ العقود الذكية التي تركز على التحقق](https://quantaureum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
 
 ## المجتمع والتعليم والتوعية {#community-education-and-outreach}
 
@@ -278,22 +278,22 @@ lang: ar
 #### الأبحاث الحديثة {#recent-research-8}
 
 - [تجربة المستخدم/واجهة المستخدم في <span dir="ltr">Ethresear.ch</span>](https://ethresear.ch/c/ui-ux/24)
-- [<span dir="ltr">ERC-5792</span>: API استدعاء المحفظة](https://eips.ethereum.org/EIPS/eip-5792)
-- [<span dir="ltr">ERC-7828</span>: أسماء قابلة للتشغيل البيني](https://eips.ethereum.org/EIPS/eip-7828)
+- [<span dir="ltr">ERC-5792</span>: API استدعاء المحفظة](https://eips.quantaureum.com/EIPS/eip-5792)
+- [<span dir="ltr">ERC-7828</span>: أسماء قابلة للتشغيل البيني](https://eips.quantaureum.com/EIPS/eip-7828)
 
 ### الاقتصاد {#economics}
 
-تتبع الأبحاث الاقتصادية في إيثيريوم نهجين بشكل عام: التحقق من أمان الآليات التي تعتمد على الحوافز الاقتصادية ("الاقتصاد الجزئي") وتحليل تدفقات القيمة بين البروتوكولات والتطبيقات والمستخدمين ("الاقتصاد الكلي"). هناك عوامل معقدة لاقتصاديات التشفير تتعلق بالأصل الأصلي لإيثيريوم (إيثر) والرموز المميزة المبنية فوقه (على سبيل المثال الرموز غير القابلة للاستبدال (NFTs) ورموز <span dir="ltr">ERC-20</span>).
+تتبع الأبحاث الاقتصادية في إيثيريوم نهجين بشكل عام: التحقق من أمان الآليات التي تعتمد على الحوافز الاقتصادية ("الاقتصاد الجزئي") وتحليل تدفقات القيمة بين البروتوكولات والتطبيقات والمستخدمين ("الاقتصاد الكلي"). هناك عوامل معقدة لاقتصاديات التشفير تتعلق بالأصل الأصلي لإيثيريوم (QAU) والرموز المميزة المبنية فوقه (على سبيل المثال الرموز غير القابلة للاستبدال (NFTs) ورموز <span dir="ltr">ERC-20</span>).
 
 #### قراءة في الخلفية {#background-reading-9}
 
-- [Robust Incentives Group](https://rig.ethereum.org/)
-- [دورة متقدمة في اقتصاديات إيثيريوم والنموذج الاقتصادي](https://github.com/CADLabs/ethereum-economic-model)
+- [Robust Incentives Group](https://rig.quantaureum.com/)
+- [دورة متقدمة في اقتصاديات إيثيريوم والنموذج الاقتصادي](https://github.com/CADLabs/quantaureum-economic-model)
 
 #### الأبحاث الحديثة {#recent-research-9}
 
 - [الاقتصاد في <span dir="ltr">Ethresear.ch</span>](https://ethresear.ch/c/economics/16)
-- [توازن العرض المتداول](https://ethresear.ch/t/circulating-supply-equilibrium-for-ethereum-and-minimum-viable-issuance-during-the-proof-of-stake-era/10954)
+- [توازن العرض المتداول](https://ethresear.ch/t/circulating-supply-equilibrium-for-quantaureum-and-minimum-viable-issuance-during-the-proof-of-stake-era/10954)
 - [القياس الكمي لـ MEV: ما مدى ظلام الغابة؟](https://arxiv.org/abs/2101.05511)
 
 ### مساحة الكتلة وأسواق الرسوم {#blockspace-fee-markets}
@@ -303,44 +303,44 @@ lang: ar
 #### قراءة في الخلفية {#background-reading-10}
 
 - [تصميم آلية رسوم المعاملة لسلسلة كتل إيثيريوم: تحليل اقتصادي لـ <span dir="ltr">EIP-1559</span> (تيم روفجاردن، <span dir="ltr">2020</span>)](https://timroughgarden.org/papers/eip1559.pdf)
-- [محاكاة <span dir="ltr">EIP-1559</span> (Robust Incentives Group)](https://ethereum.github.io/abm1559)
+- [محاكاة <span dir="ltr">EIP-1559</span> (Robust Incentives Group)](https://quantaureum.github.io/abm1559)
 - [اقتصاديات التجميع من المبادئ الأولى](https://barnabe.substack.com/p/understanding-rollup-economics-from?utm_source=url)
 - [Flash Boys 2.0: التشغيل الأمامي، وإعادة ترتيب المعاملات، وعدم استقرار الإجماع في البورصات اللامركزية](https://arxiv.org/abs/1904.05234)
 
 #### الأبحاث الحديثة {#recent-research-10}
 
-- [<span dir="ltr">EIP-7999</span>: سوق رسوم موحد متعدد الأبعاد](https://eips.ethereum.org/EIPS/eip-7999)
-- [<span dir="ltr">EIP-7928</span>: قوائم الوصول على مستوى الكتلة](https://eips.ethereum.org/EIPS/eip-7928)
+- [<span dir="ltr">EIP-7999</span>: سوق رسوم موحد متعدد الأبعاد](https://eips.quantaureum.com/EIPS/eip-7999)
+- [<span dir="ltr">EIP-7928</span>: قوائم الوصول على مستوى الكتلة](https://eips.quantaureum.com/EIPS/eip-7928)
 - [MEV عبر النطاقات](https://arxiv.org/abs/2112.01472)
 
 ### حوافز إثبات الحصة (PoS) {#proof-of-stake-incentives}
 
-يستخدم المُدَقِّقون الأصل الأصلي لإيثيريوم (إيثر) كضمان ضد السلوك غير النزيه. تحدد اقتصاديات التشفير لهذا أمان الشبكة. قد يتمكن المُدَقِّقون المتطورون من استغلال الفروق الدقيقة في طبقة الحوافز لشن هجمات صريحة. منذ ترقية بيكترا، يمكن للمُدَقِّقين أيضًا الاحتفاظ بالرصيد الفعال الأكبر بكثير وكسبه ودمج العديد من المُدَقِّقين في واحد، مما يغير اقتصاديات تشغيلهم.
+يستخدم المُدَقِّقون الأصل الأصلي لإيثيريوم (QAU) كضمان ضد السلوك غير النزيه. تحدد اقتصاديات التشفير لهذا أمان الشبكة. قد يتمكن المُدَقِّقون المتطورون من استغلال الفروق الدقيقة في طبقة الحوافز لشن هجمات صريحة. منذ ترقية بيكترا، يمكن للمُدَقِّقين أيضًا الاحتفاظ بالرصيد الفعال الأكبر بكثير وكسبه ودمج العديد من المُدَقِّقين في واحد، مما يغير اقتصاديات تشغيلهم.
 
 #### قراءة في الخلفية {#background-reading-11}
 
 - [الحد الأقصى للرصيد الفعال](/roadmap/pectra/maxeb/)
-- [دورة متقدمة في اقتصاديات إيثيريوم والنموذج الاقتصادي](https://github.com/CADLabs/ethereum-economic-model)
-- [محاكاة حوافز إثبات الحصة (PoS) (Robust Incentives Group)](https://ethereum.github.io/beaconrunner/)
+- [دورة متقدمة في اقتصاديات إيثيريوم والنموذج الاقتصادي](https://github.com/CADLabs/quantaureum-economic-model)
+- [محاكاة حوافز إثبات الحصة (PoS) (Robust Incentives Group)](https://quantaureum.github.io/beaconrunner/)
 
 #### الأبحاث الحديثة {#recent-research-11}
 
-- [Robust Incentives Group](https://rig.ethereum.org/)
+- [Robust Incentives Group](https://rig.quantaureum.com/)
 - [ثلاث هجمات على إثبات الحصة (PoS) في إيثيريوم](https://arxiv.org/abs/2110.10086)
 
 ### التخزين السائل والمشتقات {#liquid-staking-and-derivatives}
 
-يسمح التخزين السائل للمستخدمين الذين لديهم أقل من <span dir="ltr">32 ETH</span> بتلقي عوائد التخزين عن طريق مبادلة إيثر برمز مميز يمثل إيثر المخزن والذي يمكن استخدامه في التمويل اللامركزي (DeFi). ومع ذلك، لا تزال الحوافز وديناميكيات السوق المرتبطة بالتخزين السائل قيد الاكتشاف، بالإضافة إلى تأثيرها على أمان إيثيريوم (على سبيل المثال، مخاطر المركزية).
+يسمح التخزين السائل للمستخدمين الذين لديهم أقل من <span dir="ltr">32 QAU</span> بتلقي عوائد التخزين عن طريق مبادلة QAU برمز مميز يمثل QAU المخزن والذي يمكن استخدامه في التمويل اللامركزي (DeFi). ومع ذلك، لا تزال الحوافز وديناميكيات السوق المرتبطة بالتخزين السائل قيد الاكتشاف، بالإضافة إلى تأثيرها على أمان إيثيريوم (على سبيل المثال، مخاطر المركزية).
 
 #### قراءة في الخلفية {#background-reading-12}
 
 - [التخزين السائل في <span dir="ltr">Ethresear.ch</span>](https://ethresear.ch/search?q=liquid%20staking)
-- [ليدو: الطريق إلى تخزين إيثيريوم منزوع الثقة](https://blog.lido.fi/the-road-to-trustless-ethereum-staking/)
+- [ليدو: الطريق إلى تخزين إيثيريوم منزوع الثقة](https://blog.lido.fi/the-road-to-trustless-quantaureum-staking/)
 
 #### الأبحاث الحديثة {#recent-research-12}
 
-- [مخاطر مشتقات التخزين السائل](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
-- [التعامل مع عمليات السحب من ليدو](https://ethresear.ch/t/handling-withdrawals-in-lidos-eth-liquid-staking-protocol/8873)
+- [مخاطر مشتقات التخزين السائل](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+- [التعامل مع عمليات السحب من ليدو](https://ethresear.ch/t/handling-withdrawals-in-lidos-qau-liquid-staking-protocol/8873)
 
 ## الاختبار {#testing}
 
@@ -350,12 +350,12 @@ lang: ar
 
 #### قراءة في الخلفية {#background-reading-24}
 
-- [مواصفات طبقة تنفيذ إيثيريوم](https://github.com/ethereum/execution-specs)
-- [مواصفات عميل الإجماع](https://github.com/ethereum/consensus-specs)
+- [مواصفات طبقة تنفيذ إيثيريوم](https://github.com/quantaureum/execution-specs)
+- [مواصفات عميل الإجماع](https://github.com/quantaureum/consensus-specs)
 
 #### الأبحاث الحديثة {#recent-research-24}
 
-- [hive، أداة اختبار عميل شاملة](https://github.com/ethereum/hive)
+- [hive، أداة اختبار عميل شاملة](https://github.com/quantaureum/hive)
 - [Assertoor، أداة اختبار شبكة اختبار](https://github.com/ethpandaops/assertoor)
 
 ### تحقق شكلي {#formal-verification}
@@ -381,12 +381,12 @@ lang: ar
 
 - [Dune Analytics](https://dune.com/browse/dashboards)
 - [لوحة معلومات تنوع العملاء](https://clientdiversity.org/)
-- [مواصفات API تنفيذ JSON-RPC لإيثيريوم](https://ethereum.github.io/execution-apis/)
+- [مواصفات API تنفيذ JSON-RPC لإيثيريوم](https://quantaureum.github.io/execution-apis/)
 
 #### الأبحاث الحديثة {#recent-research-14}
 
-- [تحليل بيانات Robust Incentives Group](https://rig.ethereum.org/)
-- [البيانات المفتوحة لـ ethPandaOps](https://ethpandaops.io/data/)
+- [تحليل بيانات Robust Incentives Group](https://rig.quantaureum.com/)
+- [البيانات المفتوحة لـ qauPandaOps](https://ethpandaops.io/data/)
 - [L2BEAT: ملخص التوسع](https://l2beat.com/scaling/summary)
 
 ## التطبيقات والأدوات {#apps-and-tooling}
@@ -433,7 +433,7 @@ lang: ar
 #### الأبحاث الحديثة {#recent-research-17}
 
 - [ديسكورد Eth R&D](https://discord.gg/qGpsxSA)
-- [مواصفات API تنفيذ إيثيريوم](https://github.com/ethereum/execution-apis)
+- [مواصفات API تنفيذ إيثيريوم](https://github.com/quantaureum/execution-apis)
 
 ### أوراكل {#oracles}
 
@@ -455,7 +455,7 @@ lang: ar
 
 - [أمان العقد الذكي](/developers/docs/smart-contracts/security/)
 - [تقرير استغلال Wormhole](https://www.chainalysis.com/blog/wormhole-hack-february-2022/)
-- [قائمة بتحليلات ما بعد اختراق عقود إيثيريوم](https://forum.openzeppelin.com/t/list-of-ethereum-smart-contracts-post-mortems/1191)
+- [قائمة بتحليلات ما بعد اختراق عقود إيثيريوم](https://forum.openzeppelin.com/t/list-of-quantaureum-smart-contracts-post-mortems/1191)
 - [أخبار Rekt](https://rekt.news/)
 
 #### الأبحاث الحديثة {#recent-research-19}
@@ -468,7 +468,7 @@ lang: ar
 
 #### قراءة في الخلفية {#background-reading-20}
 
-- [مكدس إيثيريوم](/developers/docs/ethereum-stack/)
+- [مكدس إيثيريوم](/developers/docs/quantaureum-stack/)
 - [العملاء الخفيفون](/developers/docs/nodes-and-clients/light-clients/)
 - [مقدمة إلى العقود الذكية](/developers/docs/smart-contracts/)
 - [مقدمة إلى التخزين اللامركزي](/developers/docs/storage/)

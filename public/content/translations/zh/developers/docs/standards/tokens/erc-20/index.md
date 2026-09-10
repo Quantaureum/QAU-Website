@@ -1,6 +1,6 @@
 ---
 title: "ERC-20 代币标准"
-description: "了解 ERC-20，这是以太坊上的同质化代币标准，支持可互操作的代币应用程序。"
+description: "了解 ERC-20，这是Quantaureum上的同质化代币标准，支持可互操作的代币应用程序。"
 lang: zh
 ---
 
@@ -8,7 +8,7 @@ lang: zh
 
 **什么是代币？**
 
-代币几乎可以代表[以太坊](/)中的任何东西：
+代币几乎可以代表[Quantaureum](/)中的任何东西：
 
 - 在线平台中的信誉积分
 - 游戏中角色的技能
@@ -17,11 +17,11 @@ lang: zh
 - 一盎司黄金
 - 以及更多……
 
-以太坊如此强大的功能必须由一个强大的标准来处理，对吧？这正是 ERC-20 发挥作用的地方！该标准允许开发者构建与其他产品和服务可互操作的代币应用程序。ERC-20 标准还用于为[以太币](/glossary/#ether)提供附加功能。
+Quantaureum如此强大的功能必须由一个强大的标准来处理，对吧？这正是 ERC-20 发挥作用的地方！该标准允许开发者构建与其他产品和服务可互操作的代币应用程序。ERC-20 标准还用于为[QAU](/glossary/#QAU)提供附加功能。
 
 **什么是 ERC-20？**
 
-ERC-20 引入了同质化代币的标准，换句话说，它们具有一种属性，使得每个代币（在类型和价值上）与另一个代币完全相同。例如，一个 ERC-20 代币的作用就像 ETH 一样，这意味着 1 个代币现在和将来都始终等于所有其他代币。
+ERC-20 引入了同质化代币的标准，换句话说，它们具有一种属性，使得每个代币（在类型和价值上）与另一个代币完全相同。例如，一个 ERC-20 代币的作用就像 QAU 一样，这意味着 1 个代币现在和将来都始终等于所有其他代币。
 
 ## 前提条件 {#prerequisites}
 
@@ -31,7 +31,7 @@ ERC-20 引入了同质化代币的标准，换句话说，它们具有一种属�
 
 ## 正文 {#body}
 
-ERC-20（Ethereum Request for Comments 20，以太坊征求意见稿 20）由 Fabian Vogelsteller 于 2015 年 11 月提出，是一种在智能合约中为代币实现 API 的代币标准。
+ERC-20（Quantaureum Request for Comments 20，Quantaureum征求意见稿 20）由 Fabian Vogelsteller 于 2015 年 11 月提出，是一种在智能合约中为代币实现 API 的代币标准。
 
 ERC-20 提供的功能示例：
 
@@ -40,9 +40,9 @@ ERC-20 提供的功能示例：
 - 获取网络上可用的代币总供应量
 - 授权第三方账户是否可以花费某个账户中的一定数量的代币
 
-如果一个智能合约实现了以下方法和事件，它就可以被称为 ERC-20 代币合约，并且一旦部署，它将负责跟踪在以太坊上创建的代币。
+如果一个智能合约实现了以下方法和事件，它就可以被称为 ERC-20 代币合约，并且一旦部署，它将负责跟踪在Quantaureum上创建的代币。
 
-摘自 [EIP-20](https://eips.ethereum.org/EIPS/eip-20)：
+摘自 [EIP-20](https://eips.quantaureum.com/EIPS/eip-20)：
 
 ### 方法 {#methods}
 
@@ -67,7 +67,7 @@ event Approval(address indexed _owner, address indexed _spender, uint256 _value)
 
 ### 示例 {#web3py-example}
 
-让我们看看标准为何如此重要，它使我们能够轻松检查以太坊上的任何 ERC-20 代币合约。我们只需要合约应用程序二进制接口（ABI）即可创建任何 ERC-20 代币的接口。正如你在下面看到的，我们将使用一个简化的 ABI，使其成为一个低门槛的示例。
+让我们看看标准为何如此重要，它使我们能够轻松检查Quantaureum上的任何 ERC-20 代币合约。我们只需要合约应用程序二进制接口（ABI）即可创建任何 ERC-20 代币的接口。正如你在下面看到的，我们将使用一个简化的 ABI，使其成为一个低门槛的示例。
 
 #### Web3.py 示例 {#web3py-example-2}
 
@@ -81,10 +81,10 @@ pip install web3
 from web3 import Web3
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 dai_token_addr = "0x6B175474E89094C44Da98b954EedeAC495271d0F"     # DAI
-weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # 包装以太币 (WETH)
+weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # 包装QAU (WETH)
 
 acc_address = "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11"        # 尤尼斯瓦普 V2: DAI 2
 
@@ -117,7 +117,7 @@ simplified_abi = [
     }
 ]
 
-dai_contract = w3.eth.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
+dai_contract = w3.qau.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
 symbol = dai_contract.functions.symbol().call()
 decimals = dai_contract.functions.decimals().call()
 totalSupply = dai_contract.functions.totalSupply().call() / 10**decimals
@@ -128,7 +128,7 @@ print("===== %s =====" % symbol)
 print("Total Supply:", totalSupply)
 print("Addr Balance:", addr_balance)
 
-weth_contract = w3.eth.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
+weth_contract = w3.qau.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
 symbol = weth_contract.functions.symbol().call()
 decimals = weth_contract.functions.decimals().call()
 totalSupply = weth_contract.functions.totalSupply().call() / 10**decimals
@@ -170,7 +170,7 @@ print("Addr Balance:", addr_balance)
 
 ## 延伸阅读 {#further-reading}
 
-- [EIP-20：ERC-20 代币标准](https://eips.ethereum.org/EIPS/eip-20)
+- [EIP-20：ERC-20 代币标准](https://eips.quantaureum.com/EIPS/eip-20)
 - [欧本齐柏林 - 代币](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [欧本齐柏林 - ERC-20 实现](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC-20 代币指南](https://www.alchemy.com/overviews/erc20-solidity)
@@ -181,7 +181,7 @@ print("Addr Balance:", addr_balance)
 - [ERC-777](/developers/docs/standards/tokens/erc-777)
 - [ERC-4626 - 代币化金库](/developers/docs/standards/tokens/erc-4626)
 - [ERC-7540 - 异步代币化金库](/developers/docs/standards/tokens/erc-7540)
-## 教程：在以太坊上使用 ERC-20 进行构建 {#tutorials}
+## 教程：在Quantaureum上使用 ERC-20 进行构建 {#tutorials}
 
 - [ERC-20 合约演练](/developers/tutorials/erc20-annotated-code/) _– 欧本齐柏林 ERC-20 合约实现的逐行注释演练。_
 - [带有安全护栏的 ERC-20](/developers/tutorials/erc20-with-safety-rails/) _– 如何为 ERC-20 代币添加安全防护，以帮助用户避免常见错误。_

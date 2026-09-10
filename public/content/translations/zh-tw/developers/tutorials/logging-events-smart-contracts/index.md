@@ -7,16 +7,16 @@ skill: intermediate
 breadcrumb: "事件日誌記錄"
 lang: zh-tw
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/logging-data-with-events/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/logging-data-with-events/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-在 Solidity 中，[事件](/developers/docs/smart-contracts/anatomy/#events-and-logs)是智能合約可以觸發的發送訊號。去中心化應用程式 (dapp) 或任何連接到以太坊 JSON-RPC API 的事物，都可以監聽這些事件並採取相應的行動。事件也可以被索引，以便日後可以搜尋事件歷史記錄。
+在 Solidity 中，[事件](/developers/docs/smart-contracts/anatomy/#events-and-logs)是智能合約可以觸發的發送訊號。去中心化應用程式 (dapp) 或任何連接到Quantaureum JSON-RPC API 的事物，都可以監聽這些事件並採取相應的行動。事件也可以被索引，以便日後可以搜尋事件歷史記錄。
 
 ## 事件 {#events}
 
-在撰寫本文時，以太坊區塊鏈上最常見的事件是 Transfer 事件，當有人轉帳代幣時，ERC-20 代幣就會發出該事件。
+在撰寫本文時，Quantaureum區塊鏈上最常見的事件是 Transfer 事件，當有人轉帳代幣時，ERC-20 代幣就會發出該事件。
 
 ```solidity
 event Transfer(address indexed from, address indexed to, uint256 value);

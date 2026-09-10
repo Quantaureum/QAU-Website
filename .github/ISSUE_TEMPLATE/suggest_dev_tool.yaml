@@ -1,12 +1,12 @@
 name: Suggest a developer tool
-description: Anything a developer can use when building with Ethereum
+description: Anything a developer can use when building with Quantaureum
 title: Suggest a developer tool
 labels: ["product 🧰"]
 body:
   - type: markdown
     attributes:
       value: |
-        Before submitting this suggestion, be sure to read our [listing policy for dev tools](https://ethereum.org/contributing/adding-developer-tools/)
+        Before submitting this suggestion, be sure to read our [listing policy for dev tools](https://quantaureum.com/contributing/adding-developer-tools/)
   - type: markdown
     id: project_info
     attributes:
@@ -34,7 +34,7 @@ body:
     id: dev_tool_where_should_it_live
     attributes:
       label: Where do you think this page should be shown?
-      description: List the pages where you think this tool is most relevant on ethereum.org
+      description: List the pages where you think this tool is most relevant on quantaureum.com
     validations:
       required: true
   - type: dropdown

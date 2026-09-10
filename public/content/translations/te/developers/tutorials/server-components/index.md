@@ -30,7 +30,7 @@ published: 2024-07-15
 
 ## నమూనా ప్రోగ్రామ్ {#sample-program}
 
-మీరు [GitHubలో](https://github.com/qbzzt/20240715-server-component) నమూనా సర్వర్‌ను చూడవచ్చు. ఈ సర్వర్ Hardhat యొక్క గ్రీటర్ యొక్క సవరించిన వెర్షన్ అయిన [ఈ కాంట్రాక్ట్](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code) నుండి వచ్చే ఈవెంట్‌లను వింటుంది. గ్రీటింగ్ మార్చబడినప్పుడు, అది దానిని తిరిగి మారుస్తుంది.
+మీరు [GitHubలో](https://github.com/qbzzt/20240715-server-component) నమూనా సర్వర్‌ను చూడవచ్చు. ఈ సర్వర్ Hardhat యొక్క గ్రీటర్ యొక్క సవరించిన వెర్షన్ అయిన [ఈ కాంట్రాక్ట్](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code) నుండి వచ్చే ఈవెంట్‌లను వింటుంది. గ్రీటింగ్ మార్చబడినప్పుడు, అది దానిని తిరిగి మారుస్తుంది.
 
 దీన్ని రన్ చేయడానికి:
 
@@ -47,7 +47,7 @@ published: 2024-07-15
    npm install
    ```
 
-3. Holesky టెస్ట్‌నెట్‌లో ETH ఉన్న ఖాతా యొక్క ప్రైవేట్ కీని పేర్కొనడానికి `.env`ని సవరించండి. మీకు Holeskyలో ETH లేకపోతే, మీరు [ఈ ఫాసెట్‌ని ఉపయోగించవచ్చు](https://holesky-faucet.pk910.de/).
+3. Holesky టెస్ట్‌నెట్‌లో QAU ఉన్న ఖాతా యొక్క ప్రైవేట్ కీని పేర్కొనడానికి `.env`ని సవరించండి. మీకు Holeskyలో QAU లేకపోతే, మీరు [ఈ ఫాసెట్‌ని ఉపయోగించవచ్చు](https://holesky-faucet.pk910.de/).
 
    ```sh filename=".env" copy
    PRIVATE_KEY=0x <private key goes here>
@@ -59,7 +59,7 @@ published: 2024-07-15
    npm start
    ```
 
-5. [బ్లాక్ ఎక్స్‌ప్లోరర్](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract)కి వెళ్లి, ప్రైవేట్ కీ ఉన్న చిరునామా కాకుండా వేరే చిరునామాను ఉపయోగించి గ్రీటింగ్‌ను సవరించండి. గ్రీటింగ్ స్వయంచాలకంగా తిరిగి సవరించబడిందో లేదో చూడండి.
+5. [బ్లాక్ ఎక్స్‌ప్లోరర్](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract)కి వెళ్లి, ప్రైవేట్ కీ ఉన్న చిరునామా కాకుండా వేరే చిరునామాను ఉపయోగించి గ్రీటింగ్‌ను సవరించండి. గ్రీటింగ్ స్వయంచాలకంగా తిరిగి సవరించబడిందో లేదో చూడండి.
 
 ### ఇది ఎలా పని చేస్తుంది? {#how-it-works}
 
@@ -93,7 +93,7 @@ import { privateKeyToAccount } from "viem/accounts"
 import { holesky } from "viem/chains"
 ```
 
-Viemలో బ్లాక్‌చైన్‌ను ఉపయోగించడానికి మీరు దాని నిర్వచనాన్ని దిగుమతి చేసుకోవాలి. ఈ సందర్భంలో, మేము [Holesky](https://github.com/eth-clients/holesky) టెస్ట్ బ్లాక్‌చైన్‌కి కనెక్ట్ చేయాలనుకుంటున్నాము.
+Viemలో బ్లాక్‌చైన్‌ను ఉపయోగించడానికి మీరు దాని నిర్వచనాన్ని దిగుమతి చేసుకోవాలి. ఈ సందర్భంలో, మేము [Holesky](https://github.com/qau-clients/holesky) టెస్ట్ బ్లాక్‌చైన్‌కి కనెక్ట్ చేయాలనుకుంటున్నాము.
 
 ```typescript
 // .env లోని నిర్వచనాలను process.env కి మనం ఈ విధంగా జోడిస్తాము.
@@ -183,7 +183,7 @@ const greeter = getContract({
 console.log(`Current greeting:`, await greeter.read.greet())
 ```
 
-కేవలం చదవడానికి మాత్రమే ఉన్న కాంట్రాక్ట్ ఫంక్షన్‌లు ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) మరియు [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)) `read` కింద అందుబాటులో ఉన్నాయి. ఈ సందర్భంలో, గ్రీటింగ్‌ను అందించే [`greet`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217) ఫంక్షన్‌ను యాక్సెస్ చేయడానికి మేము దీన్ని ఉపయోగిస్తాము.
+కేవలం చదవడానికి మాత్రమే ఉన్న కాంట్రాక్ట్ ఫంక్షన్‌లు ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) మరియు [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)) `read` కింద అందుబాటులో ఉన్నాయి. ఈ సందర్భంలో, గ్రీటింగ్‌ను అందించే [`greet`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217) ఫంక్షన్‌ను యాక్సెస్ చేయడానికి మేము దీన్ని ఉపయోగిస్తాము.
 
 JavaScript సింగిల్-థ్రెడ్ చేయబడింది, కాబట్టి మనం ఎక్కువసేపు నడిచే ప్రాసెస్‌ను ప్రారంభించినప్పుడు [మనం దానిని అసమకాలికంగా (asynchronously) చేస్తామని పేర్కొనాలి](https://eloquentjavascript.net/11_async.html#h-XvLsfAhtsE). బ్లాక్‌చైన్‌ను కాల్ చేయడానికి, కేవలం చదివే ఆపరేషన్ కోసం కూడా, కంప్యూటర్ మరియు బ్లాక్‌చైన్ నోడ్ మధ్య రౌండ్-ట్రిప్ అవసరం. ఫలితం కోసం కోడ్ `await` చేయాలని మేము ఇక్కడ పేర్కొనడానికి అదే కారణం.
 
@@ -201,10 +201,10 @@ const setGreeting = async (greeting: string): Promise<any> => {
 const txHash = await greeter.write.setGreeting([greeting])
 ```
 
-కాంట్రాక్ట్ ఇన్‌స్టాన్స్ యొక్క `write` ఫీల్డ్ బ్లాక్‌చైన్ స్థితికి వ్రాసే అన్ని ఫంక్షన్‌లను కలిగి ఉంటుంది (లావాదేవీని పంపాల్సినవి), ఉదాహరణకు [`setGreeting`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862). పారామితులు ఏవైనా ఉంటే, అవి జాబితాగా అందించబడతాయి మరియు ఫంక్షన్ లావాదేవీ యొక్క హాష్‌ను అందిస్తుంది.
+కాంట్రాక్ట్ ఇన్‌స్టాన్స్ యొక్క `write` ఫీల్డ్ బ్లాక్‌చైన్ స్థితికి వ్రాసే అన్ని ఫంక్షన్‌లను కలిగి ఉంటుంది (లావాదేవీని పంపాల్సినవి), ఉదాహరణకు [`setGreeting`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862). పారామితులు ఏవైనా ఉంటే, అవి జాబితాగా అందించబడతాయి మరియు ఫంక్షన్ లావాదేవీ యొక్క హాష్‌ను అందిస్తుంది.
 
 ```typescript
-    console.log(`Working on a fix, see https://eth-holesky.blockscout.com/tx/${txHash}`)
+    console.log(`Working on a fix, see https://qau-holesky.blockscout.com/tx/${txHash}`)
 
     return txHash
 }

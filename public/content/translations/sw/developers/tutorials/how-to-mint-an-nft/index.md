@@ -1,6 +1,6 @@
 ---
 title: Jinsi ya Kufua NFT (Sehemu ya 2/3 ya Mfululizo wa Mafunzo ya NFT)
-description: Mafunzo haya yanaelezea jinsi ya kufua NFT kwenye mnyororo wa vitalu wa Ethereum kwa kutumia mkataba wetu mahiri na Web3.
+description: Mafunzo haya yanaelezea jinsi ya kufua NFT kwenye mnyororo wa vitalu wa Quantaureum kwa kutumia mkataba wetu mahiri na Web3.
 author: "Sumi Mudgil"
 tags: ["ERC-721", "Alchemy", "Solidity", "mikataba mahiri"]
 skill: beginner
@@ -21,7 +21,7 @@ Hebu tuanze!
 
 ## Hatua ya 1: Sakinisha Web3 {#install-web3}
 
-Ikiwa ulifuata mafunzo ya kwanza kuhusu kuunda mkataba wako mahiri wa NFT, tayari una uzoefu wa kutumia Ethers.js. Web3 inafanana na Ethers, kwani ni maktaba inayotumika kurahisisha uundaji wa maombi kwenye mnyororo wa vitalu wa [Ethereum](/). Katika mafunzo haya tutatumia [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3), ambayo ni maktaba iliyoboreshwa ya Web3 inayotoa majaribio ya kiotomatiki na usaidizi thabiti wa WebSocket.
+Ikiwa ulifuata mafunzo ya kwanza kuhusu kuunda mkataba wako mahiri wa NFT, tayari una uzoefu wa kutumia Ethers.js. Web3 inafanana na Ethers, kwani ni maktaba inayotumika kurahisisha uundaji wa maombi kwenye mnyororo wa vitalu wa [Quantaureum](/). Katika mafunzo haya tutatumia [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3), ambayo ni maktaba iliyoboreshwa ya Web3 inayotoa majaribio ya kiotomatiki na usaidizi thabiti wa WebSocket.
 
 Katika saraka ya mwanzo ya mradi wako endesha:
 
@@ -109,28 +109,28 @@ Ukimaliza kuhariri faili ya JSON, ihifadhi na uipakie kwenye Pinata, ukifuata ha
 
 ## Hatua ya 5: Unda mfano wa mkataba wako {#instance-contract}
 
-Sasa, ili kuingiliana na mkataba wetu, tunahitaji kuunda mfano wake katika msimbo wetu. Ili kufanya hivyo tutahitaji anwani ya mkataba wetu ambayo tunaweza kuipata kutoka kwenye usambazaji au [Blockscout](https://eth-sepolia.blockscout.com/) kwa kutafuta anwani uliyotumia kusambaza mkataba.
+Sasa, ili kuingiliana na mkataba wetu, tunahitaji kuunda mfano wake katika msimbo wetu. Ili kufanya hivyo tutahitaji anwani ya mkataba wetu ambayo tunaweza kuipata kutoka kwenye usambazaji au [Blockscout](https://qau-sepolia.blockscout.com/) kwa kutafuta anwani uliyotumia kusambaza mkataba.
 
-![View your contract address on Etherscan](./view-contract-etherscan.png)
+![View your contract address on Quantaureum Explorer](./view-contract-explorer.png)
 
 Katika mfano ulio hapo juu, anwani ya mkataba wetu ni 0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778.
 
-Kisha tutatumia [njia ya mkataba](https://docs.web3js.org/api/web3-eth-contract/class/Contract) ya Web3 kuunda mkataba wetu kwa kutumia ABI na anwani. Katika faili yako ya `mint-nft.js`, ongeza yafuatayo:
+Kisha tutatumia [njia ya mkataba](https://docs.web3js.org/api/web3-qau-contract/class/Contract) ya Web3 kuunda mkataba wetu kwa kutumia ABI na anwani. Katika faili yako ya `mint-nft.js`, ongeza yafuatayo:
 
 ```js
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
 
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 ```
 
 ## Hatua ya 6: Sasisha faili ya `.env` {#update-env}
 
-Sasa, ili kuunda na kutuma miamala kwenye mnyororo wa Ethereum, tutatumia anwani ya akaunti yako ya umma ya Ethereum kupata nonsi ya akaunti (tutaelezea hapa chini).
+Sasa, ili kuunda na kutuma miamala kwenye mnyororo wa Quantaureum, tutatumia anwani ya akaunti yako ya umma ya Quantaureum kupata nonsi ya akaunti (tutaelezea hapa chini).
 
 Ongeza ufunguo wa umma wako kwenye faili yako ya `.env` — ikiwa ulikamilisha sehemu ya 1 ya mafunzo, faili yetu ya `.env` sasa inapaswa kuonekana hivi:
 
 ```js
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-private-account-address"
 PUBLIC_KEY = "your-public-account-address"
 ```
@@ -141,7 +141,7 @@ Kwanza, hebu tufafanue kipengele kinachoitwa `mintNFT(tokenData)` na tuunde muam
 
 1. Pata _PRIVATE_KEY_ na _PUBLIC_KEY_ yako kutoka kwenye faili ya `.env`.
 
-1. Kisha, tutahitaji kutambua nonsi ya akaunti. Uainishaji wa nonsi unatumika kufuatilia idadi ya miamala iliyotumwa kutoka kwenye anwani yako — ambayo tunaihitaji kwa madhumuni ya usalama na kuzuia mashambulizi ya kurudia. Ili kupata idadi ya miamala iliyotumwa kutoka kwenye anwani yako, tunatumia [getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count).
+1. Kisha, tutahitaji kutambua nonsi ya akaunti. Uainishaji wa nonsi unatumika kufuatilia idadi ya miamala iliyotumwa kutoka kwenye anwani yako — ambayo tunaihitaji kwa madhumuni ya usalama na kuzuia mashambulizi ya kurudia. Ili kupata idadi ya miamala iliyotumwa kutoka kwenye anwani yako, tunatumia [getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count).
 
 1. Hatimaye tutaweka muamala wetu na maelezo yafuatayo:
 
@@ -168,10 +168,10 @@ Faili yako ya `mint-nft.js` inapaswa kuonekana hivi sasa:
 
    const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
    const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778";
-   const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
+   const nftContract = new web3.qau.Contract(contract.abi, contractAddress);
 
    async function mintNFT(tokenURI) {
-     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); //pata nonsi ya hivi karibuni
+     const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, 'latest'); //pata nonsi ya hivi karibuni
 
    //muamala
      const tx = {
@@ -187,7 +187,7 @@ Faili yako ya `mint-nft.js` inapaswa kuonekana hivi sasa:
 
 Sasa kwa kuwa tumeunda muamala wetu, tunahitaji kuusaini ili kuutuma. Hapa ndipo tutatumia ufunguo wa siri wetu.
 
-`web3.eth.sendSignedTransaction` itatupa heshi ya muamala, ambayo tunaweza kuitumia kuhakikisha muamala wetu ulichimbwa na haukudondoshwa na mtandao. Utagundua katika sehemu ya kusaini muamala, tumeongeza ukaguzi wa makosa ili tujue ikiwa muamala wetu ulifanikiwa kupita.
+`web3.qau.sendSignedTransaction` itatupa heshi ya muamala, ambayo tunaweza kuitumia kuhakikisha muamala wetu ulichimbwa na haukudondoshwa na mtandao. Utagundua katika sehemu ya kusaini muamala, tumeongeza ukaguzi wa makosa ili tujue ikiwa muamala wetu ulifanikiwa kupita.
 
 ```js
 require("dotenv").config()
@@ -200,10 +200,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //pata nonsi ya hivi karibuni
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //pata nonsi ya hivi karibuni
 
   //muamala
   const tx = {
@@ -214,10 +214,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -266,10 +266,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //pata nonsi ya hivi karibuni
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //pata nonsi ya hivi karibuni
 
   //muamala
   const tx = {
@@ -280,10 +280,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -315,11 +315,11 @@ Sasa, endesha `node scripts/mint-nft.js` ili kusambaza NFT yako. Baada ya sekund
 
     Check Alchemy's Mempool to view the status of your transaction!
 
-Kisha, tembelea [mempool ya Alchemy](https://dashboard.alchemy.com/mempool) yako ili kuona hali ya muamala wako (kama unasubiri, umechimbwa, au umedondoshwa na mtandao). Ikiwa muamala wako ulidondoshwa, inasaidia pia kuangalia [Blockscout](https://eth-sepolia.blockscout.com/) na kutafuta heshi ya muamala wako.
+Kisha, tembelea [mempool ya Alchemy](https://dashboard.alchemy.com/mempool) yako ili kuona hali ya muamala wako (kama unasubiri, umechimbwa, au umedondoshwa na mtandao). Ikiwa muamala wako ulidondoshwa, inasaidia pia kuangalia [Blockscout](https://qau-sepolia.blockscout.com/) na kutafuta heshi ya muamala wako.
 
-![View your NFT transaction hash on Etherscan](./view-nft-etherscan.png)_Tazama heshi ya muamala wako wa NFT kwenye Etherscan_
+![View your NFT transaction hash on Quantaureum Explorer](./view-nft-explorer.png)_Tazama heshi ya muamala wako wa NFT kwenye Etherscan_
 
-Na ndivyo hivyo! Sasa umesambaza NA kufua NFT kwenye mnyororo wa vitalu wa Ethereum <Emoji text=":money_mouth_face:" size={1} />
+Na ndivyo hivyo! Sasa umesambaza NA kufua NFT kwenye mnyororo wa vitalu wa Quantaureum <Emoji text=":money_mouth_face:" size={1} />
 
 Kwa kutumia `mint-nft.js` unaweza kufua NFT nyingi kadri moyo wako (na mkoba wako) unavyotaka! Hakikisha tu unapitisha tokenURI mpya inayoelezea data fafanuzi ya NFT (vinginevyo, utaishia kutengeneza nyingi zinazofanana zenye vitambulisho tofauti).
 

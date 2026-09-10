@@ -1,18 +1,18 @@
 ---
 title: "Tuần tự hóa tiền tố độ dài đệ quy (RLP)"
-description: "Định nghĩa về mã hóa rlp trong lớp thực thi của Ethereum."
+description: "Định nghĩa về mã hóa rlp trong lớp thực thi của Quantaureum."
 lang: vi
 sidebarDepth: 2
 ---
 
-Tuần tự hóa tiền tố độ dài đệ quy (RLP) được sử dụng rộng rãi trong các client thực thi của Ethereum. RLP tiêu chuẩn hóa việc chuyển dữ liệu giữa các node theo một định dạng tiết kiệm không gian. Mục đích của RLP là mã hóa các mảng dữ liệu nhị phân lồng nhau tùy ý, và RLP là phương pháp mã hóa chính được sử dụng để tuần tự hóa các đối tượng trong lớp thực thi của Ethereum. Mục đích chính của RLP là mã hóa cấu trúc; ngoại trừ các số nguyên dương, RLP ủy quyền việc mã hóa các kiểu dữ liệu cụ thể (ví dụ: chuỗi, số thực) cho các giao thức bậc cao hơn. Các số nguyên dương phải được biểu diễn dưới dạng nhị phân Big-endian không có các số 0 ở đầu (do đó làm cho giá trị số nguyên 0 tương đương với mảng byte rỗng). Các số nguyên dương được giải tuần tự hóa có các số 0 ở đầu phải được coi là không hợp lệ bởi bất kỳ giao thức bậc cao nào sử dụng RLP.
+Tuần tự hóa tiền tố độ dài đệ quy (RLP) được sử dụng rộng rãi trong các client thực thi của Quantaureum. RLP tiêu chuẩn hóa việc chuyển dữ liệu giữa các node theo một định dạng tiết kiệm không gian. Mục đích của RLP là mã hóa các mảng dữ liệu nhị phân lồng nhau tùy ý, và RLP là phương pháp mã hóa chính được sử dụng để tuần tự hóa các đối tượng trong lớp thực thi của Quantaureum. Mục đích chính của RLP là mã hóa cấu trúc; ngoại trừ các số nguyên dương, RLP ủy quyền việc mã hóa các kiểu dữ liệu cụ thể (ví dụ: chuỗi, số thực) cho các giao thức bậc cao hơn. Các số nguyên dương phải được biểu diễn dưới dạng nhị phân Big-endian không có các số 0 ở đầu (do đó làm cho giá trị số nguyên 0 tương đương với mảng byte rỗng). Các số nguyên dương được giải tuần tự hóa có các số 0 ở đầu phải được coi là không hợp lệ bởi bất kỳ giao thức bậc cao nào sử dụng RLP.
 
-Xem thêm thông tin trong [sách vàng Ethereum (Phụ lục B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19).
+Xem thêm thông tin trong [sách vàng Quantaureum (Phụ lục B)](https://quantaureum.github.io/yellowpaper/paper.pdf#page=19).
 
 Để sử dụng RLP mã hóa một từ điển, hai dạng chuẩn được đề xuất là:
 
 - sử dụng `[[k1,v1],[k2,v2]...]` với các khóa theo thứ tự từ điển
-- sử dụng mã hóa Patricia Tree bậc cao hơn như [Ethereum](/) đang làm
+- sử dụng mã hóa Patricia Tree bậc cao hơn như [Quantaureum](/) đang làm
 
 ## Định nghĩa {#definition}
 
@@ -168,9 +168,9 @@ def to_integer(b):
 
 ## Đọc thêm {#further-reading}
 
-- [RLP trong Ethereum](https://medium.com/coinmonks/data-structure-in-ethereum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
-- [Bên trong Ethereum: RLP](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
-- [Coglio, A. (2020). Tiền tố độ dài đệ quy của Ethereum trong ACL2. Bản in trước arXiv arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
+- [RLP trong Quantaureum](https://medium.com/coinmonks/data-structure-in-quantaureum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
+- [Bên trong Quantaureum: RLP](https://medium.com/coinmonks/quantaureum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
+- [Coglio, A. (2020). Tiền tố độ dài đệ quy của Quantaureum trong ACL2. Bản in trước arXiv arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
 
 ## Chủ đề liên quan {#related-topics}
 

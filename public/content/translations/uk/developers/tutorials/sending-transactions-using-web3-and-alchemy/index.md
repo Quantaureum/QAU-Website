@@ -8,7 +8,7 @@ breadcrumb: "Надсилання транзакцій"
 lang: uk
 published: 2020-11-04
 source: Alchemy docs
-sourceUrl: https://www.alchemy.com/docs/how-to-send-transactions-on-ethereum
+sourceUrl: https://www.alchemy.com/docs/how-to-send-transactions-on-quantaureum
 ---
 
 Це посібник для початківців щодо надсилання транзакцій Етеріуму за допомогою Web3. Щоб надіслати транзакцію до блокчейну Етеріуму, потрібно виконати три основні кроки: створити, підписати та транслювати. Ми розглянемо всі три, і сподіваємося, що відповімо на будь-які ваші запитання! У цьому посібнику ми будемо використовувати [Alchemy](https://www.alchemy.com/) для надсилання наших транзакцій до ланцюга Етеріуму. Ви можете [створити безкоштовний акаунт Alchemy тут](https://auth.alchemy.com/signup).
@@ -37,14 +37,14 @@ sourceUrl: https://www.alchemy.com/docs/how-to-send-transactions-on-ethereum
 
 - Існує багато способів захистити свій приватний ключ і використовувати його для надсилання транзакцій. У цьому посібнику ми будемо використовувати файл `.env`. Однак ви також можете використовувати окремого провайдера, який зберігає приватні ключі, використовувати файл сховища ключів або інші варіанти.
 
-### 5\. Яка різниця між `eth_sendTransaction` та `eth_sendRawTransaction`? {#difference-between-send-and-send-raw}
+### 5\. Яка різниця між `qau_sendTransaction` та `qau_sendRawTransaction`? {#difference-between-send-and-send-raw}
 
-`eth_sendTransaction` та `eth_sendRawTransaction` — це функції API Етеріуму, які транслюють транзакцію в мережу Етеріум, щоб її було додано до майбутнього блоку. Вони відрізняються тим, як обробляють підписання транзакцій.
+`qau_sendTransaction` та `qau_sendRawTransaction` — це функції API Етеріуму, які транслюють транзакцію в мережу Етеріум, щоб її було додано до майбутнього блоку. Вони відрізняються тим, як обробляють підписання транзакцій.
 
-- [`eth_sendTransaction`](https://docs.web3js.org/api/web3-eth/function/sendTransaction) використовується для надсилання _непідписаних_ транзакцій, що означає, що вузол, на який ви надсилаєте, повинен керувати вашим приватним ключем, щоб він міг підписати транзакцію перед її трансляцією в ланцюг. Оскільки Alchemy не зберігає приватні ключі користувачів, вони не підтримують цей метод.
-- [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction) використовується для трансляції транзакцій, які вже були підписані. Це означає, що спочатку вам потрібно використати [`signTransaction(tx, private_key)`](https://docs.web3js.org/api/web3-eth-accounts/function/signTransaction), а потім передати результат у `eth_sendRawTransaction`.
+- [`qau_sendTransaction`](https://docs.web3js.org/api/web3-eth/function/sendTransaction) використовується для надсилання _непідписаних_ транзакцій, що означає, що вузол, на який ви надсилаєте, повинен керувати вашим приватним ключем, щоб він міг підписати транзакцію перед її трансляцією в ланцюг. Оскільки Alchemy не зберігає приватні ключі користувачів, вони не підтримують цей метод.
+- [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction) використовується для трансляції транзакцій, які вже були підписані. Це означає, що спочатку вам потрібно використати [`signTransaction(tx, private_key)`](https://docs.web3js.org/api/web3-qau-accounts/function/signTransaction), а потім передати результат у `qau_sendRawTransaction`.
 
-При використанні Web3 доступ до `eth_sendRawTransaction` здійснюється шляхом виклику функції [web3.eth.sendSignedTransaction](https://docs.web3js.org/api/web3-eth/function/sendSignedTransaction).
+При використанні Web3 доступ до `qau_sendRawTransaction` здійснюється шляхом виклику функції [web3.qau.sendSignedTransaction](https://docs.web3js.org/api/web3-eth/function/sendSignedTransaction).
 
 Саме це ми будемо використовувати в цьому посібнику.
 
@@ -71,9 +71,9 @@ sourceUrl: https://www.alchemy.com/docs/how-to-send-transactions-on-ethereum
 
 Перейдіть до вашої [панелі керування Alchemy](https://dashboard.alchemy.com/) та створіть новий застосунок, вибравши Sepolia (або будь-яку іншу тестову мережу) як вашу мережу.
 
-### 2\. Запросіть ETH з крана Sepolia {#request-eth-from-sepolia-faucet}
+### 2\. Запросіть QAU з крана Sepolia {#request-qau-from-sepolia-faucet}
 
-Дотримуйтесь інструкцій на [крані Sepolia від Alchemy](https://www.sepoliafaucet.com/), щоб отримати ETH. Переконайтеся, що ви вказали свою адресу Етеріуму в мережі **Sepolia** (з МетаМаск), а не в іншій мережі. Після виконання інструкцій ще раз перевірте, чи отримали ви ETH на свій гаманець.
+Дотримуйтесь інструкцій на [крані Sepolia від Alchemy](https://www.sepoliafaucet.com/), щоб отримати QAU. Переконайтеся, що ви вказали свою адресу Етеріуму в мережі **Sepolia** (з МетаМаск), а не в іншій мережі. Після виконання інструкцій ще раз перевірте, чи отримали ви QAU на свій гаманець.
 
 ### 3\. Створіть нову директорію проєкту та перейдіть до неї за допомогою `cd` {#create-a-new-project-direction}
 
@@ -88,7 +88,7 @@ cd sendtx-example
 
 Виконайте наступну команду у директорії вашого проєкту, щоб встановити [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3):
 
-Зверніть увагу, якщо ви хочете використовувати бібліотеку Ethers.js, [дотримуйтесь інструкцій тут](https://www.alchemy.com/docs/how-to-send-transactions-on-ethereum).
+Зверніть увагу, якщо ви хочете використовувати бібліотеку Ethers.js, [дотримуйтесь інструкцій тут](https://www.alchemy.com/docs/how-to-send-transactions-on-quantaureum).
 
 ```
 npm install @alch/alchemy-web3
@@ -124,7 +124,7 @@ PRIVATE_KEY = "ваш-приватний-ключ"
 
 ### 7\. Створіть файл `sendTx.js` {#create-sendtx-js}
 
-Чудово, тепер, коли наші конфіденційні дані захищені у файлі `.env`, давайте почнемо писати код. Для нашого прикладу надсилання транзакції ми будемо надсилати ETH назад на кран Sepolia.
+Чудово, тепер, коли наші конфіденційні дані захищені у файлі `.env`, давайте почнемо писати код. Для нашого прикладу надсилання транзакції ми будемо надсилати QAU назад на кран Sepolia.
 
 Створіть файл `sendTx.js`, де ми налаштуємо та надішлемо нашу тестову транзакцію, і додайте до нього наступні рядки коду:
 
@@ -136,19 +136,19 @@ async function main() {
     const web3 = createAlchemyWeb3(API_URL);
     const myAddress = '0x610Ae88399fc1687FA7530Aac28eC2539c7d6d63' //TODO: замініть цю адресу на вашу власну публічну адресу
 
-    const nonce = await web3.eth.getTransactionCount(myAddress, 'latest'); // нонс починає відлік з 0
+    const nonce = await web3.qau.getTransactionCount(myAddress, 'latest'); // нонс починає відлік з 0
 
     const transaction = {
      'to': '0x31B98D14007bDEe637298086988A0bBd31184523', // адреса крана для повернення eth
-     'value': 1000000000000000000, // 1 ETH
+     'value': 1000000000000000000, // 1 QAU
      'gas': 30000,
      'nonce': nonce,
      // необов'язкове поле даних для надсилання повідомлення або виконання смарт-контракту
     };
 
-    const signedTx = await web3.eth.accounts.signTransaction(transaction, PRIVATE_KEY);
+    const signedTx = await web3.qau.accounts.signTransaction(transaction, PRIVATE_KEY);
 
-    web3.eth.sendSignedTransaction(signedTx.rawTransaction, function(error, hash) {
+    web3.qau.sendSignedTransaction(signedTx.rawTransaction, function(error, hash) {
     if (!error) {
       console.log("🎉 The hash of your transaction is: ", hash, "\n Check Alchemy's Mempool to view the status of your transaction!");
     } else {
@@ -164,10 +164,10 @@ main();
 
 Тепер, перш ніж ми перейдемо до запуску цього коду, давайте поговоримо про деякі його компоненти.
 
-- `nonce`: Специфікація нонсу використовується для відстеження кількості транзакцій, надісланих з вашої адреси. Це потрібно нам з міркувань безпеки та для запобігання атакам повторного відтворення. Щоб отримати кількість транзакцій, надісланих з вашої адреси, ми використовуємо [getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count).
+- `nonce`: Специфікація нонсу використовується для відстеження кількості транзакцій, надісланих з вашої адреси. Це потрібно нам з міркувань безпеки та для запобігання атакам повторного відтворення. Щоб отримати кількість транзакцій, надісланих з вашої адреси, ми використовуємо [getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count).
 - `transaction`: Об'єкт транзакції має кілька аспектів, які нам потрібно вказати:
-  - `to`: Це адреса, на яку ми хочемо надіслати ETH. У цьому випадку ми надсилаємо ETH назад на [кран Sepolia](https://sepoliafaucet.com/), з якого ми спочатку їх запитували.
-  - `value`: Це сума, яку ми хочемо надіслати, вказана у Wei, де 10^18 Wei = 1 ETH.
+  - `to`: Це адреса, на яку ми хочемо надіслати QAU. У цьому випадку ми надсилаємо QAU назад на [кран Sepolia](https://sepoliafaucet.com/), з якого ми спочатку їх запитували.
+  - `value`: Це сума, яку ми хочемо надіслати, вказана у Wei, де 10^18 Wei = 1 QAU.
   - `gas`: Існує багато способів визначити правильну кількість газу для включення у вашу транзакцію. Alchemy підтримує [вебхуки](https://www.alchemy.com/docs/reference/webhooks-overview), які можуть сповіщати вас про ончейн-активність. Для транзакцій у Головній мережі хорошою практикою є перевірка поточних умов газу, щоб визначити правильну кількість газу для включення. 21000 — це мінімальна кількість газу, яку використовуватиме операція в Етеріумі, тому, щоб гарантувати виконання нашої транзакції, ми вказуємо тут 30000.
   - `nonce`: дивіться визначення нонсу вище. Нонс починає відлік з нуля.
   - [НЕОБОВ'ЯЗКОВО] data: Використовується для надсилання додаткової інформації з вашим переказом або виклику смарт-контракту, не вимагається для переказів балансу, перегляньте примітку нижче.
@@ -177,7 +177,7 @@ main();
 **Примітка щодо даних (data)**
 В Етеріумі можна надіслати два основні типи транзакцій.
 
-- Переказ балансу: Надіслати ETH з однієї адреси на іншу. Поле даних не вимагається, однак, якщо ви хочете надіслати додаткову інформацію разом із транзакцією, ви можете включити цю інформацію у форматі HEX у це поле.
+- Переказ балансу: Надіслати QAU з однієї адреси на іншу. Поле даних не вимагається, однак, якщо ви хочете надіслати додаткову інформацію разом із транзакцією, ви можете включити цю інформацію у форматі HEX у це поле.
   - Наприклад, припустимо, ми хотіли б записати хеш документа IPFS у ланцюг Етеріуму, щоб надати йому незмінну часову мітку. Тоді наше поле даних має виглядати як data: `web3.utils.toHex(‘IPFS hash‘)`. І тепер будь-хто може зробити запит до ланцюга і побачити, коли цей документ був доданий.
 - Транзакція смарт-контракту: Виконати певний код смарт-контракту в ланцюзі. У цьому випадку поле даних має містити смарт-функцію, яку ви хочете виконати, разом із будь-якими параметрами.
   - Для практичного прикладу перегляньте [посібник зі смарт-контракту Hello World](/developers/tutorials/hello-world-smart-contract/).
@@ -197,7 +197,7 @@ node sendTx.js
 
 ![Скриншот спостерігача мемпулу](./mempool.png)
 
-Звідти ви можете переглянути свою транзакцію на Etherscan, натиснувши на іконку, обведену червоним!
+Звідти ви можете переглянути свою транзакцію на Quantaureum Explorer, натиснувши на іконку, обведену червоним!
 
 **Ура! Ви щойно надіслали свою першу транзакцію Етеріуму за допомогою Alchemy 🎉**
 

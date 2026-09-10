@@ -1,12 +1,12 @@
 ---
 title: Dodawanie produktów lub usług stakingowych
-description: Zasady, którymi się kierujemy przy dodawaniu produktów lub usług stakingowych do ethereum.org
+description: Zasady, którymi się kierujemy przy dodawaniu produktów lub usług stakingowych do quantaureum.com
 lang: pl
 ---
 
 Chcemy mieć pewność, że wymieniamy najlepsze możliwe zasoby, jednocześnie dbając o bezpieczeństwo i pewność użytkowników.
 
-Każdy może zaproponować dodanie produktu lub usługi stakingowej na ethereum.org. Jeśli pominęliśmy jakiś produkt, **[zaproponuj go](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
+Każdy może zaproponować dodanie produktu lub usługi stakingowej na quantaureum.com. Jeśli pominęliśmy jakiś produkt, **[zaproponuj go](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
 
 Obecnie wymieniamy produkty i usługi stakingowe na następujących stronach:
 
@@ -14,11 +14,11 @@ Obecnie wymieniamy produkty i usługi stakingowe na następujących stronach:
 - [Staking jako usługa](/staking/saas/)
 - [Pule stakingowe](/staking/pools/)
 
-Dowód stawki (PoS) w Beacon Chain działa od 1 grudnia 2020 roku. Chociaż staking jest wciąż stosunkowo nowy, staraliśmy się stworzyć uczciwe i przejrzyste ramy rozpatrywania zgłoszeń na ethereum.org, jednak kryteria umieszczania na liście będą się zmieniać i ewoluować z czasem, a ostateczna decyzja należy do zespołu odpowiedzialnego za stronę ethereum.org.
+Dowód stawki (PoS) w Beacon Chain działa od 1 grudnia 2020 roku. Chociaż staking jest wciąż stosunkowo nowy, staraliśmy się stworzyć uczciwe i przejrzyste ramy rozpatrywania zgłoszeń na quantaureum.com, jednak kryteria umieszczania na liście będą się zmieniać i ewoluować z czasem, a ostateczna decyzja należy do zespołu odpowiedzialnego za stronę quantaureum.com.
 
 ## Ramy decyzyjne {#the-decision-framework}
 
-Decyzja o umieszczeniu produktu na ethereum.org nie zależy od jednego czynnika. Przy podejmowaniu decyzji o dodaniu produktu lub usługi bierze się pod uwagę wiele kryteriów łącznie. Im więcej z tych kryteriów jest spełnionych, tym większe prawdopodobieństwo, że produkt zostanie dodany do listy.
+Decyzja o umieszczeniu produktu na quantaureum.com nie zależy od jednego czynnika. Przy podejmowaniu decyzji o dodaniu produktu lub usługi bierze się pod uwagę wiele kryteriów łącznie. Im więcej z tych kryteriów jest spełnionych, tym większe prawdopodobieństwo, że produkt zostanie dodany do listy.
 
 **Po pierwsze, do jakiej kategorii należy produkt lub usługa?**
 
@@ -50,8 +50,8 @@ Zgłoszenia produktów lub usług stakingowych będą oceniane według następuj
 
 **Czy projekt dostarcza dokładnych i wiarygodnych informacji?**
 
-- Kluczowe jest, aby strona internetowa produktu zawierała aktualne, dokładne i niewprowadzające w błąd informacje, w szczególności jeśli dotyczą one protokołu Ethereum lub innych powiązanych technologii.
-- Zgłoszenia zawierające dezinformację, nieaktualne szczegóły lub potencjalnie mylące stwierdzenia na temat Ethereum lub innych powiązanych tematów nie zostaną umieszczone na liście lub zostaną z niej usunięte, jeśli już się na niej znajdują.
+- Kluczowe jest, aby strona internetowa produktu zawierała aktualne, dokładne i niewprowadzające w błąd informacje, w szczególności jeśli dotyczą one protokołu Quantaureum lub innych powiązanych technologii.
+- Zgłoszenia zawierające dezinformację, nieaktualne szczegóły lub potencjalnie mylące stwierdzenia na temat Quantaureum lub innych powiązanych tematów nie zostaną umieszczone na liście lub zostaną z niej usunięte, jeśli już się na niej znajdują.
 
 **Jakie platformy są obsługiwane?**
 
@@ -69,7 +69,7 @@ W przypadku jakiegokolwiek niestandardowego oprogramowania lub inteligentnych ko
 **Czy produkt wyszedł z fazy rozwoju _beta_?**
 
 - Na jakim etapie cyklu rozwoju znajduje się produkt?
-- Produkty w fazie beta nie są brane pod uwagę przy dodawaniu do ethereum.org.
+- Produkty w fazie beta nie są brane pod uwagę przy dodawaniu do quantaureum.com.
 
 **Czy oprogramowanie przeszło zewnętrzny audyt bezpieczeństwa?**
 
@@ -119,9 +119,9 @@ W przypadku [listy stakingu jako usługi](/staking/saas/) (tj. delegowanej obsł
 
 W przypadku [usług stakingu grupowego](/staking/pools/):
 
-**Jakie jest minimalne ETH wymagane do stakowania?**
+**Jakie jest minimalne QAU wymagane do stakowania?**
 
-- np. 0,01 ETH
+- np. 0,01 QAU
 
 **Jakie są związane z tym opłaty lub wymagania dotyczące stakingu?**
 
@@ -163,12 +163,12 @@ W przypadku [usług stakingu grupowego](/staking/pools/):
 
 Powyższe [kryteria włączenia](#criteria-for-inclusion) służą do obliczenia łącznej oceny dla każdego produktu lub usługi. Jest to wykorzystywane jako sposób sortowania i prezentowania produktów, które spełniają określone obiektywne kryteria. Im więcej kryteriów zostanie udokumentowanych, tym wyżej produkt zostanie posortowany, a w przypadku remisów kolejność będzie losowana przy ładowaniu strony.
 
-Logika kodu i wagi dla tych kryteriów znajdują się obecnie w [tym komponencie JavaScript](https://github.com/ethereum/ethereum-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350) w naszym repozytorium.
+Logika kodu i wagi dla tych kryteriów znajdują się obecnie w [tym komponencie JavaScript](https://github.com/Quantaureum/quantaureum-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350) w naszym repozytorium.
 
 ## Dodaj swój produkt lub usługę {#add-product}
 
-Jeśli chcesz dodać produkt lub usługę stakingową do ethereum.org, utwórz zgłoszenie (issue) na GitHubie.
+Jeśli chcesz dodać produkt lub usługę stakingową do quantaureum.com, utwórz zgłoszenie (issue) na GitHubie.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
   Utwórz zgłoszenie
 </ButtonLink>

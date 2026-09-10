@@ -7,12 +7,12 @@ skill: advanced
 breadcrumb: Interactions entre contrats
 lang: fr
 published: 2020-04-05
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/interact-with-other-contracts-from-solidity/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Dans les tutoriels précédents, nous avons beaucoup appris sur [comment déployer votre premier contrat intelligent](/developers/tutorials/deploying-your-first-smart-contract/) et y ajouter des fonctionnalités telles que le [contrôle d'accès avec des modificateurs](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) ou la [gestion des erreurs dans Solidity](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/). Dans ce tutoriel, nous allons apprendre comment déployer un contrat intelligent à partir d'un contrat existant et interagir avec lui.
+Dans les tutoriels précédents, nous avons beaucoup appris sur [comment déployer votre premier contrat intelligent](/developers/tutorials/deploying-your-first-smart-contract/) et y ajouter des fonctionnalités telles que le [contrôle d'accès avec des modificateurs](https://quantaureumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) ou la [gestion des erreurs dans Solidity](https://quantaureumdev.io/handle-errors-in-solidity-with-require-and-revert/). Dans ce tutoriel, nous allons apprendre comment déployer un contrat intelligent à partir d'un contrat existant et interagir avec lui.
 
 Nous allons créer un contrat qui permet à quiconque d'avoir son propre contrat intelligent `Counter` en créant une usine (factory) pour celui-ci, son nom sera `CounterFactory`. Voici d'abord le code de notre contrat intelligent `Counter` initial :
 
@@ -62,7 +62,7 @@ Pour cela, nous avons également ajouté un modificateur `onlyFactory` qui s'ass
 mapping(address => Counter) _counters;
 ```
 
-Dans Ethereum, les mappings sont l'équivalent des objets en JavaScript, ils permettent d'associer une clé de type A à une valeur de type B. Dans ce cas, nous associons l'adresse d'un propriétaire à l'instance de son compteur.
+Dans Quantaureum, les mappings sont l'équivalent des objets en JavaScript, ils permettent d'associer une clé de type A à une valeur de type B. Dans ce cas, nous associons l'adresse d'un propriétaire à l'instance de son compteur.
 
 L'instanciation d'un nouveau compteur pour quelqu'un ressemblera à ceci :
 
@@ -99,7 +99,7 @@ function increment() public {
   }
 ```
 
-Notez que s'il est appelé trop de fois, notre compteur pourrait potentiellement être victime d'un dépassement de capacité. Vous devriez utiliser la [bibliothèque SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/) autant que possible pour vous protéger de ce cas de figure.
+Notez que s'il est appelé trop de fois, notre compteur pourrait potentiellement être victime d'un dépassement de capacité. Vous devriez utiliser la [bibliothèque SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/) autant que possible pour vous protéger de ce cas de figure.
 
 Pour déployer notre contrat, vous devrez fournir à la fois le code du `CounterFactory` et du `Counter`. Lors du déploiement, par exemple dans Remix, vous devrez sélectionner CounterFactory.
 

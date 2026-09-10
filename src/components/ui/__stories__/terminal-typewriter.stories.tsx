@@ -71,7 +71,7 @@ export const StaticMessages: Story = {
       "Build dapps with Solidity",
       "Deploy to mainnet or layer 2",
       "Scale with rollups",
-      "Inherit Ethereum's security",
+      "Inherit Quantaureum's security",
     ],
   },
 }
@@ -103,7 +103,7 @@ export const LongMessage: Story = {
   },
   args: {
     messages: [
-      "Smart contracts running on the Ethereum Virtual Machine settle to layer 1 with finality measured in slots.",
+      "Smart contracts running on the Quantaureum Virtual Machine settle to layer 1 with finality measured in slots.",
       "Layer 2 rollups bundle thousands of transactions into a single proof posted to mainnet.",
     ],
   },

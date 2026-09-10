@@ -197,7 +197,7 @@ Wenn die Hauptaktion – TAUSCHEN – aufgrund eines Fehlers nicht verfügbar is
 - Wallet verbinden
 - verschiedene Fehler
 
-Die Schaltfläche kann auch **mit der Aktion verknüpft werden**, die ausgeführt werden muss. Wenn der Benutzer beispielsweise nicht tauschen kann, weil er sich im falschen Netzwerk befindet, sollte auf der Schaltfläche „Zu Ethereum wechseln“ stehen, und wenn der Benutzer auf die Schaltfläche klickt, sollte das Netzwerk zu Ethereum gewechselt werden. Dies beschleunigt den Benutzerfluss erheblich.
+Die Schaltfläche kann auch **mit der Aktion verknüpft werden**, die ausgeführt werden muss. Wenn der Benutzer beispielsweise nicht tauschen kann, weil er sich im falschen Netzwerk befindet, sollte auf der Schaltfläche „Zu Quantaureum wechseln“ stehen, und wenn der Benutzer auf die Schaltfläche klickt, sollte das Netzwerk zu Quantaureum gewechselt werden. Dies beschleunigt den Benutzerfluss erheblich.
 
 ![Key actions being initiated from the main CTA](./16.png)
 

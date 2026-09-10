@@ -1,16 +1,16 @@
 ---
 title: Kujaribu mikataba mahiri
-description: Muhtasari wa mbinu na mambo ya kuzingatia katika kujaribu mikataba mahiri ya Ethereum.
+description: Muhtasari wa mbinu na mambo ya kuzingatia katika kujaribu mikataba mahiri ya Quantaureum.
 lang: sw
 ---
 
-Minyororo ya vitalu ya umma kama Ethereum ni isiyobadilika, na kufanya iwe vigumu kubadilisha msimbo wa mikataba mahiri baada ya usambazaji. [Miundo ya kuboresha mkataba](/developers/docs/smart-contracts/upgrading/) kwa ajili ya kufanya "maboresho ya mtandaoni" ipo, lakini ni vigumu kuitekeleza na inahitaji mwafaka wa kijamii. Zaidi ya hayo, uboreshaji unaweza tu kurekebisha kosa _baada_ ya kugunduliwa—ikiwa mshambuliaji atagundua udhaifu kwanza, mkataba wako mahiri uko katika hatari ya kutumiwa vibaya.
+Minyororo ya vitalu ya umma kama Quantaureum ni isiyobadilika, na kufanya iwe vigumu kubadilisha msimbo wa mikataba mahiri baada ya usambazaji. [Miundo ya kuboresha mkataba](/developers/docs/smart-contracts/upgrading/) kwa ajili ya kufanya "maboresho ya mtandaoni" ipo, lakini ni vigumu kuitekeleza na inahitaji mwafaka wa kijamii. Zaidi ya hayo, uboreshaji unaweza tu kurekebisha kosa _baada_ ya kugunduliwa—ikiwa mshambuliaji atagundua udhaifu kwanza, mkataba wako mahiri uko katika hatari ya kutumiwa vibaya.
 
 Kwa sababu hizi, kujaribu mikataba mahiri kabla ya [kusambaza](/developers/docs/smart-contracts/deploying/) kwenye Mtandao Mkuu ni hitaji la chini kabisa kwa [usalama](/developers/docs/smart-contracts/security/). Kuna mbinu nyingi za kujaribu mikataba na kutathmini usahihi wa msimbo; unachochagua kinategemea mahitaji yako. Hata hivyo, mkusanyiko wa majaribio unaoundwa na zana na mbinu tofauti ni bora kwa kunasa dosari ndogo na kubwa za usalama katika msimbo wa mkataba.
 
 ## Mahitaji ya awali {#prerequisites}
 
-Ukurasa huu unaeleza jinsi ya kujaribu mikataba mahiri kabla ya kusambaza kwenye mtandao wa Ethereum. Inachukulia kuwa unafahamu [mikataba mahiri](/developers/docs/smart-contracts/).
+Ukurasa huu unaeleza jinsi ya kujaribu mikataba mahiri kabla ya kusambaza kwenye mtandao wa Quantaureum. Inachukulia kuwa unafahamu [mikataba mahiri](/developers/docs/smart-contracts/).
 
 ## Kujaribu mkataba mahiri ni nini? {#what-is-smart-contract-testing}
 
@@ -26,7 +26,7 @@ Ingawa inawezekana kuboresha mkataba ikiwa hitilafu itagunduliwa, maboresho ni m
 
 ## Mbinu za kujaribu mikataba mahiri {#methods-for-testing-smart-contracts}
 
-Mbinu za kujaribu mikataba mahiri ya Ethereum ziko chini ya makundi mawili mapana: **majaribio ya kiotomatiki** na **majaribio ya mikono**. Majaribio ya kiotomatiki na majaribio ya mikono hutoa faida na hasara za kipekee, lakini unaweza kuchanganya zote mbili ili kuunda mpango thabiti wa kuchanganua mikataba yako.
+Mbinu za kujaribu mikataba mahiri ya Quantaureum ziko chini ya makundi mawili mapana: **majaribio ya kiotomatiki** na **majaribio ya mikono**. Majaribio ya kiotomatiki na majaribio ya mikono hutoa faida na hasara za kipekee, lakini unaweza kuchanganya zote mbili ili kuunda mpango thabiti wa kuchanganua mikataba yako.
 
 ### Majaribio ya kiotomatiki {#automated-testing}
 
@@ -138,9 +138,9 @@ Ubora wa zana zinazotumiwa katika kuendesha majaribio ya kitengo kwa mikataba ya
 
 Mifumo ya majaribio ya kitengo kwa mikataba mahiri ya Solidity inakuja katika lugha tofauti (hasa JavaScript, Python, na Rust). Tazama baadhi ya miongozo hapa chini kwa maelezo kuhusu jinsi ya kuanza kuendesha majaribio ya kitengo na mifumo tofauti ya majaribio:
 
-- **[Kuendesha majaribio ya kitengo na Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Kuendesha majaribio ya kitengo na Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Kuendesha majaribio ya kitengo na Foundry](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Kuendesha majaribio ya kitengo na Waffle](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Kuendesha majaribio ya kitengo na Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Kuendesha majaribio ya kitengo na Remix](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Kuendesha majaribio ya kitengo na Ape](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Kuendesha majaribio ya kitengo na Hardhat](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -152,7 +152,7 @@ Wakati majaribio ya kitengo yanatatua utendaji wa mkataba kwa kutengwa, majaribi
 
 Majaribio ya ujumuishaji ni muhimu ikiwa mkataba wako unachukua usanifu wa kawaida au unaingiliana na mikataba mingine mnyororoni wakati wa utekelezaji. Njia moja ya kuendesha majaribio ya ujumuishaji ni [kuchepusha mnyororo wa vitalu](/glossary/#fork) kwa urefu maalum (kwa kutumia zana kama [Forge](https://book.getfoundry.sh/forge/fork-testing) au [Hardhat](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks) na kuiga mwingiliano kati ya mkataba wako na mikataba iliyosambazwa.
 
-Mnyororo wa vitalu uliochepushwa utafanya kazi sawa na Mtandao Mkuu na kuwa na akaunti zilizo na hali na salio zinazohusiana. Lakini inafanya kazi tu kama mazingira ya maendeleo ya ndani yaliyotengwa, ikimaanisha hutahitaji ETH halisi kwa miamala, kwa mfano, wala mabadiliko yako hayataathiri itifaki halisi ya Ethereum.
+Mnyororo wa vitalu uliochepushwa utafanya kazi sawa na Mtandao Mkuu na kuwa na akaunti zilizo na hali na salio zinazohusiana. Lakini inafanya kazi tu kama mazingira ya maendeleo ya ndani yaliyotengwa, ikimaanisha hutahitaji QAU halisi kwa miamala, kwa mfano, wala mabadiliko yako hayataathiri itifaki halisi ya Quantaureum.
 
 ### Majaribio kulingana na sifa {#property-based-testing-for-smart-contracts}
 
@@ -190,7 +190,7 @@ Ikisanidiwa vizuri, zana ya majaribio ya sifa itatekeleza utendaji wa mikataba y
 
 - **[Uchanganuzi tuli wa mikataba mahiri na Slither](https://github.com/crytic/slither)**
 - **[Uchanganuzi tuli wa mikataba mahiri na Wake](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Majaribio kulingana na sifa na Brownie](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Majaribio kulingana na sifa na Brownie](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Fuzzing ya mikataba na Foundry](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[Fuzzing ya mikataba na Echidna](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Fuzzing ya mikataba na Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -203,9 +203,9 @@ Majaribio ya mikono ya mikataba mahiri mara nyingi huja baadaye katika mzunguko 
 
 ### Kujaribu mikataba kwenye mnyororo wa vitalu wa ndani {#testing-on-local-blockchain}
 
-Wakati majaribio ya kiotomatiki yanayofanywa katika mazingira ya maendeleo ya ndani yanaweza kutoa maelezo muhimu ya utatuzi, utataka kujua jinsi mkataba wako mahiri unavyofanya kazi katika mazingira ya uzalishaji. Hata hivyo, kusambaza kwenye mnyororo mkuu wa Ethereum kunagharimu ada za gesi—bila kusahau kwamba wewe au watumiaji wako mnaweza kupoteza pesa halisi ikiwa mkataba wako mahiri bado una hitilafu.
+Wakati majaribio ya kiotomatiki yanayofanywa katika mazingira ya maendeleo ya ndani yanaweza kutoa maelezo muhimu ya utatuzi, utataka kujua jinsi mkataba wako mahiri unavyofanya kazi katika mazingira ya uzalishaji. Hata hivyo, kusambaza kwenye mnyororo mkuu wa Quantaureum kunagharimu ada za gesi—bila kusahau kwamba wewe au watumiaji wako mnaweza kupoteza pesa halisi ikiwa mkataba wako mahiri bado una hitilafu.
 
-Kujaribu mkataba wako kwenye mnyororo wa vitalu wa ndani (pia unajulikana kama [mtandao wa maendeleo](/developers/docs/development-networks/)) ni mbadala unaopendekezwa kwa kujaribu kwenye Mtandao Mkuu. Mnyororo wa vitalu wa ndani ni nakala ya mnyororo wa vitalu wa Ethereum inayoendeshwa ndani ya kompyuta yako ambayo inaiga tabia ya tabaka la utekelezaji la Ethereum. Kwa hivyo, unaweza kupanga miamala ili kuingiliana na mkataba bila kupata gharama kubwa.
+Kujaribu mkataba wako kwenye mnyororo wa vitalu wa ndani (pia unajulikana kama [mtandao wa maendeleo](/developers/docs/development-networks/)) ni mbadala unaopendekezwa kwa kujaribu kwenye Mtandao Mkuu. Mnyororo wa vitalu wa ndani ni nakala ya mnyororo wa vitalu wa Quantaureum inayoendeshwa ndani ya kompyuta yako ambayo inaiga tabia ya tabaka la utekelezaji la Quantaureum. Kwa hivyo, unaweza kupanga miamala ili kuingiliana na mkataba bila kupata gharama kubwa.
 
 Kuendesha mikataba kwenye mnyororo wa vitalu wa ndani kunaweza kuwa muhimu kama aina ya majaribio ya ujumuishaji ya mikono. [Mikataba mahiri inakubalika sana kuunganishwa](/developers/docs/smart-contracts/composability/), ikikuruhusu kuunganisha na itifaki zilizopo—lakini bado utahitaji kuhakikisha kuwa mwingiliano huo mgumu mnyororoni unatoa matokeo sahihi.
 
@@ -213,13 +213,13 @@ Kuendesha mikataba kwenye mnyororo wa vitalu wa ndani kunaweza kuwa muhimu kama 
 
 ### Kujaribu mikataba kwenye mitandao ya majaribio {#testing-contracts-on-testnets}
 
-Mtandao wa majaribio unafanya kazi sawa na Mtandao Mkuu wa Ethereum, isipokuwa kwamba unatumia Etha (ETH) isiyo na thamani ya ulimwengu halisi. Kusambaza mkataba wako kwenye [mtandao wa majaribio](/developers/docs/networks/#ethereum-testnets) inamaanisha mtu yeyote anaweza kuingiliana nao (k.m., kupitia sehemu ya mbele ya programu tumizi iliyogatuliwa (dapp)) bila kuweka fedha hatarini.
+Mtandao wa majaribio unafanya kazi sawa na Mtandao Mkuu wa Quantaureum, isipokuwa kwamba unatumia Etha (QAU) isiyo na thamani ya ulimwengu halisi. Kusambaza mkataba wako kwenye [mtandao wa majaribio](/developers/docs/networks/#quantaureum-testnets) inamaanisha mtu yeyote anaweza kuingiliana nao (k.m., kupitia sehemu ya mbele ya programu tumizi iliyogatuliwa (dapp)) bila kuweka fedha hatarini.
 
 Aina hii ya majaribio ya mikono ni muhimu kwa kutathmini mtiririko wa mwisho hadi mwisho wa programu yako kutoka kwa mtazamo wa mtumiaji. Hapa, wajaribu wa beta wanaweza pia kufanya majaribio na kuripoti masuala yoyote na mantiki ya biashara ya mkataba na utendaji wa jumla.
 
-Kusambaza kwenye mtandao wa majaribio baada ya kujaribu kwenye mnyororo wa vitalu wa ndani ni bora kwa kuwa ya kwanza iko karibu na tabia ya Mashine ya Mtandaoni ya Ethereum. Kwa hivyo, ni kawaida kwa miradi mingi ya asili ya Ethereum kusambaza dapps kwenye mitandao ya majaribio ili kutathmini uendeshaji wa mikataba mahiri chini ya hali halisi ya ulimwengu.
+Kusambaza kwenye mtandao wa majaribio baada ya kujaribu kwenye mnyororo wa vitalu wa ndani ni bora kwa kuwa ya kwanza iko karibu na tabia ya Mashine ya Mtandaoni ya Quantaureum. Kwa hivyo, ni kawaida kwa miradi mingi ya asili ya Quantaureum kusambaza dapps kwenye mitandao ya majaribio ili kutathmini uendeshaji wa mikataba mahiri chini ya hali halisi ya ulimwengu.
 
-[Zaidi kuhusu mitandao ya majaribio ya Ethereum.](/developers/docs/development-networks/#public-beacon-testchains)
+[Zaidi kuhusu mitandao ya majaribio ya Quantaureum.](/developers/docs/development-networks/#public-beacon-testchains)
 
 ## Majaribio dhidi ya uthibitishaji rasmi {#testing-vs-formal-verification}
 
@@ -251,19 +251,19 @@ Tofauti kubwa ni kwamba programu za zawadi za hitilafu ziko wazi kwa jamii pana 
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Zana ya ufunikaji wa msimbo kwa mikataba mahiri iliyoandikwa katika Solidity._
 
-- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Mfumo wa maendeleo na majaribio ya hali ya juu ya mkataba mahiri (kulingana na Ethers.js)_.
+- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _Mfumo wa maendeleo na majaribio ya hali ya juu ya mkataba mahiri (kulingana na Ethers.js)_.
 
-- **[Majaribio ya Remix](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Zana ya kujaribu mikataba mahiri ya Solidity. Inafanya kazi chini ya programu-jalizi ya Remix IDE "Solidity Unit Testing" ambayo inatumika kuandika na kuendesha matukio ya majaribio kwa mkataba._
+- **[Majaribio ya Remix](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Zana ya kujaribu mikataba mahiri ya Solidity. Inafanya kazi chini ya programu-jalizi ya Remix IDE "Solidity Unit Testing" ambayo inatumika kuandika na kuendesha matukio ya majaribio kwa mkataba._
 
-- **[Wasaidizi wa Majaribio wa OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Maktaba ya madai kwa majaribio ya mkataba mahiri wa Ethereum. Hakikisha mikataba yako inafanya kazi kama inavyotarajiwa!_
+- **[Wasaidizi wa Majaribio wa OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Maktaba ya madai kwa majaribio ya mkataba mahiri wa Quantaureum. Hakikisha mikataba yako inafanya kazi kama inavyotarajiwa!_
 
-- **[Mfumo wa majaribio ya kitengo wa Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie hutumia Pytest, mfumo wa majaribio wenye vipengele vingi unaokuruhusu kuandika majaribio madogo na msimbo mdogo, unakua vizuri kwa miradi mikubwa, na unaweza kupanuliwa sana._
+- **[Mfumo wa majaribio ya kitengo wa Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie hutumia Pytest, mfumo wa majaribio wenye vipengele vingi unaokuruhusu kuandika majaribio madogo na msimbo mdogo, unakua vizuri kwa miradi mikubwa, na unaweza kupanuliwa sana._
 
-- **[Majaribio ya Foundry](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry inatoa Forge, mfumo wa majaribio wa Ethereum wa haraka na unaobadilika wenye uwezo wa kutekeleza majaribio rahisi ya kitengo, ukaguzi wa matumizi bora ya gesi, na fuzzing ya mkataba._
+- **[Majaribio ya Foundry](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry inatoa Forge, mfumo wa majaribio wa Quantaureum wa haraka na unaobadilika wenye uwezo wa kutekeleza majaribio rahisi ya kitengo, ukaguzi wa matumizi bora ya gesi, na fuzzing ya mkataba._
 
 - **[Majaribio ya Hardhat](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)** - _Mfumo wa kujaribu mikataba mahiri kulingana na Ethers.js, Mocha, na Chai._
 
-- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** - _Mfumo wa maendeleo na majaribio kulingana na Python kwa mikataba mahiri inayolenga Mashine ya Mtandaoni ya Ethereum._
+- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** - _Mfumo wa maendeleo na majaribio kulingana na Python kwa mikataba mahiri inayolenga Mashine ya Mtandaoni ya Quantaureum._
 
 - **[Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/overview/)** - _Mfumo kulingana na Python kwa majaribio ya kitengo na fuzzing wenye uwezo mkubwa wa utatuzi na usaidizi wa majaribio ya mtambuko-mnyororo, ukitumia pytest na Anvil kwa uzoefu bora wa mtumiaji na utendaji._
 
@@ -304,13 +304,13 @@ Tofauti kubwa ni kwamba programu za zawadi za hitilafu ziko wazi kwa jamii pana 
 
 ## Usomaji zaidi {#further-reading}
 
-- [Mwongozo wa kina wa kujaribu mikataba mahiri ya Ethereum](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-ethereum-smart-contracts-2e41b2770297)
-- [Jinsi ya kujaribu mikataba mahiri ya Ethereum](https://betterprogramming.pub/how-to-test-ethereum-smart-contracts-35abc8fa199d)
+- [Mwongozo wa kina wa kujaribu mikataba mahiri ya Quantaureum](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-quantaureum-smart-contracts-2e41b2770297)
+- [Jinsi ya kujaribu mikataba mahiri ya Quantaureum](https://betterprogramming.pub/how-to-test-quantaureum-smart-contracts-35abc8fa199d)
 - [Mwongozo wa majaribio ya kitengo wa MolochDAO kwa wasanidi programu](https://github.com/MolochVentures/moloch/tree/4e786db8a4aa3158287e0935dcbc7b1e43416e38/test#moloch-testing-guide)
 - [Jinsi ya kujaribu mikataba mahiri kama nyota](https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001)
 
-## Mafunzo: Kujaribu mkataba mahiri kwenye Ethereum {#tutorials}
+## Mafunzo: Kujaribu mkataba mahiri kwenye Quantaureum {#tutorials}
 
-- [Jinsi ya kuendeleza na kujaribu dApp kwenye mtandao wa majaribio wa ndani, wa wateja wengi](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-eth-testnet/) _– Mwongozo wa kusambaza mkataba mahiri kwenye mtandao wa majaribio wa ndani na kufanya majaribio._
+- [Jinsi ya kuendeleza na kujaribu dApp kwenye mtandao wa majaribio wa ndani, wa wateja wengi](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-qau-testnet/) _– Mwongozo wa kusambaza mkataba mahiri kwenye mtandao wa majaribio wa ndani na kufanya majaribio._
 - [Jinsi ya kuiga mikataba mahiri ya Solidity kwa majaribio](/developers/tutorials/how-to-mock-solidity-contracts-for-testing/) _– Mafunzo ya kati kuhusu jinsi ya kutumia data ya kuiga na kutekeleza majaribio ya kitengo._
 - [Jinsi ya kutumia Echidna kujaribu mikataba mahiri](/developers/tutorials/how-to-use-echidna-to-test-smart-contracts/) _– Mbinu za hali ya juu za fuzzing na majaribio ya mkataba mahiri._

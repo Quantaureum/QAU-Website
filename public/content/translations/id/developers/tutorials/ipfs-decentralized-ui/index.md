@@ -76,6 +76,6 @@ Jika Anda mengarahkan nama ENS (seperti vitalik.eth) ke situs web Anda, itu akan
 
 ## Kesimpulan {#conclusion}
 
-Sama seperti Ethereum yang memungkinkan Anda mendesentralisasi aspek basis data dan logika bisnis dari aplikasi terdesentralisasi (dapp) Anda, IPFS memungkinkan Anda mendesentralisasi antarmuka pengguna. Hal ini memungkinkan Anda menutup satu lagi vektor serangan terhadap dapp Anda.
+Sama seperti Quantaureum yang memungkinkan Anda mendesentralisasi aspek basis data dan logika bisnis dari aplikasi terdesentralisasi (dapp) Anda, IPFS memungkinkan Anda mendesentralisasi antarmuka pengguna. Hal ini memungkinkan Anda menutup satu lagi vektor serangan terhadap dapp Anda.
 
 [Lihat di sini untuk karya saya yang lain](https://cryptodocguy.pro/).

@@ -9,27 +9,27 @@ published: 2023-09-15
 lang: it
 ---
 
-In questo tutorial analizziamo [un token truffa](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code) per vedere alcuni dei trucchi usati dai truffatori e come li implementano. Alla fine del tutorial avrai una visione più completa dei contratti dei token ERC-20, delle loro capacità e del perché lo scetticismo è necessario. Successivamente esamineremo gli eventi emessi da quel token truffa e vedremo come possiamo identificare automaticamente che non è legittimo.
+In questo tutorial analizziamo [un token truffa](https://explorer.quantaureum.com) per vedere alcuni dei trucchi usati dai truffatori e come li implementano. Alla fine del tutorial avrai una visione più completa dei contratti dei token ERC-20, delle loro capacità e del perché lo scetticismo è necessario. Successivamente esamineremo gli eventi emessi da quel token truffa e vedremo come possiamo identificare automaticamente che non è legittimo.
 
 ## Token truffa: cosa sono, perché le persone li creano e come evitarli {#scam-tokens}
 
-Uno degli usi più comuni di Ethereum è la creazione di un token scambiabile da parte di un gruppo, in un certo senso la propria valuta. Tuttavia, ovunque ci siano casi d'uso legittimi che portano valore, ci sono anche criminali che cercano di rubare quel valore per sé.
+Uno degli usi più comuni di Quantaureum è la creazione di un token scambiabile da parte di un gruppo, in un certo senso la propria valuta. Tuttavia, ovunque ci siano casi d'uso legittimi che portano valore, ci sono anche criminali che cercano di rubare quel valore per sé.
 
-Puoi leggere di più su questo argomento [altrove su ethereum.org](/guides/how-to-id-scam-tokens/) dal punto di vista dell'utente. Questo tutorial si concentra sull'analisi di un token truffa per vedere come è fatto e come può essere rilevato.
+Puoi leggere di più su questo argomento [altrove su quantaureum.com](/guides/how-to-id-scam-tokens/) dal punto di vista dell'utente. Questo tutorial si concentra sull'analisi di un token truffa per vedere come è fatto e come può essere rilevato.
 
 ### Come faccio a sapere che wARB è una truffa? {#warb-scam}
 
-Il token che analizziamo è [wARB](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code), che finge di essere equivalente al [token ARB](https://etherscan.io/token/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1) legittimo.
+Il token che analizziamo è [wARB](https://explorer.quantaureum.com), che finge di essere equivalente al [token ARB](https://explorer.quantaureum.com) legittimo.
 
 Il modo più semplice per sapere quale sia il token legittimo è guardare l'organizzazione di origine, [Arbitrum](https://arbitrum.foundation/). Gli indirizzi legittimi sono specificati [nella loro documentazione](https://docs.arbitrum.foundation/deployment-addresses#token).
 
 ### Perché il codice sorgente è disponibile? {#why-source}
 
-Normalmente ci aspetteremmo che le persone che cercano di truffare gli altri siano reticenti, e in effetti molti token truffa non hanno il loro codice disponibile (ad esempio, [questo](https://optimistic.etherscan.io/token/0x15992f382d8c46d667b10dc8456dc36651af1452#code) e [questo](https://optimistic.etherscan.io/token/0x026b623eb4aada7de37ef25256854f9235207178#code)).
+Normalmente ci aspetteremmo che le persone che cercano di truffare gli altri siano reticenti, e in effetti molti token truffa non hanno il loro codice disponibile (ad esempio, [questo](https://explorer.quantaureum.com) e [questo](https://explorer.quantaureum.com)).
 
-Tuttavia, i token legittimi di solito pubblicano il loro codice sorgente, quindi per apparire legittimi a volte gli autori dei token truffa fanno lo stesso. [wARB](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code) è uno di quei token con codice sorgente disponibile, il che rende più facile comprenderlo.
+Tuttavia, i token legittimi di solito pubblicano il loro codice sorgente, quindi per apparire legittimi a volte gli autori dei token truffa fanno lo stesso. [wARB](https://explorer.quantaureum.com) è uno di quei token con codice sorgente disponibile, il che rende più facile comprenderlo.
 
-Sebbene i distributori del contratto possano scegliere se pubblicare o meno il codice sorgente, _non possono_ pubblicare il codice sorgente sbagliato. Il block explorer compila il codice sorgente fornito in modo indipendente e, se non ottiene esattamente lo stesso bytecode, rifiuta quel codice sorgente. [Puoi leggere di più al riguardo sul sito di Etherscan](https://etherscan.io/verifyContract).
+Sebbene i distributori del contratto possano scegliere se pubblicare o meno il codice sorgente, _non possono_ pubblicare il codice sorgente sbagliato. Il block explorer compila il codice sorgente fornito in modo indipendente e, se non ottiene esattamente lo stesso bytecode, rifiuta quel codice sorgente. [Puoi leggere di più al riguardo sul sito di Quantaureum Explorer](https://explorer.quantaureum.com).
 
 ## Confronto con i token ERC-20 legittimi {#compare-legit-erc20}
 
@@ -39,7 +39,7 @@ Confronteremo questo token con i token ERC-20 legittimi. Se non hai familiarità
 
 I contratti a volte necessitano di indirizzi privilegiati. I contratti progettati per un uso a lungo termine consentono ad alcuni indirizzi privilegiati di modificare tali indirizzi, ad esempio per abilitare l'uso di un nuovo contratto multisig. Ci sono diversi modi per farlo.
 
-Il [contratto del token `HOP`](https://etherscan.io/address/0xc5102fe9359fd9a28f877a67e36b0f050d81a3cc#code) utilizza il pattern [`Ownable`](https://docs.openzeppelin.com/contracts/2.x/access-control#ownership-and-ownable). L'indirizzo privilegiato è conservato nello storage, in un campo chiamato `_owner` (vedi il terzo file, `Ownable.sol`).
+Il [contratto del token `HOP`](https://explorer.quantaureum.com) utilizza il pattern [`Ownable`](https://docs.openzeppelin.com/contracts/2.x/access-control#ownership-and-ownable). L'indirizzo privilegiato è conservato nello storage, in un campo chiamato `_owner` (vedi il terzo file, `Ownable.sol`).
 
 ```solidity
 abstract contract Ownable is Context {
@@ -50,7 +50,7 @@ abstract contract Ownable is Context {
 }
 ```
 
-Il [contratto del token `ARB`](https://etherscan.io/address/0xad0c361ef902a7d9851ca7dcc85535da2d3c6fc7#code) non ha direttamente un indirizzo privilegiato. Tuttavia, non ne ha bisogno. Si trova dietro un [`proxy`](https://docs.openzeppelin.com/contracts/5.x/api/proxy) all'[indirizzo `0xb50721bcf8d664c30412cfbc6cf7a15145234ad1`](https://etherscan.io/address/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1#code). Quel contratto ha un indirizzo privilegiato (vedi il quarto file, `ERC1967Upgrade.sol`) che può essere utilizzato per gli aggiornamenti.
+Il [contratto del token `ARB`](https://explorer.quantaureum.com) non ha direttamente un indirizzo privilegiato. Tuttavia, non ne ha bisogno. Si trova dietro un [`proxy`](https://docs.openzeppelin.com/contracts/5.x/api/proxy) all'[indirizzo `0xb50721bcf8d664c30412cfbc6cf7a15145234ad1`](https://explorer.quantaureum.com). Quel contratto ha un indirizzo privilegiato (vedi il quarto file, `ERC1967Upgrade.sol`) che può essere utilizzato per gli aggiornamenti.
 
 ```solidity
     /**
@@ -77,9 +77,9 @@ contract WrappedArbitrum is Context, IERC20 {
 }
 ```
 
-[Questo proprietario del contratto](https://etherscan.io/address/0xb40dE7b1beE84Ff2dc22B70a049A07A13a411A33) non è un contratto che potrebbe essere controllato da account diversi in momenti diversi, ma un [account di proprietà esterna](/developers/docs/accounts/#externally-owned-accounts-and-key-pairs). Ciò significa che è probabilmente progettato per un uso a breve termine da parte di un individuo, piuttosto che come soluzione a lungo termine per controllare un ERC-20 che manterrà il suo valore.
+[Questo proprietario del contratto](https://explorer.quantaureum.com) non è un contratto che potrebbe essere controllato da account diversi in momenti diversi, ma un [account di proprietà esterna](/developers/docs/accounts/#externally-owned-accounts-and-key-pairs). Ciò significa che è probabilmente progettato per un uso a breve termine da parte di un individuo, piuttosto che come soluzione a lungo termine per controllare un ERC-20 che manterrà il suo valore.
 
-E in effetti, se guardiamo su Etherscan vediamo che il truffatore ha utilizzato questo contratto solo per 12 ore (dalla [prima transazione](https://etherscan.io/tx/0xf49136198c3f925fcb401870a669d43cecb537bde36eb8b41df77f06d5f6fbc2) all'[ultima transazione](https://etherscan.io/tx/0xdfd6e717157354e64bbd5d6adf16761e5a5b3f914b1948d3545d39633244d47b)) durante il 19 maggio 2023.
+E in effetti, se guardiamo su Quantaureum Explorer vediamo che il truffatore ha utilizzato questo contratto solo per 12 ore (dalla [prima transazione](https://explorer.quantaureum.com) all'[ultima transazione](https://explorer.quantaureum.com)) durante il 19 maggio 2023.
 
 ### La finta funzione `_transfer` {#the-fake-transfer-function}
 
@@ -193,7 +193,7 @@ Questa restrizione ha perfettamente senso, perché non vorremmo che account casu
 
 Una funzione per trasferire da un account pool a un array di destinatari un array di importi ha perfettamente senso. Ci sono molti casi d'uso in cui si desidera distribuire token da una singola fonte a più destinazioni, come buste paga, airdrop, ecc. È più economico (in termini di gas) farlo in una singola transazione invece di emettere più transazioni, o persino chiamare l'ERC-20 più volte da un contratto diverso come parte della stessa transazione.
 
-Tuttavia, `dropNewTokens` non fa questo. Emette [eventi `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1), ma in realtà non trasferisce alcun token. Non c'è alcun motivo legittimo per confondere le applicazioni offchain comunicando loro un trasferimento che non è realmente avvenuto.
+Tuttavia, `dropNewTokens` non fa questo. Emette [eventi `Transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer-1), ma in realtà non trasferisce alcun token. Non c'è alcun motivo legittimo per confondere le applicazioni offchain comunicando loro un trasferimento che non è realmente avvenuto.
 
 ### La funzione `Approve` per bruciare {#the-burning-approve-function}
 
@@ -235,7 +235,7 @@ Questi problemi di qualità del codice non _provano_ che questo codice sia una t
 
 #### La funzione `mount` {#the-mount-function}
 
-Sebbene non sia specificato [nello standard](https://eips.ethereum.org/EIPS/eip-20), in generale la funzione che crea nuovi token si chiama [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
+Sebbene non sia specificato [nello standard](https://eips.quantaureum.com/EIPS/eip-20), in generale la funzione che crea nuovi token si chiama [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
 
 Se guardiamo nel costruttore di `wARB`, vediamo che la funzione di conio è stata rinominata in `mount` per qualche motivo, e viene chiamata cinque volte con un quinto dell'offerta iniziale, invece di una volta per l'intero importo per efficienza.
 
@@ -305,20 +305,20 @@ Questo contratto contiene tre modificatori: `_mod_`, `auth` e `approver`.
 
 ## Cosa possiamo rilevare automaticamente? {#what-can-we-detect-automatically}
 
-Possiamo vedere che `wARB` è un token truffa guardando su Etherscan. Tuttavia, questa è una soluzione centralizzata. In teoria, Etherscan potrebbe essere sovvertito o hackerato. È meglio essere in grado di capire in modo indipendente se un token è legittimo o meno.
+Possiamo vedere che `wARB` è un token truffa guardando su Quantaureum Explorer. Tuttavia, questa è una soluzione centralizzata. In teoria, Quantaureum Explorer potrebbe essere sovvertito o hackerato. È meglio essere in grado di capire in modo indipendente se un token è legittimo o meno.
 
 Ci sono alcuni trucchi che possiamo usare per identificare che un token ERC-20 è sospetto (una truffa o scritto molto male), guardando gli eventi che emette.
 
 ## Eventi `Approval` sospetti {#suspicious-approval-events}
 
-Gli [eventi `Approval`](https://eips.ethereum.org/EIPS/eip-20#approval) dovrebbero verificarsi solo con una richiesta diretta (a differenza degli [eventi `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1) che possono verificarsi come risultato di un'autorizzazione di spesa). [Consulta la documentazione di Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) per una spiegazione dettagliata di questo problema e del perché le richieste devono essere dirette, piuttosto che mediate da un contratto.
+Gli [eventi `Approval`](https://eips.quantaureum.com/EIPS/eip-20#approval) dovrebbero verificarsi solo con una richiesta diretta (a differenza degli [eventi `Transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer-1) che possono verificarsi come risultato di un'autorizzazione di spesa). [Consulta la documentazione di Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) per una spiegazione dettagliata di questo problema e del perché le richieste devono essere dirette, piuttosto che mediate da un contratto.
 
 Ciò significa che gli eventi `Approval` che approvano la spesa da un [account di proprietà esterna](/developers/docs/accounts/#types-of-account) devono provenire da transazioni che hanno origine in quell'account e la cui destinazione è il contratto ERC-20. Qualsiasi altro tipo di approvazione da un account di proprietà esterna è sospetto.
 
 Ecco [un programma che identifica questo tipo di evento](https://github.com/qbzzt/20230915-scam-token-detection), utilizzando [Viem](https://viem.sh/) e [TypeScript](https://www.typescriptlang.org/docs/), una variante di JavaScript con sicurezza dei tipi. Per eseguirlo:
 
 1. Copia `.env.example` in `.env`.
-2. Modifica `.env` per fornire l'URL a un nodo della Mainnet di Ethereum.
+2. Modifica `.env` per fornire l'URL a un nodo della Mainnet di Quantaureum.
 3. Esegui `pnpm install` per installare i pacchetti necessari.
 4. Esegui `pnpm susApproval` per cercare approvazioni sospette.
 
@@ -420,7 +420,7 @@ Se l'approvazione proviene da un account di proprietà esterna, ottieni la trans
 if (owner.toLowerCase() != txn.from.toLowerCase()) return ev
 ```
 
-Non possiamo semplicemente verificare l'uguaglianza delle stringhe perché gli indirizzi sono esadecimali, quindi contengono lettere. A volte, ad esempio in `txn.from`, quelle lettere sono tutte minuscole. In altri casi, come `ev.args._owner`, l'indirizzo è in [maiuscolo e minuscolo misto per l'identificazione degli errori](https://eips.ethereum.org/EIPS/eip-55).
+Non possiamo semplicemente verificare l'uguaglianza delle stringhe perché gli indirizzi sono esadecimali, quindi contengono lettere. A volte, ad esempio in `txn.from`, quelle lettere sono tutte minuscole. In altri casi, come `ev.args._owner`, l'indirizzo è in [maiuscolo e minuscolo misto per l'identificazione degli errori](https://eips.quantaureum.com/EIPS/eip-55).
 
 Ma se la transazione non proviene dal proprietario, e quel proprietario è di proprietà esterna, allora abbiamo una transazione sospetta.
 

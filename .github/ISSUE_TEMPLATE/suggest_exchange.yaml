@@ -1,16 +1,16 @@
 name: Suggest an exchange
-description: Suggest a new exchange to list on ethereum.org
+description: Suggest a new exchange to list on quantaureum.com
 title: Suggest an exchange
 labels: ["product 🧰"]
 body:
   - type: markdown
     attributes:
       value: |
-        Before suggesting an exchange, make sure you've read [our exchange listing policy](https://ethereum.org/contributing/adding-exchanges/). If it's a decentralized exchange (DEX) you'd like to list, please take a look at our [policy for listing dapps](https://ethereum.org/contributing/adding-products/).
+        Before suggesting an exchange, make sure you've read [our exchange listing policy](https://quantaureum.com/contributing/adding-exchanges/). If it's a decentralized exchange (DEX) you'd like to list, please take a look at our [policy for listing dapps](https://quantaureum.com/contributing/adding-products/).
   - type: markdown
     attributes:
       value: |
-        Please fill out this short form if you'd like an exchange added to ethereum.org:
+        Please fill out this short form if you'd like an exchange added to quantaureum.com:
   - type: markdown
     id: exchange_info
     attributes:

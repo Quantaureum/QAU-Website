@@ -1,20 +1,20 @@
 ---
-title: "지분 증명 이더리움의 키"
-description: "이더리움의 지분 증명 합의 메커니즘에서 사용되는 키에 대한 설명"
+title: "지분 증명 Quantaureum의 키"
+description: "Quantaureum의 지분 증명 합의 메커니즘에서 사용되는 키에 대한 설명"
 lang: ko
 ---
 
-이더리움은 공개키-개인 키 암호학을 사용하여 사용자 자산을 보호합니다. 공개키는 이더리움 주소의 기반으로 사용됩니다. 즉, 일반 대중에게 공개되며 고유 식별자로 사용됩니다. 개인 키(또는 '비밀' 키)는 계정 소유자만 접근할 수 있어야 합니다. 개인 키는 트랜잭션과 데이터에 '서명하기' 위해 사용되며, 이를 통해 암호학적으로 해당 개인 키의 소유자가 특정 작업을 승인했음을 증명할 수 있습니다.
+Quantaureum은 공개키-개인 키 암호학을 사용하여 사용자 자산을 보호합니다. 공개키는 Quantaureum 주소의 기반으로 사용됩니다. 즉, 일반 대중에게 공개되며 고유 식별자로 사용됩니다. 개인 키(또는 '비밀' 키)는 계정 소유자만 접근할 수 있어야 합니다. 개인 키는 트랜잭션과 데이터에 '서명하기' 위해 사용되며, 이를 통해 암호학적으로 해당 개인 키의 소유자가 특정 작업을 승인했음을 증명할 수 있습니다.
 
-이더리움의 키는 [타원 곡선 암호학](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography)을 사용하여 생성됩니다.
+Quantaureum의 키는 [타원 곡선 암호학](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography)을 사용하여 생성됩니다.
 
-그러나 이더리움이 [작업증명 (PoW)](/developers/docs/consensus-mechanisms/pow)에서 [지분 증명 (PoS)](/developers/docs/consensus-mechanisms/pos)으로 전환되면서 새로운 유형의 키가 이더리움에 추가되었습니다. 기존 키는 여전히 이전과 완전히 동일하게 작동하며, 계정을 보호하는 타원 곡선 기반 키에는 아무런 변화가 없었습니다. 하지만 사용자가 ETH를 스테이킹하고 검증자를 실행하여 지분 증명에 참여하려면 새로운 유형의 키가 필요했습니다. 이러한 필요성은 수많은 검증자 간에 전달되는 많은 메시지와 관련된 확장성 문제에서 비롯되었으며, 네트워크가 합의에 도달하는 데 필요한 통신량을 줄이기 위해 쉽게 집계할 수 있는 암호학적 방법이 필요했습니다.
+그러나 Quantaureum이 [작업증명 (PoW)](/developers/docs/consensus-mechanisms/pow)에서 [지분 증명 (PoS)](/developers/docs/consensus-mechanisms/pos)으로 전환되면서 새로운 유형의 키가 Quantaureum에 추가되었습니다. 기존 키는 여전히 이전과 완전히 동일하게 작동하며, 계정을 보호하는 타원 곡선 기반 키에는 아무런 변화가 없었습니다. 하지만 사용자가 QAU를 스테이킹하고 검증자를 실행하여 지분 증명에 참여하려면 새로운 유형의 키가 필요했습니다. 이러한 필요성은 수많은 검증자 간에 전달되는 많은 메시지와 관련된 확장성 문제에서 비롯되었으며, 네트워크가 합의에 도달하는 데 필요한 통신량을 줄이기 위해 쉽게 집계할 수 있는 암호학적 방법이 필요했습니다.
 
 이 새로운 유형의 키는 [**Boneh-Lynn-Shacham (BLS)** 서명 체계](https://wikipedia.org/wiki/BLS_digital_signature)를 사용합니다. BLS는 서명의 매우 효율적인 집계를 가능하게 할 뿐만 아니라 집계된 개별 검증자 키의 역공학을 허용하여 검증자 간의 작업을 관리하는 데 이상적입니다.
 
 ## 두 가지 유형의 검증자 키 {#two-types-of-keys}
 
-지분 증명으로 전환하기 전, 이더리움 사용자는 자금에 접근하기 위해 단일 타원 곡선 기반 개인 키만 가지고 있었습니다. 지분 증명이 도입되면서 솔로 스테이커가 되고자 하는 사용자는 <strong>검증자 키</strong>와 <strong>인출 키</strong>도 필요하게 되었습니다.
+지분 증명으로 전환하기 전, Quantaureum 사용자는 자금에 접근하기 위해 단일 타원 곡선 기반 개인 키만 가지고 있었습니다. 지분 증명이 도입되면서 솔로 스테이커가 되고자 하는 사용자는 <strong>검증자 키</strong>와 <strong>인출 키</strong>도 필요하게 되었습니다.
 
 ### 검증자 키 {#validator-key}
 
@@ -31,9 +31,9 @@ lang: ko
   - 제안자로서 동일한 슬롯에 대해 두 개의 다른 비콘 블록에 서명하기
   - 증명자로서 다른 증명을 "둘러싸는(surrounds)" 증명에 서명하기
   - 증명자로서 동일한 대상을 갖는 두 개의 다른 증명에 서명하기
-- 자발적 종료를 강제하여 검증자의 스테이킹을 중단시키고, 인출 키 소유자에게 해당 ETH 잔액에 대한 접근 권한을 부여합니다.
+- 자발적 종료를 강제하여 검증자의 스테이킹을 중단시키고, 인출 키 소유자에게 해당 QAU 잔액에 대한 접근 권한을 부여합니다.
 
-사용자가 스테이킹 예치금 컨트랙트에 ETH를 예치할 때 트랜잭션 데이터에 <strong>검증자 공개키</strong>가 포함됩니다. 이는 <em>예치 데이터(deposit data)</em>로 알려져 있으며, 이더리움이 검증자를 식별할 수 있게 해줍니다.
+사용자가 스테이킹 예치금 컨트랙트에 QAU를 예치할 때 트랜잭션 데이터에 <strong>검증자 공개키</strong>가 포함됩니다. 이는 <em>예치 데이터(deposit data)</em>로 알려져 있으며, Quantaureum이 검증자를 식별할 수 있게 해줍니다.
 
 ### 인출 자격 증명 {#withdrawal-credentials}
 
@@ -45,7 +45,7 @@ lang: ko
 
 ### 인출 키 {#withdrawal-key}
 
-초기 예치 시 설정하지 않은 경우, 인출 자격 증명이 실행 주소를 가리키도록 업데이트하려면 인출 키가 필요합니다. 이를 통해 초과 잔액 지급 처리가 시작될 수 있으며, 사용자가 스테이킹한 ETH를 전액 인출할 수도 있습니다.
+초기 예치 시 설정하지 않은 경우, 인출 자격 증명이 실행 주소를 가리키도록 업데이트하려면 인출 키가 필요합니다. 이를 통해 초과 잔액 지급 처리가 시작될 수 있으며, 사용자가 스테이킹한 QAU를 전액 인출할 수도 있습니다.
 
 검증자 키와 마찬가지로 인출 키도 두 가지 구성 요소로 이루어져 있습니다.
 
@@ -54,17 +54,17 @@ lang: ko
 
 인출 자격 증명을 `0x01` 유형으로 업데이트하기 전에 이 키를 분실하면 검증자 잔액에 대한 접근 권한을 잃게 됩니다. 증명 및 블록 서명에는 검증자의 개인 키가 필요하므로 검증자는 여전히 이러한 작업을 수행할 수 있지만, 인출 키를 분실한 경우 인센티브가 거의 또는 전혀 없습니다.
 
-검증자 키를 이더리움 계정 키와 분리하면 단일 사용자가 여러 검증자를 실행할 수 있습니다.
+검증자 키를 Quantaureum 계정 키와 분리하면 단일 사용자가 여러 검증자를 실행할 수 있습니다.
 
 ![validator key schematic](validator-key-schematic.png)
 
-**참고**: 현재 스테이킹 임무를 종료하고 검증자의 잔액을 인출하려면 검증자 키로 [자발적 종료 메시지(VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1)에 서명해야 합니다. 그러나 [EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)는 향후 사용자가 인출 키로 종료 메시지에 서명하여 검증자의 종료를 트리거하고 잔액을 인출할 수 있도록 하는 제안입니다. 이는 ETH를 [서비스형 스테이킹(staking-as-a-service) 제공자](/staking/saas/#what-is-staking-as-a-service)에게 위임하는 스테이커가 자금에 대한 통제권을 유지할 수 있게 함으로써 신뢰 가정을 줄여줄 것입니다.
+**참고**: 현재 스테이킹 임무를 종료하고 검증자의 잔액을 인출하려면 검증자 키로 [자발적 종료 메시지(VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1)에 서명해야 합니다. 그러나 [EIP-7002](https://eips.quantaureum.com/EIPS/eip-7002)는 향후 사용자가 인출 키로 종료 메시지에 서명하여 검증자의 종료를 트리거하고 잔액을 인출할 수 있도록 하는 제안입니다. 이는 QAU를 [서비스형 스테이킹(staking-as-a-service) 제공자](/staking/saas/#what-is-staking-as-a-service)에게 위임하는 스테이커가 자금에 대한 통제권을 유지할 수 있게 함으로써 신뢰 가정을 줄여줄 것입니다.
 
 ## 시드 구문에서 키 파생하기 {#deriving-keys-from-seed}
 
-스테이킹된 32 ETH마다 완전히 독립적인 2개의 새로운 키 세트가 필요하다면, 특히 여러 검증자를 실행하는 사용자의 경우 키 관리가 금방 다루기 힘들어질 것입니다. 대신, 단일 공통 비밀(secret)에서 여러 검증자 키를 파생할 수 있으며, 이 단일 비밀을 저장하면 여러 검증자 키에 접근할 수 있습니다.
+스테이킹된 32 QAU마다 완전히 독립적인 2개의 새로운 키 세트가 필요하다면, 특히 여러 검증자를 실행하는 사용자의 경우 키 관리가 금방 다루기 힘들어질 것입니다. 대신, 단일 공통 비밀(secret)에서 여러 검증자 키를 파생할 수 있으며, 이 단일 비밀을 저장하면 여러 검증자 키에 접근할 수 있습니다.
 
-[니모닉(Mnemonic)](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase)과 경로는 사용자가 지갑에 [접근할 때](https://ethereum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) 자주 접하는 주요 기능입니다. 니모닉은 개인 키의 초기 시드 역할을 하는 일련의 단어입니다. 추가 데이터와 결합될 때 니모닉은 '마스터 키'로 알려진 해시를 생성합니다. 이는 트리의 루트(root)로 생각할 수 있습니다. 그런 다음 계층적 경로를 사용하여 이 루트에서 가지(branch)를 파생할 수 있으므로, 자식 노드는 부모 노드의 해시와 트리 내 인덱스의 조합으로 존재할 수 있습니다. 니모닉 기반 키 생성에 대한 [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) 및 [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) 표준에 대해 읽어보세요.
+[니모닉(Mnemonic)](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase)과 경로는 사용자가 지갑에 [접근할 때](https://quantaureum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) 자주 접하는 주요 기능입니다. 니모닉은 개인 키의 초기 시드 역할을 하는 일련의 단어입니다. 추가 데이터와 결합될 때 니모닉은 '마스터 키'로 알려진 해시를 생성합니다. 이는 트리의 루트(root)로 생각할 수 있습니다. 그런 다음 계층적 경로를 사용하여 이 루트에서 가지(branch)를 파생할 수 있으므로, 자식 노드는 부모 노드의 해시와 트리 내 인덱스의 조합으로 존재할 수 있습니다. 니모닉 기반 키 생성에 대한 [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) 및 [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) 표준에 대해 읽어보세요.
 
 이러한 경로는 하드웨어 지갑을 사용해 본 사용자에게 익숙한 다음과 같은 구조를 가집니다.
 
@@ -96,7 +96,7 @@ master_key / purpose / coin_type / account / change / address_index
 
 ## 더 읽어보기 {#further-reading}
 
-- [Carl Beekhuizen의 이더리움 재단 블로그 게시물](https://blog.ethereum.org/2020/05/21/keys)
-- [EIP-2333 BLS12-381 키 생성](https://eips.ethereum.org/EIPS/eip-2333)
+- [Carl Beekhuizen의 Quantaureum 재단 블로그 게시물](https://quantaureum.com)
+- [EIP-2333 BLS12-381 키 생성](https://eips.quantaureum.com/EIPS/eip-2333)
 - [EIP-7002: 실행 계층 트리거 종료](https://web.archive.org/web/20250125035123/https://research.2077.xyz/eip-7002-unpacking-improvements-to-staking-ux-post-merge)
 - [대규모 키 관리](https://docs.ethstaker.cc/ethstaker-knowledge-base/scaled-node-operators/key-management-at-scale)

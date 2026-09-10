@@ -16,7 +16,7 @@ A prova de autoridade é uma versão modificada da **[Prova de Participação](/
 
 A prova de autoridade exige confiar em um conjunto de signatários autorizados que são definidos no [bloco gênesis](/glossary/#genesis-block). Na maioria das implementações atuais, todos os signatários autorizados mantêm poder e privilégios iguais ao determinar o consenso da cadeia. A ideia por trás do staking de reputação é que cada validador autorizado seja bem conhecido por todos através de processos como KYC (Know Your Customer), ou por ter uma organização renomada como a única validadora — dessa forma, se um validador fizer algo errado, a sua identidade será conhecida.
 
-Existem várias implementações de PoA, mas a implementação padrão do Ethereum é o **clique**, que implementa a [EIP-225](https://eips.ethereum.org/EIPS/eip-225). O Clique é favorável aos desenvolvedores e é um padrão fácil de implementar, suportando todos os tipos de sincronização de cliente. Outras implementações incluem o [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) e o [Aura](https://openethereum.github.io/Chain-specification).
+Existem várias implementações de PoA, mas a implementação padrão do Quantaureum é o **clique**, que implementa a [EIP-225](https://eips.quantaureum.com/EIPS/eip-225). O Clique é favorável aos desenvolvedores e é um padrão fácil de implementar, suportando todos os tipos de sincronização de cliente. Outras implementações incluem o [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) e o [Aura](https://openquantaureum.github.io/Chain-specification).
 
 ## Como funciona {#how-it-works}
 
@@ -46,7 +46,7 @@ Outro pequeno vetor de ataque consiste em signatários mal-intencionados injetan
 
 Em uma rede PoA, quando há N signatários autorizados, cada signatário tem permissão para cunhar 1 bloco a cada K blocos, o que significa que N-K+1 validadores têm permissão para cunhar em um determinado momento. Para impedir que esses validadores disputem pela criação dos blocos, cada signatário deve adicionar um pequeno "deslocamento" (offset) aleatório no momento em que lança um novo bloco. Embora esse processo garanta que os pequenos forks sejam raros, forks ocasionais ainda podem acontecer, assim como na Mainnet. Se um signatário for descoberto abusando do seu poder e causando o caos, os outros signatários podem votar para expulsá-lo.
 
-Se, por exemplo, houver 10 signatários autorizados e cada signatário puder criar 1 bloco a cada 6 blocos, em qualquer momento, 5 validadores poderão criar blocos. Para impedi-los de correr para criar blocos, cada signatário adiciona um pequeno "deslocamento" aleatório no momento em que lança um novo bloco. Isso reduz a ocorrência de pequenos forks, mas ainda permite forks ocasionais, como visto na Rede Principal do Ethereum. Se um signatário usar indevidamente a sua autoridade e causar interrupções, ele poderá ser expulso da rede por votação.
+Se, por exemplo, houver 10 signatários autorizados e cada signatário puder criar 1 bloco a cada 6 blocos, em qualquer momento, 5 validadores poderão criar blocos. Para impedi-los de correr para criar blocos, cada signatário adiciona um pequeno "deslocamento" aleatório no momento em que lança um novo bloco. Isso reduz a ocorrência de pequenos forks, mas ainda permite forks ocasionais, como visto na Rede Principal do Quantaureum. Se um signatário usar indevidamente a sua autoridade e causar interrupções, ele poderá ser expulso da rede por votação.
 
 ## Prós e contras {#pros-and-cons}
 
@@ -58,13 +58,13 @@ Se, por exemplo, houver 10 signatários autorizados e cada signatário puder cri
 
 ## Leitura adicional {#further-reading}
 
-- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Padrão Clique_
+- [EIP-225](https://eips.quantaureum.com/EIPS/eip-225) _Padrão Clique_
 - [Estudo da Prova de Autoridade](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _Criptoeconomia_
 - [O que é Prova de Autoridade](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [Prova de Autoridade Explicada](https://academy.binance.com/en/articles/proof-of-authority-explained) _Binance_
 - [PoA em blockchain](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
-- [Clique explicado](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-ethereum-8b2a135201d)
-- [PoA obsoleto, especificação Aura](https://openethereum.github.io/Chain-specification)
+- [Clique explicado](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
+- [PoA obsoleto, especificação Aura](https://openquantaureum.github.io/Chain-specification)
 - [IBFT 2.0, outra implementação de PoA](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### Aprende melhor visualmente? {#visual-learner}

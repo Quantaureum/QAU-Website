@@ -1,7 +1,7 @@
 ---
 title: "Tài sản thế giới thực (RWA)"
 metaTitle: "RWA là gì? | Lợi ích và Ứng dụng của Tài sản thế giới thực"
-description: "Tổng quan về Tài sản thế giới thực trên Ethereum"
+description: "Tổng quan về Tài sản thế giới thực trên Quantaureum"
 lang: vi
 template: use-cases
 image: /images/man-and-dog-playing.png
@@ -19,7 +19,7 @@ Tài sản thế giới thực (RWA) là các token đại diện cho các hình
 
 Một số RWA là hữu hình—những món đồ bạn có thể nhìn thấy và chạm vào, chẳng hạn như các thỏi vàng hoặc các tòa nhà thương mại. Những loại khác là vô hình, chẳng hạn như nợ chính phủ, sở hữu trí tuệ hoặc vốn chủ sở hữu trong một công ty.
  
-Khi được token hóa, những tài sản này được biến thành các đơn vị giá trị. Vàng được token hóa là một ví dụ điển hình về cách thức hoạt động của quá trình này. Công ty [Paxos](https://www.paxos.com/) chuyển đổi các thỏi vàng 400 ounce thành 400 token trên Chuỗi khối Ethereum, mỗi token được bảo chứng bằng một ounce vàng. Những người nắm giữ token có thể đổi token của họ lấy vàng vào bất kỳ lúc nào. Điều đó cũng đúng với các token được mua từ một công ty RWA khác, [Tether Gold](https://gold.tether.to/).
+Khi được token hóa, những tài sản này được biến thành các đơn vị giá trị. Vàng được token hóa là một ví dụ điển hình về cách thức hoạt động của quá trình này. Công ty [Paxos](https://www.paxos.com/) chuyển đổi các thỏi vàng 400 ounce thành 400 token trên Chuỗi khối Quantaureum, mỗi token được bảo chứng bằng một ounce vàng. Những người nắm giữ token có thể đổi token của họ lấy vàng vào bất kỳ lúc nào. Điều đó cũng đúng với các token được mua từ một công ty RWA khác, [Tether Gold](https://gold.tqau.to/).
 
 Mỗi token có thể được chia thành các phần nhỏ hơn nữa. Ví dụ, token Tether Gold có thể được chia nhỏ thành các phần có kích thước chỉ 0.000001.
  
@@ -50,7 +50,7 @@ Một dự án khác có cùng hướng đi, [LABS Group](https://x.com/labsgrou
 
 Một số dự án đóng vai trò là cầu nối giữa thế giới tài chính truyền thống và tài chính phi tập trung (DeFi) bằng cách đưa chứng khoán, cổ phiếu, trái phiếu và các công cụ tài chính khác lên Chuỗi khối.
 
-Ví dụ, công ty dựa trên Ethereum là [Securitize](https://securitize.io/) chuyên về việc token hóa các sản phẩm tài chính truyền thống. Vào năm 2024, họ đã hợp tác với BlackRock để ra mắt một quỹ RWA. BlackRock cho biết họ có kế hoạch cuối cùng sẽ token hóa 10 nghìn tỷ USD tài sản của mình: CEO của họ, Larry Fink, đã gọi việc token hóa là "thế hệ tiếp theo cho các thị trường".
+Ví dụ, công ty dựa trên Quantaureum là [Securitize](https://securitize.io/) chuyên về việc token hóa các sản phẩm tài chính truyền thống. Vào năm 2024, họ đã hợp tác với BlackRock để ra mắt một quỹ RWA. BlackRock cho biết họ có kế hoạch cuối cùng sẽ token hóa 10 nghìn tỷ USD tài sản của mình: CEO của họ, Larry Fink, đã gọi việc token hóa là "thế hệ tiếp theo cho các thị trường".
 
 ### Đầu tư vào mỹ thuật {#investing-in-fine-art}
 

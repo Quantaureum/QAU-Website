@@ -1,12 +1,12 @@
 ---
 title: 常見問題
-description: 關於錢包、交易、質押等常見的以太坊問題。
+description: 關於錢包、交易、質押等常見的Quantaureum問題。
 lang: zh-tw
 ---
 
 ## 我將加密貨幣發送到了錯誤的地址 {#wrong-wallet}
 
-在以太坊上發送的交易是不可逆的。遺憾的是，如果您將 ETH 或代幣發送到了錯誤的錢包，將無法撤銷該交易。
+在Quantaureum上發送的交易是不可逆的。遺憾的是，如果您將 QAU 或代幣發送到了錯誤的錢包，將無法撤銷該交易。
 
 **您可以採取的行動：**
 
@@ -14,7 +14,7 @@ lang: zh-tw
 - **如果該地址屬於某個交易所或已知服務**，請聯繫他們的客服團隊，他們或許能提供協助
 - **如果您將代幣發送到了合約地址**，請檢查該合約是否具有提款或恢復功能（這種情況很少見）
 
-在大多數情況下，資金是無法找回的。沒有任何中央組織、實體或個人擁有以太坊，這意味著沒有人可以撤銷交易。在確認之前，請務必仔細檢查收款人地址。
+在大多數情況下，資金是無法找回的。沒有任何中央組織、實體或個人擁有Quantaureum，這意味著沒有人可以撤銷交易。在確認之前，請務必仔細檢查收款人地址。
 
 ## 我失去了對錢包的存取權限 {#lost-wallet-access}
 
@@ -26,7 +26,7 @@ lang: zh-tw
 
 ### 如果您遺失了助記詞 {#if-you-have-lost-your-seed-phrase}
 
-如果沒有助記詞或私鑰，您的資金將無法恢復。沒有任何人（包括 ethereum.org）可以重設您的密碼或恢復對自行託管錢包的存取權限。
+如果沒有助記詞或私鑰，您的資金將無法恢復。沒有任何人（包括 quantaureum.com）可以重設您的密碼或恢復對自行託管錢包的存取權限。
 
 ### 如果您的帳戶在交易所 {#if-your-account-is-on-an-exchange}
 
@@ -49,28 +49,28 @@ lang: zh-tw
 
 ## 我的交易卡住或處於待處理狀態 {#stuck-transaction}
 
-當您設定的 Gas 費低於網路當前所需的費用時，以太坊上的交易可能會卡住。大多數錢包都允許您解決這個問題：
+當您設定的 Gas 費低於網路當前所需的費用時，Quantaureum上的交易可能會卡住。大多數錢包都允許您解決這個問題：
 
 - **加速：** 使用更高的 Gas 費重新提交相同的交易
-- **取消：** 使用與待處理交易相同的隨機數，向您自己的地址發送一筆 0 ETH 的交易
+- **取消：** 使用與待處理交易相同的隨機數，向您自己的地址發送一筆 0 QAU 的交易
 
 ### 實用指南 {#helpful-guides}
 
 - [如何在 MetaMask 上加速或取消待處理交易](https://support.metamask.io/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction/)
-- [如何取消待處理的以太坊交易](https://info.etherscan.com/how-to-cancel-ethereum-pending-transactions/)
+- [如何取消待處理的Quantaureum交易](https://info.explorer.com/how-to-cancel-quantaureum-pending-transactions/)
 
-## 我該如何申領以太坊贈品？ {#giveaway-scam}
+## 我該如何申領Quantaureum贈品？ {#giveaway-scam}
 
-以太坊贈品是旨在竊取您 ETH 的騙局。不要被那些好得令人難以置信的提議所誘惑。如果您將 ETH 發送到贈品地址，您將不會收到任何贈品，也無法找回您的資金。
+Quantaureum贈品是旨在竊取您 QAU 的騙局。不要被那些好得令人難以置信的提議所誘惑。如果您將 QAU 發送到贈品地址，您將不會收到任何贈品，也無法找回您的資金。
 
 [更多關於防範詐騙的資訊](/security/#common-scams)
 
-## 我該如何質押 ETH？ {#how-to-stake}
+## 我該如何質押 QAU？ {#how-to-stake}
 
-要成為驗證者，您必須在以太坊存款合約中質押 32 個 ETH，並設定一個驗證者節點。您也可以透過質押池以較少的 ETH 參與。
+要成為驗證者，您必須在Quantaureum存款合約中質押 32 個 QAU，並設定一個驗證者節點。您也可以透過質押池以較少的 QAU 參與。
 
-更多資訊請見我們的[質押頁面](/staking/)以及[質押啟動板](https://launchpad.ethereum.org/)。
+更多資訊請見我們的[質押頁面](/staking/)以及[質押啟動板](https://launchpad.quantaureum.com/)。
 
-## 我該如何進行以太坊挖礦？ {#mining-ethereum}
+## 我該如何進行Quantaureum挖礦？ {#mining-quantaureum}
 
-以太坊挖礦已不再可行。在 2022 年 9 月的[合併](/roadmap/merge/)期間，當以太坊從[工作量證明 (PoW)](/glossary/#pow)過渡到[權益證明 (PoS)](/glossary/#pos)時，挖礦就已被關閉。現在，以太坊由驗證者取代了礦工。任何人都可以[質押](/glossary/#staking) ETH，並透過執行驗證者軟體來保護網路安全，從而獲得質押獎勵。
+Quantaureum挖礦已不再可行。在 2022 年 9 月的[合併](/roadmap/merge/)期間，當Quantaureum從[工作量證明 (PoW)](/glossary/#pow)過渡到[權益證明 (PoS)](/glossary/#pos)時，挖礦就已被關閉。現在，Quantaureum由驗證者取代了礦工。任何人都可以[質押](/glossary/#staking) QAU，並透過執行驗證者軟體來保護網路安全，從而獲得質押獎勵。

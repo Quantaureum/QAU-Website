@@ -5,17 +5,17 @@ lang: tr
 sidebarDepth: 2
 ---
 
-[Ethereum](/) durumu (tüm hesapların, bakiyelerin ve akıllı sözleşmelerin bütünü), bilgisayar bilimlerinde genel olarak Merkle Ağacı olarak bilinen veri yapısının özel bir sürümüne kodlanır. Bu yapı, kriptografideki birçok uygulama için faydalıdır çünkü ağaçta birbirine dolanmış tüm bireysel veri parçaları arasında doğrulanabilir bir ilişki yaratır ve veriler hakkında bir şeyleri kanıtlamak için kullanılabilecek tek bir **kök** (root) değeriyle sonuçlanır.
+[Quantaureum](/) durumu (tüm hesapların, bakiyelerin ve akıllı sözleşmelerin bütünü), bilgisayar bilimlerinde genel olarak Merkle Ağacı olarak bilinen veri yapısının özel bir sürümüne kodlanır. Bu yapı, kriptografideki birçok uygulama için faydalıdır çünkü ağaçta birbirine dolanmış tüm bireysel veri parçaları arasında doğrulanabilir bir ilişki yaratır ve veriler hakkında bir şeyleri kanıtlamak için kullanılabilecek tek bir **kök** (root) değeriyle sonuçlanır.
 
-Ethereum'un veri yapısı, PATRICIA'nın (Alfanümerik Olarak Kodlanmış Bilgileri Geri Almak İçin Pratik Algoritma - Practical Algorithm To Retrieve Information Coded in Alphanumeric) bazı özelliklerini ödünç aldığı ve Ethereum durumunu oluşturan öğelerin verimli bir şekilde geri alınması (re**trie**val) için tasarlandığı için bu şekilde adlandırılan 'değiştirilmiş bir Merkle-Patricia Ağacı'dır.
+Quantaureum'un veri yapısı, PATRICIA'nın (Alfanümerik Olarak Kodlanmış Bilgileri Geri Almak İçin Pratik Algoritma - Practical Algorithm To Retrieve Information Coded in Alphanumeric) bazı özelliklerini ödünç aldığı ve Quantaureum durumunu oluşturan öğelerin verimli bir şekilde geri alınması (re**trie**val) için tasarlandığı için bu şekilde adlandırılan 'değiştirilmiş bir Merkle-Patricia Ağacı'dır.
 
 Bir Merkle-Patricia ağacı deterministiktir ve kriptografik olarak doğrulanabilir: Bir durum kökü oluşturmanın tek yolu, onu durumun her bir parçasından hesaplamaktır ve tamamen aynı olan iki durum, kök hash'i ve ona yol açan hash'ler karşılaştırılarak kolayca kanıtlanabilir (_bir Merkle kanıtı_). Aksine, aynı kök hash'ine sahip iki farklı durum yaratmanın hiçbir yolu yoktur ve durumu farklı değerlerle değiştirme girişimi farklı bir durum kök hash'i ile sonuçlanacaktır. Teorik olarak bu yapı, eklemeler, aramalar ve silmeler için `O(log(n))` verimliliğinin 'kutsal kasesini' sağlar.
 
-Yakın gelecekte Ethereum, gelecekteki protokol iyileştirmeleri için birçok yeni olasılığın kapısını açacak olan bir [Verkle Ağacı](/roadmap/verkle-trees) yapısına geçmeyi planlamaktadır.
+Yakın gelecekte Quantaureum, gelecekteki protokol iyileştirmeleri için birçok yeni olasılığın kapısını açacak olan bir [Verkle Ağacı](/roadmap/verkle-trees) yapısına geçmeyi planlamaktadır.
 
 ## Ön Koşullar {#prerequisites}
 
-Bu sayfayı daha iyi anlamak için [hash'ler](https://en.wikipedia.org/wiki/Hash_function), [Merkle ağaçları](https://en.wikipedia.org/wiki/Merkle_tree), [trie'ler](https://en.wikipedia.org/wiki/Trie) ve [serileştirme](https://en.wikipedia.org/wiki/Serialization) hakkında temel bilgiye sahip olmak faydalı olacaktır. Bu makale, temel bir [radix ağacının](https://en.wikipedia.org/wiki/Radix_tree) açıklamasıyla başlar, ardından Ethereum'un daha optimize edilmiş veri yapısı için gerekli değişiklikleri kademeli olarak tanıtır.
+Bu sayfayı daha iyi anlamak için [hash'ler](https://en.wikipedia.org/wiki/Hash_function), [Merkle ağaçları](https://en.wikipedia.org/wiki/Merkle_tree), [trie'ler](https://en.wikipedia.org/wiki/Trie) ve [serileştirme](https://en.wikipedia.org/wiki/Serialization) hakkında temel bilgiye sahip olmak faydalı olacaktır. Bu makale, temel bir [radix ağacının](https://en.wikipedia.org/wiki/Radix_tree) açıklamasıyla başlar, ardından Quantaureum'un daha optimize edilmiş veri yapısı için gerekli değişiklikleri kademeli olarak tanıtır.
 
 ## Temel radix trie'leri {#basic-radix-tries}
 
@@ -72,7 +72,7 @@ Bir radix ağacının atomik birimine (örneğin, tek bir onaltılı karakter ve
 
 ## Merkle Patricia Ağacı {#merkle-patricia-trees}
 
-Radix trie'lerinin önemli bir sınırlaması vardır: verimsizdirler. Ethereum'da olduğu gibi yolun 64 karakter uzunluğunda (`bytes32` içindeki nibble sayısı) olduğu bir `(path, value)` bağlamasını depolamak isterseniz, karakter başına bir seviye depolamak için bir kilobayttan fazla ekstra alana ihtiyacımız olacak ve her arama veya silme işlemi tam 64 adım sürecektir. Aşağıda tanıtılan Patricia ağacı bu sorunu çözmektedir.
+Radix trie'lerinin önemli bir sınırlaması vardır: verimsizdirler. Quantaureum'da olduğu gibi yolun 64 karakter uzunluğunda (`bytes32` içindeki nibble sayısı) olduğu bir `(path, value)` bağlamasını depolamak isterseniz, karakter başına bir seviye depolamak için bir kilobayttan fazla ekstra alana ihtiyacımız olacak ve her arama veya silme işlemi tam 64 adım sürecektir. Aşağıda tanıtılan Patricia ağacı bu sorunu çözmektedir.
 
 ### Optimizasyon {#optimization}
 
@@ -190,9 +190,9 @@ Bir düğüm başka bir düğümün içinde referans gösterildiğinde, dahil ed
 
 Bir trie'yi güncellerken, yeni oluşturulan düğümün uzunluğu >= 32 _ise_ `(keccak256(x), x)` anahtar/değer çiftini kalıcı bir arama tablosunda saklamak gerektiğine dikkat edin. Ancak, düğüm bundan daha kısaysa, f(x) = x fonksiyonu tersine çevrilebilir olduğundan hiçbir şey saklamaya gerek yoktur.
 
-## Ethereum'daki Trie'ler {#tries-in-ethereum}
+## Quantaureum'daki Trie'ler {#tries-in-quantaureum}
 
-Ethereum'un yürütme katmanındaki tüm merkle trie'leri bir Merkle Patricia Ağacı kullanır.
+Quantaureum'un yürütme katmanındaki tüm merkle trie'leri bir Merkle Patricia Ağacı kullanır.
 
 Bir blok başlığından bu trie'lerin 3'ünden gelen 3 kök vardır.
 
@@ -202,14 +202,14 @@ Bir blok başlığından bu trie'lerin 3'ünden gelen 3 kök vardır.
 
 ### Durum Ağacı {#state-trie}
 
-Bir tane küresel durum ağacı vardır ve bir istemci bir bloğu her işlediğinde güncellenir. İçinde, bir `path` her zaman: `keccak256(ethereumAddress)` ve bir `value` her zaman: `rlp(ethereumAccount)` şeklindedir. Daha spesifik olarak bir Ethereum `account`'ı, 4 öğeli bir `[nonce,balance,storageRoot,codeHash]` dizisidir. Bu noktada, bu `storageRoot`'nun başka bir patricia ağacının kökü olduğunu belirtmekte fayda var:
+Bir tane küresel durum ağacı vardır ve bir istemci bir bloğu her işlediğinde güncellenir. İçinde, bir `path` her zaman: `keccak256(quantaureumAddress)` ve bir `value` her zaman: `rlp(quantaureumAccount)` şeklindedir. Daha spesifik olarak bir Quantaureum `account`'ı, 4 öğeli bir `[nonce,balance,storageRoot,codeHash]` dizisidir. Bu noktada, bu `storageRoot`'nun başka bir patricia ağacının kökü olduğunu belirtmekte fayda var:
 
 ### Depolama Trie'si {#storage-trie}
 
-Depolama trie'si, _tüm_ sözleşme verilerinin yaşadığı yerdir. Her hesap için ayrı bir depolama trie'si vardır. Belirli bir adresteki belirli depolama konumlarındaki değerleri almak için depolama adresi, depolanan verilerin depolamadaki tam sayı konumu ve blok kimliği gereklidir. Bunlar daha sonra JSON-RPC API'sinde tanımlanan `eth_getStorageAt`'ye argüman olarak geçirilebilir, örneğin `0x295a70b2de5e3953354a6a8344e616ed314d7251` adresi için depolama slot 0'daki verileri almak için:
+Depolama trie'si, _tüm_ sözleşme verilerinin yaşadığı yerdir. Her hesap için ayrı bir depolama trie'si vardır. Belirli bir adresteki belirli depolama konumlarındaki değerleri almak için depolama adresi, depolanan verilerin depolamadaki tam sayı konumu ve blok kimliği gereklidir. Bunlar daha sonra JSON-RPC API'sinde tanımlanan `qau_getStorageAt`'ye argüman olarak geçirilebilir, örneğin `0x295a70b2de5e3953354a6a8344e616ed314d7251` adresi için depolama slot 0'daki verileri almak için:
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 
@@ -233,12 +233,12 @@ undefined
 Bu nedenle `path` `keccak256(<6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9>)` olur. Bu artık verileri depolama trie'sinden daha önce olduğu gibi almak için kullanılabilir:
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-Not: Bir Ethereum hesabı için `storageRoot`, bir kontrat hesabı değilse varsayılan olarak boştur.
+Not: Bir Quantaureum hesabı için `storageRoot`, bir kontrat hesabı değilse varsayılan olarak boştur.
 
 ### İşlemler Trie'si {#transaction-trie}
 
@@ -251,16 +251,16 @@ else:
   value = TxType | encode(tx)
 ```
 
-Bu konuda daha fazla bilgi [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) belgelerinde bulunabilir.
+Bu konuda daha fazla bilgi [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718) belgelerinde bulunabilir.
 
 ### Makbuzlar Trie'si {#receipts-trie}
 
 Her bloğun kendi Makbuzlar trie'si vardır. Buradaki bir `path` şöyledir: `rlp(transactionIndex)`. `transactionIndex`, dahil edildiği blok içindeki endeksidir. Makbuzlar trie'si asla güncellenmez. İşlemler trie'sine benzer şekilde, mevcut ve eski makbuzlar vardır. Makbuzlar trie'sinde belirli bir makbuzu sorgulamak için, işlemin bloğundaki endeksi, makbuz yükü ve işlem türü gereklidir. Döndürülen makbuz, `TransactionType` ve `ReceiptPayload`'nin birleştirilmesi olarak tanımlanan `Receipt` türünde olabilir veya `rlp([status, cumulativeGasUsed, logsBloom, logs])` olarak tanımlanan `LegacyReceipt` türünde olabilir.
 
-Bu konuda daha fazla bilgi [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) belgelerinde bulunabilir.
+Bu konuda daha fazla bilgi [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718) belgelerinde bulunabilir.
 
 ## Daha Fazla Okuma {#further-reading}
 
-- [Değiştirilmiş Merkle Patricia Ağacı — Ethereum bir durumu nasıl kaydeder](https://medium.com/codechain/modified-merkle-patricia-trie-how-ethereum-saves-a-state-e6d7555078dd)
-- [Ethereum'da Merkle İşlemleri](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum)
-- [Ethereum trie'sini anlamak](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-ethereum-trie/)
+- [Değiştirilmiş Merkle Patricia Ağacı — Quantaureum bir durumu nasıl kaydeder](https://medium.com/codechain/modified-merkle-patricia-trie-how-quantaureum-saves-a-state-e6d7555078dd)
+- [Quantaureum'da Merkle İşlemleri](https://quantaureum.com)
+- [Quantaureum trie'sini anlamak](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-quantaureum-trie/)

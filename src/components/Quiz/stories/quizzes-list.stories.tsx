@@ -56,7 +56,7 @@ export const OneCompletedQuiz: StoryObj<typeof meta> = {
       score: 4,
       completed: {
         ...meta.args.userStats.completed,
-        "what-is-ethereum": [true, 5],
+        "what-is-quantaureum": [true, 5],
       },
     },
   },

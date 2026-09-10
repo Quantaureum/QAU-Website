@@ -6,7 +6,7 @@ lang: ta
 
 ஒரு மென்பொருள் பயன்பாடு [எத்திரியம்](/) தொகுதிச்சங்கிலியுடன் தொடர்பு கொள்ள - தொகுதிச்சங்கிலி தரவைப் படிப்பதன் மூலமாகவோ அல்லது பிணையத்திற்குப் பரிவர்த்தனைகளை அனுப்புவதன் மூலமாகவோ - அது ஒரு எத்திரியம் கணுவுடன் இணைக்கப்பட வேண்டும்.
 
-இந்த நோக்கத்திற்காக, ஒவ்வொரு [எத்திரியம் கிளையண்டும்](/developers/docs/nodes-and-clients/#execution-clients) ஒரு [ஜேசன்-ஆர்பிசி விவரக்குறிப்பைச்](https://github.com/ethereum/execution-apis) செயல்படுத்துகிறது, எனவே குறிப்பிட்ட கணு அல்லது கிளையண்ட் செயலாக்கத்தைப் பொருட்படுத்தாமல் பயன்பாடுகள் நம்பியிருக்கக்கூடிய சீரான முறைகளின் தொகுப்பு உள்ளது.
+இந்த நோக்கத்திற்காக, ஒவ்வொரு [எத்திரியம் கிளையண்டும்](/developers/docs/nodes-and-clients/#execution-clients) ஒரு [ஜேசன்-ஆர்பிசி விவரக்குறிப்பைச்](https://github.com/quantaureum/execution-apis) செயல்படுத்துகிறது, எனவே குறிப்பிட்ட கணு அல்லது கிளையண்ட் செயலாக்கத்தைப் பொருட்படுத்தாமல் பயன்பாடுகள் நம்பியிருக்கக்கூடிய சீரான முறைகளின் தொகுப்பு உள்ளது.
 
 [ஜேசன்-ஆர்பிசி](https://www.jsonrpc.org/specification) என்பது ஒரு நிலையற்ற, குறைந்த எடையுள்ள தொலைநிலை செயல்முறை அழைப்பு (RPC) நெறிமுறையாகும். இது பல தரவுக் கட்டமைப்புகளையும் அவற்றின் செயலாக்கத்தைச் சுற்றியுள்ள விதிகளையும் வரையறுக்கிறது. ஒரே செயல்முறைக்குள், சாக்கெட்டுகள் வழியாக, HTTP வழியாக அல்லது பல்வேறு செய்தி அனுப்பும் சூழல்களில் கருத்துகளைப் பயன்படுத்தலாம் என்பதில் இது போக்குவரத்து சார்பற்றது. இது JSON (RFC 4627) ஐ தரவு வடிவமாகப் பயன்படுத்துகிறது.
 
@@ -20,13 +20,13 @@ lang: ta
 
 ## ஒருமித்த கிளையன்ட் APIகள் {#consensus-clients}
 
-இந்தப் பக்கம் முக்கியமாக எத்திரியம் செயலாக்கக் கிளையண்டுகளால் பயன்படுத்தப்படும் ஜேசன்-ஆர்பிசி API-ஐப் பற்றி விவாதிக்கிறது. இருப்பினும், ஒருமித்த கிளையன்ட்களும் ஒரு RPC API-ஐக் கொண்டுள்ளன, இது பயனர்கள் கணுவைப் பற்றிய தகவல்களை வினவவும், பீக்கான் தொகுதிகள், பீக்கான் நிலை மற்றும் பிற ஒருமித்த கருத்து தொடர்பான தகவல்களை நேரடியாக ஒரு கணுவிலிருந்து கோரவும் அனுமதிக்கிறது. இந்த API [பீக்கான் API வலைப்பக்கத்தில்](https://ethereum.github.io/beacon-APIs/#/) ஆவணப்படுத்தப்பட்டுள்ளது.
+இந்தப் பக்கம் முக்கியமாக எத்திரியம் செயலாக்கக் கிளையண்டுகளால் பயன்படுத்தப்படும் ஜேசன்-ஆர்பிசி API-ஐப் பற்றி விவாதிக்கிறது. இருப்பினும், ஒருமித்த கிளையன்ட்களும் ஒரு RPC API-ஐக் கொண்டுள்ளன, இது பயனர்கள் கணுவைப் பற்றிய தகவல்களை வினவவும், பீக்கான் தொகுதிகள், பீக்கான் நிலை மற்றும் பிற ஒருமித்த கருத்து தொடர்பான தகவல்களை நேரடியாக ஒரு கணுவிலிருந்து கோரவும் அனுமதிக்கிறது. இந்த API [பீக்கான் API வலைப்பக்கத்தில்](https://quantaureum.github.io/beacon-APIs/#/) ஆவணப்படுத்தப்பட்டுள்ளது.
 
-ஒரு கணுவிற்குள் கிளையண்டுகளுக்கு இடையேயான தகவல்தொடர்புக்காக ஒரு உள் API-உம் பயன்படுத்தப்படுகிறது - அதாவது, இது ஒருமித்த கிளையன்ட் மற்றும் செயலாக்கக் கிளையண்ட் ஆகியவை தரவைப் பரிமாற்றம் செய்ய உதவுகிறது. இது 'Engine API' என்று அழைக்கப்படுகிறது மற்றும் இதன் விவரக்குறிப்புகள் [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md)-இல் கிடைக்கின்றன.
+ஒரு கணுவிற்குள் கிளையண்டுகளுக்கு இடையேயான தகவல்தொடர்புக்காக ஒரு உள் API-உம் பயன்படுத்தப்படுகிறது - அதாவது, இது ஒருமித்த கிளையன்ட் மற்றும் செயலாக்கக் கிளையண்ட் ஆகியவை தரவைப் பரிமாற்றம் செய்ய உதவுகிறது. இது 'Engine API' என்று அழைக்கப்படுகிறது மற்றும் இதன் விவரக்குறிப்புகள் [GitHub](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md)-இல் கிடைக்கின்றன.
 
 ## செயலாக்கக் கிளையண்ட் விவரக்குறிப்பு {#spec}
 
-[GitHub இல் முழுமையான ஜேசன்-ஆர்பிசி API விவரக்குறிப்பைப் படிக்கவும்](https://github.com/ethereum/execution-apis). இந்த API [செயலாக்க API வலைப்பக்கத்தில்](https://ethereum.github.io/execution-apis/) ஆவணப்படுத்தப்பட்டுள்ளது, மேலும் கிடைக்கக்கூடிய அனைத்து முறைகளையும் முயற்சித்து பார்க்க ஒரு இன்ஸ்பெக்டரையும் (Inspector) இது உள்ளடக்கியுள்ளது.
+[GitHub இல் முழுமையான ஜேசன்-ஆர்பிசி API விவரக்குறிப்பைப் படிக்கவும்](https://github.com/quantaureum/execution-apis). இந்த API [செயலாக்க API வலைப்பக்கத்தில்](https://quantaureum.github.io/execution-apis/) ஆவணப்படுத்தப்பட்டுள்ளது, மேலும் கிடைக்கக்கூடிய அனைத்து முறைகளையும் முயற்சித்து பார்க்க ஒரு இன்ஸ்பெக்டரையும் (Inspector) இது உள்ளடக்கியுள்ளது.
 
 ## மரபுகள் {#conventions}
 
@@ -62,11 +62,11 @@ JSON வழியாக இரண்டு முக்கிய தரவு �
 
 பின்வரும் முறைகள் ஒரு தொகுதி அளவுருவைக் கொண்டுள்ளன:
 
-- [eth_getBalance](#eth-getbalance)
-- [eth_getCode](#eth-getcode)
-- [eth_getTransactionCount](#eth-gettransactioncount)
-- [eth_getStorageAt](#eth-getstorageat)
-- [eth_call](#eth-call)
+- [qau_getBalance](#qau-getbalance)
+- [qau_getCode](#qau-getcode)
+- [qau_getTransactionCount](#qau-gettransactioncount)
+- [qau_getStorageAt](#qau-getstorageat)
+- [qau_call](#qau-call)
 
 எத்திரியத்தின் நிலையை வினவும் கோரிக்கைகள் செய்யப்படும்போது, வழங்கப்பட்ட தொகுதி அளவுரு தொகுதியின் உயரத்தைத் தீர்மானிக்கிறது.
 
@@ -101,40 +101,40 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 > இந்த முறைகள் சங்கிலியின் முனையைக் கண்காணிக்கின்றன. இப்படித்தான் பரிவர்த்தனைகள் பிணையத்தில் பரவுகின்றன, தொகுதிகளில் சேர்க்கப்படுகின்றன, மேலும் புதிய தொகுதிகளைப் பற்றி கிளையண்டுகள் அறிந்துகொள்கின்றன.
 
-- [eth_blockNumber](#eth-blocknumber)
-- [eth_sendRawTransaction](#eth-sendrawtransaction)
+- [qau_blockNumber](#qau-blocknumber)
+- [qau_sendRawTransaction](#qau-sendrawtransaction)
 
 ### நிலை முறைகள் {#state-methods}
 
 > சேமிக்கப்பட்ட அனைத்து தரவுகளின் தற்போதைய நிலையைப் புகாரளிக்கும் முறைகள். "நிலை" என்பது பகிரப்பட்ட ஒரு பெரிய ரேம் (RAM) போன்றது, இதில் கணக்கு நிலுவைகள், ஒப்பந்தத் தரவு மற்றும் எரிவாயு மதிப்பீடுகள் ஆகியவை அடங்கும்.
 
-- [eth_getBalance](#eth-getbalance)
-- [eth_getStorageAt](#eth-getstorageat)
-- [eth_getTransactionCount](#eth-gettransactioncount)
-- [eth_getCode](#eth-getcode)
-- [eth_call](#eth-call)
-- [eth_estimateGas](#eth-estimategas)
+- [qau_getBalance](#qau-getbalance)
+- [qau_getStorageAt](#qau-getstorageat)
+- [qau_getTransactionCount](#qau-gettransactioncount)
+- [qau_getCode](#qau-getcode)
+- [qau_call](#qau-call)
+- [qau_estimateGas](#qau-estimategas)
 
 ### வரலாற்று முறைகள் {#history-methods}
 
 > தொடக்கம் (genesis) வரையிலான ஒவ்வொரு தொகுதியின் வரலாற்றுப் பதிவுகளையும் பெறுகிறது. இது ஒரு பெரிய சேர்க்க-மட்டுமேயான (append-only) கோப்பைப் போன்றது, மேலும் இதில் அனைத்து தொகுதித் தலைப்புகள், தொகுதி உடல்கள், அங்கிள் தொகுதிகள் (uncle blocks) மற்றும் பரிவர்த்தனை ரசீதுகள் ஆகியவை அடங்கும்.
 
-- [eth_getBlockTransactionCountByHash](#eth-getblocktransactioncountbyhash)
-- [eth_getBlockTransactionCountByNumber](#eth-getblocktransactioncountbynumber)
-- [eth_getUncleCountByBlockHash](#eth-getunclecountbyblockhash)
-- [eth_getUncleCountByBlockNumber](#eth-getunclecountbyblocknumber)
-- [eth_getBlockByHash](#eth-getblockbyhash)
-- [eth_getBlockByNumber](#eth-getblockbynumber)
-- [eth_getTransactionByHash](#eth-gettransactionbyhash)
-- [eth_getTransactionByBlockHashAndIndex](#eth-gettransactionbyblockhashandindex)
-- [eth_getTransactionByBlockNumberAndIndex](#eth-gettransactionbyblocknumberandindex)
-- [eth_getTransactionReceipt](#eth-gettransactionreceipt)
-- [eth_getUncleByBlockHashAndIndex](#eth-getunclebyblockhashandindex)
-- [eth_getUncleByBlockNumberAndIndex](#eth-getunclebyblocknumberandindex)
+- [qau_getBlockTransactionCountByHash](#qau-getblocktransactioncountbyhash)
+- [qau_getBlockTransactionCountByNumber](#qau-getblocktransactioncountbynumber)
+- [qau_getUncleCountByBlockHash](#qau-getunclecountbyblockhash)
+- [qau_getUncleCountByBlockNumber](#qau-getunclecountbyblocknumber)
+- [qau_getBlockByHash](#qau-getblockbyhash)
+- [qau_getBlockByNumber](#qau-getblockbynumber)
+- [qau_getTransactionByHash](#qau-gettransactionbyhash)
+- [qau_getTransactionByBlockHashAndIndex](#qau-gettransactionbyblockhashandindex)
+- [qau_getTransactionByBlockNumberAndIndex](#qau-gettransactionbyblocknumberandindex)
+- [qau_getTransactionReceipt](#qau-gettransactionreceipt)
+- [qau_getUncleByBlockHashAndIndex](#qau-getunclebyblockhashandindex)
+- [qau_getUncleByBlockNumberAndIndex](#qau-getunclebyblocknumberandindex)
 
 ## ஜேசன்-ஆர்பிசி API சோதனைக் களம் {#json-rpc-api-playground}
 
-API முறைகளைக் கண்டறியவும் முயற்சிக்கவும் நீங்கள் [சோதனைக் களக் கருவியைப்](https://ethereum-json-rpc.com) பயன்படுத்தலாம். பல்வேறு கணு வழங்குநர்களால் எந்தெந்த முறைகள் மற்றும் பிணையங்கள் ஆதரிக்கப்படுகின்றன என்பதையும் இது உங்களுக்குக் காட்டுகிறது.
+API முறைகளைக் கண்டறியவும் முயற்சிக்கவும் நீங்கள் [சோதனைக் களக் கருவியைப்](https://quantaureum-json-rpc.com) பயன்படுத்தலாம். பல்வேறு கணு வழங்குநர்களால் எந்தெந்த முறைகள் மற்றும் பிணையங்கள் ஆதரிக்கப்படுகின்றன என்பதையும் இது உங்களுக்குக் காட்டுகிறது.
 
 ## ஜேசன்-ஆர்பிசி API முறைகள் {#json-rpc-methods}
 
@@ -273,9 +273,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 }
 ```
 
-### eth_protocolVersion {#eth-protocolversion}
+### qau_protocolVersion {#qau-protocolversion}
 
-தற்போதைய எத்திரியம் நெறிமுறை பதிப்பை வழங்குகிறது. இந்த முறை [Geth-ல் கிடைக்காது](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924) என்பதை நினைவில் கொள்ளவும்.
+தற்போதைய எத்திரியம் நெறிமுறை பதிப்பை வழங்குகிறது. இந்த முறை [Geth-ல் கிடைக்காது](https://github.com/quantaureum/go-quantaureum/pull/22064#issuecomment-788682924) என்பதை நினைவில் கொள்ளவும்.
 
 **அளவுருக்கள்**
 
@@ -289,7 +289,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[],"id":67}'
 // முடிவு
 {
   "id":67,
@@ -298,11 +298,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 }
 ```
 
-### eth_syncing {#eth-syncing}
+### qau_syncing {#qau-syncing}
 
 ஒத்திசைவு நிலை குறித்த தரவுகளைக் கொண்ட ஒரு பொருளை அல்லது `false` ஐ வழங்குகிறது.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_syncing">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_syncing">
   ப்ளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -317,7 +317,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 `Object|Boolean`, ஒத்திசைவு நிலை தரவுகளைக் கொண்ட ஒரு பொருள் அல்லது ஒத்திசைக்கப்படாத போது `FALSE`:
 
 - `startingBlock`: `QUANTITY` - இறக்குமதி தொடங்கிய தொகுதி (ஒத்திசைவு அதன் தலையை அடைந்த பின்னரே மீட்டமைக்கப்படும்)
-- `currentBlock`: `QUANTITY` - தற்போதைய தொகுதி, eth_blockNumber ஐப் போலவே
+- `currentBlock`: `QUANTITY` - தற்போதைய தொகுதி, qau_blockNumber ஐப் போலவே
 - `highestBlock`: `QUANTITY` - மதிப்பிடப்பட்ட மிக உயர்ந்த தொகுதி
 
 இருப்பினும், தனிப்பட்ட கிளையண்டுகள் கூடுதல் தரவையும் வழங்கக்கூடும். எடுத்துக்காட்டாக Geth (கெத்) பின்வருவனவற்றை வழங்குகிறது:
@@ -367,7 +367,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}'
 // முடிவு
 {
   "id":1,
@@ -386,11 +386,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}
 }
 ```
 
-### eth_coinbase {#eth-coinbase}
+### qau_coinbase {#qau-coinbase}
 
 கிளையண்ட் காயின்பேஸ் முகவரியைத் திருப்பித் தருகிறது.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_coinbase">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_coinbase">
   பிளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -408,7 +408,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":64}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":64}'
 // முடிவு
 {
   "id":64,
@@ -417,11 +417,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":6
 }
 ```
 
-### eth_chainId {#eth-chainid}
+### qau_chainId {#qau-chainid}
 
 மறுஇயக்க-பாதுகாக்கப்பட்ட பரிவர்த்தனைகளில் கையொப்பமிடுவதற்குப் பயன்படுத்தப்படும் சங்கிலி ID-ஐ வழங்குகிறது.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_chainId">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_chainId">
   பிளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -437,7 +437,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":6
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67}'
 // முடிவு
 {
   "id":67,
@@ -446,11 +446,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67
 }
 ```
 
-### eth_mining {#eth-mining}
+### qau_mining {#qau-mining}
 
 கிளையன்ட் தீவிரமாக புதிய தொகுதிகளைச் சுரங்கப்பணி செய்து கொண்டிருந்தால் `true` என்பதை வழங்கும். இது பணிச் சான்று (PoW) பிணையங்களுக்கு மட்டுமே `true` என்பதை வழங்கும், மேலும் [ஒருங்கிணைப்பு](/roadmap/merge/) நிகழ்வுக்குப் பிறகு சில கிளையன்ட்களில் இது கிடைக்காமல் போகலாம்.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_mining">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_mining">
   பிளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -466,7 +466,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}'
 //
 {
   "id":71,
@@ -475,11 +475,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}
 }
 ```
 
-### eth_hashrate {#eth-hashrate}
+### qau_hashrate {#qau-hashrate}
 
 கணு சுரங்கப்பணி செய்யும் வினாடிக்கு ஹாஷ்களின் எண்ணிக்கையை வழங்குகிறது. இது பணிச் சான்று (PoW) பிணையங்களுக்கு மட்டுமே `true` என்பதை வழங்க முடியும், மேலும் [ஒருங்கிணைப்பு](/roadmap/merge/) நிகழ்ந்ததிலிருந்து சில கிளையண்ட்களில் கிடைக்காமல் போகலாம்.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_hashrate">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_hashrate">
   பிளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -495,7 +495,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":71}'
 // முடிவு
 {
   "id":71,
@@ -504,11 +504,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":7
 }
 ```
 
-### eth_gasPrice {#eth-gasprice}
+### qau_gasPrice {#qau-gasprice}
 
 Wei-யில் ஒரு எரிவாயுவிற்கான தற்போதைய விலையின் மதிப்பீட்டை வழங்குகிறது. எடுத்துக்காட்டாக, பெசு கிளையன்ட் கடந்த 100 தொகுதிகளை ஆய்வு செய்து, இயல்பாகவே இடைநிலை எரிவாயு அலகு விலையை வழங்குகிறது.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_gasPrice">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_gasPrice">
   பிளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -524,7 +524,7 @@ Wei-யில் ஒரு எரிவாயுவிற்கான தற்�
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":73}'
 // முடிவு
 {
   "id":73,
@@ -533,11 +533,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":7
 }
 ```
 
-### eth_accounts {#eth-accounts}
+### qau_accounts {#qau-accounts}
 
 கிளையண்டிற்குச் சொந்தமான முகவரிகளின் பட்டியலை வழங்குகிறது.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_accounts">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_accounts">
   பிளேகிரவுண்டில் இறுதிப்புள்ளியை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -553,7 +553,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":7
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1}'
 // முடிவு
 {
   "id":1,
@@ -562,11 +562,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1
 }
 ```
 
-### eth_blockNumber {#eth-blocknumber}
+### qau_blockNumber {#qau-blocknumber}
 
 மிகச் சமீபத்திய தொகுதியின் எண்ணை வழங்குகிறது.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_blockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_blockNumber">
   பிளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -582,7 +582,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":83}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id":83}'
 // முடிவு
 {
   "id":83,
@@ -591,11 +591,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id
 }
 ```
 
-### eth_getBalance {#eth-getbalance}
+### qau_getBalance {#qau-getbalance}
 
 குறிப்பிட்ட முகவரியில் உள்ள கணக்கின் இருப்பை வழங்குகிறது.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBalance">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBalance">
   பிளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -616,7 +616,7 @@ params: ["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"]
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
 // முடிவு
 {
   "id":1,
@@ -625,11 +625,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407
 }
 ```
 
-### eth_getStorageAt {#eth-getstorageat}
+### qau_getStorageAt {#qau-getstorageat}
 
 கொடுக்கப்பட்ட முகவரியில் உள்ள ஒரு சேமிப்பக இடத்திலிருந்து மதிப்பை வழங்குகிறது.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getStorageAt">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getStorageAt">
   பிளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -660,7 +660,7 @@ contract Storage {
 pos0 இன் மதிப்பை மீட்டெடுப்பது நேரடியானது:
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 ```
 
@@ -693,15 +693,15 @@ undefined
 இப்போது சேமிப்பகத்தைப் பெற:
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-### eth_getTransactionCount {#eth-gettransactioncount}
+### qau_getTransactionCount {#qau-gettransactioncount}
 
 ஒரு முகவரியிலிருந்து _அனுப்பப்பட்ட_ பரிவர்த்தனைகளின் எண்ணிக்கையைத் திருப்பித் தருகிறது.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionCount">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionCount">
   பிளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -725,7 +725,7 @@ params: [
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
 // முடிவு
 {
   "id":1,
@@ -734,11 +734,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params
 }
 ```
 
-### eth_getBlockTransactionCountByHash {#eth-getblocktransactioncountbyhash}
+### qau_getBlockTransactionCountByHash {#qau-getblocktransactioncountbyhash}
 
 கொடுக்கப்பட்ட தொகுதி ஹாஷுடன் பொருந்தும் தொகுதியிலிருந்து, ஒரு தொகுதியில் உள்ள பரிவர்த்தனைகளின் எண்ணிக்கையைத் திருப்பித் தருகிறது.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
   பிளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -758,7 +758,7 @@ params: ["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"]
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
 // முடிவு
 {
   "id":1,
@@ -767,11 +767,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHa
 }
 ```
 
-### eth_getBlockTransactionCountByNumber {#eth-getblocktransactioncountbynumber}
+### qau_getBlockTransactionCountByNumber {#qau-getblocktransactioncountbynumber}
 
 கொடுக்கப்பட்ட தொகுதி எண்ணுடன் பொருந்தக்கூடிய ஒரு தொகுதியில் உள்ள பரிவர்த்தனைகளின் எண்ணிக்கையை வழங்குகிறது.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
   பிளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -793,7 +793,7 @@ params: [
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
 // முடிவு
 {
   "id":1,
@@ -802,11 +802,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNu
 }
 ```
 
-### eth_getUncleCountByBlockHash {#eth-getunclecountbyblockhash}
+### qau_getUncleCountByBlockHash {#qau-getunclecountbyblockhash}
 
 கொடுக்கப்பட்ட தொகுதி ஹாஷுடன் பொருந்தும் தொகுதியிலிருந்து, ஒரு தொகுதியில் உள்ள அங்கிள்களின் (uncles) எண்ணிக்கையைத் திருப்பித் தருகிறது.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
   பிளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -826,7 +826,7 @@ params: ["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"]
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
 // முடிவு
 {
   "id":1,
@@ -835,11 +835,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","p
 }
 ```
 
-### eth_getUncleCountByBlockNumber {#eth-getunclecountbyblocknumber}
+### qau_getUncleCountByBlockNumber {#qau-getunclecountbyblocknumber}
 
 கொடுக்கப்பட்ட தொகுதி எண்ணுடன் பொருந்தக்கூடிய ஒரு தொகுதியிலிருந்து அங்கிள்களின் எண்ணிக்கையை வழங்குகிறது.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
   பிளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -861,7 +861,7 @@ params: [
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
 // முடிவு
 {
   "id":1,
@@ -870,11 +870,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber",
 }
 ```
 
-### eth_getCode {#eth-getcode}
+### qau_getCode {#qau-getcode}
 
 ஒரு குறிப்பிட்ட முகவரியில் உள்ள குறியீட்டை வழங்குகிறது.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getCode">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getCode">
   பிளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -898,7 +898,7 @@ params: [
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
 // முடிவு
 {
   "id":1,
@@ -907,9 +907,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA
 }
 ```
 
-### eth_sign {#eth-sign}
+### qau_sign {#qau-sign}
 
-`sign` முறையானது `sign(keccak256("\x19Ethereum Signed Message:\n" + len(message) + message)))` ஐப் பயன்படுத்தி எத்திரியத்திற்கென பிரத்யேகமான ஒரு கையொப்பத்தைக் கணக்கிடுகிறது.
+`sign` முறையானது `sign(keccak256("\x19Quantaureum Signed Message:\n" + len(message) + message)))` ஐப் பயன்படுத்தி எத்திரியத்திற்கென பிரத்யேகமான ஒரு கையொப்பத்தைக் கணக்கிடுகிறது.
 
 செய்திக்கு ஒரு முன்னொட்டைச் சேர்ப்பதன் மூலம், கணக்கிடப்பட்ட கையொப்பம் எத்திரியம் சார்ந்த கையொப்பமாக அடையாளம் காணக்கூடியதாகிறது. தீங்கிழைக்கும் பரவலாக்கப்பட்ட செயலி (dapp) தன்னிச்சையான தரவுகளில் (எ.கா., பரிவர்த்தனை) கையொப்பமிட்டு, பாதிக்கப்பட்டவரைப் போல ஆள்மாறாட்டம் செய்ய அந்தக் கையொப்பத்தைப் பயன்படுத்தும் தவறான பயன்பாட்டை இது தடுக்கிறது.
 
@@ -928,7 +928,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
 // முடிவு
 {
   "id":1,
@@ -937,9 +937,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d37
 }
 ```
 
-### eth_signTransaction {#eth-signtransaction}
+### qau_signTransaction {#qau-signtransaction}
 
-[eth_sendRawTransaction](#eth-sendrawtransaction) ஐப் பயன்படுத்தி பின்னர் பிணையத்தில் சமர்ப்பிக்கக்கூடிய ஒரு பரிவர்த்தனையில் கையொப்பமிடுகிறது.
+[qau_sendRawTransaction](#qau-sendrawtransaction) ஐப் பயன்படுத்தி பின்னர் பிணையத்தில் சமர்ப்பிக்கக்கூடிய ஒரு பரிவர்த்தனையில் கையொப்பமிடுகிறது.
 
 **அளவுருக்கள்**
 
@@ -962,7 +962,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d37
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
+curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "qau_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
 // முடிவு
 {
     "id": 1,
@@ -971,7 +971,7 @@ curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","
 }
 ```
 
-### eth_sendTransaction {#eth-sendtransaction}
+### qau_sendTransaction {#qau-sendtransaction}
 
 தரவுப் புலத்தில் குறியீடு இருந்தால், புதிய செய்தி அழைப்புப் பரிவர்த்தனை அல்லது ஒப்பந்த உருவாக்கத்தை உருவாக்குகிறது, மேலும் `from` இல் குறிப்பிடப்பட்டுள்ள கணக்கைப் பயன்படுத்தி அதில் கையொப்பமிடுகிறது.
 
@@ -1005,13 +1005,13 @@ params: [
 
 `DATA`, 32 பைட்டுகள் - பரிவர்த்தனை ஹாஷ், அல்லது பரிவர்த்தனை இன்னும் கிடைக்கவில்லை என்றால் பூஜ்ஜிய ஹாஷ்.
 
-நீங்கள் ஒரு ஒப்பந்தத்தை உருவாக்கியபோது, ஒரு தொகுதியில் பரிவர்த்தனை முன்மொழியப்பட்ட பிறகு, ஒப்பந்த முகவரியைப் பெற [eth_getTransactionReceipt](#eth-gettransactionreceipt) ஐப் பயன்படுத்தவும்.
+நீங்கள் ஒரு ஒப்பந்தத்தை உருவாக்கியபோது, ஒரு தொகுதியில் பரிவர்த்தனை முன்மொழியப்பட்ட பிறகு, ஒப்பந்த முகவரியைப் பெற [qau_getTransactionReceipt](#qau-gettransactionreceipt) ஐப் பயன்படுத்தவும்.
 
 **எடுத்துக்காட்டு**
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendTransaction","params":[{see above}],"id":1}'
 // முடிவு
 {
   "id":1,
@@ -1020,7 +1020,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{
 }
 ```
 
-### eth_sendRawTransaction {#eth-sendrawtransaction}
+### qau_sendRawTransaction {#qau-sendrawtransaction}
 
 கையொப்பமிடப்பட்ட பரிவர்த்தனைகளுக்கான புதிய செய்தி அழைப்புப் பரிவர்த்தனையை அல்லது ஒப்பந்த உருவாக்கத்தை உருவாக்குகிறது.
 
@@ -1038,13 +1038,13 @@ params: [
 
 `DATA`, 32 பைட்டுகள் - பரிவர்த்தனை ஹாஷ், அல்லது பரிவர்த்தனை இன்னும் கிடைக்கவில்லை என்றால் பூஜ்ஜிய ஹாஷ்.
 
-நீங்கள் ஒரு ஒப்பந்தத்தை உருவாக்கியபோது, பரிவர்த்தனை ஒரு தொகுதியில் முன்மொழியப்பட்ட பிறகு, ஒப்பந்த முகவரியைப் பெற [eth_getTransactionReceipt](#eth-gettransactionreceipt) ஐப் பயன்படுத்தவும்.
+நீங்கள் ஒரு ஒப்பந்தத்தை உருவாக்கியபோது, பரிவர்த்தனை ஒரு தொகுதியில் முன்மொழியப்பட்ட பிறகு, ஒப்பந்த முகவரியைப் பெற [qau_getTransactionReceipt](#qau-gettransactionreceipt) ஐப் பயன்படுத்தவும்.
 
 **எடுத்துக்காட்டு**
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params":[{see above}],"id":1}'
 // முடிவு
 {
   "id":1,
@@ -1053,11 +1053,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 }
 ```
 
-### eth_call {#eth-call}
+### qau_call {#qau-call}
 
 தொகுதிச்சங்கிலியில் ஒரு பரிவர்த்தனையை உருவாக்காமல் உடனடியாக ஒரு புதிய செய்தி அழைப்பை இயக்குகிறது. பெரும்பாலும் படிக்க-மட்டுமேயான திறன் ஒப்பந்தச் செயல்பாடுகளை இயக்கப் பயன்படுகிறது, எடுத்துக்காட்டாக ERC-20 ஒப்பந்தத்திற்கான `balanceOf`.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_call">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_call">
   பிளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -1067,7 +1067,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 
 - `from`: `DATA`, 20 பைட்டுகள் - (விருப்பத்திற்குரியது) பரிவர்த்தனை அனுப்பப்படும் முகவரி.
 - `to`: `DATA`, 20 பைட்டுகள் - பரிவர்த்தனை செலுத்தப்படும் முகவரி.
-- `gas`: `QUANTITY` - (விருப்பத்திற்குரியது) பரிவர்த்தனை செயலாக்கத்திற்காக வழங்கப்பட்ட எரிவாயுவின் முழு எண். eth_call பூஜ்ஜிய எரிவாயுவைப் பயன்படுத்துகிறது, ஆனால் சில செயலாக்கங்களுக்கு இந்த அளவுரு தேவைப்படலாம்.
+- `gas`: `QUANTITY` - (விருப்பத்திற்குரியது) பரிவர்த்தனை செயலாக்கத்திற்காக வழங்கப்பட்ட எரிவாயுவின் முழு எண். qau_call பூஜ்ஜிய எரிவாயுவைப் பயன்படுத்துகிறது, ஆனால் சில செயலாக்கங்களுக்கு இந்த அளவுரு தேவைப்படலாம்.
 - `gasPrice`: `QUANTITY` - (விருப்பத்திற்குரியது) செலுத்தப்பட்ட ஒவ்வொரு எரிவாயுவிற்கும் பயன்படுத்தப்படும் gasPrice-இன் முழு எண்
 - `value`: `QUANTITY` - (விருப்பத்திற்குரியது) இந்தப் பரிவர்த்தனையுடன் அனுப்பப்பட்ட மதிப்பின் முழு எண்
 - `input`: `DATA` - (விருப்பத்திற்குரியது) முறை கையொப்பம் மற்றும் குறியாக்கம் செய்யப்பட்ட அளவுருக்களின் ஹாஷ். விவரங்களுக்கு [Solidity ஆவணத்தில் உள்ள எத்திரியம் ஒப்பந்த ABI](https://docs.soliditylang.org/en/latest/abi-spec.html)-ஐப் பார்க்கவும்.
@@ -1082,7 +1082,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}],"id":1}'
 // முடிவு
 {
   "id":1,
@@ -1091,17 +1091,17 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}]
 }
 ```
 
-### eth_estimateGas {#eth-estimategas}
+### qau_estimateGas {#qau-estimategas}
 
 பரிவர்த்தனையை முடிக்க எவ்வளவு எரிவாயு தேவைப்படும் என்பதற்கான மதிப்பீட்டை உருவாக்கி வழங்குகிறது. இந்தப் பரிவர்த்தனை தொகுதிச்சங்கிலியில் சேர்க்கப்படாது. EVM இயக்கவியல் மற்றும் கணுவின் செயல்திறன் உள்ளிட்ட பல்வேறு காரணங்களால், பரிவர்த்தனைக்கு உண்மையில் பயன்படுத்தப்படும் எரிவாயுவின் அளவை விட இந்த மதிப்பீடு கணிசமாக அதிகமாக இருக்கலாம் என்பதை நினைவில் கொள்ளவும்.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_estimateGas">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_estimateGas">
   பிளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
 **அளவுருக்கள்**
 
-அனைத்து பண்புகளும் விருப்பத்திற்குரியவை என்பதைத் தவிர, [eth_call](#eth-call) அளவுருக்களைப் பார்க்கவும். எரிவாயு வரம்பு எதுவும் குறிப்பிடப்படாவிட்டால், நிலுவையில் உள்ள தொகுதியிலிருந்து தொகுதி எரிவாயு வரம்பை Geth மேல் வரம்பாகப் பயன்படுத்துகிறது. இதன் விளைவாக, எரிவாயுவின் அளவு நிலுவையில் உள்ள தொகுதி எரிவாயு வரம்பை விட அதிகமாக இருக்கும்போது, அழைப்பு/பரிவர்த்தனையைச் செயல்படுத்த வழங்கப்படும் மதிப்பீடு போதுமானதாக இருக்காது.
+அனைத்து பண்புகளும் விருப்பத்திற்குரியவை என்பதைத் தவிர, [qau_call](#qau-call) அளவுருக்களைப் பார்க்கவும். எரிவாயு வரம்பு எதுவும் குறிப்பிடப்படாவிட்டால், நிலுவையில் உள்ள தொகுதியிலிருந்து தொகுதி எரிவாயு வரம்பை Geth மேல் வரம்பாகப் பயன்படுத்துகிறது. இதன் விளைவாக, எரிவாயுவின் அளவு நிலுவையில் உள்ள தொகுதி எரிவாயு வரம்பை விட அதிகமாக இருக்கும்போது, அழைப்பு/பரிவர்த்தனையைச் செயல்படுத்த வழங்கப்படும் மதிப்பீடு போதுமானதாக இருக்காது.
 
 **திரும்பும் மதிப்புகள்**
 
@@ -1111,7 +1111,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}]
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see above}],"id":1}'
 // முடிவு
 {
   "id":1,
@@ -1120,11 +1120,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see 
 }
 ```
 
-### eth_getBlockByHash {#eth-getblockbyhash}
+### qau_getBlockByHash {#qau-getblockbyhash}
 
 ஹாஷ் மூலம் ஒரு தொகுதி பற்றிய தகவலை வழங்குகிறது.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByHash">
   பிளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -1168,7 +1168,7 @@ params: [
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
 // முடிவு
 {
   "jsonrpc": "2.0",
@@ -1200,11 +1200,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0
 }
 ```
 
-### eth_getBlockByNumber {#eth-getblockbynumber}
+### qau_getBlockByNumber {#qau-getblockbynumber}
 
 தொகுதி எண்ணின் அடிப்படையில் ஒரு தொகுதியைப் பற்றிய தகவலை வழங்குகிறது.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByNumber">
   பிளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -1221,22 +1221,22 @@ params: [
 ```
 
 **வழங்குபவை**
-[eth_getBlockByHash](#eth-getblockbyhash) என்பதைப் பார்க்கவும்
+[qau_getBlockByHash](#qau-getblockbyhash) என்பதைப் பார்க்கவும்
 
 **எடுத்துக்காட்டு**
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["0x1b4", true],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByNumber","params":["0x1b4", true],"id":1}'
 ```
 
-முடிவுக்கு [eth_getBlockByHash](#eth-getblockbyhash) என்பதைப் பார்க்கவும்
+முடிவுக்கு [qau_getBlockByHash](#qau-getblockbyhash) என்பதைப் பார்க்கவும்
 
-### eth_getTransactionByHash {#eth-gettransactionbyhash}
+### qau_getTransactionByHash {#qau-gettransactionbyhash}
 
 பரிவர்த்தனை ஹாஷ் மூலம் கோரப்பட்ட பரிவர்த்தனை பற்றிய தகவலை வழங்குகிறது.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByHash">
   பிளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -1271,7 +1271,7 @@ params: ["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"]
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
 // முடிவு
 {
   "jsonrpc":"2.0",
@@ -1295,11 +1295,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","param
 }
 ```
 
-### eth_getTransactionByBlockHashAndIndex {#eth-gettransactionbyblockhashandindex}
+### qau_getTransactionByBlockHashAndIndex {#qau-gettransactionbyblockhashandindex}
 
 தொகுதி ஹாஷ் மற்றும் பரிவர்த்தனைக் குறியீட்டு நிலையின் அடிப்படையில் ஒரு பரிவர்த்தனை பற்றிய தகவலை வழங்குகிறது.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
   பிளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -1316,22 +1316,22 @@ params: [
 ```
 
 **திரும்பும் மதிப்புகள்**
-[eth_getTransactionByHash](#eth-gettransactionbyhash) ஐப் பார்க்கவும்
+[qau_getTransactionByHash](#qau-gettransactionbyhash) ஐப் பார்க்கவும்
 
 **எடுத்துக்காட்டு**
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-முடிவுக்கு [eth_getTransactionByHash](#eth-gettransactionbyhash) ஐப் பார்க்கவும்
+முடிவுக்கு [qau_getTransactionByHash](#qau-gettransactionbyhash) ஐப் பார்க்கவும்
 
-### eth_getTransactionByBlockNumberAndIndex {#eth-gettransactionbyblocknumberandindex}
+### qau_getTransactionByBlockNumberAndIndex {#qau-gettransactionbyblocknumberandindex}
 
 தொகுதி எண் மற்றும் பரிவர்த்தனைக் குறியீட்டு நிலையின் அடிப்படையில் ஒரு பரிவர்த்தனை பற்றிய தகவலை வழங்குகிறது.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
   பிளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -1348,18 +1348,18 @@ params: [
 ```
 
 **வழங்குபவை**
-[eth_getTransactionByHash](#eth-gettransactionbyhash) ஐப் பார்க்கவும்
+[qau_getTransactionByHash](#qau-gettransactionbyhash) ஐப் பார்க்கவும்
 
 **எடுத்துக்காட்டு**
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
 ```
 
-முடிவுக்கு [eth_getTransactionByHash](#eth-gettransactionbyhash) ஐப் பார்க்கவும்
+முடிவுக்கு [qau_getTransactionByHash](#qau-gettransactionbyhash) ஐப் பார்க்கவும்
 
-### eth_getTransactionReceipt {#eth-gettransactionreceipt}
+### qau_getTransactionReceipt {#qau-gettransactionreceipt}
 
 பரிவர்த்தனை ஹாஷ் மூலம் ஒரு பரிவர்த்தனையின் ரசீதை வழங்குகிறது.
 
@@ -1399,7 +1399,7 @@ params: ["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"]
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
 // முடிவு
 {
   "jsonrpc": "2.0",
@@ -1427,11 +1427,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","para
 }
 ```
 
-### eth_getUncleByBlockHashAndIndex {#eth-getunclebyblockhashandindex}
+### qau_getUncleByBlockHashAndIndex {#qau-getunclebyblockhashandindex}
 
 ஒரு தொகுதியின் ஹாஷ் மற்றும் அங்கிள் குறியீட்டு நிலையைப் பயன்படுத்தி, அந்தத் தொகுதியின் அங்கிள் பற்றிய தகவலை வழங்குகிறது.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
   பிளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -1448,24 +1448,24 @@ params: [
 ```
 
 **வழங்குபவை**
-[eth_getBlockByHash](#eth-getblockbyhash) ஐப் பார்க்கவும்
+[qau_getBlockByHash](#qau-getblockbyhash) ஐப் பார்க்கவும்
 
 **எடுத்துக்காட்டு**
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-முடிவுக்கு [eth_getBlockByHash](#eth-getblockbyhash) ஐப் பார்க்கவும்
+முடிவுக்கு [qau_getBlockByHash](#qau-getblockbyhash) ஐப் பார்க்கவும்
 
 **குறிப்பு**: ஒரு அங்கிளில் தனிப்பட்ட பரிவர்த்தனைகள் இருக்காது.
 
-### eth_getUncleByBlockNumberAndIndex {#eth-getunclebyblocknumberandindex}
+### qau_getUncleByBlockNumberAndIndex {#qau-getunclebyblocknumberandindex}
 
 எண் மற்றும் அங்கிள் குறியீட்டு நிலையின் அடிப்படையில் ஒரு தொகுதியின் அங்கிள் பற்றிய தகவல்களை வழங்குகிறது.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
   பிளேகிரவுண்டில் எண்ட்பாயிண்ட்டை முயற்சிக்கவும்
 </ButtonLink>
 
@@ -1482,7 +1482,7 @@ params: [
 ```
 
 **வழங்குபவை**
-[eth_getBlockByHash](#eth-getblockbyhash) ஐப் பார்க்கவும்
+[qau_getBlockByHash](#qau-getblockbyhash) ஐப் பார்க்கவும்
 
 **குறிப்பு**: ஒரு அங்கிளில் தனிப்பட்ட பரிவர்த்தனைகள் இருக்காது.
 
@@ -1490,15 +1490,15 @@ params: [
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
 ```
 
-முடிவுக்கு [eth_getBlockByHash](#eth-getblockbyhash) ஐப் பார்க்கவும்
+முடிவுக்கு [qau_getBlockByHash](#qau-getblockbyhash) ஐப் பார்க்கவும்
 
-### eth_newFilter {#eth-newfilter}
+### qau_newFilter {#qau-newfilter}
 
 நிலை மாறும் போது (பதிவுகள்) அறிவிக்க, வடிகட்டி விருப்பங்களின் அடிப்படையில் ஒரு வடிகட்டிப் பொருளை உருவாக்குகிறது.
-நிலை மாறியுள்ளதா என்பதைச் சரிபார்க்க, [eth_getFilterChanges](#eth-getfilterchanges) ஐ அழைக்கவும்.
+நிலை மாறியுள்ளதா என்பதைச் சரிபார்க்க, [qau_getFilterChanges](#qau-getfilterchanges) ஐ அழைக்கவும்.
 
 **தலைப்பு வடிகட்டிகளைக் குறிப்பிடுவது பற்றிய ஒரு குறிப்பு:**
 தலைப்புகள் வரிசையைச் சார்ந்தவை. [A, B] தலைப்புகளைக் கொண்ட பதிவுடன் கூடிய ஒரு பரிவர்த்தனை பின்வரும் தலைப்பு வடிகட்டிகளால் பொருத்தப்படும்:
@@ -1542,7 +1542,7 @@ params: [
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
 // முடிவு
 {
   "id":1,
@@ -1551,10 +1551,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topic
 }
 ```
 
-### eth_newBlockFilter {#eth-newblockfilter}
+### qau_newBlockFilter {#qau-newblockfilter}
 
 புதிய தொகுதி வரும்போது அறிவிப்பதற்காக, கணுவில் ஒரு வடிப்பானை உருவாக்குகிறது.
-நிலை மாறியுள்ளதா என்பதைச் சரிபார்க்க, [eth_getFilterChanges](#eth-getfilterchanges) ஐ அழைக்கவும்.
+நிலை மாறியுள்ளதா என்பதைச் சரிபார்க்க, [qau_getFilterChanges](#qau-getfilterchanges) ஐ அழைக்கவும்.
 
 **அளவுருக்கள்**
 ஏதுமில்லை
@@ -1566,7 +1566,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topic
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newBlockFilter","params":[],"id":73}'
 // முடிவு
 {
   "id":1,
@@ -1575,10 +1575,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],
 }
 ```
 
-### eth_newPendingTransactionFilter {#eth-newpendingtransactionfilter}
+### qau_newPendingTransactionFilter {#qau-newpendingtransactionfilter}
 
 புதிய நிலுவையில் உள்ள பரிவர்த்தனைகள் வரும்போது அறிவிக்க, கணுவில் ஒரு வடிப்பானை உருவாக்குகிறது.
-நிலை மாறியுள்ளதா என்பதைச் சரிபார்க்க, [eth_getFilterChanges](#eth-getfilterchanges) ஐ அழைக்கவும்.
+நிலை மாறியுள்ளதா என்பதைச் சரிபார்க்க, [qau_getFilterChanges](#qau-getfilterchanges) ஐ அழைக்கவும்.
 
 **அளவுருக்கள்**
 ஏதுமில்லை
@@ -1590,7 +1590,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newPendingTransactionFilter","params":[],"id":73}'
 // முடிவு
 {
   "id":1,
@@ -1599,10 +1599,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter"
 }
 ```
 
-### eth_uninstallFilter {#eth-uninstallfilter}
+### qau_uninstallFilter {#qau-uninstallfilter}
 
 கொடுக்கப்பட்ட ஐடியைக் கொண்ட வடிகட்டியை நிறுவல் நீக்குகிறது. கண்காணிப்பு இனி தேவைப்படாதபோது இது எப்போதும் அழைக்கப்பட வேண்டும்.
-மேலும், ஒரு குறிப்பிட்ட காலத்திற்கு [eth_getFilterChanges](#eth-getfilterchanges) மூலம் கோரப்படாதபோது வடிகட்டிகள் நேரமுடிவடையும்.
+மேலும், ஒரு குறிப்பிட்ட காலத்திற்கு [qau_getFilterChanges](#qau-getfilterchanges) மூலம் கோரப்படாதபோது வடிகட்டிகள் நேரமுடிவடையும்.
 
 **அளவுருக்கள்**
 
@@ -1621,7 +1621,7 @@ params: [
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["0xb"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_uninstallFilter","params":["0xb"],"id":73}'
 // முடிவு
 {
   "id":1,
@@ -1630,7 +1630,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["
 }
 ```
 
-### eth_getFilterChanges {#eth-getfilterchanges}
+### qau_getFilterChanges {#qau-getfilterchanges}
 
 ஒரு வடிப்பானுக்கான வாக்கெடுப்பு முறை, இது கடந்த வாக்கெடுப்பிலிருந்து நிகழ்ந்த பதிவுகளின் வரிசையை வழங்கும்.
 
@@ -1647,9 +1647,9 @@ params: [
 **திரும்பும் மதிப்புகள்**
 `Array` - பதிவுப் பொருள்களின் வரிசை, அல்லது கடந்த வாக்கெடுப்பிலிருந்து எதுவும் மாறவில்லை என்றால் வெற்று வரிசை.
 
-- `eth_newBlockFilter` மூலம் உருவாக்கப்பட்ட வடிப்பான்களுக்கு, திரும்பும் மதிப்புகள் தொகுதி ஹாஷ்களாகும் (`DATA`, 32 பைட்டுகள்), எ.கா., `["0x3454645634534..."]`.
-- `eth_newPendingTransactionFilter ` மூலம் உருவாக்கப்பட்ட வடிப்பான்களுக்கு, திரும்பும் மதிப்புகள் பரிவர்த்தனை ஹாஷ்களாகும் (`DATA`, 32 பைட்டுகள்), எ.கா., `["0x6345343454645..."]`.
-- `eth_newFilter` மூலம் உருவாக்கப்பட்ட வடிப்பான்களுக்கு, பதிவுகள் பின்வரும் அளவுருக்களைக் கொண்ட பொருள்களாகும்:
+- `qau_newBlockFilter` மூலம் உருவாக்கப்பட்ட வடிப்பான்களுக்கு, திரும்பும் மதிப்புகள் தொகுதி ஹாஷ்களாகும் (`DATA`, 32 பைட்டுகள்), எ.கா., `["0x3454645634534..."]`.
+- `qau_newPendingTransactionFilter ` மூலம் உருவாக்கப்பட்ட வடிப்பான்களுக்கு, திரும்பும் மதிப்புகள் பரிவர்த்தனை ஹாஷ்களாகும் (`DATA`, 32 பைட்டுகள்), எ.கா., `["0x6345343454645..."]`.
+- `qau_newFilter` மூலம் உருவாக்கப்பட்ட வடிப்பான்களுக்கு, பதிவுகள் பின்வரும் அளவுருக்களைக் கொண்ட பொருள்களாகும்:
   - `removed`: `TAG` - சங்கிலி மறுசீரமைப்பு காரணமாக பதிவு அகற்றப்பட்டால் `true` ஆக இருக்கும். இது சரியான பதிவாக இருந்தால் `false` ஆக இருக்கும்.
   - `logIndex`: `QUANTITY` - தொகுதியில் உள்ள பதிவு குறியீட்டு நிலையின் முழு எண். இது நிலுவையில் உள்ள பதிவாக இருக்கும்போது `null` ஆக இருக்கும்.
   - `transactionIndex`: `QUANTITY` - பதிவு உருவாக்கப்பட்ட பரிவர்த்தனைகளின் குறியீட்டு நிலையின் முழு எண். இது நிலுவையில் உள்ள பதிவாக இருக்கும்போது `null` ஆக இருக்கும்.
@@ -1664,7 +1664,7 @@ params: [
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":["0x16"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterChanges","params":["0x16"],"id":73}'
 // முடிவு
 {
   "id":1,
@@ -1684,7 +1684,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":[
 }
 ```
 
-### eth_getFilterLogs {#eth-getfilterlogs}
+### qau_getFilterLogs {#qau-getfilterlogs}
 
 கொடுக்கப்பட்ட ஐடியைக் கொண்ட வடிகட்டியுடன் பொருந்தும் அனைத்துப் பதிவுகளின் வரிசையைத் திருப்பித் தருகிறது.
 
@@ -1699,18 +1699,18 @@ params: [
 ```
 
 **திருப்பித் தருபவை**
-[eth_getFilterChanges](#eth-getfilterchanges) ஐப் பார்க்கவும்
+[qau_getFilterChanges](#qau-getfilterchanges) ஐப் பார்க்கவும்
 
 **எடுத்துக்காட்டு**
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterLogs","params":["0x16"],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterLogs","params":["0x16"],"id":74}'
 ```
 
-முடிவுக்கு [eth_getFilterChanges](#eth-getfilterchanges) ஐப் பார்க்கவும்
+முடிவுக்கு [qau_getFilterChanges](#qau-getfilterchanges) ஐப் பார்க்கவும்
 
-### eth_getLogs {#eth-getlogs}
+### qau_getLogs {#qau-getlogs}
 
 கொடுக்கப்பட்ட வடிகட்டி பொருளுடன் பொருந்தக்கூடிய அனைத்து பதிவுகளின் வரிசையை வழங்குகிறது.
 
@@ -1735,22 +1735,22 @@ params: [
 ```
 
 **திரும்பும் மதிப்புகள்**
-[eth_getFilterChanges](#eth-getfilterchanges) ஐப் பார்க்கவும்
+[qau_getFilterChanges](#qau-getfilterchanges) ஐப் பார்க்கவும்
 
 **எடுத்துக்காட்டு**
 
 ```js
 // கோரிக்கை
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
 ```
 
-முடிவுக்கு [eth_getFilterChanges](#eth-getfilterchanges) ஐப் பார்க்கவும்
+முடிவுக்கு [qau_getFilterChanges](#qau-getfilterchanges) ஐப் பார்க்கவும்
 
 ## பயன்பாட்டு உதாரணம் {#usage-example}
 
 ### ஜேசன்-ஆர்பிசி-ஐப் பயன்படுத்தி ஒரு ஒப்பந்தத்தை நிலைநிறுத்துதல் {#deploying-contract}
 
-இந்தப் பகுதி RPC இடைமுகத்தை மட்டுமே பயன்படுத்தி ஒரு ஒப்பந்தத்தை எவ்வாறு நிலைநிறுத்துவது என்பதற்கான விளக்கத்தை உள்ளடக்கியுள்ளது. இந்தச் சிக்கலை மறைத்து ஒப்பந்தங்களை நிலைநிறுத்துவதற்கு மாற்று வழிகள் உள்ளன—உதாரணமாக, RPC இடைமுகத்தின் மேல் உருவாக்கப்பட்ட [web3.js](https://web3js.readthedocs.io/) மற்றும் [web3.py](https://github.com/ethereum/web3.py) போன்ற நிரலகங்களைப் பயன்படுத்துதல். இந்தச் சுருக்கங்கள் பொதுவாகப் புரிந்துகொள்ள எளிதானவை மற்றும் குறைவான பிழைகளை ஏற்படுத்துபவை, ஆனால் உள்ளே தொழில்நுட்ப ரீதியாக என்ன நடக்கிறது என்பதைப் புரிந்துகொள்வது இன்னும் உதவியாக இருக்கும்.
+இந்தப் பகுதி RPC இடைமுகத்தை மட்டுமே பயன்படுத்தி ஒரு ஒப்பந்தத்தை எவ்வாறு நிலைநிறுத்துவது என்பதற்கான விளக்கத்தை உள்ளடக்கியுள்ளது. இந்தச் சிக்கலை மறைத்து ஒப்பந்தங்களை நிலைநிறுத்துவதற்கு மாற்று வழிகள் உள்ளன—உதாரணமாக, RPC இடைமுகத்தின் மேல் உருவாக்கப்பட்ட [web3.js](https://web3js.readthedocs.io/) மற்றும் [web3.py](https://github.com/quantaureum/web3.py) போன்ற நிரலகங்களைப் பயன்படுத்துதல். இந்தச் சுருக்கங்கள் பொதுவாகப் புரிந்துகொள்ள எளிதானவை மற்றும் குறைவான பிழைகளை ஏற்படுத்துபவை, ஆனால் உள்ளே தொழில்நுட்ப ரீதியாக என்ன நடக்கிறது என்பதைப் புரிந்துகொள்வது இன்னும் உதவியாக இருக்கும்.
 
 பின்வருவது `Multiply7` எனப்படும் ஒரு நேரடியான திறன் ஒப்பந்தமாகும், இது ஜேசன்-ஆர்பிசி இடைமுகத்தைப் பயன்படுத்தி ஒரு எத்திரியம் கணுவில் நிலைநிறுத்தப்படும். வாசகர் ஏற்கனவே ஒரு கெத் (Geth) கணுவை இயக்குகிறார் என்று இந்தப் பயிற்சி கருதுகிறது. கணுக்கள் மற்றும் கிளையன்ட்கள் பற்றிய கூடுதல் தகவல்கள் [இங்கே](/developers/docs/nodes-and-clients/run-a-node) கிடைக்கின்றன. கெத் அல்லாத கிளையன்ட்களுக்கு HTTP ஜேசன்-ஆர்பிசி-ஐ எவ்வாறு தொடங்குவது என்பதைப் பார்க்க, தனிப்பட்ட [கிளையன்ட்](/developers/docs/nodes-and-clients/) ஆவணங்களைப் பார்க்கவும். பெரும்பாலான கிளையன்ட்கள் இயல்பாகவே `localhost:8545` இல் சேவை செய்கின்றன.
 
@@ -1775,21 +1775,21 @@ geth --http --dev console 2>>geth.log
 [curl](https://curl.se) ஐப் பயன்படுத்தி காயின்பேஸ் முகவரியை (கணக்குகளின் வரிசையிலிருந்து முதல் முகவரியைப் பெறுவதன் மூலம்) மற்றும் இருப்பைப் பெறுவதன் மூலம் இடைமுகம் இயங்குகிறதா என்பதை நாம் சரிபார்க்கலாம். இந்த எடுத்துக்காட்டுகளில் உள்ள தரவு உங்கள் உள்ளூர் கணுவில் மாறுபடும் என்பதை நினைவில் கொள்ளவும். இந்தக் கட்டளைகளை நீங்கள் முயற்சிக்க விரும்பினால், இரண்டாவது curl கோரிக்கையில் உள்ள கோரிக்கை அளவுருக்களை (request params) முதலாவதிலிருந்து பெறப்பட்ட முடிவைக் கொண்டு மாற்றவும்.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
 {"id":1,"jsonrpc":"2.0","result":["0x9b1d35635cc34752ca54713bb99d38614f63c955"]}
 
-curl --data '{"jsonrpc":"2.0","method":"eth_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
 {"id":2,"jsonrpc":"2.0","result":"0x1639e49bba16280000"}
 ```
 
 எண்கள் ஹெக்ஸ் (hex) குறியாக்கம் செய்யப்பட்டிருப்பதால், இருப்பு Wei-இல் ஒரு ஹெக்ஸ் சரமாக (hex string) வழங்கப்படுகிறது. நாம் இருப்பை ஈதரில் ஒரு எண்ணாகப் பெற விரும்பினால், கெத் கன்சோலில் இருந்து web3 ஐப் பயன்படுத்தலாம்.
 
 ```javascript
-web3.fromWei("0x1639e49bba16280000", "ether")
+web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-இப்போது நமது தனிப்பட்ட மேம்பாட்டுச் சங்கிலியில் சிறிது ஈதர் இருப்பதால், நாம் ஒப்பந்தத்தை நிலைநிறுத்தலாம். EVM-க்கு அனுப்பக்கூடிய பைட் குறியீடாக Multiply7 ஒப்பந்தத்தைத் தொகுப்பதே முதல் படியாகும். Solidity தொகுப்பானான (compiler) solc-ஐ நிறுவ, [Solidity ஆவணங்களைப்](https://docs.soliditylang.org/en/latest/installing-solidity.html) பின்பற்றவும். ([எங்கள் எடுத்துக்காட்டிற்குப் பயன்படுத்தப்பட்ட தொகுப்பானின் பதிப்போடு](https://github.com/ethereum/solidity/releases/tag/v0.4.20) பொருந்துவதற்கு, நீங்கள் பழைய `solc` வெளியீட்டைப் பயன்படுத்த விரும்பலாம்.)
+இப்போது நமது தனிப்பட்ட மேம்பாட்டுச் சங்கிலியில் சிறிது ஈதர் இருப்பதால், நாம் ஒப்பந்தத்தை நிலைநிறுத்தலாம். EVM-க்கு அனுப்பக்கூடிய பைட் குறியீடாக Multiply7 ஒப்பந்தத்தைத் தொகுப்பதே முதல் படியாகும். Solidity தொகுப்பானான (compiler) solc-ஐ நிறுவ, [Solidity ஆவணங்களைப்](https://docs.soliditylang.org/en/latest/installing-solidity.html) பின்பற்றவும். ([எங்கள் எடுத்துக்காட்டிற்குப் பயன்படுத்தப்பட்ட தொகுப்பானின் பதிப்போடு](https://github.com/quantaureum/solidity/releases/tag/v0.4.20) பொருந்துவதற்கு, நீங்கள் பழைய `solc` வெளியீட்டைப் பயன்படுத்த விரும்பலாம்.)
 
 EVM-க்கு அனுப்பக்கூடிய பைட் குறியீடாக Multiply7 ஒப்பந்தத்தைத் தொகுப்பதே அடுத்த படியாகும்.
 
@@ -1801,24 +1801,24 @@ Binary:
 6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029
 ```
 
-இப்போது நம்மிடம் தொகுக்கப்பட்ட குறியீடு இருப்பதால், அதை நிலைநிறுத்துவதற்கு எவ்வளவு எரிவாயு செலவாகும் என்பதை நாம் தீர்மானிக்க வேண்டும். RPC இடைமுகத்தில் `eth_estimateGas` என்ற முறை உள்ளது, அது நமக்கு ஒரு மதிப்பீட்டை வழங்கும்.
+இப்போது நம்மிடம் தொகுக்கப்பட்ட குறியீடு இருப்பதால், அதை நிலைநிறுத்துவதற்கு எவ்வளவு எரிவாயு செலவாகும் என்பதை நாம் தீர்மானிக்க வேண்டும். RPC இடைமுகத்தில் `qau_estimateGas` என்ற முறை உள்ளது, அது நமக்கு ஒரு மதிப்பீட்டை வழங்கும்.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":5,"result":"0x1c31e"}
 ```
 
 இறுதியாக ஒப்பந்தத்தை நிலைநிறுத்தவும்.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
 {"id":6,"jsonrpc":"2.0","result":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"}
 ```
 
-பரிவர்த்தனை கணுவால் ஏற்றுக்கொள்ளப்பட்டு, ஒரு பரிவர்த்தனை ஹாஷ் வழங்கப்படுகிறது. இந்தப் பரிவர்த்தனையைக் கண்காணிக்க இந்த ஹாஷைப் பயன்படுத்தலாம். நமது ஒப்பந்தம் எங்கு நிலைநிறுத்தப்பட்டுள்ளது என்பதற்கான முகவரியைத் தீர்மானிப்பதே அடுத்த படியாகும். செயல்படுத்தப்பட்ட ஒவ்வொரு பரிவர்த்தனையும் ஒரு ரசீதை உருவாக்கும். இந்த ரசீதில் பரிவர்த்தனை எந்தத் தொகுதியில் சேர்க்கப்பட்டுள்ளது மற்றும் EVM-ஆல் எவ்வளவு எரிவாயு பயன்படுத்தப்பட்டது போன்ற பரிவர்த்தனை பற்றிய பல்வேறு தகவல்கள் உள்ளன. ஒரு பரிவர்த்தனை ஒரு ஒப்பந்தத்தை உருவாக்கினால், அதில் ஒப்பந்த முகவரியும் இருக்கும். `eth_getTransactionReceipt` RPC முறையைப் பயன்படுத்தி நாம் ரசீதைப் பெறலாம்.
+பரிவர்த்தனை கணுவால் ஏற்றுக்கொள்ளப்பட்டு, ஒரு பரிவர்த்தனை ஹாஷ் வழங்கப்படுகிறது. இந்தப் பரிவர்த்தனையைக் கண்காணிக்க இந்த ஹாஷைப் பயன்படுத்தலாம். நமது ஒப்பந்தம் எங்கு நிலைநிறுத்தப்பட்டுள்ளது என்பதற்கான முகவரியைத் தீர்மானிப்பதே அடுத்த படியாகும். செயல்படுத்தப்பட்ட ஒவ்வொரு பரிவர்த்தனையும் ஒரு ரசீதை உருவாக்கும். இந்த ரசீதில் பரிவர்த்தனை எந்தத் தொகுதியில் சேர்க்கப்பட்டுள்ளது மற்றும் EVM-ஆல் எவ்வளவு எரிவாயு பயன்படுத்தப்பட்டது போன்ற பரிவர்த்தனை பற்றிய பல்வேறு தகவல்கள் உள்ளன. ஒரு பரிவர்த்தனை ஒரு ஒப்பந்தத்தை உருவாக்கினால், அதில் ஒப்பந்த முகவரியும் இருக்கும். `qau_getTransactionReceipt` RPC முறையைப் பயன்படுத்தி நாம் ரசீதைப் பெறலாம்.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":7,"result":{"blockHash":"0x77b1a4f6872b9066312de3744f60020cbd8102af68b1f6512a05b7619d527a4f","blockNumber":"0x1","contractAddress":"0x4d03d617d700cf81935d7f797f4e2ae719648262","cumulativeGasUsed":"0x1c31e","from":"0x9b1d35635cc34752ca54713bb99d38614f63c955","gasUsed":"0x1c31e","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","status":"0x1","to":null,"transactionHash":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf","transactionIndex":"0x0"}}
 ```
 
@@ -1826,9 +1826,9 @@ curl --data '{"jsonrpc":"2.0","method": "eth_getTransactionReceipt", "params": [
 
 #### திறன் ஒப்பந்தங்களுடன் தொடர்புகொள்ளுதல் {#interacting-with-smart-contract}
 
-இந்த எடுத்துக்காட்டில், ஒப்பந்தத்தின் `multiply` முறைக்கு `eth_sendTransaction` ஐப் பயன்படுத்தி ஒரு பரிவர்த்தனையை அனுப்புவோம்.
+இந்த எடுத்துக்காட்டில், ஒப்பந்தத்தின் `multiply` முறைக்கு `qau_sendTransaction` ஐப் பயன்படுத்தி ஒரு பரிவர்த்தனையை அனுப்புவோம்.
 
-`eth_sendTransaction` க்கு பல வாதங்கள் (arguments) தேவைப்படுகின்றன, குறிப்பாக `from`, `to` மற்றும் `data`. `From` என்பது நமது கணக்கின் பொது முகவரியாகும், மேலும் `to` என்பது ஒப்பந்த முகவரியாகும். `data` வாதத்தில் எந்த முறையை அழைக்க வேண்டும் மற்றும் எந்த வாதங்களுடன் அழைக்க வேண்டும் என்பதை வரையறுக்கும் பேலோடு (payload) உள்ளது. இங்குதான் [ABI (பயன்பாட்டு பைனரி இடைமுகம்)](https://docs.soliditylang.org/en/latest/abi-spec.html) செயல்பாட்டுக்கு வருகிறது. ABI என்பது EVM-க்கான தரவை எவ்வாறு வரையறுப்பது மற்றும் குறியாக்குவது என்பதை வரையறுக்கும் ஒரு JSON கோப்பாகும்.
+`qau_sendTransaction` க்கு பல வாதங்கள் (arguments) தேவைப்படுகின்றன, குறிப்பாக `from`, `to` மற்றும் `data`. `From` என்பது நமது கணக்கின் பொது முகவரியாகும், மேலும் `to` என்பது ஒப்பந்த முகவரியாகும். `data` வாதத்தில் எந்த முறையை அழைக்க வேண்டும் மற்றும் எந்த வாதங்களுடன் அழைக்க வேண்டும் என்பதை வரையறுக்கும் பேலோடு (payload) உள்ளது. இங்குதான் [ABI (பயன்பாட்டு பைனரி இடைமுகம்)](https://docs.soliditylang.org/en/latest/abi-spec.html) செயல்பாட்டுக்கு வருகிறது. ABI என்பது EVM-க்கான தரவை எவ்வாறு வரையறுப்பது மற்றும் குறியாக்குவது என்பதை வரையறுக்கும் ஒரு JSON கோப்பாகும்.
 
 பேலோடின் பைட்டுகள் ஒப்பந்தத்தில் எந்த முறை அழைக்கப்படுகிறது என்பதை வரையறுக்கின்றன. இது செயல்பாட்டின் பெயர் மற்றும் அதன் வாத வகைகளின் மீதான கெக்காக் ஹாஷிலிருந்து பெறப்பட்ட முதல் 4 பைட்டுகள் ஆகும், இது ஹெக்ஸ் குறியாக்கம் செய்யப்பட்டுள்ளது. பெருக்கல் (multiply) செயல்பாடு ஒரு uint-ஐ ஏற்றுக்கொள்கிறது, இது uint256-க்கான மாற்றுப் பெயராகும். இது நமக்கு இதைக் கொடுக்கிறது:
 
@@ -1848,7 +1848,7 @@ web3.sha3("multiply(uint256)").substring(0, 10)
 இதை இப்போது கணுவுக்கு அனுப்பலாம்:
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
 {"id":8,"jsonrpc":"2.0","result":"0x759cf065cbc22e9d779748dc53763854e5376eea07409e590c990eafc0869d74"}
 ```
 

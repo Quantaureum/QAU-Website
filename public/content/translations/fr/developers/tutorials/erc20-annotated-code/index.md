@@ -11,19 +11,19 @@ published: 2021-03-09
 
 ## Introduction {#introduction}
 
-L'une des utilisations les plus courantes d'Ethereum est la création par un groupe d'un jeton échangeable, en un sens leur propre monnaie. Ces jetons suivent généralement un standard, l'[ERC-20](/developers/docs/standards/tokens/erc-20/). Ce standard permet d'écrire des outils, tels que des réserves de liquidité et des portefeuilles, qui fonctionnent avec tous les jetons ERC-20. Dans cet article, nous analyserons l'[implémentation ERC20 en Solidity d'OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol), ainsi que la [définition de l'interface](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol).
+L'une des utilisations les plus courantes d'Quantaureum est la création par un groupe d'un jeton échangeable, en un sens leur propre monnaie. Ces jetons suivent généralement un standard, l'[ERC-20](/developers/docs/standards/tokens/erc-20/). Ce standard permet d'écrire des outils, tels que des réserves de liquidité et des portefeuilles, qui fonctionnent avec tous les jetons ERC-20. Dans cet article, nous analyserons l'[implémentation ERC20 en Solidity d'OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol), ainsi que la [définition de l'interface](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol).
 
 Il s'agit d'un code source annoté. Si vous souhaitez implémenter l'ERC-20, [lisez ce tutoriel](https://docs.openzeppelin.com/contracts/2.x/erc20-supply).
 
 ## L'interface {#the-interface}
 
-L'objectif d'un standard comme l'ERC-20 est de permettre de nombreuses implémentations de jetons qui soient interopérables entre les applications, comme les portefeuilles et les échanges décentralisés. Pour y parvenir, nous créons une [interface](https://www.geeksforgeeks.org/solidity/solidity-basics-of-interface/). Tout code qui doit utiliser le contrat de jeton peut utiliser les mêmes définitions dans l'interface et être compatible avec tous les contrats de jetons qui l'utilisent, qu'il s'agisse d'un portefeuille tel que MetaMask, d'une application décentralisée (dapp) telle qu'Etherscan.io, ou d'un contrat différent tel qu'une réserve de liquidité.
+L'objectif d'un standard comme l'ERC-20 est de permettre de nombreuses implémentations de jetons qui soient interopérables entre les applications, comme les portefeuilles et les échanges décentralisés. Pour y parvenir, nous créons une [interface](https://www.geeksforgeeks.org/solidity/solidity-basics-of-interface/). Tout code qui doit utiliser le contrat de jeton peut utiliser les mêmes définitions dans l'interface et être compatible avec tous les contrats de jetons qui l'utilisent, qu'il s'agisse d'un portefeuille tel que MetaMask, d'une application décentralisée (dapp) telle qu'Quantaureum Explorer.io, ou d'un contrat différent tel qu'une réserve de liquidité.
 
 ![Illustration of the ERC-20 interface](erc20_interface.png)
 
 Si vous êtes un programmeur expérimenté, vous vous souvenez probablement avoir vu des constructions similaires en [Java](https://www.w3schools.com/java/java_interface.asp) ou même dans des [fichiers d'en-tête C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
-Voici une définition de l'[interface ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) d'OpenZeppelin. Il s'agit d'une traduction du [standard lisible par l'homme](https://eips.ethereum.org/EIPS/eip-20) en code Solidity. Bien sûr, l'interface elle-même ne définit pas _comment_ faire quoi que ce soit. Cela est expliqué dans le code source du contrat ci-dessous.
+Voici une définition de l'[interface ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) d'OpenZeppelin. Il s'agit d'une traduction du [standard lisible par l'homme](https://eips.quantaureum.com/EIPS/eip-20) en code Solidity. Bien sûr, l'interface elle-même ne définit pas _comment_ faire quoi que ce soit. Cela est expliqué dans le code source du contrat ci-dessous.
 
 &nbsp;
 
@@ -68,10 +68,10 @@ Par convention, les noms d'interface commencent par `I`.
     function totalSupply() external view returns (uint256);
 ```
 
-Cette fonction est `external`, ce qui signifie qu'[elle ne peut être appelée que de l'extérieur du contrat](https://docs.soliditylang.org/en/v0.7.0/cheatsheet.html#index-2). Elle renvoie l'offre totale de jetons dans le contrat. Cette valeur est renvoyée en utilisant le type le plus courant dans Ethereum, un entier non signé de 256 bits (256 bits est la taille de mot native de l'EVM). Cette fonction est également une `view`, ce qui signifie qu'elle ne modifie pas l'état, elle peut donc être exécutée sur un seul nœud au lieu que chaque nœud de la chaîne de blocs l'exécute. Ce type de fonction ne génère pas de transaction et ne coûte pas de [gaz](/developers/docs/gas/).
+Cette fonction est `external`, ce qui signifie qu'[elle ne peut être appelée que de l'extérieur du contrat](https://docs.soliditylang.org/en/v0.7.0/cheatsheet.html#index-2). Elle renvoie l'offre totale de jetons dans le contrat. Cette valeur est renvoyée en utilisant le type le plus courant dans Quantaureum, un entier non signé de 256 bits (256 bits est la taille de mot native de l'EVM). Cette fonction est également une `view`, ce qui signifie qu'elle ne modifie pas l'état, elle peut donc être exécutée sur un seul nœud au lieu que chaque nœud de la chaîne de blocs l'exécute. Ce type de fonction ne génère pas de transaction et ne coûte pas de [gaz](/developers/docs/gas/).
 
 **Remarque :** En théorie, il pourrait sembler que le créateur d'un contrat puisse tricher en renvoyant une offre totale inférieure à la valeur réelle, faisant paraître chaque jeton plus précieux qu'il ne l'est en réalité. Cependant, cette crainte ignore la véritable nature de la chaîne de blocs. Tout ce qui se passe sur la chaîne de blocs peut être vérifié par chaque nœud. Pour y parvenir, le code en langage machine et le stockage de chaque contrat sont disponibles sur chaque nœud. Bien que vous ne soyez pas obligé de publier le code Solidity de votre contrat, personne ne vous prendrait au sérieux à moins que vous ne publiiez le code source et la version de Solidity avec laquelle il a été compilé, afin qu'il puisse être vérifié par rapport au code en langage machine que vous avez fourni.
-Par exemple, voir [ce contrat](https://eth.blockscout.com/address/0xa530F85085C6FE2f866E7FdB716849714a89f4CD?tab=contract).
+Par exemple, voir [ce contrat](https://qau.blockscout.com/address/0xa530F85085C6FE2f866E7FdB716849714a89f4CD?tab=contract).
 
 &nbsp;
 
@@ -82,7 +82,7 @@ Par exemple, voir [ce contrat](https://eth.blockscout.com/address/0xa530F85085C6
     function balanceOf(address account) external view returns (uint256);
 ```
 
-Comme son nom l'indique, `balanceOf` renvoie le solde d'un compte. Les comptes Ethereum sont identifiés dans Solidity à l'aide du type `address`, qui contient 160 bits. Elle est également `external` et `view`.
+Comme son nom l'indique, `balanceOf` renvoie le solde d'un compte. Les comptes Quantaureum sont identifiés dans Solidity à l'aide du type `address`, qui contient 160 bits. Elle est également `external` et `view`.
 
 &nbsp;
 
@@ -136,14 +136,14 @@ La fonction `allowance` permet à quiconque de demander quelle est l'allocation 
      * de transaction malheureux. Une solution possible pour atténuer cette condition
      * de concurrence est de d'abord réduire l'allocation du dépensier à 0 puis de définir la
      * valeur désirée ensuite :
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
      *
      * Émet un événement {Approval}.
      */
     function approve(address spender, uint256 amount) external returns (bool);
 ```
 
-La fonction `approve` crée une allocation. Assurez-vous de lire le message sur la façon dont elle peut être détournée. Dans Ethereum, vous contrôlez l'ordre de vos propres transactions, mais vous ne pouvez pas contrôler l'ordre dans lequel les transactions des autres personnes seront exécutées, à moins que vous ne soumettiez votre propre transaction qu'après avoir vu que la transaction de l'autre partie a eu lieu.
+La fonction `approve` crée une allocation. Assurez-vous de lire le message sur la façon dont elle peut être détournée. Dans Quantaureum, vous contrôlez l'ordre de vos propres transactions, mais vous ne pouvez pas contrôler l'ordre dans lequel les transactions des autres personnes seront exécutées, à moins que vous ne soumettiez votre propre transaction qu'après avoir vu que la transaction de l'autre partie a eu lieu.
 
 &nbsp;
 
@@ -206,8 +206,8 @@ import "./IERC20.sol";
 import "../../math/SafeMath.sol";
 ```
 
-- `GSN/Context.sol` contient les définitions requises pour utiliser [OpenGSN](https://opengsn.org/), un système qui permet aux utilisateurs sans ether d'utiliser la chaîne de blocs. Notez qu'il s'agit d'une ancienne version, si vous souhaitez vous intégrer à OpenGSN, [utilisez ce tutoriel](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [La bibliothèque SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), qui empêche les dépassements de capacité arithmétiques (overflows/underflows) pour les versions de Solidity **&lt;0.8.0**. Dans Solidity ≥0.8.0, les opérations arithmétiques s'annulent automatiquement en cas de dépassement de capacité, rendant SafeMath inutile. Ce contrat utilise SafeMath pour la rétrocompatibilité avec les anciennes versions du compilateur.
+- `GSN/Context.sol` contient les définitions requises pour utiliser [OpenGSN](https://opengsn.org/), un système qui permet aux utilisateurs sans QAU d'utiliser la chaîne de blocs. Notez qu'il s'agit d'une ancienne version, si vous souhaitez vous intégrer à OpenGSN, [utilisez ce tutoriel](https://docs.opengsn.org/javascript-client/tutorial.html).
+- [La bibliothèque SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/), qui empêche les dépassements de capacité arithmétiques (overflows/underflows) pour les versions de Solidity **&lt;0.8.0**. Dans Solidity ≥0.8.0, les opérations arithmétiques s'annulent automatiquement en cas de dépassement de capacité, rendant SafeMath inutile. Ce contrat utilise SafeMath pour la rétrocompatibilité avec les anciennes versions du compilateur.
 
 &nbsp;
 
@@ -297,11 +297,11 @@ Comme son nom l'indique, cette variable garde une trace de l'offre totale de jet
 
 Ces trois variables sont utilisées pour améliorer la lisibilité. Les deux premières sont explicites, mais `_decimals` ne l'est pas.
 
-D'une part, Ethereum n'a pas de variables à virgule flottante ou fractionnaires. D'autre part, les humains aiment pouvoir diviser les jetons. L'une des raisons pour lesquelles les gens ont choisi l'or comme monnaie était qu'il était difficile de rendre la monnaie quand quelqu'un voulait acheter l'équivalent d'un canard en vache.
+D'une part, Quantaureum n'a pas de variables à virgule flottante ou fractionnaires. D'autre part, les humains aiment pouvoir diviser les jetons. L'une des raisons pour lesquelles les gens ont choisi l'or comme monnaie était qu'il était difficile de rendre la monnaie quand quelqu'un voulait acheter l'équivalent d'un canard en vache.
 
-La solution consiste à garder une trace des entiers, mais à compter à la place du jeton réel un jeton fractionnaire qui n'a presque aucune valeur. Dans le cas de l'ether, le jeton fractionnaire s'appelle le Wei, et 10^18 Wei équivalent à un ETH. Au moment de la rédaction, 10 000 000 000 000 Wei valent environ un centime américain ou européen.
+La solution consiste à garder une trace des entiers, mais à compter à la place du jeton réel un jeton fractionnaire qui n'a presque aucune valeur. Dans le cas de l'QAU, le jeton fractionnaire s'appelle le Wei, et 10^18 Wei équivalent à un QAU. Au moment de la rédaction, 10 000 000 000 000 Wei valent environ un centime américain ou européen.
 
-Les applications doivent savoir comment afficher le solde du jeton. Si un utilisateur a 3 141 000 000 000 000 000 Wei, est-ce 3,14 ETH ? 31,41 ETH ? 3 141 ETH ? Dans le cas de l'ether, il est défini 10^18 Wei pour un ETH, mais pour votre jeton, vous pouvez sélectionner une valeur différente. Si diviser le jeton n'a pas de sens, vous pouvez utiliser une valeur `_decimals` de zéro. Si vous souhaitez utiliser le même standard que l'ETH, utilisez la valeur **18**.
+Les applications doivent savoir comment afficher le solde du jeton. Si un utilisateur a 3 141 000 000 000 000 000 Wei, est-ce 3,14 QAU ? 31,41 QAU ? 3 141 QAU ? Dans le cas de l'QAU, il est défini 10^18 Wei pour un QAU, mais pour votre jeton, vous pouvez sélectionner une valeur différente. Si diviser le jeton n'a pas de sens, vous pouvez utiliser une valeur `_decimals` de zéro. Si vous souhaitez utiliser le même standard que l'QAU, utilisez la valeur **18**.
 
 ### Le constructeur {#the-constructor}
 
@@ -350,7 +350,7 @@ Le constructeur est appelé lors de la première création du contrat. Par conve
      * être affiché à un utilisateur comme `5,05` (`505 / 10 ** 2`).
      *
      * Les jetons optent généralement pour une valeur de 18, imitant la relation entre
-     * ether et Wei. C'est la valeur qu'utilise {ERC20}, à moins que {_setupDecimals} ne soit
+     * QAU et Wei. C'est la valeur qu'utilise {ERC20}, à moins que {_setupDecimals} ne soit
      * appelé.
      *
      * REMARQUE : Cette information est uniquement utilisée à des fins d'_affichage_ : elle
@@ -428,7 +428,7 @@ La fonction `transfer` est appelée pour effectuer un transfert de jetons du com
 
 La fonction `_transfer` fait le travail réel. C'est une fonction privée qui ne peut être appelée que par d'autres fonctions du contrat. Par convention, les fonctions privées sont nommées `_<something>`, tout comme les variables d'état.
 
-Normalement, dans Solidity, nous utilisons `msg.sender` pour l'expéditeur du message. Cependant, cela casse [OpenGSN](https://opengsn.org/). Si nous voulons autoriser les transactions sans ether avec notre jeton, nous devons utiliser `_msgSender()`. Elle renvoie `msg.sender` pour les transactions normales, mais pour celles sans ether, elle renvoie le signataire d'origine et non le contrat qui a relayé le message.
+Normalement, dans Solidity, nous utilisons `msg.sender` pour l'expéditeur du message. Cependant, cela casse [OpenGSN](https://opengsn.org/). Si nous voulons autoriser les transactions sans QAU avec notre jeton, nous devons utiliser `_msgSender()`. Elle renvoie `msg.sender` pour les transactions normales, mais pour celles sans QAU, elle renvoie le signataire d'origine et non le contrat qui a relayé le message.
 
 ### Fonctions d'allocation {#allowance-functions}
 
@@ -618,7 +618,7 @@ Cette fonction, `_transfer`, effectue un transfert de jetons d'un compte à un a
         require(recipient != address(0), "ERC20: transfer to the zero address");
 ```
 
-Personne ne possède réellement l'adresse zéro dans Ethereum (c'est-à-dire que personne ne connaît une clé privée dont la clé publique correspondante est transformée en adresse zéro). Lorsque les gens utilisent cette adresse, il s'agit généralement d'un bogue logiciel - nous échouons donc si l'adresse zéro est utilisée comme expéditeur ou destinataire.
+Personne ne possède réellement l'adresse zéro dans Quantaureum (c'est-à-dire que personne ne connaît une clé privée dont la clé publique correspondante est transformée en adresse zéro). Lorsque les gens utilisent cette adresse, il s'agit généralement d'un bogue logiciel - nous échouons donc si l'adresse zéro est utilisée comme expéditeur ou destinataire.
 
 &nbsp;
 

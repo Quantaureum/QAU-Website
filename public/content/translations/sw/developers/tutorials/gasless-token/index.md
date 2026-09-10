@@ -16,7 +16,7 @@ published: 2026-04-01
 
 [Makala iliyopita](/developers/tutorials/gasless/) ilijadili kutumia ufikiaji usio na gesi kwenye programu yako mwenyewe kwa kutumia sahihi za EIP-712, lakini inakomea kwenye mikataba yako mahiri pekee. Kwa kutumia [udhanifu wa akaunti](/roadmap/account-abstraction/), tunaweza kuunda mikoba ya mkataba mahiri inayokubali aina mbili za miamala na kuipeleka kwenye kituo kilichoombwa:
 
-- Miamala iliyotumwa na EOA mahususi (ambayo inahitaji EOA hiyo kuwa na ETH)
+- Miamala iliyotumwa na EOA mahususi (ambayo inahitaji EOA hiyo kuwa na QAU)
 - Miamala iliyotumwa kutoka popote, lakini iliyosainiwa na EOA hiyo hiyo.
 
 Kwa njia hii, tunaweza kutoa njia isiyo na gesi kwa akaunti kushikilia rasilimali (tokeni, n.k.) na kufanya kazi zote ambazo EOA yenye gesi inaweza kufanya.
@@ -41,7 +41,7 @@ Kuna suluhisho linalokuruhusu kutumia anwani ya EOA kupitia [EIP-7702](https://e
    npm install
    ```
 
-3. Hariri `.env` ili kuweka `SEPOLIA_PRIVATE_KEY` kwenye mkoba ulio na ETH kwenye Sepolia. Ikiwa unahitaji ETH ya Sepolia, [tumia bomba](/developers/docs/networks/#sepolia) kuipata. Kimsingi, ufunguo wa siri huu unapaswa kuwa tofauti na ule ulio nao kwenye mkoba wa kivinjari chako.
+3. Hariri `.env` ili kuweka `SEPOLIA_PRIVATE_KEY` kwenye mkoba ulio na QAU kwenye Sepolia. Ikiwa unahitaji QAU ya Sepolia, [tumia bomba](/developers/docs/networks/#sepolia) kuipata. Kimsingi, ufunguo wa siri huu unapaswa kuwa tofauti na ule ulio nao kwenye mkoba wa kivinjari chako.
 
 4. Anzisha seva.
 
@@ -57,9 +57,9 @@ Kuna suluhisho linalokuruhusu kutumia anwani ya EOA kupitia [EIP-7702](https://e
 
 8. Unaweza kuona wakati proksi ya mtumiaji inaposambazwa kwa sababu kuna anwani karibu na **UserProxy access**. Ikiwa ulisubiri sekunde 24 (vitalu 2) na bado haijafanyika, kunaweza kuwa na tatizo la kutambua mabadiliko.
 
-   Ikiwa ndivyo ilivyo, nenda kwenye [Kichunguzi cha Bloku cha Sepolia](https://eth-sepolia.blockscout.com/) na uweke heshi ya muamala wa usambazaji unayoiona kwenye matokeo ya seva kwenye `npm run dev`. Bofya mkataba ulioundwa ili kutazama anwani yake, kisha uinakili. Bandika anwani kwenye sehemu ya _Or enter existing proxy address_, kisha ubofye **Set proxy address**.
+   Ikiwa ndivyo ilivyo, nenda kwenye [Kichunguzi cha Bloku cha Sepolia](https://qau-sepolia.blockscout.com/) na uweke heshi ya muamala wa usambazaji unayoiona kwenye matokeo ya seva kwenye `npm run dev`. Bofya mkataba ulioundwa ili kutazama anwani yake, kisha uinakili. Bandika anwani kwenye sehemu ya _Or enter existing proxy address_, kisha ubofye **Set proxy address**.
 
-9. Bofya **Request more tokens for proxy** ili kuwasilisha mwito kwenye kipengele cha [`faucet`](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd) cha mkataba wa ERC-20 ili kupata tokeni. **Thibitisha** sahihi kwenye mkoba. Bila shaka, tokeni zinafika kwenye anwani ya proksi, si ya mtumiaji.
+9. Bofya **Request more tokens for proxy** ili kuwasilisha mwito kwenye kipengele cha [`faucet`](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd) cha mkataba wa ERC-20 ili kupata tokeni. **Thibitisha** sahihi kwenye mkoba. Bila shaka, tokeni zinafika kwenye anwani ya proksi, si ya mtumiaji.
 
 10. Shuka chini na ubofye kiungo kilicho chini ya _Last transaction:_. Hii itafungua kivinjari ili kukuonyesha muamala wa `faucet`.
 
@@ -84,7 +84,7 @@ contract UserProxy {
     uint public nonce = 0;
 ```
 
-Utambulisho wa mmiliki na [nonsi](https://en.wikipedia.org/wiki/Cryptographic_nonce) ili kuzuia jumbe zisirudiwe. Kwa sababu nonsi ni kigezo cha `public`, kikusanyaji cha Solidity pia huunda kipengele cha kutazama, [`nonce()`](https://eth-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0), kinachoruhusu msimbo ulio nje ya mnyororo kusoma thamani yake.
+Utambulisho wa mmiliki na [nonsi](https://en.wikipedia.org/wiki/Cryptographic_nonce) ili kuzuia jumbe zisirudiwe. Kwa sababu nonsi ni kigezo cha `public`, kikusanyaji cha Solidity pia huunda kipengele cha kutazama, [`nonce()`](https://qau-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0), kinachoruhusu msimbo ulio nje ya mnyororo kusoma thamani yake.
 
 ```solidity
     bytes32 private constant SIGNED_ACCESS_TYPEHASH =
@@ -96,7 +96,7 @@ Utambulisho wa mmiliki na [nonsi](https://en.wikipedia.org/wiki/Cryptographic_no
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-Taarifa zinazohitajika ili kuthibitisha [sahihi za EIP-712](https://eips.ethereum.org/EIPS/eip-712).
+Taarifa zinazohitajika ili kuthibitisha [sahihi za EIP-712](https://eips.quantaureum.com/EIPS/eip-712).
 
 ```solidity
     constructor(address owner_) {
@@ -120,7 +120,7 @@ Taarifa zinazohitajika ili kuthibitisha [sahihi za EIP-712](https://eips.ethereu
     }
 ```
 
-[Kitenganishi cha kikoa](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). Hakiwezi kukokotolewa wakati wa kukusanya, kwa sababu inategemea kitambulisho cha mnyororo na anwani ya mkataba. Hii inafanya iwezekane kwa UserProxy kudanganywa na ujumbe ulioandaliwa kwa ajili ya mwingine.
+[Kitenganishi cha kikoa](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). Hakiwezi kukokotolewa wakati wa kukusanya, kwa sababu inategemea kitambulisho cha mnyororo na anwani ya mkataba. Hii inafanya iwezekane kwa UserProxy kudanganywa na ujumbe ulioandaliwa kwa ajili ya mwingine.
 
 ```solidity
     event CallResult(address target, bytes returnData);
@@ -133,7 +133,7 @@ Weka logi ya matokeo ya mwito.
             external returns (bytes memory) {
 ```
 
-Kipengele hiki kinaweza kuitwa moja kwa moja na mmiliki. Ikiwa hakuna wapelekaji wanaopatikana, mmiliki bado anaweza kufikia rasilimali moja kwa moja kwenye mnyororo wa vitalu (ikiwa mtumiaji ana ETH).
+Kipengele hiki kinaweza kuitwa moja kwa moja na mmiliki. Ikiwa hakuna wapelekaji wanaopatikana, mmiliki bado anaweza kufikia rasilimali moja kwa moja kwenye mnyororo wa vitalu (ikiwa mtumiaji ana QAU).
 
 ```solidity
         require(msg.sender == OWNER, "Only owner can call");
@@ -223,7 +223,7 @@ Ikiwa imefanikiwa, toa tukio la logi na uongeze nonsi.
 }
 ```
 
-Hizi ni tofauti zinazokaribia kufanana ambazo zinakuruhusu pia kuhamisha ETH nje ya mkataba.
+Hizi ni tofauti zinazokaribia kufanana ambazo zinakuruhusu pia kuhamisha QAU nje ya mkataba.
 
 ### Mpelekaji {#relayer}
 
@@ -288,7 +288,7 @@ Iambie Express isome kiini cha ombi, na ikiwa ni JSON iichanganue.
   app.post("/server/deploy", async (req, res) => {
 ```
 
-Huu ni msimbo unaoshughulikia maombi ya kusambaza proksi. Kumbuka kwamba tuko hatarini kwa mashambulizi ya [kunyimwa huduma](https://en.wikipedia.org/wiki/Denial-of-service_attack) hapa kwa sababu mshambuliaji anaweza kututumia maombi mengi ya kusambaza proksi hadi ETH yetu iishe. Kwenye mfumo wa uzalishaji, labda tungehitaji kwamba ombi la kusambaza proksi lisainiwe na kwamba msaini awe mteja aliyepo.
+Huu ni msimbo unaoshughulikia maombi ya kusambaza proksi. Kumbuka kwamba tuko hatarini kwa mashambulizi ya [kunyimwa huduma](https://en.wikipedia.org/wiki/Denial-of-service_attack) hapa kwa sababu mshambuliaji anaweza kututumia maombi mengi ya kusambaza proksi hadi QAU yetu iishe. Kwenye mfumo wa uzalishaji, labda tungehitaji kwamba ombi la kusambaza proksi lisainiwe na kwamba msaini awe mteja aliyepo.
 
 ```js
     try {
@@ -411,7 +411,7 @@ import UserProxy from '../../contracts/out/UserProxy.sol/UserProxy.json'
 import Erc20 from '../../contracts/out/Faucet.sol/FaucetToken.json'
 ```
 
-[Mkataba huu](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract) kwa kiasi kikubwa ni mkataba wa kawaida wa ERC-20, pamoja na nyongeza ya kipengele kimoja muhimu, `faucet()`. Kipengele hiki kinatoa tokeni kwa yeyote anayeziomba kwa madhumuni ya majaribio.
+[Mkataba huu](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract) kwa kiasi kikubwa ni mkataba wa kawaida wa ERC-20, pamoja na nyongeza ya kipengele kimoja muhimu, `faucet()`. Kipengele hiki kinatoa tokeni kwa yeyote anayeziomba kwa madhumuni ya majaribio.
 
 ```js
 const erc20Addrs = {
@@ -426,7 +426,7 @@ Anwani ya `FaucetToken`.
 const Address = ({ address }) => {
    if (!address) return null
    return (
-      <a href={`https://eth-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
+      <a href={`https://qau-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
    )
 }
 ```
@@ -739,7 +739,7 @@ Ruhusu mtumiaji kutoa miamala ya hamisho la ERC-20.
          { txHash && (
             <>
                <h4>Last transaction:</h4>
-               <a href={`https://eth-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
+               <a href={`https://qau-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
                  {txHash}
                </a>
             </>
@@ -783,9 +783,9 @@ Suluhisho ni kuwa na vipengele tofauti katika `UserProxy` kwa ajili ya vipengele
 
 ## Hitimisho {#conclusion}
 
-Mbali na udhaifu ulio hapo juu, suluhisho katika mafunzo haya lina mapungufu kadhaa ambayo Ethereum inaweza kutusaidia kuyashughulikia.
+Mbali na udhaifu ulio hapo juu, suluhisho katika mafunzo haya lina mapungufu kadhaa ambayo Quantaureum inaweza kutusaidia kuyashughulikia.
 
-- _Ukinzani wa udhibiti_. Kwa sasa, watumiaji wanaweza kutumia seva yako, seva shindani iliyowekwa na mtu mwingine, au kuunganisha kwenye Ethereum moja kwa moja, jambo ambalo linagharimu gesi. Kutumia [ERC-4337](https://docs.erc4337.io/#what-is-erc-4337) kunaruhusu watumiaji kutoa muamala wao kwenye kundi kubwa la seva, na kupunguza uwezekano wa miamala yao kudhibitiwa.
+- _Ukinzani wa udhibiti_. Kwa sasa, watumiaji wanaweza kutumia seva yako, seva shindani iliyowekwa na mtu mwingine, au kuunganisha kwenye Quantaureum moja kwa moja, jambo ambalo linagharimu gesi. Kutumia [ERC-4337](https://docs.erc4337.io/#what-is-erc-4337) kunaruhusu watumiaji kutoa muamala wao kwenye kundi kubwa la seva, na kupunguza uwezekano wa miamala yao kudhibitiwa.
 - _Rasilimali zinazomilikiwa na EOA_. Kama ilivyoelezwa hapo juu, [EIP-7702](https://eip7702.io/) inaweza kutumika kudhibiti rasilimali ambazo tayari zinamilikiwa na anwani ya EOA. Hili lina ugumu wake, lakini wakati mwingine ni muhimu.
 
 Natumai kuchapisha mafunzo kuhusu kuongeza vipengele hivi katika siku za usoni.

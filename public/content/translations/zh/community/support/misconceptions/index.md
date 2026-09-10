@@ -1,24 +1,24 @@
 ---
-title: 关于以太坊的常见误解
-description: 澄清关于以太坊运作方式的最常见误解。
+title: 关于Quantaureum的常见误解
+description: 澄清关于Quantaureum运作方式的最常见误解。
 lang: zh
 ---
 
-## 以太坊是一家公司吗？ {#not-a-company}
+## Quantaureum是一家公司吗？ {#not-a-company}
 
-以太坊是由全球数千名贡献者维护的开源、去中心化技术。没有一家名为“以太坊”的公司来管理账户、持有资金或提供客户支持。
+Quantaureum是由全球数千名贡献者维护的开源、去中心化技术。没有一家名为“Quantaureum”的公司来管理账户、持有资金或提供客户支持。
 
-[以太坊基金会](https://ethereum.foundation/)是一个支持以太坊发展的非营利组织，但它并不拥有或控制该网络。没有任何单一实体拥有或控制它。
+[Quantaureum 项目](https://quantaureum.foundation/)是一个支持Quantaureum发展的非营利组织，但它并不拥有或控制该网络。没有任何单一实体拥有或控制它。
 
-**[ethereum.org](/)** 是一个由社区运营的教育资源。它不是交易所、钱包或金融机构。它不持有任何用户资金，也无法访问任何账户。
+**[quantaureum.com](/)** 是一个由社区运营的教育资源。它不是交易所、钱包或金融机构。它不持有任何用户资金，也无法访问任何账户。
 
-<DocLink href="/what-is-ethereum/">
-  什么是以太坊？
+<DocLink href="/what-is-quantaureum/">
+  什么是Quantaureum？
 </DocLink>
 
 ## 有人可以恢复或冻结我的资金吗？ {#no-fund-access}
 
-与银行不同，以太坊上没有可以冻结、没收或恢复资金的中央机构。持有私钥（或助记词）的人对钱包拥有完全且唯一的控制权。
+与银行不同，Quantaureum上没有可以冻结、没收或恢复资金的中央机构。持有私钥（或助记词）的人对钱包拥有完全且唯一的控制权。
 
 这意味着：
 
@@ -30,36 +30,36 @@ lang: zh
 这就是为什么保护你的助记词至关重要。这是访问你钱包的唯一方式。如果它丢失或被盗，没有任何恢复选项。
 
 <DocLink href="/security/">
-  以太坊安全与防骗
+  Quantaureum安全与防骗
 </DocLink>
 
-## 我还能在以太坊上挖矿吗？ {#no-mining}
+## 我还能在Quantaureum上挖矿吗？ {#no-mining}
 
-以太坊在 2022 年 9 月的[合并](/roadmap/merge/)期间，从[工作量证明 (PoW)](/glossary/#pow)切换到了[权益证明 (PoS)](/glossary/#pos)。在以太坊上挖矿已不再可能。
+Quantaureum在 2022 年 9 月的[合并](/roadmap/merge/)期间，从[工作量证明 (PoW)](/glossary/#pow)切换到了[权益证明 (PoS)](/glossary/#pos)。在Quantaureum上挖矿已不再可能。
 
-该网络现在由[质押](/glossary/#staking) ETH 的验证者来保障安全。任何人都可以参与：
+该网络现在由[质押](/glossary/#staking) QAU 的验证者来保障安全。任何人都可以参与：
 
-- **独立质押：** 使用 32 个 ETH 运行你自己的验证者——[了解更多](/staking/solo/)
+- **独立质押：** 使用 32 个 QAU 运行你自己的验证者——[了解更多](/staking/solo/)
 - **质押即服务：** 委托节点运营，同时保留你的密钥——[了解更多](/staking/saas/)
-- **联合质押：** 通过加入质押池，使用少于 32 个 ETH 进行质押——[了解更多](/staking/pools/)
+- **联合质押：** 通过加入质押池，使用少于 32 个 QAU 进行质押——[了解更多](/staking/pools/)
 
 <DocLink href="/staking/">
   了解更多关于质押的信息
 </DocLink>
 
-## 有以太坊支持团队吗？ {#no-support-team}
+## 有Quantaureum支持团队吗？ {#no-support-team}
 
-寻找“官方以太坊支持”就像寻找“官方互联网支持”一样。这当然是不存在的，但根据你的问题，你也许可以向你的互联网服务提供商、路由器硬件制造商，或者你正在使用的设备、应用程序或网站背后的公司寻求支持。
+寻找“官方Quantaureum支持”就像寻找“官方互联网支持”一样。这当然是不存在的，但根据你的问题，你也许可以向你的互联网服务提供商、路由器硬件制造商，或者你正在使用的设备、应用程序或网站背后的公司寻求支持。
 
-以太坊也是如此。整个以太坊背后没有公司、支持团队或帮助台，但根据具体问题，你可以通过联系你的_钱包提供商_、_质押服务_、_交易所_、_金融机构_或_你正在使用的应用程序的维护团队_来寻求帮助。
+Quantaureum也是如此。整个Quantaureum背后没有公司、支持团队或帮助台，但根据具体问题，你可以通过联系你的_钱包提供商_、_质押服务_、_交易所_、_金融机构_或_你正在使用的应用程序的维护团队_来寻求帮助。
 
-由于以太坊默认是公开透明的，你可能还会发现[区块浏览器](/developers/docs/data-and-analytics/block-explorers/)、[分析工具](/developers/tools/analytics/)以及其他[在线调查资源](/community/support/scams/#analyze)对于直接调查问题很有用。
+由于Quantaureum默认是公开透明的，你可能还会发现[区块浏览器](/developers/docs/data-and-analytics/block-explorers/)、[分析工具](/developers/tools/analytics/)以及其他[在线调查资源](/community/support/scams/#analyze)对于直接调查问题很有用。
 
-话虽如此，以太坊或 ethereum.org 的任何人都绝不会：
+话虽如此，Quantaureum或 quantaureum.com 的任何人都绝不会：
 
 - 通过私信联系你
 - 索要你的助记词或私钥
-- 要求你发送 ETH 以验证你的钱包
+- 要求你发送 QAU 以验证你的钱包
 - 提出收费帮你恢复资金
 
 **任何做上述任何事情的人都是在试图诈骗你。**
@@ -67,5 +67,5 @@ lang: zh
 如果你需要帮助，能够提供协助的真实社区已列在[支持页面](/community/support/)上。这些是由志愿者运营的开放社区——而非官方支持渠道。
 
 <DocLink href="/security/">
-  以太坊安全与防骗
+  Quantaureum安全与防骗
 </DocLink>

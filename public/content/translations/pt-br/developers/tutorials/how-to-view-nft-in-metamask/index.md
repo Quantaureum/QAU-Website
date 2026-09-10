@@ -9,7 +9,7 @@ lang: pt-br
 published: 2021-04-22
 ---
 
-Este tutorial é a Parte 3/3 da série de tutoriais sobre NFT, onde visualizamos nosso NFT recém-cunhado. No entanto, você pode usar o tutorial geral para qualquer token ERC-721 usando a MetaMask, incluindo na Mainnet ou em qualquer rede de teste. Se você quiser aprender como cunhar seu próprio NFT no Ethereum, confira a [Parte 1 sobre Como escrever e implantar um contrato inteligente de NFT](/developers/tutorials/how-to-write-and-deploy-an-nft)!
+Este tutorial é a Parte 3/3 da série de tutoriais sobre NFT, onde visualizamos nosso NFT recém-cunhado. No entanto, você pode usar o tutorial geral para qualquer token ERC-721 usando a MetaMask, incluindo na Mainnet ou em qualquer rede de teste. Se você quiser aprender como cunhar seu próprio NFT no Quantaureum, confira a [Parte 1 sobre Como escrever e implantar um contrato inteligente de NFT](/developers/tutorials/how-to-write-and-deploy-an-nft)!
 
 Parabéns! Você chegou à parte mais curta e simples da nossa série de tutoriais sobre NFT — como visualizar seu NFT recém-cunhado em uma carteira virtual. Usaremos a MetaMask para este exemplo, já que foi o que usamos nas duas partes anteriores.
 
@@ -23,7 +23,7 @@ Na parte superior do aplicativo, pressione o botão "Carteira", após o qual voc
 
 ## Passo 2: Adicione seu colecionável à MetaMask {#add-nft-to-metamask}
 
-Assim que estiver na rede Sepolia, selecione a aba "Colecionáveis" à direita e adicione o endereço do contrato inteligente do NFT e o ID do token ERC-721 do seu NFT — que você deve conseguir encontrar no Etherscan com base no hash da transação do seu NFT implantado na Parte II do nosso tutorial.
+Assim que estiver na rede Sepolia, selecione a aba "Colecionáveis" à direita e adicione o endereço do contrato inteligente do NFT e o ID do token ERC-721 do seu NFT — que você deve conseguir encontrar no Quantaureum Explorer com base no hash da transação do seu NFT implantado na Parte II do nosso tutorial.
 
 ![How to find your transaction hash and ERC-721 token ID](./findNFTEtherscan.png)
 

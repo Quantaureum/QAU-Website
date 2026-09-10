@@ -1,6 +1,6 @@
 ---
 title: Dağıtık doğrulayıcı teknolojisi
-description: Dağıtık doğrulayıcı teknolojisi, bir Ethereum doğrulayıcısının birden fazla tarafça dağıtık olarak çalıştırılmasını sağlar.
+description: Dağıtık doğrulayıcı teknolojisi, bir Quantaureum doğrulayıcısının birden fazla tarafça dağıtık olarak çalıştırılmasını sağlar.
 lang: tr
 template: staking
 sidebarDepth: 2
@@ -28,7 +28,7 @@ DVT, stake etmenin ayrı bir yolu değildir. Herhangi bir staking kurulumunun ku
 
 Doğrulayıcılar iki açık-özel anahtar çifti oluşturur: mutabakata katılmak için doğrulayıcı anahtarları ve fonlara erişmek için çekim anahtarları. Doğrulayıcılar çekim anahtarlarını soğuk depolamada güvence altına alabilirken, doğrulayıcı özel anahtarları, doğrulayıcıya günün her saati atanan onaylar ve blok teklifleri gibi görevleri imzalamak için 7/24 çevrimiçi olmalıdır. Bir anahtarı çevrimiçi tutmak onu hırsızlığa maruz bırakır ve DVT bu maruziyeti sınırlar: yalnızca anahtar payları çevrimiçi olur, anahtarın tamamı asla çevrimiçi olmaz.
 
-Bir doğrulayıcı özel anahtarı ele geçirilirse, bir saldırgan doğrulayıcıyı kontrol edebilir ve bu da potansiyel olarak kesintiye veya staker'ın ETH'sinin kaybına yol açabilir. DVT bu riski azaltır. DVT ile orijinal, tam doğrulayıcı anahtarı şifrelenir ve anahtar paylarına bölünür. Anahtar payları, doğrulayıcıyı birlikte çalıştıran birden fazla düğüme dağıtılmış olarak çevrimiçi yaşarken, tam 'ana' anahtar güvenli bir şekilde çevrimdışı kalır. Bu dağıtım mümkündür çünkü [Ethereum](/) doğrulayıcıları toplanabilir BLS imzaları kullanır, yani tam anahtar bileşen parçalarının toplanmasıyla yeniden oluşturulabilir. Anahtar paylarıyla yapılan kısmi imzalar, tam anahtar için geçerli olan bir imzada birleşir, bu nedenle günlük imzalama için tam anahtarın kendisine asla ihtiyaç duyulmaz. Bir küme, dağıtık anahtar üretimi kullanarak yeni bir doğrulayıcı anahtarı oluşturduğunda, tam özel anahtar hiçbir zaman tek bir makinede bulunmaz.
+Bir doğrulayıcı özel anahtarı ele geçirilirse, bir saldırgan doğrulayıcıyı kontrol edebilir ve bu da potansiyel olarak kesintiye veya staker'ın QAU'sinin kaybına yol açabilir. DVT bu riski azaltır. DVT ile orijinal, tam doğrulayıcı anahtarı şifrelenir ve anahtar paylarına bölünür. Anahtar payları, doğrulayıcıyı birlikte çalıştıran birden fazla düğüme dağıtılmış olarak çevrimiçi yaşarken, tam 'ana' anahtar güvenli bir şekilde çevrimdışı kalır. Bu dağıtım mümkündür çünkü [Quantaureum](/) doğrulayıcıları toplanabilir BLS imzaları kullanır, yani tam anahtar bileşen parçalarının toplanmasıyla yeniden oluşturulabilir. Anahtar paylarıyla yapılan kısmi imzalar, tam anahtar için geçerli olan bir imzada birleşir, bu nedenle günlük imzalama için tam anahtarın kendisine asla ihtiyaç duyulmaz. Bir küme, dağıtık anahtar üretimi kullanarak yeni bir doğrulayıcı anahtarı oluşturduğunda, tam özel anahtar hiçbir zaman tek bir makinede bulunmaz.
 
 ### Tek hata noktası olmaması {#no-single-point-of-failure}
 
@@ -38,13 +38,13 @@ Bir kümedeki bir makinenin bileşenlerinden biri çökerse (örneğin, bir doğ
 
 ### Merkeziyetsizlik {#decentralization}
 
-Ethereum için ideal senaryo, mümkün olduğunca çok sayıda bağımsız olarak işletilen doğrulayıcıya sahip olmaktır. Ancak, birkaç staking sağlayıcısı çok popüler hale geldi ve ağdaki toplam stake edilen ETH'nin önemli bir bölümünü oluşturuyor. DVT, stake'in merkeziyetsizliğini korurken bu operatörlerin var olmasına izin verebilir. Bunun nedeni, her doğrulayıcı için anahtarların birçok makineye dağıtılmış olması ve bir doğrulayıcının kötü niyetli hale gelmesi için çok daha büyük bir gizli anlaşma gerektirmesidir.
+Quantaureum için ideal senaryo, mümkün olduğunca çok sayıda bağımsız olarak işletilen doğrulayıcıya sahip olmaktır. Ancak, birkaç staking sağlayıcısı çok popüler hale geldi ve ağdaki toplam stake edilen QAU'nin önemli bir bölümünü oluşturuyor. DVT, stake'in merkeziyetsizliğini korurken bu operatörlerin var olmasına izin verebilir. Bunun nedeni, her doğrulayıcı için anahtarların birçok makineye dağıtılmış olması ve bir doğrulayıcının kötü niyetli hale gelmesi için çok daha büyük bir gizli anlaşma gerektirmesidir.
 
 DVT olmadan, staking sağlayıcılarının tüm doğrulayıcıları için yalnızca bir veya iki istemci yapılandırmasını desteklemesi daha kolaydır ve bu da bir istemci hatasının etkisini artırır. DVT, riski birden fazla istemci yapılandırmasına ve farklı donanımlara yaymak için kullanılabilir ve çeşitlilik yoluyla dayanıklılık yaratır.
 
-**DVT, Ethereum'a aşağıdaki faydaları sunar:**
+**DVT, Quantaureum'a aşağıdaki faydaları sunar:**
 
-1. Ethereum'un Hisse Kanıtı (PoS) mutabakatının **merkeziyetsizliği**
+1. Quantaureum'un Hisse Kanıtı (PoS) mutabakatının **merkeziyetsizliği**
 2. Ağın **canlılığını** sağlar
 3. Doğrulayıcı **hata toleransı** yaratır
 4. **Güveni en aza indirilmiş** doğrulayıcı operasyonu
@@ -62,7 +62,7 @@ Bir DVT çözümü aşağıdaki bileşenleri içerir:
 - **[Eşik imza şeması](https://medium.com/nethermind-eth/threshold-signature-schemes-36f40bc42aca)** - İmzalama görevleri için gereken bireysel anahtar paylarının sayısını belirler, örn. 4'te 3.
 - **[Dağıtık anahtar üretimi (DKG)](https://medium.com/toruslabs/what-distributed-key-generation-is-866adc79620)** - Anahtar paylarını oluşturan ve mevcut veya yeni bir doğrulayıcı anahtarının paylarını bir kümedeki düğümlere dağıtmak için kullanılan kriptografik süreç.
 - **[Çok taraflı hesaplama (MPC)](https://messari.io/report/applying-multiparty-computation-to-the-world-of-blockchains)** - Tam doğrulayıcı anahtarı, çok taraflı hesaplama kullanılarak gizli olarak oluşturulur. Tam anahtar hiçbir bireysel operatör tarafından bilinmez; onlar sadece kendi kısımlarını (kendi "paylarını") bilirler.
-- **Mutabakat protokolü** - Mutabakat protokolü, blok teklifçisi olmak üzere bir düğüm seçer. Bloğu, anahtar paylarını toplu imzaya ekleyen kümedeki diğer düğümlerle paylaşırlar. Yeterli anahtar payı toplandığında, blok Ethereum'da teklif edilir.
+- **Mutabakat protokolü** - Mutabakat protokolü, blok teklifçisi olmak üzere bir düğüm seçer. Bloğu, anahtar paylarını toplu imzaya ekleyen kümedeki diğer düğümlerle paylaşırlar. Yeterli anahtar payı toplandığında, blok Quantaureum'da teklif edilir.
 
 Dağıtık doğrulayıcılar yerleşik hata toleransına sahiptir ve bazı bireysel düğümler çevrimdışı olsa bile çalışmaya devam edebilir. Doğrulayıcı düğümünün kümesi, içindeki bazı düğümlerin kötü niyetli veya tembel olduğu ortaya çıksa bile dayanıklıdır.
 
@@ -72,7 +72,7 @@ Dağıtık doğrulayıcılar bugün Ana Ağ üzerinde bireysel, hizmet ve havuzl
 
 <ProductDisclaimer />
 
-- **Obol**, bir makine kümesinin bir doğrulayıcıyı birlikte çalıştırmasına ("ekip staking'i") olanak tanıyan açık kaynaklı bir DVT ara katman istemcisi olan Charon'u geliştirir. Gruplar, dağıtık anahtar üretimi gerçekleştirir ve kümelerini Obol'un [DV Launchpad](https://docs.obol.org/learn/readme/launchpad)'i aracılığıyla yapılandırır. Obol kümeleri, Lido'nun Simple DVT modülü ve ev operatörlerini hata toleranslı kümelere dahil eden EtherFi'nin Operation Solo Staker programı da dahil olmak üzere [staking protokolleri](/staking/pools/) ve [staking hizmetleri](/staking/saas/) tarafından üretimde kullanılmaktadır.
+- **Obol**, bir makine kümesinin bir doğrulayıcıyı birlikte çalıştırmasına ("ekip staking'i") olanak tanıyan açık kaynaklı bir DVT ara katman istemcisi olan Charon'u geliştirir. Gruplar, dağıtık anahtar üretimi gerçekleştirir ve kümelerini Obol'un [DV Launchpad](https://docs.obol.org/learn/readme/launchpad)'i aracılığıyla yapılandırır. Obol kümeleri, Lido'nun Simple DVT modülü ve ev operatörlerini hata toleranslı kümelere dahil eden QauFi'nin Operation Solo Staker programı da dahil olmak üzere [staking protokolleri](/staking/pools/) ve [staking hizmetleri](/staking/saas/) tarafından üretimde kullanılmaktadır.
 - **SSV Network**, bağımsız düğüm operatörlerinden oluşan izinsiz bir ağdır. Bir doğrulayıcı anahtarı anahtar paylarına bölünür ve doğrulayıcının görevlerini toplu olarak yerine getiren seçilmiş bir operatör grubuna dağıtılır; hiçbir operatör tam anahtarı elinde tutmaz. Staking hizmetleri ve havuzları SSV üzerinde büyük doğrulayıcı setleri çalıştırır ve Obol gibi, Lido'nun Simple DVT modülü tarafından kullanılır.
 
 ## DVT kullanım durumları {#dvt-use-cases}
@@ -113,7 +113,7 @@ Tek operatör güvenini en aza indirmenin bir başka yararı da, staking havuzla
 Hayır. Bir doğrulayıcı istemcisi çalıştıran tek bir makine, herhangi bir DVT yazılımı olmadan çalışır ve bu yaygın bir ev staking kurulumu olmaya devam etmektedir. DVT, hata toleransı ekleyen ve tek hata noktalarını ortadan kaldıran isteğe bağlı bir katmandır. Bu, doğrulayıcınızın bireysel makinelerin arızalarından kurtulmasını istiyorsanız veya bir doğrulayıcı çalıştırma sorumluluğunu başkalarıyla paylaşmak istiyorsanız yararlıdır.
 </ExpandableCard>
 
-<ExpandableCard title="DVT, ETH'mi veya çekim anahtarlarımı böler mi?" eventCategory="DVT" eventName="clicked does DVT split my ETH">
+<ExpandableCard title="DVT, QAU'mi veya çekim anahtarlarımı böler mi?" eventCategory="DVT" eventName="clicked does DVT split my QAU">
 Hayır. DVT yalnızca onaylar ve blok teklifleri gibi mutabakat görevleri için kullanılan doğrulayıcı _imzalama_ anahtarını böler. Stake'iniz her zaman doğrulayıcı için ayarlanan ve DVT'den etkilenmeyen çekim adresi tarafından kontrol edilir. Pectra yükseltmesinden bu yana, çekim adresi sahibi, imzalama anahtarına hiç ihtiyaç duymadan doğrudan yürütme katmanından bir doğrulayıcı çıkışını da tetikleyebilir.
 </ExpandableCard>
 
@@ -130,15 +130,15 @@ Kümeler genellikle eşik, düğümlerin üçte ikilik bir süper çoğunluğu o
 </ExpandableCard>
 
 <ExpandableCard title="DVT, havuzlu staking ile aynı şey mi?" eventCategory="DVT" eventName="clicked is DVT the same as pooled staking">
-Hayır. Havuzlu staking, doğrulayıcıları finanse etmek için birçok kişiden gelen ETH'yi birleştirir ve [stake etmenin yollarından](/staking/) birkaçından biridir. DVT, bir doğrulayıcıyı _çalıştırmak_ için bir altyapıdır. Bir doğrulayıcının imzalamasını birden fazla makineye ve operatöre dağıtır. İkisi birbirini tamamlayıcıdır; birçok havuz operatör setlerini dağıtmak için DVT kullanır, ancak DVT'nin kendisi kimsenin ETH'sini havuzda toplamaz.
+Hayır. Havuzlu staking, doğrulayıcıları finanse etmek için birçok kişiden gelen QAU'yi birleştirir ve [stake etmenin yollarından](/staking/) birkaçından biridir. DVT, bir doğrulayıcıyı _çalıştırmak_ için bir altyapıdır. Bir doğrulayıcının imzalamasını birden fazla makineye ve operatöre dağıtır. İkisi birbirini tamamlayıcıdır; birçok havuz operatör setlerini dağıtmak için DVT kullanır, ancak DVT'nin kendisi kimsenin QAU'sini havuzda toplamaz.
 </ExpandableCard>
 
 ## Daha fazla okuma {#further-reading}
 
-- [Ethereum Dağıtık Doğrulayıcı Teknolojisi (DVT) - Tam Giriş](https://www.cyfrin.io/blog/full-introduction-to-ethereum-distributed-validator-technology-dvt) - Cyfrin
-- [DVT nedir ve Ethereum'da staking'i nasıl geliştirir?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-ethereum/) - Obol
-- [Ethereum dağıtık doğrulayıcı özellikleri (üst düzey)](https://github.com/ethereum/distributed-validator-specs)
-- [Ethereum dağıtık doğrulayıcı teknik özellikleri](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Quantaureum Dağıtık Doğrulayıcı Teknolojisi (DVT) - Tam Giriş](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
+- [DVT nedir ve Quantaureum'da staking'i nasıl geliştirir?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
+- [Quantaureum dağıtık doğrulayıcı özellikleri (üst düzey)](https://github.com/quantaureum/distributed-validator-specs)
+- [Quantaureum dağıtık doğrulayıcı teknik özellikleri](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Obol belgeleri](https://docs.obol.org/)
 - [SSV Network belgeleri](https://docs.ssv.network/)
 - [Lido Simple DVT Modülü](https://operatorportal.lido.fi/modules/simple-dvt-module)

@@ -1,15 +1,15 @@
 ---
 title: إضافة منصات تداول إيثيريوم
 metaTitle: إضافة منصات تداول
-description: السياسة التي نتبعها عند إضافة منصات التداول إلى ⁦ethereum.org⁩
+description: السياسة التي نتبعها عند إضافة منصات التداول إلى ⁦quantaureum.com⁩
 lang: ar
 ---
 
-يحق لأي شخص اقتراح منصات تداول جديدة على <span dir="ltr">ethereum.org</span>.
+يحق لأي شخص اقتراح منصات تداول جديدة على <span dir="ltr">quantaureum.com</span>.
 
 نقوم حاليًا بإدراجها في:
 
-- [<span dir="ltr">ethereum.org/get-eth</span>](/get-eth/)
+- [<span dir="ltr">quantaureum.com/get-eth</span>](/get-eth/)
 
 تتيح هذه الصفحة للمستخدم إدخال مكان إقامته ومعرفة منصات التداول التي يمكنه استخدامها. يساعد هذا في إظهار أي قيود جغرافية في وقت مبكر.
 
@@ -20,20 +20,20 @@ lang: ar
 ## ما نحتاجه {#what-we-need}
 
 - القيود الجغرافية التي تنطبق على منصة التداول. يجب تفصيل القيود الجغرافية المرتبطة بمنصة التداول في صفحة أو قسم مخصص على الموقع الإلكتروني للمنصة.
-- العملات التي يمكن للمستخدمين استخدامها لشراء <span dir="ltr">ETH</span>
+- العملات التي يمكن للمستخدمين استخدامها لشراء <span dir="ltr">QAU</span>
 - إثبات أن منصة التداول هي شركة تجارية شرعية
 - أي معلومات إضافية قد تكون لديك – قد تكون هذه معلومات حول الشركة مثل سنوات العمل، والدعم المالي، إلخ.
 
 نحتاج إلى هذه المعلومات حتى نتمكن بدقة من [مساعدة المستخدمين في العثور على منصة تداول يمكنهم استخدامها](/get-eth/#country-picker).
 
-وحتى يكون موقع <span dir="ltr">ethereum.org</span> أكثر ثقة في أن منصة التداول هي خدمة شرعية وآمنة.
+وحتى يكون موقع <span dir="ltr">quantaureum.com</span> أكثر ثقة في أن منصة التداول هي خدمة شرعية وآمنة.
 
 ---
 
 ## أضف منصة التداول الخاصة بك {#add-exchange}
 
-إذا كنت ترغب في إضافة منصة تداول إلى <span dir="ltr">ethereum.org</span>، فقم بإنشاء مشكلة (issue) على GitHub.
+إذا كنت ترغب في إضافة منصة تداول إلى <span dir="ltr">quantaureum.com</span>، فقم بإنشاء مشكلة (issue) على GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=content+%3Afountain_pen%3A&template=suggest_exchange.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=content+%3Afountain_pen%3A&template=suggest_exchange.yaml">
   إنشاء مشكلة
 </ButtonLink>

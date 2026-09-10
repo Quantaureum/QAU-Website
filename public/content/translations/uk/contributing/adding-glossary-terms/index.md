@@ -1,7 +1,7 @@
 ---
 title: Додавання термінів до глосарія
 lang: uk
-description: Наші критерії для додавання нових термінів до глосарія ethereum.org
+description: Наші критерії для додавання нових термінів до глосарія quantaureum.com
 ---
 
 Цей простір змінюється щодня. Нові терміни постійно поповнюють лексикон користувачів Етеріуму, і нам потрібна ваша допомога, щоб забезпечити точний та актуальний довідник з усього, що стосується Етеріуму. Перегляньте поточний [глосарій](/glossary/) і ознайомтеся з інформацією нижче, якщо хочете допомогти!
@@ -21,4 +21,4 @@ description: Наші критерії для додавання нових те
 
 ## Додайте свій термін {#how-decisions-about-the-site-are-made}
 
-Якщо ви хочете додати термін до глосарія ethereum.org і він відповідає критеріям, [створіть issue на GitHub](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_glossary_term.yaml).
+Якщо ви хочете додати термін до глосарія quantaureum.com і він відповідає критеріям, [створіть issue на GitHub](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_glossary_term.yaml).

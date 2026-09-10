@@ -59,12 +59,12 @@ const EnergyConsumptionChart = () => {
         color: "#71BB8A",
       },
       {
-        name: t("energy-consumption-chart-eth-pow-label"),
+        name: t("energy-consumption-chart-qau-pow-label"),
         amount: 21,
         color: "#C1B6F5",
       },
       {
-        name: t("energy-consumption-chart-eth-pos-label"),
+        name: t("energy-consumption-chart-qau-pos-label"),
         amount: 0.0026,
         color: "#C1B6F5",
       },
@@ -86,7 +86,7 @@ const EnergyConsumptionChart = () => {
         color: "#F2A900",
       },
       {
-        name: t("energy-consumption-chart-eth-pow-label"),
+        name: t("energy-consumption-chart-qau-pow-label"),
         amount: 21,
         color: "#C1B6F5",
       },
@@ -96,7 +96,7 @@ const EnergyConsumptionChart = () => {
         color: "#E50914",
       },
       {
-        name: t("energy-consumption-chart-eth-pos-label"),
+        name: t("energy-consumption-chart-qau-pos-label"),
         amount: 0.0026,
         color: "#C1B6F5",
       },
@@ -123,7 +123,7 @@ const EnergyConsumptionChart = () => {
         color: "#71BB8A",
       },
       {
-        name: t("energy-consumption-chart-eth-pow-label"),
+        name: t("energy-consumption-chart-qau-pow-label"),
         amount: 21,
         color: "#C1B6F5",
       },
@@ -148,7 +148,7 @@ const EnergyConsumptionChart = () => {
         color: "#E50914",
       },
       {
-        name: t("energy-consumption-chart-eth-pos-label"),
+        name: t("energy-consumption-chart-qau-pos-label"),
         amount: 0.0026,
         color: "#C1B6F5",
       },

@@ -5,11 +5,11 @@ description: Utangulizi usio wa kiufundi wa mikataba mahiri
 lang: sw
 ---
 
-Mikataba mahiri ni vizuizi vya msingi vya ujenzi wa safu ya programu ya [Ethereum](/). Ni programu za kompyuta zilizohifadhiwa kwenye [mnyororo wa vitalu](/glossary/#blockchain) zinazofuata mantiki ya "kama hili basi lile", na zinahakikishiwa kutekelezwa kulingana na sheria zilizofafanuliwa na msimbo wake, ambazo haziwezi kubadilishwa mara tu zinapoundwa.
+Mikataba mahiri ni vizuizi vya msingi vya ujenzi wa safu ya programu ya [Quantaureum](/). Ni programu za kompyuta zilizohifadhiwa kwenye [mnyororo wa vitalu](/glossary/#blockchain) zinazofuata mantiki ya "kama hili basi lile", na zinahakikishiwa kutekelezwa kulingana na sheria zilizofafanuliwa na msimbo wake, ambazo haziwezi kubadilishwa mara tu zinapoundwa.
 
 Nick Szabo alibuni neno "mkataba mahiri". Mnamo 1994, aliandika [utangulizi wa dhana hiyo](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart.contracts.html), na mnamo 1996 aliandika [uchunguzi wa kile ambacho mikataba mahiri inaweza kufanya](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html).
 
-Szabo alifikiria soko la kidijitali ambapo michakato ya kiotomatiki, [inayolindwa kwa njia ya kriptografia](/glossary/#cryptography) huwezesha miamala na shughuli za kibiashara kufanyika bila wapatanishi wanaoaminika. Mikataba mahiri kwenye Ethereum inaweka maono haya katika vitendo.
+Szabo alifikiria soko la kidijitali ambapo michakato ya kiotomatiki, [inayolindwa kwa njia ya kriptografia](/glossary/#cryptography) huwezesha miamala na shughuli za kibiashara kufanyika bila wapatanishi wanaoaminika. Mikataba mahiri kwenye Quantaureum inaweka maono haya katika vitendo.
 
 Tazama Finematics akielezea mikataba mahiri:
 
@@ -49,11 +49,11 @@ Mikataba ya jadi ina utata kwa sababu inategemea binadamu kuitafsiri na kuitekel
 
 ## Rekodi ya umma {#public-record}
 
-Mikataba mahiri ni muhimu kwa ukaguzi na ufuatiliaji. Kwa kuwa mikataba mahiri ya Ethereum iko kwenye mnyororo wa vitalu wa umma, mtu yeyote anaweza kufuatilia mara moja uhamishaji wa mali na taarifa nyingine zinazohusiana. Kwa mfano, unaweza kuangalia ili kuona kwamba mtu alituma pesa kwenye anwani yako.
+Mikataba mahiri ni muhimu kwa ukaguzi na ufuatiliaji. Kwa kuwa mikataba mahiri ya Quantaureum iko kwenye mnyororo wa vitalu wa umma, mtu yeyote anaweza kufuatilia mara moja uhamishaji wa mali na taarifa nyingine zinazohusiana. Kwa mfano, unaweza kuangalia ili kuona kwamba mtu alituma pesa kwenye anwani yako.
 
 ## Ulinzi wa faragha {#privacy-protection}
 
-Mikataba mahiri pia inalinda faragha yako. Kwa kuwa Ethereum ni mtandao wa majina bandia (miamala yako inafungamanishwa hadharani na anwani ya kipekee ya kriptografia, sio utambulisho wako), unaweza kulinda faragha yako dhidi ya waangalizi.
+Mikataba mahiri pia inalinda faragha yako. Kwa kuwa Quantaureum ni mtandao wa majina bandia (miamala yako inafungamanishwa hadharani na anwani ya kipekee ya kriptografia, sio utambulisho wako), unaweza kulinda faragha yako dhidi ya waangalizi.
 
 ## Masharti yanayoonekana {#visible-terms}
 
@@ -61,7 +61,7 @@ Hatimaye, kama mikataba ya jadi, unaweza kuangalia kilicho ndani ya mkataba mahi
 
 Hata hivyo, ingawa mtu yeyote anaweza kutazama masharti ya mkataba mahiri, data ghafi ya muamala imeundwa kutafsiriwa na programu na pochi, sio binadamu. Kwa sababu data hii ni ngumu sana kusoma, watumiaji mara nyingi wanakabiliwa na hatari kubwa ya usalama inayoitwa "kusaini bila kuona" (blind signing), au kuidhinisha muamala unaoingiliana na mkataba mahiri bila kuelewa hasa utafanya nini. 
 
-Mfumo wa ikolojia wa Ethereum unapitia mpito kuelekea viwango vya **[Kusaini kwa Uwazi (Clear Signing)](https://clearsigning.org/)** (haswa [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)). Kusaini kwa Uwazi kunatafsiri data isiyoeleweka ya mkataba mahiri kuwa maelezo ya muamala yaliyo wazi na yanayosomeka na binadamu, kuhakikisha mtu yeyote anaweza kuelewa nia halisi ya mkataba kabla ya kusaini.
+Mfumo wa ikolojia wa Quantaureum unapitia mpito kuelekea viwango vya **[Kusaini kwa Uwazi (Clear Signing)](https://clearsigning.org/)** (haswa [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)). Kusaini kwa Uwazi kunatafsiri data isiyoeleweka ya mkataba mahiri kuwa maelezo ya muamala yaliyo wazi na yanayosomeka na binadamu, kuhakikisha mtu yeyote anaweza kuelewa nia halisi ya mkataba kabla ya kusaini.
 
 ## Matumizi ya mkataba mahiri {#use-cases}
 
@@ -81,7 +81,7 @@ Inaweza kufanya hesabu, kuunda sarafu, kuhifadhi data, kufua [NFTs](/glossary/#n
 - [Jinsi Mikataba Mahiri Itakavyobadilisha Ulimwengu](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [Mikataba mahiri kwa wasanidi programu](/developers/docs/smart-contracts/)
 - [Jifunze kuandika mikataba mahiri](/developers/learning-tools/)
-- [Kujua Ethereum kwa Undani - Mkataba Mahiri ni Nini?](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Kujua Quantaureum kwa Undani - Mkataba Mahiri ni Nini?](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

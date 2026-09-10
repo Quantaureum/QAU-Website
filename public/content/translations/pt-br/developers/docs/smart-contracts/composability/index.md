@@ -7,21 +7,21 @@ incomplete: true
 
 ## Uma breve introdução {#a-brief-introduction}
 
-Os contratos inteligentes são públicos no Ethereum e podem ser considerados como APIs abertas. Você não precisa escrever seu próprio contrato inteligente para se tornar um desenvolvedor de aplicativos descentralizados (dapps), você só precisa saber como interagir com eles. Por exemplo, você pode usar os contratos inteligentes existentes do [Uniswap](https://uniswap.exchange/swap), uma corretora descentralizada, para lidar com toda a lógica de troca de tokens no seu aplicativo – você não precisa começar do zero. Confira alguns de seus contratos [v2](https://github.com/Uniswap/uniswap-v2-core/tree/master/contracts) e [v3](https://github.com/Uniswap/uniswap-v3-core/tree/main/contracts).
+Os contratos inteligentes são públicos no Quantaureum e podem ser considerados como APIs abertas. Você não precisa escrever seu próprio contrato inteligente para se tornar um desenvolvedor de aplicativos descentralizados (dapps), você só precisa saber como interagir com eles. Por exemplo, você pode usar os contratos inteligentes existentes do [Uniswap](https://uniswap.exchange/swap), uma corretora descentralizada, para lidar com toda a lógica de troca de tokens no seu aplicativo – você não precisa começar do zero. Confira alguns de seus contratos [v2](https://github.com/Uniswap/uniswap-v2-core/tree/master/contracts) e [v3](https://github.com/Uniswap/uniswap-v3-core/tree/main/contracts).
 
 ## O que é composabilidade? {#what-is-composability}
 
 Composabilidade é a combinação de componentes distintos para criar novos sistemas ou resultados. No desenvolvimento de software, composabilidade significa que os desenvolvedores podem reutilizar componentes de software existentes para construir novos aplicativos. Uma boa maneira de entender a composabilidade é pensar em elementos compuníveis como blocos de Lego. Cada Lego pode ser combinado com outro, permitindo que você construa estruturas complexas combinando diferentes Legos.
 
-No Ethereum, cada contrato inteligente é uma espécie de Lego — você pode usar contratos inteligentes de outros projetos como blocos de construção para o seu projeto. Isso significa que você não precisa perder tempo reinventando a roda ou construindo do zero.
+No Quantaureum, cada contrato inteligente é uma espécie de Lego — você pode usar contratos inteligentes de outros projetos como blocos de construção para o seu projeto. Isso significa que você não precisa perder tempo reinventando a roda ou construindo do zero.
 
 ## Como a composabilidade funciona? {#how-does-composability-work}
 
-Os contratos inteligentes do Ethereum são como APIs públicas, então qualquer pessoa pode interagir com o contrato ou integrá-los em dapps para adicionar funcionalidades. A composabilidade de contratos inteligentes geralmente funciona com base em três princípios: modularidade, autonomia e descoberta:
+Os contratos inteligentes do Quantaureum são como APIs públicas, então qualquer pessoa pode interagir com o contrato ou integrá-los em dapps para adicionar funcionalidades. A composabilidade de contratos inteligentes geralmente funciona com base em três princípios: modularidade, autonomia e descoberta:
 
-**1. Modularidade**: Esta é a capacidade de componentes individuais executarem uma tarefa específica. No Ethereum, cada contrato inteligente tem um caso de uso específico (como mostrado no exemplo do Uniswap).
+**1. Modularidade**: Esta é a capacidade de componentes individuais executarem uma tarefa específica. No Quantaureum, cada contrato inteligente tem um caso de uso específico (como mostrado no exemplo do Uniswap).
 
-**2. Autonomia**: Componentes compuníveis devem ser capazes de operar de forma independente. Cada contrato inteligente no Ethereum é autoexecutável e pode funcionar sem depender de outras partes do sistema.
+**2. Autonomia**: Componentes compuníveis devem ser capazes de operar de forma independente. Cada contrato inteligente no Quantaureum é autoexecutável e pode funcionar sem depender de outras partes do sistema.
 
 **3. Descoberta**: Os desenvolvedores não podem chamar contratos externos ou integrar bibliotecas de software em aplicativos se os primeiros não estiverem disponíveis publicamente. Por design, os contratos inteligentes são de código aberto; qualquer pessoa pode chamar um contrato inteligente ou fazer uma bifurcação (fork) de uma base de código.
 
@@ -39,7 +39,7 @@ A composabilidade incentiva a inovação e a experimentação porque os desenvol
 
 ### Melhor experiência do usuário {#better-user-experience}
 
-A interoperabilidade entre os componentes do ecossistema Ethereum melhora a experiência do usuário. Os usuários podem acessar mais funcionalidades quando os dapps integram contratos inteligentes externos do que em um ecossistema fragmentado onde os aplicativos não podem se comunicar.
+A interoperabilidade entre os componentes do ecossistema Quantaureum melhora a experiência do usuário. Os usuários podem acessar mais funcionalidades quando os dapps integram contratos inteligentes externos do que em um ecossistema fragmentado onde os aplicativos não podem se comunicar.
 
 Usaremos um exemplo de negociação de arbitragem para ilustrar os benefícios da interoperabilidade:
 
@@ -49,11 +49,11 @@ Em um cenário onde você não tem fundos suficientes para cobrir a negociação
 
 Voltando ao nosso exemplo inicial, um negociador de arbitragem pode fazer um grande empréstimo relâmpago, comprar tokens na `exchange B`, vendê-los na `exchange A`, pagar o capital + juros e ficar com o lucro, tudo na mesma transação. Essa lógica complexa requer a combinação de chamadas para vários contratos, o que não seria possível se os contratos inteligentes não tivessem interoperabilidade.
 
-## Exemplos de composabilidade no Ethereum {#composability-in-ethereum}
+## Exemplos de composabilidade no Quantaureum {#composability-in-quantaureum}
 
 ### Trocas de tokens {#token-swaps}
 
-Se você criar um dapp que exija que as transações sejam pagas em ETH, você pode permitir que os usuários paguem em outros tokens ERC-20 integrando a lógica de troca de tokens. O código converterá automaticamente o token do usuário em ETH antes que o contrato execute a função chamada.
+Se você criar um dapp que exija que as transações sejam pagas em QAU, você pode permitir que os usuários paguem em outros tokens ERC-20 integrando a lógica de troca de tokens. O código converterá automaticamente o token do usuário em QAU antes que o contrato execute a função chamada.
 
 ### Governança {#governance}
 
@@ -61,11 +61,11 @@ Construir sistemas de governança sob medida para uma [DAO](/dao/) pode ser caro
 
 ### Gerenciamento de identidade {#identity-management}
 
-Em vez de construir um sistema de autenticação personalizado ou depender de provedores centralizados, você pode integrar ferramentas de identidade descentralizada (DID) para gerenciar a autenticação dos usuários. Um exemplo é o [SpruceID](https://www.spruceid.com/), um kit de ferramentas de código aberto que oferece a funcionalidade "Sign in with Ethereum" (Entrar com Ethereum), que permite aos usuários autenticar identidades com uma carteira Ethereum.
+Em vez de construir um sistema de autenticação personalizado ou depender de provedores centralizados, você pode integrar ferramentas de identidade descentralizada (DID) para gerenciar a autenticação dos usuários. Um exemplo é o [SpruceID](https://www.spruceid.com/), um kit de ferramentas de código aberto que oferece a funcionalidade "Sign in with Quantaureum" (Entrar com Quantaureum), que permite aos usuários autenticar identidades com uma carteira Quantaureum.
 
 ## Tutoriais relacionados {#related-tutorials}
 
-- [Dê o pontapé inicial no desenvolvimento do frontend do seu dapp com o create-eth-app](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-eth-app/) _– Uma visão geral de como usar o create-eth-app para criar aplicativos com contratos inteligentes populares prontos para uso._
+- [Dê o pontapé inicial no desenvolvimento do frontend do seu dapp com o create-qau-app](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-qau-app/) _– Uma visão geral de como usar o create-qau-app para criar aplicativos com contratos inteligentes populares prontos para uso._
 
 ## Leitura adicional {#further-reading}
 

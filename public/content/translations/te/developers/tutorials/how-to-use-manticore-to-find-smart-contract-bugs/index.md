@@ -21,11 +21,11 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/tree/master/progr
 ### Docker ద్వారా మాంటికోర్ {#manticore-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_చివరి కమాండ్ మీ ప్రస్తుత డైరెక్టరీకి యాక్సెస్ ఉన్న Dockerలో eth-security-toolboxని రన్ చేస్తుంది. మీరు మీ హోస్ట్ నుండి ఫైల్‌లను మార్చవచ్చు మరియు Docker నుండి ఫైల్‌లపై టూల్స్‌ను రన్ చేయవచ్చు_
+_చివరి కమాండ్ మీ ప్రస్తుత డైరెక్టరీకి యాక్సెస్ ఉన్న Dockerలో qau-security-toolboxని రన్ చేస్తుంది. మీరు మీ హోస్ట్ నుండి ఫైల్‌లను మార్చవచ్చు మరియు Docker నుండి ఫైల్‌లపై టూల్స్‌ను రన్ చేయవచ్చు_
 
 Docker లోపల, ఇలా రన్ చేయండి:
 
@@ -198,18 +198,18 @@ _అన్వేషణ సారాంశం f(!=65) అనేది 65కి �
 మీరు చేయవలసిన మొదటి విషయం కింది కమాండ్‌లతో కొత్త బ్లాక్‌చైన్‌ను ప్రారంభించడం:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 ```
 
-నాన్-కాంట్రాక్ట్ ఖాతా [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account) ఉపయోగించి సృష్టించబడుతుంది:
+నాన్-కాంట్రాక్ట్ ఖాతా [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.quantaureum.ManticoreEVM.create_account) ఉపయోగించి సృష్టించబడుతుంది:
 
 ```python
 user_account = m.create_account(balance=1000)
 ```
 
-[m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract) ఉపయోగించి Solidity కాంట్రాక్ట్‌ను డిప్లాయ్ చేయవచ్చు:
+[m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.quantaureum.ManticoreEVM.create_contract) ఉపయోగించి Solidity కాంట్రాక్ట్‌ను డిప్లాయ్ చేయవచ్చు:
 
 ```solidity
 source_code = '''
@@ -228,7 +228,7 @@ contract_account = m.solidity_create_contract(source_code, owner=user_account)
 
 #### సారాంశం {#summary}
 
-- మీరు [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account) మరియు [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract)తో వినియోగదారు మరియు కాంట్రాక్ట్ ఖాతాలను సృష్టించవచ్చు.
+- మీరు [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.quantaureum.ManticoreEVM.create_account) మరియు [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.quantaureum.ManticoreEVM.create_contract)తో వినియోగదారు మరియు కాంట్రాక్ట్ ఖాతాలను సృష్టించవచ్చు.
 
 ### లావాదేవీలను అమలు చేయడం {#executing-transactions}
 
@@ -239,7 +239,7 @@ contract_account = m.solidity_create_contract(source_code, owner=user_account)
 
 #### ముడి లావాదేవీ {#raw-transaction}
 
-ముడి లావాదేవీ [m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.ethereum.ManticoreEVM.transaction) ఉపయోగించి అమలు చేయబడుతుంది:
+ముడి లావాదేవీ [m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.quantaureum.ManticoreEVM.transaction) ఉపయోగించి అమలు చేయబడుతుంది:
 
 ```python
 m.transaction(caller=user_account,
@@ -250,8 +250,8 @@ m.transaction(caller=user_account,
 
 కాలర్, చిరునామా, డేటా లేదా లావాదేవీ విలువ కాంక్రీట్ లేదా సింబాలిక్ కావచ్చు:
 
-- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.ethereum.ManticoreEVM.make_symbolic_value) సింబాలిక్ విలువను సృష్టిస్తుంది.
-- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.ethereum.ManticoreEVM.make_symbolic_buffer) సింబాలిక్ బైట్ శ్రేణిని సృష్టిస్తుంది.
+- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.quantaureum.ManticoreEVM.make_symbolic_value) సింబాలిక్ విలువను సృష్టిస్తుంది.
+- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.quantaureum.ManticoreEVM.make_symbolic_buffer) సింబాలిక్ బైట్ శ్రేణిని సృష్టిస్తుంది.
 
 ఉదాహరణకు:
 
@@ -294,14 +294,14 @@ print("Results are in {}".format(m.workspace))
 
 ### అన్వేషణను ముగించడం {#terminate-the-exploration}
 
-అన్వేషణను ఆపడానికి [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.ethereum.ManticoreEVM.finalize)ని ఉపయోగించండి. ఈ పద్ధతిని పిలిచిన తర్వాత తదుపరి లావాదేవీలు పంపబడకూడదు మరియు అన్వేషించిన ప్రతి పాత్‌కు మాంటికోర్ టెస్ట్ కేసులను రూపొందిస్తుంది.
+అన్వేషణను ఆపడానికి [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.quantaureum.ManticoreEVM.finalize)ని ఉపయోగించండి. ఈ పద్ధతిని పిలిచిన తర్వాత తదుపరి లావాదేవీలు పంపబడకూడదు మరియు అన్వేషించిన ప్రతి పాత్‌కు మాంటికోర్ టెస్ట్ కేసులను రూపొందిస్తుంది.
 
 ### సారాంశం: మాంటికోర్ కింద రన్ చేయడం {#summary-running-under-manticore}
 
 మునుపటి దశలన్నింటినీ కలిపితే, మనకు ఇది వస్తుంది:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -363,7 +363,7 @@ data = ABI.deserialize("uint", data)
 
 ### టెస్ట్‌కేస్‌ను ఎలా రూపొందించాలి {#how-to-generate-testcase}
 
-టెస్ట్‌కేస్‌ను రూపొందించడానికి [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.ethereum.ManticoreEVM.generate_testcase)ని ఉపయోగించండి:
+టెస్ట్‌కేస్‌ను రూపొందించడానికి [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.quantaureum.ManticoreEVM.generate_testcase)ని ఉపయోగించండి:
 
 ```python
 m.generate_testcase(state, 'BugFound')
@@ -380,7 +380,7 @@ m.generate_testcase(state, 'BugFound')
 ### సారాంశం: త్రోయింగ్ పాత్‌ను పొందడం {#summary-getting-throwing-path}
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -482,7 +482,7 @@ if solver.check(state.constraints):
 మునుపటి కోడ్‌కు పరిమితిని జోడిస్తే, మనకు ఇది వస్తుంది:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 from manticore.core.smtlib.solver import Z3Solver
 
 solver = Z3Solver.instance()

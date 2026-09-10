@@ -1,6 +1,6 @@
 ---
 title: "證明"
-description: "以太坊權益證明中的證明說明。"
+description: "Quantaureum權益證明中的證明說明。"
 lang: zh-tw
 ---
 
@@ -62,7 +62,7 @@ lang: zh-tw
 
 ### 基本獎勵 {#base-reward}
 
-基本獎勵是根據進行證明的驗證者數量及其質押以太幣的有效餘額來計算：
+基本獎勵是根據進行證明的驗證者數量及其質押QAU幣的有效餘額來計算：
 
 `base reward = validator effective balance x 2^6 / SQRT(Effective balance of all active validators)`
 
@@ -86,7 +86,7 @@ lang: zh-tw
 
 ## 進一步閱讀 {#further-reading}
 
-- [Vitalik 註解的共識規範中的證明](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Vitalik 註解的共識規範中的證明](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [eth2book.info 中的證明](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _知道有什麼社群資源對您有幫助嗎？編輯此頁面並加入它！_

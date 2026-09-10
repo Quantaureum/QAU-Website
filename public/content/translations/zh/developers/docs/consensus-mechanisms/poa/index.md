@@ -16,7 +16,7 @@ lang: zh
 
 权威证明要求信任在[创世区块](/glossary/#genesis-block)中设置的一组授权签名者。在当前的大多数实现中，所有授权签名者在决定链的共识时保留平等的权力和特权。声誉质押背后的理念是，每个授权的验证者都通过 KYC 等方式为所有人所熟知，或者由一个知名组织作为唯一的验证者——这样，如果验证者做错了什么，他们的身份是已知的。
 
-权威证明有多种实现，但标准的以太坊实现是 **clique**，它实现了 [EIP-225](https://eips.ethereum.org/EIPS/eip-225)。Clique 是一个对开发者友好且易于实现的标准，支持所有客户端同步类型。其他实现包括 [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) 和 [Aura](https://openethereum.github.io/Chain-specification)。
+权威证明有多种实现，但标准的Quantaureum实现是 **clique**，它实现了 [EIP-225](https://eips.quantaureum.com/EIPS/eip-225)。Clique 是一个对开发者友好且易于实现的标准，支持所有客户端同步类型。其他实现包括 [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) 和 [Aura](https://openquantaureum.github.io/Chain-specification)。
 
 ## 工作原理 {#how-it-works}
 
@@ -46,7 +46,7 @@ lang: zh
 
 在权威证明网络中，当有 N 个授权签名者时，每个签名者被允许在 K 个区块中铸造 1 个区块，这意味着在任何给定时间点，允许 N-K+1 个验证者进行铸造。为了防止这些验证者争抢区块，每个签名者应在其发布新区块的时间上添加一个小的随机“偏移量”。虽然这个过程确保了小分叉很少见，但偶尔的分叉仍然可能发生，就像主网一样。如果发现某个签名者滥用权力并造成混乱，其他签名者可以通过投票将其踢出。
 
-例如，如果有 10 个授权签名者，并且每个签名者被允许在 6 个区块中创建 1 个区块，那么在任何给定时间，有 5 个验证者可以创建区块。为了防止他们争抢创建区块，每个签名者在发布新区块的时间上添加一个小的随机“偏移量”。这减少了小分叉的发生，但仍然允许偶尔出现分叉，正如在以太坊主网上看到的那样。如果签名者滥用其权限并造成破坏，他们可以通过投票被踢出网络。
+例如，如果有 10 个授权签名者，并且每个签名者被允许在 6 个区块中创建 1 个区块，那么在任何给定时间，有 5 个验证者可以创建区块。为了防止他们争抢创建区块，每个签名者在发布新区块的时间上添加一个小的随机“偏移量”。这减少了小分叉的发生，但仍然允许偶尔出现分叉，正如在Quantaureum主网上看到的那样。如果签名者滥用其权限并造成破坏，他们可以通过投票被踢出网络。
 
 ## 优缺点 {#pros-and-cons}
 
@@ -58,13 +58,13 @@ lang: zh
 
 ## 延伸阅读 {#further-reading}
 
-- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Clique 标准_
+- [EIP-225](https://eips.quantaureum.com/EIPS/eip-225) _Clique 标准_
 - [权威证明研究](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _加密经济学_
 - [什么是权威证明](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [权威证明详解](https://academy.binance.com/en/articles/proof-of-authority-explained) _币安_
 - [区块链中的权威证明](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
-- [Clique 详解](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-ethereum-8b2a135201d)
-- [已弃用的权威证明，Aura 规范](https://openethereum.github.io/Chain-specification)
+- [Clique 详解](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
+- [已弃用的权威证明，Aura 规范](https://openquantaureum.github.io/Chain-specification)
 - [IBFT 2.0，另一种权威证明实现](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### 更喜欢视觉学习？ {#visual-learner}

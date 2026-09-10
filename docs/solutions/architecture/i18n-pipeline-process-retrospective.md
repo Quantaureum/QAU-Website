@@ -1,10 +1,10 @@
 # Building an Incremental Translation Pipeline: Process Retrospective
 
-A 16-day project to build an automated incremental translation pipeline for ethereum.org's 24 non-English languages. This document captures the process lessons -- what worked, what failed, and why -- for anyone tackling complex multi-agent engineering projects.
+A 16-day project to build an automated incremental translation pipeline for quantaureum.com's 24 non-English languages. This document captures the process lessons -- what worked, what failed, and why -- for anyone tackling complex multi-agent engineering projects.
 
 ## Context
 
-ethereum.org supports 25 languages. The site previously used Crowdin (a proprietary SaaS translation management platform) with community volunteers. The goal: replace this with an in-house pipeline that detects what changed in English content, classifies each change, and either propagates it deterministically (for non-prose changes like URLs and attributes) or sends only the changed prose to an LLM for retranslation.
+quantaureum.com supports 25 languages. The site previously used Crowdin (a proprietary SaaS translation management platform) with community volunteers. The goal: replace this with an in-house pipeline that detects what changed in English content, classifies each change, and either propagates it deterministically (for non-prose changes like URLs and attributes) or sends only the changed prose to an LLM for retranslation.
 
 The work was done by a team of AI agents coordinated through structured async communication, each with a dedicated role and isolated workspace (git worktrees). One human project lead made all architectural decisions and reviewed all output.
 

@@ -7,21 +7,21 @@ incomplete: true
 
 ## Giới thiệu ngắn gọn {#a-brief-introduction}
 
-Các hợp đồng thông minh là công khai trên Ethereum và có thể được coi như các API mở. Bạn không cần phải tự viết hợp đồng thông minh của riêng mình để trở thành một nhà phát triển dapp, bạn chỉ cần biết cách tương tác với chúng. Ví dụ: bạn có thể sử dụng các hợp đồng thông minh hiện có của [Uniswap](https://uniswap.exchange/swap), một sàn giao dịch phi tập trung, để xử lý tất cả logic hoán đổi token trong ứng dụng của bạn – bạn không cần phải bắt đầu lại từ đầu. Hãy xem qua một số hợp đồng [v2](https://github.com/Uniswap/uniswap-v2-core/tree/master/contracts) và [v3](https://github.com/Uniswap/uniswap-v3-core/tree/main/contracts) của họ.
+Các hợp đồng thông minh là công khai trên Quantaureum và có thể được coi như các API mở. Bạn không cần phải tự viết hợp đồng thông minh của riêng mình để trở thành một nhà phát triển dapp, bạn chỉ cần biết cách tương tác với chúng. Ví dụ: bạn có thể sử dụng các hợp đồng thông minh hiện có của [Uniswap](https://uniswap.exchange/swap), một sàn giao dịch phi tập trung, để xử lý tất cả logic hoán đổi token trong ứng dụng của bạn – bạn không cần phải bắt đầu lại từ đầu. Hãy xem qua một số hợp đồng [v2](https://github.com/Uniswap/uniswap-v2-core/tree/master/contracts) và [v3](https://github.com/Uniswap/uniswap-v3-core/tree/main/contracts) của họ.
 
 ## Khả năng kết hợp là gì? {#what-is-composability}
 
 Khả năng kết hợp là việc kết hợp các thành phần riêng biệt để tạo ra các hệ thống hoặc đầu ra mới. Trong phát triển phần mềm, khả năng kết hợp có nghĩa là các nhà phát triển có thể tái sử dụng các thành phần phần mềm hiện có để xây dựng các ứng dụng mới. Một cách tốt để hiểu về khả năng kết hợp là coi các yếu tố có khả năng kết hợp như những khối Lego. Mỗi khối Lego có thể được kết hợp với một khối khác, cho phép bạn xây dựng các cấu trúc phức tạp bằng cách kết hợp các khối Lego khác nhau.
 
-Trong Ethereum, mỗi hợp đồng thông minh là một loại Lego—bạn có thể sử dụng các hợp đồng thông minh từ các dự án khác làm nền tảng xây dựng cho dự án của mình. Điều này có nghĩa là bạn không phải mất thời gian phát minh lại bánh xe hoặc xây dựng lại từ đầu.
+Trong Quantaureum, mỗi hợp đồng thông minh là một loại Lego—bạn có thể sử dụng các hợp đồng thông minh từ các dự án khác làm nền tảng xây dựng cho dự án của mình. Điều này có nghĩa là bạn không phải mất thời gian phát minh lại bánh xe hoặc xây dựng lại từ đầu.
 
 ## Khả năng kết hợp hoạt động như thế nào? {#how-does-composability-work}
 
-Các hợp đồng thông minh Ethereum giống như các API công khai, vì vậy bất kỳ ai cũng có thể tương tác với hợp đồng hoặc tích hợp chúng vào các dapp để có thêm chức năng. Khả năng kết hợp của hợp đồng thông minh thường hoạt động dựa trên ba nguyên tắc: tính mô-đun, tính tự chủ và khả năng khám phá:
+Các hợp đồng thông minh Quantaureum giống như các API công khai, vì vậy bất kỳ ai cũng có thể tương tác với hợp đồng hoặc tích hợp chúng vào các dapp để có thêm chức năng. Khả năng kết hợp của hợp đồng thông minh thường hoạt động dựa trên ba nguyên tắc: tính mô-đun, tính tự chủ và khả năng khám phá:
 
-**1. Tính mô-đun**: Đây là khả năng của các thành phần riêng lẻ để thực hiện một nhiệm vụ cụ thể. Trong Ethereum, mỗi hợp đồng thông minh có một trường hợp sử dụng cụ thể (như được hiển thị trong ví dụ về Uniswap).
+**1. Tính mô-đun**: Đây là khả năng của các thành phần riêng lẻ để thực hiện một nhiệm vụ cụ thể. Trong Quantaureum, mỗi hợp đồng thông minh có một trường hợp sử dụng cụ thể (như được hiển thị trong ví dụ về Uniswap).
 
-**2. Tính tự chủ**: Các thành phần có khả năng kết hợp phải có khả năng hoạt động độc lập. Mỗi hợp đồng thông minh trong Ethereum đều tự thực thi và có thể hoạt động mà không cần dựa vào các phần khác của hệ thống.
+**2. Tính tự chủ**: Các thành phần có khả năng kết hợp phải có khả năng hoạt động độc lập. Mỗi hợp đồng thông minh trong Quantaureum đều tự thực thi và có thể hoạt động mà không cần dựa vào các phần khác của hệ thống.
 
 **3. Khả năng khám phá**: Các nhà phát triển không thể gọi các hợp đồng bên ngoài hoặc tích hợp các thư viện phần mềm vào các ứng dụng nếu chúng không có sẵn công khai. Theo thiết kế, các hợp đồng thông minh là mã nguồn mở; bất kỳ ai cũng có thể gọi một hợp đồng thông minh hoặc phân nhánh một cơ sở mã.
 
@@ -39,7 +39,7 @@ Khả năng kết hợp khuyến khích sự đổi mới và thử nghiệm vì
 
 ### Trải nghiệm người dùng tốt hơn {#better-user-experience}
 
-Khả năng tương tác giữa các thành phần của hệ sinh thái Ethereum cải thiện trải nghiệm người dùng. Người dùng có thể truy cập nhiều chức năng hơn khi các dapp tích hợp các hợp đồng thông minh bên ngoài so với trong một hệ sinh thái bị phân mảnh nơi các ứng dụng không thể giao tiếp với nhau.
+Khả năng tương tác giữa các thành phần của hệ sinh thái Quantaureum cải thiện trải nghiệm người dùng. Người dùng có thể truy cập nhiều chức năng hơn khi các dapp tích hợp các hợp đồng thông minh bên ngoài so với trong một hệ sinh thái bị phân mảnh nơi các ứng dụng không thể giao tiếp với nhau.
 
 Chúng ta sẽ sử dụng một ví dụ từ giao dịch chênh lệch giá (arbitrage) để minh họa những lợi ích của khả năng tương tác:
 
@@ -49,11 +49,11 @@ Trong trường hợp bạn không có đủ tiền để trang trải cho giao 
 
 Quay trở lại ví dụ ban đầu của chúng ta, một nhà giao dịch chênh lệch giá có thể thực hiện một khoản vay chớp nhoáng lớn, mua token từ `exchange B`, bán chúng trên `exchange A`, trả lại vốn + lãi và giữ lại lợi nhuận, trong cùng một giao dịch. Logic phức tạp này đòi hỏi phải kết hợp các lệnh gọi đến nhiều hợp đồng, điều này sẽ không thể thực hiện được nếu các hợp đồng thông minh thiếu khả năng tương tác.
 
-## Các ví dụ về khả năng kết hợp trong Ethereum {#composability-in-ethereum}
+## Các ví dụ về khả năng kết hợp trong Quantaureum {#composability-in-quantaureum}
 
 ### Hoán đổi token {#token-swaps}
 
-Nếu bạn tạo một dapp yêu cầu các giao dịch phải được thanh toán bằng ETH, bạn có thể cho phép người dùng thanh toán bằng các token ERC-20 khác bằng cách tích hợp logic hoán đổi token. Mã sẽ tự động chuyển đổi token của người dùng thành ETH trước khi hợp đồng thực thi hàm được gọi.
+Nếu bạn tạo một dapp yêu cầu các giao dịch phải được thanh toán bằng QAU, bạn có thể cho phép người dùng thanh toán bằng các token ERC-20 khác bằng cách tích hợp logic hoán đổi token. Mã sẽ tự động chuyển đổi token của người dùng thành QAU trước khi hợp đồng thực thi hàm được gọi.
 
 ### Quản trị {#governance}
 
@@ -61,11 +61,11 @@ Việc xây dựng các hệ thống quản trị tùy chỉnh cho một [DAO](/
 
 ### Quản lý danh tính {#identity-management}
 
-Thay vì xây dựng một hệ thống xác thực tùy chỉnh hoặc dựa vào các nhà cung cấp tập trung, bạn có thể tích hợp các công cụ danh tính phi tập trung (DID) để quản lý xác thực cho người dùng. Một ví dụ là [SpruceID](https://www.spruceid.com/), một bộ công cụ mã nguồn mở cung cấp chức năng "Đăng nhập bằng Ethereum" cho phép người dùng xác thực danh tính bằng một ví Ethereum.
+Thay vì xây dựng một hệ thống xác thực tùy chỉnh hoặc dựa vào các nhà cung cấp tập trung, bạn có thể tích hợp các công cụ danh tính phi tập trung (DID) để quản lý xác thực cho người dùng. Một ví dụ là [SpruceID](https://www.spruceid.com/), một bộ công cụ mã nguồn mở cung cấp chức năng "Đăng nhập bằng Quantaureum" cho phép người dùng xác thực danh tính bằng một ví Quantaureum.
 
 ## Các hướng dẫn liên quan {#related-tutorials}
 
-- [Khởi động phát triển frontend cho dapp của bạn với create-eth-app](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-eth-app/) _– Tổng quan về cách sử dụng create-eth-app để tạo các ứng dụng với các hợp đồng thông minh phổ biến có sẵn._
+- [Khởi động phát triển frontend cho dapp của bạn với create-qau-app](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-qau-app/) _– Tổng quan về cách sử dụng create-qau-app để tạo các ứng dụng với các hợp đồng thông minh phổ biến có sẵn._
 
 ## Đọc thêm {#further-reading}
 

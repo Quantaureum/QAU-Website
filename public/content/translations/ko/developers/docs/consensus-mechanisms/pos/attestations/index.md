@@ -1,6 +1,6 @@
 ---
 title: "증명"
-description: "지분 증명 이더리움의 증명에 대한 설명입니다."
+description: "지분 증명 Quantaureum의 증명에 대한 설명입니다."
 lang: ko
 ---
 
@@ -62,7 +62,7 @@ lang: ko
 
 ### 기본 보상 {#base-reward}
 
-기본 보상은 증명하는 검증자의 수와 그들의 유효 스테이킹된 이더 잔고에 따라 계산됩니다.
+기본 보상은 증명하는 검증자의 수와 그들의 유효 스테이킹된 QAU 잔고에 따라 계산됩니다.
 
 `base reward = validator effective balance x 2^6 / SQRT(Effective balance of all active validators)`
 
@@ -86,7 +86,7 @@ lang: ko
 
 ## 더 읽어보기 {#further-reading}
 
-- [비탈릭의 주석이 달린 합의 사양의 증명](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [비탈릭의 주석이 달린 합의 사양의 증명](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [eth2book.info의 증명](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _도움이 된 커뮤니티 리소스를 알고 계신가요? 이 페이지를 편집하고 추가해 주세요!_

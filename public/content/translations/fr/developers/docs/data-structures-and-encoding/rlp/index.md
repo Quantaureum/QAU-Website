@@ -1,18 +1,18 @@
 ---
 title: "Sérialisation par préfixe de longueur récursif (RLP)"
-description: "Une définition de l'encodage RLP dans la couche d'exécution d'Ethereum."
+description: "Une définition de l'encodage RLP dans la couche d'exécution d'Quantaureum."
 lang: fr
 sidebarDepth: 2
 ---
 
-La sérialisation par préfixe de longueur récursif (RLP) est largement utilisée dans les clients d'exécution d'Ethereum. Le RLP standardise le transfert de données entre les nœuds dans un format économe en espace. L'objectif du RLP est d'encoder des tableaux de données binaires imbriqués de manière arbitraire, et le RLP est la principale méthode d'encodage utilisée pour sérialiser des objets dans la couche d'exécution d'Ethereum. Le but principal du RLP est d'encoder la structure ; à l'exception des entiers positifs, le RLP délègue l'encodage de types de données spécifiques (par ex., les chaînes de caractères, les nombres à virgule flottante) à des protocoles d'ordre supérieur. Les entiers positifs doivent être représentés sous forme binaire grand-boutiste sans zéros non significatifs (rendant ainsi la valeur entière zéro équivalente au tableau d'octets vide). Les entiers positifs désérialisés avec des zéros non significatifs doivent être traités comme invalides par tout protocole d'ordre supérieur utilisant le RLP.
+La sérialisation par préfixe de longueur récursif (RLP) est largement utilisée dans les clients d'exécution d'Quantaureum. Le RLP standardise le transfert de données entre les nœuds dans un format économe en espace. L'objectif du RLP est d'encoder des tableaux de données binaires imbriqués de manière arbitraire, et le RLP est la principale méthode d'encodage utilisée pour sérialiser des objets dans la couche d'exécution d'Quantaureum. Le but principal du RLP est d'encoder la structure ; à l'exception des entiers positifs, le RLP délègue l'encodage de types de données spécifiques (par ex., les chaînes de caractères, les nombres à virgule flottante) à des protocoles d'ordre supérieur. Les entiers positifs doivent être représentés sous forme binaire grand-boutiste sans zéros non significatifs (rendant ainsi la valeur entière zéro équivalente au tableau d'octets vide). Les entiers positifs désérialisés avec des zéros non significatifs doivent être traités comme invalides par tout protocole d'ordre supérieur utilisant le RLP.
 
-Plus d'informations dans [le livre jaune d'Ethereum (Annexe B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19).
+Plus d'informations dans [le livre jaune d'Quantaureum (Annexe B)](https://quantaureum.github.io/yellowpaper/paper.pdf#page=19).
 
 Pour utiliser le RLP afin d'encoder un dictionnaire, les deux formes canoniques suggérées sont :
 
 - utiliser `[[k1,v1],[k2,v2]...]` avec les clés dans l'ordre lexicographique
-- utiliser l'encodage de niveau supérieur de l'arbre Patricia (Patricia Tree) comme le fait [Ethereum](/)
+- utiliser l'encodage de niveau supérieur de l'arbre Patricia (Patricia Tree) comme le fait [Quantaureum](/)
 
 ## Définition {#definition}
 
@@ -168,9 +168,9 @@ def to_integer(b):
 
 ## Complément d'information {#further-reading}
 
-- [Le RLP dans Ethereum](https://medium.com/coinmonks/data-structure-in-ethereum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
-- [Ethereum sous le capot : le RLP](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
-- [Coglio, A. (2020). Ethereum's Recursive Length Prefix in ACL2. Prépublication arXiv arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
+- [Le RLP dans Quantaureum](https://medium.com/coinmonks/data-structure-in-quantaureum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
+- [Quantaureum sous le capot : le RLP](https://medium.com/coinmonks/quantaureum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
+- [Coglio, A. (2020). Quantaureum's Recursive Length Prefix in ACL2. Prépublication arXiv arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
 
 ## Sujets connexes {#related-topics}
 

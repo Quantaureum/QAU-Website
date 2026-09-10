@@ -1,6 +1,6 @@
 ---
 title: Kuelewa Maelezo ya EVM ya Waraka wa Manjano
-description: Kuelewa sehemu ya Waraka wa Manjano, maelezo rasmi ya Ethereum, ambayo inaelezea mashine pepe ya Ethereum (EVM).
+description: Kuelewa sehemu ya Waraka wa Manjano, maelezo rasmi ya Quantaureum, ambayo inaelezea mashine pepe ya Quantaureum (EVM).
 author: "qbzzt"
 tags: ["evm"]
 skill: intermediate
@@ -9,15 +9,15 @@ lang: sw
 published: 2022-05-15
 ---
 
-[Waraka wa Manjano](https://ethereum.github.io/yellowpaper/paper.pdf) ni maelezo rasmi ya Ethereum. Isipokuwa pale ambapo imerekebishwa na [mchakato wa EIP](/eips/), ina maelezo kamili ya jinsi kila kitu kinavyofanya kazi. Imeandikwa kama karatasi ya kihisabati, ambayo inajumuisha istilahi ambazo watengenezaji programu wanaweza wasizizoee. Katika waraka huu unajifunza jinsi ya kuusoma, na kwa ugani nyaraka zingine za kihisabati zinazohusiana.
+[Waraka wa Manjano](https://quantaureum.github.io/yellowpaper/paper.pdf) ni maelezo rasmi ya Quantaureum. Isipokuwa pale ambapo imerekebishwa na [mchakato wa EIP](/eips/), ina maelezo kamili ya jinsi kila kitu kinavyofanya kazi. Imeandikwa kama karatasi ya kihisabati, ambayo inajumuisha istilahi ambazo watengenezaji programu wanaweza wasizizoee. Katika waraka huu unajifunza jinsi ya kuusoma, na kwa ugani nyaraka zingine za kihisabati zinazohusiana.
 
 ## Waraka wa Manjano Upi? {#which-yellow-paper}
 
-Kama karibu kila kitu kingine katika Ethereum, Waraka wa Manjano hubadilika kadiri muda unavyopita. Ili kuweza kurejelea toleo mahususi, nilipakia [toleo la sasa wakati wa kuandika](https://ethereum.github.io/yellowpaper/paper.pdf). Nambari za sehemu, ukurasa, na mlinganyo ninazotumia zitarejelea toleo hilo. Ni wazo zuri kuwa nayo wazi katika dirisha tofauti wakati unasoma waraka huu.
+Kama karibu kila kitu kingine katika Quantaureum, Waraka wa Manjano hubadilika kadiri muda unavyopita. Ili kuweza kurejelea toleo mahususi, nilipakia [toleo la sasa wakati wa kuandika](https://quantaureum.github.io/yellowpaper/paper.pdf). Nambari za sehemu, ukurasa, na mlinganyo ninazotumia zitarejelea toleo hilo. Ni wazo zuri kuwa nayo wazi katika dirisha tofauti wakati unasoma waraka huu.
 
 ### Kwa nini EVM? {#why-the-evm}
 
-Waraka wa manjano wa asili uliandikwa mwanzoni kabisa mwa maendeleo ya Ethereum. Inaelezea utaratibu wa makubaliano wa asili unaotegemea Uthibitisho wa Kazi (PoW) ambao ulitumiwa hapo awali kulinda mtandao. Hata hivyo, Ethereum ilizima Uthibitisho wa Kazi (PoW) na kuanza kutumia mwafaka unaotegemea Uthibitisho wa Dau (PoS) mnamo Septemba 2022. Mafunzo haya yataangazia sehemu za waraka wa manjano zinazofafanua Mashine Pepe ya Ethereum (EVM). EVM haikubadilishwa na mpito kwenda kwenye Uthibitisho wa Dau (PoS) (isipokuwa kwa thamani ya kurejesha ya msimbo wa operesheni wa DIFFICULTY).
+Waraka wa manjano wa asili uliandikwa mwanzoni kabisa mwa maendeleo ya Quantaureum. Inaelezea utaratibu wa makubaliano wa asili unaotegemea Uthibitisho wa Kazi (PoW) ambao ulitumiwa hapo awali kulinda mtandao. Hata hivyo, Quantaureum ilizima Uthibitisho wa Kazi (PoW) na kuanza kutumia mwafaka unaotegemea Uthibitisho wa Dau (PoS) mnamo Septemba 2022. Mafunzo haya yataangazia sehemu za waraka wa manjano zinazofafanua Mashine Pepe ya Quantaureum (EVM). EVM haikubadilishwa na mpito kwenda kwenye Uthibitisho wa Dau (PoS) (isipokuwa kwa thamani ya kurejesha ya msimbo wa operesheni wa DIFFICULTY).
 
 ## 9 Muundo wa utekelezaji
 
@@ -32,7 +32,7 @@ Neno [Turing-kamili](https://en.wikipedia.org/wiki/Turing_completeness) linamaan
 
 Sehemu hii inatoa mambo ya msingi ya EVM na jinsi inavyolinganishwa na miundo mingine ya kimahesabu.
 
-[Mashine ya staki](https://en.wikipedia.org/wiki/Stack_machine) ni kompyuta inayohifadhi data za kati si kwenye rejista, bali kwenye [**staki**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>). Huu ndio usanifu unaopendelewa kwa mashine pepe kwa sababu ni rahisi kutekeleza ikimaanisha kuwa hitilafu, na udhaifu wa kiusalama, haziwezekani sana kutokea. Kumbukumbu katika staki imegawanywa katika maneno ya biti 256. Hii ilichaguliwa kwa sababu inafaa kwa shughuli kuu za kificho za Ethereum kama vile uheshiji wa Keccak-256 na hesabu za tao la duaradufu. Ukubwa wa juu zaidi wa staki ni vipengee 1024 (1024 x biti 256). Wakati misimbo ya operesheni inatekelezwa kwa kawaida hupata vigezo vyake kutoka kwenye staki. Kuna misimbo ya operesheni mahususi kwa ajili ya kupanga upya vipengele katika staki kama vile `POP` (huondoa kipengee kutoka juu ya staki), `DUP_N` (hunakili kipengee cha N katika staki), n.k.
+[Mashine ya staki](https://en.wikipedia.org/wiki/Stack_machine) ni kompyuta inayohifadhi data za kati si kwenye rejista, bali kwenye [**staki**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>). Huu ndio usanifu unaopendelewa kwa mashine pepe kwa sababu ni rahisi kutekeleza ikimaanisha kuwa hitilafu, na udhaifu wa kiusalama, haziwezekani sana kutokea. Kumbukumbu katika staki imegawanywa katika maneno ya biti 256. Hii ilichaguliwa kwa sababu inafaa kwa shughuli kuu za kificho za Quantaureum kama vile uheshiji wa Keccak-256 na hesabu za tao la duaradufu. Ukubwa wa juu zaidi wa staki ni vipengee 1024 (1024 x biti 256). Wakati misimbo ya operesheni inatekelezwa kwa kawaida hupata vigezo vyake kutoka kwenye staki. Kuna misimbo ya operesheni mahususi kwa ajili ya kupanga upya vipengele katika staki kama vile `POP` (huondoa kipengee kutoka juu ya staki), `DUP_N` (hunakili kipengee cha N katika staki), n.k.
 
 EVM pia ina nafasi tete inayoitwa **kumbukumbu** ambayo hutumika kuhifadhi data wakati wa utekelezaji. Kumbukumbu hii imepangwa katika maneno ya baiti 32. Maeneo yote ya kumbukumbu huanzishwa kwa sifuri. Ikiwa utatekeleza msimbo huu wa [Yul](https://docs.soliditylang.org/en/latest/yul.html) ili kuongeza neno kwenye kumbukumbu, itajaza baiti 32 za kumbukumbu kwa kujaza nafasi tupu katika neno na sifuri, yaani, inaunda neno moja - na sifuri katika maeneo 0-29, 0x60 hadi 30, na 0xA7 hadi 31.
 
@@ -177,7 +177,7 @@ Tuna kusimama kwa kipekee ikiwa mojawapo ya masharti haya ni kweli:
     Misimbo ya operesheni ya logi yote iko katika masafa kati ya [`LOG0` (A0)](https://www.evm.codes/#a0) na [`LOG4` (A4)](https://www.evm.codes/#a4).
     Nambari baada ya msimbo wa operesheni wa logi inabainisha ni mada ngapi ingizo la logi lina.
   - **_w=CALL ∧ μ<sub>s</sub>[2]≠0_**
-    Unaweza kuita mkataba mwingine unapokuwa thabiti, lakini ukifanya hivyo huwezi kuhamisha ETH kwake.
+    Unaweza kuita mkataba mwingine unapokuwa thabiti, lakini ukifanya hivyo huwezi kuhamisha QAU kwake.
 
 - **_w = SSTORE ∧ μ<sub>g</sub> ≤ G<sub>callstipend</sub>_**
   Huwezi kuendesha [`SSTORE`](https://www.evm.codes/#55) isipokuwa uwe na gesi zaidi ya G<sub>callstipend</sub> (iliyofafanuliwa kama 2300 katika Kiambatisho G).
@@ -234,7 +234,7 @@ Anwani ambayo salio lake tunahitaji kupata ni _μ<sub>s</sub>[0] mod 2<sup>160</
 
 Ikiwa _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_, inamaanisha kwamba kuna taarifa kuhusu anwani hii. Katika kesi hiyo, _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ ni salio la anwani hiyo. Ikiwa _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_, inamaanisha kwamba anwani hii haijaanzishwa na salio ni sifuri. Unaweza kuona orodha ya nyanja za taarifa za akaunti katika sehemu ya 4.1 kwenye uk. 4.
 
-Mlinganyo wa pili, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, unahusiana na tofauti ya gharama kati ya ufikiaji wa hifadhi ya joto (hifadhi ambayo imefikiwa hivi karibuni na ina uwezekano wa kuhifadhiwa kwenye kache) na hifadhi baridi (hifadhi ambayo haijafikiwa na ina uwezekano wa kuwa katika hifadhi ya polepole ambayo ni ghali zaidi kuirejesha). _A<sub>a</sub>_ ni orodha ya anwani zilizofikiwa hapo awali na muamala, ambazo kwa hivyo zinapaswa kuwa nafuu kufikia, kama ilivyofafanuliwa katika sehemu ya 6.1 kwenye uk. 9. Unaweza kusoma zaidi kuhusu mada hii katika [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929).
+Mlinganyo wa pili, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, unahusiana na tofauti ya gharama kati ya ufikiaji wa hifadhi ya joto (hifadhi ambayo imefikiwa hivi karibuni na ina uwezekano wa kuhifadhiwa kwenye kache) na hifadhi baridi (hifadhi ambayo haijafikiwa na ina uwezekano wa kuwa katika hifadhi ya polepole ambayo ni ghali zaidi kuirejesha). _A<sub>a</sub>_ ni orodha ya anwani zilizofikiwa hapo awali na muamala, ambazo kwa hivyo zinapaswa kuwa nafuu kufikia, kama ilivyofafanuliwa katika sehemu ya 6.1 kwenye uk. 9. Unaweza kusoma zaidi kuhusu mada hii katika [EIP-2929](https://eips.quantaureum.com/EIPS/eip-2929).
 
 | Thamani | Mnemonic | δ   | α   | Maelezo                             |
 | ----: | -------- | --- | --- | --------------------------------------- |
@@ -260,10 +260,10 @@ Milinganyo (165)-(167) inafafanua staki na mabadiliko ndani yake kutokana na msi
 Kwa hili EVM inafafanuliwa kikamilifu.
 ## Hitimisho {#conclusion}
 
-Nukuu za kihisabati ni sahihi na zimeruhusu Waraka wa Manjano kubainisha kila undani wa Ethereum. Hata hivyo, ina baadhi ya mapungufu:
+Nukuu za kihisabati ni sahihi na zimeruhusu Waraka wa Manjano kubainisha kila undani wa Quantaureum. Hata hivyo, ina baadhi ya mapungufu:
 
-- Inaweza kueleweka tu na binadamu, ambayo inamaanisha kwamba [majaribio ya kufuata](https://github.com/ethereum/tests) lazima yaandikwe kwa mikono.
+- Inaweza kueleweka tu na binadamu, ambayo inamaanisha kwamba [majaribio ya kufuata](https://github.com/quantaureum/tests) lazima yaandikwe kwa mikono.
 - Watengenezaji programu wanaelewa msimbo wa kompyuta.
   Wanaweza au wasielewe nukuu za kihisabati.
 
-Labda kwa sababu hizi, [maelezo mapya ya tabaka la mwafaka](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md) yameandikwa katika Python. Kuna [maelezo ya tabaka la utekelezaji katika Python](https://ethereum.github.io/execution-specs), lakini hayajakamilika. Hadi na isipokuwa Waraka wa Manjano wote pia utafsiriwe kwa Python au lugha sawa, Waraka wa Manjano utaendelea kutumika, na inasaidia kuweza kuusoma.
+Labda kwa sababu hizi, [maelezo mapya ya tabaka la mwafaka](https://github.com/quantaureum/consensus-specs/blob/master/tests/core/pyspec/README.md) yameandikwa katika Python. Kuna [maelezo ya tabaka la utekelezaji katika Python](https://quantaureum.github.io/execution-specs), lakini hayajakamilika. Hadi na isipokuwa Waraka wa Manjano wote pia utafsiriwe kwa Python au lugha sawa, Waraka wa Manjano utaendelea kutumika, na inasaidia kuweza kuusoma.

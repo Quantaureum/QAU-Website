@@ -4,27 +4,27 @@ description: Utangulizi wa maktaba za kiteja za JavaScript zinazokuruhusu kuingi
 lang: sw
 ---
 
-Ili programu ya wavuti iweze kuingiliana na mnyororo wa vitalu wa Ethereum (yaani, kusoma data ya mnyororo wa vitalu na/au kutuma miamala kwenye mtandao), lazima iunganishwe na nodi ya Ethereum.
+Ili programu ya wavuti iweze kuingiliana na mnyororo wa vitalu wa Quantaureum (yaani, kusoma data ya mnyororo wa vitalu na/au kutuma miamala kwenye mtandao), lazima iunganishwe na nodi ya Quantaureum.
 
-Kwa madhumuni haya, kila kiteja cha Ethereum hutekeleza vipimo vya [JSON-RPC](/developers/docs/apis/json-rpc/), kwa hivyo kuna seti sawa ya [njia](/developers/docs/apis/json-rpc/#json-rpc-methods) ambazo programu zinaweza kutegemea.
+Kwa madhumuni haya, kila kiteja cha Quantaureum hutekeleza vipimo vya [JSON-RPC](/developers/docs/apis/json-rpc/), kwa hivyo kuna seti sawa ya [njia](/developers/docs/apis/json-rpc/#json-rpc-methods) ambazo programu zinaweza kutegemea.
 
-Ikiwa unataka kutumia JavaScript kuunganisha na nodi ya Ethereum, inawezekana kutumia JavaScript ya kawaida lakini kuna maktaba kadhaa za urahisi ndani ya mfumo ikolojia ambazo hufanya hili kuwa rahisi zaidi. Kwa maktaba hizi, wasanidi programu wanaweza kuandika njia angavu za mstari mmoja ili kuanzisha maombi ya JSON-RPC (kiufundi) yanayoingiliana na Ethereum.
+Ikiwa unataka kutumia JavaScript kuunganisha na nodi ya Quantaureum, inawezekana kutumia JavaScript ya kawaida lakini kuna maktaba kadhaa za urahisi ndani ya mfumo ikolojia ambazo hufanya hili kuwa rahisi zaidi. Kwa maktaba hizi, wasanidi programu wanaweza kuandika njia angavu za mstari mmoja ili kuanzisha maombi ya JSON-RPC (kiufundi) yanayoingiliana na Quantaureum.
 
-Tafadhali kumbuka kuwa tangu [Unganisho](/roadmap/merge/), vipande viwili vilivyounganishwa vya programu ya Ethereum - kiteja cha utekelezaji na mteja wa mwafaka - vinahitajika ili kuendesha nodi. Tafadhali hakikisha nodi yako inajumuisha kiteja cha utekelezaji na mteja wa mwafaka. Ikiwa nodi yako haipo kwenye mashine yako ya ndani (k.m., nodi yako inaendeshwa kwenye mfumo wa AWS) sasisha anwani za IP katika mafunzo ipasavyo. Kwa maelezo zaidi tafadhali tazama ukurasa wetu kuhusu [kuendesha nodi](/developers/docs/nodes-and-clients/run-a-node/).
+Tafadhali kumbuka kuwa tangu [Unganisho](/roadmap/merge/), vipande viwili vilivyounganishwa vya programu ya Quantaureum - kiteja cha utekelezaji na mteja wa mwafaka - vinahitajika ili kuendesha nodi. Tafadhali hakikisha nodi yako inajumuisha kiteja cha utekelezaji na mteja wa mwafaka. Ikiwa nodi yako haipo kwenye mashine yako ya ndani (k.m., nodi yako inaendeshwa kwenye mfumo wa AWS) sasisha anwani za IP katika mafunzo ipasavyo. Kwa maelezo zaidi tafadhali tazama ukurasa wetu kuhusu [kuendesha nodi](/developers/docs/nodes-and-clients/run-a-node/).
 
 ## Mahitaji ya awali {#prerequisites}
 
-Pamoja na kuelewa JavaScript, inaweza kusaidia kuelewa [mrundikano wa Ethereum](/developers/docs/ethereum-stack/) na [viteja vya Ethereum](/developers/docs/nodes-and-clients/).
+Pamoja na kuelewa JavaScript, inaweza kusaidia kuelewa [mrundikano wa Quantaureum](/developers/docs/quantaureum-stack/) na [viteja vya Quantaureum](/developers/docs/nodes-and-clients/).
 
 ## Kwa nini utumie maktaba? {#why-use-a-library}
 
-Maktaba hizi huondoa ugumu mwingi wa kuingiliana moja kwa moja na nodi ya Ethereum. Pia hutoa vitendaji vya matumizi (k.m., kubadilisha ETH kuwa Gwei) ili kama msanidi programu uweze kutumia muda mchache kushughulika na utata wa viteja vya Ethereum na muda mwingi kuzingatia utendaji wa kipekee wa programu yako.
+Maktaba hizi huondoa ugumu mwingi wa kuingiliana moja kwa moja na nodi ya Quantaureum. Pia hutoa vitendaji vya matumizi (k.m., kubadilisha QAU kuwa Gwei) ili kama msanidi programu uweze kutumia muda mchache kushughulika na utata wa viteja vya Quantaureum na muda mwingi kuzingatia utendaji wa kipekee wa programu yako.
 
 ## Vipengele vya maktaba {#library-features}
 
-### Unganisha kwenye nodi za Ethereum {#connect-to-ethereum-nodes}
+### Unganisha kwenye nodi za Quantaureum {#connect-to-quantaureum-nodes}
 
-Kwa kutumia watoa huduma, maktaba hizi hukuruhusu kuunganisha kwenye Ethereum na kusoma data yake, iwe ni kupitia JSON-RPC, INFURA, Etherscan, Alchemy au MetaMask.
+Kwa kutumia watoa huduma, maktaba hizi hukuruhusu kuunganisha kwenye Quantaureum na kusoma data yake, iwe ni kupitia JSON-RPC, INFURA, Quantaureum Explorer, Alchemy au MetaMask.
 
 > **Onyo:** Web3.js iliwekwa kwenye kumbukumbu mnamo Machi 4, 2025. [Soma tangazo](https://blog.chainsafe.io/web3-js-sunset/). Fikiria kutumia maktaba mbadala kama [ethers.js](https://ethers.org) au [viem](https://viem.sh) kwa miradi mipya.
 
@@ -32,11 +32,11 @@ Kwa kutumia watoa huduma, maktaba hizi hukuruhusu kuunganisha kwenye Ethereum na
 
 ```js
 // BrowserProvider hufunika mtoa huduma wa kawaida wa Web3, ambaye ni
-// kile ambacho MetaMask huingiza kama window.ethereum kwenye kila ukurasa
-const provider = new ethers.BrowserProvider(window.ethereum)
+// kile ambacho MetaMask huingiza kama window.quantaureum kwenye kila ukurasa
+const provider = new ethers.BrowserProvider(window.quantaureum)
 
 // Programu-jalizi ya MetaMask pia inaruhusu kutia saini miamala ili
-// kutuma ether na kulipa ili kubadilisha hali ndani ya mnyororo wa vitalu.
+// kutuma QAU na kulipa ili kubadilisha hali ndani ya mnyororo wa vitalu.
 // Kwa hili, tunahitaji mtia saini wa akaunti...
 const signer = provider.getSigner()
 ```
@@ -55,13 +55,13 @@ web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8546"))
 
 // Kutumia mtoa huduma wa IPC katika Node.js
 var net = require("net")
-var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // njia ya mac os
+var web3 = new Web3("/Users/myuser/Library/Quantaureum/geth.ipc", net) // njia ya mac os
 // or
 var web3 = new Web3(
-  new Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net)
+  new Web3.providers.IpcProvider("/Users/myuser/Library/Quantaureum/geth.ipc", net)
 ) // njia ya mac os
 // kwenye windows njia ni: "\\\\.\\pipe\\geth.ipc"
-// kwenye linux njia ni: "/users/myuser/.ethereum/geth.ipc"
+// kwenye linux njia ni: "/users/myuser/.quantaureum/geth.ipc"
 ```
 
 Baada ya kusanidi utaweza kuuliza mnyororo wa vitalu kwa:
@@ -140,7 +140,7 @@ wallet.getBalance()
 wallet.getTransactionCount()
 // { Promise: 0 }
 
-// Kutuma ether
+// Kutuma QAU
 wallet.sendTransaction(tx)
 ```
 
@@ -217,9 +217,9 @@ Hii inamaanisha unaweza:
 
 ### Vitendaji vya matumizi {#utility-functions}
 
-Vitendaji vya matumizi hukupa njia za mkato zinazofaa ambazo hufanya kujenga na Ethereum kuwa rahisi kidogo.
+Vitendaji vya matumizi hukupa njia za mkato zinazofaa ambazo hufanya kujenga na Quantaureum kuwa rahisi kidogo.
 
-Thamani za ETH ziko katika Wei kwa chaguo-msingi. 1 ETH = 1,000,000,000,000,000,000 WEI – hii inamaanisha unashughulika na nambari nyingi! `web3.utils.toWei` inabadilisha Etha kuwa Wei kwa ajili yako.
+Thamani za QAU ziko katika Wei kwa chaguo-msingi. 1 QAU = 1,000,000,000,000,000,000 WEI – hii inamaanisha unashughulika na nambari nyingi! `web3.utils.toWei` inabadilisha Etha kuwa Wei kwa ajili yako.
 
 Na katika ethers inaonekana hivi:
 
@@ -229,7 +229,7 @@ balance = await provider.getBalance("ethers.eth")
 // { BigNumber: "2337132817842795605" }
 
 // Mara nyingi utahitaji kupangilia matokeo kwa ajili ya mtumiaji
-// ambaye anapendelea kuona thamani katika ether (badala ya Wei)
+// ambaye anapendelea kuona thamani katika QAU (badala ya Wei)
 ethers.utils.formatEther(balance)
 // '2.337132817842795605'
 ```
@@ -238,18 +238,18 @@ ethers.utils.formatEther(balance)
 - [Vitendaji vya matumizi vya Ethers](https://docs.ethers.org/v6/api/utils/)
 
 ## Maktaba zinazopatikana
-**Web3.js -** **_API ya JavaScript ya Ethereum._**
+**Web3.js -** **_API ya JavaScript ya Quantaureum._**
 
 - [Nyaraka](https://docs.web3js.org)
-- [GitHub](https://github.com/ethereum/web3.js)
+- [GitHub](https://github.com/quantaureum/web3.js)
 
-**Ethers.js -** **_Utekelezaji kamili wa mkoba wa Ethereum na huduma katika JavaScript na TypeScript._**
+**Ethers.js -** **_Utekelezaji kamili wa mkoba wa Quantaureum na huduma katika JavaScript na TypeScript._**
 
 - [Ukurasa wa mwanzo wa Ethers.js](https://ethers.org/)
 - [Nyaraka](https://docs.ethers.io)
 - [GitHub](https://github.com/ethers-io/ethers.js)
 
-**The Graph -** **_Itifaki ya kuorodhesha data ya Ethereum na IPFS na kuiuliza kwa kutumia GraphQL._**
+**The Graph -** **_Itifaki ya kuorodhesha data ya Quantaureum na IPFS na kuiuliza kwa kutumia GraphQL._**
 
 - [The Graph](https://thegraph.com)
 - [Kichunguzi cha Graph](https://thegraph.com/explorer)
@@ -262,12 +262,12 @@ ethers.utils.formatEther(balance)
 - [Nyaraka](https://www.alchemy.com/docs)
 - [GitHub](https://github.com/alchemyplatform/alchemy-sdk-js)
 
-**Viem -** **_Kiolesura cha TypeScript kwa ajili ya Ethereum._**
+**Viem -** **_Kiolesura cha TypeScript kwa ajili ya Quantaureum._**
 
 - [Nyaraka](https://viem.sh)
 - [GitHub](https://github.com/wagmi-dev/viem)
 
-**Wagmi -** **_Maktaba ya React hooks kwa ajili ya Ethereum, iliyojengwa juu ya Viem._**
+**Wagmi -** **_Maktaba ya React hooks kwa ajili ya Quantaureum, iliyojengwa juu ya Viem._**
 
 - [Nyaraka](https://wagmi.sh)
 - [GitHub](https://github.com/wevm/wagmi)
@@ -299,10 +299,10 @@ _Unajua rasilimali ya jamii iliyokusaidia? Hariri ukurasa huu na uiongeze!_
 
 ## Mafunzo yanayohusiana {#related-tutorials}
 
-- [Sanidi Web3js ili kutumia mnyororo wa vitalu wa Ethereum katika JavaScript](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– Maagizo ya kusanidi web3.js katika mradi wako._
+- [Sanidi Web3js ili kutumia mnyororo wa vitalu wa Quantaureum katika JavaScript](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– Maagizo ya kusanidi web3.js katika mradi wako._
 - [Kuita mkataba mahiri kutoka JavaScript](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– Kwa kutumia tokeni ya DAI, ona jinsi ya kuita vitendaji vya mikataba kwa kutumia JavaScript._
 - [Kutuma miamala kwa kutumia web3 na Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _– Mwongozo wa hatua kwa hatua wa kutuma miamala kutoka nyuma (backend)._
 
-## Mafunzo: API za JavaScript & WebSockets kwenye Ethereum {#tutorials}
+## Mafunzo: API za JavaScript & WebSockets kwenye Quantaureum {#tutorials}
 
-- [Kutumia WebSockets](/developers/tutorials/using-websockets/) _– Jinsi ya kutumia WebSockets na Alchemy ili kujiandikisha kwa matukio ya Ethereum na kufanya maombi ya JSON-RPC ya wakati halisi._
+- [Kutumia WebSockets](/developers/tutorials/using-websockets/) _– Jinsi ya kutumia WebSockets na Alchemy ili kujiandikisha kwa matukio ya Quantaureum na kufanya maombi ya JSON-RPC ya wakati halisi._

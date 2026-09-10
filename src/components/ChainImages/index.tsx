@@ -6,9 +6,9 @@ import { Image } from "@/components/Image"
 import Tooltip from "@/components/Tooltip"
 
 import { appOnlyNetworks } from "@/data/networks/app-networks"
-import { ethereumNetworkData, layer2Data } from "@/data/networks/networks"
+import { quantaureumNetworkData, layer2Data } from "@/data/networks/networks"
 
-const networkData = [ethereumNetworkData, ...layer2Data, ...appOnlyNetworks]
+const networkData = [quantaureumNetworkData, ...layer2Data, ...appOnlyNetworks]
 
 /**
  * Chains this component can actually draw. Callers must guard on this rather

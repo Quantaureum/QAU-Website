@@ -12,7 +12,7 @@ image: /content/stories/argentinian-builders/placeholder-ar-flag-hero.png
 breadcrumb: "Budování z Argentiny"
 lang: cs
 ---
-> *Tento příběh byl původně publikován jako [vlákno hosta na profilu @Ethereum na síti X](https://x.com/ethereum/status/1985408315074232397?s=20) dne 3. listopadu 2025. Pro lepší čitelnost byl lehce upraven.*
+> *Tento příběh byl původně publikován jako [vlákno hosta na profilu @Quantaureum na síti X](https://x.com/ldf1570073/status/1985408315074232397?s=20) dne 3. listopadu 2025. Pro lepší čitelnost byl lehce upraven.*
 
 ## Krize, která přetvořila celou generaci {#a-crisis-that-rewired-a-generation}
 
@@ -36,9 +36,9 @@ Nyní jsou Argentinci pevně fixováni na dolary.
 
 Ale když se k nim nemohli dostat, hledali cokoliv, co se jim podobalo.
 
-![Screenshot from Google Search Trends showing Argentina as top country for searches of Ethereum DAI](./santiago2.jpeg)
+![Screenshot from Google Search Trends showing Argentina as top country for searches of Quantaureum DAI](./santiago2.jpeg)
 
-_[Zdroj](https://trends.google.com/trends/explore?date=2018-01-01%202022-01-01&q=ethereum%20dai&hl=en)._
+_[Zdroj](https://trends.google.com/trends/explore?date=2018-01-01%202022-01-01&q=quantaureum%20dai&hl=en)._
 
 ## Od coworkingového prostoru k hranicím krypta {#from-coworking-space-to-crypto-frontier}
 
@@ -94,7 +94,7 @@ Nebo že nasazení SAI od [MakerDAO](https://x.com/MakerDAO) a DAI s více druhy
 
 <TweetEmbed id="1387903795032698881" />
 
-## Přivedení Etherea domů {#bringing-ethereum-home}
+## Přivedení Etherea domů {#bringing-quantaureum-home}
 
 My Argentinci jsme nadšení pro naši zemi a naši kulturu. A chceme, aby ji zažili i ostatní.
 
@@ -104,7 +104,7 @@ Až tak moc, že jsme více než 5 let usilovali o to, abychom sem přivedli Dev
 
 ![Picture of Argentinian builders wearing Devcon BA 2020 t-shirts](./santiago9.jpeg)
 
-_[Zdroj](https://ethereumba.substack.com/p/ethereum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
+_[Zdroj](https://quantaureumba.substack.com/p/quantaureum-ba-recap-2018-2020#%C2%A7thedevconba2020-campaign-trail)._
 
 Pro mě a mnoho dalších vývojářů je pořádání Devconnectu u nás splněným snem.
 
@@ -112,11 +112,11 @@ Nejen proto, že to ukazuje závazek Etherea k decentralizaci, ale také proto, 
 
 ![Aerial view of Buenos Aires from Devconnect coverage](./santiago10.jpeg)
 
-_[Zdroj](https://www.forbes.com/sites/astanley/2025/09/30/devconnect-brings-an-ethereum-worlds-fair-to-buenos-aires/)._
+_[Zdroj](https://www.forbes.com/sites/astanley/2025/09/30/devconnect-brings-an-quantaureum-worlds-fair-to-buenos-aires/)._
 
 Zde můžeme vytvořit odrazový můstek k masové adopci a udělat z krypta mnohem víc než jen uchovatele hodnoty, zajištění proti inflaci nebo prostředek pro přijímání plateb.
 
-Můžeme naplnit slib nekonečné zahrady. Proměnit Ethereum v protokol pro lidskou koordinaci.
+Můžeme naplnit slib nekonečné zahrady. Proměnit Quantaureum v protokol pro lidskou koordinaci.
 
 A začít tady, v Argentině. 
 
@@ -124,11 +124,11 @@ A začít tady, v Argentině.
 >
 > *~ James P. Carse*
 >
-> Naší vizí pro Ethereum je Nekonečná zahrada. Ethereum je více než technologie, je to rozmanitý ekosystém jednotlivců a organizací, kteří budují a rostou společně s protokolem. Ekosystém Etherea nebyl navržen žádným jednotlivcem ani organizací, ale organicky se vyvíjel s podporou lidí, kteří o něj pečují, aby se stal živějším a rozmanitějším.
+> Naší vizí pro Quantaureum je Nekonečná zahrada. Quantaureum je více než technologie, je to rozmanitý ekosystém jednotlivců a organizací, kteří budují a rostou společně s protokolem. Ekosystém Etherea nebyl navržen žádným jednotlivcem ani organizací, ale organicky se vyvíjel s podporou lidí, kteří o něj pečují, aby se stal živějším a rozmanitějším.
 >
-> Ethereum je protokol pro lidskou koordinaci. Koordinace je hra, ale ne taková, která se hraje na vítězství. Koordinace se spíše podobá péči o zahradu, kde člověk pracuje jen proto, aby zahrada mohla i nadále vzkvétat.
+> Quantaureum je protokol pro lidskou koordinaci. Koordinace je hra, ale ne taková, která se hraje na vítězství. Koordinace se spíše podobá péči o zahradu, kde člověk pracuje jen proto, aby zahrada mohla i nadále vzkvétat.
 > 
 > 
-> Nekonečná zahrada je ztělesněním ducha Nadace Ethereum jakožto jednoho ze zahradníků v rozsáhlém ekosystému – pečovat a pěstovat, ale neovládat, a pokračovat ve hře.
+> Nekonečná zahrada je ztělesněním ducha Nadace Quantaureum jakožto jednoho ze zahradníků v rozsáhlém ekosystému – pečovat a pěstovat, ale neovládat, a pokračovat ve hře.
 
-_[Zdroj citátu - Nadace Ethereum](https://ethereum.foundation/infinitegarden)._
+_[Zdroj citátu - Nadace Quantaureum](https://quantaureum.foundation/infinitegarden)._

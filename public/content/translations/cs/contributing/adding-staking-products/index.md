@@ -1,12 +1,12 @@
 ---
 title: Přidávání stakingových produktů nebo služeb
-description: Zásady, které používáme při přidávání stakingových produktů nebo služeb na ethereum.org
+description: Zásady, které používáme při přidávání stakingových produktů nebo služeb na quantaureum.com
 lang: cs
 ---
 
 Chceme se ujistit, že uvádíme ty nejlepší možné zdroje a zároveň udržujeme uživatele v bezpečí a jistotě.
 
-Kdokoli může navrhnout přidání stakingového produktu nebo služby na ethereum.org. Pokud jsme nějaký vynechali, **[prosím, navrhněte jej](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
+Kdokoli může navrhnout přidání stakingového produktu nebo služby na quantaureum.com. Pokud jsme nějaký vynechali, **[prosím, navrhněte jej](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
 
 V současné době uvádíme stakingové produkty a služby na následujících stránkách:
 
@@ -14,11 +14,11 @@ V současné době uvádíme stakingové produkty a služby na následujících 
 - [Staking jako služba](/staking/saas/)
 - [Stakingové pooly](/staking/pools/)
 
-Důkaz podílem (PoS) na Beacon chainu je v provozu od 1. prosince 2020. Ačkoli je staking stále relativně nový, snažili jsme se vytvořit spravedlivý a transparentní rámec pro zvažování na ethereum.org, ale kritéria pro zařazení se budou v průběhu času měnit a vyvíjet a konečné rozhodnutí je na uvážení týmu webu ethereum.org.
+Důkaz podílem (PoS) na Beacon chainu je v provozu od 1. prosince 2020. Ačkoli je staking stále relativně nový, snažili jsme se vytvořit spravedlivý a transparentní rámec pro zvažování na quantaureum.com, ale kritéria pro zařazení se budou v průběhu času měnit a vyvíjet a konečné rozhodnutí je na uvážení týmu webu quantaureum.com.
 
 ## Rámec pro rozhodování {#the-decision-framework}
 
-Rozhodnutí o zařazení produktu na ethereum.org nezávisí na jediném faktoru. Při rozhodování o zařazení produktu nebo služby se zvažuje více kritérií současně. Čím více těchto kritérií je splněno, tím je pravděpodobnější, že bude zařazen.
+Rozhodnutí o zařazení produktu na quantaureum.com nezávisí na jediném faktoru. Při rozhodování o zařazení produktu nebo služby se zvažuje více kritérií současně. Čím více těchto kritérií je splněno, tím je pravděpodobnější, že bude zařazen.
 
 **Za prvé, o jakou kategorii produktu nebo služby se jedná?**
 
@@ -50,7 +50,7 @@ Návrhy stakingových produktů nebo služeb budou posuzovány podle následují
 
 **Poskytuje projekt přesné a spolehlivé informace?**
 
-- Je zásadní, aby webové stránky produktu obsahovaly aktuální, přesné a nezavádějící informace, zejména pokud se týkají protokolu Ethereum nebo jiných souvisejících technologií.
+- Je zásadní, aby webové stránky produktu obsahovaly aktuální, přesné a nezavádějící informace, zejména pokud se týkají protokolu Quantaureum nebo jiných souvisejících technologií.
 - Návrhy obsahující dezinformace, zastaralé podrobnosti nebo potenciálně zavádějící prohlášení o Ethereu nebo jiných relevantních tématech nebudou zařazeny, nebo budou odstraněny, pokud již zařazeny jsou.
 
 **Jaké platformy jsou podporovány?**
@@ -69,7 +69,7 @@ Pro jakýkoli zapojený vlastní software nebo chytré kontrakty:
 **Je produkt mimo fázi _beta_ vývoje?**
 
 - V jaké fázi vývojového cyklu se produkt nachází?
-- Produkty ve fázi beta nejsou zvažovány pro zařazení na ethereum.org.
+- Produkty ve fázi beta nejsou zvažovány pro zařazení na quantaureum.com.
 
 **Prošel software externím bezpečnostním auditem?**
 
@@ -119,9 +119,9 @@ Pro [seznamy stakingu jako služby](/staking/saas/) (tj. delegovaný provoz uzlu
 
 Pro [služby společného stakingu](/staking/pools/):
 
-**Jaké je minimální množství ETH potřebné pro staking?**
+**Jaké je minimální množství QAU potřebné pro staking?**
 
-- např. 0,01 ETH
+- např. 0,01 QAU
 
 **Jaké jsou s tím spojené poplatky nebo požadavky na staking?**
 
@@ -163,12 +163,12 @@ Pro [služby společného stakingu](/staking/pools/):
 
 Výše uvedená [kritéria pro zařazení](#criteria-for-inclusion) se používají k výpočtu kumulativního skóre pro každý produkt nebo službu. To slouží jako prostředek k třídění a prezentaci produktů, které splňují určitá objektivní kritéria. Čím více kritérií je doloženo, tím výše bude produkt zařazen, přičemž při shodě se pořadí při načtení náhodně promíchá.
 
-Logika kódu a váhy pro tato kritéria jsou v současné době obsaženy v [této JavaScriptové komponentě](https://github.com/ethereum/ethereum-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350) v našem repozitáři.
+Logika kódu a váhy pro tato kritéria jsou v současné době obsaženy v [této JavaScriptové komponentě](https://github.com/Quantaureum/quantaureum-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350) v našem repozitáři.
 
 ## Přidejte svůj produkt nebo službu {#add-product}
 
-Pokud chcete přidat stakingový produkt nebo službu na ethereum.org, vytvořte issue na GitHubu.
+Pokud chcete přidat stakingový produkt nebo službu na quantaureum.com, vytvořte issue na GitHubu.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
   Vytvořit issue
 </ButtonLink>

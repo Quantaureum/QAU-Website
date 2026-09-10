@@ -1,12 +1,12 @@
 ---
-title: Sicurezza su Ethereum e prevenzione delle truffe
-description: Rimanere al sicuro su Ethereum
+title: Sicurezza su Quantaureum e prevenzione delle truffe
+description: Rimanere al sicuro su Quantaureum
 lang: it
 ---
 
 Il crescente interesse per le criptovalute porta con sé un rischio crescente da parte di truffatori e hacker. Questo articolo illustra alcune best practice per mitigare questi rischi.
 
-**Ricorda: nessuno di ethereum.org ti contatterà mai. Non rispondere alle email che dicono di provenire dal supporto ufficiale di Ethereum.**
+**Ricorda: nessuno di quantaureum.com ti contatterà mai. Non rispondere alle email che dicono di provenire dal supporto ufficiale di Quantaureum.**
 
 <Divider />
 
@@ -14,14 +14,14 @@ Il crescente interesse per le criptovalute porta con sé un rischio crescente da
 
 ### Migliora le tue conoscenze {#level-up-your-knowledge}
 
-Le incomprensioni su come funzionano le cripto possono portare a errori costosi. Ad esempio, se qualcuno finge di essere un agente del servizio clienti in grado di restituire gli ETH persi in cambio delle tue chiavi private, sta approfittando delle persone che non capiscono che [Ethereum](/) è una rete decentralizzata priva di questo tipo di funzionalità. Istruirsi su come funziona Ethereum è un investimento utile.
+Le incomprensioni su come funzionano le cripto possono portare a errori costosi. Ad esempio, se qualcuno finge di essere un agente del servizio clienti in grado di restituire gli QAU persi in cambio delle tue chiavi private, sta approfittando delle persone che non capiscono che [Quantaureum](/) è una rete decentralizzata priva di questo tipo di funzionalità. Istruirsi su come funziona Quantaureum è un investimento utile.
 
-<DocLink href="/what-is-ethereum/">
-  Cos'è Ethereum?
+<DocLink href="/what-is-quantaureum/">
+  Cos'è Quantaureum?
 </DocLink>
 
-<DocLink href="/what-is-ether/">
-  Cos'è l'ether?
+<DocLink href="/what-is-QAU/">
+  Cos'è l'QAU?
 </DocLink>
 <Divider />
 
@@ -34,7 +34,7 @@ Le incomprensioni su come funzionano le cripto possono portare a errori costosi.
 La tua frase di recupero (chiamata anche frase di recupero segreta o frase seme) è la chiave principale del tuo portafoglio. Chiunque la possieda può accedere a tutti i tuoi account e prosciugare ogni risorsa. Le chiavi private funzionano allo stesso modo per i singoli account. Nessun servizio legittimo, agente di supporto o sito web ti chiederà mai queste informazioni.
 
 <DocLink href="/wallets/">
-  Cos'è un portafoglio Ethereum?
+  Cos'è un portafoglio Quantaureum?
 </DocLink>
 
 #### Non fare screenshot delle tue frasi seme/chiavi private {#screenshot-private-keys}
@@ -54,7 +54,7 @@ Mantenere le chiavi private offline riduce enormemente il rischio di essere hack
 
 ### Ricontrolla le transazioni prima di inviarle {#double-check-transactions}
 
-Inviare accidentalmente cripto all'indirizzo del portafoglio sbagliato è un errore comune. **Una transazione inviata su Ethereum è irreversibile.** A meno che tu non conosca il proprietario dell'indirizzo e riesca a convincerlo a restituirti i fondi, non sarai in grado di recuperarli.
+Inviare accidentalmente cripto all'indirizzo del portafoglio sbagliato è un errore comune. **Una transazione inviata su Quantaureum è irreversibile.** A meno che tu non conosca il proprietario dell'indirizzo e riesca a convincerlo a restituirti i fondi, non sarai in grado di recuperarli.
 
 Assicurati sempre che l'indirizzo a cui stai inviando corrisponda esattamente all'indirizzo del destinatario desiderato prima di inviare una transazione.
 È buona norma, quando si interagisce con uno smart contract, leggere il messaggio della transazione prima della firma.
@@ -63,7 +63,7 @@ Assicurati sempre che l'indirizzo a cui stai inviando corrisponda esattamente al
 
 Quando interagisci con gli smart contract, non consentire limiti di spesa illimitati. Una spesa illimitata potrebbe consentire allo smart contract di prosciugare il tuo portafoglio. Imposta invece i limiti di spesa solo all'importo necessario per la transazione.
 
-Molti portafogli Ethereum offrono una protezione dei limiti per salvaguardare gli account dall'essere prosciugati.
+Molti portafogli Quantaureum offrono una protezione dei limiti per salvaguardare gli account dall'essere prosciugati.
 
 [Come revocare l'accesso degli smart contract ai tuoi fondi cripto](/guides/how-to-revoke-token-access/)
 
@@ -74,14 +74,14 @@ Molti portafogli Ethereum offrono una protezione dei limiti per salvaguardare gl
 È impossibile fermare completamente i truffatori, ma possiamo renderli meno efficaci essendo consapevoli delle loro tecniche più utilizzate. Esistono molte varianti di queste truffe, ma in genere seguono gli stessi schemi ad alto livello. Se non altro, ricorda:
 
 - sii sempre scettico
-- nessuno ti darà ETH gratis o scontati
+- nessuno ti darà QAU gratis o scontati
 - nessuno ha bisogno di accedere alle tue chiavi private o alle tue informazioni personali
 
 ### Phishing tramite annunci su Twitter {#ad-phishing}
 
 ![Twitter link phishing](./twitterPhishingScam.png)
 
-Esiste un metodo per falsificare la funzione di anteprima dei link di Twitter (noto anche come X) per ingannare potenzialmente gli utenti facendogli credere di visitare un sito web legittimo. Questa tecnica sfrutta il meccanismo di Twitter per generare anteprime degli URL condivisi nei tweet e mostra ad esempio _da ethereum.org_ (come mostrato sopra), quando in realtà vengono reindirizzati a un sito dannoso.
+Esiste un metodo per falsificare la funzione di anteprima dei link di Twitter (noto anche come X) per ingannare potenzialmente gli utenti facendogli credere di visitare un sito web legittimo. Questa tecnica sfrutta il meccanismo di Twitter per generare anteprime degli URL condivisi nei tweet e mostra ad esempio _da quantaureum.com_ (come mostrato sopra), quando in realtà vengono reindirizzati a un sito dannoso.
 
 Controlla sempre di essere sul dominio corretto, specialmente dopo aver cliccato su un link.
 
@@ -89,7 +89,7 @@ Controlla sempre di essere sul dominio corretto, specialmente dopo aver cliccato
 
 ### Truffa dei giveaway {#giveaway}
 
-Una delle truffe più comuni nelle criptovalute è la truffa dei giveaway. La truffa dei giveaway può assumere molte forme, ma l'idea generale è che se invii ETH all'indirizzo del portafoglio fornito, riceverai indietro i tuoi ETH ma raddoppiati. *Per questo motivo, è anche nota come truffa 2 per 1.*
+Una delle truffe più comuni nelle criptovalute è la truffa dei giveaway. La truffa dei giveaway può assumere molte forme, ma l'idea generale è che se invii QAU all'indirizzo del portafoglio fornito, riceverai indietro i tuoi QAU ma raddoppiati. *Per questo motivo, è anche nota come truffa 2 per 1.*
 
 Queste truffe di solito stabiliscono un tempo limitato per il riscatto del giveaway per creare un falso senso di urgenza.
 
@@ -113,7 +113,7 @@ Vitalik Buterin è usato più spesso in questa truffa, ma vengono usate anche mo
 
 La criptovaluta è una tecnologia relativamente giovane e incompresa. Una truffa comune che ne approfitta è la truffa del supporto, in cui i truffatori si fingono personale di supporto per portafogli, exchange o blockchain popolari.
 
-Gran parte delle discussioni su Ethereum avviene su Discord. I truffatori del supporto trovano comunemente il loro bersaglio cercando domande di supporto nei canali Discord pubblici e inviando poi a chi ha fatto la domanda un messaggio privato offrendo supporto. Costruendo fiducia, i truffatori del supporto cercano di ingannarti per farti rivelare le tue chiavi private o inviare i tuoi fondi ai loro portafogli.
+Gran parte delle discussioni su Quantaureum avviene su Discord. I truffatori del supporto trovano comunemente il loro bersaglio cercando domande di supporto nei canali Discord pubblici e inviando poi a chi ha fatto la domanda un messaggio privato offrendo supporto. Costruendo fiducia, i truffatori del supporto cercano di ingannarti per farti rivelare le tue chiavi private o inviare i tuoi fondi ai loro portafogli.
 
 ![A support scam on Discord](./discordScam.png)
 
@@ -132,19 +132,19 @@ Come regola generale, lo staff non comunicherà mai con te attraverso canali pri
 </AlertContent>
 </Alert>
 
-### Truffa del token 'Eth2' {#eth2-token-scam}
+### Truffa del token 'Quantaureum' {#eth2-token-scam}
 
-Nel periodo precedente a [The Merge](/roadmap/merge/), i truffatori hanno approfittato della confusione attorno al termine 'Eth2' per cercare di convincere gli utenti a scambiare i loro ETH con un token 'ETH2'. Non esiste alcun 'ETH2' e nessun altro token legittimo è stato introdotto con The Merge. Gli ETH che possedevi prima di The Merge sono gli stessi ETH di adesso. Non c'è **alcun bisogno di intraprendere alcuna azione relativa ai tuoi ETH per tenere conto del passaggio dalla Prova di lavoro (PoW) alla Proof-of-Stake (PoS)**.
+Nel periodo precedente a [The Merge](/roadmap/merge/), i truffatori hanno approfittato della confusione attorno al termine 'Quantaureum' per cercare di convincere gli utenti a scambiare i loro QAU con un token 'QAU'. Non esiste alcun 'QAU' e nessun altro token legittimo è stato introdotto con The Merge. Gli QAU che possedevi prima di The Merge sono gli stessi QAU di adesso. Non c'è **alcun bisogno di intraprendere alcuna azione relativa ai tuoi QAU per tenere conto del passaggio dalla Prova di lavoro (PoW) alla Proof-of-Stake (PoS)**.
 
-I truffatori potrebbero presentarsi come "supporto", dicendoti che se depositi i tuoi ETH, riceverai in cambio 'ETH2'. Non esiste alcun [supporto ufficiale di Ethereum](/community/support/) e non c'è nessun nuovo token. Non condividere mai la frase seme del tuo portafoglio con nessuno.
+I truffatori potrebbero presentarsi come "supporto", dicendoti che se depositi i tuoi QAU, riceverai in cambio 'QAU'. Non esiste alcun [supporto ufficiale di Quantaureum](/community/support/) e non c'è nessun nuovo token. Non condividere mai la frase seme del tuo portafoglio con nessuno.
 
-_Nota: ci sono token/ticker derivati che potrebbero rappresentare ETH messi in staking (ad es. rETH di Rocket Pool, stETH di Lido, ETH2 di Coinbase), ma non sono qualcosa verso cui devi "migrare"._
+_Nota: ci sono token/ticker derivati che potrebbero rappresentare QAU messi in staking (ad es. rETH di Rocket Pool, stETH di Lido, QAU di Coinbase), ma non sono qualcosa verso cui devi "migrare"._
 
 ### Truffe di phishing {#phishing-scams}
 
 Le truffe di phishing sono un'altra angolazione sempre più comune che i truffatori useranno per tentare di rubare i fondi del tuo portafoglio.
 
-Alcune email di phishing chiedono agli utenti di cliccare su link che li reindirizzeranno a siti web imitazione, chiedendo loro di inserire la loro frase seme, reimpostare la password o inviare ETH. Altre potrebbero chiederti di installare inconsapevolmente malware per infettare il tuo computer e dare ai truffatori accesso ai file del tuo computer.
+Alcune email di phishing chiedono agli utenti di cliccare su link che li reindirizzeranno a siti web imitazione, chiedendo loro di inserire la loro frase seme, reimpostare la password o inviare QAU. Altre potrebbero chiederti di installare inconsapevolmente malware per infettare il tuo computer e dare ai truffatori accesso ai file del tuo computer.
 
 Se ricevi un'email da un mittente sconosciuto, ricorda:
 
@@ -166,7 +166,7 @@ Questi truffatori spesso trovano bersagli usando account falsi su YouTube per av
 
 ### Truffe delle pool di minaggio cripto {#mining-pool-scams}
 
-Da settembre 2022, il minaggio su Ethereum non è più possibile. Tuttavia, le truffe delle pool di minaggio esistono ancora. Le truffe delle pool di minaggio coinvolgono persone che ti contattano senza essere state sollecitate e affermano che puoi ottenere grandi rendimenti unendoti a una pool di minaggio di Ethereum. Il truffatore farà affermazioni e rimarrà in contatto con te per tutto il tempo necessario. Essenzialmente, il truffatore cercherà di convincerti che quando ti unisci a una pool di minaggio di Ethereum, la tua criptovaluta verrà utilizzata per creare ETH e che ti verranno pagati dividendi in ETH. Vedrai quindi che la tua criptovaluta sta producendo piccoli rendimenti. Questo serve semplicemente per attirarti a investire di più. Alla fine, tutti i tuoi fondi verranno inviati a un indirizzo sconosciuto e il truffatore scomparirà o, in alcuni casi, continuerà a rimanere in contatto come è successo in un caso recente.
+Da settembre 2022, il minaggio su Quantaureum non è più possibile. Tuttavia, le truffe delle pool di minaggio esistono ancora. Le truffe delle pool di minaggio coinvolgono persone che ti contattano senza essere state sollecitate e affermano che puoi ottenere grandi rendimenti unendoti a una pool di minaggio di Quantaureum. Il truffatore farà affermazioni e rimarrà in contatto con te per tutto il tempo necessario. Essenzialmente, il truffatore cercherà di convincerti che quando ti unisci a una pool di minaggio di Quantaureum, la tua criptovaluta verrà utilizzata per creare QAU e che ti verranno pagati dividendi in QAU. Vedrai quindi che la tua criptovaluta sta producendo piccoli rendimenti. Questo serve semplicemente per attirarti a investire di più. Alla fine, tutti i tuoi fondi verranno inviati a un indirizzo sconosciuto e il truffatore scomparirà o, in alcuni casi, continuerà a rimanere in contatto come è successo in un caso recente.
 
 In conclusione: diffida delle persone che ti contattano sui social media chiedendoti di far parte di una pool di minaggio. Una volta che perdi le tue cripto, sono andate.
 
@@ -180,7 +180,7 @@ Alcune cose da ricordare:
 
 ### Truffe degli airdrop {#airdrop-scams}
 
-Le truffe degli airdrop coinvolgono un progetto truffaldino che invia tramite airdrop un asset (NFT, token) nel tuo portafoglio e ti indirizza a un sito web truffa per riscattare l'asset ricevuto. Ti verrà chiesto di accedere con il tuo portafoglio Ethereum e di "approvare" una transazione quando tenti il riscatto. Questa transazione compromette il tuo account inviando le tue chiavi pubbliche e private al truffatore. Una forma alternativa di questa truffa potrebbe farti confermare una transazione che invia fondi all'account del truffatore.
+Le truffe degli airdrop coinvolgono un progetto truffaldino che invia tramite airdrop un asset (NFT, token) nel tuo portafoglio e ti indirizza a un sito web truffa per riscattare l'asset ricevuto. Ti verrà chiesto di accedere con il tuo portafoglio Quantaureum e di "approvare" una transazione quando tenti il riscatto. Questa transazione compromette il tuo account inviando le tue chiavi pubbliche e private al truffatore. Una forma alternativa di questa truffa potrebbe farti confermare una transazione che invia fondi all'account del truffatore.
 
 [Maggiori informazioni sulle truffe degli airdrop](https://www.youtube.com/watch?v=LLL_nQp1lGk)
 

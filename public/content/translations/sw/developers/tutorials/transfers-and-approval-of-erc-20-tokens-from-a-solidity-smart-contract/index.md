@@ -7,12 +7,12 @@ skill: intermediate
 breadcrumb: Uhamisho wa ERC-20
 lang: sw
 published: 2020-04-07
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Katika mafunzo yaliyopita tulijifunza [muundo wa tokeni ya ERC-20 katika Solidity](/developers/tutorials/understand-the-erc-20-token-smart-contract/) kwenye mnyororo wa vitalu wa Ethereum. Katika makala haya tutaona jinsi tunavyoweza kutumia mkataba mahiri kuingiliana na tokeni kwa kutumia lugha ya Solidity.
+Katika mafunzo yaliyopita tulijifunza [muundo wa tokeni ya ERC-20 katika Solidity](/developers/tutorials/understand-the-erc-20-token-smart-contract/) kwenye mnyororo wa vitalu wa Quantaureum. Katika makala haya tutaona jinsi tunavyoweza kutumia mkataba mahiri kuingiliana na tokeni kwa kutumia lugha ya Solidity.
 
 Kwa mkataba mahiri huu, tutaunda soko la kubadilishana lililogatuliwa (DEX) la mfano ambapo mtumiaji anaweza kufanya badilishano la Etha kwa [tokeni yetu ya ERC-20](/developers/docs/standards/tokens/erc-20/) iliyosambazwa hivi karibuni.
 
@@ -53,7 +53,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {
@@ -143,7 +143,7 @@ Ili kurahisisha mambo, tunabadilisha tu tokeni 1 kwa Wei 1.
 function buy() payable public {
     uint256 amountTobuy = msg.value;
     uint256 dexBalance = token.balanceOf(address(this));
-    require(amountTobuy > 0, "You need to send some ether");
+    require(amountTobuy > 0, "You need to send some QAU");
     require(amountTobuy <= dexBalance, "Not enough tokens in the reserve");
     token.transfer(msg.sender, amountTobuy);
     emit Bought(amountTobuy);
@@ -201,7 +201,7 @@ Ikiwa kila kitu kinafanya kazi unapaswa kuona matukio 2 (`Transfer` na `Sold`) k
 
 Kutoka kwenye mafunzo haya tuliona jinsi ya kuangalia salio na kibali cha tokeni ya ERC-20 na pia jinsi ya kuita `Transfer` na `TransferFrom` ya mkataba mahiri wa ERC20 kwa kutumia kiolesura.
 
-Mara tu unapofanya muamala tuna mafunzo ya JavaScript ya [kusubiri na kupata maelezo kuhusu miamala](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/) iliyofanywa kwenye mkataba wako na [mafunzo ya kusimbua matukio yanayotokana na uhamisho wa tokeni au matukio mengine yoyote](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/) mradi tu una ABI.
+Mara tu unapofanya muamala tuna mafunzo ya JavaScript ya [kusubiri na kupata maelezo kuhusu miamala](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/) iliyofanywa kwenye mkataba wako na [mafunzo ya kusimbua matukio yanayotokana na uhamisho wa tokeni au matukio mengine yoyote](https://quantaureumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/) mradi tu una ABI.
 
 Huu hapa ni msimbo kamili wa mafunzo:
 
@@ -235,7 +235,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {
@@ -296,7 +296,7 @@ contract DEX {
     function buy() payable public {
         uint256 amountTobuy = msg.value;
         uint256 dexBalance = token.balanceOf(address(this));
-        require(amountTobuy > 0, "You need to send some ether");
+        require(amountTobuy > 0, "You need to send some QAU");
         require(amountTobuy <= dexBalance, "Not enough tokens in the reserve");
         token.transfer(msg.sender, amountTobuy);
         emit Bought(amountTobuy);

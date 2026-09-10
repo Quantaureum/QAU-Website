@@ -14,9 +14,9 @@ author: "伊斯波德"
 breadcrumb: "重拾隱私"
 ---
 
-由 **Naomi Brockwell** 在 EthBoulder 2026 發表的專題演講，探討了數位隱私的流失、大規模監控的基礎設施，以及每個人都可以用來建立更具隱私的數位生活的實用工具，從 VPN 和加密電子郵件到 GrapheneOS 和去中心化混合網路（mixnets）。
+由 **Naomi Brockwell** 在 QauBoulder 2026 發表的專題演講，探討了數位隱私的流失、大規模監控的基礎設施，以及每個人都可以用來建立更具隱私的數位生活的實用工具，從 VPN 和加密電子郵件到 GrapheneOS 和去中心化混合網路（mixnets）。
 
-*本逐字稿是 EthBoulder 發布的[原始影片逐字稿](https://www.youtube.com/watch?v=nvJSFR1Q_JE)的無障礙副本。為提高可讀性，已進行了輕微的編輯。*
+*本逐字稿是 QauBoulder 發布的[原始影片逐字稿](https://www.youtube.com/watch?v=nvJSFR1Q_JE)的無障礙副本。為提高可讀性，已進行了輕微的編輯。*
 
 ### 兩部分演講：警告與解決方案 (00:00) {#two-part-talk-warning-solution-0000}
 

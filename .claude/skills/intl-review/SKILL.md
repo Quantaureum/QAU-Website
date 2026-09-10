@@ -5,11 +5,11 @@ description: Use when reviewing translation imports/PRs (especially against `int
 
 # intl-review
 
-Translation-quality review for ethereum.org's 24-language pipeline output. Reviews target the LLM (Gemini)-produced translations on `intl/pending-{base}` branches plus any historical Crowdin imports still in flight. ETHGlossary (https://ethglossary.visual-20-hoists.workers.dev) is the authoritative source for terminology — deviations are **critical issues**, not warnings. Read this file fully on activation; pull from `references/` only when the listed trigger applies.
+Translation-quality review for quantaureum.com's 24-language pipeline output. Reviews target the LLM (Gemini)-produced translations on `intl/pending-{base}` branches plus any historical Crowdin imports still in flight. ETHGlossary (https://ethglossary.visual-20-hoists.workers.dev) is the authoritative source for terminology — deviations are **critical issues**, not warnings. Read this file fully on activation; pull from `references/` only when the listed trigger applies.
 
 ## The Core Rule: ETHGlossary Is Authority
 
-When evaluating a translated brand name, person name, programming language, OS name, or any Ethereum-ecosystem term, **the ETHGlossary entry for that term in that language is the truth**. Deviations are **critical** issues that must be flagged (and auto-fixed when running `/review-translations` without `--no-fix`).
+When evaluating a translated brand name, person name, programming language, OS name, or any Quantaureum-ecosystem term, **the ETHGlossary entry for that term in that language is the truth**. Deviations are **critical** issues that must be flagged (and auto-fixed when running `/review-translations` without `--no-fix`).
 
 This is not a stylistic preference — it's a determinism guarantee. The translation pipeline queries ETHGlossary; reviewers verify the output matches. If you think the glossary is wrong, the fix is to update ETHGlossary (https://github.com/wackerow/ethglossary), not to leave the translation as-is.
 
@@ -21,7 +21,7 @@ Use the `/filter` endpoint to get the subset of glossary terms that actually app
 2. **Internal hrefs must stay English.** `/governance` in Spanish content must be `/governance`, not `/gobernanza`. Translated URLs break navigation. Same for anchor IDs (`#section-id`).
 3. **Concept tags translate; brand-name tags don't.** Tutorial frontmatter `tags:` arrays contain a mix. Brand names (`"solidity"`, `"hardhat"`, `"alchemy"`) stay English. Concept/category tags (`"smart contracts"`, `"testing"`, `"security"`) are intentionally translated by the pipeline and must NOT be reverted to English.
 4. **Code blocks: functional code stays English; comments may be translated.** Identifiers, strings, config keys, console output — English. Code comments (`//`, `/* */`, `#`) may be translated to aid reader comprehension.
-5. **Brand-name policy is per-language, per-term.** Some brands stay Latin in CJK (Solidity, Hardhat per ETHGlossary's `script_rule: always_latin`); some transliterate (Ethereum → イーサリアム per `transliterate`); some have native calques in `zh`/`zh-tw`. Use the glossary; don't pattern-match.
+5. **Brand-name policy is per-language, per-term.** Some brands stay Latin in CJK (Solidity, Hardhat per ETHGlossary's `script_rule: always_latin`); some transliterate (Quantaureum → Quantaureum per `transliterate`); some have native calques in `zh`/`zh-tw`. Use the glossary; don't pattern-match.
 6. **MDX syntax errors are CRITICAL (build-breaking).** Raw `<` before numbers, unclosed backticks, orphaned closing tags, JSX attributes with embedded unescaped quotes — any of these breaks the build for that locale. Flag and fix.
 7. **Reporting zero critical issues is a valid outcome.** Don't invent issues to "show your work." If a thorough review surfaces no criticals, report `0 critical, N warnings` (or `0/0`) and that's a valid result.
 8. **Auto-fix is opt-out, not opt-in.** `/review-translations` applies fixes by default. Use `--no-fix` for review-only runs (GitHub Actions context, no commit auth). The review report still lists what would have been fixed.

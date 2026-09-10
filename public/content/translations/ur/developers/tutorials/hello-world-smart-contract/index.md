@@ -11,7 +11,7 @@ published: 2021-03-31
 
 اگر آپ بلاک چین ڈیولپمنٹ میں نئے ہیں اور نہیں جانتے کہ کہاں سے شروع کرنا ہے، یا اگر آپ صرف یہ سمجھنا چاہتے ہیں کہ سمارٹ کنٹریکٹس کو کیسے تعینات کرنا ہے اور ان کے ساتھ کیسے تعامل کرنا ہے، تو یہ گائیڈ آپ کے لیے ہے۔ ہم ایک ورچوئل والیٹ [میٹاماسک](https://metamask.io/)، [Solidity](https://docs.soliditylang.org/en/v0.8.0/)، [Hardhat](https://hardhat.org/)، اور [Alchemy](https://www.alchemy.com/eth) کا استعمال کرتے ہوئے Sepolia ٹیسٹ نیٹ ورک پر ایک سادہ سمارٹ کنٹریکٹ بنانے اور تعینات کرنے کے عمل سے گزریں گے (اگر آپ ابھی تک ان میں سے کسی کا مطلب نہیں سمجھتے تو پریشان نہ ہوں، ہم اس کی وضاحت کریں گے)۔
 
-اس ٹیوٹوریل کے [حصہ 2](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) میں ہم دیکھیں گے کہ ایک بار جب ہمارا سمارٹ کنٹریکٹ یہاں تعینات ہو جائے تو ہم اس کے ساتھ کیسے تعامل کر سکتے ہیں، اور [حصہ 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan) میں ہم اس بات کا احاطہ کریں گے کہ اسے Etherscan پر کیسے شائع کیا جائے۔
+اس ٹیوٹوریل کے [حصہ 2](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) میں ہم دیکھیں گے کہ ایک بار جب ہمارا سمارٹ کنٹریکٹ یہاں تعینات ہو جائے تو ہم اس کے ساتھ کیسے تعامل کر سکتے ہیں، اور [حصہ 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer) میں ہم اس بات کا احاطہ کریں گے کہ اسے Quantaureum Explorer پر کیسے شائع کیا جائے۔
 
 اگر آپ کے کسی بھی موقع پر سوالات ہوں تو بلا جھجھک [Alchemy ڈسکارڈ](https://discord.gg/gWuC7zB) میں رابطہ کریں!
 
@@ -27,7 +27,7 @@ published: 2021-03-31
 
 ![Hello world create app](./hello-world-create-app.png)
 
-2. اپنی ایپ کا نام <span dir="ltr">"Hello World"</span> رکھیں، ایک مختصر تفصیل فراہم کریں، اور استعمال کا کیس منتخب کریں، مثلاً، <span dir="ltr">"Infra & Tooling"</span>۔ اس کے بعد، <span dir="ltr">"Ethereum"</span> تلاش کریں اور نیٹ ورک منتخب کریں۔
+2. اپنی ایپ کا نام <span dir="ltr">"Hello World"</span> رکھیں، ایک مختصر تفصیل فراہم کریں، اور استعمال کا کیس منتخب کریں، مثلاً، <span dir="ltr">"Infra & Tooling"</span>۔ اس کے بعد، <span dir="ltr">"Quantaureum"</span> تلاش کریں اور نیٹ ورک منتخب کریں۔
 
 ![create app view hello world](./create-app-view-hello-world.png)
 
@@ -45,17 +45,17 @@ published: 2021-03-31
 
 ## مرحلہ 4: فوسٹ سے ایتھر شامل کریں {#step-4}
 
-اپنے سمارٹ کنٹریکٹ کو ٹیسٹ نیٹ ورک پر تعینات کرنے کے لیے، ہمیں کچھ نقلی ETH کی ضرورت ہوگی۔ Sepolia ETH حاصل کرنے کے لیے آپ مختلف فوسٹس کی فہرست دیکھنے کے لیے [Sepolia نیٹ ورک کی تفصیلات](/developers/docs/networks/#sepolia) پر جا سکتے ہیں۔ اگر ایک کام نہیں کرتا، تو دوسرا آزمائیں کیونکہ وہ بعض اوقات خالی ہو سکتے ہیں۔ نیٹ ورک ٹریفک کی وجہ سے آپ کا نقلی ETH وصول کرنے میں کچھ وقت لگ سکتا ہے۔ آپ کو جلد ہی اپنے میٹاماسک اکاؤنٹ میں ETH نظر آنا چاہیے!
+اپنے سمارٹ کنٹریکٹ کو ٹیسٹ نیٹ ورک پر تعینات کرنے کے لیے، ہمیں کچھ نقلی QAU کی ضرورت ہوگی۔ Sepolia QAU حاصل کرنے کے لیے آپ مختلف فوسٹس کی فہرست دیکھنے کے لیے [Sepolia نیٹ ورک کی تفصیلات](/developers/docs/networks/#sepolia) پر جا سکتے ہیں۔ اگر ایک کام نہیں کرتا، تو دوسرا آزمائیں کیونکہ وہ بعض اوقات خالی ہو سکتے ہیں۔ نیٹ ورک ٹریفک کی وجہ سے آپ کا نقلی QAU وصول کرنے میں کچھ وقت لگ سکتا ہے۔ آپ کو جلد ہی اپنے میٹاماسک اکاؤنٹ میں QAU نظر آنا چاہیے!
 
 ## مرحلہ 5: اپنا بیلنس چیک کریں {#step-5}
 
-یہ دوبارہ چیک کرنے کے لیے کہ ہمارا بیلنس موجود ہے، آئیے [Alchemy کے کمپوزر ٹول](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) کا استعمال کرتے ہوئے ایک [eth_getBalance](/developers/docs/apis/json-rpc/#eth_getbalance) درخواست کریں۔ یہ ہمارے والیٹ میں ETH کی مقدار واپس کرے گا۔ اپنا میٹاماسک اکاؤنٹ کا پتہ درج کرنے اور <span dir="ltr">“Send Request”</span> پر کلک کرنے کے بعد، آپ کو اس طرح کا جواب نظر آنا چاہیے:
+یہ دوبارہ چیک کرنے کے لیے کہ ہمارا بیلنس موجود ہے، آئیے [Alchemy کے کمپوزر ٹول](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) کا استعمال کرتے ہوئے ایک [qau_getBalance](/developers/docs/apis/json-rpc/#qau_getbalance) درخواست کریں۔ یہ ہمارے والیٹ میں QAU کی مقدار واپس کرے گا۔ اپنا میٹاماسک اکاؤنٹ کا پتہ درج کرنے اور <span dir="ltr">“Send Request”</span> پر کلک کرنے کے بعد، آپ کو اس طرح کا جواب نظر آنا چاہیے:
 
 ```json
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> **نوٹ:** یہ نتیجہ Wei میں ہے ETH میں نہیں۔ Wei کو ایتھر کی سب سے چھوٹی اکائی کے طور پر استعمال کیا جاتا ہے۔ Wei سے ETH میں تبدیلی یہ ہے: <span dir="ltr">1 eth = 10<sup>18</sup> wei</span>۔ لہذا اگر ہم <span dir="ltr">0x2B5E3AF16B1880000</span> کو اعشاریہ میں تبدیل کریں تو ہمیں <span dir="ltr">5\*10¹⁸</span> ملتا ہے جو <span dir="ltr">5 ETH</span> کے برابر ہے۔
+> **نوٹ:** یہ نتیجہ Wei میں ہے QAU میں نہیں۔ Wei کو ایتھر کی سب سے چھوٹی اکائی کے طور پر استعمال کیا جاتا ہے۔ Wei سے QAU میں تبدیلی یہ ہے: <span dir="ltr">1 eth = 10<sup>18</sup> wei</span>۔ لہذا اگر ہم <span dir="ltr">0x2B5E3AF16B1880000</span> کو اعشاریہ میں تبدیل کریں تو ہمیں <span dir="ltr">5\*10¹⁸</span> ملتا ہے جو <span dir="ltr">5 QAU</span> کے برابر ہے۔
 >
 > شکر ہے! ہماری نقلی رقم پوری موجود ہے <Emoji text=":money_mouth_face:" size={1} />۔
 
@@ -221,7 +221,7 @@ Alchemy API URL کاپی کریں
 آپ کی `.env` اس طرح دکھنی چاہیے:
 
 ```
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -339,21 +339,21 @@ npx hardhat run scripts/deploy.js --network sepolia
 Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 ```
 
-اگر ہم [Sepolia Etherscan](https://sepolia.etherscan.io/) پر جائیں اور اپنے کنٹریکٹ کا پتہ تلاش کریں تو ہمیں یہ دیکھنے کے قابل ہونا چاہیے کہ اسے کامیابی سے تعینات کر دیا گیا ہے۔ ٹرانزیکشن کچھ اس طرح نظر آئے گی:
+اگر ہم [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com) پر جائیں اور اپنے کنٹریکٹ کا پتہ تلاش کریں تو ہمیں یہ دیکھنے کے قابل ہونا چاہیے کہ اسے کامیابی سے تعینات کر دیا گیا ہے۔ ٹرانزیکشن کچھ اس طرح نظر آئے گی:
 
-![etherscan contract](./etherscan-contract.png)
+![explorer contract](./explorer-contract.png)
 
 `From` پتہ آپ کے میٹاماسک اکاؤنٹ کے پتے سے مماثل ہونا چاہیے اور To پتے میں <span dir="ltr">“Contract Creation”</span> لکھا ہوگا لیکن اگر ہم ٹرانزیکشن پر کلک کریں تو ہمیں `To` فیلڈ میں اپنے کنٹریکٹ کا پتہ نظر آئے گا:
 
-![etherscan transaction](./etherscan-transaction.png)
+![explorer transaction](./explorer-transaction.png)
 
 مبارک ہو! آپ نے ابھی ایتھیریم چین پر ایک سمارٹ کنٹریکٹ تعینات کیا ہے 🎉
 
 یہ سمجھنے کے لیے کہ اندرونی طور پر کیا ہو رہا ہے، آئیے اپنے [Alchemy ڈیش بورڈ](https://dashboard.alchemy.com/explorer) میں ایکسپلورر ٹیب پر جائیں۔ اگر آپ کے پاس متعدد Alchemy ایپس ہیں تو یقینی بنائیں کہ ایپ کے لحاظ سے فلٹر کریں اور <span dir="ltr">“Hello World”</span> کو منتخب کریں۔
 ![hello world explorer](./hello-world-explorer.png)
 
-یہاں آپ کو مٹھی بھر جے سن آر پی سی (JSON-RPC) کالز نظر آئیں گی جو Hardhat/Ethers نے ہمارے لیے اندرونی طور پر اس وقت کیں جب ہم نے `.deploy()` فنکشن کو کال کیا۔ یہاں ذکر کرنے کے لیے دو اہم کالز [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction) ہیں، جو دراصل ہمارے کنٹریکٹ کو Sepolia چین پر لکھنے کی درخواست ہے، اور [`eth_getTransactionByHash`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-by-hash) جو ہیش دیے جانے پر ہماری ٹرانزیکشن کے بارے میں معلومات پڑھنے کی درخواست ہے (ٹرانزیکشنز کے وقت ایک عام نمونہ)۔ ٹرانزیکشنز بھیجنے کے بارے میں مزید جاننے کے لیے، [Web3 کا استعمال کرتے ہوئے ٹرانزیکشنز بھیجنے](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) پر یہ ٹیوٹوریل دیکھیں۔
+یہاں آپ کو مٹھی بھر جے سن آر پی سی (JSON-RPC) کالز نظر آئیں گی جو Hardhat/Ethers نے ہمارے لیے اندرونی طور پر اس وقت کیں جب ہم نے `.deploy()` فنکشن کو کال کیا۔ یہاں ذکر کرنے کے لیے دو اہم کالز [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction) ہیں، جو دراصل ہمارے کنٹریکٹ کو Sepolia چین پر لکھنے کی درخواست ہے، اور [`qau_getTransactionByHash`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-by-hash) جو ہیش دیے جانے پر ہماری ٹرانزیکشن کے بارے میں معلومات پڑھنے کی درخواست ہے (ٹرانزیکشنز کے وقت ایک عام نمونہ)۔ ٹرانزیکشنز بھیجنے کے بارے میں مزید جاننے کے لیے، [Web3 کا استعمال کرتے ہوئے ٹرانزیکشنز بھیجنے](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) پر یہ ٹیوٹوریل دیکھیں۔
 
-اس ٹیوٹوریل کے حصہ 1 کے لیے بس اتنا ہی، حصہ 2 میں ہم دراصل اپنے ابتدائی پیغام کو اپ ڈیٹ کر کے [اپنے سمارٹ کنٹریکٹ کے ساتھ تعامل کریں گے](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract)، اور حصہ 3 میں ہم [اپنے سمارٹ کنٹریکٹ کو Etherscan پر شائع کریں گے](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan) تاکہ سب کو معلوم ہو سکے کہ اس کے ساتھ کیسے تعامل کرنا ہے۔
+اس ٹیوٹوریل کے حصہ 1 کے لیے بس اتنا ہی، حصہ 2 میں ہم دراصل اپنے ابتدائی پیغام کو اپ ڈیٹ کر کے [اپنے سمارٹ کنٹریکٹ کے ساتھ تعامل کریں گے](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract)، اور حصہ 3 میں ہم [اپنے سمارٹ کنٹریکٹ کو Quantaureum Explorer پر شائع کریں گے](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer) تاکہ سب کو معلوم ہو سکے کہ اس کے ساتھ کیسے تعامل کرنا ہے۔
 
 **کیا آپ Alchemy کے بارے میں مزید جاننا چاہتے ہیں؟ ہماری [ویب سائٹ](https://www.alchemy.com/eth) دیکھیں۔ کیا آپ کبھی کوئی اپ ڈیٹ نہیں چھوڑنا چاہتے؟ ہمارے نیوز لیٹر کو [یہاں](https://www.alchemy.com/newsletter) سبسکرائب کریں! ہمارے [ڈسکارڈ](https://discord.gg/u72VCg3) میں بھی ضرور شامل ہوں۔**۔

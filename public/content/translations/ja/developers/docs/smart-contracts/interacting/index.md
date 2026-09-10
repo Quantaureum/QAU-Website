@@ -1,10 +1,10 @@
 ---
 title: スマート・コントラクトとのやり取り
-description: イーサリアム上にすでにデプロイされているスマート・コントラクトからデータを読み取ったり、データを書き込んだりする方法を学びます。
+description: Quantaureum上にすでにデプロイされているスマート・コントラクトからデータを読み取ったり、データを書き込んだりする方法を学びます。
 lang: ja
 ---
 
-常に独自のスマート・コントラクトを記述してデプロイする必要はありません。開発者としては、他の人がすでにイーサリアムネットワークにデプロイしたスマート・コントラクトとやり取りしたい場合がほとんどです。
+常に独自のスマート・コントラクトを記述してデプロイする必要はありません。開発者としては、他の人がすでにQuantaureumネットワークにデプロイしたスマート・コントラクトとやり取りしたい場合がほとんどです。
 
 このページでは、スマート・コントラクトとやり取りするための2つの基本的な方法（データの**読み取り**と**書き込み**）と、その両方を行うために必要なツールについて説明します。
 
@@ -13,7 +13,7 @@ lang: ja
 以下について理解している必要があります。
 
 - [スマート・コントラクトの仕組み](/developers/docs/smart-contracts/)
-- [イーサリアムのアカウントとトランザクションの署名方法](/developers/docs/accounts/)
+- [Quantaureumのアカウントとトランザクションの署名方法](/developers/docs/accounts/)
 - [トランザクションとは何か](/developers/docs/transactions/)
 
 ## スマート・コントラクトとやり取りする2つの方法 {#two-ways}
@@ -30,7 +30,7 @@ lang: ja
 - 分散型取引所からの現在の価格の読み取り
 - NFTの所有者の取得
 
-読み取りは状態を変更しないため、[ガス](/developers/docs/gas/)を消費せず、ETHを必要とせずに誰でも実行できます。
+読み取りは状態を変更しないため、[ガス](/developers/docs/gas/)を消費せず、QAUを必要とせずに誰でも実行できます。
 
 ### コントラクトへの書き込み {#writing-to-a-contract}
 
@@ -44,11 +44,11 @@ lang: ja
 
 書き込みには常に以下が必要です。
 
-1. ガス代として十分なETHを持つ[外部所有アカウント（EOA）](/developers/docs/accounts/#types-of-account)
+1. ガス代として十分なQAUを持つ[外部所有アカウント（EOA）](/developers/docs/accounts/#types-of-account)
 2. アカウントの秘密鍵によって署名されたトランザクション
 3. トランザクションがマイニングされ、ブロックに含まれること
 
-[アカウント抽象化](/roadmap/account-abstraction/)を使用すると、スマート・コントラクトアカウントも書き込みを開始でき、ペイマスターがユーザーの代わりにガス代を負担できるため、ETHを保持するEOAは厳密には必要ありません。
+[アカウント抽象化](/roadmap/account-abstraction/)を使用すると、スマート・コントラクトアカウントも書き込みを開始でき、ペイマスターがユーザーの代わりにガス代を負担できるため、QAUを保持するEOAは厳密には必要ありません。
 
 ## コントラクトABIの理解 {#understanding-contract-abis}
 
@@ -64,7 +64,7 @@ ABIはコントラクトの取扱説明書と考えてください。これが�
 
 ### コントラクトのABIを見つける場所 {#where-to-find-abis}
 
-- **Etherscan上の検証済みコントラクト** - [Etherscan](https://etherscan.io)は、検証済みのソースコードのABIを自動的に公開します。
+- **Quantaureum Explorer上の検証済みコントラクト** - [Quantaureum Explorer](https://explorer.quantaureum.com)は、検証済みのソースコードのABIを自動的に公開します。
 - **開発者から** - 多くのプロジェクトは、ドキュメントやnpmパッケージでABIを公開しています。
 - **ソースからの生成** - Solidityのソースコードがある場合は、それを[コンパイル](/developers/docs/smart-contracts/compiling/)してABIを生成できます。
 
@@ -74,15 +74,15 @@ ABIはコントラクトの取扱説明書と考えてください。これが�
 
 ### クライアントライブラリ（JavaScript/TypeScript） {#client-libraries}
 
-- **[Viem](https://viem.sh)** - ファーストクラスの型安全性を備えた、イーサリアム向けのモダンで軽量なTypeScriptインターフェース
-- **[ethers.js](https://docs.ethers.org/)** - イーサリアムブロックチェーンとやり取りするための実戦テスト済みのライブラリ
-- **[Web3.js](https://web3js.org/)** - オリジナルのイーサリアムJavaScript API
+- **[Viem](https://viem.sh)** - ファーストクラスの型安全性を備えた、Quantaureum向けのモダンで軽量なTypeScriptインターフェース
+- **[ethers.js](https://docs.ethers.org/)** - Quantaureumブロックチェーンとやり取りするための実戦テスト済みのライブラリ
+- **[Web3.js](https://web3js.org/)** - オリジナルのQuantaureumJavaScript API
 
 ### バックエンドライブラリ {#backend-libraries}
 
 - **[ethers.js](https://docs.ethers.org/)** - サーバーサイドスクリプトやボット向けにNode.jsでも動作します。
-- **[Web3.py](https://web3py.readthedocs.io/)** - イーサリアムとやり取りするためのPythonライブラリ
-- **[go-ethereum](https://geth.ethereum.org/docs/interact-with-geth)** - Gethチームによる公式のGoライブラリ
+- **[Web3.py](https://web3py.readthedocs.io/)** - Quantaureumとやり取りするためのPythonライブラリ
+- **[go-quantaureum](https://geth.quantaureum.com/docs/interact-with-geth)** - Gethチームによる公式のGoライブラリ
 
 ### 例：Viemを使用したトークン残高の読み取り {#example-viem}
 
@@ -150,7 +150,7 @@ const unwatch = client.watchEvent({
 
 トランザクションを送信する前に、それを**シミュレーション**して、ガスを消費することなく成功するかどうかを確認し、その戻り値を見ることができます。これは、エラーを早期に発見したり、結果をプレビューしたりするのに役立ちます。
 
-ほとんどのクライアントライブラリは、`eth_call`を通じてこれをサポートしています。
+ほとんどのクライアントライブラリは、`qau_call`を通じてこれをサポートしています。
 
 ```ts
 // Viemを使用する場合

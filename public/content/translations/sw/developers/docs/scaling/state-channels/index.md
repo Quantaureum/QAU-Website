@@ -1,25 +1,25 @@
 ---
 title: Chaneli za Hali
-description: Utangulizi wa chaneli za hali na chaneli za malipo kama suluhisho la kuongeza viwango linalotumiwa kwa sasa na jamii ya Ethereum.
+description: Utangulizi wa chaneli za hali na chaneli za malipo kama suluhisho la kuongeza viwango linalotumiwa kwa sasa na jamii ya Quantaureum.
 lang: sw
 sidebarDepth: 3
 ---
 
-Chaneli za hali huruhusu washiriki kufanya miamala kwa usalama nje ya mnyororo huku wakiweka mwingiliano na Mtandao Mkuu wa [Ethereum](/) kwa kiwango cha chini. Wenza wa chaneli wanaweza kufanya idadi yoyote ya miamala nje ya mnyororo huku wakiwasilisha miamala miwili tu mnyororoni kufungua na kufunga chaneli. Hii inaruhusu uwezo wa upitishaji wa miamala wa juu sana na kusababisha gharama nafuu kwa watumiaji.
+Chaneli za hali huruhusu washiriki kufanya miamala kwa usalama nje ya mnyororo huku wakiweka mwingiliano na Mtandao Mkuu wa [Quantaureum](/) kwa kiwango cha chini. Wenza wa chaneli wanaweza kufanya idadi yoyote ya miamala nje ya mnyororo huku wakiwasilisha miamala miwili tu mnyororoni kufungua na kufunga chaneli. Hii inaruhusu uwezo wa upitishaji wa miamala wa juu sana na kusababisha gharama nafuu kwa watumiaji.
 
 ## Mahitaji ya awali {#prerequisites}
 
-Unapaswa kuwa umesoma na kuelewa kurasa zetu kuhusu [kuongeza viwango vya Ethereum](/developers/docs/scaling/) na [tabaka la 2 (l2)](/layer-2/).
+Unapaswa kuwa umesoma na kuelewa kurasa zetu kuhusu [kuongeza viwango vya Quantaureum](/developers/docs/scaling/) na [tabaka la 2 (l2)](/layer-2/).
 
 ## Chaneli ni nini? {#what-are-channels}
 
-Minyororo ya vitalu ya umma, kama vile Ethereum, inakabiliwa na changamoto za kuongeza viwango kutokana na usanifu wao uliosambazwa: miamala mnyororoni lazima itekelezwe na nodi zote. Nodi zinapaswa kuwa na uwezo wa kushughulikia kiasi cha miamala katika kitalu kwa kutumia maunzi ya kawaida, kuweka kikomo kwenye uwezo wa upitishaji wa miamala ili kuweka mtandao uliogatuliwa. Chaneli za mnyororo wa vitalu hutatua tatizo hili kwa kuruhusu watumiaji kuingiliana nje ya mnyororo huku bado wakitegemea usalama wa mnyororo mkuu kwa ukamilishaji wa mwisho.
+Minyororo ya vitalu ya umma, kama vile Quantaureum, inakabiliwa na changamoto za kuongeza viwango kutokana na usanifu wao uliosambazwa: miamala mnyororoni lazima itekelezwe na nodi zote. Nodi zinapaswa kuwa na uwezo wa kushughulikia kiasi cha miamala katika kitalu kwa kutumia maunzi ya kawaida, kuweka kikomo kwenye uwezo wa upitishaji wa miamala ili kuweka mtandao uliogatuliwa. Chaneli za mnyororo wa vitalu hutatua tatizo hili kwa kuruhusu watumiaji kuingiliana nje ya mnyororo huku bado wakitegemea usalama wa mnyororo mkuu kwa ukamilishaji wa mwisho.
 
 Chaneli ni itifaki rahisi za rika-kwa-rika zinazoruhusu pande mbili kufanya miamala mingi kati yao na kisha kuchapisha tu matokeo ya mwisho kwenye mnyororo wa vitalu. Chaneli hutumia kriptografia kuonyesha kwamba data ya muhtasari wanayozalisha ni kweli matokeo ya seti halali ya miamala ya kati. Mkataba mahiri wa ["saini-nyingi"](/developers/docs/smart-contracts/#multisig) huhakikisha miamala inasainiwa na pande sahihi.
 
-Kwa chaneli, mabadiliko ya hali hutekelezwa na kuthibitishwa na pande zinazohusika, kupunguza ukokotoaji kwenye tabaka la utekelezaji la Ethereum. Hii hupunguza msongamano kwenye Ethereum na pia huongeza kasi ya uchakataji wa miamala kwa watumiaji.
+Kwa chaneli, mabadiliko ya hali hutekelezwa na kuthibitishwa na pande zinazohusika, kupunguza ukokotoaji kwenye tabaka la utekelezaji la Quantaureum. Hii hupunguza msongamano kwenye Quantaureum na pia huongeza kasi ya uchakataji wa miamala kwa watumiaji.
 
-Kila chaneli inasimamiwa na [mkataba mahiri wa saini-nyingi](/developers/docs/smart-contracts/#multisig) unaoendeshwa kwenye Ethereum. Ili kufungua chaneli, washiriki husambaza mkataba wa chaneli mnyororoni na kuweka fedha ndani yake. Pande zote mbili kwa pamoja husaini sasisho la hali ili kuanzisha hali ya chaneli, baada ya hapo wanaweza kufanya miamala haraka na kwa uhuru nje ya mnyororo.
+Kila chaneli inasimamiwa na [mkataba mahiri wa saini-nyingi](/developers/docs/smart-contracts/#multisig) unaoendeshwa kwenye Quantaureum. Ili kufungua chaneli, washiriki husambaza mkataba wa chaneli mnyororoni na kuweka fedha ndani yake. Pande zote mbili kwa pamoja husaini sasisho la hali ili kuanzisha hali ya chaneli, baada ya hapo wanaweza kufanya miamala haraka na kwa uhuru nje ya mnyororo.
 
 Ili kufunga chaneli, washiriki huwasilisha hali ya mwisho iliyokubaliwa ya chaneli mnyororoni. Baadaye, mkataba mahiri husambaza fedha zilizofungwa kulingana na salio la kila mshiriki katika hali ya mwisho ya chaneli.
 
@@ -29,9 +29,9 @@ Chaneli za rika-kwa-rika ni muhimu sana kwa hali ambapo baadhi ya washiriki wali
 
 Chaneli ya malipo inaelezewa vyema kama "leja ya njia mbili" inayodumishwa kwa pamoja na watumiaji wawili. Salio la awali la leja ni jumla ya amana zilizofungwa kwenye mkataba mnyororoni wakati wa awamu ya kufungua chaneli. Uhamishaji wa chaneli ya malipo unaweza kufanywa papo hapo na bila ushiriki wa mnyororo wa vitalu wenyewe, isipokuwa kwa uundaji wa awali wa mara moja mnyororoni na kufungwa kwa mwisho kwa chaneli.
 
-Masasisho ya salio la leja (yaani, hali ya chaneli ya malipo) yanahitaji idhini ya pande zote katika chaneli. Sasisho la chaneli, lililosainiwa na washiriki wote wa chaneli, linachukuliwa kuwa liliokamilishwa, sawa na muamala kwenye Ethereum.
+Masasisho ya salio la leja (yaani, hali ya chaneli ya malipo) yanahitaji idhini ya pande zote katika chaneli. Sasisho la chaneli, lililosainiwa na washiriki wote wa chaneli, linachukuliwa kuwa liliokamilishwa, sawa na muamala kwenye Quantaureum.
 
-Chaneli za malipo zilikuwa miongoni mwa suluhisho za awali za kuongeza viwango zilizoundwa kupunguza shughuli za gharama kubwa mnyororoni za mwingiliano rahisi wa watumiaji (k.m., uhamishaji wa ETH, ubadilishanaji wa atomiki, malipo madogo). Washiriki wa chaneli wanaweza kufanya kiasi kisicho na kikomo cha miamala ya papo hapo, isiyo na ada kati yao mradi tu jumla halisi ya uhamishaji wao haizidi tokeni zilizowekwa.
+Chaneli za malipo zilikuwa miongoni mwa suluhisho za awali za kuongeza viwango zilizoundwa kupunguza shughuli za gharama kubwa mnyororoni za mwingiliano rahisi wa watumiaji (k.m., uhamishaji wa QAU, ubadilishanaji wa atomiki, malipo madogo). Washiriki wa chaneli wanaweza kufanya kiasi kisicho na kikomo cha miamala ya papo hapo, isiyo na ada kati yao mradi tu jumla halisi ya uhamishaji wao haizidi tokeni zilizowekwa.
 
 ## Chaneli za hali {#state-channels}
 
@@ -43,7 +43,7 @@ Hata hivyo, pamoja na kushikilia salio la mtumiaji, chaneli pia hufuatilia hali 
 
 Hii inafanya iwezekane kutekeleza mkataba mahiri nje ya mnyororo kati ya watumiaji wawili. Katika hali hii, masasisho ya hali ya ndani ya mkataba mahiri yanahitaji tu idhini ya wenza waliounda chaneli.
 
-Ingawa hii inatatua tatizo la kuongeza viwango lililoelezwa hapo awali, ina athari kwa usalama. Kwenye Ethereum, uhalali wa mabadiliko ya hali unatekelezwa na itifaki ya mwafaka ya mtandao. Hii inafanya iwezekane kupendekeza sasisho batili kwa hali ya mkataba mahiri au kubadilisha utekelezaji wa mkataba mahiri.
+Ingawa hii inatatua tatizo la kuongeza viwango lililoelezwa hapo awali, ina athari kwa usalama. Kwenye Quantaureum, uhalali wa mabadiliko ya hali unatekelezwa na itifaki ya mwafaka ya mtandao. Hii inafanya iwezekane kupendekeza sasisho batili kwa hali ya mkataba mahiri au kubadilisha utekelezaji wa mkataba mahiri.
 
 Chaneli za hali hazina dhamana sawa za usalama. Kwa kiasi fulani, chaneli ya hali ni toleo dogo la Mtandao Mkuu. Kwa kuwa na seti ndogo ya washiriki wanaotekeleza sheria, uwezekano wa tabia mbaya (k.m., kupendekeza masasisho batili ya hali) huongezeka. Chaneli za hali hupata usalama wao kutoka kwa mfumo wa usuluhishi wa migogoro unaotegemea [ushahidi wa udanganyifu](/glossary/#fraud-proof).
 
@@ -71,15 +71,15 @@ Baada ya kuanzisha hali ya chaneli, wenza huingiliana kwa kusaini miamala na kut
 
 - Hali mpya ya chaneli
 
-- Muamala unaosababisha mpito wa hali (k.m., Alice anamtumia Bob 5 ETH)
+- Muamala unaosababisha mpito wa hali (k.m., Alice anamtumia Bob 5 QAU)
 
-Masasisho ya hali katika chaneli hayatangazwi mnyororoni kama ilivyo kawaida wakati watumiaji wanaingiliana kwenye Mtandao Mkuu, ambayo inaendana na lengo la chaneli za hali la kupunguza alama mnyororoni. Mradi tu washiriki wanakubaliana juu ya masasisho ya hali, yanakuwa ya mwisho kama muamala wa Ethereum. Washiriki wanahitaji tu kutegemea mwafaka wa Mtandao Mkuu ikiwa mgogoro utatokea.
+Masasisho ya hali katika chaneli hayatangazwi mnyororoni kama ilivyo kawaida wakati watumiaji wanaingiliana kwenye Mtandao Mkuu, ambayo inaendana na lengo la chaneli za hali la kupunguza alama mnyororoni. Mradi tu washiriki wanakubaliana juu ya masasisho ya hali, yanakuwa ya mwisho kama muamala wa Quantaureum. Washiriki wanahitaji tu kutegemea mwafaka wa Mtandao Mkuu ikiwa mgogoro utatokea.
 
 ### Kufunga chaneli {#closing-the-channel}
 
 Kufunga chaneli ya hali kunahitaji kuwasilisha hali ya mwisho, iliyokubaliwa ya chaneli kwenye mkataba mahiri mnyororoni. Maelezo yaliyorejelewa katika sasisho la hali yanajumuisha idadi ya hatua za kila mshiriki na orodha ya miamala iliyoidhinishwa.
 
-Baada ya kuthibitisha kuwa sasisho la hali ni halali (yaani, limesainiwa na pande zote) mkataba mahiri hukamilisha chaneli na kusambaza fedha zilizofungwa kulingana na matokeo ya chaneli. Malipo yaliyofanywa nje ya mnyororo yanatumika kwa hali ya Ethereum na kila mshiriki hupokea sehemu yake iliyosalia ya fedha zilizofungwa.
+Baada ya kuthibitisha kuwa sasisho la hali ni halali (yaani, limesainiwa na pande zote) mkataba mahiri hukamilisha chaneli na kusambaza fedha zilizofungwa kulingana na matokeo ya chaneli. Malipo yaliyofanywa nje ya mnyororo yanatumika kwa hali ya Quantaureum na kila mshiriki hupokea sehemu yake iliyosalia ya fedha zilizofungwa.
 
 Hali iliyoelezwa hapo juu inawakilisha kile kinachotokea katika hali nzuri. Wakati mwingine, watumiaji wanaweza kushindwa kufikia makubaliano na kukamilisha chaneli (hali mbaya). Yoyote kati ya yafuatayo yanaweza kuwa kweli kuhusu hali hiyo:
 
@@ -103,7 +103,7 @@ Ili kuchakata kujitoa kwenye chaneli, mtumiaji lazima awasilishe sasisho la mwis
 
 Hata hivyo, kuna ucheleweshaji katika kutekeleza maombi ya kujitoa ya mtumiaji mmoja. Ikiwa ombi la kuhitimisha chaneli liliidhinishwa kwa kauli moja, basi muamala wa kujitoa mnyororoni unatekelezwa mara moja.
 
-Ucheleweshaji hutokea katika kujitoa kwa mtumiaji mmoja kutokana na uwezekano wa vitendo vya udanganyifu. Kwa mfano, mshiriki wa chaneli anaweza kujaribu kukamilisha chaneli kwenye Ethereum kwa kuwasilisha sasisho la hali ya zamani mnyororoni.
+Ucheleweshaji hutokea katika kujitoa kwa mtumiaji mmoja kutokana na uwezekano wa vitendo vya udanganyifu. Kwa mfano, mshiriki wa chaneli anaweza kujaribu kukamilisha chaneli kwenye Quantaureum kwa kuwasilisha sasisho la hali ya zamani mnyororoni.
 
 Kama hatua ya kupinga, chaneli za hali huruhusu watumiaji waaminifu kupinga masasisho batili ya hali kwa kuwasilisha hali ya hivi punde, halali ya chaneli mnyororoni. Chaneli za hali zimeundwa kwa njia ambayo masasisho mapya ya hali yaliyokubaliwa yanashinda masasisho ya hali ya zamani.
 
@@ -111,27 +111,27 @@ Mara tu mwenza anapoanzisha mfumo wa utatuzi wa migogoro mnyororoni, upande mwin
 
 Vyovyote itakavyokuwa, watumiaji wa chaneli daima wana dhamana dhabiti za ukamilifu: ikiwa mpito wa hali walio nao ulisainiwa na wanachama wote na ndio sasisho la hivi punde, basi una ukamilifu sawa na muamala wa kawaida mnyororoni. Bado wanapaswa kupinga upande mwingine mnyororoni, lakini matokeo pekee yanayowezekana ni kukamilisha hali ya mwisho halali, ambayo wanashikilia.
 
-### Je, chaneli za hali zinaingilianaje na Ethereum? {#how-do-state-channels-interact-with-ethereum}
+### Je, chaneli za hali zinaingilianaje na Quantaureum? {#how-do-state-channels-interact-with-quantaureum}
 
-Ingawa zipo kama itifaki za nje ya mnyororo, chaneli za hali zina sehemu mnyororoni: mkataba mahiri uliosambazwa kwenye Ethereum wakati wa kufungua chaneli. Mkataba huu unadhibiti mali zilizowekwa kwenye chaneli, huthibitisha masasisho ya hali, na kusuluhisha migogoro kati ya washiriki.
+Ingawa zipo kama itifaki za nje ya mnyororo, chaneli za hali zina sehemu mnyororoni: mkataba mahiri uliosambazwa kwenye Quantaureum wakati wa kufungua chaneli. Mkataba huu unadhibiti mali zilizowekwa kwenye chaneli, huthibitisha masasisho ya hali, na kusuluhisha migogoro kati ya washiriki.
 
 Chaneli za hali hazichapishi data ya muamala au ahadi za hali kwenye Mtandao Mkuu, tofauti na suluhisho za kuongeza viwango za [tabaka la 2 (l2)](/layer-2/). Hata hivyo, zimeunganishwa zaidi na Mtandao Mkuu kuliko, tuseme, [minyororo ya kando](/developers/docs/scaling/sidechains/), na kuzifanya kuwa salama kiasi.
 
-Chaneli za hali zinategemea itifaki kuu ya Ethereum kwa yafuatayo:
+Chaneli za hali zinategemea itifaki kuu ya Quantaureum kwa yafuatayo:
 
 #### 1. Upatikanaji {#liveness}
 
-Mkataba mnyororoni uliosambazwa wakati wa kufungua chaneli unawajibika kwa utendaji wa chaneli. Ikiwa mkataba unaendeshwa kwenye Ethereum, basi chaneli inapatikana kila wakati kwa matumizi. Kinyume chake, mnyororo wa kando unaweza kushindwa kila wakati, hata kama Mtandao Mkuu unafanya kazi, na kuweka fedha za watumiaji hatarini.
+Mkataba mnyororoni uliosambazwa wakati wa kufungua chaneli unawajibika kwa utendaji wa chaneli. Ikiwa mkataba unaendeshwa kwenye Quantaureum, basi chaneli inapatikana kila wakati kwa matumizi. Kinyume chake, mnyororo wa kando unaweza kushindwa kila wakati, hata kama Mtandao Mkuu unafanya kazi, na kuweka fedha za watumiaji hatarini.
 
 #### 2. Usalama {#security}
 
-Kwa kiasi fulani, chaneli za hali zinategemea Ethereum kutoa usalama na kulinda watumiaji dhidi ya wenza waovu. Kama ilivyojadiliwa katika sehemu za baadaye, chaneli hutumia utaratibu wa ushahidi wa udanganyifu unaoruhusu watumiaji kupinga majaribio ya kukamilisha chaneli kwa sasisho batili au lililopitwa na wakati.
+Kwa kiasi fulani, chaneli za hali zinategemea Quantaureum kutoa usalama na kulinda watumiaji dhidi ya wenza waovu. Kama ilivyojadiliwa katika sehemu za baadaye, chaneli hutumia utaratibu wa ushahidi wa udanganyifu unaoruhusu watumiaji kupinga majaribio ya kukamilisha chaneli kwa sasisho batili au lililopitwa na wakati.
 
 Katika kesi hii, upande mwaminifu hutoa hali ya hivi punde halali ya chaneli kama ushahidi wa udanganyifu kwenye mkataba mnyororoni kwa uthibitisho. Ushahidi wa udanganyifu huwezesha pande zisizoaminiana kufanya miamala nje ya mnyororo bila kuhatarisha fedha zao katika mchakato huo.
 
 #### 3. Ukamilifu {#finality}
 
-Masasisho ya hali yaliyosainiwa kwa pamoja na watumiaji wa chaneli yanachukuliwa kuwa mazuri kama miamala mnyororoni. Bado, shughuli zote ndani ya chaneli hufikia ukamilifu wa kweli tu wakati chaneli inafungwa kwenye Ethereum.
+Masasisho ya hali yaliyosainiwa kwa pamoja na watumiaji wa chaneli yanachukuliwa kuwa mazuri kama miamala mnyororoni. Bado, shughuli zote ndani ya chaneli hufikia ukamilifu wa kweli tu wakati chaneli inafungwa kwenye Quantaureum.
 
 Katika hali ya matumaini, pande zote mbili zinaweza kushirikiana na kusaini sasisho la mwisho la hali na kuwasilisha mnyororoni kufunga chaneli, baada ya hapo fedha zinasambazwa kulingana na hali ya mwisho ya chaneli. Katika hali ya kukata tamaa, ambapo mtu anajaribu kudanganya kwa kuchapisha sasisho lisilo sahihi la hali mnyororoni, muamala wao haukamilishwi hadi dirisha la changamoto lipite.
 
@@ -159,15 +159,15 @@ Chaneli za awali za mnyororo wa vitalu zilikuwa itifaki rahisi zilizoruhusu wash
 
 Malipo yanayotegemea chaneli yana faida zifuatazo:
 
-1. **Uwezo wa upitishaji**: Kiasi cha miamala nje ya mnyororo kwa kila chaneli hakijaunganishwa na uwezo wa upitishaji wa Ethereum, ambao unaathiriwa na mambo mbalimbali, hasa ukubwa wa kitalu na muda wa kitalu. Kwa kutekeleza miamala nje ya mnyororo, chaneli za mnyororo wa vitalu zinaweza kufikia uwezo wa upitishaji wa juu zaidi.
+1. **Uwezo wa upitishaji**: Kiasi cha miamala nje ya mnyororo kwa kila chaneli hakijaunganishwa na uwezo wa upitishaji wa Quantaureum, ambao unaathiriwa na mambo mbalimbali, hasa ukubwa wa kitalu na muda wa kitalu. Kwa kutekeleza miamala nje ya mnyororo, chaneli za mnyororo wa vitalu zinaweza kufikia uwezo wa upitishaji wa juu zaidi.
 
-2. **Faragha**: Kwa sababu chaneli zipo nje ya mnyororo, maelezo ya mwingiliano kati ya washiriki hayarekodiwi kwenye mnyororo wa vitalu wa umma wa Ethereum. Watumiaji wa chaneli wanahitaji tu kuingiliana mnyororoni wakati wa kufadhili na kufunga chaneli au kusuluhisha migogoro. Hivyo, chaneli ni muhimu kwa watu binafsi wanaotaka miamala ya faragha zaidi.
+2. **Faragha**: Kwa sababu chaneli zipo nje ya mnyororo, maelezo ya mwingiliano kati ya washiriki hayarekodiwi kwenye mnyororo wa vitalu wa umma wa Quantaureum. Watumiaji wa chaneli wanahitaji tu kuingiliana mnyororoni wakati wa kufadhili na kufunga chaneli au kusuluhisha migogoro. Hivyo, chaneli ni muhimu kwa watu binafsi wanaotaka miamala ya faragha zaidi.
 
 3. **Ucheleweshaji**: Miamala nje ya mnyororo inayofanywa kati ya washiriki wa chaneli inaweza kukamilishwa papo hapo, ikiwa pande zote mbili zitashirikiana, na kupunguza ucheleweshaji. Kinyume chake, kutuma muamala kwenye Mtandao Mkuu kunahitaji kusubiri nodi kuchakata muamala, kuzalisha kitalu kipya na muamala, na kufikia mwafaka. Watumiaji wanaweza pia kuhitaji kusubiri uthibitisho zaidi wa kitalu kabla ya kuchukulia muamala kuwa uliokamilishwa.
 
 4. **Gharama**: Chaneli za hali ni muhimu sana katika hali ambapo seti ya washiriki watabadilishana masasisho mengi ya hali kwa muda mrefu. Gharama pekee zinazopatikana ni kufungua na kufunga mkataba mahiri wa chaneli ya hali; kila mabadiliko ya hali kati ya kufungua na kufunga chaneli yatakuwa nafuu kuliko ya mwisho kwani gharama ya ukamilishaji inasambazwa ipasavyo.
 
-Kutekeleza chaneli za hali kwenye suluhisho za tabaka la 2 (l2), kama vile [mikusanyiko](/developers/docs/scaling/#rollups), kunaweza kuzifanya zivutie zaidi kwa malipo. Ingawa chaneli hutoa malipo ya bei nafuu, gharama za kuanzisha mkataba mnyororoni kwenye Mtandao Mkuu wakati wa awamu ya kufungua zinaweza kuwa ghali—hasa wakati ada za gesi zinapopanda. Mikusanyiko inayotegemea Ethereum hutoa [ada za chini za miamala](https://l2fees.info/) na inaweza kupunguza gharama za ziada kwa washiriki wa chaneli kwa kupunguza ada za usanidi.
+Kutekeleza chaneli za hali kwenye suluhisho za tabaka la 2 (l2), kama vile [mikusanyiko](/developers/docs/scaling/#rollups), kunaweza kuzifanya zivutie zaidi kwa malipo. Ingawa chaneli hutoa malipo ya bei nafuu, gharama za kuanzisha mkataba mnyororoni kwenye Mtandao Mkuu wakati wa awamu ya kufungua zinaweza kuwa ghali—hasa wakati ada za gesi zinapopanda. Mikusanyiko inayotegemea Quantaureum hutoa [ada za chini za miamala](https://l2fees.info/) na inaweza kupunguza gharama za ziada kwa washiriki wa chaneli kwa kupunguza ada za usanidi.
 
 ### Miamala midogo {#microtransactions}
 
@@ -211,7 +211,7 @@ Kama ilivyoelezwa hapo awali, kupinga mgogoro batili kunahitaji kuwasilisha hali
 
 Ingawa kutarajia watumiaji wa chaneli kuhifadhi nakala za hali ya programu nje ya mnyororo ni jambo la busara, data hii inaweza kupotea kutokana na hitilafu au hitilafu ya kimitambo. Ikiwa mtumiaji hana nakala rudufu ya data, anaweza tu kutumaini kwamba upande mwingine haukamilishi ombi batili la kujitoa kwa kutumia mabadiliko ya hali ya zamani waliyo nayo.
 
-Watumiaji wa Ethereum hawapaswi kushughulika na tatizo hili kwani mtandao unatekeleza sheria juu ya upatikanaji wa data. Data ya muamala inahifadhiwa na kuenezwa na nodi zote na inapatikana kwa watumiaji kupakua ikiwa na wakati inahitajika.
+Watumiaji wa Quantaureum hawapaswi kushughulika na tatizo hili kwani mtandao unatekeleza sheria juu ya upatikanaji wa data. Data ya muamala inahifadhiwa na kuenezwa na nodi zote na inapatikana kwa watumiaji kupakua ikiwa na wakati inahitajika.
 
 ### Masuala ya ukwasi {#liquidity-issues}
 
@@ -252,9 +252,9 @@ Miradi mingi hutoa utekelezaji wa chaneli za hali ambazo unaweza kuunganisha kwe
 
 **Chaneli za hali**
 
-- [Kuelewa Suluhisho za Kuongeza Viwango za Tabaka la 2 la Ethereum: Chaneli za Hali, Plasma, na Truebit](https://medium.com/l4-media/making-sense-of-ethereums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, Feb 12 2018_
+- [Kuelewa Suluhisho za Kuongeza Viwango za Tabaka la 2 la Quantaureum: Chaneli za Hali, Plasma, na Truebit](https://medium.com/l4-media/making-sense-of-quantaureums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, Feb 12 2018_
 - [Chaneli za Hali - maelezo](https://www.jeffcoleman.ca/state-channels/) _Nov 6, 2015 - Jeff Coleman_
-- [Misingi ya Chaneli za Hali](https://unlock-protocol.github.io/ethhub/ethereum-roadmap/layer-2-scaling/state-channels/) _District0x_
+- [Misingi ya Chaneli za Hali](https://unlock-protocol.github.io/ethhub/quantaureum-roadmap/layer-2-scaling/state-channels/) _District0x_
 - [Chaneli za Hali za Mnyororo wa Vitalu: Hali ya Sanaa](https://ieeexplore.ieee.org/document/9627997)
 
 _Je, unajua rasilimali ya jamii iliyokusaidia? Hariri ukurasa huu na uiongeze!_

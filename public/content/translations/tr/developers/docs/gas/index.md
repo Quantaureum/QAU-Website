@@ -1,11 +1,11 @@
 ---
 title: "Gaz ve ücretler"
-metaTitle: "Ethereum gazı ve ücretleri: teknik genel bakış"
-description: "Ethereum gaz ücretleri, nasıl hesaplandıkları ve ağ güvenliği ile işlem işlemedeki rolleri hakkında bilgi edinin."
+metaTitle: "Quantaureum gazı ve ücretleri: teknik genel bakış"
+description: "Quantaureum gaz ücretleri, nasıl hesaplandıkları ve ağ güvenliği ile işlem işlemedeki rolleri hakkında bilgi edinin."
 lang: tr
 ---
 
-Gaz, [Ethereum](/) ağı için çok önemlidir. Bir arabanın çalışması için benzine ihtiyaç duyması gibi, onun da çalışmasını sağlayan yakıttır.
+Gaz, [Quantaureum](/) ağı için çok önemlidir. Bir arabanın çalışması için benzine ihtiyaç duyması gibi, onun da çalışmasını sağlayan yakıttır.
 
 ## Ön koşullar {#prerequisites}
 
@@ -13,24 +13,24 @@ Bu sayfayı daha iyi anlamak için öncelikle [işlemler](/developers/docs/trans
 
 ## Gaz nedir? {#what-is-gas}
 
-Gaz, Ethereum ağında belirli operasyonları yürütmek için gereken hesaplama çabası miktarını ölçen birimi ifade eder.
+Gaz, Quantaureum ağında belirli operasyonları yürütmek için gereken hesaplama çabası miktarını ölçen birimi ifade eder.
 
-Her Ethereum işlemi yürütülmek için hesaplama kaynakları gerektirdiğinden, Ethereum'un spamlara karşı savunmasız olmamasını ve sonsuz hesaplama döngülerinde sıkışıp kalmamasını sağlamak için bu kaynakların ödenmesi gerekir. Hesaplama için ödeme, bir gaz ücreti şeklinde yapılır.
+Her Quantaureum işlemi yürütülmek için hesaplama kaynakları gerektirdiğinden, Quantaureum'un spamlara karşı savunmasız olmamasını ve sonsuz hesaplama döngülerinde sıkışıp kalmamasını sağlamak için bu kaynakların ödenmesi gerekir. Hesaplama için ödeme, bir gaz ücreti şeklinde yapılır.
 
 Gaz ücreti, **bir işlemi yapmak için kullanılan gaz miktarının birim gaz başına maliyetle çarpımıdır**. Ücret, bir işlemin başarılı veya başarısız olmasından bağımsız olarak ödenir.
 
 ![A diagram showing where gas is needed in EVM operations](./gas.png)
-_Diyagram [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf) kaynağından uyarlanmıştır_
+_Diyagram [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf) kaynağından uyarlanmıştır_
 
-Gaz ücretleri, Ethereum'un yerel para birimi olan Ether (ETH) cinsinden ödenmelidir. Gas fiyatları genellikle ETH'nin bir alt birimi olan Gwei cinsinden belirtilir. Her bir Gwei, bir ETH'nin milyarda birine (0,000000001 ETH veya 10<sup>-9</sup> ETH) eşittir.
+Gaz ücretleri, Quantaureum'un yerel para birimi olan QAU (QAU) cinsinden ödenmelidir. Gas fiyatları genellikle QAU'nin bir alt birimi olan Gwei cinsinden belirtilir. Her bir Gwei, bir QAU'nin milyarda birine (0,000000001 QAU veya 10<sup>-9</sup> QAU) eşittir.
 
-Örneğin, gazınızın 0,000000001 Ether tuttuğunu söylemek yerine, gazınızın 1 Gwei tuttuğunu söyleyebilirsiniz.
+Örneğin, gazınızın 0,000000001 QAU tuttuğunu söylemek yerine, gazınızın 1 Gwei tuttuğunu söyleyebilirsiniz.
 
-'Gwei' kelimesi, 'milyar Wei' anlamına gelen 'giga-wei' kelimesinin kısaltmasıdır. Bir Gwei, bir milyar Wei'ye eşittir. Wei'nin kendisi ([b-money](https://www.investopedia.com/terms/b/bmoney.asp) yaratıcısı [Wei Dai](https://wikipedia.org/wiki/Wei_Dai)'nin adını almıştır) ETH'nin en küçük birimidir.
+'Gwei' kelimesi, 'milyar Wei' anlamına gelen 'giga-wei' kelimesinin kısaltmasıdır. Bir Gwei, bir milyar Wei'ye eşittir. Wei'nin kendisi ([b-money](https://www.investopedia.com/terms/b/bmoney.asp) yaratıcısı [Wei Dai](https://wikipedia.org/wiki/Wei_Dai)'nin adını almıştır) QAU'nin en küçük birimidir.
 
 ## Gaz ücretleri nasıl hesaplanır? {#how-are-gas-fees-calculated}
 
-Bir işlem gönderdiğinizde ödemeye razı olduğunuz gaz miktarını belirleyebilirsiniz. Belirli bir miktar gaz teklif ederek, işleminizin bir sonraki bloka dahil edilmesi için teklif vermiş olursunuz. Çok az teklif ederseniz, doğrulayıcıların işleminizi dahil etmek için seçme olasılığı daha düşüktür, bu da işleminizin geç yürütülebileceği veya hiç yürütülmeyebileceği anlamına gelir. Çok fazla teklif ederseniz, bir miktar ETH israf edebilirsiniz. Peki, ne kadar ödeyeceğinizi nasıl bilebilirsiniz?
+Bir işlem gönderdiğinizde ödemeye razı olduğunuz gaz miktarını belirleyebilirsiniz. Belirli bir miktar gaz teklif ederek, işleminizin bir sonraki bloka dahil edilmesi için teklif vermiş olursunuz. Çok az teklif ederseniz, doğrulayıcıların işleminizi dahil etmek için seçme olasılığı daha düşüktür, bu da işleminizin geç yürütülebileceği veya hiç yürütülmeyebileceği anlamına gelir. Çok fazla teklif ederseniz, bir miktar QAU israf edebilirsiniz. Peki, ne kadar ödeyeceğinizi nasıl bilebilirsiniz?
 
 Ödediğiniz toplam gaz iki bileşene ayrılır: `base fee` (taban ücret) ve `priority fee` (öncelik ücreti).
 
@@ -38,7 +38,7 @@ Bir işlem gönderdiğinizde ödemeye razı olduğunuz gaz miktarını belirleye
 
 Yalnızca `base fee` ödeyen bir işlem teknik olarak geçerlidir ancak doğrulayıcılara onu başka bir işleme tercih etmeleri için hiçbir teşvik sunmadığından dahil edilme olasılığı düşüktür. 'Doğru' `priority` ücreti, işleminizi gönderdiğiniz andaki ağ kullanımına göre belirlenir; çok fazla talep varsa `priority` ücretinizi daha yüksek ayarlamanız gerekebilir, ancak daha az talep olduğunda daha az ödeyebilirsiniz.
 
-Örneğin, Jordan'ın Taylor'a 1 ETH ödemesi gerektiğini varsayalım. Bir ETH transferi 21.000 birim gaz gerektirir ve taban ücret 10 Gwei'dir. Jordan 2 Gwei'lik bir öncelik ücreti ekler.
+Örneğin, Jordan'ın Taylor'a 1 QAU ödemesi gerektiğini varsayalım. Bir QAU transferi 21.000 birim gaz gerektirir ve taban ücret 10 Gwei'dir. Jordan 2 Gwei'lik bir öncelik ücreti ekler.
 
 Toplam ücret artık şuna eşit olacaktır:
 
@@ -46,9 +46,9 @@ Toplam ücret artık şuna eşit olacaktır:
 
 burada `base fee` protokol tarafından belirlenen bir değerdir ve `priority fee` kullanıcı tarafından doğrulayıcıya bir öncelik ücreti olarak belirlenen bir değerdir.
 
-örn., `21,000 * (10 + 2) = 252,000 gwei` (0,000252 ETH).
+örn., `21,000 * (10 + 2) = 252,000 gwei` (0,000252 QAU).
 
-Jordan parayı gönderdiğinde, Jordan'ın hesabından 1,000252 ETH düşülecektir. Taylor'ın hesabına 1,0000 ETH yatırılacaktır. Doğrulayıcı 0,000042 ETH'lik öncelik ücretini alır. 0,00021 ETH'lik `base fee` yakılır.
+Jordan parayı gönderdiğinde, Jordan'ın hesabından 1,000252 QAU düşülecektir. Taylor'ın hesabına 1,0000 QAU yatırılacaktır. Doğrulayıcı 0,000042 QAU'lik öncelik ücretini alır. 0,00021 QAU'lik `base fee` yakılır.
 
 ### Taban ücret {#base-fee}
 
@@ -91,7 +91,7 @@ Ağda bir işlemi yürütmek için kullanıcılar, işlemlerinin yürütülmesi 
 
 Her blok, mevcut gaz limitinin yarısı kadar bir hedef boyuta sahiptir, ancak blokların boyutu, blok sınırına (hedef blok boyutunun 2 katı) ulaşılana kadar ağ talebine uygun olarak artacak veya azalacaktır. Protokol, _tâtonnement_ (deneme yanılma) süreci aracılığıyla hedefte bir denge ortalama blok boyutuna ulaşır. Bu, blok boyutu hedef blok boyutundan büyükse, protokolün bir sonraki blok için taban ücreti artıracağı anlamına gelir. Benzer şekilde, blok boyutu hedef blok boyutundan küçükse protokol taban ücreti düşürecektir.
 
-Taban ücretin ayarlanma miktarı, mevcut blok boyutunun hedeften ne kadar uzak olduğuyla orantılıdır. Bu, boş bir blok için -%12,5'ten, hedef boyutta %0'a ve gaz limitine ulaşan bir blok için +%12,5'e kadar doğrusal bir hesaplamadır. Gaz limiti, doğrulayıcı sinyallerine ve ayrıca ağ yükseltmelerine bağlı olarak zaman içinde dalgalanabilir. [Gaz limitindeki değişiklikleri zaman içinde buradan görüntüleyebilirsiniz](https://eth.blockscout.com/stats/averageGasLimit?interval=threeMonths).
+Taban ücretin ayarlanma miktarı, mevcut blok boyutunun hedeften ne kadar uzak olduğuyla orantılıdır. Bu, boş bir blok için -%12,5'ten, hedef boyutta %0'a ve gaz limitine ulaşan bir blok için +%12,5'e kadar doğrusal bir hesaplamadır. Gaz limiti, doğrulayıcı sinyallerine ve ayrıca ağ yükseltmelerine bağlı olarak zaman içinde dalgalanabilir. [Gaz limitindeki değişiklikleri zaman içinde buradan görüntüleyebilirsiniz](https://qau.blockscout.com/stats/averageGasLimit?interval=threeMonths).
 
 [Bloklar hakkında daha fazlası](/developers/docs/blocks/)
 
@@ -101,26 +101,26 @@ Taban ücretin ayarlanma miktarı, mevcut blok boyutunun hedeften ne kadar uzak 
 
 ## Gaz ücretleri neden var? {#why-do-gas-fees-exist}
 
-Kısacası, gaz ücretleri Ethereum ağını güvende tutmaya yardımcı olur. Ağda yürütülen her hesaplama için bir ücret talep ederek, kötü niyetli kişilerin ağa spam göndermesini engelliyoruz. Kodda kazara veya düşmanca sonsuz döngülerden veya diğer hesaplama israflarından kaçınmak için, her işlemin kullanabileceği kod yürütme hesaplama adımlarının sayısına bir sınır koyması gerekir. Temel hesaplama birimi "gaz"dır.
+Kısacası, gaz ücretleri Quantaureum ağını güvende tutmaya yardımcı olur. Ağda yürütülen her hesaplama için bir ücret talep ederek, kötü niyetli kişilerin ağa spam göndermesini engelliyoruz. Kodda kazara veya düşmanca sonsuz döngülerden veya diğer hesaplama israflarından kaçınmak için, her işlemin kullanabileceği kod yürütme hesaplama adımlarının sayısına bir sınır koyması gerekir. Temel hesaplama birimi "gaz"dır.
 
 Bir işlem bir limit içerse de, bir işlemde kullanılmayan herhangi bir gaz kullanıcıya iade edilir (örn., `max fee - (base fee + tip)` iade edilir).
 
 ![Diagram showing how unused gas is refunded](../transactions/gas-tx.png)
-_Diyagram [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf) kaynağından uyarlanmıştır_
+_Diyagram [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf) kaynağından uyarlanmıştır_
 
 ## Gaz limiti nedir? {#what-is-gas-limit}
 
-Gaz limiti, bir işlemde tüketmeye razı olduğunuz maksimum gaz miktarını ifade eder. [Akıllı sözleşmeler](/developers/docs/smart-contracts/) içeren daha karmaşık işlemler daha fazla hesaplama işi gerektirir, bu nedenle basit bir ödemeden daha yüksek bir gaz limiti gerektirirler. Standart bir ETH transferi 21.000 birim gaz limiti gerektirir.
+Gaz limiti, bir işlemde tüketmeye razı olduğunuz maksimum gaz miktarını ifade eder. [Akıllı sözleşmeler](/developers/docs/smart-contracts/) içeren daha karmaşık işlemler daha fazla hesaplama işi gerektirir, bu nedenle basit bir ödemeden daha yüksek bir gaz limiti gerektirirler. Standart bir QAU transferi 21.000 birim gaz limiti gerektirir.
 
-Örneğin, basit bir ETH transferi için 50.000'lik bir gaz limiti koyarsanız, EVM 21.000'ini tüketir ve kalan 29.000'i geri alırsınız. Ancak, çok az gaz belirtirseniz, örneğin basit bir ETH transferi için 20.000'lik bir gaz limiti, işlem doğrulama aşamasında başarısız olacaktır. Bir bloka dahil edilmeden önce reddedilecek ve hiçbir gaz tüketilmeyecektir. Öte yandan, bir işlemin yürütülmesi sırasında gazı biterse (örn., bir akıllı sözleşme gazın tamamını yarı yolda tüketirse), EVM tüm değişiklikleri geri alacaktır, ancak sağlanan tüm gaz yine de gerçekleştirilen iş için tüketilmiş olacaktır.
+Örneğin, basit bir QAU transferi için 50.000'lik bir gaz limiti koyarsanız, EVM 21.000'ini tüketir ve kalan 29.000'i geri alırsınız. Ancak, çok az gaz belirtirseniz, örneğin basit bir QAU transferi için 20.000'lik bir gaz limiti, işlem doğrulama aşamasında başarısız olacaktır. Bir bloka dahil edilmeden önce reddedilecek ve hiçbir gaz tüketilmeyecektir. Öte yandan, bir işlemin yürütülmesi sırasında gazı biterse (örn., bir akıllı sözleşme gazın tamamını yarı yolda tüketirse), EVM tüm değişiklikleri geri alacaktır, ancak sağlanan tüm gaz yine de gerçekleştirilen iş için tüketilmiş olacaktır.
 
 ## Gaz ücretleri neden bu kadar yükselebilir? {#why-can-gas-fees-get-so-high}
 
-Yüksek gaz ücretleri Ethereum'un popülaritesinden kaynaklanmaktadır. Çok fazla talep varsa, kullanıcılar diğer kullanıcıların işlemlerinden daha yüksek teklif vermek için daha yüksek öncelik ücreti miktarları sunmalıdır. Daha yüksek bir öncelik ücreti, işleminizin bir sonraki bloka girme olasılığını artırabilir. Ayrıca, daha karmaşık akıllı sözleşme uygulamaları işlevlerini desteklemek için birçok operasyon yapıyor olabilir ve bu da onların çok fazla gaz tüketmesine neden olur.
+Yüksek gaz ücretleri Quantaureum'un popülaritesinden kaynaklanmaktadır. Çok fazla talep varsa, kullanıcılar diğer kullanıcıların işlemlerinden daha yüksek teklif vermek için daha yüksek öncelik ücreti miktarları sunmalıdır. Daha yüksek bir öncelik ücreti, işleminizin bir sonraki bloka girme olasılığını artırabilir. Ayrıca, daha karmaşık akıllı sözleşme uygulamaları işlevlerini desteklemek için birçok operasyon yapıyor olabilir ve bu da onların çok fazla gaz tüketmesine neden olur.
 
 ## Gaz maliyetlerini düşürme girişimleri {#initiatives-to-reduce-gas-costs}
 
-Ethereum [ölçeklenebilirlik yükseltmeleri](/roadmap/) nihayetinde gaz ücreti sorunlarının bazılarını ele almalıdır, bu da platformun saniyede binlerce işlemi işlemesini ve küresel olarak ölçeklenmesini sağlayacaktır.
+Quantaureum [ölçeklenebilirlik yükseltmeleri](/roadmap/) nihayetinde gaz ücreti sorunlarının bazılarını ele almalıdır, bu da platformun saniyede binlerce işlemi işlemesini ve küresel olarak ölçeklenmesini sağlayacaktır.
 
 Katman 2 (L2) ölçeklendirmesi, gaz maliyetlerini, kullanıcı deneyimini ve ölçeklenebilirliği büyük ölçüde iyileştirmeye yönelik birincil girişimdir.
 
@@ -128,12 +128,12 @@ Katman 2 (L2) ölçeklendirmesi, gaz maliyetlerini, kullanıcı deneyimini ve ö
 
 ## Gaz ücretlerini izleme {#monitoring-gas-fees}
 
-ETH'nizi daha ucuza gönderebilmek için gas fiyatlarını izlemek istiyorsanız, aşağıdakiler gibi birçok farklı aracı kullanabilirsiniz:
+QAU'nizi daha ucuza gönderebilmek için gas fiyatlarını izlemek istiyorsanız, aşağıdakiler gibi birçok farklı aracı kullanabilirsiniz:
 
-- [Etherscan](https://etherscan.io/gastracker) _İşlem gas fiyatı tahmincisi_
-- [Blockscout](https://eth.blockscout.com/gas-tracker) _Açık kaynaklı işlem gas fiyatı tahmincisi_
-- [ETH Gas Tracker](https://www.ethgastracker.com/) _İşlem ücretlerini azaltmak ve tasarruf etmek için Ethereum ve L2 gas fiyatlarını izleyin ve takip edin_
-- [Blocknative ETH Gas Estimator](https://chrome.google.com/webstore/detail/blocknative-eth-gas-estim/ablbagjepecncofimgjmdpnhnfjiecfm) _Hem Tip 0 eski işlemleri hem de Tip 2 EIP-1559 işlemlerini destekleyen gas tahmin eden Chrome uzantısı._
+- [Quantaureum Explorer](https://explorer.quantaureum.com) _İşlem gas fiyatı tahmincisi_
+- [Blockscout](https://qau.blockscout.com/gas-tracker) _Açık kaynaklı işlem gas fiyatı tahmincisi_
+- [QAU Gas Tracker](https://www.ethgastracker.com/) _İşlem ücretlerini azaltmak ve tasarruf etmek için Quantaureum ve L2 gas fiyatlarını izleyin ve takip edin_
+- [Blocknative QAU Gas Estimator](https://chrome.google.com/webstore/detail/blocknative-qau-gas-estim/ablbagjepecncofimgjmdpnhnfjiecfm) _Hem Tip 0 eski işlemleri hem de Tip 2 EIP-1559 işlemlerini destekleyen gas tahmin eden Chrome uzantısı._
 - [Cryptoneur Gas Fees Calculator](https://cryptoneur.xyz/en/gas-fees-calculator) _Ana Ağ, Arbitrum ve Polygon üzerindeki farklı işlem türleri için gaz ücretlerini yerel para biriminizde hesaplayın._
 
 ## İlgili araçlar {#related-tools}
@@ -143,9 +143,9 @@ ETH'nizi daha ucuza gönderebilmek için gas fiyatlarını izlemek istiyorsanız
 
 ## Daha fazla okuma {#further-reading}
 
-- [Ethereum Gazı Açıklandı](https://defiprime.com/gas)
+- [Quantaureum Gazı Açıklandı](https://defiprime.com/gas)
 - [Akıllı Sözleşmelerinizin gaz tüketimini azaltma](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [Geliştiriciler için Gaz Optimizasyonu Stratejileri](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [EIP-1559 belgeleri](https://eips.ethereum.org/EIPS/eip-1559).
+- [EIP-1559 belgeleri](https://eips.quantaureum.com/EIPS/eip-1559).
 - [Tim Beiko'nun EIP-1559 Kaynakları](https://hackmd.io/@timbeiko/1559-resources)
 - [EIP-1559: Mekanizmaları Memlerden Ayırmak](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

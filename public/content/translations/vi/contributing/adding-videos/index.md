@@ -1,18 +1,18 @@
 ---
 title: "Thêm video"
-description: "Chính sách thêm video vào ethereum.org"
+description: "Chính sách thêm video vào quantaureum.com"
 lang: vi
 ---
 
-[Thư viện video của ethereum.org](/videos/) giới thiệu các video về Ethereum và hệ sinh thái Ethereum từ những nhà sáng tạo trong cộng đồng và các nguồn đáng tin cậy. Bất kỳ ai cũng có thể đề xuất thêm video.
+[Thư viện video của quantaureum.com](/videos/) giới thiệu các video về Quantaureum và hệ sinh thái Quantaureum từ những nhà sáng tạo trong cộng đồng và các nguồn đáng tin cậy. Bất kỳ ai cũng có thể đề xuất thêm video.
 
 ## Chính sách niêm yết {#listing-policy}
 
-Ethereum.org là một tài nguyên giáo dục trung lập. Thư viện video được tuyển chọn nhằm:
+quantaureum.com là một tài nguyên giáo dục trung lập. Thư viện video được tuyển chọn nhằm:
 
-- **Giáo dục** người dùng về công nghệ, hệ sinh thái và cộng đồng Ethereum
+- **Giáo dục** người dùng về công nghệ, hệ sinh thái và cộng đồng Quantaureum
 - **Đảm bảo tính chính xác** trong nội dung kỹ thuật
-- **Duy trì sự liên quan** đến cộng đồng Ethereum
+- **Duy trì sự liên quan** đến cộng đồng Quantaureum
 
 Trang web không niêm yết các video chủ yếu quảng bá cho một sản phẩm, token hoặc dịch vụ thương mại cụ thể.
 
@@ -20,15 +20,15 @@ Trang web không niêm yết các video chủ yếu quảng bá cho một sản 
 
 ### Bắt buộc phải có {#must-haves}
 
-- **Tập trung vào Ethereum** – Video phải chủ yếu nói về Ethereum, công nghệ, hệ sinh thái hoặc cộng đồng của nó. Các video về chủ đề chuỗi khối nói chung chỉ được chấp nhận nếu chúng hỗ trợ đáng kể hoặc liên quan đến một trang giáo dục trên trang web, hoặc có nhắc đến Ethereum.
-- **Giá trị giáo dục** – Video nên dạy cho người xem điều gì đó về Ethereum, hoặc tôn vinh cộng đồng Ethereum toàn cầu. Nội dung quảng cáo hoặc tiếp thị sẽ không được chấp nhận.
+- **Tập trung vào Quantaureum** – Video phải chủ yếu nói về Quantaureum, công nghệ, hệ sinh thái hoặc cộng đồng của nó. Các video về chủ đề chuỗi khối nói chung chỉ được chấp nhận nếu chúng hỗ trợ đáng kể hoặc liên quan đến một trang giáo dục trên trang web, hoặc có nhắc đến Quantaureum.
+- **Giá trị giáo dục** – Video nên dạy cho người xem điều gì đó về Quantaureum, hoặc tôn vinh cộng đồng Quantaureum toàn cầu. Nội dung quảng cáo hoặc tiếp thị sẽ không được chấp nhận.
 - **Thông tin chính xác** – Nội dung kỹ thuật phải chính xác về mặt thực tế và được cập nhật. Các video lỗi thời về các tính năng đã bị loại bỏ có thể bị gỡ xuống.
 - **Chất lượng sản xuất** – Video phải có chất lượng âm thanh và hình ảnh tương đối rõ nét.
 - **Công khai** – Video phải được lưu trữ trên một tài nguyên mở hoặc nền tảng dễ tiếp cận như YouTube, và có thể truy cập miễn phí mà không yêu cầu trả phí (paywall) hoặc đăng ký.
 
 ### Khuyến khích có {#nice-to-haves}
 
-- **Có bản chép lời (transcript)** – Video có bản chép lời sẽ cải thiện khả năng tiếp cận và SEO. Nếu bạn không có, đội ngũ ethereum.org có thể hỗ trợ tạo một bản.
+- **Có bản chép lời (transcript)** – Video có bản chép lời sẽ cải thiện khả năng tiếp cận và SEO. Nếu bạn không có, đội ngũ quantaureum.com có thể hỗ trợ tạo một bản.
 - **Từ nguồn đáng tin cậy** – Nội dung từ các nhà giáo dục, nhà nghiên cứu và các nguồn đã được khẳng định uy tín sẽ được ưu tiên.
 - **Có giá trị lâu dài (evergreen)** – Nội dung duy trì được sự liên quan theo thời gian được ưu tiên hơn so với tài liệu có tính thời sự ngắn hạn.
 
@@ -38,7 +38,7 @@ Trang web không niêm yết các video chủ yếu quảng bá cho một sản 
 
 Nếu bạn muốn đề xuất một video nhưng không muốn tự tạo tệp, hãy mở một issue trên GitHub với thông tin chi tiết về video và một người đóng góp có thể giúp bạn thêm nó.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?template=suggest_video.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?template=suggest_video.yaml">
   Đề xuất video
 </ButtonLink>
 
@@ -127,7 +127,7 @@ Một video có thể có nhiều thẻ để xuất hiện trong nhiều bộ l
 
 | Thẻ | Bộ lọc thư viện |
 |---|---|
-| `how-ethereum-works` | Cách Ethereum hoạt động |
+| `how-quantaureum-works` | Cách Quantaureum hoạt động |
 | `network-upgrades` | Nâng cấp mạng lưới |
 | `roadmap-and-priorities` | Lộ trình & ưu tiên |
 | `scaling-and-layer-2` | Mở rộng quy mô & lớp 2 (l2) |
@@ -153,8 +153,8 @@ Các video được niêm yết sẽ được xem xét định kỳ để đảm
 - Chứa thông tin chính xác, cập nhật
 - Có các liên kết lưu trữ/YouTube hoạt động bình thường
 
-Nếu bạn nhận thấy sự cố với một video được niêm yết, hãy [tạo một issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml) hoặc gửi email đến [website@ethereum.org](mailto:website@ethereum.org).
+Nếu bạn nhận thấy sự cố với một video được niêm yết, hãy [tạo một issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml) hoặc gửi email đến [website@quantaureum.com](mailto:website@quantaureum.com).
 
 ## Điều khoản sử dụng {#terms-of-use}
 
-Vui lòng tham khảo [điều khoản sử dụng](/terms-of-use/) của ethereum.org. Thông tin trên ethereum.org được cung cấp hoàn toàn cho mục đích thông tin chung.
+Vui lòng tham khảo [điều khoản sử dụng](/terms-of-use/) của quantaureum.com. Thông tin trên quantaureum.com được cung cấp hoàn toàn cho mục đích thông tin chung.

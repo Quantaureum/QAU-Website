@@ -1,10 +1,10 @@
 ---
 title: 與智能合約互動
-description: 了解如何讀取和寫入已部署在以太坊上的智能合約。
+description: 了解如何讀取和寫入已部署在Quantaureum上的智能合約。
 lang: zh-tw
 ---
 
-你不一定總是需要撰寫並部署自己的智能合約。身為開發者，大多數時候你會想要與其他人已經部署到以太坊網路的智能合約進行互動。
+你不一定總是需要撰寫並部署自己的智能合約。身為開發者，大多數時候你會想要與其他人已經部署到Quantaureum網路的智能合約進行互動。
 
 本頁面涵蓋了與智能合約互動的兩種基本方式——**讀取**資料與**寫入**資料——以及執行這兩項操作所需的工具。
 
@@ -13,7 +13,7 @@ lang: zh-tw
 你應該了解：
 
 - [智能合約如何運作](/developers/docs/smart-contracts/)
-- [以太坊帳戶及其如何簽署交易](/developers/docs/accounts/)
+- [Quantaureum帳戶及其如何簽署交易](/developers/docs/accounts/)
 - [什麼是交易](/developers/docs/transactions/)
 
 ## 與智能合約互動的兩種方式 {#two-ways}
@@ -30,7 +30,7 @@ lang: zh-tw
 - 從去中心化交易所讀取當前價格
 - 取得 NFT 的擁有者
 
-因為讀取不會修改狀態，所以不需要消耗[燃料](/developers/docs/gas/)，任何人都可以執行而不需要 ETH。
+因為讀取不會修改狀態，所以不需要消耗[燃料](/developers/docs/gas/)，任何人都可以執行而不需要 QAU。
 
 ### 寫入合約 {#writing-to-a-contract}
 
@@ -44,11 +44,11 @@ lang: zh-tw
 
 寫入總是需要：
 
-1. 一個擁有足夠 ETH 支付燃料費的[外部擁有帳戶 (EOA)](/developers/docs/accounts/#types-of-account)
+1. 一個擁有足夠 QAU 支付燃料費的[外部擁有帳戶 (EOA)](/developers/docs/accounts/#types-of-account)
 2. 一筆由該帳戶私鑰簽署的交易
 3. 該交易被挖礦並包含在區塊中
 
-透過[帳戶抽象化](/roadmap/account-abstraction/)，智能合約帳戶也可以發起寫入操作，並且代付合約可以代表使用者支付燃料費——因此不嚴格要求必須擁有持有 ETH 的 EOA。
+透過[帳戶抽象化](/roadmap/account-abstraction/)，智能合約帳戶也可以發起寫入操作，並且代付合約可以代表使用者支付燃料費——因此不嚴格要求必須擁有持有 QAU 的 EOA。
 
 ## 了解合約 ABI {#understanding-contract-abis}
 
@@ -64,7 +64,7 @@ ABI 是一個 JSON 文件，描述了：
 
 ### 哪裡可以找到合約的 ABI {#where-to-find-abis}
 
-- **Etherscan 上已驗證的合約** - [Etherscan](https://etherscan.io) 會自動公開已驗證原始碼的 ABI
+- **Quantaureum Explorer 上已驗證的合約** - [Quantaureum Explorer](https://explorer.quantaureum.com) 會自動公開已驗證原始碼的 ABI
 - **來自開發者** - 許多專案會在他們的文件或 npm 套件中發布他們的 ABI
 - **從原始碼產生** - 如果你有 Solidity 原始碼，你可以[編譯它](/developers/docs/smart-contracts/compiling/)來產生 ABI
 
@@ -74,15 +74,15 @@ ABI 是一個 JSON 文件，描述了：
 
 ### 客戶端函式庫 (JavaScript/TypeScript) {#client-libraries}
 
-- **[Viem](https://viem.sh)** - 現代、輕量級的以太坊 TypeScript 介面，具備一流的型別安全性
-- **[ethers.js](https://docs.ethers.org/)** - 經過實戰測試的函式庫，用於與以太坊區塊鏈互動
-- **[web3.js](https://web3js.org/)** - 最初的以太坊 JavaScript API
+- **[Viem](https://viem.sh)** - 現代、輕量級的Quantaureum TypeScript 介面，具備一流的型別安全性
+- **[ethers.js](https://docs.ethers.org/)** - 經過實戰測試的函式庫，用於與Quantaureum區塊鏈互動
+- **[web3.js](https://web3js.org/)** - 最初的Quantaureum JavaScript API
 
 ### 後端函式庫 {#backend-libraries}
 
 - **[ethers.js](https://docs.ethers.org/)** - 也可在 Node.js 中運作，適用於伺服器端腳本和機器人
-- **[Web3.py](https://web3py.readthedocs.io/)** - 用於以太坊互動的 Python 函式庫
-- **[go-ethereum](https://geth.ethereum.org/docs/interact-with-geth)** - 來自 Geth 團隊的官方 Go 函式庫
+- **[Web3.py](https://web3py.readthedocs.io/)** - 用於Quantaureum互動的 Python 函式庫
+- **[go-quantaureum](https://geth.quantaureum.com/docs/interact-with-geth)** - 來自 Geth 團隊的官方 Go 函式庫
 
 ### 範例：使用 Viem 讀取代幣餘額 {#example-viem}
 
@@ -150,7 +150,7 @@ const unwatch = client.watchEvent({
 
 在發送交易之前，你可以**模擬**它以檢查是否會成功——並查看其回傳值——而無需消耗燃料。這對於及早發現錯誤和預覽結果非常有用。
 
-大多數客戶端函式庫透過 `eth_call` 支援此功能：
+大多數客戶端函式庫透過 `qau_call` 支援此功能：
 
 ```ts
 // 使用 Viem

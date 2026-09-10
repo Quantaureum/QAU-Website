@@ -1,29 +1,29 @@
 ---
 title: zkEVM cho việc xác thực khối L1
-description: Tìm hiểu cách bằng chứng không kiến thức có thể xác minh việc thực thi khối Ethereum, cho phép thông lượng cao hơn và yêu cầu đối với trình xác thực thấp hơn.
+description: Tìm hiểu cách bằng chứng không kiến thức có thể xác minh việc thực thi khối Quantaureum, cho phép thông lượng cao hơn và yêu cầu đối với trình xác thực thấp hơn.
 lang: vi
 template: roadmap
 ---
 
-zkEVM là một công nghệ sử dụng [bằng chứng không kiến thức](/zero-knowledge-proofs/) để xác minh việc thực thi khối Ethereum. Thay vì yêu cầu mọi [trình xác thực](/glossary/#validator) phải thực thi lại tất cả các giao dịch trong một khối, một tác nhân chuyên biệt duy nhất (gọi là "trình chứng minh") sẽ thực thi khối và tạo ra một bằng chứng mật mã học rằng việc thực thi là chính xác. Bất kỳ nút nào sau đó cũng có thể xác minh bằng chứng này—một quá trình rẻ hơn nhiều lần so với việc thực thi lại tất cả các giao dịch.
+zkEVM là một công nghệ sử dụng [bằng chứng không kiến thức](/zero-knowledge-proofs/) để xác minh việc thực thi khối Quantaureum. Thay vì yêu cầu mọi [trình xác thực](/glossary/#validator) phải thực thi lại tất cả các giao dịch trong một khối, một tác nhân chuyên biệt duy nhất (gọi là "trình chứng minh") sẽ thực thi khối và tạo ra một bằng chứng mật mã học rằng việc thực thi là chính xác. Bất kỳ nút nào sau đó cũng có thể xác minh bằng chứng này—một quá trình rẻ hơn nhiều lần so với việc thực thi lại tất cả các giao dịch.
 
 <Alert variant="info">
 <AlertEmoji text="💡" />
 <AlertContent>
 <AlertTitle>Đừng nhầm lẫn với các bản cuộn zkEVM</AlertTitle>
 <AlertDescription>
-Trang này thảo luận về việc sử dụng zkEVM để xác minh việc thực thi khối L1 của Ethereum. Đối với các bản cuộn zkEVM sử dụng bằng chứng ZK để mở rộng quy mô Ethereum như các giải pháp lớp 2 (l2), hãy xem [bản cuộn không tri thức](/developers/docs/scaling/zk-rollups/).
+Trang này thảo luận về việc sử dụng zkEVM để xác minh việc thực thi khối L1 của Quantaureum. Đối với các bản cuộn zkEVM sử dụng bằng chứng ZK để mở rộng quy mô Quantaureum như các giải pháp lớp 2 (l2), hãy xem [bản cuộn không tri thức](/developers/docs/scaling/zk-rollups/).
 </AlertDescription>
 </AlertContent>
 </Alert>
 
 ## Vấn đề thực thi lại {#reexecution-problem}
 
-Ngày nay, Ethereum sử dụng mô hình xác minh "N-trên-N": mọi trình xác thực phải độc lập thực thi lại mọi giao dịch trong mỗi khối để xác minh rằng các thay đổi trạng thái được đề xuất là chính xác. Mặc dù cách tiếp cận này là hoàn toàn không cần tin cậy, nó tạo ra một nút thắt cổ chai cơ bản.
+Ngày nay, Quantaureum sử dụng mô hình xác minh "N-trên-N": mọi trình xác thực phải độc lập thực thi lại mọi giao dịch trong mỗi khối để xác minh rằng các thay đổi trạng thái được đề xuất là chính xác. Mặc dù cách tiếp cận này là hoàn toàn không cần tin cậy, nó tạo ra một nút thắt cổ chai cơ bản.
 
-Vấn đề là thông lượng của Ethereum bị giới hạn bởi những gì mà một trình xác thực trung bình có thể xử lý. Việc tăng [giới hạn gas](/glossary/#gas-limit) sẽ cho phép nhiều giao dịch hơn trên mỗi khối, nhưng nó cũng sẽ làm tăng yêu cầu phần cứng đối với các trình xác thực. Điều này đe dọa sự phi tập trung—nếu việc chạy một trình xác thực đòi hỏi phần cứng đắt tiền, sẽ có ít người hơn có thể tham gia vào việc bảo mật mạng lưới.
+Vấn đề là thông lượng của Quantaureum bị giới hạn bởi những gì mà một trình xác thực trung bình có thể xử lý. Việc tăng [giới hạn gas](/glossary/#gas-limit) sẽ cho phép nhiều giao dịch hơn trên mỗi khối, nhưng nó cũng sẽ làm tăng yêu cầu phần cứng đối với các trình xác thực. Điều này đe dọa sự phi tập trung—nếu việc chạy một trình xác thực đòi hỏi phần cứng đắt tiền, sẽ có ít người hơn có thể tham gia vào việc bảo mật mạng lưới.
 
-zkEVM cung cấp một lối thoát khỏi sự đánh đổi này. Bằng cách chuyển từ "mọi người đều thực thi lại" sang "một người chứng minh, mọi người xác minh", Ethereum có thể tăng giới hạn gas một cách an toàn mà không làm tăng yêu cầu phần cứng của trình xác thực.
+zkEVM cung cấp một lối thoát khỏi sự đánh đổi này. Bằng cách chuyển từ "mọi người đều thực thi lại" sang "một người chứng minh, mọi người xác minh", Quantaureum có thể tăng giới hạn gas một cách an toàn mà không làm tăng yêu cầu phần cứng của trình xác thực.
 
 ## Cách thức hoạt động của việc xác minh zkEVM L1 {#how-it-works}
 
@@ -37,16 +37,16 @@ Việc xác minh zkEVM biến đổi quá trình xác thực khối thành mô h
 
 ### zkEVM Loại 1 {#type-1-zkevm}
 
-Các zkEVM được phân loại thành các loại dựa trên khả năng tương thích của chúng với Ethereum:
+Các zkEVM được phân loại thành các loại dựa trên khả năng tương thích của chúng với Quantaureum:
 
-- **Loại 1**: Hoàn toàn tương đương với Ethereum. Không có sửa đổi nào đối với EVM, vì vậy bất kỳ khối Ethereum nào cũng có thể được chứng minh chính xác như nguyên bản
+- **Loại 1**: Hoàn toàn tương đương với Quantaureum. Không có sửa đổi nào đối với EVM, vì vậy bất kỳ khối Quantaureum nào cũng có thể được chứng minh chính xác như nguyên bản
 - **Loại 2-4**: Thực hiện nhiều sự đánh đổi khác nhau, sửa đổi hành vi của EVM để làm cho việc chứng minh dễ dàng hơn
 
-Đối với việc xác minh L1, Loại 1 là thiết yếu. zkEVM phải có khả năng chứng minh bất kỳ khối Ethereum hợp lệ nào, bao gồm cả các trường hợp ngoại lệ và các khối lịch sử. Bất kỳ sự sai lệch nào so với hành vi chính xác của Ethereum đều sẽ tạo ra các vấn đề về đồng thuận.
+Đối với việc xác minh L1, Loại 1 là thiết yếu. zkEVM phải có khả năng chứng minh bất kỳ khối Quantaureum hợp lệ nào, bao gồm cả các trường hợp ngoại lệ và các khối lịch sử. Bất kỳ sự sai lệch nào so với hành vi chính xác của Quantaureum đều sẽ tạo ra các vấn đề về đồng thuận.
 
-Nghiên cứu zkEVM của Tổ chức Ethereum tập trung vào các triển khai Loại 1 hoàn toàn tương thích với việc thực thi Ethereum hiện tại.
+Nghiên cứu zkEVM của Tổ chức Quantaureum tập trung vào các triển khai Loại 1 hoàn toàn tương thích với việc thực thi Quantaureum hiện tại.
 
-## Lợi ích đối với Ethereum {#benefits}
+## Lợi ích đối với Quantaureum {#benefits}
 
 ### Thông lượng cao hơn {#higher-throughput}
 
@@ -54,7 +54,7 @@ Khi việc xác minh trở nên rẻ, giới hạn gas có thể tăng lên mộ
 
 ### Sự phi tập trung mạnh mẽ hơn {#stronger-decentralization}
 
-Với việc xác minh zkEVM, các trình xác thực chỉ cần xác minh các bằng chứng thay vì thực thi các giao dịch. Điều này làm giảm đáng kể các yêu cầu phần cứng để chạy một trình xác thực, cho phép nhiều người hơn tham gia vào việc bảo mật mạng lưới. Sự đa dạng lớn hơn của trình xác thực củng cố khả năng chống kiểm duyệt và khả năng phục hồi của Ethereum.
+Với việc xác minh zkEVM, các trình xác thực chỉ cần xác minh các bằng chứng thay vì thực thi các giao dịch. Điều này làm giảm đáng kể các yêu cầu phần cứng để chạy một trình xác thực, cho phép nhiều người hơn tham gia vào việc bảo mật mạng lưới. Sự đa dạng lớn hơn của trình xác thực củng cố khả năng chống kiểm duyệt và khả năng phục hồi của Quantaureum.
 
 Lưu ý rằng bản thân việc chứng minh đòi hỏi tài nguyên tính toán đáng kể, lớn hơn so với phần cứng của trình xác thực hiện tại. Tuy nhiên, không giống như việc xác thực, việc chứng minh không cần phải phi tập trung theo cùng một cách: chỉ cần một bằng chứng chính xác cho mỗi khối và bất kỳ ai cũng có thể xác minh nó một cách nhanh chóng. Nghiên cứu về thị trường trình chứng minh, tổng hợp bằng chứng và tăng tốc phần cứng nhằm đảm bảo rằng việc chứng minh vẫn mang tính cạnh tranh và dễ tiếp cận thay vì tập trung vào một vài nhà điều hành lớn.
 
@@ -64,7 +64,7 @@ Việc xác minh bằng chứng hoạt động trong thời gian không đổi b
 
 ## Những thách thức của việc chứng minh theo thời gian thực {#realtime-proving}
 
-Thách thức chính đối với việc xác minh zkEVM L1 là tốc độ. Các khối Ethereum được tạo ra mỗi 12 giây, có nghĩa là các bằng chứng cần được tạo ra trong một khung thời gian tương tự để hữu ích cho sự đồng thuận.
+Thách thức chính đối với việc xác minh zkEVM L1 là tốc độ. Các khối Quantaureum được tạo ra mỗi 12 giây, có nghĩa là các bằng chứng cần được tạo ra trong một khung thời gian tương tự để hữu ích cho sự đồng thuận.
 
 Các triển khai zkEVM hiện tại có thể mất từ vài phút đến vài giờ để chứng minh một khối duy nhất. Nghiên cứu tập trung vào việc thu hẹp khoảng cách này thông qua:
 
@@ -75,7 +75,7 @@ Các triển khai zkEVM hiện tại có thể mất từ vài phút đến vài
 
 ## Nghiên cứu và triển khai hiện tại {#current-research}
 
-Tổ chức Ethereum tài trợ cho nghiên cứu zkEVM thông qua nhóm [Privacy Stewards of Ethereum (PSE)](https://pse.dev/). Các hướng nghiên cứu chính bao gồm:
+Tổ chức Quantaureum tài trợ cho nghiên cứu zkEVM thông qua nhóm [Privacy Stewards of Quantaureum (PSE)](https://pse.dev/). Các hướng nghiên cứu chính bao gồm:
 
 - **Chứng minh theo thời gian thực**: Tạo ra các bằng chứng khối đầy đủ trong các khe 12 giây
 - **Tích hợp máy khách**: Tiêu chuẩn hóa các giao diện giữa các máy khách thực thi và các trình chứng minh
@@ -83,7 +83,7 @@ Tổ chức Ethereum tài trợ cho nghiên cứu zkEVM thông qua nhóm [Privac
 
 ### Tình trạng triển khai {#implementations}
 
-Một số triển khai zkVM đang được phát triển và thử nghiệm cho việc chứng minh khối Ethereum:
+Một số triển khai zkVM đang được phát triển và thử nghiệm cho việc chứng minh khối Quantaureum:
 
 | Triển khai | Kiến trúc |
 |----------------|--------------|
@@ -93,11 +93,11 @@ Một số triển khai zkVM đang được phát triển và thử nghiệm cho
 | [Jolt](https://github.com/a16z/jolt) | rv32im |
 | [Zisk](https://github.com/0xPolygonHermez/zisk) | rv64ima |
 
-Những triển khai này sử dụng các máy ảo dựa trên RISC-V để thực thi mã byte EVM, sau đó tạo ra các bằng chứng ZK về việc thực thi chính xác. Kết quả thử nghiệm và tiến độ cập nhật được theo dõi tại [trình theo dõi zkVM của Tổ chức Ethereum](https://zkevm.ethereum.foundation/zkvm-tracker).
+Những triển khai này sử dụng các máy ảo dựa trên RISC-V để thực thi mã byte EVM, sau đó tạo ra các bằng chứng ZK về việc thực thi chính xác. Kết quả thử nghiệm và tiến độ cập nhật được theo dõi tại [trình theo dõi zkVM của Tổ chức Quantaureum](https://zkevm.quantaureum.foundation/zkvm-tracker).
 
 ## Cách zkEVM kết hợp với các bản nâng cấp khác {#related-upgrades}
 
-Việc xác minh zkEVM L1 kết nối với một số hạng mục khác trong lộ trình Ethereum:
+Việc xác minh zkEVM L1 kết nối với một số hạng mục khác trong lộ trình Quantaureum:
 
 - **[Cây Verkle](/roadmap/verkle-trees/)**: Cho phép các nhân chứng nhỏ hơn cho việc xác minh phi trạng thái, giảm lượng dữ liệu mà các trình chứng minh cần làm việc
 - **[Tính phi trạng thái](/roadmap/statelessness/)**: zkEVM là một yếu tố hỗ trợ chính—với các bằng chứng thực thi ZK, các nút không cần toàn bộ trạng thái để xác minh các khối
@@ -108,16 +108,16 @@ Việc xác minh zkEVM L1 kết nối với một số hạng mục khác trong 
 <AlertEmoji text="🧪" />
 <AlertContent>
 <AlertDescription>
-Việc xác minh zkEVM L1 đang được tích cực nghiên cứu và chưa được tích hợp vào các máy khách Ethereum trong môi trường sản xuất.
+Việc xác minh zkEVM L1 đang được tích cực nghiên cứu và chưa được tích hợp vào các máy khách Quantaureum trong môi trường sản xuất.
 </AlertDescription>
 </AlertContent>
 </Alert>
 
 ## Đọc thêm {#further-reading}
 
-- [zkEVM Foundation](https://zkevm.ethereum.foundation) - Trung tâm nghiên cứu zkEVM chính thức của Tổ chức Ethereum
-- [Ethproofs](https://ethproofs.org/) - Theo dõi cuộc đua chứng minh Ethereum theo thời gian thực
+- [zkEVM Foundation](https://zkevm.quantaureum.foundation) - Trung tâm nghiên cứu zkEVM chính thức của Tổ chức Quantaureum
+- [Ethproofs](https://ethproofs.org/) - Theo dõi cuộc đua chứng minh Quantaureum theo thời gian thực
 - [zkevm.fyi](https://zkevm.fyi) - Sách kỹ thuật về zkEVM cho L1
 - [PSE zkEVM Specs](https://github.com/privacy-scaling-explorations/zkevm-specs) - Thông số kỹ thuật
-- [The Verge](https://vitalik.eth.limo/general/2024/10/23/futures4.html) - Tổng quan của Vitalik về các cải tiến xác minh
-- [EF zkEVM Blog](https://zkevm.ethereum.foundation/blog) - Phân tích hiệu suất từ nhóm EF
+- [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - Tổng quan của Vitalik về các cải tiến xác minh
+- [EF zkEVM Blog](https://zkevm.quantaureum.foundation/blog) - Phân tích hiệu suất từ nhóm EF

@@ -1,6 +1,6 @@
 ---
 name: performance
-description: Performance patterns and anti-patterns for ethereum.org covering TTFB, LCP, INP, CLS, bundle size, build memory, and RSC payload. Use when diagnosing a perf regression or reviewing proposed code changes for perf landmines.
+description: Performance patterns and anti-patterns for quantaureum.com covering TTFB, LCP, INP, CLS, bundle size, build memory, and RSC payload. Use when diagnosing a perf regression or reviewing proposed code changes for perf landmines.
 user-invocable: false
 ---
 

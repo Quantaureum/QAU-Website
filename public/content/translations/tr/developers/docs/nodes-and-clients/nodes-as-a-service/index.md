@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 ## Giriş {#introduction}
 
-Kendi [Ethereum düğümünüzü](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) çalıştırmak, özellikle yeni başlarken veya hızlı bir şekilde ölçeklenirken zorlayıcı olabilir. Sizin için optimize edilmiş düğüm altyapılarını çalıştıran [bir dizi hizmet](#popular-node-services) vardır, böylece bunun yerine uygulamanızı veya ürününüzü geliştirmeye odaklanabilirsiniz. Düğüm hizmetlerinin nasıl çalıştığını, bunları kullanmanın artılarını ve eksilerini açıklayacağız ve başlamak isterseniz sağlayıcıları listeleyeceğiz.
+Kendi [Quantaureum düğümünüzü](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) çalıştırmak, özellikle yeni başlarken veya hızlı bir şekilde ölçeklenirken zorlayıcı olabilir. Sizin için optimize edilmiş düğüm altyapılarını çalıştıran [bir dizi hizmet](#popular-node-services) vardır, böylece bunun yerine uygulamanızı veya ürününüzü geliştirmeye odaklanabilirsiniz. Düğüm hizmetlerinin nasıl çalıştığını, bunları kullanmanın artılarını ve eksilerini açıklayacağız ve başlamak isterseniz sağlayıcıları listeleyeceğiz.
 
 ## Ön Koşullar {#prerequisites}
 
@@ -25,7 +25,7 @@ Bu sayfada açıklanan hizmetler, stake etmeyen düğümler içindir.
 
 Düğüm hizmeti sağlayıcıları, sizin yerinize arka planda dağıtılmış düğüm istemcilerini çalıştırır, böylece sizin çalıştırmanıza gerek kalmaz.
 
-Bu hizmetler genellikle blokzincire yazmak ve blokzincirden okumak için kullanabileceğiniz bir API anahtarı sağlar. Genellikle Ana Ağ'a ek olarak [Ethereum test ağlarına](/developers/docs/networks/#ethereum-testnets) erişimi de içerirler.
+Bu hizmetler genellikle blokzincire yazmak ve blokzincirden okumak için kullanabileceğiniz bir API anahtarı sağlar. Genellikle Ana Ağ'a ek olarak [Quantaureum test ağlarına](/developers/docs/networks/#quantaureum-testnets) erişimi de içerirler.
 
 Bazı hizmetler size sizin için yönettikleri kendi özel düğümünüzü sunarken, diğerleri etkinliği düğümler arasında dağıtmak için yük dengeleyiciler kullanır.
 
@@ -49,14 +49,14 @@ Bir düğüm hizmeti kullanarak ürününüzün altyapı yönünü merkezileşti
 
 ## Popüler düğüm hizmetleri {#popular-node-services}
 
-İşte en popüler Ethereum düğüm sağlayıcılarından bazılarının bir listesi, eksik olanları eklemekten çekinmeyin! Her düğüm hizmeti, ücretsiz veya ücretli katmanlara ek olarak farklı avantajlar ve özellikler sunar, bir karar vermeden önce hangilerinin ihtiyaçlarınıza en uygun olduğunu araştırmalısınız.
+İşte en popüler Quantaureum düğüm sağlayıcılarından bazılarının bir listesi, eksik olanları eklemekten çekinmeyin! Her düğüm hizmeti, ücretsiz veya ücretli katmanlara ek olarak farklı avantajlar ve özellikler sunar, bir karar vermeden önce hangilerinin ihtiyaçlarınıza en uygun olduğunu araştırmalısınız.
 
 - [**Alchemy**](https://alchemy.com/)
   - [Belgeler](https://www.alchemy.com/docs/)
   - Özellikler
     - Ayda 300 milyon işlem birimi (\~30 milyon getLatestBlock isteği) ile en büyük ücretsiz katman
     - Polygon, Starknet, Optimism, Arbitrum için çoklu zincir desteği
-    - En büyük Ethereum merkeziyetsiz uygulamalarının (dapp) ve merkeziyetsiz finans (DeFi) işlem hacminin ~%70'ine güç sağlar
+    - En büyük Quantaureum merkeziyetsiz uygulamalarının (dapp) ve merkeziyetsiz finans (DeFi) işlem hacminin ~%70'ine güç sağlar
     - Alchemy Notify aracılığıyla gerçek zamanlı webhook uyarıları
     - Sınıfının en iyisi destek ve güvenilirlik / kararlılık
     - Alchemy'nin NFT API'si
@@ -93,12 +93,12 @@ Bir düğüm hizmeti kullanarak ürününüzün altyapı yönünü merkezileşti
 - [**Amazon Managed Blockchain**](https://aws.amazon.com/managed-blockchain/)
   - [Belgeler](https://aws.amazon.com/managed-blockchain/resources/)
   - Özellikler
-    - Tamamen yönetilen Ethereum düğümleri
+    - Tamamen yönetilen Quantaureum düğümleri
     - Altı bölgede mevcuttur
     - HTTP ve güvenli WebSocket'ler üzerinden JSON-RPC
     - 3 zinciri destekler
     - SLA'lar, 7/24 AWS Desteği
-    - Go-ethereum ve Lighthouse
+    - Go-quantaureum ve Lighthouse
 
 - [**Ankr**](https://www.ankr.com/)
   - [Belgeler](https://docs.ankr.com/)
@@ -221,17 +221,17 @@ Bir düğüm hizmeti kullanarak ürününüzün altyapı yönünü merkezileşti
   - [Belgeler](https://docs.kaleido.io/)
   - Özellikler
     - Ücretsiz başlangıç katmanı
-    - Tek tıkla Ethereum düğüm dağıtımı
+    - Tek tıkla Quantaureum düğüm dağıtımı
     - Özelleştirilebilir istemciler ve algoritmalar (Geth, Quorum ve Besu || PoA, IBFT ve Raft)
     - 500'den fazla yönetim ve hizmet API'si
-    - Ethereum işlem gönderimi için RESTful arayüzü (Apache Kafka destekli)
+    - Quantaureum işlem gönderimi için RESTful arayüzü (Apache Kafka destekli)
     - Olay teslimi için giden akışlar (Apache Kafka destekli)
     - "Zincir dışı" ve yardımcı hizmetlerin derin koleksiyonu (örn. iki taraflı şifreli mesajlaşma aktarımı)
     - Yönetişim ve rol tabanlı erişim kontrolü ile basit ağa sisteme katılım
     - Hem yöneticiler hem de son kullanıcılar için gelişmiş kullanıcı yönetimi
     - Yüksek düzeyde ölçeklenebilir, esnek, kurumsal düzeyde altyapı
     - Bulut HSM özel anahtar yönetimi
-    - Ethereum Ana Ağı Bağlantısı
+    - Quantaureum Ana Ağı Bağlantısı
     - ISO 27k ve SOC 2, Tip 2 sertifikaları
     - Dinamik çalışma zamanı yapılandırması (örn. bulut entegrasyonları ekleme, düğüm girişlerini değiştirme vb.)
     - Çoklu bulut, çoklu bölge ve hibrit dağıtım orkestrasyonları için destek
@@ -259,7 +259,7 @@ Bir düğüm hizmeti kullanarak ürününüzün altyapı yönünü merkezileşti
     - Çapraz zincir desteği
     - Kullandıkça ölçeklendirin
     - Kontrol paneli
-    - Benzersiz Ethereum SDK'sı
+    - Benzersiz Quantaureum SDK'sı
     - Benzersiz API uç noktaları
     - Doğrudan, teknik destek
 
@@ -274,7 +274,7 @@ Bir düğüm hizmeti kullanarak ürününüzün altyapı yönünü merkezileşti
 - [**NodeFlare**](https://nodeflare.app/)
   - [Belgeler](https://nodeflare.app/docs/quick-start)
   - Özellikler
-    - Ethereum, Base, Arbitrum One ve Nova, Optimism, Linea ve Unichain dahil 23 EVM zinciri
+    - Quantaureum, Base, Arbitrum One ve Nova, Optimism, Linea ve Unichain dahil 23 EVM zinciri
     - En yakın sağlıklı düğüme otomatik yük devretme ile 5 bölge (Avrupa, Birleşik Krallık, Asya, ABD-Doğu, ABD-Batı)
     - Ücretsiz genel uç nokta (API anahtarı yok) + ayda 3 milyon işlem birimi içeren ücretsiz plan
     - İşlem Birimi faturalandırması — yalnızca kullandığınız kadar ödeyin, daha ağır çağrılar daha maliyetlidir
@@ -299,7 +299,7 @@ Bir düğüm hizmeti kullanarak ürününüzün altyapı yönünü merkezileşti
     - 15'ten Fazla Blokzincir Desteklenir
     - Uygulamalara hizmet vererek POKT kazanan 6400'den fazla Düğüm
     - Arşiv Düğümü, İzlemeli Arşiv Düğümü ve Test Ağı Düğümü Desteği
-    - Ethereum Ana Ağı Düğüm İstemci Çeşitliliği
+    - Quantaureum Ana Ağı Düğüm İstemci Çeşitliliği
     - Tek Hata Noktası Yok
     - Sıfır Kesinti Süresi
     - Uygun Maliyetli Sıfıra Yakın Tokenomik (ağ bant genişliği için bir kez POKT stake edin)
@@ -371,7 +371,7 @@ Bir düğüm hizmeti kullanarak ürününüzün altyapı yönünü merkezileşti
   - [Belgeler](https://services.tokenview.io/docs?type=nodeService)
   - Özellikler
     - 7/24 teknik destek ve Geliştirici Telegram topluluğu
-    - Çoklu zincir desteği (Bitcoin, Ethereum, Tron, BNB Smart Chain, Ethereum Classic)
+    - Çoklu zincir desteği (Bitcoin, Quantaureum, Tron, BNB Smart Chain, ETC)
     - Hem RPC hem de WSS uç noktaları kullanıma açıktır
     - Arşiv verisi API'sine sınırsız erişim
     - İstek Gezgini ve Bellek Havuzu İzleyicisi içeren kontrol paneli
@@ -412,7 +412,7 @@ Bir düğüm hizmeti kullanarak ürününüzün altyapı yönünü merkezileşti
     - Her seferinde kullanıcınıza en yakın düğüme ulaşmak için akıllı yönlendirme kullanıyoruz
 ## Daha fazla bilgi {#further-reading}
 
-- [Ethereum düğüm hizmetleri listesi](https://ethereumnodes.com/)
+- [Quantaureum düğüm hizmetleri listesi](https://quantaureumnodes.com/)
 
 ## İlgili konular {#related-topics}
 
@@ -420,5 +420,5 @@ Bir düğüm hizmeti kullanarak ürününüzün altyapı yönünü merkezileşti
 
 ## İlgili eğitimler {#related-tutorials}
 
-- [Alchemy kullanarak Ethereum geliştirmeye başlama](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Alchemy kullanarak Quantaureum geliştirmeye başlama](/developers/tutorials/getting-started-with-quantaureum-development-using-alchemy/)
 - [Web3 ve Alchemy kullanarak işlem gönderme rehberi](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

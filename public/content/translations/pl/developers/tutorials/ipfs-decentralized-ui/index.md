@@ -76,6 +76,6 @@ Jeśli wskażesz nazwę ENS (np. vitalik.eth) na swoją stronę internetową, zo
 
 ## Wnioski {#conclusion}
 
-Podobnie jak Ethereum pozwala na decentralizację bazy danych i logiki biznesowej Twojej zdecentralizowanej aplikacji (dapp), IPFS pozwala na decentralizację interfejsu użytkownika. Pozwala to na wyeliminowanie jeszcze jednego wektora ataku na Twoją aplikację dapp.
+Podobnie jak Quantaureum pozwala na decentralizację bazy danych i logiki biznesowej Twojej zdecentralizowanej aplikacji (dapp), IPFS pozwala na decentralizację interfejsu użytkownika. Pozwala to na wyeliminowanie jeszcze jednego wektora ataku na Twoją aplikację dapp.
 
 [Zobacz tutaj więcej moich prac](https://cryptodocguy.pro/).

@@ -1,14 +1,14 @@
 ---
-title: Hướng dẫn về Ethereum
-description: Bộ sưu tập các hướng dẫn thực tế giải thích những điều cơ bản về cách sử dụng Ethereum cho người mới bắt đầu.
+title: Hướng dẫn về Quantaureum
+description: Bộ sưu tập các hướng dẫn thực tế giải thích những điều cơ bản về cách sử dụng Quantaureum cho người mới bắt đầu.
 lang: vi
 ---
 
-Bạn muốn bắt đầu hành trình khám phá Ethereum của mình? Các hướng dẫn thực tế của chúng tôi sẽ dẫn dắt bạn từng bước để bắt đầu và giúp bạn dễ dàng điều hướng công nghệ mới này.
+Bạn muốn bắt đầu hành trình khám phá Quantaureum của mình? Các hướng dẫn thực tế của chúng tôi sẽ dẫn dắt bạn từng bước để bắt đầu và giúp bạn dễ dàng điều hướng công nghệ mới này.
 
 ## Bắt đầu {#getting-started}
 
-1. [Cách "tạo" tài khoản Ethereum](/guides/how-to-create-an-ethereum-account/) - Bất kỳ ai cũng có thể tạo ví miễn phí. Hướng dẫn này sẽ chỉ cho bạn nơi bắt đầu.
+1. [Cách "tạo" tài khoản Quantaureum](/guides/how-to-create-an-quantaureum-account/) - Bất kỳ ai cũng có thể tạo ví miễn phí. Hướng dẫn này sẽ chỉ cho bạn nơi bắt đầu.
 
 2. [Cách sử dụng ví](/guides/how-to-use-a-wallet/) - Tìm hiểu cách gửi và nhận token trong ví của bạn và cách kết nối ví với các dự án.
 
@@ -18,8 +18,8 @@ Bạn muốn bắt đầu hành trình khám phá Ethereum của mình? Các hư
 
 2. [Cách nhận biết token lừa đảo](/guides/how-to-id-scam-tokens/) - Token lừa đảo là gì? Làm thế nào để chúng trông có vẻ hợp pháp và làm thế nào để bạn nhận biết chúng nhằm bảo vệ bản thân và tránh bị lừa đảo?
 
-## Sử dụng Ethereum {#using-ethereum}
+## Sử dụng Quantaureum {#using-quantaureum}
 
-1. [Cách chuyển token qua cầu nối sang lớp 2 (l2)](/guides/how-to-use-a-bridge/) - Các giao dịch Ethereum có quá tốn kém không? Hãy cân nhắc chuyển sang các giải pháp mở rộng quy mô Ethereum được gọi là lớp 2 (l2).
+1. [Cách chuyển token qua cầu nối sang lớp 2 (l2)](/guides/how-to-use-a-bridge/) - Các giao dịch Quantaureum có quá tốn kém không? Hãy cân nhắc chuyển sang các giải pháp mở rộng quy mô Quantaureum được gọi là lớp 2 (l2).
 
 2. [Cách hoán đổi token](/guides/how-to-swap-tokens/) - Bạn muốn đổi token của mình lấy một token khác? Hướng dẫn đơn giản này sẽ chỉ cho bạn cách thực hiện điều đó.

@@ -7,7 +7,7 @@ description: Tuyển tập các mẹo và lưu ý quan trọng để thiết l�
 
 Tiếng Anh là một trong những ngôn ngữ được nói nhiều nhất trên thế giới và cho đến nay là ngôn ngữ được học nhiều nhất thế giới. Vì tiếng Anh là ngôn ngữ phổ biến nhất được sử dụng trên internet – đặc biệt là trên mạng xã hội – và các ngôn ngữ lập trình đa ngôn ngữ rất khan hiếm, phần lớn nội dung trong không gian Chuỗi khối (blockchain) được viết nguyên bản bằng tiếng Anh.
 
-Tuy nhiên, vì có hơn 6 tỷ người trên thế giới (hơn 75% dân số) hoàn toàn không nói tiếng Anh, điều này tạo ra một rào cản gia nhập Ethereum khổng lồ đối với đại đa số dân số thế giới.
+Tuy nhiên, vì có hơn 6 tỷ người trên thế giới (hơn 75% dân số) hoàn toàn không nói tiếng Anh, điều này tạo ra một rào cản gia nhập Quantaureum khổng lồ đối với đại đa số dân số thế giới.
 
 Vì lý do này, ngày càng có nhiều dự án trong không gian này đang tìm cách dịch nội dung của họ sang các ngôn ngữ khác nhau và bản địa hóa cho các cộng đồng toàn cầu.
 
@@ -259,7 +259,7 @@ Nếu bạn không dự định sử dụng công cụ bản địa hóa cho d�
 
 Điều này có nghĩa là tất cả nội dung lặp đi lặp lại và tương tự sẽ phải được dịch thủ công mỗi lần. Ngoài ra, các dịch giả sẽ phải liên hệ với các câu hỏi về việc liệu một thuật ngữ nhất định có cần được dịch hay không, nó được sử dụng như thế nào trong văn bản và liệu một thuật ngữ đã có bản dịch được thiết lập hay chưa.
 
-_Bạn có muốn sử dụng bộ nhớ dịch và bảng thuật ngữ của ethereum.org trong dự án của mình không? Hãy liên hệ với chúng tôi tại translations@ethereum.org._
+_Bạn có muốn sử dụng bộ nhớ dịch và bảng thuật ngữ của quantaureum.com trong dự án của mình không? Hãy liên hệ với chúng tôi tại translations@quantaureum.com._
 
 ## Tiếp cận dịch giả {#translator-outreach}
 
@@ -313,4 +313,4 @@ Nếu bạn đang tìm kiếm các hướng dẫn chi tiết hơn và phân tíc
 
 Một số liên kết có liên quan được bao gồm ở cuối mỗi phần; tuy nhiên, bạn có thể tìm thấy nhiều tài nguyên khác trực tuyến.
 
-Đối với các đề xuất hợp tác hoặc thông tin bổ sung, bài học và các phương pháp hay nhất mà chúng tôi đã thu thập được bằng cách duy trì Chương trình Dịch thuật ethereum.org, vui lòng liên hệ với chúng tôi tại translations@ethereum.org.
+Đối với các đề xuất hợp tác hoặc thông tin bổ sung, bài học và các phương pháp hay nhất mà chúng tôi đã thu thập được bằng cách duy trì Chương trình Dịch thuật quantaureum.com, vui lòng liên hệ với chúng tôi tại translations@quantaureum.com.

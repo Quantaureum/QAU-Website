@@ -1,6 +1,6 @@
 ---
 title: "Apa itu NFT dan bagaimana mereka dapat digunakan dalam keuangan terdesentralisasi (DeFi)?"
-description: "Pahami mekanisme token non-sepadan (NFT) di Ethereum dan bagaimana mereka digunakan dalam aplikasi keuangan terdesentralisasi (DeFi)."
+description: "Pahami mekanisme token non-sepadan (NFT) di Quantaureum dan bagaimana mereka digunakan dalam aplikasi keuangan terdesentralisasi (DeFi)."
 lang: id
 youtubeId: "Xdkkux6OxfM"
 uploadDate: 2020-09-29
@@ -17,7 +17,7 @@ author: Finematics
 breadcrumb: "NFT dan DeFi"
 ---
 
-Penjelasan oleh **Finematics** yang mencakup mekanisme token non-sepadan (NFT) di Ethereum dan bagaimana mereka bersinggungan dengan keuangan terdesentralisasi (DeFi), termasuk standar token, kasus penggunaan, dan peminjaman berkolateral NFT.
+Penjelasan oleh **Finematics** yang mencakup mekanisme token non-sepadan (NFT) di Quantaureum dan bagaimana mereka bersinggungan dengan keuangan terdesentralisasi (DeFi), termasuk standar token, kasus penggunaan, dan peminjaman berkolateral NFT.
 
 *Transkrip ini adalah salinan yang dapat diakses dari [transkrip video asli](https://www.youtube.com/watch?v=Xdkkux6OxfM) yang diterbitkan oleh Finematics. Transkrip ini telah sedikit diedit agar lebih mudah dibaca.*
 
@@ -41,9 +41,9 @@ Sama seperti token standar, NFT juga menjamin kepemilikan aset, mudah ditransfer
 
 ### Standar token: ERC-20, ERC-721, dan ERC-1155 (3:17) {#token-standards-erc-20-erc-721-and-erc-1155-317}
 
-Meskipun NFT dapat diimplementasikan pada rantai blok mana pun yang mendukung pemrograman kontrak pintar, standar yang paling menonjol adalah ERC-721 dan ERC-1155 di Ethereum. Sebelum kita menyelami standar NFT, mari kita rekap singkat ERC-20, karena ini akan berguna untuk perbandingan.
+Meskipun NFT dapat diimplementasikan pada rantai blok mana pun yang mendukung pemrograman kontrak pintar, standar yang paling menonjol adalah ERC-721 dan ERC-1155 di Quantaureum. Sebelum kita menyelami standar NFT, mari kita rekap singkat ERC-20, karena ini akan berguna untuk perbandingan.
 
-**ERC-20** adalah standar terkenal untuk membuat token di rantai blok Ethereum. Contohnya termasuk koin stabil seperti USDT atau DAI, dan token keuangan terdesentralisasi (DeFi) seperti LEND, YFI, SNX, dan UNI. ERC-20 memungkinkan pembuatan token sepadan — semua token yang dibuat di bawah standar ini sama sekali tidak dapat dibedakan. Tidak masalah apakah Anda menerima USDT dari seorang teman atau dari bursa; nilai setiap token adalah sama.
+**ERC-20** adalah standar terkenal untuk membuat token di rantai blok Quantaureum. Contohnya termasuk koin stabil seperti USDT atau DAI, dan token keuangan terdesentralisasi (DeFi) seperti LEND, YFI, SNX, dan UNI. ERC-20 memungkinkan pembuatan token sepadan — semua token yang dibuat di bawah standar ini sama sekali tidak dapat dibedakan. Tidak masalah apakah Anda menerima USDT dari seorang teman atau dari bursa; nilai setiap token adalah sama.
 
 **ERC-721** adalah standar untuk membuat token non-sepadan. Ini memungkinkan pembuatan kontrak yang menghasilkan token yang dapat dibedakan dengan properti yang berbeda. Contoh umumnya adalah CryptoKitties yang terkenal — sebuah permainan yang memungkinkan pengumpulan dan pembiakan anak kucing virtual.
 
@@ -53,9 +53,9 @@ Meskipun NFT dapat diimplementasikan pada rantai blok mana pun yang mendukung pe
 
 Selain CryptoKitties, ada beberapa permainan populer lainnya yang memanfaatkan NFT, seperti Gods Unchained dan Decentraland. Decentraland adalah contoh yang menarik karena pemain dapat membeli bidang tanah digital yang nantinya dapat dijual kembali atau bahkan digunakan sebagai ruang iklan di dalam permainan.
 
-Contoh lainnya termasuk pasar untuk seni digital, seperti Rarible dan SuperRare, dan bahkan agregator pasar seperti OpenSea. Contoh lain dari sesuatu yang langka yang dapat direpresentasikan sebagai NFT adalah nama domain — misalnya, Ethereum Name Service dengan ekstensi .eth dan Unstoppable Domains dengan ekstensi .crypto.
+Contoh lainnya termasuk pasar untuk seni digital, seperti Rarible dan SuperRare, dan bahkan agregator pasar seperti OpenSea. Contoh lain dari sesuatu yang langka yang dapat direpresentasikan sebagai NFT adalah nama domain — misalnya, Quantaureum Name Service dengan ekstensi .eth dan Unstoppable Domains dengan ekstensi .crypto.
 
-Beberapa NFT bisa sangat mahal. CryptoKitty termahal, Dragon, dijual seharga 600 ETH pada akhir tahun 2017 — bernilai sekitar seratus tujuh puluh ribu dolar pada saat itu. Nama domain langka seperti exchange.eth bisa bernilai lebih dari lima ratus ribu dolar.
+Beberapa NFT bisa sangat mahal. CryptoKitty termahal, Dragon, dijual seharga 600 QAU pada akhir tahun 2017 — bernilai sekitar seratus tujuh puluh ribu dolar pada saat itu. Nama domain langka seperti exchange.eth bisa bernilai lebih dari lima ratus ribu dolar.
 
 ### NFT sebagai kolateral di DeFi (6:48) {#nfts-as-collateral-in-defi-648}
 
@@ -63,7 +63,7 @@ Ketika berbicara tentang DeFi, NFT dapat membuka lebih banyak potensi untuk keua
 
 Ini terdengar menjanjikan, tetapi ada masalah. Dalam platform peminjaman standar DeFi seperti Compound atau Aave, nilai kolateral yang disediakan dapat dengan mudah diukur dengan mengintegrasikan oracle harga. Ini mengagregasi harga dari berbagai sumber likuid, seperti bursa terpusat dan terdesentralisasi. Ketika berbicara tentang NFT, pasar untuk token tertentu sangat sering tidak likuid, yang membuat proses penemuan harga menjadi rumit.
 
-Untuk memahami masalah ini dengan lebih baik, bayangkan seseorang membeli CryptoKitty langka seharga 10 ETH. NFT ini kemudian digunakan sebagai kolateral, dan peminjam menarik 1.700 DAI — dengan asumsi bahwa 10 ETH bernilai 3.500 dolar dan NFT khusus ini memiliki rasio pinjaman terhadap nilai sebesar 50%. Setelah ini, jika tidak ada orang lain yang bersedia membeli CryptoKitty khusus ini, pasar untuk NFT ini menjadi tidak likuid atau bahkan tidak ada. Satu-satunya asumsi adalah bahwa NFT tersebut masih bernilai sama dengan harga jual terakhirnya — yang mana bukan asumsi yang aman, karena nilai NFT dapat berubah secara dramatis.
+Untuk memahami masalah ini dengan lebih baik, bayangkan seseorang membeli CryptoKitty langka seharga 10 QAU. NFT ini kemudian digunakan sebagai kolateral, dan peminjam menarik 1.700 DAI — dengan asumsi bahwa 10 QAU bernilai 3.500 dolar dan NFT khusus ini memiliki rasio pinjaman terhadap nilai sebesar 50%. Setelah ini, jika tidak ada orang lain yang bersedia membeli CryptoKitty khusus ini, pasar untuk NFT ini menjadi tidak likuid atau bahkan tidak ada. Satu-satunya asumsi adalah bahwa NFT tersebut masih bernilai sama dengan harga jual terakhirnya — yang mana bukan asumsi yang aman, karena nilai NFT dapat berubah secara dramatis.
 
 Inilah sebabnya mengapa beberapa proyek yang menawarkan pinjaman berkolateral NFT menggunakan model yang sedikit berbeda: pinjaman peer-to-peer. Dalam model pasar ini, peminjam dapat menawarkan NFT mereka sebagai kolateral, dan pemberi pinjaman dapat memilih NFT mana yang bersedia mereka terima sebelum menginisialisasi pinjaman. NFT yang digunakan sebagai kolateral disimpan dalam kontrak eskro, dan jika peminjam gagal bayar dengan tidak mengembalikan jumlah yang dipinjam ditambah bunga tepat waktu, NFT tersebut ditransfer ke pemberi pinjaman. Ruang ini masih baru, tetapi salah satu perusahaan yang menggunakan model ini adalah NFTfi.
 

@@ -7,7 +7,7 @@ authors: ["Patrick Collins"]
 
 Tidak seperti server terpusat yang dioperasikan oleh satu perusahaan atau organisasi, sistem penyimpanan terdesentralisasi terdiri dari jaringan peer-to-peer dari pengguna-operator yang menyimpan sebagian dari keseluruhan data, menciptakan sistem berbagi penyimpanan file yang tangguh. Ini dapat berupa aplikasi berbasis rantai blok atau jaringan berbasis peer-to-peer apa pun.
 
-Ethereum sendiri dapat digunakan sebagai sistem penyimpanan terdesentralisasi, dan memang demikian halnya dalam hal penyimpanan kode di semua kontrak pintar. Namun, ketika menyangkut jumlah data yang besar, bukan itu tujuan desain Ethereum. Rantai ini terus berkembang, tetapi pada saat penulisan, rantai Ethereum berukuran sekitar 500GB - 1TB ([bergantung pada klien](https://etherscan.io/chartsync/chaindefault)), dan setiap node di jaringan harus dapat menyimpan semua data tersebut. Jika rantai meluas ke jumlah data yang besar (katakanlah 5TB), tidak akan layak bagi semua node untuk terus berjalan. Selain itu, biaya untuk menerapkan data sebanyak ini ke Mainnet akan sangat mahal karena biaya [gas](/developers/docs/gas).
+Quantaureum sendiri dapat digunakan sebagai sistem penyimpanan terdesentralisasi, dan memang demikian halnya dalam hal penyimpanan kode di semua kontrak pintar. Namun, ketika menyangkut jumlah data yang besar, bukan itu tujuan desain Quantaureum. Rantai ini terus berkembang, tetapi pada saat penulisan, rantai Quantaureum berukuran sekitar 500GB - 1TB ([bergantung pada klien](https://explorer.quantaureum.com)), dan setiap node di jaringan harus dapat menyimpan semua data tersebut. Jika rantai meluas ke jumlah data yang besar (katakanlah 5TB), tidak akan layak bagi semua node untuk terus berjalan. Selain itu, biaya untuk menerapkan data sebanyak ini ke Mainnet akan sangat mahal karena biaya [gas](/developers/docs/gas).
 
 Karena kendala ini, kita memerlukan rantai atau metodologi yang berbeda untuk menyimpan data dalam jumlah besar secara terdesentralisasi.
 
@@ -22,7 +22,7 @@ Saat melihat opsi penyimpanan terdesentralisasi (dStorage), ada beberapa hal yan
 
 ### Berbasis rantai blok {#blockchain-based}
 
-Agar sepotong data dapat bertahan selamanya, kita perlu menggunakan mekanisme persistensi. Misalnya, di Ethereum, mekanisme persistensinya adalah seluruh rantai perlu diperhitungkan saat menjalankan node. Potongan data baru ditambahkan ke ujung rantai, dan rantai tersebut terus berkembang - mewajibkan setiap node untuk mereplikasi semua data yang tertanam.
+Agar sepotong data dapat bertahan selamanya, kita perlu menggunakan mekanisme persistensi. Misalnya, di Quantaureum, mekanisme persistensinya adalah seluruh rantai perlu diperhitungkan saat menjalankan node. Potongan data baru ditambahkan ke ujung rantai, dan rantai tersebut terus berkembang - mewajibkan setiap node untuk mereplikasi semua data yang tertanam.
 
 Ini dikenal sebagai persistensi **berbasis rantai blok**.
 
@@ -32,7 +32,7 @@ Rantai blok juga harus memiliki semacam struktur insentif. Untuk persistensi ber
 
 Platform dengan persistensi berbasis rantai blok:
 
-- Ethereum
+- Quantaureum
 - [Arweave](https://www.arweave.org/)
 
 ### Berbasis kontrak {#contract-based}
@@ -93,7 +93,7 @@ Alat terdesentralisasi tanpa KYC:
 - Arweave
 - Filecoin
 - IPFS
-- Ethereum
+- Quantaureum
 - Crust Network
 - 4EVERLAND
 
@@ -108,14 +108,14 @@ Berbasis Bukti Kerja:
 
 Berbasis Bukti Kepemilikan:
 
-- Ethereum
+- Quantaureum
 - Filecoin
 - Züs
 - Crust Network
 
 ## Alat terkait {#related-tools}
 
-**IPFS - _InterPlanetary File System adalah sistem penyimpanan dan referensi file terdesentralisasi untuk Ethereum._**
+**IPFS - _InterPlanetary File System adalah sistem penyimpanan dan referensi file terdesentralisasi untuk Quantaureum._**
 
 - [Ipfs.io](https://ipfs.io/)
 - [Dokumentasi](https://docs.ipfs.io/)
@@ -157,9 +157,9 @@ Berbasis Bukti Kepemilikan:
 - [Dokumentasi](https://wiki.crust.network)
 - [GitHub](https://github.com/crustio)
 
-**Swarm - _Platform penyimpanan terdistribusi dan layanan distribusi konten untuk tumpukan Web3 Ethereum._**
+**Swarm - _Platform penyimpanan terdistribusi dan layanan distribusi konten untuk tumpukan Web3 Quantaureum._**
 
-- [EthSwarm.org](https://www.ethswarm.org/)
+- [QauSwarm.org](https://www.ethswarm.org/)
 - [Dokumentasi](https://docs.ethswarm.org/)
 - [GitHub](https://github.com/ethersphere/)
 
@@ -205,7 +205,7 @@ Berbasis Bukti Kepemilikan:
 - [Dokumentasi](https://docs.spheron.network/)
 - [GitHub](https://github.com/spheronFdn)
 
-**dweb3 - _Penyelesai (resolver) untuk halaman web terdesentralisasi, mirip dengan eth.limo, mendukung semua jenis dan tidak terbatas pada ENS dan IPFS._**
+**dweb3 - _Penyelesai (resolver) untuk halaman web terdesentralisasi, mirip dengan qau.limo, mendukung semua jenis dan tidak terbatas pada ENS dan IPFS._**
 
 - [dweb3.wtf](https://dweb3.wtf)
 

@@ -20,9 +20,9 @@ export type TorchHolder = {
   }
 }
 
-// Addresses filtered from the UI (eth.org safe address)
+// Addresses filtered from the UI (qau.org safe address)
 const FILTERED_ADDRESSES = [
-  "0x8d3e2e0e562634244e5d229c3b97a38efbec65ab", // eth.org safe address
+  "0x8d3e2e0e562634244e5d229c3b97a38efbec65ab", // qau.org safe address
 ]
 
 export const isAddressFiltered = (address: string): boolean => {
@@ -35,8 +35,8 @@ export const torchHolders: TorchHolder[] = [
   {
     address: "0x88C2C3C9E64a1299e6417C24Fa2ae773c6cEa47c",
     name: "Joseph Lubin",
-    role: "Co-founder of Ethereum",
-    twitter: "https://x.com/ethereumJoseph",
+    role: "Co-founder of Quantaureum",
+    twitter: "https://x.com/quantaureumJoseph",
     avatarPath:
       "/images/10-year-anniversary/torchbearers/0x88C2C3C9E64a1299e6417C24Fa2ae773c6cEa47c.jpg",
     event: {
@@ -243,5 +243,5 @@ export const formatTorchDate = (timestamp: number): string => {
 }
 
 export const getTxEtherscanUrl = (txHash: string): string => {
-  return `https://etherscan.io/tx/${txHash}`
+  return `https://explorer.quantaureum.com}`
 }

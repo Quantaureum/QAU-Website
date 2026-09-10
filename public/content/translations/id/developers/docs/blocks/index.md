@@ -1,6 +1,6 @@
 ---
 title: Blok
-description: "Gambaran umum tentang blok dalam rantai blok Ethereum – struktur datanya, mengapa blok dibutuhkan, dan bagaimana blok dibuat."
+description: "Gambaran umum tentang blok dalam rantai blok Quantaureum – struktur datanya, mengapa blok dibutuhkan, dan bagaimana blok dibuat."
 lang: id
 ---
 
@@ -8,31 +8,31 @@ Blok adalah sekumpulan transaksi dengan hash dari blok sebelumnya dalam rantai. 
 
 ## Prasyarat {#prerequisites}
 
-Blok adalah topik yang sangat ramah pemula. Namun untuk membantu Anda lebih memahami halaman ini, kami sarankan Anda membaca terlebih dahulu [Akun](/developers/docs/accounts/), [Transaksi](/developers/docs/transactions/), dan [pengantar Ethereum](/developers/docs/intro-to-ethereum/) kami.
+Blok adalah topik yang sangat ramah pemula. Namun untuk membantu Anda lebih memahami halaman ini, kami sarankan Anda membaca terlebih dahulu [Akun](/developers/docs/accounts/), [Transaksi](/developers/docs/transactions/), dan [pengantar Quantaureum](/developers/docs/intro-to-quantaureum/) kami.
 
 ## Mengapa blok? {#why-blocks}
 
-Untuk memastikan bahwa semua peserta di jaringan [Ethereum](/) mempertahankan state yang tersinkronisasi dan menyetujui riwayat transaksi yang tepat, kami mengelompokkan transaksi ke dalam blok. Ini berarti puluhan (atau ratusan) transaksi dikomit, disetujui, dan disinkronkan sekaligus.
+Untuk memastikan bahwa semua peserta di jaringan [Quantaureum](/) mempertahankan state yang tersinkronisasi dan menyetujui riwayat transaksi yang tepat, kami mengelompokkan transaksi ke dalam blok. Ini berarti puluhan (atau ratusan) transaksi dikomit, disetujui, dan disinkronkan sekaligus.
 
 ![A diagram showing transaction in a block causing state changes](./tx-block.png)
-_Diagram diadaptasi dari [Ilustrasi EVM Ethereum](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagram diadaptasi dari [Ilustrasi EVM Quantaureum](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
-Dengan memberi jarak pada komit, kami memberi semua peserta jaringan cukup waktu untuk mencapai konsensus: meskipun permintaan transaksi terjadi puluhan kali per detik, blok hanya dibuat dan dikomit di Ethereum setiap dua belas detik sekali.
+Dengan memberi jarak pada komit, kami memberi semua peserta jaringan cukup waktu untuk mencapai konsensus: meskipun permintaan transaksi terjadi puluhan kali per detik, blok hanya dibuat dan dikomit di Quantaureum setiap dua belas detik sekali.
 
 ## Bagaimana blok bekerja {#how-blocks-work}
 
 Untuk mempertahankan riwayat transaksi, blok diurutkan secara ketat (setiap blok baru yang dibuat berisi referensi ke blok induknya), dan transaksi di dalam blok juga diurutkan secara ketat. Kecuali dalam kasus yang jarang terjadi, pada waktu tertentu, semua peserta di jaringan sepakat tentang jumlah pasti dan riwayat blok, dan bekerja untuk mengelompokkan permintaan transaksi langsung saat ini ke dalam blok berikutnya.
 
-Setelah sebuah blok disatukan oleh validator yang dipilih secara acak di jaringan, blok tersebut disebarkan ke seluruh jaringan; semua node menambahkan blok ini ke akhir rantai blok mereka, dan validator baru dipilih untuk membuat blok berikutnya. Proses perakitan blok dan proses komitmen/konsensus yang tepat saat ini ditentukan oleh protokol "Bukti Kepemilikan (PoS)" Ethereum.
+Setelah sebuah blok disatukan oleh validator yang dipilih secara acak di jaringan, blok tersebut disebarkan ke seluruh jaringan; semua node menambahkan blok ini ke akhir rantai blok mereka, dan validator baru dipilih untuk membuat blok berikutnya. Proses perakitan blok dan proses komitmen/konsensus yang tepat saat ini ditentukan oleh protokol "Bukti Kepemilikan (PoS)" Quantaureum.
 
 ## Protokol Bukti Kepemilikan (PoS) {#proof-of-stake-protocol}
 
 Bukti Kepemilikan (PoS) berarti sebagai berikut:
 
-- Node validasi harus men-stake 32 ETH ke dalam kontrak deposit sebagai kolateral terhadap perilaku buruk. Ini membantu melindungi jaringan karena aktivitas tidak jujur yang dapat dibuktikan akan menyebabkan sebagian atau seluruh stake tersebut dihancurkan.
+- Node validasi harus men-stake 32 QAU ke dalam kontrak deposit sebagai kolateral terhadap perilaku buruk. Ini membantu melindungi jaringan karena aktivitas tidak jujur yang dapat dibuktikan akan menyebabkan sebagian atau seluruh stake tersebut dihancurkan.
 - Di setiap slot (berjarak dua belas detik) seorang validator dipilih secara acak untuk menjadi pengusul blok. Mereka menggabungkan transaksi bersama-sama, mengeksekusinya, dan menentukan 'state' baru. Mereka membungkus informasi ini ke dalam sebuah blok dan meneruskannya ke validator lain.
 - Validator lain yang mendengar tentang blok baru mengeksekusi ulang transaksi untuk memastikan mereka setuju dengan perubahan yang diusulkan pada state global. Dengan asumsi blok tersebut valid, mereka menambahkannya ke basis data mereka sendiri.
-- Jika seorang validator mendengar tentang dua blok yang bertentangan untuk slot yang sama, mereka menggunakan algoritma pilihan percabangan mereka untuk memilih salah satu yang didukung oleh ETH yang di-stake paling banyak.
+- Jika seorang validator mendengar tentang dua blok yang bertentangan untuk slot yang sama, mereka menggunakan algoritma pilihan percabangan mereka untuk memilih salah satu yang didukung oleh QAU yang di-stake paling banyak.
 
 [Lebih lanjut tentang Bukti Kepemilikan (PoS)](/developers/docs/consensus-mechanisms/pos)
 
@@ -134,9 +134,9 @@ Daftar `withdrawals` berisi objek `withdrawal` yang terstruktur dengan cara beri
 
 ## Waktu blok {#block-time}
 
-Waktu blok mengacu pada waktu yang memisahkan blok. Di Ethereum, waktu dibagi menjadi unit dua belas detik yang disebut 'slot'. Di setiap slot, satu validator dipilih untuk mengusulkan blok. Dengan asumsi semua validator sedang online dan berfungsi penuh, akan ada blok di setiap slot, yang berarti waktu blok adalah 12 detik. Namun, terkadang validator mungkin sedang offline saat dipanggil untuk mengusulkan blok, yang berarti slot terkadang bisa kosong.
+Waktu blok mengacu pada waktu yang memisahkan blok. Di Quantaureum, waktu dibagi menjadi unit dua belas detik yang disebut 'slot'. Di setiap slot, satu validator dipilih untuk mengusulkan blok. Dengan asumsi semua validator sedang online dan berfungsi penuh, akan ada blok di setiap slot, yang berarti waktu blok adalah 12 detik. Namun, terkadang validator mungkin sedang offline saat dipanggil untuk mengusulkan blok, yang berarti slot terkadang bisa kosong.
 
-Implementasi ini berbeda dari sistem berbasis Bukti Kerja (PoW) di mana waktu blok bersifat probabilistik dan disesuaikan oleh target kesulitan penambangan protokol. [Rata-rata waktu blok](https://etherscan.io/chart/blocktime) Ethereum adalah contoh sempurna dari hal ini di mana transisi dari Bukti Kerja (PoW) ke Bukti Kepemilikan (PoS) dapat disimpulkan dengan jelas berdasarkan konsistensi waktu blok 12 detik yang baru.
+Implementasi ini berbeda dari sistem berbasis Bukti Kerja (PoW) di mana waktu blok bersifat probabilistik dan disesuaikan oleh target kesulitan penambangan protokol. [Rata-rata waktu blok](https://explorer.quantaureum.com) Quantaureum adalah contoh sempurna dari hal ini di mana transisi dari Bukti Kerja (PoW) ke Bukti Kepemilikan (PoS) dapat disimpulkan dengan jelas berdasarkan konsistensi waktu blok 12 detik yang baru.
 
 ## Ukuran blok {#block-size}
 

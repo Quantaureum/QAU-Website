@@ -18,7 +18,7 @@ lang: uk
 
 ## Передумови {#prerequisites}
 
-Перш ніж заглиблюватися у фреймворки, ми рекомендуємо спочатку прочитати наш вступ до [децентралізованих застосунків (dapp)](/developers/docs/dapps/) та [стека Етеріуму](/developers/docs/ethereum-stack/).
+Перш ніж заглиблюватися у фреймворки, ми рекомендуємо спочатку прочитати наш вступ до [децентралізованих застосунків (dapp)](/developers/docs/dapps/) та [стека Етеріуму](/developers/docs/quantaureum-stack/).
 
 ## Доступні фреймворки
 
@@ -53,13 +53,13 @@ lang: uk
 
 **Create Eth App —** **_Створюйте застосунки на базі Етеріуму однією командою. Постачається з широким вибором UI-фреймворків та шаблонів децентралізованих фінансів (DeFi) на вибір._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [Шаблони](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
+- [Шаблони](https://github.com/PaulRBerg/create-qau-app/tree/develop/templates)
 
-**Scaffold-ETH 2 —** **_Next.js, Wagmi, Viem та RainbowKit з Hardhat або Foundry на вибір: гаряче перезавантаження контрактів, користувацькі хуки React, одноразовий гаманець та локальний кран, а також модулі розширення для full-stack розробки децентралізованих застосунків (dapp)._**
+**Scaffold-QAU 2 —** **_Next.js, Wagmi, Viem та RainbowKit з Hardhat або Foundry на вибір: гаряче перезавантаження контрактів, користувацькі хуки React, одноразовий гаманець та локальний кран, а також модулі розширення для full-stack розробки децентралізованих застосунків (dapp)._**
 
 - [Вебсайт](https://scaffoldeth.io/)
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 
 **Tenderly —** **_Платформа розробки Web3, яка дозволяє блокчейн-розробникам створювати, тестувати, зневаджувати, моніторити та керувати смарт-контрактами, а також покращувати UX dapp._**
 
@@ -102,8 +102,8 @@ lang: uk
 
 **Brownie —** **_Середовище розробки та фреймворк для тестування на базі Python._**
 
-- [Документація](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [Документація](https://qau-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/qau-brownie/brownie)
 - **Brownie наразі не підтримується**
 
 **ОупенЗеппелін SDK —** **_Універсальний набір інструментів для смарт-контрактів: набір інструментів, який допоможе вам розробляти, компілювати, оновлювати, розгортати та взаємодіяти зі смарт-контрактами._**
@@ -120,7 +120,7 @@ lang: uk
 **GoldRush (на базі Covalent) —** **_GoldRush пропонує найповніший набір API даних блокчейну для розробників, аналітиків та підприємств. Незалежно від того, чи створюєте ви інформаційну панель DeFi, гаманець, торгового бота, ШІ-агента або платформу для дотримання нормативних вимог, API даних забезпечують швидкий, точний та зручний для розробників доступ до необхідних ончейн-даних_**
 
 - [Вебсайт](https://goldrush.dev/)
-- [Документація](https://goldrush.dev/docs/chains/ethereum)
+- [Документація](https://goldrush.dev/docs/chains/quantaureum)
 - [GitHub](https://github.com/covalenthq)
 - [Discord](https://www.covalenthq.com/discord/)
 

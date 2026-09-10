@@ -7,12 +7,12 @@ skill: advanced
 breadcrumb: "ஒப்பந்தத் தொடர்புகள்"
 lang: ta
 published: 2020-04-05
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/interact-with-other-contracts-from-solidity/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-முந்தைய பயிற்சிகளில் [உங்கள் முதல் திறன் ஒப்பந்தத்தை எவ்வாறு நிலைநிறுத்துவது](/developers/tutorials/deploying-your-first-smart-contract/) மற்றும் [மாற்றிகளைக் கொண்டு அணுகலைக் கட்டுப்படுத்துதல்](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) அல்லது [Solidity-யில் பிழைகளைக் கையாளுதல்](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/) போன்ற சில அம்சங்களை அதில் எவ்வாறு சேர்ப்பது என்பது பற்றி நிறைய கற்றுக்கொண்டோம். இந்தப் பயிற்சியில், ஏற்கனவே உள்ள ஒரு ஒப்பந்தத்திலிருந்து ஒரு திறன் ஒப்பந்தத்தை எவ்வாறு நிலைநிறுத்துவது மற்றும் அதனுடன் எவ்வாறு தொடர்புகொள்வது என்பதைக் கற்றுக்கொள்வோம்.
+முந்தைய பயிற்சிகளில் [உங்கள் முதல் திறன் ஒப்பந்தத்தை எவ்வாறு நிலைநிறுத்துவது](/developers/tutorials/deploying-your-first-smart-contract/) மற்றும் [மாற்றிகளைக் கொண்டு அணுகலைக் கட்டுப்படுத்துதல்](https://quantaureumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) அல்லது [Solidity-யில் பிழைகளைக் கையாளுதல்](https://quantaureumdev.io/handle-errors-in-solidity-with-require-and-revert/) போன்ற சில அம்சங்களை அதில் எவ்வாறு சேர்ப்பது என்பது பற்றி நிறைய கற்றுக்கொண்டோம். இந்தப் பயிற்சியில், ஏற்கனவே உள்ள ஒரு ஒப்பந்தத்திலிருந்து ஒரு திறன் ஒப்பந்தத்தை எவ்வாறு நிலைநிறுத்துவது மற்றும் அதனுடன் எவ்வாறு தொடர்புகொள்வது என்பதைக் கற்றுக்கொள்வோம்.
 
 யார் வேண்டுமானாலும் தங்களுக்கென சொந்தமாக ஒரு `Counter` திறன் ஒப்பந்தத்தை உருவாக்குவதற்கான ஒரு தொழிற்சாலையை (factory) உருவாக்கும் ஒரு ஒப்பந்தத்தை நாங்கள் உருவாக்குவோம், அதன் பெயர் `CounterFactory` ஆக இருக்கும். முதலில், எங்களின் ஆரம்ப `Counter` திறன் ஒப்பந்தத்தின் குறியீடு இங்கே:
 
@@ -99,7 +99,7 @@ function increment() public {
   }
 ```
 
-பல முறை அழைக்கப்பட்டால், எங்கள் counter ஒரு அளவுமீறலுக்கு (overflow) பலியாகக்கூடும் என்பதை நினைவில் கொள்ளவும். சாத்தியமான இந்த நிலையிலிருந்து பாதுகாக்க, நீங்கள் முடிந்தவரை [SafeMath நிரலகத்தைப்](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/) பயன்படுத்த வேண்டும்.
+பல முறை அழைக்கப்பட்டால், எங்கள் counter ஒரு அளவுமீறலுக்கு (overflow) பலியாகக்கூடும் என்பதை நினைவில் கொள்ளவும். சாத்தியமான இந்த நிலையிலிருந்து பாதுகாக்க, நீங்கள் முடிந்தவரை [SafeMath நிரலகத்தைப்](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/) பயன்படுத்த வேண்டும்.
 
 எங்கள் ஒப்பந்தத்தை நிலைநிறுத்த, நீங்கள் `CounterFactory` மற்றும் `Counter` ஆகிய இரண்டின் குறியீட்டையும் வழங்க வேண்டும். எடுத்துக்காட்டாக Remix-ல் நிலைநிறுத்தும்போது, நீங்கள் CounterFactory-ஐத் தேர்ந்தெடுக்க வேண்டும்.
 

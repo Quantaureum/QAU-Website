@@ -18,11 +18,11 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/tree/master/progr
 ### Docker를 통한 에키드나 설치 {#echidna-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_마지막 명령어는 현재 디렉터리에 접근할 수 있는 Docker 내에서 eth-security-toolbox를 실행합니다. 호스트에서 파일을 변경하고 Docker에서 해당 파일에 대해 도구를 실행할 수 있습니다._
+_마지막 명령어는 현재 디렉터리에 접근할 수 있는 Docker 내에서 qau-security-toolbox를 실행합니다. 호스트에서 파일을 변경하고 Docker에서 해당 파일에 대해 도구를 실행할 수 있습니다._
 
 Docker 내부에서 다음을 실행하세요:
 
@@ -37,7 +37,7 @@ cd /home/training
 
 ## 속성 기반 퍼징 소개 {#introduction-to-property-based-fuzzing}
 
-에키드나는 이전 블로그 게시물([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/))에서 설명한 속성 기반 퍼저(fuzzer)입니다.
+에키드나는 이전 블로그 게시물([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-quantaureum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/))에서 설명한 속성 기반 퍼저(fuzzer)입니다.
 
 ### 퍼징 {#fuzzing}
 

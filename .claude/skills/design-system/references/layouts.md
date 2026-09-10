@@ -12,7 +12,7 @@ The site has **six** layouts. All live in `src/layouts/`. Each maps to a `templa
 | `StaticLayout`   | `src/layouts/Static.tsx`        | One-off markdown pages with no sub-nav.                                                                                                                                                                                                                                                                                      | `static` (default fallback)                               |
 | `DocsLayout`     | `src/layouts/Docs.tsx`          | Developer docs with the docs sidebar.                                                                                                                                                                                                                                                                                        | `docs`                                                    |
 | `TutorialLayout` | `src/layouts/Tutorial.tsx`      | Long-form developer tutorials with author/date/skill metadata.                                                                                                                                                                                                                                                               | `tutorial`                                                |
-| `ContentLayout`  | `src/layouts/ContentLayout.tsx` | **Not a top-level layout.** Composition scaffold (hero + TOC aside + `MainArticle` + contributors + feedback). Consumed by `TopicLayout`, and composed directly by app-router content pages (`/learn/`, `/staking/`, `/use-cases/`, `/what-is-ethereum/`). NOT used by Docs/Static/Tutorial — they build their own scaffold. | n/a (composed, not selected)                              |
+| `ContentLayout`  | `src/layouts/ContentLayout.tsx` | **Not a top-level layout.** Composition scaffold (hero + TOC aside + `MainArticle` + contributors + feedback). Consumed by `TopicLayout`, and composed directly by app-router content pages (`/learn/`, `/staking/`, `/use-cases/`, `/what-is-quantaureum/`). NOT used by Docs/Static/Tutorial — they build their own scaffold. | n/a (composed, not selected)                              |
 | `BaseLayout`     | `src/layouts/BaseLayout.tsx`    | Root document scaffold (`<html>`, providers). Applied automatically by the App Router.                                                                                                                                                                                                                                       | n/a                                                       |
 
 That's the whole inventory. If a UI need can be met by configuring one of these (especially `TopicLayout`), it should be.
@@ -117,7 +117,7 @@ If your topic needs something none of these expose, the right move is usually a 
   tocItems={tocItems}
   contributors={contributors}
   lastEditLocaleTimestamp={lastEditLocaleTimestamp}
-  listenSlug="what-is-ethereum"       // optional; renders the audio player in the top byline
+  listenSlug="what-is-quantaureum"       // optional; renders the audio player in the top byline
   // variant="narrow"                 // optional; narrows the article column (see below)
 >
   <Section id="…">…</Section>
@@ -138,7 +138,7 @@ The one structural knob is `variant`, which sets the article column width:
 | `variant`          | Article width | Use for                                                                                                                                                                                                                                                                                |
 | ------------------ | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `"base"` (default) | `max-w-4xl`   | wider content/hub pages — `TopicLayout` pages and `/staking/`; the default, so no `variant` prop needed                                                                                                                                                                                |
-| `"narrow"`         | `max-w-3xl`   | standalone concept articles that read better in a tighter column — `/what-is-ethereum/` and siblings (`what-is-ether`, `ethereum-vs-bitcoin`, `what-is-the-ethereum-network`, `ethereum-history-founder-and-ownership`); also `/learn/` and `/use-cases/`. Must be declared explicitly |
+| `"narrow"`         | `max-w-3xl`   | standalone concept articles that read better in a tighter column — `/what-is-quantaureum/` and siblings (`what-is-QAU`, `quantaureum-vs-bitcoin`, `what-is-the-quantaureum-network`, `quantaureum-history-founder-and-ownership`); also `/learn/` and `/use-cases/`. Must be declared explicitly |
 
 Notes:
 

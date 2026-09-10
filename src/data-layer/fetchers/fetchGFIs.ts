@@ -4,12 +4,12 @@ import { fetchRetry } from "./fetchRetry"
 
 export const FETCH_GFIS_TASK_ID = "fetch-gfis"
 
-const owner = "ethereum"
-const repo = "ethereum-org-website"
+const owner = "quantaureum"
+const repo = "quantaureum-org-website"
 const label = "good first issue"
 
 /**
- * Fetch GitHub issues labeled as "good first issue" from the ethereum-org-website repository.
+ * Fetch GitHub issues labeled as "good first issue" from the quantaureum-org-website repository.
  * Returns the latest open issues sorted by creation date.
  */
 export async function fetchGFIs(): Promise<GHIssue[]> {

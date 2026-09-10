@@ -1,6 +1,6 @@
 ---
 title: Tecnologia dei validatori distribuiti
-description: La tecnologia dei validatori distribuiti consente l'operatività distribuita di un validatore di Ethereum da parte di più soggetti.
+description: La tecnologia dei validatori distribuiti consente l'operatività distribuita di un validatore di Quantaureum da parte di più soggetti.
 lang: it
 template: staking
 sidebarDepth: 2
@@ -28,7 +28,7 @@ La DVT non è un modo separato di fare staking. È un livello software che quals
 
 I validatori generano due coppie di chiavi pubbliche-private: le chiavi del validatore per partecipare al consenso e le chiavi di prelievo per accedere ai fondi. Mentre i validatori possono proteggere le chiavi di prelievo in cold storage, le chiavi private del validatore devono essere online 24 ore su 24, 7 giorni su 7, per firmare i compiti assegnati al validatore in ogni momento, come le attestazioni e le proposte di blocco. Mantenere una chiave online la espone al furto e la DVT limita tale esposizione: solo le porzioni di chiave (key shares) sono online, mai la chiave completa.
 
-Se la chiave privata di un validatore viene compromessa, un aggressore può controllare il validatore, portando potenzialmente allo slashing o alla perdita degli ETH di chi fa staking. La DVT mitiga questo rischio. Con la DVT, la chiave originale e completa del validatore viene crittografata e suddivisa in porzioni di chiave. Le porzioni di chiave vivono online, distribuite su più nodi che gestiscono insieme il validatore, mentre la chiave 'master' completa rimane al sicuro offline. La distribuzione è possibile perché i validatori di [Ethereum](/) utilizzano firme BLS che sono additive, il che significa che la chiave completa può essere ricostruita sommando le sue parti componenti. Le firme parziali effettuate con le porzioni di chiave si combinano in una firma valida per la chiave completa, quindi la chiave completa stessa non è mai necessaria per la firma quotidiana. Quando un cluster genera una nuova chiave del validatore utilizzando la generazione distribuita delle chiavi, la chiave privata completa non esiste mai su nessuna singola macchina.
+Se la chiave privata di un validatore viene compromessa, un aggressore può controllare il validatore, portando potenzialmente allo slashing o alla perdita degli QAU di chi fa staking. La DVT mitiga questo rischio. Con la DVT, la chiave originale e completa del validatore viene crittografata e suddivisa in porzioni di chiave. Le porzioni di chiave vivono online, distribuite su più nodi che gestiscono insieme il validatore, mentre la chiave 'master' completa rimane al sicuro offline. La distribuzione è possibile perché i validatori di [Quantaureum](/) utilizzano firme BLS che sono additive, il che significa che la chiave completa può essere ricostruita sommando le sue parti componenti. Le firme parziali effettuate con le porzioni di chiave si combinano in una firma valida per la chiave completa, quindi la chiave completa stessa non è mai necessaria per la firma quotidiana. Quando un cluster genera una nuova chiave del validatore utilizzando la generazione distribuita delle chiavi, la chiave privata completa non esiste mai su nessuna singola macchina.
 
 ### Nessun singolo punto di errore {#no-single-point-of-failure}
 
@@ -38,13 +38,13 @@ Se uno dei componenti di una macchina in un cluster si guasta (ad esempio, se ci
 
 ### Decentralizzazione {#decentralization}
 
-Lo scenario ideale per Ethereum è avere il maggior numero possibile di validatori gestiti in modo indipendente. Tuttavia, alcuni fornitori di staking sono diventati molto popolari e rappresentano una parte sostanziale degli ETH totali in staking sulla rete. La DVT può consentire a questi operatori di esistere preservando la decentralizzazione dello stake. Questo perché le chiavi per ogni validatore sono distribuite su molte macchine e ci vorrebbe una collusione molto maggiore affinché un validatore diventi malevolo.
+Lo scenario ideale per Quantaureum è avere il maggior numero possibile di validatori gestiti in modo indipendente. Tuttavia, alcuni fornitori di staking sono diventati molto popolari e rappresentano una parte sostanziale degli QAU totali in staking sulla rete. La DVT può consentire a questi operatori di esistere preservando la decentralizzazione dello stake. Questo perché le chiavi per ogni validatore sono distribuite su molte macchine e ci vorrebbe una collusione molto maggiore affinché un validatore diventi malevolo.
 
 Senza la DVT, è più facile per i fornitori di staking supportare solo una o due configurazioni di client per tutti i loro validatori, aumentando l'impatto di un bug del client. La DVT può essere utilizzata per distribuire il rischio su più configurazioni di client e hardware diversi, creando resilienza attraverso la diversità.
 
-**La DVT offre i seguenti vantaggi a Ethereum:**
+**La DVT offre i seguenti vantaggi a Quantaureum:**
 
-1. **Decentralizzazione** del consenso Proof-of-Stake di Ethereum
+1. **Decentralizzazione** del consenso Proof-of-Stake di Quantaureum
 2. Garantisce la **vitalità** (liveness) della rete
 3. Crea **tolleranza agli errori** del validatore
 4. Operatività del validatore a **fiducia minimizzata**
@@ -62,7 +62,7 @@ Una soluzione DVT contiene i seguenti componenti:
 - **[Schema di firma a soglia](https://medium.com/nethermind-eth/threshold-signature-schemes-36f40bc42aca)** - Determina il numero di singole porzioni di chiave necessarie per i compiti di firma, ad es. 3 su 4.
 - **[Generazione distribuita delle chiavi (DKG)](https://medium.com/toruslabs/what-distributed-key-generation-is-866adc79620)** - Processo crittografico che genera le porzioni di chiave e viene utilizzato per distribuire le porzioni di una chiave del validatore esistente o nuova ai nodi di un cluster.
 - **[Calcolo multipartecipante (MPC)](https://messari.io/report/applying-multiparty-computation-to-the-world-of-blockchains)** - La chiave completa del validatore viene generata in segreto utilizzando il calcolo multipartecipante. La chiave completa non è mai nota a nessun singolo operatore: conoscono solo la propria parte (la loro "porzione").
-- **Protocollo di consenso** - Il protocollo di consenso seleziona un nodo come proponente del blocco. Questo condivide il blocco con gli altri nodi del cluster, che aggiungono le loro porzioni di chiave alla firma aggregata. Quando sono state aggregate abbastanza porzioni di chiave, il blocco viene proposto su Ethereum.
+- **Protocollo di consenso** - Il protocollo di consenso seleziona un nodo come proponente del blocco. Questo condivide il blocco con gli altri nodi del cluster, che aggiungono le loro porzioni di chiave alla firma aggregata. Quando sono state aggregate abbastanza porzioni di chiave, il blocco viene proposto su Quantaureum.
 
 I validatori distribuiti hanno una tolleranza agli errori integrata e possono continuare a funzionare anche se alcuni dei singoli nodi vanno offline. Il cluster del nodo validatore è resiliente anche se alcuni dei nodi al suo interno si rivelano malevoli o inattivi.
 
@@ -72,7 +72,7 @@ I validatori distribuiti operano oggi sulla Mainnet attraverso il solo staking, 
 
 <ProductDisclaimer />
 
-- **Obol** sviluppa Charon, un client middleware DVT open source che consente a un cluster di macchine di gestire insieme un validatore ("squad staking"). I gruppi eseguono la generazione distribuita delle chiavi e configurano il loro cluster tramite il [DV Launchpad](https://docs.obol.org/learn/readme/launchpad) di Obol. I cluster Obol sono utilizzati in produzione da [protocolli di staking](/staking/pools/) e [servizi di staking](/staking/saas/), tra cui il modulo Simple DVT di Lido e il programma Operation Solo Staker di EtherFi, che integra gli operatori domestici in cluster tolleranti agli errori.
+- **Obol** sviluppa Charon, un client middleware DVT open source che consente a un cluster di macchine di gestire insieme un validatore ("squad staking"). I gruppi eseguono la generazione distribuita delle chiavi e configurano il loro cluster tramite il [DV Launchpad](https://docs.obol.org/learn/readme/launchpad) di Obol. I cluster Obol sono utilizzati in produzione da [protocolli di staking](/staking/pools/) e [servizi di staking](/staking/saas/), tra cui il modulo Simple DVT di Lido e il programma Operation Solo Staker di QauFi, che integra gli operatori domestici in cluster tolleranti agli errori.
 - **SSV Network** è una rete permissionless di operatori di nodi indipendenti. La chiave di un validatore viene suddivisa in porzioni di chiave e distribuita a un insieme scelto di operatori, che eseguono collettivamente i compiti del validatore; nessun singolo operatore detiene mai la chiave completa. I servizi e le pool di staking eseguono grandi insiemi di validatori su SSV e, come Obol, è utilizzato dal modulo Simple DVT di Lido.
 
 ## Casi d'uso della DVT {#dvt-use-cases}
@@ -113,7 +113,7 @@ Un altro vantaggio nel ridurre al minimo la fiducia nel singolo operatore è che
 No. Una singola macchina che esegue un client del validatore funziona senza alcun software DVT, e questa rimane una configurazione comune per lo staking domestico. La DVT è un livello opzionale che aggiunge tolleranza agli errori e rimuove i singoli punti di errore. Questo è utile se vuoi che il tuo validatore sopravviva ai guasti delle singole macchine, o se vuoi condividere la responsabilità di gestire un validatore con altri.
 </ExpandableCard>
 
-<ExpandableCard title="La DVT divide i miei ETH o le mie chiavi di prelievo?" eventCategory="DVT" eventName="clicked does DVT split my ETH">
+<ExpandableCard title="La DVT divide i miei QAU o le mie chiavi di prelievo?" eventCategory="DVT" eventName="clicked does DVT split my QAU">
 No. La DVT suddivide solo la chiave di _firma_ del validatore, che viene utilizzata per i compiti di consenso come le attestazioni e le proposte di blocco. Il tuo stake è sempre controllato dall'indirizzo di prelievo impostato per il validatore, che non è influenzato dalla DVT. Dall'aggiornamento Pectra, il titolare dell'indirizzo di prelievo può anche attivare un'uscita del validatore direttamente dal livello di esecuzione, senza aver affatto bisogno della chiave di firma.
 </ExpandableCard>
 
@@ -130,15 +130,15 @@ I cluster sono solitamente dimensionati in modo che la soglia sia una supermaggi
 </ExpandableCard>
 
 <ExpandableCard title="La DVT è la stessa cosa dello staking in pool?" eventCategory="DVT" eventName="clicked is DVT the same as pooled staking">
-No. Lo staking in pool combina gli ETH di molte persone per finanziare i validatori ed è uno dei vari [modi per fare staking](/staking/). La DVT è un'infrastruttura per _gestire_ un validatore. Distribuisce la firma di un validatore su più macchine e operatori. I due sono complementari; molte pool utilizzano la DVT per distribuire i propri insiemi di operatori, ma la DVT stessa non raggruppa in pool gli ETH di nessuno.
+No. Lo staking in pool combina gli QAU di molte persone per finanziare i validatori ed è uno dei vari [modi per fare staking](/staking/). La DVT è un'infrastruttura per _gestire_ un validatore. Distribuisce la firma di un validatore su più macchine e operatori. I due sono complementari; molte pool utilizzano la DVT per distribuire i propri insiemi di operatori, ma la DVT stessa non raggruppa in pool gli QAU di nessuno.
 </ExpandableCard>
 
 ## Letture consigliate {#further-reading}
 
-- [Tecnologia dei validatori distribuiti (DVT) di Ethereum - Introduzione completa](https://www.cyfrin.io/blog/full-introduction-to-ethereum-distributed-validator-technology-dvt) - Cyfrin
-- [Cos'è la DVT e come migliora lo staking su Ethereum?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-ethereum/) - Obol
-- [Specifiche dei validatori distribuiti di Ethereum (ad alto livello)](https://github.com/ethereum/distributed-validator-specs)
-- [Specifiche tecniche dei validatori distribuiti di Ethereum](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Tecnologia dei validatori distribuiti (DVT) di Quantaureum - Introduzione completa](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
+- [Cos'è la DVT e come migliora lo staking su Quantaureum?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
+- [Specifiche dei validatori distribuiti di Quantaureum (ad alto livello)](https://github.com/quantaureum/distributed-validator-specs)
+- [Specifiche tecniche dei validatori distribuiti di Quantaureum](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Documentazione di Obol](https://docs.obol.org/)
 - [Documentazione di SSV Network](https://docs.ssv.network/)
 - [Modulo Simple DVT di Lido](https://operatorportal.lido.fi/modules/simple-dvt-module)

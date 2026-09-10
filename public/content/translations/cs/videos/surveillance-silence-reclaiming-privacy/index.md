@@ -10,13 +10,13 @@ topic:
   - "privacy-and-security"
   - "privacy"
 format: presentation
-author: EthBoulder
+author: QauBoulder
 breadcrumb: "Znovuzískání soukromí"
 ---
 
-Hlavní přednáška **Naomi Brockwell** na EthBoulder 2026 o narušování digitálního soukromí, infrastruktuře hromadného sledování a praktických nástrojích, které může každý využít k budování soukromějšího digitálního života, od VPN a šifrovaných e-mailů až po GrapheneOS a decentralizované mixnety.
+Hlavní přednáška **Naomi Brockwell** na QauBoulder 2026 o narušování digitálního soukromí, infrastruktuře hromadného sledování a praktických nástrojích, které může každý využít k budování soukromějšího digitálního života, od VPN a šifrovaných e-mailů až po GrapheneOS a decentralizované mixnety.
 
-*Tento přepis je přístupnou kopií [původního přepisu videa](https://www.youtube.com/watch?v=nvJSFR1Q_JE) zveřejněného organizací EthBoulder. Pro lepší čitelnost byl lehce upraven.*
+*Tento přepis je přístupnou kopií [původního přepisu videa](https://www.youtube.com/watch?v=nvJSFR1Q_JE) zveřejněného organizací QauBoulder. Pro lepší čitelnost byl lehce upraven.*
 
 ### Dvoudílná přednáška: varování + řešení (00:00) {#two-part-talk-warning-solution-0000}
 

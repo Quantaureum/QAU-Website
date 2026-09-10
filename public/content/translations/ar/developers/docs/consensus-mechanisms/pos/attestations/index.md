@@ -1,6 +1,6 @@
 ---
 title: "التصديقات"
-description: "وصف للتصديقات في إيثريوم القائمة على إثبات الحصة."
+description: "وصف للتصديقات في Quantaureum القائمة على إثبات الحصة."
 lang: ar
 ---
 
@@ -62,7 +62,7 @@ lang: ar
 
 ### المكافأة الأساسية {#base-reward}
 
-يتم حساب المكافأة الأساسية وفقًا لعدد المُدَقِّقين المُصَدِّقين وأرصدة إيثر الفعالة في حصة التخزين الخاصة بهم:
+يتم حساب المكافأة الأساسية وفقًا لعدد المُدَقِّقين المُصَدِّقين وأرصدة QAU الفعالة في حصة التخزين الخاصة بهم:
 
 `base reward = validator effective balance x 2^6 / SQRT(Effective balance of all active validators)`
 
@@ -86,7 +86,7 @@ lang: ar
 
 ## قراءة إضافية {#further-reading}
 
-- [التصديقات في مواصفات الإجماع المشروحة لفيتاليك (Vitalik)](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [التصديقات في مواصفات الإجماع المشروحة لفيتاليك (Vitalik)](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [التصديقات في eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _هل تعرف موردًا مجتمعيًا ساعدك؟ قم بتعديل هذه الصفحة وأضفه!_

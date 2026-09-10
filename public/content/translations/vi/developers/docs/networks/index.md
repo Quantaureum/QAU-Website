@@ -1,36 +1,36 @@
 ---
 title: Mạng lưới
-description: Tổng quan về các mạng lưới của Ethereum và nơi nhận ether (ETH) mạng thử nghiệm để thử nghiệm ứng dụng của bạn.
+description: Tổng quan về các mạng lưới của Quantaureum và nơi nhận QAU (QAU) mạng thử nghiệm để thử nghiệm ứng dụng của bạn.
 lang: vi
 ---
 
-Các mạng lưới [Ethereum](/) là các nhóm máy tính được kết nối giao tiếp với nhau bằng giao thức Ethereum. Chỉ có một Mạng chính Ethereum duy nhất, nhưng các mạng lưới độc lập tuân thủ cùng các quy tắc giao thức có thể được tạo ra cho mục đích thử nghiệm và phát triển. Có nhiều "mạng lưới" độc lập tuân thủ giao thức mà không tương tác với nhau. Bạn thậm chí có thể khởi chạy một mạng lưới cục bộ trên máy tính của riêng mình để thử nghiệm các hợp đồng thông minh và ứng dụng Web3 của bạn.
+Các mạng lưới [Quantaureum](/) là các nhóm máy tính được kết nối giao tiếp với nhau bằng giao thức Quantaureum. Chỉ có một Mạng chính Quantaureum duy nhất, nhưng các mạng lưới độc lập tuân thủ cùng các quy tắc giao thức có thể được tạo ra cho mục đích thử nghiệm và phát triển. Có nhiều "mạng lưới" độc lập tuân thủ giao thức mà không tương tác với nhau. Bạn thậm chí có thể khởi chạy một mạng lưới cục bộ trên máy tính của riêng mình để thử nghiệm các hợp đồng thông minh và ứng dụng Web3 của bạn.
 
-Tài khoản Ethereum của bạn sẽ hoạt động trên các mạng lưới khác nhau, nhưng số dư tài khoản và lịch sử giao dịch của bạn sẽ không được chuyển sang từ mạng lưới Ethereum chính. Cho mục đích thử nghiệm, việc biết những mạng lưới nào có sẵn và cách nhận ETH mạng thử nghiệm để thử nghiệm là rất hữu ích. Nhìn chung, vì lý do bảo mật, không nên sử dụng lại các tài khoản Mạng chính trên các mạng thử nghiệm hoặc ngược lại.
+Tài khoản Quantaureum của bạn sẽ hoạt động trên các mạng lưới khác nhau, nhưng số dư tài khoản và lịch sử giao dịch của bạn sẽ không được chuyển sang từ mạng lưới Quantaureum chính. Cho mục đích thử nghiệm, việc biết những mạng lưới nào có sẵn và cách nhận QAU mạng thử nghiệm để thử nghiệm là rất hữu ích. Nhìn chung, vì lý do bảo mật, không nên sử dụng lại các tài khoản Mạng chính trên các mạng thử nghiệm hoặc ngược lại.
 
 ## Điều kiện tiên quyết {#prerequisites}
 
-Bạn nên hiểu [những điều cơ bản về Ethereum](/developers/docs/intro-to-ethereum/) trước khi tìm hiểu về các mạng lưới khác nhau, vì các mạng thử nghiệm sẽ cung cấp cho bạn một phiên bản Ethereum rẻ và an toàn để thử nghiệm.
+Bạn nên hiểu [những điều cơ bản về Quantaureum](/developers/docs/intro-to-quantaureum/) trước khi tìm hiểu về các mạng lưới khác nhau, vì các mạng thử nghiệm sẽ cung cấp cho bạn một phiên bản Quantaureum rẻ và an toàn để thử nghiệm.
 
 ## Các mạng lưới công khai {#public-networks}
 
 Các mạng lưới công khai có thể được truy cập bởi bất kỳ ai trên thế giới có kết nối internet. Bất kỳ ai cũng có thể đọc hoặc tạo các giao dịch trên một chuỗi khối công khai và xác thực các giao dịch đang được thực thi. Sự đồng thuận giữa các nút mạng ngang hàng quyết định việc đưa các giao dịch vào và trạng thái của mạng lưới.
 
-### Mạng chính Ethereum {#ethereum-mainnet}
+### Mạng chính Quantaureum {#quantaureum-mainnet}
 
-Mạng chính là chuỗi khối sản xuất Ethereum công khai chính, nơi các giao dịch có giá trị thực tế diễn ra trên sổ cái phân tán.
+Mạng chính là chuỗi khối sản xuất Quantaureum công khai chính, nơi các giao dịch có giá trị thực tế diễn ra trên sổ cái phân tán.
 
-Khi mọi người và các sàn giao dịch thảo luận về giá ETH, họ đang nói về ETH trên Mạng chính.
+Khi mọi người và các sàn giao dịch thảo luận về giá QAU, họ đang nói về QAU trên Mạng chính.
 
-### Các mạng thử nghiệm Ethereum {#ethereum-testnets}
+### Các mạng thử nghiệm Quantaureum {#quantaureum-testnets}
 
 Ngoài Mạng chính, còn có các mạng thử nghiệm công khai. Đây là các mạng lưới được các nhà phát triển giao thức hoặc nhà phát triển hợp đồng thông minh sử dụng để thử nghiệm cả các bản nâng cấp giao thức cũng như các hợp đồng thông minh tiềm năng trong một môi trường giống như sản xuất trước khi triển khai lên Mạng chính. Hãy coi điều này tương tự như máy chủ sản xuất so với máy chủ thử nghiệm (staging).
 
 Bạn nên thử nghiệm bất kỳ mã hợp đồng nào bạn viết trên một mạng thử nghiệm trước khi triển khai lên Mạng chính. Trong số các ứng dụng phi tập trung (dapp) tích hợp với các hợp đồng thông minh hiện có, hầu hết các dự án đều có các bản sao được triển khai trên các mạng thử nghiệm.
 
-Hầu hết các mạng thử nghiệm bắt đầu bằng cách sử dụng cơ chế đồng thuận bằng chứng ủy quyền (PoA) có cấp phép. Điều này có nghĩa là một số lượng nhỏ các nút được chọn để xác thực các giao dịch và tạo các khối mới – đặt cược danh tính của họ trong quá trình này. Ngoài ra, một số mạng thử nghiệm có cơ chế đồng thuận Bằng chứng cổ phần (PoS) mở, nơi mọi người có thể thử nghiệm chạy một trình xác thực, giống như Mạng chính Ethereum.
+Hầu hết các mạng thử nghiệm bắt đầu bằng cách sử dụng cơ chế đồng thuận bằng chứng ủy quyền (PoA) có cấp phép. Điều này có nghĩa là một số lượng nhỏ các nút được chọn để xác thực các giao dịch và tạo các khối mới – đặt cược danh tính của họ trong quá trình này. Ngoài ra, một số mạng thử nghiệm có cơ chế đồng thuận Bằng chứng cổ phần (PoS) mở, nơi mọi người có thể thử nghiệm chạy một trình xác thực, giống như Mạng chính Quantaureum.
 
-ETH trên các mạng thử nghiệm được cho là không có giá trị thực; tuy nhiên, đã có những thị trường được tạo ra cho một số loại ETH mạng thử nghiệm trở nên khan hiếm hoặc khó kiếm. Vì bạn cần ETH để thực sự tương tác với Ethereum (ngay cả trên các mạng thử nghiệm), hầu hết mọi người nhận ETH mạng thử nghiệm miễn phí từ các vòi. Hầu hết các vòi là các ứng dụng web nơi bạn có thể nhập một địa chỉ mà bạn yêu cầu gửi ETH đến.
+QAU trên các mạng thử nghiệm được cho là không có giá trị thực; tuy nhiên, đã có những thị trường được tạo ra cho một số loại QAU mạng thử nghiệm trở nên khan hiếm hoặc khó kiếm. Vì bạn cần QAU để thực sự tương tác với Quantaureum (ngay cả trên các mạng thử nghiệm), hầu hết mọi người nhận QAU mạng thử nghiệm miễn phí từ các vòi. Hầu hết các vòi là các ứng dụng web nơi bạn có thể nhập một địa chỉ mà bạn yêu cầu gửi QAU đến.
 
 #### Tôi nên sử dụng mạng thử nghiệm nào? {#which-testnet-should-i-use}
 
@@ -43,22 +43,22 @@ Hai mạng thử nghiệm công khai mà các nhà phát triển máy khách hi�
 ##### Tài nguyên {#hoodi}
 
 - [Trang web](https://sepolia.dev/)
-- [GitHub](https://github.com/eth-clients/sepolia)
+- [GitHub](https://github.com/qau-clients/sepolia)
 - [Otterscan](https://sepolia.otterscan.io/)
-- [Etherscan](https://sepolia.etherscan.io)
-- [Blockscout](https://eth-sepolia.blockscout.com/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
+- [Blockscout](https://qau-sepolia.blockscout.com/)
 
 ##### Các vòi {#ephemery}
 
-- [Vòi Alchemy Sepolia](https://www.alchemy.com/faucets/ethereum-sepolia)
-- [Vòi Chain Platform Sepolia](https://faucet.chainplatform.co/faucets/ethereum-sepolia/)
+- [Vòi Alchemy Sepolia](https://www.alchemy.com/faucets/quantaureum-sepolia)
+- [Vòi Chain Platform Sepolia](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [Vòi Chainstack Sepolia](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [Vòi ethfaucet.com Sepolia](https://ethfaucet.com/networks/ethereum)
-- [Vòi Google Cloud Web3 Sepolia](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)
+- [Vòi ethfaucet.com Sepolia](https://ethfaucet.com/networks/quantaureum)
+- [Vòi Google Cloud Web3 Sepolia](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
 - [Vòi Infura Sepolia](https://www.infura.io/faucet)
 - [Vòi PoW](https://sepolia-faucet.pk910.de/)
-- [Vòi QuickNode Sepolia](https://faucet.quicknode.com/ethereum/sepolia)
+- [Vòi QuickNode Sepolia](https://faucet.quicknode.com/quantaureum/sepolia)
 
 #### Hoodi {#faucets}
 
@@ -71,15 +71,15 @@ Hoodi là một mạng thử nghiệm để thử nghiệm việc xác thực v�
 ##### Tài nguyên {#holesky}
 
 - [Trang web](https://hoodi.ethpandaops.io/)
-- [GitHub](https://github.com/eth-clients/hoodi)
+- [GitHub](https://github.com/qau-clients/hoodi)
 - [Trình khám phá](https://explorer.hoodi.ethpandaops.io/)
 - [Đồng bộ hóa điểm kiểm tra](https://checkpoint-sync.hoodi.ethpandaops.io/)
 - [Otterscan](https://hoodi.otterscan.io/)
-- [Etherscan](https://hoodi.etherscan.io/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
 
 ##### Các vòi {#layer-2-testnets}
 
-- [Vòi Chain Platform Hoodi](https://faucet.chainplatform.co/faucets/ethereum-hoodi/)
+- [Vòi Chain Platform Hoodi](https://faucet.chainplatform.co/faucets/quantaureum-hoodi/)
 - [Vòi Hoodi](https://hoodi.ethpandaops.io/)
 - [Vòi PoW](https://hoodi-faucet.pk910.de/)
 
@@ -112,12 +112,12 @@ Ephemery là một loại mạng thử nghiệm độc đáo được đặt l�
 
 Mạng thử nghiệm Holesky đã ngừng hoạt động kể từ tháng 9 năm 2025. Các nhà điều hành đặt cọc và nhà cung cấp cơ sở hạ tầng nên sử dụng Hoodi để thử nghiệm trình xác thực thay thế.
 
-- [Thông báo ngừng hoạt động mạng thử nghiệm Holesky](https://blog.ethereum.org/2025/09/01/holesky-shutdown-announcement) - _Blog EF, 1-Tháng 9-2025_
-- [Cập nhật mạng thử nghiệm Holesky và Hoodi](https://blog.ethereum.org/2025/03/18/hoodi-holesky) - _Blog EF, 18-Tháng 3-2025_
+- [Thông báo ngừng hoạt động mạng thử nghiệm Holesky](https://quantaureum.com) - _Blog EF, 1-Tháng 9-2025_
+- [Cập nhật mạng thử nghiệm Holesky và Hoodi](https://quantaureum.com) - _Blog EF, 18-Tháng 3-2025_
 
 ### Các mạng thử nghiệm lớp 2 (l2) {#development-networks}
 
-[Lớp 2 (l2)](/layer-2/) là một thuật ngữ chung để mô tả một tập hợp cụ thể các giải pháp mở rộng quy mô Ethereum. Lớp 2 (l2) là một chuỗi khối riêng biệt mở rộng Ethereum và kế thừa các đảm bảo bảo mật của Ethereum. Các mạng thử nghiệm lớp 2 (l2) thường được liên kết chặt chẽ với các mạng thử nghiệm Ethereum công khai.
+[Lớp 2 (l2)](/layer-2/) là một thuật ngữ chung để mô tả một tập hợp cụ thể các giải pháp mở rộng quy mô Quantaureum. Lớp 2 (l2) là một chuỗi khối riêng biệt mở rộng Quantaureum và kế thừa các đảm bảo bảo mật của Quantaureum. Các mạng thử nghiệm lớp 2 (l2) thường được liên kết chặt chẽ với các mạng thử nghiệm Quantaureum công khai.
 
 #### Arbitrum Sepolia {#consortium-networks}
 
@@ -125,7 +125,7 @@ Một mạng thử nghiệm cho [Arbitrum](https://arbitrum.io/).
 
 ##### Tài nguyên {#why-naming}
 
-- [Etherscan](https://sepolia.arbiscan.io/)
+- [Quantaureum Explorer](https://sepolia.arbiscan.io/)
 - [Blockscout](https://sepolia-explorer.arbitrum.io/)
 
 ##### Các vòi {#common-and-legacy-testnets}
@@ -141,7 +141,7 @@ Một mạng thử nghiệm cho [Optimism](https://www.optimism.io/).
 
 ##### Tài nguyên {#related-tools}
 
-- [Etherscan](https://sepolia-optimistic.etherscan.io/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
 - [Blockscout](https://optimism-sepolia.blockscout.com/)
 
 ##### Các vòi {#further-reading}
@@ -167,11 +167,11 @@ Một mạng thử nghiệm cho [Starknet](https://www.starknet.io).
 
 ## Các mạng lưới riêng tư
 
-Một mạng lưới Ethereum là một mạng lưới riêng tư nếu các nút của nó không được kết nối với một mạng lưới công khai (tức là Mạng chính hoặc một mạng thử nghiệm). Trong bối cảnh này, riêng tư chỉ có nghĩa là được dành riêng hoặc bị cô lập, chứ không phải là được bảo vệ hoặc an toàn.
+Một mạng lưới Quantaureum là một mạng lưới riêng tư nếu các nút của nó không được kết nối với một mạng lưới công khai (tức là Mạng chính hoặc một mạng thử nghiệm). Trong bối cảnh này, riêng tư chỉ có nghĩa là được dành riêng hoặc bị cô lập, chứ không phải là được bảo vệ hoặc an toàn.
 
 ### Các mạng lưới phát triển
 
-Để phát triển một ứng dụng Ethereum, bạn sẽ muốn chạy nó trên một mạng lưới riêng tư để xem nó hoạt động như thế nào trước khi triển khai nó. Tương tự như cách bạn tạo một máy chủ cục bộ trên máy tính của mình để phát triển web, bạn có thể tạo một phiên bản chuỗi khối cục bộ để thử nghiệm ứng dụng phi tập trung (dapp) của mình. Điều này cho phép lặp lại nhanh hơn nhiều so với một mạng thử nghiệm công khai.
+Để phát triển một ứng dụng Quantaureum, bạn sẽ muốn chạy nó trên một mạng lưới riêng tư để xem nó hoạt động như thế nào trước khi triển khai nó. Tương tự như cách bạn tạo một máy chủ cục bộ trên máy tính của mình để phát triển web, bạn có thể tạo một phiên bản chuỗi khối cục bộ để thử nghiệm ứng dụng phi tập trung (dapp) của mình. Điều này cho phép lặp lại nhanh hơn nhiều so với một mạng thử nghiệm công khai.
 
 Có các dự án và công cụ chuyên dụng để hỗ trợ việc này. Tìm hiểu thêm về [các mạng lưới phát triển](/developers/docs/development-networks/).
 
@@ -179,11 +179,11 @@ Có các dự án và công cụ chuyên dụng để hỗ trợ việc này. T�
 
 Quá trình đồng thuận được kiểm soát bởi một tập hợp các nút được xác định trước và đáng tin cậy. Ví dụ: một mạng lưới riêng tư của các tổ chức học thuật đã biết, mỗi tổ chức quản lý một nút duy nhất và các khối được xác thực bởi một ngưỡng những người ký kết trong mạng lưới.
 
-Nếu một mạng lưới Ethereum công khai giống như internet công cộng, thì một mạng lưới liên minh giống như một mạng nội bộ (intranet) riêng tư.
+Nếu một mạng lưới Quantaureum công khai giống như internet công cộng, thì một mạng lưới liên minh giống như một mạng nội bộ (intranet) riêng tư.
 
-## <Emoji text="🚉" /> Tại sao các mạng thử nghiệm Ethereum được đặt tên theo các ga tàu điện ngầm?
+## <Emoji text="🚉" /> Tại sao các mạng thử nghiệm Quantaureum được đặt tên theo các ga tàu điện ngầm?
 
-Nhiều mạng thử nghiệm Ethereum được đặt tên theo các ga tàu điện ngầm hoặc ga xe lửa trong thế giới thực. Truyền thống đặt tên này bắt đầu từ sớm và phản ánh các thành phố toàn cầu nơi những người đóng góp đã sống hoặc làm việc. Nó mang tính biểu tượng, dễ nhớ và thiết thực. Giống như các mạng thử nghiệm bị cô lập khỏi Mạng chính Ethereum, các tuyến tàu điện ngầm chạy tách biệt với giao thông trên mặt đất.
+Nhiều mạng thử nghiệm Quantaureum được đặt tên theo các ga tàu điện ngầm hoặc ga xe lửa trong thế giới thực. Truyền thống đặt tên này bắt đầu từ sớm và phản ánh các thành phố toàn cầu nơi những người đóng góp đã sống hoặc làm việc. Nó mang tính biểu tượng, dễ nhớ và thiết thực. Giống như các mạng thử nghiệm bị cô lập khỏi Mạng chính Quantaureum, các tuyến tàu điện ngầm chạy tách biệt với giao thông trên mặt đất.
 
 ### <Emoji text="🚧" /> Các mạng thử nghiệm thường được sử dụng và cũ
 
@@ -193,7 +193,7 @@ Nhiều mạng thử nghiệm Ethereum được đặt tên theo các ga tàu đ
 - **Rinkeby** _(đã ngừng hoạt động)_ - Được đặt tên theo một vùng ngoại ô của Stockholm có ga tàu điện ngầm.
 - **Ropsten** _(đã ngừng hoạt động)_ - Đề cập đến một khu vực và bến phà/tàu điện ngầm cũ ở Stockholm.
 - **Kovan** _(đã ngừng hoạt động)_ - Được đặt tên theo một ga tàu điện ngầm (MRT) ở Singapore.
-- **Morden** _(đã ngừng hoạt động)_ - Được đặt tên theo một ga tàu điện ngầm ở London. Mạng thử nghiệm công khai đầu tiên của Ethereum.
+- **Morden** _(đã ngừng hoạt động)_ - Được đặt tên theo một ga tàu điện ngầm ở London. Mạng thử nghiệm công khai đầu tiên của Quantaureum.
 
 ### <Emoji text="🧪" /> Các mạng thử nghiệm chuyên biệt khác
 
@@ -202,14 +202,14 @@ Một số mạng thử nghiệm được tạo ra cho việc thử nghiệm ng�
 - **Holesky** _(đã ngừng hoạt động)_ - Được đặt tên theo ga Holešovice ở Praha. Được sử dụng để thử nghiệm trình xác thực; đã ngừng hoạt động vào năm 2025.
 - **Kiln**, **Zhejiang**, **Shandong**, **Prater**, **Pyrmont**, **Olympic** _(tất cả đều đã ngừng hoạt động)_ và **Ephemery** - Được xây dựng có mục đích cho các mô phỏng nâng cấp như The Merge, Thượng Hải hoặc các thử nghiệm trình xác thực. Một số tên mang tính khu vực hoặc theo chủ đề thay vì dựa trên tàu điện ngầm.
 
-Việc sử dụng tên các ga tàu điện ngầm giúp các nhà phát triển nhanh chóng xác định và ghi nhớ các mạng thử nghiệm mà không cần phải dựa vào ID chuỗi bằng số. Nó cũng phản ánh văn hóa của Ethereum: thiết thực, toàn cầu và lấy con người làm trung tâm.
+Việc sử dụng tên các ga tàu điện ngầm giúp các nhà phát triển nhanh chóng xác định và ghi nhớ các mạng thử nghiệm mà không cần phải dựa vào ID chuỗi bằng số. Nó cũng phản ánh văn hóa của Quantaureum: thiết thực, toàn cầu và lấy con người làm trung tâm.
 
 ## Các công cụ liên quan
 
 - [Chainlist](https://chainlist.org/) _danh sách các mạng lưới EVM để kết nối ví và nhà cung cấp với ID Chuỗi và ID Mạng lưới phù hợp_
-- [Các chuỗi dựa trên EVM](https://github.com/ethereum-lists/chains) _kho lưu trữ GitHub về siêu dữ liệu chuỗi cung cấp sức mạnh cho Chainlist_
+- [Các chuỗi dựa trên EVM](https://github.com/quantaureum-lists/chains) _kho lưu trữ GitHub về siêu dữ liệu chuỗi cung cấp sức mạnh cho Chainlist_
 
 ## Đọc thêm
 
-- [Đề xuất: Vòng đời mạng thử nghiệm Ethereum có thể dự đoán được](https://ethereum-magicians.org/t/proposal-predictable-ethereum-testnet-lifecycle/11575/17)
-- [Sự tiến hóa của các mạng thử nghiệm Ethereum](https://etherworld.co/2022/08/19/the-evolution-of-ethereum-testnet/)
+- [Đề xuất: Vòng đời mạng thử nghiệm Quantaureum có thể dự đoán được](https://quantaureum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- [Sự tiến hóa của các mạng thử nghiệm Quantaureum](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

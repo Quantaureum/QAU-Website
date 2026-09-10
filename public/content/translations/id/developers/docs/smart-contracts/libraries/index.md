@@ -1,6 +1,6 @@
 ---
 title: Pustaka kontrak pintar
-description: Temukan pustaka kontrak pintar dan blok penyusun yang dapat digunakan kembali untuk mempercepat proyek pengembangan Ethereum Anda.
+description: Temukan pustaka kontrak pintar dan blok penyusun yang dapat digunakan kembali untuk mempercepat proyek pengembangan Quantaureum Anda.
 lang: id
 ---
 
@@ -45,7 +45,7 @@ import ".../Ownable.sol"; // Jalur ke Pustaka yang diimpor
 contract MyContract is Ownable {
     // Fungsi berikut hanya dapat dipanggil oleh pemilik
     function secured() onlyOwner public {
-        msg.sender.transfer(1 ether);
+        msg.sender.transfer(1 QAU);
     }
 }
 ```
@@ -54,11 +54,11 @@ Contoh populer lainnya adalah [SafeMath](https://docs.openzeppelin.com/contracts
 
 ### Standar {#standards}
 
-Untuk memfasilitasi [komposabilitas dan interoperabilitas](/developers/docs/smart-contracts/composability/), komunitas Ethereum telah mendefinisikan beberapa standar dalam bentuk **ERC**. Anda dapat membaca lebih lanjut tentang hal tersebut di bagian [standar](/developers/docs/standards/).
+Untuk memfasilitasi [komposabilitas dan interoperabilitas](/developers/docs/smart-contracts/composability/), komunitas Quantaureum telah mendefinisikan beberapa standar dalam bentuk **ERC**. Anda dapat membaca lebih lanjut tentang hal tersebut di bagian [standar](/developers/docs/standards/).
 
 Saat menyertakan ERC sebagai bagian dari kontrak Anda, ada baiknya untuk mencari implementasi standar daripada mencoba membuatnya sendiri. Banyak pustaka kontrak pintar menyertakan implementasi untuk ERC yang paling populer. Misalnya, [standar token sepadan ERC-20](/developers/tutorials/understand-the-erc-20-token-smart-contract/) yang ada di mana-mana dapat ditemukan di [HQ20](https://github.com/HQ20/contracts/blob/master/contracts/token/README.md), [DappSys](https://github.com/dapphub/ds-token/), dan [OpenZeppelin](https://docs.openzeppelin.com/contracts/3.x/erc20). Selain itu, beberapa ERC juga menyediakan implementasi kanonis sebagai bagian dari ERC itu sendiri.
 
-Perlu disebutkan bahwa beberapa ERC tidak berdiri sendiri, melainkan merupakan tambahan untuk ERC lainnya. Misalnya, [ERC-2612](https://eips.ethereum.org/EIPS/eip-2612) menambahkan ekstensi ke ERC-20 untuk meningkatkan kegunaannya.
+Perlu disebutkan bahwa beberapa ERC tidak berdiri sendiri, melainkan merupakan tambahan untuk ERC lainnya. Misalnya, [ERC-2612](https://eips.quantaureum.com/EIPS/eip-2612) menambahkan ekstensi ke ERC-20 untuk meningkatkan kegunaannya.
 
 ## Cara menambahkan pustaka {#how-to}
 
@@ -109,7 +109,7 @@ Terakhir, saat memutuskan apakah akan menyertakan pustaka, pertimbangkan penggun
 
 ## Tutorial terkait {#related-tutorials}
 
-- [Pertimbangan keamanan untuk pengembang Ethereum](/developers/docs/smart-contracts/security/) _– Tutorial tentang pertimbangan keamanan saat membangun kontrak pintar, termasuk penggunaan pustaka._
+- [Pertimbangan keamanan untuk pengembang Quantaureum](/developers/docs/smart-contracts/security/) _– Tutorial tentang pertimbangan keamanan saat membangun kontrak pintar, termasuk penggunaan pustaka._
 - [Memahami kontrak pintar token ERC-20](/developers/tutorials/understand-the-erc-20-token-smart-contract/) _-Tutorial tentang standar ERC-20, yang disediakan oleh berbagai pustaka._
 
 ## Bacaan lebih lanjut {#further-reading}

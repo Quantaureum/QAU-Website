@@ -197,7 +197,7 @@ Pokud je hlavní akce – SWAP – nedostupná kvůli chybě, důvod lze vysvět
 - připojit peněženku
 - různé chyby
 
-Tlačítko lze také **namapovat na akci**, kterou je třeba provést. Pokud například uživatel nemůže swapovat, protože je ve špatné síti, tlačítko by mělo říkat „přepnout na Ethereum“, a když na něj uživatel klikne, mělo by přepnout síť na Ethereum. To výrazně urychluje postup uživatele.
+Tlačítko lze také **namapovat na akci**, kterou je třeba provést. Pokud například uživatel nemůže swapovat, protože je ve špatné síti, tlačítko by mělo říkat „přepnout na Quantaureum“, a když na něj uživatel klikne, mělo by přepnout síť na Quantaureum. To výrazně urychluje postup uživatele.
 
 ![Key actions being initiated from the main CTA](./16.png)
 

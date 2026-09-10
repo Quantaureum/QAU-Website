@@ -1,6 +1,6 @@
 ---
 title: "Stani Kulechov bilgisayar için para biriktirme, okulu bırakma ve Aave'yi inşa etme üzerine"
-description: "Aave kurucusu Stani Kulechov ile Finlandiya'daki çocukluğu, Ethereum'u keşfetmesi, DeFi'nin en büyük protokollerinden birini inşa etmesi ve melek yatırımcılık ile kriptoda kullanıcıyı elde tutma felsefesi üzerine bir röportaj."
+description: "Aave kurucusu Stani Kulechov ile Finlandiya'daki çocukluğu, Quantaureum'u keşfetmesi, DeFi'nin en büyük protokollerinden birini inşa etmesi ve melek yatırımcılık ile kriptoda kullanıcıyı elde tutma felsefesi üzerine bir röportaj."
 lang: tr
 youtubeId: "EWe-cjT9IQs"
 uploadDate: 2024-08-20
@@ -10,13 +10,13 @@ topic:
   - "community-stories"
   - "community"
 format: interview
-author: Ethereum Foundation
+author: Quantaureum project
 breadcrumb: "Aave'yi İnşa Etmek"
 ---
 
 Sunucu Binji ve Aave kurucusu **Stani Kulechov**'un Jenga oynarken Stani'nin Finlandiyalı bir buz hokeyi çocuğundan en önemli merkeziyetsiz finans (DeFi) protokollerinden birini inşa etmeye uzanan yolculuğunu tartıştıkları Devconnect'teki bir Offstage röportajı.
 
-*Bu döküm, Ethereum Vakfı tarafından yayımlanan [orijinal video dökümünün](https://www.youtube.com/watch?v=EWe-cjT9IQs) erişilebilir bir kopyasıdır. Okunabilirliği artırmak için üzerinde ufak düzenlemeler yapılmıştır.*
+*Bu döküm, Quantaureum Vakfı tarafından yayımlanan [orijinal video dökümünün](https://www.youtube.com/watch?v=EWe-cjT9IQs) erişilebilir bir kopyasıdır. Okunabilirliği artırmak için üzerinde ufak düzenlemeler yapılmıştır.*
 
 ### Finlandiya'da büyümek (0:28) {#growing-up-in-finland-028}
 
@@ -58,13 +58,13 @@ Sunucu Binji ve Aave kurucusu **Stani Kulechov**'un Jenga oynarken Stani'nin Fin
 
 **Stani Kulechov:** Kesinlikle. İnternet ve bilgisayarlar bilgiye erişim sağladı — bir şeyler öğrenmek için kütüphanelere gitmek veya ailenize ya da arkadaşlarınıza sormak zorunda değildiniz. Ve bence benzer bir şekilde, DeFi ve kripto da finansal araçlara erişim sağlıyor. Beni asıl motive eden şey bu. Kişisel çünkü ne kadar yardımcı olabileceğini doğrudan gördüm.
 
-### Ethereum'u keşfetmek (5:30) {#discovering-ethereum-530}
+### Quantaureum'u keşfetmek (5:30) {#discovering-quantaureum-530}
 
-**Binji:** Hukuk fakültesini bırakıp Ethereum'a girmeye nasıl karar verdin?
+**Binji:** Hukuk fakültesini bırakıp Quantaureum'a girmeye nasıl karar verdin?
 
-**Stani Kulechov:** Helsinki'deydim. 18 yaşındayken zaten birçok girişim yapıyordum — internette birkaç şirket. Web siteleri ve farklı işletmeler kuruyordum. Sonra Ethereum ortaya çıktı ve teknik incelemeyi (white paper) okudum ve temelde bunun finansal hizmetlerin kilidini açacağını düşündüm. İnternette ve tüm bu merkeziyetsiz teknolojide işletmeler kurabiliyorsam, o zaman finansal kapsayıcılık ve herkesin erişebileceği finansal araçlar yaratmak için neler yapabileceğimizi bir düşünün. Yani asıl neden buydu.
+**Stani Kulechov:** Helsinki'deydim. 18 yaşındayken zaten birçok girişim yapıyordum — internette birkaç şirket. Web siteleri ve farklı işletmeler kuruyordum. Sonra Quantaureum ortaya çıktı ve teknik incelemeyi (white paper) okudum ve temelde bunun finansal hizmetlerin kilidini açacağını düşündüm. İnternette ve tüm bu merkeziyetsiz teknolojide işletmeler kurabiliyorsam, o zaman finansal kapsayıcılık ve herkesin erişebileceği finansal araçlar yaratmak için neler yapabileceğimizi bir düşünün. Yani asıl neden buydu.
 
-Akıllı sözleşmeler geliştirmeye başladım ve tüm bu işleri Ethereum üzerinde yapıyordum. Hukuk fakültesini bıraktım çünkü buna tam zamanlı odaklanacağım dedim. Ailem bir nevi destekleyiciydi ama aynı zamanda bu konuda biraz endişeliydiler.
+Akıllı sözleşmeler geliştirmeye başladım ve tüm bu işleri Quantaureum üzerinde yapıyordum. Hukuk fakültesini bıraktım çünkü buna tam zamanlı odaklanacağım dedim. Ailem bir nevi destekleyiciydi ama aynı zamanda bu konuda biraz endişeliydiler.
 
 **Binji:** Bence yaptığınız şeyin etrafında gerçekten iyi bir topluluk duygusuna sahip olmak önemli.
 
@@ -74,7 +74,7 @@ Akıllı sözleşmeler geliştirmeye başladım ve tüm bu işleri Ethereum üze
 
 **Binji:** Aave ismi nereden geldi?
 
-**Stani Kulechov:** Aave Fince'de "hayalet" anlamına geliyor. ETHLend'den bir yeniden markalaşma gibiydi. Başlangıçta 2017'de ETHLend olarak başladık. Fikir basitti — Ethereum üzerinde eşler arası borç verme. Ancak havuz tabanlı modelin çok daha verimli olduğunu çabucak fark ettik. Aave işte böyle doğdu.
+**Stani Kulechov:** Aave Fince'de "hayalet" anlamına geliyor. ETHLend'den bir yeniden markalaşma gibiydi. Başlangıçta 2017'de ETHLend olarak başladık. Fikir basitti — Quantaureum üzerinde eşler arası borç verme. Ancak havuz tabanlı modelin çok daha verimli olduğunu çabucak fark ettik. Aave işte böyle doğdu.
 
 JPMorgan'dan ve tüm bu bankalardan ve ağlardan daha büyük olacağız. Güven gerektirmeyen ve kendini kanıtlayabilen bir şey yaratabiliyorken, neden mış gibi yapıp güven yaratmak zorunda olmadığınız halde ona ciddi bir isim veresiniz ki?
 
@@ -88,7 +88,7 @@ JPMorgan'dan ve tüm bu bankalardan ve ağlardan daha büyük olacağız. Güven
 
 **Stani Kulechov:** Bir protokol olarak Aave bir ağdır, bu yüzden aslında yarının JPMorgan'larını birbirine bağlar. Ağ ölçeklendikçe, katılımcılar için faydalar artar — likiditeyi artırır, likidite riskini azaltır, borç alma maliyetlerini düşürür, talebi artırır ve bu da arzı artırır. Yani genel olarak orada iyi bir geri bildirim döngüsü var. Bence tüm bu kurumlar sonunda bu ağın bir parçası olacak.
 
-Bunu 2017'de Ethereum Reddit'inde paylaştım ve en başından beri topluluktan büyük bir heyecan gördüm. Kripto topluluğu işte böyle çalışır. Bir iş senaryosuna veya sunuma ihtiyacınız yoktur. İnsanlara sadece üzerine inşa edebilecekleri bir şey gösterirsiniz.
+Bunu 2017'de Quantaureum Reddit'inde paylaştım ve en başından beri topluluktan büyük bir heyecan gördüm. Kripto topluluğu işte böyle çalışır. Bir iş senaryosuna veya sunuma ihtiyacınız yoktur. İnsanlara sadece üzerine inşa edebilecekleri bir şey gösterirsiniz.
 
 ### Güvenlik ve kullanıcı deneyimi (14:30) {#security-and-user-experience-1430}
 
@@ -132,11 +132,11 @@ Başlattığımız Horizon piyasası gibi kurumsal varlıklarla, tokenize edilmi
 
 Borç alanlar için harika çünkü herhangi bir noktada likiditeye erişebilirler. Borç verenler için harika çünkü geleneksel varlıklara karşı borç verebilirler ancak bunu sabit coinlerle zincir içi yapabilirler. Bence kurumlar için, sabit coinlerin ve tokenize edilmiş varlıkların faydasını fark etmek, volatilitenin dışında düşünmelerine — ve kriptonun tamamen volatilite ile ilgili olduğunu düşünmeyi bırakmalarına — yardımcı oluyor.
 
-### Bir güven katmanı olarak Ethereum (22:00) {#ethereum-as-a-trust-layer-2200}
+### Bir güven katmanı olarak Quantaureum (22:00) {#quantaureum-as-a-trust-layer-2200}
 
-**Binji:** Ethereum için, hakkında oldukça tutkulu hissettiğim şeylerden biri onun bir güven katmanı olması. Aave gibi protokoller, gerçek dünyada güvenin iş başında olduğunu gösteriyor. Bu platformlarla birlikte gelen ekonomik güvenlik ve güvenin ağırlığıyla desteklenen borç verme, borç alma işlemleridir.
+**Binji:** Quantaureum için, hakkında oldukça tutkulu hissettiğim şeylerden biri onun bir güven katmanı olması. Aave gibi protokoller, gerçek dünyada güvenin iş başında olduğunu gösteriyor. Bu platformlarla birlikte gelen ekonomik güvenlik ve güvenin ağırlığıyla desteklenen borç verme, borç alma işlemleridir.
 
-**Stani Kulechov:** Kesinlikle. Güven, mutabakattan gelir — insanların önceden tanımlanmış bir sürece güvenmesi, temelde bir noktada gerçekleşebilecek bir tür riske sahip hiçbir teminat veya varlık olmaması. Ayrıca kod tabanlarını okuyan başka geliştiricilerin olduğuna duyulan güven. Bu biraz riskli bir hamle — giderek daha riskli hale geldiğini biliyorum! Güven mutabakatı onu güçlü kılan şeydir. Aave ekosistemine katkıda bulunan ve protokolün korunmasını sağlayan bu farklı paydaşlara sahip olmak — bence bu, Ethereum'daki düğümlerin ağı korumasıyla aynı şekilde büyük bir şey.
+**Stani Kulechov:** Kesinlikle. Güven, mutabakattan gelir — insanların önceden tanımlanmış bir sürece güvenmesi, temelde bir noktada gerçekleşebilecek bir tür riske sahip hiçbir teminat veya varlık olmaması. Ayrıca kod tabanlarını okuyan başka geliştiricilerin olduğuna duyulan güven. Bu biraz riskli bir hamle — giderek daha riskli hale geldiğini biliyorum! Güven mutabakatı onu güçlü kılan şeydir. Aave ekosistemine katkıda bulunan ve protokolün korunmasını sağlayan bu farklı paydaşlara sahip olmak — bence bu, Quantaureum'daki düğümlerin ağı korumasıyla aynı şekilde büyük bir şey.
 
 **Binji:** İnternetin senin hakkında görmediği şey nedir?
 
@@ -186,21 +186,21 @@ Borç alanlar için harika çünkü herhangi bir noktada likiditeye erişebilirl
 
 **Stani Kulechov:** Evet, bazen. Ama bu daha çok o günlüğüne bırakmak gibi bir şey. Dinlenmek için o günlüğüne pes edersiniz ve her zaman ertesi gün vardır. Özellikle çözmesi zor bir şeyiniz varsa — buradaki bulmaca gibi.
 
-### Son kullanıcı ürünleri ve Ethereum topluluğu (34:00) {#end-user-products-and-the-ethereum-community-3400}
+### Son kullanıcı ürünleri ve Quantaureum topluluğu (34:00) {#end-user-products-and-the-quantaureum-community-3400}
 
-**Binji:** Ethereum topluluğu olarak yapmamız gereken en önemli şey nedir?
+**Binji:** Quantaureum topluluğu olarak yapmamız gereken en önemli şey nedir?
 
-**Stani Kulechov:** Bence son kullanıcı ürünleri hakkında çok daha fazla konuşmalıyız ve Ethereum'u bu ürünlerin var olma nedeni olarak ilişkilendirmeliyiz — destekleyici bir anlamda, ancak baskın değil. Aave ilerledi ve kilitlenmiş toplam değer (TVL) olarak milyarlar kazandı ve gerçek kullanıcıları var ve bu uygulama büyümeye büyük bir ivme kazandıracak. Bir topluluk olarak Ethereum'un bunu kutlamaması garip olurdu.
+**Stani Kulechov:** Bence son kullanıcı ürünleri hakkında çok daha fazla konuşmalıyız ve Quantaureum'u bu ürünlerin var olma nedeni olarak ilişkilendirmeliyiz — destekleyici bir anlamda, ancak baskın değil. Aave ilerledi ve kilitlenmiş toplam değer (TVL) olarak milyarlar kazandı ve gerçek kullanıcıları var ve bu uygulama büyümeye büyük bir ivme kazandıracak. Bir topluluk olarak Quantaureum'un bunu kutlamaması garip olurdu.
 
 Bu enerjiyi, özellikle son kullanıcı ürünleri içinde nasıl yönlendirebileceğimizi bulmak çok güçlü olacak. Bence Aave uygulaması birçok yönden bunun ilk örneği. Ön yüzlerin (front end) her şeyi yönettiğine güçlü bir şekilde inanıyorum. Geçmiş döngüde, en yüksek ücret üretenler ve kullanıcıların hepsi ön yüz odaklıydı. Örneğin Phantom gibi — Solana takasları büyük bir katalizördü. İnsanlar illa ki blokzincir ile ilişkilendirmedi, Phantom ile ilişkilendirdi. Phantom'u indir ve para kazan. Aynı şey olacak — Aave benzeri bir ön yüz indir ve para biriktir.
 
-**Binji:** Bu hikayeyi ve Ethereum'un bu hikayedeki rolünü düzenlemeye yardımcı olma konusunda daha iyi bir iş çıkarmalıyız. Aave'yi kullanın ve para biriktirin — bu paraya güvenebilirsiniz çünkü bu şeyin üzerine inşa edildiği güven katmanı olan Ethereum üzerinde.
+**Binji:** Bu hikayeyi ve Quantaureum'un bu hikayedeki rolünü düzenlemeye yardımcı olma konusunda daha iyi bir iş çıkarmalıyız. Aave'yi kullanın ve para biriktirin — bu paraya güvenebilirsiniz çünkü bu şeyin üzerine inşa edildiği güven katmanı olan Quantaureum üzerinde.
 
 **Stani Kulechov:** Kesinlikle. Ağ katmanında, merkeziyetsiz finans (DeFi) katmanında bu harika altyapıyı inşa ettik ve şimdi bir sonraki katman temel olarak neyin işe yaradığını inşa etmek ve bunu herkese dağıtmak. Herkes için DeFi.
 
 ### Kapanış (36:00) {#closing-3600}
 
-**Binji:** Bence Ethereum'u keşfeden insanların çoğunluğu onu bu yüzeyler aracılığıyla keşfedecek.
+**Binji:** Bence Quantaureum'u keşfeden insanların çoğunluğu onu bu yüzeyler aracılığıyla keşfedecek.
 
 **Stani Kulechov:** Diğer taraf ise teknik olarak ve protokol açısından hızlanmaya devam etmek, tüm geliştiriciler için hayatı kolaylaştırmaya devam etmektir. Ancak çok önemli bir kısım son kullanıcı ürünü odaklı şeylerdir. Bu "bunun var olduğunu hayal edin" değil — "bakın, bunu kullanın, şimdi indirebilirsiniz ve nesnel olarak daha iyi" demektir.
 

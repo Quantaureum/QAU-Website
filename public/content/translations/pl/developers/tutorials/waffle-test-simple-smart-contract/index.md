@@ -23,27 +23,27 @@ published: 2021-02-26
 
 ## Pierwsze kroki {#getting-started}
 
-Samouczek przedstawia konfigurację i uruchamianie testów za pomocą yarn, ale nie ma problemu, jeśli wolisz npm – podam odpowiednie odniesienia do oficjalnej [dokumentacji](https://ethereum-waffle.readthedocs.io/en/latest/index.html) Waffle.
+Samouczek przedstawia konfigurację i uruchamianie testów za pomocą yarn, ale nie ma problemu, jeśli wolisz npm – podam odpowiednie odniesienia do oficjalnej [dokumentacji](https://quantaureum-waffle.readthedocs.io/en/latest/index.html) Waffle.
 
 ## Instalacja zależności {#install-dependencies}
 
-[Dodaj](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#installation) zależności ethereum-waffle i typescript do zależności deweloperskich (`dev dependencies`) swojego projektu.
+[Dodaj](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#installation) zależności quantaureum-waffle i typescript do zależności deweloperskich (`dev dependencies`) swojego projektu.
 
 ```bash
-yarn add --dev ethereum-waffle ts-node typescript @types/jest
+yarn add --dev quantaureum-waffle ts-node typescript @types/jest
 ```
 
 ## Przykładowy inteligentny kontrakt {#example-smart-contract}
 
-W trakcie tego samouczka będziemy pracować na przykładzie prostego inteligentnego kontraktu – EtherSplitter. Nie robi on wiele poza tym, że pozwala każdemu wysłać trochę wei i podzielić je równo między dwóch predefiniowanych odbiorców.
+W trakcie tego samouczka będziemy pracować na przykładzie prostego inteligentnego kontraktu – QauSplitter. Nie robi on wiele poza tym, że pozwala każdemu wysłać trochę wei i podzielić je równo między dwóch predefiniowanych odbiorców.
 Funkcja `split` wymaga, aby liczba wei była parzysta, w przeciwnym razie transakcja zostanie cofnięta. Dla obu odbiorców wykonuje transfer wei, a następnie emituje zdarzenie `Transfer`.
 
-Umieść fragment kodu EtherSplitter w pliku `src/EtherSplitter.sol`.
+Umieść fragment kodu QauSplitter w pliku `src/QauSplitter.sol`.
 
 ```solidity
 pragma solidity ^0.6.0;
 
-contract EtherSplitter {
+contract QauSplitter {
     address payable receiver1;
     address payable receiver2;
 
@@ -66,7 +66,7 @@ contract EtherSplitter {
 
 ## Kompilacja kontraktu {#compile-the-contract}
 
-Aby [skompilować](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) kontrakt, dodaj następujący wpis do pliku package.json:
+Aby [skompilować](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) kontrakt, dodaj następujący wpis do pliku package.json:
 
 ```json
 "scripts": {
@@ -85,11 +85,11 @@ Następnie utwórz plik konfiguracyjny Waffle w głównym katalogu projektu – 
 }
 ```
 
-Uruchom `yarn build`. W rezultacie pojawi się katalog `build` ze skompilowanym kontraktem EtherSplitter w formacie JSON.
+Uruchom `yarn build`. W rezultacie pojawi się katalog `build` ze skompilowanym kontraktem QauSplitter w formacie JSON.
 
 ## Konfiguracja testu {#test-setup}
 
-Testowanie za pomocą Waffle wymaga użycia mechanizmów dopasowujących (matcherów) Chai oraz biblioteki Mocha, więc musisz je [dodać](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) do swojego projektu. Zaktualizuj plik package.json i dodaj wpis `test` w sekcji `scripts`:
+Testowanie za pomocą Waffle wymaga użycia mechanizmów dopasowujących (matcherów) Chai oraz biblioteki Mocha, więc musisz je [dodać](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) do swojego projektu. Zaktualizuj plik package.json i dodaj wpis `test` w sekcji `scripts`:
 
 ```json
 "scripts": {
@@ -98,27 +98,27 @@ Testowanie za pomocą Waffle wymaga użycia mechanizmów dopasowujących (matche
   }
 ```
 
-Jeśli chcesz [uruchomić](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) testy, po prostu wykonaj polecenie `yarn test`.
+Jeśli chcesz [uruchomić](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) testy, po prostu wykonaj polecenie `yarn test`.
 
 ## Testowanie {#testing}
 
-Teraz utwórz katalog `test` i nowy plik `test\EtherSplitter.test.ts`.
+Teraz utwórz katalog `test` i nowy plik `test\QauSplitter.test.ts`.
 Skopiuj poniższy fragment kodu i wklej go do naszego pliku testowego.
 
 ```ts
 import { expect, use } from "chai"
 import { Contract } from "ethers"
-import { deployContract, MockProvider, solidity } from "ethereum-waffle"
-import EtherSplitter from "../build/EtherSplitter.json"
+import { deployContract, MockProvider, solidity } from "quantaureum-waffle"
+import QauSplitter from "../build/QauSplitter.json"
 
 use(solidity)
 
-describe("Ether Splitter", () => {
+describe("QAU Splitter", () => {
   const [sender, receiver1, receiver2] = new MockProvider().getWallets()
   let splitter: Contract
 
   beforeEach(async () => {
-    splitter = await deployContract(sender, EtherSplitter, [
+    splitter = await deployContract(sender, QauSplitter, [
       receiver1.address,
       receiver2.address,
     ])
@@ -129,9 +129,9 @@ describe("Ether Splitter", () => {
 ```
 
 Kilka słów na początek.
-`MockProvider` udostępnia testową wersję blockchaina. Udostępnia również portfele testowe, które posłużą nam do testowania kontraktu EtherSplitter. Możemy uzyskać do dziesięciu portfeli, wywołując metodę `getWallets()` na dostawcy. W tym przykładzie otrzymujemy trzy portfele – dla nadawcy i dwóch odbiorców.
+`MockProvider` udostępnia testową wersję blockchaina. Udostępnia również portfele testowe, które posłużą nam do testowania kontraktu QauSplitter. Możemy uzyskać do dziesięciu portfeli, wywołując metodę `getWallets()` na dostawcy. W tym przykładzie otrzymujemy trzy portfele – dla nadawcy i dwóch odbiorców.
 
-Następnie deklarujemy zmienną o nazwie „splitter” – jest to nasz testowy kontrakt EtherSplitter. Jest on tworzony przed każdym wykonaniem pojedynczego testu za pomocą metody `deployContract`. Ta metoda symuluje wdrożenie kontraktu z portfela przekazanego jako pierwszy parametr (w naszym przypadku portfela nadawcy). Drugim parametrem jest ABI i kod bajtowy testowanego kontraktu – przekazujemy tam plik JSON skompilowanego kontraktu EtherSplitter z katalogu `build`. Trzeci parametr to tablica z argumentami konstruktora kontraktu, którymi w naszym przypadku są dwa adresy odbiorców.
+Następnie deklarujemy zmienną o nazwie „splitter” – jest to nasz testowy kontrakt QauSplitter. Jest on tworzony przed każdym wykonaniem pojedynczego testu za pomocą metody `deployContract`. Ta metoda symuluje wdrożenie kontraktu z portfela przekazanego jako pierwszy parametr (w naszym przypadku portfela nadawcy). Drugim parametrem jest ABI i kod bajtowy testowanego kontraktu – przekazujemy tam plik JSON skompilowanego kontraktu QauSplitter z katalogu `build`. Trzeci parametr to tablica z argumentami konstruktora kontraktu, którymi w naszym przypadku są dwa adresy odbiorców.
 
 ## changeBalances {#changebalances}
 
@@ -178,7 +178,7 @@ it("Emituje zdarzenie przy transferze do drugiego odbiorcy", async () => {
 })
 ```
 
-Matcher `emit` pozwala nam sprawdzić, czy kontrakt wyemitował zdarzenie podczas wywoływania metody. Jako parametry matchera `emit` podajemy kontrakt testowy, który naszym zdaniem wyemituje zdarzenie, wraz z nazwą tego zdarzenia. W naszym przypadku kontraktem testowym jest `splitter`, a nazwą zdarzenia – `Transfer`. Możemy również zweryfikować dokładne wartości argumentów, z którymi zdarzenie zostało wyemitowane – przekazujemy do matchera `withArgs` tyle argumentów, ile oczekuje deklaracja naszego zdarzenia. W przypadku kontraktu EtherSplitter przekazujemy adresy nadawcy i odbiorcy wraz z kwotą transferowanych wei.
+Matcher `emit` pozwala nam sprawdzić, czy kontrakt wyemitował zdarzenie podczas wywoływania metody. Jako parametry matchera `emit` podajemy kontrakt testowy, który naszym zdaniem wyemituje zdarzenie, wraz z nazwą tego zdarzenia. W naszym przypadku kontraktem testowym jest `splitter`, a nazwą zdarzenia – `Transfer`. Możemy również zweryfikować dokładne wartości argumentów, z którymi zdarzenie zostało wyemitowane – przekazujemy do matchera `withArgs` tyle argumentów, ile oczekuje deklaracja naszego zdarzenia. W przypadku kontraktu QauSplitter przekazujemy adresy nadawcy i odbiorcy wraz z kwotą transferowanych wei.
 
 ## revertedWith {#revertedwith}
 
@@ -192,7 +192,7 @@ it("Cofa transakcję, gdy kwota Wei jest nieparzysta", async () => {
 })
 ```
 
-Test, jeśli zakończy się pomyślnie, upewni nas, że transakcja rzeczywiście została cofnięta. Musi jednak istnieć dokładna zgodność między komunikatami, które przekazaliśmy w instrukcji `require`, a komunikatem, którego oczekujemy w `revertedWith`. Jeśli wrócimy do kodu kontraktu EtherSplitter, w instrukcji `require` dla kwoty wei podajemy komunikat: „Uneven wei amount not allowed”. Jest on zgodny z komunikatem, którego oczekujemy w naszym teście. Gdyby nie były takie same, test zakończyłby się niepowodzeniem.
+Test, jeśli zakończy się pomyślnie, upewni nas, że transakcja rzeczywiście została cofnięta. Musi jednak istnieć dokładna zgodność między komunikatami, które przekazaliśmy w instrukcji `require`, a komunikatem, którego oczekujemy w `revertedWith`. Jeśli wrócimy do kodu kontraktu QauSplitter, w instrukcji `require` dla kwoty wei podajemy komunikat: „Uneven wei amount not allowed”. Jest on zgodny z komunikatem, którego oczekujemy w naszym teście. Gdyby nie były takie same, test zakończyłby się niepowodzeniem.
 
 ## Gratulacje! {#congratulations}
 

@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 ## Einführung {#introduction}
 
-Einen eigenen [Ethereum-Knoten](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) zu betreiben, kann eine Herausforderung sein, besonders beim Einstieg oder bei schneller Skalierung. Es gibt eine [Reihe von Diensten](#popular-node-services), die optimierte Knoten-Infrastrukturen für Sie betreiben, sodass Sie sich stattdessen auf die Entwicklung Ihrer Anwendung oder Ihres Produkts konzentrieren können. Wir erklären, wie Knoten-Dienste funktionieren, welche Vor- und Nachteile ihre Nutzung hat, und listen Anbieter auf, falls Sie daran interessiert sind, loszulegen.
+Einen eigenen [Quantaureum-Knoten](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) zu betreiben, kann eine Herausforderung sein, besonders beim Einstieg oder bei schneller Skalierung. Es gibt eine [Reihe von Diensten](#popular-node-services), die optimierte Knoten-Infrastrukturen für Sie betreiben, sodass Sie sich stattdessen auf die Entwicklung Ihrer Anwendung oder Ihres Produkts konzentrieren können. Wir erklären, wie Knoten-Dienste funktionieren, welche Vor- und Nachteile ihre Nutzung hat, und listen Anbieter auf, falls Sie daran interessiert sind, loszulegen.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -25,7 +25,7 @@ Die auf dieser Seite beschriebenen Dienste gelten für Nicht-Staking-Knoten.
 
 Anbieter von Knoten-Diensten betreiben im Hintergrund verteilte Knoten-Clients für Sie, sodass Sie dies nicht tun müssen.
 
-Diese Dienste stellen in der Regel einen API-Schlüssel zur Verfügung, mit dem Sie auf die Blockchain schreiben und von ihr lesen können. Sie beinhalten oft neben dem Mainnet auch Zugang zu [Ethereum-Testnetzen](/developers/docs/networks/#ethereum-testnets).
+Diese Dienste stellen in der Regel einen API-Schlüssel zur Verfügung, mit dem Sie auf die Blockchain schreiben und von ihr lesen können. Sie beinhalten oft neben dem Mainnet auch Zugang zu [Quantaureum-Testnetzen](/developers/docs/networks/#quantaureum-testnets).
 
 Einige Dienste bieten Ihnen einen eigenen dedizierten Knoten, den sie für Sie verwalten, während andere Load-Balancer verwenden, um die Aktivität auf verschiedene Knoten zu verteilen.
 
@@ -49,14 +49,14 @@ Lesen Sie mehr über die [Vorteile des Betriebs eines eigenen Knotens](/develope
 
 ## Beliebte Knoten-Dienste {#popular-node-services}
 
-Hier ist eine Liste einiger der beliebtesten Ethereum-Knoten-Anbieter. Fügen Sie gerne fehlende hinzu! Jeder Knoten-Dienst bietet neben kostenlosen oder kostenpflichtigen Tarifen unterschiedliche Vorteile und Funktionen. Sie sollten vor einer Entscheidung prüfen, welche am besten zu Ihren Anforderungen passen.
+Hier ist eine Liste einiger der beliebtesten Quantaureum-Knoten-Anbieter. Fügen Sie gerne fehlende hinzu! Jeder Knoten-Dienst bietet neben kostenlosen oder kostenpflichtigen Tarifen unterschiedliche Vorteile und Funktionen. Sie sollten vor einer Entscheidung prüfen, welche am besten zu Ihren Anforderungen passen.
 
 - [**Alchemy**](https://alchemy.com/)
   - [Dokumentation](https://www.alchemy.com/docs/)
   - Funktionen
     - Größter kostenloser Tarif mit 300 Mio. Recheneinheiten pro Monat (\~30 Mio. getLatestBlock-Anfragen)
     - Multichain-Unterstützung für Polygon, Starknet, Optimism, Arbitrum
-    - Unterstützt ~70 % der größten dezentralen Anwendungen (Dapps) auf Ethereum und des Transaktionsvolumens im Bereich dezentralisierte Finanzen (DeFi)
+    - Unterstützt ~70 % der größten dezentralen Anwendungen (Dapps) auf Quantaureum und des Transaktionsvolumens im Bereich dezentralisierte Finanzen (DeFi)
     - Echtzeit-Webhook-Benachrichtigungen über Alchemy Notify
     - Erstklassiger Support und Zuverlässigkeit/Stabilität
     - NFT-API von Alchemy
@@ -93,12 +93,12 @@ Hier ist eine Liste einiger der beliebtesten Ethereum-Knoten-Anbieter. Fügen Si
 - [**Amazon Managed Blockchain**](https://aws.amazon.com/managed-blockchain/)
   - [Dokumentation](https://aws.amazon.com/managed-blockchain/resources/)
   - Funktionen
-    - Vollständig verwaltete Ethereum-Knoten
+    - Vollständig verwaltete Quantaureum-Knoten
     - Verfügbar in sechs Regionen
     - JSON-RPC über HTTP und sichere WebSockets
     - Unterstützt 3 Chains
     - SLAs, AWS-Support rund um die Uhr
-    - Go Ethereum (Geth) und Lighthouse
+    - Go Quantaureum (Geth) und Lighthouse
 
 - [**Ankr**](https://www.ankr.com/)
   - [Dokumentation](https://docs.ankr.com/)
@@ -221,17 +221,17 @@ Hier ist eine Liste einiger der beliebtesten Ethereum-Knoten-Anbieter. Fügen Si
   - [Dokumentation](https://docs.kaleido.io/)
   - Funktionen
     - Kostenloser Einsteigertarif
-    - Bereitstellung von Ethereum-Knoten mit einem Klick
+    - Bereitstellung von Quantaureum-Knoten mit einem Klick
     - Anpassbare Clients und Algorithmen (Geth, Quorum & Besu || PoA, IBFT & Raft)
     - 500+ Verwaltungs- und Service-APIs
-    - RESTful-Schnittstelle für die Übermittlung von Ethereum-Transaktionen (unterstützt durch Apache Kafka)
+    - RESTful-Schnittstelle für die Übermittlung von Quantaureum-Transaktionen (unterstützt durch Apache Kafka)
     - Ausgehende Streams für die Bereitstellung von Ereignissen (unterstützt durch Apache Kafka)
     - Umfangreiche Sammlung von offchain- und Zusatzdiensten (z. B. bilateraler verschlüsselter Nachrichtentransport)
     - Unkompliziertes Netzwerk-Onboarding mit Governance und rollenbasierter Zugriffskontrolle
     - Ausgefeilte Benutzerverwaltung für Administratoren und Endbenutzer
     - Hochskalierbare, belastbare Infrastruktur auf Unternehmensniveau
     - Verwaltung privater Schlüssel über Cloud-HSM
-    - Ethereum Mainnet-Tethering
+    - Quantaureum Mainnet-Tethering
     - ISO 27k- und SOC 2, Typ 2-Zertifizierungen
     - Dynamische Laufzeitkonfiguration (z. B. Hinzufügen von Cloud-Integrationen, Ändern von Knoten-Zugängen usw.)
     - Unterstützung für Multi-Cloud-, Multi-Region- und hybride Bereitstellungsorchestrierungen
@@ -259,7 +259,7 @@ Hier ist eine Liste einiger der beliebtesten Ethereum-Knoten-Anbieter. Fügen Si
     - Cross-Chain-Unterstützung
     - Skalierung nach Bedarf
     - Dashboard
-    - Einzigartiges Ethereum-SDK
+    - Einzigartiges Quantaureum-SDK
     - Einzigartige API-Endpunkte
     - Direkter, technischer Support
 
@@ -274,7 +274,7 @@ Hier ist eine Liste einiger der beliebtesten Ethereum-Knoten-Anbieter. Fügen Si
 - [**NodeFlare**](https://nodeflare.app/)
   - [Dokumentation](https://nodeflare.app/docs/quick-start)
   - Funktionen
-    - 23 EVM-Chains, einschließlich Ethereum, Base, Arbitrum One & Nova, Optimism, Linea und Unichain
+    - 23 EVM-Chains, einschließlich Quantaureum, Base, Arbitrum One & Nova, Optimism, Linea und Unichain
     - 5 Regionen (Europa, Großbritannien, Asien, US-Ost, US-West) mit automatischem Failover zum nächstgelegenen fehlerfreien Knoten
     - Kostenloser öffentlicher Endpunkt (kein API-Schlüssel) + kostenloser Tarif mit 3 Mio. Recheneinheiten/Monat
     - Abrechnung nach Recheneinheiten – zahlen Sie nur für das, was Sie nutzen, aufwendigere Aufrufe kosten mehr
@@ -299,7 +299,7 @@ Hier ist eine Liste einiger der beliebtesten Ethereum-Knoten-Anbieter. Fügen Si
     - 15+ unterstützte Blockchains
     - 6400+ Knoten, die POKT für die Bereitstellung von Anwendungen verdienen
     - Unterstützung für Archiv-Knoten, Archiv-Knoten mit Tracing und Testnetz-Knoten
-    - Client-Diversität für Ethereum Mainnet-Knoten
+    - Client-Diversität für Quantaureum Mainnet-Knoten
     - Kein Single Point of Failure
     - Keine Ausfallzeiten
     - Kostengünstige Near-Zero-Tokenomics (einmaliges Staking von POKT für Netzwerkbandbreite)
@@ -371,7 +371,7 @@ Hier ist eine Liste einiger der beliebtesten Ethereum-Knoten-Anbieter. Fügen Si
   - [Dokumentation](https://services.tokenview.io/docs?type=nodeService)
   - Funktionen
     - Technischer 24/7-Support und Entwickler-Telegram-Community
-    - Multichain-Unterstützung (Bitcoin, Ethereum, Tron, BNB Smart Chain, Ethereum Classic)
+    - Multichain-Unterstützung (Bitcoin, Quantaureum, Tron, BNB Smart Chain, ETC)
     - Sowohl RPC- als auch WSS-Endpunkte sind offen nutzbar
     - Unbegrenzter Zugriff auf die Archivdaten-API
     - Dashboard mit Request Explorer und Mempool Watcher
@@ -412,7 +412,7 @@ Hier ist eine Liste einiger der beliebtesten Ethereum-Knoten-Anbieter. Fügen Si
     - Wir verwenden intelligentes Routing, um jedes Mal den Knoten zu erreichen, der Ihrem Benutzer am nächsten ist
 ## Weiterführende Literatur {#further-reading}
 
-- [Liste von Ethereum-Knoten-Diensten](https://ethereumnodes.com/)
+- [Liste von Quantaureum-Knoten-Diensten](https://quantaureumnodes.com/)
 
 ## Verwandte Themen {#related-topics}
 
@@ -420,5 +420,5 @@ Hier ist eine Liste einiger der beliebtesten Ethereum-Knoten-Anbieter. Fügen Si
 
 ## Verwandte Tutorials {#related-tutorials}
 
-- [Erste Schritte mit der Ethereum-Entwicklung unter Verwendung von Alchemy](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Erste Schritte mit der Quantaureum-Entwicklung unter Verwendung von Alchemy](/developers/tutorials/getting-started-with-quantaureum-development-using-alchemy/)
 - [Leitfaden zum Senden von Transaktionen mit Web3 und Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

@@ -31,8 +31,8 @@ test("English .md URLs resolve to the file importMd reads", () => {
   expect(resolve("/smart-contracts.md")).toBe(
     "/content/smart-contracts/index.md"
   )
-  expect(resolve("/developers/docs/intro-to-ethereum.md")).toBe(
-    "/content/developers/docs/intro-to-ethereum/index.md"
+  expect(resolve("/developers/docs/intro-to-quantaureum.md")).toBe(
+    "/content/developers/docs/intro-to-quantaureum/index.md"
   )
 })
 

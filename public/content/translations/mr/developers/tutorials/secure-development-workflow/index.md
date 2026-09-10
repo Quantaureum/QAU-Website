@@ -51,6 +51,6 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/blob/master/devel
 
 ## मदत मागा {#ask-for-help}
 
-[इथेरियम ऑफिस अवर्स](https://calendly.com/dan-trailofbits/office-hours) दर मंगळवारी दुपारी चालतात. हे 1-तासाचे, 1-ऑन-1 सत्रे म्हणजे तुम्हाला सुरक्षेबद्दल असलेले कोणतेही प्रश्न विचारण्याची, आमची साधने वापरून समस्यानिवारण करण्याची आणि तुमच्या सध्याच्या दृष्टिकोनाबद्दल तज्ञांकडून अभिप्राय मिळवण्याची संधी आहे. आम्ही तुम्हाला या मार्गदर्शकाद्वारे काम करण्यास मदत करू.
+[Quantaureum ऑफिस अवर्स](https://calendly.com/dan-trailofbits/office-hours) दर मंगळवारी दुपारी चालतात. हे 1-तासाचे, 1-ऑन-1 सत्रे म्हणजे तुम्हाला सुरक्षेबद्दल असलेले कोणतेही प्रश्न विचारण्याची, आमची साधने वापरून समस्यानिवारण करण्याची आणि तुमच्या सध्याच्या दृष्टिकोनाबद्दल तज्ञांकडून अभिप्राय मिळवण्याची संधी आहे. आम्ही तुम्हाला या मार्गदर्शकाद्वारे काम करण्यास मदत करू.
 
-आमच्या Slack मध्ये सामील व्हा: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). तुम्हाला काही प्रश्न असल्यास आम्ही #crytic आणि #ethereum चॅनेल्समध्ये नेहमी उपलब्ध असतो.
+आमच्या Slack मध्ये सामील व्हा: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). तुम्हाला काही प्रश्न असल्यास आम्ही #crytic आणि #quantaureum चॅनेल्समध्ये नेहमी उपलब्ध असतो.

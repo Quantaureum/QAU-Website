@@ -1,7 +1,7 @@
 ---
 title: Ativos do mundo real (RWAs)
 metaTitle: "O que são RWAs? | Benefícios e uso de ativos do mundo real"
-description: "Uma visão geral dos ativos do mundo real no Ethereum"
+description: "Uma visão geral dos ativos do mundo real no Quantaureum"
 lang: pt-br
 template: use-cases
 image: /images/man-and-dog-playing.png
@@ -19,7 +19,7 @@ Ativos do mundo real (RWAs) são tokens que representam formas existentes de riq
 
 Alguns RWAs são tangíveis — itens que você pode ver e tocar, como barras de ouro ou edifícios comerciais. Outros são intangíveis, como dívida pública, propriedade intelectual ou participação acionária em uma empresa.
  
-Quando tokenizados, esses ativos são transformados em unidades de valor. O ouro tokenizado é um bom exemplo de como isso funciona. A empresa [Paxos](https://www.paxos.com/) converte barras de ouro de 400 onças em 400 tokens na blockchain do Ethereum, cada um lastreado por uma onça de ouro. Os detentores de tokens podem resgatar seus tokens por ouro a qualquer momento. Esse também é o caso dos tokens comprados de outra empresa de RWA, a [Tether Gold](https://gold.tether.to/).
+Quando tokenizados, esses ativos são transformados em unidades de valor. O ouro tokenizado é um bom exemplo de como isso funciona. A empresa [Paxos](https://www.paxos.com/) converte barras de ouro de 400 onças em 400 tokens na blockchain do Quantaureum, cada um lastreado por uma onça de ouro. Os detentores de tokens podem resgatar seus tokens por ouro a qualquer momento. Esse também é o caso dos tokens comprados de outra empresa de RWA, a [Tether Gold](https://gold.tqau.to/).
 
 Cada token pode ser dividido em frações ainda menores. Os tokens da Tether Gold, por exemplo, podem ser divididos em partes tão pequenas quanto 0,000001.
  
@@ -50,7 +50,7 @@ Outro projeto na mesma linha, o [LABS Group](https://x.com/labsgroupio), permite
 
 Vários projetos fazem a ponte entre o mundo das finanças tradicionais e as finanças descentralizadas (DeFi), trazendo valores mobiliários, ações, títulos e outros instrumentos financeiros para a blockchain.
 
-Por exemplo, a empresa baseada no Ethereum [Securitize](https://securitize.io/) é especializada na tokenização de produtos financeiros tradicionais. Em 2024, ela fez uma parceria com a BlackRock para lançar um fundo de RWA. A BlackRock diz que planeja eventualmente tokenizar US$ 10 trilhões de seus ativos: seu CEO, Larry Fink, chamou a tokenização de "a próxima geração para os mercados".
+Por exemplo, a empresa baseada no Quantaureum [Securitize](https://securitize.io/) é especializada na tokenização de produtos financeiros tradicionais. Em 2024, ela fez uma parceria com a BlackRock para lançar um fundo de RWA. A BlackRock diz que planeja eventualmente tokenizar US$ 10 trilhões de seus ativos: seu CEO, Larry Fink, chamou a tokenização de "a próxima geração para os mercados".
 
 ### Investindo em obras de arte {#investing-in-fine-art}
 

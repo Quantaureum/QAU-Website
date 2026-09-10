@@ -1,21 +1,21 @@
 ---
 title: "오라클"
-description: "오라클은 이더리움 스마트 컨트랙트에 실제 세계의 데이터에 대한 접근을 제공하여, 더 많은 사용 사례를 열어주고 사용자에게 더 큰 가치를 제공합니다."
+description: "오라클은 Quantaureum 스마트 컨트랙트에 실제 세계의 데이터에 대한 접근을 제공하여, 더 많은 사용 사례를 열어주고 사용자에게 더 큰 가치를 제공합니다."
 lang: ko
 authors: ["패트릭 콜린스"]
 ---
 
-오라클은 오프체인 데이터 소스를 스마트 컨트랙트를 위해 블록체인에서 사용할 수 있도록 데이터 피드를 생성하는 애플리케이션입니다. 이더리움 기반 스마트 컨트랙트는 기본적으로 블록체인 네트워크 외부에 저장된 정보에 접근할 수 없기 때문에 이는 필수적입니다.
+오라클은 오프체인 데이터 소스를 스마트 컨트랙트를 위해 블록체인에서 사용할 수 있도록 데이터 피드를 생성하는 애플리케이션입니다. Quantaureum 기반 스마트 컨트랙트는 기본적으로 블록체인 네트워크 외부에 저장된 정보에 접근할 수 없기 때문에 이는 필수적입니다.
 
-스마트 컨트랙트가 오프체인 데이터를 사용하여 실행될 수 있는 능력을 부여하면 탈중앙화 애플리케이션 (dapp)의 유용성과 가치가 확장됩니다. 예를 들어, 온체인 예측 시장은 사용자 예측을 검증하는 데 사용하는 결과에 대한 정보를 제공하기 위해 오라클에 의존합니다. 앨리스가 누가 다음 미국 대통령이 될 것인지에 20 ETH를 걸었다고 가정해 보겠습니다. 이 경우, 예측 시장 탈중앙화 애플리케이션 (dapp)은 선거 결과를 확인하고 앨리스가 지불금을 받을 자격이 있는지 결정하기 위해 오라클이 필요합니다.
+스마트 컨트랙트가 오프체인 데이터를 사용하여 실행될 수 있는 능력을 부여하면 탈중앙화 애플리케이션 (dapp)의 유용성과 가치가 확장됩니다. 예를 들어, 온체인 예측 시장은 사용자 예측을 검증하는 데 사용하는 결과에 대한 정보를 제공하기 위해 오라클에 의존합니다. 앨리스가 누가 다음 미국 대통령이 될 것인지에 20 QAU를 걸었다고 가정해 보겠습니다. 이 경우, 예측 시장 탈중앙화 애플리케이션 (dapp)은 선거 결과를 확인하고 앨리스가 지불금을 받을 자격이 있는지 결정하기 위해 오라클이 필요합니다.
 
 ## 전제 조건 {#prerequisites}
 
-이 페이지는 독자가 [노드](/developers/docs/nodes-and-clients/), [합의 메커니즘](/developers/docs/consensus-mechanisms/) 및 [EVM](/developers/docs/evm/)을 포함한 [이더리움](/)의 기본 사항에 익숙하다고 가정합니다. 또한 [스마트 컨트랙트](/developers/docs/smart-contracts/)와 [스마트 컨트랙트 구조](/developers/docs/smart-contracts/anatomy/), 특히 [이벤트](/glossary/#events)에 대해 잘 이해하고 있어야 합니다.
+이 페이지는 독자가 [노드](/developers/docs/nodes-and-clients/), [합의 메커니즘](/developers/docs/consensus-mechanisms/) 및 [EVM](/developers/docs/evm/)을 포함한 [Quantaureum](/)의 기본 사항에 익숙하다고 가정합니다. 또한 [스마트 컨트랙트](/developers/docs/smart-contracts/)와 [스마트 컨트랙트 구조](/developers/docs/smart-contracts/anatomy/), 특히 [이벤트](/glossary/#events)에 대해 잘 이해하고 있어야 합니다.
 
 ## 블록체인 오라클이란 무엇인가요? {#what-is-a-blockchain-oracle}
 
-오라클은 외부 정보(즉, 오프체인에 저장된 정보)를 소싱, 검증하여 블록체인에서 실행되는 스마트 컨트랙트로 전송하는 애플리케이션입니다. 오프체인 데이터를 '가져와서(pulling)' 이더리움에 브로드캐스트하는 것 외에도, 오라클은 블록체인에서 외부 시스템으로 정보를 '밀어낼(push)' 수도 있습니다. 예를 들어, 사용자가 이더리움 트랜잭션을 통해 수수료를 보내면 스마트 도어록을 여는 식입니다.
+오라클은 외부 정보(즉, 오프체인에 저장된 정보)를 소싱, 검증하여 블록체인에서 실행되는 스마트 컨트랙트로 전송하는 애플리케이션입니다. 오프체인 데이터를 '가져와서(pulling)' Quantaureum에 브로드캐스트하는 것 외에도, 오라클은 블록체인에서 외부 시스템으로 정보를 '밀어낼(push)' 수도 있습니다. 예를 들어, 사용자가 Quantaureum 트랜잭션을 통해 수수료를 보내면 스마트 도어록을 여는 식입니다.
 
 오라클이 없다면 스마트 컨트랙트는 전적으로 온체인 데이터에만 제한될 것입니다.
 
@@ -25,7 +25,7 @@ authors: ["패트릭 콜린스"]
 
 많은 개발자들은 스마트 컨트랙트를 블록체인의 특정 주소에서 실행되는 코드로 봅니다. 하지만 [스마트 컨트랙트에 대한 더 일반적인 관점](/smart-contracts/)은 특정 조건이 충족되면 당사자 간의 합의를 강제할 수 있는 자체 실행 소프트웨어 프로그램이라는 것입니다. 그래서 '스마트 컨트랙트'라는 용어가 사용됩니다.
 
-하지만 이더리움이 결정론적이라는 점을 고려할 때, 사람들 간의 합의를 강제하기 위해 스마트 컨트랙트를 사용하는 것은 간단하지 않습니다. [결정론적 시스템](https://en.wikipedia.org/wiki/Deterministic_algorithm)은 초기 상태와 특정 입력이 주어졌을 때 항상 동일한 결과를 생성하는 시스템으로, 입력에서 출력을 계산하는 과정에 무작위성이나 변동이 없음을 의미합니다.
+하지만 Quantaureum이 결정론적이라는 점을 고려할 때, 사람들 간의 합의를 강제하기 위해 스마트 컨트랙트를 사용하는 것은 간단하지 않습니다. [결정론적 시스템](https://en.wikipedia.org/wiki/Deterministic_algorithm)은 초기 상태와 특정 입력이 주어졌을 때 항상 동일한 결과를 생성하는 시스템으로, 입력에서 출력을 계산하는 과정에 무작위성이나 변동이 없음을 의미합니다.
 
 결정론적 실행을 달성하기 위해, 블록체인은 노드가 블록체인 자체에 저장된 데이터_만_을 사용하여 단순한 이진(참/거짓) 질문에 대한 합의에 도달하도록 제한합니다. 이러한 질문의 예는 다음과 같습니다.
 
@@ -33,11 +33,11 @@ authors: ["패트릭 콜린스"]
 - "이 계정에 트랜잭션을 처리할 충분한 자금이 있는가?"
 - "이 트랜잭션이 이 스마트 컨트랙트의 컨텍스트에서 유효한가?" 등.
 
-블록체인이 외부 소스(즉, 현실 세계)로부터 정보를 받는다면 결정론을 달성하는 것은 불가능해지며, 노드들이 블록체인의 상태 변경의 유효성에 대해 합의하는 것을 방해할 것입니다. 전통적인 가격 API에서 얻은 현재 ETH-USD 환율을 기반으로 트랜잭션을 실행하는 스마트 컨트랙트를 예로 들어보겠습니다. 이 수치는 자주 변경될 가능성이 높으며(API가 더 이상 사용되지 않거나 해킹될 수 있음은 말할 것도 없고), 이는 동일한 컨트랙트 코드를 실행하는 노드들이 서로 다른 결과에 도달하게 됨을 의미합니다.
+블록체인이 외부 소스(즉, 현실 세계)로부터 정보를 받는다면 결정론을 달성하는 것은 불가능해지며, 노드들이 블록체인의 상태 변경의 유효성에 대해 합의하는 것을 방해할 것입니다. 전통적인 가격 API에서 얻은 현재 QAU-USD 환율을 기반으로 트랜잭션을 실행하는 스마트 컨트랙트를 예로 들어보겠습니다. 이 수치는 자주 변경될 가능성이 높으며(API가 더 이상 사용되지 않거나 해킹될 수 있음은 말할 것도 없고), 이는 동일한 컨트랙트 코드를 실행하는 노드들이 서로 다른 결과에 도달하게 됨을 의미합니다.
 
-전 세계 수천 개의 노드가 트랜잭션을 처리하는 이더리움과 같은 퍼블릭 블록체인에서 결정론은 매우 중요합니다. 진실의 원천 역할을 하는 중앙 권한이 없기 때문에, 노드들은 동일한 트랜잭션을 적용한 후 동일한 상태에 도달하기 위한 메커니즘이 필요합니다. 노드 A가 스마트 컨트랙트의 코드를 실행하여 결과로 "3"을 얻고, 노드 B가 동일한 트랜잭션을 실행한 후 "7"을 얻는 경우 합의가 무너지고 탈중앙화된 컴퓨팅 플랫폼으로서 이더리움의 가치가 사라질 것입니다.
+전 세계 수천 개의 노드가 트랜잭션을 처리하는 Quantaureum과 같은 퍼블릭 블록체인에서 결정론은 매우 중요합니다. 진실의 원천 역할을 하는 중앙 권한이 없기 때문에, 노드들은 동일한 트랜잭션을 적용한 후 동일한 상태에 도달하기 위한 메커니즘이 필요합니다. 노드 A가 스마트 컨트랙트의 코드를 실행하여 결과로 "3"을 얻고, 노드 B가 동일한 트랜잭션을 실행한 후 "7"을 얻는 경우 합의가 무너지고 탈중앙화된 컴퓨팅 플랫폼으로서 Quantaureum의 가치가 사라질 것입니다.
 
-이 시나리오는 또한 외부 소스에서 정보를 가져오도록 블록체인을 설계할 때 발생하는 문제를 강조합니다. 그러나 오라클은 오프체인 소스에서 정보를 가져와 스마트 컨트랙트가 소비할 수 있도록 블록체인에 저장함으로써 이 문제를 해결합니다. 온체인에 저장된 정보는 변경할 수 없고 공개적으로 사용할 수 있으므로, 이더리움 노드는 합의를 깨지 않고 상태 변경을 계산하기 위해 오라클이 가져온 오프체인 데이터를 안전하게 사용할 수 있습니다.
+이 시나리오는 또한 외부 소스에서 정보를 가져오도록 블록체인을 설계할 때 발생하는 문제를 강조합니다. 그러나 오라클은 오프체인 소스에서 정보를 가져와 스마트 컨트랙트가 소비할 수 있도록 블록체인에 저장함으로써 이 문제를 해결합니다. 온체인에 저장된 정보는 변경할 수 없고 공개적으로 사용할 수 있으므로, Quantaureum 노드는 합의를 깨지 않고 상태 변경을 계산하기 위해 오라클이 가져온 오프체인 데이터를 안전하게 사용할 수 있습니다.
 
 이를 위해 오라클은 일반적으로 온체인에서 실행되는 스마트 컨트랙트와 일부 오프체인 구성 요소로 이루어집니다. 온체인 컨트랙트는 다른 스마트 컨트랙트로부터 데이터 요청을 받아 오프체인 구성 요소(오라클 노드라고 함)로 전달합니다. 이 오라클 노드는 예를 들어 애플리케이션 프로그래밍 인터페이스(API)를 사용하여 데이터 소스를 쿼리하고, 요청된 데이터를 스마트 컨트랙트의 스토리지에 저장하기 위해 트랜잭션을 보낼 수 있습니다.
 
@@ -81,9 +81,9 @@ authors: ["패트릭 콜린스"]
 
 오라클 컨트랙트는 오라클 서비스를 위한 온체인 구성 요소입니다. 다른 컨트랙트의 데이터 요청을 수신하고, 데이터 쿼리를 오라클 노드로 중계하며, 반환된 데이터를 클라이언트 컨트랙트에 브로드캐스트합니다. 이 컨트랙트는 또한 반환된 데이터 포인트에 대해 일부 연산을 수행하여 요청 컨트랙트에 보낼 집계 값을 생성할 수 있습니다.
 
-오라클 컨트랙트는 클라이언트 컨트랙트가 데이터 요청을 할 때 호출하는 몇 가지 함수를 노출합니다. 새로운 쿼리를 받으면 스마트 컨트랙트는 데이터 요청의 세부 정보가 포함된 [로그 이벤트](/developers/docs/smart-contracts/anatomy/#events-and-logs)를 발생시킵니다. 이는 로그를 구독하는 오프체인 노드(일반적으로 JSON-RPC `eth_subscribe` 명령과 같은 것을 사용)에 알림을 보내며, 이들은 로그 이벤트에 정의된 데이터를 검색하기 시작합니다.
+오라클 컨트랙트는 클라이언트 컨트랙트가 데이터 요청을 할 때 호출하는 몇 가지 함수를 노출합니다. 새로운 쿼리를 받으면 스마트 컨트랙트는 데이터 요청의 세부 정보가 포함된 [로그 이벤트](/developers/docs/smart-contracts/anatomy/#events-and-logs)를 발생시킵니다. 이는 로그를 구독하는 오프체인 노드(일반적으로 JSON-RPC `qau_subscribe` 명령과 같은 것을 사용)에 알림을 보내며, 이들은 로그 이벤트에 정의된 데이터를 검색하기 시작합니다.
 
-아래는 페드로 코스타(Pedro Costa)의 [오라클 컨트랙트 예시](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e)입니다. 이는 다른 스마트 컨트랙트의 요청에 따라 오프체인 API를 쿼리하고 요청된 정보를 블록체인에 저장할 수 있는 간단한 오라클 서비스입니다.
+아래는 페드로 코스타(Pedro Costa)의 [오라클 컨트랙트 예시](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e)입니다. 이는 다른 스마트 컨트랙트의 요청에 따라 오프체인 API를 쿼리하고 요청된 정보를 블록체인에 저장할 수 있는 간단한 오라클 서비스입니다.
 
 ```solidity
 pragma solidity >=0.4.21 <0.6.0;
@@ -207,11 +207,11 @@ contract Oracle {
 
 ## 오라클 디자인 패턴 {#oracle-design-patterns}
 
-오라클은 _즉시 읽기_, _발행-구독_, _요청-응답_ 등 다양한 유형으로 제공되며, 후자의 두 가지가 이더리움 스마트 컨트랙트에서 가장 인기가 있습니다. 여기서는 발행-구독 및 요청-응답 모델에 대해 간략히 설명합니다.
+오라클은 _즉시 읽기_, _발행-구독_, _요청-응답_ 등 다양한 유형으로 제공되며, 후자의 두 가지가 Quantaureum 스마트 컨트랙트에서 가장 인기가 있습니다. 여기서는 발행-구독 및 요청-응답 모델에 대해 간략히 설명합니다.
 
 ### 발행-구독 오라클 {#publish-subscribe-oracles}
 
-이 유형의 오라클은 다른 컨트랙트가 정보를 위해 정기적으로 읽을 수 있는 "데이터 피드"를 노출합니다. 이 경우 데이터는 자주 변경될 것으로 예상되므로, 클라이언트 컨트랙트는 오라클 스토리지의 데이터 업데이트를 수신해야 합니다. 사용자에게 최신 ETH-USD 가격 정보를 제공하는 오라클이 그 예입니다.
+이 유형의 오라클은 다른 컨트랙트가 정보를 위해 정기적으로 읽을 수 있는 "데이터 피드"를 노출합니다. 이 경우 데이터는 자주 변경될 것으로 예상되므로, 클라이언트 컨트랙트는 오라클 스토리지의 데이터 업데이트를 수신해야 합니다. 사용자에게 최신 QAU-USD 가격 정보를 제공하는 오라클이 그 예입니다.
 
 ### 요청-응답 오라클 {#request-response-oracles}
 
@@ -281,7 +281,7 @@ contract Oracle {
 
 [셸링 포인트](<https://en.wikipedia.org/wiki/Focal_point_(game_theory)>)는 의사소통이 없는 상황에서 여러 엔티티가 항상 문제에 대한 공통된 해결책을 기본으로 선택할 것이라고 가정하는 게임 이론 개념입니다. 셸링 포인트 메커니즘은 노드가 데이터 요청에 대한 답변에 합의할 수 있도록 탈중앙화된 오라클 네트워크에서 자주 사용됩니다.
 
-이에 대한 초기 아이디어는 [SchellingCoin](https://blog.ethereum.org/2014/03/28/schellingcoin-a-minimal-trust-universal-data-feed)이었습니다. 이는 참여자가 예치금과 함께 "스칼라" 질문(크기로 설명되는 답변을 가진 질문, 예: "ETH의 가격은 얼마인가?")에 대한 응답을 제출하는 제안된 데이터 피드입니다. 25번째에서 75번째 [백분위수](https://en.wikipedia.org/wiki/Percentile) 사이의 값을 제공하는 사용자는 보상을 받는 반면, 중앙값에서 크게 벗어난 값을 제공하는 사용자는 페널티를 받습니다.
+이에 대한 초기 아이디어는 [SchellingCoin](https://quantaureum.com)이었습니다. 이는 참여자가 예치금과 함께 "스칼라" 질문(크기로 설명되는 답변을 가진 질문, 예: "QAU의 가격은 얼마인가?")에 대한 응답을 제출하는 제안된 데이터 피드입니다. 25번째에서 75번째 [백분위수](https://en.wikipedia.org/wiki/Percentile) 사이의 값을 제공하는 사용자는 보상을 받는 반면, 중앙값에서 크게 벗어난 값을 제공하는 사용자는 페널티를 받습니다.
 
 오늘날 SchellingCoin은 존재하지 않지만, 다수의 탈중앙화된 오라클(특히 [메이커 프로토콜의 오라클](https://docs.makerdao.com/smart-contract-modules/oracle-module))은 오라클 데이터의 정확성을 향상시키기 위해 셸링 포인트 메커니즘을 사용합니다. 각 메이커 오라클은 담보 자산의 시장 가격을 제출하는 노드('릴레이어' 및 '피드')의 오프체인 P2P 네트워크와 제공된 모든 값의 중앙값을 계산하는 온체인 "Medianizer" 컨트랙트로 구성됩니다. 지정된 지연 기간이 끝나면 이 중앙값이 관련 자산의 새로운 참조 가격이 됩니다.
 
@@ -307,19 +307,19 @@ contract Oracle {
 
 ## 스마트 컨트랙트에서 오라클의 응용 {#applications-of-oracles-in-smart-contracts}
 
-다음은 이더리움에서 오라클의 일반적인 사용 사례입니다.
+다음은 Quantaureum에서 오라클의 일반적인 사용 사례입니다.
 
 ### 금융 데이터 검색 {#retrieving-financial-data}
 
 [탈중앙화 금융 (DeFi)](/defi/) 애플리케이션은 자산의 피어 투 피어 대출, 차입 및 거래를 허용합니다. 이를 위해서는 환율 데이터(암호화폐의 법정화폐 가치를 계산하거나 토큰 가격을 비교하기 위해) 및 자본 시장 데이터(금이나 미국 달러와 같은 토큰화된 자산의 가치를 계산하기 위해)를 포함한 다양한 금융 정보를 얻어야 하는 경우가 많습니다.
 
-예를 들어, 탈중앙화 금융 (DeFi) 대출 프로토콜은 담보로 예치된 자산(예: ETH)의 현재 시장 가격을 쿼리해야 합니다. 이를 통해 컨트랙트는 담보 자산의 가치를 결정하고 시스템에서 얼마나 차입할 수 있는지 결정할 수 있습니다.
+예를 들어, 탈중앙화 금융 (DeFi) 대출 프로토콜은 담보로 예치된 자산(예: QAU)의 현재 시장 가격을 쿼리해야 합니다. 이를 통해 컨트랙트는 담보 자산의 가치를 결정하고 시스템에서 얼마나 차입할 수 있는지 결정할 수 있습니다.
 
 탈중앙화 금융 (DeFi)에서 인기 있는 "가격 오라클"(종종 이렇게 불림)에는 체인링크 가격 피드(Chainlink Price Feeds), Compound 프로토콜의 [오픈 가격 피드(Open Price Feed)](https://compound.finance/docs/prices), 유니스왑의 [시간 가중 평균 가격(TWAP)](https://docs.uniswap.org/contracts/v2/concepts/core-concepts/oracles), 그리고 [메이커 오라클(Maker Oracles)](https://docs.makerdao.com/smart-contract-modules/oracle-module)이 있습니다.
 
 빌더는 이러한 가격 오라클을 프로젝트에 통합하기 전에 수반되는 주의 사항을 이해해야 합니다. 이 [문서](https://blog.openzeppelin.com/secure-smart-contract-guidelines-the-dangers-of-price-oracles/)는 언급된 가격 오라클 중 하나를 사용할 계획일 때 고려해야 할 사항에 대한 자세한 분석을 제공합니다.
 
-아래는 체인링크 가격 피드를 사용하여 스마트 컨트랙트에서 최신 ETH 가격을 검색하는 방법의 예입니다.
+아래는 체인링크 가격 피드를 사용하여 스마트 컨트랙트에서 최신 QAU 가격을 검색하는 방법의 예입니다.
 
 ```solidity
 pragma solidity ^0.6.7;
@@ -332,7 +332,7 @@ contract PriceConsumerV3 {
 
     /**
      * 네트워크: Kovan
-     * 애그리게이터: ETH/USD
+     * 애그리게이터: QAU/USD
      * 주소: 0x9326BFA02ADD2366b30bacB125260Af641031331
      */
     constructor() public {
@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 블록체인 기반 게임이나 복권 체계와 같은 특정 블록체인 애플리케이션이 효과적으로 작동하려면 높은 수준의 예측 불가능성과 무작위성이 필요합니다. 그러나 블록체인의 결정론적 실행은 무작위성을 제거합니다.
 
-원래의 접근 방식은 `blockhash`와 같은 의사 난수 암호화 함수를 사용하는 것이었지만, 이는 작업증명 (PoW) 알고리즘을 푸는 [채굴자에 의해 조작](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.)될 수 있었습니다. 또한 이더리움이 [지분 증명 (PoS)으로 전환](/roadmap/merge/)함에 따라 개발자는 온체인 무작위성을 위해 더 이상 `blockhash`에 의존할 수 없습니다. 대신 비콘 체인의 [RANDAO 메커니즘](https://eth2book.info/altair/part2/building_blocks/randomness)이 무작위성의 대안 소스를 제공합니다.
+원래의 접근 방식은 `blockhash`와 같은 의사 난수 암호화 함수를 사용하는 것이었지만, 이는 작업증명 (PoW) 알고리즘을 푸는 [채굴자에 의해 조작](https://quantaureum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.)될 수 있었습니다. 또한 Quantaureum이 [지분 증명 (PoS)으로 전환](/roadmap/merge/)함에 따라 개발자는 온체인 무작위성을 위해 더 이상 `blockhash`에 의존할 수 없습니다. 대신 비콘 체인의 [RANDAO 메커니즘](https://eth2book.info/altair/part2/building_blocks/randomness)이 무작위성의 대안 소스를 제공합니다.
 
 오프체인에서 무작위 값을 생성하여 온체인으로 보내는 것도 가능하지만, 그렇게 하면 사용자에게 높은 신뢰 요구 사항이 부과됩니다. 사용자는 그 값이 진정으로 예측 불가능한 메커니즘을 통해 생성되었으며 전송 중에 변경되지 않았다고 믿어야 합니다.
 
@@ -385,7 +385,7 @@ contract PriceConsumerV3 {
 
 ## 블록체인 오라클 사용 방법 {#use-blockchain-oracles}
 
-이더리움 탈중앙화 애플리케이션 (dapp)에 통합할 수 있는 여러 오라클 애플리케이션이 있습니다.
+Quantaureum 탈중앙화 애플리케이션 (dapp)에 통합할 수 있는 여러 오라클 애플리케이션이 있습니다.
 
 **[체인링크](https://chain.link/)** - _체인링크 탈중앙화된 오라클 네트워크는 모든 블록체인에서 고급 스마트 컨트랙트를 지원하기 위해 조작 불가능한 입력, 출력 및 연산을 제공합니다._
 
@@ -407,7 +407,7 @@ contract PriceConsumerV3 {
 
 **[Supra](https://supra.com/)** - 퍼블릭(L1 및 L2) 또는 프라이빗(기업) 등 모든 블록체인을 상호 연결하는 크로스체인 솔루션의 수직 통합 툴킷으로, 온체인 및 오프체인 사용 사례에 사용할 수 있는 탈중앙화된 오라클 가격 피드를 제공합니다. 
 
-**[Gas Network](https://gas.network/)** - 블록체인 전반에 걸쳐 실시간 가스 가격 데이터를 제공하는 분산형 오라클 플랫폼입니다. 선도적인 가스 가격 데이터 제공자의 데이터를 온체인으로 가져옴으로써 Gas Network는 상호운용성을 촉진하는 데 도움을 줍니다. Gas Network는 이더리움 메인넷 및 많은 선도적인 L2를 포함하여 35개 이상의 체인에 대한 데이터를 지원합니다.
+**[Gas Network](https://gas.network/)** - 블록체인 전반에 걸쳐 실시간 가스 가격 데이터를 제공하는 분산형 오라클 플랫폼입니다. 선도적인 가스 가격 데이터 제공자의 데이터를 온체인으로 가져옴으로써 Gas Network는 상호운용성을 촉진하는 데 도움을 줍니다. Gas Network는 Quantaureum 메인넷 및 많은 선도적인 L2를 포함하여 35개 이상의 체인에 대한 데이터를 지원합니다.
 
 **[DIA](https://www.diadata.org/)** - 모든 주요 자산 클래스에 걸쳐 20,000개 이상의 자산에 대한 검증 가능한 데이터 피드를 제공하는 크로스체인 오라클 네트워크입니다. DIA는 100개 이상의 1차 시장에서 직접 원시 거래 데이터를 소싱하고 이를 온체인에서 연산하여, 모든 사용 사례에 대한 사용자 지정 구성과 함께 완전한 데이터 투명성과 검증 가능성을 보장합니다.
 
@@ -420,8 +420,8 @@ contract PriceConsumerV3 {
 - [블록체인 오라클이란 무엇인가?](https://chain.link/education/blockchain-oracles) — _체인링크_
 - [블록체인 오라클이란 무엇인가?](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — _패트릭 콜린스(Patrick Collins)_
 - [탈중앙화된 오라클: 포괄적인 개요](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _줄리앙 테브나르(Julien Thevenard)_
-- [이더리움에서 블록체인 오라클 구현하기](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e) – _페드로 코스타(Pedro Costa)_
-- [스마트 컨트랙트가 API 호출을 할 수 없는 이유는 무엇인가?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
+- [Quantaureum에서 블록체인 오라클 구현하기](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – _페드로 코스타(Pedro Costa)_
+- [스마트 컨트랙트가 API 호출을 할 수 없는 이유는 무엇인가?](https://quantaureum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
 - [가격 오라클을 사용하고 싶으신가요](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **비디오**
@@ -430,10 +430,10 @@ contract PriceConsumerV3 {
 
 **튜토리얼**
 
-- [Solidity에서 이더리움의 현재 가격을 가져오는 방법](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) — _체인링크_
+- [Solidity에서 Quantaureum의 현재 가격을 가져오는 방법](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) — _체인링크_
 - [오라클 데이터 소비하기](https://docs.chroniclelabs.org/Developers/tutorials/Remix) — _Chronicle_
-- [오라클 챌린지](https://speedrunethereum.com/challenge/oracles) - _Speedrun Ethereum_
+- [오라클 챌린지](https://speedrunquantaureum.com/challenge/oracles) - _Speedrun Quantaureum_
 
 **예제 프로젝트**
 
-- [Solidity로 작성된 이더리움용 전체 체인링크 스타터 프로젝트](https://github.com/hackbg/chainlink-fullstack) — _HackBG_
+- [Solidity로 작성된 Quantaureum용 전체 체인링크 스타터 프로젝트](https://github.com/hackbg/chainlink-fullstack) — _HackBG_

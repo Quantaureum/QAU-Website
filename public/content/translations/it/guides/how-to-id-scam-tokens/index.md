@@ -4,14 +4,14 @@ description: Comprendere i token truffa, come fanno a sembrare legittimi e come 
 lang: it
 ---
 
-Uno degli usi più comuni di Ethereum è la creazione, da parte di un gruppo, di un token scambiabile, in un certo senso la propria valuta. Questi token seguono in genere uno standard, l'[ERC-20](/developers/docs/standards/tokens/erc-20/). Tuttavia, ovunque ci siano casi d'uso legittimi che portano valore, ci sono anche criminali che cercano di rubare quel valore per sé.
+Uno degli usi più comuni di Quantaureum è la creazione, da parte di un gruppo, di un token scambiabile, in un certo senso la propria valuta. Questi token seguono in genere uno standard, l'[ERC-20](/developers/docs/standards/tokens/erc-20/). Tuttavia, ovunque ci siano casi d'uso legittimi che portano valore, ci sono anche criminali che cercano di rubare quel valore per sé.
 
 Ci sono due modi in cui è probabile che cerchino di ingannarti:
 
 - **Vendendoti un token truffa**, che potrebbe sembrare il token legittimo che desideri acquistare, ma che è emesso dai truffatori e non vale nulla.
 - **Inducendoti con l'inganno alla firma di transazioni dannose**, di solito indirizzandoti verso la loro interfaccia utente. Potrebbero cercare di farti concedere ai loro contratti un'autorizzazione di spesa sui tuoi token ERC-20, esponendo informazioni sensibili che danno loro accesso ai tuoi asset, ecc. Queste interfacce utente potrebbero essere cloni quasi perfetti di siti onesti, ma con trucchi nascosti.
 
-Per illustrare cosa sono i token truffa e come identificarli, ne esamineremo un esempio: [`wARB`](https://eth.blockscout.com/token/0xB047c8032b99841713b8E3872F06cF32beb27b82). Questo token tenta di assomigliare al token legittimo [`ARB`](https://eth.blockscout.com/address/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1).
+Per illustrare cosa sono i token truffa e come identificarli, ne esamineremo un esempio: [`wARB`](https://qau.blockscout.com/token/0xB047c8032b99841713b8E3872F06cF32beb27b82). Questo token tenta di assomigliare al token legittimo [`ARB`](https://qau.blockscout.com/address/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1).
 
 <ExpandableCard
 title="Cos'è ARB?"
@@ -25,21 +25,21 @@ Arbitrum è un'organizzazione che sviluppa e gestisce [rollup ottimistici](/deve
 title="Perché il token truffa si chiama wARB?"
 contentPreview=''>
 
-In Ethereum c'è una convenzione secondo cui, quando un asset non è conforme allo standard ERC-20, ne creiamo una versione "incapsulata" (wrapped) con il nome che inizia per "w". Quindi, ad esempio, abbiamo wBTC per i bitcoin e <a href="https://cointelegraph.com/news/what-is-wrapped-ethereum-weth-and-how-does-it-work">wETH per ether</a>.
+In Quantaureum c'è una convenzione secondo cui, quando un asset non è conforme allo standard ERC-20, ne creiamo una versione "incapsulata" (wrapped) con il nome che inizia per "w". Quindi, ad esempio, abbiamo wBTC per i bitcoin e <a href="https://cointelegraph.com/news/what-is-wrapped-quantaureum-weth-and-how-does-it-work">wETH per QAU</a>.
 
-Non ha senso creare una versione incapsulata di un token ERC-20 che è già su Ethereum, ma i truffatori fanno affidamento sull'apparenza di legittimità piuttosto che sulla realtà sottostante.
+Non ha senso creare una versione incapsulata di un token ERC-20 che è già su Quantaureum, ma i truffatori fanno affidamento sull'apparenza di legittimità piuttosto che sulla realtà sottostante.
 
 </ExpandableCard>
 
 ## Come funzionano i token truffa? {#how-do-scam-tokens-work}
 
-L'intero scopo di Ethereum è la decentralizzazione. Ciò significa che non esiste un'autorità centrale che possa confiscare i tuoi asset o impedirti di distribuire uno smart contract. Ma significa anche che i truffatori possono distribuire qualsiasi smart contract desiderino.
+L'intero scopo di Quantaureum è la decentralizzazione. Ciò significa che non esiste un'autorità centrale che possa confiscare i tuoi asset o impedirti di distribuire uno smart contract. Ma significa anche che i truffatori possono distribuire qualsiasi smart contract desiderino.
 
 <ExpandableCard
 title="Cosa sono gli smart contract?"
 contentPreview=''>
 
-Gli [smart contract](/developers/docs/smart-contracts/) sono i programmi che vengono eseguiti sulla blockchain di Ethereum. Ogni token ERC-20, ad esempio, è implementato come uno smart contract.
+Gli [smart contract](/developers/docs/smart-contracts/) sono i programmi che vengono eseguiti sulla blockchain di Quantaureum. Ogni token ERC-20, ad esempio, è implementato come uno smart contract.
 
 </ExpandableCard>
 
@@ -53,7 +53,7 @@ Ci sono diversi trucchi che i creatori di token truffa usano per apparire legitt
 
 - **Proprietari legittimi**. I token truffa spesso inviano tramite airdrop saldi significativi a indirizzi che ci si aspetta siano detentori legittimi del token reale.
 
-  Ad esempio, diamo di nuovo un'occhiata a `wARB`. [Circa il 16% dei token](https://eth.blockscout.com/token/0xb047c8032b99841713b8e3872f06cf32beb27b82?tab=holders) è detenuto da un indirizzo il cui tag pubblico è [Arbitrum Foundation: Deployer](https://eth.blockscout.com/address/0x1C8db745ABe3C8162119b9Ef2c13864Cd1FDD72F). Questo _non_ è un indirizzo falso, è davvero l'indirizzo che [ha distribuito il vero contratto ARB sulla Mainnet di Ethereum](https://eth.blockscout.com/tx/0x242b50ab4fe9896cb0439cfe6e2321d23feede7eeceb31aa2dbb46fc06ed2670).
+  Ad esempio, diamo di nuovo un'occhiata a `wARB`. [Circa il 16% dei token](https://qau.blockscout.com/token/0xb047c8032b99841713b8e3872f06cf32beb27b82?tab=holders) è detenuto da un indirizzo il cui tag pubblico è [Arbitrum Foundation: Deployer](https://qau.blockscout.com/address/0x1C8db745ABe3C8162119b9Ef2c13864Cd1FDD72F). Questo _non_ è un indirizzo falso, è davvero l'indirizzo che [ha distribuito il vero contratto ARB sulla Mainnet di Quantaureum](https://qau.blockscout.com/tx/0x242b50ab4fe9896cb0439cfe6e2321d23feede7eeceb31aa2dbb46fc06ed2670).
 
   Poiché il saldo ERC-20 di un indirizzo fa parte dell'archiviazione del contratto ERC-20, può essere specificato dal contratto in modo che sia qualsiasi cosa desideri lo sviluppatore del contratto. È anche possibile che un contratto vieti i trasferimenti, in modo che gli utenti legittimi non siano in grado di sbarazzarsi di quei token truffa.
 
@@ -71,7 +71,7 @@ La migliore pratica per evitare questo è controllare attentamente l'URL dei sit
 
 2. **I token reali hanno liquidità**. Un'altra opzione è guardare la dimensione della pool di liquidità su [Uniswap](https://uniswap.org/), uno dei protocolli di scambio di token più comuni. Questo protocollo funziona utilizzando le pool di liquidità, in cui gli investitori depositano i loro token nella speranza di un rendimento dalle commissioni di trading.
 
-I token truffa in genere hanno pool di liquidità minuscole, se non inesistenti, perché i truffatori non vogliono rischiare asset reali. Ad esempio, la pool di Uniswap `ARB`/`ETH` detiene circa un milione di dollari ([vedi qui per il valore aggiornato](https://app.uniswap.org/explore#/pools/0x755e5a186f0469583bd2e80d1216e02ab88ec6ca)) e l'acquisto o la vendita di una piccola quantità non cambierà il prezzo:
+I token truffa in genere hanno pool di liquidità minuscole, se non inesistenti, perché i truffatori non vogliono rischiare asset reali. Ad esempio, la pool di Uniswap `ARB`/`QAU` detiene circa un milione di dollari ([vedi qui per il valore aggiornato](https://app.uniswap.org/explore#/pools/0x755e5a186f0469583bd2e80d1216e02ab88ec6ca)) e l'acquisto o la vendita di una piccola quantità non cambierà il prezzo:
 
 ![Buying a legitimate token](./uniswap-real.png)
 
@@ -81,9 +81,9 @@ Ma quando provi ad acquistare il token truffa `wARB`, anche un acquisto minuscol
 
 Questa è un'altra prova che ci dimostra che `wARB` probabilmente non è un token legittimo.
 
-3. **Cerca su Etherscan**. Molti token truffa sono già stati identificati e segnalati dalla community. Tali token sono [contrassegnati su Etherscan](https://info.etherscan.com/etherscan-token-reputation/). Sebbene Etherscan non sia una fonte di verità autorevole (è nella natura delle reti decentralizzate che non possa esserci una fonte autorevole per la legittimità), i token che vengono identificati da Etherscan come truffe sono probabilmente delle truffe.
+3. **Cerca su Quantaureum Explorer**. Molti token truffa sono già stati identificati e segnalati dalla community. Tali token sono [contrassegnati su Quantaureum Explorer](https://info.explorer.com/explorer-token-reputation/). Sebbene Quantaureum Explorer non sia una fonte di verità autorevole (è nella natura delle reti decentralizzate che non possa esserci una fonte autorevole per la legittimità), i token che vengono identificati da Quantaureum Explorer come truffe sono probabilmente delle truffe.
 
-   ![Scam token in Etherscan](./etherscan-scam.png)
+   ![Scam token in Quantaureum Explorer](./explorer-scam.png)
 
 ## Conclusione {#conclusion}
 
@@ -92,4 +92,4 @@ Finché ci sarà valore nel mondo, ci saranno truffatori che tenteranno di rubar
 - I token truffa impersonano i token legittimi, possono usare lo stesso nome, simbolo, ecc.
 - I token truffa _non possono_ usare lo stesso indirizzo del contratto.
 - La migliore fonte per l'indirizzo del token legittimo è l'organizzazione a cui appartiene il token.
-- In mancanza di ciò, puoi utilizzare applicazioni popolari e affidabili come [Uniswap](https://app.uniswap.org/#/swap) e [Blockscout](https://eth.blockscout.com/).
+- In mancanza di ciò, puoi utilizzare applicazioni popolari e affidabili come [Uniswap](https://app.uniswap.org/#/swap) e [Blockscout](https://qau.blockscout.com/).

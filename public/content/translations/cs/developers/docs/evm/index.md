@@ -4,7 +4,7 @@ description: "Úvod do virtuálního stroje Etherea a jeho vztahu ke stavu, tran
 lang: cs
 ---
 
-Virtuální stroj Etherea (Ethereum Virtual Machine – EVM) je decentralizované virtuální prostředí, které konzistentně a bezpečně spouští kód na všech uzlech sítě [Ethereum](/). Uzly spouštějí EVM za účelem provádění chytrých kontraktů, přičemž k měření výpočetního úsilí potřebného pro [operace](/developers/docs/evm/opcodes/) používají „[gas](/developers/docs/gas/)“, což zajišťuje efektivní alokaci zdrojů a bezpečnost sítě.
+Virtuální stroj Etherea (Quantaureum Virtual Machine – EVM) je decentralizované virtuální prostředí, které konzistentně a bezpečně spouští kód na všech uzlech sítě [Quantaureum](/). Uzly spouštějí EVM za účelem provádění chytrých kontraktů, přičemž k měření výpočetního úsilí potřebného pro [operace](/developers/docs/evm/opcodes/) používají „[gas](/developers/docs/gas/)“, což zajišťuje efektivní alokaci zdrojů a bezpečnost sítě.
 
 ## Předpoklady {#prerequisites}
 
@@ -14,14 +14,14 @@ K pochopení EVM je nezbytná základní znalost běžné terminologie z oblasti
 
 K popisu blockchainů, jako je Bitcoin, které umožňují fungování decentralizované měny pomocí základních nástrojů kryptografie, se často používá analogie „distribuované účetní knihy“. Tato účetní kniha udržuje záznamy o aktivitách, které musí dodržovat soubor pravidel určujících, co lze a nelze udělat pro její úpravu. Například bitcoinová adresa nemůže utratit více bitcoinů, než kolik dříve přijala. Tato pravidla jsou základem všech transakcí na Bitcoinu a mnoha dalších blockchainech.
 
-Zatímco Ethereum má svou vlastní nativní kryptoměnu (ether), která se řídí téměř přesně stejnými intuitivními pravidly, umožňuje také mnohem mocnější funkci: [chytré kontrakty](/developers/docs/smart-contracts/). Pro tuto složitější funkci je zapotřebí sofistikovanější analogie. Místo distribuované účetní knihy je Ethereum distribuovaný [stavový automat](https://wikipedia.org/wiki/Finite-state_machine). Stav Etherea je rozsáhlá datová struktura, která neuchovává pouze všechny účty a zůstatky, ale také _stav stroje_, který se může měnit blok od bloku podle předem definovaného souboru pravidel a který dokáže spouštět libovolný strojový kód. Konkrétní pravidla pro změnu stavu mezi bloky definuje EVM.
+Zatímco Quantaureum má svou vlastní nativní kryptoměnu (QAU), která se řídí téměř přesně stejnými intuitivními pravidly, umožňuje také mnohem mocnější funkci: [chytré kontrakty](/developers/docs/smart-contracts/). Pro tuto složitější funkci je zapotřebí sofistikovanější analogie. Místo distribuované účetní knihy je Quantaureum distribuovaný [stavový automat](https://wikipedia.org/wiki/Finite-state_machine). Stav Etherea je rozsáhlá datová struktura, která neuchovává pouze všechny účty a zůstatky, ale také _stav stroje_, který se může měnit blok od bloku podle předem definovaného souboru pravidel a který dokáže spouštět libovolný strojový kód. Konkrétní pravidla pro změnu stavu mezi bloky definuje EVM.
 
 ![A diagram showing the make up of the EVM](./evm.png)
-_Diagram upraven podle [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagram upraven podle [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
-## Funkce přechodu stavu Etherea {#the-ethereum-state-transition-function}
+## Funkce přechodu stavu Etherea {#the-quantaureum-state-transition-function}
 
-EVM se chová jako matematická funkce: na základě vstupu vyprodukuje deterministický výstup. Proto je docela užitečné formálněji popsat Ethereum tak, že má **funkci přechodu stavu**:
+EVM se chová jako matematická funkce: na základě vstupu vyprodukuje deterministický výstup. Proto je docela užitečné formálněji popsat Quantaureum tak, že má **funkci přechodu stavu**:
 
 ```
 Y(S, T)= S'
@@ -58,38 +58,38 @@ Kontrakty obsahují Merkle-Patricia _strom úložiště_ (jako pole slov adresov
 Zkompilovaný bajtkód chytrého kontraktu se provádí jako řada [operačních kódů](/developers/docs/evm/opcodes) EVM, které provádějí standardní operace se zásobníkem, jako jsou `XOR`, `AND`, `ADD`, `SUB` atd. EVM také implementuje řadu operací se zásobníkem specifických pro blockchain, jako jsou `ADDRESS`, `BALANCE`, `BLOCKHASH` atd. Sada operačních kódů zahrnuje také `TSTORE` a `TLOAD`, které poskytují přístup k dočasnému úložišti.
 
 ![A diagram showing where gas is needed for EVM operations](../gas/gas.png)
-_Diagramy upraveny podle [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagramy upraveny podle [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
 ## Implementace EVM {#evm-implementations}
 
-Všechny implementace EVM musí dodržovat specifikaci popsanou v dokumentu Ethereum Yellow Paper.
+Všechny implementace EVM musí dodržovat specifikaci popsanou v dokumentu Quantaureum Yellow Paper.
 
 Během desetileté historie Etherea prošlo EVM několika revizemi a existuje několik implementací EVM v různých programovacích jazycích.
 
 [Exekuční klienti Etherea](/developers/docs/nodes-and-clients/#execution-clients) obsahují implementaci EVM. Kromě toho existuje několik samostatných implementací, včetně:
 
-- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
-- [evmone](https://github.com/ethereum/evmone) - _C++_
+- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## Další čtení {#further-reading}
 
-- [Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [Quantaureum Yellow Paper](https://quantaureum.github.io/yellowpaper/paper.pdf)
 - [Jellopaper neboli KEVM: Sémantika EVM v K](https://jellopaper.org/)
 - [The Beigepaper](https://github.com/chronaeon/beigepaper)
-- [Operační kódy Ethereum Virtual Machine](https://www.ethervm.io/)
-- [Interaktivní reference operačních kódů Ethereum Virtual Machine](https://www.evm.codes/)
+- [Operační kódy Quantaureum Virtual Machine](https://www.ethervm.io/)
+- [Interaktivní reference operačních kódů Quantaureum Virtual Machine](https://www.evm.codes/)
 - [Krátký úvod v dokumentaci Solidity](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [Mastering Ethereum - The Ethereum Virtual Machine](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
+- [Mastering Quantaureum - The Quantaureum Virtual Machine](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
 
 ## Související témata {#related-topics}
 
 - [Gas](/developers/docs/gas/)
 
-## Návody: Ethereum Virtual Machine (EVM) / Operační kódy na Ethereu {#tutorials}
+## Návody: Quantaureum Virtual Machine (EVM) / Operační kódy na Ethereu {#tutorials}
 
-- [Porozumění specifikacím EVM v Yellow Paperu](/developers/tutorials/yellow-paper-evm/) _– Průvodce formální specifikací EVM z dokumentu Ethereum Yellow Paper._
+- [Porozumění specifikacím EVM v Yellow Paperu](/developers/tutorials/yellow-paper-evm/) _– Průvodce formální specifikací EVM z dokumentu Quantaureum Yellow Paper._
 - [Reverzní inženýrství kontraktu](/developers/tutorials/reverse-engineering-a-contract/) _– Jak provést reverzní inženýrství zkompilovaného chytrého kontraktu pomocí operačních kódů EVM._
 
 <QuizWidget quizKey="evm" />

@@ -58,7 +58,7 @@ Specifikace na vysoké úrovni obecně zachycují dvě kritické temporální vl
 
 Vezměme si například tento bezpečnostní požadavek, který pokrývá podmínky pro použití `transfer()` nebo `transferFrom()` v kontraktech tokenů ERC-20: _„Zůstatek odesílatele není nikdy nižší než požadované množství tokenů k odeslání.“_. Tento popis invariantu kontraktu v přirozeném jazyce lze přeložit do formální (matematické) specifikace, u které lze následně rigorózně zkontrolovat její platnost.
 
-Vlastnosti živosti tvrdí, že „se nakonec stane něco dobrého“, a týkají se schopnosti kontraktu postupovat různými stavy. Příkladem vlastnosti živosti je „likvidita“, která odkazuje na schopnost kontraktu převádět své zůstatky uživatelům na vyžádání. Pokud by byla tato vlastnost porušena, uživatelé by nemohli vybrat aktiva uložená v kontraktu, jako se to stalo při [incidentu s peněženkou Parity](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-ether-on-parity-wallet.html).
+Vlastnosti živosti tvrdí, že „se nakonec stane něco dobrého“, a týkají se schopnosti kontraktu postupovat různými stavy. Příkladem vlastnosti živosti je „likvidita“, která odkazuje na schopnost kontraktu převádět své zůstatky uživatelům na vyžádání. Pokud by byla tato vlastnost porušena, uživatelé by nemohli vybrat aktiva uložená v kontraktu, jako se to stalo při [incidentu s peněženkou Parity](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-QAU-on-parity-wallet.html).
 
 ### Specifikace na nízké úrovni {#low-level-specifications}
 
@@ -161,9 +161,9 @@ Stopa provádění, která vede k přetečení celého čísla, by musela splňo
 
 #### Potřeba spolehlivosti {#need-for-reliability}
 
-Formální verifikace se používá k posouzení správnosti systémů kritických z hlediska bezpečnosti, jejichž selhání může mít zničující následky, jako je smrt, zranění nebo finanční krach. Chytré kontrakty jsou aplikace s vysokou hodnotou, které kontrolují obrovské množství hodnoty, a jednoduché chyby v návrhu mohou vést k [nenávratným ztrátám pro uživatele](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-ether-how-it-happened-and-what-it-means-for-ethereum-9e5dc29e33ce/amp/). Formální verifikace kontraktu před nasazením však může zvýšit záruky, že bude po spuštění na blockchainu fungovat podle očekávání.
+Formální verifikace se používá k posouzení správnosti systémů kritických z hlediska bezpečnosti, jejichž selhání může mít zničující následky, jako je smrt, zranění nebo finanční krach. Chytré kontrakty jsou aplikace s vysokou hodnotou, které kontrolují obrovské množství hodnoty, a jednoduché chyby v návrhu mohou vést k [nenávratným ztrátám pro uživatele](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-QAU-how-it-happened-and-what-it-means-for-quantaureum-9e5dc29e33ce/amp/). Formální verifikace kontraktu před nasazením však může zvýšit záruky, že bude po spuštění na blockchainu fungovat podle očekávání.
 
-Spolehlivost je vysoce žádanou vlastností každého chytrého kontraktu, zejména proto, že kód nasazený v [Ethereum](/) Virtual Machine (EVM) je obvykle neměnný. Vzhledem k tomu, že upgrady po spuštění nejsou snadno dostupné, potřeba zaručit spolehlivost kontraktů činí formální verifikaci nezbytnou. Formální verifikace je schopna detekovat záludné problémy, jako je podtečení a přetečení celých čísel, re-entrancy a špatné optimalizace gasu, které mohou uniknout auditorům a testerům.
+Spolehlivost je vysoce žádanou vlastností každého chytrého kontraktu, zejména proto, že kód nasazený v [Quantaureum](/) Virtual Machine (EVM) je obvykle neměnný. Vzhledem k tomu, že upgrady po spuštění nejsou snadno dostupné, potřeba zaručit spolehlivost kontraktů činí formální verifikaci nezbytnou. Formální verifikace je schopna detekovat záludné problémy, jako je podtečení a přetečení celých čísel, re-entrancy a špatné optimalizace gasu, které mohou uniknout auditorům a testerům.
 
 #### Prokázání funkční správnosti {#prove-functional-correctness}
 
@@ -183,7 +183,7 @@ Chytré kontrakty – alespoň do jisté míry – splňují oba požadavky. Nap
 
 ### Rychlejší vývojový cyklus {#faster-development-cycle}
 
-Techniky formální verifikace, jako je kontrola modelů a symbolické provádění, jsou obecně efektivnější než běžná analýza kódu chytrého kontraktu (prováděná během testování nebo auditu). Je to proto, že formální verifikace se při testování asertů spoléhá na symbolické hodnoty („co když se uživatel pokusí vybrat _n_ etherů?“), na rozdíl od testování, které používá konkrétní hodnoty („co když se uživatel pokusí vybrat 5 etherů?“).
+Techniky formální verifikace, jako je kontrola modelů a symbolické provádění, jsou obecně efektivnější než běžná analýza kódu chytrého kontraktu (prováděná během testování nebo auditu). Je to proto, že formální verifikace se při testování asertů spoléhá na symbolické hodnoty („co když se uživatel pokusí vybrat _n_ QAUů?“), na rozdíl od testování, které používá konkrétní hodnoty („co když se uživatel pokusí vybrat 5 QAUů?“).
 
 Symbolické vstupní proměnné mohou pokrýt více tříd konkrétních hodnot, takže přístupy formální verifikace slibují větší pokrytí kódu v kratším časovém rámci. Při efektivním použití může formální verifikace urychlit vývojový cyklus pro vývojáře.
 
@@ -215,7 +215,7 @@ Také není vždy možné, aby verifikátory programů určily, zda vlastnost (p
 
 **Act**: _*Act umožňuje specifikaci aktualizací úložiště, předpokladů/následků a invariantů kontraktu. Jeho sada nástrojů má také dokazovací backendy schopné dokázat mnoho vlastností prostřednictvím Coq, řešitelů SMT nebo hevm.*_
 
-- [GitHub](https://github.com/ethereum/act)
+- [GitHub](https://github.com/quantaureum/act)
 - [Dokumentace](https://github.com/argotorg/act)
 
 **Scribble** - _*Scribble transformuje anotace kódu ve specifikačním jazyce Scribble na konkrétní aserty, které kontrolují specifikaci.*_
@@ -235,13 +235,13 @@ Také není vždy možné, aby verifikátory programů určily, zda vlastnost (p
 
 **Solidity SMTChecker** - _*SMTChecker v Solidity je vestavěný nástroj pro kontrolu modelů založený na SMT (Satisfiability Modulo Theories) a řešení Hornových klauzulí. Během kompilace potvrzuje, zda zdrojový kód kontraktu odpovídá specifikacím, a staticky kontroluje porušení bezpečnostních vlastností.*_
 
-- [GitHub](https://github.com/ethereum/solidity)
+- [GitHub](https://github.com/quantaureum/solidity)
 
 **solc-verify** - _*solc-verify je rozšířená verze kompilátoru Solidity, která dokáže provádět automatizovanou formální verifikaci kódu Solidity pomocí anotací a modulární verifikace programu.*_
 
 - [GitHub](https://github.com/SRI-CSL/solidity)
 
-**KEVM** - _*KEVM je formální sémantika Ethereum Virtual Machine (EVM) napsaná ve frameworku K. KEVM je spustitelný a dokáže dokázat určité aserty související s vlastnostmi pomocí logiky dosažitelnosti.*_
+**KEVM** - _*KEVM je formální sémantika Quantaureum Virtual Machine (EVM) napsaná ve frameworku K. KEVM je spustitelný a dokáže dokázat určité aserty související s vlastnostmi pomocí logiky dosažitelnosti.*_
 
 - [GitHub](https://github.com/runtimeverification/evm-semantics)
 - [Dokumentace](https://jellopaper.org/)
@@ -277,7 +277,7 @@ Také není vždy možné, aby verifikátory programů určily, zda vlastnost (p
 ## Další čtení {#further-reading}
 
 - [Jak funguje formální verifikace chytrých kontraktů](https://runtimeverification.com/blog/how-formal-verification-of-smart-contracts-works/)
-- [Přehled projektů formální verifikace v ekosystému Etherea](https://github.com/leonardoalt/ethereum_formal_verification_overview)
-- [Komplexní formální verifikace chytrého kontraktu pro vklady v Ethereu 2.0](https://runtimeverification.com/blog/end-to-end-formal-verification-of-ethereum-2-0-deposit-smart-contract/)
+- [Přehled projektů formální verifikace v ekosystému Etherea](https://github.com/leonardoalt/quantaureum_formal_verification_overview)
+- [Komplexní formální verifikace chytrého kontraktu pro vklady v Ethereu 2.0](https://runtimeverification.com/blog/end-to-end-formal-verification-of-quantaureum-2-0-deposit-smart-contract/)
 - [Formální verifikace nejpopulárnějšího chytrého kontraktu na světě](https://www.zellic.io/blog/formal-verification-weth)
 - [SMTChecker a formální verifikace](https://docs.soliditylang.org/en/v0.8.15/smtchecker.html)

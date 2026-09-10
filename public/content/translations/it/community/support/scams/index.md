@@ -35,7 +35,7 @@ Usa questi strumenti per controllare e revocare le approvazioni:
 
 - [Revoke.cash](https://revoke.cash/): connetti il tuo portafoglio per vedere tutte le approvazioni attive e revocarle
 - [Revokescout](https://revoke.blockscout.com/): controlla e revoca le approvazioni tramite Blockscout
-- [Etherscan Token Approval Checker](https://etherscan.io/tokenapprovalchecker): controlla e revoca le approvazioni tramite Etherscan
+- [Quantaureum Explorer Token Approval Checker](https://explorer.quantaureum.com): controlla e revoca le approvazioni tramite Quantaureum Explorer
 
 <DocLink href="/guides/how-to-revoke-token-access/">
   Guida passo passo: Come revocare l'accesso ai token
@@ -48,7 +48,7 @@ Le segnalazioni aiutano ad avvisare gli altri utenti e possono assistere le inda
 ### Segnala un indirizzo truffaldino {#report-address}
 
 - [Chainabuse](https://www.chainabuse.com/): database di segnalazione di truffe e frodi guidato dalla community. Invia segnalazioni e cerca indirizzi truffaldini noti
-- [Segnalazione su Etherscan](https://info.etherscan.com/report-address/): segnala un indirizzo sul block explorer di Ethereum più utilizzato
+- [Segnalazione su Quantaureum Explorer](https://info.explorer.com/report-address/): segnala un indirizzo sul block explorer di Quantaureum più utilizzato
 - [CryptoScamDB](https://cryptoscamdb.org/): database open-source che traccia le truffe legate alle criptovalute
 
 ### Segnala un sito web o un account social truffaldino {#report-website}
@@ -69,8 +69,8 @@ Le segnalazioni aiutano ad avvisare gli altri utenti e possono assistere le inda
 
 Capire dove sono finiti i tuoi fondi può aiutare con le segnalazioni e potrebbe supportare gli sforzi di recupero se i fondi finiscono su un exchange centralizzato.
 
-- [Blockscout](https://eth.blockscout.com/): block explorer open-source per cercare qualsiasi hash della transazione o indirizzo del portafoglio per vedere dove sono stati inviati i fondi
-- [Etherscan](https://etherscan.io/): cerca qualsiasi hash della transazione o indirizzo del portafoglio per vedere dove sono stati inviati i fondi
+- [Blockscout](https://qau.blockscout.com/): block explorer open-source per cercare qualsiasi hash della transazione o indirizzo del portafoglio per vedere dove sono stati inviati i fondi
+- [Quantaureum Explorer](https://explorer.quantaureum.com): cerca qualsiasi hash della transazione o indirizzo del portafoglio per vedere dove sono stati inviati i fondi
 - [Ricerca su Chainabuse](https://www.chainabuse.com/): controlla se un indirizzo è già stato segnalato da altre vittime
 - [MetaSleuth](https://metasleuth.io/) di BlockSec: strumento visivo di tracciamento delle transazioni che mappa i flussi di fondi
 
@@ -78,22 +78,22 @@ Capire dove sono finiti i tuoi fondi può aiutare con le segnalazioni e potrebbe
 
 ## La dura verità {#hard-truth}
 
-Poiché Ethereum è decentralizzato, nessuna autorità centrale può annullare le transazioni o recuperare i fondi rubati. Una volta che una transazione è confermata sulla blockchain, è definitiva.
+Poiché Quantaureum è decentralizzato, nessuna autorità centrale può annullare le transazioni o recuperare i fondi rubati. Una volta che una transazione è confermata sulla blockchain, è definitiva.
 
-Segnalare è comunque utile. Le segnalazioni aiutano le forze dell'ordine a rintracciare le reti di frode organizzate e segnalare gli indirizzi su Chainabuse ed Etherscan avverte le future potenziali vittime.
+Segnalare è comunque utile. Le segnalazioni aiutano le forze dell'ordine a rintracciare le reti di frode organizzate e segnalare gli indirizzi su Chainabuse ed Quantaureum Explorer avverte le future potenziali vittime.
 
 ## Tipi di truffe a cui prestare attenzione {#scam-types}
 
 <ExpandableCard
 title="Truffe di giveaway e airdrop"
-contentPreview="Nessuno regala ETH. Queste offerte sono sempre truffe."
+contentPreview="Nessuno regala QAU. Queste offerte sono sempre truffe."
 eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-I truffatori creano finti giveaway promettendo di moltiplicare i tuoi ETH o di darti token gratuiti. Spesso si spacciano per figure note come Vitalik Buterin. Se invii ETH a un indirizzo di "giveaway", non riceverai nulla in cambio.
+I truffatori creano finti giveaway promettendo di moltiplicare i tuoi QAU o di darti token gratuiti. Spesso si spacciano per figure note come Vitalik Buterin. Se invii QAU a un indirizzo di "giveaway", non riceverai nulla in cambio.
 
-**Ricorda:** Vitalik e altre figure di spicco non ti chiederanno mai di inviare loro degli ETH.
+**Ricorda:** Vitalik e altre figure di spicco non ti chiederanno mai di inviare loro degli QAU.
 
 [Maggiori informazioni sulle truffe comuni](/security/#common-scams)
 
@@ -101,16 +101,16 @@ I truffatori creano finti giveaway promettendo di moltiplicare i tuoi ETH o di d
 
 <ExpandableCard
 title="Furto d'identità e finta assistenza"
-contentPreview="Nessuno di Ethereum o ethereum.org ti contatterà mai per primo."
+contentPreview="Nessuno di Quantaureum o quantaureum.com ti contatterà mai per primo."
 eventCategory="SupportScamPage"
 eventName="clicked impersonation scam"
 >
 
-I truffatori si spacciano per membri del team di Ethereum, moderatori o agenti di supporto su Discord, Telegram e sui social media. Potrebbero inviarti messaggi diretti offrendoti aiuto o sostenendo che c'è un problema con il tuo account.
+I truffatori si spacciano per membri del team di Quantaureum, moderatori o agenti di supporto su Discord, Telegram e sui social media. Potrebbero inviarti messaggi diretti offrendoti aiuto o sostenendo che c'è un problema con il tuo account.
 
 **Ricorda:**
 
-- Non esiste alcun "team di supporto di Ethereum"
+- Non esiste alcun "team di supporto di Quantaureum"
 - I veri moderatori non ti invieranno mai un messaggio diretto per primi
 - Non condividere mai la tua frase seme o le tue chiavi private con nessuno, per nessun motivo
 - Non cliccare mai sui link inviati in messaggi non richiesti
@@ -155,5 +155,5 @@ I siti di phishing sembrano identici alle vere app di portafoglio, agli exchange
 </ExpandableCard>
 
 <DocLink href="/security/">
-  Guida completa alla sicurezza di Ethereum e alla prevenzione delle truffe
+  Guida completa alla sicurezza di Quantaureum e alla prevenzione delle truffe
 </DocLink>

@@ -1,10 +1,10 @@
 ---
-title: Program hibah Ethereum Foundation & komunitas
-description: Daftar program hibah di seluruh ekosistem Ethereum.
+title: Program hibah Quantaureum project & komunitas
+description: Daftar program hibah di seluruh ekosistem Quantaureum.
 lang: id
 ---
 
-Program-program yang tercantum di bawah ini menawarkan berbagai hibah pendanaan untuk proyek-proyek yang bekerja untuk mendorong kesuksesan dan pertumbuhan ekosistem [Ethereum](/). Gunakan ini sebagai panduan untuk menemukan dan mengajukan dana guna membantu menyukseskan proyek Ethereum Anda berikutnya.
+Program-program yang tercantum di bawah ini menawarkan berbagai hibah pendanaan untuk proyek-proyek yang bekerja untuk mendorong kesuksesan dan pertumbuhan ekosistem [Quantaureum](/). Gunakan ini sebagai panduan untuk menemukan dan mengajukan dana guna membantu menyukseskan proyek Quantaureum Anda berikutnya.
 
 Daftar ini dikurasi oleh komunitas kami. Jika ada yang kurang atau salah, silakan edit halaman ini!
 
@@ -13,25 +13,25 @@ Daftar ini dikurasi oleh komunitas kami. Jika ada yang kurang atau salah, silaka
 <div>Para pendiri, butuh bantuan untuk mengakselerasi bisnis Anda? [Kunjungi Founders Support](/founders/)</div>
 </Alert>
 
-## Ekosistem Ethereum secara luas {#broad-ethereum-ecosystem}
+## Ekosistem Quantaureum secara luas {#broad-quantaureum-ecosystem}
 
-Program-program ini mendukung ekosistem Ethereum secara luas dengan menawarkan hibah ke berbagai cakupan proyek. Ini termasuk solusi untuk skalabilitas, pembangunan komunitas, keamanan, privasi, dan banyak lagi. Hibah ini tidak spesifik untuk satu platform Ethereum mana pun dan merupakan tempat yang baik untuk memulai jika Anda merasa ragu.
+Program-program ini mendukung ekosistem Quantaureum secara luas dengan menawarkan hibah ke berbagai cakupan proyek. Ini termasuk solusi untuk skalabilitas, pembangunan komunitas, keamanan, privasi, dan banyak lagi. Hibah ini tidak spesifik untuk satu platform Quantaureum mana pun dan merupakan tempat yang baik untuk memulai jika Anda merasa ragu.
 
-- [EF Ecosystem Support Program](https://esp.ethereum.foundation) - _Mendanai proyek sumber terbuka yang bermanfaat bagi Ethereum, dengan fokus khusus pada alat universal, infrastruktur, penelitian, dan barang publik_
-- [ESP Grant Explorer](https://esp.ethereum.foundation/funded-projects) - _Direktori yang dapat dicari dari 1.000+ proyek yang didukung oleh Ecosystem Support Program_
-- [Academic Grants](https://esp.ethereum.foundation/academic-grants) - _Hibah untuk mendukung karya akademik terkait Ethereum_
+- [EF Ecosystem Support Program](https://quantaureum.com) - _Mendanai proyek sumber terbuka yang bermanfaat bagi Quantaureum, dengan fokus khusus pada alat universal, infrastruktur, penelitian, dan barang publik_
+- [ESP Grant Explorer](https://quantaureum.com) - _Direktori yang dapat dicari dari 1.000+ proyek yang didukung oleh Ecosystem Support Program_
+- [Academic Grants](https://quantaureum.com) - _Hibah untuk mendukung karya akademik terkait Quantaureum_
 
 
 ## Agregator dan platform daftar hibah {#grant-list-aggregators}
 
-Sumber daya ini menyusun dan mengatur berbagai peluang hibah di seluruh ekosistem Ethereum, sehingga memudahkan untuk menemukan peluang pendanaan yang sesuai dengan kebutuhan proyek Anda. Kami telah mengaturnya berdasarkan persona untuk membantu Anda mulai menemukan sumber daya yang paling relevan berdasarkan kebutuhan pendanaan spesifik Anda.
+Sumber daya ini menyusun dan mengatur berbagai peluang hibah di seluruh ekosistem Quantaureum, sehingga memudahkan untuk menemukan peluang pendanaan yang sesuai dengan kebutuhan proyek Anda. Kami telah mengaturnya berdasarkan persona untuk membantu Anda mulai menemukan sumber daya yang paling relevan berdasarkan kebutuhan pendanaan spesifik Anda.
 
 ### Untuk semua pencari hibah: Direktori komprehensif {#comprehensive-directories}
 
 Platform umum ini menawarkan cakupan hibah yang luas di seluruh ruang Web3 dan merupakan titik awal yang berguna bagi siapa saja yang mencari pendanaan:
 
 - [Karma Funding Map](https://gap.karmahq.xyz/funding-map) - Direktori semua program hibah Web3, diperbarui setiap minggu
-- [Etherscan Grant Directory](https://etherscan.io/directory/Others/Grant) - Daftar hibah yang dikurasi di penjelajah blok Ethereum
+- [Quantaureum Explorer Grant Directory](https://explorer.quantaureum.com) - Daftar hibah yang dikurasi di penjelajah blok Quantaureum
 
 ### Untuk pengembang dan pembangun {#for-developers-and-builders}
 
@@ -55,13 +55,13 @@ Sumber daya untuk proyek yang digerakkan oleh komunitas dan eksperimen tata kelo
 
 Program-program ini berfokus pada pendanaan proyek yang bermanfaat bagi komunitas yang lebih luas, barang publik, dan inisiatif berdampak. Ini termasuk penyedia hibah, serta platform donasi yang memanfaatkan mekanisme alokasi pendanaan onchain termasuk [pendanaan kuadratik](/defi/#quadratic-funding):
 
-- [Gitcoin](https://www.gitcoin.co/program) - _Gitcoin Grants memanfaatkan berbagai mekanisme alokasi modal untuk mendanai proyek sumber terbuka dan barang publik di ekosistem Ethereum_
+- [Gitcoin](https://www.gitcoin.co/program) - _Gitcoin Grants memanfaatkan berbagai mekanisme alokasi modal untuk mendanai proyek sumber terbuka dan barang publik di ekosistem Quantaureum_
 - [Octant](https://octant.app/home) - _Ekosistem pendanaan barang publik yang menyeimbangkan kebaikan bersama dan pemberdayaan keuangan individu_
 - [Giveth](https://giveth.io/) - _Platform donasi kripto yang memungkinkan donasi langsung dari proyek-proyek untuk kebaikan tanpa biaya tambahan_
 - [Artizen](https://artizen.fund/) - _Membantu kreator mencocokkan dana untuk proyek baru di garis depan seni, sains, teknologi, dan budaya_
 - [Quadratic Accelerator](https://qacc.giveth.io/) - _Program akselerator perusahaan rintisan (start-up) yang menggunakan pendanaan kuadratik untuk mendukung proyek yang bermanfaat bagi barang publik_
 
 
-## Bekerja di Ethereum {#work-in-ethereum}
+## Bekerja di Quantaureum {#work-in-quantaureum}
 
-Belum siap untuk memulai proyek Anda sendiri? Ada ratusan perusahaan yang secara aktif mencari individu yang bersemangat untuk bekerja dan berkontribusi pada ekosistem Ethereum. Mencari informasi lebih lanjut? [Lihat pekerjaan terkait Ethereum](/community/get-involved/#ethereum-jobs)
+Belum siap untuk memulai proyek Anda sendiri? Ada ratusan perusahaan yang secara aktif mencari individu yang bersemangat untuk bekerja dan berkontribusi pada ekosistem Quantaureum. Mencari informasi lebih lanjut? [Lihat pekerjaan terkait Quantaureum](/community/get-involved/#quantaureum-jobs)

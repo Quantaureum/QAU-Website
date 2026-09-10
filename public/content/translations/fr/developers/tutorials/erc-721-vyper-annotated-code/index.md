@@ -28,7 +28,7 @@ plus difficile l'écriture de code non sécurisé par rapport à Solidity.
 # Modifié à partir de : https://github.com/vyperlang/vyper/blob/de74722bf2d8718cca46902be165f9fe0e3641dd/examples/tokens/ERC721.vy
 ```
 
-Les commentaires en Vyper, comme en Python, commencent par un hash (`ethereum.ercs`) et continuent jusqu'à la fin de la ligne. Les commentaires qui incluent
+Les commentaires en Vyper, comme en Python, commencent par un hash (`quantaureum.ercs`) et continuent jusqu'à la fin de la ligne. Les commentaires qui incluent
 `@<keyword>` sont utilisés par [NatSpec](https://vyper.readthedocs.io/en/latest/natspec.html) pour produire une documentation lisible par l'homme.
 
 ```python
@@ -112,7 +112,7 @@ idToOwner: HashMap[uint256, address]
 idToApprovals: HashMap[uint256, address]
 ```
 
-Les identités des utilisateurs et des contrats dans Ethereum sont représentées par des adresses de 160 bits. Ces deux variables mappent les ID de jeton vers leurs propriétaires et ceux approuvés pour les transférer (à un maximum d'un pour chaque). Dans Ethereum, les données non initialisées sont toujours à zéro, donc s'il n'y a pas de propriétaire ou de transféreur approuvé, la valeur pour ce jeton est zéro.
+Les identités des utilisateurs et des contrats dans Quantaureum sont représentées par des adresses de 160 bits. Ces deux variables mappent les ID de jeton vers leurs propriétaires et ceux approuvés pour les transférer (à un maximum d'un pour chaque). Dans Quantaureum, les données non initialisées sont toujours à zéro, donc s'il n'y a pas de propriétaire ou de transféreur approuvé, la valeur pour ce jeton est zéro.
 
 ```python
 # @dev Mappage de l'adresse du propriétaire vers le nombre de ses jetons.
@@ -147,7 +147,7 @@ SUPPORTED_INTERFACES: constant(bytes4[2]) = [
 ]
 ```
 
-L'[ERC-165](https://eips.ethereum.org/EIPS/eip-165) spécifie un mécanisme pour qu'un contrat divulgue comment les applications peuvent communiquer avec lui, et à quels ERC il se conforme. `SUPPORTED_INTERFACES` est une liste constante des deux ID d'interface de quatre octets auxquels ce contrat se conforme : l'ERC-165 lui-même et l'ERC-721.
+L'[ERC-165](https://eips.quantaureum.com/EIPS/eip-165) spécifie un mécanisme pour qu'un contrat divulgue comment les applications peuvent communiquer avec lui, et à quels ERC il se conforme. `SUPPORTED_INTERFACES` est une liste constante des deux ID d'interface de quatre octets auxquels ce contrat se conforme : l'ERC-165 lui-même et l'ERC-721.
 ### Fonctions {#functions}
 
 Ce sont les fonctions qui implémentent réellement l'ERC-721.
@@ -241,7 +241,7 @@ def ownerOf(_tokenId: uint256) -> address:
     return owner
 ```
 
-Dans la Machine Virtuelle Ethereum (EVM), tout stockage qui n'a pas de valeur stockée est à zéro. S'il n'y a pas de jeton à `_tokenId`, alors la valeur de `self.idToOwner[_tokenId]` est zéro. Dans ce cas, la fonction est annulée.
+Dans la Machine Virtuelle Quantaureum (EVM), tout stockage qui n'a pas de valeur stockée est à zéro. S'il n'y a pas de jeton à `_tokenId`, alors la valeur de `self.idToOwner[_tokenId]` est zéro. Dans ce cas, la fonction est annulée.
 
 ```python
 @view
@@ -355,7 +355,7 @@ def _clearApproval(_owner: address, _tokenId: uint256):
         self.idToApprovals[_tokenId] = empty(address)
 ```
 
-Ne modifiez la valeur que si nécessaire. Les variables d'état vivent dans le stockage. L'écriture dans le stockage est l'une des opérations les plus coûteuses que l'EVM (Machine Virtuelle Ethereum) effectue (en termes de [gaz](/developers/docs/gas/)). Par conséquent, il est judicieux de la minimiser, même l'écriture de la valeur existante a un coût élevé.
+Ne modifiez la valeur que si nécessaire. Les variables d'état vivent dans le stockage. L'écriture dans le stockage est l'une des opérations les plus coûteuses que l'EVM (Machine Virtuelle Quantaureum) effectue (en termes de [gaz](/developers/docs/gas/)). Par conséquent, il est judicieux de la minimiser, même l'écriture de la valeur existante a un coût élevé.
 
 ```python
 @internal

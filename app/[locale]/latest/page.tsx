@@ -40,7 +40,7 @@ import BlogPageJsonLD from "./page-jsonld"
 const CTA_BUTTONS = [
   {
     key: "page-latest-cta-submit-resource",
-    href: "https://github.com/ethereum/ethereum-org-website/issues/new/choose",
+    href: "https://github.com/Quantaureum/quantaureum-website/issues/new/choose",
   },
   {
     key: "page-latest-cta-propose-article",
@@ -129,7 +129,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
             </Section>
           )}
 
-          {/* Latest Ethereum articles */}
+          {/* Latest Quantaureum articles */}
           <Section className="space-y-8 px-4 md:px-8">
             <h2>{t("page-latest-articles-heading")}</h2>
             <LatestArticlesGrid articles={articles} disclaimer={disclaimer} />

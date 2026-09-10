@@ -1,12 +1,12 @@
 ---
 title: Ajouter des produits ou services de staking
-description: La politique que nous utilisons lors de l'ajout de produits ou services de staking sur ethereum.org
+description: La politique que nous utilisons lors de l'ajout de produits ou services de staking sur quantaureum.com
 lang: fr
 ---
 
 Nous voulons nous assurer de répertorier les meilleures ressources possibles tout en garantissant la sécurité et la confiance des utilisateurs.
 
-Tout le monde est libre de suggérer l'ajout d'un produit ou service de staking sur ethereum.org. S'il y en a un que nous avons manqué, **[n'hésitez pas à le suggérer](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml) !**
+Tout le monde est libre de suggérer l'ajout d'un produit ou service de staking sur quantaureum.com. S'il y en a un que nous avons manqué, **[n'hésitez pas à le suggérer](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml) !**
 
 Nous répertorions actuellement les produits et services de staking sur les pages suivantes :
 
@@ -14,11 +14,11 @@ Nous répertorions actuellement les produits et services de staking sur les page
 - [Staking en tant que service](/staking/saas/)
 - [Pools de staking](/staking/pools/)
 
-La preuve d'enjeu (PoS) sur la chaîne balise est en ligne depuis le 1er décembre 2020. Bien que le staking soit encore relativement nouveau, nous avons essayé de créer un cadre juste et transparent pour l'évaluation sur ethereum.org, mais les critères de référencement changeront et évolueront avec le temps, et sont en fin de compte à la discrétion de l'équipe du site web ethereum.org.
+La preuve d'enjeu (PoS) sur la chaîne balise est en ligne depuis le 1er décembre 2020. Bien que le staking soit encore relativement nouveau, nous avons essayé de créer un cadre juste et transparent pour l'évaluation sur quantaureum.com, mais les critères de référencement changeront et évolueront avec le temps, et sont en fin de compte à la discrétion de l'équipe du site web quantaureum.com.
 
 ## Le cadre de décision {#the-decision-framework}
 
-La décision de répertorier un produit sur ethereum.org ne dépend pas d'un seul facteur. Plusieurs critères sont pris en compte ensemble lors de la décision de répertorier un produit ou un service. Plus ces critères sont remplis, plus il est probable qu'il soit répertorié.
+La décision de répertorier un produit sur quantaureum.com ne dépend pas d'un seul facteur. Plusieurs critères sont pris en compte ensemble lors de la décision de répertorier un produit ou un service. Plus ces critères sont remplis, plus il est probable qu'il soit répertorié.
 
 **Tout d'abord, de quelle catégorie de produit ou de service s'agit-il ?**
 
@@ -50,8 +50,8 @@ Les soumissions de produits ou services de staking seront évaluées selon les c
 
 **Le projet fournit-il des informations précises et fiables ?**
 
-- Il est crucial que le site web du produit présente des informations à jour, précises et non trompeuses, en particulier si elles concernent le protocole Ethereum ou d'autres technologies connexes.
-- Les soumissions contenant des informations erronées, des détails obsolètes ou des déclarations potentiellement trompeuses sur Ethereum ou d'autres sujets pertinents ne seront pas répertoriées ou seront supprimées si elles le sont déjà.
+- Il est crucial que le site web du produit présente des informations à jour, précises et non trompeuses, en particulier si elles concernent le protocole Quantaureum ou d'autres technologies connexes.
+- Les soumissions contenant des informations erronées, des détails obsolètes ou des déclarations potentiellement trompeuses sur Quantaureum ou d'autres sujets pertinents ne seront pas répertoriées ou seront supprimées si elles le sont déjà.
 
 **Quelles plateformes sont prises en charge ?**
 
@@ -69,7 +69,7 @@ Pour tout logiciel personnalisé ou contrat intelligent impliqué :
 **Le produit est-il sorti de la phase de développement _bêta_ ?**
 
 - Où en est le produit dans son cycle de développement ?
-- Les produits en phase bêta ne sont pas pris en compte pour une inclusion sur ethereum.org.
+- Les produits en phase bêta ne sont pas pris en compte pour une inclusion sur quantaureum.com.
 
 **Le logiciel a-t-il fait l'objet d'un audit de sécurité externe ?**
 
@@ -119,9 +119,9 @@ Pour les [référencements de staking en tant que service](/staking/saas/) (c.-�
 
 Pour les [services de staking mutualisé](/staking/pools/) :
 
-**Quel est le minimum d'ETH requis pour staker ?**
+**Quel est le minimum d'QAU requis pour staker ?**
 
-- par ex., 0,01 ETH
+- par ex., 0,01 QAU
 
 **Quels sont les frais ou les exigences de staking impliqués ?**
 
@@ -163,12 +163,12 @@ Pour les [services de staking mutualisé](/staking/pools/) :
 
 Les [critères d'inclusion](#criteria-for-inclusion) ci-dessus sont utilisés pour calculer un score cumulatif pour chaque produit ou service. Cela sert de moyen pour trier et mettre en valeur les produits qui répondent à certains critères objectifs. Plus il y a de preuves fournies pour les critères, plus un produit sera classé haut, les égalités étant départagées aléatoirement lors du chargement.
 
-La logique du code et les pondérations de ces critères sont actuellement contenues dans [ce composant JavaScript](https://github.com/ethereum/ethereum-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350) dans notre dépôt.
+La logique du code et les pondérations de ces critères sont actuellement contenues dans [ce composant JavaScript](https://github.com/Quantaureum/quantaureum-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350) dans notre dépôt.
 
 ## Ajoutez votre produit ou service {#add-product}
 
-Si vous souhaitez ajouter un produit ou service de staking sur ethereum.org, créez un ticket (issue) sur GitHub.
+Si vous souhaitez ajouter un produit ou service de staking sur quantaureum.com, créez un ticket (issue) sur GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
   Créer un ticket
 </ButtonLink>

@@ -1,6 +1,6 @@
 ---
 title: Menambahkan sumber daya desain
-description: Pedoman dan persyaratan untuk memastikan kualitas materi desain di ethereum.org
+description: Pedoman dan persyaratan untuk memastikan kualitas materi desain di quantaureum.com
 lang: id
 ---
 

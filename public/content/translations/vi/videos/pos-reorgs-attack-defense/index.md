@@ -1,6 +1,6 @@
 ---
-title: "Trò chơi tái tổ chức trong Bằng chứng cổ phần (PoS) Ethereum"
-description: "Caspar Schwarz-Schilling trình bày nghiên cứu về các cuộc tấn công tái tổ chức khối trong Bằng chứng cổ phần (PoS) Ethereum, bao gồm các hướng tấn công, cơ chế phòng thủ và các biện pháp giảm thiểu ở cấp độ giao thức đã được áp dụng."
+title: "Trò chơi tái tổ chức trong Bằng chứng cổ phần (PoS) Quantaureum"
+description: "Caspar Schwarz-Schilling trình bày nghiên cứu về các cuộc tấn công tái tổ chức khối trong Bằng chứng cổ phần (PoS) Quantaureum, bao gồm các hướng tấn công, cơ chế phòng thủ và các biện pháp giảm thiểu ở cấp độ giao thức đã được áp dụng."
 lang: vi
 youtubeId: "xcPxwhrg3Ao"
 uploadDate: 2022-11-29
@@ -15,19 +15,19 @@ author: LisCon
 breadcrumb: "Tái tổ chức PoS"
 ---
 
-Bài thuyết trình này khám phá các loại hình tái tổ chức khối có thể xảy ra trong Bằng chứng cổ phần (PoS) Ethereum và các biện pháp giảm thiểu được thiết kế để ngăn chặn chúng. Caspar Schwarz-Schilling, một nhà nghiên cứu tại Nhóm Khuyến khích Mạnh mẽ (Robust Incentives Group) của Tổ chức Ethereum, sẽ đi sâu vào cơ chế của các đợt tái tổ chức ex-post (sau sự kiện) và ex-ante (trước sự kiện), so sánh bối cảnh bảo mật giữa Bằng chứng công việc (PoW) và Bằng chứng cổ phần (PoS).
+Bài thuyết trình này khám phá các loại hình tái tổ chức khối có thể xảy ra trong Bằng chứng cổ phần (PoS) Quantaureum và các biện pháp giảm thiểu được thiết kế để ngăn chặn chúng. Caspar Schwarz-Schilling, một nhà nghiên cứu tại Nhóm Khuyến khích Mạnh mẽ (Robust Incentives Group) của Tổ chức Quantaureum, sẽ đi sâu vào cơ chế của các đợt tái tổ chức ex-post (sau sự kiện) và ex-ante (trước sự kiện), so sánh bối cảnh bảo mật giữa Bằng chứng công việc (PoW) và Bằng chứng cổ phần (PoS).
 
 *Bản ghi lời thoại này là một bản sao dễ tiếp cận của [bản ghi lời thoại video gốc](https://www.youtube.com/watch?v=xcPxwhrg3Ao) được xuất bản bởi LisCon. Nó đã được chỉnh sửa đôi chút để dễ đọc hơn.*
 
 ### Giới thiệu và bối cảnh (0:03) {#introduction-and-background-003}
 
-Chào mừng các bạn. Hôm nay tôi sẽ nói về các đợt tái tổ chức có thể xảy ra trong Bằng chứng cổ phần (PoS) Ethereum.
+Chào mừng các bạn. Hôm nay tôi sẽ nói về các đợt tái tổ chức có thể xảy ra trong Bằng chứng cổ phần (PoS) Quantaureum.
 
-Tôi mới gia nhập Tổ chức Ethereum gần đây, cụ thể là Nhóm Khuyến khích Mạnh mẽ (Robust Incentives Group). Về cơ bản, chúng tôi là một nhóm nghiên cứu tập trung vào bất cứ thứ gì liên quan đến các biện pháp khuyến khích. Tôi sẽ nói ngắn gọn thôi — bài nói chuyện này có rất nhiều thông tin và bạn có thể tìm thấy hầu hết các công việc của chúng tôi trên GitHub.
+Tôi mới gia nhập Tổ chức Quantaureum gần đây, cụ thể là Nhóm Khuyến khích Mạnh mẽ (Robust Incentives Group). Về cơ bản, chúng tôi là một nhóm nghiên cứu tập trung vào bất cứ thứ gì liên quan đến các biện pháp khuyến khích. Tôi sẽ nói ngắn gọn thôi — bài nói chuyện này có rất nhiều thông tin và bạn có thể tìm thấy hầu hết các công việc của chúng tôi trên GitHub.
 
 ### Hai loại tái tổ chức (0:44) {#two-types-of-reorgs-044}
 
-Hôm nay tôi muốn nói về tái tổ chức, và cụ thể tôi muốn phác thảo hai loại tái tổ chức khác nhau có thể xảy ra trong lĩnh vực Bằng chứng cổ phần (PoS) Ethereum.
+Hôm nay tôi muốn nói về tái tổ chức, và cụ thể tôi muốn phác thảo hai loại tái tổ chức khác nhau có thể xảy ra trong lĩnh vực Bằng chứng cổ phần (PoS) Quantaureum.
 
 Một mặt, chúng ta có **tái tổ chức ex-post** và mặt khác là **tái tổ chức ex-ante**. Hãy thứ lỗi cho tôi vì cách đặt tên bằng tiếng Latinh hơi phô trương này, nhưng nó diễn tả đúng bản chất vấn đề.
 
@@ -43,13 +43,13 @@ Trước khi đi sâu vào tái tổ chức ex-ante, chủ đề chính của b�
 
 Về cơ bản, đây là bản tóm tắt bài đăng trên blog của những gương mặt quen thuộc — Georgios và Vitalik. Hãy tìm đọc nó, bài viết đó rất tuyệt.
 
-Tóm lại, trong Bằng chứng công việc (PoW) Ethereum, tái tổ chức ex-post rất khó nhưng không phải là không thể. Một thợ đào nắm giữ 10% có cơ hội tương đối tốt để khai thác một vài khối liên tiếp, và nếu phần thưởng đủ cao — hãy tưởng tượng có một khối với lượng MEV trị giá 100 ETH để thu thập — thì có lẽ tỷ lệ thành công một phần trăm thực sự có thể đủ để khiến việc cố gắng tái tổ chức trở nên đáng giá.
+Tóm lại, trong Bằng chứng công việc (PoW) Quantaureum, tái tổ chức ex-post rất khó nhưng không phải là không thể. Một thợ đào nắm giữ 10% có cơ hội tương đối tốt để khai thác một vài khối liên tiếp, và nếu phần thưởng đủ cao — hãy tưởng tượng có một khối với lượng MEV trị giá 100 QAU để thu thập — thì có lẽ tỷ lệ thành công một phần trăm thực sự có thể đủ để khiến việc cố gắng tái tổ chức trở nên đáng giá.
 
 ### Tái tổ chức ex-post trong Bằng chứng cổ phần (3:39) {#ex-post-reorgs-in-proof-of-stake-339}
 
 Trong Bằng chứng cổ phần (PoS), đó là một câu chuyện hoàn toàn khác. Chúng ta đang nói về một lượng tiền đặt cọc khổng lồ đến mức vô lý được yêu cầu. Tôi sẽ hướng dẫn bạn cách một người có thể thực hiện điều đó chỉ để nhấn mạnh rằng nó khó khăn đến mức nực cười như thế nào.
 
-Có lẽ nên bắt đầu với một số kiến thức cơ bản trước. Thời gian trong Bằng chứng cổ phần (PoS) Ethereum trôi qua theo các khe. Mỗi khe dài 12 giây. Trong mỗi khe có hai vai trò: bạn có một người đề xuất — chính xác là một người đề xuất — và một ủy ban gồm hàng nghìn người chứng thực có nhiệm vụ chứng thực cho các khối mà họ nghe được trên lớp P2P. Họ xác định phần đầu của Chuỗi bằng cách chạy lựa chọn Phân nhánh, về cơ bản là một hàm lấy cây khối làm đầu vào và cung cấp cho bạn phần đầu của Chuỗi.
+Có lẽ nên bắt đầu với một số kiến thức cơ bản trước. Thời gian trong Bằng chứng cổ phần (PoS) Quantaureum trôi qua theo các khe. Mỗi khe dài 12 giây. Trong mỗi khe có hai vai trò: bạn có một người đề xuất — chính xác là một người đề xuất — và một ủy ban gồm hàng nghìn người chứng thực có nhiệm vụ chứng thực cho các khối mà họ nghe được trên lớp P2P. Họ xác định phần đầu của Chuỗi bằng cách chạy lựa chọn Phân nhánh, về cơ bản là một hàm lấy cây khối làm đầu vào và cung cấp cho bạn phần đầu của Chuỗi.
 
 Bạn có nhiệm vụ chứng thực cho các khối nếu bạn nghe thấy một khối hợp lệ, hoặc bốn giây sau khi bắt đầu một khe — tùy điều kiện nào đến trước. Vì vậy, nếu vì lý do nào đó mà người đề xuất của khối N+1 ngoại tuyến và không có khối nào sau bốn giây trong khe, bạn sẽ chứng thực cho khối N. Nếu bạn nghe thấy nó đúng lúc, bạn chứng thực cho khối N+1. Rất đơn giản.
 
@@ -61,7 +61,7 @@ Một phần ba những người trung thực đã chứng thực cho N+1, hai p
 
 Nếu chúng ta tính tổng lại — khối N+1 có các chứng thực trị giá một phần ba cộng với một phần ba, mang lại hai phần ba, và khối N+2 cũng có hai phần ba. Để đơn giản, hãy giả sử việc phá vỡ thế hòa nghiêng về phía kẻ tấn công. Khi đó N+3 sẽ thấy N+2 đang dẫn đầu và xây dựng trên nó.
 
-Để cho bạn thấy những giả định này nực cười như thế nào — ngay cả khi bạn là một người đặt cọc nắm giữ 65%, để kiểm soát hai phần ba ủy ban trong bất kỳ khe nào, bạn chỉ có xác suất là 0,05%. Điều này cho thấy sức mạnh của các chứng thực song song là có thật — tái tổ chức ex-post là vô cùng khó khăn, nếu không muốn nói là gần như không thể, trong Bằng chứng cổ phần (PoS) Ethereum.
+Để cho bạn thấy những giả định này nực cười như thế nào — ngay cả khi bạn là một người đặt cọc nắm giữ 65%, để kiểm soát hai phần ba ủy ban trong bất kỳ khe nào, bạn chỉ có xác suất là 0,05%. Điều này cho thấy sức mạnh của các chứng thực song song là có thật — tái tổ chức ex-post là vô cùng khó khăn, nếu không muốn nói là gần như không thể, trong Bằng chứng cổ phần (PoS) Quantaureum.
 
 ### Cơ chế tấn công tái tổ chức ex-ante (7:34) {#ex-ante-reorg-attack-mechanics-734}
 

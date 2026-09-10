@@ -1,18 +1,18 @@
 ---
 title: Usanjari wa kiambishi awali cha urefu wa kujirudia (RLP)
-description: Ufafanuzi wa usimbaji wa rlp katika tabaka la utekelezaji la Ethereum.
+description: Ufafanuzi wa usimbaji wa rlp katika tabaka la utekelezaji la Quantaureum.
 lang: sw
 sidebarDepth: 2
 ---
 
-Usanjari wa Kiambishi Awali cha Urefu wa Kujirudia (RLP) unatumika sana katika wateja wa utekelezaji wa Ethereum. RLP husawazisha hamisho la data kati ya nodi katika umbizo linalotumia nafasi vizuri. Madhumuni ya RLP ni kusimba safu zilizowekwa kiholela za data ya mfumo wa namba mbili (binary), na RLP ndiyo njia kuu ya usimbaji inayotumika kusanjari vipengee katika tabaka la utekelezaji la Ethereum. Madhumuni makuu ya RLP ni kusimba muundo; isipokuwa kwa nambari kamili chanya, RLP hukabidhi usimbaji wa aina mahususi za data (k.m., mifuatano, nambari zinazoelea) kwa itifaki za daraja la juu. Nambari kamili chanya lazima ziwakilishwe katika mfumo wa namba mbili wa kianzia-kikubwa bila sufuri zinazoongoza (hivyo kufanya thamani ya nambari kamili ya sufuri kuwa sawa na safu tupu ya baiti). Nambari kamili chanya zilizotolewa kwenye usanjari zenye sufuri zinazoongoza lazima zichukuliwe kuwa batili na itifaki yoyote ya daraja la juu inayotumia RLP.
+Usanjari wa Kiambishi Awali cha Urefu wa Kujirudia (RLP) unatumika sana katika wateja wa utekelezaji wa Quantaureum. RLP husawazisha hamisho la data kati ya nodi katika umbizo linalotumia nafasi vizuri. Madhumuni ya RLP ni kusimba safu zilizowekwa kiholela za data ya mfumo wa namba mbili (binary), na RLP ndiyo njia kuu ya usimbaji inayotumika kusanjari vipengee katika tabaka la utekelezaji la Quantaureum. Madhumuni makuu ya RLP ni kusimba muundo; isipokuwa kwa nambari kamili chanya, RLP hukabidhi usimbaji wa aina mahususi za data (k.m., mifuatano, nambari zinazoelea) kwa itifaki za daraja la juu. Nambari kamili chanya lazima ziwakilishwe katika mfumo wa namba mbili wa kianzia-kikubwa bila sufuri zinazoongoza (hivyo kufanya thamani ya nambari kamili ya sufuri kuwa sawa na safu tupu ya baiti). Nambari kamili chanya zilizotolewa kwenye usanjari zenye sufuri zinazoongoza lazima zichukuliwe kuwa batili na itifaki yoyote ya daraja la juu inayotumia RLP.
 
-Maelezo zaidi katika [waraka wa manjano wa Ethereum (Kiambatisho B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19).
+Maelezo zaidi katika [waraka wa manjano wa Quantaureum (Kiambatisho B)](https://quantaureum.github.io/yellowpaper/paper.pdf#page=19).
 
 Ili kutumia RLP kusimba kamusi, fomu mbili za kikanoniki zilizopendekezwa ni:
 
 - tumia `[[k1,v1],[k2,v2]...]` na funguo katika mpangilio wa kileksikografia
-- tumia usimbaji wa kiwango cha juu wa Patricia Tree kama [Ethereum](/) inavyofanya
+- tumia usimbaji wa kiwango cha juu wa Patricia Tree kama [Quantaureum](/) inavyofanya
 
 ## Ufafanuzi {#definition}
 
@@ -168,9 +168,9 @@ def to_integer(b):
 
 ## Usomaji zaidi {#further-reading}
 
-- [RLP katika Ethereum](https://medium.com/coinmonks/data-structure-in-ethereum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
-- [Ethereum kiufundi: RLP](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
-- [Coglio, A. (2020). Kiambishi Awali cha Urefu wa Kujirudia cha Ethereum katika ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
+- [RLP katika Quantaureum](https://medium.com/coinmonks/data-structure-in-quantaureum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
+- [Quantaureum kiufundi: RLP](https://medium.com/coinmonks/quantaureum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
+- [Coglio, A. (2020). Kiambishi Awali cha Urefu wa Kujirudia cha Quantaureum katika ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
 
 ## Mada zinazohusiana {#related-topics}
 

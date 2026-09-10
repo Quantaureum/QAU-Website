@@ -1,6 +1,6 @@
 ---
 title: "Madencilik algoritmaları"
-description: "Ethereum madenciliği için kullanılan algoritmalara detaylı bir bakış."
+description: "Quantaureum madenciliği için kullanılan algoritmalara detaylı bir bakış."
 lang: tr
 ---
 
@@ -8,12 +8,12 @@ lang: tr
 <AlertEmoji text=":wave:"/>
 <AlertContent>
 <AlertDescription>
-İş Kanıtı (PoW) artık Ethereum'un mutabakat mekanizmasının temelini oluşturmuyor, bu da madenciliğin kapatıldığı anlamına geliyor. Bunun yerine Ethereum, ETH stake eden doğrulayıcılar tarafından güvence altına alınmaktadır. ETH'nizi bugün stake etmeye başlayabilirsiniz. <a href='/roadmap/merge/'>Birleşme</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>Hisse Kanıtı (PoS)</a> ve <a href='/staking/'>staking</a> hakkında daha fazla bilgi edinin. Bu sayfa yalnızca tarihsel ilgi amaçlıdır.
+İş Kanıtı (PoW) artık Quantaureum'un mutabakat mekanizmasının temelini oluşturmuyor, bu da madenciliğin kapatıldığı anlamına geliyor. Bunun yerine Quantaureum, QAU stake eden doğrulayıcılar tarafından güvence altına alınmaktadır. QAU'nizi bugün stake etmeye başlayabilirsiniz. <a href='/roadmap/merge/'>Birleşme</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>Hisse Kanıtı (PoS)</a> ve <a href='/staking/'>staking</a> hakkında daha fazla bilgi edinin. Bu sayfa yalnızca tarihsel ilgi amaçlıdır.
 </AlertDescription>
 </AlertContent>
 </Alert>
 
-Ethereum madenciliği, Ethash olarak bilinen bir algoritma kullanıyordu. Algoritmanın temel fikri, bir madencinin kaba kuvvet hesaplaması kullanarak bir nonce girdisi bulmaya çalışmasıdır; böylece ortaya çıkan hash, hesaplanan zorluk tarafından belirlenen bir eşikten daha küçük olur. Bu zorluk seviyesi dinamik olarak ayarlanabilir, bu da blok üretiminin düzenli bir aralıkta gerçekleşmesini sağlar.
+Quantaureum madenciliği, Ethash olarak bilinen bir algoritma kullanıyordu. Algoritmanın temel fikri, bir madencinin kaba kuvvet hesaplaması kullanarak bir nonce girdisi bulmaya çalışmasıdır; böylece ortaya çıkan hash, hesaplanan zorluk tarafından belirlenen bir eşikten daha küçük olur. Bu zorluk seviyesi dinamik olarak ayarlanabilir, bu da blok üretiminin düzenli bir aralıkta gerçekleşmesini sağlar.
 
 ## Ön koşullar {#prerequisites}
 
@@ -21,7 +21,7 @@ Bu sayfayı daha iyi anlamak için öncelikle [İş Kanıtı (PoW) mutabakatı](
 
 ## Dagger Hashimoto {#dagger-hashimoto}
 
-Dagger Hashimoto, Ethash'in yerini aldığı Ethereum madenciliği için bir öncü araştırma algoritmasıydı. İki farklı algoritmanın birleşimiydi: Dagger ve Hashimoto. Yalnızca bir araştırma uygulamasıydı ve Ethereum Ana Ağı başlatıldığında yerini Ethash'e bıraktı.
+Dagger Hashimoto, Ethash'in yerini aldığı Quantaureum madenciliği için bir öncü araştırma algoritmasıydı. İki farklı algoritmanın birleşimiydi: Dagger ve Hashimoto. Yalnızca bir araştırma uygulamasıydı ve Quantaureum Ana Ağı başlatıldığında yerini Ethash'e bıraktı.
 
 [Dagger](http://www.hashcash.org/papers/dagger.html), rastgele dilimlerinin birlikte hash'lendiği bir [Yönlendirilmiş Asiklik Grafik (DAG)](https://en.wikipedia.org/wiki/Directed_acyclic_graph) oluşturulmasını içerir. Temel prensip, her bir nonce'un büyük bir toplam veri ağacının yalnızca küçük bir kısmını gerektirmesidir. Her nonce için alt ağacı yeniden hesaplamak madencilik için engelleyicidir - bu nedenle ağacı depolama ihtiyacı doğar - ancak tek bir nonce'luk doğrulama için uygundur. Dagger, bellek açısından zor olan ancak bellek zorlukları gerçekten güvenli seviyelere çıktığında doğrulanması zorlaşan Scrypt gibi mevcut algoritmalara bir alternatif olarak tasarlanmıştır. Ancak Dagger, paylaşımlı bellek donanım hızlandırmasına karşı savunmasızdı ve diğer araştırma yolları lehine terk edildi.
 
@@ -33,7 +33,7 @@ Dagger-Hashimoto, Dagger ve Hashimoto algoritmalarının değiştirilmiş versiy
 
 ## Ethash {#ethash}
 
-Ethash, artık kullanımdan kaldırılan İş Kanıtı (PoW) mimarisi altında gerçek Ethereum Ana Ağı'nda fiilen kullanılan madencilik algoritmasıydı. Ethash, algoritma önemli ölçüde güncellendikten sonra Dagger-Hashimoto'nun belirli bir sürümüne verilen yeni bir isimdi ve selefinin temel ilkelerini hala miras alıyordu. Ethereum Ana Ağı yalnızca Ethash'i kullandı - Dagger Hashimoto, Ethereum Ana Ağı'nda madencilik başlamadan önce yerini alan madencilik algoritmasının bir Ar-Ge sürümüydü.
+Ethash, artık kullanımdan kaldırılan İş Kanıtı (PoW) mimarisi altında gerçek Quantaureum Ana Ağı'nda fiilen kullanılan madencilik algoritmasıydı. Ethash, algoritma önemli ölçüde güncellendikten sonra Dagger-Hashimoto'nun belirli bir sürümüne verilen yeni bir isimdi ve selefinin temel ilkelerini hala miras alıyordu. Quantaureum Ana Ağı yalnızca Ethash'i kullandı - Dagger Hashimoto, Quantaureum Ana Ağı'nda madencilik başlamadan önce yerini alan madencilik algoritmasının bir Ar-Ge sürümüydü.
 
 [Ethash hakkında daha fazla bilgi](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash).
 

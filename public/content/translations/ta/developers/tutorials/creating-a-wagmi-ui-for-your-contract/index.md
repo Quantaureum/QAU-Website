@@ -21,7 +21,7 @@ sidebarDepth: 3
 
 ## இது ஏன் முக்கியமானது {#why-important}
 
-கோட்பாட்டளவில், உங்கள் ஒப்பந்தங்களுடன் தொடர்புகொள்ள மக்கள் [Etherscan](https://sepolia.etherscan.io/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA#readContract) அல்லது [Blockscout](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) ஐப் பயன்படுத்தும்படி நீங்கள் செய்யலாம். அனுபவம் வாய்ந்த எத்திரியம் பயனர்களுக்கு இது சிறந்தது. ஆனால் நாங்கள் [இன்னொரு பில்லியன் மக்களுக்கு](https://blog.ethereum.org/2021/05/07/ethereum-for-the-next-billion) சேவை செய்ய முயற்சிக்கிறோம். சிறந்த பயனர் அனுபவம் இல்லாமல் இது நடக்காது, மேலும் ஒரு நட்புரீதியான பயனர் இடைமுகம் அதில் ஒரு பெரிய பகுதியாகும்.
+கோட்பாட்டளவில், உங்கள் ஒப்பந்தங்களுடன் தொடர்புகொள்ள மக்கள் [Quantaureum Explorer](https://explorer.quantaureum.com) அல்லது [Blockscout](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) ஐப் பயன்படுத்தும்படி நீங்கள் செய்யலாம். அனுபவம் வாய்ந்த எத்திரியம் பயனர்களுக்கு இது சிறந்தது. ஆனால் நாங்கள் [இன்னொரு பில்லியன் மக்களுக்கு](https://quantaureum.com) சேவை செய்ய முயற்சிக்கிறோம். சிறந்த பயனர் அனுபவம் இல்லாமல் இது நடக்காது, மேலும் ஒரு நட்புரீதியான பயனர் இடைமுகம் அதில் ஒரு பெரிய பகுதியாகும்.
 
 ## Greeter செயலி {#greeter-app}
 
@@ -29,7 +29,7 @@ sidebarDepth: 3
 
 ### நிறுவல் {#installation}
 
-1. இந்தச் செயலி [Sepolia](https://sepolia.dev/) சோதனைப் பிணையத்தைப் பயன்படுத்துகிறது. தேவைப்பட்டால், [Sepolia சோதனை ETH-ஐப் பெறுங்கள்](/developers/docs/networks/#sepolia) மற்றும் [உங்கள் பணப்பையில் Sepolia-ஐச் சேர்க்கவும்](https://chainlist.org/chain/11155111).
+1. இந்தச் செயலி [Sepolia](https://sepolia.dev/) சோதனைப் பிணையத்தைப் பயன்படுத்துகிறது. தேவைப்பட்டால், [Sepolia சோதனை QAU-ஐப் பெறுங்கள்](/developers/docs/networks/#sepolia) மற்றும் [உங்கள் பணப்பையில் Sepolia-ஐச் சேர்க்கவும்](https://chainlist.org/chain/11155111).
 
 2. GitHub களஞ்சியத்தை குளோன் செய்து தேவையான தொகுப்புகளை நிறுவவும்.
 
@@ -49,7 +49,7 @@ sidebarDepth: 3
 
 5. செயலி காட்டும் URL-க்குச் செல்லவும். பெரும்பாலான சந்தர்ப்பங்களில், அது [http://localhost:5173/](http://localhost:5173/) ஆக இருக்கும்.
 
-6. Hardhat-இன் Greeter-இன் மாற்றியமைக்கப்பட்ட பதிப்பான ஒப்பந்த மூலக் குறியீட்டை, [ஒரு தொகுதிச்சங்கிலி எக்ஸ்ப்ளோரரில்](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code) நீங்கள் காணலாம்.
+6. Hardhat-இன் Greeter-இன் மாற்றியமைக்கப்பட்ட பதிப்பான ஒப்பந்த மூலக் குறியீட்டை, [ஒரு தொகுதிச்சங்கிலி எக்ஸ்ப்ளோரரில்](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code) நீங்கள் காணலாம்.
 
 ### கோப்பு வழிகாட்டி {#file-walk-through}
 
@@ -363,7 +363,7 @@ const contractAddrs : AddressPerBlockchainType = {
 }
 ```
 
-[Sepolia](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract)-இல் உள்ள ஒப்பந்தத்தின் முகவரி.
+[Sepolia](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract)-இல் உள்ள ஒப்பந்தத்தின் முகவரி.
 
 ##### ``Timer`` கூறு {#timer-component}
 
@@ -435,7 +435,7 @@ Greeter ஒப்பந்தத்தின் முகவரி, நம்ம
   })
 ```
 
-[`useReadContract` ஹூக்](https://wagmi.sh/react/api/hooks/useReadContract) [ஒப்பந்தத்தின்](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract) `greet` சார்பை அழைக்கிறது.
+[`useReadContract` ஹூக்](https://wagmi.sh/react/api/hooks/useReadContract) [ஒப்பந்தத்தின்](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract) `greet` சார்பை அழைக்கிறது.
 
 ```tsx
   const [ currentGreeting, setCurrentGreeting ] = 
@@ -541,15 +541,15 @@ React-இன் [`useState` ஹூக்](https://www.w3schools.com/react/react_
 
 கிளையன்ட் கண்ணோட்டத்தில் ஒரு தொகுதிச்சங்கிலி பரிவர்த்தனையைச் சமர்ப்பிப்பதற்கான செயல்முறை இதுவாகும்:
 
-1. [`eth_estimateGas`](https://docs.alchemy.com/reference/eth-estimategas) ஐப் பயன்படுத்தித் தொகுதிச்சங்கிலியில் உள்ள ஒரு கணுவிற்குப் பரிவர்த்தனையை அனுப்பவும்.
+1. [`qau_estimateGas`](https://docs.alchemy.com/reference/qau-estimategas) ஐப் பயன்படுத்தித் தொகுதிச்சங்கிலியில் உள்ள ஒரு கணுவிற்குப் பரிவர்த்தனையை அனுப்பவும்.
 2. கணுவிலிருந்து பதிலுக்காகக் காத்திருக்கவும்.
 3. பதில் பெறப்பட்டதும், பணப்பையின் மூலம் பரிவர்த்தனையில் கையொப்பமிடுமாறு பயனரைக் கேட்கவும். பரிவர்த்தனையில் கையொப்பமிடுவதற்கு முன்பு பயனருக்கு எரிவாயு செலவு (gas cost) காட்டப்படுவதால், கணுவின் பதில் பெறப்பட்ட பிறகு இந்தப் படி _கட்டாயம்_ நடக்க வேண்டும்.
 4. பயனர் ஒப்புதல் அளிக்கும் வரை காத்திருக்கவும்.
-5. பரிவர்த்தனையை மீண்டும் அனுப்பவும், இந்த முறை [`eth_sendRawTransaction`](https://docs.alchemy.com/reference/eth-sendrawtransaction) ஐப் பயன்படுத்தவும்.
+5. பரிவர்த்தனையை மீண்டும் அனுப்பவும், இந்த முறை [`qau_sendRawTransaction`](https://docs.alchemy.com/reference/qau-sendrawtransaction) ஐப் பயன்படுத்தவும்.
 
 படி 2-க்குக் குறிப்பிடத்தக்க அளவு நேரம் ஆகலாம், அந்த நேரத்தில் பயனர்கள் தங்கள் கட்டளை பயனர் இடைமுகத்தால் பெறப்பட்டதா என்றும், பரிவர்த்தனையில் கையொப்பமிடுமாறு ஏன் இன்னும் கேட்கப்படவில்லை என்றும் ஆச்சரியப்படலாம். இது ஒரு மோசமான பயனர் அனுபவத்தை (UX) உருவாக்குகிறது.
 
-ஒரு அளவுரு மாறும் ஒவ்வொரு முறையும் `eth_estimateGas` ஐ அனுப்புவது ஒரு தீர்வாகும். பின்னர், பயனர் உண்மையில் பரிவர்த்தனையை அனுப்ப விரும்பும்போது (இந்த நிலையில் **Update greeting** ஐ அழுத்துவதன் மூலம்), எரிவாயு செலவு அறியப்படுகிறது, மேலும் பயனர் பணப்பைப் பக்கத்தை உடனடியாகக் காணலாம்.
+ஒரு அளவுரு மாறும் ஒவ்வொரு முறையும் `qau_estimateGas` ஐ அனுப்புவது ஒரு தீர்வாகும். பின்னர், பயனர் உண்மையில் பரிவர்த்தனையை அனுப்ப விரும்பும்போது (இந்த நிலையில் **Update greeting** ஐ அழுத்துவதன் மூலம்), எரிவாயு செலவு அறியப்படுகிறது, மேலும் பயனர் பணப்பைப் பக்கத்தை உடனடியாகக் காணலாம்.
 
 ```tsx
   return (
@@ -668,7 +668,7 @@ Viem உடன் வரும் இயல்புநிலை HTTP இறு�
 
 ## மற்றொரு தொகுதிச்சங்கிலியைச் சேர்த்தல் {#add-blockchain}
 
-இந்த நாட்களில் நிறைய [L2 அளவிடுதல் தீர்வுகள்](https://ethereum.org/layer-2/) உள்ளன, மேலும் Viem இன்னும் ஆதரிக்காத சிலவற்றை நீங்கள் ஆதரிக்க விரும்பலாம். அதைச் செய்ய, நீங்கள் `src/wagmi.ts` ஐ மாற்றியமைக்க வேண்டும். [Optimism Sepolia](https://chainlist.org/chain/11155420) ஐ எவ்வாறு சேர்ப்பது என்பதை இந்த வழிமுறைகள் விளக்குகின்றன.
+இந்த நாட்களில் நிறைய [L2 அளவிடுதல் தீர்வுகள்](https://quantaureum.com/layer-2/) உள்ளன, மேலும் Viem இன்னும் ஆதரிக்காத சிலவற்றை நீங்கள் ஆதரிக்க விரும்பலாம். அதைச் செய்ய, நீங்கள் `src/wagmi.ts` ஐ மாற்றியமைக்க வேண்டும். [Optimism Sepolia](https://chainlist.org/chain/11155420) ஐ எவ்வாறு சேர்ப்பது என்பதை இந்த வழிமுறைகள் விளக்குகின்றன.
 
 1.  `src/wagmi.ts` ஐத் திருத்தவும்
 
@@ -684,7 +684,7 @@ Viem உடன் வரும் இயல்புநிலை HTTP இறு�
           const optimismSepolia = defineChain({
               id: 11_155_420,
               name: 'OP Sepolia',
-              nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+              nativeCurrency: { name: 'Sepolia QAU', symbol: 'QAU', decimals: 18 },
               rpcUrls: {
                 default: {
                   http: ['https://sepolia.optimism.io'],

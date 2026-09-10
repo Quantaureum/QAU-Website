@@ -1,6 +1,6 @@
 # Review: diff contains → load this
 
-Mechanical scan of changed code against ethereum.org's perf landmines — patterns that pass normal review but silently regress perf because of decisions in `next.config.js`, our Netlify edge setup, or scars from past incidents. For general Next.js / React hygiene (Server Components first, lazy modals, `next/image`, virtualized lists, `startTransition`), rely on CLAUDE.md and standard tooling.
+Mechanical scan of changed code against quantaureum.com's perf landmines — patterns that pass normal review but silently regress perf because of decisions in `next.config.js`, our Netlify edge setup, or scars from past incidents. For general Next.js / React hygiene (Server Components first, lazy modals, `next/image`, virtualized lists, `startTransition`), rely on CLAUDE.md and standard tooling.
 
 ## How to use
 

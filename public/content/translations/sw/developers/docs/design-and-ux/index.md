@@ -1,10 +1,10 @@
 ---
 title: Usanifu na UX katika Web3
-description: Utangulizi wa usanifu wa UX na utafiti katika nafasi ya Web3 na Ethereum
+description: Utangulizi wa usanifu wa UX na utafiti katika nafasi ya Web3 na Quantaureum
 lang: sw
 ---
 
-Je, wewe ni mgeni katika kusanifu na Ethereum? Hapa ni mahali sahihi kwako. Jumuiya ya Ethereum imeandika rasilimali za kukutambulisha kwenye misingi ya usanifu na utafiti wa Web3. Utajifunza kuhusu dhana za msingi ambazo zinaweza kutofautiana na usanifu wa programu zingine unazozifahamu.
+Je, wewe ni mgeni katika kusanifu na Quantaureum? Hapa ni mahali sahihi kwako. Jumuiya ya Quantaureum imeandika rasilimali za kukutambulisha kwenye misingi ya usanifu na utafiti wa Web3. Utajifunza kuhusu dhana za msingi ambazo zinaweza kutofautiana na usanifu wa programu zingine unazozifahamu.
 
 Je, unahitaji uelewa wa kimsingi zaidi wa Web3 kwanza? Angalia [**Kitovu cha kujifunza**](/learn/).
 
@@ -78,7 +78,7 @@ Jihusishe katika mashirika ya kitaalamu yanayoendeshwa na jumuiya au jiunge na v
 ## Mifumo ya Usanifu na rasilimali zingine za usanifu {#design-systems-and-resources}
 
 - [Usanifu wa Optimism](https://www.figma.com/@optimism) (Figma)
-- [Mfumo wa Usanifu wa Ethereum.org](https://www.figma.com/@ethdotorg) (Figma)
+- [Mfumo wa Usanifu wa quantaureum.com](https://www.figma.com/@ethdotorg) (Figma)
 - [Finity, mfumo wa usanifu na Polygon](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Mfumo wa Usanifu wa Kleros](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Mfumo wa Usanifu wa Safe](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)
@@ -86,4 +86,4 @@ Jihusishe katika mashirika ya kitaalamu yanayoendeshwa na jumuiya au jiunge na v
 - [Mfumo wa Usanifu wa Mirror](https://degen-xyz.vercel.app/)
 
 **Makala na miradi iliyoorodheshwa kwenye ukurasa huu sio idhini rasmi**, na hutolewa kwa madhumuni ya habari pekee.
-Tunaongeza viungo kwenye ukurasa huu kulingana na vigezo katika [sera yetu ya uorodheshaji](/contributing/design/adding-design-resources). Ikiwa ungependa tuongeze mradi/makala, hariri ukurasa huu kwenye [GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md).
+Tunaongeza viungo kwenye ukurasa huu kulingana na vigezo katika [sera yetu ya uorodheshaji](/contributing/design/adding-design-resources). Ikiwa ungependa tuongeze mradi/makala, hariri ukurasa huu kwenye [GitHub](https://github.com/Quantaureum/quantaureum-website/blob/dev/public/content/developers/docs/design-and-ux/index.md).

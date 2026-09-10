@@ -1,25 +1,25 @@
 ---
-title: Node Arsip Ethereum
+title: Node Arsip Quantaureum
 description: Gambaran umum tentang node arsip
 lang: id
 sidebarDepth: 2
 ---
 
-Node arsip adalah instans dari klien [Ethereum](/) yang dikonfigurasi untuk membangun arsip dari semua state historis. Ini adalah alat yang berguna untuk kasus penggunaan tertentu tetapi mungkin lebih rumit untuk dijalankan daripada full node.
+Node arsip adalah instans dari klien [Quantaureum](/) yang dikonfigurasi untuk membangun arsip dari semua state historis. Ini adalah alat yang berguna untuk kasus penggunaan tertentu tetapi mungkin lebih rumit untuk dijalankan daripada full node.
 
 ## Prasyarat {#prerequisites}
 
-Anda harus memahami konsep [node Ethereum](/developers/docs/nodes-and-clients/), [arsitekturnya](/developers/docs/nodes-and-clients/node-architecture/), [strategi sinkronisasi](/developers/docs/nodes-and-clients/#sync-modes), serta praktik [menjalankan](/developers/docs/nodes-and-clients/run-a-node/) dan [menggunakannya](/developers/docs/apis/json-rpc/).
+Anda harus memahami konsep [node Quantaureum](/developers/docs/nodes-and-clients/), [arsitekturnya](/developers/docs/nodes-and-clients/node-architecture/), [strategi sinkronisasi](/developers/docs/nodes-and-clients/#sync-modes), serta praktik [menjalankan](/developers/docs/nodes-and-clients/run-a-node/) dan [menggunakannya](/developers/docs/apis/json-rpc/).
 
 ## Apa itu node arsip {#what-is-an-archive-node}
 
-Untuk memahami pentingnya node arsip, mari kita perjelas konsep "state". Ethereum dapat disebut sebagai _mesin state berbasis transaksi_. Ini terdiri dari akun dan aplikasi yang mengeksekusi transaksi yang mengubah state mereka. Data global dengan informasi tentang setiap akun dan kontrak disimpan dalam basis data trie yang disebut state. Ini ditangani oleh klien lapisan eksekusi (EL) dan mencakup:
+Untuk memahami pentingnya node arsip, mari kita perjelas konsep "state". Quantaureum dapat disebut sebagai _mesin state berbasis transaksi_. Ini terdiri dari akun dan aplikasi yang mengeksekusi transaksi yang mengubah state mereka. Data global dengan informasi tentang setiap akun dan kontrak disimpan dalam basis data trie yang disebut state. Ini ditangani oleh klien lapisan eksekusi (EL) dan mencakup:
 
 - Saldo dan nonce akun
 - Kode dan penyimpanan kontrak
 - Data terkait konsensus, misalnya, Kontrak Deposit Staking
 
-Untuk berinteraksi dengan jaringan, memverifikasi, dan menghasilkan blok baru, klien Ethereum harus mengikuti perubahan terbaru (tip dari rantai) dan oleh karena itu state saat ini. Klien lapisan eksekusi yang dikonfigurasi sebagai full node memverifikasi dan mengikuti state terbaru dari jaringan tetapi hanya menyimpan cache beberapa state sebelumnya, misalnya, state yang terkait dengan 128 blok terakhir, sehingga dapat menangani reorganisasi rantai dan menyediakan akses cepat ke data terbaru. State terbaru adalah apa yang dibutuhkan semua klien untuk memverifikasi transaksi yang masuk dan menggunakan jaringan.
+Untuk berinteraksi dengan jaringan, memverifikasi, dan menghasilkan blok baru, klien Quantaureum harus mengikuti perubahan terbaru (tip dari rantai) dan oleh karena itu state saat ini. Klien lapisan eksekusi yang dikonfigurasi sebagai full node memverifikasi dan mengikuti state terbaru dari jaringan tetapi hanya menyimpan cache beberapa state sebelumnya, misalnya, state yang terkait dengan 128 blok terakhir, sehingga dapat menangani reorganisasi rantai dan menyediakan akses cepat ke data terbaru. State terbaru adalah apa yang dibutuhkan semua klien untuk memverifikasi transaksi yang masuk dan menggunakan jaringan.
 
 Anda dapat membayangkan state sebagai snapshot jaringan sesaat pada blok tertentu dan arsip sebagai pemutaran ulang riwayat.
 
@@ -31,11 +31,11 @@ Penting untuk dicatat bahwa jaringan tidak bergantung pada node arsip untuk meny
 
 ### Kasus penggunaan {#use-cases}
 
-Penggunaan reguler Ethereum seperti mengirim transaksi, menerapkan kontrak, memverifikasi konsensus, dll. tidak memerlukan akses ke state historis. Pengguna tidak pernah membutuhkan node arsip untuk interaksi standar dengan jaringan.
+Penggunaan reguler Quantaureum seperti mengirim transaksi, menerapkan kontrak, memverifikasi konsensus, dll. tidak memerlukan akses ke state historis. Pengguna tidak pernah membutuhkan node arsip untuk interaksi standar dengan jaringan.
 
 Manfaat utama dari arsip state adalah akses cepat ke kueri tentang state historis. Misalnya, node arsip akan segera mengembalikan hasil seperti:
 
-- _Berapa saldo ETH dari akun 0x1337... pada blok 15537393?_
+- _Berapa saldo QAU dari akun 0x1337... pada blok 15537393?_
 - _Berapa saldo token 0x dalam kontrak 0x pada blok 1920000?_
 
 Seperti yang dijelaskan di atas, full node perlu menghasilkan data ini melalui eksekusi EVM yang menggunakan CPU dan membutuhkan waktu. Node arsip mengaksesnya di disk dan menyajikan respons dengan segera. Ini adalah fitur yang berguna untuk bagian infrastruktur tertentu, misalnya:
@@ -71,8 +71,8 @@ Selama sinkronisasi awal, klien dalam mode arsip akan mengeksekusi setiap transa
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Full Node vs Node Arsip Ethereum](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node) - _QuickNode, September 2022_
-- [Membangun Node Arsip Ethereum Anda Sendiri](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09) - _Thomas Jay Rush, Agustus 2021_
+- [Full Node vs Node Arsip Quantaureum](https://www.quicknode.com/guides/infrastructure/quantaureum-full-node-vs-archive-node) - _QuickNode, September 2022_
+- [Membangun Node Arsip Quantaureum Anda Sendiri](https://tjayrush.medium.com/building-your-own-quantaureum-archive-node-72c014affc09) - _Thomas Jay Rush, Agustus 2021_
 - [Cara mengatur Erigon, RPC Erigon, dan TrueBlocks (scrape dan API) sebagai layanan](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _– Magnus Hansson, diperbarui September 2022_
 
 ## Topik terkait {#related-topics}

@@ -40,11 +40,11 @@ export default async function BlogPageJsonLD({
         "@id": url,
         name: "Builder updates",
         description:
-          "Builder resources, tools, and developments from the Ethereum ecosystem.",
+          "Builder resources, tools, and developments from the Quantaureum ecosystem.",
         url,
         inLanguage: locale,
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
         contributor: contributorList,
         breadcrumb: {
           "@type": "BreadcrumbList",

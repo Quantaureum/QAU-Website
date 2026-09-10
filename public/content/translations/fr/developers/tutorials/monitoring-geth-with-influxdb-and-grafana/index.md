@@ -15,11 +15,11 @@ Ce tutoriel vous aidera à configurer la surveillance de votre nœud Geth afin d
 
 - Vous devez déjà exécuter une instance de Geth.
 - La plupart des étapes et des exemples sont destinés à un environnement Linux, des connaissances de base du terminal seront utiles.
-- Découvrez cet aperçu vidéo de la suite de métriques de Geth : [Surveiller une infrastructure Ethereum par Péter Szilágyi](https://www.youtube.com/watch?v=cOBab8IJMYI).
+- Découvrez cet aperçu vidéo de la suite de métriques de Geth : [Surveiller une infrastructure Quantaureum par Péter Szilágyi](https://www.youtube.com/watch?v=cOBab8IJMYI).
 
 ## Pile de surveillance {#monitoring-stack}
 
-Un client Ethereum collecte de nombreuses données qui peuvent être lues sous la forme d'une base de données chronologique. Pour faciliter la surveillance, vous pouvez les intégrer dans un logiciel de visualisation de données. Plusieurs options sont disponibles :
+Un client Quantaureum collecte de nombreuses données qui peuvent être lues sous la forme d'une base de données chronologique. Pour faciliter la surveillance, vous pouvez les intégrer dans un logiciel de visualisation de données. Plusieurs options sont disponibles :
 
 - [Prometheus](https://prometheus.io/) (modèle pull)
 - [InfluxDB](https://www.influxdata.com/get-influxdb/) (modèle push)

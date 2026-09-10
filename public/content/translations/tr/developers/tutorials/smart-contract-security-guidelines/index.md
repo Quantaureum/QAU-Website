@@ -62,7 +62,7 @@ Kod tabanınızın mimarisi, kodunuzun incelenmesini kolaylaştırmalıdır. Do�
 
 ### Bilinen tuzaklardan kaçının {#avoid-known-pitfalls}
 
-- **En yaygın güvenlik sorunlarının farkında olun.** Yaygın sorunlar hakkında bilgi edinmek için [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the Ether](https://capturetheether.com/) veya [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/) gibi birçok çevrim içi kaynak bulunmaktadır.
+- **En yaygın güvenlik sorunlarının farkında olun.** Yaygın sorunlar hakkında bilgi edinmek için [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the QAU](https://capturetheqau.com/) veya [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/) gibi birçok çevrim içi kaynak bulunmaktadır.
 - **[Solidity belgelendirmesindeki](https://docs.soliditylang.org/en/latest/) uyarı bölümlerinin farkında olun.** Uyarı bölümleri, dilin belirgin olmayan davranışları hakkında sizi bilgilendirecektir.
 
 ### Bağımlılıklar {#dependencies}

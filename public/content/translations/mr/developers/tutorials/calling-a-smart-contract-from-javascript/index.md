@@ -11,12 +11,12 @@ skill: beginner
 breadcrumb: "JS मधून कॉन्ट्रॅक्ट्स कॉल करा"
 lang: mr
 published: 2020-04-19
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/calling-a-smart-contract-from-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-या ट्युटोरिअलमध्ये आपण JavaScript मधून [स्मार्ट कॉन्ट्रॅक्ट](/developers/docs/smart-contracts/) फंक्शन कसे कॉल करायचे ते पाहू. प्रथम स्मार्ट कॉन्ट्रॅक्टची स्थिती वाचणे (उदा., ERC-20 धारकाची शिल्लक), त्यानंतर आपण टोकन हस्तांतरण करून ब्लॉकचेनची स्थिती बदलू. तुम्हाला [ब्लॉकचेनशी संवाद साधण्यासाठी JS वातावरण सेट करण्याची](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) आधीच माहिती असावी.
+या ट्युटोरिअलमध्ये आपण JavaScript मधून [स्मार्ट कॉन्ट्रॅक्ट](/developers/docs/smart-contracts/) फंक्शन कसे कॉल करायचे ते पाहू. प्रथम स्मार्ट कॉन्ट्रॅक्टची स्थिती वाचणे (उदा., ERC-20 धारकाची शिल्लक), त्यानंतर आपण टोकन हस्तांतरण करून ब्लॉकचेनची स्थिती बदलू. तुम्हाला [ब्लॉकचेनशी संवाद साधण्यासाठी JS वातावरण सेट करण्याची](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) आधीच माहिती असावी.
 
 या उदाहरणासाठी आपण DAI टोकन वापरू, चाचणीच्या उद्देशाने आपण ganache-cli वापरून ब्लॉकचेन फोर्क करू आणि ज्या पत्त्यावर आधीपासूनच भरपूर DAI आहेत असा पत्ता अनलॉक करू:
 
@@ -75,14 +75,14 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-या प्रोजेक्टसाठी आम्ही संपूर्ण ERC-20 ABI काढून टाकून फक्त `balanceOf` आणि `transfer` फंक्शन ठेवले आहे, परंतु तुम्हाला [संपूर्ण ERC-20 ABI येथे मिळू शकेल](https://ethereumdev.io/abi-for-erc20-contract-on-ethereum/).
+या प्रोजेक्टसाठी आम्ही संपूर्ण ERC-20 ABI काढून टाकून फक्त `balanceOf` आणि `transfer` फंक्शन ठेवले आहे, परंतु तुम्हाला [संपूर्ण ERC-20 ABI येथे मिळू शकेल](https://quantaureumdev.io/abi-for-erc20-contract-on-quantaureum/).
 
 त्यानंतर आपल्याला आपले स्मार्ट कॉन्ट्रॅक्ट इन्स्टन्शिएट (instantiate) करावे लागेल:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
 
-const daiToken = new web3.eth.Contract(ERC20TransferABI, DAI_ADDRESS)
+const daiToken = new web3.qau.Contract(ERC20TransferABI, DAI_ADDRESS)
 ```
 
 आपण दोन पत्ते देखील सेट करू:
@@ -113,7 +113,7 @@ daiToken.methods.balanceOf(senderAddress).call(function (err, res) {
 })
 ```
 
-लक्षात ठेवा की DAI ERC-20 मध्ये 18 दशांश (decimals) आहेत, याचा अर्थ योग्य रक्कम मिळवण्यासाठी तुम्हाला 18 शून्य काढावे लागतील. JavaScript मोठ्या अंकीय मूल्यांना हाताळत नसल्यामुळे uint256 स्ट्रिंग म्हणून परत केले जातात. जर तुम्हाला खात्री नसेल की [JS मध्ये मोठ्या संख्या कशा हाताळायच्या, तर bignumber.js बद्दलचे आमचे ट्युटोरिअल तपासा](https://ethereumdev.io/how-to-deal-with-big-numbers-in-javascript/).
+लक्षात ठेवा की DAI ERC-20 मध्ये 18 दशांश (decimals) आहेत, याचा अर्थ योग्य रक्कम मिळवण्यासाठी तुम्हाला 18 शून्य काढावे लागतील. JavaScript मोठ्या अंकीय मूल्यांना हाताळत नसल्यामुळे uint256 स्ट्रिंग म्हणून परत केले जातात. जर तुम्हाला खात्री नसेल की [JS मध्ये मोठ्या संख्या कशा हाताळायच्या, तर bignumber.js बद्दलचे आमचे ट्युटोरिअल तपासा](https://quantaureumdev.io/how-to-deal-with-big-numbers-in-javascript/).
 
 ## सेंड: स्मार्ट कॉन्ट्रॅक्ट फंक्शनला व्यवहार पाठवणे {#send-sending-a-transaction-to-a-smart-contract-function}
 
@@ -131,6 +131,6 @@ daiToken.methods
   })
 ```
 
-कॉल फंक्शन ब्लॉकचेनमध्ये माइन केल्या जाणाऱ्या व्यवहाराचा हॅश परत करते. इथेरियमवर, व्यवहाराचे हॅशेस अंदाजित करण्यायोग्य असतात - अशा प्रकारे आपण व्यवहार कार्यान्वित होण्यापूर्वी त्याचा हॅश मिळवू शकतो ([हॅशेस कसे मोजले जातात ते येथे जाणून घ्या](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
+कॉल फंक्शन ब्लॉकचेनमध्ये माइन केल्या जाणाऱ्या व्यवहाराचा हॅश परत करते. Quantaureumवर, व्यवहाराचे हॅशेस अंदाजित करण्यायोग्य असतात - अशा प्रकारे आपण व्यवहार कार्यान्वित होण्यापूर्वी त्याचा हॅश मिळवू शकतो ([हॅशेस कसे मोजले जातात ते येथे जाणून घ्या](https://quantaureum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
 
-हे फंक्शन केवळ ब्लॉकचेनवर व्यवहार सबमिट करत असल्याने, जोपर्यंत तो माइन होऊन ब्लॉकचेनमध्ये समाविष्ट होत नाही तोपर्यंत आपण त्याचा परिणाम पाहू शकत नाही. पुढील ट्युटोरिअलमध्ये आपण [व्यवहाराचा हॅश जाणून घेऊन तो ब्लॉकचेनवर कार्यान्वित होण्याची प्रतीक्षा कशी करावी](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/) हे शिकू.
+हे फंक्शन केवळ ब्लॉकचेनवर व्यवहार सबमिट करत असल्याने, जोपर्यंत तो माइन होऊन ब्लॉकचेनमध्ये समाविष्ट होत नाही तोपर्यंत आपण त्याचा परिणाम पाहू शकत नाही. पुढील ट्युटोरिअलमध्ये आपण [व्यवहाराचा हॅश जाणून घेऊन तो ब्लॉकचेनवर कार्यान्वित होण्याची प्रतीक्षा कशी करावी](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/) हे शिकू.

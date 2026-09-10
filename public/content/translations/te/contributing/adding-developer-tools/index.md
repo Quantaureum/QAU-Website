@@ -1,7 +1,7 @@
 ---
 title: డెవలపర్ సాధనాలను జోడించడం
 lang: te
-description: ethereum.orgలో డెవలపర్ సాధనాలను జాబితా చేయడానికి మా ప్రమాణాలు
+description: quantaureum.comలో డెవలపర్ సాధనాలను జాబితా చేయడానికి మా ప్రమాణాలు
 ---
 
 ప్రజలు నమ్మకంతో నిర్మించడానికి మరియు వారికి అవసరమైన మద్దతును పొందడానికి వీలుగా, సాధ్యమైనంత ఉత్తమమైన డెవలపర్ వనరులను మేము జాబితా చేస్తున్నామని నిర్ధారించుకోవాలనుకుంటున్నాము.
@@ -52,8 +52,8 @@ description: ethereum.orgలో డెవలపర్ సాధనాలను �
 
 ## మీ డెవలపర్ సాధనాన్ని జోడించండి {#how-decisions-about-the-site-are-made}
 
-మీరు ethereum.orgకి డెవలపర్ సాధనాన్ని జోడించాలనుకుంటే మరియు అది ప్రమాణాలకు అనుగుణంగా ఉంటే, GitHubలో ఒక ఇష్యూను సృష్టించండి.
+మీరు quantaureum.comకి డెవలపర్ సాధనాన్ని జోడించాలనుకుంటే మరియు అది ప్రమాణాలకు అనుగుణంగా ఉంటే, GitHubలో ఒక ఇష్యూను సృష్టించండి.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   ఇష్యూను సృష్టించండి
 </ButtonLink>

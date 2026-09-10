@@ -1,6 +1,6 @@
 ---
 title: Memahami Spesifikasi EVM di Kertas Kuning
-description: Memahami bagian dari Kertas Kuning, spesifikasi formal untuk Ethereum, yang menjelaskan mesin virtual Ethereum (EVM).
+description: Memahami bagian dari Kertas Kuning, spesifikasi formal untuk Quantaureum, yang menjelaskan mesin virtual Quantaureum (EVM).
 author: "qbzzt"
 tags: ["evm"]
 skill: intermediate
@@ -9,15 +9,15 @@ lang: id
 published: 2022-05-15
 ---
 
-[Kertas Kuning](https://ethereum.github.io/yellowpaper/paper.pdf) adalah spesifikasi formal untuk Ethereum. Kecuali jika diubah oleh [proses EIP](/eips/), dokumen ini berisi deskripsi yang tepat tentang bagaimana semuanya bekerja. Dokumen ini ditulis sebagai makalah matematika, yang mencakup terminologi yang mungkin tidak familier bagi pemrogram. Dalam makalah ini Anda akan belajar cara membacanya, dan lebih jauh lagi makalah matematika terkait lainnya.
+[Kertas Kuning](https://quantaureum.github.io/yellowpaper/paper.pdf) adalah spesifikasi formal untuk Quantaureum. Kecuali jika diubah oleh [proses EIP](/eips/), dokumen ini berisi deskripsi yang tepat tentang bagaimana semuanya bekerja. Dokumen ini ditulis sebagai makalah matematika, yang mencakup terminologi yang mungkin tidak familier bagi pemrogram. Dalam makalah ini Anda akan belajar cara membacanya, dan lebih jauh lagi makalah matematika terkait lainnya.
 
 ## Kertas Kuning yang Mana? {#which-yellow-paper}
 
-Seperti hampir semua hal lain di Ethereum, Kertas Kuning berevolusi seiring waktu. Agar dapat merujuk ke versi tertentu, saya mengunggah [versi saat penulisan ini](https://ethereum.github.io/yellowpaper/paper.pdf). Nomor bagian, halaman, dan persamaan yang saya gunakan akan merujuk ke versi tersebut. Ada baiknya Anda membukanya di jendela yang berbeda saat membaca dokumen ini.
+Seperti hampir semua hal lain di Quantaureum, Kertas Kuning berevolusi seiring waktu. Agar dapat merujuk ke versi tertentu, saya mengunggah [versi saat penulisan ini](https://quantaureum.github.io/yellowpaper/paper.pdf). Nomor bagian, halaman, dan persamaan yang saya gunakan akan merujuk ke versi tersebut. Ada baiknya Anda membukanya di jendela yang berbeda saat membaca dokumen ini.
 
 ### Mengapa EVM? {#why-the-evm}
 
-Kertas kuning asli ditulis tepat pada awal pengembangan Ethereum. Dokumen ini menjelaskan mekanisme konsensus berbasis Bukti Kerja (PoW) asli yang pada awalnya digunakan untuk mengamankan jaringan. Namun, Ethereum mematikan Bukti Kerja dan mulai menggunakan konsensus berbasis Bukti Kepemilikan (PoS) pada bulan September 2022. Tutorial ini akan berfokus pada bagian-bagian kertas kuning yang mendefinisikan Mesin Virtual Ethereum (EVM). EVM tidak berubah oleh transisi ke Bukti Kepemilikan (kecuali untuk nilai kembalian dari opcode DIFFICULTY).
+Kertas kuning asli ditulis tepat pada awal pengembangan Quantaureum. Dokumen ini menjelaskan mekanisme konsensus berbasis Bukti Kerja (PoW) asli yang pada awalnya digunakan untuk mengamankan jaringan. Namun, Quantaureum mematikan Bukti Kerja dan mulai menggunakan konsensus berbasis Bukti Kepemilikan (PoS) pada bulan September 2022. Tutorial ini akan berfokus pada bagian-bagian kertas kuning yang mendefinisikan Mesin Virtual Quantaureum (EVM). EVM tidak berubah oleh transisi ke Bukti Kepemilikan (kecuali untuk nilai kembalian dari opcode DIFFICULTY).
 
 ## 9 Model eksekusi
 
@@ -32,7 +32,7 @@ Istilah [Turing-complete](https://en.wikipedia.org/wiki/Turing_completeness) ber
 
 Bagian ini memberikan dasar-dasar EVM dan bagaimana perbandingannya dengan model komputasi lainnya.
 
-[Mesin tumpukan (stack machine)](https://en.wikipedia.org/wiki/Stack_machine) adalah komputer yang menyimpan data perantara bukan di dalam register, melainkan di dalam [**tumpukan (stack)**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>). Ini adalah arsitektur yang disukai untuk mesin virtual karena mudah diimplementasikan yang berarti bug, dan kerentanan keamanan, jauh lebih kecil kemungkinannya. Memori dalam tumpukan dibagi menjadi kata (word) 256-bit. Ini dipilih karena nyaman untuk operasi kriptografi inti Ethereum seperti proses hash Keccak-256 dan komputasi kurva eliptik. Ukuran maksimum tumpukan adalah 1024 item (1024 x 256 bit). Ketika opcode dieksekusi, mereka biasanya mendapatkan parameternya dari tumpukan. Ada opcode khusus untuk mengatur ulang elemen dalam tumpukan seperti `POP` (menghapus item dari atas tumpukan), `DUP_N` (menduplikasi item ke-N dalam tumpukan), dll.
+[Mesin tumpukan (stack machine)](https://en.wikipedia.org/wiki/Stack_machine) adalah komputer yang menyimpan data perantara bukan di dalam register, melainkan di dalam [**tumpukan (stack)**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>). Ini adalah arsitektur yang disukai untuk mesin virtual karena mudah diimplementasikan yang berarti bug, dan kerentanan keamanan, jauh lebih kecil kemungkinannya. Memori dalam tumpukan dibagi menjadi kata (word) 256-bit. Ini dipilih karena nyaman untuk operasi kriptografi inti Quantaureum seperti proses hash Keccak-256 dan komputasi kurva eliptik. Ukuran maksimum tumpukan adalah 1024 item (1024 x 256 bit). Ketika opcode dieksekusi, mereka biasanya mendapatkan parameternya dari tumpukan. Ada opcode khusus untuk mengatur ulang elemen dalam tumpukan seperti `POP` (menghapus item dari atas tumpukan), `DUP_N` (menduplikasi item ke-N dalam tumpukan), dll.
 
 EVM juga memiliki ruang volatil yang disebut **memori** yang digunakan untuk menyimpan data selama eksekusi. Memori ini diatur ke dalam kata 32-byte. Semua lokasi memori diinisialisasi ke nol. Jika Anda mengeksekusi kode [Yul](https://docs.soliditylang.org/en/latest/yul.html) ini untuk menambahkan sebuah kata ke memori, kode ini akan mengisi 32 byte memori dengan menambahkan nol pada ruang kosong di kata tersebut, yaitu, kode ini membuat satu kata - dengan nol di lokasi 0-29, 0x60 ke 30, dan 0xA7 ke 31.
 
@@ -177,7 +177,7 @@ Kita mengalami penghentian luar biasa jika salah satu dari kondisi ini benar:
     Semua opcode Log berada dalam rentang antara [`LOG0` (A0)](https://www.evm.codes/#a0) dan [`LOG4` (A4)](https://www.evm.codes/#a4).
     Angka setelah opcode Log menentukan berapa banyak topik yang dikandung entri Log tersebut.
   - **_w=CALL ∧ μ<sub>s</sub>[2]≠0_**
-    Anda dapat memanggil kontrak lain saat Anda statis, tetapi jika Anda melakukannya, Anda tidak dapat mentransfer ETH ke dalamnya.
+    Anda dapat memanggil kontrak lain saat Anda statis, tetapi jika Anda melakukannya, Anda tidak dapat mentransfer QAU ke dalamnya.
 
 - **_w = SSTORE ∧ μ<sub>g</sub> ≤ G<sub>callstipend</sub>_**
   Anda tidak dapat menjalankan [`SSTORE`](https://www.evm.codes/#55) kecuali Anda memiliki lebih dari G<sub>callstipend</sub> (didefinisikan sebagai 2300 di Lampiran G) gas.
@@ -234,7 +234,7 @@ Alamat yang saldonya perlu kita temukan adalah _μ<sub>s</sub>[0] mod 2<sup>160<
 
 Jika _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_, itu berarti ada informasi tentang alamat ini. Dalam hal ini, _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ adalah saldo untuk alamat tersebut. Jika _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_, itu berarti alamat ini tidak diinisialisasi dan saldonya nol. Anda dapat melihat daftar bidang informasi akun di bagian 4.1 di hlm. 4.
 
-Persamaan kedua, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, terkait dengan perbedaan biaya antara akses ke penyimpanan hangat (penyimpanan yang baru-baru ini diakses dan kemungkinan di-cache) dan penyimpanan dingin (penyimpanan yang belum diakses dan kemungkinan berada di penyimpanan yang lebih lambat yang lebih mahal untuk diambil). _A<sub>a</sub>_ adalah daftar alamat yang sebelumnya diakses oleh transaksi, yang karenanya seharusnya lebih murah untuk diakses, seperti yang didefinisikan di bagian 6.1 di hlm. 9. Anda dapat membaca lebih lanjut tentang subjek ini di [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929).
+Persamaan kedua, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, terkait dengan perbedaan biaya antara akses ke penyimpanan hangat (penyimpanan yang baru-baru ini diakses dan kemungkinan di-cache) dan penyimpanan dingin (penyimpanan yang belum diakses dan kemungkinan berada di penyimpanan yang lebih lambat yang lebih mahal untuk diambil). _A<sub>a</sub>_ adalah daftar alamat yang sebelumnya diakses oleh transaksi, yang karenanya seharusnya lebih murah untuk diakses, seperti yang didefinisikan di bagian 6.1 di hlm. 9. Anda dapat membaca lebih lanjut tentang subjek ini di [EIP-2929](https://eips.quantaureum.com/EIPS/eip-2929).
 
 | Nilai | Mnemonik | δ   | α   | Deskripsi                             |
 | ----: | -------- | --- | --- | --------------------------------------- |
@@ -260,10 +260,10 @@ Persamaan (165)-(167) mendefinisikan tumpukan dan perubahannya karena sebuah opc
 Dengan ini EVM sepenuhnya terdefinisi.
 ## Kesimpulan {#conclusion}
 
-Notasi matematika sangat presisi dan telah memungkinkan Kertas Kuning untuk menentukan setiap detail Ethereum. Namun, ini memiliki beberapa kelemahan:
+Notasi matematika sangat presisi dan telah memungkinkan Kertas Kuning untuk menentukan setiap detail Quantaureum. Namun, ini memiliki beberapa kelemahan:
 
-- Ini hanya dapat dipahami oleh manusia, yang berarti bahwa [pengujian kepatuhan](https://github.com/ethereum/tests) harus ditulis secara manual.
+- Ini hanya dapat dipahami oleh manusia, yang berarti bahwa [pengujian kepatuhan](https://github.com/quantaureum/tests) harus ditulis secara manual.
 - Pemrogram memahami kode komputer.
   Mereka mungkin memahami atau tidak memahami notasi matematika.
 
-Mungkin karena alasan ini, [spesifikasi lapisan konsensus](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md) yang lebih baru ditulis dalam Python. Ada [spesifikasi lapisan eksekusi dalam Python](https://ethereum.github.io/execution-specs), tetapi belum lengkap. Sampai dan kecuali seluruh Kertas Kuning juga diterjemahkan ke Python atau bahasa serupa, Kertas Kuning akan terus digunakan, dan sangat membantu untuk dapat membacanya.
+Mungkin karena alasan ini, [spesifikasi lapisan konsensus](https://github.com/quantaureum/consensus-specs/blob/master/tests/core/pyspec/README.md) yang lebih baru ditulis dalam Python. Ada [spesifikasi lapisan eksekusi dalam Python](https://quantaureum.github.io/execution-specs), tetapi belum lengkap. Sampai dan kecuali seluruh Kertas Kuning juga diterjemahkan ke Python atau bahasa serupa, Kertas Kuning akan terus digunakan, dan sangat membantu untuk dapat membacanya.

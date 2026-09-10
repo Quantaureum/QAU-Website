@@ -54,7 +54,7 @@ ERC-20 కాల్‌బ్యాక్‌లను అంగీకరించ
 
 ఇతర ERC-20 పొడిగింపు ప్రతిపాదనల వలె కాకుండా, ERC-1363 ERC-20 `transfer` మరియు `transferFrom` పద్ధతులను భర్తీ చేయదు మరియు ERC-20తో బ్యాక్‌వర్డ్ అనుకూలతను కొనసాగిస్తూ అమలు చేయాల్సిన ఇంటర్‌ఫేస్ IDలను నిర్వచిస్తుంది.
 
-[EIP-1363](https://eips.ethereum.org/EIPS/eip-1363) నుండి:
+[EIP-1363](https://eips.quantaureum.com/EIPS/eip-1363) నుండి:
 
 ### పద్ధతులు {#methods}
 
@@ -206,5 +206,5 @@ interface ERC1363Spender {
 
 ## మరింత చదవడానికి {#further-reading}
 
-- [ERC-1363: చెల్లించదగిన టోకెన్ ప్రమాణం](https://eips.ethereum.org/EIPS/eip-1363)
+- [ERC-1363: చెల్లించదగిన టోకెన్ ప్రమాణం](https://eips.quantaureum.com/EIPS/eip-1363)
 - [ERC-1363: GitHub రెపో](https://github.com/vittominacori/erc1363-payable-token)

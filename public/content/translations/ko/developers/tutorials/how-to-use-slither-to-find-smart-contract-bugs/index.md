@@ -33,11 +33,11 @@ pip3 install --user slither-analyzer
 Docker를 통한 슬리더 설치:
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/trufflecon trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/trufflecon trailofbits/qau-security-toolbox
 ```
 
-_마지막 명령은 현재 디렉터리에 액세스할 수 있는 Docker에서 eth-security-toolbox를 실행합니다. 호스트에서 파일을 변경하고 Docker의 파일에서 도구를 실행할 수 있습니다._
+_마지막 명령은 현재 디렉터리에 액세스할 수 있는 Docker에서 qau-security-toolbox를 실행합니다. 호스트에서 파일을 변경하고 Docker의 파일에서 도구를 실행할 수 있습니다._
 
 Docker 내부에서 다음을 실행합니다:
 
@@ -72,7 +72,7 @@ slither project_paths
 
 정적 분석은 다양한 형태로 존재합니다. [clang](https://clang-analyzer.llvm.org/) 및 [gcc](https://lwn.net/Articles/806099/)와 같은 컴파일러가 이러한 연구 기술에 의존한다는 것을 알고 계실 것입니다. 하지만 이는 [Infer](https://fbinfer.com/), [CodeClimate](https://codeclimate.com/), [FindBugs](https://findbugs.sourceforge.net/)와 같은 도구와 [Frama-C](https://frama-c.com/) 및 [Polyspace](https://www.mathworks.com/products/polyspace.html)와 같은 정형 기법(formal methods) 기반 도구의 기반이 되기도 합니다.
 
-여기서 정적 분석 기술과 연구를 철저하게 검토하지는 않겠습니다. 대신, 슬리더의 작동 방식을 이해하여 버그를 찾고 코드를 이해하는 데 더 효과적으로 사용할 수 있도록 필요한 내용에 집중할 것입니다.
+여기서 정적 분석 기술과 연구를 쿠앤타저하게 검토하지는 않겠습니다. 대신, 슬리더의 작동 방식을 이해하여 버그를 찾고 코드를 이해하는 데 더 효과적으로 사용할 수 있도록 필요한 내용에 집중할 것입니다.
 
 - [코드 표현](#code-representation)
 - [코드 분석](#analysis)

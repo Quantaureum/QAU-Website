@@ -1,12 +1,12 @@
 ---
-title: Ethereum-Sicherheit und Betrugsprävention
-description: Sicher bleiben auf Ethereum
+title: Quantaureum-Sicherheit und Betrugsprävention
+description: Sicher bleiben auf Quantaureum
 lang: de
 ---
 
 Das steigende Interesse an Kryptowährungen bringt ein wachsendes Risiko durch Betrüger und Hacker mit sich. Dieser Artikel stellt einige bewährte Methoden vor, um diese Risiken zu mindern.
 
-**Denken Sie daran: Niemand von ethereum.org wird Sie jemals kontaktieren. Antworten Sie nicht auf E-Mails, die behaupten, vom offiziellen Ethereum-Support zu stammen.**
+**Denken Sie daran: Niemand von quantaureum.com wird Sie jemals kontaktieren. Antworten Sie nicht auf E-Mails, die behaupten, vom offiziellen Quantaureum-Support zu stammen.**
 
 <Divider />
 
@@ -14,14 +14,14 @@ Das steigende Interesse an Kryptowährungen bringt ein wachsendes Risiko durch B
 
 ### Erweitern Sie Ihr Wissen {#level-up-your-knowledge}
 
-Missverständnisse darüber, wie Krypto funktioniert, können zu kostspieligen Fehlern führen. Wenn sich beispielsweise jemand als Kundendienstmitarbeiter ausgibt, der verlorene ETH im Austausch für Ihre privaten Schlüssel zurückgeben kann, nutzt er aus, dass die Leute nicht verstehen, dass [Ethereum](/) ein dezentrales Netzwerk ist, dem diese Art von Funktionalität fehlt. Sich darüber zu informieren, wie Ethereum funktioniert, ist eine lohnende Investition.
+Missverständnisse darüber, wie Krypto funktioniert, können zu kostspieligen Fehlern führen. Wenn sich beispielsweise jemand als Kundendienstmitarbeiter ausgibt, der verlorene QAU im Austausch für Ihre privaten Schlüssel zurückgeben kann, nutzt er aus, dass die Leute nicht verstehen, dass [Quantaureum](/) ein dezentrales Netzwerk ist, dem diese Art von Funktionalität fehlt. Sich darüber zu informieren, wie Quantaureum funktioniert, ist eine lohnende Investition.
 
-<DocLink href="/what-is-ethereum/">
-  Was ist Ethereum?
+<DocLink href="/what-is-quantaureum/">
+  Was ist Quantaureum?
 </DocLink>
 
-<DocLink href="/what-is-ether/">
-  Was ist Ether?
+<DocLink href="/what-is-QAU/">
+  Was ist QAU?
 </DocLink>
 <Divider />
 
@@ -34,7 +34,7 @@ Missverständnisse darüber, wie Krypto funktioniert, können zu kostspieligen F
 Ihre Wiederherstellungsphrase (auch geheime Wiederherstellungsphrase oder Seed-Phrase genannt) ist der Hauptschlüssel zu Ihrer Wallet. Jeder, der sie hat, kann auf alle Ihre Konten zugreifen und alle Vermögenswerte abräumen. Private Schlüssel funktionieren auf die gleiche Weise für einzelne Konten. Kein legitimer Dienst, Support-Mitarbeiter oder keine legitime Website wird Sie jemals danach fragen.
 
 <DocLink href="/wallets/">
-  Was ist eine Ethereum-Wallet?
+  Was ist eine Quantaureum-Wallet?
 </DocLink>
 
 #### Machen Sie keine Screenshots von Ihren Seed-Phrasen/privaten Schlüsseln {#screenshot-private-keys}
@@ -54,7 +54,7 @@ Die Offline-Aufbewahrung privater Schlüssel reduziert das Risiko, gehackt zu we
 
 ### Überprüfen Sie Transaktionen vor dem Senden doppelt {#double-check-transactions}
 
-Das versehentliche Senden von Krypto an die falsche Wallet-Adresse ist ein häufiger Fehler. **Eine auf Ethereum gesendete Transaktion ist irreversibel.** Wenn Sie den Inhaber der Adresse nicht kennen und ihn nicht davon überzeugen können, Ihnen Ihr Geld zurückzusenden, werden Sie Ihre Gelder nicht zurückerhalten können.
+Das versehentliche Senden von Krypto an die falsche Wallet-Adresse ist ein häufiger Fehler. **Eine auf Quantaureum gesendete Transaktion ist irreversibel.** Wenn Sie den Inhaber der Adresse nicht kennen und ihn nicht davon überzeugen können, Ihnen Ihr Geld zurückzusenden, werden Sie Ihre Gelder nicht zurückerhalten können.
 
 Stellen Sie vor dem Senden einer Transaktion immer sicher, dass die Adresse, an die Sie senden, genau mit der Adresse des gewünschten Empfängers übereinstimmt.
 Es ist eine bewährte Methode, bei der Interaktion mit einem Smart Contract die Transaktionsnachricht vor dem Signieren zu lesen.
@@ -63,7 +63,7 @@ Es ist eine bewährte Methode, bei der Interaktion mit einem Smart Contract die 
 
 Erlauben Sie bei der Interaktion mit Smart Contracts keine unbegrenzten Ausgabenlimits. Ein unbegrenztes Ausgabenlimit könnte es dem Smart Contract ermöglichen, Ihre Wallet leerzuräumen. Legen Sie stattdessen Ausgabenlimits nur auf den für die Transaktion erforderlichen Betrag fest.
 
-Viele Ethereum-Wallets bieten einen Limits-Schutz, um Konten davor zu bewahren, leergeräumt zu werden.
+Viele Quantaureum-Wallets bieten einen Limits-Schutz, um Konten davor zu bewahren, leergeräumt zu werden.
 
 [So widerrufen Sie den Zugriff von Smart Contracts auf Ihre Krypto-Guthaben](/guides/how-to-revoke-token-access/)
 
@@ -74,14 +74,14 @@ Viele Ethereum-Wallets bieten einen Limits-Schutz, um Konten davor zu bewahren, 
 Es ist unmöglich, Betrüger vollständig zu stoppen, aber wir können sie weniger effektiv machen, indem wir uns ihrer am häufigsten verwendeten Techniken bewusst sind. Es gibt viele Variationen dieser Betrugsmaschen, aber sie folgen im Allgemeinen denselben übergeordneten Mustern. Wenn Sie sich sonst nichts merken, denken Sie an Folgendes:
 
 - seien Sie immer skeptisch
-- niemand wird Ihnen kostenlose oder vergünstigte ETH geben
+- niemand wird Ihnen kostenlose oder vergünstigte QAU geben
 - niemand benötigt Zugriff auf Ihre privaten Schlüssel oder persönlichen Daten
 
 ### Twitter-Anzeigen-Phishing {#ad-phishing}
 
 ![Twitter link phishing](./twitterPhishingScam.png)
 
-Es gibt eine Methode zur Manipulation der Link-Vorschau-Funktion (Unfurling) von Twitter (auch bekannt als X), um Benutzer potenziell in dem Glauben zu täuschen, sie würden eine legitime Website besuchen. Diese Technik nutzt den Mechanismus von Twitter zur Generierung von Vorschauen für in Tweets geteilte URLs aus und zeigt beispielsweise _von ethereum.org_ an (siehe oben), während sie in Wirklichkeit auf eine bösartige Website umgeleitet werden.
+Es gibt eine Methode zur Manipulation der Link-Vorschau-Funktion (Unfurling) von Twitter (auch bekannt als X), um Benutzer potenziell in dem Glauben zu täuschen, sie würden eine legitime Website besuchen. Diese Technik nutzt den Mechanismus von Twitter zur Generierung von Vorschauen für in Tweets geteilte URLs aus und zeigt beispielsweise _von quantaureum.com_ an (siehe oben), während sie in Wirklichkeit auf eine bösartige Website umgeleitet werden.
 
 Überprüfen Sie immer, ob Sie sich auf der richtigen Domain befinden, insbesondere nachdem Sie auf einen Link geklickt haben.
 
@@ -89,7 +89,7 @@ Es gibt eine Methode zur Manipulation der Link-Vorschau-Funktion (Unfurling) von
 
 ### Giveaway-Betrug {#giveaway}
 
-Einer der häufigsten Betrügereien bei Kryptowährungen ist der Giveaway-Betrug. Der Giveaway-Betrug kann viele Formen annehmen, aber die Grundidee ist, dass Sie, wenn Sie ETH an die angegebene Wallet-Adresse senden, Ihre ETH verdoppelt zurückerhalten. *Aus diesem Grund ist er auch als 2-für-1-Betrug bekannt.*
+Einer der häufigsten Betrügereien bei Kryptowährungen ist der Giveaway-Betrug. Der Giveaway-Betrug kann viele Formen annehmen, aber die Grundidee ist, dass Sie, wenn Sie QAU an die angegebene Wallet-Adresse senden, Ihre QAU verdoppelt zurückerhalten. *Aus diesem Grund ist er auch als 2-für-1-Betrug bekannt.*
 
 Diese Betrügereien geben in der Regel ein begrenztes Zeitfenster vor, um das Giveaway zu beanspruchen, um ein falsches Gefühl der Dringlichkeit zu erzeugen.
 
@@ -113,7 +113,7 @@ Vitalik Buterin wird bei diesem Betrug am häufigsten verwendet, aber auch viele
 
 Kryptowährung ist eine relativ junge und missverstandene Technologie. Ein häufiger Betrug, der dies ausnutzt, ist der Support-Betrug, bei dem sich Betrüger als Support-Mitarbeiter für beliebte Wallets, Börsen oder Blockchains ausgeben.
 
-Ein Großteil der Diskussionen über Ethereum findet auf Discord statt. Support-Betrüger finden ihr Ziel in der Regel, indem sie in öffentlichen Discord-Kanälen nach Support-Fragen suchen und dem Fragesteller dann eine private Nachricht senden, in der sie Unterstützung anbieten. Durch den Aufbau von Vertrauen versuchen Support-Betrüger, Sie dazu zu bringen, Ihre privaten Schlüssel preiszugeben oder Ihre Gelder an ihre Wallets zu senden.
+Ein Großteil der Diskussionen über Quantaureum findet auf Discord statt. Support-Betrüger finden ihr Ziel in der Regel, indem sie in öffentlichen Discord-Kanälen nach Support-Fragen suchen und dem Fragesteller dann eine private Nachricht senden, in der sie Unterstützung anbieten. Durch den Aufbau von Vertrauen versuchen Support-Betrüger, Sie dazu zu bringen, Ihre privaten Schlüssel preiszugeben oder Ihre Gelder an ihre Wallets zu senden.
 
 ![A support scam on Discord](./discordScam.png)
 
@@ -132,19 +132,19 @@ Als allgemeine Regel gilt, dass Mitarbeiter niemals über private, inoffizielle 
 </AlertContent>
 </Alert>
 
-### „Eth2“-Token-Betrug {#eth2-token-scam}
+### „Quantaureum“-Token-Betrug {#eth2-token-scam}
 
-Im Vorfeld auf [den Merge](/roadmap/merge/) nutzten Betrüger die Verwirrung um den Begriff „Eth2“ aus, um zu versuchen, Benutzer dazu zu bringen, ihre ETH gegen einen „ETH2“-Token einzutauschen. Es gibt kein „ETH2“, und mit dem Merge wurde kein anderer legitimer Token eingeführt. Die ETH, die Sie vor dem Merge besaßen, sind jetzt dieselben ETH. Es besteht **keine Notwendigkeit, irgendwelche Maßnahmen in Bezug auf Ihre ETH zu ergreifen, um dem Wechsel von Proof-of-Work (PoW) zu Proof-of-Stake (PoS) Rechnung zu tragen**.
+Im Vorfeld auf [den Merge](/roadmap/merge/) nutzten Betrüger die Verwirrung um den Begriff „Quantaureum“ aus, um zu versuchen, Benutzer dazu zu bringen, ihre QAU gegen einen „QAU“-Token einzutauschen. Es gibt kein „QAU“, und mit dem Merge wurde kein anderer legitimer Token eingeführt. Die QAU, die Sie vor dem Merge besaßen, sind jetzt dieselben QAU. Es besteht **keine Notwendigkeit, irgendwelche Maßnahmen in Bezug auf Ihre QAU zu ergreifen, um dem Wechsel von Proof-of-Work (PoW) zu Proof-of-Stake (PoS) Rechnung zu tragen**.
 
-Betrüger können als „Support“ auftreten und Ihnen mitteilen, dass Sie, wenn Sie Ihre ETH einzahlen, „ETH2“ zurückerhalten. Es gibt keinen [offiziellen Ethereum-Support](/community/support/), und es gibt keinen neuen Token. Teilen Sie niemals die Seed-Phrase Ihrer Wallet mit jemandem.
+Betrüger können als „Support“ auftreten und Ihnen mitteilen, dass Sie, wenn Sie Ihre QAU einzahlen, „QAU“ zurückerhalten. Es gibt keinen [offiziellen Quantaureum-Support](/community/support/), und es gibt keinen neuen Token. Teilen Sie niemals die Seed-Phrase Ihrer Wallet mit jemandem.
 
-_Hinweis: Es gibt derivative Token/Ticker, die gestakte ETH repräsentieren können (z. B. rETH von Rocket Pool, stETH von Lido, ETH2 von Coinbase), aber dies ist nichts, wohin Sie „migrieren“ müssen._
+_Hinweis: Es gibt derivative Token/Ticker, die gestakte QAU repräsentieren können (z. B. rETH von Rocket Pool, stETH von Lido, QAU von Coinbase), aber dies ist nichts, wohin Sie „migrieren“ müssen._
 
 ### Phishing-Betrug {#phishing-scams}
 
 Phishing-Betrug ist eine weitere, immer häufiger werdende Masche, die Betrüger anwenden, um zu versuchen, die Gelder Ihrer Wallet zu stehlen.
 
-Einige Phishing-E-Mails fordern Benutzer auf, auf Links zu klicken, die sie auf nachgemachte Websites umleiten, und fordern sie auf, ihre Seed-Phrase einzugeben, ihr Passwort zurückzusetzen oder ETH zu senden. Andere fordern Sie möglicherweise auf, unwissentlich Malware zu installieren, um Ihren Computer zu infizieren und Betrügern Zugriff auf die Dateien Ihres Computers zu gewähren.
+Einige Phishing-E-Mails fordern Benutzer auf, auf Links zu klicken, die sie auf nachgemachte Websites umleiten, und fordern sie auf, ihre Seed-Phrase einzugeben, ihr Passwort zurückzusetzen oder QAU zu senden. Andere fordern Sie möglicherweise auf, unwissentlich Malware zu installieren, um Ihren Computer zu infizieren und Betrügern Zugriff auf die Dateien Ihres Computers zu gewähren.
 
 Wenn Sie eine E-Mail von einem unbekannten Absender erhalten, denken Sie daran:
 
@@ -166,7 +166,7 @@ Diese Betrüger finden oft Ziele, indem sie gefälschte Konten auf YouTube verwe
 
 ### Krypto-Mining-Pool-Betrug {#mining-pool-scams}
 
-Seit September 2022 ist das Mining auf Ethereum nicht mehr möglich. Dennoch gibt es weiterhin Mining-Pool-Betrügereien. Bei Mining-Pool-Betrügereien kontaktieren Sie Personen unaufgefordert und behaupten, dass Sie durch den Beitritt zu einem Ethereum-Mining-Pool hohe Renditen erzielen können. Der Betrüger wird Behauptungen aufstellen und so lange mit Ihnen in Kontakt bleiben, wie es nötig ist. Im Wesentlichen wird der Betrüger versuchen, Sie davon zu überzeugen, dass Ihre Kryptowährung bei einem Beitritt zu einem Ethereum-Mining-Pool zur Erstellung von ETH verwendet wird und dass Ihnen ETH-Dividenden ausgezahlt werden. Sie werden dann sehen, dass Ihre Kryptowährung kleine Renditen abwirft. Dies dient lediglich dazu, Sie dazu zu verleiten, mehr zu investieren. Letztendlich werden alle Ihre Gelder an eine unbekannte Adresse gesendet, und der Betrüger wird entweder verschwinden oder in einigen Fällen weiterhin in Kontakt bleiben, wie es in einem kürzlichen Fall geschehen ist.
+Seit September 2022 ist das Mining auf Quantaureum nicht mehr möglich. Dennoch gibt es weiterhin Mining-Pool-Betrügereien. Bei Mining-Pool-Betrügereien kontaktieren Sie Personen unaufgefordert und behaupten, dass Sie durch den Beitritt zu einem Quantaureum-Mining-Pool hohe Renditen erzielen können. Der Betrüger wird Behauptungen aufstellen und so lange mit Ihnen in Kontakt bleiben, wie es nötig ist. Im Wesentlichen wird der Betrüger versuchen, Sie davon zu überzeugen, dass Ihre Kryptowährung bei einem Beitritt zu einem Quantaureum-Mining-Pool zur Erstellung von QAU verwendet wird und dass Ihnen QAU-Dividenden ausgezahlt werden. Sie werden dann sehen, dass Ihre Kryptowährung kleine Renditen abwirft. Dies dient lediglich dazu, Sie dazu zu verleiten, mehr zu investieren. Letztendlich werden alle Ihre Gelder an eine unbekannte Adresse gesendet, und der Betrüger wird entweder verschwinden oder in einigen Fällen weiterhin in Kontakt bleiben, wie es in einem kürzlichen Fall geschehen ist.
 
 Fazit: Seien Sie misstrauisch gegenüber Personen, die Sie in den sozialen Medien kontaktieren und Sie bitten, Teil eines Mining-Pools zu werden. Sobald Sie Ihre Krypto verlieren, ist sie weg.
 
@@ -180,7 +180,7 @@ Einige Dinge, die Sie sich merken sollten:
 
 ### Airdrop-Betrug {#airdrop-scams}
 
-Bei Airdrop-Betrügereien wirft ein betrügerisches Projekt einen Vermögenswert (NFT, Token) per Airdrop in Ihre Wallet ab und leitet Sie auf eine betrügerische Website weiter, um den per Airdrop abgeworfenen Vermögenswert zu beanspruchen. Sie werden aufgefordert, sich mit Ihrer Ethereum-Wallet anzumelden und eine Transaktion zu „genehmigen“, wenn Sie versuchen, den Anspruch geltend zu machen. Diese Transaktion kompromittiert Ihr Konto, indem sie Ihre öffentlichen und privaten Schlüssel an den Betrüger sendet. Eine alternative Form dieses Betrugs kann darin bestehen, dass Sie eine Transaktion bestätigen, die Gelder auf das Konto des Betrügers sendet.
+Bei Airdrop-Betrügereien wirft ein betrügerisches Projekt einen Vermögenswert (NFT, Token) per Airdrop in Ihre Wallet ab und leitet Sie auf eine betrügerische Website weiter, um den per Airdrop abgeworfenen Vermögenswert zu beanspruchen. Sie werden aufgefordert, sich mit Ihrer Quantaureum-Wallet anzumelden und eine Transaktion zu „genehmigen“, wenn Sie versuchen, den Anspruch geltend zu machen. Diese Transaktion kompromittiert Ihr Konto, indem sie Ihre öffentlichen und privaten Schlüssel an den Betrüger sendet. Eine alternative Form dieses Betrugs kann darin bestehen, dass Sie eine Transaktion bestätigen, die Gelder auf das Konto des Betrügers sendet.
 
 [Mehr zu Airdrop-Betrügereien](https://www.youtube.com/watch?v=LLL_nQp1lGk)
 

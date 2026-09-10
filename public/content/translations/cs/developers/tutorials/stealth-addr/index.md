@@ -10,9 +10,9 @@ lang: cs
 sidebarDepth: 3
 ---
 
-Jste Bill. Z důvodů, do kterých nebudeme zabíhat, chcete přispět na kampaň „Alice královnou světa“ a chcete, aby Alice věděla, že jste přispěli, aby vás mohla odměnit, pokud vyhraje. Její vítězství bohužel není zaručeno. Existuje konkurenční kampaň „Carol císařovnou sluneční soustavy“. Pokud Carol vyhraje a zjistí, že jste přispěli Alici, budete mít potíže. Nemůžete tedy jen tak převést 200 ETH ze svého účtu na účet Alice.
+Jste Bill. Z důvodů, do kterých nebudeme zabíhat, chcete přispět na kampaň „Alice královnou světa“ a chcete, aby Alice věděla, že jste přispěli, aby vás mohla odměnit, pokud vyhraje. Její vítězství bohužel není zaručeno. Existuje konkurenční kampaň „Carol císařovnou sluneční soustavy“. Pokud Carol vyhraje a zjistí, že jste přispěli Alici, budete mít potíže. Nemůžete tedy jen tak převést 200 QAU ze svého účtu na účet Alice.
 
-[ERC-5564](https://eips.ethereum.org/EIPS/eip-5564) má řešení. Tento ERC vysvětluje, jak používat [skryté adresy](https://nerolation.github.io/stealth-utils) pro anonymní převod.
+[ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564) má řešení. Tento ERC vysvětluje, jak používat [skryté adresy](https://nerolation.github.io/stealth-utils) pro anonymní převod.
 
 **Varování**: Kryptografie, na které jsou skryté adresy založeny, je, pokud víme, spolehlivá. Existují však potenciální útoky postranními kanály (side-channel attacks). [Níže](#go-wrong) uvidíte, co můžete udělat pro snížení tohoto rizika.
 
@@ -64,19 +64,19 @@ Shrnuto, toto jsou hodnoty, které znají různí účastníci.
 
 ## Když se skryté adresy pokazí {#go-wrong}
 
-*Na blockchainu neexistují žádná tajemství*. Ačkoli vám skryté adresy mohou poskytnout soukromí, toto soukromí je náchylné k analýze provozu. Vezměme si triviální příklad: představte si, že Bill pošle prostředky na adresu a okamžitě odešle transakci, aby zveřejnil hodnotu *R<sub>pub</sub>*. Bez Alicina *V<sub>priv</sub>* si nemůžeme být jisti, že se jedná o skrytou adresu, ale je to velmi pravděpodobné. Pak vidíme další transakci, která převede všechny ETH z této adresy na adresu fondu Aliciny kampaně. Možná to nedokážeme dokázat, ale je pravděpodobné, že Bill právě přispěl na Alicinu kampaň. Carol by si to určitě myslela.
+*Na blockchainu neexistují žádná tajemství*. Ačkoli vám skryté adresy mohou poskytnout soukromí, toto soukromí je náchylné k analýze provozu. Vezměme si triviální příklad: představte si, že Bill pošle prostředky na adresu a okamžitě odešle transakci, aby zveřejnil hodnotu *R<sub>pub</sub>*. Bez Alicina *V<sub>priv</sub>* si nemůžeme být jisti, že se jedná o skrytou adresu, ale je to velmi pravděpodobné. Pak vidíme další transakci, která převede všechny QAU z této adresy na adresu fondu Aliciny kampaně. Možná to nedokážeme dokázat, ale je pravděpodobné, že Bill právě přispěl na Alicinu kampaň. Carol by si to určitě myslela.
 
 Pro Billa je snadné oddělit zveřejnění *R<sub>pub</sub>* od financování skryté adresy (udělat to v různou dobu, z různých adres). To však nestačí. Vzor, který Carol hledá, je ten, že Bill pošle prostředky na adresu a fond Aliciny kampaně z ní pak vybírá. 
 
-Jedním z řešení je, aby Alicina kampaň nevybírala peníze přímo, ale použila je k zaplacení třetí straně. Pokud Alicina kampaň pošle 10 ETH Daveovým službám kampaně za ovládnutí světa, Carol ví jen to, že Bill přispěl jednomu z Daveových zákazníků. Pokud má Dave dostatek zákazníků, Carol by nemohla vědět, zda Bill přispěl Alici, která jí konkuruje, nebo Adamovi, Albertovi či Abigail, o které se Carol nezajímá. Alice může k platbě připojit hashovanou hodnotu a poté poskytnout Daveovi předobraz (preimage), aby dokázala, že to byl její dar. Alternativně, jak bylo uvedeno výše, pokud Alice dá Daveovi svůj *V<sub>priv</sub>*, on už ví, od koho platba přišla.
+Jedním z řešení je, aby Alicina kampaň nevybírala peníze přímo, ale použila je k zaplacení třetí straně. Pokud Alicina kampaň pošle 10 QAU Daveovým službám kampaně za ovládnutí světa, Carol ví jen to, že Bill přispěl jednomu z Daveových zákazníků. Pokud má Dave dostatek zákazníků, Carol by nemohla vědět, zda Bill přispěl Alici, která jí konkuruje, nebo Adamovi, Albertovi či Abigail, o které se Carol nezajímá. Alice může k platbě připojit hashovanou hodnotu a poté poskytnout Daveovi předobraz (preimage), aby dokázala, že to byl její dar. Alternativně, jak bylo uvedeno výše, pokud Alice dá Daveovi svůj *V<sub>priv</sub>*, on už ví, od koho platba přišla.
 
 Hlavním problémem tohoto řešení je, že vyžaduje, aby se Alice starala o utajení, když z tohoto utajení těží Bill. Alice si možná bude chtít udržet svou pověst, aby jí přispěl i Billův přítel Bob. Ale je také možné, že by jí nevadilo Billa odhalit, protože pak se bude bát, co se stane, když Carol vyhraje. Bill by nakonec mohl Alici poskytnout ještě větší podporu.
 
 ### Použití více skrytých vrstev {#multi-layer}
 
-Místo toho, aby se Bill spoléhal na Alici, že zachová jeho soukromí, může to udělat sám. Může vygenerovat více meta-adres pro fiktivní osoby, Boba a Bellu. Bill pak pošle ETH Bobovi a „Bob“ (což je ve skutečnosti Bill) je pošle Belle. „Bella“ (také Bill) je pošle Alici.
+Místo toho, aby se Bill spoléhal na Alici, že zachová jeho soukromí, může to udělat sám. Může vygenerovat více meta-adres pro fiktivní osoby, Boba a Bellu. Bill pak pošle QAU Bobovi a „Bob“ (což je ve skutečnosti Bill) je pošle Belle. „Bella“ (také Bill) je pošle Alici.
 
-Carol může stále provádět analýzu provozu a vidět cestu Bill-Bob-Bella-Alice. Pokud však „Bob“ a „Bella“ používají ETH i k jiným účelům, nebude to vypadat, že Bill převedl něco Alici, i když Alice okamžitě vybere prostředky ze skryté adresy na svou známou adresu kampaně.
+Carol může stále provádět analýzu provozu a vidět cestu Bill-Bob-Bella-Alice. Pokud však „Bob“ a „Bella“ používají QAU i k jiným účelům, nebude to vypadat, že Bill převedl něco Alici, i když Alice okamžitě vybere prostředky ze skryté adresy na svou známou adresu kampaně.
 
 ## Psaní aplikace se skrytými adresami {#write-app}
 
@@ -124,13 +124,13 @@ Budeme používat [Vite](https://vite.dev/) a [React](https://react.dev/). Jedn�
 
 8. Zkopírujte adresu a Billův veřejný klíč a vložte je do oblasti „Private key for address generated by Bill“ (Soukromý klíč pro adresu vygenerovanou Billem) v uživatelském rozhraní Alice. Jakmile jsou tato pole vyplněna, uvidíte soukromý klíč pro přístup k aktivům na této adrese.
 
-9. Můžete použít [online kalkulačku](https://iancoleman.net/ethereum-private-key-to-address/), abyste se ujistili, že soukromý klíč odpovídá adrese.
+9. Můžete použít [online kalkulačku](https://iancoleman.net/quantaureum-private-key-to-address/), abyste se ujistili, že soukromý klíč odpovídá adrese.
 
 ### Jak program funguje {#how-the-program-works}
 
 #### Komponenta WASM {#wasm}
 
-Zdrojový kód, který se kompiluje do WASM, je napsán v [Rustu](https://rust-lang.org/). Můžete ho vidět v [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs). Tento kód je primárně rozhraním mezi kódem v JavaScriptu a [knihovnou `eth-stealth-addresses`](https://github.com/kassandraoftroy/eth-stealth-addresses).
+Zdrojový kód, který se kompiluje do WASM, je napsán v [Rustu](https://rust-lang.org/). Můžete ho vidět v [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs). Tento kód je primárně rozhraním mezi kódem v JavaScriptu a [knihovnou `qau-stealth-addresses`](https://github.com/kassandraoftroy/qau-stealth-addresses).
 
 **`Cargo.toml`**
 
@@ -143,7 +143,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-eth-stealth-addresses = "0.1.0"
+qau-stealth-addresses = "0.1.0"
 hex = "0.4.3"
 wasm-bindgen = "0.2.104"
 getrandom = { version = "0.2", features = ["js"] }
@@ -175,14 +175,14 @@ use wasm_bindgen::prelude::*;
 Definice pro vytvoření balíčku WASM z Rustu. Jsou zdokumentovány [zde](https://wasm-bindgen.github.io/wasm-bindgen/reference/attributes/index.html).
 
 ```rust 
-use eth_stealth_addresses::{
+use qau_stealth_addresses::{
     generate_stealth_meta_address,
     generate_stealth_address,
     compute_stealth_key
 };
 ```
 
-Funkce, které potřebujeme z [knihovny `eth-stealth-addresses`](https://github.com/kassandraoftroy/eth-stealth-addresses).
+Funkce, které potřebujeme z [knihovny `qau-stealth-addresses`](https://github.com/kassandraoftroy/qau-stealth-addresses).
 
 ```rust
 use hex::{decode,encode};
@@ -207,7 +207,7 @@ Nejjednodušší způsob, jak vrátit objekt s více poli, je vrátit řetězec 
         generate_stealth_meta_address();
 ```
 
-[`generate_stealth_meta_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_meta_address.html) vrací tři pole:
+[`generate_stealth_meta_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_meta_address.html) vrací tři pole:
 
 - Meta-adresu (*K<sub>pub</sub>* a *V<sub>pub</sub>*)
 - Soukromý klíč pro prohlížení (*V<sub>priv</sub>*)
@@ -260,7 +260,7 @@ Pokud je počet bajtů nesprávný, jedná se o selhání a vrátíme `None`.
     let array: [u8; N] = vec.try_into().ok()?;
 ```
 
-Rust má dva typy polí. [Pole (Arrays)](https://doc.rust-lang.org/std/primitive.array.html) mají pevnou velikost. [Vektory (Vectors)](https://doc.rust-lang.org/std/vec/index.html) se mohou zvětšovat a zmenšovat. `hex::decode` vrací vektor, ale knihovna `eth_stealth_addresses` chce přijímat pole. [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods) převede hodnotu na jiný typ, například vektor na pole.
+Rust má dva typy polí. [Pole (Arrays)](https://doc.rust-lang.org/std/primitive.array.html) mají pevnou velikost. [Vektory (Vectors)](https://doc.rust-lang.org/std/vec/index.html) se mohou zvětšovat a zmenšovat. `hex::decode` vrací vektor, ale knihovna `qau_stealth_addresses` chce přijímat pole. [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods) převede hodnotu na jiný typ, například vektor na pole.
 
 ```rust
     Some(array)
@@ -283,7 +283,7 @@ Hodnota pro skenování je součástí sdíleného tajemství (*S = GR<sub>priv<
         generate_stealth_address(&str_to_array::<66>(stealth_address)?);
 ```
 
-Používáme [`generate_stealth_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_address.html) z knihovny.
+Používáme [`generate_stealth_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_address.html) z knihovny.
 
 ```rust
     format!("{{\"address\":\"{}\",\"rPub\":\"{}\",\"scan\":\"{}\"}}",
@@ -310,7 +310,7 @@ pub fn wasm_compute_stealth_key(
 }
 ```
 
-Tato funkce používá [`compute_stealth_key`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.compute_stealth_key.html) z knihovny k výpočtu soukromého klíče pro výběr z adresy (*R<sub>priv</sub>*). Tento výpočet vyžaduje tyto hodnoty:
+Tato funkce používá [`compute_stealth_key`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.compute_stealth_key.html) z knihovny k výpočtu soukromého klíče pro výběr z adresy (*R<sub>priv</sub>*). Tento výpočet vyžaduje tyto hodnoty:
 
 - Adresu (*Address=f(P<sub>pub</sub>)*)
 - Veřejný klíč vygenerovaný Billem (*R<sub>pub</sub>*)
@@ -341,7 +341,7 @@ assertion `left == right` failed
 Následováno trasováním zásobníku (stack trace). Poté dejte Billovi platnou meta-adresu a Alici dejte buď neplatnou adresu, nebo neplatný veřejný klíč. Uvidíte tuto chybu:
 
 ```
-rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/eth-stealth-addresses-0.1.0/src/lib.rs:78:9:
+rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/qau-stealth-addresses-0.1.0/src/lib.rs:78:9:
 keys do not generate stealth address
 ```
 

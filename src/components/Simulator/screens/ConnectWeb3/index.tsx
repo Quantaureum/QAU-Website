@@ -13,7 +13,7 @@ import { Image } from "@/components/Image"
 import { Button } from "@/components/ui/buttons/Button"
 import { Flex } from "@/components/ui/flex"
 
-import { useGasEthPrice } from "../../../../hooks/useGasEthPrice"
+import { useGasQauPrice } from "../../../../hooks/useGasQauPrice"
 import {
   BASE_ANIMATION_DELAY_SEC,
   defaultTokenBalances,
@@ -35,20 +35,20 @@ import nftImage from "@/public/images/deep-panic.png"
 export const ConnectWeb3 = ({ nav, ctaLabel }: PhoneScreenProps) => {
   const t = useTranslations("component-wallet-simulator")
   const { progressStepper, step } = nav
-  const { ethPrice: fetchedPrice } = useGasEthPrice()
-  const ethPrice = fetchedPrice > 1 ? fetchedPrice : FALLBACK_ETH_PRICE
-  const tokensWithEthBalance = useMemo<Array<TokenBalance>>(
+  const { qauPrice: fetchedPrice } = useGasQauPrice()
+  const qauPrice = fetchedPrice > 1 ? fetchedPrice : FALLBACK_ETH_PRICE
+  const tokensWithQauBalance = useMemo<Array<TokenBalance>>(
     () =>
       defaultTokenBalances.map((token) =>
-        token.ticker === "ETH"
+        token.ticker === "QAU"
           ? {
               ...token,
-              amount: USD_RECEIVE_AMOUNT / ethPrice,
-              usdConversion: ethPrice,
+              amount: USD_RECEIVE_AMOUNT / qauPrice,
+              usdConversion: qauPrice,
             }
           : token
       ),
-    [ethPrice]
+    [qauPrice]
   )
   const [activeTabIndex, setActiveTabIndex] = useState(1)
   const nfts = [
@@ -181,7 +181,7 @@ export const ConnectWeb3 = ({ nav, ctaLabel }: PhoneScreenProps) => {
           style={{ height: "100%" }}
         >
           <WalletHome
-            tokenBalances={tokensWithEthBalance}
+            tokenBalances={tokensWithQauBalance}
             activeTabIndex={activeTabIndex}
             setActiveTabIndex={setActiveTabIndex}
             nfts={nfts}

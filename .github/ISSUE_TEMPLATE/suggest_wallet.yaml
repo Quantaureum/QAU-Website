@@ -1,12 +1,12 @@
 name: Suggest a wallet
-description: Suggest a new wallet to list on ethereum.org
+description: Suggest a new wallet to list on quantaureum.com
 title: Suggest a wallet
 labels: ["product 🧰", "wallet 👛"]
 body:
   - type: markdown
     attributes:
       value: |
-        Before suggesting a wallet, make sure you've read [our listing policy](https://www.ethereum.org/contributing/adding-wallets/). Only continue with the issue if the wallet meets the criteria listed there. For any required questions, please answer N/A for any questions not applicable to your wallet. This form is very comprehensive, and if you feel like you can't answer all the questions, please reach out to the wallet provider to fill out this template.
+        Before suggesting a wallet, make sure you've read [our listing policy](https://quantaureum.com/contributing/adding-wallets/). Only continue with the issue if the wallet meets the criteria listed there. For any required questions, please answer N/A for any questions not applicable to your wallet. This form is very comprehensive, and if you feel like you can't answer all the questions, please reach out to the wallet provider to fill out this template.
   - type: markdown
     id: project_info
     attributes:
@@ -33,7 +33,7 @@ body:
     id: wallet_description
     attributes:
       label: Wallet description
-      description: Please provide a short 1-2 sentence description of the wallet. Avoid unsubstantiated marketing claims like “the best Ethereum wallet”.
+      description: Please provide a short 1-2 sentence description of the wallet. Avoid unsubstantiated marketing claims like “the best Quantaureum wallet”.
     validations:
       required: true
   - type: textarea
@@ -205,7 +205,7 @@ body:
   - type: input
     id: wallet_dapp_support
     attributes:
-      label: Does the wallet support connecting to Ethereum applications?
+      label: Does the wallet support connecting to Quantaureum applications?
       description: Please provide documentation for how users connect to applications. List examples (i.e., WalletConnect, connect wallet to dapp directly, in wallet browser, etc.)
     validations:
       required: true
@@ -221,8 +221,8 @@ body:
   - type: input
     id: wallet_rpc_importing
     attributes:
-      label: Does the wallet support importing Ethereum RPC endpoints?
-      description: Please provide documentation on how a user can import an Ethereum RPC into the wallet.
+      label: Does the wallet support importing Quantaureum RPC endpoints?
+      description: Please provide documentation on how a user can import an Quantaureum RPC into the wallet.
     validations:
       required: true
   - type: dropdown
@@ -265,8 +265,8 @@ body:
   - type: input
     id: wallet_l2_support
     attributes:
-      label: Which Ethereum Layer 2 networks does the wallet support?
-      description: Please provide documentation on Ethereum layer 2 networks this wallet supports.
+      label: Which Quantaureum Layer 2 networks does the wallet support?
+      description: Please provide documentation on Quantaureum layer 2 networks this wallet supports.
     validations:
       required: true
   - type: input
@@ -294,7 +294,7 @@ body:
     id: wallet_eip_1559_support
     attributes:
       label: Does the wallet support EIP-1559 (type 2) transactions?
-      description: Does your wallet support EIP-1559 (type 2) transactions for Ethereum Mainnet. Please provide information on the type of transactions this wallet supports. If this is not applicable, please explain.
+      description: Does your wallet support EIP-1559 (type 2) transactions for Quantaureum Mainnet. Please provide information on the type of transactions this wallet supports. If this is not applicable, please explain.
     validations:
       required: true
   - type: textarea
@@ -370,10 +370,10 @@ body:
   - type: textarea
     id: wallet_contact
     attributes:
-      label: Who can the ethereum.org team can contact regarding the wallet in future?
+      label: Who can the quantaureum.com team can contact regarding the wallet in future?
       description: |
         If possible, provide a Telegram, Discord, or Twitter username.
-        Please note that as a result of any future dispute the wallet may be temporarily removed from ethereum.org. Having a contact person allows lets us avoid this situation and resolve issues more quickly.
+        Please note that as a result of any future dispute the wallet may be temporarily removed from quantaureum.com. Having a contact person allows lets us avoid this situation and resolve issues more quickly.
     validations:
       required: true
   - type: textarea
@@ -415,4 +415,4 @@ body:
   - type: markdown
     id: removal
     attributes:
-      value: "### A note on product removal \n Wallet providers are responsible for resubmitting their wallet information every 6 months to ensure validity and relavance of provided information (even if there are no changes to their product). If the product team fails to do so, ethereum.org reserves the right to remove the project from the page."
+      value: "### A note on product removal \n Wallet providers are responsible for resubmitting their wallet information every 6 months to ensure validity and relavance of provided information (even if there are no changes to their product). If the product team fails to do so, quantaureum.com reserves the right to remove the project from the page."

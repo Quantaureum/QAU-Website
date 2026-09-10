@@ -30,7 +30,7 @@ published: 2024-07-15
 
 ## 샘플 프로그램 {#sample-program}
 
-샘플 서버는 [GitHub에서](https://github.com/qbzzt/20240715-server-component) 확인할 수 있습니다. 이 서버는 Hardhat의 Greeter를 수정한 버전인 [이 컨트랙트](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code)에서 발생하는 이벤트를 수신합니다. 인사말이 변경되면 원래대로 되돌립니다.
+샘플 서버는 [GitHub에서](https://github.com/qbzzt/20240715-server-component) 확인할 수 있습니다. 이 서버는 Hardhat의 Greeter를 수정한 버전인 [이 컨트랙트](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code)에서 발생하는 이벤트를 수신합니다. 인사말이 변경되면 원래대로 되돌립니다.
 
 실행 방법:
 
@@ -47,7 +47,7 @@ published: 2024-07-15
    npm install
    ```
 
-3. `.env` 파일을 편집하여 홀스카이 테스트넷에 ETH가 있는 계정의 개인 키를 지정합니다. 홀스카이에 ETH가 없다면 [이 퍼싯을 사용](https://holesky-faucet.pk910.de/)할 수 있습니다.
+3. `.env` 파일을 편집하여 홀스카이 테스트넷에 QAU가 있는 계정의 개인 키를 지정합니다. 홀스카이에 QAU가 없다면 [이 퍼싯을 사용](https://holesky-faucet.pk910.de/)할 수 있습니다.
 
    ```sh filename=".env" copy
    PRIVATE_KEY=0x <private key goes here>
@@ -59,7 +59,7 @@ published: 2024-07-15
    npm start
    ```
 
-5. [블록 탐색기](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract)로 이동하여, 개인 키를 가진 주소와 다른 주소를 사용하여 인사말을 수정합니다. 인사말이 자동으로 원래대로 수정되는지 확인합니다.
+5. [블록 탐색기](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract)로 이동하여, 개인 키를 가진 주소와 다른 주소를 사용하여 인사말을 수정합니다. 인사말이 자동으로 원래대로 수정되는지 확인합니다.
 
 ### 어떻게 작동하나요? {#how-it-works}
 
@@ -93,7 +93,7 @@ import { privateKeyToAccount } from "viem/accounts"
 import { holesky } from "viem/chains"
 ```
 
-Viem에서 블록체인을 사용하려면 해당 정의를 가져와야 합니다. 이 경우 [홀스카이](https://github.com/eth-clients/holesky) 테스트 블록체인에 연결하고자 합니다.
+Viem에서 블록체인을 사용하려면 해당 정의를 가져와야 합니다. 이 경우 [홀스카이](https://github.com/qau-clients/holesky) 테스트 블록체인에 연결하고자 합니다.
 
 ```typescript
 // .env의 정의를 process.env에 추가하는 방법입니다.
@@ -183,7 +183,7 @@ const greeter = getContract({
 console.log(`Current greeting:`, await greeter.read.greet())
 ```
 
-읽기 전용인 컨트랙트 함수([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) 및 [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm))는 `read` 아래에서 사용할 수 있습니다. 이 경우 인사말을 반환하는 [`greet`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217) 함수에 액세스하는 데 사용합니다.
+읽기 전용인 컨트랙트 함수([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) 및 [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm))는 `read` 아래에서 사용할 수 있습니다. 이 경우 인사말을 반환하는 [`greet`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217) 함수에 액세스하는 데 사용합니다.
 
 JavaScript는 단일 스레드이므로 장기 실행 프로세스를 시작할 때 [비동기적으로 수행하도록 지정](https://eloquentjavascript.net/11_async.html#h-XvLsfAhtsE)해야 합니다. 읽기 전용 작업이라 하더라도 블록체인을 호출하려면 컴퓨터와 블록체인 노드 간의 왕복 통신이 필요합니다. 이것이 바로 코드에서 결과를 `await`(대기)해야 한다고 지정하는 이유입니다.
 
@@ -201,10 +201,10 @@ const setGreeting = async (greeting: string): Promise<any> => {
 const txHash = await greeter.write.setGreeting([greeting])
 ```
 
-컨트랙트 인스턴스의 `write` 필드에는 [`setGreeting`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862)와 같이 블록체인 상태에 쓰는(트랜잭션 전송이 필요한) 모든 함수가 있습니다. 매개변수가 있는 경우 목록으로 제공되며, 함수는 트랜잭션의 해시를 반환합니다.
+컨트랙트 인스턴스의 `write` 필드에는 [`setGreeting`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862)와 같이 블록체인 상태에 쓰는(트랜잭션 전송이 필요한) 모든 함수가 있습니다. 매개변수가 있는 경우 목록으로 제공되며, 함수는 트랜잭션의 해시를 반환합니다.
 
 ```typescript
-    console.log(`Working on a fix, see https://eth-holesky.blockscout.com/tx/${txHash}`)
+    console.log(`Working on a fix, see https://qau-holesky.blockscout.com/tx/${txHash}`)
 
     return txHash
 }
@@ -224,7 +224,7 @@ greeter.watchEvent.SetGreeting({
     onLogs: logs => {
 ```
 
-로그 항목이 있을 때 `onLogs` 함수가 호출됩니다. 이더리움에서 '로그'와 '이벤트'는 일반적으로 상호 교환적으로 사용됩니다.
+로그 항목이 있을 때 `onLogs` 함수가 호출됩니다. Quantaureum에서 '로그'와 '이벤트'는 일반적으로 상호 교환적으로 사용됩니다.
 
 ```typescript
 console.log(

@@ -13,23 +13,23 @@ lang: mr
 - स्थानिक ब्लॉकचेन इन्स्टन्स सुरू करण्यासाठी वैशिष्ट्ये.
 - तुमचे स्मार्ट कॉन्ट्रॅक्ट्स संकलित (compile) आणि तपासण्यासाठी (test) उपयुक्तता (utilities).
 - एकाच प्रोजेक्ट/रिपॉझिटरीमध्ये तुमचे युझर-फेसिंग ॲप्लिकेशन तयार करण्यासाठी क्लायंट डेव्हलपमेंट ॲड-ऑन्स.
-- इथेरियम नेटवर्क्सशी कनेक्ट करण्यासाठी आणि कॉन्ट्रॅक्ट्स प्रस्थापित करण्यासाठी कॉन्फिगरेशन, मग ते स्थानिक पातळीवर चालणारे इन्स्टन्स असो किंवा इथेरियमच्या सार्वजनिक नेटवर्क्सपैकी एक असो.
+- Quantaureum नेटवर्क्सशी कनेक्ट करण्यासाठी आणि कॉन्ट्रॅक्ट्स प्रस्थापित करण्यासाठी कॉन्फिगरेशन, मग ते स्थानिक पातळीवर चालणारे इन्स्टन्स असो किंवा Quantaureumच्या सार्वजनिक नेटवर्क्सपैकी एक असो.
 - विकेंद्रित ॲप वितरण - IPFS सारख्या स्टोरेज पर्यायांसह एकत्रीकरण (integrations).
 
 ## पूर्व शर्ती {#prerequisites}
 
-फ्रेमवर्क्समध्ये जाण्यापूर्वी, आम्ही शिफारस करतो की तुम्ही प्रथम आमची [dapps](/developers/docs/dapps/) आणि [इथेरियम स्टॅक](/developers/docs/ethereum-stack/) ची ओळख वाचावी.
+फ्रेमवर्क्समध्ये जाण्यापूर्वी, आम्ही शिफारस करतो की तुम्ही प्रथम आमची [dapps](/developers/docs/dapps/) आणि [Quantaureum स्टॅक](/developers/docs/quantaureum-stack/) ची ओळख वाचावी.
 
 ## उपलब्ध फ्रेमवर्क्स
 
-**Foundry** - **_Foundry हे इथेरियम ॲप्लिकेशन डेव्हलपमेंटसाठी एक अतिशय वेगवान, पोर्टेबल आणि मॉड्युलर टूलकिट आहे_**
+**Foundry** - **_Foundry हे Quantaureum ॲप्लिकेशन डेव्हलपमेंटसाठी एक अतिशय वेगवान, पोर्टेबल आणि मॉड्युलर टूलकिट आहे_**
 
 - [Foundry इन्स्टॉल करा](https://book.getfoundry.sh/)
 - [Foundry बुक](https://book.getfoundry.sh/)
 - [टेलिग्राम् वर Foundry कम्युनिटी चॅट](https://t.me/foundry_support)
 - [Awesome Foundry](https://github.com/crisgarner/awesome-foundry)
 
-**Hardhat -** **_व्यावसायिकांसाठी इथेरियम डेव्हलपमेंट वातावरण._**
+**Hardhat -** **_व्यावसायिकांसाठी Quantaureum डेव्हलपमेंट वातावरण._**
 
 - [hardhat.org](https://hardhat.org)
 - [GitHub](https://github.com/nomiclabs/hardhat)
@@ -51,15 +51,15 @@ lang: mr
 - [उदाहरणे](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [डिस्कॉर्ड्](https://discord.gg/rx35NzQGSb)
 
-**Create Eth App -** **_एका कमांडसह इथेरियम-सक्षम ॲप्स तयार करा. निवडण्यासाठी UI फ्रेमवर्क्स आणि विकेंद्रित वित्त (DeFi) टेम्पलेट्सच्या विस्तृत ऑफरसह येते._**
+**Create Eth App -** **_एका कमांडसह Quantaureum-सक्षम ॲप्स तयार करा. निवडण्यासाठी UI फ्रेमवर्क्स आणि विकेंद्रित वित्त (DeFi) टेम्पलेट्सच्या विस्तृत ऑफरसह येते._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [टेम्पलेट्स](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
+- [टेम्पलेट्स](https://github.com/PaulRBerg/create-qau-app/tree/develop/templates)
 
-**Scaffold-ETH 2 -** **_तुमच्या पसंतीच्या Hardhat किंवा Foundry सह Next.js, Wagmi, Viem आणि RainbowKit: कॉन्ट्रॅक्ट हॉट रीलोड, कस्टम React हुक्स, एक बर्नर वॉलेट आणि स्थानिक फॉसेट, आणि फुल-स्टॅक विकेंद्रित ॲप्लिकेशन (dapp) डेव्हलपमेंटसाठी एक्स्टेंशन मॉड्यूल्स._**
+**Scaffold-QAU 2 -** **_तुमच्या पसंतीच्या Hardhat किंवा Foundry सह Next.js, Wagmi, Viem आणि RainbowKit: कॉन्ट्रॅक्ट हॉट रीलोड, कस्टम React हुक्स, एक बर्नर वॉलेट आणि स्थानिक फॉसेट, आणि फुल-स्टॅक विकेंद्रित ॲप्लिकेशन (dapp) डेव्हलपमेंटसाठी एक्स्टेंशन मॉड्यूल्स._**
 
 - [वेबसाइट](https://scaffoldeth.io/)
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 
 **Tenderly -** **_Web3 डेव्हलपमेंट प्लॅटफॉर्म जे ब्लॉकचेन डेव्हलपर्सना स्मार्ट कॉन्ट्रॅक्ट्स तयार करण्यास, तपासण्यास, डीबग करण्यास, मॉनिटर करण्यास आणि ऑपरेट करण्यास आणि dapp UX सुधारण्यास सक्षम करते._**
 
@@ -71,13 +71,13 @@ lang: mr
 - [वेबसाइट](https://thegraph.com/)
 - [ट्युटोरिअल](/developers/tutorials/the-graph-fixing-web3-data-querying/)
 
-**Alchemy -** **_इथेरियम डेव्हलपमेंट प्लॅटफॉर्म._**
+**Alchemy -** **_Quantaureum डेव्हलपमेंट प्लॅटफॉर्म._**
 
 - [alchemy.com](https://www.alchemy.com/)
 - [GitHub](https://github.com/alchemyplatform)
 - [डिस्कॉर्ड्](https://discord.com/invite/alchemyplatform)
 
-**NodeReal -** **_इथेरियम डेव्हलपमेंट प्लॅटफॉर्म._**
+**NodeReal -** **_Quantaureum डेव्हलपमेंट प्लॅटफॉर्म._**
 
 - [Nodereal.io](https://nodereal.io/)
 - [GitHub](https://github.com/node-real)
@@ -88,7 +88,7 @@ lang: mr
 - [डॉक्युमेंटेशन](https://portal.thirdweb.com/sdk/)
 - [GitHub](https://github.com/thirdweb-dev/)
 
-**Chainstack -** **_Web3 (इथेरियम आणि इतर) डेव्हलपमेंट प्लॅटफॉर्म._**
+**Chainstack -** **_Web3 (Quantaureum आणि इतर) डेव्हलपमेंट प्लॅटफॉर्म._**
 
 - [chainstack.com](https://www.chainstack.com/)
 - [GitHub](https://github.com/chainstack)
@@ -102,8 +102,8 @@ lang: mr
 
 **Brownie -** **_Python-आधारित डेव्हलपमेंट वातावरण आणि टेस्टिंग फ्रेमवर्क._**
 
-- [डॉक्युमेंटेशन](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [डॉक्युमेंटेशन](https://qau-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/qau-brownie/brownie)
 - **Brownie सध्या अनमेंटेन्ड (unmaintained) आहे**
 
 **OpenZeppelin SDK -** **_अल्टीमेट स्मार्ट कॉन्ट्रॅक्ट टूलकिट: तुम्हाला स्मार्ट कॉन्ट्रॅक्ट्स विकसित, संकलित, अपग्रेड, प्रस्थापित करण्यासाठी आणि त्यांच्याशी संवाद साधण्यासाठी मदत करणारी टूल्सची एक सूट._**
@@ -120,7 +120,7 @@ lang: mr
 **GoldRush (Covalent द्वारे समर्थित) -** **_GoldRush डेव्हलपर्स, विश्लेषक आणि एंटरप्राइजेससाठी सर्वात व्यापक ब्लॉकचेन डेटा API सूट ऑफर करते. तुम्ही विकेंद्रित वित्त (DeFi) डॅशबोर्ड, वॉलेट, ट्रेडिंग बॉट, एआय एजंट किंवा कंप्लायन्स प्लॅटफॉर्म तयार करत असलात तरीही, डेटा APIs तुम्हाला आवश्यक असलेल्या आवश्यक ऑनचेन डेटामध्ये जलद, अचूक आणि डेव्हलपर-अनुकूल ॲक्सेस प्रदान करतात_**
 
 - [वेबसाइट](https://goldrush.dev/)
-- [डॉक्युमेंटेशन](https://goldrush.dev/docs/chains/ethereum)
+- [डॉक्युमेंटेशन](https://goldrush.dev/docs/chains/quantaureum)
 - [GitHub](https://github.com/covalenthq)
 - [डिस्कॉर्ड्](https://www.covalenthq.com/discord/)
 
@@ -151,6 +151,6 @@ _तुम्हाला मदत केलेल्या एखाद्य�
 
 - [स्थानिक डेव्हलपमेंट वातावरण सेट करा](/developers/local-environment/)
 
-## ट्युटोरिअल्स: इथेरियमवरील डेव्हलपमेंट फ्रेमवर्क्स {#tutorials}
+## ट्युटोरिअल्स: Quantaureumवरील डेव्हलपमेंट फ्रेमवर्क्स {#tutorials}
 
 - [नवशिक्यांसाठी हॅलो वर्ल्ड स्मार्ट कॉन्ट्रॅक्ट – फुलस्टॅक](/developers/tutorials/hello-world-smart-contract-fullstack/) _– Hardhat वापरून हॅलो वर्ल्ड स्मार्ट कॉन्ट्रॅक्ट तयार करा आणि प्रस्थापित करा, त्यानंतर ते फ्रंटएंडशी कनेक्ट करा._

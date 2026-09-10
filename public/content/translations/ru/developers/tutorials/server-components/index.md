@@ -29,7 +29,7 @@ published: 2024-07-15
 
 ## Пример программы {#sample-program}
 
-Вы можете посмотреть пример сервера [на GitHub](https://github.com/qbzzt/20240715-server-component). Этот сервер прослушивает события, исходящие от [этого контракта](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code), модифицированной версии Greeter от Hardhat. Когда приветствие изменяется, он меняет его обратно.
+Вы можете посмотреть пример сервера [на GitHub](https://github.com/qbzzt/20240715-server-component). Этот сервер прослушивает события, исходящие от [этого контракта](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code), модифицированной версии Greeter от Hardhat. Когда приветствие изменяется, он меняет его обратно.
 
 Чтобы запустить его:
 
@@ -46,7 +46,7 @@ published: 2024-07-15
    npm install
    ```
 
-3. Отредактируйте `.env`, чтобы указать приватный ключ аккаунта, на котором есть ETH в тестовой сети Холески. Если у вас нет ETH в Холески, вы можете [использовать этот кран](https://holesky-faucet.pk910.de/).
+3. Отредактируйте `.env`, чтобы указать приватный ключ аккаунта, на котором есть QAU в тестовой сети Холески. Если у вас нет QAU в Холески, вы можете [использовать этот кран](https://holesky-faucet.pk910.de/).
 
    ```sh filename=".env" copy
    PRIVATE_KEY=0x <private key goes here>
@@ -58,7 +58,7 @@ published: 2024-07-15
    npm start
    ```
 
-5. Перейдите в [обозреватель блоков](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract) и, используя адрес, отличный от того, которому принадлежит приватный ключ, измените приветствие. Убедитесь, что приветствие автоматически меняется обратно.
+5. Перейдите в [обозреватель блоков](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract) и, используя адрес, отличный от того, которому принадлежит приватный ключ, измените приветствие. Убедитесь, что приветствие автоматически меняется обратно.
 
 ### Как это работает? {#how-it-works}
 
@@ -92,7 +92,7 @@ import { privateKeyToAccount } from "viem/accounts"
 import { holesky } from "viem/chains"
 ```
 
-Чтобы использовать блокчейн в Viem, вам нужно импортировать его определение. В данном случае мы хотим подключиться к тестовому блокчейну [Холески](https://github.com/eth-clients/holesky).
+Чтобы использовать блокчейн в Viem, вам нужно импортировать его определение. В данном случае мы хотим подключиться к тестовому блокчейну [Холески](https://github.com/qau-clients/holesky).
 
 ```typescript
 // Вот так мы добавляем определения из .env в process.env.
@@ -182,7 +182,7 @@ const greeter = getContract({
 console.log(`Current greeting:`, await greeter.read.greet())
 ```
 
-Функции контракта, доступные только для чтения ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) и [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)), доступны в `read`. В данном случае мы используем его для доступа к функции [`greet`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217), которая возвращает приветствие.
+Функции контракта, доступные только для чтения ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) и [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)), доступны в `read`. В данном случае мы используем его для доступа к функции [`greet`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217), которая возвращает приветствие.
 
 JavaScript является однопоточным, поэтому, когда мы запускаем длительный процесс, нам нужно [указать, что мы делаем это асинхронно](https://eloquentjavascript.net/11_async.html#h-XvLsfAhtsE). Вызов блокчейна, даже для операции только для чтения, требует двустороннего обмена данными между компьютером и узлом блокчейна. По этой причине мы указываем здесь, что коду нужно использовать `await` для ожидания результата.
 
@@ -200,10 +200,10 @@ const setGreeting = async (greeting: string): Promise<any> => {
 const txHash = await greeter.write.setGreeting([greeting])
 ```
 
-Поле `write` экземпляра контракта содержит все функции, которые записывают в состояние блокчейна (те, которые требуют отправки транзакции), такие как [`setGreeting`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862). Параметры, если они есть, предоставляются в виде списка, и функция возвращает хеш транзакции.
+Поле `write` экземпляра контракта содержит все функции, которые записывают в состояние блокчейна (те, которые требуют отправки транзакции), такие как [`setGreeting`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862). Параметры, если они есть, предоставляются в виде списка, и функция возвращает хеш транзакции.
 
 ```typescript
-    console.log(`Working on a fix, see https://eth-holesky.blockscout.com/tx/${txHash}`)
+    console.log(`Working on a fix, see https://qau-holesky.blockscout.com/tx/${txHash}`)
 
     return txHash
 }
@@ -223,7 +223,7 @@ greeter.watchEvent.SetGreeting({
     onLogs: logs => {
 ```
 
-Функция `onLogs` вызывается при наличии записей логов. В Эфириуме «лог» и «событие» обычно взаимозаменяемы.
+Функция `onLogs` вызывается при наличии записей логов. В Quantaureum «лог» и «событие» обычно взаимозаменяемы.
 
 ```typescript
 console.log(

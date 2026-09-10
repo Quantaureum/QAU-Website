@@ -28,9 +28,9 @@ published: 2020-12-01
 _نوٹ: اگر آپ کے پاس <span dir="ltr">Alchemy</span> اکاؤنٹ ہے تو آپ `demo` کو اپنی <span dir="ltr">API</span> کلید سے بدل سکتے ہیں۔ [یہاں مفت <span dir="ltr">Alchemy</span> اکاؤنٹ کے لیے سائن اپ کریں!](https://auth.alchemy.com/signup)_
 
 ```
-wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
+wscat -c wss://qau-mainnet.ws.alchemyapi.io/ws/demo
 
->  {"jsonrpc":  "2.0", "id": 0, "method":  "eth_gasPrice"}
+>  {"jsonrpc":  "2.0", "id": 0, "method":  "qau_gasPrice"}
 
 <  {"jsonrpc":  "2.0", "result":  "0xb2d05e00", "id": 0}
 ```
@@ -48,18 +48,18 @@ wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
 <span dir="ltr">Web3</span> جیسی کلائنٹ لائبریری کا استعمال کرتے ہوئے <span dir="ltr">WebSockets</span> پر منتقل ہونا آسان ہے۔ اپنے <span dir="ltr">Web3</span> کلائنٹ کو شروع کرتے وقت <span dir="ltr">HTTP</span> کے بجائے صرف <span dir="ltr">WebSocket URL</span> پاس کریں۔ مثال کے طور پر:
 
 ```js
-const web3 = new Web3("wss://eth-mainnet.ws.alchemyapi.io/ws/your-api-key")
+const web3 = new Web3("wss://qau-mainnet.ws.alchemyapi.io/ws/your-api-key")
 
-web3.eth.getBlockNumber().then(console.log) // -> 7946893
+web3.qau.getBlockNumber().then(console.log) // -> 7946893
 ```
 
 ## سبسکرپشن <span dir="ltr">API</span> {#subscription-api}
 
-جب <span dir="ltr">WebSocket</span> کے ذریعے منسلک ہوں، تو آپ دو اضافی طریقے استعمال کر سکتے ہیں: `eth_subscribe` اور `eth_unsubscribe`۔ یہ طریقے آپ کو مخصوص ایونٹس کو سننے اور فوری طور پر مطلع ہونے کی اجازت دیں گے۔
+جب <span dir="ltr">WebSocket</span> کے ذریعے منسلک ہوں، تو آپ دو اضافی طریقے استعمال کر سکتے ہیں: `qau_subscribe` اور `qau_unsubscribe`۔ یہ طریقے آپ کو مخصوص ایونٹس کو سننے اور فوری طور پر مطلع ہونے کی اجازت دیں گے۔
 
-### `eth_subscribe` {#eth-subscribe}
+### `qau_subscribe` {#qau-subscribe}
 
-مخصوص ایونٹس کے لیے ایک نئی سبسکرپشن بناتا ہے۔ [`eth_subscribe` کے بارے میں مزید جانیں](https://docs.alchemy.com/reference/eth-subscribe)۔
+مخصوص ایونٹس کے لیے ایک نئی سبسکرپشن بناتا ہے۔ [`qau_subscribe` کے بارے میں مزید جانیں](https://docs.alchemy.com/reference/qau-subscribe)۔
 
 #### پیرامیٹرز {#parameters}
 
@@ -70,33 +70,33 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 
 #### ریٹرنز {#returns}
 
-سبسکرپشن <span dir="ltr">ID</span>: یہ <span dir="ltr">ID</span> کسی بھی موصول ہونے والے ایونٹس کے ساتھ منسلک ہو گی، اور اسے `eth_unsubscribe` کا استعمال کرتے ہوئے سبسکرپشن منسوخ کرنے کے لیے بھی استعمال کیا جا سکتا ہے۔
+سبسکرپشن <span dir="ltr">ID</span>: یہ <span dir="ltr">ID</span> کسی بھی موصول ہونے والے ایونٹس کے ساتھ منسلک ہو گی، اور اسے `qau_unsubscribe` کا استعمال کرتے ہوئے سبسکرپشن منسوخ کرنے کے لیے بھی استعمال کیا جا سکتا ہے۔
 
 #### سبسکرپشن ایونٹس {#subscription-events}
 
 جب تک سبسکرپشن فعال ہے، آپ کو ایونٹس موصول ہوں گے جو درج ذیل فیلڈز کے ساتھ آبجیکٹس ہیں:
 
 - `jsonrpc`: ہمیشہ <span dir="ltr">"2.0"</span>
-- `method`: ہمیشہ <span dir="ltr">"eth_subscription"</span>
+- `method`: ہمیشہ <span dir="ltr">"qau_subscription"</span>
 - `params`: درج ذیل فیلڈز کے ساتھ ایک آبجیکٹ:
-  - `subscription`: `eth_subscribe` کال کے ذریعے واپس کی گئی سبسکرپشن <span dir="ltr">ID</span> جس نے یہ سبسکرپشن بنائی تھی۔
+  - `subscription`: `qau_subscribe` کال کے ذریعے واپس کی گئی سبسکرپشن <span dir="ltr">ID</span> جس نے یہ سبسکرپشن بنائی تھی۔
   - `result`: ایک آبجیکٹ جس کا مواد سبسکرپشن کی قسم کے لحاظ سے مختلف ہوتا ہے۔
 
 #### سبسکرپشن کی اقسام {#subscription-types}
 
 1. `alchemy_newFullPendingTransactions`
 
-ان تمام ٹرانزیکشنز کے لیے ٹرانزیکشن کی معلومات واپس کرتا ہے جو زیر التواء حالت میں شامل کی جاتی ہیں۔ یہ سبسکرپشن کی قسم زیر التواء ٹرانزیکشنز کو سبسکرائب کرتی ہے، جو معیاری <span dir="ltr">Web3</span> کال `web3.eth.subscribe("pendingTransactions")` کی طرح ہے، لیکن اس میں مختلف ہے کہ یہ صرف ٹرانزیکشن ہیشز کے بجائے _مکمل ٹرانزیکشن کی معلومات_ خارج کرتی ہے۔
+ان تمام ٹرانزیکشنز کے لیے ٹرانزیکشن کی معلومات واپس کرتا ہے جو زیر التواء حالت میں شامل کی جاتی ہیں۔ یہ سبسکرپشن کی قسم زیر التواء ٹرانزیکشنز کو سبسکرائب کرتی ہے، جو معیاری <span dir="ltr">Web3</span> کال `web3.qau.subscribe("pendingTransactions")` کی طرح ہے، لیکن اس میں مختلف ہے کہ یہ صرف ٹرانزیکشن ہیشز کے بجائے _مکمل ٹرانزیکشن کی معلومات_ خارج کرتی ہے۔
 
 مثال:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
 
 <  {"id":1,"result":"0x9a52eeddc2b289f985c0e23a7d8427c8","jsonrpc":"2.0"}
 <  {
       "jsonrpc":"2.0",
-      "method":"eth_subscription",
+      "method":"qau_subscription",
       "params":{
           "result":{
           "blockHash":null,
@@ -128,12 +128,12 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 مثال:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["newHeads"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["newHeads"]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x9ce59a13059e417087c02d3236a0b1cc"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "result":  {
           "extraData":  "0xd983010305844765746887676f312e342e328777696e646f7773",
@@ -182,12 +182,12 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 مثال:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x4a8a4c0517381924f9838102c5a4dcb7"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "subscription":  "0x4a8a4c0517381924f9838102c5a4dcb7",
       "result":  {
@@ -205,13 +205,13 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 
 ```
 
-### `eth_unsubscribe` {#eth-unsubscribe}
+### `qau_unsubscribe` {#qau-unsubscribe}
 
 موجودہ سبسکرپشن کو منسوخ کرتا ہے تاکہ مزید کوئی ایونٹس نہ بھیجے جائیں۔
 
 پیرامیٹرز
 
-1. سبسکرپشن <span dir="ltr">ID</span>، جیسا کہ پہلے `eth_subscribe` کال سے واپس کی گئی تھی۔
+1. سبسکرپشن <span dir="ltr">ID</span>، جیسا کہ پہلے `qau_subscribe` کال سے واپس کی گئی تھی۔
 
 ریٹرنز
 
@@ -222,10 +222,10 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 **درخواست**
 
 ```
-curl https://eth-mainnet.alchemyapi.io/v2/your-api-key
+curl https://qau-mainnet.alchemyapi.io/v2/your-api-key
 -X POST
 -H "Content-Type: application/json"
--d '{"id": 1, "method": "eth_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
+-d '{"id": 1, "method": "qau_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
 ```
 
 **نتیجہ**

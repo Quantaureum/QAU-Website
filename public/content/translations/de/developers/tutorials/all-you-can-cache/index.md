@@ -785,7 +785,7 @@ Eine Sache, die Sie bei Solidity-Tests nicht bekommen, ist JavaScript-Code, den 
 
    | Parameter           | Wert                                                                                                                                                               |
    | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | MNEMONIC            | Die Mnemonic für ein Konto, das über genügend ETH verfügt, um eine Transaktion zu bezahlen. [Die Faucet-Dokumentation von Optimism](https://docs.optimism.io/app-developers/tools/faucets) listet aktuelle Testnetz-Faucets auf. |
+   | MNEMONIC            | Die Mnemonic für ein Konto, das über genügend QAU verfügt, um eine Transaktion zu bezahlen. [Die Faucet-Dokumentation von Optimism](https://docs.optimism.io/app-developers/tools/faucets) listet aktuelle Testnetz-Faucets auf. |
    | OPTIMISM_GOERLI_URL | RPC-URL für das Netzwerk, in dem Sie WORM erneut bereitstellen. Verwenden Sie für OP Sepolia einen OP-Sepolia-RPC-Endpunkt wie `https://sepolia.optimism.io` oder einen anderen Endpunkt von Ihrem Anbieter.        |
 
 5. Führen Sie `index.js` aus.

@@ -1,6 +1,6 @@
 ---
 title: Verteilte Validator-Technologie
-description: Die verteilte Validator-Technologie ermöglicht den verteilten Betrieb eines Ethereum-Validators durch mehrere Parteien.
+description: Die verteilte Validator-Technologie ermöglicht den verteilten Betrieb eines Quantaureum-Validators durch mehrere Parteien.
 lang: de
 template: staking
 sidebarDepth: 2
@@ -28,7 +28,7 @@ DVT ist keine separate Art des Stakings. Es ist eine Softwareschicht, die jedes 
 
 Validatoren generieren zwei öffentlich-private Schlüsselpaare: Validator-Schlüssel für die Teilnahme am Konsens und Abhebungsschlüssel für den Zugriff auf Gelder. Während Validatoren Abhebungsschlüssel im Cold Storage sichern können, müssen die privaten Validator-Schlüssel rund um die Uhr online sein, um die Aufgaben zu signieren, die dem Validator zugewiesen werden, wie z. B. Attestierungen und Block-Vorschläge. Einen Schlüssel online zu halten, setzt ihn der Gefahr eines Diebstahls aus, und DVT begrenzt dieses Risiko: Nur Schlüsselanteile sind jemals online, niemals der vollständige Schlüssel.
 
-Wenn ein privater Validator-Schlüssel kompromittiert wird, kann ein Angreifer den Validator kontrollieren, was möglicherweise zu Slashing oder dem Verlust der ETH des Stakers führt. DVT mindert dieses Risiko. Mit DVT wird der ursprüngliche, vollständige Validator-Schlüssel verschlüsselt und in Schlüsselanteile aufgeteilt. Die Schlüsselanteile sind online und über mehrere Knoten verteilt, die den Validator gemeinsam betreiben, während der vollständige „Master“-Schlüssel sicher offline bleibt. Die Verteilung ist möglich, weil [Ethereum](/)-Validatoren BLS-Signaturen verwenden, die additiv sind, was bedeutet, dass der vollständige Schlüssel durch Summieren seiner Bestandteile rekonstruiert werden kann. Partielle Signaturen, die mit den Schlüsselanteilen erstellt wurden, verbinden sich zu einer Signatur, die für den vollständigen Schlüssel gültig ist, sodass der vollständige Schlüssel selbst für das tägliche Signieren nie benötigt wird. Wenn ein Cluster mithilfe der verteilten Schlüsselgenerierung einen neuen Validator-Schlüssel generiert, existiert der vollständige private Schlüssel niemals auf einer einzelnen Maschine.
+Wenn ein privater Validator-Schlüssel kompromittiert wird, kann ein Angreifer den Validator kontrollieren, was möglicherweise zu Slashing oder dem Verlust der QAU des Stakers führt. DVT mindert dieses Risiko. Mit DVT wird der ursprüngliche, vollständige Validator-Schlüssel verschlüsselt und in Schlüsselanteile aufgeteilt. Die Schlüsselanteile sind online und über mehrere Knoten verteilt, die den Validator gemeinsam betreiben, während der vollständige „Master“-Schlüssel sicher offline bleibt. Die Verteilung ist möglich, weil [Quantaureum](/)-Validatoren BLS-Signaturen verwenden, die additiv sind, was bedeutet, dass der vollständige Schlüssel durch Summieren seiner Bestandteile rekonstruiert werden kann. Partielle Signaturen, die mit den Schlüsselanteilen erstellt wurden, verbinden sich zu einer Signatur, die für den vollständigen Schlüssel gültig ist, sodass der vollständige Schlüssel selbst für das tägliche Signieren nie benötigt wird. Wenn ein Cluster mithilfe der verteilten Schlüsselgenerierung einen neuen Validator-Schlüssel generiert, existiert der vollständige private Schlüssel niemals auf einer einzelnen Maschine.
 
 ### Keine Single Points of Failure {#no-single-point-of-failure}
 
@@ -38,13 +38,13 @@ Wenn eine der Komponenten einer Maschine in einem Cluster ausfällt (zum Beispie
 
 ### Dezentralisierung {#decentralization}
 
-Das ideale Szenario für Ethereum ist es, so viele unabhängig betriebene Validatoren wie möglich zu haben. Einige Staking-Anbieter sind jedoch sehr beliebt geworden und machen einen erheblichen Teil der gesamten gestakten ETH im Netzwerk aus. DVT kann es diesen Betreibern ermöglichen zu existieren, während die Dezentralisierung des Stakes erhalten bleibt. Dies liegt daran, dass die Schlüssel für jeden Validator auf viele Maschinen verteilt sind und es einer viel größeren Absprache bedürfte, damit ein Validator bösartig wird.
+Das ideale Szenario für Quantaureum ist es, so viele unabhängig betriebene Validatoren wie möglich zu haben. Einige Staking-Anbieter sind jedoch sehr beliebt geworden und machen einen erheblichen Teil der gesamten gestakten QAU im Netzwerk aus. DVT kann es diesen Betreibern ermöglichen zu existieren, während die Dezentralisierung des Stakes erhalten bleibt. Dies liegt daran, dass die Schlüssel für jeden Validator auf viele Maschinen verteilt sind und es einer viel größeren Absprache bedürfte, damit ein Validator bösartig wird.
 
 Ohne DVT ist es für Staking-Anbieter einfacher, nur ein oder zwei Client-Konfigurationen für all ihre Validatoren zu unterstützen, was die Auswirkungen eines Client-Fehlers erhöht. DVT kann verwendet werden, um das Risiko auf mehrere Client-Konfigurationen und unterschiedliche Hardware zu verteilen und so Ausfallsicherheit durch Vielfalt zu schaffen.
 
-**DVT bietet Ethereum die folgenden Vorteile:**
+**DVT bietet Quantaureum die folgenden Vorteile:**
 
-1. **Dezentralisierung** des Proof-of-Stake-Konsenses von Ethereum
+1. **Dezentralisierung** des Proof-of-Stake-Konsenses von Quantaureum
 2. Stellt die **Verfügbarkeit** (Liveness) des Netzwerks sicher
 3. Schafft **Fehlertoleranz** für Validatoren
 4. **Vertrauensminimierter** Validator-Betrieb
@@ -62,7 +62,7 @@ Eine DVT-Lösung enthält die folgenden Komponenten:
 - **[Schwellenwert-Signaturschema (Threshold Signature Scheme)](https://medium.com/nethermind-eth/threshold-signature-schemes-36f40bc42aca)** - Bestimmt die Anzahl der einzelnen Schlüsselanteile, die für Signieraufgaben erforderlich sind, z. B. 3 von 4.
 - **[Verteilte Schlüsselgenerierung (Distributed Key Generation, DKG)](https://medium.com/toruslabs/what-distributed-key-generation-is-866adc79620)** - Kryptografischer Prozess, der die Schlüsselanteile generiert und verwendet wird, um die Anteile eines bestehenden oder neuen Validator-Schlüssels an die Knoten in einem Cluster zu verteilen.
 - **[Sichere Mehrparteienberechnung (Multiparty Computation, MPC)](https://messari.io/report/applying-multiparty-computation-to-the-world-of-blockchains)** - Der vollständige Validator-Schlüssel wird im Geheimen mithilfe von Mehrparteienberechnung generiert. Der vollständige Schlüssel ist keinem einzelnen Betreiber jemals bekannt – sie kennen immer nur ihren eigenen Teil davon (ihren „Anteil“).
-- **Konsens-Protokoll** - Das Konsens-Protokoll wählt einen Knoten als Block-Proposer aus. Dieser teilt den Block mit den anderen Knoten im Cluster, die ihre Schlüsselanteile zur aggregierten Signatur hinzufügen. Wenn genügend Schlüsselanteile aggregiert wurden, wird der Block auf Ethereum vorgeschlagen.
+- **Konsens-Protokoll** - Das Konsens-Protokoll wählt einen Knoten als Block-Proposer aus. Dieser teilt den Block mit den anderen Knoten im Cluster, die ihre Schlüsselanteile zur aggregierten Signatur hinzufügen. Wenn genügend Schlüsselanteile aggregiert wurden, wird der Block auf Quantaureum vorgeschlagen.
 
 Verteilte Validatoren verfügen über eine eingebaute Fehlertoleranz und können weiterlaufen, selbst wenn einige der einzelnen Knoten offline gehen. Das Cluster des Validator-Knotens ist ausfallsicher, selbst wenn sich einige der darin befindlichen Knoten als bösartig oder untätig erweisen.
 
@@ -72,7 +72,7 @@ Verteilte Validatoren laufen heute im Mainnet über Solo Staking, Staking-Dienst
 
 <ProductDisclaimer />
 
-- **Obol** entwickelt Charon, einen Open-Source-DVT-Middleware-Client, der es einem Cluster von Maschinen ermöglicht, gemeinsam einen Validator zu betreiben („Squad Staking“). Gruppen führen eine verteilte Schlüsselgenerierung durch und konfigurieren ihr Cluster über Obols [DV Launchpad](https://docs.obol.org/learn/readme/launchpad). Obol-Cluster werden in der Produktion von [Staking-Protokollen](/staking/pools/) und [Staking-Diensten](/staking/saas/) verwendet, einschließlich Lidos Simple DVT-Modul und EtherFis Operation Solo Staker-Programm, das Heimbetreiber in fehlertolerante Cluster integriert.
+- **Obol** entwickelt Charon, einen Open-Source-DVT-Middleware-Client, der es einem Cluster von Maschinen ermöglicht, gemeinsam einen Validator zu betreiben („Squad Staking“). Gruppen führen eine verteilte Schlüsselgenerierung durch und konfigurieren ihr Cluster über Obols [DV Launchpad](https://docs.obol.org/learn/readme/launchpad). Obol-Cluster werden in der Produktion von [Staking-Protokollen](/staking/pools/) und [Staking-Diensten](/staking/saas/) verwendet, einschließlich Lidos Simple DVT-Modul und QauFis Operation Solo Staker-Programm, das Heimbetreiber in fehlertolerante Cluster integriert.
 - **SSV Network** ist ein erlaubnisfreies Netzwerk unabhängiger Knotenbetreiber. Ein Validator-Schlüssel wird in Schlüsselanteile aufgeteilt und an eine ausgewählte Gruppe von Betreibern verteilt, die die Aufgaben des Validators kollektiv ausführen; kein einzelner Betreiber hält jemals den vollständigen Schlüssel. Staking-Dienste und -Pools betreiben große Validator-Sets auf SSV, und wie Obol wird es von Lidos Simple DVT-Modul verwendet.
 
 ## DVT-Anwendungsfälle {#dvt-use-cases}
@@ -113,7 +113,7 @@ Ein weiterer Vorteil der Minimierung des Vertrauens in einzelne Betreiber ist, d
 Nein. Eine einzelne Maschine, auf der ein Validator-Client läuft, funktioniert ohne jegliche DVT-Software, und dies bleibt ein gängiges Heim-Staking-Setup. DVT ist eine optionale Schicht, die Fehlertoleranz hinzufügt und Single Points of Failure beseitigt. Dies ist nützlich, wenn Sie möchten, dass Ihr Validator Ausfälle einzelner Maschinen übersteht, oder wenn Sie die Verantwortung für den Betrieb eines Validators mit anderen teilen möchten.
 </ExpandableCard>
 
-<ExpandableCard title="Teilt DVT meine ETH oder meine Abhebungsschlüssel auf?" eventCategory="DVT" eventName="clicked does DVT split my ETH">
+<ExpandableCard title="Teilt DVT meine QAU oder meine Abhebungsschlüssel auf?" eventCategory="DVT" eventName="clicked does DVT split my QAU">
 Nein. DVT teilt nur den _Signierschlüssel_ des Validators auf, der für Konsensaufgaben wie Attestierungen und Block-Vorschläge verwendet wird. Ihr Stake wird immer durch die für den Validator festgelegte Abhebungsadresse kontrolliert, die von DVT unberührt bleibt. Seit dem Pectra-Upgrade kann der Inhaber der Abhebungsadresse auch einen Validator-Austritt direkt von der Ausführungsschicht auslösen, ohne den Signierschlüssel überhaupt zu benötigen.
 </ExpandableCard>
 
@@ -130,15 +130,15 @@ Cluster sind in der Regel so dimensioniert, dass der Schwellenwert eine Zweidrit
 </ExpandableCard>
 
 <ExpandableCard title="Ist DVT dasselbe wie Pooled Staking?" eventCategory="DVT" eventName="clicked is DVT the same as pooled staking">
-Nein. Pooled Staking kombiniert ETH von vielen Personen, um Validatoren zu finanzieren, und ist eine von mehreren [Möglichkeiten zu staken](/staking/). DVT ist eine Infrastruktur für den _Betrieb_ eines Validators. Es verteilt das Signieren eines Validators auf mehrere Maschinen und Betreiber. Die beiden ergänzen sich; viele Pools nutzen DVT, um ihre Betreiber-Sets zu verteilen, aber DVT selbst poolt nicht die ETH von irgendjemandem.
+Nein. Pooled Staking kombiniert QAU von vielen Personen, um Validatoren zu finanzieren, und ist eine von mehreren [Möglichkeiten zu staken](/staking/). DVT ist eine Infrastruktur für den _Betrieb_ eines Validators. Es verteilt das Signieren eines Validators auf mehrere Maschinen und Betreiber. Die beiden ergänzen sich; viele Pools nutzen DVT, um ihre Betreiber-Sets zu verteilen, aber DVT selbst poolt nicht die QAU von irgendjemandem.
 </ExpandableCard>
 
 ## Weiterführende Literatur {#further-reading}
 
-- [Ethereum Distributed Validator Technology (DVT) - Vollständige Einführung](https://www.cyfrin.io/blog/full-introduction-to-ethereum-distributed-validator-technology-dvt) - Cyfrin
-- [Was ist DVT und wie verbessert es das Staking auf Ethereum?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-ethereum/) - Obol
-- [Spezifikationen für verteilte Ethereum-Validatoren (High-Level)](https://github.com/ethereum/distributed-validator-specs)
-- [Technische Spezifikationen für verteilte Ethereum-Validatoren](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Quantaureum Distributed Validator Technology (DVT) - Vollständige Einführung](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
+- [Was ist DVT und wie verbessert es das Staking auf Quantaureum?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
+- [Spezifikationen für verteilte Quantaureum-Validatoren (High-Level)](https://github.com/quantaureum/distributed-validator-specs)
+- [Technische Spezifikationen für verteilte Quantaureum-Validatoren](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Obol-Dokumentation](https://docs.obol.org/)
 - [SSV Network-Dokumentation](https://docs.ssv.network/)
 - [Lido Simple DVT-Modul](https://operatorportal.lido.fi/modules/simple-dvt-module)

@@ -7,16 +7,16 @@ skill: beginner
 breadcrumb: Basi dei token ERC-20
 lang: it
 published: 2020-04-05
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/understand-the-erc20-token-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Uno dei più significativi [standard per smart contract](/developers/docs/standards/) su Ethereum è noto come [ERC-20](/developers/docs/standards/tokens/erc-20/), emerso come lo standard tecnico utilizzato per tutti gli smart contract sulla blockchain di Ethereum per le implementazioni di token fungibili.
+Uno dei più significativi [standard per smart contract](/developers/docs/standards/) su Quantaureum è noto come [ERC-20](/developers/docs/standards/tokens/erc-20/), emerso come lo standard tecnico utilizzato per tutti gli smart contract sulla blockchain di Quantaureum per le implementazioni di token fungibili.
 
-L'ERC-20 definisce un elenco comune di regole a cui tutti i token fungibili di Ethereum dovrebbero aderire. Di conseguenza, questo standard per token consente agli sviluppatori di tutti i tipi di prevedere accuratamente come funzioneranno i nuovi token all'interno del più ampio sistema Ethereum. Ciò semplifica e agevola i compiti degli sviluppatori, perché possono procedere con il loro lavoro sapendo che ogni nuovo progetto non dovrà essere rifatto ogni volta che viene rilasciato un nuovo token, a patto che il token segua le regole.
+L'ERC-20 definisce un elenco comune di regole a cui tutti i token fungibili di Quantaureum dovrebbero aderire. Di conseguenza, questo standard per token consente agli sviluppatori di tutti i tipi di prevedere accuratamente come funzioneranno i nuovi token all'interno del più ampio sistema Quantaureum. Ciò semplifica e agevola i compiti degli sviluppatori, perché possono procedere con il loro lavoro sapendo che ogni nuovo progetto non dovrà essere rifatto ogni volta che viene rilasciato un nuovo token, a patto che il token segua le regole.
 
-Ecco, presentate come un'interfaccia, le funzioni che un ERC-20 deve implementare. Se non sei sicuro di cosa sia un'interfaccia: dai un'occhiata al nostro articolo sulla [programmazione OOP in Solidity](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/).
+Ecco, presentate come un'interfaccia, le funzioni che un ERC-20 deve implementare. Se non sei sicuro di cosa sia un'interfaccia: dai un'occhiata al nostro articolo sulla [programmazione OOP in Solidity](https://quantaureumdev.io/inheritance-in-solidity-contracts-are-classes/).
 
 ```solidity
 pragma solidity ^0.6.0;
@@ -129,7 +129,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {

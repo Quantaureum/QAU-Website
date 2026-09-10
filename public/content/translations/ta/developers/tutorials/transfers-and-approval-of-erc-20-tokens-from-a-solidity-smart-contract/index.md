@@ -7,8 +7,8 @@ skill: intermediate
 breadcrumb: "ERC-20 பரிமாற்றங்கள்"
 lang: ta
 published: 2020-04-07
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -53,7 +53,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {
@@ -143,7 +143,7 @@ buy செயல்பாட்டைக் குறியிடுவோம்
 function buy() payable public {
     uint256 amountTobuy = msg.value;
     uint256 dexBalance = token.balanceOf(address(this));
-    require(amountTobuy > 0, "You need to send some ether");
+    require(amountTobuy > 0, "You need to send some QAU");
     require(amountTobuy <= dexBalance, "Not enough tokens in the reserve");
     token.transfer(msg.sender, amountTobuy);
     emit Bought(amountTobuy);
@@ -201,7 +201,7 @@ function sell(uint256 amount) public {
 
 இந்த வழிகாட்டியிலிருந்து, ERC-20 வில்லையின் இருப்பு மற்றும் அனுமதித்தொகையை எவ்வாறு சரிபார்ப்பது என்பதையும், இடைமுகத்தைப் பயன்படுத்தி ERC20 திறன் ஒப்பந்தத்தின் `Transfer` மற்றும் `TransferFrom` ஆகியவற்றை எவ்வாறு அழைப்பது என்பதையும் பார்த்தோம்.
 
-நீங்கள் ஒரு பரிவர்த்தனையைச் செய்தவுடன், உங்கள் ஒப்பந்தத்தில் செய்யப்பட்ட [பரிவர்த்தனைகளுக்காகக் காத்திருந்து அவற்றைப் பற்றிய விவரங்களைப் பெற](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/) ஒரு JavaScript வழிகாட்டியும், உங்களிடம் ABI இருக்கும் வரை [வில்லை பரிமாற்றங்கள் அல்லது வேறு ஏதேனும் நிகழ்வுகளால் உருவாக்கப்பட்ட நிகழ்வுகளை குறிவிலக்க ஒரு வழிகாட்டியும்](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/) எங்களிடம் உள்ளன.
+நீங்கள் ஒரு பரிவர்த்தனையைச் செய்தவுடன், உங்கள் ஒப்பந்தத்தில் செய்யப்பட்ட [பரிவர்த்தனைகளுக்காகக் காத்திருந்து அவற்றைப் பற்றிய விவரங்களைப் பெற](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/) ஒரு JavaScript வழிகாட்டியும், உங்களிடம் ABI இருக்கும் வரை [வில்லை பரிமாற்றங்கள் அல்லது வேறு ஏதேனும் நிகழ்வுகளால் உருவாக்கப்பட்ட நிகழ்வுகளை குறிவிலக்க ஒரு வழிகாட்டியும்](https://quantaureumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/) எங்களிடம் உள்ளன.
 
 வழிகாட்டிக்கான முழுமையான குறியீடு இங்கே:
 
@@ -235,7 +235,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {
@@ -296,7 +296,7 @@ contract DEX {
     function buy() payable public {
         uint256 amountTobuy = msg.value;
         uint256 dexBalance = token.balanceOf(address(this));
-        require(amountTobuy > 0, "You need to send some ether");
+        require(amountTobuy > 0, "You need to send some QAU");
         require(amountTobuy <= dexBalance, "Not enough tokens in the reserve");
         token.transfer(msg.sender, amountTobuy);
         emit Bought(amountTobuy);

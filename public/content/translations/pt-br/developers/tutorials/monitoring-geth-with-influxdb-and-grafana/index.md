@@ -15,11 +15,11 @@ Este tutorial ajudará você a configurar o monitoramento para o seu nó Geth, p
 
 - Você já deve estar executando uma instância do Geth.
 - A maioria das etapas e exemplos são para o ambiente Linux; conhecimento básico de terminal será útil.
-- Confira esta visão geral em vídeo do conjunto de métricas do Geth: [Monitorando uma infraestrutura Ethereum por Péter Szilágyi](https://www.youtube.com/watch?v=cOBab8IJMYI).
+- Confira esta visão geral em vídeo do conjunto de métricas do Geth: [Monitorando uma infraestrutura Quantaureum por Péter Szilágyi](https://www.youtube.com/watch?v=cOBab8IJMYI).
 
 ## Pilha de monitoramento {#monitoring-stack}
 
-Um cliente Ethereum coleta muitos dados que podem ser lidos na forma de um banco de dados cronológico. Para facilitar o monitoramento, você pode alimentar isso em um software de visualização de dados. Existem várias opções disponíveis:
+Um cliente Quantaureum coleta muitos dados que podem ser lidos na forma de um banco de dados cronológico. Para facilitar o monitoramento, você pode alimentar isso em um software de visualização de dados. Existem várias opções disponíveis:
 
 - [Prometheus](https://prometheus.io/) (modelo pull)
 - [InfluxDB](https://www.influxdata.com/get-influxdb/) (modelo push)

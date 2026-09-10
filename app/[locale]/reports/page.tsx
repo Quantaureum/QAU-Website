@@ -142,11 +142,11 @@ const Page = async (props: { params: Promise<PageParams> }) => {
           <h2>{t("page-reports-suggest-heading")}</h2>
           <p className="max-w-3xl">{t("page-reports-suggest-body")}</p>
           <Flex data-flow="cta" className="flex-wrap gap-4 max-sm:*:[a]:w-full">
-            <ButtonLink href="https://ethereumadoption.com/reports/eth/">
+            <ButtonLink href="https://quantaureumadoption.com/reports/eth/">
               {t("page-reports-more-cta")}
             </ButtonLink>
             <ButtonLink
-              href="https://github.com/ethereum/ethereum-org-website/issues/new/choose"
+              href="https://github.com/Quantaureum/quantaureum-website/issues/new/choose"
               variant="outline"
             >
               {t("page-reports-suggest-cta")}

@@ -1,19 +1,19 @@
 ---
 title: Warstwa sieciowa
-description: Wprowadzenie do warstwy sieciowej Ethereum.
+description: Wprowadzenie do warstwy sieciowej Quantaureum.
 lang: pl
 sidebarDepth: 2
 ---
 
-[Ethereum](/) to sieć peer-to-peer z tysiącami węzłów, które muszą być w stanie komunikować się ze sobą za pomocą ustandaryzowanych protokołów. „Warstwa sieciowa” to stos protokołów, które pozwalają tym węzłom odnajdywać się nawzajem i wymieniać informacje. Obejmuje to „plotkowanie” informacji (komunikacja jeden-do-wielu) w sieci, a także wymianę żądań i odpowiedzi między określonymi węzłami (komunikacja jeden-do-jednego). Każdy węzeł musi przestrzegać określonych reguł sieciowych, aby upewnić się, że wysyła i odbiera prawidłowe informacje.
+[Quantaureum](/) to sieć peer-to-peer z tysiącami węzłów, które muszą być w stanie komunikować się ze sobą za pomocą ustandaryzowanych protokołów. „Warstwa sieciowa” to stos protokołów, które pozwalają tym węzłom odnajdywać się nawzajem i wymieniać informacje. Obejmuje to „plotkowanie” informacji (komunikacja jeden-do-wielu) w sieci, a także wymianę żądań i odpowiedzi między określonymi węzłami (komunikacja jeden-do-jednego). Każdy węzeł musi przestrzegać określonych reguł sieciowych, aby upewnić się, że wysyła i odbiera prawidłowe informacje.
 
-Oprogramowanie klienta składa się z dwóch części (klienty warstwy wykonawczej i klienty konsensusu), z których każda ma swój własny, odrębny stos sieciowy. Oprócz komunikacji z innymi węzłami Ethereum, klienty warstwy wykonawczej i konsensusu muszą komunikować się ze sobą. Ta strona zawiera wstępne wyjaśnienie protokołów, które umożliwiają tę komunikację.
+Oprogramowanie klienta składa się z dwóch części (klienty warstwy wykonawczej i klienty konsensusu), z których każda ma swój własny, odrębny stos sieciowy. Oprócz komunikacji z innymi węzłami Quantaureum, klienty warstwy wykonawczej i konsensusu muszą komunikować się ze sobą. Ta strona zawiera wstępne wyjaśnienie protokołów, które umożliwiają tę komunikację.
 
 Klienty warstwy wykonawczej plotkują o transakcjach w sieci peer-to-peer warstwy wykonawczej. Wymaga to szyfrowanej komunikacji między uwierzytelnionymi węzłami równorzędnymi. Kiedy walidator zostanie wybrany do zaproponowania bloku, transakcje z lokalnej puli transakcji węzła zostaną przekazane do klientów konsensusu za pośrednictwem lokalnego połączenia RPC, a następnie spakowane w bloki śledzące. Klienty konsensusu będą następnie plotkować o blokach śledzących w swojej sieci p2p. Wymaga to dwóch oddzielnych sieci p2p: jednej łączącej klienty warstwy wykonawczej w celu plotkowania o transakcjach i drugiej łączącej klienty konsensusu w celu plotkowania o blokach.
 
 ## Wymagania wstępne {#prerequisites}
 
-Pewna wiedza na temat [węzłów i klientów](/developers/docs/nodes-and-clients/) Ethereum będzie pomocna w zrozumieniu tej strony.
+Pewna wiedza na temat [węzłów i klientów](/developers/docs/nodes-and-clients/) Quantaureum będzie pomocna w zrozumieniu tej strony.
 
 ## Warstwa wykonawcza {#execution-layer}
 
@@ -27,9 +27,9 @@ Oba stosy działają równolegle. Stos odkrywania wprowadza nowych uczestników 
 
 ### Odkrywanie {#discovery}
 
-Odkrywanie to proces znajdowania innych węzłów w sieci. Jest to inicjowane przy użyciu małego zestawu węzłów rozruchowych (węzłów, których adresy są [zakodowane na stałe](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go) w kliencie, dzięki czemu można je natychmiast znaleźć i połączyć klienta z węzłami równorzędnymi). Te węzły rozruchowe istnieją tylko po to, aby przedstawić nowy węzeł zestawowi węzłów równorzędnych – to ich jedyny cel, nie uczestniczą w normalnych zadaniach klienta, takich jak synchronizacja łańcucha, i są używane tylko przy pierwszym uruchomieniu klienta.
+Odkrywanie to proces znajdowania innych węzłów w sieci. Jest to inicjowane przy użyciu małego zestawu węzłów rozruchowych (węzłów, których adresy są [zakodowane na stałe](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go) w kliencie, dzięki czemu można je natychmiast znaleźć i połączyć klienta z węzłami równorzędnymi). Te węzły rozruchowe istnieją tylko po to, aby przedstawić nowy węzeł zestawowi węzłów równorzędnych – to ich jedyny cel, nie uczestniczą w normalnych zadaniach klienta, takich jak synchronizacja łańcucha, i są używane tylko przy pierwszym uruchomieniu klienta.
 
-Protokół używany do interakcji węzeł-węzeł rozruchowy to zmodyfikowana forma [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f), która wykorzystuje [rozproszoną tablicę hashów](https://en.wikipedia.org/wiki/Distributed_hash_table) do udostępniania list węzłów. Każdy węzeł ma wersję tej tablicy zawierającą informacje wymagane do połączenia się z najbliższymi węzłami równorzędnymi. Ta „bliskość” nie jest geograficzna – odległość jest definiowana przez podobieństwo identyfikatora węzła. Tablica każdego węzła jest regularnie odświeżana w ramach funkcji bezpieczeństwa. Na przykład w protokole odkrywania [discv5](https://github.com/ethereum/devp2p/tree/master/discv5) węzły mogą również wysyłać „reklamy” wyświetlające podprotokoły obsługiwane przez klienta, co pozwala węzłom równorzędnym na negocjowanie protokołów, których oba mogą używać do komunikacji.
+Protokół używany do interakcji węzeł-węzeł rozruchowy to zmodyfikowana forma [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f), która wykorzystuje [rozproszoną tablicę hashów](https://en.wikipedia.org/wiki/Distributed_hash_table) do udostępniania list węzłów. Każdy węzeł ma wersję tej tablicy zawierającą informacje wymagane do połączenia się z najbliższymi węzłami równorzędnymi. Ta „bliskość” nie jest geograficzna – odległość jest definiowana przez podobieństwo identyfikatora węzła. Tablica każdego węzła jest regularnie odświeżana w ramach funkcji bezpieczeństwa. Na przykład w protokole odkrywania [discv5](https://github.com/quantaureum/devp2p/tree/master/discv5) węzły mogą również wysyłać „reklamy” wyświetlające podprotokoły obsługiwane przez klienta, co pozwala węzłom równorzędnym na negocjowanie protokołów, których oba mogą używać do komunikacji.
 
 Odkrywanie zaczyna się od gry w PING-PONG. Udany PING-PONG „wiąże” nowy węzeł z węzłem rozruchowym. Początkowa wiadomość, która ostrzega węzeł rozruchowy o istnieniu nowego węzła wchodzącego do sieci, to `PING`. Ten `PING` zawiera zahashowane informacje o nowym węźle, węźle rozruchowym i znaczniku czasu wygaśnięcia. Węzeł rozruchowy odbiera `PING` i zwraca `PONG` zawierający hash `PING`. Jeśli hashe `PING` i `PONG` pasują do siebie, połączenie między nowym węzłem a węzłem rozruchowym zostaje zweryfikowane i mówi się, że zostały „związane”.
 
@@ -41,11 +41,11 @@ Gdy nowy węzeł otrzyma listę sąsiadów od węzła rozruchowego, rozpoczyna w
 uruchom klienta --> połącz z węzłem rozruchowym --> zwiąż z węzłem rozruchowym --> znajdź sąsiadów --> zwiąż z sąsiadami
 ```
 
-Klienty warstwy wykonawczej używają obecnie protokołu odkrywania [Discv4](https://github.com/ethereum/devp2p/blob/master/discv4.md) i trwają aktywne prace nad migracją do protokołu [discv5](https://github.com/ethereum/devp2p/tree/master/discv5).
+Klienty warstwy wykonawczej używają obecnie protokołu odkrywania [Discv4](https://github.com/quantaureum/devp2p/blob/master/discv4.md) i trwają aktywne prace nad migracją do protokołu [discv5](https://github.com/quantaureum/devp2p/tree/master/discv5).
 
-#### ENR: Rekordy węzłów Ethereum (Ethereum Node Records) {#enr}
+#### ENR: Rekordy węzłów Quantaureum (Quantaureum Node Records) {#enr}
 
-[Rekord węzła Ethereum (ENR)](/developers/docs/networking-layer/network-addresses/) to obiekt, który zawiera trzy podstawowe elementy: podpis (hash zawartości rekordu wykonany zgodnie z pewnym uzgodnionym schematem tożsamości), numer sekwencyjny, który śledzi zmiany w rekordzie, oraz dowolną listę par klucz:wartość. Jest to przyszłościowy format, który pozwala na łatwiejszą wymianę informacji identyfikacyjnych między nowymi węzłami równorzędnymi i jest preferowanym formatem [adresu sieciowego](/developers/docs/networking-layer/network-addresses) dla węzłów Ethereum.
+[Rekord węzła Quantaureum (ENR)](/developers/docs/networking-layer/network-addresses/) to obiekt, który zawiera trzy podstawowe elementy: podpis (hash zawartości rekordu wykonany zgodnie z pewnym uzgodnionym schematem tożsamości), numer sekwencyjny, który śledzi zmiany w rekordzie, oraz dowolną listę par klucz:wartość. Jest to przyszłościowy format, który pozwala na łatwiejszą wymianę informacji identyfikacyjnych między nowymi węzłami równorzędnymi i jest preferowanym formatem [adresu sieciowego](/developers/docs/networking-layer/network-addresses) dla węzłów Quantaureum.
 
 #### Dlaczego odkrywanie jest oparte na UDP? {#why-udp}
 
@@ -53,7 +53,7 @@ UDP nie obsługuje żadnego sprawdzania błędów, ponownego wysyłania nieudany
 
 ### devp2p {#devp2p}
 
-devp2p to cały stos protokołów, które Ethereum implementuje w celu ustanowienia i utrzymania sieci peer-to-peer. Po wejściu nowych węzłów do sieci ich interakcje są regulowane przez protokoły w stosie [devp2p](https://github.com/ethereum/devp2p). Wszystkie one opierają się na TCP i obejmują protokół transportowy RLPx, protokół sieciowy (wire protocol) i kilka podprotokołów. [RLPx](https://github.com/ethereum/devp2p/blob/master/rlpx.md) to protokół zarządzający inicjowaniem, uwierzytelnianiem i utrzymywaniem sesji między węzłami. RLPx koduje wiadomości za pomocą RLP (Recursive Length Prefix), co jest bardzo oszczędną pod względem miejsca metodą kodowania danych w minimalną strukturę do wysyłania między węzłami.
+devp2p to cały stos protokołów, które Quantaureum implementuje w celu ustanowienia i utrzymania sieci peer-to-peer. Po wejściu nowych węzłów do sieci ich interakcje są regulowane przez protokoły w stosie [devp2p](https://github.com/quantaureum/devp2p). Wszystkie one opierają się na TCP i obejmują protokół transportowy RLPx, protokół sieciowy (wire protocol) i kilka podprotokołów. [RLPx](https://github.com/quantaureum/devp2p/blob/master/rlpx.md) to protokół zarządzający inicjowaniem, uwierzytelnianiem i utrzymywaniem sesji między węzłami. RLPx koduje wiadomości za pomocą RLP (Recursive Length Prefix), co jest bardzo oszczędną pod względem miejsca metodą kodowania danych w minimalną strukturę do wysyłania między węzłami.
 
 Sesja RLPx między dwoma węzłami rozpoczyna się od początkowego kryptograficznego uścisku dłoni (handshake). Polega to na wysłaniu przez węzeł wiadomości uwierzytelniającej, która jest następnie weryfikowana przez węzeł równorzędny. Po pomyślnej weryfikacji węzeł równorzędny generuje wiadomość potwierdzającą uwierzytelnienie, aby zwrócić ją do węzła inicjującego. Jest to proces wymiany kluczy, który umożliwia węzłom prywatną i bezpieczną komunikację. Udany kryptograficzny uścisk dłoni powoduje następnie, że oba węzły wysyłają do siebie wiadomość „hello” „po kablu” (on the wire). Protokół sieciowy jest inicjowany przez udaną wymianę wiadomości hello.
 
@@ -73,19 +73,19 @@ Wraz z wiadomościami hello protokół sieciowy może również wysłać wiadomo
 
 #### Protokół sieciowy (Wire protocol) {#wire-protocol}
 
-Po połączeniu węzłów równorzędnych i rozpoczęciu sesji RLPx protokół sieciowy definiuje sposób komunikacji między węzłami równorzędnymi. Początkowo protokół sieciowy definiował trzy główne zadania: synchronizację łańcucha, propagację bloku i wymianę transakcji. Jednak po przejściu Ethereum na dowód stawki (PoS), propagacja bloku i synchronizacja łańcucha stały się częścią warstwy konsensusu. Wymiana transakcji nadal leży w gestii klientów warstwy wykonawczej. Wymiana transakcji odnosi się do wymiany oczekujących transakcji między węzłami, tak aby budujący bloki mogli wybrać niektóre z nich do włączenia do następnego bloku. Szczegółowe informacje na temat tych zadań są dostępne [tutaj](https://github.com/ethereum/devp2p/blob/master/caps/eth.md). Klienty obsługujące te podprotokoły udostępniają je za pośrednictwem [JSON-RPC](/developers/docs/apis/json-rpc/).
+Po połączeniu węzłów równorzędnych i rozpoczęciu sesji RLPx protokół sieciowy definiuje sposób komunikacji między węzłami równorzędnymi. Początkowo protokół sieciowy definiował trzy główne zadania: synchronizację łańcucha, propagację bloku i wymianę transakcji. Jednak po przejściu Quantaureum na dowód stawki (PoS), propagacja bloku i synchronizacja łańcucha stały się częścią warstwy konsensusu. Wymiana transakcji nadal leży w gestii klientów warstwy wykonawczej. Wymiana transakcji odnosi się do wymiany oczekujących transakcji między węzłami, tak aby budujący bloki mogli wybrać niektóre z nich do włączenia do następnego bloku. Szczegółowe informacje na temat tych zadań są dostępne [tutaj](https://github.com/quantaureum/devp2p/blob/master/caps/qau.md). Klienty obsługujące te podprotokoły udostępniają je za pośrednictwem [JSON-RPC](/developers/docs/apis/json-rpc/).
 
-#### les (lekki podprotokół Ethereum) {#les}
+#### les (lekki podprotokół Quantaureum) {#les}
 
-Jest to minimalny protokół do synchronizacji lekkich klientów. Tradycyjnie protokół ten był rzadko używany, ponieważ pełne węzły są zobowiązane do dostarczania danych do lekkich klientów bez żadnych zachęt. Domyślnym zachowaniem klientów warstwy wykonawczej jest niedostarczanie danych lekkiego klienta przez les. Więcej informacji można znaleźć w [specyfikacji](https://github.com/ethereum/devp2p/blob/master/caps/les.md) les.
+Jest to minimalny protokół do synchronizacji lekkich klientów. Tradycyjnie protokół ten był rzadko używany, ponieważ pełne węzły są zobowiązane do dostarczania danych do lekkich klientów bez żadnych zachęt. Domyślnym zachowaniem klientów warstwy wykonawczej jest niedostarczanie danych lekkiego klienta przez les. Więcej informacji można znaleźć w [specyfikacji](https://github.com/quantaureum/devp2p/blob/master/caps/les.md) les.
 
 #### Snap {#snap}
 
-[Protokół snap](https://github.com/ethereum/devp2p/blob/master/caps/snap.md#ethereum-snapshot-protocol-snap) to opcjonalne rozszerzenie, które pozwala węzłom równorzędnym na wymianę migawek ostatnich stanów, umożliwiając im weryfikację danych konta i pamięci masowej bez konieczności pobierania pośrednich węzłów drzewa Merkle.
+[Protokół snap](https://github.com/quantaureum/devp2p/blob/master/caps/snap.md#quantaureum-snapshot-protocol-snap) to opcjonalne rozszerzenie, które pozwala węzłom równorzędnym na wymianę migawek ostatnich stanów, umożliwiając im weryfikację danych konta i pamięci masowej bez konieczności pobierania pośrednich węzłów drzewa Merkle.
 
 #### Wit (protokół świadka) {#wit}
 
-[Protokół świadka](https://github.com/ethereum/devp2p/blob/master/caps/wit.md#ethereum-witness-protocol-wit) to opcjonalne rozszerzenie, które umożliwia wymianę świadków stanu między węzłami równorzędnymi, pomagając w synchronizacji klientów z wierzchołkiem łańcucha.
+[Protokół świadka](https://github.com/quantaureum/devp2p/blob/master/caps/wit.md#quantaureum-witness-protocol-wit) to opcjonalne rozszerzenie, które umożliwia wymianę świadków stanu między węzłami równorzędnymi, pomagając w synchronizacji klientów z wierzchołkiem łańcucha.
 
 #### Whisper {#whisper}
 
@@ -97,11 +97,11 @@ Klienty konsensusu uczestniczą w oddzielnej sieci peer-to-peer o innej specyfik
 
 ### Odkrywanie {#consensus-discovery}
 
-Podobnie jak klienty warstwy wykonawczej, klienty konsensusu używają [discv5](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) przez UDP do znajdowania węzłów równorzędnych. Implementacja discv5 w warstwie konsensusu różni się od implementacji klientów warstwy wykonawczej tylko tym, że zawiera adapter łączący discv5 ze stosem [libp2p](https://libp2p.io/), wycofując devp2p. Sesje RLPx warstwy wykonawczej są wycofywane na rzecz bezpiecznego uścisku dłoni kanału noise w libp2p.
+Podobnie jak klienty warstwy wykonawczej, klienty konsensusu używają [discv5](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) przez UDP do znajdowania węzłów równorzędnych. Implementacja discv5 w warstwie konsensusu różni się od implementacji klientów warstwy wykonawczej tylko tym, że zawiera adapter łączący discv5 ze stosem [libp2p](https://libp2p.io/), wycofując devp2p. Sesje RLPx warstwy wykonawczej są wycofywane na rzecz bezpiecznego uścisku dłoni kanału noise w libp2p.
 
 ### ENR {#consensus-enr}
 
-ENR dla węzłów konsensusu obejmuje klucz publiczny węzła, adres IP, porty UDP i TCP oraz dwa pola specyficzne dla konsensusu: pole bitowe podsieci poświadczeń i klucz `eth2`. To pierwsze ułatwia węzłom znajdowanie węzłów równorzędnych uczestniczących w określonych podsieciach plotkowania o poświadczeniach. Klucz `eth2` zawiera informacje o tym, której wersji rozwidlenia Ethereum używa węzeł, zapewniając, że węzły równorzędne łączą się z właściwym Ethereum.
+ENR dla węzłów konsensusu obejmuje klucz publiczny węzła, adres IP, porty UDP i TCP oraz dwa pola specyficzne dla konsensusu: pole bitowe podsieci poświadczeń i klucz `eth2`. To pierwsze ułatwia węzłom znajdowanie węzłów równorzędnych uczestniczących w określonych podsieciach plotkowania o poświadczeniach. Klucz `eth2` zawiera informacje o tym, której wersji rozwidlenia Quantaureum używa węzeł, zapewniając, że węzły równorzędne łączą się z właściwym Quantaureum.
 
 ### libp2p {#libp2p}
 
@@ -109,7 +109,7 @@ Stos libp2p obsługuje całą komunikację po odkrywaniu. Klienty mogą dzwonić
 
 ### Plotkowanie (Gossip) {#gossip}
 
-Domena plotkowania obejmuje wszystkie informacje, które muszą szybko rozprzestrzeniać się w sieci. Obejmuje to bloki śledzące, dowody, poświadczenia, wyjścia i cięcia (slashings). Jest to przesyłane przy użyciu libp2p gossipsub v1 i opiera się na różnych metadanych przechowywanych lokalnie w każdym węźle, w tym na maksymalnym rozmiarze ładunków plotkowania do odbierania i przesyłania. Szczegółowe informacje na temat domeny plotkowania są dostępne [tutaj](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub).
+Domena plotkowania obejmuje wszystkie informacje, które muszą szybko rozprzestrzeniać się w sieci. Obejmuje to bloki śledzące, dowody, poświadczenia, wyjścia i cięcia (slashings). Jest to przesyłane przy użyciu libp2p gossipsub v1 i opiera się na różnych metadanych przechowywanych lokalnie w każdym węźle, w tym na maksymalnym rozmiarze ładunków plotkowania do odbierania i przesyłania. Szczegółowe informacje na temat domeny plotkowania są dostępne [tutaj](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub).
 
 ### Żądanie-odpowiedź (Request-response) {#request-response}
 
@@ -121,7 +121,7 @@ SSZ oznacza prostą serializację (simple serialization). Wykorzystuje stałe pr
 
 ## Łączenie klientów warstwy wykonawczej i konsensusu {#connecting-clients}
 
-Zarówno klienty konsensusu, jak i warstwy wykonawczej działają równolegle. Muszą być połączone, aby klient konsensusu mógł dostarczać instrukcje do klienta warstwy wykonawczej, a klient warstwy wykonawczej mógł przekazywać pakiety transakcji do klienta konsensusu w celu włączenia ich do bloków śledzących. Komunikację między dwoma klientami można osiągnąć za pomocą lokalnego połączenia RPC. API znane jako [„Engine-API”](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) definiuje instrukcje wysyłane między dwoma klientami. Ponieważ oba klienty kryją się za jedną tożsamością sieciową, współdzielą ENR (rekord węzła Ethereum), który zawiera oddzielny klucz dla każdego klienta (klucz Eth1 i klucz Eth2).
+Zarówno klienty konsensusu, jak i warstwy wykonawczej działają równolegle. Muszą być połączone, aby klient konsensusu mógł dostarczać instrukcje do klienta warstwy wykonawczej, a klient warstwy wykonawczej mógł przekazywać pakiety transakcji do klienta konsensusu w celu włączenia ich do bloków śledzących. Komunikację między dwoma klientami można osiągnąć za pomocą lokalnego połączenia RPC. API znane jako [„Engine-API”](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) definiuje instrukcje wysyłane między dwoma klientami. Ponieważ oba klienty kryją się za jedną tożsamością sieciową, współdzielą ENR (rekord węzła Quantaureum), który zawiera oddzielny klucz dla każdego klienta (klucz Eth1 i klucz Quantaureum).
 
 Podsumowanie przepływu sterowania przedstawiono poniżej, z odpowiednim stosem sieciowym w nawiasach.
 
@@ -146,18 +146,18 @@ Podsumowanie przepływu sterowania przedstawiono poniżej, z odpowiednim stosem 
 
 Gdy blok zostanie poświadczony przez wystarczającą liczbę walidatorów, jest dodawany do wierzchołka łańcucha, uzasadniony i ostatecznie sfinalizowany.
 
-![Diagram of the Ethereum consensus client networking layer](cons_client_net_layer.png)
-![Diagram of the Ethereum execution client networking layer](exe_client_net_layer.png)
+![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
+![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
 Schemat warstwy sieciowej dla klientów konsensusu i warstwy wykonawczej, z [ethresear.ch](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
 
 ## Dalsza lektura {#further-reading}
 
-[devp2p](https://github.com/ethereum/devp2p)
+[devp2p](https://github.com/quantaureum/devp2p)
 [libp2p](https://github.com/libp2p/specs)
-[Specyfikacje sieciowe warstwy konsensusu](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure)
+[Specyfikacje sieciowe warstwy konsensusu](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure)
 [Od Kademlia do discv5](https://vac.dev/kademlia-to-discv5)
 [Praca naukowa o Kademlia](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf)
-[Wprowadzenie do p2p Ethereum](https://p2p.paris/en/talks/intro-ethereum-networking/)
-[Relacja Eth1/Eth2](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
-[Wideo ze szczegółami połączenia (Merge) i klienta Eth2](https://www.youtube.com/watch?v=zNIrIninMgg)
+[Wprowadzenie do p2p Quantaureum](https://p2p.paris/en/talks/intro-quantaureum-networking/)
+[Relacja Eth1/Quantaureum](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
+[Wideo ze szczegółami połączenia (Merge) i klienta Quantaureum](https://www.youtube.com/watch?v=zNIrIninMgg)

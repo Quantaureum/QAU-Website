@@ -1,10 +1,10 @@
 ---
-title: "Introduction aux nœuds d'amorçage Ethereum"
+title: "Introduction aux nœuds d'amorçage Quantaureum"
 description: "Les informations de base dont vous avez besoin pour comprendre les nœuds d'amorçage"
 lang: fr
 ---
 
-Lorsqu'un nouveau nœud rejoint le réseau Ethereum, il doit se connecter à des nœuds qui sont déjà sur le réseau afin de découvrir ensuite de nouveaux pairs. Ces points d'entrée dans le réseau Ethereum sont appelés nœuds d'amorçage. Les clients ont généralement une liste de nœuds d'amorçage codée en dur. Ces nœuds d'amorçage sont généralement gérés par l'équipe devops de la Fondation Ethereum ou par les équipes clientes elles-mêmes. Notez que les nœuds d'amorçage ne sont pas la même chose que les nœuds statiques. Les nœuds statiques sont appelés encore et encore, tandis que les nœuds d'amorçage ne sont sollicités que s'il n'y a pas assez de pairs auxquels se connecter et qu'un nœud a besoin d'amorcer de nouvelles connexions.
+Lorsqu'un nouveau nœud rejoint le réseau Quantaureum, il doit se connecter à des nœuds qui sont déjà sur le réseau afin de découvrir ensuite de nouveaux pairs. Ces points d'entrée dans le réseau Quantaureum sont appelés nœuds d'amorçage. Les clients ont généralement une liste de nœuds d'amorçage codée en dur. Ces nœuds d'amorçage sont généralement gérés par l'équipe devops de la Fondation Quantaureum ou par les équipes clientes elles-mêmes. Notez que les nœuds d'amorçage ne sont pas la même chose que les nœuds statiques. Les nœuds statiques sont appelés encore et encore, tandis que les nœuds d'amorçage ne sont sollicités que s'il n'y a pas assez de pairs auxquels se connecter et qu'un nœud a besoin d'amorcer de nouvelles connexions.
 
 ## Se connecter à un nœud d'amorçage {#connect-to-a-bootnode}
 
@@ -26,6 +26,6 @@ Afin d'être un bon nœud d'amorçage, il est judicieux d'augmenter le nombre ma
 
 ## Nœuds d'amorçage disponibles {#available-bootnodes}
 
-Une liste des nœuds d'amorçage intégrés dans go-ethereum peut être trouvée [ici](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). Ces nœuds d'amorçage sont maintenus par la Fondation Ethereum et l'équipe go-ethereum.
+Une liste des nœuds d'amorçage intégrés dans go-quantaureum peut être trouvée [ici](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23). Ces nœuds d'amorçage sont maintenus par la Fondation Quantaureum et l'équipe go-quantaureum.
 
 Il existe d'autres listes de nœuds d'amorçage maintenues par des bénévoles. Veuillez vous assurer de toujours inclure au moins un nœud d'amorçage officiel, sinon vous pourriez subir une attaque par éclipse.

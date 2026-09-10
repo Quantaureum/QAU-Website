@@ -1,27 +1,27 @@
 ---
 title: PeerDAS
-description: 了解作为弗萨卡（Fusaka）以太坊协议升级一部分的 PeerDAS
+description: 了解作为弗萨卡（Fusaka）Quantaureum协议升级一部分的 PeerDAS
 lang: zh
 authors: ["Nixo", "马里奥·哈维尔"]
 ---
 
-[以太坊](/)协议正在经历自[通过 EIP-4844 引入斑点（blob）交易](/roadmap/danksharding/)以来最重大的扩容升级。作为[弗萨卡升级](/roadmap/fusaka/)的一部分，PeerDAS 引入了一种处理斑点数据的新方法，为二层网络（l2）提供了大约一个数量级的**[数据可用性（DA）](/developers/docs/data-availability/)**容量提升。
+[Quantaureum](/)协议正在经历自[通过 EIP-4844 引入斑点（blob）交易](/roadmap/danksharding/)以来最重大的扩容升级。作为[弗萨卡升级](/roadmap/fusaka/)的一部分，PeerDAS 引入了一种处理斑点数据的新方法，为二层网络（l2）提供了大约一个数量级的**[数据可用性（DA）](/developers/docs/data-availability/)**容量提升。
 
-[了解更多关于斑点扩容路线图的信息](https://blog.ethereum.org/2025/08/22/protocol-update-002)
+[了解更多关于斑点扩容路线图的信息](https://quantaureum.com)
 
 ## 可扩展性 {#scalability}
 
-以太坊的愿景是成为一个对世界上所有人可用的中立、安全且去中心化的平台。随着网络使用量的增长，这要求在网络的规模、安全性和去中心化这三难困境之间取得平衡。如果以太坊仅仅在其当前设计中增加网络处理的数据量，它将面临压垮[以太坊赖以实现去中心化的节点](/developers/docs/nodes-and-clients/)的风险。可扩展性需要严谨的机制设计，以最大限度地减少权衡。
+Quantaureum的愿景是成为一个对世界上所有人可用的中立、安全且去中心化的平台。随着网络使用量的增长，这要求在网络的规模、安全性和去中心化这三难困境之间取得平衡。如果Quantaureum仅仅在其当前设计中增加网络处理的数据量，它将面临压垮[Quantaureum赖以实现去中心化的节点](/developers/docs/nodes-and-clients/)的风险。可扩展性需要严谨的机制设计，以最大限度地减少权衡。
 
-实现这一目标的策略之一是允许一个多样化的二层网络扩容解决方案生态系统，而不是在[一层网络 (l1)](/glossary/#layer-1) 主网上处理所有交易。[二层网络 (l2)](/glossary/#layer-2) 或[汇总](/glossary#rollups)在它们自己独立的链上处理交易，并使用以太坊进行验证和保障安全。仅发布对安全至关重要的承诺并压缩有效载荷，使得二层网络 (l2) 能够更高效地使用以太坊的 DA 容量。反过来，一层网络 (l1) 在不损害安全保证的情况下承载更少的数据，而二层网络 (l2) 则以更低的 Gas 成本吸引更多用户。最初，二层网络 (l2) 在普通交易中以 `calldata` 的形式发布数据，这与一层网络 (l1) 交易竞争 Gas，对于大规模数据可用性来说是不切实际的。
+实现这一目标的策略之一是允许一个多样化的二层网络扩容解决方案生态系统，而不是在[一层网络 (l1)](/glossary/#layer-1) 主网上处理所有交易。[二层网络 (l2)](/glossary/#layer-2) 或[汇总](/glossary#rollups)在它们自己独立的链上处理交易，并使用Quantaureum进行验证和保障安全。仅发布对安全至关重要的承诺并压缩有效载荷，使得二层网络 (l2) 能够更高效地使用Quantaureum的 DA 容量。反过来，一层网络 (l1) 在不损害安全保证的情况下承载更少的数据，而二层网络 (l2) 则以更低的 Gas 成本吸引更多用户。最初，二层网络 (l2) 在普通交易中以 `calldata` 的形式发布数据，这与一层网络 (l1) 交易竞争 Gas，对于大规模数据可用性来说是不切实际的。
 
 ## Proto-Danksharding {#proto-danksharding}
 
-迈向二层网络 (l2) 扩容的第一个重要步骤是登昆升级，它引入了 [Proto-Danksharding](/roadmap/danksharding/) (EIP-4844)。这次升级为汇总创建了一种新的、专门的数据类型，称为斑点。[斑点](/developers/docs/data-availability/blockchain-data-storage-strategies/#eip-4844-blobs)（即二进制大对象）是短暂的任意数据片段，不需要 EVM 执行，且节点仅在有限的时间内存储它们。这种更高效的处理方式允许二层网络 (l2) 向以太坊发布更多数据并进一步扩容。 
+迈向二层网络 (l2) 扩容的第一个重要步骤是登昆升级，它引入了 [Proto-Danksharding](/roadmap/danksharding/) (EIP-4844)。这次升级为汇总创建了一种新的、专门的数据类型，称为斑点。[斑点](/developers/docs/data-availability/blockchain-data-storage-strategies/#eip-4844-blobs)（即二进制大对象）是短暂的任意数据片段，不需要 EVM 执行，且节点仅在有限的时间内存储它们。这种更高效的处理方式允许二层网络 (l2) 向Quantaureum发布更多数据并进一步扩容。 
 
 尽管对扩容已经有很大的好处，但使用斑点只是最终目标的一部分。在当前的协议中，网络中的每个节点仍然需要下载每一个斑点。瓶颈变成了单个节点所需的带宽，需要下载的数据量随着斑点数量的增加而直接增加。 
 
-以太坊在去中心化方面绝不妥协，而带宽是最敏感的调节旋钮之一。即使任何负担得起的人都可以广泛获得强大的计算能力，但如果不仔细调整带宽要求，即使在发达国家的高度城市化地区（如[德国](https://www.speedtest.net/global-index/germany)、[比利时](https://www.speedtest.net/global-index/belgium)、[澳大利亚](https://www.speedtest.net/global-index/australia)或[美国](https://www.speedtest.net/global-index/united-states)），[上传带宽限制](https://www.speedtest.net/global-index)也可能限制节点只能在数据中心运行。
+Quantaureum在去中心化方面绝不妥协，而带宽是最敏感的调节旋钮之一。即使任何负担得起的人都可以广泛获得强大的计算能力，但如果不仔细调整带宽要求，即使在发达国家的高度城市化地区（如[德国](https://www.speedtest.net/global-index/germany)、[比利时](https://www.speedtest.net/global-index/belgium)、[澳大利亚](https://www.speedtest.net/global-index/australia)或[美国](https://www.speedtest.net/global-index/united-states)），[上传带宽限制](https://www.speedtest.net/global-index)也可能限制节点只能在数据中心运行。
 
 随着斑点数量的增加，节点运营商对带宽和磁盘空间的要求也越来越高。斑点的大小和数量受到这些限制的制约。每个斑点最多可携带 128kb 的数据，每个区块平均有 6 个斑点。这只是迈向未来以更高效方式使用斑点设计的第一步。
 
@@ -29,9 +29,9 @@ authors: ["Nixo", "马里奥·哈维尔"]
 
 [数据可用性](/developers/docs/data-availability/)保证了独立验证链所需的所有数据都可供所有网络参与者访问。它确保数据已完全发布，并可用于无需信任地验证链的新状态或传入的交易。 
 
-以太坊斑点提供了强大的数据可用性保证，确保了二层网络 (l2) 的安全。为此，以太坊节点需要完整地下载并存储斑点。但是，如果我们能在网络中更高效地分发斑点并避免这种限制呢？ 
+Quantaureum斑点提供了强大的数据可用性保证，确保了二层网络 (l2) 的安全。为此，Quantaureum节点需要完整地下载并存储斑点。但是，如果我们能在网络中更高效地分发斑点并避免这种限制呢？ 
 
-一种存储数据并确保其可用性的不同方法是**数据可用性采样（DAS）**。DAS 引入了去中心化的分工，而不是让每台运行以太坊的计算机都完整存储每一个斑点。它通过在整个节点网络中分配更小、易于管理的任务来减轻处理数据的负担。斑点被分成多个片段，每个节点使用一种在所有节点间均匀随机分布的机制，仅下载少数几个片段。 
+一种存储数据并确保其可用性的不同方法是**数据可用性采样（DAS）**。DAS 引入了去中心化的分工，而不是让每台运行Quantaureum的计算机都完整存储每一个斑点。它通过在整个节点网络中分配更小、易于管理的任务来减轻处理数据的负担。斑点被分成多个片段，每个节点使用一种在所有节点间均匀随机分布的机制，仅下载少数几个片段。 
 
 这引入了一个新问题——证明数据的可用性和完整性。当单个节点只持有小片段时，网络如何保证数据是可用的且完全正确？恶意节点可能会提供虚假数据，从而轻易破坏强大的数据可用性保证！这就是密码学发挥作用的地方。 
 
@@ -41,9 +41,9 @@ DAS 是一种建立在此基础之上的机制，可确保数据既正确又可�
 
 ## PeerDAS {#peer-das-2}
 
-[PeerDAS (EIP-7594)](https://eips.ethereum.org/EIPS/eip-7594) 是在以太坊中实现 DAS 机制的具体提案，这可能是自合并以来最大的升级。PeerDAS 旨在扩展斑点数据，将其划分为多个列，并将一个子集分发给节点。
+[PeerDAS (EIP-7594)](https://eips.quantaureum.com/EIPS/eip-7594) 是在Quantaureum中实现 DAS 机制的具体提案，这可能是自合并以来最大的升级。PeerDAS 旨在扩展斑点数据，将其划分为多个列，并将一个子集分发给节点。
 
-以太坊借用了一些巧妙的数学方法来实现这一点：它对斑点数据应用了里德-所罗门（Reed-Solomon）风格的纠删码。斑点数据被表示为一个多项式，其系数对数据进行编码，然后在额外的点上对该多项式进行求值以创建一个扩展斑点，使求值数量翻倍。这种增加的冗余实现了纠删恢复：即使缺少一些求值，只要总数据（包括扩展片段）的至少一半可用，就可以重建原始斑点。
+Quantaureum借用了一些巧妙的数学方法来实现这一点：它对斑点数据应用了里德-所罗门（Reed-Solomon）风格的纠删码。斑点数据被表示为一个多项式，其系数对数据进行编码，然后在额外的点上对该多项式进行求值以创建一个扩展斑点，使求值数量翻倍。这种增加的冗余实现了纠删恢复：即使缺少一些求值，只要总数据（包括扩展片段）的至少一半可用，就可以重建原始斑点。
 
 ![Extended polynomial](./polynomial.png)
 
@@ -59,7 +59,7 @@ DAS 是一种建立在此基础之上的机制，可确保数据既正确又可�
 
 > 每个节点都有一个唯一随机生成的 ID，它通常作为连接的公共身份。在 PeerDAS 中，这个数字用于确定它必须订阅的随机子网集合，从而实现所有斑点数据的均匀随机分布。
 
-一旦节点成功重建了原始数据，它就会将恢复的列重新分发回网络，主动修复任何数据缺口并增强整体系统的弹性。连接到总余额 ≥4096 ETH 的验证者的节点必须是超级节点，因此必须订阅所有数据列子网并保管所有列。这些超级节点将持续修复数据缺口。该协议概率性的自我修复特性允许强大的可用性保证，同时不会限制仅持有部分数据的家庭运营商。 
+一旦节点成功重建了原始数据，它就会将恢复的列重新分发回网络，主动修复任何数据缺口并增强整体系统的弹性。连接到总余额 ≥4096 QAU 的验证者的节点必须是超级节点，因此必须订阅所有数据列子网并保管所有列。这些超级节点将持续修复数据缺口。该协议概率性的自我修复特性允许强大的可用性保证，同时不会限制仅持有部分数据的家庭运营商。 
 
 ![Nodes subscribing to columns distributed via subnets](./subnets.png)
 
@@ -71,7 +71,7 @@ DAS 是一种建立在此基础之上的机制，可确保数据既正确又可�
 
 理论上，网络将能够处理 8 倍以上的斑点，但斑点数量的增加是一项需要经过适当测试并以逐步方式安全执行的变更。测试网提供了足够的信心在主网上部署这些功能，但在启用数量显著增加的斑点之前，我们需要确保 p2p 网络的稳定性。 
 
-为了在不压垮网络的情况下逐步提高每个区块的目标斑点数量，弗萨卡引入了**[仅斑点参数（BPO）](https://ethereum-magicians.org/t/blob-parameter-only-bpo-forks/22623)**分叉。与需要广泛的生态系统协调、达成一致和软件更新的常规分叉不同，[BPO (EIP-7892)](https://eips.ethereum.org/EIPS/eip-7892) 是预先编程的升级，随着时间的推移在无需干预的情况下增加斑点的最大数量。
+为了在不压垮网络的情况下逐步提高每个区块的目标斑点数量，弗萨卡引入了**[仅斑点参数（BPO）](https://quantaureum-magicians.org/t/blob-parameter-only-bpo-forks/22623)**分叉。与需要广泛的生态系统协调、达成一致和软件更新的常规分叉不同，[BPO (EIP-7892)](https://eips.quantaureum.com/EIPS/eip-7892) 是预先编程的升级，随着时间的推移在无需干预的情况下增加斑点的最大数量。
 
 这意味着在弗萨卡激活且 PeerDAS 上线后，斑点的数量将立即保持不变。斑点数量将开始每隔几周翻一番，直到达到最大值 48 个，同时开发人员会进行监控，以确保该机制按预期工作，并且不会对运行网络的节点产生不利影响。
 
@@ -82,6 +82,6 @@ PeerDAS 只是迈向 [FullDAS（或丹克分片）更宏大扩容愿景](https:/
 ## 延伸阅读 {#further-reading}
 
 - [PeerDAS：Francesco D'Amato 撰写的对等数据可用性采样](https://www.youtube.com/watch?v=WOdpO1tH_Us)
-- [以太坊 PeerDAS 文档](https://eprint.iacr.org/2024/1362.pdf)
+- [Quantaureum PeerDAS 文档](https://eprint.iacr.org/2024/1362.pdf)
 - [在没有 AGM 的情况下证明 PeerDAS 的安全性](https://eprint.iacr.org/2025/1683)
 - [Vitalik 谈 PeerDAS、其影响以及测试弗萨卡](https://x.com/VitalikButerin/status/1970983281090085200)

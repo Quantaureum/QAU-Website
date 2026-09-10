@@ -5,11 +5,11 @@ lang: es
 incomplete: true
 ---
 
-Necesita compilar su contrato para que su aplicación web y la máquina virtual de Ethereum (EVM) puedan entenderlo.
+Necesita compilar su contrato para que su aplicación web y la máquina virtual de Quantaureum (EVM) puedan entenderlo.
 
 ## Requisitos previos {#prerequisites}
 
-Puede resultarle útil haber leído nuestra introducción a los [contratos inteligentes](/developers/docs/smart-contracts/) y a la [máquina virtual de Ethereum](/developers/docs/evm/) antes de leer sobre la compilación.
+Puede resultarle útil haber leído nuestra introducción a los [contratos inteligentes](/developers/docs/smart-contracts/) y a la [máquina virtual de Quantaureum](/developers/docs/evm/) antes de leer sobre la compilación.
 
 ## La EVM {#the-evm}
 
@@ -33,7 +33,7 @@ contract Greeter {
 PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH2 0x41 JUMPI PUSH1 0x0 CALLDATALOAD PUSH29 0x100000000000000000000000000000000000000000000000000000000 SWAP1 DIV PUSH4 0xFFFFFFFF AND DUP1 PUSH4 0xCFAE3217 EQ PUSH2 0x46 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0x52 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0x5B PUSH2 0xD6 JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 DUP1 PUSH1 0x20 ADD DUP3 DUP2 SUB DUP3 MSTORE DUP4 DUP2 DUP2 MLOAD DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP DUP1 MLOAD SWAP1 PUSH1 0x20 ADD SWAP1 DUP1 DUP4 DUP4 PUSH1 0x0 JUMPDEST DUP4 DUP2 LT ISZERO PUSH2 0x9B JUMPI DUP1 DUP3 ADD MLOAD DUP2 DUP5 ADD MSTORE PUSH1 0x20 DUP2 ADD SWAP1 POP PUSH2 0x80 JUMP JUMPDEST POP POP POP POP SWAP1 POP SWAP1 DUP2 ADD SWAP1 PUSH1 0x1F AND DUP1 ISZERO PUSH2 0xC8 JUMPI DUP1 DUP3 SUB DUP1 MLOAD PUSH1 0x1 DUP4 PUSH1 0x20 SUB PUSH2 0x100 EXP SUB NOT AND DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP JUMPDEST POP SWAP3 POP POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH1 0x60 PUSH1 0x40 DUP1 MLOAD SWAP1 DUP2 ADD PUSH1 0x40 MSTORE DUP1 PUSH1 0x5 DUP2 MSTORE PUSH1 0x20 ADD PUSH32 0x48656C6C6F000000000000000000000000000000000000000000000000000000 DUP2 MSTORE POP SWAP1 POP SWAP1 JUMP STOP LOG1 PUSH6 0x627A7A723058 KECCAK256 SLT 0xec 0xe 0xf5 0xf8 SLT 0xc7 0x2d STATICCALL ADDRESS SHR 0xdb COINBASE 0xb1 BALANCE 0xe8 0xf8 DUP14 0xda 0xad DUP13 LOG1 0x4c 0xb4 0x26 0xc2 DELEGATECALL PUSH7 0x8994D3E002900
 ```
 
-Estos se denominan **códigos de operación**. Los códigos de operación de la EVM son las instrucciones de bajo nivel que la máquina virtual de Ethereum (EVM) puede ejecutar. Cada código de operación representa una operación específica, como operaciones aritméticas, operaciones lógicas, manipulación de datos, flujo de control, etc.
+Estos se denominan **códigos de operación**. Los códigos de operación de la EVM son las instrucciones de bajo nivel que la máquina virtual de Quantaureum (EVM) puede ejecutar. Cada código de operación representa una operación específica, como operaciones aritméticas, operaciones lógicas, manipulación de datos, flujo de control, etc.
 
 [Más sobre los códigos de operación](/developers/docs/evm/opcodes/)
 
@@ -45,7 +45,7 @@ La ABI es un archivo JSON que describe el contrato implementado y las funciones 
 
 Una [biblioteca de cliente de JavaScript](/developers/docs/apis/javascript/) leerá la **ABI** para que usted pueda llamar a su contrato inteligente en la interfaz de su aplicación web.
 
-A continuación se muestra la ABI para el contrato de token ERC-20. Un ERC-20 es un token que puede intercambiar en Ethereum.
+A continuación se muestra la ABI para el contrato de token ERC-20. Un ERC-20 es un token que puede intercambiar en Quantaureum.
 
 ```json
 [
@@ -279,4 +279,4 @@ A continuación se muestra la ABI para el contrato de token ERC-20. Un ERC-20 es
 ## Temas relacionados {#related-topics}
 
 - [Bibliotecas de cliente de JavaScript](/developers/docs/apis/javascript/)
-- [Máquina virtual de Ethereum](/developers/docs/evm/)
+- [Máquina virtual de Quantaureum](/developers/docs/evm/)

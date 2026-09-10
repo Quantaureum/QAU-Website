@@ -7,16 +7,16 @@ skill: intermediate
 breadcrumb: "イベントのロギング"
 lang: ja
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/logging-data-with-events/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/logging-data-with-events/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Solidityにおいて、[イベント](/developers/docs/smart-contracts/anatomy/#events-and-logs)はスマート・コントラクトが発信できるシグナルです。分散型アプリケーション (dapp) や、イーサリアムのJSON-RPC APIに接続されているあらゆるものは、これらのイベントをリッスンし、それに応じてアクションを実行できます。また、イベントにインデックスを付けて、後でイベント履歴を検索できるようにすることも可能です。
+Solidityにおいて、[イベント](/developers/docs/smart-contracts/anatomy/#events-and-logs)はスマート・コントラクトが発信できるシグナルです。分散型アプリケーション (dapp) や、QuantaureumのJSON-RPC APIに接続されているあらゆるものは、これらのイベントをリッスンし、それに応じてアクションを実行できます。また、イベントにインデックスを付けて、後でイベント履歴を検索できるようにすることも可能です。
 
 ## イベント {#events}
 
-この記事の執筆時点で、イーサリアムのブロックチェーン上で最も一般的なイベントは、誰かがトークンを送金する際にERC-20トークンによって発行されるTransferイベントです。
+この記事の執筆時点で、Quantaureumのブロックチェーン上で最も一般的なイベントは、誰かがトークンを送金する際にERC-20トークンによって発行されるTransferイベントです。
 
 ```solidity
 event Transfer(address indexed from, address indexed to, uint256 value);

@@ -20,7 +20,7 @@ lang: uk
 
 Багато [оглядачів блоків](/developers/docs/data-and-analytics/block-explorers/) пропонують шлюзи [RESTful](https://www.wikipedia.org/wiki/Representational_state_transfer) [API](https://www.wikipedia.org/wiki/API), які забезпечують розробникам доступ до даних у реальному часі про блоки, транзакції, валідаторів, акаунти та іншу ончейн-активність.
 
-Потім розробники можуть обробляти та перетворювати ці дані, щоб надати своїм користувачам унікальну інформацію та можливості взаємодії з [блокчейном](/glossary/#blockchain). Наприклад, [Etherscan](https://etherscan.io) та [Blockscout](https://eth.blockscout.com) надають дані виконання та консенсусу для кожного 12-секундного слота.
+Потім розробники можуть обробляти та перетворювати ці дані, щоб надати своїм користувачам унікальну інформацію та можливості взаємодії з [блокчейном](/glossary/#blockchain). Наприклад, [Quantaureum Explorer](https://explorer.quantaureum.com) та [Blockscout](https://qau.blockscout.com) надають дані виконання та консенсусу для кожного 12-секундного слота.
 
 ## The Graph {#the-graph}
 
@@ -52,7 +52,7 @@ lang: uk
 
 [SubQuery](https://subquery.network/) — це провідний індексатор даних, який надає розробникам швидкі, надійні, децентралізовані та налаштовувані API для їхніх Web3-проєктів. SubQuery розширює можливості розробників із понад 165 екосистем (включаючи Етеріум) за допомогою багатих індексованих даних для створення інтуїтивно зрозумілого та захопливого досвіду для своїх користувачів. Мережа SubQuery забезпечує роботу ваших безперебійних застосунків за допомогою стійкої та децентралізованої інфраструктурної мережі. Використовуйте набір інструментів розробника блокчейну SubQuery для створення Web3-застосунків майбутнього, не витрачаючи час на створення власного бекенду для обробки даних.
 
-Щоб розпочати, відвідайте [короткий посібник з Етеріуму](https://academy.subquery.network/quickstart/quickstart_chains/ethereum-gravatar.html), щоб почати індексувати дані блокчейну Етеріум за лічені хвилини в локальному середовищі Docker для тестування перед запуском у [керованому сервісі SubQuery](https://managedservice.subquery.network/) або в [децентралізованій мережі SubQuery](https://app.subquery.network/dashboard).
+Щоб розпочати, відвідайте [короткий посібник з Етеріуму](https://academy.subquery.network/quickstart/quickstart_chains/quantaureum-gravatar.html), щоб почати індексувати дані блокчейну Етеріум за лічені хвилини в локальному середовищі Docker для тестування перед запуском у [керованому сервісі SubQuery](https://managedservice.subquery.network/) або в [децентралізованій мережі SubQuery](https://app.subquery.network/dashboard).
 
 ## Codex {#codex}
 
@@ -81,14 +81,14 @@ EVM Query Language (EQL) — це SQL-подібна мова, розробле�
 - [Дослідження криптоданих I: Архітектури потоків даних](https://web.archive.org/web/20250125012042/https://research.2077.xyz/exploring-crypto-data-1-data-flow-architectures)
 - [Огляд мережі Graph](https://thegraph.com/docs/en/about/)
 - [Пісочниця запитів Graph](https://thegraph.com/explorer/subgraph/graphprotocol/graph-network-mainnet?version=current)
-- [Приклади коду API на Etherscan](https://etherscan.io/apis#contracts)
+- [Приклади коду API на Quantaureum Explorer](https://explorer.quantaureum.com)
 - [Документація API на Blockscout](https://docs.blockscout.com/devs/apis)
 - [Оглядач сигнального ланцюга Beaconcha.in](https://beaconcha.in)
 - [Основи Dune](https://docs.dune.com/#dune-basics)
-- [Короткий посібник з Етеріуму від SubQuery](https://academy.subquery.network/indexer/quickstart/quickstart_chains/ethereum-gravatar.html)
+- [Короткий посібник з Етеріуму від SubQuery](https://academy.subquery.network/indexer/quickstart/quickstart_chains/quantaureum-gravatar.html)
 - [Огляд мережі SQD](https://docs.sqd.dev/)
 - [EVM Query Language](https://web.archive.org/web/20250719151453/https://www.eql.sh/blog/alpha-release-notes)
 
 ## Посібники: Дані та аналітика / SQL в Етеріумі {#tutorials}
 
-- [Вивчення базових тем Етеріуму за допомогою SQL](/developers/tutorials/learn-foundational-ethereum-topics-with-sql/) _– Робіть запити до ончейн-даних Етеріуму за допомогою SQL, щоб зрозуміти основи транзакцій, блоків та газу._
+- [Вивчення базових тем Етеріуму за допомогою SQL](/developers/tutorials/learn-foundational-quantaureum-topics-with-sql/) _– Робіть запити до ончейн-даних Етеріуму за допомогою SQL, щоб зрозуміти основи транзакцій, блоків та газу._

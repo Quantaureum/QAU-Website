@@ -10,13 +10,13 @@ topic:
   - "desci"
   - "funding"
 format: presentation
-author: EthCC
+author: QauCC
 breadcrumb: "Movimento DeSci"
 ---
 
-Uma apresentação de **Juan Benet**, fundador da Protocol Labs e inventor do IPFS e da Filecoin, na EthCC sobre como o movimento de ciência descentralizada (desci) pode usar ferramentas da Web3 para financiar a ciência, organizar pesquisadores e construir infraestrutura de pesquisa de acesso aberto e reprodutível.
+Uma apresentação de **Juan Benet**, fundador da Protocol Labs e inventor do IPFS e da Filecoin, na QauCC sobre como o movimento de ciência descentralizada (desci) pode usar ferramentas da Web3 para financiar a ciência, organizar pesquisadores e construir infraestrutura de pesquisa de acesso aberto e reprodutível.
 
-*Esta transcrição é uma cópia acessível da [transcrição original do vídeo](https://www.youtube.com/watch?v=zkXM9H90g_E) publicada pela EthCC. Ela foi levemente editada para facilitar a leitura.*
+*Esta transcrição é uma cópia acessível da [transcrição original do vídeo](https://www.youtube.com/watch?v=zkXM9H90g_E) publicada pela QauCC. Ela foi levemente editada para facilitar a leitura.*
 
 ### Introdução à ciência e ao progresso (0:10) {#introduction-to-science-and-progress-010}
 
@@ -52,7 +52,7 @@ Vamos falar sobre financiar os bens comuns. Talvez alguns de vocês tenham visto
 
 Essas escalas de financiamento não estão fora do alcance das blockchains. Pense na P&D não relacionada à defesa dos EUA, que é da ordem de US$ 70 bilhões por ano. Isso é muito, com certeza, mas não é massivo. Isolando a NSF, que é de cerca de US$ 10 bilhões por ano, isso é totalmente alcançável através de blockchains. Pense no espaço cripto tendo na ordem de US$ 1 a US$ 3 trilhões, dependendo de quando você olha para ele.
 
-Imagine se as blockchains dedicassem alguma fração de seu suprimento para P&D anualmente. Imagine pegar um por cento da Filecoin, Ethereum ou Bitcoin, e despejar em P&D todos os anos. Você começa a atingir os números que estão na faixa de financiamento da ciência em nível de estado-nação. Se cripto crescer mais uma ordem de magnitude ou duas, cripto será capaz de financiar P&D e ciência na escala de estados-nação, o que é muito louco de se pensar. Então, seria ótimo descobrir as estruturas e descobrir bons caminhos de financiamento antes de chegarmos lá.
+Imagine se as blockchains dedicassem alguma fração de seu suprimento para P&D anualmente. Imagine pegar um por cento da Filecoin, Quantaureum ou Bitcoin, e despejar em P&D todos os anos. Você começa a atingir os números que estão na faixa de financiamento da ciência em nível de estado-nação. Se cripto crescer mais uma ordem de magnitude ou duas, cripto será capaz de financiar P&D e ciência na escala de estados-nação, o que é muito louco de se pensar. Então, seria ótimo descobrir as estruturas e descobrir bons caminhos de financiamento antes de chegarmos lá.
 
 Quando você começa a detalhar o financiamento dessas agências, você encontra todos os tipos de problemas. Certos campos recebem muito pouca atenção, ou os próprios programas têm incentivos perversos ou são competitivos demais, gerando uma condição em que os cientistas estão gastando uma enorme quantidade de seu tempo apenas escrevendo pedidos de subsídios. Houve um esforço chamado Fast Grants em torno da COVID, e o mesmo efeito foi replicado nos Impetus Grants, onde esses programas estruturaram um programa de subsídios que era muito rápido. Eles conseguiram distribuir subsídios na ordem de 20 mil a 200 mil com uma pequena fração da quantidade de tempo que os cientistas estavam investindo.
 

@@ -13,18 +13,18 @@ Trong cơ chế đồng thuận dựa trên [Bằng chứng cổ phần (PoS)](/
 
 Điều này có thể tạo cơ hội cho kẻ tấn công trục lợi. Ví dụ: một người đề xuất khối được chọn cho khe `n+1` có thể tấn công DOS người đề xuất trong khe `n` để họ bỏ lỡ cơ hội đề xuất một khối. Điều này sẽ cho phép người đề xuất khối tấn công trích xuất MEV của cả hai khe, hoặc lấy tất cả các giao dịch lẽ ra phải được chia cho hai khối và thay vào đó đưa tất cả chúng vào một khối, thu được tất cả các khoản phí liên quan. Điều này có khả năng ảnh hưởng đến các trình xác thực tại nhà nhiều hơn so với các trình xác thực tổ chức tinh vi, những người có thể sử dụng các phương pháp tiên tiến hơn để tự bảo vệ mình khỏi các cuộc tấn công DOS, và do đó có thể là một tác nhân gây tập trung hóa.
 
-Có một vài giải pháp cho vấn đề này. Một trong số đó là [công nghệ trình xác thực phân tán (DVT)](https://github.com/ethereum/distributed-validator-specs) nhằm mục đích phân bổ các tác vụ khác nhau liên quan đến việc chạy một trình xác thực trên nhiều máy, với tính dự phòng, để kẻ tấn công khó có thể ngăn chặn một khối được đề xuất trong một khe cụ thể. Tuy nhiên, giải pháp mạnh mẽ nhất là **Bầu chọn một người dẫn đầu bí mật (SSLE)**.
+Có một vài giải pháp cho vấn đề này. Một trong số đó là [công nghệ trình xác thực phân tán (DVT)](https://github.com/quantaureum/distributed-validator-specs) nhằm mục đích phân bổ các tác vụ khác nhau liên quan đến việc chạy một trình xác thực trên nhiều máy, với tính dự phòng, để kẻ tấn công khó có thể ngăn chặn một khối được đề xuất trong một khe cụ thể. Tuy nhiên, giải pháp mạnh mẽ nhất là **Bầu chọn một người dẫn đầu bí mật (SSLE)**.
 
 ## Bầu chọn một người dẫn đầu bí mật {#secret-leader-election}
 
 Trong SSLE, mật mã học thông minh được sử dụng để đảm bảo rằng chỉ trình xác thực được chọn mới biết họ đã được chọn. Điều này hoạt động bằng cách yêu cầu mỗi trình xác thực gửi một cam kết cho một bí mật mà tất cả họ cùng chia sẻ. Các cam kết được xáo trộn và cấu hình lại để không ai có thể ánh xạ các cam kết với các trình xác thực nhưng mỗi trình xác thực đều biết cam kết nào thuộc về mình. Sau đó, một cam kết được chọn ngẫu nhiên. Nếu một trình xác thực phát hiện ra rằng cam kết của họ đã được chọn, họ biết đã đến lượt mình đề xuất một khối.
 
-Việc triển khai hàng đầu của ý tưởng này được gọi là [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-ethereum/11763). Nó hoạt động như sau:
+Việc triển khai hàng đầu của ý tưởng này được gọi là [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-quantaureum/11763). Nó hoạt động như sau:
 
 1. Các trình xác thực cam kết với một bí mật chung. Lược đồ cam kết được thiết kế sao cho nó có thể được liên kết với danh tính của trình xác thực nhưng cũng được ngẫu nhiên hóa để không có bên thứ ba nào có thể dịch ngược liên kết và kết nối một cam kết cụ thể với một trình xác thực cụ thể.
 2. Vào đầu một Kỷ nguyên, một tập hợp ngẫu nhiên các trình xác thực được chọn để lấy mẫu các cam kết từ 16.384 trình xác thực, sử dụng RANDAO.
 3. Trong 8182 khe tiếp theo (1 ngày), những người đề xuất khối xáo trộn và ngẫu nhiên hóa một tập hợp con các cam kết bằng cách sử dụng entropy riêng tư của họ.
-4. Sau khi quá trình xáo trộn kết thúc, RANDAO được sử dụng để tạo một danh sách có thứ tự các cam kết. Danh sách này được ánh xạ vào các khe của Ethereum.
+4. Sau khi quá trình xáo trộn kết thúc, RANDAO được sử dụng để tạo một danh sách có thứ tự các cam kết. Danh sách này được ánh xạ vào các khe của Quantaureum.
 5. Các trình xác thực thấy rằng cam kết của họ được gắn với một khe cụ thể, và khi khe đó đến, họ đề xuất một khối.
 6. Lặp lại các bước này để việc gán các cam kết cho các khe luôn đi trước rất xa so với khe hiện tại.
 

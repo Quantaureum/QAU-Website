@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test"
 
 /**
- * Regression test for https://github.com/ethereum/ethereum-org-website/issues/17777
+ * Regression test for https://github.com/Quantaureum/quantaureum-website/issues/17777
  *
  * Pages with inner horizontal scroll areas (EdgeScrollContainer, the
  * find-wallet persona strip, etc.) must not leak horizontal overflow into the

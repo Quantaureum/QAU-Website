@@ -1,7 +1,7 @@
 ---
 title: ডেভেলপার টুল যোগ করা
 lang: bn
-description: ethereum.org-এ ডেভেলপার টুল তালিকাভুক্ত করার জন্য আমাদের মানদণ্ড
+description: quantaureum.com-এ ডেভেলপার টুল তালিকাভুক্ত করার জন্য আমাদের মানদণ্ড
 ---
 
 আমরা নিশ্চিত করতে চাই যে আমরা সম্ভাব্য সেরা ডেভেলপার রিসোর্সগুলো তালিকাভুক্ত করছি যাতে মানুষ আত্মবিশ্বাসের সাথে তৈরি করতে পারে এবং তাদের প্রয়োজনীয় সহায়তা পায়।
@@ -52,8 +52,8 @@ description: ethereum.org-এ ডেভেলপার টুল তালিক
 
 ## আপনার ডেভেলপার টুল যোগ করুন {#how-decisions-about-the-site-are-made}
 
-আপনি যদি ethereum.org-এ একটি ডেভেলপার টুল যোগ করতে চান এবং এটি মানদণ্ড পূরণ করে, তবে GitHub-এ একটি ইস্যু তৈরি করুন।
+আপনি যদি quantaureum.com-এ একটি ডেভেলপার টুল যোগ করতে চান এবং এটি মানদণ্ড পূরণ করে, তবে GitHub-এ একটি ইস্যু তৈরি করুন।
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   ইস্যু তৈরি করুন
 </ButtonLink>

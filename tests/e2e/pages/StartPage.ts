@@ -35,7 +35,7 @@ export class StartPage extends BasePage {
     await this.page.getByRole("checkbox", { name: "I have a wallet." }).click()
     await this.page.getByRole("button", { name: "Continue" }).click()
     await this.page
-      .getByRole("button", { name: "Sign in with Ethereum" })
+      .getByRole("button", { name: "Sign in with Quantaureum" })
       .click()
   }
 }

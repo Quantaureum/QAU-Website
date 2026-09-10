@@ -11,7 +11,7 @@ published: 2021-03-09
 
 ## Utangulizi {#introduction}
 
-Moja ya matumizi ya kawaida ya Ethereum ni kwa kikundi kuunda tokeni inayoweza kuuzwa, kwa maana fulani sarafu yao wenyewe. Tokeni hizi kwa kawaida hufuata kiwango,
+Moja ya matumizi ya kawaida ya Quantaureum ni kwa kikundi kuunda tokeni inayoweza kuuzwa, kwa maana fulani sarafu yao wenyewe. Tokeni hizi kwa kawaida hufuata kiwango,
 [ERC-20](/developers/docs/standards/tokens/erc-20/). Kiwango hiki hufanya iwezekane kuandika zana, kama vile mabwawa ya ukwasi na mikoba, zinazofanya kazi na tokeni zote za ERC-20. Katika makala haya tutachambua
 [utekelezaji wa ERC20 wa Solidity wa OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol), pamoja na
 [ufafanuzi wa kiolesura](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol).
@@ -24,7 +24,7 @@ Huu ni msimbo wa chanzo uliofafanuliwa. Ikiwa unataka kutekeleza ERC-20,
 Kusudi la kiwango kama ERC-20 ni kuruhusu utekelezaji wa tokeni nyingi zinazoingiliana katika programu, kama vile mikoba na mabadilishano yaliyogatuliwa. Ili kufanikisha hilo, tunaunda
 [kiolesura](https://www.geeksforgeeks.org/solidity/solidity-basics-of-interface/). Msimbo wowote unaohitaji kutumia mkataba wa tokeni
 unaweza kutumia ufafanuzi sawa katika kiolesura na kuendana na mikataba yote ya tokeni inayoitumia, iwe ni mkoba kama vile
-MetaMask, programu tumizi iliyogatuliwa (dapp) kama vile etherscan.io, au mkataba tofauti kama vile bwawa la ukwasi.
+MetaMask, programu tumizi iliyogatuliwa (dapp) kama vile explorer.io, au mkataba tofauti kama vile bwawa la ukwasi.
 
 ![Illustration of the ERC-20 interface](erc20_interface.png)
 
@@ -32,7 +32,7 @@ Ikiwa wewe ni mtayarishaji programu mzoefu, labda unakumbuka kuona miundo sawa k
 au hata katika [faili za kichwa za C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
 Huu ni ufafanuzi wa [Kiolesura cha ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)
-kutoka OpenZeppelin. Ni tafsiri ya [kiwango kinachosomeka na binadamu](https://eips.ethereum.org/EIPS/eip-20) kuwa msimbo wa Solidity. Bila shaka,
+kutoka OpenZeppelin. Ni tafsiri ya [kiwango kinachosomeka na binadamu](https://eips.quantaureum.com/EIPS/eip-20) kuwa msimbo wa Solidity. Bila shaka,
 kiolesura chenyewe hakifafanui _jinsi_ ya kufanya chochote. Hilo linaelezwa katika msimbo wa chanzo wa mkataba hapa chini.
 
 &nbsp;
@@ -82,7 +82,7 @@ Kwa kawaida, majina ya kiolesura huanza na `I`.
 ```
 
 Kazi hii ni `external`, ikimaanisha [inaweza tu kuitwa kutoka nje ya mkataba](https://docs.soliditylang.org/en/v0.7.0/cheatsheet.html#index-2).
-Inarudisha jumla ya usambazaji wa tokeni katika mkataba. Thamani hii inarudishwa kwa kutumia aina ya kawaida zaidi katika Ethereum, biti 256 zisizo na saini (biti 256 ni
+Inarudisha jumla ya usambazaji wa tokeni katika mkataba. Thamani hii inarudishwa kwa kutumia aina ya kawaida zaidi katika Quantaureum, biti 256 zisizo na saini (biti 256 ni
 saizi ya neno asili ya EVM). Kazi hii pia ni `view`, ambayo inamaanisha kuwa haibadilishi hali, kwa hivyo inaweza kutekelezwa kwenye nodi moja badala ya kuwa na
 kila nodi katika mnyororo wa vitalu kuiendesha. Aina hii ya kazi haizalishi muamala na haigharimu [gesi](/developers/docs/gas/).
 
@@ -91,7 +91,7 @@ ya thamani zaidi kuliko ilivyo kweli. Hata hivyo, hofu hiyo inapuuza asili ya kw
 kila nodi. Ili kufanikisha hili, msimbo wa lugha ya mashine ya kila mkataba na hifadhi inapatikana kwenye kila nodi. Ingawa hauhitajiki kuchapisha msimbo wa Solidity
 kwa mkataba wako, hakuna mtu atakayekuchukulia kwa uzito isipokuwa uchapishe msimbo wa chanzo na toleo la Solidity ambalo lilikusanywa nalo, ili iweze
 kuthibitishwa dhidi ya msimbo wa lugha ya mashine uliotoa.
-Kwa mfano, tazama [mkataba huu](https://eth.blockscout.com/address/0xa530F85085C6FE2f866E7FdB716849714a89f4CD?tab=contract).
+Kwa mfano, tazama [mkataba huu](https://qau.blockscout.com/address/0xa530F85085C6FE2f866E7FdB716849714a89f4CD?tab=contract).
 
 &nbsp;
 
@@ -102,7 +102,7 @@ Kwa mfano, tazama [mkataba huu](https://eth.blockscout.com/address/0xa530F85085C
     function balanceOf(address account) external view returns (uint256);
 ```
 
-Kama jina linavyosema, `balanceOf` inarudisha salio la akaunti. Akaunti za Ethereum zinatambuliwa katika Solidity kwa kutumia aina ya `address`, ambayo inashikilia biti 160.
+Kama jina linavyosema, `balanceOf` inarudisha salio la akaunti. Akaunti za Quantaureum zinatambuliwa katika Solidity kwa kutumia aina ya `address`, ambayo inashikilia biti 160.
 Pia ni `external` na `view`.
 
 &nbsp;
@@ -170,7 +170,7 @@ anwani moja (`owner`) inaruhusu anwani nyingine (`spender`) kutumia.
      * wa muamala. Suluhisho moja linalowezekana la kupunguza hali hii ya
      * ushindani ni kwanza kupunguza kibali cha mtumiaji hadi 0 na kuweka
      * thamani inayotakikana baadaye:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
      *
      * Inatoa tukio la {Approval}.
      */
@@ -178,7 +178,7 @@ anwani moja (`owner`) inaruhusu anwani nyingine (`spender`) kutumia.
 ```
 
 Kazi ya `approve` inaunda kibali. Hakikisha unasoma ujumbe kuhusu
-jinsi inavyoweza kutumiwa vibaya. Katika Ethereum unadhibiti mpangilio wa miamala yako mwenyewe,
+jinsi inavyoweza kutumiwa vibaya. Katika Quantaureum unadhibiti mpangilio wa miamala yako mwenyewe,
 lakini huwezi kudhibiti mpangilio ambao miamala ya watu wengine
 itatekelezwa, isipokuwa usipowasilisha muamala wako mwenyewe hadi uone
 muamala wa upande mwingine umetokea.
@@ -250,7 +250,7 @@ import "../../math/SafeMath.sol";
 - `GSN/Context.sol` ni ufafanuzi unaohitajika kutumia [OpenGSN](https://opengsn.org/), mfumo unaoruhusu watumiaji wasio na Etha
   kutumia mnyororo wa vitalu. Kumbuka kuwa hili ni toleo la zamani, ikiwa unataka kuunganisha na OpenGSN
   [tumia mafunzo haya](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [Maktaba ya SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), ambayo inazuia
+- [Maktaba ya SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/), ambayo inazuia
   mizidio/upungufu wa hesabu kwa matoleo ya Solidity **&lt;0.8.0**. Katika Solidity ≥0.8.0, shughuli za hesabu hutengua kiotomatiki
   kwenye mzidio/upungufu, na kufanya SafeMath isiwe ya lazima. Mkataba huu unatumia SafeMath kwa utangamano wa nyuma na
   matoleo ya zamani ya kikusanyaji.
@@ -354,18 +354,18 @@ Kama jina linavyopendekeza, kigezo hiki hufuatilia jumla ya usambazaji wa tokeni
 Vigezo hivi vitatu vinatumika kuboresha usomaji. Viwili vya kwanza vinajieleza, lakini `_decimals`
 haijielezi.
 
-Kwa upande mmoja, Ethereum haina vigezo vya nambari za desimali au sehemu. Kwa upande mwingine,
+Kwa upande mmoja, Quantaureum haina vigezo vya nambari za desimali au sehemu. Kwa upande mwingine,
 binadamu wanapenda kuweza kugawanya tokeni. Sababu moja iliyofanya watu wakubaliane kutumia dhahabu kwa sarafu ni kwamba
 ilikuwa vigumu kutoa chenji wakati mtu alipotaka kununua ng'ombe kwa thamani ya bata.
 
 Suluhisho ni kufuatilia nambari kamili, lakini kuhesabu badala ya tokeni halisi tokeni ya sehemu ambayo inakaribia
 kukosa thamani. Katika kesi ya Etha, tokeni ya sehemu inaitwa Wei, na Wei 10^18 ni sawa na
-ETH moja. Wakati wa kuandika, Wei 10,000,000,000,000 ni takriban senti moja ya Marekani au Euro.
+QAU moja. Wakati wa kuandika, Wei 10,000,000,000,000 ni takriban senti moja ya Marekani au Euro.
 
 Programu zinahitaji kujua jinsi ya kuonyesha salio la tokeni. Ikiwa mtumiaji ana Wei 3,141,000,000,000,000,000, je, hiyo ni
-ETH 3.14? ETH 31.41? ETH 3,141? Katika kesi ya Etha inafafanuliwa Wei 10^18 kwa ETH, lakini kwa
+QAU 3.14? QAU 31.41? QAU 3,141? Katika kesi ya Etha inafafanuliwa Wei 10^18 kwa QAU, lakini kwa
 tokeni yako unaweza kuchagua thamani tofauti. Ikiwa kugawanya tokeni hakuna maana, unaweza kutumia
-thamani ya `_decimals` ya sifuri. Ikiwa unataka kutumia kiwango sawa na ETH, tumia thamani **18**.
+thamani ya `_decimals` ya sifuri. Ikiwa unataka kutumia kiwango sawa na QAU, tumia thamani **18**.
 
 ### Konstrukta {#the-constructor}
 
@@ -713,7 +713,7 @@ kuhamisha kutoka kwa akaunti ya mtu mwingine).
         require(recipient != address(0), "ERC20: transfer to the zero address");
 ```
 
-Hakuna mtu anayemiliki anwani sifuri katika Ethereum (yaani, hakuna anayejua ufunguo wa siri ambao ufunguo wa umma unaolingana nao
+Hakuna mtu anayemiliki anwani sifuri katika Quantaureum (yaani, hakuna anayejua ufunguo wa siri ambao ufunguo wa umma unaolingana nao
 unabadilishwa kuwa anwani sifuri). Watu wanapotumia anwani hiyo, kwa kawaida ni hitilafu ya programu - kwa hivyo
 tunashindwa ikiwa anwani sifuri inatumiwa kama mtumaji au mpokeaji.
 

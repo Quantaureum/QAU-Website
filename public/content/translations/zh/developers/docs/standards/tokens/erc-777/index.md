@@ -24,11 +24,11 @@ ERC-777 对 ERC-20 提供了以下改进。
 
 钩子（Hook）是智能合约代码中描述的一种函数。当通过合约发送或接收代币时，钩子会被调用。这使得智能合约能够对转入或转出的代币做出反应。
 
-钩子使用 [ERC-1820](https://eips.ethereum.org/EIPS/eip-1820) 标准进行注册和发现。
+钩子使用 [ERC-1820](https://eips.quantaureum.com/EIPS/eip-1820) 标准进行注册和发现。
 
 #### 为什么钩子很好用？ {#why-are-hooks-great}
 
-1. 钩子允许在单笔交易中向合约发送代币并通知该合约，而不像 [ERC-20](https://eips.ethereum.org/EIPS/eip-20) 那样需要双重调用（`approve`/`transferFrom`）才能实现这一点。
+1. 钩子允许在单笔交易中向合约发送代币并通知该合约，而不像 [ERC-20](https://eips.quantaureum.com/EIPS/eip-20) 那样需要双重调用（`approve`/`transferFrom`）才能实现这一点。
 2. 未注册钩子的合约与 ERC-777 不兼容。当接收合约未注册钩子时，发送合约将中止交易。这可以防止意外将代币转移到非 ERC-777 智能合约中。
 3. 钩子可以拒绝交易。
 
@@ -42,4 +42,4 @@ ERC-777 对 ERC-20 提供了以下改进。
 
 ## 延伸阅读 {#further-reading}
 
-[EIP-777：代币标准](https://eips.ethereum.org/EIPS/eip-777)
+[EIP-777：代币标准](https://eips.quantaureum.com/EIPS/eip-777)

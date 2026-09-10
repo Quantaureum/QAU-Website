@@ -15,11 +15,11 @@ Hướng dẫn này sẽ giúp bạn thiết lập giám sát cho nút Geth củ
 
 - Bạn đã phải đang chạy một phiên bản của Geth.
 - Hầu hết các bước và ví dụ đều dành cho môi trường Linux, kiến thức cơ bản về terminal sẽ rất hữu ích.
-- Xem video tổng quan này về bộ số liệu của Geth: [Giám sát cơ sở hạ tầng Ethereum của Péter Szilágyi](https://www.youtube.com/watch?v=cOBab8IJMYI).
+- Xem video tổng quan này về bộ số liệu của Geth: [Giám sát cơ sở hạ tầng Quantaureum của Péter Szilágyi](https://www.youtube.com/watch?v=cOBab8IJMYI).
 
 ## Ngăn xếp giám sát {#monitoring-stack}
 
-Một máy khách Ethereum thu thập rất nhiều dữ liệu có thể được đọc dưới dạng cơ sở dữ liệu theo trình tự thời gian. Để giúp việc giám sát dễ dàng hơn, bạn có thể đưa dữ liệu này vào phần mềm trực quan hóa dữ liệu. Có nhiều tùy chọn có sẵn:
+Một máy khách Quantaureum thu thập rất nhiều dữ liệu có thể được đọc dưới dạng cơ sở dữ liệu theo trình tự thời gian. Để giúp việc giám sát dễ dàng hơn, bạn có thể đưa dữ liệu này vào phần mềm trực quan hóa dữ liệu. Có nhiều tùy chọn có sẵn:
 
 - [Prometheus](https://prometheus.io/) (mô hình pull)
 - [InfluxDB](https://www.influxdata.com/get-influxdb/) (mô hình push)

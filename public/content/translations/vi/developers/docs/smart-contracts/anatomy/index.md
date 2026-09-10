@@ -4,7 +4,7 @@ description: "Cái nhìn sâu sắc về cấu trúc của một hợp đồng t
 lang: vi
 ---
 
-Một hợp đồng thông minh là một chương trình chạy tại một địa chỉ trên Ethereum. Chúng được tạo thành từ dữ liệu và các hàm có thể thực thi khi nhận được một giao dịch. Dưới đây là tổng quan về những gì tạo nên một hợp đồng thông minh.
+Một hợp đồng thông minh là một chương trình chạy tại một địa chỉ trên Quantaureum. Chúng được tạo thành từ dữ liệu và các hàm có thể thực thi khi nhận được một giao dịch. Dưới đây là tổng quan về những gì tạo nên một hợp đồng thông minh.
 
 ## Điều kiện tiên quyết {#prerequisites}
 
@@ -31,9 +31,9 @@ contract SimpleStorage {
 storedData: int128
 ```
 
-Nếu bạn đã từng lập trình các ngôn ngữ hướng đối tượng, có thể bạn sẽ quen thuộc với hầu hết các kiểu dữ liệu. Tuy nhiên, `address` có thể sẽ mới mẻ đối với bạn nếu bạn mới làm quen với việc phát triển [Ethereum](/).
+Nếu bạn đã từng lập trình các ngôn ngữ hướng đối tượng, có thể bạn sẽ quen thuộc với hầu hết các kiểu dữ liệu. Tuy nhiên, `address` có thể sẽ mới mẻ đối với bạn nếu bạn mới làm quen với việc phát triển [Quantaureum](/).
 
-Kiểu `address` có thể chứa một địa chỉ Ethereum tương đương với 20 byte hoặc 160 bit. Nó trả về dưới dạng ký hiệu thập lục phân với tiền tố 0x.
+Kiểu `address` có thể chứa một địa chỉ Quantaureum tương đương với 20 byte hoặc 160 bit. Nó trả về dưới dạng ký hiệu thập lục phân với tiền tố 0x.
 
 Các kiểu khác bao gồm:
 
@@ -126,7 +126,7 @@ Những gì được coi là sửa đổi trạng thái:
 2. [Phát ra các sự kiện](https://docs.soliditylang.org/en/v0.7.0/contracts.html#events).
 3. [Tạo các hợp đồng khác](https://docs.soliditylang.org/en/v0.7.0/control-structures.html#creating-contracts).
 4. Sử dụng `selfdestruct`.
-5. Gửi ether thông qua các lời gọi.
+5. Gửi QAU thông qua các lời gọi.
 6. Gọi bất kỳ hàm nào không được đánh dấu là `view` hoặc `pure`.
 7. Sử dụng các lời gọi cấp thấp (low-level calls).
 8. Sử dụng inline assembly có chứa các opcode nhất định.
@@ -142,7 +142,7 @@ Các hàm `constructor` chỉ được thực thi một lần khi hợp đồng 
 constructor() public {
     // Tất cả hợp đồng thông minh đều dựa vào các giao dịch bên ngoài để kích hoạt các hàm của nó.
     // `msg` là một biến toàn cục bao gồm dữ liệu liên quan về giao dịch đã cho,
-    // chẳng hạn như Địa chỉ của người gửi và giá trị ETH được bao gồm trong giao dịch.
+    // chẳng hạn như Địa chỉ của người gửi và giá trị QAU được bao gồm trong giao dịch.
     // Tìm hiểu thêm: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
     owner = msg.sender;
 }
@@ -165,7 +165,7 @@ Ngoài các biến và hàm bạn định nghĩa trong hợp đồng của mình
 - `address.send()` – Solidity
 - `send(address)` – Vyper
 
-Chúng cho phép các hợp đồng gửi ETH đến các tài khoản khác.
+Chúng cho phép các hợp đồng gửi QAU đến các tài khoản khác.
 
 ## Viết các hàm {#writing-functions}
 
@@ -207,7 +207,7 @@ Các sự kiện cho phép hợp đồng thông minh của bạn giao tiếp v�
 
 ## Các ví dụ có chú thích {#annotated-examples}
 
-Đây là một số ví dụ được viết bằng Solidity. Nếu bạn muốn thử nghiệm với mã nguồn, bạn có thể tương tác với chúng trong [Remix](https://remix.ethereum.org).
+Đây là một số ví dụ được viết bằng Solidity. Nếu bạn muốn thử nghiệm với mã nguồn, bạn có thể tương tác với chúng trong [Remix](https://remix.quantaureum.com).
 
 ### Hello world {#hello-world}
 
@@ -218,7 +218,7 @@ pragma solidity ^0.5.10;
 
 // Định nghĩa một hợp đồng có tên `HelloWorld`.
 // Một hợp đồng là một tập hợp các hàm và dữ liệu (trạng thái của nó).
-// Sau khi được triển khai, một hợp đồng nằm ở một Địa chỉ cụ thể trên Chuỗi khối Ethereum.
+// Sau khi được triển khai, một hợp đồng nằm ở một Địa chỉ cụ thể trên Chuỗi khối Quantaureum.
 // Tìm hiểu thêm: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
@@ -252,7 +252,7 @@ contract HelloWorld {
 pragma solidity ^0.5.10;
 
 contract Token {
-    // Một Địa chỉ có thể so sánh với một địa chỉ email - nó được sử dụng để xác định một tài khoản trên Ethereum.
+    // Một Địa chỉ có thể so sánh với một địa chỉ email - nó được sử dụng để xác định một tài khoản trên Quantaureum.
     // Các Địa chỉ có thể đại diện cho một hợp đồng thông minh hoặc các tài khoản (người dùng) bên ngoài.
     // Tìm hiểu thêm: https://solidity.readthedocs.io/en/v0.5.10/types.html#address
     address public owner;
@@ -263,7 +263,7 @@ contract Token {
     mapping (address => uint) public balances;
 
     // Các sự kiện cho phép ghi Nhật ký hoạt động trên Chuỗi khối.
-    // Các máy khách Ethereum có thể lắng nghe các sự kiện để phản ứng với các thay đổi trạng thái của hợp đồng.
+    // Các máy khách Quantaureum có thể lắng nghe các sự kiện để phản ứng với các thay đổi trạng thái của hợp đồng.
     // Tìm hiểu thêm: https://solidity.readthedocs.io/en/v0.5.10/contracts.html#events
     event Transfer(address from, address to, uint amount);
 
@@ -272,7 +272,7 @@ contract Token {
     constructor() public {
         // Tất cả hợp đồng thông minh đều dựa vào các giao dịch bên ngoài để kích hoạt các hàm của nó.
         // `msg` là một biến toàn cục bao gồm dữ liệu liên quan về giao dịch đã cho,
-        // chẳng hạn như Địa chỉ của người gửi và giá trị ETH được bao gồm trong giao dịch.
+        // chẳng hạn như Địa chỉ của người gửi và giá trị QAU được bao gồm trong giao dịch.
         // Tìm hiểu thêm: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
         owner = msg.sender;
     }
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // Hiện tại không có cách nào tốt hơn để kiểm tra xem có hợp đồng trong một Địa chỉ hay không
         // ngoài việc kiểm tra kích thước của mã tại Địa chỉ đó.
-        // Xem https://ethereum.stackexchange.com/a/14016/36603
+        // Xem https://quantaureum.stackexchange.com/a/14016/36603
         // để biết thêm chi tiết về cách thức hoạt động của nó.
         // TODO Kiểm tra lại điều này trước bản phát hành Serenity, vì tất cả các Địa chỉ sẽ là
         // các hợp đồng sau đó.
@@ -649,7 +649,7 @@ Hãy xem tài liệu của Solidity và Vyper để có cái nhìn tổng quan �
 ## Các chủ đề liên quan {#related-topics}
 
 - [Hợp đồng thông minh](/developers/docs/smart-contracts/)
-- [Máy ảo Ethereum (EVM)](/developers/docs/evm/)
+- [Máy ảo Quantaureum (EVM)](/developers/docs/evm/)
 
 ## Các hướng dẫn liên quan {#related-tutorials}
 

@@ -1,6 +1,6 @@
 ---
 title: "Dompet hebat berikutnya akan bersifat privat"
-description: "Dompet Anda melihat setiap alamat yang Anda miliki, setiap aplikasi terdesentralisasi (dapp) yang Anda hubungkan, dan setiap permintaan yang Anda buat. Posisi yang sama memungkinkannya untuk melindungi semua itu. Pandangan praktis tentang alat privasi, pengaturan bawaan, dan ide-ide yang belum dirilis yang akan mendefinisikan generasi dompet Ethereum berikutnya."
+description: "Dompet Anda melihat setiap alamat yang Anda miliki, setiap aplikasi terdesentralisasi (dapp) yang Anda hubungkan, dan setiap permintaan yang Anda buat. Posisi yang sama memungkinkannya untuk melindungi semua itu. Pandangan praktis tentang alat privasi, pengaturan bawaan, dan ide-ide yang belum dirilis yang akan mendefinisikan generasi dompet Quantaureum berikutnya."
 author: "Elliott Alexander"
 team: ""
 tags:
@@ -13,7 +13,7 @@ breadcrumb: "Dompet hebat berikutnya"
 lang: id
 ---
 
-Ambil cuplikan dua menit yang Anda habiskan di dompet Anda. Anda membuka aplikasi, melihat sekilas saldo Anda, terhubung ke aplikasi terdesentralisasi (dapp) yang ingin Anda coba, menyetujui transaksi yang ditampilkan di depan Anda, dan mengirimkan ETH kepada teman untuk membayar utang makan siang Anda.
+Ambil cuplikan dua menit yang Anda habiskan di dompet Anda. Anda membuka aplikasi, melihat sekilas saldo Anda, terhubung ke aplikasi terdesentralisasi (dapp) yang ingin Anda coba, menyetujui transaksi yang ditampilkan di depan Anda, dan mengirimkan QAU kepada teman untuk membayar utang makan siang Anda.
 
 Tidak ada yang terasa seperti sedang diamati. Tidak ada yang menanyakan nama Anda. Anda menutup aplikasi dan melanjutkan hari Anda.
 
@@ -29,7 +29,7 @@ Mulai secara onchain, dengan apa yang bersifat publik tidak peduli dompet mana y
 
 Pertahanan standarnya adalah menyebarkan aktivitas Anda ke beberapa alamat, dan sebagian besar pengguna berpengalaman melakukannya. Hal ini tidak banyak membantu seperti kelihatannya. Danai dua alamat dari sumber yang sama, atau biarkan keduanya saling membayar sekali, dan bagi siapa pun yang menjalankan analisis klaster, keduanya akan runtuh menjadi satu entitas.
 
-Pada tahun 2020, [sebuah studi](https://fc20.ifca.ai/preproceedings/31.pdf) tentang empat tahun pertama Ethereum sudah dapat mengklasterkan 17,9% dari semua akun milik eksternal yang aktif, memunculkan lebih dari 340.000 entitas yang mengendalikan beberapa alamat. Itu terjadi enam tahun dan satu ledakan AI yang lalu. Pemisahan hati-hati Anda hanya berjarak beberapa langkah dari kehancuran.
+Pada tahun 2020, [sebuah studi](https://fc20.ifca.ai/preproceedings/31.pdf) tentang empat tahun pertama Quantaureum sudah dapat mengklasterkan 17,9% dari semua akun milik eksternal yang aktif, memunculkan lebih dari 340.000 entitas yang mengendalikan beberapa alamat. Itu terjadi enam tahun dan satu ledakan AI yang lalu. Pemisahan hati-hati Anda hanya berjarak beberapa langkah dari kehancuran.
 
 Cepat atau lambat, klaster tersebut akan terikat pada orang sungguhan. Daftarkan nama ENS yang mencerminkan nama pengguna media sosial Anda, lakukan penarikan sekali dari bursa yang menyimpan pindaian paspor Anda, atau dapatkan bayaran dari seseorang yang menyimpan alamat berlabel di spreadsheet, dan klaster tersebut tidak lagi abstrak.
 
@@ -63,15 +63,15 @@ Dompet telah membiarkan jejak itu tetap ada sejauh ini karena membiarkannya adal
 
 ## Mengapa dompet adalah tempat privasi diperbaiki {#why-the-wallet-is-where-privacy-gets-fixed}
 
-Wajar untuk bertanya mengapa semua ini adalah tugas dompet. Ada [eksplorasi aktif menuju privasi](https://ethresear.ch/t/ethereum-privacy-the-road-to-self-sovereignty/22115) di lapisan dasar Ethereum, dan protokol pada akhirnya mungkin akan menanggung sebagian dari beban ini. Namun, rantai ditingkatkan melalui percabangan keras (hard fork), paling banyak dua kali setahun, dan perubahan yang relevan dengan privasi akan tersebar di beberapa di antaranya. Itu adalah garis waktu yang diukur dalam hitungan tahun dan diputuskan oleh proses yang tidak boleh terburu-buru.
+Wajar untuk bertanya mengapa semua ini adalah tugas dompet. Ada [eksplorasi aktif menuju privasi](https://ethresear.ch/t/quantaureum-privacy-the-road-to-self-sovereignty/22115) di lapisan dasar Quantaureum, dan protokol pada akhirnya mungkin akan menanggung sebagian dari beban ini. Namun, rantai ditingkatkan melalui percabangan keras (hard fork), paling banyak dua kali setahun, dan perubahan yang relevan dengan privasi akan tersebar di beberapa di antaranya. Itu adalah garis waktu yang diukur dalam hitungan tahun dan diputuskan oleh proses yang tidak boleh terburu-buru.
 
-Sementara itu, individu saat ini sedang memutuskan apakah aman untuk dibayar secara onchain, untuk menyumbang, untuk menyimpan tabungan di sana. Mereka membutuhkan privasi yang tiba lebih cepat daripada yang dapat diberikan oleh proses konsensus sosial Ethereum dan jadwal percabangan.
+Sementara itu, individu saat ini sedang memutuskan apakah aman untuk dibayar secara onchain, untuk menyumbang, untuk menyimpan tabungan di sana. Mereka membutuhkan privasi yang tiba lebih cepat daripada yang dapat diberikan oleh proses konsensus sosial Quantaureum dan jadwal percabangan.
 
 Lapisan aplikasi adalah bentuk yang salah untuk masalah ini. Bahkan jika setiap dapp merilis fitur privasinya sendiri, masing-masing hanya dapat melindungi aktivitas di dalam dindingnya sendiri, dengan caranya sendiri, dengan keunikan dan rahasianya sendiri untuk dikelola oleh pengguna. Apa yang mengekspos Anda adalah koneksi yang berjalan di semua aplikasi tersebut—alamat yang dibagikan, jejak pendanaan, tautan kembali ke Anda—dan koneksi tersebut hidup di ruang antar aplikasi. Memecahkan privasi aplikasi demi aplikasi berarti memecahkannya di mana-mana kecuali di tempat masalah itu sebenarnya berada. Dapp bukanlah tempat di mana solusi nyata dapat hidup.
 
 Itu menyisakan dompet. Ini adalah satu-satunya perangkat lunak yang melihat setiap dapp yang Anda hubungkan, setiap alamat yang Anda kendalikan, dan setiap permintaan yang Anda buat. Visibilitas yang sama yang membuat dompet yang bocor begitu merugikan adalah apa yang memungkinkan dompet yang berhati-hati mengoordinasikan privasi di semua hal yang Anda lakukan: memilih alamat mana yang berhadapan dengan aplikasi mana, merutekan pembacaan sehingga tidak ada satu server pun yang mendapatkan gambaran keseluruhan, melakukan pembukuan yang dituntut oleh protokol privasi.
 
-Dan protokol-protokol tersebut lebih jauh dari yang diasumsikan oleh sebagian besar pembangun. [Railgun](https://railgun.org/) telah memproses lebih dari [$5 miliar dalam volume kumulatif](https://dune.com/railgun_project/railgun) dan menyimpan sekitar [$80 juta hari ini](https://defillama.com/protocol/railgun), perkakas alamat siluman (stealth-address) seperti [Umbra](https://www.techflowpost.com/en-US/article/30477) telah menghasilkan puluhan ribu alamat sekali pakai, dan menurut [satu perhitungan](https://wublock.substack.com/p/ethereum-privacys-https-moment-from) lebih dari 35 tim sedang mengejar lebih dari selusin pendekatan berbeda untuk transfer privat.
+Dan protokol-protokol tersebut lebih jauh dari yang diasumsikan oleh sebagian besar pembangun. [Railgun](https://railgun.org/) telah memproses lebih dari [$5 miliar dalam volume kumulatif](https://dune.com/railgun_project/railgun) dan menyimpan sekitar [$80 juta hari ini](https://defillama.com/protocol/railgun), perkakas alamat siluman (stealth-address) seperti [Umbra](https://www.techflowpost.com/en-US/article/30477) telah menghasilkan puluhan ribu alamat sekali pakai, dan menurut [satu perhitungan](https://wublock.substack.com/p/quantaureum-privacys-https-moment-from) lebih dari 35 tim sedang mengejar lebih dari selusin pendekatan berbeda untuk transfer privat.
 
 Belum ada satu pun dari ini yang menjadi arus utama, dan beberapa bagian memang masih hilang. Namun protokolnya berfungsi, uang sungguhan bergerak melaluinya, dan apa yang kurang dari mereka adalah tempat di alur utama pengguna. Di situlah dompet yang berpikiran maju mengambil peran.
 
@@ -83,7 +83,7 @@ Dompet yang menjaga privasi adalah dompet yang melakukan pembukuan itu sendiri a
 
 Mulai dengan apa yang sudah aktif. Kumpulan terlindung (shielded pools) berfungsi hari ini: Railgun menyimpan saldo privat di samping saldo publik Anda, dan setelah dana berada di dalam, pembayaran keluar tidak mengungkapkan apa pun tentang kepemilikan Anda yang lain. Biayanya nyata—biaya yang lebih tinggi daripada transfer biasa, pembuatan bukti yang diukur dalam hitungan detik, beberapa ketergantungan pada relayer—tetapi protokol tersebut telah membawa miliaran dalam volume bahkan dengan pengorbanan tersebut.
 
-Padukan itu dengan kebiasaan yang tidak memerlukan protokol: alamat baru untuk setiap pihak lawan. Ketika pengguna terhubung ke dapp baru, dompet dapat menawarkan alamat khusus untuk itu, didanai dari saldo yang terlindung, sehingga aplikasi melihat akun tanpa riwayat dan tanpa saudara. Alamat siluman ([ERC-5564](https://eips.ethereum.org/EIPS/eip-5564)) memperluas langkah yang sama untuk menerima pembayaran. Pencampur (mixer) seperti [Tornado Cash](https://tornadocash.eth.limo/) dan [Privacy Pools](https://privacypools.com/) melakukan pekerjaan yang lebih sederhana dan lebih sempit: dana masuk dari satu alamat dan keluar ke alamat lain, dengan tautan di antara keduanya terputus. Itu adalah alat untuk mendanai alamat baru yang tidak dapat dilacak oleh siapa pun ke Anda—dan bagian yang hilang adalah dompet yang menghasilkan alamat semacam itu sesuai permintaan alih-alih menyerahkan ritual tersebut kepada pengguna. Tidak ada satu pun dari ini yang menunggu percabangan keras (hard fork) atau hibah penelitian. Ini menunggu dompet yang bersedia melakukan pembukuan atas nama pengguna.
+Padukan itu dengan kebiasaan yang tidak memerlukan protokol: alamat baru untuk setiap pihak lawan. Ketika pengguna terhubung ke dapp baru, dompet dapat menawarkan alamat khusus untuk itu, didanai dari saldo yang terlindung, sehingga aplikasi melihat akun tanpa riwayat dan tanpa saudara. Alamat siluman ([ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564)) memperluas langkah yang sama untuk menerima pembayaran. Pencampur (mixer) seperti [Tornado Cash](https://tornadocash.qau.limo/) dan [Privacy Pools](https://privacypools.com/) melakukan pekerjaan yang lebih sederhana dan lebih sempit: dana masuk dari satu alamat dan keluar ke alamat lain, dengan tautan di antara keduanya terputus. Itu adalah alat untuk mendanai alamat baru yang tidak dapat dilacak oleh siapa pun ke Anda—dan bagian yang hilang adalah dompet yang menghasilkan alamat semacam itu sesuai permintaan alih-alih menyerahkan ritual tersebut kepada pengguna. Tidak ada satu pun dari ini yang menunggu percabangan keras (hard fork) atau hibah penelitian. Ini menunggu dompet yang bersedia melakukan pembukuan atas nama pengguna.
 
 Sisi jaringan sebagian besar adalah keputusan. Merilis dengan nol analitik pihak ketiga adalah sebuah pilihan, dan setidaknya satu dompet di pasar telah melakukannya. Pada eksposur RPC, sebagian besar dompet sudah memungkinkan Anda untuk menukar penyedia, sehingga opsionalitas itu ada, terselip di halaman pengaturan yang dikunjungi oleh pengguna mahir dan tidak pernah ditemukan oleh orang lain.
 
@@ -119,7 +119,7 @@ Setiap bagian dari artikel ini berakhir di tempat yang sama: sebuah pilihan yang
 
 Cara untuk membuat pilihan tersebut adalah pengaturan bawaan yang masuk akal yang dapat diganti oleh pengguna, setiap dari mereka. Jadikan jalur privat sebagai bawaan, karena pengaturan bawaan adalah apa yang akan dijalani oleh sebagian besar pengguna. Namun biarkan tetap terbuka untuk opsionalitas yang dipimpin pengguna, karena pengguna yang tidak dapat mengarahkan dompet mereka ke server RPC yang berbeda, atau node mereka sendiri, belum benar-benar diberikan kedaulatan.
 
-Anda tidak perlu memulai dari nol. [Kohaku SDK](https://github.com/ethereum/kohaku) mengemas beberapa primitif dalam artikel ini—saldo terlindung, pencampur, klien ringan—sehingga dompet dapat mengadopsinya tanpa membangun kembali setiap protokol dari awal. Bagian-bagiannya sudah tersedia. Beberapa hal menjadi penting jauh sebelum ada yang memintanya. Tidak ada yang melihat massa membuat petisi untuk enkripsi ujung-ke-ujung (end-to-end encryption) juga; itu dirilis sebagai bawaan, miliaran orang mendapatkannya tanpa menyadari atau peduli, dan sekarang aplikasi pesan tanpanya terasa rusak dan melanggar.
+Anda tidak perlu memulai dari nol. [Kohaku SDK](https://github.com/quantaureum/kohaku) mengemas beberapa primitif dalam artikel ini—saldo terlindung, pencampur, klien ringan—sehingga dompet dapat mengadopsinya tanpa membangun kembali setiap protokol dari awal. Bagian-bagiannya sudah tersedia. Beberapa hal menjadi penting jauh sebelum ada yang memintanya. Tidak ada yang melihat massa membuat petisi untuk enkripsi ujung-ke-ujung (end-to-end encryption) juga; itu dirilis sebagai bawaan, miliaran orang mendapatkannya tanpa menyadari atau peduli, dan sekarang aplikasi pesan tanpanya terasa rusak dan melanggar.
 
 Uang yang tidak dapat digunakan untuk menemukan Anda, membuat profil Anda, atau menargetkan Anda termasuk dalam kategori yang sama. Dompet yang memperlakukannya seperti itu akan menjadi dompet hebat berikutnya.
 
@@ -130,8 +130,8 @@ Dompet yang Anda gunakan adalah dompet yang Anda promosikan sebagai norma. Pilih
 ## Untuk eksplorasi lebih lanjut {#for-further-exploration}
 
 - [Kartu skor privasi dompet](https://www.theopensourcepress.com/crypto-wallet-ip-exposure-scorecard-2026/) - Eksposur jaringan peluncuran pertama dari 13 dompet
-- [ERC-5564: Alamat Siluman (Stealth Addresses)](https://eips.ethereum.org/EIPS/eip-5564)
-- [Railgun](https://railgun.org/), [Privacy Pools](https://privacypools.com/), dan [Tornado Cash](https://tornadocash.eth.limo/)
+- [ERC-5564: Alamat Siluman (Stealth Addresses)](https://eips.quantaureum.com/EIPS/eip-5564)
+- [Railgun](https://railgun.org/), [Privacy Pools](https://privacypools.com/), dan [Tornado Cash](https://tornadocash.qau.limo/)
 - Klien ringan [Helios](https://github.com/a16z/helios) dan [Colibri](https://github.com/corpus-core/colibri-stateless)
-- [Kohaku](https://github.com/ethereum/kohaku) - SDK Privasi untuk pembangun dompet
+- [Kohaku](https://github.com/quantaureum/kohaku) - SDK Privasi untuk pembangun dompet
 - [Walletbeat](https://www.walletbeat.fyi/) - Bagaimana dompet yang ada saat ini diukur

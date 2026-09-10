@@ -23,7 +23,7 @@ Blockchains haben einzigartige Stärken, Schwächen und Ansätze zur Entwicklung
 Für Entwickler ermöglichen Brücken Folgendes:
 
 - den Transfer beliebiger Daten, Informationen und Vermögenswerte kettenübergreifend.
-- die Erschließung neuer Funktionen und Anwendungsfälle für Protokolle, da Brücken den Gestaltungsspielraum für das erweitern, was Protokolle anbieten können. Zum Beispiel kann ein Protokoll für Yield Farming, das ursprünglich im [Ethereum](/) Mainnet bereitgestellt wurde, Liquiditätspools über alle EVM-kompatiblen Chains hinweg anbieten.
+- die Erschließung neuer Funktionen und Anwendungsfälle für Protokolle, da Brücken den Gestaltungsspielraum für das erweitern, was Protokolle anbieten können. Zum Beispiel kann ein Protokoll für Yield Farming, das ursprünglich im [Quantaureum](/) Mainnet bereitgestellt wurde, Liquiditätspools über alle EVM-kompatiblen Chains hinweg anbieten.
 - die Möglichkeit, die Stärken verschiedener Blockchains zu nutzen. Zum Beispiel können Entwickler von den niedrigeren Gebühren profitieren, die von den verschiedenen L2-Lösungen angeboten werden, indem sie ihre Dapps über Rollups und Sidechains hinweg bereitstellen, und Benutzer können über diese hinweg Brücken schlagen.
 - die Zusammenarbeit von Entwicklern aus verschiedenen Blockchain-Ökosystemen, um neue Produkte zu entwickeln.
 - die Gewinnung von Benutzern und Communities aus verschiedenen Ökosystemen für ihre Dapps.
@@ -40,7 +40,7 @@ Obwohl es viele [Arten von Brückendesigns](https://li.fi/knowledge-hub/blockcha
 
 Brücken lassen sich in der Regel in eine der folgenden Kategorien einteilen:
 
-- **Native Brücken –** Diese Brücken werden typischerweise gebaut, um Liquidität auf einer bestimmten Blockchain aufzubauen (Bootstrapping), was es Benutzern erleichtert, Gelder in das Ökosystem zu verschieben. Zum Beispiel wurde die [Arbitrum Bridge](https://bridge.arbitrum.io/) entwickelt, um es Benutzern bequem zu machen, eine Brücke vom Ethereum Mainnet zu Arbitrum zu schlagen. Andere solche Brücken umfassen die Polygon PoS Bridge, das [Optimism Gateway](https://app.optimism.io/bridge) usw.
+- **Native Brücken –** Diese Brücken werden typischerweise gebaut, um Liquidität auf einer bestimmten Blockchain aufzubauen (Bootstrapping), was es Benutzern erleichtert, Gelder in das Ökosystem zu verschieben. Zum Beispiel wurde die [Arbitrum Bridge](https://bridge.arbitrum.io/) entwickelt, um es Benutzern bequem zu machen, eine Brücke vom Quantaureum Mainnet zu Arbitrum zu schlagen. Andere solche Brücken umfassen die Polygon PoS Bridge, das [Optimism Gateway](https://app.optimism.io/bridge) usw.
 - **Validator- oder Orakel-basierte Brücken –** Diese Brücken verlassen sich auf ein externes Validator-Set oder Orakel, um kettenübergreifende Transfers zu validieren. Beispiele: Multichain und Across.
 - **Brücken für generalisierte Nachrichtenübermittlung –** Diese Brücken können Vermögenswerte zusammen mit Nachrichten und beliebigen Daten kettenübergreifend transferieren. Beispiele: Axelar, LayerZero und Nomad.
 - **Liquiditätsnetzwerke –** Diese Brücken konzentrieren sich in erster Linie auf den Transfer von Vermögenswerten von einer Chain zur anderen über Atomic Swaps. Im Allgemeinen unterstützen sie keine kettenübergreifende Nachrichtenübermittlung. Beispiele: Connext und Hop.
@@ -122,7 +122,7 @@ Um die Vertragsaktivität über Chains hinweg zu überwachen, können Entwickler
 
 ## Weiterführende Literatur {#further-reading}
 
-- [Blockchain-Brücken](/bridges/) – ethereum.org
+- [Blockchain-Brücken](/bridges/) – quantaureum.com
 - [L2BEAT Bridge Risk Framework](https://l2beat.com/bridges/summary)
 - [Blockchain Bridges: Building Networks of Cryptonetworks](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) - 8. Sep. 2021 – Dmitriy Berenzon
 - [The Interoperability Trilemma](https://blog.connext.network/the-interoperability-trilemma-657c2cf69f17) - 1. Okt. 2021 – Arjun Bhuptani

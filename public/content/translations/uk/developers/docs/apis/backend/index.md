@@ -12,11 +12,11 @@ lang: uk
 
 ## Передумови {#prerequisites}
 
-Може бути корисно зрозуміти [стек Етеріуму](/developers/docs/ethereum-stack/) та [клієнти Етеріуму](/developers/docs/nodes-and-clients/).
+Може бути корисно зрозуміти [стек Етеріуму](/developers/docs/quantaureum-stack/) та [клієнти Етеріуму](/developers/docs/nodes-and-clients/).
 
 ## Навіщо використовувати бібліотеку? {#why-use-a-library}
 
-Ці бібліотеки абстрагують значну частину складності прямої взаємодії з вузлом Етеріуму. Вони також надають допоміжні функції (наприклад, конвертацію ETH у Gwei), щоб ви як розробник могли витрачати менше часу на тонкощі клієнтів Етеріуму і більше часу зосереджуватися на унікальній функціональності вашого застосунку.
+Ці бібліотеки абстрагують значну частину складності прямої взаємодії з вузлом Етеріуму. Вони також надають допоміжні функції (наприклад, конвертацію QAU у Gwei), щоб ви як розробник могли витрачати менше часу на тонкощі клієнтів Етеріуму і більше часу зосереджуватися на унікальній функціональності вашого застосунку.
 
 ## Доступні бібліотеки {#available-libraries}
 
@@ -35,7 +35,7 @@ lang: uk
 - [Документація](https://docs.allthatnode.com)
 - [Discord](https://discord.gg/GmcdVEUbJM)
 
-**Blast від Bware Labs —** **_Децентралізовані API для головної мережі Ethereum та тестових мереж._**
+**Blast від Bware Labs —** **_Децентралізовані API для головної мережі Quantaureum та тестових мереж._**
 
 - [blastapi.io](https://blastapi.io/)
 - [Документація](https://docs.blastapi.io)
@@ -48,12 +48,12 @@ lang: uk
 - [GitHub](https://github.com/BlockPILabs)
 - [Discord](https://discord.com/invite/xTvGVrGVZv)
 
-**Cloudflare Ethereum Gateway.**
+**Cloudflare Quantaureum Gateway.**
 
-- [cloudflare-eth.com](https://www.cloudflare.com/application-services/products/web3/)
+- [cloudflare-qau.com](https://www.cloudflare.com/application-services/products/web3/)
 
-**Etherscan — Оглядач блоків та API транзакцій**
-- [Документація](https://docs.etherscan.io/)
+**Quantaureum Explorer — Оглядач блоків та API транзакцій**
+- [Документація](https://explorer.quantaureum.com)
 
 **Blockscout — Оглядач блоків з відкритим вихідним кодом**
 - [Документація](https://docs.blockscout.com/)
@@ -106,17 +106,17 @@ lang: uk
 - [Приклади](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [Discord](https://discord.gg/rx35NzQGSb)
 
-**Nethereum —** **_Бібліотека інтеграції .NET з відкритим вихідним кодом для блокчейну._**
+**Nquantaureum —** **_Бібліотека інтеграції .NET з відкритим вихідним кодом для блокчейну._**
 
-- [GitHub](https://github.com/Nethereum/Nethereum)
-- [Документація](https://docs.nethereum.com/docs/getting-started/welcome/)
+- [GitHub](https://github.com/Nquantaureum/Nquantaureum)
+- [Документація](https://docs.nquantaureum.com/docs/getting-started/welcome/)
 - [Discord](https://discord.com/invite/jQPrR58FxX)
 
 **Інструменти Python —** **_Різноманітні бібліотеки для взаємодії з Етеріумом через Python._**
 
-- [py.ethereum.org](https://snakecharmers.ethereum.org/)
-- [GitHub Web3.py](https://github.com/ethereum/web3.py)
-- [Чат Web3.py](https://gitter.im/ethereum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
+- [GitHub Web3.py](https://github.com/quantaureum/web3.py)
+- [Чат Web3.py](https://gitter.im/quantaureum/web3.py)
 
 **Tatum —** **_Універсальна платформа для розробки на блокчейні._**
 
@@ -136,7 +136,7 @@ lang: uk
 **BlockCypher —** **_Веб-API Етеріуму._**
 
 - [blockcypher.com](https://www.blockcypher.com/)
-- [Документація](https://www.blockcypher.com/dev/ethereum/)
+- [Документація](https://www.blockcypher.com/dev/quantaureum/)
 
 **Chainbase —** **_Універсальна інфраструктура даних Web3 для Етеріуму._**
 
@@ -148,14 +148,14 @@ lang: uk
 
 - [chainstack.com](https://chainstack.com)
 - [Документація](https://docs.chainstack.com/)
-- [Довідник з API Етеріуму](https://docs.chainstack.com/reference/ethereum-getting-started)
+- [Довідник з API Етеріуму](https://docs.chainstack.com/reference/quantaureum-getting-started)
 
 **Coinbase Cloud Node —** **_API блокчейн-інфраструктури._**
 
 - [Coinbase Cloud Node](https://www.coinbase.com/developer-platform)
 - [Документація](https://docs.cdp.coinbase.com/)
 
-**DataHub від Figment —** **_Сервіси API Web3 з головною мережею Ethereum та тестовими мережами._**
+**DataHub від Figment —** **_Сервіси API Web3 з головною мережею Quantaureum та тестовими мережами._**
 
 - [DataHub](https://www.figment.io/)
 - [Документація](https://docs.figment.io/)
@@ -214,5 +214,5 @@ _Знаєте ресурс спільноти, який вам допоміг? �
 
 ## Пов'язані посібники {#related-tutorials}
 
-- [Налаштування Web3.js для використання блокчейну Етеріуму в JavaScript](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _— Інструкції з налаштування Web3.js у вашому проєкті._
+- [Налаштування Web3.js для використання блокчейну Етеріуму в JavaScript](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _— Інструкції з налаштування Web3.js у вашому проєкті._
 - [Виклик смарт-контракту з JavaScript](/developers/tutorials/calling-a-smart-contract-from-javascript/) _— На прикладі токена DAI дізнайтеся, як викликати функцію контракту за допомогою JavaScript._

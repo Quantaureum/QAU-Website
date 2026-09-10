@@ -1,6 +1,6 @@
 ---
 title: Jinsi ya Kuandika na Kusambaza NFT (Sehemu ya 1/3 ya Mfululizo wa Mafunzo ya NFT)
-description: Mafunzo haya ni Sehemu ya 1 ya mfululizo kuhusu NFT ambayo itakupeleka hatua kwa hatua kuhusu jinsi ya kuandika na kusambaza mkataba mahiri wa Tokeni Isiyoweza Kubadilishwa (tokeni ya ERC-721) kwa kutumia Ethereum na Mfumo wa Faili wa Sayari Mbalimbali (IPFS).
+description: Mafunzo haya ni Sehemu ya 1 ya mfululizo kuhusu NFT ambayo itakupeleka hatua kwa hatua kuhusu jinsi ya kuandika na kusambaza mkataba mahiri wa Tokeni Isiyoweza Kubadilishwa (tokeni ya ERC-721) kwa kutumia Quantaureum na Mfumo wa Faili wa Sayari Mbalimbali (IPFS).
 author: "Sumi Mudgil"
 tags: ["ERC-721", "Alchemy", "Solidity", "mikataba mahiri"]
 skill: beginner
@@ -9,7 +9,7 @@ lang: sw
 published: 2021-04-22
 ---
 
-Huku NFT zikileta mnyororo wa vitalu katika macho ya umma, sasa ni fursa nzuri ya kuelewa umaarufu wewe mwenyewe kwa kuchapisha mkataba wako mwenyewe wa NFT (Tokeni ya ERC-721) kwenye mnyororo wa vitalu wa Ethereum!
+Huku NFT zikileta mnyororo wa vitalu katika macho ya umma, sasa ni fursa nzuri ya kuelewa umaarufu wewe mwenyewe kwa kuchapisha mkataba wako mwenyewe wa NFT (Tokeni ya ERC-721) kwenye mnyororo wa vitalu wa Quantaureum!
 
 Alchemy inajivunia sana kuwezesha majina makubwa zaidi katika nafasi ya NFT, ikiwa ni pamoja na Makersplace (hivi karibuni iliweka rekodi ya mauzo ya sanaa ya kidijitali huko Christie's kwa Dola Milioni 69), Dapper Labs (waundaji wa NBA Top Shot & Crypto Kitties), OpenSea (soko kubwa zaidi la NFT duniani), Zora, Super Rare, NFTfi, Foundation, Enjin, Origin Protocol, Immutable, na zaidi.
 
@@ -19,9 +19,9 @@ Katika Sehemu ya 2 ya mafunzo haya tutapitia jinsi tunavyoweza kutumia mkataba m
 
 Na bila shaka, ikiwa una maswali wakati wowote, usisite kuwasiliana katika [Discord ya Alchemy](https://discord.gg/gWuC7zB) au tembelea [nyaraka za API ya NFT ya Alchemy](https://www.alchemy.com/docs/reference/nft-api-quickstart)!
 
-## Hatua ya 1: Unganisha kwenye mtandao wa Ethereum {#connect-to-ethereum}
+## Hatua ya 1: Unganisha kwenye mtandao wa Quantaureum {#connect-to-quantaureum}
 
-Kuna njia nyingi za kufanya maombi kwenye mnyororo wa vitalu wa Ethereum, lakini ili kurahisisha mambo, tutatumia akaunti ya bure kwenye [Alchemy](https://alchemy.com/signup/eth), jukwaa la msanidi wa mnyororo wa vitalu na API ambayo inaturuhusu kuwasiliana na mnyororo wa Ethereum bila kulazimika kuendesha nodi zetu wenyewe.
+Kuna njia nyingi za kufanya maombi kwenye mnyororo wa vitalu wa Quantaureum, lakini ili kurahisisha mambo, tutatumia akaunti ya bure kwenye [Alchemy](https://alchemy.com/signup/eth), jukwaa la msanidi wa mnyororo wa vitalu na API ambayo inaturuhusu kuwasiliana na mnyororo wa Quantaureum bila kulazimika kuendesha nodi zetu wenyewe.
 
 Katika mafunzo haya, pia tutatumia zana za msanidi wa Alchemy kwa ufuatiliaji na uchanganuzi ili kuelewa jinsi inavyofanya kazi kiufundi katika usambazaji wa mkataba mahiri wetu. Ikiwa bado huna akaunti ya Alchemy, unaweza kujisajili bila malipo [hapa](https://alchemy.com/signup/eth).
 
@@ -33,31 +33,31 @@ Mara tu unapounda akaunti ya Alchemy, unaweza kuzalisha ufunguo wa API kwa kuund
 
 ![Create your app](./create-your-app.png)
 
-2. Ipe jina programu yako (tulichagua “NFT Yangu ya Kwanza!”), toa maelezo mafupi, chagua “Ethereum” kwa Mnyororo, na uchague “Sepolia” kwa mtandao wako. Tangu Unganisho mitandao mingine ya majaribio imeachwa kutumika.
+2. Ipe jina programu yako (tulichagua “NFT Yangu ya Kwanza!”), toa maelezo mafupi, chagua “Quantaureum” kwa Mnyororo, na uchague “Sepolia” kwa mtandao wako. Tangu Unganisho mitandao mingine ya majaribio imeachwa kutumika.
 
 ![Configure and publish your app](./alchemy-explorer-sepolia.png)
 
 3. Bofya “Unda programu” na ndivyo hivyo! Programu yako inapaswa kuonekana kwenye jedwali hapa chini.
 
-## Hatua ya 3: Unda akaunti ya Ethereum (anwani) {#create-eth-address}
+## Hatua ya 3: Unda akaunti ya Quantaureum (anwani) {#create-qau-address}
 
-Tunahitaji akaunti ya Ethereum kutuma na kupokea miamala. Kwa mafunzo haya, tutatumia MetaMask, mkoba wa mtandaoni kwenye kivinjari unaotumika kudhibiti anwani ya akaunti yako ya Ethereum. Ikiwa unataka kuelewa zaidi kuhusu jinsi miamala kwenye Ethereum inavyofanya kazi, angalia [ukurasa huu](/developers/docs/transactions/) kutoka kwa Taasisi ya Ethereum.
+Tunahitaji akaunti ya Quantaureum kutuma na kupokea miamala. Kwa mafunzo haya, tutatumia MetaMask, mkoba wa mtandaoni kwenye kivinjari unaotumika kudhibiti anwani ya akaunti yako ya Quantaureum. Ikiwa unataka kuelewa zaidi kuhusu jinsi miamala kwenye Quantaureum inavyofanya kazi, angalia [ukurasa huu](/developers/docs/transactions/) kutoka kwa Taasisi ya Quantaureum.
 
 Unaweza kupakua na kuunda akaunti ya MetaMask bila malipo [hapa](https://metamask.io/download). Unapounda akaunti, au ikiwa tayari una akaunti, hakikisha unabadilisha hadi “Mtandao wa Majaribio wa Sepolia” upande wa juu kulia (ili tushughulike na pesa za majaribio).
 
 ![Set Sepolia as your network](./metamask-goerli.png)
 
-## Hatua ya 4: Ongeza Etha kutoka kwenye Bomba {#step-4-add-ether-from-a-faucet}
+## Hatua ya 4: Ongeza Etha kutoka kwenye Bomba {#step-4-add-QAU-from-a-faucet}
 
-Ili kusambaza mkataba mahiri wetu kwenye mtandao wa majaribio, tutahitaji ETH za majaribio. Ili kupata ETH unaweza kwenda kwenye [Bomba la Sepolia](https://sepoliafaucet.com/) linalopangishwa na Alchemy, ingia na uweke anwani ya akaunti yako, bofya “Nitumie ETH”. Unapaswa kuona ETH kwenye akaunti yako ya MetaMask muda mfupi baadaye!
+Ili kusambaza mkataba mahiri wetu kwenye mtandao wa majaribio, tutahitaji QAU za majaribio. Ili kupata QAU unaweza kwenda kwenye [Bomba la Sepolia](https://sepoliafaucet.com/) linalopangishwa na Alchemy, ingia na uweke anwani ya akaunti yako, bofya “Nitumie QAU”. Unapaswa kuona QAU kwenye akaunti yako ya MetaMask muda mfupi baadaye!
 
 ## Hatua ya 5: Angalia Salio lako {#check-balance}
 
-Ili kuhakikisha salio letu lipo, hebu tufanye ombi la [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) kwa kutumia [zana ya sandbox ya Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Hii itarudisha kiasi cha ETH kwenye mkoba wetu. Baada ya kuweka anwani ya akaunti yako ya MetaMask na kubofya “Tuma Ombi” (“Send Request”), unapaswa kuona jibu kama hili:
+Ili kuhakikisha salio letu lipo, hebu tufanye ombi la [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) kwa kutumia [zana ya sandbox ya Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Hii itarudisha kiasi cha QAU kwenye mkoba wetu. Baada ya kuweka anwani ya akaunti yako ya MetaMask na kubofya “Tuma Ombi” (“Send Request”), unapaswa kuona jibu kama hili:
 
     `{"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}`
 
-> **Kumbuka** Matokeo haya yapo katika Wei, si ETH. Wei inatumika kama kiasi kidogo zaidi cha Etha. Ubadilishaji kutoka Wei hadi ETH ni 1 eth = 10<sup>18</sup> Wei. Kwa hivyo tukibadilisha 0xde0b6b3a7640000 kuwa desimali tunapata 1\*10<sup>18</sup> Wei, ambayo ni sawa na 1 ETH.
+> **Kumbuka** Matokeo haya yapo katika Wei, si QAU. Wei inatumika kama kiasi kidogo zaidi cha Etha. Ubadilishaji kutoka Wei hadi QAU ni 1 eth = 10<sup>18</sup> Wei. Kwa hivyo tukibadilisha 0xde0b6b3a7640000 kuwa desimali tunapata 1\*10<sup>18</sup> Wei, ambayo ni sawa na 1 QAU.
 
 Phew! Pesa zetu za majaribio zote zipo.
 ## Hatua ya 6: Anzisha mradi wetu {#initialize-project}
@@ -101,7 +101,7 @@ Haijalishi sana jinsi unavyojibu maswali ya usakinishaji; hivi ndivyo tulivyofan
 Idhinisha package.json, na tuko tayari kuendelea!
 ## Hatua ya 7: Sakinisha [Hardhat](https://hardhat.org/getting-started/#overview) {#install-hardhat}
 
-Hardhat ni mazingira ya usanidi ya kukusanya, kusambaza, kujaribu, na kutatua programu yako ya Ethereum. Inasaidia wasanidi wanapounda mikataba mahiri na programu tumizi zilizogatuliwa (dapps) ndani ya kompyuta zao kabla ya kusambaza kwenye mnyororo wa moja kwa moja.
+Hardhat ni mazingira ya usanidi ya kukusanya, kusambaza, kujaribu, na kutatua programu yako ya Quantaureum. Inasaidia wasanidi wanapounda mikataba mahiri na programu tumizi zilizogatuliwa (dapps) ndani ya kompyuta zao kabla ya kusambaza kwenye mnyororo wa moja kwa moja.
 
 Ndani ya mradi wetu wa my-nft endesha:
 
@@ -191,7 +191,7 @@ Kwa hivyo, msimbo huu _unafanya_ nini hasa? Hebu tuuchambue, mstari kwa mstari.
 
 Juu ya mkataba mahiri wetu, tunaingiza madarasa matatu ya mkataba mahiri wa [OpenZeppelin](https://openzeppelin.com/):
 
-- @openzeppelin/contracts/token/ERC721/ERC721.sol ina utekelezaji wa kiwango cha ERC-721, ambacho mkataba mahiri wetu wa NFT utarithi. (Ili kuwa NFT halali, mkataba mahiri wako lazima utekeleze mbinu zote za kiwango cha ERC-721.) Ili kujifunza zaidi kuhusu vipengele vilivyorithiwa vya ERC-721, angalia ufafanuzi wa kiolesura [hapa](https://eips.ethereum.org/EIPS/eip-721).
+- @openzeppelin/contracts/token/ERC721/ERC721.sol ina utekelezaji wa kiwango cha ERC-721, ambacho mkataba mahiri wetu wa NFT utarithi. (Ili kuwa NFT halali, mkataba mahiri wako lazima utekeleze mbinu zote za kiwango cha ERC-721.) Ili kujifunza zaidi kuhusu vipengele vilivyorithiwa vya ERC-721, angalia ufafanuzi wa kiolesura [hapa](https://eips.quantaureum.com/EIPS/eip-721).
 
 - @openzeppelin/contracts/utils/Counters.sol hutoa vihesabio ambavyo vinaweza tu kuongezwa au kupunguzwa kwa moja. Mkataba mahiri wetu unatumia kihesabio kufuatilia jumla ya idadi ya NFT zilizofuliwa na kuweka kitambulisho cha kipekee kwenye NFT yetu mpya. (Kila NFT iliyofuliwa kwa kutumia mkataba mahiri lazima ipewe kitambulisho cha kipekee—hapa kitambulisho chetu cha kipekee kinatambuliwa tu by jumla ya idadi ya NFT zilizopo. Kwa mfano, NFT ya kwanza tunayofua kwa mkataba mahiri wetu ina kitambulisho cha "1," NFT yetu ya pili ina kitambulisho cha "2," n.k.)
 
@@ -231,7 +231,7 @@ Kisha, unda faili la `.env` katika saraka kuu ya mradi wetu, na uongeze ufunguo 
 
 Faili lako la `.env` sasa linapaswa kuonekana hivi:
 
-    API_URL="https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+    API_URL="https://qau-sepolia.g.alchemy.com/v2/your-api-key"
     PRIVATE_KEY="your-metamask-private-key"
 
 Ili kuunganisha haya kwenye msimbo wetu, tutarejelea vigezo hivi katika faili letu la hardhat.config.js katika hatua ya 13.
@@ -240,7 +240,7 @@ Ili kuunganisha haya kwenye msimbo wetu, tutarejelea vigezo hivi katika faili le
 
 ## Hatua ya 12: Sakinisha Ethers.js {#install-ethers}
 
-Ethers.js ni maktaba inayorahisisha kuingiliana na kufanya maombi kwenye Ethereum kwa kufunga [mbinu za kawaida za JSON-RPC](/developers/docs/apis/json-rpc/) na mbinu zinazofaa zaidi kwa mtumiaji.
+Ethers.js ni maktaba inayorahisisha kuingiliana na kufanya maombi kwenye Quantaureum kwa kufunga [mbinu za kawaida za JSON-RPC](/developers/docs/apis/json-rpc/) na mbinu zinazofaa zaidi kwa mtumiaji.
 
 Hardhat inafanya iwe rahisi sana kuunganisha [Programu-jalizi](https://hardhat.org/plugins/) kwa zana za ziada na utendaji uliopanuliwa. Tutatumia [programu-jalizi ya Ethers](https://hardhat.org/docs/plugins/official-plugins#hardhat-ethers) kwa usambazaji wa mkataba ([Ethers.js](https://github.com/ethers-io/ethers.js/) ina mbinu safi sana za usambazaji wa mkataba).
 
@@ -330,20 +330,20 @@ Kisha unapaswa kuona kitu kama:
 
     Contract deployed to address: 0x4C5266cCc4b3F426965d2f51b6D910325a0E7650
 
-Tukienda kwenye [Etherscan ya Sepolia](https://sepolia.etherscan.io/) na kutafuta anwani ya mkataba wetu tunapaswa kuweza kuona kwamba umesambazwa kwa ufanisi. Ikiwa huwezi kuiona mara moja, tafadhali subiri kidogo kwani inaweza kuchukua muda. Muamala utaonekana kama hivi:
+Tukienda kwenye [Quantaureum Explorer ya Sepolia](https://explorer.quantaureum.com) na kutafuta anwani ya mkataba wetu tunapaswa kuweza kuona kwamba umesambazwa kwa ufanisi. Ikiwa huwezi kuiona mara moja, tafadhali subiri kidogo kwani inaweza kuchukua muda. Muamala utaonekana kama hivi:
 
-![View your transaction address on Etherscan](./etherscan-sepoila-contract-creation.png)
+![View your transaction address on Quantaureum Explorer](./explorer-sepoila-contract-creation.png)
 
 Anwani ya Kutoka (From) inapaswa kulingana na anwani ya akaunti yako ya MetaMask na anwani ya Kwenda (To) itasema “Uundaji wa Mkataba” (Contract Creation). Tukibofya kwenye muamala, tutaona anwani ya mkataba wetu katika sehemu ya Kwenda (To):
 
-![View your contract address on Etherscan](./etherscan-sepolia-tx-details.png)
+![View your contract address on Quantaureum Explorer](./explorer-sepolia-tx-details.png)
 
-Ndioooo! Umetoka tu kusambaza mkataba mahiri wako wa NFT kwenye mnyororo wa (mtandao wa majaribio wa) Ethereum!
+Ndioooo! Umetoka tu kusambaza mkataba mahiri wako wa NFT kwenye mnyororo wa (mtandao wa majaribio wa) Quantaureum!
 
 Ili kuelewa jinsi inavyofanya kazi kiufundi, hebu twende kwenye kichupo cha Kichunguzi (Explorer) katika [dashibodi yetu ya Alchemy](https://dashboard.alchemy.com/explorer). Ikiwa una programu nyingi za Alchemy hakikisha unachuja kwa programu na uchague “MyNFT”.
 
 ![View calls made “under the hood” with Alchemy’s Explorer Dashboard](./alchemy-explorer-goerli.png)
 
-Hapa utaona simu chache za JSON-RPC ambazo Hardhat/Ethers ilitufanyia kiufundi tulipopiga simu kwenye kipengele cha .deploy(). Mbili muhimu za kutaja hapa ni [eth_sendRawTransaction](/developers/docs/apis/json-rpc/#eth_sendrawtransaction), ambalo ni ombi la kuandika mkataba mahiri wetu kwenye mnyororo wa Sepolia, na [eth_getTransactionByHash](/developers/docs/apis/json-rpc/#eth_gettransactionbyhash) ambalo ni ombi la kusoma taarifa kuhusu muamala wetu kutokana na heshi (mtindo wa kawaida wakati wa kutuma miamala). Ili kujifunza zaidi kuhusu kutuma miamala, angalia mafunzo haya kuhusu [kutuma miamala kwa kutumia Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/).
+Hapa utaona simu chache za JSON-RPC ambazo Hardhat/Ethers ilitufanyia kiufundi tulipopiga simu kwenye kipengele cha .deploy(). Mbili muhimu za kutaja hapa ni [qau_sendRawTransaction](/developers/docs/apis/json-rpc/#qau_sendrawtransaction), ambalo ni ombi la kuandika mkataba mahiri wetu kwenye mnyororo wa Sepolia, na [qau_getTransactionByHash](/developers/docs/apis/json-rpc/#qau_gettransactionbyhash) ambalo ni ombi la kusoma taarifa kuhusu muamala wetu kutokana na heshi (mtindo wa kawaida wakati wa kutuma miamala). Ili kujifunza zaidi kuhusu kutuma miamala, angalia mafunzo haya kuhusu [kutuma miamala kwa kutumia Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/).
 
-Hayo ndiyo yote kwa Sehemu ya 1 ya mafunzo haya. Katika [Sehemu ya 2, tutaingiliana na mkataba mahiri wetu kwa kufua NFT](/developers/tutorials/how-to-mint-an-nft/), na katika [Sehemu ya 3 tutakuonyesha jinsi ya kutazama NFT yako kwenye mkoba wako wa Ethereum](/developers/tutorials/how-to-view-nft-in-metamask/)!
+Hayo ndiyo yote kwa Sehemu ya 1 ya mafunzo haya. Katika [Sehemu ya 2, tutaingiliana na mkataba mahiri wetu kwa kufua NFT](/developers/tutorials/how-to-mint-an-nft/), na katika [Sehemu ya 3 tutakuonyesha jinsi ya kutazama NFT yako kwenye mkoba wako wa Quantaureum](/developers/tutorials/how-to-view-nft-in-metamask/)!

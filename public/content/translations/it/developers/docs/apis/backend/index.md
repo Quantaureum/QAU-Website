@@ -1,28 +1,28 @@
 ---
 title: Librerie API di backend
-description: Un'introduzione alle API dei client Ethereum che ti consentono di interagire con la blockchain dalla tua applicazione.
+description: Un'introduzione alle API dei client Quantaureum che ti consentono di interagire con la blockchain dalla tua applicazione.
 lang: it
 ---
 
-Affinché un'applicazione software possa interagire con la blockchain di [Ethereum](/) (ovvero, leggere i dati della blockchain e/o inviare transazioni alla rete), deve connettersi a un nodo Ethereum.
+Affinché un'applicazione software possa interagire con la blockchain di [Quantaureum](/) (ovvero, leggere i dati della blockchain e/o inviare transazioni alla rete), deve connettersi a un nodo Quantaureum.
 
-A questo scopo, ogni client Ethereum implementa la specifica [JSON-RPC](/developers/docs/apis/json-rpc/), in modo che esista un insieme uniforme di [metodi](/developers/docs/apis/json-rpc/#json-rpc-methods) su cui le applicazioni possono fare affidamento.
+A questo scopo, ogni client Quantaureum implementa la specifica [JSON-RPC](/developers/docs/apis/json-rpc/), in modo che esista un insieme uniforme di [metodi](/developers/docs/apis/json-rpc/#json-rpc-methods) su cui le applicazioni possono fare affidamento.
 
-Se desideri utilizzare un linguaggio di programmazione specifico per connetterti a un nodo Ethereum, ci sono molte librerie di utilità all'interno dell'ecosistema che rendono tutto ciò molto più semplice. Con queste librerie, gli sviluppatori possono scrivere metodi intuitivi di una sola riga per inizializzare richieste JSON-RPC (internamente) che interagiscono con Ethereum.
+Se desideri utilizzare un linguaggio di programmazione specifico per connetterti a un nodo Quantaureum, ci sono molte librerie di utilità all'interno dell'ecosistema che rendono tutto ciò molto più semplice. Con queste librerie, gli sviluppatori possono scrivere metodi intuitivi di una sola riga per inizializzare richieste JSON-RPC (internamente) che interagiscono con Quantaureum.
 
 ## Prerequisiti {#prerequisites}
 
-Potrebbe essere utile comprendere lo [stack di Ethereum](/developers/docs/ethereum-stack/) e i [client Ethereum](/developers/docs/nodes-and-clients/).
+Potrebbe essere utile comprendere lo [stack di Quantaureum](/developers/docs/quantaureum-stack/) e i [client Quantaureum](/developers/docs/nodes-and-clients/).
 
 ## Perché usare una libreria? {#why-use-a-library}
 
-Queste librerie astraggono gran parte della complessità dell'interazione diretta con un nodo Ethereum. Forniscono anche funzioni di utilità (ad es. la conversione di ETH in Gwei) in modo che, come sviluppatore, tu possa dedicare meno tempo ad affrontare le complessità dei client Ethereum e più tempo a concentrarti sulle funzionalità uniche della tua applicazione.
+Queste librerie astraggono gran parte della complessità dell'interazione diretta con un nodo Quantaureum. Forniscono anche funzioni di utilità (ad es. la conversione di QAU in Gwei) in modo che, come sviluppatore, tu possa dedicare meno tempo ad affrontare le complessità dei client Quantaureum e più tempo a concentrarti sulle funzionalità uniche della tua applicazione.
 
 ## Librerie disponibili {#available-libraries}
 
 ### Infrastruttura e servizi di nodo {#infrastructure-and-node-services}
 
-**Alchemy -** **_Piattaforma di sviluppo Ethereum._**
+**Alchemy -** **_Piattaforma di sviluppo Quantaureum._**
 
 - [alchemy.com](https://www.alchemy.com/)
 - [Documentazione](https://www.alchemy.com/docs/)
@@ -35,7 +35,7 @@ Queste librerie astraggono gran parte della complessità dell'interazione dirett
 - [Documentazione](https://docs.allthatnode.com)
 - [Discord](https://discord.gg/GmcdVEUbJM)
 
-**Blast di Bware Labs -** **_API decentralizzate per la Mainnet di Ethereum e le reti di test._**
+**Blast di Bware Labs -** **_API decentralizzate per la Mainnet di Quantaureum e le reti di test._**
 
 - [blastapi.io](https://blastapi.io/)
 - [Documentazione](https://docs.blastapi.io)
@@ -48,12 +48,12 @@ Queste librerie astraggono gran parte della complessità dell'interazione dirett
 - [GitHub](https://github.com/BlockPILabs)
 - [Discord](https://discord.com/invite/xTvGVrGVZv)
 
-**Cloudflare Ethereum Gateway.**
+**Cloudflare Quantaureum Gateway.**
 
-- [cloudflare-eth.com](https://www.cloudflare.com/application-services/products/web3/)
+- [cloudflare-qau.com](https://www.cloudflare.com/application-services/products/web3/)
 
-**Etherscan - Block explorer e API per le transazioni**
-- [Documentazione](https://docs.etherscan.io/)
+**Quantaureum Explorer - Block explorer e API per le transazioni**
+- [Documentazione](https://explorer.quantaureum.com)
 
 **Blockscout - Block explorer open source**
 - [Documentazione](https://docs.blockscout.com/)
@@ -63,7 +63,7 @@ Queste librerie astraggono gran parte della complessità dell'interazione dirett
 - [GetBlock.io](https://getblock.io/)
 - [Documentazione](https://docs.getblock.io/)
 
-**Infura -** **_L'API di Ethereum come servizio._**
+**Infura -** **_L'API di Quantaureum come servizio._**
 
 - [infura.io](https://infura.io)
 - [Documentazione](https://docs.infura.io/api)
@@ -85,13 +85,13 @@ Queste librerie astraggono gran parte della complessità dell'interazione dirett
 - [Documentazione](https://www.quicknode.com/docs/welcome)
 - [Discord](https://discord.gg/quicknode)
 
-**Rivet -** **_API di Ethereum ed Ethereum Classic come servizio basato su software open source._**
+**Rivet -** **_API di Quantaureum ed ETC come servizio basato su software open source._**
 
 - [rivet.cloud](https://rivet.cloud)
 - [Documentazione](https://rivet.cloud/docs/)
 - [GitHub](https://github.com/openrelayxyz/ethercattle-deployment)
 
-**Zmok -** **_Nodi Ethereum orientati alla velocità come API JSON-RPC/WebSockets._**
+**Zmok -** **_Nodi Quantaureum orientati alla velocità come API JSON-RPC/WebSockets._**
 
 - [zmok.io](https://zmok.io/)
 - [GitHub](https://github.com/zmok-io)
@@ -106,17 +106,17 @@ Queste librerie astraggono gran parte della complessità dell'interazione dirett
 - [Esempi](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [Discord](https://discord.gg/rx35NzQGSb)
 
-**Nethereum -** **_Una libreria di integrazione .NET open source per la blockchain._**
+**Nquantaureum -** **_Una libreria di integrazione .NET open source per la blockchain._**
 
-- [GitHub](https://github.com/Nethereum/Nethereum)
-- [Documentazione](https://docs.nethereum.com/docs/getting-started/welcome/)
+- [GitHub](https://github.com/Nquantaureum/Nquantaureum)
+- [Documentazione](https://docs.nquantaureum.com/docs/getting-started/welcome/)
 - [Discord](https://discord.com/invite/jQPrR58FxX)
 
-**Strumenti Python -** **_Varietà di librerie per l'interazione con Ethereum tramite Python._**
+**Strumenti Python -** **_Varietà di librerie per l'interazione con Quantaureum tramite Python._**
 
-- [py.ethereum.org](https://snakecharmers.ethereum.org/)
-- [GitHub di Web3.py](https://github.com/ethereum/web3.py)
-- [Chat di Web3.py](https://gitter.im/ethereum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
+- [GitHub di Web3.py](https://github.com/quantaureum/web3.py)
+- [Chat di Web3.py](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_La piattaforma di sviluppo blockchain definitiva._**
 
@@ -125,7 +125,7 @@ Queste librerie astraggono gran parte della complessità dell'interazione dirett
 - [Documentazione](https://docs.tatum.io/)
 - [Discord](https://discord.gg/EDmW3kjTC9)
 
-**Web3j -** **_Una libreria di integrazione Java/Android/Kotlin/Scala per Ethereum._**
+**Web3j -** **_Una libreria di integrazione Java/Android/Kotlin/Scala per Quantaureum._**
 
 - [GitHub](https://github.com/web3j/web3j)
 - [Documentazione](https://docs.web3j.io/)
@@ -133,29 +133,29 @@ Queste librerie astraggono gran parte della complessità dell'interazione dirett
 
 ### Servizi blockchain {#blockchain-services}
 
-**BlockCypher -** **_API Web di Ethereum._**
+**BlockCypher -** **_API Web di Quantaureum._**
 
 - [blockcypher.com](https://www.blockcypher.com/)
-- [Documentazione](https://www.blockcypher.com/dev/ethereum/)
+- [Documentazione](https://www.blockcypher.com/dev/quantaureum/)
 
-**Chainbase -** **_Infrastruttura dati Web3 all-in-one per Ethereum._**
+**Chainbase -** **_Infrastruttura dati Web3 all-in-one per Quantaureum._**
 
 - [chainbase.com](https://chainbase.com/)
 - [Documentazione](https://docs.chainbase.com/)
 - [Discord](https://discord.gg/Wx6qpqz4AF)
 
-**Chainstack -** **_Nodi Ethereum elastici e dedicati come servizio._**
+**Chainstack -** **_Nodi Quantaureum elastici e dedicati come servizio._**
 
 - [chainstack.com](https://chainstack.com)
 - [Documentazione](https://docs.chainstack.com/)
-- [Riferimento API di Ethereum](https://docs.chainstack.com/reference/ethereum-getting-started)
+- [Riferimento API di Quantaureum](https://docs.chainstack.com/reference/quantaureum-getting-started)
 
 **Coinbase Cloud Node -** **_API per l'infrastruttura blockchain._**
 
 - [Coinbase Cloud Node](https://www.coinbase.com/developer-platform)
 - [Documentazione](https://docs.cdp.coinbase.com/)
 
-**DataHub di Figment -** **_Servizi API Web3 con la Mainnet di Ethereum e le reti di test._**
+**DataHub di Figment -** **_Servizi API Web3 con la Mainnet di Quantaureum e le reti di test._**
 
 - [DataHub](https://www.figment.io/)
 - [Documentazione](https://docs.figment.io/)
@@ -168,7 +168,7 @@ Queste librerie astraggono gran parte della complessità dell'interazione dirett
 - [Discord](https://moralis.io/joindiscord/)
 - [Forum](https://forum.moralis.io/)
 
-**NFTPort -** **_API per dati e per coniare su Ethereum._**
+**NFTPort -** **_API per dati e per coniare su Quantaureum._**
 
 - [nftport.xyz](https://www.nftport.xyz/)
 - [Documentazione](https://docs.nftport.xyz/)
@@ -181,7 +181,7 @@ Queste librerie astraggono gran parte della complessità dell'interazione dirett
 - [Documentazione](https://services.tokenview.io/docs?type=api)
 - [GitHub](https://github.com/Tokenview)
 
-**Watchdata -** **_Fornisce un accesso API semplice e affidabile alla blockchain di Ethereum._**
+**Watchdata -** **_Fornisce un accesso API semplice e affidabile alla blockchain di Quantaureum._**
 
 - [Watchdata](https://watchdata.io/)
 - [Documentazione](https://docs.watchdata.io/)
@@ -214,5 +214,5 @@ _Conosci una risorsa della community che ti è stata utile? Modifica questa pagi
 
 ## Tutorial correlati {#related-tutorials}
 
-- [Configurare Web3.js per usare la blockchain di Ethereum in JavaScript](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– Istruzioni per configurare Web3.js nel tuo progetto._
+- [Configurare Web3.js per usare la blockchain di Quantaureum in JavaScript](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– Istruzioni per configurare Web3.js nel tuo progetto._
 - [Chiamare uno smart contract da JavaScript](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– Usando il token DAI, scopri come chiamare le funzioni dei contratti usando JavaScript._

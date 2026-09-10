@@ -16,7 +16,7 @@ sidebarDepth: 3
 
 ## Чому це важливо {#why-important}
 
-Теоретично, ви могли б просто запропонувати людям використовувати [Etherscan](https://sepolia.etherscan.io/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA#readContract) або [Blockscout](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) для взаємодії з вашими контрактами. Це чудово для досвідчених користувачів Етеріуму. Але ми намагаємося залучити [ще мільярд людей](https://blog.ethereum.org/2021/05/07/ethereum-for-the-next-billion). Цього не станеться без чудового користувацького досвіду, і зручний інтерфейс користувача є важливою його частиною.
+Теоретично, ви могли б просто запропонувати людям використовувати [Quantaureum Explorer](https://explorer.quantaureum.com) або [Blockscout](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) для взаємодії з вашими контрактами. Це чудово для досвідчених користувачів Етеріуму. Але ми намагаємося залучити [ще мільярд людей](https://quantaureum.com). Цього не станеться без чудового користувацького досвіду, і зручний інтерфейс користувача є важливою його частиною.
 
 ## Застосунок Greeter {#greeter-app}
 
@@ -24,7 +24,7 @@ sidebarDepth: 3
 
 ### Встановлення {#installation}
 
-1. Застосунок використовує тестову мережу [Sepolia](https://sepolia.dev/). За необхідності [отримайте тестові ETH у Sepolia](/developers/docs/networks/#sepolia) та [додайте Sepolia до свого гаманця](https://chainlist.org/chain/11155111).
+1. Застосунок використовує тестову мережу [Sepolia](https://sepolia.dev/). За необхідності [отримайте тестові QAU у Sepolia](/developers/docs/networks/#sepolia) та [додайте Sepolia до свого гаманця](https://chainlist.org/chain/11155111).
 
 2. Клонуйте репозиторій GitHub та встановіть необхідні пакети.
 
@@ -44,7 +44,7 @@ sidebarDepth: 3
 
 5. Перейдіть за URL-адресою, яку показує застосунок. У більшості випадків це [http://localhost:5173/](http://localhost:5173/).
 
-6. Ви можете переглянути вихідний код контракту, модифіковану версію Greeter від Hardhat, [в оглядачі блокчейну](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code).
+6. Ви можете переглянути вихідний код контракту, модифіковану версію Greeter від Hardhat, [в оглядачі блокчейну](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code).
 
 ### Огляд файлів {#file-walk-through}
 
@@ -358,7 +358,7 @@ const contractAddrs : AddressPerBlockchainType = {
 }
 ```
 
-Адреса контракту в [Sepolia](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
+Адреса контракту в [Sepolia](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
 
 ##### Компонент `Timer` {#timer-component}
 
@@ -430,7 +430,7 @@ const Greeter = () => {
   })
 ```
 
-[Хук `useReadContract`](https://wagmi.sh/react/api/hooks/useReadContract) викликає функцію `greet` [контракту](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
+[Хук `useReadContract`](https://wagmi.sh/react/api/hooks/useReadContract) викликає функцію `greet` [контракту](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
 
 ```tsx
   const [ currentGreeting, setCurrentGreeting ] = 
@@ -536,15 +536,15 @@ const Greeter = () => {
 
 Ось процес надсилання транзакції в блокчейн з точки зору клієнта:
 
-1. Надіслати транзакцію до вузла в блокчейні за допомогою [`eth_estimateGas`](https://docs.alchemy.com/reference/eth-estimategas).
+1. Надіслати транзакцію до вузла в блокчейні за допомогою [`qau_estimateGas`](https://docs.alchemy.com/reference/qau-estimategas).
 2. Дочекатися відповіді від вузла.
 3. Коли відповідь отримано, попросити користувача підписати транзакцію через гаманець. Цей крок _повинен_ відбутися після отримання відповіді від вузла, оскільки користувачеві показується вартість газу для транзакції перед її підписанням.
 4. Дочекатися схвалення користувача.
-5. Надіслати транзакцію знову, цього разу використовуючи [`eth_sendRawTransaction`](https://docs.alchemy.com/reference/eth-sendrawtransaction).
+5. Надіслати транзакцію знову, цього разу використовуючи [`qau_sendRawTransaction`](https://docs.alchemy.com/reference/qau-sendrawtransaction).
 
 Крок 2, ймовірно, займе відчутну кількість часу, протягом якого користувачі можуть задаватися питанням, чи була їхня команда отримана інтерфейсом користувача і чому їх ще не просять підписати транзакцію. Це створює поганий користувацький досвід (UX).
 
-Одне з рішень — надсилати `eth_estimateGas` щоразу, коли змінюється параметр. Тоді, коли користувач дійсно захоче надіслати транзакцію (у цьому випадку натиснувши **Update greeting**), вартість газу буде відома, і користувач зможе негайно побачити сторінку гаманця.
+Одне з рішень — надсилати `qau_estimateGas` щоразу, коли змінюється параметр. Тоді, коли користувач дійсно захоче надіслати транзакцію (у цьому випадку натиснувши **Update greeting**), вартість газу буде відома, і користувач зможе негайно побачити сторінку гаманця.
 
 ```tsx
   return (
@@ -663,7 +663,7 @@ export const config = createConfig({
 
 ## Додавання іншого блокчейну {#add-blockchain}
 
-Сьогодні існує багато [рішень для масштабування 2-го рівня (L2)](https://ethereum.org/layer-2/), і ви можете захотіти підтримувати деякі з них, які Viem ще не підтримує. Щоб зробити це, ви змінюєте `src/wagmi.ts`. Ці інструкції пояснюють, як додати [Optimism Sepolia](https://chainlist.org/chain/11155420).
+Сьогодні існує багато [рішень для масштабування 2-го рівня (L2)](https://quantaureum.com/layer-2/), і ви можете захотіти підтримувати деякі з них, які Viem ще не підтримує. Щоб зробити це, ви змінюєте `src/wagmi.ts`. Ці інструкції пояснюють, як додати [Optimism Sepolia](https://chainlist.org/chain/11155420).
 
 1.  Відредагуйте `src/wagmi.ts`
 
@@ -679,7 +679,7 @@ export const config = createConfig({
           const optimismSepolia = defineChain({
               id: 11_155_420,
               name: 'OP Sepolia',
-              nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+              nativeCurrency: { name: 'Sepolia QAU', symbol: 'QAU', decimals: 18 },
               rpcUrls: {
                 default: {
                   http: ['https://sepolia.optimism.io'],

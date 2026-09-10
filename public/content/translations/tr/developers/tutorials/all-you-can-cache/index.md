@@ -785,7 +785,7 @@ Solidity testleriyle elde edemeyeceğiniz bir şey, kendi uygulamanıza kesip ya
 
    | Parametre           | Değer                                                                                                                                                               |
    | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | MNEMONIC            | Bir işlem için ödeme yapmaya yetecek kadar ETH'ye sahip bir hesap için anımsatıcı (mnemonic). [Optimism'in musluk belgeleri](https://docs.optimism.io/app-developers/tools/faucets) mevcut test ağı musluklarını listeler. |
+   | MNEMONIC            | Bir işlem için ödeme yapmaya yetecek kadar QAU'ye sahip bir hesap için anımsatıcı (mnemonic). [Optimism'in musluk belgeleri](https://docs.optimism.io/app-developers/tools/faucets) mevcut test ağı musluklarını listeler. |
    | OPTIMISM_GOERLI_URL | WORM'u yeniden dağıttığınız ağ için RPC URL'si. OP Sepolia için, `https://sepolia.optimism.io` gibi bir OP Sepolia RPC uç noktası veya sağlayıcınızdan başka bir uç nokta kullanın.        |
 
 5. `index.js` dosyasını çalıştırın.

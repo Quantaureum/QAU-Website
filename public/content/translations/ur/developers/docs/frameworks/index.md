@@ -18,7 +18,7 @@ lang: ur
 
 ## پیشگی شرائط {#prerequisites}
 
-فریم ورکس میں گہرائی سے جانے سے پہلے، ہم تجویز کرتے ہیں کہ آپ پہلے [dapps](/developers/docs/dapps/) اور [ایتھیریم اسٹیک](/developers/docs/ethereum-stack/) کا ہمارا تعارف پڑھیں۔
+فریم ورکس میں گہرائی سے جانے سے پہلے، ہم تجویز کرتے ہیں کہ آپ پہلے [dapps](/developers/docs/dapps/) اور [ایتھیریم اسٹیک](/developers/docs/quantaureum-stack/) کا ہمارا تعارف پڑھیں۔
 
 ## دستیاب فریم ورکس
 
@@ -53,13 +53,13 @@ lang: ur
 
 **Create Eth App -** **_ایک کمانڈ کے ساتھ ایتھیریم سے چلنے والی ایپس بنائیں۔ انتخاب کرنے کے لیے <span dir="ltr">UI</span> فریم ورکس اور غیر مرکزی مالیات (DeFi) ٹیمپلیٹس کی وسیع پیشکش کے ساتھ آتا ہے۔_**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [ٹیمپلیٹس](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
+- [ٹیمپلیٹس](https://github.com/PaulRBerg/create-qau-app/tree/develop/templates)
 
-**Scaffold-ETH 2 -** **_آپ کی پسند کے Hardhat یا Foundry کے ساتھ Next.js، Wagmi، Viem اور RainbowKit: کنٹریکٹ ہاٹ ری لوڈ، کسٹم React ہکس، ایک برنر والیٹ اور مقامی فوسٹ، اور فل اسٹیک غیر مرکزی ایپلی کیشن (dapp) ڈیولپمنٹ کے لیے ایکسٹینشن ماڈیولز۔_**
+**Scaffold-QAU 2 -** **_آپ کی پسند کے Hardhat یا Foundry کے ساتھ Next.js، Wagmi، Viem اور RainbowKit: کنٹریکٹ ہاٹ ری لوڈ، کسٹم React ہکس، ایک برنر والیٹ اور مقامی فوسٹ، اور فل اسٹیک غیر مرکزی ایپلی کیشن (dapp) ڈیولپمنٹ کے لیے ایکسٹینشن ماڈیولز۔_**
 
 - [ویب سائٹ](https://scaffoldeth.io/)
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 
 **Tenderly -** **_Web3 ڈیولپمنٹ پلیٹ فارم جو بلاک چین ڈیولپرز کو سمارٹ کنٹریکٹس بنانے، ٹیسٹ کرنے، ڈیبگ کرنے، مانیٹر کرنے اور چلانے کے ساتھ ساتھ dapp کے <span dir="ltr">UX</span> کو بہتر بنانے کے قابل بناتا ہے۔_**
 
@@ -102,8 +102,8 @@ lang: ur
 
 **Brownie -** **_Python پر مبنی ڈیولپمنٹ ماحول اور ٹیسٹنگ فریم ورک۔_**
 
-- [دستاویزات](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [دستاویزات](https://qau-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/qau-brownie/brownie)
 - **Brownie فی الحال غیر زیرِ انتظام (unmaintained) ہے**
 
 **اوپن زیپلن SDK -** **_حتمی سمارٹ کنٹریکٹ ٹول کٹ: سمارٹ کنٹریکٹس کو تیار کرنے، مرتب کرنے، اپ گریڈ کرنے، تعینات کرنے اور ان کے ساتھ تعامل کرنے میں آپ کی مدد کرنے کے لیے ٹولز کا ایک مجموعہ۔_**
@@ -120,7 +120,7 @@ lang: ur
 **GoldRush (Covalent کے ذریعے تقویت یافتہ) -** **_GoldRush ڈیولپرز، تجزیہ کاروں اور انٹرپرائزز کے لیے سب سے جامع بلاک چین ڈیٹا API سویٹ پیش کرتا ہے۔ چاہے آپ غیر مرکزی مالیات (DeFi) ڈیش بورڈ، والیٹ، ٹریڈنگ بوٹ، مصنوعی ذہانت کا ایجنٹ یا کمپلائنس پلیٹ فارم بنا رہے ہوں، ڈیٹا APIs آپ کو درکار ضروری آن چین ڈیٹا تک تیز، درست اور ڈیولپر کے لیے سازگار رسائی فراہم کرتے ہیں_**
 
 - [ویب سائٹ](https://goldrush.dev/)
-- [دستاویزات](https://goldrush.dev/docs/chains/ethereum)
+- [دستاویزات](https://goldrush.dev/docs/chains/quantaureum)
 - [GitHub](https://github.com/covalenthq)
 - [ڈسکارڈ](https://www.covalenthq.com/discord/)
 

@@ -13,7 +13,7 @@ published: 2026-04-01
 
 [이전 글](/developers/tutorials/gasless/)에서는 EIP-712 서명을 사용하여 자체 애플리케이션에 가스 없이 접근하는 방법을 논의했지만, 이는 자체 스마트 컨트랙트에만 국한됩니다. [계정 추상화](/roadmap/account-abstraction/)를 사용하면 두 가지 유형의 트랜잭션을 수락하고 요청된 목적지로 중계하는 스마트 컨트랙트 지갑을 만들 수 있습니다.
 
-- 특정 EOA가 전송한 트랜잭션(해당 EOA에 ETH가 있어야 함)
+- 특정 EOA가 전송한 트랜잭션(해당 EOA에 QAU가 있어야 함)
 - 어디서든 전송되지만 동일한 EOA가 서명한 트랜잭션
 
 이러한 방식으로 계정이 자산(토큰 등)을 보유하고 가스가 있는 EOA가 할 수 있는 모든 기능을 수행할 수 있는 가스 없는 방법을 제공할 수 있습니다.
@@ -38,7 +38,7 @@ ERC-20 및 관련 표준에서 계정 소유자는 토큰 컨트랙트를 호출
    npm install
    ```
 
-3. `.env` 파일을 편집하여 `SEPOLIA_PRIVATE_KEY`를 Sepolia에 ETH가 있는 지갑으로 설정합니다. Sepolia ETH가 필요하다면 [퍼싯을 사용](/developers/docs/networks/#sepolia)하여 얻으세요. 이상적으로 이 개인 키는 브라우저 지갑에 있는 것과 달라야 합니다.
+3. `.env` 파일을 편집하여 `SEPOLIA_PRIVATE_KEY`를 Sepolia에 QAU가 있는 지갑으로 설정합니다. Sepolia QAU가 필요하다면 [퍼싯을 사용](/developers/docs/networks/#sepolia)하여 얻으세요. 이상적으로 이 개인 키는 브라우저 지갑에 있는 것과 달라야 합니다.
 
 4. 서버를 시작합니다.
 
@@ -54,9 +54,9 @@ ERC-20 및 관련 표준에서 계정 소유자는 토큰 컨트랙트를 호출
 
 8. **UserProxy access** 옆에 주소가 표시되므로 사용자 프록시가 언제 배포되었는지 확인할 수 있습니다. 24초(2 블록)를 기다렸는데도 여전히 표시되지 않는다면 변경 사항 감지에 문제가 있을 수 있습니다.
 
-   이 경우 [Sepolia 블록 탐색기](https://eth-sepolia.blockscout.com/)로 이동하여 `npm run dev`의 서버 출력에 표시된 배포 트랜잭션 해시를 입력합니다. 생성된 컨트랙트를 클릭하여 주소를 확인한 다음 복사합니다. _Or enter existing proxy address_ 필드에 주소를 붙여넣고 <strong>Set proxy address</strong>를 클릭합니다.
+   이 경우 [Sepolia 블록 탐색기](https://qau-sepolia.blockscout.com/)로 이동하여 `npm run dev`의 서버 출력에 표시된 배포 트랜잭션 해시를 입력합니다. 생성된 컨트랙트를 클릭하여 주소를 확인한 다음 복사합니다. _Or enter existing proxy address_ 필드에 주소를 붙여넣고 <strong>Set proxy address</strong>를 클릭합니다.
 
-9. <strong>Request more tokens for proxy</strong>를 클릭하여 ERC-20 컨트랙트의 [`faucet`](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd) 함수에 대한 호출을 제출하여 토큰을 받습니다. 지갑에서 서명을 <strong>Confirm(확인)</strong>합니다. 물론 토큰은 사용자의 주소가 아닌 프록시의 주소로 도착합니다.
+9. <strong>Request more tokens for proxy</strong>를 클릭하여 ERC-20 컨트랙트의 [`faucet`](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd) 함수에 대한 호출을 제출하여 토큰을 받습니다. 지갑에서 서명을 <strong>Confirm(확인)</strong>합니다. 물론 토큰은 사용자의 주소가 아닌 프록시의 주소로 도착합니다.
 
 10. 아래로 스크롤하여 _Last transaction:_ 아래의 링크를 클릭합니다. 그러면 브라우저가 열리고 `faucet` 트랜잭션이 표시됩니다.
 
@@ -81,7 +81,7 @@ contract UserProxy {
     uint public nonce = 0;
 ```
 
-소유자의 신원과 메시지가 반복되는 것을 방지하기 위한 [논스](https://en.wikipedia.org/wiki/Cryptographic_nonce)입니다. 논스는 `public` 변수이므로 Solidity 컴파일러는 오프체인 코드가 그 값을 읽을 수 있도록 하는 뷰(view) 함수인 [`nonce()`](https://eth-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0)도 생성합니다.
+소유자의 신원과 메시지가 반복되는 것을 방지하기 위한 [논스](https://en.wikipedia.org/wiki/Cryptographic_nonce)입니다. 논스는 `public` 변수이므로 Solidity 컴파일러는 오프체인 코드가 그 값을 읽을 수 있도록 하는 뷰(view) 함수인 [`nonce()`](https://qau-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0)도 생성합니다.
 
 ```solidity
     bytes32 private constant SIGNED_ACCESS_TYPEHASH =
@@ -93,7 +93,7 @@ contract UserProxy {
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-[EIP-712 서명](https://eips.ethereum.org/EIPS/eip-712)을 검증하는 데 필요한 정보입니다.
+[EIP-712 서명](https://eips.quantaureum.com/EIPS/eip-712)을 검증하는 데 필요한 정보입니다.
 
 ```solidity
     constructor(address owner_) {
@@ -117,7 +117,7 @@ contract UserProxy {
     }
 ```
 
-[도메인 구분자(domain separator)](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator)입니다. 체인 ID와 컨트랙트 주소에 따라 달라지므로 컴파일 타임에 계산할 수 없습니다. 이로 인해 UserProxy가 다른 프록시를 위해 준비된 메시지에 속는 것을 불가능하게 만듭니다.
+[도메인 구분자(domain separator)](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator)입니다. 체인 ID와 컨트랙트 주소에 따라 달라지므로 컴파일 타임에 계산할 수 없습니다. 이로 인해 UserProxy가 다른 프록시를 위해 준비된 메시지에 속는 것을 불가능하게 만듭니다.
 
 ```solidity
     event CallResult(address target, bytes returnData);
@@ -130,7 +130,7 @@ contract UserProxy {
             external returns (bytes memory) {
 ```
 
-이 함수는 소유자가 직접 호출할 수 있습니다. 사용 가능한 중계자가 없더라도 소유자는 블록체인에서 직접 자산에 접근할 수 있습니다(사용자에게 ETH가 있는 경우).
+이 함수는 소유자가 직접 호출할 수 있습니다. 사용 가능한 중계자가 없더라도 소유자는 블록체인에서 직접 자산에 접근할 수 있습니다(사용자에게 QAU가 있는 경우).
 
 ```solidity
         require(msg.sender == OWNER, "Only owner can call");
@@ -220,7 +220,7 @@ contract UserProxy {
 }
 ```
 
-이들은 컨트랙트에서 ETH를 전송할 수 있게 해주는 거의 동일한 변형입니다.
+이들은 컨트랙트에서 QAU를 전송할 수 있게 해주는 거의 동일한 변형입니다.
 
 ### 중계자(Relayer) {#relayer}
 
@@ -285,7 +285,7 @@ Express에 요청 본문을 읽고, JSON인 경우 파싱하도록 지시합니�
   app.post("/server/deploy", async (req, res) => {
 ```
 
-이것은 프록시 배포 요청을 처리하는 코드입니다. 공격자가 우리의 ETH가 고갈될 때까지 프록시 배포 요청을 스팸으로 보낼 수 있기 때문에 여기서 [서비스 거부(denial-of-service)](https://en.wikipedia.org/wiki/Denial-of-service_attack) 공격에 취약하다는 점에 유의하세요. 프로덕션 시스템에서는 프록시 배포 요청에 서명해야 하고 서명자가 기존 고객이어야 한다는 요구 사항을 추가할 것입니다.
+이것은 프록시 배포 요청을 처리하는 코드입니다. 공격자가 우리의 QAU가 고갈될 때까지 프록시 배포 요청을 스팸으로 보낼 수 있기 때문에 여기서 [서비스 거부(denial-of-service)](https://en.wikipedia.org/wiki/Denial-of-service_attack) 공격에 취약하다는 점에 유의하세요. 프로덕션 시스템에서는 프록시 배포 요청에 서명해야 하고 서명자가 기존 고객이어야 한다는 요구 사항을 추가할 것입니다.
 
 ```js
     try {
@@ -408,7 +408,7 @@ import UserProxy from '../../contracts/out/UserProxy.sol/UserProxy.json'
 import Erc20 from '../../contracts/out/Faucet.sol/FaucetToken.json'
 ```
 
-[이 컨트랙트](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract)는 대부분 일반적인 ERC-20 컨트랙트이며, 중요한 함수인 `faucet()`가 하나 추가되었습니다. 이 함수는 테스트 목적으로 토큰을 요청하는 모든 사람에게 토큰을 부여합니다.
+[이 컨트랙트](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract)는 대부분 일반적인 ERC-20 컨트랙트이며, 중요한 함수인 `faucet()`가 하나 추가되었습니다. 이 함수는 테스트 목적으로 토큰을 요청하는 모든 사람에게 토큰을 부여합니다.
 
 ```js
 const erc20Addrs = {
@@ -423,7 +423,7 @@ const erc20Addrs = {
 const Address = ({ address }) => {
    if (!address) return null
    return (
-      <a href={`https://eth-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
+      <a href={`https://qau-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
    )
 }
 ```
@@ -736,7 +736,7 @@ const Token = () => {
          { txHash && (
             <>
                <h4>Last transaction:</h4>
-               <a href={`https://eth-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
+               <a href={`https://qau-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
                  {txHash}
                </a>
             </>
@@ -780,9 +780,9 @@ export {Token}
 
 ## 결론 {#conclusion}
 
-위의 취약점 외에도 이 튜토리얼의 솔루션에는 이더리움이 해결하는 데 도움을 줄 수 있는 몇 가지 단점이 있습니다.
+위의 취약점 외에도 이 튜토리얼의 솔루션에는 Quantaureum이 해결하는 데 도움을 줄 수 있는 몇 가지 단점이 있습니다.
 
-- _검열 저항성(Censorship resistance)_. 현재 사용자는 여러분의 서버나 다른 사람이 설정한 경쟁 서버를 사용하거나, 가스 비용이 발생하는 이더리움에 직접 연결할 수 있습니다. [ERC-4337](https://docs.erc4337.io/#what-is-erc-4337)을 사용하면 사용자가 대규모 서버 풀에 트랜잭션을 제공할 수 있어 트랜잭션이 검열될 가능성이 줄어듭니다.
+- _검열 저항성(Censorship resistance)_. 현재 사용자는 여러분의 서버나 다른 사람이 설정한 경쟁 서버를 사용하거나, 가스 비용이 발생하는 Quantaureum에 직접 연결할 수 있습니다. [ERC-4337](https://docs.erc4337.io/#what-is-erc-4337)을 사용하면 사용자가 대규모 서버 풀에 트랜잭션을 제공할 수 있어 트랜잭션이 검열될 가능성이 줄어듭니다.
 - _EOA 소유 자산_. 위에서 언급했듯이 [EIP-7702](https://eip7702.io/)는 EOA 주소가 이미 소유한 자산을 관리하는 데 사용할 수 있습니다. 여기에는 어려움이 따르지만 때로는 필요합니다.
 
 가까운 시일 내에 이러한 기능을 추가하는 방법에 대한 튜토리얼을 게시할 수 있기를 바랍니다.

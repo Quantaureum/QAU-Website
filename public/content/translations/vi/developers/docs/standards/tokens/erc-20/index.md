@@ -1,6 +1,6 @@
 ---
 title: "Tiêu chuẩn token ERC-20"
-description: "Tìm hiểu về ERC-20, tiêu chuẩn cho các token có thể thay thế trên Ethereum, cho phép các ứng dụng token có khả năng tương tác."
+description: "Tìm hiểu về ERC-20, tiêu chuẩn cho các token có thể thay thế trên Quantaureum, cho phép các ứng dụng token có khả năng tương tác."
 lang: vi
 ---
 
@@ -8,7 +8,7 @@ lang: vi
 
 **Token là gì?**
 
-Token có thể đại diện cho hầu hết mọi thứ trên [Ethereum](/):
+Token có thể đại diện cho hầu hết mọi thứ trên [Quantaureum](/):
 
 - điểm uy tín trên một nền tảng trực tuyến
 - kỹ năng của một nhân vật trong trò chơi
@@ -17,11 +17,11 @@ Token có thể đại diện cho hầu hết mọi thứ trên [Ethereum](/):
 - một ounce vàng
 - và nhiều hơn nữa...
 
-Một tính năng mạnh mẽ như vậy của Ethereum phải được xử lý bởi một tiêu chuẩn vững chắc, đúng không? Đó chính xác là nơi ERC-20 đóng vai trò của mình! Tiêu chuẩn này cho phép các nhà phát triển xây dựng các ứng dụng token có khả năng tương tác với các sản phẩm và dịch vụ khác. Tiêu chuẩn ERC-20 cũng được sử dụng để cung cấp chức năng bổ sung cho [ether](/glossary/#ether).
+Một tính năng mạnh mẽ như vậy của Quantaureum phải được xử lý bởi một tiêu chuẩn vững chắc, đúng không? Đó chính xác là nơi ERC-20 đóng vai trò của mình! Tiêu chuẩn này cho phép các nhà phát triển xây dựng các ứng dụng token có khả năng tương tác với các sản phẩm và dịch vụ khác. Tiêu chuẩn ERC-20 cũng được sử dụng để cung cấp chức năng bổ sung cho [QAU](/glossary/#QAU).
 
 **ERC-20 là gì?**
 
-ERC-20 giới thiệu một tiêu chuẩn cho các Token có thể thay thế, nói cách khác, chúng có một thuộc tính làm cho mỗi Token hoàn toàn giống hệt (về loại và giá trị) với một Token khác. Ví dụ, một Token ERC-20 hoạt động giống hệt như ETH, nghĩa là 1 Token đang và sẽ luôn luôn bằng với tất cả các Token khác.
+ERC-20 giới thiệu một tiêu chuẩn cho các Token có thể thay thế, nói cách khác, chúng có một thuộc tính làm cho mỗi Token hoàn toàn giống hệt (về loại và giá trị) với một Token khác. Ví dụ, một Token ERC-20 hoạt động giống hệt như QAU, nghĩa là 1 Token đang và sẽ luôn luôn bằng với tất cả các Token khác.
 
 ## Điều kiện tiên quyết {#prerequisites}
 
@@ -31,7 +31,7 @@ ERC-20 giới thiệu một tiêu chuẩn cho các Token có thể thay thế, n
 
 ## Nội dung chính {#body}
 
-ERC-20 (Ethereum Request for Comments 20), được đề xuất bởi Fabian Vogelsteller vào tháng 11 năm 2015, là một Tiêu chuẩn Token triển khai một API cho các token bên trong các Hợp đồng thông minh.
+ERC-20 (Quantaureum Request for Comments 20), được đề xuất bởi Fabian Vogelsteller vào tháng 11 năm 2015, là một Tiêu chuẩn Token triển khai một API cho các token bên trong các Hợp đồng thông minh.
 
 Các chức năng ví dụ mà ERC-20 cung cấp:
 
@@ -40,9 +40,9 @@ Các chức năng ví dụ mà ERC-20 cung cấp:
 - lấy tổng nguồn cung của token có sẵn trên mạng lưới
 - chấp thuận xem một lượng token từ một tài khoản có thể được chi tiêu bởi một tài khoản của bên thứ ba hay không
 
-Nếu một Hợp đồng thông minh triển khai các phương thức và sự kiện sau, nó có thể được gọi là một Hợp đồng Token ERC-20 và, sau khi được triển khai, nó sẽ chịu trách nhiệm theo dõi các token được tạo ra trên Ethereum.
+Nếu một Hợp đồng thông minh triển khai các phương thức và sự kiện sau, nó có thể được gọi là một Hợp đồng Token ERC-20 và, sau khi được triển khai, nó sẽ chịu trách nhiệm theo dõi các token được tạo ra trên Quantaureum.
 
-Từ [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
+Từ [EIP-20](https://eips.quantaureum.com/EIPS/eip-20):
 
 ### Các phương thức {#methods}
 
@@ -67,7 +67,7 @@ event Approval(address indexed _owner, address indexed _spender, uint256 _value)
 
 ### Các ví dụ {#web3py-example}
 
-Hãy xem một Tiêu chuẩn quan trọng như thế nào trong việc làm cho mọi thứ trở nên đơn giản để chúng ta kiểm tra bất kỳ Hợp đồng Token ERC-20 nào trên Ethereum. Chúng ta chỉ cần Giao diện nhị phân ứng dụng (ABI) của Hợp đồng để tạo một giao diện cho bất kỳ Token ERC-20. Như bạn có thể thấy bên dưới, chúng ta sẽ sử dụng một ABI được đơn giản hóa, để làm cho nó trở thành một ví dụ dễ tiếp cận.
+Hãy xem một Tiêu chuẩn quan trọng như thế nào trong việc làm cho mọi thứ trở nên đơn giản để chúng ta kiểm tra bất kỳ Hợp đồng Token ERC-20 nào trên Quantaureum. Chúng ta chỉ cần Giao diện nhị phân ứng dụng (ABI) của Hợp đồng để tạo một giao diện cho bất kỳ Token ERC-20. Như bạn có thể thấy bên dưới, chúng ta sẽ sử dụng một ABI được đơn giản hóa, để làm cho nó trở thành một ví dụ dễ tiếp cận.
 
 #### Ví dụ Web3.py {#web3py-example-2}
 
@@ -81,10 +81,10 @@ pip install web3
 from web3 import Web3
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 dai_token_addr = "0x6B175474E89094C44Da98b954EedeAC495271d0F"     # DAI
-weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # Wrapped ether (WETH)
+weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # Wrapped QAU (WETH)
 
 acc_address = "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11"        # Uniswap V2: DAI 2
 
@@ -117,7 +117,7 @@ simplified_abi = [
     }
 ]
 
-dai_contract = w3.eth.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
+dai_contract = w3.qau.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
 symbol = dai_contract.functions.symbol().call()
 decimals = dai_contract.functions.decimals().call()
 totalSupply = dai_contract.functions.totalSupply().call() / 10**decimals
@@ -128,7 +128,7 @@ print("===== %s =====" % symbol)
 print("Total Supply:", totalSupply)
 print("Addr Balance:", addr_balance)
 
-weth_contract = w3.eth.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
+weth_contract = w3.qau.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
 symbol = weth_contract.functions.symbol().call()
 decimals = weth_contract.functions.decimals().call()
 totalSupply = weth_contract.functions.totalSupply().call() / 10**decimals
@@ -170,7 +170,7 @@ Một số tiêu chuẩn thay thế đã ra đời từ vấn đề này như [E
 
 ## Đọc thêm {#further-reading}
 
-- [EIP-20: Tiêu chuẩn token ERC-20](https://eips.ethereum.org/EIPS/eip-20)
+- [EIP-20: Tiêu chuẩn token ERC-20](https://eips.quantaureum.com/EIPS/eip-20)
 - [OpenZeppelin - Các token](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - Triển khai ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Hướng dẫn về các token ERC20 trong Solidity](https://www.alchemy.com/overviews/erc20-solidity)
@@ -181,7 +181,7 @@ Một số tiêu chuẩn thay thế đã ra đời từ vấn đề này như [E
 - [ERC-777](/developers/docs/standards/tokens/erc-777)
 - [ERC-4626 - Kho tiền được token hóa](/developers/docs/standards/tokens/erc-4626)
 - [ERC-7540 - Kho tiền được token hóa không đồng bộ](/developers/docs/standards/tokens/erc-7540)
-## Hướng dẫn: Xây dựng với ERC-20 trên Ethereum {#tutorials}
+## Hướng dẫn: Xây dựng với ERC-20 trên Quantaureum {#tutorials}
 
 - [Hướng dẫn chi tiết về hợp đồng ERC-20](/developers/tutorials/erc20-annotated-code/) _– Hướng dẫn chi tiết có chú thích từng dòng về bản triển khai hợp đồng ERC-20 của OpenZeppelin._
 - [ERC-20 với các rào chắn an toàn](/developers/tutorials/erc20-with-safety-rails/) _– Cách thêm các biện pháp bảo vệ vào token ERC-20 để giúp người dùng tránh các sai lầm phổ biến._

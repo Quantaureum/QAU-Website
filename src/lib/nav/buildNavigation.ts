@@ -1,6 +1,5 @@
 import type { NavSections } from "@/components/Nav/types"
 
-import { ENTERPRISE_ETHEREUM_URL } from "@/lib/constants"
 
 type TranslateFn = (key: string) => string
 
@@ -17,24 +16,24 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
           href: "/learn/",
         },
         {
-          id: "learn/ethereum-explained",
-          label: t("nav-ethereum-explained-label"),
-          description: t("nav-ethereum-explained-description"),
+          id: "learn/quantaureum-explained",
+          label: t("nav-quantaureum-explained-label"),
+          description: t("nav-quantaureum-explained-description"),
           items: [
             {
-              label: t("what-is-ethereum"),
-              description: t("nav-what-is-ethereum-description"),
-              href: "/what-is-ethereum/",
+              label: t("what-is-quantaureum"),
+              description: t("nav-what-is-quantaureum-description"),
+              href: "/what-is-quantaureum/",
             },
             {
-              label: t("what-is-the-ethereum-network"),
-              description: t("nav-what-is-ethereum-network-description"),
-              href: "/what-is-the-ethereum-network/",
+              label: t("what-is-the-quantaureum-network"),
+              description: t("nav-what-is-quantaureum-network-description"),
+              href: "/what-is-the-quantaureum-network/",
             },
             {
-              label: t("what-is-ether"),
-              description: t("nav-what-is-ether-description"),
-              href: "/what-is-ether/",
+              label: t("what-is-QAU"),
+              description: t("nav-what-is-QAU-description"),
+              href: "/what-is-QAU/",
             },
             {
               label: t("nav-values-label"),
@@ -54,9 +53,9 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
           ],
         },
         {
-          id: "learn/how-ethereum-works",
-          label: t("nav-how-ethereum-works-label"),
-          description: t("nav-how-ethereum-works-description"),
+          id: "learn/how-quantaureum-works",
+          label: t("nav-how-quantaureum-works-label"),
+          description: t("nav-how-quantaureum-works-description"),
           items: [
             {
               label: t("smart-contracts"),
@@ -64,8 +63,8 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
               href: "/smart-contracts/",
             },
             {
-              label: t("ethereum-wallets"),
-              description: t("nav-ethereum-wallets-description"),
+              label: t("quantaureum-wallets"),
+              description: t("nav-quantaureum-wallets-description"),
               href: "/wallets/",
             },
             {
@@ -84,9 +83,9 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
               href: "/staking/",
             },
             {
-              label: t("ethereum-vs-bitcoin"),
-              description: t("nav-ethereum-vs-bitcoin-description"),
-              href: "/ethereum-vs-bitcoin/",
+              label: t("quantaureum-vs-bitcoin"),
+              description: t("nav-quantaureum-vs-bitcoin-description"),
+              href: "/quantaureum-vs-bitcoin/",
             },
           ],
         },
@@ -96,12 +95,12 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
           description: t("nav-staying-safe-description"),
           items: [
             {
-              label: t("ethereum-privacy"),
+              label: t("quantaureum-privacy"),
               description: t("nav-privacy-description"),
               href: "/privacy/",
             },
             {
-              label: t("ethereum-security"),
+              label: t("quantaureum-security"),
               description: t("nav-security-description"),
               href: "/security/",
             },
@@ -131,9 +130,9 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
       ariaLabel: t("use-menu"),
       items: [
         {
-          id: "use/start-with-ethereum",
-          label: t("nav-start-with-ethereum-label"),
-          description: t("nav-start-with-ethereum-description"),
+          id: "use/start-with-quantaureum",
+          label: t("nav-start-with-quantaureum-label"),
+          description: t("nav-start-with-quantaureum-description"),
           items: [
             {
               label: t("nav-start-with-crypto-title"),
@@ -147,7 +146,7 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
             },
             {
               label: t("get-eth"),
-              description: t("nav-get-eth-description"),
+              description: t("nav-get-qau-description"),
               href: "/get-eth/",
             },
             {
@@ -261,8 +260,8 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
               href: "/developers/tools/",
             },
             {
-              label: t("learn-ethereum-development"),
-              description: t("nav-learn-ethereum-development-description"),
+              label: t("learn-quantaureum-development"),
+              description: t("nav-learn-quantaureum-development-description"),
               href: "/developers/tools/categories/education-standards/",
             },
             {
@@ -290,12 +289,12 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
             {
               label: t("nav-docs-foundation-label"),
               description: t("nav-docs-foundation-description"),
-              href: "/developers/docs/intro-to-ethereum/",
+              href: "/developers/docs/intro-to-quantaureum/",
             },
             {
               label: t("nav-docs-stack-label"),
               description: t("nav-docs-stack-description"),
-              href: "/developers/docs/ethereum-stack/",
+              href: "/developers/docs/quantaureum-stack/",
             },
             {
               label: t("nav-docs-design-label"),
@@ -315,14 +314,9 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
               href: "/founders/",
             },
             {
-              label: t("nav-institution-enterprise-label"),
-              description: t("nav-institution-enterprise-description"),
-              href: ENTERPRISE_ETHEREUM_URL,
-            },
-            {
               label: t("nav-iptf-label"),
               description: t("nav-iptf-description"),
-              href: "https://iptf.ethereum.org/",
+              href: "https://quantaureum.com",
             },
           ],
         },
@@ -378,12 +372,12 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
           ],
         },
         {
-          id: "participate/join-ethereum-org",
-          label: t("nav-join-ethereum-org-label"),
-          description: t("nav-join-ethereum-org-description"),
+          id: "participate/join-quantaureum-org",
+          label: t("nav-join-quantaureum-org-label"),
+          description: t("nav-join-quantaureum-org-description"),
           items: [
             {
-              label: t("about-ethereum-org"),
+              label: t("about-quantaureum-org"),
               description: t("nav-about-description"),
               href: "/about/",
             },
@@ -417,7 +411,7 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
       items: [
         {
           id: "research/whitepaper",
-          label: t("ethereum-whitepaper"),
+          label: t("quantaureum-whitepaper"),
           description: t("nav-whitepaper-description"),
           href: "/whitepaper/",
         },
@@ -478,7 +472,7 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
             {
               label: t("nav-ercs-label"),
               description: t("nav-ercs-description"),
-              href: "https://github.com/ethereum/ERCs",
+              href: "https://github.com/quantaureum/ERCs",
             },
             {
               label: t("nav-bug-bounty-label"),
@@ -505,12 +499,12 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
             {
               label: t("nav-history-founders-label"),
               description: t("nav-history-founders-description"),
-              href: "/ethereum-history-founder-and-ownership/",
+              href: "/quantaureum-history-founder-and-ownership/",
             },
             {
               label: t("nav-technical-history-label"),
               description: t("nav-technical-history-description"),
-              href: "/ethereum-forks/",
+              href: "/quantaureum-forks/",
             },
             {
               label: t("nav-open-research-label"),
@@ -523,8 +517,8 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
               href: "/developers/tools/categories/network-infrastructure/",
             },
             {
-              label: t("nav-ethereum-foundation-label"),
-              description: t("nav-ethereum-foundation-description"),
+              label: t("nav-quantaureum-foundation-label"),
+              description: t("nav-quantaureum-foundation-description"),
               href: "/foundation/",
             },
           ],

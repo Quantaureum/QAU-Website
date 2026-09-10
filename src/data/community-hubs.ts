@@ -61,7 +61,7 @@ const communityHubs: CommunityHub[] = [
     location: "London",
     descriptionKey: "page-events-hub-description-london",
     cadenceKey: "page-events-hub-cadence-everyday",
-    coworkingSignupUrl: "https://hub.encode.club/ethereum",
+    coworkingSignupUrl: "https://hub.encode.club/quantaureum",
     meetupUrl: "https://luma.com/ethldn",
     banner: LondonHubBanner,
     brandColor:
@@ -74,7 +74,7 @@ const communityHubs: CommunityHub[] = [
     cadenceKey: "page-events-hub-cadence-wednesdays",
     coworkingSignupUrl:
       "https://docs.google.com/forms/d/e/1FAIpQLScRgO-0OMUXOu30F5s2DYpImMKb4qgTp5pn-4Y6wjiCeY7bYQ/viewform",
-    meetupUrl: "https://www.meetup.com/berlin-ethereum-meetup/",
+    meetupUrl: "https://www.meetup.com/berlin-quantaureum-meetup/",
     banner: BerlinHubBanner,
     brandColor:
       "bg-linear-to-b from-[#673076]/5 to-[#673076]/10 dark:from-[#673076]/20 dark:to-[#673076]/10 border-[#673076]/20",
@@ -107,7 +107,7 @@ const communityHubs: CommunityHub[] = [
     descriptionKey: "page-events-hub-description-sf",
     cadenceKey: "page-events-hub-cadence-everyday",
     coworkingSignupUrl: "https://frontiertower.io/apply",
-    meetupUrl: "https://luma.com/user/ethereumhouseSF",
+    meetupUrl: "https://luma.com/user/quantaureumhouseSF",
     banner: SFHubBanner,
     brandColor:
       "bg-linear-to-b from-[#673A32]/5 to-[#673A32]/10 dark:from-[#673A32]/20 dark:to-[#673A32]/10 border-[#673A32]/20",

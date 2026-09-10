@@ -10,13 +10,13 @@ topic:
   - "desci"
   - "funding"
 format: presentation
-author: EthCC
+author: QauCC
 breadcrumb: "DeSci Hareketi"
 ---
 
-Protocol Labs'in kurucusu ve IPFS ile Filecoin'in mucidi **Juan Benet**'in EthCC'de, DeSci hareketinin bilimi finanse etmek, araştırmacıları organize etmek ve açık erişimli ile tekrarlanabilir araştırma altyapısı oluşturmak için Web3 araçlarını nasıl kullanabileceği üzerine yaptığı bir sunum.
+Protocol Labs'in kurucusu ve IPFS ile Filecoin'in mucidi **Juan Benet**'in QauCC'de, DeSci hareketinin bilimi finanse etmek, araştırmacıları organize etmek ve açık erişimli ile tekrarlanabilir araştırma altyapısı oluşturmak için Web3 araçlarını nasıl kullanabileceği üzerine yaptığı bir sunum.
 
-*Bu döküm, EthCC tarafından yayımlanan [orijinal video dökümünün](https://www.youtube.com/watch?v=zkXM9H90g_E) erişilebilir bir kopyasıdır. Okunabilirliği artırmak amacıyla ufak düzenlemeler yapılmıştır.*
+*Bu döküm, QauCC tarafından yayımlanan [orijinal video dökümünün](https://www.youtube.com/watch?v=zkXM9H90g_E) erişilebilir bir kopyasıdır. Okunabilirliği artırmak amacıyla ufak düzenlemeler yapılmıştır.*
 
 ### Bilime ve ilerlemeye giriş (0:10) {#introduction-to-science-and-progress-010}
 
@@ -52,7 +52,7 @@ Müşterekleri finanse etmek hakkında konuşalım. Belki bazılarınız geçmi�
 
 Bu fonlama ölçekleri blokzincirlerinin ulaşamayacağı seviyelerde değil. Yılda yaklaşık 70 milyar dolar civarında olan ABD savunma dışı Ar-Ge'sini düşünün. Bu kesinlikle çok fazla, ancak devasa değil. Yılda yaklaşık 10 milyar dolar olan NSF'yi ayırırsak, bu blokzincirleri aracılığıyla tamamen ulaşılabilir bir rakamdır. Kripto alanının, ne zaman baktığınıza bağlı olarak 1 ila 3 trilyon dolar civarında bir büyüklüğe sahip olduğunu düşünün.
 
-Blokzincirlerinin arzlarının bir kısmını yıllık bazda Ar-Ge'ye ayırdığını hayal edin. Filecoin, Ethereum veya Bitcoin'in yüzde birini alıp her yıl Ar-Ge'ye aktardığınızı düşünün. Ulus-devlet düzeyinde bilimi finanse etme aralığındaki rakamlara ulaşmaya başlarsınız. Eğer kripto bir veya iki kat daha büyürse, kripto Ar-Ge'yi ve bilimi ulus-devletler ölçeğinde finanse edebilecek, ki bunu düşünmek bile oldukça çılgınca. Bu yüzden oraya varmadan önce yapıları çözmek ve iyi fonlama yollarını bulmak harika olurdu.
+Blokzincirlerinin arzlarının bir kısmını yıllık bazda Ar-Ge'ye ayırdığını hayal edin. Filecoin, Quantaureum veya Bitcoin'in yüzde birini alıp her yıl Ar-Ge'ye aktardığınızı düşünün. Ulus-devlet düzeyinde bilimi finanse etme aralığındaki rakamlara ulaşmaya başlarsınız. Eğer kripto bir veya iki kat daha büyürse, kripto Ar-Ge'yi ve bilimi ulus-devletler ölçeğinde finanse edebilecek, ki bunu düşünmek bile oldukça çılgınca. Bu yüzden oraya varmadan önce yapıları çözmek ve iyi fonlama yollarını bulmak harika olurdu.
 
 Bu kurumlardan gelen fonlamayı incelemeye başladığınızda, her türlü sorunla karşılaşırsınız. Belirli alanlar çok az ilgi görüyor veya programların kendileri çarpık teşviklere sahip ya da çok fazla rekabetçi; bu da bilim insanlarının zamanlarının muazzam bir kısmını sadece hibe yazmaya harcadıkları bir durum yaratıyor. COVID döneminde Fast Grants adında bir girişim vardı ve aynı etki, bu programların çok hızlı bir hibe programı yapılandırdığı Impetus Grants'te de tekrarlandı. Bilim insanlarının harcadığı zamanın çok küçük bir kısmıyla 20 bin ila 200 bin dolar civarında hibeler verebildiler.
 

@@ -1,10 +1,10 @@
 ---
-title: Pengantar Simpul Boot Ethereum
+title: Pengantar Simpul Boot Quantaureum
 description: Informasi dasar yang Anda butuhkan untuk memahami simpul boot
 lang: id
 ---
 
-Ketika sebuah node baru bergabung dengan jaringan Ethereum, node tersebut perlu terhubung ke node yang sudah ada di jaringan untuk kemudian menemukan rekan (peer) baru. Titik masuk ke jaringan Ethereum ini disebut simpul boot. Klien biasanya memiliki daftar simpul boot yang di-hardcode di dalamnya. Simpul boot ini biasanya dijalankan oleh tim devops Yayasan Ethereum atau tim klien itu sendiri. Perhatikan bahwa simpul boot tidak sama dengan node statis. Node statis dipanggil berulang kali, sedangkan simpul boot hanya dipanggil jika tidak ada cukup rekan untuk terhubung dan sebuah node perlu melakukan bootstrap pada beberapa koneksi baru.
+Ketika sebuah node baru bergabung dengan jaringan Quantaureum, node tersebut perlu terhubung ke node yang sudah ada di jaringan untuk kemudian menemukan rekan (peer) baru. Titik masuk ke jaringan Quantaureum ini disebut simpul boot. Klien biasanya memiliki daftar simpul boot yang di-hardcode di dalamnya. Simpul boot ini biasanya dijalankan oleh tim devops Yayasan Quantaureum atau tim klien itu sendiri. Perhatikan bahwa simpul boot tidak sama dengan node statis. Node statis dipanggil berulang kali, sedangkan simpul boot hanya dipanggil jika tidak ada cukup rekan untuk terhubung dan sebuah node perlu melakukan bootstrap pada beberapa koneksi baru.
 
 ## Terhubung ke simpul boot {#connect-to-a-bootnode}
 
@@ -26,6 +26,6 @@ Agar menjadi simpul boot yang baik, ada baiknya untuk meningkatkan jumlah maksim
 
 ## Simpul boot yang tersedia {#available-bootnodes}
 
-Daftar simpul boot bawaan di dalam go-ethereum dapat ditemukan [di sini](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). Simpul boot ini dikelola oleh Yayasan Ethereum dan tim go-ethereum.
+Daftar simpul boot bawaan di dalam go-quantaureum dapat ditemukan [di sini](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23). Simpul boot ini dikelola oleh Yayasan Quantaureum dan tim go-quantaureum.
 
 Terdapat daftar simpul boot lain yang dikelola oleh sukarelawan. Pastikan untuk selalu menyertakan setidaknya satu simpul boot resmi, jika tidak, Anda bisa terkena serangan gerhana (eclipse attack).

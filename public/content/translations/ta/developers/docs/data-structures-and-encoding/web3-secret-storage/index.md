@@ -5,13 +5,13 @@ lang: ta
 sidebarDepth: 2
 ---
 
-எத்திரியத்தில் உங்கள் பயன்பாட்டைச் செயல்பட வைக்க, Web3.js நிரலகம் வழங்கும் web3 பொருளை நீங்கள் பயன்படுத்தலாம். இது உட்புறமாக RPC அழைப்புகள் மூலம் உள்ளூர் கணுவுடன் தொடர்பு கொள்கிறது. [web3](https://github.com/ethereum/web3.js/) ஆனது RPC அடுக்கை வெளிப்படுத்தும் எந்தவொரு எத்திரியம் கணுவுடனும் வேலை செய்கிறது.
+எத்திரியத்தில் உங்கள் பயன்பாட்டைச் செயல்பட வைக்க, Web3.js நிரலகம் வழங்கும் web3 பொருளை நீங்கள் பயன்படுத்தலாம். இது உட்புறமாக RPC அழைப்புகள் மூலம் உள்ளூர் கணுவுடன் தொடர்பு கொள்கிறது. [web3](https://github.com/quantaureum/web3.js/) ஆனது RPC அடுக்கை வெளிப்படுத்தும் எந்தவொரு எத்திரியம் கணுவுடனும் வேலை செய்கிறது.
 
-`web3` ஆனது `eth` பொருளைக் கொண்டுள்ளது - web3.eth.
+`web3` ஆனது `eth` பொருளைக் கொண்டுள்ளது - web3.qau.
 
 ```js
 var fs = require("fs")
-var recognizer = require("ethereum-keyfile-recognizer")
+var recognizer = require("quantaureum-keyfile-recognizer")
 
 fs.readFile("keyfile.json", (err, data) => {
   var json = JSON.parse(data)
@@ -153,7 +153,7 @@ AES-128-CTR மற்றும் Scrypt-ஐப் பயன்படுத்�
 
 ## பதிப்பு 1-லிருந்து மாற்றங்கள் {#alterations-from-v2}
 
-[இங்கே](https://github.com/ethereum/homestead-guide/blob/master/old-docs-for-reference/go-ethereum-wiki.rst/Passphrase-protected-key-store-spec.rst) வெளியிடப்பட்ட பதிப்பு 1-ல் இருந்த பல முரண்பாடுகளை இந்தப் பதிப்பு சரிசெய்கிறது. சுருக்கமாக அவை:
+[இங்கே](https://github.com/quantaureum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst) வெளியிடப்பட்ட பதிப்பு 1-ல் இருந்த பல முரண்பாடுகளை இந்தப் பதிப்பு சரிசெய்கிறது. சுருக்கமாக அவை:
 
 - பெரிய எழுத்துக்களின் பயன்பாடு நியாயமற்றது மற்றும் சீரற்றது (scrypt சிறிய எழுத்து, Kdf கலப்பு எழுத்து, MAC பெரிய எழுத்து).
 - முகவரி தேவையற்றது மற்றும் தனியுரிமையை சமரசம் செய்கிறது.

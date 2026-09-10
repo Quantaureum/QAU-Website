@@ -13,18 +13,18 @@ Dalam [mekanisme konsensus](/developers/docs/consensus-mechanisms/pos) berbasis 
 
 Hal ini dapat menciptakan peluang bagi penyerang untuk mengambil keuntungan. Sebagai contoh, pengusul blok yang dipilih untuk slot `n+1` dapat melakukan DOS terhadap pengusul di slot `n` sehingga mereka kehilangan kesempatan untuk mengusulkan blok. Hal ini akan memungkinkan pengusul blok yang menyerang untuk mengekstraksi MEV dari kedua slot, atau mengambil semua transaksi yang seharusnya dibagi ke dalam dua blok dan malah memasukkan semuanya ke dalam satu blok, sehingga mendapatkan semua biaya yang terkait. Hal ini kemungkinan besar akan lebih memengaruhi validator rumahan daripada validator institusional canggih yang dapat menggunakan metode yang lebih mutakhir untuk melindungi diri mereka dari serangan DOS, dan oleh karena itu dapat menjadi kekuatan yang memusatkan (sentralisasi).
 
-Ada beberapa solusi untuk masalah ini. Salah satunya adalah [teknologi validator terdistribusi (DVT)](https://github.com/ethereum/distributed-validator-specs) yang bertujuan untuk menyebarkan berbagai tugas yang terkait dengan menjalankan validator di beberapa mesin, dengan redundansi, sehingga jauh lebih sulit bagi penyerang untuk mencegah sebuah blok diusulkan pada slot tertentu. Namun, solusi yang paling tangguh adalah **Pemilihan Pemimpin Rahasia Tunggal (SSLE)**.
+Ada beberapa solusi untuk masalah ini. Salah satunya adalah [teknologi validator terdistribusi (DVT)](https://github.com/quantaureum/distributed-validator-specs) yang bertujuan untuk menyebarkan berbagai tugas yang terkait dengan menjalankan validator di beberapa mesin, dengan redundansi, sehingga jauh lebih sulit bagi penyerang untuk mencegah sebuah blok diusulkan pada slot tertentu. Namun, solusi yang paling tangguh adalah **Pemilihan Pemimpin Rahasia Tunggal (SSLE)**.
 
 ## Pemilihan pemimpin rahasia tunggal {#secret-leader-election}
 
 Dalam SSLE, kriptografi yang cerdas digunakan untuk memastikan bahwa hanya validator yang dipilih yang tahu bahwa mereka telah dipilih. Ini bekerja dengan meminta setiap validator mengirimkan komitmen pada rahasia yang mereka bagikan bersama. Komitmen-komitmen tersebut diacak dan dikonfigurasi ulang sehingga tidak ada yang dapat memetakan komitmen ke validator, tetapi setiap validator tahu komitmen mana yang menjadi milik mereka. Kemudian, satu komitmen dipilih secara acak. Jika seorang validator mendeteksi bahwa komitmen mereka dipilih, mereka tahu bahwa ini adalah giliran mereka untuk mengusulkan blok.
 
-Implementasi terkemuka dari ide ini disebut [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-ethereum/11763). Yang bekerja sebagai berikut:
+Implementasi terkemuka dari ide ini disebut [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-quantaureum/11763). Yang bekerja sebagai berikut:
 
 1. Validator berkomitmen pada rahasia bersama. Skema komitmen dirancang sedemikian rupa sehingga dapat diikat ke identitas validator tetapi juga diacak sehingga tidak ada pihak ketiga yang dapat merekayasa balik ikatan tersebut dan menautkan komitmen tertentu ke validator tertentu.
 2. Pada awal sebuah Epok, sekumpulan validator acak dipilih untuk mengambil sampel komitmen dari 16.384 validator, menggunakan RANDAO.
 3. Untuk 8182 slot berikutnya (1 hari), pengusul blok mengacak dan merandomisasi sebagian dari komitmen menggunakan Entropi pribadi mereka sendiri.
-4. Setelah pengacakan selesai, RANDAO digunakan untuk membuat daftar komitmen yang terurut. Daftar ini dipetakan ke dalam slot Ethereum.
+4. Setelah pengacakan selesai, RANDAO digunakan untuk membuat daftar komitmen yang terurut. Daftar ini dipetakan ke dalam slot Quantaureum.
 5. Validator melihat bahwa komitmen mereka dilampirkan pada slot tertentu, dan ketika slot tersebut tiba, mereka mengusulkan blok.
 6. Ulangi langkah-langkah ini sehingga penugasan komitmen ke slot selalu jauh di depan slot saat ini.
 

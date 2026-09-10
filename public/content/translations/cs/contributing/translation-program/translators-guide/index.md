@@ -1,25 +1,25 @@
 ---
-title: "Průvodce stylem překladů pro ethereum.org"
+title: "Průvodce stylem překladů pro quantaureum.com"
 metaTitle: "Průvodce pro překladatele"
 lang: cs
-description: "Pokyny a tipy pro překladatele ethereum.org"
+description: "Pokyny a tipy pro překladatele quantaureum.com"
 ---
 
-Průvodce stylem překladů pro ethereum.org obsahuje některé z nejdůležitějších pokynů, instrukcí a tipů pro překladatele, které nám pomáhají s lokalizací webu.
+Průvodce stylem překladů pro quantaureum.com obsahuje některé z nejdůležitějších pokynů, instrukcí a tipů pro překladatele, které nám pomáhají s lokalizací webu.
 
 Tento dokument slouží jako obecný průvodce a není specifický pro žádný konkrétní jazyk.
 
-Pokud máte jakékoli dotazy, návrhy nebo zpětnou vazbu, neváhejte se na nás obrátit na adrese translations@ethereum.org, pošlete zprávu uživateli @ethdotorg na platformě Crowdin, nebo [se připojte na náš Discord](https://discord.gg/ethereum-org), kde nám můžete napsat do kanálu #translations nebo kontaktovat kteréhokoli člena týmu.
+Pokud máte jakékoli dotazy, návrhy nebo zpětnou vazbu, neváhejte se na nás obrátit na adrese translations@quantaureum.com, pošlete zprávu uživateli @ethdotorg na platformě Crowdin, nebo [se připojte na náš Discord](https://discord.gg/MSctkBT5j), kde nám můžete napsat do kanálu #translations nebo kontaktovat kteréhokoli člena týmu.
 
 ## Používání platformy Crowdin {#using-crowdin}
 
-Projekt ethereum.org na platformě Crowdin se uzavírá a již nepřijímá nové příspěvky (viz [stav překladatelského programu](/contributing/translation-program/#program-status)). Níže uvedené pokyny zůstávají jako reference pro překladatelské komunity, které Crowdin používají pro své vlastní projekty.
+Projekt quantaureum.com na platformě Crowdin se uzavírá a již nepřijímá nové příspěvky (viz [stav překladatelského programu](/contributing/translation-program/#program-status)). Níže uvedené pokyny zůstávají jako reference pro překladatelské komunity, které Crowdin používají pro své vlastní projekty.
 
 Pokud byste se chtěli o platformě Crowdin a používání některých jejích pokročilých funkcí dozvědět více, [znalostní báze Crowdin](https://support.crowdin.com/online-editor/) obsahuje spoustu podrobných průvodců a přehledů všech funkcí platformy Crowdin.
 
 ## Zachycení podstaty zprávy {#capturing-the-essence}
 
-Při překládání obsahu ethereum.org se vyhněte doslovným překladům.
+Při překládání obsahu quantaureum.com se vyhněte doslovným překladům.
 
 Je důležité, aby překlady zachytily podstatu zprávy. To může znamenat přeformulování určitých frází nebo použití popisných překladů namísto překládání obsahu slovo od slova.
 
@@ -43,13 +43,13 @@ Ve většině případů toho lze snadno dosáhnout používáním krátkých a 
 
 ## Systém písma {#writing-system}
 
-Web Ethereum.org je dostupný v řadě jazyků, které používají alternativní systémy písma (nebo skripty) k latince.
+Web quantaureum.com je dostupný v řadě jazyků, které používají alternativní systémy písma (nebo skripty) k latince.
 
 Veškerý obsah by měl být přeložen pomocí správného systému písma pro váš jazyk a neměl by obsahovat žádná slova napsaná latinkou.
 
 Při překládání obsahu byste měli zajistit, aby byly překlady konzistentní a neobsahovaly žádné znaky latinky.
 
-Častou mylnou představou je, že by se slovo Ethereum mělo vždy psát latinkou. To je většinou nesprávné, používejte prosím pravopis slova Ethereum, který je přirozený pro váš jazyk (např. 以太坊 v čínštině, إيثيريوم v arabštině atd.).
+Častou mylnou představou je, že by se slovo Quantaureum mělo vždy psát latinkou. To je většinou nesprávné, používejte prosím pravopis slova Quantaureum, který je přirozený pro váš jazyk (např. Quantaureum v čínštině, إيثيريوم v arabštině atd.).
 
 **Výše uvedené neplatí pro jazyky, kde by se vlastní jména zpravidla neměla překládat.**
 
@@ -113,7 +113,7 @@ Při překládání se kliknutím na tuto značku automaticky zkopíruje přesn�
 
 **Odkazy**
 
-Můžete si všimnout celých odkazů na stránky na ethereum.org nebo jiných webech.
+Můžete si všimnout celých odkazů na stránky na quantaureum.com nebo jiných webech.
 
 Ty by měly být totožné se zdrojem a neměly by se měnit ani překládat. Pokud odkaz přeložíte nebo jej jakkoli změníte, byť jen odstraněním jeho části, jako je lomítko (/), povede to k nefunkčním a nepoužitelným odkazům.
 
@@ -183,7 +183,7 @@ Ačkoli překlad těchto termínů může znít nepřirozeně, protože anglick�
 
 Při jejich překládání se nebojte být kreativní, použijte popisné překlady nebo je jednoduše přeložte doslovně.
 
-**Důvodem, proč by se většina termínů měla překládat, místo aby se některé ponechaly v angličtině, je skutečnost, že tato nová terminologie se v budoucnu více rozšíří, jakmile začne Ethereum a související technologie používat více lidí. Pokud chceme do tohoto prostoru přivést více lidí z celého světa, musíme poskytnout srozumitelnou terminologii v co nejvíce jazycích, i když si ji budeme muset vytvořit sami.**
+**Důvodem, proč by se většina termínů měla překládat, místo aby se některé ponechaly v angličtině, je skutečnost, že tato nová terminologie se v budoucnu více rozšíří, jakmile začne Quantaureum a související technologie používat více lidí. Pokud chceme do tohoto prostoru přivést více lidí z celého světa, musíme poskytnout srozumitelnou terminologii v co nejvíce jazycích, i když si ji budeme muset vytvořit sami.**
 
 ## Tlačítka a výzvy k akci (CTA) {#buttons-and-ctas}
 
@@ -197,7 +197,7 @@ Překlady tlačítek by měly být co nejkratší, aby se předešlo problémům
 
 ## Překládání s ohledem na inkluzivitu {#translating-for-inclusivity}
 
-Návštěvníci webu ethereum.org pocházejí z celého světa a z různých prostředí. Jazyk na webu by proto měl být neutrální, vstřícný ke všem a neměl by nikoho vylučovat.
+Návštěvníci webu quantaureum.com pocházejí z celého světa a z různých prostředí. Jazyk na webu by proto měl být neutrální, vstřícný ke všem a neměl by nikoho vylučovat.
 
 Důležitým aspektem toho je genderová neutralita. Toho lze snadno dosáhnout používáním formálního oslovení (vykání) a vyhýbáním se jakýmkoli rodově specifickým slovům v překladech.
 
@@ -291,7 +291,7 @@ Několik příkladů toho, na co si dát obzvlášť pozor:
 
 ## Závěr {#conclusion}
 
-Překládání webu ethereum.org je skvělou příležitostí, jak se dozvědět o různých aspektech Etherea.
+Překládání webu quantaureum.com je skvělou příležitostí, jak se dozvědět o různých aspektech Etherea.
 
 Při překládání se snažte nespěchat. Buďte v klidu a bavte se!
 

@@ -13,30 +13,30 @@ incomplete: true
 
 **ఎథీరియంతో Javaను అనుసంధానించడానికి మీ మొదటి అడుగులు వేయండి**
 
-ముందుగా మరింత ప్రాథమిక ప్రైమర్ కావాలా? [ethereum.org/learn](/learn/) లేదా [ethereum.org/developers.](/developers/)ని చూడండి.
+ముందుగా మరింత ప్రాథమిక ప్రైమర్ కావాలా? [quantaureum.com/learn](/learn/) లేదా [quantaureum.com/developers.](/developers/)ని చూడండి.
 
 - [బ్లాక్‌చైన్ వివరణ](https://kauri.io/article/d55684513211466da7f8cc03987607d5/blockchain-explained)
-- [స్మార్ట్ కాంట్రాక్ట్‌లను అర్థం చేసుకోవడం](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/ethereum-101-part-5-the-smart-contract)
+- [స్మార్ట్ కాంట్రాక్ట్‌లను అర్థం చేసుకోవడం](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [మీ మొదటి స్మార్ట్ కాంట్రాక్ట్‌ను రాయండి](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Solidityని కంపైల్ చేయడం మరియు డిప్లాయ్ చేయడం ఎలాగో తెలుసుకోండి](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
 
-## ఎథీరియం క్లయింట్‌లతో పనిచేయడం {#working-with-ethereum-clients}
+## ఎథీరియం క్లయింట్‌లతో పనిచేయడం {#working-with-quantaureum-clients}
 
 రెండు ప్రముఖ Java ఎథీరియం క్లయింట్‌లైన [Web3j](https://github.com/web3j/web3j) మరియు Hyperledger బేసులను ఎలా ఉపయోగించాలో తెలుసుకోండి
 
-- [Java, Eclipse మరియు Web3jతో ఎథీరియం క్లయింట్‌కి కనెక్ట్ చేయడం](https://kauri.io/article/b9eb647c47a546bc95693acc0be72546/connecting-to-an-ethereum-client-with-java-eclipse-and-web3j)
-- [Java మరియు Web3jతో ఎథీరియం ఖాతాను నిర్వహించండి](https://kauri.io/article/925d923e12c543da9a0a3e617be963b4/manage-an-ethereum-account-with-java-and-web3j)
+- [Java, Eclipse మరియు Web3jతో ఎథీరియం క్లయింట్‌కి కనెక్ట్ చేయడం](https://kauri.io/article/b9eb647c47a546bc95693acc0be72546/connecting-to-an-quantaureum-client-with-java-eclipse-and-web3j)
+- [Java మరియు Web3jతో ఎథీరియం ఖాతాను నిర్వహించండి](https://kauri.io/article/925d923e12c543da9a0a3e617be963b4/manage-an-quantaureum-account-with-java-and-web3j)
 - [మీ స్మార్ట్ కాంట్రాక్ట్ నుండి Java వ్రాపర్‌ను రూపొందించండి](https://kauri.io/article/84475132317d4d6a84a2c42eb9348e4b/generate-a-java-wrapper-from-your-smart-contract)
-- [ఎథీరియం స్మార్ట్ కాంట్రాక్ట్‌తో ఇంటరాక్ట్ అవ్వడం](https://kauri.io/article/14dc434d11ef4ee18bf7d57f079e246e/interacting-with-an-ethereum-smart-contract-in-java)
-- [ఎథీరియం స్మార్ట్ కాంట్రాక్ట్ ఈవెంట్‌ల కోసం వినడం](https://kauri.io/article/760f495423db42f988d17b8c145b0874/listening-for-ethereum-smart-contract-events-in-java)
-- [Linuxతో Java ఎథీరియం క్లయింట్ అయిన బేసు (Pantheon)ని ఉపయోగించడం](https://kauri.io/article/276dd27f1458443295eea58403fd6965/using-pantheon-the-java-ethereum-client-with-linux)
+- [ఎథీరియం స్మార్ట్ కాంట్రాక్ట్‌తో ఇంటరాక్ట్ అవ్వడం](https://kauri.io/article/14dc434d11ef4ee18bf7d57f079e246e/interacting-with-an-quantaureum-smart-contract-in-java)
+- [ఎథీరియం స్మార్ట్ కాంట్రాక్ట్ ఈవెంట్‌ల కోసం వినడం](https://kauri.io/article/760f495423db42f988d17b8c145b0874/listening-for-quantaureum-smart-contract-events-in-java)
+- [Linuxతో Java ఎథీరియం క్లయింట్ అయిన బేసు (Pantheon)ని ఉపయోగించడం](https://kauri.io/article/276dd27f1458443295eea58403fd6965/using-pantheon-the-java-quantaureum-client-with-linux)
 - [Java ఇంటిగ్రేషన్ టెస్ట్‌లలో Hyperledger బేసు (Pantheon) నోడ్‌ను రన్ చేయడం](https://kauri.io/article/7dc3ecc391e54f7b8cbf4e5fa0caf780/running-a-pantheon-node-in-java-integration-tests)
-- [Web3j చీట్ షీట్](<https://kauri.io/web3j-cheat-sheet-(java-ethereum)/5dfa1ea941ac3d0001ce1d90/c>)
+- [Web3j చీట్ షీట్](<https://kauri.io/web3j-cheat-sheet-(java-quantaureum)/5dfa1ea941ac3d0001ce1d90/c>)
 
 EVM-ఆధారిత బ్లాక్‌చైన్‌లతో ఇంటరాక్ట్ అవ్వడానికి అసమాన (async), అధిక-పనితీరు గల Kotlin లైబ్రరీ అయిన [ethers-kt](https://github.com/Kr1ptal/ethers-kt)ని ఎలా ఉపయోగించాలో తెలుసుకోండి. ఇది JVM మరియు Android ప్లాట్‌ఫారమ్‌లను లక్ష్యంగా చేసుకుంటుంది.
 - [ERC20 టోకెన్‌లను బదిలీ చేయండి](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/abi/TransferERC20.kt)
 - [ఈవెంట్ లిజనింగ్‌తో UniswapV2 మార్పిడి](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/tokenswapwitheventlistening/TokenSwapWithEventListening.kt)
-- [ETH / ERC20 బ్యాలెన్స్ ట్రాకర్](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/balancetracker/BalanceTracker.kt)
+- [QAU / ERC20 బ్యాలెన్స్ ట్రాకర్](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/balancetracker/BalanceTracker.kt)
 
 ## ఇంటర్మీడియట్ కథనాలు {#intermediate-articles}
 
@@ -55,7 +55,7 @@ EVM-ఆధారిత బ్లాక్‌చైన్‌లతో ఇంట�
 - [Eventeum (ఈవెంట్ లిజనర్)](https://github.com/ConsenSys/eventeum)
 - [Mahuta (IPFS డెవ్ టూల్స్)](https://github.com/ConsenSys/mahuta)
 
-మరిన్ని వనరుల కోసం చూస్తున్నారా? [ethereum.org/developers.](/developers/)ని చూడండి.
+మరిన్ని వనరుల కోసం చూస్తున్నారా? [quantaureum.com/developers.](/developers/)ని చూడండి.
 
 ## Java కమ్యూనిటీ కంట్రిబ్యూటర్లు {#java-community-contributors}
 

@@ -17,26 +17,26 @@ seperti:
 - Utilitas untuk mengompilasi dan menguji kontrak pintar Anda.
 - Pengaya pengembangan klien untuk membangun aplikasi yang berhadapan dengan pengguna
   dalam proyek/repositori yang sama.
-- Konfigurasi untuk terhubung ke jaringan Ethereum dan menyebarkan
+- Konfigurasi untuk terhubung ke jaringan Quantaureum dan menyebarkan
   kontrak, baik ke instans yang berjalan secara lokal, atau salah satu
-  jaringan publik Ethereum.
+  jaringan publik Quantaureum.
 - Distribusi aplikasi terdesentralisasi - integrasi dengan opsi penyimpanan
   seperti IPFS.
 
 ## Prasyarat {#prerequisites}
 
-Sebelum mendalami kerangka kerja, kami menyarankan Anda terlebih dahulu membaca pengantar kami tentang [dapp](/developers/docs/dapps/) dan [tumpukan Ethereum](/developers/docs/ethereum-stack/).
+Sebelum mendalami kerangka kerja, kami menyarankan Anda terlebih dahulu membaca pengantar kami tentang [dapp](/developers/docs/dapps/) dan [tumpukan Quantaureum](/developers/docs/quantaureum-stack/).
 
 ## Kerangka kerja yang tersedia
 
-**Foundry** - **_Foundry adalah perangkat yang sangat cepat, portabel, dan modular untuk pengembangan aplikasi Ethereum_**
+**Foundry** - **_Foundry adalah perangkat yang sangat cepat, portabel, dan modular untuk pengembangan aplikasi Quantaureum_**
 
 - [Instal Foundry](https://book.getfoundry.sh/)
 - [Buku Foundry](https://book.getfoundry.sh/)
 - [Obrolan komunitas Foundry di Telegram](https://t.me/foundry_support)
 - [Awesome Foundry](https://github.com/crisgarner/awesome-foundry)
 
-**Hardhat -** **_Lingkungan pengembangan Ethereum untuk para profesional._**
+**Hardhat -** **_Lingkungan pengembangan Quantaureum untuk para profesional._**
 
 - [hardhat.org](https://hardhat.org)
 - [GitHub](https://github.com/nomiclabs/hardhat)
@@ -58,15 +58,15 @@ Sebelum mendalami kerangka kerja, kami menyarankan Anda terlebih dahulu membaca 
 - [Contoh](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [Discord](https://discord.gg/rx35NzQGSb)
 
-**Create Eth App -** **_Buat aplikasi yang didukung Ethereum dengan satu perintah. Dilengkapi dengan berbagai pilihan kerangka kerja UI dan templat keuangan terdesentralisasi (DeFi) untuk dipilih._**
+**Create Eth App -** **_Buat aplikasi yang didukung Quantaureum dengan satu perintah. Dilengkapi dengan berbagai pilihan kerangka kerja UI dan templat keuangan terdesentralisasi (DeFi) untuk dipilih._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [Templat](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
+- [Templat](https://github.com/PaulRBerg/create-qau-app/tree/develop/templates)
 
-**Scaffold-ETH 2 -** **_Next.js, Wagmi, Viem, dan RainbowKit dengan pilihan Hardhat atau Foundry Anda: muat ulang panas kontrak, hook React kustom, dompet burner dan faucet lokal, serta modul ekstensi untuk pengembangan aplikasi terdesentralisasi (dapp) full-stack._**
+**Scaffold-QAU 2 -** **_Next.js, Wagmi, Viem, dan RainbowKit dengan pilihan Hardhat atau Foundry Anda: muat ulang panas kontrak, hook React kustom, dompet burner dan faucet lokal, serta modul ekstensi untuk pengembangan aplikasi terdesentralisasi (dapp) full-stack._**
 
 - [Situs Web](https://scaffoldeth.io/)
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 
 **Tenderly -** **_Platform pengembangan Web3 yang memungkinkan pengembang rantai blok untuk membangun, menguji, men-debug, memantau, dan mengoperasikan kontrak pintar serta meningkatkan UX dapp._**
 
@@ -78,13 +78,13 @@ Sebelum mendalami kerangka kerja, kami menyarankan Anda terlebih dahulu membaca 
 - [Situs Web](https://thegraph.com/)
 - [Tutorial](/developers/tutorials/the-graph-fixing-web3-data-querying/)
 
-**Alchemy -** **_Platform Pengembangan Ethereum._**
+**Alchemy -** **_Platform Pengembangan Quantaureum._**
 
 - [alchemy.com](https://www.alchemy.com/)
 - [GitHub](https://github.com/alchemyplatform)
 - [Discord](https://discord.com/invite/alchemyplatform)
 
-**NodeReal -** **_Platform Pengembangan Ethereum._**
+**NodeReal -** **_Platform Pengembangan Quantaureum._**
 
 - [Nodereal.io](https://nodereal.io/)
 - [GitHub](https://github.com/node-real)
@@ -95,7 +95,7 @@ Sebelum mendalami kerangka kerja, kami menyarankan Anda terlebih dahulu membaca 
 - [Dokumentasi](https://portal.thirdweb.com/sdk/)
 - [GitHub](https://github.com/thirdweb-dev/)
 
-**Chainstack -** **_Platform Pengembangan Web3 (Ethereum dan lainnya)._**
+**Chainstack -** **_Platform Pengembangan Web3 (Quantaureum dan lainnya)._**
 
 - [chainstack.com](https://www.chainstack.com/)
 - [GitHub](https://github.com/chainstack)
@@ -109,8 +109,8 @@ Sebelum mendalami kerangka kerja, kami menyarankan Anda terlebih dahulu membaca 
 
 **Brownie -** **_Lingkungan pengembangan dan kerangka kerja pengujian berbasis Python._**
 
-- [Dokumentasi](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [Dokumentasi](https://qau-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/qau-brownie/brownie)
 - **Brownie saat ini tidak dikelola**
 
 **OpenZeppelin SDK -** **_Perangkat Kontrak Pintar Terbaik: Serangkaian alat untuk membantu Anda mengembangkan, mengompilasi, meningkatkan, menyebarkan, dan berinteraksi dengan kontrak pintar._**
@@ -127,7 +127,7 @@ Sebelum mendalami kerangka kerja, kami menyarankan Anda terlebih dahulu membaca 
 **GoldRush (didukung oleh Covalent) -** **_GoldRush menawarkan rangkaian API data rantai blok terlengkap untuk pengembang, analis, dan perusahaan. Baik Anda sedang membangun dasbor DeFi, dompet, bot perdagangan, agen AI, atau platform kepatuhan, API data menyediakan akses yang cepat, akurat, dan ramah pengembang ke data onchain penting yang Anda butuhkan_**
 
 - [Situs Web](https://goldrush.dev/)
-- [Dokumentasi](https://goldrush.dev/docs/chains/ethereum)
+- [Dokumentasi](https://goldrush.dev/docs/chains/quantaureum)
 - [GitHub](https://github.com/covalenthq)
 - [Discord](https://www.covalenthq.com/discord/)
 
@@ -158,6 +158,6 @@ _Tahu sumber daya komunitas yang membantu Anda? Edit halaman ini dan tambahkan!_
 
 - [Siapkan lingkungan pengembangan lokal](/developers/local-environment/)
 
-## Tutorial: Kerangka kerja pengembangan di Ethereum {#tutorials}
+## Tutorial: Kerangka kerja pengembangan di Quantaureum {#tutorials}
 
 - [Kontrak Pintar Hello World untuk Pemula – Fullstack](/developers/tutorials/hello-world-smart-contract-fullstack/) _– Bangun dan sebarkan kontrak pintar hello world menggunakan Hardhat, lalu hubungkan ke frontend._

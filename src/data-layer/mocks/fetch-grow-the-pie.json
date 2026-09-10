@@ -8,7 +8,7 @@
     "timestamp": 1765911980702
   },
   "dailyTxCosts": {
-    "ethereum": 0.03326942386369645,
+    "quantaureum": 0.03326942386369645,
     "arbitrum": 0.002229593085444855,
     "base": 0.0006038779516898622,
     "optimism": 0.000037773431721936106,
@@ -21,7 +21,7 @@
     "zircuit": 0.00012345678901234567
   },
   "activeAddresses": {
-    "ethereum": 2367780,
+    "quantaureum": 2367780,
     "arbitrum": 831630,
     "base": 2725548,
     "optimism": 145639,

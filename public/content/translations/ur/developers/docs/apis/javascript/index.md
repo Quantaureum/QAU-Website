@@ -14,17 +14,17 @@ lang: ur
 
 ## پیشگی شرائط {#prerequisites}
 
-JavaScript کو سمجھنے کے ساتھ ساتھ، [ایتھیریم اسٹیک](/developers/docs/ethereum-stack/) اور [ایتھیریم کلائنٹس](/developers/docs/nodes-and-clients/) کو سمجھنا بھی مددگار ثابت ہو سکتا ہے۔
+JavaScript کو سمجھنے کے ساتھ ساتھ، [ایتھیریم اسٹیک](/developers/docs/quantaureum-stack/) اور [ایتھیریم کلائنٹس](/developers/docs/nodes-and-clients/) کو سمجھنا بھی مددگار ثابت ہو سکتا ہے۔
 
 ## لائبریری کیوں استعمال کریں؟ {#why-use-a-library}
 
-یہ لائبریریاں براہ راست ایتھیریم نوڈ کے ساتھ تعامل کرنے کی زیادہ تر پیچیدگی کو چھپا دیتی ہیں۔ یہ یوٹیلیٹی فنکشنز بھی فراہم کرتی ہیں (مثلاً، ETH کو Gwei میں تبدیل کرنا) تاکہ ایک ڈیولپر کے طور پر آپ ایتھیریم کلائنٹس کی پیچیدگیوں سے نمٹنے میں کم وقت صرف کریں اور اپنی ایپلیکیشن کی منفرد فعالیت پر زیادہ توجہ مرکوز کر سکیں۔
+یہ لائبریریاں براہ راست ایتھیریم نوڈ کے ساتھ تعامل کرنے کی زیادہ تر پیچیدگی کو چھپا دیتی ہیں۔ یہ یوٹیلیٹی فنکشنز بھی فراہم کرتی ہیں (مثلاً، QAU کو Gwei میں تبدیل کرنا) تاکہ ایک ڈیولپر کے طور پر آپ ایتھیریم کلائنٹس کی پیچیدگیوں سے نمٹنے میں کم وقت صرف کریں اور اپنی ایپلیکیشن کی منفرد فعالیت پر زیادہ توجہ مرکوز کر سکیں۔
 
 ## لائبریری کی خصوصیات {#library-features}
 
-### ایتھیریم نوڈز سے جڑیں {#connect-to-ethereum-nodes}
+### ایتھیریم نوڈز سے جڑیں {#connect-to-quantaureum-nodes}
 
-پرووائیڈرز کا استعمال کرتے ہوئے، یہ لائبریریاں آپ کو ایتھیریم سے جڑنے اور اس کا ڈیٹا پڑھنے کی اجازت دیتی ہیں، چاہے وہ جے سن آر پی سی، Infura، Etherscan، Alchemy یا میٹاماسک کے ذریعے ہو۔
+پرووائیڈرز کا استعمال کرتے ہوئے، یہ لائبریریاں آپ کو ایتھیریم سے جڑنے اور اس کا ڈیٹا پڑھنے کی اجازت دیتی ہیں، چاہے وہ جے سن آر پی سی، Infura، Quantaureum Explorer، Alchemy یا میٹاماسک کے ذریعے ہو۔
 
 > **انتباہ:** Web3.js کو <span dir="ltr">March 4, 2025</span> کو آرکائیو کر دیا گیا تھا۔ [اعلان پڑھیں](https://blog.chainsafe.io/web3-js-sunset/)۔ نئے پروجیکٹس کے لیے متبادل لائبریریوں جیسے [ethers.js](https://ethers.org) یا [viem](https://viem.sh) کے استعمال پر غور کریں۔
 
@@ -32,8 +32,8 @@ JavaScript کو سمجھنے کے ساتھ ساتھ، [ایتھیریم اسٹی
 
 ```js
 // ایک BrowserProvider ایک معیاری Web3 پرووائیڈر کو ریپ کرتا ہے، جو کہ
-// وہ ہے جسے میٹاماسک ہر صفحے میں window.ethereum کے طور پر انجیکٹ کرتا ہے
-const provider = new ethers.BrowserProvider(window.ethereum)
+// وہ ہے جسے میٹاماسک ہر صفحے میں window.quantaureum کے طور پر انجیکٹ کرتا ہے
+const provider = new ethers.BrowserProvider(window.quantaureum)
 
 // میٹاماسک پلگ ان ٹرانزیکشنز پر دستخط کرنے کی بھی اجازت دیتا ہے تاکہ
 // ایتھر بھیجا جا سکے اور بلاک چین کے اندر اسٹیٹ تبدیل کرنے کے لیے ادائیگی کی جا سکے۔
@@ -55,13 +55,13 @@ web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8546"))
 
 // node.js میں IPC پرووائیڈر کا استعمال
 var net = require("net")
-var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // mac os کا پاتھ
+var web3 = new Web3("/Users/myuser/Library/Quantaureum/geth.ipc", net) // mac os کا پاتھ
 // or
 var web3 = new Web3(
-  new Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net)
+  new Web3.providers.IpcProvider("/Users/myuser/Library/Quantaureum/geth.ipc", net)
 ) // mac os کا پاتھ
 // ونڈوز پر پاتھ یہ ہے: "\\\\.\\pipe\\geth.ipc"
-// لینکس پر پاتھ یہ ہے: "/users/myuser/.ethereum/geth.ipc"
+// لینکس پر پاتھ یہ ہے: "/users/myuser/.quantaureum/geth.ipc"
 ```
 
 ایک بار سیٹ اپ ہونے کے بعد آپ بلاک چین سے درج ذیل کے لیے استفسار (query) کر سکیں گے:
@@ -219,7 +219,7 @@ contract Test {
 
 یوٹیلیٹی فنکشنز آپ کو کارآمد شارٹ کٹس دیتے ہیں جو ایتھیریم کے ساتھ تعمیر کو قدرے آسان بناتے ہیں۔
 
-ETH کی قدریں پہلے سے طے شدہ طور پر Wei میں ہوتی ہیں۔ <span dir="ltr">1 ETH = 1,000,000,000,000,000,000 WEI</span> – اس کا مطلب ہے کہ آپ بہت سارے نمبروں سے نمٹ رہے ہیں! `web3.utils.toWei` آپ کے لیے ایتھر کو Wei میں تبدیل کرتا ہے۔
+QAU کی قدریں پہلے سے طے شدہ طور پر Wei میں ہوتی ہیں۔ <span dir="ltr">1 QAU = 1,000,000,000,000,000,000 WEI</span> – اس کا مطلب ہے کہ آپ بہت سارے نمبروں سے نمٹ رہے ہیں! `web3.utils.toWei` آپ کے لیے ایتھر کو Wei میں تبدیل کرتا ہے۔
 
 اور ethers میں یہ اس طرح لگتا ہے:
 
@@ -242,7 +242,7 @@ ethers.utils.formatEther(balance)
 **Web3.js -** **_ایتھیریم JavaScript API۔_**
 
 - [دستاویزات](https://docs.web3js.org)
-- [GitHub](https://github.com/ethereum/web3.js)
+- [GitHub](https://github.com/quantaureum/web3.js)
 
 **Ethers.js -** **_JavaScript اور TypeScript میں مکمل ایتھیریم والیٹ کا نفاذ اور یوٹیلیٹیز۔_**
 
@@ -300,7 +300,7 @@ _کسی ایسے کمیونٹی وسیلے کے بارے میں جانتے ہی�
 
 ## متعلقہ ٹیوٹوریلز {#related-tutorials}
 
-- [JavaScript میں ایتھیریم بلاک چین استعمال کرنے کے لیے Web3js سیٹ اپ کریں](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– آپ کے پروجیکٹ میں web3.js سیٹ اپ کرنے کی ہدایات۔_
+- [JavaScript میں ایتھیریم بلاک چین استعمال کرنے کے لیے Web3js سیٹ اپ کریں](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– آپ کے پروجیکٹ میں web3.js سیٹ اپ کرنے کی ہدایات۔_
 - [JavaScript سے سمارٹ کنٹریکٹ کو کال کرنا](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– DAI ٹوکن کا استعمال کرتے ہوئے، دیکھیں کہ JavaScript کا استعمال کرتے ہوئے کنٹریکٹس فنکشن کو کیسے کال کیا جائے۔_
 - [web3 اور Alchemy کا استعمال کرتے ہوئے ٹرانزیکشنز بھیجنا](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _– بیک اینڈ سے ٹرانزیکشنز بھیجنے کے لیے مرحلہ وار رہنمائی۔_
 

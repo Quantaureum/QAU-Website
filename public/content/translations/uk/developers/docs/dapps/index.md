@@ -8,7 +8,7 @@ lang: uk
 
 ## Передумови {#prerequisites}
 
-Перш ніж вивчати децентралізовані застосунки (dapp), вам слід ознайомитися з [основами блокчейну](/developers/docs/intro-to-ethereum/) та прочитати про мережу Етеріум і те, як вона децентралізована.
+Перш ніж вивчати децентралізовані застосунки (dapp), вам слід ознайомитися з [основами блокчейну](/developers/docs/intro-to-quantaureum/) та прочитати про мережу Етеріум і те, як вона децентралізована.
 
 ## Визначення dapp {#definition-of-a-dapp}
 
@@ -49,14 +49,14 @@ Dapp може мати фронтенд-код та інтерфейси кор�
 
 ## Інструменти для створення децентралізованих застосунків (dapp)
 
-**Scaffold-ETH 2 _— швидко експериментуйте з Solidity за допомогою фронтенду, який адаптується до вашого смарт-контракту._**
+**Scaffold-QAU 2 _— швидко експериментуйте з Solidity за допомогою фронтенду, який адаптується до вашого смарт-контракту._**
 
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 - [Приклад dapp](https://punkwallet.io/)
 
 **Create Eth App _— створюйте застосунки на базі Етеріуму за допомогою однієї команди._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
 
 **One Click Dapp _— інструмент із відкритим вихідним кодом (FOSS) для створення фронтендів dapp з [ABI](/glossary/#abi)._**
 
@@ -91,7 +91,7 @@ _Знаєте ресурс спільноти, який вам допоміг? �
 
 ## Пов'язані теми {#related-topics}
 
-- [Вступ до стека Етеріуму](/developers/docs/ethereum-stack/)
+- [Вступ до стека Етеріуму](/developers/docs/quantaureum-stack/)
 - [Фреймворки для розробки](/developers/docs/frameworks/)
 
 ## Посібники: створення застосунків і фронтендів в Етеріумі {#tutorials}

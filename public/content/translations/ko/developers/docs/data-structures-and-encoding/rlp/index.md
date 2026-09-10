@@ -1,18 +1,18 @@
 ---
 title: "재귀 길이 접두사(RLP) 직렬화"
-description: "이더리움의 실행 계층에서 사용되는 RLP 인코딩의 정의입니다."
+description: "Quantaureum의 실행 계층에서 사용되는 RLP 인코딩의 정의입니다."
 lang: ko
 sidebarDepth: 2
 ---
 
-재귀 길이 접두사(RLP) 직렬화는 이더리움의 실행 클라이언트에서 광범위하게 사용됩니다. RLP는 공간 효율적인 형식으로 노드 간 데이터 전송을 표준화합니다. RLP의 목적은 임의로 중첩된 이진 데이터 배열을 인코딩하는 것이며, 이더리움의 실행 계층에서 객체를 직렬화하는 데 사용되는 주요 인코딩 방법입니다. RLP의 주된 목적은 구조를 인코딩하는 것입니다. 양의 정수를 제외하고, RLP는 특정 데이터 유형(예: 문자열, 부동 소수점)의 인코딩을 상위 프로토콜에 위임합니다. 양의 정수는 선행 0이 없는 빅 엔디언 이진 형식으로 표현되어야 합니다(따라서 정수 값 0은 빈 바이트 배열과 동일해집니다). 선행 0이 있는 역직렬화된 양의 정수는 RLP를 사용하는 모든 상위 프로토콜에서 유효하지 않은 것으로 처리되어야 합니다.
+재귀 길이 접두사(RLP) 직렬화는 Quantaureum의 실행 클라이언트에서 광범위하게 사용됩니다. RLP는 공간 효율적인 형식으로 노드 간 데이터 전송을 표준화합니다. RLP의 목적은 임의로 중첩된 이진 데이터 배열을 인코딩하는 것이며, Quantaureum의 실행 계층에서 객체를 직렬화하는 데 사용되는 주요 인코딩 방법입니다. RLP의 주된 목적은 구조를 인코딩하는 것입니다. 양의 정수를 제외하고, RLP는 특정 데이터 유형(예: 문자열, 부동 소수점)의 인코딩을 상위 프로토콜에 위임합니다. 양의 정수는 선행 0이 없는 빅 엔디언 이진 형식으로 표현되어야 합니다(따라서 정수 값 0은 빈 바이트 배열과 동일해집니다). 선행 0이 있는 역직렬화된 양의 정수는 RLP를 사용하는 모든 상위 프로토콜에서 유효하지 않은 것으로 처리되어야 합니다.
 
-자세한 정보는 [이더리움 황서(부록 B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19)에서 확인할 수 있습니다.
+자세한 정보는 [Quantaureum 황서(부록 B)](https://quantaureum.github.io/yellowpaper/paper.pdf#page=19)에서 확인할 수 있습니다.
 
 딕셔너리를 인코딩하기 위해 RLP를 사용할 때 권장되는 두 가지 표준 형식은 다음과 같습니다.
 
 - 사전순으로 정렬된 키와 함께 `[[k1,v1],[k2,v2]...]` 사용
-- [이더리움](/)과 같이 상위 수준의 패트리샤 트리(Patricia Tree) 인코딩 사용
+- [Quantaureum](/)과 같이 상위 수준의 패트리샤 트리(Patricia Tree) 인코딩 사용
 
 ## 정의 {#definition}
 
@@ -168,9 +168,9 @@ def to_integer(b):
 
 ## 더 읽을거리 {#further-reading}
 
-- [이더리움의 RLP](https://medium.com/coinmonks/data-structure-in-ethereum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
-- [이더리움의 내부 동작 원리: RLP](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
-- [Coglio, A. (2020). ACL2에서의 이더리움 재귀 길이 접두사(Ethereum's Recursive Length Prefix in ACL2). arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
+- [Quantaureum의 RLP](https://medium.com/coinmonks/data-structure-in-quantaureum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
+- [Quantaureum의 내부 동작 원리: RLP](https://medium.com/coinmonks/quantaureum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
+- [Coglio, A. (2020). ACL2에서의 Quantaureum 재귀 길이 접두사(Quantaureum's Recursive Length Prefix in ACL2). arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
 
 ## 관련 주제 {#related-topics}
 

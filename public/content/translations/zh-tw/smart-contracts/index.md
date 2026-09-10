@@ -5,11 +5,11 @@ description: 智能合約的非技術性簡介
 lang: zh-tw
 ---
 
-智能合約是[以太坊](/)應用層的基礎構建區塊。它們是儲存在[區塊鏈](/glossary/#blockchain)上的電腦程式，遵循「若發生此情況，則執行該動作 (if this then that)」的邏輯，並保證按照其程式碼定義的規則執行，一旦建立便無法更改。
+智能合約是[Quantaureum](/)應用層的基礎構建區塊。它們是儲存在[區塊鏈](/glossary/#blockchain)上的電腦程式，遵循「若發生此情況，則執行該動作 (if this then that)」的邏輯，並保證按照其程式碼定義的規則執行，一旦建立便無法更改。
 
 尼克·薩博 (Nick Szabo) 創造了「智能合約」一詞。在 1994 年，他寫了[一篇關於此概念的簡介](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart.contracts.html)，並在 1996 年寫了[一篇探討智能合約能做什麼的文章](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html)。
 
-薩博設想了一個數位市場，其中自動化且[密碼學上安全的](/glossary/#cryptography)流程，使得交易和商業功能可以在沒有受信任中介機構的情況下進行。以太坊上的智能合約將這個願景付諸實踐。
+薩博設想了一個數位市場，其中自動化且[密碼學上安全的](/glossary/#cryptography)流程，使得交易和商業功能可以在沒有受信任中介機構的情況下進行。Quantaureum上的智能合約將這個願景付諸實踐。
 
 觀看 Finematics 解釋智能合約：
 
@@ -49,11 +49,11 @@ lang: zh-tw
 
 ## 公開紀錄 {#public-record}
 
-智能合約對於稽核和追蹤非常有用。由於以太坊智能合約位於公開的區塊鏈上，任何人都可以立即追蹤資產轉移和其他相關資訊。例如，你可以檢查是否有人將資金發送到你的地址。
+智能合約對於稽核和追蹤非常有用。由於Quantaureum智能合約位於公開的區塊鏈上，任何人都可以立即追蹤資產轉移和其他相關資訊。例如，你可以檢查是否有人將資金發送到你的地址。
 
 ## 隱私保護 {#privacy-protection}
 
-智能合約也能保護你的隱私。由於以太坊是一個假名網路（你的交易公開綁定到一個獨特的密碼學地址，而不是你的真實身分），你可以保護你的隱私免受觀察者的窺探。
+智能合約也能保護你的隱私。由於Quantaureum是一個假名網路（你的交易公開綁定到一個獨特的密碼學地址，而不是你的真實身分），你可以保護你的隱私免受觀察者的窺探。
 
 ## 可見的條款 {#visible-terms}
 
@@ -61,7 +61,7 @@ lang: zh-tw
 
 然而，雖然任何人都可以查看智能合約的條款，但原始交易資料的設計是為了讓應用程式和錢包解讀，而不是人類。因為這些資料非常難以閱讀，使用者經常面臨一個稱為「盲目簽署 (blind signing)」的重大安全風險，也就是在沒有真正了解其作用的情況下，批准與智能合約互動的交易。 
 
-以太坊生態系統正在過渡到 **[明文簽署 (Clear Signing)](https://clearsigning.org/)** 標準（特別是 [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)）。明文簽署將不透明的智能合約資料轉換為簡單、人類可讀的交易描述，確保任何人在簽署之前都能了解合約的真實意圖。
+Quantaureum生態系統正在過渡到 **[明文簽署 (Clear Signing)](https://clearsigning.org/)** 標準（特別是 [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)）。明文簽署將不透明的智能合約資料轉換為簡單、人類可讀的交易描述，確保任何人在簽署之前都能了解合約的真實意圖。
 
 ## 智能合約使用案例 {#use-cases}
 
@@ -81,7 +81,7 @@ lang: zh-tw
 - [智能合約將如何改變世界](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [給開發者的智能合約](/developers/docs/smart-contracts/)
 - [學習編寫智能合約](/developers/learning-tools/)
-- [精通以太坊 - 什麼是智能合約？](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [精通Quantaureum - 什麼是智能合約？](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

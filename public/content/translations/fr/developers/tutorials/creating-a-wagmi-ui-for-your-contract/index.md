@@ -10,13 +10,13 @@ lang: fr
 sidebarDepth: 3
 ---
 
-Vous avez trouvé une fonctionnalité dont nous avons besoin dans l'écosystème Ethereum. Vous avez écrit les contrats intelligents pour la mettre en œuvre, et peut-être même du code connexe qui s'exécute hors chaîne. C'est génial ! Malheureusement, sans interface utilisateur, vous n'aurez aucun utilisateur, et la dernière fois que vous avez créé un site web, les gens utilisaient des modems bas débit et JavaScript était nouveau.
+Vous avez trouvé une fonctionnalité dont nous avons besoin dans l'écosystème Quantaureum. Vous avez écrit les contrats intelligents pour la mettre en œuvre, et peut-être même du code connexe qui s'exécute hors chaîne. C'est génial ! Malheureusement, sans interface utilisateur, vous n'aurez aucun utilisateur, et la dernière fois que vous avez créé un site web, les gens utilisaient des modems bas débit et JavaScript était nouveau.
 
 Cet article est pour vous. Je suppose que vous connaissez la programmation, et peut-être un peu de JavaScript et de HTML, mais que vos compétences en matière d'interface utilisateur sont rouillées et dépassées. Ensemble, nous allons examiner une application moderne simple pour que vous voyiez comment cela se fait de nos jours.
 
 ## Pourquoi est-ce important {#why-important}
 
-En théorie, vous pourriez simplement demander aux gens d'utiliser [Etherscan](https://sepolia.etherscan.io/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA#readContract) ou [Blockscout](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) pour interagir avec vos contrats. C'est très bien pour les Ethereans expérimentés. Mais nous essayons de servir [un milliard de personnes supplémentaires](https://blog.ethereum.org/2021/05/07/ethereum-for-the-next-billion). Cela ne se produira pas sans une excellente expérience utilisateur, et une interface utilisateur conviviale en est une grande partie.
+En théorie, vous pourriez simplement demander aux gens d'utiliser [Quantaureum Explorer](https://explorer.quantaureum.com) ou [Blockscout](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) pour interagir avec vos contrats. C'est très bien pour les Ethereans expérimentés. Mais nous essayons de servir [un milliard de personnes supplémentaires](https://quantaureum.com). Cela ne se produira pas sans une excellente expérience utilisateur, et une interface utilisateur conviviale en est une grande partie.
 
 ## Application Greeter {#greeter-app}
 
@@ -24,7 +24,7 @@ Il y a beaucoup de théorie derrière le fonctionnement des interfaces utilisate
 
 ### Installation {#installation}
 
-1. L'application utilise le réseau de test [Sepolia](https://sepolia.dev/). Si nécessaire, [obtenez des ETH de test Sepolia](/developers/docs/networks/#sepolia) et [ajoutez Sepolia à votre portefeuille](https://chainlist.org/chain/11155111).
+1. L'application utilise le réseau de test [Sepolia](https://sepolia.dev/). Si nécessaire, [obtenez des QAU de test Sepolia](/developers/docs/networks/#sepolia) et [ajoutez Sepolia à votre portefeuille](https://chainlist.org/chain/11155111).
 
 2. Clonez le dépôt GitHub et installez les paquets nécessaires.
 
@@ -44,7 +44,7 @@ Il y a beaucoup de théorie derrière le fonctionnement des interfaces utilisate
 
 5. Naviguez vers l'URL affichée par l'application. Dans la plupart des cas, il s'agit de [http://localhost:5173/](http://localhost:5173/).
 
-6. Vous pouvez voir le code source du contrat, une version modifiée du Greeter de Hardhat, [sur un explorateur de chaîne de blocs](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code).
+6. Vous pouvez voir le code source du contrat, une version modifiée du Greeter de Hardhat, [sur un explorateur de chaîne de blocs](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code).
 
 ### Parcours des fichiers {#file-walk-through}
 
@@ -111,7 +111,7 @@ L'application va à l'intérieur d'[un composant `React.StrictMode`](https://rea
     <WagmiProvider config={config}>
 ```
 
-L'application est également à l'intérieur d'[un composant `WagmiProvider`](https://wagmi.sh/react/api/WagmiProvider). [La bibliothèque wagmi (que nous allons créer)](https://wagmi.sh/) connecte les définitions de l'interface utilisateur React avec [la bibliothèque viem](https://viem.sh/) pour écrire une application décentralisée Ethereum.
+L'application est également à l'intérieur d'[un composant `WagmiProvider`](https://wagmi.sh/react/api/WagmiProvider). [La bibliothèque wagmi (que nous allons créer)](https://wagmi.sh/) connecte les définitions de l'interface utilisateur React avec [la bibliothèque viem](https://viem.sh/) pour écrire une application décentralisée Quantaureum.
 
 ```tsx
       <QueryClientProvider client={queryClient}>
@@ -328,7 +328,7 @@ Nous utilisons ces fonctions de bibliothèque. Encore une fois, elles sont expli
 import { AddressType } from 'abitype'
 ```
 
-[La bibliothèque `abitype`](https://abitype.dev/) nous fournit des définitions TypeScript pour divers types de données Ethereum, tels que [`AddressType`](https://abitype.dev/config#addresstype).
+[La bibliothèque `abitype`](https://abitype.dev/) nous fournit des définitions TypeScript pour divers types de données Quantaureum, tels que [`AddressType`](https://abitype.dev/config#addresstype).
 
 ```tsx
 let greeterABI = [
@@ -358,7 +358,7 @@ const contractAddrs : AddressPerBlockchainType = {
 }
 ```
 
-L'adresse du contrat sur [Sepolia](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
+L'adresse du contrat sur [Sepolia](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
 
 ##### Composant `Timer` {#timer-component}
 
@@ -430,7 +430,7 @@ L'adresse du contrat Greeter, qui est `undefined` si nous n'avons pas d'informat
   })
 ```
 
-[Le hook `useReadContract`](https://wagmi.sh/react/api/hooks/useReadContract) appelle la fonction `greet` [du contrat](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
+[Le hook `useReadContract`](https://wagmi.sh/react/api/hooks/useReadContract) appelle la fonction `greet` [du contrat](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
 
 ```tsx
   const [ currentGreeting, setCurrentGreeting ] = 
@@ -536,15 +536,15 @@ La fonction pour écrire dans un contrat. Elle est similaire à [`writeContracts
 
 Voici le processus pour soumettre une transaction sur la chaîne de blocs du point de vue du client :
 
-1. Envoyer la transaction à un nœud de la chaîne de blocs en utilisant [`eth_estimateGas`](https://docs.alchemy.com/reference/eth-estimategas).
+1. Envoyer la transaction à un nœud de la chaîne de blocs en utilisant [`qau_estimateGas`](https://docs.alchemy.com/reference/qau-estimategas).
 2. Attendre une réponse du nœud.
 3. Lorsque la réponse est reçue, demander à l'utilisateur de signer la transaction via le portefeuille. Cette étape _doit_ avoir lieu après la réception de la réponse du nœud car le coût en gaz de la transaction est affiché à l'utilisateur avant qu'il ne la signe.
 4. Attendre que l'utilisateur approuve.
-5. Envoyer à nouveau la transaction, cette fois en utilisant [`eth_sendRawTransaction`](https://docs.alchemy.com/reference/eth-sendrawtransaction).
+5. Envoyer à nouveau la transaction, cette fois en utilisant [`qau_sendRawTransaction`](https://docs.alchemy.com/reference/qau-sendrawtransaction).
 
 L'étape 2 est susceptible de prendre un temps perceptible, pendant lequel les utilisateurs peuvent se demander si leur commande a été reçue par l'interface utilisateur et pourquoi on ne leur demande pas encore de signer la transaction. Cela crée une mauvaise expérience utilisateur (UX).
 
-Une solution consiste à envoyer `eth_estimateGas` chaque fois qu'un paramètre change. Ensuite, lorsque l'utilisateur souhaite réellement envoyer la transaction (dans ce cas en appuyant sur **Update greeting**), le coût en gaz est connu, et l'utilisateur peut voir la page du portefeuille immédiatement.
+Une solution consiste à envoyer `qau_estimateGas` chaque fois qu'un paramètre change. Ensuite, lorsque l'utilisateur souhaite réellement envoyer la transaction (dans ce cas en appuyant sur **Update greeting**), le coût en gaz est connu, et l'utilisateur peut voir la page du portefeuille immédiatement.
 
 ```tsx
   return (
@@ -663,7 +663,7 @@ Le point de terminaison HTTP par défaut fourni avec Viem est suffisant. Si nous
 
 ## Ajouter une autre chaîne de blocs {#add-blockchain}
 
-De nos jours, il existe de nombreuses [solutions de mise à l'échelle L2](https://ethereum.org/layer-2/), et vous pourriez vouloir en prendre en charge certaines que viem ne prend pas encore en charge. Pour ce faire, vous modifiez `src/wagmi.ts`. Ces instructions expliquent comment ajouter [Optimism Sepolia](https://chainlist.org/chain/11155420).
+De nos jours, il existe de nombreuses [solutions de mise à l'échelle L2](https://quantaureum.com/layer-2/), et vous pourriez vouloir en prendre en charge certaines que viem ne prend pas encore en charge. Pour ce faire, vous modifiez `src/wagmi.ts`. Ces instructions expliquent comment ajouter [Optimism Sepolia](https://chainlist.org/chain/11155420).
 
 1.  Modifiez `src/wagmi.ts`
 
@@ -679,7 +679,7 @@ De nos jours, il existe de nombreuses [solutions de mise à l'échelle L2](https
           const optimismSepolia = defineChain({
               id: 11_155_420,
               name: 'OP Sepolia',
-              nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+              nativeCurrency: { name: 'Sepolia QAU', symbol: 'QAU', decimals: 18 },
               rpcUrls: {
                 default: {
                   http: ['https://sepolia.optimism.io'],

@@ -111,7 +111,7 @@ const TdsPage = async (props: { params: Promise<PageParams> }) => {
                 <p>
                   {t.rich("page-trillion-dollar-security-hero-paragraph-5", {
                     a: (chunks) => (
-                      <InlineLink href="https://blog.ethereum.org/2025/05/14/trillion-dollar-security">
+                      <InlineLink href="https://quantaureum.com">
                         {chunks}
                       </InlineLink>
                     ),
@@ -202,7 +202,7 @@ const TdsPage = async (props: { params: Promise<PageParams> }) => {
                   {t.rich("page-trillion-dollar-security-contact-paragraph", {
                     a: (chunks) => (
                       <a
-                        href="mailto:trilliondollarsecurity@ethereum.org"
+                        href="mailto:trilliondollarsecurity@quantaureum.com"
                         className="text-primary"
                       >
                         {chunks}

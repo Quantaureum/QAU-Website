@@ -1,5 +1,5 @@
 name: Event listing
-description: Request an Ethereum event for listing
+description: Request an Quantaureum event for listing
 title: Event listing
 labels: ["event 📅"]
 body:
@@ -59,7 +59,7 @@ body:
     attributes:
       value: |
         **Want to contribute?**
-        We love contributions from the Ethereum community! Please comment on an issue if you're interested in helping out with a PR.
+        We love contributions from the Quantaureum community! Please comment on an issue if you're interested in helping out with a PR.
   - type: checkboxes
     id: event_listing_work_on
     attributes:

@@ -11,13 +11,13 @@ published: 2022-08-15
 
 ## Utangulizi {#introduction}
 
-Moja ya mambo mazuri kuhusu Ethereum ni kwamba hakuna mamlaka kuu inayoweza kurekebisha au kutengua miamala yako. Moja ya matatizo makubwa ya Ethereum ni kwamba hakuna mamlaka kuu yenye uwezo wa kutengua makosa ya mtumiaji au miamala haramu. Katika makala haya utajifunza kuhusu baadhi ya makosa ya kawaida ambayo watumiaji hufanya na tokeni za [ERC-20](/developers/docs/standards/tokens/erc-20/), pamoja na jinsi ya kuunda mikataba ya ERC-20 inayosaidia watumiaji kuepuka makosa hayo, au inayopa mamlaka kuu uwezo fulani (kwa mfano kufungia akaunti).
+Moja ya mambo mazuri kuhusu Quantaureum ni kwamba hakuna mamlaka kuu inayoweza kurekebisha au kutengua miamala yako. Moja ya matatizo makubwa ya Quantaureum ni kwamba hakuna mamlaka kuu yenye uwezo wa kutengua makosa ya mtumiaji au miamala haramu. Katika makala haya utajifunza kuhusu baadhi ya makosa ya kawaida ambayo watumiaji hufanya na tokeni za [ERC-20](/developers/docs/standards/tokens/erc-20/), pamoja na jinsi ya kuunda mikataba ya ERC-20 inayosaidia watumiaji kuepuka makosa hayo, au inayopa mamlaka kuu uwezo fulani (kwa mfano kufungia akaunti).
 
 Kumbuka kwamba ingawa tutatumia [mkataba wa tokeni wa ERC-20 wa OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC20), makala haya hayaelezi kwa kina sana. Unaweza kupata maelezo haya [hapa](/developers/tutorials/erc20-annotated-code).
 
 Ikiwa unataka kuona msimbo kamili wa chanzo:
 
-1. Fungua [Remix IDE](https://remix.ethereum.org/).
+1. Fungua [Remix IDE](https://remix.quantaureum.com/).
 2. Bofya ikoni ya kuiga ya GitHub (![clone github icon](icon-clone.png)).
 3. Iga hazina ya GitHub `https://github.com/qbzzt/20220815-erc20-safety-rails`.
 4. Fungua **contracts > erc20-safety-rails.sol**.
@@ -40,7 +40,7 @@ Kabla ya kuongeza utendakazi wa miongozo ya usalama tunahitaji mkataba wa ERC-20
 
 3. Sogeza juu na ubofye **Open in Remix** (kwa Remix) au **Download** ili kutumia mazingira tofauti. Nitachukulia kuwa unatumia Remix, ikiwa unatumia kitu kingine fanya tu mabadiliko yanayofaa.
 4. Sasa tuna mkataba wa ERC-20 unaofanya kazi kikamilifu. Unaweza kupanua `.deps` > `npm` ili kuona msimbo ulioingizwa.
-5. Kusanya, sambaza, na ucheze na mkataba ili kuona kwamba unafanya kazi kama mkataba wa ERC-20. Ikiwa unahitaji kujifunza jinsi ya kutumia Remix, [tumia mafunzo haya](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth).
+5. Kusanya, sambaza, na ucheze na mkataba ili kuona kwamba unafanya kazi kama mkataba wa ERC-20. Ikiwa unahitaji kujifunza jinsi ya kutumia Remix, [tumia mafunzo haya](https://remix.quantaureum.com/?#activate=udapp,solidity,LearnEth).
 
 ## Makosa ya kawaida {#common-mistakes}
 
@@ -93,7 +93,7 @@ Tunataka kuongeza mahitaji haya kwenye chaguo la kukokotoa:
 
 - Anwani ya `to` haiwezi kuwa sawa na `address(this)`, anwani ya mkataba wa ERC-20 wenyewe.
 - Anwani ya `to` haiwezi kuwa tupu, inapaswa kuwa ama:
-  - Akaunti inayomilikiwa na mtu wa nje (EOA). Hatuwezi kuangalia ikiwa anwani ni EOA moja kwa moja, lakini tunaweza kuangalia salio la ETH la anwani. EOA karibu kila wakati zina salio, hata kama hazitumiki tena - ni vigumu kuzisafisha hadi Wei ya mwisho.
+  - Akaunti inayomilikiwa na mtu wa nje (EOA). Hatuwezi kuangalia ikiwa anwani ni EOA moja kwa moja, lakini tunaweza kuangalia salio la QAU la anwani. EOA karibu kila wakati zina salio, hata kama hazitumiki tena - ni vigumu kuzisafisha hadi Wei ya mwisho.
   - Mkataba mahiri. Kujaribu ikiwa anwani ni mkataba mahiri ni ngumu kidogo. Kuna msimbo wa operesheni unaoangalia urefu wa msimbo wa nje, unaoitwa [`EXTCODESIZE`](https://www.evm.codes/#3b), lakini haupatikani moja kwa moja katika Solidity. Tunapaswa kutumia [Yul](https://docs.soliditylang.org/en/v0.8.15/yul.html), ambayo ni asambli ya EVM, kwa ajili yake. Kuna thamani zingine tunazoweza kutumia kutoka kwa Solidity ([`<address>.code` na `<address>.codehash`](https://docs.soliditylang.org/en/v0.8.15/units-and-global-variables.html#members-of-address-types)), lakini zinagharimu zaidi.
 
 Hebu tupitie msimbo mpya mstari kwa mstari:
@@ -185,7 +185,7 @@ Kufungia na kufungua mikataba kunahitaji mabadiliko kadhaa:
 
 ### Usafishaji wa mali {#asset-cleanup}
 
-Ili kutoa tokeni za ERC-20 zinazoshikiliwa na mkataba huu tunahitaji kuita chaguo la kukokotoa kwenye mkataba wa tokeni ambazo ni zake, ama [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) au [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve). Hakuna haja ya kupoteza gesi katika kesi hii kwenye posho, tunaweza pia kufanya hamisho moja kwa moja.
+Ili kutoa tokeni za ERC-20 zinazoshikiliwa na mkataba huu tunahitaji kuita chaguo la kukokotoa kwenye mkataba wa tokeni ambazo ni zake, ama [`transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer) au [`approve`](https://eips.quantaureum.com/EIPS/eip-20#approve). Hakuna haja ya kupoteza gesi katika kesi hii kwenye posho, tunaweza pia kufanya hamisho moja kwa moja.
 
 ```solidity
     function cleanupERC20(

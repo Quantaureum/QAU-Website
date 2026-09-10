@@ -1,16 +1,16 @@
 ---
 title: "Xác minh hợp đồng thông minh"
-description: "Tổng quan về xác minh mã nguồn cho các hợp đồng thông minh Ethereum"
+description: "Tổng quan về xác minh mã nguồn cho các hợp đồng thông minh Quantaureum"
 lang: vi
 ---
 
-[Hợp đồng thông minh](/developers/docs/smart-contracts/) được thiết kế để "không cần tin cậy", nghĩa là người dùng không cần phải tin tưởng các bên thứ ba (ví dụ: nhà phát triển và công ty) trước khi tương tác với một hợp đồng. Như một điều kiện tiên quyết cho tính không cần niềm tin, người dùng và các nhà phát triển khác phải có khả năng xác minh mã nguồn của hợp đồng thông minh. Việc xác minh mã nguồn đảm bảo với người dùng và nhà phát triển rằng mã hợp đồng được công bố chính là mã đang chạy tại địa chỉ hợp đồng trên chuỗi khối Ethereum.
+[Hợp đồng thông minh](/developers/docs/smart-contracts/) được thiết kế để "không cần tin cậy", nghĩa là người dùng không cần phải tin tưởng các bên thứ ba (ví dụ: nhà phát triển và công ty) trước khi tương tác với một hợp đồng. Như một điều kiện tiên quyết cho tính không cần niềm tin, người dùng và các nhà phát triển khác phải có khả năng xác minh mã nguồn của hợp đồng thông minh. Việc xác minh mã nguồn đảm bảo với người dùng và nhà phát triển rằng mã hợp đồng được công bố chính là mã đang chạy tại địa chỉ hợp đồng trên chuỗi khối Quantaureum.
 
 Điều quan trọng là phải phân biệt giữa "xác minh mã nguồn" và "[xác minh hình thức](/developers/docs/smart-contracts/formal-verification/)". Xác minh mã nguồn, sẽ được giải thích chi tiết dưới đây, đề cập đến việc xác minh rằng mã nguồn đã cho của một hợp đồng thông minh bằng ngôn ngữ bậc cao (ví dụ: Solidity) biên dịch ra cùng một mã byte sẽ được thực thi tại địa chỉ hợp đồng. Tuy nhiên, xác minh hình thức mô tả việc xác minh tính đúng đắn của một hợp đồng thông minh, nghĩa là hợp đồng hoạt động như mong đợi. Mặc dù phụ thuộc vào ngữ cảnh, việc xác minh hợp đồng thường đề cập đến xác minh mã nguồn.
 
 ## Xác minh mã nguồn là gì? {#what-is-source-code-verification}
 
-Trước khi triển khai một hợp đồng thông minh trên [Máy ảo Ethereum (EVM)](/developers/docs/evm/), các nhà phát triển [biên dịch](/developers/docs/smart-contracts/compiling/) mã nguồn của hợp đồng—các chỉ thị [được viết bằng Solidity](/developers/docs/smart-contracts/languages/) hoặc một ngôn ngữ lập trình bậc cao khác—thành mã byte. Vì EVM không thể diễn giải các chỉ thị bậc cao, việc biên dịch mã nguồn thành mã byte (tức là các chỉ thị máy bậc thấp) là cần thiết để thực thi logic hợp đồng trong EVM.
+Trước khi triển khai một hợp đồng thông minh trên [Máy ảo Quantaureum (EVM)](/developers/docs/evm/), các nhà phát triển [biên dịch](/developers/docs/smart-contracts/compiling/) mã nguồn của hợp đồng—các chỉ thị [được viết bằng Solidity](/developers/docs/smart-contracts/languages/) hoặc một ngôn ngữ lập trình bậc cao khác—thành mã byte. Vì EVM không thể diễn giải các chỉ thị bậc cao, việc biên dịch mã nguồn thành mã byte (tức là các chỉ thị máy bậc thấp) là cần thiết để thực thi logic hợp đồng trong EVM.
 
 Xác minh mã nguồn là việc so sánh mã nguồn của một hợp đồng thông minh và mã byte đã biên dịch được sử dụng trong quá trình tạo hợp đồng để phát hiện bất kỳ sự khác biệt nào. Việc xác minh hợp đồng thông minh rất quan trọng vì mã hợp đồng được quảng bá có thể khác với những gì đang chạy trên chuỗi khối.
 
@@ -30,7 +30,7 @@ Loại xác minh tận dụng mã băm siêu dữ liệu này được gọi là
 
 ### Tính không cần niềm tin {#trustlessness}
 
-Tính không cần niềm tin được cho là tiền đề lớn nhất cho các hợp đồng thông minh và [ứng dụng phi tập trung (dapp)](/developers/docs/dapps/). Các hợp đồng thông minh là "bất biến" và không thể bị thay đổi; một hợp đồng sẽ chỉ thực thi logic nghiệp vụ được định nghĩa trong mã tại thời điểm triển khai. Điều này có nghĩa là các nhà phát triển và doanh nghiệp không thể can thiệp vào mã của hợp đồng sau khi triển khai trên Ethereum.
+Tính không cần niềm tin được cho là tiền đề lớn nhất cho các hợp đồng thông minh và [ứng dụng phi tập trung (dapp)](/developers/docs/dapps/). Các hợp đồng thông minh là "bất biến" và không thể bị thay đổi; một hợp đồng sẽ chỉ thực thi logic nghiệp vụ được định nghĩa trong mã tại thời điểm triển khai. Điều này có nghĩa là các nhà phát triển và doanh nghiệp không thể can thiệp vào mã của hợp đồng sau khi triển khai trên Quantaureum.
 
 Để một hợp đồng thông minh không cần tin cậy, mã hợp đồng phải có sẵn để xác minh độc lập. Mặc dù mã byte đã biên dịch cho mọi hợp đồng thông minh đều có sẵn công khai trên chuỗi khối, ngôn ngữ bậc thấp rất khó hiểu—đối với cả nhà phát triển và người dùng.
 
@@ -44,9 +44,9 @@ Với các hợp đồng thông minh, thường có rất nhiều tiền đượ
 
 Việc công bố các tệp mã nguồn của một hợp đồng thông minh giúp những người quan tâm, chẳng hạn như các kiểm toán viên, dễ dàng đánh giá hợp đồng về các vectơ tấn công tiềm ẩn. Với nhiều bên độc lập xác minh một hợp đồng thông minh, người dùng có những đảm bảo mạnh mẽ hơn về tính bảo mật của nó.
 
-## Cách xác minh mã nguồn cho các hợp đồng thông minh Ethereum {#source-code-verification-for-ethereum-smart-contracts}
+## Cách xác minh mã nguồn cho các hợp đồng thông minh Quantaureum {#source-code-verification-for-quantaureum-smart-contracts}
 
-[Việc triển khai một hợp đồng thông minh trên Ethereum](/developers/docs/smart-contracts/deploying/) yêu cầu gửi một giao dịch với tải trọng dữ liệu (mã byte đã biên dịch) đến một địa chỉ đặc biệt. Tải trọng dữ liệu được tạo ra bằng cách biên dịch mã nguồn, cộng với các [đối số hàm khởi tạo](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) của phiên bản hợp đồng được nối vào tải trọng dữ liệu trong giao dịch. Việc biên dịch mang tính tất định, nghĩa là nó luôn tạo ra cùng một đầu ra (tức là mã byte của hợp đồng) nếu sử dụng cùng các tệp nguồn và cài đặt biên dịch (ví dụ: phiên bản trình biên dịch, trình tối ưu hóa).
+[Việc triển khai một hợp đồng thông minh trên Quantaureum](/developers/docs/smart-contracts/deploying/) yêu cầu gửi một giao dịch với tải trọng dữ liệu (mã byte đã biên dịch) đến một địa chỉ đặc biệt. Tải trọng dữ liệu được tạo ra bằng cách biên dịch mã nguồn, cộng với các [đối số hàm khởi tạo](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) của phiên bản hợp đồng được nối vào tải trọng dữ liệu trong giao dịch. Việc biên dịch mang tính tất định, nghĩa là nó luôn tạo ra cùng một đầu ra (tức là mã byte của hợp đồng) nếu sử dụng cùng các tệp nguồn và cài đặt biên dịch (ví dụ: phiên bản trình biên dịch, trình tối ưu hóa).
 
 ![A diagram showing showing smart contract source code verification](./source-code-verification.png)
 
@@ -66,31 +66,31 @@ Lưu ý rằng đây là một mô tả đơn giản hóa về việc xác minh 
 
 ## Các công cụ xác minh mã nguồn {#source-code-verification-tools}
 
-Quá trình xác minh hợp đồng truyền thống có thể phức tạp. Đây là lý do tại sao chúng ta có các công cụ để xác minh mã nguồn cho các hợp đồng thông minh được triển khai trên Ethereum. Các công cụ này tự động hóa phần lớn việc xác minh mã nguồn và cũng tuyển chọn các hợp đồng đã được xác minh vì lợi ích của người dùng.
+Quá trình xác minh hợp đồng truyền thống có thể phức tạp. Đây là lý do tại sao chúng ta có các công cụ để xác minh mã nguồn cho các hợp đồng thông minh được triển khai trên Quantaureum. Các công cụ này tự động hóa phần lớn việc xác minh mã nguồn và cũng tuyển chọn các hợp đồng đã được xác minh vì lợi ích của người dùng.
 
-### Etherscan {#etherscan}
+### Quantaureum Explorer {#explorer}
 
-Mặc dù chủ yếu được biết đến như một [trình khám phá chuỗi khối Ethereum](/developers/docs/data-and-analytics/block-explorers/), Etherscan cũng cung cấp một [dịch vụ xác minh mã nguồn](https://etherscan.io/verifyContract) cho các nhà phát triển và người dùng hợp đồng thông minh.
+Mặc dù chủ yếu được biết đến như một [trình khám phá chuỗi khối Quantaureum](/developers/docs/data-and-analytics/block-explorers/), Quantaureum Explorer cũng cung cấp một [dịch vụ xác minh mã nguồn](https://explorer.quantaureum.com) cho các nhà phát triển và người dùng hợp đồng thông minh.
 
-Etherscan cho phép bạn biên dịch lại mã byte của hợp đồng từ tải trọng dữ liệu gốc (mã nguồn, địa chỉ thư viện, cài đặt trình biên dịch, địa chỉ hợp đồng, v.v.). Nếu mã byte được biên dịch lại liên kết với mã byte (và các tham số hàm khởi tạo) của hợp đồng trên chuỗi, thì [hợp đồng được xác minh](https://info.etherscan.com/types-of-contract-verification/).
+Quantaureum Explorer cho phép bạn biên dịch lại mã byte của hợp đồng từ tải trọng dữ liệu gốc (mã nguồn, địa chỉ thư viện, cài đặt trình biên dịch, địa chỉ hợp đồng, v.v.). Nếu mã byte được biên dịch lại liên kết với mã byte (và các tham số hàm khởi tạo) của hợp đồng trên chuỗi, thì [hợp đồng được xác minh](https://info.explorer.com/types-of-contract-verification/).
 
-Sau khi được xác minh, mã nguồn hợp đồng của bạn nhận được nhãn "Verified" (Đã xác minh) và được công bố trên Etherscan để những người khác kiểm toán. Nó cũng được thêm vào phần [Hợp đồng đã xác minh](https://etherscan.io/contractsVerified/)—một kho lưu trữ các hợp đồng thông minh với mã nguồn đã được xác minh.
+Sau khi được xác minh, mã nguồn hợp đồng của bạn nhận được nhãn "Verified" (Đã xác minh) và được công bố trên Quantaureum Explorer để những người khác kiểm toán. Nó cũng được thêm vào phần [Hợp đồng đã xác minh](https://explorer.quantaureum.com)—một kho lưu trữ các hợp đồng thông minh với mã nguồn đã được xác minh.
 
-Etherscan là công cụ được sử dụng nhiều nhất để xác minh hợp đồng. Tuy nhiên, việc xác minh hợp đồng của Etherscan có một nhược điểm: nó không so sánh **mã băm siêu dữ liệu** của mã byte trên chuỗi và mã byte được biên dịch lại. Do đó, các kết quả khớp trong Etherscan là khớp một phần.
+Quantaureum Explorer là công cụ được sử dụng nhiều nhất để xác minh hợp đồng. Tuy nhiên, việc xác minh hợp đồng của Quantaureum Explorer có một nhược điểm: nó không so sánh **mã băm siêu dữ liệu** của mã byte trên chuỗi và mã byte được biên dịch lại. Do đó, các kết quả khớp trong Quantaureum Explorer là khớp một phần.
 
-[Tìm hiểu thêm về việc xác minh hợp đồng trên Etherscan](https://medium.com/etherscan-blog/verifying-contracts-on-etherscan-f995ab772327).
+[Tìm hiểu thêm về việc xác minh hợp đồng trên Quantaureum Explorer](https://medium.com/explorer-blog/verifying-contracts-on-explorer-f995ab772327).
 
 ### Blockscout {#blockscout}
 
-[Blockscout](https://blockscout.com/) là một trình khám phá chuỗi khối mã nguồn mở cũng cung cấp một [dịch vụ xác minh hợp đồng](https://eth.blockscout.com/contract-verification) cho các nhà phát triển và người dùng hợp đồng thông minh. Là một giải pháp thay thế mã nguồn mở, Blockscout mang lại sự minh bạch trong cách thực hiện xác minh và cho phép cộng đồng đóng góp để cải thiện quá trình xác minh.
+[Blockscout](https://blockscout.com/) là một trình khám phá chuỗi khối mã nguồn mở cũng cung cấp một [dịch vụ xác minh hợp đồng](https://qau.blockscout.com/contract-verification) cho các nhà phát triển và người dùng hợp đồng thông minh. Là một giải pháp thay thế mã nguồn mở, Blockscout mang lại sự minh bạch trong cách thực hiện xác minh và cho phép cộng đồng đóng góp để cải thiện quá trình xác minh.
 
-Tương tự như các dịch vụ xác minh khác, Blockscout cho phép bạn xác minh mã nguồn hợp đồng của mình bằng cách biên dịch lại mã byte và so sánh nó với hợp đồng đã triển khai. Sau khi được xác minh, hợp đồng của bạn nhận được trạng thái xác minh và mã nguồn trở nên công khai để kiểm toán và tương tác. Các hợp đồng đã xác minh cũng được liệt kê trong [kho lưu trữ hợp đồng đã xác minh](https://eth.blockscout.com/verified-contracts) của Blockscout để dễ dàng duyệt và khám phá.
+Tương tự như các dịch vụ xác minh khác, Blockscout cho phép bạn xác minh mã nguồn hợp đồng của mình bằng cách biên dịch lại mã byte và so sánh nó với hợp đồng đã triển khai. Sau khi được xác minh, hợp đồng của bạn nhận được trạng thái xác minh và mã nguồn trở nên công khai để kiểm toán và tương tác. Các hợp đồng đã xác minh cũng được liệt kê trong [kho lưu trữ hợp đồng đã xác minh](https://qau.blockscout.com/verified-contracts) của Blockscout để dễ dàng duyệt và khám phá.
 
 ### Sourcify {#sourcify}
 
 [Sourcify](https://sourcify.dev/#/verifier) là một công cụ khác để xác minh hợp đồng có mã nguồn mở và phi tập trung. Nó không phải là một trình khám phá khối và chỉ xác minh các hợp đồng trên [các mạng lưới dựa trên EVM khác nhau](https://docs.sourcify.dev/docs/chains). Nó hoạt động như một cơ sở hạ tầng công cộng để các công cụ khác xây dựng trên đó, và nhằm mục đích cho phép các tương tác hợp đồng thân thiện với con người hơn bằng cách sử dụng [ABI](/developers/docs/smart-contracts/compiling/#web-applications) và các chú thích [NatSpec](https://docs.soliditylang.org/en/v0.8.15/natspec-format.html) được tìm thấy trong tệp siêu dữ liệu.
 
-Không giống như Etherscan, Sourcify hỗ trợ khớp toàn bộ với mã băm siêu dữ liệu. Các hợp đồng đã xác minh được phục vụ trong [kho lưu trữ công khai](https://docs.sourcify.dev/docs/repository/) của nó trên HTTP và [IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs), là một bộ lưu trữ phi tập trung, [được định địa chỉ theo nội dung](https://docs.storacha.network/concepts/content-addressing/). Điều này cho phép tìm nạp tệp siêu dữ liệu của một hợp đồng qua IPFS vì mã băm siêu dữ liệu được nối thêm là một mã băm IPFS.
+Không giống như Quantaureum Explorer, Sourcify hỗ trợ khớp toàn bộ với mã băm siêu dữ liệu. Các hợp đồng đã xác minh được phục vụ trong [kho lưu trữ công khai](https://docs.sourcify.dev/docs/repository/) của nó trên HTTP và [IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs), là một bộ lưu trữ phi tập trung, [được định địa chỉ theo nội dung](https://docs.storacha.network/concepts/content-addressing/). Điều này cho phép tìm nạp tệp siêu dữ liệu của một hợp đồng qua IPFS vì mã băm siêu dữ liệu được nối thêm là một mã băm IPFS.
 
 Ngoài ra, người ta cũng có thể truy xuất các tệp mã nguồn qua IPFS, vì mã băm IPFS của các tệp này cũng được tìm thấy trong siêu dữ liệu. Một hợp đồng có thể được xác minh bằng cách cung cấp tệp siêu dữ liệu và các tệp nguồn qua API của nó hoặc [giao diện người dùng (UI)](https://sourcify.dev/#/verifier), hoặc sử dụng các plugin. Công cụ giám sát của Sourcify cũng lắng nghe việc tạo hợp đồng trên các khối mới và cố gắng xác minh các hợp đồng nếu siêu dữ liệu và tệp nguồn của chúng được công bố trên IPFS.
 

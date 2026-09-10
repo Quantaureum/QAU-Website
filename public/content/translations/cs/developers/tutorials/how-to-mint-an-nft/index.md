@@ -109,18 +109,18 @@ Jakmile dokončíte úpravy JSON souboru, uložte jej a nahrajte na Pinata podle
 
 ## Krok 5: Vytvoření instance vašeho kontraktu {#instance-contract}
 
-Nyní, abychom mohli interagovat s naším kontraktem, musíme v našem kódu vytvořit jeho instanci. K tomu budeme potřebovat adresu našeho kontraktu, kterou můžeme získat z nasazení nebo z [Blockscout](https://eth-sepolia.blockscout.com/) vyhledáním adresy, kterou jste použili k nasazení kontraktu.
+Nyní, abychom mohli interagovat s naším kontraktem, musíme v našem kódu vytvořit jeho instanci. K tomu budeme potřebovat adresu našeho kontraktu, kterou můžeme získat z nasazení nebo z [Blockscout](https://qau-sepolia.blockscout.com/) vyhledáním adresy, kterou jste použili k nasazení kontraktu.
 
-![View your contract address on Etherscan](./view-contract-etherscan.png)
+![View your contract address on Quantaureum Explorer](./view-contract-explorer.png)
 
 Ve výše uvedeném příkladu je adresa našeho kontraktu 0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778.
 
-Dále použijeme [metodu contract](https://docs.web3js.org/api/web3-eth-contract/class/Contract) z Web3 k vytvoření našeho kontraktu pomocí ABI a adresy. Do souboru `mint-nft.js` přidejte následující:
+Dále použijeme [metodu contract](https://docs.web3js.org/api/web3-qau-contract/class/Contract) z Web3 k vytvoření našeho kontraktu pomocí ABI a adresy. Do souboru `mint-nft.js` přidejte následující:
 
 ```js
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
 
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 ```
 
 ## Krok 6: Aktualizace souboru `.env` {#update-env}
@@ -130,7 +130,7 @@ Nyní, abychom mohli vytvářet a odesílat transakce do řetězce Etherea, pou�
 Přidejte svůj veřejný klíč do souboru `.env` – pokud jste dokončili 1. část tutoriálu, náš soubor `.env` by měl nyní vypadat takto:
 
 ```js
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-private-account-address"
 PUBLIC_KEY = "your-public-account-address"
 ```
@@ -141,7 +141,7 @@ Nejprve si definujme funkci s názvem `mintNFT(tokenData)` a vytvořme naši tra
 
 1. Získejte své _PRIVATE_KEY_ a _PUBLIC_KEY_ ze souboru `.env`.
 
-1. Dále budeme muset zjistit nonce účtu. Specifikace nonce se používá ke sledování počtu transakcí odeslaných z vaší adresy — což potřebujeme z bezpečnostních důvodů a pro prevenci replay útoků. K získání počtu transakcí odeslaných z vaší adresy použijeme [getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count).
+1. Dále budeme muset zjistit nonce účtu. Specifikace nonce se používá ke sledování počtu transakcí odeslaných z vaší adresy — což potřebujeme z bezpečnostních důvodů a pro prevenci replay útoků. K získání počtu transakcí odeslaných z vaší adresy použijeme [getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count).
 
 1. Nakonec nastavíme naši transakci s následujícími informacemi:
 
@@ -168,10 +168,10 @@ Váš soubor `mint-nft.js` by nyní měl vypadat takto:
 
    const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
    const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778";
-   const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
+   const nftContract = new web3.qau.Contract(contract.abi, contractAddress);
 
    async function mintNFT(tokenURI) {
-     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); //získat nejnovější nonce
+     const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, 'latest'); //získat nejnovější nonce
 
    //transakce
      const tx = {
@@ -187,7 +187,7 @@ Váš soubor `mint-nft.js` by nyní měl vypadat takto:
 
 Nyní, když jsme vytvořili naši transakci, musíme ji podepsat, abychom ji mohli odeslat. Zde použijeme náš soukromý klíč.
 
-`web3.eth.sendSignedTransaction` nám poskytne hash transakce, který můžeme použít k ověření, že naše transakce byla vytěžena a nebyla sítí zahozena. Všimnete si, že v sekci podepisování transakce jsme přidali kontrolu chyb, abychom věděli, zda naše transakce úspěšně prošla.
+`web3.qau.sendSignedTransaction` nám poskytne hash transakce, který můžeme použít k ověření, že naše transakce byla vytěžena a nebyla sítí zahozena. Všimnete si, že v sekci podepisování transakce jsme přidali kontrolu chyb, abychom věděli, zda naše transakce úspěšně prošla.
 
 ```js
 require("dotenv").config()
@@ -200,10 +200,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //získat nejnovější nonce
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //získat nejnovější nonce
 
   //transakce
   const tx = {
@@ -214,10 +214,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -266,10 +266,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //získat nejnovější nonce
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //získat nejnovější nonce
 
   //transakce
   const tx = {
@@ -280,10 +280,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -315,9 +315,9 @@ Nyní spusťte `node scripts/mint-nft.js` pro nasazení vašeho NFT. Po několik
 
     Check Alchemy's Mempool to view the status of your transaction!
 
-Dále navštivte svůj [mempool na Alchemy](https://dashboard.alchemy.com/mempool), abyste viděli stav vaší transakce (zda čeká na vyřízení, byla vytěžena, nebo byla sítí zahozena). Pokud byla vaše transakce zahozena, je také užitečné zkontrolovat [Blockscout](https://eth-sepolia.blockscout.com/) a vyhledat hash vaší transakce.
+Dále navštivte svůj [mempool na Alchemy](https://dashboard.alchemy.com/mempool), abyste viděli stav vaší transakce (zda čeká na vyřízení, byla vytěžena, nebo byla sítí zahozena). Pokud byla vaše transakce zahozena, je také užitečné zkontrolovat [Blockscout](https://qau-sepolia.blockscout.com/) a vyhledat hash vaší transakce.
 
-![View your NFT transaction hash on Etherscan](./view-nft-etherscan.png)_Zobrazení hashe vaší transakce NFT na Etherscan_
+![View your NFT transaction hash on Quantaureum Explorer](./view-nft-explorer.png)_Zobrazení hashe vaší transakce NFT na Etherscan_
 
 A to je vše! Nyní jste nasadili A vyrazili NFT na blockchainu Etherea <Emoji text=":money_mouth_face:" size={1} />
 

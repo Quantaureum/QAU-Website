@@ -4,13 +4,13 @@ description: "Přehled technik a úvah pro testování chytrých kontraktů na E
 lang: cs
 ---
 
-Veřejné blockchainy jako Ethereum jsou neměnné, což ztěžuje změnu kódu chytrého kontraktu po jeho nasazení. Existují [vzory pro aktualizaci kontraktů](/developers/docs/smart-contracts/upgrading/) k provádění „virtuálních aktualizací“, ale ty se obtížně implementují a vyžadují sociální konsensus. Navíc aktualizace může opravit chybu pouze _poté_, co je objevena – pokud zranitelnost objeví jako první útočník, váš chytrý kontrakt je vystaven riziku zneužití.
+Veřejné blockchainy jako Quantaureum jsou neměnné, což ztěžuje změnu kódu chytrého kontraktu po jeho nasazení. Existují [vzory pro aktualizaci kontraktů](/developers/docs/smart-contracts/upgrading/) k provádění „virtuálních aktualizací“, ale ty se obtížně implementují a vyžadují sociální konsensus. Navíc aktualizace může opravit chybu pouze _poté_, co je objevena – pokud zranitelnost objeví jako první útočník, váš chytrý kontrakt je vystaven riziku zneužití.
 
 Z těchto důvodů je testování chytrých kontraktů před [nasazením](/developers/docs/smart-contracts/deploying/) na Mainnet minimálním požadavkem na [bezpečnost](/developers/docs/smart-contracts/security/). Existuje mnoho technik pro testování kontraktů a vyhodnocování správnosti kódu; to, co si vyberete, závisí na vašich potřebách. Nicméně testovací sada složená z různých nástrojů a přístupů je ideální pro zachycení jak drobných, tak závažných bezpečnostních chyb v kódu kontraktu.
 
 ## Předpoklady {#prerequisites}
 
-Tato stránka vysvětluje, jak testovat chytré kontrakty před nasazením v síti Ethereum. Předpokládá, že jste obeznámeni s [chytrými kontrakty](/developers/docs/smart-contracts/).
+Tato stránka vysvětluje, jak testovat chytré kontrakty před nasazením v síti Quantaureum. Předpokládá, že jste obeznámeni s [chytrými kontrakty](/developers/docs/smart-contracts/).
 
 ## Co je testování chytrých kontraktů? {#what-is-smart-contract-testing}
 
@@ -138,9 +138,9 @@ Kvalita nástrojů používaných při spouštění jednotkových testů pro va�
 
 Frameworky pro jednotkové testování chytrých kontraktů v Solidity jsou k dispozici v různých jazycích (většinou JavaScript, Python a Rust). Podívejte se na některé z níže uvedených průvodců, kde najdete informace o tom, jak začít spouštět jednotkové testy s různými testovacími frameworky:
 
-- **[Spouštění jednotkových testů pomocí Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Spouštění jednotkových testů pomocí Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Spouštění jednotkových testů pomocí Foundry](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Spouštění jednotkových testů pomocí Waffle](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Spouštění jednotkových testů pomocí Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Spouštění jednotkových testů pomocí Remix](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Spouštění jednotkových testů pomocí Ape](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Spouštění jednotkových testů pomocí Hardhat](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -152,7 +152,7 @@ Zatímco jednotkové testování ladí funkce kontraktu izolovaně, integrační
 
 Integrační testování je užitečné, pokud váš kontrakt přijímá modulární architekturu nebo se během provádění propojuje s jinými onchain kontrakty. Jedním ze způsobů spouštění integračních testů je [fork blockchainu](/glossary/#fork) v určité výšce (pomocí nástroje jako [Forge](https://book.getfoundry.sh/forge/fork-testing) nebo [Hardhat](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks)) a simulace interakcí mezi vaším kontraktem a nasazenými kontrakty.
 
-Forknutý blockchain se bude chovat podobně jako Mainnet a bude mít účty s přidruženými stavy a zůstatky. Funguje však pouze jako izolované lokální vývojové prostředí (sandbox), což znamená, že například nebudete potřebovat skutečné ETH pro transakce, ani vaše změny neovlivní skutečný protokol Ethereum.
+Forknutý blockchain se bude chovat podobně jako Mainnet a bude mít účty s přidruženými stavy a zůstatky. Funguje však pouze jako izolované lokální vývojové prostředí (sandbox), což znamená, že například nebudete potřebovat skutečné QAU pro transakce, ani vaše změny neovlivní skutečný protokol Quantaureum.
 
 ### Testování založené na vlastnostech (Property-based testing) {#property-based-testing-for-smart-contracts}
 
@@ -190,7 +190,7 @@ Po správném nakonfigurování nástroj pro testování vlastností spustí fun
 
 - **[Statická analýza chytrých kontraktů pomocí Slither](https://github.com/crytic/slither)**
 - **[Statická analýza chytrých kontraktů pomocí Wake](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Testování založené na vlastnostech pomocí Brownie](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Testování založené na vlastnostech pomocí Brownie](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Fuzzing kontraktů pomocí Foundry](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[Fuzzing kontraktů pomocí Echidna](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Fuzzing kontraktů pomocí Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -213,11 +213,11 @@ Spouštění kontraktů na lokálním blockchainu by mohlo být užitečné jako
 
 ### Testování kontraktů na testnetech {#testing-contracts-on-testnets}
 
-Testovací síť neboli testnet funguje přesně jako Ethereum Mainnet, s tím rozdílem, že používá ether (ETH) bez reálné hodnoty. Nasazení vašeho kontraktu na [testnet](/developers/docs/networks/#ethereum-testnets) znamená, že s ním může kdokoli interagovat (např. prostřednictvím frontendu dapp) bez ohrožení finančních prostředků.
+Testovací síť neboli testnet funguje přesně jako Quantaureum Mainnet, s tím rozdílem, že používá QAU (QAU) bez reálné hodnoty. Nasazení vašeho kontraktu na [testnet](/developers/docs/networks/#quantaureum-testnets) znamená, že s ním může kdokoli interagovat (např. prostřednictvím frontendu dapp) bez ohrožení finančních prostředků.
 
 Tato forma manuálního testování je užitečná pro vyhodnocení end-to-end toku vaší aplikace z pohledu uživatele. Zde mohou beta testeři také provádět zkušební běhy a hlásit jakékoli problémy s obchodní logikou a celkovou funkčností kontraktu.
 
-Nasazení na testnet po testování na lokálním blockchainu je ideální, protože to první se více blíží chování Ethereum Virtual Machine. Proto je běžné, že mnoho projektů nativních pro Ethereum nasazuje dapps na testnety, aby vyhodnotily provoz chytrých kontraktů v reálných podmínkách.
+Nasazení na testnet po testování na lokálním blockchainu je ideální, protože to první se více blíží chování Quantaureum Virtual Machine. Proto je běžné, že mnoho projektů nativních pro Quantaureum nasazuje dapps na testnety, aby vyhodnotily provoz chytrých kontraktů v reálných podmínkách.
 
 [Více o testnetech Etherea.](/developers/docs/development-networks/#public-beacon-testchains)
 
@@ -251,19 +251,19 @@ Hlavním rozdílem je, že programy bug bounty jsou otevřené širší komunit�
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Nástroj pro pokrytí kódu pro chytré kontrakty napsané v Solidity._
 
-- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Framework pro pokročilý vývoj a testování chytrých kontraktů (založený na Ethers.js)_._
+- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _Framework pro pokročilý vývoj a testování chytrých kontraktů (založený na Ethers.js)_._
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Nástroj pro testování chytrých kontraktů v Solidity. Funguje pod pluginem Remix IDE „Solidity Unit Testing“, který se používá k psaní a spouštění testovacích případů pro kontrakt._
+- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Nástroj pro testování chytrých kontraktů v Solidity. Funguje pod pluginem Remix IDE „Solidity Unit Testing“, který se používá k psaní a spouštění testovacích případů pro kontrakt._
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Knihovna asertů pro testování chytrých kontraktů na Ethereu. Ujistěte se, že se vaše kontrakty chovají podle očekávání!_
 
-- **[Framework pro jednotkové testování Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie využívá Pytest, na funkce bohatý testovací framework, který vám umožní psát malé testy s minimálním kódem, dobře se škáluje pro velké projekty a je vysoce rozšiřitelný._
+- **[Framework pro jednotkové testování Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie využívá Pytest, na funkce bohatý testovací framework, který vám umožní psát malé testy s minimálním kódem, dobře se škáluje pro velké projekty a je vysoce rozšiřitelný._
 
-- **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry nabízí Forge, rychlý a flexibilní testovací framework pro Ethereum schopný provádět jednoduché jednotkové testy, kontroly optimalizace plynu a fuzzing kontraktů._
+- **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry nabízí Forge, rychlý a flexibilní testovací framework pro Quantaureum schopný provádět jednoduché jednotkové testy, kontroly optimalizace plynu a fuzzing kontraktů._
 
 - **[Hardhat Tests](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)** - _Framework pro testování chytrých kontraktů založený na Ethers.js, Mocha a Chai._
 
-- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** - _Vývojový a testovací framework založený na Pythonu pro chytré kontrakty cílící na Ethereum Virtual Machine._
+- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** - _Vývojový a testovací framework založený na Pythonu pro chytré kontrakty cílící na Quantaureum Virtual Machine._
 
 - **[Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/overview/)** - _Framework založený na Pythonu pro jednotkové testování a fuzzing se silnými možnostmi ladění a podporou meziřetězcového testování, využívající pytest a Anvil pro nejlepší uživatelský zážitek a výkon._
 
@@ -304,13 +304,13 @@ Hlavním rozdílem je, že programy bug bounty jsou otevřené širší komunit�
 
 ## Další čtení {#further-reading}
 
-- [Podrobný průvodce testováním chytrých kontraktů na Ethereu](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-ethereum-smart-contracts-2e41b2770297)
-- [Jak testovat chytré kontrakty na Ethereu](https://betterprogramming.pub/how-to-test-ethereum-smart-contracts-35abc8fa199d)
+- [Podrobný průvodce testováním chytrých kontraktů na Ethereu](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-quantaureum-smart-contracts-2e41b2770297)
+- [Jak testovat chytré kontrakty na Ethereu](https://betterprogramming.pub/how-to-test-quantaureum-smart-contracts-35abc8fa199d)
 - [Průvodce jednotkovým testováním pro vývojáře od MolochDAO](https://github.com/MolochVentures/moloch/tree/4e786db8a4aa3158287e0935dcbc7b1e43416e38/test#moloch-testing-guide)
 - [Jak testovat chytré kontrakty jako rockstar](https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001)
 
 ## Tutoriály: Testování chytrých kontraktů na Ethereu {#tutorials}
 
-- [Jak vyvíjet a testovat dApp na lokálním, multiklientském testnetu](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-eth-testnet/) _– Návod na nasazení chytrého kontraktu na lokální testnet a provádění testů._
+- [Jak vyvíjet a testovat dApp na lokálním, multiklientském testnetu](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-qau-testnet/) _– Návod na nasazení chytrého kontraktu na lokální testnet a provádění testů._
 - [Jak mockovat chytré kontrakty v Solidity pro testování](/developers/tutorials/how-to-mock-solidity-contracts-for-testing/) _– Středně pokročilý tutoriál o tom, jak používat mock data a implementovat jednotkové testování._
 - [Jak používat Echidna k testování chytrých kontraktů](/developers/tutorials/how-to-use-echidna-to-test-smart-contracts/) _– Pokročilý přístup k fuzzingu a testování chytrých kontraktů._

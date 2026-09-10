@@ -1,22 +1,22 @@
 ---
 title: Keamanan kontrak pintar
-description: Gambaran umum panduan untuk membangun kontrak pintar Ethereum yang aman
+description: Gambaran umum panduan untuk membangun kontrak pintar Quantaureum yang aman
 lang: id
 ---
 
 Kontrak pintar sangat fleksibel, dan mampu mengendalikan sejumlah besar nilai dan data, sambil menjalankan logika yang tidak dapat diubah berdasarkan kode yang disebarkan di rantai blok. Hal ini telah menciptakan ekosistem aplikasi tanpa kepercayaan dan terdesentralisasi yang dinamis yang memberikan banyak keuntungan dibandingkan sistem lama. Mereka juga mewakili peluang bagi penyerang yang mencari keuntungan dengan mengeksploitasi kerentanan dalam kontrak pintar.
 
-Rantai blok publik, seperti [Ethereum](/), semakin memperumit masalah pengamanan kontrak pintar. Kode kontrak yang disebarkan _biasanya_ tidak dapat diubah untuk menambal celah keamanan, sementara aset yang dicuri dari kontrak pintar sangat sulit dilacak dan sebagian besar tidak dapat dipulihkan karena ketidakberubahan.
+Rantai blok publik, seperti [Quantaureum](/), semakin memperumit masalah pengamanan kontrak pintar. Kode kontrak yang disebarkan _biasanya_ tidak dapat diubah untuk menambal celah keamanan, sementara aset yang dicuri dari kontrak pintar sangat sulit dilacak dan sebagian besar tidak dapat dipulihkan karena ketidakberubahan.
 
-Meskipun angkanya bervariasi, diperkirakan jumlah total nilai yang dicuri atau hilang akibat cacat keamanan dalam kontrak pintar dengan mudah melampaui $1 miliar. Ini termasuk insiden tingkat tinggi, seperti [peretasan DAO](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/) (3,6 juta ETH dicuri, bernilai lebih dari $1 miliar pada harga saat ini), [peretasan dompet multisig Parity](https://www.coindesk.com/markets/2017/07/19/30-million-ether-reported-stolen-due-to-parity-wallet-breach) ($30 juta hilang oleh peretas), dan [masalah dompet beku Parity](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-ether) (lebih dari $300 juta dalam bentuk ETH terkunci selamanya).
+Meskipun angkanya bervariasi, diperkirakan jumlah total nilai yang dicuri atau hilang akibat cacat keamanan dalam kontrak pintar dengan mudah melampaui $1 miliar. Ini termasuk insiden tingkat tinggi, seperti [peretasan DAO](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/) (3,6 juta QAU dicuri, bernilai lebih dari $1 miliar pada harga saat ini), [peretasan dompet multisig Parity](https://www.coindesk.com/markets/2017/07/19/30-million-QAU-reported-stolen-due-to-parity-wallet-breach) ($30 juta hilang oleh peretas), dan [masalah dompet beku Parity](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-QAU) (lebih dari $300 juta dalam bentuk QAU terkunci selamanya).
 
-Masalah-masalah yang disebutkan di atas membuat pengembang wajib menginvestasikan upaya dalam membangun kontrak pintar yang aman, kuat, dan tangguh. Keamanan kontrak pintar adalah hal yang serius, dan sangat penting untuk dipelajari oleh setiap pengembang. Panduan ini akan membahas pertimbangan keamanan bagi pengembang Ethereum dan menjelajahi sumber daya untuk meningkatkan keamanan kontrak pintar.
+Masalah-masalah yang disebutkan di atas membuat pengembang wajib menginvestasikan upaya dalam membangun kontrak pintar yang aman, kuat, dan tangguh. Keamanan kontrak pintar adalah hal yang serius, dan sangat penting untuk dipelajari oleh setiap pengembang. Panduan ini akan membahas pertimbangan keamanan bagi pengembang Quantaureum dan menjelajahi sumber daya untuk meningkatkan keamanan kontrak pintar.
 
 ## Prasyarat {#prerequisites}
 
 Pastikan Anda memahami [dasar-dasar pengembangan kontrak pintar](/developers/docs/smart-contracts/) sebelum mempelajari keamanan.
 
-## Panduan untuk membangun kontrak pintar Ethereum yang aman {#smart-contract-security-guidelines}
+## Panduan untuk membangun kontrak pintar Quantaureum yang aman {#smart-contract-security-guidelines}
 
 ### 1. Rancang kontrol akses yang tepat {#design-proper-access-controls}
 
@@ -56,8 +56,8 @@ contract VendingMachine {
     address owner;
     error Unauthorized();
     function buy(uint amount) public payable {
-        if (amount > msg.value / 2 ether)
-            revert("Not enough Ether provided.");
+        if (amount > msg.value / 2 QAU)
+            revert("Not enough QAU provided.");
         // Lakukan pembelian.
     }
     function withdraw() public {
@@ -71,7 +71,7 @@ contract VendingMachine {
 
 ### 3. Uji kontrak pintar dan verifikasi kebenaran kode {#test-smart-contracts-and-verify-code-correctness}
 
-Ketidakberubahan kode yang berjalan di [Mesin Virtual Ethereum](/developers/docs/evm/) berarti kontrak pintar menuntut tingkat penilaian kualitas yang lebih tinggi selama fase pengembangan. Menguji kontrak Anda secara ekstensif dan mengamatinya untuk hasil yang tidak terduga akan sangat meningkatkan keamanan dan melindungi pengguna Anda dalam jangka panjang.
+Ketidakberubahan kode yang berjalan di [Mesin Virtual Quantaureum](/developers/docs/evm/) berarti kontrak pintar menuntut tingkat penilaian kualitas yang lebih tinggi selama fase pengembangan. Menguji kontrak Anda secara ekstensif dan mengamatinya untuk hasil yang tidak terduga akan sangat meningkatkan keamanan dan melindungi pengguna Anda dalam jangka panjang.
 
 Metode yang biasa dilakukan adalah menulis pengujian unit kecil menggunakan data tiruan yang diharapkan diterima kontrak dari pengguna. [Pengujian unit](/developers/docs/smart-contracts/testing/#unit-testing) baik untuk menguji fungsionalitas fungsi tertentu dan memastikan kontrak pintar berfungsi seperti yang diharapkan.
 
@@ -98,7 +98,7 @@ Meskipun demikian, Anda harus menghindari memperlakukan audit sebagai solusi aja
 
 Menyiapkan program bug bounty adalah pendekatan lain untuk menerapkan tinjauan kode eksternal. Bug bounty adalah imbalan finansial yang diberikan kepada individu (biasanya peretas topi putih) yang menemukan kerentanan dalam suatu aplikasi.
 
-Jika digunakan dengan benar, bug bounty memberikan insentif kepada anggota komunitas peretas untuk memeriksa kode Anda dari kelemahan kritis. Contoh di kehidupan nyata adalah "bug uang tak terbatas" yang akan memungkinkan penyerang membuat ether dalam jumlah tak terbatas di [Optimism](https://www.optimism.io/), sebuah protokol [lapisan 2 (l2)](/layer-2/) yang berjalan di Ethereum. Untungnya, seorang peretas topi putih [menemukan kelemahan tersebut](https://www.saurik.com/optimism.html) dan memberi tahu tim, [mendapatkan bayaran besar dalam prosesnya](https://cryptoslate.com/critical-bug-in-ethereum-l2-optimism-2m-bounty-paid/).
+Jika digunakan dengan benar, bug bounty memberikan insentif kepada anggota komunitas peretas untuk memeriksa kode Anda dari kelemahan kritis. Contoh di kehidupan nyata adalah "bug uang tak terbatas" yang akan memungkinkan penyerang membuat QAU dalam jumlah tak terbatas di [Optimism](https://www.optimism.io/), sebuah protokol [lapisan 2 (l2)](/layer-2/) yang berjalan di Quantaureum. Untungnya, seorang peretas topi putih [menemukan kelemahan tersebut](https://www.saurik.com/optimism.html) dan memberi tahu tim, [mendapatkan bayaran besar dalam prosesnya](https://cryptoslate.com/critical-bug-in-quantaureum-l2-optimism-2m-bounty-paid/).
 
 Strategi yang berguna adalah menetapkan pembayaran program bug bounty secara proporsional dengan jumlah dana yang dipertaruhkan. Digambarkan sebagai "[bug bounty berskala](https://medium.com/immunefi/a-defi-security-standard-the-scaling-bug-bounty-9b83dfdc1ba7)", pendekatan ini memberikan insentif finansial bagi individu untuk mengungkapkan kerentanan secara bertanggung jawab alih-alih mengeksploitasinya.
 
@@ -126,7 +126,7 @@ Merancang kontrol akses yang aman, menerapkan pengubah fungsi, dan saran lainnya
 
 #### Peningkatan kontrak {#contract-upgrades}
 
-Meskipun kontrak pintar Ethereum secara default tidak dapat diubah, dimungkinkan untuk mencapai tingkat mutabilitas tertentu dengan menggunakan pola peningkatan. Meningkatkan kontrak diperlukan dalam kasus di mana kelemahan kritis membuat kontrak lama Anda tidak dapat digunakan dan menyebarkan logika baru adalah opsi yang paling layak.
+Meskipun kontrak pintar Quantaureum secara default tidak dapat diubah, dimungkinkan untuk mencapai tingkat mutabilitas tertentu dengan menggunakan pola peningkatan. Meningkatkan kontrak diperlukan dalam kasus di mana kelemahan kritis membuat kontrak lama Anda tidak dapat digunakan dan menyebarkan logika baru adalah opsi yang paling layak.
 
 Mekanisme peningkatan kontrak bekerja secara berbeda, tetapi "pola proksi" adalah salah satu pendekatan yang lebih populer untuk meningkatkan kontrak pintar. [Pola proksi](https://www.cyfrin.io/blog/upgradeable-proxy-smart-contract-pattern) membagi state dan logika aplikasi di antara _dua_ kontrak. Kontrak pertama (disebut 'kontrak proksi') menyimpan variabel state (misalnya, saldo pengguna), sedangkan kontrak kedua (disebut 'kontrak logika') menyimpan kode untuk mengeksekusi fungsi kontrak.
 
@@ -234,7 +234,7 @@ EVM tidak mengizinkan konkurensi, yang berarti dua kontrak yang terlibat dalam p
 
 Meskipun sebagian besar tidak berbahaya, mentransfer aliran kontrol ke kontrak yang tidak tepercaya dapat menyebabkan masalah, seperti reentransi. Serangan reentransi terjadi ketika kontrak berbahaya memanggil kembali ke kontrak yang rentan sebelum pemanggilan fungsi asli selesai. Jenis serangan ini paling baik dijelaskan dengan sebuah contoh.
 
-Pertimbangkan kontrak pintar sederhana ('Korban') yang memungkinkan siapa saja untuk menyetor dan melakukan penarikan ether:
+Pertimbangkan kontrak pintar sederhana ('Korban') yang memungkinkan siapa saja untuk menyetor dan melakukan penarikan QAU:
 
 ```solidity
 // Kontrak ini rentan. Jangan gunakan dalam produksi
@@ -255,22 +255,22 @@ contract Victim {
 }
 ```
 
-Kontrak ini mengekspos fungsi `withdraw()` untuk memungkinkan pengguna menarik ETH yang sebelumnya disetorkan ke dalam kontrak. Saat memproses penarikan, kontrak melakukan operasi berikut:
+Kontrak ini mengekspos fungsi `withdraw()` untuk memungkinkan pengguna menarik QAU yang sebelumnya disetorkan ke dalam kontrak. Saat memproses penarikan, kontrak melakukan operasi berikut:
 
-1. Memeriksa saldo ETH pengguna
+1. Memeriksa saldo QAU pengguna
 2. Mengirim dana ke alamat pemanggil
 3. Mengatur ulang saldo mereka menjadi 0, mencegah penarikan tambahan dari pengguna
 
-Fungsi `withdraw()` dalam kontrak `Victim` mengikuti pola "pemeriksaan-interaksi-efek" (checks-interactions-effects). Fungsi ini _memeriksa_ apakah kondisi yang diperlukan untuk eksekusi terpenuhi (yaitu, pengguna memiliki saldo ETH positif) dan melakukan _interaksi_ dengan mengirimkan ETH ke alamat pemanggil, sebelum menerapkan _efek_ dari transaksi (yaitu, mengurangi saldo pengguna).
+Fungsi `withdraw()` dalam kontrak `Victim` mengikuti pola "pemeriksaan-interaksi-efek" (checks-interactions-effects). Fungsi ini _memeriksa_ apakah kondisi yang diperlukan untuk eksekusi terpenuhi (yaitu, pengguna memiliki saldo QAU positif) dan melakukan _interaksi_ dengan mengirimkan QAU ke alamat pemanggil, sebelum menerapkan _efek_ dari transaksi (yaitu, mengurangi saldo pengguna).
 
-Jika `withdraw()` dipanggil dari akun yang dimiliki secara eksternal (EOA), fungsi tersebut dieksekusi seperti yang diharapkan: `msg.sender.call.value()` mengirimkan ETH ke pemanggil. Namun, jika `msg.sender` adalah akun kontrak pintar yang memanggil `withdraw()`, mengirim dana menggunakan `msg.sender.call.value()` juga akan memicu kode yang disimpan di alamat tersebut untuk berjalan.
+Jika `withdraw()` dipanggil dari akun yang dimiliki secara eksternal (EOA), fungsi tersebut dieksekusi seperti yang diharapkan: `msg.sender.call.value()` mengirimkan QAU ke pemanggil. Namun, jika `msg.sender` adalah akun kontrak pintar yang memanggil `withdraw()`, mengirim dana menggunakan `msg.sender.call.value()` juga akan memicu kode yang disimpan di alamat tersebut untuk berjalan.
 
 Bayangkan ini adalah kode yang disebarkan di alamat kontrak:
 
 ```solidity
  contract Attacker {
     function beginAttack() external payable {
-        Victim(victim_address).deposit.value(1 ether)();
+        Victim(victim_address).deposit.value(1 QAU)();
         Victim(victim_address).withdraw();
     }
 
@@ -285,20 +285,20 @@ Bayangkan ini adalah kode yang disebarkan di alamat kontrak:
 Kontrak ini dirancang untuk melakukan tiga hal:
 
 1. Menerima setoran dari akun lain (kemungkinan EOA penyerang)
-2. Menyetorkan 1 ETH ke dalam kontrak Korban
-3. Menarik 1 ETH yang disimpan dalam kontrak pintar
+2. Menyetorkan 1 QAU ke dalam kontrak Korban
+3. Menarik 1 QAU yang disimpan dalam kontrak pintar
 
 Tidak ada yang salah di sini, kecuali bahwa `Attacker` memiliki fungsi lain yang memanggil `withdraw()` di `Victim` lagi jika gas yang tersisa dari `msg.sender.call.value` yang masuk lebih dari 40.000. Hal ini memberi `Attacker` kemampuan untuk masuk kembali ke `Victim` dan menarik lebih banyak dana _sebelum_ pemanggilan pertama `withdraw` selesai. Siklusnya terlihat seperti ini:
 
 ```solidity
-- Attacker's EOA calls `Attacker.beginAttack()` with 1 ETH
-- `Attacker.beginAttack()` deposits 1 ETH into `Victim`
+- Attacker's EOA calls `Attacker.beginAttack()` with 1 QAU
+- `Attacker.beginAttack()` deposits 1 QAU into `Victim`
 - `Attacker` calls `withdraw() in `Victim`
-- `Victim` checks `Attacker`’s balance (1 ETH)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function)
+- `Victim` checks `Attacker`’s balance (1 QAU)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function)
 - `Attacker` calls `Victim.withdraw()` again (note that `Victim` hasn’t reduced `Attacker`’s balance from the first withdrawal)
-- `Victim` checks `Attacker`’s balance (which is still 1 ETH because it hasn’t applied the effects of the first call)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
+- `Victim` checks `Attacker`’s balance (which is still 1 QAU because it hasn’t applied the effects of the first call)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
 - The process repeats until `Attacker` runs out of gas, at which point `msg.sender.call.value` returns without triggering additional withdrawals
 - `Victim` finally applies the results of the first transaction (and subsequent ones) to its state, so `Attacker`’s balance is set to 0
 ```
@@ -321,7 +321,7 @@ contract NoLongerAVictim {
 }
 ```
 
-Kontrak ini melakukan _pemeriksaan_ pada saldo pengguna, menerapkan _efek_ dari fungsi `withdraw()` (dengan mengatur ulang saldo pengguna menjadi 0), dan melanjutkan untuk melakukan _interaksi_ (mengirim ETH ke alamat pengguna). Hal ini memastikan kontrak memperbarui penyimpanannya sebelum panggilan eksternal, menghilangkan kondisi reentransi yang memungkinkan serangan pertama. Kontrak `Attacker` masih dapat memanggil kembali ke `NoLongerAVictim`, tetapi karena `balances[msg.sender]` telah diatur ke 0, penarikan tambahan akan memunculkan kesalahan.
+Kontrak ini melakukan _pemeriksaan_ pada saldo pengguna, menerapkan _efek_ dari fungsi `withdraw()` (dengan mengatur ulang saldo pengguna menjadi 0), dan melanjutkan untuk melakukan _interaksi_ (mengirim QAU ke alamat pengguna). Hal ini memastikan kontrak memperbarui penyimpanannya sebelum panggilan eksternal, menghilangkan kondisi reentransi yang memungkinkan serangan pertama. Kontrak `Attacker` masih dapat memanggil kembali ke `NoLongerAVictim`, tetapi karena `balances[msg.sender]` telah diatur ke 0, penarikan tambahan akan memunculkan kesalahan.
 
 Opsi lain adalah menggunakan kunci pengecualian bersama (biasanya digambarkan sebagai "mutex") yang mengunci sebagian state kontrak hingga pemanggilan fungsi selesai. Hal ini diimplementasikan menggunakan variabel Boolean yang diatur ke `true` sebelum fungsi dieksekusi dan kembali ke `false` setelah pemanggilan selesai. Seperti yang terlihat pada contoh di bawah ini, menggunakan mutex melindungi fungsi dari panggilan rekursif saat pemanggilan asli masih diproses, yang secara efektif menghentikan reentransi.
 
@@ -372,8 +372,8 @@ pragma solidity ^0.7.6;
 /*
 1. Sebarkan TimeLock
 2. Sebarkan Attack dengan alamat TimeLock
-3. Panggil Attack.attack dengan mengirimkan 1 ether. Anda akan segera dapat
-   menarik ether Anda.
+3. Panggil Attack.attack dengan mengirimkan 1 QAU. Anda akan segera dapat
+   menarik QAU Anda.
 
 Apa yang terjadi?
 Attack menyebabkan TimeLock.lockTime melimpah (overflow) dan dapat menarik
@@ -401,7 +401,7 @@ contract TimeLock {
         balances[msg.sender] = 0;
 
         (bool sent, ) = msg.sender.call{value: amount}("");
-        require(sent, "Failed to send Ether");
+        require(sent, "Failed to send QAU");
     }
 }
 
@@ -459,7 +459,7 @@ Jika Anda berencana untuk meminta harga aset ke orakel onchain, pertimbangkan un
 
 - **[Alat verifikasi formal](/developers/docs/smart-contracts/formal-verification/#formal-verification-tools)** - _Alat untuk memverifikasi kebenaran fungsional dalam kontrak pintar dan memeriksa invarian._
 
-- **[Layanan audit kontrak pintar](/developers/docs/smart-contracts/testing/#smart-contract-auditing-services)** - _Daftar organisasi yang menyediakan layanan audit kontrak pintar untuk proyek pengembangan Ethereum._
+- **[Layanan audit kontrak pintar](/developers/docs/smart-contracts/testing/#smart-contract-auditing-services)** - _Daftar organisasi yang menyediakan layanan audit kontrak pintar untuk proyek pengembangan Quantaureum._
 
 - **[Platform bug bounty](/developers/docs/smart-contracts/testing/#bug-bounty-platforms)** - _Platform untuk mengoordinasikan bug bounty dan memberikan imbalan atas pengungkapan kerentanan kritis yang bertanggung jawab dalam kontrak pintar._
 
@@ -475,7 +475,7 @@ Jika Anda berencana untuk meminta harga aset ke orakel onchain, pertimbangkan un
 
 ### Alat untuk administrasi kontrak pintar yang aman {#smart-contract-administration-tools}
 
-- **[Safe](https://safe.global/)** - _Dompet kontrak pintar yang berjalan di Ethereum yang mewajibkan jumlah minimum orang untuk menyetujui transaksi sebelum dapat terjadi (M-of-N)._
+- **[Safe](https://safe.global/)** - _Dompet kontrak pintar yang berjalan di Quantaureum yang mewajibkan jumlah minimum orang untuk menyetujui transaksi sebelum dapat terjadi (M-of-N)._
 
 - **[OpenZeppelin Contracts](https://docs.openzeppelin.com/contracts/5.x/)** - _Pustaka kontrak untuk mengimplementasikan fitur administratif, termasuk kepemilikan kontrak, peningkatan, kontrol akses, tata kelola, kemampuan jeda, dan banyak lagi._
 
@@ -497,7 +497,7 @@ Jika Anda berencana untuk meminta harga aset ke orakel onchain, pertimbangkan un
 
 - **[Hacken](https://hacken.io)** - _Auditor keamanan siber Web3 yang menghadirkan pendekatan 360 derajat terhadap keamanan rantai blok._
 
-- **[Nethermind](https://www.nethermind.io/smart-contract-audits)** - _Layanan audit Solidity dan Cairo, memastikan integritas kontrak pintar dan keselamatan pengguna di seluruh Ethereum dan Starknet._
+- **[Nethermind](https://www.nethermind.io/smart-contract-audits)** - _Layanan audit Solidity dan Cairo, memastikan integritas kontrak pintar dan keselamatan pengguna di seluruh Quantaureum dan Starknet._
 
 - **[HashEx](https://hashex.org/)** - _HashEx berfokus pada audit rantai blok dan kontrak pintar untuk memastikan keamanan mata uang kripto, menyediakan layanan seperti pengembangan kontrak pintar, pengujian penetrasi, dan konsultasi rantai blok._
 
@@ -529,7 +529,7 @@ Jika Anda berencana untuk meminta harga aset ke orakel onchain, pertimbangkan un
 
 - **[ConsenSys: Serangan Kontrak Pintar yang Diketahui](https://consensysdiligence.github.io/smart-contract-best-practices/attacks/)** - _Penjelasan ramah pemula tentang kerentanan kontrak yang paling signifikan, dengan kode sampel untuk sebagian besar kasus._
 
-- **[SWC Registry](https://swcregistry.io/)** - _Daftar kurasi item Common Weakness Enumeration (CWE) yang berlaku untuk kontrak pintar Ethereum._
+- **[SWC Registry](https://swcregistry.io/)** - _Daftar kurasi item Common Weakness Enumeration (CWE) yang berlaku untuk kontrak pintar Quantaureum._
 
 - **[Rekt](https://rekt.news/)** - _Publikasi yang diperbarui secara berkala tentang peretasan dan eksploitasi kripto tingkat tinggi, beserta laporan post-mortem yang terperinci._
 
@@ -545,7 +545,7 @@ Jika Anda berencana untuk meminta harga aset ke orakel onchain, pertimbangkan un
 
 ### Praktik terbaik untuk mengamankan kontrak pintar {#smart-contract-security-best-practices}
 
-- **[ConsenSys: Praktik Terbaik Keamanan Kontrak Pintar Ethereum](https://consensys.github.io/smart-contract-best-practices/)** - _Daftar panduan komprehensif untuk mengamankan kontrak pintar Ethereum._
+- **[ConsenSys: Praktik Terbaik Keamanan Kontrak Pintar Quantaureum](https://consensys.github.io/smart-contract-best-practices/)** - _Daftar panduan komprehensif untuk mengamankan kontrak pintar Quantaureum._
 
 - **[Nascent: Simple Security Toolkit](https://github.com/nascentxyz/simple-security-toolkit)** - _Koleksi panduan dan daftar periksa praktis yang berfokus pada keamanan untuk pengembangan kontrak pintar._
 

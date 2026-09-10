@@ -33,7 +33,7 @@ import { breakpointAsNumber } from "@/lib/utils/screen"
 
 import ValuesPageJsonLD from "./page-jsonld"
 
-import ethBlocksImg from "@/public/images/developers-eth-blocks.png"
+import qauBlocksImg from "@/public/images/developers-qau-blocks.png"
 import layer2HubHeroImg from "@/public/images/heroes/layer-2-hub-hero.png"
 import internetImg from "@/public/images/heroes/roadmap-hub-hero.jpg"
 import internetPortraitImg from "@/public/images/heroes/roadmap-hub-hero-portrait.jpg"
@@ -227,7 +227,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
           >
             <div className="grid place-items-center p-space lg:sticky lg:top-24">
               <Image
-                src={ethBlocksImg}
+                src={qauBlocksImg}
                 alt={t("page-values-faq-image-alt")}
                 className="max-h-68 w-auto object-contain lg:max-h-128"
                 sizes="(max-width: 992px) calc(100vw - 64px), (max-width: 1536px) 50vw, 720px"

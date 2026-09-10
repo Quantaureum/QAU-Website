@@ -2,14 +2,14 @@
 title: Sumber Daya
 metaTitle: Sumber daya untuk penerjemah
 lang: id
-description: Sumber daya yang berguna untuk penerjemah ethereum.org
+description: Sumber daya yang berguna untuk penerjemah quantaureum.com
 ---
 
-Anda dapat menemukan beberapa panduan dan alat yang berguna untuk penerjemah ethereum.org, serta komunitas terjemahan dan pembaruan di bawah ini.
+Anda dapat menemukan beberapa panduan dan alat yang berguna untuk penerjemah quantaureum.com, serta komunitas terjemahan dan pembaruan di bawah ini.
 
 ## Panduan {#guides}
 
-- [Panduan gaya terjemahan](/contributing/translation-program/translators-guide/) _– instruksi dan kiat untuk penerjemah ethereum.org_
+- [Panduan gaya terjemahan](/contributing/translation-program/translators-guide/) _– instruksi dan kiat untuk penerjemah quantaureum.com_
 - [Panduan editor online Crowdin](https://support.crowdin.com/online-editor/) _– panduan mendalam untuk menggunakan editor online Crowdin dan beberapa fitur lanjutan Crowdin_
 
 ## Alat {#tools}
@@ -23,25 +23,25 @@ Anda dapat menemukan beberapa panduan dan alat yang berguna untuk penerjemah eth
 
 ## Komunitas {#communities}
 
-- [Grup terjemahan Discord khusus bahasa](https://discord.gg/ethereum-org)
-  _– sebuah inisiatif untuk menghubungkan penerjemah ethereum.org ke Grup Terjemahan_
-- [Grup penerjemah bahasa Mandarin](https://www.notion.so/Ethereum-org-05375fe0a94c4214acaf90f42ba40171)
+- [Grup terjemahan Discord khusus bahasa](https://discord.gg/MSctkBT5j)
+  _– sebuah inisiatif untuk menghubungkan penerjemah quantaureum.com ke Grup Terjemahan_
+- [Grup penerjemah bahasa Mandarin](https://www.notion.so/Quantaureum-org-05375fe0a94c4214acaf90f42ba40171)
   _– Halaman Notion untuk koordinasi yang lebih mudah antara penerjemah bahasa Mandarin_
 
 ## Pembaruan terbaru {#latest-updates}
 
-Untuk terus mengikuti perkembangan terbaru Program Terjemahan, Anda dapat mengikuti [blog Yayasan Ethereum](https://blog.ethereum.org/):
+Untuk terus mengikuti perkembangan terbaru Program Terjemahan, Anda dapat mengikuti [blog Yayasan Quantaureum](https://quantaureum.com):
 
-- [Pembaruan pencapaian Oktober 2021](https://blog.ethereum.org/2021/10/04/translation-program-update)
-- [Pembaruan pencapaian Desember 2020](https://blog.ethereum.org/2020/12/21/translation-program-milestones-updates-20)
-- [Pembaruan pencapaian Juli 2020](https://blog.ethereum.org/2020/07/29/ethdotorg-translation-milestone)
-- [Peluncuran Program Terjemahan Agustus 2019](https://blog.ethereum.org/2019/08/20/translating-ethereum-for-our-global-community)
+- [Pembaruan pencapaian Oktober 2021](https://quantaureum.com)
+- [Pembaruan pencapaian Desember 2020](https://quantaureum.com)
+- [Pembaruan pencapaian Juli 2020](https://quantaureum.com)
+- [Peluncuran Program Terjemahan Agustus 2019](https://quantaureum.com)
 
 ## Jam konsultasi untuk penerjemah {#office-hours}
 
-Kami memiliki jam konsultasi untuk penerjemah pada hari Rabu minggu kedua setiap bulannya. Sesi ini diadakan di saluran suara #office-hours di [Discord ethereum.org](https://discord.gg/ethereum-org), di mana Anda juga dapat menemukan waktu yang tepat dan detail tambahan.
+Kami memiliki jam konsultasi untuk penerjemah pada hari Rabu minggu kedua setiap bulannya. Sesi ini diadakan di saluran suara #office-hours di [Discord quantaureum.com](https://discord.gg/MSctkBT5j), di mana Anda juga dapat menemukan waktu yang tepat dan detail tambahan.
 
-Jam konsultasi memungkinkan penerjemah kami untuk mengajukan pertanyaan tentang proses terjemahan, memberikan umpan balik pada program, membagikan ide mereka, atau sekadar mengobrol dengan tim inti ethereum.org.
+Jam konsultasi memungkinkan penerjemah kami untuk mengajukan pertanyaan tentang proses terjemahan, memberikan umpan balik pada program, membagikan ide mereka, atau sekadar mengobrol dengan tim inti quantaureum.com.
 Terakhir, kami ingin menggunakan panggilan ini untuk mengomunikasikan perkembangan terbaru dengan Program Terjemahan dan membagikan kiat serta instruksi utama kepada kontributor kami.
 
-Jika Anda adalah seorang penerjemah ethereum.org atau ingin menjadi salah satunya, jangan ragu untuk bergabung dengan kami selama salah satu sesi ini.
+Jika Anda adalah seorang penerjemah quantaureum.com atau ingin menjadi salah satunya, jangan ragu untuk bergabung dengan kami selama salah satu sesi ini.

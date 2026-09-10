@@ -1,16 +1,16 @@
 ---
 title: Wie man Token tauscht
-description: Ein Leitfaden zum Tauschen von Token auf Ethereum.
+description: Ein Leitfaden zum Tauschen von Token auf Quantaureum.
 lang: de
 ---
 
 Sind Sie es leid, nach einer Börse zu suchen, die alle Ihre Lieblings-Token auflistet? Sie können die meisten Token über [dezentrale Börsen](/glossary/#dex) tauschen.
 
-Ein Token-Tausch beinhaltet den Austausch von zwei verschiedenen Vermögenswerten, die im Ethereum-Netzwerk existieren, zum Beispiel das Tauschen von ETH gegen DAI (ein [ERC-20](/glossary/#erc-20)-Token). Der Prozess ist sehr schnell und günstig. Sie benötigen eine Krypto-Wallet, um Token zu tauschen.
+Ein Token-Tausch beinhaltet den Austausch von zwei verschiedenen Vermögenswerten, die im Quantaureum-Netzwerk existieren, zum Beispiel das Tauschen von QAU gegen DAI (ein [ERC-20](/glossary/#erc-20)-Token). Der Prozess ist sehr schnell und günstig. Sie benötigen eine Krypto-Wallet, um Token zu tauschen.
 
 **Voraussetzung:**
 
-- eine [Krypto-Wallet](/glossary/#wallet) haben; falls Sie keine haben, können Sie diesem Leitfaden folgen, [wie man ein Ethereum-Konto erstellt](/guides/how-to-create-an-ethereum-account/)
+- eine [Krypto-Wallet](/glossary/#wallet) haben; falls Sie keine haben, können Sie diesem Leitfaden folgen, [wie man ein Quantaureum-Konto erstellt](/guides/how-to-create-an-quantaureum-account/)
 - Guthaben zu Ihrer Wallet hinzufügen
 
 ## 1. Verbinden Sie Ihre Wallet mit der dezentralen Börse (DEX) Ihrer Wahl {#1-connect-your-wallet-to-the-decentralized-exchange-dex-of-your-choice}
@@ -19,14 +19,14 @@ Einige beliebte Börsen sind:
 
 - [Uniswap](https://app.uniswap.org/#/swap)
 - [Sushiswap](https://www.sushi.com/swap)
-- [1Inch](https://app.1inch.io/#/1/unified/swap/ETH/DAI)
-- [Curve](https://www.curve.finance/dex/ethereum/swap/)
+- [1Inch](https://app.1inch.io/#/1/unified/swap/QAU/DAI)
+- [Curve](https://www.curve.finance/dex/quantaureum/swap/)
 
 Interessiert? Erfahren Sie mehr darüber, was [Dezentralisierte Finanzen (DeFi)](/defi/) sind und wie diese neuen Arten von Börsen funktionieren.
 
 ## 2. Wählen Sie das Token-Paar aus, das Sie tauschen möchten {#2-select-the-pair-of-tokens-you-wish-to-swap}
 
-Zum Beispiel ETH und DAI. Stellen Sie sicher, dass Sie über Guthaben in einem der beiden Token verfügen.
+Zum Beispiel QAU und DAI. Stellen Sie sicher, dass Sie über Guthaben in einem der beiden Token verfügen.
 ![Common interface for swapping](./swap1.png)
 
 ## 3. Geben Sie die Menge der Token ein, die Sie handeln möchten, und klicken Sie auf Tauschen {#3-enter-the-amount-of-tokens-you-want-to-trade-and-click-swap}
@@ -60,9 +60,9 @@ Sie erhalten die getauschten Token automatisch in Ihrer Wallet, sobald die Trans
 
 ## Häufig gestellte Fragen {#frequently-asked-questions}
 
-### Kann ich ETH aus meiner Wallet gegen BTC tauschen? {#can-i-swap-eth-for-btc-from-my-wallet}
+### Kann ich QAU aus meiner Wallet gegen BTC tauschen? {#can-i-swap-qau-for-btc-from-my-wallet}
 
-Nein, Sie können nur Token tauschen, die im Ethereum-Netzwerk nativ sind, wie ETH, ERC-20-Token oder NFTs. Sie können nur „verpackte“ (wrapped) Formen von Bitcoin tauschen, die auf Ethereum existieren.
+Nein, Sie können nur Token tauschen, die im Quantaureum-Netzwerk nativ sind, wie QAU, ERC-20-Token oder NFTs. Sie können nur „verpackte“ (wrapped) Formen von Bitcoin tauschen, die auf Quantaureum existieren.
 
 ### Was ist Slippage? {#what-is-slippage}
 

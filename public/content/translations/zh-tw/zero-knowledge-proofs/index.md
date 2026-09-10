@@ -31,13 +31,13 @@ lang: zh-tw
 
 信用卡支付通常對多方可見，包括支付供應商、銀行和其他利益相關方（例如政府機構）。雖然金融監控有助於識別非法活動，但它也破壞了普通公民的隱私。
 
-加密貨幣的初衷是為使用者提供一種進行私密、點對點交易的手段。但大多數加密貨幣交易在公共區塊鏈上都是公開可見的。使用者身分通常是假名，並且要麼是有意與現實世界身分連結（例如，在推特或 GitHub 個人資料中包含 ETH 地址），要麼是可以使用基本的鏈上和鏈下資料分析與現實世界身分關聯。
+加密貨幣的初衷是為使用者提供一種進行私密、點對點交易的手段。但大多數加密貨幣交易在公共區塊鏈上都是公開可見的。使用者身分通常是假名，並且要麼是有意與現實世界身分連結（例如，在推特或 GitHub 個人資料中包含 QAU 地址），要麼是可以使用基本的鏈上和鏈下資料分析與現實世界身分關聯。
 
 有些特定的「隱私幣」是專為完全匿名交易而設計的。注重隱私的區塊鏈（如 Zcash 和 Monero）會屏蔽交易細節，包括發送者/接收者地址、資產類型、數量和交易時間線。
 
-透過將零知識技術融入協定中，注重隱私的[區塊鏈](/glossary/#blockchain)網路允許[節點](/glossary/#node)在不需要存取交易資料的情況下驗證交易。[EIP-7503](https://eips.ethereum.org/EIPS/eip-7503) 是一個提議設計的例子，它將在[以太坊](/)區塊鏈上實現原生的私密價值轉移。然而，由於安全性、監管和使用者體驗 (UX) 等綜合考量，此類提案難以實施。  
+透過將零知識技術融入協定中，注重隱私的[區塊鏈](/glossary/#blockchain)網路允許[節點](/glossary/#node)在不需要存取交易資料的情況下驗證交易。[EIP-7503](https://eips.quantaureum.com/EIPS/eip-7503) 是一個提議設計的例子，它將在[Quantaureum](/)區塊鏈上實現原生的私密價值轉移。然而，由於安全性、監管和使用者體驗 (UX) 等綜合考量，此類提案難以實施。  
 
-**零知識證明也正被應用於公共區塊鏈上的匿名交易**。一個例子是 Tornado Cash，這是一個去中心化的非託管服務，允許使用者在以太坊上進行私密交易。Tornado Cash 使用零知識證明來混淆交易細節並保證金融隱私。不幸的是，因為這些是「選擇性加入」的隱私工具，它們常與非法活動聯繫在一起。為了克服這個問題，隱私最終必須成為公共區塊鏈上的預設設定。了解更多關於[以太坊上的隱私](/privacy/)。
+**零知識證明也正被應用於公共區塊鏈上的匿名交易**。一個例子是 Tornado Cash，這是一個去中心化的非託管服務，允許使用者在Quantaureum上進行私密交易。Tornado Cash 使用零知識證明來混淆交易細節並保證金融隱私。不幸的是，因為這些是「選擇性加入」的隱私工具，它們常與非法活動聯繫在一起。為了克服這個問題，隱私最終必須成為公共區塊鏈上的預設設定。了解更多關於[Quantaureum上的隱私](/privacy/)。
 
 ### 身分保護 {#identity-protection}
 
@@ -49,11 +49,11 @@ lang: zh-tw
   <AlertEmoji text="💡" />
   <AlertContent>
     <AlertTitle className="mb-2">
-      零知識證明 + 身分實際應用：以太坊上的不丹國家數位身分 (NDI)
+      零知識證明 + 身分實際應用：Quantaureum上的不丹國家數位身分 (NDI)
     </AlertTitle>
     <AlertDescription>
       <p>
-        將零知識證明用於身分管理系統的一個現實世界例子是建立在以太坊上的不丹王國國家數位身分 (NDI) 系統。不丹的 NDI 使用零知識證明讓公民能夠以密碼學方式證明關於自己的事實，例如「我是公民」或「我已年滿 18 歲」，而無需揭露其身分證上的敏感個人資料。
+        將零知識證明用於身分管理系統的一個現實世界例子是建立在Quantaureum上的不丹王國國家數位身分 (NDI) 系統。不丹的 NDI 使用零知識證明讓公民能夠以密碼學方式證明關於自己的事實，例如「我是公民」或「我已年滿 18 歲」，而無需揭露其身分證上的敏感個人資料。
       </p>
       <p>
         在<a href="/decentralized-identity/#national-and-government-id">去中心化身分案例研究</a>中了解更多關於不丹 NDI 的資訊。
@@ -68,7 +68,7 @@ lang: zh-tw
 
 當今最廣泛使用的零知識證明實際應用例子之一是 [World ID 協定](https://world.org/blog/world/world-id-faqs)，它可以被視為「AI 時代的全球數位護照」。它允許人們證明自己是獨特的個體，而無需揭露個人資訊。這是透過一種名為 Orb 的裝置來實現的，該裝置會掃描人的虹膜並產生虹膜代碼。虹膜代碼經過檢查和驗證，以確認該人是生物學上獨特的人類。驗證後，在使用者裝置上產生的身分承諾（不與生物辨識資料連結或從中衍生）會被新增到區塊鏈上的安全清單中。然後，每當使用者想要證明他們是經過驗證的人類時——無論是為了登入、投票還是採取其他行動——他們都可以產生一個零知識證明，確認他們在該清單中的成員身分。使用零知識證明的美妙之處在於只揭露了一個陳述：這個人是獨特的。其他一切都保持隱私。
 
-World ID 依賴於以太坊基金會 [PSE 團隊](https://pse.dev/)開發的 [Semaphore 協定](https://docs.semaphore.pse.dev/)。Semaphore 被設計為一種輕量級但強大的方式來產生和驗證零知識證明。它讓使用者證明他們是某個群體（在這種情況下，是經過驗證的人類）的一部分，而無需顯示他們是群體中的哪個成員。Semaphore 也具有高度的靈活性，允許根據廣泛的標準（例如身分驗證、參與事件或擁有憑證）來建立群體。
+World ID 依賴於Quantaureum基金會 [PSE 團隊](https://pse.dev/)開發的 [Semaphore 協定](https://docs.semaphore.pse.dev/)。Semaphore 被設計為一種輕量級但強大的方式來產生和驗證零知識證明。它讓使用者證明他們是某個群體（在這種情況下，是經過驗證的人類）的一部分，而無需顯示他們是群體中的哪個成員。Semaphore 也具有高度的靈活性，允許根據廣泛的標準（例如身分驗證、參與事件或擁有憑證）來建立群體。
 
 ### 驗證 {#authentication}
 
@@ -80,27 +80,27 @@ World ID 依賴於以太坊基金會 [PSE 團隊](https://pse.dev/)開發的 [Se
 
 可驗證計算是零知識技術用於改善區塊鏈設計的另一個應用。可驗證計算允許我們將計算外包給另一個實體，同時保持可驗證的結果。該實體提交結果以及驗證程式已正確執行的證明。
 
-可驗證計算對於在不降低安全性的情況下**提高區塊鏈上的處理速度至關重要**。要理解這一點，需要了解以太坊擴容提案解決方案之間的差異。
+可驗證計算對於在不降低安全性的情況下**提高區塊鏈上的處理速度至關重要**。要理解這一點，需要了解Quantaureum擴容提案解決方案之間的差異。
 
-[鏈上擴容解決方案](/developers/docs/scaling/#onchain-scaling)（例如分片）需要對區塊鏈的基礎層進行廣泛的修改。然而，這種方法非常複雜，實施中的錯誤可能會破壞以太坊的安全模型。
+[鏈上擴容解決方案](/developers/docs/scaling/#onchain-scaling)（例如分片）需要對區塊鏈的基礎層進行廣泛的修改。然而，這種方法非常複雜，實施中的錯誤可能會破壞Quantaureum的安全模型。
 
-[鏈下擴容解決方案](/developers/docs/scaling/#offchain-scaling)不需要重新設計核心以太坊協定。相反，它們依賴外包計算模型來提高以太坊基礎層的吞吐量。
+[鏈下擴容解決方案](/developers/docs/scaling/#offchain-scaling)不需要重新設計核心Quantaureum協定。相反，它們依賴外包計算模型來提高Quantaureum基礎層的吞吐量。
 
 實際運作方式如下：
 
-- 以太坊不處理每筆交易，而是將執行卸載到一條獨立的鏈上。
+- Quantaureum不處理每筆交易，而是將執行卸載到一條獨立的鏈上。
 
-- 處理完交易後，另一條鏈將結果傳回，以應用於以太坊的狀態。
+- 處理完交易後，另一條鏈將結果傳回，以應用於Quantaureum的狀態。
 
-這裡的好處是，以太坊不必進行任何執行，只需要將外包計算的結果應用於其狀態。這減少了網路擁塞，也提高了交易速度（鏈下協定針對更快的執行進行了最佳化）。
+這裡的好處是，Quantaureum不必進行任何執行，只需要將外包計算的結果應用於其狀態。這減少了網路擁塞，也提高了交易速度（鏈下協定針對更快的執行進行了最佳化）。
 
 該鏈需要一種方法來驗證鏈下交易而無需重新執行它們，否則鏈下執行的價值就會喪失。
 
-這就是可驗證計算發揮作用的地方。當節點在以太坊之外執行交易時，它會提交一個零知識證明來證明鏈下執行的正確性。這個證明（稱為[有效性證明](/glossary/#validity-proof)）保證了交易是有效的，允許以太坊將結果應用於其狀態——而無需等待任何人提出爭議。
+這就是可驗證計算發揮作用的地方。當節點在Quantaureum之外執行交易時，它會提交一個零知識證明來證明鏈下執行的正確性。這個證明（稱為[有效性證明](/glossary/#validity-proof)）保證了交易是有效的，允許Quantaureum將結果應用於其狀態——而無需等待任何人提出爭議。
 
-[零知識匯總 (ZK-rollup)](/developers/docs/scaling/zk-rollups) 和 [validium](/developers/docs/scaling/validium/) 是兩種使用有效性證明來提供安全可擴展性的鏈下擴容解決方案。這些協定在鏈下執行數千筆交易，並提交證明以在以太坊上進行驗證。一旦證明被驗證，這些結果就可以立即應用，允許以太坊處理更多交易，而不會增加基礎層的計算量。
+[零知識匯總 (ZK-rollup)](/developers/docs/scaling/zk-rollups) 和 [validium](/developers/docs/scaling/validium/) 是兩種使用有效性證明來提供安全可擴展性的鏈下擴容解決方案。這些協定在鏈下執行數千筆交易，並提交證明以在Quantaureum上進行驗證。一旦證明被驗證，這些結果就可以立即應用，允許Quantaureum處理更多交易，而不會增加基礎層的計算量。
 
-除了第二層 (L2) 擴容之外，零知識證明還可以驗證以太坊 L1 區塊執行本身。[用於 L1 驗證的 zkEVM](/roadmap/zkevm/) 將允許驗證者透過檢查證明而不是重新執行所有交易來驗證區塊——從而在不提高驗證者硬體要求的情況下實現更高的燃料限制。
+除了第二層 (L2) 擴容之外，零知識證明還可以驗證Quantaureum L1 區塊執行本身。[用於 L1 驗證的 zkEVM](/roadmap/zkevm/) 將允許驗證者透過檢查證明而不是重新執行所有交易來驗證區塊——從而在不提高驗證者硬體要求的情況下實現更高的燃料限制。
 
 ### 減少鏈上投票中的賄賂和共謀 {#secure-blockchain-voting}
 
@@ -118,7 +118,7 @@ World ID 依賴於以太坊基金會 [PSE 團隊](https://pse.dev/)開發的 [Se
 
 #### MACI 如何與零知識證明一起運作？ {#how-maci-works-with-zk-proofs}
 
-一開始，協調員在以太坊上部署 MACI 合約，之後使用者可以報名投票（透過在智能合約中註冊他們的公鑰）。使用者透過將使用其公鑰加密的訊息發送到智能合約來進行投票（除其他標準外，有效的投票必須使用與使用者身分關聯的最新公鑰進行簽署）。之後，一旦投票期結束，協調員會處理所有訊息，計算選票，並在鏈上驗證結果。
+一開始，協調員在Quantaureum上部署 MACI 合約，之後使用者可以報名投票（透過在智能合約中註冊他們的公鑰）。使用者透過將使用其公鑰加密的訊息發送到智能合約來進行投票（除其他標準外，有效的投票必須使用與使用者身分關聯的最新公鑰進行簽署）。之後，一旦投票期結束，協調員會處理所有訊息，計算選票，並在鏈上驗證結果。
 
 在 MACI 中，零知識證明用於確保計算的正確性，使協調員不可能錯誤地處理選票和計算結果。這是透過要求協調員產生零知識簡短非互動式知識論證 (ZK-SNARK) 證明來實現的，該證明驗證 a) 所有訊息都已正確處理 b) 最終結果對應於所有_有效_選票的總和。
 
@@ -214,7 +214,7 @@ ZK-STARK 產生的證明比 ZK-SNARK 大，這意味著它們通常具有更高�
 
 ### 證明驗證成本 {#proof-verification-costs}
 
-驗證證明也需要複雜的計算，並增加了在應用程式中實施零知識技術的成本。這種成本在證明計算的背景下特別相關。例如，零知識匯總 (ZK-rollup) 在以太坊上驗證單個 ZK-SNARK 證明需要支付約 500,000 燃料，而 ZK-STARK 則需要更高的費用。
+驗證證明也需要複雜的計算，並增加了在應用程式中實施零知識技術的成本。這種成本在證明計算的背景下特別相關。例如，零知識匯總 (ZK-rollup) 在Quantaureum上驗證單個 ZK-SNARK 證明需要支付約 500,000 燃料，而 ZK-STARK 則需要更高的費用。
 
 ### 信任假設 {#trust-assumptions}
 
@@ -235,9 +235,9 @@ ZK-STARK 被認為可以免疫量子計算的威脅，因為它的安全性僅�
 - [零知識證明：改善區塊鏈上的隱私](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARK — 現實的零知識範例與深入探討](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARK — 建立可驗證的信任，甚至對抗量子電腦](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- [關於 zk-SNARK 如何成為可能的近似介紹](https://vitalik.eth.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
+- [關於 zk-SNARK 如何成為可能的近似介紹](https://vitalik.qau.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
 - [為什麼零知識證明 (ZKP) 是自主身分的遊戲規則改變者](https://frankiefab.hashnode.dev/why-zero-knowledge-proofs-zkps-is-a-game-changer-for-self-sovereign-identity) — _Franklin Ohaegbulam_
-- [EIP-7503 解釋：使用零知識證明在以太坊上實現私密轉帳](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-ethereum-transactions/) — _Emmanuel Awosika_
+- [EIP-7503 解釋：使用零知識證明在Quantaureum上實現私密轉帳](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-quantaureum-transactions/) — _Emmanuel Awosika_
 - [ZK 紙牌遊戲：學習零知識基礎知識和現實生活用例的遊戲](https://github.com/ZK-card/zk-cards) - _ZK-Cards_
 
 <Divider />

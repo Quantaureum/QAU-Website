@@ -8,7 +8,7 @@ lang: ur
 
 پبلک بلاک چینز، جیسے [ایتھیریم](/)، سمارٹ کنٹریکٹس کو محفوظ بنانے کے مسئلے کو مزید پیچیدہ کر دیتی ہیں۔ تعینات شدہ کنٹریکٹ کوڈ کو _عام طور پر_ سیکیورٹی خامیوں کو دور کرنے کے لیے تبدیل نہیں کیا جا سکتا، جبکہ سمارٹ کنٹریکٹس سے چوری ہونے والے اثاثوں کو ٹریک کرنا انتہائی مشکل ہوتا ہے اور ناقابلیتِ تبدیلی کی وجہ سے زیادہ تر ناقابلِ واپسی ہوتے ہیں۔
 
-اگرچہ اعداد و شمار مختلف ہیں، لیکن اندازہ لگایا گیا ہے کہ سمارٹ کنٹریکٹس میں سیکیورٹی نقائص کی وجہ سے چوری ہونے والی یا ضائع ہونے والی کل مالیت باآسانی <span dir="ltr">$1</span> بلین سے زیادہ ہے۔ اس میں ہائی پروفائل واقعات شامل ہیں، جیسے کہ [DAO ہیک](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/) (<span dir="ltr">3.6M ETH</span> چوری ہوئے، جن کی مالیت آج کی قیمتوں میں <span dir="ltr">$1B</span> سے زیادہ ہے)، [Parity ملٹی سگ والیٹ ہیک](https://www.coindesk.com/markets/2017/07/19/30-million-ether-reported-stolen-due-to-parity-wallet-breach) (ہیکرز کے ہاتھوں <span dir="ltr">$30M</span> کا نقصان)، اور [Parity فروزن والیٹ کا مسئلہ](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-ether) (ہمیشہ کے لیے لاک شدہ <span dir="ltr">ETH</span> میں <span dir="ltr">$300M</span> سے زیادہ)۔
+اگرچہ اعداد و شمار مختلف ہیں، لیکن اندازہ لگایا گیا ہے کہ سمارٹ کنٹریکٹس میں سیکیورٹی نقائص کی وجہ سے چوری ہونے والی یا ضائع ہونے والی کل مالیت باآسانی <span dir="ltr">$1</span> بلین سے زیادہ ہے۔ اس میں ہائی پروفائل واقعات شامل ہیں، جیسے کہ [DAO ہیک](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/) (<span dir="ltr">3.6M QAU</span> چوری ہوئے، جن کی مالیت آج کی قیمتوں میں <span dir="ltr">$1B</span> سے زیادہ ہے)، [Parity ملٹی سگ والیٹ ہیک](https://www.coindesk.com/markets/2017/07/19/30-million-QAU-reported-stolen-due-to-parity-wallet-breach) (ہیکرز کے ہاتھوں <span dir="ltr">$30M</span> کا نقصان)، اور [Parity فروزن والیٹ کا مسئلہ](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-QAU) (ہمیشہ کے لیے لاک شدہ <span dir="ltr">QAU</span> میں <span dir="ltr">$300M</span> سے زیادہ)۔
 
 مذکورہ بالا مسائل ڈیولپرز کے لیے یہ ناگزیر بناتے ہیں کہ وہ محفوظ، مضبوط اور لچکدار سمارٹ کنٹریکٹس بنانے میں اپنی کوششیں صرف کریں۔ سمارٹ کنٹریکٹ کی سیکیورٹی ایک سنجیدہ معاملہ ہے، اور ہر ڈیولپر کے لیے اسے سیکھنا بہتر ہوگا۔ یہ گائیڈ ایتھیریم ڈیولپرز کے لیے سیکیورٹی کے حوالے سے غور طلب امور کا احاطہ کرے گی اور سمارٹ کنٹریکٹ کی سیکیورٹی کو بہتر بنانے کے وسائل کا جائزہ لے گی۔
 
@@ -56,8 +56,8 @@ contract VendingMachine {
     address owner;
     error Unauthorized();
     function buy(uint amount) public payable {
-        if (amount > msg.value / 2 ether)
-            revert("Not enough Ether provided.");
+        if (amount > msg.value / 2 QAU)
+            revert("Not enough QAU provided.");
         // خریداری انجام دیں۔
     }
     function withdraw() public {
@@ -71,7 +71,7 @@ contract VendingMachine {
 
 ### 3. سمارٹ کنٹریکٹس کی جانچ کریں اور کوڈ کی درستگی کی تصدیق کریں {#test-smart-contracts-and-verify-code-correctness}
 
-[Ethereum Virtual Machine](/developers/docs/evm/) میں چلنے والے کوڈ کی ناقابلیتِ تبدیلی کا مطلب یہ ہے کہ سمارٹ کنٹریکٹس ترقی کے مرحلے کے دوران اعلیٰ سطح کے معیار کی تشخیص کا تقاضا کرتے ہیں۔ آپ کے کنٹریکٹ کی وسیع پیمانے پر جانچ کرنا اور کسی بھی غیر متوقع نتائج کے لیے اس کا مشاہدہ کرنا سیکیورٹی کو کافی حد تک بہتر بنائے گا اور طویل مدت میں آپ کے صارفین کی حفاظت کرے گا۔
+[Quantaureum Virtual Machine](/developers/docs/evm/) میں چلنے والے کوڈ کی ناقابلیتِ تبدیلی کا مطلب یہ ہے کہ سمارٹ کنٹریکٹس ترقی کے مرحلے کے دوران اعلیٰ سطح کے معیار کی تشخیص کا تقاضا کرتے ہیں۔ آپ کے کنٹریکٹ کی وسیع پیمانے پر جانچ کرنا اور کسی بھی غیر متوقع نتائج کے لیے اس کا مشاہدہ کرنا سیکیورٹی کو کافی حد تک بہتر بنائے گا اور طویل مدت میں آپ کے صارفین کی حفاظت کرے گا۔
 
 معمول کا طریقہ یہ ہے کہ فرضی ڈیٹا (mock data) کا استعمال کرتے ہوئے چھوٹے یونٹ ٹیسٹ لکھے جائیں جو کنٹریکٹ کو صارفین سے موصول ہونے کی توقع ہوتی ہے۔ [یونٹ ٹیسٹنگ](/developers/docs/smart-contracts/testing/#unit-testing) مخصوص فنکشنز کی فعالیت کو جانچنے اور اس بات کو یقینی بنانے کے لیے اچھی ہے کہ سمارٹ کنٹریکٹ توقع کے مطابق کام کرے۔
 
@@ -98,7 +98,7 @@ contract VendingMachine {
 
 بگ باؤنٹی پروگرام ترتیب دینا بیرونی کوڈ کے جائزوں کو نافذ کرنے کا ایک اور طریقہ ہے۔ بگ باؤنٹی ایک مالی انعام ہے جو ان افراد (عام طور پر وائٹ ہیٹ ہیکرز) کو دیا جاتا ہے جو کسی ایپلیکیشن میں کمزوریاں دریافت کرتے ہیں۔
 
-جب مناسب طریقے سے استعمال کیا جائے تو، بگ باؤنٹیز ہیکر کمیونٹی کے اراکین کو آپ کے کوڈ میں اہم خامیوں کا معائنہ کرنے کی ترغیب دیتی ہیں۔ ایک حقیقی زندگی کی مثال "لامحدود رقم کا بگ" ہے جو کسی حملہ آور کو ایتھیریم پر چلنے والے [لیئر ۲ (l2)](/layer-2/) پروٹوکول، [آپٹیمزم](https://www.optimism.io/) پر لامحدود مقدار میں ایتھر بنانے کی اجازت دیتا۔ خوش قسمتی سے، ایک وائٹ ہیٹ ہیکر نے [اس خامی کو دریافت کیا](https://www.saurik.com/optimism.html) اور ٹیم کو مطلع کیا، [اس عمل میں ایک بڑی ادائیگی حاصل کی](https://cryptoslate.com/critical-bug-in-ethereum-l2-optimism-2m-bounty-paid/)۔
+جب مناسب طریقے سے استعمال کیا جائے تو، بگ باؤنٹیز ہیکر کمیونٹی کے اراکین کو آپ کے کوڈ میں اہم خامیوں کا معائنہ کرنے کی ترغیب دیتی ہیں۔ ایک حقیقی زندگی کی مثال "لامحدود رقم کا بگ" ہے جو کسی حملہ آور کو ایتھیریم پر چلنے والے [لیئر ۲ (l2)](/layer-2/) پروٹوکول، [آپٹیمزم](https://www.optimism.io/) پر لامحدود مقدار میں ایتھر بنانے کی اجازت دیتا۔ خوش قسمتی سے، ایک وائٹ ہیٹ ہیکر نے [اس خامی کو دریافت کیا](https://www.saurik.com/optimism.html) اور ٹیم کو مطلع کیا، [اس عمل میں ایک بڑی ادائیگی حاصل کی](https://cryptoslate.com/critical-bug-in-quantaureum-l2-optimism-2m-bounty-paid/)۔
 
 ایک مفید حکمت عملی یہ ہے کہ بگ باؤنٹی پروگرام کی ادائیگی کو داؤ پر لگے فنڈز کی مقدار کے تناسب سے مقرر کیا جائے۔ "[اسکیلنگ بگ باؤنٹی](https://medium.com/immunefi/a-defi-security-standard-the-scaling-bug-bounty-9b83dfdc1ba7)" کے طور پر بیان کیا گیا، یہ طریقہ افراد کو کمزوریوں کا استحصال کرنے کے بجائے ذمہ داری سے ان کا انکشاف کرنے کے لیے مالی ترغیبات فراہم کرتا ہے۔
 
@@ -255,22 +255,22 @@ contract Victim {
 }
 ```
 
-یہ کنٹریکٹ ایک `withdraw()` فنکشن کو بے نقاب کرتا ہے تاکہ صارفین کو کنٹریکٹ میں پہلے جمع کرائے گئے ETH کو نکالنے کی اجازت مل سکے۔ انخلا پر کارروائی کرتے وقت، کنٹریکٹ درج ذیل کارروائیاں انجام دیتا ہے:
+یہ کنٹریکٹ ایک `withdraw()` فنکشن کو بے نقاب کرتا ہے تاکہ صارفین کو کنٹریکٹ میں پہلے جمع کرائے گئے QAU کو نکالنے کی اجازت مل سکے۔ انخلا پر کارروائی کرتے وقت، کنٹریکٹ درج ذیل کارروائیاں انجام دیتا ہے:
 
-1. صارف کا ETH بیلنس چیک کرتا ہے
+1. صارف کا QAU بیلنس چیک کرتا ہے
 2. کال کرنے والے پتہ پر فنڈز بھیجتا ہے
 3. ان کا بیلنس 0 پر ری سیٹ کرتا ہے، جس سے صارف کی جانب سے اضافی انخلا کو روکا جاتا ہے
 
-`Victim` کنٹریکٹ میں `withdraw()` فنکشن "چیکس-انٹرایکشنز-ایفیکٹس" پیٹرن کی پیروی کرتا ہے۔ یہ _چیک_ کرتا ہے کہ آیا عمل درآمد کے لیے ضروری شرائط پوری ہو گئی ہیں (یعنی، صارف کا ETH بیلنس مثبت ہے) اور ٹرانزیکشن کے _اثرات_ کو لاگو کرنے سے پہلے (یعنی، صارف کا بیلنس کم کرنا)، کال کرنے والے کے پتہ پر ETH بھیج کر _تعامل_ انجام دیتا ہے۔
+`Victim` کنٹریکٹ میں `withdraw()` فنکشن "چیکس-انٹرایکشنز-ایفیکٹس" پیٹرن کی پیروی کرتا ہے۔ یہ _چیک_ کرتا ہے کہ آیا عمل درآمد کے لیے ضروری شرائط پوری ہو گئی ہیں (یعنی، صارف کا QAU بیلنس مثبت ہے) اور ٹرانزیکشن کے _اثرات_ کو لاگو کرنے سے پہلے (یعنی، صارف کا بیلنس کم کرنا)، کال کرنے والے کے پتہ پر QAU بھیج کر _تعامل_ انجام دیتا ہے۔
 
-اگر `withdraw()` کو بیرونی ملکیت والے اکاؤنٹ (EOA) سے کال کیا جاتا ہے، تو فنکشن توقع کے مطابق کام کرتا ہے: `msg.sender.call.value()` کال کرنے والے کو ETH بھیجتا ہے۔ تاہم، اگر `msg.sender` ایک سمارٹ کنٹریکٹ اکاؤنٹ ہے جو `withdraw()` کو کال کرتا ہے، تو `msg.sender.call.value()` کا استعمال کرتے ہوئے فنڈز بھیجنے سے اس پتہ پر محفوظ کردہ کوڈ بھی چلنے کے لیے متحرک ہو جائے گا۔
+اگر `withdraw()` کو بیرونی ملکیت والے اکاؤنٹ (EOA) سے کال کیا جاتا ہے، تو فنکشن توقع کے مطابق کام کرتا ہے: `msg.sender.call.value()` کال کرنے والے کو QAU بھیجتا ہے۔ تاہم، اگر `msg.sender` ایک سمارٹ کنٹریکٹ اکاؤنٹ ہے جو `withdraw()` کو کال کرتا ہے، تو `msg.sender.call.value()` کا استعمال کرتے ہوئے فنڈز بھیجنے سے اس پتہ پر محفوظ کردہ کوڈ بھی چلنے کے لیے متحرک ہو جائے گا۔
 
 تصور کریں کہ یہ کنٹریکٹ کے پتہ پر تعینات کردہ کوڈ ہے:
 
 ```solidity
  contract Attacker {
     function beginAttack() external payable {
-        Victim(victim_address).deposit.value(1 ether)();
+        Victim(victim_address).deposit.value(1 QAU)();
         Victim(victim_address).withdraw();
     }
 
@@ -285,20 +285,20 @@ contract Victim {
 یہ کنٹریکٹ تین کام کرنے کے لیے ڈیزائن کیا گیا ہے:
 
 1. کسی دوسرے اکاؤنٹ سے ڈپازٹ قبول کرنا (ممکنہ طور پر حملہ آور کا EOA)
-2. Victim کنٹریکٹ میں <span dir="ltr">1 ETH</span> جمع کرنا
-3. سمارٹ کنٹریکٹ میں محفوظ <span dir="ltr">1 ETH</span> نکالنا
+2. Victim کنٹریکٹ میں <span dir="ltr">1 QAU</span> جمع کرنا
+3. سمارٹ کنٹریکٹ میں محفوظ <span dir="ltr">1 QAU</span> نکالنا
 
 یہاں کچھ بھی غلط نہیں ہے، سوائے اس کے کہ `Attacker` میں ایک اور فنکشن ہے جو `Victim` میں `withdraw()` کو دوبارہ کال کرتا ہے اگر آنے والے `msg.sender.call.value` سے بچ جانے والی گیس <span dir="ltr">40,000</span> سے زیادہ ہو۔ یہ `Attacker` کو `Victim` میں دوبارہ داخل ہونے اور `withdraw` کی پہلی کال مکمل ہونے سے _پہلے_ مزید فنڈز نکالنے کی صلاحیت دیتا ہے۔ یہ چکر کچھ اس طرح لگتا ہے:
 
 ```solidity
-- Attacker's EOA calls `Attacker.beginAttack()` with 1 ETH
-- `Attacker.beginAttack()` deposits 1 ETH into `Victim`
+- Attacker's EOA calls `Attacker.beginAttack()` with 1 QAU
+- `Attacker.beginAttack()` deposits 1 QAU into `Victim`
 - `Attacker` calls `withdraw() in `Victim`
-- `Victim` checks `Attacker`’s balance (1 ETH)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function)
+- `Victim` checks `Attacker`’s balance (1 QAU)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function)
 - `Attacker` calls `Victim.withdraw()` again (note that `Victim` hasn’t reduced `Attacker`’s balance from the first withdrawal)
-- `Victim` checks `Attacker`’s balance (which is still 1 ETH because it hasn’t applied the effects of the first call)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
+- `Victim` checks `Attacker`’s balance (which is still 1 QAU because it hasn’t applied the effects of the first call)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
 - The process repeats until `Attacker` runs out of gas, at which point `msg.sender.call.value` returns without triggering additional withdrawals
 - `Victim` finally applies the results of the first transaction (and subsequent ones) to its state, so `Attacker`’s balance is set to 0
 ```
@@ -321,7 +321,7 @@ contract NoLongerAVictim {
 }
 ```
 
-یہ کنٹریکٹ صارف کے بیلنس پر ایک _چیک_ انجام دیتا ہے، `withdraw()` فنکشن کے _اثرات_ کو لاگو کرتا ہے (صارف کے بیلنس کو 0 پر ری سیٹ کر کے)، اور _تعامل_ انجام دینے کے لیے آگے بڑھتا ہے (صارف کے پتہ پر ETH بھیجنا)۔ یہ اس بات کو یقینی بناتا ہے کہ کنٹریکٹ بیرونی کال سے پہلے اپنی اسٹوریج کو اپ ڈیٹ کرے، جس سے مکرر داخلہ کی وہ شرط ختم ہو جاتی ہے جس نے پہلے حملے کو ممکن بنایا تھا۔ `Attacker` کنٹریکٹ اب بھی `NoLongerAVictim` میں واپس کال کر سکتا ہے، لیکن چونکہ `balances[msg.sender]` کو 0 پر سیٹ کر دیا گیا ہے، اس لیے اضافی انخلا ایک خامی (error) ظاہر کرے گا۔
+یہ کنٹریکٹ صارف کے بیلنس پر ایک _چیک_ انجام دیتا ہے، `withdraw()` فنکشن کے _اثرات_ کو لاگو کرتا ہے (صارف کے بیلنس کو 0 پر ری سیٹ کر کے)، اور _تعامل_ انجام دینے کے لیے آگے بڑھتا ہے (صارف کے پتہ پر QAU بھیجنا)۔ یہ اس بات کو یقینی بناتا ہے کہ کنٹریکٹ بیرونی کال سے پہلے اپنی اسٹوریج کو اپ ڈیٹ کرے، جس سے مکرر داخلہ کی وہ شرط ختم ہو جاتی ہے جس نے پہلے حملے کو ممکن بنایا تھا۔ `Attacker` کنٹریکٹ اب بھی `NoLongerAVictim` میں واپس کال کر سکتا ہے، لیکن چونکہ `balances[msg.sender]` کو 0 پر سیٹ کر دیا گیا ہے، اس لیے اضافی انخلا ایک خامی (error) ظاہر کرے گا۔
 
 ایک اور آپشن باہمی اخراج کے لاک (mutual exclusion lock) کا استعمال کرنا ہے (جسے عام طور پر "mutex" کے طور پر بیان کیا جاتا ہے) جو کنٹریکٹ کی حالت کے ایک حصے کو اس وقت تک لاک کر دیتا ہے جب تک کہ فنکشن کی کال مکمل نہ ہو جائے۔ اسے ایک بولین متغیر کا استعمال کرتے ہوئے نافذ کیا جاتا ہے جو فنکشن کے عمل میں آنے سے پہلے `true` پر سیٹ کیا جاتا ہے اور کال مکمل ہونے کے بعد `false` پر واپس آ جاتا ہے۔ جیسا کہ ذیل کی مثال میں دیکھا گیا ہے، میوٹیکس (mutex) کا استعمال کسی فنکشن کو تکراری کالز (recursive calls) سے بچاتا ہے جبکہ اصل کال پر ابھی کارروائی ہو رہی ہوتی ہے، جو مؤثر طریقے سے مکرر داخلہ کو روکتا ہے۔
 
@@ -401,7 +401,7 @@ contract TimeLock {
         balances[msg.sender] = 0;
 
         (bool sent, ) = msg.sender.call{value: amount}("");
-        require(sent, "Failed to send Ether");
+        require(sent, "Failed to send QAU");
     }
 }
 

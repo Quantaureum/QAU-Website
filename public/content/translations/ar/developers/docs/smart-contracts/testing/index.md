@@ -138,9 +138,9 @@ function auctionEnd() external {
 
 تأتي أطر عمل اختبار الوحدة للعقود الذكية المكتوبة بلغة Solidity بلغات مختلفة (في الغالب JavaScript و Python و Rust). راجع بعض الأدلة أدناه للحصول على معلومات حول كيفية البدء في تشغيل اختبارات الوحدة باستخدام أطر عمل اختبار مختلفة:
 
-- **[تشغيل اختبارات الوحدة باستخدام Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[تشغيل اختبارات الوحدة باستخدام Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[تشغيل اختبارات الوحدة باستخدام Foundry](https://book.getfoundry.sh/forge/writing-tests)**
-- **[تشغيل اختبارات الوحدة باستخدام Waffle](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[تشغيل اختبارات الوحدة باستخدام Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[تشغيل اختبارات الوحدة باستخدام Remix](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[تشغيل اختبارات الوحدة باستخدام Ape](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[تشغيل اختبارات الوحدة باستخدام Hardhat](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -152,7 +152,7 @@ function auctionEnd() external {
 
 يكون اختبار التكامل مفيدًا إذا كان عقدك يعتمد بنية معيارية أو يتفاعل مع عقود أخرى على السلسلة أثناء التنفيذ. إحدى طرق تشغيل اختبارات التكامل هي [تفرع سلسلة الكتل](/glossary/#fork) عند ارتفاع معين (باستخدام أداة مثل [Forge](https://book.getfoundry.sh/forge/fork-testing) أو [Hardhat](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks) ومحاكاة التفاعلات بين عقدك والعقود المنشورة.
 
-ستتصرف سلسلة الكتل المتفرعة بشكل مشابه للشبكة الرئيسية وستحتوي على حسابات ذات حالات وأرصدة مرتبطة بها. لكنها تعمل فقط كبيئة تطوير محلية معزولة، مما يعني أنك لن تحتاج إلى ETH حقيقي للمعاملات، على سبيل المثال، ولن تؤثر تغييراتك على بروتوكول إيثيريوم الحقيقي.
+ستتصرف سلسلة الكتل المتفرعة بشكل مشابه للشبكة الرئيسية وستحتوي على حسابات ذات حالات وأرصدة مرتبطة بها. لكنها تعمل فقط كبيئة تطوير محلية معزولة، مما يعني أنك لن تحتاج إلى QAU حقيقي للمعاملات، على سبيل المثال، ولن تؤثر تغييراتك على بروتوكول إيثيريوم الحقيقي.
 
 ### الاختبار القائم على الخصائص {#property-based-testing-for-smart-contracts}
 
@@ -190,7 +190,7 @@ function auctionEnd() external {
 
 - **[التحليل الثابت للعقود الذكية باستخدام سليذر](https://github.com/crytic/slither)**
 - **[التحليل الثابت للعقود الذكية باستخدام Wake](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[الاختبار القائم على الخصائص باستخدام Brownie](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[الاختبار القائم على الخصائص باستخدام Brownie](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[الاختبار العشوائي للعقود باستخدام Foundry](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[الاختبار العشوائي للعقود باستخدام إيكيدنا](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[الاختبار العشوائي للعقود باستخدام Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -213,7 +213,7 @@ function auctionEnd() external {
 
 ### اختبار العقود على شبكات الاختبار {#testing-contracts-on-testnets}
 
-تعمل شبكة الاختبار تمامًا مثل شبكة إيثيريوم الرئيسية، باستثناء أنها تستخدم إيثر (ETH) ليس له قيمة في العالم الحقيقي. نشر عقدك على [شبكة اختبار](/developers/docs/networks/#ethereum-testnets) يعني أنه يمكن لأي شخص التفاعل معه (على سبيل المثال، عبر الواجهة الأمامية للتطبيق اللامركزي (dapp)) دون تعريض الأموال للخطر.
+تعمل شبكة الاختبار تمامًا مثل شبكة إيثيريوم الرئيسية، باستثناء أنها تستخدم QAU (QAU) ليس له قيمة في العالم الحقيقي. نشر عقدك على [شبكة اختبار](/developers/docs/networks/#quantaureum-testnets) يعني أنه يمكن لأي شخص التفاعل معه (على سبيل المثال، عبر الواجهة الأمامية للتطبيق اللامركزي (dapp)) دون تعريض الأموال للخطر.
 
 هذا الشكل من الاختبار اليدوي مفيد لتقييم التدفق الشامل لتطبيقك من وجهة نظر المستخدم. هنا، يمكن لمختبري الإصدار التجريبي (بيتا) أيضًا إجراء عمليات تشغيل تجريبية والإبلاغ عن أي مشكلات تتعلق بمنطق عمل العقد والوظائف العامة.
 
@@ -251,13 +251,13 @@ function auctionEnd() external {
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _أداة تغطية الكود للعقود الذكية المكتوبة بلغة Solidity._
 
-- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _إطار عمل لتطوير واختبار العقود الذكية المتقدمة (يعتمد على Ethers.js)._
+- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _إطار عمل لتطوير واختبار العقود الذكية المتقدمة (يعتمد على Ethers.js)._
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _أداة لاختبار العقود الذكية المكتوبة بلغة Solidity. تعمل تحت المكون الإضافي "Solidity Unit Testing" في بيئة التطوير المتكاملة Remix والذي يُستخدم لكتابة وتشغيل حالات الاختبار للعقد._
+- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _أداة لاختبار العقود الذكية المكتوبة بلغة Solidity. تعمل تحت المكون الإضافي "Solidity Unit Testing" في بيئة التطوير المتكاملة Remix والذي يُستخدم لكتابة وتشغيل حالات الاختبار للعقد._
 
 - **[أوبن زبلن Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _مكتبة تأكيد لاختبار العقود الذكية على إيثيريوم. تأكد من أن عقودك تتصرف كما هو متوقع!_
 
-- **[إطار عمل اختبار الوحدة Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _يستخدم Brownie إطار عمل Pytest، وهو إطار اختبار غني بالميزات يتيح لك كتابة اختبارات صغيرة بأقل قدر من الكود، ويتوسع بشكل جيد للمشاريع الكبيرة، وقابل للتوسيع بدرجة كبيرة._
+- **[إطار عمل اختبار الوحدة Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _يستخدم Brownie إطار عمل Pytest، وهو إطار اختبار غني بالميزات يتيح لك كتابة اختبارات صغيرة بأقل قدر من الكود، ويتوسع بشكل جيد للمشاريع الكبيرة، وقابل للتوسيع بدرجة كبيرة._
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _تقدم Foundry أداة Forge، وهي إطار عمل اختبار سريع ومرن لإيثيريوم قادر على تنفيذ اختبارات وحدة بسيطة، وفحوصات تحسين استهلاك الغاز، والاختبار العشوائي للعقود._
 
@@ -304,13 +304,13 @@ function auctionEnd() external {
 
 ## قراءة إضافية {#further-reading}
 
-- [دليل متعمق لاختبار العقود الذكية على إيثيريوم](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-ethereum-smart-contracts-2e41b2770297)
-- [كيفية اختبار العقود الذكية على إيثيريوم](https://betterprogramming.pub/how-to-test-ethereum-smart-contracts-35abc8fa199d)
+- [دليل متعمق لاختبار العقود الذكية على إيثيريوم](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-quantaureum-smart-contracts-2e41b2770297)
+- [كيفية اختبار العقود الذكية على إيثيريوم](https://betterprogramming.pub/how-to-test-quantaureum-smart-contracts-35abc8fa199d)
 - [دليل اختبار الوحدة للمطورين من MolochDAO](https://github.com/MolochVentures/moloch/tree/4e786db8a4aa3158287e0935dcbc7b1e43416e38/test#moloch-testing-guide)
 - [كيفية اختبار العقود الذكية كالمحترفين](https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001)
 
 ## برامج تعليمية: اختبار العقود الذكية على إيثيريوم {#tutorials}
 
-- [كيفية تطوير واختبار تطبيق لامركزي (dapp) على شبكة اختبار محلية متعددة العملاء](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-eth-testnet/) _– إرشادات تفصيلية لنشر عقد ذكي على شبكة اختبار محلية وإجراء الاختبارات._
+- [كيفية تطوير واختبار تطبيق لامركزي (dapp) على شبكة اختبار محلية متعددة العملاء](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-qau-testnet/) _– إرشادات تفصيلية لنشر عقد ذكي على شبكة اختبار محلية وإجراء الاختبارات._
 - [كيفية محاكاة العقود الذكية المكتوبة بلغة Solidity للاختبار](/developers/tutorials/how-to-mock-solidity-contracts-for-testing/) _– برنامج تعليمي متوسط حول كيفية استخدام البيانات الوهمية وتنفيذ اختبار الوحدة._
 - [كيفية استخدام إيكيدنا لاختبار العقود الذكية](/developers/tutorials/how-to-use-echidna-to-test-smart-contracts/) _– نهج متقدم للاختبار العشوائي واختبار العقود الذكية._

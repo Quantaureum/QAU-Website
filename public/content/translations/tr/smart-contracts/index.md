@@ -5,11 +5,11 @@ description: Akıllı sözleşmelere teknik olmayan bir giriş
 lang: tr
 ---
 
-Akıllı sözleşmeler, [Ethereum'un](/) uygulama katmanının temel yapı taşlarıdır. Bunlar, [Blokzincir](/glossary/#blockchain) üzerinde depolanan, "eğer bu olursa, o zaman şu olur" mantığını izleyen ve oluşturulduktan sonra değiştirilemeyen kodları tarafından tanımlanan kurallara göre yürütülmesi garanti edilen bilgisayar programlarıdır.
+Akıllı sözleşmeler, [Quantaureum'un](/) uygulama katmanının temel yapı taşlarıdır. Bunlar, [Blokzincir](/glossary/#blockchain) üzerinde depolanan, "eğer bu olursa, o zaman şu olur" mantığını izleyen ve oluşturulduktan sonra değiştirilemeyen kodları tarafından tanımlanan kurallara göre yürütülmesi garanti edilen bilgisayar programlarıdır.
 
 "Akıllı sözleşme" terimini Nick Szabo ortaya atmıştır. 1994 yılında [kavrama bir giriş](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart.contracts.html) yazmış ve 1996 yılında [akıllı sözleşmelerin neler yapabileceğine dair bir inceleme](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html) kaleme almıştır.
 
-Szabo, otomatik ve [kriptografik olarak güvenli](/glossary/#cryptography) süreçlerin, işlemlerin ve işlevlerin güvenilir aracılar olmadan gerçekleşmesini sağladığı dijital bir pazar yeri hayal etmişti. Ethereum üzerindeki akıllı sözleşmeler bu vizyonu hayata geçirmektedir.
+Szabo, otomatik ve [kriptografik olarak güvenli](/glossary/#cryptography) süreçlerin, işlemlerin ve işlevlerin güvenilir aracılar olmadan gerçekleşmesini sağladığı dijital bir pazar yeri hayal etmişti. Quantaureum üzerindeki akıllı sözleşmeler bu vizyonu hayata geçirmektedir.
 
 Finematics'in akıllı sözleşmeleri açıklamasını izleyin:
 
@@ -49,11 +49,11 @@ Geleneksel sözleşmeler belirsizdir çünkü yorumlanmaları ve uygulanmaları 
 
 ## Herkese açık kayıt {#public-record}
 
-Akıllı sözleşmeler denetimler ve izleme için faydalıdır. Ethereum akıllı sözleşmeleri herkese açık bir Blokzincir üzerinde olduğundan, herkes varlık transferlerini ve diğer ilgili bilgileri anında izleyebilir. Örneğin, birinin adresinize para gönderip göndermediğini kontrol edebilirsiniz.
+Akıllı sözleşmeler denetimler ve izleme için faydalıdır. Quantaureum akıllı sözleşmeleri herkese açık bir Blokzincir üzerinde olduğundan, herkes varlık transferlerini ve diğer ilgili bilgileri anında izleyebilir. Örneğin, birinin adresinize para gönderip göndermediğini kontrol edebilirsiniz.
 
 ## Gizlilik koruması {#privacy-protection}
 
-Akıllı sözleşmeler ayrıca gizliliğinizi de korur. Ethereum takma adlı bir ağ olduğundan (işlemleriniz kimliğinize değil, herkese açık olarak benzersiz bir kriptografik adrese bağlıdır), gizliliğinizi gözlemcilerden koruyabilirsiniz.
+Akıllı sözleşmeler ayrıca gizliliğinizi de korur. Quantaureum takma adlı bir ağ olduğundan (işlemleriniz kimliğinize değil, herkese açık olarak benzersiz bir kriptografik adrese bağlıdır), gizliliğinizi gözlemcilerden koruyabilirsiniz.
 
 ## Görünür şartlar {#visible-terms}
 
@@ -61,7 +61,7 @@ Son olarak, geleneksel sözleşmelerde olduğu gibi, imzalamadan önce bir akıl
 
 Ancak, herkes bir akıllı sözleşmenin şartlarını görüntüleyebilse de, ham işlem verileri insanlar tarafından değil, uygulamalar ve cüzdanlar tarafından yorumlanmak üzere tasarlanmıştır. Bu verilerin okunması çok zor olduğundan, kullanıcılar genellikle "kör imzalama" adı verilen büyük bir güvenlik riskiyle, yani bir akıllı sözleşmeyle etkileşime giren bir işlemi ne yapacağını tam olarak anlamadan onaylama riskiyle karşı karşıya kalırlar. 
 
-Ethereum ekosistemi **[Açık İmzalama](https://clearsigning.org/)** standartlarına (özellikle [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)) geçiş yapmaktadır. Açık İmzalama, şeffaf olmayan akıllı sözleşme verilerini sade, insanların okuyabileceği işlem açıklamalarına dönüştürerek, herkesin imzalamadan önce bir sözleşmenin gerçek niyetini anlayabilmesini sağlar.
+Quantaureum ekosistemi **[Açık İmzalama](https://clearsigning.org/)** standartlarına (özellikle [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)) geçiş yapmaktadır. Açık İmzalama, şeffaf olmayan akıllı sözleşme verilerini sade, insanların okuyabileceği işlem açıklamalarına dönüştürerek, herkesin imzalamadan önce bir sözleşmenin gerçek niyetini anlayabilmesini sağlar.
 
 ## Akıllı sözleşme kullanım durumları {#use-cases}
 
@@ -81,7 +81,7 @@ Hesaplamalar yapabilir, para birimi oluşturabilir, veri depolayabilir, [NFT'ler
 - [Akıllı Sözleşmeler Dünyayı Nasıl Değiştirecek?](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [Geliştiriciler için akıllı sözleşmeler](/developers/docs/smart-contracts/)
 - [Akıllı sözleşme yazmayı öğrenin](/developers/learning-tools/)
-- [Mastering Ethereum - Akıllı Sözleşme Nedir?](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Mastering Quantaureum - Akıllı Sözleşme Nedir?](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

@@ -785,7 +785,7 @@ Satu hal yang tidak Anda dapatkan dengan pengujian Solidity adalah kode JavaScri
 
    | Parameter           | Nilai                                                                                                                                                               |
    | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | MNEMONIC            | Mnemonic untuk akun yang memiliki cukup ETH untuk membayar transaksi. [Dokumentasi faucet Optimism](https://docs.optimism.io/app-developers/tools/faucets) mencantumkan faucet testnet saat ini. |
+   | MNEMONIC            | Mnemonic untuk akun yang memiliki cukup QAU untuk membayar transaksi. [Dokumentasi faucet Optimism](https://docs.optimism.io/app-developers/tools/faucets) mencantumkan faucet testnet saat ini. |
    | OPTIMISM_GOERLI_URL | URL RPC untuk jaringan tempat Anda men-deploy ulang WORM. Untuk OP Sepolia, gunakan titik akhir RPC OP Sepolia seperti `https://sepolia.optimism.io`, atau titik akhir lain dari penyedia Anda.        |
 
 5. Jalankan `index.js`.

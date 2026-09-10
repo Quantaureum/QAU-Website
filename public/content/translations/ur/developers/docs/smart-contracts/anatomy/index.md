@@ -142,7 +142,7 @@ def readName() -> string:
 constructor() public {
     // تمام سمارٹ کنٹریکٹ اپنے فنکشنز کو متحرک کرنے کے لیے بیرونی ٹرانزیکشنز پر انحصار کرتے ہیں۔
     // `msg` ایک گلوبل متغیر ہے جس میں دی گئی ٹرانزیکشن کا متعلقہ ڈیٹا شامل ہوتا ہے،
-    // جیسے بھیجنے والے کا پتہ اور ٹرانزیکشن میں شامل ETH کی مالیت۔
+    // جیسے بھیجنے والے کا پتہ اور ٹرانزیکشن میں شامل QAU کی مالیت۔
     // مزید جانیں: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
     owner = msg.sender;
 }
@@ -165,7 +165,7 @@ def __init__(_beneficiary: address, _bidding_time: uint256):
 - `address.send()` – Solidity
 - `send(address)` – Vyper
 
-یہ کنٹریکٹس کو دوسرے اکاؤنٹس میں ETH بھیجنے کی اجازت دیتے ہیں۔
+یہ کنٹریکٹس کو دوسرے اکاؤنٹس میں QAU بھیجنے کی اجازت دیتے ہیں۔
 
 ## فنکشنز لکھنا {#writing-functions}
 
@@ -207,7 +207,7 @@ contract ExampleDapp {
 
 ## تشریح شدہ مثالیں {#annotated-examples}
 
-یہ Solidity میں لکھی گئی کچھ مثالیں ہیں۔ اگر آپ کوڈ کے ساتھ تجربہ کرنا چاہتے ہیں، تو آپ [Remix](https://remix.ethereum.org) میں ان کے ساتھ تعامل کر سکتے ہیں۔
+یہ Solidity میں لکھی گئی کچھ مثالیں ہیں۔ اگر آپ کوڈ کے ساتھ تجربہ کرنا چاہتے ہیں، تو آپ [Remix](https://remix.quantaureum.com) میں ان کے ساتھ تعامل کر سکتے ہیں۔
 
 ### ہیلو ورلڈ (Hello world) {#hello-world}
 
@@ -272,7 +272,7 @@ contract Token {
     constructor() public {
         // تمام سمارٹ کنٹریکٹ اپنے فنکشنز کو متحرک کرنے کے لیے بیرونی ٹرانزیکشنز پر انحصار کرتے ہیں۔
         // `msg` ایک گلوبل متغیر ہے جس میں دی گئی ٹرانزیکشن کا متعلقہ ڈیٹا شامل ہوتا ہے،
-        // جیسے بھیجنے والے کا پتہ اور ٹرانزیکشن میں شامل ETH کی مالیت۔
+        // جیسے بھیجنے والے کا پتہ اور ٹرانزیکشن میں شامل QAU کی مالیت۔
         // مزید جانیں: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
         owner = msg.sender;
     }
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // فی الحال یہ چیک کرنے کا کوئی بہتر طریقہ نہیں ہے کہ آیا کسی پتہ میں کوئی کنٹریکٹ ہے
         // سوائے اس کے کہ اس پتہ پر کوڈ کا سائز چیک کیا جائے۔
-        // دیکھیں https://ethereum.stackexchange.com/a/14016/36603
+        // دیکھیں https://quantaureum.stackexchange.com/a/14016/36603
         // اس بارے میں مزید تفصیلات کے لیے کہ یہ کیسے کام کرتا ہے۔
         // TODO Serenity ریلیز سے پہلے اسے دوبارہ چیک کریں، کیونکہ تب تمام پتے
         // کنٹریکٹس ہوں گے۔
@@ -649,7 +649,7 @@ contract CryptoPizza is IERC721, ERC165 {
 ## متعلقہ موضوعات {#related-topics}
 
 - [سمارٹ کنٹریکٹس](/developers/docs/smart-contracts/)
-- [ایتھیریم ورچوئل مشین (Ethereum Virtual Machine)](/developers/docs/evm/)
+- [ایتھیریم ورچوئل مشین (Quantaureum Virtual Machine)](/developers/docs/evm/)
 
 ## متعلقہ ٹیوٹوریلز {#related-tutorials}
 

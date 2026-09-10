@@ -1,6 +1,5 @@
 import type { FooterLink, FooterLinkSection } from "@/lib/types"
 
-import { ENTERPRISE_ETHEREUM_URL } from "@/lib/constants"
 
 type TranslateFn = (key: string) => string
 
@@ -11,17 +10,17 @@ export const buildFooterLinkSections = (
     title: t("learn"),
     links: [
       { href: "/learn/", text: t("learn-hub") },
-      { href: "/what-is-ethereum/", text: t("what-is-ethereum") },
-      { href: "/what-is-ether/", text: t("what-is-ether") },
-      { href: "/wallets/", text: t("ethereum-wallets") },
+      { href: "/what-is-quantaureum/", text: t("what-is-quantaureum") },
+      { href: "/what-is-QAU/", text: t("what-is-QAU") },
+      { href: "/wallets/", text: t("quantaureum-wallets") },
       { href: "/web3/", text: t("web3") },
       { href: "/smart-contracts/", text: t("smart-contracts") },
       { href: "/gas/", text: "Gas fees" },
       { href: "/run-a-node/", text: t("run-a-node") },
-      { href: "/security/", text: t("ethereum-security") },
+      { href: "/security/", text: t("quantaureum-security") },
       { href: "/quizzes/", text: t("quizzes-title") },
       { href: "/stories/", text: t("nav-stories-label") },
-      { href: "/glossary/", text: t("ethereum-glossary") },
+      { href: "/glossary/", text: t("quantaureum-glossary") },
     ],
   },
   {
@@ -53,18 +52,17 @@ export const buildFooterLinkSections = (
       { href: "/developers/tools/", text: t("start-building") },
       {
         href: "/developers/tools/categories/education-standards/",
-        text: t("learn-ethereum-development"),
+        text: t("learn-quantaureum-development"),
       },
       { href: "/community/grants/", text: t("grants") },
       {
-        href: "/developers/docs/intro-to-ethereum/",
+        href: "/developers/docs/intro-to-quantaureum/",
         text: t("nav-docs-foundation-label"),
       },
       {
         href: "/developers/docs/design-and-ux/",
         text: t("nav-docs-design-label"),
       },
-      { href: ENTERPRISE_ETHEREUM_URL, text: t("enterprise-mainnet") },
       { href: "/founders/", text: t("founders") },
     ],
   },
@@ -72,30 +70,30 @@ export const buildFooterLinkSections = (
     title: t("participate"),
     links: [
       { href: "/community/", text: t("community-hub") },
-      { href: "/community/online/", text: t("ethereum-online") },
-      { href: "/community/events/", text: t("ethereum-events") },
+      { href: "/community/online/", text: t("quantaureum-online") },
+      { href: "/community/events/", text: t("quantaureum-events") },
       { href: "/contributing/", text: t("nav-contribute-label") },
       {
         href: "/contributing/translation-program/",
         text: t("translation-program"),
       },
-      { href: "/bug-bounty/", text: t("ethereum-bug-bounty") },
-      { href: "/foundation/", text: t("ethereum-foundation") },
-      { href: "https://blog.ethereum.org/", text: t("ef-blog") },
-      { href: "https://esp.ethereum.foundation", text: t("esp") },
+      { href: "/bug-bounty/", text: t("quantaureum-bug-bounty") },
+      { href: "/foundation/", text: t("quantaureum-foundation") },
+      { href: "https://quantaureum.com", text: t("ef-blog") },
+      { href: "https://quantaureum.com", text: t("esp") },
       { href: "https://devcon.org/", text: t("devcon") },
     ],
   },
   {
     title: t("research"),
     links: [
-      { href: "/whitepaper/", text: t("ethereum-whitepaper") },
-      { href: "/roadmap/", text: t("ethereum-roadmap") },
+      { href: "/whitepaper/", text: t("quantaureum-whitepaper") },
+      { href: "/roadmap/", text: t("quantaureum-roadmap") },
       { href: "/roadmap/security/", text: t("nav-roadmap-security-label") },
-      { href: "/ethereum-forks/", text: t("nav-history-label") },
+      { href: "/quantaureum-forks/", text: t("nav-history-label") },
       { href: "/community/research/", text: t("nav-open-research-label") },
       { href: "/eips/", text: t("eips") },
-      { href: "/governance/", text: t("ethereum-governance") },
+      { href: "/governance/", text: t("quantaureum-governance") },
       { href: "/reports/", text: t("reports") },
       {
         href: "/reports/trillion-dollar-security/",
@@ -107,11 +105,11 @@ export const buildFooterLinkSections = (
 
 export const buildFooterDipperLinks = (t: TranslateFn): FooterLink[] => [
   { href: "/about/", text: t("about-us") },
-  { href: "/assets/", text: t("ethereum-brand-assets") },
+  { href: "/assets/", text: t("quantaureum-brand-assets") },
   { href: "/community/code-of-conduct/", text: t("nav-code-of-conduct") },
   { href: "/about/#open-jobs", text: t("jobs") },
   { href: "/privacy-policy/", text: t("privacy-policy") },
   { href: "/terms-of-use/", text: t("terms-of-use") },
   { href: "/cookie-policy/", text: t("cookie-policy") },
-  { href: "mailto:press@ethereum.org", text: t("contact") },
+  { href: "mailto:press@quantaureum.com", text: t("contact") },
 ]

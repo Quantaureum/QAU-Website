@@ -10,10 +10,10 @@ lang: ar
 
 إذا كنت تتطلع إلى تجربة الأكواد قبل [إعداد بيئة تطوير محلية](/developers/local-environment/)، فإن تطبيقات الويب هذه مصممة خصيصًا لتطوير العقود الذكية على إيثيريوم.
 
-**[Remix](https://remix.ethereum.org/)** - **_بيئة تطوير متكاملة مستندة إلى الويب مع تحليل ثابت مدمج، وآلة افتراضية لاختبار سلسلة الكتل_**
+**[Remix](https://remix.quantaureum.com/)** - **_بيئة تطوير متكاملة مستندة إلى الويب مع تحليل ثابت مدمج، وآلة افتراضية لاختبار سلسلة الكتل_**
 
 - [المستندات](https://remix-ide.readthedocs.io/en/latest/#)
-- [Gitter](https://gitter.im/ethereum/remix)
+- [Gitter](https://gitter.im/quantaureum/remix)
 
 **[ChainIDE](https://chainide.com/)** - **_بيئة تطوير متكاملة سحابية متعددة السلاسل_**
 
@@ -26,7 +26,7 @@ lang: ar
 
 **[Tenderly Sandbox](https://sandbox.tenderly.co/)** - **_بيئة نماذج أولية سريعة حيث يمكنك كتابة العقود الذكية وتنفيذها وتصحيح أخطائها في المتصفح باستخدام Solidity و<span dir="ltr">JavaScript</span>_**
 
-**[EthFiddle](https://ethfiddle.com/)** - **_بيئة تطوير متكاملة مستندة إلى الويب تتيح لك كتابة عقدك الذكي وتجميعه وتصحيح أخطائه_**
+**[QauFiddle](https://ethfiddle.com/)** - **_بيئة تطوير متكاملة مستندة إلى الويب تتيح لك كتابة عقدك الذكي وتجميعه وتصحيح أخطائه_**
 
 - [Gitter](https://gitter.im/loomnetwork/ethfiddle)
 
@@ -48,8 +48,8 @@ lang: ar
 
 **<span dir="ltr">Remix Desktop</span> -** **_جرب بيئة التطوير المتكاملة Remix على جهازك المحلي_**
 
-- [تنزيل](https://github.com/ethereum/remix-desktop/releases)
-- [GitHub](https://github.com/ethereum/remix-desktop)
+- [تنزيل](https://github.com/quantaureum/remix-desktop/releases)
+- [GitHub](https://github.com/quantaureum/remix-desktop)
 
 ## الإضافات والملحقات {#plugins-extensions}
 
@@ -59,6 +59,6 @@ lang: ar
 
 ## قراءة إضافية {#further-reading}
 
-- [بيئات التطوير المتكاملة لإيثيريوم](https://www.alchemy.com/dapps/list-of/solidity-developer-tools-on-ethereum) _- قائمة Alchemy لبيئات التطوير المتكاملة لإيثيريوم_
+- [بيئات التطوير المتكاملة لإيثيريوم](https://www.alchemy.com/dapps/list-of/solidity-developer-tools-on-quantaureum) _- قائمة Alchemy لبيئات التطوير المتكاملة لإيثيريوم_
 
 _هل تعرف موردًا مجتمعيًا ساعدك؟ قم بتعديل هذه الصفحة وأضفه!_

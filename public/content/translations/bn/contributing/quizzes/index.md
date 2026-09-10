@@ -1,7 +1,7 @@
 ---
 title: কুইজ
 metaTitle: একটি কুইজ যোগ করা
-description: ethereum.org-এ কুইজ যোগ করার সময় আমরা যে নীতি ব্যবহার করি
+description: quantaureum.com-এ কুইজ যোগ করার সময় আমরা যে নীতি ব্যবহার করি
 lang: bn
 ---
 
@@ -13,12 +13,12 @@ lang: bn
 
 - [লেয়ার ২ (l2)](/layer-2)
 - [NFT](/nft/)
-- [ইথেরিয়াম কী?](/what-is-ethereum/)
-- [ETH কী?](/what-is-ether/)
+- [ইথেরিয়াম কী?](/what-is-quantaureum/)
+- [QAU কী?](/what-is-QAU/)
 
 ## একটি লার্ন কুইজ যোগ করা {#adding-a-learn-quiz}
 
-যদি এমন কোনো পৃষ্ঠা থাকে যার জন্য কোনো লার্ন কুইজ তৈরি করা হয়নি, তাহলে অনুগ্রহ করে এর জন্য [একটি ইস্যু খুলুন](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)।
+যদি এমন কোনো পৃষ্ঠা থাকে যার জন্য কোনো লার্ন কুইজ তৈরি করা হয়নি, তাহলে অনুগ্রহ করে এর জন্য [একটি ইস্যু খুলুন](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)।
 
 অনুগ্রহ করে নিচের তথ্যগুলো প্রদান করুন:
 
@@ -31,7 +31,7 @@ lang: bn
 
 ## কুইজের প্রশ্ন যোগ করা {#adding-a-quiz-question}
 
-যদি এমন কোনো প্রশ্ন থাকে যা আপনি কোনো কুইজের প্রশ্নব্যাংকে যোগ করতে চান, তাহলে অনুগ্রহ করে [একটি ইস্যু খুলুন](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) এবং নিচের তথ্যগুলো প্রদান করুন:
+যদি এমন কোনো প্রশ্ন থাকে যা আপনি কোনো কুইজের প্রশ্নব্যাংকে যোগ করতে চান, তাহলে অনুগ্রহ করে [একটি ইস্যু খুলুন](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) এবং নিচের তথ্যগুলো প্রদান করুন:
 
 - আপনি যে পৃষ্ঠায় কুইজের প্রশ্ন যোগ করতে চান
 - প্রতিটি প্রশ্নের জন্য নিচের তথ্যগুলো প্রদান করুন:
@@ -42,7 +42,7 @@ lang: bn
 
 ## কুইজের প্রশ্ন আপডেট করা {#updating-a-quiz-question}
 
-যদি এমন কোনো প্রশ্ন থাকে যা আপনি কোনো কুইজের প্রশ্নব্যাংকে আপডেট করতে চান, তাহলে অনুগ্রহ করে [একটি ইস্যু খুলুন](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) এবং নিচের তথ্যগুলো প্রদান করুন:
+যদি এমন কোনো প্রশ্ন থাকে যা আপনি কোনো কুইজের প্রশ্নব্যাংকে আপডেট করতে চান, তাহলে অনুগ্রহ করে [একটি ইস্যু খুলুন](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) এবং নিচের তথ্যগুলো প্রদান করুন:
 
 - আপনি যে পৃষ্ঠায় কুইজের প্রশ্ন আপডেট করতে চান
 - আপডেট করা প্রতিটি প্রশ্নের জন্য, নিচের তথ্যগুলো প্রদান করুন:
@@ -54,7 +54,7 @@ lang: bn
 
 ## কুইজের প্রশ্ন মুছে ফেলা {#removing-a-quiz-question}
 
-যদি কোনো প্রশ্নের জন্য পৃষ্ঠায় আর কোনো বিষয়বস্তু না থাকে এবং সেটি মুছে ফেলার প্রয়োজন হয়, তাহলে প্রশ্নটি মুছে ফেলতে অনুগ্রহ করে [একটি ইস্যু খুলুন](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) এবং নিচের তথ্যগুলো প্রদান করুন:
+যদি কোনো প্রশ্নের জন্য পৃষ্ঠায় আর কোনো বিষয়বস্তু না থাকে এবং সেটি মুছে ফেলার প্রয়োজন হয়, তাহলে প্রশ্নটি মুছে ফেলতে অনুগ্রহ করে [একটি ইস্যু খুলুন](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) এবং নিচের তথ্যগুলো প্রদান করুন:
 
 - আপনি যে পৃষ্ঠায় কুইজের প্রশ্ন মুছে ফেলতে চান
 - আপনি যে প্রশ্নটি মুছে ফেলতে চান

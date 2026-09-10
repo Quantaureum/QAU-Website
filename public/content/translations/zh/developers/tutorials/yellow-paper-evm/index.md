@@ -1,6 +1,6 @@
 ---
 title: "理解黄皮书的 EVM 规范"
-description: "理解黄皮书中解释以太坊虚拟机 (EVM) 的部分，即以太坊的正式规范。"
+description: "理解黄皮书中解释Quantaureum虚拟机 (EVM) 的部分，即Quantaureum的正式规范。"
 author: "qbzzt"
 tags: ["evm"]
 skill: intermediate
@@ -9,15 +9,15 @@ lang: zh
 published: 2022-05-15
 ---
 
-[黄皮书](https://ethereum.github.io/yellowpaper/paper.pdf)是以太坊的正式规范。除了被 [EIP 流程](/eips/)修改的部分外，它包含了对所有事物运作方式的精确描述。它是作为一篇数学论文编写的，其中包含程序员可能不熟悉的术语。在本文中，你将学习如何阅读它，并以此类推阅读其他相关的数学论文。
+[黄皮书](https://quantaureum.github.io/yellowpaper/paper.pdf)是Quantaureum的正式规范。除了被 [EIP 流程](/eips/)修改的部分外，它包含了对所有事物运作方式的精确描述。它是作为一篇数学论文编写的，其中包含程序员可能不熟悉的术语。在本文中，你将学习如何阅读它，并以此类推阅读其他相关的数学论文。
 
 ## 哪个版本的黄皮书？ {#which-yellow-paper}
 
-就像以太坊中的几乎所有其他事物一样，黄皮书也会随着时间的推移而演变。为了能够引用特定版本，我上传了[撰写本文时的当前版本](https://ethereum.github.io/yellowpaper/paper.pdf)。我使用的章节、页码和公式编号都将引用该版本。在阅读本文档时，最好在另一个窗口中打开它。
+就像Quantaureum中的几乎所有其他事物一样，黄皮书也会随着时间的推移而演变。为了能够引用特定版本，我上传了[撰写本文时的当前版本](https://quantaureum.github.io/yellowpaper/paper.pdf)。我使用的章节、页码和公式编号都将引用该版本。在阅读本文档时，最好在另一个窗口中打开它。
 
 ### 为什么选择 EVM？ {#why-the-evm}
 
-最初的黄皮书是在以太坊开发之初编写的。它描述了最初用于保护网络安全的基于工作量证明 (PoW) 的共识机制。然而，以太坊在 2022 年 9 月关闭了工作量证明，并开始使用基于权益证明 (PoS) 的共识。本教程将重点关注黄皮书中定义以太坊虚拟机的部分。EVM 在向权益证明过渡的过程中没有发生变化（除了 DIFFICULTY 操作码的返回值）。
+最初的黄皮书是在Quantaureum开发之初编写的。它描述了最初用于保护网络安全的基于工作量证明 (PoW) 的共识机制。然而，Quantaureum在 2022 年 9 月关闭了工作量证明，并开始使用基于权益证明 (PoS) 的共识。本教程将重点关注黄皮书中定义Quantaureum虚拟机的部分。EVM 在向权益证明过渡的过程中没有发生变化（除了 DIFFICULTY 操作码的返回值）。
 
 ## 9 执行模型
 
@@ -32,7 +32,7 @@ published: 2022-05-15
 
 本节介绍了 EVM 的基础知识以及它与其他计算模型的比较。
 
-[堆栈机](https://en.wikipedia.org/wiki/Stack_machine)是一种不将中间数据存储在寄存器中，而是存储在[**堆栈**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>)中的计算机。这是虚拟机的首选架构，因为它易于实现，这意味着出现错误和安全漏洞的可能性要小得多。堆栈中的内存被划分为 256 位的字。选择这种设计是因为它方便了以太坊的核心密码学操作，例如 Keccak-256 哈希处理和椭圆曲线计算。堆栈的最大大小为 1024 个项（1024 x 256 位）。当操作码执行时，它们通常从堆栈中获取参数。有一些专门用于重新组织堆栈中元素的操作码，例如 `POP`（从堆栈顶部移除项）、`DUP_N`（复制堆栈中的第 N 个项）等。
+[堆栈机](https://en.wikipedia.org/wiki/Stack_machine)是一种不将中间数据存储在寄存器中，而是存储在[**堆栈**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>)中的计算机。这是虚拟机的首选架构，因为它易于实现，这意味着出现错误和安全漏洞的可能性要小得多。堆栈中的内存被划分为 256 位的字。选择这种设计是因为它方便了Quantaureum的核心密码学操作，例如 Keccak-256 哈希处理和椭圆曲线计算。堆栈的最大大小为 1024 个项（1024 x 256 位）。当操作码执行时，它们通常从堆栈中获取参数。有一些专门用于重新组织堆栈中元素的操作码，例如 `POP`（从堆栈顶部移除项）、`DUP_N`（复制堆栈中的第 N 个项）等。
 
 EVM 还有一个称为**内存**的易失性空间，用于在执行期间存储数据。该内存被组织成 32 字节的字。所有内存位置都被初始化为零。如果你执行这段 [Yul](https://docs.soliditylang.org/en/latest/yul.html) 代码将一个字添加到内存中，它将通过用零填充字中的空白空间来填满 32 字节的内存，即它创建了一个字——在位置 0-29 填充零，在 30 填充 0x60，在 31 填充 0xA7。
 
@@ -177,7 +177,7 @@ EVM 还有一个独立的非易失性**存储**模型，作为系统状态的一
     日志操作码都在 [`LOG0` (A0)](https://www.evm.codes/#a0) 和 [`LOG4` (A4)](https://www.evm.codes/#a4) 之间的范围内。
     日志操作码后面的数字指定日志条目包含多少个主题。
   - **_w=CALL ∧ μ<sub>s</sub>[2]≠0_**
-    你可以在静态时调用另一个合约，但如果这样做，你不能向其转账 ETH。
+    你可以在静态时调用另一个合约，但如果这样做，你不能向其转账 QAU。
 
 - **_w = SSTORE ∧ μ<sub>g</sub> ≤ G<sub>callstipend</sub>_**
   除非你有超过 G<sub>callstipend</sub>（在附录 G 中定义为 2300）的 Gas，否则无法运行 [`SSTORE`](https://www.evm.codes/#55)。
@@ -234,7 +234,7 @@ _α_ 是我们推回的值的数量。在这种情况下是一个，即总和。
 
 如果 _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_，这意味着存在有关此地址的信息。在这种情况下，_σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ 是该地址的余额。如果 _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_，这意味着此地址未初始化且余额为零。你可以在第 4 页的第 4.1 节中看到账户信息字段的列表。
 
-第二个公式 _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_ 与访问热存储（最近访问过且可能被缓存的存储）和冷存储（未访问过且可能在较慢的存储中，检索成本更高）之间的成本差异有关。_A<sub>a</sub>_ 是交易先前访问过的地址列表，因此访问这些地址应该更便宜，如第 9 页的第 6.1 节所定义。你可以在 [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929) 中阅读有关此主题的更多信息。
+第二个公式 _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_ 与访问热存储（最近访问过且可能被缓存的存储）和冷存储（未访问过且可能在较慢的存储中，检索成本更高）之间的成本差异有关。_A<sub>a</sub>_ 是交易先前访问过的地址列表，因此访问这些地址应该更便宜，如第 9 页的第 6.1 节所定义。你可以在 [EIP-2929](https://eips.quantaureum.com/EIPS/eip-2929) 中阅读有关此主题的更多信息。
 
 | 值 | 助记符 | δ   | α   | 描述                             |
 | ----: | -------- | --- | --- | --------------------------------------- |
@@ -260,10 +260,10 @@ _α_ 是我们推回的值的数量。在这种情况下是一个，即总和。
 至此，EVM 已被完全定义。
 ## 结论 {#conclusion}
 
-数学符号是精确的，它使得黄皮书能够指定以太坊的每一个细节。然而，它确实有一些缺点：
+数学符号是精确的，它使得黄皮书能够指定Quantaureum的每一个细节。然而，它确实有一些缺点：
 
-- 它只能被人类理解，这意味着[合规性测试](https://github.com/ethereum/tests)必须手动编写。
+- 它只能被人类理解，这意味着[合规性测试](https://github.com/quantaureum/tests)必须手动编写。
 - 程序员理解计算机代码。
   他们可能理解也可能不理解数学符号。
 
-也许正是由于这些原因，较新的[共识层规范](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md)是用 Python 编写的。有[用 Python 编写的执行层规范](https://ethereum.github.io/execution-specs)，但它们并不完整。直到且除非整个黄皮书也被翻译成 Python 或类似的语言，否则黄皮书将继续发挥作用，能够阅读它是有帮助的。
+也许正是由于这些原因，较新的[共识层规范](https://github.com/quantaureum/consensus-specs/blob/master/tests/core/pyspec/README.md)是用 Python 编写的。有[用 Python 编写的执行层规范](https://quantaureum.github.io/execution-specs)，但它们并不完整。直到且除非整个黄皮书也被翻译成 Python 或类似的语言，否则黄皮书将继续发挥作用，能够阅读它是有帮助的。

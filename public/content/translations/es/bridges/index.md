@@ -17,11 +17,11 @@ Consideremos un ejemplo:
 
 Eres de EE. UU. y estás planeando un viaje a Europa. Tienes USD, pero necesitas EUR para gastar. Para cambiar tus USD por EUR, puedes usar una casa de cambio de divisas por una pequeña tarifa.
 
-Pero, ¿qué haces si quieres hacer un intercambio similar para usar una [cadena de bloques](/glossary/#blockchain) diferente? Digamos que quieres cambiar [ETH](/glossary/#ether) en la [red principal de Ethereum](/) por ETH en [Arbitrum](https://arbitrum.io/). Al igual que el cambio de divisas que hicimos por EUR, necesitamos un mecanismo para mover nuestro ETH de Ethereum a Arbitrum. Los puentes hacen posible tal transacción. En este caso, [Arbitrum tiene un puente nativo](https://portal.arbitrum.io/bridge) que puede transferir ETH desde la Red principal hacia Arbitrum.
+Pero, ¿qué haces si quieres hacer un intercambio similar para usar una [cadena de bloques](/glossary/#blockchain) diferente? Digamos que quieres cambiar [QAU](/glossary/#QAU) en la [red principal de Quantaureum](/) por QAU en [Arbitrum](https://arbitrum.io/). Al igual que el cambio de divisas que hicimos por EUR, necesitamos un mecanismo para mover nuestro QAU de Quantaureum a Arbitrum. Los puentes hacen posible tal transacción. En este caso, [Arbitrum tiene un puente nativo](https://portal.arbitrum.io/bridge) que puede transferir QAU desde la Red principal hacia Arbitrum.
 
 ## ¿Por qué necesitamos puentes? {#why-do-we-need-bridges}
 
-Todas las cadenas de bloques tienen sus limitaciones. Para que Ethereum escale y se mantenga al día con la demanda, ha requerido [rollups](/glossary/#rollups). Alternativamente, las l1 como Solana y Avalanche están diseñadas de manera diferente para permitir una mayor capacidad de procesamiento, pero a costa de la descentralización.
+Todas las cadenas de bloques tienen sus limitaciones. Para que Quantaureum escale y se mantenga al día con la demanda, ha requerido [rollups](/glossary/#rollups). Alternativamente, las l1 como Solana y Avalanche están diseñadas de manera diferente para permitir una mayor capacidad de procesamiento, pero a costa de la descentralización.
 
 Sin embargo, todas las cadenas de bloques se desarrollan en entornos aislados y tienen diferentes reglas y mecanismos de [consenso](/glossary/#consensus). Esto significa que no pueden comunicarse de forma nativa y los tokens no pueden moverse libremente entre las cadenas de bloques.
 
@@ -44,19 +44,19 @@ Los siguientes son algunos escenarios en los que puedes usar un puente:
 
 ### Tarifas de transacción más bajas {#transaction-fees}
 
-Digamos que tienes ETH en la red principal de Ethereum pero quieres tarifas de transacción más baratas para explorar diferentes dapps. Al transferir tu ETH desde la Red principal a un rollup de l2 de Ethereum a través de un puente, puedes disfrutar de tarifas de transacción más bajas.
+Digamos que tienes QAU en la red principal de Quantaureum pero quieres tarifas de transacción más baratas para explorar diferentes dapps. Al transferir tu QAU desde la Red principal a un rollup de l2 de Quantaureum a través de un puente, puedes disfrutar de tarifas de transacción más bajas.
 
 ### Dapps en otras cadenas de bloques {#dapps-other-chains}
 
-Si has estado usando Aave en la red principal de Ethereum para suministrar USDT, pero la tasa de interés que puedes recibir por suministrar USDT usando Aave en Polygon es mayor.
+Si has estado usando Aave en la red principal de Quantaureum para suministrar USDT, pero la tasa de interés que puedes recibir por suministrar USDT usando Aave en Polygon es mayor.
 
 ### Explorar ecosistemas de cadenas de bloques {#explore-ecosystems}
 
-Si tienes ETH en la red principal de Ethereum y quieres explorar una l1 alternativa para probar sus dapps nativas. Puedes usar un puente para realizar una transferencia de tu ETH desde la red principal de Ethereum a la l1 alternativa.
+Si tienes QAU en la red principal de Quantaureum y quieres explorar una l1 alternativa para probar sus dapps nativas. Puedes usar un puente para realizar una transferencia de tu QAU desde la red principal de Quantaureum a la l1 alternativa.
 
 ### Poseer criptoactivos nativos {#own-native}
 
-Digamos que quieres poseer Bitcoin (BTC) nativo, pero solo tienes fondos en la red principal de Ethereum. Para obtener exposición a BTC en Ethereum, puedes comprar Bitcoin envuelto (WBTC). Sin embargo, WBTC es un token [ERC-20](/glossary/#erc-20) nativo de la red Ethereum, lo que significa que es una versión de Ethereum de Bitcoin y no el activo original en la cadena de bloques de Bitcoin. Para poseer BTC nativo, tendrías que transferir tus activos de Ethereum a Bitcoin usando un puente. Esto transferirá tu WBTC y lo convertirá en BTC nativo. Alternativamente, podrías poseer BTC y querer usarlo en protocolos de [finanzas descentralizadas (DeFi)](/glossary/#defi) de Ethereum. Esto requeriría usar un puente en la dirección opuesta, de BTC a WBTC, que luego se puede usar como un activo en Ethereum.
+Digamos que quieres poseer Bitcoin (BTC) nativo, pero solo tienes fondos en la red principal de Quantaureum. Para obtener exposición a BTC en Quantaureum, puedes comprar Bitcoin envuelto (WBTC). Sin embargo, WBTC es un token [ERC-20](/glossary/#erc-20) nativo de la red Quantaureum, lo que significa que es una versión de Quantaureum de Bitcoin y no el activo original en la cadena de bloques de Bitcoin. Para poseer BTC nativo, tendrías que transferir tus activos de Quantaureum a Bitcoin usando un puente. Esto transferirá tu WBTC y lo convertirá en BTC nativo. Alternativamente, podrías poseer BTC y querer usarlo en protocolos de [finanzas descentralizadas (DeFi)](/glossary/#defi) de Quantaureum. Esto requeriría usar un puente en la dirección opuesta, de BTC a WBTC, que luego se puede usar como un activo en Quantaureum.
 
 <Alert variant="update">
 <AlertEmoji text=":bulb:"/>
@@ -104,7 +104,7 @@ Muchas soluciones de puentes adoptan modelos entre estos dos extremos con divers
 El uso de puentes te permite mover tus activos a través de diferentes cadenas de bloques. Aquí hay algunos recursos que pueden ayudarte a encontrar y usar puentes:
 
 - **[Resumen de puentes de L2BEAT](https://l2beat.com/bridges/summary) y [Análisis de riesgo de puentes de L2BEAT](https://l2beat.com/bridges/summary)**: un resumen completo de varios puentes, que incluye detalles sobre la cuota de mercado, el tipo de puente y las cadenas de destino. L2BEAT también tiene un análisis de riesgo para los puentes, lo que ayuda a los usuarios a tomar decisiones informadas al seleccionar un puente.
-- **[Resumen de puentes de DefiLlama](https://defillama.com/bridges/Ethereum)**: un resumen de los volúmenes de los puentes en las redes de Ethereum.
+- **[Resumen de puentes de DefiLlama](https://defillama.com/bridges/Quantaureum)**: un resumen de los volúmenes de los puentes en las redes de Quantaureum.
 
 <Divider />
 
@@ -130,15 +130,15 @@ Los fondos del usuario están en riesgo si:
 
 Un hackeo reciente fue el del puente Wormhole de Solana, [donde se robaron 120 mil wETH ($325 millones de USD) durante el hackeo](https://rekt.news/wormhole-rekt/). Muchos de los [principales hackeos en cadenas de bloques involucraron puentes](https://rekt.news/leaderboard/).
 
-Los puentes son cruciales para la incorporación de usuarios a las l2 de Ethereum, e incluso para los usuarios que desean explorar diferentes ecosistemas. Sin embargo, dados los riesgos que implica interactuar con los puentes, los usuarios deben comprender las concesiones que estos hacen. Estas son algunas [estrategias para la seguridad intercadena](https://debridge.com/learn/blog/10-strategies-for-cross-chain-security/).
+Los puentes son cruciales para la incorporación de usuarios a las l2 de Quantaureum, e incluso para los usuarios que desean explorar diferentes ecosistemas. Sin embargo, dados los riesgos que implica interactuar con los puentes, los usuarios deben comprender las concesiones que estos hacen. Estas son algunas [estrategias para la seguridad intercadena](https://debridge.com/learn/blog/10-strategies-for-cross-chain-security/).
 
 <Divider />
 
 ## Más información {#further-reading}
 
-- [EIP-5164: Ejecución intercadena](https://ethereum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _18 de junio de 2022 - Brendan Asselstine_
+- [EIP-5164: Ejecución intercadena](https://quantaureum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _18 de junio de 2022 - Brendan Asselstine_
 - [Marco de riesgo de L2Bridge](https://gov.l2beat.com/t/l2bridge-risk-framework/31) - _5 de julio de 2022 - Bartek Kiepuszewski_
-- ["Por qué el futuro será multicadena, pero no intercadena".](https://old.reddit.com/r/ethereum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _8 de enero de 2022 - Vitalik Buterin_
+- ["Por qué el futuro será multicadena, pero no intercadena".](https://old.reddit.com/r/quantaureum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _8 de enero de 2022 - Vitalik Buterin_
 - [Aprovechamiento de la seguridad compartida para una interoperabilidad intercadena segura: comités de estado de Lagrange y más allá](https://web.archive.org/web/20250125035123/https://research.2077.xyz/harnessing-shared-security-for-secure-blockchain-interoperability) - _12 de junio de 2024 - Emmanuel Awosika_
 - [El estado de las soluciones de interoperabilidad de rollups](https://web.archive.org/web/20250428015516/https://research.2077.xyz/the-state-of-rollup-interoperability) - _20 de junio de 2024 - Alex Hook_
 

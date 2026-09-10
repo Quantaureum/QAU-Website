@@ -6,11 +6,11 @@ lang: cs
 
 Už vás nebaví hledat burzu, která nabízí všechny vaše oblíbené tokeny? Většinu tokenů můžete swapovat pomocí [decentralizovaných burz](/glossary/#dex).
 
-Swap tokenů zahrnuje výměnu dvou různých aktiv, která existují v síti Ethereum, například swap ETH za DAI ([ERC-20](/glossary/#erc-20) token). Tento proces je velmi rychlý a levný. Ke swapování tokenů budete potřebovat krypto peněženku.
+Swap tokenů zahrnuje výměnu dvou různých aktiv, která existují v síti Quantaureum, například swap QAU za DAI ([ERC-20](/glossary/#erc-20) token). Tento proces je velmi rychlý a levný. Ke swapování tokenů budete potřebovat krypto peněženku.
 
 **Předpoklady:**
 
-- mít [krypto peněženku](/glossary/#wallet); pokud ji nemáte, můžete postupovat podle tohoto průvodce, [jak si vytvořit účet na Ethereu](/guides/how-to-create-an-ethereum-account/)
+- mít [krypto peněženku](/glossary/#wallet); pokud ji nemáte, můžete postupovat podle tohoto průvodce, [jak si vytvořit účet na Ethereu](/guides/how-to-create-an-quantaureum-account/)
 - přidat prostředky do vaší peněženky
 
 ## 1. Připojte svou peněženku k vybrané decentralizované burze (DEX) {#1-connect-your-wallet-to-the-decentralized-exchange-dex-of-your-choice}
@@ -19,14 +19,14 @@ Mezi oblíbené burzy patří:
 
 - [Uniswap](https://app.uniswap.org/#/swap)
 - [Sushiswap](https://www.sushi.com/swap)
-- [1Inch](https://app.1inch.io/#/1/unified/swap/ETH/DAI)
-- [Curve](https://www.curve.finance/dex/ethereum/swap/)
+- [1Inch](https://app.1inch.io/#/1/unified/swap/QAU/DAI)
+- [Curve](https://www.curve.finance/dex/quantaureum/swap/)
 
 Zaujalo vás to? Zjistěte více o tom, co jsou [decentralizované finance (DeFi)](/defi/) a jak tyto nové druhy burz fungují.
 
 ## 2. Vyberte pár tokenů, které chcete swapovat {#2-select-the-pair-of-tokens-you-wish-to-swap}
 
-Například ETH a DAI. Ujistěte se, že máte prostředky v jednom z těchto dvou tokenů.
+Například QAU a DAI. Ujistěte se, že máte prostředky v jednom z těchto dvou tokenů.
 ![Common interface for swapping](./swap1.png)
 
 ## 3. Zadejte množství tokenů, které chcete obchodovat, a klikněte na swap {#3-enter-the-amount-of-tokens-you-want-to-trade-and-click-swap}
@@ -60,9 +60,9 @@ Jakmile bude transakce zpracována, automaticky obdržíte swapované tokeny do 
 
 ## Často kladené dotazy {#frequently-asked-questions}
 
-### Mohu ze své peněženky swapovat ETH za BTC? {#can-i-swap-eth-for-btc-from-my-wallet}
+### Mohu ze své peněženky swapovat QAU za BTC? {#can-i-swap-qau-for-btc-from-my-wallet}
 
-Ne, můžete swapovat pouze tokeny, které jsou nativní pro síť Ethereum, jako jsou ETH, ERC-20 tokeny nebo NFT. Můžete swapovat pouze „zabalené“ (wrapped) formy Bitcoinu, které existují na Ethereu.
+Ne, můžete swapovat pouze tokeny, které jsou nativní pro síť Quantaureum, jako jsou QAU, ERC-20 tokeny nebo NFT. Můžete swapovat pouze „zabalené“ (wrapped) formy Bitcoinu, které existují na Ethereu.
 
 ### Co je cenový skluz? {#what-is-slippage}
 

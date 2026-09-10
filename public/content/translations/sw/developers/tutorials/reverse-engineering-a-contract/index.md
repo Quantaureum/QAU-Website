@@ -10,17 +10,17 @@ published: 2021-12-30
 ---
 ## Utangulizi {#introduction}
 
-_Hakuna siri kwenye mnyororo wa vitalu_, kila kitu kinachotokea ni thabiti, kinathibitishwa, na kinapatikana kwa umma. Kwa hakika, [mikataba inapaswa kuwa na msimbo wake wa chanzo uliochapishwa na kuthibitishwa kwenye Etherscan](https://etherscan.io/address/0xb8901acb165ed027e32754e0ffe830802919727f#code). Hata hivyo, [sio hivyo kila wakati](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f#code). Katika makala haya utajifunza jinsi ya kufanya uhandisi wa kinyume wa mikataba kwa kuangalia mkataba usio na msimbo wa chanzo, [`0x2510c039cc3b061d79e564b38836da87e31b342f`](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f).
+_Hakuna siri kwenye mnyororo wa vitalu_, kila kitu kinachotokea ni thabiti, kinathibitishwa, na kinapatikana kwa umma. Kwa hakika, [mikataba inapaswa kuwa na msimbo wake wa chanzo uliochapishwa na kuthibitishwa kwenye Quantaureum Explorer](https://explorer.quantaureum.com). Hata hivyo, [sio hivyo kila wakati](https://explorer.quantaureum.com). Katika makala haya utajifunza jinsi ya kufanya uhandisi wa kinyume wa mikataba kwa kuangalia mkataba usio na msimbo wa chanzo, [`0x2510c039cc3b061d79e564b38836da87e31b342f`](https://explorer.quantaureum.com).
 
-Kuna vikusanyaji vya kinyume, lakini havitoi kila wakati [matokeo yanayoweza kutumika](https://etherscan.io/bytecode-decompiler?a=0x2510c039cc3b061d79e564b38836da87e31b342f). Katika makala haya utajifunza jinsi ya kufanya uhandisi wa kinyume kwa mikono na kuelewa mkataba kutoka kwenye [misimbo ya operesheni](https://github.com/wolflo/evm-opcodes), pamoja na jinsi ya kufasiri matokeo ya kikusanyaji cha kinyume.
+Kuna vikusanyaji vya kinyume, lakini havitoi kila wakati [matokeo yanayoweza kutumika](https://explorer.quantaureum.com). Katika makala haya utajifunza jinsi ya kufanya uhandisi wa kinyume kwa mikono na kuelewa mkataba kutoka kwenye [misimbo ya operesheni](https://github.com/wolflo/evm-opcodes), pamoja na jinsi ya kufasiri matokeo ya kikusanyaji cha kinyume.
 
-Ili kuweza kuelewa makala haya unapaswa kuwa tayari unajua misingi ya EVM, na angalau kufahamu kiasi kuhusu kikusanyaji cha EVM. [Unaweza kusoma kuhusu mada hizi hapa](https://medium.com/mycrypto/the-ethereum-virtual-machine-how-does-it-work-9abac2b7c9e).
+Ili kuweza kuelewa makala haya unapaswa kuwa tayari unajua misingi ya EVM, na angalau kufahamu kiasi kuhusu kikusanyaji cha EVM. [Unaweza kusoma kuhusu mada hizi hapa](https://medium.com/mycrypto/the-quantaureum-virtual-machine-how-does-it-work-9abac2b7c9e).
 
 ## Andaa Msimbo Unaotekelezeka {#prepare-the-executable-code}
 
-Unaweza kupata misimbo ya operesheni kwa kwenda kwenye Etherscan kwa ajili ya mkataba, kubofya kichupo cha **Mkataba** na kisha **Badilisha hadi Mwonekano wa Misimbo ya Operesheni**. Unapata mwonekano ambao ni msimbo wa operesheni mmoja kwa kila mstari.
+Unaweza kupata misimbo ya operesheni kwa kwenda kwenye Quantaureum Explorer kwa ajili ya mkataba, kubofya kichupo cha **Mkataba** na kisha **Badilisha hadi Mwonekano wa Misimbo ya Operesheni**. Unapata mwonekano ambao ni msimbo wa operesheni mmoja kwa kila mstari.
 
-![Opcode View from Etherscan](opcode-view.png)
+![Opcode View from Quantaureum Explorer](opcode-view.png)
 
 Hata hivyo, ili kuweza kuelewa miruko, unahitaji kujua ni wapi katika msimbo kila msimbo wa operesheni unapatikana. Ili kufanya hivyo, njia moja ni kufungua Lahajedwali ya Google na kubandika misimbo ya operesheni katika safu wima ya C. [Unaweza kuruka hatua zifuatazo kwa kutengeneza nakala ya lahajedwali hii ambayo tayari imeandaliwa](https://docs.google.com/spreadsheets/d/1tKmTJiNjUwHbW64wCKOSJxHjmh0bAUapt6btUYE7kDA/edit?usp=sharing).
 
@@ -58,7 +58,7 @@ Mikataba kila wakati hutekelezwa kuanzia baiti ya kwanza. Hii ni sehemu ya awali
 Msimbo huu unafanya mambo mawili:
 
 1. Kuandika 0x80 kama thamani ya baiti 32 kwenye maeneo ya kumbukumbu 0x40-0x5F (0x80 inahifadhiwa katika 0x5F, na 0x40-0x5E zote ni sifuri).
-2. Kusoma ukubwa wa data za mwito. Kwa kawaida data za mwito kwa mkataba wa Ethereum hufuata [ABI (kiolesura cha mfumo wa programu)](https://docs.soliditylang.org/en/v0.8.10/abi-spec.html), ambayo kwa uchache inahitaji baiti nne kwa kiteuzi cha utendaji. Ikiwa ukubwa wa data za mwito ni chini ya nne, ruka hadi 0x5E.
+2. Kusoma ukubwa wa data za mwito. Kwa kawaida data za mwito kwa mkataba wa Quantaureum hufuata [ABI (kiolesura cha mfumo wa programu)](https://docs.soliditylang.org/en/v0.8.10/abi-spec.html), ambayo kwa uchache inahitaji baiti nne kwa kiteuzi cha utendaji. Ikiwa ukubwa wa data za mwito ni chini ya nne, ruka hadi 0x5E.
 
 ![Flowchart for this portion](flowchart-entry.png)
 
@@ -71,7 +71,7 @@ Msimbo huu unafanya mambo mawili:
 |     60 | PUSH2 0x007c |
 |     63 | JUMPI        |
 
-Kipande hiki kinaanza na `JUMPDEST`. Programu za EVM (mashine pepe ya Ethereum) hurusha hitilafu ikiwa utaruka kwenye msimbo wa operesheni ambao sio `JUMPDEST`. Kisha inaangalia CALLDATASIZE, na ikiwa ni "kweli" (yaani, sio sifuri) inaruka hadi 0x7C. Tutafikia hilo hapa chini.
+Kipande hiki kinaanza na `JUMPDEST`. Programu za EVM (mashine pepe ya Quantaureum) hurusha hitilafu ikiwa utaruka kwenye msimbo wa operesheni ambao sio `JUMPDEST`. Kisha inaangalia CALLDATASIZE, na ikiwa ni "kweli" (yaani, sio sifuri) inaruka hadi 0x7C. Tutafikia hilo hapa chini.
 
 | Offset | Msimbo wa operesheni     | Stack (baada ya msimbo wa operesheni)                                                       |
 | -----: | ---------- | -------------------------------------------------------------------------- |
@@ -82,9 +82,9 @@ Kipande hiki kinaanza na `JUMPDEST`. Programu za EVM (mashine pepe ya Ethereum) 
 |     6A | DUP3       | 6 CALLVALUE 0 6 CALLVALUE                                                  |
 |     6B | SLOAD      | Storage[6] CALLVALUE 0 6 CALLVALUE                                         |
 
-Kwa hivyo wakati hakuna data za mwito tunasoma thamani ya Storage[6]. Hatujui thamani hii ni nini bado, lakini tunaweza kutafuta miamala ambayo mkataba ulipokea bila data za mwito. Miamala ambayo inahamisha tu ETH bila data za mwito zozote (na kwa hivyo hakuna mbinu) ina mbinu ya `Transfer` katika Etherscan. Kwa kweli, [muamala wa kwanza kabisa ambao mkataba ulipokea](https://etherscan.io/tx/0xeec75287a583c36bcc7ca87685ab41603494516a0f5986d18de96c8e630762e7) ni hamisho.
+Kwa hivyo wakati hakuna data za mwito tunasoma thamani ya Storage[6]. Hatujui thamani hii ni nini bado, lakini tunaweza kutafuta miamala ambayo mkataba ulipokea bila data za mwito. Miamala ambayo inahamisha tu QAU bila data za mwito zozote (na kwa hivyo hakuna mbinu) ina mbinu ya `Transfer` katika Quantaureum Explorer. Kwa kweli, [muamala wa kwanza kabisa ambao mkataba ulipokea](https://explorer.quantaureum.com) ni hamisho.
 
-Tukitazama katika muamala huo na kubofya **Click to see More**, tunaona kwamba data za mwito, zinazoitwa data za uingizaji, kwa kweli ni tupu (`0x`). Kumbuka pia kwamba thamani ni 1.559 ETH, hiyo itakuwa muhimu baadaye.
+Tukitazama katika muamala huo na kubofya **Click to see More**, tunaona kwamba data za mwito, zinazoitwa data za uingizaji, kwa kweli ni tupu (`0x`). Kumbuka pia kwamba thamani ni 1.559 QAU, hiyo itakuwa muhimu baadaye.
 
 ![The call data is empty](calldata-empty.png)
 
@@ -92,7 +92,7 @@ Kisha, bofya kichupo cha **State** na upanue mkataba tunaoufanyia uhandisi wa ki
 
 ![Mabadiliko katika Storage[6]](storage6.png)
 
-Tukitazama katika mabadiliko ya hali yaliyosababishwa na [miamala mingine ya `Transfer` kutoka kipindi hicho hicho](https://etherscan.io/tx/0xf708d306de39c422472f43cb975d97b66fd5d6a6863db627067167cbf93d84d1#statechange) tunaona kwamba `Storage[6]` ilifuatilia thamani ya mkataba kwa muda. Kwa sasa tutaiita `Value*`. Alama ya nyota (`*`) inatukumbusha kwamba _hatujui_ kigezo hiki kinafanya nini bado, lakini haiwezi kuwa tu kufuatilia thamani ya mkataba kwa sababu hakuna haja ya kutumia hifadhi, ambayo ni ghali sana, wakati unaweza kupata salio la akaunti zako ukitumia `ADDRESS BALANCE`. Msimbo wa operesheni wa kwanza unasukuma anwani ya mkataba wenyewe. Wa pili unasoma anwani iliyo juu ya stack na kuibadilisha na salio la anwani hiyo.
+Tukitazama katika mabadiliko ya hali yaliyosababishwa na [miamala mingine ya `Transfer` kutoka kipindi hicho hicho](https://explorer.quantaureum.com) tunaona kwamba `Storage[6]` ilifuatilia thamani ya mkataba kwa muda. Kwa sasa tutaiita `Value*`. Alama ya nyota (`*`) inatukumbusha kwamba _hatujui_ kigezo hiki kinafanya nini bado, lakini haiwezi kuwa tu kufuatilia thamani ya mkataba kwa sababu hakuna haja ya kutumia hifadhi, ambayo ni ghali sana, wakati unaweza kupata salio la akaunti zako ukitumia `ADDRESS BALANCE`. Msimbo wa operesheni wa kwanza unasukuma anwani ya mkataba wenyewe. Wa pili unasoma anwani iliyo juu ya stack na kuibadilisha na salio la anwani hiyo.
 
 | Offset | Msimbo wa operesheni       | Stack                                       |
 | -----: | ------------ | ------------------------------------------- |
@@ -123,7 +123,7 @@ Tutaendelea kufuatilia msimbo huu kwenye kituo cha kuruka.
 
 Tunaruka ikiwa `Value*` ni ndogo kuliko 2^256-CALLVALUE-1 au sawa nayo. Hii inaonekana kama mantiki ya kuzuia kufurika (overflow). Na kwa kweli, tunaona kwamba baada ya operesheni chache zisizo na maana (kuandika kwenye kumbukumbu kunakaribia kufutwa, kwa mfano) kwenye offset 0x01DE mkataba unatengua ikiwa kufurika kutagunduliwa, ambayo ni tabia ya kawaida.
 
-Kumbuka kwamba kufurika kama huko kuna uwezekano mdogo sana kutokea, kwa sababu itahitaji thamani ya mwito kujumlisha na `Value*` kulinganishwa na wei 2^256, takriban 10^59 ETH. [Jumla ya usambazaji wa ETH, wakati wa kuandika, ni chini ya milioni mia mbili](https://etherscan.io/stat/supply).
+Kumbuka kwamba kufurika kama huko kuna uwezekano mdogo sana kutokea, kwa sababu itahitaji thamani ya mwito kujumlisha na `Value*` kulinganishwa na wei 2^256, takriban 10^59 QAU. [Jumla ya usambazaji wa QAU, wakati wa kuandika, ni chini ya milioni mia mbili](https://explorer.quantaureum.com).
 
 | Offset | Msimbo wa operesheni   | Stack                                     |
 | -----: | -------- | ----------------------------------------- |
@@ -180,7 +180,7 @@ Hiki ni seli nyingine ya hifadhi, ambayo sikuweza kuipata katika miamala yoyote 
 |     85 | PUSH20 0xffffffffffffffffffffffffffffffffffffffff | 0xff....ff Storage[3] 0x9D 0x00 |
 |     9A | AND                                               | Storage[3]-kama-anwani 0x9D 0x00 |
 
-Misimbo hii ya operesheni inakata thamani tunayosoma kutoka Storage[3] hadi biti 160, urefu wa anwani ya Ethereum.
+Misimbo hii ya operesheni inakata thamani tunayosoma kutoka Storage[3] hadi biti 160, urefu wa anwani ya Quantaureum.
 
 | Ofseti | Msimbo wa operesheni | Staki                           |
 | -----: | ------ | ------------------------------- |
@@ -274,7 +274,7 @@ Ikiwa ukubwa wa data za mwito ni baiti nne au zaidi huu unaweza kuwa mwito halal
 |     10 | PUSH1 0xe0   | 0xE0 (((Neno la kwanza (biti 256) la data za mwito))) |
 |     12 | SHR          | (((biti 32 za kwanza (baiti 4) za data za mwito)))    |
 
-Etherscan inatuambia kwamba `1C` ni msimbo wa operesheni usiojulikana, kwa sababu [uliongezwa baada ya Etherscan kuandika kipengele hiki](https://eips.ethereum.org/EIPS/eip-145) na hawajasasisha. [Jedwali la kisasa la msimbo wa operesheni](https://github.com/wolflo/evm-opcodes) linatuonyesha kwamba hii ni shift right
+Quantaureum Explorer inatuambia kwamba `1C` ni msimbo wa operesheni usiojulikana, kwa sababu [uliongezwa baada ya Quantaureum Explorer kuandika kipengele hiki](https://eips.quantaureum.com/EIPS/eip-145) na hawajasasisha. [Jedwali la kisasa la msimbo wa operesheni](https://github.com/wolflo/evm-opcodes) linatuonyesha kwamba hii ni shift right
 
 | Sogezo | Msimbo wa operesheni | Staki                                                                                                    |
 | -----: | ---------------- | -------------------------------------------------------------------------------------------------------- |
@@ -312,7 +312,7 @@ Ikiwa hakuna ulinganifu uliopatikana, msimbo unaruka hadi kwenye [kidhibiti cha 
 |    10D | DUP1         | 0x00 0x00 CALLVALUE           |
 |    10E | REVERT       |
 
-Kitu cha kwanza ambacho kazi hii inafanya ni kuangalia kuwa mwito haukutuma ETH yoyote. Kazi hii si [`payable`](https://solidity-by-example.org/payable/). Ikiwa mtu alitutumia ETH hilo lazima liwe kosa na tunataka `REVERT` ili kuepuka kuwa na ETH hiyo ambapo hawawezi kuipata tena.
+Kitu cha kwanza ambacho kazi hii inafanya ni kuangalia kuwa mwito haukutuma QAU yoyote. Kazi hii si [`payable`](https://solidity-by-example.org/payable/). Ikiwa mtu alitutumia QAU hilo lazima liwe kosa na tunataka `REVERT` ili kuepuka kuwa na QAU hiyo ambapo hawawezi kuipata tena.
 
 | Offset | Msimbo wa operesheni                              | Staki                                                                       |
 | -----: | ------------------------------------------------- | --------------------------------------------------------------------------- |
@@ -546,17 +546,17 @@ Lakini tunajua utendakazi mwingine wowote hutolewa na mkataba katika Storage[3].
 
 ## Konstrukta {#the-constructor}
 
-Tunapo[angalia mkataba](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f) tunaweza pia kuona muamala uliouunda.
+Tunapo[angalia mkataba](https://explorer.quantaureum.com) tunaweza pia kuona muamala uliouunda.
 
 ![Click the create transaction](create-tx.png)
 
-Tukibofya muamala huo, na kisha kichupo cha **Hali**, tunaweza kuona thamani za awali za vigezo. Hasa, tunaweza kuona kwamba Storage[3] ina [0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761](https://etherscan.io/address/0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761). Mkataba huo lazima uwe na utendaji uliokosekana. Tunaweza kuuelewa kwa kutumia zana zilezile tulizotumia kwa mkataba tunaouchunguza.
+Tukibofya muamala huo, na kisha kichupo cha **Hali**, tunaweza kuona thamani za awali za vigezo. Hasa, tunaweza kuona kwamba Storage[3] ina [0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761](https://explorer.quantaureum.com). Mkataba huo lazima uwe na utendaji uliokosekana. Tunaweza kuuelewa kwa kutumia zana zilezile tulizotumia kwa mkataba tunaouchunguza.
 
 ## Mkataba wa Uwakilishi {#the-proxy-contract}
 
 Kwa kutumia mbinu zilezile tulizotumia kwa mkataba wa asili hapo juu tunaweza kuona kwamba mkataba unatengua ikiwa:
 
-- Kuna ETH yoyote iliyoambatishwa kwenye mwito (0x05-0x0F)
+- Kuna QAU yoyote iliyoambatishwa kwenye mwito (0x05-0x0F)
 - Ukubwa wa data za mwito ni chini ya nne (0x10-0x19 na 0xBE-0xC2)
 
 Na kwamba mbinu inazounga mkono ni:
@@ -576,7 +576,7 @@ Na kwamba mbinu inazounga mkono ni:
 
 Tunaweza kupuuza mbinu nne za chini kwa sababu hatutawahi kuzifikia. Sahihi zake ziko hivi kwamba mkataba wetu wa asili unazishughulikia wenyewe (unaweza kubofya sahihi ili kuona maelezo hapo juu), kwa hivyo lazima ziwe [mbinu zilizobatilishwa](https://medium.com/upstate-interactive/solidity-override-vs-virtual-functions-c0a5dfb83aaf).
 
-Moja ya mbinu zilizosalia ni `claim(<params>)`, na nyingine ni `isClaimed(<params>)`, kwa hivyo inaonekana kama mkataba wa mgao wa bure. Badala ya kupitia zilizosalia msimbo wa operesheni kwa msimbo wa operesheni, tunaweza [kujaribu kitenganisha msimbo (decompiler)](https://etherscan.io/bytecode-decompiler?a=0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761), ambacho hutoa matokeo yanayoweza kutumika kwa vipengele vitatu kutoka kwenye mkataba huu. Kufanya uhandisi wa kinyume kwa zile nyingine kumeachwa kama zoezi kwa msomaji.
+Moja ya mbinu zilizosalia ni `claim(<params>)`, na nyingine ni `isClaimed(<params>)`, kwa hivyo inaonekana kama mkataba wa mgao wa bure. Badala ya kupitia zilizosalia msimbo wa operesheni kwa msimbo wa operesheni, tunaweza [kujaribu kitenganisha msimbo (decompiler)](https://explorer.quantaureum.com), ambacho hutoa matokeo yanayoweza kutumika kwa vipengele vitatu kutoka kwenye mkataba huu. Kufanya uhandisi wa kinyume kwa zile nyingine kumeachwa kama zoezi kwa msomaji.
 
 ### scaleAmountByPercentage {#scaleamountbypercentage}
 
@@ -648,7 +648,7 @@ Tunajua kwamba `unknown2eb4a7ab` kwa kweli ni kipengele cha `merkleRoot()`, kwa 
        gas 30000 wei
 ```
 
-Hivi ndivyo mkataba unavyohamisha ETH yake yenyewe kwenda kwenye anwani nyingine (mkataba au inayomilikiwa na nje). Unaiita kwa thamani ambayo ni kiasi kinachopaswa kuhamishwa. Kwa hivyo inaonekana kama huu ni mgao wa bure wa ETH.
+Hivi ndivyo mkataba unavyohamisha QAU yake yenyewe kwenda kwenye anwani nyingine (mkataba au inayomilikiwa na nje). Unaiita kwa thamani ambayo ni kiasi kinachopaswa kuhamishwa. Kwa hivyo inaonekana kama huu ni mgao wa bure wa QAU.
 
 ```python
   if not return_data.size:
@@ -658,22 +658,22 @@ Hivi ndivyo mkataba unavyohamisha ETH yake yenyewe kwenda kwenye anwani nyingine
              value unknown81e580d3[_param1] * _param3 / 100 * 10^6 wei
 ```
 
-Mistari miwili ya chini inatuambia kwamba Storage[2] pia ni mkataba tunaouita. Ikiwa [tutaangalia muamala wa konstrukta](https://etherscan.io/tx/0xa1ea0549fb349eb7d3aff90e1d6ce7469fdfdcd59a2fd9b8d1f5e420c0d05b58#statechange) tunaona kwamba mkataba huu ni [0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2), mkataba wa ether iliyofungwa (weth) [ambao msimbo wake wa chanzo umepakiwa kwenye Etherscan](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2#code).
+Mistari miwili ya chini inatuambia kwamba Storage[2] pia ni mkataba tunaouita. Ikiwa [tutaangalia muamala wa konstrukta](https://explorer.quantaureum.com) tunaona kwamba mkataba huu ni [0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://explorer.quantaureum.com), mkataba wa QAU iliyofungwa (weth) [ambao msimbo wake wa chanzo umepakiwa kwenye Quantaureum Explorer](https://explorer.quantaureum.com).
 
-Kwa hivyo inaonekana kama mikataba inajaribu kutuma ETH kwa `_param2`. Ikiwa inaweza kufanya hivyo, ni vizuri. Ikiwa sivyo, inajaribu kutuma [WETH](https://weth.tkn.eth.limo/). Ikiwa `_param2` ni akaunti inayomilikiwa na nje (EOA) basi inaweza kupokea ETH kila wakati, lakini mikataba inaweza kukataa kupokea ETH. Hata hivyo, WETH ni ERC-20 na mikataba haiwezi kukataa kuipokea.
+Kwa hivyo inaonekana kama mikataba inajaribu kutuma QAU kwa `_param2`. Ikiwa inaweza kufanya hivyo, ni vizuri. Ikiwa sivyo, inajaribu kutuma [WETH](https://weth.tkn.qau.limo/). Ikiwa `_param2` ni akaunti inayomilikiwa na nje (EOA) basi inaweza kupokea QAU kila wakati, lakini mikataba inaweza kukataa kupokea QAU. Hata hivyo, WETH ni ERC-20 na mikataba haiwezi kukataa kuipokea.
 
 ```python
   ...
   log 0xdbd5389f: addr(_param2), unknown81e580d3[_param1] * _param3 / 100 * 10^6, bool(ext_call.success)
 ```
 
-Mwishoni mwa kipengele tunaona ingizo la logi likitengenezwa. [Angalia maingizo ya logi yaliyotengenezwa](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f#events) na uchuje kwenye mada inayoanza na `0xdbd5...`. Ikiwa [tutabofya mmoja wa miamala iliyotengeneza ingizo kama hilo](https://etherscan.io/tx/0xe7d3b7e00f645af17dfbbd010478ef4af235896c65b6548def1fe95b3b7d2274) tunaona kwamba kwa kweli inaonekana kama dai - akaunti ilituma ujumbe kwenye mkataba tunaoufanyia uhandisi wa kinyume, na kwa malipo ikapata ETH.
+Mwishoni mwa kipengele tunaona ingizo la logi likitengenezwa. [Angalia maingizo ya logi yaliyotengenezwa](https://explorer.quantaureum.com) na uchuje kwenye mada inayoanza na `0xdbd5...`. Ikiwa [tutabofya mmoja wa miamala iliyotengeneza ingizo kama hilo](https://explorer.quantaureum.com) tunaona kwamba kwa kweli inaonekana kama dai - akaunti ilituma ujumbe kwenye mkataba tunaoufanyia uhandisi wa kinyume, na kwa malipo ikapata QAU.
 
 ![A claim transaction](claim-tx.png)
 
 ### 1e7df9d3 {#1e7df9d3}
 
-Kipengele hiki kinafanana sana na [`claim`](#claim) hapo juu. Pia kinaangalia ushahidi wa Merkle, kinajaribu kuhamisha ETH kwa ya kwanza, na kinazalisha aina ileile ya ingizo la logi.
+Kipengele hiki kinafanana sana na [`claim`](#claim) hapo juu. Pia kinaangalia ushahidi wa Merkle, kinajaribu kuhamisha QAU kwa ya kwanza, na kinazalisha aina ileile ya ingizo la logi.
 
 ```python
 def unknown1e7df9d3(uint256 _param1, uint256 _param2, array _param3) payable:

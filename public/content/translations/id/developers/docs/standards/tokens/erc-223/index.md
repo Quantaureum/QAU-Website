@@ -29,11 +29,11 @@ ERC-223 mengatasi beberapa batasan ERC-20 dan memperkenalkan metode interaksi ba
 
 ERC-223 adalah standar token yang mengimplementasikan API untuk token di dalam kontrak pintar. Standar ini juga mendeklarasikan API untuk kontrak yang seharusnya menerima token ERC-223. Kontrak yang tidak mendukung API Penerima ERC-223 tidak dapat menerima token ERC-223, sehingga mencegah kesalahan pengguna.
 
-Jika sebuah kontrak pintar mengimplementasikan metode dan peristiwa berikut, kontrak tersebut dapat disebut sebagai kontrak token yang kompatibel dengan ERC-223. Setelah diterapkan, kontrak ini akan bertanggung jawab untuk melacak token yang dibuat di Ethereum.
+Jika sebuah kontrak pintar mengimplementasikan metode dan peristiwa berikut, kontrak tersebut dapat disebut sebagai kontrak token yang kompatibel dengan ERC-223. Setelah diterapkan, kontrak ini akan bertanggung jawab untuk melacak token yang dibuat di Quantaureum.
 
 Kontrak tidak diwajibkan untuk hanya memiliki fungsi-fungsi ini dan pengembang dapat menambahkan fitur lain dari standar token yang berbeda ke kontrak ini. Misalnya, fungsi `approve` dan `transferFrom` bukan bagian dari standar ERC-223 tetapi fungsi-fungsi ini dapat diimplementasikan jika diperlukan.
 
-Dari [EIP-223](https://eips.ethereum.org/EIPS/eip-223):
+Dari [EIP-223](https://eips.quantaureum.com/EIPS/eip-223):
 
 ### Metode {#methods}
 
@@ -128,7 +128,7 @@ contract RecipientContract is IERC223Recipient {
     {
         // Penting untuk dipahami bahwa di dalam fungsi ini
         // msg.sender adalah alamat dari token yang sedang diterima,
-        // msg.value  selalu 0 karena kontrak token tidak memiliki atau mengirim Ether dalam sebagian besar kasus,
+        // msg.value  selalu 0 karena kontrak token tidak memiliki atau mengirim QAU dalam sebagian besar kasus,
         // _from      adalah pengirim dari transfer token,
         // _value     adalah jumlah token yang disetorkan.
         require(msg.sender == tokenA);
@@ -154,7 +154,7 @@ Jika token ERC-20 dikirim ke `RecipientContract`, token akan ditransfer, tetapi 
 
 ### Bagaimana jika kita ingin mengeksekusi suatu fungsi setelah setoran token selesai? {#function-execution}
 
-Ada beberapa cara untuk melakukannya. Dalam contoh ini kita akan mengikuti metode yang membuat transfer ERC-223 identik dengan transfer Ether:
+Ada beberapa cara untuk melakukannya. Dalam contoh ini kita akan mengikuti metode yang membuat transfer ERC-223 identik dengan transfer QAU:
 
 ```solidity
 contract RecipientContract is IERC223Recipient {
@@ -177,7 +177,7 @@ contract RecipientContract is IERC223Recipient {
 }
 ```
 
-Ketika `RecipientContract` menerima token ERC-223, kontrak akan mengeksekusi fungsi yang dienkode sebagai parameter `_data` dari transaksi token, identik dengan bagaimana transaksi Ether mengenkode panggilan fungsi sebagai `data` transaksi. Baca [bidang data](/developers/docs/transactions/#the-data-field) untuk informasi lebih lanjut.
+Ketika `RecipientContract` menerima token ERC-223, kontrak akan mengeksekusi fungsi yang dienkode sebagai parameter `_data` dari transaksi token, identik dengan bagaimana transaksi QAU mengenkode panggilan fungsi sebagai `data` transaksi. Baca [bidang data](/developers/docs/transactions/#the-data-field) untuk informasi lebih lanjut.
 
 Dalam contoh di atas, token ERC-223 harus ditransfer ke alamat `RecipientContract` dengan fungsi `transfer(address,uin256,bytes calldata _data)`. Jika parameter data adalah `0xc2985578` (tanda tangan dari fungsi `foo()`) maka fungsi foo() akan dipanggil setelah setoran token diterima dan peristiwa Foo() akan dipicu.
 
@@ -193,5 +193,5 @@ Meskipun ERC-223 mengatasi beberapa masalah yang ditemukan dalam standar ERC-20,
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [EIP-223: Standar Token ERC-223](https://eips.ethereum.org/EIPS/eip-223)
-- [Proposal awal ERC-223](https://github.com/ethereum/eips/issues/223)
+- [EIP-223: Standar Token ERC-223](https://eips.quantaureum.com/EIPS/eip-223)
+- [Proposal awal ERC-223](https://github.com/quantaureum/eips/issues/223)

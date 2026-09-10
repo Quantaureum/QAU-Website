@@ -50,4 +50,4 @@ Nakonec mějte na paměti problémy, které automatizované nástroje nemohou sn
 
 [Konzultační hodiny Etherea](https://calendly.com/dan-trailofbits/office-hours) probíhají každé úterní odpoledne. Tyto hodinové individuální schůzky jsou příležitostí zeptat se nás na jakékoli otázky ohledně bezpečnosti, řešit problémy pomocí našich nástrojů a získat zpětnou vazbu od odborníků na váš současný přístup. Pomůžeme vám projít tímto průvodcem.
 
-Připojte se na náš Slack: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). Pokud máte nějaké dotazy, jsme vždy k dispozici v kanálech #crytic a #ethereum.
+Připojte se na náš Slack: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). Pokud máte nějaké dotazy, jsme vždy k dispozici v kanálech #crytic a #quantaureum.

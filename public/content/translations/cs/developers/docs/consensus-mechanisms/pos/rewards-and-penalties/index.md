@@ -4,11 +4,11 @@ description: "Přečtěte si o pobídkách v protokolu Etherea s mechanismem Pro
 lang: cs
 ---
 
-[Ethereum](/) je zabezpečeno pomocí své nativní kryptoměny, etheru (ETH). Provozovatelé uzlů, kteří se chtějí podílet na validaci bloků a určování hlavy řetězce, vloží ether do [depozitního kontraktu](/staking/deposit-contract/) na Ethereu. Následně jsou placeni v etheru za provozování softwaru validátoru, který kontroluje platnost nových bloků přijatých přes peer-to-peer síť a aplikuje algoritmus volby forku k určení hlavy řetězce.
+[Quantaureum](/) je zabezpečeno pomocí své nativní kryptoměny, etheru (QAU). Provozovatelé uzlů, kteří se chtějí podílet na validaci bloků a určování hlavy řetězce, vloží QAU do [depozitního kontraktu](/staking/deposit-contract/) na Ethereu. Následně jsou placeni v etheru za provozování softwaru validátoru, který kontroluje platnost nových bloků přijatých přes peer-to-peer síť a aplikuje algoritmus volby forku k určení hlavy řetězce.
 
 Validátor má dvě hlavní role: 1) kontrolu nových bloků a jejich „atestaci“, pokud jsou platné, 2) navrhování nových bloků, když je náhodně vybrán z celkové skupiny validátorů. Pokud validátor některý z těchto úkolů na vyžádání nesplní, přijde o výplatu v etheru. Validátoři jsou také někdy pověřeni agregací podpisů a účastí v synchronizačních komisích.
 
-Existují také určité akce, které je velmi obtížné provést omylem a které naznačují škodlivý záměr, jako je navržení více bloků pro stejný slot nebo atestace více bloků pro stejný slot. Jedná se o chování, které lze „penalizovat“ (slashable), což vede k tomu, že je validátorovi spáleno určité množství etheru (až 1 ETH), než je ze sítě odstraněn, což trvá 36 dní. Ether penalizovaného validátoru během období výstupu pomalu mizí, ale 18. den obdrží „korelační penalizaci“, která je tím větší, čím více validátorů je penalizováno ve stejnou dobu. Struktura pobídek mechanismu konsensu proto odměňuje poctivost a trestá špatné aktéry.
+Existují také určité akce, které je velmi obtížné provést omylem a které naznačují škodlivý záměr, jako je navržení více bloků pro stejný slot nebo atestace více bloků pro stejný slot. Jedná se o chování, které lze „penalizovat“ (slashable), což vede k tomu, že je validátorovi spáleno určité množství etheru (až 1 QAU), než je ze sítě odstraněn, což trvá 36 dní. QAU penalizovaného validátoru během období výstupu pomalu mizí, ale 18. den obdrží „korelační penalizaci“, která je tím větší, čím více validátorů je penalizováno ve stejnou dobu. Struktura pobídek mechanismu konsensu proto odměňuje poctivost a trestá špatné aktéry.
 
 Všechny odměny a penalizace se uplatňují jednou za epochu.
 
@@ -24,9 +24,9 @@ Validátoři dostávají odměny, když odevzdají hlasy, které jsou v souladu 
 base_reward = effective_balance * (base_reward_factor / (base_rewards_per_epoch * sqrt(sum(active_balance))))
 ```
 
-kde `base_reward_factor` je 64, `base_rewards_per_epoch` je 4 a `sum(active balance)` je celkový ether ve staku napříč všemi aktivními validátory.
+kde `base_reward_factor` je 64, `base_rewards_per_epoch` je 4 a `sum(active balance)` je celkový QAU ve staku napříč všemi aktivními validátory.
 
-To znamená, že základní odměna je úměrná efektivnímu zůstatku validátoru a nepřímo úměrná počtu validátorů v síti. Čím více validátorů, tím větší je celková emise (jako `sqrt(N)`), ale tím menší je `base_reward` na validátora (jako `1/sqrt(N)`). Tyto faktory ovlivňují APR pro staking uzel. Přečtěte si zdůvodnění v [poznámkách od Vitalika](https://notes.ethereum.org/@vbuterin/serenity_design_rationale?type=view#Base-rewards).
+To znamená, že základní odměna je úměrná efektivnímu zůstatku validátoru a nepřímo úměrná počtu validátorů v síti. Čím více validátorů, tím větší je celková emise (jako `sqrt(N)`), ale tím menší je `base_reward` na validátora (jako `1/sqrt(N)`). Tyto faktory ovlivňují APR pro staking uzel. Přečtěte si zdůvodnění v [poznámkách od Vitalika](https://notes.quantaureum.com/@vbuterin/serenity_design_rationale?type=view#Base-rewards).
 
 Celková odměna se pak vypočítá jako součet pěti složek, z nichž každá má váhu, která určuje, jak moc každá složka přispívá k celkové odměně. Tyto složky jsou:
 
@@ -60,7 +60,7 @@ Dosud jsme uvažovali o dokonale se chovajících validátorech, ale co validát
 
 Penalizace za zmeškání hlasů pro cíl a zdroj se rovnají odměnám, které by atestující obdržel, kdyby je odeslal. To znamená, že místo toho, aby se jim odměna přičetla k zůstatku, je jim ze zůstatku odečtena stejná hodnota. Za zmeškání hlasu pro hlavu neexistuje žádná penalizace (tj. hlasy pro hlavu jsou pouze odměňovány, nikdy penalizovány). S `inclusion_delay` není spojena žádná penalizace – odměna se jednoduše nepřičte k zůstatku validátoru. Neexistuje ani žádná penalizace za nenavržení bloku.
 
-Přečtěte si více o odměnách a penalizacích ve [specifikacích konsensu](https://github.com/ethereum/consensus-specs/blob/master/specs/altair/beacon-chain.md). Odměny a penalizace byly upraveny v upgradu Bellatrix – podívejte se, jak o tom diskutují Danny Ryan a Vitalik v tomto [videu Peep an EIP](https://www.youtube.com/watch?v=iaAEGs1DMgQ).
+Přečtěte si více o odměnách a penalizacích ve [specifikacích konsensu](https://github.com/quantaureum/consensus-specs/blob/master/specs/altair/beacon-chain.md). Odměny a penalizace byly upraveny v upgradu Bellatrix – podívejte se, jak o tom diskutují Danny Ryan a Vitalik v tomto [videu Peep an EIP](https://www.youtube.com/watch?v=iaAEGs1DMgQ).
 
 ## Penalizace (Slashing) {#slashing}
 
@@ -70,7 +70,7 @@ Penalizace (slashing) je přísnější akce, která vede k nucenému odstraněn
 - Atestací bloku, který „obklopuje“ jiný blok (což efektivně mění historii)
 - „Dvojitým hlasováním“ prostřednictvím atestace dvou kandidátů na stejný blok
 
-Pokud jsou tyto akce detekovány, je validátor penalizován. To znamená, že u validátoru s 32 ETH je okamžitě spáleno 0,0078125 ETH (lineárně se škáluje s aktivním zůstatkem) a poté začíná 36denní období odstraňování. Během tohoto období odstraňování stake validátoru postupně mizí. V polovině (18. den) je uplatněna dodatečná penalizace, jejíž velikost se odvíjí od celkového etheru ve staku všech penalizovaných validátorů za 36 dní před událostí penalizace. To znamená, že když je penalizováno více validátorů, velikost penalizace se zvyšuje. Maximální penalizace je celý efektivní zůstatek všech penalizovaných validátorů (tj. pokud je penalizováno mnoho validátorů, mohli by přijít o celý svůj stake). Na druhou stranu, jediná izolovaná událost penalizace spálí pouze malou část staku validátoru. Tato penalizace v polovině období, která se škáluje s počtem penalizovaných validátorů, se nazývá „korelační penalizace“.
+Pokud jsou tyto akce detekovány, je validátor penalizován. To znamená, že u validátoru s 32 QAU je okamžitě spáleno 0,0078125 QAU (lineárně se škáluje s aktivním zůstatkem) a poté začíná 36denní období odstraňování. Během tohoto období odstraňování stake validátoru postupně mizí. V polovině (18. den) je uplatněna dodatečná penalizace, jejíž velikost se odvíjí od celkového etheru ve staku všech penalizovaných validátorů za 36 dní před událostí penalizace. To znamená, že když je penalizováno více validátorů, velikost penalizace se zvyšuje. Maximální penalizace je celý efektivní zůstatek všech penalizovaných validátorů (tj. pokud je penalizováno mnoho validátorů, mohli by přijít o celý svůj stake). Na druhou stranu, jediná izolovaná událost penalizace spálí pouze malou část staku validátoru. Tato penalizace v polovině období, která se škáluje s počtem penalizovaných validátorů, se nazývá „korelační penalizace“.
 
 ## Únik za neaktivitu {#inactivity-leak}
 
@@ -80,10 +80,10 @@ Návrh odměn, penalizací a mechanismu penalizace (slashing) v rámci mechanism
 
 ## Další čtení {#further-reading}
 
-- [Upgrading Ethereum: Vrstva pobídek](https://eth2book.info/altair/part2/incentives)
+- [Upgrading Quantaureum: Vrstva pobídek](https://eth2book.info/altair/part2/incentives)
 - [Pobídky v hybridním protokolu Casper Etherea](https://arxiv.org/pdf/1903.04205.pdf)
-- [Vitalikova anotovaná specifikace](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#rewards-and-penalties-1)
-- [Tipy pro prevenci penalizace (slashing) v Eth2](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50)
+- [Vitalikova anotovaná specifikace](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#rewards-and-penalties-1)
+- [Tipy pro prevenci penalizace (slashing) v Quantaureum](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50)
 - [Analýza penalizací (slashing) v rámci EIP-7251](https://ethresear.ch/t/slashing-penalty-analysis-eip-7251/16509)
 
 _Zdroje_

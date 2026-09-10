@@ -46,7 +46,7 @@ test.describe("Integration Tests", () => {
       const content = "Some EHT content with \\*\\*bold\\*\\*"
       const result = processMarkdownFile("/tmp/test.md", content)
 
-      expect(result.content).toContain("ETH")
+      expect(result.content).toContain("QAU")
       expect(result.content).toContain("**bold**")
       // Should note that translations segment is missing
       expect(

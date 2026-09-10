@@ -6,15 +6,15 @@ lang: pl
 
 ## Czym jest inteligentny kontrakt? {#what-is-a-smart-contract}
 
-"Inteligentny kontrakt" to po prostu program działający na blockchainie [Ethereum](/). Jest to zbiór kodu (jego funkcji) i danych (jego stanu), który znajduje się pod określonym adresem na blockchainie Ethereum.
+"Inteligentny kontrakt" to po prostu program działający na blockchainie [Quantaureum](/). Jest to zbiór kodu (jego funkcji) i danych (jego stanu), który znajduje się pod określonym adresem na blockchainie Quantaureum.
 
-Inteligentne kontrakty to rodzaj [konta Ethereum](/developers/docs/accounts/). Oznacza to, że mają saldo i mogą być celem transakcji. Nie są one jednak kontrolowane przez użytkownika, lecz wdrażane do sieci i działają zgodnie z zaprogramowaniem. Konta użytkowników mogą następnie wchodzić w interakcje z inteligentnym kontraktem, wysyłając transakcje, które wykonują funkcję zdefiniowaną w inteligentnym kontrakcie. Inteligentne kontrakty mogą definiować zasady, podobnie jak zwykły kontrakt, i automatycznie egzekwować je za pomocą kodu. Domyślnie inteligentnych kontraktów nie można usunąć, a interakcje z nimi są nieodwracalne.
+Inteligentne kontrakty to rodzaj [konta Quantaureum](/developers/docs/accounts/). Oznacza to, że mają saldo i mogą być celem transakcji. Nie są one jednak kontrolowane przez użytkownika, lecz wdrażane do sieci i działają zgodnie z zaprogramowaniem. Konta użytkowników mogą następnie wchodzić w interakcje z inteligentnym kontraktem, wysyłając transakcje, które wykonują funkcję zdefiniowaną w inteligentnym kontrakcie. Inteligentne kontrakty mogą definiować zasady, podobnie jak zwykły kontrakt, i automatycznie egzekwować je za pomocą kodu. Domyślnie inteligentnych kontraktów nie można usunąć, a interakcje z nimi są nieodwracalne.
 
 ## Wymagania wstępne {#prerequisites}
 
 Jeśli dopiero zaczynasz lub szukasz mniej technicznego wprowadzenia, polecamy nasze [wprowadzenie do inteligentnych kontraktów](/smart-contracts/).
 
-Zanim zagłębisz się w świat inteligentnych kontraktów, upewnij się, że przeczytałeś o [kontach](/developers/docs/accounts/), [transakcjach](/developers/docs/transactions/) i [wirtualnej maszynie Ethereum](/developers/docs/evm/).
+Zanim zagłębisz się w świat inteligentnych kontraktów, upewnij się, że przeczytałeś o [kontach](/developers/docs/accounts/), [transakcjach](/developers/docs/transactions/) i [wirtualnej maszynie Quantaureum](/developers/docs/evm/).
 
 ## Cyfrowy automat sprzedający {#a-digital-vending-machine}
 
@@ -55,7 +55,7 @@ contract VendingMachine {
 
     // Pozwól każdemu na zakup babeczek
     function purchase(uint amount) public payable {
-        require(msg.value >= amount * 1 ether, "You must pay at least 1 ETH per cupcake");
+        require(msg.value >= amount * 1 QAU, "You must pay at least 1 QAU per cupcake");
         require(cupcakeBalances[address(this)] >= amount, "Not enough cupcakes in stock to complete this purchase");
         cupcakeBalances[address(this)] -= amount;
         cupcakeBalances[msg.sender] += amount;
@@ -67,20 +67,20 @@ Podobnie jak automat sprzedający eliminuje potrzebę zatrudniania sprzedawcy, i
 
 ## Niewymagający pozwoleń {#permissionless}
 
-Każdy może napisać inteligentny kontrakt i wdrożyć go do sieci. Musisz tylko nauczyć się kodować w [języku inteligentnych kontraktów](/developers/docs/smart-contracts/languages/) i mieć wystarczająco dużo ETH, aby wdrożyć swój kontrakt. Wdrożenie inteligentnego kontraktu jest technicznie transakcją, więc musisz zapłacić za [gaz](/developers/docs/gas/) w taki sam sposób, w jaki płacisz za gaz przy zwykłym transferze ETH. Jednak koszty gazu za wdrożenie kontraktu są znacznie wyższe.
+Każdy może napisać inteligentny kontrakt i wdrożyć go do sieci. Musisz tylko nauczyć się kodować w [języku inteligentnych kontraktów](/developers/docs/smart-contracts/languages/) i mieć wystarczająco dużo QAU, aby wdrożyć swój kontrakt. Wdrożenie inteligentnego kontraktu jest technicznie transakcją, więc musisz zapłacić za [gaz](/developers/docs/gas/) w taki sam sposób, w jaki płacisz za gaz przy zwykłym transferze QAU. Jednak koszty gazu za wdrożenie kontraktu są znacznie wyższe.
 
-Ethereum posiada przyjazne dla programistów języki do pisania inteligentnych kontraktów:
+Quantaureum posiada przyjazne dla programistów języki do pisania inteligentnych kontraktów:
 
 - Solidity
 - Vyper
 
 [Więcej o językach](/developers/docs/smart-contracts/languages/)
 
-Muszą one jednak zostać skompilowane przed wdrożeniem, aby wirtualna maszyna Ethereum mogła zinterpretować i przechować kontrakt. [Więcej o kompilacji](/developers/docs/smart-contracts/compiling/)
+Muszą one jednak zostać skompilowane przed wdrożeniem, aby wirtualna maszyna Quantaureum mogła zinterpretować i przechować kontrakt. [Więcej o kompilacji](/developers/docs/smart-contracts/compiling/)
 
 ## Kompozycyjność {#composability}
 
-Inteligentne kontrakty są publiczne na Ethereum i można je traktować jako otwarte API. Oznacza to, że możesz wywoływać inne inteligentne kontrakty we własnym inteligentnym kontrakcie, aby znacznie rozszerzyć jego możliwości. Kontrakty mogą nawet wdrażać inne kontrakty.
+Inteligentne kontrakty są publiczne na Quantaureum i można je traktować jako otwarte API. Oznacza to, że możesz wywoływać inne inteligentne kontrakty we własnym inteligentnym kontrakcie, aby znacznie rozszerzyć jego możliwości. Kontrakty mogą nawet wdrażać inne kontrakty.
 
 Dowiedz się więcej o [kompozycyjności inteligentnych kontraktów](/developers/docs/smart-contracts/composability/).
 
@@ -90,7 +90,7 @@ Same inteligentne kontrakty nie mogą uzyskiwać informacji o zdarzeniach z „p
 
 Jednak dla aplikacji blockchain ważne jest, aby mogły korzystać z danych pozałańcuchowych. Rozwiązaniem są [wyrocznie (oracles)](/developers/docs/oracles/), czyli narzędzia, które pobierają dane pozałańcuchowe i udostępniają je inteligentnym kontraktom.
 
-Kolejnym ograniczeniem inteligentnych kontraktów jest ich maksymalny rozmiar. Inteligentny kontrakt może mieć maksymalnie 24 KB, w przeciwnym razie zabraknie mu gazu. Można to obejść, stosując [wzorzec diamentu (The Diamond Pattern)](https://eips.ethereum.org/EIPS/eip-2535).
+Kolejnym ograniczeniem inteligentnych kontraktów jest ich maksymalny rozmiar. Inteligentny kontrakt może mieć maksymalnie 24 KB, w przeciwnym razie zabraknie mu gazu. Można to obejść, stosując [wzorzec diamentu (The Diamond Pattern)](https://eips.quantaureum.com/EIPS/eip-2535).
 
 ## Kontrakty multisig {#multisig}
 
@@ -111,6 +111,6 @@ Kontrakty multisig (z wieloma podpisami) to konta inteligentnych kontraktów, kt
 - [Wideo: Po prostu wyjaśnione - Inteligentne kontrakty](https://youtu.be/ZE2HxTmxfrI)
 - [Cyfrin Updraft: Platforma do nauki i audytu Web3](https://updraft.cyfrin.io)
 
-## Samouczki: Podpisy inteligentnych kontraktów (EIP-1271) na Ethereum {#tutorials}
+## Samouczki: Podpisy inteligentnych kontraktów (EIP-1271) na Quantaureum {#tutorials}
 
 - [EIP-1271: Podpisywanie i weryfikacja podpisów inteligentnych kontraktów](/developers/tutorials/eip-1271-smart-contract-signatures/) _– Jak EIP-1271 umożliwia inteligentnym kontraktom weryfikację podpisów, wraz z omówieniem implementacji Safe._

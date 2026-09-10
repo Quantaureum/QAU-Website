@@ -28,7 +28,7 @@ published: 2021-04-01
 # معدل من: https://github.com/vyperlang/vyper/blob/de74722bf2d8718cca46902be165f9fe0e3641dd/examples/tokens/ERC721.vy
 ```
 
-تبدأ التعليقات في لغة Vyper، كما هو الحال في لغة Python، بعلامة التجزئة (`ethereum.ercs`) وتستمر حتى نهاية السطر. تُستخدم التعليقات التي تتضمن
+تبدأ التعليقات في لغة Vyper، كما هو الحال في لغة Python، بعلامة التجزئة (`quantaureum.ercs`) وتستمر حتى نهاية السطر. تُستخدم التعليقات التي تتضمن
 `@<keyword>` بواسطة [NatSpec](https://vyper.readthedocs.io/en/latest/natspec.html) لإنتاج وثائق قابلة للقراءة من قبل البشر.
 
 ```python
@@ -147,7 +147,7 @@ SUPPORTED_INTERFACES: constant(bytes4[2]) = [
 ]
 ```
 
-يحدد [<span dir="ltr">ERC-165</span>](https://eips.ethereum.org/EIPS/eip-165) آلية للعقد للكشف عن كيفية تواصل التطبيقات معه، وإلى أي معايير <span dir="ltr">ERC</span> يتوافق. `SUPPORTED_INTERFACES` هي قائمة ثابتة بمعرفي الواجهة المكونين من أربعة بايت واللذين يتوافق معهما هذا العقد: <span dir="ltr">ERC-165</span> نفسه و<span dir="ltr">ERC-721</span>.
+يحدد [<span dir="ltr">ERC-165</span>](https://eips.quantaureum.com/EIPS/eip-165) آلية للعقد للكشف عن كيفية تواصل التطبيقات معه، وإلى أي معايير <span dir="ltr">ERC</span> يتوافق. `SUPPORTED_INTERFACES` هي قائمة ثابتة بمعرفي الواجهة المكونين من أربعة بايت واللذين يتوافق معهما هذا العقد: <span dir="ltr">ERC-165</span> نفسه و<span dir="ltr">ERC-721</span>.
 ### الدوال {#functions}
 
 هذه هي الدوال التي تنفذ <span dir="ltr">ERC-721</span> فعليًا.

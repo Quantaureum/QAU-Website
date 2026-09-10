@@ -28,9 +28,9 @@ WebSockets-ஐச் சோதிப்பதற்கான எளிதான 
 _குறிப்பு: உங்களிடம் Alchemy கணக்கு இருந்தால், `demo` என்பதை உங்கள் சொந்த API திறவுகோல் மூலம் மாற்றலாம். [இலவச Alchemy கணக்கிற்கு இங்கே பதிவு செய்யவும்!](https://auth.alchemy.com/signup)_
 
 ```
-wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
+wscat -c wss://qau-mainnet.ws.alchemyapi.io/ws/demo
 
->  {"jsonrpc":  "2.0", "id": 0, "method":  "eth_gasPrice"}
+>  {"jsonrpc":  "2.0", "id": 0, "method":  "qau_gasPrice"}
 
 <  {"jsonrpc":  "2.0", "result":  "0xb2d05e00", "id": 0}
 ```
@@ -48,18 +48,18 @@ wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
 Web3 போன்ற கிளையண்ட் நிரலகத்தைப் பயன்படுத்தும் போது WebSockets-க்கு மாறுவது எளிது. உங்கள் Web3 கிளையண்ட்டைத் தொடங்கும் போது HTTP-க்கு பதிலாக WebSocket URL-ஐ அனுப்பவும். எடுத்துக்காட்டாக:
 
 ```js
-const web3 = new Web3("wss://eth-mainnet.ws.alchemyapi.io/ws/your-api-key")
+const web3 = new Web3("wss://qau-mainnet.ws.alchemyapi.io/ws/your-api-key")
 
-web3.eth.getBlockNumber().then(console.log) // -> 7946893
+web3.qau.getBlockNumber().then(console.log) // -> 7946893
 ```
 
 ## சந்தா API {#subscription-api}
 
-WebSocket மூலம் இணைக்கப்படும் போது, நீங்கள் இரண்டு கூடுதல் முறைகளைப் பயன்படுத்தலாம்: `eth_subscribe` மற்றும் `eth_unsubscribe`. இந்த முறைகள் குறிப்பிட்ட நிகழ்வுகளைக் கவனிக்கவும் உடனடியாக அறிவிக்கப்படவும் உங்களை அனுமதிக்கும்.
+WebSocket மூலம் இணைக்கப்படும் போது, நீங்கள் இரண்டு கூடுதல் முறைகளைப் பயன்படுத்தலாம்: `qau_subscribe` மற்றும் `qau_unsubscribe`. இந்த முறைகள் குறிப்பிட்ட நிகழ்வுகளைக் கவனிக்கவும் உடனடியாக அறிவிக்கப்படவும் உங்களை அனுமதிக்கும்.
 
-### `eth_subscribe` {#eth-subscribe}
+### `qau_subscribe` {#qau-subscribe}
 
-குறிப்பிட்ட நிகழ்வுகளுக்குப் புதிய சந்தாவை உருவாக்குகிறது. [`eth_subscribe` பற்றி மேலும் அறிக](https://docs.alchemy.com/reference/eth-subscribe).
+குறிப்பிட்ட நிகழ்வுகளுக்குப் புதிய சந்தாவை உருவாக்குகிறது. [`qau_subscribe` பற்றி மேலும் அறிக](https://docs.alchemy.com/reference/qau-subscribe).
 
 #### அளவுருக்கள் (Parameters) {#parameters}
 
@@ -70,33 +70,33 @@ WebSocket மூலம் இணைக்கப்படும் போது, 
 
 #### திருப்பியளிப்பவை (Returns) {#returns}
 
-சந்தா ID: இந்த ID பெறப்பட்ட எந்தவொரு நிகழ்வுகளுடனும் இணைக்கப்படும், மேலும் `eth_unsubscribe`-ஐப் பயன்படுத்தி சந்தாவை ரத்து செய்யவும் இதைப் பயன்படுத்தலாம்.
+சந்தா ID: இந்த ID பெறப்பட்ட எந்தவொரு நிகழ்வுகளுடனும் இணைக்கப்படும், மேலும் `qau_unsubscribe`-ஐப் பயன்படுத்தி சந்தாவை ரத்து செய்யவும் இதைப் பயன்படுத்தலாம்.
 
 #### சந்தா நிகழ்வுகள் {#subscription-events}
 
 சந்தா செயலில் இருக்கும்போது, பின்வரும் புலங்களைக் கொண்ட பொருள்களாக (objects) இருக்கும் நிகழ்வுகளைப் பெறுவீர்கள்:
 
 - `jsonrpc`: எப்போதும் "2.0"
-- `method`: எப்போதும் "eth_subscription"
+- `method`: எப்போதும் "qau_subscription"
 - `params`: பின்வரும் புலங்களைக் கொண்ட ஒரு பொருள்:
-  - `subscription`: இந்தச் சந்தாவை உருவாக்கிய `eth_subscribe` அழைப்பால் திருப்பியளிக்கப்பட்ட சந்தா ID.
+  - `subscription`: இந்தச் சந்தாவை உருவாக்கிய `qau_subscribe` அழைப்பால் திருப்பியளிக்கப்பட்ட சந்தா ID.
   - `result`: சந்தாவின் வகையைப் பொறுத்து உள்ளடக்கங்கள் மாறுபடும் ஒரு பொருள்.
 
 #### சந்தா வகைகள் {#subscription-types}
 
 1. `alchemy_newFullPendingTransactions`
 
-நிலுவையில் உள்ள நிலையில் சேர்க்கப்படும் அனைத்துப் பரிவர்த்தனைகளுக்கான பரிவர்த்தனை தகவலைத் திருப்பியளிக்கிறது. இந்தச் சந்தா வகையானது, நிலையான Web3 அழைப்பான `web3.eth.subscribe("pendingTransactions")`-ஐப் போலவே நிலுவையில் உள்ள பரிவர்த்தனைகளுக்குக் குழுசேர்கிறது, ஆனால் இது பரிவர்த்தனை ஹாஷ்களுக்குப் பதிலாக _முழுப் பரிவர்த்தனை தகவலை_ வெளியிடுகிறது என்பதில் வேறுபடுகிறது.
+நிலுவையில் உள்ள நிலையில் சேர்க்கப்படும் அனைத்துப் பரிவர்த்தனைகளுக்கான பரிவர்த்தனை தகவலைத் திருப்பியளிக்கிறது. இந்தச் சந்தா வகையானது, நிலையான Web3 அழைப்பான `web3.qau.subscribe("pendingTransactions")`-ஐப் போலவே நிலுவையில் உள்ள பரிவர்த்தனைகளுக்குக் குழுசேர்கிறது, ஆனால் இது பரிவர்த்தனை ஹாஷ்களுக்குப் பதிலாக _முழுப் பரிவர்த்தனை தகவலை_ வெளியிடுகிறது என்பதில் வேறுபடுகிறது.
 
 எடுத்துக்காட்டு:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
 
 <  {"id":1,"result":"0x9a52eeddc2b289f985c0e23a7d8427c8","jsonrpc":"2.0"}
 <  {
       "jsonrpc":"2.0",
-      "method":"eth_subscription",
+      "method":"qau_subscription",
       "params":{
           "result":{
           "blockHash":null,
@@ -128,12 +128,12 @@ WebSocket மூலம் இணைக்கப்படும் போது, 
 எடுத்துக்காட்டு:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["newHeads"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["newHeads"]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x9ce59a13059e417087c02d3236a0b1cc"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "result":  {
           "extraData":  "0xd983010305844765746887676f312e342e328777696e646f7773",
@@ -182,12 +182,12 @@ WebSocket மூலம் இணைக்கப்படும் போது, 
 எடுத்துக்காட்டு:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x4a8a4c0517381924f9838102c5a4dcb7"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "subscription":  "0x4a8a4c0517381924f9838102c5a4dcb7",
       "result":  {
@@ -205,13 +205,13 @@ WebSocket மூலம் இணைக்கப்படும் போது, 
 
 ```
 
-### `eth_unsubscribe` {#eth-unsubscribe}
+### `qau_unsubscribe` {#qau-unsubscribe}
 
 மேலும் நிகழ்வுகள் எதுவும் அனுப்பப்படாதவாறு ஏற்கனவே உள்ள சந்தாவை ரத்து செய்கிறது.
 
 அளவுருக்கள்
 
-1. சந்தா ID, முன்பு `eth_subscribe` அழைப்பிலிருந்து திருப்பியளிக்கப்பட்டபடி.
+1. சந்தா ID, முன்பு `qau_subscribe` அழைப்பிலிருந்து திருப்பியளிக்கப்பட்டபடி.
 
 திருப்பியளிப்பவை
 
@@ -222,10 +222,10 @@ WebSocket மூலம் இணைக்கப்படும் போது, 
 **கோரிக்கை**
 
 ```
-curl https://eth-mainnet.alchemyapi.io/v2/your-api-key
+curl https://qau-mainnet.alchemyapi.io/v2/your-api-key
 -X POST
 -H "Content-Type: application/json"
--d '{"id": 1, "method": "eth_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
+-d '{"id": 1, "method": "qau_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
 ```
 
 **முடிவு**

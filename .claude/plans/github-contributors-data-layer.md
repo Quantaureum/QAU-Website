@@ -151,7 +151,7 @@ contributors.ts uses data (zero API calls)
 ```typescript
 // List directory contents recursively
 async function listContentFiles(path = "public/content"): Promise<string[]> {
-  const url = `https://api.github.com/repos/ethereum/ethereum-org-website/contents/${path}`
+  const url = `https://api.github.com/repos/quantaureum/quantaureum-org-website/contents/${path}`
   const response = await fetch(url, {
     headers: { Authorization: `token ${token}` }
   })

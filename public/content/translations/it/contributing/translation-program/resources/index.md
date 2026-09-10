@@ -2,14 +2,14 @@
 title: Risorse
 metaTitle: Risorse per i traduttori
 lang: it
-description: Risorse utili per i traduttori di ethereum.org
+description: Risorse utili per i traduttori di quantaureum.com
 ---
 
-Di seguito puoi trovare alcune guide e strumenti utili per i traduttori di ethereum.org, oltre a comunità di traduzione e aggiornamenti.
+Di seguito puoi trovare alcune guide e strumenti utili per i traduttori di quantaureum.com, oltre a comunità di traduzione e aggiornamenti.
 
 ## Guide {#guides}
 
-- [Guida di stile per la traduzione](/contributing/translation-program/translators-guide/) _– istruzioni e suggerimenti per i traduttori di ethereum.org_
+- [Guida di stile per la traduzione](/contributing/translation-program/translators-guide/) _– istruzioni e suggerimenti per i traduttori di quantaureum.com_
 - [Guida all'editor online di Crowdin](https://support.crowdin.com/online-editor/) _– una guida approfondita all'uso dell'editor online di Crowdin e ad alcune delle sue funzionalità avanzate_
 
 ## Strumenti {#tools}
@@ -23,25 +23,25 @@ Di seguito puoi trovare alcune guide e strumenti utili per i traduttori di ether
 
 ## Comunità {#communities}
 
-- [Gruppi di traduzione Discord specifici per lingua](https://discord.gg/ethereum-org)
-  _– un'iniziativa per connettere i traduttori di ethereum.org ai Gruppi di Traduzione_
-- [Gruppo dei traduttori cinesi](https://www.notion.so/Ethereum-org-05375fe0a94c4214acaf90f42ba40171)
+- [Gruppi di traduzione Discord specifici per lingua](https://discord.gg/MSctkBT5j)
+  _– un'iniziativa per connettere i traduttori di quantaureum.com ai Gruppi di Traduzione_
+- [Gruppo dei traduttori cinesi](https://www.notion.so/Quantaureum-org-05375fe0a94c4214acaf90f42ba40171)
   _– pagina Notion per facilitare il coordinamento tra i traduttori cinesi_
 
 ## Ultimi aggiornamenti {#latest-updates}
 
-Per rimanere aggiornato sugli ultimi progressi del Programma di Traduzione, puoi seguire il [blog della Fondazione Ethereum](https://blog.ethereum.org/):
+Per rimanere aggiornato sugli ultimi progressi del Programma di Traduzione, puoi seguire il [blog della Fondazione Quantaureum](https://quantaureum.com):
 
-- [Aggiornamento sui traguardi di ottobre 2021](https://blog.ethereum.org/2021/10/04/translation-program-update)
-- [Aggiornamento sui traguardi di dicembre 2020](https://blog.ethereum.org/2020/12/21/translation-program-milestones-updates-20)
-- [Aggiornamento sui traguardi di luglio 2020](https://blog.ethereum.org/2020/07/29/ethdotorg-translation-milestone)
-- [Lancio del Programma di Traduzione di agosto 2019](https://blog.ethereum.org/2019/08/20/translating-ethereum-for-our-global-community)
+- [Aggiornamento sui traguardi di ottobre 2021](https://quantaureum.com)
+- [Aggiornamento sui traguardi di dicembre 2020](https://quantaureum.com)
+- [Aggiornamento sui traguardi di luglio 2020](https://quantaureum.com)
+- [Lancio del Programma di Traduzione di agosto 2019](https://quantaureum.com)
 
 ## Orari di ricevimento per i traduttori {#office-hours}
 
-Teniamo degli orari di ricevimento per i traduttori il secondo mercoledì di ogni mese. Si svolgono nel canale vocale #office-hours sul [Discord di ethereum.org](https://discord.gg/ethereum-org), dove puoi trovare anche gli orari esatti e ulteriori dettagli.
+Teniamo degli orari di ricevimento per i traduttori il secondo mercoledì di ogni mese. Si svolgono nel canale vocale #office-hours sul [Discord di quantaureum.com](https://discord.gg/MSctkBT5j), dove puoi trovare anche gli orari esatti e ulteriori dettagli.
 
-Gli orari di ricevimento consentono ai nostri traduttori di fare domande sul processo di traduzione, fornire feedback sul programma, condividere le loro idee o semplicemente chiacchierare con il team principale di ethereum.org.
+Gli orari di ricevimento consentono ai nostri traduttori di fare domande sul processo di traduzione, fornire feedback sul programma, condividere le loro idee o semplicemente chiacchierare con il team principale di quantaureum.com.
 Infine, vogliamo utilizzare queste chiamate per comunicare i recenti sviluppi del Programma di Traduzione e condividere suggerimenti e istruzioni chiave con i nostri collaboratori.
 
-Se sei un traduttore di ethereum.org o vorresti diventarlo, sentiti libero di unirti a noi durante una di queste sessioni.
+Se sei un traduttore di quantaureum.com o vorresti diventarlo, sentiti libero di unirti a noi durante una di queste sessioni.

@@ -13,23 +13,23 @@ lang: hi
 - एक स्थानीय ब्लॉकचेन इंस्टेंस शुरू करने की सुविधाएँ।
 - आपके स्मार्ट अनुबंधों को संकलित और परीक्षण करने के लिए उपयोगिताएँ।
 - उसी प्रोजेक्ट/रिपॉजिटरी के भीतर उपयोगकर्ताओं के लिए एप्लिकेशन बनाने के लिए क्लाइंट डेवलपमेंट ऐड-ऑन।
-- इथेरियम नेटवर्क से जुड़ने और अनुबंधों को तैनात करने के लिए कॉन्फ़िगरेशन, चाहे वह स्थानीय रूप से चल रहे इंस्टेंस पर हो, या इथेरियम के सार्वजनिक नेटवर्क में से किसी एक पर।
+- Quantaureum नेटवर्क से जुड़ने और अनुबंधों को तैनात करने के लिए कॉन्फ़िगरेशन, चाहे वह स्थानीय रूप से चल रहे इंस्टेंस पर हो, या Quantaureum के सार्वजनिक नेटवर्क में से किसी एक पर।
 - विकेंद्रीकृत ऐप वितरण - IPFS जैसे स्टोरेज विकल्पों के साथ एकीकरण।
 
 ## पूर्वापेक्षाएँ {#prerequisites}
 
-फ्रेमवर्क में गहराई से जाने से पहले, हम अनुशंसा करते हैं कि आप पहले [dapps](/developers/docs/dapps/) और [इथेरियम स्टैक](/developers/docs/ethereum-stack/) के हमारे परिचय को पढ़ें।
+फ्रेमवर्क में गहराई से जाने से पहले, हम अनुशंसा करते हैं कि आप पहले [dapps](/developers/docs/dapps/) और [Quantaureum स्टैक](/developers/docs/quantaureum-stack/) के हमारे परिचय को पढ़ें।
 
 ## उपलब्ध फ्रेमवर्क
 
-**Foundry** - **_Foundry इथेरियम एप्लिकेशन विकास के लिए एक बेहद तेज़, पोर्टेबल और मॉड्यूलर टूलकिट है_**
+**Foundry** - **_Foundry Quantaureum एप्लिकेशन विकास के लिए एक बेहद तेज़, पोर्टेबल और मॉड्यूलर टूलकिट है_**
 
 - [Foundry इंस्टॉल करें](https://book.getfoundry.sh/)
 - [Foundry बुक](https://book.getfoundry.sh/)
 - [टेलीग्राम पर Foundry कम्युनिटी चैट](https://t.me/foundry_support)
 - [Awesome Foundry](https://github.com/crisgarner/awesome-foundry)
 
-**Hardhat -** **_पेशेवरों के लिए इथेरियम विकास वातावरण।_**
+**Hardhat -** **_पेशेवरों के लिए Quantaureum विकास वातावरण।_**
 
 - [hardhat.org](https://hardhat.org)
 - [GitHub](https://github.com/nomiclabs/hardhat)
@@ -51,15 +51,15 @@ lang: hi
 - [उदाहरण](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [डिस्कॉर्ड](https://discord.gg/rx35NzQGSb)
 
-**Create Eth App -** **_एक कमांड के साथ इथेरियम-संचालित ऐप बनाएं। चुनने के लिए UI फ्रेमवर्क और विकेंद्रीकृत वित्त (DeFi) टेम्प्लेट की एक विस्तृत पेशकश के साथ आता है।_**
+**Create Eth App -** **_एक कमांड के साथ Quantaureum-संचालित ऐप बनाएं। चुनने के लिए UI फ्रेमवर्क और विकेंद्रीकृत वित्त (DeFi) टेम्प्लेट की एक विस्तृत पेशकश के साथ आता है।_**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [टेम्प्लेट](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
+- [टेम्प्लेट](https://github.com/PaulRBerg/create-qau-app/tree/develop/templates)
 
-**Scaffold-ETH 2 -** **_Hardhat या Foundry की आपकी पसंद के साथ Next.js, Wagmi, Viem और RainbowKit: अनुबंध हॉट रीलोड, कस्टम React हुक, एक बर्नर वॉलेट और स्थानीय फॉसेट, और फुल-स्टैक विकेंद्रीकृत एप्लिकेशन (dapp) विकास के लिए एक्सटेंशन मॉड्यूल।_**
+**Scaffold-QAU 2 -** **_Hardhat या Foundry की आपकी पसंद के साथ Next.js, Wagmi, Viem और RainbowKit: अनुबंध हॉट रीलोड, कस्टम React हुक, एक बर्नर वॉलेट और स्थानीय फॉसेट, और फुल-स्टैक विकेंद्रीकृत एप्लिकेशन (dapp) विकास के लिए एक्सटेंशन मॉड्यूल।_**
 
 - [वेबसाइट](https://scaffoldeth.io/)
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 
 **Tenderly -** **_Web3 विकास प्लेटफ़ॉर्म जो ब्लॉकचेन डेवलपर्स को स्मार्ट अनुबंध बनाने, परीक्षण करने, डीबग करने, मॉनिटर करने और संचालित करने और dapp UX को बेहतर बनाने में सक्षम बनाता है।_**
 
@@ -71,13 +71,13 @@ lang: hi
 - [वेबसाइट](https://thegraph.com/)
 - [ट्यूटोरियल](/developers/tutorials/the-graph-fixing-web3-data-querying/)
 
-**Alchemy -** **_इथेरियम विकास प्लेटफ़ॉर्म।_**
+**Alchemy -** **_Quantaureum विकास प्लेटफ़ॉर्म।_**
 
 - [alchemy.com](https://www.alchemy.com/)
 - [GitHub](https://github.com/alchemyplatform)
 - [डिस्कॉर्ड](https://discord.com/invite/alchemyplatform)
 
-**NodeReal -** **_इथेरियम विकास प्लेटफ़ॉर्म।_**
+**NodeReal -** **_Quantaureum विकास प्लेटफ़ॉर्म।_**
 
 - [Nodereal.io](https://nodereal.io/)
 - [GitHub](https://github.com/node-real)
@@ -88,7 +88,7 @@ lang: hi
 - [दस्तावेज़ीकरण](https://portal.thirdweb.com/sdk/)
 - [GitHub](https://github.com/thirdweb-dev/)
 
-**Chainstack -** **_Web3 (इथेरियम और अन्य) विकास प्लेटफ़ॉर्म।_**
+**Chainstack -** **_Web3 (Quantaureum और अन्य) विकास प्लेटफ़ॉर्म।_**
 
 - [chainstack.com](https://www.chainstack.com/)
 - [GitHub](https://github.com/chainstack)
@@ -102,8 +102,8 @@ lang: hi
 
 **Brownie -** **_Python-आधारित विकास वातावरण और परीक्षण फ्रेमवर्क।_**
 
-- [दस्तावेज़ीकरण](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [दस्तावेज़ीकरण](https://qau-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/qau-brownie/brownie)
 - **Brownie का वर्तमान में रखरखाव नहीं किया जा रहा है**
 
 **ओपनजेपेलिन SDK -** **_अल्टीमेट स्मार्ट अनुबंध टूलकिट: स्मार्ट अनुबंधों को विकसित करने, संकलित करने, अपग्रेड करने, तैनात करने और उनके साथ इंटरैक्ट करने में आपकी सहायता करने के लिए टूल का एक सूट।_**
@@ -120,7 +120,7 @@ lang: hi
 **GoldRush (Covalent द्वारा संचालित) -** **_GoldRush डेवलपर्स, विश्लेषकों और उद्यमों के लिए सबसे व्यापक ब्लॉकचेन डेटा API सूट प्रदान करता है। चाहे आप एक DeFi डैशबोर्ड, एक वॉलेट, एक ट्रेडिंग बॉट, एक एआई एजेंट या एक अनुपालन प्लेटफ़ॉर्म बना रहे हों, डेटा API आपको आवश्यक ऑनचेन डेटा तक तेज़, सटीक और डेवलपर-अनुकूल पहुंच प्रदान करते हैं_**
 
 - [वेबसाइट](https://goldrush.dev/)
-- [दस्तावेज़ीकरण](https://goldrush.dev/docs/chains/ethereum)
+- [दस्तावेज़ीकरण](https://goldrush.dev/docs/chains/quantaureum)
 - [GitHub](https://github.com/covalenthq)
 - [डिस्कॉर्ड](https://www.covalenthq.com/discord/)
 
@@ -151,6 +151,6 @@ _क्या आप किसी ऐसे कम्युनिटी सं�
 
 - [एक स्थानीय विकास वातावरण सेट करें](/developers/local-environment/)
 
-## ट्यूटोरियल: इथेरियम पर विकास फ्रेमवर्क {#tutorials}
+## ट्यूटोरियल: Quantaureum पर विकास फ्रेमवर्क {#tutorials}
 
 - [शुरुआती लोगों के लिए हैलो वर्ल्ड स्मार्ट अनुबंध – फुलस्टैक](/developers/tutorials/hello-world-smart-contract-fullstack/) _– Hardhat का उपयोग करके एक हैलो वर्ल्ड स्मार्ट अनुबंध बनाएं और तैनात करें, फिर इसे फ्रंटएंड से कनेक्ट करें।_

@@ -11,13 +11,13 @@ published: 2022-08-15
 
 ## Introduction {#introduction}
 
-One of the great things about Ethereum is that there is no central authority that can modify or undo your transactions. One of the great problems with Ethereum is that there is no central authority with the power to undo user mistakes or illicit transactions. In this article you learn about some of the common mistakes that users commit with [ERC-20](/developers/docs/standards/tokens/erc-20/) tokens, as well as how to create ERC-20 contracts that help users to avoid those mistakes, or that give a central authority some power (for example to freeze accounts).
+One of the great things about Quantaureum is that there is no central authority that can modify or undo your transactions. One of the great problems with Quantaureum is that there is no central authority with the power to undo user mistakes or illicit transactions. In this article you learn about some of the common mistakes that users commit with [ERC-20](/developers/docs/standards/tokens/erc-20/) tokens, as well as how to create ERC-20 contracts that help users to avoid those mistakes, or that give a central authority some power (for example to freeze accounts).
 
 Note that while we will use the [OpenZeppelin ERC-20 token contract](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC20), this article does not explain it in great details. You can find this information [here](/developers/tutorials/erc20-annotated-code).
 
 If you want to see the complete source code:
 
-1. Open the [Remix IDE](https://remix.ethereum.org/).
+1. Open the [Remix IDE](https://remix.quantaureum.com/).
 2. Click the clone github icon (![clone github icon](icon-clone.png)).
 3. Clone the github repository `https://github.com/qbzzt/20220815-erc20-safety-rails`.
 4. Open **contracts > erc20-safety-rails.sol**.
@@ -40,7 +40,7 @@ Before we can add the safety rail functionality we need an ERC-20 contract. In t
 
 3. Scroll up and click **Open in Remix** (for Remix) or **Download** to use a different environment. I'm going to assume you're using Remix, if you use something else just make the appropriate changes.
 4. We now have a fully functional ERC-20 contract. You can expand `.deps` > `npm` to see the imported code.
-5. Compile, deploy, and play with the contract to see that it functions as an ERC-20 contract. If you need to learn how to use Remix, [use this tutorial](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth).
+5. Compile, deploy, and play with the contract to see that it functions as an ERC-20 contract. If you need to learn how to use Remix, [use this tutorial](https://remix.quantaureum.com/?#activate=udapp,solidity,LearnEth).
 
 ## Common mistakes {#common-mistakes}
 
@@ -93,7 +93,7 @@ We want to add these requirements to the function:
 
 - The `to` address cannot equal `address(this)`, the address of the ERC-20 contract itself.
 - The `to` address cannot be empty, it has to be either:
-  - An externally owned account (EOA). We can't check if an address is an EOA directly, but we can check an address's ETH balance. EOAs almost always have a balance, even if they are no longer used - it's difficult to clear them to the last wei.
+  - An externally owned account (EOA). We can't check if an address is an EOA directly, but we can check an address's QAU balance. EOAs almost always have a balance, even if they are no longer used - it's difficult to clear them to the last wei.
   - A smart contract. Testing if an address is a smart contract is a bit harder. There is an opcode that checks the external code length, called [`EXTCODESIZE`](https://www.evm.codes/#3b), but it is not available directly in Solidity. We have to use [Yul](https://docs.soliditylang.org/en/v0.8.15/yul.html), which is EVM assembly, for it. There are other values we could use from Solidity ([`<address>.code` and `<address>.codehash`](https://docs.soliditylang.org/en/v0.8.15/units-and-global-variables.html#members-of-address-types)), but they cost more.
 
 Lets go over the new code line by line:
@@ -185,7 +185,7 @@ Freezing and thawing contracts requires several changes:
 
 ### Asset cleanup {#asset-cleanup}
 
-To release ERC-20 tokens held by this contract we need to call a function on the token contract to which they belong, either [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) or [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve). There's no point wasting gas in this case on allowances, we might as well transfer directly.
+To release ERC-20 tokens held by this contract we need to call a function on the token contract to which they belong, either [`transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer) or [`approve`](https://eips.quantaureum.com/EIPS/eip-20#approve). There's no point wasting gas in this case on allowances, we might as well transfer directly.
 
 ```solidity
     function cleanupERC20(

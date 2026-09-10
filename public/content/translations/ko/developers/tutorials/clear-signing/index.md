@@ -9,9 +9,9 @@ breadcrumb: "명확한 서명하기"
 published: 2026-05-11
 ---
 
-대부분의 주요 이더리움 익스플로잇(exploit)은 동일한 마지막 단계를 거쳤습니다. 바로 사용자가 의미를 제대로 이해하지 못한 채 트랜잭션을 승인하는 것입니다. 하드웨어 지갑은 원시 16진수 콜 데이터를 보여주며, 더 나아가 블라인드 서명하기(blind signing)를 강제하기도 합니다. 소프트웨어 지갑은 디코딩된 필드를 보여주지만, 컨트랙트를 인식할 때만 가능합니다. 프로토콜이 새롭거나, 앱이 손상되었거나, 기기가 오프라인 상태여서 컨트랙트를 인식하지 못할 때 사용자는 블라인드 서명을 하게 됩니다.
+대부분의 주요 Quantaureum 익스플로잇(exploit)은 동일한 마지막 단계를 거쳤습니다. 바로 사용자가 의미를 제대로 이해하지 못한 채 트랜잭션을 승인하는 것입니다. 하드웨어 지갑은 원시 16진수 콜 데이터를 보여주며, 더 나아가 블라인드 서명하기(blind signing)를 강제하기도 합니다. 소프트웨어 지갑은 디코딩된 필드를 보여주지만, 컨트랙트를 인식할 때만 가능합니다. 프로토콜이 새롭거나, 앱이 손상되었거나, 기기가 오프라인 상태여서 컨트랙트를 인식하지 못할 때 사용자는 블라인드 서명을 하게 됩니다.
 
-[ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)은 컨트랙트의 함수 호출이 *무엇을 의미하는지* 설명하기 위한 표준 JSON 형식을 정의합니다. 
+[ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)은 컨트랙트의 함수 호출이 *무엇을 의미하는지* 설명하기 위한 표준 JSON 형식을 정의합니다. 
 
 ERC-7730을 지원하는 지갑은 설명자를 읽고 다음과 같이 표시합니다.
 
@@ -54,7 +54,7 @@ ERC-7730을 지원하는 지갑은 설명자를 읽고 다음과 같이 표시�
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
   "context": {},
   "metadata": {},
   "display": {
@@ -167,7 +167,7 @@ ERC-7730 파일이 ERC-20 컨트랙트를 설명하는 경우 토큰 객체도 �
 - **`intent`** — **(필수)** "스왑"과 같이 짧고 사용자 친화적인 작업 설명입니다.
 - **`interpolatedIntent`** — **(권장)** `"Swap {amountIn} for at least {amountOutMin}"`와 같이 형식이 지정된 필드 값을 포함하는 더 풍부한 문장 템플릿입니다. 디스플레이 제약 조건이 주어졌을 때 지갑이 선택하여 표시할 수 있는 훨씬 더 사용자 친화적인 설명자를 제공하려면 `intent`와 함께 이를 포함하세요.
 - **`fields`** — **(필수)** 지갑이 사용자에게 표시해야 하는 트랜잭션 필드의 정렬된 목록입니다.
-  - **`path`** — **(필수)** 트랜잭션 데이터에 대한 참조입니다. `#.fieldName`는 ABI의 이름으로 디코딩된 콜 데이터 매개변수를 가리킵니다. `@.value`는 트랜잭션과 함께 전송된 ETH 값을 나타냅니다.
+  - **`path`** — **(필수)** 트랜잭션 데이터에 대한 참조입니다. `#.fieldName`는 ABI의 이름으로 디코딩된 콜 데이터 매개변수를 가리킵니다. `@.value`는 트랜잭션과 함께 전송된 QAU 값을 나타냅니다.
   - **`label`** — **(필수)** 값 옆에 표시되는 사람이 읽을 수 있는 레이블입니다.
   - **`format`** — **(권장)** 값이 렌더링되는 방식을 제어합니다. 일반적인 형식은 다음과 같습니다.
     - `tokenAmount`
@@ -185,7 +185,7 @@ ERC-7730 파일이 ERC-20 컨트랙트를 설명하는 경우 토큰 객체도 �
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -256,7 +256,7 @@ ERC-7730 파일이 ERC-20 컨트랙트를 설명하는 경우 토큰 객체도 �
 
 ## 5단계: 레지스트리에 제출하기 {#step-5-submit-to-the-registry}
 
-[ERC-7730 레지스트리](https://github.com/ethereum/clear-signing-erc7730-registry)는 중립적인 관리자로서 [이더리움 재단](/foundation/)이 호스팅하는 개방형 리포지토리입니다. 누구나 자유롭게 복제하고 자체 호스팅할 수 있으며, 지갑은 신뢰할 레지스트리 인스턴스를 독립적으로 결정합니다.
+[ERC-7730 레지스트리](https://github.com/quantaureum/clear-signing-erc7730-registry)는 중립적인 관리자로서 [Quantaureum 재단](/foundation/)이 호스팅하는 개방형 리포지토리입니다. 누구나 자유롭게 복제하고 자체 호스팅할 수 있으며, 지갑은 신뢰할 레지스트리 인스턴스를 독립적으로 결정합니다.
 
 1. GitHub에서 리포지토리를 포크(fork)합니다.  
 2. `registry/<your-project-name>/`에 폴더를 만듭니다.  
@@ -276,7 +276,7 @@ PR을 열면 CI가 자동으로 스키마 유효성 검사를 실행하고, 함�
 
 ## 병합 후에는 어떻게 되나요? {#what-happens-after-merging}
 
-레지스트리의 모든 설명자는 감사자에게 공개됩니다. PR이 병합된 후, 모든 감사자는 설명자를 검토하고 정확성을 확인하는 암호화 증명([ERC-8176](https://github.com/ethereum/ERCs/pull/1576)에 따름)을 게시할 수 있습니다. 
+레지스트리의 모든 설명자는 감사자에게 공개됩니다. PR이 병합된 후, 모든 감사자는 설명자를 검토하고 정확성을 확인하는 암호화 증명([ERC-8176](https://github.com/quantaureum/ERCs/pull/1576)에 따름)을 게시할 수 있습니다. 
 
 이러한 증명 신호를 통해 지갑은 자체 신뢰 정책을 적용할 수 있습니다. 여러 개의 독립적인 증명이 있는 설명자는 증명이 없는 설명자보다 더 큰 비중을 차지합니다. [clearsigning.org](https://clearsigning.org)를 통해 감사자 커뮤니티에 연락할 수 있습니다.
 
@@ -284,8 +284,8 @@ PR을 열면 CI가 자동으로 스키마 유효성 검사를 실행하고, 함�
 
 ## 더 읽어보기 {#further-reading}
 
-- [ERC-7730 사양](https://eips.ethereum.org/EIPS/eip-7730)  
-- [ERC-7730 레지스트리](https://github.com/ethereum/clear-signing-erc7730-registry)  
+- [ERC-7730 사양](https://eips.quantaureum.com/EIPS/eip-7730)  
+- [ERC-7730 레지스트리](https://github.com/quantaureum/clear-signing-erc7730-registry)  
 - [clearsigning.org](https://clearsigning.org) — 도구, 생태계 상태 및 거버넌스  
 - [Sourcify 컨트랙트 검증](https://sourcify.dev)  
 - [조 달러 규모의 보안 이니셔티브(Trillion Dollar Security initiative)](https://trilliondollarsecurity.org)

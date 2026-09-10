@@ -785,7 +785,7 @@ Solidity 테스트에서 얻을 수 없는 한 가지는 자체 애플리케이�
 
    | 매개변수 | 값 |
    | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | MNEMONIC | 트랜잭션 비용을 지불하기에 충분한 ETH를 가진 계정의 니모닉입니다. [옵티미즘의 퍼싯 문서](https://docs.optimism.io/app-developers/tools/faucets)에 현재 테스트넷 퍼싯이 나열되어 있습니다. |
+   | MNEMONIC | 트랜잭션 비용을 지불하기에 충분한 QAU를 가진 계정의 니모닉입니다. [옵티미즘의 퍼싯 문서](https://docs.optimism.io/app-developers/tools/faucets)에 현재 테스트넷 퍼싯이 나열되어 있습니다. |
    | OPTIMISM_GOERLI_URL | WORM을 다시 배포할 네트워크의 RPC URL입니다. OP Sepolia의 경우 `https://sepolia.optimism.io`와 같은 OP Sepolia RPC 엔드포인트나 공급자의 다른 엔드포인트를 사용하세요. |
 
 5. `index.js`를 실행합니다.

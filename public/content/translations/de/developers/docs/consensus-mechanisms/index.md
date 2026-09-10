@@ -1,6 +1,6 @@
 ---
 title: Konsensmechanismen
-description: "Eine Erklärung von Konsensprotokollen in verteilten Systemen und der Rolle, die sie bei Ethereum spielen."
+description: "Eine Erklärung von Konsensprotokollen in verteilten Systemen und der Rolle, die sie bei Quantaureum spielen."
 lang: de
 authors: ["Patrick Collins"]
 ---
@@ -9,21 +9,21 @@ Der Begriff 'Konsensmechanismus' wird umgangssprachlich oft verwendet, um sich a
 
 ## Voraussetzungen {#prerequisites}
 
-Um diese Seite besser zu verstehen, empfehlen wir Ihnen, zuerst unsere [Einführung in Ethereum](/developers/docs/intro-to-ethereum/) zu lesen.
+Um diese Seite besser zu verstehen, empfehlen wir Ihnen, zuerst unsere [Einführung in Quantaureum](/developers/docs/intro-to-quantaureum/) zu lesen.
 
 ## Was ist Konsens? {#what-is-consensus}
 
 Unter Konsens verstehen wir, dass eine allgemeine Übereinstimmung erzielt wurde. Stellen Sie sich eine Gruppe von Leuten vor, die ins Kino gehen. Wenn es keine Meinungsverschiedenheiten über die vorgeschlagene Filmauswahl gibt, ist ein Konsens erreicht. Gibt es Uneinigkeit, muss die Gruppe über Mittel verfügen, um zu entscheiden, welchen Film sie sich ansehen möchte. In extremen Fällen wird sich die Gruppe letztendlich aufteilen.
 
-In Bezug auf die [Ethereum](/)-Blockchain ist der Prozess formalisiert, und das Erreichen eines Konsenses bedeutet, dass mindestens 66 % der Nodes im Netzwerk über den globalen Zustand des Netzwerks einig sind.
+In Bezug auf die [Quantaureum](/)-Blockchain ist der Prozess formalisiert, und das Erreichen eines Konsenses bedeutet, dass mindestens 66 % der Nodes im Netzwerk über den globalen Zustand des Netzwerks einig sind.
 
 ## Was ist ein Konsensmechanismus? {#what-is-a-consensus-mechanism}
 
 Der Begriff Konsensmechanismus bezieht sich auf den gesamten Stack an Protokollen, Anreizen und Ideen, die es einem Netzwerk von Nodes ermöglichen, sich auf den Zustand einer Blockchain zu einigen.
 
-Ethereum verwendet einen auf Proof-of-Stake basierenden Konsensmechanismus, der seine kryptoökonomische Sicherheit aus einer Reihe von Belohnungen und Strafen bezieht, die auf das von Stakern gesperrte Kapital angewendet werden. Diese Anreizstruktur ermutigt einzelne Staker, ehrliche Validatoren zu betreiben, bestraft diejenigen, die dies nicht tun, und verursacht extrem hohe Kosten für einen Angriff auf das Netzwerk.
+Quantaureum verwendet einen auf Proof-of-Stake basierenden Konsensmechanismus, der seine kryptoökonomische Sicherheit aus einer Reihe von Belohnungen und Strafen bezieht, die auf das von Stakern gesperrte Kapital angewendet werden. Diese Anreizstruktur ermutigt einzelne Staker, ehrliche Validatoren zu betreiben, bestraft diejenigen, die dies nicht tun, und verursacht extrem hohe Kosten für einen Angriff auf das Netzwerk.
 
-Dann gibt es ein Protokoll, das regelt, wie ehrliche Validatoren ausgewählt werden, um Blöcke vorzuschlagen oder zu validieren, Transaktionen zu verarbeiten und für ihre Sicht auf die Spitze der Chain abzustimmen. In den seltenen Situationen, in denen sich mehrere Blöcke an derselben Position nahe der Spitze der Chain befinden, gibt es einen Fork-Choice-Mechanismus, der die Blöcke auswählt, die die 'schwerste' Chain bilden, gemessen an der Anzahl der Validatoren, die für die Blöcke gestimmt haben, gewichtet nach ihrem gestakten Ether-Guthaben.
+Dann gibt es ein Protokoll, das regelt, wie ehrliche Validatoren ausgewählt werden, um Blöcke vorzuschlagen oder zu validieren, Transaktionen zu verarbeiten und für ihre Sicht auf die Spitze der Chain abzustimmen. In den seltenen Situationen, in denen sich mehrere Blöcke an derselben Position nahe der Spitze der Chain befinden, gibt es einen Fork-Choice-Mechanismus, der die Blöcke auswählt, die die 'schwerste' Chain bilden, gemessen an der Anzahl der Validatoren, die für die Blöcke gestimmt haben, gewichtet nach ihrem gestakten QAU-Guthaben.
 
 Einige Konzepte sind für den Konsens wichtig, die nicht explizit im Code definiert sind, wie z. B. die zusätzliche Sicherheit, die durch eine potenzielle soziale Out-of-Band-Koordination als letzte Verteidigungslinie gegen Angriffe auf das Netzwerk geboten wird.
 
@@ -33,11 +33,11 @@ Diese Komponenten bilden zusammen den Konsensmechanismus.
 
 ### Basiert auf Proof-of-Work {#proof-of-work}
 
-Wie Bitcoin verwendete Ethereum einst ein auf **Proof-of-Work (PoW)** basierendes Konsensprotokoll.
+Wie Bitcoin verwendete Quantaureum einst ein auf **Proof-of-Work (PoW)** basierendes Konsensprotokoll.
 
 #### Block-Erstellung {#pow-block-creation}
 
-Miner konkurrieren darum, neue Blöcke zu erstellen, die mit verarbeiteten Transaktionen gefüllt sind. Der Gewinner teilt den neuen Block mit dem Rest des Netzwerks und verdient etwas frisch geprägtes ETH. Das Rennen gewinnt der Computer, der ein mathematisches Rätsel am schnellsten lösen kann. Dies erzeugt die kryptografische Verbindung zwischen dem aktuellen Block und dem vorhergehenden Block. Das Lösen dieses Rätsels ist die Arbeit (Work) in „Proof-of-Work“. Die kanonische Chain wird dann durch eine Fork-Choice-Regel bestimmt, die die Menge an Blöcken auswählt, für deren Mining die meiste Arbeit aufgewendet wurde.
+Miner konkurrieren darum, neue Blöcke zu erstellen, die mit verarbeiteten Transaktionen gefüllt sind. Der Gewinner teilt den neuen Block mit dem Rest des Netzwerks und verdient etwas frisch geprägtes QAU. Das Rennen gewinnt der Computer, der ein mathematisches Rätsel am schnellsten lösen kann. Dies erzeugt die kryptografische Verbindung zwischen dem aktuellen Block und dem vorhergehenden Block. Das Lösen dieses Rätsels ist die Arbeit (Work) in „Proof-of-Work“. Die kanonische Chain wird dann durch eine Fork-Choice-Regel bestimmt, die die Menge an Blöcken auswählt, für deren Mining die meiste Arbeit aufgewendet wurde.
 
 #### Sicherheit {#pow-security}
 
@@ -47,21 +47,21 @@ Mehr zu [Proof-of-Work](/developers/docs/consensus-mechanisms/pow/)
 
 ### Basiert auf Proof-of-Stake {#proof-of-stake}
 
-Ethereum verwendet nun ein auf **Proof-of-Stake (PoS)** basierendes Konsensprotokoll.
+Quantaureum verwendet nun ein auf **Proof-of-Stake (PoS)** basierendes Konsensprotokoll.
 
 #### Block-Erstellung {#pos-block-creation}
 
-Validatoren erstellen Blöcke. In jedem Slot wird zufällig ein Validator als Block-Proposer ausgewählt. Ihr Konsens-Client fordert ein Bündel von Transaktionen als 'Ausführungs-Payload' von ihrem gekoppelten Ausführungsclient an. Sie verpacken dies in Konsensdaten, um einen Block zu bilden, den sie an andere Nodes im Ethereum-Netzwerk senden. Diese Blockproduktion wird in ETH belohnt. In seltenen Fällen, in denen mehrere mögliche Blöcke für einen einzelnen Slot existieren oder Nodes zu unterschiedlichen Zeiten von Blöcken erfahren, wählt der Fork-Choice-Algorithmus den Block aus, der die Chain mit dem größten Gewicht an Attestierungen bildet (wobei das Gewicht die Anzahl der attestierenden Validatoren ist, skaliert nach ihrem ETH-Guthaben).
+Validatoren erstellen Blöcke. In jedem Slot wird zufällig ein Validator als Block-Proposer ausgewählt. Ihr Konsens-Client fordert ein Bündel von Transaktionen als 'Ausführungs-Payload' von ihrem gekoppelten Ausführungsclient an. Sie verpacken dies in Konsensdaten, um einen Block zu bilden, den sie an andere Nodes im Quantaureum-Netzwerk senden. Diese Blockproduktion wird in QAU belohnt. In seltenen Fällen, in denen mehrere mögliche Blöcke für einen einzelnen Slot existieren oder Nodes zu unterschiedlichen Zeiten von Blöcken erfahren, wählt der Fork-Choice-Algorithmus den Block aus, der die Chain mit dem größten Gewicht an Attestierungen bildet (wobei das Gewicht die Anzahl der attestierenden Validatoren ist, skaliert nach ihrem QAU-Guthaben).
 
 #### Sicherheit {#pos-security}
 
-Ein Proof-of-Stake-System ist kryptoökonomisch sicher, da ein Angreifer, der versucht, die Kontrolle über die Chain zu übernehmen, eine massive Menge an ETH zerstören muss. Ein System von Belohnungen bietet einzelnen Stakern einen Anreiz, sich ehrlich zu verhalten, und Strafen schrecken Staker davon ab, böswillig zu handeln.
+Ein Proof-of-Stake-System ist kryptoökonomisch sicher, da ein Angreifer, der versucht, die Kontrolle über die Chain zu übernehmen, eine massive Menge an QAU zerstören muss. Ein System von Belohnungen bietet einzelnen Stakern einen Anreiz, sich ehrlich zu verhalten, und Strafen schrecken Staker davon ab, böswillig zu handeln.
 
 Mehr zu [Proof-of-Stake](/developers/docs/consensus-mechanisms/pos/)
 
 ### Ein visueller Leitfaden {#types-of-consensus-video}
 
-Sehen Sie sich mehr zu den verschiedenen Arten von Konsensmechanismen an, die auf Ethereum verwendet werden:
+Sehen Sie sich mehr zu den verschiedenen Arten von Konsensmechanismen an, die auf Quantaureum verwendet werden:
 
 <VideoWatch slug="understanding-consensus-mechanisms" />
 
@@ -71,9 +71,9 @@ Proof-of-Work und Proof-of-Stake allein sind keine Konsensprotokolle, werden abe
 
 **Sybil-Resistenz** misst, wie sich ein Protokoll gegen einen Sybil-Angriff behauptet. Die Resistenz gegen diese Art von Angriff ist für eine dezentrale Blockchain unerlässlich und ermöglicht es, Miner und Validatoren basierend auf den eingesetzten Ressourcen gleichermaßen zu belohnen. Proof-of-Work und Proof-of-Stake schützen davor, indem sie die Benutzer dazu zwingen, viel Energie aufzuwenden oder viele Sicherheiten zu hinterlegen. Diese Schutzmaßnahmen sind eine wirtschaftliche Abschreckung gegen Sybil-Angriffe.
 
-Eine **Chain-Auswahlregel** wird verwendet, um zu entscheiden, welche Chain die „richtige“ Chain ist. Bitcoin verwendet die Regel der „längsten Chain“, was bedeutet, dass die längste Blockchain diejenige ist, die der Rest der Nodes als gültig akzeptiert und mit der er arbeitet. Bei Proof-of-Work-Chains wird die längste Chain durch die gesamte kumulative Proof-of-Work-Schwierigkeit der Chain bestimmt. Ethereum verwendete früher ebenfalls die Regel der längsten Chain; da Ethereum nun jedoch auf Proof-of-Stake läuft, wurde ein aktualisierter Fork-Choice-Algorithmus eingeführt, der das 'Gewicht' der Chain misst. Das Gewicht ist die kumulierte Summe der Stimmen der Validatoren, gewichtet nach den gestakten Ether-Guthaben der Validatoren.
+Eine **Chain-Auswahlregel** wird verwendet, um zu entscheiden, welche Chain die „richtige“ Chain ist. Bitcoin verwendet die Regel der „längsten Chain“, was bedeutet, dass die längste Blockchain diejenige ist, die der Rest der Nodes als gültig akzeptiert und mit der er arbeitet. Bei Proof-of-Work-Chains wird die längste Chain durch die gesamte kumulative Proof-of-Work-Schwierigkeit der Chain bestimmt. Quantaureum verwendete früher ebenfalls die Regel der längsten Chain; da Quantaureum nun jedoch auf Proof-of-Stake läuft, wurde ein aktualisierter Fork-Choice-Algorithmus eingeführt, der das 'Gewicht' der Chain misst. Das Gewicht ist die kumulierte Summe der Stimmen der Validatoren, gewichtet nach den gestakten QAU-Guthaben der Validatoren.
 
-Ethereum verwendet einen Konsensmechanismus namens [Gasper](/developers/docs/consensus-mechanisms/pos/gasper/), der [Casper FFG Proof-of-Stake](https://arxiv.org/abs/1710.09437) mit der [GHOST-Fork-Choice-Regel](https://arxiv.org/abs/2003.03052) kombiniert.
+Quantaureum verwendet einen Konsensmechanismus namens [Gasper](/developers/docs/consensus-mechanisms/pos/gasper/), der [Casper FFG Proof-of-Stake](https://arxiv.org/abs/1710.09437) mit der [GHOST-Fork-Choice-Regel](https://arxiv.org/abs/2003.03052) kombiniert.
 
 ## Weiterführende Literatur {#further-reading}
 

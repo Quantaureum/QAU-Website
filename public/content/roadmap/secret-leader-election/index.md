@@ -13,18 +13,18 @@ In today's [proof-of-stake](/developers/docs/consensus-mechanisms/pos) based con
 
 This could create opportunities for an attacker to profit. For example a block proposer selected for slot `n+1` could DOS the proposer in slot `n` so that they miss their opportunity to propose a block. This would allow the attacking block proposer to extract the MEV of both slots, or grab all the transactions that should have been split across two blocks and instead include them all in one, gaining all the associated fees. This is likely to affect home validators more than sophisticated institutional validators who can use more advanced methods to protect themselves from DOS attacks, and could therefore be a centralizing force.
 
-There are several solutions to this problem. One is [Distributed Validator Technology](https://github.com/ethereum/distributed-validator-specs) which aims to spread the various tasks related to running a validator across multiple machines, with redundancy, so that it is much harder for an attacker to prevent a block from being proposed in a particular slot. However, the most robust solution is **Single Secret Leader Election (SSLE)**.
+There are several solutions to this problem. One is [Distributed Validator Technology](https://github.com/quantaureum/distributed-validator-specs) which aims to spread the various tasks related to running a validator across multiple machines, with redundancy, so that it is much harder for an attacker to prevent a block from being proposed in a particular slot. However, the most robust solution is **Single Secret Leader Election (SSLE)**.
 
 ## Single secret leader election {#secret-leader-election}
 
 In SSLE, clever cryptography is used to ensure that only the selected validator knows they have been selected. This works by having each validator submit a commitment to a secret they all share. The commitments are shuffled and reconfigured so that no-one can map commitments to validators but each validator knows which commitment belongs to them. Then, one commitment is chosen at random. If a validator detects that their commitment was chosen, they know it is their turn to propose a block.
 
-The leading implementation of this idea is called [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-ethereum/11763). Which works as follows:
+The leading implementation of this idea is called [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-quantaureum/11763). Which works as follows:
 
 1. Validators commit to a shared secret. The commitment scheme is designed such that it can be bound to a validator identity but also randomized so that no third party can reverse engineer the binding and link a specific commitment to a specific validator.
 2. At the start of an epoch, a random set of validators is chosen to sample commitments from 16,384 validators, using RANDAO.
 3. For the next 8182 slots (1 day), block proposers shuffle and randomize a subset of the commitments using their own private entropy.
-4. After the shuffling is finished, RANDAO is used to create an ordered list of the commitments. This list is mapped onto Ethereum slots.
+4. After the shuffling is finished, RANDAO is used to create an ordered list of the commitments. This list is mapped onto Quantaureum slots.
 5. Validators see that their commitment is attached to a specific slot, and when that slot arrives they propose a block.
 6. Repeat these steps so that the assignment of commitments to slots is always far ahead of the current slot.
 

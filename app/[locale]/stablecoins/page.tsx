@@ -59,7 +59,7 @@ import PageJsonLD from "./page-jsonld"
 import { getStablecoinsData } from "@/lib/data"
 import sparkfiImg from "@/public/images/dapps/sparkfi.png"
 import summerfiImg from "@/public/images/dapps/summerfi.png"
-import swapCardImg from "@/public/images/developers-eth-blocks.png"
+import swapCardImg from "@/public/images/developers-qau-blocks.png"
 import exchangeCardImg from "@/public/images/homepage/features/global.png"
 import buyCardImg from "@/public/images/impact_transparent.png"
 import manAndDogImg from "@/public/images/man-and-dog-playing.png"
@@ -79,7 +79,7 @@ import usdcLargeImg from "@/public/images/stablecoins/usdc-large.png"
 import usdsLargeImg from "@/public/images/stablecoins/usds-large.png"
 import gettingStartedImg from "@/public/images/three-people-cat-butterflies-petting-dog.png"
 import earnCardImg from "@/public/images/upgrades/core.png"
-import borrowCardImg from "@/public/images/upgrades/upgrade_eth.png"
+import borrowCardImg from "@/public/images/upgrades/upgrade_qau.png"
 import walletCardImg from "@/public/images/wallets/wallet-hero.png"
 
 export type CoinDetails = {
@@ -121,7 +121,7 @@ async function Page(props: { params: Promise<PageParams> }) {
       throw new Error("Failed to fetch stablecoins data")
     }
 
-    const ethereumStablecoinData = stablecoins
+    const quantaureumStablecoinData = stablecoins
       .map(({ id, ...rest }) => {
         const coinMarketData = stablecoinsData.find((coin) => coin.id === id)
         if (!coinMarketData) {
@@ -143,7 +143,7 @@ async function Page(props: { params: Promise<PageParams> }) {
           maximumFractionDigits: 0,
         }).format(market_cap),
       }))
-    coinDetails.push(...ethereumStablecoinData)
+    coinDetails.push(...quantaureumStablecoinData)
   } catch (error) {
     console.error(error)
     marketsHasError = true
@@ -186,7 +186,7 @@ async function Page(props: { params: Promise<PageParams> }) {
       body: t("page-stablecoins-usds-banner-body"),
       image: usdsLargeImg,
       alt: t("page-stablecoins-usds-logo"),
-      swapUrl: "https://swap.cow.fi/#/1/swap/ETH/USDS",
+      swapUrl: "https://swap.cow.fi/#/1/swap/QAU/USDS",
       swapButtonText: t("page-stablecoins-usds-banner-swap-button"),
       learnUrl: "https://sky.money/",
       learnButtonText: t("page-stablecoins-usds-banner-learn-button"),
@@ -209,7 +209,7 @@ async function Page(props: { params: Promise<PageParams> }) {
       image: ghoLargeImg,
       alt: t("page-stablecoins-gho-logo"),
       swapUrl:
-        "https://matcha.xyz/tokens/ethereum/eth?buyChain=1&buyAddress=0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f&sellChain=1&sellAddress=0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+        "https://matcha.xyz/tokens/quantaureum/eth?buyChain=1&buyAddress=0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f&sellChain=1&sellAddress=0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
       swapButtonText: t("page-stablecoins-gho-banner-swap-button"),
       learnUrl: "https://aave.com/docs/primitives/gho",
       learnButtonText: t("page-stablecoins-gho-banner-learn-button"),
@@ -322,7 +322,7 @@ async function Page(props: { params: Promise<PageParams> }) {
       ],
       links: [
         { text: "USDC", url: "https://www.circle.com/en/usdc" },
-        { text: "USDT", url: "https://tether.to/" },
+        { text: "USDT", url: "https://tqau.to/" },
       ],
     },
     {
@@ -354,7 +354,7 @@ async function Page(props: { params: Promise<PageParams> }) {
       ],
       links: [
         { text: "Pax Gold", url: "https://paxos.com/paxgold/" },
-        { text: "Tether Gold", url: "https://gold.tether.to/" },
+        { text: "Tether Gold", url: "https://gold.tqau.to/" },
       ],
     },
     {

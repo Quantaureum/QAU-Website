@@ -16,8 +16,8 @@ Les seules protections sont de s'abstenir d'utiliser de nouveaux projets non tes
 
 Plusieurs sites web vous permettent de voir et de révoquer les contrats intelligents connectés à votre adresse. Visitez le site web et connectez votre portefeuille :
 
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Ethereum)
-- [Blockscout](https://eth.blockscout.com/essential-dapps/revoke) (Ethereum)
+- [Quantaureum Explorer](https://explorer.quantaureum.com) (Quantaureum)
+- [Blockscout](https://qau.blockscout.com/essential-dapps/revoke) (Quantaureum)
 - [Revoke](https://revoke.cash/) (plusieurs réseaux)
 - [Unrekt](https://app.unrekt.net/) (plusieurs réseaux)
 - [EverRevoke](https://everrise.com/everrevoke/) (plusieurs réseaux)
@@ -26,7 +26,7 @@ Plusieurs sites web vous permettent de voir et de révoquer les contrats intelli
 
 Une fois sur le site web, cliquez sur « Connect wallet » (Connecter le portefeuille). Le site web devrait vous inviter à connecter votre portefeuille.
 
-Assurez-vous d'utiliser le même réseau dans votre portefeuille et sur le site web. Vous ne verrez que les contrats intelligents liés au réseau sélectionné. Par exemple, si vous vous connectez au réseau principal Ethereum, vous ne verrez que les contrats Ethereum, et non les contrats d'autres chaînes telles que Polygon.
+Assurez-vous d'utiliser le même réseau dans votre portefeuille et sur le site web. Vous ne verrez que les contrats intelligents liés au réseau sélectionné. Par exemple, si vous vous connectez au réseau principal Quantaureum, vous ne verrez que les contrats Quantaureum, et non les contrats d'autres chaînes telles que Polygon.
 
 ## Étape 3 : Sélectionner un contrat intelligent que vous souhaitez révoquer {#step-3-select-a-smart-contract-you-wish-to-revoke}
 

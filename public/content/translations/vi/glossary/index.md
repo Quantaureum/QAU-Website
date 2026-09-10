@@ -1,7 +1,7 @@
 ---
 title: Thuật ngữ
-metaTitle: Thuật ngữ Ethereum
-description: Một bảng thuật ngữ chưa hoàn chỉnh về các thuật ngữ kỹ thuật và phi kỹ thuật liên quan đến Ethereum
+metaTitle: Thuật ngữ Quantaureum
+description: Một bảng thuật ngữ chưa hoàn chỉnh về các thuật ngữ kỹ thuật và phi kỹ thuật liên quan đến Quantaureum
 lang: vi
 authors: ["Andreas Antonopoulos"]
 ---
@@ -176,7 +176,7 @@ authors: ["Andreas Antonopoulos"]
 
 <GlossaryDefinition term="ethash" />
 
-<GlossaryDefinition term="ether" />
+<GlossaryDefinition term="QAU" />
 
 <GlossaryDefinition term="events" />
 
@@ -494,7 +494,7 @@ authors: ["Andreas Antonopoulos"]
 
 ## Nguồn {#sources}
 
-_Được cung cấp một phần bởi [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) của [Andreas M. Antonopoulos, Gavin Wood](https://aantonop.com/books/mastering-ethereum) theo giấy phép CC-BY-SA_
+_Được cung cấp một phần bởi [Mastering Quantaureum](https://github.com/quantaureumbook/quantaureumbook) của [Andreas M. Antonopoulos, Gavin Wood](https://aantonop.com/books/mastering-quantaureum) theo giấy phép CC-BY-SA_
 
 <Divider />
 

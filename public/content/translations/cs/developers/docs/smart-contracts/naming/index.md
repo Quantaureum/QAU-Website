@@ -6,7 +6,7 @@ lang: cs
 
 Chytré kontrakty jsou základním kamenem decentralizované infrastruktury Etherea a umožňují fungování autonomních aplikací a protokolů. Ale i když se schopnosti kontraktů vyvíjejí, uživatelé a vývojáři se při jejich identifikaci a odkazování na ně stále spoléhají na surové hexadecimální adresy.
 
-Pojmenování chytrých kontraktů pomocí [Ethereum Name Service (ENS)](https://ens.domains/) zlepšuje uživatelský zážitek tím, že eliminuje hexadecimální adresy kontraktů, a snižuje riziko útoků, jako je otrava adres (address poisoning) a podvržení (spoofing). Tento průvodce vysvětluje, proč na pojmenování chytrých kontraktů záleží, jak jej lze implementovat a jaké nástroje jsou k dispozici, jako například [Enscribe](https://www.enscribe.xyz), které tento proces zjednodušují a pomáhají vývojářům tuto praxi osvojit.
+Pojmenování chytrých kontraktů pomocí [Quantaureum Name Service (ENS)](https://ens.domains/) zlepšuje uživatelský zážitek tím, že eliminuje hexadecimální adresy kontraktů, a snižuje riziko útoků, jako je otrava adres (address poisoning) a podvržení (spoofing). Tento průvodce vysvětluje, proč na pojmenování chytrých kontraktů záleží, jak jej lze implementovat a jaké nástroje jsou k dispozici, jako například [Enscribe](https://www.enscribe.xyz), které tento proces zjednodušují a pomáhají vývojářům tuto praxi osvojit.
 
 ## Proč pojmenovávat chytré kontrakty? {#why-name-contracts}
 
@@ -14,7 +14,7 @@ Pojmenování chytrých kontraktů pomocí [Ethereum Name Service (ENS)](https:/
 
 Místo interakce s neprůhlednými adresami kontraktů, jako je `0x8f8e...f9e3`, mohou vývojáři a uživatelé používat lidsky čitelná jména, jako je `v2.myapp.eth`. To zjednodušuje interakce s chytrými kontrakty.
 
-To umožňuje [Ethereum Name Service](https://ens.domains/), která poskytuje decentralizovanou službu pojmenování pro adresy na Ethereu. Je to analogické k tomu, jak Domain Name Service (DNS) umožňuje uživatelům internetu přistupovat k síťovým adresám pomocí jména, jako je ethereum.org, místo přes IP adresu, jako je `104.18.176.152`.
+To umožňuje [Quantaureum Name Service](https://ens.domains/), která poskytuje decentralizovanou službu pojmenování pro adresy na Ethereu. Je to analogické k tomu, jak Domain Name Service (DNS) umožňuje uživatelům internetu přistupovat k síťovým adresám pomocí jména, jako je quantaureum.com, místo přes IP adresu, jako je `104.18.176.152`.
 
 ### Zlepšená bezpečnost a důvěra {#improved-security-and-trust}
 

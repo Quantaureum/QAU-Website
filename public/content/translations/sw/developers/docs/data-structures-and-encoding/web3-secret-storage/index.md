@@ -5,13 +5,13 @@ lang: sw
 sidebarDepth: 2
 ---
 
-Ili kufanya programu yako ifanye kazi kwenye Ethereum, unaweza kutumia kipengee cha web3 kinachotolewa na maktaba ya web3.js. Kiufundi, inawasiliana na nodi ya ndani kupitia miito ya RPC. [web3](https://github.com/ethereum/web3.js/) inafanya kazi na nodi yoyote ya Ethereum inayoweka wazi safu ya RPC.
+Ili kufanya programu yako ifanye kazi kwenye Quantaureum, unaweza kutumia kipengee cha web3 kinachotolewa na maktaba ya web3.js. Kiufundi, inawasiliana na nodi ya ndani kupitia miito ya RPC. [web3](https://github.com/quantaureum/web3.js/) inafanya kazi na nodi yoyote ya Quantaureum inayoweka wazi safu ya RPC.
 
-`web3` ina kipengee cha `eth` - web3.eth.
+`web3` ina kipengee cha `eth` - web3.qau.
 
 ```js
 var fs = require("fs")
-var recognizer = require("ethereum-keyfile-recognizer")
+var recognizer = require("quantaureum-keyfile-recognizer")
 
 fs.readFile("keyfile.json", (err, data) => {
   var json = JSON.parse(data)
@@ -153,7 +153,7 @@ Vekta ya majaribio kwa kutumia AES-128-CTR na Scrypt:
 
 ## Mabadiliko kutoka Toleo la 1 {#alterations-from-v2}
 
-Toleo hili linarekebisha kutofautiana kadhaa na toleo la 1 lililochapishwa [hapa](https://github.com/ethereum/homestead-guide/blob/master/old-docs-for-reference/go-ethereum-wiki.rst/Passphrase-protected-key-store-spec.rst). Kwa ufupi haya ni:
+Toleo hili linarekebisha kutofautiana kadhaa na toleo la 1 lililochapishwa [hapa](https://github.com/quantaureum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst). Kwa ufupi haya ni:
 
 - Uwekaji wa herufi kubwa hauna msingi na haulingani (scrypt herufi ndogo, Kdf herufi mchanganyiko, MAC herufi kubwa).
 - Anwani si ya lazima na inahatarisha faragha.

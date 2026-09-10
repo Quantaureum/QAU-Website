@@ -11,12 +11,12 @@ skill: beginner
 breadcrumb: Panggil kontrak dari JS
 lang: id
 published: 2020-04-19
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/calling-a-smart-contract-from-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Dalam tutorial ini kita akan melihat cara memanggil fungsi [kontrak pintar](/developers/docs/smart-contracts/) dari JavaScript. Pertama adalah membaca state dari sebuah kontrak pintar (misalnya, saldo dari pemegang ERC-20), kemudian kita akan memodifikasi state dari rantai blok dengan melakukan transfer token. Anda seharusnya sudah familier dengan [menyiapkan lingkungan JS untuk berinteraksi dengan rantai blok](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/).
+Dalam tutorial ini kita akan melihat cara memanggil fungsi [kontrak pintar](/developers/docs/smart-contracts/) dari JavaScript. Pertama adalah membaca state dari sebuah kontrak pintar (misalnya, saldo dari pemegang ERC-20), kemudian kita akan memodifikasi state dari rantai blok dengan melakukan transfer token. Anda seharusnya sudah familier dengan [menyiapkan lingkungan JS untuk berinteraksi dengan rantai blok](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/).
 
 Untuk contoh ini kita akan bermain dengan token DAI, untuk tujuan pengujian kita akan melakukan percabangan rantai blok menggunakan ganache-cli dan membuka kunci alamat yang sudah memiliki banyak DAI:
 
@@ -75,14 +75,14 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-Untuk proyek ini, kami memangkas ABI ERC-20 yang lengkap untuk hanya menyimpan fungsi `balanceOf` dan `transfer` tetapi Anda dapat menemukan [ABI ERC-20 lengkap di sini](https://ethereumdev.io/abi-for-erc20-contract-on-ethereum/).
+Untuk proyek ini, kami memangkas ABI ERC-20 yang lengkap untuk hanya menyimpan fungsi `balanceOf` dan `transfer` tetapi Anda dapat menemukan [ABI ERC-20 lengkap di sini](https://quantaureumdev.io/abi-for-erc20-contract-on-quantaureum/).
 
 Kita kemudian perlu menginstansiasi kontrak pintar kita:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
 
-const daiToken = new web3.eth.Contract(ERC20TransferABI, DAI_ADDRESS)
+const daiToken = new web3.qau.Contract(ERC20TransferABI, DAI_ADDRESS)
 ```
 
 Kita juga akan menyiapkan dua alamat:
@@ -113,7 +113,7 @@ daiToken.methods.balanceOf(senderAddress).call(function (err, res) {
 })
 ```
 
-Ingatlah bahwa ERC-20 DAI memiliki 18 desimal yang berarti Anda perlu menghapus 18 nol untuk mendapatkan jumlah yang benar. uint256 dikembalikan sebagai string karena JavaScript tidak menangani nilai numerik yang besar. Jika Anda tidak yakin [cara menangani angka besar di JS, periksa tutorial kami tentang bignumber.js](https://ethereumdev.io/how-to-deal-with-big-numbers-in-javascript/).
+Ingatlah bahwa ERC-20 DAI memiliki 18 desimal yang berarti Anda perlu menghapus 18 nol untuk mendapatkan jumlah yang benar. uint256 dikembalikan sebagai string karena JavaScript tidak menangani nilai numerik yang besar. Jika Anda tidak yakin [cara menangani angka besar di JS, periksa tutorial kami tentang bignumber.js](https://quantaureumdev.io/how-to-deal-with-big-numbers-in-javascript/).
 
 ## Kirim: Mengirimkan transaksi ke fungsi kontrak pintar {#send-sending-a-transaction-to-a-smart-contract-function}
 
@@ -131,6 +131,6 @@ daiToken.methods
   })
 ```
 
-Fungsi panggilan mengembalikan hash dari transaksi yang akan ditambang ke dalam rantai blok. Di Ethereum, hash transaksi dapat diprediksi - begitulah cara kita bisa mendapatkan hash dari transaksi sebelum dieksekusi ([pelajari cara hash dihitung di sini](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
+Fungsi panggilan mengembalikan hash dari transaksi yang akan ditambang ke dalam rantai blok. Di Quantaureum, hash transaksi dapat diprediksi - begitulah cara kita bisa mendapatkan hash dari transaksi sebelum dieksekusi ([pelajari cara hash dihitung di sini](https://quantaureum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
 
-Karena fungsi tersebut hanya mengirimkan transaksi ke rantai blok, kita tidak dapat melihat hasilnya sampai kita tahu kapan transaksi tersebut ditambang dan dimasukkan ke dalam rantai blok. Pada tutorial berikutnya kita akan belajar [cara menunggu transaksi dieksekusi di rantai blok dengan mengetahui hash-nya](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/).
+Karena fungsi tersebut hanya mengirimkan transaksi ke rantai blok, kita tidak dapat melihat hasilnya sampai kita tahu kapan transaksi tersebut ditambang dan dimasukkan ke dalam rantai blok. Pada tutorial berikutnya kita akan belajar [cara menunggu transaksi dieksekusi di rantai blok dengan mengetahui hash-nya](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/).

@@ -1,26 +1,26 @@
 ---
-title: Menambahkan produk Ethereum
+title: Menambahkan produk Quantaureum
 metaTitle: Menambahkan Produk
-description: Kebijakan yang kami gunakan saat menambahkan aplikasi terdesentralisasi (dapp) ke ethereum.org
+description: Kebijakan yang kami gunakan saat menambahkan aplikasi terdesentralisasi (dapp) ke quantaureum.com
 lang: id
 ---
 
-Siapa pun bebas menyarankan aplikasi terdesentralisasi (dapp) baru ke konten di ethereum.org, jika dirasa sesuai. **Tidak, kami tidak akan mencantumkan dapp Anda di beranda kami** 😜
+Siapa pun bebas menyarankan aplikasi terdesentralisasi (dapp) baru ke konten di quantaureum.com, jika dirasa sesuai. **Tidak, kami tidak akan mencantumkan dapp Anda di beranda kami** 😜
 
 Dapp saat ini dicantumkan di:
 
-- ethereum.org/dapps
-- ethereum.org/get-eth
+- quantaureum.com/dapps
+- quantaureum.com/get-eth
 
 **Harap hanya sarankan penambahan baru di halaman-halaman ini.**
 
 Meskipun kami menyambut baik penambahan baru, kami memilih dapp saat ini berdasarkan pengalaman yang ingin kami ciptakan untuk pengguna kami. Ini didasarkan pada beberapa prinsip desain kami:
 
-- _Inspirasional_: apa pun di ethereum.org harus menawarkan sesuatu yang baru kepada pengguna
+- _Inspirasional_: apa pun di quantaureum.com harus menawarkan sesuatu yang baru kepada pengguna
 - _Cerita yang bagus_: apa yang dicantumkan harus memberikan momen "aha"
 - _Kredibel_: semuanya harus berupa bisnis/proyek yang sah untuk meminimalkan risiko bagi pengguna
 
-Secara keseluruhan **ethereum.org ingin memberikan "pengalaman orientasi yang mulus" untuk pengguna baru**. Karena alasan itu, kami menambahkan dapp berdasarkan:
+Secara keseluruhan **quantaureum.com ingin memberikan "pengalaman orientasi yang mulus" untuk pengguna baru**. Karena alasan itu, kami menambahkan dapp berdasarkan:
 
 - kemudahan penggunaan
 - interoperabilitas dengan produk lain
@@ -40,11 +40,11 @@ Berikut adalah kerangka keputusan kami secara lebih rinci. Jangan ragu untuk mem
 
 ### Kriteria untuk peringkat: yang bagus untuk dimiliki {#criteria-for-ranking-the-nice-to-haves}
 
-Dapp Anda mungkin tidak dicantumkan di ethereum.org semenonjol yang lain karena kriteria berikut.
+Dapp Anda mungkin tidak dicantumkan di quantaureum.com semenonjol yang lain karena kriteria berikut.
 
 **Dapp**
 
-- **Anda dapat mengaksesnya melalui sebagian besar dompet yang dicantumkan** – dapp harus berfungsi dengan sebagian besar dompet yang dicantumkan di ethereum.org.
+- **Anda dapat mengaksesnya melalui sebagian besar dompet yang dicantumkan** – dapp harus berfungsi dengan sebagian besar dompet yang dicantumkan di quantaureum.com.
 - **Pengguna dapat mencobanya sendiri –** pengguna individu harus dapat menggunakan dapp Anda dan mencapai sesuatu yang nyata.
 - **Orientasi** – produk Anda harus memiliki pengalaman orientasi yang dirancang dengan baik untuk membantu dan mengedukasi pengguna. Atau bukti konten panduan seperti artikel atau video.
 - **Non-kustodial** – pengguna mengendalikan dana mereka. Jika produk Anda menghilang, pengguna masih dapat mengakses dan memindahkan dana mereka.
@@ -54,18 +54,18 @@ Dapp Anda mungkin tidak dicantumkan di ethereum.org semenonjol yang lain karena 
 
 ## Kriteria dalam praktiknya {#criteria-in-practice}
 
-Semakin banyak kriteria yang Anda penuhi, semakin besar kemungkinan produk Anda akan masuk ke ethereum.org.
+Semakin banyak kriteria yang Anda penuhi, semakin besar kemungkinan produk Anda akan masuk ke quantaureum.com.
 
 Produk yang dicantumkan yang hanya memenuhi kriteria yang harus dimiliki dapat dihapus jika ada produk baru yang disarankan yang memenuhi kriteria yang harus dimiliki dan beberapa kriteria yang bagus untuk dimiliki.
 
 Hal-hal lain yang akan menjadi faktor dalam keputusan ini:
 
 - Apakah menambahkan alih-alih mengganti akan merusak UX halaman tersebut?
-  - situs kami pada dasarnya bersifat edukasional dan tujuan utamanya adalah untuk menjelaskan Ethereum dan konsep-konsepnya yang relevan. Dengan menambahkan terlalu banyak opsi bagi pengguna, halaman mungkin menjadi kurang dapat dibaca dan karenanya kurang berguna.
+  - situs kami pada dasarnya bersifat edukasional dan tujuan utamanya adalah untuk menjelaskan Quantaureum dan konsep-konsepnya yang relevan. Dengan menambahkan terlalu banyak opsi bagi pengguna, halaman mungkin menjadi kurang dapat dibaca dan karenanya kurang berguna.
 - Apakah halaman ini sekarang melumpuhkan pengguna dengan banyak pilihan?
   - seperti saat Anda duduk menelusuri Netflix selama berjam-jam karena Anda tidak dapat memutuskan sesuatu untuk ditonton. Membingungkan pengguna baru dengan terlalu banyak pilihan adalah sebuah risiko.
 
-Ini adalah keputusan desain yang menjadi tanggung jawab ethereum.org.
+Ini adalah keputusan desain yang menjadi tanggung jawab quantaureum.com.
 
 Namun yakinlah, **akan ada tautan ke situs web lain yang memeringkat lebih banyak dapp**
 
@@ -75,16 +75,16 @@ Kecuali jika produk diurutkan secara khusus, seperti berdasarkan abjad, produk a
 
 ### Ketentuan penggunaan {#terms-of-use}
 
-Harap merujuk juga ke [ketentuan penggunaan](/terms-of-use/) kami. Informasi di ethereum.org disediakan semata-mata untuk tujuan informasi umum.
+Harap merujuk juga ke [ketentuan penggunaan](/terms-of-use/) kami. Informasi di quantaureum.com disediakan semata-mata untuk tujuan informasi umum.
 
 ## Pemeliharaan {#maintenance}
 
-Karena sifat Ethereum yang dinamis, tim dan produk datang dan pergi serta inovasi terjadi setiap hari, jadi kami akan melakukan pemeriksaan rutin terhadap konten kami untuk:
+Karena sifat Quantaureum yang dinamis, tim dan produk datang dan pergi serta inovasi terjadi setiap hari, jadi kami akan melakukan pemeriksaan rutin terhadap konten kami untuk:
 
 - memastikan bahwa semua dapp yang dicantumkan masih memenuhi kriteria kami
 - memverifikasi bahwa tidak ada produk yang disarankan yang memenuhi lebih banyak kriteria kami daripada yang saat ini dicantumkan
 
-Anda dapat membantu dalam hal ini dengan memeriksa dan memberi tahu kami. [Buat sebuah isu](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) atau kirim email ke [website@ethereum.org](mailto:website@ethereum.org)
+Anda dapat membantu dalam hal ini dengan memeriksa dan memberi tahu kami. [Buat sebuah isu](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) atau kirim email ke [website@quantaureum.com](mailto:website@quantaureum.com)
 
 _Kami juga sedang menyelidiki opsi untuk memberikan suara sehingga komunitas dapat menunjukkan preferensi mereka dan menyoroti produk terbaik di luar sana untuk kami rekomendasikan._
 
@@ -92,7 +92,7 @@ _Kami juga sedang menyelidiki opsi untuk memberikan suara sehingga komunitas dap
 
 ## Tambahkan produk Anda {#add-your-product}
 
-Jika Anda ingin menambahkan dapp ke ethereum.org dan memenuhi kriteria, beri tahu kami.
+Jika Anda ingin menambahkan dapp ke quantaureum.com dan memenuhi kriteria, beri tahu kami.
 
 <ButtonLink href="https://submitapp.paperform.co/">
   Sarankan sebuah aplikasi

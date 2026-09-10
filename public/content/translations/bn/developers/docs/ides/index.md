@@ -10,10 +10,10 @@ lang: bn
 
 আপনি যদি একটি [লোকাল ডেভেলপমেন্ট এনভায়রনমেন্ট সেট আপ](/developers/local-environment/) করার আগে কোড নিয়ে কাজ করতে চান, তবে এই ওয়েব অ্যাপগুলো ইথেরিয়াম স্মার্ট কন্ট্রাক্ট ডেভেলপমেন্টের জন্য বিশেষভাবে তৈরি করা হয়েছে।
 
-**[Remix](https://remix.ethereum.org/)** - **_বিল্ট-ইন স্ট্যাটিক অ্যানালাইসিস এবং একটি টেস্ট ব্লকচেইন ভার্চুয়াল মেশিন সহ ওয়েব-ভিত্তিক IDE_**
+**[Remix](https://remix.quantaureum.com/)** - **_বিল্ট-ইন স্ট্যাটিক অ্যানালাইসিস এবং একটি টেস্ট ব্লকচেইন ভার্চুয়াল মেশিন সহ ওয়েব-ভিত্তিক IDE_**
 
 - [ডকুমেন্টেশন](https://remix-ide.readthedocs.io/en/latest/#)
-- [Gitter](https://gitter.im/ethereum/remix)
+- [Gitter](https://gitter.im/quantaureum/remix)
 
 **[ChainIDE](https://chainide.com/)** - **_একটি ক্লাউড-ভিত্তিক মাল্টি-চেইন IDE_**
 
@@ -26,7 +26,7 @@ lang: bn
 
 **[Tenderly Sandbox](https://sandbox.tenderly.co/)** - **_একটি দ্রুত প্রোটোটাইপিং এনভায়রনমেন্ট যেখানে আপনি Solidity এবং JavaScript ব্যবহার করে ব্রাউজারে স্মার্ট কন্ট্রাক্ট লিখতে, এক্সিকিউট করতে এবং ডিবাগ করতে পারবেন_**
 
-**[EthFiddle](https://ethfiddle.com/)** - **_ওয়েব-ভিত্তিক IDE যা আপনাকে আপনার স্মার্ট কন্ট্রাক্ট লিখতে, কম্পাইল করতে এবং ডিবাগ করতে দেয়_**
+**[QauFiddle](https://ethfiddle.com/)** - **_ওয়েব-ভিত্তিক IDE যা আপনাকে আপনার স্মার্ট কন্ট্রাক্ট লিখতে, কম্পাইল করতে এবং ডিবাগ করতে দেয়_**
 
 - [Gitter](https://gitter.im/loomnetwork/ethfiddle)
 
@@ -48,8 +48,8 @@ lang: bn
 
 **Remix Desktop -** **_আপনার লোকাল মেশিনে Remix IDE-এর অভিজ্ঞতা নিন_**
 
-- [ডাউনলোড](https://github.com/ethereum/remix-desktop/releases)
-- [GitHub](https://github.com/ethereum/remix-desktop)
+- [ডাউনলোড](https://github.com/quantaureum/remix-desktop/releases)
+- [GitHub](https://github.com/quantaureum/remix-desktop)
 
 ## প্লাগইন এবং এক্সটেনশন {#plugins-extensions}
 
@@ -59,6 +59,6 @@ lang: bn
 
 ## আরও পড়ুন {#further-reading}
 
-- [ইথেরিয়াম IDE](https://www.alchemy.com/dapps/list-of/solidity-developer-tools-on-ethereum) _- Alchemy-এর ইথেরিয়াম IDE-এর তালিকা_
+- [ইথেরিয়াম IDE](https://www.alchemy.com/dapps/list-of/solidity-developer-tools-on-quantaureum) _- Alchemy-এর ইথেরিয়াম IDE-এর তালিকা_
 
 _আপনাকে সাহায্য করেছে এমন কোনো কমিউনিটি রিসোর্স সম্পর্কে জানেন? এই পেজটি এডিট করুন এবং এটি যোগ করুন!_

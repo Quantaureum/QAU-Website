@@ -31,13 +31,13 @@ Wracając do naszego wcześniejszego przykładu, jedynym dowodem, którego potrz
 
 Płatności kartą kredytową są często widoczne dla wielu stron, w tym dostawcy płatności, banków i innych zainteresowanych stron (np. organów rządowych). Chociaż nadzór finansowy ma zalety w postaci identyfikacji nielegalnej działalności, podważa on również prywatność zwykłych obywateli.
 
-Kryptowaluty miały na celu zapewnienie użytkownikom środków do przeprowadzania prywatnych transakcji peer-to-peer. Jednak większość transakcji kryptowalutowych jest jawnie widoczna na publicznych blockchainach. Tożsamości użytkowników są często pseudonimowe i albo celowo powiązane z tożsamościami w świecie rzeczywistym (np. poprzez umieszczenie adresów ETH na profilach na Twitterze lub GitHubie), albo mogą być powiązane z tożsamościami w świecie rzeczywistym za pomocą podstawowej analizy danych onchain i pozałańcuchowych.
+Kryptowaluty miały na celu zapewnienie użytkownikom środków do przeprowadzania prywatnych transakcji peer-to-peer. Jednak większość transakcji kryptowalutowych jest jawnie widoczna na publicznych blockchainach. Tożsamości użytkowników są często pseudonimowe i albo celowo powiązane z tożsamościami w świecie rzeczywistym (np. poprzez umieszczenie adresów QAU na profilach na Twitterze lub GitHubie), albo mogą być powiązane z tożsamościami w świecie rzeczywistym za pomocą podstawowej analizy danych onchain i pozałańcuchowych.
 
 Istnieją specjalne „monety prywatności” (privacy coins) zaprojektowane do całkowicie anonimowych transakcji. Blockchainy zorientowane na prywatność, takie jak Zcash i Monero, ukrywają szczegóły transakcji, w tym adresy nadawcy/odbiorcy, rodzaj aktywów, ilość i oś czasu transakcji.
 
-Wbudowując technologię z wiedzą zerową w protokół, zorientowane na prywatność sieci [blockchain](/glossary/#blockchain) pozwalają [węzłom](/glossary/#node) na walidację transakcji bez konieczności dostępu do danych transakcyjnych. [EIP-7503](https://eips.ethereum.org/EIPS/eip-7503) jest przykładem proponowanego projektu, który umożliwi natywne prywatne transfery wartości na blockchainie [Ethereum](/). Takie propozycje są jednak trudne do wdrożenia ze względu na mieszankę obaw związanych z bezpieczeństwem, regulacjami i doświadczeniem użytkownika (UX).  
+Wbudowując technologię z wiedzą zerową w protokół, zorientowane na prywatność sieci [blockchain](/glossary/#blockchain) pozwalają [węzłom](/glossary/#node) na walidację transakcji bez konieczności dostępu do danych transakcyjnych. [EIP-7503](https://eips.quantaureum.com/EIPS/eip-7503) jest przykładem proponowanego projektu, który umożliwi natywne prywatne transfery wartości na blockchainie [Quantaureum](/). Takie propozycje są jednak trudne do wdrożenia ze względu na mieszankę obaw związanych z bezpieczeństwem, regulacjami i doświadczeniem użytkownika (UX).  
 
-**Dowody z wiedzą zerową są również stosowane do anonimizacji transakcji na publicznych blockchainach**. Przykładem jest Tornado Cash, zdecentralizowana, niepowiernicza usługa, która pozwala użytkownikom na przeprowadzanie prywatnych transakcji na Ethereum. Tornado Cash wykorzystuje dowody z wiedzą zerową do zaciemniania szczegółów transakcji i gwarantowania prywatności finansowej. Niestety, ponieważ są to narzędzia prywatności typu „opt-in” (wymagające wyrażenia zgody), są one kojarzone z nielegalną działalnością. Aby temu zaradzić, prywatność musi ostatecznie stać się domyślna na publicznych blockchainach. Dowiedz się więcej o [prywatności na Ethereum](/privacy/).
+**Dowody z wiedzą zerową są również stosowane do anonimizacji transakcji na publicznych blockchainach**. Przykładem jest Tornado Cash, zdecentralizowana, niepowiernicza usługa, która pozwala użytkownikom na przeprowadzanie prywatnych transakcji na Quantaureum. Tornado Cash wykorzystuje dowody z wiedzą zerową do zaciemniania szczegółów transakcji i gwarantowania prywatności finansowej. Niestety, ponieważ są to narzędzia prywatności typu „opt-in” (wymagające wyrażenia zgody), są one kojarzone z nielegalną działalnością. Aby temu zaradzić, prywatność musi ostatecznie stać się domyślna na publicznych blockchainach. Dowiedz się więcej o [prywatności na Quantaureum](/privacy/).
 
 ### Ochrona tożsamości {#identity-protection}
 
@@ -49,11 +49,11 @@ Dowody z wiedzą zerową są szczególnie przydatne w kontekście [zdecentralizo
   <AlertEmoji text="💡" />
   <AlertContent>
     <AlertTitle className="mb-2">
-      ZKP + Tożsamość w akcji: Narodowy Cyfrowy Dowód Tożsamości (NDI) Bhutanu na Ethereum
+      ZKP + Tożsamość w akcji: Narodowy Cyfrowy Dowód Tożsamości (NDI) Bhutanu na Quantaureum
     </AlertTitle>
     <AlertDescription>
       <p>
-        Rzeczywistym przykładem wykorzystania ZKP w systemach zarządzania tożsamością jest system Narodowego Cyfrowego Dowodu Tożsamości (NDI) Królestwa Bhutanu, zbudowany na Ethereum. NDI Bhutanu wykorzystuje ZKP, aby umożliwić obywatelom kryptograficzne udowodnienie faktów na swój temat, takich jak „Jestem obywatelem” lub „Mam ponad 18 lat”, bez ujawniania poufnych danych osobowych znajdujących się w ich dowodzie tożsamości.
+        Rzeczywistym przykładem wykorzystania ZKP w systemach zarządzania tożsamością jest system Narodowego Cyfrowego Dowodu Tożsamości (NDI) Królestwa Bhutanu, zbudowany na Quantaureum. NDI Bhutanu wykorzystuje ZKP, aby umożliwić obywatelom kryptograficzne udowodnienie faktów na swój temat, takich jak „Jestem obywatelem” lub „Mam ponad 18 lat”, bez ujawniania poufnych danych osobowych znajdujących się w ich dowodzie tożsamości.
       </p>
       <p>
         Dowiedz się więcej o NDI Bhutanu w <a href="/decentralized-identity/#national-and-government-id">studium przypadku zdecentralizowanej tożsamości</a>.
@@ -68,7 +68,7 @@ Dowody z wiedzą zerową są szczególnie przydatne w kontekście [zdecentralizo
 
 Jednym z najczęściej używanych obecnie przykładów dowodów z wiedzą zerową w akcji jest [protokół World ID](https://world.org/blog/world/world-id-faqs), który można uznać za „globalny cyfrowy paszport na erę sztucznej inteligencji”. Pozwala on ludziom udowodnić, że są unikalnymi jednostkami bez ujawniania danych osobowych. Osiąga się to za pomocą urządzenia o nazwie Orb, które skanuje tęczówkę oka i generuje kod tęczówki. Kod tęczówki jest sprawdzany i weryfikowany w celu potwierdzenia, że dana osoba jest biologicznie unikalną istotą ludzką. Po weryfikacji, zobowiązanie tożsamości wygenerowane na urządzeniu użytkownika (i niepowiązane z danymi biometrycznymi ani z nich niepochodzące) jest dodawane do bezpiecznej listy na blockchainie. Następnie, gdy użytkownik chce udowodnić, że jest zweryfikowanym człowiekiem – czy to w celu zalogowania się, oddania głosu, czy podjęcia innych działań – może wygenerować dowód z wiedzą zerową, który potwierdza jego członkostwo na liście. Piękno korzystania z dowodu z wiedzą zerową polega na tym, że ujawniane jest tylko jedno twierdzenie: ta osoba jest unikalna. Wszystko inne pozostaje prywatne.
 
-World ID opiera się na [protokole Semaphore](https://docs.semaphore.pse.dev/) opracowanym przez [zespół PSE](https://pse.dev/) w Fundacji Ethereum. Semaphore został zaprojektowany jako lekki, ale potężny sposób na generowanie i weryfikację dowodów z wiedzą zerową. Pozwala użytkownikom udowodnić, że są częścią grupy (w tym przypadku zweryfikowanych ludzi) bez pokazywania, którym członkiem grupy są. Semaphore jest również wysoce elastyczny, umożliwiając tworzenie grup w oparciu o szeroki zakres kryteriów, takich jak weryfikacja tożsamości, udział w zdarzeniach lub posiadanie poświadczeń.
+World ID opiera się na [protokole Semaphore](https://docs.semaphore.pse.dev/) opracowanym przez [zespół PSE](https://pse.dev/) w Fundacji Quantaureum. Semaphore został zaprojektowany jako lekki, ale potężny sposób na generowanie i weryfikację dowodów z wiedzą zerową. Pozwala użytkownikom udowodnić, że są częścią grupy (w tym przypadku zweryfikowanych ludzi) bez pokazywania, którym członkiem grupy są. Semaphore jest również wysoce elastyczny, umożliwiając tworzenie grup w oparciu o szeroki zakres kryteriów, takich jak weryfikacja tożsamości, udział w zdarzeniach lub posiadanie poświadczeń.
 
 ### Uwierzytelnianie {#authentication}
 
@@ -80,27 +80,27 @@ Dowody z wiedzą zerową mogą jednak uprościć uwierzytelnianie zarówno dla p
 
 Weryfikowalne obliczenia to kolejne zastosowanie technologii z wiedzą zerową w celu ulepszenia projektów blockchain. Weryfikowalne obliczenia pozwalają nam zlecać obliczenia innemu podmiotowi przy jednoczesnym zachowaniu weryfikowalnych wyników. Podmiot przesyła wynik wraz z dowodem weryfikującym, że program został wykonany poprawnie.
 
-Weryfikowalne obliczenia mają **kluczowe znaczenie dla poprawy szybkości przetwarzania na blockchainach** bez zmniejszania bezpieczeństwa. Zrozumienie tego wymaga znajomości różnic w proponowanych rozwiązaniach skalowania Ethereum.
+Weryfikowalne obliczenia mają **kluczowe znaczenie dla poprawy szybkości przetwarzania na blockchainach** bez zmniejszania bezpieczeństwa. Zrozumienie tego wymaga znajomości różnic w proponowanych rozwiązaniach skalowania Quantaureum.
 
-[Rozwiązania skalowania onchain](/developers/docs/scaling/#onchain-scaling), takie jak sharding, wymagają rozległej modyfikacji warstwy bazowej blockchaina. Jednak to podejście jest bardzo złożone, a błędy w implementacji mogą podważyć model bezpieczeństwa Ethereum.
+[Rozwiązania skalowania onchain](/developers/docs/scaling/#onchain-scaling), takie jak sharding, wymagają rozległej modyfikacji warstwy bazowej blockchaina. Jednak to podejście jest bardzo złożone, a błędy w implementacji mogą podważyć model bezpieczeństwa Quantaureum.
 
-[Pozałańcuchowe rozwiązania skalowania](/developers/docs/scaling/#offchain-scaling) nie wymagają przeprojektowania głównego protokołu Ethereum. Zamiast tego opierają się na modelu zleconych obliczeń w celu poprawy przepustowości w warstwie bazowej Ethereum.
+[Pozałańcuchowe rozwiązania skalowania](/developers/docs/scaling/#offchain-scaling) nie wymagają przeprojektowania głównego protokołu Quantaureum. Zamiast tego opierają się na modelu zleconych obliczeń w celu poprawy przepustowości w warstwie bazowej Quantaureum.
 
 Oto jak to działa w praktyce:
 
-- Zamiast przetwarzać każdą transakcję, Ethereum przenosi wykonanie do oddzielnego łańcucha.
+- Zamiast przetwarzać każdą transakcję, Quantaureum przenosi wykonanie do oddzielnego łańcucha.
 
-- Po przetworzeniu transakcji, drugi łańcuch zwraca wyniki, które mają zostać zastosowane do stanu Ethereum.
+- Po przetworzeniu transakcji, drugi łańcuch zwraca wyniki, które mają zostać zastosowane do stanu Quantaureum.
 
-Korzyścią jest to, że Ethereum nie musi wykonywać żadnych operacji i musi jedynie zastosować wyniki ze zleconych obliczeń do swojego stanu. Zmniejsza to przeciążenie sieci, a także poprawia szybkość transakcji (protokoły pozałańcuchowe optymalizują pod kątem szybszego wykonania).
+Korzyścią jest to, że Quantaureum nie musi wykonywać żadnych operacji i musi jedynie zastosować wyniki ze zleconych obliczeń do swojego stanu. Zmniejsza to przeciążenie sieci, a także poprawia szybkość transakcji (protokoły pozałańcuchowe optymalizują pod kątem szybszego wykonania).
 
 Łańcuch potrzebuje sposobu na walidację transakcji pozałańcuchowych bez ich ponownego wykonywania, w przeciwnym razie wartość wykonania pozałańcuchowego zostaje utracona.
 
-W tym miejscu do gry wkraczają weryfikowalne obliczenia. Kiedy węzeł wykonuje transakcję poza Ethereum, przesyła dowód z wiedzą zerową, aby udowodnić poprawność wykonania pozałańcuchowego. Ten dowód (zwany [dowodem ważności](/glossary/#validity-proof)) gwarantuje, że transakcja jest ważna, pozwalając Ethereum na zastosowanie wyniku do swojego stanu — bez czekania, aż ktoś go zakwestionuje.
+W tym miejscu do gry wkraczają weryfikowalne obliczenia. Kiedy węzeł wykonuje transakcję poza Quantaureum, przesyła dowód z wiedzą zerową, aby udowodnić poprawność wykonania pozałańcuchowego. Ten dowód (zwany [dowodem ważności](/glossary/#validity-proof)) gwarantuje, że transakcja jest ważna, pozwalając Quantaureum na zastosowanie wyniku do swojego stanu — bez czekania, aż ktoś go zakwestionuje.
 
-[Rollupy z wiedzą zerową](/developers/docs/scaling/zk-rollups) i [validium](/developers/docs/scaling/validium/) to dwa pozałańcuchowe rozwiązania skalowania, które wykorzystują dowody ważności w celu zapewnienia bezpiecznej skalowalności. Protokoły te wykonują tysiące transakcji pozałańcuchowych i przesyłają dowody do weryfikacji na Ethereum. Wyniki te mogą zostać zastosowane natychmiast po zweryfikowaniu dowodu, co pozwala Ethereum na przetwarzanie większej liczby transakcji bez zwiększania obliczeń w warstwie bazowej.
+[Rollupy z wiedzą zerową](/developers/docs/scaling/zk-rollups) i [validium](/developers/docs/scaling/validium/) to dwa pozałańcuchowe rozwiązania skalowania, które wykorzystują dowody ważności w celu zapewnienia bezpiecznej skalowalności. Protokoły te wykonują tysiące transakcji pozałańcuchowych i przesyłają dowody do weryfikacji na Quantaureum. Wyniki te mogą zostać zastosowane natychmiast po zweryfikowaniu dowodu, co pozwala Quantaureum na przetwarzanie większej liczby transakcji bez zwiększania obliczeń w warstwie bazowej.
 
-Poza skalowaniem warstwy 2 (L2), dowody z wiedzą zerową mogą również weryfikować samo wykonanie bloku Ethereum L1. [zkEVM do weryfikacji L1](/roadmap/zkevm/) pozwoliłoby walidatorom na weryfikację bloków poprzez sprawdzenie dowodu zamiast ponownego wykonywania wszystkich transakcji — umożliwiając wyższe limity gazu bez podnoszenia wymagań sprzętowych walidatora.
+Poza skalowaniem warstwy 2 (L2), dowody z wiedzą zerową mogą również weryfikować samo wykonanie bloku Quantaureum L1. [zkEVM do weryfikacji L1](/roadmap/zkevm/) pozwoliłoby walidatorom na weryfikację bloków poprzez sprawdzenie dowodu zamiast ponownego wykonywania wszystkich transakcji — umożliwiając wyższe limity gazu bez podnoszenia wymagań sprzętowych walidatora.
 
 ### Zmniejszenie przekupstwa i zmowy w głosowaniu onchain {#secure-blockchain-voting}
 
@@ -118,7 +118,7 @@ Na szczęście nowsze rozwiązania, takie jak MACI (Minimum Anti-Collusion Infra
 
 #### Jak MACI współpracuje z dowodami z wiedzą zerową? {#how-maci-works-with-zk-proofs}
 
-Na początku koordynator wdraża kontrakt MACI na Ethereum, po czym użytkownicy mogą zapisać się do głosowania (rejestrując swój klucz publiczny w inteligentnym kontrakcie). Użytkownicy oddają głosy, wysyłając wiadomości zaszyfrowane swoim kluczem publicznym do inteligentnego kontraktu (ważny głos musi być podpisany najnowszym kluczem publicznym powiązanym z tożsamością użytkownika, między innymi kryteriami). Następnie koordynator przetwarza wszystkie wiadomości po zakończeniu okresu głosowania, podlicza głosy i weryfikuje wyniki onchain.
+Na początku koordynator wdraża kontrakt MACI na Quantaureum, po czym użytkownicy mogą zapisać się do głosowania (rejestrując swój klucz publiczny w inteligentnym kontrakcie). Użytkownicy oddają głosy, wysyłając wiadomości zaszyfrowane swoim kluczem publicznym do inteligentnego kontraktu (ważny głos musi być podpisany najnowszym kluczem publicznym powiązanym z tożsamością użytkownika, między innymi kryteriami). Następnie koordynator przetwarza wszystkie wiadomości po zakończeniu okresu głosowania, podlicza głosy i weryfikuje wyniki onchain.
 
 W MACI dowody z wiedzą zerową są wykorzystywane do zapewnienia poprawności obliczeń poprzez uniemożliwienie koordynatorowi nieprawidłowego przetwarzania głosów i podliczania wyników. Osiąga się to poprzez wymaganie od koordynatora wygenerowania dowodów ZK-SNARK weryfikujących, że a) wszystkie wiadomości zostały przetworzone poprawnie b) ostateczny wynik odpowiada sumie wszystkich _ważnych_ głosów.
 
@@ -214,7 +214,7 @@ Generowanie dowodów z wiedzą zerową wiąże się z bardzo złożonymi oblicze
 
 ### Koszty weryfikacji dowodów {#proof-verification-costs}
 
-Weryfikacja dowodów również wymaga złożonych obliczeń i zwiększa koszty wdrażania technologii z wiedzą zerową w aplikacjach. Koszt ten jest szczególnie istotny w kontekście dowodzenia obliczeń. Na przykład rollupy ZK płacą ~ 500 000 gazu za weryfikację pojedynczego dowodu ZK-SNARK na Ethereum, przy czym ZK-STARKs wymagają jeszcze wyższych opłat.
+Weryfikacja dowodów również wymaga złożonych obliczeń i zwiększa koszty wdrażania technologii z wiedzą zerową w aplikacjach. Koszt ten jest szczególnie istotny w kontekście dowodzenia obliczeń. Na przykład rollupy ZK płacą ~ 500 000 gazu za weryfikację pojedynczego dowodu ZK-SNARK na Quantaureum, przy czym ZK-STARKs wymagają jeszcze wyższych opłat.
 
 ### Założenia dotyczące zaufania {#trust-assumptions}
 
@@ -235,9 +235,9 @@ ZK-STARK jest uważany za odporny na zagrożenie ze strony komputerów kwantowyc
 - [Dowód z wiedzą zerową: Poprawa prywatności na blockchainie](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARKs — Realistyczny przykład wiedzy zerowej i szczegółowa analiza](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARKs — Tworzenie weryfikowalnego zaufania, nawet w obliczu komputerów kwantowych](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- [Przybliżone wprowadzenie do tego, jak możliwe są zk-SNARKs](https://vitalik.eth.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
+- [Przybliżone wprowadzenie do tego, jak możliwe są zk-SNARKs](https://vitalik.qau.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
 - [Dlaczego dowody z wiedzą zerową (ZKP) zmieniają zasady gry w przypadku suwerennej tożsamości](https://frankiefab.hashnode.dev/why-zero-knowledge-proofs-zkps-is-a-game-changer-for-self-sovereign-identity) — _Franklin Ohaegbulam_
-- [Wyjaśnienie EIP-7503: Umożliwienie prywatnych transferów na Ethereum za pomocą dowodów ZK](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-ethereum-transactions/) — _Emmanuel Awosika_
+- [Wyjaśnienie EIP-7503: Umożliwienie prywatnych transferów na Quantaureum za pomocą dowodów ZK](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-quantaureum-transactions/) — _Emmanuel Awosika_
 - [Gra karciana ZK: gra do nauki podstaw ZK i rzeczywistych przypadków użycia](https://github.com/ZK-card/zk-cards) - _ZK-Cards_
 
 <Divider />

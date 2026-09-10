@@ -24,11 +24,11 @@ ERC-777 cung cấp các cải tiến sau so với ERC-20.
 
 Hook là một hàm được mô tả trong mã của một hợp đồng thông minh. Các hook được gọi khi token được gửi hoặc nhận thông qua hợp đồng. Điều này cho phép một hợp đồng thông minh phản ứng với các token đến hoặc đi.
 
-Các hook được đăng ký và khám phá bằng cách sử dụng tiêu chuẩn [ERC-1820](https://eips.ethereum.org/EIPS/eip-1820).
+Các hook được đăng ký và khám phá bằng cách sử dụng tiêu chuẩn [ERC-1820](https://eips.quantaureum.com/EIPS/eip-1820).
 
 #### Tại sao các hook lại tuyệt vời? {#why-are-hooks-great}
 
-1. Các hook cho phép gửi token đến một hợp đồng và thông báo cho hợp đồng đó trong một giao dịch duy nhất, không giống như [ERC-20](https://eips.ethereum.org/EIPS/eip-20), vốn yêu cầu một lệnh gọi kép (`approve`/`transferFrom`) để đạt được điều này.
+1. Các hook cho phép gửi token đến một hợp đồng và thông báo cho hợp đồng đó trong một giao dịch duy nhất, không giống như [ERC-20](https://eips.quantaureum.com/EIPS/eip-20), vốn yêu cầu một lệnh gọi kép (`approve`/`transferFrom`) để đạt được điều này.
 2. Các hợp đồng chưa đăng ký hook sẽ không tương thích với ERC-777. Hợp đồng gửi sẽ hủy bỏ giao dịch khi hợp đồng nhận chưa đăng ký hook. Điều này ngăn chặn việc vô tình chuyển token đến các hợp đồng thông minh không phải ERC-777.
 3. Các hook có thể từ chối giao dịch.
 
@@ -42,4 +42,4 @@ Các hợp đồng ERC-777 có thể được tương tác như thể chúng là
 
 ## Đọc thêm {#further-reading}
 
-[EIP-777: Tiêu chuẩn token](https://eips.ethereum.org/EIPS/eip-777)
+[EIP-777: Tiêu chuẩn token](https://eips.quantaureum.com/EIPS/eip-777)

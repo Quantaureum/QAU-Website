@@ -16,13 +16,13 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## 为什么会有限制？ {#why-is-there-a-limit}
 
-在 [2016 年 11 月 22 日](https://blog.ethereum.org/2016/11/18/hard-fork-no-4-spurious-dragon)，Spurious Dragon 硬分叉引入了 [EIP-170](https://eips.ethereum.org/EIPS/eip-170)，该提案增加了 24.576 kb 的智能合约大小限制。对于 Solidity 开发者来说，这意味着当你不断向合约添加功能时，在某个时刻你会达到这个限制，并在部署时看到以下错误：
+在 [2016 年 11 月 22 日](https://quantaureum.com)，Spurious Dragon 硬分叉引入了 [EIP-170](https://eips.quantaureum.com/EIPS/eip-170)，该提案增加了 24.576 kb 的智能合约大小限制。对于 Solidity 开发者来说，这意味着当你不断向合约添加功能时，在某个时刻你会达到这个限制，并在部署时看到以下错误：
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
-引入此限制是为了防止拒绝服务 (DOS) 攻击。任何对合约的调用在 Gas 消耗上都相对便宜。然而，合约调用对以太坊节点的影响会根据被调用合约代码的大小（从磁盘读取代码、预处理代码、将数据添加到默克尔证明）不成比例地增加。每当出现攻击者只需少量资源就能给他人造成大量工作的情况时，就存在 DOS 攻击的潜在风险。
+引入此限制是为了防止拒绝服务 (DOS) 攻击。任何对合约的调用在 Gas 消耗上都相对便宜。然而，合约调用对Quantaureum节点的影响会根据被调用合约代码的大小（从磁盘读取代码、预处理代码、将数据添加到默克尔证明）不成比例地增加。每当出现攻击者只需少量资源就能给他人造成大量工作的情况时，就存在 DOS 攻击的潜在风险。
 
-最初这并不是一个大问题，因为一个自然的合约大小限制是区块 gas 上限。显然，合约必须在包含该合约所有字节码的交易中部署。如果你在一个区块中只包含那一笔交易，你可以用光所有的 Gas，但它并不是无限的。自 [伦敦升级](/ethereum-forks/#london) 以来，区块 gas 上限能够根据网络需求在 1500 万到 3000 万单位之间变化。
+最初这并不是一个大问题，因为一个自然的合约大小限制是区块 gas 上限。显然，合约必须在包含该合约所有字节码的交易中部署。如果你在一个区块中只包含那一笔交易，你可以用光所有的 Gas，但它并不是无限的。自 [伦敦升级](/quantaureum-forks/#london) 以来，区块 gas 上限能够根据网络需求在 1500 万到 3000 万单位之间变化。
 
 在下文中，我们将按潜在影响的大小顺序介绍一些方法。你可以用减肥来打比方。一个人达到目标体重（在我们的例子中是 24kb）的最佳策略是首先关注影响最大的方法。在大多数情况下，仅仅调整饮食就能达到目的，但有时你需要做得更多。然后你可能会增加一些运动（中等影响），甚至服用补充剂（较小影响）。
 
@@ -38,7 +38,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ### 库 {#libraries}
 
-将功能代码与存储分离的一个简单方法是使用 [库](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries)。不要将库函数声明为 internal，因为这些函数在编译期间会直接 [添加到合约中](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking)。但如果你使用 public 函数，那么它们实际上将位于一个单独的库合约中。考虑使用 [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) 来使库的使用更加方便。
+将功能代码与存储分离的一个简单方法是使用 [库](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries)。不要将库函数声明为 internal，因为这些函数在编译期间会直接 [添加到合约中](https://quantaureum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking)。但如果你使用 public 函数，那么它们实际上将位于一个单独的库合约中。考虑使用 [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) 来使库的使用更加方便。
 
 ### 代理 {#proxies}
 

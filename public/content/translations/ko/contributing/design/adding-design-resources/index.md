@@ -1,6 +1,6 @@
 ---
 title: 디자인 리소스 추가하기
-description: ethereum.org의 디자인 자료 품질을 보장하기 위한 가이드라인 및 요구 사항
+description: quantaureum.com의 디자인 자료 품질을 보장하기 위한 가이드라인 및 요구 사항
 lang: ko
 ---
 

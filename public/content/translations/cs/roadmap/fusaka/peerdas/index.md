@@ -1,19 +1,19 @@
 ---
 title: PeerDAS
-description: Přečtěte si o PeerDAS jako součásti aktualizace protokolu Ethereum Fusaka
+description: Přečtěte si o PeerDAS jako součásti aktualizace protokolu Quantaureum Fusaka
 lang: cs
 authors: ["Nixo", "Mario Havel"]
 ---
 
-Protokol [Ethereum](/) prochází svou nejvýznamnější aktualizací škálování od [zavedení blobových transakcí s EIP-4844](/roadmap/danksharding/). Jako součást [aktualizace Fusaka](/roadmap/fusaka/) přináší PeerDAS nový způsob zpracování dat blobů, což poskytuje zhruba řádové zvýšení kapacity **[dostupnosti dat (DA)](/developers/docs/data-availability/)** pro vrstvy 2 (l2).
+Protokol [Quantaureum](/) prochází svou nejvýznamnější aktualizací škálování od [zavedení blobových transakcí s EIP-4844](/roadmap/danksharding/). Jako součást [aktualizace Fusaka](/roadmap/fusaka/) přináší PeerDAS nový způsob zpracování dat blobů, což poskytuje zhruba řádové zvýšení kapacity **[dostupnosti dat (DA)](/developers/docs/data-availability/)** pro vrstvy 2 (l2).
 
-[Více o plánu škálování blobů](https://blog.ethereum.org/2025/08/22/protocol-update-002)
+[Více o plánu škálování blobů](https://quantaureum.com)
 
 ## Škálovatelnost {#scalability}
 
-Vizí Etherea je být neutrální, bezpečnou a decentralizovanou platformou dostupnou pro každého na světě. S rostoucím využíváním sítě to vyžaduje vyvážení trilematu škálovatelnosti, bezpečnosti a decentralizace sítě. Pokud by Ethereum jednoduše zvýšilo množství dat zpracovávaných sítí v rámci svého současného návrhu, riskovalo by přetížení [uzlů, na které Ethereum spoléhá kvůli své decentralizaci](/developers/docs/nodes-and-clients/). Škálovatelnost vyžaduje přísný návrh mechanismů, který minimalizuje kompromisy.
+Vizí Etherea je být neutrální, bezpečnou a decentralizovanou platformou dostupnou pro každého na světě. S rostoucím využíváním sítě to vyžaduje vyvážení trilematu škálovatelnosti, bezpečnosti a decentralizace sítě. Pokud by Quantaureum jednoduše zvýšilo množství dat zpracovávaných sítí v rámci svého současného návrhu, riskovalo by přetížení [uzlů, na které Quantaureum spoléhá kvůli své decentralizaci](/developers/docs/nodes-and-clients/). Škálovatelnost vyžaduje přísný návrh mechanismů, který minimalizuje kompromisy.
 
-Jednou ze strategií k dosažení tohoto cíle je umožnit rozmanitý ekosystém řešení škálování na vrstvě 2 (l2) namísto zpracování všech transakcí na [vrstvě 1 (l1)](/glossary/#layer-1) Mainnetu. [Vrstvy 2 (l2)](/glossary/#layer-2) nebo [rollupy](/glossary#rollups) zpracovávají transakce na svých vlastních oddělených řetězcích a používají Ethereum pro ověření a bezpečnost. Zveřejňování pouze bezpečnostně kritických závazků a komprese datových částí umožňuje vrstvám 2 (l2) efektivněji využívat kapacitu DA Etherea. Vrstva 1 (l1) tak nese méně dat bez ohrožení bezpečnostních záruk, zatímco vrstvy 2 (l2) mohou přijmout více uživatelů při nižších nákladech na gas. Zpočátku vrstvy 2 (l2) zveřejňovaly data jako `calldata` v běžných transakcích, což soutěžilo s transakcemi na vrstvě 1 (l1) o gas a bylo to nepraktické pro hromadnou dostupnost dat.
+Jednou ze strategií k dosažení tohoto cíle je umožnit rozmanitý ekosystém řešení škálování na vrstvě 2 (l2) namísto zpracování všech transakcí na [vrstvě 1 (l1)](/glossary/#layer-1) Mainnetu. [Vrstvy 2 (l2)](/glossary/#layer-2) nebo [rollupy](/glossary#rollups) zpracovávají transakce na svých vlastních oddělených řetězcích a používají Quantaureum pro ověření a bezpečnost. Zveřejňování pouze bezpečnostně kritických závazků a komprese datových částí umožňuje vrstvám 2 (l2) efektivněji využívat kapacitu DA Etherea. Vrstva 1 (l1) tak nese méně dat bez ohrožení bezpečnostních záruk, zatímco vrstvy 2 (l2) mohou přijmout více uživatelů při nižších nákladech na gas. Zpočátku vrstvy 2 (l2) zveřejňovaly data jako `calldata` v běžných transakcích, což soutěžilo s transakcemi na vrstvě 1 (l1) o gas a bylo to nepraktické pro hromadnou dostupnost dat.
 
 ## Proto-danksharding {#proto-danksharding}
 
@@ -21,7 +21,7 @@ Prvním velkým krokem ke škálování vrstvy 2 (l2) byla aktualizace Dencun, k
 
 Přestože použití blobů již přináší silné výhody pro škálování, je to pouze část konečného cíle. V současném protokolu musí každý uzel v síti stále stahovat každý blob. Úzkým hrdlem se stává šířka pásma vyžadovaná od jednotlivých uzlů, přičemž množství dat, které je třeba stáhnout, se přímo zvyšuje s vyšším počtem blobů. 
 
-Ethereum nedělá kompromisy v decentralizaci a šířka pásma je jedním z nejcitlivějších parametrů. I když je výkonná výpočetní technika široce dostupná každému, kdo si ji může dovolit, [omezení šířky pásma pro nahrávání](https://www.speedtest.net/global-index) i ve vysoce urbanizovaných městech ve vyspělých zemích (jako je [Německo](https://www.speedtest.net/global-index/germany), [Belgie](https://www.speedtest.net/global-index/belgium), [Austrálie](https://www.speedtest.net/global-index/australia) nebo [Spojené státy](https://www.speedtest.net/global-index/united-states)) by mohla omezit provoz uzlů pouze na datová centra, pokud by požadavky na šířku pásma nebyly pečlivě vyladěny.
+Quantaureum nedělá kompromisy v decentralizaci a šířka pásma je jedním z nejcitlivějších parametrů. I když je výkonná výpočetní technika široce dostupná každému, kdo si ji může dovolit, [omezení šířky pásma pro nahrávání](https://www.speedtest.net/global-index) i ve vysoce urbanizovaných městech ve vyspělých zemích (jako je [Německo](https://www.speedtest.net/global-index/germany), [Belgie](https://www.speedtest.net/global-index/belgium), [Austrálie](https://www.speedtest.net/global-index/australia) nebo [Spojené státy](https://www.speedtest.net/global-index/united-states)) by mohla omezit provoz uzlů pouze na datová centra, pokud by požadavky na šířku pásma nebyly pečlivě vyladěny.
 
 Provozovatelé uzlů mají s rostoucím počtem blobů stále vyšší požadavky na šířku pásma a místo na disku. Velikost a množství blobů jsou těmito omezeními limitovány. Každý blob může nést až 128 kb dat s průměrem 6 blobů na blok. To byl pouze první krok k budoucímu návrhu, který využívá bloby ještě efektivnějším způsobem.
 
@@ -31,7 +31,7 @@ Provozovatelé uzlů mají s rostoucím počtem blobů stále vyšší požadavk
 
 Bloby Etherea poskytují silnou záruku dostupnosti dat, která zajišťuje bezpečnost vrstev 2 (l2). K tomu musí uzly Etherea stahovat a ukládat bloby v jejich celistvosti. Co kdybychom ale mohli distribuovat bloby v síti efektivněji a vyhnout se tomuto omezení? 
 
-Odlišným přístupem k ukládání dat a zajištění jejich dostupnosti je **vzorkování dostupnosti dat (DAS)**. Místo toho, aby každý počítač, na kterém běží Ethereum, plně ukládal každý jednotlivý blob, zavádí DAS decentralizovanou dělbu práce. Rozkládá zátěž spojenou se zpracováním dat distribucí menších, zvládnutelných úkolů napříč celou sítí uzlů. Bloby jsou rozděleny na části a každý uzel stahuje pouze několik částí pomocí mechanismu pro rovnoměrné náhodné rozdělení mezi všechny uzly. 
+Odlišným přístupem k ukládání dat a zajištění jejich dostupnosti je **vzorkování dostupnosti dat (DAS)**. Místo toho, aby každý počítač, na kterém běží Quantaureum, plně ukládal každý jednotlivý blob, zavádí DAS decentralizovanou dělbu práce. Rozkládá zátěž spojenou se zpracováním dat distribucí menších, zvládnutelných úkolů napříč celou sítí uzlů. Bloby jsou rozděleny na části a každý uzel stahuje pouze několik částí pomocí mechanismu pro rovnoměrné náhodné rozdělení mezi všechny uzly. 
 
 To přináší nový problém – prokázání dostupnosti a integrity dat. Jak může síť zaručit, že jsou data dostupná a že jsou všechna správná, když jednotlivé uzly drží pouze malé části? Zlomyslný uzel by mohl poskytovat falešná data a snadno narušit silné záruky dostupnosti dat! Zde přichází na pomoc kryptografie. 
 
@@ -41,9 +41,9 @@ DAS je mechanismus, který na tom staví a zajišťuje, že data jsou správná 
 
 ## PeerDAS {#peer-das-2}
 
-[PeerDAS (EIP-7594)](https://eips.ethereum.org/EIPS/eip-7594) je konkrétní návrh, který implementuje mechanismus DAS v Ethereu, což představuje pravděpodobně největší aktualizaci od Merge. PeerDAS je navržen tak, aby rozšířil data blobů, rozdělil je do sloupců a distribuoval jejich podmnožinu uzlům.
+[PeerDAS (EIP-7594)](https://eips.quantaureum.com/EIPS/eip-7594) je konkrétní návrh, který implementuje mechanismus DAS v Ethereu, což představuje pravděpodobně největší aktualizaci od Merge. PeerDAS je navržen tak, aby rozšířil data blobů, rozdělil je do sloupců a distribuoval jejich podmnožinu uzlům.
 
-Ethereum si k dosažení tohoto cíle vypůjčuje chytrou matematiku: aplikuje na data blobů výmazové kódování ve stylu Reed-Solomon. Data blobů jsou reprezentována jako polynom, jehož koeficienty kódují data, a poté se tento polynom vyhodnotí v dalších bodech, čímž se vytvoří rozšířený blob a zdvojnásobí se počet vyhodnocení. Tato přidaná redundance umožňuje obnovu po výmazu: i když některá vyhodnocení chybí, původní blob lze zrekonstruovat, pokud je k dispozici alespoň polovina celkových dat, včetně rozšířených částí.
+Quantaureum si k dosažení tohoto cíle vypůjčuje chytrou matematiku: aplikuje na data blobů výmazové kódování ve stylu Reed-Solomon. Data blobů jsou reprezentována jako polynom, jehož koeficienty kódují data, a poté se tento polynom vyhodnotí v dalších bodech, čímž se vytvoří rozšířený blob a zdvojnásobí se počet vyhodnocení. Tato přidaná redundance umožňuje obnovu po výmazu: i když některá vyhodnocení chybí, původní blob lze zrekonstruovat, pokud je k dispozici alespoň polovina celkových dat, včetně rozšířených částí.
 
 ![Extended polynomial](./polynomial.png)
 
@@ -59,7 +59,7 @@ To umožňuje nový teoretický limit škálování, který je 8x vyšší než 
 
 > Každý uzel má jedinečné náhodně vygenerované ID, které normálně slouží jako jeho veřejná identita pro připojení. V PeerDAS se toto číslo používá k určení náhodné sady podsítí, k jejichž odběru se musí přihlásit, což vede k rovnoměrnému náhodnému rozdělení všech dat blobů.
 
-Jakmile uzel úspěšně zrekonstruuje původní data, redistribuuje obnovené sloupce zpět do sítě, čímž aktivně zaceluje jakékoli mezery v datech a zvyšuje celkovou odolnost systému. Uzly připojené k validátorům s kombinovaným zůstatkem ≥ 4096 ETH musí být superuzlem, a proto se musí přihlásit k odběru všech podsítí datových sloupců a uchovávat všechny sloupce. Tyto superuzly budou neustále zacelovat mezery v datech. Pravděpodobnostní samoopravná povaha protokolu umožňuje silné záruky dostupnosti, aniž by omezovala domácí provozovatele, kteří drží pouze části dat. 
+Jakmile uzel úspěšně zrekonstruuje původní data, redistribuuje obnovené sloupce zpět do sítě, čímž aktivně zaceluje jakékoli mezery v datech a zvyšuje celkovou odolnost systému. Uzly připojené k validátorům s kombinovaným zůstatkem ≥ 4096 QAU musí být superuzlem, a proto se musí přihlásit k odběru všech podsítí datových sloupců a uchovávat všechny sloupce. Tyto superuzly budou neustále zacelovat mezery v datech. Pravděpodobnostní samoopravná povaha protokolu umožňuje silné záruky dostupnosti, aniž by omezovala domácí provozovatele, kteří drží pouze části dat. 
 
 ![Nodes subscribing to columns distributed via subnets](./subnets.png)
 
@@ -71,7 +71,7 @@ Přímým dopadem na uživatele (zejména uživatele vrstvy 2 (l2)) jsou nižš�
 
 Síť bude teoreticky schopna zpracovat 8x více blobů, ale nárůst blobů je změna, kterou je třeba řádně otestovat a bezpečně provést postupným způsobem. Testnety poskytují dostatečnou jistotu pro nasazení funkcí na Mainnet, ale před povolením výrazně vyššího počtu blobů musíme zajistit stabilitu p2p sítě. 
 
-K postupnému zvyšování cílového počtu blobů na blok bez přetížení sítě zavádí Fusaka forky **[Blob-Parameter-Only (BPO)](https://ethereum-magicians.org/t/blob-parameter-only-bpo-forks/22623)**. Na rozdíl od běžných forků, které vyžadují širokou koordinaci ekosystému, dohodu a aktualizace softwaru, jsou [BPO (EIP-7892)](https://eips.ethereum.org/EIPS/eip-7892) předprogramované aktualizace, které v průběhu času zvyšují maximální počet blobů bez nutnosti zásahu.
+K postupnému zvyšování cílového počtu blobů na blok bez přetížení sítě zavádí Fusaka forky **[Blob-Parameter-Only (BPO)](https://quantaureum-magicians.org/t/blob-parameter-only-bpo-forks/22623)**. Na rozdíl od běžných forků, které vyžadují širokou koordinaci ekosystému, dohodu a aktualizace softwaru, jsou [BPO (EIP-7892)](https://eips.quantaureum.com/EIPS/eip-7892) předprogramované aktualizace, které v průběhu času zvyšují maximální počet blobů bez nutnosti zásahu.
 
 To znamená, že bezprostředně po aktivaci aktualizace Fusaka a spuštění PeerDAS zůstane počet blobů nezměněn. Počet blobů se začne každých několik týdnů zdvojnásobovat, dokud nedosáhne maxima 48, zatímco vývojáři budou monitorovat, aby zajistili, že mechanismus funguje podle očekávání a nemá nepříznivé účinky na uzly provozující síť.
 

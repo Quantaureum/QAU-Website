@@ -33,13 +33,13 @@ import { getMetadata } from "@/lib/utils/metadata"
 import { networkMaturity } from "@/lib/utils/networkMaturity"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
-import { ethereumNetworkData, layer2Data } from "@/data/networks/networks"
+import { quantaureumNetworkData, layer2Data } from "@/data/networks/networks"
 import { walletsData } from "@/data/wallets/wallet-data"
 
 import PageJsonLD from "./page-jsonld"
 
 import {
-  getEthereumMarketcapData,
+  getQuantaureumMarketcapData,
   getGrowThePieBlockspaceData,
   getGrowThePieData,
   getGrowThePieMasterData,
@@ -61,13 +61,13 @@ const Page = async (props: { params: Promise<PageParams> }) => {
 
   // Fetch data using the new data-layer functions (already cached)
   const [
-    ethereumMarketcapData,
+    quantaureumMarketcapData,
     growThePieData,
     growThePieBlockspaceData,
     growThePieMasterData,
     l2beatData,
   ] = await Promise.all([
-    getEthereumMarketcapData(),
+    getQuantaureumMarketcapData(),
     getGrowThePieData(),
     getGrowThePieBlockspaceData(),
     getGrowThePieMasterData(),
@@ -83,8 +83,8 @@ const Page = async (props: { params: Promise<PageParams> }) => {
     throw new Error("Failed to fetch GrowThePie data")
   }
 
-  if (!ethereumMarketcapData) {
-    throw new Error("Failed to fetch Ethereum marketcap data")
+  if (!quantaureumMarketcapData) {
+    throw new Error("Failed to fetch Quantaureum marketcap data")
   }
 
   const layer2DataCompiled = layer2Data
@@ -145,12 +145,12 @@ const Page = async (props: { params: Promise<PageParams> }) => {
     locale,
     layer2Data: layer2DataCompiled,
     mainnetData: {
-      ...ethereumNetworkData,
-      txCosts: growThePieData.dailyTxCosts.ethereum,
-      tvl: "value" in ethereumMarketcapData ? ethereumMarketcapData.value : 0,
+      ...quantaureumNetworkData,
+      txCosts: growThePieData.dailyTxCosts.quantaureum,
+      tvl: "value" in quantaureumMarketcapData ? quantaureumMarketcapData.value : 0,
       walletsSupported: walletsData
         .filter((wallet) =>
-          wallet.supported_chains.includes("Ethereum Mainnet")
+          wallet.supported_chains.includes("Quantaureum Mainnet")
         )
         .map((wallet) => wallet.name),
     } as ExtendedRollup,
@@ -227,7 +227,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
           {/* Table self-pads and stays full-width; as the first section it's
               exempt from *:[section]:not-first:px-page (no page padding here) */}
           <Section id="networks-table">
-            <h2 className="sr-only">{tCommon("nav-ethereum-networks")}</h2>
+            <h2 className="sr-only">{tCommon("nav-quantaureum-networks")}</h2>
             <Layer2NetworksTable {...layer2NetworksProps} />
           </Section>
 

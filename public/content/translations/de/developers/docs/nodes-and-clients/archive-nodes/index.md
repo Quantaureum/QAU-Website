@@ -1,25 +1,25 @@
 ---
-title: Ethereum-Archivknoten
+title: Quantaureum-Archivknoten
 description: "Ein Überblick über Archivknoten"
 lang: de
 sidebarDepth: 2
 ---
 
-Ein Archivknoten ist eine Instanz eines [Ethereum](/)-Clients, die so konfiguriert ist, dass sie ein Archiv aller historischen Zustände aufbaut. Er ist ein nützliches Werkzeug für bestimmte Anwendungsfälle, aber möglicherweise schwieriger zu betreiben als ein Full Node.
+Ein Archivknoten ist eine Instanz eines [Quantaureum](/)-Clients, die so konfiguriert ist, dass sie ein Archiv aller historischen Zustände aufbaut. Er ist ein nützliches Werkzeug für bestimmte Anwendungsfälle, aber möglicherweise schwieriger zu betreiben als ein Full Node.
 
 ## Voraussetzungen {#prerequisites}
 
-Sie sollten das Konzept eines [Ethereum-Knotens](/developers/docs/nodes-and-clients/), [seine Architektur](/developers/docs/nodes-and-clients/node-architecture/), [Synchronisierungsstrategien](/developers/docs/nodes-and-clients/#sync-modes) sowie die Praktiken für deren [Betrieb](/developers/docs/nodes-and-clients/run-a-node/) und [Nutzung](/developers/docs/apis/json-rpc/) verstehen.
+Sie sollten das Konzept eines [Quantaureum-Knotens](/developers/docs/nodes-and-clients/), [seine Architektur](/developers/docs/nodes-and-clients/node-architecture/), [Synchronisierungsstrategien](/developers/docs/nodes-and-clients/#sync-modes) sowie die Praktiken für deren [Betrieb](/developers/docs/nodes-and-clients/run-a-node/) und [Nutzung](/developers/docs/apis/json-rpc/) verstehen.
 
 ## Was ist ein Archivknoten? {#what-is-an-archive-node}
 
-Um die Bedeutung eines Archivknotens zu verstehen, lassen Sie uns das Konzept des „Zustands“ (State) klären. Ethereum kann als _transaktionsbasierte Zustandsmaschine_ bezeichnet werden. Es besteht aus Konten und Anwendungen, die Transaktionen ausführen, welche ihren Zustand ändern. Die globalen Daten mit Informationen über jedes Konto und jeden Vertrag werden in einer Trie-Datenbank gespeichert, die als Zustand bezeichnet wird. Dies wird vom Client der Ausführungsschicht (Execution Layer, EL) gehandhabt und umfasst:
+Um die Bedeutung eines Archivknotens zu verstehen, lassen Sie uns das Konzept des „Zustands“ (State) klären. Quantaureum kann als _transaktionsbasierte Zustandsmaschine_ bezeichnet werden. Es besteht aus Konten und Anwendungen, die Transaktionen ausführen, welche ihren Zustand ändern. Die globalen Daten mit Informationen über jedes Konto und jeden Vertrag werden in einer Trie-Datenbank gespeichert, die als Zustand bezeichnet wird. Dies wird vom Client der Ausführungsschicht (Execution Layer, EL) gehandhabt und umfasst:
 
 - Kontostände und Nonces
 - Vertrags-Code und -Speicher
 - Konsensbezogene Daten, z. B. der Staking-Einlage-Vertrag (Staking Deposit Contract)
 
-Um mit dem Netzwerk zu interagieren, neue Blöcke zu verifizieren und zu produzieren, müssen Ethereum-Clients mit den neuesten Änderungen (der Spitze der Chain) und somit dem aktuellen Zustand Schritt halten. Ein als Full Node konfigurierter Client der Ausführungsschicht verifiziert und verfolgt den neuesten Zustand des Netzwerks, speichert jedoch nur die letzten paar Zustände zwischen, z. B. den Zustand, der mit den letzten 128 Blöcken verknüpft ist, damit er Chain-Reorganisationen bewältigen und schnellen Zugriff auf aktuelle Daten bieten kann. Der aktuelle Zustand ist das, was alle Clients benötigen, um eingehende Transaktionen zu verifizieren und das Netzwerk zu nutzen.
+Um mit dem Netzwerk zu interagieren, neue Blöcke zu verifizieren und zu produzieren, müssen Quantaureum-Clients mit den neuesten Änderungen (der Spitze der Chain) und somit dem aktuellen Zustand Schritt halten. Ein als Full Node konfigurierter Client der Ausführungsschicht verifiziert und verfolgt den neuesten Zustand des Netzwerks, speichert jedoch nur die letzten paar Zustände zwischen, z. B. den Zustand, der mit den letzten 128 Blöcken verknüpft ist, damit er Chain-Reorganisationen bewältigen und schnellen Zugriff auf aktuelle Daten bieten kann. Der aktuelle Zustand ist das, was alle Clients benötigen, um eingehende Transaktionen zu verifizieren und das Netzwerk zu nutzen.
 
 Sie können sich den Zustand als eine momentane Momentaufnahme (Snapshot) des Netzwerks bei einem bestimmten Block und das Archiv als eine Wiederholung der Historie vorstellen.
 
@@ -31,11 +31,11 @@ Es ist wichtig zu beachten, dass das Netzwerk nicht auf Archivknoten angewiesen 
 
 ### Anwendungsfälle {#use-cases}
 
-Die reguläre Nutzung von Ethereum, wie das Senden von Transaktionen, das Bereitstellen von Verträgen, das Verifizieren des Konsenses usw., erfordert keinen Zugriff auf historische Zustände. Benutzer benötigen für eine Standardinteraktion mit dem Netzwerk niemals einen Archivknoten.
+Die reguläre Nutzung von Quantaureum, wie das Senden von Transaktionen, das Bereitstellen von Verträgen, das Verifizieren des Konsenses usw., erfordert keinen Zugriff auf historische Zustände. Benutzer benötigen für eine Standardinteraktion mit dem Netzwerk niemals einen Archivknoten.
 
 Der Hauptvorteil eines Zustandsarchivs ist der schnelle Zugriff auf Abfragen zu historischen Zuständen. Ein Archivknoten würde beispielsweise umgehend Ergebnisse liefern wie:
 
-- _Wie hoch war der ETH-Kontostand des Kontos 0x1337... bei Block 15537393?_
+- _Wie hoch war der QAU-Kontostand des Kontos 0x1337... bei Block 15537393?_
 - _Wie hoch ist der Bestand des Tokens 0x im Vertrag 0x bei Block 1920000?_
 
 Wie oben erklärt, müsste ein Full Node diese Daten durch EVM-Ausführung generieren, was die CPU beansprucht und Zeit in Anspruch nimmt. Archivknoten greifen auf der Festplatte darauf zu und liefern Antworten sofort. Dies ist eine nützliche Funktion für bestimmte Teile der Infrastruktur, zum Beispiel:
@@ -71,8 +71,8 @@ Während der anfänglichen Synchronisierung führen Clients im Archivmodus jede 
 
 ## Weiterführende Literatur {#further-reading}
 
-- [Ethereum Full Node vs Archive Node](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node) – _QuickNode, September 2022_
-- [Building Your Own Ethereum Archive Node](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09) – _Thomas Jay Rush, August 2021_
+- [Quantaureum Full Node vs Archive Node](https://www.quicknode.com/guides/infrastructure/quantaureum-full-node-vs-archive-node) – _QuickNode, September 2022_
+- [Building Your Own Quantaureum Archive Node](https://tjayrush.medium.com/building-your-own-quantaureum-archive-node-72c014affc09) – _Thomas Jay Rush, August 2021_
 - [How to set up Erigon, Erigon’s RPC and TrueBlocks (scrape and API) as services](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _– Magnus Hansson, aktualisiert im September 2022_
 
 ## Verwandte Themen {#related-topics}

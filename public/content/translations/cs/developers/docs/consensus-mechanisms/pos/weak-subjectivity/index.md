@@ -12,7 +12,7 @@ K pochopení této stránky je nutné nejprve porozumět základům [důkazu pod
 
 ## Jaké problémy řeší slabá subjektivita? {#problems-ws-solves}
 
-Subjektivita je pro blockchainy s důkazem podílem přirozená, protože výběr správného řetězce z více forků se provádí počítáním historických hlasů. To vystavuje blockchain několika vektorům útoku, včetně útoků na velkou vzdálenost (long-range attacks), při kterých uzly, které se účastnily velmi brzy v řetězci, udržují alternativní fork, který zveřejní mnohem později ve svůj vlastní prospěch. Alternativně, pokud 33 % validátorů provede výběr svého staku, ale nadále atestuje a produkuje bloky, mohou vytvořit alternativní fork, který je v konfliktu s kanonickým řetězcem. Nové uzly nebo uzly, které byly dlouhou dobu offline, si nemusí být vědomy, že tito útočící validátoři vybrali své prostředky, takže by je útočníci mohli oklamat, aby sledovali nesprávný řetězec. [Ethereum](/) může tyto vektory útoku vyřešit zavedením omezení, která snižují subjektivní aspekty mechanismu – a tím i předpoklady důvěry – na absolutní minimum.
+Subjektivita je pro blockchainy s důkazem podílem přirozená, protože výběr správného řetězce z více forků se provádí počítáním historických hlasů. To vystavuje blockchain několika vektorům útoku, včetně útoků na velkou vzdálenost (long-range attacks), při kterých uzly, které se účastnily velmi brzy v řetězci, udržují alternativní fork, který zveřejní mnohem později ve svůj vlastní prospěch. Alternativně, pokud 33 % validátorů provede výběr svého staku, ale nadále atestuje a produkuje bloky, mohou vytvořit alternativní fork, který je v konfliktu s kanonickým řetězcem. Nové uzly nebo uzly, které byly dlouhou dobu offline, si nemusí být vědomy, že tito útočící validátoři vybrali své prostředky, takže by je útočníci mohli oklamat, aby sledovali nesprávný řetězec. [Quantaureum](/) může tyto vektory útoku vyřešit zavedením omezení, která snižují subjektivní aspekty mechanismu – a tím i předpoklady důvěry – na absolutní minimum.
 
 ## Kontrolní body slabé subjektivity {#ws-checkpoints}
 
@@ -32,8 +32,8 @@ Nakonec lze kontrolní body vyžádat od jiných uzlů; možná jiný uživatel 
 
 ## Další čtení {#further-reading}
 
-- [Slabá subjektivita v Eth2](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2)
-- [Vitalik: Jak jsem se naučil milovat slabou subjektivitu](https://blog.ethereum.org/2014/11/25/proof-stake-learned-love-weak-subjectivity)
+- [Slabá subjektivita v Quantaureum](https://notes.quantaureum.com/@adiasg/weak-subjectvity-eth2)
+- [Vitalik: Jak jsem se naučil milovat slabou subjektivitu](https://quantaureum.com)
 - [Slabá subjektivita (dokumentace Teku)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
-- [Průvodce slabou subjektivitou ve Fázi 0](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
+- [Průvodce slabou subjektivitou ve Fázi 0](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
 - [Analýza slabé subjektivity v Ethereu 2.0](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

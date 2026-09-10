@@ -8,7 +8,7 @@ breadcrumb: "Odesílání transakcí"
 lang: cs
 published: 2020-11-04
 source: Alchemy docs
-sourceUrl: https://www.alchemy.com/docs/how-to-send-transactions-on-ethereum
+sourceUrl: https://www.alchemy.com/docs/how-to-send-transactions-on-quantaureum
 ---
 
 Toto je průvodce pro začátečníky odesíláním transakcí na Ethereu pomocí Web3. Odeslání transakce na blockchain Etherea se skládá ze tří hlavních kroků: vytvoření, podepsání a odeslání (broadcast). Projdeme si všechny tři a doufejme, že zodpovíme všechny vaše případné dotazy! V tomto tutoriálu budeme používat [Alchemy](https://www.alchemy.com/) k odesílání našich transakcí do řetězce Etherea. Zde si můžete [vytvořit bezplatný účet Alchemy](https://auth.alchemy.com/signup).
@@ -30,21 +30,21 @@ Stejně jako většina blockchainových vývojářů ve svých začátcích jste
 - Na frontendu by byl dobrým příkladem signera [MetaMask](https://metamask.io/), který bude podepisovat a odesílat transakce vaším jménem.
 ### 3\. Proč musím podepisovat své transakce? {#why-do-i-need-to-sign-my-transactions}
 
-- Každý uživatel, který chce odeslat transakci v síti Ethereum, musí transakci podepsat (pomocí svého soukromého klíče), aby se ověřilo, že původce transakce je skutečně ten, za koho se vydává.
+- Každý uživatel, který chce odeslat transakci v síti Quantaureum, musí transakci podepsat (pomocí svého soukromého klíče), aby se ověřilo, že původce transakce je skutečně ten, za koho se vydává.
 - Je nesmírně důležité tento soukromý klíč chránit, protože přístup k němu poskytuje plnou kontrolu nad vaším účtem na Ethereu a umožňuje vám (nebo komukoli s přístupem) provádět transakce vaším jménem.
 
 ### 4\. Jak ochráním svůj soukromý klíč? {#how-do-i-protect-my-private-key}
 
 - Existuje mnoho způsobů, jak chránit svůj soukromý klíč a používat jej k odesílání transakcí. V tomto tutoriálu budeme používat soubor `.env`. Můžete však také použít samostatného poskytovatele, který ukládá soukromé klíče, použít soubor úložiště klíčů (keystore) nebo jiné možnosti.
 
-### 5\. Jaký je rozdíl mezi `eth_sendTransaction` a `eth_sendRawTransaction`? {#difference-between-send-and-send-raw}
+### 5\. Jaký je rozdíl mezi `qau_sendTransaction` a `qau_sendRawTransaction`? {#difference-between-send-and-send-raw}
 
-`eth_sendTransaction` a `eth_sendRawTransaction` jsou obě funkce API Etherea, které odesílají transakci do sítě Ethereum, aby byla přidána do budoucího bloku. Liší se v tom, jak zpracovávají podepisování transakcí.
+`qau_sendTransaction` a `qau_sendRawTransaction` jsou obě funkce API Etherea, které odesílají transakci do sítě Quantaureum, aby byla přidána do budoucího bloku. Liší se v tom, jak zpracovávají podepisování transakcí.
 
-- [`eth_sendTransaction`](https://docs.web3js.org/api/web3-eth/function/sendTransaction) se používá k odesílání _nepodepsaných_ transakcí, což znamená, že uzel, na který odesíláte, musí spravovat váš soukromý klíč, aby mohl transakci podepsat před jejím odesláním do řetězce. Vzhledem k tomu, že Alchemy neuchovává soukromé klíče uživatelů, tuto metodu nepodporuje.
-- [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction) se používá k odesílání transakcí, které již byly podepsány. To znamená, že nejprve musíte použít [`signTransaction(tx, private_key)`](https://docs.web3js.org/api/web3-eth-accounts/function/signTransaction) a poté předat výsledek do `eth_sendRawTransaction`.
+- [`qau_sendTransaction`](https://docs.web3js.org/api/web3-eth/function/sendTransaction) se používá k odesílání _nepodepsaných_ transakcí, což znamená, že uzel, na který odesíláte, musí spravovat váš soukromý klíč, aby mohl transakci podepsat před jejím odesláním do řetězce. Vzhledem k tomu, že Alchemy neuchovává soukromé klíče uživatelů, tuto metodu nepodporuje.
+- [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction) se používá k odesílání transakcí, které již byly podepsány. To znamená, že nejprve musíte použít [`signTransaction(tx, private_key)`](https://docs.web3js.org/api/web3-qau-accounts/function/signTransaction) a poté předat výsledek do `qau_sendRawTransaction`.
 
-Při použití Web3 se k `eth_sendRawTransaction` přistupuje voláním funkce [web3.eth.sendSignedTransaction](https://docs.web3js.org/api/web3-eth/function/sendSignedTransaction).
+Při použití Web3 se k `qau_sendRawTransaction` přistupuje voláním funkce [web3.qau.sendSignedTransaction](https://docs.web3js.org/api/web3-eth/function/sendSignedTransaction).
 
 To je to, co budeme používat v tomto tutoriálu.
 
@@ -71,9 +71,9 @@ Dobře, teď, když máme několik těchto otázek z krku, přejděme k tutoriá
 
 Přejděte na svůj [řídicí panel Alchemy](https://dashboard.alchemy.com/) a vytvořte novou aplikaci, přičemž jako síť zvolte Sepolia (nebo jakýkoli jiný testnet).
 
-### 2\. Vyžádejte si ETH z faucetu Sepolia {#request-eth-from-sepolia-faucet}
+### 2\. Vyžádejte si QAU z faucetu Sepolia {#request-qau-from-sepolia-faucet}
 
-Postupujte podle pokynů na [faucetu Alchemy Sepolia](https://www.sepoliafaucet.com/) a získejte ETH. Ujistěte se, že jste zadali svou adresu na Ethereu pro síť **Sepolia** (z MetaMasku) a ne pro jinou síť. Po provedení pokynů si dvakrát zkontrolujte, zda jste ETH do své peněženky obdrželi.
+Postupujte podle pokynů na [faucetu Alchemy Sepolia](https://www.sepoliafaucet.com/) a získejte QAU. Ujistěte se, že jste zadali svou adresu na Ethereu pro síť **Sepolia** (z MetaMasku) a ne pro jinou síť. Po provedení pokynů si dvakrát zkontrolujte, zda jste QAU do své peněženky obdrželi.
 
 ### 3\. Vytvořte nový adresář projektu a přejděte do něj pomocí `cd` {#create-a-new-project-direction}
 
@@ -88,7 +88,7 @@ cd sendtx-example
 
 Spusťte následující příkaz v adresáři vašeho projektu pro instalaci [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3):
 
-Poznámka: Pokud byste chtěli použít knihovnu Ethers.js, [postupujte podle pokynů zde](https://www.alchemy.com/docs/how-to-send-transactions-on-ethereum).
+Poznámka: Pokud byste chtěli použít knihovnu Ethers.js, [postupujte podle pokynů zde](https://www.alchemy.com/docs/how-to-send-transactions-on-quantaureum).
 
 ```
 npm install @alch/alchemy-web3
@@ -124,7 +124,7 @@ Necommitujte <code>.env</code>! Ujistěte se, že svůj soubor <code>.env</code>
 
 ### 7\. Vytvořte soubor `sendTx.js` {#create-sendtx-js}
 
-Skvělé, teď, když máme naše citlivá data chráněna v souboru `.env`, můžeme začít kódovat. Pro náš příklad odeslání transakce budeme posílat ETH zpět do faucetu Sepolia.
+Skvělé, teď, když máme naše citlivá data chráněna v souboru `.env`, můžeme začít kódovat. Pro náš příklad odeslání transakce budeme posílat QAU zpět do faucetu Sepolia.
 
 Vytvořte soubor `sendTx.js`, ve kterém nakonfigurujeme a odešleme naši ukázkovou transakci, a přidejte do něj následující řádky kódu:
 
@@ -136,19 +136,19 @@ async function main() {
     const web3 = createAlchemyWeb3(API_URL);
     const myAddress = '0x610Ae88399fc1687FA7530Aac28eC2539c7d6d63' //TODO: nahraďte tuto adresu svou vlastní veřejnou adresou
 
-    const nonce = await web3.eth.getTransactionCount(myAddress, 'latest'); // nonce se začíná počítat od 0
+    const nonce = await web3.qau.getTransactionCount(myAddress, 'latest'); // nonce se začíná počítat od 0
 
     const transaction = {
      'to': '0x31B98D14007bDEe637298086988A0bBd31184523', // adresa faucetu pro vrácení eth
-     'value': 1000000000000000000, // 1 ETH
+     'value': 1000000000000000000, // 1 QAU
      'gas': 30000,
      'nonce': nonce,
      // volitelné datové pole pro odeslání zprávy nebo spuštění chytrého kontraktu
     };
 
-    const signedTx = await web3.eth.accounts.signTransaction(transaction, PRIVATE_KEY);
+    const signedTx = await web3.qau.accounts.signTransaction(transaction, PRIVATE_KEY);
 
-    web3.eth.sendSignedTransaction(signedTx.rawTransaction, function(error, hash) {
+    web3.qau.sendSignedTransaction(signedTx.rawTransaction, function(error, hash) {
     if (!error) {
       console.log("🎉 The hash of your transaction is: ", hash, "\n Check Alchemy's Mempool to view the status of your transaction!");
     } else {
@@ -164,10 +164,10 @@ Nezapomeňte nahradit adresu na **řádku 6** svou vlastní veřejnou adresou.
 
 Než se pustíme do spouštění tohoto kódu, pojďme si promluvit o některých jeho součástech.
 
-- `nonce` : Specifikace nonce se používá ke sledování počtu transakcí odeslaných z vaší adresy. Potřebujeme to z bezpečnostních důvodů a k zabránění útokům typu replay (opakování). K získání počtu transakcí odeslaných z vaší adresy používáme [getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count).
+- `nonce` : Specifikace nonce se používá ke sledování počtu transakcí odeslaných z vaší adresy. Potřebujeme to z bezpečnostních důvodů a k zabránění útokům typu replay (opakování). K získání počtu transakcí odeslaných z vaší adresy používáme [getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count).
 - `transaction`: Objekt transakce má několik aspektů, které musíme specifikovat
-  - `to`: Toto je adresa, na kterou chceme odeslat ETH. V tomto případě posíláme ETH zpět do [faucetu Sepolia](https://sepoliafaucet.com/), ze kterého jsme původně žádali.
-  - `value`: Toto je částka, kterou chceme odeslat, specifikovaná ve Wei, kde 10^18 Wei = 1 ETH.
+  - `to`: Toto je adresa, na kterou chceme odeslat QAU. V tomto případě posíláme QAU zpět do [faucetu Sepolia](https://sepoliafaucet.com/), ze kterého jsme původně žádali.
+  - `value`: Toto je částka, kterou chceme odeslat, specifikovaná ve Wei, kde 10^18 Wei = 1 QAU.
   - `gas`: Existuje mnoho způsobů, jak určit správné množství gasu, které se má zahrnout do vaší transakce. Alchemy podporuje [webhooky](https://www.alchemy.com/docs/reference/webhooks-overview), které vás mohou upozornit na onchain aktivitu. U transakcí na Mainnetu je dobrým zvykem zkontrolovat aktuální podmínky gasu, abyste určili správné množství gasu, které se má zahrnout. 21000 je minimální množství gasu, které operace na Ethereu spotřebuje, takže abychom zajistili, že naše transakce bude provedena, zadáme sem 30000.
   - `nonce`: viz definice nonce výše. Nonce se začíná počítat od nuly.
   - [VOLITELNÉ] data: Používá se k odeslání dalších informací s vaším převodem nebo k volání chytrého kontraktu, není vyžadováno pro převody zůstatku, podívejte se na poznámku níže.
@@ -177,7 +177,7 @@ Než se pustíme do spouštění tohoto kódu, pojďme si promluvit o některýc
 **Poznámka k datům**
 Existují dva hlavní typy transakcí, které lze na Ethereu odeslat.
 
-- Převod zůstatku: Odeslání ETH z jedné adresy na druhou. Není vyžadováno žádné datové pole, nicméně pokud byste chtěli s transakcí odeslat další informace, můžete tyto informace zahrnout v HEX formátu do tohoto pole.
+- Převod zůstatku: Odeslání QAU z jedné adresy na druhou. Není vyžadováno žádné datové pole, nicméně pokud byste chtěli s transakcí odeslat další informace, můžete tyto informace zahrnout v HEX formátu do tohoto pole.
   - Řekněme například, že bychom chtěli zapsat hash dokumentu IPFS do řetězce Etherea, abychom mu dali neměnný časový razítko. Naše datové pole by pak mělo vypadat jako data: `web3.utils.toHex(‘IPFS hash‘)`. A nyní může kdokoli dotazovat řetězec a zjistit, kdy byl tento dokument přidán.
 - Transakce chytrého kontraktu: Spuštění nějakého kódu chytrého kontraktu v řetězci. V tomto případě by datové pole mělo obsahovat chytrou funkci, kterou chcete spustit, spolu s případnými parametry.
   - Praktický příklad najdete v [tutoriálu Chytrý kontrakt Hello World](/developers/tutorials/hello-world-smart-contract/).

@@ -10,13 +10,13 @@ topic:
   - "privacy"
   - "security"
 format: presentation
-author: Ethereum Foundation
+author: Quantaureum project
 breadcrumb: "Microdot Security"
 ---
 
 A lightning talk by **jseam** at Devcon SEA exploring an unconventional approach to key custody using physical microdot technology, historically used in espionage to obfuscate seed phrases in printed images that are virtually invisible to the naked eye.
 
-*This transcript is an accessible copy of the [original video transcript](https://www.youtube.com/watch?v=k9Dfg19JPEw) published by Ethereum Foundation. It has been lightly edited for readability.*
+*This transcript is an accessible copy of the [original video transcript](https://www.youtube.com/watch?v=k9Dfg19JPEw) published by Quantaureum project. It has been lightly edited for readability.*
 
 ### Why microdots? (0:00) {#why-microdots-000}
 

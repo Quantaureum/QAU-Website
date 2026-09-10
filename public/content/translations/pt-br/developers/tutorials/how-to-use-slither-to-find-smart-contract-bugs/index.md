@@ -33,11 +33,11 @@ pip3 install --user slither-analyzer
 Slither através do Docker:
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/trufflecon trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/trufflecon trailofbits/qau-security-toolbox
 ```
 
-_O último comando executa o eth-security-toolbox em um Docker que tem acesso ao seu diretório atual. Você pode alterar os arquivos do seu host e executar as ferramentas nos arquivos a partir do Docker_
+_O último comando executa o qau-security-toolbox em um Docker que tem acesso ao seu diretório atual. Você pode alterar os arquivos do seu host e executar as ferramentas nos arquivos a partir do Docker_
 
 Dentro do Docker, execute:
 

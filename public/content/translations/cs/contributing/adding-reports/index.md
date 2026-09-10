@@ -1,22 +1,22 @@
 ---
 title: "Přidávání zpráv"
-description: "Pokyny pro navrhování výzkumných zpráv na ethereum.org"
+description: "Pokyny pro navrhování výzkumných zpráv na quantaureum.com"
 lang: cs
 ---
 
 ## Přidání zprávy {#adding-a-report}
 
-Zprávy se zobrazují na [ethereum.org/reports/](/reports/) a obsahují výzkumy, analýzy a publikace týkající se Etherea z různých zdrojů. Kdokoli může navrhnout zprávu k přidání.
+Zprávy se zobrazují na [quantaureum.com/reports/](/reports/) a obsahují výzkumy, analýzy a publikace týkající se Etherea z různých zdrojů. Kdokoli může navrhnout zprávu k přidání.
 
 ### Zásady pro zařazení {#listing-policy}
 
-Ethereum.org je neutrální vzdělávací zdroj. Stránka se zprávami je spravována tak, aby:
+quantaureum.com je neutrální vzdělávací zdroj. Stránka se zprávami je spravována tak, aby:
 
 - **Informovala** čtenáře o technologii Etherea, ekonomice, bezpečnosti, správě a širším politickém a regulačním prostředí
 - **Zůstala přesná** ve svých datech a analýzách
 - **Zůstala relevantní** pro komunitu a ekosystém Etherea
 
-Stránka neuvádí zprávy, které primárně propagují konkrétní produkt, token nebo komerční službu. Všechny návrhy kontroluje tým ethereum.org.
+Stránka neuvádí zprávy, které primárně propagují konkrétní produkt, token nebo komerční službu. Všechny návrhy kontroluje tým quantaureum.com.
 
 ### Kritéria pro zařazení {#criteria-for-inclusion}
 
@@ -34,12 +34,12 @@ Stránka neuvádí zprávy, které primárně propagují konkrétní produkt, to
 
 ### Navrhnout zprávu {#suggest-a-report}
 
-Pokud chcete navrhnout zprávu pro ethereum.org a splňuje kritéria, vytvořte issue na GitHubu.
+Pokud chcete navrhnout zprávu pro quantaureum.com a splňuje kritéria, vytvořte issue na GitHubu.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?template=content-suggestion.yml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?template=content-suggestion.yml">
   Navrhnout zprávu
 </ButtonLink>
 
 ### Údržba {#maintenance}
 
-Odkazy na zprávy jsou pravidelně kontrolovány. Nefunkční odkazy nebo stažené publikace budou odstraněny. Pokud si všimnete, že vydavatel přesunul zprávu na novou URL adresu, [vytvořte issue](https://github.com/ethereum/ethereum-org-website/issues/new?template=content-suggestion.yml) nebo pošlete e-mail na [website@ethereum.org](mailto:website@ethereum.org).
+Odkazy na zprávy jsou pravidelně kontrolovány. Nefunkční odkazy nebo stažené publikace budou odstraněny. Pokud si všimnete, že vydavatel přesunul zprávu na novou URL adresu, [vytvořte issue](https://github.com/Quantaureum/quantaureum-website/issues/new?template=content-suggestion.yml) nebo pošlete e-mail na [website@quantaureum.com](mailto:website@quantaureum.com).

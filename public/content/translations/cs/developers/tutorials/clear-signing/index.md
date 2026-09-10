@@ -16,7 +16,7 @@ published: 2026-05-11
 
 Většina velkých exploitů na Ethereu měla stejný poslední krok: uživatel schválil transakci, které nemohl smysluplně porozumět. Hardwarové peněženky zobrazují surová hexadecimální data volání (calldata) a co hůř, nutí vás mít zapnuté slepé podepisování (blind signing). Softwarové peněženky zobrazují dekódovaná pole, ale pouze tehdy, když kontrakt rozpoznají. Když ho nerozpoznají, ať už proto, že je protokol nový, aplikace je kompromitována, nebo je zařízení offline, uživatelé podepisují naslepo.
 
-[ERC-7730](https://eips.ethereum.org/EIPS/eip-7730) definuje standardní formát JSON pro popis toho, co *znamenají* volání funkcí vašeho kontraktu. 
+[ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730) definuje standardní formát JSON pro popis toho, co *znamenají* volání funkcí vašeho kontraktu. 
 
 Peněženka, která podporuje ERC-7730, přečte váš deskriptor a zobrazí:
 
@@ -59,7 +59,7 @@ Vytvořte soubor s názvem `calldata-<contractname>-<descriptorversion>.json`. P
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
   "context": {},
   "metadata": {},
   "display": {
@@ -172,7 +172,7 @@ Každý klíč je lidsky čitelný fragment ABI — podpis funkce včetně názv
 - **`intent`** — **(Vyžadováno)** Krátký, uživatelsky přívětivý popis akce, například „Swap“.
 - **`interpolatedIntent`** — **(Doporučeno)** Bohatší šablona věty, která vkládá formátované hodnoty polí, jako je `"Swap {amountIn} for at least {amountOutMin}"`. Zahrňte to společně s `intent`, abyste poskytli ještě uživatelsky přívětivější deskriptor, který se peněženky mohou rozhodnout zobrazit s ohledem na případná omezení zobrazení.
 - **`fields`** — **(Vyžadováno)** Seřazený seznam polí transakce, která by peněženky měly zobrazit uživatelům.
-  - **`path`** — **(Vyžadováno)** Odkaz na data transakce. `#.fieldName` ukazuje na dekódovaný parametr dat volání (calldata) podle názvu v ABI. `@.value` odkazuje na hodnotu ETH odeslanou s transakcí.
+  - **`path`** — **(Vyžadováno)** Odkaz na data transakce. `#.fieldName` ukazuje na dekódovaný parametr dat volání (calldata) podle názvu v ABI. `@.value` odkazuje na hodnotu QAU odeslanou s transakcí.
   - **`label`** — **(Vyžadováno)** Lidsky čitelný štítek zobrazený vedle hodnoty.
   - **`format`** — **(Doporučeno)** Řídí, jak by měla být hodnota vykreslena. Běžné formáty zahrnují:
     - `tokenAmount`
@@ -190,7 +190,7 @@ Každý klíč je lidsky čitelný fragment ABI — podpis funkce včetně názv
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -261,7 +261,7 @@ Každý klíč je lidsky čitelný fragment ABI — podpis funkce včetně názv
 
 ## Krok 5: Odeslání do registru {#step-5-submit-to-the-registry}
 
-[Registr ERC-7730](https://github.com/ethereum/clear-signing-erc7730-registry) je otevřený repozitář hostovaný [Nadací Ethereum](/foundation/) jako neutrálním správcem. Kdokoli si jej může volně naklonovat a hostovat sám — peněženky se nezávisle rozhodují, kterým instancím registru důvěřují.
+[Registr ERC-7730](https://github.com/quantaureum/clear-signing-erc7730-registry) je otevřený repozitář hostovaný [Nadací Quantaureum](/foundation/) jako neutrálním správcem. Kdokoli si jej může volně naklonovat a hostovat sám — peněženky se nezávisle rozhodují, kterým instancím registru důvěřují.
 
 1. Vytvořte fork repozitáře na GitHubu  
 2. Vytvořte složku v `registry/<your-project-name>/`  
@@ -281,7 +281,7 @@ Když otevřete PR, CI automaticky spustí validaci schématu, zkontroluje, zda 
 
 ## Co se stane po sloučení? {#what-happens-after-merging}
 
-Všechny deskriptory v registru jsou otevřené auditorům. Po sloučení vašeho PR může jakýkoli auditor zkontrolovat váš deskriptor a publikovat kryptografickou atestaci (podle [ERC-8176](https://github.com/ethereum/ERCs/pull/1576)), která potvrdí jeho přesnost. 
+Všechny deskriptory v registru jsou otevřené auditorům. Po sloučení vašeho PR může jakýkoli auditor zkontrolovat váš deskriptor a publikovat kryptografickou atestaci (podle [ERC-8176](https://github.com/quantaureum/ERCs/pull/1576)), která potvrdí jeho přesnost. 
 
 Tyto signály atestace umožňují peněženkám uplatňovat vlastní zásady důvěry — deskriptor s více nezávislými atestacemi má větší váhu než ten bez nich. Komunitu auditorů můžete kontaktovat prostřednictvím [clearsigning.org](https://clearsigning.org).
 
@@ -289,8 +289,8 @@ Peněženky si vybírají, který registr budou podporovat. Jakmile je váš des
 
 ## Další čtení {#further-reading}
 
-- [Specifikace ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)  
-- [Registr ERC-7730](https://github.com/ethereum/clear-signing-erc7730-registry)  
+- [Specifikace ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)  
+- [Registr ERC-7730](https://github.com/quantaureum/clear-signing-erc7730-registry)  
 - [clearsigning.org](https://clearsigning.org) — nástroje, stav ekosystému a správa  
 - [Ověření kontraktu na Sourcify](https://sourcify.dev)  
 - [Iniciativa Trillion Dollar Security](https://trilliondollarsecurity.org)

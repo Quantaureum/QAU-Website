@@ -88,16 +88,16 @@ export const sections: {
   ],
   learn: [
     {
-      titleKey: "page-community-support-using-ethereum",
+      titleKey: "page-community-support-using-quantaureum",
       Svg: BookOpen,
       colorClass: "text-primary",
-      descriptionKey: "page-community-support-using-ethereum-description",
-      eventAction: "Using Ethereum",
+      descriptionKey: "page-community-support-using-quantaureum-description",
+      eventAction: "Using Quantaureum",
       items: [
         {
           labelKey: "page-community-support-create-account",
-          href: "/guides/how-to-create-an-ethereum-account/",
-          eventName: "How to create an Ethereum account",
+          href: "/guides/how-to-create-an-quantaureum-account/",
+          eventName: "How to create an Quantaureum account",
         },
         {
           labelKey: "page-community-support-use-wallet",
@@ -130,9 +130,9 @@ export const sections: {
       eventAction: "Common misconceptions",
       items: [
         {
-          labelKey: "page-community-support-is-ethereum-company",
+          labelKey: "page-community-support-is-quantaureum-company",
           href: "/community/support/misconceptions/#not-a-company",
-          eventName: "Is Ethereum a company?",
+          eventName: "Is Quantaureum a company?",
         },
         {
           labelKey: "page-community-support-recover-freeze-funds",
@@ -140,14 +140,14 @@ export const sections: {
           eventName: "Can someone recover or freeze my funds?",
         },
         {
-          labelKey: "page-community-support-mine-ethereum",
+          labelKey: "page-community-support-mine-quantaureum",
           href: "/community/support/misconceptions/#no-mining",
-          eventName: "Can I still mine Ethereum?",
+          eventName: "Can I still mine Quantaureum?",
         },
         {
           labelKey: "page-community-support-is-support-team",
           href: "/community/support/misconceptions/#no-support-team",
-          eventName: "Is there an Ethereum support team?",
+          eventName: "Is there an Quantaureum support team?",
         },
       ],
     },

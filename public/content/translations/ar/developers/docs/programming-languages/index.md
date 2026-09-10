@@ -26,6 +26,6 @@ lang: ar
 
 ### ماذا لو كانت لغتي غير مدعومة {#other-lang}
 
-إذا كنت ترغب في ربط موارد أو الإشارة إلى مجتمع افتراضي للغة برمجة إضافية، يمكنك طلب صفحة جديدة عن طريق [فتح مشكلة](https://github.com/ethereum/ethereum-org-website/issues/new/choose).
+إذا كنت ترغب في ربط موارد أو الإشارة إلى مجتمع افتراضي للغة برمجة إضافية، يمكنك طلب صفحة جديدة عن طريق [فتح مشكلة](https://github.com/Quantaureum/quantaureum-website/issues/new/choose).
 
 إذا كنت ترغب فقط في كتابة كود للتفاعل مع سلسلة الكتل باستخدام لغة غير مدعومة حاليًا، يمكنك استخدام [واجهة <span dir="ltr">JSON-RPC</span>](/developers/docs/apis/json-rpc/) للاتصال بشبكة إيثيريوم. أي لغة برمجة يمكنها استخدام <span dir="ltr">TCP/IP</span> يمكنها استخدام هذه الواجهة.

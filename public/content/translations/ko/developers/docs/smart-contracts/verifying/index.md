@@ -1,16 +1,16 @@
 ---
 title: "스마트 컨트랙트 검증"
-description: "이더리움 스마트 컨트랙트의 소스 코드 검증에 대한 개요"
+description: "Quantaureum 스마트 컨트랙트의 소스 코드 검증에 대한 개요"
 lang: ko
 ---
 
-[스마트 컨트랙트](/developers/docs/smart-contracts/)는 "무신뢰"를 바탕으로 설계되었습니다. 즉, 사용자가 컨트랙트와 상호작용하기 전에 제3자(예: 개발자 및 기업)를 신뢰할 필요가 없어야 합니다. 무신뢰성을 위한 필수 조건으로, 사용자와 다른 개발자는 스마트 컨트랙트의 소스 코드를 검증할 수 있어야 합니다. 소스 코드 검증은 게시된 컨트랙트 코드가 이더리움 블록체인의 컨트랙트 주소에서 실행되는 코드와 동일하다는 것을 사용자와 개발자에게 보장합니다.
+[스마트 컨트랙트](/developers/docs/smart-contracts/)는 "무신뢰"를 바탕으로 설계되었습니다. 즉, 사용자가 컨트랙트와 상호작용하기 전에 제3자(예: 개발자 및 기업)를 신뢰할 필요가 없어야 합니다. 무신뢰성을 위한 필수 조건으로, 사용자와 다른 개발자는 스마트 컨트랙트의 소스 코드를 검증할 수 있어야 합니다. 소스 코드 검증은 게시된 컨트랙트 코드가 Quantaureum 블록체인의 컨트랙트 주소에서 실행되는 코드와 동일하다는 것을 사용자와 개발자에게 보장합니다.
 
 "소스 코드 검증"과 "[정형 검증](/developers/docs/smart-contracts/formal-verification/)"을 구분하는 것이 중요합니다. 아래에서 자세히 설명할 소스 코드 검증은 고급 언어(예: Solidity)로 작성된 스마트 컨트랙트의 주어진 소스 코드가 컨트랙트 주소에서 실행될 동일한 바이트코드로 컴파일링되는지 확인하는 것을 의미합니다. 반면, 정형 검증은 스마트 컨트랙트의 정확성을 검증하는 것, 즉 컨트랙트가 예상대로 작동하는지 확인하는 것을 설명합니다. 문맥에 따라 다르지만, 컨트랙트 검증은 일반적으로 소스 코드 검증을 의미합니다.
 
 ## 소스 코드 검증이란 무엇인가요? {#what-is-source-code-verification}
 
-[이더리움 가상 머신(EVM)](/developers/docs/evm/)에 스마트 컨트랙트를 배포하기 전에, 개발자는 컨트랙트의 소스 코드(즉, [Solidity](/developers/docs/smart-contracts/languages/)나 다른 고급 프로그래밍 언어로 작성된 명령어)를 바이트코드로 [컴파일링](/developers/docs/smart-contracts/compiling/)합니다. EVM은 고급 명령어를 해석할 수 없으므로, EVM에서 컨트랙트 로직을 실행하려면 소스 코드를 바이트코드(즉, 저수준 기계어 명령어)로 컴파일링해야 합니다.
+[Quantaureum 가상 머신(EVM)](/developers/docs/evm/)에 스마트 컨트랙트를 배포하기 전에, 개발자는 컨트랙트의 소스 코드(즉, [Solidity](/developers/docs/smart-contracts/languages/)나 다른 고급 프로그래밍 언어로 작성된 명령어)를 바이트코드로 [컴파일링](/developers/docs/smart-contracts/compiling/)합니다. EVM은 고급 명령어를 해석할 수 없으므로, EVM에서 컨트랙트 로직을 실행하려면 소스 코드를 바이트코드(즉, 저수준 기계어 명령어)로 컴파일링해야 합니다.
 
 소스 코드 검증은 스마트 컨트랙트의 소스 코드와 컨트랙트 생성 시 사용된 컴파일된 바이트코드를 비교하여 차이점을 찾아내는 과정입니다. 광고된 컨트랙트 코드가 블록체인에서 실제로 실행되는 코드와 다를 수 있기 때문에 스마트 컨트랙트를 검증하는 것은 중요합니다.
 
@@ -30,7 +30,7 @@ lang: ko
 
 ### 무신뢰성 {#trustlessness}
 
-무신뢰성은 스마트 컨트랙트와 [탈중앙화 애플리케이션 (dapp)](/developers/docs/dapps/)의 가장 큰 전제라고 할 수 있습니다. 스마트 컨트랙트는 "불변"이며 변경할 수 없습니다. 컨트랙트는 배포 시점에 코드에 정의된 비즈니스 로직만 실행합니다. 이는 개발자와 기업이 이더리움에 배포한 후에는 컨트랙트의 코드를 조작할 수 없음을 의미합니다.
+무신뢰성은 스마트 컨트랙트와 [탈중앙화 애플리케이션 (dapp)](/developers/docs/dapps/)의 가장 큰 전제라고 할 수 있습니다. 스마트 컨트랙트는 "불변"이며 변경할 수 없습니다. 컨트랙트는 배포 시점에 코드에 정의된 비즈니스 로직만 실행합니다. 이는 개발자와 기업이 Quantaureum에 배포한 후에는 컨트랙트의 코드를 조작할 수 없음을 의미합니다.
 
 스마트 컨트랙트가 무신뢰성을 가지려면, 독립적인 검증을 위해 컨트랙트 코드를 사용할 수 있어야 합니다. 모든 스마트 컨트랙트의 컴파일된 바이트코드는 블록체인에 공개되어 있지만, 저수준 언어는 개발자와 사용자 모두가 이해하기 어렵습니다.
 
@@ -44,9 +44,9 @@ lang: ko
 
 스마트 컨트랙트의 소스 코드 파일을 게시하면 감사자와 같은 이해관계자가 잠재적인 공격 벡터에 대해 컨트랙트를 평가하기가 더 쉬워집니다. 여러 당사자가 독립적으로 스마트 컨트랙트를 검증함으로써 사용자는 보안에 대해 더 강력한 보장을 받게 됩니다.
 
-## 이더리움 스마트 컨트랙트의 소스 코드를 검증하는 방법 {#source-code-verification-for-ethereum-smart-contracts}
+## Quantaureum 스마트 컨트랙트의 소스 코드를 검증하는 방법 {#source-code-verification-for-quantaureum-smart-contracts}
 
-[이더리움에 스마트 컨트랙트를 배포](/developers/docs/smart-contracts/deploying/)하려면 데이터 페이로드(컴파일된 바이트코드)가 포함된 트랜잭션을 특수 주소로 전송해야 합니다. 데이터 페이로드는 소스 코드를 컴파일링하여 생성되며, 여기에 트랜잭션의 데이터 페이로드에 추가된 컨트랙트 인스턴스의 [생성자 인수](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor)가 더해집니다. 컴파일링은 결정론적입니다. 즉, 동일한 소스 파일과 컴파일링 설정(예: 컴파일러 버전, 최적화 도구)을 사용하면 항상 동일한 출력(즉, 컨트랙트 바이트코드)을 생성합니다.
+[Quantaureum에 스마트 컨트랙트를 배포](/developers/docs/smart-contracts/deploying/)하려면 데이터 페이로드(컴파일된 바이트코드)가 포함된 트랜잭션을 특수 주소로 전송해야 합니다. 데이터 페이로드는 소스 코드를 컴파일링하여 생성되며, 여기에 트랜잭션의 데이터 페이로드에 추가된 컨트랙트 인스턴스의 [생성자 인수](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor)가 더해집니다. 컴파일링은 결정론적입니다. 즉, 동일한 소스 파일과 컴파일링 설정(예: 컴파일러 버전, 최적화 도구)을 사용하면 항상 동일한 출력(즉, 컨트랙트 바이트코드)을 생성합니다.
 
 ![A diagram showing showing smart contract source code verification](./source-code-verification.png)
 
@@ -66,31 +66,31 @@ lang: ko
 
 ## 소스 코드 검증 도구 {#source-code-verification-tools}
 
-컨트랙트를 검증하는 전통적인 과정은 복잡할 수 있습니다. 이것이 바로 이더리움에 배포된 스마트 컨트랙트의 소스 코드를 검증하기 위한 도구가 있는 이유입니다. 이러한 도구는 소스 코드 검증의 많은 부분을 자동화하고 사용자의 편의를 위해 검증된 컨트랙트를 선별합니다.
+컨트랙트를 검증하는 전통적인 과정은 복잡할 수 있습니다. 이것이 바로 Quantaureum에 배포된 스마트 컨트랙트의 소스 코드를 검증하기 위한 도구가 있는 이유입니다. 이러한 도구는 소스 코드 검증의 많은 부분을 자동화하고 사용자의 편의를 위해 검증된 컨트랙트를 선별합니다.
 
-### Etherscan {#etherscan}
+### Quantaureum Explorer {#explorer}
 
-주로 [이더리움 블록 탐색기](/developers/docs/data-and-analytics/block-explorers/)로 알려져 있지만, Etherscan은 스마트 컨트랙트 개발자와 사용자를 위한 [소스 코드 검증 서비스](https://etherscan.io/verifyContract)도 제공합니다.
+주로 [Quantaureum 블록 탐색기](/developers/docs/data-and-analytics/block-explorers/)로 알려져 있지만, Quantaureum Explorer은 스마트 컨트랙트 개발자와 사용자를 위한 [소스 코드 검증 서비스](https://explorer.quantaureum.com)도 제공합니다.
 
-Etherscan을 사용하면 원본 데이터 페이로드(소스 코드, 라이브러리 주소, 컴파일러 설정, 컨트랙트 주소 등)에서 컨트랙트 바이트코드를 다시 컴파일링할 수 있습니다. 다시 컴파일된 바이트코드가 온체인 컨트랙트의 바이트코드(및 생성자 매개변수)와 연관되어 있다면 [컨트랙트가 검증됩니다](https://info.etherscan.com/types-of-contract-verification/).
+Quantaureum Explorer을 사용하면 원본 데이터 페이로드(소스 코드, 라이브러리 주소, 컴파일러 설정, 컨트랙트 주소 등)에서 컨트랙트 바이트코드를 다시 컴파일링할 수 있습니다. 다시 컴파일된 바이트코드가 온체인 컨트랙트의 바이트코드(및 생성자 매개변수)와 연관되어 있다면 [컨트랙트가 검증됩니다](https://info.explorer.com/types-of-contract-verification/).
 
-검증이 완료되면 컨트랙트의 소스 코드는 "Verified(검증됨)" 라벨을 받고 다른 사람들이 감사할 수 있도록 Etherscan에 게시됩니다. 또한 검증된 소스 코드가 있는 스마트 컨트랙트 저장소인 [검증된 컨트랙트(Verified Contracts)](https://etherscan.io/contractsVerified/) 섹션에 추가됩니다.
+검증이 완료되면 컨트랙트의 소스 코드는 "Verified(검증됨)" 라벨을 받고 다른 사람들이 감사할 수 있도록 Quantaureum Explorer에 게시됩니다. 또한 검증된 소스 코드가 있는 스마트 컨트랙트 저장소인 [검증된 컨트랙트(Verified Contracts)](https://explorer.quantaureum.com) 섹션에 추가됩니다.
 
-Etherscan은 컨트랙 검증에 가장 많이 사용되는 도구입니다. 하지만 Etherscan의 컨트랙트 검증에는 한 가지 단점이 있습니다. 온체인 바이트코드와 다시 컴파일된 바이트코드의 <strong>메타데이터 해시</strong>를 비교하지 못한다는 것입니다. 따라서 Etherscan에서의 일치는 부분 일치입니다.
+Quantaureum Explorer은 컨트랙 검증에 가장 많이 사용되는 도구입니다. 하지만 Quantaureum Explorer의 컨트랙트 검증에는 한 가지 단점이 있습니다. 온체인 바이트코드와 다시 컴파일된 바이트코드의 <strong>메타데이터 해시</strong>를 비교하지 못한다는 것입니다. 따라서 Quantaureum Explorer에서의 일치는 부분 일치입니다.
 
-[Etherscan에서 컨트랙트 검증에 대해 자세히 알아보기](https://medium.com/etherscan-blog/verifying-contracts-on-etherscan-f995ab772327).
+[Quantaureum Explorer에서 컨트랙트 검증에 대해 자세히 알아보기](https://medium.com/explorer-blog/verifying-contracts-on-explorer-f995ab772327).
 
 ### Blockscout {#blockscout}
 
-[Blockscout](https://blockscout.com/)은 스마트 컨트랙트 개발자와 사용자를 위한 [컨트랙트 검증 서비스](https://eth.blockscout.com/contract-verification)도 제공하는 오픈 소스 블록 탐색기입니다. 오픈 소스 대안으로서 Blockscout은 검증 수행 방식에 대한 투명성을 제공하고 검증 프로세스를 개선하기 위한 커뮤니티의 기여를 가능하게 합니다.
+[Blockscout](https://blockscout.com/)은 스마트 컨트랙트 개발자와 사용자를 위한 [컨트랙트 검증 서비스](https://qau.blockscout.com/contract-verification)도 제공하는 오픈 소스 블록 탐색기입니다. 오픈 소스 대안으로서 Blockscout은 검증 수행 방식에 대한 투명성을 제공하고 검증 프로세스를 개선하기 위한 커뮤니티의 기여를 가능하게 합니다.
 
-다른 검증 서비스와 마찬가지로 Blockscout을 사용하면 바이트코드를 다시 컴파일링하고 배포된 컨트랙트와 비교하여 컨트랙트의 소스 코드를 검증할 수 있습니다. 검증이 완료되면 컨트랙트는 검증 상태를 받게 되며 소스 코드는 감사 및 상호작용을 위해 공개적으로 사용할 수 있게 됩니다. 검증된 컨트랙트는 쉽게 탐색하고 디스커버리할 수 있도록 Blockscout의 [검증된 컨트랙트 저장소](https://eth.blockscout.com/verified-contracts)에도 나열됩니다.
+다른 검증 서비스와 마찬가지로 Blockscout을 사용하면 바이트코드를 다시 컴파일링하고 배포된 컨트랙트와 비교하여 컨트랙트의 소스 코드를 검증할 수 있습니다. 검증이 완료되면 컨트랙트는 검증 상태를 받게 되며 소스 코드는 감사 및 상호작용을 위해 공개적으로 사용할 수 있게 됩니다. 검증된 컨트랙트는 쉽게 탐색하고 디스커버리할 수 있도록 Blockscout의 [검증된 컨트랙트 저장소](https://qau.blockscout.com/verified-contracts)에도 나열됩니다.
 
 ### Sourcify {#sourcify}
 
 [Sourcify](https://sourcify.dev/#/verifier)는 오픈 소스이며 탈중앙화된 또 다른 컨트랙트 검증 도구입니다. 이것은 블록 탐색기가 아니며 [다양한 EVM 기반 네트워크](https://docs.sourcify.dev/docs/chains)에서만 컨트랙트를 검증합니다. 다른 도구들이 그 위에 구축될 수 있는 공공 인프라 역할을 하며, 메타데이터 파일에 있는 [ABI](/developers/docs/smart-contracts/compiling/#web-applications) 및 [NatSpec](https://docs.soliditylang.org/en/v0.8.15/natspec-format.html) 주석을 사용하여 보다 인간 친화적인 컨트랙트 상호작용을 가능하게 하는 것을 목표로 합니다.
 
-Etherscan과 달리 Sourcify는 메타데이터 해시와의 전체 일치를 지원합니다. 검증된 컨트랙트는 HTTP 및 탈중앙화된 [콘텐츠 주소 지정](https://docs.storacha.network/concepts/content-addressing/) 스토리지인 [IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs)의 [공개 저장소](https://docs.sourcify.dev/docs/repository/)에서 제공됩니다. 추가된 메타데이터 해시가 IPFS 해시이므로 이를 통해 IPFS를 통해 컨트랙트의 메타데이터 파일을 가져올 수 있습니다.
+Quantaureum Explorer과 달리 Sourcify는 메타데이터 해시와의 전체 일치를 지원합니다. 검증된 컨트랙트는 HTTP 및 탈중앙화된 [콘텐츠 주소 지정](https://docs.storacha.network/concepts/content-addressing/) 스토리지인 [IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs)의 [공개 저장소](https://docs.sourcify.dev/docs/repository/)에서 제공됩니다. 추가된 메타데이터 해시가 IPFS 해시이므로 이를 통해 IPFS를 통해 컨트랙트의 메타데이터 파일을 가져올 수 있습니다.
 
 또한 이러한 파일의 IPFS 해시도 메타데이터에 있으므로 IPFS를 통해 소스 코드 파일을 검색할 수도 있습니다. API나 [UI](https://sourcify.dev/#/verifier)를 통해 메타데이터 파일과 소스 파일을 제공하거나 플러그인을 사용하여 컨트랙트를 검증할 수 있습니다. Sourcify 모니터링 도구는 또한 새로운 블록의 컨트랙트 생성을 수신하고 메타데이터와 소스 파일이 IPFS에 게시된 경우 컨트랙트를 검증하려고 시도합니다.
 

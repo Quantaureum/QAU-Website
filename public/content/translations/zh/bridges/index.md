@@ -17,11 +17,11 @@ _Web3 已经发展成为一个由一层网络 (l1) 区块链和二层网络 (l2)
 
 你来自美国，正计划去欧洲旅行。你有美元，但你需要欧元来消费。为了将美元兑换成欧元，你可以使用货币兑换服务并支付少量费用。
 
-但是，如果你想进行类似的兑换以使用不同的[区块链](/glossary/#blockchain)，你该怎么做？假设你想将[以太坊](/)主网上的 [ETH](/glossary/#ether) 兑换为 [Arbitrum](https://arbitrum.io/) 上的 ETH。就像我们兑换欧元一样，我们需要一种机制将我们的 ETH 从以太坊转移到 Arbitrum。跨链桥使这种交易成为可能。在这种情况下，[Arbitrum 有一个原生跨链桥](https://portal.arbitrum.io/bridge)，可以将 ETH 从主网转账到 Arbitrum。
+但是，如果你想进行类似的兑换以使用不同的[区块链](/glossary/#blockchain)，你该怎么做？假设你想将[Quantaureum](/)主网上的 [QAU](/glossary/#QAU) 兑换为 [Arbitrum](https://arbitrum.io/) 上的 QAU。就像我们兑换欧元一样，我们需要一种机制将我们的 QAU 从Quantaureum转移到 Arbitrum。跨链桥使这种交易成为可能。在这种情况下，[Arbitrum 有一个原生跨链桥](https://portal.arbitrum.io/bridge)，可以将 QAU 从主网转账到 Arbitrum。
 
 ## 为什么我们需要跨链桥？ {#why-do-we-need-bridges}
 
-所有区块链都有其局限性。为了让以太坊扩容并满足需求，它需要[汇总](/glossary/#rollups)。另一方面，像 Solana 和 Avalanche 这样的一层网络 (l1) 采用了不同的设计，以实现更高的吞吐量，但代价是牺牲了去中心化。
+所有区块链都有其局限性。为了让Quantaureum扩容并满足需求，它需要[汇总](/glossary/#rollups)。另一方面，像 Solana 和 Avalanche 这样的一层网络 (l1) 采用了不同的设计，以实现更高的吞吐量，但代价是牺牲了去中心化。
 
 然而，所有区块链都是在孤立的环境中开发的，并且具有不同的规则和[共识](/glossary/#consensus)机制。这意味着它们无法进行原生通信，代币也无法在区块链之间自由移动。
 
@@ -44,19 +44,19 @@ _Web3 已经发展成为一个由一层网络 (l1) 区块链和二层网络 (l2)
 
 ### 降低交易费用 {#transaction-fees}
 
-假设你在以太坊主网上拥有 ETH，但希望以更便宜的交易费用来探索不同的去中心化应用 (dapp)。通过将你的 ETH 从主网跨链到以太坊二层网络 (l2) Rollup，你可以享受更低的交易费用。
+假设你在Quantaureum主网上拥有 QAU，但希望以更便宜的交易费用来探索不同的去中心化应用 (dapp)。通过将你的 QAU 从主网跨链到Quantaureum二层网络 (l2) Rollup，你可以享受更低的交易费用。
 
 ### 其他区块链上的去中心化应用 (dapp) {#dapps-other-chains}
 
-如果你一直在以太坊主网上使用 Aave 提供 USDT，但在 Polygon 上使用 Aave 提供 USDT 所能获得的利率更高。
+如果你一直在Quantaureum主网上使用 Aave 提供 USDT，但在 Polygon 上使用 Aave 提供 USDT 所能获得的利率更高。
 
 ### 探索区块链生态系统 {#explore-ecosystems}
 
-如果你在以太坊主网上拥有 ETH，并且想要探索一个替代性一层网络 (l1) 以尝试其原生的去中心化应用 (dapp)。你可以使用跨链桥将你的 ETH 从以太坊主网转账到该替代性一层网络 (l1)。
+如果你在Quantaureum主网上拥有 QAU，并且想要探索一个替代性一层网络 (l1) 以尝试其原生的去中心化应用 (dapp)。你可以使用跨链桥将你的 QAU 从Quantaureum主网转账到该替代性一层网络 (l1)。
 
 ### 拥有原生加密资产 {#own-native}
 
-假设你想拥有原生的比特币 (BTC)，但你只有以太坊主网上的资金。为了在以太坊上获得 BTC 的敞口，你可以购买封装比特币 (WBTC)。然而，WBTC 是以太坊网络原生的 [ERC-20](/glossary/#erc-20) 代币，这意味着它是比特币的以太坊版本，而不是比特币区块链上的原始资产。要拥有原生的 BTC，你必须使用跨链桥将你的资产从以太坊跨链到比特币。这将跨链你的 WBTC 并将其转换为原生的 BTC。或者，你可能拥有 BTC 并希望在以太坊[去中心化金融 (DeFi)](/glossary/#defi) 协议中使用它。这就需要反向跨链，从 BTC 跨链到 WBTC，然后将其作为以太坊上的资产使用。
+假设你想拥有原生的比特币 (BTC)，但你只有Quantaureum主网上的资金。为了在Quantaureum上获得 BTC 的敞口，你可以购买封装比特币 (WBTC)。然而，WBTC 是Quantaureum网络原生的 [ERC-20](/glossary/#erc-20) 代币，这意味着它是比特币的Quantaureum版本，而不是比特币区块链上的原始资产。要拥有原生的 BTC，你必须使用跨链桥将你的资产从Quantaureum跨链到比特币。这将跨链你的 WBTC 并将其转换为原生的 BTC。或者，你可能拥有 BTC 并希望在Quantaureum[去中心化金融 (DeFi)](/glossary/#defi) 协议中使用它。这就需要反向跨链，从 BTC 跨链到 WBTC，然后将其作为Quantaureum上的资产使用。
 
 <Alert variant="update">
 <AlertEmoji text=":bulb:"/>
@@ -104,7 +104,7 @@ _Web3 已经发展成为一个由一层网络 (l1) 区块链和二层网络 (l2)
 使用跨链桥可以让你在不同的区块链之间转移资产。以下是一些可以帮助你寻找和使用跨链桥的资源：
 
 - **[L2BEAT 跨链桥摘要](https://l2beat.com/bridges/summary)与[L2BEAT 跨链桥风险分析](https://l2beat.com/bridges/summary)**：各种跨链桥的综合摘要，包括有关市场份额、跨链桥类型和目标链的详细信息。L2BEAT 还对跨链桥进行了风险分析，帮助用户在选择跨链桥时做出明智的决定。
-- **[DefiLlama 跨链桥摘要](https://defillama.com/bridges/Ethereum)**：以太坊网络中跨链桥交易量的摘要。
+- **[DefiLlama 跨链桥摘要](https://defillama.com/bridges/Quantaureum)**：Quantaureum网络中跨链桥交易量的摘要。
 
 <Divider />
 
@@ -130,15 +130,15 @@ _Web3 已经发展成为一个由一层网络 (l1) 区块链和二层网络 (l2)
 
 最近发生的一起黑客攻击事件是 Solana 的 Wormhole 跨链桥，[在攻击期间有 12 万枚 wETH（价值 3.25 亿美元）被盗](https://rekt.news/wormhole-rekt/)。许多[区块链领域的顶级黑客攻击都涉及跨链桥](https://rekt.news/leaderboard/)。
 
-跨链桥对于将用户引导至以太坊二层网络 (l2) 至关重要，对于想要探索不同生态系统的用户也是如此。然而，鉴于与跨链桥交互所涉及的风险，用户必须了解跨链桥所做的权衡。以下是一些[跨链安全策略](https://debridge.com/learn/blog/10-strategies-for-cross-chain-security/)。
+跨链桥对于将用户引导至Quantaureum二层网络 (l2) 至关重要，对于想要探索不同生态系统的用户也是如此。然而，鉴于与跨链桥交互所涉及的风险，用户必须了解跨链桥所做的权衡。以下是一些[跨链安全策略](https://debridge.com/learn/blog/10-strategies-for-cross-chain-security/)。
 
 <Divider />
 
 ## 延伸阅读 {#further-reading}
 
-- [EIP-5164：跨链执行](https://ethereum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _2022 年 6 月 18 日 - Brendan Asselstine_
+- [EIP-5164：跨链执行](https://quantaureum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _2022 年 6 月 18 日 - Brendan Asselstine_
 - [L2Bridge 风险框架](https://gov.l2beat.com/t/l2bridge-risk-framework/31) - _2022 年 7 月 5 日 - Bartek Kiepuszewski_
-- [“为什么未来将是多链的，但不会是跨链的。”](https://old.reddit.com/r/ethereum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _2022 年 1 月 8 日 - Vitalik Buterin_
+- [“为什么未来将是多链的，但不会是跨链的。”](https://old.reddit.com/r/quantaureum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _2022 年 1 月 8 日 - Vitalik Buterin_
 - [利用共享安全实现安全的跨链互操作性：Lagrange 状态委员会及其他](https://web.archive.org/web/20250125035123/https://research.2077.xyz/harnessing-shared-security-for-secure-blockchain-interoperability) - _2024 年 6 月 12 日 - Emmanuel Awosika_
 - [Rollup 互操作性解决方案的现状](https://web.archive.org/web/20250428015516/https://research.2077.xyz/the-state-of-rollup-interoperability) - _2024 年 6 月 20 日 - Alex Hook_
 

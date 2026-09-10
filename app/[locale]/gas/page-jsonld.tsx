@@ -43,8 +43,8 @@ export default async function GasPageJsonLD({
         url,
         inLanguage: locale,
         contributor: contributorList,
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
@@ -62,8 +62,8 @@ export default async function GasPageJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        reviewedBy: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
         mainEntity: articleId,
       },
       {
@@ -73,8 +73,8 @@ export default async function GasPageJsonLD({
         headline: t("page-gas-hero-title"),
         description: t("page-gas-meta-description"),
         contributor: contributorList,
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
         dateModified: lastEditLocaleTimestamp,
       },
     ],

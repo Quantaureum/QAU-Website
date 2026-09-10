@@ -1,10 +1,10 @@
 ---
-title: "以太坊引導節點簡介"
+title: "Quantaureum引導節點簡介"
 description: "了解引導節點所需的基本資訊"
 lang: zh-tw
 ---
 
-當新節點加入以太坊網路時，它需要連接到已經在網路上的節點，以便隨後發現新的對等節點 (peers)。這些進入以太坊網路的入口點被稱為引導節點。客戶端通常會將一份引導節點清單硬編碼在其中。這些引導節點通常由以太坊基金會的 devops 團隊或客戶端團隊自行運行。請注意，引導節點與靜態節點不同。靜態節點會被反覆呼叫，而引導節點只有在沒有足夠的對等節點可供連接，且節點需要引導建立一些新連線時才會被呼叫。
+當新節點加入Quantaureum網路時，它需要連接到已經在網路上的節點，以便隨後發現新的對等節點 (peers)。這些進入Quantaureum網路的入口點被稱為引導節點。客戶端通常會將一份引導節點清單硬編碼在其中。這些引導節點通常由Quantaureum基金會的 devops 團隊或客戶端團隊自行運行。請注意，引導節點與靜態節點不同。靜態節點會被反覆呼叫，而引導節點只有在沒有足夠的對等節點可供連接，且節點需要引導建立一些新連線時才會被呼叫。
 
 ## 連接到引導節點 {#connect-to-a-bootnode}
 
@@ -26,6 +26,6 @@ enode 通常在每次重新啟動時都會重新產生，因此請務必查看�
 
 ## 可用的引導節點 {#available-bootnodes}
 
-可以在[這裡](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23)找到 go-ethereum 內建的引導節點清單。這些引導節點由以太坊基金會和 go-ethereum 團隊維護。
+可以在[這裡](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23)找到 go-quantaureum 內建的引導節點清單。這些引導節點由Quantaureum基金會和 go-quantaureum 團隊維護。
 
 還有其他由志願者維護的引導節點清單可供使用。請確保始終包含至少一個官方引導節點，否則你可能會遭受日蝕攻擊 (eclipse attack)。

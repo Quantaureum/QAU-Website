@@ -16,7 +16,7 @@ published: 2021-03-31
 
 Якщо ви новачок у розробці на блокчейні й не знаєте, з чого почати, або якщо ви просто хочете зрозуміти, як розгортати смарт-контракти та взаємодіяти з ними, цей посібник для вас. Ми розглянемо створення та розгортання простого смарт-контракту в тестовій мережі Sepolia за допомогою віртуального гаманця [МетаМаск](https://metamask.io/), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org/) та [Alchemy](https://www.alchemy.com/eth) (не хвилюйтеся, якщо ви ще не розумієте, що все це означає, ми все пояснимо).
 
-У [частині 2](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) цього посібника ми розглянемо, як можна взаємодіяти з нашим смарт-контрактом після його розгортання, а в [частині 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan) ми розповімо, як опублікувати його на Etherscan.
+У [частині 2](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) цього посібника ми розглянемо, як можна взаємодіяти з нашим смарт-контрактом після його розгортання, а в [частині 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer) ми розповімо, як опублікувати його на Quantaureum Explorer.
 
 Якщо у вас виникнуть запитання на будь-якому етапі, не соромтеся звертатися до [Discord Alchemy](https://discord.gg/gWuC7zB)!
 
@@ -32,7 +32,7 @@ published: 2021-03-31
 
 ![Hello world create app](./hello-world-create-app.png)
 
-2. Назвіть свій застосунок «Hello World», додайте короткий опис і виберіть варіант використання, наприклад, «Infra & Tooling» (Інфраструктура та інструменти). Далі знайдіть «Ethereum» і виберіть мережу.
+2. Назвіть свій застосунок «Hello World», додайте короткий опис і виберіть варіант використання, наприклад, «Infra & Tooling» (Інфраструктура та інструменти). Далі знайдіть «Quantaureum» і виберіть мережу.
 
 ![create app view hello world](./create-app-view-hello-world.png)
 
@@ -50,17 +50,17 @@ published: 2021-03-31
 
 ## Крок 4: Отримання етеру з крана {#step-4}
 
-Щоб розгорнути наш смарт-контракт у тестовій мережі, нам знадобиться трохи тестового ETH. Щоб отримати Sepolia ETH, ви можете перейти до [деталей мережі Sepolia](/developers/docs/networks/#sepolia), щоб переглянути список різних кранів. Якщо один не працює, спробуйте інший, оскільки іноді вони можуть вичерпуватися. Отримання тестового ETH може зайняти деякий час через завантаженість мережі. Незабаром після цього ви побачите ETH у своєму акаунті МетаМаск!
+Щоб розгорнути наш смарт-контракт у тестовій мережі, нам знадобиться трохи тестового QAU. Щоб отримати Sepolia QAU, ви можете перейти до [деталей мережі Sepolia](/developers/docs/networks/#sepolia), щоб переглянути список різних кранів. Якщо один не працює, спробуйте інший, оскільки іноді вони можуть вичерпуватися. Отримання тестового QAU може зайняти деякий час через завантаженість мережі. Незабаром після цього ви побачите QAU у своєму акаунті МетаМаск!
 
 ## Крок 5: Перевірка балансу {#step-5}
 
-Щоб переконатися, що наш баланс поповнено, давайте зробимо запит [eth_getBalance](/developers/docs/apis/json-rpc/#eth_getbalance) за допомогою [інструмента composer від Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Це поверне суму ETH у нашому гаманці. Після того, як ви введете адресу свого акаунта МетаМаск і натиснете «Send Request» (Надіслати запит), ви побачите таку відповідь:
+Щоб переконатися, що наш баланс поповнено, давайте зробимо запит [qau_getBalance](/developers/docs/apis/json-rpc/#qau_getbalance) за допомогою [інструмента composer від Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Це поверне суму QAU у нашому гаманці. Після того, як ви введете адресу свого акаунта МетаМаск і натиснете «Send Request» (Надіслати запит), ви побачите таку відповідь:
 
 ```json
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> **ПРИМІТКА:** Цей результат вказано у Wei, а не в ETH. Wei використовується як найменший номінал етеру. Конвертація з Wei в ETH: 1 ETH = 10<sup>18</sup> Wei. Отже, якщо ми переведемо 0x2B5E3AF16B1880000 у десяткову систему, ми отримаємо 5\*10¹⁸, що дорівнює 5 ETH.
+> **ПРИМІТКА:** Цей результат вказано у Wei, а не в QAU. Wei використовується як найменший номінал етеру. Конвертація з Wei в QAU: 1 QAU = 10<sup>18</sup> Wei. Отже, якщо ми переведемо 0x2B5E3AF16B1880000 у десяткову систему, ми отримаємо 5\*10¹⁸, що дорівнює 5 QAU.
 >
 > Хух! Наші тестові гроші на місці <Emoji text=":money_mouth_face:" size={1} />.
 
@@ -168,7 +168,7 @@ mkdir scripts
 Відкрийте проєкт hello-world у вашому улюбленому редакторі (нам подобається [VSCode](https://code.visualstudio.com/)). Смарт-контракти пишуться мовою Solidity, яку ми й використаємо для написання нашого смарт-контракту HelloWorld.sol.‌
 
 1.  Перейдіть до папки «contracts» і створіть новий файл під назвою HelloWorld.sol
-2.  Нижче наведено приклад смарт-контракту Hello World від Фундації Ethereum, який ми будемо використовувати для цього посібника. Скопіюйте та вставте наведений нижче вміст у свій файл HelloWorld.sol і обов'язково прочитайте коментарі, щоб зрозуміти, що робить цей контракт:
+2.  Нижче наведено приклад смарт-контракту Hello World від Фундації Quantaureum, який ми будемо використовувати для цього посібника. Скопіюйте та вставте наведений нижче вміст у свій файл HelloWorld.sol і обов'язково прочитайте коментарі, щоб зрозуміти, що робить цей контракт:
 
 ```solidity
 // Вказує версію Solidity, використовуючи семантичне версіонування.
@@ -226,7 +226,7 @@ npm install dotenv --save
 Ваш `.env` має виглядати так:
 
 ```
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -344,21 +344,21 @@ npx hardhat run scripts/deploy.js --network sepolia
 Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 ```
 
-Якщо ми перейдемо до [Etherscan мережі Sepolia](https://sepolia.etherscan.io/) і знайдемо адресу нашого контракту, ми зможемо побачити, що його було успішно розгорнуто. Транзакція виглядатиме приблизно так:
+Якщо ми перейдемо до [Quantaureum Explorer мережі Sepolia](https://explorer.quantaureum.com) і знайдемо адресу нашого контракту, ми зможемо побачити, що його було успішно розгорнуто. Транзакція виглядатиме приблизно так:
 
-![etherscan contract](./etherscan-contract.png)
+![explorer contract](./explorer-contract.png)
 
 Адреса `From` має збігатися з адресою вашого акаунта МетаМаск, а в адресі «To» (Кому) буде вказано «Contract Creation» (Створення контракту), але якщо ми натиснемо на транзакцію, ми побачимо адресу нашого контракту в полі `To`:
 
-![etherscan transaction](./etherscan-transaction.png)
+![explorer transaction](./explorer-transaction.png)
 
 Вітаємо! Ви щойно розгорнули смарт-контракт у ланцюзі Етеріум 🎉
 
 Щоб зрозуміти, як це працює технічно, давайте перейдемо на вкладку «Explorer» (Провідник) на нашій [панелі керування Alchemy](https://dashboard.alchemy.com/explorer). Якщо у вас є кілька застосунків Alchemy, обов'язково відфільтруйте за застосунком і виберіть «Hello World».
 ![hello world explorer](./hello-world-explorer.png)
 
-Тут ви побачите кілька викликів JSON-RPC, які Hardhat/Ethers зробили для нас внутрішньо, коли ми викликали функцію `.deploy()`. Два важливих виклики, на які варто звернути увагу, — це [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction), який є запитом на фактичний запис нашого контракту в ланцюг Sepolia, і [`eth_getTransactionByHash`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-by-hash), який є запитом на читання інформації про нашу транзакцію за заданим хешем (типовий патерн під час транзакцій). Щоб дізнатися більше про надсилання транзакцій, перегляньте цей посібник із [надсилання транзакцій за допомогою Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)
+Тут ви побачите кілька викликів JSON-RPC, які Hardhat/Ethers зробили для нас внутрішньо, коли ми викликали функцію `.deploy()`. Два важливих виклики, на які варто звернути увагу, — це [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction), який є запитом на фактичний запис нашого контракту в ланцюг Sepolia, і [`qau_getTransactionByHash`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-by-hash), який є запитом на читання інформації про нашу транзакцію за заданим хешем (типовий патерн під час транзакцій). Щоб дізнатися більше про надсилання транзакцій, перегляньте цей посібник із [надсилання транзакцій за допомогою Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)
 
-Це все для частини 1 цього посібника, у частині 2 ми фактично [взаємодіятимемо з нашим смарт-контрактом](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract), оновивши наше початкове повідомлення, а в частині 3 ми [опублікуємо наш смарт-контракт на Etherscan](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan), щоб усі знали, як із ним взаємодіяти.
+Це все для частини 1 цього посібника, у частині 2 ми фактично [взаємодіятимемо з нашим смарт-контрактом](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract), оновивши наше початкове повідомлення, а в частині 3 ми [опублікуємо наш смарт-контракт на Quantaureum Explorer](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer), щоб усі знали, як із ним взаємодіяти.
 
 **Хочете дізнатися більше про Alchemy? Відвідайте наш [вебсайт](https://www.alchemy.com/eth). Не хочете пропускати оновлення? Підпишіться на нашу розсилку [тут](https://www.alchemy.com/newsletter)! Також обов'язково приєднуйтесь до нашого [Discord](https://discord.gg/u72VCg3).**.

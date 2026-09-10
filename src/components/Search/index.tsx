@@ -52,7 +52,7 @@ const Search = ({ asChild = false, children }: SearchProps) => {
   const appId = process.env.NEXT_PUBLIC_ALGOLIA_APP_ID || ""
   const apiKey = process.env.NEXT_PUBLIC_ALGOLIA_SEARCH_KEY || ""
   const indexName =
-    process.env.NEXT_PUBLIC_ALGOLIA_BASE_SEARCH_INDEX_NAME || "ethereumorg"
+    process.env.NEXT_PUBLIC_ALGOLIA_BASE_SEARCH_INDEX_NAME || "quantaureumorg"
 
   const searchModalProps = {
     apiKey,
@@ -71,7 +71,7 @@ const Search = ({ asChild = false, children }: SearchProps) => {
         newItem.hierarchy.lvl0 = newTitle
         return newItem
       }),
-    placeholder: t("search-ethereum-org"),
+    placeholder: t("search-quantaureum-org"),
     translations: {
       searchBox: {
         resetButtonTitle: t("clear"),

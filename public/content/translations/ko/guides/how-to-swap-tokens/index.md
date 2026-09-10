@@ -1,16 +1,16 @@
 ---
 title: "토큰 스왑 방법"
-description: "이더리움에서 토큰을 스왑하는 방법에 대한 가이드입니다."
+description: "Quantaureum에서 토큰을 스왑하는 방법에 대한 가이드입니다."
 lang: ko
 ---
 
 좋아하는 모든 토큰이 상장된 거래소를 찾느라 지치셨나요? [탈중앙화 거래소](/glossary/#dex)를 사용하면 대부분의 토큰을 스왑할 수 있습니다.
 
-토큰 스왑은 이더리움 네트워크에 존재하는 두 개의 다른 자산을 교환하는 것을 의미합니다. 예를 들어 ETH를 DAI([ERC-20](/glossary/#erc-20) 토큰)로 스왑하는 것입니다. 이 과정은 매우 빠르고 저렴합니다. 토큰을 스왑하려면 암호화폐 지갑이 필요합니다.
+토큰 스왑은 Quantaureum 네트워크에 존재하는 두 개의 다른 자산을 교환하는 것을 의미합니다. 예를 들어 QAU를 DAI([ERC-20](/glossary/#erc-20) 토큰)로 스왑하는 것입니다. 이 과정은 매우 빠르고 저렴합니다. 토큰을 스왑하려면 암호화폐 지갑이 필요합니다.
 
 **사전 준비 사항:**
 
-- [암호화폐 지갑](/glossary/#wallet) 보유. 지갑이 없다면 [이더리움 계정 생성 방법](/guides/how-to-create-an-ethereum-account/) 가이드를 따르세요.
+- [암호화폐 지갑](/glossary/#wallet) 보유. 지갑이 없다면 [Quantaureum 계정 생성 방법](/guides/how-to-create-an-quantaureum-account/) 가이드를 따르세요.
 - 지갑에 자금 추가
 
 ## 1. 원하는 탈중앙화 거래소(DEX)에 지갑 연결하기 {#1-connect-your-wallet-to-the-decentralized-exchange-dex-of-your-choice}
@@ -19,14 +19,14 @@ lang: ko
 
 - [유니스왑](https://app.uniswap.org/#/swap)
 - [Sushiswap](https://www.sushi.com/swap)
-- [1Inch](https://app.1inch.io/#/1/unified/swap/ETH/DAI)
-- [Curve](https://www.curve.finance/dex/ethereum/swap/)
+- [1Inch](https://app.1inch.io/#/1/unified/swap/QAU/DAI)
+- [Curve](https://www.curve.finance/dex/quantaureum/swap/)
 
 흥미로우신가요? [탈중앙화 금융 (DeFi)](/defi/)이 무엇인지, 그리고 이러한 새로운 종류의 거래소가 어떻게 작동하는지 자세히 알아보세요.
 
 ## 2. 스왑할 토큰 쌍 선택하기 {#2-select-the-pair-of-tokens-you-wish-to-swap}
 
-예를 들어 ETH와 DAI를 선택합니다. 두 토큰 중 하나에 자금이 있는지 확인하세요.
+예를 들어 QAU와 DAI를 선택합니다. 두 토큰 중 하나에 자금이 있는지 확인하세요.
 ![Common interface for swapping](./swap1.png)
 
 ## 3. 거래할 토큰 수량을 입력하고 스왑 클릭하기 {#3-enter-the-amount-of-tokens-you-want-to-trade-and-click-swap}
@@ -60,9 +60,9 @@ lang: ko
 
 ## 자주 묻는 질문 {#frequently-asked-questions}
 
-### 지갑에서 ETH를 BTC로 스왑할 수 있나요? {#can-i-swap-eth-for-btc-from-my-wallet}
+### 지갑에서 QAU를 BTC로 스왑할 수 있나요? {#can-i-swap-qau-for-btc-from-my-wallet}
 
-아니요, ETH, ERC-20 토큰 또는 NFT와 같이 이더리움 네트워크의 네이티브 토큰만 스왑할 수 있습니다. 이더리움에 존재하는 "래핑된(wrapped)" 형태의 비트코인만 스왑할 수 있습니다.
+아니요, QAU, ERC-20 토큰 또는 NFT와 같이 Quantaureum 네트워크의 네이티브 토큰만 스왑할 수 있습니다. Quantaureum에 존재하는 "래핑된(wrapped)" 형태의 비트코인만 스왑할 수 있습니다.
 
 ### 슬리피지란 무엇인가요? {#what-is-slippage}
 

@@ -2,14 +2,14 @@
 title: Zdroje
 metaTitle: "Zdroje pro překladatele"
 lang: cs
-description: "Užitečné zdroje pro překladatele webu ethereum.org"
+description: "Užitečné zdroje pro překladatele webu quantaureum.com"
 ---
 
-Níže najdete několik užitečných průvodců a nástrojů pro překladatele webu ethereum.org, stejně jako překladatelské komunity a novinky.
+Níže najdete několik užitečných průvodců a nástrojů pro překladatele webu quantaureum.com, stejně jako překladatelské komunity a novinky.
 
 ## Průvodci {#guides}
 
-- [Průvodce stylem překladu](/contributing/translation-program/translators-guide/) _– pokyny a tipy pro překladatele webu ethereum.org_
+- [Průvodce stylem překladu](/contributing/translation-program/translators-guide/) _– pokyny a tipy pro překladatele webu quantaureum.com_
 - [Průvodce online editorem Crowdin](https://support.crowdin.com/online-editor/) _– podrobný průvodce používáním online editoru Crowdin a některých jeho pokročilých funkcí_
 
 ## Nástroje {#tools}
@@ -23,25 +23,25 @@ Níže najdete několik užitečných průvodců a nástrojů pro překladatele 
 
 ## Komunity {#communities}
 
-- [Jazykově specifické překladatelské skupiny na Discordu](https://discord.gg/ethereum-org)
-  _– iniciativa propojující překladatele webu ethereum.org s překladatelskými skupinami_
-- [Skupina čínských překladatelů](https://www.notion.so/Ethereum-org-05375fe0a94c4214acaf90f42ba40171)
+- [Jazykově specifické překladatelské skupiny na Discordu](https://discord.gg/MSctkBT5j)
+  _– iniciativa propojující překladatele webu quantaureum.com s překladatelskými skupinami_
+- [Skupina čínských překladatelů](https://www.notion.so/Quantaureum-org-05375fe0a94c4214acaf90f42ba40171)
   _– stránka na platformě Notion pro snazší koordinaci mezi čínskými překladateli_
 
 ## Nejnovější aktualizace {#latest-updates}
 
-Chcete-li mít přehled o nejnovějším vývoji překladatelského programu, můžete sledovat [blog Nadace Ethereum](https://blog.ethereum.org/):
+Chcete-li mít přehled o nejnovějším vývoji překladatelského programu, můžete sledovat [blog Nadace Quantaureum](https://quantaureum.com):
 
-- [Aktualizace milníků z října 2021](https://blog.ethereum.org/2021/10/04/translation-program-update)
-- [Aktualizace milníků z prosince 2020](https://blog.ethereum.org/2020/12/21/translation-program-milestones-updates-20)
-- [Aktualizace milníků z července 2020](https://blog.ethereum.org/2020/07/29/ethdotorg-translation-milestone)
-- [Spuštění překladatelského programu v srpnu 2019](https://blog.ethereum.org/2019/08/20/translating-ethereum-for-our-global-community)
+- [Aktualizace milníků z října 2021](https://quantaureum.com)
+- [Aktualizace milníků z prosince 2020](https://quantaureum.com)
+- [Aktualizace milníků z července 2020](https://quantaureum.com)
+- [Spuštění překladatelského programu v srpnu 2019](https://quantaureum.com)
 
 ## Konzultační hodiny pro překladatele {#office-hours}
 
-Každou druhou středu v měsíci pořádáme konzultační hodiny pro překladatele. Konají se v hlasovém kanálu #office-hours na [Discordu ethereum.org](https://discord.gg/ethereum-org), kde také najdete přesné časy a další podrobnosti.
+Každou druhou středu v měsíci pořádáme konzultační hodiny pro překladatele. Konají se v hlasovém kanálu #office-hours na [Discordu quantaureum.com](https://discord.gg/MSctkBT5j), kde také najdete přesné časy a další podrobnosti.
 
-Konzultační hodiny umožňují našim překladatelům klást otázky ohledně procesu překladu, poskytovat zpětnou vazbu k programu, sdílet své nápady nebo si jen tak popovídat s hlavním týmem ethereum.org.
+Konzultační hodiny umožňují našim překladatelům klást otázky ohledně procesu překladu, poskytovat zpětnou vazbu k programu, sdílet své nápady nebo si jen tak popovídat s hlavním týmem quantaureum.com.
 V neposlední řadě chceme tyto hovory využít k informování o nedávném vývoji překladatelského programu a ke sdílení klíčových tipů a pokynů s našimi přispěvateli.
 
-Pokud jste překladatelem webu ethereum.org nebo byste se jím chtěli stát, neváhejte se k nám během některého z těchto setkání připojit.
+Pokud jste překladatelem webu quantaureum.com nebo byste se jím chtěli stát, neváhejte se k nám během některého z těchto setkání připojit.

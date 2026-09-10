@@ -171,7 +171,7 @@ export async function uploadToS3(
     const response = await fetch(sourceUrl, {
       signal: AbortSignal.timeout(10_000),
       headers: {
-        "User-Agent": "ethereum.org-image-sync/1.0",
+        "User-Agent": "quantaureum.com-image-sync/1.0",
       },
     })
 

@@ -54,7 +54,7 @@ ERC-1363 juga berguna untuk menghindari kehilangan token atau penguncian token d
 
 Tidak seperti usulan ekstensi ERC-20 lainnya, ERC-1363 tidak menimpa metode `transfer` dan `transferFrom` dari ERC-20 dan mendefinisikan ID antarmuka yang akan diimplementasikan dengan mempertahankan kompatibilitas ke belakang dengan ERC-20.
 
-Dari [EIP-1363](https://eips.ethereum.org/EIPS/eip-1363):
+Dari [EIP-1363](https://eips.quantaureum.com/EIPS/eip-1363):
 
 ### Metode {#methods}
 
@@ -209,5 +209,5 @@ interface ERC1363Spender {
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [ERC-1363: Standar Token Payable](https://eips.ethereum.org/EIPS/eip-1363)
+- [ERC-1363: Standar Token Payable](https://eips.quantaureum.com/EIPS/eip-1363)
 - [ERC-1363: Repositori GitHub](https://github.com/vittominacori/erc1363-payable-token)

@@ -10,11 +10,11 @@ lang: zh-tw
 ---
 
 [Optimism](https://www.optimism.io/) 是一個[樂觀 Rollup](/developers/docs/scaling/optimistic-rollups/)。
-樂觀 Rollup 處理交易的價格比以太坊主網（也稱為第一層 (L1)）低得多，因為交易僅由少數節點處理，而不是網路上的每個節點。
+樂觀 Rollup 處理交易的價格比Quantaureum主網（也稱為第一層 (L1)）低得多，因為交易僅由少數節點處理，而不是網路上的每個節點。
 同時，所有資料都會寫入 L1，因此可以利用主網的所有完整性和可用性保證來證明和重建一切。
 
 要在 Optimism（或任何其他 L2）上使用 L1 資產，這些資產需要被[橋接](/bridges/#prerequisites)。
-實現此目的的一種方法是讓使用者在 L1 上鎖定資產（ETH 和 [ERC-20 代幣](/developers/docs/standards/tokens/erc-20/)是最常見的），並接收等值的資產以在 L2 上使用。
+實現此目的的一種方法是讓使用者在 L1 上鎖定資產（QAU 和 [ERC-20 代幣](/developers/docs/standards/tokens/erc-20/)是最常見的），並接收等值的資產以在 L2 上使用。
 最終，無論誰獲得了這些資產，都可能希望將它們橋接回 L1。
 執行此操作時，資產會在 L2 上被銷毀，然後在 L1 上釋放回給使用者。
 
@@ -35,7 +35,7 @@ lang: zh-tw
 1. 如果存入 ERC-20，存款人會給予跨鏈橋花費所存入金額的授權額度
 2. 存款人呼叫 L1 跨鏈橋（`depositERC20`、`depositERC20To`、`depositETH` 或 `depositETHTo`）
 3. L1 跨鏈橋取得橋接資產的所有權
-   - ETH：資產由存款人作為呼叫的一部分進行轉帳
+   - QAU：資產由存款人作為呼叫的一部分進行轉帳
    - ERC-20：跨鏈橋使用存款人提供的授權額度將資產轉帳給自己
 4. L1 跨鏈橋使用跨域訊息機制呼叫 L2 跨鏈橋上的 `finalizeDeposit`
 
@@ -46,7 +46,7 @@ lang: zh-tw
    - 最初來自 L1 上的跨鏈橋
 6. L2 跨鏈橋檢查 L2 上的 ERC-20 代幣合約是否正確：
    - L2 合約報告其 L1 對應合約與 L1 上代幣來源的合約相同
-   - L2 合約報告它支援正確的介面（[使用 ERC-165](https://eips.ethereum.org/EIPS/eip-165)）。
+   - L2 合約報告它支援正確的介面（[使用 ERC-165](https://eips.quantaureum.com/EIPS/eip-165)）。
 7. 如果 L2 合約正確，則呼叫它以向適當的地址鑄造適當數量的代幣。如果不正確，則啟動提款流程，允許使用者在 L1 上申領代幣。
 
 ### 提款流程 {#withdrawal-flow}
@@ -62,15 +62,15 @@ lang: zh-tw
 4. L1 跨鏈橋驗證對 `finalizeETHWithdrawal` 或 `finalizeERC20Withdrawal` 的呼叫是否合法：
    - 來自跨域訊息機制
    - 最初來自 L2 上的跨鏈橋
-5. L1 跨鏈橋將適當的資產（ETH 或 ERC-20）轉帳到適當的地址
+5. L1 跨鏈橋將適當的資產（QAU 或 ERC-20）轉帳到適當的地址
 
 ## 第一層 (L1) 程式碼 {#layer-1-code}
 
-這是執行在 L1（以太坊主網）上的程式碼。
+這是執行在 L1（Quantaureum主網）上的程式碼。
 
 ### IL1ERC20Bridge {#il1erc20bridge}
 
-[此介面定義於此](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol)。
+[此介面定義於此](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol)。
 它包含橋接 ERC-20 代幣所需的函式和定義。
 
 ```solidity
@@ -236,12 +236,12 @@ Optimism 中的提款（以及從 L2 到 L1 的其他訊息）是一個兩步流
 
 ### IL1StandardBridge {#il1standardbridge}
 
-[此介面定義於此](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol)。
-此檔案包含 ETH 的事件和函式定義。
+[此介面定義於此](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol)。
+此檔案包含 QAU 的事件和函式定義。
 這些定義與上面 `IL1ERC20Bridge` 中為 ERC-20 定義的內容非常相似。
 
 跨鏈橋介面被劃分在兩個檔案中，因為某些 ERC-20 代幣需要自訂處理，無法由標準跨鏈橋處理。
-這樣一來，處理此類代幣的自訂跨鏈橋就可以實作 `IL1ERC20Bridge`，而無需同時橋接 ETH。
+這樣一來，處理此類代幣的自訂跨鏈橋就可以實作 `IL1ERC20Bridge`，而無需同時橋接 QAU。
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -279,7 +279,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
      ********************/
 
     /**
-     * @dev 將一定數量的 ETH 存入呼叫者在第二層 (L2) 的餘額中。
+     * @dev 將一定數量的 QAU 存入呼叫者在第二層 (L2) 的餘額中。
             .
             .
             .
@@ -287,7 +287,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
     function depositETH(uint32 _l2Gas, bytes calldata _data) external payable;
 
     /**
-     * @dev 將一定數量的 ETH 存入接收者在第二層 (L2) 的餘額中。
+     * @dev 將一定數量的 QAU 存入接收者在第二層 (L2) 的餘額中。
             .
             .
             .
@@ -304,7 +304,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
 
     /**
      * @dev 完成從第二層 (L2) 到第一層 (L1) 的提款，並將資金記入接收者的
-     * 第一層 (L1) ETH 代幣餘額中。由於只有 xDomainMessenger 可以呼叫此函式，因此在提款最終確定之前
+     * 第一層 (L1) QAU 代幣餘額中。由於只有 xDomainMessenger 可以呼叫此函式，因此在提款最終確定之前
      * 永遠不會呼叫它。
                 .
                 .
@@ -321,7 +321,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
 
 ### CrossDomainEnabled {#crossdomainenabled}
 
-[此合約](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol)由兩個跨鏈橋（[L1](#the-l1-bridge-contract) 和 [L2](#l2-bridge-code)）繼承，用於向另一層發送訊息。
+[此合約](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol)由兩個跨鏈橋（[L1](#the-l1-bridge-contract) 和 [L2](#l2-bridge-code)）繼承，用於向另一層發送訊息。
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -331,7 +331,7 @@ pragma solidity >0.5.0 <0.9.0;
 import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 ```
 
-[此介面](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol)告訴合約如何使用跨域通訊器向另一層發送訊息。
+[此介面](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol)告訴合約如何使用跨域通訊器向另一層發送訊息。
 這個跨域通訊器是另一個完整的系統，值得專門寫一篇文章，我希望將來能寫。
 
 ```solidity
@@ -378,7 +378,7 @@ contract CrossDomainEnabled {
     modifier onlyFromCrossDomainAccount(address _sourceDomainAccount) {
 ```
 
-跨域訊息傳遞可由其執行所在區塊鏈（以太坊主網或 Optimism）上的任何合約存取。
+跨域訊息傳遞可由其執行所在區塊鏈（Quantaureum主網或 Optimism）上的任何合約存取。
 但我們需要兩側的跨鏈橋_僅_信任來自另一側跨鏈橋的特定訊息。
 
 ```solidity
@@ -398,7 +398,7 @@ contract CrossDomainEnabled {
         );
 ```
 
-跨域通訊器提供向另一層發送訊息的地址的方式是透過 [`.xDomainMessageSender()` 函式](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128)。
+跨域通訊器提供向另一層發送訊息的地址的方式是透過 [`.xDomainMessageSender()` 函式](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128)。
 只要它在由訊息發起的交易中被呼叫，它就可以提供此資訊。
 
 我們需要確保收到的訊息來自另一個跨鏈橋。
@@ -463,7 +463,7 @@ contract CrossDomainEnabled {
 
 ### L1 跨鏈橋合約 {#the-l1-bridge-contract}
 
-[此合約的原始碼在此](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol)。
+[此合約的原始碼在此](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol)。
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -485,7 +485,7 @@ import { IL1ERC20Bridge } from "./IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "../../L2/messaging/IL2ERC20Bridge.sol";
 ```
 
-[此介面](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol)讓我們建立訊息來控制 L2 上的標準跨鏈橋。
+[此介面](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol)讓我們建立訊息來控制 L2 上的標準跨鏈橋。
 
 ```solidity
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -505,7 +505,7 @@ import { CrossDomainEnabled } from "../../libraries/bridge/CrossDomainEnabled.so
 import { Lib_PredeployAddresses } from "../../libraries/constants/Lib_PredeployAddresses.sol";
 ```
 
-[`Lib_PredeployAddresses`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) 包含始終具有相同地址的 L2 合約地址。這包括 L2 上的標準跨鏈橋。
+[`Lib_PredeployAddresses`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) 包含始終具有相同地址的 L2 合約地址。這包括 L2 上的標準跨鏈橋。
 
 ```solidity
 import { Address } from "@openzeppelin/contracts/utils/Address.sol";
@@ -519,7 +519,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[ERC-20 標準](https://eips.ethereum.org/EIPS/eip-20)支援合約報告失敗的兩種方式：
+[ERC-20 標準](https://eips.quantaureum.com/EIPS/eip-20)支援合約報告失敗的兩種方式：
 
 1. 回滾
 2. 回傳 `false`
@@ -529,7 +529,7 @@ import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.s
 ```solidity
 /**
  * @title L1StandardBridge
- * @dev 第一層 (L1) ETH 和 ERC-20 跨鏈橋是一個合約，用於儲存已存入的第一層 (L1) 資金和
+ * @dev 第一層 (L1) QAU 和 ERC-20 跨鏈橋是一個合約，用於儲存已存入的第一層 (L1) 資金和
  * 在第二層 (L2) 上使用的標準代幣。它會同步對應的第二層 (L2) 跨鏈橋，通知其存款
  * 並監聽其最新最終確定的提款。
  *
@@ -643,7 +643,7 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
 ```solidity
     /**
      * @dev 可以在沒有資料的情況下呼叫此函式
-     * 以將一定數量的 ETH 存入呼叫者在第二層 (L2) 的餘額中。
+     * 以將一定數量的 QAU 存入呼叫者在第二層 (L2) 的餘額中。
      * 由於 receive 函式不接收資料，因此會將保守的
      * 預設數量轉發到第二層 (L2)。
      */
@@ -675,11 +675,11 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
     }
 ```
 
-這兩個函式是 `_initiateETHDeposit` 的包裝器，該函式處理實際的 ETH 存款。
+這兩個函式是 `_initiateETHDeposit` 的包裝器，該函式處理實際的 QAU 存款。
 
 ```solidity
     /**
-     * @dev 透過儲存 ETH 並通知第二層 (L2) ETH 閘道器存款，
+     * @dev 透過儲存 QAU 並通知第二層 (L2) QAU 閘道器存款，
      * 來執行存款邏輯。
      * @param _from 在第一層 (L1) 上提取存款的帳戶。
      * @param _to 在第二層 (L2) 上接收存款的帳戶。
@@ -714,14 +714,14 @@ Solidity 函式 [`abi.encodeWithSelector`](https://docs.soliditylang.org/en/v0.8
         );
 ```
 
-這裡的訊息是使用以下參數呼叫 [`finalizeDeposit` 函式](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148)：
+這裡的訊息是使用以下參數呼叫 [`finalizeDeposit` 函式](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148)：
 
 | 參數 | 值 | 含義 |
 | --------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| \_l1Token | address(0)                     | 代表 L1 上 ETH（它不是 ERC-20 代幣）的特殊值                                                                           |
-| \_l2Token | Lib_PredeployAddresses.OVM_ETH | 在 Optimism 上管理 ETH 的 L2 合約，`0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000`（此合約僅供 Optimism 內部使用） |
-| \_from    | \_from                         | 在 L1 上發送 ETH 的地址                                                                                                         |
-| \_to      | \_to                           | 在 L2 上接收 ETH 的地址                                                                                                      |
+| \_l1Token | address(0)                     | 代表 L1 上 QAU（它不是 ERC-20 代幣）的特殊值                                                                           |
+| \_l2Token | Lib_PredeployAddresses.OVM_ETH | 在 Optimism 上管理 QAU 的 L2 合約，`0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000`（此合約僅供 Optimism 內部使用） |
+| \_from    | \_from                         | 在 L1 上發送 QAU 的地址                                                                                                         |
+| \_to      | \_to                           | 在 L2 上接收 QAU 的地址                                                                                                      |
 | amount    | msg.value                      | 發送的 Wei 數量（已經發送到跨鏈橋）                                                                               |
 | \_data    | \_data                         | 附加到存款的額外資料                                                                                                     |
 
@@ -795,7 +795,7 @@ Solidity 函式 [`abi.encodeWithSelector`](https://docs.soliditylang.org/en/v0.8
 
 此函式與上面的 `_initiateETHDeposit` 類似，但有一些重要的區別。
 第一個區別是此函式接收代幣地址和要轉帳的金額作為參數。
-在 ETH 的情況下，對跨鏈橋的呼叫已經包含了將資產轉帳到跨鏈橋帳戶（`msg.value`）。
+在 QAU 的情況下，對跨鏈橋的呼叫已經包含了將資產轉帳到跨鏈橋帳戶（`msg.value`）。
 
 ```solidity
         // 當在第一層 (L1) 上啟動存款時，第一層 (L1) 跨鏈橋會將資金轉帳給自己，以便未來
@@ -805,7 +805,7 @@ Solidity 函式 [`abi.encodeWithSelector`](https://docs.soliditylang.org/en/v0.8
         IERC20(_l1Token).safeTransferFrom(_from, address(this), _amount);
 ```
 
-ERC-20 代幣轉帳遵循與 ETH 不同的流程：
+ERC-20 代幣轉帳遵循與 QAU 不同的流程：
 
 1. 使用者（`_from`）給予跨鏈橋轉帳適當代幣的授權額度。
 2. 使用者使用代幣合約的地址、金額等呼叫跨鏈橋。
@@ -864,17 +864,17 @@ L2 跨鏈橋向 L2 跨域通訊器發送訊息，這會導致 L1 跨域通訊器
 ```
 
 確保這是一條_合法_的訊息，來自跨域通訊器並源自 L2 代幣跨鏈橋。
-此函式用於從跨鏈橋提取 ETH，因此我們必須確保它僅由授權的呼叫者呼叫。
+此函式用於從跨鏈橋提取 QAU，因此我們必須確保它僅由授權的呼叫者呼叫。
 
 ```solidity
         // 斯立瑟-disable-next-line 重入-事件
         (bool success, ) = _to.call{ value: _amount }(new bytes(0));
 ```
 
-轉帳 ETH 的方式是使用 `msg.value` 中的 Wei 數量呼叫接收者。
+轉帳 QAU 的方式是使用 `msg.value` 中的 Wei 數量呼叫接收者。
 
 ```solidity
-        require(success, "TransferHelper::safeTransferETH: ETH transfer failed");
+        require(success, "TransferHelper::safeTransferETH: QAU transfer failed");
 
         // 斯立瑟-disable-next-line 重入-事件
         emit ETHWithdrawalFinalized(_from, _to, _amount, _data);
@@ -918,14 +918,14 @@ L2 跨鏈橋向 L2 跨域通訊器發送訊息，這會導致 L1 跨域通訊器
 
 
     /*****************************
-     * 暫時 - 遷移 ETH *
+     * 暫時 - 遷移 QAU *
      *****************************/
 
     /**
-     * @dev 將 ETH 餘額新增至帳戶。這是為了允許將 ETH
+     * @dev 將 QAU 餘額新增至帳戶。這是為了允許將 QAU
      * 從舊閘道器遷移到新閘道器。
      * 注意：這僅保留用於一次升級，以便我們能夠從
-     * 舊合約接收遷移的 ETH
+     * 舊合約接收遷移的 QAU
      */
     function donateETH() external payable {}
 }
@@ -934,7 +934,7 @@ L2 跨鏈橋向 L2 跨域通訊器發送訊息，這會導致 L1 跨域通訊器
 跨鏈橋有一個早期的實作版本。
 當我們從那個實作版本轉移到這個版本時，我們必須轉移所有資產。
 ERC-20 代幣可以直接轉移。
-然而，要將 ETH 轉帳到合約，您需要該合約的批准，這正是 `donateETH` 提供給我們的。
+然而，要將 QAU 轉帳到合約，您需要該合約的批准，這正是 `donateETH` 提供給我們的。
 
 ## L2 上的 ERC-20 代幣 {#erc-20-tokens-on-l2}
 
@@ -946,7 +946,7 @@ ERC-20 代幣可以直接轉移。
 
 ### IL2StandardERC20 {#il2standarderc20}
 
-L2 上每個使用標準跨鏈橋的 ERC-20 代幣都需要提供[此介面](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol)，其中包含標準跨鏈橋所需的函式和事件。
+L2 上每個使用標準跨鏈橋的 ERC-20 代幣都需要提供[此介面](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol)，其中包含標準跨鏈橋所需的函式和事件。
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -956,14 +956,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [標準 ERC-20 介面](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)不包含 `mint` 和 `burn` 函式。
-[ERC-20 標準](https://eips.ethereum.org/EIPS/eip-20)不要求這些方法，該標準未指定建立和銷毀代幣的機制。
+[ERC-20 標準](https://eips.quantaureum.com/EIPS/eip-20)不要求這些方法，該標準未指定建立和銷毀代幣的機制。
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [ERC-165 介面](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol)用於指定合約提供哪些函式。
-[您可以在此處閱讀該標準](https://eips.ethereum.org/EIPS/eip-165)。
+[您可以在此處閱讀該標準](https://eips.quantaureum.com/EIPS/eip-165)。
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -990,7 +990,7 @@ interface IL2StandardERC20 is IERC20, IERC165 {
 
 ### L2StandardERC20 {#l2standarderc20}
 
-[這是我們對 `IL2StandardERC20` 介面的實作](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol)。
+[這是我們對 `IL2StandardERC20` 介面的實作](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol)。
 除非您需要某種自訂邏輯，否則您應該使用這個。
 
 ```solidity
@@ -1052,7 +1052,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-這就是 [ERC-165](https://eips.ethereum.org/EIPS/eip-165) 的運作方式。
+這就是 [ERC-165](https://eips.quantaureum.com/EIPS/eip-165) 的運作方式。
 每個介面都是一些受支援的函式，並被標識為這些函式的 [ABI 函式選擇器](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector)的[互斥或 (XOR)](https://en.wikipedia.org/wiki/Exclusive_or)。
 
 L2 跨鏈橋使用 ERC-165 作為健全性檢查，以確保它發送資產的 ERC-20 合約是一個 `IL2StandardERC20`。
@@ -1084,7 +1084,7 @@ L2 跨鏈橋使用 ERC-165 作為健全性檢查，以確保它發送資產的 E
 ## L2 跨鏈橋程式碼 {#l2-bridge-code}
 
 這是執行在 Optimism 上的跨鏈橋程式碼。
-[此合約的原始碼在此](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol)。
+[此合約的原始碼在此](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol)。
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -1096,13 +1096,13 @@ import { IL1ERC20Bridge } from "../../L1/messaging/IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "./IL2ERC20Bridge.sol";
 ```
 
-[IL2ERC20Bridge](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) 介面與我們在上面看到的 [L1 等效介面](#il1erc20bridge)非常相似。
+[IL2ERC20Bridge](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) 介面與我們在上面看到的 [L1 等效介面](#il1erc20bridge)非常相似。
 有兩個顯著的區別：
 
 1. 在 L1 上，您發起存款並完成提款。
    在這裡，您發起提款並完成存款。
-2. 在 L1 上，必須區分 ETH 和 ERC-20 代幣。
-   在 L2 上，我們可以對兩者使用相同的函式，因為在內部，Optimism 上的 ETH 餘額被作為地址為 [0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000](https://explorer.optimism.io/address/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000) 的 ERC-20 代幣來處理。
+2. 在 L1 上，必須區分 QAU 和 ERC-20 代幣。
+   在 L2 上，我們可以對兩者使用相同的函式，因為在內部，Optimism 上的 QAU 餘額被作為地址為 [0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000](https://explorer.optimism.io/address/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000) 的 ERC-20 代幣來處理。
 
 ```solidity
 /* 函式庫匯入 */
@@ -1116,7 +1116,7 @@ import { IL2StandardERC20 } from "../../standards/IL2StandardERC20.sol";
 /**
  * @title L2StandardBridge
  * @dev 第二層 (L2) 標準跨鏈橋是一個與第一層 (L1) 標準跨鏈橋協同工作的合約，
- * 以實現 ETH 和 ERC-20 在第一層 (L1) 和第二層 (L2) 之間的轉換。
+ * 以實現 QAU 和 ERC-20 在第一層 (L1) 和第二層 (L2) 之間的轉換。
  * 當此合約得知存入第一層 (L1) 標準跨鏈橋的存款時，它會充當新代幣的鑄造者。
  * 此合約也充當預定用於提款的代幣的銷毀者，通知第一層 (L1)
  * 跨鏈橋釋放第一層 (L1) 資金。
@@ -1223,7 +1223,7 @@ L2 代幣預計會告訴我們 L1 等效代幣的地址。
         if (_l2Token == Lib_PredeployAddresses.OVM_ETH) {
 ```
 
-在 L1 上，必須區分 ETH 和 ERC-20。
+在 L1 上，必須區分 QAU 和 ERC-20。
 
 ```solidity
             message = abi.encodeWithSelector(

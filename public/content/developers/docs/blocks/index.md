@@ -1,6 +1,6 @@
 ---
 title: Blocks
-description: An overview of blocks in the Ethereum blockchain – their data structure, why they're needed, and how they're made.
+description: An overview of blocks in the Quantaureum blockchain – their data structure, why they're needed, and how they're made.
 lang: en
 ---
 
@@ -8,31 +8,31 @@ Blocks are batches of transactions with a hash of the previous block in the chai
 
 ## Prerequisites {#prerequisites}
 
-Blocks are a very beginner-friendly topic. But to help you better understand this page, we recommend you first read [Accounts](/developers/docs/accounts/), [Transactions](/developers/docs/transactions/), and our [introduction to Ethereum](/developers/docs/intro-to-ethereum/).
+Blocks are a very beginner-friendly topic. But to help you better understand this page, we recommend you first read [Accounts](/developers/docs/accounts/), [Transactions](/developers/docs/transactions/), and our [introduction to Quantaureum](/developers/docs/intro-to-quantaureum/).
 
 ## Why blocks? {#why-blocks}
 
-To ensure that all participants on the [Ethereum](/) network maintain a synchronized state and agree on the precise history of transactions, we batch transactions into blocks. This means dozens (or hundreds) of transactions are committed, agreed on, and synchronized all at once.
+To ensure that all participants on the [Quantaureum](/) network maintain a synchronized state and agree on the precise history of transactions, we batch transactions into blocks. This means dozens (or hundreds) of transactions are committed, agreed on, and synchronized all at once.
 
 ![A diagram showing transaction in a block causing state changes](./tx-block.png)
-_Diagram adapted from [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagram adapted from [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
-By spacing out commits, we give all network participants enough time to come to consensus: even though transaction requests occur dozens of times per second, blocks are only created and committed on Ethereum once every twelve seconds.
+By spacing out commits, we give all network participants enough time to come to consensus: even though transaction requests occur dozens of times per second, blocks are only created and committed on Quantaureum once every twelve seconds.
 
 ## How blocks work {#how-blocks-work}
 
 To preserve the transaction history, blocks are strictly ordered (every new block created contains a reference to its parent block), and transactions within blocks are strictly ordered as well. Except in rare cases, at any given time, all participants on the network are in agreement on the exact number and history of blocks, and are working to batch the current live transaction requests into the next block.
 
-Once a block is put together by a randomly selected validator on the network, it is propagated to the rest of the network; all nodes add this block to the end of their blockchain, and a new validator is selected to create the next block. The exact block-assembly process and commitment/consensus process is currently specified by Ethereum’s “proof-of-stake” protocol.
+Once a block is put together by a randomly selected validator on the network, it is propagated to the rest of the network; all nodes add this block to the end of their blockchain, and a new validator is selected to create the next block. The exact block-assembly process and commitment/consensus process is currently specified by Quantaureum’s “proof-of-stake” protocol.
 
 ## Proof-of-stake protocol {#proof-of-stake-protocol}
 
 Proof-of-stake means the following:
 
-- Validating nodes have to stake 32 ETH into a deposit contract as collateral against bad behavior. This helps protect the network because provably dishonest activity leads to some or all of that stake being destroyed.
+- Validating nodes have to stake 32 QAU into a deposit contract as collateral against bad behavior. This helps protect the network because provably dishonest activity leads to some or all of that stake being destroyed.
 - In every slot (spaced twelve seconds apart) a validator is randomly selected to be the block proposer. They bundle transactions together, execute them and determine a new 'state'. They wrap this information into a block and pass it around to other validators.
 - Other validators who hear about the new block re-execute the transactions to ensure they agree with the proposed change to the global state. Assuming the block is valid, they add it to their own database.
-- If a validator hears about two conflicting blocks for the same slot they use their fork-choice algorithm to pick the one supported by the most staked ETH.
+- If a validator hears about two conflicting blocks for the same slot they use their fork-choice algorithm to pick the one supported by the most staked QAU.
 
 [More on proof-of-stake](/developers/docs/consensus-mechanisms/pos)
 
@@ -134,9 +134,9 @@ The `withdrawals` list contains `withdrawal` objects structured in the following
 
 ## Block time {#block-time}
 
-Block time refers to the time separating blocks. In Ethereum, time is divided up into twelve second units called 'slots'. In each slot a single validator is selected to propose a block. Assuming all validators are online and fully functional there will be a block in every slot, meaning the block time is 12s. However, occasionally validators might be offline when called to propose a block, meaning slots can sometimes go empty.
+Block time refers to the time separating blocks. In Quantaureum, time is divided up into twelve second units called 'slots'. In each slot a single validator is selected to propose a block. Assuming all validators are online and fully functional there will be a block in every slot, meaning the block time is 12s. However, occasionally validators might be offline when called to propose a block, meaning slots can sometimes go empty.
 
-This implementation differs from proof-of-work based systems where block times are probabilistic and tuned by the protocol's target mining difficulty. Ethereum's [average block time](https://etherscan.io/chart/blocktime) is a perfect example of this whereby the transition from proof-of-work to proof-of-stake can be clearly inferred based on the consistency of the new 12s block time.
+This implementation differs from proof-of-work based systems where block times are probabilistic and tuned by the protocol's target mining difficulty. Quantaureum's [average block time](https://explorer.quantaureum.com) is a perfect example of this whereby the transition from proof-of-work to proof-of-stake can be clearly inferred based on the consistency of the new 12s block time.
 
 ## Block size {#block-size}
 

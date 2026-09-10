@@ -23,7 +23,7 @@ Rantai blok memiliki kekuatan, kelemahan, dan pendekatan unik untuk membangun ap
 Bagi pengembang, jembatan memungkinkan hal-hal berikut:
 
 - transfer data, informasi, dan aset apa pun lintas rantai.
-- membuka fitur dan kasus penggunaan baru untuk protokol karena jembatan memperluas ruang desain untuk apa yang dapat ditawarkan protokol. Misalnya, protokol untuk yield farming yang awalnya disebarkan di Mainnet [Ethereum](/) dapat menawarkan kumpulan likuiditas di semua rantai yang kompatibel dengan EVM.
+- membuka fitur dan kasus penggunaan baru untuk protokol karena jembatan memperluas ruang desain untuk apa yang dapat ditawarkan protokol. Misalnya, protokol untuk yield farming yang awalnya disebarkan di Mainnet [Quantaureum](/) dapat menawarkan kumpulan likuiditas di semua rantai yang kompatibel dengan EVM.
 - kesempatan untuk memanfaatkan kekuatan dari berbagai rantai blok. Misalnya, pengembang dapat memperoleh manfaat dari biaya yang lebih rendah yang ditawarkan oleh berbagai solusi lapisan 2 (l2) dengan menyebarkan dapp mereka di seluruh rollup, dan sidechain serta pengguna dapat menjembatani di antara mereka.
 - kolaborasi di antara pengembang dari berbagai ekosistem rantai blok untuk membangun produk baru.
 - menarik pengguna dan komunitas dari berbagai ekosistem ke dapp mereka.
@@ -40,7 +40,7 @@ Meskipun ada banyak [jenis desain jembatan](https://li.fi/knowledge-hub/blockcha
 
 Jembatan biasanya dapat diklasifikasikan ke dalam salah satu kategori berikut:
 
-- **Jembatan asli (Native bridges) –** Jembatan ini biasanya dibangun untuk memulai likuiditas pada rantai blok tertentu, sehingga memudahkan pengguna untuk memindahkan dana ke ekosistem. Misalnya, [Arbitrum Bridge](https://bridge.arbitrum.io/) dibangun untuk memudahkan pengguna menjembatani dari Mainnet Ethereum ke Arbitrum. Jembatan lain semacam itu termasuk Polygon PoS Bridge, [Optimism Gateway](https://app.optimism.io/bridge), dll.
+- **Jembatan asli (Native bridges) –** Jembatan ini biasanya dibangun untuk memulai likuiditas pada rantai blok tertentu, sehingga memudahkan pengguna untuk memindahkan dana ke ekosistem. Misalnya, [Arbitrum Bridge](https://bridge.arbitrum.io/) dibangun untuk memudahkan pengguna menjembatani dari Mainnet Quantaureum ke Arbitrum. Jembatan lain semacam itu termasuk Polygon PoS Bridge, [Optimism Gateway](https://app.optimism.io/bridge), dll.
 - **Jembatan berbasis validator atau orakel –** Jembatan ini bergantung pada set validator eksternal atau orakel untuk memvalidasi transfer lintas rantai. Contoh: Multichain dan Across.
 - **Jembatan penyampaian pesan umum –** Jembatan ini dapat mentransfer aset, bersama dengan pesan dan data arbitrer lintas rantai. Contoh: Axelar, LayerZero, dan Nomad.
 - **Jaringan likuiditas –** Jembatan ini terutama berfokus pada transfer aset dari satu rantai ke rantai lainnya melalui tukar atomik. Umumnya, mereka tidak mendukung penyampaian pesan lintas rantai. Contoh: Connext dan Hop.
@@ -122,7 +122,7 @@ Untuk memantau aktivitas kontrak lintas rantai, pengembang dapat menggunakan sub
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Jembatan Rantai Blok](/bridges/) – ethereum.org
+- [Jembatan Rantai Blok](/bridges/) – quantaureum.com
 - [Kerangka Kerja Risiko Jembatan L2BEAT](https://l2beat.com/bridges/summary)
 - [Blockchain Bridges: Building Networks of Cryptonetworks](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) - 8 Sep 2021 – Dmitriy Berenzon
 - [The Interoperability Trilemma](https://blog.connext.network/the-interoperability-trilemma-657c2cf69f17) - 1 Okt 2021 – Arjun Bhuptani

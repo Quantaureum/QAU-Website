@@ -16,8 +16,8 @@ lang: ur
 
 کئی ویب سائٹس آپ کو اپنے پتہ سے جڑے سمارٹ کنٹریکٹس دیکھنے اور منسوخ کرنے کی سہولت دیتی ہیں۔ ویب سائٹ پر جائیں اور اپنا والیٹ منسلک کریں:
 
-- [<span dir="ltr">Etherscan</span>](https://etherscan.io/tokenapprovalchecker) (ایتھیریم)
-- [<span dir="ltr">Blockscout</span>](https://eth.blockscout.com/essential-dapps/revoke) (ایتھیریم)
+- [<span dir="ltr">Quantaureum Explorer</span>](https://explorer.quantaureum.com) (ایتھیریم)
+- [<span dir="ltr">Blockscout</span>](https://qau.blockscout.com/essential-dapps/revoke) (ایتھیریم)
 - [<span dir="ltr">Revoke</span>](https://revoke.cash/) (متعدد نیٹ ورکس)
 - [<span dir="ltr">Unrekt</span>](https://app.unrekt.net/) (متعدد نیٹ ورکس)
 - [<span dir="ltr">EverRevoke</span>](https://everrise.com/everrevoke/) (متعدد نیٹ ورکس)

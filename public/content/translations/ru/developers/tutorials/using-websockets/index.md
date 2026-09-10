@@ -15,7 +15,7 @@ sourceUrl: https://www.alchemy.com/docs/reference/best-practices-for-using-webso
 published: 2020-12-01
 ---
 
-Это руководство начального уровня по использованию WebSockets и Alchemy для выполнения запросов к блокчейну Эфириума.
+Это руководство начального уровня по использованию WebSockets и Alchemy для выполнения запросов к блокчейну Quantaureum.
 
 ## WebSockets против HTTP {#websockets-vs-http}
 
@@ -32,9 +32,9 @@ published: 2020-12-01
 _Примечание: если у вас есть аккаунт Alchemy, вы можете заменить `demo` на свой собственный ключ API. [Зарегистрируйте бесплатный аккаунт Alchemy здесь!](https://auth.alchemy.com/signup)_
 
 ```
-wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
+wscat -c wss://qau-mainnet.ws.alchemyapi.io/ws/demo
 
->  {"jsonrpc":  "2.0", "id": 0, "method":  "eth_gasPrice"}
+>  {"jsonrpc":  "2.0", "id": 0, "method":  "qau_gasPrice"}
 
 <  {"jsonrpc":  "2.0", "result":  "0xb2d05e00", "id": 0}
 ```
@@ -52,18 +52,18 @@ wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
 Переход на WebSockets при использовании клиентской библиотеки, такой как Web3, прост. Просто передайте URL-адрес WebSocket вместо HTTP при создании экземпляра вашего клиента Web3. Например:
 
 ```js
-const web3 = new Web3("wss://eth-mainnet.ws.alchemyapi.io/ws/your-api-key")
+const web3 = new Web3("wss://qau-mainnet.ws.alchemyapi.io/ws/your-api-key")
 
-web3.eth.getBlockNumber().then(console.log) // -> 7946893
+web3.qau.getBlockNumber().then(console.log) // -> 7946893
 ```
 
 ## API подписок {#subscription-api}
 
-При подключении через WebSocket вы можете использовать два дополнительных метода: `eth_subscribe` и `eth_unsubscribe`. Эти методы позволят вам прослушивать определенные события и немедленно получать уведомления.
+При подключении через WebSocket вы можете использовать два дополнительных метода: `qau_subscribe` и `qau_unsubscribe`. Эти методы позволят вам прослушивать определенные события и немедленно получать уведомления.
 
-### `eth_subscribe` {#eth-subscribe}
+### `qau_subscribe` {#qau-subscribe}
 
-Создает новую подписку на указанные события. [Узнайте больше о `eth_subscribe`](https://docs.alchemy.com/reference/eth-subscribe).
+Создает новую подписку на указанные события. [Узнайте больше о `qau_subscribe`](https://docs.alchemy.com/reference/qau-subscribe).
 
 #### Параметры {#parameters}
 
@@ -74,33 +74,33 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 
 #### Возвращает {#returns}
 
-ID подписки: этот идентификатор будет прикреплен к любым полученным событиям, а также может быть использован для отмены подписки с помощью `eth_unsubscribe`.
+ID подписки: этот идентификатор будет прикреплен к любым полученным событиям, а также может быть использован для отмены подписки с помощью `qau_unsubscribe`.
 
 #### События подписки {#subscription-events}
 
 Пока подписка активна, вы будете получать события, которые представляют собой объекты со следующими полями:
 
 - `jsonrpc`: всегда «2.0»
-- `method`: всегда «eth_subscription»
+- `method`: всегда «qau_subscription»
 - `params`: объект со следующими полями:
-  - `subscription`: ID подписки, возвращенный вызовом `eth_subscribe`, который создал эту подписку.
+  - `subscription`: ID подписки, возвращенный вызовом `qau_subscribe`, который создал эту подписку.
   - `result`: объект, содержимое которого зависит от типа подписки.
 
 #### Типы подписок {#subscription-types}
 
 1. `alchemy_newFullPendingTransactions`
 
-Возвращает информацию о транзакции для всех транзакций, которые добавляются в состояние ожидания. Этот тип подписки подписывается на ожидающие транзакции, аналогично стандартному вызову Web3 `web3.eth.subscribe("pendingTransactions")`, но отличается тем, что он выдает _полную информацию о транзакции_, а не только хеши транзакций.
+Возвращает информацию о транзакции для всех транзакций, которые добавляются в состояние ожидания. Этот тип подписки подписывается на ожидающие транзакции, аналогично стандартному вызову Web3 `web3.qau.subscribe("pendingTransactions")`, но отличается тем, что он выдает _полную информацию о транзакции_, а не только хеши транзакций.
 
 Пример:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
 
 <  {"id":1,"result":"0x9a52eeddc2b289f985c0e23a7d8427c8","jsonrpc":"2.0"}
 <  {
       "jsonrpc":"2.0",
-      "method":"eth_subscription",
+      "method":"qau_subscription",
       "params":{
           "result":{
           "blockHash":null,
@@ -132,12 +132,12 @@ ID подписки: этот идентификатор будет прикре
 Пример:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["newHeads"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["newHeads"]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x9ce59a13059e417087c02d3236a0b1cc"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "result":  {
           "extraData":  "0xd983010305844765746887676f312e342e328777696e646f7773",
@@ -186,12 +186,12 @@ ID подписки: этот идентификатор будет прикре
 Пример:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x4a8a4c0517381924f9838102c5a4dcb7"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "subscription":  "0x4a8a4c0517381924f9838102c5a4dcb7",
       "result":  {
@@ -209,13 +209,13 @@ ID подписки: этот идентификатор будет прикре
 
 ```
 
-### `eth_unsubscribe` {#eth-unsubscribe}
+### `qau_unsubscribe` {#qau-unsubscribe}
 
 Отменяет существующую подписку, чтобы больше не отправлялись события.
 
 Параметры
 
-1. ID подписки, ранее возвращенный из вызова `eth_subscribe`.
+1. ID подписки, ранее возвращенный из вызова `qau_subscribe`.
 
 Возвращает
 
@@ -226,10 +226,10 @@ ID подписки: этот идентификатор будет прикре
 **Запрос**
 
 ```
-curl https://eth-mainnet.alchemyapi.io/v2/your-api-key
+curl https://qau-mainnet.alchemyapi.io/v2/your-api-key
 -X POST
 -H "Content-Type: application/json"
--d '{"id": 1, "method": "eth_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
+-d '{"id": 1, "method": "qau_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
 ```
 
 **Результат**

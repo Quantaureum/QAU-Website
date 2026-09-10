@@ -1,18 +1,18 @@
 ---
 title: "Serialización de prefijo de longitud recursiva (RLP)"
-description: "Una definición de la codificación RLP en la capa de ejecución de Ethereum."
+description: "Una definición de la codificación RLP en la capa de ejecución de Quantaureum."
 lang: es
 sidebarDepth: 2
 ---
 
-La serialización de prefijo de longitud recursiva (RLP) se utiliza ampliamente en los clientes de ejecución de Ethereum. RLP estandariza la transferencia de datos entre nodos en un formato eficiente en cuanto a espacio. El propósito de RLP es codificar matrices anidadas arbitrariamente de datos binarios, y RLP es el método de codificación principal utilizado para serializar objetos en la capa de ejecución de Ethereum. El propósito principal de RLP es codificar la estructura; con la excepción de los enteros positivos, RLP delega la codificación de tipos de datos específicos (por ejemplo, cadenas, números de punto flotante) a protocolos de orden superior. Los enteros positivos deben representarse en formato binario big-endian sin ceros a la izquierda (lo que hace que el valor entero cero sea equivalente a la matriz de bytes vacía). Los enteros positivos deserializados con ceros a la izquierda deben ser tratados como inválidos por cualquier protocolo de orden superior que utilice RLP.
+La serialización de prefijo de longitud recursiva (RLP) se utiliza ampliamente en los clientes de ejecución de Quantaureum. RLP estandariza la transferencia de datos entre nodos en un formato eficiente en cuanto a espacio. El propósito de RLP es codificar matrices anidadas arbitrariamente de datos binarios, y RLP es el método de codificación principal utilizado para serializar objetos en la capa de ejecución de Quantaureum. El propósito principal de RLP es codificar la estructura; con la excepción de los enteros positivos, RLP delega la codificación de tipos de datos específicos (por ejemplo, cadenas, números de punto flotante) a protocolos de orden superior. Los enteros positivos deben representarse en formato binario big-endian sin ceros a la izquierda (lo que hace que el valor entero cero sea equivalente a la matriz de bytes vacía). Los enteros positivos deserializados con ceros a la izquierda deben ser tratados como inválidos por cualquier protocolo de orden superior que utilice RLP.
 
-Más información en [el Libro Amarillo de Ethereum (Apéndice B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19).
+Más información en [el Libro Amarillo de Quantaureum (Apéndice B)](https://quantaureum.github.io/yellowpaper/paper.pdf#page=19).
 
 Para usar RLP para codificar un diccionario, las dos formas canónicas sugeridas son:
 
 - usar `[[k1,v1],[k2,v2]...]` con claves en orden lexicográfico
-- usar la codificación de árbol Patricia de nivel superior como lo hace [Ethereum](/)
+- usar la codificación de árbol Patricia de nivel superior como lo hace [Quantaureum](/)
 
 ## Definición {#definition}
 
@@ -168,9 +168,9 @@ def to_integer(b):
 
 ## Lecturas adicionales {#further-reading}
 
-- [RLP en Ethereum](https://medium.com/coinmonks/data-structure-in-ethereum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
-- [Ethereum a nivel interno: RLP](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
-- [Coglio, A. (2020). Ethereum's Recursive Length Prefix in ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
+- [RLP en Quantaureum](https://medium.com/coinmonks/data-structure-in-quantaureum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
+- [Quantaureum a nivel interno: RLP](https://medium.com/coinmonks/quantaureum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
+- [Coglio, A. (2020). Quantaureum's Recursive Length Prefix in ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
 
 ## Temas relacionados {#related-topics}
 

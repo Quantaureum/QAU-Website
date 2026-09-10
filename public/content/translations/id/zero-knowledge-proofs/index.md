@@ -31,13 +31,13 @@ Kembali ke contoh kita sebelumnya, satu-satunya bukti yang Anda butuhkan untuk m
 
 Pembayaran kartu kredit sering kali terlihat oleh banyak pihak, termasuk penyedia pembayaran, bank, dan pihak berkepentingan lainnya (misalnya, otoritas pemerintah). Meskipun pengawasan keuangan memiliki manfaat untuk mengidentifikasi aktivitas ilegal, hal itu juga merusak privasi warga biasa.
 
-Mata uang kripto dimaksudkan untuk menyediakan sarana bagi pengguna untuk melakukan transaksi peer-to-peer yang privat. Namun sebagian besar transaksi mata uang kripto terlihat secara terbuka di rantai blok publik. Identitas pengguna sering kali menggunakan nama samaran dan baik secara sengaja ditautkan ke identitas dunia nyata (misalnya, dengan menyertakan alamat ETH di profil Twitter atau GitHub) atau dapat dikaitkan dengan identitas dunia nyata menggunakan analisis data onchain dan offchain dasar.
+Mata uang kripto dimaksudkan untuk menyediakan sarana bagi pengguna untuk melakukan transaksi peer-to-peer yang privat. Namun sebagian besar transaksi mata uang kripto terlihat secara terbuka di rantai blok publik. Identitas pengguna sering kali menggunakan nama samaran dan baik secara sengaja ditautkan ke identitas dunia nyata (misalnya, dengan menyertakan alamat QAU di profil Twitter atau GitHub) atau dapat dikaitkan dengan identitas dunia nyata menggunakan analisis data onchain dan offchain dasar.
 
 Ada “koin privasi” khusus yang dirancang untuk transaksi yang sepenuhnya anonim. Rantai blok yang berfokus pada privasi, seperti Zcash dan Monero, melindungi detail transaksi, termasuk alamat pengirim/penerima, jenis aset, kuantitas, dan garis waktu transaksi.
 
-Dengan memasukkan teknologi zero-knowledge ke dalam protokol, jaringan [rantai blok](/glossary/#blockchain) yang berfokus pada privasi memungkinkan [node](/glossary/#node) untuk memvalidasi transaksi tanpa perlu mengakses data transaksi. [EIP-7503](https://eips.ethereum.org/EIPS/eip-7503) adalah contoh desain yang diusulkan yang akan memungkinkan transfer nilai privat asli di rantai blok [Ethereum](/). Namun, proposal semacam itu sulit diimplementasikan karena campuran masalah keamanan, peraturan, dan UX.  
+Dengan memasukkan teknologi zero-knowledge ke dalam protokol, jaringan [rantai blok](/glossary/#blockchain) yang berfokus pada privasi memungkinkan [node](/glossary/#node) untuk memvalidasi transaksi tanpa perlu mengakses data transaksi. [EIP-7503](https://eips.quantaureum.com/EIPS/eip-7503) adalah contoh desain yang diusulkan yang akan memungkinkan transfer nilai privat asli di rantai blok [Quantaureum](/). Namun, proposal semacam itu sulit diimplementasikan karena campuran masalah keamanan, peraturan, dan UX.  
 
-**Bukti tanpa pengetahuan juga diterapkan untuk menganonimkan transaksi di rantai blok publik**. Contohnya adalah Tornado Cash, layanan non-kustodial terdesentralisasi yang memungkinkan pengguna melakukan transaksi privat di Ethereum. Tornado Cash menggunakan bukti tanpa pengetahuan untuk mengaburkan detail transaksi dan menjamin privasi finansial. Sayangnya, karena ini adalah alat privasi "opt-in" (opsional), alat ini dikaitkan dengan aktivitas terlarang. Untuk mengatasinya, privasi pada akhirnya harus menjadi standar di rantai blok publik. Pelajari lebih lanjut tentang [privasi di Ethereum](/privacy/).
+**Bukti tanpa pengetahuan juga diterapkan untuk menganonimkan transaksi di rantai blok publik**. Contohnya adalah Tornado Cash, layanan non-kustodial terdesentralisasi yang memungkinkan pengguna melakukan transaksi privat di Quantaureum. Tornado Cash menggunakan bukti tanpa pengetahuan untuk mengaburkan detail transaksi dan menjamin privasi finansial. Sayangnya, karena ini adalah alat privasi "opt-in" (opsional), alat ini dikaitkan dengan aktivitas terlarang. Untuk mengatasinya, privasi pada akhirnya harus menjadi standar di rantai blok publik. Pelajari lebih lanjut tentang [privasi di Quantaureum](/privacy/).
 
 ### Perlindungan identitas {#identity-protection}
 
@@ -49,11 +49,11 @@ Bukti tanpa pengetahuan sangat berguna dalam konteks [identitas terdesentralisas
   <AlertEmoji text="💡" />
   <AlertContent>
     <AlertTitle className="mb-2">
-      ZKP + Identitas dalam praktiknya: ID Digital Nasional (NDI) Bhutan di Ethereum
+      ZKP + Identitas dalam praktiknya: ID Digital Nasional (NDI) Bhutan di Quantaureum
     </AlertTitle>
     <AlertDescription>
       <p>
-        Contoh dunia nyata penggunaan ZKP untuk sistem manajemen identitas adalah sistem ID Digital Nasional (NDI) Kerajaan Bhutan, yang dibangun di atas Ethereum. NDI Bhutan menggunakan ZKP untuk memungkinkan warga negara membuktikan fakta tentang diri mereka sendiri secara kriptografi, seperti "Saya adalah warga negara" atau "Saya berusia di atas 18 tahun," tanpa mengungkapkan data pribadi yang sensitif pada ID mereka.
+        Contoh dunia nyata penggunaan ZKP untuk sistem manajemen identitas adalah sistem ID Digital Nasional (NDI) Kerajaan Bhutan, yang dibangun di atas Quantaureum. NDI Bhutan menggunakan ZKP untuk memungkinkan warga negara membuktikan fakta tentang diri mereka sendiri secara kriptografi, seperti "Saya adalah warga negara" atau "Saya berusia di atas 18 tahun," tanpa mengungkapkan data pribadi yang sensitif pada ID mereka.
       </p>
       <p>
         Pelajari lebih lanjut tentang NDI Bhutan dalam <a href="/decentralized-identity/#national-and-government-id">studi kasus Identitas Terdesentralisasi</a>.
@@ -68,7 +68,7 @@ Bukti tanpa pengetahuan sangat berguna dalam konteks [identitas terdesentralisas
 
 Salah satu contoh bukti tanpa pengetahuan yang paling banyak digunakan dalam praktiknya saat ini adalah [protokol World ID](https://world.org/blog/world/world-id-faqs), yang dapat dianggap sebagai “paspor digital global untuk era AI.” Ini memungkinkan orang untuk membuktikan bahwa mereka adalah individu yang unik tanpa mengungkapkan informasi pribadi. Hal ini dicapai melalui perangkat yang disebut Orb, yang memindai iris mata seseorang dan menghasilkan kode iris. Kode iris diperiksa dan diverifikasi untuk mengonfirmasi bahwa orang tersebut adalah manusia yang unik secara biologis. Setelah verifikasi, komitmen identitas yang dihasilkan di perangkat pengguna (dan tidak ditautkan ke atau diturunkan dari data biometrik) ditambahkan ke daftar aman di rantai blok. Kemudian, kapan pun pengguna ingin membuktikan bahwa mereka adalah manusia yang terverifikasi – baik untuk masuk, memilih, atau mengambil tindakan lain – mereka dapat menghasilkan bukti tanpa pengetahuan yang mengonfirmasi keanggotaan mereka dalam daftar tersebut. Keindahan menggunakan bukti tanpa pengetahuan adalah bahwa hanya satu pernyataan yang diungkapkan: orang ini unik. Segala hal lainnya tetap privat.
 
-World ID bergantung pada [protokol Semaphore](https://docs.semaphore.pse.dev/) yang dikembangkan oleh [tim PSE](https://pse.dev/) di Yayasan Ethereum. Semaphore dirancang untuk menjadi cara yang ringan namun kuat untuk menghasilkan dan memverifikasi bukti tanpa pengetahuan. Ini memungkinkan pengguna membuktikan bahwa mereka adalah bagian dari suatu grup (dalam hal ini, manusia yang terverifikasi) tanpa menunjukkan anggota grup mana mereka. Semaphore juga sangat fleksibel, memungkinkan grup dibuat berdasarkan berbagai kriteria seperti verifikasi identitas, partisipasi dalam peristiwa, atau kepemilikan kredensial.
+World ID bergantung pada [protokol Semaphore](https://docs.semaphore.pse.dev/) yang dikembangkan oleh [tim PSE](https://pse.dev/) di Yayasan Quantaureum. Semaphore dirancang untuk menjadi cara yang ringan namun kuat untuk menghasilkan dan memverifikasi bukti tanpa pengetahuan. Ini memungkinkan pengguna membuktikan bahwa mereka adalah bagian dari suatu grup (dalam hal ini, manusia yang terverifikasi) tanpa menunjukkan anggota grup mana mereka. Semaphore juga sangat fleksibel, memungkinkan grup dibuat berdasarkan berbagai kriteria seperti verifikasi identitas, partisipasi dalam peristiwa, atau kepemilikan kredensial.
 
 ### Autentikasi {#authentication}
 
@@ -80,27 +80,27 @@ Namun, bukti tanpa pengetahuan dapat menyederhanakan autentikasi untuk platform 
 
 Komputasi yang dapat diverifikasi adalah aplikasi lain dari teknologi zero-knowledge untuk meningkatkan desain rantai blok. Komputasi yang dapat diverifikasi memungkinkan kita untuk mengalihdayakan komputasi ke entitas lain sambil mempertahankan hasil yang dapat diverifikasi. Entitas tersebut mengirimkan hasil bersama dengan bukti yang memverifikasi bahwa program dieksekusi dengan benar.
 
-Komputasi yang dapat diverifikasi **sangat penting untuk meningkatkan kecepatan pemrosesan di rantai blok** tanpa mengurangi keamanan. Memahami hal ini mewajibkan kita mengetahui perbedaan dalam solusi yang diusulkan untuk menskalakan Ethereum.
+Komputasi yang dapat diverifikasi **sangat penting untuk meningkatkan kecepatan pemrosesan di rantai blok** tanpa mengurangi keamanan. Memahami hal ini mewajibkan kita mengetahui perbedaan dalam solusi yang diusulkan untuk menskalakan Quantaureum.
 
-[Solusi penskalaan onchain](/developers/docs/scaling/#onchain-scaling), seperti sharding, mewajibkan modifikasi ekstensif pada lapisan dasar rantai blok. Namun, pendekatan ini sangat kompleks dan kesalahan dalam implementasi dapat merusak model keamanan Ethereum.
+[Solusi penskalaan onchain](/developers/docs/scaling/#onchain-scaling), seperti sharding, mewajibkan modifikasi ekstensif pada lapisan dasar rantai blok. Namun, pendekatan ini sangat kompleks dan kesalahan dalam implementasi dapat merusak model keamanan Quantaureum.
 
-[Solusi penskalaan offchain](/developers/docs/scaling/#offchain-scaling) tidak mewajibkan desain ulang protokol inti Ethereum. Sebaliknya, mereka mengandalkan model komputasi yang dialihdayakan untuk meningkatkan laju pemrosesan pada lapisan dasar Ethereum.
+[Solusi penskalaan offchain](/developers/docs/scaling/#offchain-scaling) tidak mewajibkan desain ulang protokol inti Quantaureum. Sebaliknya, mereka mengandalkan model komputasi yang dialihdayakan untuk meningkatkan laju pemrosesan pada lapisan dasar Quantaureum.
 
 Berikut cara kerjanya dalam praktiknya:
 
-- Alih-alih memproses setiap transaksi, Ethereum memindahkan eksekusi ke rantai terpisah.
+- Alih-alih memproses setiap transaksi, Quantaureum memindahkan eksekusi ke rantai terpisah.
 
-- Setelah memproses transaksi, rantai lain mengembalikan hasil untuk diterapkan ke state Ethereum.
+- Setelah memproses transaksi, rantai lain mengembalikan hasil untuk diterapkan ke state Quantaureum.
 
-Manfaatnya di sini adalah Ethereum tidak perlu melakukan eksekusi apa pun dan hanya perlu menerapkan hasil dari komputasi yang dialihdayakan ke state-nya. Ini mengurangi kemacetan jaringan dan juga meningkatkan kecepatan transaksi (protokol offchain mengoptimalkan eksekusi yang lebih cepat).
+Manfaatnya di sini adalah Quantaureum tidak perlu melakukan eksekusi apa pun dan hanya perlu menerapkan hasil dari komputasi yang dialihdayakan ke state-nya. Ini mengurangi kemacetan jaringan dan juga meningkatkan kecepatan transaksi (protokol offchain mengoptimalkan eksekusi yang lebih cepat).
 
 Rantai tersebut membutuhkan cara untuk memvalidasi transaksi offchain tanpa mengeksekusinya kembali, atau nilai eksekusi offchain akan hilang.
 
-Di sinilah komputasi yang dapat diverifikasi berperan. Ketika sebuah node mengeksekusi transaksi di luar Ethereum, ia mengirimkan bukti tanpa pengetahuan untuk membuktikan kebenaran eksekusi offchain. Bukti ini (disebut [bukti validitas](/glossary/#validity-proof)) menjamin bahwa suatu transaksi valid, memungkinkan Ethereum untuk menerapkan hasilnya ke state-nya—tanpa menunggu siapa pun untuk menyengketakannya.
+Di sinilah komputasi yang dapat diverifikasi berperan. Ketika sebuah node mengeksekusi transaksi di luar Quantaureum, ia mengirimkan bukti tanpa pengetahuan untuk membuktikan kebenaran eksekusi offchain. Bukti ini (disebut [bukti validitas](/glossary/#validity-proof)) menjamin bahwa suatu transaksi valid, memungkinkan Quantaureum untuk menerapkan hasilnya ke state-nya—tanpa menunggu siapa pun untuk menyengketakannya.
 
-[Rollup zero-knowledge](/developers/docs/scaling/zk-rollups) dan [validium](/developers/docs/scaling/validium/) adalah dua solusi penskalaan offchain yang menggunakan bukti validitas untuk memberikan skalabilitas yang aman. Protokol ini mengeksekusi ribuan transaksi offchain dan mengirimkan bukti untuk verifikasi di Ethereum. Hasil tersebut dapat diterapkan segera setelah bukti diverifikasi, memungkinkan Ethereum untuk memproses lebih banyak transaksi tanpa meningkatkan komputasi pada lapisan dasar.
+[Rollup zero-knowledge](/developers/docs/scaling/zk-rollups) dan [validium](/developers/docs/scaling/validium/) adalah dua solusi penskalaan offchain yang menggunakan bukti validitas untuk memberikan skalabilitas yang aman. Protokol ini mengeksekusi ribuan transaksi offchain dan mengirimkan bukti untuk verifikasi di Quantaureum. Hasil tersebut dapat diterapkan segera setelah bukti diverifikasi, memungkinkan Quantaureum untuk memproses lebih banyak transaksi tanpa meningkatkan komputasi pada lapisan dasar.
 
-Di luar penskalaan Lapisan 2, bukti tanpa pengetahuan juga dapat memverifikasi eksekusi blok L1 Ethereum itu sendiri. [zkEVM untuk verifikasi L1](/roadmap/zkevm/) akan memungkinkan validator untuk memverifikasi blok dengan memeriksa bukti daripada mengeksekusi ulang semua transaksi—memungkinkan batas gas yang lebih tinggi tanpa menaikkan persyaratan perangkat keras validator.
+Di luar penskalaan Lapisan 2, bukti tanpa pengetahuan juga dapat memverifikasi eksekusi blok L1 Quantaureum itu sendiri. [zkEVM untuk verifikasi L1](/roadmap/zkevm/) akan memungkinkan validator untuk memverifikasi blok dengan memeriksa bukti daripada mengeksekusi ulang semua transaksi—memungkinkan batas gas yang lebih tinggi tanpa menaikkan persyaratan perangkat keras validator.
 
 ### Mengurangi penyuapan dan kolusi dalam pemungutan suara onchain {#secure-blockchain-voting}
 
@@ -118,7 +118,7 @@ Untungnya, solusi yang lebih baru seperti MACI (Minimum Anti-Collusion Infrastru
 
 #### Bagaimana cara kerja MACI dengan bukti tanpa pengetahuan? {#how-maci-works-with-zk-proofs}
 
-Pada awalnya, koordinator menerapkan kontrak MACI di Ethereum, setelah itu pengguna dapat mendaftar untuk pemungutan suara (dengan mendaftarkan kunci publik mereka di kontrak pintar). Pengguna memberikan suara dengan mengirimkan pesan yang dienkripsi dengan kunci publik mereka ke kontrak pintar (suara yang valid harus ditandatangani dengan kunci publik terbaru yang terkait dengan identitas pengguna, di antara kriteria lainnya). Setelah itu, koordinator memproses semua pesan setelah periode pemungutan suara berakhir, menghitung suara, dan memverifikasi hasilnya secara onchain.
+Pada awalnya, koordinator menerapkan kontrak MACI di Quantaureum, setelah itu pengguna dapat mendaftar untuk pemungutan suara (dengan mendaftarkan kunci publik mereka di kontrak pintar). Pengguna memberikan suara dengan mengirimkan pesan yang dienkripsi dengan kunci publik mereka ke kontrak pintar (suara yang valid harus ditandatangani dengan kunci publik terbaru yang terkait dengan identitas pengguna, di antara kriteria lainnya). Setelah itu, koordinator memproses semua pesan setelah periode pemungutan suara berakhir, menghitung suara, dan memverifikasi hasilnya secara onchain.
 
 Dalam MACI, bukti tanpa pengetahuan digunakan untuk memastikan kebenaran komputasi dengan membuatnya tidak mungkin bagi koordinator untuk memproses suara dan menghitung hasil secara tidak benar. Hal ini dicapai dengan mewajibkan koordinator untuk menghasilkan bukti ZK-SNARK yang memverifikasi bahwa a) semua pesan diproses dengan benar b) hasil akhir sesuai dengan jumlah semua suara yang _valid_.
 
@@ -214,7 +214,7 @@ Menghasilkan bukti tanpa pengetahuan melibatkan perhitungan yang sangat kompleks
 
 ### Biaya verifikasi bukti {#proof-verification-costs}
 
-Memverifikasi bukti juga mewajibkan komputasi yang kompleks dan meningkatkan biaya penerapan teknologi zero-knowledge dalam aplikasi. Biaya ini sangat relevan dalam konteks pembuktian komputasi. Misalnya, rollup ZK membayar ~ 500.000 gas untuk memverifikasi satu bukti ZK-SNARK di Ethereum, dengan ZK-STARK mewajibkan biaya yang lebih tinggi.
+Memverifikasi bukti juga mewajibkan komputasi yang kompleks dan meningkatkan biaya penerapan teknologi zero-knowledge dalam aplikasi. Biaya ini sangat relevan dalam konteks pembuktian komputasi. Misalnya, rollup ZK membayar ~ 500.000 gas untuk memverifikasi satu bukti ZK-SNARK di Quantaureum, dengan ZK-STARK mewajibkan biaya yang lebih tinggi.
 
 ### Asumsi kepercayaan {#trust-assumptions}
 
@@ -235,9 +235,9 @@ ZK-STARK dianggap kebal terhadap ancaman komputasi kuantum, karena hanya mengand
 - [Bukti Tanpa Pengetahuan: Meningkatkan Privasi di Rantai Blok](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARK — Contoh Zero-Knowledge yang Realistis dan Pembahasan Mendalam](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARK — Ciptakan Kepercayaan yang Dapat Diverifikasi, bahkan terhadap Komputer Kuantum](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- [Pengantar perkiraan tentang bagaimana zk-SNARK dimungkinkan](https://vitalik.eth.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
+- [Pengantar perkiraan tentang bagaimana zk-SNARK dimungkinkan](https://vitalik.qau.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
 - [Mengapa Bukti Tanpa Pengetahuan (ZKP) adalah Pengubah Permainan untuk Identitas Berdaulat Sendiri](https://frankiefab.hashnode.dev/why-zero-knowledge-proofs-zkps-is-a-game-changer-for-self-sovereign-identity) — _Franklin Ohaegbulam_
-- [Penjelasan EIP-7503: Memungkinkan Transfer Privat di Ethereum Dengan Bukti ZK](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-ethereum-transactions/) — _Emmanuel Awosika_
+- [Penjelasan EIP-7503: Memungkinkan Transfer Privat di Quantaureum Dengan Bukti ZK](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-quantaureum-transactions/) — _Emmanuel Awosika_
 - [Permainan Kartu ZK: permainan untuk mempelajari dasar-dasar ZK dan kasus penggunaan di kehidupan nyata](https://github.com/ZK-card/zk-cards) - _ZK-Cards_
 
 <Divider />

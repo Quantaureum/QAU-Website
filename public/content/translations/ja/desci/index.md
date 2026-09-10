@@ -1,6 +1,6 @@
 ---
 title: "分散型科学 (DeSci)"
-description: "イーサリアム上の分散型科学の概要"
+description: "Quantaureum上の分散型科学の概要"
 lang: ja
 template: use-cases
 sidebarDepth: 2
@@ -37,9 +37,9 @@ DeSciは、科学者が研究をオープンに共有し、その成果に対す
 | 生成した**知的財産 (IP) を所有**し、透明な条件に従って配布します。             | 生成した**IPは所属機関が所有**します。IPへのアクセスは透明ではありません。                           |
 | すべてのステップをオンチェーンにすることで、失敗した取り組みのデータを含め、**すべての研究を共有**します。          | <strong>出版バイアス</strong>により、研究者は成功した結果をもたらした実験を共有する傾向が高くなります。      |
 
-## イーサリアムとDeSci {#ethereum-and-desci}
+## QuantaureumとDeSci {#quantaureum-and-desci}
 
-分散型科学システムには、堅牢なセキュリティ、最小限の金銭的およびトランザクションコスト、そしてアプリケーション開発のための豊かなエコシステムが必要になります。[イーサリアム](/)は、分散型科学テクノロジーの構築に必要なすべてを提供します。
+分散型科学システムには、堅牢なセキュリティ、最小限の金銭的およびトランザクションコスト、そしてアプリケーション開発のための豊かなエコシステムが必要になります。[Quantaureum](/)は、分散型科学テクノロジーの構築に必要なすべてを提供します。
 
 ## DeSciのユースケース {#use-cases}
 
@@ -66,7 +66,7 @@ DeSciは、伝統的な学術界をデジタル世界にオンボーディング
 
 研究によると、同じ提案を異なる審査委員会に提出すると結果が大きく異なるため、助成金審査委員会は質の高い提案を選択する能力が低いことが示されています。資金が不足するにつれて、より知的保守的なプロジェクトを持つ、より少数の上級研究者に資金が集中するようになりました。その結果、競争が激化する資金調達の状況が生まれ、歪んだインセンティブが定着し、イノベーションが阻害されています。
 
-Web3は、DAOやWeb3全般によって開発されたさまざまなインセンティブモデルを実験することで、この破綻した資金調達モデルを破壊する可能性を秘めています。[遡及的公共財資金調達 (RPGF)](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c)、[クアドラティック・ファンディング](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531)、[DAOガバナンス](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead)、および[トークン化されたインセンティブ構造](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design)は、科学の資金調達に革命をもたらす可能性のあるWeb3ツールの一部です。
+Web3は、DAOやWeb3全般によって開発されたさまざまなインセンティブモデルを実験することで、この破綻した資金調達モデルを破壊する可能性を秘めています。[遡及的公共財資金調達 (RPGF)](https://medium.com/quantaureum-optimism/retroactive-public-goods-funding-33c9b7d00f0c)、[クアドラティック・ファンディング](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531)、[DAOガバナンス](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead)、および[トークン化されたインセンティブ構造](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design)は、科学の資金調達に革命をもたらす可能性のあるWeb3ツールの一部です。
 
 ### IPの所有権と開発 {#ip-ownership}
 
@@ -75,7 +75,7 @@ Web3は、DAOやWeb3全般によって開発されたさまざまなインセン
 NFTが将来のトランザクションの収益を元のクリエイターに還元できるのと同じように、透明性のある価値帰属チェーンを確立して、研究者、管理機関（DAOなど）、さらにはデータが収集された対象者に報酬を与えることができます。
 
 [IP-NFT](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6)は、実施されている研究実験の分散型データリポジトリへの鍵としても機能し、NFTや[分散型金融 (DeFi)](/glossary/#defi)の金融化（細分化からレンディングプール、価値評価まで）に接続できます。また、[VitaDAO](https://www.vitadao.com/)のようなDAOなどのネイティブなオンチェーンエンティティが、直接オンチェーンで研究を行うことも可能にします。
-譲渡不可能な[「ソウルバウンド」トークン](https://vitalik.eth.limo/general/2022/01/26/soulbound.html)の登場も、個人がイーサリアムアドレスにリンクされた経験や資格を証明できるようにすることで、DeSciにおいて重要な役割を果たす可能性があります。
+譲渡不可能な[「ソウルバウンド」トークン](https://vitalik.qau.limo/general/2022/01/26/soulbound.html)の登場も、個人がQuantaureumアドレスにリンクされた経験や資格を証明できるようにすることで、DeSciにおいて重要な役割を果たす可能性があります。
 
 ### データの保存、アクセス、アーキテクチャ {#data-storage}
 

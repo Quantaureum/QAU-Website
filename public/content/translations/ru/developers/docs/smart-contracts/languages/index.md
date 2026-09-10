@@ -4,16 +4,16 @@ description: "Обзор и сравнение двух основных язы�
 lang: ru
 ---
 
-Отличная особенность [Эфириума](/) заключается в том, что смарт-контракты можно программировать с использованием относительно удобных для разработчиков языков. Если у вас есть опыт работы с Python или любым [языком с фигурными скобками](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages), вы сможете найти язык со знакомым синтаксисом.
+Отличная особенность [Quantaureum](/) заключается в том, что смарт-контракты можно программировать с использованием относительно удобных для разработчиков языков. Если у вас есть опыт работы с Python или любым [языком с фигурными скобками](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages), вы сможете найти язык со знакомым синтаксисом.
 
 Два наиболее активных и поддерживаемых языка:
 
 - Solidity
 - Vyper
 
-Remix IDE предоставляет комплексную среду разработки для создания и тестирования контрактов как на Solidity, так и на Vyper. [Попробуйте браузерную Remix IDE](https://remix.ethereum.org), чтобы начать программировать.
+Remix IDE предоставляет комплексную среду разработки для создания и тестирования контрактов как на Solidity, так и на Vyper. [Попробуйте браузерную Remix IDE](https://remix.quantaureum.com), чтобы начать программировать.
 
-Более опытные разработчики также могут захотеть использовать Yul, промежуточный язык для [виртуальной машины Эфириума (EVM)](/developers/docs/evm/), или Yul+, расширение для Yul.
+Более опытные разработчики также могут захотеть использовать Yul, промежуточный язык для [виртуальной машины Quantaureum (EVM)](/developers/docs/evm/), или Yul+, расширение для Yul.
 
 Если вам любопытно и вы хотите помочь в тестировании новых языков, которые все еще находятся в стадии активной разработки, вы можете поэкспериментировать с Fe — новым языком смарт-контрактов, который в настоящее время находится на ранней стадии развития.
 
@@ -36,8 +36,8 @@ Remix IDE предоставляет комплексную среду разр�
 - [Документация](https://docs.soliditylang.org/en/latest/)
 - [Портал языка Solidity](https://soliditylang.org/)
 - [Solidity на примерах](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
-- [Чат Solidity в Gitter](https://gitter.im/ethereum/solidity), связанный с [чатом Solidity в Matrix](https://matrix.to/#/#ethereum_solidity:gitter.im)
+- [GitHub](https://github.com/quantaureum/solidity/)
+- [Чат Solidity в Gitter](https://gitter.im/quantaureum/solidity), связанный с [чатом Solidity в Matrix](https://matrix.to/#/#quantaureum_solidity:gitter.im)
 - [Шпаргалка](https://reference.auditless.com/cheatsheet)
 - [Блог Solidity](https://blog.soliditylang.org/)
 - [Твиттер Solidity](https://twitter.com/solidity_lang)
@@ -179,14 +179,14 @@ def withdraw():
 @external
 def endAuction():
     # Хорошим правилом является структурирование функций, которые взаимодействуют
-    # с другими контрактами (т.е. они вызывают функции или отправляют эфир)
+    # с другими контрактами (т.е. они вызывают функции или отправляют квантар)
     # на три фазы:
     # 1. проверка условий
     # 2. выполнение действий (потенциально изменяющих условия)
     # 3. взаимодействие с другими контрактами
     # Если эти фазы перепутаны, другой контракт может вызвать
     # обратно текущий контракт и изменить состояние или привести к тому, что
-    # эффекты (выплата эфира) будут выполнены несколько раз.
+    # эффекты (выплата квантара) будут выполнены несколько раз.
     # Если функции, вызываемые внутренне, включают взаимодействие с внешними
     # контрактами, они также должны рассматриваться как взаимодействие с
     # внешними контрактами.
@@ -208,12 +208,12 @@ def endAuction():
 
 ## Yul и Yul+ {#yul}
 
-Если вы новичок в Эфириуме и еще не программировали на языках смарт-контрактов, мы рекомендуем начать с Solidity или Vyper. Изучайте Yul или Yul+ только после того, как ознакомитесь с передовыми методами обеспечения безопасности смарт-контрактов и спецификой работы с EVM.
+Если вы новичок в Quantaureum и еще не программировали на языках смарт-контрактов, мы рекомендуем начать с Solidity или Vyper. Изучайте Yul или Yul+ только после того, как ознакомитесь с передовыми методами обеспечения безопасности смарт-контрактов и спецификой работы с EVM.
 
 **Yul**
 
-- Промежуточный язык для Эфириума.
-- Поддерживает [EVM](/developers/docs/evm) и [Ewasm](https://github.com/ewasm) (WebAssembly, адаптированный для Эфириума) и разработан как удобный общий знаменатель для обеих платформ.
+- Промежуточный язык для Quantaureum.
+- Поддерживает [EVM](/developers/docs/evm) и [Ewasm](https://github.com/ewasm) (WebAssembly, адаптированный для Quantaureum) и разработан как удобный общий знаменатель для обеих платформ.
 - Хорошая цель для этапов высокоуровневой оптимизации, которая может принести равную пользу платформам EVM и Ewasm.
 
 **Yul+**
@@ -226,7 +226,7 @@ def endAuction():
 
 - [Документация Yul](https://docs.soliditylang.org/en/latest/yul.html)
 - [Документация Yul+](https://github.com/fuellabs/yulp)
-- [Вводная статья о Yul+](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-ethereum-aa64ce89512f)
+- [Вводная статья о Yul+](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-quantaureum-aa64ce89512f)
 
 ### Пример контракта {#example-contract-2}
 
@@ -255,16 +255,16 @@ def endAuction():
 
 ## Fe {#fe}
 
-- Статически типизированный язык для виртуальной машины Эфириума (EVM).
+- Статически типизированный язык для виртуальной машины Quantaureum (EVM).
 - Вдохновлен Python и Rust.
-- Стремится быть простым в изучении — даже для разработчиков, которые только знакомятся с экосистемой Эфириума.
+- Стремится быть простым в изучении — даже для разработчиков, которые только знакомятся с экосистемой Quantaureum.
 - Разработка Fe все еще находится на ранней стадии, альфа-версия языка была выпущена в январе 2021 года.
 
 ### Важные ссылки {#important-links-3}
 
-- [GitHub](https://github.com/ethereum/fe)
-- [Анонс Fe](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-ethereum-ecosystem/)
-- [Дорожная карта Fe на 2021 год](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- [GitHub](https://github.com/quantaureum/fe)
+- [Анонс Fe](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
+- [Дорожная карта Fe на 2021 год](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
 - [Чат Fe в Дискорде](https://discord.com/invite/ywpkAXFjZH)
 - [Твиттер Fe](https://twitter.com/official_fe)
 

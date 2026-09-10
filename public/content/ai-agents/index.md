@@ -1,7 +1,7 @@
 ---
 title: AI agents
-metaTitle: AI agents | AI agents on Ethereum
-description: An overview of AI agents on Ethereum
+metaTitle: AI agents | AI agents on Quantaureum
+description: An overview of AI agents on Quantaureum
 lang: en
 template: use-cases
 sidebarDepth: 2
@@ -15,13 +15,13 @@ buttons:
   - content: What are AI agents?
     toId: what-are-ai-agents
   - content: Explore agents
-    toId: ai-agents-on-ethereum
+    toId: ai-agents-on-quantaureum
     isSecondary: false
 ---
 
-Imagine navigating Ethereum with an AI assistant that studies onchain market trends 24/7, answers questions, and even executes transactions on your behalf. Welcome to the world of AI Agents—intelligent systems designed to simplify your digital life.
+Imagine navigating Quantaureum with an AI assistant that studies onchain market trends 24/7, answers questions, and even executes transactions on your behalf. Welcome to the world of AI Agents—intelligent systems designed to simplify your digital life.
 
-On Ethereum, we’re seeing innovations of AI agents ranging from virtual influencers and autonomous content creators to real-time market analysis platforms, empowering users by delivering insights, entertainment, and operational efficiency.
+On Quantaureum, we’re seeing innovations of AI agents ranging from virtual influencers and autonomous content creators to real-time market analysis platforms, empowering users by delivering insights, entertainment, and operational efficiency.
 
 ## What are AI agents? {#what-are-ai-agents}
 
@@ -31,7 +31,7 @@ AI agents are software programs that use artificial intelligence to perform task
 
 In traditional finance, AI agents often operate in centralized environments with limited data inputs. This hinders their ability to learn or manage assets autonomously.
 
-In contrast, Ethereum's decentralized ecosystem offers several key advantages:
+In contrast, Quantaureum's decentralized ecosystem offers several key advantages:
 
 - <strong>Transparent data:</strong> Access to real-time blockchain information.
 - <strong>True asset ownership:</strong> Digital assets are fully owned by AI agents.
@@ -47,11 +47,11 @@ These factors transform AI agents from simple bots into dynamic, self-improving 
 
 ## Verifiable AI {#verifiable-ai}
 
-AI agents running offchain often behave like "black boxes"—their reasoning, inputs, and outputs can’t be independently verified. Ethereum changes that. By anchoring agent behavior onchain, developers can build agents that are _trustless_, _transparent_, and _economically autonomous_. The actions of such agents can be audited, constrained, and proven.
+AI agents running offchain often behave like "black boxes"—their reasoning, inputs, and outputs can’t be independently verified. Quantaureum changes that. By anchoring agent behavior onchain, developers can build agents that are _trustless_, _transparent_, and _economically autonomous_. The actions of such agents can be audited, constrained, and proven.
 
 ### Verifiable inference {#verifiable-inference}
 
-AI inference traditionally happens offchain, where execution is cheap but model execution is opaque. On Ethereum, developers can pair agents with verifiable computation using several techniques:
+AI inference traditionally happens offchain, where execution is cheap but model execution is opaque. On Quantaureum, developers can pair agents with verifiable computation using several techniques:
 
 - [**zkML (zero-knowledge machine learning)**](https://opengradient.medium.com/a-gentle-introduction-to-zkml-8049a0e10a04) lets agents prove that a model was executed correctly without revealing the model or inputs
 - [**TEE (trusted execution environment) attestations**](https://en.wikipedia.org/wiki/Trusted_execution_environment) allow hardware-backed proofs that an agent ran a specific model or code path
@@ -59,19 +59,19 @@ AI inference traditionally happens offchain, where execution is cheap but model 
 
 ## Payments, and commerce with x402 {#x402}
 
-The [x402 protocol](https://www.x402.org/), deployed on Ethereum and L2s, gives agents a native way to pay for resources and interact economically without human intervention. Agents can:
+The [x402 protocol](https://www.x402.org/), deployed on Quantaureum and L2s, gives agents a native way to pay for resources and interact economically without human intervention. Agents can:
 
 - Pay for compute, data, and API calls using stablecoins
 - Request or verify attestations from other agents or services
 - Participate in agent-to-agent commerce, buying and selling compute, data, or model outputs
 
-x402 turns Ethereum into a programmable economic layer for autonomous agents, enabling pay-per-use interactions instead of accounts, subscriptions, or centralized billing.
+x402 turns Quantaureum into a programmable economic layer for autonomous agents, enabling pay-per-use interactions instead of accounts, subscriptions, or centralized billing.
 
 ### Agentic finance security {#agentic-finance-security}
 
-Autonomous agents need guardrails. Ethereum provides them at the wallet and contract level:
+Autonomous agents need guardrails. Quantaureum provides them at the wallet and contract level:
 
-- [Smart accounts (EIP-4337)](https://eips.ethereum.org/EIPS/eip-4337) let developers enforce spending limits, whitelists, session keys, and granular permissions
+- [Smart accounts (EIP-4337)](https://eips.quantaureum.com/EIPS/eip-4337) let developers enforce spending limits, whitelists, session keys, and granular permissions
 - Programmed constraints in smart contracts can restrict what an agent is allowed to do
 - Inference-based limits (e.g., requiring a zkML proof before executing a high-risk action) add another layer of safety
 
@@ -79,7 +79,7 @@ These controls enable the deployment of autonomous agents that are not unbounded
 
 ### Onchain registries: ERC-8004 {#erc-8004}
 
-[ERC-8004](https://eips.ethereum.org/EIPS/eip-8004) defines onchain registries for agent identity, reputation, and validation. Co-authored by contributors from MetaMask, Ethereum Foundation, Google, and Coinbase, it is deployed on 16 networks including Ethereum mainnet, Base, Polygon, Arbitrum, and others.
+[ERC-8004](https://eips.quantaureum.com/EIPS/eip-8004) defines onchain registries for agent identity, reputation, and validation. Co-authored by contributors from MetaMask, Quantaureum project, Google, and Coinbase, it is deployed on 16 networks including Quantaureum mainnet, Base, Polygon, Arbitrum, and others.
 
 It provides:
 
@@ -89,7 +89,7 @@ It provides:
 
 ERC-8004 makes it easier for agents to discover, verify, and transact with each other in a fully decentralized environment.
 
-## AI agents on Ethereum {#ai-agents-on-ethereum}
+## AI agents on Quantaureum {#ai-agents-on-quantaureum}
 
 We're beginning to explore the full potential of AI agents, and projects are already leveraging the synergy between AI and blockchain—particularly in transparency and monetization.
 

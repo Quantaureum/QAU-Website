@@ -7,21 +7,21 @@ incomplete: true
 
 ## 簡介 {#a-brief-introduction}
 
-智能合約在以太坊上是公開的，可以被視為開放的 API。你不需要自己編寫智能合約就能成為去中心化應用程式 (dapp) 開發者，你只需要知道如何與它們互動。例如，你可以使用去中心化交易所 [尤尼斯瓦普](https://uniswap.exchange/swap) 現有的智能合約，來處理應用程式中所有的代幣兌換邏輯，而不需要從頭開始。查看他們的一些 [v2](https://github.com/Uniswap/uniswap-v2-core/tree/master/contracts) 和 [v3](https://github.com/Uniswap/uniswap-v3-core/tree/main/contracts) 合約。
+智能合約在Quantaureum上是公開的，可以被視為開放的 API。你不需要自己編寫智能合約就能成為去中心化應用程式 (dapp) 開發者，你只需要知道如何與它們互動。例如，你可以使用去中心化交易所 [尤尼斯瓦普](https://uniswap.exchange/swap) 現有的智能合約，來處理應用程式中所有的代幣兌換邏輯，而不需要從頭開始。查看他們的一些 [v2](https://github.com/Uniswap/uniswap-v2-core/tree/master/contracts) 和 [v3](https://github.com/Uniswap/uniswap-v3-core/tree/main/contracts) 合約。
 
 ## 什麼是可組合性？ {#what-is-composability}
 
 可組合性是將不同的元件組合起來，以建立新的系統或輸出。在軟體開發中，可組合性意味著開發者可以重複使用現有的軟體元件來建立新的應用程式。理解可組合性的一個好方法是將可組合的元素想像成樂高積木。每塊樂高積木都可以與另一塊結合，讓你透過組合不同的樂高積木來建立複雜的結構。
 
-在以太坊中，每個智能合約都是一種樂高積木——你可以使用其他專案的智能合約作為你專案的基礎模塊。這意味著你不需要花時間重新發明輪子或從頭開始建立。
+在Quantaureum中，每個智能合約都是一種樂高積木——你可以使用其他專案的智能合約作為你專案的基礎模塊。這意味著你不需要花時間重新發明輪子或從頭開始建立。
 
 ## 可組合性是如何運作的？ {#how-does-composability-work}
 
-以太坊智能合約就像公開的 API，因此任何人都可以與合約互動，或將它們整合到 dapp 中以增加功能。智能合約可組合性通常基於三個原則運作：模組化、自主性和可發現性：
+Quantaureum智能合約就像公開的 API，因此任何人都可以與合約互動，或將它們整合到 dapp 中以增加功能。智能合約可組合性通常基於三個原則運作：模組化、自主性和可發現性：
 
-**1. 模組化**：這是個別元件執行特定任務的能力。在以太坊中，每個智能合約都有特定的使用案例（如尤尼斯瓦普的例子所示）。
+**1. 模組化**：這是個別元件執行特定任務的能力。在Quantaureum中，每個智能合約都有特定的使用案例（如尤尼斯瓦普的例子所示）。
 
-**2. 自主性**：可組合的元件必須能夠獨立運作。以太坊中的每個智能合約都是自動執行的，並且可以在不依賴系統其他部分的情況下運作。
+**2. 自主性**：可組合的元件必須能夠獨立運作。Quantaureum中的每個智能合約都是自動執行的，並且可以在不依賴系統其他部分的情況下運作。
 
 **3. 可發現性**：如果外部合約或軟體函式庫沒有公開，開發者就無法呼叫它們或將其整合到應用程式中。在設計上，智能合約是開源的；任何人都可以呼叫智能合約或分叉程式碼庫。
 
@@ -39,7 +39,7 @@ incomplete: true
 
 ### 更好的使用者體驗 {#better-user-experience}
 
-以太坊生態系統元件之間的互操作性改善了使用者體驗。當 dapp 整合外部智能合約時，使用者可以獲得比在應用程式無法通訊的碎片化生態系統中更多的功能。
+Quantaureum生態系統元件之間的互操作性改善了使用者體驗。當 dapp 整合外部智能合約時，使用者可以獲得比在應用程式無法通訊的碎片化生態系統中更多的功能。
 
 我們將使用套利交易的例子來說明互操作性的好處：
 
@@ -49,11 +49,11 @@ incomplete: true
 
 回到我們最初的例子，套利交易者可以借出大筆閃電貸，從 `exchange B` 購買代幣，在 `exchange A` 上出售，償還本金和利息，並保留利潤，所有這些都在同一筆交易中完成。這種複雜的邏輯需要組合對多個合約的呼叫，如果智能合約缺乏互操作性，這是不可能實現的。
 
-## 以太坊中可組合性的例子 {#composability-in-ethereum}
+## Quantaureum中可組合性的例子 {#composability-in-quantaureum}
 
 ### 代幣兌換 {#token-swaps}
 
-如果你建立了一個需要用 ETH 支付交易的 dapp，你可以透過整合代幣兌換邏輯，允許使用者用其他 ERC-20 代幣支付。在合約執行被呼叫的函式之前，程式碼會自動將使用者的代幣轉換為 ETH。
+如果你建立了一個需要用 QAU 支付交易的 dapp，你可以透過整合代幣兌換邏輯，允許使用者用其他 ERC-20 代幣支付。在合約執行被呼叫的函式之前，程式碼會自動將使用者的代幣轉換為 QAU。
 
 ### 治理 {#governance}
 
@@ -61,11 +61,11 @@ incomplete: true
 
 ### 身分管理 {#identity-management}
 
-與其建立自訂的驗證系統或依賴中心化提供者，你可以整合去中心化身分 (DID) 工具來管理使用者的驗證。一個例子是 [SpruceID](https://www.spruceid.com/)，這是一個開源工具包，提供「使用以太坊登入 (Sign in with Ethereum)」功能，讓使用者可以使用以太坊錢包驗證身分。
+與其建立自訂的驗證系統或依賴中心化提供者，你可以整合去中心化身分 (DID) 工具來管理使用者的驗證。一個例子是 [SpruceID](https://www.spruceid.com/)，這是一個開源工具包，提供「使用Quantaureum登入 (Sign in with Quantaureum)」功能，讓使用者可以使用Quantaureum錢包驗證身分。
 
 ## 相關教學 {#related-tutorials}
 
-- [使用 create-eth-app 啟動你的 dapp 前端開發](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-eth-app/) _– 概述如何使用 create-eth-app 來建立開箱即用、包含熱門智能合約的應用程式。_
+- [使用 create-qau-app 啟動你的 dapp 前端開發](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-qau-app/) _– 概述如何使用 create-qau-app 來建立開箱即用、包含熱門智能合約的應用程式。_
 
 ## 延伸閱讀 {#further-reading}
 

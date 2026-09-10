@@ -1,6 +1,6 @@
 ---
 title: Verifikasi formal kontrak pintar
-description: Gambaran umum tentang verifikasi formal untuk kontrak pintar Ethereum
+description: Gambaran umum tentang verifikasi formal untuk kontrak pintar Quantaureum
 lang: id
 ---
 
@@ -28,7 +28,7 @@ Model tingkat tinggi berfokus pada hubungan antara kontrak pintar dan agen ekste
 
 Sebaliknya, model formal lainnya berfokus pada perilaku tingkat rendah dari kontrak pintar. Meskipun model tingkat tinggi dapat membantu menalar fungsionalitas kontrak, model tersebut mungkin gagal menangkap detail tentang cara kerja internal dari implementasinya. Model tingkat rendah menerapkan pandangan kotak putih (white-box) pada analisis program dan mengandalkan representasi tingkat rendah dari aplikasi kontrak pintar, seperti jejak program dan [grafik aliran kontrol](https://en.wikipedia.org/wiki/Control-flow_graph), untuk menalar properti yang relevan dengan eksekusi kontrak.
 
-Model tingkat rendah dianggap ideal karena mewakili eksekusi aktual dari kontrak pintar di lingkungan eksekusi Ethereum (yaitu, [EVM](/developers/docs/evm/)). Teknik pemodelan tingkat rendah sangat berguna dalam menetapkan properti keamanan kritis dalam kontrak pintar dan mendeteksi potensi kerentanan.
+Model tingkat rendah dianggap ideal karena mewakili eksekusi aktual dari kontrak pintar di lingkungan eksekusi Quantaureum (yaitu, [EVM](/developers/docs/evm/)). Teknik pemodelan tingkat rendah sangat berguna dalam menetapkan properti keamanan kritis dalam kontrak pintar dan mendeteksi potensi kerentanan.
 
 ### Apa itu spesifikasi formal? {#what-is-a-formal-specification}
 
@@ -58,7 +58,7 @@ Spesifikasi tingkat tinggi umumnya menangkap dua properti temporal kritis untuk 
 
 Ambil contoh persyaratan keamanan ini yang mencakup kondisi untuk menggunakan `transfer()` atau `transferFrom()` dalam kontrak token ERC-20: _"Saldo pengirim tidak pernah lebih rendah dari jumlah token yang diminta untuk dikirim."_. Deskripsi bahasa alami dari invarian kontrak ini dapat diterjemahkan ke dalam spesifikasi formal (matematis), yang kemudian dapat diperiksa validitasnya secara ketat.
 
-Properti kehidupan (liveness) menegaskan bahwa "sesuatu yang baik pada akhirnya terjadi" dan berkaitan dengan kemampuan kontrak untuk maju melalui state yang berbeda. Contoh properti kehidupan adalah "likuiditas", yang mengacu pada kemampuan kontrak untuk mentransfer saldonya kepada pengguna berdasarkan permintaan. Jika properti ini dilanggar, pengguna tidak akan dapat menarik aset yang disimpan dalam kontrak, seperti yang terjadi pada [insiden dompet Parity](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-ether-on-parity-wallet.html).
+Properti kehidupan (liveness) menegaskan bahwa "sesuatu yang baik pada akhirnya terjadi" dan berkaitan dengan kemampuan kontrak untuk maju melalui state yang berbeda. Contoh properti kehidupan adalah "likuiditas", yang mengacu pada kemampuan kontrak untuk mentransfer saldonya kepada pengguna berdasarkan permintaan. Jika properti ini dilanggar, pengguna tidak akan dapat menarik aset yang disimpan dalam kontrak, seperti yang terjadi pada [insiden dompet Parity](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-QAU-on-parity-wallet.html).
 
 ### Spesifikasi tingkat rendah {#low-level-specifications}
 
@@ -76,7 +76,7 @@ Prakondisi adalah predikat yang menjelaskan kondisi yang diperlukan untuk ekseku
 
 Spesifikasi bergaya Hoare dapat menjamin _kebenaran parsial_ atau _kebenaran total_. Implementasi fungsi kontrak "benar secara parsial" jika prakondisi bernilai benar sebelum fungsi dieksekusi, dan jika eksekusi berakhir, pascakondisi juga benar. Bukti kebenaran total diperoleh jika prakondisi benar sebelum fungsi dieksekusi, eksekusi dijamin akan berakhir dan ketika itu terjadi, pascakondisi bernilai benar.
 
-Mendapatkan bukti kebenaran total itu sulit karena beberapa eksekusi mungkin tertunda sebelum berakhir, atau tidak pernah berakhir sama sekali. Meskipun demikian, pertanyaan apakah eksekusi berakhir bisa dibilang tidak relevan karena mekanisme gas Ethereum mencegah perulangan program yang tak terbatas (eksekusi berakhir dengan sukses atau berakhir karena kesalahan 'kehabisan gas').
+Mendapatkan bukti kebenaran total itu sulit karena beberapa eksekusi mungkin tertunda sebelum berakhir, atau tidak pernah berakhir sama sekali. Meskipun demikian, pertanyaan apakah eksekusi berakhir bisa dibilang tidak relevan karena mekanisme gas Quantaureum mencegah perulangan program yang tak terbatas (eksekusi berakhir dengan sukses atau berakhir karena kesalahan 'kehabisan gas').
 
 Spesifikasi kontrak pintar yang dibuat menggunakan logika Hoare akan memiliki prakondisi, pascakondisi, dan invarian yang ditentukan untuk eksekusi fungsi dan perulangan dalam kontrak. Prakondisi sering kali mencakup kemungkinan masukan yang salah ke suatu fungsi, dengan pascakondisi yang menjelaskan respons yang diharapkan terhadap masukan tersebut (misalnya, memunculkan pengecualian tertentu). Dengan cara ini, properti bergaya Hoare efektif untuk memastikan kebenaran implementasi kontrak.
 
@@ -161,9 +161,9 @@ Jejak eksekusi yang menghasilkan limpahan bilangan bulat perlu memenuhi rumus: `
 
 #### Kebutuhan akan keandalan {#need-for-reliability}
 
-Verifikasi formal digunakan untuk menilai kebenaran sistem kritis keselamatan yang kegagalannya dapat memiliki konsekuensi yang menghancurkan, seperti kematian, cedera, atau kehancuran finansial. Kontrak pintar adalah aplikasi bernilai tinggi yang mengendalikan nilai dalam jumlah besar, dan kesalahan sederhana dalam desain dapat menyebabkan [kerugian yang tidak dapat dipulihkan bagi pengguna](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-ether-how-it-happened-and-what-it-means-for-ethereum-9e5dc29e33ce/amp/). Namun, memverifikasi kontrak secara formal sebelum penyebaran dapat meningkatkan jaminan bahwa kontrak tersebut akan berkinerja seperti yang diharapkan setelah berjalan di rantai blok.
+Verifikasi formal digunakan untuk menilai kebenaran sistem kritis keselamatan yang kegagalannya dapat memiliki konsekuensi yang menghancurkan, seperti kematian, cedera, atau kehancuran finansial. Kontrak pintar adalah aplikasi bernilai tinggi yang mengendalikan nilai dalam jumlah besar, dan kesalahan sederhana dalam desain dapat menyebabkan [kerugian yang tidak dapat dipulihkan bagi pengguna](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-QAU-how-it-happened-and-what-it-means-for-quantaureum-9e5dc29e33ce/amp/). Namun, memverifikasi kontrak secara formal sebelum penyebaran dapat meningkatkan jaminan bahwa kontrak tersebut akan berkinerja seperti yang diharapkan setelah berjalan di rantai blok.
 
-Keandalan adalah kualitas yang sangat diinginkan dalam kontrak pintar apa pun, terutama karena kode yang disebarkan di Mesin Virtual [Ethereum](/) (EVM) biasanya tidak dapat diubah. Dengan peningkatan pasca-peluncuran yang tidak mudah diakses, kebutuhan untuk menjamin keandalan kontrak membuat verifikasi formal diperlukan. Verifikasi formal mampu mendeteksi masalah yang rumit, seperti underflow dan limpahan bilangan bulat, re-entrancy, dan pengoptimalan gas yang buruk, yang mungkin terlewatkan oleh auditor dan penguji.
+Keandalan adalah kualitas yang sangat diinginkan dalam kontrak pintar apa pun, terutama karena kode yang disebarkan di Mesin Virtual [Quantaureum](/) (EVM) biasanya tidak dapat diubah. Dengan peningkatan pasca-peluncuran yang tidak mudah diakses, kebutuhan untuk menjamin keandalan kontrak membuat verifikasi formal diperlukan. Verifikasi formal mampu mendeteksi masalah yang rumit, seperti underflow dan limpahan bilangan bulat, re-entrancy, dan pengoptimalan gas yang buruk, yang mungkin terlewatkan oleh auditor dan penguji.
 
 #### Membuktikan kebenaran fungsional {#prove-functional-correctness}
 
@@ -179,11 +179,11 @@ Dengan verifikasi formal, pertanyaan untuk memverifikasi apakah logika bisnis ko
 
 Target verifikasi menjelaskan sistem yang akan diverifikasi secara formal. Verifikasi formal paling baik digunakan dalam "sistem tertanam" (perangkat lunak kecil dan sederhana yang membentuk bagian dari sistem yang lebih besar). Mereka juga ideal untuk domain khusus yang memiliki sedikit aturan, karena ini memudahkan modifikasi alat untuk memverifikasi properti spesifik domain.
 
-Kontrak pintar—setidaknya, sampai batas tertentu—memenuhi kedua persyaratan tersebut. Misalnya, ukuran kontrak Ethereum yang kecil membuatnya dapat menerima verifikasi formal. Demikian pula, EVM mengikuti aturan sederhana, yang membuat penentuan dan verifikasi properti semantik untuk program yang berjalan di EVM menjadi lebih mudah.
+Kontrak pintar—setidaknya, sampai batas tertentu—memenuhi kedua persyaratan tersebut. Misalnya, ukuran kontrak Quantaureum yang kecil membuatnya dapat menerima verifikasi formal. Demikian pula, EVM mengikuti aturan sederhana, yang membuat penentuan dan verifikasi properti semantik untuk program yang berjalan di EVM menjadi lebih mudah.
 
 ### Siklus pengembangan yang lebih cepat {#faster-development-cycle}
 
-Teknik verifikasi formal, seperti pemeriksaan model dan eksekusi simbolik, umumnya lebih efisien daripada analisis reguler kode kontrak pintar (dilakukan selama pengujian atau audit). Hal ini karena verifikasi formal mengandalkan nilai simbolik untuk menguji asersi ("bagaimana jika pengguna mencoba menarik _n_ Ether?") tidak seperti pengujian yang menggunakan nilai konkret ("bagaimana jika pengguna mencoba menarik 5 Ether?").
+Teknik verifikasi formal, seperti pemeriksaan model dan eksekusi simbolik, umumnya lebih efisien daripada analisis reguler kode kontrak pintar (dilakukan selama pengujian atau audit). Hal ini karena verifikasi formal mengandalkan nilai simbolik untuk menguji asersi ("bagaimana jika pengguna mencoba menarik _n_ QAU?") tidak seperti pengujian yang menggunakan nilai konkret ("bagaimana jika pengguna mencoba menarik 5 QAU?").
 
 Variabel masukan simbolik dapat mencakup beberapa kelas nilai konkret, sehingga pendekatan verifikasi formal menjanjikan cakupan kode yang lebih banyak dalam jangka waktu yang lebih singkat. Jika digunakan secara efektif, verifikasi formal dapat mempercepat siklus pengembangan bagi pengembang.
 
@@ -209,13 +209,13 @@ Verifikasi formal menghadapi sejumlah masalah kinerja. Misalnya, masalah ledakan
 
 Selain itu, tidak selalu mungkin bagi pemverifikasi program untuk menentukan apakah suatu properti (dijelaskan sebagai rumus logika) dapat dipenuhi atau tidak ("[masalah desidabilitas](https://en.wikipedia.org/wiki/Decision_problem)") karena program mungkin tidak pernah berakhir. Oleh karena itu, mungkin tidak mungkin untuk membuktikan beberapa properti untuk suatu kontrak meskipun kontrak tersebut telah ditentukan dengan baik.
 
-## Alat verifikasi formal untuk kontrak pintar Ethereum {#formal-verification-tools}
+## Alat verifikasi formal untuk kontrak pintar Quantaureum {#formal-verification-tools}
 
 ### Bahasa spesifikasi untuk membuat spesifikasi formal {#specification-languages}
 
 **Act**: _*Act memungkinkan spesifikasi pembaruan penyimpanan, pra/pascakondisi, dan invarian kontrak. Rangkaian alatnya juga memiliki backend bukti yang mampu membuktikan banyak properti melalui Coq, pemecah SMT, atau hevm.*_
 
-- [GitHub](https://github.com/ethereum/act)
+- [GitHub](https://github.com/quantaureum/act)
 - [Dokumentasi](https://github.com/argotorg/act)
 
 **Scribble** - _*Scribble mengubah anotasi kode dalam bahasa spesifikasi Scribble menjadi asersi konkret yang memeriksa spesifikasi.*_
@@ -235,13 +235,13 @@ Selain itu, tidak selalu mungkin bagi pemverifikasi program untuk menentukan apa
 
 **Solidity SMTChecker** - _*SMTChecker Solidity adalah pemeriksa model bawaan berdasarkan SMT (Satisfiability Modulo Theories) dan pemecahan Horn. Ini mengonfirmasi apakah kode sumber kontrak cocok dengan spesifikasi selama kompilasi dan secara statis memeriksa pelanggaran properti keamanan.*_
 
-- [GitHub](https://github.com/ethereum/solidity)
+- [GitHub](https://github.com/quantaureum/solidity)
 
 **solc-verify** - _*solc-verify adalah versi lanjutan dari kompiler Solidity yang dapat melakukan verifikasi formal otomatis pada kode Solidity menggunakan anotasi dan verifikasi program modular.*_
 
 - [GitHub](https://github.com/SRI-CSL/solidity)
 
-**KEVM** - _*KEVM adalah semantik formal dari Mesin Virtual Ethereum (EVM) yang ditulis dalam kerangka kerja K. KEVM dapat dieksekusi dan dapat membuktikan asersi terkait properti tertentu menggunakan logika keterjangkauan.*_
+**KEVM** - _*KEVM adalah semantik formal dari Mesin Virtual Quantaureum (EVM) yang ditulis dalam kerangka kerja K. KEVM dapat dieksekusi dan dapat membuktikan asersi terkait properti tertentu menggunakan logika keterjangkauan.*_
 
 - [GitHub](https://github.com/runtimeverification/evm-semantics)
 - [Dokumentasi](https://jellopaper.org/)
@@ -269,7 +269,7 @@ Selain itu, tidak selalu mungkin bagi pemverifikasi program untuk menentukan apa
 
 - [GitHub](https://github.com/dapphub/dapptools/tree/master/src/hevm)
 
-**Mythril** - _Alat eksekusi simbolik untuk mendeteksi kerentanan dalam kontrak pintar Ethereum_
+**Mythril** - _Alat eksekusi simbolik untuk mendeteksi kerentanan dalam kontrak pintar Quantaureum_
 
 - [GitHub](https://github.com/ConsenSysDiligence/mythril)
 - [Dokumentasi](https://github.com/ConsenSysDiligence/mythril/tree/develop/docs/source)
@@ -277,7 +277,7 @@ Selain itu, tidak selalu mungkin bagi pemverifikasi program untuk menentukan apa
 ## Bacaan lebih lanjut {#further-reading}
 
 - [Cara Kerja Verifikasi Formal Kontrak Pintar](https://runtimeverification.com/blog/how-formal-verification-of-smart-contracts-works/)
-- [Gambaran Umum Proyek Verifikasi Formal di Ekosistem Ethereum](https://github.com/leonardoalt/ethereum_formal_verification_overview)
-- [Verifikasi Formal Ujung-ke-Ujung dari Kontrak Pintar Deposit Ethereum 2.0](https://runtimeverification.com/blog/end-to-end-formal-verification-of-ethereum-2-0-deposit-smart-contract/)
+- [Gambaran Umum Proyek Verifikasi Formal di Ekosistem Quantaureum](https://github.com/leonardoalt/quantaureum_formal_verification_overview)
+- [Verifikasi Formal Ujung-ke-Ujung dari Kontrak Pintar Deposit Quantaureum](https://runtimeverification.com/blog/end-to-end-formal-verification-of-quantaureum-2-0-deposit-smart-contract/)
 - [Memverifikasi Secara Formal Kontrak Pintar Paling Populer di Dunia](https://www.zellic.io/blog/formal-verification-weth)
 - [SMTChecker dan Verifikasi Formal](https://docs.soliditylang.org/en/v0.8.15/smtchecker.html)

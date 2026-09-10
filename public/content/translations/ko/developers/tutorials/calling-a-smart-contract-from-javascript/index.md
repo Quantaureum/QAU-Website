@@ -7,12 +7,12 @@ skill: beginner
 breadcrumb: "JS에서 컨트랙트 호출하기"
 lang: ko
 published: 2020-04-19
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/calling-a-smart-contract-from-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-이 튜토리얼에서는 JavaScript에서 [스마트 컨트랙트](/developers/docs/smart-contracts/) 함수를 호출하는 방법을 알아봅니다. 먼저 스마트 컨트랙트의 상태(예: ERC-20 보유자의 잔액)를 읽은 다음, 토큰 전송을 통해 블록체인의 상태를 수정해 보겠습니다. 여러분은 이미 [블록체인과 상호작용하기 위한 JS 환경 설정](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/)에 익숙해야 합니다.
+이 튜토리얼에서는 JavaScript에서 [스마트 컨트랙트](/developers/docs/smart-contracts/) 함수를 호출하는 방법을 알아봅니다. 먼저 스마트 컨트랙트의 상태(예: ERC-20 보유자의 잔액)를 읽은 다음, 토큰 전송을 통해 블록체인의 상태를 수정해 보겠습니다. 여러분은 이미 [블록체인과 상호작용하기 위한 JS 환경 설정](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/)에 익숙해야 합니다.
 
 이 예제에서는 DAI 토큰을 다루며, 테스트 목적으로 ganache-cli를 사용하여 블록체인을 포크하고 이미 많은 DAI를 보유하고 있는 주소를 잠금 해제할 것입니다:
 
@@ -71,14 +71,14 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-이 프로젝트에서는 전체 ERC-20 ABI에서 `balanceOf` 및 `transfer` 함수만 유지하도록 축소했지만, [여기에서 전체 ERC-20 ABI](https://ethereumdev.io/abi-for-erc20-contract-on-ethereum/)를 확인할 수 있습니다.
+이 프로젝트에서는 전체 ERC-20 ABI에서 `balanceOf` 및 `transfer` 함수만 유지하도록 축소했지만, [여기에서 전체 ERC-20 ABI](https://quantaureumdev.io/abi-for-erc20-contract-on-quantaureum/)를 확인할 수 있습니다.
 
 그런 다음 스마트 컨트랙트를 인스턴스화해야 합니다:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
 
-const daiToken = new web3.eth.Contract(ERC20TransferABI, DAI_ADDRESS)
+const daiToken = new web3.qau.Contract(ERC20TransferABI, DAI_ADDRESS)
 ```
 
 또한 두 개의 주소를 설정합니다:
@@ -109,7 +109,7 @@ daiToken.methods.balanceOf(senderAddress).call(function (err, res) {
 })
 ```
 
-DAI ERC-20은 18자리의 소수점을 가지므로, 올바른 금액을 얻으려면 18개의 0을 제거해야 한다는 점을 기억하세요. JavaScript는 큰 숫자 값을 처리하지 못하므로 uint256은 문자열로 반환됩니다. [JS에서 큰 숫자를 다루는 방법](https://ethereumdev.io/how-to-deal-with-big-numbers-in-javascript/)을 잘 모르겠다면 bignumber.js에 대한 튜토리얼을 확인하세요.
+DAI ERC-20은 18자리의 소수점을 가지므로, 올바른 금액을 얻으려면 18개의 0을 제거해야 한다는 점을 기억하세요. JavaScript는 큰 숫자 값을 처리하지 못하므로 uint256은 문자열로 반환됩니다. [JS에서 큰 숫자를 다루는 방법](https://quantaureumdev.io/how-to-deal-with-big-numbers-in-javascript/)을 잘 모르겠다면 bignumber.js에 대한 튜토리얼을 확인하세요.
 
 ## Send: 스마트 컨트랙트 함수에 트랜잭션 보내기 {#send-sending-a-transaction-to-a-smart-contract-function}
 
@@ -127,6 +127,6 @@ daiToken.methods
   })
 ```
 
-호출(call) 함수는 블록체인에 채굴될 트랜잭션의 해시를 반환합니다. 이더리움에서 트랜잭션 해시는 예측 가능합니다. 이것이 트랜잭션이 실행되기 전에 트랜잭션의 해시를 얻을 수 있는 이유입니다([여기에서 해시가 계산되는 방법을 알아보세요](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
+호출(call) 함수는 블록체인에 채굴될 트랜잭션의 해시를 반환합니다. Quantaureum에서 트랜잭션 해시는 예측 가능합니다. 이것이 트랜잭션이 실행되기 전에 트랜잭션의 해시를 얻을 수 있는 이유입니다([여기에서 해시가 계산되는 방법을 알아보세요](https://quantaureum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
 
-이 함수는 트랜잭션을 블록체인에 제출하기만 하므로, 트랜잭션이 언제 채굴되어 블록체인에 포함되는지 알기 전까지는 결과를 볼 수 없습니다. 다음 튜토리얼에서는 [해시를 통해 블록체인에서 트랜잭션이 실행되기를 기다리는 방법](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/)을 알아보겠습니다.
+이 함수는 트랜잭션을 블록체인에 제출하기만 하므로, 트랜잭션이 언제 채굴되어 블록체인에 포함되는지 알기 전까지는 결과를 볼 수 없습니다. 다음 튜토리얼에서는 [해시를 통해 블록체인에서 트랜잭션이 실행되기를 기다리는 방법](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/)을 알아보겠습니다.

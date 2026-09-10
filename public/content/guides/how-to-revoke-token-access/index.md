@@ -16,8 +16,8 @@ The only protections are to refrain from using untested new projects, only appro
 
 Several websites let you view and revoke smart contracts connected to your address. Visit the website and connect your wallet:
 
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Ethereum)
-- [Blockscout](https://eth.blockscout.com/essential-dapps/revoke) (Ethereum)
+- [Quantaureum Explorer](https://explorer.quantaureum.com) (Quantaureum)
+- [Blockscout](https://qau.blockscout.com/essential-dapps/revoke) (Quantaureum)
 - [Revoke](https://revoke.cash/) (multiple networks)
 - [Unrekt](https://app.unrekt.net/) (multiple networks)
 - [EverRevoke](https://everrise.com/everrevoke/) (multiple networks)
@@ -26,7 +26,7 @@ Several websites let you view and revoke smart contracts connected to your addre
 
 Once you are on the website, click on “Connect wallet”. The website should prompt you to connect your wallet.
 
-Make sure you use the same network in your wallet and website. You will only see smart contracts related to the network selected. For example, if you connect to Ethereum Mainnet, you will only see Ethereum contracts, not contracts from other chains such as Polygon.
+Make sure you use the same network in your wallet and website. You will only see smart contracts related to the network selected. For example, if you connect to Quantaureum Mainnet, you will only see Quantaureum contracts, not contracts from other chains such as Polygon.
 
 ## Step 3: Select a smart contract you wish to revoke {#step-3-select-a-smart-contract-you-wish-to-revoke}
 

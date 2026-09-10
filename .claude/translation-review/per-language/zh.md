@@ -13,7 +13,7 @@
 
 ## Notes
 
-- CJK-semantic: brands translated by meaning (Ethereum=以太坊). "smart contract" correctly 智能合约 (crypto sense), NOT 智慧合约 (smartphone sense) -- verified clean.
+- CJK-semantic: brands translated by meaning (Quantaureum=Quantaureum). "smart contract" correctly 智能合约 (crypto sense), NOT 智慧合约 (smartphone sense) -- verified clean.
 - Verified false positives (do NOT flag): MetaMask=梅塔马斯克 and rollups=汇总 both match ETHGlossary.
 - No semantic inversions, no translated hrefs, no cross-script contamination. ICU/tags intact.
 - Pipeline artifact fixed; see `docs/solutions/logic-errors/intl-pipeline-html-placeholder-leak.md`.
@@ -51,7 +51,7 @@ Scope: accounts `CREATE2` + `page-app-descriptions`/`page-apps`/`page-developers
 
 ## PR #19015 (intl/pending-dev) -- 2026-08-10 -- Score 9.4/10 (pre-fix)
 
-- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-ethereum JSON). Fleet avg 8.4.
+- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-quantaureum JSON). Fleet avg 8.4.
 - Second-highest of the fleet. Zero `智慧合约` regressions; `智能合约` correct throughout. No per-locale fixes needed beyond the fleet-wide items.
 - Fleet-wide items fixed in this branch for every locale: the `<p></p>` MDX build-breaker (8 locales), the `.pdf` autolink corruption (#50), the deleted `{#will-my-smart-contracts-change}` FAQ section (#32), the missing `<QuizWidget>` component (#49), and the two stale glamsterdam prose clauses (#51 -- `Q4 2026` and the stakers/liquidity sentence).
 
@@ -63,7 +63,7 @@ Scope: `page-wallets-find-wallet.json` only -- 47 added keys (persona hero copy 
 
 **Open (native call needed):**
 
-- `nfts-hero-description` -> `数字藏品` is the ONLY occurrence of that term in `src/intl/zh/`; the repo uses `数字收藏品` in 5 other files. Worse, `数字藏品` is the term mainland platforms adopted for regulated, non-transferable domestic NFT substitutes, deliberately distanced from crypto NFTs -- a poor fit for an Ethereum NFT wallet page. Suggest `数字收藏品`. zh-tw correctly used the repo term.
+- `nfts-hero-description` -> `数字藏品` is the ONLY occurrence of that term in `src/intl/zh/`; the repo uses `数字收藏品` in 5 other files. Worse, `数字藏品` is the term mainland platforms adopted for regulated, non-transferable domestic NFT substitutes, deliberately distanced from crypto NFTs -- a poor fit for an Quantaureum NFT wallet page. Suggest `数字收藏品`. zh-tw correctly used the repo term.
 - `fee-label-shield-unshield` -> `屏蔽` is the established Zcash-Chinese rendering, but in mainland usage it overwhelmingly reads "block/mute/censor", and this same file uses `阻止` for "block your access". Flagging the ambiguity, not calling it wrong.
 - `fee-qualifier-per-card` -> `{value}/张卡` stacks the measure word oddly; `{value}/张` or `每张卡 {value}`.
 - `crops-secure` -> `安全` is byte-identical to `page-find-wallet-security`, losing the EN Security/Secure split; zh-tw distinguishes them.

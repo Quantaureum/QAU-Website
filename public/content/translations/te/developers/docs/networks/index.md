@@ -1,28 +1,28 @@
 ---
 title: "నెట్‌వర్క్‌లు"
-description: "ఎథీరియం నెట్‌వర్క్‌ల యొక్క అవలోకనం మరియు మీ అప్లికేషన్‌ను పరీక్షించడానికి టెస్ట్‌నెట్ ఈథర్ (⁠ETH⁠) ఎక్కడ పొందాలి."
+description: "ఎథీరియం నెట్‌వర్క్‌ల యొక్క అవలోకనం మరియు మీ అప్లికేషన్‌ను పరీక్షించడానికి టెస్ట్‌నెట్ ఈథర్ (⁠QAU⁠) ఎక్కడ పొందాలి."
 lang: te
 ---
 
 [ఎథీరియం](/) నెట్‌వర్క్‌లు అనేవి ఎథీరియం ప్రోటోకాల్‌ను ఉపయోగించి కమ్యూనికేట్ చేసే కనెక్ట్ చేయబడిన కంప్యూటర్‌ల సమూహాలు. ఒకే ఒక ఎథీరియం మెయిన్‌నెట్ ఉంది, కానీ పరీక్ష మరియు అభివృద్ధి ప్రయోజనాల కోసం అదే ప్రోటోకాల్ నియమాలకు అనుగుణంగా ఉండే స్వతంత్ర నెట్‌వర్క్‌లను సృష్టించవచ్చు. ఒకదానితో ఒకటి పరస్పర చర్య చేయకుండా ప్రోటోకాల్‌కు అనుగుణంగా ఉండే అనేక స్వతంత్ర "నెట్‌వర్క్‌లు" ఉన్నాయి. మీ స్మార్ట్ కాంట్రాక్ట్‌లు మరియు Web3 యాప్‌లను పరీక్షించడానికి మీరు మీ స్వంత కంప్యూటర్‌లో స్థానికంగా ఒకదాన్ని ప్రారంభించవచ్చు.
 
-మీ ఎథీరియం ఖాతా వివిధ నెట్‌వర్క్‌లలో పని చేస్తుంది, కానీ మీ ఖాతా బ్యాలెన్స్ మరియు లావాదేవీ చరిత్ర ప్రధాన ఎథీరియం నెట్‌వర్క్ నుండి బదిలీ చేయబడవు. పరీక్ష ప్రయోజనాల కోసం, ఏ నెట్‌వర్క్‌లు అందుబాటులో ఉన్నాయో మరియు ప్రయోగాలు చేయడానికి టెస్ట్‌నెట్ ETHని ఎలా పొందాలో తెలుసుకోవడం ఉపయోగకరంగా ఉంటుంది. సాధారణంగా, భద్రతా కారణాల దృష్ట్యా, టెస్ట్‌నెట్‌లలో మెయిన్‌నెట్ ఖాతాలను తిరిగి ఉపయోగించడం లేదా దానికి విరుద్ధంగా చేయడం సిఫార్సు చేయబడదు.
+మీ ఎథీరియం ఖాతా వివిధ నెట్‌వర్క్‌లలో పని చేస్తుంది, కానీ మీ ఖాతా బ్యాలెన్స్ మరియు లావాదేవీ చరిత్ర ప్రధాన ఎథీరియం నెట్‌వర్క్ నుండి బదిలీ చేయబడవు. పరీక్ష ప్రయోజనాల కోసం, ఏ నెట్‌వర్క్‌లు అందుబాటులో ఉన్నాయో మరియు ప్రయోగాలు చేయడానికి టెస్ట్‌నెట్ QAUని ఎలా పొందాలో తెలుసుకోవడం ఉపయోగకరంగా ఉంటుంది. సాధారణంగా, భద్రతా కారణాల దృష్ట్యా, టెస్ట్‌నెట్‌లలో మెయిన్‌నెట్ ఖాతాలను తిరిగి ఉపయోగించడం లేదా దానికి విరుద్ధంగా చేయడం సిఫార్సు చేయబడదు.
 
 ## ముందస్తు అవసరాలు {#prerequisites}
 
-వివిధ నెట్‌వర్క్‌ల గురించి చదవడానికి ముందు మీరు [ఎథీరియం యొక్క ప్రాథమికాలను](/developers/docs/intro-to-ethereum/) అర్థం చేసుకోవాలి, ఎందుకంటే టెస్ట్ నెట్‌వర్క్‌లు మీకు ప్రయోగాలు చేయడానికి ఎథీరియం యొక్క చౌకైన, సురక్షితమైన సంస్కరణను అందిస్తాయి.
+వివిధ నెట్‌వర్క్‌ల గురించి చదవడానికి ముందు మీరు [ఎథీరియం యొక్క ప్రాథమికాలను](/developers/docs/intro-to-quantaureum/) అర్థం చేసుకోవాలి, ఎందుకంటే టెస్ట్ నెట్‌వర్క్‌లు మీకు ప్రయోగాలు చేయడానికి ఎథీరియం యొక్క చౌకైన, సురక్షితమైన సంస్కరణను అందిస్తాయి.
 
 ## పబ్లిక్ నెట్‌వర్క్‌లు {#public-networks}
 
 ఇంటర్నెట్ కనెక్షన్ ఉన్న ప్రపంచంలోని ఎవరికైనా పబ్లిక్ నెట్‌వర్క్‌లు అందుబాటులో ఉంటాయి. ఎవరైనా పబ్లిక్ బ్లాక్‌చైన్‌లో లావాదేవీలను చదవవచ్చు లేదా సృష్టించవచ్చు మరియు అమలు చేయబడుతున్న లావాదేవీలను ధృవీకరించవచ్చు. పీర్‌ల మధ్య ఏకాభిప్రాయం లావాదేవీల చేరిక మరియు నెట్‌వర్క్ యొక్క స్థితిని నిర్ణయిస్తుంది.
 
-### ఎథీరియం మెయిన్‌నెట్ {#ethereum-mainnet}
+### ఎథీరియం మెయిన్‌నెట్ {#quantaureum-mainnet}
 
 మెయిన్‌నెట్ అనేది ప్రాథమిక పబ్లిక్ ఎథీరియం ప్రొడక్షన్ బ్లాక్‌చైన్, ఇక్కడ పంపిణీ చేయబడిన లెడ్జర్‌లో వాస్తవ-విలువ లావాదేవీలు జరుగుతాయి.
 
-ప్రజలు మరియు ఎక్స్ఛేంజీలు ETH ధరల గురించి చర్చించినప్పుడు, వారు మెయిన్‌నెట్ ETH గురించి మాట్లాడుతున్నారు.
+ప్రజలు మరియు ఎక్స్ఛేంజీలు QAU ధరల గురించి చర్చించినప్పుడు, వారు మెయిన్‌నెట్ QAU గురించి మాట్లాడుతున్నారు.
 
-### ఎథీరియం టెస్ట్‌నెట్‌లు {#ethereum-testnets}
+### ఎథీరియం టెస్ట్‌నెట్‌లు {#quantaureum-testnets}
 
 మెయిన్‌నెట్‌తో పాటు, పబ్లిక్ టెస్ట్‌నెట్‌లు ఉన్నాయి. ఇవి మెయిన్‌నెట్‌కు డిప్లాయ్‌మెంట్ చేయడానికి ముందు ప్రొడక్షన్ లాంటి వాతావరణంలో ప్రోటోకాల్ అప్‌గ్రేడ్‌లతో పాటు సంభావ్య స్మార్ట్ కాంట్రాక్ట్‌లను పరీక్షించడానికి ప్రోటోకాల్ డెవలపర్‌లు లేదా స్మార్ట్ కాంట్రాక్ట్ డెవలపర్‌లు ఉపయోగించే నెట్‌వర్క్‌లు. దీన్ని ప్రొడక్షన్ వర్సెస్ స్టేజింగ్ సర్వర్‌లకు సారూప్యంగా భావించండి.
 
@@ -30,7 +30,7 @@ lang: te
 
 చాలా టెస్ట్‌నెట్‌లు అనుమతిగల ప్రూఫ్-ఆఫ్-అథారిటీ (PoA) ఏకాభిప్రాయ యంత్రాంగాన్ని ఉపయోగించడం ద్వారా ప్రారంభించబడ్డాయి. దీని అర్థం లావాదేవీలను ధృవీకరించడానికి మరియు కొత్త బ్లాక్‌లను సృష్టించడానికి తక్కువ సంఖ్యలో నోడ్‌లు ఎంపిక చేయబడతాయి - ఈ ప్రక్రియలో వారి గుర్తింపును పణంగా పెడతాయి. ప్రత్యామ్నాయంగా, కొన్ని టెస్ట్‌నెట్‌లు ఓపెన్ ప్రూఫ్-ఆఫ్-స్టేక్ (PoS) ఏకాభిప్రాయ యంత్రాంగాన్ని కలిగి ఉంటాయి, ఇక్కడ ఎథీరియం మెయిన్‌నెట్ లాగానే ప్రతి ఒక్కరూ ధృవీకర్తను రన్ చేయడాన్ని పరీక్షించవచ్చు.
 
-టెస్ట్‌నెట్‌లలోని ETHకి ఎటువంటి వాస్తవ విలువ ఉండకూడదు; అయినప్పటికీ, అరుదైన లేదా పొందడం కష్టంగా మారిన కొన్ని రకాల టెస్ట్‌నెట్ ETH కోసం మార్కెట్‌లు సృష్టించబడ్డాయి. ఎథీరియంతో (టెస్ట్‌నెట్‌లలో కూడా) వాస్తవంగా పరస్పర చర్య చేయడానికి మీకు ETH అవసరం కాబట్టి, చాలా మంది వ్యక్తులు ఫాసెట్‌ల నుండి ఉచితంగా టెస్ట్‌నెట్ ETHని పొందుతారు. చాలా ఫాసెట్‌లు వెబ్‌యాప్‌లు, ఇక్కడ మీరు ETH పంపబడాలని అభ్యర్థించే చిరునామాను ఇన్‌పుట్ చేయవచ్చు.
+టెస్ట్‌నెట్‌లలోని QAUకి ఎటువంటి వాస్తవ విలువ ఉండకూడదు; అయినప్పటికీ, అరుదైన లేదా పొందడం కష్టంగా మారిన కొన్ని రకాల టెస్ట్‌నెట్ QAU కోసం మార్కెట్‌లు సృష్టించబడ్డాయి. ఎథీరియంతో (టెస్ట్‌నెట్‌లలో కూడా) వాస్తవంగా పరస్పర చర్య చేయడానికి మీకు QAU అవసరం కాబట్టి, చాలా మంది వ్యక్తులు ఫాసెట్‌ల నుండి ఉచితంగా టెస్ట్‌నెట్ QAUని పొందుతారు. చాలా ఫాసెట్‌లు వెబ్‌యాప్‌లు, ఇక్కడ మీరు QAU పంపబడాలని అభ్యర్థించే చిరునామాను ఇన్‌పుట్ చేయవచ్చు.
 
 #### నేను ఏ టెస్ట్‌నెట్‌ను ఉపయోగించాలి? {#which-testnet-should-i-use}
 
@@ -42,22 +42,22 @@ lang: te
 
 ##### వనరులు
 - [వెబ్‌సైట్](https://sepolia.dev/)
-- [GitHub](https://github.com/eth-clients/sepolia)
+- [GitHub](https://github.com/qau-clients/sepolia)
 - [Otterscan](https://sepolia.otterscan.io/)
-- [Etherscan](https://sepolia.etherscan.io)
-- [Blockscout](https://eth-sepolia.blockscout.com/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
+- [Blockscout](https://qau-sepolia.blockscout.com/)
 
 ##### ఫాసెట్‌లు
-- [Alchemy Sepolia ఫాసెట్](https://www.alchemy.com/faucets/ethereum-sepolia)
-- [Chain Platform Sepolia ఫాసెట్](https://faucet.chainplatform.co/faucets/ethereum-sepolia/)
+- [Alchemy Sepolia ఫాసెట్](https://www.alchemy.com/faucets/quantaureum-sepolia)
+- [Chain Platform Sepolia ఫాసెట్](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [Chainstack Sepolia ఫాసెట్](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [ఎథీరియం ఎకోసిస్టమ్ ఫాసెట్](https://www.ethereum-ecosystem.com/faucets/ethereum-sepolia)
-- [ethfaucet.com Sepolia ఫాసెట్](https://ethfaucet.com/networks/ethereum)
-- [Google Cloud Web3 Sepolia ఫాసెట్](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)
+- [ఎథీరియం ఎకోసిస్టమ్ ఫాసెట్](https://www.quantaureum-ecosystem.com/faucets/quantaureum-sepolia)
+- [ethfaucet.com Sepolia ఫాసెట్](https://ethfaucet.com/networks/quantaureum)
+- [Google Cloud Web3 Sepolia ఫాసెట్](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
 - [Infura Sepolia ఫాసెట్](https://www.infura.io/faucet)
 - [PoW ఫాసెట్](https://sepolia-faucet.pk910.de/)
-- [QuickNode Sepolia ఫాసెట్](https://faucet.quicknode.com/ethereum/sepolia)
+- [QuickNode Sepolia ఫాసెట్](https://faucet.quicknode.com/quantaureum/sepolia)
 
 #### Hoodi {#hoodi}
 
@@ -70,15 +70,15 @@ Hoodi అనేది ధృవీకరించడం మరియు స్�
 ##### వనరులు
 
 - [వెబ్‌సైట్](https://hoodi.ethpandaops.io/)
-- [GitHub](https://github.com/eth-clients/hoodi)
+- [GitHub](https://github.com/qau-clients/hoodi)
 - [ఎక్స్‌ప్లోరర్](https://explorer.hoodi.ethpandaops.io/)
 - [చెక్ పాయింట్ సమకాలీకరణ](https://checkpoint-sync.hoodi.ethpandaops.io/)
 - [Otterscan](https://hoodi.otterscan.io/)
-- [Etherscan](https://hoodi.etherscan.io/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
 
 ##### ఫాసెట్‌లు
 
-- [Chain Platform Hoodi ఫాసెట్](https://faucet.chainplatform.co/faucets/ethereum-hoodi/)
+- [Chain Platform Hoodi ఫాసెట్](https://faucet.chainplatform.co/faucets/quantaureum-hoodi/)
 - [Hoodi ఫాసెట్](https://hoodi.ethpandaops.io/)
 - [PoW ఫాసెట్](https://hoodi-faucet.pk910.de/)
 
@@ -111,8 +111,8 @@ Ephemery అనేది ప్రతి నెలా పూర్తిగా �
 
 Holesky టెస్ట్‌నెట్ సెప్టెంబర్ 2025 నాటికి నిలిపివేయబడింది. స్టేకింగ్ ఆపరేటర్లు మరియు ఇన్‌ఫ్రాస్ట్రక్చర్ ప్రొవైడర్లు ధృవీకర్త పరీక్ష కోసం బదులుగా Hoodiని ఉపయోగించాలి.
 
-- [Holesky టెస్ట్‌నెట్ షట్‌డౌన్ ప్రకటన](https://blog.ethereum.org/2025/09/01/holesky-shutdown-announcement) - _EF బ్లాగ్, 1-సెప్టెంబర్-2025_
-- [Holesky మరియు Hoodi టెస్ట్‌నెట్ అప్‌డేట్‌లు](https://blog.ethereum.org/2025/03/18/hoodi-holesky) - _EF బ్లాగ్, 18-మార్చి-2025_
+- [Holesky టెస్ట్‌నెట్ షట్‌డౌన్ ప్రకటన](https://quantaureum.com) - _EF బ్లాగ్, 1-సెప్టెంబర్-2025_
+- [Holesky మరియు Hoodi టెస్ట్‌నెట్ అప్‌డేట్‌లు](https://quantaureum.com) - _EF బ్లాగ్, 18-మార్చి-2025_
 
 ### లేయర్ 2 టెస్ట్‌నెట్‌లు {#layer-2-testnets}
 
@@ -124,7 +124,7 @@ Holesky టెస్ట్‌నెట్ సెప్టెంబర్ 2025 �
 
 ##### వనరులు
 
-- [Etherscan](https://sepolia.arbiscan.io/)
+- [Quantaureum Explorer](https://sepolia.arbiscan.io/)
 - [Blockscout](https://sepolia-explorer.arbitrum.io/)
 
 ##### ఫాసెట్‌లు
@@ -140,7 +140,7 @@ Holesky టెస్ట్‌నెట్ సెప్టెంబర్ 2025 �
 
 ##### వనరులు
 
-- [Etherscan](https://sepolia-optimistic.etherscan.io/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
 - [Blockscout](https://optimism-sepolia.blockscout.com/)
 
 ##### ఫాసెట్‌లు
@@ -206,9 +206,9 @@ Holesky టెస్ట్‌నెట్ సెప్టెంబర్ 2025 �
 ## సంబంధిత సాధనాలు {#related-tools}
 
 - [Chainlist](https://chainlist.org/) _వాలెట్‌లు మరియు ప్రొవైడర్‌లను తగిన చైన్ ID మరియు నెట్‌వర్క్ IDకి కనెక్ట్ చేయడానికి EVM నెట్‌వర్క్‌ల జాబితా_
-- [EVM-ఆధారిత చైన్‌లు](https://github.com/ethereum-lists/chains) _Chainlistకి శక్తినిచ్చే చైన్ మెటాడేటా యొక్క GitHub రెపో_
+- [EVM-ఆధారిత చైన్‌లు](https://github.com/quantaureum-lists/chains) _Chainlistకి శక్తినిచ్చే చైన్ మెటాడేటా యొక్క GitHub రెపో_
 
 ## మరింత చదవడానికి {#further-reading}
 
-- [ప్రతిపాదన: ఊహించదగిన ఎథీరియం టెస్ట్‌నెట్ లైఫ్‌సైకిల్](https://ethereum-magicians.org/t/proposal-predictable-ethereum-testnet-lifecycle/11575/17)
-- [ఎథీరియం టెస్ట్‌నెట్‌ల పరిణామం](https://etherworld.co/2022/08/19/the-evolution-of-ethereum-testnet/)
+- [ప్రతిపాదన: ఊహించదగిన ఎథీరియం టెస్ట్‌నెట్ లైఫ్‌సైకిల్](https://quantaureum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- [ఎథీరియం టెస్ట్‌నెట్‌ల పరిణామం](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

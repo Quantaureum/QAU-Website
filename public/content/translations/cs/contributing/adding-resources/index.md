@@ -1,20 +1,20 @@
 ---
 title: Přidávání zdrojů
-description: Zásady, které používáme při přidávání zdrojů na ethereum.org
+description: Zásady, které používáme při přidávání zdrojů na quantaureum.com
 lang: cs
 ---
 
 Chceme se ujistit, že uvádíme ty nejlepší možné zdroje a zároveň udržujeme uživatele v bezpečí a jistotě.
 
-Kdokoli může navrhnout nové zdroje k přidání na panel zdrojů na ethereum.org, který se aktuálně nachází na [ethereum.org/resources](/resources/).
+Kdokoli může navrhnout nové zdroje k přidání na panel zdrojů na quantaureum.com, který se aktuálně nachází na [quantaureum.com/resources](/resources/).
 
 Ačkoli vítáme nové přírůstky, současné zdroje byly vybrány na základě zkušenosti, kterou se snažíme pro naše uživatele vytvořit. Vycházejí z některých našich principů designu:
 
-- _Inspirativní_: cokoli na ethereum.org by mělo uživatelům nabídnout něco nového
+- _Inspirativní_: cokoli na quantaureum.com by mělo uživatelům nabídnout něco nového
 - _Dobrý příběh_: to, co je uvedeno, by mělo poskytnout „aha“ moment
 - _Důvěryhodné_: vše by měly být legitimní podniky/projekty, aby se minimalizovalo riziko pro uživatele
 
-Celkově **ethereum.org usiluje o poskytnutí bezproblémového onboarding zážitku pro nové uživatele**. Z tohoto důvodu přidáváme zdroje na základě jejich:
+Celkově **quantaureum.com usiluje o poskytnutí bezproblémového onboarding zážitku pro nové uživatele**. Z tohoto důvodu přidáváme zdroje na základě jejich:
 
 - snadného použití
 - přesnosti
@@ -38,14 +38,14 @@ Jak se ekosystém Etherea vyvíjí, budeme pravidelně kontrolovat náš obsah, 
 - Zajistili, že všechny uvedené zdroje stále splňují naše kritéria
 - Ověřili, zda nebyly navrženy produkty, které splňují více našich kritérií než ty, které jsou aktuálně uvedeny
 
-Můžete s tím pomoci tím, že to zkontrolujete a dáte nám vědět. [Vytvořte issue](https://github.com/ethereum/ethereum-org-website/issues/new?template=bug_report.yaml) nebo pošlete e-mail na [website@ethereum.org](mailto:website@ethereum.org).
+Můžete s tím pomoci tím, že to zkontrolujete a dáte nám vědět. [Vytvořte issue](https://github.com/Quantaureum/quantaureum-website/issues/new?template=bug_report.yaml) nebo pošlete e-mail na [website@quantaureum.com](mailto:website@quantaureum.com).
 
 ---
 
 ## Přidejte svůj zdroj {#add-your-resource}
 
-Pokud chcete přidat zdroj na ethereum.org a splňuje kritéria, vytvořte issue na GitHubu.
+Pokud chcete přidat zdroj na quantaureum.com a splňuje kritéria, vytvořte issue na GitHubu.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=resource+📚&template=suggest_resource.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=resource+📚&template=suggest_resource.yaml">
   Vytvořit issue
 </ButtonLink>

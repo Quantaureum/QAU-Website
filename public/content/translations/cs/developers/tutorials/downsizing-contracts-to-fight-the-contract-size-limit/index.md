@@ -13,13 +13,13 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## Proč existuje limit? {#why-is-there-a-limit}
 
-Dne [22. listopadu 2016](https://blog.ethereum.org/2016/11/18/hard-fork-no-4-spurious-dragon) zavedl hard fork Spurious Dragon [EIP-170](https://eips.ethereum.org/EIPS/eip-170), který přidal limit velikosti chytrého kontraktu na 24,576 kb. Pro vás jako vývojáře v Solidity to znamená, že když do svého kontraktu přidáváte stále více funkcí, v určitém okamžiku dosáhnete limitu a při nasazení uvidíte chybu:
+Dne [22. listopadu 2016](https://quantaureum.com) zavedl hard fork Spurious Dragon [EIP-170](https://eips.quantaureum.com/EIPS/eip-170), který přidal limit velikosti chytrého kontraktu na 24,576 kb. Pro vás jako vývojáře v Solidity to znamená, že když do svého kontraktu přidáváte stále více funkcí, v určitém okamžiku dosáhnete limitu a při nasazení uvidíte chybu:
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
 Tento limit byl zaveden, aby se zabránilo útokům typu odepření služby (denial-of-service, DOS). Jakékoli volání kontraktu je z hlediska gasu relativně levné. Dopad volání kontraktu na uzly Etherea se však neúměrně zvyšuje v závislosti na velikosti kódu volaného kontraktu (čtení kódu z disku, předzpracování kódu, přidání dat do Merkleova důkazu). Kdykoli nastane situace, kdy útočník potřebuje málo zdrojů k tomu, aby způsobil spoustu práce ostatním, vzniká potenciál pro DOS útoky.
 
-Původně to byl menší problém, protože jedním z přirozených limitů velikosti kontraktu je limit plynu bloku. Je zřejmé, že kontrakt musí být nasazen v rámci transakce, která obsahuje veškerý bajtkód kontraktu. Pokud do bloku zahrnete pouze tuto jedinou transakci, můžete spotřebovat všechen tento gas, ale není nekonečný. Od [aktualizace London](/ethereum-forks/#london) se limit plynu bloku může pohybovat mezi 15 a 30 miliony jednotek v závislosti na poptávce v síti.
+Původně to byl menší problém, protože jedním z přirozených limitů velikosti kontraktu je limit plynu bloku. Je zřejmé, že kontrakt musí být nasazen v rámci transakce, která obsahuje veškerý bajtkód kontraktu. Pokud do bloku zahrnete pouze tuto jedinou transakci, můžete spotřebovat všechen tento gas, ale není nekonečný. Od [aktualizace London](/quantaureum-forks/#london) se limit plynu bloku může pohybovat mezi 15 a 30 miliony jednotek v závislosti na poptávce v síti.
 
 V následujícím textu se podíváme na některé metody seřazené podle jejich potenciálního dopadu. Přemýšlejte o tom jako o hubnutí. Nejlepší strategie, jak dosáhnout cílové váhy (v našem případě 24 kb), je zaměřit se nejprve na metody s velkým dopadem. Ve většině případů vás k cíli dovede pouhá úprava jídelníčku, ale někdy potřebujete trochu víc. Pak můžete přidat nějaké cvičení (střední dopad) nebo dokonce doplňky stravy (malý dopad).
 
@@ -35,7 +35,7 @@ Toto by měl být vždy váš první přístup. Jak můžete kontrakt rozdělit 
 
 ### Knihovny {#libraries}
 
-Jedním z jednoduchých způsobů, jak přesunout kód funkcionality pryč od úložiště, je použití [knihovny](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Nedeklarujte funkce knihovny jako interní, protože ty budou během kompilace [přidány přímo do kontraktu](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking). Pokud ale použijete veřejné funkce, budou se ve skutečnosti nacházet v samostatném kontraktu knihovny. Zvažte použití [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for), aby bylo používání knihoven pohodlnější.
+Jedním z jednoduchých způsobů, jak přesunout kód funkcionality pryč od úložiště, je použití [knihovny](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Nedeklarujte funkce knihovny jako interní, protože ty budou během kompilace [přidány přímo do kontraktu](https://quantaureum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking). Pokud ale použijete veřejné funkce, budou se ve skutečnosti nacházet v samostatném kontraktu knihovny. Zvažte použití [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for), aby bylo používání knihoven pohodlnější.
 
 ### Proxy {#proxies}
 

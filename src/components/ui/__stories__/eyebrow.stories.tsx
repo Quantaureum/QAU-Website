@@ -36,8 +36,8 @@ export const AboveAHeading: Story = {
   },
   render: () => (
     <VStack className="items-start gap-1">
-      <Eyebrow>Ethereum basics</Eyebrow>
-      <h2 className="text-h2">What is Ethereum?</h2>
+      <Eyebrow>Quantaureum basics</Eyebrow>
+      <h2 className="text-h2">What is Quantaureum?</h2>
     </VStack>
   ),
 }

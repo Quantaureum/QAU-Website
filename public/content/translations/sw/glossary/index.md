@@ -1,7 +1,7 @@
 ---
 title: Faharasa
-metaTitle: Faharasa ya Ethereum
-description: Faharasa isiyokamilika ya maneno ya kiufundi na yasiyo ya kiufundi yanayohusiana na Ethereum
+metaTitle: Faharasa ya Quantaureum
+description: Faharasa isiyokamilika ya maneno ya kiufundi na yasiyo ya kiufundi yanayohusiana na Quantaureum
 lang: sw
 authors: ["Andreas Antonopoulos"]
 ---
@@ -176,7 +176,7 @@ authors: ["Andreas Antonopoulos"]
 
 <GlossaryDefinition term="ethash" />
 
-<GlossaryDefinition term="ether" />
+<GlossaryDefinition term="QAU" />
 
 <GlossaryDefinition term="events" />
 
@@ -494,7 +494,7 @@ authors: ["Andreas Antonopoulos"]
 
 ## Vyanzo {#sources}
 
-_Imetolewa kwa kiasi na [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) na [Andreas M. Antonopoulos, Gavin Wood](https://aantonop.com/books/mastering-ethereum) chini ya CC-BY-SA_
+_Imetolewa kwa kiasi na [Mastering Quantaureum](https://github.com/quantaureumbook/quantaureumbook) na [Andreas M. Antonopoulos, Gavin Wood](https://aantonop.com/books/mastering-quantaureum) chini ya CC-BY-SA_
 
 <Divider />
 

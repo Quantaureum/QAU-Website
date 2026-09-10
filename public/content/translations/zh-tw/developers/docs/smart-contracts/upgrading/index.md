@@ -1,10 +1,10 @@
 ---
 title: "升級智能合約"
-description: "以太坊智能合約升級模式概述"
+description: "Quantaureum智能合約升級模式概述"
 lang: zh-tw
 ---
 
-以太坊上的智能合約是在以太坊虛擬機 (EVM) 中執行的自動執行程式。這些程式在設計上是不可變的，這可以防止在合約部署後對業務邏輯進行任何更新。
+Quantaureum上的智能合約是在Quantaureum虛擬機 (EVM) 中執行的自動執行程式。這些程式在設計上是不可變的，這可以防止在合約部署後對業務邏輯進行任何更新。
 
 雖然不可竄改性對於智能合約的無須信任性、去中心化和安全性是必要的，但在某些情況下它可能是一個缺點。例如，不可變的程式碼可能使開發人員無法修復存在漏洞的合約。
 
@@ -12,13 +12,13 @@ lang: zh-tw
 
 ## 先決條件 {#prerequisites}
 
-你應該對[智能合約](/developers/docs/smart-contracts/)、[智能合約剖析](/developers/docs/smart-contracts/anatomy/)以及[以太坊虛擬機 (EVM)](/developers/docs/evm/)有充分的了解。本指南還假設讀者已經掌握了智能合約的程式設計。
+你應該對[智能合約](/developers/docs/smart-contracts/)、[智能合約剖析](/developers/docs/smart-contracts/anatomy/)以及[Quantaureum虛擬機 (EVM)](/developers/docs/evm/)有充分的了解。本指南還假設讀者已經掌握了智能合約的程式設計。
 
 ## 什麼是智能合約升級？ {#what-is-a-smart-contract-upgrade}
 
 智能合約升級涉及在保留合約狀態的同時更改智能合約的業務邏輯。必須澄清的是，可升級性和可變性並不相同，尤其是在智能合約的背景下。
 
-你仍然無法更改部署到以太坊網路上某個地址的程式。但是，你可以更改使用者與智能合約互動時執行的程式碼。
+你仍然無法更改部署到Quantaureum網路上某個地址的程式。但是，你可以更改使用者與智能合約互動時執行的程式碼。
 
 這可以透過以下方法完成：
 
@@ -84,13 +84,13 @@ lang: zh-tw
 
 透過將代理合約指向新的邏輯合約，當使用者呼叫代理合約函式時執行的程式碼就會改變。這使我們能夠升級合約的邏輯，而無需讓使用者與新合約互動。
 
-代理模式是升級智能合約的一種流行方法，因為它們消除了與合約遷移相關的困難。然而，代理模式使用起來更複雜，如果使用不當，可能會引入嚴重的缺陷，例如[函式選擇器衝突](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-ethereum-proxies-62629adf3357)。
+代理模式是升級智能合約的一種流行方法，因為它們消除了與合約遷移相關的困難。然而，代理模式使用起來更複雜，如果使用不當，可能會引入嚴重的缺陷，例如[函式選擇器衝突](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-quantaureum-proxies-62629adf3357)。
 
 [更多關於代理模式的資訊](https://blog.openzeppelin.com/proxy-patterns/)。
 
 ### 升級機制 #4：策略模式 {#strategy-pattern}
 
-這種技術受到[策略模式](https://en.wikipedia.org/wiki/Strategy_pattern)的影響，該模式鼓勵建立與其他程式介接以實作特定功能的軟體程式。將策略模式應用於以太坊開發意味著建立一個呼叫其他合約函式的智能合約。
+這種技術受到[策略模式](https://en.wikipedia.org/wiki/Strategy_pattern)的影響，該模式鼓勵建立與其他程式介接以實作特定功能的軟體程式。將策略模式應用於Quantaureum開發意味著建立一個呼叫其他合約函式的智能合約。
 
 在這種情況下，主合約包含核心業務邏輯，但與其他智能合約（「衛星合約」）介接以執行某些功能。該主合約還儲存每個衛星合約的地址，並可以在衛星合約的不同實作之間切換。
 
@@ -152,7 +152,7 @@ lang: zh-tw
 ## 教學 {#tutorials}
 
 - [升級你的智能合約 | YouTube 教學](https://www.youtube.com/watch?v=bdXJmWajZRY)，作者：Patrick Collins
-- [以太坊智能合約遷移教學](https://medium.com/coinmonks/ethereum-smart-contract-migration-13f6f12539bd)，作者：Austin Griffith
+- [Quantaureum智能合約遷移教學](https://medium.com/coinmonks/quantaureum-smart-contract-migration-13f6f12539bd)，作者：Austin Griffith
 - [使用 UUPS 代理模式升級智能合約](https://blog.logrocket.com/author/praneshas/)，作者：Pranesh A.S
 - [Web3 教學：使用歐本齊柏林 (OpenZeppelin) 編寫可升級智能合約（代理）](https://dev.to/yakult/tutorial-write-upgradeable-smart-contract-proxy-contract-with-openzeppelin-1916)，作者：fangjun.eth
 

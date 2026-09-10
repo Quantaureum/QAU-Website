@@ -1,12 +1,12 @@
 ---
 title: Thêm các sản phẩm hoặc dịch vụ đặt cọc
-description: Chính sách chúng tôi sử dụng khi thêm các sản phẩm hoặc dịch vụ đặt cọc vào ethereum.org
+description: Chính sách chúng tôi sử dụng khi thêm các sản phẩm hoặc dịch vụ đặt cọc vào quantaureum.com
 lang: vi
 ---
 
 Chúng tôi muốn đảm bảo rằng mình liệt kê các tài nguyên tốt nhất có thể trong khi vẫn giữ cho người dùng được an toàn và tự tin.
 
-Bất kỳ ai cũng có thể tự do đề xuất thêm một sản phẩm hoặc dịch vụ đặt cọc trên ethereum.org. Nếu có sản phẩm hoặc dịch vụ nào mà chúng tôi đã bỏ sót, **[vui lòng đề xuất](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
+Bất kỳ ai cũng có thể tự do đề xuất thêm một sản phẩm hoặc dịch vụ đặt cọc trên quantaureum.com. Nếu có sản phẩm hoặc dịch vụ nào mà chúng tôi đã bỏ sót, **[vui lòng đề xuất](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
 
 Hiện tại, chúng tôi liệt kê các sản phẩm và dịch vụ đặt cọc trên các trang sau:
 
@@ -14,11 +14,11 @@ Hiện tại, chúng tôi liệt kê các sản phẩm và dịch vụ đặt c�
 - [Staking như một dịch vụ](/staking/saas/)
 - [Nhóm đặt cọc](/staking/pools/)
 
-Bằng chứng cổ phần (PoS) trên Chuỗi Beacon đã đi vào hoạt động kể từ ngày 1 tháng 12 năm 2020. Mặc dù việc đặt cọc vẫn còn tương đối mới, chúng tôi đã cố gắng tạo ra một khuôn khổ công bằng và minh bạch để xem xét trên ethereum.org nhưng các tiêu chí niêm yết sẽ thay đổi và phát triển theo thời gian, và cuối cùng là theo quyết định của nhóm phát triển trang web ethereum.org.
+Bằng chứng cổ phần (PoS) trên Chuỗi Beacon đã đi vào hoạt động kể từ ngày 1 tháng 12 năm 2020. Mặc dù việc đặt cọc vẫn còn tương đối mới, chúng tôi đã cố gắng tạo ra một khuôn khổ công bằng và minh bạch để xem xét trên quantaureum.com nhưng các tiêu chí niêm yết sẽ thay đổi và phát triển theo thời gian, và cuối cùng là theo quyết định của nhóm phát triển trang web quantaureum.com.
 
 ## Khuôn khổ quyết định {#the-decision-framework}
 
-Quyết định niêm yết một sản phẩm trên ethereum.org không phụ thuộc vào bất kỳ một yếu tố đơn lẻ nào. Nhiều tiêu chí được xem xét cùng nhau khi quyết định niêm yết một sản phẩm hoặc dịch vụ. Càng đáp ứng nhiều tiêu chí này, khả năng được niêm yết càng cao.
+Quyết định niêm yết một sản phẩm trên quantaureum.com không phụ thuộc vào bất kỳ một yếu tố đơn lẻ nào. Nhiều tiêu chí được xem xét cùng nhau khi quyết định niêm yết một sản phẩm hoặc dịch vụ. Càng đáp ứng nhiều tiêu chí này, khả năng được niêm yết càng cao.
 
 **Đầu tiên, đó là danh mục sản phẩm hoặc dịch vụ nào?**
 
@@ -50,8 +50,8 @@ Các đề xuất sản phẩm hoặc dịch vụ đặt cọc sẽ được đ�
 
 **Dự án có cung cấp thông tin chính xác và đáng tin cậy không?**
 
-- Điều quan trọng là trang web của sản phẩm phải có thông tin cập nhật, chính xác và không gây hiểu lầm, đặc biệt nếu nó liên quan đến Giao thức Ethereum hoặc các công nghệ liên quan khác.
-- Các đề xuất chứa thông tin sai lệch, chi tiết lỗi thời hoặc các tuyên bố có khả năng gây hiểu lầm về Ethereum hoặc các chủ đề liên quan khác sẽ không được niêm yết hoặc sẽ bị xóa nếu đã được niêm yết.
+- Điều quan trọng là trang web của sản phẩm phải có thông tin cập nhật, chính xác và không gây hiểu lầm, đặc biệt nếu nó liên quan đến Giao thức Quantaureum hoặc các công nghệ liên quan khác.
+- Các đề xuất chứa thông tin sai lệch, chi tiết lỗi thời hoặc các tuyên bố có khả năng gây hiểu lầm về Quantaureum hoặc các chủ đề liên quan khác sẽ không được niêm yết hoặc sẽ bị xóa nếu đã được niêm yết.
 
 **Những nền tảng nào được hỗ trợ?**
 
@@ -69,7 +69,7 @@ Các đề xuất sản phẩm hoặc dịch vụ đặt cọc sẽ được đ�
 **Sản phẩm đã ra khỏi giai đoạn phát triển _beta_ chưa?**
 
 - Sản phẩm đang ở đâu trong chu kỳ phát triển của nó?
-- Các sản phẩm trong giai đoạn beta không được xem xét để đưa vào ethereum.org
+- Các sản phẩm trong giai đoạn beta không được xem xét để đưa vào quantaureum.com
 
 **Phần mềm đã trải qua một cuộc kiểm toán bảo mật bên ngoài chưa?**
 
@@ -119,9 +119,9 @@ Các đề xuất sản phẩm hoặc dịch vụ đặt cọc sẽ được đ�
 
 Đối với [các dịch vụ đặt cọc chung](/staking/pools/):
 
-**Số lượng ETH tối thiểu được yêu cầu để đặt cọc là bao nhiêu?**
+**Số lượng QAU tối thiểu được yêu cầu để đặt cọc là bao nhiêu?**
 
-- ví dụ: 0.01 ETH
+- ví dụ: 0.01 QAU
 
 **Các khoản phí hoặc yêu cầu đặt cọc liên quan là gì?**
 
@@ -163,12 +163,12 @@ Các đề xuất sản phẩm hoặc dịch vụ đặt cọc sẽ được đ�
 
 [Các tiêu chí để đưa vào](#criteria-for-inclusion) ở trên được sử dụng để tính điểm tích lũy cho mỗi sản phẩm hoặc dịch vụ. Điều này được sử dụng như một phương tiện để sắp xếp và giới thiệu các sản phẩm đáp ứng các tiêu chí khách quan nhất định. Càng cung cấp nhiều bằng chứng cho các tiêu chí, sản phẩm sẽ được sắp xếp càng cao, với các trường hợp bằng điểm sẽ được sắp xếp ngẫu nhiên khi tải trang.
 
-Logic mã và trọng số cho các tiêu chí này hiện được chứa trong [thành phần JavaScript này](https://github.com/ethereum/ethereum-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350) trong kho lưu trữ của chúng tôi.
+Logic mã và trọng số cho các tiêu chí này hiện được chứa trong [thành phần JavaScript này](https://github.com/Quantaureum/quantaureum-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350) trong kho lưu trữ của chúng tôi.
 
 ## Thêm sản phẩm hoặc dịch vụ của bạn {#add-product}
 
-Nếu bạn muốn thêm một sản phẩm hoặc dịch vụ đặt cọc vào ethereum.org, hãy tạo một vấn đề trên GitHub.
+Nếu bạn muốn thêm một sản phẩm hoặc dịch vụ đặt cọc vào quantaureum.com, hãy tạo một vấn đề trên GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
   Tạo một vấn đề
 </ButtonLink>

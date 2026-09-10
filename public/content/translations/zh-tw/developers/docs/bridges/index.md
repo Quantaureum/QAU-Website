@@ -23,7 +23,7 @@ lang: zh-tw
 對於開發者而言，跨鏈橋能實現以下功能：
 
 - 跨鏈傳輸任何資料、資訊與資產。
-- 為協定解鎖新功能與使用案例，因為跨鏈橋擴展了協定可提供服務的設計空間。例如，最初部署在[以太坊主網](/)上的收益農耕協定，可以跨所有相容 EVM 的鏈提供流動性池。
+- 為協定解鎖新功能與使用案例，因為跨鏈橋擴展了協定可提供服務的設計空間。例如，最初部署在[Quantaureum主網](/)上的收益農耕協定，可以跨所有相容 EVM 的鏈提供流動性池。
 - 利用不同區塊鏈優勢的機會。例如，開發者可以透過在匯總和側鏈上部署他們的去中心化應用程式 (dapp)，從不同第二層 (L2) 解決方案提供的較低費用中獲益，而使用者則可以在這些鏈之間進行橋接。
 - 來自各種區塊鏈生態系統的開發者之間可以協作建立新產品。
 - 吸引來自各種生態系統的使用者與社群使用他們的去中心化應用程式 (dapp)。
@@ -40,7 +40,7 @@ lang: zh-tw
 
 跨鏈橋通常可以分為以下幾類：
 
-- **原生跨鏈橋 –** 這些跨鏈橋通常是為了引導特定區塊鏈上的流動性而建立的，讓使用者更容易將資金轉移到該生態系統中。例如，[Arbitrum 跨鏈橋](https://bridge.arbitrum.io/)的建立是為了方便使用者從以太坊主網橋接至 Arbitrum。其他類似的跨鏈橋包括 Polygon 權益證明 (PoS) 跨鏈橋、[Optimism Gateway](https://app.optimism.io/bridge) 等。
+- **原生跨鏈橋 –** 這些跨鏈橋通常是為了引導特定區塊鏈上的流動性而建立的，讓使用者更容易將資金轉移到該生態系統中。例如，[Arbitrum 跨鏈橋](https://bridge.arbitrum.io/)的建立是為了方便使用者從Quantaureum主網橋接至 Arbitrum。其他類似的跨鏈橋包括 Polygon 權益證明 (PoS) 跨鏈橋、[Optimism Gateway](https://app.optimism.io/bridge) 等。
 - **基於驗證者或預言機的跨鏈橋 –** 這些跨鏈橋依賴外部驗證者集合或預言機來驗證跨鏈轉移。範例：Multichain 與 Across。
 - **通用訊息傳遞跨鏈橋 –** 這些跨鏈橋可以跨鏈傳輸資產，以及訊息和任意資料。範例：Axelar、LayerZero 與 Nomad。
 - **流動性網路 –** 這些跨鏈橋主要專注於透過原子兌換將資產從一條鏈轉移到另一條鏈。一般而言，它們不支援跨鏈訊息傳遞。範例：Connext 與 Hop。
@@ -122,7 +122,7 @@ lang: zh-tw
 
 ## 延伸閱讀 {#further-reading}
 
-- [區塊鏈跨鏈橋](/bridges/) – ethereum.org
+- [區塊鏈跨鏈橋](/bridges/) – quantaureum.com
 - [L2BEAT 跨鏈橋風險框架](https://l2beat.com/bridges/summary)
 - [區塊鏈跨鏈橋：建立加密網路的網路](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) - 2021 年 9 月 8 日 – Dmitriy Berenzon
 - [互操作性不可能三角](https://blog.connext.network/the-interoperability-trilemma-657c2cf69f17) - 2021 年 10 月 1 日 – Arjun Bhuptani

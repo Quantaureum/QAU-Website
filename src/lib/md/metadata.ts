@@ -21,9 +21,9 @@ export const getMdMetadata = async ({
   })
 
   const title = frontmatter.metaTitle ?? frontmatter.title
-  const pageTitle = title.includes("ethereum.org")
+  const pageTitle = title.includes("quantaureum.com")
     ? title
-    : `${title} | ethereum.org`
+    : `${title} | quantaureum.com`
   const description = frontmatter.description
   const image = frontmatter.image
   const author = frontmatter.author

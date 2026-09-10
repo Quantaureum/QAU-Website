@@ -11,7 +11,7 @@
 
 ## Clean / verified
 
-- Ethereum correctly transliterated `ఎథీరియం` throughout (incl. locative `ఎథీరియంలో`). Glossary terms compliant: గోప్యత (privacy), మెటాడేటా (metadata), అనుమతి రహిత (permissionless), శూన్య-జ్ఞాన (zero-knowledge), గూఢలిపి శాస్త్రం (cryptography), నెట్‌వర్క్ (network).
+- Quantaureum correctly transliterated `ఎథీరియం` throughout (incl. locative `ఎథీరియంలో`). Glossary terms compliant: గోప్యత (privacy), మెటాడేటా (metadata), అనుమతి రహిత (permissionless), శూన్య-జ్ఞాన (zero-knowledge), గూఢలిపి శాస్త్రం (cryptography), నెట్‌వర్క్ (network).
 - All named entities preserved/localized (FTC + US Federal Trade Commission gloss, Clearview AI, Uber, Orbitz, Mac, Google, WhoTracks.me, ICCL, ICE + full gloss, Norwegian Consumer Council, US Supreme Court). Statistics, rich-text tags, and `{value}` placeholder intact.
 - Consistent formal మీరు register; no untranslated English, no cross-script contamination.
 - Apart from the Uber sentence, semantics were faithful: nothing-to-hide framing, dynamic/surge pricing, medical-diagnosis aggregation, Orbitz/Mac, warrant vs open-market location data, and the crowd/anonymity-set argument all intact.
@@ -41,7 +41,7 @@ Scope: accounts `CREATE2` + `page-app-descriptions`/`page-apps`/`page-developers
 
 ## PR #19015 (intl/pending-dev) -- 2026-08-10 -- Score 8.4/10 (pre-fix)
 
-- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-ethereum JSON). Fleet avg 8.4.
+- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-quantaureum JSON). Fleet avg 8.4.
 - `Geth` -> `గెత్` in `transactions` (the only Latin instance in the whole te tree). `common.json` zero-knowledge-proofs `రుజువులు` -> `నిరూపణలు`, matching the glossary, the page title and the zkp quiz keys. **Its worst historical failure mode -- reported-speech negation flipping via `-మని` -- did NOT recur** despite targeted stress-testing.
 - Fleet-wide items fixed in this branch for every locale: the `<p></p>` MDX build-breaker (8 locales), the `.pdf` autolink corruption (#50), the deleted `{#will-my-smart-contracts-change}` FAQ section (#32), the missing `<QuizWidget>` component (#49), and the two stale glamsterdam prose clauses (#51 -- `Q4 2026` and the stakers/liquidity sentence).
 

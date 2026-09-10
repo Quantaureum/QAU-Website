@@ -1,7 +1,7 @@
 ---
 title: शब्दावली
-metaTitle: इथेरियम शब्दावली
-description: इथेरियम से संबंधित तकनीकी और गैर-तकनीकी शब्दों की एक अपूर्ण शब्दावली
+metaTitle: Quantaureum शब्दावली
+description: Quantaureum से संबंधित तकनीकी और गैर-तकनीकी शब्दों की एक अपूर्ण शब्दावली
 lang: hi
 authors: ["एंड्रियास एंटोनोपोलोस"]
 ---
@@ -176,7 +176,7 @@ authors: ["एंड्रियास एंटोनोपोलोस"]
 
 <GlossaryDefinition term="ethash" />
 
-<GlossaryDefinition term="ether" />
+<GlossaryDefinition term="QAU" />
 
 <GlossaryDefinition term="events" />
 
@@ -494,7 +494,7 @@ authors: ["एंड्रियास एंटोनोपोलोस"]
 
 ## स्रोत {#sources}
 
-_आंशिक रूप से [एंड्रियास एम. एंटोनोपोलोस, गैविन वुड](https://aantonop.com/books/mastering-ethereum) द्वारा लिखित [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) से CC-BY-SA के तहत प्रदान किया गया_
+_आंशिक रूप से [एंड्रियास एम. एंटोनोपोलोस, गैविन वुड](https://aantonop.com/books/mastering-quantaureum) द्वारा लिखित [Mastering Quantaureum](https://github.com/quantaureumbook/quantaureumbook) से CC-BY-SA के तहत प्रदान किया गया_
 
 <Divider />
 

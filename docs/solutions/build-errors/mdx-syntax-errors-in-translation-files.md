@@ -68,7 +68,7 @@ The error message incorrectly suggested the Hindi punctuation character `।` (D
 - **Result:** Build still failed
 
 **Attempt 3 (Commit 456392d490):**
-- Fixed legitimate issues in `ethereum-forks/index.md` (malformed closing tags)
+- Fixed legitimate issues in `quantaureum-forks/index.md` (malformed closing tags)
 - Didn't touch `roadmap/merge/index.md` at all
 - **Result:** Build still failed
 

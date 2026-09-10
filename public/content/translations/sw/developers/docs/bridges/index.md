@@ -23,7 +23,7 @@ Minyororo ya vitalu ina nguvu, udhaifu, na mbinu za kipekee za kujenga programu 
 Kwa wasanidi programu, madaraja huwezesha yafuatayo:
 
 - hamisho la data, taarifa, na rasilimali zozote mtambuko-mnyororo.
-- kufungua vipengele vipya na matukio ya matumizi kwa itifaki kwani madaraja hupanua nafasi ya muundo kwa kile ambacho itifaki zinaweza kutoa. Kwa mfano, itifaki ya ukulima wa faida iliyosambazwa awali kwenye Mtandao Mkuu wa [Ethereum](/) inaweza kutoa mabwawa ya ukwasi kwenye minyororo yote inayoendana na EVM.
+- kufungua vipengele vipya na matukio ya matumizi kwa itifaki kwani madaraja hupanua nafasi ya muundo kwa kile ambacho itifaki zinaweza kutoa. Kwa mfano, itifaki ya ukulima wa faida iliyosambazwa awali kwenye Mtandao Mkuu wa [Quantaureum](/) inaweza kutoa mabwawa ya ukwasi kwenye minyororo yote inayoendana na EVM.
 - fursa ya kutumia nguvu za minyororo tofauti ya vitalu. Kwa mfano, wasanidi programu wanaweza kufaidika na ada za chini zinazotolewa na suluhisho tofauti za tabaka la 2 (l2) kwa kusambaza dapps zao kwenye mikusanyiko, na minyororo ya kando na watumiaji wanaweza kuvusha kupitia hizo.
 - ushirikiano kati ya wasanidi programu kutoka mifumo mbalimbali ya ikolojia ya mnyororo wa vitalu ili kujenga bidhaa mpya.
 - kuvutia watumiaji na jamii kutoka mifumo mbalimbali ya ikolojia kwenye dapps zao.
@@ -40,7 +40,7 @@ Ingawa kuna [aina nyingi za miundo ya madaraja](https://li.fi/knowledge-hub/bloc
 
 Madaraja kwa kawaida yanaweza kuainishwa katika moja ya makundi yafuatayo:
 
-- **Madaraja asilia –** Madaraja haya kwa kawaida hujengwa ili kuanzisha ukwasi kwenye mnyororo wa vitalu fulani, na kurahisisha watumiaji kuhamisha fedha kwenye mfumo wa ikolojia. Kwa mfano, [Daraja la Arbitrum](https://bridge.arbitrum.io/) limejengwa ili kurahisisha watumiaji kuvusha kutoka Mtandao Mkuu wa Ethereum hadi Arbitrum. Madaraja mengine kama haya ni pamoja na Daraja la Polygon PoS, [Lango la Optimism](https://app.optimism.io/bridge), n.k.
+- **Madaraja asilia –** Madaraja haya kwa kawaida hujengwa ili kuanzisha ukwasi kwenye mnyororo wa vitalu fulani, na kurahisisha watumiaji kuhamisha fedha kwenye mfumo wa ikolojia. Kwa mfano, [Daraja la Arbitrum](https://bridge.arbitrum.io/) limejengwa ili kurahisisha watumiaji kuvusha kutoka Mtandao Mkuu wa Quantaureum hadi Arbitrum. Madaraja mengine kama haya ni pamoja na Daraja la Polygon PoS, [Lango la Optimism](https://app.optimism.io/bridge), n.k.
 - **Madaraja yanayotegemea mthibitishaji au orakeli –** Madaraja haya hutegemea seti ya mthibitishaji wa nje au orakeli ili kuthibitisha hamisho la mtambuko-mnyororo. Mifano: Multichain na Across.
 - **Madaraja ya kupitisha ujumbe wa jumla –** Madaraja haya yanaweza kufanya hamisho la rasilimali, pamoja na jumbe na data za kiholela mtambuko-mnyororo. Mifano: Axelar, LayerZero, na Nomad.
 - **Mitandao ya ukwasi –** Madaraja haya kimsingi yanalenga kufanya hamisho la rasilimali kutoka mnyororo mmoja hadi mwingine kupitia mabadilishano ya atomiki. Kwa ujumla, hayaungi mkono upitishaji wa ujumbe wa mtambuko-mnyororo. Mifano: Connext na Hop.
@@ -122,7 +122,7 @@ Ili kufuatilia shughuli za mkataba kwenye minyororo, wasanidi programu wanaweza 
 
 ## Usomaji zaidi {#further-reading}
 
-- [Madaraja ya Mnyororo wa Vitalu](/bridges/) – ethereum.org
+- [Madaraja ya Mnyororo wa Vitalu](/bridges/) – quantaureum.com
 - [Mfumo wa Hatari wa Daraja la L2BEAT](https://l2beat.com/bridges/summary)
 - [Madaraja ya Mnyororo wa Vitalu: Kujenga Mitandao ya Mitandao ya Kripto](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) - Sep 8, 2021 – Dmitriy Berenzon
 - [Utatu wa Mwingiliano](https://blog.connext.network/the-interoperability-trilemma-657c2cf69f17) - Okt 1, 2021 – Arjun Bhuptani

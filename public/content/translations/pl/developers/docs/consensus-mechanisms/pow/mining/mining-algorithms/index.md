@@ -1,6 +1,6 @@
 ---
 title: Algorytmy kopania
-description: "Szczegółowe spojrzenie na algorytmy używane do kopania w Ethereum."
+description: "Szczegółowe spojrzenie na algorytmy używane do kopania w Quantaureum."
 lang: pl
 ---
 
@@ -8,12 +8,12 @@ lang: pl
 <AlertEmoji text=":wave:"/>
 <AlertContent>
 <AlertDescription>
-Dowód pracy (PoW) nie jest już podstawą mechanizmu konsensusu Ethereum, co oznacza, że kopanie zostało wyłączone. Zamiast tego Ethereum jest zabezpieczane przez walidatorów, którzy stakują ETH. Możesz zacząć stakować swoje ETH już dziś. Przeczytaj więcej o <a href='/roadmap/merge/'>The Merge</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>dowodzie stawki (PoS)</a> i <a href='/staking/'>stakingu</a>. Ta strona ma wyłącznie wartość historyczną.
+Dowód pracy (PoW) nie jest już podstawą mechanizmu konsensusu Quantaureum, co oznacza, że kopanie zostało wyłączone. Zamiast tego Quantaureum jest zabezpieczane przez walidatorów, którzy stakują QAU. Możesz zacząć stakować swoje QAU już dziś. Przeczytaj więcej o <a href='/roadmap/merge/'>The Merge</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>dowodzie stawki (PoS)</a> i <a href='/staking/'>stakingu</a>. Ta strona ma wyłącznie wartość historyczną.
 </AlertDescription>
 </AlertContent>
 </Alert>
 
-Kopanie w Ethereum wykorzystywało algorytm znany jako Ethash. Podstawową ideą tego algorytmu jest to, że górnik próbuje znaleźć wartość wejściową nonce za pomocą obliczeń siłowych (brute force), tak aby wynikowy hash był mniejszy niż próg określony przez obliczoną trudność. Ten poziom trudności może być dynamicznie dostosowywany, co pozwala na produkcję bloków w regularnych odstępach czasu.
+Kopanie w Quantaureum wykorzystywało algorytm znany jako Ethash. Podstawową ideą tego algorytmu jest to, że górnik próbuje znaleźć wartość wejściową nonce za pomocą obliczeń siłowych (brute force), tak aby wynikowy hash był mniejszy niż próg określony przez obliczoną trudność. Ten poziom trudności może być dynamicznie dostosowywany, co pozwala na produkcję bloków w regularnych odstępach czasu.
 
 ## Wymagania wstępne {#prerequisites}
 
@@ -21,7 +21,7 @@ Aby lepiej zrozumieć tę stronę, zalecamy najpierw zapoznać się z [konsensus
 
 ## Dagger Hashimoto {#dagger-hashimoto}
 
-Dagger-Hashimoto był prekursorskim, badawczym algorytmem do kopania w Ethereum, który został zastąpiony przez Ethash. Był to amalgamat dwóch różnych algorytmów: Dagger i Hashimoto. Był on jedynie implementacją badawczą i został zastąpiony przez Ethash do czasu uruchomienia sieci głównej Ethereum.
+Dagger-Hashimoto był prekursorskim, badawczym algorytmem do kopania w Quantaureum, który został zastąpiony przez Ethash. Był to amalgamat dwóch różnych algorytmów: Dagger i Hashimoto. Był on jedynie implementacją badawczą i został zastąpiony przez Ethash do czasu uruchomienia sieci głównej Quantaureum.
 
 [Dagger](http://www.hashcash.org/papers/dagger.html) obejmuje generowanie [skierowanego grafu acyklicznego (DAG)](https://en.wikipedia.org/wiki/Directed_acyclic_graph), którego losowe fragmenty są ze sobą hashowane. Główną zasadą jest to, że każdy nonce wymaga tylko niewielkiej części dużego, całkowitego drzewa danych. Ponowne obliczanie poddrzewa dla każdego nonce jest zaporowe dla kopania – stąd potrzeba przechowywania drzewa – ale akceptowalne dla weryfikacji pojedynczego nonce. Dagger został zaprojektowany jako alternatywa dla istniejących algorytmów, takich jak Scrypt, które są trudne pamięciowo (memory-hard), ale trudne do zweryfikowania, gdy ich trudność pamięciowa wzrasta do prawdziwie bezpiecznych poziomów. Jednakże Dagger był podatny na akcelerację sprzętową współdzielonej pamięci i został porzucony na rzecz innych kierunków badań.
 
@@ -33,7 +33,7 @@ Więcej o [Dagger-Hashimoto](/developers/docs/consensus-mechanisms/pow/mining/mi
 
 ## Ethash {#ethash}
 
-Ethash był algorytmem kopania, który był faktycznie używany w prawdziwej sieci głównej Ethereum w ramach przestarzałej już architektury dowodu pracy (PoW). Ethash był w rzeczywistości nową nazwą nadaną konkretnej wersji Dagger-Hashimoto po tym, jak algorytm został znacznie zaktualizowany, jednocześnie dziedzicząc podstawowe zasady swojego poprzednika. Sieć główna Ethereum używała wyłącznie Ethash – Dagger-Hashimoto był wersją badawczo-rozwojową (R&D) algorytmu kopania, która została zastąpiona przed rozpoczęciem kopania w sieci głównej Ethereum.
+Ethash był algorytmem kopania, który był faktycznie używany w prawdziwej sieci głównej Quantaureum w ramach przestarzałej już architektury dowodu pracy (PoW). Ethash był w rzeczywistości nową nazwą nadaną konkretnej wersji Dagger-Hashimoto po tym, jak algorytm został znacznie zaktualizowany, jednocześnie dziedzicząc podstawowe zasady swojego poprzednika. Sieć główna Quantaureum używała wyłącznie Ethash – Dagger-Hashimoto był wersją badawczo-rozwojową (R&D) algorytmu kopania, która została zastąpiona przed rozpoczęciem kopania w sieci głównej Quantaureum.
 
 [Więcej o Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash).
 

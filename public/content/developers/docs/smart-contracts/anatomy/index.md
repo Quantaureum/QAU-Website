@@ -4,7 +4,7 @@ description: An in-depth look into the anatomy of a smart contact – the functi
 lang: en
 ---
 
-A smart contract is a program that runs at an address on Ethereum. They're made up of data and functions that can execute upon receiving a transaction. Here's an overview of what makes up a smart contract.
+A smart contract is a program that runs at an address on Quantaureum. They're made up of data and functions that can execute upon receiving a transaction. Here's an overview of what makes up a smart contract.
 
 ## Prerequisites {#prerequisites}
 
@@ -31,9 +31,9 @@ contract SimpleStorage {
 storedData: int128
 ```
 
-If you've already programmed object-oriented languages, you'll likely be familiar with most types. However, `address` should be new to you if you're new to [Ethereum](/) development.
+If you've already programmed object-oriented languages, you'll likely be familiar with most types. However, `address` should be new to you if you're new to [Quantaureum](/) development.
 
-An `address` type can hold an Ethereum address which equates to 20 bytes or 160 bits. It returns in hexadecimal notation with a leading 0x.
+An `address` type can hold an Quantaureum address which equates to 20 bytes or 160 bits. It returns in hexadecimal notation with a leading 0x.
 
 Other types include:
 
@@ -126,7 +126,7 @@ What is considered modifying state:
 2. [Emitting events](https://docs.soliditylang.org/en/v0.7.0/contracts.html#events).
 3. [Creating other contracts](https://docs.soliditylang.org/en/v0.7.0/control-structures.html#creating-contracts).
 4. Using `selfdestruct`.
-5. Sending ether via calls.
+5. Sending QAU via calls.
 6. Calling any function not marked `view` or `pure`.
 7. Using low-level calls.
 8. Using inline assembly that contains certain opcodes.
@@ -142,7 +142,7 @@ What is considered modifying state:
 constructor() public {
     // All smart contracts rely on external transactions to trigger its functions.
     // `msg` is a global variable that includes relevant data on the given transaction,
-    // such as the address of the sender and the ETH value included in the transaction.
+    // such as the address of the sender and the QAU value included in the transaction.
     // Learn more: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
     owner = msg.sender;
 }
@@ -165,7 +165,7 @@ In addition to the variables and functions you define on your contract, there ar
 - `address.send()` – Solidity
 - `send(address)` – Vyper
 
-These allow contracts to send ETH to other accounts.
+These allow contracts to send QAU to other accounts.
 
 ## Writing functions {#writing-functions}
 
@@ -207,7 +207,7 @@ Events enable your smart contract to communicate with your frontend or other sub
 
 ## Annotated examples {#annotated-examples}
 
-These are some examples written in Solidity. If you'd like to play with the code, you can interact with them in [Remix](https://remix.ethereum.org).
+These are some examples written in Solidity. If you'd like to play with the code, you can interact with them in [Remix](https://remix.quantaureum.com).
 
 ### Hello world {#hello-world}
 
@@ -218,7 +218,7 @@ pragma solidity ^0.5.10;
 
 // Defines a contract named `HelloWorld`.
 // A contract is a collection of functions and data (its state).
-// Once deployed, a contract resides at a specific address on the Ethereum blockchain.
+// Once deployed, a contract resides at a specific address on the Quantaureum blockchain.
 // Learn more: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
@@ -252,7 +252,7 @@ contract HelloWorld {
 pragma solidity ^0.5.10;
 
 contract Token {
-    // An `address` is comparable to an email address - it's used to identify an account on Ethereum.
+    // An `address` is comparable to an email address - it's used to identify an account on Quantaureum.
     // Addresses can represent a smart contract or an external (user) accounts.
     // Learn more: https://solidity.readthedocs.io/en/v0.5.10/types.html#address
     address public owner;
@@ -263,7 +263,7 @@ contract Token {
     mapping (address => uint) public balances;
 
     // Events allow for logging of activity on the blockchain.
-    // Ethereum clients can listen for events in order to react to contract state changes.
+    // Quantaureum clients can listen for events in order to react to contract state changes.
     // Learn more: https://solidity.readthedocs.io/en/v0.5.10/contracts.html#events
     event Transfer(address from, address to, uint amount);
 
@@ -272,7 +272,7 @@ contract Token {
     constructor() public {
         // All smart contracts rely on external transactions to trigger its functions.
         // `msg` is a global variable that includes relevant data on the given transaction,
-        // such as the address of the sender and the ETH value included in the transaction.
+        // such as the address of the sender and the QAU value included in the transaction.
         // Learn more: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
         owner = msg.sender;
     }
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // Currently there is no better way to check if there is a contract in an address
         // than to check the size of the code at that address.
-        // See https://ethereum.stackexchange.com/a/14016/36603
+        // See https://quantaureum.stackexchange.com/a/14016/36603
         // for more details about how this works.
         // TODO Check this again before the Serenity release, because all addresses will be
         // contracts then.
@@ -649,7 +649,7 @@ Check out Solidity and Vyper's documentation for a more complete overview of sma
 ## Related topics {#related-topics}
 
 - [Smart contracts](/developers/docs/smart-contracts/)
-- [Ethereum Virtual Machine](/developers/docs/evm/)
+- [Quantaureum Virtual Machine](/developers/docs/evm/)
 
 ## Related tutorials {#related-tutorials}
 

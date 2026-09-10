@@ -46,9 +46,9 @@ function useCategories() {
       iconColorClass: "text-accent-a",
       links: [
         {
-          label: t("page-index-modal-what-is-ethereum"),
-          href: "/what-is-ethereum/",
-          eventName: "learn_ethereum",
+          label: t("page-index-modal-what-is-quantaureum"),
+          href: "/what-is-quantaureum/",
+          eventName: "learn_quantaureum",
         },
         {
           label: t("page-index-modal-pick-wallet"),
@@ -196,7 +196,7 @@ const PersonaModalCTA = ({ eventCategory }: PersonaModalCTAProps) => {
   // elsewhere on the page) so crawlers can discover them without JS.
   const crawlerOnlyLinks = categories.flatMap((cat) =>
     cat.links.filter(
-      ({ href }) => !["/what-is-ethereum/", "/get-eth/"].includes(href)
+      ({ href }) => !["/what-is-quantaureum/", "/get-eth/"].includes(href)
     )
   )
 

@@ -33,8 +33,8 @@ export default async function StablecoinsPageJsonLD({ locale, contributors }) {
         url,
         inLanguage: locale,
         contributor: contributorList,
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
@@ -52,8 +52,8 @@ export default async function StablecoinsPageJsonLD({ locale, contributors }) {
             },
           ],
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        reviewedBy: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
         mainEntity: articleId,
       },
       {
@@ -62,10 +62,10 @@ export default async function StablecoinsPageJsonLD({ locale, contributors }) {
         isPartOf: webPageId,
         headline: t("page-stablecoins-title"),
         description: t("page-stablecoins-meta-description"),
-        image: "https://ethereum.org/images/stablecoins/hero.png",
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
+        image: "https://quantaureum.com/images/stablecoins/hero.png",
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
         contributor: contributorList,
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
         about: {
           "@type": "Thing",
           name: "Stablecoins",

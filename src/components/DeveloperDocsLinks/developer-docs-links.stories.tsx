@@ -36,9 +36,9 @@ export const FoundationalTopics: Story = {
   },
 }
 
-export const EthereumStack: Story = {
+export const QuantaureumStack: Story = {
   args: {
-    headerId: "ethereum-stack",
+    headerId: "quantaureum-stack",
   },
 }
 

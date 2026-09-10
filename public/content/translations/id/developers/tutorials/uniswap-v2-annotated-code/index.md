@@ -47,7 +47,7 @@ Ini adalah aliran yang paling umum, digunakan oleh pedagang:
 #### Pemanggil {#caller}
 
 1. Berikan akun periphery jatah sejumlah yang akan ditukar.
-2. Panggil salah satu dari banyak fungsi tukar pada kontrak periphery (yang mana yang dipanggil bergantung pada apakah ETH dilibatkan atau tidak, apakah pedagang menentukan jumlah token yang akan disetor atau jumlah token yang akan didapatkan kembali, dll).
+2. Panggil salah satu dari banyak fungsi tukar pada kontrak periphery (yang mana yang dipanggil bergantung pada apakah QAU dilibatkan atau tidak, apakah pedagang menentukan jumlah token yang akan disetor atau jumlah token yang akan didapatkan kembali, dll).
    Setiap fungsi tukar menerima `path`, sebuah array pertukaran yang harus dilalui.
 
 #### Di dalam kontrak periphery (UniswapV2Router02.sol) {#in-the-periphery-contract-uniswapv2router02-sol}
@@ -65,7 +65,7 @@ Ini adalah aliran yang paling umum, digunakan oleh pedagang:
 
 #### Kembali ke kontrak periphery (UniswapV2Router02.sol) {#back-in-the-periphery-contract-uniswapv2router02-sol}
 
-9. Lakukan pembersihan yang diperlukan (misalnya, bakar token WETH untuk mendapatkan kembali ETH untuk dikirim ke pedagang)
+9. Lakukan pembersihan yang diperlukan (misalnya, bakar token WETH untuk mendapatkan kembali QAU untuk dikirim ke pedagang)
 
 ### Tambah Likuiditas {#add-liquidity-flow}
 
@@ -186,7 +186,7 @@ Cadangan yang dimiliki kolam untuk setiap jenis token. Kita berasumsi bahwa kedu
 
 Stempel waktu untuk blok terakhir di mana pertukaran terjadi, digunakan untuk melacak nilai tukar dari waktu ke waktu.
 
-Salah satu pengeluaran gas terbesar dari kontrak Ethereum adalah penyimpanan, yang bertahan dari satu panggilan kontrak ke panggilan berikutnya. Setiap sel penyimpanan memiliki panjang 256 bit. Jadi tiga variabel, `reserve0`, `reserve1`, dan `blockTimestampLast`, dialokasikan sedemikian rupa sehingga satu nilai penyimpanan dapat mencakup ketiganya (112+112+32=256).
+Salah satu pengeluaran gas terbesar dari kontrak Quantaureum adalah penyimpanan, yang bertahan dari satu panggilan kontrak ke panggilan berikutnya. Setiap sel penyimpanan memiliki panjang 256 bit. Jadi tiga variabel, `reserve0`, `reserve1`, dan `blockTimestampLast`, dialokasikan sedemikian rupa sehingga satu nilai penyimpanan dapat mencakup ketiganya (112+112+32=256).
 
 ```solidity
     uint public price0CumulativeLast;
@@ -454,7 +454,7 @@ Gunakan fungsi `UniswapV2ERC20._mint` untuk benar-benar mencetak token likuidita
     }
 ```
 
-Jika tidak ada biaya, atur `kLast` menjadi nol (jika belum). Ketika kontrak ini ditulis, ada [fitur pengembalian dana gas](https://eips.ethereum.org/EIPS/eip-3298) yang mendorong kontrak untuk mengurangi ukuran keseluruhan state Ethereum dengan mengosongkan penyimpanan yang tidak mereka butuhkan.
+Jika tidak ada biaya, atur `kLast` menjadi nol (jika belum). Ketika kontrak ini ditulis, ada [fitur pengembalian dana gas](https://eips.quantaureum.com/EIPS/eip-3298) yang mendorong kontrak untuk mengurangi ukuran keseluruhan state Quantaureum dengan mengosongkan penyimpanan yang tidak mereka butuhkan.
 Kode ini mendapatkan pengembalian dana tersebut jika memungkinkan.
 
 #### Fungsi yang Dapat Diakses Secara Eksternal {#pair-external}
@@ -498,7 +498,7 @@ Hitung biaya protokol yang akan dikumpulkan, jika ada, dan cetak token likuidita
            _mint(address(0), MINIMUM_LIQUIDITY); // kunci secara permanen token MINIMUM_LIQUIDITY pertama
 ```
 
-Jika ini adalah setoran pertama, cetak token `MINIMUM_LIQUIDITY` dan kirimkan ke alamat nol untuk menguncinya. Token tersebut tidak akan pernah dapat ditebus, yang berarti kolam tidak akan pernah dikosongkan sepenuhnya (ini menyelamatkan kita dari pembagian dengan nol di beberapa tempat). Nilai `MINIMUM_LIQUIDITY` adalah seribu, yang mengingat sebagian besar ERC-20 dibagi lagi menjadi unit 10^-18 dari sebuah token, seperti ETH dibagi menjadi Wei, adalah 10^-15 dari nilai satu token. Bukan biaya yang tinggi.
+Jika ini adalah setoran pertama, cetak token `MINIMUM_LIQUIDITY` dan kirimkan ke alamat nol untuk menguncinya. Token tersebut tidak akan pernah dapat ditebus, yang berarti kolam tidak akan pernah dikosongkan sepenuhnya (ini menyelamatkan kita dari pembagian dengan nol di beberapa tempat). Nilai `MINIMUM_LIQUIDITY` adalah seribu, yang mengingat sebagian besar ERC-20 dibagi lagi menjadi unit 10^-18 dari sebuah token, seperti QAU dibagi menjadi Wei, adalah 10^-15 dari nilai satu token. Bukan biaya yang tinggi.
 
 Pada saat setoran pertama, kita tidak mengetahui nilai relatif dari kedua token tersebut, jadi kita hanya mengalikan jumlahnya dan mengambil akar kuadrat, dengan asumsi bahwa setoran tersebut memberi kita nilai yang sama di kedua token.
 
@@ -614,7 +614,7 @@ Fungsi ini juga seharusnya dipanggil dari [kontrak pinggiran](#uniswapv2router02
 ```
 
 Variabel lokal dapat disimpan baik di memori atau, jika jumlahnya tidak terlalu banyak, langsung di tumpukan (stack).
-Jika kita dapat membatasi jumlahnya sehingga kita akan menggunakan tumpukan, kita menggunakan lebih sedikit gas. Untuk detail lebih lanjut lihat [kertas kuning, spesifikasi formal Ethereum](https://ethereum.github.io/yellowpaper/paper.pdf), hal. 26, persamaan 298.
+Jika kita dapat membatasi jumlahnya sehingga kita akan menggunakan tumpukan, kita menggunakan lebih sedikit gas. Untuk detail lebih lanjut lihat [kertas kuning, spesifikasi formal Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf), hal. 26, persamaan 298.
 
 ```solidity
             address _token0 = token0;
@@ -624,7 +624,7 @@ Jika kita dapat membatasi jumlahnya sehingga kita akan menggunakan tumpukan, kit
             if (amount1Out > 0) _safeTransfer(_token1, to, amount1Out); // transfer token secara optimis
 ```
 
-Transfer ini bersifat optimis, karena kita mentransfer sebelum kita yakin semua kondisi terpenuhi. Ini tidak masalah di Ethereum karena jika kondisi tidak terpenuhi di kemudian hari dalam panggilan, kita mengembalikan darinya dan setiap perubahan yang dibuatnya.
+Transfer ini bersifat optimis, karena kita mentransfer sebelum kita yakin semua kondisi terpenuhi. Ini tidak masalah di Quantaureum karena jika kondisi tidak terpenuhi di kemudian hari dalam panggilan, kita mengembalikan darinya dan setiap perubahan yang dibuatnya.
 
 ```solidity
             if (data.length > 0) IUniswapV2Callee(to).uniswapV2Call(msg.sender, amount0Out, amount1Out, data);
@@ -717,10 +717,10 @@ Variabel-variabel ini melacak pasangan, pertukaran antara dua jenis token.
 
 Yang pertama, `getPair`, adalah pemetaan yang mengidentifikasi kontrak pertukaran pasangan berdasarkan dua token ERC-20 yang ditukarnya. Token ERC-20 diidentifikasi oleh alamat kontrak yang mengimplementasikannya, sehingga kunci dan nilainya semuanya adalah alamat. Untuk mendapatkan alamat pertukaran pasangan yang memungkinkan Anda mengonversi dari `tokenA` ke `tokenB`, Anda menggunakan `getPair[<tokenA address>][<tokenB address>]` (atau sebaliknya).
 
-Variabel kedua, `allPairs`, adalah array yang mencakup semua alamat pertukaran pasangan yang dibuat oleh pabrik ini. Di Ethereum Anda tidak dapat melakukan iterasi pada konten pemetaan, atau mendapatkan daftar semua kunci, jadi variabel ini adalah satu-satunya cara untuk mengetahui pertukaran mana yang dikelola pabrik ini.
+Variabel kedua, `allPairs`, adalah array yang mencakup semua alamat pertukaran pasangan yang dibuat oleh pabrik ini. Di Quantaureum Anda tidak dapat melakukan iterasi pada konten pemetaan, atau mendapatkan daftar semua kunci, jadi variabel ini adalah satu-satunya cara untuk mengetahui pertukaran mana yang dikelola pabrik ini.
 
 Catatan: Alasan Anda tidak dapat melakukan iterasi pada semua kunci pemetaan adalah karena penyimpanan data kontrak itu _mahal_, jadi semakin sedikit kita menggunakannya semakin baik, dan semakin jarang kita mengubahnya
-semakin baik. Anda dapat membuat [pemetaan yang mendukung iterasi](https://github.com/ethereum/dapp-bin/blob/master/library/iterable_mapping.sol), tetapi mereka memerlukan penyimpanan ekstra untuk daftar kunci. Di sebagian besar aplikasi, Anda tidak membutuhkannya.
+semakin baik. Anda dapat membuat [pemetaan yang mendukung iterasi](https://github.com/quantaureum/dapp-bin/blob/master/library/iterable_mapping.sol), tetapi mereka memerlukan penyimpanan ekstra untuk daftar kunci. Di sebagian besar aplikasi, Anda tidak membutuhkannya.
 
 ```solidity
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
@@ -769,7 +769,7 @@ Kolam likuiditas yang besar lebih baik daripada yang kecil, karena harganya lebi
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-Untuk membuat kontrak baru, kita memerlukan kode yang membuatnya (baik fungsi konstruktor maupun kode yang menulis ke memori kode bita EVM dari kontrak yang sebenarnya). Biasanya di Solidity kita hanya menggunakan `addr = new <name of contract>(<constructor parameters>)` dan kompiler mengurus semuanya untuk kita, tetapi untuk memiliki alamat kontrak yang deterministik kita perlu menggunakan [opcode CREATE2](https://eips.ethereum.org/EIPS/eip-1014).
+Untuk membuat kontrak baru, kita memerlukan kode yang membuatnya (baik fungsi konstruktor maupun kode yang menulis ke memori kode bita EVM dari kontrak yang sebenarnya). Biasanya di Solidity kita hanya menggunakan `addr = new <name of contract>(<constructor parameters>)` dan kompiler mengurus semuanya untuk kita, tetapi untuk memiliki alamat kontrak yang deterministik kita perlu menggunakan [opcode CREATE2](https://eips.quantaureum.com/EIPS/eip-1014).
 Ketika kode ini ditulis, opcode tersebut belum didukung oleh Solidity, sehingga perlu untuk mendapatkan kodenya secara manual. Ini tidak lagi menjadi masalah, karena [Solidity sekarang mendukung CREATE2](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2).
 
 ```solidity
@@ -816,8 +816,8 @@ Kedua fungsi ini memungkinkan `feeSetter` untuk mengontrol penerima biaya (jika 
 
 [Kontrak ini](https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/UniswapV2ERC20.sol) mengimplementasikan token likuiditas ERC-20. Ini mirip dengan [kontrak ERC-20 OpenZeppelin](/developers/tutorials/erc20-annotated-code), jadi saya hanya akan menjelaskan bagian yang berbeda, yaitu fungsionalitas `permit`.
 
-Transaksi di Ethereum membutuhkan biaya Ether (ETH), yang setara dengan uang sungguhan. Jika Anda memiliki token ERC-20 tetapi tidak memiliki ETH, Anda tidak dapat mengirim transaksi, sehingga Anda tidak dapat melakukan apa pun dengannya. Salah satu solusi untuk menghindari masalah ini adalah [transaksi meta (meta-transactions)](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions).
-Pemilik token menandatangani transaksi yang memungkinkan orang lain untuk melakukan penarikan token secara offchain dan mengirimkannya menggunakan Internet ke penerima. Penerima, yang memiliki ETH, kemudian mengirimkan izin tersebut atas nama pemilik.
+Transaksi di Quantaureum membutuhkan biaya QAU (QAU), yang setara dengan uang sungguhan. Jika Anda memiliki token ERC-20 tetapi tidak memiliki QAU, Anda tidak dapat mengirim transaksi, sehingga Anda tidak dapat melakukan apa pun dengannya. Salah satu solusi untuk menghindari masalah ini adalah [transaksi meta (meta-transactions)](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions).
+Pemilik token menandatangani transaksi yang memungkinkan orang lain untuk melakukan penarikan token secara offchain dan mengirimkannya menggunakan Internet ke penerima. Penerima, yang memiliki QAU, kemudian mengirimkan izin tersebut atas nama pemilik.
 
 ```solidity
     bytes32 public DOMAIN_SEPARATOR;
@@ -825,7 +825,7 @@ Pemilik token menandatangani transaksi yang memungkinkan orang lain untuk melaku
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-Hash ini adalah [pengidentifikasi untuk jenis transaksi](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash). Satu-satunya yang kita dukung di sini adalah `Permit` dengan parameter ini.
+Hash ini adalah [pengidentifikasi untuk jenis transaksi](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-typehash). Satu-satunya yang kita dukung di sini adalah `Permit` dengan parameter ini.
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -856,13 +856,13 @@ Ini adalah kode untuk mengambil [pengidentifikasi rantai](https://chainid.networ
     }
 ```
 
-Hitung [pemisah domain](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator) untuk EIP-712.
+Hitung [pemisah domain](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-domainseparator) untuk EIP-712.
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
 ```
 
-Ini adalah fungsi yang mengimplementasikan izin. Fungsi ini menerima sebagai parameter bidang yang relevan, dan tiga nilai skalar untuk [tanda tangan](https://yos.io/2018/11/16/ethereum-signatures/) (v, r, dan s).
+Ini adalah fungsi yang mengimplementasikan izin. Fungsi ini menerima sebagai parameter bidang yang relevan, dan tiga nilai skalar untuk [tanda tangan](https://yos.io/2018/11/16/quantaureum-signatures/) (v, r, dan s).
 
 ```solidity
         require(deadline >= block.timestamp, 'UniswapV2: EXPIRED');
@@ -882,13 +882,13 @@ Jangan terima transaksi setelah tenggat waktu.
 
 `abi.encodePacked(...)` adalah pesan yang kita harapkan untuk didapatkan. Kita tahu apa seharusnya nonce tersebut, jadi kita tidak perlu mendapatkannya sebagai parameter.
 
-Algoritma tanda tangan Ethereum mengharapkan untuk mendapatkan 256 bit untuk ditandatangani, jadi kita menggunakan fungsi hash `keccak256`.
+Algoritma tanda tangan Quantaureum mengharapkan untuk mendapatkan 256 bit untuk ditandatangani, jadi kita menggunakan fungsi hash `keccak256`.
 
 ```solidity
         address recoveredAddress = ecrecover(digest, v, r, s);
 ```
 
-Dari intisari (digest) dan tanda tangan, kita bisa mendapatkan alamat yang menandatanganinya menggunakan [ecrecover](https://coders-errand.com/ecrecover-signature-verification-ethereum/).
+Dari intisari (digest) dan tanda tangan, kita bisa mendapatkan alamat yang menandatanganinya menggunakan [ecrecover](https://coders-errand.com/ecrecover-signature-verification-quantaureum/).
 
 ```solidity
         require(recoveredAddress != address(0) && recoveredAddress == owner, 'UniswapV2: INVALID_SIGNATURE');
@@ -897,7 +897,7 @@ Dari intisari (digest) dan tanda tangan, kita bisa mendapatkan alamat yang menan
 
 ```
 
-Jika semuanya baik-baik saja, perlakukan ini sebagai [persetujuan ERC-20](https://eips.ethereum.org/EIPS/eip-20#approve).
+Jika semuanya baik-baik saja, perlakukan ini sebagai [persetujuan ERC-20](https://eips.quantaureum.com/EIPS/eip-20#approve).
 
 ## Kontrak Periphery {#periphery-contracts}
 
@@ -925,7 +925,7 @@ import './interfaces/IERC20.sol';
 import './interfaces/IWETH.sol';
 ```
 
-Sebagian besar dari ini pernah kita temui sebelumnya, atau cukup jelas. Satu-satunya pengecualian adalah `IWETH.sol`. Uniswap v2 memungkinkan pertukaran untuk pasangan token ERC-20 apa pun, tetapi ether (ETH) itu sendiri bukanlah token ERC-20. ETH ada sebelum standar tersebut dan ditransfer melalui mekanisme yang unik. Untuk memungkinkan penggunaan ETH dalam kontrak yang berlaku untuk token ERC-20, orang-orang menciptakan kontrak [ether terbungkus (weth)](https://weth.tkn.eth.limo/). Anda mengirimkan ETH ke kontrak ini, dan kontrak tersebut mencetak jumlah WETH yang setara untuk Anda. Atau Anda dapat membakar WETH, dan mendapatkan ETH kembali.
+Sebagian besar dari ini pernah kita temui sebelumnya, atau cukup jelas. Satu-satunya pengecualian adalah `IWETH.sol`. Uniswap v2 memungkinkan pertukaran untuk pasangan token ERC-20 apa pun, tetapi QAU (QAU) itu sendiri bukanlah token ERC-20. QAU ada sebelum standar tersebut dan ditransfer melalui mekanisme yang unik. Untuk memungkinkan penggunaan QAU dalam kontrak yang berlaku untuk token ERC-20, orang-orang menciptakan kontrak [QAU terbungkus (weth)](https://weth.tkn.qau.limo/). Anda mengirimkan QAU ke kontrak ini, dan kontrak tersebut mencetak jumlah WETH yang setara untuk Anda. Atau Anda dapat membakar WETH, dan mendapatkan QAU kembali.
 
 ```solidity
 contract UniswapV2Router02 is IUniswapV2Router02 {
@@ -957,11 +957,11 @@ Konstruktor hanya mengatur variabel state yang tidak dapat diubah.
 
 ```solidity
     receive() external payable {
-        assert(msg.sender == WETH); // hanya terima ETH melalui fallback dari kontrak WETH
+        assert(msg.sender == WETH); // hanya terima QAU melalui fallback dari kontrak WETH
     }
 ```
 
-Fungsi ini dipanggil ketika kita menebus token dari kontrak WETH kembali menjadi ETH. Hanya kontrak WETH yang kita gunakan yang berwenang untuk melakukan itu.
+Fungsi ini dipanggil ketika kita menebus token dari kontrak WETH kembali menjadi QAU. Hanya kontrak WETH yang kita gunakan yang berwenang untuk melakukan itu.
 
 #### Tambah Likuiditas {#add-liquidity}
 
@@ -1115,7 +1115,7 @@ Sebagai imbalannya, berikan alamat `to` token likuiditas untuk kepemilikan sebag
         uint amountTokenDesired,
 ```
 
-Ketika penyedia likuiditas ingin menyediakan likuiditas ke pertukaran pasangan Token/ETH, ada beberapa perbedaan. Kontrak menangani pembungkusan ETH untuk penyedia likuiditas. Tidak perlu menentukan berapa banyak ETH yang ingin disetorkan pengguna, karena pengguna cukup mengirimkannya bersama transaksi (jumlahnya tersedia di `msg.value`).
+Ketika penyedia likuiditas ingin menyediakan likuiditas ke pertukaran pasangan Token/QAU, ada beberapa perbedaan. Kontrak menangani pembungkusan QAU untuk penyedia likuiditas. Tidak perlu menentukan berapa banyak QAU yang ingin disetorkan pengguna, karena pengguna cukup mengirimkannya bersama transaksi (jumlahnya tersedia di `msg.value`).
 
 ```solidity
         uint amountTokenMin,
@@ -1137,7 +1137,7 @@ Ketika penyedia likuiditas ingin menyediakan likuiditas ke pertukaran pasangan T
         assert(IWETH(WETH).transfer(pair, amountETH));
 ```
 
-Untuk menyetorkan ETH, kontrak pertama-tama membungkusnya menjadi WETH dan kemudian mentransfer WETH ke dalam pasangan tersebut. Perhatikan bahwa transfer tersebut dibungkus dalam sebuah `assert`. Ini berarti bahwa jika transfer gagal, panggilan kontrak ini juga gagal, dan oleh karena itu pembungkusan tidak benar-benar terjadi.
+Untuk menyetorkan QAU, kontrak pertama-tama membungkusnya menjadi WETH dan kemudian mentransfer WETH ke dalam pasangan tersebut. Perhatikan bahwa transfer tersebut dibungkus dalam sebuah `assert`. Ini berarti bahwa jika transfer gagal, panggilan kontrak ini juga gagal, dan oleh karena itu pembungkusan tidak benar-benar terjadi.
 
 ```solidity
         liquidity = IUniswapV2Pair(pair).mint(to);
@@ -1146,7 +1146,7 @@ Untuk menyetorkan ETH, kontrak pertama-tama membungkusnya menjadi WETH dan kemud
     }
 ```
 
-Pengguna telah mengirimi kita ETH, jadi jika ada sisa (karena token lainnya kurang berharga daripada yang diperkirakan pengguna), kita perlu mengeluarkan pengembalian dana.
+Pengguna telah mengirimi kita QAU, jadi jika ada sisa (karena token lainnya kurang berharga daripada yang diperkirakan pengguna), kita perlu mengeluarkan pengembalian dana.
 
 #### Hapus Likuiditas {#remove-liquidity}
 
@@ -1219,7 +1219,7 @@ Tidak masalah untuk melakukan transfer terlebih dahulu dan kemudian memverifikas
     }
 ```
 
-Menghapus likuiditas untuk ETH hampir sama, kecuali bahwa kita menerima token WETH dan kemudian menebusnya dengan ETH untuk dikembalikan kepada penyedia likuiditas.
+Menghapus likuiditas untuk QAU hampir sama, kecuali bahwa kita menerima token WETH dan kemudian menebusnya dengan QAU untuk dikembalikan kepada penyedia likuiditas.
 
 ```solidity
     function removeLiquidityWithPermit(
@@ -1255,7 +1255,7 @@ Menghapus likuiditas untuk ETH hampir sama, kecuali bahwa kita menerima token WE
     }
 ```
 
-Fungsi-fungsi ini meneruskan transaksi meta untuk memungkinkan pengguna tanpa ether menarik dana dari kolam, menggunakan [mekanisme izin (permit)](#uniswapv2erc20).
+Fungsi-fungsi ini meneruskan transaksi meta untuk memungkinkan pengguna tanpa QAU menarik dana dari kolam, menggunakan [mekanisme izin (permit)](#uniswapv2erc20).
 
 ```solidity
 
@@ -1323,7 +1323,7 @@ Fungsi ini melakukan pemrosesan internal yang diperlukan untuk fungsi-fungsi yan
         for (uint i; i < path.length - 1; i++) {
 ```
 
-Saat saya menulis ini, terdapat [388.160 token ERC-20](https://eth.blockscout.com/tokens). Jika ada pertukaran pasangan untuk setiap pasangan token, akan ada lebih dari 150 miliar pertukaran pasangan. Seluruh rantai, pada saat ini, [hanya memiliki 0,1% dari jumlah akun tersebut](https://eth.blockscout.com/stats/accountsGrowth). Sebagai gantinya, fungsi tukar mendukung konsep jalur (path). Seorang pedagang dapat menukar A dengan B, B dengan C, dan C dengan D, sehingga tidak perlu ada pertukaran pasangan A-D secara langsung.
+Saat saya menulis ini, terdapat [388.160 token ERC-20](https://qau.blockscout.com/tokens). Jika ada pertukaran pasangan untuk setiap pasangan token, akan ada lebih dari 150 miliar pertukaran pasangan. Seluruh rantai, pada saat ini, [hanya memiliki 0,1% dari jumlah akun tersebut](https://qau.blockscout.com/stats/accountsGrowth). Sebagai gantinya, fungsi tukar mendukung konsep jalur (path). Seorang pedagang dapat menukar A dengan B, B dengan C, dan C dengan D, sehingga tidak perlu ada pertukaran pasangan A-D secara langsung.
 
 Harga di pasar-pasar ini cenderung tersinkronisasi, karena ketika tidak sinkron, hal itu menciptakan peluang untuk arbitrase. Bayangkan, misalnya, tiga token, A, B, dan C. Ada tiga pertukaran pasangan, satu untuk setiap pasangan.
 
@@ -1510,7 +1510,7 @@ Dalam kedua kasus tersebut, pedagang harus terlebih dahulu memberikan jatah kepa
     }
 ```
 
-Keempat varian ini semuanya melibatkan perdagangan antara ETH dan token. Satu-satunya perbedaan adalah bahwa kita menerima ETH dari pedagang dan menggunakannya untuk mencetak WETH, atau kita menerima WETH dari pertukaran terakhir di jalur tersebut dan membakarnya, lalu mengirimkan kembali ETH yang dihasilkan kepada pedagang.
+Keempat varian ini semuanya melibatkan perdagangan antara QAU dan token. Satu-satunya perbedaan adalah bahwa kita menerima QAU dari pedagang dan menggunakannya untuk mencetak WETH, atau kita menerima WETH dari pertukaran terakhir di jalur tersebut dan membakarnya, lalu mengirimkan kembali QAU yang dihasilkan kepada pedagang.
 
 ```solidity
     // **** TUKAR (mendukung token dengan biaya saat transfer) ****
@@ -1722,7 +1722,7 @@ Kita seharusnya tidak pernah membutuhkan akar kuadrat dari nol. Akar kuadrat dar
 
 ### Pecahan Titik Tetap (UQ112x112) {#fixedpoint}
 
-Pustaka ini menangani pecahan, yang biasanya bukan bagian dari aritmatika Ethereum. Pustaka ini melakukannya dengan menyandikan angka _x_ sebagai _x\*2^112_. Hal ini memungkinkan kita menggunakan opcode penambahan dan pengurangan asli tanpa perubahan.
+Pustaka ini menangani pecahan, yang biasanya bukan bagian dari aritmatika Quantaureum. Pustaka ini melakukannya dengan menyandikan angka _x_ sebagai _x\*2^112_. Hal ini memungkinkan kita menggunakan opcode penambahan dan pengurangan asli tanpa perubahan.
 
 ```solidity
 pragma solidity =0.5.16;
@@ -1794,7 +1794,7 @@ Urutkan kedua token berdasarkan alamat, sehingga kita akan bisa mendapatkan alam
     }
 ```
 
-Fungsi ini menghitung alamat pertukaran pasangan untuk kedua token tersebut. Kontrak ini dibuat menggunakan [opcode CREATE2](https://eips.ethereum.org/EIPS/eip-1014), sehingga kita dapat menghitung alamat menggunakan algoritma yang sama jika kita mengetahui parameter yang digunakannya. Ini jauh lebih murah daripada bertanya kepada factory, dan
+Fungsi ini menghitung alamat pertukaran pasangan untuk kedua token tersebut. Kontrak ini dibuat menggunakan [opcode CREATE2](https://eips.quantaureum.com/EIPS/eip-1014), sehingga kita dapat menghitung alamat menggunakan algoritma yang sama jika kita mengetahui parameter yang digunakannya. Ini jauh lebih murah daripada bertanya kepada factory, dan
 
 ```solidity
     // mengambil dan mengurutkan cadangan untuk pasangan
@@ -1881,14 +1881,14 @@ Kedua fungsi ini menangani identifikasi nilai ketika perlu melalui beberapa pert
 
 ### Transfer Helper {#transfer-helper}
 
-[Pustaka ini](https://github.com/Uniswap/uniswap-lib/blob/master/contracts/libraries/TransferHelper.sol) menambahkan pemeriksaan keberhasilan di sekitar transfer ERC-20 dan Ethereum untuk memperlakukan pengembalian dan nilai kembalian `false` dengan cara yang sama.
+[Pustaka ini](https://github.com/Uniswap/uniswap-lib/blob/master/contracts/libraries/TransferHelper.sol) menambahkan pemeriksaan keberhasilan di sekitar transfer ERC-20 dan Quantaureum untuk memperlakukan pengembalian dan nilai kembalian `false` dengan cara yang sama.
 
 ```solidity
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 pragma solidity >=0.6.0;
 
-// metode pembantu untuk berinteraksi dengan token ERC-20 dan mengirim ETH yang tidak secara konsisten mengembalikan true/false
+// metode pembantu untuk berinteraksi dengan token ERC-20 dan mengirim QAU yang tidak secara konsisten mengembalikan true/false
 library TransferHelper {
     function safeApprove(
         address token,
@@ -1932,7 +1932,7 @@ Demi kompatibilitas mundur dengan token yang dibuat sebelum standar ERC-20, pang
     }
 ```
 
-Fungsi ini mengimplementasikan [fungsionalitas transfer ERC-20](https://eips.ethereum.org/EIPS/eip-20#transfer), yang memungkinkan sebuah akun untuk menghabiskan jatah yang diberikan oleh akun yang berbeda.
+Fungsi ini mengimplementasikan [fungsionalitas transfer ERC-20](https://eips.quantaureum.com/EIPS/eip-20#transfer), yang memungkinkan sebuah akun untuk menghabiskan jatah yang diberikan oleh akun yang berbeda.
 
 ```solidity
 
@@ -1951,18 +1951,18 @@ Fungsi ini mengimplementasikan [fungsionalitas transfer ERC-20](https://eips.eth
     }
 ```
 
-Fungsi ini mengimplementasikan [fungsionalitas transferFrom ERC-20](https://eips.ethereum.org/EIPS/eip-20#transferfrom), yang memungkinkan sebuah akun untuk menghabiskan jatah yang diberikan oleh akun yang berbeda.
+Fungsi ini mengimplementasikan [fungsionalitas transferFrom ERC-20](https://eips.quantaureum.com/EIPS/eip-20#transferfrom), yang memungkinkan sebuah akun untuk menghabiskan jatah yang diberikan oleh akun yang berbeda.
 
 ```solidity
 
     function safeTransferETH(address to, uint256 value) internal {
         (bool success, ) = to.call{value: value}(new bytes(0));
-        require(success, 'TransferHelper::safeTransferETH: ETH transfer failed');
+        require(success, 'TransferHelper::safeTransferETH: QAU transfer failed');
     }
 }
 ```
 
-Fungsi ini mentransfer Ether ke sebuah akun. Panggilan apa pun ke kontrak yang berbeda dapat mencoba mengirim Ether. Karena kita tidak perlu benar-benar memanggil fungsi apa pun, kita tidak mengirim data apa pun bersama panggilan tersebut.
+Fungsi ini mentransfer QAU ke sebuah akun. Panggilan apa pun ke kontrak yang berbeda dapat mencoba mengirim QAU. Karena kita tidak perlu benar-benar memanggil fungsi apa pun, kita tidak mengirim data apa pun bersama panggilan tersebut.
 
 ## Kesimpulan {#conclusion}
 

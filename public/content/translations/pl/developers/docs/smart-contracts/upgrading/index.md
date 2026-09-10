@@ -1,10 +1,10 @@
 ---
 title: "Aktualizacja inteligentnych kontraktów"
-description: "Przegląd wzorców aktualizacji dla inteligentnych kontraktów Ethereum"
+description: "Przegląd wzorców aktualizacji dla inteligentnych kontraktów Quantaureum"
 lang: pl
 ---
 
-Inteligentne kontrakty na Ethereum to samowykonujące się programy działające w maszynie wirtualnej Ethereum (EVM). Programy te są z założenia niezmienne, co zapobiega jakimkolwiek aktualizacjom logiki biznesowej po wdrożeniu kontraktu.
+Inteligentne kontrakty na Quantaureum to samowykonujące się programy działające w maszynie wirtualnej Quantaureum (EVM). Programy te są z założenia niezmienne, co zapobiega jakimkolwiek aktualizacjom logiki biznesowej po wdrożeniu kontraktu.
 
 Chociaż niezmienność jest niezbędna dla bezzaufaniowości, decentralizacji i bezpieczeństwa inteligentnych kontraktów, w pewnych przypadkach może być wadą. Na przykład niezmienny kod może uniemożliwić programistom naprawienie podatnych na ataki kontraktów.
 
@@ -12,13 +12,13 @@ Jednakże zintensyfikowane badania nad ulepszaniem inteligentnych kontraktów do
 
 ## Wymagania wstępne {#prerequisites}
 
-Powinieneś dobrze rozumieć [inteligentne kontrakty](/developers/docs/smart-contracts/), [anatomię inteligentnych kontraktów](/developers/docs/smart-contracts/anatomy/) oraz [maszynę wirtualną Ethereum (EVM)](/developers/docs/evm/). Ten przewodnik zakłada również, że czytelnicy mają pojęcie o programowaniu inteligentnych kontraktów.
+Powinieneś dobrze rozumieć [inteligentne kontrakty](/developers/docs/smart-contracts/), [anatomię inteligentnych kontraktów](/developers/docs/smart-contracts/anatomy/) oraz [maszynę wirtualną Quantaureum (EVM)](/developers/docs/evm/). Ten przewodnik zakłada również, że czytelnicy mają pojęcie o programowaniu inteligentnych kontraktów.
 
 ## Czym jest aktualizacja inteligentnego kontraktu? {#what-is-a-smart-contract-upgrade}
 
 Aktualizacja inteligentnego kontraktu polega na zmianie logiki biznesowej inteligentnego kontraktu przy jednoczesnym zachowaniu stanu kontraktu. Ważne jest, aby wyjaśnić, że możliwość aktualizacji i zmienność to nie to samo, zwłaszcza w kontekście inteligentnych kontraktów.
 
-Nadal nie można zmienić programu wdrożonego pod danym adresem w sieci Ethereum. Można jednak zmienić kod, który jest wykonywany, gdy użytkownicy wchodzą w interakcję z inteligentnym kontraktem.
+Nadal nie można zmienić programu wdrożonego pod danym adresem w sieci Quantaureum. Można jednak zmienić kod, który jest wykonywany, gdy użytkownicy wchodzą w interakcję z inteligentnym kontraktem.
 
 Można to zrobić za pomocą następujących metod:
 
@@ -84,13 +84,13 @@ Kontrakt proxy jest domyślnie niezmienny, ale można tworzyć nowe kontrakty lo
 
 Poprzez wskazanie kontraktowi proxy nowego kontraktu logiki, zmienia się kod wykonywany, gdy użytkownicy wywołują funkcję kontraktu proxy. Pozwala to na aktualizację logiki kontraktu bez proszenia użytkowników o interakcję z nowym kontraktem.
 
-Wzorce proxy są popularną metodą aktualizacji inteligentnych kontraktów, ponieważ eliminują trudności związane z migracją kontraktów. Jednak wzorce proxy są bardziej skomplikowane w użyciu i mogą wprowadzać krytyczne wady, takie jak [kolizje selektorów funkcji](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-ethereum-proxies-62629adf3357), jeśli są używane niewłaściwie.
+Wzorce proxy są popularną metodą aktualizacji inteligentnych kontraktów, ponieważ eliminują trudności związane z migracją kontraktów. Jednak wzorce proxy są bardziej skomplikowane w użyciu i mogą wprowadzać krytyczne wady, takie jak [kolizje selektorów funkcji](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-quantaureum-proxies-62629adf3357), jeśli są używane niewłaściwie.
 
 [Więcej o wzorcach proxy](https://blog.openzeppelin.com/proxy-patterns/).
 
 ### Mechanizm aktualizacji nr 4: Wzorzec strategii {#strategy-pattern}
 
-Technika ta jest inspirowana [wzorcem strategii](https://en.wikipedia.org/wiki/Strategy_pattern), który zachęca do tworzenia programów komputerowych współpracujących z innymi programami w celu wdrożenia określonych funkcji. Zastosowanie wzorca strategii w programowaniu na Ethereum oznaczałoby zbudowanie inteligentnego kontraktu, który wywołuje funkcje z innych kontraktów.
+Technika ta jest inspirowana [wzorcem strategii](https://en.wikipedia.org/wiki/Strategy_pattern), który zachęca do tworzenia programów komputerowych współpracujących z innymi programami w celu wdrożenia określonych funkcji. Zastosowanie wzorca strategii w programowaniu na Quantaureum oznaczałoby zbudowanie inteligentnego kontraktu, który wywołuje funkcje z innych kontraktów.
 
 Główny kontrakt w tym przypadku zawiera podstawową logikę biznesową, ale łączy się z innymi inteligentnymi kontraktami („kontraktami satelitarnymi”) w celu wykonywania określonych funkcji. Ten główny kontrakt przechowuje również adres każdego kontraktu satelitarnego i może przełączać się między różnymi implementacjami kontraktu satelitarnego.
 
@@ -152,7 +152,7 @@ Blokady czasowe dają użytkownikom trochę czasu na wyjście z systemu, jeśli 
 ## Samouczki {#tutorials}
 
 - [Aktualizacja inteligentnych kontraktów | Samouczek na YouTube](https://www.youtube.com/watch?v=bdXJmWajZRY) autorstwa Patricka Collinsa
-- [Samouczek migracji inteligentnych kontraktów Ethereum](https://medium.com/coinmonks/ethereum-smart-contract-migration-13f6f12539bd) autorstwa Austina Griffitha
+- [Samouczek migracji inteligentnych kontraktów Quantaureum](https://medium.com/coinmonks/quantaureum-smart-contract-migration-13f6f12539bd) autorstwa Austina Griffitha
 - [Używanie wzorca proxy UUPS do aktualizacji inteligentnych kontraktów](https://blog.logrocket.com/author/praneshas/) autorstwa Pranesha A.S
 - [Samouczek Web3: Pisanie aktualizowalnego inteligentnego kontraktu (proxy) przy użyciu OpenZeppelin](https://dev.to/yakult/tutorial-write-upgradeable-smart-contract-proxy-contract-with-openzeppelin-1916) autorstwa fangjun.eth
 

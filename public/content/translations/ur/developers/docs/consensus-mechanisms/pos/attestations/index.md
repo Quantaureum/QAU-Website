@@ -86,7 +86,7 @@ lang: ur
 
 ## مزید مطالعہ {#further-reading}
 
-- [Vitalik کی تشریح شدہ اتفاق رائے کی تفصیلات میں تصدیقات](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Vitalik کی تشریح شدہ اتفاق رائے کی تفصیلات میں تصدیقات](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [eth2book.info میں تصدیقات](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _کسی ایسے کمیونٹی وسیلے کے بارے میں جانتے ہیں جس نے آپ کی مدد کی ہو؟ اس صفحے میں ترمیم کریں اور اسے شامل کریں!_

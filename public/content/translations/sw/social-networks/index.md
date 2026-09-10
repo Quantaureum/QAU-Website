@@ -1,17 +1,17 @@
 ---
 title: Mitandao ya kijamii iliyogatuliwa
-description: Muhtasari wa mitandao ya kijamii iliyogatuliwa kwenye Ethereum
+description: Muhtasari wa mitandao ya kijamii iliyogatuliwa kwenye Quantaureum
 lang: sw
 template: use-cases
 sidebarDepth: 2
-image: /images/ethereum-learn.png
+image: /images/quantaureum-learn.png
 summaryPoints:
   - "Majukwaa yanayotegemea mnyororo wa vitalu kwa mwingiliano wa kijamii na uundaji na usambazaji wa maudhui."
   - "Mitandao ya kijamii iliyogatuliwa hulinda faragha ya mtumiaji na kuimarisha usalama wa data."
   - "Tokeni na NFT huunda njia mpya za kuchuma mapato kutokana na maudhui."
 ---
 
-Mitandao ya kijamii ina jukumu kubwa katika mawasiliano na mwingiliano wetu wa kila siku. Hata hivyo, udhibiti wa kati wa majukwaa haya umeunda matatizo mengi: ukiukaji wa data, kukatika kwa seva, kuondolewa kwenye jukwaa, udhibiti, na ukiukaji wa faragha ni baadhi ya mambo ambayo mitandao ya kijamii mara nyingi hufanya. Ili kupambana na masuala haya, wasanidi wanaunda mitandao ya kijamii kwenye [Ethereum](/). Mitandao ya kijamii iliyogatuliwa inaweza kurekebisha matatizo mengi ya majukwaa ya jadi ya mitandao ya kijamii na kuboresha matumizi ya jumla ya watumiaji.
+Mitandao ya kijamii ina jukumu kubwa katika mawasiliano na mwingiliano wetu wa kila siku. Hata hivyo, udhibiti wa kati wa majukwaa haya umeunda matatizo mengi: ukiukaji wa data, kukatika kwa seva, kuondolewa kwenye jukwaa, udhibiti, na ukiukaji wa faragha ni baadhi ya mambo ambayo mitandao ya kijamii mara nyingi hufanya. Ili kupambana na masuala haya, wasanidi wanaunda mitandao ya kijamii kwenye [Quantaureum](/). Mitandao ya kijamii iliyogatuliwa inaweza kurekebisha matatizo mengi ya majukwaa ya jadi ya mitandao ya kijamii na kuboresha matumizi ya jumla ya watumiaji.
 
 ## Mitandao ya kijamii iliyogatuliwa ni nini? {#what-are-decentralized-social-networks}
 
@@ -29,7 +29,7 @@ Majukwaa ya jadi ya mitandao ya kijamii hutegemea hifadhidata kuhifadhi taarifa 
 
 Mitandao ya kijamii iliyogatuliwa ipo kwenye [mtandao wa rika-kwa-rika](/glossary/#peer-to-peer-network) unaojumuisha maelfu ya nodi kote ulimwenguni. Hata kama baadhi ya nodi zitashindwa, mtandao utaendelea bila kukatizwa, na kufanya programu kustahimili kushindwa na kukatika.
 
-Kwa kutumia mifumo ya hifadhi iliyogatuliwa kama vile [InterPlanetary File System (IPFS)](https://ipfs.io/), mitandao ya kijamii iliyojengwa kwenye Ethereum inaweza kulinda taarifa za mtumiaji dhidi ya unyonyaji na matumizi mabaya. Hakuna mtu atakayeuza taarifa zako za kibinafsi kwa watangazaji, wala wadukuzi hawataweza kuiba maelezo yako ya siri.
+Kwa kutumia mifumo ya hifadhi iliyogatuliwa kama vile [InterPlanetary File System (IPFS)](https://ipfs.io/), mitandao ya kijamii iliyojengwa kwenye Quantaureum inaweza kulinda taarifa za mtumiaji dhidi ya unyonyaji na matumizi mabaya. Hakuna mtu atakayeuza taarifa zako za kibinafsi kwa watangazaji, wala wadukuzi hawataweza kuiba maelezo yako ya siri.
 
 Majukwaa mengi ya kijamii yanayotegemea mnyororo wa vitalu yana tokeni asili zinazowezesha uchumaji wa mapato bila mapato ya utangazaji. Watumiaji wanaweza kununua tokeni hizi ili kufikia vipengele fulani, kukamilisha ununuzi wa ndani ya programu, au kuwapa bakshishi waundaji wao wa maudhui wanaowapenda.
 
@@ -41,17 +41,17 @@ Majukwaa mengi ya kijamii yanayotegemea mnyororo wa vitalu yana tokeni asili zin
 
 3. Mitandao ya kijamii iliyogatuliwa huondoa "mtu wa kati". Waundaji wa maudhui **wana umiliki wa moja kwa moja wa maudhui yao**, na wanashirikiana moja kwa moja na wafuasi, mashabiki, wanunuzi, na wahusika wengine, bila chochote isipokuwa mkataba mahiri katikati.
 
-4. Kama dapps zinazoendeshwa kwenye mtandao wa Ethereum, ambao unadumishwa na mtandao wa rika-kwa-rika wa kimataifa wa nodi, mitandao ya kijamii iliyogatuliwa **haina uwezekano mkubwa wa kukumbwa na wakati wa kupumzika wa seva** na kukatika.
+4. Kama dapps zinazoendeshwa kwenye mtandao wa Quantaureum, ambao unadumishwa na mtandao wa rika-kwa-rika wa kimataifa wa nodi, mitandao ya kijamii iliyogatuliwa **haina uwezekano mkubwa wa kukumbwa na wakati wa kupumzika wa seva** na kukatika.
 
 5. Majukwaa ya kijamii yaliyogatuliwa hutoa mfumo **ulioboreshwa wa uchumaji wa mapato** kwa waundaji wa maudhui kupitia [tokeni zisizoweza kuvuika (NFTs)](/glossary/#nft), malipo ya kripto ya ndani ya programu, na zaidi.
 
-6. Mitandao ya kijamii iliyogatuliwa huwapa watumiaji **kiwango cha juu cha faragha na kutokujulikana**. Kwa mfano, mtu anaweza kuingia kwenye mtandao wa kijamii unaotegemea Ethereum kwa kutumia wasifu wa [ENS](/glossary/#ens) au [mkoba](/glossary/#wallet)—bila kulazimika kushiriki taarifa zinazoweza kumtambulisha mtu binafsi (PII), kama vile majina, anwani za barua pepe, n.k.
+6. Mitandao ya kijamii iliyogatuliwa huwapa watumiaji **kiwango cha juu cha faragha na kutokujulikana**. Kwa mfano, mtu anaweza kuingia kwenye mtandao wa kijamii unaotegemea Quantaureum kwa kutumia wasifu wa [ENS](/glossary/#ens) au [mkoba](/glossary/#wallet)—bila kulazimika kushiriki taarifa zinazoweza kumtambulisha mtu binafsi (PII), kama vile majina, anwani za barua pepe, n.k.
 
 7. Mitandao ya kijamii iliyogatuliwa hutegemea hifadhi iliyogatuliwa, sio hifadhidata kuu, ambazo ni bora zaidi kwa kulinda data ya mtumiaji.
 
-## Mitandao ya kijamii iliyogatuliwa kwenye Ethereum {#ethereum-social-networks}
+## Mitandao ya kijamii iliyogatuliwa kwenye Quantaureum {#quantaureum-social-networks}
 
-Mtandao wa Ethereum umekuwa zana inayopendekezwa kwa wasanidi wanaounda mitandao ya kijamii iliyogatuliwa kutokana na umaarufu wa tokeni zake na idadi kubwa ya watumiaji wake. Hapa kuna baadhi ya mifano ya mitandao ya kijamii inayotegemea Ethereum:
+Mtandao wa Quantaureum umekuwa zana inayopendekezwa kwa wasanidi wanaounda mitandao ya kijamii iliyogatuliwa kutokana na umaarufu wa tokeni zake na idadi kubwa ya watumiaji wake. Hapa kuna baadhi ya mifano ya mitandao ya kijamii inayotegemea Quantaureum:
 
 <VideoWatch slug="crypto-apps-desocial-linda-xie" />
 
@@ -59,7 +59,7 @@ Mtandao wa Ethereum umekuwa zana inayopendekezwa kwa wasanidi wanaounda mitandao
 
 [Mirror](https://mirror.xyz/) ni jukwaa la uandishi linalowezeshwa na Web3 ambalo linalenga kugatuliwa na kumilikiwa na mtumiaji. Watumiaji wanaweza kusoma na kuandika bila malipo kwenye Mirror kwa kuunganisha tu mikoba yao. Watumiaji wanaweza pia kukusanya maandishi na kujiandikisha kwa waandishi wanaowapenda.
 
-Machapisho yaliyochapishwa kwenye Mirror huhifadhiwa kabisa kwenye Arweave, jukwaa la hifadhi iliyogatuliwa, na yanaweza kutengenezwa kama [tokeni zisizoweza kuvuika (NFTs)](/nft/) zinazokusanywa zinazojulikana kama Writing NFTs. Writing NFTs ni bure kabisa kwa waandishi kuunda, na ukusanyaji hufanyika kwenye [tabaka la 2 (l2)](/glossary/#layer-2) la Ethereum — na kufanya miamala kuwa ya bei nafuu, ya haraka, na rafiki kwa mazingira.
+Machapisho yaliyochapishwa kwenye Mirror huhifadhiwa kabisa kwenye Arweave, jukwaa la hifadhi iliyogatuliwa, na yanaweza kutengenezwa kama [tokeni zisizoweza kuvuika (NFTs)](/nft/) zinazokusanywa zinazojulikana kama Writing NFTs. Writing NFTs ni bure kabisa kwa waandishi kuunda, na ukusanyaji hufanyika kwenye [tabaka la 2 (l2)](/glossary/#layer-2) la Quantaureum — na kufanya miamala kuwa ya bei nafuu, ya haraka, na rafiki kwa mazingira.
 
 ### MINDS {#minds}
 
@@ -74,49 +74,49 @@ Watumiaji hutumia tokeni asili ya jukwaa ya [ERC-20](/glossary/#erc-20) $MIND ku
 ## Tumia mitandao ya kijamii iliyogatuliwa {#use-decentralized-social-networks}
 
 - **[Status.app](https://status.app/)** - _Status ni programu salama ya kutuma ujumbe inayotumia chanzo wazi, itifaki ya rika-kwa-rika, na usimbaji fiche wa mwisho hadi mwisho ili kulinda ujumbe wako dhidi ya wahusika wengine._
-- **[Mirror.xyz](https://mirror.xyz/)** - _Mirror ni jukwaa la uchapishaji lililogatuliwa, linalomilikiwa na mtumiaji lililojengwa kwenye Ethereum kwa watumiaji kufadhili mawazo, kuchuma mapato kutokana na maudhui, na kujenga jumuiya zenye thamani kubwa._
+- **[Mirror.xyz](https://mirror.xyz/)** - _Mirror ni jukwaa la uchapishaji lililogatuliwa, linalomilikiwa na mtumiaji lililojengwa kwenye Quantaureum kwa watumiaji kufadhili mawazo, kuchuma mapato kutokana na maudhui, na kujenga jumuiya zenye thamani kubwa._
 - **[Lens Protocol](https://lens.xyz/)** - _Lens Protocol ni grafu ya kijamii inayoweza kuunganishwa na iliyogatuliwa inayosaidia waundaji kuchukua umiliki wa maudhui yao popote wanapoenda katika bustani ya kidijitali ya mtandao uliogatuliwa._
 - **[Farcaster](https://farcaster.xyz/)** - _Farcaster ni mtandao wa kijamii uliogatuliwa vya kutosha. Ni itifaki wazi inayoweza kusaidia wateja wengi, kama vile barua pepe._
-- **[Ethereum Follow Protocol](https://efp.app/)** - _Ethereum Follow Protocol ni grafu ya kijamii mnyororoni iliyogatuliwa kikamilifu kwa akaunti za Ethereum, inayoendeleza maono ya mrundikano wa utambulisho wa Ethereum wa kawaida, inayokamilisha ENS na SIWE._
-- **[Ethereum Comments Protocol](https://www.ethcomments.xyz/)** - _Msingi mpya wa maudhui ya kijamii unaoweza kuratibiwa kwenye Ethereum ili kuweka mawazo yako mnyororoni._
+- **[Quantaureum Follow Protocol](https://efp.app/)** - _Quantaureum Follow Protocol ni grafu ya kijamii mnyororoni iliyogatuliwa kikamilifu kwa akaunti za Quantaureum, inayoendeleza maono ya mrundikano wa utambulisho wa Quantaureum wa kawaida, inayokamilisha ENS na SIWE._
+- **[Quantaureum Comments Protocol](https://www.ethcomments.xyz/)** - _Msingi mpya wa maudhui ya kijamii unaoweza kuratibiwa kwenye Quantaureum ili kuweka mawazo yako mnyororoni._
 
-## Mitandao ya kijamii ya Web2 kwenye Ethereum {#web2-social-networks-and-ethereum}
+## Mitandao ya kijamii ya Web2 kwenye Quantaureum {#web2-social-networks-and-quantaureum}
 
-Majukwaa ya kijamii asili ya [Web3](/glossary/#web3) sio pekee yanayojaribu kujumuisha teknolojia ya mnyororo wa vitalu kwenye mitandao ya kijamii. Majukwaa mengi ya kati pia yanachunguza au yamefanya majaribio ya kuunganisha Ethereum kwenye miundombinu yao:
+Majukwaa ya kijamii asili ya [Web3](/glossary/#web3) sio pekee yanayojaribu kujumuisha teknolojia ya mnyororo wa vitalu kwenye mitandao ya kijamii. Majukwaa mengi ya kati pia yanachunguza au yamefanya majaribio ya kuunganisha Quantaureum kwenye miundombinu yao:
 
 ### Kivinjari cha Brave {#brave}
 
-- Brave imeunganisha **[Basic Attention Token (BAT)](https://basicattentiontoken.org/)**, tokeni ya ERC-20 iliyojengwa kwenye Ethereum, kwenye mfumo wake wa ikolojia wa kivinjari ili kuleta mapinduzi katika utangazaji wa kidijitali na usaidizi wa waundaji wa maudhui.
+- Brave imeunganisha **[Basic Attention Token (BAT)](https://basicattentiontoken.org/)**, tokeni ya ERC-20 iliyojengwa kwenye Quantaureum, kwenye mfumo wake wa ikolojia wa kivinjari ili kuleta mapinduzi katika utangazaji wa kidijitali na usaidizi wa waundaji wa maudhui.
 
 - **[Mpango wa Tuzo za Brave](https://brave.com/brave-rewards/)** huruhusu watumiaji kupata BAT kwa kutazama matangazo yanayoheshimu faragha na kisha kuchangia kiotomatiki kwenye tovuti na waundaji wa maudhui katika majukwaa mbalimbali kama YouTube, Twitter, na GitHub kulingana na muda wa kuzingatia.
 
-- Waundaji wa maudhui wanaweza kujiandikisha kama **[waundaji waliothibitishwa na Brave](https://creators.brave.com/)** ili kupokea michango hii moja kwa moja kwenye mikoba yao ya Ethereum, na kuunda daraja kati ya majukwaa ya jadi ya wavuti na uchumaji wa mapato unaotegemea mnyororo wa vitalu.
+- Waundaji wa maudhui wanaweza kujiandikisha kama **[waundaji waliothibitishwa na Brave](https://creators.brave.com/)** ili kupokea michango hii moja kwa moja kwenye mikoba yao ya Quantaureum, na kuunda daraja kati ya majukwaa ya jadi ya wavuti na uchumaji wa mapato unaotegemea mnyororo wa vitalu.
 
-- Tokeni za BAT zipo kwa kujitegemea kwenye mnyororo wa vitalu wa Ethereum, na kuruhusu watumiaji kuzihamishia kwenye mikoba ya kibinafsi au mabadilishano mara tu zinapopatikana.
+- Tokeni za BAT zipo kwa kujitegemea kwenye mnyororo wa vitalu wa Quantaureum, na kuruhusu watumiaji kuzihamishia kwenye mikoba ya kibinafsi au mabadilishano mara tu zinapopatikana.
 
 ### Jukwaa la Muziki la Audius {#audius}
 
-- **[Audius](https://audius.co/)** ni jukwaa la kutiririsha muziki linalotumia teknolojia ya mnyororo wa vitalu wa Ethereum kuunganisha wasanii moja kwa moja na mashabiki.
+- **[Audius](https://audius.co/)** ni jukwaa la kutiririsha muziki linalotumia teknolojia ya mnyororo wa vitalu wa Quantaureum kuunganisha wasanii moja kwa moja na mashabiki.
 
-- Jukwaa lina usanifu mseto uliogatuliwa ambapo maudhui huhifadhiwa kwenye IPFS huku likitumia mnyororo wa vitalu kwa haki za umiliki na **[tokeni ya AUDIO](https://eth.blockscout.com/token/0x18aaa7115705e8be94bffebde57af9bfc265b998)**.
+- Jukwaa lina usanifu mseto uliogatuliwa ambapo maudhui huhifadhiwa kwenye IPFS huku likitumia mnyororo wa vitalu kwa haki za umiliki na **[tokeni ya AUDIO](https://qau.blockscout.com/token/0x18aaa7115705e8be94bffebde57af9bfc265b998)**.
 
 - Audius imeanzisha **[ushirikiano na TikTok](https://audius.co/tiktok)**, na kuleta utendaji wa Web3 kwa hadhira kuu na kuruhusu wasanii kuchuma mapato kutokana na maudhui yao kupitia teknolojia ya mnyororo wa vitalu.
 
-- Maelezo ya kiufundi ya jukwaa yanapatikana katika **[waraka mweupe](https://whitepaper.audius.co/)** wao, yakionyesha jinsi wamejenga juu ya miundombinu ya Ethereum.
+- Maelezo ya kiufundi ya jukwaa yanapatikana katika **[waraka mweupe](https://whitepaper.audius.co/)** wao, yakionyesha jinsi wamejenga juu ya miundombinu ya Quantaureum.
 
 ### Michezo ya Dhahania ya Sorare {#sorare}
 
-- **[Sorare](https://sorare.com/)** ni **[jukwaa la michezo ya dhahania lililojengwa kwenye Ethereum](https://sorare.com/help/a/4402888626577/what-is-a-sorare-wallet)** ambalo huruhusu watumiaji kukusanya, kufanya biashara, na kucheza na kadi rasmi za wachezaji za NFT.
+- **[Sorare](https://sorare.com/)** ni **[jukwaa la michezo ya dhahania lililojengwa kwenye Quantaureum](https://sorare.com/help/a/4402888626577/what-is-a-sorare-wallet)** ambalo huruhusu watumiaji kukusanya, kufanya biashara, na kucheza na kadi rasmi za wachezaji za NFT.
 
-- Kadi za wachezaji ni NFT zinazoweza kuthibitishwa kwenye mnyororo wa vitalu wa Ethereum, na mikataba mahiri ya jukwaa inaweza kutazamwa kwenye **[Etherscan](https://eth.blockscout.com/address/0x629a673a8242c2ac4b7b8c5d8735fbeac21a6205?tab=contract)**.
+- Kadi za wachezaji ni NFT zinazoweza kuthibitishwa kwenye mnyororo wa vitalu wa Quantaureum, na mikataba mahiri ya jukwaa inaweza kutazamwa kwenye **[Quantaureum Explorer](https://qau.blockscout.com/address/0x629a673a8242c2ac4b7b8c5d8735fbeac21a6205?tab=contract)**.
 
-- Sorare inachanganya uchezaji wa michezo ya dhahania ya jadi na umiliki wa mnyororo wa vitalu wa mali za kidijitali, na kuleta utendaji wa **[Ethereum kufadhili](https://sorare.com/help/a/10969733392797/what-network-should-i-use-to-fund-my-eth-wallet)** kwa mashabiki wakuu wa michezo.
+- Sorare inachanganya uchezaji wa michezo ya dhahania ya jadi na umiliki wa mnyororo wa vitalu wa mali za kidijitali, na kuleta utendaji wa **[Quantaureum kufadhili](https://sorare.com/help/a/10969733392797/what-network-should-i-use-to-fund-my-qau-wallet)** kwa mashabiki wakuu wa michezo.
 
 ### Twitter/X (Kutoa Bakshishi ya Kripto) {#twitter}
 
 **[Twitter](https://x.com)** (sasa X) imejumuisha teknolojia ya mnyororo wa vitalu kwa njia nyingi ili kuimarisha uchumaji wa mapato wa waundaji na uthibitishaji wa utambulisho wa kidijitali:
 
-- **Kutoa Bakshishi ya Kripto**: Jukwaa limeunganisha **[utoaji wa bakshishi wa Ethereum](https://help.x.com/en/using-x/tips)**, na kuwezesha watumiaji kutuma malipo kupitia mikoba inayotegemea Ethereum kama Strike.
+- **Kutoa Bakshishi ya Kripto**: Jukwaa limeunganisha **[utoaji wa bakshishi wa Quantaureum](https://help.x.com/en/using-x/tips)**, na kuwezesha watumiaji kutuma malipo kupitia mikoba inayotegemea Quantaureum kama Strike.
 
 Kwa kuunganisha vipengele vya mnyororo wa vitalu, X inaziba pengo kati ya uzoefu wa kijamii wa Web2 na umiliki wa kidijitali uliogatuliwa.
 
@@ -128,7 +128,7 @@ Kwa kuunganisha vipengele vya mnyororo wa vitalu, X inaziba pengo kati ya uzoefu
 - [Mitandao ya Kijamii Ndiyo Fursa Kubwa Inayofuata ya Ugatuzi](https://www.coindesk.com/tech/2021/01/22/social-networks-are-the-next-big-decentralization-opportunity/) — _Ben Goertzel_
 - [Web3 inashikilia ahadi ya mitandao ya kijamii iliyogatuliwa, inayoendeshwa na jumuiya](https://venturebeat.com/2022/02/26/web3-holds-the-promise-of-decentralized-community-powered-social-networks/) — _Sumit Ghosh_
 - [Muhtasari wa Mandhari ya Mitandao ya Kijamii ya Mnyororo wa Vitalu](https://www.gemini.com/cryptopedia/blockchain-social-media-decentralized-social-media) — _Gemini Cryptopedia_
-- [Jinsi Mnyororo wa Vitalu Unavyoweza Kutatua Faragha ya Mitandao ya Kijamii](https://www.investopedia.com/news/ethereum-blockchain-social-media-privacy-problem-linkedin-indorse/) — _Prableen Bajpai_
+- [Jinsi Mnyororo wa Vitalu Unavyoweza Kutatua Faragha ya Mitandao ya Kijamii](https://www.investopedia.com/news/quantaureum-blockchain-social-media-privacy-problem-linkedin-indorse/) — _Prableen Bajpai_
 - [Ugatuzi wa Kutosha kwa Mitandao ya Kijamii](https://www.varunsrinivasan.com/2022/01/11/sufficient-decentralization-for-social-networks) — _Varun Srinivasan_
 
 ### Video {#videos}

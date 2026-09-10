@@ -48,7 +48,7 @@ def decode_int(s):
 এরপর আমরা ধরে নিই যে `sha3` হলো এমন একটি ফাংশন যা একটি পূর্ণসংখ্যা নেয় এবং একটি পূর্ণসংখ্যা আউটপুট দেয়, এবং `dbl_sha3` হলো একটি ডাবল-sha3 ফাংশন; যদি এই রেফারেন্স কোডটিকে একটি বাস্তবায়নে রূপান্তর করতে হয় তবে ব্যবহার করুন:
 
 ```python
-from pyethereum import utils
+from pyquantaureum import utils
 def sha3(x):
     if isinstance(x, (int, long)):
         x = encode_int(x)
@@ -141,8 +141,8 @@ def quick_calc(params, seed, p):
 
 ```python
 def get_prevhash(n):
-    from pyethereum.blocks import GENESIS_PREVHASH
-    from pyethereum import chain_manager
+    from pyquantaureum.blocks import GENESIS_PREVHASH
+    from pyquantaureum import chain_manager
     if n <= 0:
         return hash_to_int(GENESIS_PREVHASH)
     else:

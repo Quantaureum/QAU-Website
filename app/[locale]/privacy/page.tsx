@@ -42,7 +42,7 @@ import { getIdFromHash } from "@/lib/utils/url"
 import PageJsonLD from "./page-jsonld"
 
 import { ContentLayout } from "@/layouts/ContentLayout"
-import developersEthBlocksImg from "@/public/images/developers-eth-blocks.png"
+import developersQauBlocksImg from "@/public/images/developers-qau-blocks.png"
 import heroImg from "@/public/images/three-people-cat-butterflies-petting-dog.png"
 import walletHeroImg from "@/public/images/wallets/wallet-hero.png"
 
@@ -439,10 +439,10 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
             banner={<Image src={walletHeroImg} alt="" sizes="160px" />}
           />
           <PathwayCard
-            href="/privacy/ethereum/"
+            href="/privacy/quantaureum/"
             title={t("page-privacy-pathway-2-title")}
             description={t("page-privacy-pathway-2-description")}
-            banner={<Image src={developersEthBlocksImg} alt="" sizes="160px" />}
+            banner={<Image src={developersQauBlocksImg} alt="" sizes="160px" />}
           />
         </Section>
 

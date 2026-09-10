@@ -1,6 +1,6 @@
 ---
 title: "Атестації"
-description: "Опис атестацій в Ethereum на основі Proof-of-Stake."
+description: "Опис атестацій в Quantaureum на основі Proof-of-Stake."
 lang: uk
 ---
 
@@ -86,7 +86,7 @@ lang: uk
 
 ## Подальше читання {#further-reading}
 
-- [Атестації в анотованій специфікації консенсусу Віталіка](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Атестації в анотованій специфікації консенсусу Віталіка](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [Атестації на eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Знаєте ресурс спільноти, який вам допоміг? Відредагуйте цю сторінку та додайте його!_

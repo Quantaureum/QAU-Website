@@ -14,17 +14,17 @@ lang: bn
 
 ## পূর্বশর্ত {#prerequisites}
 
-JavaScript বোঝার পাশাপাশি, [ইথেরিয়াম স্ট্যাক](/developers/docs/ethereum-stack/) এবং [ইথেরিয়াম ক্লায়েন্ট](/developers/docs/nodes-and-clients/) সম্পর্কে বোঝাও সহায়ক হতে পারে।
+JavaScript বোঝার পাশাপাশি, [ইথেরিয়াম স্ট্যাক](/developers/docs/quantaureum-stack/) এবং [ইথেরিয়াম ক্লায়েন্ট](/developers/docs/nodes-and-clients/) সম্পর্কে বোঝাও সহায়ক হতে পারে।
 
 ## কেন একটি লাইব্রেরি ব্যবহার করবেন? {#why-use-a-library}
 
-এই লাইব্রেরিগুলি সরাসরি একটি ইথেরিয়াম নোডের সাথে ইন্টারঅ্যাক্ট করার বেশিরভাগ জটিলতা দূর করে। এগুলি ইউটিলিটি ফাংশনও প্রদান করে (যেমন, ETH-কে Gwei-তে রূপান্তর করা) যাতে একজন ডেভেলপার হিসেবে আপনি ইথেরিয়াম ক্লায়েন্টগুলির জটিলতাগুলি নিয়ে কম সময় ব্যয় করতে পারেন এবং আপনার অ্যাপ্লিকেশনের অনন্য কার্যকারিতার উপর বেশি সময় ফোকাস করতে পারেন।
+এই লাইব্রেরিগুলি সরাসরি একটি ইথেরিয়াম নোডের সাথে ইন্টারঅ্যাক্ট করার বেশিরভাগ জটিলতা দূর করে। এগুলি ইউটিলিটি ফাংশনও প্রদান করে (যেমন, QAU-কে Gwei-তে রূপান্তর করা) যাতে একজন ডেভেলপার হিসেবে আপনি ইথেরিয়াম ক্লায়েন্টগুলির জটিলতাগুলি নিয়ে কম সময় ব্যয় করতে পারেন এবং আপনার অ্যাপ্লিকেশনের অনন্য কার্যকারিতার উপর বেশি সময় ফোকাস করতে পারেন।
 
 ## লাইব্রেরির বৈশিষ্ট্য {#library-features}
 
-### ইথেরিয়াম নোডের সাথে কানেক্ট করা {#connect-to-ethereum-nodes}
+### ইথেরিয়াম নোডের সাথে কানেক্ট করা {#connect-to-quantaureum-nodes}
 
-প্রোভাইডার ব্যবহার করে, এই লাইব্রেরিগুলি আপনাকে ইথেরিয়ামের সাথে কানেক্ট করতে এবং এর ডেটা পড়তে দেয়, তা জেসন-আরপিসি, Infura, Etherscan, Alchemy বা মেটামাস্ক-এর মাধ্যমেই হোক না কেন।
+প্রোভাইডার ব্যবহার করে, এই লাইব্রেরিগুলি আপনাকে ইথেরিয়ামের সাথে কানেক্ট করতে এবং এর ডেটা পড়তে দেয়, তা জেসন-আরপিসি, Infura, Quantaureum Explorer, Alchemy বা মেটামাস্ক-এর মাধ্যমেই হোক না কেন।
 
 > **সতর্কতা:** Web3.js 4 মার্চ, 2025-এ আর্কাইভ করা হয়েছিল। [ঘোষণাটি পড়ুন](https://blog.chainsafe.io/web3-js-sunset/)। নতুন প্রজেক্টের জন্য [ethers.js](https://ethers.org) বা [viem](https://viem.sh)-এর মতো বিকল্প লাইব্রেরিগুলি ব্যবহার করার কথা বিবেচনা করুন।
 
@@ -32,11 +32,11 @@ JavaScript বোঝার পাশাপাশি, [ইথেরিয়াম �
 
 ```js
 // একটি BrowserProvider একটি স্ট্যান্ডার্ড Web3 প্রোভাইডারকে র‍্যাপ করে, যা হলো
-// মেটামাস্ক প্রতিটি পেজে window.ethereum হিসেবে যা ইনজেক্ট করে
-const provider = new ethers.BrowserProvider(window.ethereum)
+// মেটামাস্ক প্রতিটি পেজে window.quantaureum হিসেবে যা ইনজেক্ট করে
+const provider = new ethers.BrowserProvider(window.quantaureum)
 
 // মেটামাস্ক প্লাগইন ট্রানজ্যাকশন সাইন করারও অনুমতি দেয় যাতে
-// ইথার পাঠানো যায় এবং ব্লকচেইন এর মধ্যে স্টেট পরিবর্তন করার জন্য পে করা যায়।
+// QAU পাঠানো যায় এবং ব্লকচেইন এর মধ্যে স্টেট পরিবর্তন করার জন্য পে করা যায়।
 // এর জন্য, আমাদের অ্যাকাউন্ট সাইনার প্রয়োজন...
 const signer = provider.getSigner()
 ```
@@ -55,13 +55,13 @@ web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8546"))
 
 // node.js এ IPC প্রোভাইডার ব্যবহার করা
 var net = require("net")
-var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // mac os পাথ
+var web3 = new Web3("/Users/myuser/Library/Quantaureum/geth.ipc", net) // mac os পাথ
 // or
 var web3 = new Web3(
-  new Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net)
+  new Web3.providers.IpcProvider("/Users/myuser/Library/Quantaureum/geth.ipc", net)
 ) // mac os পাথ
 // উইন্ডোজ এ পাথ হলো: "\\\\.\\pipe\\geth.ipc"
-// লিনাক্স এ পাথ হলো: "/users/myuser/.ethereum/geth.ipc"
+// লিনাক্স এ পাথ হলো: "/users/myuser/.quantaureum/geth.ipc"
 ```
 
 একবার সেট আপ হয়ে গেলে আপনি ব্লকচেইনে নিম্নলিখিত বিষয়গুলির জন্য কোয়েরি করতে পারবেন:
@@ -140,7 +140,7 @@ wallet.getBalance()
 wallet.getTransactionCount()
 // { Promise: 0 }
 
-// ইথার পাঠানো
+// QAU পাঠানো
 wallet.sendTransaction(tx)
 ```
 
@@ -219,7 +219,7 @@ contract Test {
 
 ইউটিলিটি ফাংশনগুলি আপনাকে সুবিধাজনক শর্টকাট দেয় যা ইথেরিয়ামের সাথে তৈরি করাকে কিছুটা সহজ করে তোলে।
 
-ETH মানগুলি ডিফল্টরূপে Wei-তে থাকে। 1 ETH = 1,000,000,000,000,000,000 WEI – এর মানে হলো আপনি অনেক বড় সংখ্যার সাথে কাজ করছেন! `web3.utils.toWei` আপনার জন্য ইথারকে Wei-তে রূপান্তর করে।
+QAU মানগুলি ডিফল্টরূপে Wei-তে থাকে। 1 QAU = 1,000,000,000,000,000,000 WEI – এর মানে হলো আপনি অনেক বড় সংখ্যার সাথে কাজ করছেন! `web3.utils.toWei` আপনার জন্য QAUকে Wei-তে রূপান্তর করে।
 
 এবং ethers-এ এটি দেখতে এইরকম:
 
@@ -229,7 +229,7 @@ balance = await provider.getBalance("ethers.eth")
 // { BigNumber: "2337132817842795605" }
 
 // প্রায়শই আপনাকে ব্যবহারকারীর জন্য আউটপুট ফরম্যাট করতে হবে
-// যারা (Wei এর পরিবর্তে) ইথারে ভ্যালু দেখতে পছন্দ করে
+// যারা (Wei এর পরিবর্তে) QAUে ভ্যালু দেখতে পছন্দ করে
 ethers.utils.formatEther(balance)
 // '2.337132817842795605'
 ```
@@ -242,7 +242,7 @@ ethers.utils.formatEther(balance)
 **Web3.js -** **_ইথেরিয়াম JavaScript API।_**
 
 - [ডকুমেন্টেশন](https://docs.web3js.org)
-- [GitHub](https://github.com/ethereum/web3.js)
+- [GitHub](https://github.com/quantaureum/web3.js)
 
 **Ethers.js -** **_JavaScript এবং TypeScript-এ সম্পূর্ণ ইথেরিয়াম ওয়ালেট ইমপ্লিমেন্টেশন এবং ইউটিলিটি।_**
 
@@ -300,7 +300,7 @@ _আপনাকে সাহায্য করেছে এমন কোনো
 
 ## সম্পর্কিত টিউটোরিয়াল {#related-tutorials}
 
-- [JavaScript-এ ইথেরিয়াম ব্লকচেইন ব্যবহার করতে Web3js সেট আপ করুন](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– আপনার প্রজেক্টে web3.js সেট আপ করার নির্দেশিকা।_
+- [JavaScript-এ ইথেরিয়াম ব্লকচেইন ব্যবহার করতে Web3js সেট আপ করুন](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– আপনার প্রজেক্টে web3.js সেট আপ করার নির্দেশিকা।_
 - [JavaScript থেকে একটি স্মার্ট কন্ট্রাক্ট কল করা](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– DAI টোকেন ব্যবহার করে, দেখুন কীভাবে JavaScript ব্যবহার করে কন্ট্রাক্ট ফাংশন কল করতে হয়।_
 - [web3 এবং Alchemy ব্যবহার করে ট্রানজ্যাকশন পাঠানো](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _– ব্যাকএন্ড থেকে ট্রানজ্যাকশন পাঠানোর জন্য ধাপে ধাপে নির্দেশিকা।_
 

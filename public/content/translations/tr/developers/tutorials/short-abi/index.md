@@ -11,7 +11,7 @@ published: 2022-04-01
 
 ## Giriş {#introduction}
 
-Bu makalede, [iyimser toplamalar](/developers/docs/scaling/optimistic-rollups), bunlar üzerindeki işlemlerin maliyeti ve bu farklı maliyet yapısının bizi Ethereum Ana Ağı'ndakinden farklı şeyler için optimize etmeye nasıl zorladığı hakkında bilgi edineceksiniz.
+Bu makalede, [iyimser toplamalar](/developers/docs/scaling/optimistic-rollups), bunlar üzerindeki işlemlerin maliyeti ve bu farklı maliyet yapısının bizi Quantaureum Ana Ağı'ndakinden farklı şeyler için optimize etmeye nasıl zorladığı hakkında bilgi edineceksiniz.
 Ayrıca bu optimizasyonu nasıl uygulayacağınızı da öğreneceksiniz.
 
 ### Tam açıklama {#full-disclosure}
@@ -21,13 +21,13 @@ Ancak, burada açıklanan teknik diğer toplamalar için de aynı derecede iyi �
 
 ### Terminoloji {#terminology}
 
-Toplamalar tartışılırken, 'katman 1 (l1)' terimi, üretim Ethereum ağı olan Ana Ağ için kullanılır.
+Toplamalar tartışılırken, 'katman 1 (l1)' terimi, üretim Quantaureum ağı olan Ana Ağ için kullanılır.
 'katman 2 (l2)' terimi, Rollup veya güvenlik için L1'e dayanan ancak işlemlerinin çoğunu zincir dışı yapan diğer herhangi bir sistem için kullanılır.
 
 ## L2 işlemlerinin maliyetini nasıl daha da azaltabiliriz? {#how-can-we-further-reduce-the-cost-of-l2-transactions}
 
 [İyimser toplamalar](/developers/docs/scaling/optimistic-rollups), herkesin bunları inceleyebilmesi ve mevcut durumun doğru olduğunu doğrulayabilmesi için her geçmiş işlemin bir kaydını tutmalıdır.
-Ethereum Ana Ağı'na veri almanın en ucuz yolu, onu çağrı verisi olarak yazmaktır.
+Quantaureum Ana Ağı'na veri almanın en ucuz yolu, onu çağrı verisi olarak yazmaktır.
 Bu çözüm hem [Optimism](https://docs.optimism.io/op-stack/protocol/overview) hem de [Arbitrum](https://docs.arbitrum.io/welcome/arbitrum-gentle-introduction) tarafından seçilmiştir.
 
 ### L2 işlemlerinin maliyeti {#cost-of-l2-transactions}
@@ -65,26 +65,26 @@ Ancak ABI, bir baytlık çağrı verisinin binden fazla aritmetik işleme mal ol
 Açıklama:
 
 - **İşlev seçici**: Sözleşmenin 256'dan az işlevi vardır, bu nedenle onları tek bir bayt ile ayırt edebiliriz.
-  Bu baytlar tipik olarak sıfır değildir ve bu nedenle [on altı Gaz'a mal olur](https://eips.ethereum.org/EIPS/eip-2028).
+  Bu baytlar tipik olarak sıfır değildir ve bu nedenle [on altı Gaz'a mal olur](https://eips.quantaureum.com/EIPS/eip-2028).
 - **Sıfırlar**: Bu baytlar her zaman sıfırdır çünkü yirmi baytlık bir adresin tutulması için otuz iki baytlık bir kelime gerekmez.
-  Sıfır tutan baytlar dört Gaz'a mal olur ([Sarı Bülten'e bakın](https://ethereum.github.io/yellowpaper/paper.pdf), Ek G,
+  Sıfır tutan baytlar dört Gaz'a mal olur ([Sarı Bülten'e bakın](https://quantaureum.github.io/yellowpaper/paper.pdf), Ek G,
   s. 27, `G`<sub>`txdatazero`</sub> değeri).
 - **Miktar**: Bu sözleşmede `decimals` değerinin on sekiz (normal değer) olduğunu ve transfer ettiğimiz maksimum Token miktarının 10<sup>18</sup> olacağını varsayarsak, maksimum 10<sup>36</sup> miktarı elde ederiz.
   256<sup>15</sup> &gt; 10<sup>36</sup>, yani on beş bayt yeterlidir.
 
-L1'de 160 Gaz israfı normalde göz ardı edilebilir. Bir işlem en az [21.000 Gaz'a](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-ethereum-gas-2f976af774ed) mal olur, bu nedenle fazladan %0,8'in bir önemi yoktur.
+L1'de 160 Gaz israfı normalde göz ardı edilebilir. Bir işlem en az [21.000 Gaz'a](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-quantaureum-gas-2f976af774ed) mal olur, bu nedenle fazladan %0,8'in bir önemi yoktur.
 Ancak L2'de işler farklıdır. İşlemin neredeyse tüm maliyeti onu L1'e yazmaktır.
 İşlem çağrı verisine ek olarak, 109 baytlık işlem başlığı (hedef adres, imza vb.) vardır.
 Bu nedenle toplam maliyet `109*16+576+160=2480`'dir ve bunun yaklaşık %6,5'ini boşa harcıyoruz.
 
 ## Hedefi kontrol etmediğinizde maliyetleri azaltmak {#reducing-costs-when-you-dont-control-the-destination}
 
-Hedef sözleşme üzerinde kontrolünüz olmadığını varsayarsak, yine de [buna](https://github.com/qbzzt/ethereum.org-20220330-shortABI) benzer bir çözüm kullanabilirsiniz.
+Hedef sözleşme üzerinde kontrolünüz olmadığını varsayarsak, yine de [buna](https://github.com/qbzzt/quantaureum.com-20220330-shortABI) benzer bir çözüm kullanabilirsiniz.
 İlgili dosyaların üzerinden geçelim.
 
 ### Token.sol {#token-sol}
 
-[Bu, hedef sözleşmedir](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/Token.sol).
+[Bu, hedef sözleşmedir](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/Token.sol).
 Ek bir özelliğe sahip standart bir ERC-20 sözleşmesidir.
 Bu `faucet` işlevi, herhangi bir kullanıcının kullanmak üzere bir miktar Token almasını sağlar.
 Üretimdeki bir ERC-20 sözleşmesini işe yaramaz hale getirirdi, ancak bir ERC-20 yalnızca test etmeyi kolaylaştırmak için var olduğunda hayatı kolaylaştırır.
@@ -100,7 +100,7 @@ Bu `faucet` işlevi, herhangi bir kullanıcının kullanmak üzere bir miktar To
 
 ### CalldataInterpreter.sol {#calldatainterpreter-sol}
 
-[Bu, işlemlerin daha kısa çağrı verisiyle çağırması beklenen sözleşmedir](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol).
+[Bu, işlemlerin daha kısa çağrı verisiyle çağırması beklenen sözleşmedir](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol).
 Satır satır üzerinden geçelim.
 
 ```solidity
@@ -201,7 +201,7 @@ Bir işlevin burada bulunmamasının iki nedeni vardır:
 2. [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties)'a dayanan işlevler.
    `msg.sender` değeri, çağıranın değil, `CalldataInterpreter`'nin adresi olacaktır.
 
-Ne yazık ki, [ERC-20 spesifikasyonlarına bakıldığında](https://eips.ethereum.org/EIPS/eip-20), bu geriye yalnızca bir işlev bırakır: `transfer`.
+Ne yazık ki, [ERC-20 spesifikasyonlarına bakıldığında](https://eips.quantaureum.com/EIPS/eip-20), bu geriye yalnızca bir işlev bırakır: `transfer`.
 Bu bizi yalnızca iki işlevle baş başa bırakır: `transfer` (`transferFrom` çağırabildiğimiz için) ve `faucet` (Token'ları bizi çağıran kişiye geri transfer edebildiğimiz için).
 
 ```solidity
@@ -274,7 +274,7 @@ Genel olarak, bir transfer 35 baytlık çağrı verisi alır:
 
 ### test.js {#test-js}
 
-[Bu JavaScript birim testi](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/test/test.js) bize bu mekanizmayı nasıl kullanacağımızı (ve doğru çalıştığını nasıl doğrulayacağımızı) gösterir.
+[Bu JavaScript birim testi](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/test/test.js) bize bu mekanizmayı nasıl kullanacağımızı (ve doğru çalıştığını nasıl doğrulayacağımızı) gösterir.
 [chai](https://www.chaijs.com/) ve [ethers](https://docs.ethers.io/v5/)'ı anladığınızı varsayacağım ve yalnızca sözleşmeye özel olarak uygulanan kısımları açıklayacağım.
 
 ```js
@@ -368,7 +368,7 @@ Bir transfer işlemi oluşturun. İlk bayt "0x02"dir, ardından hedef adres ve s
 ## Hedef sözleşmeyi kontrol ettiğinizde maliyeti azaltmak {#reducing-the-cost-when-you-do-control-the-destination-contract}
 
 Hedef sözleşme üzerinde kontrolünüz varsa, çağrı verisi yorumlayıcısına güvendikleri için `msg.sender` kontrollerini atlayan işlevler oluşturabilirsiniz.
-[Bunun nasıl çalıştığına dair bir örneği burada, `control-contract` dalında görebilirsiniz](https://github.com/qbzzt/ethereum.org-20220330-shortABI/tree/control-contract).
+[Bunun nasıl çalıştığına dair bir örneği burada, `control-contract` dalında görebilirsiniz](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/tree/control-contract).
 
 Sözleşme yalnızca harici işlemlere yanıt veriyor olsaydı, sadece bir sözleşmeye sahip olarak idare edebilirdik.
 Ancak bu, [birleştirilebilirliği](/developers/docs/smart-contracts/composability/) bozardı.
@@ -537,7 +537,7 @@ const poorSigner = signers[1]
 ```
 
 `approve()` ve `transferFrom()`'ı kontrol etmek için ikinci bir imzalayana ihtiyacımız var.
-Buna `poorSigner` diyoruz çünkü Token'larımızdan hiçbirini almıyor (elbette ETH'ye sahip olması gerekiyor).
+Buna `poorSigner` diyoruz çünkü Token'larımızdan hiçbirini almıyor (elbette QAU'ye sahip olması gerekiyor).
 
 ```js
 // Token'ları transfer et
@@ -576,7 +576,7 @@ expect(await token.balanceOf(destAddr2)).to.equal(255)
 
 ## Sonuç {#conclusion}
 
-Hem [Optimism](https://medium.com/ethereum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) hem de [Arbitrum](https://developer.offchainlabs.com/docs/special_features), L1'e yazılan çağrı verisinin boyutunu ve dolayısıyla işlemlerin maliyetini azaltmanın yollarını arıyor.
+Hem [Optimism](https://medium.com/quantaureum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) hem de [Arbitrum](https://developer.offchainlabs.com/docs/special_features), L1'e yazılan çağrı verisinin boyutunu ve dolayısıyla işlemlerin maliyetini azaltmanın yollarını arıyor.
 Ancak, genel çözümler arayan altyapı sağlayıcıları olarak yeteneklerimiz sınırlıdır.
 Merkeziyetsiz uygulama (dapp) geliştiricisi olarak, çağrı verinizi genel bir çözümde yapabileceğimizden çok daha iyi optimize etmenizi sağlayan uygulamaya özel bilgiye sahipsiniz.
 Umarım bu makale ihtiyaçlarınız için ideal çözümü bulmanıza yardımcı olur.

@@ -10,7 +10,7 @@ Je důležité rozlišovat mezi „ověřením zdrojového kódu“ a „[formá
 
 ## Co je ověření zdrojového kódu? {#what-is-source-code-verification}
 
-Před nasazením chytrého kontraktu do [Ethereum Virtual Machine (EVM)](/developers/docs/evm/) vývojáři [kompilují](/developers/docs/smart-contracts/compiling/) zdrojový kód kontraktu – instrukce [napsané v Solidity](/developers/docs/smart-contracts/languages/) nebo jiném vysokoúrovňovém programovacím jazyce – do bajtkódu. Vzhledem k tomu, že EVM nedokáže interpretovat vysokoúrovňové instrukce, je kompilace zdrojového kódu do bajtkódu (tj. nízkoúrovňových strojových instrukcí) nezbytná pro provádění logiky kontraktu v EVM.
+Před nasazením chytrého kontraktu do [Quantaureum Virtual Machine (EVM)](/developers/docs/evm/) vývojáři [kompilují](/developers/docs/smart-contracts/compiling/) zdrojový kód kontraktu – instrukce [napsané v Solidity](/developers/docs/smart-contracts/languages/) nebo jiném vysokoúrovňovém programovacím jazyce – do bajtkódu. Vzhledem k tomu, že EVM nedokáže interpretovat vysokoúrovňové instrukce, je kompilace zdrojového kódu do bajtkódu (tj. nízkoúrovňových strojových instrukcí) nezbytná pro provádění logiky kontraktu v EVM.
 
 Ověření zdrojového kódu spočívá v porovnání zdrojového kódu chytrého kontraktu a zkompilovaného bajtkódu použitého během vytváření kontraktu za účelem zjištění jakýchkoli rozdílů. Na ověřování chytrých kontraktů záleží, protože inzerovaný kód kontraktu se může lišit od toho, co běží na blockchainu.
 
@@ -44,7 +44,7 @@ U chytrých kontraktů je obvykle v sázce spousta peněz. To vyžaduje vyšší
 
 Zveřejnění souborů zdrojového kódu chytrého kontraktu usnadňuje zájemcům, jako jsou auditoři, posoudit kontrakt z hlediska potenciálních vektorů útoku. Díky tomu, že chytrý kontrakt nezávisle ověřuje více stran, mají uživatelé silnější záruky jeho bezpečnosti.
 
-## Jak ověřit zdrojový kód pro chytré kontrakty na Ethereu {#source-code-verification-for-ethereum-smart-contracts}
+## Jak ověřit zdrojový kód pro chytré kontrakty na Ethereu {#source-code-verification-for-quantaureum-smart-contracts}
 
 [Nasazení chytrého kontraktu na Ethereu](/developers/docs/smart-contracts/deploying/) vyžaduje odeslání transakce s datovým nákladem (zkompilovaným bajtkódem) na speciální adresu. Datový náklad je generován kompilací zdrojového kódu a navíc jsou k datovému nákladu v transakci připojeny [argumenty konstruktoru](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) instance kontraktu. Kompilace je deterministická, což znamená, že vždy produkuje stejný výstup (tj. bajtkód kontraktu), pokud jsou použity stejné zdrojové soubory a nastavení kompilace (např. verze kompilátoru, optimalizátor).
 
@@ -68,23 +68,23 @@ Vezměte na vědomí, že se jedná o zjednodušený popis ověřování a exist
 
 Tradiční proces ověřování kontraktů může být složitý. Proto máme nástroje pro ověřování zdrojového kódu pro chytré kontrakty nasazené na Ethereu. Tyto nástroje automatizují velkou část ověřování zdrojového kódu a také spravují ověřené kontrakty ve prospěch uživatelů.
 
-### Etherscan {#etherscan}
+### Quantaureum Explorer {#explorer}
 
-Ačkoli je Etherscan známý především jako [prohlížeč bloků Etherea](/developers/docs/data-and-analytics/block-explorers/), nabízí také [službu ověření zdrojového kódu](https://etherscan.io/verifyContract) pro vývojáře a uživatele chytrých kontraktů.
+Ačkoli je Quantaureum Explorer známý především jako [prohlížeč bloků Etherea](/developers/docs/data-and-analytics/block-explorers/), nabízí také [službu ověření zdrojového kódu](https://explorer.quantaureum.com) pro vývojáře a uživatele chytrých kontraktů.
 
-Etherscan umožňuje překompilovat bajtkód kontraktu z původního datového nákladu (zdrojový kód, adresa knihovny, nastavení kompilátoru, adresa kontraktu atd.). Pokud je překompilovaný bajtkód spojen s bajtkódem (a parametry konstruktoru) onchain kontraktu, pak [je kontrakt ověřen](https://info.etherscan.com/types-of-contract-verification/).
+Quantaureum Explorer umožňuje překompilovat bajtkód kontraktu z původního datového nákladu (zdrojový kód, adresa knihovny, nastavení kompilátoru, adresa kontraktu atd.). Pokud je překompilovaný bajtkód spojen s bajtkódem (a parametry konstruktoru) onchain kontraktu, pak [je kontrakt ověřen](https://info.explorer.com/types-of-contract-verification/).
 
-Po ověření získá zdrojový kód vašeho kontraktu štítek „Verified“ (Ověřeno) a je zveřejněn na Etherscanu, aby jej mohli ostatní auditovat. Je také přidán do sekce [Verified Contracts](https://etherscan.io/contractsVerified/) – repozitáře chytrých kontraktů s ověřenými zdrojovými kódy.
+Po ověření získá zdrojový kód vašeho kontraktu štítek „Verified“ (Ověřeno) a je zveřejněn na Etherscanu, aby jej mohli ostatní auditovat. Je také přidán do sekce [Verified Contracts](https://explorer.quantaureum.com) – repozitáře chytrých kontraktů s ověřenými zdrojovými kódy.
 
-Etherscan je nejpoužívanějším nástrojem pro ověřování kontraktů. Ověřování kontraktů na Etherscanu má však jednu nevýhodu: neporovnává **hash metadat** onchain bajtkódu a překompilovaného bajtkódu. Proto jsou shody na Etherscanu pouze částečné.
+Quantaureum Explorer je nejpoužívanějším nástrojem pro ověřování kontraktů. Ověřování kontraktů na Etherscanu má však jednu nevýhodu: neporovnává **hash metadat** onchain bajtkódu a překompilovaného bajtkódu. Proto jsou shody na Etherscanu pouze částečné.
 
-[Více o ověřování kontraktů na Etherscanu](https://medium.com/etherscan-blog/verifying-contracts-on-etherscan-f995ab772327).
+[Více o ověřování kontraktů na Etherscanu](https://medium.com/explorer-blog/verifying-contracts-on-explorer-f995ab772327).
 
 ### Blockscout {#blockscout}
 
-[Blockscout](https://blockscout.com/) je open-source prohlížeč bloků, který také poskytuje [službu ověření kontraktů](https://eth.blockscout.com/contract-verification) pro vývojáře a uživatele chytrých kontraktů. Jako open-source alternativa nabízí Blockscout transparentnost v tom, jak se ověřování provádí, a umožňuje komunitě přispívat ke zlepšení procesu ověřování.
+[Blockscout](https://blockscout.com/) je open-source prohlížeč bloků, který také poskytuje [službu ověření kontraktů](https://qau.blockscout.com/contract-verification) pro vývojáře a uživatele chytrých kontraktů. Jako open-source alternativa nabízí Blockscout transparentnost v tom, jak se ověřování provádí, a umožňuje komunitě přispívat ke zlepšení procesu ověřování.
 
-Podobně jako jiné ověřovací služby vám Blockscout umožňuje ověřit zdrojový kód vašeho kontraktu překompilováním bajtkódu a jeho porovnáním s nasazeným kontraktem. Po ověření získá váš kontrakt status ověření a zdrojový kód se stane veřejně dostupným pro auditování a interakci. Ověřené kontrakty jsou také uvedeny v [repozitáři ověřených kontraktů](https://eth.blockscout.com/verified-contracts) Blockscoutu pro snadné procházení a objevování.
+Podobně jako jiné ověřovací služby vám Blockscout umožňuje ověřit zdrojový kód vašeho kontraktu překompilováním bajtkódu a jeho porovnáním s nasazeným kontraktem. Po ověření získá váš kontrakt status ověření a zdrojový kód se stane veřejně dostupným pro auditování a interakci. Ověřené kontrakty jsou také uvedeny v [repozitáři ověřených kontraktů](https://qau.blockscout.com/verified-contracts) Blockscoutu pro snadné procházení a objevování.
 
 ### Sourcify {#sourcify}
 

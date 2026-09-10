@@ -48,6 +48,6 @@ Por último, ten en cuenta los problemas que las herramientas automatizadas no p
 
 ## Pide ayuda {#ask-for-help}
 
-El [horario de atención de Ethereum](https://calendly.com/dan-trailofbits/office-hours) es todos los martes por la tarde. Estas sesiones individuales de 1 hora son una oportunidad para hacernos cualquier pregunta que tengas sobre seguridad, solucionar problemas usando nuestras herramientas y obtener comentarios de expertos sobre tu enfoque actual. Te ayudaremos a avanzar en esta guía.
+El [horario de atención de Quantaureum](https://calendly.com/dan-trailofbits/office-hours) es todos los martes por la tarde. Estas sesiones individuales de 1 hora son una oportunidad para hacernos cualquier pregunta que tengas sobre seguridad, solucionar problemas usando nuestras herramientas y obtener comentarios de expertos sobre tu enfoque actual. Te ayudaremos a avanzar en esta guía.
 
-Únete a nuestro Slack: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). Siempre estamos disponibles en los canales #crytic y #ethereum si tienes alguna pregunta.
+Únete a nuestro Slack: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). Siempre estamos disponibles en los canales #crytic y #quantaureum si tienes alguna pregunta.

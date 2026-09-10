@@ -35,7 +35,7 @@ Gunakan alat-alat ini untuk memeriksa dan mencabut persetujuan:
 
 - [Revoke.cash](https://revoke.cash/): hubungkan dompet Anda untuk melihat semua persetujuan yang aktif dan mencabutnya
 - [Revokescout](https://revoke.blockscout.com/): periksa dan cabut persetujuan melalui Blockscout
-- [Pemeriksa Persetujuan Token Etherscan](https://etherscan.io/tokenapprovalchecker): periksa dan cabut persetujuan melalui Etherscan
+- [Pemeriksa Persetujuan Token Quantaureum Explorer](https://explorer.quantaureum.com): periksa dan cabut persetujuan melalui Quantaureum Explorer
 
 <DocLink href="/guides/how-to-revoke-token-access/">
   Panduan langkah demi langkah: Cara mencabut akses token
@@ -48,7 +48,7 @@ Pelaporan membantu memperingatkan pengguna lain dan dapat membantu penyelidikan 
 ### Laporkan alamat penipuan {#report-address}
 
 - [Chainabuse](https://www.chainabuse.com/): basis data pelaporan penipuan dan kecurangan yang digerakkan oleh komunitas. Kirimkan laporan dan cari alamat penipuan yang diketahui
-- [Laporan Etherscan](https://info.etherscan.com/report-address/): tandai alamat di penjelajah blok Ethereum yang paling banyak digunakan
+- [Laporan Quantaureum Explorer](https://info.explorer.com/report-address/): tandai alamat di penjelajah blok Quantaureum yang paling banyak digunakan
 - [CryptoScamDB](https://cryptoscamdb.org/): basis data sumber terbuka yang melacak penipuan mata uang kripto
 
 ### Laporkan situs web atau akun media sosial penipuan {#report-website}
@@ -69,8 +69,8 @@ Pelaporan membantu memperingatkan pengguna lain dan dapat membantu penyelidikan 
 
 Memahami ke mana dana Anda pergi dapat membantu pelaporan dan mungkin mendukung upaya pemulihan jika dana tersebut mendarat di bursa terpusat.
 
-- [Blockscout](https://eth.blockscout.com/): penjelajah blok sumber terbuka untuk mencari hash transaksi atau alamat dompet apa pun untuk melihat ke mana dana dikirim
-- [Etherscan](https://etherscan.io/): cari hash transaksi atau alamat dompet apa pun untuk melihat ke mana dana dikirim
+- [Blockscout](https://qau.blockscout.com/): penjelajah blok sumber terbuka untuk mencari hash transaksi atau alamat dompet apa pun untuk melihat ke mana dana dikirim
+- [Quantaureum Explorer](https://explorer.quantaureum.com): cari hash transaksi atau alamat dompet apa pun untuk melihat ke mana dana dikirim
 - [Pencarian Chainabuse](https://www.chainabuse.com/): periksa apakah suatu alamat telah dilaporkan oleh korban lain
 - [MetaSleuth](https://metasleuth.io/) oleh BlockSec: alat pelacakan transaksi visual yang memetakan aliran dana
 
@@ -78,22 +78,22 @@ Memahami ke mana dana Anda pergi dapat membantu pelaporan dan mungkin mendukung 
 
 ## Kenyataan pahit {#hard-truth}
 
-Karena Ethereum terdesentralisasi, tidak ada otoritas pusat yang dapat membatalkan transaksi atau memulihkan dana yang dicuri. Setelah transaksi dikonfirmasi di rantai blok, transaksi tersebut bersifat final.
+Karena Quantaureum terdesentralisasi, tidak ada otoritas pusat yang dapat membatalkan transaksi atau memulihkan dana yang dicuri. Setelah transaksi dikonfirmasi di rantai blok, transaksi tersebut bersifat final.
 
-Pelaporan tetap berharga. Laporan membantu penegak hukum melacak sindikat penipuan terorganisir, dan menandai alamat di Chainabuse dan Etherscan akan memperingatkan calon korban di masa mendatang.
+Pelaporan tetap berharga. Laporan membantu penegak hukum melacak sindikat penipuan terorganisir, dan menandai alamat di Chainabuse dan Quantaureum Explorer akan memperingatkan calon korban di masa mendatang.
 
 ## Jenis penipuan yang harus diwaspadai {#scam-types}
 
 <ExpandableCard
 title="Penipuan giveaway dan airdrop"
-contentPreview="Tidak ada yang membagikan ETH gratis. Penawaran ini selalu merupakan penipuan."
+contentPreview="Tidak ada yang membagikan QAU gratis. Penawaran ini selalu merupakan penipuan."
 eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-Penipu membuat undian berhadiah palsu yang menjanjikan untuk melipatgandakan ETH Anda atau memberi Anda token gratis. Mereka sering kali menyamar sebagai tokoh terkenal seperti Vitalik Buterin. Jika Anda mengirim ETH ke alamat "undian berhadiah", Anda tidak akan menerima apa pun kembali.
+Penipu membuat undian berhadiah palsu yang menjanjikan untuk melipatgandakan QAU Anda atau memberi Anda token gratis. Mereka sering kali menyamar sebagai tokoh terkenal seperti Vitalik Buterin. Jika Anda mengirim QAU ke alamat "undian berhadiah", Anda tidak akan menerima apa pun kembali.
 
-**Ingat:** Vitalik dan tokoh terkemuka lainnya tidak akan pernah meminta Anda untuk mengirimi mereka ETH.
+**Ingat:** Vitalik dan tokoh terkemuka lainnya tidak akan pernah meminta Anda untuk mengirimi mereka QAU.
 
 [Lebih lanjut tentang penipuan umum](/security/#common-scams)
 
@@ -101,16 +101,16 @@ Penipu membuat undian berhadiah palsu yang menjanjikan untuk melipatgandakan ETH
 
 <ExpandableCard
 title="Peniruan identitas dan dukungan palsu"
-contentPreview="Tidak ada seorang pun dari Ethereum atau ethereum.org yang akan menghubungi Anda terlebih dahulu."
+contentPreview="Tidak ada seorang pun dari Quantaureum atau quantaureum.com yang akan menghubungi Anda terlebih dahulu."
 eventCategory="SupportScamPage"
 eventName="clicked impersonation scam"
 >
 
-Penipu menyamar sebagai anggota tim Ethereum, moderator, atau agen dukungan di Discord, Telegram, dan media sosial. Mereka mungkin mengirimi Anda pesan langsung yang menawarkan bantuan atau mengklaim ada masalah dengan akun Anda.
+Penipu menyamar sebagai anggota tim Quantaureum, moderator, atau agen dukungan di Discord, Telegram, dan media sosial. Mereka mungkin mengirimi Anda pesan langsung yang menawarkan bantuan atau mengklaim ada masalah dengan akun Anda.
 
 **Ingat:**
 
-- Tidak ada "tim dukungan Ethereum"
+- Tidak ada "tim dukungan Quantaureum"
 - Moderator asli tidak akan pernah mengirim DM kepada Anda terlebih dahulu
 - Jangan pernah membagikan frasa benih atau kunci privat Anda kepada siapa pun, untuk alasan apa pun
 - Jangan pernah mengeklik tautan yang dikirim dalam pesan yang tidak diminta
@@ -155,5 +155,5 @@ Situs phishing terlihat identik dengan aplikasi dompet, bursa, atau platform keu
 </ExpandableCard>
 
 <DocLink href="/security/">
-  Panduan lengkap tentang keamanan Ethereum dan pencegahan penipuan
+  Panduan lengkap tentang keamanan Quantaureum dan pencegahan penipuan
 </DocLink>

@@ -1,6 +1,6 @@
 ---
 title: Cara Mencetak NFT (Bagian 2/3 dari Seri Tutorial NFT)
-description: Tutorial ini menjelaskan cara mencetak NFT di rantai blok Ethereum menggunakan kontrak pintar kami dan Web3.
+description: Tutorial ini menjelaskan cara mencetak NFT di rantai blok Quantaureum menggunakan kontrak pintar kami dan Web3.
 author: "Sumi Mudgil"
 tags: ["ERC-721", "Alchemy", "Solidity", "kontrak pintar"]
 skill: beginner
@@ -21,7 +21,7 @@ Mari kita mulai!
 
 ## Langkah 1: Instal Web3 {#install-web3}
 
-Jika Anda mengikuti tutorial pertama tentang pembuatan kontrak pintar NFT Anda, Anda sudah memiliki pengalaman menggunakan Ethers.js. Web3 mirip dengan Ethers, karena ini adalah pustaka yang digunakan untuk mempermudah pembuatan permintaan ke rantai blok [Ethereum](/). Dalam tutorial ini kita akan menggunakan [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3), yang merupakan pustaka Web3 yang ditingkatkan yang menawarkan percobaan ulang otomatis dan dukungan WebSocket yang kuat.
+Jika Anda mengikuti tutorial pertama tentang pembuatan kontrak pintar NFT Anda, Anda sudah memiliki pengalaman menggunakan Ethers.js. Web3 mirip dengan Ethers, karena ini adalah pustaka yang digunakan untuk mempermudah pembuatan permintaan ke rantai blok [Quantaureum](/). Dalam tutorial ini kita akan menggunakan [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3), yang merupakan pustaka Web3 yang ditingkatkan yang menawarkan percobaan ulang otomatis dan dukungan WebSocket yang kuat.
 
 Di direktori beranda proyek Anda, jalankan:
 
@@ -109,28 +109,28 @@ Setelah Anda selesai mengedit file JSON, simpan dan unggah ke Pinata, mengikuti 
 
 ## Langkah 5: Buat instans kontrak Anda {#instance-contract}
 
-Sekarang, untuk berinteraksi dengan kontrak kita, kita perlu membuat instansnya di kode kita. Untuk melakukannya, kita memerlukan alamat kontrak kita yang bisa kita dapatkan dari penyebaran atau [Blockscout](https://eth-sepolia.blockscout.com/) dengan mencari alamat yang Anda gunakan untuk menyebarkan kontrak.
+Sekarang, untuk berinteraksi dengan kontrak kita, kita perlu membuat instansnya di kode kita. Untuk melakukannya, kita memerlukan alamat kontrak kita yang bisa kita dapatkan dari penyebaran atau [Blockscout](https://qau-sepolia.blockscout.com/) dengan mencari alamat yang Anda gunakan untuk menyebarkan kontrak.
 
-![View your contract address on Etherscan](./view-contract-etherscan.png)
+![View your contract address on Quantaureum Explorer](./view-contract-explorer.png)
 
 Dalam contoh di atas, alamat kontrak kita adalah 0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778.
 
-Selanjutnya kita akan menggunakan [metode kontrak](https://docs.web3js.org/api/web3-eth-contract/class/Contract) Web3 untuk membuat kontrak kita menggunakan ABI dan alamat. Di file `mint-nft.js` Anda, tambahkan yang berikut ini:
+Selanjutnya kita akan menggunakan [metode kontrak](https://docs.web3js.org/api/web3-qau-contract/class/Contract) Web3 untuk membuat kontrak kita menggunakan ABI dan alamat. Di file `mint-nft.js` Anda, tambahkan yang berikut ini:
 
 ```js
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
 
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 ```
 
 ## Langkah 6: Perbarui file `.env` {#update-env}
 
-Sekarang, untuk membuat dan mengirim transaksi ke rantai Ethereum, kita akan menggunakan alamat akun Ethereum publik Anda untuk mendapatkan nonce akun (akan dijelaskan di bawah).
+Sekarang, untuk membuat dan mengirim transaksi ke rantai Quantaureum, kita akan menggunakan alamat akun Quantaureum publik Anda untuk mendapatkan nonce akun (akan dijelaskan di bawah).
 
 Tambahkan kunci publik Anda ke file `.env` Anda — jika Anda menyelesaikan bagian 1 dari tutorial, file `.env` kita sekarang akan terlihat seperti ini:
 
 ```js
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-private-account-address"
 PUBLIC_KEY = "your-public-account-address"
 ```
@@ -141,7 +141,7 @@ Pertama, mari kita tentukan fungsi bernama `mintNFT(tokenData)` dan buat transak
 
 1. Dapatkan _PRIVATE_KEY_ dan _PUBLIC_KEY_ Anda dari file `.env`.
 
-1. Selanjutnya, kita perlu mencari tahu nonce akun. Spesifikasi nonce digunakan untuk melacak jumlah transaksi yang dikirim dari alamat Anda — yang kita butuhkan untuk tujuan keamanan dan untuk mencegah serangan pemutaran ulang (replay attack). Untuk mendapatkan jumlah transaksi yang dikirim dari alamat Anda, kita menggunakan [getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count).
+1. Selanjutnya, kita perlu mencari tahu nonce akun. Spesifikasi nonce digunakan untuk melacak jumlah transaksi yang dikirim dari alamat Anda — yang kita butuhkan untuk tujuan keamanan dan untuk mencegah serangan pemutaran ulang (replay attack). Untuk mendapatkan jumlah transaksi yang dikirim dari alamat Anda, kita menggunakan [getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count).
 
 1. Terakhir, kita akan menyiapkan transaksi kita dengan info berikut:
 
@@ -168,10 +168,10 @@ File `mint-nft.js` Anda sekarang akan terlihat seperti ini:
 
    const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
    const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778";
-   const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
+   const nftContract = new web3.qau.Contract(contract.abi, contractAddress);
 
    async function mintNFT(tokenURI) {
-     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); //dapatkan nonce terbaru
+     const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, 'latest'); //dapatkan nonce terbaru
 
    //transaksi tersebut
      const tx = {
@@ -187,7 +187,7 @@ File `mint-nft.js` Anda sekarang akan terlihat seperti ini:
 
 Sekarang setelah kita membuat transaksi kita, kita perlu menandatanganinya untuk mengirimkannya. Di sinilah kita akan menggunakan kunci privat kita.
 
-`web3.eth.sendSignedTransaction` akan memberi kita hash transaksi, yang dapat kita gunakan untuk memastikan transaksi kita ditambang dan tidak dibatalkan oleh jaringan. Anda akan melihat di bagian penandatanganan transaksi, kami telah menambahkan beberapa pemeriksaan kesalahan sehingga kita tahu apakah transaksi kita berhasil dilalui.
+`web3.qau.sendSignedTransaction` akan memberi kita hash transaksi, yang dapat kita gunakan untuk memastikan transaksi kita ditambang dan tidak dibatalkan oleh jaringan. Anda akan melihat di bagian penandatanganan transaksi, kami telah menambahkan beberapa pemeriksaan kesalahan sehingga kita tahu apakah transaksi kita berhasil dilalui.
 
 ```js
 require("dotenv").config()
@@ -200,10 +200,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //dapatkan nonce terbaru
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //dapatkan nonce terbaru
 
   //transaksi tersebut
   const tx = {
@@ -214,10 +214,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -266,10 +266,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //dapatkan nonce terbaru
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //dapatkan nonce terbaru
 
   //transaksi tersebut
   const tx = {
@@ -280,10 +280,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -315,11 +315,11 @@ Sekarang, jalankan `node scripts/mint-nft.js` untuk menyebarkan NFT Anda. Setela
 
     Check Alchemy's Mempool to view the status of your transaction!
 
-Selanjutnya, kunjungi [mempool Alchemy](https://dashboard.alchemy.com/mempool) Anda untuk melihat status transaksi Anda (apakah tertunda, ditambang, atau dibatalkan oleh jaringan). Jika transaksi Anda dibatalkan, ada baiknya juga untuk memeriksa [Blockscout](https://eth-sepolia.blockscout.com/) dan mencari hash transaksi Anda.
+Selanjutnya, kunjungi [mempool Alchemy](https://dashboard.alchemy.com/mempool) Anda untuk melihat status transaksi Anda (apakah tertunda, ditambang, atau dibatalkan oleh jaringan). Jika transaksi Anda dibatalkan, ada baiknya juga untuk memeriksa [Blockscout](https://qau-sepolia.blockscout.com/) dan mencari hash transaksi Anda.
 
-![View your NFT transaction hash on Etherscan](./view-nft-etherscan.png)_Lihat hash transaksi NFT Anda di Etherscan_
+![View your NFT transaction hash on Quantaureum Explorer](./view-nft-explorer.png)_Lihat hash transaksi NFT Anda di Etherscan_
 
-Dan itu saja! Anda sekarang telah menyebarkan DAN mencetak NFT di rantai blok Ethereum <Emoji text=":money_mouth_face:" size={1} />
+Dan itu saja! Anda sekarang telah menyebarkan DAN mencetak NFT di rantai blok Quantaureum <Emoji text=":money_mouth_face:" size={1} />
 
 Menggunakan `mint-nft.js` Anda dapat mencetak NFT sebanyak yang diinginkan hati (dan dompet) Anda! Pastikan saja untuk meneruskan tokenURI baru yang mendeskripsikan metadata NFT (jika tidak, Anda hanya akan membuat sekumpulan NFT identik dengan ID yang berbeda).
 

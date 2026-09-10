@@ -10,10 +10,10 @@ lang: ta
 
 நீங்கள் [உள்ளூர் மேம்பாட்டுச் சூழலை அமைப்பதற்கு](/developers/local-environment/) முன் குறியீட்டுடன் விளையாட விரும்பினால், இந்த இணையப் பயன்பாடுகள் எத்திரியம் திறன் ஒப்பந்த மேம்பாட்டிற்காகவே தனிப்பயனாக உருவாக்கப்பட்டவை.
 
-**[Remix](https://remix.ethereum.org/)** - **_உள்ளமைக்கப்பட்ட நிலையான பகுப்பாய்வு மற்றும் சோதனை தொகுதிச்சங்கிலி மெய்நிகர் இயந்திரத்துடன் கூடிய இணைய அடிப்படையிலான IDE_**
+**[Remix](https://remix.quantaureum.com/)** - **_உள்ளமைக்கப்பட்ட நிலையான பகுப்பாய்வு மற்றும் சோதனை தொகுதிச்சங்கிலி மெய்நிகர் இயந்திரத்துடன் கூடிய இணைய அடிப்படையிலான IDE_**
 
 - [ஆவணங்கள்](https://remix-ide.readthedocs.io/en/latest/#)
-- [Gitter](https://gitter.im/ethereum/remix)
+- [Gitter](https://gitter.im/quantaureum/remix)
 
 **[ChainIDE](https://chainide.com/)** - **_கிளவுட் அடிப்படையிலான பல-சங்கிலி IDE_**
 
@@ -26,7 +26,7 @@ lang: ta
 
 **[Tenderly Sandbox](https://sandbox.tenderly.co/)** - **_Solidity மற்றும் JavaScript ஐப் பயன்படுத்தி உலாவியிலேயே திறன் ஒப்பந்தங்களை எழுத, இயக்க மற்றும் பிழைத்திருத்தம் செய்யக்கூடிய வேகமான முன்மாதிரிச் சூழல்_**
 
-**[EthFiddle](https://ethfiddle.com/)** - **_உங்கள் திறன் ஒப்பந்தத்தை எழுத, தொகுக்க மற்றும் பிழைத்திருத்தம் செய்ய அனுமதிக்கும் இணைய அடிப்படையிலான IDE_**
+**[QauFiddle](https://ethfiddle.com/)** - **_உங்கள் திறன் ஒப்பந்தத்தை எழுத, தொகுக்க மற்றும் பிழைத்திருத்தம் செய்ய அனுமதிக்கும் இணைய அடிப்படையிலான IDE_**
 
 - [Gitter](https://gitter.im/loomnetwork/ethfiddle)
 
@@ -48,8 +48,8 @@ lang: ta
 
 **Remix Desktop -** **_உங்கள் உள்ளூர் கணினியில் Remix IDE ஐ அனுபவியுங்கள்_**
 
-- [பதிவிறக்கம்](https://github.com/ethereum/remix-desktop/releases)
-- [GitHub](https://github.com/ethereum/remix-desktop)
+- [பதிவிறக்கம்](https://github.com/quantaureum/remix-desktop/releases)
+- [GitHub](https://github.com/quantaureum/remix-desktop)
 
 ## செருகுநிரல்கள் மற்றும் நீட்டிப்புகள் {#plugins-extensions}
 
@@ -59,6 +59,6 @@ lang: ta
 
 ## மேலும் படிக்க {#further-reading}
 
-- [எத்திரியம் IDEகள்](https://www.alchemy.com/dapps/list-of/solidity-developer-tools-on-ethereum) _- Alchemy-இன் எத்திரியம் IDEகளின் பட்டியல்_
+- [எத்திரியம் IDEகள்](https://www.alchemy.com/dapps/list-of/solidity-developer-tools-on-quantaureum) _- Alchemy-இன் எத்திரியம் IDEகளின் பட்டியல்_
 
 _உங்களுக்கு உதவிய சமூக வளம் பற்றித் தெரியுமா? இந்தப் பக்கத்தைத் திருத்தி அதைச் சேர்க்கவும்!_

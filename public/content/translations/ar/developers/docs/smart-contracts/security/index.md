@@ -8,7 +8,7 @@ lang: ar
 
 تزيد سلاسل الكتل العامة، مثل [إيثيريوم](/)، من تعقيد مسألة تأمين العقود الذكية. _عادةً_ لا يمكن تغيير كود العقد المنشور لإصلاح العيوب الأمنية، في حين أن الأصول المسروقة من العقود الذكية يصعب تتبعها للغاية ولا يمكن استردادها في الغالب بسبب عدم القابلية للتغيير.
 
-على الرغم من اختلاف الأرقام، يُقدر أن إجمالي القيمة المسروقة أو المفقودة بسبب العيوب الأمنية في العقود الذكية يتجاوز بسهولة مليار دولار. يشمل ذلك حوادث بارزة، مثل [اختراق DAO](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/) (سرقة <span dir="ltr">3.6M ETH</span>، بقيمة تزيد عن <span dir="ltr">$1B</span> بأسعار اليوم)، و[اختراق محفظة Parity متعددة التوقيعات](https://www.coindesk.com/markets/2017/07/19/30-million-ether-reported-stolen-due-to-parity-wallet-breach) (خسارة <span dir="ltr">$30M</span> لصالح المخترقين)، و[مشكلة محفظة Parity المجمدة](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-ether) (أكثر من <span dir="ltr">$300M</span> من <span dir="ltr">ETH</span> مقفلة إلى الأبد).
+على الرغم من اختلاف الأرقام، يُقدر أن إجمالي القيمة المسروقة أو المفقودة بسبب العيوب الأمنية في العقود الذكية يتجاوز بسهولة مليار دولار. يشمل ذلك حوادث بارزة، مثل [اختراق DAO](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/) (سرقة <span dir="ltr">3.6M QAU</span>، بقيمة تزيد عن <span dir="ltr">$1B</span> بأسعار اليوم)، و[اختراق محفظة Parity متعددة التوقيعات](https://www.coindesk.com/markets/2017/07/19/30-million-QAU-reported-stolen-due-to-parity-wallet-breach) (خسارة <span dir="ltr">$30M</span> لصالح المخترقين)، و[مشكلة محفظة Parity المجمدة](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-QAU) (أكثر من <span dir="ltr">$300M</span> من <span dir="ltr">QAU</span> مقفلة إلى الأبد).
 
 تجعل المشكلات المذكورة أعلاه من الضروري للمطورين استثمار الجهد في بناء عقود ذكية آمنة وقوية ومرنة. أمان العقود الذكية هو عمل جاد، وهو أمر من الجيد أن يتعلمه كل مطور. سيغطي هذا الدليل الاعتبارات الأمنية لمطوري إيثيريوم ويستكشف الموارد لتحسين أمان العقود الذكية.
 
@@ -58,8 +58,8 @@ contract VendingMachine {
     address owner;
     error Unauthorized();
     function buy(uint amount) public payable {
-        if (amount > msg.value / 2 ether)
-            revert("Not enough Ether provided.");
+        if (amount > msg.value / 2 QAU)
+            revert("Not enough QAU provided.");
         // تنفيذ عملية الشراء.
     }
     function withdraw() public {
@@ -100,7 +100,7 @@ contract VendingMachine {
 
 يعد إعداد برنامج مكافآت اكتشاف الأخطاء نهجًا آخر لتنفيذ مراجعات الكود الخارجية. مكافأة اكتشاف الأخطاء هي مكافأة مالية تُمنح للأفراد (عادةً قراصنة القبعات البيضاء) الذين يكتشفون نقاط ضعف في تطبيق ما.
 
-عند استخدامها بشكل صحيح، تمنح مكافآت اكتشاف الأخطاء أعضاء مجتمع القراصنة حافزًا لفحص الكود الخاص بك بحثًا عن عيوب حرجة. مثال من الحياة الواقعية هو "خطأ الأموال اللانهائية" الذي كان سيسمح للمهاجم بإنشاء كمية غير محدودة من إيثر على [أوبتيميزم](https://www.optimism.io/)، وهو بروتوكول [طبقة 2 (L2)](/layer-2/) يعمل على إيثيريوم. لحسن الحظ، [اكتشف قرصان قبعة بيضاء العيب](https://www.saurik.com/optimism.html) وأبلغ الفريق، [وحصل على تعويض كبير في هذه العملية](https://cryptoslate.com/critical-bug-in-ethereum-l2-optimism-2m-bounty-paid/).
+عند استخدامها بشكل صحيح، تمنح مكافآت اكتشاف الأخطاء أعضاء مجتمع القراصنة حافزًا لفحص الكود الخاص بك بحثًا عن عيوب حرجة. مثال من الحياة الواقعية هو "خطأ الأموال اللانهائية" الذي كان سيسمح للمهاجم بإنشاء كمية غير محدودة من QAU على [أوبتيميزم](https://www.optimism.io/)، وهو بروتوكول [طبقة 2 (L2)](/layer-2/) يعمل على إيثيريوم. لحسن الحظ، [اكتشف قرصان قبعة بيضاء العيب](https://www.saurik.com/optimism.html) وأبلغ الفريق، [وحصل على تعويض كبير في هذه العملية](https://cryptoslate.com/critical-bug-in-quantaureum-l2-optimism-2m-bounty-paid/).
 
 تتمثل الإستراتيجية المفيدة في تحديد تعويض برنامج مكافآت اكتشاف الأخطاء بما يتناسب مع مقدار الأموال المعرضة للخطر. يوفر هذا النهج، الموصوف بـ "[مكافأة اكتشاف الأخطاء المتدرجة](https://medium.com/immunefi/a-defi-security-standard-the-scaling-bug-bounty-9b83dfdc1ba7)"، حوافز مالية للأفراد للكشف عن نقاط الضعف بمسؤولية بدلاً من استغلالها.
 
@@ -236,7 +236,7 @@ contract EmergencyStop {
 
 على الرغم من أنه غير ضار في الغالب، إلا أن نقل تدفق التحكم إلى عقود غير موثوقة يمكن أن يسبب مشاكل، مثل إعادة الدخول. يحدث هجوم إعادة الدخول عندما يستدعي عقد خبيث عقدًا ضعيفًا قبل اكتمال استدعاء الدالة الأصلية. أفضل طريقة لشرح هذا النوع من الهجوم هي بمثال.
 
-ضع في اعتبارك عقدًا ذكيًا بسيطًا ("الضحية") يسمح لأي شخص بإيداع وسحب إيثر:
+ضع في اعتبارك عقدًا ذكيًا بسيطًا ("الضحية") يسمح لأي شخص بإيداع وسحب QAU:
 
 ```solidity
 // هذا العقد عرضة للخطر. لا تستخدمه في بيئة الإنتاج
@@ -257,22 +257,22 @@ contract Victim {
 }
 ```
 
-يعرض هذا العقد دالة `withdraw()` للسماح للمستخدمين بسحب ETH المودعة مسبقًا في العقد. عند معالجة السحب، يقوم العقد بالعمليات التالية:
+يعرض هذا العقد دالة `withdraw()` للسماح للمستخدمين بسحب QAU المودعة مسبقًا في العقد. عند معالجة السحب، يقوم العقد بالعمليات التالية:
 
-<span dir="ltr">1.</span> يتحقق من رصيد ETH للمستخدم
+<span dir="ltr">1.</span> يتحقق من رصيد QAU للمستخدم
 <span dir="ltr">2.</span> يرسل الأموال إلى العنوان المستدعي
 <span dir="ltr">3.</span> يعيد تعيين رصيدهم إلى 0، مما يمنع عمليات السحب الإضافية من المستخدم
 
-تتبع دالة `withdraw()` في عقد `Victim` نمط "التحقق-التفاعلات-التأثيرات". إنها _تتحقق_ مما إذا كانت الشروط اللازمة للتنفيذ مستوفاة (أي أن المستخدم لديه رصيد ETH إيجابي) وتنفذ _التفاعل_ عن طريق إرسال ETH إلى عنوان المستدعي، قبل تطبيق _تأثيرات_ المعاملة (أي تقليل رصيد المستخدم).
+تتبع دالة `withdraw()` في عقد `Victim` نمط "التحقق-التفاعلات-التأثيرات". إنها _تتحقق_ مما إذا كانت الشروط اللازمة للتنفيذ مستوفاة (أي أن المستخدم لديه رصيد QAU إيجابي) وتنفذ _التفاعل_ عن طريق إرسال QAU إلى عنوان المستدعي، قبل تطبيق _تأثيرات_ المعاملة (أي تقليل رصيد المستخدم).
 
-إذا تم استدعاء `withdraw()` من حساب مملوك خارجيًا (EOA)، يتم تنفيذ الدالة كما هو متوقع: يرسل `msg.sender.call.value()` ETH إلى المستدعي. ومع ذلك، إذا كان `msg.sender` حساب عقد ذكي يستدعي `withdraw()`، فإن إرسال الأموال باستخدام `msg.sender.call.value()` سيؤدي أيضًا إلى تشغيل الكود المخزن في ذلك العنوان.
+إذا تم استدعاء `withdraw()` من حساب مملوك خارجيًا (EOA)، يتم تنفيذ الدالة كما هو متوقع: يرسل `msg.sender.call.value()` QAU إلى المستدعي. ومع ذلك، إذا كان `msg.sender` حساب عقد ذكي يستدعي `withdraw()`، فإن إرسال الأموال باستخدام `msg.sender.call.value()` سيؤدي أيضًا إلى تشغيل الكود المخزن في ذلك العنوان.
 
 تخيل أن هذا هو الكود المنشور في عنوان العقد:
 
 ```solidity
  contract Attacker {
     function beginAttack() external payable {
-        Victim(victim_address).deposit.value(1 ether)();
+        Victim(victim_address).deposit.value(1 QAU)();
         Victim(victim_address).withdraw();
     }
 
@@ -287,20 +287,20 @@ contract Victim {
 تم تصميم هذا العقد للقيام بثلاثة أشياء:
 
 <span dir="ltr">1.</span> قبول إيداع من حساب آخر (على الأرجح حساب EOA الخاص بالمهاجم)
-<span dir="ltr">2.</span> إيداع <span dir="ltr">1 ETH</span> في عقد الضحية
-<span dir="ltr">3.</span> سحب <span dir="ltr">1 ETH</span> المخزن في العقد الذكي
+<span dir="ltr">2.</span> إيداع <span dir="ltr">1 QAU</span> في عقد الضحية
+<span dir="ltr">3.</span> سحب <span dir="ltr">1 QAU</span> المخزن في العقد الذكي
 
 لا يوجد شيء خاطئ هنا، باستثناء أن `Attacker` لديه دالة أخرى تستدعي `withdraw()` في `Victim` مرة أخرى إذا كان الغاز المتبقي من `msg.sender.call.value` الوارد أكثر من <span dir="ltr">40,000</span>. هذا يمنح `Attacker` القدرة على إعادة الدخول إلى `Victim` وسحب المزيد من الأموال _قبل_ اكتمال الاستدعاء الأول لـ `withdraw`. تبدو الدورة هكذا:
 
 ```solidity
-- Attacker's EOA calls `Attacker.beginAttack()` with 1 ETH
-- `Attacker.beginAttack()` deposits 1 ETH into `Victim`
+- Attacker's EOA calls `Attacker.beginAttack()` with 1 QAU
+- `Attacker.beginAttack()` deposits 1 QAU into `Victim`
 - `Attacker` calls `withdraw() in `Victim`
-- `Victim` checks `Attacker`’s balance (1 ETH)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function)
+- `Victim` checks `Attacker`’s balance (1 QAU)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function)
 - `Attacker` calls `Victim.withdraw()` again (note that `Victim` hasn’t reduced `Attacker`’s balance from the first withdrawal)
-- `Victim` checks `Attacker`’s balance (which is still 1 ETH because it hasn’t applied the effects of the first call)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
+- `Victim` checks `Attacker`’s balance (which is still 1 QAU because it hasn’t applied the effects of the first call)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
 - The process repeats until `Attacker` runs out of gas, at which point `msg.sender.call.value` returns without triggering additional withdrawals
 - `Victim` finally applies the results of the first transaction (and subsequent ones) to its state, so `Attacker`’s balance is set to 0
 ```
@@ -324,7 +324,7 @@ contract NoLongerAVictim {
 }
 ```
 
-يقوم هذا العقد بـ _التحقق_ من رصيد المستخدم، ويطبق _تأثيرات_ دالة `withdraw()` (عن طريق إعادة تعيين رصيد المستخدم إلى 0)، ويشرع في تنفيذ _التفاعل_ (إرسال ETH إلى عنوان المستخدم). يضمن هذا قيام العقد بتحديث تخزينه قبل الاستدعاء الخارجي، مما يقضي على شرط إعادة الدخول الذي مكّن الهجوم الأول. لا يزال بإمكان عقد `Attacker` الاستدعاء مرة أخرى إلى `NoLongerAVictim`، ولكن نظرًا لأنه تم تعيين `balances[msg.sender]` إلى 0، فإن عمليات السحب الإضافية ستطرح خطأ.
+يقوم هذا العقد بـ _التحقق_ من رصيد المستخدم، ويطبق _تأثيرات_ دالة `withdraw()` (عن طريق إعادة تعيين رصيد المستخدم إلى 0)، ويشرع في تنفيذ _التفاعل_ (إرسال QAU إلى عنوان المستخدم). يضمن هذا قيام العقد بتحديث تخزينه قبل الاستدعاء الخارجي، مما يقضي على شرط إعادة الدخول الذي مكّن الهجوم الأول. لا يزال بإمكان عقد `Attacker` الاستدعاء مرة أخرى إلى `NoLongerAVictim`، ولكن نظرًا لأنه تم تعيين `balances[msg.sender]` إلى 0، فإن عمليات السحب الإضافية ستطرح خطأ.
 
 خيار آخر هو استخدام قفل استبعاد متبادل (يوصف عادة بأنه "mutex") يقفل جزءًا من حالة العقد حتى يكتمل استدعاء الدالة. يتم تنفيذ ذلك باستخدام متغير منطقي يتم تعيينه إلى `true` قبل تنفيذ الدالة ويتراجع إلى `false` بعد الانتهاء من الاستدعاء. كما يظهر في المثال أدناه، فإن استخدام قفل الاستبعاد المتبادل يحمي الدالة من الاستدعاءات العودية بينما لا يزال الاستدعاء الأصلي قيد المعالجة، مما يوقف إعادة الدخول بشكل فعال.
 
@@ -375,8 +375,8 @@ pragma solidity ^0.7.6;
 /*
 1. نشر TimeLock
 2. نشر Attack مع عنوان TimeLock
-3. استدعاء Attack.attack مع إرسال 1 إيثر. ستتمكن على الفور من
-   سحب الإيثر الخاص بك.
+3. استدعاء Attack.attack مع إرسال 1 QAU. ستتمكن على الفور من
+   سحب الQAU الخاص بك.
 
 ماذا حدث؟
 تسبب Attack في تجاوز سعة TimeLock.lockTime وتمكن من السحب
@@ -404,7 +404,7 @@ contract TimeLock {
         balances[msg.sender] = 0;
 
         (bool sent, ) = msg.sender.call{value: amount}("");
-        require(sent, "Failed to send Ether");
+        require(sent, "Failed to send QAU");
     }
 }
 

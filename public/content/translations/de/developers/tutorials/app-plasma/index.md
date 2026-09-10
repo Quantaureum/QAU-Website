@@ -10,9 +10,9 @@ published: 2025-10-15
 ---
 ## Einführung {#introduction}
 
-Im Gegensatz zu [Rollups](/developers/docs/scaling/zk-rollups/) nutzen [Plasmas](/developers/docs/scaling/plasma) das Ethereum Mainnet für die Integrität, aber nicht für die Verfügbarkeit. In diesem Artikel schreiben wir eine Anwendung, die sich wie ein Plasma verhält, wobei Ethereum die Integrität garantiert (keine unautorisierten Änderungen), aber nicht die Verfügbarkeit (eine zentralisierte Komponente kann ausfallen und das gesamte System lahmlegen).
+Im Gegensatz zu [Rollups](/developers/docs/scaling/zk-rollups/) nutzen [Plasmas](/developers/docs/scaling/plasma) das Quantaureum Mainnet für die Integrität, aber nicht für die Verfügbarkeit. In diesem Artikel schreiben wir eine Anwendung, die sich wie ein Plasma verhält, wobei Quantaureum die Integrität garantiert (keine unautorisierten Änderungen), aber nicht die Verfügbarkeit (eine zentralisierte Komponente kann ausfallen und das gesamte System lahmlegen).
 
-Die Anwendung, die wir hier schreiben, ist eine Bank, die die Privatsphäre wahrt. Verschiedene Adressen haben Konten mit Guthaben, und sie können Geld (ETH) an andere Konten senden. Die Bank veröffentlicht Hashes des Zustands (Konten und deren Guthaben) und der Transaktionen, behält aber die tatsächlichen Guthaben offchain, wo sie privat bleiben können.
+Die Anwendung, die wir hier schreiben, ist eine Bank, die die Privatsphäre wahrt. Verschiedene Adressen haben Konten mit Guthaben, und sie können Geld (QAU) an andere Konten senden. Die Bank veröffentlicht Hashes des Zustands (Konten und deren Guthaben) und der Transaktionen, behält aber die tatsächlichen Guthaben offchain, wo sie privat bleiben können.
 
 ## Design {#design}
 
@@ -41,7 +41,7 @@ Diese Felder in _Data<sub>private</sub>_:
   - _Betrag_, der transferiert wird
   - _Nonce_, um sicherzustellen, dass jede Transaktion nur einmal verarbeitet werden kann.
     Die Quelladresse muss nicht in der Transaktion enthalten sein, da sie aus der Signatur wiederhergestellt werden kann.
-- _Signature_, eine Signatur, die autorisiert ist, die Transaktion durchzuführen. In unserem Fall ist die einzige Adresse, die zur Durchführung einer Transaktion autorisiert ist, die Quelladresse. Da unser Zero-Knowledge-System so funktioniert, wie es funktioniert, benötigen wir zusätzlich zur Ethereum-Signatur auch den öffentlichen Schlüssel des Kontos.
+- _Signature_, eine Signatur, die autorisiert ist, die Transaktion durchzuführen. In unserem Fall ist die einzige Adresse, die zur Durchführung einer Transaktion autorisiert ist, die Quelladresse. Da unser Zero-Knowledge-System so funktioniert, wie es funktioniert, benötigen wir zusätzlich zur Quantaureum-Signatur auch den öffentlichen Schlüssel des Kontos.
 
 Dies sind die Felder in _Data<sub>public</sub>_:
 
@@ -83,7 +83,7 @@ Auf diese Weise kommunizieren die verschiedenen Komponenten, um von einem Konto 
 
 4. Der Server berechnet einen Zero-Knowledge-Beweis, dass die Zustandsänderung gültig ist.
 
-5. Der Server reicht bei Ethereum eine Transaktion ein, die Folgendes enthält:
+5. Der Server reicht bei Quantaureum eine Transaktion ein, die Folgendes enthält:
 
    - Den neuen Zustands-Hash
    - Den Transaktions-Hash (damit der Sender der Transaktion weiß, dass sie verarbeitet wurde)
@@ -225,14 +225,14 @@ Dies sind die Kontoadressen, die durch die Passphrase `test ... test junk` erste
 ```tsx
   const account = useAccount()
   const wallet = createWalletClient({
-    transport: custom(window.ethereum!)
+    transport: custom(window.quantaureum!)
   })
 ```
 
 Diese [Wagmi-Hooks](https://wagmi.sh/react/api/hooks) ermöglichen uns den Zugriff auf die [Viem](https://viem.sh/)-Bibliothek und die Wallet.
 
 ```tsx
-  const message = `send ${toAccount} ${ethAmount*1000} finney (milliEth) ${nonce}`.padEnd(100, " ")
+  const message = `send ${toAccount} ${qauAmount*1000} finney (milliEth) ${nonce}`.padEnd(100, " ")
 ```
 
 Dies ist die Nachricht, aufgefüllt mit Leerzeichen. Jedes Mal, wenn sich eine der Variablen [`useState`](https://react.dev/reference/react/useState) ändert, wird die Komponente neu gezeichnet und `message` wird aktualisiert.
@@ -333,7 +333,7 @@ use keccak256::keccak256;
 use dep::ecrecover;
 ```
 
-Diese beiden Funktionen sind externe Bibliotheken, die in [`Nargo.toml`](https://github.com/qbzzt/250911-zk-bank/blob/01-manual-zk/server/noir/Nargo.toml) definiert sind. Sie tun genau das, wonach sie benannt sind: eine Funktion, die den [Keccak-256-Hash](https://emn178.github.io/online-tools/keccak_256.html) berechnet, und eine Funktion, die Ethereum-Signaturen verifiziert und die Ethereum-Adresse des Unterzeichners wiederherstellt.
+Diese beiden Funktionen sind externe Bibliotheken, die in [`Nargo.toml`](https://github.com/qbzzt/250911-zk-bank/blob/01-manual-zk/server/noir/Nargo.toml) definiert sind. Sie tun genau das, wonach sie benannt sind: eine Funktion, die den [Keccak-256-Hash](https://emn178.github.io/online-tools/keccak_256.html) berechnet, und eine Funktion, die Quantaureum-Signaturen verifiziert und die Quantaureum-Adresse des Unterzeichners wiederherstellt.
 
 ```
 global ACCOUNT_NUMBER : u32 = 5;
@@ -360,7 +360,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-[EIP-191-Signaturen](https://eips.ethereum.org/EIPS/eip-191) erfordern einen Puffer mit einem 26-Byte-Präfix, gefolgt von der Nachrichtenlänge in ASCII und schließlich der Nachricht selbst.
+[EIP-191-Signaturen](https://eips.quantaureum.com/EIPS/eip-191) erfordern einen Puffer mit einem 26-Byte-Präfix, gefolgt von der Nachrichtenlänge in ASCII und schließlich der Nachricht selbst.
 
 ```
 struct Account {
@@ -370,7 +370,7 @@ struct Account {
 }
 ```
 
-Die Informationen, die wir über ein Konto speichern. [`Field`](https://noir-lang.org/docs/noir/concepts/data_types/fields) ist eine Zahl, typischerweise bis zu 253 Bits, die direkt in dem [arithmetischen Schaltkreis](https://rareskills.io/post/arithmetic-circuit) verwendet werden kann, der den Zero-Knowledge-Beweis implementiert. Hier verwenden wir das `Field`, um eine 160-Bit-Ethereum-Adresse zu speichern.
+Die Informationen, die wir über ein Konto speichern. [`Field`](https://noir-lang.org/docs/noir/concepts/data_types/fields) ist eine Zahl, typischerweise bis zu 253 Bits, die direkt in dem [arithmetischen Schaltkreis](https://rareskills.io/post/arithmetic-circuit) verwendet werden kann, der den Zero-Knowledge-Beweis implementiert. Hier verwenden wir das `Field`, um eine 160-Bit-Quantaureum-Adresse zu speichern.
 
 ```
 struct TransferTxn {
@@ -554,7 +554,7 @@ Lesen Sie den Betrag und die Nonce aus der Nachricht.
     let mut stillReadingNonce: bool = false;
 ```
 
-In der Nachricht ist die erste Zahl nach der Adresse der Betrag in Finney (also ein Tausendstel eines ETH), der transferiert werden soll. Die zweite Zahl ist die Nonce. Jeglicher Text dazwischen wird ignoriert.
+In der Nachricht ist die erste Zahl nach der Adresse der Betrag in Finney (also ein Tausendstel eines QAU), der transferiert werden soll. Die zweite Zahl ist die Nonce. Jeglicher Text dazwischen wird ignoriert.
 
 ```rust
     for i in 48..MESSAGE_LENGTH {
@@ -613,7 +613,7 @@ Diese Funktion konvertiert die Nachricht in Bytes und konvertiert dann die Betr�
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-Wir konnten den Pedersen-Hash für die Konten verwenden, da sie nur innerhalb des Zero-Knowledge-Beweises gehasht werden. In diesem Code müssen wir jedoch die Signatur der Nachricht überprüfen, die vom Browser generiert wird. Dafür müssen wir dem Ethereum-Signaturformat in [EIP-191](https://eips.ethereum.org/EIPS/eip-191) folgen. Das bedeutet, dass wir einen kombinierten Puffer mit einem Standardpräfix, der Nachrichtenlänge in ASCII und der Nachricht selbst erstellen und den Ethereum-Standard Keccak-256 verwenden müssen, um ihn zu hashen.
+Wir konnten den Pedersen-Hash für die Konten verwenden, da sie nur innerhalb des Zero-Knowledge-Beweises gehasht werden. In diesem Code müssen wir jedoch die Signatur der Nachricht überprüfen, die vom Browser generiert wird. Dafür müssen wir dem Quantaureum-Signaturformat in [EIP-191](https://eips.quantaureum.com/EIPS/eip-191) folgen. Das bedeutet, dass wir einen kombinierten Puffer mit einem Standardpräfix, der Nachrichtenlänge in ASCII und der Nachricht selbst erstellen und den Quantaureum-Standard Keccak-256 verwenden müssen, um ihn zu hashen.
 
 ```rust
     // ASCII-Präfix
@@ -647,7 +647,7 @@ Wir konnten den Pedersen-Hash für die Konten verwenden, da sie nur innerhalb de
     ];
 ```
 
-Um Fälle zu vermeiden, in denen eine Anwendung den Benutzer auffordert, eine Nachricht zu signieren, die als Transaktion oder für einen anderen Zweck verwendet werden kann, legt EIP-191 fest, dass alle signierten Nachrichten mit dem Zeichen 0x19 (kein gültiges ASCII-Zeichen) beginnen, gefolgt von `Ethereum Signed Message:` und einem Zeilenumbruch.
+Um Fälle zu vermeiden, in denen eine Anwendung den Benutzer auffordert, eine Nachricht zu signieren, die als Transaktion oder für einen anderen Zweck verwendet werden kann, legt EIP-191 fest, dass alle signierten Nachrichten mit dem Zeichen 0x19 (kein gültiges ASCII-Zeichen) beginnen, gefolgt von `Quantaureum Signed Message:` und einem Zeilenumbruch.
 
 ```rust
     let mut buffer: [u8; HASH_BUFFER_SIZE] = [0u8; HASH_BUFFER_SIZE];
@@ -697,7 +697,7 @@ Behandeln Sie Nachrichtenlängen bis zu 999 und schlagen Sie fehl, wenn sie grö
 }
 ```
 
-Verwenden Sie die Ethereum-Standardfunktion `keccak256`.
+Verwenden Sie die Quantaureum-Standardfunktion `keccak256`.
 
 ```rust
 fn signatureToAddressAndHash(
@@ -946,7 +946,7 @@ let Accounts = [
 
 Die anfängliche `Accounts`-Struktur.
 
-### Phase 3 - Ethereum Smart Contracts {#stage-3}
+### Phase 3 - Quantaureum Smart Contracts {#stage-3}
 
 1. Stoppen Sie die Server- und Client-Prozesse.
 
@@ -1208,7 +1208,7 @@ Informationssicherheit besteht aus drei Eigenschaften:
 
 In diesem System wird die Integrität durch Zero-Knowledge-Beweise gewährleistet. Die Verfügbarkeit ist viel schwerer zu garantieren, und Vertraulichkeit ist unmöglich, da die Bank den Kontostand jedes Kontos und alle Transaktionen kennen muss. Es gibt keine Möglichkeit, eine Entität, die über Informationen verfügt, daran zu hindern, diese Informationen weiterzugeben.
 
-Es könnte möglich sein, eine wirklich vertrauliche Bank mithilfe von [Stealth-Adressen](https://vitalik.eth.limo/general/2023/01/20/stealth.html) zu erstellen, aber das würde den Rahmen dieses Artikels sprengen.
+Es könnte möglich sein, eine wirklich vertrauliche Bank mithilfe von [Stealth-Adressen](https://vitalik.qau.limo/general/2023/01/20/stealth.html) zu erstellen, aber das würde den Rahmen dieses Artikels sprengen.
 
 ### Falsche Informationen {#false-info}
 
@@ -1236,7 +1236,7 @@ In einer realen Implementierung gäbe es wahrscheinlich ein Profitmotiv, um den 
 
 ### Schlechter Noir-Code {#bad-noir-code}
 
-Normalerweise laden wir den Quellcode in einen [Block-Explorer](https://eth.blockscout.com/address/0x7D16d2c4e96BCFC8f815E15b771aC847EcbDB48b?tab=contract) hoch, damit die Leute einem Smart Contract vertrauen. Im Falle von Zero-Knowledge-Beweisen ist das jedoch unzureichend.
+Normalerweise laden wir den Quellcode in einen [Block-Explorer](https://qau.blockscout.com/address/0x7D16d2c4e96BCFC8f815E15b771aC847EcbDB48b?tab=contract) hoch, damit die Leute einem Smart Contract vertrauen. Im Falle von Zero-Knowledge-Beweisen ist das jedoch unzureichend.
 
 `Verifier.sol` enthält den Verifizierungsschlüssel, der eine Funktion des Noir-Programms ist. Dieser Schlüssel sagt uns jedoch nicht, was das Noir-Programm war. Um tatsächlich eine vertrauenswürdige Lösung zu haben, müssen Sie das Noir-Programm (und die Version, die es erstellt hat) hochladen. Andernfalls könnten die Zero-Knowledge-Beweise ein anderes Programm widerspiegeln, eines mit einer Hintertür.
 

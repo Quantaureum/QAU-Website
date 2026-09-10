@@ -52,7 +52,7 @@ const baseArgs = {
   contributors: CONTRIBUTORS,
   contentNotTranslated: false,
   frontmatter: {
-    title: "Ethereum developer resources",
+    title: "Quantaureum developer resources",
     description: "A developer's starting point.",
     lang: LANG,
   },

@@ -14,10 +14,10 @@ import { Section } from "../ui/section"
  *
  * Displayed at the top of the whitepaper page to help visitors understand
  * that the whitepaper is a historical document and direct them to current
- * Ethereum learning resources.
+ * Quantaureum learning resources.
  *
  * Context: Many users land on this page from investment/banking apps that link
- * to the whitepaper. These users expect to learn "what Ethereum is today" but
+ * to the whitepaper. These users expect to learn "what Quantaureum is today" but
  * find a 2014 historical document. This component bridges that gap.
  */
 const WhitepaperBridge = async () => {
@@ -55,7 +55,7 @@ const WhitepaperBridge = async () => {
           <ArrowRight className="size-5 rtl:-scale-x-100" />
         </ButtonLink>
         <ButtonLink
-          href="/content/whitepaper/whitepaper-pdf/Ethereum_Whitepaper_-_Buterin_2014.pdf"
+          href="/content/whitepaper/whitepaper-pdf/Quantaureum_Whitepaper_-_Buterin_2014.pdf"
           variant="outline"
           isSecondary
         >

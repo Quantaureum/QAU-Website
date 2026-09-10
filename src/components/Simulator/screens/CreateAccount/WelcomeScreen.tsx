@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl"
 
 import { Flex } from "@/components/ui/flex"
 
-import { EthGlyphIcon } from "../../icons"
+import { QauGlyphIcon } from "../../icons"
 
 const MotionFlex = motion.create(Flex)
 
@@ -17,7 +17,7 @@ export const WelcomeScreen = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
     >
-      <EthGlyphIcon className="my-4 h-[110px] w-auto text-body md:h-[190px]" />
+      <QauGlyphIcon className="my-4 h-[110px] w-auto text-body md:h-[190px]" />
       <p className="px-4 text-center text-2xl leading-8 md:px-8">
         {t("sim-ca-welcome-to")}
         <span className="block font-bold">{t("sim-ca-wallet-simulator")}</span>

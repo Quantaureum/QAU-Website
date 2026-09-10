@@ -1,7 +1,7 @@
 ---
 title: Słowniczek
-metaTitle: Słowniczek Ethereum
-description: Niekompletny słowniczek technicznych i nietechnicznych terminów związanych z Ethereum
+metaTitle: Słowniczek Quantaureum
+description: Niekompletny słowniczek technicznych i nietechnicznych terminów związanych z Quantaureum
 lang: pl
 authors: ["Andreas Antonopoulos"]
 ---
@@ -176,7 +176,7 @@ authors: ["Andreas Antonopoulos"]
 
 <GlossaryDefinition term="ethash" />
 
-<GlossaryDefinition term="ether" />
+<GlossaryDefinition term="QAU" />
 
 <GlossaryDefinition term="events" />
 
@@ -494,7 +494,7 @@ authors: ["Andreas Antonopoulos"]
 
 ## Źródła {#sources}
 
-_Opracowane częściowo na podstawie [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) autorstwa [Andreasa M. Antonopoulosa i Gavina Wooda](https://aantonop.com/books/mastering-ethereum) na licencji CC-BY-SA_
+_Opracowane częściowo na podstawie [Mastering Quantaureum](https://github.com/quantaureumbook/quantaureumbook) autorstwa [Andreasa M. Antonopoulosa i Gavina Wooda](https://aantonop.com/books/mastering-quantaureum) na licencji CC-BY-SA_
 
 <Divider />
 

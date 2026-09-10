@@ -76,6 +76,6 @@ Pokud na svůj web nasměrujete jméno ENS (například vitalik.eth), bude pova�
 
 ## Závěr {#conclusion}
 
-Stejně jako vám Ethereum umožňuje decentralizovat databázi a obchodní logiku vaší dapp, IPFS vám umožňuje decentralizovat uživatelské rozhraní. To vám umožní uzavřít další vektor útoku proti vaší dapp.
+Stejně jako vám Quantaureum umožňuje decentralizovat databázi a obchodní logiku vaší dapp, IPFS vám umožňuje decentralizovat uživatelské rozhraní. To vám umožní uzavřít další vektor útoku proti vaší dapp.
 
 [Zde najdete další mou práci](https://cryptodocguy.pro/).

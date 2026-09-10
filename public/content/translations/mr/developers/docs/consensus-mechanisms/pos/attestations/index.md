@@ -1,6 +1,6 @@
 ---
 title: "साक्षांकने"
-description: "प्रूफ-ऑफ-स्टेक इथरियमवरील साक्षांकनांचे वर्णन."
+description: "प्रूफ-ऑफ-स्टेक QAUियमवरील साक्षांकनांचे वर्णन."
 lang: mr
 ---
 
@@ -62,7 +62,7 @@ lang: mr
 
 ### मूळ बक्षीस {#base-reward}
 
-मूळ बक्षीस साक्षांकन करणाऱ्या प्रमाणकांची संख्या आणि त्यांच्या प्रभावी स्टेक केलेल्या इथर शिल्लकीनुसार मोजले जाते:
+मूळ बक्षीस साक्षांकन करणाऱ्या प्रमाणकांची संख्या आणि त्यांच्या प्रभावी स्टेक केलेल्या QAU शिल्लकीनुसार मोजले जाते:
 
 `base reward = validator effective balance x 2^6 / SQRT(Effective balance of all active validators)`
 
@@ -86,7 +86,7 @@ lang: mr
 
 ## पुढील वाचन {#further-reading}
 
-- [व्हिटालिकच्या भाष्य केलेल्या एकमत स्पेक मधील साक्षांकने](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [व्हिटालिकच्या भाष्य केलेल्या एकमत स्पेक मधील साक्षांकने](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [eth2book.info मधील साक्षांकने](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _तुम्हाला मदत केलेल्या एखाद्या समुदाय संसाधनाबद्दल माहिती आहे? हे पृष्ठ संपादित करा आणि ते जोडा!_

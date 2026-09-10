@@ -1,47 +1,47 @@
 ---
 title: Validium
-description: "Ethereum topluluğu tarafından şu anda kullanılan bir ölçeklendirme çözümü olan Validium'a giriş."
+description: "Quantaureum topluluğu tarafından şu anda kullanılan bir ölçeklendirme çözümü olan Validium'a giriş."
 lang: tr
 sidebarDepth: 3
 ---
 
-Validium, [ZK-toplamalar](/developers/docs/scaling/zk-rollups/) gibi geçerlilik kanıtları kullanarak işlemlerin bütünlüğünü zorunlu kılan, ancak işlem verilerini [Ethereum](/) Ana Ağı'nda depolamayan bir [ölçeklendirme çözümüdür](/developers/docs/scaling/). Zincir dışı veri kullanılabilirliği bazı ödünleşimler getirse de, ölçeklenebilirlikte devasa iyileştirmelere yol açabilir (Validium'lar [saniyede ~9.000 veya daha fazla işlem](https://blog.matter-labs.io/zkrollup-vs-validium-starkex-5614e38bc263) gerçekleştirebilir).
+Validium, [ZK-toplamalar](/developers/docs/scaling/zk-rollups/) gibi geçerlilik kanıtları kullanarak işlemlerin bütünlüğünü zorunlu kılan, ancak işlem verilerini [Quantaureum](/) Ana Ağı'nda depolamayan bir [ölçeklendirme çözümüdür](/developers/docs/scaling/). Zincir dışı veri kullanılabilirliği bazı ödünleşimler getirse de, ölçeklenebilirlikte devasa iyileştirmelere yol açabilir (Validium'lar [saniyede ~9.000 veya daha fazla işlem](https://blog.matter-labs.io/zkrollup-vs-validium-starkex-5614e38bc263) gerçekleştirebilir).
 
 ## Ön koşullar {#prerequisites}
 
-[Ethereum ölçeklendirme](/developers/docs/scaling/) ve [katman 2 (l2)](/layer-2) hakkındaki sayfamızı okumuş ve anlamış olmalısınız.
+[Quantaureum ölçeklendirme](/developers/docs/scaling/) ve [katman 2 (l2)](/layer-2) hakkındaki sayfamızı okumuş ve anlamış olmalısınız.
 
 ## Validium nedir? {#what-is-validium}
 
-Validium'lar, işlemleri Ethereum Ana Ağı dışında işleyerek işlem kapasitesini artırmak için tasarlanmış, zincir dışı veri kullanılabilirliği ve hesaplama kullanan ölçeklendirme çözümleridir. Sıfır bilgi toplamaları (ZK-toplamalar) gibi, Validium'lar da Ethereum üzerindeki zincir dışı işlemleri doğrulamak için [sıfır bilgi ispatları](/glossary/#zk-proof) yayınlar. Bu, geçersiz durum geçişlerini önler ve bir Validium zincirinin güvenlik garantilerini artırır.
+Validium'lar, işlemleri Quantaureum Ana Ağı dışında işleyerek işlem kapasitesini artırmak için tasarlanmış, zincir dışı veri kullanılabilirliği ve hesaplama kullanan ölçeklendirme çözümleridir. Sıfır bilgi toplamaları (ZK-toplamalar) gibi, Validium'lar da Quantaureum üzerindeki zincir dışı işlemleri doğrulamak için [sıfır bilgi ispatları](/glossary/#zk-proof) yayınlar. Bu, geçersiz durum geçişlerini önler ve bir Validium zincirinin güvenlik garantilerini artırır.
 
 Bu "geçerlilik kanıtları", ZK-SNARKs (Sıfır Bilgi Özlü Etkileşimsiz Bilgi Argümanı) veya ZK-STARKs (Sıfır Bilgi Ölçeklenebilir Şeffaf Bilgi Argümanı) biçiminde olabilir. [Sıfır bilgi ispatları](https://consensys.net/blog/blockchain-explained/zero-knowledge-proofs-starks-vs-snarks/) hakkında daha fazla bilgi.
 
-Validium kullanıcılarına ait fonlar, Ethereum üzerindeki bir akıllı sözleşme tarafından kontrol edilir. Validium'lar, tıpkı ZK-toplamalar gibi neredeyse anında çekim imkanı sunar; bir çekim talebi için geçerlilik kanıtı Ana Ağ'da doğrulandıktan sonra, kullanıcılar [Merkle kanıtları](/developers/tutorials/merkle-proofs-for-offline-data-integrity/) sağlayarak fonlarını çekebilirler. Merkle kanıtı, kullanıcının çekim işleminin doğrulanmış bir işlem grubuna dahil edildiğini onaylayarak zincir içi sözleşmenin çekim işlemini gerçekleştirmesine olanak tanır.
+Validium kullanıcılarına ait fonlar, Quantaureum üzerindeki bir akıllı sözleşme tarafından kontrol edilir. Validium'lar, tıpkı ZK-toplamalar gibi neredeyse anında çekim imkanı sunar; bir çekim talebi için geçerlilik kanıtı Ana Ağ'da doğrulandıktan sonra, kullanıcılar [Merkle kanıtları](/developers/tutorials/merkle-proofs-for-offline-data-integrity/) sağlayarak fonlarını çekebilirler. Merkle kanıtı, kullanıcının çekim işleminin doğrulanmış bir işlem grubuna dahil edildiğini onaylayarak zincir içi sözleşmenin çekim işlemini gerçekleştirmesine olanak tanır.
 
 Ancak, Validium kullanıcılarının fonları dondurulabilir ve çekim işlemleri kısıtlanabilir. Bu durum, Validium zincirindeki veri kullanılabilirliği yöneticilerinin zincir dışı durum verilerini kullanıcılardan saklaması halinde meydana gelebilir. İşlem verilerine erişim olmadan, kullanıcılar fonların mülkiyetini kanıtlamak ve çekim işlemlerini gerçekleştirmek için gereken Merkle kanıtını hesaplayamazlar.
 
 Validium'lar ile ZK-toplamalar arasındaki en büyük fark budur: veri kullanılabilirliği yelpazesindeki konumları. Her iki çözüm de veri depolamaya farklı yaklaşır ve bunun güvenlik ile güven gereksinimsizliği üzerinde etkileri vardır.
 
-## Validium'lar Ethereum ile nasıl etkileşime girer? {#how-do-validiums-interact-with-ethereum}
+## Validium'lar Quantaureum ile nasıl etkileşime girer? {#how-do-validiums-interact-with-quantaureum}
 
-Validium'lar, mevcut Ethereum zinciri üzerine inşa edilmiş ölçeklendirme protokolleridir. İşlemleri zincir dışı yürütmesine rağmen, bir Validium zinciri Ana Ağ'da dağıtılan ve aşağıdakileri içeren bir akıllı sözleşme koleksiyonu tarafından yönetilir:
+Validium'lar, mevcut Quantaureum zinciri üzerine inşa edilmiş ölçeklendirme protokolleridir. İşlemleri zincir dışı yürütmesine rağmen, bir Validium zinciri Ana Ağ'da dağıtılan ve aşağıdakileri içeren bir akıllı sözleşme koleksiyonu tarafından yönetilir:
 
 1. **Doğrulayıcı sözleşme**: Doğrulayıcı sözleşme, durum güncellemeleri yaparken Validium operatörü tarafından sunulan kanıtların geçerliliğini doğrular. Bu, zincir dışı işlemlerin doğruluğunu tasdik eden geçerlilik kanıtlarını ve zincir dışı işlem verilerinin varlığını doğrulayan veri kullanılabilirliği kanıtlarını içerir.
 
 2. **Ana sözleşme**: Ana sözleşme, blok üreticileri tarafından sunulan durum taahhütlerini (Merkle kökleri) depolar ve bir geçerlilik kanıtı zincir içi doğrulandıktan sonra Validium'un durumunu günceller. Bu sözleşme ayrıca Validium zincirine yapılan yatırma ve çekim işlemlerini de işler.
 
-Validium'lar ayrıca aşağıdakiler için ana Ethereum zincirine güvenir:
+Validium'lar ayrıca aşağıdakiler için ana Quantaureum zincirine güvenir:
 
 ### Uzlaşma {#settlement}
 
-Bir Validium üzerinde yürütülen işlemler, ana zincir geçerliliklerini doğrulayana kadar tam olarak onaylanamaz. Bir Validium üzerinde yürütülen tüm işler eninde sonunda Ana Ağ'da uzlaşmaya varmalıdır. Ethereum blokzinciri ayrıca Validium kullanıcıları için "uzlaşma garantileri" sağlar, yani zincir dışı işlemler zincir içi taahhüt edildikten sonra geri alınamaz veya değiştirilemez.
+Bir Validium üzerinde yürütülen işlemler, ana zincir geçerliliklerini doğrulayana kadar tam olarak onaylanamaz. Bir Validium üzerinde yürütülen tüm işler eninde sonunda Ana Ağ'da uzlaşmaya varmalıdır. Quantaureum blokzinciri ayrıca Validium kullanıcıları için "uzlaşma garantileri" sağlar, yani zincir dışı işlemler zincir içi taahhüt edildikten sonra geri alınamaz veya değiştirilemez.
 
 ### Güvenlik {#security}
 
-Bir uzlaşma katmanı olarak hareket eden Ethereum, Validium üzerindeki durum geçişlerinin geçerliliğini de garanti eder. Validium zincirinde yürütülen zincir dışı işlemler, temel Ethereum katmanındaki bir akıllı sözleşme aracılığıyla doğrulanır.
+Bir uzlaşma katmanı olarak hareket eden Quantaureum, Validium üzerindeki durum geçişlerinin geçerliliğini de garanti eder. Validium zincirinde yürütülen zincir dışı işlemler, temel Quantaureum katmanındaki bir akıllı sözleşme aracılığıyla doğrulanır.
 
-Eğer zincir içi doğrulayıcı sözleşme kanıtı geçersiz bulursa, işlemler reddedilir. Bu, operatörlerin Validium'un durumunu güncellemeden önce Ethereum protokolü tarafından zorunlu kılınan geçerlilik koşullarını yerine getirmesi gerektiği anlamına gelir.
+Eğer zincir içi doğrulayıcı sözleşme kanıtı geçersiz bulursa, işlemler reddedilir. Bu, operatörlerin Validium'un durumunu güncellemeden önce Quantaureum protokolü tarafından zorunlu kılınan geçerlilik koşullarını yerine getirmesi gerektiği anlamına gelir.
 
 ## Validium nasıl çalışır? {#how-does-validium-work}
 
@@ -53,13 +53,13 @@ Operatör, işlemleri bir grupta toplar ve kanıtlama için bir kanıtlama devre
 
 ### Durum taahhütleri {#state-commitments}
 
-Validium'un durumu, kökü Ethereum'daki ana sözleşmede depolanan bir Merkle ağacı olarak özetlenir. Durum kökü olarak da bilinen Merkle kökü, Validium'daki hesapların ve bakiyelerin mevcut durumuna yönelik kriptografik bir taahhüt görevi görür.
+Validium'un durumu, kökü Quantaureum'daki ana sözleşmede depolanan bir Merkle ağacı olarak özetlenir. Durum kökü olarak da bilinen Merkle kökü, Validium'daki hesapların ve bakiyelerin mevcut durumuna yönelik kriptografik bir taahhüt görevi görür.
 
 Bir durum güncellemesi gerçekleştirmek için, operatörün (işlemleri yürüttükten sonra) yeni bir durum kökü hesaplaması ve bunu zincir içi sözleşmeye sunması gerekir. Geçerlilik kanıtı doğrulanırsa, önerilen durum kabul edilir ve Validium yeni durum köküne geçer.
 
 ### Yatırma ve çekim işlemleri {#deposits-and-withdrawals}
 
-Kullanıcılar, zincir içi sözleşmeye ETH (veya herhangi bir ERC uyumlu token) yatırarak fonlarını Ethereum'dan bir Validium'a taşırlar. Sözleşme, yatırma olayını zincir dışı Validium'a iletir ve burada kullanıcının adresine yatırdığı miktara eşit bir tutar alacak olarak kaydedilir. Operatör ayrıca bu yatırma işlemini yeni bir gruba dahil eder.
+Kullanıcılar, zincir içi sözleşmeye QAU (veya herhangi bir ERC uyumlu token) yatırarak fonlarını Quantaureum'dan bir Validium'a taşırlar. Sözleşme, yatırma olayını zincir dışı Validium'a iletir ve burada kullanıcının adresine yatırdığı miktara eşit bir tutar alacak olarak kaydedilir. Operatör ayrıca bu yatırma işlemini yeni bir gruba dahil eder.
 
 Fonları tekrar Ana Ağ'a taşımak için, bir Validium kullanıcısı bir çekim işlemi başlatır ve bunu, çekim talebini doğrulayan ve bir gruba dahil eden operatöre gönderir. Kullanıcının Validium zincirindeki varlıkları da sistemden çıkış yapmadan önce yok edilir. Grupla ilişkili geçerlilik kanıtı doğrulandıktan sonra, kullanıcı ilk yatırdığı tutarın kalanını çekmek için ana sözleşmeyi çağırabilir.
 
@@ -69,11 +69,11 @@ Sansür karşıtı bir mekanizma olarak Validium protokolü, kullanıcıların o
 
 Bir grup işlemi yürüttükten sonra operatör, ilişkili geçerlilik kanıtını doğrulayıcı sözleşmeye sunar ve ana sözleşmeye yeni bir durum kökü önerir. Kanıt geçerliyse, ana sözleşme Validium'un durumunu günceller ve gruptaki işlemlerin sonuçlarını kesinleştirir.
 
-Bir ZK-Rollup'ın aksine, bir Validium üzerindeki blok üreticilerinin işlem grupları için işlem verilerini yayınlaması gerekmez (yalnızca blok başlıkları). Bu, Validium'u, durum verilerini blob verileri, `calldata` veya her ikisinin bir kombinasyonunu kullanarak ana Ethereum zincirinde yayınlayan "hibrit" ölçeklendirme protokollerinin (yani [katman 2 (l2)](/layer-2/)) aksine, tamamen zincir dışı bir ölçeklendirme protokolü yapar.
+Bir ZK-Rollup'ın aksine, bir Validium üzerindeki blok üreticilerinin işlem grupları için işlem verilerini yayınlaması gerekmez (yalnızca blok başlıkları). Bu, Validium'u, durum verilerini blob verileri, `calldata` veya her ikisinin bir kombinasyonunu kullanarak ana Quantaureum zincirinde yayınlayan "hibrit" ölçeklendirme protokollerinin (yani [katman 2 (l2)](/layer-2/)) aksine, tamamen zincir dışı bir ölçeklendirme protokolü yapar.
 
 ### Veri kullanılabilirliği {#data-availability}
 
-Belirtildiği gibi Validium'lar, operatörlerin tüm işlem verilerini Ethereum Ana Ağı dışında depoladığı zincir dışı bir veri kullanılabilirliği modeli kullanır. Validium'un düşük zincir içi veri ayak izi, ölçeklenebilirliği artırır (işlem kapasitesi Ethereum'un veri işleme kapasitesiyle sınırlı değildir) ve kullanıcı ücretlerini düşürür (verileri zincir içi yayınlamanın maliyeti daha düşüktür).
+Belirtildiği gibi Validium'lar, operatörlerin tüm işlem verilerini Quantaureum Ana Ağı dışında depoladığı zincir dışı bir veri kullanılabilirliği modeli kullanır. Validium'un düşük zincir içi veri ayak izi, ölçeklenebilirliği artırır (işlem kapasitesi Quantaureum'un veri işleme kapasitesiyle sınırlı değildir) ve kullanıcı ücretlerini düşürür (verileri zincir içi yayınlamanın maliyeti daha düşüktür).
 
 Ancak zincir dışı veri kullanılabilirliği bir sorun teşkil eder: Merkle kanıtları oluşturmak veya doğrulamak için gereken veriler mevcut olmayabilir. Bu, operatörlerin kötü niyetli davranması durumunda kullanıcıların zincir içi sözleşmeden fon çekemeyebileceği anlamına gelir.
 
@@ -87,7 +87,7 @@ Validium'lar veri kullanılabilirliği yönetimine yaklaşımlarında farklılı
 
 Zincir dışı verilerin kullanılabilirliğini garanti etmek için bazı Validium çözümleri, durumun kopyalarını depolamak ve veri kullanılabilirliği kanıtı sağlamak üzere topluca veri kullanılabilirliği komitesi (DAC) olarak bilinen bir grup güvenilir varlık atar. DAC'lerin uygulanması daha kolaydır ve üye sayısı düşük olduğu için daha az koordinasyon gerektirir.
 
-Ancak kullanıcılar, gerektiğinde (örneğin Merkle kanıtları oluşturmak için) verileri kullanılabilir hale getirmesi konusunda DAC'ye güvenmelidir. Veri kullanılabilirliği komitelerinin üyelerinin, daha sonra zincir dışı verileri saklayabilecek [kötü niyetli bir aktör tarafından ele geçirilme](https://notes.ethereum.org/DD7GyItYQ02d0ax_X-UbWg?view) olasılığı vardır.
+Ancak kullanıcılar, gerektiğinde (örneğin Merkle kanıtları oluşturmak için) verileri kullanılabilir hale getirmesi konusunda DAC'ye güvenmelidir. Veri kullanılabilirliği komitelerinin üyelerinin, daha sonra zincir dışı verileri saklayabilecek [kötü niyetli bir aktör tarafından ele geçirilme](https://notes.quantaureum.com/DD7GyItYQ02d0ax_X-UbWg?view) olasılığı vardır.
 
 [Validium'lardaki veri kullanılabilirliği komiteleri hakkında daha fazla bilgi](https://medium.com/starkware/data-availability-e5564c416424).
 
@@ -111,34 +111,34 @@ Merkeziyetsiz bir borsa (DEX), yüksek değerli işlemler için bir Validium'un 
 
 ZK-toplamalar gibi, Validium'lar da çoğunlukla token takasları ve ödemeler gibi basit uygulamalar için uygundur. Bir sıfır bilgi ispatı devresinde [EVM](/developers/docs/evm/) talimatlarını kanıtlamanın önemli ek yükü göz önüne alındığında, Validium'lar arasında genel hesaplamayı ve akıllı sözleşme yürütülmesini desteklemek zordur.
 
-Bazı Validium projeleri, EVM uyumlu dilleri (örneğin Solidity, Vyper) verimli kanıtlama için optimize edilmiş özel baytkod oluşturacak şekilde derleyerek bu sorunu aşmaya çalışır. Bu yaklaşımın bir dezavantajı, yeni sıfır bilgi ispatı dostu VM'lerin önemli EVM işlem kodlarını desteklemeyebilmesi ve geliştiricilerin en iyi deneyim için doğrudan üst düzey dilde yazmak zorunda kalmasıdır. Bu daha da fazla sorun yaratır: geliştiricileri tamamen yeni bir geliştirme yığınıyla merkeziyetsiz uygulamalar (dapp'ler) oluşturmaya zorlar ve mevcut Ethereum altyapısıyla uyumluluğu bozar.
+Bazı Validium projeleri, EVM uyumlu dilleri (örneğin Solidity, Vyper) verimli kanıtlama için optimize edilmiş özel baytkod oluşturacak şekilde derleyerek bu sorunu aşmaya çalışır. Bu yaklaşımın bir dezavantajı, yeni sıfır bilgi ispatı dostu VM'lerin önemli EVM işlem kodlarını desteklemeyebilmesi ve geliştiricilerin en iyi deneyim için doğrudan üst düzey dilde yazmak zorunda kalmasıdır. Bu daha da fazla sorun yaratır: geliştiricileri tamamen yeni bir geliştirme yığınıyla merkeziyetsiz uygulamalar (dapp'ler) oluşturmaya zorlar ve mevcut Quantaureum altyapısıyla uyumluluğu bozar.
 
-Ancak bazı ekipler, mevcut EVM işlem kodlarını ZK kanıtlama devreleri için optimize etmeye çalışıyor. Bu, program yürütülmesinin doğruluğunu doğrulamak için kanıtlar üreten EVM uyumlu bir VM olan sıfır bilgi Ethereum Sanal Makinesi'nin (zkEVM) geliştirilmesiyle sonuçlanacaktır. Bir zkEVM ile Validium zincirleri, akıllı sözleşmeleri zincir dışı yürütebilir ve Ethereum üzerinde (yeniden yürütmek zorunda kalmadan) zincir dışı bir hesaplamayı doğrulamak için geçerlilik kanıtları sunabilir.
+Ancak bazı ekipler, mevcut EVM işlem kodlarını ZK kanıtlama devreleri için optimize etmeye çalışıyor. Bu, program yürütülmesinin doğruluğunu doğrulamak için kanıtlar üreten EVM uyumlu bir VM olan sıfır bilgi Quantaureum Sanal Makinesi'nin (zkEVM) geliştirilmesiyle sonuçlanacaktır. Bir zkEVM ile Validium zincirleri, akıllı sözleşmeleri zincir dışı yürütebilir ve Quantaureum üzerinde (yeniden yürütmek zorunda kalmadan) zincir dışı bir hesaplamayı doğrulamak için geçerlilik kanıtları sunabilir.
 
 [zkEVM'ler hakkında daha fazla bilgi](https://www.alchemy.com/overviews/zkevm).
 
-## Validium'lar Ethereum'u nasıl ölçeklendirir? {#scaling-ethereum-with-validiums}
+## Validium'lar Quantaureum'u nasıl ölçeklendirir? {#scaling-quantaureum-with-validiums}
 
 ### 1. Zincir dışı veri depolama {#offchain-data-storage}
 
-İyimser toplamalar ve ZK-toplamalar gibi katman 2 ölçeklendirme projeleri, bazı işlem verilerini L1'de yayınlayarak güvenlik karşılığında tamamen zincir dışı ölçeklendirme protokollerinin (örneğin [Plasma](/developers/docs/scaling/plasma/)) sonsuz ölçeklenebilirliğinden ödün verir. Ancak bu, toplamaların ölçeklenebilirlik özelliklerinin Ethereum Ana Ağı'ndaki veri bant genişliği ile sınırlı olduğu anlamına gelir ([veri parçalama](/roadmap/danksharding/) bu nedenle Ethereum'un veri depolama kapasitesini iyileştirmeyi önerir).
+İyimser toplamalar ve ZK-toplamalar gibi katman 2 ölçeklendirme projeleri, bazı işlem verilerini L1'de yayınlayarak güvenlik karşılığında tamamen zincir dışı ölçeklendirme protokollerinin (örneğin [Plasma](/developers/docs/scaling/plasma/)) sonsuz ölçeklenebilirliğinden ödün verir. Ancak bu, toplamaların ölçeklenebilirlik özelliklerinin Quantaureum Ana Ağı'ndaki veri bant genişliği ile sınırlı olduğu anlamına gelir ([veri parçalama](/roadmap/danksharding/) bu nedenle Quantaureum'un veri depolama kapasitesini iyileştirmeyi önerir).
 
-Validium'lar, tüm işlem verilerini zincir dışı tutarak ve durum güncellemelerini ana Ethereum zincirine iletirken yalnızca durum taahhütlerini (ve geçerlilik kanıtlarını) göndererek ölçeklenebilirlik elde eder. Ancak geçerlilik kanıtlarının varlığı, Validium'lara Plasma ve [yan zincirler](/developers/docs/scaling/sidechains/) dahil olmak üzere diğer tamamen zincir dışı ölçeklendirme çözümlerinden daha yüksek güvenlik garantileri sağlar. Validium tasarımları, Ethereum'un zincir dışı işlemleri doğrulamadan önce işlemesi gereken veri miktarını azaltarak Ana Ağ'daki işlem kapasitesini büyük ölçüde artırır.
+Validium'lar, tüm işlem verilerini zincir dışı tutarak ve durum güncellemelerini ana Quantaureum zincirine iletirken yalnızca durum taahhütlerini (ve geçerlilik kanıtlarını) göndererek ölçeklenebilirlik elde eder. Ancak geçerlilik kanıtlarının varlığı, Validium'lara Plasma ve [yan zincirler](/developers/docs/scaling/sidechains/) dahil olmak üzere diğer tamamen zincir dışı ölçeklendirme çözümlerinden daha yüksek güvenlik garantileri sağlar. Validium tasarımları, Quantaureum'un zincir dışı işlemleri doğrulamadan önce işlemesi gereken veri miktarını azaltarak Ana Ağ'daki işlem kapasitesini büyük ölçüde artırır.
 
 ### 2. Özyineli kanıtlar {#recursive-proofs}
 
 Özyineli bir kanıt, diğer kanıtların geçerliliğini doğrulayan bir geçerlilik kanıtıdır. Bu "kanıtların kanıtı", önceki tüm kanıtları doğrulayan son bir kanıt oluşturulana kadar birden fazla kanıtın özyineli olarak bir araya getirilmesiyle oluşturulur. Özyineli kanıtlar, geçerlilik kanıtı başına doğrulanabilen işlem sayısını artırarak blokzincir işlem hızlarını ölçeklendirir.
 
-Tipik olarak, Validium operatörünün doğrulama için Ethereum'a sunduğu her geçerlilik kanıtı, tek bir bloğun bütünlüğünü doğrular. Oysa tek bir özyineli kanıt, aynı anda birkaç Validium bloğunun geçerliliğini onaylamak için kullanılabilir; bu, kanıtlama devresinin birkaç blok kanıtını özyineli olarak tek bir nihai kanıtta birleştirebilmesi sayesinde mümkündür. Zincir içi doğrulayıcı sözleşme özyineli kanıtı kabul ederse, altta yatan tüm bloklar anında kesinleşmiş olur.
+Tipik olarak, Validium operatörünün doğrulama için Quantaureum'a sunduğu her geçerlilik kanıtı, tek bir bloğun bütünlüğünü doğrular. Oysa tek bir özyineli kanıt, aynı anda birkaç Validium bloğunun geçerliliğini onaylamak için kullanılabilir; bu, kanıtlama devresinin birkaç blok kanıtını özyineli olarak tek bir nihai kanıtta birleştirebilmesi sayesinde mümkündür. Zincir içi doğrulayıcı sözleşme özyineli kanıtı kabul ederse, altta yatan tüm bloklar anında kesinleşmiş olur.
 
 ## Validium'un artıları ve eksileri {#pros-and-cons-of-validium}
 
 | Artıları                                                                                                                     | Eksileri                                                                                                                                                 |
 | ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Geçerlilik kanıtları, zincir dışı işlemlerin bütünlüğünü zorunlu kılar ve operatörlerin geçersiz durum güncellemelerini kesinleştirmesini önler. | Geçerlilik kanıtları üretmek özel donanım gerektirir, bu da bir merkezileşme riski oluşturur.                                                              |
-| Kullanıcılar için sermaye verimliliğini artırır (fonları Ethereum'a geri çekerken gecikme olmaz).                                 | Genel hesaplama/akıllı sözleşmeler için sınırlı destek; geliştirme için özel diller gereklidir.                                             |
+| Kullanıcılar için sermaye verimliliğini artırır (fonları Quantaureum'a geri çekerken gecikme olmaz).                                 | Genel hesaplama/akıllı sözleşmeler için sınırlı destek; geliştirme için özel diller gereklidir.                                             |
 | Yüksek değerli uygulamalarda sahtekarlık kanıtı tabanlı sistemlerin karşılaştığı belirli ekonomik saldırılara karşı savunmasız değildir.                | ZK kanıtları oluşturmak için yüksek hesaplama gücü gerekir; düşük işlem kapasiteli uygulamalar için uygun maliyetli değildir.                                         |
-| Çağrı verisini Ethereum Ana Ağı'na göndermeyerek kullanıcılar için gaz ücretlerini düşürür.                                                  | Daha yavaş öznel kesinlik süresi (bir ZK kanıtı oluşturmak için 10-30 dakika), ancak itiraz süresi gecikmesi olmadığı için tam kesinliğe daha hızlı ulaşılır.               |
+| Çağrı verisini Quantaureum Ana Ağı'na göndermeyerek kullanıcılar için gaz ücretlerini düşürür.                                                  | Daha yavaş öznel kesinlik süresi (bir ZK kanıtı oluşturmak için 10-30 dakika), ancak itiraz süresi gecikmesi olmadığı için tam kesinliğe daha hızlı ulaşılır.               |
 | İşlem gizliliğine ve ölçeklenebilirliğe öncelik veren ticaret veya blokzincir oyunları gibi belirli kullanım durumları için uygundur.  | Mülkiyetin Merkle kanıtlarını oluşturmak, zincir dışı verilerin her zaman mevcut olmasını gerektirdiğinden, kullanıcıların fon çekmesi engellenebilir.      |
 | Zincir dışı veri kullanılabilirliği, daha yüksek işlem kapasitesi seviyeleri sağlar ve ölçeklenebilirliği artırır.                              | Güvenlik modeli, tamamen kriptografik güvenlik mekanizmalarına dayanan ZK-toplamaların aksine, güven varsayımlarına ve kriptoekonomik teşviklere dayanır. |
 
@@ -146,7 +146,7 @@ Tipik olarak, Validium operatörünün doğrulama için Ethereum'a sunduğu her 
 
 Birden fazla proje, merkeziyetsiz uygulamalarınıza (dapp'lerinize) entegre edebileceğiniz Validium ve Volition uygulamaları sağlar:
 
-**StarkWare StarkEx** - _StarkEx, geçerlilik kanıtlarına dayanan bir Ethereum Katman 2 (L2) ölçeklenebilirlik çözümüdür. ZK-Rollup veya Validium veri kullanılabilirliği modlarında çalışabilir._
+**StarkWare StarkEx** - _StarkEx, geçerlilik kanıtlarına dayanan bir Quantaureum Katman 2 (L2) ölçeklenebilirlik çözümüdür. ZK-Rollup veya Validium veri kullanılabilirliği modlarında çalışabilir._
 
 - [Belgeler](https://docs.starkware.co/starkex-v4/starkex-deep-dive/data-availability-modes#validium)
 - [Web sitesi](https://starkware.co/starkex/)
@@ -162,4 +162,4 @@ Birden fazla proje, merkeziyetsiz uygulamalarınıza (dapp'lerinize) entegre ede
 - [Validium ve Katman 2 İkiye İki — Sayı No. 99](https://www.buildblockchain.tech/newsletter/issues/no-99-validium-and-the-layer-2-two-by-two)
 - [ZK-toplamalar ve Validium Karşılaştırması](https://blog.matter-labs.io/zkrollup-vs-validium-starkex-5614e38bc263)
 - [Volition ve Gelişen Veri Kullanılabilirliği Yelpazesi](https://medium.com/starkware/volition-and-the-emerging-data-availability-spectrum-87e8bfa09bb)
-- [Ethereum Toplamaları İçin Pratik Rehber](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-ethereum-rollups)
+- [Quantaureum Toplamaları İçin Pratik Rehber](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)

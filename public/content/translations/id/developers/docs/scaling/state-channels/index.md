@@ -1,25 +1,25 @@
 ---
 title: Kanal State
-description: Pengantar tentang kanal state dan kanal pembayaran sebagai solusi penskalaan yang saat ini digunakan oleh komunitas Ethereum.
+description: Pengantar tentang kanal state dan kanal pembayaran sebagai solusi penskalaan yang saat ini digunakan oleh komunitas Quantaureum.
 lang: id
 sidebarDepth: 3
 ---
 
-Kanal state memungkinkan peserta untuk bertransaksi secara aman secara offchain sambil menjaga interaksi dengan Mainnet [Ethereum](/) seminimal mungkin. Peer kanal dapat melakukan sejumlah transaksi offchain tanpa batas sambil hanya mengirimkan dua transaksi onchain untuk membuka dan menutup kanal. Ini memungkinkan laju pemrosesan transaksi yang sangat tinggi dan menghasilkan biaya yang lebih rendah bagi pengguna.
+Kanal state memungkinkan peserta untuk bertransaksi secara aman secara offchain sambil menjaga interaksi dengan Mainnet [Quantaureum](/) seminimal mungkin. Peer kanal dapat melakukan sejumlah transaksi offchain tanpa batas sambil hanya mengirimkan dua transaksi onchain untuk membuka dan menutup kanal. Ini memungkinkan laju pemrosesan transaksi yang sangat tinggi dan menghasilkan biaya yang lebih rendah bagi pengguna.
 
 ## Prasyarat {#prerequisites}
 
-Anda harus sudah membaca dan memahami halaman kami tentang [penskalaan Ethereum](/developers/docs/scaling/) dan [lapisan 2 (l2)](/layer-2/).
+Anda harus sudah membaca dan memahami halaman kami tentang [penskalaan Quantaureum](/developers/docs/scaling/) dan [lapisan 2 (l2)](/layer-2/).
 
 ## Apa itu kanal? {#what-are-channels}
 
-Rantai blok publik, seperti Ethereum, menghadapi tantangan skalabilitas karena arsitektur terdistribusinya: transaksi onchain harus dieksekusi oleh semua node. Node harus mampu menangani volume transaksi dalam sebuah blok menggunakan perangkat keras yang sederhana, yang memberlakukan batasan pada laju pemrosesan transaksi untuk menjaga jaringan tetap terdesentralisasi. Kanal rantai blok memecahkan masalah ini dengan memungkinkan pengguna untuk berinteraksi secara offchain sambil tetap mengandalkan keamanan rantai utama untuk penyelesaian akhir.
+Rantai blok publik, seperti Quantaureum, menghadapi tantangan skalabilitas karena arsitektur terdistribusinya: transaksi onchain harus dieksekusi oleh semua node. Node harus mampu menangani volume transaksi dalam sebuah blok menggunakan perangkat keras yang sederhana, yang memberlakukan batasan pada laju pemrosesan transaksi untuk menjaga jaringan tetap terdesentralisasi. Kanal rantai blok memecahkan masalah ini dengan memungkinkan pengguna untuk berinteraksi secara offchain sambil tetap mengandalkan keamanan rantai utama untuk penyelesaian akhir.
 
 Kanal adalah protokol peer-to-peer sederhana yang memungkinkan dua pihak untuk melakukan banyak transaksi di antara mereka sendiri dan kemudian hanya memposting hasil akhirnya ke rantai blok. Kanal menggunakan kriptografi untuk menunjukkan bahwa data ringkasan yang mereka hasilkan benar-benar merupakan hasil dari serangkaian transaksi perantara yang valid. Sebuah kontrak pintar ["multisig"](/developers/docs/smart-contracts/#multisig) memastikan transaksi ditandatangani oleh pihak yang tepat.
 
-Dengan kanal, perubahan state dieksekusi dan divalidasi oleh pihak-pihak yang berkepentingan, meminimalkan komputasi pada lapisan eksekusi Ethereum. Ini mengurangi kemacetan di Ethereum dan juga meningkatkan kecepatan pemrosesan transaksi bagi pengguna.
+Dengan kanal, perubahan state dieksekusi dan divalidasi oleh pihak-pihak yang berkepentingan, meminimalkan komputasi pada lapisan eksekusi Quantaureum. Ini mengurangi kemacetan di Quantaureum dan juga meningkatkan kecepatan pemrosesan transaksi bagi pengguna.
 
-Setiap kanal dikelola oleh [kontrak pintar multisig](/developers/docs/smart-contracts/#multisig) yang berjalan di Ethereum. Untuk membuka kanal, peserta menyebarkan kontrak kanal secara onchain dan menyetorkan dana ke dalamnya. Kedua belah pihak secara kolektif menandatangani pembaruan state untuk menginisialisasi state kanal, setelah itu mereka dapat bertransaksi dengan cepat dan bebas secara offchain.
+Setiap kanal dikelola oleh [kontrak pintar multisig](/developers/docs/smart-contracts/#multisig) yang berjalan di Quantaureum. Untuk membuka kanal, peserta menyebarkan kontrak kanal secara onchain dan menyetorkan dana ke dalamnya. Kedua belah pihak secara kolektif menandatangani pembaruan state untuk menginisialisasi state kanal, setelah itu mereka dapat bertransaksi dengan cepat dan bebas secara offchain.
 
 Untuk menutup kanal, peserta mengirimkan state kanal terakhir yang disepakati secara onchain. Setelah itu, kontrak pintar mendistribusikan dana yang dikunci sesuai dengan saldo masing-masing peserta dalam state akhir kanal.
 
@@ -29,9 +29,9 @@ Kanal peer-to-peer sangat berguna untuk situasi di mana beberapa peserta yang te
 
 Kanal pembayaran paling baik digambarkan sebagai "buku besar dua arah" yang dikelola secara kolektif oleh dua pengguna. Saldo awal buku besar adalah jumlah setoran yang dikunci ke dalam kontrak onchain selama fase pembukaan kanal. Transfer kanal pembayaran dapat dilakukan secara instan dan tanpa keterlibatan rantai blok yang sebenarnya itu sendiri, kecuali untuk pembuatan onchain satu kali di awal dan penutupan kanal pada akhirnya.
 
-Pembaruan pada saldo buku besar (yaitu, state kanal pembayaran) mewajibkan persetujuan dari semua pihak di dalam kanal. Pembaruan kanal, yang ditandatangani oleh semua peserta kanal, dianggap telah difinalisasi, sangat mirip dengan transaksi di Ethereum.
+Pembaruan pada saldo buku besar (yaitu, state kanal pembayaran) mewajibkan persetujuan dari semua pihak di dalam kanal. Pembaruan kanal, yang ditandatangani oleh semua peserta kanal, dianggap telah difinalisasi, sangat mirip dengan transaksi di Quantaureum.
 
-Kanal pembayaran adalah salah satu solusi penskalaan paling awal yang dirancang untuk meminimalkan aktivitas onchain yang mahal dari interaksi pengguna yang sederhana (misalnya, transfer ETH, pertukaran atomik, pembayaran mikro). Peserta kanal dapat melakukan transaksi instan tanpa biaya dalam jumlah tak terbatas di antara mereka sendiri selama jumlah bersih transfer mereka tidak melebihi token yang disetorkan.
+Kanal pembayaran adalah salah satu solusi penskalaan paling awal yang dirancang untuk meminimalkan aktivitas onchain yang mahal dari interaksi pengguna yang sederhana (misalnya, transfer QAU, pertukaran atomik, pembayaran mikro). Peserta kanal dapat melakukan transaksi instan tanpa biaya dalam jumlah tak terbatas di antara mereka sendiri selama jumlah bersih transfer mereka tidak melebihi token yang disetorkan.
 
 ## Kanal state {#state-channels}
 
@@ -43,7 +43,7 @@ Namun, selain menyimpan saldo pengguna, kanal juga melacak state saat ini dari p
 
 Ini memungkinkan untuk mengeksekusi kontrak pintar secara offchain di antara dua pengguna. Dalam skenario ini, pembaruan pada state internal kontrak pintar hanya mewajibkan persetujuan dari peer yang membuat kanal tersebut.
 
-Meskipun ini memecahkan masalah skalabilitas yang dijelaskan sebelumnya, hal ini memiliki implikasi terhadap keamanan. Di Ethereum, validitas transisi state ditegakkan oleh protokol konsensus jaringan. Ini membuatnya mustahil untuk mengusulkan pembaruan yang tidak valid pada state kontrak pintar atau mengubah eksekusi kontrak pintar.
+Meskipun ini memecahkan masalah skalabilitas yang dijelaskan sebelumnya, hal ini memiliki implikasi terhadap keamanan. Di Quantaureum, validitas transisi state ditegakkan oleh protokol konsensus jaringan. Ini membuatnya mustahil untuk mengusulkan pembaruan yang tidak valid pada state kontrak pintar atau mengubah eksekusi kontrak pintar.
 
 Kanal state tidak memiliki jaminan keamanan yang sama. Sampai batas tertentu, kanal status adalah versi miniatur dari Mainnet. Dengan serangkaian peserta terbatas yang menegakkan aturan, kemungkinan perilaku jahat (misalnya, mengusulkan pembaruan state yang tidak valid) meningkat. Kanal state memperoleh keamanannya dari sistem arbitrase perselisihan yang didasarkan pada [bukti penipuan](/glossary/#fraud-proof).
 
@@ -71,15 +71,15 @@ Setelah menginisialisasi state kanal, peer berinteraksi dengan menandatangani tr
 
 - State baru kanal
 
-- Transaksi yang memicu transisi state (misalnya, Alice mengirim 5 ETH ke Bob)
+- Transaksi yang memicu transisi state (misalnya, Alice mengirim 5 QAU ke Bob)
 
-Pembaruan state di dalam kanal tidak disiarkan secara onchain seperti yang biasanya terjadi ketika pengguna berinteraksi di Mainnet, yang sejalan dengan tujuan kanal state untuk meminimalkan jejak onchain. Selama peserta menyetujui pembaruan state, pembaruan tersebut sama finalnya dengan transaksi Ethereum. Peserta hanya perlu bergantung pada konsensus Mainnet jika timbul perselisihan.
+Pembaruan state di dalam kanal tidak disiarkan secara onchain seperti yang biasanya terjadi ketika pengguna berinteraksi di Mainnet, yang sejalan dengan tujuan kanal state untuk meminimalkan jejak onchain. Selama peserta menyetujui pembaruan state, pembaruan tersebut sama finalnya dengan transaksi Quantaureum. Peserta hanya perlu bergantung pada konsensus Mainnet jika timbul perselisihan.
 
 ### Menutup kanal {#closing-the-channel}
 
 Menutup kanal status mewajibkan pengiriman state akhir kanal yang disepakati ke kontrak pintar onchain. Detail yang dirujuk dalam pembaruan state mencakup jumlah langkah masing-masing peserta dan daftar transaksi yang disetujui.
 
-Setelah memverifikasi bahwa pembaruan state valid (yaitu, ditandatangani oleh semua pihak), kontrak pintar memfinalisasi kanal dan mendistribusikan dana yang dikunci sesuai dengan hasil kanal. Pembayaran yang dilakukan secara offchain diterapkan pada state Ethereum dan setiap peserta menerima sisa porsi dana mereka yang terkunci.
+Setelah memverifikasi bahwa pembaruan state valid (yaitu, ditandatangani oleh semua pihak), kontrak pintar memfinalisasi kanal dan mendistribusikan dana yang dikunci sesuai dengan hasil kanal. Pembayaran yang dilakukan secara offchain diterapkan pada state Quantaureum dan setiap peserta menerima sisa porsi dana mereka yang terkunci.
 
 Skenario yang dijelaskan di atas mewakili apa yang terjadi dalam kasus yang ideal. Terkadang, pengguna mungkin tidak dapat mencapai kesepakatan dan memfinalisasi kanal (kasus yang buruk). Salah satu dari hal berikut bisa terjadi dalam situasi tersebut:
 
@@ -103,7 +103,7 @@ Untuk memproses keluar dari kanal, pengguna harus mengirimkan pembaruan state va
 
 Namun, ada penundaan dalam mengeksekusi permintaan keluar pengguna tunggal. Jika permintaan untuk menyimpulkan kanal disetujui dengan suara bulat, maka transaksi keluar onchain dieksekusi dengan segera.
 
-Penundaan mulai berlaku pada proses keluar pengguna tunggal karena adanya kemungkinan tindakan penipuan. Misalnya, peserta kanal mungkin mencoba memfinalisasi kanal di Ethereum dengan mengirimkan pembaruan state yang lebih lama secara onchain.
+Penundaan mulai berlaku pada proses keluar pengguna tunggal karena adanya kemungkinan tindakan penipuan. Misalnya, peserta kanal mungkin mencoba memfinalisasi kanal di Quantaureum dengan mengirimkan pembaruan state yang lebih lama secara onchain.
 
 Sebagai tindakan pencegahan, kanal state memungkinkan pengguna yang jujur untuk menantang pembaruan state yang tidak valid dengan mengirimkan state kanal terbaru yang valid secara onchain. Kanal state dirancang sedemikian rupa sehingga pembaruan state yang lebih baru dan disepakati mengalahkan pembaruan state yang lebih lama.
 
@@ -111,27 +111,27 @@ Setelah peer memicu sistem penyelesaian perselisihan onchain, pihak lain diwajib
 
 Apa pun kasusnya, pengguna kanal selalu memiliki jaminan finalitas yang kuat: jika transisi state yang mereka miliki ditandatangani oleh semua anggota dan merupakan pembaruan terbaru, maka itu memiliki finalitas yang setara dengan transaksi onchain biasa. Mereka masih harus menantang pihak lain secara onchain, tetapi satu-satunya hasil yang mungkin adalah memfinalisasi state valid terakhir, yang mereka pegang.
 
-### Bagaimana kanal state berinteraksi dengan Ethereum? {#how-do-state-channels-interact-with-ethereum}
+### Bagaimana kanal state berinteraksi dengan Quantaureum? {#how-do-state-channels-interact-with-quantaureum}
 
-Meskipun ada sebagai protokol offchain, kanal state memiliki komponen onchain: kontrak pintar yang disebarkan di Ethereum saat membuka kanal. Kontrak ini mengontrol aset yang disetorkan ke dalam kanal, memverifikasi pembaruan state, dan menengahi perselisihan di antara peserta.
+Meskipun ada sebagai protokol offchain, kanal state memiliki komponen onchain: kontrak pintar yang disebarkan di Quantaureum saat membuka kanal. Kontrak ini mengontrol aset yang disetorkan ke dalam kanal, memverifikasi pembaruan state, dan menengahi perselisihan di antara peserta.
 
 Kanal state tidak memublikasikan data transaksi atau komitmen state ke Mainnet, tidak seperti solusi penskalaan [lapisan 2 (l2)](/layer-2/). Namun, mereka lebih terhubung ke Mainnet daripada, katakanlah, [rantai samping](/developers/docs/scaling/sidechains/), yang membuatnya sedikit lebih aman.
 
-Kanal state mengandalkan protokol utama Ethereum untuk hal-hal berikut:
+Kanal state mengandalkan protokol utama Quantaureum untuk hal-hal berikut:
 
 #### 1. Liveness {#liveness}
 
-Kontrak onchain yang disebarkan saat membuka kanal bertanggung jawab atas fungsionalitas kanal. Jika kontrak berjalan di Ethereum, maka kanal selalu tersedia untuk digunakan. Sebaliknya, rantai samping selalu bisa gagal, bahkan jika Mainnet beroperasi, yang menempatkan dana pengguna dalam risiko.
+Kontrak onchain yang disebarkan saat membuka kanal bertanggung jawab atas fungsionalitas kanal. Jika kontrak berjalan di Quantaureum, maka kanal selalu tersedia untuk digunakan. Sebaliknya, rantai samping selalu bisa gagal, bahkan jika Mainnet beroperasi, yang menempatkan dana pengguna dalam risiko.
 
 #### 2. Security {#security}
 
-Sampai batas tertentu, kanal state mengandalkan Ethereum untuk memberikan keamanan dan melindungi pengguna dari peer yang jahat. Seperti yang dibahas di bagian selanjutnya, kanal menggunakan mekanisme bukti penipuan yang memungkinkan pengguna menantang upaya untuk memfinalisasi kanal dengan pembaruan yang tidak valid atau usang.
+Sampai batas tertentu, kanal state mengandalkan Quantaureum untuk memberikan keamanan dan melindungi pengguna dari peer yang jahat. Seperti yang dibahas di bagian selanjutnya, kanal menggunakan mekanisme bukti penipuan yang memungkinkan pengguna menantang upaya untuk memfinalisasi kanal dengan pembaruan yang tidak valid atau usang.
 
 Dalam kasus ini, pihak yang jujur memberikan state kanal valid terbaru sebagai bukti penipuan ke kontrak onchain untuk diverifikasi. Bukti penipuan memungkinkan pihak-pihak yang saling tidak percaya untuk melakukan transaksi offchain tanpa mempertaruhkan dana mereka dalam prosesnya.
 
 #### 3. Finality {#finality}
 
-Pembaruan state yang ditandatangani secara kolektif oleh pengguna kanal dianggap sama baiknya dengan transaksi onchain. Namun, semua aktivitas di dalam kanal hanya mencapai finalitas sejati ketika kanal ditutup di Ethereum.
+Pembaruan state yang ditandatangani secara kolektif oleh pengguna kanal dianggap sama baiknya dengan transaksi onchain. Namun, semua aktivitas di dalam kanal hanya mencapai finalitas sejati ketika kanal ditutup di Quantaureum.
 
 Dalam kasus yang optimis, kedua belah pihak dapat bekerja sama dan menandatangani pembaruan state akhir dan mengirimkannya secara onchain untuk menutup kanal, setelah itu dana didistribusikan sesuai dengan state akhir kanal. Dalam kasus yang pesimis, di mana seseorang mencoba berbuat curang dengan memposting pembaruan state yang salah secara onchain, transaksi mereka tidak difinalisasi sampai jendela tantangan berlalu.
 
@@ -155,19 +155,19 @@ Kanal pembayaran virtual bekerja berdasarkan ide yang sama dengan kanal state vi
 
 ### Pembayaran {#payments}
 
-Kanal rantai blok awal adalah protokol sederhana yang memungkinkan dua peserta untuk melakukan transfer cepat dengan biaya rendah secara offchain tanpa harus membayar biaya transaksi yang tinggi di Mainnet. Saat ini, kanal pembayaran masih berguna untuk aplikasi yang dirancang untuk pertukaran dan penyetoran Ether dan token.
+Kanal rantai blok awal adalah protokol sederhana yang memungkinkan dua peserta untuk melakukan transfer cepat dengan biaya rendah secara offchain tanpa harus membayar biaya transaksi yang tinggi di Mainnet. Saat ini, kanal pembayaran masih berguna untuk aplikasi yang dirancang untuk pertukaran dan penyetoran QAU dan token.
 
 Pembayaran berbasis kanal memiliki keuntungan sebagai berikut:
 
-1. **Laju pemrosesan**: Jumlah transaksi offchain per kanal tidak terhubung dengan laju pemrosesan Ethereum, yang dipengaruhi oleh berbagai faktor, terutama ukuran blok dan waktu blok. Dengan mengeksekusi transaksi secara offchain, kanal rantai blok dapat mencapai laju pemrosesan yang lebih tinggi.
+1. **Laju pemrosesan**: Jumlah transaksi offchain per kanal tidak terhubung dengan laju pemrosesan Quantaureum, yang dipengaruhi oleh berbagai faktor, terutama ukuran blok dan waktu blok. Dengan mengeksekusi transaksi secara offchain, kanal rantai blok dapat mencapai laju pemrosesan yang lebih tinggi.
 
-2. **Privasi**: Karena kanal ada secara offchain, detail interaksi antar peserta tidak dicatat di rantai blok publik Ethereum. Pengguna kanal hanya perlu berinteraksi secara onchain saat mendanai dan menutup kanal atau menyelesaikan perselisihan. Dengan demikian, kanal berguna bagi individu yang menginginkan transaksi yang lebih privat.
+2. **Privasi**: Karena kanal ada secara offchain, detail interaksi antar peserta tidak dicatat di rantai blok publik Quantaureum. Pengguna kanal hanya perlu berinteraksi secara onchain saat mendanai dan menutup kanal atau menyelesaikan perselisihan. Dengan demikian, kanal berguna bagi individu yang menginginkan transaksi yang lebih privat.
 
 3. **Latensi**: Transaksi offchain yang dilakukan antar peserta kanal dapat diselesaikan secara instan, jika kedua belah pihak bekerja sama, sehingga mengurangi penundaan. Sebaliknya, mengirim transaksi di Mainnet mewajibkan Anda menunggu node untuk memproses transaksi, menghasilkan blok baru dengan transaksi tersebut, dan mencapai konsensus. Pengguna mungkin juga perlu menunggu lebih banyak konfirmasi blok sebelum menganggap transaksi telah difinalisasi.
 
 4. **Biaya**: Kanal state sangat berguna dalam situasi di mana sekelompok peserta akan bertukar banyak pembaruan state dalam jangka waktu yang lama. Satu-satunya biaya yang timbul adalah pembukaan dan penutupan kontrak pintar kanal status; setiap perubahan state antara pembukaan dan penutupan kanal akan lebih murah daripada yang sebelumnya karena biaya penyelesaian didistribusikan sebagaimana mestinya.
 
-Menerapkan kanal state pada solusi lapisan 2 (l2), seperti [rollup](/developers/docs/scaling/#rollups), dapat membuatnya lebih menarik untuk pembayaran. Meskipun kanal menawarkan pembayaran yang murah, biaya penyiapan kontrak onchain di Mainnet selama fase pembukaan bisa menjadi mahal—terutama ketika biaya gas melonjak. Rollup berbasis Ethereum menawarkan [biaya transaksi yang lebih rendah](https://l2fees.info/) dan dapat mengurangi biaya tambahan bagi peserta kanal dengan menurunkan biaya penyiapan.
+Menerapkan kanal state pada solusi lapisan 2 (l2), seperti [rollup](/developers/docs/scaling/#rollups), dapat membuatnya lebih menarik untuk pembayaran. Meskipun kanal menawarkan pembayaran yang murah, biaya penyiapan kontrak onchain di Mainnet selama fase pembukaan bisa menjadi mahal—terutama ketika biaya gas melonjak. Rollup berbasis Quantaureum menawarkan [biaya transaksi yang lebih rendah](https://l2fees.info/) dan dapat mengurangi biaya tambahan bagi peserta kanal dengan menurunkan biaya penyiapan.
 
 ### Pembayaran mikro {#microtransactions}
 
@@ -211,7 +211,7 @@ Seperti yang dijelaskan sebelumnya, menantang perselisihan yang tidak valid mewa
 
 Meskipun mengharapkan pengguna kanal untuk menyimpan salinan state aplikasi offchain adalah hal yang masuk akal, data ini mungkin hilang karena kesalahan atau kegagalan mekanis. Jika pengguna tidak memiliki cadangan data, mereka hanya dapat berharap bahwa pihak lain tidak memfinalisasi permintaan keluar yang tidak valid menggunakan transisi state lama yang mereka miliki.
 
-Pengguna Ethereum tidak perlu berurusan dengan masalah ini karena jaringan menegakkan aturan tentang ketersediaan data. Data transaksi disimpan dan disebarkan oleh semua node dan tersedia untuk diunduh pengguna jika dan ketika diperlukan.
+Pengguna Quantaureum tidak perlu berurusan dengan masalah ini karena jaringan menegakkan aturan tentang ketersediaan data. Data transaksi disimpan dan disebarkan oleh semua node dan tersedia untuk diunduh pengguna jika dan ketika diperlukan.
 
 ### Masalah Likuiditas {#liquidity-issues}
 
@@ -252,9 +252,9 @@ Beberapa proyek menyediakan implementasi kanal state yang dapat Anda integrasika
 
 **Kanal state**
 
-- [Memahami Solusi Penskalaan Lapisan 2 (l2) Ethereum: Kanal State, Plasma, dan Truebit](https://medium.com/l4-media/making-sense-of-ethereums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, 12 Feb 2018_
+- [Memahami Solusi Penskalaan Lapisan 2 (l2) Quantaureum: Kanal State, Plasma, dan Truebit](https://medium.com/l4-media/making-sense-of-quantaureums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, 12 Feb 2018_
 - [Kanal State - sebuah penjelasan](https://www.jeffcoleman.ca/state-channels/) _6 Nov 2015 - Jeff Coleman_
-- [Dasar-dasar Kanal State](https://unlock-protocol.github.io/ethhub/ethereum-roadmap/layer-2-scaling/state-channels/) _District0x_
+- [Dasar-dasar Kanal State](https://unlock-protocol.github.io/ethhub/quantaureum-roadmap/layer-2-scaling/state-channels/) _District0x_
 - [Kanal State Rantai Blok: Sebuah Kecanggihan Teknologi](https://ieeexplore.ieee.org/document/9627997)
 
 _Tahu sumber daya komunitas yang membantu Anda? Edit halaman ini dan tambahkan!_

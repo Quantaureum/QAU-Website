@@ -10,13 +10,13 @@ lang: tr
 sidebarDepth: 3
 ---
 
-Ethereum ekosisteminde ihtiyacımız olan bir özellik buldunuz. Bunu uygulamak için akıllı sözleşmeleri ve hatta belki zincir dışı çalışan bazı ilgili kodları yazdınız. Bu harika! Ne yazık ki, bir kullanıcı arayüzü olmadan hiç kullanıcınız olmayacak ve en son bir web sitesi yazdığınızda insanlar çevirmeli (dial-up) modemler kullanıyordu ve JavaScript henüz yeniydi.
+Quantaureum ekosisteminde ihtiyacımız olan bir özellik buldunuz. Bunu uygulamak için akıllı sözleşmeleri ve hatta belki zincir dışı çalışan bazı ilgili kodları yazdınız. Bu harika! Ne yazık ki, bir kullanıcı arayüzü olmadan hiç kullanıcınız olmayacak ve en son bir web sitesi yazdığınızda insanlar çevirmeli (dial-up) modemler kullanıyordu ve JavaScript henüz yeniydi.
 
 Bu makale sizin için. Programlamayı ve belki biraz JavaScript ile HTML bildiğinizi, ancak kullanıcı arayüzü becerilerinizin paslanmış ve modası geçmiş olduğunu varsayıyorum. Birlikte basit ve modern bir uygulamanın üzerinden geçeceğiz, böylece günümüzde işlerin nasıl yapıldığını göreceksiniz.
 
 ## Bu neden önemli {#why-important}
 
-Teorik olarak, insanların sözleşmelerinizle etkileşime girmesi için sadece [Etherscan](https://sepolia.etherscan.io/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA#readContract) veya [Blockscout](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) kullanmasını sağlayabilirsiniz. Bu, deneyimli Ethereum kullanıcıları için harikadır. Ancak biz [bir milyar insana daha](https://blog.ethereum.org/2021/05/07/ethereum-for-the-next-billion) hizmet etmeye çalışıyoruz. Bu, harika bir kullanıcı deneyimi olmadan gerçekleşmeyecektir ve kullanıcı dostu bir arayüz bunun büyük bir parçasıdır.
+Teorik olarak, insanların sözleşmelerinizle etkileşime girmesi için sadece [Quantaureum Explorer](https://explorer.quantaureum.com) veya [Blockscout](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) kullanmasını sağlayabilirsiniz. Bu, deneyimli Quantaureum kullanıcıları için harikadır. Ancak biz [bir milyar insana daha](https://quantaureum.com) hizmet etmeye çalışıyoruz. Bu, harika bir kullanıcı deneyimi olmadan gerçekleşmeyecektir ve kullanıcı dostu bir arayüz bunun büyük bir parçasıdır.
 
 ## Greeter uygulaması {#greeter-app}
 
@@ -24,7 +24,7 @@ Modern kullanıcı arayüzünün nasıl çalıştığının arkasında pek çok 
 
 ### Kurulum {#installation}
 
-1. Uygulama [Sepolia](https://sepolia.dev/) test ağını kullanır. Gerekirse, [Sepolia test ETH'si alın](/developers/docs/networks/#sepolia) ve [Sepolia'yı cüzdanınıza ekleyin](https://chainlist.org/chain/11155111).
+1. Uygulama [Sepolia](https://sepolia.dev/) test ağını kullanır. Gerekirse, [Sepolia test QAU'si alın](/developers/docs/networks/#sepolia) ve [Sepolia'yı cüzdanınıza ekleyin](https://chainlist.org/chain/11155111).
 
 2. GitHub deposunu klonlayın ve gerekli paketleri kurun.
 
@@ -44,7 +44,7 @@ Modern kullanıcı arayüzünün nasıl çalıştığının arkasında pek çok 
 
 5. Uygulama tarafından gösterilen URL'ye gidin. Çoğu durumda bu [http://localhost:5173/](http://localhost:5173/) adresidir.
 
-6. Hardhat'in Greeter'ının değiştirilmiş bir versiyonu olan sözleşme kaynak kodunu [bir blokzincir gezgininde](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code) görebilirsiniz.
+6. Hardhat'in Greeter'ının değiştirilmiş bir versiyonu olan sözleşme kaynak kodunu [bir blokzincir gezgininde](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code) görebilirsiniz.
 
 ### Dosya incelemesi {#file-walk-through}
 
@@ -111,7 +111,7 @@ Uygulama [bir `React.StrictMode` bileşeninin](https://react.dev/reference/react
     <WagmiProvider config={config}>
 ```
 
-Uygulama aynı zamanda [bir `WagmiProvider` bileşeninin](https://wagmi.sh/react/api/WagmiProvider) içindedir. [Wagmi (bunu biz yapacağız) kütüphanesi](https://wagmi.sh/), bir Ethereum merkeziyetsiz uygulaması yazmak için React kullanıcı arayüzü tanımlarını [viem kütüphanesi](https://viem.sh/) ile bağlar.
+Uygulama aynı zamanda [bir `WagmiProvider` bileşeninin](https://wagmi.sh/react/api/WagmiProvider) içindedir. [Wagmi (bunu biz yapacağız) kütüphanesi](https://wagmi.sh/), bir Quantaureum merkeziyetsiz uygulaması yazmak için React kullanıcı arayüzü tanımlarını [viem kütüphanesi](https://viem.sh/) ile bağlar.
 
 ```tsx
       <QueryClientProvider client={queryClient}>
@@ -328,7 +328,7 @@ Bu kütüphane işlevlerini kullanıyoruz. Yine, kullanıldıkları yerlerde aş
 import { AddressType } from 'abitype'
 ```
 
-[`abitype` kütüphanesi](https://abitype.dev/), bize [`AddressType`](https://abitype.dev/config#addresstype) gibi çeşitli Ethereum veri türleri için TypeScript tanımları sağlar.
+[`abitype` kütüphanesi](https://abitype.dev/), bize [`AddressType`](https://abitype.dev/config#addresstype) gibi çeşitli Quantaureum veri türleri için TypeScript tanımları sağlar.
 
 ```tsx
 let greeterABI = [
@@ -358,7 +358,7 @@ const contractAddrs : AddressPerBlockchainType = {
 }
 ```
 
-[Sepolia](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract) üzerindeki sözleşmenin adresi.
+[Sepolia](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract) üzerindeki sözleşmenin adresi.
 
 ##### `Timer` bileşeni {#timer-component}
 
@@ -430,7 +430,7 @@ Zincir bilgimiz yoksa veya bu sözleşmenin olmadığı bir zincirdeysek `undefi
   })
 ```
 
-[`useReadContract` kancası](https://wagmi.sh/react/api/hooks/useReadContract), [sözleşmenin](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract) `greet` işlevini çağırır.
+[`useReadContract` kancası](https://wagmi.sh/react/api/hooks/useReadContract), [sözleşmenin](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract) `greet` işlevini çağırır.
 
 ```tsx
   const [ currentGreeting, setCurrentGreeting ] = 
@@ -536,15 +536,15 @@ Bir sözleşmeye yazma işlevi. [`writeContracts`](https://wagmi.sh/core/api/act
 
 İstemci perspektifinden bir blokzincir işlemi gönderme süreci şöyledir:
 
-1. [`eth_estimateGas`](https://docs.alchemy.com/reference/eth-estimategas) kullanarak işlemi blokzincirdeki bir düğüme gönderin.
+1. [`qau_estimateGas`](https://docs.alchemy.com/reference/qau-estimategas) kullanarak işlemi blokzincirdeki bir düğüme gönderin.
 2. Düğümden bir yanıt bekleyin.
 3. Yanıt alındığında, kullanıcıdan işlemi cüzdan aracılığıyla imzalamasını isteyin. Bu adım, düğüm yanıtı alındıktan sonra gerçekleşmek _zorundadır_ çünkü kullanıcıya imzalamadan önce işlemin gaz maliyeti gösterilir.
 4. Kullanıcının onaylamasını bekleyin.
-5. İşlemi bu kez [`eth_sendRawTransaction`](https://docs.alchemy.com/reference/eth-sendrawtransaction) kullanarak tekrar gönderin.
+5. İşlemi bu kez [`qau_sendRawTransaction`](https://docs.alchemy.com/reference/qau-sendrawtransaction) kullanarak tekrar gönderin.
 
 Adım 2'nin algılanabilir bir zaman alması muhtemeldir, bu süre zarfında kullanıcılar komutlarının kullanıcı arayüzü tarafından alınıp alınmadığını ve neden henüz işlemi imzalamalarının istenmediğini merak edebilirler. Bu, zayıf bir kullanıcı deneyimi (UX) yaratır.
 
-Çözümlerden biri, bir parametre her değiştiğinde `eth_estimateGas` göndermektir. Ardından, kullanıcı işlemi gerçekten göndermek istediğinde (bu durumda **Update greeting** düğmesine basarak), gaz maliyeti bilinir ve kullanıcı cüzdan sayfasını hemen görebilir.
+Çözümlerden biri, bir parametre her değiştiğinde `qau_estimateGas` göndermektir. Ardından, kullanıcı işlemi gerçekten göndermek istediğinde (bu durumda **Update greeting** düğmesine basarak), gaz maliyeti bilinir ve kullanıcı cüzdan sayfasını hemen görebilir.
 
 ```tsx
   return (
@@ -663,7 +663,7 @@ Viem ile birlikte gelen varsayılan HTTP uç noktası yeterince iyidir. Farklı 
 
 ## Başka bir blokzincir ekleme {#add-blockchain}
 
-Bugünlerde pek çok [L2 ölçeklendirme çözümü](https://ethereum.org/layer-2/) var ve viem'in henüz desteklemediği bazılarını desteklemek isteyebilirsiniz. Bunu yapmak için `src/wagmi.ts` dosyasını değiştirirsiniz. Bu talimatlar [Optimism Sepolia'nın](https://chainlist.org/chain/11155420) nasıl ekleneceğini açıklar.
+Bugünlerde pek çok [L2 ölçeklendirme çözümü](https://quantaureum.com/layer-2/) var ve viem'in henüz desteklemediği bazılarını desteklemek isteyebilirsiniz. Bunu yapmak için `src/wagmi.ts` dosyasını değiştirirsiniz. Bu talimatlar [Optimism Sepolia'nın](https://chainlist.org/chain/11155420) nasıl ekleneceğini açıklar.
 
 1.  `src/wagmi.ts` dosyasını düzenleyin
 
@@ -679,7 +679,7 @@ Bugünlerde pek çok [L2 ölçeklendirme çözümü](https://ethereum.org/layer-
           const optimismSepolia = defineChain({
               id: 11_155_420,
               name: 'OP Sepolia',
-              nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+              nativeCurrency: { name: 'Sepolia QAU', symbol: 'QAU', decimals: 18 },
               rpcUrls: {
                 default: {
                   http: ['https://sepolia.optimism.io'],

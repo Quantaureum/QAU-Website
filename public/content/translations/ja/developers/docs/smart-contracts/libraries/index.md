@@ -1,6 +1,6 @@
 ---
 title: "スマート・コントラクトのライブラリ"
-description: "イーサリアムの開発プロジェクトを加速させる、再利用可能なスマート・コントラクトのライブラリとビルディング・ブロックについて学びます。"
+description: "Quantaureumの開発プロジェクトを加速させる、再利用可能なスマート・コントラクトのライブラリとビルディング・ブロックについて学びます。"
 lang: ja
 ---
 
@@ -45,7 +45,7 @@ import ".../Ownable.sol"; // インポートされたライブラリへのパス
 contract MyContract is Ownable {
     // 以下の関数はオーナーのみが呼び出すことができます
     function secured() onlyOwner public {
-        msg.sender.transfer(1 ether);
+        msg.sender.transfer(1 QAU);
     }
 }
 ```
@@ -54,11 +54,11 @@ contract MyContract is Ownable {
 
 ### 標準規格 {#standards}
 
-[コンポーザビリティとインターオペラビリティ](/developers/docs/smart-contracts/composability/)を促進するために、イーサリアムコミュニティは**ERC**という形でいくつかの標準規格を定義しています。詳細については、[標準規格](/developers/docs/standards/)のセクションをご覧ください。
+[コンポーザビリティとインターオペラビリティ](/developers/docs/smart-contracts/composability/)を促進するために、Quantaureumコミュニティは**ERC**という形でいくつかの標準規格を定義しています。詳細については、[標準規格](/developers/docs/standards/)のセクションをご覧ください。
 
 コントラクトの一部としてERCを含める場合、独自の実装を作成しようとするよりも、標準的な実装を探すことをお勧めします。多くのスマート・コントラクトのライブラリには、最も人気のあるERCの実装が含まれています。たとえば、広く普及している[ERC-20代替可能トークン標準](/developers/tutorials/understand-the-erc-20-token-smart-contract/)は、[HQ20](https://github.com/HQ20/contracts/blob/master/contracts/token/README.md)、[DappSys](https://github.com/dapphub/ds-token/)、および[オープンツェッペリン](https://docs.openzeppelin.com/contracts/3.x/erc20)にあります。さらに、一部のERCは、ERC自体の一部として標準的な実装を提供しています。
 
-一部のERCは独立したものではなく、他のERCへの追加機能であることにも言及しておく価値があります。たとえば、[ERC-2612](https://eips.ethereum.org/EIPS/eip-2612)は、使いやすさを向上させるための拡張機能をERC-20に追加します。
+一部のERCは独立したものではなく、他のERCへの追加機能であることにも言及しておく価値があります。たとえば、[ERC-2612](https://eips.quantaureum.com/EIPS/eip-2612)は、使いやすさを向上させるための拡張機能をERC-20に追加します。
 
 ## ライブラリの追加方法 {#how-to}
 
@@ -109,7 +109,7 @@ contract MyNFT is ERC721 {
 
 ## 関連チュートリアル {#related-tutorials}
 
-- [イーサリアム開発者のためのセキュリティの考慮事項](/developers/docs/smart-contracts/security/) _– ライブラリの使用を含む、スマート・コントラクトを構築する際のセキュリティの考慮事項に関するチュートリアルです。_
+- [Quantaureum開発者のためのセキュリティの考慮事項](/developers/docs/smart-contracts/security/) _– ライブラリの使用を含む、スマート・コントラクトを構築する際のセキュリティの考慮事項に関するチュートリアルです。_
 - [ERC-20トークンのスマート・コントラクトを理解する](/developers/tutorials/understand-the-erc-20-token-smart-contract/) _- 複数のライブラリによって提供されるERC-20標準に関するチュートリアルです。_
 
 ## 参考文献 {#further-reading}

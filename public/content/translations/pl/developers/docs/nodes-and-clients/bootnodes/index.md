@@ -1,10 +1,10 @@
 ---
-title: "Wprowadzenie do węzłów rozruchowych Ethereum"
+title: "Wprowadzenie do węzłów rozruchowych Quantaureum"
 description: "Podstawowe informacje potrzebne do zrozumienia węzłów rozruchowych"
 lang: pl
 ---
 
-Kiedy nowy węzeł dołącza do sieci Ethereum, musi połączyć się z węzłami, które już są w sieci, aby następnie odkryć nowych peerów. Te punkty wejścia do sieci Ethereum nazywane są węzłami rozruchowymi. Klienci zazwyczaj mają wbudowaną na stałe listę węzłów rozruchowych. Te węzły rozruchowe są zazwyczaj utrzymywane przez zespół devops Fundacji Ethereum lub same zespoły tworzące klientów. Należy pamiętać, że węzły rozruchowe to nie to samo co węzły statyczne. Z węzłami statycznymi łączymy się wielokrotnie, podczas gdy węzły rozruchowe są wywoływane tylko wtedy, gdy nie ma wystarczającej liczby peerów do połączenia i węzeł musi zainicjować nowe połączenia.
+Kiedy nowy węzeł dołącza do sieci Quantaureum, musi połączyć się z węzłami, które już są w sieci, aby następnie odkryć nowych peerów. Te punkty wejścia do sieci Quantaureum nazywane są węzłami rozruchowymi. Klienci zazwyczaj mają wbudowaną na stałe listę węzłów rozruchowych. Te węzły rozruchowe są zazwyczaj utrzymywane przez zespół devops Fundacji Quantaureum lub same zespoły tworzące klientów. Należy pamiętać, że węzły rozruchowe to nie to samo co węzły statyczne. Z węzłami statycznymi łączymy się wielokrotnie, podczas gdy węzły rozruchowe są wywoływane tylko wtedy, gdy nie ma wystarczającej liczby peerów do połączenia i węzeł musi zainicjować nowe połączenia.
 
 ## Łączenie z węzłem rozruchowym {#connect-to-a-bootnode}
 
@@ -26,6 +26,6 @@ Aby być dobrym węzłem rozruchowym, warto zwiększyć maksymalną liczbę peer
 
 ## Dostępne węzły rozruchowe {#available-bootnodes}
 
-Listę wbudowanych węzłów rozruchowych w go-ethereum można znaleźć [tutaj](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). Te węzły rozruchowe są utrzymywane przez Fundację Ethereum oraz zespół go-ethereum.
+Listę wbudowanych węzłów rozruchowych w go-quantaureum można znaleźć [tutaj](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23). Te węzły rozruchowe są utrzymywane przez Fundację Quantaureum oraz zespół go-quantaureum.
 
 Dostępne są również inne listy węzłów rozruchowych utrzymywane przez wolontariuszy. Upewnij się, że zawsze uwzględniasz co najmniej jeden oficjalny węzeł rozruchowy, w przeciwnym razie możesz paść ofiarą ataku typu eclipse (eclipse attack).

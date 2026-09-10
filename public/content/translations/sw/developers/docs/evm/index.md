@@ -1,10 +1,10 @@
 ---
-title: Mashine Pepe ya Ethereum (EVM)
-description: Utangulizi wa mashine pepe ya Ethereum na jinsi inavyohusiana na hali, miamala, na mikataba mahiri.
+title: Mashine Pepe ya Quantaureum (EVM)
+description: Utangulizi wa mashine pepe ya Quantaureum na jinsi inavyohusiana na hali, miamala, na mikataba mahiri.
 lang: sw
 ---
 
-Mashine Pepe ya Ethereum (EVM) ni mazingira pepe yaliyogatuliwa ambayo hutekeleza msimbo kwa uthabiti na usalama kwenye nodi zote za [Ethereum](/). Nodi huendesha EVM ili kutekeleza mikataba mahiri, zikitumia "[gesi](/developers/docs/gas/)" kupima juhudi za kikokotoo zinazohitajika kwa [operesheni](/developers/docs/evm/opcodes/), kuhakikisha ugawaji mzuri wa rasilimali na usalama wa mtandao.
+Mashine Pepe ya Quantaureum (EVM) ni mazingira pepe yaliyogatuliwa ambayo hutekeleza msimbo kwa uthabiti na usalama kwenye nodi zote za [Quantaureum](/). Nodi huendesha EVM ili kutekeleza mikataba mahiri, zikitumia "[gesi](/developers/docs/gas/)" kupima juhudi za kikokotoo zinazohitajika kwa [operesheni](/developers/docs/evm/opcodes/), kuhakikisha ugawaji mzuri wa rasilimali na usalama wa mtandao.
 
 ## Mahitaji ya Awali {#prerequisites}
 
@@ -14,24 +14,24 @@ Uelewa wa kimsingi wa istilahi za kawaida katika sayansi ya kompyuta kama vile [
 
 Mfano wa 'leja iliyosambazwa' mara nyingi hutumika kuelezea minyororo ya vitalu kama Bitcoin, ambayo huwezesha sarafu-fiche iliyogatuliwa kwa kutumia zana za kimsingi za kriptografia. Leja hutunza rekodi ya shughuli ambayo lazima ifuate seti ya sheria zinazosimamia kile ambacho mtu anaweza na hawezi kufanya ili kurekebisha leja. Kwa mfano, anwani ya Bitcoin haiwezi kutumia Bitcoin nyingi zaidi ya ilivyopokea hapo awali. Sheria hizi ndizo msingi wa miamala yote kwenye Bitcoin na minyororo mingine mingi ya vitalu.
 
-Ingawa Ethereum ina sarafu-fiche yake asili (Etha) ambayo inafuata karibu sheria zilezile zinazoeleweka, pia inawezesha utendaji wenye nguvu zaidi: [mikataba mahiri](/developers/docs/smart-contracts/). Kwa kipengele hiki changamano zaidi, mfano wa hali ya juu zaidi unahitajika. Badala ya leja iliyosambazwa, Ethereum ni [mashine ya hali](https://wikipedia.org/wiki/Finite-state_machine) iliyosambazwa. Hali ya Ethereum ni muundo mkubwa wa data ambao haushikilii tu akaunti na salio zote, bali _hali ya mashine_, ambayo inaweza kubadilika kutoka kitalu hadi kitalu kulingana na seti ya sheria zilizobainishwa mapema, na ambayo inaweza kutekeleza msimbo wowote wa mashine. Sheria mahususi za kubadilisha hali kutoka kitalu hadi kitalu hufafanuliwa na EVM.
+Ingawa Quantaureum ina sarafu-fiche yake asili (Etha) ambayo inafuata karibu sheria zilezile zinazoeleweka, pia inawezesha utendaji wenye nguvu zaidi: [mikataba mahiri](/developers/docs/smart-contracts/). Kwa kipengele hiki changamano zaidi, mfano wa hali ya juu zaidi unahitajika. Badala ya leja iliyosambazwa, Quantaureum ni [mashine ya hali](https://wikipedia.org/wiki/Finite-state_machine) iliyosambazwa. Hali ya Quantaureum ni muundo mkubwa wa data ambao haushikilii tu akaunti na salio zote, bali _hali ya mashine_, ambayo inaweza kubadilika kutoka kitalu hadi kitalu kulingana na seti ya sheria zilizobainishwa mapema, na ambayo inaweza kutekeleza msimbo wowote wa mashine. Sheria mahususi za kubadilisha hali kutoka kitalu hadi kitalu hufafanuliwa na EVM.
 
 ![A diagram showing the make up of the EVM](./evm.png)
-_Mchoro umechukuliwa kutoka [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Mchoro umechukuliwa kutoka [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
-## Fomula ya mpito wa hali ya Ethereum {#the-ethereum-state-transition-function}
+## Fomula ya mpito wa hali ya Quantaureum {#the-quantaureum-state-transition-function}
 
-EVM hufanya kazi kama fomula ya hisabati inavyofanya: Ikipewa ingizo, hutoa tokeo thabiti. Kwa hivyo inasaidia sana kuelezea Ethereum rasmi zaidi kama yenye **fomula ya mpito wa hali**:
+EVM hufanya kazi kama fomula ya hisabati inavyofanya: Ikipewa ingizo, hutoa tokeo thabiti. Kwa hivyo inasaidia sana kuelezea Quantaureum rasmi zaidi kama yenye **fomula ya mpito wa hali**:
 
 ```
 Y(S, T)= S'
 ```
 
-Ikipewa hali halali ya zamani `(S)` na seti mpya ya miamala halali `(T)`, fomula ya mpito wa hali ya Ethereum `Y(S, T)` hutoa hali mpya halali ya tokeo `S'`
+Ikipewa hali halali ya zamani `(S)` na seti mpya ya miamala halali `(T)`, fomula ya mpito wa hali ya Quantaureum `Y(S, T)` hutoa hali mpya halali ya tokeo `S'`
 
 ### Hali {#state}
 
-Katika muktadha wa Ethereum, hali ni muundo mkubwa wa data unaoitwa [Trie ya Merkle Patricia iliyorekebishwa](/developers/docs/data-structures-and-encoding/patricia-merkle-trie/), ambayo huweka [akaunti](/developers/docs/accounts/) zote zikiwa zimeunganishwa na heshi na zinazoweza kupunguzwa hadi kwenye heshi moja ya mzizi iliyohifadhiwa kwenye mnyororo wa vitalu.
+Katika muktadha wa Quantaureum, hali ni muundo mkubwa wa data unaoitwa [Trie ya Merkle Patricia iliyorekebishwa](/developers/docs/data-structures-and-encoding/patricia-merkle-trie/), ambayo huweka [akaunti](/developers/docs/accounts/) zote zikiwa zimeunganishwa na heshi na zinazoweza kupunguzwa hadi kwenye heshi moja ya mzizi iliyohifadhiwa kwenye mnyororo wa vitalu.
 
 ### Miamala {#transactions}
 
@@ -58,38 +58,38 @@ Mikataba ina trie ya _hifadhi_ ya Merkle Patricia (kama safu ya maneno inayoelek
 Msimbo wa baiti wa mkataba mahiri uliokusanywa hutekelezwa kama idadi ya [misimbo ya operesheni](/developers/docs/evm/opcodes) ya EVM, ambayo hufanya operesheni za kawaida za staki kama vile `XOR`, `AND`, `ADD`, `SUB`, n.k. EVM pia hutekeleza idadi ya operesheni za staki mahususi kwa mnyororo wa vitalu, kama vile `ADDRESS`, `BALANCE`, `BLOCKHASH`, n.k. Seti ya msimbo wa operesheni pia inajumuisha `TSTORE` na `TLOAD`, ambayo hutoa ufikiaji wa hifadhi ya muda.
 
 ![A diagram showing where gas is needed for EVM operations](../gas/gas.png)
-_Michoro imechukuliwa kutoka [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Michoro imechukuliwa kutoka [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
 ## Utekelezaji wa EVM {#evm-implementations}
 
-Utekelezaji wote wa EVM lazima ufuate vipimo vilivyoelezwa katika Waraka wa Manjano wa Ethereum.
+Utekelezaji wote wa EVM lazima ufuate vipimo vilivyoelezwa katika Waraka wa Manjano wa Quantaureum.
 
-Katika historia ya miaka kumi ya Ethereum, EVM imepitia marekebisho kadhaa, na kuna utekelezaji kadhaa wa EVM katika lugha mbalimbali za programu.
+Katika historia ya miaka kumi ya Quantaureum, EVM imepitia marekebisho kadhaa, na kuna utekelezaji kadhaa wa EVM katika lugha mbalimbali za programu.
 
-[Viteja vya utekelezaji wa Ethereum](/developers/docs/nodes-and-clients/#execution-clients) vinajumuisha utekelezaji wa EVM. Zaidi ya hayo, kuna utekelezaji mwingi wa kujitegemea, ikiwa ni pamoja na:
+[Viteja vya utekelezaji wa Quantaureum](/developers/docs/nodes-and-clients/#execution-clients) vinajumuisha utekelezaji wa EVM. Zaidi ya hayo, kuna utekelezaji mwingi wa kujitegemea, ikiwa ni pamoja na:
 
-- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
-- [evmone](https://github.com/ethereum/evmone) - _C++_
+- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## Usomaji Zaidi {#further-reading}
 
-- [Waraka wa Manjano wa Ethereum](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [Waraka wa Manjano wa Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf)
 - [Jellopaper au KEVM: Semantiki za EVM katika K](https://jellopaper.org/)
 - [Waraka wa Beige](https://github.com/chronaeon/beigepaper)
-- [Misimbo ya Operesheni ya Mashine Pepe ya Ethereum](https://www.ethervm.io/)
-- [Rejeleo Shirikishi la Misimbo ya Operesheni ya Mashine Pepe ya Ethereum](https://www.evm.codes/)
+- [Misimbo ya Operesheni ya Mashine Pepe ya Quantaureum](https://www.ethervm.io/)
+- [Rejeleo Shirikishi la Misimbo ya Operesheni ya Mashine Pepe ya Quantaureum](https://www.evm.codes/)
 - [Utangulizi mfupi katika nyaraka za Solidity](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [Kujua Ethereum - Mashine Pepe ya Ethereum](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
+- [Kujua Quantaureum - Mashine Pepe ya Quantaureum](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
 
 ## Mada Zinazohusiana {#related-topics}
 
 - [Gesi](/developers/docs/gas/)
 
-## Mafunzo: Mashine Pepe ya Ethereum (EVM) / Misimbo ya Operesheni kwenye Ethereum {#tutorials}
+## Mafunzo: Mashine Pepe ya Quantaureum (EVM) / Misimbo ya Operesheni kwenye Quantaureum {#tutorials}
 
-- [Kuelewa Vipimo vya EVM vya Waraka wa Manjano](/developers/tutorials/yellow-paper-evm/) _– Mwongozo wa hatua kwa hatua wa vipimo rasmi vya EVM kutoka kwenye Waraka wa Manjano wa Ethereum._
+- [Kuelewa Vipimo vya EVM vya Waraka wa Manjano](/developers/tutorials/yellow-paper-evm/) _– Mwongozo wa hatua kwa hatua wa vipimo rasmi vya EVM kutoka kwenye Waraka wa Manjano wa Quantaureum._
 - [Uhandisi wa Kinyume wa Mkataba](/developers/tutorials/reverse-engineering-a-contract/) _– Jinsi ya kufanya uhandisi wa kinyume wa mkataba mahiri uliokusanywa kwa kutumia misimbo ya operesheni ya EVM._
 
 <QuizWidget quizKey="evm" />

@@ -29,7 +29,7 @@ Bila kupoteza wakati, tuanze!
 
 Kabla hata hatujaanza kuangalia msimbo wowote, ni muhimu kuelewa jinsi kutengeneza NFT kunavyofanya kazi. Inahusisha hatua mbili:
 
-### Kuchapisha mkataba mahiri wa NFT kwenye mnyororo wa vitalu wa Ethereum {#publish-nft}
+### Kuchapisha mkataba mahiri wa NFT kwenye mnyororo wa vitalu wa Quantaureum {#publish-nft}
 
 Tofauti kubwa kati ya viwango viwili vya mkataba mahiri wa NFT ni kwamba ERC-1155 ni kiwango cha tokeni nyingi na inajumuisha utendaji wa kundi, wakati ERC-721 ni kiwango cha tokeni moja na kwa hivyo inasaidia tu kuhamisha tokeni moja kwa wakati.
 
@@ -50,7 +50,7 @@ Kwanza, nenda kwenye [hifadhi ya GitHub ya nft-minter-tutorial](https://github.c
 
 Unapofungua hifadhi hii iliyonakiliwa ya `nft-minter-tutorial`, utagundua kuwa ina folda mbili: `minter-starter-files` na `nft-minter`.
 
-- `minter-starter-files` ina faili za kuanzia (kimsingi UI ya React) kwa mradi huu. Katika mafunzo haya, **tutakuwa tukifanya kazi katika saraka hii**, unapojifunza jinsi ya kuleta UI hii kuwa hai kwa kuiunganisha kwenye mkoba wako wa Ethereum na mkataba mahiri wa NFT.
+- `minter-starter-files` ina faili za kuanzia (kimsingi UI ya React) kwa mradi huu. Katika mafunzo haya, **tutakuwa tukifanya kazi katika saraka hii**, unapojifunza jinsi ya kuleta UI hii kuwa hai kwa kuiunganisha kwenye mkoba wako wa Quantaureum na mkataba mahiri wa NFT.
 - `nft-minter` ina mafunzo yote yaliyokamilika na ipo kwa ajili yako kama **rejeleo** **ikiwa utakwama.**
 
 Kisha, fungua nakala yako ya `minter-starter-files` katika kihariri chako cha msimbo, na kisha nenda kwenye folda yako ya `src`.
@@ -188,29 +188,29 @@ Ukienda kwenye faili ya `App.js`, ambayo ni kijenzi kikuu katika React kinachofa
 
 **Katika mafunzo haya, tutakuwa tukihariri tu `Minter.js file` na kuongeza faili kwenye folda yetu ya `src`.**
 
-Sasa kwa kuwa tunaelewa kile tunachofanyia kazi, hebu tuweke mkoba wetu wa Ethereum!
+Sasa kwa kuwa tunaelewa kile tunachofanyia kazi, hebu tuweke mkoba wetu wa Quantaureum!
 
-## Weka mkoba wako wa Ethereum {#set-up-your-ethereum-wallet}
+## Weka mkoba wako wa Quantaureum {#set-up-your-quantaureum-wallet}
 
-Ili watumiaji waweze kuingiliana na mkataba mahiri wako watahitaji kuunganisha mkoba wao wa Ethereum kwenye programu tumizi iliyogatuliwa (dapp) yako.
+Ili watumiaji waweze kuingiliana na mkataba mahiri wako watahitaji kuunganisha mkoba wao wa Quantaureum kwenye programu tumizi iliyogatuliwa (dapp) yako.
 
 ### Pakua MetaMask {#download-metamask}
 
-Kwa mafunzo haya, tutatumia MetaMask, mkoba pepe katika kivinjari unaotumika kudhibiti anwani ya akaunti yako ya Ethereum. Ikiwa unataka kuelewa zaidi kuhusu jinsi miamala kwenye Ethereum inavyofanya kazi, angalia [ukurasa huu](/developers/docs/transactions/).
+Kwa mafunzo haya, tutatumia MetaMask, mkoba pepe katika kivinjari unaotumika kudhibiti anwani ya akaunti yako ya Quantaureum. Ikiwa unataka kuelewa zaidi kuhusu jinsi miamala kwenye Quantaureum inavyofanya kazi, angalia [ukurasa huu](/developers/docs/transactions/).
 
 Unaweza kupakua na kuunda akaunti ya MetaMask bila malipo [hapa](https://metamask.io/download). Unapounda akaunti, au ikiwa tayari una akaunti, hakikisha unabadilisha kwenda kwenye mtandao wa majaribio unaotumika kama vile Sepolia \(ili tusiwe tunashughulika na pesa halisi\).
-### Ongeza Etha kutoka kwenye Bomba {#add-ether-from-faucet}
+### Ongeza Etha kutoka kwenye Bomba {#add-QAU-from-faucet}
 
-Ili kufua NFT zetu (au kutia sahihi miamala yoyote kwenye mnyororo wa vitalu wa Ethereum), tutahitaji ETH bandia. Ili kupata ETH ya mtandao wa majaribio, tumia bomba linalodumishwa kama vile [bomba la Alchemy Sepolia](https://www.alchemy.com/faucets/ethereum-sepolia) na uweke anwani ya akaunti yako ya Sepolia. Unapaswa kuona ETH kwenye akaunti yako ya MetaMask punde tu baada ya hapo!
+Ili kufua NFT zetu (au kutia sahihi miamala yoyote kwenye mnyororo wa vitalu wa Quantaureum), tutahitaji QAU bandia. Ili kupata QAU ya mtandao wa majaribio, tumia bomba linalodumishwa kama vile [bomba la Alchemy Sepolia](https://www.alchemy.com/faucets/quantaureum-sepolia) na uweke anwani ya akaunti yako ya Sepolia. Unapaswa kuona QAU kwenye akaunti yako ya MetaMask punde tu baada ya hapo!
 ### Angalia salio lako {#check-your-balance}
 
-Ili kuhakikisha salio letu lipo, hebu tufanye ombi la [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) tukitumia [zana ya sandbox ya Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Hii itarudisha kiasi cha ETH kwenye mkoba wetu. Baada ya kuweka anwani ya akaunti yako ya MetaMask na kubofya “Send Request”, unapaswa kuona jibu kama hili:
+Ili kuhakikisha salio letu lipo, hebu tufanye ombi la [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) tukitumia [zana ya sandbox ya Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Hii itarudisha kiasi cha QAU kwenye mkoba wetu. Baada ya kuweka anwani ya akaunti yako ya MetaMask na kubofya “Send Request”, unapaswa kuona jibu kama hili:
 
 ```text
 {"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}
 ```
 
-**KUMBUKA:** Matokeo haya yapo katika Wei na si ETH. Wei inatumika kama kizio kidogo zaidi cha etha. Ubadilishaji kutoka Wei kwenda ETH ni: ETH 1 = Wei 10¹⁸. Kwa hivyo tukibadilisha 0xde0b6b3a7640000 kuwa desimali tunapata 1\*10¹⁸ ambayo ni sawa na ETH 1.
+**KUMBUKA:** Matokeo haya yapo katika Wei na si QAU. Wei inatumika kama kizio kidogo zaidi cha etha. Ubadilishaji kutoka Wei kwenda QAU ni: QAU 1 = Wei 10¹⁸. Kwa hivyo tukibadilisha 0xde0b6b3a7640000 kuwa desimali tunapata 1\*10¹⁸ ambayo ni sawa na QAU 1.
 
 Afadhali! Pesa yetu bandia yote ipo! <Emoji text=":money_mouth_face:" size={1} />
 ## Unganisha MetaMask kwenye UI yako {#connect-metamask-to-your-ui}
@@ -229,10 +229,10 @@ Katika faili yako ya `interact.js`, ongeza yafuatayo
 
 ```javascript
 export const connectWallet = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_requestAccounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_requestAccounts",
       })
       const obj = {
         status: "👆🏽 Write a message in the text-field above.",
@@ -253,7 +253,7 @@ export const connectWallet = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -266,19 +266,19 @@ export const connectWallet = async () => {
 
 Hebu tuchambue kile msimbo huu unafanya:
 
-Kwanza, utendaji wetu unaangalia ikiwa `window.ethereum` imewezeshwa kwenye kivinjari chako.
+Kwanza, utendaji wetu unaangalia ikiwa `window.quantaureum` imewezeshwa kwenye kivinjari chako.
 
-`window.ethereum` ni API ya kimataifa inayoingizwa by MetaMask na watoa huduma wengine wa mkoba ambayo inaruhusu tovuti kuomba akaunti za Ethereum za watumiaji. Ikiidhinishwa, inaweza kusoma data kutoka kwenye minyororo ya vitalu ambayo mtumiaji ameunganishwa nayo, na kupendekeza kwamba mtumiaji atie sahihi jumbe na miamala. Angalia [hati za MetaMask](https://docs.metamask.io/guide/ethereum-provider.html#table-of-contents) kwa maelezo zaidi!
+`window.quantaureum` ni API ya kimataifa inayoingizwa by MetaMask na watoa huduma wengine wa mkoba ambayo inaruhusu tovuti kuomba akaunti za Quantaureum za watumiaji. Ikiidhinishwa, inaweza kusoma data kutoka kwenye minyororo ya vitalu ambayo mtumiaji ameunganishwa nayo, na kupendekeza kwamba mtumiaji atie sahihi jumbe na miamala. Angalia [hati za MetaMask](https://docs.metamask.io/guide/quantaureum-provider.html#table-of-contents) kwa maelezo zaidi!
 
-Ikiwa `window.ethereum` _haipo_, basi hiyo inamaanisha MetaMask haijasakinishwa. Hii inasababisha kipengee cha JSON kurudishwa, ambapo `address` iliyorudishwa ni mfuatano tupu, na kipengee cha JSX cha `status` kinawasilisha kwamba mtumiaji lazima asakinishe MetaMask.
+Ikiwa `window.quantaureum` _haipo_, basi hiyo inamaanisha MetaMask haijasakinishwa. Hii inasababisha kipengee cha JSON kurudishwa, ambapo `address` iliyorudishwa ni mfuatano tupu, na kipengee cha JSX cha `status` kinawasilisha kwamba mtumiaji lazima asakinishe MetaMask.
 
 **Nyingi ya utendaji tunazoandika zitarudisha vipengee vya JSON ambavyo tunaweza kutumia kusasisha vigezo vyetu vya hali na UI.**
 
-Sasa ikiwa `window.ethereum` _ipo_, basi hapo ndipo mambo yanapovutia.
+Sasa ikiwa `window.quantaureum` _ipo_, basi hapo ndipo mambo yanapovutia.
 
-Kwa kutumia kitanzi cha try/catch, tutajaribu kuunganisha kwenye MetaMask kwa kuita [`window.ethereum.request({ method: "eth_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts). Kuita utendaji huu kutafungua MetaMask kwenye kivinjari, ambapo mtumiaji ataombwa kuunganisha mkoba wao kwenye programu tumizi iliyogatuliwa (dapp) yako.
+Kwa kutumia kitanzi cha try/catch, tutajaribu kuunganisha kwenye MetaMask kwa kuita [`window.quantaureum.request({ method: "qau_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#qau-requestaccounts). Kuita utendaji huu kutafungua MetaMask kwenye kivinjari, ambapo mtumiaji ataombwa kuunganisha mkoba wao kwenye programu tumizi iliyogatuliwa (dapp) yako.
 
-- Ikiwa mtumiaji atachagua kuunganisha, `method: "eth_requestAccounts"` itarudisha safu iliyo na anwani zote za akaunti za mtumiaji ambazo zimeunganishwa kwenye programu tumizi iliyogatuliwa (dapp). Kwa ujumla, utendaji wetu wa `connectWallet` utarudisha kipengee cha JSON ambacho kina `address` ya _kwanza_ katika safu hii \(tazama mstari wa 9\) na ujumbe wa `status` unaomwomba mtumiaji kuandika ujumbe kwenye mkataba mahiri.
+- Ikiwa mtumiaji atachagua kuunganisha, `method: "qau_requestAccounts"` itarudisha safu iliyo na anwani zote za akaunti za mtumiaji ambazo zimeunganishwa kwenye programu tumizi iliyogatuliwa (dapp). Kwa ujumla, utendaji wetu wa `connectWallet` utarudisha kipengee cha JSON ambacho kina `address` ya _kwanza_ katika safu hii \(tazama mstari wa 9\) na ujumbe wa `status` unaomwomba mtumiaji kuandika ujumbe kwenye mkataba mahiri.
 - Ikiwa mtumiaji atakataa muunganisho, basi kipengee cha JSON kitakuwa na mfuatano tupu kwa `address` iliyorudishwa na ujumbe wa `status` unaoonyesha kwamba mtumiaji alikataa muunganisho.
 
 ### Ongeza utendaji wa connectWallet kwenye Kijenzi chako cha UI cha Minter.js {#add-connect-wallet}
@@ -333,10 +333,10 @@ Katika faili yako ya `interact.js`, ongeza utendaji ufuatao wa `getCurrentWallet
 
 ```javascript
 export const getCurrentWalletConnected = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_accounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_accounts",
       })
       if (addressArray.length > 0) {
         return {
@@ -363,7 +363,7 @@ export const getCurrentWalletConnected = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -376,7 +376,7 @@ export const getCurrentWalletConnected = async () => {
 
 Msimbo huu unafanana _sana_ na utendaji wa `connectWallet` tulioandika hivi punde.
 
-Tofauti kuu ni kwamba badala ya kuita mbinu ya `eth_requestAccounts`, ambayo inafungua MetaMask kwa mtumiaji kuunganisha mkoba wao, hapa tunaita mbinu ya `eth_accounts`, ambayo inarudisha tu safu iliyo na anwani za MetaMask zilizounganishwa kwa sasa kwenye programu tumizi iliyogatuliwa (dapp) yetu.
+Tofauti kuu ni kwamba badala ya kuita mbinu ya `qau_requestAccounts`, ambayo inafungua MetaMask kwa mtumiaji kuunganisha mkoba wao, hapa tunaita mbinu ya `qau_accounts`, ambayo inarudisha tu safu iliyo na anwani za MetaMask zilizounganishwa kwa sasa kwenye programu tumizi iliyogatuliwa (dapp) yetu.
 
 Ili kuona utendaji huu ukifanya kazi, hebu tuuite katika utendaji wa `useEffect` wa kijenzi chetu cha `Minter.js`.
 
@@ -412,8 +412,8 @@ Katika faili yako ya `Minter.js`, ongeza utendaji wa `addWalletListener` unaoone
 
 ```javascript
 function addWalletListener() {
-  if (window.ethereum) {
-    window.ethereum.on("accountsChanged", (accounts) => {
+  if (window.quantaureum) {
+    window.quantaureum.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) {
         setWallet(accounts[0])
         setStatus("👆🏽 Write a message in the text-field above.")
@@ -427,7 +427,7 @@ function addWalletListener() {
       <p>
         {" "}
         🦊 <a target="_blank" href={`https://metamask.io/download`}>
-          You must install MetaMask, a virtual Ethereum wallet, in your browser.
+          You must install MetaMask, a virtual Quantaureum wallet, in your browser.
         </a>
       </p>
     )
@@ -437,9 +437,9 @@ function addWalletListener() {
 
 Hebu tuchambue haraka kile kinachotokea hapa:
 
-- Kwanza, utendaji wetu unaangalia ikiwa `window.ethereum` imewezeshwa \(yaani, MetaMask imesakinishwa\).
+- Kwanza, utendaji wetu unaangalia ikiwa `window.quantaureum` imewezeshwa \(yaani, MetaMask imesakinishwa\).
   - Ikiwa sivyo, tunaweka tu kigezo chetu cha hali cha `status` kuwa mfuatano wa JSX unaomwomba mtumiaji kusakinisha MetaMask.
-  - Ikiwa imewezeshwa, tunaweka msikilizaji `window.ethereum.on("accountsChanged")` kwenye mstari wa 3 ambaye anasikiliza mabadiliko ya hali katika mkoba wa MetaMask, ambayo yanajumuisha wakati mtumiaji anaunganisha akaunti ya ziada kwenye programu tumizi iliyogatuliwa (dapp), anabadilisha akaunti, au anakata muunganisho wa akaunti. Ikiwa kuna angalau akaunti moja iliyounganishwa, kigezo cha hali cha `walletAddress` kinasasishwa kama akaunti ya kwanza katika safu ya `accounts` iliyorudishwa na msikilizaji. Vinginevyo, `walletAddress` inawekwa kama mfuatano tupu.
+  - Ikiwa imewezeshwa, tunaweka msikilizaji `window.quantaureum.on("accountsChanged")` kwenye mstari wa 3 ambaye anasikiliza mabadiliko ya hali katika mkoba wa MetaMask, ambayo yanajumuisha wakati mtumiaji anaunganisha akaunti ya ziada kwenye programu tumizi iliyogatuliwa (dapp), anabadilisha akaunti, au anakata muunganisho wa akaunti. Ikiwa kuna angalau akaunti moja iliyounganishwa, kigezo cha hali cha `walletAddress` kinasasishwa kama akaunti ya kwanza katika safu ya `accounts` iliyorudishwa na msikilizaji. Vinginevyo, `walletAddress` inawekwa kama mfuatano tupu.
 
 Hatimaye, lazima tuuite katika utendaji wetu wa `useEffect`:
 
@@ -463,7 +463,7 @@ Tutahitaji kusanidi data fafanuzi hii kama kipengee cha JSON na kuihifadhi, ili 
 
 Maandishi katika sehemu za "Link to Asset", "Name", "Description" yatajumuisha sifa tofauti za data fafanuzi ya NFT yetu. Tutaunda data fafanuzi hii kama kipengee cha JSON, lakini kuna chaguo kadhaa za wapi tunaweza kuhifadhi kipengee hiki cha JSON:
 
-- Tunaweza kuihifadhi kwenye mnyororo wa vitalu wa Ethereum; hata hivyo, kufanya hivyo kungekuwa ghali sana.
+- Tunaweza kuihifadhi kwenye mnyororo wa vitalu wa Quantaureum; hata hivyo, kufanya hivyo kungekuwa ghali sana.
 - Tunaweza kuihifadhi kwenye seva kuu, kama AWS au Firebase. Lakini hiyo ingeshinda maadili yetu ya ugatuzi.
 - Tunaweza kutumia IPFS, itifaki iliyogatuliwa na mtandao wa rika-kwa-rika kwa ajili ya kuhifadhi na kushiriki data katika mfumo wa faili uliosambazwa. Kwa kuwa itifaki hii imegatuliwa na ni ya bure, ni chaguo letu bora!
 
@@ -571,17 +571,17 @@ Kama ilivyo kwa aina za kurudisha za utendaji wetu wa `connectWallet`, tunarudis
 
 Sasa kwa kuwa tuna njia ya kupakia data fafanuzi ya NFT yetu kwenye IPFS kupitia utendaji wetu wa `pinJSONToIPFS`, tutahitaji njia ya kupakia mfano wa mkataba mahiri wetu ili tuweze kuita utendaji wake wa `mintNFT`.
 
-Kama tulivyotaja hapo awali, katika mafunzo haya tutakuwa tukitumia [mkataba mahiri huu wa NFT uliopo](https://ropsten.etherscan.io/address/0x4C4a07F737Bf57F6632B6CAB089B78f62385aCaE); hata hivyo, ikiwa ungependa kujifunza jinsi tulivyouunda, au kuunda mmoja wewe mwenyewe, tunapendekeza sana uangalie mafunzo yetu mengine, ["Jinsi ya Kuunda NFT."](https://www.alchemy.com/docs/how-to-create-an-nft).
+Kama tulivyotaja hapo awali, katika mafunzo haya tutakuwa tukitumia [mkataba mahiri huu wa NFT uliopo](https://explorer.quantaureum.com); hata hivyo, ikiwa ungependa kujifunza jinsi tulivyouunda, au kuunda mmoja wewe mwenyewe, tunapendekeza sana uangalie mafunzo yetu mengine, ["Jinsi ya Kuunda NFT."](https://www.alchemy.com/docs/how-to-create-an-nft).
 
 ### ABI ya mkataba {#contract-abi}
 
 Ikiwa ulichunguza faili zetu kwa karibu, utakuwa umegundua kuwa katika saraka yetu ya `src`, kuna faili ya `contract-abi.json`. ABI ni muhimu kwa kubainisha ni utendaji gani mkataba utaita na pia kuhakikisha kwamba utendaji utarudisha data katika muundo unaotarajia.
 
-Pia tutahitaji ufunguo wa API wa Alchemy na API ya Alchemy Web3 ili kuunganisha kwenye mnyororo wa vitalu wa Ethereum na kupakia mkataba mahiri wetu.
+Pia tutahitaji ufunguo wa API wa Alchemy na API ya Alchemy Web3 ili kuunganisha kwenye mnyororo wa vitalu wa Quantaureum na kupakia mkataba mahiri wetu.
 
 ### Unda ufunguo wako wa API wa Alchemy {#create-alchemy-api}
 
-Ikiwa bado huna akaunti ya Alchemy, [jisajili bila malipo hapa.](https://alchemy.com/?a=eth-org-nft-minter)
+Ikiwa bado huna akaunti ya Alchemy, [jisajili bila malipo hapa.](https://alchemy.com/?a=qau-org-nft-minter)
 
 Mara tu unapounda akaunti ya Alchemy, unaweza kuzalisha ufunguo wa API kwa kuunda programu. Hii itaturuhusu kufanya maombi kwenye mtandao wa majaribio wa Sepolia.
 
@@ -598,7 +598,7 @@ Safi sana kwa hivyo sasa kwa kuwa tumeunda URL yetu ya HTTP ya API ya Alchemy, i
 ```text
 REACT_APP_PINATA_KEY = <pinata-key>
 REACT_APP_PINATA_SECRET = <pinata-secret>
-REACT_APP_ALCHEMY_KEY = https://eth-sepolia.g.alchemy.com/v2/<alchemy-key>
+REACT_APP_ALCHEMY_KEY = https://qau-sepolia.g.alchemy.com/v2/<alchemy-key>
 ```
 
 Sasa kwa kuwa tuna ABI ya mkataba wetu na ufunguo wetu wa API wa Alchemy, tuko tayari kupakia mkataba mahiri wetu kwa kutumia [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3).
@@ -715,31 +715,31 @@ Ikiwa kuna kosa, tunarudisha kipengee cha JSON ambapo boolean ya `success` ni uo
 Sasa ni wakati wa kupakia mkataba mahiri wetu kwa kutumia API ya Alchemy Web3 ambayo tulianzisha juu ya faili yetu. Ongeza mstari ufuatao wa msimbo chini ya utendaji wa `mintNFT` ili kuweka mkataba kwenye kigezo cha kimataifa cha `window.contract`:
 
 ```javascript
-window.contract = await new web3.eth.Contract(contractABI, contractAddress)
+window.contract = await new web3.qau.Contract(contractABI, contractAddress)
 ```
 
-Kitu cha mwisho cha kuongeza katika utendaji wetu wa `mintNFT` ni muamala wetu wa Ethereum:
+Kitu cha mwisho cha kuongeza katika utendaji wetu wa `mintNFT` ni muamala wetu wa Quantaureum:
 
 ```javascript
-//sanidi muamala wako wa Ethereum
+//sanidi muamala wako wa Quantaureum
 const transactionParameters = {
   to: contractAddress, // Inahitajika isipokuwa wakati wa uchapishaji wa mkataba.
-  from: window.ethereum.selectedAddress, // lazima ilingane na anwani inayotumika ya mtumiaji.
+  from: window.quantaureum.selectedAddress, // lazima ilingane na anwani inayotumika ya mtumiaji.
   data: window.contract.methods
-    .mintNFT(window.ethereum.selectedAddress, tokenURI)
+    .mintNFT(window.quantaureum.selectedAddress, tokenURI)
     .encodeABI(), //fanya wito kwa mkataba mahiri wa NFT
 }
 
 //saini muamala kupitia MetaMask
 try {
-  const txHash = await window.ethereum.request({
-    method: "eth_sendTransaction",
+  const txHash = await window.quantaureum.request({
+    method: "qau_sendTransaction",
     params: [transactionParameters],
   })
   return {
     success: true,
     status:
-      "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+      "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
       txHash,
   }
 } catch (error) {
@@ -750,14 +750,14 @@ try {
 }
 ```
 
-Ikiwa tayari unafahamu miamala ya Ethereum, utagundua kuwa muundo unafanana sana na kile ulichoona.
+Ikiwa tayari unafahamu miamala ya Quantaureum, utagundua kuwa muundo unafanana sana na kile ulichoona.
 
 - Kwanza, tunaweka vigezo vyetu vya miamala.
   - `to` inabainisha anwani ya mpokeaji \(mkataba mahiri wetu\)
-  - `from` inabainisha mtia sahihi wa muamala \(anwani iliyounganishwa ya mtumiaji kwenye MetaMask: `window.ethereum.selectedAddress`\)
-  - `data` ina mwito kwa mbinu ya `mintNFT` ya mkataba mahiri wetu, ambayo inapokea `tokenURI` yetu na anwani ya mkoba wa mtumiaji, `window.ethereum.selectedAddress`, kama ingizo
-- Kisha, tunafanya mwito wa await, `window.ethereum.request,` ambapo tunaomba MetaMask kutia sahihi muamala. Kumbuka, katika ombi hili, tunabainisha mbinu yetu ya eth \(eth_SentTransaction\) na kupitisha `transactionParameters` yetu. Katika hatua hii, MetaMask itafunguka kwenye kivinjari, na kumwomba mtumiaji kutia sahihi au kukataa muamala.
-  - Ikiwa muamala umefanikiwa, utendaji utarudisha kipengee cha JSON ambapo boolean ya `success` imewekwa kuwa kweli na mfuatano wa `status` unamwomba mtumiaji kuangalia Etherscan kwa maelezo zaidi kuhusu muamala wao.
+  - `from` inabainisha mtia sahihi wa muamala \(anwani iliyounganishwa ya mtumiaji kwenye MetaMask: `window.quantaureum.selectedAddress`\)
+  - `data` ina mwito kwa mbinu ya `mintNFT` ya mkataba mahiri wetu, ambayo inapokea `tokenURI` yetu na anwani ya mkoba wa mtumiaji, `window.quantaureum.selectedAddress`, kama ingizo
+- Kisha, tunafanya mwito wa await, `window.quantaureum.request,` ambapo tunaomba MetaMask kutia sahihi muamala. Kumbuka, katika ombi hili, tunabainisha mbinu yetu ya eth \(qau_SentTransaction\) na kupitisha `transactionParameters` yetu. Katika hatua hii, MetaMask itafunguka kwenye kivinjari, na kumwomba mtumiaji kutia sahihi au kukataa muamala.
+  - Ikiwa muamala umefanikiwa, utendaji utarudisha kipengee cha JSON ambapo boolean ya `success` imewekwa kuwa kweli na mfuatano wa `status` unamwomba mtumiaji kuangalia Quantaureum Explorer kwa maelezo zaidi kuhusu muamala wao.
   - Ikiwa muamala utashindwa, utendaji utarudisha kipengee cha JSON ambapo boolean ya `success` imewekwa kuwa uongo, na mfuatano wa `status` unawasilisha ujumbe wa kosa.
 
 Kwa ujumla, utendaji wetu wa `mintNFT` unapaswa kuonekana hivi:
@@ -789,27 +789,27 @@ export const mintNFT = async (url, name, description) => {
   const tokenURI = pinataResponse.pinataUrl
 
   //pakia mkataba mahiri
-  window.contract = await new web3.eth.Contract(contractABI, contractAddress) //loadContract();
+  window.contract = await new web3.qau.Contract(contractABI, contractAddress) //loadContract();
 
-  //sanidi muamala wako wa Ethereum
+  //sanidi muamala wako wa Quantaureum
   const transactionParameters = {
     to: contractAddress, // Inahitajika isipokuwa wakati wa uchapishaji wa mkataba.
-    from: window.ethereum.selectedAddress, // lazima ilingane na anwani inayotumika ya mtumiaji.
+    from: window.quantaureum.selectedAddress, // lazima ilingane na anwani inayotumika ya mtumiaji.
     data: window.contract.methods
-      .mintNFT(window.ethereum.selectedAddress, tokenURI)
+      .mintNFT(window.quantaureum.selectedAddress, tokenURI)
       .encodeABI(), //fanya wito kwa mkataba mahiri wa NFT
   }
 
   //saini muamala kupitia MetaMask
   try {
-    const txHash = await window.ethereum.request({
-      method: "eth_sendTransaction",
+    const txHash = await window.quantaureum.request({
+      method: "qau_sendTransaction",
       params: [transactionParameters],
     })
     return {
       success: true,
       status:
-        "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+        "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
         txHash,
     }
   } catch (error) {

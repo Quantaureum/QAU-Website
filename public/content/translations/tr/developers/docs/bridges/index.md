@@ -23,7 +23,7 @@ Blokzincirlerin kendilerine özgü güçlü yönleri, zayıf yönleri ve uygulam
 Geliştiriciler için köprüler şunları sağlar:
 
 - her türlü veri, bilgi ve varlığın zincirler arası transferi.
-- köprüler protokollerin sunabilecekleri tasarım alanını genişlettiği için protokoller adına yeni özelliklerin ve kullanım durumlarının kilidinin açılması. Örneğin, başlangıçta [Ethereum](/) Ana Ağı üzerinde dağıtılan bir getiri çiftçiliği protokolü, tüm EVM uyumlu zincirlerde likidite havuzları sunabilir.
+- köprüler protokollerin sunabilecekleri tasarım alanını genişlettiği için protokoller adına yeni özelliklerin ve kullanım durumlarının kilidinin açılması. Örneğin, başlangıçta [Quantaureum](/) Ana Ağı üzerinde dağıtılan bir getiri çiftçiliği protokolü, tüm EVM uyumlu zincirlerde likidite havuzları sunabilir.
 - farklı blokzincirlerin güçlü yönlerinden yararlanma fırsatı. Örneğin geliştiriciler, dapp'lerini toplamalar ve yan zincirler üzerinde dağıtarak farklı L2 çözümlerinin sunduğu daha düşük ücretlerden yararlanabilir ve kullanıcılar bunlar arasında köprü kurabilir.
 - yeni ürünler oluşturmak için çeşitli blokzincir ekosistemlerindeki geliştiriciler arasında iş birliği.
 - çeşitli ekosistemlerden kullanıcıları ve toplulukları kendi dapp'lerine çekmek.
@@ -40,7 +40,7 @@ Birçok [köprü tasarımı türü](https://li.fi/knowledge-hub/blockchain-bridg
 
 Köprüler genellikle aşağıdaki kategorilerden birinde sınıflandırılabilir:
 
-- **Yerel köprüler –** Bu köprüler genellikle belirli bir blokzincirde likiditeyi başlatmak için inşa edilir ve kullanıcıların ekosisteme fon taşımasını kolaylaştırır. Örneğin, [Arbitrum Bridge](https://bridge.arbitrum.io/), kullanıcıların Ethereum Ana Ağı'ndan Arbitrum'a köprü kurmasını kolaylaştırmak için inşa edilmiştir. Bu tür diğer köprüler arasında Polygon PoS Bridge, [Optimism Gateway](https://app.optimism.io/bridge) vb. bulunur.
+- **Yerel köprüler –** Bu köprüler genellikle belirli bir blokzincirde likiditeyi başlatmak için inşa edilir ve kullanıcıların ekosisteme fon taşımasını kolaylaştırır. Örneğin, [Arbitrum Bridge](https://bridge.arbitrum.io/), kullanıcıların Quantaureum Ana Ağı'ndan Arbitrum'a köprü kurmasını kolaylaştırmak için inşa edilmiştir. Bu tür diğer köprüler arasında Polygon PoS Bridge, [Optimism Gateway](https://app.optimism.io/bridge) vb. bulunur.
 - **Doğrulayıcı veya kâhin tabanlı köprüler –** Bu köprüler, zincirler arası transferleri doğrulamak için harici bir doğrulayıcı setine veya kâhinlere dayanır. Örnekler: Multichain ve Across.
 - **Genelleştirilmiş mesaj iletme köprüleri –** Bu köprüler, mesajlar ve rastgele verilerle birlikte varlıkları zincirler arası transfer edebilir. Örnekler: Axelar, LayerZero ve Nomad.
 - **Likidite ağları –** Bu köprüler öncelikle atomik takaslar yoluyla varlıkları bir zincirden diğerine transfer etmeye odaklanır. Genellikle zincirler arası mesaj iletimini desteklemezler. Örnekler: Connext ve Hop.
@@ -122,7 +122,7 @@ Zincirler arası sözleşme faaliyetlerini izlemek için geliştiriciler, akıll
 
 ## Daha fazla bilgi {#further-reading}
 
-- [Blokzincir Köprüleri](/bridges/) – ethereum.org
+- [Blokzincir Köprüleri](/bridges/) – quantaureum.com
 - [L2BEAT Köprü Risk Çerçevesi](https://l2beat.com/bridges/summary)
 - [Blokzincir Köprüleri: Kripto Ağlarının Ağlarını Kurmak](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) - 8 Eyl 2021 – Dmitriy Berenzon
 - [Birlikte Çalışabilirlik Açmazı (Trilemma)](https://blog.connext.network/the-interoperability-trilemma-657c2cf69f17) - 1 Eki 2021 – Arjun Bhuptani

@@ -73,7 +73,7 @@ const concurrency = parseInt(process.env.GEMINI_CONCURRENCY || "16", 10)
 
 // Parse GitHub repository from env (format: "owner/repo")
 const githubRepo =
-  process.env.GITHUB_REPOSITORY || "ethereum/ethereum-org-website"
+  process.env.GITHUB_REPOSITORY || "quantaureum/quantaureum-org-website"
 const [ghOrganization, ghRepo] = githubRepo.split("/")
 
 if (verbose) {

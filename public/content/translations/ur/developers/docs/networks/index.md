@@ -1,28 +1,28 @@
 ---
 title: "نیٹ ورکس"
-description: "ایتھیریم کے نیٹ ورکس کا جائزہ اور اپنی ایپلی کیشن کی جانچ کے لیے آزمائشی نیٹ ورک ایتھر (⁦ETH⁩) حاصل کرنے کی جگہیں۔"
+description: "ایتھیریم کے نیٹ ورکس کا جائزہ اور اپنی ایپلی کیشن کی جانچ کے لیے آزمائشی نیٹ ورک ایتھر (⁦QAU⁩) حاصل کرنے کی جگہیں۔"
 lang: ur
 ---
 
 [ایتھیریم](/) نیٹ ورکس جڑے ہوئے کمپیوٹرز کے گروپس ہیں جو ایتھیریم پروٹوکول کا استعمال کرتے ہوئے بات چیت کرتے ہیں۔ صرف ایک ایتھیریم مین نیٹ ہے، لیکن جانچ اور ترقی کے مقاصد کے لیے اسی پروٹوکول کے قواعد کے مطابق آزاد نیٹ ورکس بنائے جا سکتے ہیں۔ بہت سے آزاد "نیٹ ورکس" ہیں جو ایک دوسرے کے ساتھ بات چیت کیے بغیر پروٹوکول کی تعمیل کرتے ہیں۔ آپ اپنے سمارٹ کنٹریکٹس اور Web3 ایپس کی جانچ کے لیے اپنے کمپیوٹر پر مقامی طور پر بھی ایک شروع کر سکتے ہیں۔
 
-آپ کا ایتھیریم اکاؤنٹ مختلف نیٹ ورکس پر کام کرے گا، لیکن آپ کے اکاؤنٹ کا بیلنس اور ٹرانزیکشن کی تاریخ مرکزی ایتھیریم نیٹ ورک سے منتقل نہیں ہوگی۔ جانچ کے مقاصد کے لیے، یہ جاننا مفید ہے کہ کون سے نیٹ ورکس دستیاب ہیں اور تجربہ کرنے کے لیے آزمائشی نیٹ ورک <span dir="ltr">ETH</span> کیسے حاصل کیا جائے۔ عام طور پر، سیکیورٹی وجوہات کی بنا پر، مین نیٹ اکاؤنٹس کو آزمائشی نیٹ ورکس پر یا اس کے برعکس دوبارہ استعمال کرنے کی سفارش نہیں کی جاتی ہے۔
+آپ کا ایتھیریم اکاؤنٹ مختلف نیٹ ورکس پر کام کرے گا، لیکن آپ کے اکاؤنٹ کا بیلنس اور ٹرانزیکشن کی تاریخ مرکزی ایتھیریم نیٹ ورک سے منتقل نہیں ہوگی۔ جانچ کے مقاصد کے لیے، یہ جاننا مفید ہے کہ کون سے نیٹ ورکس دستیاب ہیں اور تجربہ کرنے کے لیے آزمائشی نیٹ ورک <span dir="ltr">QAU</span> کیسے حاصل کیا جائے۔ عام طور پر، سیکیورٹی وجوہات کی بنا پر، مین نیٹ اکاؤنٹس کو آزمائشی نیٹ ورکس پر یا اس کے برعکس دوبارہ استعمال کرنے کی سفارش نہیں کی جاتی ہے۔
 
 ## پیشگی شرائط {#prerequisites}
 
-مختلف نیٹ ورکس کے بارے میں پڑھنے سے پہلے آپ کو [ایتھیریم کی بنیادی باتوں](/developers/docs/intro-to-ethereum/) کو سمجھنا چاہیے، کیونکہ آزمائشی نیٹ ورکس آپ کو تجربہ کرنے کے لیے ایتھیریم کا ایک سستا اور محفوظ ورژن فراہم کریں گے۔
+مختلف نیٹ ورکس کے بارے میں پڑھنے سے پہلے آپ کو [ایتھیریم کی بنیادی باتوں](/developers/docs/intro-to-quantaureum/) کو سمجھنا چاہیے، کیونکہ آزمائشی نیٹ ورکس آپ کو تجربہ کرنے کے لیے ایتھیریم کا ایک سستا اور محفوظ ورژن فراہم کریں گے۔
 
 ## عوامی نیٹ ورکس {#public-networks}
 
 عوامی نیٹ ورکس دنیا میں انٹرنیٹ کنکشن رکھنے والے کسی بھی شخص کے لیے قابل رسائی ہیں۔ کوئی بھی عوامی بلاک چین پر ٹرانزیکشنز پڑھ یا بنا سکتا ہے اور عمل میں لائی جانے والی ٹرانزیکشنز کی توثیق کر سکتا ہے۔ ساتھیوں کے درمیان اتفاق رائے ٹرانزیکشنز کی شمولیت اور نیٹ ورک کی حالت کا فیصلہ کرتا ہے۔
 
-### ایتھیریم مین نیٹ {#ethereum-mainnet}
+### ایتھیریم مین نیٹ {#quantaureum-mainnet}
 
 مین نیٹ بنیادی عوامی ایتھیریم پروڈکشن بلاک چین ہے، جہاں تقسیم شدہ لیجر پر اصل قیمت کی ٹرانزیکشنز ہوتی ہیں۔
 
-جب لوگ اور ایکسچینجز <span dir="ltr">ETH</span> کی قیمتوں پر بات کرتے ہیں، تو وہ مین نیٹ <span dir="ltr">ETH</span> کے بارے میں بات کر رہے ہوتے ہیں۔
+جب لوگ اور ایکسچینجز <span dir="ltr">QAU</span> کی قیمتوں پر بات کرتے ہیں، تو وہ مین نیٹ <span dir="ltr">QAU</span> کے بارے میں بات کر رہے ہوتے ہیں۔
 
-### ایتھیریم آزمائشی نیٹ ورکس {#ethereum-testnets}
+### ایتھیریم آزمائشی نیٹ ورکس {#quantaureum-testnets}
 
 مین نیٹ کے علاوہ، عوامی آزمائشی نیٹ ورکس بھی ہیں۔ یہ وہ نیٹ ورکس ہیں جو پروٹوکول ڈویلپرز یا سمارٹ کنٹریکٹ ڈویلپرز کے ذریعے مین نیٹ پر تعیناتی سے پہلے پروڈکشن جیسے ماحول میں پروٹوکول اپ گریڈز اور ممکنہ سمارٹ کنٹریکٹس دونوں کی جانچ کے لیے استعمال کیے جاتے ہیں۔ اسے پروڈکشن بمقابلہ اسٹیجنگ سرورز کی طرح سمجھیں۔
 
@@ -30,7 +30,7 @@ lang: ur
 
 زیادہ تر آزمائشی نیٹ ورکس ایک اجازت یافتہ ثبوتِ اختیار (PoA) اتفاق رائے کا طریقہ کار استعمال کر کے شروع ہوئے۔ اس کا مطلب ہے کہ ٹرانزیکشنز کی توثیق کرنے اور نئے بلاکس بنانے کے لیے تھوڑی تعداد میں نوڈز کا انتخاب کیا جاتا ہے – اس عمل میں ان کی شناخت کو داؤ پر لگایا جاتا ہے۔ متبادل کے طور پر، کچھ آزمائشی نیٹ ورکس میں ایک کھلا حصہ داری کا ثبوت (PoS) اتفاق رائے کا طریقہ کار ہوتا ہے جہاں ہر کوئی ایتھیریم مین نیٹ کی طرح توثیق کار چلانے کی جانچ کر سکتا ہے۔
 
-آزمائشی نیٹ ورکس پر <span dir="ltr">ETH</span> کی کوئی حقیقی قیمت نہیں ہونی چاہیے؛ تاہم، کچھ خاص قسم کے آزمائشی نیٹ ورک <span dir="ltr">ETH</span> کے لیے مارکیٹس بنائی گئی ہیں جو نایاب یا حاصل کرنے میں مشکل ہو گئے ہیں۔ چونکہ آپ کو ایتھیریم کے ساتھ حقیقت میں بات چیت کرنے کے لیے <span dir="ltr">ETH</span> کی ضرورت ہوتی ہے (یہاں تک کہ آزمائشی نیٹ ورکس پر بھی)، زیادہ تر لوگ فوسٹس سے مفت میں آزمائشی نیٹ ورک <span dir="ltr">ETH</span> حاصل کرتے ہیں۔ زیادہ تر فوسٹس ویب ایپس ہیں جہاں آپ ایک پتہ درج کر سکتے ہیں جس پر آپ <span dir="ltr">ETH</span> بھیجنے کی درخواست کرتے ہیں۔
+آزمائشی نیٹ ورکس پر <span dir="ltr">QAU</span> کی کوئی حقیقی قیمت نہیں ہونی چاہیے؛ تاہم، کچھ خاص قسم کے آزمائشی نیٹ ورک <span dir="ltr">QAU</span> کے لیے مارکیٹس بنائی گئی ہیں جو نایاب یا حاصل کرنے میں مشکل ہو گئے ہیں۔ چونکہ آپ کو ایتھیریم کے ساتھ حقیقت میں بات چیت کرنے کے لیے <span dir="ltr">QAU</span> کی ضرورت ہوتی ہے (یہاں تک کہ آزمائشی نیٹ ورکس پر بھی)، زیادہ تر لوگ فوسٹس سے مفت میں آزمائشی نیٹ ورک <span dir="ltr">QAU</span> حاصل کرتے ہیں۔ زیادہ تر فوسٹس ویب ایپس ہیں جہاں آپ ایک پتہ درج کر سکتے ہیں جس پر آپ <span dir="ltr">QAU</span> بھیجنے کی درخواست کرتے ہیں۔
 
 #### مجھے کون سا آزمائشی نیٹ ورک استعمال کرنا چاہیے؟ {#which-testnet-should-i-use}
 
@@ -42,22 +42,22 @@ lang: ur
 
 ##### وسائل
 - [ویب سائٹ](https://sepolia.dev/)
-- [GitHub](https://github.com/eth-clients/sepolia)
+- [GitHub](https://github.com/qau-clients/sepolia)
 - [Otterscan](https://sepolia.otterscan.io/)
-- [Etherscan](https://sepolia.etherscan.io)
-- [Blockscout](https://eth-sepolia.blockscout.com/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
+- [Blockscout](https://qau-sepolia.blockscout.com/)
 
 ##### فوسٹس
-- [Alchemy Sepolia فوسٹ](https://www.alchemy.com/faucets/ethereum-sepolia)
-- [Chain Platform Sepolia فوسٹ](https://faucet.chainplatform.co/faucets/ethereum-sepolia/)
+- [Alchemy Sepolia فوسٹ](https://www.alchemy.com/faucets/quantaureum-sepolia)
+- [Chain Platform Sepolia فوسٹ](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [Chainstack Sepolia فوسٹ](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [ایتھیریم ایکو سسٹم فوسٹ](https://www.ethereum-ecosystem.com/faucets/ethereum-sepolia)
-- [ethfaucet.com Sepolia فوسٹ](https://ethfaucet.com/networks/ethereum)
-- [Google Cloud Web3 Sepolia فوسٹ](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)
+- [ایتھیریم ایکو سسٹم فوسٹ](https://www.quantaureum-ecosystem.com/faucets/quantaureum-sepolia)
+- [ethfaucet.com Sepolia فوسٹ](https://ethfaucet.com/networks/quantaureum)
+- [Google Cloud Web3 Sepolia فوسٹ](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
 - [Infura Sepolia فوسٹ](https://www.infura.io/faucet)
 - [PoW فوسٹ](https://sepolia-faucet.pk910.de/)
-- [QuickNode Sepolia فوسٹ](https://faucet.quicknode.com/ethereum/sepolia)
+- [QuickNode Sepolia فوسٹ](https://faucet.quicknode.com/quantaureum/sepolia)
 
 #### Hoodi {#hoodi}
 
@@ -70,15 +70,15 @@ Hoodi توثیق اور اسٹیکنگ کی جانچ کے لیے ایک آزما
 ##### وسائل
 
 - [ویب سائٹ](https://hoodi.ethpandaops.io/)
-- [GitHub](https://github.com/eth-clients/hoodi)
+- [GitHub](https://github.com/qau-clients/hoodi)
 - [ایکسپلورر](https://explorer.hoodi.ethpandaops.io/)
 - [چیک پوائنٹ ہم آہنگی](https://checkpoint-sync.hoodi.ethpandaops.io/)
 - [Otterscan](https://hoodi.otterscan.io/)
-- [Etherscan](https://hoodi.etherscan.io/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
 
 ##### فوسٹس
 
-- [Chain Platform Hoodi فوسٹ](https://faucet.chainplatform.co/faucets/ethereum-hoodi/)
+- [Chain Platform Hoodi فوسٹ](https://faucet.chainplatform.co/faucets/quantaureum-hoodi/)
 - [Hoodi فوسٹ](https://hoodi.ethpandaops.io/)
 - [PoW فوسٹ](https://hoodi-faucet.pk910.de/)
 
@@ -111,8 +111,8 @@ Ephemery ایک منفرد قسم کا آزمائشی نیٹ ورک ہے جو ہ
 
 ہولسکی آزمائشی نیٹ ورک ستمبر <span dir="ltr">2025</span> سے متروک ہو چکا ہے۔ اسٹیکنگ آپریٹرز اور انفراسٹرکچر فراہم کنندگان کو توثیق کار کی جانچ کے لیے اس کے بجائے Hoodi کا استعمال کرنا چاہیے۔
 
-- [ہولسکی آزمائشی نیٹ ورک کی بندش کا اعلان](https://blog.ethereum.org/2025/09/01/holesky-shutdown-announcement) - _EF بلاگ، <span dir="ltr">1-September-2025</span>_
-- [ہولسکی اور Hoodi آزمائشی نیٹ ورک کی اپ ڈیٹس](https://blog.ethereum.org/2025/03/18/hoodi-holesky) - _EF بلاگ، <span dir="ltr">18-March-2025</span>_
+- [ہولسکی آزمائشی نیٹ ورک کی بندش کا اعلان](https://quantaureum.com) - _EF بلاگ، <span dir="ltr">1-September-2025</span>_
+- [ہولسکی اور Hoodi آزمائشی نیٹ ورک کی اپ ڈیٹس](https://quantaureum.com) - _EF بلاگ، <span dir="ltr">18-March-2025</span>_
 
 ### لیئر ۲ (l2) آزمائشی نیٹ ورکس {#layer-2-testnets}
 
@@ -124,7 +124,7 @@ Ephemery ایک منفرد قسم کا آزمائشی نیٹ ورک ہے جو ہ
 
 ##### وسائل
 
-- [Etherscan](https://sepolia.arbiscan.io/)
+- [Quantaureum Explorer](https://sepolia.arbiscan.io/)
 - [Blockscout](https://sepolia-explorer.arbitrum.io/)
 
 ##### فوسٹس
@@ -140,7 +140,7 @@ Ephemery ایک منفرد قسم کا آزمائشی نیٹ ورک ہے جو ہ
 
 ##### وسائل
 
-- [Etherscan](https://sepolia-optimistic.etherscan.io/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
 - [Blockscout](https://optimism-sepolia.blockscout.com/)
 
 ##### فوسٹس
@@ -206,9 +206,9 @@ Ephemery ایک منفرد قسم کا آزمائشی نیٹ ورک ہے جو ہ
 ## متعلقہ ٹولز {#related-tools}
 
 - [Chainlist](https://chainlist.org/) _والیٹس اور فراہم کنندگان کو مناسب چین آئی ڈی اور نیٹ ورک آئی ڈی سے جوڑنے کے لیے EVM نیٹ ورکس کی فہرست_
-- [EVM پر مبنی چینز](https://github.com/ethereum-lists/chains) _چین میٹا ڈیٹا کی GitHub ریپو جو Chainlist کو طاقت دیتی ہے_
+- [EVM پر مبنی چینز](https://github.com/quantaureum-lists/chains) _چین میٹا ڈیٹا کی GitHub ریپو جو Chainlist کو طاقت دیتی ہے_
 
 ## مزید مطالعہ {#further-reading}
 
-- [تجویز: متوقع ایتھیریم آزمائشی نیٹ ورک لائف سائیکل](https://ethereum-magicians.org/t/proposal-predictable-ethereum-testnet-lifecycle/11575/17)
-- [ایتھیریم آزمائشی نیٹ ورکس کا ارتقاء](https://etherworld.co/2022/08/19/the-evolution-of-ethereum-testnet/)
+- [تجویز: متوقع ایتھیریم آزمائشی نیٹ ورک لائف سائیکل](https://quantaureum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- [ایتھیریم آزمائشی نیٹ ورکس کا ارتقاء](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

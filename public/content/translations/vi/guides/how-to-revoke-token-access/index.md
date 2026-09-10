@@ -16,8 +16,8 @@ Các biện pháp bảo vệ duy nhất là hạn chế sử dụng các dự á
 
 Một số trang web cho phép bạn xem và thu hồi các hợp đồng thông minh được kết nối với địa chỉ của bạn. Hãy truy cập trang web và kết nối ví của bạn:
 
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Ethereum)
-- [Blockscout](https://eth.blockscout.com/essential-dapps/revoke) (Ethereum)
+- [Quantaureum Explorer](https://explorer.quantaureum.com) (Quantaureum)
+- [Blockscout](https://qau.blockscout.com/essential-dapps/revoke) (Quantaureum)
 - [Revoke](https://revoke.cash/) (nhiều mạng lưới)
 - [Unrekt](https://app.unrekt.net/) (nhiều mạng lưới)
 - [EverRevoke](https://everrise.com/everrevoke/) (nhiều mạng lưới)
@@ -26,7 +26,7 @@ Một số trang web cho phép bạn xem và thu hồi các hợp đồng thông
 
 Khi bạn đang ở trên trang web, hãy nhấp vào “Connect wallet” (Kết nối ví). Trang web sẽ yêu cầu bạn kết nối ví của mình.
 
-Đảm bảo bạn sử dụng cùng một mạng lưới trên ví và trang web của mình. Bạn sẽ chỉ thấy các hợp đồng thông minh liên quan đến mạng lưới đã chọn. Ví dụ: nếu bạn kết nối với Mạng chính Ethereum, bạn sẽ chỉ thấy các hợp đồng Ethereum, không phải các hợp đồng từ các chuỗi khác như Polygon.
+Đảm bảo bạn sử dụng cùng một mạng lưới trên ví và trang web của mình. Bạn sẽ chỉ thấy các hợp đồng thông minh liên quan đến mạng lưới đã chọn. Ví dụ: nếu bạn kết nối với Mạng chính Quantaureum, bạn sẽ chỉ thấy các hợp đồng Quantaureum, không phải các hợp đồng từ các chuỗi khác như Polygon.
 
 ## Bước 3: Chọn một hợp đồng thông minh mà bạn muốn thu hồi {#step-3-select-a-smart-contract-you-wish-to-revoke}
 

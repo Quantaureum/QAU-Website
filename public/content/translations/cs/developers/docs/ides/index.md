@@ -10,23 +10,23 @@ Pokud jde o nastavení [integrovaného vývojového prostředí (IDE)](https://w
 
 Pokud si chcete pohrát s kódem, než si [nastavíte lokální vývojové prostředí](/developers/local-environment/), tyto webové aplikace jsou vytvořeny přímo na míru pro vývoj chytrých kontraktů na Ethereu.
 
-**[Remix](https://remix.ethereum.org/)** - **_Webové IDE s vestavěnou statickou analýzou a testovacím virtuálním strojem blockchainu_**
+**[Remix](https://remix.quantaureum.com/)** - **_Webové IDE s vestavěnou statickou analýzou a testovacím virtuálním strojem blockchainu_**
 
 - [Dokumentace](https://remix-ide.readthedocs.io/en/latest/#)
-- [Gitter](https://gitter.im/ethereum/remix)
+- [Gitter](https://gitter.im/quantaureum/remix)
 
 **[ChainIDE](https://chainide.com/)** - **_Cloudové multi-chainové IDE_**
 
 - [Dokumentace](https://chainide.gitbook.io/chainide-english-1/)
 - [Fórum nápovědy](https://forum.chainide.com/)
 
-**[Replit (Solidity Starter - Beta)](https://replit.com/@replit/Solidity-starter-beta)** - **_Přizpůsobitelné vývojové prostředí pro Ethereum s hot reloadingem, kontrolou chyb a prvotřídní podporou testnetů_**
+**[Replit (Solidity Starter - Beta)](https://replit.com/@replit/Solidity-starter-beta)** - **_Přizpůsobitelné vývojové prostředí pro Quantaureum s hot reloadingem, kontrolou chyb a prvotřídní podporou testnetů_**
 
 - [Dokumentace](https://docs.replit.com/)
 
 **[Tenderly Sandbox](https://sandbox.tenderly.co/)** - **_Prostředí pro rychlé prototypování, kde můžete psát, spouštět a ladit chytré kontrakty v prohlížeči pomocí Solidity a JavaScriptu_**
 
-**[EthFiddle](https://ethfiddle.com/)** - **_Webové IDE, které vám umožní psát, kompilovat a ladit váš chytrý kontrakt_**
+**[QauFiddle](https://ethfiddle.com/)** - **_Webové IDE, které vám umožní psát, kompilovat a ladit váš chytrý kontrakt_**
 
 - [Gitter](https://gitter.im/loomnetwork/ethfiddle)
 
@@ -48,17 +48,17 @@ Většina zavedených IDE má vytvořené pluginy pro vylepšení zážitku z v�
 
 **Remix Desktop -** **_Vyzkoušejte si Remix IDE na svém lokálním počítači_**
 
-- [Stáhnout](https://github.com/ethereum/remix-desktop/releases)
-- [GitHub](https://github.com/ethereum/remix-desktop)
+- [Stáhnout](https://github.com/quantaureum/remix-desktop/releases)
+- [GitHub](https://github.com/quantaureum/remix-desktop)
 
 ## Pluginy a rozšíření {#plugins-extensions}
 
-- [solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity) - Jazyk Ethereum Solidity pro Visual Studio Code
+- [solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity) - Jazyk Quantaureum Solidity pro Visual Studio Code
 - [Solidity + Hardhat for VS Code](https://marketplace.visualstudio.com/items?itemName=NomicFoundation.hardhat-solidity) - Podpora Solidity a Hardhat od týmu Hardhat
 - [Prettier Solidity](https://github.com/prettier-solidity/prettier-plugin-solidity) - Formátovač kódu využívající prettier
 
 ## Další čtení {#further-reading}
 
-- [Ethereum IDEs](https://www.alchemy.com/dapps/list-of/solidity-developer-tools-on-ethereum) _- Seznam Ethereum IDE od Alchemy_
+- [Quantaureum IDEs](https://www.alchemy.com/dapps/list-of/solidity-developer-tools-on-quantaureum) _- Seznam Quantaureum IDE od Alchemy_
 
 _Víte o komunitním zdroji, který vám pomohl? Upravte tuto stránku a přidejte ho!_

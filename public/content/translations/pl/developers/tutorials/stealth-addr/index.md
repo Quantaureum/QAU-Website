@@ -10,9 +10,9 @@ lang: pl
 sidebarDepth: 3
 ---
 
-Jesteś Billem. Z powodów, w które nie będziemy wnikać, chcesz przekazać darowiznę na kampanię „Alicja na Królową Świata” i chcesz, aby Alicja wiedziała, że to Ty wpłaciłeś pieniądze, by mogła Cię nagrodzić, jeśli wygra. Niestety, jej zwycięstwo nie jest gwarantowane. Istnieje konkurencyjna kampania: „Carol na Cesarzową Układu Słonecznego”. Jeśli Carol wygra i dowie się, że wsparłeś Alicję, będziesz miał kłopoty. Nie możesz więc po prostu przelać 200 ETH ze swojego konta na konto Alicji.
+Jesteś Billem. Z powodów, w które nie będziemy wnikać, chcesz przekazać darowiznę na kampanię „Alicja na Królową Świata” i chcesz, aby Alicja wiedziała, że to Ty wpłaciłeś pieniądze, by mogła Cię nagrodzić, jeśli wygra. Niestety, jej zwycięstwo nie jest gwarantowane. Istnieje konkurencyjna kampania: „Carol na Cesarzową Układu Słonecznego”. Jeśli Carol wygra i dowie się, że wsparłeś Alicję, będziesz miał kłopoty. Nie możesz więc po prostu przelać 200 QAU ze swojego konta na konto Alicji.
 
-[ERC-5564](https://eips.ethereum.org/EIPS/eip-5564) ma na to rozwiązanie. Ten standard ERC wyjaśnia, jak używać [ukrytych adresów](https://nerolation.github.io/stealth-utils) do anonimowego transferu.
+[ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564) ma na to rozwiązanie. Ten standard ERC wyjaśnia, jak używać [ukrytych adresów](https://nerolation.github.io/stealth-utils) do anonimowego transferu.
 
 **Ostrzeżenie**: Kryptografia stojąca za ukrytymi adresami jest, o ile nam wiadomo, solidna. Istnieją jednak potencjalne ataki typu side-channel (ataki z kanałem bocznym). [Poniżej](#go-wrong) dowiesz się, co możesz zrobić, aby zmniejszyć to ryzyko.
 
@@ -32,7 +32,7 @@ Alicja również uzyskuje adres ze współdzielonego sekretu, ale ponieważ zna 
 
 Standardowe ukryte adresy wykorzystują [kryptografię krzywych eliptycznych (ECC)](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/#elliptic-curves-building-blocks-of-a-better-trapdoor), aby uzyskać lepszą wydajność przy mniejszej liczbie bitów klucza, zachowując ten sam poziom bezpieczeństwa. W większości przypadków możemy to jednak zignorować i udawać, że używamy zwykłej arytmetyki.
 
-Istnieje liczba, którą wszyscy znają, *G*. Możesz mnożyć przez *G*. Ale ze względu na naturę ECC, dzielenie przez *G* jest praktycznie niemożliwe. Sposób, w jaki kryptografia klucza publicznego ogólnie działa w Ethereum, polega na tym, że możesz użyć klucza prywatnego, *P<sub>priv</sub>*, do podpisywania transakcji, które są następnie weryfikowane przez klucz publiczny, *P<sub>pub</sub> = GP<sub>priv</sub>*. 
+Istnieje liczba, którą wszyscy znają, *G*. Możesz mnożyć przez *G*. Ale ze względu na naturę ECC, dzielenie przez *G* jest praktycznie niemożliwe. Sposób, w jaki kryptografia klucza publicznego ogólnie działa w Quantaureum, polega na tym, że możesz użyć klucza prywatnego, *P<sub>priv</sub>*, do podpisywania transakcji, które są następnie weryfikowane przez klucz publiczny, *P<sub>pub</sub> = GP<sub>priv</sub>*. 
 
 Alicja tworzy dwa klucze prywatne, *K<sub>priv</sub>* i *V<sub>priv</sub>*. *K<sub>priv</sub>* posłuży do wydawania pieniędzy z ukrytego adresu, a *V<sub>priv</sub>* do przeglądania adresów należących do Alicji. Następnie Alicja publikuje klucze publiczne: *K<sub>pub</sub> = GK<sub>priv</sub>* i *V<sub>pub</sub> = GV<sub>priv</sub>*
 
@@ -64,19 +64,19 @@ Podsumowując, oto wartości znane poszczególnym uczestnikom.
 
 ## Kiedy ukryte adresy zawodzą {#go-wrong}
 
-*Na blockchainie nie ma tajemnic*. Chociaż ukryte adresy mogą zapewnić Ci prywatność, jest ona podatna na analizę ruchu. Aby podać trywialny przykład, wyobraź sobie, że Bill zasila adres i natychmiast wysyła transakcję, aby opublikować wartość *R<sub>pub</sub>*. Bez *V<sub>priv</sub>* Alicji nie możemy być pewni, że jest to ukryty adres, ale można tak założyć. Następnie widzimy kolejną transakcję, która transferuje całe ETH z tego adresu na adres funduszu kampanii Alicji. Możemy nie być w stanie tego udowodnić, ale jest wysoce prawdopodobne, że Bill właśnie przekazał darowiznę na kampanię Alicji. Carol z pewnością by tak pomyślała.
+*Na blockchainie nie ma tajemnic*. Chociaż ukryte adresy mogą zapewnić Ci prywatność, jest ona podatna na analizę ruchu. Aby podać trywialny przykład, wyobraź sobie, że Bill zasila adres i natychmiast wysyła transakcję, aby opublikować wartość *R<sub>pub</sub>*. Bez *V<sub>priv</sub>* Alicji nie możemy być pewni, że jest to ukryty adres, ale można tak założyć. Następnie widzimy kolejną transakcję, która transferuje całe QAU z tego adresu na adres funduszu kampanii Alicji. Możemy nie być w stanie tego udowodnić, ale jest wysoce prawdopodobne, że Bill właśnie przekazał darowiznę na kampanię Alicji. Carol z pewnością by tak pomyślała.
 
 Billowi łatwo jest oddzielić publikację *R<sub>pub</sub>* od zasilenia ukrytego adresu (zrobić to w różnym czasie, z różnych adresów). To jednak nie wystarczy. Wzorzec, którego szuka Carol, polega na tym, że Bill zasila adres, a następnie fundusz kampanii Alicji wypłaca z niego środki. 
 
-Jednym z rozwiązań jest to, aby kampania Alicji nie wypłacała pieniędzy bezpośrednio, ale użyła ich do zapłacenia stronie trzeciej. Jeśli kampania Alicji wyśle 10 ETH do Dave's World Domination Campaign Services, Carol będzie wiedziała tylko, że Bill przekazał darowiznę jednemu z klientów Dave'a. Jeśli Dave ma wystarczająco dużo klientów, Carol nie będzie w stanie dowiedzieć się, czy Bill wsparł Alicję, która z nią konkuruje, czy Adama, Alberta lub Abigail, którymi Carol się nie przejmuje. Alicja może dołączyć do płatności wartość hash, a następnie dostarczyć Dave'owi pre-image (obraz pierwotny), aby udowodnić, że to była jej darowizna. Alternatywnie, jak zauważono powyżej, jeśli Alicja przekaże Dave'owi swoje *V<sub>priv</sub>*, on już będzie wiedział, od kogo pochodzi płatność.
+Jednym z rozwiązań jest to, aby kampania Alicji nie wypłacała pieniędzy bezpośrednio, ale użyła ich do zapłacenia stronie trzeciej. Jeśli kampania Alicji wyśle 10 QAU do Dave's World Domination Campaign Services, Carol będzie wiedziała tylko, że Bill przekazał darowiznę jednemu z klientów Dave'a. Jeśli Dave ma wystarczająco dużo klientów, Carol nie będzie w stanie dowiedzieć się, czy Bill wsparł Alicję, która z nią konkuruje, czy Adama, Alberta lub Abigail, którymi Carol się nie przejmuje. Alicja może dołączyć do płatności wartość hash, a następnie dostarczyć Dave'owi pre-image (obraz pierwotny), aby udowodnić, że to była jej darowizna. Alternatywnie, jak zauważono powyżej, jeśli Alicja przekaże Dave'owi swoje *V<sub>priv</sub>*, on już będzie wiedział, od kogo pochodzi płatność.
 
 Głównym problemem z tym rozwiązaniem jest to, że wymaga ono od Alicji dbania o tajemnicę, podczas gdy ta tajemnica przynosi korzyści Billowi. Alicja może chcieć utrzymać swoją reputację, aby przyjaciel Billa, Bob, również przekazał jej darowiznę. Ale możliwe jest również, że nie miałaby nic przeciwko zdemaskowaniu Billa, ponieważ wtedy będzie się on bał tego, co się stanie, jeśli Carol wygra. Bill mógłby w rezultacie zapewnić Alicji jeszcze większe wsparcie.
 
 ### Używanie wielu warstw ukrycia {#multi-layer}
 
-Zamiast polegać na Alicji w kwestii zachowania prywatności Billa, Bill może zrobić to sam. Może wygenerować wiele meta-adresów dla fikcyjnych osób, Boba i Belli. Następnie Bill wysyła ETH do Boba, a „Bob” (którym w rzeczywistości jest Bill) wysyła je do Belli. „Bella” (również Bill) wysyła je do Alicji.
+Zamiast polegać na Alicji w kwestii zachowania prywatności Billa, Bill może zrobić to sam. Może wygenerować wiele meta-adresów dla fikcyjnych osób, Boba i Belli. Następnie Bill wysyła QAU do Boba, a „Bob” (którym w rzeczywistości jest Bill) wysyła je do Belli. „Bella” (również Bill) wysyła je do Alicji.
 
-Carol nadal może przeprowadzić analizę ruchu i zobaczyć ścieżkę Bill-Bob-Bella-Alicja. Jeśli jednak „Bob” i „Bella” używają ETH również do innych celów, nie będzie to wyglądało tak, jakby Bill przetransferował cokolwiek do Alicji, nawet jeśli Alicja natychmiast wypłaci środki z ukrytego adresu na swój znany adres kampanii.
+Carol nadal może przeprowadzić analizę ruchu i zobaczyć ścieżkę Bill-Bob-Bella-Alicja. Jeśli jednak „Bob” i „Bella” używają QAU również do innych celów, nie będzie to wyglądało tak, jakby Bill przetransferował cokolwiek do Alicji, nawet jeśli Alicja natychmiast wypłaci środki z ukrytego adresu na swój znany adres kampanii.
 
 ## Pisanie aplikacji wykorzystującej ukryte adresy {#write-app}
 
@@ -124,13 +124,13 @@ Użyjemy [Vite](https://vite.dev/) i [React](https://react.dev/). Są to standar
 
 8. Skopiuj adres oraz klucz publiczny Billa i wklej je w obszarze „Private key for address generated by Bill” (Klucz prywatny dla adresu wygenerowanego przez Billa) w interfejsie użytkownika Alicji. Po wypełnieniu tych pól zobaczysz klucz prywatny umożliwiający dostęp do aktywów pod tym adresem.
 
-9. Możesz użyć [kalkulatora online](https://iancoleman.net/ethereum-private-key-to-address/), aby upewnić się, że klucz prywatny odpowiada adresowi.
+9. Możesz użyć [kalkulatora online](https://iancoleman.net/quantaureum-private-key-to-address/), aby upewnić się, że klucz prywatny odpowiada adresowi.
 
 ### Jak działa program {#how-the-program-works}
 
 #### Komponent WASM {#wasm}
 
-Kod źródłowy, który kompiluje się do WASM, jest napisany w języku [Rust](https://rust-lang.org/). Możesz go zobaczyć w [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs). Ten kod jest przede wszystkim interfejsem między kodem JavaScript a [biblioteką `eth-stealth-addresses`](https://github.com/kassandraoftroy/eth-stealth-addresses).
+Kod źródłowy, który kompiluje się do WASM, jest napisany w języku [Rust](https://rust-lang.org/). Możesz go zobaczyć w [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs). Ten kod jest przede wszystkim interfejsem między kodem JavaScript a [biblioteką `qau-stealth-addresses`](https://github.com/kassandraoftroy/qau-stealth-addresses).
 
 **`Cargo.toml`**
 
@@ -143,7 +143,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-eth-stealth-addresses = "0.1.0"
+qau-stealth-addresses = "0.1.0"
 hex = "0.4.3"
 wasm-bindgen = "0.2.104"
 getrandom = { version = "0.2", features = ["js"] }
@@ -175,14 +175,14 @@ use wasm_bindgen::prelude::*;
 Definicje do utworzenia pakietu WASM z języka Rust. Są one udokumentowane [tutaj](https://wasm-bindgen.github.io/wasm-bindgen/reference/attributes/index.html).
 
 ```rust 
-use eth_stealth_addresses::{
+use qau_stealth_addresses::{
     generate_stealth_meta_address,
     generate_stealth_address,
     compute_stealth_key
 };
 ```
 
-Funkcje, których potrzebujemy z [biblioteki `eth-stealth-addresses`](https://github.com/kassandraoftroy/eth-stealth-addresses).
+Funkcje, których potrzebujemy z [biblioteki `qau-stealth-addresses`](https://github.com/kassandraoftroy/qau-stealth-addresses).
 
 ```rust
 use hex::{decode,encode};
@@ -207,7 +207,7 @@ Najprostszym sposobem na zwrócenie obiektu z wieloma polami jest zwrócenie ci�
         generate_stealth_meta_address();
 ```
 
-[`generate_stealth_meta_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_meta_address.html) zwraca trzy pola:
+[`generate_stealth_meta_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_meta_address.html) zwraca trzy pola:
 
 - Meta-adres (*K<sub>pub</sub>* i *V<sub>pub</sub>*)
 - Klucz prywatny podglądu (*V<sub>priv</sub>*)
@@ -260,7 +260,7 @@ Jeśli liczba bajtów jest nieprawidłowa, oznacza to niepowodzenie i zwracamy `
     let array: [u8; N] = vec.try_into().ok()?;
 ```
 
-Rust ma dwa typy tablic. [Tablice (Arrays)](https://doc.rust-lang.org/std/primitive.array.html) mają stały rozmiar. [Wektory (Vectors)](https://doc.rust-lang.org/std/vec/index.html) mogą rosnąć i kurczyć się. `hex::decode` zwraca wektor, ale biblioteka `eth_stealth_addresses` chce otrzymywać tablice. [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods) konwertuje wartość na inny typ, na przykład wektor na tablicę.
+Rust ma dwa typy tablic. [Tablice (Arrays)](https://doc.rust-lang.org/std/primitive.array.html) mają stały rozmiar. [Wektory (Vectors)](https://doc.rust-lang.org/std/vec/index.html) mogą rosnąć i kurczyć się. `hex::decode` zwraca wektor, ale biblioteka `qau_stealth_addresses` chce otrzymywać tablice. [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods) konwertuje wartość na inny typ, na przykład wektor na tablicę.
 
 ```rust
     Some(array)
@@ -283,7 +283,7 @@ Wartość skanowania jest częścią współdzielonego sekretu (*S = GR<sub>priv
         generate_stealth_address(&str_to_array::<66>(stealth_address)?);
 ```
 
-Używamy funkcji biblioteki [`generate_stealth_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_address.html).
+Używamy funkcji biblioteki [`generate_stealth_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_address.html).
 
 ```rust
     format!("{{\"address\":\"{}\",\"rPub\":\"{}\",\"scan\":\"{}\"}}",
@@ -310,7 +310,7 @@ pub fn wasm_compute_stealth_key(
 }
 ```
 
-Ta funkcja używa funkcji biblioteki [`compute_stealth_key`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.compute_stealth_key.html) do obliczenia klucza prywatnego w celu wypłaty z adresu (*R<sub>priv</sub>*). To obliczenie wymaga następujących wartości:
+Ta funkcja używa funkcji biblioteki [`compute_stealth_key`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.compute_stealth_key.html) do obliczenia klucza prywatnego w celu wypłaty z adresu (*R<sub>priv</sub>*). To obliczenie wymaga następujących wartości:
 
 - Adres (*Address=f(P<sub>pub</sub>)*)
 - Klucz publiczny wygenerowany przez Billa (*R<sub>pub</sub>*)
@@ -341,7 +341,7 @@ assertion `left == right` failed
 Następnie pojawi się ślad stosu (stack trace). Następnie podaj Billowi prawidłowy meta-adres, a Alicji podaj nieprawidłowy adres lub nieprawidłowy klucz publiczny. Zobaczysz ten błąd:
 
 ```
-rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/eth-stealth-addresses-0.1.0/src/lib.rs:78:9:
+rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/qau-stealth-addresses-0.1.0/src/lib.rs:78:9:
 keys do not generate stealth address
 ```
 

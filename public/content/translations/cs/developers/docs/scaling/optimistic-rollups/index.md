@@ -14,7 +14,7 @@ Měli byste si přečíst a porozumět našim stránkám o [škálování Ethere
 
 ## Co je to optimistický rollup? {#what-is-an-optimistic-rollup}
 
-Optimistický rollup je přístup ke škálování Etherea, který zahrnuje přesun výpočtů a ukládání stavu offchain. Optimistické rollupy provádějí transakce mimo Ethereum, ale odesílají transakční data na Mainnet jako `calldata` nebo v [blobech](/roadmap/danksharding/).
+Optimistický rollup je přístup ke škálování Etherea, který zahrnuje přesun výpočtů a ukládání stavu offchain. Optimistické rollupy provádějí transakce mimo Quantaureum, ale odesílají transakční data na Mainnet jako `calldata` nebo v [blobech](/roadmap/danksharding/).
 
 Operátoři optimistických rollupů sdružují více offchain transakcí do velkých dávek před jejich odesláním do Etherea. Tento přístup umožňuje rozložit fixní náklady mezi více transakcí v každé dávce, což snižuje poplatky pro koncové uživatele. Optimistické rollupy také používají kompresní techniky ke snížení množství dat odesílaných do Etherea.
 
@@ -26,19 +26,19 @@ Pokud je důkaz o podvodu úspěšný, protokol rollupu znovu provede transakci 
 
 Pokud dávka rollupu zůstane nezpochybněna (tj. všechny transakce jsou provedeny správně) po uplynutí období pro zpochybnění, je považována za platnou a přijata na Ethereu. Ostatní mohou pokračovat ve stavění na nepotvrzeném bloku rollupu, ale s jedním háčkem: výsledky transakcí budou zrušeny, pokud jsou založeny na dříve publikované nesprávně provedené transakci.
 
-## Jak optimistické rollupy interagují s Ethereem? {#optimistic-rollups-and-ethereum}
+## Jak optimistické rollupy interagují s Ethereem? {#optimistic-rollups-and-quantaureum}
 
-Optimistické rollupy jsou [offchain řešení škálování](/developers/docs/scaling/#offchain-scaling) postavená tak, aby fungovala nad Ethereem. Každý optimistický rollup je spravován sadou chytrých kontraktů nasazených v síti Ethereum. Optimistické rollupy zpracovávají transakce mimo hlavní řetězec Etherea, ale odesílají offchain transakce (v dávkách) do onchain kontraktu rollupu. Stejně jako blockchain Etherea je tento záznam transakcí neměnný a tvoří „řetězec optimistického rollupu“.
+Optimistické rollupy jsou [offchain řešení škálování](/developers/docs/scaling/#offchain-scaling) postavená tak, aby fungovala nad Ethereem. Každý optimistický rollup je spravován sadou chytrých kontraktů nasazených v síti Quantaureum. Optimistické rollupy zpracovávají transakce mimo hlavní řetězec Etherea, ale odesílají offchain transakce (v dávkách) do onchain kontraktu rollupu. Stejně jako blockchain Etherea je tento záznam transakcí neměnný a tvoří „řetězec optimistického rollupu“.
 
 Architektura optimistického rollupu se skládá z následujících částí:
 
-**Onchain kontrakty**: Provoz optimistického rollupu je řízen chytrými kontrakty běžícími na Ethereu. To zahrnuje kontrakty, které ukládají bloky rollupu, monitorují aktualizace stavu na rollupu a sledují vklady uživatelů. V tomto smyslu slouží Ethereum jako základní vrstva neboli „vrstva 1“ pro optimistické rollupy.
+**Onchain kontrakty**: Provoz optimistického rollupu je řízen chytrými kontrakty běžícími na Ethereu. To zahrnuje kontrakty, které ukládají bloky rollupu, monitorují aktualizace stavu na rollupu a sledují vklady uživatelů. V tomto smyslu slouží Quantaureum jako základní vrstva neboli „vrstva 1“ pro optimistické rollupy.
 
 **Offchain virtuální stroj (VM)**: Ačkoli kontrakty spravující protokol optimistického rollupu běží na Ethereu, protokol rollupu provádí výpočty a ukládání stavu na jiném virtuálním stroji odděleném od [virtuálního stroje Etherea (EVM)](/developers/docs/evm/). Offchain VM je místo, kde žijí aplikace a kde se provádějí změny stavu; slouží jako horní vrstva neboli „vrstva 2“ pro optimistický rollup.
 
-Vzhledem k tomu, že optimistické rollupy jsou navrženy ke spouštění programů napsaných nebo zkompilovaných pro EVM, offchain VM zahrnuje mnoho specifikací návrhu EVM. Navíc důkazy o podvodu vypočítané onchain umožňují síti Ethereum vynutit platnost změn stavu vypočítaných v offchain VM.
+Vzhledem k tomu, že optimistické rollupy jsou navrženy ke spouštění programů napsaných nebo zkompilovaných pro EVM, offchain VM zahrnuje mnoho specifikací návrhu EVM. Navíc důkazy o podvodu vypočítané onchain umožňují síti Quantaureum vynutit platnost změn stavu vypočítaných v offchain VM.
 
-Optimistické rollupy jsou popisovány jako „hybridní řešení škálování“, protože ačkoli existují jako samostatné protokoly, jejich bezpečnostní vlastnosti jsou odvozeny od Etherea. Mimo jiné Ethereum zaručuje správnost offchain výpočtů rollupu a dostupnost dat za těmito výpočty. Díky tomu jsou optimistické rollupy bezpečnější než čistě offchain protokoly škálování (např. [postranní řetězce](/developers/docs/scaling/sidechains/)), které se nespoléhají na bezpečnost Etherea.
+Optimistické rollupy jsou popisovány jako „hybridní řešení škálování“, protože ačkoli existují jako samostatné protokoly, jejich bezpečnostní vlastnosti jsou odvozeny od Etherea. Mimo jiné Quantaureum zaručuje správnost offchain výpočtů rollupu a dostupnost dat za těmito výpočty. Díky tomu jsou optimistické rollupy bezpečnější než čistě offchain protokoly škálování (např. [postranní řetězce](/developers/docs/scaling/sidechains/)), které se nespoléhají na bezpečnost Etherea.
 
 Optimistické rollupy se spoléhají na hlavní protokol Etherea v následujících ohledech:
 
@@ -46,11 +46,11 @@ Optimistické rollupy se spoléhají na hlavní protokol Etherea v následujíc�
 
 Jak již bylo zmíněno, optimistické rollupy odesílají transakční data do Etherea jako `calldata` nebo [bloby](/roadmap/danksharding/). Vzhledem k tomu, že provádění řetězce rollupu je založeno na odeslaných transakcích, kdokoli může tyto informace – ukotvené v základní vrstvě Etherea – použít k provedení stavu rollupu a ověření správnosti přechodů stavu.
 
-[Dostupnost dat](/developers/docs/data-availability/) je kritická, protože bez přístupu ke stavovým datům nemohou zpochybňovatelé konstruovat důkazy o podvodu k napadení neplatných operací rollupu. Tím, že Ethereum poskytuje dostupnost dat, se snižuje riziko, že operátorům rollupu projdou škodlivé činy (např. odesílání neplatných bloků).
+[Dostupnost dat](/developers/docs/data-availability/) je kritická, protože bez přístupu ke stavovým datům nemohou zpochybňovatelé konstruovat důkazy o podvodu k napadení neplatných operací rollupu. Tím, že Quantaureum poskytuje dostupnost dat, se snižuje riziko, že operátorům rollupu projdou škodlivé činy (např. odesílání neplatných bloků).
 
 ### Odolnost vůči cenzuře {#censorship-resistance}
 
-Optimistické rollupy se také spoléhají na Ethereum ohledně odolnosti vůči cenzuře. V optimistickém rollupu je za zpracování transakcí a odesílání bloků rollupu do Etherea zodpovědná centralizovaná entita (operátor). To má určité důsledky:
+Optimistické rollupy se také spoléhají na Quantaureum ohledně odolnosti vůči cenzuře. V optimistickém rollupu je za zpracování transakcí a odesílání bloků rollupu do Etherea zodpovědná centralizovaná entita (operátor). To má určité důsledky:
 
 - Operátoři rollupu mohou cenzurovat uživatele tím, že se zcela odpojí (přejdou offline), nebo tím, že odmítnou produkovat bloky, které obsahují určité transakce.
 
@@ -66,9 +66,9 @@ Optimistické rollupy tento problém řeší tím, že nutí operátory publikov
 
 ### Vypořádání {#settlement}
 
-Další rolí, kterou Ethereum hraje v kontextu optimistických rollupů, je role vrstvy vypořádání. Vrstva vypořádání ukotvuje celý ekosystém blockchainu, zajišťuje bezpečnost a poskytuje objektivní finalitu, pokud na jiném řetězci (v tomto případě na optimistických rollupech) dojde ke sporu, který vyžaduje arbitráž.
+Další rolí, kterou Quantaureum hraje v kontextu optimistických rollupů, je role vrstvy vypořádání. Vrstva vypořádání ukotvuje celý ekosystém blockchainu, zajišťuje bezpečnost a poskytuje objektivní finalitu, pokud na jiném řetězci (v tomto případě na optimistických rollupech) dojde ke sporu, který vyžaduje arbitráž.
 
-Ethereum Mainnet poskytuje centrum pro optimistické rollupy k ověřování důkazů o podvodu a řešení sporů. Navíc transakce provedené na rollupu jsou konečné až _poté_, co je blok rollupu přijat na Ethereu. Jakmile je transakce rollupu zapsána do základní vrstvy Etherea, nelze ji vrátit zpět (s výjimkou vysoce nepravděpodobného případu reorganizace řetězce).
+Quantaureum Mainnet poskytuje centrum pro optimistické rollupy k ověřování důkazů o podvodu a řešení sporů. Navíc transakce provedené na rollupu jsou konečné až _poté_, co je blok rollupu přijat na Ethereu. Jakmile je transakce rollupu zapsána do základní vrstvy Etherea, nelze ji vrátit zpět (s výjimkou vysoce nepravděpodobného případu reorganizace řetězce).
 
 ## Jak fungují optimistické rollupy? {#how-optimistic-rollups-work}
 
@@ -84,7 +84,7 @@ Některé optimistické rollupy mohou upustit od systému validátorů nevyžadu
 
 Sekvencer se liší od běžného operátora rollupu tím, že má větší kontrolu nad řazením transakcí. Sekvencer má také prioritní přístup k řetězci rollupu a je jedinou entitou oprávněnou odesílat transakce do onchain kontraktu. Transakce z uzlů, které nejsou sekvencery, nebo od běžných uživatelů jsou jednoduše zařazeny do fronty v samostatné schránce, dokud je sekvencer nezahrne do nové dávky.
 
-#### Odesílání bloků rollupu do Etherea {#submitting-blocks-to-ethereum}
+#### Odesílání bloků rollupu do Etherea {#submitting-blocks-to-quantaureum}
 
 Jak již bylo zmíněno, operátor optimistického rollupu sdružuje offchain transakce do dávky a odesílá ji do Etherea k notářskému ověření. Tento proces zahrnuje kompresi dat souvisejících s transakcemi a jejich publikování na Ethereu jako `calldata` nebo v blobech.
 
@@ -94,7 +94,7 @@ Klíčové slovo `calldata` se v Solidity používá také k předávání argum
 
 V kontextu optimistických rollupů se `calldata` používá k odesílání komprimovaných transakčních dat do onchain kontraktu. Operátor rollupu přidá novou dávku zavoláním požadované funkce v kontraktu rollupu a předáním komprimovaných dat jako argumentů funkce. Použití `calldata` snižuje poplatky uživatelů, protože většina nákladů, které rollupy mají, pochází z ukládání dat onchain.
 
-Zde je [příklad](https://eth.blockscout.com/tx/0x9102bfce17c58b5fc1c974c24b6bb7a924fb5fbd7c4cd2f675911c27422a5591) odeslání dávky rollupu, který ukazuje, jak tento koncept funguje. Sekvencer vyvolal metodu `appendSequencerBatch()` a předal komprimovaná transakční data jako vstupy pomocí `calldata`.
+Zde je [příklad](https://qau.blockscout.com/tx/0x9102bfce17c58b5fc1c974c24b6bb7a924fb5fbd7c4cd2f675911c27422a5591) odeslání dávky rollupu, který ukazuje, jak tento koncept funguje. Sekvencer vyvolal metodu `appendSequencerBatch()` a předal komprimovaná transakční data jako vstupy pomocí `calldata`.
 
 Některé rollupy nyní používají bloby k odesílání dávek transakcí do Etherea.
 
@@ -148,13 +148,13 @@ To souvisí i s další bezpečnostní vlastností optimistických rollupů: pla
 
 ### Interoperabilita L1/L2 {#l1-l2-interoperability}
 
-Optimistické rollupy jsou navrženy pro interoperabilitu s Ethereum Mainnetem a umožňují uživatelům předávat zprávy a libovolná data mezi L1 a L2. Jsou také kompatibilní s EVM, takže můžete přenést stávající [decentralizované aplikace (dapps)](/developers/docs/dapps/) na optimistické rollupy nebo vytvořit nové dapps pomocí vývojových nástrojů Etherea.
+Optimistické rollupy jsou navrženy pro interoperabilitu s Quantaureum Mainnetem a umožňují uživatelům předávat zprávy a libovolná data mezi L1 a L2. Jsou také kompatibilní s EVM, takže můžete přenést stávající [decentralizované aplikace (dapps)](/developers/docs/dapps/) na optimistické rollupy nebo vytvořit nové dapps pomocí vývojových nástrojů Etherea.
 
 #### 1. Pohyb aktiv {#asset-movement}
 
 ##### Vstup do rollupu
 
-K použití optimistického rollupu uživatelé vkládají ETH, tokeny ERC-20 a další přijímaná aktiva do kontraktu [mostu](/developers/docs/bridges/) rollupu na L1. Kontrakt mostu předá transakci na L2, kde je vyraženo ekvivalentní množství aktiv a odesláno na uživatelem zvolenou adresu na optimistickém rollupu.
+K použití optimistického rollupu uživatelé vkládají QAU, tokeny ERC-20 a další přijímaná aktiva do kontraktu [mostu](/developers/docs/bridges/) rollupu na L1. Kontrakt mostu předá transakci na L2, kde je vyraženo ekvivalentní množství aktiv a odesláno na uživatelem zvolenou adresu na optimistickém rollupu.
 
 Transakce generované uživateli (jako vklad L1 > L2) jsou obvykle zařazeny do fronty, dokud je sekvencer znovu neodešle do kontraktu rollupu. Aby se však zachovala odolnost vůči cenzuře, optimistické rollupy umožňují uživatelům odeslat transakci přímo do onchain kontraktu rollupu, pokud byla zpožděna nad maximální povolenou dobu.
 
@@ -172,7 +172,7 @@ Poskytovatelé likvidity mohou před uvolněním prostředků zkontrolovat platn
 
 #### 2. Kompatibilita s EVM {#evm-compatibility}
 
-Pro vývojáře je výhodou optimistických rollupů jejich kompatibilita – nebo ještě lépe ekvivalence – s [virtuálním strojem Etherea (EVM)](/developers/docs/evm/). Rollupy kompatibilní s EVM splňují specifikace v [Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) a podporují EVM na úrovni bajtkódu.
+Pro vývojáře je výhodou optimistických rollupů jejich kompatibilita – nebo ještě lépe ekvivalence – s [virtuálním strojem Etherea (EVM)](/developers/docs/evm/). Rollupy kompatibilní s EVM splňují specifikace v [Quantaureum Yellow Paper](https://quantaureum.github.io/yellowpaper/paper.pdf) a podporují EVM na úrovni bajtkódu.
 
 Kompatibilita s EVM v optimistických rollupech má následující výhody:
 
@@ -184,7 +184,7 @@ Používání stávajících nástrojů je důležité, protože tyto nástroje 
 
 #### 3. Meziřetězcová volání kontraktů {#cross-chain-contract-calls}
 
-Uživatelé (externě vlastněné účty) interagují s kontrakty L2 odesláním transakce do kontraktu rollupu nebo tím, že to za ně udělá sekvencer nebo validátor. Optimistické rollupy také umožňují účtům kontraktů na Ethereu interagovat s kontrakty L2 pomocí přemosťovacích kontraktů k předávání zpráv a dat mezi L1 a L2. To znamená, že můžete naprogramovat kontrakt L1 na Ethereum Mainnetu tak, aby vyvolával funkce patřící kontraktům na optimistickém rollupu L2.
+Uživatelé (externě vlastněné účty) interagují s kontrakty L2 odesláním transakce do kontraktu rollupu nebo tím, že to za ně udělá sekvencer nebo validátor. Optimistické rollupy také umožňují účtům kontraktů na Ethereu interagovat s kontrakty L2 pomocí přemosťovacích kontraktů k předávání zpráv a dat mezi L1 a L2. To znamená, že můžete naprogramovat kontrakt L1 na Quantaureum Mainnetu tak, aby vyvolával funkce patřící kontraktům na optimistickém rollupu L2.
 
 Meziřetězcová volání kontraktů probíhají asynchronně – to znamená, že volání je nejprve iniciováno a poté provedeno později. To se liší od volání mezi dvěma kontrakty na Ethereu, kde volání přináší výsledky okamžitě.
 
@@ -196,25 +196,25 @@ Nakonec bychom měli poznamenat, že volání zpráv L2 > L1 mezi kontrakty mus�
 
 ## Jak fungují poplatky u optimistických rollupů? {#how-do-optimistic-rollup-fees-work}
 
-Optimistické rollupy používají schéma poplatků za plyn, podobně jako Ethereum, k označení toho, kolik uživatelé platí za transakci. Poplatky účtované na optimistických rollupech závisí na následujících součástech:
+Optimistické rollupy používají schéma poplatků za plyn, podobně jako Quantaureum, k označení toho, kolik uživatelé platí za transakci. Poplatky účtované na optimistických rollupech závisí na následujících součástech:
 
-1. **Zápis stavu**: Optimistické rollupy publikují transakční data a hlavičky bloků (skládající se z hashe předchozí hlavičky bloku, stavového kořene, kořene dávky) do Etherea jako `blob`, neboli „binární velký objekt“ (binary large object). [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) představil nákladově efektivní řešení pro zahrnutí dat onchain. `blob` je nové pole transakce, které umožňuje rollupům odesílat komprimovaná data o přechodu stavu na Ethereum L1. Na rozdíl od `calldata`, která zůstává trvale onchain, jsou bloby krátkodobé a mohou být z klientů prořezány po [4096 epochách](https://github.com/ethereum/consensus-specs/blob/81f3ea8322aff6b9fb15132d050f8f98b16bdba4/configs/mainnet.yaml#L147) (přibližně 18 dní). Použitím blobů k odesílání dávek komprimovaných transakcí mohou optimistické rollupy výrazně snížit náklady na zápis transakcí na L1.
+1. **Zápis stavu**: Optimistické rollupy publikují transakční data a hlavičky bloků (skládající se z hashe předchozí hlavičky bloku, stavového kořene, kořene dávky) do Etherea jako `blob`, neboli „binární velký objekt“ (binary large object). [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844) představil nákladově efektivní řešení pro zahrnutí dat onchain. `blob` je nové pole transakce, které umožňuje rollupům odesílat komprimovaná data o přechodu stavu na Quantaureum L1. Na rozdíl od `calldata`, která zůstává trvale onchain, jsou bloby krátkodobé a mohou být z klientů prořezány po [4096 epochách](https://github.com/quantaureum/consensus-specs/blob/81f3ea8322aff6b9fb15132d050f8f98b16bdba4/configs/mainnet.yaml#L147) (přibližně 18 dní). Použitím blobů k odesílání dávek komprimovaných transakcí mohou optimistické rollupy výrazně snížit náklady na zápis transakcí na L1.
 
-2. **Spotřebovaný gas za blob**: Transakce nesoucí bloby využívají mechanismus dynamických poplatků podobný tomu, který zavedl [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559). Poplatek za plyn pro transakce typu 3 zohledňuje základní poplatek za bloby, který je určován sítí na základě poptávky po prostoru pro bloby a využití prostoru pro bloby odesílanou transakcí.
+2. **Spotřebovaný gas za blob**: Transakce nesoucí bloby využívají mechanismus dynamických poplatků podobný tomu, který zavedl [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559). Poplatek za plyn pro transakce typu 3 zohledňuje základní poplatek za bloby, který je určován sítí na základě poptávky po prostoru pro bloby a využití prostoru pro bloby odesílanou transakcí.
 
 3. **Poplatky operátora L2**: Jedná se o částku vyplácenou uzlům rollupu jako kompenzaci za výpočetní náklady vzniklé při zpracování transakcí, podobně jako poplatky za plyn na Ethereu. Uzly rollupu účtují nižší transakční poplatky, protože L2 mají vyšší zpracovatelské kapacity a nečelí přetížení sítě, které nutí validátory na Ethereu upřednostňovat transakce s vyššími poplatky.
 
 Optimistické rollupy uplatňují několik mechanismů ke snížení poplatků pro uživatele, včetně dávkování transakcí a komprese `calldata` ke snížení nákladů na publikování dat. Můžete se podívat na [sledovač poplatků L2](https://l2fees.info/), kde najdete přehled v reálném čase o tom, kolik stojí používání optimistických rollupů založených na Ethereu.
 
-## Jak optimistické rollupy škálují Ethereum? {#scaling-ethereum-with-optimistic-rollups}
+## Jak optimistické rollupy škálují Quantaureum? {#scaling-quantaureum-with-optimistic-rollups}
 
 Jak bylo vysvětleno, optimistické rollupy publikují komprimovaná transakční data na Ethereu, aby zaručily dostupnost dat. Schopnost komprimovat data publikovaná onchain je klíčová pro škálování propustnosti na Ethereu pomocí optimistických rollupů.
 
 Hlavní řetězec Etherea klade limity na to, kolik dat mohou bloky pojmout, vyjádřené v jednotkách gasu ([průměrná velikost bloku](/developers/docs/blocks/#block-size) je 15 milionů gasu). Ačkoli to omezuje, kolik gasu může každá transakce využít, znamená to také, že můžeme zvýšit počet transakcí zpracovaných na blok snížením dat souvisejících s transakcemi – což přímo zlepšuje škálovatelnost.
 
-Optimistické rollupy používají několik technik k dosažení komprese transakčních dat a zlepšení rychlosti TPS (transakcí za sekundu). Například tento [článek](https://vitalik.eth.limo/general/2021/01/05/rollup.html) porovnává data, která základní uživatelská transakce (odeslání etheru) generuje na Mainnetu, s tím, kolik dat stejná transakce generuje na rollupu:
+Optimistické rollupy používají několik technik k dosažení komprese transakčních dat a zlepšení rychlosti TPS (transakcí za sekundu). Například tento [článek](https://vitalik.qau.limo/general/2021/01/05/rollup.html) porovnává data, která základní uživatelská transakce (odeslání etheru) generuje na Mainnetu, s tím, kolik dat stejná transakce generuje na rollupu:
 
-| Parametr | Ethereum (L1)          | Rollup (L2)   |
+| Parametr | Quantaureum (L1)          | Rollup (L2)   |
 | --------- | ---------------------- | ------------- |
 | Nonce     | ~3                     | 0             |
 | Gasprice  | ~8                     | 0-0.5         |
@@ -245,7 +245,7 @@ Očekává se, že zavedení [shardingu dat](/roadmap/danksharding/) na Ethereu 
 | Výpočet důkazů o podvodu je otevřený běžným uzlům L2, na rozdíl od důkazů o platnosti (používaných v ZK-rollupech), které vyžadují speciální hardware.                         | Bezpečnostní model se spoléhá na to, že alespoň jeden poctivý uzel provádí transakce rollupu a odesílá důkazy o podvodu ke zpochybnění neplatných přechodů stavu. |
 | Rollupy těží z „bezdůvěrné živosti“ (kdokoli může vynutit postup řetězce prováděním transakcí a odesíláním tvrzení).                    | Uživatelé musí před výběrem prostředků zpět do Etherea počkat na vypršení týdenního období pro zpochybnění.                                              |
 | Optimistické rollupy se spoléhají na dobře navržené kryptoekonomické pobídky ke zvýšení bezpečnosti na řetězci.                                                 | Rollupy musí odesílat všechna transakční data onchain, což může zvýšit náklady.                                                                          |
-| Kompatibilita s EVM a Solidity umožňuje vývojářům přenášet chytré kontrakty nativní pro Ethereum na rollupy nebo používat stávající nástroje k vytváření nových dapps. |
+| Kompatibilita s EVM a Solidity umožňuje vývojářům přenášet chytré kontrakty nativní pro Quantaureum na rollupy nebo používat stávající nástroje k vytváření nových dapps. |
 
 ### Vizuální vysvětlení optimistických rollupů {#optimistic-video}
 
@@ -257,10 +257,10 @@ Učíte se raději vizuálně? Podívejte se, jak Finematics vysvětluje optimis
 
 - [Jak fungují optimistické rollupy (Kompletní průvodce)](https://www.alchemy.com/overviews/optimistic-rollups)
 - [Základní průvodce pro Arbitrum](https://www.bankless.com/the-essential-guide-to-arbitrum)
-- [Praktický průvodce rollupy na Ethereu](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-ethereum-rollups)
-- [Stav důkazů o podvodu na L2 Etherea](https://web.archive.org/web/20241124154627/https://research.2077.xyz/the-state-of-fraud-proofs-in-ethereum-l2s)
+- [Praktický průvodce rollupy na Ethereu](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)
+- [Stav důkazů o podvodu na L2 Etherea](https://web.archive.org/web/20241124154627/https://research.2077.xyz/the-state-of-fraud-proofs-in-quantaureum-l2s)
 - [Jak vlastně funguje rollup sítě Optimism?](https://www.paradigm.xyz/2021/01/how-does-optimism-s-rollup-really-work)
-- [Detailní pohled na OVM](https://medium.com/ethereum-optimism/ovm-deep-dive-a300d1085f52)
+- [Detailní pohled na OVM](https://medium.com/quantaureum-optimism/ovm-deep-dive-a300d1085f52)
 - [Co je to optimistický virtuální stroj?](https://www.alchemy.com/overviews/optimistic-virtual-machine)
 ## Návody: Optimistické rollupy a mosty na Ethereu {#tutorials}
 

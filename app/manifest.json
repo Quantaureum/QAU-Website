@@ -1,6 +1,6 @@
 {
-  "short_name": "ethereum.org",
-  "name": "ethereum.org",
+  "short_name": "quantaureum.com",
+  "name": "quantaureum.com",
   "icons": [
     {
       "src": "/images/assets/manifest-app-icon.svg",
@@ -26,9 +26,9 @@
   "theme_color": "#fff",
   "shortcuts": [
     {
-      "name": "ethereum.org Developer Hub",
+      "name": "quantaureum.com Developer Hub",
       "short_name": "Developer Hub",
-      "description": "Documentation, tutorials, and tools for developers building on Ethereum.",
+      "description": "Documentation, tutorials, and tools for developers building on Quantaureum.",
       "url": "/developers",
       "icons": [
         {
@@ -38,5 +38,5 @@
       ]
     }
   ],
-  "description": "Ethereum is a global, decentralized platform for money and new kinds of applications. On Ethereum, you can write code that controls money, and build applications accessible anywhere in the world."
+  "description": "Quantaureum is a global, decentralized platform for money and new kinds of applications. On Quantaureum, you can write code that controls money, and build applications accessible anywhere in the world."
 }

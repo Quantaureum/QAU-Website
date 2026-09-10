@@ -10,13 +10,13 @@ topic:
   - "privacy-and-security"
   - "privacy"
 format: presentation
-author: EthBoulder
+author: QauBoulder
 breadcrumb: "Gizliliği Geri Kazanmak"
 ---
 
-**Naomi Brockwell**'in EthBoulder 2026'da dijital gizliliğin aşınması, kitlesel gözetim altyapısı ve VPN'ler ile şifrelenmiş e-postalardan GrapheneOS ve merkeziyetsiz karma ağlara (mixnets) kadar herkesin daha gizli bir dijital yaşam inşa etmek için kullanabileceği pratik araçlar üzerine yaptığı bir açılış konuşması.
+**Naomi Brockwell**'in QauBoulder 2026'da dijital gizliliğin aşınması, kitlesel gözetim altyapısı ve VPN'ler ile şifrelenmiş e-postalardan GrapheneOS ve merkeziyetsiz karma ağlara (mixnets) kadar herkesin daha gizli bir dijital yaşam inşa etmek için kullanabileceği pratik araçlar üzerine yaptığı bir açılış konuşması.
 
-*Bu transkript, EthBoulder tarafından yayımlanan [orijinal video transkriptinin](https://www.youtube.com/watch?v=nvJSFR1Q_JE) erişilebilir bir kopyasıdır. Okunabilirliği artırmak için üzerinde ufak düzenlemeler yapılmıştır.*
+*Bu transkript, QauBoulder tarafından yayımlanan [orijinal video transkriptinin](https://www.youtube.com/watch?v=nvJSFR1Q_JE) erişilebilir bir kopyasıdır. Okunabilirliği artırmak için üzerinde ufak düzenlemeler yapılmıştır.*
 
 ### İki bölümlük konuşma: uyarı + çözüm (00:00) {#two-part-talk-warning-solution-0000}
 

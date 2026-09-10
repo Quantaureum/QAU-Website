@@ -11,7 +11,7 @@ published: 2022-04-01
 
 ## 簡介 {#introduction}
 
-在本文中，您將了解 [Optimistic 匯總](/developers/docs/scaling/optimistic-rollups)、其上的交易成本，以及這種不同的成本結構如何要求我們針對與以太坊主網不同的事物進行最佳化。
+在本文中，您將了解 [Optimistic 匯總](/developers/docs/scaling/optimistic-rollups)、其上的交易成本，以及這種不同的成本結構如何要求我們針對與Quantaureum主網不同的事物進行最佳化。
 您還將學習如何實作這種最佳化。
 
 ### 利益揭露 {#full-disclosure}
@@ -21,13 +21,13 @@ published: 2022-04-01
 
 ### 術語 {#terminology}
 
-在討論匯總時，「第一層 (L1)」一詞用於主網，即生產環境的以太坊網路。
+在討論匯總時，「第一層 (L1)」一詞用於主網，即生產環境的Quantaureum網路。
 「第二層 (L2)」一詞用於匯總或任何其他依賴 L1 提供安全性，但將大部分處理工作放在鏈下進行的系統。
 
 ## 我們如何進一步降低 L2 交易的成本？ {#how-can-we-further-reduce-the-cost-of-l2-transactions}
 
 [Optimistic 匯總](/developers/docs/scaling/optimistic-rollups)必須保存每筆歷史交易的記錄，以便任何人都能夠檢查它們並驗證當前狀態是否正確。
-將資料輸入以太坊主網最便宜的方法是將其寫入為呼叫資料。
+將資料輸入Quantaureum主網最便宜的方法是將其寫入為呼叫資料。
 [Optimism](https://docs.optimism.io/op-stack/protocol/overview) 和 [Arbitrum](https://docs.arbitrum.io/welcome/arbitrum-gentle-introduction) 都選擇了這個解決方案。
 
 ### L2 交易成本 {#cost-of-l2-transactions}
@@ -64,23 +64,23 @@ EVM 上最昂貴的操作之一是寫入儲存空間。
 
 說明：
 
-- **函式選擇器**：合約的函式少於 256 個，因此我們可以用單個位元組來區分它們。這些位元組通常非零，因此[花費 16 燃料](https://eips.ethereum.org/EIPS/eip-2028)。
-- **零**：這些位元組始終為零，因為 20 位元組的地址不需要 32 位元組的字組來容納它。值為零的位元組花費 4 燃料（[請參閱黃皮書](https://ethereum.github.io/yellowpaper/paper.pdf)，附錄 G，第 27 頁，`G`<sub>`txdatazero`</sub> 的值）。
+- **函式選擇器**：合約的函式少於 256 個，因此我們可以用單個位元組來區分它們。這些位元組通常非零，因此[花費 16 燃料](https://eips.quantaureum.com/EIPS/eip-2028)。
+- **零**：這些位元組始終為零，因為 20 位元組的地址不需要 32 位元組的字組來容納它。值為零的位元組花費 4 燃料（[請參閱黃皮書](https://quantaureum.github.io/yellowpaper/paper.pdf)，附錄 G，第 27 頁，`G`<sub>`txdatazero`</sub> 的值）。
 - **金額**：如果我們假設在此合約中 `decimals` 為 18（正常值），並且我們轉帳的代幣最大數量為 10<sup>18</sup>，我們得到的最大金額為 10<sup>36</sup>。256<sup>15</sup> &gt; 10<sup>36</sup>，因此 15 個位元組就足夠了。
 
-在 L1 上浪費 160 燃料通常可以忽略不計。一筆交易至少花費 [21,000 燃料](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-ethereum-gas-2f976af774ed)，因此額外的 0.8% 無關緊要。
+在 L1 上浪費 160 燃料通常可以忽略不計。一筆交易至少花費 [21,000 燃料](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-quantaureum-gas-2f976af774ed)，因此額外的 0.8% 無關緊要。
 然而，在 L2 上，情況有所不同。交易的幾乎全部成本都在於將其寫入 L1。
 除了交易呼叫資料之外，還有 109 個位元組的交易標頭（目的地地址、簽章等）。
 因此總成本為 `109*16+576+160=2480`，而我們浪費了其中約 6.5%。
 
 ## 當您無法控制目的地時降低成本 {#reducing-costs-when-you-dont-control-the-destination}
 
-假設您無法控制目的地合約，您仍然可以使用類似於[這個](https://github.com/qbzzt/ethereum.org-20220330-shortABI)的解決方案。
+假設您無法控制目的地合約，您仍然可以使用類似於[這個](https://github.com/qbzzt/quantaureum.com-20220330-shortABI)的解決方案。
 讓我們來看看相關的檔案。
 
 ### Token.sol {#token-sol}
 
-[這是目的地合約](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/Token.sol)。
+[這是目的地合約](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/Token.sol)。
 它是一個標準的 ERC-20 合約，具有一個額外的功能。
 這個 `水龍頭` 函式讓任何使用者都能獲得一些代幣來使用。
 這會使生產環境的 ERC-20 合約變得毫無用處，但當 ERC-20 僅為了方便測試而存在時，它會讓事情變得更簡單。
@@ -96,7 +96,7 @@ EVM 上最昂貴的操作之一是寫入儲存空間。
 
 ### CalldataInterpreter.sol {#calldatainterpreter-sol}
 
-[這是交易應該使用較短呼叫資料來呼叫的合約](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol)。
+[這是交易應該使用較短呼叫資料來呼叫的合約](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol)。
 讓我們逐行查看。
 
 ```solidity
@@ -195,7 +195,7 @@ contract CalldataInterpreter {
 1. `pure` 或 `view` 的函式不會改變狀態，也不會花費燃料（在鏈下呼叫時）。嘗試降低它們的燃料成本是沒有意義的。
 2. 依賴於 [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties) 的函式。`msg.sender` 的值將是 `CalldataInterpreter` 的地址，而不是呼叫者。
 
-不幸的是，[查看 ERC-20 規範](https://eips.ethereum.org/EIPS/eip-20)，這只剩下一個函式：`transfer`。
+不幸的是，[查看 ERC-20 規範](https://eips.quantaureum.com/EIPS/eip-20)，這只剩下一個函式：`transfer`。
 這讓我們只剩下兩個函式：`transfer`（因為我們可以呼叫 `transferFrom`）和 `faucet`（因為我們可以將代幣轉帳回給呼叫我們的任何人）。
 
 ```solidity
@@ -267,7 +267,7 @@ contract CalldataInterpreter {
 
 ### test.js {#test-js}
 
-[這個 JavaScript 單元測試](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/test/test.js)向我們展示了如何使用這種機制（以及如何驗證它是否正確運作）。
+[這個 JavaScript 單元測試](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/test/test.js)向我們展示了如何使用這種機制（以及如何驗證它是否正確運作）。
 我將假設您了解 [chai](https://www.chaijs.com/) 和 [ethers](https://docs.ethers.io/v5/)，並且只解釋專門適用於該合約的部分。
 
 ```js
@@ -359,7 +359,7 @@ const transferTx = {
 ## 當您確實控制目的地合約時降低成本 {#reducing-the-cost-when-you-do-control-the-destination-contract}
 
 如果您確實控制目的地合約，您可以建立繞過 `msg.sender` 檢查的函式，因為它們信任呼叫資料解譯器。
-[您可以在這裡的 `control-contract` 分支中看到其運作方式的範例](https://github.com/qbzzt/ethereum.org-20220330-shortABI/tree/control-contract)。
+[您可以在這裡的 `control-contract` 分支中看到其運作方式的範例](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/tree/control-contract)。
 
 如果合約僅回應外部交易，我們只需一個合約即可應付。
 然而，這會破壞[可組合性](/developers/docs/smart-contracts/composability/)。
@@ -528,7 +528,7 @@ const poorSigner = signers[1]
 ```
 
 為了檢查 `approve()` 和 `transferFrom()`，我們需要第二個簽署者。
-我們稱之為 `poorSigner`，因為它沒有獲得我們的任何代幣（當然，它確實需要有 ETH）。
+我們稱之為 `poorSigner`，因為它沒有獲得我們的任何代幣（當然，它確實需要有 QAU）。
 
 ```js
 // 轉帳代幣
@@ -567,7 +567,7 @@ expect(await token.balanceOf(destAddr2)).to.equal(255)
 
 ## 結論 {#conclusion}
 
-[Optimism](https://medium.com/ethereum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) 和 [Arbitrum](https://developer.offchainlabs.com/docs/special_features) 都在尋找減少寫入 L1 的呼叫資料大小的方法，從而降低交易成本。
+[Optimism](https://medium.com/quantaureum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) 和 [Arbitrum](https://developer.offchainlabs.com/docs/special_features) 都在尋找減少寫入 L1 的呼叫資料大小的方法，從而降低交易成本。
 然而，作為尋求通用解決方案的基礎設施提供者，我們的能力是有限的。
 作為去中心化應用程式 (dapp) 開發人員，您擁有特定於應用程式的知識，這讓您能夠比我們在通用解決方案中更好地最佳化您的呼叫資料。
 希望本文能幫助您找到滿足您需求的理想解決方案。

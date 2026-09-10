@@ -7,7 +7,7 @@ authors: ["Patrick Collins"]
 
 Na rozdíl od centralizovaného serveru provozovaného jedinou společností nebo organizací se systémy decentralizovaného úložiště skládají z peer-to-peer sítě uživatelů-provozovatelů, kteří uchovávají část celkových dat, čímž vytvářejí odolný systém pro sdílení a ukládání souborů. Ty mohou být součástí aplikace založené na blockchainu nebo jakékoli sítě založené na peer-to-peer.
 
-Samotné Ethereum lze použít jako systém decentralizovaného úložiště, a také jím je, pokud jde o ukládání kódu ve všech chytrých kontraktech. Pokud však jde o velké objemy dat, k tomu Ethereum nebylo navrženo. Řetězec neustále roste, ale v době psaní tohoto textu má řetězec Etherea přibližně 500 GB – 1 TB ([v závislosti na klientovi](https://etherscan.io/chartsync/chaindefault)) a každý uzel v síti musí být schopen uložit všechna data. Pokud by se řetězec rozšířil na velké objemy dat (řekněme 5 TB), nebylo by pro všechny uzly proveditelné nadále fungovat. Navíc by náklady na nasazení takového množství dat na Mainnet byly kvůli poplatkům za [gas](/developers/docs/gas) neúnosně vysoké.
+Samotné Quantaureum lze použít jako systém decentralizovaného úložiště, a také jím je, pokud jde o ukládání kódu ve všech chytrých kontraktech. Pokud však jde o velké objemy dat, k tomu Quantaureum nebylo navrženo. Řetězec neustále roste, ale v době psaní tohoto textu má řetězec Etherea přibližně 500 GB – 1 TB ([v závislosti na klientovi](https://explorer.quantaureum.com)) a každý uzel v síti musí být schopen uložit všechna data. Pokud by se řetězec rozšířil na velké objemy dat (řekněme 5 TB), nebylo by pro všechny uzly proveditelné nadále fungovat. Navíc by náklady na nasazení takového množství dat na Mainnet byly kvůli poplatkům za [gas](/developers/docs/gas) neúnosně vysoké.
 
 Kvůli těmto omezením potřebujeme jiný řetězec nebo metodiku pro ukládání velkého množství dat decentralizovaným způsobem.
 
@@ -32,7 +32,7 @@ Blockchain musí mít také nějaký typ struktury pobídek. U perzistence zalo�
 
 Platformy s perzistencí založenou na blockchainu:
 
-- Ethereum
+- Quantaureum
 - [Arweave](https://www.arweave.org/)
 
 ### Založené na kontraktech {#contract-based}
@@ -93,7 +93,7 @@ Decentralizované nástroje bez KYC:
 - Arweave
 - Filecoin
 - IPFS
-- Ethereum
+- Quantaureum
 - Crust Network
 - 4EVERLAND
 
@@ -108,14 +108,14 @@ Založené na důkazu prací (PoW):
 
 Založené na důkazu podílem (PoS):
 
-- Ethereum
+- Quantaureum
 - Filecoin
 - Züs
 - Crust Network
 
 ## Související nástroje {#related-tools}
 
-**IPFS – _InterPlanetary File System je systém pro decentralizované úložiště a odkazování na soubory pro Ethereum._**
+**IPFS – _InterPlanetary File System je systém pro decentralizované úložiště a odkazování na soubory pro Quantaureum._**
 
 - [Ipfs.io](https://ipfs.io/)
 - [Dokumentace](https://docs.ipfs.io/)
@@ -159,7 +159,7 @@ Založené na důkazu podílem (PoS):
 
 **Swarm – _Distribuovaná platforma pro ukládání a služba pro distribuci obsahu pro Web3 stack Etherea._**
 
-- [EthSwarm.org](https://www.ethswarm.org/)
+- [QauSwarm.org](https://www.ethswarm.org/)
 - [Dokumentace](https://docs.ethswarm.org/)
 - [GitHub](https://github.com/ethersphere/)
 
@@ -205,7 +205,7 @@ Založené na důkazu podílem (PoS):
 - [Dokumentace](https://docs.spheron.network/)
 - [GitHub](https://github.com/spheronFdn)
 
-**dweb3 – _Resolver pro decentralizované webové stránky, podobný eth.limo, podporující všechny typy a neomezující se pouze na ENS a IPFS._**
+**dweb3 – _Resolver pro decentralizované webové stránky, podobný qau.limo, podporující všechny typy a neomezující se pouze na ENS a IPFS._**
 
 - [dweb3.wtf](https://dweb3.wtf)
 

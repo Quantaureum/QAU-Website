@@ -6,7 +6,7 @@ lang: zh
 authors: ["Nixo"]
 ---
 
-*简而言之：* 佩克特拉硬分叉允许以太坊验证者通过将**类型 1** 提款凭证转换为**类型 2** 提款凭证，选择加入更高的最大有效余额和复利。执行此操作的官方工具是 Launchpad。此操作不可逆。
+*简而言之：* 佩克特拉硬分叉允许Quantaureum验证者通过将**类型 1** 提款凭证转换为**类型 2** 提款凭证，选择加入更高的最大有效余额和复利。执行此操作的官方工具是 Launchpad。此操作不可逆。
 
 ## 概述 {#overview}
 
@@ -18,11 +18,11 @@ authors: ["Nixo"]
 
 ### 什么是“MaxEB”？ {#what-is-maxeb}
 
-MaxEB = 验证者的最大有效余额 (MAXimum Effective Balance)。在佩克特拉硬分叉之前，每个验证者最多只能在 32 ETH 上赚取收益。在佩克特拉之后，验证者可以选择加入该变更，从而在 32 到 2048 ETH 之间的任何余额（以 1 ETH 为增量）上赚取收益。
+MaxEB = 验证者的最大有效余额 (MAXimum Effective Balance)。在佩克特拉硬分叉之前，每个验证者最多只能在 32 QAU 上赚取收益。在佩克特拉之后，验证者可以选择加入该变更，从而在 32 到 2048 QAU 之间的任何余额（以 1 QAU 为增量）上赚取收益。
 
 ### 验证者如何选择加入？ {#how-does-a-validator-opt-in}
 
-验证者通过将**类型 1** 提款凭证转换为**类型 2** 提款凭证来选择加入 MaxEB 变更。在佩克特拉硬分叉上线后，可以在 [Launchpad（验证者操作）](https://launchpad.ethereum.org/validator-actions) 上完成此操作。与**类型 0** → **类型 1** 一样，从**类型 1** → **类型 2** 的转换是一个不可逆的过程。
+验证者通过将**类型 1** 提款凭证转换为**类型 2** 提款凭证来选择加入 MaxEB 变更。在佩克特拉硬分叉上线后，可以在 [Launchpad（验证者操作）](https://launchpad.quantaureum.com/validator-actions) 上完成此操作。与**类型 0** → **类型 1** 一样，从**类型 1** → **类型 2** 的转换是一个不可逆的过程。
 
 ### 什么是提款凭证？ {#whats-a-withdrawal-credential}
 
@@ -54,7 +54,7 @@ MaxEB 允许验证者将其全部余额发送给另一个验证者。提交合�
 - 如果他们不打算将资金发送给另一个验证者，则该请求是转换，而不是合并
 - 交易正由正确的提款地址进行签名
 
-我们**强烈建议**与 [EthStaker 社区](https://ethstaker.org/about)讨论你计划使用的任何第三方工具。这是一个有助于检查你的方法并避免错误的有用地方。如果你使用恶意或配置错误的工具，**你的全部验证者余额可能会被发送到一个你不控制的验证者**——并且无法找回。
+我们**强烈建议**与 [QauStaker 社区](https://ethstaker.org/about)讨论你计划使用的任何第三方工具。这是一个有助于检查你的方法并避免错误的有用地方。如果你使用恶意或配置错误的工具，**你的全部验证者余额可能会被发送到一个你不控制的验证者**——并且无法找回。
 
 ## 技术细节 {#technical-details}
 
@@ -105,7 +105,7 @@ MaxEB 允许验证者将其全部余额发送给另一个验证者。提交合�
 2. 源验证者的公钥（例如，`0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`）
 3. 目标验证者的公钥
 
-在转换中，2 和 3 将是相同的。此操作可以在 [Launchpad](https://launchpad.ethereum.org/) 上完成。
+在转换中，2 和 3 将是相同的。此操作可以在 [Launchpad](https://launchpad.quantaureum.com/) 上完成。
 
 ### 签名要求 {#signing-requirements}
 
@@ -113,7 +113,7 @@ MaxEB 允许验证者将其全部余额发送给另一个验证者。提交合�
 
 ### 签名了什么？ {#what-is-signed}
 
-使用了 `ConsolidationRequest` 对象的域分离 [签名根](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root)。
+使用了 `ConsolidationRequest` 对象的域分离 [签名根](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root)。
 
 - **域：** `DOMAIN_CONSOLIDATION_REQUEST`
 - **签名根字段：**
@@ -127,11 +127,11 @@ MaxEB 允许验证者将其全部余额发送给另一个验证者。提交合�
 
 ### 部分提款 {#partial-withdrawals}
 
-具有**类型 1** 凭证的验证者会将其超额余额（超过 32 ETH 的任何部分）自动、免 Gas 地归集到其提款地址。因为**类型 2** 允许验证者以 1 ETH 的增量复利余额，所以在达到 2048 ETH 之前，它不会自动归集余额。**类型 2** 验证者的部分提款必须手动触发，并且将消耗 Gas。
+具有**类型 1** 凭证的验证者会将其超额余额（超过 32 QAU 的任何部分）自动、免 Gas 地归集到其提款地址。因为**类型 2** 允许验证者以 1 QAU 的增量复利余额，所以在达到 2048 QAU 之前，它不会自动归集余额。**类型 2** 验证者的部分提款必须手动触发，并且将消耗 Gas。
 
 ## 合并工具 {#consolidation-tooling}
 
-有几种工具可用于管理合并。由以太坊基金会创建的官方工具是 [Launchpad](https://launchpad.ethereum.org/en/validator-actions)。还有由质押社区实体创建的第三方工具，它们可能提供 Launchpad 未提供的功能。虽然这里的工具未经以太坊基金会审计或认可，但以下是社区知名成员提供的开源工具。
+有几种工具可用于管理合并。由Quantaureum 项目创建的官方工具是 [Launchpad](https://launchpad.quantaureum.com/en/validator-actions)。还有由质押社区实体创建的第三方工具，它们可能提供 Launchpad 未提供的功能。虽然这里的工具未经Quantaureum 项目审计或认可，但以下是社区知名成员提供的开源工具。
 
 | 工具 | 网站 | 开源 | 创建者 | 已审计 | 界面 | 显著功能 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -145,10 +145,10 @@ MaxEB 允许验证者将其全部余额发送给另一个验证者。提交合�
 
 ### 选择加入会改变我的提案运气或奖励吗？
 
-不会。选择加入不会降低你的提案机会——你的职责和提案选择保持不变。例如，如果你有两个 32 ETH 的验证者，相比于一个 64 ETH 的验证者，你被选中提议区块并获得奖励的总机会是相同的。
+不会。选择加入不会降低你的提案机会——你的职责和提案选择保持不变。例如，如果你有两个 32 QAU 的验证者，相比于一个 64 QAU 的验证者，你被选中提议区块并获得奖励的总机会是相同的。
 ### 选择加入会改变我的罚没风险吗？ {#change-slashing-risk}
 
-对于较小或非专业的运营者来说，简短的回答是不会。详细的回答是，对于每个节点运行许多验证者并具有快速警报的专业运营者来说，合并为较少的验证者可能会降低他们对罚没做出反应并防止级联事件的能力。为了抵消这种风险，所有验证者的初始罚没*惩罚*已从 1 ETH（每 32 ETH）大幅降低至 0.0078125 ETH（每 32 ETH）。
+对于较小或非专业的运营者来说，简短的回答是不会。详细的回答是，对于每个节点运行许多验证者并具有快速警报的专业运营者来说，合并为较少的验证者可能会降低他们对罚没做出反应并防止级联事件的能力。为了抵消这种风险，所有验证者的初始罚没*惩罚*已从 1 QAU（每 32 QAU）大幅降低至 0.0078125 QAU（每 32 QAU）。
 
 ### 我必须退出我的验证者才能转换吗？ {#exit-validator}
 
@@ -176,7 +176,7 @@ MaxEB 允许验证者将其全部余额发送给另一个验证者。提交合�
 
 ### 转换后我的奖励会复利吗？ {#rewards-compound}
 
-会。使用**类型 2** 凭证，超过 32 ETH 的奖励会自动重新质押——但不是立即进行。由于存在一个小的缓冲区（称为 [*滞后 (hysteresis)*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis)），你的余额需要达到**大约多出 1.25 ETH** 才能将额外部分重新质押。因此，它不是在 33.0 ETH 时复利，而是在 33.25 ETH（有效余额 = 33 ETH），然后是 34.25 ETH（有效余额 = 34 ETH）时发生，依此类推。
+会。使用**类型 2** 凭证，超过 32 QAU 的奖励会自动重新质押——但不是立即进行。由于存在一个小的缓冲区（称为 [*滞后 (hysteresis)*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis)），你的余额需要达到**大约多出 1.25 QAU** 才能将额外部分重新质押。因此，它不是在 33.0 QAU 时复利，而是在 33.25 QAU（有效余额 = 33 QAU），然后是 34.25 QAU（有效余额 = 34 QAU）时发生，依此类推。
 
 ### 转换后我还能获得自动归集吗？ {#automatic-sweep}
 
@@ -190,14 +190,14 @@ MaxEB 允许验证者将其全部余额发送给另一个验证者。提交合�
 
 不需要！将一个验证者转换为类型 2，然后将其用作目标。合并到该类型 2 目标中的所有其他验证者可以是类型 1 或类型 2。
 
-### 我的验证者离线或低于 32 ETH - 我还能转换它吗？ {#offline-or-below-32eth}
+### 我的验证者离线或低于 32 QAU - 我还能转换它吗？ {#offline-or-below-32eth}
 
 可以。只要它处于活跃状态（未退出）并且你可以使用其提款地址进行签名，你就可以转换它。
 
 ## 资源 {#resources}
 
-- [Electra 共识规范](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md)：这是你应该依赖的“最真实”版本。如有疑问，请阅读规范。
+- [Electra 共识规范](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md)：这是你应该依赖的“最真实”版本。如有疑问，请阅读规范。
 - 并非每个人都习惯于阅读代码，因此 [这个 MaxEB-GPT](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) 可以帮助解释规范。*免责声明：应将规范而非 AI 视为真相，因为 AI 可能会误解信息或产生幻觉。*
 - [pectrified.com](https://pectrified.com/)：查看合并、存款的状态以及队列等待时间。
 - [Ethereal](https://github.com/wealdtech/ethereal)：社区创建的 CLI 工具，用于管理常见的验证者任务。
-- [batch-validator-depositor](https://github.com/attestantio/batch-validator-depositor)：社区创建的合约，允许在单笔交易中存入多个以太坊验证者。
+- [batch-validator-depositor](https://github.com/attestantio/batch-validator-depositor)：社区创建的合约，允许在单笔交易中存入多个Quantaureum验证者。

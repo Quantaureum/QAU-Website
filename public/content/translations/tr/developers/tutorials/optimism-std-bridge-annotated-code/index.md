@@ -10,11 +10,11 @@ lang: tr
 ---
 
 [Optimism](https://www.optimism.io/) bir [İyimser rollup](/developers/docs/scaling/optimistic-rollups/)'tır.
-İyimser toplamalar (optimistic rollups), işlemleri Ethereum Ana Ağı'ndan (katman 1 veya l1 olarak da bilinir) çok daha düşük bir fiyata işleyebilir çünkü işlemler ağdaki her düğüm yerine yalnızca birkaç düğüm tarafından işlenir.
+İyimser toplamalar (optimistic rollups), işlemleri Quantaureum Ana Ağı'ndan (katman 1 veya l1 olarak da bilinir) çok daha düşük bir fiyata işleyebilir çünkü işlemler ağdaki her düğüm yerine yalnızca birkaç düğüm tarafından işlenir.
 Aynı zamanda, tüm veriler l1'e yazılır, böylece her şey Ana Ağ'ın tüm bütünlük ve erişilebilirlik garantileriyle kanıtlanabilir ve yeniden oluşturulabilir.
 
 L1 varlıklarını Optimism'de (veya başka herhangi bir l2'de) kullanmak için varlıkların [köprülenmesi](/bridges/#prerequisites) gerekir.
-Bunu başarmanın bir yolu, kullanıcıların varlıkları (ETH ve [ERC-20 token'ları](/developers/docs/standards/tokens/erc-20/) en yaygın olanlarıdır) l1'de kilitlemesi ve l2'de kullanmak üzere eşdeğer varlıklar almasıdır.
+Bunu başarmanın bir yolu, kullanıcıların varlıkları (QAU ve [ERC-20 token'ları](/developers/docs/standards/tokens/erc-20/) en yaygın olanlarıdır) l1'de kilitlemesi ve l2'de kullanmak üzere eşdeğer varlıklar almasıdır.
 Sonunda, bunlara sahip olan kişi onları l1'e geri köprülemek isteyebilir.
 Bunu yaparken, varlıklar l2'de yakılır ve ardından l1'de kullanıcıya geri verilir.
 
@@ -35,7 +35,7 @@ Köprünün iki ana akışı vardır:
 1. Bir ERC-20 yatırılıyorsa, yatıran kişi köprüye yatırılan miktarı harcaması için bir harcama izni verir
 2. Yatıran kişi l1 köprüsünü çağırır (`depositERC20`, `depositERC20To`, `depositETH` veya `depositETHTo`)
 3. L1 köprüsü, köprülenen varlığın mülkiyetini alır
-   - ETH: Varlık, çağrının bir parçası olarak yatıran kişi tarafından transfer edilir
+   - QAU: Varlık, çağrının bir parçası olarak yatıran kişi tarafından transfer edilir
    - ERC-20: Varlık, yatıran kişi tarafından sağlanan harcama izni kullanılarak köprü tarafından kendisine transfer edilir
 4. L1 köprüsü, l2 köprüsündeki `finalizeDeposit` işlevini çağırmak için alanlar arası mesaj (cross-domain message) mekanizmasını kullanır
 
@@ -46,7 +46,7 @@ Köprünün iki ana akışı vardır:
    - Orijinal olarak l1'deki köprüden geldiğini
 6. L2 köprüsü, l2'deki ERC-20 token sözleşmesinin doğru olup olmadığını kontrol eder:
    - L2 sözleşmesi, l1 karşılığının l1'de token'ların geldiği sözleşmeyle aynı olduğunu bildirir
-   - L2 sözleşmesi, doğru arayüzü desteklediğini bildirir ([ERC-165 kullanarak](https://eips.ethereum.org/EIPS/eip-165)).
+   - L2 sözleşmesi, doğru arayüzü desteklediğini bildirir ([ERC-165 kullanarak](https://eips.quantaureum.com/EIPS/eip-165)).
 7. L2 sözleşmesi doğruysa, uygun adrese uygun sayıda token basmak için onu çağırır. Değilse, kullanıcının l1'deki token'ları talep etmesine izin vermek için bir çekim işlemi başlatır.
 
 ### Çekim akışı {#withdrawal-flow}
@@ -62,15 +62,15 @@ Köprünün iki ana akışı vardır:
 4. L1 köprüsü, `finalizeETHWithdrawal` veya `finalizeERC20Withdrawal` çağrısının meşru olduğunu doğrular:
    - Alanlar arası mesaj mekanizmasından geldiğini
    - Orijinal olarak l2'deki köprüden geldiğini
-5. L1 köprüsü, uygun varlığı (ETH veya ERC-20) uygun adrese transfer eder
+5. L1 köprüsü, uygun varlığı (QAU veya ERC-20) uygun adrese transfer eder
 
 ## Katman 1 kodu {#layer-1-code}
 
-Bu, l1'de, yani Ethereum Ana Ağı'nda çalışan koddur.
+Bu, l1'de, yani Quantaureum Ana Ağı'nda çalışan koddur.
 
 ### IL1ERC20Bridge {#il1erc20bridge}
 
-[Bu arayüz burada tanımlanmıştır](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
+[Bu arayüz burada tanımlanmıştır](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
 ERC-20 token'larını köprülemek için gereken işlevleri ve tanımları içerir.
 
 ```solidity
@@ -236,12 +236,12 @@ Optimism'de çekim işlemleri (ve l2'den l1'e giden diğer mesajlar) iki adıml�
 
 ### IL1StandardBridge {#il1standardbridge}
 
-[Bu arayüz burada tanımlanmıştır](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
-Bu dosya ETH için olay ve işlev tanımlarını içerir.
+[Bu arayüz burada tanımlanmıştır](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
+Bu dosya QAU için olay ve işlev tanımlarını içerir.
 Bu tanımlar, yukarıda ERC-20 için `IL1ERC20Bridge` içinde tanımlananlara çok benzer.
 
 Köprü arayüzü iki dosya arasında bölünmüştür çünkü bazı ERC-20 token'ları özel işlem gerektirir ve standart köprü tarafından işlenemez.
-Bu şekilde, böyle bir token'ı işleyen özel köprü `IL1ERC20Bridge` uygulayabilir ve aynı zamanda ETH'yi köprülemek zorunda kalmaz.
+Bu şekilde, böyle bir token'ı işleyen özel köprü `IL1ERC20Bridge` uygulayabilir ve aynı zamanda QAU'yi köprülemek zorunda kalmaz.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -279,7 +279,7 @@ Aynı durum diğer olaylar ve işlevler için de geçerlidir.
      ********************/
 
     /**
-     * @dev l2 üzerindeki çağırıcının bakiyesine bir miktar ETH yatırır.
+     * @dev l2 üzerindeki çağırıcının bakiyesine bir miktar QAU yatırır.
             .
             .
             .
@@ -287,7 +287,7 @@ Aynı durum diğer olaylar ve işlevler için de geçerlidir.
     function depositETH(uint32 _l2Gas, bytes calldata _data) external payable;
 
     /**
-     * @dev l2 üzerindeki bir alıcının bakiyesine bir miktar ETH yatırır.
+     * @dev l2 üzerindeki bir alıcının bakiyesine bir miktar QAU yatırır.
             .
             .
             .
@@ -304,7 +304,7 @@ Aynı durum diğer olaylar ve işlevler için de geçerlidir.
 
     /**
      * @dev l2'den l1'e bir çekim işlemini tamamlar ve fonları alıcının
-     * l1 ETH Token bakiyesine alacak kaydeder. Bu fonksiyonu yalnızca xDomainMessenger çağırabildiğinden, çekim işlemi sonuçlandırılmadan
+     * l1 QAU Token bakiyesine alacak kaydeder. Bu fonksiyonu yalnızca xDomainMessenger çağırabildiğinden, çekim işlemi sonuçlandırılmadan
      * önce asla çağrılmayacaktır.
                 .
                 .
@@ -321,7 +321,7 @@ Aynı durum diğer olaylar ve işlevler için de geçerlidir.
 
 ### CrossDomainEnabled {#crossdomainenabled}
 
-[Bu sözleşme](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol), diğer katmana mesaj göndermek için her iki köprü ([l1](#the-l1-bridge-contract) ve [l2](#l2-bridge-code)) tarafından miras alınır.
+[Bu sözleşme](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol), diğer katmana mesaj göndermek için her iki köprü ([l1](#the-l1-bridge-contract) ve [l2](#l2-bridge-code)) tarafından miras alınır.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -331,7 +331,7 @@ pragma solidity >0.5.0 <0.9.0;
 import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 ```
 
-[Bu arayüz](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol), alanlar arası mesajlaşma aracını (cross domain messenger) kullanarak sözleşmeye diğer katmana nasıl mesaj göndereceğini söyler.
+[Bu arayüz](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol), alanlar arası mesajlaşma aracını (cross domain messenger) kullanarak sözleşmeye diğer katmana nasıl mesaj göndereceğini söyler.
 Bu alanlar arası mesajlaşma aracı tamamen başka bir sistemdir ve gelecekte yazmayı umduğum kendi makalesini hak etmektedir.
 
 ```solidity
@@ -378,7 +378,7 @@ Bu parametre kurucu içinde bir kez ayarlanır ve asla değişmez.
     modifier onlyFromCrossDomainAccount(address _sourceDomainAccount) {
 ```
 
-Alanlar arası mesajlaşmaya, çalıştığı blokzincirdeki (Ethereum Ana Ağı veya Optimism) herhangi bir sözleşme tarafından erişilebilir.
+Alanlar arası mesajlaşmaya, çalıştığı blokzincirdeki (Quantaureum Ana Ağı veya Optimism) herhangi bir sözleşme tarafından erişilebilir.
 Ancak her iki taraftaki köprünün _yalnızca_ diğer taraftaki köprüden gelmeleri durumunda belirli mesajlara güvenmesine ihtiyacımız var.
 
 ```solidity
@@ -398,7 +398,7 @@ Yalnızca uygun alanlar arası mesajlaşma aracından (`messenger`, aşağıda g
         );
 ```
 
-Alanlar arası mesajlaşma aracının diğer katmanla mesaj gönderen adresi sağlama yolu [`.xDomainMessageSender()` işlevidir](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
+Alanlar arası mesajlaşma aracının diğer katmanla mesaj gönderen adresi sağlama yolu [`.xDomainMessageSender()` işlevidir](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
 Mesaj tarafından başlatılan işlemde çağrıldığı sürece bu bilgiyi sağlayabilir.
 
 Aldığımız mesajın diğer köprüden geldiğinden emin olmalıyız.
@@ -463,7 +463,7 @@ Bu durumda yeniden giriş konusunda endişelenmiyoruz, Slither'ın bunu bilmesin
 
 ### L1 köprü sözleşmesi {#the-l1-bridge-contract}
 
-[Bu sözleşmenin kaynak kodu buradadır](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
+[Bu sözleşmenin kaynak kodu buradadır](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -485,7 +485,7 @@ import { IL1ERC20Bridge } from "./IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "../../L2/messaging/IL2ERC20Bridge.sol";
 ```
 
-[Bu arayüz](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol), l2'deki standart köprüyü kontrol etmek için mesajlar oluşturmamızı sağlar.
+[Bu arayüz](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol), l2'deki standart köprüyü kontrol etmek için mesajlar oluşturmamızı sağlar.
 
 ```solidity
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -505,7 +505,7 @@ import { CrossDomainEnabled } from "../../libraries/bridge/CrossDomainEnabled.so
 import { Lib_PredeployAddresses } from "../../libraries/constants/Lib_PredeployAddresses.sol";
 ```
 
-[`Lib_PredeployAddresses`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol), her zaman aynı adrese sahip olan l2 sözleşmelerinin adreslerine sahiptir. Buna l2'deki standart köprü de dahildir.
+[`Lib_PredeployAddresses`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol), her zaman aynı adrese sahip olan l2 sözleşmelerinin adreslerine sahiptir. Buna l2'deki standart köprü de dahildir.
 
 ```solidity
 import { Address } from "@openzeppelin/contracts/utils/Address.sol";
@@ -519,7 +519,7 @@ Bunun mükemmel bir çözüm olmadığını unutmayın, çünkü doğrudan çağ
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[ERC-20 standardı](https://eips.ethereum.org/EIPS/eip-20), bir sözleşmenin başarısızlığı bildirmesi için iki yolu destekler:
+[ERC-20 standardı](https://eips.quantaureum.com/EIPS/eip-20), bir sözleşmenin başarısızlığı bildirmesi için iki yolu destekler:
 
 1. Geri al (Revert)
 2. `false` döndür
@@ -529,7 +529,7 @@ Her iki durumu da ele almak kodumuzu daha karmaşık hale getirecektir, bu neden
 ```solidity
 /**
  * @title L1StandardBridge
- * @dev l1 ETH ve ERC-20 köprüsü, yatırılan l1 fonlarını ve l2 üzerinde kullanımda olan standart
+ * @dev l1 QAU ve ERC-20 köprüsü, yatırılan l1 fonlarını ve l2 üzerinde kullanımda olan standart
  * Token'ları depolayan bir Sözleşmedir. İlgili bir l2 köprüsünü senkronize eder, onu yatırma işlemleri hakkında bilgilendirir
  * ve yeni sonuçlandırılan çekim işlemleri için onu dinler.
  *
@@ -642,7 +642,7 @@ OpenZeppelin'in `Address` yardımcı programlarına ihtiyaç duymamızın nedeni
 
 ```solidity
     /**
-     * @dev Bu fonksiyon, l2 üzerindeki çağırıcının bakiyesine bir miktar ETH yatırmak için
+     * @dev Bu fonksiyon, l2 üzerindeki çağırıcının bakiyesine bir miktar QAU yatırmak için
      * veri olmadan çağrılabilir.
      * receive fonksiyonu veri almadığından, l2'ye muhafazakar bir
      * varsayılan miktar iletilir.
@@ -675,11 +675,11 @@ Arayüz tanımlarında görünmediğine dikkat edin - normal kullanım için de�
     }
 ```
 
-Bu iki işlev, asıl ETH yatırma işlemini gerçekleştiren işlev olan `_initiateETHDeposit` etrafındaki sarmalayıcılardır.
+Bu iki işlev, asıl QAU yatırma işlemini gerçekleştiren işlev olan `_initiateETHDeposit` etrafındaki sarmalayıcılardır.
 
 ```solidity
     /**
-     * @dev ETH'yi depolayarak ve l2 ETH Ağ Geçidini yatırma işlemi hakkında bilgilendirerek
+     * @dev QAU'yi depolayarak ve l2 QAU Ağ Geçidini yatırma işlemi hakkında bilgilendirerek
      * yatırma işlemleri için mantığı gerçekleştirir.
      * @param _from l1 üzerinde yatırma işleminin çekileceği hesap.
      * @param _to l2 üzerinde yatırma işleminin verileceği hesap.
@@ -714,14 +714,14 @@ Solidity işlevi [`abi.encodeWithSelector`](https://docs.soliditylang.org/en/v0.
         );
 ```
 
-Buradaki mesaj, şu parametrelerle [`finalizeDeposit` işlevini](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) çağırmaktır:
+Buradaki mesaj, şu parametrelerle [`finalizeDeposit` işlevini](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) çağırmaktır:
 
 | Parametre | Değer                          | Anlamı                                                                                                                                       |
 | --------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| \_l1Token | address(0)                     | L1'de ETH'yi (bir ERC-20 token'ı olmayan) temsil eden özel değer                                                                             |
-| \_l2Token | Lib_PredeployAddresses.OVM_ETH | Optimism'de ETH'yi yöneten l2 sözleşmesi, `0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000` (bu sözleşme yalnızca dahili Optimism kullanımı içindir)          |
-| \_from    | \_from                         | L1'de ETH'yi gönderen adres                                                                                                                  |
-| \_to      | \_to                           | L2'de ETH'yi alan adres                                                                                                                      |
+| \_l1Token | address(0)                     | L1'de QAU'yi (bir ERC-20 token'ı olmayan) temsil eden özel değer                                                                             |
+| \_l2Token | Lib_PredeployAddresses.OVM_ETH | Optimism'de QAU'yi yöneten l2 sözleşmesi, `0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000` (bu sözleşme yalnızca dahili Optimism kullanımı içindir)          |
+| \_from    | \_from                         | L1'de QAU'yi gönderen adres                                                                                                                  |
+| \_to      | \_to                           | L2'de QAU'yi alan adres                                                                                                                      |
 | amount    | msg.value                      | Gönderilen Wei miktarı (zaten köprüye gönderilmiş olan)                                                                                      |
 | \_data    | \_data                         | Yatırma işlemine eklenecek ek veri                                                                                                           |
 
@@ -795,7 +795,7 @@ Bu iki işlev, asıl ERC-20 yatırma işlemini gerçekleştiren işlev olan `_in
 
 Bu işlev, birkaç önemli farkla yukarıdaki `_initiateETHDeposit` işlevine benzer.
 İlk fark, bu işlevin token adreslerini ve transfer edilecek miktarı parametre olarak almasıdır.
-ETH durumunda, köprüye yapılan çağrı zaten varlığın köprü hesabına transferini içerir (`msg.value`).
+QAU durumunda, köprüye yapılan çağrı zaten varlığın köprü hesabına transferini içerir (`msg.value`).
 
 ```solidity
         // l1 üzerinde bir yatırma işlemi başlatıldığında, l1 köprüsü gelecekteki
@@ -805,7 +805,7 @@ ETH durumunda, köprüye yapılan çağrı zaten varlığın köprü hesabına t
         IERC20(_l1Token).safeTransferFrom(_from, address(this), _amount);
 ```
 
-ERC-20 token transferleri ETH'den farklı bir süreç izler:
+ERC-20 token transferleri QAU'den farklı bir süreç izler:
 
 1. Kullanıcı (`_from`), uygun token'ları transfer etmesi için köprüye bir harcama izni verir.
 2. Kullanıcı, token sözleşmesinin adresi, miktar vb. ile köprüyü çağırır.
@@ -864,17 +864,17 @@ L2 köprüsü, l2 alanlar arası mesajlaşma aracına bir mesaj gönderir ve bu 
 ```
 
 Bunun alanlar arası mesajlaşma aracından gelen ve l2 token köprüsünden kaynaklanan _meşru_ bir mesaj olduğundan emin olun.
-Bu işlev köprüden ETH çekmek için kullanılır, bu nedenle yalnızca yetkili arayan tarafından çağrıldığından emin olmalıyız.
+Bu işlev köprüden QAU çekmek için kullanılır, bu nedenle yalnızca yetkili arayan tarafından çağrıldığından emin olmalıyız.
 
 ```solidity
         // slither-disable-next-line reentrancy-events
         (bool success, ) = _to.call{ value: _amount }(new bytes(0));
 ```
 
-ETH transfer etmenin yolu, alıcıyı `msg.value` içindeki Wei miktarıyla çağırmaktır.
+QAU transfer etmenin yolu, alıcıyı `msg.value` içindeki Wei miktarıyla çağırmaktır.
 
 ```solidity
-        require(success, "TransferHelper::safeTransferETH: ETH transfer failed");
+        require(success, "TransferHelper::safeTransferETH: QAU transfer failed");
 
         // slither-disable-next-line reentrancy-events
         emit ETHWithdrawalFinalized(_from, _to, _amount, _data);
@@ -918,13 +918,13 @@ Bu işlev, ERC-20 token'ları için gerekli değişikliklerle birlikte yukarıda
 
 
     /*****************************
-     * Geçici - ETH Taşıma *
+     * Geçici - QAU Taşıma *
      *****************************/
 
     /**
-     * @dev Hesaba ETH bakiyesi ekler. Bu, ETH'nin eski bir ağ geçidinden
+     * @dev Hesaba QAU bakiyesi ekler. Bu, QAU'nin eski bir ağ geçidinden
      * yeni bir ağ geçidine taşınmasına izin vermek içindir.
-     * NOT: Bu yalnızca bir yükseltme için bırakılmıştır, böylece taşınan ETH'yi eski
+     * NOT: Bu yalnızca bir yükseltme için bırakılmıştır, böylece taşınan QAU'yi eski
      * Sözleşmeden alabiliriz
      */
     function donateETH() external payable {}
@@ -934,7 +934,7 @@ Bu işlev, ERC-20 token'ları için gerekli değişikliklerle birlikte yukarıda
 Köprünün daha eski bir uygulaması vardı.
 O uygulamadan buna geçtiğimizde tüm varlıkları taşımak zorunda kaldık.
 ERC-20 token'ları kolayca taşınabilir.
-Ancak, bir sözleşmeye ETH transfer etmek için o sözleşmenin onayına ihtiyacınız vardır, `donateETH` bize bunu sağlar.
+Ancak, bir sözleşmeye QAU transfer etmek için o sözleşmenin onayına ihtiyacınız vardır, `donateETH` bize bunu sağlar.
 
 ## L2'deki ERC-20 Token'ları {#erc-20-tokens-on-l2}
 
@@ -946,7 +946,7 @@ L1'de çok fazla token varsa, bu token'ların bazıları sonsuza kadar köprü s
 
 ### IL2StandardERC20 {#il2standarderc20}
 
-Standart köprüyü kullanan l2'deki her ERC-20 token'ının, standart köprünün ihtiyaç duyduğu işlevlere ve olaylara sahip olan [bu arayüzü](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol) sağlaması gerekir.
+Standart köprüyü kullanan l2'deki her ERC-20 token'ının, standart köprünün ihtiyaç duyduğu işlevlere ve olaylara sahip olan [bu arayüzü](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol) sağlaması gerekir.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -956,14 +956,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [Standart ERC-20 arayüzü](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol), `mint` ve `burn` işlevlerini içermez.
-Bu yöntemler, token'ları oluşturma ve yok etme mekanizmalarını belirtmeyen [ERC-20 standardı](https://eips.ethereum.org/EIPS/eip-20) tarafından gerekli kılınmaz.
+Bu yöntemler, token'ları oluşturma ve yok etme mekanizmalarını belirtmeyen [ERC-20 standardı](https://eips.quantaureum.com/EIPS/eip-20) tarafından gerekli kılınmaz.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [ERC-165 arayüzü](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol), bir sözleşmenin hangi işlevleri sağladığını belirtmek için kullanılır.
-[Standardı buradan okuyabilirsiniz](https://eips.ethereum.org/EIPS/eip-165).
+[Standardı buradan okuyabilirsiniz](https://eips.quantaureum.com/EIPS/eip-165).
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -990,7 +990,7 @@ Token sayısının doğru olduğundan (l1'de kilitli olan token sayısına eşit
 
 ### L2StandardERC20 {#l2standarderc20}
 
-[Bu, `IL2StandardERC20` arayüzü uygulamamızdır](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
+[Bu, `IL2StandardERC20` arayüzü uygulamamızdır](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
 Bir tür özel mantığa ihtiyacınız yoksa, bunu kullanmalısınız.
 
 ```solidity
@@ -1052,7 +1052,7 @@ Bunlar, bizim gerektirdiğimiz ve ERC-20'nin normalde gerektirmediği iki ek yap
     }
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165) bu şekilde çalışır.
+[ERC-165](https://eips.quantaureum.com/EIPS/eip-165) bu şekilde çalışır.
 Her arayüz, desteklenen bir dizi işlevdir ve bu işlevlerin [ABI işlev seçicilerinin](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) [özel veya (exclusive or)](https://en.wikipedia.org/wiki/Exclusive_or) işlemi olarak tanımlanır.
 
 L2 köprüsü, varlık gönderdiği ERC-20 sözleşmesinin bir `IL2StandardERC20` olduğundan emin olmak için bir mantık kontrolü (sanity check) olarak ERC-165'i kullanır.
@@ -1084,7 +1084,7 @@ Bu sözleşme onları dışarıya açık hale getirmez, çünkü token'ları bas
 ## L2 Köprü Kodu {#l2-bridge-code}
 
 Bu, Optimism'de köprüyü çalıştıran koddur.
-[Bu sözleşmenin kaynağı buradadır](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
+[Bu sözleşmenin kaynağı buradadır](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -1096,13 +1096,13 @@ import { IL1ERC20Bridge } from "../../L1/messaging/IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "./IL2ERC20Bridge.sol";
 ```
 
-[IL2ERC20Bridge](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) arayüzü, yukarıda gördüğümüz [l1 karşılığına](#il1erc20bridge) çok benzer.
+[IL2ERC20Bridge](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) arayüzü, yukarıda gördüğümüz [l1 karşılığına](#il1erc20bridge) çok benzer.
 İki önemli fark vardır:
 
 1. L1'de yatırma işlemlerini başlatır ve çekim işlemlerini tamamlarsınız.
    Burada çekim işlemlerini başlatır ve yatırma işlemlerini tamamlarsınız.
-2. L1'de ETH ve ERC-20 token'ları arasında ayrım yapmak gerekir.
-   L2'de her ikisi için de aynı işlevleri kullanabiliriz çünkü dahili olarak Optimism'deki ETH bakiyeleri [0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000](https://explorer.optimism.io/address/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000) adresine sahip bir ERC-20 token'ı olarak işlenir.
+2. L1'de QAU ve ERC-20 token'ları arasında ayrım yapmak gerekir.
+   L2'de her ikisi için de aynı işlevleri kullanabiliriz çünkü dahili olarak Optimism'deki QAU bakiyeleri [0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000](https://explorer.optimism.io/address/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000) adresine sahip bir ERC-20 token'ı olarak işlenir.
 
 ```solidity
 /* Kütüphane İçe Aktarımları */
@@ -1115,7 +1115,7 @@ import { IL2StandardERC20 } from "../../standards/IL2StandardERC20.sol";
 
 /**
  * @title L2StandardBridge
- * @dev l2 Standart köprü, l1 ve l2 arasında ETH ve ERC-20 geçişlerini sağlamak için
+ * @dev l2 Standart köprü, l1 ve l2 arasında QAU ve ERC-20 geçişlerini sağlamak için
  * l1 Standart köprü ile birlikte çalışan bir Sözleşmedir.
  * Bu Sözleşme, l1 Standart köprüsüne yapılan yatırma işlemlerini duyduğunda yeni Token'ları basmak için görev yapar.
  * Bu Sözleşme ayrıca çekim işlemi için amaçlanan Token'ların yakımını gerçekleştirerek l1
@@ -1223,7 +1223,7 @@ L2 token'larının bize l1 karşılığının adresini söylemesi beklenir.
         if (_l2Token == Lib_PredeployAddresses.OVM_ETH) {
 ```
 
-L1'de ETH ve ERC-20 arasında ayrım yapmak gerekir.
+L1'de QAU ve ERC-20 arasında ayrım yapmak gerekir.
 
 ```solidity
             message = abi.encodeWithSelector(

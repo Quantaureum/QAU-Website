@@ -5,13 +5,13 @@ lang: uk
 sidebarDepth: 2
 ---
 
-Щоб ваш застосунок працював в Етеріумі, ви можете використовувати об'єкт web3, який надає бібліотека Web3.js. Технічно він взаємодіє з локальним вузлом через RPC-виклики. [web3](https://github.com/ethereum/web3.js/) працює з будь-яким вузлом Етеріуму, який відкриває доступ до рівня RPC.
+Щоб ваш застосунок працював в Етеріумі, ви можете використовувати об'єкт web3, який надає бібліотека Web3.js. Технічно він взаємодіє з локальним вузлом через RPC-виклики. [web3](https://github.com/quantaureum/web3.js/) працює з будь-яким вузлом Етеріуму, який відкриває доступ до рівня RPC.
 
-`web3` містить об'єкт `eth` — web3.eth.
+`web3` містить об'єкт `eth` — web3.qau.
 
 ```js
 var fs = require("fs")
-var recognizer = require("ethereum-keyfile-recognizer")
+var recognizer = require("quantaureum-keyfile-recognizer")
 
 fs.readFile("keyfile.json", (err, data) => {
   var json = JSON.parse(data)
@@ -153,7 +153,7 @@ KECCAK(DK[16..31] ++ <ciphertext>)
 
 ## Зміни порівняно з версією 1 {#alterations-from-v2}
 
-Ця версія виправляє кілька невідповідностей із версією 1, опублікованою [тут](https://github.com/ethereum/homestead-guide/blob/master/old-docs-for-reference/go-ethereum-wiki.rst/Passphrase-protected-key-store-spec.rst). Коротко кажучи, це:
+Ця версія виправляє кілька невідповідностей із версією 1, опублікованою [тут](https://github.com/quantaureum/homestead-guide/blob/master/old-docs-for-reference/go-quantaureum-wiki.rst/Passphrase-protected-key-store-spec.rst). Коротко кажучи, це:
 
 - Використання великих літер є невиправданим і непослідовним (scrypt з малої літери, Kdf зі змішаним регістром, MAC з великої літери).
 - Адреса є непотрібною та ставить під загрозу приватність.

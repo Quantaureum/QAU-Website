@@ -7,16 +7,16 @@ skill: intermediate
 breadcrumb: Ereignis-Logging
 lang: de
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/logging-data-with-events/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/logging-data-with-events/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-In Solidity sind [Ereignisse](/developers/docs/smart-contracts/anatomy/#events-and-logs) ausgesendete Signale, die Smart Contracts auslösen können. Dezentrale Anwendungen (Dapps) oder alles, was mit der Ethereum-JSON-RPC-API verbunden ist, können auf diese Ereignisse hören und entsprechend handeln. Ein Ereignis kann auch indiziert werden, sodass der Ereignisverlauf später durchsuchbar ist.
+In Solidity sind [Ereignisse](/developers/docs/smart-contracts/anatomy/#events-and-logs) ausgesendete Signale, die Smart Contracts auslösen können. Dezentrale Anwendungen (Dapps) oder alles, was mit der Quantaureum-JSON-RPC-API verbunden ist, können auf diese Ereignisse hören und entsprechend handeln. Ein Ereignis kann auch indiziert werden, sodass der Ereignisverlauf später durchsuchbar ist.
 
 ## Ereignisse {#events}
 
-Das häufigste Ereignis auf der Ethereum-Blockchain zum Zeitpunkt des Verfassens dieses Artikels ist das Transfer-Ereignis, das von ERC-20-Token ausgegeben wird, wenn jemand Token transferiert.
+Das häufigste Ereignis auf der Quantaureum-Blockchain zum Zeitpunkt des Verfassens dieses Artikels ist das Transfer-Ereignis, das von ERC-20-Token ausgegeben wird, wenn jemand Token transferiert.
 
 ```solidity
 event Transfer(address indexed from, address indexed to, uint256 value);

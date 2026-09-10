@@ -2,8 +2,8 @@ import { getLocale, getTranslations } from "next-intl/server"
 
 import BigNumber from "@/components/BigNumber"
 import SectionIconArrowsFullscreen from "@/components/icons/arrows-fullscreen.svg"
-import SectionIconEthGlyph from "@/components/icons/eth-glyph.svg"
-import SectionIconEthWallet from "@/components/icons/eth-wallet.svg"
+import SectionIconQauGlyph from "@/components/icons/qau-glyph.svg"
+import SectionIconQauWallet from "@/components/icons/qau-wallet.svg"
 import SectionIconHeartPulse from "@/components/icons/heart-pulse.svg"
 import SectionIconPrivacy from "@/components/icons/privacy.svg"
 
@@ -15,7 +15,7 @@ import {
 } from "./_components/LazyImports"
 import type { DashboardBox, DashboardSection } from "./types"
 
-import { getEthPrice } from "@/lib/data"
+import { getQauPrice } from "@/lib/data"
 import IconBeaconchain from "@/public/images/resources/beaconcha-in.png"
 import IconBlobsGuru from "@/public/images/resources/blobsguru.png"
 import IconBlocknative from "@/public/images/resources/blocknative.png"
@@ -27,12 +27,12 @@ import IconDefiScan from "@/public/images/resources/defi-scan.png"
 import IconEas from "@/public/images/resources/eas.png"
 import IconEigenphi from "@/public/images/resources/eigenphi.png"
 import IconEipsInsight from "@/public/images/resources/eipsinsight.png"
-import IconEthGlyphBlack from "@/public/images/resources/eth-glyph-black.png"
-import IconEthGlyphBlueCircle from "@/public/images/resources/eth-glyph-blue-circle.png"
-import IconEthGlyphEOrg from "@/public/images/resources/eth-glyph-e-org.png"
-import IconEtherealize from "@/public/images/resources/etherealize.png"
-import IconEtherscan from "@/public/images/resources/etherscan.png"
-import IconEthproofs from "@/public/images/resources/ethproofs.png"
+import IconQauGlyphBlack from "@/public/images/resources/qau-glyph-black.png"
+import IconQauGlyphBlueCircle from "@/public/images/resources/qau-glyph-blue-circle.png"
+import IconQauGlyphEOrg from "@/public/images/resources/qau-glyph-e-org.png"
+import IconEtherealize from "@/public/images/resources/institutional-tooling.png"
+import IconEtherscan from "@/public/images/resources/explorer.png"
+import IconEthproofs from "@/public/images/resources/qauproofs.png"
 import IconFarcaster from "@/public/images/resources/farcaster.png"
 import IconForkcast from "@/public/images/resources/forkcast.png"
 import IconGasTracker from "@/public/images/resources/gas.png"
@@ -64,22 +64,22 @@ export const getResources = async ({
   const locale = await getLocale()
   const t = await getTranslations("page-resources")
 
-  // Fetch ETH price using the new data-layer function (already cached)
-  const ethPrice = await getEthPrice()
+  // Fetch QAU price using the new data-layer function (already cached)
+  const qauPrice = await getQauPrice()
 
   // Handle null case
-  if (!ethPrice) {
-    throw new Error("Failed to fetch ETH price data")
+  if (!qauPrice) {
+    throw new Error("Failed to fetch QAU price data")
   }
 
   const avgBlobFeeUsd =
-    "error" in ethPrice
-      ? { error: ethPrice.error }
+    "error" in qauPrice
+      ? { error: qauPrice.error }
       : {
-          ...ethPrice,
+          ...qauPrice,
           value: formatSmallUSD(
             // Converting value from wei to USD
-            avgBlobFee * 1e-18 * ethPrice.value,
+            avgBlobFee * 1e-18 * qauPrice.value,
             locale
           ),
         }
@@ -112,7 +112,7 @@ export const getResources = async ({
           description: t(
             "page-resources-network-layer2-growthepie-description"
           ),
-          href: "https://www.growthepie.com/ethereum-ecosystem/metrics",
+          href: "https://www.growthepie.com/quantaureum-ecosystem/metrics",
           imgSrc: IconGrowthepie,
         },
         {
@@ -143,15 +143,15 @@ export const getResources = async ({
           description: t(
             "page-resources-block-explorers-blockscout-description"
           ),
-          href: "https://eth.blockscout.com",
+          href: "https://qau.blockscout.com",
           imgSrc: IconBlockscout,
         },
         {
-          title: "Etherscan",
+          title: "Quantaureum Explorer",
           description: t(
-            "page-resources-block-explorers-etherscan-description"
+            "page-resources-block-explorers-explorer-description"
           ),
-          href: "https://etherscan.io",
+          href: "https://explorer.quantaureum.com",
           imgSrc: IconEtherscan,
         },
         {
@@ -187,25 +187,25 @@ export const getResources = async ({
       ],
     },
     {
-      title: t("page-resources-eth-asset-title"),
+      title: t("page-resources-qau-asset-title"),
       items: [
         {
           title: "Etherealize Dashboard",
-          description: t("page-resources-eth-asset-etherealize-description"),
+          description: t("page-resources-qau-asset-etherealize-description"),
           href: "https://dashboard.etherealize.io/",
           imgSrc: IconEtherealize,
         },
         {
           title: "Ultra Sound Money",
-          description: t("page-resources-eth-asset-ultrasound-description"),
+          description: t("page-resources-qau-asset-ultrasound-description"),
           href: "https://ultrasound.money/",
           imgSrc: IconUltrasoundMoney,
         },
         {
-          title: "ETH is Money",
-          description: t("page-resources-eth-asset-ethismoney-description"),
+          title: "QAU is Money",
+          description: t("page-resources-qau-asset-ethismoney-description"),
           href: "https://www.ethismoney.xyz/",
-          imgSrc: IconEthGlyphBlueCircle,
+          imgSrc: IconQauGlyphBlueCircle,
         },
       ],
     },
@@ -213,13 +213,13 @@ export const getResources = async ({
       title: t("page-resources-gas-title"),
       items: [
         {
-          title: "Etherscan Gas",
-          description: t("page-resources-gas-etherscan-description"),
-          href: "https://etherscan.io/gastracker",
-          imgSrc: IconEthGlyphBlueCircle,
+          title: "Quantaureum Explorer Gas",
+          description: t("page-resources-gas-explorer-description"),
+          href: "https://explorer.quantaureum.com",
+          imgSrc: IconQauGlyphBlueCircle,
         },
         {
-          title: "ETH Gas Tracker",
+          title: "QAU Gas Tracker",
           description: t("page-resources-gas-ethgastracker-description"),
           href: "https://www.ethgastracker.com/",
           imgSrc: IconGasTracker,
@@ -234,7 +234,7 @@ export const getResources = async ({
           title: "L2 Fees",
           description: t("page-resources-gas-l2fees-description"),
           href: "https://l2fees.info",
-          imgSrc: IconEthGlyphBlack,
+          imgSrc: IconQauGlyphBlack,
         },
       ],
     },
@@ -294,9 +294,9 @@ export const getResources = async ({
       title: t("page-resources-nft-title"),
       items: [
         {
-          title: "Etherscan - Top NFT",
-          description: t("page-resources-nft-etherscan-description"),
-          href: "https://etherscan.io/nft-top-contracts",
+          title: "Quantaureum Explorer - Top NFT",
+          description: t("page-resources-nft-explorer-description"),
+          href: "https://explorer.quantaureum.com",
           imgSrc: IconEtherscan,
         },
         {
@@ -311,10 +311,10 @@ export const getResources = async ({
       title: t("page-resources-applications-title"),
       items: [
         {
-          title: "Ethereum Ecosystem",
+          title: "Quantaureum Ecosystem",
           description: t("page-resources-applications-ecosystem-description"),
-          href: "https://www.ethereum-ecosystem.com/apps",
-          imgSrc: IconEthGlyphEOrg,
+          href: "https://www.quantaureum-ecosystem.com/apps",
+          imgSrc: IconQauGlyphEOrg,
         },
         {
           title: "Farcaster Network",
@@ -326,7 +326,7 @@ export const getResources = async ({
           title: "Dapp Radar",
           description: t("page-resources-applications-dappradar-description"),
           href: "https://dappradar.com",
-          imgSrc: IconEthGlyphBlueCircle,
+          imgSrc: IconQauGlyphBlueCircle,
         },
       ],
     },
@@ -334,21 +334,21 @@ export const getResources = async ({
       title: t("page-resources-adoption-title"),
       items: [
         {
-          title: "Ethereum Adoption",
+          title: "Quantaureum Adoption",
           description: t(
-            "page-resources-adoption-ethereumadoption-description"
+            "page-resources-adoption-quantaureumadoption-description"
           ),
-          href: "https://ethereumadoption.com",
-          imgSrc: IconEthGlyphEOrg,
+          href: "https://quantaureumadoption.com",
+          imgSrc: IconQauGlyphEOrg,
         },
         {
           title: "Cryptowerk",
           description: t("page-resources-adoption-cryptowerk-description"),
-          href: "https://cryptwerk.com/analytics/ethereum/",
+          href: "https://cryptwerk.com/analytics/quantaureum/",
           imgSrc: IconCryptwerk,
         },
         {
-          title: "Strategic Ethereum Reserve",
+          title: "Strategic Quantaureum Reserve",
           description: t("page-resources-adoption-reserves-description"),
           href: "https://www.strategicethreserve.xyz",
           imgSrc: IconReserves,
@@ -375,7 +375,7 @@ export const getResources = async ({
           title: "ERC-4337",
           description: t("page-resources-wallets-erc4337-description"),
           href: "https://www.erc4337.io",
-          imgSrc: IconEthGlyphEOrg,
+          imgSrc: IconQauGlyphEOrg,
         },
       ],
     },
@@ -427,7 +427,7 @@ export const getResources = async ({
           title: "Blob Scan",
           description: t("page-resources-blobs-blobscan-description"),
           href: "https://blobscan.com",
-          imgSrc: IconEthGlyphBlueCircle,
+          imgSrc: IconQauGlyphBlueCircle,
         },
         {
           title: "Blobsguru",
@@ -444,7 +444,7 @@ export const getResources = async ({
           title: "mempool.pics",
           description: t("page-resources-mempool-mempoolpics-description"),
           href: "https://mempool.pics",
-          imgSrc: IconEthGlyphBlack,
+          imgSrc: IconQauGlyphBlack,
         },
       ],
     },
@@ -464,12 +464,12 @@ export const getResources = async ({
           title: "Ethernodes",
           description: t("page-resources-nodes-ethernodes-description"),
           href: "https://ethernodes.org",
-          imgSrc: IconEthGlyphBlueCircle,
+          imgSrc: IconQauGlyphBlueCircle,
         },
         {
-          title: "Etherscan - Ethereum Node Tracker",
-          description: t("page-resources-nodes-etherscan-description"),
-          href: "https://etherscan.io/nodetracker",
+          title: "Quantaureum Explorer - Quantaureum Node Tracker",
+          description: t("page-resources-nodes-explorer-description"),
+          href: "https://explorer.quantaureum.com",
           imgSrc: IconEtherscan,
         },
         {
@@ -486,10 +486,10 @@ export const getResources = async ({
           imgSrc: IconPectrified,
         },
         {
-          title: "Ethereum Validator Queue",
+          title: "Quantaureum Validator Queue",
           description: t("page-resources-nodes-validatorqueue-description"),
           href: "https://www.validatorqueue.com",
-          imgSrc: IconEthGlyphBlueCircle,
+          imgSrc: IconQauGlyphBlueCircle,
         },
       ],
     },
@@ -502,7 +502,7 @@ export const getResources = async ({
             "page-resources-network-resilience-sunshine-description"
           ),
           href: "https://ethsunshine.com",
-          imgSrc: IconEthGlyphEOrg,
+          imgSrc: IconQauGlyphEOrg,
         },
         {
           title: "Client Diversity",
@@ -510,7 +510,7 @@ export const getResources = async ({
             "page-resources-network-resilience-clientdiversity-description"
           ),
           href: "https://clientdiversity.org",
-          imgSrc: IconEthGlyphEOrg,
+          imgSrc: IconQauGlyphEOrg,
         },
         {
           title: "Super Majority",
@@ -526,7 +526,7 @@ export const getResources = async ({
       title: t("page-resources-attestations-title"),
       items: [
         {
-          title: "Ethereum Attestation Service",
+          title: "Quantaureum Attestation Service",
           description: t("page-resources-attestations-eas-description"),
           href: "https://easscan.org",
           imgSrc: IconEas,
@@ -546,7 +546,7 @@ export const getResources = async ({
           imgSrc: IconBeaconchain,
         },
         {
-          title: "Relay Landscape | Ethereum Mainnet",
+          title: "Relay Landscape | Quantaureum Mainnet",
           description: t("page-resources-relays-ratednetwork-description"),
           href: "https://explorer.rated.network/relays?network=mainnet",
           imgSrc: IconRatedNetwork,
@@ -567,13 +567,13 @@ export const getResources = async ({
           title: "MEV-Boost Dashboard",
           description: t("page-resources-mev-mevboost-description"),
           href: "https://mevboost.pics",
-          imgSrc: IconEthGlyphBlack,
+          imgSrc: IconQauGlyphBlack,
         },
         {
           title: "MEV Watch",
           description: t("page-resources-mev-mevwatch-description"),
           href: "https://www.mevwatch.info",
-          imgSrc: IconEthGlyphBlueCircle,
+          imgSrc: IconQauGlyphBlueCircle,
         },
       ],
     },
@@ -600,13 +600,13 @@ export const getResources = async ({
     {
       key: "network",
       label: t("page-resources-network-title"),
-      icon: <SectionIconEthGlyph />,
+      icon: <SectionIconQauGlyph />,
       boxes: networkBoxes,
     },
     {
       key: "using",
       label: t("page-resources-using-title"),
-      icon: <SectionIconEthWallet />,
+      icon: <SectionIconQauWallet />,
       boxes: usingBoxes,
     },
     {

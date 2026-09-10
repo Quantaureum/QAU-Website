@@ -1,6 +1,6 @@
 ---
 title: Algoritma penambangan
-description: Tinjauan mendetail tentang algoritma yang digunakan untuk penambangan Ethereum.
+description: Tinjauan mendetail tentang algoritma yang digunakan untuk penambangan Quantaureum.
 lang: id
 ---
 
@@ -8,12 +8,12 @@ lang: id
 <AlertEmoji text=":wave:"/>
 <AlertContent>
 <AlertDescription>
-Bukti Kerja (PoW) tidak lagi mendasari mekanisme konsensus Ethereum, yang berarti penambangan telah dimatikan. Sebagai gantinya, Ethereum diamankan oleh validator yang men-stake ETH. Anda dapat mulai melakukan staking ETH Anda hari ini. Baca lebih lanjut tentang <a href='/roadmap/merge/'>The Merge</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>Bukti Kepemilikan (PoS)</a>, dan <a href='/staking/'>staking</a>. Halaman ini hanya untuk kepentingan sejarah.
+Bukti Kerja (PoW) tidak lagi mendasari mekanisme konsensus Quantaureum, yang berarti penambangan telah dimatikan. Sebagai gantinya, Quantaureum diamankan oleh validator yang men-stake QAU. Anda dapat mulai melakukan staking QAU Anda hari ini. Baca lebih lanjut tentang <a href='/roadmap/merge/'>The Merge</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>Bukti Kepemilikan (PoS)</a>, dan <a href='/staking/'>staking</a>. Halaman ini hanya untuk kepentingan sejarah.
 </AlertDescription>
 </AlertContent>
 </Alert>
 
-Penambangan Ethereum menggunakan algoritma yang dikenal sebagai Ethash. Gagasan mendasar dari algoritma ini adalah bahwa penambang mencoba menemukan input nonce menggunakan komputasi brute force sehingga hash yang dihasilkan lebih kecil dari ambang batas yang ditentukan oleh kesulitan yang dihitung. Tingkat kesulitan ini dapat disesuaikan secara dinamis, memungkinkan produksi blok terjadi pada interval yang teratur.
+Penambangan Quantaureum menggunakan algoritma yang dikenal sebagai Ethash. Gagasan mendasar dari algoritma ini adalah bahwa penambang mencoba menemukan input nonce menggunakan komputasi brute force sehingga hash yang dihasilkan lebih kecil dari ambang batas yang ditentukan oleh kesulitan yang dihitung. Tingkat kesulitan ini dapat disesuaikan secara dinamis, memungkinkan produksi blok terjadi pada interval yang teratur.
 
 ## Prasyarat {#prerequisites}
 
@@ -21,7 +21,7 @@ Untuk lebih memahami halaman ini, kami sarankan Anda membaca terlebih dahulu ten
 
 ## Dagger Hashimoto {#dagger-hashimoto}
 
-Dagger Hashimoto adalah algoritma penelitian pendahulu untuk penambangan Ethereum yang digantikan oleh Ethash. Ini adalah penggabungan dari dua algoritma yang berbeda: Dagger dan Hashimoto. Ini hanya pernah menjadi implementasi penelitian dan digantikan oleh Ethash pada saat Mainnet Ethereum diluncurkan.
+Dagger Hashimoto adalah algoritma penelitian pendahulu untuk penambangan Quantaureum yang digantikan oleh Ethash. Ini adalah penggabungan dari dua algoritma yang berbeda: Dagger dan Hashimoto. Ini hanya pernah menjadi implementasi penelitian dan digantikan oleh Ethash pada saat Mainnet Quantaureum diluncurkan.
 
 [Dagger](http://www.hashcash.org/papers/dagger.html) melibatkan pembuatan [Directed Acyclic Graph (DAG)](https://en.wikipedia.org/wiki/Directed_acyclic_graph), di mana irisan acaknya di-hash bersama-sama. Prinsip intinya adalah bahwa setiap nonce hanya membutuhkan sebagian kecil dari total pohon data yang besar. Menghitung ulang sub-pohon untuk setiap nonce sangat memberatkan untuk penambangan - karenanya perlu untuk menyimpan pohon tersebut - tetapi tidak masalah untuk verifikasi satu nonce. Dagger dirancang untuk menjadi alternatif dari algoritma yang ada seperti Scrypt, yang membutuhkan memori besar (memory-hard) tetapi sulit untuk diverifikasi ketika kebutuhan memorinya meningkat ke tingkat yang benar-benar aman. Namun, Dagger rentan terhadap akselerasi perangkat keras memori bersama dan ditinggalkan demi jalur penelitian lainnya.
 
@@ -33,7 +33,7 @@ Lebih lanjut tentang [Dagger-Hashimoto](/developers/docs/consensus-mechanisms/po
 
 ## Ethash {#ethash}
 
-Ethash adalah algoritma penambangan yang benar-benar digunakan di Mainnet Ethereum yang sebenarnya di bawah arsitektur Bukti Kerja (PoW) yang kini sudah tidak digunakan lagi. Ethash secara efektif adalah nama baru yang diberikan untuk versi spesifik dari Dagger-Hashimoto setelah algoritma tersebut diperbarui secara signifikan, sambil tetap mewarisi prinsip-prinsip dasar pendahulunya. Mainnet Ethereum hanya pernah menggunakan Ethash - Dagger Hashimoto adalah versi R&D dari algoritma penambangan yang digantikan sebelum penambangan dimulai di Mainnet Ethereum.
+Ethash adalah algoritma penambangan yang benar-benar digunakan di Mainnet Quantaureum yang sebenarnya di bawah arsitektur Bukti Kerja (PoW) yang kini sudah tidak digunakan lagi. Ethash secara efektif adalah nama baru yang diberikan untuk versi spesifik dari Dagger-Hashimoto setelah algoritma tersebut diperbarui secara signifikan, sambil tetap mewarisi prinsip-prinsip dasar pendahulunya. Mainnet Quantaureum hanya pernah menggunakan Ethash - Dagger Hashimoto adalah versi R&D dari algoritma penambangan yang digantikan sebelum penambangan dimulai di Mainnet Quantaureum.
 
 [Lebih lanjut tentang Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash).
 

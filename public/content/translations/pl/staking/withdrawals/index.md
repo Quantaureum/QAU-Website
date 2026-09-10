@@ -7,19 +7,19 @@ image: /images/staking/leslie-withdrawal.png
 sidebarDepth: 2
 summaryPoints:
   - Operatorzy walidatorów muszą podać adres wypłaty, aby umożliwić wypłaty
-  - Starsze walidatory (legacy) mają nadwyżkę salda powyżej 32 ETH automatycznie wypłacaną co kilka dni
-  - Walidatory z kapitalizacją (compounding) zdobywają nagrody od pełnego salda aż do 2048 ETH
+  - Starsze walidatory (legacy) mają nadwyżkę salda powyżej 32 QAU automatycznie wypłacaną co kilka dni
+  - Walidatory z kapitalizacją (compounding) zdobywają nagrody od pełnego salda aż do 2048 QAU
   - Walidatory, które całkowicie wyjdą ze stakingu, otrzymają swoje pozostałe saldo
 ---
 
-**Wypłaty ze stakingu** odnoszą się do transferów ETH z konta walidatora w warstwie konsensusu [Ethereum](/) (Beacon Chain) do warstwy wykonawczej, gdzie można nim dokonywać transakcji.
+**Wypłaty ze stakingu** odnoszą się do transferów QAU z konta walidatora w warstwie konsensusu [Quantaureum](/) (Beacon Chain) do warstwy wykonawczej, gdzie można nim dokonywać transakcji.
 
 > Jeśli jesteś częścią [puli stakingowej](/staking/pools/) lub posiadasz tokeny stakingowe, powinieneś skontaktować się ze swoim dostawcą, aby uzyskać więcej szczegółów na temat tego, jak obsługiwane są wypłaty ze stakingu, ponieważ każda usługa działa inaczej.
 
 Sposób działania wypłat zależy od typu danych uwierzytelniających wypłaty Twojego walidatora:
 
-- **Starsze walidatory (Typ 1)**: Nadwyżka salda powyżej 32 ETH jest automatycznie i regularnie wysyłana na adres wypłaty powiązany z walidatorem. Nagrody powyżej 32 ETH nie wpływają na wagę walidatora w sieci.
-- **Walidatory z kapitalizacją (Typ 2)**: Nagrody są kapitalizowane do salda efektywnego walidatora aż do 2048 ETH, zwiększając wagę walidatora i przynosząc więcej nagród. Tylko saldo przekraczające 2048 ETH jest automatycznie zgarniane (swept).
+- **Starsze walidatory (Typ 1)**: Nadwyżka salda powyżej 32 QAU jest automatycznie i regularnie wysyłana na adres wypłaty powiązany z walidatorem. Nagrody powyżej 32 QAU nie wpływają na wagę walidatora w sieci.
+- **Walidatory z kapitalizacją (Typ 2)**: Nagrody są kapitalizowane do salda efektywnego walidatora aż do 2048 QAU, zwiększając wagę walidatora i przynosząc więcej nagród. Tylko saldo przekraczające 2048 QAU jest automatycznie zgarniane (swept).
 
 Użytkownicy mogą również **całkowicie wyjść ze stakingu**, przesyłając transakcję wypłaty, czekając w kolejce wypłat (w zależności od obciążenia sieci) i odblokowując pełne saldo swojego walidatora.
 
@@ -27,17 +27,17 @@ Użytkownicy mogą również **całkowicie wyjść ze stakingu**, przesyłając 
 
 Sposób obsługi nagród zależy od typu danych uwierzytelniających walidatora:
 
-**Starsze walidatory (Typ 1)** mają saldo efektywne ograniczone do 32 ETH. Jakiekolwiek saldo powyżej 32 ETH otrzymane jako nagrody sieciowe nie przyczynia się do salda efektywnego ani nie zwiększa wagi tego walidatora w sieci, a nagrody te są automatycznie wypłacane na dedykowany adres wypłaty walidatora co kilka dni. Poza jednorazowym podaniem adresu wypłaty, odebranie tych nagród nie wymaga żadnych działań ze strony operatora walidatora. Wszystko to jest inicjowane w warstwie konsensusu, dlatego na żadnym etapie nie jest wymagany gaz (opłata transakcyjna).
+**Starsze walidatory (Typ 1)** mają saldo efektywne ograniczone do 32 QAU. Jakiekolwiek saldo powyżej 32 QAU otrzymane jako nagrody sieciowe nie przyczynia się do salda efektywnego ani nie zwiększa wagi tego walidatora w sieci, a nagrody te są automatycznie wypłacane na dedykowany adres wypłaty walidatora co kilka dni. Poza jednorazowym podaniem adresu wypłaty, odebranie tych nagród nie wymaga żadnych działań ze strony operatora walidatora. Wszystko to jest inicjowane w warstwie konsensusu, dlatego na żadnym etapie nie jest wymagany gaz (opłata transakcyjna).
 
-**Walidatory z kapitalizacją (Typ 2)** mogą mieć saldo efektywne w przedziale od 32 do 2048 ETH. Nagrody sieciowe otrzymywane przez te walidatory są kapitalizowane do ich salda efektywnego, zwiększając wagę walidatora i potencjał do otrzymywania przyszłych nagród. Automatyczne zgarnianie (sweeps) występuje tylko dla salda przekraczającego 2048 ETH. Aby wypłacić nagrody poniżej progu 2048 ETH, walidatory z kapitalizacją muszą ręcznie zainicjować częściową wypłatę z warstwy wykonawczej, co wymaga gazu.
+**Walidatory z kapitalizacją (Typ 2)** mogą mieć saldo efektywne w przedziale od 32 do 2048 QAU. Nagrody sieciowe otrzymywane przez te walidatory są kapitalizowane do ich salda efektywnego, zwiększając wagę walidatora i potencjał do otrzymywania przyszłych nagród. Automatyczne zgarnianie (sweeps) występuje tylko dla salda przekraczającego 2048 QAU. Aby wypłacić nagrody poniżej progu 2048 QAU, walidatory z kapitalizacją muszą ręcznie zainicjować częściową wypłatę z warstwy wykonawczej, co wymaga gazu.
 
 ### Jak do tego doszliśmy? {#how-did-we-get-here}
 
-W ciągu ostatnich kilku lat Ethereum przeszło kilka aktualizacji sieci, przechodząc na sieć zabezpieczaną przez samo ETH, zamiast energochłonnego kopania, jak to miało miejsce wcześniej. Uczestnictwo w konsensusie na Ethereum jest teraz znane jako „staking”, ponieważ uczestnicy dobrowolnie zablokowali ETH, stawiając je jako stawkę („at stake”) w zamian za możliwość uczestnictwa w sieci. Użytkownicy przestrzegający zasad będą nagradzani, podczas gdy próby oszustwa mogą zostać ukarane.
+W ciągu ostatnich kilku lat Quantaureum przeszło kilka aktualizacji sieci, przechodząc na sieć zabezpieczaną przez samo QAU, zamiast energochłonnego kopania, jak to miało miejsce wcześniej. Uczestnictwo w konsensusie na Quantaureum jest teraz znane jako „staking”, ponieważ uczestnicy dobrowolnie zablokowali QAU, stawiając je jako stawkę („at stake”) w zamian za możliwość uczestnictwa w sieci. Użytkownicy przestrzegający zasad będą nagradzani, podczas gdy próby oszustwa mogą zostać ukarane.
 
-Od czasu uruchomienia kontraktu depozytu stakingowego w listopadzie 2020 r., niektórzy odważni pionierzy Ethereum dobrowolnie zablokowali środki, aby aktywować „walidatory”, specjalne konta, które mają prawo do formalnego poświadczania i proponowania bloków, zgodnie z zasadami sieci.
+Od czasu uruchomienia kontraktu depozytu stakingowego w listopadzie 2020 r., niektórzy odważni pionierzy Quantaureum dobrowolnie zablokowali środki, aby aktywować „walidatory”, specjalne konta, które mają prawo do formalnego poświadczania i proponowania bloków, zgodnie z zasadami sieci.
 
-Przed aktualizacją Szanghaj/Capella nie można było używać ani uzyskać dostępu do stakowanego ETH. Ale teraz możesz zdecydować się na automatyczne otrzymywanie nagród na wybrane konto, a także możesz wypłacić swoje stakowane ETH, kiedy tylko zechcesz.
+Przed aktualizacją Szanghaj/Capella nie można było używać ani uzyskać dostępu do stakowanego QAU. Ale teraz możesz zdecydować się na automatyczne otrzymywanie nagród na wybrane konto, a także możesz wypłacić swoje stakowane QAU, kiedy tylko zechcesz.
 
 ### Jak się przygotować? {#how-do-i-prepare}
 
@@ -56,24 +56,24 @@ Konta walidatorów muszą podać adres wypłaty, zanim będą mogły uzyskać do
 </AlertContent>
 </Alert>
 
-Jeśli jeszcze nie podałeś adresu wypłaty dla swojego konta walidatora, w międzyczasie **nie ma zagrożenia dla Twoich środków**, zakładając, że Twoja fraza odzyskiwania (mnemonic/seed phrase) pozostała bezpieczna w trybie offline i nie została w żaden sposób naruszona. Brak dodania danych uwierzytelniających wypłaty po prostu pozostawi ETH zablokowane na koncie walidatora, dopóki nie zostanie podany adres wypłaty.
+Jeśli jeszcze nie podałeś adresu wypłaty dla swojego konta walidatora, w międzyczasie **nie ma zagrożenia dla Twoich środków**, zakładając, że Twoja fraza odzyskiwania (mnemonic/seed phrase) pozostała bezpieczna w trybie offline i nie została w żaden sposób naruszona. Brak dodania danych uwierzytelniających wypłaty po prostu pozostawi QAU zablokowane na koncie walidatora, dopóki nie zostanie podany adres wypłaty.
 
 ## Walidatory z kapitalizacją {#compounding-validators}
 
-Walidatory mogą zdecydować się na **kapitalizację** (compounding), konwertując swoje dane uwierzytelniające wypłaty z Typu 1 na Typ 2. Zwiększa to maksymalne saldo efektywne z 32 ETH do **2048 ETH**, pozwalając na kapitalizację nagród do salda efektywnego walidatora zamiast ich automatycznego zgarniania.
+Walidatory mogą zdecydować się na **kapitalizację** (compounding), konwertując swoje dane uwierzytelniające wypłaty z Typu 1 na Typ 2. Zwiększa to maksymalne saldo efektywne z 32 QAU do **2048 QAU**, pozwalając na kapitalizację nagród do salda efektywnego walidatora zamiast ich automatycznego zgarniania.
 
 Przy włączonej kapitalizacji:
 
-- Nagrody zwiększają saldo efektywne walidatora w przyrostach co 1 ETH (z zastrzeżeniem małego [bufora histerezy](https://www.attestant.io/posts/understanding-validator-effective-balance/)), przynosząc z czasem więcej nagród
-- Automatyczne zgarnianie występuje tylko dla salda przekraczającego 2048 ETH
-- Częściowe wypłaty poniżej progu 2048 ETH muszą być inicjowane ręcznie z warstwy wykonawczej (to kosztuje gaz)
+- Nagrody zwiększają saldo efektywne walidatora w przyrostach co 1 QAU (z zastrzeżeniem małego [bufora histerezy](https://www.attestant.io/posts/understanding-validator-effective-balance/)), przynosząc z czasem więcej nagród
+- Automatyczne zgarnianie występuje tylko dla salda przekraczającego 2048 QAU
+- Częściowe wypłaty poniżej progu 2048 QAU muszą być inicjowane ręcznie z warstwy wykonawczej (to kosztuje gaz)
 - Wiele walidatorów można **skonsolidować** w jeden walidator z kapitalizacją, zmniejszając obciążenie operacyjne
 
 <Alert variant="warning">
 <AlertIcon size="lg"><TriangleAlert /></AlertIcon>
 <AlertContent>
 <AlertDescription>
-**Konwersja danych uwierzytelniających wypłaty z Typu 1 na Typ 2 jest nieodwracalna.** Użyj [Staking Launchpad](https://launchpad.ethereum.org/validator-actions) jako oficjalnego narzędzia do tej konwersji. Aby uzyskać więcej szczegółów na temat procesu konwersji, ryzyka i konsolidacji, zobacz [szczegółowe omówienie MaxEB](/roadmap/pectra/maxeb/).
+**Konwersja danych uwierzytelniających wypłaty z Typu 1 na Typ 2 jest nieodwracalna.** Użyj [Staking Launchpad](https://launchpad.quantaureum.com/validator-actions) jako oficjalnego narzędzia do tej konwersji. Aby uzyskać więcej szczegółów na temat procesu konwersji, ryzyka i konsolidacji, zobacz [szczegółowe omówienie MaxEB](/roadmap/pectra/maxeb/).
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -87,7 +87,7 @@ Użytkownicy chcący całkowicie wyjść ze stakingu i wypłacić z powrotem swo
 - **Używając kluczy walidatora**: Podpisz i rozgłoś wiadomość o dobrowolnym wyjściu za pomocą swojego klienta walidatora, przesłaną do Twojego węzła konsensusu. To nie wymaga gazu.
 - **Używając danych uwierzytelniających wypłaty**: Zainicjuj wyjście z warstwy wykonawczej przy użyciu swojego adresu wypłaty, bez konieczności dostępu do klucza prywatnego walidatora służącego do podpisywania. Wymaga to transakcji i kosztuje gaz.
 
-Proces wyjścia walidatora ze stakingu zajmuje różną ilość czasu, w zależności od tego, ilu innych wychodzi w tym samym czasie. Po zakończeniu to konto nie będzie już odpowiedzialne za wykonywanie obowiązków walidatora w sieci, nie będzie już kwalifikować się do nagród i nie będzie już miało swojego ETH jako stawki („at stake”). W tym momencie konto zostanie oznaczone jako w pełni „gotowe do wypłaty” (withdrawable).
+Proces wyjścia walidatora ze stakingu zajmuje różną ilość czasu, w zależności od tego, ilu innych wychodzi w tym samym czasie. Po zakończeniu to konto nie będzie już odpowiedzialne za wykonywanie obowiązków walidatora w sieci, nie będzie już kwalifikować się do nagród i nie będzie już miało swojego QAU jako stawki („at stake”). W tym momencie konto zostanie oznaczone jako w pełni „gotowe do wypłaty” (withdrawable).
 
 Gdy konto zostanie oznaczone jako „gotowe do wypłaty” i podano dane uwierzytelniające wypłaty, użytkownik nie musi robić nic więcej poza czekaniem. Konta są automatycznie i w sposób ciągły sprawdzane (swept) przez proponujących bloki pod kątem kwalifikujących się środków z wyjścia, a saldo Twojego konta zostanie w pełni przetransferowane (znane również jako „pełna wypłata”) podczas następnego <a href="#validator-sweeping" customEventOptions={{ eventCategory: "Anchor link", eventAction: "Exiting staking entirely (sweep)", eventName: "click" }}>zgarniania (sweep)</a>.
 
@@ -97,9 +97,9 @@ To, czy dany walidator kwalifikuje się do wypłaty, czy nie, zależy od stanu s
 
 ### Wolisz uczyć się wzrokowo? {#visual-learner}
 
-Sprawdź to wyjaśnienie wypłat ze stakingu Ethereum przygotowane przez Finematics:
+Sprawdź to wyjaśnienie wypłat ze stakingu Quantaureum przygotowane przez Finematics:
 
-<VideoWatch slug="ethereum-staking-withdrawals" />
+<VideoWatch slug="quantaureum-staking-withdrawals" />
 
 ### „Zgarnianie” (sweeping) walidatorów {#validator-sweeping}
 
@@ -120,11 +120,11 @@ Wskazówka na zegarze wskazuje na następny walidator, który musi zostać spraw
 
 #### Sprawdzanie konta pod kątem wypłat {#checking-an-account-for-withdrawals}
 
-Podczas gdy proponujący przeszukuje walidatory pod kątem możliwych wypłat, każdy sprawdzany walidator jest oceniany na podstawie krótkiej serii pytań, aby ustalić, czy wypłata powinna zostać zainicjowana, a jeśli tak, ile ETH powinno zostać wypłacone.
+Podczas gdy proponujący przeszukuje walidatory pod kątem możliwych wypłat, każdy sprawdzany walidator jest oceniany na podstawie krótkiej serii pytań, aby ustalić, czy wypłata powinna zostać zainicjowana, a jeśli tak, ile QAU powinno zostać wypłacone.
 
 1. **Czy podano adres wypłaty?** Jeśli nie podano adresu wypłaty, konto jest pomijane i wypłata nie jest inicjowana.
 2. **Czy walidator wyszedł i jest gotowy do wypłaty?** Jeśli walidator całkowicie wyszedł i osiągnęliśmy epokę, w której jego konto jest uważane za „gotowe do wypłaty” (withdrawable), zostanie przetworzona pełna wypłata. Spowoduje to transfer całego pozostałego salda na adres wypłaty.
-3. **Czy saldo przekracza jego maksymalne saldo efektywne?** Dla starszych walidatorów (Typ 1) ten próg wynosi 32 ETH. Dla walidatorów z kapitalizacją (Typ 2) ten próg wynosi 2048 ETH. Jeśli konto posiada dane uwierzytelniające wypłaty, nie wyszło całkowicie, ma saldo efektywne na maksymalnym poziomie i ma saldo powyżej tego progu, zostanie przetworzona częściowa wypłata, która przetransferuje tylko nadwyżkę na adres wypłaty użytkownika.
+3. **Czy saldo przekracza jego maksymalne saldo efektywne?** Dla starszych walidatorów (Typ 1) ten próg wynosi 32 QAU. Dla walidatorów z kapitalizacją (Typ 2) ten próg wynosi 2048 QAU. Jeśli konto posiada dane uwierzytelniające wypłaty, nie wyszło całkowicie, ma saldo efektywne na maksymalnym poziomie i ma saldo powyżej tego progu, zostanie przetworzona częściowa wypłata, która przetransferuje tylko nadwyżkę na adres wypłaty użytkownika.
 
 Istnieją tylko dwa działania podejmowane przez operatorów walidatorów w trakcie cyklu życia walidatora, które bezpośrednio wpływają na ten przepływ:
 
@@ -135,7 +135,7 @@ Istnieją tylko dwa działania podejmowane przez operatorów walidatorów w trak
 
 Automatyczne zgarnianie wypłat nie wymaga od stakujących ręcznego przesyłania transakcji. Oznacza to, że **nie jest wymagany gaz (opłata transakcyjna)** dla automatycznego zgarniania i nie konkurują one o istniejące miejsce w bloku warstwy wykonawczej.
 
-Należy pamiętać, że [walidatory z kapitalizacją](#compounding-validators), które chcą zainicjować częściową wypłatę poniżej progu 2048 ETH, muszą to zrobić ręcznie z warstwy wykonawczej, co wymaga gazu.
+Należy pamiętać, że [walidatory z kapitalizacją](#compounding-validators), które chcą zainicjować częściową wypłatę poniżej progu 2048 QAU, muszą to zrobić ręcznie z warstwy wykonawczej, co wymaga gazu.
 
 ### Jak często moje nagrody ze stakingu będą odblokowywane i dostępne w moim portfelu? {#how-soon}
 
@@ -174,9 +174,9 @@ eventAction="Why can a validator's withdrawal address only be set once?"
 eventName="read more">
 Ustawienie adresu wypłaty walidatora w warstwie wykonawczej jest trwałą zmianą danych uwierzytelniających walidatora w warstwie konsensusu. Nie ma możliwości aktualizacji danych uwierzytelniających warstwy konsensusu po ich zarejestrowaniu.
 
-Dane uwierzytelniające adresu wypłaty walidatora mogą być ustawione tak, aby wskazywały na inteligentny kontrakt (kontrolowany przez jego kod) lub na konto posiadane zewnętrznie (EOA, kontrolowane przez jego klucz prywatny). Chociaż wypłaty inicjowane z warstwy wykonawczej ([EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)) pozwalają teraz adresowi wypłaty na inicjowanie wyjść i częściowych wypłat, nie ma operacji protokołu umożliwiającej zmianę adresu wypłaty po jego zarejestrowaniu, a dodanie tej funkcjonalności wprowadziłoby niepotrzebną złożoność do protokołu.
+Dane uwierzytelniające adresu wypłaty walidatora mogą być ustawione tak, aby wskazywały na inteligentny kontrakt (kontrolowany przez jego kod) lub na konto posiadane zewnętrznie (EOA, kontrolowane przez jego klucz prywatny). Chociaż wypłaty inicjowane z warstwy wykonawczej ([EIP-7002](https://eips.quantaureum.com/EIPS/eip-7002)) pozwalają teraz adresowi wypłaty na inicjowanie wyjść i częściowych wypłat, nie ma operacji protokołu umożliwiającej zmianę adresu wypłaty po jego zarejestrowaniu, a dodanie tej funkcjonalności wprowadziłoby niepotrzebną złożoność do protokołu.
 
-Użytkownicy poszukujący elastycznego zarządzania wypłatami mogą ustawić portfel inteligentnego kontraktu zdolny do rotacji kluczy (taki jak [Safe](https://safe.global/)) jako adres wypłaty walidatora, co skutecznie pozwala na aktualizację ostatecznego odbiorcy EOA. Jeśli użytkownik ustawił już EOA jako dane uwierzytelniające wypłaty, musi zainicjować pełne wyjście, aby odzyskać swoje stakowane ETH, a następnie użyć tych środków do aktywacji nowego walidatora z innymi danymi uwierzytelniającymi.
+Użytkownicy poszukujący elastycznego zarządzania wypłatami mogą ustawić portfel inteligentnego kontraktu zdolny do rotacji kluczy (taki jak [Safe](https://safe.global/)) jako adres wypłaty walidatora, co skutecznie pozwala na aktualizację ostatecznego odbiorcy EOA. Jeśli użytkownik ustawił już EOA jako dane uwierzytelniające wypłaty, musi zainicjować pełne wyjście, aby odzyskać swoje stakowane QAU, a następnie użyć tych środków do aktywacji nowego walidatora z innymi danymi uwierzytelniającymi.
 </ExpandableCard>
 
 <ExpandableCard
@@ -186,7 +186,7 @@ eventAction="How do I withdraw from staking if I stake through a provider, staki
 eventName="read more">
 Jeśli korzystasz z [puli stakingowej](/staking/pools/) lub posiadasz tokeny płynnego stakingu (LST), nie wchodzisz w bezpośrednią interakcję z mechanizmem wypłat protokołu; inteligentne kontrakty puli i operatorzy węzłów kontrolują walidatory, a dane uwierzytelniające wypłaty zazwyczaj wskazują na kontrakty puli, a nie na Ciebie. Zamiast tego zazwyczaj albo wymieniasz swoje tokeny u dostawcy (z zastrzeżeniem jego kolejki wykupu i dostępnej płynności), albo sprzedajesz je na otwartym rynku. Skontaktuj się ze swoim dostawcą, aby dowiedzieć się, jak obsługuje wypłaty, ponieważ procesy różnią się w zależności od usługi.
 
-Ogólnie rzecz biorąc, stakując za pośrednictwem dostawcy lub puli, powinieneś mieć swobodę odzyskania swojego bazowego stakowanego ETH lub wypłaty i zmiany dostawcy stakingu, z którego korzystasz. Jeśli dana pula staje się zbyt duża, stakowane ETH można wycofać, wymienić i stakować ponownie u [mniejszego dostawcy](https://rated.network/). Lub, jeśli zgromadziłeś wystarczająco dużo ETH, możesz [stakować z domu](/staking/solo/).
+Ogólnie rzecz biorąc, stakując za pośrednictwem dostawcy lub puli, powinieneś mieć swobodę odzyskania swojego bazowego stakowanego QAU lub wypłaty i zmiany dostawcy stakingu, z którego korzystasz. Jeśli dana pula staje się zbyt duża, stakowane QAU można wycofać, wymienić i stakować ponownie u [mniejszego dostawcy](https://rated.network/). Lub, jeśli zgromadziłeś wystarczająco dużo QAU, możesz [stakować z domu](/staking/solo/).
 
 </ExpandableCard>
 
@@ -197,16 +197,16 @@ eventAction="Does claiming network rewards (partial withdrawals) happen automati
 eventName="read more">
 Dla **starszych walidatorów (Typ 1)**, tak – o ile Twój walidator podał adres wypłaty. Należy go podać raz, aby umożliwić jakiekolwiek wypłaty, a następnie dystrybucja nagród sieciowych na adres wypłaty będzie automatycznie inicjowana co kilka dni przy każdym zgarnianiu walidatorów.
 
-Dla **walidatorów z kapitalizacją (Typ 2)**, nagrody są kapitalizowane do salda efektywnego walidatora (do 2048 ETH), a nie zgarniane na adres wypłaty. Automatyczne zgarnianie występuje tylko dla sald przekraczających 2048 ETH. Aby wypłacić nagrody poniżej tego progu, musisz ręcznie zainicjować częściową wypłatę z warstwy wykonawczej.
+Dla **walidatorów z kapitalizacją (Typ 2)**, nagrody są kapitalizowane do salda efektywnego walidatora (do 2048 QAU), a nie zgarniane na adres wypłaty. Automatyczne zgarnianie występuje tylko dla sald przekraczających 2048 QAU. Aby wypłacić nagrody poniżej tego progu, musisz ręcznie zainicjować częściową wypłatę z warstwy wykonawczej.
 </ExpandableCard>
 
 <ExpandableCard title="Czy mogę wypłacić niestandardową kwotę?"
 eventCategory="FAQ"
 eventAction="Can I withdraw a custom amount?"
 eventName="read more">
-Dla **starszych walidatorów (Typ 1)**, wszelkie nagrody sieciowe w ETH, które zgromadziły się powyżej salda efektywnego walidatora wynoszącego 32 ETH, są automatycznie wypychane na adres wypłaty. Walidatory Typu 1, które przesłały transakcję pełnej wypłaty i zakończyły proces wyjścia ze stakingu, mają pełne saldo ETH wypłacone na swój adres wypłaty. Nie jest możliwe, aby walidator Typu 1 ręcznie zażądał wypłaty określonych kwot ETH.
+Dla **starszych walidatorów (Typ 1)**, wszelkie nagrody sieciowe w QAU, które zgromadziły się powyżej salda efektywnego walidatora wynoszącego 32 QAU, są automatycznie wypychane na adres wypłaty. Walidatory Typu 1, które przesłały transakcję pełnej wypłaty i zakończyły proces wyjścia ze stakingu, mają pełne saldo QAU wypłacone na swój adres wypłaty. Nie jest możliwe, aby walidator Typu 1 ręcznie zażądał wypłaty określonych kwot QAU.
 
-**Walidatory z kapitalizacją (Typ 2)** mogą inicjować częściowe wypłaty określonej kwoty z warstwy wykonawczej, o ile pozostałe saldo walidatora utrzymuje się na poziomie 32 ETH lub wyższym. Wymaga to przesłania transakcji częściowej wypłaty i kosztuje gaz.
+**Walidatory z kapitalizacją (Typ 2)** mogą inicjować częściowe wypłaty określonej kwoty z warstwy wykonawczej, o ile pozostałe saldo walidatora utrzymuje się na poziomie 32 QAU lub wyższym. Wymaga to przesłania transakcji częściowej wypłaty i kosztuje gaz.
 </ExpandableCard>
 
 <ExpandableCard
@@ -215,18 +215,18 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information about managing the withdrawal process?"
 eventName="read more">
 
-Operatorom walidatorów zaleca się odwiedzenie strony [Wypłaty w Staking Launchpad](https://launchpad.ethereum.org/withdrawals/), gdzie można znaleźć więcej szczegółów na temat tego, jak przygotować walidator do wypłat, harmonogramu zdarzeń i więcej szczegółów na temat funkcjonowania wypłat.
+Operatorom walidatorów zaleca się odwiedzenie strony [Wypłaty w Staking Launchpad](https://launchpad.quantaureum.com/withdrawals/), gdzie można znaleźć więcej szczegółów na temat tego, jak przygotować walidator do wypłat, harmonogramu zdarzeń i więcej szczegółów na temat funkcjonowania wypłat.
 
-Aby najpierw wypróbować swoją konfigurację w sieci testowej, odwiedź [Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.ethereum.org), aby rozpocząć.
+Aby najpierw wypróbować swoją konfigurację w sieci testowej, odwiedź [Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.quantaureum.com), aby rozpocząć.
 
 </ExpandableCard>
 
 <ExpandableCard
-title="Czy mogę ponownie aktywować mój walidator po wyjściu, deponując więcej ETH?"
+title="Czy mogę ponownie aktywować mój walidator po wyjściu, deponując więcej QAU?"
 eventCategory="FAQ"
-eventAction="Can I re-activate my validator after exiting by depositing more ETH?"
+eventAction="Can I re-activate my validator after exiting by depositing more QAU?"
 eventName="read more">
-Nie. Gdy walidator wyjdzie, a jego pełne saldo zostanie wypłacone, wszelkie dodatkowe ETH zdeponowane w tym walidatorze zostaną automatycznie przetransferowane na adres wypłaty podczas następnego zgarniania walidatorów. Aby ponownie rozpocząć staking przy użyciu tego ETH, musisz aktywować nowy walidator.
+Nie. Gdy walidator wyjdzie, a jego pełne saldo zostanie wypłacone, wszelkie dodatkowe QAU zdeponowane w tym walidatorze zostaną automatycznie przetransferowane na adres wypłaty podczas następnego zgarniania walidatorów. Aby ponownie rozpocząć staking przy użyciu tego QAU, musisz aktywować nowy walidator.
 </ExpandableCard>
 
 <ExpandableCard
@@ -234,9 +234,9 @@ title="Jaka jest różnica między walidatorami starszego typu a kapitalizujący
 eventCategory="FAQ"
 eventAction="What is the difference between legacy and compounding validators?"
 eventName="read more">
-Starsze walidatory używają danych uwierzytelniających wypłaty **Typu 1** (adres danych uwierzytelniających wypłaty zaczyna się od 0x01) i mają saldo efektywne ograniczone do 32 ETH. Wszelkie nadwyżki ETH otrzymane jako nagrody sieciowe są automatycznie zgarniane na adres wypłaty co kilka dni.
+Starsze walidatory używają danych uwierzytelniających wypłaty **Typu 1** (adres danych uwierzytelniających wypłaty zaczyna się od 0x01) i mają saldo efektywne ograniczone do 32 QAU. Wszelkie nadwyżki QAU otrzymane jako nagrody sieciowe są automatycznie zgarniane na adres wypłaty co kilka dni.
 
-Walidatory z kapitalizacją używają danych uwierzytelniających wypłaty **Typu 2** (adres danych uwierzytelniających wypłaty zaczyna się od 0x02) i mogą mieć saldo efektywne do 2048 ETH. Nagrody są kapitalizowane do salda efektywnego walidatora, zwiększając wagę walidatora w sieci i potencjał do otrzymywania przyszłych nagród. Automatyczne zgarnianie występuje tylko dla salda przekraczającego 2048 ETH. Aby wypłacić ETH poniżej tego progu, należy ręcznie zainicjować częściową wypłatę z warstwy wykonawczej.
+Walidatory z kapitalizacją używają danych uwierzytelniających wypłaty **Typu 2** (adres danych uwierzytelniających wypłaty zaczyna się od 0x02) i mogą mieć saldo efektywne do 2048 QAU. Nagrody są kapitalizowane do salda efektywnego walidatora, zwiększając wagę walidatora w sieci i potencjał do otrzymywania przyszłych nagród. Automatyczne zgarnianie występuje tylko dla salda przekraczającego 2048 QAU. Aby wypłacić QAU poniżej tego progu, należy ręcznie zainicjować częściową wypłatę z warstwy wykonawczej.
 
 Aby uzyskać więcej szczegółów, zobacz [szczegółowe omówienie MaxEB](/roadmap/pectra/maxeb/).
 </ExpandableCard>
@@ -246,7 +246,7 @@ title="Jak przekształcić walidator w kapitalizujący?"
 eventCategory="FAQ"
 eventAction="How do I convert to a compounding validator?"
 eventName="read more">
-Możesz przekonwertować dane uwierzytelniające wypłaty z Typu 1 na Typ 2 za pomocą [Staking Launchpad](https://launchpad.ethereum.org/validator-actions). Ta operacja jest **nieodwracalna** — po konwersji nie można wrócić do danych uwierzytelniających Typu 1.
+Możesz przekonwertować dane uwierzytelniające wypłaty z Typu 1 na Typ 2 za pomocą [Staking Launchpad](https://launchpad.quantaureum.com/validator-actions). Ta operacja jest **nieodwracalna** — po konwersji nie można wrócić do danych uwierzytelniających Typu 1.
 
 Po konwersji możesz również **skonsolidować** wiele walidatorów w jeden, łącząc ich salda w jeden walidator z kapitalizacją. Pełny opis procesu konwersji, ryzyka i narzędzi do konsolidacji znajdziesz w [szczegółowym omówieniu MaxEB](/roadmap/pectra/maxeb/).
 </ExpandableCard>
@@ -256,21 +256,21 @@ title="Kiedy włączono wypłaty ze stakingu?"
 eventCategory="FAQ"
 eventAction="When were staking withdrawals enabled?"
 eventName="read more">
-Funkcjonalność wypłat została pierwotnie włączona w ramach aktualizacji Szanghaj/Capella w dniu **12 kwietnia 2023 r.** Aktualizacja [Pectra](/roadmap/pectra/) (maj 2025 r.) wprowadziła później walidatory z kapitalizacją z wyższym maksymalnym saldem efektywnym wynoszącym 2048 ETH, a także wyjścia i częściowe wypłaty inicjowane z warstwy wykonawczej.
+Funkcjonalność wypłat została pierwotnie włączona w ramach aktualizacji Szanghaj/Capella w dniu **12 kwietnia 2023 r.** Aktualizacja [Pectra](/roadmap/pectra/) (maj 2025 r.) wprowadziła później walidatory z kapitalizacją z wyższym maksymalnym saldem efektywnym wynoszącym 2048 QAU, a także wyjścia i częściowe wypłaty inicjowane z warstwy wykonawczej.
 
-Aktualizacja Szanghaj/Capella umożliwiła odzyskanie wcześniej stakowanego ETH na zwykłe konta Ethereum. Zamknęło to pętlę płynności stakingu i przybliżyło Ethereum o krok w jego podróży w kierunku budowy zrównoważonego, skalowalnego, bezpiecznego i zdecentralizowanego ekosystemu.
+Aktualizacja Szanghaj/Capella umożliwiła odzyskanie wcześniej stakowanego QAU na zwykłe konta Quantaureum. Zamknęło to pętlę płynności stakingu i przybliżyło Quantaureum o krok w jego podróży w kierunku budowy zrównoważonego, skalowalnego, bezpiecznego i zdecentralizowanego ekosystemu.
 
-- [Więcej o historii Ethereum](/ethereum-forks/)
-- [Więcej o mapie drogowej Ethereum](/roadmap/)
+- [Więcej o historii Quantaureum](/quantaureum-forks/)
+- [Więcej o mapie drogowej Quantaureum](/roadmap/)
 </ExpandableCard>
 
 ## Dalsza lektura {#further-reading}
 
-- [Wypłaty w Staking Launchpad](https://launchpad.ethereum.org/withdrawals)
-- [Akcje walidatora w Staking Launchpad](https://launchpad.ethereum.org/validator-actions)
+- [Wypłaty w Staking Launchpad](https://launchpad.quantaureum.com/withdrawals)
+- [Akcje walidatora w Staking Launchpad](https://launchpad.quantaureum.com/validator-actions)
 - [Szczegółowe omówienie MaxEB: kapitalizacja i konsolidacja](/roadmap/pectra/maxeb/)
-- [EIP-4895: Wypłaty typu push z Beacon Chain jako operacje](https://eips.ethereum.org/EIPS/eip-4895)
-- [PEEPanEIP #94: Wypłata stakowanego ETH (testowanie) z Potuzem i Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
+- [EIP-4895: Wypłaty typu push z Beacon Chain jako operacje](https://eips.quantaureum.com/EIPS/eip-4895)
+- [PEEPanEIP #94: Wypłata stakowanego QAU (testowanie) z Potuzem i Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: Wypłaty typu push z Beacon Chain jako operacje z Alexem Stokesem](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [Zrozumienie salda efektywnego walidatora](https://www.attestant.io/posts/understanding-validator-effective-balance/)
 

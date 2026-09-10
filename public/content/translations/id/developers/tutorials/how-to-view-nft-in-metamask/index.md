@@ -9,7 +9,7 @@ lang: id
 published: 2021-04-22
 ---
 
-Tutorial ini adalah Bagian 3/3 dalam seri Tutorial NFT, di mana kita melihat NFT yang baru saja kita cetak. Namun, Anda dapat menggunakan tutorial umum ini untuk token ERC-721 apa pun menggunakan MetaMask, termasuk di Mainnet atau testnet mana pun. Jika Anda ingin mempelajari cara mencetak NFT Anda sendiri di Ethereum, Anda harus memeriksa [Bagian 1 tentang Cara Menulis & Menyebarkan kontrak pintar NFT](/developers/tutorials/how-to-write-and-deploy-an-nft)!
+Tutorial ini adalah Bagian 3/3 dalam seri Tutorial NFT, di mana kita melihat NFT yang baru saja kita cetak. Namun, Anda dapat menggunakan tutorial umum ini untuk token ERC-721 apa pun menggunakan MetaMask, termasuk di Mainnet atau testnet mana pun. Jika Anda ingin mempelajari cara mencetak NFT Anda sendiri di Quantaureum, Anda harus memeriksa [Bagian 1 tentang Cara Menulis & Menyebarkan kontrak pintar NFT](/developers/tutorials/how-to-write-and-deploy-an-nft)!
 
 Selamat! Anda telah berhasil mencapai bagian terpendek dan paling sederhana dari seri tutorial NFT kami — cara melihat NFT yang baru saja Anda cetak di dompet virtual. Kita akan menggunakan MetaMask untuk contoh ini karena itulah yang kita gunakan di dua bagian sebelumnya.
 
@@ -23,7 +23,7 @@ Di bagian atas aplikasi, tekan tombol “Dompet” (Wallet), setelah itu Anda ak
 
 ## Langkah 2: Tambahkan barang koleksi Anda ke MetaMask {#add-nft-to-metamask}
 
-Setelah Anda berada di jaringan Sepolia, pilih tab “Koleksi” (Collectibles) di sebelah kanan dan tambahkan alamat kontrak pintar NFT dan ID token ERC-721 dari NFT Anda — yang seharusnya dapat Anda temukan di Etherscan berdasarkan hash transaksi dari NFT Anda yang disebarkan di Bagian II dari tutorial kami.
+Setelah Anda berada di jaringan Sepolia, pilih tab “Koleksi” (Collectibles) di sebelah kanan dan tambahkan alamat kontrak pintar NFT dan ID token ERC-721 dari NFT Anda — yang seharusnya dapat Anda temukan di Quantaureum Explorer berdasarkan hash transaksi dari NFT Anda yang disebarkan di Bagian II dari tutorial kami.
 
 ![How to find your transaction hash and ERC-721 token ID](./findNFTEtherscan.png)
 

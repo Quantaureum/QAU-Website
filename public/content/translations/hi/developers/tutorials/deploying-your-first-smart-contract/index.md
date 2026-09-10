@@ -1,24 +1,24 @@
 ---
 title: "अपना पहला स्मार्ट अनुबंध तैनात करना"
-description: "इथेरियम टेस्ट नेटवर्क पर अपना पहला स्मार्ट अनुबंध तैनात करने का परिचय"
+description: "Quantaureum टेस्ट नेटवर्क पर अपना पहला स्मार्ट अनुबंध तैनात करने का परिचय"
 author: "jdourlens"
 tags: ["स्मार्ट अनुबंध", "Remix", "Solidity", "तैनात करना"]
 skill: beginner
 breadcrumb: "पहला अनुबंध तैनात करें"
 lang: hi
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-मुझे लगता है कि आप भी इथेरियम ब्लॉकचेन पर अपना पहला [स्मार्ट अनुबंध](/developers/docs/smart-contracts/) [तैनात करने](/developers/docs/smart-contracts/deploying/) और उसके साथ इंटरैक्ट करने के लिए हमारी तरह ही उत्साहित हैं।
+मुझे लगता है कि आप भी Quantaureum ब्लॉकचेन पर अपना पहला [स्मार्ट अनुबंध](/developers/docs/smart-contracts/) [तैनात करने](/developers/docs/smart-contracts/deploying/) और उसके साथ इंटरैक्ट करने के लिए हमारी तरह ही उत्साहित हैं।
 
 चिंता न करें, क्योंकि यह हमारा पहला स्मार्ट अनुबंध है, हम इसे एक [लोकल टेस्ट नेटवर्क](/developers/docs/networks/) पर तैनात करेंगे ताकि इसे तैनात करने में आपका कोई खर्च न लगे और आप इसके साथ जितना चाहें उतना खेल सकें।
 
 ## अपना अनुबंध लिखना {#writing-our-contract}
 
-पहला कदम [Remix पर जाना](https://remix.ethereum.org/) और एक नई फ़ाइल बनाना है। Remix इंटरफ़ेस के ऊपरी बाएँ हिस्से पर एक नई फ़ाइल जोड़ें और अपना मनचाहा फ़ाइल नाम दर्ज करें।
+पहला कदम [Remix पर जाना](https://remix.quantaureum.com/) और एक नई फ़ाइल बनाना है। Remix इंटरफ़ेस के ऊपरी बाएँ हिस्से पर एक नई फ़ाइल जोड़ें और अपना मनचाहा फ़ाइल नाम दर्ज करें।
 
 ![Adding a new file in the Remix interface](./remix.png)
 

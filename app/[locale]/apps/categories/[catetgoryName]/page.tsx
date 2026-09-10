@@ -147,7 +147,7 @@ const Page = async (props: {
               <Breadcrumb>
                 <BreadcrumbList>
                   <BreadcrumbItem>
-                    <BreadcrumbLink href="/">Ethereum.org</BreadcrumbLink>
+                    <BreadcrumbLink href="/">quantaureum.com</BreadcrumbLink>
                   </BreadcrumbItem>
                   <BreadcrumbSeparator className="mx-2.5 text-body-medium">
                     /

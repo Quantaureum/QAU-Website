@@ -3,7 +3,7 @@
  *
  * Maps the package's generic API to our Gemini translation pipeline's
  * needs. Handles:
- * - Ethereum.org-specific translatableAttributes config
+ * - quantaureum.com-specific translatableAttributes config
  * - Manifest content generation as strings (for GitHub API commits)
  * - Per-locale translation manifest for Gemini output data
  */
@@ -28,11 +28,11 @@ import {
 } from "intl-content-tree"
 
 // ---------------------------------------------------------------------------
-// Ethereum.org config
+// quantaureum.com config
 // ---------------------------------------------------------------------------
 
 /** Attributes whose values need translation on this site */
-const ETHEREUM_ORG_CONFIG: Partial<ContentTreeConfig> = {
+const QUANTAUREUM_ORG_CONFIG: Partial<ContentTreeConfig> = {
   depth: "element",
   translatableAttributes: [
     "title",
@@ -55,7 +55,7 @@ const ETHEREUM_ORG_CONFIG: Partial<ContentTreeConfig> = {
  * decomposing links, images, and formatting into child nodes.
  * Handles dapp descriptions and other rich-text JSON values.
  */
-const ETHEREUM_ORG_JSON_CONFIG = {
+const QUANTAUREUM_ORG_JSON_CONFIG = {
   markdownValueDetector: (_, value: string): boolean => {
     // Heuristic: requires structural markdown patterns (not just inline bold).
     // Triggers on: paragraph-break + list items, numbered lists, or images.
@@ -76,7 +76,7 @@ export function buildMarkdownManifest(
   sourceFile: string,
   sourceCommitSha?: string
 ): string {
-  const tree = parseMarkdown(englishContent, ETHEREUM_ORG_CONFIG)
+  const tree = parseMarkdown(englishContent, QUANTAUREUM_ORG_CONFIG)
   const manifest = serialize(tree, sourceFile)
   const output = sourceCommitSha ? { ...manifest, sourceCommitSha } : manifest
   return JSON.stringify(output, null, 2) + "\n"
@@ -92,8 +92,8 @@ export function buildJsonManifest(
 ): string {
   const tree = parseJson(
     englishContent,
-    ETHEREUM_ORG_CONFIG,
-    ETHEREUM_ORG_JSON_CONFIG
+    QUANTAUREUM_ORG_CONFIG,
+    QUANTAUREUM_ORG_JSON_CONFIG
   )
   const manifest = serialize(tree, sourceFile)
   const output = sourceCommitSha ? { ...manifest, sourceCommitSha } : manifest
@@ -104,14 +104,14 @@ export function buildJsonManifest(
  * Parse English content into a tree (for use by the translation pipeline).
  */
 export function parseEnglishMarkdown(content: string): TreeNode {
-  return parseMarkdown(content, ETHEREUM_ORG_CONFIG)
+  return parseMarkdown(content, QUANTAUREUM_ORG_CONFIG)
 }
 
 /**
  * Parse English JSON into a tree.
  */
 export function parseEnglishJson(content: string): TreeNode {
-  return parseJson(content, ETHEREUM_ORG_CONFIG, ETHEREUM_ORG_JSON_CONFIG)
+  return parseJson(content, QUANTAUREUM_ORG_CONFIG, QUANTAUREUM_ORG_JSON_CONFIG)
 }
 
 /**
@@ -126,11 +126,11 @@ export function detectDrift(
   const oldTree = deserialize(storedManifest)
   const newTree =
     format === "markdown"
-      ? parseMarkdown(currentEnglishContent, ETHEREUM_ORG_CONFIG)
+      ? parseMarkdown(currentEnglishContent, QUANTAUREUM_ORG_CONFIG)
       : parseJson(
           currentEnglishContent,
-          ETHEREUM_ORG_CONFIG,
-          ETHEREUM_ORG_JSON_CONFIG
+          QUANTAUREUM_ORG_CONFIG,
+          QUANTAUREUM_ORG_JSON_CONFIG
         )
   return diff(oldTree, newTree)
 }
@@ -146,11 +146,11 @@ export function hasEnglishChanged(
   const storedManifest: TreeManifest = JSON.parse(storedManifestJson)
   const newTree =
     format === "markdown"
-      ? parseMarkdown(currentEnglishContent, ETHEREUM_ORG_CONFIG)
+      ? parseMarkdown(currentEnglishContent, QUANTAUREUM_ORG_CONFIG)
       : parseJson(
           currentEnglishContent,
-          ETHEREUM_ORG_CONFIG,
-          ETHEREUM_ORG_JSON_CONFIG
+          QUANTAUREUM_ORG_CONFIG,
+          QUANTAUREUM_ORG_JSON_CONFIG
         )
   return hasChanges(newTree, storedManifest)
 }
@@ -159,7 +159,7 @@ export function hasEnglishChanged(
  * Validate a markdown file's readiness for incremental tracking.
  */
 export function validateMarkdown(content: string): ValidationResult {
-  const tree = parseMarkdown(content, ETHEREUM_ORG_CONFIG)
+  const tree = parseMarkdown(content, QUANTAUREUM_ORG_CONFIG)
   return validate(tree)
 }
 
@@ -173,8 +173,8 @@ export function getEnglishInertValue(
 ): string | undefined {
   const tree =
     format === "markdown"
-      ? parseMarkdown(content, ETHEREUM_ORG_CONFIG)
-      : parseJson(content, ETHEREUM_ORG_CONFIG, ETHEREUM_ORG_JSON_CONFIG)
+      ? parseMarkdown(content, QUANTAUREUM_ORG_CONFIG)
+      : parseJson(content, QUANTAUREUM_ORG_CONFIG, QUANTAUREUM_ORG_JSON_CONFIG)
   return getInertValue(tree, path)
 }
 

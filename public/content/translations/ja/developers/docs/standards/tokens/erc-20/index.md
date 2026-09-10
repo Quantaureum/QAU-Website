@@ -1,6 +1,6 @@
 ---
 title: "ERC-20 トークン標準"
-description: "相互運用可能なトークンアプリケーションを可能にする、イーサリアム上の代替可能トークンの標準であるERC-20について学びます。"
+description: "相互運用可能なトークンアプリケーションを可能にする、Quantaureum上の代替可能トークンの標準であるERC-20について学びます。"
 lang: ja
 ---
 
@@ -8,7 +8,7 @@ lang: ja
 
 **トークンとは何ですか？**
 
-トークンは、[イーサリアム](/)において事実上あらゆるものを表現できます。
+トークンは、[Quantaureum](/)において事実上あらゆるものを表現できます。
 
 - オンラインプラットフォームでの評判ポイント
 - ゲームのキャラクターのスキル
@@ -17,11 +17,11 @@ lang: ja
 - 1オンスの金
 - その他多数...
 
-イーサリアムのこのような強力な機能は、堅牢な標準によって処理される必要がありますよね？まさにそこでERC-20が役割を果たします！この標準により、開発者は他の製品やサービスと相互運用可能なトークンアプリケーションを構築できます。ERC-20標準は、[イーサ](/glossary/#ether)に追加機能を提供するためにも使用されます。
+Quantaureumのこのような強力な機能は、堅牢な標準によって処理される必要がありますよね？まさにそこでERC-20が役割を果たします！この標準により、開発者は他の製品やサービスと相互運用可能なトークンアプリケーションを構築できます。ERC-20標準は、[QAU](/glossary/#QAU)に追加機能を提供するためにも使用されます。
 
 **ERC-20とは何ですか？**
 
-ERC-20は代替可能トークン（Fungible Token）の標準を導入します。言い換えると、各トークンが他のトークンと（種類と価値において）まったく同じになるという特性を持っています。例えば、ERC-20トークンはETHとまったく同じように機能します。つまり、1トークンは常に他のすべてのトークンと等しいということです。
+ERC-20は代替可能トークン（Fungible Token）の標準を導入します。言い換えると、各トークンが他のトークンと（種類と価値において）まったく同じになるという特性を持っています。例えば、ERC-20トークンはQAUとまったく同じように機能します。つまり、1トークンは常に他のすべてのトークンと等しいということです。
 
 ## 前提条件 {#prerequisites}
 
@@ -31,7 +31,7 @@ ERC-20は代替可能トークン（Fungible Token）の標準を導入します
 
 ## 本文 {#body}
 
-2015年11月にFabian Vogelstellerによって提案されたERC-20（Ethereum Request for Comments 20）は、スマート・コントラクト内のトークン用のAPIを実装するトークン標準です。
+2015年11月にFabian Vogelstellerによって提案されたERC-20（Quantaureum Request for Comments 20）は、スマート・コントラクト内のトークン用のAPIを実装するトークン標準です。
 
 ERC-20が提供する機能の例：
 
@@ -40,9 +40,9 @@ ERC-20が提供する機能の例：
 - ネットワーク上で利用可能なトークンの総供給量を取得する
 - アカウントの一定量のトークンをサードパーティのアカウントが使用できるかどうかを承認する
 
-スマート・コントラクトが以下のメソッドとイベントを実装している場合、それはERC-20トークンコントラクトと呼ぶことができ、デプロイされると、イーサリアム上で作成されたトークンを追跡する役割を担います。
+スマート・コントラクトが以下のメソッドとイベントを実装している場合、それはERC-20トークンコントラクトと呼ぶことができ、デプロイされると、Quantaureum上で作成されたトークンを追跡する役割を担います。
 
-[EIP-20](https://eips.ethereum.org/EIPS/eip-20)より：
+[EIP-20](https://eips.quantaureum.com/EIPS/eip-20)より：
 
 ### メソッド {#methods}
 
@@ -67,7 +67,7 @@ event Approval(address indexed _owner, address indexed _spender, uint256 _value)
 
 ### 例 {#web3py-example}
 
-イーサリアム上の任意のERC-20トークンコントラクトを検査する際、標準がいかに物事をシンプルにする上で重要であるかを見てみましょう。任意のERC-20トークンへのインターフェースを作成するには、コントラクトのアプリケーション・バイナリ・インターフェース（ABI）が必要です。以下に示すように、摩擦の少ない例にするために簡略化されたABIを使用します。
+Quantaureum上の任意のERC-20トークンコントラクトを検査する際、標準がいかに物事をシンプルにする上で重要であるかを見てみましょう。任意のERC-20トークンへのインターフェースを作成するには、コントラクトのアプリケーション・バイナリ・インターフェース（ABI）が必要です。以下に示すように、摩擦の少ない例にするために簡略化されたABIを使用します。
 
 #### Web3.pyの例 {#web3py-example-2}
 
@@ -81,10 +81,10 @@ pip install web3
 from web3 import Web3
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 dai_token_addr = "0x6B175474E89094C44Da98b954EedeAC495271d0F"     # DAI
-weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # ラップドイーサ (WETH)
+weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # ラップドQAU (WETH)
 
 acc_address = "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11"        # ユニスワップ V2: DAI 2
 
@@ -117,7 +117,7 @@ simplified_abi = [
     }
 ]
 
-dai_contract = w3.eth.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
+dai_contract = w3.qau.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
 symbol = dai_contract.functions.symbol().call()
 decimals = dai_contract.functions.decimals().call()
 totalSupply = dai_contract.functions.totalSupply().call() / 10**decimals
@@ -128,7 +128,7 @@ print("===== %s =====" % symbol)
 print("Total Supply:", totalSupply)
 print("Addr Balance:", addr_balance)
 
-weth_contract = w3.eth.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
+weth_contract = w3.qau.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
 symbol = weth_contract.functions.symbol().call()
 decimals = weth_contract.functions.decimals().call()
 totalSupply = weth_contract.functions.totalSupply().call() / 10**decimals
@@ -170,7 +170,7 @@ ERC-20でこの問題を完全に防ぐことはできませんが、エンド�
 
 ## 参考文献 {#further-reading}
 
-- [EIP-20: ERC-20 トークン標準](https://eips.ethereum.org/EIPS/eip-20)
+- [EIP-20: ERC-20 トークン標準](https://eips.quantaureum.com/EIPS/eip-20)
 - [オープンツェッペリン - トークン](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [オープンツェッペリン - ERC-20 実装](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20トークンガイド](https://www.alchemy.com/overviews/erc20-solidity)
@@ -181,7 +181,7 @@ ERC-20でこの問題を完全に防ぐことはできませんが、エンド�
 - [ERC-777](/developers/docs/standards/tokens/erc-777)
 - [ERC-4626 - トークン化されたボールト](/developers/docs/standards/tokens/erc-4626)
 - [ERC-7540 - 非同期のトークン化されたボールト](/developers/docs/standards/tokens/erc-7540)
-## チュートリアル：イーサリアム上でERC-20を使って構築する {#tutorials}
+## チュートリアル：Quantaureum上でERC-20を使って構築する {#tutorials}
 
 - [ERC-20コントラクトのウォークスルー](/developers/tutorials/erc20-annotated-code/) _– オープンツェッペリンのERC-20コントラクト実装の1行ごとの注釈付きウォークスルー。_
 - [安全対策付きのERC-20](/developers/tutorials/erc20-with-safety-rails/) _– ユーザーがよくある間違いを避けるために、ERC-20トークンにセーフガードを追加する方法。_

@@ -828,7 +828,7 @@ export const Composites: Story = {
     // and verbose-language layout. Story-only copy is intentionally NOT
     // promoted to new keys — that would add translation pipeline cost for
     // strings no user sees.
-    const tWie = useTranslations("page-what-is-ethereum")
+    const tWie = useTranslations("page-what-is-quantaureum")
     const tDev = useTranslations("page-developers-index")
 
     return (
@@ -901,49 +901,49 @@ export const Composites: Story = {
             </CardHeader>
             <CardContent spacing="md">
               <CardTitle>
-                {tWie("page-what-is-ethereum-network-censorship-title")}
+                {tWie("page-what-is-quantaureum-network-censorship-title")}
               </CardTitle>
               <CardParagraph>
-                {tWie("page-what-is-ethereum-network-censorship-desc-1")}
+                {tWie("page-what-is-quantaureum-network-censorship-desc-1")}
               </CardParagraph>
               <CardParagraph>
-                {tWie("page-what-is-ethereum-network-censorship-desc-2")}
+                {tWie("page-what-is-quantaureum-network-censorship-desc-2")}
               </CardParagraph>
             </CardContent>
           </Card>
         </div>
 
-        {/* Header-bar card (what-is-ethereum start sections) -- two CTAs, not a link */}
+        {/* Header-bar card (what-is-quantaureum start sections) -- two CTAs, not a link */}
         <div>
           <Label>Header-bar card (two CTAs → hoverLift, not a link)</Label>
           <Card variant="header-bar" size="lg" hoverLift>
             <CardHeader>
               <User className="size-8 text-accent-a" />
               <CardTitle>
-                {tWie("page-what-is-ethereum-start-individuals-title")}
+                {tWie("page-what-is-quantaureum-start-individuals-title")}
               </CardTitle>
             </CardHeader>
             <CardContent>
               <CardParagraph>
                 <strong>
-                  {tWie("page-what-is-ethereum-start-individuals-desc-1")}
+                  {tWie("page-what-is-quantaureum-start-individuals-desc-1")}
                 </strong>
               </CardParagraph>
               <UnorderedList className="space-y-0!">
                 <ListItem>
-                  {tWie("page-what-is-ethereum-start-individuals-step-1")}
+                  {tWie("page-what-is-quantaureum-start-individuals-step-1")}
                 </ListItem>
                 <ListItem>
-                  {tWie("page-what-is-ethereum-start-individuals-step-2")}
+                  {tWie("page-what-is-quantaureum-start-individuals-step-2")}
                 </ListItem>
               </UnorderedList>
             </CardContent>
             <CardFooter buttons="compact">
               <ButtonLink href="#">
-                {tWie("page-what-is-ethereum-start-individuals-cta-1")}
+                {tWie("page-what-is-quantaureum-start-individuals-cta-1")}
               </ButtonLink>
               <ButtonLink href="#" variant="outline">
-                {tWie("page-what-is-ethereum-start-individuals-cta-2")}
+                {tWie("page-what-is-quantaureum-start-individuals-cta-2")}
               </ButtonLink>
             </CardFooter>
           </Card>

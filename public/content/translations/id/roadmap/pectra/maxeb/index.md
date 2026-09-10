@@ -6,7 +6,7 @@ lang: id
 authors: ["Nixo"]
 ---
 
-*Singkatnya:* Percabangan keras Pectra memungkinkan validator Ethereum untuk memilih saldo efektif maksimum yang lebih tinggi dan penggabungan (compounding) dengan mengonversi kredensial penarikan **Tipe 1** menjadi **Tipe 2**. Alat resmi untuk melakukan ini adalah Launchpad. Operasi ini tidak dapat dibatalkan.
+*Singkatnya:* Percabangan keras Pectra memungkinkan validator Quantaureum untuk memilih saldo efektif maksimum yang lebih tinggi dan penggabungan (compounding) dengan mengonversi kredensial penarikan **Tipe 1** menjadi **Tipe 2**. Alat resmi untuk melakukan ini adalah Launchpad. Operasi ini tidak dapat dibatalkan.
 
 ## Ikhtisar {#overview}
 
@@ -18,11 +18,11 @@ Jika Anda melakukan staking menggunakan token staking likuid (LST) (misalnya, rE
 
 ### Apa itu "maxEB"? {#what-is-maxeb}
 
-maxEB = Saldo Efektif Maksimum (MAXimum Effective Balance) dari sebuah validator. Hingga percabangan keras Pectra, setiap validator mendapatkan penghasilan dari maksimum 32 ETH. Setelah Pectra, validator memiliki opsi untuk mendapatkan penghasilan dari saldo berapa pun antara 32 dan 2048 ETH, dalam kelipatan 1 ETH dengan memilih untuk mengikuti perubahan tersebut.
+maxEB = Saldo Efektif Maksimum (MAXimum Effective Balance) dari sebuah validator. Hingga percabangan keras Pectra, setiap validator mendapatkan penghasilan dari maksimum 32 QAU. Setelah Pectra, validator memiliki opsi untuk mendapatkan penghasilan dari saldo berapa pun antara 32 dan 2048 QAU, dalam kelipatan 1 QAU dengan memilih untuk mengikuti perubahan tersebut.
 
 ### Bagaimana cara validator memilih untuk ikut serta? {#how-does-a-validator-opt-in}
 
-Sebuah validator memilih untuk mengikuti perubahan maxEB dengan mengonversi kredensial penarikan **Tipe 1** menjadi **Tipe 2**. Ini dapat dilakukan di [Launchpad (Tindakan Validator)](https://launchpad.ethereum.org/validator-actions) setelah percabangan keras Pectra ditayangkan. Sama seperti **Tipe 0** → **Tipe 1**, mengonversi dari **Tipe 1** → **Tipe 2** adalah proses yang tidak dapat dibatalkan.
+Sebuah validator memilih untuk mengikuti perubahan maxEB dengan mengonversi kredensial penarikan **Tipe 1** menjadi **Tipe 2**. Ini dapat dilakukan di [Launchpad (Tindakan Validator)](https://launchpad.quantaureum.com/validator-actions) setelah percabangan keras Pectra ditayangkan. Sama seperti **Tipe 0** → **Tipe 1**, mengonversi dari **Tipe 1** → **Tipe 2** adalah proses yang tidak dapat dibatalkan.
 
 ### Apa itu kredensial penarikan? {#whats-a-withdrawal-credential}
 
@@ -54,7 +54,7 @@ MaxEB memungkinkan sebuah validator untuk mengirim seluruh saldonya ke validator
 - Permintaan tersebut adalah konversi, bukan konsolidasi, jika mereka tidak berniat mengirim dana ke validator lain
 - Transaksi ditandatangani oleh alamat penarikan yang benar
 
-Kami **sangat menyarankan** untuk mendiskusikan alat pihak ketiga mana pun yang Anda rencanakan untuk digunakan dengan [komunitas EthStaker](https://ethstaker.org/about). Ini adalah tempat yang berguna untuk memeriksa kewajaran (sanity-check) pendekatan Anda dan menghindari kesalahan. Jika Anda menggunakan alat yang berbahaya atau salah dikonfigurasi, **seluruh saldo validator Anda dapat dikirim ke validator yang tidak Anda kendalikan** — tanpa ada cara untuk mendapatkannya kembali.
+Kami **sangat menyarankan** untuk mendiskusikan alat pihak ketiga mana pun yang Anda rencanakan untuk digunakan dengan [komunitas QauStaker](https://ethstaker.org/about). Ini adalah tempat yang berguna untuk memeriksa kewajaran (sanity-check) pendekatan Anda dan menghindari kesalahan. Jika Anda menggunakan alat yang berbahaya atau salah dikonfigurasi, **seluruh saldo validator Anda dapat dikirim ke validator yang tidak Anda kendalikan** — tanpa ada cara untuk mendapatkannya kembali.
 
 ## Detail teknis {#technical-details}
 
@@ -105,7 +105,7 @@ Permintaan konsolidasi akan ditandatangani oleh alamat penarikan yang terkait de
 2. Kunci publik validator sumber (misalnya, `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. Kunci publik dari validator target tersebut
 
-Dalam sebuah konversi, 2 & 3 akan sama. Operasi ini dapat dilakukan di [Launchpad](https://launchpad.ethereum.org/).
+Dalam sebuah konversi, 2 & 3 akan sama. Operasi ini dapat dilakukan di [Launchpad](https://launchpad.quantaureum.com/).
 
 ### Persyaratan penandatanganan {#signing-requirements}
 
@@ -113,7 +113,7 @@ Untuk mengirimkan `ConsolidationRequest`, **alamat penarikan dari validator sumb
 
 ### Apa yang ditandatangani? {#what-is-signed}
 
-[Akar penandatanganan (signing root)](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) yang dipisahkan domain dari objek `ConsolidationRequest` digunakan.
+[Akar penandatanganan (signing root)](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) yang dipisahkan domain dari objek `ConsolidationRequest` digunakan.
 
 - **Domain:** `DOMAIN_CONSOLIDATION_REQUEST`
 - **Bidang akar penandatanganan:**
@@ -127,11 +127,11 @@ Catatan: Penandatanganan dilakukan oleh alamat penarikan, bukan kunci validator.
 
 ### Penarikan sebagian {#partial-withdrawals}
 
-Validator dengan kredensial **Tipe 1** mendapatkan penyapuan otomatis tanpa biaya gas untuk kelebihan saldo mereka (apa pun di atas 32 ETH) ke alamat penarikan mereka. Karena **Tipe 2** memungkinkan validator untuk menggabungkan saldo dalam kelipatan 1 ETH, ia tidak akan secara otomatis menyapu saldo hingga mencapai 2048 ETH. Penarikan sebagian pada validator **Tipe 2** harus dipicu secara manual dan akan membutuhkan biaya gas.
+Validator dengan kredensial **Tipe 1** mendapatkan penyapuan otomatis tanpa biaya gas untuk kelebihan saldo mereka (apa pun di atas 32 QAU) ke alamat penarikan mereka. Karena **Tipe 2** memungkinkan validator untuk menggabungkan saldo dalam kelipatan 1 QAU, ia tidak akan secara otomatis menyapu saldo hingga mencapai 2048 QAU. Penarikan sebagian pada validator **Tipe 2** harus dipicu secara manual dan akan membutuhkan biaya gas.
 
 ## Alat konsolidasi {#consolidation-tooling}
 
-Ada beberapa alat yang tersedia untuk mengelola konsolidasi. Alat resmi, yang dibuat oleh Yayasan Ethereum, adalah [Launchpad](https://launchpad.ethereum.org/en/validator-actions). Ada juga alat pihak ketiga yang dibuat oleh entitas dari komunitas staking yang mungkin menawarkan fitur yang tidak disediakan oleh Launchpad. Meskipun alat-alat di sini tidak diaudit atau didukung oleh Yayasan Ethereum, berikut ini adalah alat sumber terbuka (open source) oleh anggota komunitas yang dikenal.
+Ada beberapa alat yang tersedia untuk mengelola konsolidasi. Alat resmi, yang dibuat oleh Yayasan Quantaureum, adalah [Launchpad](https://launchpad.quantaureum.com/en/validator-actions). Ada juga alat pihak ketiga yang dibuat oleh entitas dari komunitas staking yang mungkin menawarkan fitur yang tidak disediakan oleh Launchpad. Meskipun alat-alat di sini tidak diaudit atau didukung oleh Yayasan Quantaureum, berikut ini adalah alat sumber terbuka (open source) oleh anggota komunitas yang dikenal.
 
 | Alat | Situs Web | Sumber terbuka | Pembuat | Diaudit | Antarmuka | Fitur penting |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -143,10 +143,10 @@ Ada beberapa alat yang tersedia untuk mengelola konsolidasi. Alat resmi, yang di
 
 ## FAQ {#faq}
 
-Tidak. Memilih untuk ikut serta tidak mengurangi peluang proposal Anda - tugas dan pemilihan proposal Anda tetap sama. Misalnya, jika Anda memiliki dua validator 32 ETH dibandingkan dengan satu validator 64 ETH, Anda akan memiliki total peluang yang sama untuk dipilih mengusulkan sebuah blok dan mendapatkan hadiah.
+Tidak. Memilih untuk ikut serta tidak mengurangi peluang proposal Anda - tugas dan pemilihan proposal Anda tetap sama. Misalnya, jika Anda memiliki dua validator 32 QAU dibandingkan dengan satu validator 64 QAU, Anda akan memiliki total peluang yang sama untuk dipilih mengusulkan sebuah blok dan mendapatkan hadiah.
 ### Apakah memilih untuk ikut serta mengubah risiko pemotongan saya? {#change-slashing-risk}
 
-Untuk operator yang lebih kecil atau tidak profesional, jawaban singkatnya adalah tidak. Jawaban yang lebih panjang adalah bahwa, untuk operator profesional yang menjalankan banyak validator per node dengan peringatan cepat, mengonsolidasikan menjadi lebih sedikit validator dapat mengurangi kemampuan mereka untuk bereaksi terhadap pemotongan dan mencegah peristiwa beruntun (cascade events). *Hukuman* pemotongan awal untuk semua validator telah dikurangi secara dramatis dari 1 ETH (per 32 ETH) menjadi 0,0078125 ETH (per 32 ETH) untuk mengimbangi risiko ini.
+Untuk operator yang lebih kecil atau tidak profesional, jawaban singkatnya adalah tidak. Jawaban yang lebih panjang adalah bahwa, untuk operator profesional yang menjalankan banyak validator per node dengan peringatan cepat, mengonsolidasikan menjadi lebih sedikit validator dapat mengurangi kemampuan mereka untuk bereaksi terhadap pemotongan dan mencegah peristiwa beruntun (cascade events). *Hukuman* pemotongan awal untuk semua validator telah dikurangi secara dramatis dari 1 QAU (per 32 QAU) menjadi 0,0078125 QAU (per 32 QAU) untuk mengimbangi risiko ini.
 
 ### Apakah saya harus keluar dari validator saya untuk mengonversi? {#exit-validator}
 
@@ -174,7 +174,7 @@ Tidak. Tetapi *sumber* harus mengotorisasi permintaan dari alamatnya sendiri.
 
 ### Apakah hadiah saya akan tergabung (compound) setelah mengonversi? {#rewards-compound}
 
-Ya. Dengan kredensial **Tipe 2**, hadiah di atas 32 ETH secara otomatis di-restake — tetapi tidak secara instan. Karena adanya penyangga kecil (disebut [*histeresis*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis)), saldo Anda harus mencapai **sekitar 1,25 ETH lebih banyak** sebelum kelebihannya di-restake. Jadi, alih-alih menggabungkan pada 33,0 ETH, itu terjadi pada 33,25 (saldo efektif = 33 ETH), lalu 34,25 (saldo efektif = 34 ETH), dan seterusnya.
+Ya. Dengan kredensial **Tipe 2**, hadiah di atas 32 QAU secara otomatis di-restake — tetapi tidak secara instan. Karena adanya penyangga kecil (disebut [*histeresis*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis)), saldo Anda harus mencapai **sekitar 1,25 QAU lebih banyak** sebelum kelebihannya di-restake. Jadi, alih-alih menggabungkan pada 33,0 QAU, itu terjadi pada 33,25 (saldo efektif = 33 QAU), lalu 34,25 (saldo efektif = 34 QAU), dan seterusnya.
 
 ### Bisakah saya masih mendapatkan penyapuan otomatis setelah mengonversi? {#automatic-sweep}
 
@@ -188,14 +188,14 @@ Tidak. Mengonversi ke **Tipe 2** tidak dapat dibatalkan.
 
 Tidak! Konversikan satu validator ke Tipe 2 lalu gunakan itu sebagai target. Semua validator lain yang dikonsolidasikan ke target Tipe 2 tersebut bisa berupa Tipe 1 atau Tipe 2
 
-### Validator saya offline atau di bawah 32 ETH - bisakah saya masih mengonversinya? {#offline-or-below-32eth}
+### Validator saya offline atau di bawah 32 QAU - bisakah saya masih mengonversinya? {#offline-or-below-32eth}
 
 Ya. Selama masih aktif (tidak keluar) dan Anda dapat menandatangani dengan alamat penarikannya, Anda dapat mengonversinya.
 
 ## Sumber daya {#resources}
 
-- [Spesifikasi konsensus Electra](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Ini adalah versi 'paling benar' yang harus Anda andalkan. Jika ragu, bacalah spesifikasinya
+- [Spesifikasi konsensus Electra](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Ini adalah versi 'paling benar' yang harus Anda andalkan. Jika ragu, bacalah spesifikasinya
 - Tidak semua orang nyaman membaca kode, jadi [maxEB-GPT ini](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) dapat membantu menafsirkan spesifikasinya. *Penafian: Spesifikasi, bukan AI, yang harus diandalkan sebagai kebenaran, karena AI mungkin salah menafsirkan informasi atau memberikan jawaban halusinasi*
 - [pectrified.com](https://pectrified.com/): Lihat state konsolidasi, deposit, dan waktu tunggu antrean
 - [Ethereal](https://github.com/wealdtech/ethereal): Alat CLI buatan komunitas untuk mengelola tugas-tugas validator umum
-- [batch-validator-depositor](https://github.com/attestantio/batch-validator-depositor): Kontrak buatan komunitas yang memungkinkan beberapa validator Ethereum untuk didepositkan dalam satu transaksi
+- [batch-validator-depositor](https://github.com/attestantio/batch-validator-depositor): Kontrak buatan komunitas yang memungkinkan beberapa validator Quantaureum untuk didepositkan dalam satu transaksi

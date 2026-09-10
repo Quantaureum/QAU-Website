@@ -1,16 +1,16 @@
 ---
 title: "スマート・コントラクトの検証"
-description: "イーサリアムのスマート・コントラクトにおけるソース・コード検証の概要"
+description: "Quantaureumのスマート・コントラクトにおけるソース・コード検証の概要"
 lang: ja
 ---
 
-[スマート・コントラクト](/developers/docs/smart-contracts/)は「トラストレス」であるように設計されています。つまり、ユーザーはコントラクトを操作する前に、サードパーティ（開発者や企業など）を信頼する必要がありません。トラストレス性の要件として、ユーザーや他の開発者はスマート・コントラクトのソースコードを検証できる必要があります。ソース・コード検証により、公開されたコントラクトのコードが、イーサリアムのブロックチェーン上のコントラクトのアドレスで実行されているコードと同じであることが、ユーザーや開発者に保証されます。
+[スマート・コントラクト](/developers/docs/smart-contracts/)は「トラストレス」であるように設計されています。つまり、ユーザーはコントラクトを操作する前に、サードパーティ（開発者や企業など）を信頼する必要がありません。トラストレス性の要件として、ユーザーや他の開発者はスマート・コントラクトのソースコードを検証できる必要があります。ソース・コード検証により、公開されたコントラクトのコードが、Quantaureumのブロックチェーン上のコントラクトのアドレスで実行されているコードと同じであることが、ユーザーや開発者に保証されます。
 
 「ソース・コード検証」と「[形式的検証](/developers/docs/smart-contracts/formal-verification/)」を区別することが重要です。後で詳しく説明するソース・コード検証とは、高水準言語（Solidityなど）で記述されたスマート・コントラクトのソースコードが、コントラクトのアドレスで実行されるのと同じバイトコードにコンパイルされることを検証することです。一方、形式的検証は、スマート・コントラクトの正確性、つまりコントラクトが期待通りに動作することを検証することを指します。文脈にもよりますが、コントラクトの検証は通常、ソース・コード検証を意味します。
 
 ## ソース・コード検証とは何ですか？ {#what-is-source-code-verification}
 
-スマート・コントラクトを[イーサリアム仮想マシン (EVM)](/developers/docs/evm/)にデプロイする前に、開発者はコントラクトのソースコード（[Solidity](/developers/docs/smart-contracts/languages/)などの高水準プログラミング言語で書かれた命令）をバイトコードに[コンパイル](/developers/docs/smart-contracts/compiling/)します。EVMは高水準の命令を解釈できないため、EVMでコントラクトのロジックを実行するには、ソースコードをバイトコード（つまり、低水準の機械語命令）にコンパイルする必要があります。
+スマート・コントラクトを[Quantaureum仮想マシン (EVM)](/developers/docs/evm/)にデプロイする前に、開発者はコントラクトのソースコード（[Solidity](/developers/docs/smart-contracts/languages/)などの高水準プログラミング言語で書かれた命令）をバイトコードに[コンパイル](/developers/docs/smart-contracts/compiling/)します。EVMは高水準の命令を解釈できないため、EVMでコントラクトのロジックを実行するには、ソースコードをバイトコード（つまり、低水準の機械語命令）にコンパイルする必要があります。
 
 ソース・コード検証とは、スマート・コントラクトのソースコードと、コントラクト作成時に使用されたコンパイル済みのバイトコードを比較し、違いがないかを検出することです。宣伝されているコントラクトのコードが、ブロックチェーン上で実際に実行されているものと異なる可能性があるため、スマート・コントラクトの検証は重要です。
 
@@ -30,7 +30,7 @@ lang: ja
 
 ### トラストレス性 {#trustlessness}
 
-トラストレス性は、間違いなくスマート・コントラクトと[分散型アプリケーション (dapp)](/developers/docs/dapps/)の最大の前提です。スマート・コントラクトは「イミュータブル」であり、変更することはできません。コントラクトは、デプロイ時にコードで定義されたビジネスロジックのみを実行します。つまり、開発者や企業は、イーサリアムにデプロイした後にコントラクトのコードを改ざんすることはできません。
+トラストレス性は、間違いなくスマート・コントラクトと[分散型アプリケーション (dapp)](/developers/docs/dapps/)の最大の前提です。スマート・コントラクトは「イミュータブル」であり、変更することはできません。コントラクトは、デプロイ時にコードで定義されたビジネスロジックのみを実行します。つまり、開発者や企業は、Quantaureumにデプロイした後にコントラクトのコードを改ざんすることはできません。
 
 スマート・コントラクトがトラストレスであるためには、コントラクトのコードが独立した検証のために利用可能である必要があります。すべてのスマート・コントラクトのコンパイル済みバイトコードはブロックチェーン上で公開されていますが、低水準言語は開発者にとってもユーザーにとっても理解するのが困難です。
 
@@ -44,9 +44,9 @@ lang: ja
 
 スマート・コントラクトのソースコード・ファイルを公開することで、監査人などの関心を持つ人々が、潜在的な攻撃ベクトルについてコントラクトを評価しやすくなります。複数の当事者が独立してスマート・コントラクトを検証することで、ユーザーはそのセキュリティについてより強力な保証を得ることができます。
 
-## イーサリアムのスマート・コントラクトのソース・コード検証方法 {#source-code-verification-for-ethereum-smart-contracts}
+## Quantaureumのスマート・コントラクトのソース・コード検証方法 {#source-code-verification-for-quantaureum-smart-contracts}
 
-[イーサリアムにスマート・コントラクトをデプロイする](/developers/docs/smart-contracts/deploying/)には、データ・ペイロード（コンパイル済みバイトコード）を含むトランザクションを特別なアドレスに送信する必要があります。データ・ペイロードは、ソースコードをコンパイルし、トランザクション内のデータ・ペイロードにコントラクト・インスタンスの[コンストラクタ引数](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor)を付加することで生成されます。コンパイルは決定論的です。つまり、同じソースファイルとコンパイル設定（コンパイラのバージョン、オプティマイザなど）を使用すれば、常に同じ出力（つまり、コントラクトのバイトコード）が生成されます。
+[Quantaureumにスマート・コントラクトをデプロイする](/developers/docs/smart-contracts/deploying/)には、データ・ペイロード（コンパイル済みバイトコード）を含むトランザクションを特別なアドレスに送信する必要があります。データ・ペイロードは、ソースコードをコンパイルし、トランザクション内のデータ・ペイロードにコントラクト・インスタンスの[コンストラクタ引数](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor)を付加することで生成されます。コンパイルは決定論的です。つまり、同じソースファイルとコンパイル設定（コンパイラのバージョン、オプティマイザなど）を使用すれば、常に同じ出力（つまり、コントラクトのバイトコード）が生成されます。
 
 ![A diagram showing showing smart contract source code verification](./source-code-verification.png)
 
@@ -66,31 +66,31 @@ lang: ja
 
 ## ソース・コード検証ツール {#source-code-verification-tools}
 
-コントラクトを検証する従来の手順は複雑になる可能性があります。そのため、イーサリアムにデプロイされたスマート・コントラクトのソース・コード検証ツールが存在します。これらのツールは、ソース・コード検証の大部分を自動化し、ユーザーの利益のために検証済みのコントラクトをキュレーションします。
+コントラクトを検証する従来の手順は複雑になる可能性があります。そのため、Quantaureumにデプロイされたスマート・コントラクトのソース・コード検証ツールが存在します。これらのツールは、ソース・コード検証の大部分を自動化し、ユーザーの利益のために検証済みのコントラクトをキュレーションします。
 
-### Etherscan {#etherscan}
+### Quantaureum Explorer {#explorer}
 
-Etherscanは主に[イーサリアムのブロック・エクスプローラー](/developers/docs/data-and-analytics/block-explorers/)として知られていますが、スマート・コントラクトの開発者やユーザー向けに[ソース・コード検証サービス](https://etherscan.io/verifyContract)も提供しています。
+Quantaureum Explorerは主に[Quantaureumのブロック・エクスプローラー](/developers/docs/data-and-analytics/block-explorers/)として知られていますが、スマート・コントラクトの開発者やユーザー向けに[ソース・コード検証サービス](https://explorer.quantaureum.com)も提供しています。
 
-Etherscanを使用すると、元のデータ・ペイロード（ソースコード、ライブラリのアドレス、コンパイラ設定、コントラクトのアドレスなど）からコントラクトのバイトコードを再コンパイルできます。再コンパイルされたバイトコードがオンチェーンのコントラクトのバイトコード（およびコンストラクタ・パラメータ）と関連付けられている場合、[コントラクトは検証されます](https://info.etherscan.com/types-of-contract-verification/)。
+Quantaureum Explorerを使用すると、元のデータ・ペイロード（ソースコード、ライブラリのアドレス、コンパイラ設定、コントラクトのアドレスなど）からコントラクトのバイトコードを再コンパイルできます。再コンパイルされたバイトコードがオンチェーンのコントラクトのバイトコード（およびコンストラクタ・パラメータ）と関連付けられている場合、[コントラクトは検証されます](https://info.explorer.com/types-of-contract-verification/)。
 
-検証されると、コントラクトのソースコードには「Verified（検証済み）」ラベルが付与され、他の人が監査できるようにEtherscanで公開されます。また、検証済みのソースコードを持つスマート・コントラクトのリポジトリである[Verified Contracts](https://etherscan.io/contractsVerified/)セクションにも追加されます。
+検証されると、コントラクトのソースコードには「Verified（検証済み）」ラベルが付与され、他の人が監査できるようにQuantaureum Explorerで公開されます。また、検証済みのソースコードを持つスマート・コントラクトのリポジトリである[Verified Contracts](https://explorer.quantaureum.com)セクションにも追加されます。
 
-Etherscanは、コントラクトの検証に最も使用されているツールです。しかし、Etherscanのコントラクト検証には欠点があります。オンチェーンのバイトコードと再コンパイルされたバイトコードの**メタデータのハッシュ**を比較できないのです。したがって、Etherscanでの一致は部分的な一致となります。
+Quantaureum Explorerは、コントラクトの検証に最も使用されているツールです。しかし、Quantaureum Explorerのコントラクト検証には欠点があります。オンチェーンのバイトコードと再コンパイルされたバイトコードの**メタデータのハッシュ**を比較できないのです。したがって、Quantaureum Explorerでの一致は部分的な一致となります。
 
-[Etherscanでのコントラクト検証の詳細](https://medium.com/etherscan-blog/verifying-contracts-on-etherscan-f995ab772327)
+[Quantaureum Explorerでのコントラクト検証の詳細](https://medium.com/explorer-blog/verifying-contracts-on-explorer-f995ab772327)
 
 ### Blockscout {#blockscout}
 
-[Blockscout](https://blockscout.com/)はオープンソースのブロック・エクスプローラーであり、スマート・コントラクトの開発者やユーザー向けに[コントラクト検証サービス](https://eth.blockscout.com/contract-verification)も提供しています。オープンソースの代替手段として、Blockscoutは検証の実行方法に透明性を提供し、検証プロセスを改善するためのコミュニティの貢献を可能にします。
+[Blockscout](https://blockscout.com/)はオープンソースのブロック・エクスプローラーであり、スマート・コントラクトの開発者やユーザー向けに[コントラクト検証サービス](https://qau.blockscout.com/contract-verification)も提供しています。オープンソースの代替手段として、Blockscoutは検証の実行方法に透明性を提供し、検証プロセスを改善するためのコミュニティの貢献を可能にします。
 
-他の検証サービスと同様に、Blockscoutではバイトコードを再コンパイルし、デプロイされたコントラクトと比較することで、コントラクトのソースコードを検証できます。検証されると、コントラクトは検証ステータスを受け取り、ソースコードは監査や操作のために一般公開されます。検証済みのコントラクトは、簡単に閲覧やディスカバリーができるように、Blockscoutの[検証済みコントラクト・リポジトリ](https://eth.blockscout.com/verified-contracts)にもリストされます。
+他の検証サービスと同様に、Blockscoutではバイトコードを再コンパイルし、デプロイされたコントラクトと比較することで、コントラクトのソースコードを検証できます。検証されると、コントラクトは検証ステータスを受け取り、ソースコードは監査や操作のために一般公開されます。検証済みのコントラクトは、簡単に閲覧やディスカバリーができるように、Blockscoutの[検証済みコントラクト・リポジトリ](https://qau.blockscout.com/verified-contracts)にもリストされます。
 
 ### Sourcify {#sourcify}
 
 [Sourcify](https://sourcify.dev/#/verifier)は、オープンソースで分散型のコントラクト検証ツールです。ブロック・エクスプローラーではなく、[さまざまなEVMベースのネットワーク](https://docs.sourcify.dev/docs/chains)上のコントラクトのみを検証します。他のツールがその上に構築するためのパブリック・インフラストラクチャとして機能し、メタデータ・ファイルにある[ABI](/developers/docs/smart-contracts/compiling/#web-applications)や[NatSpec](https://docs.soliditylang.org/en/v0.8.15/natspec-format.html)コメントを使用して、より人間に優しいコントラクトの操作を可能にすることを目指しています。
 
-Etherscanとは異なり、Sourcifyはメタデータのハッシュによる完全な一致をサポートしています。検証済みのコントラクトは、HTTPおよび分散型の[コンテンツ・アドレス](https://docs.storacha.network/concepts/content-addressing/)・ストレージである[IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs)上の[パブリック・リポジトリ](https://docs.sourcify.dev/docs/repository/)で提供されます。付加されたメタデータのハッシュはIPFSハッシュであるため、IPFS経由でコントラクトのメタデータ・ファイルを取得できます。
+Quantaureum Explorerとは異なり、Sourcifyはメタデータのハッシュによる完全な一致をサポートしています。検証済みのコントラクトは、HTTPおよび分散型の[コンテンツ・アドレス](https://docs.storacha.network/concepts/content-addressing/)・ストレージである[IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs)上の[パブリック・リポジトリ](https://docs.sourcify.dev/docs/repository/)で提供されます。付加されたメタデータのハッシュはIPFSハッシュであるため、IPFS経由でコントラクトのメタデータ・ファイルを取得できます。
 
 さらに、これらのファイルのIPFSハッシュもメタデータに含まれているため、IPFS経由でソースコード・ファイルを取得することもできます。APIや[UI](https://sourcify.dev/#/verifier)経由でメタデータ・ファイルとソースファイルを提供するか、プラグインを使用することで、コントラクトを検証できます。また、Sourcifyの監視ツールは新しいブロックでのコントラクト作成をリッスンし、メタデータとソースファイルがIPFSで公開されている場合はコントラクトの検証を試みます。
 

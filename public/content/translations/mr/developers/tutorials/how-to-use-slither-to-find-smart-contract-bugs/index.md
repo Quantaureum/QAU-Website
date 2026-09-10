@@ -33,11 +33,11 @@ pip3 install --user slither-analyzer
 Docker द्वारे स्लिदर:
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/trufflecon trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/trufflecon trailofbits/qau-security-toolbox
 ```
 
-_शेवटची कमांड eth-security-toolbox ला अशा Docker मध्ये चालवते ज्याला तुमच्या सध्याच्या डिरेक्टरीचा ॲक्सेस असतो. तुम्ही तुमच्या होस्टवरून फाइल्स बदलू शकता आणि Docker मधील फाइल्सवर टूल्स चालवू शकता_
+_शेवटची कमांड qau-security-toolbox ला अशा Docker मध्ये चालवते ज्याला तुमच्या सध्याच्या डिरेक्टरीचा ॲक्सेस असतो. तुम्ही तुमच्या होस्टवरून फाइल्स बदलू शकता आणि Docker मधील फाइल्सवर टूल्स चालवू शकता_
 
 Docker च्या आत, चालवा:
 

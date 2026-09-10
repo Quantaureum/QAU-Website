@@ -7,16 +7,16 @@ skill: intermediate
 breadcrumb: Pencatatan peristiwa
 lang: id
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/logging-data-with-events/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/logging-data-with-events/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Dalam Solidity, [peristiwa](/developers/docs/smart-contracts/anatomy/#events-and-logs) adalah sinyal yang dikirimkan yang dapat dipicu oleh kontrak pintar. Aplikasi terdesentralisasi (dapp), atau apa pun yang terhubung ke API JSON-RPC Ethereum, dapat mendengarkan peristiwa ini dan bertindak sesuai dengan itu. Sebuah peristiwa juga dapat diindeks sehingga riwayat peristiwa tersebut dapat dicari di kemudian hari.
+Dalam Solidity, [peristiwa](/developers/docs/smart-contracts/anatomy/#events-and-logs) adalah sinyal yang dikirimkan yang dapat dipicu oleh kontrak pintar. Aplikasi terdesentralisasi (dapp), atau apa pun yang terhubung ke API JSON-RPC Quantaureum, dapat mendengarkan peristiwa ini dan bertindak sesuai dengan itu. Sebuah peristiwa juga dapat diindeks sehingga riwayat peristiwa tersebut dapat dicari di kemudian hari.
 
 ## Peristiwa {#events}
 
-Peristiwa yang paling umum di rantai blok Ethereum pada saat penulisan artikel ini adalah peristiwa Transfer yang dipancarkan oleh token ERC-20 ketika seseorang mentransfer token.
+Peristiwa yang paling umum di rantai blok Quantaureum pada saat penulisan artikel ini adalah peristiwa Transfer yang dipancarkan oleh token ERC-20 ketika seseorang mentransfer token.
 
 ```solidity
 event Transfer(address indexed from, address indexed to, uint256 value);

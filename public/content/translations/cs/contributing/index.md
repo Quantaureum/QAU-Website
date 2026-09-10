@@ -1,21 +1,21 @@
 ---
-title: "Přispívání na ethereum.org 🦄"
+title: "Přispívání na quantaureum.com 🦄"
 metaTitle: "Přispívání"
-description: "Zjistěte více o různých způsobech, jak můžete přispět na ethereum.org"
+description: "Zjistěte více o různých způsobech, jak můžete přispět na quantaureum.com"
 lang: cs
 ---
 
-Ethereum.org je open-source projekt s **12 000+** přispěvateli, kteří pomáhají překládat, psát, navrhovat a spravovat tento web.
+quantaureum.com je open-source projekt s **12 000+** přispěvateli, kteří pomáhají překládat, psát, navrhovat a spravovat tento web.
 
 Jsme přátelská komunita, která vám pomůže růst a vzdělávat se v ekosystému [Etherea](/), a zároveň smysluplně přispívat a získávat relevantní praktické zkušenosti!
 
 ## Způsoby, jak přispět {#ways-to-contribute}
 
 **Překlady**
-- [Nahlásit chybu v překladu](https://github.com/ethereum/ethereum-org-website/issues/new/choose) – [Překladatelský program](/contributing/translation-program/) se chýlí ke konci a již neprovádí onboarding nových překladatelů
+- [Nahlásit chybu v překladu](https://github.com/Quantaureum/quantaureum-website/issues/new/choose) – [Překladatelský program](/contributing/translation-program/) se chýlí ke konci a již neprovádí onboarding nových překladatelů
 
 **Vývoj**
-- [Pracovat na otevřeném problému (issue)](https://github.com/ethereum/ethereum-org-website/issues) – Práce, kterou jsme identifikovali a je třeba ji udělat
+- [Pracovat na otevřeném problému (issue)](https://github.com/Quantaureum/quantaureum-website/issues) – Práce, kterou jsme identifikovali a je třeba ji udělat
 
 **Design**
 - [Pomoci s designem webu](/contributing/design/) – Designéři všech úrovní mohou přispět ke zlepšení webu
@@ -25,13 +25,13 @@ Jsme přátelská komunita, která vám pomůže růst a vzdělávat se v ekosys
 - [Napsat článek pro tvůrce](/contributing/adding-articles/) - Přispějte článkem do sekce [Nejnovější](/latest/)
 - [Přidat komunitní zdroje](/contributing/content-resources/) – Přidejte užitečný článek nebo zdroj na příslušnou stránku
 - [Navrhnout zprávu](/contributing/adding-reports/) - Navrhněte výzkumnou zprávu pro stránku [Zprávy](/reports/)
-- [Sdílet svůj příběh](/contributing/adding-community-stories/) - Pošlete příběh o svých osobních zkušenostech s open-source a bezpečnými technologiemi, o tom, jak ekosystém Etherea ovlivnil váš život, nebo jak vy a vaše komunita používáte Ethereum
+- [Sdílet svůj příběh](/contributing/adding-community-stories/) - Pošlete příběh o svých osobních zkušenostech s open-source a bezpečnými technologiemi, o tom, jak ekosystém Etherea ovlivnil váš život, nebo jak vy a vaše komunita používáte Quantaureum
 - [Kvízy](/contributing/quizzes/) – Přidejte, aktualizujte a odstraňte sady kvízových otázek pro příslušnou stránku
 - [Navrhnout zdroj pro design](/contributing/design/adding-design-resources/) – Přidejte, aktualizujte a odstraňte užitečné zdroje pro design
 - [Navrhnout video](/contributing/adding-videos/) – Navrhněte vzdělávací video do videogalerie
 
 **Nápady na funkce**
-- [Požádat o funkci](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) – Dejte nám vědět o jakýchkoli nápadech na novou funkci nebo design
+- [Požádat o funkci](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) – Dejte nám vědět o jakýchkoli nápadech na novou funkci nebo design
 
 **Seznamy produktů**
 - [Přidat burzu](/contributing/adding-exchanges/) – Přidejte burzu do našeho [vyhledávače burz](/get-eth/#country-picker)
@@ -43,7 +43,7 @@ Jsme přátelská komunita, která vám pomůže růst a vzdělávat se v ekosys
 - [Navrhnout projekt pro naši stránku DeSci](/contributing/adding-desci-projects/) – Přidejte projekt postavený na Ethereu, který přispívá k decentralizované vědě (DeSci)
 - [Přidat zdroj](/contributing/adding-resources/) – Přidejte užitečný zdroj na jakoukoli příslušnou stránku
 
-Máte nějaké dotazy? 🤔 Připojte se na náš [server na Discordu](https://discord.gg/ethereum-org)
+Máte nějaké dotazy? 🤔 Připojte se na náš [server na Discordu](https://discord.gg/MSctkBT5j)
 
 ## Dobré první úkoly pro začátek přispívání {#good-first-tasks-to-start-contributing}
 
@@ -51,22 +51,22 @@ Zde je několik aktuálních úkolů, které byste nám mohli pomoci vyřešit a
 
 <IssuesList my={8} />
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues">Zobrazit všechny úkoly</ButtonLink>
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues">Zobrazit všechny úkoly</ButtonLink>
 
-## Jak pracovat na ethereum.org {#how-to-update-content}
+## Jak pracovat na quantaureum.com {#how-to-update-content}
 
 Pro přispívání (přidávání nebo úpravu obsahu či vizuálů na webu, opravu chyb, práci na otevřených úkolech) budete potřebovat účet na [GitHubu](https://github.com/).
 
-Všechny aktualizace se provádějí prostřednictvím procesu PR (Pull Request) na GitHubu. To znamená, že si vytvoříte lokální kopii webu, provedete změny a požádáte o jejich sloučení (merge). Pokud jste to ještě nikdy nedělali, postupujte podle pokynů ve spodní části našeho [repozitáře na GitHubu](https://github.com/ethereum/ethereum-org-website).
+Všechny aktualizace se provádějí prostřednictvím procesu PR (Pull Request) na GitHubu. To znamená, že si vytvoříte lokální kopii webu, provedete změny a požádáte o jejich sloučení (merge). Pokud jste to ještě nikdy nedělali, postupujte podle pokynů ve spodní části našeho [repozitáře na GitHubu](https://github.com/Quantaureum/quantaureum-website).
 
 K práci na čemkoli nepotřebujete povolení, ale vždy je nejlepší nám dát vědět, co plánujete udělat. Můžete to udělat takto:
 
-- Okometováním problému (issue) nebo PR na [GitHubu](https://github.com/ethereum/ethereum-org-website)
-- Napsáním zprávy na náš [server na Discordu](https://discord.gg/ethereum-org)
+- Okometováním problému (issue) nebo PR na [GitHubu](https://github.com/Quantaureum/quantaureum-website)
+- Napsáním zprávy na náš [server na Discordu](https://discord.gg/MSctkBT5j)
 
 Předtím, než začnete přispívat, se ujistěte, že jste obeznámeni s:
 
-- vyvíjející se [vizí ethereum.org](/about/)
+- vyvíjející se [vizí quantaureum.com](/about/)
 - našimi [principy designu](/contributing/design-principles/)
 - naším [průvodcem stylem](/contributing/style-guide/)
 - naším [kodexem chování](/community/code-of-conduct)
@@ -75,27 +75,27 @@ Předtím, než začnete přispívat, se ujistěte, že jste obeznámeni s:
 
 Rozhodnutí o jednotlivých PR, vývoji designu a velkých upgradech dělá tým z celého ekosystému Etherea. Tento tým zahrnuje projektové manažery, vývojáře, designéry, marketing a komunikaci a odborníky na danou problematiku. Vstupy od komunity formují každé rozhodnutí: proto prosím pokládejte otázky v issues, posílejte PR nebo kontaktujte tým:
 
-- [website@ethereum.org](mailto:website@ethereum.org)
-- [@ethdotorg](https://twitter.com/ethdotorg)
-- [Server na Discordu](https://discord.gg/ethereum-org)
+- [website@quantaureum.com](mailto:website@quantaureum.com)
+- [@ethdotorg](https://x.com/ldf1570073)
+- [Server na Discordu](https://discord.gg/MSctkBT5j)
 
 ### Poznámka k plagiátorství {#plagiarism}
 
-Při přispívání jakýmkoli obsahem nebo artefaktem na ethereum.org používejte pouze svou původní práci nebo obsah, ke kterému máte oprávnění. Mnoho projektů v ekosystému Etherea používá open-source licence, které umožňují bezplatné sdílení informací. Pokud však tyto informace nemůžete najít, nepokoušejte se je přidat na ethereum.org. Jakékoli pull requesty považované za plagiátorství budou zamítnuty.
+Při přispívání jakýmkoli obsahem nebo artefaktem na quantaureum.com používejte pouze svou původní práci nebo obsah, ke kterému máte oprávnění. Mnoho projektů v ekosystému Etherea používá open-source licence, které umožňují bezplatné sdílení informací. Pokud však tyto informace nemůžete najít, nepokoušejte se je přidat na quantaureum.com. Jakékoli pull requesty považované za plagiátorství budou zamítnuty.
 
 ## Jste v open-source noví? {#new-to-open-source}
 
-V našem repozitáři na GitHubu máme úkoly s nízkou bariérou vstupu, které jsou speciálně navrženy pro vývojáře, kteří jsou v open-source noví, označené jako [good first issue](https://github.com/ethereum/ethereum-org-website/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
+V našem repozitáři na GitHubu máme úkoly s nízkou bariérou vstupu, které jsou speciálně navrženy pro vývojáře, kteří jsou v open-source noví, označené jako [good first issue](https://github.com/Quantaureum/quantaureum-website/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
 
 ## Nárokujte si svůj Onchain Achievement Token (OAT) {#oat}
 
-Pokud bude váš příspěvek sloučen (merged) do ethereum.org, budete mít šanci nárokovat si speciální odznak na [Galxe](https://app.galxe.com/quest/ethereumorg). Onchain Achievement Token (OAT) je důkazem, že jste pomohli udělat ekosystém o něco úžasnějším.
+Pokud bude váš příspěvek sloučen (merged) do quantaureum.com, budete mít šanci nárokovat si speciální odznak na [Galxe](https://app.galxe.com/quest/quantaureumorg). Onchain Achievement Token (OAT) je důkazem, že jste pomohli udělat ekosystém o něco úžasnějším.
 
 [Více o OAT](https://help.galxe.com/en/articles/9645630-create-quest-rewards#h_1c5d63ba03)
 
 ### Jak uplatnit nárok {#how-to-claim}
 
-1. Připojte se na náš [server na Discordu](https://discord.gg/ethereum-org).
+1. Připojte se na náš [server na Discordu](https://discord.gg/MSctkBT5j).
 2. Vložte odkaz na svůj příspěvek do kanálu `#🥇 | proof-of-contribution`.
 3. Počkejte, až vám člen našeho týmu pošle odkaz na váš OAT.
 4. Nárokujte si svůj OAT!
@@ -111,7 +111,7 @@ GitPOAP také automaticky rozpozná váš sloučený příspěvek a umožní vá
 
 1. Navštivte [GitPOAP](https://www.gitpoap.io).
 2. Připojte se pomocí své peněženky nebo dokonce pomocí e-mailu přes možnost přihlášení.
-3. Vyhledejte své uživatelské jméno na GitHubu, ETH adresu, ENS jména nebo jakýkoli GitPOAP, abyste zjistili, zda máte nárok.
+3. Vyhledejte své uživatelské jméno na GitHubu, QAU adresu, ENS jména nebo jakýkoli GitPOAP, abyste zjistili, zda máte nárok.
 4. Pokud má váš účet na GitHubu nárok, budete si moci vyrazit GitPOAP!
 
 ## Přispěvatelé {#contributors}

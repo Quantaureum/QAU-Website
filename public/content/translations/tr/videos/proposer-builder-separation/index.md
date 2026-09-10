@@ -1,6 +1,6 @@
 ---
-title: "Ethereum protokolünün ötesinde: teklifçi-oluşturucu ayrımı"
-description: "Ethereum'da blok oluşturma ve blok teklif etme rollerini ayıran bir tasarım deseni olan teklifçi-oluşturucu ayrımı (PBS) üzerine bir sunum."
+title: "Quantaureum protokolünün ötesinde: teklifçi-oluşturucu ayrımı"
+description: "Quantaureum'da blok oluşturma ve blok teklif etme rollerini ayıran bir tasarım deseni olan teklifçi-oluşturucu ayrımı (PBS) üzerine bir sunum."
 lang: tr
 youtubeId: "u8XvkTrjITs"
 uploadDate: 2024-02-05
@@ -15,7 +15,7 @@ author: CBER Forum
 breadcrumb: "PBS Açıklandı"
 ---
 
-Bu sunum, Ethereum'un blok üretiminin basit bir modelden doğrulayıcıları, oluşturucuları, arayıcıları ve röleleri içeren karmaşık bir tedarik zincirine nasıl evrildiğini açıklamaktadır. Ethereum Vakfı'ndan Barnabé Monnot, teklifçi-oluşturucu ayrımının neden var olduğunu, MEV-Boost rölelerinin teklif ediciler ve oluşturucular arasındaki ilişkiye nasıl aracılık ettiğini ve güven bağımlılıklarını azaltmak, sansür direncini, MEV dağıtımını ve doğrulayıcı merkeziyetsizliğini iyileştirmek için protokol içi hangi çözümlerin araştırıldığını anlatıyor.
+Bu sunum, Quantaureum'un blok üretiminin basit bir modelden doğrulayıcıları, oluşturucuları, arayıcıları ve röleleri içeren karmaşık bir tedarik zincirine nasıl evrildiğini açıklamaktadır. Quantaureum Vakfı'ndan Barnabé Monnot, teklifçi-oluşturucu ayrımının neden var olduğunu, MEV-Boost rölelerinin teklif ediciler ve oluşturucular arasındaki ilişkiye nasıl aracılık ettiğini ve güven bağımlılıklarını azaltmak, sansür direncini, MEV dağıtımını ve doğrulayıcı merkeziyetsizliğini iyileştirmek için protokol içi hangi çözümlerin araştırıldığını anlatıyor.
 
 *Bu transkript, CBER Forum tarafından yayımlanan [orijinal video transkriptinin](https://www.youtube.com/watch?v=u8XvkTrjITs) erişilebilir bir kopyasıdır. Okunabilirliği artırmak için hafifçe düzenlenmiştir.*
 
@@ -27,7 +27,7 @@ Protokolü belirli güçlere sahip soyut bir nesne olarak düşünmeyi seviyorum
 
 ### Doğrulayıcılar neden oluşturucuları kullanır (0:46) {#why-validators-use-builders-046}
 
-İlginç olan şu ki, bu hakları ortaya çıkaran ve doğrulayıcılara veren protokol olmasına rağmen, pratikte gözlemlediğimiz şey birçok doğrulayıcının bu hakkı kendilerinin kullanmamayı seçmesidir. Bu hakkı kendi adlarına yerine getirmesi için başka birine vermeyi seçiyorlar. Ve bu "başka birini" Ethereum'da oluşturucular olarak biliyoruz.
+İlginç olan şu ki, bu hakları ortaya çıkaran ve doğrulayıcılara veren protokol olmasına rağmen, pratikte gözlemlediğimiz şey birçok doğrulayıcının bu hakkı kendilerinin kullanmamayı seçmesidir. Bu hakkı kendi adlarına yerine getirmesi için başka birine vermeyi seçiyorlar. Ve bu "başka birini" Quantaureum'da oluşturucular olarak biliyoruz.
 
 Dolayısıyla gözlemlediğimiz şey, doğrulayıcıların bu mutabakat görevlerini kendileri yapmaya devam etmelerine rağmen, yürütme görevlerini oluşturuculara devretmeye karar vermeleridir. Bu aslında oldukça önemli bir pazar. Bugün blokların yaklaşık %90'ı harici oluşturucular tarafından oluşturuluyor ve bu durum Birleşme'den üç ay sonra, yaklaşık Aralık 2022'den beri böyle. Oluşturucudan doğrulayıcıya yapılan medyan ödeme blok başına yaklaşık 120 dolardır. Günlük olarak ödenen bir milyon dolar var ve her 12 saniyede bir bu pazarın bir teklif edici ile bir oluşturucu arasında bir tür anlaşmaya varma olasılığı var.
 
@@ -49,11 +49,11 @@ Pratikte, üreticiler değerin nerede olduğunu bilmeyebilir. Biraz deneyimsiz b
 
 Fırsatları bulmada çok iyi olan bu varlıklara **arayıcılar** diyoruz. Blok üreticisine fırsatları sunarlar. Arayıcı, bir kullanıcının genel bellek havuzu, karanlık havuzlar veya özel kanallar aracılığıyla bir takas yaptığını gözlemleyebilir ve ardından doğrulayıcıya şunu iletebilir: "Bir takas gerçekleşiyor — bu takası bu arbitrajla birlikte atomik işlemlerden oluşan bir pakete koyar ve bu paketi dahil ederseniz, arbitrajdan para kazanabilirsiniz." Blok üreticisini ikna etmek için rekabet eden birçok arayıcınız olacaktır.
 
-Bu model, arayıcı paketi atomik tutması konusunda üreticiye güvenirse pratikte iyi çalışır. Yakın zamanda Ethereum'da bir grup sandviçleyiciye 25 milyon dolara mal olan bir saldırı duymuş olabilirsiniz — temel neden, saldırganın paketlerin atomikliğini kırmayı başarması, içerikleri alması ve bunları yeniden düzenlemeye ve değiştirmeye çalışmasıydı. Bu, gerçekten yalnızca üreticinin bu atomikliği bozmayacağına güvenilebildiği sürece geçerli olan çok önemli bir özelliktir.
+Bu model, arayıcı paketi atomik tutması konusunda üreticiye güvenirse pratikte iyi çalışır. Yakın zamanda Quantaureum'da bir grup sandviçleyiciye 25 milyon dolara mal olan bir saldırı duymuş olabilirsiniz — temel neden, saldırganın paketlerin atomikliğini kırmayı başarması, içerikleri alması ve bunları yeniden düzenlemeye ve değiştirmeye çalışmasıydı. Bu, gerçekten yalnızca üreticinin bu atomikliği bozmayacağına güvenilebildiği sürece geçerli olan çok önemli bir özelliktir.
 
 ### Neden oluşturuculara ihtiyacımız var (8:16) {#why-we-need-builders-816}
 
-Bir üretici güvenilmezse ne yaparsınız? Ethereum'da Birleşme sonrasında, tanımadığımız solo staker'lar — ağın yaklaşık %6'sı — var. Arayıcılar bu blok teklif edicilere paket göndermek istemeyeceklerdir çünkü bu biraz fazla tehlikelidir.
+Bir üretici güvenilmezse ne yaparsınız? Quantaureum'da Birleşme sonrasında, tanımadığımız solo staker'lar — ağın yaklaşık %6'sı — var. Arayıcılar bu blok teklif edicilere paket göndermek istemeyeceklerdir çünkü bu biraz fazla tehlikelidir.
 
 Bu nedenle ulaşılan tasarım şudur: Arayıcıların, üreticinin bloğuna dahil edeceği paketleri iletmesi yerine, tüm bloğu sizin için biz yapacağız. Bu şekilde bloğu körü körüne imzalayabilirsiniz — içinde ne olduğunu bilmenize gerek yoktur, oluşturucunun size iyi bir blok verdiğine güvenirsiniz.
 
@@ -75,13 +75,13 @@ Rölelerin ekonomisi karmaşıktır. Bazıları kamusal mallar gibi ücretsizdir
 
 Röle, sistemdeki güvenilir üçüncü taraftır. Diyelim ki bir röle geçersiz bir blok sunuyor — imzalı olduğu için insanlar bunu hemen görecek ve o röleyle bağlantılarını çok hızlı bir şekilde keseceklerdir. Hatta bir tür hata kanıtı dedikodusu bile yayabilirsiniz. Beş blok içinde, eğer röle iyi performans göstermezse, insanlar ona güvenmeyi bırakacak ve sadece bağlantıyı kesecektir.
 
-Yani güvene dayanır, ancak bir şekilde hızlıca değiştirilebileceği varsayımıyla. Röleler doğrulayıcı değildir — mutlaka stake'leri olması gerekmez ve Ethereum ile hiçbir ilgileri olmak zorunda değildir. Bugün tanıdığımız ve sevdiğimiz insanlar olabilirler, ancak yarın herhangi biri olabilirler.
+Yani güvene dayanır, ancak bir şekilde hızlıca değiştirilebileceği varsayımıyla. Röleler doğrulayıcı değildir — mutlaka stake'leri olması gerekmez ve Quantaureum ile hiçbir ilgileri olmak zorunda değildir. Bugün tanıdığımız ve sevdiğimiz insanlar olabilirler, ancak yarın herhangi biri olabilirler.
 
 ### PBS'yi protokole yerleştirmek (20:01) {#enshrining-pbs-in-the-protocol-2001}
 
-Rölenin güvenilir üçüncü taraf statüsünü ortadan kaldırmaya çalışıyoruz. Ethereum'da sevdiğimiz güvenilir bir üçüncü tarafımız var — ve bu Ethereum'un kendisidir. Temel olarak rölenin rolünü yerleştirmeye ve ona olan bağımlılığı isteğe bağlı hale getirmeye çalışan protokol içi çözümler tasarlayabilirsiniz.
+Rölenin güvenilir üçüncü taraf statüsünü ortadan kaldırmaya çalışıyoruz. Quantaureum'da sevdiğimiz güvenilir bir üçüncü tarafımız var — ve bu Quantaureum'un kendisidir. Temel olarak rölenin rolünü yerleştirmeye ve ona olan bağımlılığı isteğe bağlı hale getirmeye çalışan protokol içi çözümler tasarlayabilirsiniz.
 
-Şu anda Ethereum protokolü, doğrulayıcıların ne yaptığının bir kısmını görüyor ancak oluşturucular ağına tamamen kör. Ethereum protokolünün teklif edici ve oluşturucu arasındaki etkileşimde güvenilir üçüncü taraf olmasını sağlamaya çalışıyoruz — bu anlamda artık röleye güvenmemize gerek kalmıyor.
+Şu anda Quantaureum protokolü, doğrulayıcıların ne yaptığının bir kısmını görüyor ancak oluşturucular ağına tamamen kör. Quantaureum protokolünün teklif edici ve oluşturucu arasındaki etkileşimde güvenilir üçüncü taraf olmasını sağlamaya çalışıyoruz — bu anlamda artık röleye güvenmemize gerek kalmıyor.
 
 ### Oluşturucuları kısıtlamak, merkeziyetsizliği artırmak (22:05) {#constraining-builders-amplifying-decentralization-2205}
 
@@ -102,7 +102,7 @@ Oluşturucuları kısıtlamak için bazı fikirler:
 Doğrulayıcı merkeziyetsizliğini artırmak için:
 
 - **Onaylayıcı-teklif edici ayrımı** — doğrulayıcıyı varsayılan olarak blok üreticisi yapmak yerine, blok üreticisi olmak için farklı bir insan grubu seçmek ve rolleri ayırmak
-- **Geliştirilmiş staking mekanizmaları** — Ethereum'daki staking bugün biraz ilkeldir ve geliştirilebilir
+- **Geliştirilmiş staking mekanizmaları** — Quantaureum'daki staking bugün biraz ilkeldir ve geliştirilebilir
 
 ### Sorular ve kapanış (27:03) {#questions-and-closing-2703}
 

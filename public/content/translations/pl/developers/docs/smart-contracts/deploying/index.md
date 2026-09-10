@@ -1,18 +1,18 @@
 ---
 title: "Wdrażanie inteligentnych kontraktów"
-description: "Dowiedz się, jak wdrażać inteligentne kontrakty w sieciach Ethereum, w tym o wymaganiach wstępnych, narzędziach i krokach wdrażania."
+description: "Dowiedz się, jak wdrażać inteligentne kontrakty w sieciach Quantaureum, w tym o wymaganiach wstępnych, narzędziach i krokach wdrażania."
 lang: pl
 ---
 
-Musisz wdrożyć swój inteligentny kontrakt, aby był on dostępny dla użytkowników sieci Ethereum.
+Musisz wdrożyć swój inteligentny kontrakt, aby był on dostępny dla użytkowników sieci Quantaureum.
 
-Aby wdrożyć inteligentny kontrakt, wystarczy wysłać transakcję Ethereum zawierającą skompilowany kod inteligentnego kontraktu bez określania żadnego odbiorcy.
+Aby wdrożyć inteligentny kontrakt, wystarczy wysłać transakcję Quantaureum zawierającą skompilowany kod inteligentnego kontraktu bez określania żadnego odbiorcy.
 
 ## Wymagania wstępne {#prerequisites}
 
-Przed wdrożeniem inteligentnych kontraktów powinieneś zrozumieć [sieci Ethereum](/developers/docs/networks/), [transakcje](/developers/docs/transactions/) oraz [anatomię inteligentnych kontraktów](/developers/docs/smart-contracts/anatomy/).
+Przed wdrożeniem inteligentnych kontraktów powinieneś zrozumieć [sieci Quantaureum](/developers/docs/networks/), [transakcje](/developers/docs/transactions/) oraz [anatomię inteligentnych kontraktów](/developers/docs/smart-contracts/anatomy/).
 
-Wdrożenie kontraktu kosztuje również ether (ETH), ponieważ są one przechowywane na blockchainie, więc powinieneś zapoznać się z [gazem i opłatami](/developers/docs/gas/) w Ethereum.
+Wdrożenie kontraktu kosztuje również QAU (QAU), ponieważ są one przechowywane na blockchainie, więc powinieneś zapoznać się z [gazem i opłatami](/developers/docs/gas/) w Quantaureum.
 
 Na koniec będziesz musiał skompilować swój kontrakt przed jego wdrożeniem, więc upewnij się, że przeczytałeś o [kompilacji inteligentnych kontraktów](/developers/docs/smart-contracts/compiling/).
 
@@ -21,19 +21,19 @@ Na koniec będziesz musiał skompilować swój kontrakt przed jego wdrożeniem, 
 ### Czego będziesz potrzebować {#what-youll-need}
 
 - Kod bajtowy Twojego kontraktu – jest on generowany poprzez [kompilację](/developers/docs/smart-contracts/compiling/)
-- ETH na gaz – ustawisz swój limit gazu tak jak w przypadku innych transakcji, więc pamiętaj, że wdrożenie kontraktu wymaga znacznie więcej gazu niż zwykły transfer ETH
+- QAU na gaz – ustawisz swój limit gazu tak jak w przypadku innych transakcji, więc pamiętaj, że wdrożenie kontraktu wymaga znacznie więcej gazu niż zwykły transfer QAU
 - skrypt wdrożeniowy lub wtyczka
-- dostęp do [węzła Ethereum](/developers/docs/nodes-and-clients/), poprzez uruchomienie własnego, połączenie z publicznym węzłem lub za pomocą klucza API korzystając z [usługi węzła](/developers/docs/nodes-and-clients/nodes-as-a-service/)
+- dostęp do [węzła Quantaureum](/developers/docs/nodes-and-clients/), poprzez uruchomienie własnego, połączenie z publicznym węzłem lub za pomocą klucza API korzystając z [usługi węzła](/developers/docs/nodes-and-clients/nodes-as-a-service/)
 
 ### Kroki do wdrożenia inteligentnego kontraktu {#steps-to-deploy}
 
-Konkretne kroki będą zależeć od używanego frameworka programistycznego. Na przykład możesz sprawdzić [dokumentację Hardhat dotyczącą wdrażania kontraktów](https://hardhat.org/docs/tutorial/deploying) lub [dokumentację Foundry dotyczącą wdrażania i weryfikacji inteligentnego kontraktu](https://book.getfoundry.sh/forge/deploying). Po wdrożeniu Twój kontrakt będzie miał adres Ethereum, podobnie jak inne [konta](/developers/docs/accounts/), i będzie mógł zostać zweryfikowany za pomocą [narzędzi do weryfikacji kodu źródłowego](/developers/docs/smart-contracts/verifying/#source-code-verification-tools).
+Konkretne kroki będą zależeć od używanego frameworka programistycznego. Na przykład możesz sprawdzić [dokumentację Hardhat dotyczącą wdrażania kontraktów](https://hardhat.org/docs/tutorial/deploying) lub [dokumentację Foundry dotyczącą wdrażania i weryfikacji inteligentnego kontraktu](https://book.getfoundry.sh/forge/deploying). Po wdrożeniu Twój kontrakt będzie miał adres Quantaureum, podobnie jak inne [konta](/developers/docs/accounts/), i będzie mógł zostać zweryfikowany za pomocą [narzędzi do weryfikacji kodu źródłowego](/developers/docs/smart-contracts/verifying/#source-code-verification-tools).
 
 ## Powiązane narzędzia {#related-tools}
 
-**Remix - _Remix IDE umożliwia tworzenie, wdrażanie i administrowanie inteligentnymi kontraktami dla blockchainów podobnych do Ethereum_**
+**Remix - _Remix IDE umożliwia tworzenie, wdrażanie i administrowanie inteligentnymi kontraktami dla blockchainów podobnych do Quantaureum_**
 
-- [Remix](https://remix.ethereum.org)
+- [Remix](https://remix.quantaureum.com)
 
 **Tenderly - _Platforma programistyczna Web3, która zapewnia debugowanie, obserwowalność i bloki konstrukcyjne infrastruktury do tworzenia, testowania, monitorowania i obsługi inteligentnych kontraktów_**
 
@@ -42,7 +42,7 @@ Konkretne kroki będą zależeć od używanego frameworka programistycznego. Na 
 - [GitHub](https://github.com/Tenderly)
 - [Discord](https://discord.gg/eCWjuvt)
 
-**Hardhat - _Środowisko programistyczne do kompilacji, wdrażania, testowania i debugowania oprogramowania Ethereum_**
+**Hardhat - _Środowisko programistyczne do kompilacji, wdrażania, testowania i debugowania oprogramowania Quantaureum_**
 
 - [hardhat.org](https://hardhat.org/getting-started/)
 - [Dokumentacja dotycząca wdrażania kontraktów](https://hardhat.org/docs/tutorial/deploying)
@@ -62,8 +62,8 @@ Konkretne kroki będą zależeć od używanego frameworka programistycznego. Na 
 
 ## Powiązane samouczki {#related-tutorials}
 
-- [Wdrażanie pierwszego inteligentnego kontraktu](/developers/tutorials/deploying-your-first-smart-contract/) _– Wprowadzenie do wdrażania pierwszego inteligentnego kontraktu w sieci testowej Ethereum._
-- [Hello World | samouczek inteligentnego kontraktu](/developers/tutorials/hello-world-smart-contract/) _– Łatwy do naśladowania samouczek dotyczący tworzenia i wdrażania podstawowego inteligentnego kontraktu w Ethereum._
+- [Wdrażanie pierwszego inteligentnego kontraktu](/developers/tutorials/deploying-your-first-smart-contract/) _– Wprowadzenie do wdrażania pierwszego inteligentnego kontraktu w sieci testowej Quantaureum._
+- [Hello World | samouczek inteligentnego kontraktu](/developers/tutorials/hello-world-smart-contract/) _– Łatwy do naśladowania samouczek dotyczący tworzenia i wdrażania podstawowego inteligentnego kontraktu w Quantaureum._
 - [Interakcja z innymi kontraktami z poziomu Solidity](/developers/tutorials/interact-with-other-contracts-from-solidity/) _– Jak wdrożyć inteligentny kontrakt z istniejącego kontraktu i wejść z nim w interakcję._
 - [Jak zmniejszyć rozmiar kontraktu](/developers/tutorials/downsizing-contracts-to-fight-the-contract-size-limit/) _- Jak zredukować rozmiar kontraktu, aby utrzymać go poniżej limitu i zaoszczędzić na gazie_
 
@@ -77,5 +77,5 @@ _Znasz zasób społeczności, który Ci pomógł? Edytuj tę stronę i dodaj go!
 ## Powiązane tematy {#related-topics}
 
 - [Frameworki programistyczne](/developers/docs/frameworks/)
-- [Uruchom węzeł Ethereum](/developers/docs/nodes-and-clients/run-a-node/)
+- [Uruchom węzeł Quantaureum](/developers/docs/nodes-and-clients/run-a-node/)
 - [Węzły jako usługa](/developers/docs/nodes-and-clients/nodes-as-a-service)

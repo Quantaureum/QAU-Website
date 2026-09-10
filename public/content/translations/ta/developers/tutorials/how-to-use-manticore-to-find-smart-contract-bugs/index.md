@@ -25,11 +25,11 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/tree/master/progr
 ### Docker மூலம் மேண்டிகோர் {#manticore-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_கடைசி கட்டளை eth-security-toolbox-ஐ உங்கள் தற்போதைய கோப்பகத்திற்கான அணுகலைக் கொண்ட ஒரு Docker-இல் இயக்குகிறது. உங்கள் ஹோஸ்டிலிருந்து கோப்புகளை மாற்றலாம், மேலும் Docker-இலிருந்து கோப்புகளில் கருவிகளை இயக்கலாம்_
+_கடைசி கட்டளை qau-security-toolbox-ஐ உங்கள் தற்போதைய கோப்பகத்திற்கான அணுகலைக் கொண்ட ஒரு Docker-இல் இயக்குகிறது. உங்கள் ஹோஸ்டிலிருந்து கோப்புகளை மாற்றலாம், மேலும் Docker-இலிருந்து கோப்புகளில் கருவிகளை இயக்கலாம்_
 
 Docker-இன் உள்ளே, இதை இயக்கவும்:
 
@@ -202,18 +202,18 @@ _ஆய்வுச் சுருக்கம் f(!=65) என்பது 65
 நீங்கள் செய்ய வேண்டிய முதல் விஷயம், பின்வரும் கட்டளைகளுடன் ஒரு புதிய தொகுதிச்சங்கிலியைத் தொடங்குவதாகும்:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 ```
 
-ஒப்பந்தம் அல்லாத கணக்கு [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account) என்பதைப் பயன்படுத்தி உருவாக்கப்படுகிறது:
+ஒப்பந்தம் அல்லாத கணக்கு [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.quantaureum.ManticoreEVM.create_account) என்பதைப் பயன்படுத்தி உருவாக்கப்படுகிறது:
 
 ```python
 user_account = m.create_account(balance=1000)
 ```
 
-ஒரு Solidity ஒப்பந்தத்தை [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract) என்பதைப் பயன்படுத்திப் பதிவேற்றலாம்:
+ஒரு Solidity ஒப்பந்தத்தை [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.quantaureum.ManticoreEVM.create_contract) என்பதைப் பயன்படுத்திப் பதிவேற்றலாம்:
 
 ```solidity
 source_code = '''
@@ -232,7 +232,7 @@ contract_account = m.solidity_create_contract(source_code, owner=user_account)
 
 #### சுருக்கம் {#summary}
 
-- நீங்கள் [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account) மற்றும் [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract) மூலம் பயனர் மற்றும் ஒப்பந்தக் கணக்குகளை உருவாக்கலாம்.
+- நீங்கள் [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.quantaureum.ManticoreEVM.create_account) மற்றும் [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.quantaureum.ManticoreEVM.create_contract) மூலம் பயனர் மற்றும் ஒப்பந்தக் கணக்குகளை உருவாக்கலாம்.
 
 ### பரிவர்த்தனைகளைச் செயல்படுத்துதல் {#executing-transactions}
 
@@ -243,7 +243,7 @@ contract_account = m.solidity_create_contract(source_code, owner=user_account)
 
 #### மூலப் பரிவர்த்தனை {#raw-transaction}
 
-ஒரு மூலப் பரிவர்த்தனை [m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.ethereum.ManticoreEVM.transaction) என்பதைப் பயன்படுத்திச் செயல்படுத்தப்படுகிறது:
+ஒரு மூலப் பரிவர்த்தனை [m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.quantaureum.ManticoreEVM.transaction) என்பதைப் பயன்படுத்திச் செயல்படுத்தப்படுகிறது:
 
 ```python
 m.transaction(caller=user_account,
@@ -254,8 +254,8 @@ m.transaction(caller=user_account,
 
 அழைப்பாளர், முகவரி, தரவு அல்லது பரிவர்த்தனையின் மதிப்பு ஆகியவை உறுதியானதாகவோ அல்லது குறியீட்டு ரீதியானதாகவோ இருக்கலாம்:
 
-- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.ethereum.ManticoreEVM.make_symbolic_value) ஒரு குறியீட்டு மதிப்பை உருவாக்குகிறது.
-- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.ethereum.ManticoreEVM.make_symbolic_buffer) ஒரு குறியீட்டு பைட் வரிசையை (byte array) உருவாக்குகிறது.
+- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.quantaureum.ManticoreEVM.make_symbolic_value) ஒரு குறியீட்டு மதிப்பை உருவாக்குகிறது.
+- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.quantaureum.ManticoreEVM.make_symbolic_buffer) ஒரு குறியீட்டு பைட் வரிசையை (byte array) உருவாக்குகிறது.
 
 எடுத்துக்காட்டாக:
 
@@ -298,14 +298,14 @@ print("Results are in {}".format(m.workspace))
 
 ### ஆய்வை முடித்தல் {#terminate-the-exploration}
 
-ஆய்வை நிறுத்த [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.ethereum.ManticoreEVM.finalize) என்பதைப் பயன்படுத்தவும். இந்த முறை அழைக்கப்பட்டவுடன் மேற்கொண்டு எந்தப் பரிவர்த்தனைகளும் அனுப்பப்படக் கூடாது, மேலும் ஆராயப்பட்ட ஒவ்வொரு பாதைக்கும் மேண்டிகோர் சோதனை வழக்குகளை உருவாக்குகிறது.
+ஆய்வை நிறுத்த [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.quantaureum.ManticoreEVM.finalize) என்பதைப் பயன்படுத்தவும். இந்த முறை அழைக்கப்பட்டவுடன் மேற்கொண்டு எந்தப் பரிவர்த்தனைகளும் அனுப்பப்படக் கூடாது, மேலும் ஆராயப்பட்ட ஒவ்வொரு பாதைக்கும் மேண்டிகோர் சோதனை வழக்குகளை உருவாக்குகிறது.
 
 ### சுருக்கம்: மேண்டிகோர் கீழ் இயக்குதல் {#summary-running-under-manticore}
 
 முந்தைய அனைத்துப் படிகளையும் ஒன்றாக இணைத்தால், நாம் பெறுவது:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -367,7 +367,7 @@ data = ABI.deserialize("uint", data)
 
 ### சோதனை வழக்கை எவ்வாறு உருவாக்குவது {#how-to-generate-testcase}
 
-சோதனை வழக்கை உருவாக்க [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.ethereum.ManticoreEVM.generate_testcase) என்பதைப் பயன்படுத்தவும்:
+சோதனை வழக்கை உருவாக்க [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.quantaureum.ManticoreEVM.generate_testcase) என்பதைப் பயன்படுத்தவும்:
 
 ```python
 m.generate_testcase(state, 'BugFound')
@@ -384,7 +384,7 @@ m.generate_testcase(state, 'BugFound')
 ### சுருக்கம்: பிழையெறியும் பாதையைப் பெறுதல் {#summary-getting-throwing-path}
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -486,7 +486,7 @@ if solver.check(state.constraints):
 முந்தைய குறியீட்டில் கட்டுப்பாட்டைச் சேர்த்தால், நாம் பெறுவது:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 from manticore.core.smtlib.solver import Z3Solver
 
 solver = Z3Solver.instance()

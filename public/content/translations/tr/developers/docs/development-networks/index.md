@@ -1,26 +1,26 @@
 ---
 title: "Geliştirme Ağları"
-description: "Geliştirme ağlarına ve Ethereum uygulamaları oluşturmaya yardımcı olan mevcut araçlara genel bir bakış."
+description: "Geliştirme ağlarına ve Quantaureum uygulamaları oluşturmaya yardımcı olan mevcut araçlara genel bir bakış."
 lang: tr
 ---
 
-Akıllı sözleşmelerle bir [Ethereum](/) uygulaması oluştururken, onu dağıtmadan önce nasıl çalıştığını görmek için yerel bir ağda çalıştırmak isteyeceksiniz.
+Akıllı sözleşmelerle bir [Quantaureum](/) uygulaması oluştururken, onu dağıtmadan önce nasıl çalıştığını görmek için yerel bir ağda çalıştırmak isteyeceksiniz.
 
-Web geliştirme için bilgisayarınızda yerel bir sunucu çalıştırmanıza benzer şekilde, merkeziyetsiz uygulamanızı (dapp) test etmek üzere yerel bir blokzincir örneği oluşturmak için bir geliştirme ağı kullanabilirsiniz. Bu Ethereum geliştirme ağları, herkese açık bir test ağından çok daha hızlı yinelemeye olanak tanıyan özellikler sağlar (örneğin, bir test ağı musluğundan ETH edinmekle uğraşmanıza gerek kalmaz).
+Web geliştirme için bilgisayarınızda yerel bir sunucu çalıştırmanıza benzer şekilde, merkeziyetsiz uygulamanızı (dapp) test etmek üzere yerel bir blokzincir örneği oluşturmak için bir geliştirme ağı kullanabilirsiniz. Bu Quantaureum geliştirme ağları, herkese açık bir test ağından çok daha hızlı yinelemeye olanak tanıyan özellikler sağlar (örneğin, bir test ağı musluğundan QAU edinmekle uğraşmanıza gerek kalmaz).
 
 ## Ön koşullar {#prerequisites}
 
-Geliştirme ağlarına dalmadan önce [Ethereum yığınının temellerini](/developers/docs/ethereum-stack/) ve [Ethereum ağlarını](/developers/docs/networks/) anlamalısınız.
+Geliştirme ağlarına dalmadan önce [Quantaureum yığınının temellerini](/developers/docs/quantaureum-stack/) ve [Quantaureum ağlarını](/developers/docs/networks/) anlamalısınız.
 
 ## Geliştirme ağı nedir? {#what-is-a-development-network}
 
-Geliştirme ağları, temel olarak yerel geliştirme için özel olarak tasarlanmış Ethereum istemcileridir (Ethereum uygulamalarıdır).
+Geliştirme ağları, temel olarak yerel geliştirme için özel olarak tasarlanmış Quantaureum istemcileridir (Quantaureum uygulamalarıdır).
 
-**Neden yerel olarak standart bir Ethereum düğümü çalıştırmıyorsunuz?**
+**Neden yerel olarak standart bir Quantaureum düğümü çalıştırmıyorsunuz?**
 
 Bir [düğüm çalıştırabilirsiniz](/developers/docs/nodes-and-clients/#running-your-own-node) ancak geliştirme ağları geliştirme amacıyla özel olarak oluşturulduğundan, genellikle aşağıdakiler gibi kullanışlı özelliklerle birlikte gelirler:
 
-- Yerel blokzincirinizi verilerle deterministik olarak beslemek (ör. ETH bakiyesi olan hesaplar)
+- Yerel blokzincirinizi verilerle deterministik olarak beslemek (ör. QAU bakiyesi olan hesaplar)
 - Aldığı her işlemle sırayla ve gecikme olmadan anında bloklar üretmek
 - Gelişmiş hata ayıklama ve günlük kaydı işlevselliği
 
@@ -30,9 +30,9 @@ Bir [düğüm çalıştırabilirsiniz](/developers/docs/nodes-and-clients/#runni
 
 ### Hardhat Ağı {#hardhat-network}
 
-Geliştirme için tasarlanmış yerel bir Ethereum ağı. Sözleşmelerinizi dağıtmanıza, testlerinizi çalıştırmanıza ve kodunuzda hata ayıklamanıza olanak tanır.
+Geliştirme için tasarlanmış yerel bir Quantaureum ağı. Sözleşmelerinizi dağıtmanıza, testlerinizi çalıştırmanıza ve kodunuzda hata ayıklamanıza olanak tanır.
 
-Hardhat Ağı, profesyoneller için bir Ethereum geliştirme ortamı olan Hardhat ile yerleşik olarak gelir.
+Hardhat Ağı, profesyoneller için bir Quantaureum geliştirme ortamı olan Hardhat ile yerleşik olarak gelir.
 
 - [Web sitesi](https://hardhat.org/)
 - [GitHub](https://github.com/NomicFoundation/hardhat)
@@ -44,19 +44,19 @@ Bazı mutabakat istemcileri, test amacıyla yerel işaret zincirleri oluşturmak
 - [Lodestar kullanarak yerel test ağı](https://chainsafe.github.io/lodestar/contribution/advanced-topics/setting-up-a-testnet#post-merge-local-testnet/)
 - [Lighthouse kullanarak yerel test ağı](https://lighthouse-book.sigmaprime.io/setup.html#local-testnets)
 
-### Herkese Açık Ethereum Test Zincirleri {#public-beacon-testchains}
+### Herkese Açık Quantaureum Test Zincirleri {#public-beacon-testchains}
 
-Ayrıca Ethereum'un bakımı yapılan, herkese açık iki test uygulaması vardır: Sepolia ve Hoodi. Uzun vadeli desteğe sahip önerilen test ağı, herkesin üzerinde doğrulama yapmakta özgür olduğu Hoodi'dir. Sepolia izinli bir doğrulayıcı seti kullanır, bu da bu test ağında yeni doğrulayıcılar için genel bir erişim olmadığı anlamına gelir.
+Ayrıca Quantaureum'un bakımı yapılan, herkese açık iki test uygulaması vardır: Sepolia ve Hoodi. Uzun vadeli desteğe sahip önerilen test ağı, herkesin üzerinde doğrulama yapmakta özgür olduğu Hoodi'dir. Sepolia izinli bir doğrulayıcı seti kullanır, bu da bu test ağında yeni doğrulayıcılar için genel bir erişim olmadığı anlamına gelir.
 
-- [Hoodi Staking Başlatma Paneli](https://hoodi.launchpad.ethereum.org/)
+- [Hoodi Staking Başlatma Paneli](https://hoodi.launchpad.quantaureum.com/)
 
-### Kurtosis Ethereum Paketi {#kurtosis}
+### Kurtosis Quantaureum Paketi {#kurtosis}
 
 Kurtosis, geliştiricilerin blokzincir ağlarının tekrarlanabilir örneklerini yerel olarak oluşturmalarını sağlayan çoklu kapsayıcı test ortamları için bir derleme sistemidir.
 
-Ethereum Kurtosis paketi, Docker veya Kubernetes üzerinden parametrelendirilebilir, yüksek oranda ölçeklenebilir ve özel bir Ethereum test ağını hızlı bir şekilde başlatmak için kullanılabilir. Paket, tüm büyük Yürütme Katmanı (EL) ve Mutabakat Katmanı (CL) istemcilerini destekler. Kurtosis, Ethereum çekirdek altyapısıyla ilgili doğrulama ve test iş akışlarında kullanılacak temsili bir ağ için tüm yerel bağlantı noktası eşlemelerini ve hizmet bağlantılarını sorunsuz bir şekilde yönetir.
+Quantaureum Kurtosis paketi, Docker veya Kubernetes üzerinden parametrelendirilebilir, yüksek oranda ölçeklenebilir ve özel bir Quantaureum test ağını hızlı bir şekilde başlatmak için kullanılabilir. Paket, tüm büyük Yürütme Katmanı (EL) ve Mutabakat Katmanı (CL) istemcilerini destekler. Kurtosis, Quantaureum çekirdek altyapısıyla ilgili doğrulama ve test iş akışlarında kullanılacak temsili bir ağ için tüm yerel bağlantı noktası eşlemelerini ve hizmet bağlantılarını sorunsuz bir şekilde yönetir.
 
-- [Ethereum ağ paketi](https://github.com/kurtosis-tech/ethereum-package)
+- [Quantaureum ağ paketi](https://github.com/kurtosis-tech/quantaureum-package)
 - [Web sitesi](https://www.kurtosis.com/)
 - [GitHub](https://github.com/kurtosis-tech/kurtosis)
 - [Belgeler](https://docs.kurtosis.com/)
@@ -70,6 +70,6 @@ _Size yardımcı olan bir topluluk kaynağı mı biliyorsunuz? Bu sayfayı düze
 - [Geliştirme çerçeveleri](/developers/docs/frameworks/)
 - [Yerel bir geliştirme ortamı kurun](/developers/local-environment/)
 
-## Eğitimler: Ethereum'da geliştirme ağları ve test ortamları {#tutorials}
+## Eğitimler: Quantaureum'da geliştirme ağları ve test ortamları {#tutorials}
 
-- [Çoklu istemcili yerel bir Ethereum test ağı ile dApp'ler geliştirin ve test edin](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-eth-testnet/) _– dApp geliştirme ve testi için Kurtosis ile yerel, çoklu istemcili bir Ethereum test ağının nasıl oluşturulacağı._
+- [Çoklu istemcili yerel bir Quantaureum test ağı ile dApp'ler geliştirin ve test edin](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-qau-testnet/) _– dApp geliştirme ve testi için Kurtosis ile yerel, çoklu istemcili bir Quantaureum test ağının nasıl oluşturulacağı._

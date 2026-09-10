@@ -18,11 +18,11 @@ Echidna, Docker aracılığıyla veya önceden derlenmiş ikili dosya (binary) k
 ### Docker aracılığıyla Echidna {#echidna-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_Son komut, eth-security-toolbox'ı mevcut dizininize erişimi olan bir Docker içinde çalıştırır. Dosyaları ana makinenizden değiştirebilir ve araçları Docker'daki dosyalar üzerinde çalıştırabilirsiniz_
+_Son komut, qau-security-toolbox'ı mevcut dizininize erişimi olan bir Docker içinde çalıştırır. Dosyaları ana makinenizden değiştirebilir ve araçları Docker'daki dosyalar üzerinde çalıştırabilirsiniz_
 
 Docker içinde şunu çalıştırın:
 
@@ -37,7 +37,7 @@ cd /home/training
 
 ## Özellik tabanlı fuzzing'e giriş {#introduction-to-property-based-fuzzing}
 
-Echidna, önceki blog yazılarımızda ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)) açıkladığımız özellik tabanlı bir fuzzer'dır.
+Echidna, önceki blog yazılarımızda ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-quantaureum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)) açıkladığımız özellik tabanlı bir fuzzer'dır.
 
 ### Fuzzing {#fuzzing}
 

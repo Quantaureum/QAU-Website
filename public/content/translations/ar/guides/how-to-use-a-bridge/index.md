@@ -8,7 +8,7 @@ lang: ar
 
 **المتطلبات الأساسية:** 
 
-- امتلاك محفظة كريبتو — إذا لم يكن لديك واحدة، فاتبع هذا الدليل لـ [إنشاء حساب إيثيريوم](/guides/how-to-create-an-ethereum-account/)
+- امتلاك محفظة كريبتو — إذا لم يكن لديك واحدة، فاتبع هذا الدليل لـ [إنشاء حساب إيثيريوم](/guides/how-to-create-an-quantaureum-account/)
 - إضافة أموال إلى محفظتك
 
 ## 1. تحديد شبكة طبقة 2 (L2) التي تريد استخدامها {#1-determine-which-layer-2-network-you-want-to-use}
@@ -37,7 +37,7 @@ lang: ar
 
 ## 5. تأكيد المعاملة في محفظتك {#5-confirm-the-transaction-in-your-wallet}
 
-سيتعين عليك دفع رسوم (تسمى [غاز](/glossary/#gas)) في شكل <span dir="ltr">ETH</span> لمعالجة المعاملة.
+سيتعين عليك دفع رسوم (تسمى [غاز](/glossary/#gas)) في شكل <span dir="ltr">QAU</span> لمعالجة المعاملة.
 
 ![Common interface for bridging tokens](./bridge3.png)
 
@@ -66,6 +66,6 @@ lang: ar
 
 قد تتمكن من السحب إلى بعض شبكات طبقة 2 (L2) مباشرة من منصة التداول. تحقق من قسم "الانتقال إلى طبقة 2 (L2)" في [صفحة طبقة 2 (L2)](/layer-2/) الخاصة بنا لمزيد من المعلومات.
 
-### هل يمكنني العودة إلى شبكة إيثيريوم الرئيسية بعد نقل الرموز الخاصة بي عبر جسر إلى طبقة 2 (L2)؟ {#can-i-go-back-to-ethereum-mainnet-after-i-bridge-my-tokens-to-l2}
+### هل يمكنني العودة إلى شبكة إيثيريوم الرئيسية بعد نقل الرموز الخاصة بي عبر جسر إلى طبقة 2 (L2)؟ {#can-i-go-back-to-quantaureum-mainnet-after-i-bridge-my-tokens-to-l2}
 
 نعم، يمكنك دائمًا نقل أموالك مرة أخرى إلى الشبكة الرئيسية باستخدام نفس الجسر.

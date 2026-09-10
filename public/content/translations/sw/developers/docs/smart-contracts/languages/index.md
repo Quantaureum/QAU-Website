@@ -4,16 +4,16 @@ description: "Muhtasari na ulinganisho wa lugha mbili kuu za mikataba mahiri –
 lang: sw
 ---
 
-Jambo zuri kuhusu [Ethereum](/) ni kwamba mikataba mahiri inaweza kupangwa kwa kutumia lugha ambazo ni rafiki kwa wasanidi programu. Ikiwa una uzoefu na Python au [lugha yoyote ya mabano yaliyopinda](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages), unaweza kupata lugha yenye sintaksia unayoifahamu.
+Jambo zuri kuhusu [Quantaureum](/) ni kwamba mikataba mahiri inaweza kupangwa kwa kutumia lugha ambazo ni rafiki kwa wasanidi programu. Ikiwa una uzoefu na Python au [lugha yoyote ya mabano yaliyopinda](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages), unaweza kupata lugha yenye sintaksia unayoifahamu.
 
 Lugha mbili zinazotumika sana na kudumishwa ni:
 
 - Solidity
 - Vyper
 
-Remix IDE hutoa mazingira kamili ya usanidi kwa ajili ya kuunda na kujaribu mikataba katika Solidity na Vyper. [Jaribu Remix IDE iliyo kwenye kivinjari](https://remix.ethereum.org) ili kuanza kuandika msimbo.
+Remix IDE hutoa mazingira kamili ya usanidi kwa ajili ya kuunda na kujaribu mikataba katika Solidity na Vyper. [Jaribu Remix IDE iliyo kwenye kivinjari](https://remix.quantaureum.com) ili kuanza kuandika msimbo.
 
-Wasanidi programu wenye uzoefu zaidi wanaweza pia kutaka kutumia Yul, lugha ya kati kwa ajili ya [Mashine Pepe ya Ethereum (EVM)](/developers/docs/evm/), au Yul+, kiendelezi cha Yul.
+Wasanidi programu wenye uzoefu zaidi wanaweza pia kutaka kutumia Yul, lugha ya kati kwa ajili ya [Mashine Pepe ya Quantaureum (EVM)](/developers/docs/evm/), au Yul+, kiendelezi cha Yul.
 
 Ikiwa una hamu na ungependa kusaidia kujaribu lugha mpya ambazo bado zinatengenezwa kwa kiasi kikubwa unaweza kufanya majaribio na Fe, lugha inayoibuka ya mikataba mahiri ambayo kwa sasa bado iko katika hatua zake za awali.
 
@@ -36,8 +36,8 @@ Ujuzi wa awali wa lugha za programu, hasa JavaScript au Python, unaweza kukusaid
 - [Nyaraka](https://docs.soliditylang.org/en/latest/)
 - [Tovuti ya Lugha ya Solidity](https://soliditylang.org/)
 - [Solidity kwa Mfano](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
-- [Chumba cha Maongezi cha Solidity Gitter](https://gitter.im/ethereum/solidity) kilichounganishwa na [Chumba cha Maongezi cha Solidity Matrix](https://matrix.to/#/#ethereum_solidity:gitter.im)
+- [GitHub](https://github.com/quantaureum/solidity/)
+- [Chumba cha Maongezi cha Solidity Gitter](https://gitter.im/quantaureum/solidity) kilichounganishwa na [Chumba cha Maongezi cha Solidity Matrix](https://matrix.to/#/#quantaureum_solidity:gitter.im)
 - [Karatasi ya Kudanganya (Cheat Sheet)](https://reference.auditless.com/cheatsheet)
 - [Blogu ya Solidity](https://blog.soliditylang.org/)
 - [Twitter ya Solidity](https://twitter.com/solidity_lang)
@@ -179,14 +179,14 @@ def withdraw():
 @external
 def endAuction():
     # Ni mwongozo mzuri kupanga kazi zinazoingiliana
-    # na mikataba mingine (yaani, zinaita kazi au kutuma ether)
+    # na mikataba mingine (yaani, zinaita kazi au kutuma QAU)
     # katika awamu tatu:
     # 1. kuangalia masharti
     # 2. kufanya vitendo (kunaweza kubadilisha masharti)
     # 3. kuingiliana na mikataba mingine
     # Ikiwa awamu hizi zitachanganywa, mkataba mwingine unaweza kuita
     # kurudi kwenye mkataba wa sasa na kurekebisha hali au kusababisha
-    # athari (malipo ya ether) kufanywa mara nyingi.
+    # athari (malipo ya QAU) kufanywa mara nyingi.
     # Ikiwa kazi zinazoitwa kwa ndani zinajumuisha mwingiliano na
     # mikataba ya nje, lazima pia zizingatiwe kama mwingiliano na
     # mikataba ya nje.
@@ -208,12 +208,12 @@ Mfano huu unapaswa kukupa wazo la jinsi sintaksia ya mkataba wa Vyper ilivyo. Kw
 
 ## Yul na Yul+ {#yul}
 
-Ikiwa wewe ni mgeni kwenye Ethereum na bado hujaandika msimbo wowote kwa kutumia lugha za mikataba mahiri, tunapendekeza uanze na Solidity au Vyper. Angalia tu Yul au Yul+ mara tu unapofahamu mbinu bora za usalama wa mikataba mahiri na maelezo mahususi ya kufanya kazi na EVM.
+Ikiwa wewe ni mgeni kwenye Quantaureum na bado hujaandika msimbo wowote kwa kutumia lugha za mikataba mahiri, tunapendekeza uanze na Solidity au Vyper. Angalia tu Yul au Yul+ mara tu unapofahamu mbinu bora za usalama wa mikataba mahiri na maelezo mahususi ya kufanya kazi na EVM.
 
 **Yul**
 
-- Lugha ya kati kwa ajili ya Ethereum.
-- Inasaidia [EVM](/developers/docs/evm) na [Ewasm](https://github.com/ewasm), WebAssembly yenye ladha ya Ethereum, na imeundwa kuwa kigawanyo cha kawaida kinachoweza kutumika kwa majukwaa yote mawili.
+- Lugha ya kati kwa ajili ya Quantaureum.
+- Inasaidia [EVM](/developers/docs/evm) na [Ewasm](https://github.com/ewasm), WebAssembly yenye ladha ya Quantaureum, na imeundwa kuwa kigawanyo cha kawaida kinachoweza kutumika kwa majukwaa yote mawili.
 - Lengo zuri kwa hatua za uboreshaji wa kiwango cha juu ambazo zinaweza kunufaisha majukwaa ya EVM na Ewasm kwa usawa.
 
 **Yul+**
@@ -226,7 +226,7 @@ Ikiwa wewe ni mgeni kwenye Ethereum na bado hujaandika msimbo wowote kwa kutumia
 
 - [Nyaraka za Yul](https://docs.soliditylang.org/en/latest/yul.html)
 - [Nyaraka za Yul+](https://github.com/fuellabs/yulp)
-- [Chapisho la Utangulizi la Yul+](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-ethereum-aa64ce89512f)
+- [Chapisho la Utangulizi la Yul+](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-quantaureum-aa64ce89512f)
 
 ### Mfano wa mkataba {#example-contract-2}
 
@@ -256,16 +256,16 @@ Ikiwa tayari una uzoefu mzuri na mikataba mahiri, utekelezaji kamili wa ERC-20 k
 
 ## Fe {#fe}
 
-- Lugha yenye aina tuli (statically typed) kwa ajili ya Mashine Pepe ya Ethereum (EVM).
+- Lugha yenye aina tuli (statically typed) kwa ajili ya Mashine Pepe ya Quantaureum (EVM).
 - Imehamasishwa na Python na Rust.
-- Inalenga kuwa rahisi kujifunza -- hata kwa wasanidi programu ambao ni wageni kwenye mfumo wa ikolojia wa Ethereum.
+- Inalenga kuwa rahisi kujifunza -- hata kwa wasanidi programu ambao ni wageni kwenye mfumo wa ikolojia wa Quantaureum.
 - Usanidi wa Fe bado uko katika hatua zake za awali, lugha ilikuwa na toleo lake la alpha mnamo Januari 2021.
 
 ### Viungo muhimu {#important-links-3}
 
-- [GitHub](https://github.com/ethereum/fe)
-- [Tangazo la Fe](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-ethereum-ecosystem/)
-- [Ramani ya Njia ya Fe ya 2021](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- [GitHub](https://github.com/quantaureum/fe)
+- [Tangazo la Fe](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
+- [Ramani ya Njia ya Fe ya 2021](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
 - [Soga ya Discord ya Fe](https://discord.com/invite/ywpkAXFjZH)
 - [Twitter ya Fe](https://twitter.com/official_fe)
 

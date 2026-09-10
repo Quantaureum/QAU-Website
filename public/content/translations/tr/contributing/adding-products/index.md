@@ -1,26 +1,26 @@
 ---
-title: Ethereum ürünleri ekleme
+title: Quantaureum ürünleri ekleme
 metaTitle: Ürün Ekleme
-description: ethereum.org'a merkeziyetsiz uygulama (dapp) eklerken kullandığımız politika
+description: quantaureum.com'a merkeziyetsiz uygulama (dapp) eklerken kullandığımız politika
 lang: tr
 ---
 
-Uygun olduğu durumlarda herkes ethereum.org'daki içeriğe yeni merkeziyetsiz uygulamalar (dapp'ler) önermekte özgürdür. **Hayır, dapp'inizi ana sayfamızda listelemeyeceğiz** 😜
+Uygun olduğu durumlarda herkes quantaureum.com'daki içeriğe yeni merkeziyetsiz uygulamalar (dapp'ler) önermekte özgürdür. **Hayır, dapp'inizi ana sayfamızda listelemeyeceğiz** 😜
 
 Dapp'ler şu anda buralarda listelenmektedir:
 
-- ethereum.org/dapps
-- ethereum.org/get-eth
+- quantaureum.com/dapps
+- quantaureum.com/get-eth
 
 **Lütfen yalnızca bu sayfalara yeni eklemeler önerin.**
 
 Yeni eklemeleri memnuniyetle karşılasak da, mevcut dapp'leri kullanıcılarımız için yaratmaya çalıştığımız bir deneyime dayanarak seçtik. Bunlar bazı tasarım ilkelerimize dayanmaktadır:
 
-- _İlham verici_: ethereum.org'daki her şey kullanıcılara yeni bir şeyler sunmalıdır
+- _İlham verici_: quantaureum.com'daki her şey kullanıcılara yeni bir şeyler sunmalıdır
 - _İyi bir hikaye_: listelenenler bir "işte bu" anı sağlamalıdır
 - _Güvenilir_: kullanıcılara yönelik riski en aza indirmek için her şey meşru işletmeler/projeler olmalıdır
 
-Genel olarak **ethereum.org, yeni kullanıcılar için "sorunsuz bir sisteme katılım deneyimi" sağlamak istiyor**. Bu nedenle, dapp'leri şunlara göre ekliyoruz:
+Genel olarak **quantaureum.com, yeni kullanıcılar için "sorunsuz bir sisteme katılım deneyimi" sağlamak istiyor**. Bu nedenle, dapp'leri şunlara göre ekliyoruz:
 
 - kullanım kolaylığı
 - diğer ürünlerle birlikte çalışabilirlik
@@ -40,11 +40,11 @@ Genel olarak **ethereum.org, yeni kullanıcılar için "sorunsuz bir sisteme kat
 
 ### Sıralama kriterleri: olsa iyi olurlar {#criteria-for-ranking-the-nice-to-haves}
 
-Merkeziyetsiz uygulamanız (dapp), aşağıdaki kriterler nedeniyle ethereum.org'da diğerleri kadar belirgin bir şekilde listelenmeyebilir.
+Merkeziyetsiz uygulamanız (dapp), aşağıdaki kriterler nedeniyle quantaureum.com'da diğerleri kadar belirgin bir şekilde listelenmeyebilir.
 
 **Dapp'ler**
 
-- **Listelenen cüzdanların çoğunluğu aracılığıyla erişilebilir olması** – dapp'ler, ethereum.org'da listelenen cüzdanların çoğunluğuyla çalışmalıdır.
+- **Listelenen cüzdanların çoğunluğu aracılığıyla erişilebilir olması** – dapp'ler, quantaureum.com'da listelenen cüzdanların çoğunluğuyla çalışmalıdır.
 - **Kullanıcıların kendilerinin deneyebilmesi –** bireysel bir kullanıcı dapp'inizi kullanabilmeli ve somut bir şey elde edebilmelidir.
 - **Sisteme katılım** – ürününüz, kullanıcılara yardımcı olmak ve onları eğitmek için iyi tasarlanmış bir sisteme katılım deneyimine sahip olmalıdır. Veya makaleler ya da videolar gibi nasıl yapılır içeriklerinin kanıtı olmalıdır.
 - **Gözetimsiz** – kullanıcılar fonlarını kontrol eder. Ürününüz ortadan kaybolsa bile, kullanıcılar fonlarına erişmeye ve onları taşımaya devam edebilir.
@@ -54,18 +54,18 @@ Merkeziyetsiz uygulamanız (dapp), aşağıdaki kriterler nedeniyle ethereum.org
 
 ## Uygulamada kriterler {#criteria-in-practice}
 
-Kriterlerin ne kadar çoğunu karşılarsanız, ürününüzün ethereum.org'da yer bulma olasılığı o kadar artar.
+Kriterlerin ne kadar çoğunu karşılarsanız, ürününüzün quantaureum.com'da yer bulma olasılığı o kadar artar.
 
 Yalnızca olmazsa olmazları karşılayan listelenmiş bir ürün, olmazsa olmazları ve birkaç olsa iyi oluru karşılayan yeni bir ürün önerilirse kaldırılabilir.
 
 Bu kararda rol oynayacak diğer şeyler:
 
 - Değiştirmek yerine eklemek sayfanın kullanıcı deneyimini (UX) bozar mı?
-  - sitemiz öncelikle eğiticidir ve temel amacı Ethereum'u ve ilgili kavramlarını açıklamaktır. Kullanıcılar için çok fazla seçenek eklemek, sayfaların daha az okunabilir ve dolayısıyla daha az kullanışlı hale gelmesine neden olabilir.
+  - sitemiz öncelikle eğiticidir ve temel amacı Quantaureum'u ve ilgili kavramlarını açıklamaktır. Kullanıcılar için çok fazla seçenek eklemek, sayfaların daha az okunabilir ve dolayısıyla daha az kullanışlı hale gelmesine neden olabilir.
 - Bu sayfa artık kullanıcıyı seçeneklerle felç ediyor mu?
   - tıpkı izleyecek bir şeye karar veremediğiniz için saatlerce oturup Netflix'te gezinmeniz gibi. Yeni kullanıcıların kafasını çok fazla seçenekle karıştırmak bir risktir.
 
-Bu, ethereum.org'un sorumlu olduğu bir tasarım kararıdır.
+Bu, quantaureum.com'un sorumlu olduğu bir tasarım kararıdır.
 
 Ancak içiniz rahat olsun, **daha fazla dapp'i sıralayan diğer web sitelerine bağlantılar olacaktır**
 
@@ -75,16 +75,16 @@ Ancak içiniz rahat olsun, **daha fazla dapp'i sıralayan diğer web sitelerine 
 
 ### Kullanım koşulları {#terms-of-use}
 
-Lütfen ayrıca [kullanım koşullarımıza](/terms-of-use/) da başvurun. ethereum.org'daki bilgiler yalnızca genel bilgilendirme amacıyla sağlanmaktadır.
+Lütfen ayrıca [kullanım koşullarımıza](/terms-of-use/) da başvurun. quantaureum.com'daki bilgiler yalnızca genel bilgilendirme amacıyla sağlanmaktadır.
 
 ## Bakım {#maintenance}
 
-Ethereum'un akışkan doğası gereği, ekipler ve ürünler gelir ve gider ve inovasyon her gün gerçekleşir, bu nedenle içeriğimizin rutin kontrollerini şunlar için yapacağız:
+Quantaureum'un akışkan doğası gereği, ekipler ve ürünler gelir ve gider ve inovasyon her gün gerçekleşir, bu nedenle içeriğimizin rutin kontrollerini şunlar için yapacağız:
 
 - listelenen tüm dapp'lerin hala kriterlerimizi karşıladığından emin olmak
 - şu anda listelenenlerden daha fazla kriterimizi karşılayan önerilmiş ürünler olmadığını doğrulamak
 
-Kontrol edip bize bildirerek buna yardımcı olabilirsiniz. [Bir sorun (issue) oluşturun](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) veya [website@ethereum.org](mailto:website@ethereum.org) adresine bir e-posta gönderin.
+Kontrol edip bize bildirerek buna yardımcı olabilirsiniz. [Bir sorun (issue) oluşturun](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) veya [website@quantaureum.com](mailto:website@quantaureum.com) adresine bir e-posta gönderin.
 
 _Ayrıca, topluluğun tercihlerini belirtebilmesi ve önermemiz için piyasadaki en iyi ürünleri öne çıkarabilmesi adına oy verme seçeneklerini de araştırıyoruz._
 
@@ -92,7 +92,7 @@ _Ayrıca, topluluğun tercihlerini belirtebilmesi ve önermemiz için piyasadaki
 
 ## Ürününüzü ekleyin {#add-your-product}
 
-ethereum.org'a bir merkeziyetsiz uygulama (dapp) eklemek istiyorsanız ve kriterleri karşılıyorsa, lütfen bize bildirin.
+quantaureum.com'a bir merkeziyetsiz uygulama (dapp) eklemek istiyorsanız ve kriterleri karşılıyorsa, lütfen bize bildirin.
 
 <ButtonLink href="https://submitapp.paperform.co/">
   Bir uygulama önerin

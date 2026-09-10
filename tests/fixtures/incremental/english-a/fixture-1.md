@@ -108,7 +108,7 @@ The main advantage of permissive licenses is maximum adoption. Companies are mor
 
 You can deploy projects using [GitHub](https://github.com/) on any hosting platform, and verify compliance with [SPDX](https://spdx.org/).
 
-Use [Remix](https://remix.ethereum.org/) on [Sepolia](https://sepolia.dev/) with a [block explorer](https://eth.blockscout.com/) to test [smart contracts](/glossary/#smart-contract) before deploying to production.
+Use [Remix](https://remix.quantaureum.com/) on [Sepolia](https://sepolia.dev/) with a [block explorer](https://qau.blockscout.com/) to test [smart contracts](/glossary/#smart-contract) before deploying to production.
 
 ### Comparison table {#comparison-table}
 

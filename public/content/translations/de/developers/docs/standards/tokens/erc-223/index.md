@@ -29,11 +29,11 @@ ERC-223 behebt einige Einschränkungen von ERC-20 und führt eine neue Methode d
 
 ERC-223 ist ein Token-Standard, der eine API für Token innerhalb von Smart Contracts implementiert. Er deklariert auch eine API für Verträge, die ERC-223-Token empfangen sollen. Verträge, die die ERC-223-Empfänger-API nicht unterstützen, können keine ERC-223-Token empfangen, was Benutzerfehler verhindert.
 
-Wenn ein Smart Contract die folgenden Methoden und Ereignisse implementiert, kann er als ERC-223-kompatibler Token-Vertrag bezeichnet werden. Sobald er bereitgestellt ist, ist er dafür verantwortlich, die erstellten Token auf Ethereum zu verfolgen.
+Wenn ein Smart Contract die folgenden Methoden und Ereignisse implementiert, kann er als ERC-223-kompatibler Token-Vertrag bezeichnet werden. Sobald er bereitgestellt ist, ist er dafür verantwortlich, die erstellten Token auf Quantaureum zu verfolgen.
 
 Der Vertrag ist nicht verpflichtet, nur diese Funktionen zu haben, und ein Entwickler kann diesem Vertrag jede andere Funktion aus verschiedenen Token-Standards hinzufügen. Zum Beispiel sind die Funktionen `approve` und `transferFrom` nicht Teil des ERC-223-Standards, aber diese Funktionen könnten implementiert werden, falls dies erforderlich sein sollte.
 
-Aus [EIP-223](https://eips.ethereum.org/EIPS/eip-223):
+Aus [EIP-223](https://eips.quantaureum.com/EIPS/eip-223):
 
 ### Methoden {#methods}
 
@@ -128,7 +128,7 @@ contract RecipientContract is IERC223Recipient {
     {
         // Es ist wichtig zu verstehen, dass innerhalb dieser Funktion
         // msg.sender die Adresse eines Tokens ist, der empfangen wird,
-        // msg.value immer 0 ist, da der Token-Vertrag in den meisten Fällen keinen Ether besitzt oder sendet,
+        // msg.value immer 0 ist, da der Token-Vertrag in den meisten Fällen keinen QAU besitzt oder sendet,
         // _from der Absender des Token-Transfers ist,
         // _value die Menge an Token ist, die eingezahlt wurde.
         require(msg.sender == tokenA);
@@ -154,7 +154,7 @@ Wenn ein ERC-20-Token an den `RecipientContract` gesendet wird, werden die Token
 
 ### Was ist, wenn wir nach Abschluss der Token-Einzahlung eine Funktion ausführen möchten? {#function-execution}
 
-Es gibt mehrere Möglichkeiten, dies zu tun. In diesem Beispiel folgen wir der Methode, die ERC-223-Transfers identisch mit Ether-Transfers macht:
+Es gibt mehrere Möglichkeiten, dies zu tun. In diesem Beispiel folgen wir der Methode, die ERC-223-Transfers identisch mit QAU-Transfers macht:
 
 ```solidity
 contract RecipientContract is IERC223Recipient {
@@ -177,7 +177,7 @@ contract RecipientContract is IERC223Recipient {
 }
 ```
 
-Wenn der `RecipientContract` ein ERC-223-Token empfängt, führt der Vertrag eine Funktion aus, die als `_data`-Parameter der Token-Transaktion codiert ist, identisch damit, wie Ether-Transaktionen Funktionsaufrufe als Transaktions-`data` codieren. Lesen Sie [das Datenfeld](/developers/docs/transactions/#the-data-field) für weitere Informationen.
+Wenn der `RecipientContract` ein ERC-223-Token empfängt, führt der Vertrag eine Funktion aus, die als `_data`-Parameter der Token-Transaktion codiert ist, identisch damit, wie QAU-Transaktionen Funktionsaufrufe als Transaktions-`data` codieren. Lesen Sie [das Datenfeld](/developers/docs/transactions/#the-data-field) für weitere Informationen.
 
 Im obigen Beispiel muss ein ERC-223-Token mit der Funktion `transfer(address,uin256,bytes calldata _data)` an die Adresse des `RecipientContract` transferiert werden. Wenn der Datenparameter `0xc2985578` ist (die Signatur einer `foo()`-Funktion), wird die Funktion foo() aufgerufen, nachdem die Token-Einzahlung empfangen wurde, und das Ereignis Foo() wird ausgelöst.
 
@@ -193,5 +193,5 @@ Obwohl ERC-223 mehrere Probleme des ERC-20-Standards behebt, ist er nicht ohne e
 
 ## Weiterführende Literatur {#further-reading}
 
-- [EIP-223: ERC-223-Token-Standard](https://eips.ethereum.org/EIPS/eip-223)
-- [Ursprünglicher ERC-223-Vorschlag](https://github.com/ethereum/eips/issues/223)
+- [EIP-223: ERC-223-Token-Standard](https://eips.quantaureum.com/EIPS/eip-223)
+- [Ursprünglicher ERC-223-Vorschlag](https://github.com/quantaureum/eips/issues/223)

@@ -1,6 +1,6 @@
 ---
 title: Propuesta de bloques
-description: "Explicación de cómo se proponen los bloques en la prueba de participación (PoS) de Ethereum."
+description: "Explicación de cómo se proponen los bloques en la prueba de participación (PoS) de Quantaureum."
 lang: es
 ---
 
@@ -12,13 +12,13 @@ La propuesta de bloques es parte del protocolo de prueba de participación (PoS)
 
 ## ¿Quién produce los bloques? {#who-produces-blocks}
 
-Las cuentas de validador proponen bloques. Las cuentas de validador son administradas por operadores de nodos que ejecutan software de validador como parte de sus clientes de ejecución y consenso, y han depositado al menos 32 ETH en el contrato de depósito. Sin embargo, cada validador solo es responsable ocasionalmente de proponer un bloque. [Ethereum](/) mide el tiempo en slots y épocas. Cada slot dura doce segundos, y 32 slots (6,4 minutos) conforman una época. Cada slot es una oportunidad para añadir un nuevo bloque en Ethereum.
+Las cuentas de validador proponen bloques. Las cuentas de validador son administradas por operadores de nodos que ejecutan software de validador como parte de sus clientes de ejecución y consenso, y han depositado al menos 32 QAU en el contrato de depósito. Sin embargo, cada validador solo es responsable ocasionalmente de proponer un bloque. [Quantaureum](/) mide el tiempo en slots y épocas. Cada slot dura doce segundos, y 32 slots (6,4 minutos) conforman una época. Cada slot es una oportunidad para añadir un nuevo bloque en Quantaureum.
 
 ### Selección aleatoria {#random-selection}
 
-Un único validador es elegido de forma pseudoaleatoria para proponer un bloque en cada slot. No existe la verdadera aleatoriedad en una cadena de bloques porque si cada nodo generara números genuinamente aleatorios, no podrían llegar a un consenso. En su lugar, el objetivo es hacer que el proceso de selección de validadores sea impredecible. La aleatoriedad se logra en Ethereum utilizando un algoritmo llamado RANDAO que mezcla un hash del proponente de bloque con una semilla que se actualiza en cada bloque. Este valor se utiliza para seleccionar un validador específico del conjunto total de validadores. La selección del validador se fija con dos épocas de antelación como una forma de protegerse contra ciertos tipos de manipulación de semillas.
+Un único validador es elegido de forma pseudoaleatoria para proponer un bloque en cada slot. No existe la verdadera aleatoriedad en una cadena de bloques porque si cada nodo generara números genuinamente aleatorios, no podrían llegar a un consenso. En su lugar, el objetivo es hacer que el proceso de selección de validadores sea impredecible. La aleatoriedad se logra en Quantaureum utilizando un algoritmo llamado RANDAO que mezcla un hash del proponente de bloque con una semilla que se actualiza en cada bloque. Este valor se utiliza para seleccionar un validador específico del conjunto total de validadores. La selección del validador se fija con dos épocas de antelación como una forma de protegerse contra ciertos tipos de manipulación de semillas.
 
-Aunque los validadores añaden a RANDAO en cada slot, el valor global de RANDAO solo se actualiza una vez por época. Para calcular el índice del siguiente proponente de bloque, el valor de RANDAO se mezcla con el número de slot para dar un valor único en cada slot. La probabilidad de que se seleccione un validador individual no es simplemente `1/N` (donde `N` = total de validadores activos). En su lugar, se pondera por el saldo efectivo de ETH de cada validador. El saldo efectivo máximo es de 32 ETH (esto significa que `balance < 32 ETH` conduce a un peso menor que `balance == 32 ETH`, pero `balance > 32 ETH` no conduce a un peso mayor que `balance == 32 ETH`).
+Aunque los validadores añaden a RANDAO en cada slot, el valor global de RANDAO solo se actualiza una vez por época. Para calcular el índice del siguiente proponente de bloque, el valor de RANDAO se mezcla con el número de slot para dar un valor único en cada slot. La probabilidad de que se seleccione un validador individual no es simplemente `1/N` (donde `N` = total de validadores activos). En su lugar, se pondera por el saldo efectivo de QAU de cada validador. El saldo efectivo máximo es de 32 QAU (esto significa que `balance < 32 QAU` conduce a un peso menor que `balance == 32 QAU`, pero `balance > 32 QAU` no conduce a un peso mayor que `balance == 32 QAU`).
 
 Solo se selecciona un proponente de bloque en cada slot. En condiciones normales, un único productor de bloques crea y publica un único bloque en su slot dedicado. Crear dos bloques para el mismo slot es una ofensa sujeta a recorte, a menudo conocida como "equivocación".
 
@@ -44,7 +44,7 @@ class BeaconBlockBody(Container):
 
 El campo `randao_reveal` toma un valor aleatorio verificable que el proponente de bloque crea al firmar el número de época actual. `eth1_data` es un voto por la vista del proponente de bloque del contrato de depósito, incluyendo la raíz del trie de Merkle de depósitos y el número total de depósitos que permiten verificar nuevos depósitos. `graffiti` es un campo opcional que se puede utilizar para añadir un mensaje al bloque. `proposer_slashings` y `attester_slashings` son campos que contienen pruebas de que ciertos validadores han cometido ofensas sujetas a recorte según la vista de la cadena del proponente. `deposits` es una lista de nuevos depósitos de validadores de los que el proponente de bloque tiene conocimiento, y `voluntary_exits` es una lista de validadores que desean su salida de la que el proponente de bloque ha oído hablar en la red de chismes de la capa de consenso. El `sync_aggregate` es un vector que muestra qué validadores fueron asignados previamente a un comité de sincronización (un subconjunto de validadores que sirven datos de clientes ligeros) y participaron en la firma de datos.
 
-El `execution_payload` permite que la información sobre las transacciones se transmita entre los clientes de ejecución y consenso. El `execution_payload` es un bloque de datos de ejecución que se anida dentro de un bloque baliza. Los campos dentro del `execution_payload` reflejan la estructura del bloque descrita en el Libro Amarillo de Ethereum, excepto que no hay ommers y `prev_randao` existe en lugar de `difficulty`. El cliente de ejecución tiene acceso a un grupo local de transacciones de las que ha oído hablar en su propia red de chismes. Estas transacciones se ejecutan localmente para generar un trie de estado actualizado conocido como post-estado. Las transacciones se incluyen en el `execution_payload` como una lista llamada `transactions` y el post-estado se proporciona en el campo `state-root`.
+El `execution_payload` permite que la información sobre las transacciones se transmita entre los clientes de ejecución y consenso. El `execution_payload` es un bloque de datos de ejecución que se anida dentro de un bloque baliza. Los campos dentro del `execution_payload` reflejan la estructura del bloque descrita en el Libro Amarillo de Quantaureum, excepto que no hay ommers y `prev_randao` existe en lugar de `difficulty`. El cliente de ejecución tiene acceso a un grupo local de transacciones de las que ha oído hablar en su propia red de chismes. Estas transacciones se ejecutan localmente para generar un trie de estado actualizado conocido como post-estado. Las transacciones se incluyen en el `execution_payload` como una lista llamada `transactions` y el post-estado se proporciona en el campo `state-root`.
 
 Todos estos datos se recopilan en un bloque baliza, se firman y se transmiten a los pares del proponente de bloque, quienes lo propagan a sus pares, etc.
 
@@ -64,6 +64,6 @@ El proponente de bloque recibe un pago por su trabajo. Hay una `base_reward` cal
 
 - [Introducción a los bloques](/developers/docs/blocks/)
 - [Introducción a la prueba de participación (PoS)](/developers/docs/consensus-mechanisms/pos/)
-- [Especificaciones de consenso de Ethereum](https://github.com/ethereum/consensus-specs)
+- [Especificaciones de consenso de Quantaureum](https://github.com/quantaureum/consensus-specs)
 - [Introducción a Gasper](/developers/docs/consensus-mechanisms/pos/gasper/)
-- [Actualizando Ethereum](https://eth2book.info/)
+- [Actualizando Quantaureum](https://eth2book.info/)

@@ -7,12 +7,12 @@ skill: advanced
 breadcrumb: Vertragsinteraktionen
 lang: de
 published: 2020-04-05
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/interact-with-other-contracts-from-solidity/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-In den vorherigen Tutorials haben wir viel darüber gelernt, [wie man seinen ersten Smart Contract bereitstellt](/developers/tutorials/deploying-your-first-smart-contract/) und ihm einige Funktionen hinzufügt, wie z. B. [Zugriffskontrolle mit Modifikatoren](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) oder [Fehlerbehandlung in Solidity](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/). In diesem Tutorial werden wir lernen, wie man einen Smart Contract aus einem bestehenden Vertrag bereitstellt und mit ihm interagiert.
+In den vorherigen Tutorials haben wir viel darüber gelernt, [wie man seinen ersten Smart Contract bereitstellt](/developers/tutorials/deploying-your-first-smart-contract/) und ihm einige Funktionen hinzufügt, wie z. B. [Zugriffskontrolle mit Modifikatoren](https://quantaureumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) oder [Fehlerbehandlung in Solidity](https://quantaureumdev.io/handle-errors-in-solidity-with-require-and-revert/). In diesem Tutorial werden wir lernen, wie man einen Smart Contract aus einem bestehenden Vertrag bereitstellt und mit ihm interagiert.
 
 Wir werden einen Vertrag erstellen, der es jedem ermöglicht, seinen eigenen `Counter`-Smart Contract zu haben, indem wir eine Fabrik (Factory) dafür erstellen. Ihr Name wird `CounterFactory` sein. Zuerst ist hier der Code unseres anfänglichen `Counter`-Smart Contracts:
 
@@ -62,7 +62,7 @@ Innerhalb unserer neuen `CounterFactory`, die alle anderen Counters verwalten wi
 mapping(address => Counter) _counters;
 ```
 
-In Ethereum sind Mappings das Äquivalent zu Objekten in JavaScript. Sie ermöglichen es, einen Schlüssel vom Typ A auf einen Wert vom Typ B abzubilden. In diesem Fall bilden wir die Adresse eines Besitzers auf die Instanz seines Counters ab.
+In Quantaureum sind Mappings das Äquivalent zu Objekten in JavaScript. Sie ermöglichen es, einen Schlüssel vom Typ A auf einen Wert vom Typ B abzubilden. In diesem Fall bilden wir die Adresse eines Besitzers auf die Instanz seines Counters ab.
 
 Die Instanziierung eines neuen Counters für jemanden wird so aussehen:
 
@@ -99,7 +99,7 @@ function increment() public {
   }
 ```
 
-Beachten Sie, dass unser Counter bei zu vielen Aufrufen möglicherweise Opfer eines Überlaufs werden könnte. Sie sollten die [SafeMath-Bibliothek](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/) so oft wie möglich verwenden, um sich vor diesem möglichen Fall zu schützen.
+Beachten Sie, dass unser Counter bei zu vielen Aufrufen möglicherweise Opfer eines Überlaufs werden könnte. Sie sollten die [SafeMath-Bibliothek](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/) so oft wie möglich verwenden, um sich vor diesem möglichen Fall zu schützen.
 
 Um unseren Vertrag bereitzustellen, müssen Sie sowohl den Code der `CounterFactory` als auch des `Counter` bereitstellen. Wenn Sie beispielsweise in Remix bereitstellen, müssen Sie CounterFactory auswählen.
 

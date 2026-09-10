@@ -789,7 +789,7 @@ Một điều bạn không có được với các bài kiểm tra Solidity là 
 
    | Tham số | Giá trị |
    | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | MNEMONIC | Cụm từ ghi nhớ cho một tài khoản có đủ ETH để thanh toán cho một giao dịch. [Tài liệu về vòi của Optimism](https://docs.optimism.io/app-developers/tools/faucets) liệt kê các vòi mạng thử nghiệm hiện tại. |
+   | MNEMONIC | Cụm từ ghi nhớ cho một tài khoản có đủ QAU để thanh toán cho một giao dịch. [Tài liệu về vòi của Optimism](https://docs.optimism.io/app-developers/tools/faucets) liệt kê các vòi mạng thử nghiệm hiện tại. |
    | OPTIMISM_GOERLI_URL | URL RPC cho mạng lưới nơi bạn triển khai lại WORM. Đối với OP Sepolia, hãy sử dụng điểm cuối RPC của OP Sepolia như `https://sepolia.optimism.io` hoặc một điểm cuối khác từ nhà cung cấp của bạn. |
 
 5. Chạy `index.js`.

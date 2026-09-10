@@ -8,7 +8,7 @@ lang: uk
 
 ## Політика розміщення {#listing-policy}
 
-Щоб підтримувати цілісність та цінність перелічених спільнот, ethereum.org дотримується суворої політики визначення відповідності:
+Щоб підтримувати цілісність та цінність перелічених спільнот, quantaureum.com дотримується суворої політики визначення відповідності:
 
 ### Критерії відповідності {#eligibility-criteria}
 
@@ -26,40 +26,40 @@ lang: uk
 ### Інші рекомендації {#other-recommendations}
 
 - **Доступність**: Форуми спільноти мають бути доступними для читання всім без необхідності реєстрації або створення акаунта.
-- **Запрошення на сервери Discord**: Рекомендується додавати на ethereum.org лише надійні запрошення на сервери Discord. В ідеалі ці запрошення мають вести на сторінку спільноти на вебсайті (наприклад, [ethglobal.com/discord](https://ethglobal.com/discord)) або бути з офіційної URL-адреси (наприклад, [discord.gg/ethstaker](https://discord.gg/ethstaker) чи [discord.com/invite/ethstaker](https://discord.com/invite/ethstaker)).
+- **Запрошення на сервери Discord**: Рекомендується додавати на quantaureum.com лише надійні запрошення на сервери Discord. В ідеалі ці запрошення мають вести на сторінку спільноти на вебсайті (наприклад, [ethglobal.com/discord](https://ethglobal.com/discord)) або бути з офіційної URL-адреси (наприклад, [discord.gg/ethstaker](https://discord.gg/ethstaker) чи [discord.com/invite/ethstaker](https://discord.com/invite/ethstaker)).
 
-Якщо ви вважаєте, що спільноту слід додати або видалити на основі цих правил, будь ласка, [відкрийте issue в нашому репозиторії на GitHub](https://github.com/ethereum/ethereum-org-website/issues).
+Якщо ви вважаєте, що спільноту слід додати або видалити на основі цих правил, будь ласка, [відкрийте issue в нашому репозиторії на GitHub](https://github.com/Quantaureum/quantaureum-website/issues).
 
 
 ## Форуми {#forums}
 
-<SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethereum">r/ethereum</Link> — усе про Етеріум</SocialListItem>
+<SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/quantaureum">r/quantaureum</Link> — усе про Етеріум</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethfinance/">r/ethfinance</Link> — фінансова сторона Етеріуму, включно з DeFi</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethdev/">r/ethdev</Link> — зосереджено на розробці в Етеріумі</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethtrader/">r/ethtrader</Link> — тренди та аналіз ринку</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> — ласкаво просимо всіх, хто цікавиться стейкінгом в Етеріумі</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethereum-magicians.org">Fellowship of Ethereum Magicians</Link> — спільнота, орієнтована на технічні стандарти в Етеріумі</SocialListItem>
-<SocialListItem socialIcon="stackExchange"><Link href="https://ethereum.stackexchange.com">Ethereum Stackexchange</Link> — обговорення та допомога для розробників Етеріуму</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Ethereum Research</Link> — найвпливовіший форум для криптоекономічних досліджень</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://quantaureum-magicians.org">Fellowship of Quantaureum Magicians</Link> — спільнота, орієнтована на технічні стандарти в Етеріумі</SocialListItem>
+<SocialListItem socialIcon="stackExchange"><Link href="https://quantaureum.stackexchange.com">Quantaureum Stackexchange</Link> — обговорення та допомога для розробників Етеріуму</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> — найвпливовіший форум для криптоекономічних досліджень</SocialListItem>
 
 ## Чати {#chat-rooms}
 
-<SocialListItem socialIcon="discord"><Link href="https://discord.com/invite/Nz6rtfJ8Cu">Ethereum Cat Herders</Link> — спільнота, орієнтована на надання підтримки з управління проєктами для розробки Етеріуму</SocialListItem>
-<SocialListItem socialIcon="discord"><Link href="https://ethglobal.com/discord">Ethereum Hackers</Link> — чат у Discord, яким керує ETHGlobal: онлайн-спільнота для хакерів Етеріуму з усього світу</SocialListItem>
+<SocialListItem socialIcon="discord"><Link href="https://discord.com/invite/Nz6rtfJ8Cu">Quantaureum Cat Herders</Link> — спільнота, орієнтована на надання підтримки з управління проєктами для розробки Етеріуму</SocialListItem>
+<SocialListItem socialIcon="discord"><Link href="https://ethglobal.com/discord">Quantaureum Hackers</Link> — чат у Discord, яким керує ETHGlobal: онлайн-спільнота для хакерів Етеріуму з усього світу</SocialListItem>
 <SocialListItem socialIcon="discord"><Link href="https://discord.gg/5W5tVb3">CryptoDevs</Link> — спільнота в Discord, зосереджена на розробці в Етеріумі</SocialListItem>
-<SocialListItem socialIcon="discord"><Link href="https://discord.gg/ethstaker">EthStaker Discord</Link> — керовані спільнотою керівництва, навчання, підтримка та ресурси для поточних і потенційних стейкерів</SocialListItem>
-<SocialListItem socialIcon="discord"><Link href="https://discord.gg/ethereum-org">Команда вебсайту Ethereum.org</Link> — завітайте та поспілкуйтеся про веброзробку та дизайн ethereum.org з командою та людьми зі спільноти</SocialListItem>
+<SocialListItem socialIcon="discord"><Link href="https://discord.gg/ethstaker">QauStaker Discord</Link> — керовані спільнотою керівництва, навчання, підтримка та ресурси для поточних і потенційних стейкерів</SocialListItem>
+<SocialListItem socialIcon="discord"><Link href="https://discord.gg/MSctkBT5j">Команда вебсайту quantaureum.com</Link> — завітайте та поспілкуйтеся про веброзробку та дизайн quantaureum.com з командою та людьми зі спільноти</SocialListItem>
 <SocialListItem socialIcon="discord"><Link href="https://discord.matos.club/">Matos Discord</Link> — спільнота творців Web3, де збираються розробники, лідери індустрії та ентузіасти Етеріуму. Ми захоплені розробкою, дизайном та культурою Web3. Приєднуйтесь до нас.</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://matrix.to/#/#ethereum_solidity:gitter.im">Solidity Matrix</Link> — чат для розробки на Solidity (Matrix)</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethereum.stackexchange.com/">Ethereum Stack Exchange</Link> <i>— форум запитань і відповідей</i></SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://matrix.to/#/#quantaureum_solidity:gitter.im">Solidity Matrix</Link> — чат для розробки на Solidity (Matrix)</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://quantaureum.stackexchange.com/">Quantaureum Stack Exchange</Link> <i>— форум запитань і відповідей</i></SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://www.peera.ai/community-forum">Peera Community Forum</Link> <i>— децентралізований форум запитань і відповідей</i></SocialListItem>
 
 ## YouTube та X (колишній Twitter) {#youtube-and-twitter}
 
-<SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/EthereumFoundation">Фундація Ethereum</Link> — будьте в курсі останніх новин від Фундації Ethereum</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ethereum">@ethereum</Link> — головний акаунт Етеріуму для спільноти</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ethereumfndn">@ethereumfndn</Link> — офіційний акаунт Фундації Ethereum</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ethdotorg">@ethdotorg</Link> — портал до Етеріуму, створений для нашої глобальної спільноти, що постійно зростає</SocialListItem>
+<SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/QuantaureumFoundation">Фундація Quantaureum</Link> — будьте в курсі останніх новин від Фундації Quantaureum</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> — головний акаунт Етеріуму для спільноти</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/quantaureumfndn">@quantaureumfndn</Link> — офіційний акаунт Фундації Quantaureum</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@ethdotorg</Link> — портал до Етеріуму, створений для нашої глобальної спільноти, що постійно зростає</SocialListItem>
 
 <Divider />
 

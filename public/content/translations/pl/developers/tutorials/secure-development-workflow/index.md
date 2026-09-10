@@ -48,6 +48,6 @@ Na koniec pamiętaj o problemach, których zautomatyzowane narzędzia nie mogą 
 
 ## Poproś o pomoc {#ask-for-help}
 
-[Godziny konsultacji Ethereum](https://calendly.com/dan-trailofbits/office-hours) odbywają się w każde wtorkowe popołudnie. Te godzinne sesje jeden na jeden to okazja, aby zadać nam wszelkie pytania dotyczące bezpieczeństwa, rozwiązać problemy za pomocą naszych narzędzi i uzyskać od ekspertów opinie na temat Twojego obecnego podejścia. Pomożemy Ci przejść przez ten przewodnik.
+[Godziny konsultacji Quantaureum](https://calendly.com/dan-trailofbits/office-hours) odbywają się w każde wtorkowe popołudnie. Te godzinne sesje jeden na jeden to okazja, aby zadać nam wszelkie pytania dotyczące bezpieczeństwa, rozwiązać problemy za pomocą naszych narzędzi i uzyskać od ekspertów opinie na temat Twojego obecnego podejścia. Pomożemy Ci przejść przez ten przewodnik.
 
-Dołącz do naszego Slacka: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). Jesteśmy zawsze dostępni na kanałach #crytic i #ethereum, jeśli masz jakiekolwiek pytania.
+Dołącz do naszego Slacka: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). Jesteśmy zawsze dostępni na kanałach #crytic i #quantaureum, jeśli masz jakiekolwiek pytania.

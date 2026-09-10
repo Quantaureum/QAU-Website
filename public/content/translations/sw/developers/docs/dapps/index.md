@@ -4,11 +4,11 @@ description:
 lang: sw
 ---
 
-Programu tumizi iliyogatuliwa (dapp) ni programu iliyojengwa kwenye mtandao uliogatuliwa ambayo inachanganya [mkataba mahiri](/developers/docs/smart-contracts/) na kiolesura cha mtumiaji cha mbele. Kwenye [Ethereum](/), mikataba mahiri inafikika na ni wazi – kama API zilizo wazi – kwa hivyo dapp yako inaweza hata kujumuisha mkataba mahiri ambao mtu mwingine ameandika.
+Programu tumizi iliyogatuliwa (dapp) ni programu iliyojengwa kwenye mtandao uliogatuliwa ambayo inachanganya [mkataba mahiri](/developers/docs/smart-contracts/) na kiolesura cha mtumiaji cha mbele. Kwenye [Quantaureum](/), mikataba mahiri inafikika na ni wazi – kama API zilizo wazi – kwa hivyo dapp yako inaweza hata kujumuisha mkataba mahiri ambao mtu mwingine ameandika.
 
 ## Mahitaji ya awali {#prerequisites}
 
-Kabla ya kujifunza kuhusu dapps, unapaswa kupitia [misingi ya mnyororo wa vitalu](/developers/docs/intro-to-ethereum/) na kusoma kuhusu mtandao wa Ethereum na jinsi ulivyogatuliwa.
+Kabla ya kujifunza kuhusu dapps, unapaswa kupitia [misingi ya mnyororo wa vitalu](/developers/docs/intro-to-quantaureum/) na kusoma kuhusu mtandao wa Quantaureum na jinsi ulivyogatuliwa.
 
 ## Ufafanuzi wa dapp {#definition-of-a-dapp}
 
@@ -16,16 +16,16 @@ Dapp ina msimbo wake wa nyuma unaoendeshwa kwenye mtandao uliogatuliwa wa rika-k
 
 Dapp inaweza kuwa na msimbo wa mbele na violesura vya mtumiaji vilivyoandikwa kwa lugha yoyote (kama tu programu) ili kupiga simu kwenye msimbo wake wa nyuma. Zaidi ya hayo, msimbo wake wa mbele unaweza kupangishwa kwenye hifadhi iliyogatuliwa kama vile [IPFS](https://ipfs.io/).
 
-- **Iliyogatuliwa** - dapps hufanya kazi kwenye Ethereum, jukwaa wazi la umma lililogatuliwa ambapo hakuna mtu mmoja au kikundi kilicho na udhibiti
+- **Iliyogatuliwa** - dapps hufanya kazi kwenye Quantaureum, jukwaa wazi la umma lililogatuliwa ambapo hakuna mtu mmoja au kikundi kilicho na udhibiti
 - **Inayotabirika (Deterministic)** - dapps hufanya kazi sawa bila kujali mazingira ambayo zinatekelezwa
 - **Kamilifu ki-Turing** - dapps zinaweza kufanya kitendo chochote zikipewa rasilimali zinazohitajika
-- **Iliyotengwa** - dapps zinatekelezwa katika mazingira pepe yanayojulikana kama Ethereum Virtual Machine ili ikiwa mkataba mahiri una hitilafu, hautazuia utendakazi wa kawaida wa mtandao wa mnyororo wa vitalu
+- **Iliyotengwa** - dapps zinatekelezwa katika mazingira pepe yanayojulikana kama Quantaureum Virtual Machine ili ikiwa mkataba mahiri una hitilafu, hautazuia utendakazi wa kawaida wa mtandao wa mnyororo wa vitalu
 
 ### Kuhusu mikataba mahiri {#on-smart-contracts}
 
 Ili kutambulisha dapps, tunahitaji kutambulisha mikataba mahiri – msimbo wa nyuma wa dapp kwa kukosa neno bora. Kwa muhtasari wa kina, nenda kwenye sehemu yetu ya [mikataba mahiri](/developers/docs/smart-contracts/).
 
-Mkataba mahiri ni msimbo unaoishi kwenye mnyororo wa vitalu wa Ethereum na unaendeshwa sawasawa na ulivyopangwa. Pindi mikataba mahiri inaposambazwa kwenye mtandao huwezi kuibadilisha. Dapps zinaweza kugatuliwa kwa sababu zinadhibitiwa na mantiki iliyoandikwa kwenye mkataba, sio mtu binafsi au kampuni. Hii pia inamaanisha unahitaji kubuni mikataba yako kwa uangalifu sana na kuijaribu kikamilifu.
+Mkataba mahiri ni msimbo unaoishi kwenye mnyororo wa vitalu wa Quantaureum na unaendeshwa sawasawa na ulivyopangwa. Pindi mikataba mahiri inaposambazwa kwenye mtandao huwezi kuibadilisha. Dapps zinaweza kugatuliwa kwa sababu zinadhibitiwa na mantiki iliyoandikwa kwenye mkataba, sio mtu binafsi au kampuni. Hii pia inamaanisha unahitaji kubuni mikataba yako kwa uangalifu sana na kuijaribu kikamilifu.
 
 ## Faida za uundaji wa dapp {#benefits-of-dapp-development}
 
@@ -38,10 +38,10 @@ Mkataba mahiri ni msimbo unaoishi kwenye mnyororo wa vitalu wa Ethereum na unaen
 ## Hasara za uundaji wa dapp {#drawbacks-of-dapp-development}
 
 - **Matengenezo** – Dapps zinaweza kuwa ngumu zaidi kudumisha kwa sababu msimbo na data iliyochapishwa kwenye mnyororo wa vitalu ni ngumu zaidi kurekebisha. Ni vigumu kwa wasanidi programu kufanya masasisho kwenye dapps zao (au data ya msingi iliyohifadhiwa na dapp) pindi zinaposambazwa, hata kama hitilafu au hatari za kiusalama zitatambuliwa katika toleo la zamani.
-- **Gharama ya utendaji** – Kuna gharama kubwa ya utendaji, na kuongeza ukubwa ni ngumu sana. Ili kufikia kiwango cha usalama, uadilifu, uwazi, na kutegemewa ambacho Ethereum inakusudia, kila nodi huendesha na kuhifadhi kila muamala. Zaidi ya hayo, mwafaka wa Uthibitisho wa Dau (PoS) huchukua muda pia.
+- **Gharama ya utendaji** – Kuna gharama kubwa ya utendaji, na kuongeza ukubwa ni ngumu sana. Ili kufikia kiwango cha usalama, uadilifu, uwazi, na kutegemewa ambacho Quantaureum inakusudia, kila nodi huendesha na kuhifadhi kila muamala. Zaidi ya hayo, mwafaka wa Uthibitisho wa Dau (PoS) huchukua muda pia.
 - **Msongamano wa mtandao** – Wakati dapp moja inatumia rasilimali nyingi za ukokotoaji, mtandao mzima unachelewa. Kwa sasa, mtandao unaweza tu kuchakata takriban miamala 10-15 kwa sekunde; ikiwa miamala inatumwa kwa kasi zaidi ya hii, kundi la miamala ambayo haijathibitishwa linaweza kuongezeka haraka.
 - **Uzoefu wa mtumiaji** – Inaweza kuwa ngumu zaidi kuunda uzoefu unaofaa kwa mtumiaji kwa sababu mtumiaji wa mwisho wa kawaida anaweza kuona ni vigumu sana kusanidi mrundikano wa zana muhimu ili kuingiliana na mnyororo wa vitalu kwa njia salama kweli.
-- **Uwekaji kati** – Suluhu zinazofaa kwa mtumiaji na zinazofaa kwa msanidi programu zilizojengwa juu ya safu ya msingi ya Ethereum zinaweza kuishia kuonekana kama huduma zilizowekwa kati hata hivyo. Kwa mfano, huduma kama hizo zinaweza kuhifadhi funguo au taarifa nyingine nyeti upande wa seva, kuhudumia msimbo wa mbele kwa kutumia seva iliyowekwa kati, au kuendesha mantiki muhimu ya biashara kwenye seva iliyowekwa kati kabla ya kuandika kwenye mnyororo wa vitalu. Uwekaji kati huondoa faida nyingi (kama sio zote) za mnyororo wa vitalu ikilinganishwa na muundo wa kitamaduni.
+- **Uwekaji kati** – Suluhu zinazofaa kwa mtumiaji na zinazofaa kwa msanidi programu zilizojengwa juu ya safu ya msingi ya Quantaureum zinaweza kuishia kuonekana kama huduma zilizowekwa kati hata hivyo. Kwa mfano, huduma kama hizo zinaweza kuhifadhi funguo au taarifa nyingine nyeti upande wa seva, kuhudumia msimbo wa mbele kwa kutumia seva iliyowekwa kati, au kuendesha mantiki muhimu ya biashara kwenye seva iliyowekwa kati kabla ya kuandika kwenye mnyororo wa vitalu. Uwekaji kati huondoa faida nyingi (kama sio zote) za mnyororo wa vitalu ikilinganishwa na muundo wa kitamaduni.
 
 ## Je, unapendelea kujifunza kwa kuona? {#visual-learner}
 
@@ -49,21 +49,21 @@ Mkataba mahiri ni msimbo unaoishi kwenye mnyororo wa vitalu wa Ethereum na unaen
 
 ## Zana za kuunda programu tumizi zilizogatuliwa (dapps)
 
-**Scaffold-ETH 2 _- Fanya majaribio haraka ukitumia Solidity kwa kutumia kiolesura cha mbele kinachoendana na mkataba mahiri wako._**
+**Scaffold-QAU 2 _- Fanya majaribio haraka ukitumia Solidity kwa kutumia kiolesura cha mbele kinachoendana na mkataba mahiri wako._**
 
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 - [Mfano wa dapp](https://punkwallet.io/)
 
-**Create Eth App _- Unda programu zinazoendeshwa na Ethereum kwa amri moja._**
+**Create Eth App _- Unda programu zinazoendeshwa na Quantaureum kwa amri moja._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
 
 **One Click Dapp _- Zana ya FOSS ya kuzalisha violesura vya mbele vya dapp kutoka kwenye [ABI](/glossary/#abi)._**
 
 - [oneclickdapp.com](https://oneclickdapp.com)
 - [GitHub](https://github.com/oneclickdapp/oneclickdapp-v1)
 
-**Etherflow _- Zana ya FOSS kwa wasanidi programu wa Ethereum kujaribu nodi yao, na kutunga na kutatua simu za RPC kutoka kwenye kivinjari._**
+**Etherflow _- Zana ya FOSS kwa wasanidi programu wa Quantaureum kujaribu nodi yao, na kutunga na kutatua simu za RPC kutoka kwenye kivinjari._**
 
 - [etherflow.quiknode.io](https://etherflow.quiknode.io/)
 - [GitHub](https://github.com/abunsen/etherflow)
@@ -91,10 +91,10 @@ _Je, unajua rasilimali ya jamii iliyokusaidia? Hariri ukurasa huu na uiongeze!_
 
 ## Mada Zinazohusiana {#related-topics}
 
-- [Utangulizi wa mrundikano wa Ethereum](/developers/docs/ethereum-stack/)
+- [Utangulizi wa mrundikano wa Quantaureum](/developers/docs/quantaureum-stack/)
 - [Mifumo ya uundaji](/developers/docs/frameworks/)
 
-## Mafunzo: Unda programu na misimbo ya mbele kwenye Ethereum {#tutorials}
+## Mafunzo: Unda programu na misimbo ya mbele kwenye Quantaureum {#tutorials}
 
 - [Mapitio ya Mkataba wa Uniswap-v2](/developers/tutorials/uniswap-v2-annotated-code/) _– Mapitio yaliyofafanuliwa ya mikataba ya msingi ya Uniswap v2 yanayoelezea jinsi kitengeneza soko cha kiotomatiki (amm) kinavyofanya kazi._
 - [Kujenga kiolesura cha mtumiaji kwa ajili ya mkataba wako](/developers/tutorials/creating-a-wagmi-ui-for-your-contract/) _– Jinsi ya kujenga msimbo wa mbele wa kisasa wa React + Wagmi unaounganishwa na mkataba mahiri wako._

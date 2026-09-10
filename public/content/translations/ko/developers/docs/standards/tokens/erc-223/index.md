@@ -29,11 +29,11 @@ ERC-223은 ERC-20의 일부 한계를 해결하고 토큰 컨트랙트와 토큰
 
 ERC-223은 스마트 컨트랙트 내에서 토큰을 위한 API를 구현하는 토큰 표준입니다. 또한 ERC-223 토큰을 수신하도록 설계된 컨트랙트를 위한 API도 선언합니다. ERC-223 수신자 API를 지원하지 않는 컨트랙트는 ERC-223 토큰을 받을 수 없으므로 사용자 오류를 방지합니다.
 
-스마트 컨트랙트가 다음 메서드와 이벤트를 구현하면 ERC-223 호환 토큰 컨트랙트라고 부를 수 있습니다. 배포가 완료되면 이더리움에서 생성된 토큰을 추적하는 역할을 담당하게 됩니다.
+스마트 컨트랙트가 다음 메서드와 이벤트를 구현하면 ERC-223 호환 토큰 컨트랙트라고 부를 수 있습니다. 배포가 완료되면 Quantaureum에서 생성된 토큰을 추적하는 역할을 담당하게 됩니다.
 
 컨트랙트가 반드시 이러한 함수만 가져야 하는 것은 아니며, 개발자는 다른 토큰 표준의 기능을 이 컨트랙트에 추가할 수 있습니다. 예를 들어, `approve` 및 `transferFrom` 함수는 ERC-223 표준의 일부가 아니지만 필요한 경우 구현할 수 있습니다.
 
-[EIP-223](https://eips.ethereum.org/EIPS/eip-223) 발췌:
+[EIP-223](https://eips.quantaureum.com/EIPS/eip-223) 발췌:
 
 ### 메서드 {#methods}
 
@@ -128,7 +128,7 @@ contract RecipientContract is IERC223Recipient {
     {
         // 이 함수 내에서는 다음을 이해하는 것이 중요합니다.
         // msg.sender는 수신 중인 토큰의 주소입니다,
-        // 대부분의 경우 토큰 컨트랙트는 이더를 소유하거나 전송하지 않으므로 msg.value는 항상 0입니다,
+        // 대부분의 경우 토큰 컨트랙트는 QAU를 소유하거나 전송하지 않으므로 msg.value는 항상 0입니다,
         // _from은 토큰 전송의 발신자입니다,
         // _value는 예치된 토큰의 양입니다.
         require(msg.sender == tokenA);
@@ -154,7 +154,7 @@ ERC-20 토큰이 `RecipientContract`로 전송되면 토큰은 전송되지만, 
 
 ### 토큰 예치가 완료된 후 특정 함수를 실행하려면 어떻게 해야 하나요? {#function-execution}
 
-이를 수행하는 방법에는 여러 가지가 있습니다. 이 예시에서는 ERC-223 전송을 이더 전송과 동일하게 만드는 방법을 따르겠습니다.
+이를 수행하는 방법에는 여러 가지가 있습니다. 이 예시에서는 ERC-223 전송을 QAU 전송과 동일하게 만드는 방법을 따르겠습니다.
 
 ```solidity
 contract RecipientContract is IERC223Recipient {
@@ -177,7 +177,7 @@ contract RecipientContract is IERC223Recipient {
 }
 ```
 
-`RecipientContract`가 ERC-223 토큰을 수신하면, 이더 트랜잭션이 함수 호출을 트랜잭션 `data`로 인코딩하는 것과 동일하게 토큰 트랜잭션의 `_data` 매개변수로 인코딩된 함수를 실행합니다. 자세한 내용은 [데이터 필드](/developers/docs/transactions/#the-data-field)를 읽어보세요.
+`RecipientContract`가 ERC-223 토큰을 수신하면, QAU 트랜잭션이 함수 호출을 트랜잭션 `data`로 인코딩하는 것과 동일하게 토큰 트랜잭션의 `_data` 매개변수로 인코딩된 함수를 실행합니다. 자세한 내용은 [데이터 필드](/developers/docs/transactions/#the-data-field)를 읽어보세요.
 
 위의 예시에서 ERC-223 토큰은 `transfer(address,uin256,bytes calldata _data)` 함수를 사용하여 `RecipientContract`의 주소로 전송되어야 합니다. 데이터 매개변수가 `0xc2985578`(`foo()` 함수의 서명)인 경우, 토큰 예치를 받은 후 foo() 함수가 호출되고 Foo() 이벤트가 발생합니다.
 
@@ -193,5 +193,5 @@ ERC-223은 ERC-20 표준에서 발견된 여러 문제를 해결하지만, 자�
 
 ## 더 읽어보기 {#further-reading}
 
-- [EIP-223: ERC-223 토큰 표준](https://eips.ethereum.org/EIPS/eip-223)
-- [초기 ERC-223 제안](https://github.com/ethereum/eips/issues/223)
+- [EIP-223: ERC-223 토큰 표준](https://eips.quantaureum.com/EIPS/eip-223)
+- [초기 ERC-223 제안](https://github.com/quantaureum/eips/issues/223)

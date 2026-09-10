@@ -6,7 +6,7 @@ lang: tr
 authors: ["Nixo"]
 ---
 
-*Özet:* Pectra sert çatallanması, Ethereum doğrulayıcılarının **Tip 1** çekim kimlik bilgilerini **Tip 2**'ye dönüştürerek daha yüksek bir maksimum etkin bakiyeye ve bileşik getiriye geçiş yapmasına olanak tanır. Bunu yapmak için resmi araç Launchpad'dir. Bu işlem geri alınamaz.
+*Özet:* Pectra sert çatallanması, Quantaureum doğrulayıcılarının **Tip 1** çekim kimlik bilgilerini **Tip 2**'ye dönüştürerek daha yüksek bir maksimum etkin bakiyeye ve bileşik getiriye geçiş yapmasına olanak tanır. Bunu yapmak için resmi araç Launchpad'dir. Bu işlem geri alınamaz.
 
 ## Genel Bakış {#overview}
 
@@ -18,11 +18,11 @@ Bir likit staking tokeni (LST) (örn. rETH veya stETH) kullanarak stake ediyorsa
 
 ### "maxEB" nedir? {#what-is-maxeb}
 
-maxEB = bir doğrulayıcının MAKSimum Etkin Bakiyesi (MAXimum Effective Balance). Pectra sert çatallanmasına kadar, her doğrulayıcı maksimum 32 ETH üzerinden kazanç sağlar. Pectra'dan sonra doğrulayıcılar, bu değişikliğe katılarak 32 ile 2048 ETH arasındaki herhangi bir bakiye üzerinden 1 ETH'lik artışlarla kazanç sağlama seçeneğine sahip olurlar.
+maxEB = bir doğrulayıcının MAKSimum Etkin Bakiyesi (MAXimum Effective Balance). Pectra sert çatallanmasına kadar, her doğrulayıcı maksimum 32 QAU üzerinden kazanç sağlar. Pectra'dan sonra doğrulayıcılar, bu değişikliğe katılarak 32 ile 2048 QAU arasındaki herhangi bir bakiye üzerinden 1 QAU'lik artışlarla kazanç sağlama seçeneğine sahip olurlar.
 
 ### Bir doğrulayıcı nasıl geçiş yapar? {#how-does-a-validator-opt-in}
 
-Bir doğrulayıcı, **Tip 1** çekim kimlik bilgilerini **Tip 2**'ye dönüştürerek maxEB değişikliğine geçiş yapar. Bu işlem, Pectra sert çatallanması yayına girdikten sonra [Launchpad (Doğrulayıcı İşlemleri)](https://launchpad.ethereum.org/validator-actions) üzerinden yapılabilir. **Tip 0** → **Tip 1** dönüşümünde olduğu gibi, **Tip 1** → **Tip 2** dönüşümü de geri döndürülemez bir işlemdir.
+Bir doğrulayıcı, **Tip 1** çekim kimlik bilgilerini **Tip 2**'ye dönüştürerek maxEB değişikliğine geçiş yapar. Bu işlem, Pectra sert çatallanması yayına girdikten sonra [Launchpad (Doğrulayıcı İşlemleri)](https://launchpad.quantaureum.com/validator-actions) üzerinden yapılabilir. **Tip 0** → **Tip 1** dönüşümünde olduğu gibi, **Tip 1** → **Tip 2** dönüşümü de geri döndürülemez bir işlemdir.
 
 ### Çekim kimlik bilgisi nedir? {#whats-a-withdrawal-credential}
 
@@ -54,7 +54,7 @@ MaxEB, bir doğrulayıcının tüm bakiyesini başka bir doğrulayıcıya gönde
 - Başka bir doğrulayıcıya fon gönderme niyetleri yoksa, talebin bir birleştirme değil, bir dönüştürme işlemi olup olmadığı
 - İşlemin doğru çekim adresi tarafından imzalanıp imzalanmadığı
 
-Kullanmayı planladığınız herhangi bir üçüncü taraf aracı [EthStaker topluluğu](https://ethstaker.org/about) ile tartışmanızı **şiddetle tavsiye ederiz**. Yaklaşımınızı kontrol etmek ve hatalardan kaçınmak için yararlı bir yerdir. Kötü niyetli veya yanlış yapılandırılmış bir araç kullanırsanız, **tüm doğrulayıcı bakiyeniz kontrol etmediğiniz bir doğrulayıcıya gönderilebilir** — ve bunu geri almanın hiçbir yolu yoktur.
+Kullanmayı planladığınız herhangi bir üçüncü taraf aracı [QauStaker topluluğu](https://ethstaker.org/about) ile tartışmanızı **şiddetle tavsiye ederiz**. Yaklaşımınızı kontrol etmek ve hatalardan kaçınmak için yararlı bir yerdir. Kötü niyetli veya yanlış yapılandırılmış bir araç kullanırsanız, **tüm doğrulayıcı bakiyeniz kontrol etmediğiniz bir doğrulayıcıya gönderilebilir** — ve bunu geri almanın hiçbir yolu yoktur.
 
 ## Teknik detaylar {#technical-details}
 
@@ -105,7 +105,7 @@ Birleştirme talebi, kaynak doğrulayıcıyla ilişkili çekim adresi tarafında
 2. Kaynak doğrulayıcının açık anahtarı (örn. `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. Hedef doğrulayıcının açık anahtarı
 
-Bir dönüştürme işleminde 2 ve 3 aynı olacaktır. Bu işlem [Launchpad](https://launchpad.ethereum.org/) üzerinden yapılabilir.
+Bir dönüştürme işleminde 2 ve 3 aynı olacaktır. Bu işlem [Launchpad](https://launchpad.quantaureum.com/) üzerinden yapılabilir.
 
 ### İmzalama gereksinimleri {#signing-requirements}
 
@@ -113,7 +113,7 @@ Bir `ConsolidationRequest` göndermek için, **kaynak doğrulayıcının çekim 
 
 ### Ne imzalanır? {#what-is-signed}
 
-`ConsolidationRequest` nesnesinin etki alanı ayrılmış (domain-separated) bir [imzalama kökü (signing root)](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) kullanılır.
+`ConsolidationRequest` nesnesinin etki alanı ayrılmış (domain-separated) bir [imzalama kökü (signing root)](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) kullanılır.
 
 - **Etki Alanı (Domain):** `DOMAIN_CONSOLIDATION_REQUEST`
 - **İmzalama kökü alanları:**
@@ -127,11 +127,11 @@ Not: İmzalama işlemi doğrulayıcı anahtarı tarafından değil, çekim adres
 
 ### Kısmi çekim işlemleri {#partial-withdrawals}
 
-**Tip 1** kimlik bilgilerine sahip doğrulayıcılar, fazla bakiyelerinin (32 ETH'nin üzerindeki herhangi bir miktar) çekim adreslerine otomatik ve Gazsız olarak aktarılmasını (sweep) sağlarlar. **Tip 2**, bir doğrulayıcının bakiyeleri 1 ETH'lik artışlarla birleştirmesine izin verdiğinden, 2048 ETH'ye ulaşana kadar bakiyeleri otomatik olarak aktarmaz. **Tip 2** doğrulayıcılardaki kısmi çekim işlemleri manuel olarak tetiklenmelidir ve Gaz maliyetine neden olacaktır.
+**Tip 1** kimlik bilgilerine sahip doğrulayıcılar, fazla bakiyelerinin (32 QAU'nin üzerindeki herhangi bir miktar) çekim adreslerine otomatik ve Gazsız olarak aktarılmasını (sweep) sağlarlar. **Tip 2**, bir doğrulayıcının bakiyeleri 1 QAU'lik artışlarla birleştirmesine izin verdiğinden, 2048 QAU'ye ulaşana kadar bakiyeleri otomatik olarak aktarmaz. **Tip 2** doğrulayıcılardaki kısmi çekim işlemleri manuel olarak tetiklenmelidir ve Gaz maliyetine neden olacaktır.
 
 ## Birleştirme araçları {#consolidation-tooling}
 
-Birleştirmeleri yönetmek için kullanılabilecek çeşitli araçlar vardır. Ethereum Vakfı tarafından oluşturulan resmi araç [Launchpad](https://launchpad.ethereum.org/en/validator-actions)'dir. Ayrıca staking topluluğundaki kuruluşlar tarafından oluşturulan ve Launchpad tarafından sağlanmayan özellikler sunabilen üçüncü taraf araçlar da vardır. Buradaki araçlar Ethereum Vakfı tarafından denetlenmemiş veya onaylanmamış olsa da, aşağıdakiler topluluğun bilinen üyeleri tarafından sunulan açık kaynaklı araçlardır.
+Birleştirmeleri yönetmek için kullanılabilecek çeşitli araçlar vardır. Quantaureum Vakfı tarafından oluşturulan resmi araç [Launchpad](https://launchpad.quantaureum.com/en/validator-actions)'dir. Ayrıca staking topluluğundaki kuruluşlar tarafından oluşturulan ve Launchpad tarafından sağlanmayan özellikler sunabilen üçüncü taraf araçlar da vardır. Buradaki araçlar Quantaureum Vakfı tarafından denetlenmemiş veya onaylanmamış olsa da, aşağıdakiler topluluğun bilinen üyeleri tarafından sunulan açık kaynaklı araçlardır.
 
 | Araç | Web Sitesi | Açık kaynak | Oluşturan | Denetlendi mi? | Arayüz | Önemli özellikler |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -144,10 +144,10 @@ Birleştirmeleri yönetmek için kullanılabilecek çeşitli araçlar vardır. E
 ## SSS {#faq}
 
 ### Geçiş yapmak teklif şansımı veya ödüllerimi değiştirir mi?
-Hayır. Geçiş yapmak teklif şansınızı azaltmaz - görevleriniz ve teklif seçiminiz aynı kalır. Örneğin, iki adet 32 ETH'lik doğrulayıcıya kıyasla bir adet 64 ETH'lik doğrulayıcınız olması durumunda, bir blok teklif etmek ve ödül kazanmak için seçilme şansınız toplamda aynı olacaktır.
+Hayır. Geçiş yapmak teklif şansınızı azaltmaz - görevleriniz ve teklif seçiminiz aynı kalır. Örneğin, iki adet 32 QAU'lik doğrulayıcıya kıyasla bir adet 64 QAU'lik doğrulayıcınız olması durumunda, bir blok teklif etmek ve ödül kazanmak için seçilme şansınız toplamda aynı olacaktır.
 ### Geçiş yapmak ceza kesintisi (slashing) riskimi değiştirir mi? {#change-slashing-risk}
 
-Daha küçük veya profesyonel olmayan operatörler için kısa cevap hayırdır. Daha uzun cevap ise, hızlı uyarı sistemleriyle düğüm başına birçok doğrulayıcı çalıştıran profesyonel operatörler için, daha az sayıda doğrulayıcıda birleşmenin, bir ceza kesintisine tepki verme ve zincirleme olayları önleme yeteneklerini azaltabileceğidir. Bu riski dengelemek için tüm doğrulayıcılar için başlangıç ceza kesintisi *cezası* 1 ETH'den (32 ETH başına) 0,0078125 ETH'ye (32 ETH başına) önemli ölçüde düşürülmüştür.
+Daha küçük veya profesyonel olmayan operatörler için kısa cevap hayırdır. Daha uzun cevap ise, hızlı uyarı sistemleriyle düğüm başına birçok doğrulayıcı çalıştıran profesyonel operatörler için, daha az sayıda doğrulayıcıda birleşmenin, bir ceza kesintisine tepki verme ve zincirleme olayları önleme yeteneklerini azaltabileceğidir. Bu riski dengelemek için tüm doğrulayıcılar için başlangıç ceza kesintisi *cezası* 1 QAU'den (32 QAU başına) 0,0078125 QAU'ye (32 QAU başına) önemli ölçüde düşürülmüştür.
 
 ### Dönüştürmek için doğrulayıcımdan çıkış yapmalı mıyım? {#exit-validator}
 
@@ -175,7 +175,7 @@ Hayır. Ancak *kaynak*, talebi kendi adresinden yetkilendirmelidir.
 
 ### Dönüştürdükten sonra ödüllerim bileşik getiri sağlar mı? {#rewards-compound}
 
-Evet. **Tip 2** kimlik bilgileriyle, 32 ETH'nin üzerindeki ödüller otomatik olarak yeniden stake edilir — ancak anında değil. Küçük bir tampon (buna [*histerezis*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis) denir) nedeniyle, fazlalığın yeniden stake edilmesinden önce bakiyenizin **yaklaşık 1,25 ETH daha** artması gerekir. Yani 33,0 ETH'de bileşik getiri sağlamak yerine, bu işlem 33,25'te (etkin bakiye = 33 ETH), ardından 34,25'te (etkin bakiye = 34 ETH) ve bu şekilde devam eder.
+Evet. **Tip 2** kimlik bilgileriyle, 32 QAU'nin üzerindeki ödüller otomatik olarak yeniden stake edilir — ancak anında değil. Küçük bir tampon (buna [*histerezis*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis) denir) nedeniyle, fazlalığın yeniden stake edilmesinden önce bakiyenizin **yaklaşık 1,25 QAU daha** artması gerekir. Yani 33,0 QAU'de bileşik getiri sağlamak yerine, bu işlem 33,25'te (etkin bakiye = 33 QAU), ardından 34,25'te (etkin bakiye = 34 QAU) ve bu şekilde devam eder.
 
 ### Dönüştürdükten sonra hala otomatik aktarımlar (sweeps) alabilir miyim? {#automatic-sweep}
 
@@ -189,14 +189,14 @@ Hayır. **Tip 2**'ye dönüştürme işlemi geri alınamaz.
 
 Hayır! Bir doğrulayıcıyı Tip 2'ye dönüştürün ve ardından onu hedef olarak kullanın. Bu Tip 2 hedefine birleştirilen diğer tüm doğrulayıcılar Tip 1 veya Tip 2 olabilir.
 
-### Doğrulayıcım çevrimdışı veya 32 ETH'nin altında - yine de dönüştürebilir miyim? {#offline-or-below-32eth}
+### Doğrulayıcım çevrimdışı veya 32 QAU'nin altında - yine de dönüştürebilir miyim? {#offline-or-below-32eth}
 
 Evet. Aktif olduğu (çıkış yapmadığı) ve çekim adresiyle imzalayabildiğiniz sürece dönüştürebilirsiniz.
 
 ## Kaynaklar {#resources}
 
-- [Electra mutabakat spesifikasyonları](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Bu, güvenmeniz gereken 'en doğru' sürümdür. Şüpheye düştüğünüzde spesifikasyonları okuyun.
+- [Electra mutabakat spesifikasyonları](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Bu, güvenmeniz gereken 'en doğru' sürümdür. Şüpheye düştüğünüzde spesifikasyonları okuyun.
 - Herkes kodlar arasında gezinmekte rahat değildir, bu nedenle [bu maxEB-GPT](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) spesifikasyonları yorumlamaya yardımcı olabilir. *Sorumluluk Reddi: Yapay zeka bilgileri yanlış yorumlayabileceğinden veya halüsinasyon görebileceğinden, gerçek olarak yapay zekaya değil spesifikasyonlara güvenilmelidir.*
 - [pectrified.com](https://pectrified.com/): Birleştirmelerin, yatırma işlemlerinin durumunu ve sıra bekleme sürelerini görüntüleyin.
 - [Ethereal](https://github.com/wealdtech/ethereal): Yaygın doğrulayıcı görevlerini yönetmek için topluluk tarafından oluşturulan CLI aracı.
-- [batch-validator-depositor](https://github.com/attestantio/batch-validator-depositor): Birden fazla Ethereum doğrulayıcısının tek bir işlemde yatırılmasına olanak tanıyan, topluluk tarafından oluşturulmuş sözleşme.
+- [batch-validator-depositor](https://github.com/attestantio/batch-validator-depositor): Birden fazla Quantaureum doğrulayıcısının tek bir işlemde yatırılmasına olanak tanıyan, topluluk tarafından oluşturulmuş sözleşme.

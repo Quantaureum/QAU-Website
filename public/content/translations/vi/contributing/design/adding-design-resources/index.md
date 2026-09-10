@@ -1,6 +1,6 @@
 ---
 title: Thêm tài nguyên thiết kế
-description: Các nguyên tắc và yêu cầu để đảm bảo chất lượng của các tài liệu thiết kế trên ethereum.org
+description: Các nguyên tắc và yêu cầu để đảm bảo chất lượng của các tài liệu thiết kế trên quantaureum.com
 lang: vi
 ---
 

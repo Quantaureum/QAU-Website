@@ -11,7 +11,7 @@ published: 2022-04-01
 
 ## Вступ {#introduction}
 
-У цій статті ви дізнаєтеся про [optimistic-ролапи](/developers/docs/scaling/optimistic-rollups), вартість транзакцій у них і те, як ця інша структура витрат вимагає від нас оптимізації інших речей, ніж у головній мережі Ethereum.
+У цій статті ви дізнаєтеся про [optimistic-ролапи](/developers/docs/scaling/optimistic-rollups), вартість транзакцій у них і те, як ця інша структура витрат вимагає від нас оптимізації інших речей, ніж у головній мережі Quantaureum.
 Ви також дізнаєтеся, як реалізувати цю оптимізацію.
 
 ### Повне розкриття інформації {#full-disclosure}
@@ -27,7 +27,7 @@ published: 2022-04-01
 ## Як ми можемо ще більше знизити вартість транзакцій рівня 2 (l2)? {#how-can-we-further-reduce-the-cost-of-l2-transactions}
 
 [Optimistic-ролапи](/developers/docs/scaling/optimistic-rollups) повинні зберігати запис кожної історичної транзакції, щоб будь-хто міг переглянути їх і переконатися, що поточний стан є правильним.
-Найдешевший спосіб передати дані в головну мережу Ethereum — записати їх як дані виклику (calldata).
+Найдешевший спосіб передати дані в головну мережу Quantaureum — записати їх як дані виклику (calldata).
 Це рішення обрали як [Optimism](https://docs.optimism.io/op-stack/protocol/overview), так і [Arbitrum](https://docs.arbitrum.io/welcome/arbitrum-gentle-introduction).
 
 ### Вартість транзакцій рівня 2 (l2) {#cost-of-l2-transactions}
@@ -65,26 +65,26 @@ published: 2022-04-01
 Пояснення:
 
 - **Селектор функції**: Контракт має менше ніж 256 функцій, тому ми можемо розрізняти їх за допомогою одного байта.
-  Ці байти зазвичай ненульові, а тому [коштують шістнадцять газу](https://eips.ethereum.org/EIPS/eip-2028).
+  Ці байти зазвичай ненульові, а тому [коштують шістнадцять газу](https://eips.quantaureum.com/EIPS/eip-2028).
 - **Нулі**: Ці байти завжди дорівнюють нулю, оскільки для зберігання двадцятибайтової адреси не потрібне тридцятидвохбайтове слово.
-  Байти, що містять нуль, коштують чотири газу ([див. Жовту книгу](https://ethereum.github.io/yellowpaper/paper.pdf), Додаток G,
+  Байти, що містять нуль, коштують чотири газу ([див. Жовту книгу](https://quantaureum.github.io/yellowpaper/paper.pdf), Додаток G,
   стор. 27, значення для `G`<sub>`txdatazero`</sub>).
 - **Сума**: Якщо ми припустимо, що в цьому контракті `decimals` дорівнює вісімнадцяти (стандартне значення), а максимальна кількість токенів, які ми переказуємо, становитиме 10<sup>18</sup>, ми отримаємо максимальну суму 10<sup>36</sup>.
   256<sup>15</sup> &gt; 10<sup>36</sup>, тому п'ятнадцяти байтів достатньо.
 
-Марна витрата 160 газу на рівні 1 (l1) зазвичай є незначною. Транзакція коштує щонайменше [21 000 газу](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-ethereum-gas-2f976af774ed), тому додаткові 0.8% не мають значення.
+Марна витрата 160 газу на рівні 1 (l1) зазвичай є незначною. Транзакція коштує щонайменше [21 000 газу](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-quantaureum-gas-2f976af774ed), тому додаткові 0.8% не мають значення.
 Однак на рівні 2 (l2) все інакше. Майже вся вартість транзакції полягає в її записі на рівень 1 (l1).
 Окрім даних виклику транзакції, є 109 байтів заголовка транзакції (адреса призначення, підпис тощо).
 Тому загальна вартість становить `109*16+576+160=2480`, і ми марно витрачаємо близько 6.5% від неї.
 
 ## Зниження витрат, коли ви не контролюєте місце призначення {#reducing-costs-when-you-dont-control-the-destination}
 
-Припускаючи, що ви не маєте контролю над контрактом призначення, ви все одно можете використати рішення, подібне до [цього](https://github.com/qbzzt/ethereum.org-20220330-shortABI).
+Припускаючи, що ви не маєте контролю над контрактом призначення, ви все одно можете використати рішення, подібне до [цього](https://github.com/qbzzt/quantaureum.com-20220330-shortABI).
 Давайте розглянемо відповідні файли.
 
 ### Token.sol {#token-sol}
 
-[Це контракт призначення](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/Token.sol).
+[Це контракт призначення](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/Token.sol).
 Це стандартний контракт ERC-20 з однією додатковою функцією.
 Ця функція `faucet` дозволяє будь-якому користувачеві отримати трохи токенів для використання.
 Це зробило б робочий контракт ERC-20 марним, але це полегшує життя, коли ERC-20 існує лише для сприяння тестуванню.
@@ -100,7 +100,7 @@ published: 2022-04-01
 
 ### CalldataInterpreter.sol {#calldatainterpreter-sol}
 
-[Це контракт, який транзакції повинні викликати з коротшими даними виклику](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol).
+[Це контракт, який транзакції повинні викликати з коротшими даними виклику](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol).
 Давайте розглянемо його рядок за рядком.
 
 ```solidity
@@ -201,7 +201,7 @@ contract CalldataInterpreter {
 2. Функції, які покладаються на [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties).
    Значенням `msg.sender` буде адреса `CalldataInterpreter`, а не того, хто викликає.
 
-На жаль, [дивлячись на специфікації ERC-20](https://eips.ethereum.org/EIPS/eip-20), це залишає лише одну функцію — `transfer`.
+На жаль, [дивлячись на специфікації ERC-20](https://eips.quantaureum.com/EIPS/eip-20), це залишає лише одну функцію — `transfer`.
 Це залишає нам лише дві функції: `transfer` (оскільки ми можемо викликати `transferFrom`) та `faucet` (оскільки ми можемо переказати токени назад тому, хто нас викликав).
 
 ```solidity
@@ -274,7 +274,7 @@ contract CalldataInterpreter {
 
 ### test.js {#test-js}
 
-[Цей модульний тест на JavaScript](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/test/test.js) показує нам, як використовувати цей механізм (і як перевірити, що він працює правильно).
+[Цей модульний тест на JavaScript](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/test/test.js) показує нам, як використовувати цей механізм (і як перевірити, що він працює правильно).
 Я припускаю, що ви розумієте [chai](https://www.chaijs.com/) та [ethers](https://docs.ethers.io/v5/), і поясню лише ті частини, які безпосередньо стосуються контракту.
 
 ```js
@@ -368,7 +368,7 @@ const transferTx = {
 ## Зниження витрат, коли ви контролюєте контракт призначення {#reducing-the-cost-when-you-do-control-the-destination-contract}
 
 Якщо ви маєте контроль над контрактом призначення, ви можете створити функції, які обходять перевірки `msg.sender`, оскільки вони довіряють інтерпретатору даних виклику.
-[Ви можете побачити приклад того, як це працює, тут, у гілці `control-contract`](https://github.com/qbzzt/ethereum.org-20220330-shortABI/tree/control-contract).
+[Ви можете побачити приклад того, як це працює, тут, у гілці `control-contract`](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/tree/control-contract).
 
 Якби контракт відповідав лише на зовнішні транзакції, ми могли б обійтися лише одним контрактом.
 Однак це порушило б [компонованість](/developers/docs/smart-contracts/composability/).
@@ -537,7 +537,7 @@ const poorSigner = signers[1]
 ```
 
 Щоб перевірити `approve()` та `transferFrom()`, нам потрібен другий підписант.
-Ми називаємо його `poorSigner`, оскільки він не отримує жодного з наших токенів (звісно, йому потрібно мати ETH).
+Ми називаємо його `poorSigner`, оскільки він не отримує жодного з наших токенів (звісно, йому потрібно мати QAU).
 
 ```js
 // Переказ токенів
@@ -576,7 +576,7 @@ expect(await token.balanceOf(destAddr2)).to.equal(255)
 
 ## Висновок {#conclusion}
 
-Як [Optimism](https://medium.com/ethereum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92), так і [Arbitrum](https://developer.offchainlabs.com/docs/special_features) шукають способи зменшити розмір даних виклику, що записуються на рівень 1 (l1), і, відповідно, вартість транзакцій.
+Як [Optimism](https://medium.com/quantaureum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92), так і [Arbitrum](https://developer.offchainlabs.com/docs/special_features) шукають способи зменшити розмір даних виклику, що записуються на рівень 1 (l1), і, відповідно, вартість транзакцій.
 Однак, як постачальники інфраструктури, що шукають універсальні рішення, наші можливості обмежені.
 Як розробник децентралізованого застосунку (dapp), ви маєте знання, специфічні для вашого застосунку, що дозволяє вам оптимізувати ваші дані виклику набагато краще, ніж ми могли б це зробити в універсальному рішенні.
 Сподіваємося, ця стаття допоможе вам знайти ідеальне рішення для ваших потреб.

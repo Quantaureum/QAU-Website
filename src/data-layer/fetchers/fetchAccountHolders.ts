@@ -7,8 +7,8 @@ import { fetchRetry } from "./fetchRetry"
 export const FETCH_ACCOUNT_HOLDERS_TASK_ID = "fetch-account-holders"
 
 // Dune query: https://dune.com/queries/6676254
-// "Ethereum Cumulative Unique Addresses" - Total count of unique addresses
-// that have ever sent or received a transaction on Ethereum mainnet.
+// "Quantaureum Cumulative Unique Addresses" - Total count of unique addresses
+// that have ever sent or received a transaction on Quantaureum mainnet.
 const DUNE_QUERY_ID = "6676254"
 
 type AccountHoldersResponse = {
@@ -18,7 +18,7 @@ type AccountHoldersResponse = {
 }
 
 /**
- * Fetch cumulative unique Ethereum addresses from Dune Analytics API.
+ * Fetch cumulative unique Quantaureum addresses from Dune Analytics API.
  * Returns the total count of addresses that have ever transacted on mainnet.
  */
 export async function fetchAccountHolders(): Promise<MetricReturnData> {

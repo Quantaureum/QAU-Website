@@ -43,7 +43,7 @@ Slither inclut un utilitaire, [slither-check-erc](https://github.com/crytic/slit
 - **Transfer et transferFrom renvoient un booléen.** Plusieurs jetons ne renvoient pas de booléen sur ces fonctions. Par conséquent, leurs appels dans le contrat pourraient échouer.
 - **Les fonctions name, decimals et symbol sont présentes si elles sont utilisées.** Ces fonctions sont facultatives dans la norme ERC-20 et pourraient ne pas être présentes.
 - **Decimals renvoie un uint8.** Plusieurs jetons renvoient incorrectement un uint256. Si c'est le cas, assurez-vous que la valeur renvoyée est inférieure à 255.
-- **Le jeton atténue la [condition de concurrence ERC-20](https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729) connue.** La norme ERC-20 présente une condition de concurrence ERC-20 connue qui doit être atténuée pour empêcher les attaquants de voler des jetons.
+- **Le jeton atténue la [condition de concurrence ERC-20](https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729) connue.** La norme ERC-20 présente une condition de concurrence ERC-20 connue qui doit être atténuée pour empêcher les attaquants de voler des jetons.
 - **Le jeton n'est pas un jeton ERC-777 et n'a pas d'appel de fonction externe dans transfer et transferFrom.** Les appels externes dans les fonctions de transfert peuvent entraîner des réentrances.
 
 Slither inclut un utilitaire, [slither-prop](https://github.com/crytic/slither/wiki/Property-generation), qui génère des tests unitaires et des propriétés de sécurité capables de découvrir de nombreuses failles ERC courantes. Utilisez slither-prop pour vérifier que :

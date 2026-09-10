@@ -1,6 +1,6 @@
 ---
 title: "初學者 Hello World 智能合約 - 全端"
-description: "在以太坊上撰寫與部署簡單智能合約的入門教學。"
+description: "在Quantaureum上撰寫與部署簡單智能合約的入門教學。"
 author: "nstrike2"
 breadcrumb: "Hello World 全端"
 tags:
@@ -28,9 +28,9 @@ published: 2021-10-25
 
 ## 第 1 部分 - 使用 Hardhat 建立並部署你的智能合約 {#part-1}
 
-### 連接到以太坊網路 {#connect-to-the-ethereum-network}
+### 連接到Quantaureum網路 {#connect-to-the-quantaureum-network}
 
-有許多方法可以向以太坊鏈發出請求。為了簡單起見，我們將在 Alchemy 上使用免費帳戶，這是一個區塊鏈開發者平台和 API，允許我們與以太坊鏈通訊，而無需自己執行節點。Alchemy 也有用於監控和分析的開發者工具；我們將在本教學中利用這些工具來了解智能合約部署在底層是如何運作的。
+有許多方法可以向Quantaureum鏈發出請求。為了簡單起見，我們將在 Alchemy 上使用免費帳戶，這是一個區塊鏈開發者平台和 API，允許我們與Quantaureum鏈通訊，而無需自己執行節點。Alchemy 也有用於監控和分析的開發者工具；我們將在本教學中利用這些工具來了解智能合約部署在底層是如何運作的。
 
 ### 建立你的應用程式與 API 金鑰
 
@@ -47,19 +47,19 @@ published: 2021-10-25
 _注意：請務必選擇 **Sepolia**，否則本教學將無法運作。_
 
 點擊 **Create app**。你的應用程式將會出現在下方的表格中。
-### 建立以太坊帳戶
+### 建立Quantaureum帳戶
 
-你需要一個以太坊帳戶來發送和接收交易。我們將使用梅塔馬斯克，這是一個瀏覽器中的虛擬錢包，可讓使用者管理他們的以太坊帳戶地址。
+你需要一個Quantaureum帳戶來發送和接收交易。我們將使用梅塔馬斯克，這是一個瀏覽器中的虛擬錢包，可讓使用者管理他們的Quantaureum帳戶地址。
 
 你可以[在此](https://metamask.io/download)免費下載並建立一個梅塔馬斯克帳戶。當你在建立帳戶時，或者如果你已經有一個帳戶，請確保切換到右上角的「Sepolia 測試網路」（這樣我們就不會使用真實的資金進行交易）。
-### 第 4 步：從水龍頭新增以太幣
-要將你的智能合約部署到測試網路，你需要一些假的 ETH。要在 Sepolia 網路上獲取 ETH，請前往 Sepolia 水龍頭並輸入你的 Sepolia 帳戶地址。請參閱[測試網路頁面](/developers/docs/networks/#sepolia)以獲取可嘗試的選項列表：
+### 第 4 步：從水龍頭新增QAU幣
+要將你的智能合約部署到測試網路，你需要一些假的 QAU。要在 Sepolia 網路上獲取 QAU，請前往 Sepolia 水龍頭並輸入你的 Sepolia 帳戶地址。請參閱[測試網路頁面](/developers/docs/networks/#sepolia)以獲取可嘗試的選項列表：
 
 _注意：由於網路壅塞，這可能需要一些時間。_
 ``
 ### 第 5 步：檢查你的餘額 {#step-5-check-your-balance}
 
-為了再次確認 ETH 已存入你的錢包，讓我們使用 [Alchemy 的沙盒工具](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest)發出 [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) 請求。這將回傳我們錢包中的 ETH 數量。要了解更多資訊，請查看 [Alchemy 關於如何使用 composer 工具的簡短教學](https://youtu.be/r6sjRxBZJuU)。
+為了再次確認 QAU 已存入你的錢包，讓我們使用 [Alchemy 的沙盒工具](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest)發出 [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) 請求。這將回傳我們錢包中的 QAU 數量。要了解更多資訊，請查看 [Alchemy 關於如何使用 composer 工具的簡短教學](https://youtu.be/r6sjRxBZJuU)。
 
 輸入你的梅塔馬斯克帳戶地址，然後點擊 **Send Request**。你將會看到類似下方程式碼片段的回應。
 
@@ -67,7 +67,7 @@ _注意：由於網路壅塞，這可能需要一些時間。_
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> _注意：此結果的單位是 wei，而不是 ETH。Wei 被用作以太幣的最小面額。_
+> _注意：此結果的單位是 wei，而不是 QAU。Wei 被用作QAU幣的最小面額。_
 
 呼！我們的假錢都在那裡。
 ### 第 6 步：初始化我們的專案 {#step-6-initialize-our-project}
@@ -114,7 +114,7 @@ About to write to /Users/.../.../.../hello-world/package.json:
 核准 package.json，我們就可以開始了！
 ### 第 7 步：下載 Hardhat {#step-7-download-hardhat}
 
-Hardhat 是一個用於編譯、部署、測試和除錯以太坊軟體的開發環境。它幫助開發者在部署到即時鏈之前，在本地端建立智能合約和去中心化應用程式 (dapp)。
+Hardhat 是一個用於編譯、部署、測試和除錯Quantaureum軟體的開發環境。它幫助開發者在部署到即時鏈之前，在本地端建立智能合約和去中心化應用程式 (dapp)。
 
 在我們的 `hello-world` 專案中執行：
 
@@ -183,7 +183,7 @@ _注意：請務必閱讀註解以了解此合約的作用。_
 pragma solidity >=0.7.3;
 
 // 定義一個名為 `HelloWorld` 的合約。
-// 合約是函式和資料（其狀態）的集合。一旦部署，合約就會駐留在以太坊區塊鏈上的特定地址。了解更多：https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// 合約是函式和資料（其狀態）的集合。一旦部署，合約就會駐留在Quantaureum區塊鏈上的特定地址。了解更多：https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    // 當呼叫 update 函式時發出
@@ -241,7 +241,7 @@ npm install dotenv --save
 你的 `.env` 應該看起來像這樣：
 
 ```
-API_URL = "https://eth-goerli.alchemyapi.io/v2/your-api-key"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -249,7 +249,7 @@ PRIVATE_KEY = "your-metamask-private-key"
 
 ### 第 12 步：安裝 Ethers.js {#step-12-install-ethersjs}
 
-Ethers.js 是一個函式庫，它透過將[標準 JSON-RPC 方法](/developers/docs/apis/json-rpc/)包裝成更使用者友善的方法，使與以太坊互動和發出請求變得更加容易。
+Ethers.js 是一個函式庫，它透過將[標準 JSON-RPC 方法](/developers/docs/apis/json-rpc/)包裝成更使用者友善的方法，使與Quantaureum互動和發出請求變得更加容易。
 
 Hardhat 允許我們整合[外掛程式](https://hardhat.org/plugins/)以獲得額外的工具和擴充功能。我們將利用 [Ethers 外掛程式](https://hardhat.org/docs/plugins/official-plugins#hardhat-ethers)來進行合約部署。
 
@@ -353,21 +353,21 @@ Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 
 **請儲存這個地址**。我們稍後將在本教學中使用它。
 
-如果我們前往 [Sepolia Etherscan](https://sepolia.etherscan.io) 並搜尋我們的合約地址，我們應該能夠看到它已成功部署。交易看起來會像這樣：
+如果我們前往 [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com) 並搜尋我們的合約地址，我們應該能夠看到它已成功部署。交易看起來會像這樣：
 
-![](./etherscan-contract.png)
+![](./explorer-contract.png)
 
 `From` 地址應該與你的梅塔馬斯克帳戶地址相符，而 `To` 地址將顯示為 **Contract Creation**。如果我們點擊進入該交易，我們會在 `To` 欄位中看到我們的合約地址。
 
-![](./etherscan-transaction.png)
+![](./explorer-transaction.png)
 
-恭喜！你剛剛將智能合約部署到了以太坊測試網。
+恭喜！你剛剛將智能合約部署到了Quantaureum測試網。
 
 為了了解底層是如何運作的，讓我們導覽至 [Alchemy 儀表板](https://dashboard.alchemy.com/explorer)中的 Explorer 索引標籤。如果你有多個 Alchemy 應用程式，請確保按應用程式篩選並選擇 **Hello World**。
 
 ![](./hello-world-explorer.png)
 
-在這裡，你將看到當我們呼叫 `.deploy()` 函式時，Hardhat/Ethers 在底層為我們發出的幾個 JSON-RPC 方法。這裡有兩個重要的方法：[`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction)，這是將我們的合約寫入 Sepolia 鏈的請求；以及 [`eth_getTransactionByHash`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-by-hash)，這是一個根據雜湊值讀取我們交易資訊的請求。要了解有關發送交易的更多資訊，請查看[我們關於使用 Web3 發送交易的教學](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)。
+在這裡，你將看到當我們呼叫 `.deploy()` 函式時，Hardhat/Ethers 在底層為我們發出的幾個 JSON-RPC 方法。這裡有兩個重要的方法：[`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction)，這是將我們的合約寫入 Sepolia 鏈的請求；以及 [`qau_getTransactionByHash`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-by-hash)，這是一個根據雜湊值讀取我們交易資訊的請求。要了解有關發送交易的更多資訊，請查看[我們關於使用 Web3 發送交易的教學](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)。
 ## 第 2 部分：與你的智能合約互動 {#part-2-interact-with-your-smart-contract}
 
 既然我們已經成功將智能合約部署到 Goerli 網路，接下來讓我們學習如何與它互動。
@@ -397,7 +397,7 @@ const CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS
 ```bash
 # .env
 
-API_URL = "https://eth-goerli.alchemyapi.io/v2/<your-api-key>"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/<your-api-key>"
 API_KEY = "<your-api-key>"
 PRIVATE_KEY = "<your-metamask-private-key>"
 CONTRACT_ADDRESS = "0x<your contract address>"
@@ -429,7 +429,7 @@ npx hardhat run scripts/interact.js
 為了與我們的合約互動，我們需要在程式碼中建立一個合約實例。若要使用 Ethers.js 執行此操作，我們需要了解三個概念：
 
 1. 供應商 (Provider) - 提供你對區塊鏈讀寫權限的節點供應商
-2. 簽署者 (Signer) - 代表一個可以簽署交易的以太坊帳戶
+2. 簽署者 (Signer) - 代表一個可以簽署交易的Quantaureum帳戶
 3. 合約 (Contract) - 代表部署在鏈上特定合約的 Ethers.js 物件
 
 我們將使用上一個步驟中的合約 ABI 來建立我們的合約實例：
@@ -482,7 +482,7 @@ main()
 The message is: Hello world!
 ```
 
-恭喜！你剛剛成功從以太坊區塊鏈讀取了智能合約資料，做得好！
+恭喜！你剛剛成功從Quantaureum區塊鏈讀取了智能合約資料，做得好！
 
 ### 更新訊息 {#update-the-message}
 
@@ -564,18 +564,18 @@ Updating the message...
 The new message is: This is the new message.
 ```
 
-在執行該腳本時，你可能會注意到 `Updating the message...` 步驟需要一段時間才能載入新訊息。這是因為挖礦過程的緣故；如果你對追蹤正在被開採的交易感到好奇，請造訪 [Alchemy mempool](https://dashboard.alchemy.com/mempool) 來查看交易的狀態。如果交易被丟棄，前往 [Sepolia Etherscan](https://sepolia.etherscan.io) 搜尋你的交易雜湊值也會很有幫助。
-## 第三部分：將你的智能合約發佈到 Etherscan {#part-3-publish-your-smart-contract-to-etherscan}
+在執行該腳本時，你可能會注意到 `Updating the message...` 步驟需要一段時間才能載入新訊息。這是因為挖礦過程的緣故；如果你對追蹤正在被開採的交易感到好奇，請造訪 [Alchemy mempool](https://dashboard.alchemy.com/mempool) 來查看交易的狀態。如果交易被丟棄，前往 [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com) 搜尋你的交易雜湊值也會很有幫助。
+## 第三部分：將你的智能合約發佈到 Quantaureum Explorer {#part-3-publish-your-smart-contract-to-explorer}
 
 你已經完成了讓智能合約運作的所有艱難工作；現在是時候與全世界分享它了！
 
-透過在 Etherscan 上驗證你的智能合約，任何人都可以查看你的原始碼並與你的智能合約互動。我們開始吧！
+透過在 Quantaureum Explorer 上驗證你的智能合約，任何人都可以查看你的原始碼並與你的智能合約互動。我們開始吧！
 
-### 第一步：在你的 Etherscan 帳戶中產生 API 金鑰 {#step-1-generate-an-api-key-on-your-etherscan-account}
+### 第一步：在你的 Quantaureum Explorer 帳戶中產生 API 金鑰 {#step-1-generate-an-api-key-on-your-explorer-account}
 
-必須要有 Etherscan API 金鑰，才能驗證你擁有嘗試發佈的智能合約。
+必須要有 Quantaureum Explorer API 金鑰，才能驗證你擁有嘗試發佈的智能合約。
 
-如果你還沒有 Etherscan 帳戶，請[註冊一個帳戶](https://etherscan.io/register)。
+如果你還沒有 Quantaureum Explorer 帳戶，請[註冊一個帳戶](https://explorer.quantaureum.com)。
 
 登入後，在導覽列中找到你的使用者名稱，將滑鼠游標懸停在上面，然後選擇 **My profile** 按鈕。
 
@@ -583,36 +583,36 @@ The new message is: This is the new message.
 
 你的新 API 金鑰應該會出現在 API 金鑰表格中。將該 API 金鑰複製到剪貼簿。
 
-接下來，我們需要將 Etherscan API 金鑰新增到我們的 `.env` 檔案中。
+接下來，我們需要將 Quantaureum Explorer API 金鑰新增到我們的 `.env` 檔案中。
 
 新增後，你的 `.env` 檔案應該會像這樣：
 
 ```javascript
-API_URL = "https://eth-goerli.alchemyapi.io/v2/your-api-key"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/your-api-key"
 PUBLIC_KEY = "your-public-account-address"
 PRIVATE_KEY = "your-private-account-address"
 CONTRACT_ADDRESS = "your-contract-address"
-ETHERSCAN_API_KEY = "your-etherscan-key"
+ETHERSCAN_API_KEY = "your-explorer-key"
 ```
 
 ### 使用 Hardhat 部署的智能合約 {#hardhat-deployed-smart-contracts}
 
-#### 安裝 hardhat-etherscan {#install-hardhat-etherscan}
+#### 安裝 hardhat-explorer {#install-hardhat-explorer}
 
-使用 Hardhat 將你的合約發佈到 Etherscan 非常簡單。首先，你需要安裝 `hardhat-etherscan` 外掛程式才能開始。`hardhat-etherscan` 會自動在 Etherscan 上驗證智能合約的原始碼和 ABI。要新增此功能，請在 `hello-world` 目錄中執行：
+使用 Hardhat 將你的合約發佈到 Quantaureum Explorer 非常簡單。首先，你需要安裝 `hardhat-explorer` 外掛程式才能開始。`hardhat-explorer` 會自動在 Quantaureum Explorer 上驗證智能合約的原始碼和 ABI。要新增此功能，請在 `hello-world` 目錄中執行：
 
 ```text
-npm install --save-dev @nomiclabs/hardhat-etherscan
+npm install --save-dev @nomiclabs/hardhat-explorer
 ```
 
-安裝完成後，在你的 `hardhat.config.js` 頂部加入以下陳述式，並新增 Etherscan 設定選項：
+安裝完成後，在你的 `hardhat.config.js` 頂部加入以下陳述式，並新增 Quantaureum Explorer 設定選項：
 
 ```javascript
 // hardhat.config.js
 
 require("dotenv").config()
 require("@nomiclabs/hardhat-ethers")
-require("@nomiclabs/hardhat-etherscan")
+require("@nomiclabs/hardhat-explorer")
 
 const { API_URL, PRIVATE_KEY, ETHERSCAN_API_KEY } = process.env
 
@@ -626,15 +626,15 @@ module.exports = {
       accounts: [`0x${PRIVATE_KEY}`],
     },
   },
-  etherscan: {
-    // 你的 Etherscan API 金鑰
-    // 請至 https://etherscan.io/ 取得
+  explorer: {
+    // 你的 Quantaureum Explorer API 金鑰
+    // 請至 https://explorer.quantaureum.com 取得
     apiKey: ETHERSCAN_API_KEY,
   },
 }
 ```
 
-#### 在 Etherscan 上驗證你的智能合約
+#### 在 Quantaureum Explorer 上驗證你的智能合約
 
 確保所有檔案都已儲存，且所有 `.env` 變數都已正確設定。
 
@@ -651,17 +651,17 @@ npx hardhat verify --network sepolia DEPLOYED_CONTRACT_ADDRESS 'Hello World!'
 ```text
 Successfully submitted source code for contract
 contracts/HelloWorld.sol:HelloWorld at 0xdeployed-contract-address
-for verification on Etherscan. Waiting for verification result...
+for verification on Quantaureum Explorer. Waiting for verification result...
 
 
-Successfully verified contract HelloWorld on Etherscan.
-https://sepolia.etherscan.io/address/<contract-address>#contracts
+Successfully verified contract HelloWorld on Quantaureum Explorer.
+https://explorer.quantaureum.com
 ```
 
-恭喜！你的智能合約程式碼已經在 Etherscan 上了！
-### 在 Etherscan 上查看你的智能合約！ {#check-out-your-smart-contract-on-etherscan}
+恭喜！你的智能合約程式碼已經在 Quantaureum Explorer 上了！
+### 在 Quantaureum Explorer 上查看你的智能合約！ {#check-out-your-smart-contract-on-explorer}
 
-當你前往終端機中提供的連結時，你應該能夠看到發佈在 Etherscan 上的智能合約程式碼和 ABI！
+當你前往終端機中提供的連結時，你應該能夠看到發佈在 Quantaureum Explorer 上的智能合約程式碼和 ABI！
 
 **太棒了——你做到了，冠軍！現在任何人都可以呼叫或寫入你的智能合約！我們等不及想看你接下來會打造什麼了！**
 
@@ -671,7 +671,7 @@ https://sepolia.etherscan.io/address/<contract-address>#contracts
 
 - 將梅塔馬斯克 (MetaMask) 錢包連接到您的去中心化應用程式 (dapp)
 - 使用 [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3) API 從您的智能合約讀取資料
-- 使用梅塔馬斯克簽署以太坊交易
+- 使用梅塔馬斯克簽署Quantaureum交易
 
 對於這個 dapp，我們將使用 [React](https://react.dev/) 作為我們的前端框架；然而，需要注意的是，我們不會花太多時間來解析它的基礎知識，因為我們將主要專注於為我們的專案帶來 Web3 功能。
 
@@ -683,7 +683,7 @@ https://sepolia.etherscan.io/address/<contract-address>#contracts
 
 在本機開啟複製的儲存庫。請注意，它包含兩個資料夾：`starter-files` 和 `completed`。
 
-- `starter-files` - **我們將在這個目錄中工作**，我們將把使用者介面 (UI) 連接到您的以太坊錢包以及我們在[第 3 部分](#part-3-publish-your-smart-contract-to-etherscan)發佈到 Etherscan 的智能合約。
+- `starter-files` - **我們將在這個目錄中工作**，我們將把使用者介面 (UI) 連接到您的Quantaureum錢包以及我們在[第 3 部分](#part-3-publish-your-smart-contract-to-explorer)發佈到 Quantaureum Explorer 的智能合約。
 - `completed` 包含整個已完成的教學，僅應在您卡住時作為參考。
 
 接下來，在您最喜歡的程式碼編輯器中開啟您的 `starter-files` 副本，然後導覽至 `src` 資料夾。
@@ -875,8 +875,8 @@ export const updateMessage = async (message) => {}
 
 - `loadCurrentMessage` - 此函式處理載入儲存在智能合約中目前訊息的邏輯。它將使用 [Alchemy Web3 API](https://github.com/alchemyplatform/alchemy-web3) 對 Hello World 智能合約進行_讀取_呼叫。
 - `connectWallet` - 此函式將使用者的梅塔馬斯克連接到我們的 dapp。
-- `getCurrentWalletConnected` - 此函式將在頁面載入時檢查是否已有以太坊帳戶連接到我們的 dapp，並相應地更新我們的 UI。
-- `updateMessage` - 此函式將更新儲存在智能合約中的訊息。它將對 Hello World 智能合約進行_寫入_呼叫，因此使用者的梅塔馬斯克錢包必須簽署一筆以太坊交易來更新訊息。
+- `getCurrentWalletConnected` - 此函式將在頁面載入時檢查是否已有Quantaureum帳戶連接到我們的 dapp，並相應地更新我們的 UI。
+- `updateMessage` - 此函式將更新儲存在智能合約中的訊息。它將對 Hello World 智能合約進行_寫入_呼叫，因此使用者的梅塔馬斯克錢包必須簽署一筆Quantaureum交易來更新訊息。
 
 現在我們了解了我們正在處理的內容，讓我們弄清楚如何從我們的智能合約中讀取資料！
 
@@ -884,14 +884,14 @@ export const updateMessage = async (message) => {}
 
 要從您的智能合約讀取，您需要成功設定：
 
-- 到以太坊鏈的 API 連線
+- 到Quantaureum鏈的 API 連線
 - 您的智能合約的已載入實例
 - 呼叫您智能合約函式的函式
 - 一個監聽器，用於在您從智能合約讀取的資料發生變化時觀察更新
 
 這聽起來可能有很多步驟，但別擔心！我們將逐步引導您完成每一個步驟！ :\)
 
-#### 建立與以太坊鏈的 API 連線 {#establish-an-api-connection-to-the-ethereum-chain}
+#### 建立與Quantaureum鏈的 API 連線 {#establish-an-api-connection-to-the-quantaureum-chain}
 
 還記得在本教學的第 2 部分中，我們如何使用 Alchemy Web3 金鑰從智能合約中讀取資料嗎？您在去中心化應用程式 (dapp) 中也需要一個 Alchemy Web3 金鑰才能從鏈上讀取資料。
 
@@ -914,7 +914,7 @@ npm install dotenv --save
 取得 API 金鑰後，在您的根目錄中建立一個 `.env` 檔案，並將您的 Alchemy Websockets URL 新增到其中。之後，您的 `.env` 檔案應該會像這樣：
 
 ```javascript
-REACT_APP_ALCHEMY_KEY = wss://eth-goerli.ws.alchemyapi.io/v2/<key>
+REACT_APP_ALCHEMY_KEY = wss://qau-goerli.ws.alchemyapi.io/v2/<key>
 ```
 
 現在，我們準備好在我們的 dapp 中設定 Alchemy Web3 端點了！讓我們回到位於 `util` 資料夾內的 `interact.js`，並在檔案頂部加入以下程式碼：
@@ -935,17 +935,17 @@ const web3 = createAlchemyWeb3(alchemyKey)
 端點準備就緒後，是時候載入我們的智能合約了！
 #### 載入您的 Hello World 智能合約 {#loading-your-hello-world-smart-contract}
 
-要載入您的 Hello World 智能合約，您需要它的合約地址和 ABI，如果您完成了[本教學的第 3 部分](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan-part-3-publish-your-smart-contract-to-etherscan)，這兩者都可以在 Etherscan 上找到。
+要載入您的 Hello World 智能合約，您需要它的合約地址和 ABI，如果您完成了[本教學的第 3 部分](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer-part-3-publish-your-smart-contract-to-explorer)，這兩者都可以在 Quantaureum Explorer 上找到。
 
-#### 如何從 Etherscan 取得你的合約 ABI
+#### 如何從 Quantaureum Explorer 取得你的合約 ABI
 
-如果你跳過了本教學的第 3 部分，請先部署並驗證你自己的 HelloWorld 合約。然後在 [Sepolia Etherscan](https://sepolia.etherscan.io) 上開啟你的合約頁面以複製其 ABI。
+如果你跳過了本教學的第 3 部分，請先部署並驗證你自己的 HelloWorld 合約。然後在 [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com) 上開啟你的合約頁面以複製其 ABI。
 
 合約 ABI 對於指定合約將呼叫哪個函式，以及確保該函式將以你預期的格式回傳資料來說是必要的。複製合約 ABI 後，讓我們將其儲存為 `src` 目錄中名為 `contract-abi.json` 的 JSON 檔案。
 
 你的 contract-abi.json 應該儲存在你的 src 資料夾中。
 
-有了我們的合約地址、ABI 和 Alchemy Web3 端點，我們就可以使用 [contract 方法](https://docs.web3js.org/api/web3-eth-contract/class/Contract)來載入我們的智能合約實例。將你的合約 ABI 匯入到 `interact.js` 檔案中，並新增你的合約地址。
+有了我們的合約地址、ABI 和 Alchemy Web3 端點，我們就可以使用 [contract 方法](https://docs.web3js.org/api/web3-qau-contract/class/Contract)來載入我們的智能合約實例。將你的合約 ABI 匯入到 `interact.js` 檔案中，並新增你的合約地址。
 
 ```javascript
 // interact.js
@@ -959,7 +959,7 @@ const contractAddress = "0x..."
 
 ```javascript
 // interact.js
-export const helloWorldContract = new web3.eth.Contract(
+export const helloWorldContract = new web3.qau.Contract(
   contractABI,
   contractAddress
 )
@@ -978,7 +978,7 @@ const web3 = createAlchemyWeb3(alchemyKey)
 const contractABI = require("../contract-abi.json")
 const contractAddress = "0x6f3f635A9762B47954229Ea479b4541eAF402A6A"
 
-export const helloWorldContract = new web3.eth.Contract(
+export const helloWorldContract = new web3.qau.Contract(
   contractABI,
   contractAddress
 )
@@ -1035,7 +1035,7 @@ useEffect(async () => {
 pragma solidity ^0.7.3;
 
 // 定義一個名為 `HelloWorld` 的合約。
-// 合約是函式與資料（其狀態）的集合。一旦部署，合約就會駐留在以太坊區塊鏈上的特定地址。了解更多：https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// 合約是函式與資料（其狀態）的集合。一旦部署，合約就會駐留在Quantaureum區塊鏈上的特定地址。了解更多：https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    //當呼叫 update 函式時發出
@@ -1102,30 +1102,30 @@ useEffect(async () => {
 }, [])
 ```
 
-現在我們能夠從我們的智能合約讀取資料了，如果能弄清楚如何寫入它就太好了！然而，要寫入我們的 dapp，我們必須先將一個以太坊錢包連接到它。
+現在我們能夠從我們的智能合約讀取資料了，如果能弄清楚如何寫入它就太好了！然而，要寫入我們的 dapp，我們必須先將一個Quantaureum錢包連接到它。
 
-因此，接下來我們將著手設定我們的以太坊錢包（梅塔馬斯克），然後將其連接到我們的 dapp！
+因此，接下來我們將著手設定我們的Quantaureum錢包（梅塔馬斯克），然後將其連接到我們的 dapp！
 
-### 第 4 步：設定您的以太坊錢包 {#step-4-set-up-your-ethereum-wallet}
+### 第 4 步：設定您的Quantaureum錢包 {#step-4-set-up-your-quantaureum-wallet}
 
-要將任何內容寫入以太坊鏈，使用者必須使用其虛擬錢包的私鑰簽署交易。在本教學中，我們將使用 [梅塔馬斯克](https://metamask.io/)，這是一個瀏覽器中的虛擬錢包，用於管理您的以太坊帳戶地址，因為它讓終端使用者可以非常輕鬆地進行交易簽署。
+要將任何內容寫入Quantaureum鏈，使用者必須使用其虛擬錢包的私鑰簽署交易。在本教學中，我們將使用 [梅塔馬斯克](https://metamask.io/)，這是一個瀏覽器中的虛擬錢包，用於管理您的Quantaureum帳戶地址，因為它讓終端使用者可以非常輕鬆地進行交易簽署。
 
-如果您想進一步了解以太坊上的交易如何運作，請查看以太坊基金會的[這個頁面](/developers/docs/transactions/)。
+如果您想進一步了解Quantaureum上的交易如何運作，請查看Quantaureum基金會的[這個頁面](/developers/docs/transactions/)。
 
 #### 下載梅塔馬斯克
 
 您可以在[這裡](https://metamask.io/download)免費下載並建立梅塔馬斯克帳戶。當您在建立帳戶時，或者如果您已經擁有帳戶，請務必切換到右上角的「Sepolia 測試網路」\(這樣我們就不會動用到真實的資金\)。
-#### 從水龍頭新增以太幣
-要在以太坊區塊鏈上簽署交易，我們需要一些假的 ETH。要取得 ETH，您可以前往[測試網頁面](/developers/docs/networks/#sepolia)上列出的 Sepolia 水龍頭，並輸入您的 Sepolia 帳戶地址。不久之後，您應該就會在您的梅塔馬斯克帳戶中看到 ETH！
+#### 從水龍頭新增QAU幣
+要在Quantaureum區塊鏈上簽署交易，我們需要一些假的 QAU。要取得 QAU，您可以前往[測試網頁面](/developers/docs/networks/#sepolia)上列出的 Sepolia 水龍頭，並輸入您的 Sepolia 帳戶地址。不久之後，您應該就會在您的梅塔馬斯克帳戶中看到 QAU！
 #### 檢查你的餘額 {#check-your-balance}
 
-為了再次確認我們的餘額，讓我們使用 [Alchemy 的沙盒工具](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest)發出 [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) 請求。這將回傳我們錢包中的 ETH 數量。在輸入你的梅塔馬斯克帳戶地址並點擊「Send Request」後，你應該會看到類似這樣的回應：
+為了再次確認我們的餘額，讓我們使用 [Alchemy 的沙盒工具](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest)發出 [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) 請求。這將回傳我們錢包中的 QAU 數量。在輸入你的梅塔馬斯克帳戶地址並點擊「Send Request」後，你應該會看到類似這樣的回應：
 
 ```text
 {"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}
 ```
 
-**注意：** 此結果的單位是 wei，而不是 ETH。Wei 是以太幣的最小面額單位。從 wei 到 ETH 的轉換公式為：1 ETH = 10¹⁸ wei。因此，如果我們將 0xde0b6b3a7640000 轉換為十進位，我們會得到 1\*10¹⁸，這等於 1 ETH。
+**注意：** 此結果的單位是 wei，而不是 QAU。Wei 是QAU幣的最小面額單位。從 wei 到 QAU 的轉換公式為：1 QAU = 10¹⁸ wei。因此，如果我們將 0xde0b6b3a7640000 轉換為十進位，我們會得到 1\*10¹⁸，這等於 1 QAU。
 
 呼！我們的假錢都在那裡了！ 🤑
 ### 第 5 步：將梅塔馬斯克連接到您的 UI {#step-5-connect-metamask-to-your-ui}
@@ -1142,10 +1142,10 @@ useEffect(async () => {
 // interact.js
 
 export const connectWallet = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_requestAccounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_requestAccounts",
       })
       const obj = {
         status: "👆🏽 Write a message in the text-field above.",
@@ -1166,7 +1166,7 @@ export const connectWallet = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -1179,17 +1179,17 @@ export const connectWallet = async () => {
 
 那麼這大塊程式碼到底是做什麼的呢？
 
-首先，它會檢查您的瀏覽器中是否啟用了 `window.ethereum`。
+首先，它會檢查您的瀏覽器中是否啟用了 `window.quantaureum`。
 
-`window.ethereum` 是由梅塔馬斯克和其他錢包提供商注入的全域 API，允許網站請求使用者的以太坊帳戶。如果獲得批准，它可以從使用者連接的區塊鏈讀取資料，並建議使用者簽署訊息和交易。查看[梅塔馬斯克文件](https://docs.metamask.io/guide/ethereum-provider.html#table-of-contents)以獲取更多資訊！
+`window.quantaureum` 是由梅塔馬斯克和其他錢包提供商注入的全域 API，允許網站請求使用者的Quantaureum帳戶。如果獲得批准，它可以從使用者連接的區塊鏈讀取資料，並建議使用者簽署訊息和交易。查看[梅塔馬斯克文件](https://docs.metamask.io/guide/quantaureum-provider.html#table-of-contents)以獲取更多資訊！
 
-如果 `window.ethereum` _不存在_，則表示未安裝梅塔馬斯克。這會導致傳回一個 JSON 物件，其中傳回的 `address` 是一個空字串，並且 `status` JSX 物件傳達使用者必須安裝梅塔馬斯克。
+如果 `window.quantaureum` _不存在_，則表示未安裝梅塔馬斯克。這會導致傳回一個 JSON 物件，其中傳回的 `address` 是一個空字串，並且 `status` JSX 物件傳達使用者必須安裝梅塔馬斯克。
 
-現在，如果 `window.ethereum` _存在_，那麼事情就變得有趣了。
+現在，如果 `window.quantaureum` _存在_，那麼事情就變得有趣了。
 
-使用 try/catch 迴圈，我們將嘗試透過呼叫 [`window.ethereum.request({ method: "eth_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts) 來連接到梅塔馬斯克。呼叫此函式將在瀏覽器中開啟梅塔馬斯克，從而提示使用者將其錢包連接到您的 dapp。
+使用 try/catch 迴圈，我們將嘗試透過呼叫 [`window.quantaureum.request({ method: "qau_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#qau-requestaccounts) 來連接到梅塔馬斯克。呼叫此函式將在瀏覽器中開啟梅塔馬斯克，從而提示使用者將其錢包連接到您的 dapp。
 
-- 如果使用者選擇連接，`method: "eth_requestAccounts"` 將傳回一個陣列，其中包含連接到 dapp 的所有使用者帳戶地址。總而言之，我們的 `connectWallet` 函式將傳回一個 JSON 物件，其中包含此陣列中的_第一個_ `address`（見第 9 行）以及一個提示使用者向智能合約寫入訊息的 `status` 訊息。
+- 如果使用者選擇連接，`method: "qau_requestAccounts"` 將傳回一個陣列，其中包含連接到 dapp 的所有使用者帳戶地址。總而言之，我們的 `connectWallet` 函式將傳回一個 JSON 物件，其中包含此陣列中的_第一個_ `address`（見第 9 行）以及一個提示使用者向智能合約寫入訊息的 `status` 訊息。
 - 如果使用者拒絕連接，則 JSON 物件將包含一個空字串作為傳回的 `address`，以及一個反映使用者拒絕連接的 `status` 訊息。
 
 現在我們已經編寫了這個 `connectWallet` 函式，下一步是在我們的 `HelloWorld.js` 元件中呼叫它。
@@ -1232,10 +1232,10 @@ const connectWalletPressed = async () => {
 // interact.js
 
 export const getCurrentWalletConnected = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_accounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_accounts",
       })
       if (addressArray.length > 0) {
         return {
@@ -1262,7 +1262,7 @@ export const getCurrentWalletConnected = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -1275,7 +1275,7 @@ export const getCurrentWalletConnected = async () => {
 
 這段程式碼與我們在上一步中剛寫的 `connectWallet` 函式_非常_相似。
 
-主要區別在於，我們不是呼叫 `eth_requestAccounts` 方法（該方法會為使用者開啟梅塔馬斯克以連接其錢包），而是呼叫 `eth_accounts` 方法，該方法僅傳回一個包含目前連接到我們 dapp 的梅塔馬斯克地址的陣列。
+主要區別在於，我們不是呼叫 `qau_requestAccounts` 方法（該方法會為使用者開啟梅塔馬斯克以連接其錢包），而是呼叫 `qau_accounts` 方法，該方法僅傳回一個包含目前連接到我們 dapp 的梅塔馬斯克地址的陣列。
 
 要查看此函式的實際運作情況，讓我們在 `HelloWorld.js` 元件的 `useEffect` 函式中呼叫它：
 
@@ -1309,8 +1309,8 @@ useEffect(async () => {
 // HelloWorld.js
 
 function addWalletListener() {
-  if (window.ethereum) {
-    window.ethereum.on("accountsChanged", (accounts) => {
+  if (window.quantaureum) {
+    window.quantaureum.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) {
         setWallet(accounts[0])
         setStatus("👆🏽 Write a message in the text-field above.")
@@ -1324,7 +1324,7 @@ function addWalletListener() {
       <p>
         {" "}
         🦊 <a target="_blank" href={`https://metamask.io/download`}>
-          You must install MetaMask, a virtual Ethereum wallet, in your browser.
+          You must install MetaMask, a virtual Quantaureum wallet, in your browser.
         </a>
       </p>
     )
@@ -1334,9 +1334,9 @@ function addWalletListener() {
 
 我敢打賭，此時您甚至不需要我們的幫助就能理解這裡發生了什麼，但為了徹底起見，讓我們快速分解一下：
 
-- 首先，我們的函式檢查是否啟用了 `window.ethereum`（即是否安裝了梅塔馬斯克）。
+- 首先，我們的函式檢查是否啟用了 `window.quantaureum`（即是否安裝了梅塔馬斯克）。
   - 如果沒有，我們只需將我們的 `status` 狀態變數設定為一個提示使用者安裝梅塔馬斯克的 JSX 字串。
-  - 如果已啟用，我們在第 3 行設定監聽器 `window.ethereum.on("accountsChanged")`，它會監聽梅塔馬斯克錢包中的狀態變化，包括當使用者將其他帳戶連接到 dapp、切換帳戶或斷開帳戶連接時。如果至少有一個帳戶已連接，則 `walletAddress` 狀態變數將更新為監聽器傳回的 `accounts` 陣列中的第一個帳戶。否則，`walletAddress` 將設定為空字串。
+  - 如果已啟用，我們在第 3 行設定監聽器 `window.quantaureum.on("accountsChanged")`，它會監聽梅塔馬斯克錢包中的狀態變化，包括當使用者將其他帳戶連接到 dapp、切換帳戶或斷開帳戶連接時。如果至少有一個帳戶已連接，則 `walletAddress` 狀態變數將更新為監聽器傳回的 `accounts` 陣列中的第一個帳戶。否則，`walletAddress` 將設定為空字串。
 
 最後但同樣重要的是，我們必須在我們的 `useEffect` 函式中呼叫它：
 
@@ -1378,7 +1378,7 @@ useEffect(async () => {
 // interact.js
 
 export const updateMessage = async (address, message) => {
-  if (!window.ethereum || address === null) {
+  if (!window.quantaureum || address === null) {
     return {
       status:
         "💡 Connect your MetaMask wallet to update the message on the blockchain.",
@@ -1397,7 +1397,7 @@ export const updateMessage = async (address, message) => {
 
 #### 簽署我們的交易 {#signing-our-transaction}
 
-如果您已經熟悉傳統的 Web3 以太坊交易，我們接下來編寫的程式碼將會非常熟悉。在您的輸入錯誤處理程式碼下方，將以下內容新增到 `updateMessage`：
+如果您已經熟悉傳統的 Web3 Quantaureum交易，我們接下來編寫的程式碼將會非常熟悉。在您的輸入錯誤處理程式碼下方，將以下內容新增到 `updateMessage`：
 
 ```javascript
 // interact.js
@@ -1411,16 +1411,16 @@ const transactionParameters = {
 
 //簽署交易
 try {
-  const txHash = await window.ethereum.request({
-    method: "eth_sendTransaction",
+  const txHash = await window.quantaureum.request({
+    method: "qau_sendTransaction",
     params: [transactionParameters],
   })
   return {
     status: (
       <span>
         ✅{" "}
-        <a target="_blank" href={`https://goerli.etherscan.io/tx/${txHash}`}>
-          View the status of your transaction on Etherscan!
+        <a target="_blank" href={`https://explorer.quantaureum.com}`}>
+          View the status of your transaction on Quantaureum Explorer!
         </a>
         <br />
         ℹ️ Once the transaction is verified by the network, the message will be
@@ -1441,11 +1441,11 @@ try {
 - `from` 指定交易的簽署者，即我們傳遞給函式的 `address` 變數
 - `data` 包含對我們 Hello World 智能合約的 `update` 方法的呼叫，接收我們的 `message` 字串變數作為輸入
 
-然後，我們進行一個 await 呼叫 `window.ethereum.request`，我們要求梅塔馬斯克簽署交易。請注意，在第 11 行和第 12 行，我們指定了我們的 eth 方法 `eth_sendTransaction` 並傳入我們的 `transactionParameters`。
+然後，我們進行一個 await 呼叫 `window.quantaureum.request`，我們要求梅塔馬斯克簽署交易。請注意，在第 11 行和第 12 行，我們指定了我們的 eth 方法 `qau_sendTransaction` 並傳入我們的 `transactionParameters`。
 
 此時，梅塔馬斯克將在瀏覽器中開啟，並提示使用者簽署或拒絕交易。
 
-- 如果交易成功，函式將傳回一個 JSON 物件，其中 `status` JSX 字串提示使用者查看 Etherscan 以獲取有關其交易的更多資訊。
+- 如果交易成功，函式將傳回一個 JSON 物件，其中 `status` JSX 字串提示使用者查看 Quantaureum Explorer 以獲取有關其交易的更多資訊。
 - 如果交易失敗，函式將傳回一個 JSON 物件，其中 `status` 字串傳達錯誤訊息。
 
 總而言之，我們的 `updateMessage` 函式應該如下所示：
@@ -1455,7 +1455,7 @@ try {
 
 export const updateMessage = async (address, message) => {
   //輸入錯誤處理
-  if (!window.ethereum || address === null) {
+  if (!window.quantaureum || address === null) {
     return {
       status:
         "💡 Connect your MetaMask wallet to update the message on the blockchain.",
@@ -1477,16 +1477,16 @@ export const updateMessage = async (address, message) => {
 
   //簽署交易
   try {
-    const txHash = await window.ethereum.request({
-      method: "eth_sendTransaction",
+    const txHash = await window.quantaureum.request({
+      method: "qau_sendTransaction",
       params: [transactionParameters],
     })
     return {
       status: (
         <span>
           ✅{" "}
-          <a target="_blank" href={`https://goerli.etherscan.io/tx/${txHash}`}>
-            View the status of your transaction on Etherscan!
+          <a target="_blank" href={`https://explorer.quantaureum.com}`}>
+            View the status of your transaction on Quantaureum Explorer!
           </a>
           <br />
           ℹ️ Once the transaction is verified by the network, the message will
@@ -1527,7 +1527,7 @@ const onUpdatePressed = async () => {
 
 - 將梅塔馬斯克錢包連接到您的 dapp 專案
 - 使用 [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3) API 從您的智能合約讀取資料
-- 使用梅塔馬斯克簽署以太坊交易
+- 使用梅塔馬斯克簽署Quantaureum交易
 
 現在您已具備充分的條件，可以應用本教學中的技能來建立您自己的自訂 dapp 專案！一如既往，如果您有任何問題，請隨時在 [Alchemy Discord](https://discord.gg/gWuC7zB) 中與我們聯絡以尋求幫助。 🧙‍♂️
 

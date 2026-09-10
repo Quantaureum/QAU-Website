@@ -113,18 +113,18 @@ JSON கோப்பைத் திருத்தி முடித்தத�
 
 ## படி 5: உங்கள் ஒப்பந்தத்தின் ஒரு நிகழ்வை (instance) உருவாக்குங்கள் {#instance-contract}
 
-இப்போது, நமது ஒப்பந்தத்துடன் தொடர்புகொள்ள, நமது குறியீட்டில் அதன் ஒரு நிகழ்வை உருவாக்க வேண்டும். அவ்வாறு செய்ய, நமது ஒப்பந்த முகவரி தேவைப்படும், அதை நிலைநிறுத்தத்திலிருந்து அல்லது ஒப்பந்தத்தை நிலைநிறுத்த நீங்கள் பயன்படுத்திய முகவரியைத் தேடுவதன் மூலம் [Blockscout](https://eth-sepolia.blockscout.com/)-இலிருந்து பெறலாம்.
+இப்போது, நமது ஒப்பந்தத்துடன் தொடர்புகொள்ள, நமது குறியீட்டில் அதன் ஒரு நிகழ்வை உருவாக்க வேண்டும். அவ்வாறு செய்ய, நமது ஒப்பந்த முகவரி தேவைப்படும், அதை நிலைநிறுத்தத்திலிருந்து அல்லது ஒப்பந்தத்தை நிலைநிறுத்த நீங்கள் பயன்படுத்திய முகவரியைத் தேடுவதன் மூலம் [Blockscout](https://qau-sepolia.blockscout.com/)-இலிருந்து பெறலாம்.
 
-![View your contract address on Etherscan](./view-contract-etherscan.png)
+![View your contract address on Quantaureum Explorer](./view-contract-explorer.png)
 
 மேலே உள்ள எடுத்துக்காட்டில், நமது ஒப்பந்த முகவரி 0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778 ஆகும்.
 
-அடுத்து, ABI மற்றும் முகவரியைப் பயன்படுத்தி நமது ஒப்பந்தத்தை உருவாக்க Web3 [contract முறையை](https://docs.web3js.org/api/web3-eth-contract/class/Contract) பயன்படுத்துவோம். உங்கள் `mint-nft.js` கோப்பில், பின்வருவனவற்றைச் சேர்க்கவும்:
+அடுத்து, ABI மற்றும் முகவரியைப் பயன்படுத்தி நமது ஒப்பந்தத்தை உருவாக்க Web3 [contract முறையை](https://docs.web3js.org/api/web3-qau-contract/class/Contract) பயன்படுத்துவோம். உங்கள் `mint-nft.js` கோப்பில், பின்வருவனவற்றைச் சேர்க்கவும்:
 
 ```js
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
 
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 ```
 
 ## படி 6: `.env` கோப்பைப் புதுப்பிக்கவும் {#update-env}
@@ -134,7 +134,7 @@ const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
 உங்கள் பொது விசையை உங்கள் `.env` கோப்பில் சேர்க்கவும் — நீங்கள் பயிற்சியின் பகுதி 1-ஐ முடித்திருந்தால், நமது `.env` கோப்பு இப்போது இப்படி இருக்க வேண்டும்:
 
 ```js
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-private-account-address"
 PUBLIC_KEY = "your-public-account-address"
 ```
@@ -145,7 +145,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 1. `.env` கோப்பிலிருந்து உங்கள் _PRIVATE_KEY_ மற்றும் _PUBLIC_KEY_-ஐப் பெறுங்கள்.
 
-1. அடுத்து, நாம் கணக்கு நான்ஸைக் கண்டறிய வேண்டும். உங்கள் முகவரியிலிருந்து அனுப்பப்பட்ட பரிவர்த்தனைகளின் எண்ணிக்கையைக் கண்காணிக்க நான்ஸ் விவரக்குறிப்பு பயன்படுத்தப்படுகிறது — இது பாதுகாப்பு நோக்கங்களுக்காகவும், மறுஇயக்கத் தாக்குதல்களைத் (replay attacks) தடுக்கவும் நமக்குத் தேவை. உங்கள் முகவரியிலிருந்து அனுப்பப்பட்ட பரிவர்த்தனைகளின் எண்ணிக்கையைப் பெற, நாம் [getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count)-ஐப் பயன்படுத்துகிறோம்.
+1. அடுத்து, நாம் கணக்கு நான்ஸைக் கண்டறிய வேண்டும். உங்கள் முகவரியிலிருந்து அனுப்பப்பட்ட பரிவர்த்தனைகளின் எண்ணிக்கையைக் கண்காணிக்க நான்ஸ் விவரக்குறிப்பு பயன்படுத்தப்படுகிறது — இது பாதுகாப்பு நோக்கங்களுக்காகவும், மறுஇயக்கத் தாக்குதல்களைத் (replay attacks) தடுக்கவும் நமக்குத் தேவை. உங்கள் முகவரியிலிருந்து அனுப்பப்பட்ட பரிவர்த்தனைகளின் எண்ணிக்கையைப் பெற, நாம் [getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count)-ஐப் பயன்படுத்துகிறோம்.
 
 1. இறுதியாக, பின்வரும் தகவல்களுடன் நமது பரிவர்த்தனையை அமைப்போம்:
 
@@ -172,10 +172,10 @@ PUBLIC_KEY = "your-public-account-address"
 
    const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
    const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778";
-   const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
+   const nftContract = new web3.qau.Contract(contract.abi, contractAddress);
 
    async function mintNFT(tokenURI) {
-     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); //சமீபத்திய நான்ஸைப் பெறுக
+     const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, 'latest'); //சமீபத்திய நான்ஸைப் பெறுக
 
    //பரிவர்த்தனை
      const tx = {
@@ -191,7 +191,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 இப்போது நாம் நமது பரிவர்த்தனையை உருவாக்கிவிட்டதால், அதை அனுப்புவதற்கு அதில் கையொப்பமிட வேண்டும். இங்குதான் நாம் நமது தனிப்பட்ட திறவுகோலைப் பயன்படுத்துவோம்.
 
-`web3.eth.sendSignedTransaction` நமக்கு பரிவர்த்தனை ஹாஷை வழங்கும், நமது பரிவர்த்தனை வெட்டியெடுக்கப்பட்டதா (mined) மற்றும் பிணையத்தால் கைவிடப்படவில்லையா என்பதை உறுதிப்படுத்த இதைப் பயன்படுத்தலாம். பரிவர்த்தனையில் கையொப்பமிடும் பிரிவில், சில பிழைச் சரிபார்ப்புகளைச் சேர்த்திருப்பதை நீங்கள் கவனிப்பீர்கள், இதன் மூலம் நமது பரிவர்த்தனை வெற்றிகரமாகச் சென்றதா என்பதை நாம் அறியலாம்.
+`web3.qau.sendSignedTransaction` நமக்கு பரிவர்த்தனை ஹாஷை வழங்கும், நமது பரிவர்த்தனை வெட்டியெடுக்கப்பட்டதா (mined) மற்றும் பிணையத்தால் கைவிடப்படவில்லையா என்பதை உறுதிப்படுத்த இதைப் பயன்படுத்தலாம். பரிவர்த்தனையில் கையொப்பமிடும் பிரிவில், சில பிழைச் சரிபார்ப்புகளைச் சேர்த்திருப்பதை நீங்கள் கவனிப்பீர்கள், இதன் மூலம் நமது பரிவர்த்தனை வெற்றிகரமாகச் சென்றதா என்பதை நாம் அறியலாம்.
 
 ```js
 require("dotenv").config()
@@ -204,10 +204,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //சமீபத்திய நான்ஸைப் பெறுக
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //சமீபத்திய நான்ஸைப் பெறுக
 
   //பரிவர்த்தனை
   const tx = {
@@ -218,10 +218,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -270,10 +270,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //சமீபத்திய நான்ஸைப் பெறுக
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //சமீபத்திய நான்ஸைப் பெறுக
 
   //பரிவர்த்தனை
   const tx = {
@@ -284,10 +284,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -319,9 +319,9 @@ mintNFT("ipfs://QmYueiuRNmL4MiA2GwtVMm6ZagknXnSpQnB3z2gWbz36hP")
 
     Check Alchemy's Mempool to view the status of your transaction!
 
-அடுத்து, உங்கள் பரிவர்த்தனையின் நிலையைப் பார்க்க (அது நிலுவையில் உள்ளதா, வெட்டியெடுக்கப்பட்டதா அல்லது பிணையத்தால் கைவிடப்பட்டதா) உங்கள் [Alchemy மெம்பூலைப்](https://dashboard.alchemy.com/mempool) பார்வையிடவும். உங்கள் பரிவர்த்தனை கைவிடப்பட்டால், [Blockscout](https://eth-sepolia.blockscout.com/)-ஐச் சரிபார்த்து உங்கள் பரிவர்த்தனை ஹாஷைத் தேடுவதும் உதவியாக இருக்கும்.
+அடுத்து, உங்கள் பரிவர்த்தனையின் நிலையைப் பார்க்க (அது நிலுவையில் உள்ளதா, வெட்டியெடுக்கப்பட்டதா அல்லது பிணையத்தால் கைவிடப்பட்டதா) உங்கள் [Alchemy மெம்பூலைப்](https://dashboard.alchemy.com/mempool) பார்வையிடவும். உங்கள் பரிவர்த்தனை கைவிடப்பட்டால், [Blockscout](https://qau-sepolia.blockscout.com/)-ஐச் சரிபார்த்து உங்கள் பரிவர்த்தனை ஹாஷைத் தேடுவதும் உதவியாக இருக்கும்.
 
-![View your NFT transaction hash on Etherscan](./view-nft-etherscan.png)_Etherscan-இல் உங்கள் NFT பரிவர்த்தனை ஹாஷைப் பார்க்கவும்_
+![View your NFT transaction hash on Quantaureum Explorer](./view-nft-explorer.png)_Etherscan-இல் உங்கள் NFT பரிவர்த்தனை ஹாஷைப் பார்க்கவும்_
 
 அவ்வளவுதான்! நீங்கள் இப்போது எத்திரியம் தொகுதிச்சங்கிலியில் ஒரு NFT-ஐ நிலைநிறுத்தி அச்சிட்டுள்ளீர்கள் <Emoji text=":money_mouth_face:" size={1} />
 

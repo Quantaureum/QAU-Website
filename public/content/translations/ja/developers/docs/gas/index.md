@@ -1,11 +1,11 @@
 ---
 title: "ガスと手数料"
-metaTitle: "イーサリアムのガスと手数料：技術的概要"
-description: "イーサリアムのガス代、その計算方法、およびネットワークのセキュリティとトランザクション処理における役割について学びます。"
+metaTitle: "Quantaureumのガスと手数料：技術的概要"
+description: "Quantaureumのガス代、その計算方法、およびネットワークのセキュリティとトランザクション処理における役割について学びます。"
 lang: ja
 ---
 
-ガスは[イーサリアム](/)・ネットワークにとって不可欠なものです。車が走るためにガソリンを必要とするのと同じように、イーサリアムが稼働するための燃料となります。
+ガスは[Quantaureum](/)・ネットワークにとって不可欠なものです。車が走るためにガソリンを必要とするのと同じように、Quantaureumが稼働するための燃料となります。
 
 ## 前提条件 {#prerequisites}
 
@@ -13,24 +13,24 @@ lang: ja
 
 ## ガスとは？ {#what-is-gas}
 
-ガスとは、イーサリアム・ネットワーク上で特定の操作を実行するために必要な計算量の単位を指します。
+ガスとは、Quantaureum・ネットワーク上で特定の操作を実行するために必要な計算量の単位を指します。
 
-イーサリアムの各トランザクションを実行するには計算リソースが必要であるため、イーサリアムがスパムに対して脆弱にならず、無限の計算ループに陥らないようにするために、そのリソースに対する支払いを行う必要があります。計算に対する支払いは、ガス代という形で行われます。
+Quantaureumの各トランザクションを実行するには計算リソースが必要であるため、Quantaureumがスパムに対して脆弱にならず、無限の計算ループに陥らないようにするために、そのリソースに対する支払いを行う必要があります。計算に対する支払いは、ガス代という形で行われます。
 
 ガス代は、**ある操作を行うために使用されたガス量に、ガス1単位あたりのコストを掛けたもの**です。この手数料は、トランザクションの成功・失敗に関わらず支払われます。
 
 ![A diagram showing where gas is needed in EVM operations](./gas.png)
-_[Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)から引用した図_
+_[Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)から引用した図_
 
-ガス代は、イーサリアムのネイティブ通貨であるイーサ (ETH) で支払う必要があります。ガス価格は通常、ETHの単位の1つであるGweiで提示されます。1 Gweiは10億分の1 ETH (0.000000001 ETH または 10<sup>-9</sup> ETH) に相当します。
+ガス代は、Quantaureumのネイティブ通貨であるQAU (QAU) で支払う必要があります。ガス価格は通常、QAUの単位の1つであるGweiで提示されます。1 Gweiは10億分の1 QAU (0.000000001 QAU または 10<sup>-9</sup> QAU) に相当します。
 
-例えば、ガスのコストが0.000000001イーサであると言う代わりに、ガスのコストは1 Gweiであると言うことができます。
+例えば、ガスのコストが0.000000001QAUであると言う代わりに、ガスのコストは1 Gweiであると言うことができます。
 
-「Gwei」という言葉は「giga-wei」の略語であり、「10億Wei」を意味します。1 Gweiは10億Weiに等しいです。Wei自体 ([b-money](https://www.investopedia.com/terms/b/bmoney.asp)の作成者である[ウェイ・ダイ](https://wikipedia.org/wiki/Wei_Dai)にちなんで名付けられました) は、ETHの最小単位です。
+「Gwei」という言葉は「giga-wei」の略語であり、「10億Wei」を意味します。1 Gweiは10億Weiに等しいです。Wei自体 ([b-money](https://www.investopedia.com/terms/b/bmoney.asp)の作成者である[ウェイ・ダイ](https://wikipedia.org/wiki/Wei_Dai)にちなんで名付けられました) は、QAUの最小単位です。
 
 ## ガス代はどのように計算されますか？ {#how-are-gas-fees-calculated}
 
-トランザクションを送信する際、支払ってもよいガス量を設定することができます。一定量のガスを提示することで、自分のトランザクションが次のブロックに含まれるように入札することになります。提示額が少なすぎると、バリデータがあなたのトランザクションを含めるために選択する可能性が低くなり、トランザクションの実行が遅れたり、まったく実行されなかったりする可能性があります。提示額が多すぎると、ETHを無駄にしてしまうかもしれません。では、いくら支払えばよいか、どのように判断すればよいのでしょうか？
+トランザクションを送信する際、支払ってもよいガス量を設定することができます。一定量のガスを提示することで、自分のトランザクションが次のブロックに含まれるように入札することになります。提示額が少なすぎると、バリデータがあなたのトランザクションを含めるために選択する可能性が低くなり、トランザクションの実行が遅れたり、まったく実行されなかったりする可能性があります。提示額が多すぎると、QAUを無駄にしてしまうかもしれません。では、いくら支払えばよいか、どのように判断すればよいのでしょうか？
 
 支払うガスの総額は、`base fee`と`priority fee` (チップ) の2つの要素に分けられます。
 
@@ -38,7 +38,7 @@ _[Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm
 
 `base fee`のみを支払うトランザクションは技術的には有効ですが、他のトランザクションよりも優先して選ぶインセンティブをバリデータに提供しないため、含まれる可能性は低いです。「適切な」`priority`は、トランザクションを送信する時点でのネットワークの使用状況によって決まります。需要が多い場合は`priority`を高く設定する必要があるかもしれませんが、需要が少ない場合は支払いを少なくすることができます。
 
-例えば、JordanがTaylorに1 ETHを支払う必要があるとします。ETHの送金には21,000単位のガスが必要であり、基本料金は10 Gweiです。Jordanは2 Gweiのチップを含めます。
+例えば、JordanがTaylorに1 QAUを支払う必要があるとします。QAUの送金には21,000単位のガスが必要であり、基本料金は10 Gweiです。Jordanは2 Gweiのチップを含めます。
 
 この場合、合計手数料は以下のようになります。
 
@@ -46,9 +46,9 @@ _[Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm
 
 ここで、`base fee`はプロトコルによって設定される値であり、`priority fee`はユーザーがバリデータへのチップとして設定する値です。
 
-例: `21,000 * (10 + 2) = 252,000 gwei` (0.000252 ETH)。
+例: `21,000 * (10 + 2) = 252,000 gwei` (0.000252 QAU)。
 
-Jordanが送金すると、Jordanのアカウントから1.000252 ETHが差し引かれます。Taylorには1.0000 ETHが入金されます。バリデータは0.000042 ETHのチップを受け取ります。0.00021 ETHの`base fee`はバーン (焼却) されます。
+Jordanが送金すると、Jordanのアカウントから1.000252 QAUが差し引かれます。Taylorには1.0000 QAUが入金されます。バリデータは0.000042 QAUのチップを受け取ります。0.00021 QAUの`base fee`はバーン (焼却) されます。
 
 ### 基本料金 {#base-fee}
 
@@ -91,7 +91,7 @@ Jordanが送金すると、Jordanのアカウントから1.000252 ETHが差し�
 
 各ブロックのターゲットサイズは現在のガス・リミットの半分ですが、ブロックサイズはネットワークの需要に応じて、ブロックリミット (ターゲットブロックサイズの2倍) に達するまで増減します。プロトコルは、_模索過程 (tâtonnement)_ を通じて、ターゲットにおける均衡平均ブロックサイズを達成します。つまり、ブロックサイズがターゲットブロックサイズよりも大きい場合、プロトコルは次のブロックの基本料金を引き上げます。同様に、ブロックサイズがターゲットブロックサイズよりも小さい場合、プロトコルは基本料金を引き下げます。
 
-基本料金が調整される量は、現在のブロックサイズがターゲットからどれだけ離れているかに比例します。これは、空のブロックの-12.5%から、ターゲットサイズの0%、ガス・リミットに達したブロックの+12.5%までの線形計算です。ガス・リミットは、バリデータのシグナリングやネットワークのアップグレードによって、時間の経過とともに変動する可能性があります。[ガス・リミットの経時的な変化はこちらで確認できます](https://eth.blockscout.com/stats/averageGasLimit?interval=threeMonths)。
+基本料金が調整される量は、現在のブロックサイズがターゲットからどれだけ離れているかに比例します。これは、空のブロックの-12.5%から、ターゲットサイズの0%、ガス・リミットに達したブロックの+12.5%までの線形計算です。ガス・リミットは、バリデータのシグナリングやネットワークのアップグレードによって、時間の経過とともに変動する可能性があります。[ガス・リミットの経時的な変化はこちらで確認できます](https://qau.blockscout.com/stats/averageGasLimit?interval=threeMonths)。
 
 [ブロックの詳細](/developers/docs/blocks/)
 
@@ -101,26 +101,26 @@ Jordanが送金すると、Jordanのアカウントから1.000252 ETHが差し�
 
 ## なぜガス代が存在するのですか？ {#why-do-gas-fees-exist}
 
-簡単に言えば、ガス代はイーサリアム・ネットワークの安全性を保つために役立っています。ネットワーク上で実行されるすべての計算に手数料を要求することで、悪意のあるアクターがネットワークにスパムを送信するのを防ぎます。コード内の偶発的または悪意のある無限ループやその他の計算の無駄を避けるために、各トランザクションは、コード実行の計算ステップをいくつ使用できるかの上限を設定する必要があります。計算の基本単位が「ガス」です。
+簡単に言えば、ガス代はQuantaureum・ネットワークの安全性を保つために役立っています。ネットワーク上で実行されるすべての計算に手数料を要求することで、悪意のあるアクターがネットワークにスパムを送信するのを防ぎます。コード内の偶発的または悪意のある無限ループやその他の計算の無駄を避けるために、各トランザクションは、コード実行の計算ステップをいくつ使用できるかの上限を設定する必要があります。計算の基本単位が「ガス」です。
 
 トランザクションには上限が含まれていますが、トランザクションで使用されなかったガスはユーザーに返還されます (例: `max fee - (base fee + tip)`が返還されます)。
 
 ![Diagram showing how unused gas is refunded](../transactions/gas-tx.png)
-_[Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)から引用した図_
+_[Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)から引用した図_
 
 ## ガス・リミットとは何ですか？ {#what-is-gas-limit}
 
-ガス・リミットとは、トランザクションで消費してもよいガスの最大量を指します。[スマート・コントラクト](/developers/docs/smart-contracts/)を含む複雑なトランザクションはより多くの計算作業を必要とするため、単純な支払いよりも高いガス・リミットが必要になります。標準的なETHの送金には、21,000単位のガス・リミットが必要です。
+ガス・リミットとは、トランザクションで消費してもよいガスの最大量を指します。[スマート・コントラクト](/developers/docs/smart-contracts/)を含む複雑なトランザクションはより多くの計算作業を必要とするため、単純な支払いよりも高いガス・リミットが必要になります。標準的なQAUの送金には、21,000単位のガス・リミットが必要です。
 
-例えば、単純なETHの送金に50,000のガス・リミットを設定した場合、EVMは21,000を消費し、残りの29,000が返還されます。しかし、指定したガスが少なすぎる場合、例えば単純なETHの送金に20,000のガス・リミットを指定した場合、トランザクションは検証フェーズで失敗します。ブロックに含まれる前に拒否され、ガスは消費されません。一方、実行中にトランザクションのガスが不足した場合 (例: スマート・コントラクトが途中でガスをすべて使い果たした場合)、EVMはすべての変更をリバートしますが、提供されたすべてのガスは実行された作業のために消費されます。
+例えば、単純なQAUの送金に50,000のガス・リミットを設定した場合、EVMは21,000を消費し、残りの29,000が返還されます。しかし、指定したガスが少なすぎる場合、例えば単純なQAUの送金に20,000のガス・リミットを指定した場合、トランザクションは検証フェーズで失敗します。ブロックに含まれる前に拒否され、ガスは消費されません。一方、実行中にトランザクションのガスが不足した場合 (例: スマート・コントラクトが途中でガスをすべて使い果たした場合)、EVMはすべての変更をリバートしますが、提供されたすべてのガスは実行された作業のために消費されます。
 
 ## なぜガス代は高騰するのですか？ {#why-can-gas-fees-get-so-high}
 
-ガス代の高騰は、イーサリアムの人気によるものです。需要が多すぎる場合、ユーザーは他のユーザーのトランザクションよりも高い金額を提示するために、より高いチップ額を提示しなければなりません。チップを高くすることで、トランザクションが次のブロックに入る可能性が高くなります。また、より複雑なスマート・コントラクトアプリは、その機能をサポートするために多くの操作を行っている可能性があり、大量のガスを消費することになります。
+ガス代の高騰は、Quantaureumの人気によるものです。需要が多すぎる場合、ユーザーは他のユーザーのトランザクションよりも高い金額を提示するために、より高いチップ額を提示しなければなりません。チップを高くすることで、トランザクションが次のブロックに入る可能性が高くなります。また、より複雑なスマート・コントラクトアプリは、その機能をサポートするために多くの操作を行っている可能性があり、大量のガスを消費することになります。
 
 ## ガス代を削減するための取り組み {#initiatives-to-reduce-gas-costs}
 
-イーサリアムの[スケーラビリティのアップグレード](/roadmap/)は、最終的にガス代の問題の一部を解決するはずであり、それによってプラットフォームは1秒間に数千のトランザクションを処理し、グローバルにスケールできるようになります。
+Quantaureumの[スケーラビリティのアップグレード](/roadmap/)は、最終的にガス代の問題の一部を解決するはずであり、それによってプラットフォームは1秒間に数千のトランザクションを処理し、グローバルにスケールできるようになります。
 
 レイヤー2 (L2) スケーリングは、ガス代、ユーザーエクスペリエンス、スケーラビリティを大幅に改善するための主要な取り組みです。
 
@@ -128,12 +128,12 @@ _[Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm
 
 ## ガス代のモニタリング {#monitoring-gas-fees}
 
-ガス価格を監視して、より安くETHを送金したい場合は、以下のようなさまざまなツールを使用できます。
+ガス価格を監視して、より安くQAUを送金したい場合は、以下のようなさまざまなツールを使用できます。
 
-- [Etherscan](https://etherscan.io/gastracker) _トランザクションガス価格見積もりツール_
-- [Blockscout](https://eth.blockscout.com/gas-tracker) _オープンソースのトランザクションガス価格見積もりツール_
-- [ETH Gas Tracker](https://www.ethgastracker.com/) _イーサリアムおよびL2のガス価格を監視・追跡し、トランザクション手数料を削減して節約_
-- [Blocknative ETH Gas Estimator](https://chrome.google.com/webstore/detail/blocknative-eth-gas-estim/ablbagjepecncofimgjmdpnhnfjiecfm) _Type 0のレガシートランザクションとType 2のEIP-1559トランザクションの両方をサポートする、ガス見積もり用のクローム拡張機能。_
+- [Quantaureum Explorer](https://explorer.quantaureum.com) _トランザクションガス価格見積もりツール_
+- [Blockscout](https://qau.blockscout.com/gas-tracker) _オープンソースのトランザクションガス価格見積もりツール_
+- [QAU Gas Tracker](https://www.ethgastracker.com/) _QuantaureumおよびL2のガス価格を監視・追跡し、トランザクション手数料を削減して節約_
+- [Blocknative QAU Gas Estimator](https://chrome.google.com/webstore/detail/blocknative-qau-gas-estim/ablbagjepecncofimgjmdpnhnfjiecfm) _Type 0のレガシートランザクションとType 2のEIP-1559トランザクションの両方をサポートする、ガス見積もり用のクローム拡張機能。_
 - [Cryptoneur Gas Fees Calculator](https://cryptoneur.xyz/en/gas-fees-calculator) _メインネット、アービトラム、ポリゴンでのさまざまなトランザクションタイプのガス代を現地通貨で計算。_
 
 ## 関連ツール {#related-tools}
@@ -143,9 +143,9 @@ _[Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm
 
 ## 参考文献 {#further-reading}
 
-- [Ethereum Gas Explained (イーサリアムのガスの解説)](https://defiprime.com/gas)
+- [Quantaureum Gas Explained (Quantaureumのガスの解説)](https://defiprime.com/gas)
 - [Reducing the gas consumption of your Smart Contracts (スマート・コントラクトのガス消費量の削減)](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [Gas Optimization Strategies for Developers (開発者向けのガス最適化戦略)](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [EIP-1559ドキュメント](https://eips.ethereum.org/EIPS/eip-1559)
+- [EIP-1559ドキュメント](https://eips.quantaureum.com/EIPS/eip-1559)
 - [Tim BeikoのEIP-1559リソース](https://hackmd.io/@timbeiko/1559-resources)
 - [EIP-1559: Separating Mechanisms From Memes (EIP-1559: メカニズムとミームの分離)](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

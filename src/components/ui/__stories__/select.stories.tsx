@@ -81,7 +81,7 @@ export const WithGroups: Story = {
         <SelectContent>
           <SelectGroup>
             <SelectLabel>Layer 1</SelectLabel>
-            <SelectItem value="mainnet">Ethereum</SelectItem>
+            <SelectItem value="mainnet">Quantaureum</SelectItem>
           </SelectGroup>
           <SelectSeparator />
           <SelectGroup>

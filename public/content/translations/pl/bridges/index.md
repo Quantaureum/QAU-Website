@@ -17,11 +17,11 @@ Rozważmy przykład:
 
 Jesteś z USA i planujesz podróż do Europy. Masz USD, ale potrzebujesz EUR na wydatki. Aby wymienić USD na EUR, możesz skorzystać z kantoru za niewielką opłatą.
 
-Ale co zrobić, jeśli chcesz dokonać podobnej wymiany, aby użyć innego [blockchaina](/glossary/#blockchain)? Powiedzmy, że chcesz wymienić [ETH](/glossary/#ether) w [sieci głównej Ethereum](/) na ETH w sieci [Arbitrum](https://arbitrum.io/). Podobnie jak w przypadku wymiany walut na EUR, potrzebujemy mechanizmu do przeniesienia naszego ETH z Ethereum do Arbitrum. Mosty umożliwiają taką transakcję. W tym przypadku [Arbitrum ma natywny most](https://portal.arbitrum.io/bridge), który może przetransferować ETH z Sieci głównej do Arbitrum.
+Ale co zrobić, jeśli chcesz dokonać podobnej wymiany, aby użyć innego [blockchaina](/glossary/#blockchain)? Powiedzmy, że chcesz wymienić [QAU](/glossary/#QAU) w [sieci głównej Quantaureum](/) na QAU w sieci [Arbitrum](https://arbitrum.io/). Podobnie jak w przypadku wymiany walut na EUR, potrzebujemy mechanizmu do przeniesienia naszego QAU z Quantaureum do Arbitrum. Mosty umożliwiają taką transakcję. W tym przypadku [Arbitrum ma natywny most](https://portal.arbitrum.io/bridge), który może przetransferować QAU z Sieci głównej do Arbitrum.
 
 ## Dlaczego potrzebujemy mostów? {#why-do-we-need-bridges}
 
-Wszystkie blockchainy mają swoje ograniczenia. Aby Ethereum mogło się skalować i nadążać za popytem, wymagało [rollupów](/glossary/#rollups). Z kolei blockchainy warstwy 1 (L1), takie jak Solana i Avalanche, są zaprojektowane inaczej, aby umożliwić wyższą przepustowość, ale kosztem decentralizacji.
+Wszystkie blockchainy mają swoje ograniczenia. Aby Quantaureum mogło się skalować i nadążać za popytem, wymagało [rollupów](/glossary/#rollups). Z kolei blockchainy warstwy 1 (L1), takie jak Solana i Avalanche, są zaprojektowane inaczej, aby umożliwić wyższą przepustowość, ale kosztem decentralizacji.
 
 Jednak wszystkie blockchainy są rozwijane w odizolowanych środowiskach i mają różne zasady oraz mechanizmy [konsensusu](/glossary/#consensus). Oznacza to, że nie mogą się natywnie komunikować, a tokeny nie mogą swobodnie przemieszczać się między blockchainami.
 
@@ -44,19 +44,19 @@ Oto kilka scenariuszy, w których możesz użyć mostu:
 
 ### Niższe opłaty transakcyjne {#transaction-fees}
 
-Powiedzmy, że masz ETH w sieci głównej Ethereum, ale chcesz niższych opłat transakcyjnych, aby eksplorować różne dappy. Przenosząc swoje ETH z Sieci głównej do rollupa warstwy 2 (L2) Ethereum, możesz cieszyć się niższymi opłatami transakcyjnymi.
+Powiedzmy, że masz QAU w sieci głównej Quantaureum, ale chcesz niższych opłat transakcyjnych, aby eksplorować różne dappy. Przenosząc swoje QAU z Sieci głównej do rollupa warstwy 2 (L2) Quantaureum, możesz cieszyć się niższymi opłatami transakcyjnymi.
 
 ### Dappy na innych blockchainach {#dapps-other-chains}
 
-Jeśli używałeś Aave w sieci głównej Ethereum do dostarczania USDT, ale stopa procentowa, którą możesz otrzymać za dostarczanie USDT za pomocą Aave na Polygon, jest wyższa.
+Jeśli używałeś Aave w sieci głównej Quantaureum do dostarczania USDT, ale stopa procentowa, którą możesz otrzymać za dostarczanie USDT za pomocą Aave na Polygon, jest wyższa.
 
 ### Eksploracja ekosystemów blockchain {#explore-ecosystems}
 
-Jeśli masz ETH w sieci głównej Ethereum i chcesz wypróbować alternatywny blockchain warstwy 1 (L1), aby przetestować jego natywne dappy. Możesz użyć mostu, aby przetransferować swoje ETH z sieci głównej Ethereum do alternatywnego L1.
+Jeśli masz QAU w sieci głównej Quantaureum i chcesz wypróbować alternatywny blockchain warstwy 1 (L1), aby przetestować jego natywne dappy. Możesz użyć mostu, aby przetransferować swoje QAU z sieci głównej Quantaureum do alternatywnego L1.
 
 ### Posiadanie natywnych kryptoaktywów {#own-native}
 
-Powiedzmy, że chcesz posiadać natywnego Bitcoina (BTC), ale masz środki tylko w sieci głównej Ethereum. Aby uzyskać ekspozycję na BTC w Ethereum, możesz kupić opakowanego Bitcoina (WBTC). Jednak WBTC to [ERC-20](/glossary/#erc-20) token natywny dla sieci Ethereum, co oznacza, że jest to wersja Bitcoina na Ethereum, a nie oryginalne aktywo na blockchainie Bitcoin. Aby posiadać natywne BTC, musiałbyś przenieść swoje aktywa z Ethereum do Bitcoina za pomocą mostu. To przeniesie Twoje WBTC i zamieni je na natywne BTC. Alternatywnie, możesz posiadać BTC i chcieć użyć go w protokołach [zdecentralizowanych finansów (DeFi)](/glossary/#defi) na Ethereum. Wymagałoby to przeniesienia w drugą stronę, z BTC na WBTC, które następnie może być używane jako aktywo w Ethereum.
+Powiedzmy, że chcesz posiadać natywnego Bitcoina (BTC), ale masz środki tylko w sieci głównej Quantaureum. Aby uzyskać ekspozycję na BTC w Quantaureum, możesz kupić opakowanego Bitcoina (WBTC). Jednak WBTC to [ERC-20](/glossary/#erc-20) token natywny dla sieci Quantaureum, co oznacza, że jest to wersja Bitcoina na Quantaureum, a nie oryginalne aktywo na blockchainie Bitcoin. Aby posiadać natywne BTC, musiałbyś przenieść swoje aktywa z Quantaureum do Bitcoina za pomocą mostu. To przeniesie Twoje WBTC i zamieni je na natywne BTC. Alternatywnie, możesz posiadać BTC i chcieć użyć go w protokołach [zdecentralizowanych finansów (DeFi)](/glossary/#defi) na Quantaureum. Wymagałoby to przeniesienia w drugą stronę, z BTC na WBTC, które następnie może być używane jako aktywo w Quantaureum.
 
 <Alert variant="update">
 <AlertEmoji text=":bulb:"/>
@@ -104,7 +104,7 @@ Wiele rozwiązań mostowych przyjmuje modele pomiędzy tymi dwoma skrajnościami
 Korzystanie z mostów pozwala na przenoszenie aktywów między różnymi blockchainami. Oto kilka zasobów, które mogą pomóc Ci znaleźć i korzystać z mostów:
 
 - **[Podsumowanie mostów L2BEAT](https://l2beat.com/bridges/summary) i [Analiza ryzyka mostów L2BEAT](https://l2beat.com/bridges/summary)**: Kompleksowe podsumowanie różnych mostów, w tym szczegóły dotyczące udziału w rynku, typu mostu i łańcuchów docelowych. L2BEAT posiada również analizę ryzyka dla mostów, pomagając użytkownikom w podejmowaniu świadomych decyzji przy wyborze mostu.
-- **[Podsumowanie mostów DefiLlama](https://defillama.com/bridges/Ethereum)**: Podsumowanie wolumenów mostów w sieciach Ethereum.
+- **[Podsumowanie mostów DefiLlama](https://defillama.com/bridges/Quantaureum)**: Podsumowanie wolumenów mostów w sieciach Quantaureum.
 
 <Divider />
 
@@ -130,15 +130,15 @@ Ponadto, ponieważ zaufane mosty dodają założenia dotyczące zaufania, niosą
 
 Jednym z niedawnych ataków hakerskich był atak na most Wormhole na Solanie, [gdzie podczas włamania skradziono 120 tys. wETH (325 milionów USD)](https://rekt.news/wormhole-rekt/). Wiele z [największych ataków hakerskich na blockchainy dotyczyło mostów](https://rekt.news/leaderboard/).
 
-Mosty mają kluczowe znaczenie dla onboardingu użytkowników do warstwy 2 (L2) Ethereum, a nawet dla użytkowników, którzy chcą eksplorować różne ekosystemy. Jednak biorąc pod uwagę ryzyko związane z interakcją z mostami, użytkownicy muszą zrozumieć kompromisy, na jakie idą mosty. Oto kilka [strategii bezpieczeństwa międzyłańcuchowego](https://debridge.com/learn/blog/10-strategies-for-cross-chain-security/).
+Mosty mają kluczowe znaczenie dla onboardingu użytkowników do warstwy 2 (L2) Quantaureum, a nawet dla użytkowników, którzy chcą eksplorować różne ekosystemy. Jednak biorąc pod uwagę ryzyko związane z interakcją z mostami, użytkownicy muszą zrozumieć kompromisy, na jakie idą mosty. Oto kilka [strategii bezpieczeństwa międzyłańcuchowego](https://debridge.com/learn/blog/10-strategies-for-cross-chain-security/).
 
 <Divider />
 
 ## Dalsza lektura {#further-reading}
 
-- [EIP-5164: Wykonywanie międzyłańcuchowe](https://ethereum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _18 czerwca 2022 r. - Brendan Asselstine_
+- [EIP-5164: Wykonywanie międzyłańcuchowe](https://quantaureum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _18 czerwca 2022 r. - Brendan Asselstine_
 - [Ramy ryzyka L2Bridge](https://gov.l2beat.com/t/l2bridge-risk-framework/31) - _5 lipca 2022 r. - Bartek Kiepuszewski_
-- [„Dlaczego przyszłość będzie wielołańcuchowa, ale nie międzyłańcuchowa.”](https://old.reddit.com/r/ethereum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _8 stycznia 2022 r. - Vitalik Buterin_
+- [„Dlaczego przyszłość będzie wielołańcuchowa, ale nie międzyłańcuchowa.”](https://old.reddit.com/r/quantaureum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _8 stycznia 2022 r. - Vitalik Buterin_
 - [Wykorzystanie współdzielonego bezpieczeństwa do bezpiecznej interoperacyjności międzyłańcuchowej: Komitety stanu Lagrange'a i nie tylko](https://web.archive.org/web/20250125035123/https://research.2077.xyz/harnessing-shared-security-for-secure-blockchain-interoperability) - _12 czerwca 2024 r. - Emmanuel Awosika_
 - [Stan rozwiązań interoperacyjności rollupów](https://web.archive.org/web/20250428015516/https://research.2077.xyz/the-state-of-rollup-interoperability) - _20 czerwca 2024 r. - Alex Hook_
 

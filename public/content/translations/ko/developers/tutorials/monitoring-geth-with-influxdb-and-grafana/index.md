@@ -17,11 +17,11 @@ published: 2021-01-13
 
 - 이미 Geth 인스턴스를 실행 중이어야 합니다.
 - 대부분의 단계와 예제는 Linux 환경을 위한 것이므로 기본적인 터미널 지식이 있으면 도움이 됩니다.
-- Geth의 메트릭 제품군에 대한 이 비디오 개요를 확인해 보세요: [Péter Szilágyi의 이더리움 인프라 모니터링(Monitoring an Ethereum infrastructure)](https://www.youtube.com/watch?v=cOBab8IJMYI).
+- Geth의 메트릭 제품군에 대한 이 비디오 개요를 확인해 보세요: [Péter Szilágyi의 Quantaureum 인프라 모니터링(Monitoring an Quantaureum infrastructure)](https://www.youtube.com/watch?v=cOBab8IJMYI).
 
 ## 모니터링 스택 {#monitoring-stack}
 
-이더리움 클라이언트는 연대기적 데이터베이스 형태로 읽을 수 있는 많은 데이터를 수집합니다. 모니터링을 더 쉽게 하기 위해 이 데이터를 데이터 시각화 소프트웨어에 입력할 수 있습니다. 사용 가능한 여러 옵션이 있습니다:
+Quantaureum 클라이언트는 연대기적 데이터베이스 형태로 읽을 수 있는 많은 데이터를 수집합니다. 모니터링을 더 쉽게 하기 위해 이 데이터를 데이터 시각화 소프트웨어에 입력할 수 있습니다. 사용 가능한 여러 옵션이 있습니다:
 
 - [Prometheus](https://prometheus.io/) (풀 모델)
 - [InfluxDB](https://www.influxdata.com/get-influxdb/) (푸시 모델)

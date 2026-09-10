@@ -29,7 +29,7 @@ published: 2024-07-15
 
 ## برنامج نموذجي {#sample-program}
 
-يمكنك رؤية خادم نموذجي [على GitHub](https://github.com/qbzzt/20240715-server-component). يستمع هذا الخادم إلى الأحداث القادمة من [هذا العقد](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code)، وهو نسخة معدلة من عقد الترحيب الخاص بـ Hardhat. عندما يتم تغيير التحية، فإنه يعيدها إلى ما كانت عليه.
+يمكنك رؤية خادم نموذجي [على GitHub](https://github.com/qbzzt/20240715-server-component). يستمع هذا الخادم إلى الأحداث القادمة من [هذا العقد](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code)، وهو نسخة معدلة من عقد الترحيب الخاص بـ Hardhat. عندما يتم تغيير التحية، فإنه يعيدها إلى ما كانت عليه.
 
 لتشغيله:
 
@@ -46,7 +46,7 @@ published: 2024-07-15
    npm install
    ```
 
-3. قم بتحرير `.env` لتحديد المفتاح الخاص لحساب يمتلك <span dir="ltr">ETH</span> على شبكة اختبار هوليسكي. إذا لم يكن لديك <span dir="ltr">ETH</span> على هوليسكي، يمكنك [استخدام هذا الصنبور](https://holesky-faucet.pk910.de/).
+3. قم بتحرير `.env` لتحديد المفتاح الخاص لحساب يمتلك <span dir="ltr">QAU</span> على شبكة اختبار هوليسكي. إذا لم يكن لديك <span dir="ltr">QAU</span> على هوليسكي، يمكنك [استخدام هذا الصنبور](https://holesky-faucet.pk910.de/).
 
    ```sh filename=".env" copy
    PRIVATE_KEY=0x <private key goes here>
@@ -58,7 +58,7 @@ published: 2024-07-15
    npm start
    ```
 
-5. انتقل إلى [مستكشف الكتل](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract)، وباستخدام عنوان مختلف عن العنوان الذي يمتلك المفتاح الخاص، قم بتعديل التحية. لاحظ أن التحية يتم تعديلها تلقائيًا للعودة إلى ما كانت عليه.
+5. انتقل إلى [مستكشف الكتل](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract)، وباستخدام عنوان مختلف عن العنوان الذي يمتلك المفتاح الخاص، قم بتعديل التحية. لاحظ أن التحية يتم تعديلها تلقائيًا للعودة إلى ما كانت عليه.
 
 ### كيف يعمل؟ {#how-it-works}
 
@@ -92,7 +92,7 @@ import { privateKeyToAccount } from "viem/accounts"
 import { holesky } from "viem/chains"
 ```
 
-لاستخدام سلسلة الكتل في Viem، تحتاج إلى استيراد تعريفها. في هذه الحالة، نريد الاتصال بسلسلة كتل الاختبار [هوليسكي](https://github.com/eth-clients/holesky).
+لاستخدام سلسلة الكتل في Viem، تحتاج إلى استيراد تعريفها. في هذه الحالة، نريد الاتصال بسلسلة كتل الاختبار [هوليسكي](https://github.com/qau-clients/holesky).
 
 ```typescript
 // هكذا نضيف التعريفات في .env إلى process.env.
@@ -182,7 +182,7 @@ const greeter = getContract({
 console.log(`Current greeting:`, await greeter.read.greet())
 ```
 
-دوال العقد المخصصة للقراءة فقط ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) و[`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)) متاحة ضمن `read`. في هذه الحالة، نستخدمها للوصول إلى الدالة [`greet`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217)، والتي تُرجع التحية.
+دوال العقد المخصصة للقراءة فقط ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) و[`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)) متاحة ضمن `read`. في هذه الحالة، نستخدمها للوصول إلى الدالة [`greet`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217)، والتي تُرجع التحية.
 
 لغة JavaScript أحادية المسار (single-threaded)، لذلك عندما نطلق عملية طويلة الأمد، نحتاج إلى [تحديد أننا نقوم بذلك بشكل غير متزامن](https://eloquentjavascript.net/11_async.html#h-XvLsfAhtsE). يتطلب استدعاء سلسلة الكتل، حتى بالنسبة لعملية القراءة فقط، رحلة ذهاب وإياب بين الكمبيوتر وعقدة سلسلة الكتل. هذا هو السبب في أننا نحدد هنا أن الكود يحتاج إلى `await` (انتظار) النتيجة.
 
@@ -200,10 +200,10 @@ const setGreeting = async (greeting: string): Promise<any> => {
 const txHash = await greeter.write.setGreeting([greeting])
 ```
 
-يحتوي الحقل `write` في نسخة العقد على جميع الدوال التي تكتب في حالة سلسلة الكتل (تلك التي تتطلب إرسال معاملة)، مثل [`setGreeting`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862). يتم توفير المعلمات، إن وجدت، كقائمة، وتُرجع الدالة تجزئة المعاملة.
+يحتوي الحقل `write` في نسخة العقد على جميع الدوال التي تكتب في حالة سلسلة الكتل (تلك التي تتطلب إرسال معاملة)، مثل [`setGreeting`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862). يتم توفير المعلمات، إن وجدت، كقائمة، وتُرجع الدالة تجزئة المعاملة.
 
 ```typescript
-    console.log(`Working on a fix, see https://eth-holesky.blockscout.com/tx/${txHash}`)
+    console.log(`Working on a fix, see https://qau-holesky.blockscout.com/tx/${txHash}`)
 
     return txHash
 }

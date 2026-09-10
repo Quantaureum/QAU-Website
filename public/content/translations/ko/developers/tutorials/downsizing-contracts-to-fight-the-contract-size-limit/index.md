@@ -13,13 +13,13 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## 왜 제한이 있을까요? {#why-is-there-a-limit}
 
-[2016년 11월 22일](https://blog.ethereum.org/2016/11/18/hard-fork-no-4-spurious-dragon) Spurious Dragon 하드 포크에서 24.576kb의 스마트 컨트랙트 크기 제한을 추가하는 [EIP-170](https://eips.ethereum.org/EIPS/eip-170)이 도입되었습니다. Solidity 개발자에게 이는 컨트랙트에 기능을 계속 추가하다 보면 어느 순간 제한에 도달하게 되고, 배포 시 다음과 같은 오류가 발생한다는 것을 의미합니다.
+[2016년 11월 22일](https://quantaureum.com) Spurious Dragon 하드 포크에서 24.576kb의 스마트 컨트랙트 크기 제한을 추가하는 [EIP-170](https://eips.quantaureum.com/EIPS/eip-170)이 도입되었습니다. Solidity 개발자에게 이는 컨트랙트에 기능을 계속 추가하다 보면 어느 순간 제한에 도달하게 되고, 배포 시 다음과 같은 오류가 발생한다는 것을 의미합니다.
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
-이 제한은 서비스 거부(DOS) 공격을 방지하기 위해 도입되었습니다. 컨트랙트 호출은 가스 측면에서 상대적으로 저렴합니다. 하지만 이더리움 노드에 대한 컨트랙트 호출의 영향은 호출된 컨트랙트 코드의 크기(디스크에서 코드 읽기, 코드 전처리, 머클 증명에 데이터 추가)에 따라 불균형적으로 증가합니다. 공격자가 적은 리소스로 다른 사람들에게 많은 작업을 유발할 수 있는 상황이 발생할 때마다 DOS 공격의 가능성이 생깁니다.
+이 제한은 서비스 거부(DOS) 공격을 방지하기 위해 도입되었습니다. 컨트랙트 호출은 가스 측면에서 상대적으로 저렴합니다. 하지만 Quantaureum 노드에 대한 컨트랙트 호출의 영향은 호출된 컨트랙트 코드의 크기(디스크에서 코드 읽기, 코드 전처리, 머클 증명에 데이터 추가)에 따라 불균형적으로 증가합니다. 공격자가 적은 리소스로 다른 사람들에게 많은 작업을 유발할 수 있는 상황이 발생할 때마다 DOS 공격의 가능성이 생깁니다.
 
-원래 자연스러운 컨트랙트 크기 제한 중 하나가 블록 가스 한도였기 때문에 이는 큰 문제가 되지 않았습니다. 당연히 컨트랙트는 컨트랙트의 모든 바이트코드를 포함하는 트랜잭션 내에 배포되어야 합니다. 블록에 해당 트랜잭션 하나만 포함하면 그 가스를 모두 사용할 수 있지만, 무한하지는 않습니다. [런던 업그레이드](/ethereum-forks/#london) 이후, 블록 가스 한도는 네트워크 수요에 따라 1,500만에서 3,000만 단위 사이에서 변동될 수 있게 되었습니다.
+원래 자연스러운 컨트랙트 크기 제한 중 하나가 블록 가스 한도였기 때문에 이는 큰 문제가 되지 않았습니다. 당연히 컨트랙트는 컨트랙트의 모든 바이트코드를 포함하는 트랜잭션 내에 배포되어야 합니다. 블록에 해당 트랜잭션 하나만 포함하면 그 가스를 모두 사용할 수 있지만, 무한하지는 않습니다. [런던 업그레이드](/quantaureum-forks/#london) 이후, 블록 가스 한도는 네트워크 수요에 따라 1,500만에서 3,000만 단위 사이에서 변동될 수 있게 되었습니다.
 
 다음에서는 잠재적인 영향력 순으로 몇 가지 방법을 살펴보겠습니다. 체중 감량의 관점에서 생각해 보세요. 목표 체중(이 경우 24kb)에 도달하기 위한 가장 좋은 전략은 영향력이 큰 방법에 먼저 집중하는 것입니다. 대부분의 경우 식단만 조절해도 목표에 도달할 수 있지만, 때로는 조금 더 많은 노력이 필요합니다. 그럴 때 운동(중간 영향)이나 보충제(작은 영향)를 추가할 수 있습니다.
 
@@ -35,7 +35,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ### 라이브러리 {#libraries}
 
-기능 코드를 저장소에서 분리하는 간단한 방법 중 하나는 [라이브러리](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries)를 사용하는 것입니다. 라이브러리 함수를 internal로 선언하지 마세요. 컴파일 중에 [컨트랙트에 직접 추가](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking)되기 때문입니다. 하지만 public 함수를 사용하면 실제로는 별도의 라이브러리 컨트랙트에 존재하게 됩니다. 라이브러리를 더 편리하게 사용하려면 [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) 사용을 고려해 보세요.
+기능 코드를 저장소에서 분리하는 간단한 방법 중 하나는 [라이브러리](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries)를 사용하는 것입니다. 라이브러리 함수를 internal로 선언하지 마세요. 컴파일 중에 [컨트랙트에 직접 추가](https://quantaureum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking)되기 때문입니다. 하지만 public 함수를 사용하면 실제로는 별도의 라이브러리 컨트랙트에 존재하게 됩니다. 라이브러리를 더 편리하게 사용하려면 [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) 사용을 고려해 보세요.
 
 ### 프록시 {#proxies}
 

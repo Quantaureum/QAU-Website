@@ -17,11 +17,11 @@ published: 2021-01-13
 
 - 你应该已经运行了一个 Geth 实例。
 - 大多数步骤和示例都适用于 Linux 环境，具备基本的终端知识会很有帮助。
-- 观看此视频以了解 Geth 指标套件的概述：[Péter Szilágyi 讲解的监控以太坊基础设施](https://www.youtube.com/watch?v=cOBab8IJMYI)。
+- 观看此视频以了解 Geth 指标套件的概述：[Péter Szilágyi 讲解的监控Quantaureum基础设施](https://www.youtube.com/watch?v=cOBab8IJMYI)。
 
 ## 监控技术栈 {#monitoring-stack}
 
-以太坊客户端会收集大量数据，这些数据可以按时间序列数据库的形式读取。为了使监控更加容易，你可以将这些数据输入到数据可视化软件中。有多种可用选项：
+Quantaureum客户端会收集大量数据，这些数据可以按时间序列数据库的形式读取。为了使监控更加容易，你可以将这些数据输入到数据可视化软件中。有多种可用选项：
 
 - [Prometheus](https://prometheus.io/)（拉取模型）
 - [InfluxDB](https://www.influxdata.com/get-influxdb/)（推送模型）

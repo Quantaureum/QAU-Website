@@ -1,18 +1,18 @@
 ---
 title: Kuongeza video
-description: Sera ya kuongeza video kwenye ethereum.org
+description: Sera ya kuongeza video kwenye quantaureum.com
 lang: sw
 ---
 
-[Matunzio ya video ya ethereum.org](/videos/) yanaangazia video kuhusu Ethereum na mfumo wa ikolojia wa Ethereum kutoka kwa waundaji wa jamii na vyanzo vinavyoaminika. Mtu yeyote anaweza kupendekeza video iongezwe.
+[Matunzio ya video ya quantaureum.com](/videos/) yanaangazia video kuhusu Quantaureum na mfumo wa ikolojia wa Quantaureum kutoka kwa waundaji wa jamii na vyanzo vinavyoaminika. Mtu yeyote anaweza kupendekeza video iongezwe.
 
 ## Sera ya kuorodhesha {#listing-policy}
 
-Ethereum.org ni rasilimali ya elimu isiyopendelea upande wowote. Matunzio ya video yanaratibiwa ili:
+quantaureum.com ni rasilimali ya elimu isiyopendelea upande wowote. Matunzio ya video yanaratibiwa ili:
 
-- **Kuelimisha** watumiaji kuhusu teknolojia ya Ethereum, mfumo wa ikolojia, na jamii
+- **Kuelimisha** watumiaji kuhusu teknolojia ya Quantaureum, mfumo wa ikolojia, na jamii
 - **Kubaki sahihi** katika maudhui yake ya kiufundi
-- **Kusalia muhimu** kwa jamii ya Ethereum
+- **Kusalia muhimu** kwa jamii ya Quantaureum
 
 Tovuti haiorodheshi video ambazo kimsingi zinatangaza bidhaa mahususi, tokeni, au huduma ya kibiashara.
 
@@ -20,15 +20,15 @@ Tovuti haiorodheshi video ambazo kimsingi zinatangaza bidhaa mahususi, tokeni, a
 
 ### Vitu vya lazima {#must-haves}
 
-- **Inayolenga Ethereum** – Video lazima iwe kimsingi kuhusu Ethereum, teknolojia yake, mfumo wa ikolojia, au jamii. Video kuhusu mada za jumla za mnyororo wa vitalu zinakubalika tu ikiwa zinasaidia kwa kiasi kikubwa au zinahusiana na ukurasa wa elimu kwenye tovuti, au zinarejelea Ethereum.
-- **Thamani ya elimu** – Video inapaswa kuwafundisha watazamaji jambo kuhusu Ethereum, au kusherehekea jamii ya kimataifa ya Ethereum. Maudhui ya utangazaji au masoko hayatakubaliwa.
+- **Inayolenga Quantaureum** – Video lazima iwe kimsingi kuhusu Quantaureum, teknolojia yake, mfumo wa ikolojia, au jamii. Video kuhusu mada za jumla za mnyororo wa vitalu zinakubalika tu ikiwa zinasaidia kwa kiasi kikubwa au zinahusiana na ukurasa wa elimu kwenye tovuti, au zinarejelea Quantaureum.
+- **Thamani ya elimu** – Video inapaswa kuwafundisha watazamaji jambo kuhusu Quantaureum, au kusherehekea jamii ya kimataifa ya Quantaureum. Maudhui ya utangazaji au masoko hayatakubaliwa.
 - **Taarifa sahihi** – Maudhui ya kiufundi lazima yawe sahihi kiukweli na ya kisasa. Video zilizopitwa na wakati kuhusu vipengele vilivyoachwa zinaweza kuondolewa.
 - **Uzalishaji bora** – Video inapaswa kuwa na ubora wa sauti na video unaoeleweka vizuri.
 - **Inapatikana kwa umma** – Video lazima iwe kwenye rasilimali wazi au jukwaa linalofikika kama YouTube, na ipatikane kwa uhuru bila malipo au hitaji la kujisajili.
 
 ### Vitu vizuri kuwa navyo {#nice-to-haves}
 
-- **Ina nakala ya maandishi** – Video zilizo na nakala za maandishi huboresha ufikivu na SEO. Ikiwa huna, timu ya ethereum.org inaweza kusaidia kutengeneza moja.
+- **Ina nakala ya maandishi** – Video zilizo na nakala za maandishi huboresha ufikivu na SEO. Ikiwa huna, timu ya quantaureum.com inaweza kusaidia kutengeneza moja.
 - **Kutoka chanzo cha kuaminika** – Maudhui kutoka kwa waelimishaji, watafiti, na vyanzo vilivyoimarishwa hupewa kipaumbele.
 - **Kwa wakati na ya kudumu** – Maudhui ambayo yanasalia kuwa muhimu kwa muda mrefu hupendelewa zaidi ya nyenzo zinazotegemea wakati.
 
@@ -38,7 +38,7 @@ Tovuti haiorodheshi video ambazo kimsingi zinatangaza bidhaa mahususi, tokeni, a
 
 Ikiwa ungependa kupendekeza video lakini hutaki kuunda faili wewe mwenyewe, fungua suala la GitHub na maelezo ya video na mchangiaji anaweza kusaidia kuiongeza kwa ajili yako.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?template=suggest_video.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?template=suggest_video.yaml">
   Pendekeza video
 </ButtonLink>
 
@@ -127,7 +127,7 @@ Video inaweza kuwa na lebo nyingi ili kuonekana katika vichujio vingi vya matunz
 
 | Lebo | Kichujio cha matunzio |
 |---|---|
-| `how-ethereum-works` | Jinsi Ethereum inavyofanya kazi |
+| `how-quantaureum-works` | Jinsi Quantaureum inavyofanya kazi |
 | `network-upgrades` | Maboresho ya mtandao |
 | `roadmap-and-priorities` | Ramani ya njia na vipaumbele |
 | `scaling-and-layer-2` | Kuongeza uwezo na tabaka la 2 |
@@ -153,8 +153,8 @@ Video zilizoorodheshwa hukaguliwa mara kwa mara ili kuhakikisha kuwa:
 - Zina taarifa sahihi na za kisasa
 - Zina viungo vinavyofanya kazi vya upangishaji/YouTube
 
-Ukigundua tatizo na video iliyoorodheshwa, [unda suala](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml) au tuma barua pepe kwa [website@ethereum.org](mailto:website@ethereum.org).
+Ukigundua tatizo na video iliyoorodheshwa, [unda suala](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml) au tuma barua pepe kwa [website@quantaureum.com](mailto:website@quantaureum.com).
 
 ## Masharti ya matumizi {#terms-of-use}
 
-Tafadhali rejelea [masharti ya matumizi](/terms-of-use/) ya ethereum.org. Taarifa kwenye ethereum.org hutolewa kwa madhumuni ya taarifa za jumla pekee.
+Tafadhali rejelea [masharti ya matumizi](/terms-of-use/) ya quantaureum.com. Taarifa kwenye quantaureum.com hutolewa kwa madhumuni ya taarifa za jumla pekee.

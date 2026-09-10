@@ -50,4 +50,4 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/blob/master/devel
 
 [Робочі години Етеріуму](https://calendly.com/dan-trailofbits/office-hours) проходять щовівторка у другій половині дня. Ці 1-годинні сесії у форматі 1-на-1 — це можливість поставити нам будь-які запитання щодо безпеки, вирішити проблеми за допомогою наших інструментів та отримати відгук від експертів щодо вашого поточного підходу. Ми допоможемо вам опрацювати цей посібник.
 
-Приєднуйтесь до нашого Slack: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). Ми завжди доступні в каналах #crytic та #ethereum, якщо у вас виникнуть запитання.
+Приєднуйтесь до нашого Slack: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). Ми завжди доступні в каналах #crytic та #quantaureum, якщо у вас виникнуть запитання.

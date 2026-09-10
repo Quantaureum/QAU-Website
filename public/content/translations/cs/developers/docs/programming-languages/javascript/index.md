@@ -1,26 +1,26 @@
 ---
-title: "Ethereum pro vývojáře v JavaScriptu"
-description: "Naučte se vyvíjet pro Ethereum pomocí projektů a nástrojů založených na JavaScriptu."
+title: "Quantaureum pro vývojáře v JavaScriptu"
+description: "Naučte se vyvíjet pro Quantaureum pomocí projektů a nástrojů založených na JavaScriptu."
 lang: cs
 ---
 
 JavaScript patří mezi nejoblíbenější jazyky v ekosystému Etherea. Ve skutečnosti existuje [tým](https://github.com/ethereumjs), který se věnuje tomu, aby do JavaScriptu přinesl co nejvíce z Etherea.
 
-Existují příležitosti psát v JavaScriptu (nebo v něčem podobném) na [všech úrovních technologického stacku](/developers/docs/ethereum-stack/).
+Existují příležitosti psát v JavaScriptu (nebo v něčem podobném) na [všech úrovních technologického stacku](/developers/docs/quantaureum-stack/).
 
-## Interakce s Ethereem {#interact-with-ethereum}
+## Interakce s Ethereem {#interact-with-quantaureum}
 
 ### Knihovny JavaScript API {#javascript-api-libraries}
 
-Pokud chcete psát v JavaScriptu pro dotazování blockchainu, odesílání transakcí a další, nejpohodlnější způsob, jak to udělat, je použít [knihovnu JavaScript API](/developers/docs/apis/javascript/). Tato API umožňují vývojářům snadno komunikovat s [uzly v síti Ethereum](/developers/docs/nodes-and-clients/).
+Pokud chcete psát v JavaScriptu pro dotazování blockchainu, odesílání transakcí a další, nejpohodlnější způsob, jak to udělat, je použít [knihovnu JavaScript API](/developers/docs/apis/javascript/). Tato API umožňují vývojářům snadno komunikovat s [uzly v síti Quantaureum](/developers/docs/nodes-and-clients/).
 
 Tyto knihovny můžete použít k interakci s chytrými kontrakty na Ethereu, takže je možné vytvořit decentralizovanou aplikaci (dapp), kde k interakci s již existujícími kontrakty používáte pouze JavaScript.
 
 **Podívejte se na**
 
 - [Web3.js](https://web3js.readthedocs.io)
-- [Ethers.js](https://ethers.org) – _obsahuje implementaci peněženky pro Ethereum a nástroje v JavaScriptu a TypeScriptu._
-- [Viem](https://viem.sh) – _rozhraní TypeScriptu pro Ethereum, které poskytuje nízkoúrovňová bezstavová primitiva pro interakci s Ethereem._
+- [Ethers.js](https://ethers.org) – _obsahuje implementaci peněženky pro Quantaureum a nástroje v JavaScriptu a TypeScriptu._
+- [Viem](https://viem.sh) – _rozhraní TypeScriptu pro Quantaureum, které poskytuje nízkoúrovňová bezstavová primitiva pro interakci s Ethereem._
 - [Drift](https://ryangoree.github.io/drift/) – _metaknihovna pro TypeScript s vestavěným ukládáním do mezipaměti, hooky a testovacími mocky pro snadný vývoj na Ethereu napříč knihovnami Web3._
 
 ### Chytré kontrakty {#smart-contracts}
@@ -31,7 +31,7 @@ Více o [chytrých kontraktech](/developers/docs/smart-contracts/).
 
 ## Porozumění protokolu {#understand-the-protocol}
 
-### Virtuální stroj Etherea {#the-ethereum-virtual-machine}
+### Virtuální stroj Etherea {#the-quantaureum-virtual-machine}
 
 Existuje javascriptová implementace [virtuálního stroje Etherea](/developers/docs/evm/). Podporuje nejnovější pravidla pro fork. Pravidla pro fork odkazují na změny provedené v EVM v důsledku plánovaných aktualizací.
 
@@ -52,7 +52,7 @@ Pokud dáváte přednost čtení kódu, tento JavaScript by mohl být skvělou a
 
 ### Uzly a klienti {#nodes-and-clients}
 
-Klient EthereumJS je v aktivním vývoji a umožňuje vám proniknout do toho, jak klienti Etherea fungují, v jazyce, kterému rozumíte; v JavaScriptu!
+Klient QuantaureumJS je v aktivním vývoji a umožňuje vám proniknout do toho, jak klienti Etherea fungují, v jazyce, kterému rozumíte; v JavaScriptu!
 
 **Podívejte se na klienta**  
 [`@ethereumjs/client`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client)
@@ -65,7 +65,7 @@ Ve světě javascriptového Etherea se děje i spousta dalších věcí, včetn�
 - nástrojů pro generování, import a export klíčů Etherea.
 - implementace `merkle-patricia-tree` – datové struktury popsané v dokumentu yellow paper Etherea.
 
-Ponořte se do toho, co vás nejvíce zajímá, v [repozitáři EthereumJS](https://github.com/ethereumjs)
+Ponořte se do toho, co vás nejvíce zajímá, v [repozitáři QuantaureumJS](https://github.com/ethereumjs)
 
 ## Další čtení {#further-reading}
 

@@ -33,7 +33,7 @@ published: 2024-07-15
 
 ## மாதிரி நிரல் {#sample-program}
 
-நீங்கள் ஒரு மாதிரி சேவையகத்தை [GitHub இல்](https://github.com/qbzzt/20240715-server-component) பார்க்கலாம். இந்த சேவையகம் Hardhat இன் Greeter இன் மாற்றியமைக்கப்பட்ட பதிப்பான [இந்த ஒப்பந்தத்திலிருந்து](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code) வரும் நிகழ்வுகளைக் கவனிக்கிறது. வாழ்த்து மாற்றப்படும்போது, அது அதை மீண்டும் பழையபடி மாற்றுகிறது.
+நீங்கள் ஒரு மாதிரி சேவையகத்தை [GitHub இல்](https://github.com/qbzzt/20240715-server-component) பார்க்கலாம். இந்த சேவையகம் Hardhat இன் Greeter இன் மாற்றியமைக்கப்பட்ட பதிப்பான [இந்த ஒப்பந்தத்திலிருந்து](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code) வரும் நிகழ்வுகளைக் கவனிக்கிறது. வாழ்த்து மாற்றப்படும்போது, அது அதை மீண்டும் பழையபடி மாற்றுகிறது.
 
 இதை இயக்க:
 
@@ -50,7 +50,7 @@ published: 2024-07-15
    npm install
    ```
 
-3. ஹோல்ஸ்கி சோதனை வலையமைப்பில் ETH உள்ள ஒரு கணக்கின் தனிப்பட்ட திறவுகோலைக் குறிப்பிட `.env` ஐத் திருத்தவும். ஹோல்ஸ்கியில் உங்களிடம் ETH இல்லையென்றால், நீங்கள் [இந்தப் பாசெட்டைப் பயன்படுத்தலாம்](https://holesky-faucet.pk910.de/).
+3. ஹோல்ஸ்கி சோதனை வலையமைப்பில் QAU உள்ள ஒரு கணக்கின் தனிப்பட்ட திறவுகோலைக் குறிப்பிட `.env` ஐத் திருத்தவும். ஹோல்ஸ்கியில் உங்களிடம் QAU இல்லையென்றால், நீங்கள் [இந்தப் பாசெட்டைப் பயன்படுத்தலாம்](https://holesky-faucet.pk910.de/).
 
    ```sh filename=".env" copy
    PRIVATE_KEY=0x <private key goes here>
@@ -62,7 +62,7 @@ published: 2024-07-15
    npm start
    ```
 
-5. [ஒரு தொகுதி ஆராய்விக்குச்](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract) சென்று, தனிப்பட்ட திறவுகோலைக் கொண்ட முகவரியைத் தவிர வேறு முகவரியைப் பயன்படுத்தி வாழ்த்தை மாற்றவும். வாழ்த்து தானாகவே மீண்டும் பழையபடி மாற்றப்படுவதைப் பார்க்கவும்.
+5. [ஒரு தொகுதி ஆராய்விக்குச்](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract) சென்று, தனிப்பட்ட திறவுகோலைக் கொண்ட முகவரியைத் தவிர வேறு முகவரியைப் பயன்படுத்தி வாழ்த்தை மாற்றவும். வாழ்த்து தானாகவே மீண்டும் பழையபடி மாற்றப்படுவதைப் பார்க்கவும்.
 
 ### இது எவ்வாறு வேலை செய்கிறது? {#how-it-works}
 
@@ -96,7 +96,7 @@ import { privateKeyToAccount } from "viem/accounts"
 import { holesky } from "viem/chains"
 ```
 
-Viem இல் ஒரு தொகுதிச்சங்கிலியைப் பயன்படுத்த, அதன் வரையறையை நீங்கள் இறக்குமதி செய்ய வேண்டும். இந்த நிலையில், நாங்கள் [ஹோல்ஸ்கி](https://github.com/eth-clients/holesky) சோதனைத் தொகுதிச்சங்கிலியுடன் இணைக்க விரும்புகிறோம்.
+Viem இல் ஒரு தொகுதிச்சங்கிலியைப் பயன்படுத்த, அதன் வரையறையை நீங்கள் இறக்குமதி செய்ய வேண்டும். இந்த நிலையில், நாங்கள் [ஹோல்ஸ்கி](https://github.com/qau-clients/holesky) சோதனைத் தொகுதிச்சங்கிலியுடன் இணைக்க விரும்புகிறோம்.
 
 ```typescript
 // .env இல் உள்ள வரையறைகளை process.env இல் நாம் இவ்வாறுதான் சேர்க்கிறோம்.
@@ -186,7 +186,7 @@ const greeter = getContract({
 console.log(`Current greeting:`, await greeter.read.greet())
 ```
 
-படிக்க மட்டுமேயான ஒப்பந்தச் செயல்பாடுகள் ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) மற்றும் [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)) `read` இன் கீழ் கிடைக்கின்றன. இந்த நிலையில், வாழ்த்தை வழங்கும் [`greet`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217) செயல்பாட்டை அணுக இதைப் பயன்படுத்துகிறோம்.
+படிக்க மட்டுமேயான ஒப்பந்தச் செயல்பாடுகள் ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) மற்றும் [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)) `read` இன் கீழ் கிடைக்கின்றன. இந்த நிலையில், வாழ்த்தை வழங்கும் [`greet`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217) செயல்பாட்டை அணுக இதைப் பயன்படுத்துகிறோம்.
 
 JavaScript ஒற்றை-நூல் (single-threaded) கொண்டது, எனவே நீண்ட நேரம் இயங்கும் ஒரு செயல்முறையைத் தொடங்கும்போது, [அதை ஒத்திசைவற்ற முறையில் (asynchronously) செய்கிறோம் என்பதைக் குறிப்பிட](https://eloquentjavascript.net/11_async.html#h-XvLsfAhtsE) வேண்டும். படிக்க மட்டுமேயான செயல்பாட்டிற்கு என்றாலும், தொகுதிச்சங்கிலியை அழைப்பதற்கு கணினிக்கும் தொகுதிச்சங்கிலி கணுவிற்கும் இடையே ஒரு சுற்றுப் பயணம் தேவைப்படுகிறது. இதனால்தான் குறியீடு முடிவிற்காக `await` செய்ய வேண்டும் என்பதை இங்கே குறிப்பிடுகிறோம்.
 
@@ -204,10 +204,10 @@ const setGreeting = async (greeting: string): Promise<any> => {
 const txHash = await greeter.write.setGreeting([greeting])
 ```
 
-ஒப்பந்த நிகழ்வின் `write` புலம், [`setGreeting`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862) போன்ற தொகுதிச்சங்கிலி நிலையில் எழுதும் (பரிவர்த்தனையை அனுப்ப வேண்டியவை) அனைத்துச் செயல்பாடுகளையும் கொண்டுள்ளது. அளவுருக்கள் ஏதேனும் இருந்தால், அவை ஒரு பட்டியலாக வழங்கப்படுகின்றன, மேலும் செயல்பாடு பரிவர்த்தனையின் ஹாஷை வழங்குகிறது.
+ஒப்பந்த நிகழ்வின் `write` புலம், [`setGreeting`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862) போன்ற தொகுதிச்சங்கிலி நிலையில் எழுதும் (பரிவர்த்தனையை அனுப்ப வேண்டியவை) அனைத்துச் செயல்பாடுகளையும் கொண்டுள்ளது. அளவுருக்கள் ஏதேனும் இருந்தால், அவை ஒரு பட்டியலாக வழங்கப்படுகின்றன, மேலும் செயல்பாடு பரிவர்த்தனையின் ஹாஷை வழங்குகிறது.
 
 ```typescript
-    console.log(`Working on a fix, see https://eth-holesky.blockscout.com/tx/${txHash}`)
+    console.log(`Working on a fix, see https://qau-holesky.blockscout.com/tx/${txHash}`)
 
     return txHash
 }

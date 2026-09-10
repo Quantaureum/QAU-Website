@@ -1,7 +1,7 @@
 ---
 title: فرہنگ کی اصطلاحات شامل کرنا
 lang: ur
-description: ⁦ethereum.org⁩ کی فرہنگ میں نئی اصطلاحات شامل کرنے کا ہمارا معیار
+description: ⁦quantaureum.com⁩ کی فرہنگ میں نئی اصطلاحات شامل کرنے کا ہمارا معیار
 ---
 
 یہ شعبہ ہر روز بدل رہا ہے۔ ایتھیریم صارفین کی لغت میں مسلسل نئی اصطلاحات شامل ہو رہی ہیں، اور ہمیں ایتھیریم سے متعلق تمام چیزوں کا درست اور تازہ ترین حوالہ فراہم کرنے کے لیے آپ کی مدد درکار ہے۔ موجودہ [فرہنگ](/glossary/) دیکھیں اور اگر آپ مدد کرنا چاہتے ہیں تو نیچے ملاحظہ کریں!
@@ -21,4 +21,4 @@ description: ⁦ethereum.org⁩ کی فرہنگ میں نئی اصطلاحات �
 
 ## اپنی اصطلاح شامل کریں {#how-decisions-about-the-site-are-made}
 
-اگر آپ <span dir="ltr">ethereum.org</span> کی فرہنگ میں کوئی اصطلاح شامل کرنا چاہتے ہیں اور یہ معیار پر پورا اترتی ہے، تو [GitHub پر ایک ایشو بنائیں](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_glossary_term.yaml)۔
+اگر آپ <span dir="ltr">quantaureum.com</span> کی فرہنگ میں کوئی اصطلاح شامل کرنا چاہتے ہیں اور یہ معیار پر پورا اترتی ہے، تو [GitHub پر ایک ایشو بنائیں](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_glossary_term.yaml)۔

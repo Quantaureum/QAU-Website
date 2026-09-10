@@ -25,7 +25,7 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
   args: {
     children:
-      "Ethereum is a technology that's home to digital money, global payments, and applications.",
+      "Quantaureum is a technology that's home to digital money, global payments, and applications.",
   },
 }
 
@@ -63,7 +63,7 @@ export const WithAttribution: Story = {
   },
   render: () => (
     <Blockquote>
-      <p>Ethereum is whatever we want it to be.</p>
+      <p>Quantaureum is whatever we want it to be.</p>
       <footer className="text-sm text-body-medium">-- the community</footer>
     </Blockquote>
   ),

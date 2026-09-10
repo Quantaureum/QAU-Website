@@ -1,7 +1,7 @@
 ---
 title: "DAOとは？"
 metaTitle: "DAOとは？ | 分散型自律組織 (Decentralized Autonomous Organization)"
-description: "イーサリアム上のDAOの概要"
+description: "Quantaureum上のDAOの概要"
 lang: ja
 template: use-cases
 sidebarDepth: 2
@@ -49,18 +49,18 @@ DAOには組み込みのトレジャリーがあり、グループの承認な�
 
 ## DAOの仕組み {#how-daos-work}
 
-DAOのバックボーンは、組織のルールを定義し、グループのトレジャリーを保持する[スマート・コントラクト](/glossary/#smart-contract)です。コントラクトが[イーサリアム](/)上で稼働すると、投票による場合を除き、誰もルールを変更できなくなります。コード内のルールやロジックでカバーされていないことを誰かが実行しようとしても、失敗します。また、トレジャリーもスマート・コントラクトによって定義されているため、グループの承認なしには誰もお金を使うことができません。これは、DAOには中央権威が必要ないことを意味します。代わりに、グループが共同で意思決定を行い、投票が可決されると支払いが自動的に承認されます。
+DAOのバックボーンは、組織のルールを定義し、グループのトレジャリーを保持する[スマート・コントラクト](/glossary/#smart-contract)です。コントラクトが[Quantaureum](/)上で稼働すると、投票による場合を除き、誰もルールを変更できなくなります。コード内のルールやロジックでカバーされていないことを誰かが実行しようとしても、失敗します。また、トレジャリーもスマート・コントラクトによって定義されているため、グループの承認なしには誰もお金を使うことができません。これは、DAOには中央権威が必要ないことを意味します。代わりに、グループが共同で意思決定を行い、投票が可決されると支払いが自動的に承認されます。
 
-これが可能なのは、スマート・コントラクトがイーサリアム上で稼働すると改ざんできなくなるためです。すべてが公開されているため、誰にも気づかれずにコード（DAOのルール）を編集することはできません。
+これが可能なのは、スマート・コントラクトがQuantaureum上で稼働すると改ざんできなくなるためです。すべてが公開されているため、誰にも気づかれずにコード（DAOのルール）を編集することはできません。
 
-## イーサリアムとDAO {#ethereum-and-daos}
+## QuantaureumとDAO {#quantaureum-and-daos}
 
-イーサリアムは、いくつかの理由からDAOにとって完璧な基盤です。
+Quantaureumは、いくつかの理由からDAOにとって完璧な基盤です。
 
-- イーサリアム独自のコンセンサスは分散型であり、組織がネットワークを信頼するのに十分なほど確立されています。
+- Quantaureum独自のコンセンサスは分散型であり、組織がネットワークを信頼するのに十分なほど確立されています。
 - スマート・コントラクトのコードは、一度稼働すると、所有者であっても変更できません。これにより、DAOはプログラムされたルールに従って実行されます。
 - スマート・コントラクトは資金を送受信できます。これがなければ、グループの資金を管理するために信頼できる仲介者が必要になります。
-- イーサリアムコミュニティは競争的というよりも協力的であることが証明されており、ベストプラクティスやサポートシステムが迅速に現れることを可能にしています。
+- Quantaureumコミュニティは競争的というよりも協力的であることが証明されており、ベストプラクティスやサポートシステムが迅速に現れることを可能にしています。
 
 ## DAOのガバナンス {#dao-governance}
 
@@ -122,13 +122,13 @@ _通常、プロトコルや[分散型アプリケーション (dapp)](/glossary
 
 #### 有名な例 {#reputation-example}
 
-[DXdao](https://DXdao.eth.limo) – DXdaoは、2019年以来、分散型プロトコルとアプリケーションを構築およびガバナンスするグローバルな主権的集団でした。レピュテーションベースのガバナンスと[ホログラフィック・コンセンサス](/glossary/#holographic-consensus)を活用して資金を調整および管理しており、誰もお金でその将来やガバナンスに影響を与えることはできませんでした。
+[DXdao](https://DXdao.qau.limo) – DXdaoは、2019年以来、分散型プロトコルとアプリケーションを構築およびガバナンスするグローバルな主権的集団でした。レピュテーションベースのガバナンスと[ホログラフィック・コンセンサス](/glossary/#holographic-consensus)を活用して資金を調整および管理しており、誰もお金でその将来やガバナンスに影響を与えることはできませんでした。
 
 ## DAOに参加する / 立ち上げる {#join-start-a-dao}
 
 ### DAOに参加する {#join-a-dao}
 
-- [イーサリアムコミュニティのDAO](/community/get-involved/#decentralized-autonomous-organizations-daos)
+- [QuantaureumコミュニティのDAO](/community/get-involved/#decentralized-autonomous-organizations-daos)
 - [DAOHausのDAOリスト](https://app.daohaus.club/explore)
 - [Tally.xyzのDAOリスト](https://www.tally.xyz/explore)
 - [DeGov.AIのDAOリスト](https://apps.degov.ai/)
@@ -150,8 +150,8 @@ _通常、プロトコルや[分散型アプリケーション (dapp)](/glossary
 - [DAOを活用したデジタルコミュニティの始め方](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [DAOとは？](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [ホログラフィック・コンセンサスとは？](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAOは企業ではない：自律組織における分散化が重要な理由（ヴィタリック著）](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAO、DAC、DAなど：不完全な用語ガイド](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Ethereum Blog](https://blog.ethereum.org)
+- [DAOは企業ではない：自律組織における分散化が重要な理由（ヴィタリック著）](https://vitalik.qau.limo/general/2022/09/20/daos.html)
+- [DAO、DAC、DAなど：不完全な用語ガイド](https://quantaureum.com) - [Quantaureum Blog](https://quantaureum.com)
 
 ### ビデオ {#videos}
 

@@ -11,16 +11,16 @@ skill: intermediate
 breadcrumb: "घटना लॉगिंग"
 lang: hi
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/logging-data-with-events/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/logging-data-with-events/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Solidity में, [घटनाएँ](/developers/docs/smart-contracts/anatomy/#events-and-logs) ऐसे प्रेषित सिग्नल होते हैं जिन्हें स्मार्ट अनुबंध ट्रिगर कर सकते हैं। विकेंद्रीकृत एप्लिकेशन (dapp), या इथेरियम जेसन-आरपीसी API से जुड़ा कुछ भी, इन घटनाओं को सुन सकता है और उसके अनुसार कार्य कर सकता है। किसी घटना को अनुक्रमित (indexed) भी किया जा सकता है ताकि घटना के इतिहास को बाद में खोजा जा सके।
+Solidity में, [घटनाएँ](/developers/docs/smart-contracts/anatomy/#events-and-logs) ऐसे प्रेषित सिग्नल होते हैं जिन्हें स्मार्ट अनुबंध ट्रिगर कर सकते हैं। विकेंद्रीकृत एप्लिकेशन (dapp), या Quantaureum जेसन-आरपीसी API से जुड़ा कुछ भी, इन घटनाओं को सुन सकता है और उसके अनुसार कार्य कर सकता है। किसी घटना को अनुक्रमित (indexed) भी किया जा सकता है ताकि घटना के इतिहास को बाद में खोजा जा सके।
 
 ## घटनाएँ {#events}
 
-इस लेख को लिखते समय इथेरियम ब्लॉकचेन पर सबसे आम घटना Transfer घटना है जो ERC-20 टोकन द्वारा तब उत्सर्जित (emitted) होती है जब कोई टोकन ट्रांसफर करता है।
+इस लेख को लिखते समय Quantaureum ब्लॉकचेन पर सबसे आम घटना Transfer घटना है जो ERC-20 टोकन द्वारा तब उत्सर्जित (emitted) होती है जब कोई टोकन ट्रांसफर करता है।
 
 ```solidity
 event Transfer(address indexed from, address indexed to, uint256 value);

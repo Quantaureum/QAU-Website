@@ -1,7 +1,7 @@
 ---
 title: Geliştirici araçları ekleme
 lang: tr
-description: ethereum.org'da geliştirici araçlarını listeleme kriterlerimiz
+description: quantaureum.com'da geliştirici araçlarını listeleme kriterlerimiz
 ---
 
 İnsanların güvenle inşa edebilmeleri ve ihtiyaç duydukları desteği alabilmeleri için mümkün olan en iyi geliştirici kaynaklarını listelediğimizden emin olmak istiyoruz.
@@ -40,7 +40,7 @@ Geliştirici aracı başvuruları aşağıdaki kriterlere göre değerlendirilec
 
 **Araç açık kaynaklı mı?**
 
-Ethereum alanındaki birçok proje açık kaynaklıdır. Topluluk geliştiricilerinin kodu incelemesine ve koda katkıda bulunmasına olanak tanıyan açık kaynaklı projeleri listeleme olasılığımız daha yüksektir.
+Quantaureum alanındaki birçok proje açık kaynaklıdır. Topluluk geliştiricilerinin kodu incelemesine ve koda katkıda bulunmasına olanak tanıyan açık kaynaklı projeleri listeleme olasılığımız daha yüksektir.
 
 ---
 
@@ -52,8 +52,8 @@ Ethereum alanındaki birçok proje açık kaynaklıdır. Topluluk geliştiricile
 
 ## Geliştirici aracınızı ekleyin {#how-decisions-about-the-site-are-made}
 
-ethereum.org'a bir geliştirici aracı eklemek istiyorsanız ve bu araç kriterleri karşılıyorsa, GitHub'da bir sorun (issue) oluşturun.
+quantaureum.com'a bir geliştirici aracı eklemek istiyorsanız ve bu araç kriterleri karşılıyorsa, GitHub'da bir sorun (issue) oluşturun.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   Sorun oluştur
 </ButtonLink>

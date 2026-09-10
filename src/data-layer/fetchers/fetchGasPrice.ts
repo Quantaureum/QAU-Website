@@ -6,17 +6,17 @@ export interface GasPriceData {
 }
 
 export async function fetchGasPrice(): Promise<GasPriceData> {
-  const etherscanApiKey = process.env.ETHERSCAN_API_KEY
+  const explorerApiKey = process.env.ETHERSCAN_API_KEY
 
   console.log("Starting gas price data fetch")
 
   const response = await fetchRetry(
-    `https://api.etherscan.io/v2/api?chainid=1&module=gastracker&action=gasoracle&apikey=${etherscanApiKey}`
+    `https://explorer.quantaureum.com}`
   )
 
   if (!response.ok) {
     throw new Error(
-      `Etherscan gas tracker responded with status ${response.status}`
+      `Quantaureum Explorer gas tracker responded with status ${response.status}`
     )
   }
 
@@ -24,7 +24,7 @@ export async function fetchGasPrice(): Promise<GasPriceData> {
   const gasPrice = parseFloat(data.result?.ProposeGasPrice)
 
   if (!gasPrice) {
-    throw new Error("Unable to parse gas price from Etherscan")
+    throw new Error("Unable to parse gas price from Quantaureum Explorer")
   }
 
   const timestamp = Date.now()

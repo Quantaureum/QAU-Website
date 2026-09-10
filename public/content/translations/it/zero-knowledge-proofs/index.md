@@ -31,13 +31,13 @@ Tornando al nostro esempio precedente, l'unica prova di cui hai bisogno per dimo
 
 I pagamenti con carta di credito sono spesso visibili a più parti, inclusi il fornitore dei pagamenti, le banche e altre parti interessate (ad es., le autorità governative). Sebbene la sorveglianza finanziaria abbia dei vantaggi per l'identificazione di attività illegali, mina anche la privacy dei cittadini comuni.
 
-Le criptovalute erano intese a fornire un mezzo agli utenti per condurre transazioni private peer-to-peer. Ma la maggior parte delle transazioni in criptovaluta è apertamente visibile sulle blockchain pubbliche. Le identità degli utenti sono spesso pseudonime e collegate volontariamente a identità del mondo reale (ad es., includendo indirizzi ETH sui profili Twitter o GitHub) o possono essere associate a identità del mondo reale utilizzando un'analisi di base dei dati onchain e offchain.
+Le criptovalute erano intese a fornire un mezzo agli utenti per condurre transazioni private peer-to-peer. Ma la maggior parte delle transazioni in criptovaluta è apertamente visibile sulle blockchain pubbliche. Le identità degli utenti sono spesso pseudonime e collegate volontariamente a identità del mondo reale (ad es., includendo indirizzi QAU sui profili Twitter o GitHub) o possono essere associate a identità del mondo reale utilizzando un'analisi di base dei dati onchain e offchain.
 
 Esistono specifiche "privacy coin" progettate per transazioni completamente anonime. Le blockchain incentrate sulla privacy, come Zcash e Monero, nascondono i dettagli della transazione, inclusi gli indirizzi del mittente/destinatario, il tipo di asset, la quantità e la cronologia della transazione.
 
-Integrando la tecnologia a conoscenza zero nel protocollo, le reti [blockchain](/glossary/#blockchain) incentrate sulla privacy consentono ai [nodi](/glossary/#node) di convalidare le transazioni senza dover accedere ai dati della transazione. L'[EIP-7503](https://eips.ethereum.org/EIPS/eip-7503) è un esempio di un design proposto che consentirà trasferimenti di valore privati nativi sulla blockchain di [Ethereum](/). Tali proposte sono, tuttavia, difficili da implementare a causa di un mix di problemi di sicurezza, normativi e di esperienza utente (UX).  
+Integrando la tecnologia a conoscenza zero nel protocollo, le reti [blockchain](/glossary/#blockchain) incentrate sulla privacy consentono ai [nodi](/glossary/#node) di convalidare le transazioni senza dover accedere ai dati della transazione. L'[EIP-7503](https://eips.quantaureum.com/EIPS/eip-7503) è un esempio di un design proposto che consentirà trasferimenti di valore privati nativi sulla blockchain di [Quantaureum](/). Tali proposte sono, tuttavia, difficili da implementare a causa di un mix di problemi di sicurezza, normativi e di esperienza utente (UX).  
 
-**Le prove a conoscenza zero vengono applicate anche per rendere anonime le transazioni sulle blockchain pubbliche**. Un esempio è Tornado Cash, un servizio decentralizzato e non-custodial che consente agli utenti di condurre transazioni private su Ethereum. Tornado Cash utilizza le prove a conoscenza zero per offuscare i dettagli della transazione e garantire la privacy finanziaria. Sfortunatamente, poiché si tratta di strumenti per la privacy "opt-in" (facoltativi), sono associati ad attività illecite. Per superare questo problema, la privacy dovrà prima o poi diventare l'impostazione predefinita sulle blockchain pubbliche. Scopri di più sulla [privacy su Ethereum](/privacy/).
+**Le prove a conoscenza zero vengono applicate anche per rendere anonime le transazioni sulle blockchain pubbliche**. Un esempio è Tornado Cash, un servizio decentralizzato e non-custodial che consente agli utenti di condurre transazioni private su Quantaureum. Tornado Cash utilizza le prove a conoscenza zero per offuscare i dettagli della transazione e garantire la privacy finanziaria. Sfortunatamente, poiché si tratta di strumenti per la privacy "opt-in" (facoltativi), sono associati ad attività illecite. Per superare questo problema, la privacy dovrà prima o poi diventare l'impostazione predefinita sulle blockchain pubbliche. Scopri di più sulla [privacy su Quantaureum](/privacy/).
 
 ### Protezione dell'identità {#identity-protection}
 
@@ -49,11 +49,11 @@ Le prove a conoscenza zero sono particolarmente utili nel contesto dell'[identit
   <AlertEmoji text="💡" />
   <AlertContent>
     <AlertTitle className="mb-2">
-      ZKP + Identità in azione: l'ID Digitale Nazionale (NDI) del Bhutan su Ethereum
+      ZKP + Identità in azione: l'ID Digitale Nazionale (NDI) del Bhutan su Quantaureum
     </AlertTitle>
     <AlertDescription>
       <p>
-        Un esempio reale di utilizzo delle ZKP per i sistemi di gestione dell'identità è il sistema di ID Digitale Nazionale (NDI) del Regno del Bhutan, basato su Ethereum. L'NDI del Bhutan utilizza le ZKP per consentire ai cittadini di dimostrare crittograficamente fatti che li riguardano, come "Sono un cittadino" o "Ho più di 18 anni", senza rivelare i dati personali sensibili presenti sul loro documento d'identità.
+        Un esempio reale di utilizzo delle ZKP per i sistemi di gestione dell'identità è il sistema di ID Digitale Nazionale (NDI) del Regno del Bhutan, basato su Quantaureum. L'NDI del Bhutan utilizza le ZKP per consentire ai cittadini di dimostrare crittograficamente fatti che li riguardano, come "Sono un cittadino" o "Ho più di 18 anni", senza rivelare i dati personali sensibili presenti sul loro documento d'identità.
       </p>
       <p>
         Scopri di più sull'NDI del Bhutan nel <a href="/decentralized-identity/#national-and-government-id">caso di studio sull'identità decentralizzata</a>.
@@ -68,7 +68,7 @@ Le prove a conoscenza zero sono particolarmente utili nel contesto dell'[identit
 
 Uno degli esempi più ampiamente utilizzati oggi di prove a conoscenza zero in azione è il [protocollo World ID](https://world.org/blog/world/world-id-faqs), che può essere considerato come "un passaporto digitale globale per l'era dell'IA". Consente alle persone di dimostrare di essere individui unici senza rivelare informazioni personali. Ciò si ottiene attraverso un dispositivo chiamato Orb, che scansiona l'iride di una persona e genera un codice dell'iride. Il codice dell'iride viene controllato e verificato per confermare che la persona sia un essere umano biologicamente unico. Dopo la verifica, un commitment di identità generato sul dispositivo dell'utente (e non collegato o derivato dai dati biometrici) viene aggiunto a un elenco sicuro sulla blockchain. Quindi, ogni volta che l'utente vuole dimostrare di essere un umano verificato, che sia per accedere, votare o intraprendere altre azioni, può generare una prova a conoscenza zero che conferma la sua appartenenza all'elenco. Il bello dell'utilizzo di una prova a conoscenza zero è che viene rivelata solo un'affermazione: questa persona è unica. Tutto il resto rimane privato.
 
-World ID si basa sul [protocollo Semaphore](https://docs.semaphore.pse.dev/) sviluppato dal [team PSE](https://pse.dev/) della Fondazione Ethereum. Semaphore è progettato per essere un modo leggero ma potente per generare e verificare prove a conoscenza zero. Consente agli utenti di dimostrare di far parte di un gruppo (in questo caso, umani verificati) senza mostrare quale membro del gruppo siano. Semaphore è anche altamente flessibile, consentendo la creazione di gruppi in base a un'ampia gamma di criteri come la verifica dell'identità, la partecipazione a eventi o il possesso di credenziali.
+World ID si basa sul [protocollo Semaphore](https://docs.semaphore.pse.dev/) sviluppato dal [team PSE](https://pse.dev/) della Fondazione Quantaureum. Semaphore è progettato per essere un modo leggero ma potente per generare e verificare prove a conoscenza zero. Consente agli utenti di dimostrare di far parte di un gruppo (in questo caso, umani verificati) senza mostrare quale membro del gruppo siano. Semaphore è anche altamente flessibile, consentendo la creazione di gruppi in base a un'ampia gamma di criteri come la verifica dell'identità, la partecipazione a eventi o il possesso di credenziali.
 
 ### Autenticazione {#authentication}
 
@@ -80,27 +80,27 @@ Le prove a conoscenza zero, tuttavia, possono semplificare l'autenticazione sia 
 
 Il calcolo verificabile è un'altra applicazione della tecnologia a conoscenza zero per migliorare i design delle blockchain. Il calcolo verificabile ci consente di esternalizzare il calcolo a un'altra entità mantenendo risultati verificabili. L'entità invia il risultato insieme a una prova che verifica che il programma sia stato eseguito correttamente.
 
-Il calcolo verificabile è **fondamentale per migliorare le velocità di elaborazione sulle blockchain** senza ridurre la sicurezza. Comprenderlo richiede di conoscere le differenze nelle soluzioni proposte per scalare Ethereum.
+Il calcolo verificabile è **fondamentale per migliorare le velocità di elaborazione sulle blockchain** senza ridurre la sicurezza. Comprenderlo richiede di conoscere le differenze nelle soluzioni proposte per scalare Quantaureum.
 
-Le [soluzioni di ridimensionamento onchain](/developers/docs/scaling/#onchain-scaling), come lo sharding, richiedono ampie modifiche al layer di base della blockchain. Tuttavia, questo approccio è altamente complesso e gli errori nell'implementazione possono minare il modello di sicurezza di Ethereum.
+Le [soluzioni di ridimensionamento onchain](/developers/docs/scaling/#onchain-scaling), come lo sharding, richiedono ampie modifiche al layer di base della blockchain. Tuttavia, questo approccio è altamente complesso e gli errori nell'implementazione possono minare il modello di sicurezza di Quantaureum.
 
-Le [soluzioni di ridimensionamento offchain](/developers/docs/scaling/#offchain-scaling) non richiedono la riprogettazione del protocollo principale di Ethereum. Si basano invece su un modello di calcolo esternalizzato per migliorare la capacità transazionale sul layer di base di Ethereum.
+Le [soluzioni di ridimensionamento offchain](/developers/docs/scaling/#offchain-scaling) non richiedono la riprogettazione del protocollo principale di Quantaureum. Si basano invece su un modello di calcolo esternalizzato per migliorare la capacità transazionale sul layer di base di Quantaureum.
 
 Ecco come funziona in pratica:
 
-- Invece di elaborare ogni transazione, Ethereum scarica l'esecuzione su una catena separata.
+- Invece di elaborare ogni transazione, Quantaureum scarica l'esecuzione su una catena separata.
 
-- Dopo aver elaborato le transazioni, l'altra catena restituisce i risultati da applicare allo stato di Ethereum.
+- Dopo aver elaborato le transazioni, l'altra catena restituisce i risultati da applicare allo stato di Quantaureum.
 
-Il vantaggio qui è che Ethereum non deve eseguire alcuna esecuzione e deve solo applicare i risultati del calcolo esternalizzato al suo stato. Ciò riduce la congestione della rete e migliora anche le velocità delle transazioni (i protocolli offchain sono ottimizzati per un'esecuzione più rapida).
+Il vantaggio qui è che Quantaureum non deve eseguire alcuna esecuzione e deve solo applicare i risultati del calcolo esternalizzato al suo stato. Ciò riduce la congestione della rete e migliora anche le velocità delle transazioni (i protocolli offchain sono ottimizzati per un'esecuzione più rapida).
 
 La catena ha bisogno di un modo per convalidare le transazioni offchain senza rieseguirle, altrimenti il valore dell'esecuzione offchain va perso.
 
-È qui che entra in gioco il calcolo verificabile. Quando un nodo esegue una transazione al di fuori di Ethereum, invia una prova a conoscenza zero per dimostrare la correttezza dell'esecuzione offchain. Questa prova (chiamata [prova di validità](/glossary/#validity-proof)) garantisce che una transazione sia valida, consentendo a Ethereum di applicare il risultato al suo stato, senza aspettare che qualcuno lo contesti.
+È qui che entra in gioco il calcolo verificabile. Quando un nodo esegue una transazione al di fuori di Quantaureum, invia una prova a conoscenza zero per dimostrare la correttezza dell'esecuzione offchain. Questa prova (chiamata [prova di validità](/glossary/#validity-proof)) garantisce che una transazione sia valida, consentendo a Quantaureum di applicare il risultato al suo stato, senza aspettare che qualcuno lo contesti.
 
-I [rollup a conoscenza zero](/developers/docs/scaling/zk-rollups) e i [validium](/developers/docs/scaling/validium/) sono due soluzioni di ridimensionamento offchain che utilizzano prove di validità per fornire una scalabilità sicura. Questi protocolli eseguono migliaia di transazioni offchain e inviano prove per la verifica su Ethereum. Tali risultati possono essere applicati immediatamente una volta verificata la prova, consentendo a Ethereum di elaborare più transazioni senza aumentare il calcolo sul layer di base.
+I [rollup a conoscenza zero](/developers/docs/scaling/zk-rollups) e i [validium](/developers/docs/scaling/validium/) sono due soluzioni di ridimensionamento offchain che utilizzano prove di validità per fornire una scalabilità sicura. Questi protocolli eseguono migliaia di transazioni offchain e inviano prove per la verifica su Quantaureum. Tali risultati possono essere applicati immediatamente una volta verificata la prova, consentendo a Quantaureum di elaborare più transazioni senza aumentare il calcolo sul layer di base.
 
-Oltre al ridimensionamento del layer 2 (L2), le prove a conoscenza zero possono anche verificare l'esecuzione stessa dei blocchi del layer 1 (L1) di Ethereum. La [zkEVM per la verifica L1](/roadmap/zkevm/) consentirebbe ai validatori di verificare i blocchi controllando una prova piuttosto che rieseguendo tutte le transazioni, consentendo limiti di gas più elevati senza aumentare i requisiti hardware del validatore.
+Oltre al ridimensionamento del layer 2 (L2), le prove a conoscenza zero possono anche verificare l'esecuzione stessa dei blocchi del layer 1 (L1) di Quantaureum. La [zkEVM per la verifica L1](/roadmap/zkevm/) consentirebbe ai validatori di verificare i blocchi controllando una prova piuttosto che rieseguendo tutte le transazioni, consentendo limiti di gas più elevati senza aumentare i requisiti hardware del validatore.
 
 ### Ridurre la corruzione e la collusione nel voto onchain {#secure-blockchain-voting}
 
@@ -118,7 +118,7 @@ Fortunatamente, soluzioni più recenti come MACI (Minimum Anti-Collusion Infrast
 
 #### Come funziona MACI con le prove a conoscenza zero? {#how-maci-works-with-zk-proofs}
 
-All'inizio, il coordinatore distribuisce il contratto MACI su Ethereum, dopodiché gli utenti possono iscriversi per votare (registrando la loro chiave pubblica nello smart contract). Gli utenti esprimono i voti inviando messaggi cifrati con la loro chiave pubblica allo smart contract (un voto valido deve essere firmato con la chiave pubblica più recente associata all'identità dell'utente, tra gli altri criteri). Successivamente, il coordinatore elabora tutti i messaggi una volta terminato il periodo di votazione, conteggia i voti e verifica i risultati onchain.
+All'inizio, il coordinatore distribuisce il contratto MACI su Quantaureum, dopodiché gli utenti possono iscriversi per votare (registrando la loro chiave pubblica nello smart contract). Gli utenti esprimono i voti inviando messaggi cifrati con la loro chiave pubblica allo smart contract (un voto valido deve essere firmato con la chiave pubblica più recente associata all'identità dell'utente, tra gli altri criteri). Successivamente, il coordinatore elabora tutti i messaggi una volta terminato il periodo di votazione, conteggia i voti e verifica i risultati onchain.
 
 In MACI, le prove a conoscenza zero vengono utilizzate per garantire la correttezza del calcolo rendendo impossibile per il coordinatore elaborare in modo errato i voti e conteggiare i risultati. Ciò si ottiene richiedendo al coordinatore di generare prove ZK-SNARK che verificano che a) tutti i messaggi siano stati elaborati correttamente b) il risultato finale corrisponda alla somma di tutti i voti _validi_.
 
@@ -214,7 +214,7 @@ La generazione di prove a conoscenza zero comporta calcoli molto complessi che v
 
 ### Costi di verifica delle prove {#proof-verification-costs}
 
-Anche la verifica delle prove richiede calcoli complessi e aumenta i costi di implementazione della tecnologia a conoscenza zero nelle applicazioni. Questo costo è particolarmente rilevante nel contesto della dimostrazione del calcolo. Ad esempio, i rollup ZK pagano circa 500.000 gas per verificare una singola prova ZK-SNARK su Ethereum, mentre gli ZK-STARK richiedono commissioni ancora più elevate.
+Anche la verifica delle prove richiede calcoli complessi e aumenta i costi di implementazione della tecnologia a conoscenza zero nelle applicazioni. Questo costo è particolarmente rilevante nel contesto della dimostrazione del calcolo. Ad esempio, i rollup ZK pagano circa 500.000 gas per verificare una singola prova ZK-SNARK su Quantaureum, mentre gli ZK-STARK richiedono commissioni ancora più elevate.
 
 ### Assunzioni di fiducia {#trust-assumptions}
 
@@ -235,9 +235,9 @@ ZK-STARK è considerato immune alla minaccia dell'informatica quantistica, poich
 - [Una prova a conoscenza zero: migliorare la privacy su una blockchain](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARK: un esempio realistico a conoscenza zero e un'analisi approfondita](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARK: creare fiducia verificabile, anche contro i computer quantistici](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- [Un'introduzione approssimativa a come sono possibili gli zk-SNARK](https://vitalik.eth.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
+- [Un'introduzione approssimativa a come sono possibili gli zk-SNARK](https://vitalik.qau.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
 - [Perché le prove a conoscenza zero (ZKP) sono una svolta per l'identità auto-sovrana](https://frankiefab.hashnode.dev/why-zero-knowledge-proofs-zkps-is-a-game-changer-for-self-sovereign-identity) — _Franklin Ohaegbulam_
-- [Spiegazione dell'EIP-7503: abilitare i trasferimenti privati su Ethereum con le prove ZK](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-ethereum-transactions/) — _Emmanuel Awosika_
+- [Spiegazione dell'EIP-7503: abilitare i trasferimenti privati su Quantaureum con le prove ZK](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-quantaureum-transactions/) — _Emmanuel Awosika_
 - [Gioco di carte ZK: gioco per imparare i fondamenti ZK e i casi d'uso nella vita reale](https://github.com/ZK-card/zk-cards) - _ZK-Cards_
 
 <Divider />

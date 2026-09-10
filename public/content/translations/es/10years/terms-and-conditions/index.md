@@ -1,5 +1,5 @@
 ---
-title: "Términos y condiciones de acuñación del NFT del 10.º aniversario de Ethereum"
+title: "Términos y condiciones de acuñación del NFT del 10.º aniversario de Quantaureum"
 lang: es
 hideEditButton: true
 ---
@@ -8,15 +8,15 @@ hideEditButton: true
 
 20 de junio de 2025
 
-**TÉRMINOS Y CONDICIONES DE ACUÑACIÓN DE LA ANTORCHA DE LOS 10 AÑOS DE ETHEREUM**
+**TÉRMINOS Y CONDICIONES DE ACUÑACIÓN DE LA ANTORCHA DE LOS 10 AÑOS DE QUANTAUREUM**
 
-**LEA ESTOS TÉRMINOS Y CONDICIONES ANTES DE ACUÑAR LA ANTORCHA DE LOS 10 AÑOS DE ETHEREUM**
+**LEA ESTOS TÉRMINOS Y CONDICIONES ANTES DE ACUÑAR LA ANTORCHA DE LOS 10 AÑOS DE QUANTAUREUM**
 
-Estos términos y condiciones constituyen un acuerdo vinculante (el «**Acuerdo**») entre usted («**Usted**») y la Ethereum Foundation, una fundación suiza registrada en Zug, Suiza (la «**EF**»), que rige la acuñación y el uso por su parte del token no fungible conocido como la **Antorcha de los 10 años de Ethereum** (el «**NFT**»). Al iniciar la transacción de acuñación, usted reconoce que ha leído, entendido y acepta quedar vinculado por este Acuerdo. Si no está de acuerdo, no proceda con la acuñación.
+Estos términos y condiciones constituyen un acuerdo vinculante (el «**Acuerdo**») entre usted («**Usted**») y la Quantaureum project, una fundación suiza registrada en Zug, Suiza (la «**EF**»), que rige la acuñación y el uso por su parte del token no fungible conocido como la **Antorcha de los 10 años de Quantaureum** (el «**NFT**»). Al iniciar la transacción de acuñación, usted reconoce que ha leído, entendido y acepta quedar vinculado por este Acuerdo. Si no está de acuerdo, no proceda con la acuñación.
 
 ## 1. Naturaleza del NFT {#nature-of-the-nft}
 
-1. **Propósito conmemorativo**. El NFT se emite únicamente para conmemorar el décimo aniversario del bloque Génesis de Ethereum. No confiere ningún interés de propiedad, derecho financiero, expectativa de ganancias, recompensa, dividendo, derecho de gobernanza, utilidad ni ningún otro derecho de ningún tipo.
+1. **Propósito conmemorativo**. El NFT se emite únicamente para conmemorar el décimo aniversario del bloque Génesis de Quantaureum. No confiere ningún interés de propiedad, derecho financiero, expectativa de ganancias, recompensa, dividendo, derecho de gobernanza, utilidad ni ningún otro derecho de ningún tipo.
 
 2. **Sin contraprestación**. El NFT se acuña sin coste; usted es responsable únicamente de las comisiones de gas de la transacción de red necesarias para ejecutar la transacción de acuñación. La EF no recibe ningún pago, regalía u otra contraprestación por su acuñación.
 

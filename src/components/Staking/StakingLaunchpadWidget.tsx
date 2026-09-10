@@ -44,7 +44,7 @@ const StakingLaunchpadWidget = () => {
             standalone tools button below */}
         <div className="flex flex-col items-stretch gap-4 md:items-start">
           <ButtonLink
-            href={`https://${CANONICAL_STAKING_TESTNET.toLowerCase()}.launchpad.ethereum.org`}
+            href={`https://${CANONICAL_STAKING_TESTNET.toLowerCase()}.launchpad.quantaureum.com`}
             customEventOptions={{
               eventCategory: "StakingLaunchpadWidget",
               eventAction: "Clicked",
@@ -56,7 +56,7 @@ const StakingLaunchpadWidget = () => {
             })}
           </ButtonLink>
           <ButtonLink
-            href="https://launchpad.ethereum.org"
+            href="https://launchpad.quantaureum.com"
             variant="outline"
             customEventOptions={{
               eventCategory: "StakingLaunchpadWidget",

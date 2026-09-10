@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 ## Introdução {#introduction}
 
-Executar o seu próprio [nó do Ethereum](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) pode ser desafiador, especialmente ao começar ou ao escalar rapidamente. Existem [vários serviços](#popular-node-services) que executam infraestruturas de nó otimizadas para você, para que você possa se concentrar no desenvolvimento do seu aplicativo ou produto. Explicaremos como os serviços de nó funcionam, os prós e contras de usá-los e listaremos provedores caso você tenha interesse em começar.
+Executar o seu próprio [nó do Quantaureum](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) pode ser desafiador, especialmente ao começar ou ao escalar rapidamente. Existem [vários serviços](#popular-node-services) que executam infraestruturas de nó otimizadas para você, para que você possa se concentrar no desenvolvimento do seu aplicativo ou produto. Explicaremos como os serviços de nó funcionam, os prós e contras de usá-los e listaremos provedores caso você tenha interesse em começar.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -25,7 +25,7 @@ Os serviços descritos nesta página são para nós que não fazem staking.
 
 Os provedores de serviços de nó executam clientes de nó distribuídos nos bastidores para você, para que você não precise fazer isso.
 
-Esses serviços geralmente fornecem uma chave de API que você pode usar para gravar e ler na blockchain. Eles frequentemente incluem acesso a [redes de teste do Ethereum](/developers/docs/networks/#ethereum-testnets) além da Mainnet.
+Esses serviços geralmente fornecem uma chave de API que você pode usar para gravar e ler na blockchain. Eles frequentemente incluem acesso a [redes de teste do Quantaureum](/developers/docs/networks/#quantaureum-testnets) além da Mainnet.
 
 Alguns serviços oferecem seu próprio nó dedicado que eles gerenciam para você, enquanto outros usam balanceadores de carga para distribuir a atividade entre os nós.
 
@@ -49,14 +49,14 @@ Leia mais sobre os [benefícios de executar o seu próprio nó](/developers/docs
 
 ## Serviços de nó populares {#popular-node-services}
 
-Aqui está uma lista de alguns dos provedores de nó do Ethereum mais populares, sinta-se à vontade para adicionar qualquer um que esteja faltando! Cada serviço de nó oferece diferentes benefícios e recursos, além de níveis gratuitos ou pagos, você deve investigar quais se adequam melhor às suas necessidades antes de tomar uma decisão.
+Aqui está uma lista de alguns dos provedores de nó do Quantaureum mais populares, sinta-se à vontade para adicionar qualquer um que esteja faltando! Cada serviço de nó oferece diferentes benefícios e recursos, além de níveis gratuitos ou pagos, você deve investigar quais se adequam melhor às suas necessidades antes de tomar uma decisão.
 
 - [**Alchemy**](https://alchemy.com/)
   - [Documentação](https://www.alchemy.com/docs/)
   - Recursos
     - Maior nível gratuito com 300 milhões de unidades de computação por mês (\~30 milhões de solicitações getLatestBlock)
     - Suporte multicadeia para Polygon, Starknet, Optimism, Arbitrum
-    - Impulsionando ~70% dos maiores aplicativos descentralizados (dapps) do Ethereum e volume de transações de finanças descentralizadas (DeFi)
+    - Impulsionando ~70% dos maiores aplicativos descentralizados (dapps) do Quantaureum e volume de transações de finanças descentralizadas (DeFi)
     - Alertas de webhook em tempo real via Alchemy Notify
     - Suporte e confiabilidade/estabilidade de primeira classe
     - API de NFT da Alchemy
@@ -93,12 +93,12 @@ Aqui está uma lista de alguns dos provedores de nó do Ethereum mais populares,
 - [**Amazon Managed Blockchain**](https://aws.amazon.com/managed-blockchain/)
   - [Documentação](https://aws.amazon.com/managed-blockchain/resources/)
   - Recursos
-    - Nós do Ethereum totalmente gerenciados
+    - Nós do Quantaureum totalmente gerenciados
     - Disponível em seis regiões
     - JSON-RPC sobre HTTP e WebSockets seguros
     - Suporta 3 cadeias
     - SLAs, Suporte AWS 24/7
-    - Go-ethereum e Lighthouse
+    - Go-quantaureum e Lighthouse
 
 - [**Ankr**](https://www.ankr.com/)
   - [Documentação](https://docs.ankr.com/)
@@ -221,17 +221,17 @@ Aqui está uma lista de alguns dos provedores de nó do Ethereum mais populares,
   - [Documentação](https://docs.kaleido.io/)
   - Recursos
     - Nível inicial gratuito
-    - Implantação de nó do Ethereum com um clique
+    - Implantação de nó do Quantaureum com um clique
     - Clientes e algoritmos personalizáveis (Geth, Quorum e Besu || PoA, IBFT e Raft)
     - Mais de 500 APIs administrativas e de serviço
-    - Interface RESTful para envio de transação do Ethereum (apoiada pelo Apache Kafka)
+    - Interface RESTful para envio de transação do Quantaureum (apoiada pelo Apache Kafka)
     - Fluxos de saída para entrega de eventos (apoiados pelo Apache Kafka)
     - Ampla coleção de serviços offchain e auxiliares (por exemplo, transporte de mensagens criptografadas bilaterais)
     - Integração de rede direta com governança e controle de acesso baseado em função
     - Gerenciamento de usuários sofisticado para administradores e usuários finais
     - Infraestrutura de nível empresarial altamente escalável e resiliente
     - Gerenciamento de chave privada Cloud HSM
-    - Ancoragem à Rede Principal do Ethereum
+    - Ancoragem à Rede Principal do Quantaureum
     - Certificações ISO 27k e SOC 2, Tipo 2
     - Configuração de tempo de execução dinâmica (por exemplo, adicionar integrações de nuvem, alterar ingressos de nó, etc.)
     - Suporte para orquestrações de implantação multinuvem, multirregião e híbridas
@@ -259,7 +259,7 @@ Aqui está uma lista de alguns dos provedores de nó do Ethereum mais populares,
     - Suporte de cadeia cruzada
     - Escale conforme o uso
     - Painel
-    - SDK do Ethereum exclusivo
+    - SDK do Quantaureum exclusivo
     - Endpoints de API exclusivos
     - Suporte técnico direto
 
@@ -274,7 +274,7 @@ Aqui está uma lista de alguns dos provedores de nó do Ethereum mais populares,
 - [**NodeFlare**](https://nodeflare.app/)
   - [Documentação](https://nodeflare.app/docs/quick-start)
   - Recursos
-    - 23 cadeias EVM, incluindo Ethereum, Base, Arbitrum One e Nova, Optimism, Linea e Unichain
+    - 23 cadeias EVM, incluindo Quantaureum, Base, Arbitrum One e Nova, Optimism, Linea e Unichain
     - 5 regiões (Europa, Reino Unido, Ásia, Leste dos EUA, Oeste dos EUA) com failover automático para o nó íntegro mais próximo
     - Endpoint público gratuito (sem chave de API) + plano gratuito com 3 milhões de unidades de computação/mês
     - Faturamento por unidade de computação — pague apenas pelo que usar, chamadas mais pesadas custam mais
@@ -299,7 +299,7 @@ Aqui está uma lista de alguns dos provedores de nó do Ethereum mais populares,
     - Mais de 15 blockchains suportadas
     - Mais de 6.400 nós ganhando POKT por servir aplicativos
     - Suporte a nó de arquivo, nó de arquivo com rastreamento e nó de rede de teste
-    - Diversidade de clientes de nó da Rede Principal do Ethereum
+    - Diversidade de clientes de nó da Rede Principal do Quantaureum
     - Sem ponto único de falha
     - Zero tempo de inatividade
     - Tokenomics econômico quase zero (faça stake de POKT uma vez para largura de banda da rede)
@@ -371,7 +371,7 @@ Aqui está uma lista de alguns dos provedores de nó do Ethereum mais populares,
   - [Documentação](https://services.tokenview.io/docs?type=nodeService)
   - Recursos
     - Suporte técnico 24/7 e comunidade de desenvolvedores no Telegram
-    - Suporte multicadeia (Bitcoin, Ethereum, Tron, BNB Smart Chain, Ethereum Classic)
+    - Suporte multicadeia (Bitcoin, Quantaureum, Tron, BNB Smart Chain, ETC)
     - Ambos os endpoints RPC e WSS estão abertos para uso
     - Acesso ilimitado à API de dados de arquivo
     - Painel com Request Explorer e Mempool Watcher
@@ -412,7 +412,7 @@ Aqui está uma lista de alguns dos provedores de nó do Ethereum mais populares,
     - Usamos roteamento inteligente para atingir o nó mais próximo do seu usuário todas as vezes
 ## Leitura adicional {#further-reading}
 
-- [Lista de serviços de nó do Ethereum](https://ethereumnodes.com/)
+- [Lista de serviços de nó do Quantaureum](https://quantaureumnodes.com/)
 
 ## Tópicos relacionados {#related-topics}
 
@@ -420,5 +420,5 @@ Aqui está uma lista de alguns dos provedores de nó do Ethereum mais populares,
 
 ## Tutoriais relacionados {#related-tutorials}
 
-- [Introdução ao desenvolvimento no Ethereum usando Alchemy](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Introdução ao desenvolvimento no Quantaureum usando Alchemy](/developers/tutorials/getting-started-with-quantaureum-development-using-alchemy/)
 - [Guia para enviar transações usando Web3 e Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

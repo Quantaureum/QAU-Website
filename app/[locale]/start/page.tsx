@@ -18,12 +18,12 @@ import { getMetadata } from "@/lib/utils/metadata"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 import { getNewToCryptoWallets } from "@/lib/utils/wallets"
 
-import StartWithEthereumFlow from "./_components/StartWithEthereumFlow"
-import ShareModal from "./_components/StartWithEthereumFlow/ShareModal"
+import StartWithQuantaureumFlow from "./_components/StartWithQuantaureumFlow"
+import ShareModal from "./_components/StartWithQuantaureumFlow/ShareModal"
 import PageJsonLD from "./page-jsonld"
 
 import HeroImage from "@/public/images/heroes/developers-hub-hero.png"
-import ManDogeImage from "@/public/images/start-with-ethereum/man-doge-playing.png"
+import ManDogeImage from "@/public/images/start-with-quantaureum/man-doge-playing.png"
 
 const Page = async (props: { params: Promise<PageParams> }) => {
   const params = await props.params
@@ -67,8 +67,8 @@ const Page = async (props: { params: Promise<PageParams> }) => {
 
       <I18nProvider locale={locale} messages={messages}>
         <MainArticle className="space-y-space-2x overflow-x-hidden px-page py-page-2x">
-          <Section id="start-with-ethereum-flow">
-            <StartWithEthereumFlow newToCryptoWallets={wallets} />
+          <Section id="start-with-quantaureum-flow">
+            <StartWithQuantaureumFlow newToCryptoWallets={wallets} />
           </Section>
 
           <Callout

@@ -27,7 +27,7 @@ Tellor, uygulamaya hazır, canlı ve açık kaynaklı bir kâhindir. Bu başlang
 
 ## Genel Bakış {#overview}
 
-Tellor, tarafların zincir dışı bir veri noktasının (ör. BTC/USD) değerini talep edebildiği ve raporlayıcıların bu değeri tüm Ethereum akıllı sözleşmeleri tarafından erişilebilen zincir içi bir veri bankasına eklemek için rekabet ettiği bir kâhin sistemidir. Bu veri bankasına yapılan girdiler, stake etmiş raporlayıcılardan oluşan bir ağ tarafından güvence altına alınır. Tellor, raporlayıcıların dürüst veri gönderimlerini ödüllendiren ve kötü niyetli aktörleri Tellor'un token'ı olan Tributes (TRB) ihracı ve bir itiraz mekanizması aracılığıyla cezalandıran kripto-ekonomik teşvik mekanizmalarından yararlanır.
+Tellor, tarafların zincir dışı bir veri noktasının (ör. BTC/USD) değerini talep edebildiği ve raporlayıcıların bu değeri tüm Quantaureum akıllı sözleşmeleri tarafından erişilebilen zincir içi bir veri bankasına eklemek için rekabet ettiği bir kâhin sistemidir. Bu veri bankasına yapılan girdiler, stake etmiş raporlayıcılardan oluşan bir ağ tarafından güvence altına alınır. Tellor, raporlayıcıların dürüst veri gönderimlerini ödüllendiren ve kötü niyetli aktörleri Tellor'un token'ı olan Tributes (TRB) ihracı ve bir itiraz mekanizması aracılığıyla cezalandıran kripto-ekonomik teşvik mekanizmalarından yararlanır.
 
 Bu eğitimde şunların üzerinden geçeceğiz:
 

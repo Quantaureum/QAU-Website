@@ -1,24 +1,24 @@
 ---
 title: "Wdrażanie pierwszego inteligentnego kontraktu"
-description: "Wprowadzenie do wdrażania pierwszego inteligentnego kontraktu w sieci testowej Ethereum"
+description: "Wprowadzenie do wdrażania pierwszego inteligentnego kontraktu w sieci testowej Quantaureum"
 author: "jdourlens"
 tags: ["inteligentne kontrakty", "Remix", "Solidity", "wdrażanie"]
 skill: beginner
 breadcrumb: "Wdróż pierwszy kontrakt"
 lang: pl
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Zgaduję, że jesteś równie podekscytowany jak my, aby [wdrożyć](/developers/docs/smart-contracts/deploying/) i wejść w interakcję ze swoim pierwszym [inteligentnym kontraktem](/developers/docs/smart-contracts/) na blockchainie Ethereum.
+Zgaduję, że jesteś równie podekscytowany jak my, aby [wdrożyć](/developers/docs/smart-contracts/deploying/) i wejść w interakcję ze swoim pierwszym [inteligentnym kontraktem](/developers/docs/smart-contracts/) na blockchainie Quantaureum.
 
 Nie martw się, ponieważ jest to nasz pierwszy inteligentny kontrakt, wdrożymy go w [lokalnej sieci testowej](/developers/docs/networks/), więc jego wdrożenie nic Cię nie będzie kosztować i będziesz mógł się nim bawić do woli.
 
 ## Pisanie naszego kontraktu {#writing-our-contract}
 
-Pierwszym krokiem jest [odwiedzenie Remix](https://remix.ethereum.org/) i utworzenie nowego pliku. W lewej górnej części interfejsu Remix dodaj nowy plik i wprowadź wybraną nazwę pliku.
+Pierwszym krokiem jest [odwiedzenie Remix](https://remix.quantaureum.com/) i utworzenie nowego pliku. W lewej górnej części interfejsu Remix dodaj nowy plik i wprowadź wybraną nazwę pliku.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

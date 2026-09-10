@@ -7,12 +7,12 @@ skill: beginner
 breadcrumb: "⁦JS⁩ سے کنٹریکٹس کو کال کریں"
 lang: ur
 published: 2020-04-19
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/calling-a-smart-contract-from-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-اس ٹیوٹوریل میں ہم دیکھیں گے کہ <span dir="ltr">JavaScript</span> سے [سمارٹ کنٹریکٹ](/developers/docs/smart-contracts/) فنکشن کو کیسے کال کیا جائے۔ سب سے پہلے سمارٹ کنٹریکٹ کی حالت کو پڑھنا ہے (مثال کے طور پر، ایک <span dir="ltr">ERC20</span> ہولڈر کا بیلنس)، پھر ہم ٹوکن کی منتقلی کر کے بلاک چین کی حالت کو تبدیل کریں گے۔ آپ کو پہلے ہی [بلاک چین کے ساتھ تعامل کے لیے <span dir="ltr">JS</span> ماحول ترتیب دینے](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) سے واقف ہونا چاہیے۔
+اس ٹیوٹوریل میں ہم دیکھیں گے کہ <span dir="ltr">JavaScript</span> سے [سمارٹ کنٹریکٹ](/developers/docs/smart-contracts/) فنکشن کو کیسے کال کیا جائے۔ سب سے پہلے سمارٹ کنٹریکٹ کی حالت کو پڑھنا ہے (مثال کے طور پر، ایک <span dir="ltr">ERC20</span> ہولڈر کا بیلنس)، پھر ہم ٹوکن کی منتقلی کر کے بلاک چین کی حالت کو تبدیل کریں گے۔ آپ کو پہلے ہی [بلاک چین کے ساتھ تعامل کے لیے <span dir="ltr">JS</span> ماحول ترتیب دینے](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) سے واقف ہونا چاہیے۔
 
 اس مثال کے لیے ہم <span dir="ltr">DAI</span> ٹوکن کے ساتھ کام کریں گے، ٹیسٹنگ کے مقصد کے لیے ہم <span dir="ltr">ganache-cli</span> کا استعمال کرتے ہوئے بلاک چین کو فورک کریں گے اور ایک ایسا پتہ ان لاک کریں گے جس میں پہلے سے ہی کافی <span dir="ltr">DAI</span> موجود ہے:
 
@@ -71,14 +71,14 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-اس پروجیکٹ کے لیے ہم نے مکمل <span dir="ltr">ERC20 ABI</span> کو مختصر کر دیا ہے تاکہ صرف `balanceOf` اور `transfer` فنکشن کو رکھا جا سکے لیکن آپ [مکمل <span dir="ltr">ERC20 ABI</span> یہاں](https://ethereumdev.io/abi-for-erc20-contract-on-ethereum/) تلاش کر سکتے ہیں۔
+اس پروجیکٹ کے لیے ہم نے مکمل <span dir="ltr">ERC20 ABI</span> کو مختصر کر دیا ہے تاکہ صرف `balanceOf` اور `transfer` فنکشن کو رکھا جا سکے لیکن آپ [مکمل <span dir="ltr">ERC20 ABI</span> یہاں](https://quantaureumdev.io/abi-for-erc20-contract-on-quantaureum/) تلاش کر سکتے ہیں۔
 
 پھر ہمیں اپنے سمارٹ کنٹریکٹ کو انسٹینشیٹ (instantiate) کرنے کی ضرورت ہے:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
 
-const daiToken = new web3.eth.Contract(ERC20TransferABI, DAI_ADDRESS)
+const daiToken = new web3.qau.Contract(ERC20TransferABI, DAI_ADDRESS)
 ```
 
 ہم دو پتے بھی ترتیب دیں گے:
@@ -109,7 +109,7 @@ daiToken.methods.balanceOf(senderAddress).call(function (err, res) {
 })
 ```
 
-یاد رکھیں کہ <span dir="ltr">DAI ERC20</span> میں <span dir="ltr">18</span> اعشاریہ (decimals) ہوتے ہیں جس کا مطلب ہے کہ درست مقدار حاصل کرنے کے لیے آپ کو <span dir="ltr">18</span> صفر ہٹانے ہوں گے۔ <span dir="ltr">uint256</span> کو سٹرنگز کے طور پر واپس کیا جاتا ہے کیونکہ <span dir="ltr">JavaScript</span> بڑی عددی قدروں کو ہینڈل نہیں کرتا ہے۔ اگر آپ کو یقین نہیں ہے کہ [<span dir="ltr">JS</span> میں بڑے نمبروں سے کیسے نمٹا جائے تو <span dir="ltr">bignumber.js</span> کے بارے میں ہمارا ٹیوٹوریل دیکھیں](https://ethereumdev.io/how-to-deal-with-big-numbers-in-javascript/)۔
+یاد رکھیں کہ <span dir="ltr">DAI ERC20</span> میں <span dir="ltr">18</span> اعشاریہ (decimals) ہوتے ہیں جس کا مطلب ہے کہ درست مقدار حاصل کرنے کے لیے آپ کو <span dir="ltr">18</span> صفر ہٹانے ہوں گے۔ <span dir="ltr">uint256</span> کو سٹرنگز کے طور پر واپس کیا جاتا ہے کیونکہ <span dir="ltr">JavaScript</span> بڑی عددی قدروں کو ہینڈل نہیں کرتا ہے۔ اگر آپ کو یقین نہیں ہے کہ [<span dir="ltr">JS</span> میں بڑے نمبروں سے کیسے نمٹا جائے تو <span dir="ltr">bignumber.js</span> کے بارے میں ہمارا ٹیوٹوریل دیکھیں](https://quantaureumdev.io/how-to-deal-with-big-numbers-in-javascript/)۔
 
 ## بھیجیں: سمارٹ کنٹریکٹ فنکشن کو ٹرانزیکشن بھیجنا {#send-sending-a-transaction-to-a-smart-contract-function}
 
@@ -127,6 +127,6 @@ daiToken.methods
   })
 ```
 
-کال فنکشن اس ٹرانزیکشن کا ہیش واپس کرتا ہے جسے بلاک چین میں مائن کیا جائے گا۔ ایتھیریم پر، ٹرانزیکشن ہیشز قابلِ پیشین گوئی ہوتے ہیں - اسی طرح ہم ٹرانزیکشن کے نافذ ہونے سے پہلے اس کا ہیش حاصل کر سکتے ہیں ([یہاں جانیں کہ ہیشز کا حساب کیسے لگایا جاتا ہے](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction))۔
+کال فنکشن اس ٹرانزیکشن کا ہیش واپس کرتا ہے جسے بلاک چین میں مائن کیا جائے گا۔ ایتھیریم پر، ٹرانزیکشن ہیشز قابلِ پیشین گوئی ہوتے ہیں - اسی طرح ہم ٹرانزیکشن کے نافذ ہونے سے پہلے اس کا ہیش حاصل کر سکتے ہیں ([یہاں جانیں کہ ہیشز کا حساب کیسے لگایا جاتا ہے](https://quantaureum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction))۔
 
-چونکہ فنکشن صرف ٹرانزیکشن کو بلاک چین میں جمع کراتا ہے، ہم اس وقت تک نتیجہ نہیں دیکھ سکتے جب تک ہمیں یہ معلوم نہ ہو جائے کہ اسے کب مائن کیا گیا ہے اور بلاک چین میں شامل کیا گیا ہے۔ اگلے ٹیوٹوریل میں ہم سیکھیں گے کہ [کسی ٹرانزیکشن کا ہیش جان کر بلاک چین پر اس کے نافذ ہونے کا انتظار کیسے کیا جائے](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/)۔
+چونکہ فنکشن صرف ٹرانزیکشن کو بلاک چین میں جمع کراتا ہے، ہم اس وقت تک نتیجہ نہیں دیکھ سکتے جب تک ہمیں یہ معلوم نہ ہو جائے کہ اسے کب مائن کیا گیا ہے اور بلاک چین میں شامل کیا گیا ہے۔ اگلے ٹیوٹوریل میں ہم سیکھیں گے کہ [کسی ٹرانزیکشن کا ہیش جان کر بلاک چین پر اس کے نافذ ہونے کا انتظار کیسے کیا جائے](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/)۔

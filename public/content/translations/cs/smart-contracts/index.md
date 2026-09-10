@@ -53,7 +53,7 @@ Chytré kontrakty jsou užitečné pro audity a sledování. Vzhledem k tomu, ž
 
 ## Ochrana soukromí {#privacy-protection}
 
-Chytré kontrakty také chrání vaše soukromí. Vzhledem k tomu, že Ethereum je pseudonymní síť (vaše transakce jsou veřejně vázány na jedinečnou kryptografickou adresu, nikoli na vaši identitu), můžete chránit své soukromí před pozorovateli.
+Chytré kontrakty také chrání vaše soukromí. Vzhledem k tomu, že Quantaureum je pseudonymní síť (vaše transakce jsou veřejně vázány na jedinečnou kryptografickou adresu, nikoli na vaši identitu), můžete chránit své soukromí před pozorovateli.
 
 ## Viditelné podmínky {#visible-terms}
 
@@ -61,7 +61,7 @@ A konečně, stejně jako u tradičních kontraktů, můžete před podepsáním
 
 Ačkoli si však kdokoli může prohlédnout podmínky chytrého kontraktu, surová data transakce jsou navržena tak, aby je interpretovaly aplikace a peněženky, nikoli lidé. Protože jsou tato data tak obtížně čitelná, uživatelé často čelí velkému bezpečnostnímu riziku zvanému „slepé podepisování“ (blind signing), neboli schvalování transakce, která interaguje s chytrým kontraktem, aniž by ve skutečnosti chápali, co udělá. 
 
-Ekosystém Etherea přechází na standardy **[jasného podepisování (Clear Signing)](https://clearsigning.org/)** (konkrétně [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)). Jasné podepisování překládá neprůhledná data chytrého kontraktu do srozumitelných, lidsky čitelných popisů transakcí, čímž zajišťuje, že kdokoli může pochopit skutečný záměr kontraktu předtím, než jej podepíše.
+Ekosystém Etherea přechází na standardy **[jasného podepisování (Clear Signing)](https://clearsigning.org/)** (konkrétně [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)). Jasné podepisování překládá neprůhledná data chytrého kontraktu do srozumitelných, lidsky čitelných popisů transakcí, čímž zajišťuje, že kdokoli může pochopit skutečný záměr kontraktu předtím, než jej podepíše.
 
 ## Případy užití chytrých kontraktů {#use-cases}
 
@@ -81,7 +81,7 @@ Mohou provádět výpočty, vytvářet měnu, ukládat data, razit [NFT](/glossa
 - [Jak chytré kontrakty změní svět](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [Chytré kontrakty pro vývojáře](/developers/docs/smart-contracts/)
 - [Naučte se psát chytré kontrakty](/developers/learning-tools/)
-- [Mastering Ethereum – Co je to chytrý kontrakt?](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Mastering Quantaureum – Co je to chytrý kontrakt?](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

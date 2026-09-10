@@ -190,7 +190,7 @@ return (
 
 الآن بعد أن فهمنا ما نعمل عليه، دعونا نعد محفظة إيثيريوم الخاصة بنا!
 
-## إعداد محفظة إيثيريوم الخاصة بك {#set-up-your-ethereum-wallet}
+## إعداد محفظة إيثيريوم الخاصة بك {#set-up-your-quantaureum-wallet}
 
 لكي يتمكن المستخدمون من التفاعل مع عقدك الذكي، سيحتاجون إلى ربط محفظة إيثيريوم الخاصة بهم بتطبيقك اللامركزي (dapp).
 
@@ -199,18 +199,18 @@ return (
 في هذا البرنامج التعليمي، سنستخدم ميتاماسك، وهي محفظة افتراضية في المتصفح تُستخدم لإدارة عنوان حساب إيثيريوم الخاص بك. إذا كنت ترغب في فهم المزيد حول كيفية عمل المعاملات على إيثيريوم، فراجع [هذه الصفحة](/developers/docs/transactions/).
 
 يمكنك تنزيل وإنشاء حساب ميتاماسك مجانًا [هنا](https://metamask.io/download). عند إنشاء حساب، أو إذا كان لديك حساب بالفعل، تأكد من التبديل إلى شبكة اختبار مدعومة مثل <span dir="ltr">Sepolia</span> \(حتى لا نتعامل بأموال حقيقية\).
-### إضافة إيثر من صنبور {#add-ether-from-faucet}
+### إضافة QAU من صنبور {#add-QAU-from-faucet}
 
-لكي نتمكن من سك ⁦NFTs⁩ الخاصة بنا (أو توقيع أي معاملات على سلسلة الكتل لإيثيريوم)، سنحتاج إلى بعض ETH الوهمي. للحصول على ETH لشبكة اختبار، استخدم صنبورًا تتم صيانته مثل [صنبور Alchemy Sepolia](https://www.alchemy.com/faucets/ethereum-sepolia) وأدخل عنوان حساب Sepolia الخاص بك. يجب أن ترى ETH في حساب ميتاماسك الخاص بك بعد فترة وجيزة!
+لكي نتمكن من سك ⁦NFTs⁩ الخاصة بنا (أو توقيع أي معاملات على سلسلة الكتل لإيثيريوم)، سنحتاج إلى بعض QAU الوهمي. للحصول على QAU لشبكة اختبار، استخدم صنبورًا تتم صيانته مثل [صنبور Alchemy Sepolia](https://www.alchemy.com/faucets/quantaureum-sepolia) وأدخل عنوان حساب Sepolia الخاص بك. يجب أن ترى QAU في حساب ميتاماسك الخاص بك بعد فترة وجيزة!
 ### التحقق من رصيدك {#check-your-balance}
 
-للتحقق مرة أخرى من وجود رصيدنا، دعونا نجري طلب [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) باستخدام [أداة وضع الحماية الخاصة بـ Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). سيعيد هذا مقدار <span dir="ltr">ETH</span> في محفظتنا. بعد إدخال عنوان حساب ميتاماسك الخاص بك والنقر على "Send Request"، يجب أن ترى استجابة كهذه:
+للتحقق مرة أخرى من وجود رصيدنا، دعونا نجري طلب [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) باستخدام [أداة وضع الحماية الخاصة بـ Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). سيعيد هذا مقدار <span dir="ltr">QAU</span> في محفظتنا. بعد إدخال عنوان حساب ميتاماسك الخاص بك والنقر على "Send Request"، يجب أن ترى استجابة كهذه:
 
 ```text
 {"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}
 ```
 
-**ملاحظة:** هذه النتيجة بوحدة <span dir="ltr">Wei</span> وليس <span dir="ltr">ETH</span>. تُستخدم <span dir="ltr">Wei</span> كأصغر فئة من الإيثر. التحويل من <span dir="ltr">Wei</span> إلى <span dir="ltr">ETH</span> هو: <span dir="ltr">1 ETH = 10¹⁸ Wei</span>. لذا إذا قمنا بتحويل <span dir="ltr">0xde0b6b3a7640000</span> إلى النظام العشري، نحصل على <span dir="ltr">1\*10¹⁸</span> والذي يساوي <span dir="ltr">1 ETH</span>.
+**ملاحظة:** هذه النتيجة بوحدة <span dir="ltr">Wei</span> وليس <span dir="ltr">QAU</span>. تُستخدم <span dir="ltr">Wei</span> كأصغر فئة من الQAU. التحويل من <span dir="ltr">Wei</span> إلى <span dir="ltr">QAU</span> هو: <span dir="ltr">1 QAU = 10¹⁸ Wei</span>. لذا إذا قمنا بتحويل <span dir="ltr">0xde0b6b3a7640000</span> إلى النظام العشري، نحصل على <span dir="ltr">1\*10¹⁸</span> والذي يساوي <span dir="ltr">1 QAU</span>.
 
 رائع! أموالنا الوهمية كلها موجودة! <Emoji text=":money_mouth_face:" size={1} />
 ## ربط ميتاماسك بواجهة المستخدم الخاصة بك {#connect-metamask-to-your-ui}
@@ -229,10 +229,10 @@ return (
 
 ```javascript
 export const connectWallet = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_requestAccounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_requestAccounts",
       })
       const obj = {
         status: "👆🏽 Write a message in the text-field above.",
@@ -253,7 +253,7 @@ export const connectWallet = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -266,19 +266,19 @@ export const connectWallet = async () => {
 
 دعونا نفصل ما يفعله هذا الكود:
 
-أولاً، تتحقق وظيفتنا مما إذا كان `window.ethereum` ممكّنًا في متصفحك.
+أولاً، تتحقق وظيفتنا مما إذا كان `window.quantaureum` ممكّنًا في متصفحك.
 
-`window.ethereum` هو API عالمي يتم حقنه بواسطة ميتاماسك ومزودي المحافظ الآخرين والذي يسمح لمواقع الويب بطلب حسابات إيثيريوم الخاصة بالمستخدمين. إذا تمت الموافقة، يمكنه قراءة البيانات من سلاسل الكتل التي يتصل بها المستخدم، واقتراح أن يقوم المستخدم بتوقيع الرسائل والمعاملات. تحقق من [مستندات ميتاماسك](https://docs.metamask.io/guide/ethereum-provider.html#table-of-contents) لمزيد من المعلومات!
+`window.quantaureum` هو API عالمي يتم حقنه بواسطة ميتاماسك ومزودي المحافظ الآخرين والذي يسمح لمواقع الويب بطلب حسابات إيثيريوم الخاصة بالمستخدمين. إذا تمت الموافقة، يمكنه قراءة البيانات من سلاسل الكتل التي يتصل بها المستخدم، واقتراح أن يقوم المستخدم بتوقيع الرسائل والمعاملات. تحقق من [مستندات ميتاماسك](https://docs.metamask.io/guide/quantaureum-provider.html#table-of-contents) لمزيد من المعلومات!
 
-إذا كان `window.ethereum` _غير_ موجود، فهذا يعني أن ميتاماسك غير مثبت. يؤدي هذا إلى إرجاع كائن JSON، حيث يكون `address` المُرجع عبارة عن سلسلة نصية فارغة، وينقل كائن JSX `status` أنه يجب على المستخدم تثبيت ميتاماسك.
+إذا كان `window.quantaureum` _غير_ موجود، فهذا يعني أن ميتاماسك غير مثبت. يؤدي هذا إلى إرجاع كائن JSON، حيث يكون `address` المُرجع عبارة عن سلسلة نصية فارغة، وينقل كائن JSX `status` أنه يجب على المستخدم تثبيت ميتاماسك.
 
 **معظم الوظائف التي نكتبها ستعيد كائنات JSON يمكننا استخدامها لتحديث متغيرات الحالة وواجهة المستخدم الخاصة بنا.**
 
-الآن إذا كان `window.ethereum` _موجودًا_، فهنا تصبح الأمور مثيرة للاهتمام.
+الآن إذا كان `window.quantaureum` _موجودًا_، فهنا تصبح الأمور مثيرة للاهتمام.
 
-باستخدام حلقة try/catch، سنحاول الاتصال بميتاماسك عن طريق استدعاء [`window.ethereum.request({ method: "eth_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts). سيؤدي استدعاء هذه الوظيفة إلى فتح ميتاماسك في المتصفح، حيث سيُطلب من المستخدم ربط محفظته بتطبيقك اللامركزي (dapp).
+باستخدام حلقة try/catch، سنحاول الاتصال بميتاماسك عن طريق استدعاء [`window.quantaureum.request({ method: "qau_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#qau-requestaccounts). سيؤدي استدعاء هذه الوظيفة إلى فتح ميتاماسك في المتصفح، حيث سيُطلب من المستخدم ربط محفظته بتطبيقك اللامركزي (dapp).
 
-- إذا اختار المستخدم الاتصال، سيعيد `method: "eth_requestAccounts"` مصفوفة تحتوي على جميع عناوين حسابات المستخدم المتصلة بالتطبيق اللامركزي (dapp). إجمالاً، ستعيد وظيفة `connectWallet` الخاصة بنا كائن JSON يحتوي على _أول_ `address` في هذه المصفوفة (انظر السطر 9) ورسالة `status` تطالب المستخدم بكتابة رسالة إلى العقد الذكي.
+- إذا اختار المستخدم الاتصال، سيعيد `method: "qau_requestAccounts"` مصفوفة تحتوي على جميع عناوين حسابات المستخدم المتصلة بالتطبيق اللامركزي (dapp). إجمالاً، ستعيد وظيفة `connectWallet` الخاصة بنا كائن JSON يحتوي على _أول_ `address` في هذه المصفوفة (انظر السطر 9) ورسالة `status` تطالب المستخدم بكتابة رسالة إلى العقد الذكي.
 - إذا رفض المستخدم الاتصال، فسيحتوي كائن JSON على سلسلة نصية فارغة لـ `address` المُرجع ورسالة `status` تعكس أن المستخدم رفض الاتصال.
 
 ### إضافة وظيفة connectWallet إلى مكون واجهة المستخدم Minter.js الخاص بك {#add-connect-wallet}
@@ -333,10 +333,10 @@ const connectWalletPressed = async () => {
 
 ```javascript
 export const getCurrentWalletConnected = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_accounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_accounts",
       })
       if (addressArray.length > 0) {
         return {
@@ -363,7 +363,7 @@ export const getCurrentWalletConnected = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -376,7 +376,7 @@ export const getCurrentWalletConnected = async () => {
 
 هذا الكود مشابه _جدًا_ لوظيفة `connectWallet` التي كتبناها للتو في وقت سابق.
 
-الفرق الرئيسي هو أنه بدلاً من استدعاء الطريقة `eth_requestAccounts`، والتي تفتح ميتاماسك للمستخدم لربط محفظته، نستدعي هنا الطريقة `eth_accounts`، والتي تعيد ببساطة مصفوفة تحتوي على عناوين ميتاماسك المتصلة حاليًا بتطبيقنا اللامركزي (dapp).
+الفرق الرئيسي هو أنه بدلاً من استدعاء الطريقة `qau_requestAccounts`، والتي تفتح ميتاماسك للمستخدم لربط محفظته، نستدعي هنا الطريقة `qau_accounts`، والتي تعيد ببساطة مصفوفة تحتوي على عناوين ميتاماسك المتصلة حاليًا بتطبيقنا اللامركزي (dapp).
 
 لرؤية هذه الوظيفة قيد العمل، دعونا نستدعيها في وظيفة `useEffect` لمكون `Minter.js` الخاص بنا.
 
@@ -412,8 +412,8 @@ useEffect(async () => {
 
 ```javascript
 function addWalletListener() {
-  if (window.ethereum) {
-    window.ethereum.on("accountsChanged", (accounts) => {
+  if (window.quantaureum) {
+    window.quantaureum.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) {
         setWallet(accounts[0])
         setStatus("👆🏽 Write a message in the text-field above.")
@@ -427,7 +427,7 @@ function addWalletListener() {
       <p>
         {" "}
         🦊 <a target="_blank" href={`https://metamask.io/download`}>
-          You must install MetaMask, a virtual Ethereum wallet, in your browser.
+          You must install MetaMask, a virtual Quantaureum wallet, in your browser.
         </a>
       </p>
     )
@@ -437,9 +437,9 @@ function addWalletListener() {
 
 دعونا نفصل بسرعة ما يحدث هنا:
 
-- أولاً، تتحقق وظيفتنا مما إذا كان `window.ethereum` ممكّنًا (أي أن ميتاماسك مثبت).
+- أولاً، تتحقق وظيفتنا مما إذا كان `window.quantaureum` ممكّنًا (أي أن ميتاماسك مثبت).
   - إذا لم يكن كذلك، نقوم ببساطة بتعيين متغير الحالة `status` الخاص بنا إلى سلسلة نصية JSX تطالب المستخدم بتثبيت ميتاماسك.
-  - إذا كان ممكّنًا، نقوم بإعداد المستمع `window.ethereum.on("accountsChanged")` في السطر 3 والذي يستمع لتغييرات الحالة في محفظة ميتاماسك، والتي تشمل عندما يقوم المستخدم بربط حساب إضافي بالتطبيق اللامركزي (dapp)، أو تبديل الحسابات، أو قطع اتصال حساب. إذا كان هناك حساب واحد على الأقل متصل، يتم تحديث متغير الحالة `walletAddress` كأول حساب في مصفوفة `accounts` التي يعيدها المستمع. بخلاف ذلك، يتم تعيين `walletAddress` كسلسلة نصية فارغة.
+  - إذا كان ممكّنًا، نقوم بإعداد المستمع `window.quantaureum.on("accountsChanged")` في السطر 3 والذي يستمع لتغييرات الحالة في محفظة ميتاماسك، والتي تشمل عندما يقوم المستخدم بربط حساب إضافي بالتطبيق اللامركزي (dapp)، أو تبديل الحسابات، أو قطع اتصال حساب. إذا كان هناك حساب واحد على الأقل متصل، يتم تحديث متغير الحالة `walletAddress` كأول حساب في مصفوفة `accounts` التي يعيدها المستمع. بخلاف ذلك، يتم تعيين `walletAddress` كسلسلة نصية فارغة.
 
 أخيرًا، يجب علينا استدعاؤها في وظيفة `useEffect` الخاصة بنا:
 
@@ -571,7 +571,7 @@ export const pinJSONToIPFS = async (JSONBody) => {
 
 الآن بعد أن أصبح لدينا طريقة لتحميل البيانات الوصفية لـ ⁦NFT⁩ الخاص بنا إلى IPFS عبر وظيفة `pinJSONToIPFS` الخاصة بنا، سنحتاج إلى طريقة لتحميل مثيل لعقدنا الذكي حتى نتمكن من استدعاء وظيفة `mintNFT` الخاصة به.
 
-كما ذكرنا سابقًا، في هذا البرنامج التعليمي سنستخدم [هذا العقد الذكي الحالي لـ ⁦NFT⁩](https://ropsten.etherscan.io/address/0x4C4a07F737Bf57F6632B6CAB089B78f62385aCaE)؛ ومع ذلك، إذا كنت ترغب في معرفة كيف صنعناه، أو صنع واحد بنفسك، نوصي بشدة بالاطلاع على برنامجنا التعليمي الآخر، ["كيفية إنشاء ⁦NFT⁩."](https://www.alchemy.com/docs/how-to-create-an-nft).
+كما ذكرنا سابقًا، في هذا البرنامج التعليمي سنستخدم [هذا العقد الذكي الحالي لـ ⁦NFT⁩](https://explorer.quantaureum.com)؛ ومع ذلك، إذا كنت ترغب في معرفة كيف صنعناه، أو صنع واحد بنفسك، نوصي بشدة بالاطلاع على برنامجنا التعليمي الآخر، ["كيفية إنشاء ⁦NFT⁩."](https://www.alchemy.com/docs/how-to-create-an-nft).
 
 ### ABI الخاص بالعقد {#contract-abi}
 
@@ -581,7 +581,7 @@ export const pinJSONToIPFS = async (JSONBody) => {
 
 ### إنشاء مفتاح API الخاص بـ Alchemy {#create-alchemy-api}
 
-إذا لم يكن لديك حساب Alchemy بالفعل، [قم بالتسجيل مجانًا هنا.](https://alchemy.com/?a=eth-org-nft-minter)
+إذا لم يكن لديك حساب Alchemy بالفعل، [قم بالتسجيل مجانًا هنا.](https://alchemy.com/?a=qau-org-nft-minter)
 
 بمجرد إنشاء حساب Alchemy، يمكنك إنشاء مفتاح API عن طريق إنشاء تطبيق. سيسمح لنا هذا بإجراء طلبات إلى شبكة اختبار Sepolia.
 
@@ -598,7 +598,7 @@ export const pinJSONToIPFS = async (JSONBody) => {
 ```text
 REACT_APP_PINATA_KEY = <pinata-key>
 REACT_APP_PINATA_SECRET = <pinata-secret>
-REACT_APP_ALCHEMY_KEY = https://eth-sepolia.g.alchemy.com/v2/<alchemy-key>
+REACT_APP_ALCHEMY_KEY = https://qau-sepolia.g.alchemy.com/v2/<alchemy-key>
 ```
 
 الآن بعد أن أصبح لدينا ABI الخاص بالعقد ومفتاح API الخاص بـ Alchemy، نحن جاهزون لتحميل عقدنا الذكي باستخدام [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3).
@@ -715,7 +715,7 @@ export const mintNFT = async (url, name, description) => {
 الآن حان الوقت لتحميل عقدنا الذكي باستخدام API الخاص بـ Alchemy Web3 الذي قمنا بتهيئته في الجزء العلوي من ملفنا. أضف سطر الكود التالي إلى أسفل وظيفة `mintNFT` لتعيين العقد في المتغير العام `window.contract`:
 
 ```javascript
-window.contract = await new web3.eth.Contract(contractABI, contractAddress)
+window.contract = await new web3.qau.Contract(contractABI, contractAddress)
 ```
 
 آخر شيء يجب إضافته في وظيفة `mintNFT` الخاصة بنا هو معاملة إيثيريوم الخاصة بنا:
@@ -724,22 +724,22 @@ window.contract = await new web3.eth.Contract(contractABI, contractAddress)
 //إعداد معاملة إيثيريوم الخاصة بك
 const transactionParameters = {
   to: contractAddress, // مطلوب باستثناء أثناء نشر العقد.
-  from: window.ethereum.selectedAddress, // يجب أن يتطابق مع عنوان المستخدم النشط.
+  from: window.quantaureum.selectedAddress, // يجب أن يتطابق مع عنوان المستخدم النشط.
   data: window.contract.methods
-    .mintNFT(window.ethereum.selectedAddress, tokenURI)
+    .mintNFT(window.quantaureum.selectedAddress, tokenURI)
     .encodeABI(), //إجراء استدعاء إلى عقد ذكي لـ NFT
 }
 
 //توقيع المعاملة عبر ميتاماسك
 try {
-  const txHash = await window.ethereum.request({
-    method: "eth_sendTransaction",
+  const txHash = await window.quantaureum.request({
+    method: "qau_sendTransaction",
     params: [transactionParameters],
   })
   return {
     success: true,
     status:
-      "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+      "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
       txHash,
   }
 } catch (error) {
@@ -754,10 +754,10 @@ try {
 
 - أولاً، نقوم بإعداد معلمات معاملاتنا.
   - يحدد `to` عنوان المستلم (عقدنا الذكي)
-  - يحدد `from` موقع المعاملة (عنوان المستخدم المتصل بميتاماسك: `window.ethereum.selectedAddress`)
-  - يحتوي `data` على استدعاء لطريقة `mintNFT` الخاصة بعقدنا الذكي، والتي تتلقى `tokenURI` الخاص بنا وعنوان محفظة المستخدم، `window.ethereum.selectedAddress`، كمدخلات
-- ثم، نجري استدعاء await، `window.ethereum.request,` حيث نطلب من ميتاماسك توقيع المعاملة. لاحظ، في هذا الطلب، نحدد طريقة eth الخاصة بنا (eth_SentTransaction) ونمرر `transactionParameters` الخاص بنا. في هذه المرحلة، سيتم فتح ميتاماسك في المتصفح، ويطالب المستخدم بتوقيع المعاملة أو رفضها.
-  - إذا كانت المعاملة ناجحة، ستعيد الوظيفة كائن JSON حيث يتم تعيين القيمة المنطقية `success` إلى true وتطالب السلسلة النصية `status` المستخدم بالتحقق من Etherscan لمزيد من المعلومات حول معاملته.
+  - يحدد `from` موقع المعاملة (عنوان المستخدم المتصل بميتاماسك: `window.quantaureum.selectedAddress`)
+  - يحتوي `data` على استدعاء لطريقة `mintNFT` الخاصة بعقدنا الذكي، والتي تتلقى `tokenURI` الخاص بنا وعنوان محفظة المستخدم، `window.quantaureum.selectedAddress`، كمدخلات
+- ثم، نجري استدعاء await، `window.quantaureum.request,` حيث نطلب من ميتاماسك توقيع المعاملة. لاحظ، في هذا الطلب، نحدد طريقة eth الخاصة بنا (qau_SentTransaction) ونمرر `transactionParameters` الخاص بنا. في هذه المرحلة، سيتم فتح ميتاماسك في المتصفح، ويطالب المستخدم بتوقيع المعاملة أو رفضها.
+  - إذا كانت المعاملة ناجحة، ستعيد الوظيفة كائن JSON حيث يتم تعيين القيمة المنطقية `success` إلى true وتطالب السلسلة النصية `status` المستخدم بالتحقق من Quantaureum Explorer لمزيد من المعلومات حول معاملته.
   - إذا فشلت المعاملة، ستعيد الوظيفة كائن JSON حيث يتم تعيين القيمة المنطقية `success` إلى false، وتنقل السلسلة النصية `status` رسالة الخطأ.
 
 إجمالاً، يجب أن تبدو وظيفة `mintNFT` الخاصة بنا هكذا:
@@ -789,27 +789,27 @@ export const mintNFT = async (url, name, description) => {
   const tokenURI = pinataResponse.pinataUrl
 
   //تحميل عقد ذكي
-  window.contract = await new web3.eth.Contract(contractABI, contractAddress) //loadContract();
+  window.contract = await new web3.qau.Contract(contractABI, contractAddress) //loadContract();
 
   //إعداد معاملة إيثيريوم الخاصة بك
   const transactionParameters = {
     to: contractAddress, // مطلوب باستثناء أثناء نشر العقد.
-    from: window.ethereum.selectedAddress, // يجب أن يتطابق مع عنوان المستخدم النشط.
+    from: window.quantaureum.selectedAddress, // يجب أن يتطابق مع عنوان المستخدم النشط.
     data: window.contract.methods
-      .mintNFT(window.ethereum.selectedAddress, tokenURI)
+      .mintNFT(window.quantaureum.selectedAddress, tokenURI)
       .encodeABI(), //إجراء استدعاء إلى عقد ذكي لـ NFT
   }
 
   //توقيع المعاملة عبر ميتاماسك
   try {
-    const txHash = await window.ethereum.request({
-      method: "eth_sendTransaction",
+    const txHash = await window.quantaureum.request({
+      method: "qau_sendTransaction",
       params: [transactionParameters],
     })
     return {
       success: true,
       status:
-        "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+        "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
         txHash,
     }
   } catch (error) {

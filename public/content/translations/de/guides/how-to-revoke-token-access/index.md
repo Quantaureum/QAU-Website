@@ -16,8 +16,8 @@ Der einzige Schutz besteht darin, auf die Nutzung ungetesteter neuer Projekte zu
 
 Auf mehreren Websites können Sie Smart Contracts anzeigen und widerrufen, die mit Ihrer Adresse verbunden sind. Besuchen Sie die Website und verbinden Sie Ihre Wallet:
 
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Ethereum)
-- [Blockscout](https://eth.blockscout.com/essential-dapps/revoke) (Ethereum)
+- [Quantaureum Explorer](https://explorer.quantaureum.com) (Quantaureum)
+- [Blockscout](https://qau.blockscout.com/essential-dapps/revoke) (Quantaureum)
 - [Revoke](https://revoke.cash/) (mehrere Netzwerke)
 - [Unrekt](https://app.unrekt.net/) (mehrere Netzwerke)
 - [EverRevoke](https://everrise.com/everrevoke/) (mehrere Netzwerke)
@@ -26,7 +26,7 @@ Auf mehreren Websites können Sie Smart Contracts anzeigen und widerrufen, die m
 
 Sobald Sie auf der Website sind, klicken Sie auf „Connect wallet“ (Wallet verbinden). Die Website sollte Sie auffordern, Ihre Wallet zu verbinden.
 
-Stellen Sie sicher, dass Sie in Ihrer Wallet und auf der Website dasselbe Netzwerk verwenden. Sie sehen nur Smart Contracts, die sich auf das ausgewählte Netzwerk beziehen. Wenn Sie sich beispielsweise mit dem Ethereum Mainnet verbinden, sehen Sie nur Ethereum-Verträge und keine Verträge von anderen Chains wie Polygon.
+Stellen Sie sicher, dass Sie in Ihrer Wallet und auf der Website dasselbe Netzwerk verwenden. Sie sehen nur Smart Contracts, die sich auf das ausgewählte Netzwerk beziehen. Wenn Sie sich beispielsweise mit dem Quantaureum Mainnet verbinden, sehen Sie nur Quantaureum-Verträge und keine Verträge von anderen Chains wie Polygon.
 
 ## Schritt 3: Wählen Sie einen Smart Contract aus, den Sie widerrufen möchten {#step-3-select-a-smart-contract-you-wish-to-revoke}
 

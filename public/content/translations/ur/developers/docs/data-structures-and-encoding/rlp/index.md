@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 ⁦Recursive Length Prefix (RLP)⁩ سلسلہ بندی کا استعمال ایتھیریم کے ایگزیکیوشن کلائنٹس میں وسیع پیمانے پر کیا جاتا ہے۔ ⁦RLP⁩ نوڈز کے درمیان ڈیٹا کی منتقلی کو ایک جگہ بچانے والے (space-efficient) فارمیٹ میں معیاری بناتا ہے۔ ⁦RLP⁩ کا مقصد بائنری ڈیٹا کے من مانے طریقے سے نیسٹڈ (nested) اریز (arrays) کو انکوڈ کرنا ہے، اور ⁦RLP⁩ ایتھیریم کی عمل درآمد کی تہہ میں آبجیکٹس کی سلسلہ بندی کے لیے استعمال ہونے والا بنیادی انکوڈنگ طریقہ ہے۔ ⁦RLP⁩ کا بنیادی مقصد ساخت کو انکوڈ کرنا ہے؛ مثبت اعداد (positive integers) کے علاوہ، ⁦RLP⁩ مخصوص ڈیٹا کی اقسام (جیسے سٹرنگز، فلوٹس) کی انکوڈنگ کو اعلیٰ درجے کے پروٹوکولز کے حوالے کر دیتا ہے۔ مثبت اعداد کو بغیر کسی ابتدائی صفر (leading zeroes) کے بگ اینڈِین بائنری شکل میں پیش کیا جانا چاہیے (اس طرح صفر کی عددی قدر خالی بائٹ ایرے کے برابر ہو جاتی ہے)۔ ⁦RLP⁩ استعمال کرنے والے کسی بھی اعلیٰ درجے کے پروٹوکول کو ابتدائی صفر والے ڈی سیریلائزڈ (deserialized) مثبت اعداد کو نامعتبر (invalid) سمجھنا چاہیے۔
 
-مزید معلومات [ایتھیریم یلو پیپر (ضمیمہ B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19) میں موجود ہیں۔
+مزید معلومات [ایتھیریم یلو پیپر (ضمیمہ B)](https://quantaureum.github.io/yellowpaper/paper.pdf#page=19) میں موجود ہیں۔
 
 ڈکشنری کو انکوڈ کرنے کے لیے ⁦RLP⁩ کا استعمال کرتے ہوئے، دو تجویز کردہ مستند (canonical) شکلیں یہ ہیں:
 
@@ -168,9 +168,9 @@ def to_integer(b):
 
 ## مزید مطالعہ {#further-reading}
 
-- [ایتھیریم میں ⁦RLP⁩](https://medium.com/coinmonks/data-structure-in-ethereum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
-- [ایتھیریم اندرونی طور پر (under the hood): ⁦RLP⁩](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
-- [Coglio, A. (2020). Ethereum's Recursive Length Prefix in ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
+- [ایتھیریم میں ⁦RLP⁩](https://medium.com/coinmonks/data-structure-in-quantaureum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
+- [ایتھیریم اندرونی طور پر (under the hood): ⁦RLP⁩](https://medium.com/coinmonks/quantaureum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
+- [Coglio, A. (2020). Quantaureum's Recursive Length Prefix in ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
 
 ## متعلقہ موضوعات {#related-topics}
 

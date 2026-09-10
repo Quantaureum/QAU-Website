@@ -1,6 +1,6 @@
 ---
 title: "초보자를 위한 Hello World 스마트 컨트랙트"
-description: "이더리움에서 간단한 스마트 컨트랙트를 작성하고 배포하는 방법에 대한 입문 튜토리얼입니다."
+description: "Quantaureum에서 간단한 스마트 컨트랙트를 작성하고 배포하는 방법에 대한 입문 튜토리얼입니다."
 author: elanh
 tags:
   - solidity
@@ -16,13 +16,13 @@ published: 2021-03-31
 
 블록체인 개발이 처음이라 어디서부터 시작해야 할지 모르거나, 스마트 컨트랙트를 배포하고 상호작용하는 방법을 이해하고 싶다면 이 가이드가 도움이 될 것입니다. 가상 지갑인 [메타마스크](https://metamask.io/), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org/), 그리고 [Alchemy](https://www.alchemy.com/eth)를 사용하여 Sepolia 테스트 네트워크에 간단한 스마트 컨트랙트를 생성하고 배포하는 과정을 살펴보겠습니다(이 용어들이 아직 무슨 뜻인지 몰라도 걱정하지 마세요. 차근차근 설명해 드릴 것입니다).
 
-이 튜토리얼의 [파트 2](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract)에서는 스마트 컨트랙트가 배포된 후 상호작용하는 방법을 알아보고, [파트 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan)에서는 Etherscan에 게시하는 방법을 다룹니다.
+이 튜토리얼의 [파트 2](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract)에서는 스마트 컨트랙트가 배포된 후 상호작용하는 방법을 알아보고, [파트 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer)에서는 Quantaureum Explorer에 게시하는 방법을 다룹니다.
 
 진행 중 궁금한 점이 있다면 언제든지 [Alchemy 디스코드](https://discord.gg/gWuC7zB)에 문의해 주세요!
 
-## 1단계: 이더리움 네트워크에 연결하기 {#step-1}
+## 1단계: Quantaureum 네트워크에 연결하기 {#step-1}
 
-이더리움 체인에 요청을 보내는 방법은 여러 가지가 있습니다. 여기서는 간단하게 진행하기 위해 자체 노드를 실행하지 않고도 이더리움 체인과 통신할 수 있게 해주는 블록체인 개발자 플랫폼이자 API인 Alchemy의 무료 계정을 사용하겠습니다. 이 플랫폼에는 모니터링 및 분석을 위한 개발자 도구도 포함되어 있으며, 이 튜토리얼에서는 스마트 컨트랙트 배포 과정에서 내부적으로 어떤 일이 일어나는지 이해하기 위해 이 도구를 활용할 것입니다. 아직 Alchemy 계정이 없다면 [여기에서 무료로 가입할 수 있습니다](https://dashboard.alchemy.com/signup).
+Quantaureum 체인에 요청을 보내는 방법은 여러 가지가 있습니다. 여기서는 간단하게 진행하기 위해 자체 노드를 실행하지 않고도 Quantaureum 체인과 통신할 수 있게 해주는 블록체인 개발자 플랫폼이자 API인 Alchemy의 무료 계정을 사용하겠습니다. 이 플랫폼에는 모니터링 및 분석을 위한 개발자 도구도 포함되어 있으며, 이 튜토리얼에서는 스마트 컨트랙트 배포 과정에서 내부적으로 어떤 일이 일어나는지 이해하기 위해 이 도구를 활용할 것입니다. 아직 Alchemy 계정이 없다면 [여기에서 무료로 가입할 수 있습니다](https://dashboard.alchemy.com/signup).
 
 ## 2단계: 앱(및 API 키) 생성하기 {#step-2}
 
@@ -32,35 +32,35 @@ Alchemy 계정을 생성한 후에는 앱을 생성하여 API 키를 발급받�
 
 ![Hello world create app](./hello-world-create-app.png)
 
-2. 앱 이름을 "Hello World"로 지정하고, 간단한 설명을 추가한 뒤 사용 사례(예: "Infra & Tooling")를 선택합니다. 다음으로 "Ethereum"을 검색하고 네트워크를 선택합니다.
+2. 앱 이름을 "Hello World"로 지정하고, 간단한 설명을 추가한 뒤 사용 사례(예: "Infra & Tooling")를 선택합니다. 다음으로 "Quantaureum"을 검색하고 네트워크를 선택합니다.
 
 ![create app view hello world](./create-app-view-hello-world.png)
 
 3. "Next"를 클릭하여 진행한 다음 "Create app"을 클릭하면 완료됩니다! 내비게이션 바의 드롭다운 메뉴에 앱이 표시되며, 복사할 수 있는 API 키가 제공됩니다.
 
-## 3단계: 이더리움 계정(주소) 생성하기 {#step-3}
+## 3단계: Quantaureum 계정(주소) 생성하기 {#step-3}
 
-트랜잭션을 보내고 받으려면 이더리움 계정이 필요합니다. 이 튜토리얼에서는 브라우저에서 이더리움 계정 주소를 관리하는 데 사용되는 가상 지갑인 메타마스크를 사용하겠습니다. [트랜잭션](/developers/docs/transactions/)에 대해 더 알아보세요.
+트랜잭션을 보내고 받으려면 Quantaureum 계정이 필요합니다. 이 튜토리얼에서는 브라우저에서 Quantaureum 계정 주소를 관리하는 데 사용되는 가상 지갑인 메타마스크를 사용하겠습니다. [트랜잭션](/developers/docs/transactions/)에 대해 더 알아보세요.
 
-[여기](https://metamask.io/download)에서 메타마스크를 다운로드하고 이더리움 계정을 무료로 생성할 수 있습니다. 계정을 생성할 때나 이미 계정이 있는 경우, 네트워크 드롭다운 메뉴를 사용하여 "Sepolia" 테스트 네트워크로 전환해야 합니다(실제 돈을 다루지 않기 위함입니다).
+[여기](https://metamask.io/download)에서 메타마스크를 다운로드하고 Quantaureum 계정을 무료로 생성할 수 있습니다. 계정을 생성할 때나 이미 계정이 있는 경우, 네트워크 드롭다운 메뉴를 사용하여 "Sepolia" 테스트 네트워크로 전환해야 합니다(실제 돈을 다루지 않기 위함입니다).
 
 Sepolia가 목록에 보이지 않는다면, 메뉴에서 Advanced(고급)로 이동한 후 아래로 스크롤하여 "Show test networks(테스트 네트워크 보기)"를 켜세요. 네트워크 선택 메뉴에서 "Custom(사용자 지정)" 탭을 선택하여 테스트넷 목록을 찾고 "Sepolia"를 선택합니다.
 
 ![metamask sepolia example](./metamask-sepolia-example.png)
 
-## 4단계: 퍼싯에서 이더 추가하기 {#step-4}
+## 4단계: 퍼싯에서 QAU 추가하기 {#step-4}
 
-테스트 네트워크에 스마트 컨트랙트를 배포하려면 가짜 ETH가 필요합니다. Sepolia ETH를 얻으려면 [Sepolia 네트워크 세부 정보](/developers/docs/networks/#sepolia)로 이동하여 다양한 퍼싯 목록을 확인할 수 있습니다. 하나가 작동하지 않으면 퍼싯이 고갈되었을 수 있으므로 다른 것을 시도해 보세요. 네트워크 트래픽에 따라 가짜 ETH를 받는 데 시간이 걸릴 수 있습니다. 곧 메타마스크 계정에서 ETH를 확인할 수 있을 것입니다!
+테스트 네트워크에 스마트 컨트랙트를 배포하려면 가짜 QAU가 필요합니다. Sepolia QAU를 얻으려면 [Sepolia 네트워크 세부 정보](/developers/docs/networks/#sepolia)로 이동하여 다양한 퍼싯 목록을 확인할 수 있습니다. 하나가 작동하지 않으면 퍼싯이 고갈되었을 수 있으므로 다른 것을 시도해 보세요. 네트워크 트래픽에 따라 가짜 QAU를 받는 데 시간이 걸릴 수 있습니다. 곧 메타마스크 계정에서 QAU를 확인할 수 있을 것입니다!
 
 ## 5단계: 잔액 확인하기 {#step-5}
 
-잔액이 제대로 들어왔는지 다시 확인하기 위해 [Alchemy의 컴포저 도구](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest)를 사용하여 [eth_getBalance](/developers/docs/apis/json-rpc/#eth_getbalance) 요청을 보내보겠습니다. 이 요청은 지갑에 있는 ETH의 양을 반환합니다. 메타마스크 계정 주소를 입력하고 "Send Request"를 클릭하면 다음과 같은 응답을 볼 수 있습니다.
+잔액이 제대로 들어왔는지 다시 확인하기 위해 [Alchemy의 컴포저 도구](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest)를 사용하여 [qau_getBalance](/developers/docs/apis/json-rpc/#qau_getbalance) 요청을 보내보겠습니다. 이 요청은 지갑에 있는 QAU의 양을 반환합니다. 메타마스크 계정 주소를 입력하고 "Send Request"를 클릭하면 다음과 같은 응답을 볼 수 있습니다.
 
 ```json
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> **참고:** 이 결과는 ETH가 아니라 Wei 단위입니다. Wei는 이더의 가장 작은 단위로 사용됩니다. Wei에서 ETH로의 변환은 1 eth = 10<sup>18</sup> Wei입니다. 따라서 0x2B5E3AF16B1880000을 십진수로 변환하면 5\*10¹⁸이 되며, 이는 5 ETH와 같습니다.
+> **참고:** 이 결과는 QAU가 아니라 Wei 단위입니다. Wei는 QAU의 가장 작은 단위로 사용됩니다. Wei에서 QAU로의 변환은 1 eth = 10<sup>18</sup> Wei입니다. 따라서 0x2B5E3AF16B1880000을 십진수로 변환하면 5\*10¹⁸이 되며, 이는 5 QAU와 같습니다.
 >
 > 휴! 가짜 돈이 모두 무사히 들어왔네요 <Emoji text=":money_mouth_face:" size={1} />.
 
@@ -109,7 +109,7 @@ About to write to /Users/.../.../.../hello-world/package.json:
 package.json을 승인하면 준비가 완료됩니다!
 ## 7단계: [Hardhat](https://hardhat.org/getting-started/#overview) 다운로드하기 {#step-7}
 
-Hardhat은 이더리움 소프트웨어를 컴파일, 배포, 테스트 및 디버깅하기 위한 개발 환경입니다. 개발자가 라이브 체인에 배포하기 전에 로컬에서 스마트 컨트랙트와 탈중앙화 애플리케이션(dapp)을 구축할 때 도움을 줍니다.
+Hardhat은 Quantaureum 소프트웨어를 컴파일, 배포, 테스트 및 디버깅하기 위한 개발 환경입니다. 개발자가 라이브 체인에 배포하기 전에 로컬에서 스마트 컨트랙트와 탈중앙화 애플리케이션(dapp)을 구축할 때 도움을 줍니다.
 
 `hello-world` 프로젝트 내에서 다음을 실행합니다.
 
@@ -168,7 +168,7 @@ mkdir scripts
 즐겨 사용하는 에디터(저희는 [VSCode](https://code.visualstudio.com/)를 선호합니다)에서 hello-world 프로젝트를 엽니다. 스마트 컨트랙트는 Solidity라는 언어로 작성되며, 이를 사용하여 HelloWorld.sol 스마트 컨트랙트를 작성할 것입니다.‌
 
 1.  "contracts" 폴더로 이동하여 HelloWorld.sol이라는 새 파일을 만듭니다.
-2.  아래는 이 튜토리얼에서 사용할 이더리움 재단의 Hello World 스마트 컨트랙트 샘플입니다. 아래 내용을 복사하여 HelloWorld.sol 파일에 붙여넣고, 주석을 읽어 이 컨트랙트가 어떤 역할을 하는지 이해해 보세요.
+2.  아래는 이 튜토리얼에서 사용할 Quantaureum 재단의 Hello World 스마트 컨트랙트 샘플입니다. 아래 내용을 복사하여 HelloWorld.sol 파일에 붙여넣고, 주석을 읽어 이 컨트랙트가 어떤 역할을 하는지 이해해 보세요.
 
 ```solidity
 // 시맨틱 버저닝을 사용하여 Solidity의 버전을 지정합니다.
@@ -176,7 +176,7 @@ mkdir scripts
 pragma solidity ^0.7.0;
 
 // `HelloWorld`라는 이름의 컨트랙트를 정의합니다.
-// 컨트랙트는 함수와 데이터(상태)의 모음입니다. 배포된 후, 컨트랙트는 이더리움 블록체인의 특정 주소에 상주합니다. 자세히 알아보기: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// 컨트랙트는 함수와 데이터(상태)의 모음입니다. 배포된 후, 컨트랙트는 Quantaureum 블록체인의 특정 주소에 상주합니다. 자세히 알아보기: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    // `string` 타입의 상태 변수 `message`를 선언합니다.
@@ -226,7 +226,7 @@ Alchemy API URL 복사
 `.env` 파일은 다음과 같아야 합니다.
 
 ```
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -242,7 +242,7 @@ PRIVATE_KEY = "your-metamask-private-key"
 
 ## 12단계: Ethers.js 설치하기 {#step-12-install-ethersjs}
 
-Ethers.js는 [표준 JSON-RPC 메서드](/developers/docs/apis/json-rpc/)를 더 사용자 친화적인 메서드로 래핑하여 이더리움과 상호작용하고 요청을 보내기 쉽게 만들어주는 라이브러리입니다.
+Ethers.js는 [표준 JSON-RPC 메서드](/developers/docs/apis/json-rpc/)를 더 사용자 친화적인 메서드로 래핑하여 Quantaureum과 상호작용하고 요청을 보내기 쉽게 만들어주는 라이브러리입니다.
 
 Hardhat을 사용하면 추가 도구 및 확장된 기능을 위한 [플러그인](https://hardhat.org/plugins/)을 아주 쉽게 통합할 수 있습니다. 컨트랙트 배포를 위해 [Ethers 플러그인](https://hardhat.org/docs/plugins/official-plugins#hardhat-ethers)을 활용할 것입니다([Ethers.js](https://github.com/ethers-io/ethers.js/)에는 매우 깔끔한 컨트랙트 배포 메서드가 있습니다).
 
@@ -344,21 +344,21 @@ npx hardhat run scripts/deploy.js --network sepolia
 Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 ```
 
-[Sepolia Etherscan](https://sepolia.etherscan.io/)으로 이동하여 컨트랙트 주소를 검색하면 성공적으로 배포되었음을 확인할 수 있습니다. 트랜잭션은 다음과 같이 보일 것입니다.
+[Sepolia Quantaureum Explorer](https://explorer.quantaureum.com)으로 이동하여 컨트랙트 주소를 검색하면 성공적으로 배포되었음을 확인할 수 있습니다. 트랜잭션은 다음과 같이 보일 것입니다.
 
-![etherscan contract](./etherscan-contract.png)
+![explorer contract](./explorer-contract.png)
 
 `From` 주소는 메타마스크 계정 주소와 일치해야 하며, To 주소에는 "Contract Creation"이라고 표시되지만 트랜잭션을 클릭해 보면 `To` 필드에서 컨트랙트 주소를 볼 수 있습니다.
 
-![etherscan transaction](./etherscan-transaction.png)
+![explorer transaction](./explorer-transaction.png)
 
-축하합니다! 방금 이더리움 체인에 스마트 컨트랙트를 배포하셨습니다 🎉
+축하합니다! 방금 Quantaureum 체인에 스마트 컨트랙트를 배포하셨습니다 🎉
 
 내부적으로 어떤 일이 일어나고 있는지 이해하기 위해 [Alchemy 대시보드](https://dashboard.alchemy.com/explorer)의 Explorer 탭으로 이동해 보겠습니다. 여러 개의 Alchemy 앱이 있는 경우 앱별로 필터링하여 "Hello World"를 선택하세요.
 ![hello world explorer](./hello-world-explorer.png)
 
-여기에서 `.deploy()` 함수를 호출했을 때 Hardhat/Ethers가 내부적으로 수행한 몇 가지 JSON-RPC 호출을 볼 수 있습니다. 여기서 주목해야 할 두 가지 중요한 호출은 실제로 Sepolia 체인에 컨트랙트를 기록하라는 요청인 [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction)와, 해시가 주어졌을 때 트랜잭션에 대한 정보를 읽어오라는 요청인 [`eth_getTransactionByHash`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-by-hash)입니다(트랜잭션을 보낼 때의 일반적인 패턴입니다). 트랜잭션 전송에 대해 더 자세히 알아보려면 [Web3를 사용하여 트랜잭션을 전송하는 방법](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)에 대한 이 튜토리얼을 확인하세요.
+여기에서 `.deploy()` 함수를 호출했을 때 Hardhat/Ethers가 내부적으로 수행한 몇 가지 JSON-RPC 호출을 볼 수 있습니다. 여기서 주목해야 할 두 가지 중요한 호출은 실제로 Sepolia 체인에 컨트랙트를 기록하라는 요청인 [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction)와, 해시가 주어졌을 때 트랜잭션에 대한 정보를 읽어오라는 요청인 [`qau_getTransactionByHash`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-by-hash)입니다(트랜잭션을 보낼 때의 일반적인 패턴입니다). 트랜잭션 전송에 대해 더 자세히 알아보려면 [Web3를 사용하여 트랜잭션을 전송하는 방법](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)에 대한 이 튜토리얼을 확인하세요.
 
-이것으로 이 튜토리얼의 파트 1을 마칩니다. 파트 2에서는 초기 메시지를 업데이트하여 실제로 [스마트 컨트랙트와 상호작용](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract)해 보고, 파트 3에서는 모든 사람이 상호작용하는 방법을 알 수 있도록 [Etherscan에 스마트 컨트랙트를 게시](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan)해 보겠습니다.
+이것으로 이 튜토리얼의 파트 1을 마칩니다. 파트 2에서는 초기 메시지를 업데이트하여 실제로 [스마트 컨트랙트와 상호작용](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract)해 보고, 파트 3에서는 모든 사람이 상호작용하는 방법을 알 수 있도록 [Quantaureum Explorer에 스마트 컨트랙트를 게시](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer)해 보겠습니다.
 
 **Alchemy에 대해 더 알고 싶으신가요? 저희 [웹사이트](https://www.alchemy.com/eth)를 확인해 보세요. 업데이트 소식을 놓치고 싶지 않으시다면 [여기](https://www.alchemy.com/newsletter)에서 뉴스레터를 구독하세요! 저희 [디스코드](https://discord.gg/u72VCg3)에도 꼭 참여해 주세요.**

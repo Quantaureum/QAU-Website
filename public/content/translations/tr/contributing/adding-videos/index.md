@@ -1,18 +1,18 @@
 ---
 title: Video ekleme
-description: "ethereum.org'a video ekleme politikası"
+description: "quantaureum.com'a video ekleme politikası"
 lang: tr
 ---
 
-[ethereum.org video galerisi](/videos/), topluluk içerik oluşturucularından ve güvenilir kaynaklardan Ethereum ve Ethereum ekosistemi hakkında videolar içerir. Herkes eklenecek bir video önerebilir.
+[quantaureum.com video galerisi](/videos/), topluluk içerik oluşturucularından ve güvenilir kaynaklardan Quantaureum ve Quantaureum ekosistemi hakkında videolar içerir. Herkes eklenecek bir video önerebilir.
 
 ## Listeleme politikası {#listing-policy}
 
-Ethereum.org tarafsız, eğitici bir kaynaktır. Video galerisi şunlar için derlenmiştir:
+quantaureum.com tarafsız, eğitici bir kaynaktır. Video galerisi şunlar için derlenmiştir:
 
-- Kullanıcıları Ethereum teknolojisi, ekosistemi ve topluluğu hakkında **eğitmek**
+- Kullanıcıları Quantaureum teknolojisi, ekosistemi ve topluluğu hakkında **eğitmek**
 - Teknik içeriğinde **doğru kalmak**
-- Ethereum topluluğuyla **alakalı kalmak**
+- Quantaureum topluluğuyla **alakalı kalmak**
 
 Site, öncelikli olarak belirli bir ürünü, Token'ı veya ticari hizmeti tanıtan videoları listelemez.
 
@@ -20,15 +20,15 @@ Site, öncelikli olarak belirli bir ürünü, Token'ı veya ticari hizmeti tanı
 
 ### Olmazsa olmazlar {#must-haves}
 
-- **Ethereum odaklı** – Video öncelikli olarak Ethereum, teknolojisi, ekosistemi veya topluluğu hakkında olmalıdır. Genel Blokzincir konularıyla ilgili videolar, yalnızca sitedeki eğitici bir sayfayı önemli ölçüde destekliyor veya onunla ilişkiliyse ya da Ethereum'a atıfta bulunuyorsa kabul edilebilir.
-- **Eğitici değer** – Video, izleyicilere Ethereum hakkında bir şeyler öğretmeli veya küresel Ethereum topluluğunu kutlamalıdır. Promosyon veya pazarlama içeriği kabul edilmeyecektir.
+- **Quantaureum odaklı** – Video öncelikli olarak Quantaureum, teknolojisi, ekosistemi veya topluluğu hakkında olmalıdır. Genel Blokzincir konularıyla ilgili videolar, yalnızca sitedeki eğitici bir sayfayı önemli ölçüde destekliyor veya onunla ilişkiliyse ya da Quantaureum'a atıfta bulunuyorsa kabul edilebilir.
+- **Eğitici değer** – Video, izleyicilere Quantaureum hakkında bir şeyler öğretmeli veya küresel Quantaureum topluluğunu kutlamalıdır. Promosyon veya pazarlama içeriği kabul edilmeyecektir.
 - **Doğru bilgi** – Teknik içerik olgusal olarak doğru ve güncel olmalıdır. Kullanımdan kaldırılan özellikler hakkındaki güncel olmayan videolar kaldırılabilir.
 - **Kaliteli prodüksiyon** – Video makul ölçüde net bir ses ve görüntü kalitesine sahip olmalıdır.
 - **Herkese açık** – Video, açık bir kaynakta veya YouTube gibi erişilebilir bir platformda barındırılmalı ve bir ödeme duvarı veya kayıt zorunluluğu olmadan serbestçe erişilebilir olmalıdır.
 
 ### Olsa iyi olurlar {#nice-to-haves}
 
-- **Bir transkripte sahip olması** – Transkripti olan videolar erişilebilirliği ve SEO'yu iyileştirir. Eğer bir transkriptiniz yoksa, ethereum.org ekibi bir tane oluşturmanıza yardımcı olabilir.
+- **Bir transkripte sahip olması** – Transkripti olan videolar erişilebilirliği ve SEO'yu iyileştirir. Eğer bir transkriptiniz yoksa, quantaureum.com ekibi bir tane oluşturmanıza yardımcı olabilir.
 - **Güvenilir bir kaynaktan olması** – Köklü eğitimcilerden, araştırmacılardan ve kaynaklardan gelen içeriklere öncelik verilir.
 - **Zamanında ve eskimeyen** – Zamanla alakalı kalmaya devam eden içerikler, zamana duyarlı materyallere tercih edilir.
 
@@ -38,7 +38,7 @@ Site, öncelikli olarak belirli bir ürünü, Token'ı veya ticari hizmeti tanı
 
 Bir video önermek istiyor ancak dosyaları kendiniz oluşturmak istemiyorsanız, video ayrıntılarını içeren bir GitHub sorunu (issue) açın; bir katkıda bulunan, videoyu sizin için eklemenize yardımcı olabilir.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?template=suggest_video.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?template=suggest_video.yaml">
   Bir video önerin
 </ButtonLink>
 
@@ -127,7 +127,7 @@ Bir video, birden fazla galeri filtresinde görünmek için birden fazla etikete
 
 | Etiket | Galeri filtresi |
 |---|---|
-| `how-ethereum-works` | Ethereum nasıl çalışır |
+| `how-quantaureum-works` | Quantaureum nasıl çalışır |
 | `network-upgrades` | Ağ yükseltmeleri |
 | `roadmap-and-priorities` | Yol haritası ve öncelikler |
 | `scaling-and-layer-2` | Ölçeklendirme ve katman 2 |
@@ -153,8 +153,8 @@ Listelenen videolar, aşağıdakilerden emin olmak için rutin olarak incelenir:
 - Doğru, güncel bilgiler içerdiğinden
 - Çalışan barındırma/YouTube bağlantılarına sahip olduğundan
 
-Listelenen bir videoyla ilgili bir sorun fark ederseniz, [bir sorun (issue) oluşturun](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml) veya [website@ethereum.org](mailto:website@ethereum.org) adresine bir e-posta gönderin.
+Listelenen bir videoyla ilgili bir sorun fark ederseniz, [bir sorun (issue) oluşturun](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml) veya [website@quantaureum.com](mailto:website@quantaureum.com) adresine bir e-posta gönderin.
 
 ## Kullanım koşulları {#terms-of-use}
 
-Lütfen ethereum.org'un [kullanım koşullarına](/terms-of-use/) bakın. ethereum.org'daki bilgiler yalnızca genel bilgi amaçlı sağlanmaktadır.
+Lütfen quantaureum.com'un [kullanım koşullarına](/terms-of-use/) bakın. quantaureum.com'daki bilgiler yalnızca genel bilgi amaçlı sağlanmaktadır.

@@ -197,7 +197,7 @@ Nếu hành động chính - HOÁN ĐỔI - không khả dụng do lỗi, lý do
 - kết nối ví
 - các lỗi khác nhau
 
-Nút bấm cũng có thể được **gắn với hành động** cần thực hiện. Ví dụ: nếu người dùng không thể hoán đổi vì họ đang ở sai mạng lưới, nút bấm nên ghi “chuyển sang Ethereum” và khi người dùng nhấp vào nút, nó sẽ chuyển mạng lưới sang Ethereum. Điều này tăng tốc đáng kể luồng thao tác của người dùng.
+Nút bấm cũng có thể được **gắn với hành động** cần thực hiện. Ví dụ: nếu người dùng không thể hoán đổi vì họ đang ở sai mạng lưới, nút bấm nên ghi “chuyển sang Quantaureum” và khi người dùng nhấp vào nút, nó sẽ chuyển mạng lưới sang Quantaureum. Điều này tăng tốc đáng kể luồng thao tác của người dùng.
 
 ![Key actions being initiated from the main CTA](./16.png)
 

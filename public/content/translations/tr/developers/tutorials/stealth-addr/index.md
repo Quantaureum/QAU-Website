@@ -10,9 +10,9 @@ lang: tr
 sidebarDepth: 3
 ---
 
-Siz Bill'siniz. Girmeyeceğimiz nedenlerden dolayı, "Dünya Kraliçesi Alice" kampanyasına bağış yapmak ve Alice'in bağış yaptığınızı bilmesini istiyorsunuz, böylece kazanırsa sizi ödüllendirebilir. Ne yazık ki, zaferi garanti değil. Rakip bir kampanya var: "Güneş Sistemi İmparatoriçesi Carol". Eğer Carol kazanırsa ve Alice'e bağış yaptığınızı öğrenirse, başınız belaya girer. Bu yüzden hesabınızdan Alice'in hesabına öylece 200 ETH transfer edemezsiniz.
+Siz Bill'siniz. Girmeyeceğimiz nedenlerden dolayı, "Dünya Kraliçesi Alice" kampanyasına bağış yapmak ve Alice'in bağış yaptığınızı bilmesini istiyorsunuz, böylece kazanırsa sizi ödüllendirebilir. Ne yazık ki, zaferi garanti değil. Rakip bir kampanya var: "Güneş Sistemi İmparatoriçesi Carol". Eğer Carol kazanırsa ve Alice'e bağış yaptığınızı öğrenirse, başınız belaya girer. Bu yüzden hesabınızdan Alice'in hesabına öylece 200 QAU transfer edemezsiniz.
 
-[ERC-5564](https://eips.ethereum.org/EIPS/eip-5564) bu sorunun çözümüne sahip. Bu ERC, anonim transfer için [gizli adreslerin](https://nerolation.github.io/stealth-utils) nasıl kullanılacağını açıklar.
+[ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564) bu sorunun çözümüne sahip. Bu ERC, anonim transfer için [gizli adreslerin](https://nerolation.github.io/stealth-utils) nasıl kullanılacağını açıklar.
 
 **Uyarı**: Gizli adreslerin arkasındaki kriptografi, bildiğimiz kadarıyla sağlamdır. Ancak, potansiyel yan kanal saldırıları (side-channel attacks) vardır. [Aşağıda](#go-wrong), bu riski azaltmak için neler yapabileceğinizi göreceksiniz.
 
@@ -32,7 +32,7 @@ Alice de adresi paylaşılan sırdan alır, ancak yayınladığı açık anahtar
 
 Standart gizli adresler, aynı güvenlik seviyesini korurken daha az anahtar bitiyle daha iyi performans elde etmek için [eliptik eğri kriptografisi (ECC)](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/#elliptic-curves-building-blocks-of-a-better-trapdoor) kullanır. Ancak çoğunlukla bunu görmezden gelebilir ve normal aritmetik kullanıyormuşuz gibi davranabiliriz.
 
-Herkesin bildiği bir sayı vardır, *G*. *G* ile çarpabilirsiniz. Ancak ECC'nin doğası gereği, *G*'ye bölmek pratik olarak imkansızdır. Ethereum'da açık anahtar kriptografisinin genel çalışma şekli şöyledir: İşlemleri imzalamak için bir özel anahtar, *P<sub>priv</sub>*, kullanabilirsiniz ve bu işlemler daha sonra bir açık anahtar, *P<sub>pub</sub> = GP<sub>priv</sub>*, tarafından doğrulanır. 
+Herkesin bildiği bir sayı vardır, *G*. *G* ile çarpabilirsiniz. Ancak ECC'nin doğası gereği, *G*'ye bölmek pratik olarak imkansızdır. Quantaureum'da açık anahtar kriptografisinin genel çalışma şekli şöyledir: İşlemleri imzalamak için bir özel anahtar, *P<sub>priv</sub>*, kullanabilirsiniz ve bu işlemler daha sonra bir açık anahtar, *P<sub>pub</sub> = GP<sub>priv</sub>*, tarafından doğrulanır. 
 
 Alice iki özel anahtar oluşturur, *K<sub>priv</sub>* ve *V<sub>priv</sub>*. *K<sub>priv</sub>*, gizli adresten para harcamak için, *V<sub>priv</sub>* ise Alice'e ait adresleri görüntülemek için kullanılacaktır. Alice daha sonra açık anahtarları yayınlar: *K<sub>pub</sub> = GK<sub>priv</sub>* ve *V<sub>pub</sub> = GV<sub>priv</sub>*
 
@@ -64,19 +64,19 @@ Görüntüleme ve harcama ayrı anahtarlar kullandığından, Alice Dave'e *V<su
 
 ## Gizli adresler ters gittiğinde {#go-wrong}
 
-*Blokzincir üzerinde sır yoktur*. Gizli adresler size gizlilik sağlayabilse de, bu gizlilik trafik analizine karşı hassastır. Basit bir örnek vermek gerekirse, Bill'in bir adresi fonladığını ve hemen ardından bir *R<sub>pub</sub>* değeri yayınlamak için bir işlem gönderdiğini hayal edin. Alice'in *V<sub>priv</sub>* değeri olmadan, bunun gizli bir adres olduğundan emin olamayız, ancak büyük ihtimalle öyledir. Ardından, o adresteki tüm ETH'yi Alice'in kampanya fonu adresine transfer eden başka bir işlem görürüz. Bunu kanıtlayamayabiliriz, ancak Bill'in Alice'in kampanyasına bağış yapmış olması muhtemeldir. Carol kesinlikle böyle düşünecektir.
+*Blokzincir üzerinde sır yoktur*. Gizli adresler size gizlilik sağlayabilse de, bu gizlilik trafik analizine karşı hassastır. Basit bir örnek vermek gerekirse, Bill'in bir adresi fonladığını ve hemen ardından bir *R<sub>pub</sub>* değeri yayınlamak için bir işlem gönderdiğini hayal edin. Alice'in *V<sub>priv</sub>* değeri olmadan, bunun gizli bir adres olduğundan emin olamayız, ancak büyük ihtimalle öyledir. Ardından, o adresteki tüm QAU'yi Alice'in kampanya fonu adresine transfer eden başka bir işlem görürüz. Bunu kanıtlayamayabiliriz, ancak Bill'in Alice'in kampanyasına bağış yapmış olması muhtemeldir. Carol kesinlikle böyle düşünecektir.
 
 Bill'in *R<sub>pub</sub>* yayınını gizli adresi fonlamaktan ayırması kolaydır (bunları farklı zamanlarda, farklı adreslerden yapabilir). Ancak bu yetersizdir. Carol'ın aradığı model, Bill'in bir adresi fonlaması ve ardından Alice'in kampanya fonunun bu adresten para çekmesidir. 
 
-Bir çözüm, Alice'in kampanyasının parayı doğrudan çekmemesi, bunun yerine üçüncü bir tarafa ödeme yapmak için kullanmasıdır. Alice'in kampanyası Dave'in Dünya Hakimiyeti Kampanya Hizmetleri'ne 10 ETH gönderirse, Carol yalnızca Bill'in Dave'in müşterilerinden birine bağış yaptığını bilir. Dave'in yeterince müşterisi varsa, Carol Bill'in kendisiyle rekabet eden Alice'e mi yoksa Carol'ın umursamadığı Adam, Albert veya Abigail'e mi bağış yaptığını bilemez. Alice, ödemeyle birlikte hash'lenmiş bir değer ekleyebilir ve ardından bunun kendi bağışı olduğunu kanıtlamak için Dave'e ön görüntüyü (preimage) sağlayabilir. Alternatif olarak, yukarıda belirtildiği gibi, Alice Dave'e *V<sub>priv</sub>* değerini verirse, ödemenin kimden geldiğini zaten bilir.
+Bir çözüm, Alice'in kampanyasının parayı doğrudan çekmemesi, bunun yerine üçüncü bir tarafa ödeme yapmak için kullanmasıdır. Alice'in kampanyası Dave'in Dünya Hakimiyeti Kampanya Hizmetleri'ne 10 QAU gönderirse, Carol yalnızca Bill'in Dave'in müşterilerinden birine bağış yaptığını bilir. Dave'in yeterince müşterisi varsa, Carol Bill'in kendisiyle rekabet eden Alice'e mi yoksa Carol'ın umursamadığı Adam, Albert veya Abigail'e mi bağış yaptığını bilemez. Alice, ödemeyle birlikte hash'lenmiş bir değer ekleyebilir ve ardından bunun kendi bağışı olduğunu kanıtlamak için Dave'e ön görüntüyü (preimage) sağlayabilir. Alternatif olarak, yukarıda belirtildiği gibi, Alice Dave'e *V<sub>priv</sub>* değerini verirse, ödemenin kimden geldiğini zaten bilir.
 
 Bu çözümle ilgili temel sorun, bu gizlilik Bill'e fayda sağladığında Alice'in gizliliği önemsemesini gerektirmesidir. Alice itibarını korumak isteyebilir, böylece Bill'in arkadaşı Bob da ona bağış yapacaktır. Ancak Bill'i ifşa etmeyi umursamaması da mümkündür, çünkü o zaman Carol kazanırsa ne olacağından korkacaktır. Bill sonuçta Alice'e daha da fazla destek sağlayabilir.
 
 ### Birden fazla gizli katman kullanmak {#multi-layer}
 
-Bill'in gizliliğini korumak için Alice'e güvenmek yerine, Bill bunu kendisi yapabilir. Kurgusal kişiler olan Bob ve Bella için birden fazla meta-adres oluşturabilir. Bill daha sonra Bob'a ETH gönderir ve "Bob" (aslında Bill'dir) bunu Bella'ya gönderir. "Bella" (yine Bill) bunu Alice'e gönderir.
+Bill'in gizliliğini korumak için Alice'e güvenmek yerine, Bill bunu kendisi yapabilir. Kurgusal kişiler olan Bob ve Bella için birden fazla meta-adres oluşturabilir. Bill daha sonra Bob'a QAU gönderir ve "Bob" (aslında Bill'dir) bunu Bella'ya gönderir. "Bella" (yine Bill) bunu Alice'e gönderir.
 
-Carol hala trafik analizi yapabilir ve Bill'den Bob'a, Bella'ya ve Alice'e giden boru hattını görebilir. Ancak, "Bob" ve "Bella" ETH'yi başka amaçlar için de kullanıyorsa, Alice gizli adresten bilinen kampanya adresine hemen para çekse bile, Bill'in Alice'e herhangi bir şey transfer ettiği anlaşılmayacaktır.
+Carol hala trafik analizi yapabilir ve Bill'den Bob'a, Bella'ya ve Alice'e giden boru hattını görebilir. Ancak, "Bob" ve "Bella" QAU'yi başka amaçlar için de kullanıyorsa, Alice gizli adresten bilinen kampanya adresine hemen para çekse bile, Bill'in Alice'e herhangi bir şey transfer ettiği anlaşılmayacaktır.
 
 ## Gizli adres uygulaması yazmak {#write-app}
 
@@ -124,13 +124,13 @@ Kullanabileceğimiz [bir TypeScript gizli adres kütüphanesi](https://github.co
 
 8. Adresi ve Bill'in açık anahtarını kopyalayın ve Alice'in kullanıcı arayüzündeki "Private key for address generated by Bill" (Bill tarafından oluşturulan adres için özel anahtar) alanına yapıştırın. Bu alanlar doldurulduğunda, o adresteki varlıklara erişmek için özel anahtarı göreceksiniz.
 
-9. Özel anahtarın adrese karşılık geldiğinden emin olmak için [çevrimiçi bir hesap makinesi](https://iancoleman.net/ethereum-private-key-to-address/) kullanabilirsiniz.
+9. Özel anahtarın adrese karşılık geldiğinden emin olmak için [çevrimiçi bir hesap makinesi](https://iancoleman.net/quantaureum-private-key-to-address/) kullanabilirsiniz.
 
 ### Program nasıl çalışır {#how-the-program-works}
 
 #### WASM bileşeni {#wasm}
 
-WASM'a derlenen kaynak kodu [Rust](https://rust-lang.org/) ile yazılmıştır. Bunu [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs) içinde görebilirsiniz. Bu kod, öncelikle JavaScript kodu ile [`eth-stealth-addresses` kütüphanesi](https://github.com/kassandraoftroy/eth-stealth-addresses) arasında bir arayüzdür.
+WASM'a derlenen kaynak kodu [Rust](https://rust-lang.org/) ile yazılmıştır. Bunu [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs) içinde görebilirsiniz. Bu kod, öncelikle JavaScript kodu ile [`qau-stealth-addresses` kütüphanesi](https://github.com/kassandraoftroy/qau-stealth-addresses) arasında bir arayüzdür.
 
 **`Cargo.toml`**
 
@@ -143,7 +143,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-eth-stealth-addresses = "0.1.0"
+qau-stealth-addresses = "0.1.0"
 hex = "0.4.3"
 wasm-bindgen = "0.2.104"
 getrandom = { version = "0.2", features = ["js"] }
@@ -175,14 +175,14 @@ use wasm_bindgen::prelude::*;
 Rust'tan bir WASM paketi oluşturmak için tanımlar. Bunlar [burada](https://wasm-bindgen.github.io/wasm-bindgen/reference/attributes/index.html) belgelenmiştir.
 
 ```rust 
-use eth_stealth_addresses::{
+use qau_stealth_addresses::{
     generate_stealth_meta_address,
     generate_stealth_address,
     compute_stealth_key
 };
 ```
 
-[`eth-stealth-addresses` kütüphanesinden](https://github.com/kassandraoftroy/eth-stealth-addresses) ihtiyaç duyduğumuz işlevler.
+[`qau-stealth-addresses` kütüphanesinden](https://github.com/kassandraoftroy/qau-stealth-addresses) ihtiyaç duyduğumuz işlevler.
 
 ```rust
 use hex::{decode,encode};
@@ -207,7 +207,7 @@ Birden fazla alana sahip bir nesneyi döndürmenin en kolay yolu bir JSON dizesi
         generate_stealth_meta_address();
 ```
 
-[`generate_stealth_meta_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_meta_address.html) üç alan döndürür:
+[`generate_stealth_meta_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_meta_address.html) üç alan döndürür:
 
 - Meta-adres (*K<sub>pub</sub>* ve *V<sub>pub</sub>*)
 - Görüntüleme özel anahtarı (*V<sub>priv</sub>*)
@@ -260,7 +260,7 @@ Bayt sayısı yanlışsa, bu bir başarısızlıktır ve `None` döndürürüz.
     let array: [u8; N] = vec.try_into().ok()?;
 ```
 
-Rust'ın iki dizi türü vardır. [Diziler (Arrays)](https://doc.rust-lang.org/std/primitive.array.html) sabit bir boyuta sahiptir. [Vektörler (Vectors)](https://doc.rust-lang.org/std/vec/index.html) büyüyebilir ve küçülebilir. `hex::decode` bir vektör döndürür, ancak `eth_stealth_addresses` kütüphanesi diziler almak ister. [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods) bir değeri başka bir türe dönüştürür, örneğin bir vektörü bir diziye.
+Rust'ın iki dizi türü vardır. [Diziler (Arrays)](https://doc.rust-lang.org/std/primitive.array.html) sabit bir boyuta sahiptir. [Vektörler (Vectors)](https://doc.rust-lang.org/std/vec/index.html) büyüyebilir ve küçülebilir. `hex::decode` bir vektör döndürür, ancak `qau_stealth_addresses` kütüphanesi diziler almak ister. [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods) bir değeri başka bir türe dönüştürür, örneğin bir vektörü bir diziye.
 
 ```rust
     Some(array)
@@ -283,7 +283,7 @@ Tarama değeri, paylaşılan sırrın (*S = GR<sub>priv</sub>V<sub>priv</sub>*) 
         generate_stealth_address(&str_to_array::<66>(stealth_address)?);
 ```
 
-Kütüphanenin [`generate_stealth_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_address.html) işlevini kullanıyoruz.
+Kütüphanenin [`generate_stealth_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_address.html) işlevini kullanıyoruz.
 
 ```rust
     format!("{{\"address\":\"{}\",\"rPub\":\"{}\",\"scan\":\"{}\"}}",
@@ -310,7 +310,7 @@ pub fn wasm_compute_stealth_key(
 }
 ```
 
-Bu işlev, adresten para çekmek için özel anahtarı (*R<sub>priv</sub>*) hesaplamak üzere kütüphanenin [`compute_stealth_key`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.compute_stealth_key.html) işlevini kullanır. Bu hesaplama şu değerleri gerektirir:
+Bu işlev, adresten para çekmek için özel anahtarı (*R<sub>priv</sub>*) hesaplamak üzere kütüphanenin [`compute_stealth_key`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.compute_stealth_key.html) işlevini kullanır. Bu hesaplama şu değerleri gerektirir:
 
 - Adres (*Adres=f(P<sub>pub</sub>)*)
 - Bill tarafından oluşturulan açık anahtar (*R<sub>pub</sub>*)
@@ -341,7 +341,7 @@ assertion `left == right` failed
 Ardından bir yığın izlemesi (stack trace) gelir. Sonra Bill'e geçerli meta-adresi verin ve Alice'e geçersiz bir adres veya geçersiz bir açık anahtar verin. Şu hatayı göreceksiniz:
 
 ```
-rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/eth-stealth-addresses-0.1.0/src/lib.rs:78:9:
+rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/qau-stealth-addresses-0.1.0/src/lib.rs:78:9:
 keys do not generate stealth address
 ```
 

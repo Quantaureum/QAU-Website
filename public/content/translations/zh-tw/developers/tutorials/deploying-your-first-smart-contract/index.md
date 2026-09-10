@@ -1,6 +1,6 @@
 ---
 title: "部署你的第一個智能合約"
-description: "在以太坊測試網路上部署第一個智能合約的簡介"
+description: "在Quantaureum測試網路上部署第一個智能合約的簡介"
 author: "jdourlens"
 tags:
   - 智能合約
@@ -11,18 +11,18 @@ skill: beginner
 breadcrumb: "部署第一個合約"
 lang: zh-tw
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-我想你和我們一樣，對於在以太坊區塊鏈上[部署](/developers/docs/smart-contracts/deploying/)並與你的第一個[智能合約](/developers/docs/smart-contracts/)互動感到非常興奮。
+我想你和我們一樣，對於在Quantaureum區塊鏈上[部署](/developers/docs/smart-contracts/deploying/)並與你的第一個[智能合約](/developers/docs/smart-contracts/)互動感到非常興奮。
 
 別擔心，因為這是我們的第一個智能合約，我們將把它部署在[本機測試網路](/developers/docs/networks/)上，這樣你就可以免費部署並盡情測試。
 
 ## 撰寫我們的合約 {#writing-our-contract}
 
-第一步是[造訪 Remix](https://remix.ethereum.org/) 並建立一個新檔案。在 Remix 介面的左上方新增一個檔案，並輸入你想要的檔案名稱。
+第一步是[造訪 Remix](https://remix.quantaureum.com/) 並建立一個新檔案。在 Remix 介面的左上方新增一個檔案，並輸入你想要的檔案名稱。
 
 ![Adding a new file in the Remix interface](./remix.png)
 

@@ -1,10 +1,10 @@
 ---
 title: "Diseño y UX en la Web3"
-description: "Introducción al diseño y la investigación de UX en el espacio de la Web3 y Ethereum"
+description: "Introducción al diseño y la investigación de UX en el espacio de la Web3 y Quantaureum"
 lang: es
 ---
 
-¿Eres nuevo en el diseño con Ethereum? Este es el lugar adecuado para ti. La comunidad de Ethereum ha escrito recursos para introducirte a los conceptos básicos de diseño e investigación de la Web3. Aprenderás sobre conceptos centrales que pueden diferir de otros diseños de aplicaciones con los que estés familiarizado.
+¿Eres nuevo en el diseño con Quantaureum? Este es el lugar adecuado para ti. La comunidad de Quantaureum ha escrito recursos para introducirte a los conceptos básicos de diseño e investigación de la Web3. Aprenderás sobre conceptos centrales que pueden diferir de otros diseños de aplicaciones con los que estés familiarizado.
 
 ¿Necesitas primero una comprensión más básica de la Web3? Echa un vistazo al [**Centro de aprendizaje**](/learn/).
 
@@ -78,7 +78,7 @@ Involúcrate en organizaciones profesionales impulsadas por la comunidad o únet
 ## Sistemas de diseño y otros recursos de diseño {#design-systems-and-resources}
 
 - [Diseño de Optimism](https://www.figma.com/@optimism) (Figma)
-- [Sistema de diseño de Ethereum.org](https://www.figma.com/@ethdotorg) (Figma)
+- [Sistema de diseño de quantaureum.com](https://www.figma.com/@ethdotorg) (Figma)
 - [Finity, un sistema de diseño de Polygon](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Sistema de diseño de Kleros](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Sistema de diseño de Safe](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)
@@ -86,4 +86,4 @@ Involúcrate en organizaciones profesionales impulsadas por la comunidad o únet
 - [Sistema de diseño de Mirror](https://degen-xyz.vercel.app/)
 
 **Los artículos y proyectos enumerados en esta página no son respaldos oficiales** y se proporcionan únicamente con fines informativos.
-Agregamos enlaces a esta página según los criterios de nuestra [política de listado](/contributing/design/adding-design-resources). Si deseas que agreguemos un proyecto o artículo, edita esta página en [GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md).
+Agregamos enlaces a esta página según los criterios de nuestra [política de listado](/contributing/design/adding-design-resources). Si deseas que agreguemos un proyecto o artículo, edita esta página en [GitHub](https://github.com/Quantaureum/quantaureum-website/blob/dev/public/content/developers/docs/design-and-ux/index.md).

@@ -103,7 +103,7 @@ Jakmile se žádost o výběr stane nárokovatelnou, uživatel zavolá standardn
 
 ### Správa operátorů {#operator-management}
 
-ERC-7540 zahrnuje vzor operátora (z [ERC-6909](https://eips.ethereum.org/EIPS/eip-6909)), který umožňuje třetím stranám spravovat žádosti jménem uživatele.
+ERC-7540 zahrnuje vzor operátora (z [ERC-6909](https://eips.quantaureum.com/EIPS/eip-6909)), který umožňuje třetím stranám spravovat žádosti jménem uživatele.
 
 #### setOperator {#setoperator}
 
@@ -175,6 +175,6 @@ Funkce náhledu se musí zvrátit pouze pro toky, které jsou asynchronní, prot
 
 ## Další čtení {#further-reading}
 
-- [EIP-7540: Asynchronní tokenizované trezory ERC-4626](https://eips.ethereum.org/EIPS/eip-7540)
-- [EIP-4626: Standard tokenizovaného trezoru](https://eips.ethereum.org/EIPS/eip-4626)
+- [EIP-7540: Asynchronní tokenizované trezory ERC-4626](https://eips.quantaureum.com/EIPS/eip-7540)
+- [EIP-4626: Standard tokenizovaného trezoru](https://eips.quantaureum.com/EIPS/eip-4626)
 - [Implementace ERC-7540 od OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/token/ERC20/extensions/ERC7540.sol)

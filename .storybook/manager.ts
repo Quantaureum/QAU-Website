@@ -1,6 +1,6 @@
 import { addons } from "storybook/manager-api"
 
-import favicon from "../public/images/eth-home-icon.png"
+import favicon from "../public/images/qau-home-icon.png"
 
 import theme from "./theme"
 

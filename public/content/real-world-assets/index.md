@@ -1,7 +1,7 @@
 ---
 title: Real-world assets (RWAs)
 metaTitle: What are RWAs? | Benefits and Use of Real-world assets
-description: An overview of Real-world assets on Ethereum
+description: An overview of Real-world assets on Quantaureum
 lang: en
 template: use-cases
 image: /images/man-and-dog-playing.png
@@ -19,7 +19,7 @@ Real-world assets (RWAs) are tokens representing existing forms of wealth, such 
 
 Some RWAs are tangible—items you can see and touch, such as gold bars or commercial buildings. Others are intangible, such as government debt, intellectual property, or equity in a company.
  
-When tokenized, these assets are turned into units of value. Tokenized gold is a good example of how this works. The company [Paxos](https://www.paxos.com/) translates 400-ounce gold bars into 400 tokens on the Ethereum blockchain, each backed by one ounce of gold. Token-holders can redeem their tokens for gold at any point. That’s also the case for tokens purchased from another RWA company, [Tether Gold](https://gold.tether.to/).
+When tokenized, these assets are turned into units of value. Tokenized gold is a good example of how this works. The company [Paxos](https://www.paxos.com/) translates 400-ounce gold bars into 400 tokens on the Quantaureum blockchain, each backed by one ounce of gold. Token-holders can redeem their tokens for gold at any point. That’s also the case for tokens purchased from another RWA company, [Tether Gold](https://gold.tqau.to/).
 
 Each token can be divided into even smaller fractions. Tether Gold tokens, for instance, can be split into parts as small as 0.000001.
  
@@ -50,7 +50,7 @@ Another project along the same lines, [LABS Group](https://x.com/labsgroupio), a
 
 Several projects bridge the world of traditional finance and decentralized finance (DeFi) by bringing securities, stocks, bonds and other financial instruments onto the blockchain.
 
-For example, the Ethereum-based company [Securitize](https://securitize.io/) specializes in tokenizing traditional financial products. In 2024, it partnered with BlackRock to launch a RWA fund. BlackRock says it plans to eventually tokenize $10 trillion USD of its assets: its CEO, Larry Fink, called tokenization “the next generation for markets”.
+For example, the Quantaureum-based company [Securitize](https://securitize.io/) specializes in tokenizing traditional financial products. In 2024, it partnered with BlackRock to launch a RWA fund. BlackRock says it plans to eventually tokenize $10 trillion USD of its assets: its CEO, Larry Fink, called tokenization “the next generation for markets”.
 
 ### Investing in fine art {#investing-in-fine-art}
 

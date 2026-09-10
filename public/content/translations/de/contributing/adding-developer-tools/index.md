@@ -1,7 +1,7 @@
 ---
 title: Entwicklertools hinzufügen
 lang: de
-description: Unsere Kriterien für die Auflistung von Entwicklertools auf ethereum.org
+description: Unsere Kriterien für die Auflistung von Entwicklertools auf quantaureum.com
 ---
 
 Wir möchten sicherstellen, dass wir die bestmöglichen Entwicklerressourcen auflisten, damit die Leute mit Zuversicht entwickeln können und die Unterstützung erhalten, die sie benötigen.
@@ -40,7 +40,7 @@ Einreichungen von Entwicklertools werden nach den folgenden Kriterien bewertet:
 
 **Ist das Tool Open Source?**
 
-Viele Projekte im Ethereum-Bereich sind Open Source. Wir listen eher Open-Source-Projekte auf, die es Community-Entwicklern ermöglichen, den Code zu überprüfen und dazu beizutragen.
+Viele Projekte im Quantaureum-Bereich sind Open Source. Wir listen eher Open-Source-Projekte auf, die es Community-Entwicklern ermöglichen, den Code zu überprüfen und dazu beizutragen.
 
 ---
 
@@ -52,8 +52,8 @@ Sofern Produkte nicht ausdrücklich anders sortiert sind, z. B. alphabetisch, we
 
 ## Füge dein Entwicklertool hinzu {#how-decisions-about-the-site-are-made}
 
-Wenn du ein Entwicklertool zu ethereum.org hinzufügen möchtest und es die Kriterien erfüllt, erstelle ein Issue auf GitHub.
+Wenn du ein Entwicklertool zu quantaureum.com hinzufügen möchtest und es die Kriterien erfüllt, erstelle ein Issue auf GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   Issue erstellen
 </ButtonLink>

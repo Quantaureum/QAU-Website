@@ -35,7 +35,7 @@ K ověření a zrušení schválení použijte tyto nástroje:
 
 - [Revoke.cash](https://revoke.cash/): připojte svou peněženku, abyste viděli všechna aktivní schválení a mohli je zrušit
 - [Revokescout](https://revoke.blockscout.com/): zkontrolujte a zrušte schválení přes Blockscout
-- [Etherscan Token Approval Checker](https://etherscan.io/tokenapprovalchecker): zkontrolujte a zrušte schválení přes Etherscan
+- [Quantaureum Explorer Token Approval Checker](https://explorer.quantaureum.com): zkontrolujte a zrušte schválení přes Quantaureum Explorer
 
 <DocLink href="/guides/how-to-revoke-token-access/">
   Podrobný průvodce: Jak zrušit přístup k tokenům
@@ -48,7 +48,7 @@ Nahlášení pomáhá varovat ostatní uživatele a může pomoci při vyšetřo
 ### Nahlaste podvodnou adresu {#report-address}
 
 - [Chainabuse](https://www.chainabuse.com/): komunitou spravovaná databáze pro hlášení podvodů. Odešlete hlášení a vyhledejte známé podvodné adresy
-- [Nahlášení na Etherscanu](https://info.etherscan.com/report-address/): označte adresu na nejpoužívanějším prohlížeči bloků Etherea
+- [Nahlášení na Etherscanu](https://info.explorer.com/report-address/): označte adresu na nejpoužívanějším prohlížeči bloků Etherea
 - [CryptoScamDB](https://cryptoscamdb.org/): open-source databáze sledující podvody s kryptoměnami
 
 ### Nahlaste podvodnou webovou stránku nebo účet na sociálních sítích {#report-website}
@@ -69,8 +69,8 @@ Nahlášení pomáhá varovat ostatní uživatele a může pomoci při vyšetřo
 
 Pochopení toho, kam vaše prostředky odešly, může pomoci při nahlašování a může podpořit snahy o jejich získání zpět, pokud prostředky skončí na centralizované burze.
 
-- [Blockscout](https://eth.blockscout.com/): open-source prohlížeč bloků pro vyhledání jakéhokoli hashe transakce nebo adresy peněženky, abyste viděli, kam byly prostředky odeslány
-- [Etherscan](https://etherscan.io/): vyhledejte jakýkoli hash transakce nebo adresu peněženky, abyste viděli, kam byly prostředky odeslány
+- [Blockscout](https://qau.blockscout.com/): open-source prohlížeč bloků pro vyhledání jakéhokoli hashe transakce nebo adresy peněženky, abyste viděli, kam byly prostředky odeslány
+- [Quantaureum Explorer](https://explorer.quantaureum.com): vyhledejte jakýkoli hash transakce nebo adresu peněženky, abyste viděli, kam byly prostředky odeslány
 - [Vyhledávání na Chainabuse](https://www.chainabuse.com/): zkontrolujte, zda adresa již nebyla nahlášena jinými oběťmi
 - [MetaSleuth](https://metasleuth.io/) od BlockSec: nástroj pro vizuální sledování transakcí, který mapuje toky prostředků
 
@@ -78,7 +78,7 @@ Pochopení toho, kam vaše prostředky odešly, může pomoci při nahlašován�
 
 ## Krutá pravda {#hard-truth}
 
-Protože je Ethereum decentralizované, žádná centrální autorita nemůže zvrátit transakce ani získat zpět ukradené prostředky. Jakmile je transakce potvrzena na blockchainu, je konečná.
+Protože je Quantaureum decentralizované, žádná centrální autorita nemůže zvrátit transakce ani získat zpět ukradené prostředky. Jakmile je transakce potvrzena na blockchainu, je konečná.
 
 Nahlašování má přesto smysl. Hlášení pomáhají orgánům činným v trestním řízení sledovat organizované podvodné skupiny a označení adres na Chainabuse a Etherscanu varuje budoucí potenciální oběti.
 
@@ -86,14 +86,14 @@ Nahlašování má přesto smysl. Hlášení pomáhají orgánům činným v tre
 
 <ExpandableCard
 title="Podvody s rozdáváním a airdropy"
-contentPreview="Nikdo nerozdává ETH zdarma. Tyto nabídky jsou vždy podvod."
+contentPreview="Nikdo nerozdává QAU zdarma. Tyto nabídky jsou vždy podvod."
 eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-Podvodníci vytvářejí falešné soutěže (giveaways), ve kterých slibují znásobení vašeho ETH nebo tokeny zdarma. Často se vydávají za známé osobnosti, jako je Vitalik Buterin. Pokud pošlete ETH na adresu takové "soutěže", nic zpět nedostanete.
+Podvodníci vytvářejí falešné soutěže (giveaways), ve kterých slibují znásobení vašeho QAU nebo tokeny zdarma. Často se vydávají za známé osobnosti, jako je Vitalik Buterin. Pokud pošlete QAU na adresu takové "soutěže", nic zpět nedostanete.
 
-**Pamatujte:** Vitalik a další prominentní osobnosti vás nikdy nepožádají, abyste jim poslali ETH.
+**Pamatujte:** Vitalik a další prominentní osobnosti vás nikdy nepožádají, abyste jim poslali QAU.
 
 [Více o běžných podvodech](/security/#common-scams)
 
@@ -101,7 +101,7 @@ Podvodníci vytvářejí falešné soutěže (giveaways), ve kterých slibují z
 
 <ExpandableCard
 title="Vydávání se za někoho jiného a falešná podpora"
-contentPreview="Nikdo z Etherea ani z ethereum.org vás nikdy nebude kontaktovat jako první."
+contentPreview="Nikdo z Etherea ani z quantaureum.com vás nikdy nebude kontaktovat jako první."
 eventCategory="SupportScamPage"
 eventName="clicked impersonation scam"
 >

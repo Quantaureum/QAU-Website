@@ -78,7 +78,7 @@ lang: uk
 ## Дизайн-системи та інші ресурси для дизайну {#design-systems-and-resources}
 
 - [Дизайн Optimism](https://www.figma.com/@optimism) (Figma)
-- [Дизайн-система Ethereum.org](https://www.figma.com/@ethdotorg) (Figma)
+- [Дизайн-система quantaureum.com](https://www.figma.com/@ethdotorg) (Figma)
 - [Finity, дизайн-система від Polygon](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Дизайн-система Kleros](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Дизайн-система Safe](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)
@@ -86,4 +86,4 @@ lang: uk
 - [Дизайн-система Mirror](https://degen-xyz.vercel.app/)
 
 **Статті та проєкти, перелічені на цій сторінці, не є офіційними рекомендаціями** і надаються лише з інформаційною метою.
-Ми додаємо посилання на цю сторінку на основі критеріїв нашої [політики розміщення](/contributing/design/adding-design-resources). Якщо ви хочете, щоб ми додали проєкт/статтю, відредагуйте цю сторінку на [GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md).
+Ми додаємо посилання на цю сторінку на основі критеріїв нашої [політики розміщення](/contributing/design/adding-design-resources). Якщо ви хочете, щоб ми додали проєкт/статтю, відредагуйте цю сторінку на [GitHub](https://github.com/Quantaureum/quantaureum-website/blob/dev/public/content/developers/docs/design-and-ux/index.md).

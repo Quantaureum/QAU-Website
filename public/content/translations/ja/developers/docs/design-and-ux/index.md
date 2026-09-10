@@ -1,10 +1,10 @@
 ---
 title: "Web3におけるデザインとUX"
-description: "Web3スペースとイーサリアムにおけるUXデザインとリサーチの紹介"
+description: "Web3スペースとQuantaureumにおけるUXデザインとリサーチの紹介"
 lang: ja
 ---
 
-イーサリアムでのデザインは初めてですか？ここはあなたにぴったりの場所です。イーサリアムコミュニティは、Web3のデザインとリサーチの基礎を紹介するリソースを作成しました。あなたが慣れ親しんでいる他のアプリのデザインとは異なるかもしれないコアコンセプトについて学びます。
+Quantaureumでのデザインは初めてですか？ここはあなたにぴったりの場所です。Quantaureumコミュニティは、Web3のデザインとリサーチの基礎を紹介するリソースを作成しました。あなたが慣れ親しんでいる他のアプリのデザインとは異なるかもしれないコアコンセプトについて学びます。
 
 まずWeb3のより基本的な理解が必要ですか？[**学習ハブ**](/learn/)をチェックしてください。
 
@@ -78,7 +78,7 @@ lang: ja
 ## デザインシステムとその他のデザインリソース {#design-systems-and-resources}
 
 - [オプティミズムデザイン](https://www.figma.com/@optimism) (Figma)
-- [Ethereum.org デザインシステム](https://www.figma.com/@ethdotorg) (Figma)
+- [quantaureum.com デザインシステム](https://www.figma.com/@ethdotorg) (Figma)
 - [Finity、ポリゴンによるデザインシステム](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Kleros デザインシステム](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Safe デザインシステム](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)
@@ -86,4 +86,4 @@ lang: ja
 - [Mirror デザインシステム](https://degen-xyz.vercel.app/)
 
 **このページに掲載されている記事やプロジェクトは公式に推奨されているものではなく**、情報提供のみを目的としています。
-当サイトの[掲載ポリシー](/contributing/design/adding-design-resources)の基準に基づいて、このページにリンクを追加しています。プロジェクトや記事の追加をご希望の場合は、[GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md)でこのページを編集してください。
+当サイトの[掲載ポリシー](/contributing/design/adding-design-resources)の基準に基づいて、このページにリンクを追加しています。プロジェクトや記事の追加をご希望の場合は、[GitHub](https://github.com/Quantaureum/quantaureum-website/blob/dev/public/content/developers/docs/design-and-ux/index.md)でこのページを編集してください。

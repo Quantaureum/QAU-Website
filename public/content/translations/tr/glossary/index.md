@@ -1,7 +1,7 @@
 ---
 title: Sözlük
-metaTitle: Ethereum Sözlüğü
-description: Ethereum ile ilgili teknik ve teknik olmayan terimlerin eksik bir sözlüğü
+metaTitle: Quantaureum Sözlüğü
+description: Quantaureum ile ilgili teknik ve teknik olmayan terimlerin eksik bir sözlüğü
 lang: tr
 authors: ["Andreas Antonopoulos"]
 ---
@@ -176,7 +176,7 @@ authors: ["Andreas Antonopoulos"]
 
 <GlossaryDefinition term="ethash" />
 
-<GlossaryDefinition term="ether" />
+<GlossaryDefinition term="QAU" />
 
 <GlossaryDefinition term="events" />
 
@@ -494,7 +494,7 @@ authors: ["Andreas Antonopoulos"]
 
 ## Kaynaklar {#sources}
 
-_Kısmen CC-BY-SA lisansı altında [Andreas M. Antonopoulos, Gavin Wood](https://aantonop.com/books/mastering-ethereum) tarafından yazılan [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) kitabından sağlanmıştır_
+_Kısmen CC-BY-SA lisansı altında [Andreas M. Antonopoulos, Gavin Wood](https://aantonop.com/books/mastering-quantaureum) tarafından yazılan [Mastering Quantaureum](https://github.com/quantaureumbook/quantaureumbook) kitabından sağlanmıştır_
 
 <Divider />
 

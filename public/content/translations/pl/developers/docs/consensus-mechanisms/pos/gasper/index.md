@@ -4,7 +4,7 @@ description: "Wyjaśnienie mechanizmu dowodu stawki (PoS) Gasper."
 lang: pl
 ---
 
-Gasper to połączenie Casper the Friendly Finality Gadget (Casper FFG) oraz algorytmu wyboru rozwidlenia LMD-GHOST. Razem te komponenty tworzą mechanizm konsensusu zabezpieczający Ethereum oparte na dowodzie stawki (PoS). Casper to mechanizm, który zmienia status niektórych bloków na „sfinalizowany”, dzięki czemu nowi uczestnicy sieci mogą mieć pewność, że synchronizują kanoniczny łańcuch. Algorytm wyboru rozwidlenia wykorzystuje zgromadzone głosy, aby zapewnić, że węzły mogą łatwo wybrać to właściwe, gdy w blockchainie pojawią się rozwidlenia.
+Gasper to połączenie Casper the Friendly Finality Gadget (Casper FFG) oraz algorytmu wyboru rozwidlenia LMD-GHOST. Razem te komponenty tworzą mechanizm konsensusu zabezpieczający Quantaureum oparte na dowodzie stawki (PoS). Casper to mechanizm, który zmienia status niektórych bloków na „sfinalizowany”, dzięki czemu nowi uczestnicy sieci mogą mieć pewność, że synchronizują kanoniczny łańcuch. Algorytm wyboru rozwidlenia wykorzystuje zgromadzone głosy, aby zapewnić, że węzły mogą łatwo wybrać to właściwe, gdy w blockchainie pojawią się rozwidlenia.
 
 **Uwaga:** oryginalna definicja Casper FFG została nieznacznie zaktualizowana w celu włączenia jej do Gasper. Na tej stronie omawiamy zaktualizowaną wersję.
 
@@ -14,14 +14,14 @@ Aby zrozumieć ten materiał, konieczne jest przeczytanie strony wprowadzającej
 
 ## Rola Gasper {#role-of-gasper}
 
-Gasper działa na szczycie blockchaina opartego na dowodzie stawki, gdzie węzły dostarczają ether jako depozyt zabezpieczający, który może zostać zniszczony, jeśli są leniwe lub nieuczciwe podczas proponowania lub walidacji bloków. Gasper to mechanizm określający, w jaki sposób walidatory są nagradzane i karane, jak decydują, które bloki zaakceptować, a które odrzucić, oraz na którym rozwidleniu blockchaina budować.
+Gasper działa na szczycie blockchaina opartego na dowodzie stawki, gdzie węzły dostarczają QAU jako depozyt zabezpieczający, który może zostać zniszczony, jeśli są leniwe lub nieuczciwe podczas proponowania lub walidacji bloków. Gasper to mechanizm określający, w jaki sposób walidatory są nagradzane i karane, jak decydują, które bloki zaakceptować, a które odrzucić, oraz na którym rozwidleniu blockchaina budować.
 
 ## Czym jest ostateczność? {#what-is-finality}
 
 Ostateczność to właściwość niektórych bloków, która oznacza, że nie mogą one zostać cofnięte, chyba że nastąpiła krytyczna awaria konsensusu, a atakujący zniszczył co najmniej 1/3 całkowitego stakowanego etheru. Sfinalizowane bloki można traktować jako informacje, co do których blockchain ma pewność. Aby blok został sfinalizowany, musi przejść przez dwuetapową procedurę zmiany statusu:
 
 1. Dwie trzecie całkowitego stakowanego etheru musi oddać głos za włączeniem tego bloku do kanonicznego łańcucha. Ten warunek zmienia status bloku na „uzasadniony”. Uzasadnione bloki rzadko są cofane, ale może się to zdarzyć w określonych warunkach.
-2. Kiedy kolejny blok zostanie uzasadniony na szczycie uzasadnionego bloku, jego status zmienia się na „sfinalizowany”. Sfinalizowanie bloku to zobowiązanie do włączenia go do kanonicznego łańcucha. Nie można go cofnąć, chyba że atakujący zniszczy miliony etherów (miliardy dolarów).
+2. Kiedy kolejny blok zostanie uzasadniony na szczycie uzasadnionego bloku, jego status zmienia się na „sfinalizowany”. Sfinalizowanie bloku to zobowiązanie do włączenia go do kanonicznego łańcucha. Nie można go cofnąć, chyba że atakujący zniszczy miliony QAUów (miliardy dolarów).
 
 Te zmiany statusu bloków nie zdarzają się w każdym slocie. Zamiast tego tylko bloki na granicy epoki mogą zostać uzasadnione i sfinalizowane. Bloki te są znane jako „punkty kontrolne”. Zmiana statusu uwzględnia pary punktów kontrolnych. Pomiędzy dwoma kolejnymi punktami kontrolnymi musi istnieć „powiązanie większości kwalifikowanej” (tj. dwie trzecie całkowitego stakowanego etheru głosuje, że punkt kontrolny B jest właściwym potomkiem punktu kontrolnego A), aby zmienić status starszego punktu kontrolnego na sfinalizowany, a nowszego bloku na uzasadniony.
 
@@ -34,7 +34,7 @@ Pierwszy warunek wynika z faktu, że do sfinalizowania łańcucha wymagane są d
 
 ### Zachęty i cięcia {#incentives-and-slashing}
 
-Walidatory są nagradzane za uczciwe proponowanie i walidację bloków. Ether jest przyznawany jako nagroda i dodawany do ich stawki. Z drugiej strony walidatory, które są nieobecne i nie podejmują działań, gdy są do tego wezwane, tracą te nagrody, a czasami tracą niewielką część swojej dotychczasowej stawki. Jednak kary za bycie offline są niewielkie i w większości przypadków sprowadzają się do kosztów alternatywnych utraconych nagród. Jednak niektóre działania walidatorów są bardzo trudne do wykonania przypadkowo i oznaczają złośliwą intencję, takie jak proponowanie wielu bloków dla tego samego slotu, poświadczanie wielu bloków dla tego samego slotu lub zaprzeczanie poprzednim głosom na punkty kontrolne. Są to zachowania „podlegające cięciu”, które są karane surowiej – cięcie skutkuje zniszczeniem części stawki walidatora i usunięciem go z sieci walidatorów. Proces ten trwa 36 dni. Pierwszego dnia nakładana jest początkowa kara w wysokości do 1 ETH. Następnie ether ściętego walidatora powoli wycieka przez cały okres wyjścia, ale 18. dnia otrzymuje on „karę korelacyjną”, która jest tym większa, im więcej walidatorów zostanie ściętych w tym samym czasie. Maksymalną karą jest cała stawka. Te nagrody i kary mają na celu zachęcenie uczciwych walidatorów i zniechęcenie do ataków na sieć.
+Walidatory są nagradzane za uczciwe proponowanie i walidację bloków. QAU jest przyznawany jako nagroda i dodawany do ich stawki. Z drugiej strony walidatory, które są nieobecne i nie podejmują działań, gdy są do tego wezwane, tracą te nagrody, a czasami tracą niewielką część swojej dotychczasowej stawki. Jednak kary za bycie offline są niewielkie i w większości przypadków sprowadzają się do kosztów alternatywnych utraconych nagród. Jednak niektóre działania walidatorów są bardzo trudne do wykonania przypadkowo i oznaczają złośliwą intencję, takie jak proponowanie wielu bloków dla tego samego slotu, poświadczanie wielu bloków dla tego samego slotu lub zaprzeczanie poprzednim głosom na punkty kontrolne. Są to zachowania „podlegające cięciu”, które są karane surowiej – cięcie skutkuje zniszczeniem części stawki walidatora i usunięciem go z sieci walidatorów. Proces ten trwa 36 dni. Pierwszego dnia nakładana jest początkowa kara w wysokości do 1 QAU. Następnie QAU ściętego walidatora powoli wycieka przez cały okres wyjścia, ale 18. dnia otrzymuje on „karę korelacyjną”, która jest tym większa, im więcej walidatorów zostanie ściętych w tym samym czasie. Maksymalną karą jest cała stawka. Te nagrody i kary mają na celu zachęcenie uczciwych walidatorów i zniechęcenie do ataków na sieć.
 
 ### Wyciek za nieaktywność {#inactivity-leak}
 

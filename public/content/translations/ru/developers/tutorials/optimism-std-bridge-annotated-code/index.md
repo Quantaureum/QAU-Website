@@ -10,11 +10,11 @@ lang: ru
 ---
 
 [Optimism](https://www.optimism.io/) — это [оптимистичный роллап](/developers/docs/scaling/optimistic-rollups/).
-Оптимистичные роллапы могут обрабатывать транзакции по гораздо более низкой цене, чем основная сеть Ethereum (также известная как уровень 1 (l1)), поскольку транзакции обрабатываются только несколькими узлами, а не каждым узлом в сети.
+Оптимистичные роллапы могут обрабатывать транзакции по гораздо более низкой цене, чем основная сеть Quantaureum (также известная как уровень 1 (l1)), поскольку транзакции обрабатываются только несколькими узлами, а не каждым узлом в сети.
 В то же время все данные записываются на l1, поэтому все можно доказать и восстановить со всеми гарантиями целостности и доступности Мейннета.
 
 Чтобы использовать активы l1 в Optimism (или любом другом l2), активы необходимо [перевести через мост](/bridges/#prerequisites).
-Один из способов добиться этого — заблокировать активы (ETH и [токены ERC-20](/developers/docs/standards/tokens/erc-20/) являются наиболее распространенными) на l1 и получить эквивалентные активы для использования на l2.
+Один из способов добиться этого — заблокировать активы (QAU и [токены ERC-20](/developers/docs/standards/tokens/erc-20/) являются наиболее распространенными) на l1 и получить эквивалентные активы для использования на l2.
 В конечном итоге тот, у кого они окажутся, может захотеть перевести их обратно на l1 через мост.
 При этом активы сжигаются на l2, а затем возвращаются пользователю на l1.
 
@@ -35,7 +35,7 @@ lang: ru
 1. При внесении депозита в ERC-20 вкладчик дает мосту разрешение на расходование вносимой суммы.
 2. Вкладчик вызывает мост l1 (`depositERC20`, `depositERC20To`, `depositETH` или `depositETHTo`).
 3. Мост l1 вступает во владение переводимым активом.
-   - ETH: Актив переводится вкладчиком в рамках вызова.
+   - QAU: Актив переводится вкладчиком в рамках вызова.
    - ERC-20: Актив переводится мостом самому себе с использованием разрешения, предоставленного вкладчиком.
 4. Мост l1 использует механизм кросс-доменных сообщений для вызова `finalizeDeposit` на мосту l2.
 
@@ -46,7 +46,7 @@ lang: ru
    - Изначально исходил от моста на l1.
 6. Мост l2 проверяет, является ли контракт токена ERC-20 на l2 правильным:
    - Контракт l2 сообщает, что его аналог на l1 совпадает с тем, от которого поступили токены на l1.
-   - Контракт l2 сообщает, что он поддерживает правильный интерфейс ([с использованием ERC-165](https://eips.ethereum.org/EIPS/eip-165)).
+   - Контракт l2 сообщает, что он поддерживает правильный интерфейс ([с использованием ERC-165](https://eips.quantaureum.com/EIPS/eip-165)).
 7. Если контракт l2 правильный, он вызывается, чтобы чеканить соответствующее количество токенов на соответствующий адрес. Если нет, запускается процесс вывода, чтобы позволить пользователю востребовать токены на l1.
 
 ### Поток вывода {#withdrawal-flow}
@@ -62,15 +62,15 @@ lang: ru
 4. Мост l1 проверяет законность вызова `finalizeETHWithdrawal` или `finalizeERC20Withdrawal`:
    - Поступил от механизма кросс-доменных сообщений.
    - Изначально исходил от моста на l2.
-5. Мост l1 переводит соответствующий актив (ETH или ERC-20) на соответствующий адрес.
+5. Мост l1 переводит соответствующий актив (QAU или ERC-20) на соответствующий адрес.
 
 ## Код уровня 1 (l1) {#layer-1-code}
 
-Это код, который выполняется на l1, в основной сети Ethereum.
+Это код, который выполняется на l1, в основной сети Quantaureum.
 
 ### IL1ERC20Bridge {#il1erc20bridge}
 
-[Этот интерфейс определен здесь](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
+[Этот интерфейс определен здесь](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
 Он включает функции и определения, необходимые для перевода токенов ERC-20 через мост.
 
 ```solidity
@@ -236,12 +236,12 @@ interface IL1ERC20Bridge {
 
 ### IL1StandardBridge {#il1standardbridge}
 
-[Этот интерфейс определен здесь](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
-Этот файл содержит определения событий и функций для ETH.
+[Этот интерфейс определен здесь](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
+Этот файл содержит определения событий и функций для QAU.
 Эти определения очень похожи на те, что определены в `IL1ERC20Bridge` выше для ERC-20.
 
 Интерфейс моста разделен на два файла, потому что некоторые токены ERC-20 требуют пользовательской обработки и не могут обрабатываться стандартным мостом.
-Таким образом, пользовательский мост, который обрабатывает такой токен, может реализовать `IL1ERC20Bridge` и не должен также переводить ETH.
+Таким образом, пользовательский мост, который обрабатывает такой токен, может реализовать `IL1ERC20Bridge` и не должен также переводить QAU.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -279,7 +279,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
      ********************/
 
     /**
-     * @dev Внести сумму ETH на баланс вызывающего на l2.
+     * @dev Внести сумму QAU на баланс вызывающего на l2.
             .
             .
             .
@@ -287,7 +287,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
     function depositETH(uint32 _l2Gas, bytes calldata _data) external payable;
 
     /**
-     * @dev Внести сумму ETH на баланс получателя на l2.
+     * @dev Внести сумму QAU на баланс получателя на l2.
             .
             .
             .
@@ -304,7 +304,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
 
     /**
      * @dev Завершить вывод с l2 на l1 и зачислить средства на баланс получателя
-     * токена ETH l1. Поскольку только xDomainMessenger может вызвать эту функцию, она никогда не будет вызвана
+     * токена QAU l1. Поскольку только xDomainMessenger может вызвать эту функцию, она никогда не будет вызвана
      * до того, как вывод будет завершен.
                 .
                 .
@@ -321,7 +321,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
 
 ### CrossDomainEnabled {#crossdomainenabled}
 
-[Этот контракт](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) наследуется обоими мостами ([l1](#the-l1-bridge-contract) и [l2](#l2-bridge-code)) для отправки сообщений на другой уровень.
+[Этот контракт](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) наследуется обоими мостами ([l1](#the-l1-bridge-contract) и [l2](#l2-bridge-code)) для отправки сообщений на другой уровень.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -331,7 +331,7 @@ pragma solidity >0.5.0 <0.9.0;
 import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 ```
 
-[Этот интерфейс](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) сообщает контракту, как отправлять сообщения на другой уровень, используя кросс-доменный мессенджер.
+[Этот интерфейс](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) сообщает контракту, как отправлять сообщения на другой уровень, используя кросс-доменный мессенджер.
 Этот кросс-доменный мессенджер — совершенно другая система, и она заслуживает отдельной статьи, которую я надеюсь написать в будущем.
 
 ```solidity
@@ -378,7 +378,7 @@ contract CrossDomainEnabled {
     modifier onlyFromCrossDomainAccount(address _sourceDomainAccount) {
 ```
 
-Кросс-доменный обмен сообщениями доступен любому контракту в блокчейне, где он запущен (будь то основная сеть Ethereum или Optimism).
+Кросс-доменный обмен сообщениями доступен любому контракту в блокчейне, где он запущен (будь то основная сеть Quantaureum или Optimism).
 Но нам нужно, чтобы мост на каждой стороне доверял _только_ определенным сообщениям, если они исходят от моста на другой стороне.
 
 ```solidity
@@ -398,7 +398,7 @@ contract CrossDomainEnabled {
         );
 ```
 
-Способ, которым кросс-доменный мессенджер предоставляет адрес, отправивший сообщение с другого уровня, — это [функция `.xDomainMessageSender()`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
+Способ, которым кросс-доменный мессенджер предоставляет адрес, отправивший сообщение с другого уровня, — это [функция `.xDomainMessageSender()`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
 Пока она вызывается в транзакции, инициированной сообщением, она может предоставить эту информацию.
 
 Нам нужно убедиться, что полученное нами сообщение пришло от другого моста.
@@ -463,7 +463,7 @@ contract CrossDomainEnabled {
 
 ### Контракт моста l1 {#the-l1-bridge-contract}
 
-[Исходный код этого контракта находится здесь](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
+[Исходный код этого контракта находится здесь](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -485,7 +485,7 @@ import { IL1ERC20Bridge } from "./IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "../../L2/messaging/IL2ERC20Bridge.sol";
 ```
 
-[Этот интерфейс](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) позволяет нам создавать сообщения для управления стандартным мостом на l2.
+[Этот интерфейс](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) позволяет нам создавать сообщения для управления стандартным мостом на l2.
 
 ```solidity
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -505,7 +505,7 @@ import { CrossDomainEnabled } from "../../libraries/bridge/CrossDomainEnabled.so
 import { Lib_PredeployAddresses } from "../../libraries/constants/Lib_PredeployAddresses.sol";
 ```
 
-[`Lib_PredeployAddresses`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) содержит адреса контрактов l2, которые всегда имеют один и тот же адрес. Сюда входит стандартный мост на l2.
+[`Lib_PredeployAddresses`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) содержит адреса контрактов l2, которые всегда имеют один и тот же адрес. Сюда входит стандартный мост на l2.
 
 ```solidity
 import { Address } from "@openzeppelin/contracts/utils/Address.sol";
@@ -519,7 +519,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[Стандарт ERC-20](https://eips.ethereum.org/EIPS/eip-20) поддерживает два способа сообщения контрактом об ошибке:
+[Стандарт ERC-20](https://eips.quantaureum.com/EIPS/eip-20) поддерживает два способа сообщения контрактом об ошибке:
 
 1. Откат
 2. Возврат `false`
@@ -529,7 +529,7 @@ import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.s
 ```solidity
 /**
  * @title L1StandardBridge
- * @dev Мост ETH и ERC-20 l1 — это контракт, который хранит внесенные средства l1 и стандартные
+ * @dev Мост QAU и ERC-20 l1 — это контракт, который хранит внесенные средства l1 и стандартные
  * токены, которые используются на l2. Он синхронизирует соответствующий мост l2, информируя его о внесениях
  * и прослушивая его на предмет недавно завершенных выводов.
  *
@@ -643,7 +643,7 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
 ```solidity
     /**
      * @dev Эта функция может быть вызвана без данных
-     * для внесения суммы ETH на баланс вызывающего на l2.
+     * для внесения суммы QAU на баланс вызывающего на l2.
      * Поскольку функция receive не принимает данные, консервативная
      * сумма по умолчанию пересылается на l2.
      */
@@ -675,11 +675,11 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
     }
 ```
 
-Эти две функции являются обертками вокруг `_initiateETHDeposit` — функции, которая обрабатывает фактический депозит ETH.
+Эти две функции являются обертками вокруг `_initiateETHDeposit` — функции, которая обрабатывает фактический депозит QAU.
 
 ```solidity
     /**
-     * @dev Выполняет логику для внесений, сохраняя ETH и информируя шлюз ETH l2 о
+     * @dev Выполняет логику для внесений, сохраняя QAU и информируя шлюз QAU l2 о
      * внесении.
      * @param _from Аккаунт, с которого списывается внесение на l1.
      * @param _to Аккаунт, которому передается внесение на l2.
@@ -713,14 +713,14 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
         );
 ```
 
-Сообщение здесь заключается в вызове [функции `finalizeDeposit`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) со следующими параметрами:
+Сообщение здесь заключается в вызове [функции `finalizeDeposit`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) со следующими параметрами:
 
 | Параметр | Значение | Значение |
 | --------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| \_l1Token | address(0) | Специальное значение, обозначающее ETH (который не является токеном ERC-20) на l1 |
-| \_l2Token | Lib_PredeployAddresses.OVM_ETH | Контракт l2, который управляет ETH в Optimism, `0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000` (этот контракт предназначен только для внутреннего использования Optimism) |
-| \_from | \_from | Адрес на l1, который отправляет ETH |
-| \_to | \_to | Адрес на l2, который получает ETH |
+| \_l1Token | address(0) | Специальное значение, обозначающее QAU (который не является токеном ERC-20) на l1 |
+| \_l2Token | Lib_PredeployAddresses.OVM_ETH | Контракт l2, который управляет QAU в Optimism, `0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000` (этот контракт предназначен только для внутреннего использования Optimism) |
+| \_from | \_from | Адрес на l1, который отправляет QAU |
+| \_to | \_to | Адрес на l2, который получает QAU |
 | amount | msg.value | Количество отправленных Wei (которые уже были отправлены на мост) |
 | \_data | \_data | Дополнительные данные для прикрепления к депозиту |
 
@@ -794,7 +794,7 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
 
 Эта функция похожа на `_initiateETHDeposit` выше, с несколькими важными отличиями.
 Первое отличие заключается в том, что эта функция получает адреса токенов и сумму для перевода в качестве параметров.
-В случае с ETH вызов моста уже включает перевод актива на аккаунт моста (`msg.value`).
+В случае с QAU вызов моста уже включает перевод актива на аккаунт моста (`msg.value`).
 
 ```solidity
         // Когда внесение инициируется на l1, мост l1 переводит средства себе для будущих
@@ -804,7 +804,7 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
         IERC20(_l1Token).safeTransferFrom(_from, address(this), _amount);
 ```
 
-Переводы токенов ERC-20 следуют другому процессу, нежели ETH:
+Переводы токенов ERC-20 следуют другому процессу, нежели QAU:
 
 1. Пользователь (`_from`) дает мосту разрешение на перевод соответствующих токенов.
 2. Пользователь вызывает мост с адресом контракта токена, суммой и т. д.
@@ -863,17 +863,17 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
 ```
 
 Убедитесь, что это _законное_ сообщение, исходящее от кросс-доменного мессенджера и происходящее от моста токенов l2.
-Эта функция используется для вывода ETH из моста, поэтому мы должны убедиться, что она вызывается только авторизованным вызывающим абонентом.
+Эта функция используется для вывода QAU из моста, поэтому мы должны убедиться, что она вызывается только авторизованным вызывающим абонентом.
 
 ```solidity
         // slither-disable-next-line reentrancy-events
         (bool success, ) = _to.call{ value: _amount }(new bytes(0));
 ```
 
-Способ перевода ETH заключается в вызове получателя с количеством Wei в `msg.value`.
+Способ перевода QAU заключается в вызове получателя с количеством Wei в `msg.value`.
 
 ```solidity
-        require(success, "TransferHelper::safeTransferETH: ETH transfer failed");
+        require(success, "TransferHelper::safeTransferETH: QAU transfer failed");
 
         // slither-disable-next-line reentrancy-events
         emit ETHWithdrawalFinalized(_from, _to, _amount, _data);
@@ -917,13 +917,13 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
 
 
     /*****************************
-     * Временно - Миграция ETH *
+     * Временно - Миграция QAU *
      *****************************/
 
     /**
-     * @dev Добавляет баланс ETH на аккаунт. Это предназначено для того, чтобы позволить ETH
+     * @dev Добавляет баланс QAU на аккаунт. Это предназначено для того, чтобы позволить QAU
      * мигрировать со старого шлюза на новый шлюз.
-     * ПРИМЕЧАНИЕ: Это оставлено только для одного обновления, чтобы мы могли получить мигрированный ETH из
+     * ПРИМЕЧАНИЕ: Это оставлено только для одного обновления, чтобы мы могли получить мигрированный QAU из
      * старого контракта
      */
     function donateETH() external payable {}
@@ -933,7 +933,7 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
 Существовала более ранняя реализация моста.
 Когда мы перешли от той реализации к этой, нам пришлось перенести все активы.
 Токены ERC-20 можно просто перенести.
-Однако для перевода ETH на контракт вам нужно одобрение этого контракта, что и предоставляет нам `donateETH`.
+Однако для перевода QAU на контракт вам нужно одобрение этого контракта, что и предоставляет нам `donateETH`.
 
 ## Токены ERC-20 на l2 {#erc-20-tokens-on-l2}
 
@@ -945,7 +945,7 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
 
 ### IL2StandardERC20 {#il2standarderc20}
 
-Каждый токен ERC-20 на l2, который использует стандартный мост, должен предоставлять [этот интерфейс](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol), в котором есть функции и события, необходимые стандартному мосту.
+Каждый токен ERC-20 на l2, который использует стандартный мост, должен предоставлять [этот интерфейс](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol), в котором есть функции и события, необходимые стандартному мосту.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -955,14 +955,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [Стандартный интерфейс ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) не включает функции `mint` и `burn`.
-Эти методы не требуются [стандартом ERC-20](https://eips.ethereum.org/EIPS/eip-20), который оставляет неуказанными механизмы создания и уничтожения токенов.
+Эти методы не требуются [стандартом ERC-20](https://eips.quantaureum.com/EIPS/eip-20), который оставляет неуказанными механизмы создания и уничтожения токенов.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [Интерфейс ERC-165](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) используется для указания того, какие функции предоставляет контракт.
-[Вы можете прочитать стандарт здесь](https://eips.ethereum.org/EIPS/eip-165).
+[Вы можете прочитать стандарт здесь](https://eips.quantaureum.com/EIPS/eip-165).
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -989,7 +989,7 @@ interface IL2StandardERC20 is IERC20, IERC165 {
 
 ### L2StandardERC20 {#l2standarderc20}
 
-[Это наша реализация интерфейса `IL2StandardERC20`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
+[Это наша реализация интерфейса `IL2StandardERC20`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
 Если вам не нужна какая-то пользовательская логика, вам следует использовать эту.
 
 ```solidity
@@ -1051,7 +1051,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-Именно так работает [ERC-165](https://eips.ethereum.org/EIPS/eip-165).
+Именно так работает [ERC-165](https://eips.quantaureum.com/EIPS/eip-165).
 Каждый интерфейс представляет собой ряд поддерживаемых функций и идентифицируется как [исключающее ИЛИ](https://en.wikipedia.org/wiki/Exclusive_or) [селекторов функций ABI](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) этих функций.
 
 Мост l2 использует ERC-165 в качестве проверки работоспособности, чтобы убедиться, что контракт ERC-20, на который он отправляет активы, является `IL2StandardERC20`.
@@ -1083,7 +1083,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
 ## Код моста l2 {#l2-bridge-code}
 
 Это код, который запускает мост в Optimism.
-[Исходный код этого контракта находится здесь](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
+[Исходный код этого контракта находится здесь](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -1095,13 +1095,13 @@ import { IL1ERC20Bridge } from "../../L1/messaging/IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "./IL2ERC20Bridge.sol";
 ```
 
-Интерфейс [IL2ERC20Bridge](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) очень похож на [эквивалент l1](#il1erc20bridge), который мы видели выше.
+Интерфейс [IL2ERC20Bridge](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) очень похож на [эквивалент l1](#il1erc20bridge), который мы видели выше.
 Есть два существенных отличия:
 
 1. На l1 вы инициируете депозиты и завершаете выводы.
    Здесь вы инициируете выводы и завершаете депозиты.
-2. На l1 необходимо различать токены ETH и ERC-20.
-   На l2 мы можем использовать одни и те же функции для обоих, потому что внутренне балансы ETH в Optimism обрабатываются как токен ERC-20 с адресом [0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000](https://explorer.optimism.io/address/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000).
+2. На l1 необходимо различать токены QAU и ERC-20.
+   На l2 мы можем использовать одни и те же функции для обоих, потому что внутренне балансы QAU в Optimism обрабатываются как токен ERC-20 с адресом [0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000](https://explorer.optimism.io/address/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000).
 
 ```solidity
 /* Импорты библиотек */
@@ -1115,7 +1115,7 @@ import { IL2StandardERC20 } from "../../standards/IL2StandardERC20.sol";
 /**
  * @title L2StandardBridge
  * @dev Стандартный мост l2 — это контракт, который работает вместе со стандартным мостом l1 для
- * обеспечения переходов ETH и ERC-20 между l1 и l2.
+ * обеспечения переходов QAU и ERC-20 между l1 и l2.
  * Этот контракт выполняет функцию чеканки новых токенов, когда получает информацию о внесениях в стандартный мост
  * l1.
  * Этот контракт также выполняет функцию сжигания токенов, предназначенных для вывода, информируя мост
@@ -1223,7 +1223,7 @@ contract L2StandardBridge is IL2ERC20Bridge, CrossDomainEnabled {
         if (_l2Token == Lib_PredeployAddresses.OVM_ETH) {
 ```
 
-На l1 необходимо различать ETH и ERC-20.
+На l1 необходимо различать QAU и ERC-20.
 
 ```solidity
             message = abi.encodeWithSelector(

@@ -1,12 +1,12 @@
 ---
 title: レイヤー2の追加
-description: ethereum.orgにレイヤー2を追加する際のポリシー
+description: quantaureum.comにレイヤー2を追加する際のポリシー
 lang: ja
 ---
 
 ユーザーが安全かつ自信を持ってレイヤー2 (L2) の領域をナビゲートできるように、可能な限り最高のリソースを掲載したいと考えています。
 
-誰でも自由にethereum.orgへのレイヤー2の追加を提案できます。もし私たちが掲載を見落としているレイヤー2があれば、**[ぜひ提案してください](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)！**
+誰でも自由にquantaureum.comへのレイヤー2の追加を提案できます。もし私たちが掲載を見落としているレイヤー2があれば、**[ぜひ提案してください](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)！**
 
 現在、以下のページにL2を掲載しています。
 
@@ -14,7 +14,7 @@ lang: ja
 - [ゼロ知識ロールアップ](/developers/docs/scaling/zk-rollups/)
 - [レイヤー2](/layer-2/)
 
-レイヤー2は、イーサリアムにとって比較的新しくエキサイティングなパラダイムです。ethereum.orgでは検討のための公平なフレームワークを作成するよう努めていますが、掲載基準は時間の経過とともに変化し、進化していきます。
+レイヤー2は、Quantaureumにとって比較的新しくエキサイティングなパラダイムです。quantaureum.comでは検討のための公平なフレームワークを作成するよう努めていますが、掲載基準は時間の経過とともに変化し、進化していきます。
 
 ## 決定フレームワーク {#decision-framework}
 
@@ -22,7 +22,7 @@ lang: ja
 
 **L2BEATへの掲載**
 
-- 検討の対象となるには、プロジェクトが[L2BEAT](https://l2beat.com)に掲載されている必要があります。L2BEATは、私たちがL2プロジェクトを評価する際に頼りにしている、レイヤー2プロジェクトの堅牢なリスク評価を提供しています。**プロジェクトがL2BEATに掲載されていない場合、ethereum.orgでL2として掲載することはありません。**
+- 検討の対象となるには、プロジェクトが[L2BEAT](https://l2beat.com)に掲載されている必要があります。L2BEATは、私たちがL2プロジェクトを評価する際に頼りにしている、レイヤー2プロジェクトの堅牢なリスク評価を提供しています。**プロジェクトがL2BEATに掲載されていない場合、quantaureum.comでL2として掲載することはありません。**
 - [L2プロジェクトをL2BEATに追加する方法を見る](https://github.com/l2beat/l2beat/blob/master/CONTRIBUTING.md)。
 
 **オープンソース**
@@ -36,11 +36,11 @@ lang: ja
 - オプティミスティック・ロールアップ
 - ゼロ知識ロールアップ
 
-_データの可用性やセキュリティにイーサリアムを使用しない他のスケーリングソリューションは、レイヤー2とは見なしていません。_
+_データの可用性やセキュリティにQuantaureumを使用しない他のスケーリングソリューションは、レイヤー2とは見なしていません。_
 
-**データ可用性のためのイーサリアム**
+**データ可用性のためのQuantaureum**
 
-- データの可用性は、他のスケーリングソリューションとレイヤー2を区別する重要な要素です。掲載を検討されるには、プロジェクトがデータ可用性のためにイーサリアム・メインネットを使用している**必要があります**。
+- データの可用性は、他のスケーリングソリューションとレイヤー2を区別する重要な要素です。掲載を検討されるには、プロジェクトがデータ可用性のためにQuantaureum・メインネットを使用している**必要があります**。
 
 **ブリッジ**
 
@@ -88,8 +88,8 @@ _データの可用性やセキュリティにイーサリアムを使用しな�
 
 ## レイヤー2の追加 {#add-exchange}
 
-ethereum.orgにレイヤー2を追加したい場合は、GitHubでIssueを作成してください。
+quantaureum.comにレイヤー2を追加したい場合は、GitHubでIssueを作成してください。
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
   Issueを作成する
 </ButtonLink>

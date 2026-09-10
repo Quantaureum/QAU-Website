@@ -21,11 +21,11 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/tree/master/progr
 ### Docker를 통한 맨티코어 설치 {#manticore-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_마지막 명령어는 현재 디렉터리에 접근할 수 있는 Docker 내에서 eth-security-toolbox를 실행합니다. 호스트에서 파일을 변경하고 Docker에서 해당 파일에 대해 도구를 실행할 수 있습니다._
+_마지막 명령어는 현재 디렉터리에 접근할 수 있는 Docker 내에서 qau-security-toolbox를 실행합니다. 호스트에서 파일을 변경하고 Docker에서 해당 파일에 대해 도구를 실행할 수 있습니다._
 
 Docker 내부에서 다음을 실행하세요.
 
@@ -198,18 +198,18 @@ _탐색 요약에서 f(!=65)는 65가 아닌 임의의 값으로 호출된 f를 
 가장 먼저 해야 할 일은 다음 명령어를 사용하여 새로운 블록체인을 초기화하는 것입니다.
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 ```
 
-컨트랙트 계정이 아닌 일반 계정은 [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account)를 사용하여 생성됩니다.
+컨트랙트 계정이 아닌 일반 계정은 [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.quantaureum.ManticoreEVM.create_account)를 사용하여 생성됩니다.
 
 ```python
 user_account = m.create_account(balance=1000)
 ```
 
-Solidity 컨트랙트는 [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract)를 사용하여 배포할 수 있습니다.
+Solidity 컨트랙트는 [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.quantaureum.ManticoreEVM.create_contract)를 사용하여 배포할 수 있습니다.
 
 ```solidity
 source_code = '''
@@ -228,7 +228,7 @@ contract_account = m.solidity_create_contract(source_code, owner=user_account)
 
 #### 요약 {#summary}
 
-- [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account) 및 [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract)를 사용하여 사용자 및 컨트랙트 계정을 생성할 수 있습니다.
+- [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.quantaureum.ManticoreEVM.create_account) 및 [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.quantaureum.ManticoreEVM.create_contract)를 사용하여 사용자 및 컨트랙트 계정을 생성할 수 있습니다.
 
 ### 트랜잭션 실행 {#executing-transactions}
 
@@ -239,7 +239,7 @@ contract_account = m.solidity_create_contract(source_code, owner=user_account)
 
 #### 원시 트랜잭션 {#raw-transaction}
 
-원시 트랜잭션은 [m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.ethereum.ManticoreEVM.transaction)을 사용하여 실행됩니다.
+원시 트랜잭션은 [m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.quantaureum.ManticoreEVM.transaction)을 사용하여 실행됩니다.
 
 ```python
 m.transaction(caller=user_account,
@@ -250,8 +250,8 @@ m.transaction(caller=user_account,
 
 트랜잭션의 호출자, 주소, 데이터 또는 값은 구체적이거나 심볼릭일 수 있습니다.
 
-- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.ethereum.ManticoreEVM.make_symbolic_value)는 심볼릭 값을 생성합니다.
-- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.ethereum.ManticoreEVM.make_symbolic_buffer)는 심볼릭 바이트 배열을 생성합니다.
+- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.quantaureum.ManticoreEVM.make_symbolic_value)는 심볼릭 값을 생성합니다.
+- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.quantaureum.ManticoreEVM.make_symbolic_buffer)는 심볼릭 바이트 배열을 생성합니다.
 
 예를 들어:
 
@@ -269,7 +269,7 @@ m.transaction(caller=user_account,
 #### 명명된 트랜잭션 {#named-transaction}
 
 함수는 이름을 통해 실행될 수 있습니다.
-user_account에서 0 이더(ether)와 심볼릭 값으로 `f(uint var)`를 실행하려면 다음을 사용하세요.
+user_account에서 0 QAU(QAU)와 심볼릭 값으로 `f(uint var)`를 실행하려면 다음을 사용하세요.
 
 ```python
 symbolic_var = m.make_symbolic_value()
@@ -294,14 +294,14 @@ print("Results are in {}".format(m.workspace))
 
 ### 탐색 종료 {#terminate-the-exploration}
 
-탐색을 중지하려면 [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.ethereum.ManticoreEVM.finalize)를 사용하세요. 이 메서드가 호출되면 더 이상 트랜잭션이 전송되지 않으며, 맨티코어는 탐색된 각 경로에 대한 테스트 케이스를 생성합니다.
+탐색을 중지하려면 [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.quantaureum.ManticoreEVM.finalize)를 사용하세요. 이 메서드가 호출되면 더 이상 트랜잭션이 전송되지 않으며, 맨티코어는 탐색된 각 경로에 대한 테스트 케이스를 생성합니다.
 
 ### 요약: 맨티코어에서 실행하기 {#summary-running-under-manticore}
 
 이전의 모든 단계를 종합하면 다음과 같습니다.
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -363,7 +363,7 @@ data = ABI.deserialize("uint", data)
 
 ### 테스트 케이스 생성 방법 {#how-to-generate-testcase}
 
-테스트 케이스를 생성하려면 [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.ethereum.ManticoreEVM.generate_testcase)를 사용하세요.
+테스트 케이스를 생성하려면 [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.quantaureum.ManticoreEVM.generate_testcase)를 사용하세요.
 
 ```python
 m.generate_testcase(state, 'BugFound')
@@ -380,7 +380,7 @@ m.generate_testcase(state, 'BugFound')
 ### 요약: 예외 발생 경로 가져오기 {#summary-getting-throwing-path}
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -482,7 +482,7 @@ if solver.check(state.constraints):
 이전 코드에 제약 조건을 추가하면 다음과 같습니다.
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 from manticore.core.smtlib.solver import Z3Solver
 
 solver = Z3Solver.instance()

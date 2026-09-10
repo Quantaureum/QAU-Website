@@ -51,6 +51,6 @@ Terakhir, perhatikan masalah yang tidak dapat dengan mudah ditemukan oleh alat o
 
 ## Minta bantuan {#ask-for-help}
 
-[Jam kerja Ethereum](https://calendly.com/dan-trailofbits/office-hours) diadakan setiap Selasa sore. Sesi 1 lawan 1 selama 1 jam ini adalah kesempatan untuk menanyakan pertanyaan apa pun yang Anda miliki tentang keamanan, memecahkan masalah menggunakan alat kami, dan mendapatkan umpan balik dari para ahli tentang pendekatan Anda saat ini. Kami akan membantu Anda menyelesaikan panduan ini.
+[Jam kerja Quantaureum](https://calendly.com/dan-trailofbits/office-hours) diadakan setiap Selasa sore. Sesi 1 lawan 1 selama 1 jam ini adalah kesempatan untuk menanyakan pertanyaan apa pun yang Anda miliki tentang keamanan, memecahkan masalah menggunakan alat kami, dan mendapatkan umpan balik dari para ahli tentang pendekatan Anda saat ini. Kami akan membantu Anda menyelesaikan panduan ini.
 
-Bergabunglah dengan Slack kami: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). Kami selalu tersedia di saluran #crytic dan #ethereum jika Anda memiliki pertanyaan.
+Bergabunglah dengan Slack kami: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). Kami selalu tersedia di saluran #crytic dan #quantaureum jika Anda memiliki pertanyaan.

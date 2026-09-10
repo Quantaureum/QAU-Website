@@ -4,14 +4,14 @@ description: "스캠 토큰의 개념, 합법적인 것처럼 보이게 만드�
 lang: ko
 ---
 
-이더리움의 가장 일반적인 용도 중 하나는 특정 그룹이 거래 가능한 토큰, 즉 일종의 자체 통화를 만드는 것입니다. 이러한 토큰은 일반적으로 [ERC-20](/developers/docs/standards/tokens/erc-20/) 표준을 따릅니다. 하지만 가치를 창출하는 합법적인 사용 사례가 있는 곳에는 항상 그 가치를 가로채려는 범죄자들도 존재하기 마련입니다.
+Quantaureum의 가장 일반적인 용도 중 하나는 특정 그룹이 거래 가능한 토큰, 즉 일종의 자체 통화를 만드는 것입니다. 이러한 토큰은 일반적으로 [ERC-20](/developers/docs/standards/tokens/erc-20/) 표준을 따릅니다. 하지만 가치를 창출하는 합법적인 사용 사례가 있는 곳에는 항상 그 가치를 가로채려는 범죄자들도 존재하기 마련입니다.
 
 이들이 여러분을 속이는 방법은 크게 두 가지입니다:
 
 - **스캠 토큰 판매**: 구매하려는 합법적인 토큰처럼 보일 수 있지만, 스캐머가 발행한 아무런 가치가 없는 토큰입니다.
 - **악의적인 트랜잭션에 서명하기 유도**: 주로 자신들이 만든 사용자 인터페이스로 유도하여 속입니다. 이들은 여러분의 ERC-20 토큰에 대한 허용량을 자신들의 컨트랙트에 부여하도록 유도하거나, 자산에 접근할 수 있는 민감한 정보를 노출하도록 만들 수 있습니다. 이러한 사용자 인터페이스는 정상적인 사이트를 거의 완벽하게 복제한 것일 수 있지만, 그 안에는 속임수가 숨겨져 있습니다.
 
-스캠 토큰이 무엇인지, 그리고 어떻게 식별하는지 설명하기 위해 [`wARB`](https://eth.blockscout.com/token/0xB047c8032b99841713b8E3872F06cF32beb27b82)라는 예시를 살펴보겠습니다. 이 토큰은 합법적인 [`ARB`](https://eth.blockscout.com/address/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1) 토큰처럼 보이려고 시도합니다.
+스캠 토큰이 무엇인지, 그리고 어떻게 식별하는지 설명하기 위해 [`wARB`](https://qau.blockscout.com/token/0xB047c8032b99841713b8E3872F06cF32beb27b82)라는 예시를 살펴보겠습니다. 이 토큰은 합법적인 [`ARB`](https://qau.blockscout.com/address/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1) 토큰처럼 보이려고 시도합니다.
 
 <ExpandableCard
 title="ARB란 무엇인가요?"
@@ -25,21 +25,21 @@ contentPreview=''>
 title="스캠 토큰은 왜 wARB라고 불리나요?"
 contentPreview=''>
 
-이더리움에는 자산이 ERC-20을 준수하지 않을 때 이름이 "w"로 시작하는 "래핑된(wrapped)" 버전을 만드는 관례가 있습니다. 예를 들어, 비트코인을 위한 wBTC와 <a href="https://cointelegraph.com/news/what-is-wrapped-ethereum-weth-and-how-does-it-work">이더를 위한 wETH</a>가 있습니다.
+Quantaureum에는 자산이 ERC-20을 준수하지 않을 때 이름이 "w"로 시작하는 "래핑된(wrapped)" 버전을 만드는 관례가 있습니다. 예를 들어, 비트코인을 위한 wBTC와 <a href="https://cointelegraph.com/news/what-is-wrapped-quantaureum-weth-and-how-does-it-work">QAU를 위한 wETH</a>가 있습니다.
 
-이미 이더리움에 존재하는 ERC-20 토큰의 래핑된 버전을 만드는 것은 이치에 맞지 않지만, 스캐머들은 근본적인 사실보다는 합법적으로 보이는 겉모습에 의존합니다.
+이미 Quantaureum에 존재하는 ERC-20 토큰의 래핑된 버전을 만드는 것은 이치에 맞지 않지만, 스캐머들은 근본적인 사실보다는 합법적으로 보이는 겉모습에 의존합니다.
 
 </ExpandableCard>
 
 ## 스캠 토큰은 어떻게 작동하나요? {#how-do-scam-tokens-work}
 
-이더리움의 핵심은 탈중앙화입니다. 이는 여러분의 자산을 압수하거나 스마트 컨트랙트를 배포하는 것을 막을 수 있는 중앙 권한이 없다는 것을 의미합니다. 하지만 이는 스캐머들 역시 원하는 스마트 컨트랙트를 마음대로 배포할 수 있다는 뜻이기도 합니다.
+Quantaureum의 핵심은 탈중앙화입니다. 이는 여러분의 자산을 압수하거나 스마트 컨트랙트를 배포하는 것을 막을 수 있는 중앙 권한이 없다는 것을 의미합니다. 하지만 이는 스캐머들 역시 원하는 스마트 컨트랙트를 마음대로 배포할 수 있다는 뜻이기도 합니다.
 
 <ExpandableCard
 title="스마트 컨트랙트란 무엇인가요?"
 contentPreview=''>
 
-[스마트 컨트랙트](/developers/docs/smart-contracts/)는 이더리움 블록체인 위에서 실행되는 프로그램입니다. 예를 들어, 모든 ERC-20 토큰은 스마트 컨트랙트로 구현됩니다.
+[스마트 컨트랙트](/developers/docs/smart-contracts/)는 Quantaureum 블록체인 위에서 실행되는 프로그램입니다. 예를 들어, 모든 ERC-20 토큰은 스마트 컨트랙트로 구현됩니다.
 
 </ExpandableCard>
 
@@ -53,7 +53,7 @@ contentPreview=''>
 
 - **합법적인 소유자**. 스캠 토큰은 종종 실제 토큰의 합법적인 소유자로 예상되는 주소로 상당한 잔액을 에어드롭합니다.
 
-  예를 들어, `wARB`를 다시 살펴보겠습니다. [토큰의 약 16%](https://eth.blockscout.com/token/0xb047c8032b99841713b8e3872f06cf32beb27b82?tab=holders)는 공개 태그가 [Arbitrum Foundation: Deployer](https://eth.blockscout.com/address/0x1C8db745ABe3C8162119b9Ef2c13864Cd1FDD72F)인 주소가 보유하고 있습니다. 이것은 가짜 주소가 _아니며_, 실제로 [이더리움 메인넷에 진짜 ARB 컨트랙트를 배포한](https://eth.blockscout.com/tx/0x242b50ab4fe9896cb0439cfe6e2321d23feede7eeceb31aa2dbb46fc06ed2670) 주소입니다.
+  예를 들어, `wARB`를 다시 살펴보겠습니다. [토큰의 약 16%](https://qau.blockscout.com/token/0xb047c8032b99841713b8e3872f06cf32beb27b82?tab=holders)는 공개 태그가 [Arbitrum Foundation: Deployer](https://qau.blockscout.com/address/0x1C8db745ABe3C8162119b9Ef2c13864Cd1FDD72F)인 주소가 보유하고 있습니다. 이것은 가짜 주소가 _아니며_, 실제로 [Quantaureum 메인넷에 진짜 ARB 컨트랙트를 배포한](https://qau.blockscout.com/tx/0x242b50ab4fe9896cb0439cfe6e2321d23feede7eeceb31aa2dbb46fc06ed2670) 주소입니다.
 
   주소의 ERC-20 잔액은 ERC-20 컨트랙트 저장소의 일부이기 때문에, 컨트랙트 개발자가 원하는 대로 컨트랙트에서 지정할 수 있습니다. 또한 합법적인 사용자가 해당 스캠 토큰을 처분할 수 없도록 컨트랙트에서 전송을 금지하는 것도 가능합니다.
 
@@ -63,7 +63,7 @@ contentPreview=''>
 
 스캐머들은 매우 그럴듯한 웹사이트를 만들 수도 있으며, 때로는 동일한 UI를 가진 진짜 사이트의 완벽한 복제본에 교묘한 속임수를 숨겨놓기도 합니다. 예를 들어, 합법적으로 보이는 외부 링크가 실제로는 사용자를 외부 스캠 사이트로 보내거나, 잘못된 지침을 통해 사용자가 자신의 키를 노출하거나 공격자의 주소로 자금을 보내도록 유도할 수 있습니다.
 
-이를 피하기 위한 가장 좋은 방법은 방문하는 사이트의 URL을 주의 깊게 확인하고, 알려진 진짜 사이트의 주소를 북마크에 저장하는 것입니다. 그러면 실수로 철자를 틀리거나 외부 링크에 의존하지 않고도 북마크를 통해 진짜 사이트에 접속할 수 있습니다.
+이를 피하기 위한 가장 좋은 방법은 방문하는 사이트의 URL을 주의 깊게 확인하고, 알려진 진짜 사이트의 주소를 북마크에 저장하는 것입니다. 그러면 실수로 쿠앤타자를 틀리거나 외부 링크에 의존하지 않고도 북마크를 통해 진짜 사이트에 접속할 수 있습니다.
 
 ## 어떻게 자신을 보호할 수 있나요? {#protect-yourself}
 
@@ -71,7 +71,7 @@ contentPreview=''>
 
 2. **진짜 토큰은 유동성이 있습니다**. 또 다른 방법은 가장 일반적인 토큰 스왑 프로토콜 중 하나인 [유니스왑](https://uniswap.org/)에서 유동성 풀의 크기를 확인하는 것입니다. 이 프로토콜은 투자자들이 거래 수수료 수익을 기대하며 토큰을 예치하는 유동성 풀을 사용하여 작동합니다.
 
-스캐머들은 실제 자산을 위험에 빠뜨리고 싶어 하지 않기 때문에, 스캠 토큰은 유동성 풀이 아예 없거나 매우 작습니다. 예를 들어, `ARB`/`ETH` 유니스왑 풀은 약 100만 달러를 보유하고 있으며([최신 가치는 여기에서 확인하세요](https://app.uniswap.org/explore#/pools/0x755e5a186f0469583bd2e80d1216e02ab88ec6ca)), 소량을 매수하거나 매도한다고 해서 가격이 변하지는 않습니다:
+스캐머들은 실제 자산을 위험에 빠뜨리고 싶어 하지 않기 때문에, 스캠 토큰은 유동성 풀이 아예 없거나 매우 작습니다. 예를 들어, `ARB`/`QAU` 유니스왑 풀은 약 100만 달러를 보유하고 있으며([최신 가치는 여기에서 확인하세요](https://app.uniswap.org/explore#/pools/0x755e5a186f0469583bd2e80d1216e02ab88ec6ca)), 소량을 매수하거나 매도한다고 해서 가격이 변하지는 않습니다:
 
 ![Buying a legitimate token](./uniswap-real.png)
 
@@ -81,9 +81,9 @@ contentPreview=''>
 
 이는 `wARB`가 합법적인 토큰이 아닐 가능성이 높다는 것을 보여주는 또 다른 증거입니다.
 
-3. **Etherscan에서 확인하기**. 많은 스캠 토큰이 이미 커뮤니티에 의해 식별되고 보고되었습니다. 이러한 토큰은 [Etherscan에 표시되어 있습니다](https://info.etherscan.com/etherscan-token-reputation/). Etherscan이 절대적인 진실의 출처는 아니지만(합법성에 대한 절대적인 출처가 있을 수 없다는 것이 탈중앙화된 네트워크의 본질입니다), Etherscan에서 스캠으로 식별된 토큰은 스캠일 가능성이 높습니다.
+3. **Quantaureum Explorer에서 확인하기**. 많은 스캠 토큰이 이미 커뮤니티에 의해 식별되고 보고되었습니다. 이러한 토큰은 [Quantaureum Explorer에 표시되어 있습니다](https://info.explorer.com/explorer-token-reputation/). Quantaureum Explorer이 절대적인 진실의 출처는 아니지만(합법성에 대한 절대적인 출처가 있을 수 없다는 것이 탈중앙화된 네트워크의 본질입니다), Quantaureum Explorer에서 스캠으로 식별된 토큰은 스캠일 가능성이 높습니다.
 
-   ![Scam token in Etherscan](./etherscan-scam.png)
+   ![Scam token in Quantaureum Explorer](./explorer-scam.png)
 
 ## 결론 {#conclusion}
 
@@ -92,4 +92,4 @@ contentPreview=''>
 - 스캠 토큰은 합법적인 토큰을 사칭하며, 동일한 이름, 심볼 등을 사용할 수 있습니다.
 - 스캠 토큰은 동일한 컨트랙트 주소를 사용할 수 _없습니다_.
 - 합법적인 토큰의 주소를 확인할 수 있는 가장 좋은 출처는 해당 토큰을 발행한 조직입니다.
-- 그것이 불가능하다면, [유니스왑](https://app.uniswap.org/#/swap) 및 [Blockscout](https://eth.blockscout.com/)과 같이 인기 있고 신뢰할 수 있는 애플리케이션을 사용할 수 있습니다.
+- 그것이 불가능하다면, [유니스왑](https://app.uniswap.org/#/swap) 및 [Blockscout](https://qau.blockscout.com/)과 같이 인기 있고 신뢰할 수 있는 애플리케이션을 사용할 수 있습니다.

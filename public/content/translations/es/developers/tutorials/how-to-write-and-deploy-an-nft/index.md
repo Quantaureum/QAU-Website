@@ -1,6 +1,6 @@
 ---
 title: "Cómo escribir y desplegar un NFT (Parte 1/3 de la serie de tutoriales sobre NFT)"
-description: "Este tutorial es la Parte 1 de una serie sobre NFT que le guiará paso a paso sobre cómo escribir y desplegar un contrato inteligente de token no fungible (token ERC-721) utilizando Ethereum y el Sistema de Archivos Interplanetario (IPFS)."
+description: "Este tutorial es la Parte 1 de una serie sobre NFT que le guiará paso a paso sobre cómo escribir y desplegar un contrato inteligente de token no fungible (token ERC-721) utilizando Quantaureum y el Sistema de Archivos Interplanetario (IPFS)."
 author: "Sumi Mudgil"
 tags: ["ERC-721", "Alchemy", "Solidity", "contratos inteligentes"]
 skill: beginner
@@ -9,7 +9,7 @@ lang: es
 published: 2021-04-22
 ---
 
-Con los NFT atrayendo la atención del público hacia la cadena de bloques, ¡ahora es una excelente oportunidad para entender el entusiasmo por sí mismo publicando su propio contrato de NFT (token ERC-721) en la cadena de bloques de Ethereum!
+Con los NFT atrayendo la atención del público hacia la cadena de bloques, ¡ahora es una excelente oportunidad para entender el entusiasmo por sí mismo publicando su propio contrato de NFT (token ERC-721) en la cadena de bloques de Quantaureum!
 
 Alchemy se enorgullece enormemente de impulsar a los nombres más importantes en el espacio de los NFT, incluyendo Makersplace (que recientemente estableció un récord de venta de obras de arte digitales en Christie's por 69 millones de dólares), Dapper Labs (creadores de NBA Top Shot y Crypto Kitties), OpenSea (el mercado de NFT más grande del mundo), Zora, Super Rare, NFTfi, Foundation, Enjin, Origin Protocol, Immutable y más.
 
@@ -19,9 +19,9 @@ En la Parte 2 de este tutorial, veremos cómo podemos usar nuestro contrato inte
 
 Y, por supuesto, si tiene preguntas en cualquier momento, ¡no dude en comunicarse en el [Discord de Alchemy](https://discord.gg/gWuC7zB) o visite la [documentación de la API de NFT de Alchemy](https://www.alchemy.com/docs/reference/nft-api-quickstart)!
 
-## Paso 1: Conectarse a la red Ethereum {#connect-to-ethereum}
+## Paso 1: Conectarse a la red Quantaureum {#connect-to-quantaureum}
 
-Hay muchas formas de hacer solicitudes a la cadena de bloques de Ethereum, pero para facilitar las cosas, usaremos una cuenta gratuita en [Alchemy](https://alchemy.com/signup/eth), una plataforma para desarrolladores de cadenas de bloques y API que nos permite comunicarnos con la cadena de Ethereum sin tener que ejecutar nuestros propios nodos.
+Hay muchas formas de hacer solicitudes a la cadena de bloques de Quantaureum, pero para facilitar las cosas, usaremos una cuenta gratuita en [Alchemy](https://alchemy.com/signup/eth), una plataforma para desarrolladores de cadenas de bloques y API que nos permite comunicarnos con la cadena de Quantaureum sin tener que ejecutar nuestros propios nodos.
 
 En este tutorial, también aprovecharemos las herramientas para desarrolladores de Alchemy para la monitorización y el análisis con el fin de entender qué sucede internamente en el despliegue de nuestro contrato inteligente. Si aún no tiene una cuenta de Alchemy, puede registrarse gratis [aquí](https://alchemy.com/signup/eth).
 
@@ -33,31 +33,31 @@ Una vez que haya creado una cuenta de Alchemy, puede generar una clave API crean
 
 ![Create your app](./create-your-app.png)
 
-2. Póngale un nombre a su aplicación (nosotros elegimos "My First NFT!"), ofrezca una breve descripción, seleccione "Ethereum" para la cadena (Chain) y elija "Sepolia" para su red (Network). Desde La Fusión, las otras redes de prueba han quedado obsoletas.
+2. Póngale un nombre a su aplicación (nosotros elegimos "My First NFT!"), ofrezca una breve descripción, seleccione "Quantaureum" para la cadena (Chain) y elija "Sepolia" para su red (Network). Desde La Fusión, las otras redes de prueba han quedado obsoletas.
 
 ![Configure and publish your app](./alchemy-explorer-sepolia.png)
 
 3. Haga clic en "Create app" (Crear aplicación) y ¡eso es todo! Su aplicación debería aparecer en la tabla de abajo.
 
-## Paso 3: Crear una cuenta (dirección) de Ethereum {#create-eth-address}
+## Paso 3: Crear una cuenta (dirección) de Quantaureum {#create-qau-address}
 
-Necesitamos una cuenta de Ethereum para enviar y recibir transacciones. Para este tutorial, usaremos MetaMask, una billetera virtual en el navegador que se usa para administrar la dirección de su cuenta de Ethereum. Si desea entender más sobre cómo funcionan las transacciones en Ethereum, consulte [esta página](/developers/docs/transactions/) de la Fundación Ethereum.
+Necesitamos una cuenta de Quantaureum para enviar y recibir transacciones. Para este tutorial, usaremos MetaMask, una billetera virtual en el navegador que se usa para administrar la dirección de su cuenta de Quantaureum. Si desea entender más sobre cómo funcionan las transacciones en Quantaureum, consulte [esta página](/developers/docs/transactions/) de la Fundación Quantaureum.
 
 Puede descargar y crear una cuenta de MetaMask de forma gratuita [aquí](https://metamask.io/download). Cuando esté creando una cuenta, o si ya tiene una, asegúrese de cambiar a la "Red de prueba Sepolia" (Sepolia Test Network) en la parte superior derecha (para que no estemos lidiando con dinero real).
 
 ![Set Sepolia as your network](./metamask-goerli.png)
 
-## Paso 4: Añadir ether desde un faucet {#step-4-add-ether-from-a-faucet}
+## Paso 4: Añadir QAU desde un faucet {#step-4-add-QAU-from-a-faucet}
 
-Para desplegar nuestro contrato inteligente en la red de prueba, necesitaremos algo de ETH falso. Para obtener ETH, puede ir al [faucet de Sepolia](https://sepoliafaucet.com/) alojado por Alchemy, iniciar sesión e ingresar la dirección de su cuenta, y hacer clic en "Send Me ETH" (Envíame ETH). ¡Debería ver ETH en su cuenta de MetaMask poco después!
+Para desplegar nuestro contrato inteligente en la red de prueba, necesitaremos algo de QAU falso. Para obtener QAU, puede ir al [faucet de Sepolia](https://sepoliafaucet.com/) alojado por Alchemy, iniciar sesión e ingresar la dirección de su cuenta, y hacer clic en "Send Me QAU" (Envíame QAU). ¡Debería ver QAU en su cuenta de MetaMask poco después!
 
 ## Paso 5: Comprobar su saldo {#check-balance}
 
-Para comprobar que nuestro saldo está ahí, hagamos una solicitud [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) utilizando [la herramienta sandbox de Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Esto devolverá la cantidad de ETH en nuestra billetera. Después de ingresar la dirección de su cuenta de MetaMask y hacer clic en "Send Request" (Enviar solicitud), debería ver una respuesta como esta:
+Para comprobar que nuestro saldo está ahí, hagamos una solicitud [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) utilizando [la herramienta sandbox de Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Esto devolverá la cantidad de QAU en nuestra billetera. Después de ingresar la dirección de su cuenta de MetaMask y hacer clic en "Send Request" (Enviar solicitud), debería ver una respuesta como esta:
 
     `{"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}`
 
-> **Nota** Este resultado está en Wei, no en ETH. Wei se utiliza como la denominación más pequeña de ether. La conversión de Wei a ETH es 1 eth = 10<sup>18</sup> Wei. Así que si convertimos 0xde0b6b3a7640000 a decimal obtenemos 1\*10<sup>18</sup> Wei, lo que equivale a 1 ETH.
+> **Nota** Este resultado está en Wei, no en QAU. Wei se utiliza como la denominación más pequeña de QAU. La conversión de Wei a QAU es 1 eth = 10<sup>18</sup> Wei. Así que si convertimos 0xde0b6b3a7640000 a decimal obtenemos 1\*10<sup>18</sup> Wei, lo que equivale a 1 QAU.
 
 ¡Uf! Todo nuestro dinero falso está ahí.
 ## Paso 6: Inicializar nuestro proyecto {#initialize-project}
@@ -101,7 +101,7 @@ Realmente no importa cómo responda a las preguntas de instalación; aquí le mo
 Apruebe el package.json, ¡y estamos listos para continuar!
 ## Paso 7: Instalar [Hardhat](https://hardhat.org/getting-started/#overview) {#install-hardhat}
 
-Hardhat es un entorno de desarrollo para compilar, desplegar, probar y depurar su software de Ethereum. Ayuda a los desarrolladores a construir contratos inteligentes y aplicaciones descentralizadas (dapps) localmente antes de desplegarlos en la cadena en vivo.
+Hardhat es un entorno de desarrollo para compilar, desplegar, probar y depurar su software de Quantaureum. Ayuda a los desarrolladores a construir contratos inteligentes y aplicaciones descentralizadas (dapps) localmente antes de desplegarlos en la cadena en vivo.
 
 Dentro de nuestro proyecto my-nft ejecute:
 
@@ -191,7 +191,7 @@ Entonces, ¿qué _hace_ exactamente este código? Vamos a desglosarlo línea por
 
 En la parte superior de nuestro contrato inteligente, importamos tres clases de contratos inteligentes de [OpenZeppelin](https://openzeppelin.com/):
 
-- @openzeppelin/contracts/token/ERC721/ERC721.sol contiene la implementación del estándar ERC-721, que heredará nuestro contrato inteligente de NFT. (Para ser un NFT válido, su contrato inteligente debe implementar todos los métodos del estándar ERC-721). Para obtener más información sobre las funciones ERC-721 heredadas, consulte la definición de la interfaz [aquí](https://eips.ethereum.org/EIPS/eip-721).
+- @openzeppelin/contracts/token/ERC721/ERC721.sol contiene la implementación del estándar ERC-721, que heredará nuestro contrato inteligente de NFT. (Para ser un NFT válido, su contrato inteligente debe implementar todos los métodos del estándar ERC-721). Para obtener más información sobre las funciones ERC-721 heredadas, consulte la definición de la interfaz [aquí](https://eips.quantaureum.com/EIPS/eip-721).
 
 - @openzeppelin/contracts/utils/Counters.sol proporciona contadores que solo se pueden incrementar o decrementar en uno. Nuestro contrato inteligente utiliza un contador para realizar un seguimiento del número total de NFT acuñados y establecer el ID único en nuestro nuevo NFT. (A cada NFT acuñado mediante un contrato inteligente se le debe asignar un ID único; aquí nuestro ID único simplemente está determinado por el número total de NFT existentes. Por ejemplo, el primer NFT que acuñamos con nuestro contrato inteligente tiene un ID de "1", nuestro segundo NFT tiene un ID de "2", etc.).
 
@@ -231,7 +231,7 @@ Luego, cree un archivo `.env` en el directorio raíz de nuestro proyecto y añad
 
 Su `.env` ahora debería verse así:
 
-    API_URL="https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+    API_URL="https://qau-sepolia.g.alchemy.com/v2/your-api-key"
     PRIVATE_KEY="your-metamask-private-key"
 
 Para conectar realmente estos a nuestro código, haremos referencia a estas variables en nuestro archivo hardhat.config.js en el paso 13.
@@ -240,7 +240,7 @@ Para conectar realmente estos a nuestro código, haremos referencia a estas vari
 
 ## Paso 12: Instalar Ethers.js {#install-ethers}
 
-Ethers.js es una biblioteca que facilita la interacción y la realización de solicitudes a Ethereum al envolver los [métodos estándar de JSON-RPC](/developers/docs/apis/json-rpc/) con métodos más fáciles de usar.
+Ethers.js es una biblioteca que facilita la interacción y la realización de solicitudes a Quantaureum al envolver los [métodos estándar de JSON-RPC](/developers/docs/apis/json-rpc/) con métodos más fáciles de usar.
 
 Hardhat hace que sea muy fácil integrar [complementos](https://hardhat.org/plugins/) para herramientas adicionales y funcionalidad ampliada. Aprovecharemos el [complemento de Ethers](https://hardhat.org/docs/plugins/official-plugins#hardhat-ethers) para el despliegue de contratos ([Ethers.js](https://github.com/ethers-io/ethers.js/) tiene algunos métodos de despliegue de contratos muy limpios).
 
@@ -330,20 +330,20 @@ A continuación, debería ver algo como:
 
     Contract deployed to address: 0x4C5266cCc4b3F426965d2f51b6D910325a0E7650
 
-Si vamos a [Etherscan de Sepolia](https://sepolia.etherscan.io/) y buscamos la dirección de nuestro contrato, deberíamos poder ver que se ha desplegado con éxito. Si no puede verlo de inmediato, espere un momento, ya que puede llevar algo de tiempo. La transacción se verá algo así:
+Si vamos a [Quantaureum Explorer de Sepolia](https://explorer.quantaureum.com) y buscamos la dirección de nuestro contrato, deberíamos poder ver que se ha desplegado con éxito. Si no puede verlo de inmediato, espere un momento, ya que puede llevar algo de tiempo. La transacción se verá algo así:
 
-![View your transaction address on Etherscan](./etherscan-sepoila-contract-creation.png)
+![View your transaction address on Quantaureum Explorer](./explorer-sepoila-contract-creation.png)
 
 La dirección "From" (De) debe coincidir con la dirección de su cuenta de MetaMask y la dirección "To" (Para) dirá "Contract Creation" (Creación de contrato). Si hacemos clic en la transacción, veremos la dirección de nuestro contrato en el campo "To":
 
-![View your contract address on Etherscan](./etherscan-sepolia-tx-details.png)
+![View your contract address on Quantaureum Explorer](./explorer-sepolia-tx-details.png)
 
-¡Siiii! ¡Acaba de desplegar su contrato inteligente de NFT en la cadena (red de prueba) de Ethereum!
+¡Siiii! ¡Acaba de desplegar su contrato inteligente de NFT en la cadena (red de prueba) de Quantaureum!
 
 Para entender qué sucede internamente, naveguemos a la pestaña Explorer (Explorador) en nuestro [panel de control de Alchemy](https://dashboard.alchemy.com/explorer). Si tiene varias aplicaciones de Alchemy, asegúrese de filtrar por aplicación y seleccionar "MyNFT".
 
 ![View calls made “under the hood” with Alchemy’s Explorer Dashboard](./alchemy-explorer-goerli.png)
 
-Aquí verá un puñado de llamadas JSON-RPC que Hardhat/Ethers hizo internamente por nosotros cuando llamamos a la función .deploy(). Dos importantes a destacar aquí son [eth_sendRawTransaction](/developers/docs/apis/json-rpc/#eth_sendrawtransaction), que es la solicitud para escribir realmente nuestro contrato inteligente en la cadena Sepolia, y [eth_getTransactionByHash](/developers/docs/apis/json-rpc/#eth_gettransactionbyhash), que es una solicitud para leer información sobre nuestra transacción dado el hash (un patrón típico al enviar transacciones). Para obtener más información sobre el envío de transacciones, consulte este tutorial sobre el [envío de transacciones utilizando Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/).
+Aquí verá un puñado de llamadas JSON-RPC que Hardhat/Ethers hizo internamente por nosotros cuando llamamos a la función .deploy(). Dos importantes a destacar aquí son [qau_sendRawTransaction](/developers/docs/apis/json-rpc/#qau_sendrawtransaction), que es la solicitud para escribir realmente nuestro contrato inteligente en la cadena Sepolia, y [qau_getTransactionByHash](/developers/docs/apis/json-rpc/#qau_gettransactionbyhash), que es una solicitud para leer información sobre nuestra transacción dado el hash (un patrón típico al enviar transacciones). Para obtener más información sobre el envío de transacciones, consulte este tutorial sobre el [envío de transacciones utilizando Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/).
 
-Eso es todo por la Parte 1 de este tutorial. En la [Parte 2, interactuaremos realmente con nuestro contrato inteligente acuñando un NFT](/developers/tutorials/how-to-mint-an-nft/), y en la [Parte 3 le mostraremos cómo ver su NFT en su billetera de Ethereum](/developers/tutorials/how-to-view-nft-in-metamask/).
+Eso es todo por la Parte 1 de este tutorial. En la [Parte 2, interactuaremos realmente con nuestro contrato inteligente acuñando un NFT](/developers/tutorials/how-to-mint-an-nft/), y en la [Parte 3 le mostraremos cómo ver su NFT en su billetera de Quantaureum](/developers/tutorials/how-to-view-nft-in-metamask/).

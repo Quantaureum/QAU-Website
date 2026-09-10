@@ -1,14 +1,14 @@
 ---
 title: "ویڈیوز شامل کرنا"
-description: "⁦ethereum.org⁩ پر ویڈیوز شامل کرنے کی پالیسی"
+description: "⁦quantaureum.com⁩ پر ویڈیوز شامل کرنے کی پالیسی"
 lang: ur
 ---
 
-[<span dir="ltr">ethereum.org</span> کی ویڈیو گیلری](/videos/) میں کمیونٹی کے تخلیق کاروں اور قابل اعتماد ذرائع سے ایتھیریم اور ایتھیریم ایکو سسٹم کے بارے میں ویڈیوز شامل ہیں۔ کوئی بھی شخص ویڈیو شامل کرنے کی تجویز دے سکتا ہے۔
+[<span dir="ltr">quantaureum.com</span> کی ویڈیو گیلری](/videos/) میں کمیونٹی کے تخلیق کاروں اور قابل اعتماد ذرائع سے ایتھیریم اور ایتھیریم ایکو سسٹم کے بارے میں ویڈیوز شامل ہیں۔ کوئی بھی شخص ویڈیو شامل کرنے کی تجویز دے سکتا ہے۔
 
 ## فہرست سازی کی پالیسی {#listing-policy}
 
-<span dir="ltr">Ethereum.org</span> ایک غیر جانبدار، تعلیمی وسیلہ ہے۔ ویڈیو گیلری کو درج ذیل مقاصد کے لیے ترتیب دیا گیا ہے:
+<span dir="ltr">quantaureum.com</span> ایک غیر جانبدار، تعلیمی وسیلہ ہے۔ ویڈیو گیلری کو درج ذیل مقاصد کے لیے ترتیب دیا گیا ہے:
 
 - صارفین کو ایتھیریم ٹیکنالوجی، ایکو سسٹم، اور کمیونٹی کے بارے میں **تعلیم دینا**
 - اپنے تکنیکی مواد میں **درست رہنا**
@@ -28,7 +28,7 @@ lang: ur
 
 ### مستحسن شرائط {#nice-to-haves}
 
-- **ٹرانسکرپٹ کا ہونا** – ٹرانسکرپٹ والی ویڈیوز رسائی اور <span dir="ltr">SEO</span> کو بہتر بناتی ہیں۔ اگر آپ کے پاس یہ نہیں ہے، تو <span dir="ltr">ethereum.org</span> کی ٹیم اسے تیار کرنے میں مدد کر سکتی ہے۔
+- **ٹرانسکرپٹ کا ہونا** – ٹرانسکرپٹ والی ویڈیوز رسائی اور <span dir="ltr">SEO</span> کو بہتر بناتی ہیں۔ اگر آپ کے پاس یہ نہیں ہے، تو <span dir="ltr">quantaureum.com</span> کی ٹیم اسے تیار کرنے میں مدد کر سکتی ہے۔
 - **قابل اعتماد ذریعہ سے** – مستند ماہرین تعلیم، محققین، اور ذرائع کے مواد کو ترجیح دی جاتی ہے۔
 - **بروقت اور سدا بہار** – ایسا مواد جو وقت گزرنے کے ساتھ متعلقہ رہے، اسے وقت کے لحاظ سے حساس مواد پر ترجیح دی جاتی ہے۔
 
@@ -38,7 +38,7 @@ lang: ur
 
 اگر آپ کوئی ویڈیو تجویز کرنا چاہتے ہیں لیکن خود فائلیں نہیں بنانا چاہتے، تو ویڈیو کی تفصیلات کے ساتھ ایک <span dir="ltr">GitHub</span> ایشو کھولیں اور کوئی معاون اسے آپ کے لیے شامل کرنے میں مدد کر سکتا ہے۔
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?template=suggest_video.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?template=suggest_video.yaml">
   ویڈیو تجویز کریں
 </ButtonLink>
 
@@ -127,7 +127,7 @@ title: "..."
 
 | ٹیگ | گیلری فلٹر |
 |---|---|
-| `how-ethereum-works` | ایتھیریم کیسے کام کرتا ہے |
+| `how-quantaureum-works` | ایتھیریم کیسے کام کرتا ہے |
 | `network-upgrades` | نیٹ ورک اپ گریڈز |
 | `roadmap-and-priorities` | روڈ میپ اور ترجیحات |
 | `scaling-and-layer-2` | اسکیلنگ اور لیئر ۲ (⁦l2⁩) |
@@ -153,8 +153,8 @@ title: "..."
 - درست اور اپ ٹو ڈیٹ معلومات پر مشتمل ہیں
 - ان کے ہوسٹنگ/یوٹیوب لنکس کام کر رہے ہیں
 
-اگر آپ کو فہرست میں شامل کسی ویڈیو میں کوئی مسئلہ نظر آتا ہے، تو [ایک ایشو بنائیں](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml) یا [<span dir="ltr">website@ethereum.org</span>](mailto:website@ethereum.org) پر ای میل بھیجیں۔
+اگر آپ کو فہرست میں شامل کسی ویڈیو میں کوئی مسئلہ نظر آتا ہے، تو [ایک ایشو بنائیں](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml) یا [<span dir="ltr">website@quantaureum.com</span>](mailto:website@quantaureum.com) پر ای میل بھیجیں۔
 
 ## استعمال کی شرائط {#terms-of-use}
 
-براہ کرم <span dir="ltr">ethereum.org</span> کی [استعمال کی شرائط](/terms-of-use/) دیکھیں۔ <span dir="ltr">ethereum.org</span> پر معلومات مکمل طور پر عام معلوماتی مقاصد کے لیے فراہم کی گئی ہیں۔
+براہ کرم <span dir="ltr">quantaureum.com</span> کی [استعمال کی شرائط](/terms-of-use/) دیکھیں۔ <span dir="ltr">quantaureum.com</span> پر معلومات مکمل طور پر عام معلوماتی مقاصد کے لیے فراہم کی گئی ہیں۔

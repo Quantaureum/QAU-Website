@@ -10,7 +10,7 @@ lang: ur
 
 ## پیشگی شرائط {#prerequisites}
 
-آپ کو [بلاک چین کے بنیادی اصولوں](/developers/docs/intro-to-ethereum/)، خاص طور پر [اتفاق رائے کے طریقہ کار](/developers/docs/consensus-mechanisms/) کی اچھی سمجھ ہونی چاہیے۔ یہ صفحہ یہ بھی فرض کرتا ہے کہ قاری [بلاکس](/developers/docs/blocks/)، [ٹرانزیکشنز](/developers/docs/transactions/)، [نوڈز](/developers/docs/nodes-and-clients/)، [اسکیلنگ کے حل](/developers/docs/scaling/)، اور دیگر متعلقہ موضوعات سے واقف ہے۔
+آپ کو [بلاک چین کے بنیادی اصولوں](/developers/docs/intro-to-quantaureum/)، خاص طور پر [اتفاق رائے کے طریقہ کار](/developers/docs/consensus-mechanisms/) کی اچھی سمجھ ہونی چاہیے۔ یہ صفحہ یہ بھی فرض کرتا ہے کہ قاری [بلاکس](/developers/docs/blocks/)، [ٹرانزیکشنز](/developers/docs/transactions/)، [نوڈز](/developers/docs/nodes-and-clients/)، [اسکیلنگ کے حل](/developers/docs/scaling/)، اور دیگر متعلقہ موضوعات سے واقف ہے۔
 
 ## ڈیٹا کی دستیابی کا مسئلہ {#the-data-availability-problem}
 
@@ -46,7 +46,7 @@ DACs کو کچھ ویلیڈیمز (validiums) بھی استعمال کرتے ہ�
 
 اس کا انحصار مکمل نوڈز کی مکمل ٹرانزیکشن ڈیٹا تک رسائی پر ہے۔ ایک حملہ آور جو خراب بلاک ہیڈر نشر کرتا ہے اور ٹرانزیکشن ڈیٹا دستیاب کرنے میں بھی ناکام رہتا ہے، وہ مکمل نوڈز کو ثبوتِ دھوکہ دہی پیدا کرنے سے روکنے کے قابل ہو جائے گا۔ مکمل نوڈز خراب بلاک کے بارے میں وارننگ کا اشارہ دینے کے قابل ہو سکتے ہیں، لیکن وہ ثبوت کے ساتھ اپنی وارننگ کی حمایت نہیں کر سکتے، کیونکہ ثبوت پیدا کرنے کے لیے ڈیٹا دستیاب نہیں کیا گیا تھا!
 
-اس ڈیٹا کی دستیابی کے مسئلے کا حل DAS ہے۔ لائٹ نوڈز مکمل حالت کے ڈیٹا کے بہت چھوٹے بے ترتیب ٹکڑے ڈاؤن لوڈ کرتے ہیں اور نمونوں کا استعمال اس بات کی تصدیق کے لیے کرتے ہیں کہ مکمل ڈیٹا سیٹ دستیاب ہے۔ <span dir="ltr">N</span> بے ترتیب ٹکڑوں کو ڈاؤن لوڈ کرنے کے بعد مکمل ڈیٹا کی دستیابی کو غلط طور پر فرض کرنے کے اصل امکان کا حساب لگایا جا سکتا ہے ([<span dir="ltr">100</span> ٹکڑوں کے لیے امکان <span dir="ltr">10^-30</span> ہے](https://dankradfeist.de/ethereum/2019/12/20/data-availability-checks.html)، یعنی، ناقابل یقین حد تک ناممکن)۔
+اس ڈیٹا کی دستیابی کے مسئلے کا حل DAS ہے۔ لائٹ نوڈز مکمل حالت کے ڈیٹا کے بہت چھوٹے بے ترتیب ٹکڑے ڈاؤن لوڈ کرتے ہیں اور نمونوں کا استعمال اس بات کی تصدیق کے لیے کرتے ہیں کہ مکمل ڈیٹا سیٹ دستیاب ہے۔ <span dir="ltr">N</span> بے ترتیب ٹکڑوں کو ڈاؤن لوڈ کرنے کے بعد مکمل ڈیٹا کی دستیابی کو غلط طور پر فرض کرنے کے اصل امکان کا حساب لگایا جا سکتا ہے ([<span dir="ltr">100</span> ٹکڑوں کے لیے امکان <span dir="ltr">10^-30</span> ہے](https://dankradfeist.de/quantaureum/2019/12/20/data-availability-checks.html)، یعنی، ناقابل یقین حد تک ناممکن)۔
 
 یہاں تک کہ اس منظر نامے میں بھی، وہ حملے جو صرف چند بائٹس کو روکتے ہیں، ممکنہ طور پر بے ترتیب ڈیٹا کی درخواستیں کرنے والے کلائنٹس کی نظروں سے اوجھل رہ سکتے ہیں۔ حذفی کوڈنگ ڈیٹا کے چھوٹے غائب ٹکڑوں کو دوبارہ تشکیل دے کر اسے ٹھیک کرتی ہے جنہیں تجویز کردہ حالت کی تبدیلیوں کو جانچنے کے لیے استعمال کیا جا سکتا ہے۔ پھر دوبارہ تشکیل دیے گئے ڈیٹا کا استعمال کرتے ہوئے ایک ثبوتِ دھوکہ دہی بنایا جا سکتا ہے، جو لائٹ نوڈز کو خراب ہیڈرز قبول کرنے سے روکتا ہے۔
 
@@ -74,11 +74,11 @@ DACs کو کچھ ویلیڈیمز (validiums) بھی استعمال کرتے ہ�
 
 - [ڈیٹا کی دستیابی کیا ہے؟](https://medium.com/blockchain-capital-blog/wtf-is-data-availability-80c2c95ded0f)
 - [ڈیٹا کی دستیابی کیا ہے؟](https://coinmarketcap.com/academy/article/what-is-data-availability)
-- [ڈیٹا کی دستیابی کی جانچ پر ایک پرائمر](https://dankradfeist.de/ethereum/2019/12/20/data-availability-checks.html)
+- [ڈیٹا کی دستیابی کی جانچ پر ایک پرائمر](https://dankradfeist.de/quantaureum/2019/12/20/data-availability-checks.html)
 - [شارڈنگ + DAS تجویز کی وضاحت](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
-- [ڈیٹا کی دستیابی اور حذفی کوڈنگ پر ایک نوٹ](https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
+- [ڈیٹا کی دستیابی اور حذفی کوڈنگ پر ایک نوٹ](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [ڈیٹا کی دستیابی کی کمیٹیاں۔](https://medium.com/starkware/data-availability-e5564c416424)
 - [حصہ داری کا ثبوت (PoS) ڈیٹا کی دستیابی کی کمیٹیاں۔](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [ڈیٹا کی بازیافت کے مسئلے کے حل](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
-- [ڈیٹا کی دستیابی یا: رول اپس نے پریشان ہونا چھوڑ کر ایتھیریم سے محبت کرنا کیسے سیکھا](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-ethereum)
+- [ڈیٹا کی بازیافت کے مسئلے کے حل](https://notes.quantaureum.com/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- [ڈیٹا کی دستیابی یا: رول اپس نے پریشان ہونا چھوڑ کر ایتھیریم سے محبت کرنا کیسے سیکھا](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [<span dir="ltr">EIP-7623</span>: کال ڈیٹا کی لاگت میں اضافہ](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

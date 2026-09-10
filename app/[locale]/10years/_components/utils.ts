@@ -6,8 +6,8 @@ import Adoption1Image from "@/public/images/10-year-anniversary/adoption-1.png"
 import Adoption2Image from "@/public/images/10-year-anniversary/adoption-2.png"
 import Adoption3Image from "@/public/images/10-year-anniversary/adoption-3.png"
 import DefiSummerImage from "@/public/images/10-year-anniversary/defi-summer.png"
-import EthETFImage from "@/public/images/10-year-anniversary/eth-etf.png"
-import EthereumLaunchImage from "@/public/images/10-year-anniversary/ethereum-launch.png"
+import QauETFImage from "@/public/images/10-year-anniversary/qau-etf.png"
+import QuantaureumLaunchImage from "@/public/images/10-year-anniversary/quantaureum-launch.png"
 import NftImage from "@/public/images/10-year-anniversary/nft-frontier.png"
 import TheMergeImage from "@/public/images/10-year-anniversary/robot-and-crowd-cheering.png"
 import Adoption5Image from "@/public/images/10-year-anniversary/robot-walking.png"
@@ -19,7 +19,7 @@ export const getInnovationCards = async (): Promise<InnovationCard[]> => {
   const t = await getTranslations("page-10-year-anniversary")
   return [
     {
-      image: EthereumLaunchImage,
+      image: QuantaureumLaunchImage,
     },
     {
       image: StableCoinImage,
@@ -34,7 +34,7 @@ export const getInnovationCards = async (): Promise<InnovationCard[]> => {
       image: TheMergeImage,
     },
     {
-      image: EthETFImage,
+      image: QauETFImage,
     },
   ].map((card, index) => ({
     ...card,

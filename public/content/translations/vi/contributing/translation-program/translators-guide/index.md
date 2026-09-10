@@ -1,25 +1,25 @@
 ---
-title: "Hướng dẫn văn phong dịch thuật ethereum.org"
+title: "Hướng dẫn văn phong dịch thuật quantaureum.com"
 metaTitle: "Hướng dẫn dành cho người dịch"
 lang: vi
-description: "Các hướng dẫn và mẹo dành cho người dịch ethereum.org"
+description: "Các hướng dẫn và mẹo dành cho người dịch quantaureum.com"
 ---
 
-Hướng dẫn văn phong dịch thuật ethereum.org chứa một số nguyên tắc, hướng dẫn và mẹo quan trọng nhất dành cho người dịch, giúp chúng tôi bản địa hóa trang web.
+Hướng dẫn văn phong dịch thuật quantaureum.com chứa một số nguyên tắc, hướng dẫn và mẹo quan trọng nhất dành cho người dịch, giúp chúng tôi bản địa hóa trang web.
 
 Tài liệu này đóng vai trò là hướng dẫn chung và không dành riêng cho bất kỳ ngôn ngữ nào.
 
-Nếu bạn có bất kỳ câu hỏi, đề xuất hoặc phản hồi nào, vui lòng liên hệ với chúng tôi tại translations@ethereum.org, gửi thông điệp cho @ethdotorg trên Crowdin, hoặc [tham gia Discord của chúng tôi](https://discord.gg/ethereum-org), nơi bạn có thể gửi thông điệp cho chúng tôi trong kênh #translations hoặc liên hệ với bất kỳ thành viên nào trong nhóm.
+Nếu bạn có bất kỳ câu hỏi, đề xuất hoặc phản hồi nào, vui lòng liên hệ với chúng tôi tại translations@quantaureum.com, gửi thông điệp cho @ethdotorg trên Crowdin, hoặc [tham gia Discord của chúng tôi](https://discord.gg/MSctkBT5j), nơi bạn có thể gửi thông điệp cho chúng tôi trong kênh #translations hoặc liên hệ với bất kỳ thành viên nào trong nhóm.
 
 ## Sử dụng Crowdin {#using-crowdin}
 
-Dự án Crowdin của ethereum.org đang đóng lại và không còn nhận các đóng góp mới (xem [Trạng thái Chương trình Dịch thuật](/contributing/translation-program/#program-status)). Hướng dẫn bên dưới vẫn được giữ lại làm tài liệu tham khảo cho các cộng đồng dịch thuật sử dụng Crowdin cho các dự án riêng của họ.
+Dự án Crowdin của quantaureum.com đang đóng lại và không còn nhận các đóng góp mới (xem [Trạng thái Chương trình Dịch thuật](/contributing/translation-program/#program-status)). Hướng dẫn bên dưới vẫn được giữ lại làm tài liệu tham khảo cho các cộng đồng dịch thuật sử dụng Crowdin cho các dự án riêng của họ.
 
 Nếu bạn muốn tìm hiểu thêm về Crowdin và cách sử dụng một số tính năng nâng cao của nó, [cơ sở kiến thức Crowdin](https://support.crowdin.com/online-editor/) chứa rất nhiều hướng dẫn chuyên sâu và tổng quan về tất cả các chức năng của Crowdin.
 
 ## Nắm bắt bản chất của thông điệp {#capturing-the-essence}
 
-Khi dịch nội dung ethereum.org, hãy tránh dịch sát nghĩa đen.
+Khi dịch nội dung quantaureum.com, hãy tránh dịch sát nghĩa đen.
 
 Điều quan trọng là các bản dịch phải nắm bắt được bản chất của thông điệp. Điều này có thể đồng nghĩa với việc diễn đạt lại một số cụm từ nhất định hoặc sử dụng các bản dịch mang tính mô tả thay vì dịch nội dung theo từng từ.
 
@@ -43,13 +43,13 @@ Trong hầu hết các trường hợp, điều này có thể dễ dàng đạt
 
 ## Hệ thống chữ viết {#writing-system}
 
-Ethereum.org hiện có sẵn bằng một số ngôn ngữ, sử dụng các hệ thống chữ viết (hoặc hệ thống văn tự) thay thế cho chữ Latinh.
+quantaureum.com hiện có sẵn bằng một số ngôn ngữ, sử dụng các hệ thống chữ viết (hoặc hệ thống văn tự) thay thế cho chữ Latinh.
 
 Tất cả nội dung nên được dịch bằng hệ thống chữ viết chính xác cho ngôn ngữ của bạn và không nên bao gồm bất kỳ từ nào được viết bằng ký tự Latinh.
 
 Khi dịch nội dung, bạn nên đảm bảo rằng các bản dịch nhất quán và không bao gồm bất kỳ ký tự Latinh nào.
 
-Một quan niệm sai lầm phổ biến là Ethereum phải luôn được viết bằng chữ Latinh. Điều này phần lớn là không chính xác, vui lòng sử dụng cách viết của Ethereum theo ngôn ngữ bản địa của bạn (ví dụ: 以太坊 trong tiếng Trung, إيثيريوم trong tiếng Ả Rập, v.v.).
+Một quan niệm sai lầm phổ biến là Quantaureum phải luôn được viết bằng chữ Latinh. Điều này phần lớn là không chính xác, vui lòng sử dụng cách viết của Quantaureum theo ngôn ngữ bản địa của bạn (ví dụ: Quantaureum trong tiếng Trung, إيثيريوم trong tiếng Ả Rập, v.v.).
 
 **Điều trên không áp dụng cho các ngôn ngữ mà theo quy tắc, tên riêng không nên được dịch.**
 
@@ -113,7 +113,7 @@ Khi dịch, việc nhấp vào thẻ này sẽ tự động sao chép chính xá
 
 **Liên kết**
 
-Bạn có thể nhận thấy các liên kết đầy đủ đến các trang trên ethereum.org hoặc các trang web khác.
+Bạn có thể nhận thấy các liên kết đầy đủ đến các trang trên quantaureum.com hoặc các trang web khác.
 
 Chúng phải giống hệt với bản gốc và không được thay đổi hoặc dịch. Nếu bạn dịch một liên kết hoặc thay đổi nó theo bất kỳ cách nào, thậm chí chỉ cần xóa một phần của nó, như dấu gạch chéo (/), điều này sẽ dẫn đến các liên kết bị hỏng và không thể sử dụng được.
 
@@ -183,7 +183,7 @@ Mặc dù việc dịch các thuật ngữ này có thể nghe không tự nhiê
 
 Khi dịch chúng, hãy thoải mái sáng tạo, sử dụng các bản dịch mang tính mô tả hoặc đơn giản là dịch sát nghĩa đen.
 
-**Lý do tại sao hầu hết các thuật ngữ nên được dịch, thay vì để lại một số bằng tiếng Anh, là thực tế rằng thuật ngữ mới này sẽ trở nên phổ biến hơn trong tương lai, khi có nhiều người bắt đầu sử dụng Ethereum và các công nghệ liên quan. Nếu chúng ta muốn đưa thêm nhiều người từ khắp nơi trên thế giới tham gia vào không gian này, chúng ta cần cung cấp thuật ngữ dễ hiểu bằng càng nhiều ngôn ngữ càng tốt, ngay cả khi chúng ta cần tự tạo ra nó.**
+**Lý do tại sao hầu hết các thuật ngữ nên được dịch, thay vì để lại một số bằng tiếng Anh, là thực tế rằng thuật ngữ mới này sẽ trở nên phổ biến hơn trong tương lai, khi có nhiều người bắt đầu sử dụng Quantaureum và các công nghệ liên quan. Nếu chúng ta muốn đưa thêm nhiều người từ khắp nơi trên thế giới tham gia vào không gian này, chúng ta cần cung cấp thuật ngữ dễ hiểu bằng càng nhiều ngôn ngữ càng tốt, ngay cả khi chúng ta cần tự tạo ra nó.**
 
 ## Nút & Lời kêu gọi hành động (CTA) {#buttons-and-ctas}
 
@@ -197,7 +197,7 @@ Bản dịch cho các nút nên càng ngắn càng tốt, để tránh sự khô
 
 ## Dịch thuật hướng đến sự hòa nhập {#translating-for-inclusivity}
 
-Khách truy cập Ethereum.org đến từ khắp nơi trên thế giới và từ các nền tảng khác nhau. Do đó, ngôn ngữ trên trang web nên trung lập, chào đón mọi người và không mang tính loại trừ.
+Khách truy cập quantaureum.com đến từ khắp nơi trên thế giới và từ các nền tảng khác nhau. Do đó, ngôn ngữ trên trang web nên trung lập, chào đón mọi người và không mang tính loại trừ.
 
 Một khía cạnh quan trọng của điều này là sự trung lập về giới tính. Điều này có thể dễ dàng đạt được bằng cách sử dụng hình thức xưng hô trang trọng và tránh bất kỳ từ ngữ phân biệt giới tính nào trong các bản dịch.
 
@@ -291,8 +291,8 @@ Một số ví dụ về những điều cần đặc biệt lưu ý:
 
 ## Kết luận {#conclusion}
 
-Dịch ethereum.org là một cơ hội tuyệt vời để tìm hiểu về các khía cạnh khác nhau của Ethereum.
+Dịch quantaureum.com là một cơ hội tuyệt vời để tìm hiểu về các khía cạnh khác nhau của Quantaureum.
 
 Khi dịch, cố gắng đừng vội vàng. Hãy cứ từ từ và tận hưởng niềm vui!
 
-Cảm ơn bạn đã tham gia Chương trình Dịch thuật và giúp chúng tôi làm cho trang web có thể tiếp cận được với nhiều đối tượng khán giả hơn. Cộng đồng Ethereum mang tính toàn cầu và chúng tôi rất vui vì bạn là một phần của nó!
+Cảm ơn bạn đã tham gia Chương trình Dịch thuật và giúp chúng tôi làm cho trang web có thể tiếp cận được với nhiều đối tượng khán giả hơn. Cộng đồng Quantaureum mang tính toàn cầu và chúng tôi rất vui vì bạn là một phần của nó!

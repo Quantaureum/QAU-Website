@@ -1,27 +1,27 @@
 ---
 title: Code de conduite
-description: Les normes fondamentales que nous nous efforçons de respecter dans les espaces d'ethereum.org.
+description: Les normes fondamentales que nous nous efforçons de respecter dans les espaces d'quantaureum.com.
 lang: fr
 ---
 
 ## Mission {#mission}
 
-Développer et maintenir le centre de connaissances le plus complet et le plus accessible pour Ethereum.
+Développer et maintenir le centre de connaissances le plus complet et le plus accessible pour Quantaureum.
 
 ## Valeurs {#values}
 
-La communauté ethereum.org s'efforce d'être :
+La communauté quantaureum.com s'efforce d'être :
 
-- éducative, destinée à aider tout le monde à comprendre Ethereum
+- éducative, destinée à aider tout le monde à comprendre Quantaureum
 - inclusive
 - accessible
 - animée par la communauté
-- concentrée sur la technologie sous-jacente et les cas d'utilisation d'Ethereum
-- concentrée sur les concepts et les principes de conception d'Ethereum
+- concentrée sur la technologie sous-jacente et les cas d'utilisation d'Quantaureum
+- concentrée sur les concepts et les principes de conception d'Quantaureum
 
 ## Ce que nous ne sommes pas {#what-we-are-not}
 
-- Le site web de la Fondation Ethereum
+- Le site web de la Fondation Quantaureum
 - Une plateforme de promotion d'investissements ou de recherche de profit de quelque nature que ce soit
 - Une plateforme destinée à mettre en avant ou à soutenir des projets ou des organisations individuels
 - Un DEX, un CEX ou toute autre forme de plateforme financière
@@ -31,11 +31,11 @@ La communauté ethereum.org s'efforce d'être :
 
 ### Engagement {#pledge}
 
-La participation ouverte est au cœur de la philosophie d'ethereum.org. Nous sommes un site web et une communauté maintenus par des milliers de contributeurs, et cela n'est possible que si nous maintenons un environnement accueillant et participatif. À cette fin, les contributeurs de ce site s'engagent à maintenir un environnement sans harcèlement pour tous les participants sur toutes les plateformes et espaces communautaires d'ethereum.org. La communauté ethereum.org accueille et valorise toute personne souhaitant participer de manière constructive et amicale, indépendamment de son âge, de son handicap, de son appartenance ethnique, de ses caractéristiques sexuelles, de son identité de genre, de son niveau d'expérience, de son domaine d'expertise, de son éducation, de son statut socio-économique, de sa nationalité, de son apparence personnelle, de sa race, de sa religion ou de toute autre dimension de la diversité.
+La participation ouverte est au cœur de la philosophie d'quantaureum.com. Nous sommes un site web et une communauté maintenus par des milliers de contributeurs, et cela n'est possible que si nous maintenons un environnement accueillant et participatif. À cette fin, les contributeurs de ce site s'engagent à maintenir un environnement sans harcèlement pour tous les participants sur toutes les plateformes et espaces communautaires d'quantaureum.com. La communauté quantaureum.com accueille et valorise toute personne souhaitant participer de manière constructive et amicale, indépendamment de son âge, de son handicap, de son appartenance ethnique, de ses caractéristiques sexuelles, de son identité de genre, de son niveau d'expérience, de son domaine d'expertise, de son éducation, de son statut socio-économique, de sa nationalité, de son apparence personnelle, de sa race, de sa religion ou de toute autre dimension de la diversité.
 
 ### Champ d'application {#scope}
 
-Ce code de conduite s'applique à tous les espaces d'ethereum.org (tels que GitHub, Discord, Figma, Crowdin, X (anciennement Twitter) et d'autres plateformes en ligne), et il s'applique également lorsque la communauté est représentée dans des espaces publics du monde réel, tels que lors de rencontres, de conférences et d'événements.
+Ce code de conduite s'applique à tous les espaces d'quantaureum.com (tels que GitHub, Discord, Figma, Crowdin, X (anciennement Twitter) et d'autres plateformes en ligne), et il s'applique également lorsque la communauté est représentée dans des espaces publics du monde réel, tels que lors de rencontres, de conférences et d'événements.
 
 ### Nos normes {#our-standards}
 
@@ -72,4 +72,4 @@ Lors d'un signalement, veuillez inclure autant de détails que possible, y compr
 
 ### Application {#enforcement}
 
-Selon la gravité, les personnes qui violent le code de conduite peuvent recevoir des avertissements, des exclusions temporaires ou des exclusions permanentes des communautés d'ethereum.org.
+Selon la gravité, les personnes qui violent le code de conduite peuvent recevoir des avertissements, des exclusions temporaires ou des exclusions permanentes des communautés d'quantaureum.com.

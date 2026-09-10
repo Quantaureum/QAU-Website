@@ -49,7 +49,7 @@ const WithdrawalsTabComparison = () => {
           <ListItem>
             {t.rich("comp-withdrawal-comparison-current-li-2", {
               a: (chunks) => (
-                <InlineLink href="https://launchpad.ethereum.org/withdrawals">
+                <InlineLink href="https://launchpad.quantaureum.com/withdrawals">
                   {chunks}
                 </InlineLink>
               ),
@@ -83,7 +83,7 @@ const WithdrawalsTabComparison = () => {
           <ListItem>{t("comp-withdrawal-comparison-new-li-2")}</ListItem>
         </UnorderedList>
         <p className="font-bold">{t("comp-withdrawal-comparison-new-p")}</p>
-        <ButtonLink href="https://launchpad.ethereum.org/" hideArrow>
+        <ButtonLink href="https://launchpad.quantaureum.com/" hideArrow>
           {t("comp-withdrawal-comparison-new-link")}
         </ButtonLink>
       </TabsContent>

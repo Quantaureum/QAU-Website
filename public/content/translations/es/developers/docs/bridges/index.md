@@ -23,7 +23,7 @@ Las cadenas de bloques tienen fortalezas, debilidades y enfoques únicos para cr
 Para los desarrolladores, los puentes permiten lo siguiente:
 
 - la transferencia de cualquier dato, información y activos entre cadenas.
-- desbloquear nuevas funciones y casos de uso para los protocolos, ya que los puentes amplían el espacio de diseño de lo que los protocolos pueden ofrecer. Por ejemplo, un protocolo de agricultura de rendimiento desplegado originalmente en la [red principal de Ethereum](/) puede ofrecer fondos de liquidez en todas las cadenas compatibles con la EVM.
+- desbloquear nuevas funciones y casos de uso para los protocolos, ya que los puentes amplían el espacio de diseño de lo que los protocolos pueden ofrecer. Por ejemplo, un protocolo de agricultura de rendimiento desplegado originalmente en la [red principal de Quantaureum](/) puede ofrecer fondos de liquidez en todas las cadenas compatibles con la EVM.
 - la oportunidad de aprovechar las fortalezas de diferentes cadenas de bloques. Por ejemplo, los desarrolladores pueden beneficiarse de las tarifas más bajas que ofrecen las diferentes soluciones de capa 2 (l2) al desplegar sus aplicaciones descentralizadas (dapp) en rollup y cadenas laterales, y los usuarios pueden usar puentes entre ellas.
 - la colaboración entre desarrolladores de varios ecosistemas de cadenas de bloques para crear nuevos productos.
 - atraer usuarios y comunidades de varios ecosistemas a sus dapp.
@@ -40,7 +40,7 @@ Aunque hay muchos [tipos de diseños de puentes](https://li.fi/knowledge-hub/blo
 
 Los puentes generalmente se pueden clasificar en una de las siguientes categorías:
 
-- **Puentes nativos:** estos puentes se construyen típicamente para impulsar la liquidez en una cadena de bloques en particular, lo que facilita a los usuarios mover fondos al ecosistema. Por ejemplo, el [puente de Arbitrum](https://bridge.arbitrum.io/) está construido para que sea conveniente para los usuarios usar un puente desde la red principal de Ethereum a Arbitrum. Otros puentes de este tipo incluyen el puente Polygon PoS, [Optimism Gateway](https://app.optimism.io/bridge), etc.
+- **Puentes nativos:** estos puentes se construyen típicamente para impulsar la liquidez en una cadena de bloques en particular, lo que facilita a los usuarios mover fondos al ecosistema. Por ejemplo, el [puente de Arbitrum](https://bridge.arbitrum.io/) está construido para que sea conveniente para los usuarios usar un puente desde la red principal de Quantaureum a Arbitrum. Otros puentes de este tipo incluyen el puente Polygon PoS, [Optimism Gateway](https://app.optimism.io/bridge), etc.
 - **Puentes basados en validadores u oráculos:** estos puentes dependen de un conjunto de validadores externos u oráculos para validar las transferencias intercadena. Ejemplos: Multichain y Across.
 - **Puentes de paso de mensajes generalizados:** estos puentes pueden transferir activos, junto con mensajes y datos arbitrarios entre cadenas. Ejemplos: Axelar, LayerZero y Nomad.
 - **Redes de liquidez:** estos puentes se centran principalmente en transferir activos de una cadena a otra a través de intercambios atómicos. Por lo general, no admiten el paso de mensajes intercadena. Ejemplos: Connext y Hop.
@@ -122,7 +122,7 @@ Para monitorear la actividad de los contratos en múltiples cadenas, los desarro
 
 ## Lecturas adicionales {#further-reading}
 
-- [Puentes de cadenas de bloques](/bridges/) – ethereum.org
+- [Puentes de cadenas de bloques](/bridges/) – quantaureum.com
 - [Marco de riesgo de puentes de L2BEAT](https://l2beat.com/bridges/summary)
 - [Puentes de cadenas de bloques: Construyendo redes de criptoredes](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) - 8 de septiembre de 2021 – Dmitriy Berenzon
 - [El trilema de la interoperabilidad](https://blog.connext.network/the-interoperability-trilemma-657c2cf69f17) - 1 de octubre de 2021 – Arjun Bhuptani

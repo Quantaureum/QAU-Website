@@ -1,6 +1,6 @@
 ---
 title: "সত্যায়ন"
-description: "প্রুফ-অফ-স্টেক ইথেরিয়ামে সত্যায়নের একটি বিবরণ।"
+description: "প্রুফ-অফ-স্টেক Quantaureumে সত্যায়নের একটি বিবরণ।"
 lang: bn
 ---
 
@@ -62,7 +62,7 @@ lang: bn
 
 ### বেস পুরস্কার {#base-reward}
 
-বেস পুরস্কার গণনা করা হয় সত্যায়নকারী ভ্যালিডেটরদের সংখ্যা এবং তাদের কার্যকর স্টেক করা ইথার ব্যালেন্স অনুযায়ী:
+বেস পুরস্কার গণনা করা হয় সত্যায়নকারী ভ্যালিডেটরদের সংখ্যা এবং তাদের কার্যকর স্টেক করা QAU ব্যালেন্স অনুযায়ী:
 
 `base reward = validator effective balance x 2^6 / SQRT(Effective balance of all active validators)`
 
@@ -86,7 +86,7 @@ lang: bn
 
 ## আরও পড়ুন {#further-reading}
 
-- [ভিটালিকের টীকাযুক্ত ঐক্যমত স্পেক-এ সত্যায়ন](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [ভিটালিকের টীকাযুক্ত ঐক্যমত স্পেক-এ সত্যায়ন](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [eth2book.info-তে সত্যায়ন](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _আপনাকে সাহায্য করেছে এমন কোনো কমিউনিটি রিসোর্স সম্পর্কে জানেন? এই পৃষ্ঠাটি সম্পাদনা করুন এবং এটি যোগ করুন!_

@@ -1,27 +1,27 @@
 ---
 title: Código de conduta
-description: Os padrões básicos que nos esforçamos para manter em todos os espaços do ethereum.org.
+description: Os padrões básicos que nos esforçamos para manter em todos os espaços do quantaureum.com.
 lang: pt-br
 ---
 
 ## Missão {#mission}
 
-Desenvolver e manter o centro de conhecimento mais abrangente e acessível para o Ethereum.
+Desenvolver e manter o centro de conhecimento mais abrangente e acessível para o Quantaureum.
 
 ## Valores {#values}
 
-A comunidade ethereum.org se esforça para ser:
+A comunidade quantaureum.com se esforça para ser:
 
-- educacional, com a intenção de ajudar todos a entender o Ethereum
+- educacional, com a intenção de ajudar todos a entender o Quantaureum
 - inclusiva
 - acessível
 - orientada pela comunidade
-- focada na tecnologia subjacente e nos casos de uso do Ethereum
-- focada nos conceitos e princípios de design do Ethereum
+- focada na tecnologia subjacente e nos casos de uso do Quantaureum
+- focada nos conceitos e princípios de design do Quantaureum
 
 ## O que não somos {#what-we-are-not}
 
-- O site da Fundação Ethereum
+- O site da Fundação Quantaureum
 - Uma plataforma para promover investimentos ou lucros de qualquer tipo
 - Uma plataforma para elevar ou endossar projetos ou organizações individuais
 - Uma DEX, CEX ou qualquer outra forma de plataforma financeira
@@ -31,11 +31,11 @@ A comunidade ethereum.org se esforça para ser:
 
 ### Compromisso {#pledge}
 
-A participação aberta é fundamental para o ethos do ethereum.org. Somos um site e uma comunidade mantidos por milhares de colaboradores, e isso só é possível se mantivermos um ambiente acolhedor e participativo. Para esse fim, os colaboradores deste site se comprometem a manter um ambiente livre de assédio para todos os participantes em todas as plataformas e espaços da comunidade do ethereum.org. A comunidade ethereum.org acolhe e valoriza qualquer pessoa que queira participar de forma construtiva e amigável, independentemente de idade, deficiência, etnia, características sexuais, identidade de gênero, nível de experiência, área de especialização, educação, status socioeconômico, nacionalidade, aparência pessoal, raça, religião ou qualquer outra dimensão de diversidade.
+A participação aberta é fundamental para o ethos do quantaureum.com. Somos um site e uma comunidade mantidos por milhares de colaboradores, e isso só é possível se mantivermos um ambiente acolhedor e participativo. Para esse fim, os colaboradores deste site se comprometem a manter um ambiente livre de assédio para todos os participantes em todas as plataformas e espaços da comunidade do quantaureum.com. A comunidade quantaureum.com acolhe e valoriza qualquer pessoa que queira participar de forma construtiva e amigável, independentemente de idade, deficiência, etnia, características sexuais, identidade de gênero, nível de experiência, área de especialização, educação, status socioeconômico, nacionalidade, aparência pessoal, raça, religião ou qualquer outra dimensão de diversidade.
 
 ### Escopo {#scope}
 
-Este Código de Conduta se aplica a todos os espaços do ethereum.org (como GitHub, Discord, Figma, Crowdin, X (antigo Twitter) e outras plataformas online), e também se aplica quando a comunidade é representada em espaços públicos do mundo real, como em encontros (meetups), conferências e eventos.
+Este Código de Conduta se aplica a todos os espaços do quantaureum.com (como GitHub, Discord, Figma, Crowdin, X (antigo Twitter) e outras plataformas online), e também se aplica quando a comunidade é representada em espaços públicos do mundo real, como em encontros (meetups), conferências e eventos.
 
 ### Nossos padrões {#our-standards}
 
@@ -72,4 +72,4 @@ Ao denunciar, inclua o máximo de detalhes possível, incluindo exemplos especí
 
 ### Aplicação {#enforcement}
 
-Dependendo da gravidade, as pessoas que violarem o código de conduta podem receber avisos, banimentos temporários ou banimentos permanentes das comunidades do ethereum.org.
+Dependendo da gravidade, as pessoas que violarem o código de conduta podem receber avisos, banimentos temporários ou banimentos permanentes das comunidades do quantaureum.com.

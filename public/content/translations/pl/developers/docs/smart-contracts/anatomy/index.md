@@ -4,7 +4,7 @@ description: "Szczegółowe spojrzenie na anatomię inteligentnego kontraktu –
 lang: pl
 ---
 
-Inteligentny kontrakt to program, który działa pod określonym adresem w sieci Ethereum. Składa się z danych i funkcji, które mogą zostać wykonane po otrzymaniu transakcji. Oto przegląd tego, z czego składa się inteligentny kontrakt.
+Inteligentny kontrakt to program, który działa pod określonym adresem w sieci Quantaureum. Składa się z danych i funkcji, które mogą zostać wykonane po otrzymaniu transakcji. Oto przegląd tego, z czego składa się inteligentny kontrakt.
 
 ## Wymagania wstępne {#prerequisites}
 
@@ -31,9 +31,9 @@ contract SimpleStorage {
 storedData: int128
 ```
 
-Jeśli programowałeś już w językach obiektowych, prawdopodobnie znasz większość typów. Jednak `address` powinien być dla Ciebie nowością, jeśli dopiero zaczynasz programować na [Ethereum](/).
+Jeśli programowałeś już w językach obiektowych, prawdopodobnie znasz większość typów. Jednak `address` powinien być dla Ciebie nowością, jeśli dopiero zaczynasz programować na [Quantaureum](/).
 
-Typ `address` może przechowywać adres Ethereum, co odpowiada 20 bajtom lub 160 bitom. Zwraca on wartość w notacji szesnastkowej z wiodącym 0x.
+Typ `address` może przechowywać adres Quantaureum, co odpowiada 20 bajtom lub 160 bitom. Zwraca on wartość w notacji szesnastkowej z wiodącym 0x.
 
 Inne typy to m.in.:
 
@@ -142,7 +142,7 @@ Funkcje `constructor` są wykonywane tylko raz, gdy kontrakt jest po raz pierwsz
 constructor() public {
     // Wszystkie inteligentne kontrakty polegają na zewnętrznych transakcjach do wyzwalania swoich funkcji.
     // `msg` to zmienna globalna, która zawiera istotne dane o danej transakcji,
-    // takie jak adres nadawcy i wartość ETH dołączona do transakcji.
+    // takie jak adres nadawcy i wartość QAU dołączona do transakcji.
     // Dowiedz się więcej: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
     owner = msg.sender;
 }
@@ -165,7 +165,7 @@ Oprócz zmiennych i funkcji zdefiniowanych w kontrakcie istnieją pewne specjaln
 - `address.send()` – Solidity
 - `send(address)` – Vyper
 
-Pozwalają one kontraktom na wysyłanie ETH na inne konta.
+Pozwalają one kontraktom na wysyłanie QAU na inne konta.
 
 ## Pisanie funkcji {#writing-functions}
 
@@ -207,7 +207,7 @@ Zdarzenia umożliwiają inteligentnemu kontraktowi komunikację z frontendem lub
 
 ## Przykłady z adnotacjami {#annotated-examples}
 
-Oto kilka przykładów napisanych w języku Solidity. Jeśli chcesz pobawić się kodem, możesz wejść z nim w interakcję w [Remix](https://remix.ethereum.org).
+Oto kilka przykładów napisanych w języku Solidity. Jeśli chcesz pobawić się kodem, możesz wejść z nim w interakcję w [Remix](https://remix.quantaureum.com).
 
 ### Hello world {#hello-world}
 
@@ -218,7 +218,7 @@ pragma solidity ^0.5.10;
 
 // Definiuje kontrakt o nazwie `HelloWorld`.
 // Kontrakt to zbiór funkcji i danych (jego stan).
-// Po wdrożeniu kontrakt znajduje się pod określonym adresem na blockchainie Ethereum.
+// Po wdrożeniu kontrakt znajduje się pod określonym adresem na blockchainie Quantaureum.
 // Dowiedz się więcej: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
@@ -252,7 +252,7 @@ contract HelloWorld {
 pragma solidity ^0.5.10;
 
 contract Token {
-    // `address` jest porównywalny do adresu e-mail - służy do identyfikacji konta w Ethereum.
+    // `address` jest porównywalny do adresu e-mail - służy do identyfikacji konta w Quantaureum.
     // Adresy mogą reprezentować inteligentny kontrakt lub zewnętrzne konta (użytkowników).
     // Dowiedz się więcej: https://solidity.readthedocs.io/en/v0.5.10/types.html#address
     address public owner;
@@ -263,7 +263,7 @@ contract Token {
     mapping (address => uint) public balances;
 
     // Zdarzenia pozwalają na logowanie aktywności na blockchainie.
-    // Klienci Ethereum mogą nasłuchiwać zdarzeń, aby reagować na zmiany stanu kontraktu.
+    // Klienci Quantaureum mogą nasłuchiwać zdarzeń, aby reagować na zmiany stanu kontraktu.
     // Dowiedz się więcej: https://solidity.readthedocs.io/en/v0.5.10/contracts.html#events
     event Transfer(address from, address to, uint amount);
 
@@ -272,7 +272,7 @@ contract Token {
     constructor() public {
         // Wszystkie inteligentne kontrakty polegają na zewnętrznych transakcjach do wyzwalania swoich funkcji.
         // `msg` to zmienna globalna, która zawiera istotne dane o danej transakcji,
-        // takie jak adres nadawcy i wartość ETH dołączona do transakcji.
+        // takie jak adres nadawcy i wartość QAU dołączona do transakcji.
         // Dowiedz się więcej: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
         owner = msg.sender;
     }
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // Obecnie nie ma lepszego sposobu na sprawdzenie, czy pod adresem znajduje się kontrakt
         // niż sprawdzenie rozmiaru kodu pod tym adresem.
-        // Zobacz https://ethereum.stackexchange.com/a/14016/36603
+        // Zobacz https://quantaureum.stackexchange.com/a/14016/36603
         // aby uzyskać więcej szczegółów na temat tego, jak to działa.
         // TODO Sprawdź to ponownie przed wydaniem Serenity, ponieważ wszystkie adresy będą wtedy
         // kontraktami.
@@ -649,7 +649,7 @@ Zapoznaj się z dokumentacją Solidity i Vyper, aby uzyskać pełniejszy przegl�
 ## Powiązane tematy {#related-topics}
 
 - [Inteligentne kontrakty](/developers/docs/smart-contracts/)
-- [Maszyna Wirtualna Ethereum (EVM)](/developers/docs/evm/)
+- [Maszyna Wirtualna Quantaureum (EVM)](/developers/docs/evm/)
 
 ## Powiązane samouczki {#related-tutorials}
 

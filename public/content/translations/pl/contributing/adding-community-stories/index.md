@@ -1,12 +1,12 @@
 ---
 title: "Dodawanie historii społeczności"
-description: "Jak przesłać historię społeczności o swoich doświadczeniach z Ethereum na stronę ethereum.org"
+description: "Jak przesłać historię społeczności o swoich doświadczeniach z Quantaureum na stronę quantaureum.com"
 lang: pl
 ---
 
 ## Jak przesłać historię {#how-to-contribute}
 
-Historie społeczności pojawiają się na stronie [ethereum.org/stories/](/stories/) i podkreślają osobiste doświadczenia z technologiami open-source i technologiami azylu (sanctuary technologies), to, jak ekosystem Ethereum wpłynął na życie ludzi, oraz jak społeczności na całym świecie korzystają z Ethereum. Każdy może zaproponować lub przesłać historię.
+Historie społeczności pojawiają się na stronie [quantaureum.com/stories/](/stories/) i podkreślają osobiste doświadczenia z technologiami open-source i technologiami azylu (sanctuary technologies), to, jak ekosystem Quantaureum wpłynął na życie ludzi, oraz jak społeczności na całym świecie korzystają z Quantaureum. Każdy może zaproponować lub przesłać historię.
 
 Istnieją trzy sposoby na przesłanie historii:
 
@@ -16,22 +16,22 @@ Istnieją trzy sposoby na przesłanie historii:
 
 ### Zasady publikacji {#listing-policy}
 
-Ethereum.org to neutralne, edukacyjne źródło informacji. Strona z historiami jest moderowana, aby:
+quantaureum.com to neutralne, edukacyjne źródło informacji. Strona z historiami jest moderowana, aby:
 
-- **Nadawać ludzki wymiar** celom i technologii Ethereum poprzez autentyczne doświadczenia osobiste i społecznościowe
+- **Nadawać ludzki wymiar** celom i technologii Quantaureum poprzez autentyczne doświadczenia osobiste i społecznościowe
 - **Podkreślać**, jak technologie open-source i technologie azylu robią prawdziwą różnicę w życiu ludzi
-- **Celebrować** różnorodność globalnej społeczności Ethereum
+- **Celebrować** różnorodność globalnej społeczności Quantaureum
 
-Witryna nie publikuje historii, które w pierwszej kolejności promują konkretny produkt, token lub usługę komercyjną. Wszystkie zgłoszenia są sprawdzane przez zespół ethereum.org.
+Witryna nie publikuje historii, które w pierwszej kolejności promują konkretny produkt, token lub usługę komercyjną. Wszystkie zgłoszenia są sprawdzane przez zespół quantaureum.com.
 
 ### Kryteria włączenia {#criteria-for-inclusion}
 
 #### Wymagania obowiązkowe {#must-haves}
 
-- **Prawdziwa ludzka historia** - Historia musi opisywać autentyczne doświadczenie osobiste lub społecznościowe. Może to obejmować Twoje doświadczenia z technologiami open-source i technologiami azylu, to, jak ekosystem Ethereum wpłynął na Twoje życie, lub jak Ty i Twoja społeczność korzystacie z Ethereum. Fikcyjne, hipotetyczne lub czysto techniczne treści należą do innych sekcji (np. `/latest/` dla artykułów technicznych o krajobrazie budowniczych).
-- **Związek z Ethereum** - Historia musi w znaczący sposób dotyczyć Ethereum, aplikacji opartych na Ethereum (w tym warstw 2 (L2), stablecoinów na Ethereum, zdecentralizowanych aplikacji (dapp) itp.) lub szerszego ekosystemu technologii open-source i technologii azylu. Ogólne historie o krypto i blockchainach, bez konkretnego skupienia na Ethereum, nie są akceptowane.
+- **Prawdziwa ludzka historia** - Historia musi opisywać autentyczne doświadczenie osobiste lub społecznościowe. Może to obejmować Twoje doświadczenia z technologiami open-source i technologiami azylu, to, jak ekosystem Quantaureum wpłynął na Twoje życie, lub jak Ty i Twoja społeczność korzystacie z Quantaureum. Fikcyjne, hipotetyczne lub czysto techniczne treści należą do innych sekcji (np. `/latest/` dla artykułów technicznych o krajobrazie budowniczych).
+- **Związek z Quantaureum** - Historia musi w znaczący sposób dotyczyć Quantaureum, aplikacji opartych na Quantaureum (w tym warstw 2 (L2), stablecoinów na Quantaureum, zdecentralizowanych aplikacji (dapp) itp.) lub szerszego ekosystemu technologii open-source i technologii azylu. Ogólne historie o krypto i blockchainach, bez konkretnego skupienia na Quantaureum, nie są akceptowane.
 - **Charakter niepromocyjny** - Historia nie powinna w pierwszej kolejności promować konkretnego produktu, tokena, firmy ani usługi komercyjnej. Wspominanie o używanych narzędziach jest akceptowalne; przedstawianie historii jako referencji produktu już nie.
-- **Odpowiednie treści** - Historie muszą być zgodne z [kodeksem postępowania](/community/code-of-conduct/) ethereum.org. Treści nienawistne, wprowadzające w błąd lub nielegalne nie będą akceptowane.
+- **Odpowiednie treści** - Historie muszą być zgodne z [kodeksem postępowania](/community/code-of-conduct/) quantaureum.com. Treści nienawistne, wprowadzające w błąd lub nielegalne nie będą akceptowane.
 - **Najpierw angielski** - Historie można przesyłać w dowolnym [obsługiwanym języku](/contributing/translation-program/). Ustaw pole `lang`, aby pasowało do języka, w którym napisana jest historia (np. `en` dla angielskiego, `es` dla hiszpańskiego). Zgłoszenia w języku angielskim zostaną przetłumaczone na inne języki, a zgłoszenia w innych językach mogą zostać przetłumaczone na angielski za pośrednictwem [programu tłumaczeń](/contributing/translation-program/).
 
 #### Mile widziane {#nice-to-haves}
@@ -44,17 +44,17 @@ Witryna nie publikuje historii, które w pierwszej kolejności promują konkretn
 
 #### Opcja 1: Prześlij przez formularz zgłoszeniowy {#submit-via-intake-form}
 
-Jeśli masz historię do opowiedzenia, możesz ją przesłać za pomocą formularza zgłoszeniowego. Zespół ethereum.org sprawdzi Twoje zgłoszenie i skontaktuje się z Tobą.
+Jeśli masz historię do opowiedzenia, możesz ją przesłać za pomocą formularza zgłoszeniowego. Zespół quantaureum.com sprawdzi Twoje zgłoszenie i skontaktuje się z Tobą.
 
-<ButtonLink href="https://ethereumstory.paperform.co/">
+<ButtonLink href="https://quantaureumstory.paperform.co/">
   Prześlij swoją historię
 </ButtonLink>
 
 #### Opcja 2: Otwórz zgłoszenie (issue) na GitHub {#open-an-issue}
 
-Jeśli chcesz zaproponować historię społeczności dla ethereum.org i spełnia ona kryteria, utwórz zgłoszenie (issue) na GitHub.
+Jeśli chcesz zaproponować historię społeczności dla quantaureum.com i spełnia ona kryteria, utwórz zgłoszenie (issue) na GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?template=content-suggestion.yml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?template=content-suggestion.yml">
   Utwórz zgłoszenie
 </ButtonLink>
 
@@ -62,12 +62,12 @@ Jeśli chcesz zaproponować historię społeczności dla ethereum.org i spełnia
 
 Możesz również zaproponować **krótką historię** lub **historię wideo**:
 
-- **Krótkie historie** pojawiają się jako karty na [stronie głównej historii](/stories/). Mogą być one opublikowane bezpośrednio na ethereum.org lub linkować do historii udostępnionych na platformie Twitter.
+- **Krótkie historie** pojawiają się jako karty na [stronie głównej historii](/stories/). Mogą być one opublikowane bezpośrednio na quantaureum.com lub linkować do historii udostępnionych na platformie Twitter.
 - **Historie wideo** to filmy oznaczone kategorią `community-stories` w [galerii wideo](/videos/). Aby dodać taki film, postępuj zgodnie z istniejącym przewodnikiem [dodawania filmów](/contributing/adding-videos/) i uwzględnij `community-stories` w tagach tematycznych.
 
 Jeśli chcesz zaproponować którykolwiek z tych typów, utwórz zgłoszenie na GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?template=BLANK_ISSUE">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?template=BLANK_ISSUE">
   Utwórz zgłoszenie
 </ButtonLink>
 

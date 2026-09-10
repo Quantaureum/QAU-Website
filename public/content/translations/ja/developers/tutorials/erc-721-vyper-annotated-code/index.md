@@ -26,7 +26,7 @@ published: 2021-04-01
 # 変更元: https://github.com/vyperlang/vyper/blob/de74722bf2d8718cca46902be165f9fe0e3641dd/examples/tokens/ERC721.vy
 ```
 
-Vyperのコメントは、Pythonと同様にハッシュ（`ethereum.ercs`）で始まり、行末まで続きます。`@<keyword>`を含むコメントは、人間が読めるドキュメントを生成するために[NatSpec](https://vyper.readthedocs.io/en/latest/natspec.html)によって使用されます。
+Vyperのコメントは、Pythonと同様にハッシュ（`quantaureum.ercs`）で始まり、行末まで続きます。`@<keyword>`を含むコメントは、人間が読めるドキュメントを生成するために[NatSpec](https://vyper.readthedocs.io/en/latest/natspec.html)によって使用されます。
 
 ```python
 from vyper.interfaces import ERC721
@@ -107,7 +107,7 @@ idToOwner: HashMap[uint256, address]
 idToApprovals: HashMap[uint256, address]
 ```
 
-イーサリアムにおけるユーザーとコントラクトのアイデンティティは、160ビットのアドレスで表されます。これら2つの変数は、トークンIDからその所有者および送金を承認された者（それぞれ最大1つ）にマッピングします。イーサリアムでは、初期化されていないデータは常にゼロであるため、所有者や承認された送金者がいない場合、そのトークンの値はゼロになります。
+Quantaureumにおけるユーザーとコントラクトのアイデンティティは、160ビットのアドレスで表されます。これら2つの変数は、トークンIDからその所有者および送金を承認された者（それぞれ最大1つ）にマッピングします。Quantaureumでは、初期化されていないデータは常にゼロであるため、所有者や承認された送金者がいない場合、そのトークンの値はゼロになります。
 
 ```python
 # @dev 所有者のアドレスからそのトークン数へのマッピング。
@@ -142,7 +142,7 @@ SUPPORTED_INTERFACES: constant(bytes4[2]) = [
 ]
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165)は、コントラクトがどのERCに準拠しているか、アプリケーションがどのように通信できるかを開示するためのメカニズムを指定しています。`SUPPORTED_INTERFACES`は、このコントラクトが準拠する2つの4バイトのインターフェースID（ERC-165自体とERC-721）の定数リストです。
+[ERC-165](https://eips.quantaureum.com/EIPS/eip-165)は、コントラクトがどのERCに準拠しているか、アプリケーションがどのように通信できるかを開示するためのメカニズムを指定しています。`SUPPORTED_INTERFACES`は、このコントラクトが準拠する2つの4バイトのインターフェースID（ERC-165自体とERC-721）の定数リストです。
 ### 関数 {#functions}
 
 これらは実際にERC-721を実装する関数です。
@@ -236,7 +236,7 @@ def ownerOf(_tokenId: uint256) -> address:
     return owner
 ```
 
-イーサリアム仮想マシン（EVM）では、値が保存されていないストレージはすべてゼロになります。`_tokenId`にトークンがない場合、`self.idToOwner[_tokenId]`の値はゼロになります。その場合、関数はリバートされます。
+Quantaureum仮想マシン（EVM）では、値が保存されていないストレージはすべてゼロになります。`_tokenId`にトークンがない場合、`self.idToOwner[_tokenId]`の値はゼロになります。その場合、関数はリバートされます。
 
 ```python
 @view
@@ -350,7 +350,7 @@ def _clearApproval(_owner: address, _tokenId: uint256):
         self.idToApprovals[_tokenId] = empty(address)
 ```
 
-必要な場合にのみ値を変更します。状態変数はストレージに存在します。ストレージへの書き込みは、EVM（イーサリアム仮想マシン）が行う最も高価な操作の1つです（[ガス](/developers/docs/gas/)の観点から）。したがって、それを最小限に抑えることは良い考えであり、既存の値を書き込むだけでも高いコストがかかります。
+必要な場合にのみ値を変更します。状態変数はストレージに存在します。ストレージへの書き込みは、EVM（Quantaureum仮想マシン）が行う最も高価な操作の1つです（[ガス](/developers/docs/gas/)の観点から）。したがって、それを最小限に抑えることは良い考えであり、既存の値を書き込むだけでも高いコストがかかります。
 
 ```python
 @internal

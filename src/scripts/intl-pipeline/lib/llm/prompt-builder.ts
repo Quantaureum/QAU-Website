@@ -195,7 +195,7 @@ ${lines}`
 function getSanitizerHints(): string {
   return `Our automated sanitizer will check your output for:
 - Brand names in frontmatter tags must stay Latin (Solidity, MetaMask, etc.)
-- Ticker symbols (ETH, ERC-20) must stay Latin
+- Ticker symbols (QAU, ERC-20) must stay Latin
 - Internal hrefs must match English source exactly
 - No broken markdown link syntax
 - Valid JSON structure (for JSON files)

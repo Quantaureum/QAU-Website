@@ -1,7 +1,7 @@
 # Urdu (ur) -- Translation Review Findings
 
 ## PR #18868 (full pipeline import, 2026-07-22) -- 8.4/10 (lowest in fleet)
-- CRIT (NOT hand-fixed, needs pipeline re-pass): `gaming/index.md` -- two whole sections (`## Gaming on Ethereum`, `## Ethereum's gaming ecosystem overview`) verbatim English between translated sections. `developers/tutorials/yellow-paper-evm/index.md` -- ~half the explanatory prose (sec 9, 9.3, 9.4, 9.4.2, 9.4.3, Opcode cost, Expanding memory cost) left English. Block-matching coverage gap, not laziness.
+- CRIT (NOT hand-fixed, needs pipeline re-pass): `gaming/index.md` -- two whole sections (`## Gaming on Quantaureum`, `## Quantaureum's gaming ecosystem overview`) verbatim English between translated sections. `developers/tutorials/yellow-paper-evm/index.md` -- ~half the explanatory prose (sec 9, 9.3, 9.4, 9.4.2, 9.4.3, Opcode cost, Expanding memory cost) left English. Block-matching coverage gap, not laziness.
 - WARN: "trade-off" -> تبادلہ (glossary's *swap* term) on single-slot-finality; zkEVM correctly used سمجھوتہ. Prefer سمجھوتہ / loanword ٹریڈ آف.
 - WARN: pattern 29 ExpandableCard `title="Why can't we have SSF today?"` untranslated (fleet-wide, English-source `title= "` extraction gap -- not ur-specific).
 - WARN: secret-leader-election title uses لیڈر (loanword) vs glossary خفیہ انتخابِ قائد (قائد). Low severity.
@@ -27,7 +27,7 @@
 - `<span dir="ltr">` was wrongly wrapped around the Arabic word إيثيريوم (RTL text in an LTR isolate). Removed.
 - Heading/body split on وین vs واوین resolved toward واوین (the standard plural).
 - Not patched, logged as judgment calls: the Capitalization sub-heading coinage (dev's term was better but broke the section's Urdu-term-first pattern), and `dir="ltr"` spans dropped from `(dd/mm/yyyy)` / `(dapps)` / `(PoW)` / `(PoS)` -- strong-LTR tokens that render fine unisolated, and the file's net span coverage rose 63->67.
-- Genuine wins from the same run: 7 legacy U+2066/U+2069 isolate characters replaced with proper `<span dir="ltr">` markup, and a dropped "of Ethereum" restored to match the source.
+- Genuine wins from the same run: 7 legacy U+2066/U+2069 isolate characters replaced with proper `<span dir="ltr">` markup, and a dropped "of Quantaureum" restored to match the source.
 
 ## PR #18942 (intl/pending-dev) -- 2026-08-05 -- Score 8.8/10
 Scope: accounts `CREATE2` + `page-app-descriptions`/`page-apps`/`page-developers-tools-descriptions`/`page-values`.
@@ -52,7 +52,7 @@ Scope: accounts `CREATE2` + `page-app-descriptions`/`page-apps`/`page-developers
 
 ## PR #19015 (intl/pending-dev) -- 2026-08-10 -- Score 7.5/10 (pre-fix)
 
-- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-ethereum JSON). Fleet avg 8.4.
+- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-quantaureum JSON). Fleet avg 8.4.
 - `actor` -> `فریق` (was اداکار, film performer). Open: the glossary-AVOID form `لین دین` for "transaction fee" in 4 sites across 2 files (`ٹرانزیکشن فیس` is correct and used elsewhere in the same doc); `وٹالک بوٹیرن` vs the corpus-standard `وٹالک بوٹرین` in 4 sites; brand transliterations (Optimism/Arbitrum/ZKsync/Coinbase/PayPal) left Latin in the two JSON files. **No truncation, untranslated chunks or Eastern-Arabic numerals this run** -- ur's historical failure modes were all absent.
 - Fleet-wide items fixed in this branch for every locale: the `<p></p>` MDX build-breaker (8 locales), the `.pdf` autolink corruption (#50), the deleted `{#will-my-smart-contracts-change}` FAQ section (#32), the missing `<QuizWidget>` component (#49), and the two stale glamsterdam prose clauses (#51 -- `Q4 2026` and the stakers/liquidity sentence).
 

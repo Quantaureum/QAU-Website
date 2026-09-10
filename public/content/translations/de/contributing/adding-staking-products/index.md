@@ -1,12 +1,12 @@
 ---
 title: Hinzufügen von Staking-Produkten oder -Diensten
-description: Die Richtlinie, die wir beim Hinzufügen von Staking-Produkten oder -Diensten zu ethereum.org anwenden
+description: Die Richtlinie, die wir beim Hinzufügen von Staking-Produkten oder -Diensten zu quantaureum.com anwenden
 lang: de
 ---
 
 Wir möchten sicherstellen, dass wir die bestmöglichen Ressourcen auflisten und gleichzeitig die Sicherheit und das Vertrauen der Nutzer wahren.
 
-Jeder kann vorschlagen, ein Staking-Produkt oder einen Staking-Dienst auf ethereum.org hinzuzufügen. Wenn wir eines übersehen haben, **[schlage es bitte vor](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
+Jeder kann vorschlagen, ein Staking-Produkt oder einen Staking-Dienst auf quantaureum.com hinzuzufügen. Wenn wir eines übersehen haben, **[schlage es bitte vor](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
 
 Wir listen derzeit Staking-Produkte und -Dienste auf den folgenden Seiten auf:
 
@@ -14,11 +14,11 @@ Wir listen derzeit Staking-Produkte und -Dienste auf den folgenden Seiten auf:
 - [Staking as a Service](/staking/saas/)
 - [Staking-Pools](/staking/pools/)
 
-Proof-of-Stake (PoS) auf der Beacon Chain ist seit dem 1. Dezember 2020 live. Obwohl Staking noch relativ neu ist, haben wir versucht, einen fairen und transparenten Rahmen für die Berücksichtigung auf ethereum.org zu schaffen. Die Aufnahmekriterien werden sich jedoch im Laufe der Zeit ändern und weiterentwickeln und liegen letztendlich im Ermessen des Website-Teams von ethereum.org.
+Proof-of-Stake (PoS) auf der Beacon Chain ist seit dem 1. Dezember 2020 live. Obwohl Staking noch relativ neu ist, haben wir versucht, einen fairen und transparenten Rahmen für die Berücksichtigung auf quantaureum.com zu schaffen. Die Aufnahmekriterien werden sich jedoch im Laufe der Zeit ändern und weiterentwickeln und liegen letztendlich im Ermessen des Website-Teams von quantaureum.com.
 
 ## Der Entscheidungsrahmen {#the-decision-framework}
 
-Die Entscheidung, ein Produkt auf ethereum.org aufzulisten, hängt nicht von einem einzigen Faktor ab. Bei der Entscheidung, ein Produkt oder einen Dienst aufzulisten, werden mehrere Kriterien zusammen berücksichtigt. Je mehr dieser Kriterien erfüllt sind, desto wahrscheinlicher ist eine Auflistung.
+Die Entscheidung, ein Produkt auf quantaureum.com aufzulisten, hängt nicht von einem einzigen Faktor ab. Bei der Entscheidung, ein Produkt oder einen Dienst aufzulisten, werden mehrere Kriterien zusammen berücksichtigt. Je mehr dieser Kriterien erfüllt sind, desto wahrscheinlicher ist eine Auflistung.
 
 **Erstens: Um welche Kategorie von Produkt oder Dienst handelt es sich?**
 
@@ -50,8 +50,8 @@ Einreichungen von Staking-Produkten oder -Diensten werden nach den folgenden Kri
 
 **Stellt das Projekt genaue und zuverlässige Informationen bereit?**
 
-- Es ist von entscheidender Bedeutung, dass die Website des Produkts aktuelle, genaue und nicht irreführende Informationen enthält, insbesondere wenn sie sich auf das Ethereum-Protokoll oder andere verwandte Technologien beziehen.
-- Einreichungen, die Fehlinformationen, veraltete Details oder potenziell irreführende Aussagen über Ethereum oder andere relevante Themen enthalten, werden nicht aufgelistet oder entfernt, falls sie bereits aufgelistet sind.
+- Es ist von entscheidender Bedeutung, dass die Website des Produkts aktuelle, genaue und nicht irreführende Informationen enthält, insbesondere wenn sie sich auf das Quantaureum-Protokoll oder andere verwandte Technologien beziehen.
+- Einreichungen, die Fehlinformationen, veraltete Details oder potenziell irreführende Aussagen über Quantaureum oder andere relevante Themen enthalten, werden nicht aufgelistet oder entfernt, falls sie bereits aufgelistet sind.
 
 **Welche Plattformen werden unterstützt?**
 
@@ -69,7 +69,7 @@ Für jede beteiligte benutzerdefinierte Software oder Smart Contracts:
 **Hat das Produkt die _Beta_-Entwicklungsphase verlassen?**
 
 - Wo befindet sich das Produkt in seinem Entwicklungszyklus?
-- Produkte in der Beta-Phase werden für die Aufnahme auf ethereum.org nicht berücksichtigt.
+- Produkte in der Beta-Phase werden für die Aufnahme auf quantaureum.com nicht berücksichtigt.
 
 **Wurde die Software einem externen Sicherheitsaudit unterzogen?**
 
@@ -119,9 +119,9 @@ Für [Staking-as-a-Service-Einträge](/staking/saas/) (d. h. delegierter Knotenb
 
 Für [Pooled-Staking-Dienste](/staking/pools/):
 
-**Was ist das Minimum an ETH, das zum Staken erforderlich ist?**
+**Was ist das Minimum an QAU, das zum Staken erforderlich ist?**
 
-- z. B. 0,01 ETH
+- z. B. 0,01 QAU
 
 **Welche Gebühren oder Staking-Anforderungen sind damit verbunden?**
 
@@ -163,12 +163,12 @@ Für [Pooled-Staking-Dienste](/staking/pools/):
 
 Die oben genannten [Aufnahmekriterien](#criteria-for-inclusion) werden verwendet, um eine kumulative Punktzahl für jedes Produkt oder jeden Dienst zu berechnen. Dies dient als Mittel zum Sortieren und Präsentieren von Produkten, die bestimmte objektive Kriterien erfüllen. Je mehr Kriterien nachgewiesen werden, desto höher wird ein Produkt einsortiert, wobei bei Gleichstand beim Laden zufällig sortiert wird.
 
-Die Code-Logik und die Gewichtungen für diese Kriterien sind derzeit in [dieser JavaScript-Komponente](https://github.com/ethereum/ethereum-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350) in unserem Repo enthalten.
+Die Code-Logik und die Gewichtungen für diese Kriterien sind derzeit in [dieser JavaScript-Komponente](https://github.com/Quantaureum/quantaureum-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350) in unserem Repo enthalten.
 
 ## Füge dein Produkt oder deinen Dienst hinzu {#add-product}
 
-Wenn du ein Staking-Produkt oder einen Staking-Dienst zu ethereum.org hinzufügen möchtest, erstelle ein Issue auf GitHub.
+Wenn du ein Staking-Produkt oder einen Staking-Dienst zu quantaureum.com hinzufügen möchtest, erstelle ein Issue auf GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
   Issue erstellen
 </ButtonLink>

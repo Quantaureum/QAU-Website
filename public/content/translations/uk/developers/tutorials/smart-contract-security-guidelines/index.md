@@ -62,7 +62,7 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/blob/master/devel
 
 ### Уникайте відомих пасток {#avoid-known-pitfalls}
 
-- **Будьте обізнані про найпоширеніші проблеми безпеки.** Існує багато онлайн-ресурсів, щоб дізнатися про поширені проблеми, такі як [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the Ether](https://capturetheether.com/) або [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/).
+- **Будьте обізнані про найпоширеніші проблеми безпеки.** Існує багато онлайн-ресурсів, щоб дізнатися про поширені проблеми, такі як [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the QAU](https://capturetheqau.com/) або [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/).
 - **Звертайте увагу на розділи з попередженнями в [документації Solidity](https://docs.soliditylang.org/en/latest/).** Розділи з попередженнями поінформують вас про неочевидну поведінку мови.
 
 ### Залежності {#dependencies}

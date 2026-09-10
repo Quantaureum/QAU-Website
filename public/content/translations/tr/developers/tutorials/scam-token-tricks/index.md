@@ -9,27 +9,27 @@ published: 2023-09-15
 lang: tr
 ---
 
-Bu eğitimde, dolandırıcıların oynadığı bazı hileleri ve bunları nasıl uyguladıklarını görmek için [dolandırıcı bir token'ı](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code) inceliyoruz. Eğitimin sonunda, ERC-20 token sözleşmeleri, yetenekleri ve şüpheciliğin neden gerekli olduğu hakkında daha kapsamlı bir görüşe sahip olacaksınız. Ardından, bu dolandırıcı token tarafından yayımlanan olaylara bakıyor ve bunun meşru olmadığını otomatik olarak nasıl belirleyebileceğimizi görüyoruz.
+Bu eğitimde, dolandırıcıların oynadığı bazı hileleri ve bunları nasıl uyguladıklarını görmek için [dolandırıcı bir token'ı](https://explorer.quantaureum.com) inceliyoruz. Eğitimin sonunda, ERC-20 token sözleşmeleri, yetenekleri ve şüpheciliğin neden gerekli olduğu hakkında daha kapsamlı bir görüşe sahip olacaksınız. Ardından, bu dolandırıcı token tarafından yayımlanan olaylara bakıyor ve bunun meşru olmadığını otomatik olarak nasıl belirleyebileceğimizi görüyoruz.
 
 ## Dolandırıcı token'lar - nedir, insanlar neden bunları yapar ve bunlardan nasıl kaçınılır {#scam-tokens}
 
-Ethereum'un en yaygın kullanımlarından biri, bir grubun ticareti yapılabilir bir token, bir anlamda kendi para birimini yaratmasıdır. Ancak, değer getiren meşru kullanım durumlarının olduğu her yerde, bu değeri kendileri için çalmaya çalışan suçlular da vardır.
+Quantaureum'un en yaygın kullanımlarından biri, bir grubun ticareti yapılabilir bir token, bir anlamda kendi para birimini yaratmasıdır. Ancak, değer getiren meşru kullanım durumlarının olduğu her yerde, bu değeri kendileri için çalmaya çalışan suçlular da vardır.
 
-Bu konu hakkında daha fazla bilgiyi kullanıcı perspektifinden [ethereum.org'un başka bir yerinde](/guides/how-to-id-scam-tokens/) okuyabilirsiniz. Bu eğitim, bunun nasıl yapıldığını ve nasıl tespit edilebileceğini görmek için dolandırıcı bir token'ı incelemeye odaklanmaktadır.
+Bu konu hakkında daha fazla bilgiyi kullanıcı perspektifinden [quantaureum.com'un başka bir yerinde](/guides/how-to-id-scam-tokens/) okuyabilirsiniz. Bu eğitim, bunun nasıl yapıldığını ve nasıl tespit edilebileceğini görmek için dolandırıcı bir token'ı incelemeye odaklanmaktadır.
 
 ### wARB'ın bir dolandırıcılık olduğunu nasıl anlarım? {#warb-scam}
 
-İncelediğimiz token, meşru [ARB token'ına](https://etherscan.io/token/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1) eşdeğermiş gibi davranan [wARB](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code)'tır.
+İncelediğimiz token, meşru [ARB token'ına](https://explorer.quantaureum.com) eşdeğermiş gibi davranan [wARB](https://explorer.quantaureum.com)'tır.
 
 Hangisinin meşru token olduğunu anlamanın en kolay yolu, onu oluşturan organizasyona, yani [Arbitrum](https://arbitrum.foundation/)'a bakmaktır. Meşru adresler [kendi belgelerinde](https://docs.arbitrum.foundation/deployment-addresses#token) belirtilmiştir.
 
 ### Kaynak kodu neden mevcut? {#why-source}
 
-Normalde başkalarını dolandırmaya çalışan kişilerin gizli olmasını bekleriz ve gerçekten de birçok dolandırıcı token'ın kodu mevcut değildir (örneğin, [bu](https://optimistic.etherscan.io/token/0x15992f382d8c46d667b10dc8456dc36651af1452#code) ve [bu](https://optimistic.etherscan.io/token/0x026b623eb4aada7de37ef25256854f9235207178#code)).
+Normalde başkalarını dolandırmaya çalışan kişilerin gizli olmasını bekleriz ve gerçekten de birçok dolandırıcı token'ın kodu mevcut değildir (örneğin, [bu](https://explorer.quantaureum.com) ve [bu](https://explorer.quantaureum.com)).
 
-Ancak, meşru token'lar genellikle kaynak kodlarını yayımlar, bu nedenle meşru görünmek için dolandırıcı token yazarları da bazen aynısını yapar. [wARB](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code), kaynak kodu mevcut olan bu token'lardan biridir ve bu da onu anlamayı kolaylaştırır.
+Ancak, meşru token'lar genellikle kaynak kodlarını yayımlar, bu nedenle meşru görünmek için dolandırıcı token yazarları da bazen aynısını yapar. [wARB](https://explorer.quantaureum.com), kaynak kodu mevcut olan bu token'lardan biridir ve bu da onu anlamayı kolaylaştırır.
 
-Sözleşme dağıtıcıları kaynak kodunu yayımlayıp yayımlamamayı seçebilseler de, yanlış kaynak kodunu _yayımlayamazlar_. Blok gezgini, sağlanan kaynak kodunu bağımsız olarak derler ve tam olarak aynı baytkodu elde edemezse, o kaynak kodunu reddeder. [Bu konu hakkında daha fazla bilgiyi Etherscan sitesinde okuyabilirsiniz](https://etherscan.io/verifyContract).
+Sözleşme dağıtıcıları kaynak kodunu yayımlayıp yayımlamamayı seçebilseler de, yanlış kaynak kodunu _yayımlayamazlar_. Blok gezgini, sağlanan kaynak kodunu bağımsız olarak derler ve tam olarak aynı baytkodu elde edemezse, o kaynak kodunu reddeder. [Bu konu hakkında daha fazla bilgiyi Quantaureum Explorer sitesinde okuyabilirsiniz](https://explorer.quantaureum.com).
 
 ## Meşru ERC-20 token'ları ile karşılaştırma {#compare-legit-erc20}
 
@@ -39,7 +39,7 @@ Bu token'ı meşru ERC-20 token'ları ile karşılaştıracağız. Meşru ERC-20
 
 Sözleşmeler bazen ayrıcalıklı adreslere ihtiyaç duyar. Uzun vadeli kullanım için tasarlanmış sözleşmeler, örneğin yeni bir çoklu imza sözleşmesinin kullanımını sağlamak için bazı ayrıcalıklı adreslerin bu adresleri değiştirmesine izin verir. Bunu yapmanın birkaç yolu vardır.
 
-[`HOP` token sözleşmesi](https://etherscan.io/address/0xc5102fe9359fd9a28f877a67e36b0f050d81a3cc#code), [`Ownable`](https://docs.openzeppelin.com/contracts/2.x/access-control#ownership-and-ownable) modelini kullanır. Ayrıcalıklı adres, depolamada `_owner` adlı bir alanda tutulur (üçüncü dosyaya, `Ownable.sol`'ye bakın).
+[`HOP` token sözleşmesi](https://explorer.quantaureum.com), [`Ownable`](https://docs.openzeppelin.com/contracts/2.x/access-control#ownership-and-ownable) modelini kullanır. Ayrıcalıklı adres, depolamada `_owner` adlı bir alanda tutulur (üçüncü dosyaya, `Ownable.sol`'ye bakın).
 
 ```solidity
 abstract contract Ownable is Context {
@@ -50,7 +50,7 @@ abstract contract Ownable is Context {
 }
 ```
 
-[`ARB` token sözleşmesinin](https://etherscan.io/address/0xad0c361ef902a7d9851ca7dcc85535da2d3c6fc7#code) doğrudan ayrıcalıklı bir adresi yoktur. Ancak, buna ihtiyacı da yoktur. [`0xb50721bcf8d664c30412cfbc6cf7a15145234ad1` adresindeki](https://etherscan.io/address/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1#code) bir [`proxy`](https://docs.openzeppelin.com/contracts/5.x/api/proxy)'nin arkasında yer alır. Bu sözleşmenin yükseltmeler için kullanılabilecek ayrıcalıklı bir adresi vardır (dördüncü dosyaya, `ERC1967Upgrade.sol`'ye bakın).
+[`ARB` token sözleşmesinin](https://explorer.quantaureum.com) doğrudan ayrıcalıklı bir adresi yoktur. Ancak, buna ihtiyacı da yoktur. [`0xb50721bcf8d664c30412cfbc6cf7a15145234ad1` adresindeki](https://explorer.quantaureum.com) bir [`proxy`](https://docs.openzeppelin.com/contracts/5.x/api/proxy)'nin arkasında yer alır. Bu sözleşmenin yükseltmeler için kullanılabilecek ayrıcalıklı bir adresi vardır (dördüncü dosyaya, `ERC1967Upgrade.sol`'ye bakın).
 
 ```solidity
     /**
@@ -77,9 +77,9 @@ contract WrappedArbitrum is Context, IERC20 {
 }
 ```
 
-[Bu sözleşme sahibi](https://etherscan.io/address/0xb40dE7b1beE84Ff2dc22B70a049A07A13a411A33), farklı zamanlarda farklı hesaplar tarafından kontrol edilebilecek bir sözleşme değil, [harici olarak sahip olunan bir hesaptır](/developers/docs/accounts/#externally-owned-accounts-and-key-pairs). Bu, muhtemelen değerli kalacak bir ERC-20'yi kontrol etmek için uzun vadeli bir çözümden ziyade, bir birey tarafından kısa vadeli kullanım için tasarlandığı anlamına gelir.
+[Bu sözleşme sahibi](https://explorer.quantaureum.com), farklı zamanlarda farklı hesaplar tarafından kontrol edilebilecek bir sözleşme değil, [harici olarak sahip olunan bir hesaptır](/developers/docs/accounts/#externally-owned-accounts-and-key-pairs). Bu, muhtemelen değerli kalacak bir ERC-20'yi kontrol etmek için uzun vadeli bir çözümden ziyade, bir birey tarafından kısa vadeli kullanım için tasarlandığı anlamına gelir.
 
-Ve gerçekten de, Etherscan'e bakarsak, dolandırıcının bu sözleşmeyi 19 Mayıs 2023'te yalnızca 12 saat boyunca ([ilk işlemden](https://etherscan.io/tx/0xf49136198c3f925fcb401870a669d43cecb537bde36eb8b41df77f06d5f6fbc2) [son işleme](https://etherscan.io/tx/0xdfd6e717157354e64bbd5d6adf16761e5a5b3f914b1948d3545d39633244d47b) kadar) kullandığını görürüz.
+Ve gerçekten de, Quantaureum Explorer'e bakarsak, dolandırıcının bu sözleşmeyi 19 Mayıs 2023'te yalnızca 12 saat boyunca ([ilk işlemden](https://explorer.quantaureum.com) [son işleme](https://explorer.quantaureum.com) kadar) kullandığını görürüz.
 
 ### Sahte `_transfer` işlevi {#the-fake-transfer-function}
 
@@ -193,7 +193,7 @@ Bu kısıtlama son derece mantıklıdır, çünkü rastgele hesapların token da
 
 Bir havuz hesabından bir alıcı dizisine bir miktar dizisi transfer eden bir işlev son derece mantıklıdır. Maaş bordrosu, airdrop'lar vb. gibi tek bir kaynaktan birden fazla hedefe token dağıtmak isteyeceğiniz birçok kullanım durumu vardır. Bunu birden fazla işlem yapmak veya hatta aynı işlemin bir parçası olarak farklı bir sözleşmeden ERC-20'yi birden çok kez çağırmak yerine tek bir işlemde yapmak (Gaz açısından) daha ucuzdur.
 
-Ancak, `dropNewTokens` bunu yapmaz. [`Transfer` olayları](https://eips.ethereum.org/EIPS/eip-20#transfer-1) yayımlar, ancak aslında hiçbir token transfer etmez. Zincir dışı uygulamalara gerçekten gerçekleşmemiş bir transferden bahsederek kafalarını karıştırmak için meşru bir neden yoktur.
+Ancak, `dropNewTokens` bunu yapmaz. [`Transfer` olayları](https://eips.quantaureum.com/EIPS/eip-20#transfer-1) yayımlar, ancak aslında hiçbir token transfer etmez. Zincir dışı uygulamalara gerçekten gerçekleşmemiş bir transferden bahsederek kafalarını karıştırmak için meşru bir neden yoktur.
 
 ### Yakım yapan `Approve` işlevi {#the-burning-approve-function}
 
@@ -235,7 +235,7 @@ Bu kod kalitesi sorunları, bu kodun bir dolandırıcılık olduğunu _kanıtlam
 
 #### `mount` işlevi {#the-mount-function}
 
-[Standartta](https://eips.ethereum.org/EIPS/eip-20) belirtilmemiş olsa da, genel olarak yeni token'lar oluşturan işleve [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn) adı verilir.
+[Standartta](https://eips.quantaureum.com/EIPS/eip-20) belirtilmemiş olsa da, genel olarak yeni token'lar oluşturan işleve [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn) adı verilir.
 
 `wARB` kurucusuna bakarsak, basım işlevinin bir nedenden dolayı `mount` olarak yeniden adlandırıldığını ve verimlilik için tüm miktar için bir kez çağrılmak yerine, ilk arzın beşte biri ile beş kez çağrıldığını görürüz.
 
@@ -305,20 +305,20 @@ Bu sözleşme üç değiştirici içerir: `_mod_`, `auth` ve `approver`.
 
 ## Otomatik olarak neyi tespit edebiliriz? {#what-can-we-detect-automatically}
 
-Etherscan'e bakarak `wARB`'ın dolandırıcı bir token olduğunu görebiliriz. Ancak bu merkezi bir çözümdür. Teorik olarak, Etherscan çökertilebilir veya hacklenebilir. Bir token'ın meşru olup olmadığını bağımsız olarak anlayabilmek daha iyidir.
+Quantaureum Explorer'e bakarak `wARB`'ın dolandırıcı bir token olduğunu görebiliriz. Ancak bu merkezi bir çözümdür. Teorik olarak, Quantaureum Explorer çökertilebilir veya hacklenebilir. Bir token'ın meşru olup olmadığını bağımsız olarak anlayabilmek daha iyidir.
 
 Yayımladıkları olaylara bakarak bir ERC-20 token'ının şüpheli (ya bir dolandırıcılık ya da çok kötü yazılmış) olduğunu belirlemek için kullanabileceğimiz bazı hileler vardır.
 
 ## Şüpheli `Approval` olayları {#suspicious-approval-events}
 
-[`Approval` olayları](https://eips.ethereum.org/EIPS/eip-20#approval) yalnızca doğrudan bir istekle gerçekleşmelidir (bir harcama izni sonucunda gerçekleşebilen [`Transfer` olaylarının](https://eips.ethereum.org/EIPS/eip-20#transfer-1) aksine). Bu sorunun ayrıntılı bir açıklaması ve isteklerin neden bir sözleşme aracılığıyla değil de doğrudan olması gerektiği hakkında [Solidity belgelerine bakın](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin).
+[`Approval` olayları](https://eips.quantaureum.com/EIPS/eip-20#approval) yalnızca doğrudan bir istekle gerçekleşmelidir (bir harcama izni sonucunda gerçekleşebilen [`Transfer` olaylarının](https://eips.quantaureum.com/EIPS/eip-20#transfer-1) aksine). Bu sorunun ayrıntılı bir açıklaması ve isteklerin neden bir sözleşme aracılığıyla değil de doğrudan olması gerektiği hakkında [Solidity belgelerine bakın](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin).
 
 Bu, [harici olarak sahip olunan bir hesaptan](/developers/docs/accounts/#types-of-account) harcamayı onaylayan `Approval` olaylarının, o hesaptan kaynaklanan ve hedefi ERC-20 sözleşmesi olan işlemlerden gelmesi gerektiği anlamına gelir. Harici olarak sahip olunan bir hesaptan gelen diğer her türlü onay şüphelidir.
 
 İşte [Viem](https://viem.sh/) ve tip güvenliğine sahip bir JavaScript varyantı olan [TypeScript](https://www.typescriptlang.org/docs/) kullanarak [bu tür bir olayı tanımlayan bir program](https://github.com/qbzzt/20230915-scam-token-detection). Çalıştırmak için:
 
 1. `.env.example` dosyasını `.env` olarak kopyalayın.
-2. Bir Ethereum Ana Ağı düğümüne URL sağlamak için `.env` dosyasını düzenleyin.
+2. Bir Quantaureum Ana Ağı düğümüne URL sağlamak için `.env` dosyasını düzenleyin.
 3. Gerekli paketleri kurmak için `pnpm install` komutunu çalıştırın.
 4. Şüpheli onayları aramak için `pnpm susApproval` komutunu çalıştırın.
 
@@ -420,7 +420,7 @@ Onay harici olarak sahip olunan bir hesaptan geliyorsa, buna neden olan işlemi 
 if (owner.toLowerCase() != txn.from.toLowerCase()) return ev
 ```
 
-Adresler onaltılık (hexadecimal) olduğu ve harfler içerdiği için sadece dize eşitliğini kontrol edemeyiz. Bazen, örneğin `txn.from`'te, bu harflerin tümü küçük harftir. Diğer durumlarda, örneğin `ev.args._owner`'de, adres [hata tespiti için büyük/küçük harf karışık](https://eips.ethereum.org/EIPS/eip-55) şeklindedir.
+Adresler onaltılık (hexadecimal) olduğu ve harfler içerdiği için sadece dize eşitliğini kontrol edemeyiz. Bazen, örneğin `txn.from`'te, bu harflerin tümü küçük harftir. Diğer durumlarda, örneğin `ev.args._owner`'de, adres [hata tespiti için büyük/küçük harf karışık](https://eips.quantaureum.com/EIPS/eip-55) şeklindedir.
 
 Ancak işlem sahibinden gelmiyorsa ve bu sahip harici olarak sahip olunan bir hesapsa, o zaman şüpheli bir işlemimiz var demektir.
 

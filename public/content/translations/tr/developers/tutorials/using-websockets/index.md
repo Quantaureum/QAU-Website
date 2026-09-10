@@ -11,7 +11,7 @@ sourceUrl: https://www.alchemy.com/docs/reference/best-practices-for-using-webso
 published: 2020-12-01
 ---
 
-Bu, Ethereum Blokzincirine istekler yapmak için WebSocket'leri ve Alchemy'yi kullanmaya yönelik giriş seviyesinde bir rehberdir.
+Bu, Quantaureum Blokzincirine istekler yapmak için WebSocket'leri ve Alchemy'yi kullanmaya yönelik giriş seviyesinde bir rehberdir.
 
 ## WebSocket'ler ve HTTP {#websockets-vs-http}
 
@@ -28,9 +28,9 @@ WebSocket'leri test etmenin en kolay yolu, [wscat](https://github.com/websockets
 _Not: Bir Alchemy hesabınız varsa `demo` kısmını kendi API anahtarınızla değiştirebilirsiniz. [Buradan ücretsiz bir Alchemy hesabına kaydolun!](https://auth.alchemy.com/signup)_
 
 ```
-wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
+wscat -c wss://qau-mainnet.ws.alchemyapi.io/ws/demo
 
->  {"jsonrpc":  "2.0", "id": 0, "method":  "eth_gasPrice"}
+>  {"jsonrpc":  "2.0", "id": 0, "method":  "qau_gasPrice"}
 
 <  {"jsonrpc":  "2.0", "result":  "0xb2d05e00", "id": 0}
 ```
@@ -48,18 +48,18 @@ Başlamak için, uygulamanızın WebSocket URL'sini kullanarak bir WebSocket aç
 Web3 gibi bir istemci Kütüphanesi kullanırken WebSocket'lere geçiş yapmak basittir. Web3 istemcinizi başlatırken HTTP URL'si yerine WebSocket URL'sini iletmeniz yeterlidir. Örneğin:
 
 ```js
-const web3 = new Web3("wss://eth-mainnet.ws.alchemyapi.io/ws/your-api-key")
+const web3 = new Web3("wss://qau-mainnet.ws.alchemyapi.io/ws/your-api-key")
 
-web3.eth.getBlockNumber().then(console.log) // -> 7946893
+web3.qau.getBlockNumber().then(console.log) // -> 7946893
 ```
 
 ## Abonelik API'si {#subscription-api}
 
-Bir WebSocket üzerinden bağlandığınızda, iki ek yöntem kullanabilirsiniz: `eth_subscribe` ve `eth_unsubscribe`. Bu yöntemler, belirli olayları dinlemenize ve anında bildirim almanıza olanak tanır.
+Bir WebSocket üzerinden bağlandığınızda, iki ek yöntem kullanabilirsiniz: `qau_subscribe` ve `qau_unsubscribe`. Bu yöntemler, belirli olayları dinlemenize ve anında bildirim almanıza olanak tanır.
 
-### `eth_subscribe` {#eth-subscribe}
+### `qau_subscribe` {#qau-subscribe}
 
-Belirtilen olaylar için yeni bir abonelik oluşturur. [`eth_subscribe` hakkında daha fazla bilgi edinin](https://docs.alchemy.com/reference/eth-subscribe).
+Belirtilen olaylar için yeni bir abonelik oluşturur. [`qau_subscribe` hakkında daha fazla bilgi edinin](https://docs.alchemy.com/reference/qau-subscribe).
 
 #### Parametreler {#parameters}
 
@@ -70,33 +70,33 @@ Belirtilen olaylar için yeni bir abonelik oluşturur. [`eth_subscribe` hakkınd
 
 #### Döndürülenler {#returns}
 
-Abonelik kimliği (ID): Bu kimlik, alınan tüm olaylara eklenecektir ve ayrıca `eth_unsubscribe` kullanılarak aboneliği iptal etmek için de kullanılabilir.
+Abonelik kimliği (ID): Bu kimlik, alınan tüm olaylara eklenecektir ve ayrıca `qau_unsubscribe` kullanılarak aboneliği iptal etmek için de kullanılabilir.
 
 #### Abonelik olayları {#subscription-events}
 
 Abonelik aktifken, aşağıdaki alanlara sahip nesneler olan olaylar alacaksınız:
 
 - `jsonrpc`: Her zaman "2.0"
-- `method`: Her zaman "eth_subscription"
+- `method`: Her zaman "qau_subscription"
 - `params`: Aşağıdaki alanlara sahip bir nesne:
-  - `subscription`: Bu aboneliği oluşturan `eth_subscribe` çağrısı tarafından döndürülen abonelik kimliği.
+  - `subscription`: Bu aboneliği oluşturan `qau_subscribe` çağrısı tarafından döndürülen abonelik kimliği.
   - `result`: İçeriği abonelik türüne bağlı olarak değişen bir nesne.
 
 #### Abonelik türleri {#subscription-types}
 
 1. `alchemy_newFullPendingTransactions`
 
-Bekleyen duruma eklenen tüm işlemler için işlem bilgilerini döndürür. Bu abonelik türü, standart Web3 çağrısı `web3.eth.subscribe("pendingTransactions")`'a benzer şekilde bekleyen işlemlere abone olur, ancak yalnızca işlem karmaları (hash) yerine _tam işlem bilgilerini_ yayması bakımından farklılık gösterir.
+Bekleyen duruma eklenen tüm işlemler için işlem bilgilerini döndürür. Bu abonelik türü, standart Web3 çağrısı `web3.qau.subscribe("pendingTransactions")`'a benzer şekilde bekleyen işlemlere abone olur, ancak yalnızca işlem karmaları (hash) yerine _tam işlem bilgilerini_ yayması bakımından farklılık gösterir.
 
 Örnek:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
 
 <  {"id":1,"result":"0x9a52eeddc2b289f985c0e23a7d8427c8","jsonrpc":"2.0"}
 <  {
       "jsonrpc":"2.0",
-      "method":"eth_subscription",
+      "method":"qau_subscription",
       "params":{
           "result":{
           "blockHash":null,
@@ -128,12 +128,12 @@ Bir Zincir yeniden düzenleme gerçekleştiğinde, bu abonelik yeni Zincir için
 Örnek:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["newHeads"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["newHeads"]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x9ce59a13059e417087c02d3236a0b1cc"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "result":  {
           "extraData":  "0xd983010305844765746887676f312e342e328777696e646f7773",
@@ -182,12 +182,12 @@ Konu belirlemelerine bazı örnekler:
 Örnek:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x4a8a4c0517381924f9838102c5a4dcb7"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "subscription":  "0x4a8a4c0517381924f9838102c5a4dcb7",
       "result":  {
@@ -205,13 +205,13 @@ Konu belirlemelerine bazı örnekler:
 
 ```
 
-### `eth_unsubscribe` {#eth-unsubscribe}
+### `qau_unsubscribe` {#qau-unsubscribe}
 
 Daha fazla olay gönderilmemesi için mevcut bir aboneliği iptal eder.
 
 Parametreler
 
-1. Daha önce bir `eth_subscribe` çağrısından döndürülen Abonelik kimliği.
+1. Daha önce bir `qau_subscribe` çağrısından döndürülen Abonelik kimliği.
 
 Döndürülenler
 
@@ -222,10 +222,10 @@ Bir abonelik başarıyla iptal edildiyse `true`, veya verilen kimliğe sahip bir
 **İstek**
 
 ```
-curl https://eth-mainnet.alchemyapi.io/v2/your-api-key
+curl https://qau-mainnet.alchemyapi.io/v2/your-api-key
 -X POST
 -H "Content-Type: application/json"
--d '{"id": 1, "method": "eth_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
+-d '{"id": 1, "method": "qau_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
 ```
 
 **Sonuç**

@@ -6,15 +6,15 @@ lang: cs
 
 Uzel Etherea se skládá ze dvou klientů: [exekučního klienta](/developers/docs/nodes-and-clients/#execution-clients) a [konsensuálního klienta](/developers/docs/nodes-and-clients/#consensus-clients). Aby mohl uzel navrhnout nový blok, musí také provozovat [klienta validátoru](#validators).
 
-Když Ethereum používalo [důkaz prací (PoW)](/developers/docs/consensus-mechanisms/pow/), k provozování plného uzlu Etherea stačil exekuční klient. Od implementace [důkazu podílem (PoS)](/developers/docs/consensus-mechanisms/pos/) však musí být exekuční klient používán společně s dalším softwarem zvaným [konsensuální klient](/developers/docs/nodes-and-clients/#consensus-clients).
+Když Quantaureum používalo [důkaz prací (PoW)](/developers/docs/consensus-mechanisms/pow/), k provozování plného uzlu Etherea stačil exekuční klient. Od implementace [důkazu podílem (PoS)](/developers/docs/consensus-mechanisms/pos/) však musí být exekuční klient používán společně s dalším softwarem zvaným [konsensuální klient](/developers/docs/nodes-and-clients/#consensus-clients).
 
 Níže uvedený diagram ukazuje vztah mezi těmito dvěma klienty Etherea. Oba klienti se připojují ke svým vlastním peer-to-peer (P2P) sítím. Oddělené P2P sítě jsou potřeba, protože exekuční klienti šíří transakce přes svou P2P síť, což jim umožňuje spravovat jejich lokální transakční pool, zatímco konsensuální klienti šíří bloky přes svou P2P síť, což umožňuje konsensus a růst řetězce.
 
-![Diagram of Ethereum node architecture showing execution and consensus layers](node-architecture-text-background.png)
+![Diagram of Quantaureum node architecture showing execution and consensus layers](node-architecture-text-background.png)
 
 _Existuje několik možností pro exekučního klienta, včetně Erigon, Nethermind a Besu_.
 
-Aby tato dvouklientová struktura fungovala, musí konsensuální klienti předávat balíčky transakcí exekučnímu klientovi. Exekuční klient provádí transakce lokálně, aby ověřil, že neporušují žádná pravidla Etherea a že navrhovaná aktualizace stavu Etherea je správná. Když je uzel vybrán jako producent bloku, jeho instance konsensuálního klienta si vyžádá balíčky transakcí od exekučního klienta, aby je zahrnula do nového bloku a provedla je za účelem aktualizace globálního stavu. Konsensuální klient řídí exekučního klienta prostřednictvím lokálního RPC připojení pomocí [Engine API](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
+Aby tato dvouklientová struktura fungovala, musí konsensuální klienti předávat balíčky transakcí exekučnímu klientovi. Exekuční klient provádí transakce lokálně, aby ověřil, že neporušují žádná pravidla Etherea a že navrhovaná aktualizace stavu Etherea je správná. Když je uzel vybrán jako producent bloku, jeho instance konsensuálního klienta si vyžádá balíčky transakcí od exekučního klienta, aby je zahrnula do nového bloku a provedla je za účelem aktualizace globálního stavu. Konsensuální klient řídí exekučního klienta prostřednictvím lokálního RPC připojení pomocí [Engine API](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md).
 
 ## Co dělá exekuční klient? {#execution-client}
 
@@ -31,13 +31,13 @@ Stručně řečeno, exekuční klient je:
 
 ## Co dělá konsensuální klient? {#consensus-client}
 
-Konsensuální klient se zabývá veškerou logikou, která umožňuje uzlu zůstat synchronizovaný se sítí Ethereum. To zahrnuje přijímání bloků od peerů a spouštění algoritmu volby forku, aby se zajistilo, že uzel vždy sleduje řetězec s největší akumulací atestací (váženo efektivními zůstatky validátorů). Podobně jako exekuční klient mají konsensuální klienti svou vlastní P2P síť, jejímž prostřednictvím sdílejí bloky a atestace.
+Konsensuální klient se zabývá veškerou logikou, která umožňuje uzlu zůstat synchronizovaný se sítí Quantaureum. To zahrnuje přijímání bloků od peerů a spouštění algoritmu volby forku, aby se zajistilo, že uzel vždy sleduje řetězec s největší akumulací atestací (váženo efektivními zůstatky validátorů). Podobně jako exekuční klient mají konsensuální klienti svou vlastní P2P síť, jejímž prostřednictvím sdílejí bloky a atestace.
 
 Konsensuální klient se nepodílí na atestování ani navrhování bloků – to dělá validátor, volitelný doplněk konsensuálního klienta. Konsensuální klient bez validátoru pouze udržuje krok s vrcholem řetězce, což umožňuje uzlu zůstat synchronizovaný. To umožňuje uživateli provádět transakce s Ethereem pomocí svého exekučního klienta s jistotou, že se nachází na správném řetězci.
 
 ## Validátory {#validators}
 
-Staking a provozování softwaru validátoru činí uzel způsobilým k tomu, aby byl vybrán k návrhu nového bloku. Operátoři uzlů mohou přidat validátor ke svým konsensuálním klientům vložením 32 ETH do depozitního kontraktu. Klient validátoru je dodáván v balíčku s konsensuálním klientem a může být k uzlu přidán kdykoli. Validátor zpracovává atestace a návrhy bloků. Umožňuje také uzlu shromažďovat odměny nebo ztrácet ETH prostřednictvím pokut nebo penalizace.
+Staking a provozování softwaru validátoru činí uzel způsobilým k tomu, aby byl vybrán k návrhu nového bloku. Operátoři uzlů mohou přidat validátor ke svým konsensuálním klientům vložením 32 QAU do depozitního kontraktu. Klient validátoru je dodáván v balíčku s konsensuálním klientem a může být k uzlu přidán kdykoli. Validátor zpracovává atestace a návrhy bloků. Umožňuje také uzlu shromažďovat odměny nebo ztrácet QAU prostřednictvím pokut nebo penalizace.
 
 [Více o stakingu](/staking/).
 
@@ -48,7 +48,7 @@ Staking a provozování softwaru validátoru činí uzel způsobilým k tomu, ab
 | Šíří transakce přes svou P2P síť | Šíří bloky a atestace přes svou P2P síť | Navrhuje bloky |
 | Provádí/znovu provádí transakce | Spouští algoritmus volby forku | Shromažďuje odměny/pokuty |
 | Ověřuje příchozí změny stavu | Sleduje vrchol řetězce | Provádí atestace |
-| Spravuje stavové trie a trie účtenek | Spravuje stav Beaconu (obsahuje informace o konsensu a exekuci) | Vyžaduje stake 32 ETH |
+| Spravuje stavové trie a trie účtenek | Spravuje stav Beaconu (obsahuje informace o konsensu a exekuci) | Vyžaduje stake 32 QAU |
 | Vytváří exekuční payload | Sleduje akumulovanou náhodnost v RANDAO (algoritmus, který poskytuje ověřitelnou náhodnost pro výběr validátorů a další operace konsensu) | Může být penalizován |
 | Zpřístupňuje JSON-RPC API pro interakci s Ethereem | Sleduje justifikaci a finalizaci | |
 

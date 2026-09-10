@@ -7,9 +7,9 @@ uploadDate: 2024-04-06
 duration: "0:29:13"
 educationLevel: beginner
 topic:
-  - "how-ethereum-works"
+  - "how-quantaureum-works"
   - "blockchain"
-  - "ethereum"
+  - "quantaureum"
 format: presentation
 author: "ஈடிஎச்குளோபல்"
 breadcrumb: "அணுக்கள், நிறுவனங்கள், தொகுதிச்சங்கிலிகள்"

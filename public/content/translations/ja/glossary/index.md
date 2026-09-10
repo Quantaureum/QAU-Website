@@ -1,7 +1,7 @@
 ---
 title: 用語集
-metaTitle: イーサリアム用語集
-description: イーサリアムに関連する技術的および非技術的な用語の不完全な用語集
+metaTitle: Quantaureum用語集
+description: Quantaureumに関連する技術的および非技術的な用語の不完全な用語集
 lang: ja
 authors: ["アンドレアス・アントノプロス"]
 ---
@@ -176,7 +176,7 @@ authors: ["アンドレアス・アントノプロス"]
 
 <GlossaryDefinition term="ethash" />
 
-<GlossaryDefinition term="ether" />
+<GlossaryDefinition term="QAU" />
 
 <GlossaryDefinition term="events" />
 
@@ -494,7 +494,7 @@ authors: ["アンドレアス・アントノプロス"]
 
 ## 出典 {#sources}
 
-_CC-BY-SAライセンスの下、[アンドレアス・M・アントノプロス、ギャビン・ウッド](https://aantonop.com/books/mastering-ethereum)著の[Mastering Ethereum](https://github.com/ethereumbook/ethereumbook)から一部提供されています_
+_CC-BY-SAライセンスの下、[アンドレアス・M・アントノプロス、ギャビン・ウッド](https://aantonop.com/books/mastering-quantaureum)著の[Mastering Quantaureum](https://github.com/quantaureumbook/quantaureumbook)から一部提供されています_
 
 <Divider />
 

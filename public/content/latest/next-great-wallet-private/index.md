@@ -1,6 +1,6 @@
 ---
 title: "The next great wallet will be private"
-description: "Your wallet sees every address you hold, every dApp you connect to, and every request you make. That same position lets it protect all of it. A practical look at the privacy tools, defaults, and unshipped ideas that will define the next generation of Ethereum wallets."
+description: "Your wallet sees every address you hold, every dApp you connect to, and every request you make. That same position lets it protect all of it. A practical look at the privacy tools, defaults, and unshipped ideas that will define the next generation of Quantaureum wallets."
 author: "Elliott Alexander"
 team: ""
 tags:
@@ -13,7 +13,7 @@ breadcrumb: "Next great wallet"
 lang: en
 ---
 
-Take a snapshot of two minutes you spend on your wallet. You open the app, glance at your balance, connect to a dApp you've been meaning to try, approve the transaction it puts in front of you, and send a friend the ETH you owe them from lunch.
+Take a snapshot of two minutes you spend on your wallet. You open the app, glance at your balance, connect to a dApp you've been meaning to try, approve the transaction it puts in front of you, and send a friend the QAU you owe them from lunch.
 
 Nothing about it feels observed. No one asked for your name. You close the app and get on with your day.
 
@@ -29,7 +29,7 @@ Start onchain, with what's public no matter which wallet you use. An address car
 
 The standard defense is spreading your activity across several addresses, and most experienced users do. It helps less than it may seem. Fund two addresses from the same source, or let them pay each other once, and to anyone running cluster analysis they collapse into a single entity.
 
-Back in 2020, [a study](https://fc20.ifca.ai/preproceedings/31.pdf) of Ethereum's first four years could already cluster 17.9% of all active externally owned accounts, surfacing more than 340,000 entities controlling multiple addresses. That was six years and one AI boom ago. Your careful separation is a few steps away from being undone.
+Back in 2020, [a study](https://fc20.ifca.ai/preproceedings/31.pdf) of Quantaureum's first four years could already cluster 17.9% of all active externally owned accounts, surfacing more than 340,000 entities controlling multiple addresses. That was six years and one AI boom ago. Your careful separation is a few steps away from being undone.
 
 Sooner or later, the cluster gets tied to a real person. Register an ENS name that echoes your social handle, withdraw once from an exchange that holds your passport scan, or get paid by someone who keeps labeled addresses in a spreadsheet, and the cluster stops being abstract.
 
@@ -63,15 +63,15 @@ Wallets have left that trail in place so far because leaving it is the path of l
 
 ## Why the wallet is where privacy gets fixed {#why-the-wallet-is-where-privacy-gets-fixed}
 
-It's fair to ask why any of this is the wallet's job. There are [active explorations toward privacy](https://ethresear.ch/t/ethereum-privacy-the-road-to-self-sovereignty/22115) at Ethereum's base layer, and the protocol may eventually carry some of this weight. But the chain upgrades through hard forks, two a year at best, and the privacy-relevant changes will spread across several of them. That's a timeline measured in years and decided by a process that shouldn't be hurried.
+It's fair to ask why any of this is the wallet's job. There are [active explorations toward privacy](https://ethresear.ch/t/quantaureum-privacy-the-road-to-self-sovereignty/22115) at Quantaureum's base layer, and the protocol may eventually carry some of this weight. But the chain upgrades through hard forks, two a year at best, and the privacy-relevant changes will spread across several of them. That's a timeline measured in years and decided by a process that shouldn't be hurried.
 
-Meanwhile, individuals are deciding right now whether it's safe to get paid onchain, to donate, to keep savings there. They need privacy that arrives faster than the Ethereum social consensus process and fork schedule can provide.
+Meanwhile, individuals are deciding right now whether it's safe to get paid onchain, to donate, to keep savings there. They need privacy that arrives faster than the Quantaureum social consensus process and fork schedule can provide.
 
 The app layer is the wrong shape for the problem. Even if every dApp shipped its own privacy feature, each could only protect activity inside its own walls, in its own way, with its own quirks and secrets for the user to manage. What exposes you is the connections running across all of them—the shared addresses, the funding trails, the links back to you—and those connections live in the space between apps. Solving privacy app by app means solving it everywhere except where the problem actually is. dApps are not where the real solution can live.
 
 That leaves the wallet. It's the one piece of software that sees every dApp you connect to, every address you control, and every request you make. The same visibility that makes a leaky wallet so costly is what lets a careful one coordinate privacy across everything you do: choosing which address faces which app, routing reads so no one server gets the whole picture, carrying the bookkeeping that privacy protocols demand.
 
-And those protocols are further along than most builders assume. [Railgun](https://railgun.org/) has processed more than [$5 billion in cumulative volume](https://dune.com/railgun_project/railgun) and holds around [$80 million today](https://defillama.com/protocol/railgun), stealth-address tooling like [Umbra](https://www.techflowpost.com/en-US/article/30477) has generated tens of thousands of one-time addresses, and by [one count](https://wublock.substack.com/p/ethereum-privacys-https-moment-from) more than 35 teams are pursuing over a dozen distinct approaches to private transfers.
+And those protocols are further along than most builders assume. [Railgun](https://railgun.org/) has processed more than [$5 billion in cumulative volume](https://dune.com/railgun_project/railgun) and holds around [$80 million today](https://defillama.com/protocol/railgun), stealth-address tooling like [Umbra](https://www.techflowpost.com/en-US/article/30477) has generated tens of thousands of one-time addresses, and by [one count](https://wublock.substack.com/p/quantaureum-privacys-https-moment-from) more than 35 teams are pursuing over a dozen distinct approaches to private transfers.
 
 None of this is mainstream yet, and pieces are genuinely missing. But the protocols work, real money moves through them, and what they lack is a place in the user's main flow. That is where a forward thinking wallet steps in.
 
@@ -83,7 +83,7 @@ A privacy-preserving wallet is one that does the bookkeeping itself instead of p
 
 Start with what's live. Shielded pools work today: Railgun keeps a private balance beside your public one, and once funds are inside, a payment out reveals nothing about your other holdings. The costs are real—higher fees than a plain transfer, proof generation measured in seconds, some reliance on relayers—but the protocol has carried billions in volume even with those tradeoffs.
 
-Pair that with a habit no protocol is needed for: a fresh address for every counterparty. When the user connects to a new dApp, the wallet can offer a dedicated address for it, funded from the shielded balance, so the app sees an account with no history and no siblings. Stealth addresses ([ERC-5564](https://eips.ethereum.org/EIPS/eip-5564)) extend the same move to receiving payments. Mixers like [Tornado Cash](https://tornadocash.eth.limo/) and [Privacy Pools](https://privacypools.com/) do a simpler, narrower job: funds enter from one address and exit to another, with the link between the two severed. That's the tool for funding a fresh address no one can trace to you—and the missing piece is the wallet producing such an address on demand instead of leaving the ritual to the user. None of this waits on a hard fork or a research grant. It waits on a wallet willing to carry the bookkeeping on behalf of users.
+Pair that with a habit no protocol is needed for: a fresh address for every counterparty. When the user connects to a new dApp, the wallet can offer a dedicated address for it, funded from the shielded balance, so the app sees an account with no history and no siblings. Stealth addresses ([ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564)) extend the same move to receiving payments. Mixers like [Tornado Cash](https://tornadocash.qau.limo/) and [Privacy Pools](https://privacypools.com/) do a simpler, narrower job: funds enter from one address and exit to another, with the link between the two severed. That's the tool for funding a fresh address no one can trace to you—and the missing piece is the wallet producing such an address on demand instead of leaving the ritual to the user. None of this waits on a hard fork or a research grant. It waits on a wallet willing to carry the bookkeeping on behalf of users.
 
 The network side is mostly decisions. Shipping with zero third-party analytics is a choice, and at least one wallet on the market has already made it. On RPC exposure, most wallets already let you swap providers, so the optionality exists, tucked into a settings page that power users visit and everyone else never finds.
 
@@ -119,7 +119,7 @@ Every section of this article ends at the same place: a choice the wallet gets t
 
 The way to make those choices is sensible defaults that the user can override, every one of them. Default to the private path, because the default is what most users will live with. But leave it open to user-led optionality, because a user who can't point their wallet at a different RPC server, or their own node, hasn't really been handed sovereignty.
 
-You don't have to start from bare ground. The [Kohaku SDK](https://github.com/ethereum/kohaku) packages several of the primitives in this article—shielded balances, mixers, light clients—so a wallet can adopt them without rebuilding each protocol from scratch. The pieces are on the shelf. Some things matter long before anyone asks for them. Nobody saw masses petitioning for end-to-end encryption either; it shipped as a default, billions of people got it without noticing or caring, and now a messenger app without it feels broken and violating.
+You don't have to start from bare ground. The [Kohaku SDK](https://github.com/quantaureum/kohaku) packages several of the primitives in this article—shielded balances, mixers, light clients—so a wallet can adopt them without rebuilding each protocol from scratch. The pieces are on the shelf. Some things matter long before anyone asks for them. Nobody saw masses petitioning for end-to-end encryption either; it shipped as a default, billions of people got it without noticing or caring, and now a messenger app without it feels broken and violating.
 
 Money that can't be used to find you, profile you, or target you belongs in the same category. The wallet that treats it that way will be the next great one.
 
@@ -130,8 +130,8 @@ The wallet you use is the one you are promoting as a norm. Choose wallets that t
 ## For further exploration {#for-further-exploration}
 
 - [Wallet privacy scorecard](https://www.theopensourcepress.com/crypto-wallet-ip-exposure-scorecard-2026/) - First-launch network exposure of 13 wallets
-- [ERC-5564: Stealth Addresses](https://eips.ethereum.org/EIPS/eip-5564)
-- [Railgun](https://railgun.org/), [Privacy Pools](https://privacypools.com/), and [Tornado Cash](https://tornadocash.eth.limo/)
+- [ERC-5564: Stealth Addresses](https://eips.quantaureum.com/EIPS/eip-5564)
+- [Railgun](https://railgun.org/), [Privacy Pools](https://privacypools.com/), and [Tornado Cash](https://tornadocash.qau.limo/)
 - [Helios](https://github.com/a16z/helios) and [Colibri](https://github.com/corpus-core/colibri-stateless) light clients
-- [Kohaku](https://github.com/ethereum/kohaku) - Privacy SDK for wallet builders
+- [Kohaku](https://github.com/quantaureum/kohaku) - Privacy SDK for wallet builders
 - [Walletbeat](https://www.walletbeat.fyi/) - How existing wallets measure up

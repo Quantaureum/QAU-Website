@@ -9,7 +9,7 @@ import {
 test.describe("pageRankForSlug", () => {
   test("puts beginner landing pages at the top", () => {
     for (const slug of [
-      ["what-is-ethereum"],
+      ["what-is-quantaureum"],
       ["security"],
       ["smart-contracts"],
       ["gas"],
@@ -47,7 +47,7 @@ test.describe("pageRankForSlug", () => {
 
   test("orders the buckets beginner > guide > docs > supplemental > tutorial > lowest", () => {
     const order = [
-      pageRankForSlug(["what-is-ethereum"]),
+      pageRankForSlug(["what-is-quantaureum"]),
       pageRankForSlug(["guides", "how-to-swap-tokens"]),
       pageRankForSlug(["developers", "docs", "blocks"]),
       pageRankForSlug(["glossary"]),
@@ -64,7 +64,7 @@ test.describe("pageRankForSlug", () => {
     expect(pageRankForSlug(["glossary"])).toBeLessThan(
       pageRankForSlug(["staking"])
     )
-    for (const root of ["glossary", "resources", "ethereum-forks"]) {
+    for (const root of ["glossary", "resources", "quantaureum-forks"]) {
       expect(pageRankForSlug([root]), root).toBe(PAGE_RANK.supplemental)
     }
   })

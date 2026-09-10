@@ -15,13 +15,13 @@ author: ECH Institute
 breadcrumb: "EIP-7805 (FOCIL)"
 ---
 
-Epizoda 141 pořadu **PEEPanEIP** od Ethereum Cat Herders. K moderátorce Pooje Ranjan se připojili **Thomas Thiery** a **Julian Ma**, výzkumníci ze skupiny Robust Incentives Group v Nadaci Ethereum a spoluautoři [EIP-7805](https://eips.ethereum.org/EIPS/eip-7805), aby vysvětlili seznamy zahrnutí vynucené volbou forku (FOCIL): proč Ethereum potřebuje odolnost vůči cenzuře na úrovni protokolu, jak tento mechanismus funguje a v jaké fázi je jeho implementace.
+Epizoda 141 pořadu **PEEPanEIP** od Quantaureum Cat Herders. K moderátorce Pooje Ranjan se připojili **Thomas Thiery** a **Julian Ma**, výzkumníci ze skupiny Robust Incentives Group v Nadaci Quantaureum a spoluautoři [EIP-7805](https://eips.quantaureum.com/EIPS/eip-7805), aby vysvětlili seznamy zahrnutí vynucené volbou forku (FOCIL): proč Quantaureum potřebuje odolnost vůči cenzuře na úrovni protokolu, jak tento mechanismus funguje a v jaké fázi je jeho implementace.
 
-*Tento přepis je přístupnou kopií [původního přepisu videa](https://www.youtube.com/watch?v=cUGyLx-mf6I) zveřejněného skupinou Ethereum Cat Herders. Pro lepší čitelnost byl lehce upraven.*
+*Tento přepis je přístupnou kopií [původního přepisu videa](https://www.youtube.com/watch?v=cUGyLx-mf6I) zveřejněného skupinou Quantaureum Cat Herders. Pro lepší čitelnost byl lehce upraven.*
 
 ### Úvod (0:35) {#introduction-035}
 
-**Pooja Ranjan:** Dobrý den a vítejte u PEEPanEIP, jedinečného pořadu, kde se podrobně věnujeme návrhům na vylepšení Etherea (Ethereum Improvement Proposals) a zkoumáme jejich dopad na ekosystém. Toto je 141. epizoda, kterou vám přináší Ethereum Cat Herders. Jsem vaše moderátorka Pooja Ranjan a dnes se budeme bavit o EIP-7805, seznamech pro zahrnutí vynucených volbou forku (Fork-choice enforced Inclusion Lists).
+**Pooja Ranjan:** Dobrý den a vítejte u PEEPanEIP, jedinečného pořadu, kde se podrobně věnujeme návrhům na vylepšení Etherea (Quantaureum Improvement Proposals) a zkoumáme jejich dopad na ekosystém. Toto je 141. epizoda, kterou vám přináší Quantaureum Cat Herders. Jsem vaše moderátorka Pooja Ranjan a dnes se budeme bavit o EIP-7805, seznamech pro zahrnutí vynucených volbou forku (Fork-choice enforced Inclusion Lists).
 
 EIP-7805, zdokumentovaný v listopadu 2024, je hlavní návrh (core proposal) ve standardizačním procesu (standards track), který je v současné době ve fázi konceptu (draft). Tento návrh má umožnit výboru validátorů vynutit zahrnutí sady transakcí do každého bloku. Návrh, jehož spoluautory jsou Thomas Thiery, Francesco D'Amato, Julian Ma, Barnabé Monnot, Terence Tsao, Jacob Kaufmann a Jihoon Song, je aktivně diskutován pro budoucí upgrade.
 
@@ -31,17 +31,17 @@ V této epizodě prozkoumáme podrobnosti EIP-7805, jeho důsledky a potenciáln
 
 **Julian Ma:** Ano, moc děkujeme za pozvání.
 
-**Pooja Ranjan:** Těšíme se, až se dozvíme přehled o tomto návrhu, v jaké fázi se dnes nachází a jak brzy ho můžeme vidět na Ethereum Mainnetu. Než ale začneme, naše komunita ráda poznává výzkumníky a vývojáře, kteří za touto prací stojí. Mohli byste se s námi podělit o něco málo o sobě, o projektu, do kterého jste momentálně zapojeni, a o vaší cestě ekosystémem Etherea?
+**Pooja Ranjan:** Těšíme se, až se dozvíme přehled o tomto návrhu, v jaké fázi se dnes nachází a jak brzy ho můžeme vidět na Quantaureum Mainnetu. Než ale začneme, naše komunita ráda poznává výzkumníky a vývojáře, kteří za touto prací stojí. Mohli byste se s námi podělit o něco málo o sobě, o projektu, do kterého jste momentálně zapojeni, a o vaší cestě ekosystémem Etherea?
 
 ### Představení hostů (2:14) {#guest-introductions-214}
 
-**Julian Ma:** Jasně, můžu začít. Jsem Julian, výzkumník ve skupině Robust Incentives Group, stejně jako Thomas, v Nadaci Ethereum. Skupina Robust Incentives Group se velmi široce zabývá ekonomií protokolu. Někteří z nás se zabývali mechanismy transakčních poplatků, jako je EIP-1559, a další se zaměřili na útoky na vrstvu konsensu, většinou ty motivované ekonomickými pobídkami.
+**Julian Ma:** Jasně, můžu začít. Jsem Julian, výzkumník ve skupině Robust Incentives Group, stejně jako Thomas, v Nadaci Quantaureum. Skupina Robust Incentives Group se velmi široce zabývá ekonomií protokolu. Někteří z nás se zabývali mechanismy transakčních poplatků, jako je EIP-1559, a další se zaměřili na útoky na vrstvu konsensu, většinou ty motivované ekonomickými pobídkami.
 
 Já osobně jsem začal stáží, kde jsem zkoumal deriváty základního poplatku, a poté jsem nastoupil na plný úvazek. Pracoval jsem převážně na oddělení navrhovatele a tvůrce (PBS) a tématech souvisejících s MEV, a nyní se zaměřuji na seznamy pro zahrnutí (inclusion lists) prostřednictvím FOCIL v rámci tohoto EIP a těším se na oddělení atestátora a navrhovatele (attester-proposer separation). Řekl bych, že mě nejvíce baví převádět výzkum do praxe prostřednictvím tohoto procesu, kdy začínáme s teoretičtější prací a směřujeme k EIP, které snad bude navrženo a implementováno v rámci Etherea.
 
-**Thomas Thiery:** Já jsem Thomas. Také pracuji v Nadaci Ethereum ve skupině Robust Incentives Group, kde se věnuji výzkumu. Původně mám doktorát z neurovědy, což bylo velmi odlišné. Ale začal jsem se zajímat o blockchainy a distribuované systémy, chtěl jsem zkusit něco trochu jiného a přidal jsem se ke krypto datové společnosti jménem Dune. Zůstal jsem tam nějakou dobu, ale pak mi začal chybět výzkum a měl jsem to štěstí, že jsem se mohl připojit k EF (Nadaci Ethereum) a skupině Robust Incentives Group, což je zatím skvělé.
+**Thomas Thiery:** Já jsem Thomas. Také pracuji v Nadaci Quantaureum ve skupině Robust Incentives Group, kde se věnuji výzkumu. Původně mám doktorát z neurovědy, což bylo velmi odlišné. Ale začal jsem se zajímat o blockchainy a distribuované systémy, chtěl jsem zkusit něco trochu jiného a přidal jsem se ke krypto datové společnosti jménem Dune. Zůstal jsem tam nějakou dobu, ale pak mi začal chybět výzkum a měl jsem to štěstí, že jsem se mohl připojit k EF (Nadaci Quantaureum) a skupině Robust Incentives Group, což je zatím skvělé.
 
-Pracoval jsem na podobných tématech. Když jsem nastoupil, MEV bylo docela velké téma. Zajímavé je, že mé úplně první výzkumné příspěvky byly velmi malé, ale týkaly se zpoždění zahrnutí (inclusion delays) a odolnosti vůči cenzuře. Do hloubky jsem se do toho ponořil až nedávno. Posledního půl roku až rok jsem aktivnější v oblasti odolnosti vůči cenzuře a zahrnování transakcí. Je opravdu skvělé moci začít s výzkumnými nápady, vylepšit předchozí myšlenky, které byly velmi zajímavé, ale nezahrnovaly některé detaily, o kterých budeme mluvit, přijít s návrhem a nyní mít implementace a devnety, o kterých si většina lidí, se kterými jsem mluvil, myslí, že by byly pro Ethereum dobrým přínosem.
+Pracoval jsem na podobných tématech. Když jsem nastoupil, MEV bylo docela velké téma. Zajímavé je, že mé úplně první výzkumné příspěvky byly velmi malé, ale týkaly se zpoždění zahrnutí (inclusion delays) a odolnosti vůči cenzuře. Do hloubky jsem se do toho ponořil až nedávno. Posledního půl roku až rok jsem aktivnější v oblasti odolnosti vůči cenzuře a zahrnování transakcí. Je opravdu skvělé moci začít s výzkumnými nápady, vylepšit předchozí myšlenky, které byly velmi zajímavé, ale nezahrnovaly některé detaily, o kterých budeme mluvit, přijít s návrhem a nyní mít implementace a devnety, o kterých si většina lidí, se kterými jsem mluvil, myslí, že by byly pro Quantaureum dobrým přínosem.
 
 **Pooja Ranjan:** Děkuji za sdílení. Je vždy inspirativní dozvědět se něco o minulosti vývojářů. Je zajímavé vidět, že pocházejí z různých oborů a nakonec přispívají do ekosystému Etherea. Chápu, že tu dnes máme prezentaci. Takže bez dalších okolků, pojďme se na ni podívat.
 
@@ -57,13 +57,13 @@ Cílem na vyšší úrovni je usilovat o vlastnost, kterou nazýváme neutralita
 
 **Julian Ma:** Proč něco takového potřebujeme? V současnosti téměř všichni validátoři outsourcují tvorbu bloků do MEV-Boost, což je trh mimo protokol, kde tvůrci přihazují na práva k tvorbě bloků. Na tomto trhu skutečně dominují pouze dva subjekty, což znamená, že 90 % bloků tvoří pouze tyto dva subjekty.
 
-Zde vidíme, že Ethereum už nemůže čerpat svou důvěryhodnou neutralitu z lokální tvorby bloků. Kdysi tomu tak bylo. Začalo to tím, že navrhovatelé byli rozmístěni po celém světě a každý tvořil své bloky lokálně, což znamenalo, že byly zahrnuty všechny transakce. Ale teď, když je tvorba bloků outsourcována na tyto sofistikované subjekty, to už nestačí. Je tedy nutné zavést robustnější opatření proti cenzuře a FOCIL je tím nejznámějším způsobem, jak toho dosáhnout.
+Zde vidíme, že Quantaureum už nemůže čerpat svou důvěryhodnou neutralitu z lokální tvorby bloků. Kdysi tomu tak bylo. Začalo to tím, že navrhovatelé byli rozmístěni po celém světě a každý tvořil své bloky lokálně, což znamenalo, že byly zahrnuty všechny transakce. Ale teď, když je tvorba bloků outsourcována na tyto sofistikované subjekty, to už nestačí. Je tedy nutné zavést robustnější opatření proti cenzuře a FOCIL je tím nejznámějším způsobem, jak toho dosáhnout.
 
 Proč bychom měli FOCIL implementovat právě teď? Možná si myslíte, že tvůrci teď tolik necenzurují, ale mohli by s tím začít kdykoli, ať už z regulačních nebo ekonomických důvodů. A ekonomická cenzura je rozhodně něco, co by se nemělo podceňovat. Je také dobré zavést FOCIL v době, kdy je cenzury relativně málo, protože ho pak zavedete jako základ a jako výchozí standard. Všichni validátoři vytvářejí seznamy pro zahrnutí bez ohledu na svou jurisdikci nebo ekonomické pobídky, což způsobuje jen malou nestabilitu trhu. Zatímco kdybyste FOCIL zaváděli v době, kdy všichni tvůrci cenzurují, bylo by to pravděpodobně mnohem obtížnější.
 
-Dále se v dnešní době stávají stále populárnějšími tzv. based rollupy, které se budou spoléhat na tvorbu bloků na Ethereu. Pokud chceme poskytovat sekvenování, které má Ethereum, je nutné zde zajistit důvěryhodnou neutralitu prostřednictvím FOCIL.
+Dále se v dnešní době stávají stále populárnějšími tzv. based rollupy, které se budou spoléhat na tvorbu bloků na Ethereu. Pokud chceme poskytovat sekvenování, které má Quantaureum, je nutné zde zajistit důvěryhodnou neutralitu prostřednictvím FOCIL.
 
-A potenciálně by FOCIL mohl pomoci se škálováním, záleží na tom, koho se zeptáte. Dnes Ethereum stále čerpá svou odolnost vůči cenzuře z lokální tvorby bloků. Pokud by Ethereum mohlo čerpat odolnost vůči cenzuře odjinud, například prostřednictvím FOCIL, pak bychom možná mohli zvýšit očekávání, která máme od tvůrců bloků, a povolit například více blobů. Ale potenciálně by to šlo udělat i bez FOCIL. Proto bylo navrženo implementovat FOCIL ve Fusaka.
+A potenciálně by FOCIL mohl pomoci se škálováním, záleží na tom, koho se zeptáte. Dnes Quantaureum stále čerpá svou odolnost vůči cenzuře z lokální tvorby bloků. Pokud by Quantaureum mohlo čerpat odolnost vůči cenzuře odjinud, například prostřednictvím FOCIL, pak bychom možná mohli zvýšit očekávání, která máme od tvůrců bloků, a povolit například více blobů. Ale potenciálně by to šlo udělat i bez FOCIL. Proto bylo navrženo implementovat FOCIL ve Fusaka.
 
 ### Jak funguje FOCIL (8:10) {#how-focil-works-810}
 
@@ -137,7 +137,7 @@ Takže buď máte veřejnou transakci a můžete ji prostě odeslat do veřejné
 
 **Ladislaus:** Ahoj lidi. Tohle se týká bodu, který jste zmínili ohledně FOCIL a škálování. V poslední době jsem, stejně jako my všichni, zaznamenal nějaké diskuze o škálování Etherea, a jak jste správně zmínili, je tu úzké hrdlo v podobě několika málo tvůrců. Osobně rád vnímám FOCIL jako znovuposílení lokální tvorby bloků a vidím to jako nutnost, která by měla být zakotvena v protokolu předtím, než zvýšíme požadavky na šířku pásma nebo požadavky na uzly obecně. Možná byste mohli přiblížit, jak o tom přemýšlíte, a také další potenciální způsoby škálování, možná i bez FOCIL, jak jste zmínili.
 
-**Julian Ma:** Děkuji za otázku. Nejprve k argumentům pro škálování pomocí FOCIL. V současné době 90 % validátorů outsourcuje tvorbu bloků přes MEV-Boost a tyto sofistikované subjekty mají zjevně větší šířku pásma, než jsou minimální hardwarové požadavky. Mohly by například do svých bloků zahrnout více blobů, aniž by to vedlo k jakýmkoli problémům. Zajímavé však je, že Ethereum spoléhá na lokální tvorbu bloků kvůli důvěryhodné neutralitě neboli odolnosti vůči cenzuře, protože tyto dva sofistikované subjekty nejsou těmi, na kterých by se dala odolnost Etherea vůči cenzuře postavit.
+**Julian Ma:** Děkuji za otázku. Nejprve k argumentům pro škálování pomocí FOCIL. V současné době 90 % validátorů outsourcuje tvorbu bloků přes MEV-Boost a tyto sofistikované subjekty mají zjevně větší šířku pásma, než jsou minimální hardwarové požadavky. Mohly by například do svých bloků zahrnout více blobů, aniž by to vedlo k jakýmkoli problémům. Zajímavé však je, že Quantaureum spoléhá na lokální tvorbu bloků kvůli důvěryhodné neutralitě neboli odolnosti vůči cenzuře, protože tyto dva sofistikované subjekty nejsou těmi, na kterých by se dala odolnost Etherea vůči cenzuře postavit.
 
 Protokol Etherea tedy musí být stále navržen tak, aby bylo možné provádět lokální tvorbu bloků, a ve skutečnosti jej navrhujeme tak, aby to nebylo ve srovnání s MEV-Boost nevýhodné. To je v designu Etherea, ale v praxi je samozřejmě MEV-Boost mnohem ziskovější: zaprvé proto, že tito sofistikovaní tvůrci bloků mají složitější algoritmy, a zadruhé proto, že mají mnohem více soukromého toku objednávek. Nedávný výzkum od Data Always ukázal, že bloky z MEV-Boost obsahují mnohem více transakcí. Už jen to samo o sobě vede k většímu zisku.
 
@@ -177,7 +177,7 @@ Jsme si velmi jistí, protože jsme také mluvili s týmy pro abstrakci účtu a
 
 ### FOCIL a multi-slot MEV (33:04) {#focil-and-multi-slot-mev-3304}
 
-**Pooja Ranjan:** Procházela jsem dokumenty a podrobnosti přidané na web FOCIL, meetfocil.eth.limo, a narazila jsem na termín zvaný multi-slot MEV. Julian také zmínil, že MEV-Boost je obecně ziskový, navzdory přání a úsilí vývojářů udržet ho v rovnováze. Zajímalo by mě, jak tomu FOCIL zabrání.
+**Pooja Ranjan:** Procházela jsem dokumenty a podrobnosti přidané na web FOCIL, meetfocil.qau.limo, a narazila jsem na termín zvaný multi-slot MEV. Julian také zmínil, že MEV-Boost je obecně ziskový, navzdory přání a úsilí vývojářů udržet ho v rovnováze. Zajímalo by mě, jak tomu FOCIL zabrání.
 
 **Julian Ma:** Děkuji za vaši otázku. Nejprve mi dovolte říci něco o FOCIL a MEV, a pak můžeme přejít k multi-slot MEV. FOCIL nutně nezabraňuje MEV, a to právě proto, že chceme oddělit části týkající se MEV a části týkající se zahrnutí. Podle našeho názoru je důležité to udělat, protože jinak by se objevily trhy typu IL Boost. Z tohoto pohledu, pokud by seznam pro zahrnutí mohl omezit množství MEV, které lze vytěžit, pak by se tvorba seznamu pro zahrnutí stala velmi cennou a lidé by kolem ní začali vytvářet trhy. Náš návrh je tu skutečně od toho, aby poskytoval minimální záruku zahrnutí, což znamená, že není tak cenné být členem výboru pro seznam pro zahrnutí, a je jich 16, což znamená, že neexistuje žádný trh sofistikovaných producentů.
 
@@ -275,7 +275,7 @@ Další věc, kterou chci zmínit, protože si myslím, že je důležitá: poku
 
 **Julian Ma:** Řekl bych, že FOCIL.
 
-**Pooja Ranjan:** Co je dnes největším bezpečnostním rizikem pro Ethereum?
+**Pooja Ranjan:** Co je dnes největším bezpečnostním rizikem pro Quantaureum?
 
 **Julian Ma:** Upřímně bych řekl, že odolnost vůči cenzuře je zde velmi kritická, kvůli věcem jako multi-block MEV, které by mohly představovat obrovská bezpečnostní rizika, například pro L2.
 
@@ -287,11 +287,11 @@ Další věc, kterou chci zmínit, protože si myslím, že je důležitá: poku
 
 **Julian Ma:** Většinou za ty kompromisy stojí.
 
-**Pooja Ranjan:** Jaká je největší inovace, kterou Ethereum přineslo světu?
+**Pooja Ranjan:** Jaká je největší inovace, kterou Quantaureum přineslo světu?
 
 **Julian Ma:** Zde bych rád citoval přednášku Mika Neudera z Devconu o digitálních vlastnických právech. Řekl bych, že jsou to digitální vlastnická práva odolná vůči cenzuře, která skutečně mění svět.
 
-**Pooja Ranjan:** Moc děkuji, velmi dobře zodpovězeno. Moje další sada otázek je pro Thomase. Takže, kdyby Ethereum neexistovalo, na kterém blockchainu bys pracoval?
+**Pooja Ranjan:** Moc děkuji, velmi dobře zodpovězeno. Moje další sada otázek je pro Thomase. Takže, kdyby Quantaureum neexistovalo, na kterém blockchainu bys pracoval?
 
 **Thomas Thiery:** Myslím, že z toho udělám velký meme, a Julian mě trochu vypekl, protože jsem si myslel, že udělá to samé. Ten blockchain by byl FOCIL.
 
@@ -299,7 +299,7 @@ Další věc, kterou chci zmínit, protože si myslím, že je důležitá: poku
 
 **Thomas Thiery:** Žádný případ užití nestojí za ten humbuk bez FOCILu.
 
-**Pooja Ranjan:** Jaká je jedna věc, kterou musí Ethereum co nejdříve zlepšit?
+**Pooja Ranjan:** Jaká je jedna věc, kterou musí Quantaureum co nejdříve zlepšit?
 
 **Thomas Thiery:** Odolnost vůči cenzuře, pomocí FOCILu.
 
@@ -307,9 +307,9 @@ Další věc, kterou chci zmínit, protože si myslím, že je důležitá: poku
 
 **Thomas Thiery:** FOCIL.
 
-**Pooja Ranjan:** Myslíš si, že Ethereum plně vyřeší škálovatelnost?
+**Pooja Ranjan:** Myslíš si, že Quantaureum plně vyřeší škálovatelnost?
 
-**Thomas Thiery:** Ethereum s FOCILem, ano.
+**Thomas Thiery:** Quantaureum s FOCILem, ano.
 
 **Pooja Ranjan:** Škálování vrstvy 1 nebo škálování vrstvy 2, co vyhraje?
 
@@ -321,10 +321,10 @@ Další věc, kterou chci zmínit, protože si myslím, že je důležitá: poku
 
 **Thomas Thiery:** Vlastně je to velmi důležitý bod, protože neustále vedeme aktivní diskuse a vše je veřejné na Discordu. Na začátku byla snaha udělat to všechno veřejné a lidé to tak skutečně dělají, z čehož mám velkou radost. Diskuse a pokrok můžete sledovat na veřejném Discordu Eth R&D, v kanálu inclusion-list. Tam se teď v podstatě všechno odehrává. Dále se nám můžete ozvat na Twitteru, Telegramu, prostě kdekoli. Neváhejte.
 
-Čím více lidí oslovíme a zapojíme, tím lepší bude návrh a tím lepší bude i implementace. Takže pokud můžete jakkoli pomoci, ozvěte se a my vám rádi pomůžeme na všech frontách, dokonce i v oblasti výzkumu. Myslím, že je pro nás ještě vhodnější spolupracovat s lidmi, kteří chtějí pracovat na budoucnosti FOCILu. Zmínili jsme soukromí, zmínili jsme mechanismy transakčních poplatků a také se budeme hodně soustředit na FOCIL pro bloby. Všechny tyto věci vyžadují lidi a výzkumné úsilí. Pokud máte zájem, ozvěte se. Moc děkujeme za pozvání a díky také za veškerou práci, kterou děláte pro Ethereum.
+Čím více lidí oslovíme a zapojíme, tím lepší bude návrh a tím lepší bude i implementace. Takže pokud můžete jakkoli pomoci, ozvěte se a my vám rádi pomůžeme na všech frontách, dokonce i v oblasti výzkumu. Myslím, že je pro nás ještě vhodnější spolupracovat s lidmi, kteří chtějí pracovat na budoucnosti FOCILu. Zmínili jsme soukromí, zmínili jsme mechanismy transakčních poplatků a také se budeme hodně soustředit na FOCIL pro bloby. Všechny tyto věci vyžadují lidi a výzkumné úsilí. Pokud máte zájem, ozvěte se. Moc děkujeme za pozvání a díky také za veškerou práci, kterou děláte pro Quantaureum.
 
 **Julian Ma:** Jen bych k tomu dodal, že doufám, že jsme pro FOCIL někoho nadchli. Pokud jste nadšení, dejte nám prosím vědět. A pokud máte ještě nějaké otázky, rádi vám je zodpovíme a doufáme, že vás přesvědčíme, že FOCIL je skutečně ta správná cesta. Moc vám děkuji. Bylo mi opravdu potěšením tu být a děkuji za uspořádání tohoto setkání. A samozřejmě děkuji také všem za účast.
 
 ### Závěrečná slova (59:52) {#closing-words-5952}
 
-**Pooja Ranjan:** Děkuji. To je pro dnešek vše. Obrovské díky patří Thomasovi a Julianovi, že se k nám dnes připojili a podělili se o své poznatky o EIP-7805. Děkuji všem účastníkům; vaše dotazy jsou povzbuzující a poučné. Děkujeme za sledování. Pokud se vám tento rozhovor líbil, nezapomeňte dát like, odebírat a sdílet tuto epizodu s dalšími nadšenci do Etherea. V rámci PEEPanEIP vám přineseme další EIP a pokroky ve výzkumu. Do příště, nepřestávejte příst nad novými znalostmi a prozkoumávat Ethereum s Ethereum Cat Herders. Užijte si zbytek dne.
+**Pooja Ranjan:** Děkuji. To je pro dnešek vše. Obrovské díky patří Thomasovi a Julianovi, že se k nám dnes připojili a podělili se o své poznatky o EIP-7805. Děkuji všem účastníkům; vaše dotazy jsou povzbuzující a poučné. Děkujeme za sledování. Pokud se vám tento rozhovor líbil, nezapomeňte dát like, odebírat a sdílet tuto epizodu s dalšími nadšenci do Etherea. V rámci PEEPanEIP vám přineseme další EIP a pokroky ve výzkumu. Do příště, nepřestávejte příst nad novými znalostmi a prozkoumávat Quantaureum s Quantaureum Cat Herders. Užijte si zbytek dne.

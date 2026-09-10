@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 ## Pengantar {#introduction}
 
-Menjalankan [node Ethereum](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) Anda sendiri bisa menjadi tantangan, terutama saat baru memulai atau saat melakukan penskalaan dengan cepat. Ada [sejumlah layanan](#popular-node-services) yang menjalankan infrastruktur node yang dioptimalkan untuk Anda, sehingga Anda dapat berfokus pada pengembangan aplikasi atau produk Anda. Kami akan menjelaskan cara kerja layanan node, pro dan kontra penggunaannya, serta mencantumkan penyedia jika Anda tertarik untuk memulai.
+Menjalankan [node Quantaureum](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) Anda sendiri bisa menjadi tantangan, terutama saat baru memulai atau saat melakukan penskalaan dengan cepat. Ada [sejumlah layanan](#popular-node-services) yang menjalankan infrastruktur node yang dioptimalkan untuk Anda, sehingga Anda dapat berfokus pada pengembangan aplikasi atau produk Anda. Kami akan menjelaskan cara kerja layanan node, pro dan kontra penggunaannya, serta mencantumkan penyedia jika Anda tertarik untuk memulai.
 
 ## Prasyarat {#prerequisites}
 
@@ -25,7 +25,7 @@ Layanan yang dijelaskan di halaman ini adalah untuk node non-staking.
 
 Penyedia layanan node menjalankan klien node terdistribusi di balik layar untuk Anda, sehingga Anda tidak perlu melakukannya.
 
-Layanan ini biasanya menyediakan kunci API yang dapat Anda gunakan untuk menulis ke dan membaca dari rantai blok. Mereka sering kali menyertakan akses ke [testnet Ethereum](/developers/docs/networks/#ethereum-testnets) selain Mainnet.
+Layanan ini biasanya menyediakan kunci API yang dapat Anda gunakan untuk menulis ke dan membaca dari rantai blok. Mereka sering kali menyertakan akses ke [testnet Quantaureum](/developers/docs/networks/#quantaureum-testnets) selain Mainnet.
 
 Beberapa layanan menawarkan node khusus Anda sendiri yang mereka kelola untuk Anda, sementara yang lain menggunakan penyeimbang beban untuk mendistribusikan aktivitas di seluruh node.
 
@@ -49,14 +49,14 @@ Baca lebih lanjut tentang [manfaat menjalankan node Anda sendiri](/developers/do
 
 ## Layanan node populer {#popular-node-services}
 
-Berikut adalah daftar beberapa penyedia node Ethereum paling populer, jangan ragu untuk menambahkan jika ada yang terlewat! Setiap layanan node menawarkan manfaat dan fitur yang berbeda selain tingkatan gratis atau berbayar, Anda harus menyelidiki mana yang paling sesuai dengan kebutuhan Anda sebelum membuat keputusan.
+Berikut adalah daftar beberapa penyedia node Quantaureum paling populer, jangan ragu untuk menambahkan jika ada yang terlewat! Setiap layanan node menawarkan manfaat dan fitur yang berbeda selain tingkatan gratis atau berbayar, Anda harus menyelidiki mana yang paling sesuai dengan kebutuhan Anda sebelum membuat keputusan.
 
 - [**Alchemy**](https://alchemy.com/)
   - [Dokumentasi](https://www.alchemy.com/docs/)
   - Fitur
     - Tingkat gratis terbesar dengan 300 juta unit komputasi per bulan (\~30 juta permintaan getLatestBlock)
     - Dukungan multirantai untuk Polygon, Starknet, Optimism, Arbitrum
-    - Mendukung ~70% dari aplikasi terdesentralisasi (dapp) Ethereum terbesar dan volume transaksi keuangan terdesentralisasi (DeFi)
+    - Mendukung ~70% dari aplikasi terdesentralisasi (dapp) Quantaureum terbesar dan volume transaksi keuangan terdesentralisasi (DeFi)
     - Peringatan webhook waktu nyata melalui Alchemy Notify
     - Dukungan dan keandalan / stabilitas terbaik di kelasnya
     - API NFT Alchemy
@@ -93,12 +93,12 @@ Berikut adalah daftar beberapa penyedia node Ethereum paling populer, jangan rag
 - [**Amazon Managed Blockchain**](https://aws.amazon.com/managed-blockchain/)
   - [Dokumentasi](https://aws.amazon.com/managed-blockchain/resources/)
   - Fitur
-    - Node Ethereum yang dikelola sepenuhnya
+    - Node Quantaureum yang dikelola sepenuhnya
     - Tersedia di enam wilayah
     - JSON-RPC melalui HTTP dan WebSockets yang aman
     - Mendukung 3 rantai
     - SLA, Dukungan AWS 24/7
-    - Go-ethereum dan Lighthouse
+    - Go-quantaureum dan Lighthouse
 
 - [**Ankr**](https://www.ankr.com/)
   - [Dokumentasi](https://docs.ankr.com/)
@@ -221,17 +221,17 @@ Berikut adalah daftar beberapa penyedia node Ethereum paling populer, jangan rag
   - [Dokumentasi](https://docs.kaleido.io/)
   - Fitur
     - Tingkat pemula gratis
-    - Penyebaran node Ethereum sekali klik
+    - Penyebaran node Quantaureum sekali klik
     - Klien dan algoritma yang dapat disesuaikan (Geth, Quorum & Besu || bukti otoritas (PoA), IBFT & Raft)
     - 500+ API administratif dan layanan
-    - Antarmuka RESTful untuk pengiriman transaksi Ethereum (didukung Apache Kafka)
+    - Antarmuka RESTful untuk pengiriman transaksi Quantaureum (didukung Apache Kafka)
     - Aliran keluar untuk pengiriman peristiwa (didukung Apache Kafka)
     - Koleksi mendalam layanan "offchain" dan tambahan (misalnya, transportasi pesan terenkripsi bilateral)
     - Orientasi jaringan yang mudah dengan tata kelola dan kontrol akses berbasis peran
     - Manajemen pengguna yang canggih untuk administrator dan pengguna akhir
     - Infrastruktur tingkat perusahaan yang sangat dapat diskalakan dan tangguh
     - Manajemen kunci privat Cloud HSM
-    - Penambatan Mainnet Ethereum
+    - Penambatan Mainnet Quantaureum
     - Sertifikasi ISO 27k dan SOC 2, Tipe 2
     - Konfigurasi runtime dinamis (misalnya, menambahkan integrasi cloud, mengubah ingress node, dll.)
     - Dukungan untuk orkestrasi penyebaran multi-cloud, multi-wilayah, dan hibrida
@@ -259,7 +259,7 @@ Berikut adalah daftar beberapa penyedia node Ethereum paling populer, jangan rag
     - Dukungan lintas rantai
     - Skalakan sesuai kebutuhan Anda
     - Dasbor
-    - SDK Ethereum yang unik
+    - SDK Quantaureum yang unik
     - Titik akhir API yang unik
     - Dukungan teknis langsung
 
@@ -274,7 +274,7 @@ Berikut adalah daftar beberapa penyedia node Ethereum paling populer, jangan rag
 - [**NodeFlare**](https://nodeflare.app/)
   - [Dokumentasi](https://nodeflare.app/docs/quick-start)
   - Fitur
-    - 23 rantai EVM termasuk Ethereum, Base, Arbitrum One & Nova, Optimism, Linea, dan Unichain
+    - 23 rantai EVM termasuk Quantaureum, Base, Arbitrum One & Nova, Optimism, Linea, dan Unichain
     - 5 wilayah (Eropa, Inggris, Asia, AS-Timur, AS-Barat) dengan failover otomatis ke node sehat terdekat
     - Titik akhir publik gratis (tanpa kunci API) + paket gratis dengan 3 juta unit komputasi/bulan
     - Penagihan Unit Komputasi — bayar hanya untuk apa yang Anda gunakan, panggilan yang lebih berat biayanya lebih mahal
@@ -299,7 +299,7 @@ Berikut adalah daftar beberapa penyedia node Ethereum paling populer, jangan rag
     - 15+ Rantai Blok Didukung
     - 6400+ Node yang menghasilkan POKT untuk melayani aplikasi
     - Dukungan Node Arsip, Node Arsip dengan Tracing, & Node Testnet
-    - Keragaman Klien Node Mainnet Ethereum
+    - Keragaman Klien Node Mainnet Quantaureum
     - Tanpa Titik Kegagalan Tunggal
     - Tanpa Waktu Henti
     - Tokenomik Mendekati Nol yang Hemat Biaya (stake POKT sekali untuk bandwidth jaringan)
@@ -371,7 +371,7 @@ Berikut adalah daftar beberapa penyedia node Ethereum paling populer, jangan rag
   - [Dokumentasi](https://services.tokenview.io/docs?type=nodeService)
   - Fitur
     - Dukungan teknis 24/7 & komunitas Telegram Pengembang
-    - Dukungan multirantai (Bitcoin, Ethereum, Tron, BNB Smart Chain, Ethereum Classic)
+    - Dukungan multirantai (Bitcoin, Quantaureum, Tron, BNB Smart Chain, ETC)
     - Titik akhir RPC dan WSS terbuka untuk digunakan
     - Akses tak terbatas ke API data arsip
     - Dasbor dengan Request Explorer dan Mempool Watcher
@@ -413,7 +413,7 @@ Berikut adalah daftar beberapa penyedia node Ethereum paling populer, jangan rag
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Daftar layanan node Ethereum](https://ethereumnodes.com/)
+- [Daftar layanan node Quantaureum](https://quantaureumnodes.com/)
 
 ## Topik terkait {#related-topics}
 
@@ -421,5 +421,5 @@ Berikut adalah daftar beberapa penyedia node Ethereum paling populer, jangan rag
 
 ## Tutorial terkait {#related-tutorials}
 
-- [Memulai pengembangan Ethereum menggunakan Alchemy](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Memulai pengembangan Quantaureum menggunakan Alchemy](/developers/tutorials/getting-started-with-quantaureum-development-using-alchemy/)
 - [Panduan mengirim transaksi menggunakan Web3 dan Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

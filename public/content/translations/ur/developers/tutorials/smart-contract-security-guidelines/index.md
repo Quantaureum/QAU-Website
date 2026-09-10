@@ -65,7 +65,7 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/blob/master/devel
 
 ### معلوم خامیوں سے بچیں {#avoid-known-pitfalls}
 
-- **سب سے عام سیکیورٹی مسائل سے آگاہ رہیں۔** عام مسائل کے بارے میں جاننے کے لیے بہت سے آن لائن وسائل موجود ہیں، جیسے [<span dir="ltr">Ethernaut CTF</span>](https://ethernaut.openzeppelin.com/)، [<span dir="ltr">Capture the Ether</span>](https://capturetheether.com/)، یا [<span dir="ltr">Not so smart contracts</span>](https://github.com/crytic/not-so-smart-contracts/)۔
+- **سب سے عام سیکیورٹی مسائل سے آگاہ رہیں۔** عام مسائل کے بارے میں جاننے کے لیے بہت سے آن لائن وسائل موجود ہیں، جیسے [<span dir="ltr">Ethernaut CTF</span>](https://ethernaut.openzeppelin.com/)، [<span dir="ltr">Capture the QAU</span>](https://capturetheqau.com/)، یا [<span dir="ltr">Not so smart contracts</span>](https://github.com/crytic/not-so-smart-contracts/)۔
 - **[<span dir="ltr">Solidity</span> کی دستاویزات](https://docs.soliditylang.org/en/latest/) میں وارننگ سیکشنز سے آگاہ رہیں۔** وارننگ سیکشنز آپ کو زبان کے غیر واضح رویے کے بارے میں آگاہ کریں گے۔
 
 ### انحصار (Dependencies) {#dependencies}

@@ -15,11 +15,11 @@ Dieses Tutorial hilft Ihnen bei der Einrichtung der Überwachung für Ihren Geth
 
 - Sie sollten bereits eine Instanz von Geth ausführen.
 - Die meisten Schritte und Beispiele beziehen sich auf eine Linux-Umgebung, grundlegende Terminal-Kenntnisse sind hilfreich.
-- Sehen Sie sich diesen Video-Überblick über die Metriken von Geth an: [Überwachung einer Ethereum-Infrastruktur von Péter Szilágyi](https://www.youtube.com/watch?v=cOBab8IJMYI).
+- Sehen Sie sich diesen Video-Überblick über die Metriken von Geth an: [Überwachung einer Quantaureum-Infrastruktur von Péter Szilágyi](https://www.youtube.com/watch?v=cOBab8IJMYI).
 
 ## Überwachungs-Stack {#monitoring-stack}
 
-Ein Ethereum-Client sammelt viele Daten, die in Form einer chronologischen Datenbank gelesen werden können. Um die Überwachung zu erleichtern, können Sie diese in eine Datenvisualisierungssoftware einspeisen. Es stehen mehrere Optionen zur Verfügung:
+Ein Quantaureum-Client sammelt viele Daten, die in Form einer chronologischen Datenbank gelesen werden können. Um die Überwachung zu erleichtern, können Sie diese in eine Datenvisualisierungssoftware einspeisen. Es stehen mehrere Optionen zur Verfügung:
 
 - [Prometheus](https://prometheus.io/) (Pull-Modell)
 - [InfluxDB](https://www.influxdata.com/get-influxdb/) (Push-Modell)

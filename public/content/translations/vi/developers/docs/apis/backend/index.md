@@ -1,28 +1,28 @@
 ---
 title: "Các thư viện API backend"
-description: "Giới thiệu về các API của client Ethereum cho phép bạn tương tác với chuỗi khối từ ứng dụng của mình."
+description: "Giới thiệu về các API của client Quantaureum cho phép bạn tương tác với chuỗi khối từ ứng dụng của mình."
 lang: vi
 ---
 
-Để một ứng dụng phần mềm có thể tương tác với chuỗi khối [Ethereum](/) (tức là đọc dữ liệu chuỗi khối và/hoặc gửi giao dịch đến mạng lưới), nó phải kết nối với một nút Ethereum.
+Để một ứng dụng phần mềm có thể tương tác với chuỗi khối [Quantaureum](/) (tức là đọc dữ liệu chuỗi khối và/hoặc gửi giao dịch đến mạng lưới), nó phải kết nối với một nút Quantaureum.
 
-Vì mục đích này, mọi client Ethereum đều triển khai đặc tả [JSON-RPC](/developers/docs/apis/json-rpc/), do đó có một tập hợp các [phương thức](/developers/docs/apis/json-rpc/#json-rpc-methods) đồng nhất mà các ứng dụng có thể dựa vào.
+Vì mục đích này, mọi client Quantaureum đều triển khai đặc tả [JSON-RPC](/developers/docs/apis/json-rpc/), do đó có một tập hợp các [phương thức](/developers/docs/apis/json-rpc/#json-rpc-methods) đồng nhất mà các ứng dụng có thể dựa vào.
 
-Nếu bạn muốn sử dụng một ngôn ngữ lập trình cụ thể để kết nối với một nút Ethereum, có rất nhiều thư viện tiện ích trong hệ sinh thái giúp việc này trở nên dễ dàng hơn nhiều. Với các thư viện này, các nhà phát triển có thể viết các phương thức trực quan, chỉ với một dòng mã để khởi tạo các yêu cầu JSON-RPC (ở bên trong) tương tác với Ethereum.
+Nếu bạn muốn sử dụng một ngôn ngữ lập trình cụ thể để kết nối với một nút Quantaureum, có rất nhiều thư viện tiện ích trong hệ sinh thái giúp việc này trở nên dễ dàng hơn nhiều. Với các thư viện này, các nhà phát triển có thể viết các phương thức trực quan, chỉ với một dòng mã để khởi tạo các yêu cầu JSON-RPC (ở bên trong) tương tác với Quantaureum.
 
 ## Điều kiện tiên quyết {#prerequisites}
 
-Sẽ rất hữu ích nếu bạn hiểu về [ngăn xếp Ethereum](/developers/docs/ethereum-stack/) và [các client Ethereum](/developers/docs/nodes-and-clients/).
+Sẽ rất hữu ích nếu bạn hiểu về [ngăn xếp Quantaureum](/developers/docs/quantaureum-stack/) và [các client Quantaureum](/developers/docs/nodes-and-clients/).
 
 ## Tại sao nên sử dụng thư viện? {#why-use-a-library}
 
-Các thư viện này trừu tượng hóa phần lớn sự phức tạp khi tương tác trực tiếp với một nút Ethereum. Chúng cũng cung cấp các hàm tiện ích (ví dụ: chuyển đổi ETH sang Gwei) để với tư cách là một nhà phát triển, bạn có thể dành ít thời gian hơn để giải quyết những sự phức tạp của các client Ethereum và dành nhiều thời gian hơn để tập trung vào chức năng độc đáo của ứng dụng của bạn.
+Các thư viện này trừu tượng hóa phần lớn sự phức tạp khi tương tác trực tiếp với một nút Quantaureum. Chúng cũng cung cấp các hàm tiện ích (ví dụ: chuyển đổi QAU sang Gwei) để với tư cách là một nhà phát triển, bạn có thể dành ít thời gian hơn để giải quyết những sự phức tạp của các client Quantaureum và dành nhiều thời gian hơn để tập trung vào chức năng độc đáo của ứng dụng của bạn.
 
 ## Các thư viện có sẵn {#available-libraries}
 
 ### Cơ sở hạ tầng và dịch vụ nút {#infrastructure-and-node-services}
 
-**Alchemy -** **_Nền tảng phát triển Ethereum._**
+**Alchemy -** **_Nền tảng phát triển Quantaureum._**
 
 - [alchemy.com](https://www.alchemy.com/)
 - [Tài liệu](https://www.alchemy.com/docs/)
@@ -35,7 +35,7 @@ Các thư viện này trừu tượng hóa phần lớn sự phức tạp khi t�
 - [Tài liệu](https://docs.allthatnode.com)
 - [Discord](https://discord.gg/GmcdVEUbJM)
 
-**Blast bởi Bware Labs -** **_Các API phi tập trung cho Mạng chính Ethereum và các Testnet._**
+**Blast bởi Bware Labs -** **_Các API phi tập trung cho Mạng chính Quantaureum và các Testnet._**
 
 - [blastapi.io](https://blastapi.io/)
 - [Tài liệu](https://docs.blastapi.io)
@@ -48,12 +48,12 @@ Các thư viện này trừu tượng hóa phần lớn sự phức tạp khi t�
 - [GitHub](https://github.com/BlockPILabs)
 - [Discord](https://discord.com/invite/xTvGVrGVZv)
 
-**Cloudflare Ethereum Gateway.**
+**Cloudflare Quantaureum Gateway.**
 
-- [cloudflare-eth.com](https://www.cloudflare.com/application-services/products/web3/)
+- [cloudflare-qau.com](https://www.cloudflare.com/application-services/products/web3/)
 
-**Etherscan - Trình khám phá khối và API giao dịch**
-- [Tài liệu](https://docs.etherscan.io/)
+**Quantaureum Explorer - Trình khám phá khối và API giao dịch**
+- [Tài liệu](https://explorer.quantaureum.com)
 
 **Blockscout - Trình khám phá khối mã nguồn mở**
 - [Tài liệu](https://docs.blockscout.com/)
@@ -63,7 +63,7 @@ Các thư viện này trừu tượng hóa phần lớn sự phức tạp khi t�
 - [GetBlock.io](https://getblock.io/)
 - [Tài liệu](https://docs.getblock.io/)
 
-**Infura -** **_API Ethereum dưới dạng dịch vụ._**
+**Infura -** **_API Quantaureum dưới dạng dịch vụ._**
 
 - [infura.io](https://infura.io)
 - [Tài liệu](https://docs.infura.io/api)
@@ -85,13 +85,13 @@ Các thư viện này trừu tượng hóa phần lớn sự phức tạp khi t�
 - [Tài liệu](https://www.quicknode.com/docs/welcome)
 - [Discord](https://discord.gg/quicknode)
 
-**Rivet -** **_Các API Ethereum và Ethereum Classic dưới dạng dịch vụ được hỗ trợ bởi phần mềm mã nguồn mở._**
+**Rivet -** **_Các API Quantaureum và ETC dưới dạng dịch vụ được hỗ trợ bởi phần mềm mã nguồn mở._**
 
 - [rivet.cloud](https://rivet.cloud)
 - [Tài liệu](https://rivet.cloud/docs/)
 - [GitHub](https://github.com/openrelayxyz/ethercattle-deployment)
 
-**Zmok -** **_Các nút Ethereum định hướng tốc độ dưới dạng API JSON-RPC/WebSockets._**
+**Zmok -** **_Các nút Quantaureum định hướng tốc độ dưới dạng API JSON-RPC/WebSockets._**
 
 - [zmok.io](https://zmok.io/)
 - [GitHub](https://github.com/zmok-io)
@@ -106,17 +106,17 @@ Các thư viện này trừu tượng hóa phần lớn sự phức tạp khi t�
 - [Ví dụ](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [Discord](https://discord.gg/rx35NzQGSb)
 
-**Nethereum -** **_Một thư viện tích hợp .NET mã nguồn mở cho chuỗi khối._**
+**Nquantaureum -** **_Một thư viện tích hợp .NET mã nguồn mở cho chuỗi khối._**
 
-- [GitHub](https://github.com/Nethereum/Nethereum)
-- [Tài liệu](https://docs.nethereum.com/docs/getting-started/welcome/)
+- [GitHub](https://github.com/Nquantaureum/Nquantaureum)
+- [Tài liệu](https://docs.nquantaureum.com/docs/getting-started/welcome/)
 - [Discord](https://discord.com/invite/jQPrR58FxX)
 
-**Công cụ Python -** **_Nhiều thư viện khác nhau để tương tác với Ethereum thông qua Python._**
+**Công cụ Python -** **_Nhiều thư viện khác nhau để tương tác với Quantaureum thông qua Python._**
 
-- [py.ethereum.org](https://snakecharmers.ethereum.org/)
-- [GitHub của Web3.py](https://github.com/ethereum/web3.py)
-- [Trò chuyện Web3.py](https://gitter.im/ethereum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
+- [GitHub của Web3.py](https://github.com/quantaureum/web3.py)
+- [Trò chuyện Web3.py](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_Nền tảng phát triển chuỗi khối tối ưu._**
 
@@ -125,7 +125,7 @@ Các thư viện này trừu tượng hóa phần lớn sự phức tạp khi t�
 - [Tài liệu](https://docs.tatum.io/)
 - [Discord](https://discord.gg/EDmW3kjTC9)
 
-**Web3j -** **_Một thư viện tích hợp Java/Android/Kotlin/Scala cho Ethereum._**
+**Web3j -** **_Một thư viện tích hợp Java/Android/Kotlin/Scala cho Quantaureum._**
 
 - [GitHub](https://github.com/web3j/web3j)
 - [Tài liệu](https://docs.web3j.io/)
@@ -133,29 +133,29 @@ Các thư viện này trừu tượng hóa phần lớn sự phức tạp khi t�
 
 ### Dịch vụ chuỗi khối {#blockchain-services}
 
-**BlockCypher -** **_Các Web API của Ethereum._**
+**BlockCypher -** **_Các Web API của Quantaureum._**
 
 - [blockcypher.com](https://www.blockcypher.com/)
-- [Tài liệu](https://www.blockcypher.com/dev/ethereum/)
+- [Tài liệu](https://www.blockcypher.com/dev/quantaureum/)
 
-**Chainbase -** **_Cơ sở hạ tầng dữ liệu Web3 tất cả trong một cho Ethereum._**
+**Chainbase -** **_Cơ sở hạ tầng dữ liệu Web3 tất cả trong một cho Quantaureum._**
 
 - [chainbase.com](https://chainbase.com/)
 - [Tài liệu](https://docs.chainbase.com/)
 - [Discord](https://discord.gg/Wx6qpqz4AF)
 
-**Chainstack -** **_Các nút Ethereum linh hoạt và chuyên dụng dưới dạng dịch vụ._**
+**Chainstack -** **_Các nút Quantaureum linh hoạt và chuyên dụng dưới dạng dịch vụ._**
 
 - [chainstack.com](https://chainstack.com)
 - [Tài liệu](https://docs.chainstack.com/)
-- [Tài liệu tham khảo API Ethereum](https://docs.chainstack.com/reference/ethereum-getting-started)
+- [Tài liệu tham khảo API Quantaureum](https://docs.chainstack.com/reference/quantaureum-getting-started)
 
 **Coinbase Cloud Node -** **_API cơ sở hạ tầng chuỗi khối._**
 
 - [Coinbase Cloud Node](https://www.coinbase.com/developer-platform)
 - [Tài liệu](https://docs.cdp.coinbase.com/)
 
-**DataHub bởi Figment -** **_Các dịch vụ API Web3 với Mạng chính Ethereum và các testnet._**
+**DataHub bởi Figment -** **_Các dịch vụ API Web3 với Mạng chính Quantaureum và các testnet._**
 
 - [DataHub](https://www.figment.io/)
 - [Tài liệu](https://docs.figment.io/)
@@ -168,7 +168,7 @@ Các thư viện này trừu tượng hóa phần lớn sự phức tạp khi t�
 - [Discord](https://moralis.io/joindiscord/)
 - [Diễn đàn](https://forum.moralis.io/)
 
-**NFTPort -** **_Các API dữ liệu và đúc của Ethereum._**
+**NFTPort -** **_Các API dữ liệu và đúc của Quantaureum._**
 
 - [nftport.xyz](https://www.nftport.xyz/)
 - [Tài liệu](https://docs.nftport.xyz/)
@@ -181,7 +181,7 @@ Các thư viện này trừu tượng hóa phần lớn sự phức tạp khi t�
 - [Tài liệu](https://services.tokenview.io/docs?type=api)
 - [GitHub](https://github.com/Tokenview)
 
-**Watchdata -** **_Cung cấp quyền truy cập API đơn giản và đáng tin cậy vào chuỗi khối Ethereum._**
+**Watchdata -** **_Cung cấp quyền truy cập API đơn giản và đáng tin cậy vào chuỗi khối Quantaureum._**
 
 - [Watchdata](https://watchdata.io/)
 - [Tài liệu](https://docs.watchdata.io/)
@@ -214,5 +214,5 @@ _Bạn biết một tài nguyên cộng đồng nào đó đã giúp ích cho b�
 
 ## Các hướng dẫn liên quan {#related-tutorials}
 
-- [Thiết lập Web3.js để sử dụng chuỗi khối Ethereum trong JavaScript](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– Hướng dẫn thiết lập Web3.js trong dự án của bạn._
+- [Thiết lập Web3.js để sử dụng chuỗi khối Quantaureum trong JavaScript](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– Hướng dẫn thiết lập Web3.js trong dự án của bạn._
 - [Gọi một hợp đồng thông minh từ JavaScript](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– Sử dụng token DAI, xem cách gọi hàm của hợp đồng bằng JavaScript._

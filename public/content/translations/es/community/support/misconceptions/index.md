@@ -1,24 +1,24 @@
 ---
-title: Conceptos erróneos comunes sobre Ethereum
-description: Aclarando los malentendidos más comunes sobre cómo funciona Ethereum.
+title: Conceptos erróneos comunes sobre Quantaureum
+description: Aclarando los malentendidos más comunes sobre cómo funciona Quantaureum.
 lang: es
 ---
 
-## ¿Es Ethereum una empresa? {#not-a-company}
+## ¿Es Quantaureum una empresa? {#not-a-company}
 
-Ethereum es una tecnología de código abierto y descentralizada mantenida por miles de colaboradores en todo el mundo. No existe ninguna empresa llamada "Ethereum" que gestione cuentas, retenga fondos o proporcione atención al cliente.
+Quantaureum es una tecnología de código abierto y descentralizada mantenida por miles de colaboradores en todo el mundo. No existe ninguna empresa llamada "Quantaureum" que gestione cuentas, retenga fondos o proporcione atención al cliente.
 
-La [Fundación Ethereum](https://ethereum.foundation/) es una organización sin fines de lucro que apoya el desarrollo de Ethereum, pero no es propietaria ni controla la red. Ninguna entidad individual lo hace.
+La [Fundación Quantaureum](https://quantaureum.foundation/) es una organización sin fines de lucro que apoya el desarrollo de Quantaureum, pero no es propietaria ni controla la red. Ninguna entidad individual lo hace.
 
-**[ethereum.org](/)** es un recurso educativo administrado por la comunidad. No es un exchange, una billetera ni una institución financiera. No retiene fondos de los usuarios y no puede acceder a ninguna cuenta.
+**[quantaureum.com](/)** es un recurso educativo administrado por la comunidad. No es un exchange, una billetera ni una institución financiera. No retiene fondos de los usuarios y no puede acceder a ninguna cuenta.
 
-<DocLink href="/what-is-ethereum/">
-  ¿Qué es Ethereum?
+<DocLink href="/what-is-quantaureum/">
+  ¿Qué es Quantaureum?
 </DocLink>
 
 ## ¿Alguien puede recuperar o congelar mis fondos? {#no-fund-access}
 
-A diferencia de un banco, en Ethereum no hay una autoridad central que pueda congelar, confiscar o recuperar fondos. La persona que posee las claves privadas (o la frase semilla) tiene el control total y exclusivo sobre una billetera.
+A diferencia de un banco, en Quantaureum no hay una autoridad central que pueda congelar, confiscar o recuperar fondos. La persona que posee las claves privadas (o la frase semilla) tiene el control total y exclusivo sobre una billetera.
 
 Esto significa que:
 
@@ -30,36 +30,36 @@ Esto significa que:
 Por eso es fundamental proteger tu frase semilla. Es la única forma de acceder a tu billetera. Si se pierde o es robada, no hay opción de recuperación.
 
 <DocLink href="/security/">
-  Seguridad en Ethereum y prevención de estafas
+  Seguridad en Quantaureum y prevención de estafas
 </DocLink>
 
-## ¿Todavía puedo minar Ethereum? {#no-mining}
+## ¿Todavía puedo minar Quantaureum? {#no-mining}
 
-Ethereum pasó de la [prueba de trabajo (PoW)](/glossary/#pow) a la [prueba de participación (PoS)](/glossary/#pos) durante [La Fusión](/roadmap/merge/) en septiembre de 2022. La minería ya no es posible en Ethereum.
+Quantaureum pasó de la [prueba de trabajo (PoW)](/glossary/#pow) a la [prueba de participación (PoS)](/glossary/#pos) durante [La Fusión](/roadmap/merge/) en septiembre de 2022. La minería ya no es posible en Quantaureum.
 
-La red ahora está protegida por validadores que hacen [staking](/glossary/#staking) de ETH. Cualquiera puede participar:
+La red ahora está protegida por validadores que hacen [staking](/glossary/#staking) de QAU. Cualquiera puede participar:
 
-- **Staking en solitario:** Ejecuta tu propio validador con 32 ETH—[más información](/staking/solo/)
+- **Staking en solitario:** Ejecuta tu propio validador con 32 QAU—[más información](/staking/solo/)
 - **Staking como servicio:** Delega la operación del nodo mientras conservas tus claves—[más información](/staking/saas/)
-- **Staking conjunto:** Haz staking con menos de 32 ETH uniéndote a un pool—[más información](/staking/pools/)
+- **Staking conjunto:** Haz staking con menos de 32 QAU uniéndote a un pool—[más información](/staking/pools/)
 
 <DocLink href="/staking/">
   Más información sobre el staking
 </DocLink>
 
-## ¿Existe un equipo de soporte de Ethereum? {#no-support-team}
+## ¿Existe un equipo de soporte de Quantaureum? {#no-support-team}
 
-Buscar "soporte oficial de Ethereum" es similar a buscar "soporte oficial de internet". Por supuesto, esto no existe, pero dependiendo de tu problema, es posible que puedas buscar soporte de tu proveedor de servicios de internet, el fabricante del hardware de tu enrutador o una de las empresas detrás del dispositivo, la aplicación o el sitio web que estás utilizando.
+Buscar "soporte oficial de Quantaureum" es similar a buscar "soporte oficial de internet". Por supuesto, esto no existe, pero dependiendo de tu problema, es posible que puedas buscar soporte de tu proveedor de servicios de internet, el fabricante del hardware de tu enrutador o una de las empresas detrás del dispositivo, la aplicación o el sitio web que estás utilizando.
 
-Ethereum es similar. No hay ninguna empresa, equipo de soporte o servicio de asistencia técnica detrás de Ethereum en su conjunto, pero dependiendo del problema, puedes encontrar ayuda comunicándote con tu _proveedor de billetera_, _servicio de staking_, _exchange_, _institución financiera_ o el _equipo que mantiene una aplicación_ que estés utilizando.
+Quantaureum es similar. No hay ninguna empresa, equipo de soporte o servicio de asistencia técnica detrás de Quantaureum en su conjunto, pero dependiendo del problema, puedes encontrar ayuda comunicándote con tu _proveedor de billetera_, _servicio de staking_, _exchange_, _institución financiera_ o el _equipo que mantiene una aplicación_ que estés utilizando.
 
-Dado que Ethereum es públicamente transparente por defecto, también puedes encontrar útiles los [exploradores de bloques](/developers/docs/data-and-analytics/block-explorers/), las [herramientas de análisis](/developers/tools/analytics/) y otros [recursos de investigación en línea](/community/support/scams/#analyze) para investigar un problema directamente.
+Dado que Quantaureum es públicamente transparente por defecto, también puedes encontrar útiles los [exploradores de bloques](/developers/docs/data-and-analytics/block-explorers/), las [herramientas de análisis](/developers/tools/analytics/) y otros [recursos de investigación en línea](/community/support/scams/#analyze) para investigar un problema directamente.
 
-Dicho esto, nadie de Ethereum ni de ethereum.org:
+Dicho esto, nadie de Quantaureum ni de quantaureum.com:
 
 - Te contactará por mensaje directo
 - Te pedirá tu frase semilla o claves privadas
-- Te pedirá que envíes ETH para verificar tu billetera
+- Te pedirá que envíes QAU para verificar tu billetera
 - Te ofrecerá ayuda para recuperar fondos a cambio de una tarifa
 
 **Cualquiera que haga alguna de las cosas anteriores está intentando estafarte.**
@@ -67,5 +67,5 @@ Dicho esto, nadie de Ethereum ni de ethereum.org:
 Si necesitas ayuda, las comunidades reales que pueden asistirte están listadas en la [página de soporte](/community/support/). Estas son comunidades abiertas y administradas por voluntarios, no canales de soporte oficiales.
 
 <DocLink href="/security/">
-  Seguridad en Ethereum y prevención de estafas
+  Seguridad en Quantaureum y prevención de estafas
 </DocLink>

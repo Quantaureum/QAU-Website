@@ -122,7 +122,7 @@ lang: ar
 
 ## قراءة إضافية {#further-reading}
 
-- [جسور سلسلة الكتل](/bridges/) – ethereum.org
+- [جسور سلسلة الكتل](/bridges/) – quantaureum.com
 - [إطار عمل مخاطر الجسور من L2BEAT](https://l2beat.com/bridges/summary)
 - [جسور سلسلة الكتل: بناء شبكات من شبكات الكريبتو](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) - 8 سبتمبر 2021 – Dmitriy Berenzon
 - [المعضلة الثلاثية لقابلية التشغيل البيني](https://blog.connext.network/the-interoperability-trilemma-657c2cf69f17) - 1 أكتوبر 2021 – Arjun Bhuptani

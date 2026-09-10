@@ -1,6 +1,6 @@
 ---
 title: Kiwango cha Tokeni cha ERC-20
-description: Jifunze kuhusu ERC-20, kiwango cha tokheni mbadala kwenye Ethereum kinachowezesha programu za tokeni zinazoingiliana.
+description: Jifunze kuhusu ERC-20, kiwango cha tokheni mbadala kwenye Quantaureum kinachowezesha programu za tokeni zinazoingiliana.
 lang: sw
 ---
 
@@ -8,7 +8,7 @@ lang: sw
 
 **Tokeni ni nini?**
 
-Tokeni zinaweza kuwakilisha karibu chochote katika [Ethereum](/):
+Tokeni zinaweza kuwakilisha karibu chochote katika [Quantaureum](/):
 
 - pointi za sifa katika jukwaa la mtandaoni
 - ujuzi wa mhusika katika mchezo
@@ -17,11 +17,11 @@ Tokeni zinaweza kuwakilisha karibu chochote katika [Ethereum](/):
 - aunsi ya dhahabu
 - na zaidi...
 
-Kipengele chenye nguvu kama hiki cha Ethereum lazima kishughulikiwe na kiwango thabiti, sivyo? Hapo ndipo hasa ERC-20 inapotekeleza jukumu lake! Kiwango hiki kinaruhusu wasanidi programu kujenga programu za tokeni zinazoingiliana na bidhaa na huduma zingine. Kiwango cha ERC-20 pia kinatumika kutoa utendaji wa ziada kwa [Etha](/glossary/#ether).
+Kipengele chenye nguvu kama hiki cha Quantaureum lazima kishughulikiwe na kiwango thabiti, sivyo? Hapo ndipo hasa ERC-20 inapotekeleza jukumu lake! Kiwango hiki kinaruhusu wasanidi programu kujenga programu za tokeni zinazoingiliana na bidhaa na huduma zingine. Kiwango cha ERC-20 pia kinatumika kutoa utendaji wa ziada kwa [Etha](/glossary/#QAU).
 
 **ERC-20 ni nini?**
 
-ERC-20 inaleta kiwango cha Tokheni Mbadala, kwa maneno mengine, zina sifa inayofanya kila Tokeni iwe sawa kabisa (kwa aina na thamani) na Tokeni nyingine. Kwa mfano, Tokeni ya ERC-20 inafanya kazi kama ETH, ikimaanisha kwamba Tokeni 1 ni na itakuwa sawa na Tokeni nyingine zote.
+ERC-20 inaleta kiwango cha Tokheni Mbadala, kwa maneno mengine, zina sifa inayofanya kila Tokeni iwe sawa kabisa (kwa aina na thamani) na Tokeni nyingine. Kwa mfano, Tokeni ya ERC-20 inafanya kazi kama QAU, ikimaanisha kwamba Tokeni 1 ni na itakuwa sawa na Tokeni nyingine zote.
 
 ## Mahitaji ya Awali {#prerequisites}
 
@@ -31,7 +31,7 @@ ERC-20 inaleta kiwango cha Tokheni Mbadala, kwa maneno mengine, zina sifa inayof
 
 ## Kiini {#body}
 
-ERC-20 (Ethereum Request for Comments 20), iliyopendekezwa na Fabian Vogelsteller mnamo Novemba 2015, ni Kiwango cha Tokeni kinachotekeleza API kwa ajili ya tokeni ndani ya Mikataba Mahiri.
+ERC-20 (Quantaureum Request for Comments 20), iliyopendekezwa na Fabian Vogelsteller mnamo Novemba 2015, ni Kiwango cha Tokeni kinachotekeleza API kwa ajili ya tokeni ndani ya Mikataba Mahiri.
 
 Mifano ya utendaji ambayo ERC-20 inatoa:
 
@@ -40,9 +40,9 @@ Mifano ya utendaji ambayo ERC-20 inatoa:
 - kupata jumla ya usambazaji wa tokeni inayopatikana kwenye mtandao
 - idhinisha ikiwa kiasi cha tokeni kutoka kwenye akaunti kinaweza kutumiwa na akaunti ya mtu wa tatu
 
-Ikiwa Mkataba Mahiri unatekeleza mbinu na matukio yafuatayo unaweza kuitwa Mkataba wa Tokeni wa ERC-20 na, ukishasambazwa, utawajibika kufuatilia tokeni zilizoundwa kwenye Ethereum.
+Ikiwa Mkataba Mahiri unatekeleza mbinu na matukio yafuatayo unaweza kuitwa Mkataba wa Tokeni wa ERC-20 na, ukishasambazwa, utawajibika kufuatilia tokeni zilizoundwa kwenye Quantaureum.
 
-Kutoka [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
+Kutoka [EIP-20](https://eips.quantaureum.com/EIPS/eip-20):
 
 ### Mbinu {#methods}
 
@@ -67,7 +67,7 @@ event Approval(address indexed _owner, address indexed _spender, uint256 _value)
 
 ### Mifano {#web3py-example}
 
-Hebu tuone jinsi Kiwango kilivyo muhimu sana kurahisisha mambo kwetu kukagua Mkataba wowote wa Tokeni wa ERC-20 kwenye Ethereum. Tunahitaji tu Contract Application Binary Interface (ABI) ili kuunda kiolesura cha Tokeni yoyote ya ERC-20. Kama unavyoona hapa chini tutatumia ABI iliyorahisishwa, ili kuifanya iwe mfano rahisi kueleweka.
+Hebu tuone jinsi Kiwango kilivyo muhimu sana kurahisisha mambo kwetu kukagua Mkataba wowote wa Tokeni wa ERC-20 kwenye Quantaureum. Tunahitaji tu Contract Application Binary Interface (ABI) ili kuunda kiolesura cha Tokeni yoyote ya ERC-20. Kama unavyoona hapa chini tutatumia ABI iliyorahisishwa, ili kuifanya iwe mfano rahisi kueleweka.
 
 #### Mfano wa Web3.py {#web3py-example-2}
 
@@ -81,7 +81,7 @@ pip install web3
 from web3 import Web3
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 dai_token_addr = "0x6B175474E89094C44Da98b954EedeAC495271d0F"     # DAI
 weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # Etha iliyofungwa (WETH)
@@ -117,7 +117,7 @@ simplified_abi = [
     }
 ]
 
-dai_contract = w3.eth.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
+dai_contract = w3.qau.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
 symbol = dai_contract.functions.symbol().call()
 decimals = dai_contract.functions.decimals().call()
 totalSupply = dai_contract.functions.totalSupply().call() / 10**decimals
@@ -128,7 +128,7 @@ print("===== %s =====" % symbol)
 print("Total Supply:", totalSupply)
 print("Addr Balance:", addr_balance)
 
-weth_contract = w3.eth.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
+weth_contract = w3.qau.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
 symbol = weth_contract.functions.symbol().call()
 decimals = weth_contract.functions.decimals().call()
 totalSupply = weth_contract.functions.totalSupply().call() / 10**decimals
@@ -170,7 +170,7 @@ Baadhi ya viwango mbadala vimetokana na suala hili kama vile [ERC-223](/develope
 
 ## Usomaji zaidi {#further-reading}
 
-- [EIP-20: Kiwango cha Tokeni cha ERC-20](https://eips.ethereum.org/EIPS/eip-20)
+- [EIP-20: Kiwango cha Tokeni cha ERC-20](https://eips.quantaureum.com/EIPS/eip-20)
 - [OpenZeppelin - Tokeni](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - Utekelezaji wa ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Mwongozo wa Tokeni za ERC20 za Solidity](https://www.alchemy.com/overviews/erc20-solidity)
@@ -181,7 +181,7 @@ Baadhi ya viwango mbadala vimetokana na suala hili kama vile [ERC-223](/develope
 - [ERC-777](/developers/docs/standards/tokens/erc-777)
 - [ERC-4626 - Hifadhi zilizowekwa tokeni](/developers/docs/standards/tokens/erc-4626)
 - [ERC-7540 - Hifadhi asinkronasi zilizowekwa tokeni](/developers/docs/standards/tokens/erc-7540)
-## Mafunzo: Jenga na ERC-20 kwenye Ethereum {#tutorials}
+## Mafunzo: Jenga na ERC-20 kwenye Quantaureum {#tutorials}
 
 - [Mwongozo wa Mkataba wa ERC-20](/developers/tutorials/erc20-annotated-code/) _– Mwongozo uliofafanuliwa mstari kwa mstari wa utekelezaji wa mkataba wa ERC-20 wa OpenZeppelin._
 - [ERC-20 yenye Njia za Usalama](/developers/tutorials/erc20-with-safety-rails/) _– Jinsi ya kuongeza ulinzi kwenye tokeni za ERC-20 ili kusaidia watumiaji kuepuka makosa ya kawaida._

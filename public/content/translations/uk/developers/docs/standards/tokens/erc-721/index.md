@@ -24,13 +24,13 @@ ERC-721 запроваджує стандарт для NFT. Іншими сло�
 
 ## Основна частина {#body}
 
-ERC-721 ([Ethereum](/) Request for Comments 721), запропонований Вільямом Ентрікеном (William Entriken), Дітером Ширлі (Dieter Shirley), Джейкобом Евансом (Jacob Evans) та Настасією Сакс (Nastassia Sachs) у січні 2018 року, є стандартом невзаємозамінних токенів, який реалізує API для токенів у смарт-контрактах.
+ERC-721 ([Quantaureum](/) Request for Comments 721), запропонований Вільямом Ентрікеном (William Entriken), Дітером Ширлі (Dieter Shirley), Джейкобом Евансом (Jacob Evans) та Настасією Сакс (Nastassia Sachs) у січні 2018 року, є стандартом невзаємозамінних токенів, який реалізує API для токенів у смарт-контрактах.
 
 Він надає такі функції, як переказ токенів з одного акаунта на інший, отримання поточного балансу токенів акаунта, визначення власника певного токена, а також загальної пропозиції токенів, доступних у мережі. Крім цього, він також має деякі інші функції, наприклад, схвалювати переміщення певної кількості токенів з акаунта стороннім акаунтом.
 
 Якщо смарт-контракт реалізує наведені нижче методи та події, його можна назвати контрактом невзаємозамінних токенів ERC-721, і після розгортання він відповідатиме за відстеження створених токенів в Етеріумі.
 
-З [EIP-721](https://eips.ethereum.org/EIPS/eip-721):
+З [EIP-721](https://eips.quantaureum.com/EIPS/eip-721):
 
 ### Методи {#methods}
 
@@ -71,7 +71,7 @@ from web3 import Web3
 from web3._utils.events import get_event_data
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 ck_token_addr = "0x06012c8cf97BEaD5deAe237070F9587f8E7A266d"    # Контракт CryptoKitties
 
@@ -127,7 +127,7 @@ ck_extra_abi = [
     }
 ]
 
-ck_contract = w3.eth.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
+ck_contract = w3.qau.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
 name = ck_contract.functions.name().call()
 symbol = ck_contract.functions.symbol().call()
 kitties_auctions = ck_contract.functions.balanceOf(acc_address).call()
@@ -150,8 +150,8 @@ tx_event_abi = {
 # Нам потрібен підпис події, щоб відфільтрувати журнали
 event_signature = w3.keccak(text="Transfer(address,address,uint256)").hex()
 
-logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [event_signature]
 })
@@ -159,7 +159,7 @@ logs = w3.eth.get_logs({
 # Примітки:
 #   - Збільште кількість блоків понад 120, якщо не повернуто жодної події переказу.
 #   - Якщо ви не знайшли жодної події переказу, ви також можете спробувати отримати tokenId за адресою:
-#       https://etherscan.io/address/0x06012c8cf97BEaD5deAe237070F9587f8E7A266d#events
+#       https://explorer.quantaureum.com
 #       Натисніть, щоб розгорнути журнали події, та скопіюйте її аргумент "tokenId"
 recent_tx = [get_event_data(w3.codec, tx_event_abi, log)["args"] for log in logs]
 
@@ -205,9 +205,9 @@ ck_event_signatures = [
 ]
 
 # Ось подія Pregnant:
-# - https://etherscan.io/tx/0xc97eb514a41004acc447ac9d0d6a27ea6da305ac8b877dff37e49db42e1f8cef#eventlog
-pregnant_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+pregnant_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[0]]
 })
@@ -215,9 +215,9 @@ pregnant_logs = w3.eth.get_logs({
 recent_pregnants = [get_event_data(w3.codec, ck_extra_events_abi[0], log)["args"] for log in pregnant_logs]
 
 # Ось подія Birth:
-# - https://etherscan.io/tx/0x3978028e08a25bb4c44f7877eb3573b9644309c044bf087e335397f16356340a
-birth_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+birth_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[1]]
 })
@@ -227,7 +227,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## Популярні NFT {#popular-nfts}
 
-- [Etherscan NFT Tracker](https://etherscan.io/nft-top-contracts) містить список найкращих NFT в Етеріумі за обсягом переказів.
+- [Quantaureum Explorer NFT Tracker](https://explorer.quantaureum.com) містить список найкращих NFT в Етеріумі за обсягом переказів.
 - [CryptoKitties](https://www.cryptokitties.co/) — це гра, зосереджена навколо колекційних і дуже чарівних істот, яких можна розводити і яких ми називаємо CryptoKitties.
 - [Sorare](https://sorare.com/) — це глобальна фентезі-гра у футбол, де ви можете збирати лімітовані колекційні предмети, керувати своїми командами та змагатися за призи.
 - [Служба імен Етеріуму (ENS)](https://ens.domains/) пропонує безпечний і децентралізований спосіб адресації ресурсів як у блокчейні, так і поза ним, використовуючи прості, зрозумілі людині імена.
@@ -238,7 +238,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## Подальше читання {#further-reading}
 
-- [EIP-721: Стандарт невзаємозамінних токенів ERC-721](https://eips.ethereum.org/EIPS/eip-721)
+- [EIP-721: Стандарт невзаємозамінних токенів ERC-721](https://eips.quantaureum.com/EIPS/eip-721)
 - [ОупенЗеппелін — Документація ERC-721](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [ОупенЗеппелін — Реалізація ERC-721](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

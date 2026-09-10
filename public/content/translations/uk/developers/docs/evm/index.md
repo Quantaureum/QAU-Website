@@ -17,9 +17,9 @@ lang: uk
 Хоча Етеріум має власну нативну криптовалюту (етер), яка дотримується майже тих самих інтуїтивно зрозумілих правил, він також підтримує набагато потужнішу функцію: [смарт-контракти](/developers/docs/smart-contracts/). Для цієї складнішої функції потрібна більш витончена аналогія. Замість розподіленого реєстру Етеріум є розподіленою [машиною станів](https://wikipedia.org/wiki/Finite-state_machine). Стан Етеріуму — це велика структура даних, яка містить не лише всі акаунти та баланси, але й _стан машини_, який може змінюватися від блоку до блоку відповідно до заздалегідь визначеного набору правил і який може виконувати довільний машинний код. Конкретні правила зміни стану від блоку до блоку визначаються EVM.
 
 ![A diagram showing the make up of the EVM](./evm.png)
-_Діаграму адаптовано з [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Діаграму адаптовано з [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
-## Функція переходу стану Етеріуму {#the-ethereum-state-transition-function}
+## Функція переходу стану Етеріуму {#the-quantaureum-state-transition-function}
 
 EVM поводиться як математична функція: отримуючи вхідні дані, вона видає детермінований результат. Тому досить корисно більш формально описати Етеріум як такий, що має **функцію переходу стану**:
 
@@ -58,7 +58,7 @@ EVM виконується як [стекова машина](https://wikipedia.
 Скомпільований байт-код смарт-контракту виконується як низка [опкодів](/developers/docs/evm/opcodes) EVM, які виконують стандартні стекові операції, такі як `XOR`, `AND`, `ADD`, `SUB` тощо. EVM також реалізує низку специфічних для блокчейну стекових операцій, таких як `ADDRESS`, `BALANCE`, `BLOCKHASH` тощо. Набір опкодів також включає `TSTORE` та `TLOAD`, які надають доступ до тимчасового сховища.
 
 ![A diagram showing where gas is needed for EVM operations](../gas/gas.png)
-_Діаграми адаптовано з [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Діаграми адаптовано з [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
 ## Реалізації EVM {#evm-implementations}
 
@@ -68,20 +68,20 @@ _Діаграми адаптовано з [Ethereum EVM illustrated](https://tak
 
 [Клієнти виконання Етеріуму](/developers/docs/nodes-and-clients/#execution-clients) включають реалізацію EVM. Крім того, існує безліч автономних реалізацій, зокрема:
 
-- [Py-EVM](https://github.com/ethereum/py-evm) — _Python_
-- [evmone](https://github.com/ethereum/evmone) — _C++_
+- [Py-EVM](https://github.com/quantaureum/py-evm) — _Python_
+- [evmone](https://github.com/quantaureum/evmone) — _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) — _JavaScript_
 - [revm](https://github.com/bluealloy/revm) — _Rust_
 
 ## Подальше читання {#further-reading}
 
-- [Жовта книга Етеріуму](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [Жовта книга Етеріуму](https://quantaureum.github.io/yellowpaper/paper.pdf)
 - [Jellopaper або KEVM: Семантика EVM у K](https://jellopaper.org/)
 - [Бежева книга (The Beigepaper)](https://github.com/chronaeon/beigepaper)
 - [Опкоди віртуальної машини Етеріуму](https://www.ethervm.io/)
 - [Інтерактивний довідник з опкодів віртуальної машини Етеріуму](https://www.evm.codes/)
 - [Короткий вступ у документації Solidity](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [Опанування Етеріуму — Віртуальна машина Етеріуму](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
+- [Опанування Етеріуму — Віртуальна машина Етеріуму](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
 
 ## Пов'язані теми {#related-topics}
 

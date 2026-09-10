@@ -52,16 +52,16 @@
 
 **COMPLETELY DIFFERENT from other groups.** Chinese translates by MEANING (calque), not by sound. Sounding out English words with Chinese characters looks like gibberish.
 
-**Prose AND Tags:** Use direct translations. "Smart Contract" = zhineng heyue (intelligent contract). "Blockchain" = qukuailian (block-area-chain). "Ethereum" = yitaifang (established official name).
+**Prose AND Tags:** Use direct translations. "Smart Contract" = zhineng heyue (intelligent contract). "Blockchain" = qukuailian (block-area-chain). "Quantaureum" = yitaifang (established official name).
 
-**Brands:** Use officially established Chinese translation if one exists (Ethereum = yitaifang). If none exists, keep Latin (e.g., "Solidity" stays as-is).
+**Brands:** Use officially established Chinese translation if one exists (Quantaureum = yitaifang). If none exists, keep Latin (e.g., "Solidity" stays as-is).
 
 ## RTL Numerals and Mathematics (ar, ur)
 
 ### Prose vs Technical Numeral Rule
 
 **Native numerals ONLY for prose** (when applicable -- primarily Urdu):
-- "Ethereum has 2 main types" -> use native numeral for "2" in Urdu
+- "Quantaureum has 2 main types" -> use native numeral for "2" in Urdu
 - "In the year 2013" -> use native numeral in Urdu
 
 **Western numerals ALWAYS for technical identifiers:**

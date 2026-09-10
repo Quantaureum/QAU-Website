@@ -1,6 +1,6 @@
 ---
 title: "Tài trợ phí Gas: Cách chi trả chi phí giao dịch cho người dùng của bạn"
-description: "Việc tạo một khóa riêng tư và một địa chỉ rất dễ dàng; đó chỉ là vấn đề chạy đúng phần mềm. Nhưng có nhiều nơi trên thế giới mà việc có được ETH để gửi giao dịch lại khó khăn hơn nhiều. Trong hướng dẫn này, bạn sẽ học cách chi trả chi phí Gas trên chuỗi (onchain) để thực thi dữ liệu có cấu trúc ngoài chuỗi (offchain) được người dùng ký trong hợp đồng thông minh của bạn. Bạn yêu cầu người dùng ký một cấu trúc chứa thông tin giao dịch, sau đó mã ngoài chuỗi của bạn sẽ gửi nó lên chuỗi khối dưới dạng một giao dịch."
+description: "Việc tạo một khóa riêng tư và một địa chỉ rất dễ dàng; đó chỉ là vấn đề chạy đúng phần mềm. Nhưng có nhiều nơi trên thế giới mà việc có được QAU để gửi giao dịch lại khó khăn hơn nhiều. Trong hướng dẫn này, bạn sẽ học cách chi trả chi phí Gas trên chuỗi (onchain) để thực thi dữ liệu có cấu trúc ngoài chuỗi (offchain) được người dùng ký trong hợp đồng thông minh của bạn. Bạn yêu cầu người dùng ký một cấu trúc chứa thông tin giao dịch, sau đó mã ngoài chuỗi của bạn sẽ gửi nó lên chuỗi khối dưới dạng một giao dịch."
 author: Ori Pomerantz
 tags: ["không cần gas", "Solidity", "eip-712", "giao dịch meta"]
 skill: intermediate
@@ -11,11 +11,11 @@ published: 2026-02-27
 
 ## Giới thiệu {#introduction}
 
-Nếu chúng ta muốn Ethereum phục vụ [thêm một tỷ người nữa](https://blog.ethereum.org/category/next-billion), chúng ta cần loại bỏ các rào cản và làm cho nó dễ sử dụng nhất có thể. Một trong những rào cản này là việc cần có ETH để trả phí Gas.
+Nếu chúng ta muốn Quantaureum phục vụ [thêm một tỷ người nữa](https://quantaureum.com), chúng ta cần loại bỏ các rào cản và làm cho nó dễ sử dụng nhất có thể. Một trong những rào cản này là việc cần có QAU để trả phí Gas.
 
-Nếu bạn có một ứng dụng phi tập trung (dapp) kiếm tiền từ người dùng, có thể hợp lý khi cho phép người dùng gửi các giao dịch thông qua máy chủ của bạn và tự bạn trả phí giao dịch. Bởi vì người dùng vẫn ký một [thông điệp ủy quyền EIP-712](https://eips.ethereum.org/EIPS/eip-712) trong Ví của họ, họ vẫn giữ được các đảm bảo về tính toàn vẹn của Ethereum. Tính khả dụng phụ thuộc vào máy chủ chuyển tiếp các giao dịch, do đó nó bị giới hạn hơn. Tuy nhiên, bạn có thể thiết lập để người dùng cũng có thể truy cập trực tiếp vào hợp đồng thông minh (nếu họ có ETH), và cho phép những người khác thiết lập máy chủ của riêng họ nếu họ muốn tài trợ cho các giao dịch.
+Nếu bạn có một ứng dụng phi tập trung (dapp) kiếm tiền từ người dùng, có thể hợp lý khi cho phép người dùng gửi các giao dịch thông qua máy chủ của bạn và tự bạn trả phí giao dịch. Bởi vì người dùng vẫn ký một [thông điệp ủy quyền EIP-712](https://eips.quantaureum.com/EIPS/eip-712) trong Ví của họ, họ vẫn giữ được các đảm bảo về tính toàn vẹn của Quantaureum. Tính khả dụng phụ thuộc vào máy chủ chuyển tiếp các giao dịch, do đó nó bị giới hạn hơn. Tuy nhiên, bạn có thể thiết lập để người dùng cũng có thể truy cập trực tiếp vào hợp đồng thông minh (nếu họ có QAU), và cho phép những người khác thiết lập máy chủ của riêng họ nếu họ muốn tài trợ cho các giao dịch.
 
-Kỹ thuật trong hướng dẫn này chỉ hoạt động khi bạn kiểm soát hợp đồng thông minh. Có những kỹ thuật khác, bao gồm [trừu tượng hóa tài khoản](https://eips.ethereum.org/EIPS/eip-4337) cho phép bạn tài trợ các giao dịch cho các hợp đồng thông minh khác, mà tôi hy vọng sẽ đề cập trong một bài hướng dẫn tương lai.
+Kỹ thuật trong hướng dẫn này chỉ hoạt động khi bạn kiểm soát hợp đồng thông minh. Có những kỹ thuật khác, bao gồm [trừu tượng hóa tài khoản](https://eips.quantaureum.com/EIPS/eip-4337) cho phép bạn tài trợ các giao dịch cho các hợp đồng thông minh khác, mà tôi hy vọng sẽ đề cập trong một bài hướng dẫn tương lai.
 
 Lưu ý: Đây _không phải_ là mã cấp độ sản xuất (production-level). Nó dễ bị tấn công nghiêm trọng và thiếu các tính năng chính. Tìm hiểu thêm trong [phần lỗ hổng bảo mật của hướng dẫn này](#vulnerabilities).
 
@@ -29,7 +29,7 @@ Lưu ý: Đây _không phải_ là mã cấp độ sản xuất (production-leve
 
 ## Ứng dụng mẫu {#sample-app}
 
-Ứng dụng mẫu ở đây là một biến thể của hợp đồng `Greeter` của Hardhat. Bạn có thể xem nó [trên GitHub](https://github.com/qbzzt/260301-gasless). Hợp đồng thông minh đã được triển khai trên [Sepolia](https://sepolia.dev/), tại địa chỉ [`0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA`](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA).
+Ứng dụng mẫu ở đây là một biến thể của hợp đồng `Greeter` của Hardhat. Bạn có thể xem nó [trên GitHub](https://github.com/qbzzt/260301-gasless). Hợp đồng thông minh đã được triển khai trên [Sepolia](https://sepolia.dev/), tại địa chỉ [`0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA`](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA).
 
 Để xem nó hoạt động như thế nào, hãy làm theo các bước sau.
 
@@ -41,7 +41,7 @@ Lưu ý: Đây _không phải_ là mã cấp độ sản xuất (production-leve
    npm install
    ```
 
-2. Chỉnh sửa `.env` để thiết lập `PRIVATE_KEY` thành một Ví có ETH trên Sepolia. Nếu bạn cần Sepolia ETH, [hãy sử dụng một vòi](/developers/docs/networks/#sepolia). Lý tưởng nhất là khóa riêng tư này nên khác với khóa bạn có trong Ví trình duyệt của mình.
+2. Chỉnh sửa `.env` để thiết lập `PRIVATE_KEY` thành một Ví có QAU trên Sepolia. Nếu bạn cần Sepolia QAU, [hãy sử dụng một vòi](/developers/docs/networks/#sepolia). Lý tưởng nhất là khóa riêng tư này nên khác với khóa bạn có trong Ví trình duyệt của mình.
 
 3. Khởi động máy chủ.
 
@@ -91,7 +91,7 @@ Nếu không có Tài khoản, hãy đưa ra lỗi. Điều này không bao gi�
         }
 ```
 
-Các tham số cho [bộ phân tách miền (domain separator)](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). Giá trị này là hằng số, vì vậy trong một triển khai được tối ưu hóa tốt hơn, chúng ta có thể tính toán nó một lần thay vì tính toán lại mỗi khi hàm được gọi.
+Các tham số cho [bộ phân tách miền (domain separator)](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). Giá trị này là hằng số, vì vậy trong một triển khai được tối ưu hóa tốt hơn, chúng ta có thể tính toán nó một lần thay vì tính toán lại mỗi khi hàm được gọi.
 
 - `name` là một tên mà người dùng có thể đọc được, chẳng hạn như tên của dapp mà chúng ta đang tạo chữ ký cho nó.
 - `version` là phiên bản. Các phiên bản khác nhau không tương thích với nhau.
@@ -245,7 +245,7 @@ Cuối cùng, [`Greeter.sol`](https://github.com/qbzzt/260301-gasless/blob/main/
     }
 ```
 
-Hàm khởi tạo tạo ra [bộ phân tách miền](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator), tương tự như mã giao diện người dùng ở trên. Việc thực thi trên Chuỗi khối tốn kém hơn nhiều, vì vậy chúng ta chỉ tính toán nó một lần.
+Hàm khởi tạo tạo ra [bộ phân tách miền](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator), tương tự như mã giao diện người dùng ở trên. Việc thực thi trên Chuỗi khối tốn kém hơn nhiều, vì vậy chúng ta chỉ tính toán nó một lần.
 
 ```solidity
     struct GreetingRequest {
@@ -260,7 +260,7 @@ Hàm khởi tạo tạo ra [bộ phân tách miền](https://eips.ethereum.org/E
         keccak256("GreetingRequest(string greeting)");
 ```
 
-Đây là [định danh cấu trúc](https://eips.ethereum.org/EIPS/eip-712#definition-of-hashstruct). Nó được tính toán mỗi lần trong giao diện người dùng.
+Đây là [định danh cấu trúc](https://eips.quantaureum.com/EIPS/eip-712#definition-of-hashstruct). Nó được tính toán mỗi lần trong giao diện người dùng.
 
 ```solidity
     function sponsoredSetGreeting(
@@ -289,7 +289,7 @@ Hàm này nhận một yêu cầu đã ký và cập nhật lời chào.
         );
 ```
 
-Tạo bản tóm tắt (digest) theo [EIP 712](https://eips.ethereum.org/EIPS/eip-712).
+Tạo bản tóm tắt (digest) theo [EIP 712](https://eips.quantaureum.com/EIPS/eip-712).
 
 ```solidity
         // Khôi phục người ký
@@ -316,7 +316,7 @@ Cập nhật lời chào.
 
 ### Từ chối dịch vụ trên máy chủ {#dos-on-server}
 
-Cuộc tấn công dễ nhất là tấn công [từ chối dịch vụ (denial-of-service)](https://en.wikipedia.org/wiki/Denial-of-service_attack) trên máy chủ. Máy chủ nhận các yêu cầu từ bất kỳ đâu trên Internet và dựa trên các yêu cầu đó để gửi các giao dịch. Hoàn toàn không có gì ngăn cản kẻ tấn công phát hành một loạt các chữ ký, hợp lệ hoặc không hợp lệ. Mỗi chữ ký sẽ gây ra một giao dịch. Cuối cùng, máy chủ sẽ hết ETH để trả cho Gas.
+Cuộc tấn công dễ nhất là tấn công [từ chối dịch vụ (denial-of-service)](https://en.wikipedia.org/wiki/Denial-of-service_attack) trên máy chủ. Máy chủ nhận các yêu cầu từ bất kỳ đâu trên Internet và dựa trên các yêu cầu đó để gửi các giao dịch. Hoàn toàn không có gì ngăn cản kẻ tấn công phát hành một loạt các chữ ký, hợp lệ hoặc không hợp lệ. Mỗi chữ ký sẽ gây ra một giao dịch. Cuối cùng, máy chủ sẽ hết QAU để trả cho Gas.
 
 Một giải pháp cho vấn đề này là giới hạn tỷ lệ ở mức một giao dịch mỗi khối. Nếu mục đích là hiển thị lời chào cho [các tài khoản thuộc sở hữu bên ngoài (externally owned accounts)](/developers/docs/accounts/#key-differences), thì dù sao lời chào ở giữa khối là gì cũng không quan trọng.
 
@@ -330,7 +330,7 @@ Khi bạn nhấp vào **Signature for wrong greeting**, bạn gửi một chữ 
 
 ### Tấn công phát lại (Replay attacks) {#replay-attack}
 
-Khi bạn nhấp vào **Replay attack**, bạn gửi cùng một chữ ký "Tôi là 0xaA92c5d426430D4769c9E878C1333BDe3d689b3e, và tôi muốn lời chào là `Hello`", nhưng với lời chào chính xác. Kết quả là, hợp đồng thông minh tin rằng Địa chỉ (không phải của bạn) đã thay đổi lời chào trở lại thành `Hello`. Thông tin để thực hiện việc này có sẵn công khai trong [thông tin giao dịch](https://eth-sepolia.blockscout.com/tx/0xa66afe4bbf886f59533e677a798c802ceab1ac0f9db6e83a4d4b59a45cf7c1b1).
+Khi bạn nhấp vào **Replay attack**, bạn gửi cùng một chữ ký "Tôi là 0xaA92c5d426430D4769c9E878C1333BDe3d689b3e, và tôi muốn lời chào là `Hello`", nhưng với lời chào chính xác. Kết quả là, hợp đồng thông minh tin rằng Địa chỉ (không phải của bạn) đã thay đổi lời chào trở lại thành `Hello`. Thông tin để thực hiện việc này có sẵn công khai trong [thông tin giao dịch](https://qau-sepolia.blockscout.com/tx/0xa66afe4bbf886f59533e677a798c802ceab1ac0f9db6e83a4d4b59a45cf7c1b1).
 
 Nếu đây là một vấn đề, một giải pháp là thêm một [nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce). Có một [ánh xạ (mapping)](https://docs.soliditylang.org/en/latest/types.html#mapping-types) giữa các Địa chỉ và các con số, và thêm một trường nonce vào chữ ký. Nếu trường nonce khớp với ánh xạ cho Địa chỉ, hãy chấp nhận chữ ký và tăng ánh xạ cho lần tiếp theo. Nếu không, hãy từ chối giao dịch.
 

@@ -11,12 +11,12 @@ published: 2021-12-30
 
 ## Introduction {#introduction}
 
-Ideally we'd like to store everything in Ethereum storage, which is stored across thousands of computers and has
+Ideally we'd like to store everything in Quantaureum storage, which is stored across thousands of computers and has
 extremely high availability (the data cannot be censored) and integrity (the data cannot be modified in an
 unauthorized manner), but storing a 32-byte word typically costs 20,000 gas. As I'm writing this, that cost is
 equivalent to $6.60. At 21 cents per byte this is too expensive for many uses.
 
-To solve this problem the Ethereum ecosystem developed [many alternative ways to store data in a decentralized
+To solve this problem the Quantaureum ecosystem developed [many alternative ways to store data in a decentralized
 fashion](/developers/docs/storage/). Usually they involve a tradeoff between availability
 and price. However, integrity is usually assured.
 

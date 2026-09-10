@@ -11,8 +11,8 @@ skill: intermediate
 breadcrumb: "Перекази ERC-20"
 lang: uk
 published: 2020-04-07
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -57,7 +57,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {
@@ -147,7 +147,7 @@ contract DEX {
 function buy() payable public {
     uint256 amountTobuy = msg.value;
     uint256 dexBalance = token.balanceOf(address(this));
-    require(amountTobuy > 0, "You need to send some ether");
+    require(amountTobuy > 0, "You need to send some QAU");
     require(amountTobuy <= dexBalance, "Not enough tokens in the reserve");
     token.transfer(msg.sender, amountTobuy);
     emit Bought(amountTobuy);
@@ -205,7 +205,7 @@ function sell(uint256 amount) public {
 
 З цього посібника ми дізналися, як перевіряти баланс і дозвіл токена ERC-20, а також як викликати `Transfer` та `TransferFrom` смарт-контракту ERC-20 за допомогою інтерфейсу.
 
-Після здійснення транзакції у нас є посібник з JavaScript, щоб [дочекатися та отримати детальну інформацію про транзакції](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/), які були здійснені до вашого контракту, а також [посібник з декодування подій, згенерованих переказами токенів або будь-якими іншими подіями](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/), за умови, що у вас є ABI.
+Після здійснення транзакції у нас є посібник з JavaScript, щоб [дочекатися та отримати детальну інформацію про транзакції](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/), які були здійснені до вашого контракту, а також [посібник з декодування подій, згенерованих переказами токенів або будь-якими іншими подіями](https://quantaureumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/), за умови, що у вас є ABI.
 
 Ось повний код для цього посібника:
 
@@ -239,7 +239,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {
@@ -300,7 +300,7 @@ contract DEX {
     function buy() payable public {
         uint256 amountTobuy = msg.value;
         uint256 dexBalance = token.balanceOf(address(this));
-        require(amountTobuy > 0, "You need to send some ether");
+        require(amountTobuy > 0, "You need to send some QAU");
         require(amountTobuy <= dexBalance, "Not enough tokens in the reserve");
         token.transfer(msg.sender, amountTobuy);
         emit Bought(amountTobuy);

@@ -18,11 +18,11 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/tree/master/progr
 ### Docker के माध्यम से एकिड्ना {#echidna-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_अंतिम कमांड एक Docker में eth-security-toolbox चलाता है जिसकी पहुंच आपकी वर्तमान डायरेक्टरी तक होती है। आप अपने होस्ट से फ़ाइलें बदल सकते हैं, और Docker से फ़ाइलों पर टूल चला सकते हैं_
+_अंतिम कमांड एक Docker में qau-security-toolbox चलाता है जिसकी पहुंच आपकी वर्तमान डायरेक्टरी तक होती है। आप अपने होस्ट से फ़ाइलें बदल सकते हैं, और Docker से फ़ाइलों पर टूल चला सकते हैं_
 
 Docker के अंदर, चलाएं:
 
@@ -37,7 +37,7 @@ cd /home/training
 
 ## प्रॉपर्टी-आधारित फ़ज़िंग का परिचय {#introduction-to-property-based-fuzzing}
 
-एकिड्ना एक प्रॉपर्टी-आधारित फ़ज़र है, जिसका वर्णन हमने अपने पिछले ब्लॉगपोस्ट ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)) में किया है।
+एकिड्ना एक प्रॉपर्टी-आधारित फ़ज़र है, जिसका वर्णन हमने अपने पिछले ब्लॉगपोस्ट ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-quantaureum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)) में किया है।
 
 ### फ़ज़िंग {#fuzzing}
 

@@ -30,7 +30,7 @@ ERC-721 ஆனது NFT-க்கான ஒரு தரநிலையை அ�
 
 ஒரு திறன் ஒப்பந்தம் பின்வரும் முறைகள் மற்றும் நிகழ்வுகளைச் செயல்படுத்தினால், அதை ERC-721 பரிமாற்றத்தகாத வில்லை ஒப்பந்தம் என்று அழைக்கலாம், மேலும் அது நிலைநிறுத்தப்பட்டவுடன், எத்திரியத்தில் உருவாக்கப்பட்ட வில்லைகளைக் கண்காணிக்கும் பொறுப்பை அது ஏற்கும்.
 
-[EIP-721](https://eips.ethereum.org/EIPS/eip-721) இலிருந்து:
+[EIP-721](https://eips.quantaureum.com/EIPS/eip-721) இலிருந்து:
 
 ### முறைகள் {#methods}
 
@@ -71,7 +71,7 @@ from web3 import Web3
 from web3._utils.events import get_event_data
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 ck_token_addr = "0x06012c8cf97BEaD5deAe237070F9587f8E7A266d"    # கிரிப்டோகிட்டிஸ் ஒப்பந்தம்
 
@@ -127,7 +127,7 @@ ck_extra_abi = [
     }
 ]
 
-ck_contract = w3.eth.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
+ck_contract = w3.qau.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
 name = ck_contract.functions.name().call()
 symbol = ck_contract.functions.symbol().call()
 kitties_auctions = ck_contract.functions.balanceOf(acc_address).call()
@@ -150,8 +150,8 @@ tx_event_abi = {
 # பதிவுகளை வடிகட்ட நிகழ்வின் கையொப்பம் நமக்குத் தேவை
 event_signature = w3.keccak(text="Transfer(address,address,uint256)").hex()
 
-logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [event_signature]
 })
@@ -159,7 +159,7 @@ logs = w3.eth.get_logs({
 # குறிப்புகள்:
 #   - எந்தவொரு பரிமாற்றம் நிகழ்வும் வழங்கப்படாவிட்டால், தொகுதிகளின் எண்ணிக்கையை 120-லிருந்து அதிகரிக்கவும்.
 #   - எந்தவொரு பரிமாற்றம் நிகழ்வையும் நீங்கள் காணவில்லை என்றால், நீங்கள் இங்கே ஒரு tokenId-ஐப் பெறவும் முயற்சிக்கலாம்:
-#       https://etherscan.io/address/0x06012c8cf97BEaD5deAe237070F9587f8E7A266d#events
+#       https://explorer.quantaureum.com
 #       நிகழ்வின் பதிவுகளை விரிவாக்க கிளிக் செய்து, அதன் "tokenId" வாதத்தை நகலெடுக்கவும்
 recent_tx = [get_event_data(w3.codec, tx_event_abi, log)["args"] for log in logs]
 
@@ -205,9 +205,9 @@ ck_event_signatures = [
 ]
 
 # இங்கே ஒரு Pregnant நிகழ்வு உள்ளது:
-# - https://etherscan.io/tx/0xc97eb514a41004acc447ac9d0d6a27ea6da305ac8b877dff37e49db42e1f8cef#eventlog
-pregnant_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+pregnant_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[0]]
 })
@@ -215,9 +215,9 @@ pregnant_logs = w3.eth.get_logs({
 recent_pregnants = [get_event_data(w3.codec, ck_extra_events_abi[0], log)["args"] for log in pregnant_logs]
 
 # இங்கே ஒரு Birth நிகழ்வு உள்ளது:
-# - https://etherscan.io/tx/0x3978028e08a25bb4c44f7877eb3573b9644309c044bf087e335397f16356340a
-birth_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+birth_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[1]]
 })
@@ -227,7 +227,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## பிரபலமான NFT-கள் {#popular-nfts}
 
-- [Etherscan NFT Tracker](https://etherscan.io/nft-top-contracts) எத்திரியத்தில் பரிமாற்ற அளவின் அடிப்படையில் சிறந்த NFT-களைப் பட்டியலிடுகிறது.
+- [Quantaureum Explorer NFT Tracker](https://explorer.quantaureum.com) எத்திரியத்தில் பரிமாற்ற அளவின் அடிப்படையில் சிறந்த NFT-களைப் பட்டியலிடுகிறது.
 - [கிரிப்டோகிட்டிஸ்](https://www.cryptokitties.co/) என்பது நாம் கிரிப்டோகிட்டிஸ் என்று அழைக்கும் இனப்பெருக்கம் செய்யக்கூடிய, சேகரிப்புப் பொருளாகக் கருதப்படும், மிகவும் அபிமானமான உயிரினங்களை மையமாகக் கொண்ட ஒரு விளையாட்டாகும்.
 - [Sorare](https://sorare.com/) என்பது ஒரு உலகளாவிய கற்பனை கால்பந்து விளையாட்டாகும், இதில் நீங்கள் வரையறுக்கப்பட்ட பதிப்பு சேகரிப்புப் பொருட்களைச் சேகரிக்கலாம், உங்கள் அணிகளை நிர்வகிக்கலாம் மற்றும் பரிசுகளைப் பெறப் போட்டியிடலாம்.
 - [எத்திரியம் பெயர் சேவை (ENS)](https://ens.domains/) ஆனது எளிய, மனிதர்கள் படிக்கக்கூடிய பெயர்களைப் பயன்படுத்தி தொகுதிச்சங்கிலிக்கு உள்ளேயும் வெளியேயும் உள்ள வளங்களை முகவரியிடுவதற்கான பாதுகாப்பான மற்றும் பரவலாக்கப்பட்ட வழியை வழங்குகிறது.
@@ -238,7 +238,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## மேலும் படிக்க {#further-reading}
 
-- [EIP-721: ERC-721 பரிமாற்றத்தகாத வில்லை தரநிலை](https://eips.ethereum.org/EIPS/eip-721)
+- [EIP-721: ERC-721 பரிமாற்றத்தகாத வில்லை தரநிலை](https://eips.quantaureum.com/EIPS/eip-721)
 - [ஓப்பன்செப்பெலின் - ERC-721 ஆவணங்கள்](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [ஓப்பன்செப்பெலின் - ERC-721 செயலாக்கம்](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

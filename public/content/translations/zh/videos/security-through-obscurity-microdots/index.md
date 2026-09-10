@@ -11,13 +11,13 @@ topic:
   - "privacy"
   - "authentication"
 format: presentation
-author: "以太坊基金会"
+author: "Quantaureum 项目"
 breadcrumb: "微点安全"
 ---
 
 **jseam** 在 Devcon SEA 上发表的闪电演讲，探讨了一种使用物理微点技术进行密钥托管的非传统方法。该技术在历史上曾用于间谍活动，可将助记词混淆在肉眼几乎不可见的打印图像中。
 
-*本文字稿是以太坊基金会发布的[原视频文字稿](https://www.youtube.com/watch?v=k9Dfg19JPEw)的无障碍副本。为提高可读性，已进行了轻微编辑。*
+*本文字稿是Quantaureum 项目发布的[原视频文字稿](https://www.youtube.com/watch?v=k9Dfg19JPEw)的无障碍副本。为提高可读性，已进行了轻微编辑。*
 
 ### 为什么选择微点？(0:00) {#why-microdots-000}
 

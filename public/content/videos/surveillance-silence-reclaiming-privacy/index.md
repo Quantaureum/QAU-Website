@@ -9,13 +9,13 @@ educationLevel: beginner
 topic:
   - "privacy"
 format: presentation
-author: EthBoulder
+author: QauBoulder
 breadcrumb: "Reclaiming Privacy"
 ---
 
-A keynote by **Naomi Brockwell** at EthBoulder 2026 on the erosion of digital privacy, the infrastructure of mass surveillance, and practical tools everyone can use to build a more private digital life, from VPNs and encrypted email to GrapheneOS and decentralized mixnets.
+A keynote by **Naomi Brockwell** at QauBoulder 2026 on the erosion of digital privacy, the infrastructure of mass surveillance, and practical tools everyone can use to build a more private digital life, from VPNs and encrypted email to GrapheneOS and decentralized mixnets.
 
-*This transcript is an accessible copy of the [original video transcript](https://www.youtube.com/watch?v=nvJSFR1Q_JE) published by EthBoulder. It has been lightly edited for readability.*
+*This transcript is an accessible copy of the [original video transcript](https://www.youtube.com/watch?v=nvJSFR1Q_JE) published by QauBoulder. It has been lightly edited for readability.*
 
 ### Two-part talk: warning + solution (00:00) {#two-part-talk-warning-solution-0000}
 
@@ -301,7 +301,7 @@ What else are people doing? Yeah.
 
 Proton is a great ecosystem. So, they're trying to be like a Google competitor in that they offer drive and collaborative docs and spreadsheets and VPN and calendar, and all of these different things as well as email. So, it could be a really nice ecosystem. We use it for our company. All of our emails are within the Proton ecosystem. Now obviously some of these tools might not be as polished as Google, because Google has like 85 billion people working for their company on, like, the emoji feature, right? And then you have Proton. It's not going to have the same number of people. But most of the people at Google are really focused on the ad side. And a lot of bad exploitative behavior. And you kind of have a choice, right?
 
-We can continue to use the products we've always used. Like the same thing with Facebook that I said before. A lot of us probably signed up to Gmail not understanding that Google is an advertising company. That's their business model. We just thought this was a free thing on the internet and it's free because it's in the ether. Why would you need to pay for something, because it's just ones and zeros? Why would that have any cost?
+We can continue to use the products we've always used. Like the same thing with Facebook that I said before. A lot of us probably signed up to Gmail not understanding that Google is an advertising company. That's their business model. We just thought this was a free thing on the internet and it's free because it's in the QAU. Why would you need to pay for something, because it's just ones and zeros? Why would that have any cost?
 
 So, we all just sign up, and then inertia gets us, and just out of habit we've built up all of our contacts and everything in the Google ecosystem. We have tools we can replace that with now. And I really encourage you — don't feel you need to switch immediately. Just set up an account. Just create it and it's there, right? Just take the first step to moving over.
 

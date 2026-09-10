@@ -13,7 +13,7 @@ published: 2026-04-01
 
 Un [article précédent](/developers/tutorials/gasless/) a abordé l'utilisation d'un accès sans gaz à votre propre application à l'aide des signatures EIP-712, mais cela se limite à vos propres contrats intelligents. En utilisant l'[abstraction de compte](/roadmap/account-abstraction/), nous pouvons créer des portefeuilles de contrats intelligents qui acceptent deux types de transactions et les relaient vers une destination demandée :
 
-- Les transactions envoyées par un EOA spécifique (ce qui nécessite que cet EOA possède de l'ETH)
+- Les transactions envoyées par un EOA spécifique (ce qui nécessite que cet EOA possède de l'QAU)
 - Les transactions envoyées de n'importe où, mais signées par le même EOA.
 
 De cette façon, nous pouvons fournir un moyen sans gaz pour un compte de détenir des actifs (jetons, etc.) et d'exécuter toutes les fonctions qu'un EOA avec du gaz peut accomplir.
@@ -38,7 +38,7 @@ Il existe une solution qui vous permet d'utiliser l'adresse EOA via l'[EIP-7702]
    npm install
    ```
 
-3. Modifiez `.env` pour définir `SEPOLIA_PRIVATE_KEY` sur un portefeuille qui possède de l'ETH sur Sepolia. Si vous avez besoin d'ETH Sepolia, [utilisez un faucet](/developers/docs/networks/#sepolia) pour en obtenir. Idéalement, cette clé privée devrait être différente de celle que vous avez dans le portefeuille de votre navigateur.
+3. Modifiez `.env` pour définir `SEPOLIA_PRIVATE_KEY` sur un portefeuille qui possède de l'QAU sur Sepolia. Si vous avez besoin d'QAU Sepolia, [utilisez un faucet](/developers/docs/networks/#sepolia) pour en obtenir. Idéalement, cette clé privée devrait être différente de celle que vous avez dans le portefeuille de votre navigateur.
 
 4. Démarrez le serveur.
 
@@ -54,9 +54,9 @@ Il existe une solution qui vous permet d'utiliser l'adresse EOA via l'[EIP-7702]
 
 8. Vous pouvez voir quand le proxy utilisateur est déployé car il y a une adresse à côté de **UserProxy access**. Si vous avez attendu 24 secondes (2 blocs) et que cela ne s'est toujours pas produit, il se peut qu'il y ait un problème avec la détection des changements.
 
-   Si c'est le cas, allez sur l'[explorateur de blocs Sepolia](https://eth-sepolia.blockscout.com/) et entrez le hachage de transaction de déploiement que vous voyez dans la sortie du serveur à `npm run dev`. Cliquez sur le contrat créé pour voir son adresse, puis copiez-la. Collez l'adresse dans le champ _Or enter existing proxy address_, puis cliquez sur **Set proxy address**.
+   Si c'est le cas, allez sur l'[explorateur de blocs Sepolia](https://qau-sepolia.blockscout.com/) et entrez le hachage de transaction de déploiement que vous voyez dans la sortie du serveur à `npm run dev`. Cliquez sur le contrat créé pour voir son adresse, puis copiez-la. Collez l'adresse dans le champ _Or enter existing proxy address_, puis cliquez sur **Set proxy address**.
 
-9. Cliquez sur **Request more tokens for proxy** pour soumettre un appel à la fonction [`faucet`](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd) du contrat ERC-20 afin d'obtenir des jetons. **Confirmez** la signature dans le portefeuille. Bien sûr, les jetons arrivent à l'adresse du proxy, et non à celle de l'utilisateur.
+9. Cliquez sur **Request more tokens for proxy** pour soumettre un appel à la fonction [`faucet`](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd) du contrat ERC-20 afin d'obtenir des jetons. **Confirmez** la signature dans le portefeuille. Bien sûr, les jetons arrivent à l'adresse du proxy, et non à celle de l'utilisateur.
 
 10. Faites défiler vers le bas et cliquez sur le lien sous _Last transaction:_. Cela ouvrira le navigateur pour vous montrer la transaction `faucet`.
 
@@ -81,7 +81,7 @@ contract UserProxy {
     uint public nonce = 0;
 ```
 
-L'identité du propriétaire et un [nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce) pour empêcher la répétition des messages. Étant donné que le nonce est une variable `public`, le compilateur Solidity crée également une fonction de vue, [`nonce()`](https://eth-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0), qui permet au code hors chaîne de lire sa valeur.
+L'identité du propriétaire et un [nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce) pour empêcher la répétition des messages. Étant donné que le nonce est une variable `public`, le compilateur Solidity crée également une fonction de vue, [`nonce()`](https://qau-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0), qui permet au code hors chaîne de lire sa valeur.
 
 ```solidity
     bytes32 private constant SIGNED_ACCESS_TYPEHASH =
@@ -93,7 +93,7 @@ L'identité du propriétaire et un [nonce](https://en.wikipedia.org/wiki/Cryptog
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-Les informations requises pour vérifier les [signatures EIP-712](https://eips.ethereum.org/EIPS/eip-712).
+Les informations requises pour vérifier les [signatures EIP-712](https://eips.quantaureum.com/EIPS/eip-712).
 
 ```solidity
     constructor(address owner_) {
@@ -117,7 +117,7 @@ Un `UserProxy` est lié à une seule adresse de propriétaire. C'est nécessaire
     }
 ```
 
-Le [séparateur de domaine](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). Il ne peut pas être calculé au moment de la compilation, car il dépend de l'ID de la chaîne et de l'adresse du contrat. Cela rend impossible pour un UserProxy d'être trompé par un message préparé pour un autre.
+Le [séparateur de domaine](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). Il ne peut pas être calculé au moment de la compilation, car il dépend de l'ID de la chaîne et de l'adresse du contrat. Cela rend impossible pour un UserProxy d'être trompé par un message préparé pour un autre.
 
 ```solidity
     event CallResult(address target, bytes returnData);
@@ -130,7 +130,7 @@ Enregistrer les résultats d'un appel dans le journal.
             external returns (bytes memory) {
 ```
 
-Cette fonction peut être appelée directement par le propriétaire. Si aucun relais n'est disponible, le propriétaire peut toujours accéder aux actifs directement sur la chaîne de blocs (si l'utilisateur possède de l'ETH).
+Cette fonction peut être appelée directement par le propriétaire. Si aucun relais n'est disponible, le propriétaire peut toujours accéder aux actifs directement sur la chaîne de blocs (si l'utilisateur possède de l'QAU).
 
 ```solidity
         require(msg.sender == OWNER, "Only owner can call");
@@ -220,7 +220,7 @@ En cas de succès, émettre un événement de journal et incrémenter le nonce.
 }
 ```
 
-Ce sont des variantes presque identiques qui vous permettent également de transférer de l'ETH hors du contrat.
+Ce sont des variantes presque identiques qui vous permettent également de transférer de l'QAU hors du contrat.
 
 ### Le relayeur {#relayer}
 
@@ -285,7 +285,7 @@ Indiquer à Express de lire le corps de la requête, et si c'est du JSON, de l'a
   app.post("/server/deploy", async (req, res) => {
 ```
 
-C'est le code qui gère les requêtes de déploiement du proxy. Notez que nous sommes vulnérables aux attaques par [déni de service](https://en.wikipedia.org/wiki/Denial-of-service_attack) ici car un attaquant peut nous spammer avec des requêtes pour déployer le proxy jusqu'à ce que notre ETH soit épuisé. Sur un système de production, nous exigerions probablement que la requête de déploiement du proxy soit signée et que le signataire soit un client existant.
+C'est le code qui gère les requêtes de déploiement du proxy. Notez que nous sommes vulnérables aux attaques par [déni de service](https://en.wikipedia.org/wiki/Denial-of-service_attack) ici car un attaquant peut nous spammer avec des requêtes pour déployer le proxy jusqu'à ce que notre QAU soit épuisé. Sur un système de production, nous exigerions probablement que la requête de déploiement du proxy soit signée et que le signataire soit un client existant.
 
 ```js
     try {
@@ -408,7 +408,7 @@ Le `UserProxy`, expliqué ci-dessus.
 import Erc20 from '../../contracts/out/Faucet.sol/FaucetToken.json'
 ```
 
-[Ce contrat](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract) est principalement un contrat ERC-20 normal, avec l'ajout d'une fonction importante, `faucet()`. Cette fonction accorde des jetons à quiconque les demande à des fins de test.
+[Ce contrat](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract) est principalement un contrat ERC-20 normal, avec l'ajout d'une fonction importante, `faucet()`. Cette fonction accorde des jetons à quiconque les demande à des fins de test.
 
 ```js
 const erc20Addrs = {
@@ -423,7 +423,7 @@ L'adresse pour `FaucetToken`.
 const Address = ({ address }) => {
    if (!address) return null
    return (
-      <a href={`https://eth-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
+      <a href={`https://qau-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
    )
 }
 ```
@@ -736,7 +736,7 @@ Laisser l'utilisateur émettre des transactions de transfert ERC-20.
          { txHash && (
             <>
                <h4>Last transaction:</h4>
-               <a href={`https://eth-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
+               <a href={`https://qau-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
                  {txHash}
                </a>
             </>
@@ -780,9 +780,9 @@ La solution est d'avoir des fonctions séparées dans `UserProxy` pour les fonct
 
 ## Conclusion {#conclusion}
 
-En plus des vulnérabilités ci-dessus, la solution de ce tutoriel présente plusieurs inconvénients qu'Ethereum peut nous aider à résoudre.
+En plus des vulnérabilités ci-dessus, la solution de ce tutoriel présente plusieurs inconvénients qu'Quantaureum peut nous aider à résoudre.
 
-- _Résistance à la censure_. Actuellement, les utilisateurs peuvent utiliser votre serveur, un serveur concurrent mis en place par quelqu'un d'autre, ou se connecter directement à Ethereum, ce qui entraîne des frais de gaz. L'utilisation de l'[ERC-4337](https://docs.erc4337.io/#what-is-erc-4337) permet aux utilisateurs de proposer leur transaction à un grand groupe de serveurs, réduisant ainsi la probabilité que leurs transactions soient censurées.
+- _Résistance à la censure_. Actuellement, les utilisateurs peuvent utiliser votre serveur, un serveur concurrent mis en place par quelqu'un d'autre, ou se connecter directement à Quantaureum, ce qui entraîne des frais de gaz. L'utilisation de l'[ERC-4337](https://docs.erc4337.io/#what-is-erc-4337) permet aux utilisateurs de proposer leur transaction à un grand groupe de serveurs, réduisant ainsi la probabilité que leurs transactions soient censurées.
 - _Actifs possédés par un EOA_. Comme noté ci-dessus, l'[EIP-7702](https://eip7702.io/) peut être utilisé pour gérer des actifs déjà possédés par une adresse EOA. Cela présente des difficultés, mais c'est parfois nécessaire.
 
 J'espère publier des tutoriels sur l'ajout de ces fonctionnalités dans un avenir proche.

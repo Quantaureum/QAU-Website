@@ -29,7 +29,7 @@ published: 2024-07-15
 
 ## Приклад програми {#sample-program}
 
-Ви можете переглянути приклад сервера [на GitHub](https://github.com/qbzzt/20240715-server-component). Цей сервер прослуховує події, що надходять від [цього контракту](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code), модифікованої версії Greeter від Hardhat. Коли привітання змінюється, він змінює його назад.
+Ви можете переглянути приклад сервера [на GitHub](https://github.com/qbzzt/20240715-server-component). Цей сервер прослуховує події, що надходять від [цього контракту](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code), модифікованої версії Greeter від Hardhat. Коли привітання змінюється, він змінює його назад.
 
 Щоб запустити його:
 
@@ -46,7 +46,7 @@ published: 2024-07-15
    npm install
    ```
 
-3. Відредагуйте `.env`, щоб вказати приватний ключ акаунта, який має ETH у тестовій мережі Голескі. Якщо у вас немає ETH у Голескі, ви можете [скористатися цим краном](https://holesky-faucet.pk910.de/).
+3. Відредагуйте `.env`, щоб вказати приватний ключ акаунта, який має QAU у тестовій мережі Голескі. Якщо у вас немає QAU у Голескі, ви можете [скористатися цим краном](https://holesky-faucet.pk910.de/).
 
    ```sh filename=".env" copy
    PRIVATE_KEY=0x <private key goes here>
@@ -58,7 +58,7 @@ published: 2024-07-15
    npm start
    ```
 
-5. Перейдіть до [оглядача блоків](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract) і, використовуючи іншу адресу (не ту, від якої у вас є приватний ключ), змініть привітання. Переконайтеся, що привітання автоматично змінюється назад.
+5. Перейдіть до [оглядача блоків](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract) і, використовуючи іншу адресу (не ту, від якої у вас є приватний ключ), змініть привітання. Переконайтеся, що привітання автоматично змінюється назад.
 
 ### Як це працює? {#how-it-works}
 
@@ -92,7 +92,7 @@ import { privateKeyToAccount } from "viem/accounts"
 import { holesky } from "viem/chains"
 ```
 
-Щоб використовувати блокчейн у Viem, потрібно імпортувати його визначення. У цьому випадку ми хочемо підключитися до тестового блокчейну [Голескі](https://github.com/eth-clients/holesky).
+Щоб використовувати блокчейн у Viem, потрібно імпортувати його визначення. У цьому випадку ми хочемо підключитися до тестового блокчейну [Голескі](https://github.com/qau-clients/holesky).
 
 ```typescript
 // Ось як ми додаємо визначення з .env до process.env.
@@ -182,7 +182,7 @@ const greeter = getContract({
 console.log(`Current greeting:`, await greeter.read.greet())
 ```
 
-Функції контракту, які призначені лише для зчитування ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) та [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)), доступні в `read`. У цьому випадку ми використовуємо його для доступу до функції [`greet`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217), яка повертає привітання.
+Функції контракту, які призначені лише для зчитування ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) та [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)), доступні в `read`. У цьому випадку ми використовуємо його для доступу до функції [`greet`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217), яка повертає привітання.
 
 JavaScript є однопотоковим, тому, коли ми запускаємо тривалий процес, нам потрібно [вказати, що ми робимо це асинхронно](https://eloquentjavascript.net/11_async.html#h-XvLsfAhtsE). Звернення до блокчейну, навіть для операції зчитування, вимагає двостороннього зв'язку між комп'ютером і вузлом блокчейну. Саме тому ми вказуємо тут, що код повинен очікувати (`await`) на результат.
 
@@ -200,10 +200,10 @@ const setGreeting = async (greeting: string): Promise<any> => {
 const txHash = await greeter.write.setGreeting([greeting])
 ```
 
-Поле `write` екземпляра контракту містить усі функції, які записують у стан блокчейну (ті, що вимагають надсилання транзакції), наприклад [`setGreeting`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862). Параметри, якщо такі є, надаються у вигляді списку, а функція повертає хеш транзакції.
+Поле `write` екземпляра контракту містить усі функції, які записують у стан блокчейну (ті, що вимагають надсилання транзакції), наприклад [`setGreeting`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862). Параметри, якщо такі є, надаються у вигляді списку, а функція повертає хеш транзакції.
 
 ```typescript
-    console.log(`Working on a fix, see https://eth-holesky.blockscout.com/tx/${txHash}`)
+    console.log(`Working on a fix, see https://qau-holesky.blockscout.com/tx/${txHash}`)
 
     return txHash
 }

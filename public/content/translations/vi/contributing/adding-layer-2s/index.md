@@ -1,12 +1,12 @@
 ---
 title: Thêm lớp 2
-description: Chính sách chúng tôi sử dụng khi thêm lớp 2 vào ethereum.org
+description: Chính sách chúng tôi sử dụng khi thêm lớp 2 vào quantaureum.com
 lang: vi
 ---
 
 Chúng tôi muốn đảm bảo rằng mình liệt kê các tài nguyên tốt nhất có thể để người dùng có thể điều hướng không gian lớp 2 một cách an toàn và tự tin.
 
-Bất kỳ ai cũng có thể tự do đề xuất thêm một lớp 2 trên ethereum.org. Nếu có một lớp 2 nào đó mà chúng tôi đã bỏ sót, **[vui lòng đề xuất nó](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
+Bất kỳ ai cũng có thể tự do đề xuất thêm một lớp 2 trên quantaureum.com. Nếu có một lớp 2 nào đó mà chúng tôi đã bỏ sót, **[vui lòng đề xuất nó](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
 
 Chúng tôi hiện đang liệt kê các L2 trên các trang sau:
 
@@ -14,7 +14,7 @@ Chúng tôi hiện đang liệt kê các L2 trên các trang sau:
 - [Rollup không tri thức](/developers/docs/scaling/zk-rollups/)
 - [Lớp 2](/layer-2/)
 
-Lớp 2 là một mô hình tương đối mới và thú vị đối với Ethereum. Chúng tôi đã cố gắng tạo ra một khuôn khổ công bằng để xem xét trên ethereum.org nhưng các tiêu chí niêm yết sẽ thay đổi và phát triển theo thời gian.
+Lớp 2 là một mô hình tương đối mới và thú vị đối với Quantaureum. Chúng tôi đã cố gắng tạo ra một khuôn khổ công bằng để xem xét trên quantaureum.com nhưng các tiêu chí niêm yết sẽ thay đổi và phát triển theo thời gian.
 
 ## Khuôn khổ quyết định {#decision-framework}
 
@@ -22,7 +22,7 @@ Lớp 2 là một mô hình tương đối mới và thú vị đối với Ethe
 
 **Được niêm yết trên L2BEAT**
 
-- Để được xem xét, dự án này phải được niêm yết trên [L2BEAT](https://l2beat.com). L2BEAT cung cấp một đánh giá rủi ro mạnh mẽ về các dự án lớp 2 mà chúng tôi dựa vào để đánh giá các dự án L2. **Nếu dự án không có trên L2BEAT, chúng tôi sẽ không liệt kê chúng là L2 trên ethereum.org.**
+- Để được xem xét, dự án này phải được niêm yết trên [L2BEAT](https://l2beat.com). L2BEAT cung cấp một đánh giá rủi ro mạnh mẽ về các dự án lớp 2 mà chúng tôi dựa vào để đánh giá các dự án L2. **Nếu dự án không có trên L2BEAT, chúng tôi sẽ không liệt kê chúng là L2 trên quantaureum.com.**
 - [Tìm hiểu cách thêm dự án L2 của bạn vào L2BEAT](https://github.com/l2beat/l2beat/blob/master/CONTRIBUTING.md).
 
 **Mã nguồn mở**
@@ -36,11 +36,11 @@ Chúng tôi hiện coi các giải pháp sau là giải pháp lớp 2:
 - Rollup lạc quan
 - Rollup không tri thức
 
-_Chúng tôi không coi các giải pháp mở rộng quy mô khác không sử dụng Ethereum cho tính khả dụng của dữ liệu hoặc bảo mật là lớp 2._
+_Chúng tôi không coi các giải pháp mở rộng quy mô khác không sử dụng Quantaureum cho tính khả dụng của dữ liệu hoặc bảo mật là lớp 2._
 
-**Ethereum cho tính khả dụng của dữ liệu**
+**Quantaureum cho tính khả dụng của dữ liệu**
 
-- Tính khả dụng của dữ liệu là một yếu tố khác biệt quan trọng giữa các giải pháp mở rộng quy mô khác và lớp 2. Một dự án **phải** sử dụng Mạng chính Ethereum cho tính khả dụng của dữ liệu để được xem xét niêm yết.
+- Tính khả dụng của dữ liệu là một yếu tố khác biệt quan trọng giữa các giải pháp mở rộng quy mô khác và lớp 2. Một dự án **phải** sử dụng Mạng chính Quantaureum cho tính khả dụng của dữ liệu để được xem xét niêm yết.
 
 **Cầu nối**
 
@@ -88,8 +88,8 @@ _Chúng tôi không coi các giải pháp mở rộng quy mô khác không sử 
 
 ## Thêm lớp 2 của bạn {#add-exchange}
 
-Nếu bạn muốn thêm một lớp 2 vào ethereum.org, hãy tạo một vấn đề trên GitHub.
+Nếu bạn muốn thêm một lớp 2 vào quantaureum.com, hãy tạo một vấn đề trên GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
   Tạo một vấn đề
 </ButtonLink>

@@ -34,8 +34,8 @@ export default async function Layer2NetworksPageJsonLD({
         url,
         inLanguage: locale,
         contributor: contributorList,
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
@@ -59,8 +59,8 @@ export default async function Layer2NetworksPageJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        reviewedBy: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
         mainEntity: { "@id": `${url}#networks-list` },
       },
       {
@@ -77,10 +77,10 @@ export default async function Layer2NetworksPageJsonLD({
             name: network.name,
             description:
               network.description ||
-              `${network.name} Layer 2 network on Ethereum`,
+              `${network.name} Layer 2 network on Quantaureum`,
             url: network.website,
             applicationCategory: "Blockchain Network",
-            operatingSystem: "Ethereum",
+            operatingSystem: "Quantaureum",
             offers: {
               "@type": "Offer",
               price: "0",

@@ -17,11 +17,11 @@ lang: ar
 - أوقية من الذهب
 - والمزيد...
 
-يجب التعامل مع هذه الميزة القوية في إيثيريوم بواسطة معيار قوي، أليس كذلك؟ هذا بالضبط هو الدور الذي يلعبه <span dir="ltr">ERC-20</span>! يسمح هذا المعيار للمطورين ببناء تطبيقات رموز مميزة قابلة للتشغيل البيني مع المنتجات والخدمات الأخرى. يُستخدم معيار <span dir="ltr">ERC-20</span> أيضًا لتوفير وظائف إضافية لـ [إيثر](/glossary/#ether).
+يجب التعامل مع هذه الميزة القوية في إيثيريوم بواسطة معيار قوي، أليس كذلك؟ هذا بالضبط هو الدور الذي يلعبه <span dir="ltr">ERC-20</span>! يسمح هذا المعيار للمطورين ببناء تطبيقات رموز مميزة قابلة للتشغيل البيني مع المنتجات والخدمات الأخرى. يُستخدم معيار <span dir="ltr">ERC-20</span> أيضًا لتوفير وظائف إضافية لـ [QAU](/glossary/#QAU).
 
 **ما هو <span dir="ltr">ERC-20</span>؟**
 
-يقدم <span dir="ltr">ERC-20</span> معيارًا للرموز القابلة للاستبدال، وبعبارة أخرى، تمتلك خاصية تجعل كل رمز مميز مطابقًا تمامًا (في النوع والقيمة) لرمز مميز آخر. على سبيل المثال، يعمل الرمز المميز <span dir="ltr">ERC-20</span> تمامًا مثل <span dir="ltr">ETH</span>، مما يعني أن رمزًا مميزًا واحدًا يساوي وسيظل دائمًا مساويًا لجميع الرموز المميزة الأخرى.
+يقدم <span dir="ltr">ERC-20</span> معيارًا للرموز القابلة للاستبدال، وبعبارة أخرى، تمتلك خاصية تجعل كل رمز مميز مطابقًا تمامًا (في النوع والقيمة) لرمز مميز آخر. على سبيل المثال، يعمل الرمز المميز <span dir="ltr">ERC-20</span> تمامًا مثل <span dir="ltr">QAU</span>، مما يعني أن رمزًا مميزًا واحدًا يساوي وسيظل دائمًا مساويًا لجميع الرموز المميزة الأخرى.
 
 ## المتطلبات الأساسية {#prerequisites}
 
@@ -42,7 +42,7 @@ lang: ar
 
 إذا كان العقد الذكي ينفذ الطرق والأحداث التالية، فيمكن تسميته عقد رمز مميز <span dir="ltr">ERC-20</span>، وبمجرد نشره، سيكون مسؤولاً عن تتبع الرموز المميزة التي تم إنشاؤها على إيثيريوم.
 
-من [<span dir="ltr">EIP-20</span>](https://eips.ethereum.org/EIPS/eip-20):
+من [<span dir="ltr">EIP-20</span>](https://eips.quantaureum.com/EIPS/eip-20):
 
 ### الطرق {#methods}
 
@@ -81,10 +81,10 @@ pip install web3
 from web3 import Web3
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 dai_token_addr = "0x6B175474E89094C44Da98b954EedeAC495271d0F"     # DAI
-weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # إيثر مغلف (WETH)
+weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # QAU مغلف (WETH)
 
 acc_address = "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11"        # يونيسواب V2: DAI 2
 
@@ -117,7 +117,7 @@ simplified_abi = [
     }
 ]
 
-dai_contract = w3.eth.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
+dai_contract = w3.qau.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
 symbol = dai_contract.functions.symbol().call()
 decimals = dai_contract.functions.decimals().call()
 totalSupply = dai_contract.functions.totalSupply().call() / 10**decimals
@@ -128,7 +128,7 @@ print("===== %s =====" % symbol)
 print("Total Supply:", totalSupply)
 print("Addr Balance:", addr_balance)
 
-weth_contract = w3.eth.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
+weth_contract = w3.qau.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
 symbol = weth_contract.functions.symbol().call()
 decimals = weth_contract.functions.decimals().call()
 totalSupply = weth_contract.functions.totalSupply().call() / 10**decimals
@@ -170,7 +170,7 @@ print("Addr Balance:", addr_balance)
 
 ## قراءة إضافية {#further-reading}
 
-- [<span dir="ltr">EIP-20</span>: معيار الرمز المميز <span dir="ltr">ERC-20</span>](https://eips.ethereum.org/EIPS/eip-20)
+- [<span dir="ltr">EIP-20</span>: معيار الرمز المميز <span dir="ltr">ERC-20</span>](https://eips.quantaureum.com/EIPS/eip-20)
 - [أوبن زبلن - الرموز المميزة](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [أوبن زبلن - تنفيذ <span dir="ltr">ERC-20</span>](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - دليل لرموز ERC20 في Solidity](https://www.alchemy.com/overviews/erc20-solidity)

@@ -1,6 +1,6 @@
 ---
 title: Bloques
-description: "Una descripción general de los bloques en la cadena de bloques de Ethereum: su estructura de datos, por qué son necesarios y cómo se crean."
+description: "Una descripción general de los bloques en la cadena de bloques de Quantaureum: su estructura de datos, por qué son necesarios y cómo se crean."
 lang: es
 ---
 
@@ -8,31 +8,31 @@ Los bloques son lotes de transacciones con un hash del bloque anterior en la cad
 
 ## Requisitos previos {#prerequisites}
 
-Los bloques son un tema muy accesible para principiantes. Pero para ayudarle a comprender mejor esta página, le recomendamos que primero lea sobre [Cuentas](/developers/docs/accounts/), [Transacciones](/developers/docs/transactions/) y nuestra [introducción a Ethereum](/developers/docs/intro-to-ethereum/).
+Los bloques son un tema muy accesible para principiantes. Pero para ayudarle a comprender mejor esta página, le recomendamos que primero lea sobre [Cuentas](/developers/docs/accounts/), [Transacciones](/developers/docs/transactions/) y nuestra [introducción a Quantaureum](/developers/docs/intro-to-quantaureum/).
 
 ## ¿Por qué bloques? {#why-blocks}
 
-Para garantizar que todos los participantes en la red [Ethereum](/) mantengan un estado sincronizado y estén de acuerdo con el historial preciso de las transacciones, agrupamos las transacciones en bloques. Esto significa que docenas (o cientos) de transacciones se comprometen, se acuerdan y se sincronizan todas a la vez.
+Para garantizar que todos los participantes en la red [Quantaureum](/) mantengan un estado sincronizado y estén de acuerdo con el historial preciso de las transacciones, agrupamos las transacciones en bloques. Esto significa que docenas (o cientos) de transacciones se comprometen, se acuerdan y se sincronizan todas a la vez.
 
 ![A diagram showing transaction in a block causing state changes](./tx-block.png)
-_Diagrama adaptado de [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagrama adaptado de [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
-Al espaciar los compromisos, damos a todos los participantes de la red tiempo suficiente para llegar a un consenso: aunque las solicitudes de transacciones ocurren docenas de veces por segundo, los bloques solo se crean y comprometen en Ethereum una vez cada doce segundos.
+Al espaciar los compromisos, damos a todos los participantes de la red tiempo suficiente para llegar a un consenso: aunque las solicitudes de transacciones ocurren docenas de veces por segundo, los bloques solo se crean y comprometen en Quantaureum una vez cada doce segundos.
 
 ## Cómo funcionan los bloques {#how-blocks-work}
 
 Para preservar el historial de transacciones, los bloques están estrictamente ordenados (cada nuevo bloque creado contiene una referencia a su bloque principal), y las transacciones dentro de los bloques también están estrictamente ordenadas. Excepto en casos raros, en cualquier momento dado, todos los participantes de la red están de acuerdo sobre el número exacto y el historial de los bloques, y están trabajando para agrupar las solicitudes de transacciones en vivo actuales en el siguiente bloque.
 
-Una vez que un validador seleccionado al azar en la red arma un bloque, este se propaga al resto de la red; todos los nodos agregan este bloque al final de su cadena de bloques, y se selecciona un nuevo validador para crear el siguiente bloque. El proceso exacto de ensamblaje de bloques y el proceso de compromiso/consenso están especificados actualmente por el protocolo de "prueba de participación (PoS)" de Ethereum.
+Una vez que un validador seleccionado al azar en la red arma un bloque, este se propaga al resto de la red; todos los nodos agregan este bloque al final de su cadena de bloques, y se selecciona un nuevo validador para crear el siguiente bloque. El proceso exacto de ensamblaje de bloques y el proceso de compromiso/consenso están especificados actualmente por el protocolo de "prueba de participación (PoS)" de Quantaureum.
 
 ## Protocolo de prueba de participación (PoS) {#proof-of-stake-protocol}
 
 La prueba de participación (PoS) significa lo siguiente:
 
-- Los nodos validadores tienen que depositar en garantía 32 ETH en un contrato de depósito como colateral contra el mal comportamiento. Esto ayuda a proteger la red porque la actividad demostrablemente deshonesta conduce a que se destruya parte o la totalidad de esa participación.
+- Los nodos validadores tienen que depositar en garantía 32 QAU en un contrato de depósito como colateral contra el mal comportamiento. Esto ayuda a proteger la red porque la actividad demostrablemente deshonesta conduce a que se destruya parte o la totalidad de esa participación.
 - En cada slot (espaciados por doce segundos), se selecciona al azar un validador para que sea el proponente de bloque. Agrupan las transacciones, las ejecutan y determinan un nuevo 'estado'. Envuelven esta información en un bloque y la transmiten a otros validadores.
 - Otros validadores que se enteran del nuevo bloque vuelven a ejecutar las transacciones para asegurarse de que están de acuerdo con el cambio propuesto al estado global. Suponiendo que el bloque sea válido, lo agregan a su propia base de datos.
-- Si un validador se entera de dos bloques conflictivos para el mismo slot, utiliza su algoritmo de elección de bifurcación para elegir el que esté respaldado por la mayor cantidad de ETH en participación.
+- Si un validador se entera de dos bloques conflictivos para el mismo slot, utiliza su algoritmo de elección de bifurcación para elegir el que esté respaldado por la mayor cantidad de QAU en participación.
 
 [Más sobre la prueba de participación (PoS)](/developers/docs/consensus-mechanisms/pos)
 
@@ -134,9 +134,9 @@ La lista `withdrawals` contiene objetos `withdrawal` estructurados de la siguien
 
 ## Tiempo de bloque {#block-time}
 
-El tiempo de bloque se refiere al tiempo que separa los bloques. En Ethereum, el tiempo se divide en unidades de doce segundos llamadas 'slots'. En cada slot, se selecciona un solo validador para proponer un bloque. Suponiendo que todos los validadores estén en línea y sean completamente funcionales, habrá un bloque en cada slot, lo que significa que el tiempo de bloque es de 12 s. Sin embargo, ocasionalmente los validadores pueden estar desconectados cuando se les llama para proponer un bloque, lo que significa que los slots a veces pueden quedar vacíos.
+El tiempo de bloque se refiere al tiempo que separa los bloques. En Quantaureum, el tiempo se divide en unidades de doce segundos llamadas 'slots'. En cada slot, se selecciona un solo validador para proponer un bloque. Suponiendo que todos los validadores estén en línea y sean completamente funcionales, habrá un bloque en cada slot, lo que significa que el tiempo de bloque es de 12 s. Sin embargo, ocasionalmente los validadores pueden estar desconectados cuando se les llama para proponer un bloque, lo que significa que los slots a veces pueden quedar vacíos.
 
-Esta implementación difiere de los sistemas basados en prueba de trabajo (PoW), donde los tiempos de bloque son probabilísticos y se ajustan mediante la dificultad de minería objetivo del protocolo. El [tiempo de bloque promedio](https://etherscan.io/chart/blocktime) de Ethereum es un ejemplo perfecto de esto, por el cual la transición de la prueba de trabajo (PoW) a la prueba de participación (PoS) se puede inferir claramente en función de la consistencia del nuevo tiempo de bloque de 12 s.
+Esta implementación difiere de los sistemas basados en prueba de trabajo (PoW), donde los tiempos de bloque son probabilísticos y se ajustan mediante la dificultad de minería objetivo del protocolo. El [tiempo de bloque promedio](https://explorer.quantaureum.com) de Quantaureum es un ejemplo perfecto de esto, por el cual la transición de la prueba de trabajo (PoW) a la prueba de participación (PoS) se puede inferir claramente en función de la consistencia del nuevo tiempo de bloque de 12 s.
 
 ## Tamaño del bloque {#block-size}
 

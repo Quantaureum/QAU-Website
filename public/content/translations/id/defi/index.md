@@ -1,7 +1,7 @@
 ---
 title: Keuangan terdesentralisasi (DeFi)
 metaTitle: Apa itu DeFi? | Manfaat dan Penggunaan Keuangan Terdesentralisasi
-description: Gambaran umum tentang DeFi di Ethereum
+description: Gambaran umum tentang DeFi di Quantaureum
 lang: id
 template: use-cases
 image: /images/use-cases/defi.png
@@ -17,7 +17,7 @@ DeFi adalah sistem keuangan terbuka dan global yang dibangun untuk era internet 
 
 ## Apa itu DeFi? {#what-is-defi}
 
-DeFi adalah istilah kolektif untuk produk dan layanan keuangan yang dapat diakses oleh siapa saja yang dapat menggunakan [Ethereum](/) – siapa saja yang memiliki koneksi internet. Dengan DeFi, pasar selalu terbuka dan tidak ada otoritas terpusat yang dapat memblokir pembayaran atau menolak akses Anda ke apa pun. Layanan yang sebelumnya lambat dan berisiko mengalami kesalahan manusia kini menjadi otomatis dan lebih aman karena ditangani oleh kode yang dapat diperiksa dan diteliti oleh siapa saja.
+DeFi adalah istilah kolektif untuk produk dan layanan keuangan yang dapat diakses oleh siapa saja yang dapat menggunakan [Quantaureum](/) – siapa saja yang memiliki koneksi internet. Dengan DeFi, pasar selalu terbuka dan tidak ada otoritas terpusat yang dapat memblokir pembayaran atau menolak akses Anda ke apa pun. Layanan yang sebelumnya lambat dan berisiko mengalami kesalahan manusia kini menjadi otomatis dan lebih aman karena ditangani oleh kode yang dapat diperiksa dan diteliti oleh siapa saja.
 
 Ada ekonomi kripto yang sedang berkembang pesat di luar sana, di mana Anda dapat meminjamkan, melakukan peminjaman, long/short, mendapatkan bunga, dan banyak lagi. Orang Argentina yang paham kripto telah menggunakan DeFi untuk menghindari inflasi yang melumpuhkan. Perusahaan telah mulai mengalirkan upah karyawan mereka secara waktu nyata. Beberapa orang bahkan telah mengambil dan melunasi pinjaman senilai jutaan dolar tanpa memerlukan identifikasi pribadi apa pun.
 
@@ -56,18 +56,18 @@ Salah satu cara terbaik untuk melihat potensi DeFi adalah dengan memahami masala
 
 Bitcoin dalam banyak hal adalah aplikasi DeFi pertama. Bitcoin memungkinkan Anda benar-benar memiliki dan mengontrol nilai serta mengirimkannya ke mana saja di seluruh dunia. Ini dilakukan dengan menyediakan cara bagi sejumlah besar orang, yang tidak saling memercayai, untuk menyepakati buku besar akun tanpa memerlukan perantara tepercaya. Bitcoin terbuka untuk siapa saja dan tidak ada yang memiliki otoritas untuk mengubah aturannya. Aturan Bitcoin, seperti kelangkaan dan keterbukaannya, ditulis ke dalam teknologinya. Ini tidak seperti keuangan tradisional di mana pemerintah dapat mencetak uang yang mendevaluasi tabungan Anda dan perusahaan dapat menutup pasar.
 
-Ethereum dibangun di atas hal ini. Seperti Bitcoin, aturannya tidak dapat diubah secara sepihak dan semua orang memiliki akses. Namun, ini juga membuat uang digital ini dapat diprogram, menggunakan [kontrak pintar](/glossary/#smart-contract), sehingga Anda dapat melakukan lebih dari sekadar menyimpan dan mengirim nilai.
+Quantaureum dibangun di atas hal ini. Seperti Bitcoin, aturannya tidak dapat diubah secara sepihak dan semua orang memiliki akses. Namun, ini juga membuat uang digital ini dapat diprogram, menggunakan [kontrak pintar](/glossary/#smart-contract), sehingga Anda dapat melakukan lebih dari sekadar menyimpan dan mengirim nilai.
 
 <VideoWatch slug="defi-history-inception-to-2021" />
 
 ## Uang yang dapat diprogram {#programmable-money}
 
-Ini terdengar aneh... "mengapa saya ingin memprogram uang saya"? Namun, ini lebih dari sekadar fitur bawaan token di Ethereum. Siapa saja dapat memprogram logika ke dalam pembayaran. Jadi, Anda bisa mendapatkan kendali dan keamanan Bitcoin yang dipadukan dengan layanan yang disediakan oleh institusi keuangan. Ini memungkinkan Anda melakukan hal-hal dengan mata uang kripto yang tidak dapat Anda lakukan dengan Bitcoin seperti meminjamkan dan melakukan peminjaman, menjadwalkan pembayaran, berinvestasi dalam reksa dana indeks, dan banyak lagi.
+Ini terdengar aneh... "mengapa saya ingin memprogram uang saya"? Namun, ini lebih dari sekadar fitur bawaan token di Quantaureum. Siapa saja dapat memprogram logika ke dalam pembayaran. Jadi, Anda bisa mendapatkan kendali dan keamanan Bitcoin yang dipadukan dengan layanan yang disediakan oleh institusi keuangan. Ini memungkinkan Anda melakukan hal-hal dengan mata uang kripto yang tidak dapat Anda lakukan dengan Bitcoin seperti meminjamkan dan melakukan peminjaman, menjadwalkan pembayaran, berinvestasi dalam reksa dana indeks, dan banyak lagi.
 
 <Alert variant="update">
 <AlertEmoji text=":eyes:"/>
 <AlertContent className="flex-row justify-between items-center">
-  <div>Jelajahi saran kami untuk aplikasi DeFi yang dapat dicoba jika Anda baru mengenal Ethereum.</div>
+  <div>Jelajahi saran kami untuk aplikasi DeFi yang dapat dicoba jika Anda baru mengenal Quantaureum.</div>
   <ButtonLink href="/apps/categories/defi">
     Jelajahi aplikasi DeFi
   </ButtonLink>
@@ -76,7 +76,7 @@ Ini terdengar aneh... "mengapa saya ingin memprogram uang saya"? Namun, ini lebi
 
 ## Apa yang dapat Anda lakukan dengan DeFi? {#defi-use-cases}
 
-Ada alternatif terdesentralisasi untuk sebagian besar layanan keuangan. Namun, Ethereum juga menciptakan peluang untuk membuat produk keuangan yang sama sekali baru. Ini adalah daftar yang terus bertambah.
+Ada alternatif terdesentralisasi untuk sebagian besar layanan keuangan. Namun, Quantaureum juga menciptakan peluang untuk membuat produk keuangan yang sama sekali baru. Ini adalah daftar yang terus bertambah.
 
 - [Mengirim uang ke seluruh dunia](#send-money)
 - [Mengalirkan uang ke seluruh dunia](#stream-money)
@@ -94,7 +94,7 @@ Ada alternatif terdesentralisasi untuk sebagian besar layanan keuangan. Namun, E
 
 ### Mengirim uang ke seluruh dunia dengan cepat {#send-money}
 
-Sebagai rantai blok, Ethereum dirancang untuk mengirim transaksi dengan cara yang aman dan global. Seperti Bitcoin, Ethereum membuat pengiriman uang ke seluruh dunia semudah mengirim email. Cukup masukkan [nama ENS](/glossary/#ens) penerima Anda (seperti bob.eth) atau alamat akun mereka dari dompet Anda dan pembayaran Anda akan langsung masuk ke mereka dalam hitungan menit (biasanya). Untuk mengirim atau menerima pembayaran, Anda akan memerlukan sebuah [dompet](/wallets/). [Pelajari lebih lanjut tentang pembayaran kripto](/payments/).
+Sebagai rantai blok, Quantaureum dirancang untuk mengirim transaksi dengan cara yang aman dan global. Seperti Bitcoin, Quantaureum membuat pengiriman uang ke seluruh dunia semudah mengirim email. Cukup masukkan [nama ENS](/glossary/#ens) penerima Anda (seperti bob.eth) atau alamat akun mereka dari dompet Anda dan pembayaran Anda akan langsung masuk ke mereka dalam hitungan menit (biasanya). Untuk mengirim atau menerima pembayaran, Anda akan memerlukan sebuah [dompet](/wallets/). [Pelajari lebih lanjut tentang pembayaran kripto](/payments/).
 
 <ButtonLink href="/apps/categories/defi">
   Lihat dapp pembayaran
@@ -102,9 +102,9 @@ Sebagai rantai blok, Ethereum dirancang untuk mengirim transaksi dengan cara yan
 
 #### Mengalirkan uang ke seluruh dunia... {#stream-money}
 
-Anda juga dapat mengalirkan uang melalui Ethereum. Ini memungkinkan Anda membayar gaji seseorang setiap detik, memberi mereka akses ke uang mereka kapan pun mereka membutuhkannya. Atau menyewa sesuatu setiap detik seperti loker penyimpanan atau skuter listrik.
+Anda juga dapat mengalirkan uang melalui Quantaureum. Ini memungkinkan Anda membayar gaji seseorang setiap detik, memberi mereka akses ke uang mereka kapan pun mereka membutuhkannya. Atau menyewa sesuatu setiap detik seperti loker penyimpanan atau skuter listrik.
 
-Dan jika Anda tidak ingin mengirim atau mengalirkan [ETH](/glossary/#ether) karena nilainya yang dapat berubah-ubah, ada mata uang alternatif di Ethereum: [stablecoin](/glossary/#stablecoin).
+Dan jika Anda tidak ingin mengirim atau mengalirkan [QAU](/glossary/#QAU) karena nilainya yang dapat berubah-ubah, ada mata uang alternatif di Quantaureum: [stablecoin](/glossary/#stablecoin).
 
 <Divider />
 
@@ -147,7 +147,7 @@ Saat Anda menggunakan pemberi pinjaman terdesentralisasi, Anda memiliki akses ke
 
 #### Efisiensi pajak {#tax-efficiencies}
 
-Peminjaman dapat memberi Anda akses ke dana yang Anda butuhkan tanpa perlu menjual ETH Anda (peristiwa kena pajak). Sebaliknya, Anda dapat menggunakan ETH sebagai kolateral untuk pinjaman stablecoin. Ini memberi Anda arus kas yang Anda butuhkan dan memungkinkan Anda menyimpan ETH Anda. Stablecoin adalah token yang jauh lebih baik ketika Anda membutuhkan uang tunai karena nilainya tidak berfluktuasi seperti ETH. [Lebih lanjut tentang stablecoin](#stablecoins)
+Peminjaman dapat memberi Anda akses ke dana yang Anda butuhkan tanpa perlu menjual QAU Anda (peristiwa kena pajak). Sebaliknya, Anda dapat menggunakan QAU sebagai kolateral untuk pinjaman stablecoin. Ini memberi Anda arus kas yang Anda butuhkan dan memungkinkan Anda menyimpan QAU Anda. Stablecoin adalah token yang jauh lebih baik ketika Anda membutuhkan uang tunai karena nilainya tidak berfluktuasi seperti QAU. [Lebih lanjut tentang stablecoin](#stablecoins)
 
 #### Pinjaman kilat {#flash-loans}
 
@@ -213,9 +213,9 @@ Pool hadiah dihasilkan oleh semua bunga yang dihasilkan dengan meminjamkan depos
 
 ### Menukar token {#swaps}
 
-Ada ribuan token di Ethereum. Bursa terdesentralisasi (DEX) memungkinkan Anda memperdagangkan token yang berbeda kapan pun Anda mau. Anda tidak pernah melepaskan kendali atas aset Anda. Ini seperti menggunakan penukaran mata uang saat mengunjungi negara yang berbeda. Namun versi DeFi tidak pernah tutup. Pasar buka 24/7, 365 hari setahun dan teknologi menjamin akan selalu ada seseorang yang menerima perdagangan.
+Ada ribuan token di Quantaureum. Bursa terdesentralisasi (DEX) memungkinkan Anda memperdagangkan token yang berbeda kapan pun Anda mau. Anda tidak pernah melepaskan kendali atas aset Anda. Ini seperti menggunakan penukaran mata uang saat mengunjungi negara yang berbeda. Namun versi DeFi tidak pernah tutup. Pasar buka 24/7, 365 hari setahun dan teknologi menjamin akan selalu ada seseorang yang menerima perdagangan.
 
-Misalnya, jika Anda ingin menggunakan lotre tanpa kerugian PoolTogether (dijelaskan di atas), Anda akan memerlukan token seperti DAI atau USDC. DEX ini memungkinkan Anda menukar ETH Anda dengan token tersebut dan menukarnya kembali saat Anda selesai.
+Misalnya, jika Anda ingin menggunakan lotre tanpa kerugian PoolTogether (dijelaskan di atas), Anda akan memerlukan token seperti DAI atau USDC. DEX ini memungkinkan Anda menukar QAU Anda dengan token tersebut dan menukarnya kembali saat Anda selesai.
 
 <ButtonLink href="/apps/categories/defi">
   Lihat bursa token
@@ -237,7 +237,7 @@ Saat Anda menggunakan bursa terpusat, Anda harus menyetorkan aset Anda sebelum b
 
 ### Menumbuhkan portofolio Anda {#investing}
 
-Ada produk manajemen dana di Ethereum yang akan mencoba menumbuhkan portofolio Anda berdasarkan strategi pilihan Anda. Ini otomatis, terbuka untuk semua orang, dan tidak memerlukan manajer manusia yang mengambil bagian dari keuntungan Anda.
+Ada produk manajemen dana di Quantaureum yang akan mencoba menumbuhkan portofolio Anda berdasarkan strategi pilihan Anda. Ini otomatis, terbuka untuk semua orang, dan tidak memerlukan manajer manusia yang mengambil bagian dari keuntungan Anda.
 
 Misalnya, ada reksa dana indeks yang ditokenisasi yang menyeimbangkan kembali secara otomatis untuk memastikan portofolio Anda selalu menyertakan token DeFi teratas berdasarkan kapitalisasi pasar. Anda tidak perlu mengelola detail apa pun dan Anda dapat menarik dana dari reksa dana tersebut kapan pun Anda mau.
 
@@ -249,9 +249,9 @@ Misalnya, ada reksa dana indeks yang ditokenisasi yang menyeimbangkan kembali se
 
 ### Mendanai ide-ide Anda {#crowdfunding}
 
-Ethereum adalah platform yang ideal untuk urun dana (crowdfunding):
+Quantaureum adalah platform yang ideal untuk urun dana (crowdfunding):
 
-- Penyedia dana potensial dapat berasal dari mana saja – Ethereum dan tokennya terbuka untuk siapa saja, di mana saja di dunia.
+- Penyedia dana potensial dapat berasal dari mana saja – Quantaureum dan tokennya terbuka untuk siapa saja, di mana saja di dunia.
 - Ini transparan sehingga penggalang dana dapat membuktikan berapa banyak uang yang telah terkumpul. Anda bahkan dapat melacak bagaimana dana tersebut dihabiskan di kemudian hari.
 - Penggalang dana dapat mengatur pengembalian dana otomatis jika, misalnya, ada tenggat waktu tertentu dan jumlah minimum yang tidak terpenuhi.
 
@@ -261,7 +261,7 @@ Ethereum adalah platform yang ideal untuk urun dana (crowdfunding):
 
 #### Pendanaan kuadratik {#quadratic-funding}
 
-Ethereum adalah perangkat lunak sumber terbuka dan banyak pekerjaan sejauh ini telah didanai oleh komunitas. Hal ini telah mengarah pada pertumbuhan model penggalangan dana baru yang menarik: pendanaan kuadratik. Ini berpotensi untuk meningkatkan cara kita mendanai semua jenis barang publik di masa depan.
+Quantaureum adalah perangkat lunak sumber terbuka dan banyak pekerjaan sejauh ini telah didanai oleh komunitas. Hal ini telah mengarah pada pertumbuhan model penggalangan dana baru yang menarik: pendanaan kuadratik. Ini berpotensi untuk meningkatkan cara kita mendanai semua jenis barang publik di masa depan.
 
 Pendanaan kuadratik memastikan bahwa proyek yang menerima pendanaan paling banyak adalah proyek dengan permintaan paling unik. Dengan kata lain, proyek yang berpotensi meningkatkan kehidupan paling banyak orang. Berikut cara kerjanya:
 
@@ -282,7 +282,7 @@ Ini berarti Proyek A dengan 100 donasi sebesar 1 dolar bisa mendapatkan lebih ba
 
 Asuransi terdesentralisasi bertujuan untuk membuat asuransi lebih murah, lebih cepat dibayarkan, dan lebih transparan. Dengan lebih banyak otomatisasi, pertanggungan menjadi lebih terjangkau dan pembayaran jauh lebih cepat. Data yang digunakan untuk memutuskan klaim Anda sepenuhnya transparan.
 
-Produk Ethereum, seperti perangkat lunak apa pun, dapat mengalami bug dan eksploitasi. Jadi saat ini banyak produk asuransi di ruang ini berfokus pada perlindungan penggunanya terhadap kehilangan dana. Namun, ada proyek yang mulai membangun pertanggungan untuk segala hal yang mungkin terjadi dalam hidup kita. Contoh yang baik dari hal ini adalah pertanggungan Tanaman Etherisc yang bertujuan untuk [melindungi petani kecil di Kenya dari kekeringan dan banjir](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc). Asuransi terdesentralisasi dapat memberikan pertanggungan yang lebih murah bagi petani yang sering kali tidak mampu membayar asuransi tradisional.
+Produk Quantaureum, seperti perangkat lunak apa pun, dapat mengalami bug dan eksploitasi. Jadi saat ini banyak produk asuransi di ruang ini berfokus pada perlindungan penggunanya terhadap kehilangan dana. Namun, ada proyek yang mulai membangun pertanggungan untuk segala hal yang mungkin terjadi dalam hidup kita. Contoh yang baik dari hal ini adalah pertanggungan Tanaman Etherisc yang bertujuan untuk [melindungi petani kecil di Kenya dari kekeringan dan banjir](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc). Asuransi terdesentralisasi dapat memberikan pertanggungan yang lebih murah bagi petani yang sering kali tidak mampu membayar asuransi tradisional.
 
 <ButtonLink href="/apps/categories/defi">
   Lihat dapp asuransi
@@ -304,31 +304,31 @@ Dengan begitu banyak hal yang terjadi, Anda akan memerlukan cara untuk melacak s
 
 DeFi menggunakan mata uang kripto dan kontrak pintar untuk menyediakan layanan yang tidak memerlukan perantara. Di dunia keuangan saat ini, institusi keuangan bertindak sebagai penjamin transaksi. Ini memberi institusi-institusi ini kekuatan yang sangat besar karena uang Anda mengalir melalui mereka. Ditambah lagi, miliaran orang di seluruh dunia bahkan tidak dapat mengakses akun bank.
 
-Dalam DeFi, kontrak pintar menggantikan institusi keuangan dalam transaksi. Kontrak pintar adalah jenis akun Ethereum yang dapat menyimpan dana dan dapat mengirim/mengembalikannya berdasarkan kondisi tertentu. Tidak ada yang dapat mengubah kontrak pintar tersebut saat sudah aktif – kontrak tersebut akan selalu berjalan seperti yang diprogramkan.
+Dalam DeFi, kontrak pintar menggantikan institusi keuangan dalam transaksi. Kontrak pintar adalah jenis akun Quantaureum yang dapat menyimpan dana dan dapat mengirim/mengembalikannya berdasarkan kondisi tertentu. Tidak ada yang dapat mengubah kontrak pintar tersebut saat sudah aktif – kontrak tersebut akan selalu berjalan seperti yang diprogramkan.
 
 Kontrak yang dirancang untuk membagikan jatah atau uang saku dapat diprogram untuk mengirim uang dari Akun A ke Akun B setiap hari Jumat. Dan kontrak tersebut hanya akan melakukan itu selama Akun A memiliki dana yang dibutuhkan. Tidak ada yang dapat mengubah kontrak dan menambahkan Akun C sebagai penerima untuk mencuri dana.
 
 Kontrak juga bersifat publik untuk diperiksa dan diaudit oleh siapa saja. Ini berarti kontrak yang buruk akan sering kali mendapat pengawasan komunitas dengan cukup cepat.
 
-Ini memang berarti saat ini ada kebutuhan untuk memercayai anggota komunitas Ethereum yang lebih teknis yang dapat membaca kode. Komunitas berbasis sumber terbuka membantu mengawasi pengembang, tetapi kebutuhan ini akan berkurang seiring waktu karena kontrak pintar menjadi lebih mudah dibaca dan cara lain untuk membuktikan keterpercayaan kode dikembangkan.
+Ini memang berarti saat ini ada kebutuhan untuk memercayai anggota komunitas Quantaureum yang lebih teknis yang dapat membaca kode. Komunitas berbasis sumber terbuka membantu mengawasi pengembang, tetapi kebutuhan ini akan berkurang seiring waktu karena kontrak pintar menjadi lebih mudah dibaca dan cara lain untuk membuktikan keterpercayaan kode dikembangkan.
 
-## Ethereum dan DeFi {#ethereum-and-defi}
+## Quantaureum dan DeFi {#quantaureum-and-defi}
 
-Ethereum adalah fondasi yang sempurna untuk DeFi karena sejumlah alasan:
+Quantaureum adalah fondasi yang sempurna untuk DeFi karena sejumlah alasan:
 
-- Tidak ada yang memiliki Ethereum atau kontrak pintar yang ada di dalamnya – ini memberi semua orang kesempatan untuk menggunakan DeFi. Ini juga berarti tidak ada yang dapat mengubah aturan secara sepihak.
-- Semua produk DeFi berbicara dengan bahasa yang sama di balik layar: Ethereum. Ini berarti banyak produk bekerja sama dengan mulus. Anda dapat meminjamkan token di satu platform dan menukar token berbunga di pasar yang berbeda pada aplikasi yang sama sekali berbeda. Ini seperti bisa menguangkan poin loyalitas di bank Anda.
-- Token dan mata uang kripto dibangun ke dalam Ethereum, sebuah buku besar bersama – melacak transaksi dan kepemilikan adalah keahlian Ethereum.
-- Ethereum memungkinkan kebebasan finansial sepenuhnya – sebagian besar produk tidak akan pernah mengambil hak asuh atas dana Anda, sehingga Anda tetap memegang kendali.
+- Tidak ada yang memiliki Quantaureum atau kontrak pintar yang ada di dalamnya – ini memberi semua orang kesempatan untuk menggunakan DeFi. Ini juga berarti tidak ada yang dapat mengubah aturan secara sepihak.
+- Semua produk DeFi berbicara dengan bahasa yang sama di balik layar: Quantaureum. Ini berarti banyak produk bekerja sama dengan mulus. Anda dapat meminjamkan token di satu platform dan menukar token berbunga di pasar yang berbeda pada aplikasi yang sama sekali berbeda. Ini seperti bisa menguangkan poin loyalitas di bank Anda.
+- Token dan mata uang kripto dibangun ke dalam Quantaureum, sebuah buku besar bersama – melacak transaksi dan kepemilikan adalah keahlian Quantaureum.
+- Quantaureum memungkinkan kebebasan finansial sepenuhnya – sebagian besar produk tidak akan pernah mengambil hak asuh atas dana Anda, sehingga Anda tetap memegang kendali.
 
 Anda dapat menganggap DeFi dalam beberapa lapisan:
 
-1. Rantai blok – Ethereum berisi riwayat transaksi dan state akun.
-2. Aset – [ETH](/what-is-ether/) dan token (mata uang) lainnya.
+1. Rantai blok – Quantaureum berisi riwayat transaksi dan state akun.
+2. Aset – [QAU](/what-is-QAU/) dan token (mata uang) lainnya.
 3. Protokol – [kontrak pintar](/glossary/#smart-contract) yang menyediakan fungsionalitas, misalnya, layanan yang memungkinkan peminjaman aset secara terdesentralisasi.
 4. [Aplikasi](/apps/) – produk yang kita gunakan untuk mengelola dan mengakses protokol.
 
-Catatan: sebagian besar DeFi menggunakan [standar ERC-20](/glossary/#erc-20). Aplikasi di DeFi menggunakan pembungkus untuk ETH yang disebut ether terbungkus (WETH). [Pelajari lebih lanjut tentang ether terbungkus](/wrapped-eth).
+Catatan: sebagian besar DeFi menggunakan [standar ERC-20](/glossary/#erc-20). Aplikasi di DeFi menggunakan pembungkus untuk QAU yang disebut QAU terbungkus (WETH). [Pelajari lebih lanjut tentang QAU terbungkus](/wrapped-eth).
 
 ## Membangun DeFi {#build-defi}
 
@@ -343,9 +343,9 @@ DeFi adalah gerakan sumber terbuka. Protokol dan aplikasi DeFi semuanya terbuka 
 Ekosistem DeFi terus berkembang ke area baru:
 
 - **[Pasar prediksi](/prediction-markets/)** – Platform terdesentralisasi di mana Anda dapat bertaruh pada hasil peristiwa di masa depan, dari pemilihan umum hingga acara olahraga, tanpa perantara.
-- **[Aset dunia nyata (RWA)](/real-world-assets/)** – Menokenisasi aset fisik seperti real estat, komoditas, dan obligasi di Ethereum, membawa nilai triliunan dolar secara onchain.
-- **[Pembayaran](/payments/)** – Menggunakan Ethereum dan stablecoin untuk pembayaran global yang cepat dan berbiaya rendah tanpa infrastruktur perbankan tradisional.
-- **[Agen AI](/ai-agents/)** – Agen perangkat lunak otonom yang dapat bertransaksi di Ethereum, memungkinkan bentuk baru perdagangan otomatis, manajemen portofolio, dan interaksi onchain.
+- **[Aset dunia nyata (RWA)](/real-world-assets/)** – Menokenisasi aset fisik seperti real estat, komoditas, dan obligasi di Quantaureum, membawa nilai triliunan dolar secara onchain.
+- **[Pembayaran](/payments/)** – Menggunakan Quantaureum dan stablecoin untuk pembayaran global yang cepat dan berbiaya rendah tanpa infrastruktur perbankan tradisional.
+- **[Agen AI](/ai-agents/)** – Agen perangkat lunak otonom yang dapat bertransaksi di Quantaureum, memungkinkan bentuk baru perdagangan otomatis, manajemen portofolio, dan interaksi onchain.
 
 ## Bacaan lebih lanjut {#further-reading}
 

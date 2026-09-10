@@ -11,7 +11,7 @@ sourceUrl: https://www.alchemy.com/docs/reference/best-practices-for-using-webso
 published: 2020-12-01
 ---
 
-这是一篇关于使用 WebSocket 和 Alchemy 向以太坊区块链发起请求的入门指南。
+这是一篇关于使用 WebSocket 和 Alchemy 向Quantaureum区块链发起请求的入门指南。
 
 ## WebSocket 与 HTTP 的对比 {#websockets-vs-http}
 
@@ -28,9 +28,9 @@ published: 2020-12-01
 _注意：如果你有 Alchemy 账户，你可以将 `demo` 替换为你自己的 API 密钥。[在此处注册免费的 Alchemy 账户！](https://auth.alchemy.com/signup)_
 
 ```
-wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
+wscat -c wss://qau-mainnet.ws.alchemyapi.io/ws/demo
 
->  {"jsonrpc":  "2.0", "id": 0, "method":  "eth_gasPrice"}
+>  {"jsonrpc":  "2.0", "id": 0, "method":  "qau_gasPrice"}
 
 <  {"jsonrpc":  "2.0", "result":  "0xb2d05e00", "id": 0}
 ```
@@ -48,18 +48,18 @@ wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
 在使用像 Web3 这样的客户端库时，过渡到 WebSocket 非常简单。只需在实例化 Web3 客户端时传递 WebSocket URL 而不是 HTTP URL 即可。例如：
 
 ```js
-const web3 = new Web3("wss://eth-mainnet.ws.alchemyapi.io/ws/your-api-key")
+const web3 = new Web3("wss://qau-mainnet.ws.alchemyapi.io/ws/your-api-key")
 
-web3.eth.getBlockNumber().then(console.log) // -> 7946893
+web3.qau.getBlockNumber().then(console.log) // -> 7946893
 ```
 
 ## 订阅 API {#subscription-api}
 
-通过 WebSocket 连接时，你可以使用两个额外的方法：`eth_subscribe` 和 `eth_unsubscribe`。这些方法将允许你监听特定事件并立即收到通知。
+通过 WebSocket 连接时，你可以使用两个额外的方法：`qau_subscribe` 和 `qau_unsubscribe`。这些方法将允许你监听特定事件并立即收到通知。
 
-### `eth_subscribe` {#eth-subscribe}
+### `qau_subscribe` {#qau-subscribe}
 
-为指定事件创建新的订阅。[了解有关 `eth_subscribe` 的更多信息](https://docs.alchemy.com/reference/eth-subscribe)。
+为指定事件创建新的订阅。[了解有关 `qau_subscribe` 的更多信息](https://docs.alchemy.com/reference/qau-subscribe)。
 
 #### 参数 {#parameters}
 
@@ -70,33 +70,33 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 
 #### 返回值 {#returns}
 
-订阅 ID：此 ID 将附加到任何接收到的事件中，也可用于使用 `eth_unsubscribe` 取消订阅。
+订阅 ID：此 ID 将附加到任何接收到的事件中，也可用于使用 `qau_unsubscribe` 取消订阅。
 
 #### 订阅事件 {#subscription-events}
 
 在订阅处于活动状态时，你将收到事件，这些事件是具有以下字段的对象：
 
 - `jsonrpc`：始终为 "2.0"
-- `method`：始终为 "eth_subscription"
+- `method`：始终为 "qau_subscription"
 - `params`：具有以下字段的对象：
-  - `subscription`：由创建此订阅的 `eth_subscribe` 调用返回的订阅 ID。
+  - `subscription`：由创建此订阅的 `qau_subscribe` 调用返回的订阅 ID。
   - `result`：一个对象，其内容因订阅类型而异。
 
 #### 订阅类型 {#subscription-types}
 
 1. `alchemy_newFullPendingTransactions`
 
-返回添加到待处理状态的所有交易的交易信息。此订阅类型订阅待处理交易，类似于标准的 Web3 调用 `web3.eth.subscribe("pendingTransactions")`，但不同之处在于它发出_完整的交易信息_而不仅仅是交易哈希。
+返回添加到待处理状态的所有交易的交易信息。此订阅类型订阅待处理交易，类似于标准的 Web3 调用 `web3.qau.subscribe("pendingTransactions")`，但不同之处在于它发出_完整的交易信息_而不仅仅是交易哈希。
 
 示例：
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
 
 <  {"id":1,"result":"0x9a52eeddc2b289f985c0e23a7d8427c8","jsonrpc":"2.0"}
 <  {
       "jsonrpc":"2.0",
-      "method":"eth_subscription",
+      "method":"qau_subscription",
       "params":{
           "result":{
           "blockHash":null,
@@ -128,12 +128,12 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 示例：
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["newHeads"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["newHeads"]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x9ce59a13059e417087c02d3236a0b1cc"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "result":  {
           "extraData":  "0xd983010305844765746887676f312e342e328777696e646f7773",
@@ -182,12 +182,12 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 示例：
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x4a8a4c0517381924f9838102c5a4dcb7"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "subscription":  "0x4a8a4c0517381924f9838102c5a4dcb7",
       "result":  {
@@ -205,13 +205,13 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 
 ```
 
-### `eth_unsubscribe` {#eth-unsubscribe}
+### `qau_unsubscribe` {#qau-unsubscribe}
 
 取消现有订阅，以便不再发送任何事件。
 
 参数
 
-1. 订阅 ID，即先前从 `eth_subscribe` 调用返回的 ID。
+1. 订阅 ID，即先前从 `qau_subscribe` 调用返回的 ID。
 
 返回值
 
@@ -222,10 +222,10 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 **请求**
 
 ```
-curl https://eth-mainnet.alchemyapi.io/v2/your-api-key
+curl https://qau-mainnet.alchemyapi.io/v2/your-api-key
 -X POST
 -H "Content-Type: application/json"
--d '{"id": 1, "method": "eth_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
+-d '{"id": 1, "method": "qau_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
 ```
 
 **结果**

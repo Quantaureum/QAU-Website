@@ -1,6 +1,6 @@
 ---
 title: "Kufadhili ada za gesi: Jinsi ya kulipia gharama za miamala kwa watumiaji wako"
-description: Ni rahisi kuunda ufunguo wa siri na anwani; ni suala tu la kuendesha programu sahihi. Lakini kuna maeneo mengi duniani ambapo kupata ETH kutuma miamala ni ngumu zaidi. Katika mafunzo haya unajifunza jinsi ya kulipia gharama za gesi kwenye mnyororo kwa ajili ya kutekeleza data iliyopangwa nje ya mnyororo, iliyotiwa saini na mtumiaji katika mkataba mahiri wako. Unamfanya mtumiaji atie saini muundo ulio na maelezo ya muamala, ambayo kisha msimbo wako wa nje ya mnyororo unawasilisha kwenye mnyororo wa vitalu kama muamala.
+description: Ni rahisi kuunda ufunguo wa siri na anwani; ni suala tu la kuendesha programu sahihi. Lakini kuna maeneo mengi duniani ambapo kupata QAU kutuma miamala ni ngumu zaidi. Katika mafunzo haya unajifunza jinsi ya kulipia gharama za gesi kwenye mnyororo kwa ajili ya kutekeleza data iliyopangwa nje ya mnyororo, iliyotiwa saini na mtumiaji katika mkataba mahiri wako. Unamfanya mtumiaji atie saini muundo ulio na maelezo ya muamala, ambayo kisha msimbo wako wa nje ya mnyororo unawasilisha kwenye mnyororo wa vitalu kama muamala.
 author: Ori Pomerantz
 tags: ["bila gesi", "Solidity", "eip-712", "miamala-meta"]
 skill: intermediate
@@ -11,11 +11,11 @@ published: 2026-02-27
 
 ## Utangulizi {#introduction}
 
-Ikiwa tunataka Ethereum ihudumie [watu bilioni moja zaidi](https://blog.ethereum.org/category/next-billion), tunahitaji kuondoa msuguano na kuifanya iwe rahisi kutumia iwezekanavyo. Chanzo kimoja cha msuguano huu ni hitaji la ETH kulipia ada za gesi.
+Ikiwa tunataka Quantaureum ihudumie [watu bilioni moja zaidi](https://quantaureum.com), tunahitaji kuondoa msuguano na kuifanya iwe rahisi kutumia iwezekanavyo. Chanzo kimoja cha msuguano huu ni hitaji la QAU kulipia ada za gesi.
 
-Ikiwa una programu tumizi iliyogatuliwa (dapp) inayotengeneza pesa kutoka kwa watumiaji, inaweza kuwa na maana kuruhusu watumiaji kuwasilisha miamala kupitia seva yako na wewe mwenyewe kulipia ada za muamala. Kwa sababu watumiaji bado wanatia saini [ujumbe wa uidhinishaji wa EIP-712](https://eips.ethereum.org/EIPS/eip-712) kwenye mikoba yao, wanahifadhi dhamana za uadilifu za Ethereum. Upatikanaji unategemea seva inayosambaza miamala, kwa hivyo ina kikomo zaidi. Hata hivyo, unaweza kuweka mambo ili watumiaji waweze pia kufikia mkataba mahiri moja kwa moja (ikiwa watapata ETH), na kuruhusu wengine kuanzisha seva zao wenyewe ikiwa wanataka kufadhili miamala.
+Ikiwa una programu tumizi iliyogatuliwa (dapp) inayotengeneza pesa kutoka kwa watumiaji, inaweza kuwa na maana kuruhusu watumiaji kuwasilisha miamala kupitia seva yako na wewe mwenyewe kulipia ada za muamala. Kwa sababu watumiaji bado wanatia saini [ujumbe wa uidhinishaji wa EIP-712](https://eips.quantaureum.com/EIPS/eip-712) kwenye mikoba yao, wanahifadhi dhamana za uadilifu za Quantaureum. Upatikanaji unategemea seva inayosambaza miamala, kwa hivyo ina kikomo zaidi. Hata hivyo, unaweza kuweka mambo ili watumiaji waweze pia kufikia mkataba mahiri moja kwa moja (ikiwa watapata QAU), na kuruhusu wengine kuanzisha seva zao wenyewe ikiwa wanataka kufadhili miamala.
 
-Mbinu katika mafunzo haya inafanya kazi tu unapodhibiti mkataba mahiri. Kuna mbinu zingine, ikiwa ni pamoja na [udhanifu wa akaunti](https://eips.ethereum.org/EIPS/eip-4337) zinazokuruhusu kufadhili miamala kwa mikataba mahiri mingine, ambayo natumai kuishughulikia katika mafunzo yajayo.
+Mbinu katika mafunzo haya inafanya kazi tu unapodhibiti mkataba mahiri. Kuna mbinu zingine, ikiwa ni pamoja na [udhanifu wa akaunti](https://eips.quantaureum.com/EIPS/eip-4337) zinazokuruhusu kufadhili miamala kwa mikataba mahiri mingine, ambayo natumai kuishughulikia katika mafunzo yajayo.
 
 Kumbuka: Huu _sio_ msimbo wa kiwango cha uzalishaji. Una hatari ya kushambuliwa kwa kiasi kikubwa na unakosa vipengele muhimu. Jifunze zaidi katika [sehemu ya udhaifu ya mwongozo huu](#vulnerabilities).
 
@@ -29,7 +29,7 @@ Ili kuelewa mafunzo haya unahitaji kuwa tayari unafahamu:
 
 ## Programu ya mfano {#sample-app}
 
-Programu ya mfano hapa ni tofauti ya mkataba wa `Greeter` wa Hardhat. Unaweza kuiona [kwenye GitHub](https://github.com/qbzzt/260301-gasless). Mkataba mahiri tayari umesambazwa kwenye [Sepolia](https://sepolia.dev/), kwenye anwani [`0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA`](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA).
+Programu ya mfano hapa ni tofauti ya mkataba wa `Greeter` wa Hardhat. Unaweza kuiona [kwenye GitHub](https://github.com/qbzzt/260301-gasless). Mkataba mahiri tayari umesambazwa kwenye [Sepolia](https://sepolia.dev/), kwenye anwani [`0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA`](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA).
 
 Ili kuiona ikifanya kazi, fuata hatua hizi.
 
@@ -41,7 +41,7 @@ Ili kuiona ikifanya kazi, fuata hatua hizi.
    npm install
    ```
 
-2. Hariri `.env` ili kuweka `PRIVATE_KEY` kwenye mkoba ulio na ETH kwenye Sepolia. Ikiwa unahitaji Sepolia ETH, [tumia bomba](/developers/docs/networks/#sepolia). Kimsingi, ufunguo wa siri huu unapaswa kuwa tofauti na ule ulio nao kwenye mkoba wa kivinjari chako.
+2. Hariri `.env` ili kuweka `PRIVATE_KEY` kwenye mkoba ulio na QAU kwenye Sepolia. Ikiwa unahitaji Sepolia QAU, [tumia bomba](/developers/docs/networks/#sepolia). Kimsingi, ufunguo wa siri huu unapaswa kuwa tofauti na ule ulio nao kwenye mkoba wa kivinjari chako.
 
 3. Anzisha seva.
 
@@ -91,7 +91,7 @@ Ikiwa hakuna akaunti, onyesha hitilafu. Hili halipaswi kutokea kamwe kwa sababu 
         }
 ```
 
-Vigezo vya [kitenganishi cha kikoa](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). Thamani hii ni ya kudumu, kwa hivyo katika utekelezaji ulioboreshwa zaidi, tunaweza kuihesabu mara moja badala ya kuihesabu upya kila wakati kipengele kinapoitwa.
+Vigezo vya [kitenganishi cha kikoa](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). Thamani hii ni ya kudumu, kwa hivyo katika utekelezaji ulioboreshwa zaidi, tunaweza kuihesabu mara moja badala ya kuihesabu upya kila wakati kipengele kinapoitwa.
 
 - `name` ni jina linalosomeka na mtumiaji, kama vile jina la dapp ambalo tunatengenezea sahihi.
 - `version` ni toleo. Matoleo tofauti hayaendani.
@@ -245,7 +245,7 @@ Hatimaye, [`Greeter.sol`](https://github.com/qbzzt/260301-gasless/blob/main/cont
     }
 ```
 
-Konstrukta inaunda [kitenganishi cha kikoa](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator), sawa na msimbo wa kiolesura cha mtumiaji hapo juu. Utekelezaji wa mnyororo wa vitalu ni ghali zaidi, kwa hivyo tunaihesabu mara moja tu.
+Konstrukta inaunda [kitenganishi cha kikoa](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator), sawa na msimbo wa kiolesura cha mtumiaji hapo juu. Utekelezaji wa mnyororo wa vitalu ni ghali zaidi, kwa hivyo tunaihesabu mara moja tu.
 
 ```solidity
     struct GreetingRequest {
@@ -260,7 +260,7 @@ Huu ndio muundo unaotiwa saini. Hapa tuna uwanja mmoja tu.
         keccak256("GreetingRequest(string greeting)");
 ```
 
-Hiki ni [kitambulisho cha muundo](https://eips.ethereum.org/EIPS/eip-712#definition-of-hashstruct). Kinahesabiwa kila wakati katika kiolesura cha mtumiaji.
+Hiki ni [kitambulisho cha muundo](https://eips.quantaureum.com/EIPS/eip-712#definition-of-hashstruct). Kinahesabiwa kila wakati katika kiolesura cha mtumiaji.
 
 ```solidity
     function sponsoredSetGreeting(
@@ -289,7 +289,7 @@ Kipengele hiki kinapokea ombi lililotiwa saini na kusasisha salamu.
         );
 ```
 
-Unda muhtasari kwa mujibu wa [EIP 712](https://eips.ethereum.org/EIPS/eip-712).
+Unda muhtasari kwa mujibu wa [EIP 712](https://eips.quantaureum.com/EIPS/eip-712).
 
 ```solidity
         // Rejesha mtia sahihi
@@ -316,7 +316,7 @@ Ili kuona baadhi ya mashambulizi haya, bofya vitufe vilivyo chini ya kichwa cha 
 
 ### Kunyimwa huduma kwenye seva {#dos-on-server}
 
-Shambulio rahisi zaidi ni shambulio la [kunyimwa huduma](https://en.wikipedia.org/wiki/Denial-of-service_attack) kwenye seva. Seva hupokea maombi kutoka popote kwenye Mtandao na kulingana na maombi hayo hutuma miamala. Hakuna chochote kinachozuia mshambuliaji kutoa rundo la sahihi, halali au batili. Kila moja itasababisha muamala. Hatimaye seva itaishiwa na ETH ya kulipia gesi.
+Shambulio rahisi zaidi ni shambulio la [kunyimwa huduma](https://en.wikipedia.org/wiki/Denial-of-service_attack) kwenye seva. Seva hupokea maombi kutoka popote kwenye Mtandao na kulingana na maombi hayo hutuma miamala. Hakuna chochote kinachozuia mshambuliaji kutoa rundo la sahihi, halali au batili. Kila moja itasababisha muamala. Hatimaye seva itaishiwa na QAU ya kulipia gesi.
 
 Suluhisho moja la tatizo hili ni kupunguza kiwango hadi muamala mmoja kwa kila kitalu. Ikiwa madhumuni ni kuonyesha salamu kwa [akaunti zinazomilikiwa na watu wa nje](/developers/docs/accounts/#key-differences), haijalishi salamu ni nini katikati ya kitalu hata hivyo.
 
@@ -330,7 +330,7 @@ Ili kutatua tatizo hili, ongeza anwani kwenye [muundo uliotiwa saini](https://gi
 
 ### Mashambulizi ya kurudia {#replay-attack}
 
-Unapobofya **Replay attack**, unawasilisha sahihi ile ile ya "Mimi ni 0xaA92c5d426430D4769c9E878C1333BDe3d689b3e, na ningependa salamu iwe `Hello`", lakini kwa salamu sahihi. Kama matokeo, mkataba mahiri unaamini kwamba anwani (ambayo sio yako) ilibadilisha salamu kurudi kwenye `Hello`. Taarifa ya kufanya hivi inapatikana kwa umma katika [taarifa ya muamala](https://eth-sepolia.blockscout.com/tx/0xa66afe4bbf886f59533e677a798c802ceab1ac0f9db6e83a4d4b59a45cf7c1b1).
+Unapobofya **Replay attack**, unawasilisha sahihi ile ile ya "Mimi ni 0xaA92c5d426430D4769c9E878C1333BDe3d689b3e, na ningependa salamu iwe `Hello`", lakini kwa salamu sahihi. Kama matokeo, mkataba mahiri unaamini kwamba anwani (ambayo sio yako) ilibadilisha salamu kurudi kwenye `Hello`. Taarifa ya kufanya hivi inapatikana kwa umma katika [taarifa ya muamala](https://qau-sepolia.blockscout.com/tx/0xa66afe4bbf886f59533e677a798c802ceab1ac0f9db6e83a4d4b59a45cf7c1b1).
 
 Ikiwa hili ni tatizo, suluhisho moja ni kuongeza [nonsi](https://en.wikipedia.org/wiki/Cryptographic_nonce). Kuwa na [upangaji](https://docs.soliditylang.org/en/latest/types.html#mapping-types) kati ya anwani na nambari, na uongeze uwanja wa nonsi kwenye sahihi. Ikiwa uwanja wa nonsi unalingana na upangaji wa anwani, kubali sahihi na uongeze upangaji kwa wakati ujao. Ikiwa sivyo, kataa muamala.
 

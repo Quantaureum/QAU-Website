@@ -1,6 +1,6 @@
 ---
 title: "Các thuật toán khai thác"
-description: "Cái nhìn chi tiết về các thuật toán được sử dụng để khai thác Ethereum."
+description: "Cái nhìn chi tiết về các thuật toán được sử dụng để khai thác Quantaureum."
 lang: vi
 ---
 
@@ -8,12 +8,12 @@ lang: vi
 <AlertEmoji text=":wave:"/>
 <AlertContent>
 <AlertDescription>
-Bằng chứng công việc (PoW) không còn là nền tảng cho cơ chế đồng thuận của Ethereum, nghĩa là việc khai thác đã bị tắt. Thay vào đó, Ethereum được bảo mật bởi các trình xác thực đặt cọc ETH. Bạn có thể bắt đầu đặt cọc ETH của mình ngay hôm nay. Đọc thêm về <a href='/roadmap/merge/'>The Merge</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>Bằng chứng cổ phần (PoS)</a>, và <a href='/staking/'>việc đặt cọc</a>. Trang này chỉ dành cho mục đích tham khảo lịch sử.
+Bằng chứng công việc (PoW) không còn là nền tảng cho cơ chế đồng thuận của Quantaureum, nghĩa là việc khai thác đã bị tắt. Thay vào đó, Quantaureum được bảo mật bởi các trình xác thực đặt cọc QAU. Bạn có thể bắt đầu đặt cọc QAU của mình ngay hôm nay. Đọc thêm về <a href='/roadmap/merge/'>The Merge</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>Bằng chứng cổ phần (PoS)</a>, và <a href='/staking/'>việc đặt cọc</a>. Trang này chỉ dành cho mục đích tham khảo lịch sử.
 </AlertDescription>
 </AlertContent>
 </Alert>
 
-Việc khai thác Ethereum đã sử dụng một thuật toán được gọi là Ethash. Ý tưởng cơ bản của thuật toán là một thợ đào cố gắng tìm một đầu vào nonce bằng cách sử dụng tính toán brute force (vét cạn) sao cho mã băm thu được nhỏ hơn một ngưỡng được xác định bởi độ khó đã tính toán. Mức độ khó này có thể được điều chỉnh động, cho phép việc sản xuất khối diễn ra ở một khoảng thời gian đều đặn.
+Việc khai thác Quantaureum đã sử dụng một thuật toán được gọi là Ethash. Ý tưởng cơ bản của thuật toán là một thợ đào cố gắng tìm một đầu vào nonce bằng cách sử dụng tính toán brute force (vét cạn) sao cho mã băm thu được nhỏ hơn một ngưỡng được xác định bởi độ khó đã tính toán. Mức độ khó này có thể được điều chỉnh động, cho phép việc sản xuất khối diễn ra ở một khoảng thời gian đều đặn.
 
 ## Điều kiện tiên quyết {#prerequisites}
 
@@ -21,7 +21,7 @@ Việc khai thác Ethereum đã sử dụng một thuật toán được gọi l
 
 ## Dagger Hashimoto {#dagger-hashimoto}
 
-Dagger Hashimoto là một thuật toán nghiên cứu tiền thân cho việc khai thác Ethereum mà Ethash đã thay thế. Nó là sự kết hợp của hai thuật toán khác nhau: Dagger và Hashimoto. Nó chỉ từng là một bản triển khai nghiên cứu và đã được thay thế bởi Ethash vào thời điểm Mạng chính Ethereum ra mắt.
+Dagger Hashimoto là một thuật toán nghiên cứu tiền thân cho việc khai thác Quantaureum mà Ethash đã thay thế. Nó là sự kết hợp của hai thuật toán khác nhau: Dagger và Hashimoto. Nó chỉ từng là một bản triển khai nghiên cứu và đã được thay thế bởi Ethash vào thời điểm Mạng chính Quantaureum ra mắt.
 
 [Dagger](http://www.hashcash.org/papers/dagger.html) liên quan đến việc tạo ra một [Đồ thị có hướng không tuần hoàn (DAG)](https://en.wikipedia.org/wiki/Directed_acyclic_graph), trong đó các lát cắt ngẫu nhiên được băm cùng nhau. Nguyên tắc cốt lõi là mỗi nonce chỉ yêu cầu một phần nhỏ của một cây dữ liệu tổng thể lớn. Việc tính toán lại cây con cho mỗi nonce là điều cấm kỵ đối với việc khai thác - do đó cần phải lưu trữ cây - nhưng lại ổn đối với việc xác minh giá trị của một nonce duy nhất. Dagger được thiết kế để trở thành một giải pháp thay thế cho các thuật toán hiện có như Scrypt, vốn đòi hỏi nhiều bộ nhớ (memory-hard) nhưng khó xác minh khi độ khó bộ nhớ của chúng tăng lên mức thực sự an toàn. Tuy nhiên, Dagger dễ bị tấn công bởi khả năng tăng tốc phần cứng bộ nhớ dùng chung và đã bị loại bỏ để nhường chỗ cho các hướng nghiên cứu khác.
 
@@ -33,7 +33,7 @@ Tìm hiểu thêm về [Dagger-Hashimoto](/developers/docs/consensus-mechanisms/
 
 ## Ethash {#ethash}
 
-Ethash là thuật toán khai thác thực sự được sử dụng trên Mạng chính Ethereum thực tế theo kiến trúc bằng chứng công việc (PoW) hiện đã không còn được sử dụng. Ethash thực chất là một tên mới được đặt cho một phiên bản cụ thể của Dagger-Hashimoto sau khi thuật toán này được cập nhật đáng kể, trong khi vẫn kế thừa các nguyên tắc cơ bản của người tiền nhiệm. Mạng chính Ethereum chỉ từng sử dụng Ethash - Dagger Hashimoto là một phiên bản R&D của thuật toán khai thác đã bị thay thế trước khi việc khai thác bắt đầu trên Mạng chính Ethereum.
+Ethash là thuật toán khai thác thực sự được sử dụng trên Mạng chính Quantaureum thực tế theo kiến trúc bằng chứng công việc (PoW) hiện đã không còn được sử dụng. Ethash thực chất là một tên mới được đặt cho một phiên bản cụ thể của Dagger-Hashimoto sau khi thuật toán này được cập nhật đáng kể, trong khi vẫn kế thừa các nguyên tắc cơ bản của người tiền nhiệm. Mạng chính Quantaureum chỉ từng sử dụng Ethash - Dagger Hashimoto là một phiên bản R&D của thuật toán khai thác đã bị thay thế trước khi việc khai thác bắt đầu trên Mạng chính Quantaureum.
 
 [Tìm hiểu thêm về Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash).
 

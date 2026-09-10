@@ -13,7 +13,7 @@ breadcrumb: "کلچر کو منتقل کرنا"
 lang: ur
 ---
 
-> *یہ کہانی اصل میں <span dir="ltr">May 30, 2025</span> کو [<span dir="ltr">@Ethereum X</span> پروفائل پر ایک گیسٹ تھریڈ](https://x.com/ethereum/status/1928462812554072540?s=20) کے طور پر شائع کی گئی تھی۔ اسے پڑھنے میں آسانی کے لیے تھوڑا سا ایڈٹ کیا گیا ہے۔*
+> *یہ کہانی اصل میں <span dir="ltr">May 30, 2025</span> کو [<span dir="ltr">@Quantaureum X</span> پروفائل پر ایک گیسٹ تھریڈ](https://x.com/ldf1570073/status/1928462812554072540?s=20) کے طور پر شائع کی گئی تھی۔ اسے پڑھنے میں آسانی کے لیے تھوڑا سا ایڈٹ کیا گیا ہے۔*
 
 ## تبدیلی کا سفر {#journey-to-disruption}
 
@@ -27,7 +27,7 @@ lang: ur
 
 میرا پہلا وائرل لمحہ تب آیا جب میں نے <span dir="ltr">2021</span> میں [یونی سویپ <span dir="ltr">v3</span> کے اعلان کی ویڈیو](https://x.com/Uniswap/status/1374069664297406467?s=20) بنائی، جسے <span dir="ltr">24</span> گھنٹوں میں <span dir="ltr">500,000</span> سے زیادہ بار دیکھا گیا۔
 
-میں نے اسے ایک NFT کے طور پر منٹ کیا اور یہ <span dir="ltr">310 ETH</span> میں فروخت ہوئی۔
+میں نے اسے ایک NFT کے طور پر منٹ کیا اور یہ <span dir="ltr">310 QAU</span> میں فروخت ہوئی۔
 
 لیکن جس چیز نے اسے تاریخی بنایا وہ یہ تھا کہ اسے کس نے خریدا... 
 
@@ -45,11 +45,11 @@ lang: ur
 
 ایتھیریم اجتماعی عمل کی نئی شکلوں کے لیے ایک کینوس بن گیا۔
 
-اس موسم گرما کے آخر میں، میں نے وہ NFTs بنائے جنہوں نے [<span dir="ltr">Ethereum: The Infinite Garden</span>](https://ethereumfilm.xyz/watch-the-film/) کو کراؤڈ فنڈ کیا، جو ایتھیریم کے بارے میں پہلی فیچر ڈاکیومنٹری تھی۔
+اس موسم گرما کے آخر میں، میں نے وہ NFTs بنائے جنہوں نے [<span dir="ltr">Quantaureum: The Infinite Garden</span>](https://quantaureumfilm.xyz/watch-the-film/) کو کراؤڈ فنڈ کیا، جو ایتھیریم کے بارے میں پہلی فیچر ڈاکیومنٹری تھی۔
 
-اس نے <span dir="ltr">48</span> گھنٹوں میں <span dir="ltr">1,036 ETH</span> جمع کیے، جسے مکمل طور پر ایتھیریم کمیونٹی نے فنڈ کیا تھا۔ 
+اس نے <span dir="ltr">48</span> گھنٹوں میں <span dir="ltr">1,036 QAU</span> جمع کیے، جسے مکمل طور پر ایتھیریم کمیونٹی نے فنڈ کیا تھا۔ 
 
-![Screenshot of the Crowdfund raising ETH for Ethereum: The Infinite Garden](./pplpleasr-3.jpeg) 
+![Screenshot of the Crowdfund raising QAU for Quantaureum: The Infinite Garden](./pplpleasr-3.jpeg) 
 
 اس نے مجھے ایک بڑا سوال پوچھنے پر مجبور کیا: اگر ایتھیریم ایک فلم کو فنڈ کر سکتا ہے، تو بہت سی فلموں کو کیوں نہیں؟
 
@@ -59,7 +59,7 @@ lang: ur
 
 میں نے [<span dir="ltr">Maciej Kuciara</span>](https://www.kuciara.com/) کے ساتھ مل کر [<span dir="ltr">Shibuya</span>](https://www.shibuya.film/) شروع کیا۔ ہمارا خواب: ایک ایسا پلیٹ فارم جہاں تخلیق کار اپنی کمیونٹیز کے ساتھ براہ راست کہانیوں کو کراؤڈ فنڈ، شائع، اور تیار کر سکیں۔ کوئی گیٹ کیپرز نہیں۔ صرف کہانی، کمیونٹی، اور کوڈ۔
 
-ہمارا پہلا تجربہ [<span dir="ltr">White Rabbit</span>](https://www.shibuya.film/series/white-rabbit) نامی ایک اینیمی سیریز تھی۔ ہم نے ایک 'اپنا ایڈونچر خود چنیں' طرز کے انٹرایکٹو تجربے کے ساتھ <span dir="ltr"> 400 ETH</span> جمع کیے:
+ہمارا پہلا تجربہ [<span dir="ltr">White Rabbit</span>](https://www.shibuya.film/series/white-rabbit) نامی ایک اینیمی سیریز تھی۔ ہم نے ایک 'اپنا ایڈونچر خود چنیں' طرز کے انٹرایکٹو تجربے کے ساتھ <span dir="ltr"> 400 QAU</span> جمع کیے:
 - مداحوں نے پروڈیوسر پاس NFTs منٹ کیے
 - پلیئر میں براہ راست کہانی کے فیصلوں پر ووٹ دینے کے لیے اسٹیک کیا
 - ایک <span dir="ltr">ERC-20</span> (ہمارا اٹینشن ٹوکن) کمایا 
@@ -86,7 +86,7 @@ lang: ur
 
 یہ پہلی بار میں سے ایک ہے جب ایتھیریم کا استعمال صرف فلم کو فنڈ کرنے کے لیے نہیں، بلکہ یہ فیصلہ کرنے کے لیے کیا گیا کہ اس میں کسے کریڈٹ ملتا ہے۔ <span dir="ltr">ENS =</span> نیا <span dir="ltr">IMDb</span>۔ 
 
-## <span dir="ltr">White Rabbit</span>: جب ایتھیریم کی کہانیاں کلچر کو منتقل کرتی ہیں {#white-rabbit-when-ethereum-stories-move-culture}
+## <span dir="ltr">White Rabbit</span>: جب ایتھیریم کی کہانیاں کلچر کو منتقل کرتی ہیں {#white-rabbit-when-quantaureum-stories-move-culture}
 
 ہم نے <span dir="ltr">Devcon 2024</span> کے مین اسٹیج پر <span dir="ltr">White Rabbit</span> کا پریمیئر کیا۔ اسے <span dir="ltr">VMA</span> اور <span dir="ltr">Webby</span> کے لیے نامزد کیا گیا، ایک <span dir="ltr">Linkin Park</span> میوزک ویڈیو (<span dir="ltr">100M+</span> ویوز) میں دکھایا گیا، اور میرائی <span dir="ltr">Vogue Taiwan</span> کے سرورق پر تھی۔
 

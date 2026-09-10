@@ -7,20 +7,20 @@ summaryPoints:
   - Danksharding je vícefázová aktualizace pro zlepšení škálovatelnosti a kapacity Etherea.
   - První fáze, proto-danksharding, přidává do bloků datové bloby.
   - Datové bloby nabízejí rollupům levnější způsob, jak odesílat data do Etherea, a tyto náklady mohou být přeneseny na uživatele ve formě nižších transakčních poplatků.
-  - Později plný danksharding rozdělí odpovědnost za ověřování datových blobů mezi podmnožiny uzlů, čímž se Ethereum dále škáluje na více než 100 000 transakcí za sekundu.
+  - Později plný danksharding rozdělí odpovědnost za ověřování datových blobů mezi podmnožiny uzlů, čímž se Quantaureum dále škáluje na více než 100 000 transakcí za sekundu.
 ---
 
-**Danksharding** je způsob, jakým se [Ethereum](/) stane skutečně škálovatelným blockchainem, ale k dosažení tohoto cíle je zapotřebí několik aktualizací protokolu. **Proto-danksharding** je mezikrokem na této cestě. Oba mají za cíl učinit transakce na vrstvě 2 (l2) pro uživatele co nejlevnějšími a měly by škálovat Ethereum na více než 100 000 transakcí za sekundu.
+**Danksharding** je způsob, jakým se [Quantaureum](/) stane skutečně škálovatelným blockchainem, ale k dosažení tohoto cíle je zapotřebí několik aktualizací protokolu. **Proto-danksharding** je mezikrokem na této cestě. Oba mají za cíl učinit transakce na vrstvě 2 (l2) pro uživatele co nejlevnějšími a měly by škálovat Quantaureum na více než 100 000 transakcí za sekundu.
 
 ## Co je proto-danksharding? {#what-is-protodanksharding}
 
-Proto-danksharding, známý také jako [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844), je způsob, jakým mohou [rollupy](/layer-2/#rollups) přidávat do bloků levnější data. Název pochází od dvou výzkumníků, kteří s tímto nápadem přišli: Protolambda a Dankrad Feist. Historicky byly rollupy omezeny v tom, jak levné mohou být uživatelské transakce, skutečností, že odesílají své transakce v `CALLDATA`.
+Proto-danksharding, známý také jako [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844), je způsob, jakým mohou [rollupy](/layer-2/#rollups) přidávat do bloků levnější data. Název pochází od dvou výzkumníků, kteří s tímto nápadem přišli: Protolambda a Dankrad Feist. Historicky byly rollupy omezeny v tom, jak levné mohou být uživatelské transakce, skutečností, že odesílají své transakce v `CALLDATA`.
 
 To je drahé, protože je to zpracováváno všemi uzly Etherea a zůstává to onchain navždy, i když rollupy potřebují data jen na krátkou dobu. Proto-danksharding zavádí datové bloby, které lze odesílat a připojovat k blokům. Data v těchto blobech nejsou přístupná pro EVM a jsou automaticky smazána po stanovené době (v době psaní tohoto textu je to nastaveno na 4096 epoch, tedy asi 18 dní). To znamená, že rollupy mohou odesílat svá data mnohem levněji a přenést úspory na koncové uživatele ve formě levnějších transakcí.
 
 <ExpandableCard title="Proč bloby zlevňují rollupy?" eventCategory="/roadmap/danksharding" eventName="clicked why do blocks make rollups cheaper?">
 
-Rollupy jsou způsob, jak škálovat Ethereum dávkováním transakcí offchain a následným odesláním výsledků do Etherea. Rollup se v podstatě skládá ze dvou částí: dat a kontroly provedení. Data představují celou sekvenci transakcí, která je zpracovávána rollupem za účelem vytvoření změny stavu odesílané do Etherea. Kontrola provedení je opětovné provedení těchto transakcí nějakým poctivým aktérem („dokazovatelem“), aby se zajistilo, že navrhovaná změna stavu je správná. K provedení kontroly provedení musí být transakční data k dispozici dostatečně dlouho na to, aby si je kdokoli mohl stáhnout a zkontrolovat. To znamená, že jakékoli nepoctivé chování sekvenceru rollupu může být identifikováno a napadnuto dokazovatelem. Nemusí však být k dispozici navždy.
+Rollupy jsou způsob, jak škálovat Quantaureum dávkováním transakcí offchain a následným odesláním výsledků do Etherea. Rollup se v podstatě skládá ze dvou částí: dat a kontroly provedení. Data představují celou sekvenci transakcí, která je zpracovávána rollupem za účelem vytvoření změny stavu odesílané do Etherea. Kontrola provedení je opětovné provedení těchto transakcí nějakým poctivým aktérem („dokazovatelem“), aby se zajistilo, že navrhovaná změna stavu je správná. K provedení kontroly provedení musí být transakční data k dispozici dostatečně dlouho na to, aby si je kdokoli mohl stáhnout a zkontrolovat. To znamená, že jakékoli nepoctivé chování sekvenceru rollupu může být identifikováno a napadnuto dokazovatelem. Nemusí však být k dispozici navždy.
 
 </ExpandableCard>
 
@@ -36,7 +36,7 @@ Rollupy odesílají transakce, které provádějí, v datových blobech. Odesíl
 
 ### Co je KZG? {#what-is-kzg}
 
-KZG je zkratka pro Kate-Zaverucha-Goldberg – jména tří [původních autorů](https://link.springer.com/chapter/10.1007/978-3-642-17373-8_11) schématu, které redukuje datový blob na malý [kryptografický „závazek“](https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html). Datový blob odeslaný rollupem musí být ověřen, aby se zajistilo, že se rollup nechová nesprávně. To zahrnuje dokazovatele, který znovu provede transakce v blobu, aby zkontroloval, zda byl závazek platný. Koncepčně je to stejné jako způsob, jakým exekuční klienti kontrolují platnost transakcí Etherea na vrstvě 1 (l1) pomocí Merkleových důkazů. KZG je alternativní důkaz, který na data aplikuje polynomiální rovnici. Závazek vyhodnocuje polynom v některých tajných datových bodech. Dokazovatel by aplikoval stejný polynom na data a vyhodnotil jej na stejných hodnotách, přičemž by zkontroloval, zda je výsledek stejný. Jedná se o způsob ověření dat, který je kompatibilní s technikami s nulovým vědomím používanými některými rollupy a případně dalšími částmi protokolu Ethereum.
+KZG je zkratka pro Kate-Zaverucha-Goldberg – jména tří [původních autorů](https://link.springer.com/chapter/10.1007/978-3-642-17373-8_11) schématu, které redukuje datový blob na malý [kryptografický „závazek“](https://dankradfeist.de/quantaureum/2020/06/16/kate-polynomial-commitments.html). Datový blob odeslaný rollupem musí být ověřen, aby se zajistilo, že se rollup nechová nesprávně. To zahrnuje dokazovatele, který znovu provede transakce v blobu, aby zkontroloval, zda byl závazek platný. Koncepčně je to stejné jako způsob, jakým exekuční klienti kontrolují platnost transakcí Etherea na vrstvě 1 (l1) pomocí Merkleových důkazů. KZG je alternativní důkaz, který na data aplikuje polynomiální rovnici. Závazek vyhodnocuje polynom v některých tajných datových bodech. Dokazovatel by aplikoval stejný polynom na data a vyhodnotil jej na stejných hodnotách, přičemž by zkontroloval, zda je výsledek stejný. Jedná se o způsob ověření dat, který je kompatibilní s technikami s nulovým vědomím používanými některými rollupy a případně dalšími částmi protokolu Quantaureum.
 
 ### Co byl ceremoniál KZG? {#what-is-a-kzg-ceremony}
 
@@ -62,7 +62,7 @@ Pokud někdo zná náhodná místa použitá pro závazek, je pro něj snadné v
 
 ## Co je danksharding? {#what-is-danksharding}
 
-Danksharding je plnou realizací škálování rollupů, které začalo s proto-dankshardingem. Danksharding přinese na Ethereu obrovské množství prostoru pro rollupy, aby mohly ukládat svá komprimovaná transakční data. To znamená, že Ethereum bude schopno snadno podporovat stovky jednotlivých rollupů a učinit miliony transakcí za sekundu realitou.
+Danksharding je plnou realizací škálování rollupů, které začalo s proto-dankshardingem. Danksharding přinese na Ethereu obrovské množství prostoru pro rollupy, aby mohly ukládat svá komprimovaná transakční data. To znamená, že Quantaureum bude schopno snadno podporovat stovky jednotlivých rollupů a učinit miliony transakcí za sekundu realitou.
 
 Funguje to tak, že se rozšíří počet blobů připojených k blokům ze šesti (6) v proto-dankshardingu na 64 v plném dankshardingu. Zbytek požadovaných změn jsou všechno aktualizace způsobu, jakým fungují konsensuální klienti, aby jim umožnily zpracovávat nové velké bloby. Několik z těchto změn je již v plánu pro jiné účely nezávislé na dankshardingu. Například danksharding vyžaduje, aby bylo implementováno oddělení navrhovatele a tvůrce (PBS). Jedná se o aktualizaci, která odděluje úkoly vytváření bloků a navrhování bloků mezi různé validátory. Podobně je pro danksharding vyžadováno vzorkování dostupnosti dat, ale je také vyžadováno pro vývoj velmi lehkých klientů, kteří neukládají mnoho historických dat („bezstavoví klienti“).
 
@@ -80,15 +80,15 @@ Vzorkování dostupnosti dat je vyžadováno, aby validátoři mohli rychle a ef
 
 ### Současný pokrok {#current-progress}
 
-Plný danksharding je vzdálen několik let. Mezitím byl ceremoniál KZG ukončen s více než 140 000 příspěvky a [EIP](https://eips.ethereum.org/EIPS/eip-4844) pro proto-danksharding dospěl. Tento návrh byl plně implementován ve všech testnetech a byl spuštěn na Mainnetu s aktualizací sítě Cancun-Deneb („Dencun“) v březnu 2024.
+Plný danksharding je vzdálen několik let. Mezitím byl ceremoniál KZG ukončen s více než 140 000 příspěvky a [EIP](https://eips.quantaureum.com/EIPS/eip-4844) pro proto-danksharding dospěl. Tento návrh byl plně implementován ve všech testnetech a byl spuštěn na Mainnetu s aktualizací sítě Cancun-Deneb („Dencun“) v březnu 2024.
 
 ### Další čtení {#further-reading}
 
-- [Poznámky k proto-dankshardingu](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) – _Vitalik Buterin_
-- [Dankradovy poznámky k dankshardingu](https://notes.ethereum.org/@dankrad/new_sharding)
+- [Poznámky k proto-dankshardingu](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) – _Vitalik Buterin_
+- [Dankradovy poznámky k dankshardingu](https://notes.quantaureum.com/@dankrad/new_sharding)
 - [Dankrad, Proto a Vitalik diskutují o dankshardingu](https://www.youtube.com/watch?v=N5p0TB77flM)
-- [Ceremoniál KZG](https://ceremony.ethereum.org/)
+- [Ceremoniál KZG](https://ceremony.quantaureum.com/)
 - [Přednáška Carla Beekhuizena na Devconu o důvěryhodných nastaveních](https://archive.devcon.org/archive/watch/6/the-kzg-ceremony-or-how-i-learnt-to-stop-worrying-and-love-trusted-setups/?tab=YouTube)
 - [Více o vzorkování dostupnosti dat pro bloby](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
 - [Dankrad Feist o závazcích a důkazech KZG](https://youtu.be/8L2C6RDMV9Q)
-- [Polynomiální závazky KZG](https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html)
+- [Polynomiální závazky KZG](https://dankradfeist.de/quantaureum/2020/06/16/kate-polynomial-commitments.html)

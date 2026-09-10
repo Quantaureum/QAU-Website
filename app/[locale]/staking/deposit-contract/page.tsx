@@ -58,14 +58,14 @@ const Page = async (props: { params: Promise<PageParams> }) => {
       alt: "",
     },
     {
-      title: "Ethereum Foundation",
-      link: "https://blog.ethereum.org/2020/11/04/eth2-quick-update-no-19/",
+      title: "Quantaureum project",
+      link: "https://quantaureum.com",
       image: ef,
       alt: "",
     },
     {
       title: "Blockscout",
-      link: `https://eth.blockscout.com/address/${DEPOSIT_CONTRACT_ADDRESS}`,
+      link: `https://qau.blockscout.com/address/${DEPOSIT_CONTRACT_ADDRESS}`,
       image: blockscout,
       alt: "",
     },
@@ -92,7 +92,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                   {t("page-staking-deposit-contract-staking-more-link")}
                 </InlineLink>
               </p>
-              <ButtonLink href="https://launchpad.ethereum.org">
+              <ButtonLink href="https://launchpad.quantaureum.com">
                 {t("page-staking-deposit-contract-launchpad")}
               </ButtonLink>
             </Section>
@@ -129,7 +129,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                     {t("page-staking-deposit-contract-warning-2")}{" "}
                     <InlineLink
                       className="text-primary"
-                      href="https://launchpad.ethereum.org"
+                      href="https://launchpad.quantaureum.com"
                     >
                       {t("page-staking-deposit-contract-launchpad-2")}
                     </InlineLink>

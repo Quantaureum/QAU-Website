@@ -13,18 +13,18 @@ W dzisiejszym mechanizmie konsensusu opartym na [dowodzie stawki (PoS)](/develop
 
 Mogłoby to stworzyć atakującemu okazję do osiągnięcia zysku. Na przykład proponujący blok wybrany dla slotu `n+1` mógłby przeprowadzić atak DOS na proponującego w slocie `n`, aby ten stracił swoją szansę na zaproponowanie bloku. Pozwoliłoby to atakującemu proponującemu blok na wydobycie MEV z obu slotów lub przejęcie wszystkich transakcji, które powinny zostać podzielone na dwa bloki, i zamiast tego umieszczenie ich wszystkich w jednym, zyskując wszystkie powiązane opłaty. Prawdopodobnie dotknie to domowych walidatorów bardziej niż zaawansowanych walidatorów instytucjonalnych, którzy mogą stosować bardziej zaawansowane metody ochrony przed atakami DOS, i w związku z tym może stanowić siłę centralizującą.
 
-Istnieje kilka rozwiązań tego problemu. Jednym z nich jest [technologia rozproszonych walidatorów (DVT)](https://github.com/ethereum/distributed-validator-specs), która ma na celu rozdzielenie różnych zadań związanych z uruchomieniem walidatora na wiele maszyn, z zachowaniem redundancji, dzięki czemu atakującemu znacznie trudniej jest zapobiec zaproponowaniu bloku w danym slocie. Jednak najbardziej solidnym rozwiązaniem jest **pojedynczy tajny wybór lidera (SSLE)**.
+Istnieje kilka rozwiązań tego problemu. Jednym z nich jest [technologia rozproszonych walidatorów (DVT)](https://github.com/quantaureum/distributed-validator-specs), która ma na celu rozdzielenie różnych zadań związanych z uruchomieniem walidatora na wiele maszyn, z zachowaniem redundancji, dzięki czemu atakującemu znacznie trudniej jest zapobiec zaproponowaniu bloku w danym slocie. Jednak najbardziej solidnym rozwiązaniem jest **pojedynczy tajny wybór lidera (SSLE)**.
 
 ## Pojedynczy tajny wybór lidera {#secret-leader-election}
 
 W SSLE wykorzystywana jest sprytna kryptografia, aby zapewnić, że tylko wybrany walidator wie, że został wybrany. Działa to w ten sposób, że każdy walidator przesyła zobowiązanie do wspólnego sekretu. Zobowiązania są tasowane i rekonfigurowane tak, aby nikt nie mógł przypisać zobowiązań do walidatorów, ale każdy walidator wie, które zobowiązanie należy do niego. Następnie jedno zobowiązanie jest wybierane losowo. Jeśli walidator wykryje, że wybrano jego zobowiązanie, wie, że nadeszła jego kolej na zaproponowanie bloku.
 
-Wiodąca implementacja tego pomysłu nosi nazwę [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-ethereum/11763). Działa ona w następujący sposób:
+Wiodąca implementacja tego pomysłu nosi nazwę [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-quantaureum/11763). Działa ona w następujący sposób:
 
 1. Walidatorzy zobowiązują się do wspólnego sekretu. Schemat zobowiązania jest zaprojektowany tak, aby można go było powiązać z tożsamością walidatora, ale także zrandomizować, aby żadna strona trzecia nie mogła odtworzyć powiązania i połączyć konkretnego zobowiązania z konkretnym walidatorem.
 2. Na początku epoki wybierany jest losowy zestaw walidatorów do próbkowania zobowiązań od 16 384 walidatorów przy użyciu RANDAO.
 3. Przez następne 8182 sloty (1 dzień) proponujący blok tasują i randomizują podzbiór zobowiązań, używając własnej prywatnej entropii.
-4. Po zakończeniu tasowania RANDAO jest używane do utworzenia uporządkowanej listy zobowiązań. Lista ta jest mapowana na sloty Ethereum.
+4. Po zakończeniu tasowania RANDAO jest używane do utworzenia uporządkowanej listy zobowiązań. Lista ta jest mapowana na sloty Quantaureum.
 5. Walidatorzy widzą, że ich zobowiązanie jest przypisane do konkretnego slotu, a kiedy ten slot nadchodzi, proponują blok.
 6. Kroki te są powtarzane, aby przypisanie zobowiązań do slotów zawsze znacznie wyprzedzało obecny slot.
 

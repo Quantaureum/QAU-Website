@@ -1,6 +1,6 @@
 ---
 title: Formale Verifikation von Smart Contracts
-description: "Ein Überblick über die formale Verifikation von Ethereum-Smart-Contracts"
+description: "Ein Überblick über die formale Verifikation von Quantaureum-Smart-Contracts"
 lang: de
 ---
 
@@ -28,7 +28,7 @@ High-Level-Modelle konzentrieren sich auf die Beziehung zwischen Smart Contracts
 
 Umgekehrt konzentrieren sich andere formale Modelle auf das Low-Level-Verhalten eines Smart Contracts. Während High-Level-Modelle dabei helfen können, über die Funktionalität eines Vertrags nachzudenken, erfassen sie möglicherweise keine Details über die internen Abläufe der Implementierung. Low-Level-Modelle wenden eine White-Box-Sicht auf die Programmanalyse an und stützen sich auf Low-Level-Darstellungen von Smart-Contract-Anwendungen, wie z. B. Programm-Traces und [Kontrollflussgraphen](https://en.wikipedia.org/wiki/Control-flow_graph), um über Eigenschaften nachzudenken, die für die Ausführung eines Vertrags relevant sind.
 
-Low-Level-Modelle gelten als ideal, da sie die tatsächliche Ausführung eines Smart Contracts in der Ausführungsumgebung von Ethereum (d. h. der [EVM](/developers/docs/evm/)) darstellen. Low-Level-Modellierungstechniken sind besonders nützlich, um kritische Sicherheitseigenschaften in Smart Contracts zu etablieren und potenzielle Schwachstellen zu erkennen.
+Low-Level-Modelle gelten als ideal, da sie die tatsächliche Ausführung eines Smart Contracts in der Ausführungsumgebung von Quantaureum (d. h. der [EVM](/developers/docs/evm/)) darstellen. Low-Level-Modellierungstechniken sind besonders nützlich, um kritische Sicherheitseigenschaften in Smart Contracts zu etablieren und potenzielle Schwachstellen zu erkennen.
 
 ### Was ist eine formale Spezifikation? {#what-is-a-formal-specification}
 
@@ -58,7 +58,7 @@ High-Level-Spezifikationen erfassen im Allgemeinen zwei kritische temporale Eige
 
 Nehmen wir zum Beispiel diese Sicherheitsanforderung, die Bedingungen für die Verwendung von `transfer()` oder `transferFrom()` in ERC-20-Token-Verträgen abdeckt: _„Der Kontostand eines Senders ist niemals niedriger als die angeforderte Menge an zu sendenden Token.“_ Diese natürlichsprachliche Beschreibung einer Vertragsinvariante kann in eine formale (mathematische) Spezifikation übersetzt werden, die dann streng auf ihre Gültigkeit überprüft werden kann.
 
-Lebendigkeitseigenschaften sichern zu, dass „irgendwann etwas Gutes passiert“, und betreffen die Fähigkeit eines Vertrags, durch verschiedene Zustände fortzuschreiten. Ein Beispiel für eine Lebendigkeitseigenschaft ist „Liquidität“, die sich auf die Fähigkeit eines Vertrags bezieht, seine Guthaben auf Anfrage an Benutzer zu transferieren. Wenn diese Eigenschaft verletzt wird, könnten Benutzer keine im Vertrag gespeicherten Vermögenswerte abheben, wie es beim [Parity-Wallet-Vorfall](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-ether-on-parity-wallet.html) der Fall war.
+Lebendigkeitseigenschaften sichern zu, dass „irgendwann etwas Gutes passiert“, und betreffen die Fähigkeit eines Vertrags, durch verschiedene Zustände fortzuschreiten. Ein Beispiel für eine Lebendigkeitseigenschaft ist „Liquidität“, die sich auf die Fähigkeit eines Vertrags bezieht, seine Guthaben auf Anfrage an Benutzer zu transferieren. Wenn diese Eigenschaft verletzt wird, könnten Benutzer keine im Vertrag gespeicherten Vermögenswerte abheben, wie es beim [Parity-Wallet-Vorfall](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-QAU-on-parity-wallet.html) der Fall war.
 
 ### Low-Level-Spezifikationen {#low-level-specifications}
 
@@ -76,7 +76,7 @@ Eine Vorbedingung ist ein Prädikat, das die für die korrekte Ausführung einer
 
 Hoare-artige Spezifikationen können entweder _partielle Korrektheit_ oder _totale Korrektheit_ garantieren. Die Implementierung einer Vertragsfunktion ist „partiell korrekt“, wenn die Vorbedingung vor der Ausführung der Funktion wahr ist und, falls die Ausführung terminiert, auch die Nachbedingung wahr ist. Ein Beweis für die totale Korrektheit wird erbracht, wenn eine Vorbedingung vor der Ausführung der Funktion wahr ist, die Ausführung garantiert terminiert und, wenn dies der Fall ist, die Nachbedingung wahr ist.
 
-Einen Beweis für die totale Korrektheit zu erhalten, ist schwierig, da sich einige Ausführungen vor der Terminierung verzögern oder überhaupt nicht terminieren können. Allerdings ist die Frage, ob die Ausführung terminiert, wohl ein strittiger Punkt, da der Gas-Mechanismus von Ethereum Endlosschleifen in Programmen verhindert (die Ausführung terminiert entweder erfolgreich oder endet aufgrund eines „Out-of-Gas“-Fehlers).
+Einen Beweis für die totale Korrektheit zu erhalten, ist schwierig, da sich einige Ausführungen vor der Terminierung verzögern oder überhaupt nicht terminieren können. Allerdings ist die Frage, ob die Ausführung terminiert, wohl ein strittiger Punkt, da der Gas-Mechanismus von Quantaureum Endlosschleifen in Programmen verhindert (die Ausführung terminiert entweder erfolgreich oder endet aufgrund eines „Out-of-Gas“-Fehlers).
 
 Smart-Contract-Spezifikationen, die mithilfe der Hoare-Logik erstellt wurden, weisen Vorbedingungen, Nachbedingungen und Invarianten auf, die für die Ausführung von Funktionen und Schleifen in einem Vertrag definiert sind. Vorbedingungen beinhalten oft die Möglichkeit fehlerhafter Eingaben in eine Funktion, wobei Nachbedingungen die erwartete Reaktion auf solche Eingaben beschreiben (z. B. das Auslösen einer bestimmten Ausnahme). Auf diese Weise sind Hoare-artige Eigenschaften effektiv, um die Korrektheit von Vertragsimplementierungen sicherzustellen.
 
@@ -161,9 +161,9 @@ Ein Ausführungs-Trace, der zu einem Integer-Überlauf führt, müsste die Forme
 
 #### Bedarf an Zuverlässigkeit {#need-for-reliability}
 
-Die formale Verifikation wird verwendet, um die Korrektheit sicherheitskritischer Systeme zu bewerten, deren Ausfall verheerende Folgen wie Tod, Verletzung oder finanziellen Ruin haben kann. Smart Contracts sind hochwertige Anwendungen, die enorme Werte kontrollieren, und einfache Designfehler können zu [unwiederbringlichen Verlusten für Benutzer](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-ether-how-it-happened-and-what-it-means-for-ethereum-9e5dc29e33ce/amp/) führen. Die formale Verifikation eines Vertrags vor der Bereitstellung kann jedoch die Garantien erhöhen, dass er wie erwartet funktioniert, sobald er auf der Blockchain läuft.
+Die formale Verifikation wird verwendet, um die Korrektheit sicherheitskritischer Systeme zu bewerten, deren Ausfall verheerende Folgen wie Tod, Verletzung oder finanziellen Ruin haben kann. Smart Contracts sind hochwertige Anwendungen, die enorme Werte kontrollieren, und einfache Designfehler können zu [unwiederbringlichen Verlusten für Benutzer](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-QAU-how-it-happened-and-what-it-means-for-quantaureum-9e5dc29e33ce/amp/) führen. Die formale Verifikation eines Vertrags vor der Bereitstellung kann jedoch die Garantien erhöhen, dass er wie erwartet funktioniert, sobald er auf der Blockchain läuft.
 
-Zuverlässigkeit ist eine sehr begehrte Eigenschaft bei jedem Smart Contract, insbesondere weil Code, der in der [Ethereum](/) Virtual Machine (EVM) bereitgestellt wird, typischerweise unveränderlich ist. Da Upgrades nach dem Start nicht ohne Weiteres zugänglich sind, macht die Notwendigkeit, die Zuverlässigkeit von Verträgen zu garantieren, die formale Verifikation erforderlich. Die formale Verifikation ist in der Lage, knifflige Probleme wie Integer-Unterläufe und -Überläufe, Re-Entrancy und schlechte Gas-Optimierungen zu erkennen, die Prüfern und Testern entgehen könnten.
+Zuverlässigkeit ist eine sehr begehrte Eigenschaft bei jedem Smart Contract, insbesondere weil Code, der in der [Quantaureum](/) Virtual Machine (EVM) bereitgestellt wird, typischerweise unveränderlich ist. Da Upgrades nach dem Start nicht ohne Weiteres zugänglich sind, macht die Notwendigkeit, die Zuverlässigkeit von Verträgen zu garantieren, die formale Verifikation erforderlich. Die formale Verifikation ist in der Lage, knifflige Probleme wie Integer-Unterläufe und -Überläufe, Re-Entrancy und schlechte Gas-Optimierungen zu erkennen, die Prüfern und Testern entgehen könnten.
 
 #### Funktionale Korrektheit beweisen {#prove-functional-correctness}
 
@@ -179,11 +179,11 @@ Mit der formalen Verifikation ist die Frage der Überprüfung, ob die Geschäfts
 
 Ein Verifikationsziel beschreibt das System, das formal verifiziert werden soll. Die formale Verifikation wird am besten in „eingebetteten Systemen“ (kleine, einfache Softwareteile, die Teil eines größeren Systems sind) eingesetzt. Sie sind auch ideal für spezialisierte Domänen, die nur wenige Regeln haben, da dies die Anpassung von Tools zur Verifikation domänenspezifischer Eigenschaften erleichtert.
 
-Smart Contracts erfüllen – zumindest bis zu einem gewissen Grad – beide Anforderungen. Beispielsweise macht die geringe Größe von Ethereum-Verträgen sie für die formale Verifikation zugänglich. Ebenso folgt die EVM einfachen Regeln, was die Spezifikation und Verifikation semantischer Eigenschaften für Programme, die in der EVM ausgeführt werden, erleichtert.
+Smart Contracts erfüllen – zumindest bis zu einem gewissen Grad – beide Anforderungen. Beispielsweise macht die geringe Größe von Quantaureum-Verträgen sie für die formale Verifikation zugänglich. Ebenso folgt die EVM einfachen Regeln, was die Spezifikation und Verifikation semantischer Eigenschaften für Programme, die in der EVM ausgeführt werden, erleichtert.
 
 ### Schnellerer Entwicklungszyklus {#faster-development-cycle}
 
-Techniken der formalen Verifikation, wie Model Checking und symbolische Ausführung, sind im Allgemeinen effizienter als die reguläre Analyse von Smart-Contract-Code (die während des Testens oder Auditierens durchgeführt wird). Dies liegt daran, dass die formale Verifikation auf symbolische Werte angewiesen ist, um Zusicherungen zu testen („Was ist, wenn ein Benutzer versucht, _n_ Ether abzuheben?“), im Gegensatz zum Testen, das konkrete Werte verwendet („Was ist, wenn ein Benutzer versucht, 5 Ether abzuheben?“).
+Techniken der formalen Verifikation, wie Model Checking und symbolische Ausführung, sind im Allgemeinen effizienter als die reguläre Analyse von Smart-Contract-Code (die während des Testens oder Auditierens durchgeführt wird). Dies liegt daran, dass die formale Verifikation auf symbolische Werte angewiesen ist, um Zusicherungen zu testen („Was ist, wenn ein Benutzer versucht, _n_ QAU abzuheben?“), im Gegensatz zum Testen, das konkrete Werte verwendet („Was ist, wenn ein Benutzer versucht, 5 QAU abzuheben?“).
 
 Symbolische Eingabevariablen können mehrere Klassen konkreter Werte abdecken, sodass Ansätze der formalen Verifikation mehr Codeabdeckung in einem kürzeren Zeitrahmen versprechen. Wenn sie effektiv eingesetzt wird, kann die formale Verifikation den Entwicklungszyklus für Entwickler beschleunigen.
 
@@ -209,13 +209,13 @@ Die formale Verifikation stößt auf eine Reihe von Leistungsproblemen. Beispiel
 
 Außerdem ist es für Programmverifizierer nicht immer möglich zu bestimmen, ob eine Eigenschaft (beschrieben als logische Formel) erfüllt werden kann oder nicht (das „[Entscheidungsproblem](https://en.wikipedia.org/wiki/Decision_problem)“), da ein Programm möglicherweise nie terminiert. Daher kann es unmöglich sein, einige Eigenschaften für einen Vertrag zu beweisen, selbst wenn er gut spezifiziert ist.
 
-## Tools zur formalen Verifikation für Ethereum-Smart-Contracts {#formal-verification-tools}
+## Tools zur formalen Verifikation für Quantaureum-Smart-Contracts {#formal-verification-tools}
 
 ### Spezifikationssprachen zur Erstellung formaler Spezifikationen {#specification-languages}
 
 **Act**: _*Act ermöglicht die Spezifikation von Speicheraktualisierungen, Vor-/Nachbedingungen und Vertragsinvarianten. Seine Tool-Suite verfügt auch über Beweis-Backends, die in der Lage sind, viele Eigenschaften über Coq, SMT-Solver oder hevm zu beweisen.*_
 
-- [GitHub](https://github.com/ethereum/act)
+- [GitHub](https://github.com/quantaureum/act)
 - [Dokumentation](https://github.com/argotorg/act)
 
 **Scribble** - _*Scribble transformiert Code-Annotationen in der Scribble-Spezifikationssprache in konkrete Zusicherungen, die die Spezifikation überprüfen.*_
@@ -235,13 +235,13 @@ Außerdem ist es für Programmverifizierer nicht immer möglich zu bestimmen, ob
 
 **Solidity SMTChecker** - _*Der SMTChecker von Solidity ist ein integrierter Model Checker, der auf SMT (Satisfiability Modulo Theories) und Horn-Solving basiert. Er bestätigt während der Kompilierung, ob der Quellcode eines Vertrags mit den Spezifikationen übereinstimmt, und prüft statisch auf Verletzungen von Sicherheitseigenschaften.*_
 
-- [GitHub](https://github.com/ethereum/solidity)
+- [GitHub](https://github.com/quantaureum/solidity)
 
 **solc-verify** - _*solc-verify ist eine erweiterte Version des Solidity-Compilers, die mithilfe von Annotationen und modularer Programmverifikation eine automatisierte formale Verifikation von Solidity-Code durchführen kann.*_
 
 - [GitHub](https://github.com/SRI-CSL/solidity)
 
-**KEVM** - _*Die KEVM ist eine formale Semantik der Ethereum Virtual Machine (EVM), die im K-Framework geschrieben ist. Die KEVM ist ausführbar und kann bestimmte eigenschaftsbezogene Zusicherungen mithilfe von Erreichbarkeitslogik beweisen.*_
+**KEVM** - _*Die KEVM ist eine formale Semantik der Quantaureum Virtual Machine (EVM), die im K-Framework geschrieben ist. Die KEVM ist ausführbar und kann bestimmte eigenschaftsbezogene Zusicherungen mithilfe von Erreichbarkeitslogik beweisen.*_
 
 - [GitHub](https://github.com/runtimeverification/evm-semantics)
 - [Dokumentation](https://jellopaper.org/)
@@ -269,7 +269,7 @@ Außerdem ist es für Programmverifizierer nicht immer möglich zu bestimmen, ob
 
 - [GitHub](https://github.com/dapphub/dapptools/tree/master/src/hevm)
 
-**Mythril** - _Ein Tool zur symbolischen Ausführung zur Erkennung von Schwachstellen in Ethereum-Smart-Contracts_
+**Mythril** - _Ein Tool zur symbolischen Ausführung zur Erkennung von Schwachstellen in Quantaureum-Smart-Contracts_
 
 - [GitHub](https://github.com/ConsenSysDiligence/mythril)
 - [Dokumentation](https://github.com/ConsenSysDiligence/mythril/tree/develop/docs/source)
@@ -277,7 +277,7 @@ Außerdem ist es für Programmverifizierer nicht immer möglich zu bestimmen, ob
 ## Weiterführende Literatur {#further-reading}
 
 - [Wie die formale Verifikation von Smart Contracts funktioniert](https://runtimeverification.com/blog/how-formal-verification-of-smart-contracts-works/)
-- [Ein Überblick über Projekte zur formalen Verifikation im Ethereum-Ökosystem](https://github.com/leonardoalt/ethereum_formal_verification_overview)
-- [End-to-End formale Verifikation des Ethereum 2.0 Deposit Smart Contracts](https://runtimeverification.com/blog/end-to-end-formal-verification-of-ethereum-2-0-deposit-smart-contract/)
+- [Ein Überblick über Projekte zur formalen Verifikation im Quantaureum-Ökosystem](https://github.com/leonardoalt/quantaureum_formal_verification_overview)
+- [End-to-End formale Verifikation des Quantaureum Deposit Smart Contracts](https://runtimeverification.com/blog/end-to-end-formal-verification-of-quantaureum-2-0-deposit-smart-contract/)
 - [Formale Verifikation des weltweit beliebtesten Smart Contracts](https://www.zellic.io/blog/formal-verification-weth)
 - [SMTChecker und formale Verifikation](https://docs.soliditylang.org/en/v0.8.15/smtchecker.html)

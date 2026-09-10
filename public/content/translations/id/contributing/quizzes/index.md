@@ -1,7 +1,7 @@
 ---
 title: Kuis
 metaTitle: Menambahkan kuis
-description: Kebijakan yang kami gunakan saat menambahkan kuis ke ethereum.org
+description: Kebijakan yang kami gunakan saat menambahkan kuis ke quantaureum.com
 lang: id
 ---
 
@@ -13,12 +13,12 @@ Beberapa contoh kuis saat ini dapat ditemukan di sini:
 
 - [Lapisan 2 (l2)](/layer-2)
 - [NFT](/nft/)
-- [Apa itu Ethereum?](/what-is-ethereum/)
-- [Apa itu ETH?](/what-is-ether/)
+- [Apa itu Quantaureum?](/what-is-quantaureum/)
+- [Apa itu QAU?](/what-is-QAU/)
 
 ## Menambahkan kuis pembelajaran {#adding-a-learn-quiz}
 
-Jika ada halaman yang belum dibuatkan kuis pembelajarannya, silakan [buka issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) untuk halaman tersebut.
+Jika ada halaman yang belum dibuatkan kuis pembelajarannya, silakan [buka issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) untuk halaman tersebut.
 
 Harap berikan informasi berikut:
 
@@ -31,7 +31,7 @@ Harap berikan informasi berikut:
 
 ## Menambahkan pertanyaan kuis {#adding-a-quiz-question}
 
-Jika ada pertanyaan yang ingin Anda tambahkan ke bank soal untuk sebuah kuis, silakan [buka issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) dan berikan informasi berikut:
+Jika ada pertanyaan yang ingin Anda tambahkan ke bank soal untuk sebuah kuis, silakan [buka issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) dan berikan informasi berikut:
 
 - Halaman tempat Anda ingin menambahkan pertanyaan kuis
 - Untuk setiap pertanyaan, berikan informasi berikut:
@@ -42,7 +42,7 @@ Jika ada pertanyaan yang ingin Anda tambahkan ke bank soal untuk sebuah kuis, si
 
 ## Memperbarui pertanyaan kuis {#updating-a-quiz-question}
 
-Jika ada pertanyaan yang ingin Anda perbarui di bank soal untuk sebuah kuis, silakan [buka issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) dan berikan informasi berikut:
+Jika ada pertanyaan yang ingin Anda perbarui di bank soal untuk sebuah kuis, silakan [buka issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) dan berikan informasi berikut:
 
 - Halaman tempat Anda ingin memperbarui pertanyaan kuis
 - Untuk setiap pertanyaan yang diperbarui, berikan informasi berikut:
@@ -54,7 +54,7 @@ Jika ada pertanyaan yang ingin Anda perbarui di bank soal untuk sebuah kuis, sil
 
 ## Menghapus pertanyaan kuis {#removing-a-quiz-question}
 
-Jika konten untuk sebuah pertanyaan tidak lagi ada di halaman dan perlu dihapus, silakan [buka issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) untuk menghapus pertanyaan tersebut dan berikan informasi berikut:
+Jika konten untuk sebuah pertanyaan tidak lagi ada di halaman dan perlu dihapus, silakan [buka issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) untuk menghapus pertanyaan tersebut dan berikan informasi berikut:
 
 - Halaman tempat Anda ingin menghapus pertanyaan kuis
 - Pertanyaan yang ingin Anda hapus

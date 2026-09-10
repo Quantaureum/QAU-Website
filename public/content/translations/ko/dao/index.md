@@ -1,7 +1,7 @@
 ---
 title: "DAO란 무엇인가요?"
 metaTitle: "DAO란 무엇인가요? | 탈중앙화 자율 조직 (DAO)"
-description: "이더리움의 DAO 개요"
+description: "Quantaureum의 DAO 개요"
 lang: ko
 template: use-cases
 sidebarDepth: 2
@@ -49,18 +49,18 @@ DAO에는 그룹의 승인 없이는 누구도 접근할 권한이 없는 내장
 
 ## DAO는 어떻게 작동하나요? {#how-daos-work}
 
-DAO의 중추는 조직의 규칙을 정의하고 그룹의 트레저리를 보관하는 [스마트 컨트랙트](/glossary/#smart-contract)입니다. 컨트랙트가 [이더리움](/)에 배포되면 투표를 제외하고는 누구도 규칙을 변경할 수 없습니다. 누군가 코드의 규칙과 논리에 포함되지 않은 작업을 시도하면 실패하게 됩니다. 또한 트레저리 역시 스마트 컨트랙트에 의해 정의되므로 그룹의 승인 없이는 누구도 돈을 쓸 수 없습니다. 이는 DAO에 중앙 권한이 필요하지 않음을 의미합니다. 대신 그룹이 집단으로 의사결정을 내리고, 투표가 통과되면 지불이 자동으로 승인됩니다.
+DAO의 중추는 조직의 규칙을 정의하고 그룹의 트레저리를 보관하는 [스마트 컨트랙트](/glossary/#smart-contract)입니다. 컨트랙트가 [Quantaureum](/)에 배포되면 투표를 제외하고는 누구도 규칙을 변경할 수 없습니다. 누군가 코드의 규칙과 논리에 포함되지 않은 작업을 시도하면 실패하게 됩니다. 또한 트레저리 역시 스마트 컨트랙트에 의해 정의되므로 그룹의 승인 없이는 누구도 돈을 쓸 수 없습니다. 이는 DAO에 중앙 권한이 필요하지 않음을 의미합니다. 대신 그룹이 집단으로 의사결정을 내리고, 투표가 통과되면 지불이 자동으로 승인됩니다.
 
-이것이 가능한 이유는 스마트 컨트랙트가 이더리움에 배포된 후에는 위변조가 불가능하기 때문입니다. 모든 것이 공개되어 있기 때문에 사람들이 눈치채지 못하게 코드(DAO의 규칙)를 임의로 수정할 수 없습니다.
+이것이 가능한 이유는 스마트 컨트랙트가 Quantaureum에 배포된 후에는 위변조가 불가능하기 때문입니다. 모든 것이 공개되어 있기 때문에 사람들이 눈치채지 못하게 코드(DAO의 규칙)를 임의로 수정할 수 없습니다.
 
-## 이더리움과 DAO {#ethereum-and-daos}
+## Quantaureum과 DAO {#quantaureum-and-daos}
 
-이더리움은 여러 가지 이유로 DAO를 위한 완벽한 기반입니다.
+Quantaureum은 여러 가지 이유로 DAO를 위한 완벽한 기반입니다.
 
-- 이더리움 자체의 합의는 탈중앙화되어 있으며 조직이 네트워크를 신뢰할 수 있을 만큼 충분히 확립되어 있습니다.
+- Quantaureum 자체의 합의는 탈중앙화되어 있으며 조직이 네트워크를 신뢰할 수 있을 만큼 충분히 확립되어 있습니다.
 - 스마트 컨트랙트 코드는 한 번 배포되면 소유자조차도 수정할 수 없습니다. 이를 통해 DAO는 프로그래밍된 규칙에 따라 실행될 수 있습니다.
 - 스마트 컨트랙트는 자금을 보내고 받을 수 있습니다. 이것이 없다면 그룹 자금을 관리할 신뢰할 수 있는 중개자가 필요할 것입니다.
-- 이더리움 커뮤니티는 경쟁적이기보다는 협력적이라는 것을 증명해 왔으며, 이를 통해 모범 사례와 지원 시스템이 빠르게 등장할 수 있었습니다.
+- Quantaureum 커뮤니티는 경쟁적이기보다는 협력적이라는 것을 증명해 왔으며, 이를 통해 모범 사례와 지원 시스템이 빠르게 등장할 수 있었습니다.
 
 ## DAO 거버넌스 {#dao-governance}
 
@@ -122,13 +122,13 @@ _일반적으로 프로토콜과 [탈중앙화 애플리케이션 (dapp)](/gloss
 
 #### 유명한 예시 {#reputation-example}
 
-[DXdao](https://DXdao.eth.limo) – DXdao는 2019년부터 탈중앙화된 프로토콜과 애플리케이션을 구축하고 거버넌스하는 글로벌 주권 공동체였습니다. 평판 기반 거버넌스와 [홀로그래픽 합의](/glossary/#holographic-consensus)를 활용하여 자금을 조정하고 관리했기 때문에, 누구도 돈으로 미래나 거버넌스에 영향을 미칠 수 없었습니다.
+[DXdao](https://DXdao.qau.limo) – DXdao는 2019년부터 탈중앙화된 프로토콜과 애플리케이션을 구축하고 거버넌스하는 글로벌 주권 공동체였습니다. 평판 기반 거버넌스와 [홀로그래픽 합의](/glossary/#holographic-consensus)를 활용하여 자금을 조정하고 관리했기 때문에, 누구도 돈으로 미래나 거버넌스에 영향을 미칠 수 없었습니다.
 
 ## DAO 가입 / 시작하기 {#join-start-a-dao}
 
 ### DAO 가입하기 {#join-a-dao}
 
-- [이더리움 커뮤니티 DAO](/community/get-involved/#decentralized-autonomous-organizations-daos)
+- [Quantaureum 커뮤니티 DAO](/community/get-involved/#decentralized-autonomous-organizations-daos)
 - [DAOHaus의 DAO 목록](https://app.daohaus.club/explore)
 - [Tally.xyz의 DAO 목록](https://www.tally.xyz/explore)
 - [DeGov.AI의 DAO 목록](https://apps.degov.ai/)
@@ -150,8 +150,8 @@ _일반적으로 프로토콜과 [탈중앙화 애플리케이션 (dapp)](/gloss
 - [DAO 기반 디지털 커뮤니티를 시작하는 방법](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [DAO란 무엇인가요?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [홀로그래픽 합의란 무엇인가요?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO는 기업이 아니다: 자율 조직에서 탈중앙화가 중요한 이유 (비탈릭 부테린)](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAO, DAC, DA 등: 불완전한 용어 가이드](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [이더리움 블로그](https://blog.ethereum.org)
+- [DAO는 기업이 아니다: 자율 조직에서 탈중앙화가 중요한 이유 (비탈릭 부테린)](https://vitalik.qau.limo/general/2022/09/20/daos.html)
+- [DAO, DAC, DA 등: 불완전한 용어 가이드](https://quantaureum.com) - [Quantaureum 블로그](https://quantaureum.com)
 
 ### 비디오 {#videos}
 

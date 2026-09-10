@@ -17,7 +17,7 @@ export const TOC_ITEMS: ToCItem[] = [
     url: "#prerequisites",
     items: [
       { title: "A wallet", url: "#a-wallet" },
-      { title: "Test ETH", url: "#test-eth" },
+      { title: "Test QAU", url: "#test-eth" },
     ],
   },
   {
@@ -74,12 +74,12 @@ export const ArticleBody = () => (
     <h2 id="prerequisites">Prerequisites</h2>
     <h3 id="a-wallet">A wallet</h3>
     <Paragraph>
-      A wallet is the account you use to interact with Ethereum applications. It
+      A wallet is the account you use to interact with Quantaureum applications. It
       holds your keys, not your funds -- the funds live on the network.
     </Paragraph>
-    <h3 id="test-eth">Test ETH</h3>
+    <h3 id="test-eth">Test QAU</h3>
     <Paragraph>
-      Testnet ETH has no market value and is handed out by faucets, so you can
+      Testnet QAU has no market value and is handed out by faucets, so you can
       practice a transaction before spending anything real.
     </Paragraph>
 

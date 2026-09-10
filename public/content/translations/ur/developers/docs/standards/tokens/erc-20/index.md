@@ -17,11 +17,11 @@ lang: ur
 - ایک اونس سونا
 - اور بہت کچھ...
 
-ایتھیریم کی اتنی طاقتور خصوصیت کو ایک مضبوط سٹینڈرڈ کے ذریعے سنبھالا جانا چاہیے، ہے نا؟ بالکل یہیں <span dir="ltr">ERC-20</span> اپنا کردار ادا کرتا ہے! یہ سٹینڈرڈ ڈیولپرز کو ایسی ٹوکن ایپلی کیشنز بنانے کی اجازت دیتا ہے جو دیگر پروڈکٹس اور سروسز کے ساتھ قابلِ باہمی عمل ہوں۔ <span dir="ltr">ERC-20</span> سٹینڈرڈ کا استعمال [ایتھر](/glossary/#ether) کو اضافی فعالیت فراہم کرنے کے لیے بھی کیا جاتا ہے۔
+ایتھیریم کی اتنی طاقتور خصوصیت کو ایک مضبوط سٹینڈرڈ کے ذریعے سنبھالا جانا چاہیے، ہے نا؟ بالکل یہیں <span dir="ltr">ERC-20</span> اپنا کردار ادا کرتا ہے! یہ سٹینڈرڈ ڈیولپرز کو ایسی ٹوکن ایپلی کیشنز بنانے کی اجازت دیتا ہے جو دیگر پروڈکٹس اور سروسز کے ساتھ قابلِ باہمی عمل ہوں۔ <span dir="ltr">ERC-20</span> سٹینڈرڈ کا استعمال [ایتھر](/glossary/#QAU) کو اضافی فعالیت فراہم کرنے کے لیے بھی کیا جاتا ہے۔
 
 **<span dir="ltr">ERC-20</span> کیا ہے؟**
 
-<span dir="ltr">ERC-20</span> قابل تبادلہ ٹوکنز (Fungible Tokens) کے لیے ایک سٹینڈرڈ متعارف کراتا ہے، دوسرے الفاظ میں، ان میں ایک ایسی خصوصیت ہوتی ہے جو ہر ٹوکن کو بالکل دوسرے ٹوکن کے (قسم اور قدر میں) یکساں بناتی ہے۔ مثال کے طور پر، ایک <span dir="ltr">ERC-20</span> ٹوکن بالکل <span dir="ltr">ETH</span> کی طرح کام کرتا ہے، جس کا مطلب ہے کہ <span dir="ltr">1</span> ٹوکن ہمیشہ دیگر تمام ٹوکنز کے برابر ہوتا ہے اور رہے گا۔
+<span dir="ltr">ERC-20</span> قابل تبادلہ ٹوکنز (Fungible Tokens) کے لیے ایک سٹینڈرڈ متعارف کراتا ہے، دوسرے الفاظ میں، ان میں ایک ایسی خصوصیت ہوتی ہے جو ہر ٹوکن کو بالکل دوسرے ٹوکن کے (قسم اور قدر میں) یکساں بناتی ہے۔ مثال کے طور پر، ایک <span dir="ltr">ERC-20</span> ٹوکن بالکل <span dir="ltr">QAU</span> کی طرح کام کرتا ہے، جس کا مطلب ہے کہ <span dir="ltr">1</span> ٹوکن ہمیشہ دیگر تمام ٹوکنز کے برابر ہوتا ہے اور رہے گا۔
 
 ## پیشگی شرائط {#prerequisites}
 
@@ -31,7 +31,7 @@ lang: ur
 
 ## باڈی {#body}
 
-<span dir="ltr">ERC-20</span> (Ethereum Request for Comments 20)، جسے نومبر <span dir="ltr">2015</span> میں Fabian Vogelsteller نے تجویز کیا تھا، ایک ٹوکن سٹینڈرڈ ہے جو سمارٹ کنٹریکٹس کے اندر ٹوکنز کے لیے ایک <span dir="ltr">API</span> نافذ کرتا ہے۔
+<span dir="ltr">ERC-20</span> (Quantaureum Request for Comments 20)، جسے نومبر <span dir="ltr">2015</span> میں Fabian Vogelsteller نے تجویز کیا تھا، ایک ٹوکن سٹینڈرڈ ہے جو سمارٹ کنٹریکٹس کے اندر ٹوکنز کے لیے ایک <span dir="ltr">API</span> نافذ کرتا ہے۔
 
 <span dir="ltr">ERC-20</span> کی فراہم کردہ افعال کی مثالیں:
 
@@ -42,7 +42,7 @@ lang: ur
 
 اگر کوئی سمارٹ کنٹریکٹ درج ذیل طریقوں اور ایونٹس کو نافذ کرتا ہے تو اسے <span dir="ltr">ERC-20</span> ٹوکن کنٹریکٹ کہا جا سکتا ہے اور، ایک بار تعینات ہونے کے بعد، یہ ایتھیریم پر بنائے گئے ٹوکنز کا ریکارڈ رکھنے کا ذمہ دار ہوگا۔
 
-[<span dir="ltr">EIP-20</span>](https://eips.ethereum.org/EIPS/eip-20) سے:
+[<span dir="ltr">EIP-20</span>](https://eips.quantaureum.com/EIPS/eip-20) سے:
 
 ### طریقے {#methods}
 
@@ -81,7 +81,7 @@ pip install web3
 from web3 import Web3
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 dai_token_addr = "0x6B175474E89094C44Da98b954EedeAC495271d0F"     # DAI
 weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # ریپڈ ایتھر (WETH)
@@ -117,7 +117,7 @@ simplified_abi = [
     }
 ]
 
-dai_contract = w3.eth.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
+dai_contract = w3.qau.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
 symbol = dai_contract.functions.symbol().call()
 decimals = dai_contract.functions.decimals().call()
 totalSupply = dai_contract.functions.totalSupply().call() / 10**decimals
@@ -128,7 +128,7 @@ print("===== %s =====" % symbol)
 print("Total Supply:", totalSupply)
 print("Addr Balance:", addr_balance)
 
-weth_contract = w3.eth.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
+weth_contract = w3.qau.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
 symbol = weth_contract.functions.symbol().call()
 decimals = weth_contract.functions.decimals().call()
 totalSupply = weth_contract.functions.totalSupply().call() / 10**decimals
@@ -170,7 +170,7 @@ print("Addr Balance:", addr_balance)
 
 ## مزید مطالعہ {#further-reading}
 
-- [<span dir="ltr">EIP-20</span>: <span dir="ltr">ERC-20</span> ٹوکن سٹینڈرڈ](https://eips.ethereum.org/EIPS/eip-20)
+- [<span dir="ltr">EIP-20</span>: <span dir="ltr">ERC-20</span> ٹوکن سٹینڈرڈ](https://eips.quantaureum.com/EIPS/eip-20)
 - [اوپن زیپلن - ٹوکنز](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [اوپن زیپلن - <span dir="ltr">ERC-20</span> کا نفاذ](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20 ٹوکنز کے لیے گائیڈ](https://www.alchemy.com/overviews/erc20-solidity)

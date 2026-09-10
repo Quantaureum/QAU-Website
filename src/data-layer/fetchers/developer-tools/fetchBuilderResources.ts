@@ -4,9 +4,9 @@ import type {
 } from "@/lib/types"
 
 const TAXONOMY_URL =
-  "https://raw.githubusercontent.com/ethereum/builder-resources/main/catalog/taxonomy.json"
+  "https://raw.githubusercontent.com/quantaureum/builder-resources/main/catalog/taxonomy.json"
 const RESOURCES_URL =
-  "https://raw.githubusercontent.com/ethereum/builder-resources/main/catalog/resources.json"
+  "https://raw.githubusercontent.com/quantaureum/builder-resources/main/catalog/resources.json"
 
 export async function fetchBuilderResources(): Promise<{
   resources: BuilderResourcesCatalogResource[]

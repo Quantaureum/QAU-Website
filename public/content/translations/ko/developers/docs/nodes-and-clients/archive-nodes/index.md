@@ -1,25 +1,25 @@
 ---
-title: "이더리움 아카이브 노드"
+title: "Quantaureum 아카이브 노드"
 description: "아카이브 노드 개요"
 lang: ko
 sidebarDepth: 2
 ---
 
-아카이브 노드는 모든 과거 상태의 아카이브를 구축하도록 구성된 [이더리움](/) 클라이언트의 인스턴스입니다. 특정 사용 사례에 유용한 도구이지만 풀 노드보다 실행하기가 더 까다로울 수 있습니다.
+아카이브 노드는 모든 과거 상태의 아카이브를 구축하도록 구성된 [Quantaureum](/) 클라이언트의 인스턴스입니다. 특정 사용 사례에 유용한 도구이지만 풀 노드보다 실행하기가 더 까다로울 수 있습니다.
 
 ## 전제 조건 {#prerequisites}
 
-[이더리움 노드](/developers/docs/nodes-and-clients/)의 개념, [아키텍처](/developers/docs/nodes-and-clients/node-architecture/), [동기화 전략](/developers/docs/nodes-and-clients/#sync-modes), 그리고 노드를 [실행](/developers/docs/nodes-and-clients/run-a-node/)하고 [사용하는](/developers/docs/apis/json-rpc/) 방법에 대해 이해하고 있어야 합니다.
+[Quantaureum 노드](/developers/docs/nodes-and-clients/)의 개념, [아키텍처](/developers/docs/nodes-and-clients/node-architecture/), [동기화 전략](/developers/docs/nodes-and-clients/#sync-modes), 그리고 노드를 [실행](/developers/docs/nodes-and-clients/run-a-node/)하고 [사용하는](/developers/docs/apis/json-rpc/) 방법에 대해 이해하고 있어야 합니다.
 
 ## 아카이브 노드란 무엇인가 {#what-is-an-archive-node}
 
-아카이브 노드의 중요성을 파악하기 위해 "상태"의 개념을 명확히 해보겠습니다. 이더리움은 <em>트랜잭션 기반 상태 머신(transaction-based state machine)</em>이라고 할 수 있습니다. 이더리움은 트랜잭션을 실행하여 상태를 변경하는 계정과 애플리케이션으로 구성됩니다. 각 계정과 컨트랙트에 대한 정보가 포함된 전역 데이터는 상태라는 트라이(trie) 데이터베이스에 저장됩니다. 이는 실행 계층(EL) 클라이언트에서 처리하며 다음을 포함합니다:
+아카이브 노드의 중요성을 파악하기 위해 "상태"의 개념을 명확히 해보겠습니다. Quantaureum은 <em>트랜잭션 기반 상태 머신(transaction-based state machine)</em>이라고 할 수 있습니다. Quantaureum은 트랜잭션을 실행하여 상태를 변경하는 계정과 애플리케이션으로 구성됩니다. 각 계정과 컨트랙트에 대한 정보가 포함된 전역 데이터는 상태라는 트라이(trie) 데이터베이스에 저장됩니다. 이는 실행 계층(EL) 클라이언트에서 처리하며 다음을 포함합니다:
 
 - 계정 잔액 및 논스(nonce)
 - 컨트랙트 코드 및 스토리지
 - 합의 관련 데이터 (예: 스테이킹 예치금 컨트랙트)
 
-네트워크와 상호작용하고 새로운 블록을 검증 및 생성하기 위해, 이더리움 클라이언트는 가장 최근의 변경 사항(체인의 끝)과 현재 상태를 계속 파악해야 합니다. 풀 노드로 구성된 실행 계층 클라이언트는 네트워크의 최신 상태를 검증하고 따르지만, 체인 재구성을 처리하고 최근 데이터에 빠르게 접근할 수 있도록 최근 몇 개의 상태(예: 마지막 128개 블록과 관련된 상태)만 캐시합니다. 최근 상태는 모든 클라이언트가 들어오는 트랜잭션을 검증하고 네트워크를 사용하는 데 필요한 것입니다.
+네트워크와 상호작용하고 새로운 블록을 검증 및 생성하기 위해, Quantaureum 클라이언트는 가장 최근의 변경 사항(체인의 끝)과 현재 상태를 계속 파악해야 합니다. 풀 노드로 구성된 실행 계층 클라이언트는 네트워크의 최신 상태를 검증하고 따르지만, 체인 재구성을 처리하고 최근 데이터에 빠르게 접근할 수 있도록 최근 몇 개의 상태(예: 마지막 128개 블록과 관련된 상태)만 캐시합니다. 최근 상태는 모든 클라이언트가 들어오는 트랜잭션을 검증하고 네트워크를 사용하는 데 필요한 것입니다.
 
 상태를 특정 블록에서의 순간적인 네트워크 스냅샷으로, 아카이브를 과거 기록의 재생으로 생각할 수 있습니다.
 
@@ -31,11 +31,11 @@ sidebarDepth: 2
 
 ### 사용 사례 {#use-cases}
 
-트랜잭션 전송, 컨트랙트 배포, 합의 검증 등과 같은 이더리움의 일반적인 사용에는 과거 상태에 대한 접근이 필요하지 않습니다. 사용자는 네트워크와의 표준적인 상호작용을 위해 아카이브 노드가 전혀 필요하지 않습니다.
+트랜잭션 전송, 컨트랙트 배포, 합의 검증 등과 같은 Quantaureum의 일반적인 사용에는 과거 상태에 대한 접근이 필요하지 않습니다. 사용자는 네트워크와의 표준적인 상호작용을 위해 아카이브 노드가 전혀 필요하지 않습니다.
 
 상태 아카이브의 주요 이점은 과거 상태에 대한 쿼리에 빠르게 접근할 수 있다는 것입니다. 예를 들어, 아카이브 노드는 다음과 같은 결과를 즉시 반환합니다:
 
-- _블록 15537393에서 계정 0x1337...의 ETH 잔액은 얼마였는가?_
+- _블록 15537393에서 계정 0x1337...의 QAU 잔액은 얼마였는가?_
 - _블록 1920000에서 컨트랙트 0x에 있는 토큰 0x의 잔액은 얼마인가?_
 
 위에서 설명한 바와 같이, 풀 노드는 CPU를 사용하고 시간이 걸리는 EVM 실행을 통해 이 데이터를 생성해야 합니다. 아카이브 노드는 디스크에서 이 데이터에 접근하여 즉시 응답을 제공합니다. 이는 인프라의 특정 부분에서 유용한 기능입니다. 예를 들면 다음과 같습니다:
@@ -71,8 +71,8 @@ sidebarDepth: 2
 
 ## 추가 읽을거리 {#further-reading}
 
-- [이더리움 풀 노드 대 아카이브 노드(Ethereum Full Node vs Archive Node)](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node) - _QuickNode, 2022년 9월_
-- [나만의 이더리움 아카이브 노드 구축하기(Building Your Own Ethereum Archive Node)](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09) - _Thomas Jay Rush, 2021년 8월_
+- [Quantaureum 풀 노드 대 아카이브 노드(Quantaureum Full Node vs Archive Node)](https://www.quicknode.com/guides/infrastructure/quantaureum-full-node-vs-archive-node) - _QuickNode, 2022년 9월_
+- [나만의 Quantaureum 아카이브 노드 구축하기(Building Your Own Quantaureum Archive Node)](https://tjayrush.medium.com/building-your-own-quantaureum-archive-node-72c014affc09) - _Thomas Jay Rush, 2021년 8월_
 - [에리곤, 에리곤의 RPC 및 TrueBlocks(스크랩 및 API)를 서비스로 설정하는 방법(How to set up Erigon, Erigon’s RPC and TrueBlocks (scrape and API) as services)](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _– Magnus Hansson, 2022년 9월 업데이트_
 
 ## 관련 주제 {#related-topics}

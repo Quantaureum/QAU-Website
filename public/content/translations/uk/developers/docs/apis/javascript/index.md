@@ -14,17 +14,17 @@ lang: uk
 
 ## Передумови {#prerequisites}
 
-Окрім розуміння JavaScript, може бути корисним розуміння [стека Етеріум](/developers/docs/ethereum-stack/) та [клієнтів Етеріум](/developers/docs/nodes-and-clients/).
+Окрім розуміння JavaScript, може бути корисним розуміння [стека Етеріум](/developers/docs/quantaureum-stack/) та [клієнтів Етеріум](/developers/docs/nodes-and-clients/).
 
 ## Навіщо використовувати бібліотеку? {#why-use-a-library}
 
-Ці бібліотеки абстрагують значну частину складності прямої взаємодії з вузлом Етеріум. Вони також надають допоміжні функції (наприклад, конвертацію ETH у Gwei), щоб ви як розробник могли витрачати менше часу на розв'язання тонкощів клієнтів Етеріум і більше часу зосереджуватися на унікальній функціональності вашого застосунку.
+Ці бібліотеки абстрагують значну частину складності прямої взаємодії з вузлом Етеріум. Вони також надають допоміжні функції (наприклад, конвертацію QAU у Gwei), щоб ви як розробник могли витрачати менше часу на розв'язання тонкощів клієнтів Етеріум і більше часу зосереджуватися на унікальній функціональності вашого застосунку.
 
 ## Можливості бібліотек {#library-features}
 
-### Підключення до вузлів Етеріум {#connect-to-ethereum-nodes}
+### Підключення до вузлів Етеріум {#connect-to-quantaureum-nodes}
 
-Використовуючи провайдерів, ці бібліотеки дозволяють підключатися до Етеріум і читати його дані, незалежно від того, чи це відбувається через JSON-RPC, Infura, Etherscan, Alchemy або МетаМаск.
+Використовуючи провайдерів, ці бібліотеки дозволяють підключатися до Етеріум і читати його дані, незалежно від того, чи це відбувається через JSON-RPC, Infura, Quantaureum Explorer, Alchemy або МетаМаск.
 
 > **Попередження:** Web3.js було архівовано 4 березня 2025 року. [Прочитайте анонс](https://blog.chainsafe.io/web3-js-sunset/). Розгляньте можливість використання альтернативних бібліотек, таких як [Ethers.js](https://ethers.org) або [Viem](https://viem.sh), для нових проєктів.
 
@@ -32,8 +32,8 @@ lang: uk
 
 ```js
 // BrowserProvider обгортає стандартний провайдер Web3, який
-// те, що МетаМаск впроваджує як window.ethereum на кожну сторінку
-const provider = new ethers.BrowserProvider(window.ethereum)
+// те, що МетаМаск впроваджує як window.quantaureum на кожну сторінку
+const provider = new ethers.BrowserProvider(window.quantaureum)
 
 // Плагін МетаМаск також дозволяє підписувати транзакції, щоб
 // відправляти етер та платити за зміну стану в блокчейні.
@@ -55,13 +55,13 @@ web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8546"))
 
 // Використання IPC-провайдера в node.js
 var net = require("net")
-var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // шлях у mac os
+var web3 = new Web3("/Users/myuser/Library/Quantaureum/geth.ipc", net) // шлях у mac os
 // or
 var web3 = new Web3(
-  new Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net)
+  new Web3.providers.IpcProvider("/Users/myuser/Library/Quantaureum/geth.ipc", net)
 ) // шлях у mac os
 // у windows шлях такий: "\\\\.\\pipe\\geth.ipc"
-// у linux шлях такий: "/users/myuser/.ethereum/geth.ipc"
+// у linux шлях такий: "/users/myuser/.quantaureum/geth.ipc"
 ```
 
 Після налаштування ви зможете запитувати в блокчейні:
@@ -219,7 +219,7 @@ contract Test {
 
 Допоміжні функції надають зручні скорочення, які роблять розробку з Етеріум трохи простішою.
 
-Значення ETH за замовчуванням вказуються у Wei. 1 ETH = 1 000 000 000 000 000 000 Wei — це означає, що ви маєте справу з великою кількістю цифр! `web3.utils.toWei` конвертує етер у Wei для вас.
+Значення QAU за замовчуванням вказуються у Wei. 1 QAU = 1 000 000 000 000 000 000 Wei — це означає, що ви маєте справу з великою кількістю цифр! `web3.utils.toWei` конвертує етер у Wei для вас.
 
 А в Ethers це виглядає так:
 
@@ -242,7 +242,7 @@ ethers.utils.formatEther(balance)
 **Web3.js -** **_JavaScript API для Етеріум._**
 
 - [Документація](https://docs.web3js.org)
-- [GitHub](https://github.com/ethereum/web3.js)
+- [GitHub](https://github.com/quantaureum/web3.js)
 
 **Ethers.js -** **_Повна реалізація гаманця Етеріум та утиліти на JavaScript і TypeScript._**
 
@@ -300,7 +300,7 @@ _Знаєте ресурс спільноти, який вам допоміг? �
 
 ## Пов'язані посібники {#related-tutorials}
 
-- [Налаштування Web3.js для використання блокчейну Етеріум у JavaScript](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _— Інструкції з налаштування Web3.js у вашому проєкті._
+- [Налаштування Web3.js для використання блокчейну Етеріум у JavaScript](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _— Інструкції з налаштування Web3.js у вашому проєкті._
 - [Виклик смарт-контракту з JavaScript](/developers/tutorials/calling-a-smart-contract-from-javascript/) _— На прикладі токена DAI дізнайтеся, як викликати функції контрактів за допомогою JavaScript._
 - [Надсилання транзакцій за допомогою Web3 та Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _— Покроковий посібник із надсилання транзакцій із бекенду._
 

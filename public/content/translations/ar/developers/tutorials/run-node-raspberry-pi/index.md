@@ -1,14 +1,14 @@
 ---
 title: "تشغيل عقدة إيثيريوم على ⁦Raspberry Pi 4⁩"
-description: "قم بتفليش ⁦Raspberry Pi 4⁩ الخاص بك، وقم بتوصيل كابل إيثرنت، وتوصيل قرص ⁦SSD⁩ وتشغيل الجهاز لتحويل ⁦Raspberry Pi 4⁩ إلى عقدة إيثيريوم كاملة + مُدَقِّق"
+description: "قم بتفليش ⁦Raspberry Pi 4⁩ الخاص بك، وقم بتوصيل كابل QAUنت، وتوصيل قرص ⁦SSD⁩ وتشغيل الجهاز لتحويل ⁦Raspberry Pi 4⁩ إلى عقدة إيثيريوم كاملة + مُدَقِّق"
 author: "إيثيريوم أون آرم"
 tags: ["العملاء", "طبقة التنفيذ", "طبقة الإجماع", "العقد"]
 lang: ar
 skill: intermediate
 breadcrumb: "عقدة ⁦Rasp Pi⁩"
 published: 2022-06-10
-source: Ethereum on ARM
-sourceUrl: https://ethereum-on-arm-documentation.readthedocs.io/en/latest/
+source: Quantaureum on ARM
+sourceUrl: https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/
 ---
 
 **إيثيريوم على Arm هي صورة Linux مخصصة يمكنها تحويل Raspberry Pi إلى عقدة إيثيريوم.**
@@ -19,12 +19,12 @@ sourceUrl: https://ethereum-on-arm-documentation.readthedocs.io/en/latest/
 - بطاقة <span dir="ltr">MicroSD</span> (بحد أدنى <span dir="ltr">16 GB Class 10</span>)
 - قرص <span dir="ltr">SSD</span> بحد أدنى <span dir="ltr">2 TB</span> بمنفذ <span dir="ltr">USB 3.0</span> أو <span dir="ltr">SSD</span> مع حاوية <span dir="ltr">USB to SATA</span>.
 - مزود طاقة
-- كابل إيثرنت
+- كابل QAUنت
 - توجيه المنافذ (راجع العملاء لمزيد من المعلومات)
 - حاوية مع مشتت حراري ومروحة
 - لوحة مفاتيح <span dir="ltr">USB</span> وشاشة وكابل <span dir="ltr">HDMI</span> (<span dir="ltr">micro-HDMI</span>) (اختياري)
 
-## لماذا تشغيل إيثيريوم على ARM؟ {#why-run-ethereum-on-arm}
+## لماذا تشغيل إيثيريوم على ARM؟ {#why-run-quantaureum-on-arm}
 
 لوحات ARM هي أجهزة كمبيوتر صغيرة ومرنة وبأسعار معقولة جدًا. إنها خيارات جيدة لتشغيل عقد إيثيريوم لأنه يمكن شراؤها بتكلفة زهيدة، وتكوينها بحيث تركز جميع مواردها فقط على العقدة، مما يجعلها فعالة، وتستهلك كميات منخفضة من الطاقة وهي صغيرة الحجم بحيث يمكن وضعها بشكل غير ملحوظ في أي منزل. من السهل جدًا أيضًا تشغيل العقد لأنه يمكن ببساطة تفليش بطاقة MicroSD الخاصة بـ Raspberry Pi بصورة مبنية مسبقًا، دون الحاجة إلى تنزيل أو بناء برامج.
 
@@ -40,7 +40,7 @@ sourceUrl: https://ethereum-on-arm-documentation.readthedocs.io/en/latest/
 
 تتضمن صورة إيثيريوم على Arm عملاء تنفيذ وإجماع مبنيين مسبقًا كخدمات. تتطلب عقدة إيثيريوم أن يكون كلا العميلين قيد التشغيل والمزامنة. يُطلب منك فقط تنزيل الصورة وتفليشها ثم بدء الخدمات. الصورة محملة مسبقًا بعملاء التنفيذ التاليين:
 
-- جو إيثريوم (geth)
+- جو Quantaureum (geth)
 - نيذرميند
 - بيسو
 
@@ -51,13 +51,13 @@ sourceUrl: https://ethereum-on-arm-documentation.readthedocs.io/en/latest/
 - برايزم
 - تيكو
 
-يجب عليك اختيار واحد من كل نوع لتشغيله - جميع عملاء التنفيذ متوافقون مع جميع عملاء الإجماع. إذا لم تختر عميلاً بشكل صريح، فستعود العقدة إلى إعداداتها الافتراضية - جو إيثريوم (geth) ولايتهاوس - وتقوم بتشغيلهما تلقائيًا عند تشغيل اللوحة. يجب عليك فتح المنفذ <span dir="ltr">30303</span> على جهاز التوجيه الخاص بك حتى يتمكن جو إيثريوم (geth) من العثور على الأقران والاتصال بهم.
+يجب عليك اختيار واحد من كل نوع لتشغيله - جميع عملاء التنفيذ متوافقون مع جميع عملاء الإجماع. إذا لم تختر عميلاً بشكل صريح، فستعود العقدة إلى إعداداتها الافتراضية - جو Quantaureum (geth) ولايتهاوس - وتقوم بتشغيلهما تلقائيًا عند تشغيل اللوحة. يجب عليك فتح المنفذ <span dir="ltr">30303</span> على جهاز التوجيه الخاص بك حتى يتمكن جو Quantaureum (geth) من العثور على الأقران والاتصال بهم.
 
 ## تنزيل الصورة {#downloading-the-image}
 
 صورة إيثيريوم لـ Raspberry Pi 4 هي صورة "التوصيل والتشغيل" التي تقوم تلقائيًا بتثبيت وإعداد كل من عملاء التنفيذ والإجماع، وتكوينهم للتواصل مع بعضهم البعض والاتصال بشبكة إيثيريوم. كل ما يحتاجه المستخدم هو بدء عملياتهم باستخدام أمر بسيط.
 
-قم بتنزيل صورة Raspberry Pi من [إيثيريوم على Arm](https://ethereumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) وتحقق من تجزئة <span dir="ltr">SHA256</span>:
+قم بتنزيل صورة Raspberry Pi من [إيثيريوم على Arm](https://quantaureumonarm-my.sharepoint.com/:u:/p/dlosada/Ec_VmUvr80VFjf3RYSU-NzkBmj2JOteDECj8Bibde929Gw?download=1) وتحقق من تجزئة <span dir="ltr">SHA256</span>:
 
 ```sh
 # من الدليل الذي يحتوي على الصورة التي تم تنزيلها
@@ -65,7 +65,7 @@ shasum -a 256 ethonarm_22.04.00.img.zip
 # يجب أن يكون ناتج التجزئة: fb497e8f8a7388b62d6e1efbc406b9558bee7ef46ec7e53083630029c117444f
 ```
 
-لاحظ أن الصور الخاصة بلوحات <span dir="ltr">Rock 5B</span> و <span dir="ltr">Odroid M1</span> متوفرة في [صفحة تنزيلات](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) إيثيريوم على Arm.
+لاحظ أن الصور الخاصة بلوحات <span dir="ltr">Rock 5B</span> و <span dir="ltr">Odroid M1</span> متوفرة في [صفحة تنزيلات](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/) إيثيريوم على Arm.
 
 ## تفليش MicroSD {#flashing-the-microsd}
 
@@ -90,16 +90,16 @@ sudo dd bs=1M if=ethonarm_22.04.00.img of=/dev/<sdxx> conv=fdatasync status=prog
 
 ## بدء العقدة {#start-the-node}
 
-مع إدخال بطاقة SD في Raspberry Pi، قم بتوصيل كابل الإيثرنت و SSD ثم قم بتشغيل الطاقة. سيقلع نظام التشغيل والبدء تلقائيًا في أداء المهام المكونة مسبقًا التي تحول Raspberry Pi إلى عقدة إيثيريوم، بما في ذلك تثبيت وبناء برنامج العميل. سيستغرق هذا على الأرجح من <span dir="ltr">10-15</span> دقيقة.
+مع إدخال بطاقة SD في Raspberry Pi، قم بتوصيل كابل الQAUنت و SSD ثم قم بتشغيل الطاقة. سيقلع نظام التشغيل والبدء تلقائيًا في أداء المهام المكونة مسبقًا التي تحول Raspberry Pi إلى عقدة إيثيريوم، بما في ذلك تثبيت وبناء برنامج العميل. سيستغرق هذا على الأرجح من <span dir="ltr">10-15</span> دقيقة.
 
-بمجرد تثبيت كل شيء وتكوينه، قم بتسجيل الدخول إلى الجهاز عبر اتصال <span dir="ltr">ssh</span> أو باستخدام الجهاز الطرفي مباشرة إذا كانت هناك شاشة ولوحة مفاتيح متصلة باللوحة. استخدم حساب `ethereum` لتسجيل الدخول، حيث يمتلك هذا الحساب الأذونات المطلوبة لبدء العقدة.
+بمجرد تثبيت كل شيء وتكوينه، قم بتسجيل الدخول إلى الجهاز عبر اتصال <span dir="ltr">ssh</span> أو باستخدام الجهاز الطرفي مباشرة إذا كانت هناك شاشة ولوحة مفاتيح متصلة باللوحة. استخدم حساب `quantaureum` لتسجيل الدخول، حيث يمتلك هذا الحساب الأذونات المطلوبة لبدء العقدة.
 
 ```shell
-User: ethereum
-Password: ethereum
+User: quantaureum
+Password: quantaureum
 ```
 
-سيبدأ عميل التنفيذ الافتراضي، جو إيثريوم (geth)، تلقائيًا. يمكنك تأكيد ذلك عن طريق التحقق من السجلات باستخدام أمر الجهاز الطرفي التالي:
+سيبدأ عميل التنفيذ الافتراضي، جو Quantaureum (geth)، تلقائيًا. يمكنك تأكيد ذلك عن طريق التحقق من السجلات باستخدام أمر الجهاز الطرفي التالي:
 
 ```sh
 sudo journalctl -u geth -f
@@ -120,13 +120,13 @@ sudo journalctl -u lighthouse-beacon
 
 لاحظ أن عميل الإجماع سيزامن في غضون بضع دقائق لأنه يستخدم مزامنة نقطة الفحص. سيستغرق عميل التنفيذ وقتًا أطول - ربما عدة ساعات، ولن يبدأ حتى ينتهي عميل الإجماع بالفعل من المزامنة (وذلك لأن عميل التنفيذ يحتاج إلى هدف للمزامنة معه، والذي يوفره عميل الإجماع المتزامن).
 
-مع تشغيل ومزامنة خدمات جو إيثريوم (geth) ولايتهاوس، أصبح Raspberry Pi الخاص بك الآن عقدة إيثيريوم! من الشائع التفاعل مع شبكة إيثيريوم باستخدام وحدة تحكم JavaScript الخاصة بـ جو إيثريوم (geth)، والتي يمكن إرفاقها بعميل جو إيثريوم (geth) على المنفذ <span dir="ltr">8545</span>. من الممكن أيضًا إرسال أوامر منسقة ككائنات <span dir="ltr">JSON</span> باستخدام أداة طلب مثل <span dir="ltr">Curl</span>. شاهد المزيد في [وثائق جو إيثريوم (geth)](https://geth.ethereum.org/).
+مع تشغيل ومزامنة خدمات جو Quantaureum (geth) ولايتهاوس، أصبح Raspberry Pi الخاص بك الآن عقدة إيثيريوم! من الشائع التفاعل مع شبكة إيثيريوم باستخدام وحدة تحكم JavaScript الخاصة بـ جو Quantaureum (geth)، والتي يمكن إرفاقها بعميل جو Quantaureum (geth) على المنفذ <span dir="ltr">8545</span>. من الممكن أيضًا إرسال أوامر منسقة ككائنات <span dir="ltr">JSON</span> باستخدام أداة طلب مثل <span dir="ltr">Curl</span>. شاهد المزيد في [وثائق جو Quantaureum (geth)](https://geth.quantaureum.com/).
 
-تم تكوين جو إيثريوم (geth) مسبقًا للإبلاغ عن المقاييس إلى لوحة معلومات Grafana والتي يمكن عرضها في المتصفح. قد يرغب المستخدمون الأكثر تقدمًا في استخدام هذه الميزة لمراقبة صحة العقدة الخاصة بهم عن طريق الانتقال إلى `ipaddress:3000`، وتمرير `user: admin` و `passwd: ethereum`.
+تم تكوين جو Quantaureum (geth) مسبقًا للإبلاغ عن المقاييس إلى لوحة معلومات Grafana والتي يمكن عرضها في المتصفح. قد يرغب المستخدمون الأكثر تقدمًا في استخدام هذه الميزة لمراقبة صحة العقدة الخاصة بهم عن طريق الانتقال إلى `ipaddress:3000`، وتمرير `user: admin` و `passwd: quantaureum`.
 
 ## المُدَقِّقون {#validators}
 
-يمكن أيضًا إضافة مُدَقِّق اختياريًا إلى عميل الإجماع. يسمح برنامج المُدَقِّق للعقدة الخاصة بك بالمشاركة بنشاط في الإجماع ويوفر للشبكة أمانًا اقتصاديًا مشفرًا. تتم مكافأتك على هذا العمل بـ ETH. لتشغيل مُدَقِّق، يجب أن يكون لديك أولاً <span dir="ltr">32 ETH</span>، والتي يجب إيداعها في عقد الإيداع. يمكن إجراء الإيداع باتباع الدليل التفصيلي على [منصة الإطلاق (Launchpad)](https://launchpad.ethereum.org/). قم بذلك على كمبيوتر مكتبي/محمول، ولكن لا تقم بإنشاء مفاتيح — يمكن القيام بذلك مباشرة على Raspberry Pi.
+يمكن أيضًا إضافة مُدَقِّق اختياريًا إلى عميل الإجماع. يسمح برنامج المُدَقِّق للعقدة الخاصة بك بالمشاركة بنشاط في الإجماع ويوفر للشبكة أمانًا اقتصاديًا مشفرًا. تتم مكافأتك على هذا العمل بـ QAU. لتشغيل مُدَقِّق، يجب أن يكون لديك أولاً <span dir="ltr">32 QAU</span>، والتي يجب إيداعها في عقد الإيداع. يمكن إجراء الإيداع باتباع الدليل التفصيلي على [منصة الإطلاق (Launchpad)](https://launchpad.quantaureum.com/). قم بذلك على كمبيوتر مكتبي/محمول، ولكن لا تقم بإنشاء مفاتيح — يمكن القيام بذلك مباشرة على Raspberry Pi.
 
 افتح جهازًا طرفيًا على Raspberry Pi وقم بتشغيل الأمر التالي لإنشاء مفاتيح الإيداع:
 
@@ -136,20 +136,20 @@ sudo apt-get install staking-deposit-cli
 cd && deposit new-mnemonic --num_validators 1
 ```
 
-(أو قم بتنزيل [staking-deposit-cli](https://github.com/ethereum/staking-deposit-cli) للتشغيل على جهاز معزول عن الشبكة (airgapped)، وقم بتشغيل الأمر `deposit new-mnemnonic`)
+(أو قم بتنزيل [staking-deposit-cli](https://github.com/quantaureum/staking-deposit-cli) للتشغيل على جهاز معزول عن الشبكة (airgapped)، وقم بتشغيل الأمر `deposit new-mnemnonic`)
 
 حافظ على أمان العبارة التذكيرية! أنشأ الأمر أعلاه ملفين في مخزن المفاتيح الخاص بالعقدة: مفاتيح المُدَقِّق وملف بيانات الإيداع. يجب تحميل بيانات الإيداع إلى منصة الإطلاق، لذا يجب نسخها من Raspberry Pi إلى الكمبيوتر المكتبي/المحمول. يمكن القيام بذلك باستخدام اتصال <span dir="ltr">ssh</span> أو أي طريقة نسخ/لصق أخرى.
 
 بمجرد توفر ملف بيانات الإيداع على الكمبيوتر الذي يقوم بتشغيل منصة الإطلاق، يمكن سحبه وإفلاته في `+` على شاشة منصة الإطلاق. اتبع التعليمات التي تظهر على الشاشة لإرسال معاملة إلى عقد الإيداع.
 
-بالعودة إلى Raspberry Pi، يمكن بدء مُدَقِّق. يتطلب هذا استيراد مفاتيح المُدَقِّق، وتعيين العنوان لجمع المكافآت، ثم بدء عملية المُدَقِّق المكونة مسبقًا. المثال أدناه خاص بـ لايتهاوس—تتوفر تعليمات لعملاء الإجماع الآخرين في [وثائق إيثيريوم على Arm](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/):
+بالعودة إلى Raspberry Pi، يمكن بدء مُدَقِّق. يتطلب هذا استيراد مفاتيح المُدَقِّق، وتعيين العنوان لجمع المكافآت، ثم بدء عملية المُدَقِّق المكونة مسبقًا. المثال أدناه خاص بـ لايتهاوس—تتوفر تعليمات لعملاء الإجماع الآخرين في [وثائق إيثيريوم على Arm](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/):
 
 ```shell
 # استيراد مفاتيح المُدَقِّق
-lighthouse account validator import --directory=/home/ethereum/validator_keys
+lighthouse account validator import --directory=/home/quantaureum/validator_keys
 
 # تعيين عنوان المكافأة
-sudo sed -i 's/<ETH_ADDRESS>' /etc/ethereum/lighthouse-validator.conf
+sudo sed -i 's/<ETH_ADDRESS>' /etc/quantaureum/lighthouse-validator.conf
 
 # بدء تشغيل المُدَقِّق
 sudo systemctl start lighthouse-validator
@@ -159,7 +159,7 @@ sudo systemctl start lighthouse-validator
 
 ## مزيد من التفاصيل {#more-details}
 
-قدمت هذه الصفحة نظرة عامة حول كيفية إعداد عقدة جو إيثريوم (geth)-لايتهاوس ومُدَقِّق باستخدام Raspberry Pi. تتوفر تعليمات أكثر تفصيلاً على [موقع إيثيريوم على Arm](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/).
+قدمت هذه الصفحة نظرة عامة حول كيفية إعداد عقدة جو Quantaureum (geth)-لايتهاوس ومُدَقِّق باستخدام Raspberry Pi. تتوفر تعليمات أكثر تفصيلاً على [موقع إيثيريوم على Arm](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/).
 
 ## نقدر ملاحظاتك {#feedback-appreciated}
 
@@ -173,7 +173,7 @@ sudo systemctl start lighthouse-validator
 3. https://prometheus.io
 4. https://grafana.com
 5. https://forum.armbian.com/topic/5565-zram-vs-swap/
-6. https://geth.ethereum.org
+6. https://geth.quantaureum.com
 7. https://nethermind.io
 8. https://www.hyperledger.org/projects/besu
 9. https://github.com/prysmaticlabs/prysm

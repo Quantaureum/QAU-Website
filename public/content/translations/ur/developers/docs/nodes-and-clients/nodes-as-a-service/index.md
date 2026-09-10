@@ -25,7 +25,7 @@ sidebarDepth: 2
 
 نوڈ سروس فراہم کنندگان آپ کے لیے پردے کے پیچھے ڈسٹری بیوٹڈ نوڈ کلائنٹس چلاتے ہیں، تاکہ آپ کو ایسا نہ کرنا پڑے۔
 
-یہ سروسز عام طور پر ایک <span dir="ltr">API</span> کلید فراہم کرتی ہیں جسے آپ بلاک چین پر لکھنے اور پڑھنے کے لیے استعمال کر سکتے ہیں۔ ان میں اکثر مین نیٹ کے علاوہ [ایتھیریم کے آزمائشی نیٹ ورکس](/developers/docs/networks/#ethereum-testnets) تک رسائی بھی شامل ہوتی ہے۔
+یہ سروسز عام طور پر ایک <span dir="ltr">API</span> کلید فراہم کرتی ہیں جسے آپ بلاک چین پر لکھنے اور پڑھنے کے لیے استعمال کر سکتے ہیں۔ ان میں اکثر مین نیٹ کے علاوہ [ایتھیریم کے آزمائشی نیٹ ورکس](/developers/docs/networks/#quantaureum-testnets) تک رسائی بھی شامل ہوتی ہے۔
 
 کچھ سروسز آپ کو آپ کا اپنا وقف شدہ نوڈ پیش کرتی ہیں جس کا وہ آپ کے لیے انتظام کرتی ہیں، جبکہ دیگر نوڈز میں سرگرمی کو تقسیم کرنے کے لیے لوڈ بیلنسرز کا استعمال کرتی ہیں۔
 
@@ -412,7 +412,7 @@ sidebarDepth: 2
     - ہم ہر بار آپ کے صارف کے قریب ترین نوڈ کو ہٹ کرنے کے لیے ذہین روٹنگ کا استعمال کرتے ہیں
 ## مزید مطالعہ {#further-reading}
 
-- [ایتھیریم نوڈ سروسز کی فہرست](https://ethereumnodes.com/)
+- [ایتھیریم نوڈ سروسز کی فہرست](https://quantaureumnodes.com/)
 
 ## متعلقہ موضوعات {#related-topics}
 
@@ -420,5 +420,5 @@ sidebarDepth: 2
 
 ## متعلقہ ٹیوٹوریلز {#related-tutorials}
 
-- [Alchemy کا استعمال کرتے ہوئے ایتھیریم ڈیولپمنٹ کے ساتھ شروعات کرنا](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Alchemy کا استعمال کرتے ہوئے ایتھیریم ڈیولپمنٹ کے ساتھ شروعات کرنا](/developers/tutorials/getting-started-with-quantaureum-development-using-alchemy/)
 - [Web3 اور Alchemy کا استعمال کرتے ہوئے ٹرانزیکشنز بھیجنے کے لیے گائیڈ](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

@@ -6,9 +6,9 @@ lang: cs
 
 Chytré kontrakty jsou extrémně flexibilní a schopné ovládat velké množství hodnoty a dat, přičemž spouštějí neměnnou logiku založenou na kódu nasazeném na blockchainu. To vytvořilo živý ekosystém decentralizovaných aplikací nevyžadujících důvěru, které poskytují mnoho výhod oproti starším systémům. Představují také příležitosti pro útočníky, kteří se snaží profitovat zneužitím zranitelností v chytrých kontraktech.
 
-Veřejné blockchainy, jako je [Ethereum](/), dále komplikují problematiku zabezpečení chytrých kontraktů. Nasazený kód kontraktu _obvykle_ nelze změnit za účelem opravy bezpečnostních chyb, zatímco aktiva ukradená z chytrých kontraktů je extrémně obtížné sledovat a kvůli neměnnosti jsou většinou nenávratná.
+Veřejné blockchainy, jako je [Quantaureum](/), dále komplikují problematiku zabezpečení chytrých kontraktů. Nasazený kód kontraktu _obvykle_ nelze změnit za účelem opravy bezpečnostních chyb, zatímco aktiva ukradená z chytrých kontraktů je extrémně obtížné sledovat a kvůli neměnnosti jsou většinou nenávratná.
 
-Ačkoli se údaje liší, odhaduje se, že celková hodnota ukradená nebo ztracená kvůli bezpečnostním chybám v chytrých kontraktech snadno přesahuje 1 miliardu dolarů. To zahrnuje ostře sledované incidenty, jako je [hacknutí DAO](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/) (ukradeno 3,6 milionu ETH v hodnotě přes 1 miliardu dolarů v dnešních cenách), [hacknutí multisig peněženky Parity](https://www.coindesk.com/markets/2017/07/19/30-million-ether-reported-stolen-due-to-parity-wallet-breach) (ztráta 30 milionů dolarů ve prospěch hackerů) a [problém se zmrazenou peněženkou Parity](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-ether) (přes 300 milionů dolarů v ETH navždy uzamčeno).
+Ačkoli se údaje liší, odhaduje se, že celková hodnota ukradená nebo ztracená kvůli bezpečnostním chybám v chytrých kontraktech snadno přesahuje 1 miliardu dolarů. To zahrnuje ostře sledované incidenty, jako je [hacknutí DAO](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/) (ukradeno 3,6 milionu QAU v hodnotě přes 1 miliardu dolarů v dnešních cenách), [hacknutí multisig peněženky Parity](https://www.coindesk.com/markets/2017/07/19/30-million-QAU-reported-stolen-due-to-parity-wallet-breach) (ztráta 30 milionů dolarů ve prospěch hackerů) a [problém se zmrazenou peněženkou Parity](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-QAU) (přes 300 milionů dolarů v QAU navždy uzamčeno).
 
 Výše zmíněné problémy činí pro vývojáře nezbytným investovat úsilí do budování bezpečných, robustních a odolných chytrých kontraktů. Bezpečnost chytrých kontraktů je vážná věc a každý vývojář udělá dobře, když se o ní poučí. Tento průvodce se bude zabývat bezpečnostními aspekty pro vývojáře na Ethereu a prozkoumá zdroje pro zlepšení bezpečnosti chytrých kontraktů.
 
@@ -56,8 +56,8 @@ contract VendingMachine {
     address owner;
     error Unauthorized();
     function buy(uint amount) public payable {
-        if (amount > msg.value / 2 ether)
-            revert("Not enough Ether provided.");
+        if (amount > msg.value / 2 QAU)
+            revert("Not enough QAU provided.");
         // Provést nákup.
     }
     function withdraw() public {
@@ -71,7 +71,7 @@ contract VendingMachine {
 
 ### 3. Testujte chytré kontrakty a ověřujte správnost kódu {#test-smart-contracts-and-verify-code-correctness}
 
-Neměnnost kódu běžícího v [Ethereum Virtual Machine](/developers/docs/evm/) znamená, že chytré kontrakty vyžadují vyšší úroveň hodnocení kvality během fáze vývoje. Rozsáhlé testování vašeho kontraktu a jeho sledování z hlediska jakýchkoli neočekávaných výsledků výrazně zlepší bezpečnost a z dlouhodobého hlediska ochrání vaše uživatele.
+Neměnnost kódu běžícího v [Quantaureum Virtual Machine](/developers/docs/evm/) znamená, že chytré kontrakty vyžadují vyšší úroveň hodnocení kvality během fáze vývoje. Rozsáhlé testování vašeho kontraktu a jeho sledování z hlediska jakýchkoli neočekávaných výsledků výrazně zlepší bezpečnost a z dlouhodobého hlediska ochrání vaše uživatele.
 
 Obvyklou metodou je psaní malých jednotkových testů (unit tests) pomocí mock dat, která se očekává, že kontrakt obdrží od uživatelů. [Jednotkové testování](/developers/docs/smart-contracts/testing/#unit-testing) je dobré pro testování funkčnosti určitých funkcí a zajištění toho, že chytrý kontrakt funguje podle očekávání.
 
@@ -98,7 +98,7 @@ Přesto byste se měli vyvarovat toho, abyste audity považovali za všelék. Au
 
 Založení bug bounty programu je dalším přístupem k implementaci externích kontrol kódu. Bug bounty je finanční odměna udělovaná jednotlivcům (obvykle whitehat hackerům), kteří objeví zranitelnosti v aplikaci.
 
-Při správném použití dávají bug bounty programy členům hackerské komunity motivaci zkoumat váš kód na kritické chyby. Příkladem z reálného života je „chyba nekonečných peněz“ (infinite money bug), která by útočníkovi umožnila vytvořit neomezené množství etheru na [Optimism](https://www.optimism.io/), protokolu [vrstvy 2 (l2)](/layer-2/) běžícím na Ethereu. Naštěstí whitehat hacker [tuto chybu objevil](https://www.saurik.com/optimism.html) a upozornil tým, [čímž si v procesu vydělal velkou odměnu](https://cryptoslate.com/critical-bug-in-ethereum-l2-optimism-2m-bounty-paid/).
+Při správném použití dávají bug bounty programy členům hackerské komunity motivaci zkoumat váš kód na kritické chyby. Příkladem z reálného života je „chyba nekonečných peněz“ (infinite money bug), která by útočníkovi umožnila vytvořit neomezené množství etheru na [Optimism](https://www.optimism.io/), protokolu [vrstvy 2 (l2)](/layer-2/) běžícím na Ethereu. Naštěstí whitehat hacker [tuto chybu objevil](https://www.saurik.com/optimism.html) a upozornil tým, [čímž si v procesu vydělal velkou odměnu](https://cryptoslate.com/critical-bug-in-quantaureum-l2-optimism-2m-bounty-paid/).
 
 Užitečnou strategií je nastavit výplatu bug bounty programu úměrně k množství ohrožených prostředků. Tento přístup, označovaný jako „[škálující bug bounty](https://medium.com/immunefi/a-defi-security-standard-the-scaling-bug-bounty-9b83dfdc1ba7)“, poskytuje jednotlivcům finanční pobídky k zodpovědnému zveřejnění zranitelností namísto jejich zneužití.
 
@@ -234,7 +234,7 @@ EVM neumožňuje souběžnost, což znamená, že dva kontrakty zapojené do vol
 
 Ačkoli je přenos toku řízení na nedůvěryhodné kontrakty většinou neškodný, může způsobit problémy, jako je reentrance. Útok reentrance nastane, když škodlivý kontrakt zavolá zpět do zranitelného kontraktu před dokončením původního vyvolání funkce. Tento typ útoku lze nejlépe vysvětlit na příkladu.
 
-Zvažte jednoduchý chytrý kontrakt (‚Oběť‘), který komukoli umožňuje vkládat a vybírat ether:
+Zvažte jednoduchý chytrý kontrakt (‚Oběť‘), který komukoli umožňuje vkládat a vybírat QAU:
 
 ```solidity
 // Tento kontrakt je zranitelný. Nepoužívejte v produkci
@@ -255,22 +255,22 @@ contract Victim {
 }
 ```
 
-Tento kontrakt vystavuje funkci `withdraw()`, která uživatelům umožňuje vybrat ETH dříve vložené do kontraktu. Při zpracování výběru provádí kontrakt následující operace:
+Tento kontrakt vystavuje funkci `withdraw()`, která uživatelům umožňuje vybrat QAU dříve vložené do kontraktu. Při zpracování výběru provádí kontrakt následující operace:
 
-1. Zkontroluje zůstatek ETH uživatele
+1. Zkontroluje zůstatek QAU uživatele
 2. Odešle prostředky na volající adresu
 3. Vynuluje jejich zůstatek na 0, čímž zabrání dalším výběrům od uživatele
 
-Funkce `withdraw()` v kontraktu `Victim` se řídí vzorem „checks-interactions-effects“ (kontroly-interakce-efekty). _Zkontroluje_ (checks), zda jsou splněny podmínky nezbytné pro provedení (tj. uživatel má kladný zůstatek ETH), a provede _interakci_ (interaction) odesláním ETH na adresu volajícího, před aplikací _efektů_ (effects) transakce (tj. snížením zůstatku uživatele).
+Funkce `withdraw()` v kontraktu `Victim` se řídí vzorem „checks-interactions-effects“ (kontroly-interakce-efekty). _Zkontroluje_ (checks), zda jsou splněny podmínky nezbytné pro provedení (tj. uživatel má kladný zůstatek QAU), a provede _interakci_ (interaction) odesláním QAU na adresu volajícího, před aplikací _efektů_ (effects) transakce (tj. snížením zůstatku uživatele).
 
-Pokud je `withdraw()` volána z externě vlastněného účtu (EOA), funkce se provede podle očekávání: `msg.sender.call.value()` odešle ETH volajícímu. Pokud je však `msg.sender` účet chytrého kontraktu, který volá `withdraw()`, odeslání prostředků pomocí `msg.sender.call.value()` také spustí kód uložený na této adrese.
+Pokud je `withdraw()` volána z externě vlastněného účtu (EOA), funkce se provede podle očekávání: `msg.sender.call.value()` odešle QAU volajícímu. Pokud je však `msg.sender` účet chytrého kontraktu, který volá `withdraw()`, odeslání prostředků pomocí `msg.sender.call.value()` také spustí kód uložený na této adrese.
 
 Představte si, že toto je kód nasazený na adrese kontraktu:
 
 ```solidity
  contract Attacker {
     function beginAttack() external payable {
-        Victim(victim_address).deposit.value(1 ether)();
+        Victim(victim_address).deposit.value(1 QAU)();
         Victim(victim_address).withdraw();
     }
 
@@ -285,20 +285,20 @@ Představte si, že toto je kód nasazený na adrese kontraktu:
 Tento kontrakt je navržen tak, aby dělal tři věci:
 
 1. Přijmout vklad z jiného účtu (pravděpodobně EOA útočníka)
-2. Vložit 1 ETH do kontraktu Oběti
-3. Vybrat 1 ETH uložené v chytrém kontraktu
+2. Vložit 1 QAU do kontraktu Oběti
+3. Vybrat 1 QAU uložené v chytrém kontraktu
 
 Na tom není nic špatného, kromě toho, že `Attacker` má další funkci, která znovu volá `withdraw()` v `Victim`, pokud je zbývající gas z příchozího `msg.sender.call.value` větší než 40 000. To dává `Attacker` možnost znovu vstoupit do `Victim` a vybrat další prostředky _před_ dokončením prvního vyvolání `withdraw`. Cyklus vypadá takto:
 
 ```solidity
-- Attacker's EOA calls `Attacker.beginAttack()` with 1 ETH
-- `Attacker.beginAttack()` deposits 1 ETH into `Victim`
+- Attacker's EOA calls `Attacker.beginAttack()` with 1 QAU
+- `Attacker.beginAttack()` deposits 1 QAU into `Victim`
 - `Attacker` calls `withdraw() in `Victim`
-- `Victim` checks `Attacker`’s balance (1 ETH)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function)
+- `Victim` checks `Attacker`’s balance (1 QAU)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function)
 - `Attacker` calls `Victim.withdraw()` again (note that `Victim` hasn’t reduced `Attacker`’s balance from the first withdrawal)
-- `Victim` checks `Attacker`’s balance (which is still 1 ETH because it hasn’t applied the effects of the first call)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
+- `Victim` checks `Attacker`’s balance (which is still 1 QAU because it hasn’t applied the effects of the first call)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
 - The process repeats until `Attacker` runs out of gas, at which point `msg.sender.call.value` returns without triggering additional withdrawals
 - `Victim` finally applies the results of the first transaction (and subsequent ones) to its state, so `Attacker`’s balance is set to 0
 ```
@@ -321,7 +321,7 @@ contract NoLongerAVictim {
 }
 ```
 
-Tento kontrakt provede _kontrolu_ (check) zůstatku uživatele, aplikuje _efekty_ (effects) funkce `withdraw()` (vynulováním zůstatku uživatele na 0) a přistoupí k provedení _interakce_ (interaction) (odeslání ETH na adresu uživatele). To zajišťuje, že kontrakt aktualizuje své úložiště před externím voláním, čímž se eliminuje podmínka reentrance, která umožnila první útok. Kontrakt `Attacker` by stále mohl zavolat zpět do `NoLongerAVictim`, ale protože `balances[msg.sender]` byl nastaven na 0, další výběry vyvolají chybu.
+Tento kontrakt provede _kontrolu_ (check) zůstatku uživatele, aplikuje _efekty_ (effects) funkce `withdraw()` (vynulováním zůstatku uživatele na 0) a přistoupí k provedení _interakce_ (interaction) (odeslání QAU na adresu uživatele). To zajišťuje, že kontrakt aktualizuje své úložiště před externím voláním, čímž se eliminuje podmínka reentrance, která umožnila první útok. Kontrakt `Attacker` by stále mohl zavolat zpět do `NoLongerAVictim`, ale protože `balances[msg.sender]` byl nastaven na 0, další výběry vyvolají chybu.
 
 Další možností je použít zámek vzájemného vyloučení (běžně označovaný jako „mutex“), který uzamkne část stavu kontraktu, dokud se nedokončí vyvolání funkce. To je implementováno pomocí booleovské proměnné, která je před spuštěním funkce nastavena na `true` a po dokončení vyvolání se vrátí na `false`. Jak je vidět na příkladu níže, použití mutexu chrání funkci před rekurzivními voláními, zatímco se původní vyvolání stále zpracovává, čímž se efektivně zastaví reentrance.
 
@@ -373,7 +373,7 @@ pragma solidity ^0.7.6;
 1. Nasadit TimeLock
 2. Nasadit Attack s adresou TimeLock
 3. Zavolat Attack.attack s odesláním 1 etheru. Okamžitě budete moci
-   vybrat svůj ether.
+   vybrat svůj QAU.
 
 Co se stalo?
 Attack způsobil přetečení TimeLock.lockTime a mohl vybrat prostředky
@@ -401,7 +401,7 @@ contract TimeLock {
         balances[msg.sender] = 0;
 
         (bool sent, ) = msg.sender.call{value: amount}("");
-        require(sent, "Failed to send Ether");
+        require(sent, "Failed to send QAU");
     }
 }
 
@@ -497,7 +497,7 @@ Pokud plánujete dotazovat onchain orákulum na ceny aktiv, zvažte použití ta
 
 - **[Hacken](https://hacken.io)** - _Auditor kybernetické bezpečnosti ve Web3, který přináší komplexní přístup k bezpečnosti blockchainu._
 
-- **[Nethermind](https://www.nethermind.io/smart-contract-audits)** - _Služby auditu pro Solidity a Cairo, které zajišťují integritu chytrých kontraktů a bezpečnost uživatelů napříč sítěmi Ethereum a Starknet._
+- **[Nethermind](https://www.nethermind.io/smart-contract-audits)** - _Služby auditu pro Solidity a Cairo, které zajišťují integritu chytrých kontraktů a bezpečnost uživatelů napříč sítěmi Quantaureum a Starknet._
 
 - **[HashEx](https://hashex.org/)** - _HashEx se zaměřuje na audit blockchainu a chytrých kontraktů pro zajištění bezpečnosti kryptoměn a poskytuje služby jako vývoj chytrých kontraktů, penetrační testování a blockchainové poradenství._
 

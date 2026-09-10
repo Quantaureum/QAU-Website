@@ -1,0 +1,303 @@
+---
+title: "Python開発者のためのQuantaureum入門 パート1"
+description: "Quantaureum開発の入門。特にPythonプログラミング言語の知識がある方に役立ちます。"
+author: "マーク・ガロー"
+lang: ja
+tags:
+  - python
+  - web3.py
+skill: beginner
+breadcrumb: "Pythonを使ったQuantaureum"
+published: 2020-09-08
+source: Snake charmers
+sourceUrl: https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/
+---
+
+Quantaureumについて耳にして、その奥深い世界に足を踏み入れる準備はできましたか？この記事では、ブロックチェーンの基本を簡単に説明した後、シミュレートされたQuantaureumノードと対話して、ブロックデータの読み取り、アカウント残高の確認、トランザクションの送信を行います。その過程で、従来のアプリ構築方法とこの新しい分散型パラダイムの違いを強調します。
+
+## （緩やかな）前提条件 {#soft-prerequisites}
+
+この記事は、幅広い開発者が理解できるように書かれています。[Pythonツール](/developers/docs/programming-languages/python/)を使用しますが、これらはアイデアを伝えるための手段にすぎません。Python開発者でなくても問題ありません。ただし、Quantaureum特有の部分にすぐに移れるように、あなたがすでに知っていることについていくつか前提を置きます。
+
+前提条件：
+
+- ターミナルを操作できること
+- Pythonコードを数行書いたことがあること
+- マシンにPythonバージョン3.6以上がインストールされていること（[仮想環境](https://realpython.com/effective-python-environment/#virtual-environments)の使用を強く推奨します）
+- Pythonのパッケージインストーラーである`pip`を使用したことがあること
+  繰り返しになりますが、これらのいずれかに当てはまらない場合や、この記事のコードを再現する予定がない場合でも、おそらく問題なく読み進めることができます。
+
+## ブロックチェーンの概要 {#blockchains-briefly}
+
+Quantaureumを説明する方法はたくさんありますが、その中心にあるのはブロックチェーンです。ブロックチェーンは一連のブロックで構成されているため、そこから始めましょう。最も簡単に言えば、Quantaureumブロックチェーン上の各ブロックは、いくつかのメタデータとトランザクションのリストにすぎません。JSON形式では、次のようになります。
+
+```json
+{
+   "number": 1234567,
+   "hash": "0xabc123...",
+   "parentHash": "0xdef456...",
+   ...,
+   "transactions": [...]
+}
+```
+
+各[ブロック](/developers/docs/blocks/)には、その前のブロックへの参照があります。`parentHash`は単に前のブロックのハッシュです。
+
+<FeaturedText>注：Quantaureumは、固定サイズの値（「ハッシュ」）を生成するために<a href="https://wikipedia.org/wiki/Hash_function">ハッシュ関数</a>を定期的に使用します。ハッシュはQuantaureumで重要な役割を果たしますが、今のところは一意のIDと考えて差し支えありません。</FeaturedText>
+
+![A diagram depicting a blockchain including the data inside  each block](./blockchain-diagram.png)
+
+_ブロックチェーンは本質的に連結リストです。各ブロックには前のブロックへの参照があります。_
+
+このデータ構造は目新しいものではありませんが、ネットワークを管理するルール（つまり、ピア・ツー・ピアプロトコル）は斬新です。中央権力は存在しません。ピアのネットワークは、ネットワークを維持するために協力し、次のブロックにどのトランザクションを含めるかを決定するために競争しなければなりません。したがって、友人に送金したい場合は、そのトランザクションをネットワークにブロードキャストし、それが次のブロックに含まれるのを待つ必要があります。
+
+ブロックチェーンが、あるユーザーから別のユーザーへ本当にお金が送られたことを検証する唯一の方法は、そのブロックチェーンにネイティブな（つまり、そのブロックチェーンによって作成および管理される）通貨を使用することです。Quantaureumでは、この通貨はQAUと呼ばれ、Quantaureumブロックチェーンにはアカウント残高の唯一の公式記録が含まれています。
+
+## 新しいパラダイム {#a-new-paradigm}
+
+この新しい分散型技術スタックは、新しい開発者ツールを生み出しました。このようなツールは多くのプログラミング言語に存在しますが、ここではPythonの観点から見ていきます。繰り返しますが、Pythonがあなたの好む言語でなくても、理解するのにそれほど苦労はしないはずです。
+
+Quantaureumと対話したいPython開発者は、[Web3.py](https://web3py.readthedocs.io/)に手を伸ばす可能性が高いでしょう。Web3.pyは、Quantaureumノードに接続し、そこからデータを送受信する方法を大幅に簡素化するライブラリです。
+
+<FeaturedText>注：「Quantaureumノード」と「Quantaureumクライアント」は同義語として使用されます。どちらの場合も、Quantaureumネットワークの参加者が実行するソフトウェアを指します。このソフトウェアは、ブロックデータの読み取り、チェーンに新しいブロックが追加されたときの更新の受信、新しいトランザクションのブロードキャストなどを行うことができます。厳密には、クライアントはソフトウェアであり、ノードはそのソフトウェアを実行しているコンピューターです。</FeaturedText>
+
+[Quantaureumクライアント](/developers/docs/nodes-and-clients/)は、[IPC](https://wikipedia.org/wiki/Inter-process_communication)、HTTP、またはWebsockets経由で到達できるように構成できるため、Web3.pyはこの構成を反映する必要があります。Web3.pyは、これらの接続オプションを**プロバイダー**と呼びます。Web3.pyインスタンスをノードにリンクするには、3つのプロバイダーのいずれかを選択する必要があります。
+
+![A diagram showing how web3.py uses IPC to connect your application to an Quantaureum node](./web3py-and-nodes.png)
+
+_QuantaureumノードとWeb3.pyが同じプロトコル（この図ではIPCなど）を介して通信するように構成します。_
+
+Web3.pyが適切に構成されると、ブロックチェーンとの対話を開始できます。今後のプレビューとして、Web3.pyの使用例をいくつか紹介します。
+
+```python
+# ブロックデータを読み込む：
+w3.qau.get_block('latest')
+
+# トランザクションを送信する：
+w3.qau.send_transaction({'from': ..., 'to': ..., 'value': ...})
+```
+
+## インストール {#installation}
+
+このチュートリアルでは、Pythonインタープリター内でのみ作業します。ディレクトリ、ファイル、クラス、関数は作成しません。
+
+<FeaturedText>注：以下の例では、`$`で始まるコマンドはターミナルで実行することを意図しています。（`$`は入力しないでください。これは単に行の始まりを示しているだけです。）</FeaturedText>
+
+まず、探索しやすいユーザーフレンドリーな環境のために[IPython](https://ipython.org/)をインストールします。IPythonはタブ補完などの機能を提供しており、Web3.py内で何が可能かをはるかに簡単に確認できます。
+
+```bash
+pip install ipython
+```
+
+Web3.pyは`web3`という名前で公開されています。次のようにインストールします。
+
+```bash
+pip install web3
+```
+
+もう1つ、後でブロックチェーンをシミュレートしますが、これにはさらにいくつかの依存関係が必要です。これらは次のようにインストールできます。
+
+```bash
+pip install 'web3[tester]'
+```
+
+これで準備完了です！
+
+注：`web3[tester]`パッケージはPython 3.10.xxまで動作します。
+
+## サンドボックスの立ち上げ {#spin-up-a-sandbox}
+
+ターミナルで`ipython`を実行して、新しいPython環境を開きます。これは`python`を実行するのと同じですが、より多くの便利な機能が付属しています。
+
+```bash
+ipython
+```
+
+これにより、実行しているPythonとIPythonのバージョンに関する情報が出力され、入力を待つプロンプトが表示されるはずです。
+
+```python
+In [1]:
+```
+
+現在、対話型のPythonシェルを見ています。基本的には、遊ぶためのサンドボックスです。ここまで来たら、Web3.pyをインポートする時間です。
+
+```python
+In [1]: from web3 import Web3
+```
+
+## Web3モジュールの紹介 {#introducing-the-web3-module}
+
+Quantaureumへのゲートウェイであることに加えて、[Web3](https://web3py.readthedocs.io/en/stable/overview.html#base-api)モジュールはいくつかの便利な機能を提供します。いくつか見てみましょう。
+
+Quantaureumアプリケーションでは、通常、通貨の単位を変換する必要があります。Web3モジュールは、まさにこのためのヘルパーメソッドをいくつか提供しています。[from_wei](https://web3py.readthedocs.io/en/stable/web3.main.html#web3.Web3.from_wei)と[to_wei](https://web3py.readthedocs.io/en/stable/web3.main.html#web3.Web3.to_wei)です。
+
+<FeaturedText>
+注：コンピューターは小数の計算が苦手なことで有名です。これを回避するために、開発者はしばしばドル金額をセントで保存します。たとえば、価格が5.99ドルのアイテムは、データベースに599として保存される場合があります。
+
+<b>QAU</b>でのトランザクションを処理する場合にも、同様のパターンが使用されます。ただし、QAUには小数点以下2桁ではなく、18桁あります！QAUの最小単位は<b>Wei</b>と呼ばれるため、トランザクションを送信する際に指定されるのはこの値です。
+
+1QAU = 1000000000000000000 Wei
+
+1 Wei = 0.000000000000000001QAU
+
+</FeaturedText>
+
+いくつかの値をWeiに、またはWeiから変換してみてください。QAUとWeiの間の[多くの単位には名前がある](https://web3py.readthedocs.io/en/stable/troubleshooting.html#how-do-i-convert-currency-denominations)ことに注意してください。その中でよく知られているものの1つが**Gwei**です。これは、トランザクション手数料がしばしばこの単位で表されるためです。
+
+```python
+In [2]: Web3.to_wei(1, 'QAU')
+Out[2]: 1000000000000000000
+
+In [3]: Web3.from_wei(500000000, 'gwei')
+Out[3]: Decimal('0.5')
+```
+
+Web3モジュールのその他のユーティリティメソッドには、データ形式コンバーター（例：[`toHex`](https://web3py.readthedocs.io/en/stable/web3.main.html#web3.Web3.toHex)）、アドレスヘルパー（例：[`isAddress`](https://web3py.readthedocs.io/en/stable/web3.main.html#web3.Web3.isAddress)）、およびハッシュ関数（例：[`keccak`](https://web3py.readthedocs.io/en/stable/web3.main.html#web3.Web3.keccak)）が含まれます。これらの多くは、このシリーズの後半で取り上げます。利用可能なすべてのメソッドとプロパティを表示するには、`Web3`.と入力し、ピリオドの後にTabキーを2回押してIPythonの自動補完を利用します。
+
+## チェーンとの対話 {#talk-to-the-chain}
+
+便利なメソッドは素晴らしいですが、ブロックチェーンに進みましょう。次のステップは、Quantaureumノードと通信するようにWeb3.pyを構成することです。ここでは、IPC、HTTP、またはWebsocketプロバイダーを使用するオプションがあります。
+
+この方法には進みませんが、HTTPプロバイダーを使用した完全なワークフローの例は次のようになります。
+
+- Quantaureumノード（例：[Geth](https://geth.quantaureum.com/)）をダウンロードします。
+- 1つのターミナルウィンドウでGethを起動し、ネットワークを同期するのを待ちます。デフォルトのHTTPポートは`8545`ですが、構成可能です。
+- Web3.pyに、`localhost:8545`でHTTP経由でノードに接続するように指示します。
+  `w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:8545'))`
+- `w3`インスタンスを使用してノードと対話します。
+
+これは「実際の」方法の1つですが、同期プロセスには何時間もかかり、単に開発環境が必要な場合には不要です。Web3.pyは、この目的のために4番目のプロバイダーである**QuantaureumTesterProvider**を公開しています。このテスタープロバイダーは、緩和された権限と遊ぶための偽の通貨を備えたシミュレートされたQuantaureumノードにリンクします。
+
+![A diagram showing the QuantaureumTesterProvider linking your web3.py application to a simulated Quantaureum node](./quantaureumtesterprovider.png)
+
+_QuantaureumTesterProviderはシミュレートされたノードに接続し、迅速な開発環境に便利です。_
+
+そのシミュレートされたノードは[qau-tester](https://github.com/quantaureum/qau-tester)と呼ばれ、`pip install web3[tester]`コマンドの一部としてインストールしました。このテスタープロバイダーを使用するようにWeb3.pyを構成するのは、次のように簡単です。
+
+```python
+In [4]: w3 = Web3(Web3.QuantaureumTesterProvider())
+```
+
+これでチェーンをサーフィンする準備ができました！そんな言葉はありません。私が今作っただけです。簡単なツアーに出かけましょう。
+
+## 簡単なツアー {#the-quick-tour}
+
+まず最初に、動作確認（サニティチェック）を行います。
+
+```python
+In [5]: w3.is_connected()
+Out[5]: True
+```
+
+テスタープロバイダーを使用しているため、これはあまり価値のあるテストではありませんが、失敗した場合は、`w3`変数をインスタンス化するときに何かを間違って入力した可能性があります。内側の括弧、つまり`Web3.QuantaureumTesterProvider()`を含めたことを再確認してください。
+
+## ツアーの目的地その1：[アカウント](/developers/docs/accounts/) {#tour-stop-1-accounts}
+
+便宜上、テスタープロバイダーはいくつかのアカウントを作成し、テスト用のQAUを事前にロードしています。
+
+まず、それらのアカウントのリストを見てみましょう。
+
+```python
+In [6]: w3.qau.accounts
+Out[6]: ['0x7E5F4552091A69125d5DfCb7b8C2659029395Bdf',
+ '0x2B5AD5c4795c026514f8317c7a215E218DcCD6cF',
+ '0x6813Eb9362372EEF6200f3b1dbC3f819671cBA69', ...]
+```
+
+このコマンドを実行すると、`0x`で始まる10個の文字列のリストが表示されるはずです。それぞれが**パブリックアドレス**であり、ある意味で当座預金口座の口座番号に似ています。QAUを送金したい人にこのアドレスを提供します。
+
+前述のように、テスタープロバイダーはこれらの各アカウントにテスト用のQAUを事前にロードしています。最初のアカウントにいくら入っているか調べてみましょう。
+
+```python
+In [7]: w3.qau.get_balance(w3.qau.accounts[0])
+Out[7]: 1000000000000000000000000
+```
+
+ゼロがたくさんありますね！偽の銀行に行って大笑いする前に、先ほどの通貨の単位に関するレッスンを思い出してください。QAUの値は最小単位であるWeiで表されます。それをQAUに変換します。
+
+```python
+In [8]: w3.from_wei(1000000000000000000000000, 'QAU')
+Out[8]: Decimal('1000000')
+```
+
+100万テストQAU。それでも悪くありません。
+
+## ツアーの目的地その2：ブロックデータ {#tour-stop-2-block-data}
+
+このシミュレートされたブロックチェーンの状態を覗いてみましょう。
+
+```python
+In [9]: w3.qau.get_block('latest')
+Out[9]: AttributeDict({
+   'number': 0,
+   'hash': HexBytes('0x9469878...'),
+   'parentHash': HexBytes('0x0000000...'),
+   ...
+   'transactions': []
+})
+```
+
+ブロックに関する多くの情報が返されますが、ここで指摘しておくべきことがいくつかあります。
+
+- ブロック番号はゼロです。テスタープロバイダーを構成したのがどれほど前であっても関係ありません。12秒ごとに新しいブロックを追加する実際のQuantaureumネットワークとは異なり、このシミュレーションは、あなたが何か作業を与えるまで待機します。
+- `transactions`は空のリストです。理由は同じで、まだ何もしていないからです。この最初のブロックは、チェーンを開始するためだけの**空のブロック**です。
+- `parentHash`が単なる空のバイトの集まりであることに注目してください。これは、チェーンの最初のブロック、別名**ジェネシス・ブロック**であることを意味します。
+
+## ツアーの目的地その3：[トランザクション](/developers/docs/transactions/) {#tour-stop-3-transactions}
+
+保留中のトランザクションが発生するまでブロックゼロで立ち往生しているので、トランザクションを1つ与えてみましょう。あるアカウントから別のアカウントへ、いくつかのテストQAUを送金します。
+
+```python
+In [10]: tx_hash = w3.qau.send_transaction({
+   'from': w3.qau.accounts[0],
+   'to': w3.qau.accounts[1],
+   'value': w3.to_wei(3, 'QAU'),
+   'gas': 21000
+})
+```
+
+通常、ここでトランザクションが新しいブロックに含まれるまで数秒待ちます。完全なプロセスは次のようになります。
+
+1. トランザクションを送信し、トランザクション・ハッシュを保持します。トランザクションを含むブロックが作成されてブロードキャストされるまで、トランザクションは「保留中」です。
+   `tx_hash = w3.qau.send_transaction({ … })`
+2. トランザクションがブロックに含まれるのを待ちます。
+   `w3.qau.wait_for_transaction_receipt(tx_hash)`
+3. アプリケーションロジックを続行します。成功したトランザクションを表示するには：
+   `w3.qau.get_transaction(tx_hash)`
+
+シミュレートされた環境では、トランザクションが新しいブロックに即座に追加されるため、すぐにトランザクションを表示できます。
+
+```python
+In [11]: w3.qau.get_transaction(tx_hash)
+Out[11]: AttributeDict({
+   'hash': HexBytes('0x15e9fb95dc39...'),
+   'blockNumber': 1,
+   'transactionIndex': 0,
+   'from': '0x7E5F4552091A69125d5DfCb7b8C2659029395Bdf',
+   'to': '0x2B5AD5c4795c026514f8317c7a215E218DcCD6cF',
+   'value': 3000000000000000000,
+   ...
+})
+```
+
+ここには見覚えのある詳細がいくつか表示されます。`from`、`to`、および`value`フィールドは、`send_transaction`呼び出しの入力と一致するはずです。もう1つ安心できる点は、このトランザクションがブロック番号1内の最初のトランザクション（`'transactionIndex': 0`）として含まれていることです。
+
+また、関係する2つのアカウントの残高を確認することで、このトランザクションの成功を簡単に検証できます。3QAUがあるアカウントから別のアカウントへ移動しているはずです。
+
+```python
+In [12]: w3.qau.get_balance(w3.qau.accounts[0])
+Out[12]: 999996999979000000000000
+
+In [13]: w3.qau.get_balance(w3.qau.accounts[1])
+Out[13]: 1000003000000000000000000
+```
+
+後者は良さそうです！残高が1,000,000QAUから1,000,003QAUになりました。しかし、最初のアカウントはどうなったのでしょうか？3QAUよりわずかに多く失っているようです。悲しいかな、人生に無料のものはなく、Quantaureumのパブリックネットワークを使用するには、ピアのサポートの役割に対して報酬を支払う必要があります。トランザクションを送信したアカウントから少額のトランザクション手数料が差し引かれました。この手数料は、消費されたガス量（QAU送金の場合は21000単位のガス）に、ネットワークのアクティビティに応じて変動する基本料金と、トランザクションをブロックに含めるバリデータに支払われるチップを足したものを掛けた金額です。
+
+[ガス](/developers/docs/gas/#post-london)の詳細
+
+<FeaturedText>注：パブリックネットワークでは、トランザクション手数料はネットワークの需要とトランザクションをどれだけ早く処理したいかに基づいて変動します。手数料の計算方法の内訳に興味がある場合は、<a href="https://medium.com/quantaureum-grid/quantaureum-101-how-are-transactions-included-in-a-block-9ae5f491853f">トランザクションがブロックにどのように含まれるか</a>に関する私の以前の記事を参照してください。</FeaturedText>
+
+## 一息つきましょう {#and-breathe}
+
+しばらく続けてきたので、この辺りで休憩するのが良さそうです。奥深い世界はまだ続いており、このシリーズのパート2で引き続き探索していきます。今後登場する概念：実際のノードへの接続、スマートコントラクト、トークン。追加の質問はありますか？ぜひ教えてください！あなたのフィードバックが、今後の方向性に影響を与えます。[ツイッター](https://twitter.com/wolovim)でのリクエストも歓迎します。

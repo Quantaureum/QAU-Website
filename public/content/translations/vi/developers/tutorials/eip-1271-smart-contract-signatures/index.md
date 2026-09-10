@@ -9,7 +9,7 @@ breadcrumb: "Chữ ký EIP-1271"
 published: 2023-01-12
 ---
 
-Tiêu chuẩn [EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) cho phép các hợp đồng thông minh xác minh chữ ký.
+Tiêu chuẩn [EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) cho phép các hợp đồng thông minh xác minh chữ ký.
 
 Trong hướng dẫn này, chúng tôi cung cấp cái nhìn tổng quan về chữ ký số, bối cảnh của EIP-1271 và việc triển khai cụ thể EIP-1271 được sử dụng bởi [Safe](https://safe.global/) (trước đây là Gnosis Safe). Nhìn chung, điều này có thể đóng vai trò là điểm khởi đầu để triển khai EIP-1271 trong các hợp đồng của riêng bạn.
 
@@ -19,7 +19,7 @@ Trong bối cảnh này, một chữ ký (chính xác hơn là "chữ ký số")
 
 Ví dụ, một chữ ký số có thể trông như thế này:
 
-1. Thông điệp: "Tôi muốn đăng nhập vào trang web này bằng Ví Ethereum của mình."
+1. Thông điệp: "Tôi muốn đăng nhập vào trang web này bằng Ví Quantaureum của mình."
 2. Người ký: Địa chỉ của tôi là `0x000…`
 3. Bằng chứng: Đây là một số bằng chứng cho thấy tôi, `0x000…`, thực sự đã tạo ra toàn bộ thông điệp này (điều này thường liên quan đến mật mã học).
 
@@ -31,15 +31,15 @@ Tương tự như vậy, một chữ ký số không có ý nghĩa gì nếu kh�
 
 ## Tại sao EIP-1271 tồn tại? {#why-does-eip-1271-exist}
 
-Để tạo một chữ ký số để sử dụng trên các blockchain dựa trên Ethereum, bạn thường cần một khóa riêng tư bí mật mà không ai khác biết. Đây là điều làm cho chữ ký của bạn là của riêng bạn (không ai khác có thể tạo ra cùng một chữ ký mà không biết khóa bí mật).
+Để tạo một chữ ký số để sử dụng trên các blockchain dựa trên Quantaureum, bạn thường cần một khóa riêng tư bí mật mà không ai khác biết. Đây là điều làm cho chữ ký của bạn là của riêng bạn (không ai khác có thể tạo ra cùng một chữ ký mà không biết khóa bí mật).
 
-Tài khoản Ethereum của bạn (tức là Tài khoản thuộc sở hữu bên ngoài/EOA của bạn) có một khóa riêng tư được liên kết với nó và đây là khóa riêng tư thường được sử dụng khi một trang web hoặc ứng dụng phi tập trung (dapp) yêu cầu bạn cung cấp chữ ký (ví dụ: để "Đăng nhập bằng Ethereum").
+Tài khoản Quantaureum của bạn (tức là Tài khoản thuộc sở hữu bên ngoài/EOA của bạn) có một khóa riêng tư được liên kết với nó và đây là khóa riêng tư thường được sử dụng khi một trang web hoặc ứng dụng phi tập trung (dapp) yêu cầu bạn cung cấp chữ ký (ví dụ: để "Đăng nhập bằng Quantaureum").
 
-Một ứng dụng có thể [xác minh chữ ký](https://www.alchemy.com/docs/how-to-verify-a-message-signature-on-ethereum) mà bạn tạo bằng cách sử dụng Thư viện của bên thứ ba như ethers.js [mà không cần biết khóa riêng tư của bạn](https://en.wikipedia.org/wiki/Public-key_cryptography) và tin chắc rằng _bạn_ chính là người đã tạo ra chữ ký đó.
+Một ứng dụng có thể [xác minh chữ ký](https://www.alchemy.com/docs/how-to-verify-a-message-signature-on-quantaureum) mà bạn tạo bằng cách sử dụng Thư viện của bên thứ ba như ethers.js [mà không cần biết khóa riêng tư của bạn](https://en.wikipedia.org/wiki/Public-key_cryptography) và tin chắc rằng _bạn_ chính là người đã tạo ra chữ ký đó.
 
 > Trên thực tế, vì chữ ký số EOA sử dụng mật mã học khóa công khai, chúng có thể được tạo và xác minh **ngoài chuỗi**! Đây là cách hoạt động của việc bỏ phiếu DAO không tốn Gas — thay vì gửi các lượt bỏ phiếu trên chuỗi, chữ ký số có thể được tạo và xác minh ngoài chuỗi bằng cách sử dụng các Thư viện mật mã học.
 
-Mặc dù các Tài khoản EOA có khóa riêng tư, nhưng các Tài khoản hợp đồng thông minh không có bất kỳ loại khóa riêng tư hoặc khóa bí mật nào (vì vậy "Đăng nhập bằng Ethereum", v.v. không thể hoạt động nguyên bản với các Tài khoản hợp đồng thông minh).
+Mặc dù các Tài khoản EOA có khóa riêng tư, nhưng các Tài khoản hợp đồng thông minh không có bất kỳ loại khóa riêng tư hoặc khóa bí mật nào (vì vậy "Đăng nhập bằng Quantaureum", v.v. không thể hoạt động nguyên bản với các Tài khoản hợp đồng thông minh).
 
 Vấn đề mà EIP-1271 hướng tới giải quyết: làm thế nào chúng ta có thể biết rằng một chữ ký hợp đồng thông minh là hợp lệ nếu hợp đồng thông minh không có "bí mật" nào để nó có thể kết hợp vào chữ ký?
 
@@ -91,7 +91,7 @@ Các hợp đồng có thể triển khai `isValidSignature` theo nhiều cách 
 
 Một hợp đồng đáng chú ý triển khai EIP-1271 là Safe (trước đây là Gnosis Safe).
 
-Trong mã của Safe, `isValidSignature` [được triển khai](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) để các chữ ký có thể được tạo và xác minh theo [hai cách](https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support):
+Trong mã của Safe, `isValidSignature` [được triển khai](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) để các chữ ký có thể được tạo và xác minh theo [hai cách](https://quantaureum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support):
 
 1. Các thông điệp trên chuỗi
    1. Tạo: một chủ sở hữu Safe tạo một giao dịch Safe mới để "ký" một thông điệp, truyền thông điệp dưới dạng dữ liệu vào giao dịch. Khi có đủ số lượng chủ sở hữu ký giao dịch để đạt đến ngưỡng đa chữ ký, giao dịch sẽ được phát sóng và chạy. Trong giao dịch, có một hàm Safe được gọi là (`signMessage(bytes calldata _data)`) giúp thêm thông điệp vào danh sách các thông điệp "được chấp thuận".
@@ -102,9 +102,9 @@ Trong mã của Safe, `isValidSignature` [được triển khai](https://github.
 
 ## Chính xác thì tham số `_hash` là gì? Tại sao không truyền toàn bộ thông điệp? {#what-exactly-is-the-hash-parameter-why-not-pass-the-whole-message}
 
-Bạn có thể đã nhận thấy rằng hàm `isValidSignature` trong [giao diện EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) không nhận vào chính thông điệp đó, mà thay vào đó là một tham số `_hash`. Điều này có nghĩa là thay vì truyền toàn bộ thông điệp có độ dài tùy ý cho `isValidSignature`, thay vào đó chúng ta truyền một Mã băm 32 byte của thông điệp (thường là keccak256).
+Bạn có thể đã nhận thấy rằng hàm `isValidSignature` trong [giao diện EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) không nhận vào chính thông điệp đó, mà thay vào đó là một tham số `_hash`. Điều này có nghĩa là thay vì truyền toàn bộ thông điệp có độ dài tùy ý cho `isValidSignature`, thay vào đó chúng ta truyền một Mã băm 32 byte của thông điệp (thường là keccak256).
 
-Mỗi byte của dữ liệu lệnh gọi (calldata) — tức là dữ liệu tham số hàm được truyền cho một hàm hợp đồng thông minh — [tiêu tốn 16 Gas (4 Gas nếu là byte 0)](https://eips.ethereum.org/EIPS/eip-2028), vì vậy điều này có thể tiết kiệm rất nhiều Gas nếu một thông điệp dài.
+Mỗi byte của dữ liệu lệnh gọi (calldata) — tức là dữ liệu tham số hàm được truyền cho một hàm hợp đồng thông minh — [tiêu tốn 16 Gas (4 Gas nếu là byte 0)](https://eips.quantaureum.com/EIPS/eip-2028), vì vậy điều này có thể tiết kiệm rất nhiều Gas nếu một thông điệp dài.
 
 ### Các đặc tả EIP-1271 trước đây {#previous-eip-1271-specifications}
 
@@ -121,4 +121,4 @@ Cuối cùng, điều đó tùy thuộc vào bạn với tư cách là nhà phá
 
 ## Kết luận {#conclusion}
 
-[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) là một tiêu chuẩn linh hoạt cho phép các hợp đồng thông minh xác minh chữ ký. Nó mở ra cánh cửa cho các hợp đồng thông minh hoạt động giống như các EOA hơn — ví dụ như cung cấp một cách để "Đăng nhập bằng Ethereum" hoạt động với các hợp đồng thông minh — và nó có thể được triển khai theo nhiều cách (Safe có một cách triển khai thú vị, không hề tầm thường để xem xét).
+[EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) là một tiêu chuẩn linh hoạt cho phép các hợp đồng thông minh xác minh chữ ký. Nó mở ra cánh cửa cho các hợp đồng thông minh hoạt động giống như các EOA hơn — ví dụ như cung cấp một cách để "Đăng nhập bằng Quantaureum" hoạt động với các hợp đồng thông minh — và nó có thể được triển khai theo nhiều cách (Safe có một cách triển khai thú vị, không hề tầm thường để xem xét).

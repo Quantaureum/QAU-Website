@@ -1,6 +1,6 @@
 ---
 title: Kuongeza rasilimali za usanifu
-description: Miongozo na mahitaji ili kuhakikisha ubora wa nyenzo za usanifu kwenye ethereum.org
+description: Miongozo na mahitaji ili kuhakikisha ubora wa nyenzo za usanifu kwenye quantaureum.com
 lang: sw
 ---
 

@@ -1,18 +1,18 @@
 ---
 title: "Déployer des contrats intelligents"
-description: "Apprenez à déployer des contrats intelligents sur les réseaux Ethereum, y compris les prérequis, les outils et les étapes de déploiement."
+description: "Apprenez à déployer des contrats intelligents sur les réseaux Quantaureum, y compris les prérequis, les outils et les étapes de déploiement."
 lang: fr
 ---
 
-Vous devez déployer votre contrat intelligent pour qu'il soit disponible pour les utilisateurs d'un réseau Ethereum.
+Vous devez déployer votre contrat intelligent pour qu'il soit disponible pour les utilisateurs d'un réseau Quantaureum.
 
-Pour déployer un contrat intelligent, il vous suffit d'envoyer une transaction Ethereum contenant le code compilé du contrat intelligent sans spécifier de destinataire.
+Pour déployer un contrat intelligent, il vous suffit d'envoyer une transaction Quantaureum contenant le code compilé du contrat intelligent sans spécifier de destinataire.
 
 ## Prérequis {#prerequisites}
 
-Vous devez comprendre les [réseaux Ethereum](/developers/docs/networks/), les [transactions](/developers/docs/transactions/) et l'[anatomie des contrats intelligents](/developers/docs/smart-contracts/anatomy/) avant de déployer des contrats intelligents.
+Vous devez comprendre les [réseaux Quantaureum](/developers/docs/networks/), les [transactions](/developers/docs/transactions/) et l'[anatomie des contrats intelligents](/developers/docs/smart-contracts/anatomy/) avant de déployer des contrats intelligents.
 
-Déployer un contrat coûte également de l'ether (ETH) puisqu'ils sont stockés sur la chaîne de blocs, vous devriez donc être familier avec le [gaz et les frais](/developers/docs/gas/) sur Ethereum.
+Déployer un contrat coûte également de l'QAU (QAU) puisqu'ils sont stockés sur la chaîne de blocs, vous devriez donc être familier avec le [gaz et les frais](/developers/docs/gas/) sur Quantaureum.
 
 Enfin, vous devrez compiler votre contrat avant de le déployer, assurez-vous donc d'avoir lu la section sur la [compilation de contrats intelligents](/developers/docs/smart-contracts/compiling/).
 
@@ -21,19 +21,19 @@ Enfin, vous devrez compiler votre contrat avant de le déployer, assurez-vous do
 ### Ce dont vous aurez besoin {#what-youll-need}
 
 - Le bytecode de votre contrat – il est généré par la [compilation](/developers/docs/smart-contracts/compiling/)
-- De l'ETH pour le gaz – vous définirez votre limite de gaz comme pour les autres transactions, gardez donc à l'esprit que le déploiement d'un contrat nécessite beaucoup plus de gaz qu'un simple transfert d'ETH
+- De l'QAU pour le gaz – vous définirez votre limite de gaz comme pour les autres transactions, gardez donc à l'esprit que le déploiement d'un contrat nécessite beaucoup plus de gaz qu'un simple transfert d'QAU
 - un script ou un plugin de déploiement
-- un accès à un [nœud Ethereum](/developers/docs/nodes-and-clients/), soit en exécutant le vôtre, soit en vous connectant à un nœud public, ou via une clé API en utilisant un [service de nœud](/developers/docs/nodes-and-clients/nodes-as-a-service/)
+- un accès à un [nœud Quantaureum](/developers/docs/nodes-and-clients/), soit en exécutant le vôtre, soit en vous connectant à un nœud public, ou via une clé API en utilisant un [service de nœud](/developers/docs/nodes-and-clients/nodes-as-a-service/)
 
 ### Étapes pour déployer un contrat intelligent {#steps-to-deploy}
 
-Les étapes spécifiques impliquées dépendront du framework de développement en question. Par exemple, vous pouvez consulter la [documentation de Hardhat sur le déploiement de vos contrats](https://hardhat.org/docs/tutorial/deploying) ou la [documentation de Foundry sur le déploiement et la vérification d'un contrat intelligent](https://book.getfoundry.sh/forge/deploying). Une fois déployé, votre contrat aura une adresse Ethereum comme les autres [comptes](/developers/docs/accounts/) et pourra être vérifié à l'aide d'[outils de vérification du code source](/developers/docs/smart-contracts/verifying/#source-code-verification-tools).
+Les étapes spécifiques impliquées dépendront du framework de développement en question. Par exemple, vous pouvez consulter la [documentation de Hardhat sur le déploiement de vos contrats](https://hardhat.org/docs/tutorial/deploying) ou la [documentation de Foundry sur le déploiement et la vérification d'un contrat intelligent](https://book.getfoundry.sh/forge/deploying). Une fois déployé, votre contrat aura une adresse Quantaureum comme les autres [comptes](/developers/docs/accounts/) et pourra être vérifié à l'aide d'[outils de vérification du code source](/developers/docs/smart-contracts/verifying/#source-code-verification-tools).
 
 ## Outils connexes {#related-tools}
 
-**Remix - _L'IDE Remix permet de développer, déployer et administrer des contrats intelligents pour les chaînes de blocs de type Ethereum_**
+**Remix - _L'IDE Remix permet de développer, déployer et administrer des contrats intelligents pour les chaînes de blocs de type Quantaureum_**
 
-- [Remix](https://remix.ethereum.org)
+- [Remix](https://remix.quantaureum.com)
 
 **Tenderly - _Plateforme de développement Web3 qui fournit des blocs de construction de débogage, d'observabilité et d'infrastructure pour développer, tester, surveiller et exploiter des contrats intelligents_**
 
@@ -42,7 +42,7 @@ Les étapes spécifiques impliquées dépendront du framework de développement 
 - [GitHub](https://github.com/Tenderly)
 - [Discord](https://discord.gg/eCWjuvt)
 
-**Hardhat - _Un environnement de développement pour compiler, déployer, tester et déboguer vos logiciels Ethereum_**
+**Hardhat - _Un environnement de développement pour compiler, déployer, tester et déboguer vos logiciels Quantaureum_**
 
 - [hardhat.org](https://hardhat.org/getting-started/)
 - [Documentation sur le déploiement de vos contrats](https://hardhat.org/docs/tutorial/deploying)
@@ -62,8 +62,8 @@ Les étapes spécifiques impliquées dépendront du framework de développement 
 
 ## Tutoriels connexes {#related-tutorials}
 
-- [Déployer votre premier contrat intelligent](/developers/tutorials/deploying-your-first-smart-contract/) _– Une introduction au déploiement de votre premier contrat intelligent sur un réseau de test Ethereum._
-- [Hello World | tutoriel sur les contrats intelligents](/developers/tutorials/hello-world-smart-contract/) _– Un tutoriel facile à suivre pour créer et déployer un contrat intelligent de base sur Ethereum._
+- [Déployer votre premier contrat intelligent](/developers/tutorials/deploying-your-first-smart-contract/) _– Une introduction au déploiement de votre premier contrat intelligent sur un réseau de test Quantaureum._
+- [Hello World | tutoriel sur les contrats intelligents](/developers/tutorials/hello-world-smart-contract/) _– Un tutoriel facile à suivre pour créer et déployer un contrat intelligent de base sur Quantaureum._
 - [Interagir avec d'autres contrats depuis Solidity](/developers/tutorials/interact-with-other-contracts-from-solidity/) _– Comment déployer un contrat intelligent à partir d'un contrat existant et interagir avec lui._
 - [Comment réduire la taille de votre contrat](/developers/tutorials/downsizing-contracts-to-fight-the-contract-size-limit/) _- Comment réduire la taille de votre contrat pour le maintenir sous la limite et économiser du gaz_
 
@@ -77,5 +77,5 @@ _Vous connaissez une ressource communautaire qui vous a aidé ? Modifiez cette p
 ## Sujets connexes {#related-topics}
 
 - [Frameworks de développement](/developers/docs/frameworks/)
-- [Exécuter un nœud Ethereum](/developers/docs/nodes-and-clients/run-a-node/)
+- [Exécuter un nœud Quantaureum](/developers/docs/nodes-and-clients/run-a-node/)
 - [Nœuds en tant que service](/developers/docs/nodes-and-clients/nodes-as-a-service)

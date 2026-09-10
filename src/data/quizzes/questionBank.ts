@@ -20,20 +20,20 @@ import type {
  * and must match the structure declared in this configuration.
  *
  * @example
- * "what-is-ethereum": [
+ * "what-is-quantaureum": [
  *  { totalAnswers: 4, correctAnswer: 2 }
  * ]
  *
  * Requires the following strings in learn-quizzes.json:
- * - "what-is-ethereum-1-prompt"
- * - "what-is-ethereum-1-a-label"
- * - "what-is-ethereum-1-a-explanation"
- * - "what-is-ethereum-1-b-label"
- * - "what-is-ethereum-1-b-explanation"
- * - "what-is-ethereum-1-c-label"
- * - "what-is-ethereum-1-c-explanation"
- * - "what-is-ethereum-1-d-label"
- * - "what-is-ethereum-1-d-explanation"
+ * - "what-is-quantaureum-1-prompt"
+ * - "what-is-quantaureum-1-a-label"
+ * - "what-is-quantaureum-1-a-explanation"
+ * - "what-is-quantaureum-1-b-label"
+ * - "what-is-quantaureum-1-b-explanation"
+ * - "what-is-quantaureum-1-c-label"
+ * - "what-is-quantaureum-1-c-explanation"
+ * - "what-is-quantaureum-1-d-label"
+ * - "what-is-quantaureum-1-d-explanation"
  *
  * To re-use answer explanations from other choices within the same question,
  * append an optional explanationOverrides array to the question object.
@@ -42,20 +42,20 @@ import type {
  * position is "a".
  *
  * Example - Re-use the first answer explanation for all choices:
- * "what-is-ethereum": [
+ * "what-is-quantaureum": [
  * { totalAnswers: 4, correctAnswer: 2, explanationOverrides: [1, 1, 1, 1] }
  * ]
  *
  * With that alteration, requires the following strings in learn-quizzes.json:
- * - "what-is-ethereum-1-prompt"
- * - "what-is-ethereum-1-a-label"
- * - "what-is-ethereum-1-a-explanation"
- * - "what-is-ethereum-1-b-label"
- * - "what-is-ethereum-1-c-label"
- * - "what-is-ethereum-1-d-label"
+ * - "what-is-quantaureum-1-prompt"
+ * - "what-is-quantaureum-1-a-label"
+ * - "what-is-quantaureum-1-a-explanation"
+ * - "what-is-quantaureum-1-b-label"
+ * - "what-is-quantaureum-1-c-label"
+ * - "what-is-quantaureum-1-d-label"
  */
 const questionBankConfig: QuestionBankConfig = {
-  "what-is-ethereum": [
+  "what-is-quantaureum": [
     { totalAnswers: 4, correctAnswer: 2 },
     { totalAnswers: 4, correctAnswer: 1 },
     { totalAnswers: 4, correctAnswer: 4 },
@@ -64,7 +64,7 @@ const questionBankConfig: QuestionBankConfig = {
     { totalAnswers: 4, correctAnswer: 3 },
     { totalAnswers: 4, correctAnswer: 3 },
   ],
-  "what-is-ether": [
+  "what-is-QAU": [
     { totalAnswers: 4, correctAnswer: 3 },
     { totalAnswers: 4, correctAnswer: 2 },
     { totalAnswers: 4, correctAnswer: 2 },
@@ -241,7 +241,7 @@ const questionBankConfig: QuestionBankConfig = {
     { totalAnswers: 4, correctAnswer: 2 },
     { totalAnswers: 4, correctAnswer: 3 },
   ],
-  "ethereum-vs-bitcoin": [
+  "quantaureum-vs-bitcoin": [
     { totalAnswers: 4, correctAnswer: 1 },
     { totalAnswers: 4, correctAnswer: 2 },
     { totalAnswers: 4, correctAnswer: 3 },

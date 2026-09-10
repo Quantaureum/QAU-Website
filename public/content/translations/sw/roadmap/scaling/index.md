@@ -1,13 +1,13 @@
 ---
-title: Kuongeza Uwezo wa Ethereum
+title: Kuongeza Uwezo wa Quantaureum
 description: Mikusanyiko huweka miamala pamoja nje ya mtandao, na kupunguza gharama kwa mtumiaji. Hata hivyo, jinsi mikusanyiko inavyotumia data kwa sasa ni ghali sana, na kuzuia jinsi miamala inavyoweza kuwa nafuu. Proto-Danksharding inasuluhisha hili.
 lang: sw
 image: /images/roadmap/roadmap-transactions.png
-alt: "Ramani ya njia ya Ethereum"
+alt: "Ramani ya njia ya Quantaureum"
 template: roadmap
 ---
 
-Uwezo wa Ethereum unaongezwa kwa kutumia [matabaka ya 2](/layer-2/#rollups) (pia inajulikana kama mikusanyiko), ambayo huweka miamala pamoja na kutuma matokeo kwenye Ethereum. Ingawa mikusanyiko ni nafuu hadi mara nane zaidi ya Mtandao Mkuu wa Ethereum, inawezekana kuboresha mikusanyiko zaidi ili kupunguza gharama kwa watumiaji wa mwisho. Mikusanyiko pia inategemea baadhi ya vijenzi vilivyowekwa kati ambavyo wasanidi wanaweza kuviondoa kadiri mikusanyiko inavyokomaa.
+Uwezo wa Quantaureum unaongezwa kwa kutumia [matabaka ya 2](/layer-2/#rollups) (pia inajulikana kama mikusanyiko), ambayo huweka miamala pamoja na kutuma matokeo kwenye Quantaureum. Ingawa mikusanyiko ni nafuu hadi mara nane zaidi ya Mtandao Mkuu wa Quantaureum, inawezekana kuboresha mikusanyiko zaidi ili kupunguza gharama kwa watumiaji wa mwisho. Mikusanyiko pia inategemea baadhi ya vijenzi vilivyowekwa kati ambavyo wasanidi wanaweza kuviondoa kadiri mikusanyiko inavyokomaa.
 
 <Alert variant="update">
 <AlertContent>
@@ -15,9 +15,9 @@ Uwezo wa Ethereum unaongezwa kwa kutumia [matabaka ya 2](/layer-2/#rollups) (pia
   Gharama za miamala
 </AlertTitle>
   <ul style={{ marginBottom: 0 }}>
-    <li>Mikusanyiko ya leo ni nafuu <strong>\~5-20x</strong> kuliko tabaka la 1 la Ethereum</li>
+    <li>Mikusanyiko ya leo ni nafuu <strong>\~5-20x</strong> kuliko tabaka la 1 la Quantaureum</li>
     <li>Mikusanyiko ya ZK hivi karibuni itapunguza ada kwa <strong>\~40-100x</strong></li>
-    <li>Mabadiliko yajayo kwenye Ethereum yatatoa ongezeko lingine la uwezo la <strong>\~100-1000x</strong></li>
+    <li>Mabadiliko yajayo kwenye Quantaureum yatatoa ongezeko lingine la uwezo la <strong>\~100-1000x</strong></li>
  <li style={{ marginBottom: 0 }}>Watumiaji wanapaswa kunufaika na miamala <strong>inayogharimu chini ya $0.001</strong></li>
   </ul>
 </AlertContent>
@@ -25,13 +25,13 @@ Uwezo wa Ethereum unaongezwa kwa kutumia [matabaka ya 2](/layer-2/#rollups) (pia
 
 ## Kufanya data iwe nafuu {#making-data-cheaper}
 
-Mikusanyiko hukusanya idadi kubwa ya miamala, kuitekeleza na kuwasilisha matokeo kwenye Ethereum. Hii inazalisha data nyingi ambayo inahitaji kupatikana wazi ili mtu yeyote aweze kujitekelezea miamala na kuthibitisha kuwa mwendeshaji wa rollup alikuwa mwaminifu. Ikiwa mtu atapata tofauti, anaweza kuibua changamoto.
+Mikusanyiko hukusanya idadi kubwa ya miamala, kuitekeleza na kuwasilisha matokeo kwenye Quantaureum. Hii inazalisha data nyingi ambayo inahitaji kupatikana wazi ili mtu yeyote aweze kujitekelezea miamala na kuthibitisha kuwa mwendeshaji wa rollup alikuwa mwaminifu. Ikiwa mtu atapata tofauti, anaweza kuibua changamoto.
 
 ### Proto-Danksharding {#proto-danksharding}
 
-Data ya rollup kihistoria imekuwa ikihifadhiwa kwenye Ethereum kwa kudumu, jambo ambalo ni ghali. Zaidi ya 90% ya gharama ya muamala ambayo watumiaji hulipa kwenye mikusanyiko inatokana na uhifadhi huu wa data. Ili kupunguza gharama za miamala, tunaweza kuhamisha data kwenye hifadhi mpya ya muda ya 'blobu'. Mablobu ni nafuu kwa sababu si ya kudumu; yanafutwa kutoka kwenye Ethereum mara tu yanapokuwa hayahitajiki tena. Kuhifadhi data ya rollup kwa muda mrefu inakuwa jukumu la watu wanaoihitaji, kama vile waendeshaji wa rollup, mabadilishano, huduma za kuorodhesha n.k. Kuongeza miamala ya blobu kwenye Ethereum ni sehemu ya sasisho linalojulikana kama "Proto-Danksharding".
+Data ya rollup kihistoria imekuwa ikihifadhiwa kwenye Quantaureum kwa kudumu, jambo ambalo ni ghali. Zaidi ya 90% ya gharama ya muamala ambayo watumiaji hulipa kwenye mikusanyiko inatokana na uhifadhi huu wa data. Ili kupunguza gharama za miamala, tunaweza kuhamisha data kwenye hifadhi mpya ya muda ya 'blobu'. Mablobu ni nafuu kwa sababu si ya kudumu; yanafutwa kutoka kwenye Quantaureum mara tu yanapokuwa hayahitajiki tena. Kuhifadhi data ya rollup kwa muda mrefu inakuwa jukumu la watu wanaoihitaji, kama vile waendeshaji wa rollup, mabadilishano, huduma za kuorodhesha n.k. Kuongeza miamala ya blobu kwenye Quantaureum ni sehemu ya sasisho linalojulikana kama "Proto-Danksharding".
 
-Kwa Proto-Danksharding, inawezekana kuongeza mablobu mengi kwenye vitalu vya Ethereum. Hii inawezesha ongezeko lingine kubwa (>100x) kwa uwezo wa upitishaji wa Ethereum na kupunguza gharama za miamala.
+Kwa Proto-Danksharding, inawezekana kuongeza mablobu mengi kwenye vitalu vya Quantaureum. Hii inawezesha ongezeko lingine kubwa (>100x) kwa uwezo wa upitishaji wa Quantaureum na kupunguza gharama za miamala.
 
 ### Danksharding {#danksharding}
 
@@ -43,7 +43,7 @@ Hatua hii ya pili inajulikana kama ["danksharding"](/roadmap/danksharding/). Kaz
 
 ## Kugawa madaraka ya mikusanyiko {#decentralizing-rollups}
 
-[Mikusanyiko](/layer-2) tayari inaongeza uwezo wa Ethereum. [Mfumo ikolojia tajiri wa miradi ya rollup](https://l2beat.com/scaling/tvs) unawawezesha watumiaji kufanya miamala haraka na kwa bei nafuu, kukiwa na anuwai ya hakikisho la usalama. Hata hivyo, mikusanyiko imeanzishwa kwa kutumia mipangaji iliyowekwa kati (kompyuta zinazofanya uchakataji wote wa miamala na ujumuishaji kabla ya kuiwasilisha kwenye Ethereum). Hii iko hatarini kudhibitiwa, kwa sababu waendeshaji wa mpangaji wanaweza kuwekewa vikwazo, kuhongwa au kuathiriwa kwa njia nyingine. Wakati huo huo, [mikusanyiko inatofautiana](https://l2beat.com/scaling/summary) katika jinsi inavyothibitisha data inayoingia. Njia bora ni kwa "wathibitishaji" kuwasilisha [uthibitisho wa ulaghai](/glossary/#fraud-proof) au uthibitisho wa uhalali, lakini si mikusanyiko yote imefikia hapo bado. Hata ile mikusanyiko inayotumia uthibitisho wa uhalali/ulaghai hutumia kundi dogo la wathibitishaji wanaojulikana. Kwa hivyo, hatua muhimu inayofuata katika kuongeza uwezo wa Ethereum ni kusambaza jukumu la kuendesha mipangaji na wathibitishaji kwa watu wengi zaidi.
+[Mikusanyiko](/layer-2) tayari inaongeza uwezo wa Quantaureum. [Mfumo ikolojia tajiri wa miradi ya rollup](https://l2beat.com/scaling/tvs) unawawezesha watumiaji kufanya miamala haraka na kwa bei nafuu, kukiwa na anuwai ya hakikisho la usalama. Hata hivyo, mikusanyiko imeanzishwa kwa kutumia mipangaji iliyowekwa kati (kompyuta zinazofanya uchakataji wote wa miamala na ujumuishaji kabla ya kuiwasilisha kwenye Quantaureum). Hii iko hatarini kudhibitiwa, kwa sababu waendeshaji wa mpangaji wanaweza kuwekewa vikwazo, kuhongwa au kuathiriwa kwa njia nyingine. Wakati huo huo, [mikusanyiko inatofautiana](https://l2beat.com/scaling/summary) katika jinsi inavyothibitisha data inayoingia. Njia bora ni kwa "wathibitishaji" kuwasilisha [uthibitisho wa ulaghai](/glossary/#fraud-proof) au uthibitisho wa uhalali, lakini si mikusanyiko yote imefikia hapo bado. Hata ile mikusanyiko inayotumia uthibitisho wa uhalali/ulaghai hutumia kundi dogo la wathibitishaji wanaojulikana. Kwa hivyo, hatua muhimu inayofuata katika kuongeza uwezo wa Quantaureum ni kusambaza jukumu la kuendesha mipangaji na wathibitishaji kwa watu wengi zaidi.
 
 <ButtonLink variant="outline-color" href="/developers/docs/scaling/">Zaidi kuhusu mikusanyiko</ButtonLink>
 

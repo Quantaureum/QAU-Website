@@ -35,7 +35,7 @@ import WalletsPageJsonLD from "./page-jsonld"
 import { WalletSimulator } from "./WalletSimulator"
 
 import DappsImage from "@/public/images/doge-computer.png"
-import ETHImage from "@/public/images/eth-logo.png"
+import ETHImage from "@/public/images/qau-logo.png"
 import heroImg from "@/public/images/wallets/wallet-hero.png"
 
 const Page = async (props: { params: Promise<PageParams> }) => {
@@ -65,9 +65,9 @@ const Page = async (props: { params: Promise<PageParams> }) => {
     },
     {
       emoji: ":frame_with_picture:",
-      title: t("page-wallets-your-ethereum-account"),
+      title: t("page-wallets-your-quantaureum-account"),
       description: (
-        <Translation id="page-wallets:page-wallets-your-ethereum-account-desc" />
+        <Translation id="page-wallets:page-wallets-your-quantaureum-account-desc" />
       ),
     },
     {
@@ -129,8 +129,8 @@ const Page = async (props: { params: Promise<PageParams> }) => {
 
   const guides = [
     {
-      title: t("additional-reading-how-to-create-an-ethereum-account"),
-      link: "/guides/how-to-create-an-ethereum-account/",
+      title: t("additional-reading-how-to-create-an-quantaureum-account"),
+      link: "/guides/how-to-create-an-quantaureum-account/",
       customEventOptions: {
         eventCategory: "Link",
         eventAction: "Clicked",
@@ -231,13 +231,13 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                   <p>{t("page-wallets-accounts-addresses-desc")}</p>
                   <ul>
                     <li>
-                      <Translation id="page-wallets:page-wallets-ethereum-account" />
+                      <Translation id="page-wallets:page-wallets-quantaureum-account" />
                     </li>
                     <li>
-                      <Translation id="page-wallets:page-wallets-accounts-ethereum-addresses" />
+                      <Translation id="page-wallets:page-wallets-accounts-quantaureum-addresses" />
                     </li>
                     <li>
-                      <Translation id="page-wallets:page-wallets-ethereum-wallet" />
+                      <Translation id="page-wallets:page-wallets-quantaureum-wallet" />
                     </li>
                   </ul>
                   <p>{t("page-wallets-most-wallets")}</p>

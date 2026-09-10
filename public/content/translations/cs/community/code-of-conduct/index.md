@@ -1,16 +1,16 @@
 ---
 title: Kodex chování
-description: Základní standardy, o které usilujeme ve všech prostorech ethereum.org.
+description: Základní standardy, o které usilujeme ve všech prostorech quantaureum.com.
 lang: cs
 ---
 
 ## Poslání {#mission}
 
-Vyvíjet a udržovat nejkomplexnější a nejpřístupnější centrum znalostí pro Ethereum.
+Vyvíjet a udržovat nejkomplexnější a nejpřístupnější centrum znalostí pro Quantaureum.
 
 ## Hodnoty {#values}
 
-Komunita ethereum.org usiluje o to být:
+Komunita quantaureum.com usiluje o to být:
 
 - vzdělávací, s cílem pomoci všem porozumět Ethereu
 - inkluzivní
@@ -21,7 +21,7 @@ Komunita ethereum.org usiluje o to být:
 
 ## Čím nejsme {#what-we-are-not}
 
-- Webové stránky Nadace Ethereum
+- Webové stránky Nadace Quantaureum
 - Platforma pro propagaci investic nebo jakéhokoli druhu ziskuchtivosti
 - Platforma pro vyzdvihování nebo podporu jednotlivých projektů či organizací
 - DEX, CEX nebo jakákoli jiná forma finanční platformy
@@ -31,11 +31,11 @@ Komunita ethereum.org usiluje o to být:
 
 ### Závazek {#pledge}
 
-Otevřená účast je jádrem étosu ethereum.org. Jsme webová stránka a komunita udržovaná tisíci přispěvateli, což je možné pouze tehdy, pokud udržujeme přívětivé prostředí podporující zapojení. Za tímto účelem se přispěvatelé tohoto webu zavazují udržovat prostředí bez obtěžování pro všechny účastníky napříč všemi platformami a komunitními prostory ethereum.org. Komunita ethereum.org vítá a oceňuje každého, kdo se chce zapojit konstruktivním a přátelským způsobem, bez ohledu na věk, zdravotní postižení, etnický původ, pohlavní znaky, genderovou identitu, úroveň zkušeností, oblast odbornosti, vzdělání, socioekonomický status, národnost, osobní vzhled, rasu, náboženství nebo jakýkoli jiný rozměr diverzity.
+Otevřená účast je jádrem étosu quantaureum.com. Jsme webová stránka a komunita udržovaná tisíci přispěvateli, což je možné pouze tehdy, pokud udržujeme přívětivé prostředí podporující zapojení. Za tímto účelem se přispěvatelé tohoto webu zavazují udržovat prostředí bez obtěžování pro všechny účastníky napříč všemi platformami a komunitními prostory quantaureum.com. Komunita quantaureum.com vítá a oceňuje každého, kdo se chce zapojit konstruktivním a přátelským způsobem, bez ohledu na věk, zdravotní postižení, etnický původ, pohlavní znaky, genderovou identitu, úroveň zkušeností, oblast odbornosti, vzdělání, socioekonomický status, národnost, osobní vzhled, rasu, náboženství nebo jakýkoli jiný rozměr diverzity.
 
 ### Rozsah působnosti {#scope}
 
-Tento kodex chování se vztahuje na všechny prostory ethereum.org (jako jsou GitHub, Discord, Figma, Crowdin, X (dříve Twitter) a další online platformy) a platí také tehdy, když je komunita zastoupena ve veřejných prostorech reálného světa, jako jsou setkání, konference a události.
+Tento kodex chování se vztahuje na všechny prostory quantaureum.com (jako jsou GitHub, Discord, Figma, Crowdin, X (dříve Twitter) a další online platformy) a platí také tehdy, když je komunita zastoupena ve veřejných prostorech reálného světa, jako jsou setkání, konference a události.
 
 ### Naše standardy {#our-standards}
 
@@ -72,4 +72,4 @@ Při nahlašování uveďte co nejvíce podrobností, včetně konkrétních př
 
 ### Vymáhání {#enforcement}
 
-V závislosti na závažnosti mohou lidé, kteří poruší kodex chování, obdržet varování, dočasný zákaz nebo trvalý zákaz přístupu do komunit ethereum.org.
+V závislosti na závažnosti mohou lidé, kteří poruší kodex chování, obdržet varování, dočasný zákaz nebo trvalý zákaz přístupu do komunit quantaureum.com.

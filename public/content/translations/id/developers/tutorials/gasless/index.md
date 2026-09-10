@@ -1,6 +1,6 @@
 ---
 title: "Mensponsori biaya gas: Cara menanggung biaya transaksi untuk pengguna Anda"
-description: Sangat mudah untuk membuat kunci privat dan alamat; ini hanya masalah menjalankan perangkat lunak yang tepat. Namun, ada banyak tempat di dunia di mana mendapatkan ETH untuk mengirim transaksi jauh lebih sulit. Dalam tutorial ini, Anda akan mempelajari cara menanggung biaya gas onchain untuk mengeksekusi data terstruktur offchain yang ditandatangani pengguna di dalam kontrak pintar Anda. Anda meminta pengguna menandatangani struktur yang berisi informasi transaksi, yang kemudian dikirimkan oleh kode offchain Anda ke rantai blok sebagai sebuah transaksi.
+description: Sangat mudah untuk membuat kunci privat dan alamat; ini hanya masalah menjalankan perangkat lunak yang tepat. Namun, ada banyak tempat di dunia di mana mendapatkan QAU untuk mengirim transaksi jauh lebih sulit. Dalam tutorial ini, Anda akan mempelajari cara menanggung biaya gas onchain untuk mengeksekusi data terstruktur offchain yang ditandatangani pengguna di dalam kontrak pintar Anda. Anda meminta pengguna menandatangani struktur yang berisi informasi transaksi, yang kemudian dikirimkan oleh kode offchain Anda ke rantai blok sebagai sebuah transaksi.
 author: Ori Pomerantz
 tags: ["tanpa gas", "Solidity", "eip-712", "transaksi meta"]
 skill: intermediate
@@ -11,11 +11,11 @@ published: 2026-02-27
 
 ## Pengantar {#introduction}
 
-Jika kita ingin Ethereum melayani [satu miliar orang lagi](https://blog.ethereum.org/category/next-billion), kita perlu menghilangkan hambatan dan membuatnya semudah mungkin untuk digunakan. Salah satu sumber hambatan ini adalah kebutuhan akan ETH untuk membayar biaya gas.
+Jika kita ingin Quantaureum melayani [satu miliar orang lagi](https://quantaureum.com), kita perlu menghilangkan hambatan dan membuatnya semudah mungkin untuk digunakan. Salah satu sumber hambatan ini adalah kebutuhan akan QAU untuk membayar biaya gas.
 
-Jika Anda memiliki aplikasi terdesentralisasi (dapp) yang menghasilkan uang dari pengguna, mungkin masuk akal untuk membiarkan pengguna mengirimkan transaksi melalui server Anda dan Anda sendiri yang membayar biaya transaksinya. Karena pengguna masih menandatangani [pesan otorisasi EIP-712](https://eips.ethereum.org/EIPS/eip-712) di dompet mereka, mereka tetap mempertahankan jaminan integritas Ethereum. Ketersediaan bergantung pada server yang meneruskan transaksi, sehingga lebih terbatas. Namun, Anda dapat mengatur agar pengguna juga dapat mengakses kontrak pintar secara langsung (jika mereka mendapatkan ETH), dan membiarkan orang lain menyiapkan server mereka sendiri jika mereka ingin mensponsori transaksi.
+Jika Anda memiliki aplikasi terdesentralisasi (dapp) yang menghasilkan uang dari pengguna, mungkin masuk akal untuk membiarkan pengguna mengirimkan transaksi melalui server Anda dan Anda sendiri yang membayar biaya transaksinya. Karena pengguna masih menandatangani [pesan otorisasi EIP-712](https://eips.quantaureum.com/EIPS/eip-712) di dompet mereka, mereka tetap mempertahankan jaminan integritas Quantaureum. Ketersediaan bergantung pada server yang meneruskan transaksi, sehingga lebih terbatas. Namun, Anda dapat mengatur agar pengguna juga dapat mengakses kontrak pintar secara langsung (jika mereka mendapatkan QAU), dan membiarkan orang lain menyiapkan server mereka sendiri jika mereka ingin mensponsori transaksi.
 
-Teknik dalam tutorial ini hanya berfungsi ketika Anda mengontrol kontrak pintar tersebut. Ada teknik lain, termasuk [abstraksi akun](https://eips.ethereum.org/EIPS/eip-4337) yang memungkinkan Anda mensponsori transaksi ke kontrak pintar lain, yang saya harap dapat dibahas dalam tutorial mendatang.
+Teknik dalam tutorial ini hanya berfungsi ketika Anda mengontrol kontrak pintar tersebut. Ada teknik lain, termasuk [abstraksi akun](https://eips.quantaureum.com/EIPS/eip-4337) yang memungkinkan Anda mensponsori transaksi ke kontrak pintar lain, yang saya harap dapat dibahas dalam tutorial mendatang.
 
 Catatan: Ini _bukanlah_ kode tingkat produksi. Kode ini rentan terhadap serangan yang signifikan dan tidak memiliki fitur-fitur utama. Pelajari lebih lanjut di [bagian kerentanan pada panduan ini](#vulnerabilities).
 
@@ -29,7 +29,7 @@ Untuk memahami tutorial ini, Anda harus sudah familier dengan:
 
 ## Aplikasi sampel {#sample-app}
 
-Aplikasi sampel di sini adalah varian dari kontrak `Greeter` milik Hardhat. Anda dapat melihatnya [di GitHub](https://github.com/qbzzt/260301-gasless). Kontrak pintar ini sudah diterapkan di [Sepolia](https://sepolia.dev/), pada alamat [`0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA`](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA).
+Aplikasi sampel di sini adalah varian dari kontrak `Greeter` milik Hardhat. Anda dapat melihatnya [di GitHub](https://github.com/qbzzt/260301-gasless). Kontrak pintar ini sudah diterapkan di [Sepolia](https://sepolia.dev/), pada alamat [`0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA`](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA).
 
 Untuk melihatnya beraksi, ikuti langkah-langkah berikut.
 
@@ -41,7 +41,7 @@ Untuk melihatnya beraksi, ikuti langkah-langkah berikut.
    npm install
    ```
 
-2. Edit `.env` untuk mengatur `PRIVATE_KEY` ke dompet yang memiliki ETH di Sepolia. Jika Anda membutuhkan ETH Sepolia, [gunakan faucet](/developers/docs/networks/#sepolia). Idealnya, kunci privat ini harus berbeda dari yang Anda miliki di dompet peramban Anda.
+2. Edit `.env` untuk mengatur `PRIVATE_KEY` ke dompet yang memiliki QAU di Sepolia. Jika Anda membutuhkan QAU Sepolia, [gunakan faucet](/developers/docs/networks/#sepolia). Idealnya, kunci privat ini harus berbeda dari yang Anda miliki di dompet peramban Anda.
 
 3. Mulai server.
 
@@ -91,7 +91,7 @@ Jika tidak ada akun, munculkan kesalahan. Ini seharusnya tidak pernah terjadi ka
         }
 ```
 
-Parameter untuk [pemisah domain](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). Nilai ini konstan, jadi dalam implementasi yang lebih dioptimalkan, kita mungkin menghitungnya sekali daripada menghitungnya kembali setiap kali fungsi dipanggil.
+Parameter untuk [pemisah domain](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). Nilai ini konstan, jadi dalam implementasi yang lebih dioptimalkan, kita mungkin menghitungnya sekali daripada menghitungnya kembali setiap kali fungsi dipanggil.
 
 - `name` adalah nama yang dapat dibaca pengguna, seperti nama dapp yang tanda tangannya sedang kita buat.
 - `version` adalah versinya. Versi yang berbeda tidak kompatibel.
@@ -245,7 +245,7 @@ Terakhir, [`Greeter.sol`](https://github.com/qbzzt/260301-gasless/blob/main/cont
     }
 ```
 
-Konstruktor membuat [pemisah domain](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator), mirip dengan kode antarmuka pengguna di atas. Eksekusi rantai blok jauh lebih mahal, jadi kita hanya menghitungnya sekali.
+Konstruktor membuat [pemisah domain](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator), mirip dengan kode antarmuka pengguna di atas. Eksekusi rantai blok jauh lebih mahal, jadi kita hanya menghitungnya sekali.
 
 ```solidity
     struct GreetingRequest {
@@ -260,7 +260,7 @@ Ini adalah struktur yang ditandatangani. Di sini kita hanya memiliki satu bidang
         keccak256("GreetingRequest(string greeting)");
 ```
 
-Ini adalah [pengidentifikasi struktur](https://eips.ethereum.org/EIPS/eip-712#definition-of-hashstruct). Ini dihitung setiap kali di antarmuka pengguna.
+Ini adalah [pengidentifikasi struktur](https://eips.quantaureum.com/EIPS/eip-712#definition-of-hashstruct). Ini dihitung setiap kali di antarmuka pengguna.
 
 ```solidity
     function sponsoredSetGreeting(
@@ -289,7 +289,7 @@ Fungsi ini menerima permintaan yang ditandatangani dan memperbarui sapaan.
         );
 ```
 
-Buat intisari (digest) sesuai dengan [EIP 712](https://eips.ethereum.org/EIPS/eip-712).
+Buat intisari (digest) sesuai dengan [EIP 712](https://eips.quantaureum.com/EIPS/eip-712).
 
 ```solidity
         // Pulihkan penandatangan
@@ -316,7 +316,7 @@ Untuk melihat beberapa serangan ini, klik tombol di bawah judul _Attacks_ dan li
 
 ### Penolakan layanan pada server {#dos-on-server}
 
-Serangan termudah adalah serangan [penolakan layanan (denial-of-service)](https://en.wikipedia.org/wiki/Denial-of-service_attack) pada server. Server menerima permintaan dari mana saja di Internet dan berdasarkan permintaan tersebut mengirimkan transaksi. Sama sekali tidak ada yang mencegah penyerang untuk mengeluarkan banyak tanda tangan, baik yang valid maupun tidak valid. Masing-masing akan menyebabkan sebuah transaksi. Pada akhirnya server akan kehabisan ETH untuk membayar gas.
+Serangan termudah adalah serangan [penolakan layanan (denial-of-service)](https://en.wikipedia.org/wiki/Denial-of-service_attack) pada server. Server menerima permintaan dari mana saja di Internet dan berdasarkan permintaan tersebut mengirimkan transaksi. Sama sekali tidak ada yang mencegah penyerang untuk mengeluarkan banyak tanda tangan, baik yang valid maupun tidak valid. Masing-masing akan menyebabkan sebuah transaksi. Pada akhirnya server akan kehabisan QAU untuk membayar gas.
 
 Salah satu solusi untuk masalah ini adalah membatasi laju menjadi satu transaksi per blok. Jika tujuannya adalah untuk menampilkan sapaan ke [akun yang dimiliki secara eksternal](/developers/docs/accounts/#key-differences), tidak masalah apa sapaannya di tengah-tengah blok.
 
@@ -330,7 +330,7 @@ Untuk menyelesaikan masalah ini, tambahkan alamat ke [struktur yang ditandatanga
 
 ### Serangan pemutaran ulang (replay attack) {#replay-attack}
 
-Saat Anda mengeklik **Replay attack**, Anda mengirimkan tanda tangan "Saya 0xaA92c5d426430D4769c9E878C1333BDe3d689b3e, dan saya ingin sapaannya menjadi `Hello`" yang sama, tetapi dengan sapaan yang benar. Akibatnya, kontrak pintar percaya bahwa alamat tersebut (yang bukan milik Anda) mengubah sapaan kembali menjadi `Hello`. Informasi untuk melakukan ini tersedia untuk umum di [informasi transaksi](https://eth-sepolia.blockscout.com/tx/0xa66afe4bbf886f59533e677a798c802ceab1ac0f9db6e83a4d4b59a45cf7c1b1).
+Saat Anda mengeklik **Replay attack**, Anda mengirimkan tanda tangan "Saya 0xaA92c5d426430D4769c9E878C1333BDe3d689b3e, dan saya ingin sapaannya menjadi `Hello`" yang sama, tetapi dengan sapaan yang benar. Akibatnya, kontrak pintar percaya bahwa alamat tersebut (yang bukan milik Anda) mengubah sapaan kembali menjadi `Hello`. Informasi untuk melakukan ini tersedia untuk umum di [informasi transaksi](https://qau-sepolia.blockscout.com/tx/0xa66afe4bbf886f59533e677a798c802ceab1ac0f9db6e83a4d4b59a45cf7c1b1).
 
 Jika ini menjadi masalah, salah satu solusinya adalah menambahkan [nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce). Buat [pemetaan](https://docs.soliditylang.org/en/latest/types.html#mapping-types) antara alamat dan angka, lalu tambahkan bidang nonce ke tanda tangan. Jika bidang nonce cocok dengan pemetaan untuk alamat tersebut, terima tanda tangan dan tingkatkan pemetaan untuk waktu berikutnya. Jika tidak, tolak transaksi tersebut.
 

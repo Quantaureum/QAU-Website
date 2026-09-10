@@ -46,9 +46,9 @@ function getEnglishPath(filePath) {
 
 /** @type {import("markdownlint").Rule} */
 module.exports = {
-  names: ["match-english-heading-ids", "ethereum-match-english-ids"],
+  names: ["match-english-heading-ids", "quantaureum-match-english-ids"],
   description: "Translation heading IDs must match the English source",
-  tags: ["headings", "ethereum", "translations"],
+  tags: ["headings", "quantaureum", "translations"],
   parser: "none",
   function: (params, onError) => {
     const filePath = params.name

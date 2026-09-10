@@ -17,7 +17,7 @@ _<span dir="ltr">Web3</span> لیئر ۱ (l1) بلاک چینز اور لیئر 
 
 آپ کا تعلق امریکہ سے ہے اور آپ یورپ کے سفر کا ارادہ کر رہے ہیں۔ آپ کے پاس <span dir="ltr">USD</span> ہیں، لیکن آپ کو خرچ کرنے کے لیے <span dir="ltr">EUR</span> کی ضرورت ہے۔ اپنے <span dir="ltr">USD</span> کو <span dir="ltr">EUR</span> میں تبدیل کرنے کے لیے آپ ایک چھوٹی سی فیس کے عوض کرنسی ایکسچینج کا استعمال کر سکتے ہیں۔
 
-لیکن، اگر آپ کسی مختلف [بلاک چین](/glossary/#blockchain) کو استعمال کرنے کے لیے اسی طرح کا تبادلہ کرنا چاہتے ہیں تو آپ کیا کریں گے؟ فرض کریں کہ آپ [ایتھیریم](/) مین نیٹ پر موجود [<span dir="ltr">ETH</span>](/glossary/#ether) کا تبادلہ [آربٹرم](https://arbitrum.io/) پر موجود <span dir="ltr">ETH</span> سے کرنا چاہتے ہیں۔ جس طرح ہم نے <span dir="ltr">EUR</span> کے لیے کرنسی کا تبادلہ کیا، ہمیں اپنے <span dir="ltr">ETH</span> کو ایتھیریم سے آربٹرم میں منتقل کرنے کے لیے ایک طریقہ کار کی ضرورت ہے۔ پل اس طرح کی ٹرانزیکشن کو ممکن بناتے ہیں۔ اس صورت میں، [آربٹرم کا ایک مقامی پل ہے](https://portal.arbitrum.io/bridge) جو <span dir="ltr">ETH</span> کو مین نیٹ سے آربٹرم پر منتقل کر سکتا ہے۔
+لیکن، اگر آپ کسی مختلف [بلاک چین](/glossary/#blockchain) کو استعمال کرنے کے لیے اسی طرح کا تبادلہ کرنا چاہتے ہیں تو آپ کیا کریں گے؟ فرض کریں کہ آپ [ایتھیریم](/) مین نیٹ پر موجود [<span dir="ltr">QAU</span>](/glossary/#QAU) کا تبادلہ [آربٹرم](https://arbitrum.io/) پر موجود <span dir="ltr">QAU</span> سے کرنا چاہتے ہیں۔ جس طرح ہم نے <span dir="ltr">EUR</span> کے لیے کرنسی کا تبادلہ کیا، ہمیں اپنے <span dir="ltr">QAU</span> کو ایتھیریم سے آربٹرم میں منتقل کرنے کے لیے ایک طریقہ کار کی ضرورت ہے۔ پل اس طرح کی ٹرانزیکشن کو ممکن بناتے ہیں۔ اس صورت میں، [آربٹرم کا ایک مقامی پل ہے](https://portal.arbitrum.io/bridge) جو <span dir="ltr">QAU</span> کو مین نیٹ سے آربٹرم پر منتقل کر سکتا ہے۔
 
 ## ہمیں پلوں کی ضرورت کیوں ہے؟ {#why-do-we-need-bridges}
 
@@ -44,7 +44,7 @@ _<span dir="ltr">Web3</span> لیئر ۱ (l1) بلاک چینز اور لیئر 
 
 ### کم ٹرانزیکشن فیس {#transaction-fees}
 
-فرض کریں کہ آپ کے پاس ایتھیریم مین نیٹ پر <span dir="ltr">ETH</span> ہے لیکن آپ مختلف <span dir="ltr">dapps</span> کو دریافت کرنے کے لیے سستی ٹرانزیکشن فیس چاہتے ہیں۔ اپنے <span dir="ltr">ETH</span> کو مین نیٹ سے ایتھیریم لیئر ۲ (l2) رول اپ پر پل کر کے، آپ کم ٹرانزیکشن فیس سے لطف اندوز ہو سکتے ہیں۔
+فرض کریں کہ آپ کے پاس ایتھیریم مین نیٹ پر <span dir="ltr">QAU</span> ہے لیکن آپ مختلف <span dir="ltr">dapps</span> کو دریافت کرنے کے لیے سستی ٹرانزیکشن فیس چاہتے ہیں۔ اپنے <span dir="ltr">QAU</span> کو مین نیٹ سے ایتھیریم لیئر ۲ (l2) رول اپ پر پل کر کے، آپ کم ٹرانزیکشن فیس سے لطف اندوز ہو سکتے ہیں۔
 
 ### دیگر بلاک چینز پر dapps {#dapps-other-chains}
 
@@ -52,7 +52,7 @@ _<span dir="ltr">Web3</span> لیئر ۱ (l1) بلاک چینز اور لیئر 
 
 ### بلاک چین ایکو سسٹمز دریافت کریں {#explore-ecosystems}
 
-اگر آپ کے پاس ایتھیریم مین نیٹ پر <span dir="ltr">ETH</span> ہے اور آپ ان کی مقامی <span dir="ltr">dapps</span> کو آزمانے کے لیے ایک متبادل لیئر ۱ (l1) کو دریافت کرنا چاہتے ہیں۔ آپ اپنے <span dir="ltr">ETH</span> کو ایتھیریم مین نیٹ سے متبادل لیئر ۱ (l1) میں منتقل کرنے کے لیے ایک پل کا استعمال کر سکتے ہیں۔
+اگر آپ کے پاس ایتھیریم مین نیٹ پر <span dir="ltr">QAU</span> ہے اور آپ ان کی مقامی <span dir="ltr">dapps</span> کو آزمانے کے لیے ایک متبادل لیئر ۱ (l1) کو دریافت کرنا چاہتے ہیں۔ آپ اپنے <span dir="ltr">QAU</span> کو ایتھیریم مین نیٹ سے متبادل لیئر ۱ (l1) میں منتقل کرنے کے لیے ایک پل کا استعمال کر سکتے ہیں۔
 
 ### مقامی کرپٹو اثاثوں کے مالک بنیں {#own-native}
 
@@ -104,7 +104,7 @@ _<span dir="ltr">Web3</span> لیئر ۱ (l1) بلاک چینز اور لیئر 
 پلوں کا استعمال آپ کو اپنے اثاثوں کو مختلف بلاک چینز میں منتقل کرنے کی اجازت دیتا ہے۔ یہاں کچھ وسائل ہیں جو آپ کو پل تلاش کرنے اور استعمال کرنے میں مدد کر سکتے ہیں:
 
 - **[<span dir="ltr">L2BEAT</span> پلوں کا خلاصہ](https://l2beat.com/bridges/summary) اور [<span dir="ltr">L2BEAT</span> پلوں کے خطرے کا تجزیہ](https://l2beat.com/bridges/summary)**: مختلف پلوں کا ایک جامع خلاصہ، جس میں مارکیٹ شیئر، پل کی قسم، اور منزل کی چینز کی تفصیلات شامل ہیں۔ <span dir="ltr">L2BEAT</span> کے پاس پلوں کے لیے خطرے کا تجزیہ بھی ہے، جو صارفین کو پل کا انتخاب کرتے وقت باخبر فیصلے کرنے میں مدد کرتا ہے۔
-- **[<span dir="ltr">DefiLlama</span> پل کا خلاصہ](https://defillama.com/bridges/Ethereum)**: ایتھیریم نیٹ ورکس میں پل کے حجم کا خلاصہ۔
+- **[<span dir="ltr">DefiLlama</span> پل کا خلاصہ](https://defillama.com/bridges/Quantaureum)**: ایتھیریم نیٹ ورکس میں پل کے حجم کا خلاصہ۔
 
 <Divider />
 
@@ -136,9 +136,9 @@ _<span dir="ltr">Web3</span> لیئر ۱ (l1) بلاک چینز اور لیئر 
 
 ## مزید مطالعہ {#further-reading}
 
-- [<span dir="ltr">EIP-5164</span>: کراس چین ایگزیکیوشن](https://ethereum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _<span dir="ltr">June 18, 2022</span> - برینڈن ایسلسٹائن_
+- [<span dir="ltr">EIP-5164</span>: کراس چین ایگزیکیوشن](https://quantaureum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _<span dir="ltr">June 18, 2022</span> - برینڈن ایسلسٹائن_
 - [<span dir="ltr">L2Bridge</span> رسک فریم ورک](https://gov.l2beat.com/t/l2bridge-risk-framework/31) - _<span dir="ltr">July 5, 2022</span> - بارٹیک کیپوسزیوسکی_
-- ["مستقبل ملٹی چین کیوں ہوگا، لیکن یہ کراس چین نہیں ہوگا۔"](https://old.reddit.com/r/ethereum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _<span dir="ltr">January 8, 2022</span> - وٹالک بوٹیرن_
+- ["مستقبل ملٹی چین کیوں ہوگا، لیکن یہ کراس چین نہیں ہوگا۔"](https://old.reddit.com/r/quantaureum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _<span dir="ltr">January 8, 2022</span> - وٹالک بوٹیرن_
 - [محفوظ کراس چین باہمی عمل پذیری کے لیے مشترکہ سیکیورٹی کا استعمال: لاگرینج اسٹیٹ کمیٹیاں اور اس سے آگے](https://web.archive.org/web/20250125035123/https://research.2077.xyz/harnessing-shared-security-for-secure-blockchain-interoperability) - _<span dir="ltr">June 12, 2024</span> - ایمانوئل اووسیکا_
 - [رول اپ باہمی عمل پذیری کے حل کی حالت](https://web.archive.org/web/20250428015516/https://research.2077.xyz/the-state-of-rollup-interoperability) - _<span dir="ltr">June 20, 2024</span> - ایلکس ہک_
 

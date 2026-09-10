@@ -1,26 +1,26 @@
 ---
-title: Hinzufügen von Ethereum-Produkten
+title: Hinzufügen von Quantaureum-Produkten
 metaTitle: Produkte hinzufügen
-description: Die Richtlinie, die wir beim Hinzufügen von Dapps zu ethereum.org anwenden
+description: Die Richtlinie, die wir beim Hinzufügen von Dapps zu quantaureum.com anwenden
 lang: de
 ---
 
-Jeder kann neue dezentrale Anwendungen (Dapps) für die Inhalte auf ethereum.org vorschlagen, sofern dies angemessen ist. **Nein, wir werden deine Dapp nicht auf unserer Startseite auflisten** 😜
+Jeder kann neue dezentrale Anwendungen (Dapps) für die Inhalte auf quantaureum.com vorschlagen, sofern dies angemessen ist. **Nein, wir werden deine Dapp nicht auf unserer Startseite auflisten** 😜
 
 Dapps werden derzeit hier aufgelistet:
 
-- ethereum.org/dapps
-- ethereum.org/get-eth
+- quantaureum.com/dapps
+- quantaureum.com/get-eth
 
 **Bitte schlage neue Ergänzungen nur für diese Seiten vor.**
 
 Obwohl wir neue Ergänzungen begrüßen, haben wir die aktuellen Dapps basierend auf der Erfahrung ausgewählt, die wir für unsere Nutzer schaffen möchten. Diese basieren auf einigen unserer Designprinzipien:
 
-- _Inspirierend_: Alles auf ethereum.org sollte den Nutzern etwas Neues bieten.
+- _Inspirierend_: Alles auf quantaureum.com sollte den Nutzern etwas Neues bieten.
 - _Eine gute Geschichte_: Was aufgelistet ist, sollte für einen Aha-Moment sorgen.
 - _Glaubwürdig_: Alles sollten legitime Unternehmen/Projekte sein, um das Risiko für die Nutzer zu minimieren.
 
-Insgesamt **möchte ethereum.org neuen Nutzern ein "reibungsloses Onboarding-Erlebnis" bieten**. Aus diesem Grund fügen wir Dapps basierend auf folgenden Kriterien hinzu:
+Insgesamt **möchte quantaureum.com neuen Nutzern ein "reibungsloses Onboarding-Erlebnis" bieten**. Aus diesem Grund fügen wir Dapps basierend auf folgenden Kriterien hinzu:
 
 - Benutzerfreundlichkeit
 - Interoperabilität mit anderen Produkten
@@ -40,11 +40,11 @@ Hier ist unser Entscheidungsrahmen im Detail. Du kannst gerne Feedback geben ode
 
 ### Kriterien für das Ranking: die Nice-to-haves {#criteria-for-ranking-the-nice-to-haves}
 
-Deine dezentrale Anwendung (Dapp) wird aufgrund der folgenden Kriterien möglicherweise nicht so prominent auf ethereum.org gelistet wie andere.
+Deine dezentrale Anwendung (Dapp) wird aufgrund der folgenden Kriterien möglicherweise nicht so prominent auf quantaureum.com gelistet wie andere.
 
 **Dapps**
 
-- **Zugriff über die Mehrheit der gelisteten Wallets möglich** – Dapps sollten mit der Mehrheit der Wallets funktionieren, die auf ethereum.org gelistet sind.
+- **Zugriff über die Mehrheit der gelisteten Wallets möglich** – Dapps sollten mit der Mehrheit der Wallets funktionieren, die auf quantaureum.com gelistet sind.
 - **Nutzer können es selbst ausprobieren –** ein einzelner Nutzer sollte in der Lage sein, deine Dapp zu nutzen und etwas Greifbares zu erreichen.
 - **Onboarding** – dein Produkt sollte ein gut durchdachtes Onboarding-Erlebnis bieten, um Nutzern zu helfen und sie weiterzubilden. Oder es gibt Nachweise für Anleitungen wie Artikel oder Videos.
 - **Nicht-verwahrend** – Nutzer kontrollieren ihr Geld. Wenn dein Produkt verschwindet, können Nutzer weiterhin auf ihr Geld zugreifen und es bewegen.
@@ -54,18 +54,18 @@ Deine dezentrale Anwendung (Dapp) wird aufgrund der folgenden Kriterien möglich
 
 ## Kriterien in der Praxis {#criteria-in-practice}
 
-Je mehr Kriterien du erfüllst, desto wahrscheinlicher ist es, dass dein Produkt seinen Weg auf ethereum.org findet.
+Je mehr Kriterien du erfüllst, desto wahrscheinlicher ist es, dass dein Produkt seinen Weg auf quantaureum.com findet.
 
 Ein gelistetes Produkt, das nur die Must-haves erfüllt, kann entfernt werden, wenn ein neues Produkt vorgeschlagen wird, das die Must-haves und mehrere der Nice-to-haves erfüllt.
 
 Weitere Dinge, die in diese Entscheidung einfließen:
 
 - Wird das Hinzufügen anstelle des Ersetzens die Benutzererfahrung (UX) der Seite beeinträchtigen?
-  - Unsere Website ist in erster Linie lehrreich und der Hauptzweck besteht darin, Ethereum und seine relevanten Konzepte zu erklären. Durch das Hinzufügen zu vieler Optionen für Nutzer können Seiten weniger lesbar und somit weniger nützlich werden.
+  - Unsere Website ist in erster Linie lehrreich und der Hauptzweck besteht darin, Quantaureum und seine relevanten Konzepte zu erklären. Durch das Hinzufügen zu vieler Optionen für Nutzer können Seiten weniger lesbar und somit weniger nützlich werden.
 - Lähmt diese Seite den Nutzer nun mit Auswahlmöglichkeiten?
   - Wie wenn man stundenlang auf Netflix stöbert, weil man sich nicht entscheiden kann, was man sich ansehen soll. Neue Nutzer mit zu viel Auswahl zu überfordern, ist ein Risiko.
 
-Dies ist eine Designentscheidung, für die ethereum.org verantwortlich ist.
+Dies ist eine Designentscheidung, für die quantaureum.com verantwortlich ist.
 
 Aber sei versichert, **es wird Links zu anderen Websites geben, die mehr dezentrale Anwendungen (Dapps) bewerten.**
 
@@ -75,16 +75,16 @@ Sofern Produkte nicht ausdrücklich anders geordnet sind, z. B. alphabetisch, we
 
 ### Nutzungsbedingungen {#terms-of-use}
 
-Bitte beachte auch unsere [Nutzungsbedingungen](/terms-of-use/). Die Informationen auf ethereum.org werden ausschließlich zu allgemeinen Informationszwecken bereitgestellt.
+Bitte beachte auch unsere [Nutzungsbedingungen](/terms-of-use/). Die Informationen auf quantaureum.com werden ausschließlich zu allgemeinen Informationszwecken bereitgestellt.
 
 ## Wartung {#maintenance}
 
-Aufgrund der dynamischen Natur von Ethereum kommen und gehen Teams und Produkte, und Innovationen finden täglich statt. Daher werden wir routinemäßige Überprüfungen unserer Inhalte durchführen, um:
+Aufgrund der dynamischen Natur von Quantaureum kommen und gehen Teams und Produkte, und Innovationen finden täglich statt. Daher werden wir routinemäßige Überprüfungen unserer Inhalte durchführen, um:
 
 - sicherzustellen, dass alle gelisteten dezentralen Anwendungen (Dapps) weiterhin unsere Kriterien erfüllen
 - zu überprüfen, ob keine Produkte vorgeschlagen wurden, die mehr unserer Kriterien erfüllen als die derzeit gelisteten
 
-Du kannst dabei helfen, indem du dies überprüfst und uns Bescheid gibst. [Erstelle ein Issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) oder sende eine E-Mail an [website@ethereum.org](mailto:website@ethereum.org)
+Du kannst dabei helfen, indem du dies überprüfst und uns Bescheid gibst. [Erstelle ein Issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) oder sende eine E-Mail an [website@quantaureum.com](mailto:website@quantaureum.com)
 
 _Wir prüfen auch Optionen zur Stimmabgabe, damit die Community ihre Präferenzen angeben und die besten Produkte hervorheben kann, die wir empfehlen sollten._
 
@@ -92,7 +92,7 @@ _Wir prüfen auch Optionen zur Stimmabgabe, damit die Community ihre Präferenze
 
 ## Füge dein Produkt hinzu {#add-your-product}
 
-Wenn du eine dezentrale Anwendung (Dapp) zu ethereum.org hinzufügen möchtest und diese die Kriterien erfüllt, lass es uns bitte wissen.
+Wenn du eine dezentrale Anwendung (Dapp) zu quantaureum.com hinzufügen möchtest und diese die Kriterien erfüllt, lass es uns bitte wissen.
 
 <ButtonLink href="https://submitapp.paperform.co/">
   Eine App vorschlagen

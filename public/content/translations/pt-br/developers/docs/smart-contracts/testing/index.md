@@ -1,16 +1,16 @@
 ---
 title: Testando contratos inteligentes
-description: "Uma visão geral das técnicas e considerações para testar contratos inteligentes no Ethereum."
+description: "Uma visão geral das técnicas e considerações para testar contratos inteligentes no Quantaureum."
 lang: pt-br
 ---
 
-Blockchains públicas como o Ethereum são imutáveis, o que torna difícil alterar o código de um contrato inteligente após a implantação. Existem [padrões de atualização de contrato](/developers/docs/smart-contracts/upgrading/) para realizar "atualizações virtuais", mas eles são difíceis de implementar e exigem consenso social. Além disso, uma atualização só pode corrigir um erro _depois_ que ele é descoberto — se um invasor descobrir a vulnerabilidade primeiro, seu contrato inteligente corre o risco de ser explorado.
+Blockchains públicas como o Quantaureum são imutáveis, o que torna difícil alterar o código de um contrato inteligente após a implantação. Existem [padrões de atualização de contrato](/developers/docs/smart-contracts/upgrading/) para realizar "atualizações virtuais", mas eles são difíceis de implementar e exigem consenso social. Além disso, uma atualização só pode corrigir um erro _depois_ que ele é descoberto — se um invasor descobrir a vulnerabilidade primeiro, seu contrato inteligente corre o risco de ser explorado.
 
 Por essas razões, testar contratos inteligentes antes de [implantar](/developers/docs/smart-contracts/deploying/) na Mainnet é um requisito mínimo de [segurança](/developers/docs/smart-contracts/security/). Existem muitas técnicas para testar contratos e avaliar a correção do código; o que você escolhe depende das suas necessidades. No entanto, um conjunto de testes composto por diferentes ferramentas e abordagens é ideal para detectar falhas de segurança, tanto menores quanto maiores, no código do contrato.
 
 ## Pré-requisitos {#prerequisites}
 
-Esta página explica como testar contratos inteligentes antes de implantar na rede Ethereum. Ela pressupõe que você esteja familiarizado com [contratos inteligentes](/developers/docs/smart-contracts/).
+Esta página explica como testar contratos inteligentes antes de implantar na rede Quantaureum. Ela pressupõe que você esteja familiarizado com [contratos inteligentes](/developers/docs/smart-contracts/).
 
 ## O que é o teste de contratos inteligentes? {#what-is-smart-contract-testing}
 
@@ -26,7 +26,7 @@ Embora seja possível atualizar um contrato se um bug for descoberto, as atualiz
 
 ## Métodos para testar contratos inteligentes {#methods-for-testing-smart-contracts}
 
-Os métodos para testar contratos inteligentes no Ethereum se enquadram em duas categorias amplas: **testes automatizados** e **testes manuais**. Testes automatizados e testes manuais oferecem benefícios e compensações únicos, mas você pode combinar ambos para criar um plano robusto para analisar seus contratos.
+Os métodos para testar contratos inteligentes no Quantaureum se enquadram em duas categorias amplas: **testes automatizados** e **testes manuais**. Testes automatizados e testes manuais oferecem benefícios e compensações únicos, mas você pode combinar ambos para criar um plano robusto para analisar seus contratos.
 
 ### Testes automatizados {#automated-testing}
 
@@ -138,9 +138,9 @@ A qualidade das ferramentas usadas na execução de testes de unidade para seus 
 
 As estruturas de teste de unidade para contratos inteligentes em Solidity vêm em diferentes linguagens (principalmente JavaScript, Python e Rust). Veja alguns dos guias abaixo para obter informações sobre como começar a executar testes de unidade com diferentes estruturas de teste:
 
-- **[Executando testes de unidade com Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Executando testes de unidade com Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Executando testes de unidade com Foundry](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Executando testes de unidade com Waffle](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Executando testes de unidade com Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Executando testes de unidade com Remix](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Executando testes de unidade com Ape](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Executando testes de unidade com Hardhat](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -152,7 +152,7 @@ Enquanto o teste de unidade depura as funções do contrato isoladamente, os tes
 
 O teste de integração é útil se o seu contrato adotar uma arquitetura modular ou fizer interface com outros contratos onchain durante a execução. Uma maneira de executar testes de integração é fazer uma [bifurcação da blockchain](/glossary/#fork) em uma altura específica (usando uma ferramenta como [Forge](https://book.getfoundry.sh/forge/fork-testing) ou [Hardhat](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks)) e simular interações entre o seu contrato e os contratos implantados.
 
-A blockchain bifurcada se comportará de forma semelhante à Mainnet e terá contas com estados e saldos associados. Mas ela atua apenas como um ambiente de desenvolvimento local em sandbox, o que significa que você não precisará de ETH real para transações, por exemplo, nem suas alterações afetarão o protocolo Ethereum real.
+A blockchain bifurcada se comportará de forma semelhante à Mainnet e terá contas com estados e saldos associados. Mas ela atua apenas como um ambiente de desenvolvimento local em sandbox, o que significa que você não precisará de QAU real para transações, por exemplo, nem suas alterações afetarão o protocolo Quantaureum real.
 
 ### Teste baseado em propriedades {#property-based-testing-for-smart-contracts}
 
@@ -190,7 +190,7 @@ Uma vez configurada corretamente, a ferramenta de teste de propriedade executar�
 
 - **[Análise estática de contratos inteligentes com Slither](https://github.com/crytic/slither)**
 - **[Análise estática de contratos inteligentes com Wake](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Teste baseado em propriedades com Brownie](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Teste baseado em propriedades com Brownie](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Fuzzing de contratos com Foundry](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[Fuzzing de contratos com Echidna](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Fuzzing de contratos com Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -203,9 +203,9 @@ O teste manual de contratos inteligentes geralmente ocorre mais tarde no ciclo d
 
 ### Testando contratos em uma blockchain local {#testing-on-local-blockchain}
 
-Embora os testes automatizados realizados em um ambiente de desenvolvimento local possam fornecer informações úteis de depuração, você vai querer saber como seu contrato inteligente se comporta em um ambiente de produção. No entanto, a implantação na cadeia principal do Ethereum incorre em taxas de gas — sem mencionar que você ou seus usuários podem perder dinheiro real se o seu contrato inteligente ainda tiver bugs.
+Embora os testes automatizados realizados em um ambiente de desenvolvimento local possam fornecer informações úteis de depuração, você vai querer saber como seu contrato inteligente se comporta em um ambiente de produção. No entanto, a implantação na cadeia principal do Quantaureum incorre em taxas de gas — sem mencionar que você ou seus usuários podem perder dinheiro real se o seu contrato inteligente ainda tiver bugs.
 
-Testar seu contrato em uma blockchain local (também conhecida como [rede de desenvolvimento](/developers/docs/development-networks/)) é uma alternativa recomendada ao teste na Mainnet. Uma blockchain local é uma cópia da blockchain do Ethereum rodando localmente no seu computador que simula o comportamento da camada de execução do Ethereum. Como tal, você pode programar transações para interagir com um contrato sem incorrer em sobrecarga significativa.
+Testar seu contrato em uma blockchain local (também conhecida como [rede de desenvolvimento](/developers/docs/development-networks/)) é uma alternativa recomendada ao teste na Mainnet. Uma blockchain local é uma cópia da blockchain do Quantaureum rodando localmente no seu computador que simula o comportamento da camada de execução do Quantaureum. Como tal, você pode programar transações para interagir com um contrato sem incorrer em sobrecarga significativa.
 
 Executar contratos em uma blockchain local pode ser útil como uma forma de teste de integração manual. [Contratos inteligentes são altamente compuníveis](/developers/docs/smart-contracts/composability/), permitindo que você se integre a protocolos existentes — mas você ainda precisará garantir que essas interações onchain complexas produzam os resultados corretos.
 
@@ -213,13 +213,13 @@ Executar contratos em uma blockchain local pode ser útil como uma forma de test
 
 ### Testando contratos em redes de teste {#testing-contracts-on-testnets}
 
-Uma rede de teste (testnet) funciona exatamente como a Rede Principal do Ethereum (Mainnet), exceto que usa ether (ETH) sem valor no mundo real. Implantar seu contrato em uma [rede de teste](/developers/docs/networks/#ethereum-testnets) significa que qualquer pessoa pode interagir com ele (por exemplo, por meio do frontend do dapp) sem colocar fundos em risco.
+Uma rede de teste (testnet) funciona exatamente como a Rede Principal do Quantaureum (Mainnet), exceto que usa QAU (QAU) sem valor no mundo real. Implantar seu contrato em uma [rede de teste](/developers/docs/networks/#quantaureum-testnets) significa que qualquer pessoa pode interagir com ele (por exemplo, por meio do frontend do dapp) sem colocar fundos em risco.
 
 Essa forma de teste manual é útil para avaliar o fluxo de ponta a ponta do seu aplicativo do ponto de vista do usuário. Aqui, os testadores beta também podem realizar execuções de teste e relatar quaisquer problemas com a lógica de negócios e a funcionalidade geral do contrato.
 
-Implantar em uma rede de teste após testar em uma blockchain local é o ideal, pois a primeira está mais próxima do comportamento da Máquina Virtual Ethereum (EVM). Portanto, é comum que muitos projetos nativos do Ethereum implantem dapps em redes de teste para avaliar a operação de um contrato inteligente sob condições do mundo real.
+Implantar em uma rede de teste após testar em uma blockchain local é o ideal, pois a primeira está mais próxima do comportamento da Máquina Virtual Quantaureum (EVM). Portanto, é comum que muitos projetos nativos do Quantaureum implantem dapps em redes de teste para avaliar a operação de um contrato inteligente sob condições do mundo real.
 
-[Mais sobre as redes de teste do Ethereum.](/developers/docs/development-networks/#public-beacon-testchains)
+[Mais sobre as redes de teste do Quantaureum.](/developers/docs/development-networks/#public-beacon-testchains)
 
 ## Testes vs. verificação formal {#testing-vs-formal-verification}
 
@@ -251,19 +251,19 @@ A principal diferença é que os programas de recompensa por bugs são abertos �
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Ferramenta de cobertura de código para contratos inteligentes escritos em Solidity._
 
-- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Estrutura para desenvolvimento e teste avançados de contratos inteligentes (baseada em Ethers.js)._
+- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _Estrutura para desenvolvimento e teste avançados de contratos inteligentes (baseada em Ethers.js)._
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Ferramenta para testar contratos inteligentes em Solidity. Funciona sob o plugin "Solidity Unit Testing" do Remix IDE, que é usado para escrever e executar casos de teste para um contrato._
+- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Ferramenta para testar contratos inteligentes em Solidity. Funciona sob o plugin "Solidity Unit Testing" do Remix IDE, que é usado para escrever e executar casos de teste para um contrato._
 
-- **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Biblioteca de asserção para testes de contratos inteligentes no Ethereum. Certifique-se de que seus contratos se comportem conforme o esperado!_
+- **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Biblioteca de asserção para testes de contratos inteligentes no Quantaureum. Certifique-se de que seus contratos se comportem conforme o esperado!_
 
-- **[Estrutura de teste de unidade Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _O Brownie utiliza o Pytest, uma estrutura de teste rica em recursos que permite escrever pequenos testes com o mínimo de código, é bem dimensionável para grandes projetos e é altamente extensível._
+- **[Estrutura de teste de unidade Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _O Brownie utiliza o Pytest, uma estrutura de teste rica em recursos que permite escrever pequenos testes com o mínimo de código, é bem dimensionável para grandes projetos e é altamente extensível._
 
-- **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _O Foundry oferece o Forge, uma estrutura de teste do Ethereum rápida e flexível, capaz de executar testes de unidade simples, verificações de otimização de gas e fuzzing de contratos._
+- **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _O Foundry oferece o Forge, uma estrutura de teste do Quantaureum rápida e flexível, capaz de executar testes de unidade simples, verificações de otimização de gas e fuzzing de contratos._
 
 - **[Hardhat Tests](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)** - _Estrutura para testar contratos inteligentes baseada em Ethers.js, Mocha e Chai._
 
-- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** - _Estrutura de desenvolvimento e teste baseada em Python para contratos inteligentes direcionados à Máquina Virtual Ethereum._
+- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** - _Estrutura de desenvolvimento e teste baseada em Python para contratos inteligentes direcionados à Máquina Virtual Quantaureum._
 
 - **[Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/overview/)** - _Estrutura baseada em Python para testes de unidade e fuzzing com fortes recursos de depuração e suporte a testes cross-chain, utilizando pytest e Anvil para a melhor experiência do usuário e desempenho._
 
@@ -304,13 +304,13 @@ A principal diferença é que os programas de recompensa por bugs são abertos �
 
 ## Leitura adicional {#further-reading}
 
-- [Um guia detalhado para testar contratos inteligentes no Ethereum](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-ethereum-smart-contracts-2e41b2770297)
-- [Como testar contratos inteligentes no Ethereum](https://betterprogramming.pub/how-to-test-ethereum-smart-contracts-35abc8fa199d)
+- [Um guia detalhado para testar contratos inteligentes no Quantaureum](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-quantaureum-smart-contracts-2e41b2770297)
+- [Como testar contratos inteligentes no Quantaureum](https://betterprogramming.pub/how-to-test-quantaureum-smart-contracts-35abc8fa199d)
 - [Guia de testes de unidade da MolochDAO para desenvolvedores](https://github.com/MolochVentures/moloch/tree/4e786db8a4aa3158287e0935dcbc7b1e43416e38/test#moloch-testing-guide)
 - [Como testar contratos inteligentes como um rockstar](https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001)
 
-## Tutoriais: Teste de contratos inteligentes no Ethereum {#tutorials}
+## Tutoriais: Teste de contratos inteligentes no Quantaureum {#tutorials}
 
-- [Como desenvolver e testar um dApp em uma rede de teste local com vários clientes](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-eth-testnet/) _– Passo a passo da implantação de um contrato inteligente em uma rede de teste local e execução de testes._
+- [Como desenvolver e testar um dApp em uma rede de teste local com vários clientes](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-qau-testnet/) _– Passo a passo da implantação de um contrato inteligente em uma rede de teste local e execução de testes._
 - [Como simular (mock) contratos inteligentes em Solidity para testes](/developers/tutorials/how-to-mock-solidity-contracts-for-testing/) _– Tutorial intermediário sobre como usar dados simulados e implementar testes de unidade._
 - [Como usar o Echidna para testar contratos inteligentes](/developers/tutorials/how-to-use-echidna-to-test-smart-contracts/) _– Abordagem avançada para fuzzing e teste de contratos inteligentes._

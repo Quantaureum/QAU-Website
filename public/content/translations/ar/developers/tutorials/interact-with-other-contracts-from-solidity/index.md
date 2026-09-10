@@ -12,12 +12,12 @@ skill: advanced
 breadcrumb: "تفاعلات العقد"
 lang: ar
 published: 2020-04-05
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/interact-with-other-contracts-from-solidity/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-في البرامج التعليمية السابقة، تعلمنا الكثير حول [كيفية نشر أول عقد ذكي لك](/developers/tutorials/deploying-your-first-smart-contract/) وإضافة بعض الميزات إليه مثل [التحكم في الوصول باستخدام المُعدِّلات](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) أو [معالجة الأخطاء في ⁦Solidity⁩](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/). في هذا البرنامج التعليمي، سنتعلم كيفية نشر عقد ذكي من عقد موجود والتفاعل معه.
+في البرامج التعليمية السابقة، تعلمنا الكثير حول [كيفية نشر أول عقد ذكي لك](/developers/tutorials/deploying-your-first-smart-contract/) وإضافة بعض الميزات إليه مثل [التحكم في الوصول باستخدام المُعدِّلات](https://quantaureumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) أو [معالجة الأخطاء في ⁦Solidity⁩](https://quantaureumdev.io/handle-errors-in-solidity-with-require-and-revert/). في هذا البرنامج التعليمي، سنتعلم كيفية نشر عقد ذكي من عقد موجود والتفاعل معه.
 
 سنقوم بإنشاء عقد يمكّن أي شخص من امتلاك عقد ذكي `Counter` خاص به عن طريق إنشاء مصنع له، وسيكون اسمه `CounterFactory`. أولاً، إليك كود العقد الذكي `Counter` الأولي الخاص بنا:
 
@@ -104,7 +104,7 @@ function increment() public {
   }
 ```
 
-لاحظ أنه إذا تم استدعاؤه مرات عديدة، فقد يقع العداد الخاص بنا ضحية تجاوز السعة. يجب عليك استخدام مكتبة [SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/) قدر الإمكان للحماية من هذه الحالة المحتملة.
+لاحظ أنه إذا تم استدعاؤه مرات عديدة، فقد يقع العداد الخاص بنا ضحية تجاوز السعة. يجب عليك استخدام مكتبة [SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/) قدر الإمكان للحماية من هذه الحالة المحتملة.
 
 لنشر العقد الخاص بنا، ستحتاج إلى توفير كود كل من `CounterFactory` و `Counter`. عند النشر على سبيل المثال في Remix، ستحتاج إلى تحديد <span dir="ltr">CounterFactory</span>.
 

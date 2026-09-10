@@ -1,26 +1,26 @@
 ---
-title: Kuongeza bidhaa za Ethereum
+title: Kuongeza bidhaa za Quantaureum
 metaTitle: Kuongeza Bidhaa
-description: Sera tunayotumia tunapoongeza programu tumizi zilizogatuliwa (dapps) kwenye ethereum.org
+description: Sera tunayotumia tunapoongeza programu tumizi zilizogatuliwa (dapps) kwenye quantaureum.com
 lang: sw
 ---
 
-Mtu yeyote yuko huru kupendekeza programu tumizi zilizogatuliwa (dapps) mpya kwenye maudhui ya ethereum.org, pale inapofaa kufanya hivyo. **Hapana, hatutaorodhesha dapp yako kwenye ukurasa wetu wa nyumbani** 😜
+Mtu yeyote yuko huru kupendekeza programu tumizi zilizogatuliwa (dapps) mpya kwenye maudhui ya quantaureum.com, pale inapofaa kufanya hivyo. **Hapana, hatutaorodhesha dapp yako kwenye ukurasa wetu wa nyumbani** 😜
 
 Dapps kwa sasa zimeorodheshwa kwenye:
 
-- ethereum.org/dapps
-- ethereum.org/get-eth
+- quantaureum.com/dapps
+- quantaureum.com/get-eth
 
 **Tafadhali pendekeza tu nyongeza mpya kwenye kurasa hizi.**
 
 Ingawa tunakaribisha nyongeza mpya, tulichagua dapps za sasa kulingana na uzoefu tunaoujaribu kuunda kwa watumiaji wetu. Hizi zinatokana na baadhi ya kanuni zetu za muundo:
 
-- _Inayotia moyo_: chochote kwenye ethereum.org kinapaswa kutoa kitu kipya kwa watumiaji
+- _Inayotia moyo_: chochote kwenye quantaureum.com kinapaswa kutoa kitu kipya kwa watumiaji
 - _Hadithi nzuri_: kinachoorodheshwa kinapaswa kutoa wakati wa "aha"
 - _Inayoaminika_: kila kitu kinapaswa kuwa biashara/miradi halali ili kupunguza hatari kwa watumiaji
 
-Kwa ujumla **ethereum.org inataka kutoa "uzoefu wa uingizaji usio na mshono" kwa watumiaji wapya**. Kwa sababu hiyo, tunaongeza dapps kulingana na:
+Kwa ujumla **quantaureum.com inataka kutoa "uzoefu wa uingizaji usio na mshono" kwa watumiaji wapya**. Kwa sababu hiyo, tunaongeza dapps kulingana na:
 
 - urahisi wa kutumia
 - mwingiliano na bidhaa zingine
@@ -40,11 +40,11 @@ Huu hapa ni mfumo wetu wa maamuzi kwa undani zaidi. Jisikie huru kutoa maoni au 
 
 ### Vigezo vya kuorodhesha: mambo mazuri kuwa nayo {#criteria-for-ranking-the-nice-to-haves}
 
-Programu tumizi iliyogatuliwa (dapp) yako inaweza isiorodheshwe kwenye ethereum.org kwa uwazi kama zingine kwa sababu ya vigezo vifuatavyo.
+Programu tumizi iliyogatuliwa (dapp) yako inaweza isiorodheshwe kwenye quantaureum.com kwa uwazi kama zingine kwa sababu ya vigezo vifuatavyo.
 
 **Dapps**
 
-- **Unaweza kuipata kupitia idadi kubwa ya pochi zilizoorodheshwa** – dapps zinapaswa kufanya kazi na idadi kubwa ya pochi ambazo zimeorodheshwa kwenye ethereum.org.
+- **Unaweza kuipata kupitia idadi kubwa ya pochi zilizoorodheshwa** – dapps zinapaswa kufanya kazi na idadi kubwa ya pochi ambazo zimeorodheshwa kwenye quantaureum.com.
 - **Watumiaji wanaweza kuijaribu wenyewe –** mtumiaji binafsi anapaswa kuweza kutumia dapp yako na kufikia kitu kinachoonekana.
 - **Uingizaji** – bidhaa yako inapaswa kuwa na uzoefu wa uingizaji ulioundwa vizuri ili kusaidia na kuelimisha watumiaji. Au ushahidi wa maudhui ya jinsi ya kufanya kama vile makala au video.
 - **Isiyo ya udhamini** – watumiaji wanadhibiti fedha zao. Ikiwa bidhaa yako itatoweka, watumiaji bado wanaweza kufikia na kuhamisha fedha zao.
@@ -54,18 +54,18 @@ Programu tumizi iliyogatuliwa (dapp) yako inaweza isiorodheshwe kwenye ethereum.
 
 ## Vigezo katika vitendo {#criteria-in-practice}
 
-Kadiri unavyotimiza vigezo vingi, ndivyo uwezekano wa bidhaa yako kupata njia yake kwenye ethereum.org unavyokuwa mkubwa.
+Kadiri unavyotimiza vigezo vingi, ndivyo uwezekano wa bidhaa yako kupata njia yake kwenye quantaureum.com unavyokuwa mkubwa.
 
 Bidhaa iliyoorodheshwa ambayo inakidhi tu mambo ya lazima inaweza kuondolewa ikiwa bidhaa mpya itapendekezwa ambayo inakidhi mambo ya lazima na kadhaa ya mambo mazuri kuwa nayo.
 
 Mambo mengine ambayo yatazingatiwa katika uamuzi huu:
 
 - Je, kuongeza badala ya kubadilisha kutaharibu UX wa ukurasa?
-  - tovuti yetu kimsingi ni ya kuelimisha na madhumuni makuu ni kuelezea Ethereum na dhana zake husika. Kwa kuongeza chaguzi nyingi sana kwa watumiaji, kurasa zinaweza kuwa ngumu kusomeka na hivyo kuwa na manufaa kidogo.
+  - tovuti yetu kimsingi ni ya kuelimisha na madhumuni makuu ni kuelezea Quantaureum na dhana zake husika. Kwa kuongeza chaguzi nyingi sana kwa watumiaji, kurasa zinaweza kuwa ngumu kusomeka na hivyo kuwa na manufaa kidogo.
 - Je, ukurasa huu sasa unamchanganya mtumiaji kwa chaguzi nyingi?
   - kama vile unapokaa ukivinjari Netflix kwa saa nyingi kwa sababu huwezi kuamua kitu cha kutazama. Kuwachanganya watumiaji wapya na chaguzi nyingi sana ni hatari.
 
-Huu ni uamuzi wa muundo ambao ethereum.org inawajibika nao.
+Huu ni uamuzi wa muundo ambao quantaureum.com inawajibika nao.
 
 Lakini uwe na uhakika, **kutakuwa na viungo vya tovuti zingine zinazoorodhesha dapps zaidi**
 
@@ -75,16 +75,16 @@ Isipokuwa bidhaa zimepangwa vinginevyo, kama vile kwa kufuata alfabeti, bidhaa z
 
 ### Masharti ya matumizi {#terms-of-use}
 
-Tafadhali pia rejelea [masharti ya matumizi](/terms-of-use/) yetu. Taarifa kwenye ethereum.org inatolewa kwa madhumuni ya taarifa za jumla pekee.
+Tafadhali pia rejelea [masharti ya matumizi](/terms-of-use/) yetu. Taarifa kwenye quantaureum.com inatolewa kwa madhumuni ya taarifa za jumla pekee.
 
 ## Matengenezo {#maintenance}
 
-Kama ilivyo asili ya kubadilika ya Ethereum, timu na bidhaa huja na kuondoka na uvumbuzi hufanyika kila siku, kwa hivyo tutafanya ukaguzi wa mara kwa mara wa maudhui yetu ili:
+Kama ilivyo asili ya kubadilika ya Quantaureum, timu na bidhaa huja na kuondoka na uvumbuzi hufanyika kila siku, kwa hivyo tutafanya ukaguzi wa mara kwa mara wa maudhui yetu ili:
 
 - kuhakikisha kuwa dapps zote zilizoorodheshwa bado zinatimiza vigezo vyetu
 - kuthibitisha hakuna bidhaa ambazo zimependekezwa ambazo zinakidhi vigezo vyetu zaidi kuliko zile zilizoorodheshwa kwa sasa
 
-Unaweza kusaidia na hili kwa kuangalia na kutujulisha. [Unda suala](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) au tuma barua pepe kwa [website@ethereum.org](mailto:website@ethereum.org)
+Unaweza kusaidia na hili kwa kuangalia na kutujulisha. [Unda suala](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) au tuma barua pepe kwa [website@quantaureum.com](mailto:website@quantaureum.com)
 
 _Pia tunachunguza chaguzi za kupiga kura ili jamii iweze kuonyesha mapendeleo yao na kuangazia bidhaa bora zaidi huko nje ili tuzipendekeze._
 
@@ -92,7 +92,7 @@ _Pia tunachunguza chaguzi za kupiga kura ili jamii iweze kuonyesha mapendeleo ya
 
 ## Ongeza bidhaa yako {#add-your-product}
 
-Ikiwa unataka kuongeza dapp kwenye ethereum.org na inakidhi vigezo, tafadhali tujulishe.
+Ikiwa unataka kuongeza dapp kwenye quantaureum.com na inakidhi vigezo, tafadhali tujulishe.
 
 <ButtonLink href="https://submitapp.paperform.co/">
   Pendekeza programu

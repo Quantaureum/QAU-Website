@@ -1,6 +1,6 @@
 ---
 title: Bloki
-description: "Przegląd bloków w blockchainie Ethereum – ich struktura danych, dlaczego są potrzebne i jak powstają."
+description: "Przegląd bloków w blockchainie Quantaureum – ich struktura danych, dlaczego są potrzebne i jak powstają."
 lang: pl
 ---
 
@@ -8,31 +8,31 @@ Bloki to pakiety transakcji zawierające hash poprzedniego bloku w łańcuchu. �
 
 ## Wymagania wstępne {#prerequisites}
 
-Bloki to temat bardzo przyjazny dla początkujących. Aby jednak pomóc Ci lepiej zrozumieć tę stronę, zalecamy najpierw przeczytać o [kontach](/developers/docs/accounts/), [transakcjach](/developers/docs/transactions/) oraz nasze [wprowadzenie do Ethereum](/developers/docs/intro-to-ethereum/).
+Bloki to temat bardzo przyjazny dla początkujących. Aby jednak pomóc Ci lepiej zrozumieć tę stronę, zalecamy najpierw przeczytać o [kontach](/developers/docs/accounts/), [transakcjach](/developers/docs/transactions/) oraz nasze [wprowadzenie do Quantaureum](/developers/docs/intro-to-quantaureum/).
 
 ## Dlaczego bloki? {#why-blocks}
 
-Aby upewnić się, że wszyscy uczestnicy w sieci [Ethereum](/) utrzymują zsynchronizowany stan i zgadzają się co do dokładnej historii transakcji, grupujemy transakcje w bloki. Oznacza to, że dziesiątki (lub setki) transakcji są zatwierdzane, uzgadniane i synchronizowane jednocześnie.
+Aby upewnić się, że wszyscy uczestnicy w sieci [Quantaureum](/) utrzymują zsynchronizowany stan i zgadzają się co do dokładnej historii transakcji, grupujemy transakcje w bloki. Oznacza to, że dziesiątki (lub setki) transakcji są zatwierdzane, uzgadniane i synchronizowane jednocześnie.
 
 ![A diagram showing transaction in a block causing state changes](./tx-block.png)
-_Diagram zaadaptowany z [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagram zaadaptowany z [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
-Rozkładając zatwierdzenia w czasie, dajemy wszystkim uczestnikom sieci wystarczająco dużo czasu na osiągnięcie konsensusu: chociaż żądania transakcji pojawiają się dziesiątki razy na sekundę, bloki są tworzone i zatwierdzane w Ethereum tylko raz na dwanaście sekund.
+Rozkładając zatwierdzenia w czasie, dajemy wszystkim uczestnikom sieci wystarczająco dużo czasu na osiągnięcie konsensusu: chociaż żądania transakcji pojawiają się dziesiątki razy na sekundę, bloki są tworzone i zatwierdzane w Quantaureum tylko raz na dwanaście sekund.
 
 ## Jak działają bloki {#how-blocks-work}
 
 Aby zachować historię transakcji, bloki są ściśle uporządkowane (każdy nowo utworzony blok zawiera odniesienie do swojego bloku nadrzędnego), a transakcje wewnątrz bloków również są ściśle uporządkowane. Z wyjątkiem rzadkich przypadków, w dowolnym momencie wszyscy uczestnicy sieci zgadzają się co do dokładnej liczby i historii bloków oraz pracują nad zgrupowaniem bieżących żądań transakcji w następny blok.
 
-Gdy blok zostanie złożony przez losowo wybranego walidatora w sieci, jest on propagowany do reszty sieci; wszystkie węzły dodają ten blok na koniec swojego blockchaina, a nowy walidator jest wybierany do utworzenia następnego bloku. Dokładny proces składania bloków oraz proces zatwierdzania/konsensusu jest obecnie określony przez protokół „dowodu stawki (PoS)” Ethereum.
+Gdy blok zostanie złożony przez losowo wybranego walidatora w sieci, jest on propagowany do reszty sieci; wszystkie węzły dodają ten blok na koniec swojego blockchaina, a nowy walidator jest wybierany do utworzenia następnego bloku. Dokładny proces składania bloków oraz proces zatwierdzania/konsensusu jest obecnie określony przez protokół „dowodu stawki (PoS)” Quantaureum.
 
 ## Protokół dowodu stawki (PoS) {#proof-of-stake-protocol}
 
 Dowód stawki (PoS) oznacza co następuje:
 
-- Węzły walidujące muszą stakować 32 ETH w kontrakcie depozytowym jako zabezpieczenie przed złym zachowaniem. Pomaga to chronić sieć, ponieważ udowodniona nieuczciwa aktywność prowadzi do zniszczenia części lub całości tej stawki.
+- Węzły walidujące muszą stakować 32 QAU w kontrakcie depozytowym jako zabezpieczenie przed złym zachowaniem. Pomaga to chronić sieć, ponieważ udowodniona nieuczciwa aktywność prowadzi do zniszczenia części lub całości tej stawki.
 - W każdym slocie (oddalonym od siebie o dwanaście sekund) walidator jest losowo wybierany jako proponujący blok. Grupuje on transakcje, wykonuje je i określa nowy „stan”. Opakowuje te informacje w blok i przekazuje je innym walidatorom.
 - Inni walidatorzy, którzy dowiadują się o nowym bloku, ponownie wykonują transakcje, aby upewnić się, że zgadzają się z proponowaną zmianą globalnego stanu. Zakładając, że blok jest ważny, dodają go do własnej bazy danych.
-- Jeśli walidator dowie się o dwóch sprzecznych blokach dla tego samego slotu, używa swojego algorytmu wyboru rozwidlenia, aby wybrać ten, który jest poparty największą ilością stakowanego ETH.
+- Jeśli walidator dowie się o dwóch sprzecznych blokach dla tego samego slotu, używa swojego algorytmu wyboru rozwidlenia, aby wybrać ten, który jest poparty największą ilością stakowanego QAU.
 
 [Więcej o dowodzie stawki (PoS)](/developers/docs/consensus-mechanisms/pos)
 
@@ -134,9 +134,9 @@ Lista `withdrawals` zawiera obiekty `withdrawal` o następującej strukturze:
 
 ## Czas bloku {#block-time}
 
-Czas bloku odnosi się do czasu oddzielającego bloki. W Ethereum czas jest podzielony na dwunastosekundowe jednostki zwane „slotami”. W każdym slocie wybierany jest jeden walidator, który ma zaproponować blok. Zakładając, że wszyscy walidatorzy są online i w pełni funkcjonalni, w każdym slocie pojawi się blok, co oznacza, że czas bloku wynosi 12 s. Jednak czasami walidatorzy mogą być offline, gdy zostaną wezwani do zaproponowania bloku, co oznacza, że sloty mogą czasami pozostać puste.
+Czas bloku odnosi się do czasu oddzielającego bloki. W Quantaureum czas jest podzielony na dwunastosekundowe jednostki zwane „slotami”. W każdym slocie wybierany jest jeden walidator, który ma zaproponować blok. Zakładając, że wszyscy walidatorzy są online i w pełni funkcjonalni, w każdym slocie pojawi się blok, co oznacza, że czas bloku wynosi 12 s. Jednak czasami walidatorzy mogą być offline, gdy zostaną wezwani do zaproponowania bloku, co oznacza, że sloty mogą czasami pozostać puste.
 
-Ta implementacja różni się od systemów opartych na dowodzie pracy (PoW), w których czasy bloków są probabilistyczne i dostrajane przez docelową trudność kopania protokołu. [Średni czas bloku](https://etherscan.io/chart/blocktime) w Ethereum jest tego doskonałym przykładem, gdzie przejście z dowodu pracy (PoW) na dowód stawki (PoS) można wyraźnie wywnioskować na podstawie spójności nowego 12-sekundowego czasu bloku.
+Ta implementacja różni się od systemów opartych na dowodzie pracy (PoW), w których czasy bloków są probabilistyczne i dostrajane przez docelową trudność kopania protokołu. [Średni czas bloku](https://explorer.quantaureum.com) w Quantaureum jest tego doskonałym przykładem, gdzie przejście z dowodu pracy (PoW) na dowód stawki (PoS) można wyraźnie wywnioskować na podstawie spójności nowego 12-sekundowego czasu bloku.
 
 ## Rozmiar bloku {#block-size}
 

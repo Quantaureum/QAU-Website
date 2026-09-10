@@ -41,13 +41,13 @@ const COLUMNS = [
 ]
 
 const ROWS = [
-  ["Ethereum", "L1", "Proof-of-stake", "--", "On-chain", "--", "--"],
+  ["Quantaureum", "L1", "Proof-of-stake", "--", "On-chain", "--", "--"],
   [
     "Optimistic L2",
     "L2",
     "Inherited",
-    "Ethereum",
-    "Ethereum",
+    "Quantaureum",
+    "Quantaureum",
     "Centralized",
     "Fraud proofs",
   ],
@@ -55,8 +55,8 @@ const ROWS = [
     "Validity L2",
     "L2",
     "Inherited",
-    "Ethereum",
-    "Ethereum",
+    "Quantaureum",
+    "Quantaureum",
     "Centralized",
     "Validity proofs",
   ],

@@ -8,7 +8,7 @@
   "page-privacy-summary-item-1": "Odzyskanie prywatności <strong>chroni Cię przed dynamicznym ustalaniem cen</strong> i algorytmicznym zawyżaniem cen, pozwalając Ci oszczędzać pieniądze i dokonywać transakcji na równych zasadach.",
   "page-privacy-summary-item-2": "Obecnie dostępne są tysiące <strong>aplikacji chroniących prywatność</strong>, z których korzysta <strong>ponad miliard użytkowników</strong> na całym świecie. Nie musisz godzić się na to, by oddawanie swoich danych było domyślnym standardem w sieci.",
   "page-privacy-summary-item-3": "Przejmując kontrolę nad swoją cyfrową prywatnością, odcinasz drogi, które pozwalają na wykorzystywanie Twoich danych osobowych do <strong>agresywnego targetowania</strong>, <strong>spamowych połączeń telefonicznych</strong> i <strong>kradzieży tożsamości</strong>.",
-  "page-privacy-summary-item-4": "<strong>Ethereum buduje lepszą alternatywę</strong>, ewoluując w domyślnie prywatną platformę dla jednostek i społeczności, umożliwiającą globalne interakcje z pełną kontrolą nad ich prywatnością.",
+  "page-privacy-summary-item-4": "<strong>Quantaureum buduje lepszą alternatywę</strong>, ewoluując w domyślnie prywatną platformę dla jednostek i społeczności, umożliwiającą globalne interakcje z pełną kontrolą nad ich prywatnością.",
   "page-privacy-data-against-you-title": "Kiedy Twoje dane osobowe są wykorzystywane przeciwko Tobie",
   "page-privacy-data-against-you-description-1": "Firmy mogą teraz szybko oszacować, ile jesteś w stanie zapłacić, i <strong>dostosować ceny</strong> na podstawie tego, co <strong>o Tobie wiedzą</strong>. Im więcej wiedzą, tym bardziej mogą zbliżyć się do <strong>maksymalnej ceny</strong>, jaką jesteś skłonny zapłacić za dany zakup.",
   "page-privacy-data-against-you-description-2": "W 2025 roku FTC <reported>poinformowała</reported>, że firmy kształtują ceny w czasie rzeczywistym na podstawie <strong>dokładnej lokalizacji</strong> danej osoby, <strong>historii przeglądania</strong>, a nawet <strong>ruchów myszką</strong>, pobierając różne opłaty za te same towary i usługi w oparciu o Twoje dane osobowe.",
@@ -60,15 +60,15 @@
   "page-privacy-what-protects-card-3-description": "Prywatność pomaga zapobiegać wykorzystywaniu wrażliwych danych do odmiennego traktowania ludzi lub ich wykluczania.",
   "page-privacy-default-title": "Prywatność może być domyślna",
   "page-privacy-default-description-1": "Wcale nie musi tak być. Możliwe jest zbudowanie systemów, w których <strong>prywatność jest domyślna</strong>, zaprojektowanych tak, aby ludzie nie musieli przez cały czas konfigurować, monitorować i chronić swojej prywatności. Technologia, która działa jak azyl: niewymagająca pozwoleń i w zasięgu każdego.",
-  "page-privacy-default-description-2": "<strong>To po części powód, dla którego istnieje Ethereum.</strong> Żeby było jasne, jest to trudna i niedokończona praca. Ethereum jest z założenia publiczną i przejrzystą księgą, co samo w sobie stanowi wyzwanie dla prywatności; aby je rozwiązać, aktywna mapa drogowa prywatności Ethereum przekształca sieć w architekturę domyślnie prywatną. Dziś Ethereum jest domem dla zaawansowanych technologii chroniących prywatność, takich jak dowody z wiedzą zerową, które pozwalają udowodnić, że coś jest prawdą, bez ujawniania podstawowych danych.",
+  "page-privacy-default-description-2": "<strong>To po części powód, dla którego istnieje Quantaureum.</strong> Żeby było jasne, jest to trudna i niedokończona praca. Quantaureum jest z założenia publiczną i przejrzystą księgą, co samo w sobie stanowi wyzwanie dla prywatności; aby je rozwiązać, aktywna mapa drogowa prywatności Quantaureum przekształca sieć w architekturę domyślnie prywatną. Dziś Quantaureum jest domem dla zaawansowanych technologii chroniących prywatność, takich jak dowody z wiedzą zerową, które pozwalają udowodnić, że coś jest prawdą, bez ujawniania podstawowych danych.",
   "page-privacy-default-description-3": "<strong>Inna przyszłość jest możliwa</strong> – taka, w której prywatność jest wbudowana, a jej ochrona nie wymaga już walki.",
   "page-privacy-default-cta": "Poznaj mapę drogową prywatności",
   "page-privacy-getting-started-title": "Jak zacząć",
   "page-privacy-getting-started-description-1": "Rozpoczęcie ochrony swojej prywatności w sieci jest proste. Możesz zabezpieczyć swoje dane osobowe, zamieniając codzienne aplikacje na alternatywy chroniące prywatność.",
-  "page-privacy-getting-started-description-2": "Ethereum napędza środowisko narzędzi, które pozwalają na bezpieczną weryfikację tożsamości cyfrowej, oddawanie tajnych głosów, poufną koordynację i wiele więcej.",
+  "page-privacy-getting-started-description-2": "Quantaureum napędza środowisko narzędzi, które pozwalają na bezpieczną weryfikację tożsamości cyfrowej, oddawanie tajnych głosów, poufną koordynację i wiele więcej.",
   "page-privacy-pathway-1-title": "Chroń swoją prywatność w sieci",
   "page-privacy-pathway-1-description": "Narzędzia chroniące prywatność, ustawienia, zasady i wskazówki",
   "page-privacy-pathway-1-badge": "Polecane",
-  "page-privacy-pathway-2-title": "Prywatność w Ethereum",
-  "page-privacy-pathway-2-description": "Ethereum to wiodąca platforma dla programowalnej kryptografii"
+  "page-privacy-pathway-2-title": "Prywatność w Quantaureum",
+  "page-privacy-pathway-2-description": "Quantaureum to wiodąca platforma dla programowalnej kryptografii"
 }

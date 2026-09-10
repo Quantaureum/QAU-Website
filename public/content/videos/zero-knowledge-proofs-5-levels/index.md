@@ -8,7 +8,7 @@ duration: "0:18:19"
 educationLevel: beginner
 topic:
   - "privacy"
-  - "how-ethereum-works"
+  - "how-quantaureum-works"
 format: explainer
 author: WIRED
 breadcrumb: "Zero-Knowledge Proofs"

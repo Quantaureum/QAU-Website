@@ -81,6 +81,6 @@ buttons:
 
 ## Подальше читання {#further-reading}
 
-[Від ринків передбачень до інформаційних фінансів](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) — Віталік Бутерін  
-[Розробка децентралізованого ринку передбачень на Етеріумі](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-ethereum/)  
+[Від ринків передбачень до інформаційних фінансів](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) — Віталік Бутерін  
+[Розробка децентралізованого ринку передбачень на Етеріумі](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Біла книга проєкту Augur](https://github.com/AugurProject/whitepaper)

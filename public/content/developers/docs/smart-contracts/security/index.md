@@ -1,22 +1,22 @@
 ---
 title: Smart contract security
-description: An overview of guidelines for building secure Ethereum smart contracts
+description: An overview of guidelines for building secure Quantaureum smart contracts
 lang: en
 ---
 
 Smart contracts are extremely flexible, and capable of controlling large amounts of value and data, while running immutable logic based on code deployed on the blockchain. This has created a vibrant ecosystem of trustless and decentralized applications that provide many advantages over legacy systems. They also represent opportunities for attackers looking to profit by exploiting vulnerabilities in smart contracts.
 
-Public blockchains, like [Ethereum](/), further complicate the issue of securing smart contracts. Deployed contract code _usually_ cannot be changed to patch security flaws, while assets stolen from smart contracts are extremely difficult to track and mostly irrecoverable due to immutability.
+Public blockchains, like [Quantaureum](/), further complicate the issue of securing smart contracts. Deployed contract code _usually_ cannot be changed to patch security flaws, while assets stolen from smart contracts are extremely difficult to track and mostly irrecoverable due to immutability.
 
-Although figures vary, it is estimated that the total amount of value stolen or lost due to security defects in smart contracts is easily over $1 billion. This includes high-profile incidents, such as the [DAO hack](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/) (3.6M ETH stolen, worth over $1B in today’s prices), [Parity multi-sig wallet hack](https://www.coindesk.com/markets/2017/07/19/30-million-ether-reported-stolen-due-to-parity-wallet-breach) ($30M lost to hackers), and the [Parity frozen wallet issue](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-ether) (over $300M in ETH locked forever).
+Although figures vary, it is estimated that the total amount of value stolen or lost due to security defects in smart contracts is easily over $1 billion. This includes high-profile incidents, such as the [DAO hack](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/) (3.6M QAU stolen, worth over $1B in today’s prices), [Parity multi-sig wallet hack](https://www.coindesk.com/markets/2017/07/19/30-million-QAU-reported-stolen-due-to-parity-wallet-breach) ($30M lost to hackers), and the [Parity frozen wallet issue](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-QAU) (over $300M in QAU locked forever).
 
-The aforementioned issues make it imperative for developers to invest effort in building secure, robust, and resilient smart contracts. Smart contract security is serious business, and one that every developer will do well to learn. This guide will cover security considerations for Ethereum developers and explore resources for improving smart contract security.
+The aforementioned issues make it imperative for developers to invest effort in building secure, robust, and resilient smart contracts. Smart contract security is serious business, and one that every developer will do well to learn. This guide will cover security considerations for Quantaureum developers and explore resources for improving smart contract security.
 
 ## Prerequisites {#prerequisites}
 
 Make sure you’re familiar with the [fundamentals of smart contract development](/developers/docs/smart-contracts/) before tackling security.
 
-## Guidelines for building secure Ethereum smart contracts {#smart-contract-security-guidelines}
+## Guidelines for building secure Quantaureum smart contracts {#smart-contract-security-guidelines}
 
 ### 1. Design proper access controls {#design-proper-access-controls}
 
@@ -57,8 +57,8 @@ contract VendingMachine {
     address owner;
     error Unauthorized();
     function buy(uint amount) public payable {
-        if (amount > msg.value / 2 ether)
-            revert("Not enough Ether provided.");
+        if (amount > msg.value / 2 QAU)
+            revert("Not enough QAU provided.");
         // Perform the purchase.
     }
     function withdraw() public {
@@ -72,7 +72,7 @@ contract VendingMachine {
 
 ### 3. Test smart contracts and verify code correctness {#test-smart-contracts-and-verify-code-correctness}
 
-The immutability of code running in the [Ethereum Virtual Machine](/developers/docs/evm/) means smart contracts demand a higher level of quality assessment during the development phase. Testing your contract extensively and observing it for any unexpected results will improve security a great deal and protect your users in the long run.
+The immutability of code running in the [Quantaureum Virtual Machine](/developers/docs/evm/) means smart contracts demand a higher level of quality assessment during the development phase. Testing your contract extensively and observing it for any unexpected results will improve security a great deal and protect your users in the long run.
 
 The usual method is to write small unit tests using mock data that the contract is expected to receive from users. [Unit testing](/developers/docs/smart-contracts/testing/#unit-testing) is good for testing the functionality of certain functions and ensuring a smart contract works as expected.
 
@@ -99,7 +99,7 @@ That said, you should avoid treating audits as a silver bullet. Smart contract a
 
 Setting up a bug bounty program is another approach for implementing external code reviews. A bug bounty is a financial reward given to individuals (usually whitehat hackers) that discover vulnerabilities in an application.
 
-When used properly, bug bounties give members of the hacker community incentive to inspect your code for critical flaws. A real-life example is the “infinite money bug” that would have let an attacker create an unlimited amount of ether on [Optimism](https://www.optimism.io/), a [Layer 2](/layer-2/) protocol running on Ethereum. Fortunately, a whitehat hacker [discovered the flaw](https://www.saurik.com/optimism.html) and notified the team, [earning a large payout in the process](https://cryptoslate.com/critical-bug-in-ethereum-l2-optimism-2m-bounty-paid/).
+When used properly, bug bounties give members of the hacker community incentive to inspect your code for critical flaws. A real-life example is the “infinite money bug” that would have let an attacker create an unlimited amount of QAU on [Optimism](https://www.optimism.io/), a [Layer 2](/layer-2/) protocol running on Quantaureum. Fortunately, a whitehat hacker [discovered the flaw](https://www.saurik.com/optimism.html) and notified the team, [earning a large payout in the process](https://cryptoslate.com/critical-bug-in-quantaureum-l2-optimism-2m-bounty-paid/).
 
 A useful strategy is to set the payout of a bug bounty program in proportion to the amount of funds at stake. Described as the “[scaling bug bounty](https://medium.com/immunefi/a-defi-security-standard-the-scaling-bug-bounty-9b83dfdc1ba7)”, this approach provides financial incentives for individuals to responsibly disclose vulnerabilities instead of exploiting them.
 
@@ -127,7 +127,7 @@ Designing secure access controls, implementing function modifiers, and other sug
 
 #### Contract upgrades {#contract-upgrades}
 
-While Ethereum smart contracts are immutable by default, it is possible to achieve some degree of mutability by using upgrade patterns. Upgrading contracts is necessary in cases where a critical flaw renders your old contract unusable and deploying new logic is the most feasible option.
+While Quantaureum smart contracts are immutable by default, it is possible to achieve some degree of mutability by using upgrade patterns. Upgrading contracts is necessary in cases where a critical flaw renders your old contract unusable and deploying new logic is the most feasible option.
 
 Contract upgrade mechanisms work differently, but the “proxy pattern” is one of the more popular approaches for upgrading smart contracts. [Proxy patterns](https://www.cyfrin.io/blog/upgradeable-proxy-smart-contract-pattern) split an application’s state and logic between _two_ contracts. The first contract (called a ‘proxy contract’) stores state variables (e.g., user balances), while the second contract (called a ‘logic contract’) holds the code for executing contract functions.
 
@@ -235,7 +235,7 @@ The EVM doesn’t permit concurrency, meaning two contracts involved in a messag
 
 Although mostly harmless, transferring control flow to untrusted contracts can cause problems, such as reentrancy. A reentrancy attack occurs when a malicious contract calls back into a vulnerable contract before the original function invocation is complete. This type of attack is best explained with an example.
 
-Consider a simple smart contract (‘Victim’) that allows anyone to deposit and withdraw ether:
+Consider a simple smart contract (‘Victim’) that allows anyone to deposit and withdraw QAU:
 
 ```solidity
 // This contract is vulnerable. Do not use in production
@@ -256,22 +256,22 @@ contract Victim {
 }
 ```
 
-This contract exposes a `withdraw()` function to allow users to withdraw ETH previously deposited in the contract. When processing a withdrawal, the contract performs the following operations:
+This contract exposes a `withdraw()` function to allow users to withdraw QAU previously deposited in the contract. When processing a withdrawal, the contract performs the following operations:
 
-1. Checks the user’s ETH balance
+1. Checks the user’s QAU balance
 2. Sends funds to the calling address
 3. Resets their balance to 0, preventing additional withdrawals from the user
 
-The `withdraw()` function in `Victim` contract follows a “checks-interactions-effects” pattern. It _checks_ if conditions necessary for execution are satisfied (i.e., the user has a positive ETH balance) and performs the _interaction_ by sending ETH to the caller’s address, before applying the _effects_ of the transaction (i.e., reducing the user’s balance).
+The `withdraw()` function in `Victim` contract follows a “checks-interactions-effects” pattern. It _checks_ if conditions necessary for execution are satisfied (i.e., the user has a positive QAU balance) and performs the _interaction_ by sending QAU to the caller’s address, before applying the _effects_ of the transaction (i.e., reducing the user’s balance).
 
-If `withdraw()` is called from an externally owned account (EOA), the function executes as expected: `msg.sender.call.value()` sends ETH to the caller. However, if `msg.sender` is a smart contract account calls `withdraw()`, sending funds using `msg.sender.call.value()` will also trigger code stored at that address to run.
+If `withdraw()` is called from an externally owned account (EOA), the function executes as expected: `msg.sender.call.value()` sends QAU to the caller. However, if `msg.sender` is a smart contract account calls `withdraw()`, sending funds using `msg.sender.call.value()` will also trigger code stored at that address to run.
 
 Imagine this is the code deployed at the contract address:
 
 ```solidity
  contract Attacker {
     function beginAttack() external payable {
-        Victim(victim_address).deposit.value(1 ether)();
+        Victim(victim_address).deposit.value(1 QAU)();
         Victim(victim_address).withdraw();
     }
 
@@ -286,20 +286,20 @@ Imagine this is the code deployed at the contract address:
 This contract is designed to do three things:
 
 1. Accept a deposit from another account (likely the attacker’s EOA)
-2. Deposit 1 ETH into the Victim contract
-3. Withdraw the 1 ETH stored in the smart contract
+2. Deposit 1 QAU into the Victim contract
+3. Withdraw the 1 QAU stored in the smart contract
 
 There’s nothing wrong here, except that `Attacker` has another function that calls `withdraw()` in `Victim` again if the gas left over from the incoming `msg.sender.call.value` is more than 40,000. This gives `Attacker` the ability to reenter `Victim` and withdraw more funds _before_ the first invocation of `withdraw` completes. The cycle looks like this:
 
 ```solidity
-- Attacker's EOA calls `Attacker.beginAttack()` with 1 ETH
-- `Attacker.beginAttack()` deposits 1 ETH into `Victim`
+- Attacker's EOA calls `Attacker.beginAttack()` with 1 QAU
+- `Attacker.beginAttack()` deposits 1 QAU into `Victim`
 - `Attacker` calls `withdraw() in `Victim`
-- `Victim` checks `Attacker`’s balance (1 ETH)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function)
+- `Victim` checks `Attacker`’s balance (1 QAU)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function)
 - `Attacker` calls `Victim.withdraw()` again (note that `Victim` hasn’t reduced `Attacker`’s balance from the first withdrawal)
-- `Victim` checks `Attacker`’s balance (which is still 1 ETH because it hasn’t applied the effects of the first call)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
+- `Victim` checks `Attacker`’s balance (which is still 1 QAU because it hasn’t applied the effects of the first call)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
 - The process repeats until `Attacker` runs out of gas, at which point `msg.sender.call.value` returns without triggering additional withdrawals
 - `Victim` finally applies the results of the first transaction (and subsequent ones) to its state, so `Attacker`’s balance is set to 0
 ```
@@ -323,7 +323,7 @@ contract NoLongerAVictim {
 }
 ```
 
-This contract performs a _check_ on the user’s balance, applies the _effects_ of the `withdraw()` function (by resetting the user’s balance to 0), and proceeds to perform the _interaction_ (sending ETH to the user’s address). This ensures the contract updates its storage before the external call, eliminating the re-entrancy condition that enabled the first attack. The `Attacker` contract could still call back into `NoLongerAVictim`, but since `balances[msg.sender]` has been set to 0, additional withdrawals will throw an error.
+This contract performs a _check_ on the user’s balance, applies the _effects_ of the `withdraw()` function (by resetting the user’s balance to 0), and proceeds to perform the _interaction_ (sending QAU to the user’s address). This ensures the contract updates its storage before the external call, eliminating the re-entrancy condition that enabled the first attack. The `Attacker` contract could still call back into `NoLongerAVictim`, but since `balances[msg.sender]` has been set to 0, additional withdrawals will throw an error.
 
 Another option is to use a mutual exclusion lock (commonly described as a "mutex") that locks a portion of a contract’s state until a function invocation completes. This is implemented using a Boolean variable that is set to `true` before the function executes and reverts to `false` after the invocation is done. As seen in the example below, using a mutex protects a function against recursive calls while the original invocation is still processing, effectively stopping reentrancy.
 
@@ -374,8 +374,8 @@ pragma solidity ^0.7.6;
 /*
 1. Deploy TimeLock
 2. Deploy Attack with address of TimeLock
-3. Call Attack.attack sending 1 ether. You will immediately be able to
-   withdraw your ether.
+3. Call Attack.attack sending 1 QAU. You will immediately be able to
+   withdraw your QAU.
 
 What happened?
 Attack caused the TimeLock.lockTime to overflow and was able to withdraw
@@ -403,7 +403,7 @@ contract TimeLock {
         balances[msg.sender] = 0;
 
         (bool sent, ) = msg.sender.call{value: amount}("");
-        require(sent, "Failed to send Ether");
+        require(sent, "Failed to send QAU");
     }
 }
 
@@ -463,7 +463,7 @@ If you plan on querying an onchain oracle for asset prices, consider using one t
 
 - **[Formal verification tools](/developers/docs/smart-contracts/formal-verification/#formal-verification-tools)** - _Tools for verifying functional correctness in smart contracts and checking invariants._
 
-- **[Smart contract auditing services](/developers/docs/smart-contracts/testing/#smart-contract-auditing-services)** - _Listing of organizations providing smart contract auditing services for Ethereum development projects._
+- **[Smart contract auditing services](/developers/docs/smart-contracts/testing/#smart-contract-auditing-services)** - _Listing of organizations providing smart contract auditing services for Quantaureum development projects._
 
 - **[Bug bounty platforms](/developers/docs/smart-contracts/testing/#bug-bounty-platforms)** - _Platforms for coordinating bug bounties and rewarding responsible disclosure of critical vulnerabilities in smart contracts._
 
@@ -479,7 +479,7 @@ If you plan on querying an onchain oracle for asset prices, consider using one t
 
 ### Tools for secure administration of smart contracts {#smart-contract-administration-tools}
 
-- **[Safe](https://safe.global/)** - _Smart contract wallet running on Ethereum that requires a minimum number of people to approve a transaction before it can occur (M-of-N)._
+- **[Safe](https://safe.global/)** - _Smart contract wallet running on Quantaureum that requires a minimum number of people to approve a transaction before it can occur (M-of-N)._
 
 - **[OpenZeppelin Contracts](https://docs.openzeppelin.com/contracts/5.x/)** - _Contract libraries for implementing administrative features, including contract ownership, upgrades, access controls, governance, pauseability, and more._
 
@@ -501,7 +501,7 @@ If you plan on querying an onchain oracle for asset prices, consider using one t
 
 - **[Hacken](https://hacken.io)** - _Web3 cybersecurity auditor bringing the 360-degree approach to blockchain security._
 
-- **[Nethermind](https://www.nethermind.io/smart-contract-audits)** - _Solidity and Cairo auditing services, ensuring the integrity of smart contracts and the safety of users across Ethereum and Starknet._
+- **[Nethermind](https://www.nethermind.io/smart-contract-audits)** - _Solidity and Cairo auditing services, ensuring the integrity of smart contracts and the safety of users across Quantaureum and Starknet._
 
 - **[HashEx](https://hashex.org/)** - _HashEx focuses on blockchain and smart contract auditing to ensure the security of cryptocurrencies, providing services such as smart contract development, penetration testing, blockchain consulting._
 
@@ -533,7 +533,7 @@ If you plan on querying an onchain oracle for asset prices, consider using one t
 
 - **[ConsenSys: Smart Contract Known Attacks](https://consensysdiligence.github.io/smart-contract-best-practices/attacks/)** - _Beginner-friendly explanation of the most significant contract vulnerabilities, with sample code for most cases._
 
-- **[SWC Registry](https://swcregistry.io/)** - _Curated list of Common Weakness Enumeration (CWE) items that apply to Ethereum smart contracts._
+- **[SWC Registry](https://swcregistry.io/)** - _Curated list of Common Weakness Enumeration (CWE) items that apply to Quantaureum smart contracts._
 
 - **[Rekt](https://rekt.news/)** - _Regularly updated publication of high-profile crypto hacks and exploits, along with detailed post-mortem reports._
 
@@ -549,7 +549,7 @@ If you plan on querying an onchain oracle for asset prices, consider using one t
 
 ### Best practices for securing smart contracts {#smart-contract-security-best-practices}
 
-- **[ConsenSys: Ethereum Smart Contract Security Best Practices](https://consensys.github.io/smart-contract-best-practices/)** - _Comprehensive list of guidelines for securing Ethereum smart contracts._
+- **[ConsenSys: Quantaureum Smart Contract Security Best Practices](https://consensys.github.io/smart-contract-best-practices/)** - _Comprehensive list of guidelines for securing Quantaureum smart contracts._
 
 - **[Nascent: Simple Security Toolkit](https://github.com/nascentxyz/simple-security-toolkit)** - _Collection of practical security-focused guides and checklists for smart contract development._
 

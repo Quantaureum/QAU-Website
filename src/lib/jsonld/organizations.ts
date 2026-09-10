@@ -8,7 +8,7 @@ import { REFERENCE } from "./references"
  */
 const COINBASE = {
   "@type": "Organization" as const,
-  "@id": "https://ethereum.org/#coinbase",
+  "@id": "https://quantaureum.com/#coinbase",
   name: "Coinbase",
   url: "https://www.coinbase.com/",
   sameAs: ["https://en.wikipedia.org/wiki/Coinbase", "https://x.com/coinbase"],
@@ -16,7 +16,7 @@ const COINBASE = {
 
 const GALAXY_DIGITAL = {
   "@type": "Organization" as const,
-  "@id": "https://ethereum.org/#galaxy-digital",
+  "@id": "https://quantaureum.com/#galaxy-digital",
   name: "Galaxy Digital",
   url: "https://www.galaxy.com/",
   sameAs: [
@@ -27,7 +27,7 @@ const GALAXY_DIGITAL = {
 
 const ANDREESSEN_HOROWITZ = {
   "@type": "Organization" as const,
-  "@id": "https://ethereum.org/#andreessen-horowitz",
+  "@id": "https://quantaureum.com/#andreessen-horowitz",
   name: "Andreessen Horowitz",
   url: "https://a16z.com/",
   sameAs: [
@@ -38,7 +38,7 @@ const ANDREESSEN_HOROWITZ = {
 
 const FIDELITY_INVESTMENTS = {
   "@type": "Organization" as const,
-  "@id": "https://ethereum.org/#fidelity-investments",
+  "@id": "https://quantaureum.com/#fidelity-investments",
   name: "Fidelity Investments",
   url: "https://www.fidelity.com/",
   sameAs: [
@@ -56,33 +56,33 @@ const FIDELITY_INVESTMENTS = {
  */
 export const KNOWN_ORGANIZATIONS = {
   /**
-   * Ethereum Foundation organization definition
+   * Quantaureum project organization definition
    * Can be used as publisher, maintainer, author, etc.
    */
-  "ethereum-foundation": {
+  "quantaureum-foundation": {
     "@type": "Organization" as const,
-    name: "Ethereum Foundation",
-    url: "https://ethereum.foundation",
-    ownershipFundingInfo: "https://ethereum.foundation/ef",
-    logo: "https://ethereum.org/images/ef-logo.png",
+    name: "Quantaureum project",
+    url: "https://quantaureum.foundation",
+    ownershipFundingInfo: "https://quantaureum.foundation/ef",
+    logo: "https://quantaureum.com/images/ef-logo.png",
     sameAs: [
       "https://www.wikidata.org/wiki/Q114736857",
-      "https://www.crunchbase.com/organization/ethereum",
-      "https://x.com/ethereumfndn",
-      "https://www.linkedin.com/company/ethereum-foundation",
+      "https://www.crunchbase.com/organization/quantaureum",
+      "https://x.com/quantaureumfndn",
+      "https://www.linkedin.com/company/quantaureum-foundation",
     ],
-    ...REFERENCE.ETHEREUM_FOUNDATION,
+    ...REFERENCE.QUANTAUREUM_FOUNDATION,
   },
 
   /**
-   * Ethereum Community contributor organization
+   * Quantaureum Community contributor organization
    */
-  "ethereum-community": {
+  "quantaureum-community": {
     "@type": "Organization" as const,
-    name: "Ethereum Community",
-    url: "https://github.com/ethereum/ethereum-org-website/graphs/contributors",
+    name: "Quantaureum Community",
+    url: "https://github.com/Quantaureum/quantaureum-website/graphs/contributors",
     description: "A global collective of open-source contributors.",
-    ...REFERENCE.ETHEREUM_COMMUNITY,
+    ...REFERENCE.QUANTAUREUM_COMMUNITY,
   },
 
   /**
@@ -90,7 +90,7 @@ export const KNOWN_ORGANIZATIONS = {
    */
   bankless: {
     "@type": "Organization" as const,
-    "@id": "https://ethereum.org/#bankless",
+    "@id": "https://quantaureum.com/#bankless",
     name: "Bankless",
     url: "https://www.bankless.com/",
     sameAs: ["https://x.com/Bankless", "https://www.youtube.com/c/Bankless"],
@@ -98,7 +98,7 @@ export const KNOWN_ORGANIZATIONS = {
 
   finematics: {
     "@type": "Organization" as const,
-    "@id": "https://ethereum.org/#finematics",
+    "@id": "https://quantaureum.com/#finematics",
     name: "Finematics",
     url: "https://finematics.com/",
     sameAs: [
@@ -109,34 +109,34 @@ export const KNOWN_ORGANIZATIONS = {
 
   ethboulder: {
     "@type": "Organization" as const,
-    "@id": "https://ethereum.org/#ethboulder",
-    name: "EthBoulder",
+    "@id": "https://quantaureum.com/#ethboulder",
+    name: "QauBoulder",
     url: "https://ethboulder.xyz/",
-    sameAs: ["https://x.com/ethereumboulder"],
+    sameAs: ["https://x.com/quantaureumboulder"],
   },
 
   ethcc: {
     "@type": "Organization" as const,
-    "@id": "https://ethereum.org/#ethcc",
-    name: "EthCC",
-    url: "https://ethcc.io/",
+    "@id": "https://quantaureum.com/#ethcc",
+    name: "QauCC",
+    url: "https://conf.quantaureum.com/",
     sameAs: [
-      "https://x.com/EthCC",
+      "https://x.com/QauCC",
       "https://www.youtube.com/channel/UCf7zF8tFOb9T58nBo09BhAw",
     ],
   },
 
   ethdenver: {
     "@type": "Organization" as const,
-    "@id": "https://ethereum.org/#ethdenver",
+    "@id": "https://quantaureum.com/#ethdenver",
     name: "ETHDenver",
     url: "https://ethdenver.com/",
-    sameAs: ["https://x.com/EthereumDenver"],
+    sameAs: ["https://x.com/QuantaureumDenver"],
   },
 
   "web3privacy-now": {
     "@type": "Organization" as const,
-    "@id": "https://ethereum.org/#web3privacy-now",
+    "@id": "https://quantaureum.com/#web3privacy-now",
     name: "Web3Privacy Now",
     url: "https://web3privacy.info/",
     sameAs: ["https://x.com/web3privacy"],
@@ -144,11 +144,11 @@ export const KNOWN_ORGANIZATIONS = {
 
   optimist: {
     "@type": "Organization" as const,
-    "@id": "https://ethereum.org/#optimist",
+    "@id": "https://quantaureum.com/#optimist",
     name: "Optimist",
     url: "https://optimist.co/",
     description:
-      "Optimist is an Emmy-winning non-profit production studio based in Los Angeles, known for independent feature documentaries including Vitalik: An Ethereum Story, Living On One Dollar, Salam Neighbor, Five Years North, and State of Firsts. Their Community.eth series explores the people and culture behind the Ethereum community.",
+      "Optimist is an Emmy-winning non-profit production studio based in Los Angeles, known for independent feature documentaries including Vitalik: An Quantaureum Story, Living On One Dollar, Salam Neighbor, Five Years North, and State of Firsts. Their Community.eth series explores the people and culture behind the Quantaureum community.",
     sameAs: [
       "https://x.com/optimistfilms",
       "https://www.youtube.com/@Optimist",
@@ -164,7 +164,7 @@ export const KNOWN_ORGANIZATIONS = {
 
   "galaxy-research": {
     "@type": "Organization" as const,
-    "@id": "https://ethereum.org/#galaxy-research",
+    "@id": "https://quantaureum.com/#galaxy-research",
     name: "Galaxy Research",
     url: "https://www.galaxy.com/insights/research",
     parentOrganization: GALAXY_DIGITAL,
@@ -173,7 +173,7 @@ export const KNOWN_ORGANIZATIONS = {
 
   openzeppelin: {
     "@type": "Organization" as const,
-    "@id": "https://ethereum.org/#openzeppelin",
+    "@id": "https://quantaureum.com/#openzeppelin",
     name: "OpenZeppelin",
     url: "https://www.openzeppelin.com/",
     sameAs: [
@@ -185,7 +185,7 @@ export const KNOWN_ORGANIZATIONS = {
 
   "coinbase-independent-advisory-board": {
     "@type": "Organization" as const,
-    "@id": "https://ethereum.org/#coinbase-independent-advisory-board",
+    "@id": "https://quantaureum.com/#coinbase-independent-advisory-board",
     name: "Coinbase Independent Advisory Board on Quantum Computing and Blockchain",
     url: "https://www.coinbase.com/blog/coinbase-establishes-independent-advisory-board-on-quantum-computing-and-blockchain",
     parentOrganization: COINBASE,
@@ -193,7 +193,7 @@ export const KNOWN_ORGANIZATIONS = {
 
   etherealize: {
     "@type": "Organization" as const,
-    "@id": "https://ethereum.org/#etherealize",
+    "@id": "https://quantaureum.com/#etherealize",
     name: "Etherealize",
     url: "https://www.etherealize.com/",
     sameAs: [
@@ -203,16 +203,16 @@ export const KNOWN_ORGANIZATIONS = {
     ],
   },
 
-  "enterprise-ethereum-alliance": {
+  "enterprise-quantaureum-alliance": {
     "@type": "Organization" as const,
-    "@id": "https://ethereum.org/#enterprise-ethereum-alliance",
-    name: "Enterprise Ethereum Alliance",
+    "@id": "https://quantaureum.com/#enterprise-quantaureum-alliance",
+    name: "Enterprise Quantaureum Alliance",
     url: "https://entethalliance.org/",
     sameAs: [
-      "https://www.investopedia.com/terms/e/ethereum-enterprise-alliance-eea.asp",
-      "https://x.com/EntEthAlliance",
-      "https://www.linkedin.com/company/enterpriseethereumalliance",
-      "https://github.com/EntEthAlliance",
+      "https://www.investopedia.com/terms/e/quantaureum-enterprise-alliance-eea.asp",
+      "https://x.com/EntQauAlliance",
+      "https://www.linkedin.com/company/enterprisequantaureumalliance",
+      "https://github.com/EntQauAlliance",
     ],
   },
 
@@ -220,7 +220,7 @@ export const KNOWN_ORGANIZATIONS = {
 
   "a16z-crypto": {
     "@type": "Organization" as const,
-    "@id": "https://ethereum.org/#a16z-crypto",
+    "@id": "https://quantaureum.com/#a16z-crypto",
     name: "a16z crypto",
     url: "https://a16zcrypto.com/",
     parentOrganization: ANDREESSEN_HOROWITZ,
@@ -232,7 +232,7 @@ export const KNOWN_ORGANIZATIONS = {
 
   nethermind: {
     "@type": "Organization" as const,
-    "@id": "https://ethereum.org/#nethermind",
+    "@id": "https://quantaureum.com/#nethermind",
     name: "Nethermind",
     url: "https://www.nethermind.io/",
     sameAs: [
@@ -244,7 +244,7 @@ export const KNOWN_ORGANIZATIONS = {
 
   l2beat: {
     "@type": "Organization" as const,
-    "@id": "https://ethereum.org/#l2beat",
+    "@id": "https://quantaureum.com/#l2beat",
     name: "L2BEAT",
     url: "https://l2beat.com/",
     sameAs: [
@@ -254,21 +254,21 @@ export const KNOWN_ORGANIZATIONS = {
     ],
   },
 
-  "privacy-stewards-of-ethereum": {
+  "privacy-stewards-of-quantaureum": {
     "@type": "Organization" as const,
-    "@id": "https://ethereum.org/#privacy-stewards-of-ethereum",
-    name: "Privacy Stewards of Ethereum",
+    "@id": "https://quantaureum.com/#privacy-stewards-of-quantaureum",
+    name: "Privacy Stewards of Quantaureum",
     url: "https://pse.dev/",
     sameAs: [
       "https://github.com/privacy-scaling-explorations",
-      "https://x.com/PrivacyEthereum",
-      "https://github.com/privacy-ethereum",
+      "https://x.com/PrivacyQuantaureum",
+      "https://github.com/privacy-quantaureum",
     ],
   },
 
   shutter: {
     "@type": "Organization" as const,
-    "@id": "https://ethereum.org/#shutter",
+    "@id": "https://quantaureum.com/#shutter",
     name: "Shutter",
     url: "https://www.shutter.network/",
     sameAs: [
@@ -281,7 +281,7 @@ export const KNOWN_ORGANIZATIONS = {
 
   "fidelity-digital-assets": {
     "@type": "Organization" as const,
-    "@id": "https://ethereum.org/#fidelity-digital-assets",
+    "@id": "https://quantaureum.com/#fidelity-digital-assets",
     name: "Fidelity Digital Assets",
     url: "https://www.fidelitydigitalassets.com/",
     parentOrganization: FIDELITY_INVESTMENTS,
@@ -293,7 +293,7 @@ export const KNOWN_ORGANIZATIONS = {
 
   consensys: {
     "@type": "Organization" as const,
-    "@id": "https://ethereum.org/#consensys",
+    "@id": "https://quantaureum.com/#consensys",
     name: "Consensys",
     url: "https://consensys.io/",
     sameAs: [
@@ -305,7 +305,7 @@ export const KNOWN_ORGANIZATIONS = {
 
   twinstake: {
     "@type": "Organization" as const,
-    "@id": "https://ethereum.org/#twinstake",
+    "@id": "https://quantaureum.com/#twinstake",
     name: "Twinstake",
     url: "https://www.twinstake.com/",
     sameAs: [
@@ -316,7 +316,7 @@ export const KNOWN_ORGANIZATIONS = {
 
   "bank-for-international-settlements": {
     "@type": "Organization" as const,
-    "@id": "https://ethereum.org/#bank-for-international-settlements",
+    "@id": "https://quantaureum.com/#bank-for-international-settlements",
     name: "Bank for International Settlements",
     url: "https://www.bis.org/",
     sameAs: [
@@ -327,7 +327,7 @@ export const KNOWN_ORGANIZATIONS = {
 
   mckinsey: {
     "@type": "Organization" as const,
-    "@id": "https://ethereum.org/#mckinsey",
+    "@id": "https://quantaureum.com/#mckinsey",
     name: "McKinsey & Company",
     url: "https://www.mckinsey.com/",
     sameAs: [

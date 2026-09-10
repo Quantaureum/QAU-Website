@@ -10,13 +10,13 @@ topic:
   - "privacy-and-security"
   - "privacy"
 format: presentation
-author: EthBoulder
+author: QauBoulder
 breadcrumb: "Kudai Tena Faragha"
 ---
 
-Hotuba kuu na **Naomi Brockwell** katika EthBoulder 2026 kuhusu mmomonyoko wa faragha ya kidijitali, miundombinu ya ufuatiliaji wa watu wengi, na zana za vitendo ambazo kila mtu anaweza kutumia kujenga maisha ya kidijitali yenye faragha zaidi, kuanzia VPN na barua pepe zenye usimbaji fiche hadi GrapheneOS na mixnets zilizogatuliwa.
+Hotuba kuu na **Naomi Brockwell** katika QauBoulder 2026 kuhusu mmomonyoko wa faragha ya kidijitali, miundombinu ya ufuatiliaji wa watu wengi, na zana za vitendo ambazo kila mtu anaweza kutumia kujenga maisha ya kidijitali yenye faragha zaidi, kuanzia VPN na barua pepe zenye usimbaji fiche hadi GrapheneOS na mixnets zilizogatuliwa.
 
-*Nakala hii ni nakala inayofikika ya [nakala asili ya video](https://www.youtube.com/watch?v=nvJSFR1Q_JE) iliyochapishwa na EthBoulder. Imehaririwa kidogo ili isomeke kwa urahisi.*
+*Nakala hii ni nakala inayofikika ya [nakala asili ya video](https://www.youtube.com/watch?v=nvJSFR1Q_JE) iliyochapishwa na QauBoulder. Imehaririwa kidogo ili isomeke kwa urahisi.*
 
 ### Mazungumzo ya sehemu mbili: onyo + suluhisho (00:00) {#two-part-talk-warning-solution-0000}
 

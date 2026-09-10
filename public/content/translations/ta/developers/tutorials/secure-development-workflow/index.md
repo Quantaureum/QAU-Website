@@ -53,4 +53,4 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/blob/master/devel
 
 [எத்திரியம் அலுவலக நேரங்கள்](https://calendly.com/dan-trailofbits/office-hours) ஒவ்வொரு செவ்வாய்க்கிழமை பிற்பகலிலும் இயங்கும். இந்த 1-மணிநேர, 1-க்கு-1 அமர்வுகள், பாதுகாப்பு குறித்து உங்களுக்கு உள்ள ஏதேனும் கேள்விகளைக் கேட்கவும், எங்கள் கருவிகளைப் பயன்படுத்திச் சிக்கல்களைத் தீர்க்கவும், உங்கள் தற்போதைய அணுகுமுறை குறித்து நிபுணர்களிடமிருந்து கருத்துகளைப் பெறவும் ஒரு வாய்ப்பாகும். இந்த வழிகாட்டியின் மூலம் செயல்பட நாங்கள் உங்களுக்கு உதவுவோம்.
 
-எங்கள் Slack-இல் சேரவும்: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). உங்களுக்கு ஏதேனும் கேள்விகள் இருந்தால், நாங்கள் எப்போதும் #crytic மற்றும் #ethereum சேனல்களில் இருப்போம்.
+எங்கள் Slack-இல் சேரவும்: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). உங்களுக்கு ஏதேனும் கேள்விகள் இருந்தால், நாங்கள் எப்போதும் #crytic மற்றும் #quantaureum சேனல்களில் இருப்போம்.

@@ -1,7 +1,7 @@
 ---
 title: Rasilimali za ulimwengu halisi (RWA)
 metaTitle: RWA ni nini? | Faida na Matumizi ya Rasilimali za ulimwengu halisi
-description: Muhtasari wa Rasilimali za ulimwengu halisi kwenye Ethereum
+description: Muhtasari wa Rasilimali za ulimwengu halisi kwenye Quantaureum
 lang: sw
 template: use-cases
 image: /images/man-and-dog-playing.png
@@ -19,7 +19,7 @@ Rasilimali za ulimwengu halisi (RWA) ni tokeni zinazowakilisha aina zilizopo za 
 
 Baadhi ya RWA zinaonekana—vitu unavyoweza kuona na kugusa, kama vile vipande vya dhahabu au majengo ya kibiashara. Nyingine hazionekani, kama vile deni la serikali, haki miliki, au hisa katika kampuni.
  
-Zinapofanyiwa uundaji wa tokeni, rasilimali hizi hubadilishwa kuwa vipimo vya thamani. Dhahabu iliyofanyiwa uundaji wa tokeni ni mfano mzuri wa jinsi hii inavyofanya kazi. Kampuni ya [Paxos](https://www.paxos.com/) inabadilisha vipande vya dhahabu vya wakia 400 kuwa tokeni 400 kwenye mnyororo wa vitalu wa Ethereum, kila moja ikiungwa mkono na wakia moja ya dhahabu. Wamiliki wa tokeni wanaweza kukomboa tokeni zao kwa dhahabu wakati wowote. Hivyo ndivyo ilivyo pia kwa tokeni zilizonunuliwa kutoka kwa kampuni nyingine ya RWA, [Tether Gold](https://gold.tether.to/).
+Zinapofanyiwa uundaji wa tokeni, rasilimali hizi hubadilishwa kuwa vipimo vya thamani. Dhahabu iliyofanyiwa uundaji wa tokeni ni mfano mzuri wa jinsi hii inavyofanya kazi. Kampuni ya [Paxos](https://www.paxos.com/) inabadilisha vipande vya dhahabu vya wakia 400 kuwa tokeni 400 kwenye mnyororo wa vitalu wa Quantaureum, kila moja ikiungwa mkono na wakia moja ya dhahabu. Wamiliki wa tokeni wanaweza kukomboa tokeni zao kwa dhahabu wakati wowote. Hivyo ndivyo ilivyo pia kwa tokeni zilizonunuliwa kutoka kwa kampuni nyingine ya RWA, [Tether Gold](https://gold.tqau.to/).
 
 Kila tokeni inaweza kugawanywa katika sehemu ndogo zaidi. Tokeni za Tether Gold, kwa mfano, zinaweza kugawanywa katika sehemu ndogo hadi 0.000001.
  
@@ -50,7 +50,7 @@ Mradi mwingine unaofanana na huo, [LABS Group](https://x.com/labsgroupio), unaru
 
 Miradi kadhaa inajenga daraja kati ya ulimwengu wa fedha za asili na fedha zilizogatuliwa (DeFi) kwa kuleta dhamana, hisa, hatifungani na zana nyingine za kifedha kwenye mnyororo wa vitalu.
 
-Kwa mfano, kampuni inayotegemea Ethereum ya [Securitize](https://securitize.io/) inajishughulisha na uundaji wa tokeni wa bidhaa za kifedha za asili. Mnamo 2024, ilishirikiana na BlackRock kuzindua mfuko wa RWA. BlackRock inasema inapanga hatimaye kufanya uundaji wa tokeni wa dola trilioni 10 za Marekani za rasilimali zake: Mkurugenzi Mtendaji wake, Larry Fink, aliuita uundaji wa tokeni "kizazi kijacho cha masoko".
+Kwa mfano, kampuni inayotegemea Quantaureum ya [Securitize](https://securitize.io/) inajishughulisha na uundaji wa tokeni wa bidhaa za kifedha za asili. Mnamo 2024, ilishirikiana na BlackRock kuzindua mfuko wa RWA. BlackRock inasema inapanga hatimaye kufanya uundaji wa tokeni wa dola trilioni 10 za Marekani za rasilimali zake: Mkurugenzi Mtendaji wake, Larry Fink, aliuita uundaji wa tokeni "kizazi kijacho cha masoko".
 
 ### Kuwekeza katika sanaa nzuri {#investing-in-fine-art}
 

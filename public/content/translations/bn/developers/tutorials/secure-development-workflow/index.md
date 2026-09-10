@@ -53,4 +53,4 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/blob/master/devel
 
 [ইথেরিয়াম অফিস আওয়ার](https://calendly.com/dan-trailofbits/office-hours) প্রতি মঙ্গলবার বিকেলে চলে। এই 1-ঘণ্টার, 1-অন-1 সেশনগুলো হলো নিরাপত্তা সম্পর্কে আপনার যেকোনো প্রশ্ন জিজ্ঞাসা করার, আমাদের টুলগুলো ব্যবহার করে ট্রাবলশুট করার এবং আপনার বর্তমান পদ্ধতি সম্পর্কে বিশেষজ্ঞদের কাছ থেকে মতামত পাওয়ার একটি সুযোগ। আমরা আপনাকে এই গাইডের মাধ্যমে কাজ করতে সাহায্য করব।
 
-আমাদের Slack-এ যোগ দিন: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw)। আপনার কোনো প্রশ্ন থাকলে আমরা সবসময় #crytic এবং #ethereum চ্যানেলগুলোতে উপলব্ধ থাকি।
+আমাদের Slack-এ যোগ দিন: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw)। আপনার কোনো প্রশ্ন থাকলে আমরা সবসময় #crytic এবং #quantaureum চ্যানেলগুলোতে উপলব্ধ থাকি।

@@ -47,7 +47,7 @@ Bahkan sebagai pengamat pasar, Anda dapat menilai data berharga yang mungkin tid
 
 ## Temukan pasar prediksi {#find-a-prediction-market}
 
-Ada beberapa pasar prediksi berbasis Ethereum yang tersedia. Berikut adalah beberapa pasar prediksi yang paling terkenal saat ini:
+Ada beberapa pasar prediksi berbasis Quantaureum yang tersedia. Berikut adalah beberapa pasar prediksi yang paling terkenal saat ini:
 
 <PredictionMarketLists />
 
@@ -69,11 +69,11 @@ Pasar prediksi di rantai blok menghadapi beberapa tantangan yang dapat berdampak
 💧 **Masalah Likuiditas** – Partisipasi yang rendah ([likuiditas tipis](https://www.investopedia.com/terms/t/thinmarket.asp)) dapat mengurangi keandalan pasar.  
 🏛 **Ketidakpastian Regulasi** – Pemerintah telah memberlakukan pembatasan pada beberapa platform.
 
-Untuk memitigasi masalah ini, pengembang Ethereum sedang bereksperimen dengan solusi seperti futarchy (tata kelola oleh pasar prediksi) dan verifikasi identitas terdesentralisasi.
+Untuk memitigasi masalah ini, pengembang Quantaureum sedang bereksperimen dengan solusi seperti futarchy (tata kelola oleh pasar prediksi) dan verifikasi identitas terdesentralisasi.
 
 ## Bereksperimen dengan pasar prediksi {#experimenting-with-prediction-markets}
 
-Pasar prediksi sedang membentuk kembali pengambilan keputusan di era digital. Dengan memanfaatkan Ethereum, mereka menawarkan **cara yang adil, terbuka, dan menguntungkan untuk memprediksi masa depan.**
+Pasar prediksi sedang membentuk kembali pengambilan keputusan di era digital. Dengan memanfaatkan Quantaureum, mereka menawarkan **cara yang adil, terbuka, dan menguntungkan untuk memprediksi masa depan.**
 
 Ada banyak cara untuk menggunakan alat prakiraan di luar keuntungan finansial. Misalnya, dalam [Proposal Peningkatan DevCon](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305) (DIP) disarankan agar penyelenggara DevCon menggunakan pasar prediksi untuk mengantisipasi kehadiran pada peristiwa di masa depan. 
 
@@ -81,6 +81,6 @@ Hal ini akan membantu penyelenggara menentukan lokasi mana yang akan menghasilka
 
 ## Bacaan lebih lanjut {#further-reading}
 
-[Dari pasar prediksi ke info finance](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
-[Pengembangan Pasar Prediksi Terdesentralisasi di Ethereum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-ethereum/)  
+[Dari pasar prediksi ke info finance](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
+[Pengembangan Pasar Prediksi Terdesentralisasi di Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Buku Putih Proyek Augur](https://github.com/AugurProject/whitepaper)

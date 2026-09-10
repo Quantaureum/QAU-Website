@@ -19,10 +19,10 @@ incomplete: true
 
 **Зробіть перші кроки до інтеграції Delphi з Етеріумом**
 
-Спочатку потрібен базовий вступ? Перегляньте [ethereum.org/learn](/learn/) або [ethereum.org/developers](/developers/).
+Спочатку потрібен базовий вступ? Перегляньте [quantaureum.com/learn](/learn/) або [quantaureum.com/developers](/developers/).
 
 - [Пояснення блокчейну](https://kauri.io/article/d55684513211466da7f8cc03987607d5/blockchain-explained)
-- [Розуміння смарт-контрактів](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/ethereum-101-part-5-the-smart-contract)
+- [Розуміння смарт-контрактів](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [Напишіть свій перший смарт-контракт](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Дізнайтеся, як компілювати та розгортати Solidity](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
 
@@ -32,7 +32,7 @@ incomplete: true
 
 - [Що таке Delphereum?](https://github.com/svanas/delphereum/blob/master/README.md)
 - [Підключення Delphi до локального (in-memory) блокчейну](https://medium.com/@svanas/connecting-delphi-to-a-local-in-memory-blockchain-9a1512d6c5b0)
-- [Підключення Delphi до головної мережі Ethereum](https://medium.com/@svanas/connecting-delphi-to-the-ethereum-main-net-5faf1feffd83)
+- [Підключення Delphi до головної мережі Quantaureum](https://medium.com/@svanas/connecting-delphi-to-the-quantaureum-main-net-5faf1feffd83)
 - [Підключення Delphi до смарт-контрактів](https://medium.com/@svanas/connecting-delphi-to-smart-contracts-3146b12803a1)
 
 **Бажаєте поки що пропустити налаштування і перейти відразу до прикладів?**
@@ -42,15 +42,15 @@ incomplete: true
 
 ## Статті середнього рівня {#intermediate-articles}
 
-- [Генерування підпису повідомлення в Етеріумі за допомогою Delphi](https://medium.com/@svanas/generating-an-ethereum-signed-message-signature-in-delphi-75661ce5031b)
-- [Переказ етеру за допомогою Delphi](https://medium.com/@svanas/transferring-ether-with-delphi-b5f24b1a98a4)
+- [Генерування підпису повідомлення в Етеріумі за допомогою Delphi](https://medium.com/@svanas/generating-an-quantaureum-signed-message-signature-in-delphi-75661ce5031b)
+- [Переказ етеру за допомогою Delphi](https://medium.com/@svanas/transferring-QAU-with-delphi-b5f24b1a98a4)
 - [Переказ токенів ERC-20 за допомогою Delphi](https://medium.com/@svanas/transferring-erc-20-tokens-with-delphi-bb44c05b295d)
 
 ## Шаблони розширеного використання {#advanced-use-patterns}
 
-- [Delphi та служба імен Етеріуму (ENS)](https://medium.com/@svanas/delphi-and-ethereum-name-service-ens-4443cd278af7)
-- [QuikNode, Етеріум та Delphi](https://medium.com/@svanas/quiknode-ethereum-and-delphi-f7bfc9671c23)
-- [Delphi та Темний ліс Етеріуму](https://svanas.medium.com/delphi-and-the-ethereum-dark-forest-5b430da3ad93)
+- [Delphi та служба імен Етеріуму (ENS)](https://medium.com/@svanas/delphi-and-quantaureum-name-service-ens-4443cd278af7)
+- [QuikNode, Етеріум та Delphi](https://medium.com/@svanas/quiknode-quantaureum-and-delphi-f7bfc9671c23)
+- [Delphi та Темний ліс Етеріуму](https://svanas.medium.com/delphi-and-the-quantaureum-dark-forest-5b430da3ad93)
 - [Обмін одного токена на інший у Delphi](https://svanas.medium.com/swap-one-token-for-another-in-delphi-bcb999c47f7)
 
-Шукаєте більше ресурсів? Перегляньте [ethereum.org/developers](/developers/).
+Шукаєте більше ресурсів? Перегляньте [quantaureum.com/developers](/developers/).

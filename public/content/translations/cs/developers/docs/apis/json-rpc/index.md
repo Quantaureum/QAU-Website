@@ -6,7 +6,7 @@ lang: cs
 
 Aby mohla softwarová aplikace komunikovat s blockchainem [Etherea](/) – ať už čtením dat z blockchainu, nebo odesíláním transakcí do sítě – musí se připojit k uzlu Etherea.
 
-Za tímto účelem implementuje každý [klient Etherea](/developers/docs/nodes-and-clients/#execution-clients) [specifikaci JSON-RPC](https://github.com/ethereum/execution-apis), takže existuje jednotná sada metod, na které se mohou aplikace spolehnout bez ohledu na konkrétní implementaci uzlu nebo klienta.
+Za tímto účelem implementuje každý [klient Etherea](/developers/docs/nodes-and-clients/#execution-clients) [specifikaci JSON-RPC](https://github.com/quantaureum/execution-apis), takže existuje jednotná sada metod, na které se mohou aplikace spolehnout bez ohledu na konkrétní implementaci uzlu nebo klienta.
 
 [JSON-RPC](https://www.jsonrpc.org/specification) je bezstavový, odlehčený protokol pro vzdálené volání procedur (RPC). Definuje několik datových struktur a pravidla pro jejich zpracování. Je nezávislý na transportní vrstvě v tom smyslu, že jeho koncepty lze použít v rámci stejného procesu, přes sockety, přes HTTP nebo v mnoha různých prostředích pro předávání zpráv. Jako datový formát používá JSON (RFC 4627).
 
@@ -20,13 +20,13 @@ Ačkoli se můžete rozhodnout komunikovat s klienty Etherea přímo přes JSON-
 
 ## API konsensuálních klientů {#consensus-clients}
 
-Tato stránka se zabývá především JSON-RPC API, které používají exekuční klienti Etherea. Nicméně konsensuální klienti mají také RPC API, které uživatelům umožňuje dotazovat se na informace o uzlu, vyžadovat Beacon bloky, Beacon stav a další informace související s konsensem přímo z uzlu. Toto API je zdokumentováno na [webové stránce Beacon API](https://ethereum.github.io/beacon-APIs/#/).
+Tato stránka se zabývá především JSON-RPC API, které používají exekuční klienti Etherea. Nicméně konsensuální klienti mají také RPC API, které uživatelům umožňuje dotazovat se na informace o uzlu, vyžadovat Beacon bloky, Beacon stav a další informace související s konsensem přímo z uzlu. Toto API je zdokumentováno na [webové stránce Beacon API](https://quantaureum.github.io/beacon-APIs/#/).
 
-Pro komunikaci mezi klienty v rámci uzlu se používá také interní API – to znamená, že umožňuje konsensuálnímu klientovi a exekučnímu klientovi vyměňovat si data. Nazývá se „Engine API“ a jeho specifikace jsou k dispozici na [GitHubu](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
+Pro komunikaci mezi klienty v rámci uzlu se používá také interní API – to znamená, že umožňuje konsensuálnímu klientovi a exekučnímu klientovi vyměňovat si data. Nazývá se „Engine API“ a jeho specifikace jsou k dispozici na [GitHubu](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md).
 
 ## Specifikace exekučního klienta {#spec}
 
-[Přečtěte si úplnou specifikaci JSON-RPC API na GitHubu](https://github.com/ethereum/execution-apis). Toto API je dokumentováno na [webové stránce Execution API](https://ethereum.github.io/execution-apis/) a obsahuje nástroj Inspector pro vyzkoušení všech dostupných metod.
+[Přečtěte si úplnou specifikaci JSON-RPC API na GitHubu](https://github.com/quantaureum/execution-apis). Toto API je dokumentováno na [webové stránce Execution API](https://quantaureum.github.io/execution-apis/) a obsahuje nástroj Inspector pro vyzkoušení všech dostupných metod.
 
 ## Konvence {#conventions}
 
@@ -62,11 +62,11 @@ Zde je několik příkladů:
 
 Následující metody mají parametr bloku:
 
-- [eth_getBalance](#eth-getbalance)
-- [eth_getCode](#eth-getcode)
-- [eth_getTransactionCount](#eth-gettransactioncount)
-- [eth_getStorageAt](#eth-getstorageat)
-- [eth_call](#eth-call)
+- [qau_getBalance](#qau-getbalance)
+- [qau_getCode](#qau-getcode)
+- [qau_getTransactionCount](#qau-gettransactioncount)
+- [qau_getStorageAt](#qau-getstorageat)
+- [qau_call](#qau-call)
 
 Když jsou vzneseny požadavky, které dotazují stav Etherea, poskytnutý parametr bloku určuje výšku bloku.
 
@@ -95,46 +95,46 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 ## Gossip, stav a historie {#gossip-state-history}
 
-Několik základních metod JSON-RPC vyžaduje data ze sítě Ethereum a úhledně spadá do tří hlavních kategorií: _Gossip, stav a historie_. Pomocí odkazů v těchto sekcích můžete přeskočit na jednotlivé metody, nebo použijte obsah k prozkoumání celého seznamu metod.
+Několik základních metod JSON-RPC vyžaduje data ze sítě Quantaureum a úhledně spadá do tří hlavních kategorií: _Gossip, stav a historie_. Pomocí odkazů v těchto sekcích můžete přeskočit na jednotlivé metody, nebo použijte obsah k prozkoumání celého seznamu metod.
 
 ### Gossip metody {#gossip-methods}
 
 > Tyto metody sledují vrchol řetězce. Tímto způsobem se transakce šíří po síti, dostávají se do bloků a klienti se dozvídají o nových blocích.
 
-- [eth_blockNumber](#eth-blocknumber)
-- [eth_sendRawTransaction](#eth-sendrawtransaction)
+- [qau_blockNumber](#qau-blocknumber)
+- [qau_sendRawTransaction](#qau-sendrawtransaction)
 
 ### Stavové metody {#state-methods}
 
 > Metody, které informují o aktuálním stavu všech uložených dat. „Stav“ je jako jedna velká sdílená paměť RAM a zahrnuje zůstatky na účtech, data kontraktů a odhady gasu.
 
-- [eth_getBalance](#eth-getbalance)
-- [eth_getStorageAt](#eth-getstorageat)
-- [eth_getTransactionCount](#eth-gettransactioncount)
-- [eth_getCode](#eth-getcode)
-- [eth_call](#eth-call)
-- [eth_estimateGas](#eth-estimategas)
+- [qau_getBalance](#qau-getbalance)
+- [qau_getStorageAt](#qau-getstorageat)
+- [qau_getTransactionCount](#qau-gettransactioncount)
+- [qau_getCode](#qau-getcode)
+- [qau_call](#qau-call)
+- [qau_estimateGas](#qau-estimategas)
 
 ### Historické metody {#history-methods}
 
 > Získávají historické záznamy každého bloku až po genesis blok. Je to jako jeden velký soubor, do kterého lze pouze přidávat (append-only), a obsahuje všechny hlavičky bloků, těla bloků, uncle bloky a stvrzenky transakcí.
 
-- [eth_getBlockTransactionCountByHash](#eth-getblocktransactioncountbyhash)
-- [eth_getBlockTransactionCountByNumber](#eth-getblocktransactioncountbynumber)
-- [eth_getUncleCountByBlockHash](#eth-getunclecountbyblockhash)
-- [eth_getUncleCountByBlockNumber](#eth-getunclecountbyblocknumber)
-- [eth_getBlockByHash](#eth-getblockbyhash)
-- [eth_getBlockByNumber](#eth-getblockbynumber)
-- [eth_getTransactionByHash](#eth-gettransactionbyhash)
-- [eth_getTransactionByBlockHashAndIndex](#eth-gettransactionbyblockhashandindex)
-- [eth_getTransactionByBlockNumberAndIndex](#eth-gettransactionbyblocknumberandindex)
-- [eth_getTransactionReceipt](#eth-gettransactionreceipt)
-- [eth_getUncleByBlockHashAndIndex](#eth-getunclebyblockhashandindex)
-- [eth_getUncleByBlockNumberAndIndex](#eth-getunclebyblocknumberandindex)
+- [qau_getBlockTransactionCountByHash](#qau-getblocktransactioncountbyhash)
+- [qau_getBlockTransactionCountByNumber](#qau-getblocktransactioncountbynumber)
+- [qau_getUncleCountByBlockHash](#qau-getunclecountbyblockhash)
+- [qau_getUncleCountByBlockNumber](#qau-getunclecountbyblocknumber)
+- [qau_getBlockByHash](#qau-getblockbyhash)
+- [qau_getBlockByNumber](#qau-getblockbynumber)
+- [qau_getTransactionByHash](#qau-gettransactionbyhash)
+- [qau_getTransactionByBlockHashAndIndex](#qau-gettransactionbyblockhashandindex)
+- [qau_getTransactionByBlockNumberAndIndex](#qau-gettransactionbyblocknumberandindex)
+- [qau_getTransactionReceipt](#qau-gettransactionreceipt)
+- [qau_getUncleByBlockHashAndIndex](#qau-getunclebyblockhashandindex)
+- [qau_getUncleByBlockNumberAndIndex](#qau-getunclebyblocknumberandindex)
 
 ## JSON-RPC API Playground {#json-rpc-api-playground}
 
-Můžete použít [nástroj playground](https://ethereum-json-rpc.com) k objevování a vyzkoušení metod API. Také vám ukáže, které metody a sítě jsou podporovány různými poskytovateli uzlů.
+Můžete použít [nástroj playground](https://quantaureum-json-rpc.com) k objevování a vyzkoušení metod API. Také vám ukáže, které metody a sítě jsou podporovány různými poskytovateli uzlů.
 
 ## Metody JSON-RPC API {#json-rpc-methods}
 
@@ -206,7 +206,7 @@ Vrací aktuální ID sítě.
 
 Úplný seznam aktuálních ID sítí je k dispozici na [chainlist.org](https://chainlist.org). Mezi ty běžné patří:
 
-- `1`: Ethereum Mainnet
+- `1`: Quantaureum Mainnet
 - `11155111`: Sepolia testnet
 - `560048` : Hoodi testnet
 
@@ -273,9 +273,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 }
 ```
 
-### eth_protocolVersion {#eth-protocolversion}
+### qau_protocolVersion {#qau-protocolversion}
 
-Vrací aktuální verzi protokolu Ethereum. Vezměte na vědomí, že tato metoda [není dostupná v Gethu](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924).
+Vrací aktuální verzi protokolu Quantaureum. Vezměte na vědomí, že tato metoda [není dostupná v Gethu](https://github.com/quantaureum/go-quantaureum/pull/22064#issuecomment-788682924).
 
 **Parametry**
 
@@ -283,13 +283,13 @@ Vrací aktuální verzi protokolu Ethereum. Vezměte na vědomí, že tato metod
 
 **Vrací**
 
-`String` - Aktuální verze protokolu Ethereum
+`String` - Aktuální verze protokolu Quantaureum
 
 **Příklad**
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[],"id":67}'
 // Výsledek
 {
   "id":67,
@@ -298,11 +298,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 }
 ```
 
-### eth_syncing {#eth-syncing}
+### qau_syncing {#qau-syncing}
 
 Vrací objekt s daty o stavu synchronizace nebo `false`.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_syncing">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_syncing">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -317,7 +317,7 @@ Přesná návratová data se liší mezi implementacemi klientů. Všichni klien
 `Object|Boolean`, Objekt s daty o stavu synchronizace nebo `FALSE`, když se nesynchronizuje:
 
 - `startingBlock`: `QUANTITY` - Blok, na kterém začal import (bude resetováno pouze poté, co synchronizace dosáhne svého vrcholu)
-- `currentBlock`: `QUANTITY` - Aktuální blok, stejné jako eth_blockNumber
+- `currentBlock`: `QUANTITY` - Aktuální blok, stejné jako qau_blockNumber
 - `highestBlock`: `QUANTITY` - Odhadovaný nejvyšší blok
 
 Jednotliví klienti však mohou poskytovat i další data. Například Geth vrací následující:
@@ -367,7 +367,7 @@ Další podrobnosti naleznete v dokumentaci vašeho konkrétního klienta.
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}'
 // Výsledek
 {
   "id":1,
@@ -386,11 +386,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}
 }
 ```
 
-### eth_coinbase {#eth-coinbase}
+### qau_coinbase {#qau-coinbase}
 
 Vrací adresu coinbase klienta.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_coinbase">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_coinbase">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -408,7 +408,7 @@ Vrací adresu coinbase klienta.
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":64}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":64}'
 // Výsledek
 {
   "id":64,
@@ -417,11 +417,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":6
 }
 ```
 
-### eth_chainId {#eth-chainid}
+### qau_chainId {#qau-chainid}
 
 Vrací ID řetězce používané pro podepisování transakcí chráněných proti znovupřehrání.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_chainId">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_chainId">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -437,7 +437,7 @@ Vrací ID řetězce používané pro podepisování transakcí chráněných pro
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67}'
 // Výsledek
 {
   "id":67,
@@ -446,11 +446,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67
 }
 ```
 
-### eth_mining {#eth-mining}
+### qau_mining {#qau-mining}
 
 Vrací `true`, pokud klient aktivně těží nové bloky. Toto může vrátit `true` pouze pro sítě s důkazem prací (PoW) a od [Merge](/roadmap/merge/) to v některých klientech nemusí být dostupné.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_mining">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_mining">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -466,7 +466,7 @@ Vrací `true`, pokud klient aktivně těží nové bloky. Toto může vrátit `t
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}'
 //
 {
   "id":71,
@@ -475,11 +475,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}
 }
 ```
 
-### eth_hashrate {#eth-hashrate}
+### qau_hashrate {#qau-hashrate}
 
 Vrací počet hashů za sekundu, se kterými uzel těží. Toto může vrátit `true` pouze pro sítě využívající důkaz prací (PoW) a v některých klientech to nemusí být dostupné od [Merge](/roadmap/merge/).
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_hashrate">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_hashrate">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -495,7 +495,7 @@ Vrací počet hashů za sekundu, se kterými uzel těží. Toto může vrátit `
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":71}'
 // Výsledek
 {
   "id":71,
@@ -504,11 +504,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":7
 }
 ```
 
-### eth_gasPrice {#eth-gasprice}
+### qau_gasPrice {#qau-gasprice}
 
 Vrací odhad aktuální ceny za gas ve Wei. Například klient Besu standardně prozkoumá posledních 100 bloků a vrátí mediánovou cenu za jednotku gasu.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_gasPrice">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_gasPrice">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -524,7 +524,7 @@ Vrací odhad aktuální ceny za gas ve Wei. Například klient Besu standardně 
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":73}'
 // Výsledek
 {
   "id":73,
@@ -533,11 +533,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":7
 }
 ```
 
-### eth_accounts {#eth-accounts}
+### qau_accounts {#qau-accounts}
 
 Vrací seznam adres vlastněných klientem.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_accounts">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_accounts">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -553,7 +553,7 @@ Vrací seznam adres vlastněných klientem.
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1}'
 // Výsledek
 {
   "id":1,
@@ -562,11 +562,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1
 }
 ```
 
-### eth_blockNumber {#eth-blocknumber}
+### qau_blockNumber {#qau-blocknumber}
 
 Vrací číslo nejnovějšího bloku.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_blockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_blockNumber">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -582,7 +582,7 @@ Vrací číslo nejnovějšího bloku.
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":83}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id":83}'
 // Výsledek
 {
   "id":83,
@@ -591,11 +591,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id
 }
 ```
 
-### eth_getBalance {#eth-getbalance}
+### qau_getBalance {#qau-getbalance}
 
 Vrací zůstatek účtu na dané adrese.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBalance">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBalance">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -616,7 +616,7 @@ params: ["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"]
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
 // Výsledek
 {
   "id":1,
@@ -625,11 +625,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407
 }
 ```
 
-### eth_getStorageAt {#eth-getstorageat}
+### qau_getStorageAt {#qau-getstorageat}
 
 Vrací hodnotu z pozice úložiště na dané adrese.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getStorageAt">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getStorageAt">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -660,7 +660,7 @@ contract Storage {
 Získání hodnoty pos0 je přímočaré:
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 ```
 
@@ -693,15 +693,15 @@ undefined
 Nyní k načtení úložiště:
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-### eth_getTransactionCount {#eth-gettransactioncount}
+### qau_getTransactionCount {#qau-gettransactioncount}
 
 Vrací počet transakcí _odeslaných_ z dané adresy.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionCount">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionCount">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -725,7 +725,7 @@ params: [
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
 // Výsledek
 {
   "id":1,
@@ -734,11 +734,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params
 }
 ```
 
-### eth_getBlockTransactionCountByHash {#eth-getblocktransactioncountbyhash}
+### qau_getBlockTransactionCountByHash {#qau-getblocktransactioncountbyhash}
 
 Vrací počet transakcí v bloku, který odpovídá zadanému hashi bloku.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -758,7 +758,7 @@ params: ["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"]
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
 // Výsledek
 {
   "id":1,
@@ -767,11 +767,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHa
 }
 ```
 
-### eth_getBlockTransactionCountByNumber {#eth-getblocktransactioncountbynumber}
+### qau_getBlockTransactionCountByNumber {#qau-getblocktransactioncountbynumber}
 
 Vrací počet transakcí v bloku odpovídajícím zadanému číslu bloku.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -793,7 +793,7 @@ params: [
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
 // Výsledek
 {
   "id":1,
@@ -802,11 +802,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNu
 }
 ```
 
-### eth_getUncleCountByBlockHash {#eth-getunclecountbyblockhash}
+### qau_getUncleCountByBlockHash {#qau-getunclecountbyblockhash}
 
 Vrací počet uncle bloků v bloku odpovídajícím zadanému hashi bloku.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -826,7 +826,7 @@ params: ["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"]
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
 // Výsledek
 {
   "id":1,
@@ -835,11 +835,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","p
 }
 ```
 
-### eth_getUncleCountByBlockNumber {#eth-getunclecountbyblocknumber}
+### qau_getUncleCountByBlockNumber {#qau-getunclecountbyblocknumber}
 
 Vrací počet uncle bloků v bloku odpovídajícím zadanému číslu bloku.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -861,7 +861,7 @@ params: [
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
 // Výsledek
 {
   "id":1,
@@ -870,11 +870,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber",
 }
 ```
 
-### eth_getCode {#eth-getcode}
+### qau_getCode {#qau-getcode}
 
 Vrací kód na dané adrese.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getCode">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getCode">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -898,7 +898,7 @@ params: [
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
 // Výsledek
 {
   "id":1,
@@ -907,11 +907,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA
 }
 ```
 
-### eth_sign {#eth-sign}
+### qau_sign {#qau-sign}
 
-Metoda sign vypočítá specifický podpis pro Ethereum pomocí: `sign(keccak256("\x19Ethereum Signed Message:\n" + len(message) + message)))`.
+Metoda sign vypočítá specifický podpis pro Quantaureum pomocí: `sign(keccak256("\x19Quantaureum Signed Message:\n" + len(message) + message)))`.
 
-Přidáním předpony ke zprávě se vypočítaný podpis stane rozpoznatelným jako specifický podpis pro Ethereum. To zabraňuje zneužití, kdy by škodlivá decentralizovaná aplikace (dapp) mohla podepsat libovolná data (např. transakci) a použít podpis k vydávání se za oběť.
+Přidáním předpony ke zprávě se vypočítaný podpis stane rozpoznatelným jako specifický podpis pro Quantaureum. To zabraňuje zneužití, kdy by škodlivá decentralizovaná aplikace (dapp) mohla podepsat libovolná data (např. transakci) a použít podpis k vydávání se za oběť.
 
 Poznámka: adresa, kterou se má podepisovat, musí být odemčená.
 
@@ -928,7 +928,7 @@ Poznámka: adresa, kterou se má podepisovat, musí být odemčená.
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
 // Výsledek
 {
   "id":1,
@@ -937,9 +937,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d37
 }
 ```
 
-### eth_signTransaction {#eth-signtransaction}
+### qau_signTransaction {#qau-signtransaction}
 
-Podepíše transakci, která může být později odeslána do sítě pomocí [eth_sendRawTransaction](#eth-sendrawtransaction).
+Podepíše transakci, která může být později odeslána do sítě pomocí [qau_sendRawTransaction](#qau-sendrawtransaction).
 
 **Parametry**
 
@@ -962,7 +962,7 @@ Podepíše transakci, která může být později odeslána do sítě pomocí [e
 
 ```js
 // Požadavek
-curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
+curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "qau_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
 // Výsledek
 {
     "id": 1,
@@ -971,7 +971,7 @@ curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","
 }
 ```
 
-### eth_sendTransaction {#eth-sendtransaction}
+### qau_sendTransaction {#qau-sendtransaction}
 
 Vytvoří novou transakci volání zprávy nebo vytvoření kontraktu, pokud datové pole obsahuje kód, a podepíše ji pomocí účtu specifikovaného v `from`.
 
@@ -1005,13 +1005,13 @@ params: [
 
 `DATA`, 32 bajtů - hash transakce, nebo nulový hash, pokud transakce ještě není k dispozici.
 
-Pro získání adresy kontraktu (pokud jste kontrakt vytvořili) použijte [eth_getTransactionReceipt](#eth-gettransactionreceipt) poté, co byla transakce navržena v bloku.
+Pro získání adresy kontraktu (pokud jste kontrakt vytvořili) použijte [qau_getTransactionReceipt](#qau-gettransactionreceipt) poté, co byla transakce navržena v bloku.
 
 **Příklad**
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendTransaction","params":[{see above}],"id":1}'
 // Výsledek
 {
   "id":1,
@@ -1020,7 +1020,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{
 }
 ```
 
-### eth_sendRawTransaction {#eth-sendrawtransaction}
+### qau_sendRawTransaction {#qau-sendrawtransaction}
 
 Vytváří novou transakci volání zprávy nebo vytvoření kontraktu pro podepsané transakce.
 
@@ -1038,13 +1038,13 @@ params: [
 
 `DATA`, 32 bajtů - hash transakce, nebo nulový hash, pokud transakce ještě není k dispozici.
 
-Pokud jste vytvořili kontrakt, použijte [eth_getTransactionReceipt](#eth-gettransactionreceipt) k získání adresy kontraktu poté, co byla transakce navržena v bloku.
+Pokud jste vytvořili kontrakt, použijte [qau_getTransactionReceipt](#qau-gettransactionreceipt) k získání adresy kontraktu poté, co byla transakce navržena v bloku.
 
 **Příklad**
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params":[{see above}],"id":1}'
 // Výsledek
 {
   "id":1,
@@ -1053,11 +1053,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 }
 ```
 
-### eth_call {#eth-call}
+### qau_call {#qau-call}
 
 Okamžitě provede nové volání zprávy bez vytvoření transakce na blockchainu. Často se používá k provádění funkcí chytrých kontraktů pouze pro čtení, například `balanceOf` pro kontrakt ERC-20.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_call">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_call">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -1067,10 +1067,10 @@ Okamžitě provede nové volání zprávy bez vytvoření transakce na blockchai
 
 - `from`: `DATA`, 20 bajtů - (volitelné) Adresa, ze které je transakce odeslána.
 - `to`: `DATA`, 20 bajtů - Adresa, na kterou je transakce směrována.
-- `gas`: `QUANTITY` - (volitelné) Celé číslo udávající gas poskytnutý pro provedení transakce. eth_call nespotřebovává žádný gas, ale tento parametr může být u některých spuštění vyžadován.
+- `gas`: `QUANTITY` - (volitelné) Celé číslo udávající gas poskytnutý pro provedení transakce. qau_call nespotřebovává žádný gas, ale tento parametr může být u některých spuštění vyžadován.
 - `gasPrice`: `QUANTITY` - (volitelné) Celé číslo udávající gasPrice použitou pro každý zaplacený gas
 - `value`: `QUANTITY` - (volitelné) Celé číslo udávající hodnotu odeslanou s touto transakcí
-- `input`: `DATA` - (volitelné) Hash podpisu metody a zakódovaných parametrů. Podrobnosti viz [Ethereum Contract ABI v dokumentaci Solidity](https://docs.soliditylang.org/en/latest/abi-spec.html).
+- `input`: `DATA` - (volitelné) Hash podpisu metody a zakódovaných parametrů. Podrobnosti viz [Quantaureum Contract ABI v dokumentaci Solidity](https://docs.soliditylang.org/en/latest/abi-spec.html).
 
 2. `QUANTITY|TAG` - celé číslo bloku, nebo řetězec `"latest"`, `"earliest"`, `"pending"`, `"safe"` nebo `"finalized"`, viz [parametr bloku](/developers/docs/apis/json-rpc/#block-parameter)
 
@@ -1082,7 +1082,7 @@ Okamžitě provede nové volání zprávy bez vytvoření transakce na blockchai
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}],"id":1}'
 // Výsledek
 {
   "id":1,
@@ -1091,17 +1091,17 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}]
 }
 ```
 
-### eth_estimateGas {#eth-estimategas}
+### qau_estimateGas {#qau-estimategas}
 
 Generuje a vrací odhad toho, kolik gasu je potřeba k dokončení transakce. Transakce nebude přidána na blockchain. Vezměte na vědomí, že odhad může být z různých důvodů, včetně mechanismů EVM a výkonu uzlu, výrazně vyšší než množství gasu skutečně spotřebovaného transakcí.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_estimateGas">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_estimateGas">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
 **Parametry**
 
-Viz parametry [eth_call](#eth-call) s tím rozdílem, že všechny vlastnosti jsou volitelné. Pokud není specifikován žádný limit plynu, geth použije jako horní hranici limit plynu z čekajícího bloku. V důsledku toho vrácený odhad nemusí stačit k provedení volání/transakce, pokud je množství gasu vyšší než limit plynu čekajícího bloku.
+Viz parametry [qau_call](#qau-call) s tím rozdílem, že všechny vlastnosti jsou volitelné. Pokud není specifikován žádný limit plynu, geth použije jako horní hranici limit plynu z čekajícího bloku. V důsledku toho vrácený odhad nemusí stačit k provedení volání/transakce, pokud je množství gasu vyšší než limit plynu čekajícího bloku.
 
 **Vrací**
 
@@ -1111,7 +1111,7 @@ Viz parametry [eth_call](#eth-call) s tím rozdílem, že všechny vlastnosti js
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see above}],"id":1}'
 // Výsledek
 {
   "id":1,
@@ -1120,11 +1120,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see 
 }
 ```
 
-### eth_getBlockByHash {#eth-getblockbyhash}
+### qau_getBlockByHash {#qau-getblockbyhash}
 
 Vrací informace o bloku podle hashe.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByHash">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -1168,7 +1168,7 @@ params: [
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
 // Výsledek
 {
   "jsonrpc": "2.0",
@@ -1200,11 +1200,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0
 }
 ```
 
-### eth_getBlockByNumber {#eth-getblockbynumber}
+### qau_getBlockByNumber {#qau-getblockbynumber}
 
 Vrací informace o bloku podle čísla bloku.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByNumber">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -1221,22 +1221,22 @@ params: [
 ```
 
 **Vrací**
-Viz [eth_getBlockByHash](#eth-getblockbyhash)
+Viz [qau_getBlockByHash](#qau-getblockbyhash)
 
 **Příklad**
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["0x1b4", true],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByNumber","params":["0x1b4", true],"id":1}'
 ```
 
-Výsledek viz [eth_getBlockByHash](#eth-getblockbyhash)
+Výsledek viz [qau_getBlockByHash](#qau-getblockbyhash)
 
-### eth_getTransactionByHash {#eth-gettransactionbyhash}
+### qau_getTransactionByHash {#qau-gettransactionbyhash}
 
 Vrací informace o transakci vyžádané pomocí hashe transakce.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByHash">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -1271,7 +1271,7 @@ params: ["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"]
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
 // Výsledek
 {
   "jsonrpc":"2.0",
@@ -1295,11 +1295,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","param
 }
 ```
 
-### eth_getTransactionByBlockHashAndIndex {#eth-gettransactionbyblockhashandindex}
+### qau_getTransactionByBlockHashAndIndex {#qau-gettransactionbyblockhashandindex}
 
 Vrací informace o transakci podle hashe bloku a pozice indexu transakce.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -1316,22 +1316,22 @@ params: [
 ```
 
 **Vrací**
-Viz [eth_getTransactionByHash](#eth-gettransactionbyhash)
+Viz [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
 **Příklad**
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-Výsledek viz [eth_getTransactionByHash](#eth-gettransactionbyhash)
+Výsledek viz [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
-### eth_getTransactionByBlockNumberAndIndex {#eth-gettransactionbyblocknumberandindex}
+### qau_getTransactionByBlockNumberAndIndex {#qau-gettransactionbyblocknumberandindex}
 
 Vrací informace o transakci podle čísla bloku a pozice indexu transakce.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -1348,18 +1348,18 @@ params: [
 ```
 
 **Vrací**
-Viz [eth_getTransactionByHash](#eth-gettransactionbyhash)
+Viz [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
 **Příklad**
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
 ```
 
-Výsledek viz [eth_getTransactionByHash](#eth-gettransactionbyhash)
+Výsledek viz [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
-### eth_getTransactionReceipt {#eth-gettransactionreceipt}
+### qau_getTransactionReceipt {#qau-gettransactionreceipt}
 
 Vrací stvrzenku transakce podle hashe transakce.
 
@@ -1399,7 +1399,7 @@ Vrací také _buď_ :
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
 // Výsledek
 {
   "jsonrpc": "2.0",
@@ -1427,11 +1427,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","para
 }
 ```
 
-### eth_getUncleByBlockHashAndIndex {#eth-getunclebyblockhashandindex}
+### qau_getUncleByBlockHashAndIndex {#qau-getunclebyblockhashandindex}
 
 Vrací informace o strýci bloku podle hashe a pozice indexu strýce.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -1448,24 +1448,24 @@ params: [
 ```
 
 **Vrací**
-Viz [eth_getBlockByHash](#eth-getblockbyhash)
+Viz [qau_getBlockByHash](#qau-getblockbyhash)
 
 **Příklad**
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-Výsledek viz [eth_getBlockByHash](#eth-getblockbyhash)
+Výsledek viz [qau_getBlockByHash](#qau-getblockbyhash)
 
 **Poznámka**: Strýc neobsahuje jednotlivé transakce.
 
-### eth_getUncleByBlockNumberAndIndex {#eth-getunclebyblocknumberandindex}
+### qau_getUncleByBlockNumberAndIndex {#qau-getunclebyblocknumberandindex}
 
 Vrací informace o uncle bloku podle čísla bloku a pozice indexu uncle bloku.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
   Vyzkoušet endpoint v playgroundu
 </ButtonLink>
 
@@ -1482,7 +1482,7 @@ params: [
 ```
 
 **Vrací**
-Viz [eth_getBlockByHash](#eth-getblockbyhash)
+Viz [qau_getBlockByHash](#qau-getblockbyhash)
 
 **Poznámka**: Uncle blok neobsahuje jednotlivé transakce.
 
@@ -1490,15 +1490,15 @@ Viz [eth_getBlockByHash](#eth-getblockbyhash)
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
 ```
 
-Výsledek viz [eth_getBlockByHash](#eth-getblockbyhash)
+Výsledek viz [qau_getBlockByHash](#qau-getblockbyhash)
 
-### eth_newFilter {#eth-newfilter}
+### qau_newFilter {#qau-newfilter}
 
 Vytvoří objekt filtru na základě možností filtru, aby upozornil na změnu stavu (logy).
-Chcete-li zkontrolovat, zda se stav změnil, zavolejte [eth_getFilterChanges](#eth-getfilterchanges).
+Chcete-li zkontrolovat, zda se stav změnil, zavolejte [qau_getFilterChanges](#qau-getfilterchanges).
 
 **Poznámka k zadávání filtrů témat:**
 Témata závisí na pořadí. Transakce s logem s tématy [A, B] bude odpovídat následujícím filtrům témat:
@@ -1542,7 +1542,7 @@ params: [
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
 // Výsledek
 {
   "id":1,
@@ -1551,10 +1551,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topic
 }
 ```
 
-### eth_newBlockFilter {#eth-newblockfilter}
+### qau_newBlockFilter {#qau-newblockfilter}
 
 Vytvoří filtr v uzlu, který upozorní na příchod nového bloku.
-Chcete-li zkontrolovat, zda se změnil stav, zavolejte [eth_getFilterChanges](#eth-getfilterchanges).
+Chcete-li zkontrolovat, zda se změnil stav, zavolejte [qau_getFilterChanges](#qau-getfilterchanges).
 
 **Parametry**
 Žádné
@@ -1566,7 +1566,7 @@ Chcete-li zkontrolovat, zda se změnil stav, zavolejte [eth_getFilterChanges](#e
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newBlockFilter","params":[],"id":73}'
 // Výsledek
 {
   "id":1,
@@ -1575,10 +1575,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],
 }
 ```
 
-### eth_newPendingTransactionFilter {#eth-newpendingtransactionfilter}
+### qau_newPendingTransactionFilter {#qau-newpendingtransactionfilter}
 
 Vytvoří filtr v uzlu, který upozorní na příchod nových čekajících transakcí.
-Chcete-li zkontrolovat, zda se stav změnil, zavolejte [eth_getFilterChanges](#eth-getfilterchanges).
+Chcete-li zkontrolovat, zda se stav změnil, zavolejte [qau_getFilterChanges](#qau-getfilterchanges).
 
 **Parametry**
 Žádné
@@ -1590,7 +1590,7 @@ Chcete-li zkontrolovat, zda se stav změnil, zavolejte [eth_getFilterChanges](#e
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newPendingTransactionFilter","params":[],"id":73}'
 // Výsledek
 {
   "id":1,
@@ -1599,10 +1599,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter"
 }
 ```
 
-### eth_uninstallFilter {#eth-uninstallfilter}
+### qau_uninstallFilter {#qau-uninstallfilter}
 
 Odinstaluje filtr se zadaným ID. Mělo by se volat vždy, když už sledování není potřeba.
-Navíc platnost filtrů vyprší, pokud nejsou po určitou dobu dotazovány pomocí [eth_getFilterChanges](#eth-getfilterchanges).
+Navíc platnost filtrů vyprší, pokud nejsou po určitou dobu dotazovány pomocí [qau_getFilterChanges](#qau-getfilterchanges).
 
 **Parametry**
 
@@ -1621,7 +1621,7 @@ params: [
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["0xb"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_uninstallFilter","params":["0xb"],"id":73}'
 // Výsledek
 {
   "id":1,
@@ -1630,7 +1630,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["
 }
 ```
 
-### eth_getFilterChanges {#eth-getfilterchanges}
+### qau_getFilterChanges {#qau-getfilterchanges}
 
 Metoda dotazování pro filtr, která vrací pole logů, které se vyskytly od posledního dotazu.
 
@@ -1647,9 +1647,9 @@ params: [
 **Vrací**
 `Array` - Pole objektů logů, nebo prázdné pole, pokud se od posledního dotazu nic nezměnilo.
 
-- Pro filtry vytvořené pomocí `eth_newBlockFilter` jsou návratovou hodnotou hashe bloků (`DATA`, 32 bajtů), např. `["0x3454645634534..."]`.
-- Pro filtry vytvořené pomocí `eth_newPendingTransactionFilter ` jsou návratovou hodnotou hashe transakcí (`DATA`, 32 bajtů), např. `["0x6345343454645..."]`.
-- Pro filtry vytvořené pomocí `eth_newFilter` jsou logy objekty s následujícími parametry:
+- Pro filtry vytvořené pomocí `qau_newBlockFilter` jsou návratovou hodnotou hashe bloků (`DATA`, 32 bajtů), např. `["0x3454645634534..."]`.
+- Pro filtry vytvořené pomocí `qau_newPendingTransactionFilter ` jsou návratovou hodnotou hashe transakcí (`DATA`, 32 bajtů), např. `["0x6345343454645..."]`.
+- Pro filtry vytvořené pomocí `qau_newFilter` jsou logy objekty s následujícími parametry:
   - `removed`: `TAG` - `true`, když byl log odstraněn kvůli reorganizaci řetězce. `false`, pokud se jedná o platný log.
   - `logIndex`: `QUANTITY` - celé číslo pozice indexu logu v bloku. `null`, když se jedná o čekající log.
   - `transactionIndex`: `QUANTITY` - celé číslo pozice indexu transakce, ze které byl log vytvořen. `null`, když se jedná o čekající log.
@@ -1664,7 +1664,7 @@ params: [
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":["0x16"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterChanges","params":["0x16"],"id":73}'
 // Výsledek
 {
   "id":1,
@@ -1684,7 +1684,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":[
 }
 ```
 
-### eth_getFilterLogs {#eth-getfilterlogs}
+### qau_getFilterLogs {#qau-getfilterlogs}
 
 Vrací pole všech logů odpovídajících filtru s daným id.
 
@@ -1699,18 +1699,18 @@ params: [
 ```
 
 **Vrací**
-Viz [eth_getFilterChanges](#eth-getfilterchanges)
+Viz [qau_getFilterChanges](#qau-getfilterchanges)
 
 **Příklad**
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterLogs","params":["0x16"],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterLogs","params":["0x16"],"id":74}'
 ```
 
-Výsledek viz [eth_getFilterChanges](#eth-getfilterchanges)
+Výsledek viz [qau_getFilterChanges](#qau-getfilterchanges)
 
-### eth_getLogs {#eth-getlogs}
+### qau_getLogs {#qau-getlogs}
 
 Vrací pole všech logů odpovídajících danému objektu filtru.
 
@@ -1735,22 +1735,22 @@ params: [
 ```
 
 **Vrací**
-Viz [eth_getFilterChanges](#eth-getfilterchanges)
+Viz [qau_getFilterChanges](#qau-getfilterchanges)
 
 **Příklad**
 
 ```js
 // Požadavek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
 ```
 
-Výsledek viz [eth_getFilterChanges](#eth-getfilterchanges)
+Výsledek viz [qau_getFilterChanges](#qau-getfilterchanges)
 
 ## Příklad použití {#usage-example}
 
 ### Nasazení kontraktu pomocí JSON-RPC {#deploying-contract}
 
-Tato část obsahuje ukázku, jak nasadit kontrakt pouze pomocí RPC rozhraní. Existují i alternativní způsoby nasazení kontraktů, kde je tato složitost abstrahována – například pomocí knihoven postavených nad RPC rozhraním, jako jsou [Web3.js](https://web3js.readthedocs.io/) a [Web3.py](https://github.com/ethereum/web3.py). Tyto abstrakce jsou obecně snáze pochopitelné a méně náchylné k chybám, ale přesto je užitečné pochopit, jak to funguje pod pokličkou.
+Tato část obsahuje ukázku, jak nasadit kontrakt pouze pomocí RPC rozhraní. Existují i alternativní způsoby nasazení kontraktů, kde je tato složitost abstrahována – například pomocí knihoven postavených nad RPC rozhraním, jako jsou [Web3.js](https://web3js.readthedocs.io/) a [Web3.py](https://github.com/quantaureum/web3.py). Tyto abstrakce jsou obecně snáze pochopitelné a méně náchylné k chybám, ale přesto je užitečné pochopit, jak to funguje pod pokličkou.
 
 Následuje jednoduchý chytrý kontrakt s názvem `Multiply7`, který bude nasazen pomocí rozhraní JSON-RPC na uzel Etherea. Tento tutoriál předpokládá, že čtenář již provozuje uzel Geth. Více informací o uzlech a klientech je k dispozici [zde](/developers/docs/nodes-and-clients/run-a-node). Informace o tom, jak spustit HTTP JSON-RPC pro klienty jiné než Geth, naleznete v dokumentaci k jednotlivým [klientům](/developers/docs/nodes-and-clients/). Většina klientů ve výchozím nastavení běží na `localhost:8545`.
 
@@ -1764,7 +1764,7 @@ contract Multiply7 {
 }
 ```
 
-První věc, kterou musíte udělat, je ujistit se, že je povoleno rozhraní HTTP RPC. To znamená, že při spuštění poskytneme Gethu příznak `--http`. V tomto příkladu používáme uzel Geth v soukromém vývojovém řetězci. Díky tomuto přístupu nepotřebujeme ether ve skutečné síti.
+První věc, kterou musíte udělat, je ujistit se, že je povoleno rozhraní HTTP RPC. To znamená, že při spuštění poskytneme Gethu příznak `--http`. V tomto příkladu používáme uzel Geth v soukromém vývojovém řetězci. Díky tomuto přístupu nepotřebujeme QAU ve skutečné síti.
 
 ```bash
 geth --http --dev console 2>>geth.log
@@ -1775,21 +1775,21 @@ Tím se spustí rozhraní HTTP RPC na `http://localhost:8545`.
 Můžeme ověřit, že rozhraní běží, načtením adresy Coinbase (získáním první adresy z pole účtů) a zůstatku pomocí [curl](https://curl.se). Upozorňujeme, že data v těchto příkladech se budou na vašem lokálním uzlu lišit. Pokud si chcete tyto příkazy vyzkoušet, nahraďte parametry požadavku ve druhém požadavku curl výsledkem vráceným z prvního.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
 {"id":1,"jsonrpc":"2.0","result":["0x9b1d35635cc34752ca54713bb99d38614f63c955"]}
 
-curl --data '{"jsonrpc":"2.0","method":"eth_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
 {"id":2,"jsonrpc":"2.0","result":"0x1639e49bba16280000"}
 ```
 
 Protože jsou čísla kódována hexadecimálně, zůstatek se vrací ve Wei jako hexadecimální řetězec. Pokud chceme mít zůstatek v etheru jako číslo, můžeme použít Web3 z konzole Geth.
 
 ```javascript
-web3.fromWei("0x1639e49bba16280000", "ether")
+web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-Nyní, když je v našem soukromém vývojovém řetězci nějaký ether, můžeme nasadit kontrakt. Prvním krokem je kompilace kontraktu Multiply7 do bajtkódu, který lze odeslat do EVM. Pro instalaci solc, kompilátoru Solidity, postupujte podle [dokumentace Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (Možná budete chtít použít starší verzi `solc`, aby odpovídala [verzi kompilátoru použité v našem příkladu](https://github.com/ethereum/solidity/releases/tag/v0.4.20).)
+Nyní, když je v našem soukromém vývojovém řetězci nějaký QAU, můžeme nasadit kontrakt. Prvním krokem je kompilace kontraktu Multiply7 do bajtkódu, který lze odeslat do EVM. Pro instalaci solc, kompilátoru Solidity, postupujte podle [dokumentace Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (Možná budete chtít použít starší verzi `solc`, aby odpovídala [verzi kompilátoru použité v našem příkladu](https://github.com/quantaureum/solidity/releases/tag/v0.4.20).)
 
 Dalším krokem je kompilace kontraktu Multiply7 do bajtkódu, který lze odeslat do EVM.
 
@@ -1801,24 +1801,24 @@ Binary:
 6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029
 ```
 
-Nyní, když máme zkompilovaný kód, musíme určit, kolik gasu bude stát jeho nasazení. Rozhraní RPC má metodu `eth_estimateGas`, která nám poskytne odhad.
+Nyní, když máme zkompilovaný kód, musíme určit, kolik gasu bude stát jeho nasazení. Rozhraní RPC má metodu `qau_estimateGas`, která nám poskytne odhad.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":5,"result":"0x1c31e"}
 ```
 
 A nakonec kontrakt nasadíme.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
 {"id":6,"jsonrpc":"2.0","result":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"}
 ```
 
-Transakce je přijata uzlem a je vrácen hash transakce. Tento hash lze použít ke sledování transakce. Dalším krokem je určení adresy, na které je náš kontrakt nasazen. Každá provedená transakce vytvoří stvrzenku. Tato stvrzenka obsahuje různé informace o transakci, například do kterého bloku byla transakce zahrnuta a kolik gasu EVM spotřeboval. Pokud transakce vytvoří kontrakt, bude obsahovat také adresu kontraktu. Stvrzenku můžeme získat pomocí RPC metody `eth_getTransactionReceipt`.
+Transakce je přijata uzlem a je vrácen hash transakce. Tento hash lze použít ke sledování transakce. Dalším krokem je určení adresy, na které je náš kontrakt nasazen. Každá provedená transakce vytvoří stvrzenku. Tato stvrzenka obsahuje různé informace o transakci, například do kterého bloku byla transakce zahrnuta a kolik gasu EVM spotřeboval. Pokud transakce vytvoří kontrakt, bude obsahovat také adresu kontraktu. Stvrzenku můžeme získat pomocí RPC metody `qau_getTransactionReceipt`.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":7,"result":{"blockHash":"0x77b1a4f6872b9066312de3744f60020cbd8102af68b1f6512a05b7619d527a4f","blockNumber":"0x1","contractAddress":"0x4d03d617d700cf81935d7f797f4e2ae719648262","cumulativeGasUsed":"0x1c31e","from":"0x9b1d35635cc34752ca54713bb99d38614f63c955","gasUsed":"0x1c31e","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","status":"0x1","to":null,"transactionHash":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf","transactionIndex":"0x0"}}
 ```
 
@@ -1826,9 +1826,9 @@ Náš kontrakt byl vytvořen na `0x4d03d617d700cf81935d7f797f4e2ae719648262`. Nu
 
 #### Interakce s chytrými kontrakty {#interacting-with-smart-contract}
 
-V tomto příkladu budeme odesílat transakci pomocí `eth_sendTransaction` do metody `multiply` daného kontraktu.
+V tomto příkladu budeme odesílat transakci pomocí `qau_sendTransaction` do metody `multiply` daného kontraktu.
 
-`eth_sendTransaction` vyžaduje několik argumentů, konkrétně `from`, `to` a `data`. `From` je veřejná adresa našeho účtu a `to` je adresa kontraktu. Argument `data` obsahuje payload (užitečné zatížení), který definuje, jaká metoda musí být volána a s jakými argumenty. Zde vstupuje do hry [ABI (aplikační binární rozhraní)](https://docs.soliditylang.org/en/latest/abi-spec.html). ABI je soubor JSON, který definuje, jak definovat a kódovat data pro EVM.
+`qau_sendTransaction` vyžaduje několik argumentů, konkrétně `from`, `to` a `data`. `From` je veřejná adresa našeho účtu a `to` je adresa kontraktu. Argument `data` obsahuje payload (užitečné zatížení), který definuje, jaká metoda musí být volána a s jakými argumenty. Zde vstupuje do hry [ABI (aplikační binární rozhraní)](https://docs.soliditylang.org/en/latest/abi-spec.html). ABI je soubor JSON, který definuje, jak definovat a kódovat data pro EVM.
 
 Bajty payloadu definují, která metoda v kontraktu je volána. Jedná se o první 4 bajty z Keccak hashe názvu funkce a typů jejích argumentů, kódované hexadecimálně. Funkce multiply přijímá uint, což je alias pro uint256. To nám dává:
 
@@ -1848,7 +1848,7 @@ Spojením selektoru funkce a zakódovaného argumentu budou naše data `0xc6888f
 Toto lze nyní odeslat do uzlu:
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
 {"id":8,"jsonrpc":"2.0","result":"0x759cf065cbc22e9d779748dc53763854e5376eea07409e590c990eafc0869d74"}
 ```
 

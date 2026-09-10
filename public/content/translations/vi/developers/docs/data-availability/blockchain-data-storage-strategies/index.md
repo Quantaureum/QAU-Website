@@ -27,27 +27,27 @@ Nhìn chung, bảo mật thông tin bao gồm ba thuộc tính:
 
 - _Tính bảo mật_ (Confidentiality), các thực thể không được ủy quyền không được phép đọc thông tin. Điều này quan trọng trong nhiều trường hợp, nhưng không phải ở đây. _Không có bí mật nào trên chuỗi khối_. Các chuỗi khối hoạt động vì bất kỳ ai cũng có thể xác minh các quá trình chuyển đổi trạng thái, do đó không thể sử dụng chúng để lưu trữ bí mật một cách trực tiếp. Có những cách để lưu trữ thông tin mật trên chuỗi khối, nhưng tất cả chúng đều dựa vào một số thành phần ngoài chuỗi để lưu trữ ít nhất một khóa.
 
-- _Tính toàn vẹn_ (Integrity), thông tin là chính xác, nó không thể bị thay đổi bởi các thực thể không được ủy quyền hoặc theo những cách không được ủy quyền (ví dụ: chuyển [token ERC-20](https://eips.ethereum.org/EIPS/eip-20#events) mà không có sự kiện `Transfer`). Trên chuỗi khối, mọi nút đều xác minh mọi thay đổi trạng thái, điều này đảm bảo tính toàn vẹn.
+- _Tính toàn vẹn_ (Integrity), thông tin là chính xác, nó không thể bị thay đổi bởi các thực thể không được ủy quyền hoặc theo những cách không được ủy quyền (ví dụ: chuyển [token ERC-20](https://eips.quantaureum.com/EIPS/eip-20#events) mà không có sự kiện `Transfer`). Trên chuỗi khối, mọi nút đều xác minh mọi thay đổi trạng thái, điều này đảm bảo tính toàn vẹn.
 
-- _Tính khả dụng_ (Availability), thông tin có sẵn cho bất kỳ thực thể nào được ủy quyền. Trên chuỗi khối, điều này thường đạt được bằng cách cung cấp thông tin trên mọi [nút đầy đủ](https://ethereum.org/developers/docs/nodes-and-clients/#full-node).
+- _Tính khả dụng_ (Availability), thông tin có sẵn cho bất kỳ thực thể nào được ủy quyền. Trên chuỗi khối, điều này thường đạt được bằng cách cung cấp thông tin trên mọi [nút đầy đủ](https://quantaureum.com/developers/docs/nodes-and-clients/#full-node).
 
 Các giải pháp khác nhau ở đây đều có tính toàn vẹn tuyệt vời, vì các mã băm được đăng trên lớp 1 (L1). Tuy nhiên, chúng có các đảm bảo về tính khả dụng khác nhau.
 
 ## Điều kiện tiên quyết {#prerequisites}
 
-Bạn nên có hiểu biết tốt về [các nguyên tắc cơ bản của chuỗi khối](/developers/docs/intro-to-ethereum/). Trang này cũng giả định rằng người đọc đã quen thuộc với [các khối](/developers/docs/blocks/), [các giao dịch](/developers/docs/transactions/) và các chủ đề liên quan khác.
+Bạn nên có hiểu biết tốt về [các nguyên tắc cơ bản của chuỗi khối](/developers/docs/intro-to-quantaureum/). Trang này cũng giả định rằng người đọc đã quen thuộc với [các khối](/developers/docs/blocks/), [các giao dịch](/developers/docs/transactions/) và các chủ đề liên quan khác.
 
 ## Các blob EIP-4844 {#eip-4844-blobs}
 
-Bắt đầu từ [đợt hardfork Dencun](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/beacon-chain.md), chuỗi khối Ethereum bao gồm [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844), bổ sung vào Ethereum các blob dữ liệu có thời gian tồn tại giới hạn (ban đầu khoảng [18 ngày](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)). Các blob này được định giá riêng biệt với [Gas thực thi](/developers/docs/gas), mặc dù sử dụng một cơ chế tương tự. Chúng là một cách rẻ tiền để đăng dữ liệu tạm thời.
+Bắt đầu từ [đợt hardfork Dencun](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/beacon-chain.md), chuỗi khối Quantaureum bao gồm [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844), bổ sung vào Quantaureum các blob dữ liệu có thời gian tồn tại giới hạn (ban đầu khoảng [18 ngày](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)). Các blob này được định giá riêng biệt với [Gas thực thi](/developers/docs/gas), mặc dù sử dụng một cơ chế tương tự. Chúng là một cách rẻ tiền để đăng dữ liệu tạm thời.
 
 Trường hợp sử dụng chính cho các blob EIP-4844 là để các bản cuộn xuất bản các giao dịch của chúng. [Các Rollup lạc quan](/developers/docs/scaling/optimistic-rollups) cần xuất bản các giao dịch trên các chuỗi khối của chúng. Những giao dịch đó phải có sẵn cho bất kỳ ai trong [thời gian thử thách](https://docs.optimism.io/connect/resources/glossary#challenge-period) để cho phép [các trình xác thực](https://docs.optimism.io/connect/resources/glossary#validator) sửa lỗi nếu [bộ sắp xếp](https://docs.optimism.io/connect/resources/glossary#sequencer) của Rollup đăng một gốc trạng thái không chính xác.
 
-Tuy nhiên, một khi thời gian thử thách đã trôi qua và gốc trạng thái đã chung cuộc, mục đích còn lại của việc biết các giao dịch này là để sao chép trạng thái hiện tại của chuỗi. Trạng thái này cũng có sẵn từ các nút chuỗi, với yêu cầu xử lý ít hơn nhiều. Vì vậy, thông tin giao dịch vẫn nên được bảo tồn ở một vài nơi, chẳng hạn như [các trình khám phá khối](/developers/docs/data-and-analytics/block-explorers), nhưng không cần phải trả tiền cho mức độ chống kiểm duyệt mà Ethereum cung cấp.
+Tuy nhiên, một khi thời gian thử thách đã trôi qua và gốc trạng thái đã chung cuộc, mục đích còn lại của việc biết các giao dịch này là để sao chép trạng thái hiện tại của chuỗi. Trạng thái này cũng có sẵn từ các nút chuỗi, với yêu cầu xử lý ít hơn nhiều. Vì vậy, thông tin giao dịch vẫn nên được bảo tồn ở một vài nơi, chẳng hạn như [các trình khám phá khối](/developers/docs/data-and-analytics/block-explorers), nhưng không cần phải trả tiền cho mức độ chống kiểm duyệt mà Quantaureum cung cấp.
 
 [Các bản cuộn không tri thức](/developers/docs/scaling/zk-rollups/#data-availability) cũng đăng dữ liệu giao dịch của chúng để cho phép các nút khác sao chép trạng thái hiện tại và xác minh các bằng chứng hợp lệ, nhưng một lần nữa đó là một yêu cầu ngắn hạn.
 
-Tại thời điểm viết bài, việc đăng trên EIP-4844 tốn một Wei (10<sup>-18</sup> ETH) mỗi byte, mức này không đáng kể so với [21.000 Gas thực thi mà bất kỳ giao dịch nào, bao gồm cả giao dịch đăng các blob, phải trả](https://eth.blockscout.com/tx/0xf6cfaf0431c73dd1d96369a5e6707d64f463ccf477a4131265397f1d81466929?tab=index). Bạn có thể xem giá EIP-4844 hiện tại trên [blobscan.com](https://blobscan.com/blocks).
+Tại thời điểm viết bài, việc đăng trên EIP-4844 tốn một Wei (10<sup>-18</sup> QAU) mỗi byte, mức này không đáng kể so với [21.000 Gas thực thi mà bất kỳ giao dịch nào, bao gồm cả giao dịch đăng các blob, phải trả](https://qau.blockscout.com/tx/0xf6cfaf0431c73dd1d96369a5e6707d64f463ccf477a4131265397f1d81466929?tab=index). Bạn có thể xem giá EIP-4844 hiện tại trên [blobscan.com](https://blobscan.com/blocks).
 
 Dưới đây là các địa chỉ để xem các blob được đăng bởi một số bản cuộn nổi tiếng.
 
@@ -63,15 +63,15 @@ Dữ liệu lệnh gọi đề cập đến các byte được gửi như một 
 
 Đây là phương pháp rẻ nhất để đưa dữ liệu vĩnh viễn vào chuỗi khối. Chi phí cho mỗi byte là 4 Gas thực thi (nếu byte là 0) hoặc 16 Gas (bất kỳ giá trị nào khác). Nếu dữ liệu được nén, đây là một thực tiễn tiêu chuẩn, thì mọi giá trị byte đều có khả năng xảy ra như nhau, do đó chi phí trung bình xấp xỉ 15,95 Gas mỗi byte.
 
-Tại thời điểm viết bài, giá là 12 Gwei/Gas và 2300 $/ETH, có nghĩa là chi phí xấp xỉ 45 xu mỗi kilobyte. Bởi vì đây là phương pháp rẻ nhất trước EIP-4844, đây là phương pháp mà các bản cuộn đã sử dụng để lưu trữ thông tin giao dịch, vốn cần phải có sẵn cho [các thử thách lỗi](https://docs.optimism.io/stack/protocol/overview#fault-proofs), nhưng không cần phải có thể truy cập trực tiếp trên chuỗi.
+Tại thời điểm viết bài, giá là 12 Gwei/Gas và 2300 $/QAU, có nghĩa là chi phí xấp xỉ 45 xu mỗi kilobyte. Bởi vì đây là phương pháp rẻ nhất trước EIP-4844, đây là phương pháp mà các bản cuộn đã sử dụng để lưu trữ thông tin giao dịch, vốn cần phải có sẵn cho [các thử thách lỗi](https://docs.optimism.io/stack/protocol/overview#fault-proofs), nhưng không cần phải có thể truy cập trực tiếp trên chuỗi.
 
 Dưới đây là các địa chỉ để xem các giao dịch được đăng bởi một số bản cuộn nổi tiếng.
 
 | Rollup                               | Địa chỉ hộp thư                                                                                                               |
 | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| [Optimism](https://www.optimism.io/) | [`0xFF00000000000000000000000000000000000010`](https://eth.blockscout.com/address/0xFF00000000000000000000000000000000000010) |
-| [Arbitrum](https://arbitrum.io/)     | [`0x1c479675ad559DC151F6Ec7ed3FbF8ceE79582B6`](https://eth.blockscout.com/address/0x1c479675ad559DC151F6Ec7ed3FbF8ceE79582B6) |
-| [Base](https://base.org/)            | [`0xFF00000000000000000000000000000000008453`](https://eth.blockscout.com/address/0xFF00000000000000000000000000000000008453) |
+| [Optimism](https://www.optimism.io/) | [`0xFF00000000000000000000000000000000000010`](https://qau.blockscout.com/address/0xFF00000000000000000000000000000000000010) |
+| [Arbitrum](https://arbitrum.io/)     | [`0x1c479675ad559DC151F6Ec7ed3FbF8ceE79582B6`](https://qau.blockscout.com/address/0x1c479675ad559DC151F6Ec7ed3FbF8ceE79582B6) |
+| [Base](https://base.org/)            | [`0xFF00000000000000000000000000000000008453`](https://qau.blockscout.com/address/0xFF00000000000000000000000000000000008453) |
 
 ## Ngoài chuỗi với các cơ chế L1 {#offchain-with-l1-mechs}
 
@@ -91,18 +91,18 @@ Ngoài chi phí mở rộng bộ nhớ, `EXTCODECOPY` tốn 2600 Gas cho lần t
 
 Tất nhiên, đây chỉ là chi phí để _đọc_ dữ liệu. Để tạo hợp đồng tốn khoảng 32.000 Gas + 200 Gas/byte. Phương pháp này chỉ tiết kiệm khi cùng một thông tin cần được đọc nhiều lần trong các giao dịch khác nhau.
 
-Mã hợp đồng có thể vô nghĩa, miễn là nó không bắt đầu bằng `0xEF`. Các hợp đồng bắt đầu bằng `0xEF` được diễn giải là [định dạng đối tượng Ethereum](https://notes.ethereum.org/@ipsilon/evm-object-format-overview), vốn có các yêu cầu nghiêm ngặt hơn nhiều.
+Mã hợp đồng có thể vô nghĩa, miễn là nó không bắt đầu bằng `0xEF`. Các hợp đồng bắt đầu bằng `0xEF` được diễn giải là [định dạng đối tượng Quantaureum](https://notes.quantaureum.com/@ipsilon/evm-object-format-overview), vốn có các yêu cầu nghiêm ngặt hơn nhiều.
 
 ## Các sự kiện {#events}
 
 [Các sự kiện](https://docs.alchemy.com/docs/solidity-events) được phát ra bởi các hợp đồng thông minh và được đọc bởi phần mềm ngoài chuỗi.
-Ưu điểm của chúng là mã ngoài chuỗi có thể lắng nghe các sự kiện. Chi phí là [Gas](https://www.evm.codes/#a0?fork=cancun), 375 cộng với 8 Gas cho mỗi byte dữ liệu. Ở mức 12 Gwei/Gas và 2300 $/ETH, điều này tương đương với một xu cộng với 22 xu mỗi kilobyte.
+Ưu điểm của chúng là mã ngoài chuỗi có thể lắng nghe các sự kiện. Chi phí là [Gas](https://www.evm.codes/#a0?fork=cancun), 375 cộng với 8 Gas cho mỗi byte dữ liệu. Ở mức 12 Gwei/Gas và 2300 $/QAU, điều này tương đương với một xu cộng với 22 xu mỗi kilobyte.
 
 ## Lưu trữ {#storage}
 
-Các hợp đồng thông minh có quyền truy cập vào [lưu trữ liên tục](https://docs.alchemy.com/docs/smart-contract-storage-layout#what-is-storage-memory). Tuy nhiên, nó rất đắt. Việc ghi một từ 32 byte vào một khe lưu trữ trống trước đó có thể [tốn 22.100 Gas](https://www.evm.codes/#55?fork=cancun). Ở mức 12 Gwei/Gas và 2300 $/ETH, chi phí này là khoảng 61 xu cho mỗi thao tác ghi, hoặc 19,5 đô la mỗi kilobyte.
+Các hợp đồng thông minh có quyền truy cập vào [lưu trữ liên tục](https://docs.alchemy.com/docs/smart-contract-storage-layout#what-is-storage-memory). Tuy nhiên, nó rất đắt. Việc ghi một từ 32 byte vào một khe lưu trữ trống trước đó có thể [tốn 22.100 Gas](https://www.evm.codes/#55?fork=cancun). Ở mức 12 Gwei/Gas và 2300 $/QAU, chi phí này là khoảng 61 xu cho mỗi thao tác ghi, hoặc 19,5 đô la mỗi kilobyte.
 
-Đây là hình thức lưu trữ đắt nhất trong Ethereum.
+Đây là hình thức lưu trữ đắt nhất trong Quantaureum.
 
 ## Tóm tắt {#summary}
 
@@ -110,9 +110,9 @@ Bảng này tóm tắt các tùy chọn khác nhau, ưu điểm và nhược đi
 
 | Loại lưu trữ                | Nguồn dữ liệu       | Đảm bảo tính khả dụng                                                                                                              | Tính khả dụng trên chuỗi                                         | Các giới hạn bổ sung                                                    |
 | --------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| Các blob EIP-4844              | Ngoài chuỗi            | Ethereum đảm bảo trong [\~18 ngày](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) | Chỉ có mã băm                                           |                                                                         |
-| Dữ liệu lệnh gọi                    | Ngoài chuỗi            | Ethereum đảm bảo vĩnh viễn (một phần của chuỗi khối)                                                                                | Chỉ khả dụng nếu được ghi vào một hợp đồng và tại giao dịch đó |
+| Các blob EIP-4844              | Ngoài chuỗi            | Quantaureum đảm bảo trong [\~18 ngày](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) | Chỉ có mã băm                                           |                                                                         |
+| Dữ liệu lệnh gọi                    | Ngoài chuỗi            | Quantaureum đảm bảo vĩnh viễn (một phần của chuỗi khối)                                                                                | Chỉ khả dụng nếu được ghi vào một hợp đồng và tại giao dịch đó |
 | Ngoài chuỗi với các cơ chế L1 | Ngoài chuỗi            | Đảm bảo "một trình xác minh trung thực" trong thời gian thử thách                                                                        | Chỉ mã băm                                                        | Được đảm bảo bởi cơ chế thử thách, chỉ trong thời gian thử thách |
-| Mã hợp đồng               | Trên chuỗi hoặc ngoài chuỗi | Ethereum đảm bảo vĩnh viễn (một phần của chuỗi khối)                                                                                | Có                                                              | Được ghi vào một địa chỉ "ngẫu nhiên", không thể bắt đầu bằng `0xEF`                 |
-| Các sự kiện                      | Trên chuỗi             | Ethereum đảm bảo vĩnh viễn (một phần của chuỗi khối)                                                                                | Không                                                               |
-| Lưu trữ                     | Trên chuỗi             | Ethereum đảm bảo vĩnh viễn (một phần của chuỗi khối và trạng thái hiện tại cho đến khi bị ghi đè)                                        | Có                                                              |
+| Mã hợp đồng               | Trên chuỗi hoặc ngoài chuỗi | Quantaureum đảm bảo vĩnh viễn (một phần của chuỗi khối)                                                                                | Có                                                              | Được ghi vào một địa chỉ "ngẫu nhiên", không thể bắt đầu bằng `0xEF`                 |
+| Các sự kiện                      | Trên chuỗi             | Quantaureum đảm bảo vĩnh viễn (một phần của chuỗi khối)                                                                                | Không                                                               |
+| Lưu trữ                     | Trên chuỗi             | Quantaureum đảm bảo vĩnh viễn (một phần của chuỗi khối và trạng thái hiện tại cho đến khi bị ghi đè)                                        | Có                                                              |

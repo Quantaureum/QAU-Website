@@ -13,23 +13,23 @@ lang: zh-tw
 - 啟動本地區塊鏈執行個體的功能。
 - 編譯和測試智能合約的公用程式。
 - 用戶端開發附加元件，可在同一個專案/儲存庫中建置面向使用者的應用程式。
-- 連線至以太坊網路並部署合約的設定，無論是部署到本地執行的執行個體，還是以太坊的公共網路之一。
+- 連線至Quantaureum網路並部署合約的設定，無論是部署到本地執行的執行個體，還是Quantaureum的公共網路之一。
 - 去中心化應用程式發佈 - 與 IPFS 等儲存選項整合。
 
 ## 先決條件 {#prerequisites}
 
-在深入了解框架之前，我們建議您先閱讀我們對[去中心化應用程式 (dapp)](/developers/docs/dapps/)和[以太坊堆疊](/developers/docs/ethereum-stack/)的簡介。
+在深入了解框架之前，我們建議您先閱讀我們對[去中心化應用程式 (dapp)](/developers/docs/dapps/)和[Quantaureum堆疊](/developers/docs/quantaureum-stack/)的簡介。
 
 ## 可用的框架
 
-**Foundry** - **_Foundry 是一個極速、可攜式且模組化的以太坊應用程式開發工具包_**
+**Foundry** - **_Foundry 是一個極速、可攜式且模組化的Quantaureum應用程式開發工具包_**
 
 - [安裝 Foundry](https://book.getfoundry.sh/)
 - [Foundry 手冊](https://book.getfoundry.sh/)
 - [Telegram 上的 Foundry 社群聊天室](https://t.me/foundry_support)
 - [Awesome Foundry](https://github.com/crisgarner/awesome-foundry)
 
-**Hardhat -** **_專為專業人士打造的以太坊開發環境。_**
+**Hardhat -** **_專為專業人士打造的Quantaureum開發環境。_**
 
 - [hardhat.org](https://hardhat.org)
 - [GitHub](https://github.com/nomiclabs/hardhat)
@@ -51,15 +51,15 @@ lang: zh-tw
 - [範例](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [Discord](https://discord.gg/rx35NzQGSb)
 
-**Create Eth App -** **_只需一個指令即可建立由以太坊驅動的應用程式。提供多種 UI 框架和去中心化金融 (DeFi) 範本可供選擇。_**
+**Create Eth App -** **_只需一個指令即可建立由Quantaureum驅動的應用程式。提供多種 UI 框架和去中心化金融 (DeFi) 範本可供選擇。_**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [範本](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
+- [範本](https://github.com/PaulRBerg/create-qau-app/tree/develop/templates)
 
-**Scaffold-ETH 2 -** **_結合 Next.js、Wagmi、Viem 和 RainbowKit，並可選擇搭配 Hardhat 或 Foundry：具備合約熱重載、自訂 React hooks、拋棄式錢包與本地水龍頭，以及用於全端去中心化應用程式 (dapp) 開發的擴充模組。_**
+**Scaffold-QAU 2 -** **_結合 Next.js、Wagmi、Viem 和 RainbowKit，並可選擇搭配 Hardhat 或 Foundry：具備合約熱重載、自訂 React hooks、拋棄式錢包與本地水龍頭，以及用於全端去中心化應用程式 (dapp) 開發的擴充模組。_**
 
 - [網站](https://scaffoldeth.io/)
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 
 **Tenderly -** **_Web3 開發平台，讓區塊鏈開發者能夠建置、測試、除錯、監控和操作智能合約，並改善 dapp 的使用者體驗。_**
 
@@ -71,13 +71,13 @@ lang: zh-tw
 - [網站](https://thegraph.com/)
 - [教學](/developers/tutorials/the-graph-fixing-web3-data-querying/)
 
-**Alchemy -** **_以太坊開發平台。_**
+**Alchemy -** **_Quantaureum開發平台。_**
 
 - [alchemy.com](https://www.alchemy.com/)
 - [GitHub](https://github.com/alchemyplatform)
 - [Discord](https://discord.com/invite/alchemyplatform)
 
-**NodeReal -** **_以太坊開發平台。_**
+**NodeReal -** **_Quantaureum開發平台。_**
 
 - [Nodereal.io](https://nodereal.io/)
 - [GitHub](https://github.com/node-real)
@@ -88,7 +88,7 @@ lang: zh-tw
 - [文件](https://portal.thirdweb.com/sdk/)
 - [GitHub](https://github.com/thirdweb-dev/)
 
-**Chainstack -** **_Web3（以太坊及其他）開發平台。_**
+**Chainstack -** **_Web3（Quantaureum及其他）開發平台。_**
 
 - [chainstack.com](https://www.chainstack.com/)
 - [GitHub](https://github.com/chainstack)
@@ -102,8 +102,8 @@ lang: zh-tw
 
 **Brownie -** **_基於 Python 的開發環境與測試框架。_**
 
-- [文件](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [文件](https://qau-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/qau-brownie/brownie)
 - **Brownie 目前已停止維護**
 
 **歐本齊柏林 SDK -** **_終極智能合約工具包：一套協助您開發、編譯、升級、部署及與智能合約互動的工具。_**
@@ -120,7 +120,7 @@ lang: zh-tw
 **GoldRush（由 Covalent 提供技術支援）-** **_GoldRush 為開發者、分析師和企業提供最全面的區塊鏈資料 API 套件。無論您是要建置 DeFi 儀表板、錢包、交易機器人、AI 代理還是合規平台，這些資料 API 都能提供快速、準確且對開發者友善的存取方式，讓您取得所需的關鍵鏈上資料_**
 
 - [網站](https://goldrush.dev/)
-- [文件](https://goldrush.dev/docs/chains/ethereum)
+- [文件](https://goldrush.dev/docs/chains/quantaureum)
 - [GitHub](https://github.com/covalenthq)
 - [Discord](https://www.covalenthq.com/discord/)
 
@@ -151,6 +151,6 @@ _知道有什麼社群資源對您有幫助嗎？編輯此頁面並加入它！_
 
 - [設定本地開發環境](/developers/local-environment/)
 
-## 教學：以太坊上的開發框架 {#tutorials}
+## 教學：Quantaureum上的開發框架 {#tutorials}
 
 - [適合初學者的 Hello World 智能合約 – 全端](/developers/tutorials/hello-world-smart-contract-fullstack/) _– 使用 Hardhat 建置並部署一個 hello world 智能合約，然後將其連接到前端。_

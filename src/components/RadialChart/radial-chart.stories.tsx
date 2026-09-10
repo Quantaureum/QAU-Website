@@ -43,7 +43,7 @@ export const OutOfTotal: Story = {
       },
     },
   },
-  args: { value: 24, totalValue: 32, label: "ETH staked" },
+  args: { value: 24, totalValue: 32, label: "QAU staked" },
 }
 
 export const CustomDisplayValue: Story = {
@@ -55,7 +55,7 @@ export const CustomDisplayValue: Story = {
       },
     },
   },
-  args: { value: 24, totalValue: 32, displayValue: "24 ETH", label: "Staked" },
+  args: { value: 24, totalValue: 32, displayValue: "24 QAU", label: "Staked" },
 }
 
 export const WithSource: Story = {
@@ -80,7 +80,7 @@ export const InARow: Story = {
   render: () => (
     <HStack className="w-full items-stretch gap-4">
       <RadialChart value={68} label="Participation" />
-      <RadialChart value={24} totalValue={32} label="ETH staked" />
+      <RadialChart value={24} totalValue={32} label="QAU staked" />
       <RadialChart value={92} label="Client diversity" />
     </HStack>
   ),

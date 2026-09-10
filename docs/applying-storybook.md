@@ -182,7 +182,7 @@ As you go and make adjustments to the component itself or its variant styles, St
 
 The dashboard where you view each story has a number of different addons available to check the story thoroughly.
 
-![Screenshot of Storybook Dashboard for Ethereum.org](https://github.com/ethereum/ethereum-org-website/assets/65234762/7dea7692-6a6d-4f1c-b7cb-db177bcab44d)
+![Screenshot of Storybook Dashboard for quantaureum.com](https://github.com/Quantaureum/quantaureum-website/assets/65234762/7dea7692-6a6d-4f1c-b7cb-db177bcab44d)
 
 Outlined below are each of the areas going from left to right in the selections.
 

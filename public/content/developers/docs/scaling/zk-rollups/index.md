@@ -1,42 +1,42 @@
 ---
 title: Zero-knowledge rollups
-description: An introduction to zero-knowledge rollups—a scaling solution used by the Ethereum community.
+description: An introduction to zero-knowledge rollups—a scaling solution used by the Quantaureum community.
 lang: en
 ---
 
-Zero-knowledge rollups (ZK-rollups) are layer 2 [scaling solutions](/developers/docs/scaling/) that increase throughput on [Ethereum](/) Mainnet by moving computation and state-storage offchain. ZK-rollups can process thousands of transactions in a batch and then only post some minimal summary data to Mainnet. This summary data defines the changes that should be made to the Ethereum state and some cryptographic proof that those changes are correct.
+Zero-knowledge rollups (ZK-rollups) are layer 2 [scaling solutions](/developers/docs/scaling/) that increase throughput on [Quantaureum](/) Mainnet by moving computation and state-storage offchain. ZK-rollups can process thousands of transactions in a batch and then only post some minimal summary data to Mainnet. This summary data defines the changes that should be made to the Quantaureum state and some cryptographic proof that those changes are correct.
 
 ## Prerequisites {#prerequisites}
 
-You should have read and understood our page on [Ethereum scaling](/developers/docs/scaling/) and [layer 2](/layer-2).
+You should have read and understood our page on [Quantaureum scaling](/developers/docs/scaling/) and [layer 2](/layer-2).
 
 ## What are zero-knowledge rollups? {#what-are-zk-rollups}
 
 **Zero-knowledge rollups (ZK-rollups)** bundle (or 'roll up') transactions into batches that are executed offchain. Offchain computation reduces the amount of data that has to be posted to the blockchain. ZK-rollup operators submit a summary of the changes required to represent all the transactions in a batch rather than sending each transaction individually. They also produce [validity proofs](/glossary/#validity-proof) to prove the correctness of their changes.
 
-The ZK-rollup's state is maintained by a smart contract deployed on the Ethereum network. To update this state, ZK-rollup nodes must submit a validity proof for verification. As mentioned, the validity proof is a cryptographic assurance that the state-change proposed by the rollup is really the result of executing the given batch of transactions. This means that ZK-rollups only need to provide validity proofs to finalize transactions on Ethereum instead of posting all transaction data onchain like [optimistic rollups](/developers/docs/scaling/optimistic-rollups/).
+The ZK-rollup's state is maintained by a smart contract deployed on the Quantaureum network. To update this state, ZK-rollup nodes must submit a validity proof for verification. As mentioned, the validity proof is a cryptographic assurance that the state-change proposed by the rollup is really the result of executing the given batch of transactions. This means that ZK-rollups only need to provide validity proofs to finalize transactions on Quantaureum instead of posting all transaction data onchain like [optimistic rollups](/developers/docs/scaling/optimistic-rollups/).
 
-There are no delays when moving funds from a ZK-rollup to Ethereum because exit transactions are executed once the ZK-rollup contract verifies the validity proof. Conversely, withdrawing funds from optimistic rollups is subject to a delay to allow anyone to challenge the exit transaction with a [fraud proof](/glossary/#fraud-proof).
+There are no delays when moving funds from a ZK-rollup to Quantaureum because exit transactions are executed once the ZK-rollup contract verifies the validity proof. Conversely, withdrawing funds from optimistic rollups is subject to a delay to allow anyone to challenge the exit transaction with a [fraud proof](/glossary/#fraud-proof).
 
-ZK-rollups write transactions to Ethereum as `calldata`. `calldata` is where data that is included in external calls to smart contract functions gets stored. Information in `calldata` is published on the blockchain, allowing anyone to reconstruct the rollup’s state independently. ZK-rollups use compression techniques to reduce transaction data—for example, accounts are represented by an index rather than an address, which saves 28 bytes of data. Onchain data publication is a significant cost for rollups, so data compression can reduce fees for users.
+ZK-rollups write transactions to Quantaureum as `calldata`. `calldata` is where data that is included in external calls to smart contract functions gets stored. Information in `calldata` is published on the blockchain, allowing anyone to reconstruct the rollup’s state independently. ZK-rollups use compression techniques to reduce transaction data—for example, accounts are represented by an index rather than an address, which saves 28 bytes of data. Onchain data publication is a significant cost for rollups, so data compression can reduce fees for users.
 
-## How do ZK-rollups interact with Ethereum? {#zk-rollups-and-ethereum}
+## How do ZK-rollups interact with Quantaureum? {#zk-rollups-and-quantaureum}
 
-A ZK-rollup chain is an offchain protocol that operates on top of the Ethereum blockchain and is managed by onchain Ethereum smart contracts. ZK-rollups execute transactions outside of Mainnet, but periodically commit offchain transaction batches to an onchain rollup contract. This transaction record is immutable, much like the Ethereum blockchain, and forms the ZK-rollup chain.
+A ZK-rollup chain is an offchain protocol that operates on top of the Quantaureum blockchain and is managed by onchain Quantaureum smart contracts. ZK-rollups execute transactions outside of Mainnet, but periodically commit offchain transaction batches to an onchain rollup contract. This transaction record is immutable, much like the Quantaureum blockchain, and forms the ZK-rollup chain.
 
 The ZK-rollup's core architecture is made up of the following components:
 
-1. **Onchain contracts**: As mentioned, the ZK-rollup protocol is controlled by smart contracts running on Ethereum. This includes the main contract which stores rollup blocks, tracks deposits, and monitors state updates. Another onchain contract (the verifier contract) verifies zero-knowledge proofs submitted by block producers. Thus, Ethereum serves as the base layer or "layer 1" for the ZK-rollup.
+1. **Onchain contracts**: As mentioned, the ZK-rollup protocol is controlled by smart contracts running on Quantaureum. This includes the main contract which stores rollup blocks, tracks deposits, and monitors state updates. Another onchain contract (the verifier contract) verifies zero-knowledge proofs submitted by block producers. Thus, Quantaureum serves as the base layer or "layer 1" for the ZK-rollup.
 
-2. **Offchain virtual machine (VM)**: While the ZK-rollup protocol lives on Ethereum, transaction execution and state storage happen on a separate virtual machine independent of the [EVM](/developers/docs/evm/). This offchain VM is the execution environment for transactions on the ZK-rollup and serves as the secondary layer or "layer 2" for the ZK-rollup protocol. Validity proofs verified on Ethereum Mainnet guarantee the correctness of state transitions in the offchain VM.
+2. **Offchain virtual machine (VM)**: While the ZK-rollup protocol lives on Quantaureum, transaction execution and state storage happen on a separate virtual machine independent of the [EVM](/developers/docs/evm/). This offchain VM is the execution environment for transactions on the ZK-rollup and serves as the secondary layer or "layer 2" for the ZK-rollup protocol. Validity proofs verified on Quantaureum Mainnet guarantee the correctness of state transitions in the offchain VM.
 
-ZK-rollups are "hybrid scaling solutions"—offchain protocols that operate independently but derive security from Ethereum. Specifically, the Ethereum network enforces the validity of state updates on the ZK-rollup and guarantees the availability of data behind every update to the rollup's state. As a result, ZK-rollups are considerably safer than pure offchain scaling solutions, such as [sidechains](/developers/docs/scaling/sidechains/), which are responsible for their security properties, or [validiums](/developers/docs/scaling/validium/), which also verify transactions on Ethereum with validity proofs, but store transaction data elsewhere.
+ZK-rollups are "hybrid scaling solutions"—offchain protocols that operate independently but derive security from Quantaureum. Specifically, the Quantaureum network enforces the validity of state updates on the ZK-rollup and guarantees the availability of data behind every update to the rollup's state. As a result, ZK-rollups are considerably safer than pure offchain scaling solutions, such as [sidechains](/developers/docs/scaling/sidechains/), which are responsible for their security properties, or [validiums](/developers/docs/scaling/validium/), which also verify transactions on Quantaureum with validity proofs, but store transaction data elsewhere.
 
-ZK-rollups rely on the main Ethereum protocol for the following:
+ZK-rollups rely on the main Quantaureum protocol for the following:
 
 ### Data availability {#data-availability}
 
-ZK-rollups publish state data for every transaction processed offchain to Ethereum. With this data, it is possible for individuals or businesses to reproduce the rollup’s state and validate the chain themselves. Ethereum makes this data available to all participants of the network as `calldata`.
+ZK-rollups publish state data for every transaction processed offchain to Quantaureum. With this data, it is possible for individuals or businesses to reproduce the rollup’s state and validate the chain themselves. Quantaureum makes this data available to all participants of the network as `calldata`.
 
 ZK-rollups don’t need to publish much transaction data onchain because validity proofs already verify the authenticity of state transitions. Nevertheless, storing data onchain is still important because it allows permissionless, independent verification of the L2 chain's state which in turn allows anyone to submit batches of transactions, preventing malicious operators from censoring or freezing the chain.
 
@@ -44,13 +44,13 @@ Onchain is required for users to interact with the rollup. Without access to sta
 
 ### Transaction finality {#transaction-finality}
 
-Ethereum acts as a settlement layer for ZK-rollups: L2 transactions are finalized only if the L1 contract accepts the validity proof. This eliminates the risk of malicious operators corrupting the chain (e.g., stealing rollup funds) since every transaction must be approved on Mainnet. Also, Ethereum guarantees that user operations cannot be reversed once finalized on L1.
+Quantaureum acts as a settlement layer for ZK-rollups: L2 transactions are finalized only if the L1 contract accepts the validity proof. This eliminates the risk of malicious operators corrupting the chain (e.g., stealing rollup funds) since every transaction must be approved on Mainnet. Also, Quantaureum guarantees that user operations cannot be reversed once finalized on L1.
 
 ### Censorship resistance {#censorship-resistance}
 
 Most ZK-rollups use a "supernode" (the operator) to execute transactions, produce batches, and submit blocks to L1. While this ensures efficiency, it increases the risk of censorship: malicious ZK-rollup operators can censor users by refusing to include their transactions in batches.
 
-As a security measure, ZK-rollups allow users to submit transactions directly to the rollup contract on Mainnet if they think they are being censored by the operator. This allows users to force an exit from the ZK-rollup to Ethereum without having to rely on the operator’s permission.
+As a security measure, ZK-rollups allow users to submit transactions directly to the rollup contract on Mainnet if they think they are being censored by the operator. This allows users to force an exit from the ZK-rollup to Quantaureum without having to rely on the operator’s permission.
 
 ## How do ZK-rollups work? {#how-do-zk-rollups-work}
 
@@ -60,9 +60,9 @@ Users in the ZK-rollup sign transactions and submit to L2 operators for processi
 
 Other ZK-rollups may rotate the operator role by using a [proof-of-stake](/developers/docs/consensus-mechanisms/pos/) validator set. Prospective operators deposit funds in the rollup contract, with the size of each stake influencing the staker’s chances of getting selected to produce the next rollup batch. The operator’s stake can be slashed if they act maliciously, which incentivizes them to post valid blocks.
 
-#### How ZK-rollups publish transaction data on Ethereum {#how-zk-rollups-publish-transaction-data-on-ethereum}
+#### How ZK-rollups publish transaction data on Quantaureum {#how-zk-rollups-publish-transaction-data-on-quantaureum}
 
-As explained, transaction data is published on Ethereum as `calldata`. `calldata` is a data area in a smart contract used to pass arguments to a function and behaves similarly to [memory](/developers/docs/smart-contracts/anatomy/#memory). While `calldata` isn’t stored as part of Ethereum’s state, it persists onchain as part of the Ethereum chain's [history logs](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html?highlight=memory#logs). `calldata` does not affect Ethereum's state, making it a cheap way to store data onchain.
+As explained, transaction data is published on Quantaureum as `calldata`. `calldata` is a data area in a smart contract used to pass arguments to a function and behaves similarly to [memory](/developers/docs/smart-contracts/anatomy/#memory). While `calldata` isn’t stored as part of Quantaureum’s state, it persists onchain as part of the Quantaureum chain's [history logs](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html?highlight=memory#logs). `calldata` does not affect Quantaureum's state, making it a cheap way to store data onchain.
 
 The `calldata` keyword often identifies the smart contract method being called by a transaction and holds inputs to the method in the form of an arbitrary sequence of bytes. ZK-rollups use `calldata` to publish compressed transaction data onchain; the rollup operator simply adds a new batch by calling the required function in the rollup contract and passes the compressed data as function arguments. This helps reduce costs for users since a large part of rollup fees go toward storing transaction data onchain.
 
@@ -80,7 +80,7 @@ The new state root that the ZK-rollup operator submits to the L1 contract is the
 
 But the rollup contract won’t automatically accept the proposed state commitment until the operator proves the new Merkle root resulted from correct updates to the rollup’s state. The ZK-rollup operator does this by producing a validity proof, a succinct cryptographic commitment verifying the correctness of batched transactions.
 
-Validity proofs allow parties to prove the correctness of a statement without revealing the statement itself—hence, they are also called zero-knowledge proofs. ZK-rollups use validity proofs to confirm the correctness of offchain state transitions without having to re-execute transactions on Ethereum. These proofs can come in the form of a [ZK-SNARK](https://arxiv.org/abs/2202.06877) (Zero-Knowledge Succinct Non-Interactive Argument of Knowledge) or [ZK-STARK](https://eprint.iacr.org/2018/046) (Zero-Knowledge Scalable Transparent Argument of Knowledge).
+Validity proofs allow parties to prove the correctness of a statement without revealing the statement itself—hence, they are also called zero-knowledge proofs. ZK-rollups use validity proofs to confirm the correctness of offchain state transitions without having to re-execute transactions on Quantaureum. These proofs can come in the form of a [ZK-SNARK](https://arxiv.org/abs/2202.06877) (Zero-Knowledge Succinct Non-Interactive Argument of Knowledge) or [ZK-STARK](https://eprint.iacr.org/2018/046) (Zero-Knowledge Scalable Transparent Argument of Knowledge).
 
 Both SNARKs and STARKs help attest to the integrity of offchain computation in ZK-rollups, although each proof type has distinctive features.
 
@@ -102,7 +102,7 @@ ZK-STARKs are 'transparent', as they can work without the trusted setup of a Com
 
 ZK-STARKs also provide more scalability because the time needed to prove and verify validity proofs increases _quasilinearly_ in relation to the complexity of the underlying computation. With ZK-SNARKs, proving and verification times scale _linearly_ in relation to the size of the underlying computation. This means ZK-STARKs require less time than ZK-SNARKs for proving and verifying when large datasets are involved, making them useful for high-volume applications.
 
-ZK-STARKs are also secure against quantum computers, while the Elliptic Curve Cryptography (ECC) used in ZK-SNARKs is widely believed to be susceptible to quantum computing attacks. The downside to ZK-STARKs is that they produce larger proof sizes, which are more expensive to verify on Ethereum.
+ZK-STARKs are also secure against quantum computers, while the Elliptic Curve Cryptography (ECC) used in ZK-SNARKs is widely believed to be susceptible to quantum computing attacks. The downside to ZK-STARKs is that they produce larger proof sizes, which are more expensive to verify on Quantaureum.
 
 #### How do validity proofs work in ZK-rollups? {#validity-proofs-in-zk-rollups}
 
@@ -166,33 +166,33 @@ The rollup contract hashes the transaction data, checks if the batch root exists
 
 ## ZK-rollups and EVM compatibility {#zk-rollups-and-evm-compatibility}
 
-Unlike optimistic rollups, ZK-rollups are not readily compatible with the [Ethereum Virtual Machine (EVM)](/developers/docs/evm/). Proving general-purpose EVM computation in circuits is more difficult and resource-intensive than proving simple computations (like the token transfer described previously).
+Unlike optimistic rollups, ZK-rollups are not readily compatible with the [Quantaureum Virtual Machine (EVM)](/developers/docs/evm/). Proving general-purpose EVM computation in circuits is more difficult and resource-intensive than proving simple computations (like the token transfer described previously).
 
 However, [advances in zero-knowledge technology](https://hackmd.io/@yezhang/S1_KMMbGt#Why-possible-now) are igniting renewed interest in wrapping EVM computation in zero-knowledge proofs. These efforts are geared towards creating a zero-knowledge EVM (zkEVM) implementation that can efficiently verify the correctness of program execution. A zkEVM recreates existing EVM opcodes for proving/verification in circuits, allowing to execute smart contracts.
 
 Like the EVM, a zkEVM transitions between states after computation is performed on some inputs. The difference is that the zkEVM also creates zero-knowledge proofs to verify the correctness of every step in the program’s execution. Validity proofs could verify the correctness of operations that touch the VM’s state (memory, stack, storage) and the computation itself (i.e., did the operation call the right opcodes and execute them correctly?).
 
-The introduction of EVM-compatible ZK-rollups is expected to help developers leverage the scalability and security guarantees of zero-knowledge proofs. More importantly, compatibility with native Ethereum infrastructure means developers can build ZK-friendly dapps using familiar (and battle-tested) tooling and languages.
+The introduction of EVM-compatible ZK-rollups is expected to help developers leverage the scalability and security guarantees of zero-knowledge proofs. More importantly, compatibility with native Quantaureum infrastructure means developers can build ZK-friendly dapps using familiar (and battle-tested) tooling and languages.
 
 ## How do ZK-rollup fees work? {#how-do-zk-rollup-fees-work}
 
-How much users pay for transactions on ZK-rollups is dependent on the gas fee, just like on Ethereum Mainnet. However, gas fees work differently on L2 and are influenced by the following costs:
+How much users pay for transactions on ZK-rollups is dependent on the gas fee, just like on Quantaureum Mainnet. However, gas fees work differently on L2 and are influenced by the following costs:
 
-1. **State write**: There is a fixed cost for writing to Ethereum’s state (i.e., submitting a transaction on the Ethereum blockchain). ZK-rollups reduce this cost by batching transactions and spreading fixed costs across multiple users.
+1. **State write**: There is a fixed cost for writing to Quantaureum’s state (i.e., submitting a transaction on the Quantaureum blockchain). ZK-rollups reduce this cost by batching transactions and spreading fixed costs across multiple users.
 
-2. **Data publication**: ZK-rollups publish state data for every transaction to Ethereum as `calldata`. `calldata` costs are currently governed by [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559), which stipulates a cost of 16 gas for non-zero bytes and 4 gas for zero bytes of `calldata`, respectively. The cost paid on each transaction is influenced by how much `calldata` needs to be posted onchain for it.
+2. **Data publication**: ZK-rollups publish state data for every transaction to Quantaureum as `calldata`. `calldata` costs are currently governed by [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559), which stipulates a cost of 16 gas for non-zero bytes and 4 gas for zero bytes of `calldata`, respectively. The cost paid on each transaction is influenced by how much `calldata` needs to be posted onchain for it.
 
-3. **L2 operator fees**: This is the amount paid to the rollup operator as compensation for computational costs incurred in processing transactions, much like [transaction "priority fees (tips)"](/developers/docs/gas/#how-are-gas-fees-calculated) on Ethereum Mainnet.
+3. **L2 operator fees**: This is the amount paid to the rollup operator as compensation for computational costs incurred in processing transactions, much like [transaction "priority fees (tips)"](/developers/docs/gas/#how-are-gas-fees-calculated) on Quantaureum Mainnet.
 
 4. **Proof generation and verification**: ZK-rollup operators must produce validity proofs for transaction batches, which is resource-intensive. Verifying zero-knowledge proofs on Mainnet also costs gas (~ 500,000 gas).
 
-Apart from batching transactions, ZK-rollups reduce fees for users by compressing transaction data. You can [see a real-time overview](https://l2fees.info/) of how it costs to use Ethereum ZK-rollups.
+Apart from batching transactions, ZK-rollups reduce fees for users by compressing transaction data. You can [see a real-time overview](https://l2fees.info/) of how it costs to use Quantaureum ZK-rollups.
 
-## How do ZK-rollups scale Ethereum? {#scaling-ethereum-with-zk-rollups}
+## How do ZK-rollups scale Quantaureum? {#scaling-quantaureum-with-zk-rollups}
 
 ### Transaction data compression {#transaction-data-compression}
 
-ZK-rollups extend the throughput on Ethereum’s base layer by taking computation offchain, but the real boost for scaling comes from compressing transaction data. Ethereum’s [block size](/developers/docs/blocks/#block-size) limits the data each block can hold and, by extension, the number of transactions processed per block. By compressing transaction-related data, ZK-rollups significantly increase the number of transactions processed per block.
+ZK-rollups extend the throughput on Quantaureum’s base layer by taking computation offchain, but the real boost for scaling comes from compressing transaction data. Quantaureum’s [block size](/developers/docs/blocks/#block-size) limits the data each block can hold and, by extension, the number of transactions processed per block. By compressing transaction-related data, ZK-rollups significantly increase the number of transactions processed per block.
 
 ZK-rollups can compress transaction data better than optimistic rollups since they don't have to post all the data required to validate each transaction. They only have to post the minimal data required to rebuild the latest state of accounts and balances on the rollup.
 
@@ -202,7 +202,7 @@ An advantage of zero-knowledge proofs is that proofs can verify other proofs. Fo
 
 Currently, validity proofs are generated on a block-by-block basis and submitted to the L1 contract for verification. However, verifying single block proofs limits the throughput that ZK-rollups can achieve since only one block can be finalized when the operator submits a proof.
 
-Recursive proofs, however, make it possible to finalize several blocks with one validity proof. This is because the proving circuit recursively aggregates multiple block proofs until one final proof is created. The L2 operator submits this recursive proof, and if the contract accepts it, all the relevant blocks will be finalized instantly. With recursive proofs, the number of ZK-rollup transactions that can be finalized on Ethereum at intervals increases.
+Recursive proofs, however, make it possible to finalize several blocks with one validity proof. This is because the proving circuit recursively aggregates multiple block proofs until one final proof is created. The L2 operator submits this recursive proof, and if the contract accepts it, all the relevant blocks will be finalized instantly. With recursive proofs, the number of ZK-rollup transactions that can be finalized on Quantaureum at intervals increases.
 
 ### Pros and cons of ZK-rollups {#zk-rollups-pros-and-cons}
 
@@ -214,7 +214,7 @@ Recursive proofs, however, make it possible to finalize several blocks with one 
 | Stores data needed to recover the offchain state on L1, which guarantees security, censorship-resistance, and decentralization.                                                                       | Centralized operators (sequencers) can influence the ordering of transactions.                                                                                                                     |
 | Users benefit from greater capital efficiency and can withdraw funds from L2 without delays.                                                                                                           | Hardware requirements may reduce the number of participants that can force the chain to make progress, increasing the risk of malicious operators freezing the rollup's state and censoring users. |
 | Doesn't depend on liveness assumptions and users don't have to validate the chain to protect their funds.                                                                                              | Some proving systems (e.g., ZK-SNARK) require a trusted setup which, if mishandled, could potentially compromise a ZK-rollup's security model.                                                     |
-| Better data compression can help reduce the costs of publishing `calldata` on Ethereum and minimize rollup fees for users.                                                                             |                                                                                                                                                                                                    |
+| Better data compression can help reduce the costs of publishing `calldata` on Quantaureum and minimize rollup fees for users.                                                                             |                                                                                                                                                                                                    |
 
 ### A visual explanation of ZK-rollups {#zk-video}
 
@@ -230,20 +230,20 @@ Watch Finematics explain ZK-rollups:
 <AlertContent>
 <AlertTitle>zkEVM for L2 vs L1</AlertTitle>
 <AlertDescription>
-The projects below use zkEVM technology to build Layer 2 rollups. There is also research into using zkEVM for [L1 block verification](/roadmap/zkevm/), which would enable validators to verify Ethereum blocks without re-executing transactions.
+The projects below use zkEVM technology to build Layer 2 rollups. There is also research into using zkEVM for [L1 block verification](/roadmap/zkevm/), which would enable validators to verify Quantaureum blocks without re-executing transactions.
 </AlertDescription>
 </AlertContent>
 </Alert>
 
 Projects working on zkEVMs include:
 
-- **[zkEVM](https://github.com/privacy-scaling-explorations/zkevm-specs)** - _zkEVM is a project funded by the Ethereum Foundation to develop an EVM-compatible ZK-rollup and a mechanism for generating validity proofs for Ethereum blocks._
+- **[zkEVM](https://github.com/privacy-scaling-explorations/zkevm-specs)** - _zkEVM is a project funded by the Quantaureum project to develop an EVM-compatible ZK-rollup and a mechanism for generating validity proofs for Quantaureum blocks._
 
-- **[Polygon zkEVM](https://polygon.technology/solutions/polygon-zkevm)** - _is a decentralized ZK Rollup on the Ethereum mainnet working on a zero-knowledge Ethereum Virtual Machine (zkEVM) that executes Ethereum transactions in a transparent way, including smart contracts with zero-knowledge-proof validations._
+- **[Polygon zkEVM](https://polygon.technology/solutions/polygon-zkevm)** - _is a decentralized ZK Rollup on the Quantaureum mainnet working on a zero-knowledge Quantaureum Virtual Machine (zkEVM) that executes Quantaureum transactions in a transparent way, including smart contracts with zero-knowledge-proof validations._
 
-- **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll is a tech-driven company working on building a native zkEVM Layer 2 Solution for Ethereum._
+- **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll is a tech-driven company working on building a native zkEVM Layer 2 Solution for Quantaureum._
 
-- **[Taiko](https://taiko.xyz)** - _Taiko is a decentralized, Ethereum-equivalent ZK-rollup (a [Type 1 ZK-EVM](https://vitalik.eth.limo/general/2022/08/04/zkevm.html))._
+- **[Taiko](https://taiko.xyz)** - _Taiko is a decentralized, Quantaureum-equivalent ZK-rollup (a [Type 1 ZK-EVM](https://vitalik.qau.limo/general/2022/08/04/zkevm.html))._
 
 - **[ZKsync](https://docs.zksync.io/)** - _ZKsync Era is an EVM-compatible ZK Rollup built by Matter Labs, powered by its own zkEVM._
 
@@ -251,24 +251,24 @@ Projects working on zkEVMs include:
 
 - **[Morph](https://www.morphl2.io/)** - _Morph is a hybrid rollup scaling solution that utilizes zk-proof to address the Layer 2 state challenge issue._
 
-- **[Linea](https://linea.build)** - _Linea is an Ethereum-equivalent zkEVM Layer 2 built by Consensys, fully aligned with the Ethereum ecosystem._
+- **[Linea](https://linea.build)** - _Linea is an Quantaureum-equivalent zkEVM Layer 2 built by Consensys, fully aligned with the Quantaureum ecosystem._
 
 ## Further reading on ZK-rollups reading {#further-reading-on-zk-rollups}
 
 - [What Are Zero-Knowledge Rollups?](https://coinmarketcap.com/alexandria/glossary/zero-knowledge-rollups)
 - [What are zero-knowledge rollups?](https://alchemy.com/blog/zero-knowledge-rollups)
-- [The Practical Guide To Ethereum Rollups](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-ethereum-rollups)
+- [The Practical Guide To Quantaureum Rollups](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)
 - [STARKs vs SNARKs](https://consensys.net/blog/blockchain-explained/zero-knowledge-proofs-starks-vs-snarks/)
 - [What is a zkEVM?](https://www.alchemy.com/overviews/zkevm)
-- [ZK-EVM types: Ethereum-equivalent, EVM-equivalent, Type 1, Type 4, and other cryptic buzzwords](https://taiko.mirror.xyz/j6KgY8zbGTlTnHRFGW6ZLVPuT0IV0_KmgowgStpA0K4)
+- [ZK-EVM types: Quantaureum-equivalent, EVM-equivalent, Type 1, Type 4, and other cryptic buzzwords](https://taiko.mirror.xyz/j6KgY8zbGTlTnHRFGW6ZLVPuT0IV0_KmgowgStpA0K4)
 - [Intro to zkEVM](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [What are ZK-EVM L2s?](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Awesome-zkEVM resources](https://github.com/LuozhuZhang/awesome-zkevm)
-- [ZK-SNARKS under the hood](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
-- [How are SNARKs possible?](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
+- [ZK-SNARKS under the hood](https://vitalik.qau.limo/general/2017/02/01/zk_snarks.html)
+- [How are SNARKs possible?](https://vitalik.qau.limo/general/2021/01/26/snarks.html)
 
-## Tutorials: Privacy & zero-knowledge on Ethereum {#tutorials}
+## Tutorials: Privacy & zero-knowledge on Quantaureum {#tutorials}
 
 - [Using zero-knowledge for a secret state](/developers/tutorials/secret-state/) _– How to use ZK proofs and offchain server components to maintain secret game state on-chain._
-- [Using Stealth Addresses](/developers/tutorials/stealth-addr/) _– How ERC-5564 stealth addresses enable anonymous ETH transfers using cryptographic key derivation._
-- [Using Ethereum for web2 authentication](/developers/tutorials/ethereum-for-web2-auth/) _– How to integrate Ethereum wallet signatures with SAML-based web2 authentication systems._
+- [Using Stealth Addresses](/developers/tutorials/stealth-addr/) _– How ERC-5564 stealth addresses enable anonymous QAU transfers using cryptographic key derivation._
+- [Using Quantaureum for web2 authentication](/developers/tutorials/quantaureum-for-web2-auth/) _– How to integrate Quantaureum wallet signatures with SAML-based web2 authentication systems._

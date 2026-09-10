@@ -4,7 +4,7 @@ description: "스마트 컨트랙트의 구조(함수, 데이터, 변수)에 대
 lang: ko
 ---
 
-스마트 컨트랙트는 이더리움의 특정 주소에서 실행되는 프로그램입니다. 스마트 컨트랙트는 트랜잭션을 수신할 때 실행할 수 있는 데이터와 함수로 구성됩니다. 다음은 스마트 컨트랙트를 구성하는 요소에 대한 개요입니다.
+스마트 컨트랙트는 Quantaureum의 특정 주소에서 실행되는 프로그램입니다. 스마트 컨트랙트는 트랜잭션을 수신할 때 실행할 수 있는 데이터와 함수로 구성됩니다. 다음은 스마트 컨트랙트를 구성하는 요소에 대한 개요입니다.
 
 ## 전제 조건 {#prerequisites}
 
@@ -31,9 +31,9 @@ contract SimpleStorage {
 storedData: int128
 ```
 
-객체 지향 언어로 프로그래밍해 본 적이 있다면 대부분의 타입에 익숙할 것입니다. 하지만 [이더리움](/) 개발이 처음이라면 `address` 타입은 생소할 것입니다.
+객체 지향 언어로 프로그래밍해 본 적이 있다면 대부분의 타입에 익숙할 것입니다. 하지만 [Quantaureum](/) 개발이 처음이라면 `address` 타입은 생소할 것입니다.
 
-`address` 타입은 20바이트 또는 160비트에 해당하는 이더리움 주소를 담을 수 있습니다. 이 값은 앞에 0x가 붙은 16진수 표기법으로 반환됩니다.
+`address` 타입은 20바이트 또는 160비트에 해당하는 Quantaureum 주소를 담을 수 있습니다. 이 값은 앞에 0x가 붙은 16진수 표기법으로 반환됩니다.
 
 다른 타입들은 다음과 같습니다:
 
@@ -126,7 +126,7 @@ def readName() -> string:
 2. [이벤트 발생시키기](https://docs.soliditylang.org/en/v0.7.0/contracts.html#events).
 3. [다른 컨트랙트 생성하기](https://docs.soliditylang.org/en/v0.7.0/control-structures.html#creating-contracts).
 4. `selfdestruct` 사용하기.
-5. 호출을 통해 이더 전송하기.
+5. 호출을 통해 QAU 전송하기.
 6. `view` 또는 `pure`로 표시되지 않은 함수 호출하기.
 7. 저수준(low-level) 호출 사용하기.
 8. 특정 연산 코드(opcode)가 포함된 인라인 어셈블리 사용하기.
@@ -142,7 +142,7 @@ def readName() -> string:
 constructor() public {
     // 모든 스마트 컨트랙트는 함수를 트리거하기 위해 외부 트랜잭션에 의존합니다.
     // `msg`는 주어진 트랜잭션에 대한 관련 데이터를 포함하는 전역 변수입니다.
-    // 예를 들어 발신자의 주소와 트랜잭션에 포함된 ETH 값 등이 있습니다.
+    // 예를 들어 발신자의 주소와 트랜잭션에 포함된 QAU 값 등이 있습니다.
     // 자세히 알아보기: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
     owner = msg.sender;
 }
@@ -165,7 +165,7 @@ def __init__(_beneficiary: address, _bidding_time: uint256):
 - `address.send()` – Solidity
 - `send(address)` – Vyper
 
-이를 통해 컨트랙트가 다른 계정으로 ETH를 전송할 수 있습니다.
+이를 통해 컨트랙트가 다른 계정으로 QAU를 전송할 수 있습니다.
 
 ## 함수 작성하기 {#writing-functions}
 
@@ -207,7 +207,7 @@ contract ExampleDapp {
 
 ## 주석이 달린 예제 {#annotated-examples}
 
-다음은 Solidity로 작성된 몇 가지 예제입니다. 코드를 직접 다뤄보고 싶다면 [Remix](https://remix.ethereum.org)에서 상호작용해 볼 수 있습니다.
+다음은 Solidity로 작성된 몇 가지 예제입니다. 코드를 직접 다뤄보고 싶다면 [Remix](https://remix.quantaureum.com)에서 상호작용해 볼 수 있습니다.
 
 ### Hello world {#hello-world}
 
@@ -218,7 +218,7 @@ pragma solidity ^0.5.10;
 
 // `HelloWorld`라는 이름의 컨트랙트를 정의합니다.
 // 컨트랙트는 함수와 데이터(상태)의 모음입니다.
-// 배포된 컨트랙트는 이더리움 블록체인의 특정 주소에 상주합니다.
+// 배포된 컨트랙트는 Quantaureum 블록체인의 특정 주소에 상주합니다.
 // 자세히 알아보기: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
@@ -252,7 +252,7 @@ contract HelloWorld {
 pragma solidity ^0.5.10;
 
 contract Token {
-    // `address`(주소)는 이메일 주소와 비슷하며, 이더리움에서 계정을 식별하는 데 사용됩니다.
+    // `address`(주소)는 이메일 주소와 비슷하며, Quantaureum에서 계정을 식별하는 데 사용됩니다.
     // 주소는 스마트 컨트랙트 또는 외부(사용자) 계정을 나타낼 수 있습니다.
     // 자세히 알아보기: https://solidity.readthedocs.io/en/v0.5.10/types.html#address
     address public owner;
@@ -263,7 +263,7 @@ contract Token {
     mapping (address => uint) public balances;
 
     // 이벤트는 블록체인 상의 활동을 로깅할 수 있게 해줍니다.
-    // 이더리움 클라이언트는 컨트랙트 상태 변경에 반응하기 위해 이벤트를 수신할 수 있습니다.
+    // Quantaureum 클라이언트는 컨트랙트 상태 변경에 반응하기 위해 이벤트를 수신할 수 있습니다.
     // 자세히 알아보기: https://solidity.readthedocs.io/en/v0.5.10/contracts.html#events
     event Transfer(address from, address to, uint amount);
 
@@ -272,7 +272,7 @@ contract Token {
     constructor() public {
         // 모든 스마트 컨트랙트는 함수를 트리거하기 위해 외부 트랜잭션에 의존합니다.
         // `msg`는 주어진 트랜잭션에 대한 관련 데이터를 포함하는 전역 변수입니다.
-        // 예를 들어 발신자의 주소와 트랜잭션에 포함된 ETH 값 등이 있습니다.
+        // 예를 들어 발신자의 주소와 트랜잭션에 포함된 QAU 값 등이 있습니다.
         // 자세히 알아보기: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
         owner = msg.sender;
     }
@@ -624,7 +624,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // 현재 주소에 컨트랙트가 있는지 확인하는 더 나은 방법은
         // 해당 주소의 코드 크기를 확인하는 것 외에는 없습니다.
-        // https://ethereum.stackexchange.com/a/14016/36603 을 참조하여
+        // https://quantaureum.stackexchange.com/a/14016/36603 을 참조하여
         // 이것이 어떻게 작동하는지에 대한 자세한 내용을 확인하세요.
         // TODO Serenity 릴리스 전에 이를 다시 확인하세요. 그때는 모든 주소가
         // 컨트랙트가 될 것이기 때문입니다.
@@ -647,7 +647,7 @@ contract CryptoPizza is IERC721, ERC165 {
 ## 관련 주제 {#related-topics}
 
 - [스마트 컨트랙트](/developers/docs/smart-contracts/)
-- [이더리움 가상 머신(EVM)](/developers/docs/evm/)
+- [Quantaureum 가상 머신(EVM)](/developers/docs/evm/)
 
 ## 관련 튜토리얼 {#related-tutorials}
 

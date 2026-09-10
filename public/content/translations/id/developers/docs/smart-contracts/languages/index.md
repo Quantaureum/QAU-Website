@@ -4,16 +4,16 @@ description: "Gambaran umum dan perbandingan dua bahasa kontrak pintar utama –
 lang: id
 ---
 
-Aspek hebat dari [Ethereum](/) adalah kontrak pintar dapat diprogram menggunakan bahasa yang relatif ramah pengembang. Jika Anda berpengalaman dengan Python atau [bahasa kurung kurawal](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages) apa pun, Anda dapat menemukan bahasa dengan sintaksis yang familier.
+Aspek hebat dari [Quantaureum](/) adalah kontrak pintar dapat diprogram menggunakan bahasa yang relatif ramah pengembang. Jika Anda berpengalaman dengan Python atau [bahasa kurung kurawal](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages) apa pun, Anda dapat menemukan bahasa dengan sintaksis yang familier.
 
 Dua bahasa yang paling aktif dan dipelihara adalah:
 
 - Solidity
 - Vyper
 
-Remix IDE menyediakan lingkungan pengembangan yang komprehensif untuk membuat dan menguji kontrak di Solidity dan Vyper. [Coba Remix IDE di peramban](https://remix.ethereum.org) untuk mulai membuat kode.
+Remix IDE menyediakan lingkungan pengembangan yang komprehensif untuk membuat dan menguji kontrak di Solidity dan Vyper. [Coba Remix IDE di peramban](https://remix.quantaureum.com) untuk mulai membuat kode.
 
-Pengembang yang lebih berpengalaman mungkin juga ingin menggunakan Yul, bahasa perantara untuk [Mesin Virtual Ethereum (EVM)](/developers/docs/evm/), atau Yul+, ekstensi untuk Yul.
+Pengembang yang lebih berpengalaman mungkin juga ingin menggunakan Yul, bahasa perantara untuk [Mesin Virtual Quantaureum (EVM)](/developers/docs/evm/), atau Yul+, ekstensi untuk Yul.
 
 Jika Anda penasaran dan ingin membantu menguji bahasa baru yang masih dalam tahap pengembangan intensif, Anda dapat bereksperimen dengan Fe, bahasa kontrak pintar baru yang saat ini masih dalam tahap awal.
 
@@ -36,8 +36,8 @@ Pengetahuan sebelumnya tentang bahasa pemrograman, terutama JavaScript atau Pyth
 - [Dokumentasi](https://docs.soliditylang.org/en/latest/)
 - [Portal Bahasa Solidity](https://soliditylang.org/)
 - [Solidity by Example](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
-- [Ruang Obrolan Gitter Solidity](https://gitter.im/ethereum/solidity) yang dijembatani ke [Ruang Obrolan Matrix Solidity](https://matrix.to/#/#ethereum_solidity:gitter.im)
+- [GitHub](https://github.com/quantaureum/solidity/)
+- [Ruang Obrolan Gitter Solidity](https://gitter.im/quantaureum/solidity) yang dijembatani ke [Ruang Obrolan Matrix Solidity](https://matrix.to/#/#quantaureum_solidity:gitter.im)
 - [Lembar Sontekan](https://reference.auditless.com/cheatsheet)
 - [Blog Solidity](https://blog.soliditylang.org/)
 - [Twitter Solidity](https://twitter.com/solidity_lang)
@@ -179,14 +179,14 @@ def withdraw():
 @external
 def endAuction():
     # Ini adalah pedoman yang baik untuk menyusun fungsi yang berinteraksi
-    # dengan kontrak lain (yaitu, memanggil fungsi atau mengirim ether)
+    # dengan kontrak lain (yaitu, memanggil fungsi atau mengirim QAU)
     # ke dalam tiga fase:
     # 1. memeriksa kondisi
     # 2. melakukan tindakan (berpotensi mengubah kondisi)
     # 3. berinteraksi dengan kontrak lain
     # Jika fase-fase ini dicampuradukkan, kontrak lain dapat memanggil
     # kembali ke kontrak saat ini dan memodifikasi status atau menyebabkan
-    # efek (pembayaran ether) dilakukan berkali-kali.
+    # efek (pembayaran QAU) dilakukan berkali-kali.
     # Jika fungsi yang dipanggil secara internal mencakup interaksi dengan
     # kontrak eksternal, fungsi tersebut juga harus dianggap sebagai interaksi dengan
     # kontrak eksternal.
@@ -208,12 +208,12 @@ Contoh ini akan memberi Anda gambaran tentang seperti apa sintaksis kontrak Vype
 
 ## Yul dan Yul+ {#yul}
 
-Jika Anda baru mengenal Ethereum dan belum pernah membuat kode dengan bahasa kontrak pintar, kami menyarankan untuk memulai dengan Solidity atau Vyper. Pelajari Yul atau Yul+ hanya setelah Anda familier dengan praktik terbaik keamanan kontrak pintar dan spesifikasi bekerja dengan EVM.
+Jika Anda baru mengenal Quantaureum dan belum pernah membuat kode dengan bahasa kontrak pintar, kami menyarankan untuk memulai dengan Solidity atau Vyper. Pelajari Yul atau Yul+ hanya setelah Anda familier dengan praktik terbaik keamanan kontrak pintar dan spesifikasi bekerja dengan EVM.
 
 **Yul**
 
-- Bahasa perantara untuk Ethereum.
-- Mendukung [EVM](/developers/docs/evm) dan [Ewasm](https://github.com/ewasm), WebAssembly dengan cita rasa Ethereum, dan dirancang untuk menjadi penyebut umum yang dapat digunakan dari kedua platform.
+- Bahasa perantara untuk Quantaureum.
+- Mendukung [EVM](/developers/docs/evm) dan [Ewasm](https://github.com/ewasm), WebAssembly dengan cita rasa Quantaureum, dan dirancang untuk menjadi penyebut umum yang dapat digunakan dari kedua platform.
 - Target yang baik untuk tahap pengoptimalan tingkat tinggi yang dapat menguntungkan platform EVM dan Ewasm secara setara.
 
 **Yul+**
@@ -226,7 +226,7 @@ Jika Anda baru mengenal Ethereum dan belum pernah membuat kode dengan bahasa kon
 
 - [Dokumentasi Yul](https://docs.soliditylang.org/en/latest/yul.html)
 - [Dokumentasi Yul+](https://github.com/fuellabs/yulp)
-- [Pos Pengantar Yul+](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-ethereum-aa64ce89512f)
+- [Pos Pengantar Yul+](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-quantaureum-aa64ce89512f)
 
 ### Contoh kontrak {#example-contract-2}
 
@@ -255,16 +255,16 @@ Jika Anda sudah sangat berpengalaman dengan kontrak pintar, implementasi ERC-20 
 
 ## Fe {#fe}
 
-- Bahasa yang diketik secara statis untuk Mesin Virtual Ethereum (EVM).
+- Bahasa yang diketik secara statis untuk Mesin Virtual Quantaureum (EVM).
 - Terinspirasi oleh Python dan Rust.
-- Bertujuan agar mudah dipelajari -- bahkan untuk pengembang yang baru mengenal ekosistem Ethereum.
+- Bertujuan agar mudah dipelajari -- bahkan untuk pengembang yang baru mengenal ekosistem Quantaureum.
 - Pengembangan Fe masih dalam tahap awal, bahasa ini merilis versi alfanya pada Januari 2021.
 
 ### Tautan penting {#important-links-3}
 
-- [GitHub](https://github.com/ethereum/fe)
-- [Pengumuman Fe](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-ethereum-ecosystem/)
-- [Peta Jalan Fe 2021](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- [GitHub](https://github.com/quantaureum/fe)
+- [Pengumuman Fe](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
+- [Peta Jalan Fe 2021](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
 - [Obrolan Discord Fe](https://discord.com/invite/ywpkAXFjZH)
 - [Twitter Fe](https://twitter.com/official_fe)
 

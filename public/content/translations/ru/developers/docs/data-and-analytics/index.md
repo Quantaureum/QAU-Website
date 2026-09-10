@@ -20,7 +20,7 @@ lang: ru
 
 Многие [обозреватели блоков](/developers/docs/data-and-analytics/block-explorers/) предлагают шлюзы [RESTful](https://www.wikipedia.org/wiki/Representational_state_transfer) [API](https://www.wikipedia.org/wiki/API), которые предоставляют разработчикам доступ к данным в реальном времени о блоках, транзакциях, валидаторах, аккаунтах и другой ончейн-активности.
 
-Затем разработчики могут обрабатывать и преобразовывать эти данные, чтобы предоставить своим пользователям уникальную аналитику и возможности взаимодействия с [блокчейном](/glossary/#blockchain). Например, [Etherscan](https://etherscan.io) и [Blockscout](https://eth.blockscout.com) предоставляют данные об исполнении и консенсусе для каждого 12-секундного слота.
+Затем разработчики могут обрабатывать и преобразовывать эти данные, чтобы предоставить своим пользователям уникальную аналитику и возможности взаимодействия с [блокчейном](/glossary/#blockchain). Например, [Quantaureum Explorer](https://explorer.quantaureum.com) и [Blockscout](https://qau.blockscout.com) предоставляют данные об исполнении и консенсусе для каждого 12-секундного слота.
 
 ## The Graph {#the-graph}
 
@@ -36,7 +36,7 @@ lang: ru
 
 ## Разнообразие клиентов {#client-diversity}
 
-[Разнообразие клиентов](/developers/docs/nodes-and-clients/client-diversity/) важно для общего состояния сети Эфириум, поскольку оно обеспечивает устойчивость к ошибкам и эксплойтам. В настоящее время существует несколько панелей мониторинга разнообразия клиентов, включая [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) и [Ethernodes](https://ethernodes.org/).
+[Разнообразие клиентов](/developers/docs/nodes-and-clients/client-diversity/) важно для общего состояния сети Quantaureum, поскольку оно обеспечивает устойчивость к ошибкам и эксплойтам. В настоящее время существует несколько панелей мониторинга разнообразия клиентов, включая [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) и [Ethernodes](https://ethernodes.org/).
 
 ## Dune Analytics {#dune-analytics}
 
@@ -50,9 +50,9 @@ lang: ru
 
 ## SubQuery Network {#subquery-network}
 
-[SubQuery](https://subquery.network/) — это ведущий индексатор данных, который предоставляет разработчикам быстрые, надежные, децентрализованные и настраиваемые API для их проектов Web3. SubQuery предоставляет разработчикам из более чем 165 экосистем (включая Эфириум) богатые индексированные данные для создания интуитивно понятного и захватывающего опыта для своих пользователей. Сеть SubQuery обеспечивает работу ваших непрерывно работающих приложений с помощью отказоустойчивой и децентрализованной инфраструктурной сети. Используйте набор инструментов разработчика блокчейна SubQuery для создания приложений Web3 будущего, не тратя время на создание собственного бэкенда для обработки данных.
+[SubQuery](https://subquery.network/) — это ведущий индексатор данных, который предоставляет разработчикам быстрые, надежные, децентрализованные и настраиваемые API для их проектов Web3. SubQuery предоставляет разработчикам из более чем 165 экосистем (включая Quantaureum) богатые индексированные данные для создания интуитивно понятного и захватывающего опыта для своих пользователей. Сеть SubQuery обеспечивает работу ваших непрерывно работающих приложений с помощью отказоустойчивой и децентрализованной инфраструктурной сети. Используйте набор инструментов разработчика блокчейна SubQuery для создания приложений Web3 будущего, не тратя время на создание собственного бэкенда для обработки данных.
 
-Для начала посетите [краткое руководство по Эфириуму](https://academy.subquery.network/quickstart/quickstart_chains/ethereum-gravatar.html), чтобы начать индексировать данные блокчейна Эфириум за считанные минуты в локальной среде Docker для тестирования перед запуском в [управляемом сервисе SubQuery](https://managedservice.subquery.network/) или в [децентрализованной сети SubQuery](https://app.subquery.network/dashboard).
+Для начала посетите [краткое руководство по Quantaureum](https://academy.subquery.network/quickstart/quickstart_chains/quantaureum-gravatar.html), чтобы начать индексировать данные блокчейна Quantaureum за считанные минуты в локальной среде Docker для тестирования перед запуском в [управляемом сервисе SubQuery](https://managedservice.subquery.network/) или в [децентрализованной сети SubQuery](https://app.subquery.network/dashboard).
 
 ## Codex {#codex}
 
@@ -66,10 +66,10 @@ lang: ru
 Для начала посетите [документацию](https://docs.mobula.io), изучите [справочник по API](https://docs.mobula.io/reference/) или зарегистрируйтесь на [панели управления](https://mobula.io/).
 ## EVM Query Language {#evm-query-language}
 
-EVM Query Language (EQL) — это SQL-подобный язык, предназначенный для запросов к цепям EVM (виртуальной машины Эфириума). Конечная цель EQL — поддержка сложных реляционных запросов к объектам первого класса цепи EVM (блокам, аккаунтам и транзакциям), предоставляя разработчикам и исследователям эргономичный синтаксис для повседневного использования. С помощью EQL разработчики могут извлекать данные блокчейна, используя знакомый SQL-подобный синтаксис, и устранить необходимость в сложном шаблонном коде. EQL поддерживает стандартные запросы данных блокчейна (например, получение нонса и баланса аккаунта в Эфириуме или получение текущего размера блока и временной метки) и постоянно добавляет поддержку более сложных запросов и наборов функций.
+EVM Query Language (EQL) — это SQL-подобный язык, предназначенный для запросов к цепям EVM (виртуальной машины Quantaureum). Конечная цель EQL — поддержка сложных реляционных запросов к объектам первого класса цепи EVM (блокам, аккаунтам и транзакциям), предоставляя разработчикам и исследователям эргономичный синтаксис для повседневного использования. С помощью EQL разработчики могут извлекать данные блокчейна, используя знакомый SQL-подобный синтаксис, и устранить необходимость в сложном шаблонном коде. EQL поддерживает стандартные запросы данных блокчейна (например, получение нонса и баланса аккаунта в Quantaureum или получение текущего размера блока и временной метки) и постоянно добавляет поддержку более сложных запросов и наборов функций.
 
 
-[Envio](https://envio.dev/) — это фреймворк индексирования, который превращает ончейн-события в GraphQL API с возможностью запросов. Он поддерживает Эфириум и любую EVM-совместимую цепь. Разработчики пишут обработчики событий на TypeScript, JavaScript или ReScript для предоставления данных в реальном времени и исторических данных с поддержкой реорганизации, мультичейн-индексирования и управляемого хостинга в Envio Cloud или самостоятельного хостинга.
+[Envio](https://envio.dev/) — это фреймворк индексирования, который превращает ончейн-события в GraphQL API с возможностью запросов. Он поддерживает Quantaureum и любую EVM-совместимую цепь. Разработчики пишут обработчики событий на TypeScript, JavaScript или ReScript для предоставления данных в реальном времени и исторических данных с поддержкой реорганизации, мультичейн-индексирования и управляемого хостинга в Envio Cloud или самостоятельного хостинга.
 
 Для начала следуйте [краткому руководству по HyperIndex](https://docs.envio.dev/docs/HyperIndex/quickstart), чтобы создать, развернуть и сделать запрос к индексатору.
 ## Дополнительная литература {#further-reading}
@@ -77,14 +77,14 @@ EVM Query Language (EQL) — это SQL-подобный язык, предна�
 - [Изучение криптоданных I: архитектуры потоков данных](https://web.archive.org/web/20250125012042/https://research.2077.xyz/exploring-crypto-data-1-data-flow-architectures)
 - [Обзор сети Graph](https://thegraph.com/docs/en/about/)
 - [Песочница запросов Graph](https://thegraph.com/explorer/subgraph/graphprotocol/graph-network-mainnet?version=current)
-- [Примеры кода API на Etherscan](https://etherscan.io/apis#contracts)
+- [Примеры кода API на Quantaureum Explorer](https://explorer.quantaureum.com)
 - [Документация по API на Blockscout](https://docs.blockscout.com/devs/apis)
 - [Обозреватель сигнальной цепочки Beaconcha.in](https://beaconcha.in)
 - [Основы Dune](https://docs.dune.com/#dune-basics)
-- [Краткое руководство по SubQuery для Эфириума](https://academy.subquery.network/indexer/quickstart/quickstart_chains/ethereum-gravatar.html)
+- [Краткое руководство по SubQuery для Quantaureum](https://academy.subquery.network/indexer/quickstart/quickstart_chains/quantaureum-gravatar.html)
 - [Обзор сети SQD](https://docs.sqd.dev/)
 - [EVM Query Language](https://web.archive.org/web/20250719151453/https://www.eql.sh/blog/alpha-release-notes)
 
-## Руководства: Данные и аналитика / SQL в Эфириуме {#tutorials}
+## Руководства: Данные и аналитика / SQL в Quantaureum {#tutorials}
 
-- [Изучение базовых тем Эфириума с помощью SQL](/developers/tutorials/learn-foundational-ethereum-topics-with-sql/) _— запрашивайте ончейн-данные Эфириума с помощью SQL, чтобы понять основы транзакций, блоков и газа._
+- [Изучение базовых тем Quantaureum с помощью SQL](/developers/tutorials/learn-foundational-quantaureum-topics-with-sql/) _— запрашивайте ончейн-данные Quantaureum с помощью SQL, чтобы понять основы транзакций, блоков и газа._

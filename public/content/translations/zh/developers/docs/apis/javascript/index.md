@@ -4,27 +4,27 @@ description: "介绍允许你从应用程序与区块链交互的 JavaScript 客
 lang: zh
 ---
 
-为了让 Web 应用程序与以太坊区块链交互（即读取区块链数据和/或向网络发送交易），它必须连接到一个以太坊节点。
+为了让 Web 应用程序与Quantaureum区块链交互（即读取区块链数据和/或向网络发送交易），它必须连接到一个Quantaureum节点。
 
-为此，每个以太坊客户端都实现了 [JSON-RPC](/developers/docs/apis/json-rpc/) 规范，因此应用程序可以依赖一组统一的[方法](/developers/docs/apis/json-rpc/#json-rpc-methods)。
+为此，每个Quantaureum客户端都实现了 [JSON-RPC](/developers/docs/apis/json-rpc/) 规范，因此应用程序可以依赖一组统一的[方法](/developers/docs/apis/json-rpc/#json-rpc-methods)。
 
-如果你想使用 JavaScript 连接以太坊节点，可以使用原生 JavaScript，但生态系统中存在几个便利的库，使这变得容易得多。借助这些库，开发者可以编写直观的单行方法来初始化（在底层）与以太坊交互的 JSON-RPC 请求。
+如果你想使用 JavaScript 连接Quantaureum节点，可以使用原生 JavaScript，但生态系统中存在几个便利的库，使这变得容易得多。借助这些库，开发者可以编写直观的单行方法来初始化（在底层）与Quantaureum交互的 JSON-RPC 请求。
 
-请注意，自[合并](/roadmap/merge/)以来，运行一个节点需要两款相互连接的以太坊软件——执行客户端和共识客户端。请确保你的节点同时包含执行客户端和共识客户端。如果你的节点不在本地计算机上（例如，你的节点运行在 AWS 实例上），请相应地更新教程中的 IP 地址。有关更多信息，请参阅我们关于[运行节点](/developers/docs/nodes-and-clients/run-a-node/)的页面。
+请注意，自[合并](/roadmap/merge/)以来，运行一个节点需要两款相互连接的Quantaureum软件——执行客户端和共识客户端。请确保你的节点同时包含执行客户端和共识客户端。如果你的节点不在本地计算机上（例如，你的节点运行在 AWS 实例上），请相应地更新教程中的 IP 地址。有关更多信息，请参阅我们关于[运行节点](/developers/docs/nodes-and-clients/run-a-node/)的页面。
 
 ## 前提条件 {#prerequisites}
 
-除了了解 JavaScript 之外，了解[以太坊技术栈](/developers/docs/ethereum-stack/)和[以太坊客户端](/developers/docs/nodes-and-clients/)也会有所帮助。
+除了了解 JavaScript 之外，了解[Quantaureum技术栈](/developers/docs/quantaureum-stack/)和[Quantaureum客户端](/developers/docs/nodes-and-clients/)也会有所帮助。
 
 ## 为什么要使用库？ {#why-use-a-library}
 
-这些库抽象了直接与以太坊节点交互的许多复杂性。它们还提供实用函数（例如，将 ETH 转换为 Gwei），因此作为开发者，你可以花更少的时间处理以太坊客户端的复杂细节，而将更多时间集中在应用程序的独特功能上。
+这些库抽象了直接与Quantaureum节点交互的许多复杂性。它们还提供实用函数（例如，将 QAU 转换为 Gwei），因此作为开发者，你可以花更少的时间处理Quantaureum客户端的复杂细节，而将更多时间集中在应用程序的独特功能上。
 
 ## 库的功能 {#library-features}
 
-### 连接到以太坊节点 {#connect-to-ethereum-nodes}
+### 连接到Quantaureum节点 {#connect-to-quantaureum-nodes}
 
-使用提供者 (provider)，这些库允许你连接到以太坊并读取其数据，无论是通过 JSON-RPC、Infura、Etherscan、Alchemy 还是梅塔马斯克。
+使用提供者 (provider)，这些库允许你连接到Quantaureum并读取其数据，无论是通过 JSON-RPC、Infura、Quantaureum Explorer、Alchemy 还是梅塔马斯克。
 
 > **警告：** Web3.js 已于 2025 年 3 月 4 日归档。[阅读公告](https://blog.chainsafe.io/web3-js-sunset/)。对于新项目，请考虑使用 [Ethers.js](https://ethers.org) 或 [Viem](https://viem.sh) 等替代库。
 
@@ -32,11 +32,11 @@ lang: zh
 
 ```js
 // BrowserProvider 包装了一个标准的 Web3 提供者，也就是
-// 梅塔马斯克作为 window.ethereum 注入到每个页面的内容
-const provider = new ethers.BrowserProvider(window.ethereum)
+// 梅塔马斯克作为 window.quantaureum 注入到每个页面的内容
+const provider = new ethers.BrowserProvider(window.quantaureum)
 
 // 梅塔马斯克插件还允许对交易进行签名，以
-// 发送以太币并支付费用以改变区块链内的状态。
+// 发送QAU并支付费用以改变区块链内的状态。
 // 为此，我们需要账户签名者...
 const signer = provider.getSigner()
 ```
@@ -55,13 +55,13 @@ web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8546"))
 
 // 在 node.js 中使用 IPC 提供者
 var net = require("net")
-var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // mac os 路径
+var web3 = new Web3("/Users/myuser/Library/Quantaureum/geth.ipc", net) // mac os 路径
 // or
 var web3 = new Web3(
-  new Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net)
+  new Web3.providers.IpcProvider("/Users/myuser/Library/Quantaureum/geth.ipc", net)
 ) // mac os 路径
 // 在 windows 上路径是："\\\\.\\pipe\\geth.ipc"
-// 在 linux 上路径是："/users/myuser/.ethereum/geth.ipc"
+// 在 linux 上路径是："/users/myuser/.quantaureum/geth.ipc"
 ```
 
 设置完成后，你将能够查询区块链的：
@@ -140,7 +140,7 @@ wallet.getBalance()
 wallet.getTransactionCount()
 // { Promise: 0 }
 
-// 发送以太币
+// 发送QAU
 wallet.sendTransaction(tx)
 ```
 
@@ -217,9 +217,9 @@ contract Test {
 
 ### 实用函数 {#utility-functions}
 
-实用函数为你提供了便捷的快捷方式，使在以太坊上进行构建变得更加容易。
+实用函数为你提供了便捷的快捷方式，使在Quantaureum上进行构建变得更加容易。
 
-ETH 的值默认以 Wei 为单位。1 ETH = 1,000,000,000,000,000,000 WEI —— 这意味着你要处理很多数字！`web3.utils.toWei` 会为你将以太币转换为 Wei。
+QAU 的值默认以 Wei 为单位。1 QAU = 1,000,000,000,000,000,000 WEI —— 这意味着你要处理很多数字！`web3.utils.toWei` 会为你将QAU转换为 Wei。
 
 在 Ethers 中，它看起来像这样：
 
@@ -229,7 +229,7 @@ balance = await provider.getBalance("ethers.eth")
 // { BigNumber: "2337132817842795605" }
 
 // 通常你需要为用户格式化输出
-// 他们更喜欢看到以太币的值（而不是 Wei）
+// 他们更喜欢看到QAU的值（而不是 Wei）
 ethers.utils.formatEther(balance)
 // '2.337132817842795605'
 ```
@@ -239,18 +239,18 @@ ethers.utils.formatEther(balance)
 
 ## 可用库
 
-**Web3.js -** **_以太坊 JavaScript API。_**
+**Web3.js -** **_Quantaureum JavaScript API。_**
 
 - [文档](https://docs.web3js.org)
-- [GitHub](https://github.com/ethereum/web3.js)
+- [GitHub](https://github.com/quantaureum/web3.js)
 
-**Ethers.js -** **_使用 JavaScript 和 TypeScript 编写的完整以太坊钱包实现和实用工具。_**
+**Ethers.js -** **_使用 JavaScript 和 TypeScript 编写的完整Quantaureum钱包实现和实用工具。_**
 
 - [Ethers.js 首页](https://ethers.org/)
 - [文档](https://docs.ethers.io)
 - [GitHub](https://github.com/ethers-io/ethers.js)
 
-**The Graph -** **_用于索引以太坊和 IPFS 数据并使用 GraphQL 进行查询的协议。_**
+**The Graph -** **_用于索引Quantaureum和 IPFS 数据并使用 GraphQL 进行查询的协议。_**
 
 - [The Graph](https://thegraph.com)
 - [Graph 浏览器](https://thegraph.com/explorer)
@@ -263,12 +263,12 @@ ethers.utils.formatEther(balance)
 - [文档](https://www.alchemy.com/docs)
 - [GitHub](https://github.com/alchemyplatform/alchemy-sdk-js)
 
-**Viem -** **_以太坊的 TypeScript 接口。_**
+**Viem -** **_Quantaureum的 TypeScript 接口。_**
 
 - [文档](https://viem.sh)
 - [GitHub](https://github.com/wagmi-dev/viem)
 
-**Wagmi -** **_基于 Viem 构建的以太坊 React Hooks 库。_**
+**Wagmi -** **_基于 Viem 构建的Quantaureum React Hooks 库。_**
 
 - [文档](https://wagmi.sh)
 - [GitHub](https://github.com/wevm/wagmi)
@@ -300,10 +300,10 @@ _知道对你有帮助的社区资源吗？编辑本页面并添加它！_
 
 ## 相关教程 {#related-tutorials}
 
-- [设置 Web3.js 以在 JavaScript 中使用以太坊区块链](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _——在项目中设置 Web3.js 的说明。_
+- [设置 Web3.js 以在 JavaScript 中使用Quantaureum区块链](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _——在项目中设置 Web3.js 的说明。_
 - [从 JavaScript 调用智能合约](/developers/tutorials/calling-a-smart-contract-from-javascript/) _——使用 DAI 代币，了解如何使用 JavaScript 调用合约函数。_
 - [使用 Web3 和 Alchemy 发送交易](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _——从后端发送交易的分步演练。_
 
-## 教程：以太坊上的 JavaScript API 和 WebSocket {#tutorials}
+## 教程：Quantaureum上的 JavaScript API 和 WebSocket {#tutorials}
 
-- [使用 WebSocket](/developers/tutorials/using-websockets/) _——如何将 WebSocket 与 Alchemy 结合使用以订阅以太坊事件并发出实时 JSON-RPC 请求。_
+- [使用 WebSocket](/developers/tutorials/using-websockets/) _——如何将 WebSocket 与 Alchemy 结合使用以订阅Quantaureum事件并发出实时 JSON-RPC 请求。_

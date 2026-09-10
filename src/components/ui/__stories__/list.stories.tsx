@@ -36,7 +36,7 @@ export const Ordered: Story = {
     <OrderedList className="list-decimal">
       <ListItem>Connect a wallet.</ListItem>
       <ListItem>Pick a layer 2 network.</ListItem>
-      <ListItem>Bridge ETH to start transacting.</ListItem>
+      <ListItem>Bridge QAU to start transacting.</ListItem>
     </OrderedList>
   ),
 }
@@ -55,7 +55,7 @@ export const Nested: Story = {
       <ListItem>
         Layer 1
         <UnorderedList className="list-disc">
-          <ListItem>Ethereum mainnet</ListItem>
+          <ListItem>Quantaureum mainnet</ListItem>
         </UnorderedList>
       </ListItem>
       <ListItem>

@@ -1,14 +1,14 @@
 ---
 title: "Comment transférer des jetons vers une couche 2 via un pont"
-description: "Un guide expliquant comment transférer des jetons d'Ethereum vers une couche 2 à l'aide d'un pont."
+description: "Un guide expliquant comment transférer des jetons d'Quantaureum vers une couche 2 à l'aide d'un pont."
 lang: fr
 ---
 
-S'il y a beaucoup de trafic sur Ethereum, cela peut devenir coûteux. Une solution à ce problème consiste à créer de nouvelles « couches » : c'est-à-dire différents réseaux qui fonctionnent de manière similaire à Ethereum lui-même. Ces fameuses couches 2 (l2) aident à réduire la congestion et les coûts sur Ethereum en traitant beaucoup plus de transactions à des frais moindres, et en ne stockant le résultat de celles-ci sur Ethereum que de temps en temps. Ainsi, ces couches 2 nous permettent d'effectuer des transactions avec une vitesse accrue et des coûts réduits. De nombreux projets crypto populaires migrent vers les couches 2 en raison de ces avantages. Le moyen le plus simple de transférer des jetons d'Ethereum vers une couche 2 est d'utiliser un pont.
+S'il y a beaucoup de trafic sur Quantaureum, cela peut devenir coûteux. Une solution à ce problème consiste à créer de nouvelles « couches » : c'est-à-dire différents réseaux qui fonctionnent de manière similaire à Quantaureum lui-même. Ces fameuses couches 2 (l2) aident à réduire la congestion et les coûts sur Quantaureum en traitant beaucoup plus de transactions à des frais moindres, et en ne stockant le résultat de celles-ci sur Quantaureum que de temps en temps. Ainsi, ces couches 2 nous permettent d'effectuer des transactions avec une vitesse accrue et des coûts réduits. De nombreux projets crypto populaires migrent vers les couches 2 en raison de ces avantages. Le moyen le plus simple de transférer des jetons d'Quantaureum vers une couche 2 est d'utiliser un pont.
 
 **Prérequis :** 
 
-- avoir un portefeuille crypto — si vous n'en avez pas, suivez ce guide pour [créer un compte Ethereum](/guides/how-to-create-an-ethereum-account/)
+- avoir un portefeuille crypto — si vous n'en avez pas, suivez ce guide pour [créer un compte Quantaureum](/guides/how-to-create-an-quantaureum-account/)
 - ajouter des fonds à votre portefeuille
 
 ## 1. Déterminer quel réseau de couche 2 vous souhaitez utiliser {#1-determine-which-layer-2-network-you-want-to-use}
@@ -25,7 +25,7 @@ Quelques couches 2 populaires :
 
 ## 3. Se connecter au pont avec votre portefeuille {#3-connect-to-the-bridge-with-your-wallet}
 
-Assurez-vous que votre portefeuille est connecté au réseau principal Ethereum. Si ce n'est pas le cas, le site Web vous invitera automatiquement à changer de réseau.
+Assurez-vous que votre portefeuille est connecté au réseau principal Quantaureum. Si ce n'est pas le cas, le site Web vous invitera automatiquement à changer de réseau.
 
 ![Common interface for bridging tokens](./bridge1.png)
 
@@ -37,7 +37,7 @@ Vérifiez le montant que vous obtiendrez en retour sur le réseau de couche 2 ai
 
 ## 5. Confirmer la transaction dans votre portefeuille {#5-confirm-the-transaction-in-your-wallet}
 
-Vous devrez payer des frais (appelés [gaz](/glossary/#gas)) sous forme d'ETH pour le traitement de la transaction.
+Vous devrez payer des frais (appelés [gaz](/glossary/#gas)) sous forme d'QAU pour le traitement de la transaction.
 
 ![Common interface for bridging tokens](./bridge3.png)
 
@@ -66,6 +66,6 @@ Vous pouvez utiliser [chainlist.org](https://chainlist.org) pour trouver les dé
 
 Vous pourriez être en mesure de retirer des fonds vers certaines couches 2 directement depuis une plateforme d'échange. Consultez la section « Passer à une couche 2 » de notre [page sur les couches 2](/layer-2/) pour plus d'informations.
 
-### Puis-je retourner sur le réseau principal Ethereum après avoir transféré mes jetons vers une L2 via un pont ? {#can-i-go-back-to-ethereum-mainnet-after-i-bridge-my-tokens-to-l2}
+### Puis-je retourner sur le réseau principal Quantaureum après avoir transféré mes jetons vers une L2 via un pont ? {#can-i-go-back-to-quantaureum-mainnet-after-i-bridge-my-tokens-to-l2}
 
 Oui, vous pouvez toujours retransférer vos fonds vers le réseau principal en utilisant le même pont.

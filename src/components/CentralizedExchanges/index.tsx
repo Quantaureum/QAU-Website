@@ -86,8 +86,8 @@ const CentralizedExchanges = ({
     <>
       <div className="relative z-50 w-full max-w-screen-sm">
         <Select
-          instanceId="eth-exchange-region"
-          aria-label={t("page-get-eth-exchanges-header")}
+          instanceId="qau-exchange-region"
+          aria-label={t("page-get-qau-exchanges-header")}
           options={selectOptions}
           onChange={handleSelectChange}
           placeholder={placeholderString}
@@ -100,7 +100,7 @@ const CentralizedExchanges = ({
       {hasSelectedCountry && !hasExchangeResults && (
         <ResultsContainer>
           <NoResults>
-            {t("page-get-eth-exchanges-no-exchanges-or-wallets")}
+            {t("page-get-qau-exchanges-no-exchanges-or-wallets")}
           </NoResults>
         </ResultsContainer>
       )}
@@ -110,25 +110,25 @@ const CentralizedExchanges = ({
           <ResultsContainer>
             <ListContainer>
               <h3 className="text-xl md:text-2xl">
-                {t("page-get-eth-exchanges-header-exchanges")}
+                {t("page-get-qau-exchanges-header-exchanges")}
               </h3>
               {hasExchangeResults && (
                 <SuccessContainer>
                   <p className="text-body-medium">
-                    {t("page-get-eth-exchanges-success-exchange")}
+                    {t("page-get-qau-exchanges-success-exchange")}
                   </p>
                   <CardList items={filteredExchanges} />
                 </SuccessContainer>
               )}
               {!hasExchangeResults && (
                 <NoResultsSingle>
-                  {t("page-get-eth-exchanges-no-exchanges")}
+                  {t("page-get-qau-exchanges-no-exchanges")}
                 </NoResultsSingle>
               )}
             </ListContainer>
           </ResultsContainer>
           <p className="mt-16 max-w-screen-lg text-body-medium">
-            {t("page-get-eth-exchanges-disclaimer")}{" "}
+            {t("page-get-qau-exchanges-disclaimer")}{" "}
             <InlineLink href={`mailto:${WEBSITE_EMAIL}`}>
               {WEBSITE_EMAIL}
             </InlineLink>

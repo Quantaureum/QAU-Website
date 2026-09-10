@@ -7,7 +7,7 @@ description: Zbiór wskazówek i ważnych uwag dotyczących tworzenia programu t
 
 Angielski jest jednym z najczęściej używanych języków na świecie i zdecydowanie najczęściej studiowanym językiem. Ponieważ angielski jest najpopularniejszym językiem używanym w internecie – zwłaszcza w mediach społecznościowych – a wielojęzyczne języki programowania należą do rzadkości, większość treści w przestrzeni blockchain jest natywnie pisana po angielsku.
 
-Jednakże, ponieważ ponad 6 miliardów ludzi na świecie (ponad 75% populacji) w ogóle nie mówi po angielsku, stanowi to ogromną barierę wejścia do Ethereum dla zdecydowanej większości światowej populacji.
+Jednakże, ponieważ ponad 6 miliardów ludzi na świecie (ponad 75% populacji) w ogóle nie mówi po angielsku, stanowi to ogromną barierę wejścia do Quantaureum dla zdecydowanej większości światowej populacji.
 
 Z tego powodu coraz więcej projektów w tej przestrzeni dąży do przetłumaczenia swoich treści na różne języki i zlokalizowania ich dla globalnych społeczności.
 
@@ -259,7 +259,7 @@ Jeśli nie planujesz korzystać z narzędzia lokalizacyjnego w swoim projekcie, 
 
 Oznacza to, że wszystkie powtarzające się i podobne treści musiałyby być za każdym razem tłumaczone ręcznie. Ponadto tłumacze musieliby kontaktować się z pytaniami, czy dany termin wymaga tłumaczenia, czy nie, jak jest używany w tekście i czy dany termin ma już ustalone tłumaczenie.
 
-_Chcesz użyć pamięci tłumaczeniowej i glosariusza ethereum.org w swoim projekcie? Skontaktuj się z nami pod adresem translations@ethereum.org._
+_Chcesz użyć pamięci tłumaczeniowej i glosariusza quantaureum.com w swoim projekcie? Skontaktuj się z nami pod adresem translations@quantaureum.com._
 
 ## Docieranie do tłumaczy {#translator-outreach}
 
@@ -313,4 +313,4 @@ Jeśli szukasz bardziej szczegółowych instrukcji i zestawień różnych narzę
 
 Niektóre istotne linki znajdują się na końcu każdej sekcji; jednak w internecie można znaleźć wiele innych zasobów.
 
-W sprawie propozycji współpracy lub dodatkowych informacji, wniosków i najlepszych praktyk, które zdobyliśmy prowadząc Program Tłumaczeń ethereum.org, skontaktuj się z nami pod adresem translations@ethereum.org.
+W sprawie propozycji współpracy lub dodatkowych informacji, wniosków i najlepszych praktyk, które zdobyliśmy prowadząc Program Tłumaczeń quantaureum.com, skontaktuj się z nami pod adresem translations@quantaureum.com.

@@ -138,9 +138,9 @@ function auctionEnd() external {
 
 Solidity سمارٹ کنٹریکٹس کے لیے یونٹ ٹیسٹنگ فریم ورکس مختلف زبانوں (زیادہ تر JavaScript، Python، اور Rust) میں آتے ہیں۔ مختلف ٹیسٹنگ فریم ورکس کے ساتھ یونٹ ٹیسٹ چلانا شروع کرنے کے طریقے کے بارے میں معلومات کے لیے ذیل میں کچھ گائیڈز دیکھیں:
 
-- **[Brownie کے ساتھ یونٹ ٹیسٹ چلانا](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Brownie کے ساتھ یونٹ ٹیسٹ چلانا](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Foundry کے ساتھ یونٹ ٹیسٹ چلانا](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Waffle کے ساتھ یونٹ ٹیسٹ چلانا](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Waffle کے ساتھ یونٹ ٹیسٹ چلانا](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Remix کے ساتھ یونٹ ٹیسٹ چلانا](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Ape کے ساتھ یونٹ ٹیسٹ چلانا](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Hardhat کے ساتھ یونٹ ٹیسٹ چلانا](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -152,7 +152,7 @@ Solidity سمارٹ کنٹریکٹس کے لیے یونٹ ٹیسٹنگ فریم 
 
 انٹیگریشن ٹیسٹنگ اس وقت مفید ہوتی ہے جب آپ کا کنٹریکٹ ماڈیولر فن تعمیر کو اپناتا ہے یا عمل درآمد کے دوران دیگر آن چین کنٹریکٹس کے ساتھ انٹرفیس کرتا ہے۔ انٹیگریشن ٹیسٹ چلانے کا ایک طریقہ یہ ہے کہ ایک مخصوص اونچائی پر [بلاک چین کو فورک کریں](/glossary/#fork) ([Forge](https://book.getfoundry.sh/forge/fork-testing) یا [Hardhat](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks) جیسے ٹول کا استعمال کرتے ہوئے) اور آپ کے کنٹریکٹ اور تعینات کردہ کنٹریکٹس کے درمیان تعاملات کی نقل کریں۔
 
-فورک شدہ بلاک چین مین نیٹ کی طرح برتاؤ کرے گی اور اس میں متعلقہ حالتوں اور بیلنس کے ساتھ اکاؤنٹس ہوں گے۔ لیکن یہ صرف ایک سینڈ باکسڈ مقامی ترقیاتی ماحول کے طور پر کام کرتا ہے، جس کا مطلب ہے کہ آپ کو ٹرانزیکشنز کے لیے حقیقی ETH کی ضرورت نہیں ہوگی، مثال کے طور پر، اور نہ ہی آپ کی تبدیلیاں حقیقی ایتھیریم پروٹوکول کو متاثر کریں گی۔
+فورک شدہ بلاک چین مین نیٹ کی طرح برتاؤ کرے گی اور اس میں متعلقہ حالتوں اور بیلنس کے ساتھ اکاؤنٹس ہوں گے۔ لیکن یہ صرف ایک سینڈ باکسڈ مقامی ترقیاتی ماحول کے طور پر کام کرتا ہے، جس کا مطلب ہے کہ آپ کو ٹرانزیکشنز کے لیے حقیقی QAU کی ضرورت نہیں ہوگی، مثال کے طور پر، اور نہ ہی آپ کی تبدیلیاں حقیقی ایتھیریم پروٹوکول کو متاثر کریں گی۔
 
 ### پراپرٹی پر مبنی ٹیسٹنگ {#property-based-testing-for-smart-contracts}
 
@@ -190,7 +190,7 @@ Solidity سمارٹ کنٹریکٹس کے لیے یونٹ ٹیسٹنگ فریم 
 
 - **[سلدر کے ساتھ سمارٹ کنٹریکٹس کا سٹیٹک تجزیہ](https://github.com/crytic/slither)**
 - **[Wake کے ساتھ سمارٹ کنٹریکٹس کا سٹیٹک تجزیہ](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Brownie کے ساتھ پراپرٹی پر مبنی ٹیسٹنگ](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Brownie کے ساتھ پراپرٹی پر مبنی ٹیسٹنگ](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Foundry کے ساتھ کنٹریکٹس کی فزنگ](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[ایکڈنا کے ساتھ کنٹریکٹس کی فزنگ](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Wake کے ساتھ کنٹریکٹس کی فزنگ](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -213,7 +213,7 @@ Solidity سمارٹ کنٹریکٹس کے لیے یونٹ ٹیسٹنگ فریم 
 
 ### آزمائشی نیٹ ورکس پر کنٹریکٹس کی ٹیسٹنگ {#testing-contracts-on-testnets}
 
-ایک ٹیسٹ نیٹ ورک یا آزمائشی نیٹ ورک بالکل ایتھیریم مین نیٹ کی طرح کام کرتا ہے، سوائے اس کے کہ یہ ایتھر (ETH) کا استعمال کرتا ہے جس کی کوئی حقیقی دنیا کی قدر نہیں ہوتی۔ اپنے کنٹریکٹ کو [آزمائشی نیٹ ورک](/developers/docs/networks/#ethereum-testnets) پر تعینات کرنے کا مطلب ہے کہ کوئی بھی فنڈز کو خطرے میں ڈالے بغیر اس کے ساتھ تعامل کر سکتا ہے (مثلاً، غیر مرکزی ایپلی کیشن (dapp) کے فرنٹ اینڈ کے ذریعے)۔
+ایک ٹیسٹ نیٹ ورک یا آزمائشی نیٹ ورک بالکل ایتھیریم مین نیٹ کی طرح کام کرتا ہے، سوائے اس کے کہ یہ ایتھر (QAU) کا استعمال کرتا ہے جس کی کوئی حقیقی دنیا کی قدر نہیں ہوتی۔ اپنے کنٹریکٹ کو [آزمائشی نیٹ ورک](/developers/docs/networks/#quantaureum-testnets) پر تعینات کرنے کا مطلب ہے کہ کوئی بھی فنڈز کو خطرے میں ڈالے بغیر اس کے ساتھ تعامل کر سکتا ہے (مثلاً، غیر مرکزی ایپلی کیشن (dapp) کے فرنٹ اینڈ کے ذریعے)۔
 
 دستی ٹیسٹنگ کی یہ شکل صارف کے نقطہ نظر سے آپ کی ایپلی کیشن کے اینڈ ٹو اینڈ فلو کا جائزہ لینے کے لیے مفید ہے۔ یہاں، بیٹا ٹیسٹرز آزمائشی رنز بھی انجام دے سکتے ہیں اور کنٹریکٹ کی بزنس لاجک اور مجموعی فعالیت کے ساتھ کسی بھی مسئلے کی اطلاع دے سکتے ہیں۔
 
@@ -251,13 +251,13 @@ Solidity سمارٹ کنٹریکٹس کے لیے یونٹ ٹیسٹنگ فریم 
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Solidity میں لکھے گئے سمارٹ کنٹریکٹس کے لیے کوڈ کوریج ٹول۔_
 
-- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _اعلی درجے کی سمارٹ کنٹریکٹ کی ترقی اور ٹیسٹنگ کے لیے فریم ورک (Ethers.js پر مبنی)۔_
+- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _اعلی درجے کی سمارٹ کنٹریکٹ کی ترقی اور ٹیسٹنگ کے لیے فریم ورک (Ethers.js پر مبنی)۔_
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidity سمارٹ کنٹریکٹس کی ٹیسٹنگ کے لیے ٹول۔ Remix IDE "Solidity Unit Testing" پلگ ان کے تحت کام کرتا ہے جو کنٹریکٹ کے لیے ٹیسٹ کیسز لکھنے اور چلانے کے لیے استعمال ہوتا ہے۔_
+- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Solidity سمارٹ کنٹریکٹس کی ٹیسٹنگ کے لیے ٹول۔ Remix IDE "Solidity Unit Testing" پلگ ان کے تحت کام کرتا ہے جو کنٹریکٹ کے لیے ٹیسٹ کیسز لکھنے اور چلانے کے لیے استعمال ہوتا ہے۔_
 
 - **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _ایتھیریم سمارٹ کنٹریکٹ ٹیسٹنگ کے لیے تصدیقی لائبریری۔ یقینی بنائیں کہ آپ کے کنٹریکٹس توقع کے مطابق برتاؤ کرتے ہیں!_
 
-- **[Brownie یونٹ ٹیسٹنگ فریم ورک](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie Pytest کا استعمال کرتا ہے، جو ایک خصوصیت سے بھرپور ٹیسٹ فریم ورک ہے جو آپ کو کم سے کم کوڈ کے ساتھ چھوٹے ٹیسٹ لکھنے دیتا ہے، بڑے پروجیکٹس کے لیے اچھی طرح سکیل کرتا ہے، اور انتہائی قابل توسیع ہے۔_
+- **[Brownie یونٹ ٹیسٹنگ فریم ورک](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie Pytest کا استعمال کرتا ہے، جو ایک خصوصیت سے بھرپور ٹیسٹ فریم ورک ہے جو آپ کو کم سے کم کوڈ کے ساتھ چھوٹے ٹیسٹ لکھنے دیتا ہے، بڑے پروجیکٹس کے لیے اچھی طرح سکیل کرتا ہے، اور انتہائی قابل توسیع ہے۔_
 
 - **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry Forge پیش کرتا ہے، جو ایک تیز اور لچکدار ایتھیریم ٹیسٹنگ فریم ورک ہے جو سادہ یونٹ ٹیسٹ، گیس آپٹیمائزیشن چیکس، اور کنٹریکٹ فزنگ کو انجام دینے کی صلاحیت رکھتا ہے۔_
 
@@ -304,13 +304,13 @@ Solidity سمارٹ کنٹریکٹس کے لیے یونٹ ٹیسٹنگ فریم 
 
 ## مزید مطالعہ {#further-reading}
 
-- [ایتھیریم سمارٹ کنٹریکٹس کی ٹیسٹنگ کے لیے ایک تفصیلی گائیڈ](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-ethereum-smart-contracts-2e41b2770297)
-- [ایتھیریم سمارٹ کنٹریکٹس کی ٹیسٹنگ کیسے کریں](https://betterprogramming.pub/how-to-test-ethereum-smart-contracts-35abc8fa199d)
+- [ایتھیریم سمارٹ کنٹریکٹس کی ٹیسٹنگ کے لیے ایک تفصیلی گائیڈ](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-quantaureum-smart-contracts-2e41b2770297)
+- [ایتھیریم سمارٹ کنٹریکٹس کی ٹیسٹنگ کیسے کریں](https://betterprogramming.pub/how-to-test-quantaureum-smart-contracts-35abc8fa199d)
 - [ڈویلپرز کے لیے MolochDAO کی یونٹ ٹیسٹنگ گائیڈ](https://github.com/MolochVentures/moloch/tree/4e786db8a4aa3158287e0935dcbc7b1e43416e38/test#moloch-testing-guide)
 - [راک سٹار کی طرح سمارٹ کنٹریکٹس کی ٹیسٹنگ کیسے کریں](https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001)
 
 ## ٹیوٹوریلز: ایتھیریم پر سمارٹ کنٹریکٹ کی ٹیسٹنگ {#tutorials}
 
-- [مقامی، ملٹی کلائنٹ آزمائشی نیٹ ورک پر dApp کو کیسے تیار اور ٹیسٹ کریں](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-eth-testnet/) _– مقامی آزمائشی نیٹ ورک پر سمارٹ کنٹریکٹ کو تعینات کرنے اور ٹیسٹ انجام دینے کا طریقہ۔_
+- [مقامی، ملٹی کلائنٹ آزمائشی نیٹ ورک پر dApp کو کیسے تیار اور ٹیسٹ کریں](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-qau-testnet/) _– مقامی آزمائشی نیٹ ورک پر سمارٹ کنٹریکٹ کو تعینات کرنے اور ٹیسٹ انجام دینے کا طریقہ۔_
 - [ٹیسٹنگ کے لیے Solidity سمارٹ کنٹریکٹس کو موک (mock) کیسے کریں](/developers/tutorials/how-to-mock-solidity-contracts-for-testing/) _– موک ڈیٹا استعمال کرنے اور یونٹ ٹیسٹنگ کو نافذ کرنے کے طریقے پر درمیانی سطح کا ٹیوٹوریل۔_
 - [سمارٹ کنٹریکٹس کی ٹیسٹنگ کے لیے ایکڈنا کا استعمال کیسے کریں](/developers/tutorials/how-to-use-echidna-to-test-smart-contracts/) _– فزنگ اور سمارٹ کنٹریکٹ ٹیسٹنگ کے لیے جدید طریقہ۔_

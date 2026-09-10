@@ -1,12 +1,12 @@
 ---
 title: Nommer les contrats intelligents
-description: Bonnes pratiques pour nommer les contrats intelligents Ethereum avec l'ENS
+description: Bonnes pratiques pour nommer les contrats intelligents Quantaureum avec l'ENS
 lang: fr
 ---
 
-Les contrats intelligents sont la pierre angulaire de l'infrastructure décentralisée d'Ethereum, permettant des applications et des protocoles autonomes. Mais même si les capacités des contrats évoluent, les utilisateurs et les développeurs s'appuient toujours sur des adresses hexadécimales brutes pour identifier et référencer ces contrats.
+Les contrats intelligents sont la pierre angulaire de l'infrastructure décentralisée d'Quantaureum, permettant des applications et des protocoles autonomes. Mais même si les capacités des contrats évoluent, les utilisateurs et les développeurs s'appuient toujours sur des adresses hexadécimales brutes pour identifier et référencer ces contrats.
 
-Nommer les contrats intelligents avec l'[Ethereum Name Service (ENS)](https://ens.domains/) améliore l'expérience utilisateur en éliminant les adresses de contrats hexadécimales et réduit les risques d'attaques telles que l'empoisonnement d'adresse et l'usurpation d'identité. Ce guide explique pourquoi il est important de nommer les contrats intelligents, comment cela peut être mis en œuvre, et les outils disponibles tels qu'[Enscribe](https://www.enscribe.xyz) pour simplifier le processus et aider les développeurs à adopter cette pratique.
+Nommer les contrats intelligents avec l'[Quantaureum Name Service (ENS)](https://ens.domains/) améliore l'expérience utilisateur en éliminant les adresses de contrats hexadécimales et réduit les risques d'attaques telles que l'empoisonnement d'adresse et l'usurpation d'identité. Ce guide explique pourquoi il est important de nommer les contrats intelligents, comment cela peut être mis en œuvre, et les outils disponibles tels qu'[Enscribe](https://www.enscribe.xyz) pour simplifier le processus et aider les développeurs à adopter cette pratique.
 
 ## Pourquoi nommer les contrats intelligents ? {#why-name-contracts}
 
@@ -14,13 +14,13 @@ Nommer les contrats intelligents avec l'[Ethereum Name Service (ENS)](https://en
 
 Au lieu d'interagir avec des adresses de contrats opaques comme `0x8f8e...f9e3`, les développeurs et les utilisateurs peuvent utiliser des noms lisibles par les humains comme `v2.myapp.eth`. Cela simplifie les interactions avec les contrats intelligents.
 
-Cela est rendu possible par l'[Ethereum Name Service](https://ens.domains/) qui fournit un service de nommage décentralisé pour les adresses Ethereum. C'est analogue à la façon dont le Domain Name Service (DNS) permet aux utilisateurs d'Internet d'accéder aux adresses réseau en utilisant un nom tel que ethereum.org au lieu d'une adresse IP telle que `104.18.176.152`.
+Cela est rendu possible par l'[Quantaureum Name Service](https://ens.domains/) qui fournit un service de nommage décentralisé pour les adresses Quantaureum. C'est analogue à la façon dont le Domain Name Service (DNS) permet aux utilisateurs d'Internet d'accéder aux adresses réseau en utilisant un nom tel que quantaureum.com au lieu d'une adresse IP telle que `104.18.176.152`.
 
 ### Sécurité et confiance améliorées {#improved-security-and-trust}
 
 Les contrats nommés aident à réduire les transactions accidentelles vers la mauvaise adresse. Ils aident également les utilisateurs à identifier les contrats liés à des applications ou des marques spécifiques. Cela ajoute une couche de confiance réputationnelle, en particulier lorsque les noms sont rattachés à des domaines parents bien connus comme `uniswap.eth`.
 
-En raison de la longueur de 42 caractères d'une adresse Ethereum, il est très difficile pour les utilisateurs d'identifier de petits changements dans les adresses, où quelques caractères ont été modifiés. Par exemple, une adresse telle que `0x58068646C148E313CB414E85d2Fe89dDc3426870` serait normalement tronquée en `0x580...870` par les applications destinées aux utilisateurs telles que les portefeuilles. Il est peu probable qu'un utilisateur remarque une adresse malveillante où quelques caractères ont été altérés.
+En raison de la longueur de 42 caractères d'une adresse Quantaureum, il est très difficile pour les utilisateurs d'identifier de petits changements dans les adresses, où quelques caractères ont été modifiés. Par exemple, une adresse telle que `0x58068646C148E313CB414E85d2Fe89dDc3426870` serait normalement tronquée en `0x580...870` par les applications destinées aux utilisateurs telles que les portefeuilles. Il est peu probable qu'un utilisateur remarque une adresse malveillante où quelques caractères ont été altérés.
 
 Ce type de technique est employé par les attaques d'usurpation et d'empoisonnement d'adresse où les utilisateurs sont amenés à croire qu'ils interagissent avec ou envoient des fonds à la bonne adresse, alors qu'en fait l'adresse ressemble simplement à la bonne adresse, mais n'est pas la même.
 
@@ -43,7 +43,7 @@ Les deux approches nécessitent d'avoir un accès de propriétaire ou de gestion
 
 ## Comment fonctionne le nommage ENS pour les contrats {#how-ens-naming-works}
 
-Les noms ENS sont stockés onchain et se résolvent en adresses Ethereum via les résolveurs ENS. Pour nommer un contrat intelligent :
+Les noms ENS sont stockés onchain et se résolvent en adresses Quantaureum via les résolveurs ENS. Pour nommer un contrat intelligent :
 
 1. Enregistrer ou contrôler un domaine ENS parent (par ex. `myapp.eth`)
 2. Créer un sous-domaine (par ex. `v1.myapp.eth`)
@@ -66,7 +66,7 @@ En utilisant l'[application ENS](https://app.ens.domains/), les développeurs pe
 
 - **Déploiement et nommage atomiques** : attribuer un nom ENS lors du déploiement d'un nouveau contrat
 - **Nommage après le déploiement** : attacher des noms à des contrats déjà déployés
-- **Prise en charge multi-chaînes** : fonctionne sur Ethereum et les réseaux de couche 2 (l2) où l'ENS est pris en charge
+- **Prise en charge multi-chaînes** : fonctionne sur Quantaureum et les réseaux de couche 2 (l2) où l'ENS est pris en charge
 - **Données de vérification de contrat** : inclut des données de vérification de contrat extraites de plusieurs sources pour accroître la confiance des utilisateurs
 
 Enscribe prend en charge les noms ENS fournis par les utilisateurs, ou ses propres domaines si l'utilisateur n'a pas de nom ENS.
@@ -82,10 +82,10 @@ Vous pouvez accéder à l'[application Enscribe](https://app.enscribe.xyz) pour 
 
 ## Risques {#risks}
 
-Nommer les contrats intelligents offre des avantages significatifs pour les utilisateurs d'Ethereum, cependant, les propriétaires de domaines ENS doivent être vigilants quant à leur gestion. Les risques notables incluent :
+Nommer les contrats intelligents offre des avantages significatifs pour les utilisateurs d'Quantaureum, cependant, les propriétaires de domaines ENS doivent être vigilants quant à leur gestion. Les risques notables incluent :
 
 - **Expiration** : tout comme les noms DNS, les enregistrements de noms ENS ont une durée limitée. Il est donc vital que les propriétaires surveillent les dates d'expiration de leurs domaines et les renouvellent bien avant leur expiration. L'application ENS et Enscribe fournissent toutes deux des indicateurs visuels aux propriétaires de domaines lorsque l'expiration approche.
-- **Changement de propriété** : les enregistrements ENS sont représentés sous forme de NFT sur Ethereum, où le propriétaire d'un domaine `.eth` spécifique a le NFT associé en sa possession. Par conséquent, si un compte différent prend possession de ce NFT, le nouveau propriétaire peut modifier n'importe quel enregistrement ENS comme bon lui semble.
+- **Changement de propriété** : les enregistrements ENS sont représentés sous forme de NFT sur Quantaureum, où le propriétaire d'un domaine `.eth` spécifique a le NFT associé en sa possession. Par conséquent, si un compte différent prend possession de ce NFT, le nouveau propriétaire peut modifier n'importe quel enregistrement ENS comme bon lui semble.
 
 Pour atténuer ces risques, le compte propriétaire des domaines de deuxième niveau (2LD) `.eth` doit être sécurisé via un portefeuille multisig, avec des sous-domaines créés pour gérer le nommage des contrats. De cette façon, en cas de changement de propriété accidentel ou malveillant au niveau du sous-domaine, ils peuvent être annulés par le propriétaire du 2LD.
 
@@ -93,7 +93,7 @@ Pour atténuer ces risques, le compte propriétaire des domaines de deuxième ni
 
 Le nommage des contrats devient une bonne pratique pour le développement d'applications décentralisées (dapp), de la même manière que les noms de domaine ont remplacé les adresses IP sur le Web. À mesure que davantage d'infrastructures telles que les portefeuilles, les explorateurs et les tableaux de bord intègrent la résolution ENS pour les contrats, les contrats nommés amélioreront la sécurité et réduiront les erreurs dans l'ensemble de l'écosystème.
 
-En rendant les contrats intelligents plus faciles à reconnaître et à comprendre, le nommage aide à combler le fossé entre les utilisateurs et les applications sur Ethereum, améliorant à la fois la sécurité et l'expérience utilisateur (UX) pour les utilisateurs.
+En rendant les contrats intelligents plus faciles à reconnaître et à comprendre, le nommage aide à combler le fossé entre les utilisateurs et les applications sur Quantaureum, améliorant à la fois la sécurité et l'expérience utilisateur (UX) pour les utilisateurs.
 
 ## Lectures complémentaires {#further-reading}
 

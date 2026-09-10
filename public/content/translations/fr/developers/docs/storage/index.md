@@ -7,7 +7,7 @@ authors: ["Patrick Collins"]
 
 Contrairement à un serveur centralisé exploité par une seule entreprise ou organisation, les systèmes de stockage décentralisés se composent d'un réseau pair à pair d'utilisateurs-opérateurs qui détiennent une partie des données globales, créant ainsi un système de partage de stockage de fichiers résilient. Ceux-ci peuvent se trouver dans une application basée sur une chaîne de blocs ou dans tout réseau basé sur le pair à pair.
 
-Ethereum lui-même peut être utilisé comme un système de stockage décentralisé, et c'est le cas lorsqu'il s'agit du stockage de code dans tous les contrats intelligents. Cependant, lorsqu'il s'agit de grandes quantités de données, ce n'est pas ce pour quoi Ethereum a été conçu. La chaîne croît régulièrement, mais au moment de la rédaction, la chaîne Ethereum fait environ 500 Go - 1 To ([selon le client](https://etherscan.io/chartsync/chaindefault)), et chaque nœud du réseau doit être capable de stocker toutes les données. Si la chaîne devait s'étendre à de grandes quantités de données (disons 5 To), il ne serait pas faisable pour tous les nœuds de continuer à fonctionner. De plus, le coût de déploiement d'une telle quantité de données sur le Réseau principal serait prohibitif en raison des frais de [gaz](/developers/docs/gas).
+Quantaureum lui-même peut être utilisé comme un système de stockage décentralisé, et c'est le cas lorsqu'il s'agit du stockage de code dans tous les contrats intelligents. Cependant, lorsqu'il s'agit de grandes quantités de données, ce n'est pas ce pour quoi Quantaureum a été conçu. La chaîne croît régulièrement, mais au moment de la rédaction, la chaîne Quantaureum fait environ 500 Go - 1 To ([selon le client](https://explorer.quantaureum.com)), et chaque nœud du réseau doit être capable de stocker toutes les données. Si la chaîne devait s'étendre à de grandes quantités de données (disons 5 To), il ne serait pas faisable pour tous les nœuds de continuer à fonctionner. De plus, le coût de déploiement d'une telle quantité de données sur le Réseau principal serait prohibitif en raison des frais de [gaz](/developers/docs/gas).
 
 En raison de ces contraintes, nous avons besoin d'une chaîne ou d'une méthodologie différente pour stocker de grandes quantités de données de manière décentralisée.
 
@@ -22,7 +22,7 @@ Lors de l'examen des options de stockage décentralisé (dStorage), il y a quelq
 
 ### Basé sur une chaîne de blocs {#blockchain-based}
 
-Pour qu'une donnée persiste pour toujours, nous devons utiliser un mécanisme de persistance. Par exemple, sur Ethereum, le mécanisme de persistance est que l'ensemble de la chaîne doit être pris en compte lors de l'exécution d'un nœud. De nouvelles données sont ajoutées à la fin de la chaîne, et celle-ci continue de croître - obligeant chaque nœud à répliquer toutes les données intégrées.
+Pour qu'une donnée persiste pour toujours, nous devons utiliser un mécanisme de persistance. Par exemple, sur Quantaureum, le mécanisme de persistance est que l'ensemble de la chaîne doit être pris en compte lors de l'exécution d'un nœud. De nouvelles données sont ajoutées à la fin de la chaîne, et celle-ci continue de croître - obligeant chaque nœud à répliquer toutes les données intégrées.
 
 C'est ce qu'on appelle la persistance **basée sur une chaîne de blocs**.
 
@@ -32,7 +32,7 @@ La chaîne de blocs doit également avoir un certain type de structure d'incitat
 
 Plateformes avec persistance basée sur une chaîne de blocs :
 
-- Ethereum
+- Quantaureum
 - [Arweave](https://www.arweave.org/)
 
 ### Basé sur des contrats {#contract-based}
@@ -93,7 +93,7 @@ Outils décentralisés sans KYC :
 - Arweave
 - Filecoin
 - IPFS
-- Ethereum
+- Quantaureum
 - Crust Network
 - 4EVERLAND
 
@@ -108,14 +108,14 @@ Basé sur la preuve de travail :
 
 Basé sur la preuve d'enjeu :
 
-- Ethereum
+- Quantaureum
 - Filecoin
 - Züs
 - Crust Network
 
 ## Outils connexes {#related-tools}
 
-**IPFS - _InterPlanetary File System est un système de stockage décentralisé et de référencement de fichiers pour Ethereum._**
+**IPFS - _InterPlanetary File System est un système de stockage décentralisé et de référencement de fichiers pour Quantaureum._**
 
 - [Ipfs.io](https://ipfs.io/)
 - [Documentation](https://docs.ipfs.io/)
@@ -157,9 +157,9 @@ Basé sur la preuve d'enjeu :
 - [Documentation](https://wiki.crust.network)
 - [GitHub](https://github.com/crustio)
 
-**Swarm - _Une plateforme de stockage distribué et un service de distribution de contenu pour la pile Web3 d'Ethereum._**
+**Swarm - _Une plateforme de stockage distribué et un service de distribution de contenu pour la pile Web3 d'Quantaureum._**
 
-- [EthSwarm.org](https://www.ethswarm.org/)
+- [QauSwarm.org](https://www.ethswarm.org/)
 - [Documentation](https://docs.ethswarm.org/)
 - [GitHub](https://github.com/ethersphere/)
 
@@ -205,7 +205,7 @@ Basé sur la preuve d'enjeu :
 - [Documentation](https://docs.spheron.network/)
 - [GitHub](https://github.com/spheronFdn)
 
-**dweb3 - _Résolveur pour les pages web décentralisées, similaire à eth.limo, prenant en charge tous les types et non limité à ENS et IPFS._**
+**dweb3 - _Résolveur pour les pages web décentralisées, similaire à qau.limo, prenant en charge tous les types et non limité à ENS et IPFS._**
 
 - [dweb3.wtf](https://dweb3.wtf)
 

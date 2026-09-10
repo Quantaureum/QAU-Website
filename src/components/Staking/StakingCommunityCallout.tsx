@@ -6,7 +6,7 @@ import Reddit from "@/components/icons/reddit.svg"
 import { ButtonLink } from "@/components/ui/buttons/Button"
 import Callout from "@/components/ui/callout"
 
-import image from "@/public/images/enterprise-eth.png"
+import image from "@/public/images/enterprise-qau.png"
 
 const StakingCommunityCallout = async (
   props: React.HTMLAttributes<HTMLDivElement>

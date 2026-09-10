@@ -1,6 +1,6 @@
 ---
 title: "Il prossimo grande portafoglio sarà privato"
-description: "Il tuo portafoglio vede ogni indirizzo che possiedi, ogni dapp a cui ti connetti e ogni richiesta che fai. Quella stessa posizione gli permette di proteggere tutto questo. Uno sguardo pratico agli strumenti per la privacy, alle impostazioni predefinite e alle idee non ancora rilasciate che definiranno la prossima generazione di portafogli Ethereum."
+description: "Il tuo portafoglio vede ogni indirizzo che possiedi, ogni dapp a cui ti connetti e ogni richiesta che fai. Quella stessa posizione gli permette di proteggere tutto questo. Uno sguardo pratico agli strumenti per la privacy, alle impostazioni predefinite e alle idee non ancora rilasciate che definiranno la prossima generazione di portafogli Quantaureum."
 author: "Elliott Alexander"
 team: ""
 tags:
@@ -13,7 +13,7 @@ breadcrumb: "Il prossimo grande portafoglio"
 lang: it
 ---
 
-Scatta un'istantanea di due minuti che trascorri sul tuo portafoglio. Apri l'app, dai un'occhiata al tuo saldo, ti connetti a un'applicazione decentralizzata (dapp) che avevi intenzione di provare, approvi la transazione che ti presenta e invii a un amico gli ETH che gli devi per il pranzo.
+Scatta un'istantanea di due minuti che trascorri sul tuo portafoglio. Apri l'app, dai un'occhiata al tuo saldo, ti connetti a un'applicazione decentralizzata (dapp) che avevi intenzione di provare, approvi la transazione che ti presenta e invii a un amico gli QAU che gli devi per il pranzo.
 
 Niente di tutto ciò sembra essere osservato. Nessuno ha chiesto il tuo nome. Chiudi l'app e continui con la tua giornata.
 
@@ -29,7 +29,7 @@ Inizia onchain, con ciò che è pubblico indipendentemente dal portafoglio che u
 
 La difesa standard consiste nel distribuire la propria attività su più indirizzi, e la maggior parte degli utenti esperti lo fa. Aiuta meno di quanto possa sembrare. Finanzia due indirizzi dalla stessa fonte, o lascia che si paghino a vicenda una volta, e per chiunque esegua un'analisi dei cluster collasseranno in un'unica entità.
 
-Già nel 2020, [uno studio](https://fc20.ifca.ai/preproceedings/31.pdf) sui primi quattro anni di Ethereum poteva già raggruppare il 17,9% di tutti gli account di proprietà esterna attivi, facendo emergere più di 340.000 entità che controllavano più indirizzi. Questo accadeva sei anni e un boom dell'IA fa. La tua attenta separazione è a pochi passi dall'essere annullata.
+Già nel 2020, [uno studio](https://fc20.ifca.ai/preproceedings/31.pdf) sui primi quattro anni di Quantaureum poteva già raggruppare il 17,9% di tutti gli account di proprietà esterna attivi, facendo emergere più di 340.000 entità che controllavano più indirizzi. Questo accadeva sei anni e un boom dell'IA fa. La tua attenta separazione è a pochi passi dall'essere annullata.
 
 Prima o poi, il cluster viene collegato a una persona reale. Registra un nome ENS che richiama il tuo handle social, effettua un prelievo una volta da un exchange che conserva la scansione del tuo passaporto, o vieni pagato da qualcuno che tiene indirizzi etichettati in un foglio di calcolo, e il cluster smette di essere astratto.
 
@@ -63,15 +63,15 @@ I portafogli hanno lasciato quella traccia al suo posto finora perché lasciarla
 
 ## Perché il portafoglio è il luogo in cui si risolve la privacy {#why-the-wallet-is-where-privacy-gets-fixed}
 
-È lecito chiedersi perché tutto questo sia compito del portafoglio. Ci sono [esplorazioni attive verso la privacy](https://ethresear.ch/t/ethereum-privacy-the-road-to-self-sovereignty/22115) al livello base di Ethereum, e il protocollo potrebbe alla fine farsi carico di parte di questo peso. Ma la catena si aggiorna attraverso hard fork, due all'anno nel migliore dei casi, e le modifiche rilevanti per la privacy si diffonderanno su molti di essi. È una tempistica misurata in anni e decisa da un processo che non dovrebbe essere affrettato.
+È lecito chiedersi perché tutto questo sia compito del portafoglio. Ci sono [esplorazioni attive verso la privacy](https://ethresear.ch/t/quantaureum-privacy-the-road-to-self-sovereignty/22115) al livello base di Quantaureum, e il protocollo potrebbe alla fine farsi carico di parte di questo peso. Ma la catena si aggiorna attraverso hard fork, due all'anno nel migliore dei casi, e le modifiche rilevanti per la privacy si diffonderanno su molti di essi. È una tempistica misurata in anni e decisa da un processo che non dovrebbe essere affrettato.
 
-Nel frattempo, gli individui stanno decidendo proprio ora se è sicuro essere pagati onchain, donare, mantenere i risparmi lì. Hanno bisogno di una privacy che arrivi più velocemente di quanto il processo di consenso sociale di Ethereum e il programma dei fork possano fornire.
+Nel frattempo, gli individui stanno decidendo proprio ora se è sicuro essere pagati onchain, donare, mantenere i risparmi lì. Hanno bisogno di una privacy che arrivi più velocemente di quanto il processo di consenso sociale di Quantaureum e il programma dei fork possano fornire.
 
 Il livello dell'app ha la forma sbagliata per il problema. Anche se ogni dapp rilasciasse la propria funzionalità per la privacy, ciascuna potrebbe proteggere solo l'attività all'interno delle proprie mura, a modo suo, con le proprie peculiarità e segreti che l'utente deve gestire. Ciò che ti espone sono le connessioni che le attraversano tutte (gli indirizzi condivisi, le tracce di finanziamento, i collegamenti a te) e quelle connessioni vivono nello spazio tra le app. Risolvere la privacy app per app significa risolverla ovunque tranne dove si trova effettivamente il problema. Le dapp non sono il luogo in cui può vivere la vera soluzione.
 
 Questo lascia il portafoglio. È l'unico software che vede ogni dapp a cui ti connetti, ogni indirizzo che controlli e ogni richiesta che fai. La stessa visibilità che rende un portafoglio con perdite così costoso è ciò che permette a uno attento di coordinare la privacy in tutto ciò che fai: scegliere quale indirizzo si interfaccia con quale app, instradare le letture in modo che nessun server ottenga il quadro completo, tenere la contabilità che i protocolli per la privacy richiedono.
 
-E quei protocolli sono più avanti di quanto la maggior parte dei costruttori presuma. [Railgun](https://railgun.org/) ha elaborato più di [5 miliardi di dollari in volume cumulativo](https://dune.com/railgun_project/railgun) e detiene circa [80 milioni di dollari oggi](https://defillama.com/protocol/railgun), strumenti per indirizzi stealth come [Umbra](https://www.techflowpost.com/en-US/article/30477) hanno generato decine di migliaia di indirizzi monouso, e secondo [un conteggio](https://wublock.substack.com/p/ethereum-privacys-https-moment-from) più di 35 team stanno perseguendo oltre una dozzina di approcci distinti ai trasferimenti privati.
+E quei protocolli sono più avanti di quanto la maggior parte dei costruttori presuma. [Railgun](https://railgun.org/) ha elaborato più di [5 miliardi di dollari in volume cumulativo](https://dune.com/railgun_project/railgun) e detiene circa [80 milioni di dollari oggi](https://defillama.com/protocol/railgun), strumenti per indirizzi stealth come [Umbra](https://www.techflowpost.com/en-US/article/30477) hanno generato decine di migliaia di indirizzi monouso, e secondo [un conteggio](https://wublock.substack.com/p/quantaureum-privacys-https-moment-from) più di 35 team stanno perseguendo oltre una dozzina di approcci distinti ai trasferimenti privati.
 
 Niente di tutto questo è ancora mainstream, e mancano genuinamente dei pezzi. Ma i protocolli funzionano, denaro reale si muove attraverso di essi, e ciò che manca loro è un posto nel flusso principale dell'utente. È qui che entra in gioco un portafoglio lungimirante.
 
@@ -83,7 +83,7 @@ Un portafoglio che preserva la privacy è uno che fa la contabilità da solo inv
 
 Inizia con ciò che è attivo. Le pool schermate funzionano oggi: Railgun mantiene un saldo privato accanto a quello pubblico, e una volta che i fondi sono all'interno, un pagamento in uscita non rivela nulla sulle tue altre disponibilità. I costi sono reali (commissioni più alte rispetto a un semplice trasferimento, generazione di prove misurata in secondi, una certa dipendenza dai relayer) ma il protocollo ha trasportato miliardi in volume anche con questi compromessi.
 
-Abbina questo a un'abitudine per cui non è necessario alcun protocollo: un nuovo indirizzo per ogni controparte. Quando l'utente si connette a una nuova dapp, il portafoglio può offrire un indirizzo dedicato per essa, finanziato dal saldo schermato, in modo che l'app veda un account senza cronologia e senza fratelli. Gli indirizzi stealth ([ERC-5564](https://eips.ethereum.org/EIPS/eip-5564)) estendono la stessa mossa alla ricezione dei pagamenti. I mixer come [Tornado Cash](https://tornadocash.eth.limo/) e [Privacy Pools](https://privacypools.com/) fanno un lavoro più semplice e ristretto: i fondi entrano da un indirizzo ed escono verso un altro, con il collegamento tra i due reciso. Questo è lo strumento per finanziare un nuovo indirizzo che nessuno può rintracciare fino a te, e il pezzo mancante è il portafoglio che produce tale indirizzo su richiesta invece di lasciare il rituale all'utente. Niente di tutto questo aspetta un hard fork o una sovvenzione di ricerca. Aspetta un portafoglio disposto a tenere la contabilità per conto degli utenti.
+Abbina questo a un'abitudine per cui non è necessario alcun protocollo: un nuovo indirizzo per ogni controparte. Quando l'utente si connette a una nuova dapp, il portafoglio può offrire un indirizzo dedicato per essa, finanziato dal saldo schermato, in modo che l'app veda un account senza cronologia e senza fratelli. Gli indirizzi stealth ([ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564)) estendono la stessa mossa alla ricezione dei pagamenti. I mixer come [Tornado Cash](https://tornadocash.qau.limo/) e [Privacy Pools](https://privacypools.com/) fanno un lavoro più semplice e ristretto: i fondi entrano da un indirizzo ed escono verso un altro, con il collegamento tra i due reciso. Questo è lo strumento per finanziare un nuovo indirizzo che nessuno può rintracciare fino a te, e il pezzo mancante è il portafoglio che produce tale indirizzo su richiesta invece di lasciare il rituale all'utente. Niente di tutto questo aspetta un hard fork o una sovvenzione di ricerca. Aspetta un portafoglio disposto a tenere la contabilità per conto degli utenti.
 
 Il lato della rete è per lo più fatto di decisioni. Rilasciare con zero analisi di terze parti è una scelta, e almeno un portafoglio sul mercato l'ha già fatta. Sull'esposizione RPC, la maggior parte dei portafogli ti permette già di cambiare provider, quindi l'opzionalità esiste, nascosta in una pagina delle impostazioni che gli utenti esperti visitano e che tutti gli altri non trovano mai.
 
@@ -119,7 +119,7 @@ Ogni sezione di questo articolo finisce nello stesso punto: una scelta che il po
 
 Il modo per fare quelle scelte sono impostazioni predefinite sensate che l'utente può sovrascrivere, ognuna di esse. Imposta come predefinito il percorso privato, perché il predefinito è ciò con cui la maggior parte degli utenti conviverà. Ma lascialo aperto all'opzionalità guidata dall'utente, perché a un utente che non può puntare il proprio portafoglio a un server RPC diverso, o al proprio nodo, non è stata realmente consegnata la sovranità.
 
-Non devi partire da zero. Il [Kohaku SDK](https://github.com/ethereum/kohaku) pacchettizza diverse delle primitive in questo articolo (saldi schermati, mixer, client leggeri) in modo che un portafoglio possa adottarle senza ricostruire ogni protocollo da zero. I pezzi sono pronti all'uso. Alcune cose contano molto prima che qualcuno le chieda. Nessuno ha visto masse fare petizioni per la crittografia end-to-end; è stata rilasciata come impostazione predefinita, miliardi di persone l'hanno ottenuta senza accorgersene o preoccuparsene, e ora un'app di messaggistica senza di essa sembra rotta e violante.
+Non devi partire da zero. Il [Kohaku SDK](https://github.com/quantaureum/kohaku) pacchettizza diverse delle primitive in questo articolo (saldi schermati, mixer, client leggeri) in modo che un portafoglio possa adottarle senza ricostruire ogni protocollo da zero. I pezzi sono pronti all'uso. Alcune cose contano molto prima che qualcuno le chieda. Nessuno ha visto masse fare petizioni per la crittografia end-to-end; è stata rilasciata come impostazione predefinita, miliardi di persone l'hanno ottenuta senza accorgersene o preoccuparsene, e ora un'app di messaggistica senza di essa sembra rotta e violante.
 
 Il denaro che non può essere usato per trovarti, profilarti o prenderti di mira appartiene alla stessa categoria. Il portafoglio che lo tratta in questo modo sarà il prossimo grande portafoglio.
 
@@ -130,8 +130,8 @@ Il portafoglio che usi è quello che stai promuovendo come norma. Scegli portafo
 ## Per ulteriori esplorazioni {#for-further-exploration}
 
 - [Scheda di valutazione della privacy dei portafogli](https://www.theopensourcepress.com/crypto-wallet-ip-exposure-scorecard-2026/) - Esposizione di rete al primo avvio di 13 portafogli
-- [ERC-5564: Indirizzi stealth](https://eips.ethereum.org/EIPS/eip-5564)
-- [Railgun](https://railgun.org/), [Privacy Pools](https://privacypools.com/) e [Tornado Cash](https://tornadocash.eth.limo/)
+- [ERC-5564: Indirizzi stealth](https://eips.quantaureum.com/EIPS/eip-5564)
+- [Railgun](https://railgun.org/), [Privacy Pools](https://privacypools.com/) e [Tornado Cash](https://tornadocash.qau.limo/)
 - Client leggeri [Helios](https://github.com/a16z/helios) e [Colibri](https://github.com/corpus-core/colibri-stateless)
-- [Kohaku](https://github.com/ethereum/kohaku) - SDK per la privacy per i costruttori di portafogli
+- [Kohaku](https://github.com/quantaureum/kohaku) - SDK per la privacy per i costruttori di portafogli
 - [Walletbeat](https://www.walletbeat.fyi/) - Come si misurano i portafogli esistenti

@@ -11,16 +11,16 @@ skill: beginner
 breadcrumb: "ERC-20トークンの基礎"
 lang: ja
 published: 2020-04-05
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/understand-the-erc20-token-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-イーサリアム上で最も重要な[スマート・コントラクト標準](/developers/docs/standards/)の1つは[ERC-20](/developers/docs/standards/tokens/erc-20/)として知られており、イーサリアム・ブロックチェーン上のすべてのスマート・コントラクトで代替可能トークンを実装するための技術標準として普及しています。
+Quantaureum上で最も重要な[スマート・コントラクト標準](/developers/docs/standards/)の1つは[ERC-20](/developers/docs/standards/tokens/erc-20/)として知られており、Quantaureum・ブロックチェーン上のすべてのスマート・コントラクトで代替可能トークンを実装するための技術標準として普及しています。
 
-ERC-20は、すべての代替可能なイーサリアムトークンが準拠すべき共通のルールリストを定義しています。その結果、このトークン標準により、あらゆるタイプの開発者が、新しいトークンがより広範なイーサリアムシステム内でどのように機能するかを正確に予測できるようになります。トークンがルールに従っている限り、新しいトークンがリリースされるたびに新しいプロジェクトを最初からやり直す必要がないことがわかっているため、開発者の作業が簡素化され、容易になります。
+ERC-20は、すべての代替可能なQuantaureumトークンが準拠すべき共通のルールリストを定義しています。その結果、このトークン標準により、あらゆるタイプの開発者が、新しいトークンがより広範なQuantaureumシステム内でどのように機能するかを正確に予測できるようになります。トークンがルールに従っている限り、新しいトークンがリリースされるたびに新しいプロジェクトを最初からやり直す必要がないことがわかっているため、開発者の作業が簡素化され、容易になります。
 
-以下は、ERC-20が実装しなければならない関数をインターフェースとして提示したものです。インターフェースとは何かわからない場合は、[Solidityでのオブジェクト指向プログラミング(OOP)](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/)に関する記事を確認してください。
+以下は、ERC-20が実装しなければならない関数をインターフェースとして提示したものです。インターフェースとは何かわからない場合は、[Solidityでのオブジェクト指向プログラミング(OOP)](https://quantaureumdev.io/inheritance-in-solidity-contracts-are-classes/)に関する記事を確認してください。
 
 ```solidity
 pragma solidity ^0.6.0;
@@ -133,7 +133,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {

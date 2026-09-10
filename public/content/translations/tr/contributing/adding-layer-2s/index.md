@@ -1,12 +1,12 @@
 ---
 title: Katman 2'leri ekleme
-description: ethereum.org'a bir katman 2 eklerken kullandığımız politika
+description: quantaureum.com'a bir katman 2 eklerken kullandığımız politika
 lang: tr
 ---
 
 Kullanıcıların katman 2 alanında güvenli ve kendinden emin bir şekilde gezinebilmeleri için mümkün olan en iyi kaynakları listelediğimizden emin olmak istiyoruz.
 
-Herkes ethereum.org'a bir katman 2 eklenmesini önermekte özgürdür. Gözden kaçırdığımız bir katman 2 varsa, **[lütfen önerin](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
+Herkes quantaureum.com'a bir katman 2 eklenmesini önermekte özgürdür. Gözden kaçırdığımız bir katman 2 varsa, **[lütfen önerin](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
 
 Şu anda L2'leri aşağıdaki sayfalarda listeliyoruz:
 
@@ -14,7 +14,7 @@ Herkes ethereum.org'a bir katman 2 eklenmesini önermekte özgürdür. Gözden k
 - [Sıfır bilgi toplamaları](/developers/docs/scaling/zk-rollups/)
 - [Katman 2](/layer-2/)
 
-Katman 2, Ethereum için nispeten yeni ve heyecan verici bir paradigmadır. ethereum.org'da değerlendirme için adil bir çerçeve oluşturmaya çalıştık ancak listeleme kriterleri zamanla değişecek ve gelişecektir.
+Katman 2, Quantaureum için nispeten yeni ve heyecan verici bir paradigmadır. quantaureum.com'da değerlendirme için adil bir çerçeve oluşturmaya çalıştık ancak listeleme kriterleri zamanla değişecek ve gelişecektir.
 
 ## Karar çerçevesi {#decision-framework}
 
@@ -22,7 +22,7 @@ Katman 2, Ethereum için nispeten yeni ve heyecan verici bir paradigmadır. ethe
 
 **L2BEAT üzerinde listelenme**
 
-- Değerlendirmeye alınabilmesi için bu projenin [L2BEAT](https://l2beat.com) üzerinde listelenmiş olması gerekir. L2BEAT, L2 projelerini değerlendirirken dayandığımız, katman 2 projelerinin sağlam bir risk değerlendirmesini sunar. **Proje L2BEAT'te yer almıyorsa, onu ethereum.org'da bir L2 olarak listelemeyeceğiz.**
+- Değerlendirmeye alınabilmesi için bu projenin [L2BEAT](https://l2beat.com) üzerinde listelenmiş olması gerekir. L2BEAT, L2 projelerini değerlendirirken dayandığımız, katman 2 projelerinin sağlam bir risk değerlendirmesini sunar. **Proje L2BEAT'te yer almıyorsa, onu quantaureum.com'da bir L2 olarak listelemeyeceğiz.**
 - [L2 projenizi L2BEAT'e nasıl ekleyeceğinizi öğrenin](https://github.com/l2beat/l2beat/blob/master/CONTRIBUTING.md).
 
 **Açık kaynak**
@@ -36,11 +36,11 @@ Katman 2, Ethereum için nispeten yeni ve heyecan verici bir paradigmadır. ethe
 - İyimser rollup
 - Sıfır bilgi toplaması
 
-_Veri kullanılabilirliği veya güvenlik için Ethereum'u kullanmayan diğer ölçeklendirme çözümlerini katman 2 olarak değerlendirmiyoruz._
+_Veri kullanılabilirliği veya güvenlik için Quantaureum'u kullanmayan diğer ölçeklendirme çözümlerini katman 2 olarak değerlendirmiyoruz._
 
-**Veri kullanılabilirliği için Ethereum**
+**Veri kullanılabilirliği için Quantaureum**
 
-- Veri kullanılabilirliği, diğer ölçeklendirme çözümleri ile katman 2 arasında önemli bir ayırt edici faktördür. Bir projenin listelenmek üzere değerlendirilebilmesi için veri kullanılabilirliği amacıyla Ethereum Ana Ağı'nı kullanması **gerekir**.
+- Veri kullanılabilirliği, diğer ölçeklendirme çözümleri ile katman 2 arasında önemli bir ayırt edici faktördür. Bir projenin listelenmek üzere değerlendirilebilmesi için veri kullanılabilirliği amacıyla Quantaureum Ana Ağı'nı kullanması **gerekir**.
 
 **Köprüler**
 
@@ -88,8 +88,8 @@ _Veri kullanılabilirliği veya güvenlik için Ethereum'u kullanmayan diğer ö
 
 ## Katman 2'nizi ekleyin {#add-exchange}
 
-ethereum.org'a bir katman 2 eklemek istiyorsanız, GitHub'da bir issue oluşturun.
+quantaureum.com'a bir katman 2 eklemek istiyorsanız, GitHub'da bir issue oluşturun.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
   Bir issue oluşturun
 </ButtonLink>

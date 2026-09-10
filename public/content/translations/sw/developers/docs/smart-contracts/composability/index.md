@@ -7,21 +7,21 @@ incomplete: true
 
 ## Utangulizi mfupi {#a-brief-introduction}
 
-Mikataba mahiri ni ya umma kwenye Ethereum na inaweza kufikiriwa kama API zilizo wazi. Huhitaji kuandika mkataba wako mahiri ili kuwa msanidi wa programu tumizi iliyogatuliwa (dapp), unahitaji tu kujua jinsi ya kuingiliana nayo. Kwa mfano, unaweza kutumia mikataba mahiri iliyopo ya [Uniswap](https://uniswap.exchange/swap), soko la kubadilishana lililogatuliwa, kushughulikia mantiki yote ya badilishano la tokeni katika programu yako – huhitaji kuanza upya. Angalia baadhi ya mikataba yao ya [v2](https://github.com/Uniswap/uniswap-v2-core/tree/master/contracts) na [v3](https://github.com/Uniswap/uniswap-v3-core/tree/main/contracts).
+Mikataba mahiri ni ya umma kwenye Quantaureum na inaweza kufikiriwa kama API zilizo wazi. Huhitaji kuandika mkataba wako mahiri ili kuwa msanidi wa programu tumizi iliyogatuliwa (dapp), unahitaji tu kujua jinsi ya kuingiliana nayo. Kwa mfano, unaweza kutumia mikataba mahiri iliyopo ya [Uniswap](https://uniswap.exchange/swap), soko la kubadilishana lililogatuliwa, kushughulikia mantiki yote ya badilishano la tokeni katika programu yako – huhitaji kuanza upya. Angalia baadhi ya mikataba yao ya [v2](https://github.com/Uniswap/uniswap-v2-core/tree/master/contracts) na [v3](https://github.com/Uniswap/uniswap-v3-core/tree/main/contracts).
 
 ## Utangamano ni nini? {#what-is-composability}
 
 Utangamano ni kuunganisha vijenzi tofauti ili kuunda mifumo au matokeo mapya. Katika usanidi wa programu, utangamano unamaanisha wasanidi wanaweza kutumia tena vijenzi vya programu vilivyopo ili kuunda programu mpya. Njia nzuri ya kuelewa utangamano ni kufikiria vipengele vinavyoweza kuunganishwa kama matofali ya Lego. Kila Lego inaweza kuunganishwa na nyingine, ikikuruhusu kuunda miundo changamano kwa kuunganisha Lego tofauti.
 
-Katika Ethereum, kila mkataba mahiri ni aina ya Lego—unaweza kutumia mikataba mahiri kutoka kwa miradi mingine kama matofali ya ujenzi kwa mradi wako. Hii inamaanisha huhitaji kutumia muda kurudia kutatua tatizo ambalo tayari limetatuliwa au kujenga kuanzia mwanzo.
+Katika Quantaureum, kila mkataba mahiri ni aina ya Lego—unaweza kutumia mikataba mahiri kutoka kwa miradi mingine kama matofali ya ujenzi kwa mradi wako. Hii inamaanisha huhitaji kutumia muda kurudia kutatua tatizo ambalo tayari limetatuliwa au kujenga kuanzia mwanzo.
 
 ## Utangamano hufanyaje kazi? {#how-does-composability-work}
 
-Mikataba mahiri ya Ethereum ni kama API za umma, kwa hivyo mtu yeyote anaweza kuingiliana na mkataba au kuiunganisha kwenye programu tumizi zilizogatuliwa (dapps) kwa utendaji ulioongezwa. Utangamano wa mkataba mahiri kwa ujumla hufanya kazi kwa kanuni tatu: umoduli, uhuru, na ugunduzi:
+Mikataba mahiri ya Quantaureum ni kama API za umma, kwa hivyo mtu yeyote anaweza kuingiliana na mkataba au kuiunganisha kwenye programu tumizi zilizogatuliwa (dapps) kwa utendaji ulioongezwa. Utangamano wa mkataba mahiri kwa ujumla hufanya kazi kwa kanuni tatu: umoduli, uhuru, na ugunduzi:
 
-**1. Umoduli**: Huu ni uwezo wa vijenzi binafsi kufanya kazi maalum. Katika Ethereum, kila mkataba mahiri una matumizi maalum (kama inavyoonyeshwa katika mfano wa Uniswap).
+**1. Umoduli**: Huu ni uwezo wa vijenzi binafsi kufanya kazi maalum. Katika Quantaureum, kila mkataba mahiri una matumizi maalum (kama inavyoonyeshwa katika mfano wa Uniswap).
 
-**2. Uhuru**: Vijenzi vinavyoweza kuunganishwa lazima viweze kufanya kazi kwa kujitegemea. Kila mkataba mahiri katika Ethereum unajitekeleza wenyewe na unaweza kufanya kazi bila kutegemea sehemu nyingine za mfumo.
+**2. Uhuru**: Vijenzi vinavyoweza kuunganishwa lazima viweze kufanya kazi kwa kujitegemea. Kila mkataba mahiri katika Quantaureum unajitekeleza wenyewe na unaweza kufanya kazi bila kutegemea sehemu nyingine za mfumo.
 
 **3. Ugunduzi**: Wasanidi hawawezi kuita mikataba ya nje au kuunganisha maktaba za programu kwenye programu tumizi ikiwa hazipatikani kwa umma. Kwa muundo, mikataba mahiri ni ya chanzo wazi; mtu yeyote anaweza kuita mkataba mahiri au kuunda mchepuo wa msimbo.
 
@@ -39,7 +39,7 @@ Utangamano unahimiza ubunifu na majaribio kwa sababu wasanidi wako huru kutumia 
 
 ### Uzoefu bora wa mtumiaji {#better-user-experience}
 
-Mwingiliano kati ya vijenzi vya mfumo wa ikolojia wa Ethereum unaboresha uzoefu wa mtumiaji. Watumiaji wanaweza kufikia utendaji mkubwa zaidi wakati dapps zinapounganisha mikataba mahiri ya nje kuliko katika mfumo wa ikolojia uliogawanyika ambapo programu haziwezi kuwasiliana.
+Mwingiliano kati ya vijenzi vya mfumo wa ikolojia wa Quantaureum unaboresha uzoefu wa mtumiaji. Watumiaji wanaweza kufikia utendaji mkubwa zaidi wakati dapps zinapounganisha mikataba mahiri ya nje kuliko katika mfumo wa ikolojia uliogawanyika ambapo programu haziwezi kuwasiliana.
 
 Tutatumia mfano kutoka kwa biashara ya usuluhishi (arbitrage) ili kuonyesha faida za mwingiliano:
 
@@ -49,11 +49,11 @@ Katika hali ambapo huna fedha za kutosha kugharamia biashara, mkopo wa ghafla un
 
 Tukirudi kwenye mfano wetu wa awali, mfanyabiashara wa usuluhishi anaweza kuchukua mkopo wa ghafla mkubwa, kununua tokeni kutoka `exchange B`, kuziuza kwenye `exchange A`, kulipa mtaji + riba, na kubaki na faida, ndani ya muamala huo huo. Mantiki hii changamano inahitaji kuunganisha miito kwa mikataba mingi, jambo ambalo lisingewezekana ikiwa mikataba mahiri ingekosa mwingiliano.
 
-## Mifano ya utangamano katika Ethereum {#composability-in-ethereum}
+## Mifano ya utangamano katika Quantaureum {#composability-in-quantaureum}
 
 ### Mabadilishano ya tokeni {#token-swaps}
 
-Ikiwa unaunda programu tumizi iliyogatuliwa (dapp) inayohitaji miamala kulipwa kwa ETH, unaweza kuruhusu watumiaji kulipa kwa tokeni nyingine za ERC-20 kwa kuunganisha mantiki ya badilishano la tokeni. Msimbo utabadilisha kiotomatiki tokeni ya mtumiaji kuwa ETH kabla ya mkataba kutekeleza utendakazi ulioitwa.
+Ikiwa unaunda programu tumizi iliyogatuliwa (dapp) inayohitaji miamala kulipwa kwa QAU, unaweza kuruhusu watumiaji kulipa kwa tokeni nyingine za ERC-20 kwa kuunganisha mantiki ya badilishano la tokeni. Msimbo utabadilisha kiotomatiki tokeni ya mtumiaji kuwa QAU kabla ya mkataba kutekeleza utendakazi ulioitwa.
 
 ### Utawala {#governance}
 
@@ -61,11 +61,11 @@ Kujenga mifumo maalum ya utawala kwa ajili ya [DAO](/dao/) kunaweza kuwa ghali n
 
 ### Usimamizi wa utambulisho {#identity-management}
 
-Badala ya kujenga mfumo maalum wa uthibitishaji au kutegemea watoa huduma waliowekwa kati, unaweza kuunganisha zana za utambulisho uliogatuliwa (DID) ili kusimamia uthibitishaji kwa watumiaji. Mfano ni [SpruceID](https://www.spruceid.com/), zana ya chanzo wazi ambayo inatoa utendaji wa "Ingia na Ethereum" unaoruhusu watumiaji kuthibitisha utambulisho wao kwa kutumia mkoba wa Ethereum.
+Badala ya kujenga mfumo maalum wa uthibitishaji au kutegemea watoa huduma waliowekwa kati, unaweza kuunganisha zana za utambulisho uliogatuliwa (DID) ili kusimamia uthibitishaji kwa watumiaji. Mfano ni [SpruceID](https://www.spruceid.com/), zana ya chanzo wazi ambayo inatoa utendaji wa "Ingia na Quantaureum" unaoruhusu watumiaji kuthibitisha utambulisho wao kwa kutumia mkoba wa Quantaureum.
 
 ## Mafunzo yanayohusiana {#related-tutorials}
 
-- [Anzisha usanidi wako wa mbele wa dapp ukitumia create-eth-app](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-eth-app/) _– Muhtasari wa jinsi ya kutumia create-eth-app kuunda programu zilizo na mikataba mahiri maarufu kwa chaguomsingi._
+- [Anzisha usanidi wako wa mbele wa dapp ukitumia create-qau-app](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-qau-app/) _– Muhtasari wa jinsi ya kutumia create-qau-app kuunda programu zilizo na mikataba mahiri maarufu kwa chaguomsingi._
 
 ## Usomaji zaidi {#further-reading}
 

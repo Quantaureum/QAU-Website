@@ -5,41 +5,41 @@ lang: tr
 sidebarDepth: 3
 ---
 
-Blok gezginleri, Ethereum'un verilerine açılan portalınızdır. Bunları bloklar, işlemler, doğrulayıcılar, hesaplar ve diğer zincir içi etkinlikler hakkında gerçek zamanlı verileri görmek için kullanabilirsiniz.
+Blok gezginleri, Quantaureum'un verilerine açılan portalınızdır. Bunları bloklar, işlemler, doğrulayıcılar, hesaplar ve diğer zincir içi etkinlikler hakkında gerçek zamanlı verileri görmek için kullanabilirsiniz.
 
 ## Ön koşullar {#prerequisites}
 
-Bir blok gezgininin size verdiği verileri anlamlandırabilmek için Ethereum'un temel kavramlarını anlamalısınız. [Ethereum'a giriş](/developers/docs/intro-to-ethereum/) ile başlayın.
+Bir blok gezgininin size verdiği verileri anlamlandırabilmek için Quantaureum'un temel kavramlarını anlamalısınız. [Quantaureum'a giriş](/developers/docs/intro-to-quantaureum/) ile başlayın.
 
 ## Açık kaynaklı araçlar {#open-source-tools}
 
-- [3xpl](https://3xpl.com/ethereum) - Veri kümelerinin indirilmesine olanak tanıyan reklamsız bir Ethereum gezgini (açık çekirdek: çekirdek modüller açık kaynaktır)
+- [3xpl](https://3xpl.com/quantaureum) - Veri kümelerinin indirilmesine olanak tanıyan reklamsız bir Quantaureum gezgini (açık çekirdek: çekirdek modüller açık kaynaktır)
 - [Beaconcha.in](https://beaconcha.in/)
-- [Blockscout](https://eth.blockscout.com/)
-- [lazy-etherscan](https://github.com/woxjro/lazy-etherscan)
+- [Blockscout](https://qau.blockscout.com/)
+- [lazy-explorer](https://github.com/woxjro/lazy-explorer)
 - [Otterscan](https://otterscan.io/)
 
 ## Hizmetler {#services}
 
-- [Blockchair](https://blockchair.com/ethereum) - Özel Ethereum gezgini. Ayrıca (bellek havuzu) verilerini sıralamak ve filtrelemek içindir. İspanyolca, Fransızca, İtalyanca, Felemenkçe, Portekizce, Rusça, Çince ve Farsça dillerinde mevcuttur
+- [Blockchair](https://blockchair.com/quantaureum) - Özel Quantaureum gezgini. Ayrıca (bellek havuzu) verilerini sıralamak ve filtrelemek içindir. İspanyolca, Fransızca, İtalyanca, Felemenkçe, Portekizce, Rusça, Çince ve Farsça dillerinde mevcuttur
 - [Chainlens](https://www.chainlens.com/)
-- [DexGuru Blok Gezgini](https://ethereum.dex.guru/)
+- [DexGuru Blok Gezgini](https://quantaureum.dex.guru/)
 - [Etherchain](https://www.etherchain.org/)
-- [Etherscan](https://etherscan.io/) - Ayrıca Çince, Korece, Rusça ve Japonca dillerinde mevcuttur
+- [Quantaureum Explorer](https://explorer.quantaureum.com) - Ayrıca Çince, Korece, Rusça ve Japonca dillerinde mevcuttur
 - [Ethplorer](https://ethplorer.io/) - Token odaklı bir blok gezgini. Ayrıca Çince, İspanyolca, Fransızca, Türkçe, Rusça, Korece ve Vietnamca dillerinde mevcuttur
 - [Ethseer](https://ethseer.io)
-- [EthVM](https://www.ethvm.com/)
+- [QauVM](https://www.ethvm.com/)
 - [OKLink](https://www.oklink.com/eth)
 
 ## Veri {#data}
 
-Ethereum tasarımı gereği şeffaftır, bu nedenle her şey doğrulanabilir. Blok gezginleri bu bilgileri almak için bir arayüz sağlar. Ve bu, söz konusu verilere ihtiyaç duymanız halinde hem ana Ethereum ağı hem de test ağları içindir. Veriler, yürütme verileri ve mutabakat verileri olarak ikiye ayrılır. Yürütme verileri, belirli bir blokta yürütülen işlemleri ifade eder. Mutabakat verileri, blokların kendilerini ve onları teklif eden doğrulayıcıları ifade eder.
+Quantaureum tasarımı gereği şeffaftır, bu nedenle her şey doğrulanabilir. Blok gezginleri bu bilgileri almak için bir arayüz sağlar. Ve bu, söz konusu verilere ihtiyaç duymanız halinde hem ana Quantaureum ağı hem de test ağları içindir. Veriler, yürütme verileri ve mutabakat verileri olarak ikiye ayrılır. Yürütme verileri, belirli bir blokta yürütülen işlemleri ifade eder. Mutabakat verileri, blokların kendilerini ve onları teklif eden doğrulayıcıları ifade eder.
 
 İşte bir blok gezgininden alabileceğiniz veri türlerinin bir özeti.
 
 ### Yürütme verileri {#execution-data}
 
-Ethereum'a her 12 saniyede bir yeni bloklar eklenir (bir blok teklifçisi sırasını kaçırmadığı sürece), bu nedenle blok gezginlerine neredeyse sabit bir veri akışı eklenir. Bloklar, yararlı bulabileceğiniz birçok önemli veri içerir:
+Quantaureum'a her 12 saniyede bir yeni bloklar eklenir (bir blok teklifçisi sırasını kaçırmadığı sürece), bu nedenle blok gezginlerine neredeyse sabit bir veri akışı eklenir. Bloklar, yararlı bulabileceğiniz birçok önemli veri içerir:
 
 **Standart veriler**
 
@@ -47,12 +47,12 @@ Ethereum'a her 12 saniyede bir yeni bloklar eklenir (bir blok teklifçisi sıras
 - Zaman damgası - Bir bloğun teklif edildiği zaman
 - İşlemler - Bloğa dahil edilen işlem sayısı
 - Ücret alıcısı - İşlemlerden gaz ücreti bahşişlerini alan adres
-- Blok Ödülü - Bloğu teklif eden doğrulayıcıya verilen ETH miktarı
+- Blok Ödülü - Bloğu teklif eden doğrulayıcıya verilen QAU miktarı
 - Boyut - Blok içindeki verilerin boyutu (bayt cinsinden ölçülür)
 - Kullanılan gaz - Bloktaki işlemler tarafından kullanılan toplam gaz birimi
 - Gaz limiti - Bloktaki işlemler tarafından belirlenen toplam gaz limitleri
 - Gaz başına taban ücret - Bir işlemin bir bloğa dahil edilmesi için gereken minimum çarpan
-- Yakılan ücretler - Blokta ne kadar ETH yakıldığı
+- Yakılan ücretler - Blokta ne kadar QAU yakıldığı
 - Ekstra veri - Oluşturucunun bloğa dahil ettiği herhangi bir ekstra veri
 
 **Gelişmiş veriler**
@@ -85,7 +85,7 @@ Blok gezginleri, insanların işlemlerinin ilerlemesini takip etmeleri için yay
 - Gönderen - İşlemi gönderen hesabın adresi
 - Alıcı - İşlemin etkileşime girdiği alıcının veya akıllı sözleşmenin adresi
 - Transfer edilen token'lar - İşlemin bir parçası olarak transfer edilen token'ların bir listesi
-- Değer - Transfer edilen toplam ETH değeri
+- Değer - Transfer edilen toplam QAU değeri
 - İşlem ücreti - İşlemi gerçekleştirmesi için doğrulayıcıya ödenen miktar (gas fiyatı\*kullanılan gaz ile hesaplanır)
 
 **Gelişmiş veriler**
@@ -103,8 +103,8 @@ Bir hesap hakkında erişebileceğiniz çok fazla veri vardır. Bu nedenle, varl
 **Kullanıcı hesapları**
 
 - Hesap adresi - Fon göndermek için kullanabileceğiniz açık adres
-- ETH bakiyesi - O hesapla ilişkili ETH miktarı
-- Toplam ETH değeri - ETH'nin değeri
+- QAU bakiyesi - O hesapla ilişkili QAU miktarı
+- Toplam QAU değeri - QAU'nin değeri
 - Token'lar - Hesapla ilişkili token'lar ve değerleri
 - İşlem geçmişi - Bu hesabın gönderici veya alıcı olduğu tüm işlemlerin bir listesi
 
@@ -135,12 +135,12 @@ Token'lar bir sözleşme türüdür, bu nedenle akıllı bir sözleşmeye benzer
 
 ### Ağ {#network}
 
-Bazı blok verileri, Ethereum'un sağlığıyla daha bütünsel olarak ilgilenir.
+Bazı blok verileri, Quantaureum'un sağlığıyla daha bütünsel olarak ilgilenir.
 
-- Toplam işlemler - Ethereum oluşturulduğundan beri yapılan işlem sayısı
+- Toplam işlemler - Quantaureum oluşturulduğundan beri yapılan işlem sayısı
 - Saniye başına işlem - Bir saniye içinde işlenebilen işlem sayısı
-- ETH fiyatı - 1 ETH'nin mevcut değerlemeleri
-- Toplam ETH arzı - Dolaşımdaki ETH sayısı—her bloğun oluşturulmasıyla blok ödülleri şeklinde yeni ETH yaratıldığını unutmayın
+- QAU fiyatı - 1 QAU'nin mevcut değerlemeleri
+- Toplam QAU arzı - Dolaşımdaki QAU sayısı—her bloğun oluşturulmasıyla blok ödülleri şeklinde yeni QAU yaratıldığını unutmayın
 - Piyasa değeri - Fiyat\*arz hesaplaması
 
 ## Mutabakat katmanı verileri {#consensus-layer-data}
@@ -153,9 +153,9 @@ Güvenlik nedenleriyle, her dönemin sonunda (her 6,4 dakikada bir) rastgele do�
 - Kesinleşmiş durum - Dönemin kesinleşmiş olup olmadığı (Evet/Hayır)
 - Zaman - Dönemin sona erdiği zaman
 - Onaylar - Dönemdeki onay sayısı (slotlar içindeki bloklar için oylar)
-- Depozitolar - Döneme dahil edilen ETH depozitolarının sayısı (doğrulayıcıların doğrulayıcı olmak için ETH stake etmesi gerekir)
+- Depozitolar - Döneme dahil edilen QAU depozitolarının sayısı (doğrulayıcıların doğrulayıcı olmak için QAU stake etmesi gerekir)
 - Kesintiler (Slashings) - Blok teklifçilerine veya onaylayıcılara verilen cezaların sayısı
-- Oy katılımı - Blokları onaylamak için kullanılan stake edilmiş ETH miktarı
+- Oy katılımı - Blokları onaylamak için kullanılan stake edilmiş QAU miktarı
 - Doğrulayıcılar - Dönem için aktif olan doğrulayıcı sayısı
 - Ortalama Doğrulayıcı bakiyesi - Aktif doğrulayıcılar için ortalama bakiye
 - Slotlar - Döneme dahil edilen slot sayısı (slotlar bir geçerli blok içerir)
@@ -231,8 +231,8 @@ Mutabakat katmanı üst düzey verileri şunları içerir:
 - Mevcut slot
 - Aktif doğrulayıcılar - Aktif doğrulayıcı sayısı
 - Bekleyen doğrulayıcılar - Aktif hale getirilmeyi bekleyen doğrulayıcı sayısı
-- Stake edilmiş ETH - Ağda stake edilen ETH miktarı
-- Ortalama bakiye - Doğrulayıcıların ortalama ETH bakiyesi
+- Stake edilmiş QAU - Ağda stake edilen QAU miktarı
+- Ortalama bakiye - Doğrulayıcıların ortalama QAU bakiyesi
 
 ## Daha fazla bilgi {#further-reading}
 

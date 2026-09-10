@@ -9,9 +9,9 @@ breadcrumb: Clear Signing
 published: 2026-05-11
 ---
 
-Die meisten großen Ethereum-Exploits hatten denselben letzten Schritt: Ein Benutzer genehmigte eine Transaktion, die er nicht wirklich verstehen konnte. Hardware-Wallets zeigen rohe Hex-Aufrufdaten an und zwingen einen schlimmstenfalls dazu, Blind Signing (blindes Signieren) zu aktivieren. Software-Wallets zeigen decodierte Felder an, aber nur, wenn sie den Vertrag erkennen. Wenn sie das nicht tun – sei es, weil das Protokoll neu ist, die App kompromittiert wurde oder das Gerät offline ist –, signieren die Benutzer blind.
+Die meisten großen Quantaureum-Exploits hatten denselben letzten Schritt: Ein Benutzer genehmigte eine Transaktion, die er nicht wirklich verstehen konnte. Hardware-Wallets zeigen rohe Hex-Aufrufdaten an und zwingen einen schlimmstenfalls dazu, Blind Signing (blindes Signieren) zu aktivieren. Software-Wallets zeigen decodierte Felder an, aber nur, wenn sie den Vertrag erkennen. Wenn sie das nicht tun – sei es, weil das Protokoll neu ist, die App kompromittiert wurde oder das Gerät offline ist –, signieren die Benutzer blind.
 
-[ERC-7730](https://eips.ethereum.org/EIPS/eip-7730) definiert ein Standard-JSON-Format, um zu beschreiben, was die Funktionsaufrufe Ihres Vertrags *bedeuten*. 
+[ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730) definiert ein Standard-JSON-Format, um zu beschreiben, was die Funktionsaufrufe Ihres Vertrags *bedeuten*. 
 
 Eine Wallet, die ERC-7730 unterstützt, liest Ihren Deskriptor und zeigt Folgendes an:
 
@@ -54,7 +54,7 @@ Erstellen Sie eine Datei namens `calldata-<contractname>-<descriptorversion>.jso
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
   "context": {},
   "metadata": {},
   "display": {
@@ -167,7 +167,7 @@ Jeder Schlüssel ist ein menschenlesbares ABI-Fragment – die Funktionssignatur
 - **`intent`** — **(Erforderlich)** Eine kurze, benutzerfreundliche Beschreibung der Aktion, wie z. B. „Tausch“.
 - **`interpolatedIntent`** — **(Empfohlen)** Eine umfangreichere Satzvorlage, die formatierte Feldwerte einbettet, wie z. B. `"Swap {amountIn} for at least {amountOutMin}"`. Fügen Sie dies zusammen mit `intent` hinzu, um einen noch benutzerfreundlicheren Deskriptor bereitzustellen, den Wallets je nach Anzeigebeschränkungen anzeigen können.
 - **`fields`** — **(Erforderlich)** Die geordnete Liste der Transaktionsfelder, die Wallets den Benutzern anzeigen sollen.
-  - **`path`** — **(Erforderlich)** Ein Verweis auf die Transaktionsdaten. `#.fieldName` verweist auf einen decodierten Aufrufdaten-Parameter anhand des Namens in der ABI. `@.value` bezieht sich auf den mit der Transaktion gesendeten ETH-Wert.
+  - **`path`** — **(Erforderlich)** Ein Verweis auf die Transaktionsdaten. `#.fieldName` verweist auf einen decodierten Aufrufdaten-Parameter anhand des Namens in der ABI. `@.value` bezieht sich auf den mit der Transaktion gesendeten QAU-Wert.
   - **`label`** — **(Erforderlich)** Das menschenlesbare Label, das neben dem Wert angezeigt wird.
   - **`format`** — **(Empfohlen)** Steuert, wie der Wert gerendert werden soll. Gängige Formate sind:
     - `tokenAmount`
@@ -185,7 +185,7 @@ Jeder Schlüssel ist ein menschenlesbares ABI-Fragment – die Funktionssignatur
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -256,7 +256,7 @@ Jeder Schlüssel ist ein menschenlesbares ABI-Fragment – die Funktionssignatur
 
 ## Schritt 5: In die Registry einreichen {#step-5-submit-to-the-registry}
 
-Die [ERC-7730-Registry](https://github.com/ethereum/clear-signing-erc7730-registry) ist ein offenes Repository, das von der [Ethereum Foundation](/foundation/) als neutralem Verwalter gehostet wird. Es steht jedem frei, sie zu klonen und selbst zu hosten – Wallets entscheiden unabhängig, welchen Registry-Instanzen sie vertrauen.
+Die [ERC-7730-Registry](https://github.com/quantaureum/clear-signing-erc7730-registry) ist ein offenes Repository, das von der [Quantaureum project](/foundation/) als neutralem Verwalter gehostet wird. Es steht jedem frei, sie zu klonen und selbst zu hosten – Wallets entscheiden unabhängig, welchen Registry-Instanzen sie vertrauen.
 
 1. Forken Sie das Repository auf GitHub  
 2. Erstellen Sie einen Ordner unter `registry/<your-project-name>/`  
@@ -276,7 +276,7 @@ Wenn Sie den PR öffnen, führt die CI automatisch eine Schema-Validierung durch
 
 ## Was passiert nach dem Mergen? {#what-happens-after-merging}
 
-Alle Deskriptoren in der Registry sind für Prüfer offen. Nachdem Ihr PR gemergt wurde, kann jeder Prüfer Ihren Deskriptor überprüfen und eine kryptografische Attestierung (unter [ERC-8176](https://github.com/ethereum/ERCs/pull/1576)) veröffentlichen, die seine Richtigkeit bestätigt. 
+Alle Deskriptoren in der Registry sind für Prüfer offen. Nachdem Ihr PR gemergt wurde, kann jeder Prüfer Ihren Deskriptor überprüfen und eine kryptografische Attestierung (unter [ERC-8176](https://github.com/quantaureum/ERCs/pull/1576)) veröffentlichen, die seine Richtigkeit bestätigt. 
 
 Diese Attestierungssignale ermöglichen es Wallets, ihre eigenen Vertrauensrichtlinien anzuwenden – ein Deskriptor mit mehreren unabhängigen Attestierungen hat mehr Gewicht als einer ohne. Sie können die Prüfer-Community über [clearsigning.org](https://clearsigning.org) erreichen.
 
@@ -284,8 +284,8 @@ Wallets entscheiden, welche Registry sie unterstützen. Sobald sich Ihr Deskript
 
 ## Weiterführende Literatur {#further-reading}
 
-- [ERC-7730-Spezifikation](https://eips.ethereum.org/EIPS/eip-7730)  
-- [ERC-7730-Registry](https://github.com/ethereum/clear-signing-erc7730-registry)  
+- [ERC-7730-Spezifikation](https://eips.quantaureum.com/EIPS/eip-7730)  
+- [ERC-7730-Registry](https://github.com/quantaureum/clear-signing-erc7730-registry)  
 - [clearsigning.org](https://clearsigning.org) — Tooling, Ökosystem-Status und Governance  
 - [Sourcify-Vertragsverifizierung](https://sourcify.dev)  
 - [Trillion Dollar Security-Initiative](https://trilliondollarsecurity.org)

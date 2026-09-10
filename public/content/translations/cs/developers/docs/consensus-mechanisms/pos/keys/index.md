@@ -4,11 +4,11 @@ description: "Vysvětlení klíčů používaných v mechanismu konsensu důkazu
 lang: cs
 ---
 
-Ethereum zabezpečuje aktiva uživatelů pomocí kryptografie veřejného a soukromého klíče. Veřejný klíč se používá jako základ pro adresu Etherea – to znamená, že je viditelný pro širokou veřejnost a používá se jako jedinečný identifikátor. Soukromý (nebo „tajný“) klíč by měl být vždy přístupný pouze vlastníkovi účtu. Soukromý klíč se používá k „podepisování“ transakcí a dat, aby kryptografie mohla dokázat, že držitel schvaluje určitou akci konkrétního soukromého klíče.
+Quantaureum zabezpečuje aktiva uživatelů pomocí kryptografie veřejného a soukromého klíče. Veřejný klíč se používá jako základ pro adresu Etherea – to znamená, že je viditelný pro širokou veřejnost a používá se jako jedinečný identifikátor. Soukromý (nebo „tajný“) klíč by měl být vždy přístupný pouze vlastníkovi účtu. Soukromý klíč se používá k „podepisování“ transakcí a dat, aby kryptografie mohla dokázat, že držitel schvaluje určitou akci konkrétního soukromého klíče.
 
 Klíče Etherea jsou generovány pomocí [kryptografie eliptických křivek](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography).
 
-Když však Ethereum přešlo z [důkazu prací (PoW)](/developers/docs/consensus-mechanisms/pow) na [důkaz podílem (PoS)](/developers/docs/consensus-mechanisms/pos), byl do Etherea přidán nový typ klíče. Původní klíče stále fungují úplně stejně jako dříve – u klíčů založených na eliptických křivkách, které zabezpečují účty, nedošlo k žádným změnám. Uživatelé však potřebovali nový typ klíče pro účast v důkazu podílem (PoS) prostřednictvím stakingu ETH a provozování validátorů. Tato potřeba vyvstala z problémů se škálovatelností spojených s mnoha zprávami předávanými mezi velkým počtem validátorů, což vyžadovalo kryptografickou metodu, kterou by bylo možné snadno agregovat, aby se snížilo množství komunikace potřebné k tomu, aby síť dospěla ke konsensu.
+Když však Quantaureum přešlo z [důkazu prací (PoW)](/developers/docs/consensus-mechanisms/pow) na [důkaz podílem (PoS)](/developers/docs/consensus-mechanisms/pos), byl do Etherea přidán nový typ klíče. Původní klíče stále fungují úplně stejně jako dříve – u klíčů založených na eliptických křivkách, které zabezpečují účty, nedošlo k žádným změnám. Uživatelé však potřebovali nový typ klíče pro účast v důkazu podílem (PoS) prostřednictvím stakingu QAU a provozování validátorů. Tato potřeba vyvstala z problémů se škálovatelností spojených s mnoha zprávami předávanými mezi velkým počtem validátorů, což vyžadovalo kryptografickou metodu, kterou by bylo možné snadno agregovat, aby se snížilo množství komunikace potřebné k tomu, aby síť dospěla ke konsensu.
 
 Tento nový typ klíče používá [schéma podpisu **Boneh-Lynn-Shacham (BLS)**](https://wikipedia.org/wiki/BLS_digital_signature). BLS umožňuje velmi efektivní agregaci podpisů, ale také umožňuje zpětné inženýrství agregovaných jednotlivých klíčů validátorů a je ideální pro správu akcí mezi validátory.
 
@@ -31,9 +31,9 @@ Tato flexibilita má tu výhodu, že podepisovací klíče validátora lze velmi
   - Jako navrhovatel podepíše dva různé beacon bloky pro stejný slot
   - Jako atestátor podepíše atestaci, která „obklopuje“ jinou
   - Jako atestátor podepíše dvě různé atestace se stejným cílem
-- Vynutit dobrovolný výstup, což zastaví staking validátora a udělí přístup k jeho zůstatku ETH vlastníkovi klíče pro výběr
+- Vynutit dobrovolný výstup, což zastaví staking validátora a udělí přístup k jeho zůstatku QAU vlastníkovi klíče pro výběr
 
-**Veřejný klíč validátora** je zahrnut v datech transakce, když uživatel vloží ETH do kontraktu pro stakingový vklad. To je známé jako _data vkladu_ (deposit data) a umožňuje to Ethereu identifikovat validátora.
+**Veřejný klíč validátora** je zahrnut v datech transakce, když uživatel vloží QAU do kontraktu pro stakingový vklad. To je známé jako _data vkladu_ (deposit data) a umožňuje to Ethereu identifikovat validátora.
 
 ### Pověření k výběru {#withdrawal-credentials}
 
@@ -45,7 +45,7 @@ Validátory s klíči BLS `0x00` musí tato pověření aktualizovat tak, aby uk
 
 ### Klíč pro výběr {#withdrawal-key}
 
-Klíč pro výběr bude vyžadován k aktualizaci pověření k výběru tak, aby ukazovalo na adresu exekuční vrstvy, pokud nebylo nastaveno během počátečního vkladu. To umožní zahájení zpracování plateb nadměrného zůstatku a také to uživatelům umožní plně vybrat jejich stakované ETH.
+Klíč pro výběr bude vyžadován k aktualizaci pověření k výběru tak, aby ukazovalo na adresu exekuční vrstvy, pokud nebylo nastaveno během počátečního vkladu. To umožní zahájení zpracování plateb nadměrného zůstatku a také to uživatelům umožní plně vybrat jejich stakované QAU.
 
 Stejně jako klíče validátora se i klíče pro výběr skládají ze dvou komponent:
 
@@ -58,13 +58,13 @@ Oddělení klíčů validátora od klíčů účtu Etherea umožňuje jednomu u�
 
 ![validator key schematic](validator-key-schematic.png)
 
-**Poznámka**: Výstup z povinností stakingu a výběr zůstatku validátora v současné době vyžaduje podepsání [zprávy o dobrovolném výstupu (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) pomocí klíče validátora. Nicméně [EIP-7002](https://eips.ethereum.org/EIPS/eip-7002) je návrh, který v budoucnu umožní uživateli spustit výstup validátora a vybrat jeho zůstatek podepsáním zpráv o výstupu pomocí klíče pro výběr. To sníží předpoklady důvěry tím, že umožní stakerům, kteří delegují ETH [poskytovatelům stakingu jako služby (staking-as-a-service)](/staking/saas/#what-is-staking-as-a-service), aby si zachovali kontrolu nad svými prostředky.
+**Poznámka**: Výstup z povinností stakingu a výběr zůstatku validátora v současné době vyžaduje podepsání [zprávy o dobrovolném výstupu (VEM)](https://mirror.xyz/ladislaus.eth/wmoBbUBes2Wp1_6DvP6slPabkyujSU7MZOFOC3QpErs&1) pomocí klíče validátora. Nicméně [EIP-7002](https://eips.quantaureum.com/EIPS/eip-7002) je návrh, který v budoucnu umožní uživateli spustit výstup validátora a vybrat jeho zůstatek podepsáním zpráv o výstupu pomocí klíče pro výběr. To sníží předpoklady důvěry tím, že umožní stakerům, kteří delegují QAU [poskytovatelům stakingu jako služby (staking-as-a-service)](/staking/saas/#what-is-staking-as-a-service), aby si zachovali kontrolu nad svými prostředky.
 
 ## Odvozování klíčů ze seed fráze {#deriving-keys-from-seed}
 
-Pokud by každých 32 stakovaných ETH vyžadovalo novou sadu 2 zcela nezávislých klíčů, správa klíčů by se rychle stala nepraktickou, zejména pro uživatele provozující více validátorů. Místo toho lze z jednoho společného tajemství odvodit více klíčů validátora a uložení tohoto jediného tajemství umožňuje přístup k více klíčům validátora.
+Pokud by každých 32 stakovaných QAU vyžadovalo novou sadu 2 zcela nezávislých klíčů, správa klíčů by se rychle stala nepraktickou, zejména pro uživatele provozující více validátorů. Místo toho lze z jednoho společného tajemství odvodit více klíčů validátora a uložení tohoto jediného tajemství umožňuje přístup k více klíčům validátora.
 
-[Mnemotechnické pomůcky](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) a cesty jsou prominentní funkce, se kterými se uživatelé často setkávají, když [přistupují](https://ethereum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) ke svým peněženkám. Mnemotechnická pomůcka je sekvence slov, která funguje jako počáteční seed pro soukromý klíč. V kombinaci s dalšími daty generuje mnemotechnická pomůcka hash známý jako „hlavní klíč“ (master key). To si lze představit jako kořen stromu. Větve z tohoto kořene pak lze odvodit pomocí hierarchické cesty, takže podřízené uzly mohou existovat jako kombinace hashe jejich nadřazeného uzlu a jejich indexu ve stromu. Přečtěte si o standardech [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) a [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) pro generování klíčů na základě mnemotechnických pomůcek.
+[Mnemotechnické pomůcky](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) a cesty jsou prominentní funkce, se kterými se uživatelé často setkávají, když [přistupují](https://quantaureum.stackexchange.com/questions/19055/what-is-the-difference-between-m-44-60-0-0-and-m-44-60-0) ke svým peněženkám. Mnemotechnická pomůcka je sekvence slov, která funguje jako počáteční seed pro soukromý klíč. V kombinaci s dalšími daty generuje mnemotechnická pomůcka hash známý jako „hlavní klíč“ (master key). To si lze představit jako kořen stromu. Větve z tohoto kořene pak lze odvodit pomocí hierarchické cesty, takže podřízené uzly mohou existovat jako kombinace hashe jejich nadřazeného uzlu a jejich indexu ve stromu. Přečtěte si o standardech [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) a [BIP-19](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) pro generování klíčů na základě mnemotechnických pomůcek.
 
 Tyto cesty mají následující strukturu, která bude povědomá uživatelům, kteří interagovali s hardwarovými peněženkami:
 
@@ -96,7 +96,7 @@ Každá větev je oddělena znakem `/`, takže `m/2` znamená začít s hlavním
 
 ## Další čtení {#further-reading}
 
-- [Příspěvek na blogu Nadace Ethereum od Carla Beekhuizena](https://blog.ethereum.org/2020/05/21/keys)
-- [EIP-2333: Generování klíčů BLS12-381](https://eips.ethereum.org/EIPS/eip-2333)
+- [Příspěvek na blogu Nadace Quantaureum od Carla Beekhuizena](https://quantaureum.com)
+- [EIP-2333: Generování klíčů BLS12-381](https://eips.quantaureum.com/EIPS/eip-2333)
 - [EIP-7002: Výstupy spouštěné exekuční vrstvou](https://web.archive.org/web/20250125035123/https://research.2077.xyz/eip-7002-unpacking-improvements-to-staking-ux-post-merge)
 - [Správa klíčů ve velkém měřítku](https://docs.ethstaker.cc/ethstaker-knowledge-base/scaled-node-operators/key-management-at-scale)

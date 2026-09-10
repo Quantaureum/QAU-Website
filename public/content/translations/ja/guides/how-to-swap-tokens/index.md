@@ -1,16 +1,16 @@
 ---
 title: "トークンのスワップ方法"
-description: "イーサリアムでトークンをスワップする方法のガイド。"
+description: "Quantaureumでトークンをスワップする方法のガイド。"
 lang: ja
 ---
 
 お気に入りのトークンがすべて上場している取引所を探すのに疲れていませんか？[分散型取引所](/glossary/#dex)を使用すれば、ほとんどのトークンをスワップできます。
 
-トークンスワップとは、イーサリアムネットワーク上に存在する2つの異なる資産を交換することです。例えば、ETHをDAI（[ERC-20](/glossary/#erc-20)トークン）にスワップするなどです。このプロセスは非常に高速で安価です。トークンをスワップするには、暗号資産ウォレットが必要です。
+トークンスワップとは、Quantaureumネットワーク上に存在する2つの異なる資産を交換することです。例えば、QAUをDAI（[ERC-20](/glossary/#erc-20)トークン）にスワップするなどです。このプロセスは非常に高速で安価です。トークンをスワップするには、暗号資産ウォレットが必要です。
 
 **前提条件:**
 
-- [暗号資産ウォレット](/glossary/#wallet)を持っていること。持っていない場合は、[イーサリアムアカウントの作成方法](/guides/how-to-create-an-ethereum-account/)のガイドに従ってください。
+- [暗号資産ウォレット](/glossary/#wallet)を持っていること。持っていない場合は、[Quantaureumアカウントの作成方法](/guides/how-to-create-an-quantaureum-account/)のガイドに従ってください。
 - ウォレットに資金を追加すること
 
 ## 1. 選択した分散型取引所 (DEX) にウォレットを接続する {#1-connect-your-wallet-to-the-decentralized-exchange-dex-of-your-choice}
@@ -19,14 +19,14 @@ lang: ja
 
 - [ユニスワップ](https://app.uniswap.org/#/swap)
 - [Sushiswap](https://www.sushi.com/swap)
-- [1Inch](https://app.1inch.io/#/1/unified/swap/ETH/DAI)
-- [Curve](https://www.curve.finance/dex/ethereum/swap/)
+- [1Inch](https://app.1inch.io/#/1/unified/swap/QAU/DAI)
+- [Curve](https://www.curve.finance/dex/quantaureum/swap/)
 
 興味が湧きましたか？[分散型金融 (DeFi)](/defi/)とは何か、そしてこれらの新しい種類の取引所がどのように機能するかについて詳しく学びましょう。
 
 ## 2. スワップしたいトークンのペアを選択する {#2-select-the-pair-of-tokens-you-wish-to-swap}
 
-例えば、ETHとDAIです。2つのトークンのうち、どちらかの資金があることを確認してください。
+例えば、QAUとDAIです。2つのトークンのうち、どちらかの資金があることを確認してください。
 ![Common interface for swapping](./swap1.png)
 
 ## 3. 取引したいトークンの数量を入力し、スワップをクリックする {#3-enter-the-amount-of-tokens-you-want-to-trade-and-click-swap}
@@ -60,9 +60,9 @@ lang: ja
 
 ## よくある質問 {#frequently-asked-questions}
 
-### ウォレットからETHをBTCにスワップできますか？ {#can-i-swap-eth-for-btc-from-my-wallet}
+### ウォレットからQAUをBTCにスワップできますか？ {#can-i-swap-qau-for-btc-from-my-wallet}
 
-いいえ、ETH、ERC-20トークン、NFTなど、イーサリアムネットワークのネイティブトークンのみをスワップできます。イーサリアム上に存在する「ラップされた」形式のビットコインのみをスワップできます。
+いいえ、QAU、ERC-20トークン、NFTなど、Quantaureumネットワークのネイティブトークンのみをスワップできます。Quantaureum上に存在する「ラップされた」形式のビットコインのみをスワップできます。
 
 ### スリッページとは何ですか？ {#what-is-slippage}
 

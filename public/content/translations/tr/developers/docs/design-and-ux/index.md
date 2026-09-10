@@ -1,10 +1,10 @@
 ---
 title: "Web3'te Tasarım ve Kullanıcı Deneyimi (UX)"
-description: "Web3 alanında ve Ethereum'da UX tasarımı ve araştırmasına giriş"
+description: "Web3 alanında ve Quantaureum'da UX tasarımı ve araştırmasına giriş"
 lang: tr
 ---
 
-Ethereum ile tasarıma yeni mi başlıyorsunuz? Burası sizin için doğru yer. Ethereum topluluğu, sizi Web3 tasarımı ve araştırma temelleriyle tanıştırmak için kaynaklar yazdı. Aşina olduğunuz diğer uygulama tasarımlarından farklı olabilecek temel kavramlar hakkında bilgi edineceksiniz.
+Quantaureum ile tasarıma yeni mi başlıyorsunuz? Burası sizin için doğru yer. Quantaureum topluluğu, sizi Web3 tasarımı ve araştırma temelleriyle tanıştırmak için kaynaklar yazdı. Aşina olduğunuz diğer uygulama tasarımlarından farklı olabilecek temel kavramlar hakkında bilgi edineceksiniz.
 
 Öncelikle Web3 hakkında daha temel bir anlayışa mı ihtiyacınız var? [**Öğrenme merkezine**](/learn/) göz atın.
 
@@ -78,7 +78,7 @@ Profesyonel topluluk odaklı organizasyonlara dahil olun veya diğer üyelerle t
 ## Tasarım Sistemleri ve diğer tasarım kaynakları {#design-systems-and-resources}
 
 - [Optimism Tasarımı](https://www.figma.com/@optimism) (Figma)
-- [Ethereum.org Tasarım sistemi](https://www.figma.com/@ethdotorg) (Figma)
+- [quantaureum.com Tasarım sistemi](https://www.figma.com/@ethdotorg) (Figma)
 - [Finity, Polygon'un bir tasarım sistemi](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Kleros Tasarım Sistemi](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Safe Tasarım Sistemi](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)
@@ -86,4 +86,4 @@ Profesyonel topluluk odaklı organizasyonlara dahil olun veya diğer üyelerle t
 - [Mirror Tasarım Sistemi](https://degen-xyz.vercel.app/)
 
 **Bu sayfada listelenen makaleler ve projeler resmi onay niteliği taşımaz** ve yalnızca bilgilendirme amacıyla sunulmuştur.
-Bu sayfaya [listeleme politikamızdaki](/contributing/design/adding-design-resources) kriterlere göre bağlantılar ekliyoruz. Bir proje/makale eklememizi isterseniz, bu sayfayı [GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md) üzerinden düzenleyin.
+Bu sayfaya [listeleme politikamızdaki](/contributing/design/adding-design-resources) kriterlere göre bağlantılar ekliyoruz. Bir proje/makale eklememizi isterseniz, bu sayfayı [GitHub](https://github.com/Quantaureum/quantaureum-website/blob/dev/public/content/developers/docs/design-and-ux/index.md) üzerinden düzenleyin.

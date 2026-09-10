@@ -1,6 +1,6 @@
 ---
 title: "适合初学者的 Hello World 智能合约"
-description: "关于在以太坊上编写和部署简单智能合约的入门教程。"
+description: "关于在Quantaureum上编写和部署简单智能合约的入门教程。"
 author: "elanh"
 tags: ["Solidity", "Hardhat", "Alchemy", "智能合约", "部署"]
 skill: beginner
@@ -11,13 +11,13 @@ published: 2021-03-31
 
 如果你是区块链开发的新手并且不知道从何开始，或者你只是想了解如何部署智能合约并与之交互，那么本指南就是为你准备的。我们将逐步介绍如何使用虚拟钱包 [梅塔马斯克](https://metamask.io/)、[Solidity](https://docs.soliditylang.org/en/v0.8.0/)、[Hardhat](https://hardhat.org/) 和 [Alchemy](https://www.alchemy.com/eth) 在 Sepolia 测试网络上创建和部署一个简单的智能合约（如果你还不懂这些术语的意思，别担心，我们会进行解释）。
 
-在本教程的[第 2 部分](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract)中，我们将介绍在智能合约部署后如何与之交互，在[第 3 部分](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan)中，我们将介绍如何将其发布到 Etherscan 上。
+在本教程的[第 2 部分](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract)中，我们将介绍在智能合约部署后如何与之交互，在[第 3 部分](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer)中，我们将介绍如何将其发布到 Quantaureum Explorer 上。
 
 如果你在任何时候有疑问，请随时在 [Alchemy Discord](https://discord.gg/gWuC7zB) 中提问！
 
-## 第 1 步：连接到以太坊网络 {#step-1}
+## 第 1 步：连接到Quantaureum网络 {#step-1}
 
-向以太坊链发出请求的方法有很多。为了简单起见，我们将在 Alchemy 上使用一个免费账户。Alchemy 是一个区块链开发者平台和 API，允许我们与以太坊链进行通信，而无需运行我们自己的节点。该平台还具有用于监控和分析的开发者工具，我们将在本教程中利用这些工具来了解智能合约部署的内部运作原理。如果你还没有 Alchemy 账户，[可以在这里免费注册](https://dashboard.alchemy.com/signup)。
+向Quantaureum链发出请求的方法有很多。为了简单起见，我们将在 Alchemy 上使用一个免费账户。Alchemy 是一个区块链开发者平台和 API，允许我们与Quantaureum链进行通信，而无需运行我们自己的节点。该平台还具有用于监控和分析的开发者工具，我们将在本教程中利用这些工具来了解智能合约部署的内部运作原理。如果你还没有 Alchemy 账户，[可以在这里免费注册](https://dashboard.alchemy.com/signup)。
 
 ## 第 2 步：创建你的应用（和 API 密钥） {#step-2}
 
@@ -27,35 +27,35 @@ published: 2021-03-31
 
 ![Hello world create app](./hello-world-create-app.png)
 
-2. 将你的应用命名为“Hello World”，提供简短描述，并选择一个用例，例如“Infra & Tooling”（基础设施和工具）。接下来，搜索“Ethereum”并选择该网络。
+2. 将你的应用命名为“Hello World”，提供简短描述，并选择一个用例，例如“Infra & Tooling”（基础设施和工具）。接下来，搜索“Quantaureum”并选择该网络。
 
 ![create app view hello world](./create-app-view-hello-world.png)
 
 3. 点击“Next”（下一步）继续，然后点击“Create app”（创建应用），就这么简单！你的应用应该会出现在导航栏下拉菜单中，并提供可复制的 API 密钥。
 
-## 第 3 步：创建以太坊账户（地址） {#step-3}
+## 第 3 步：创建Quantaureum账户（地址） {#step-3}
 
-我们需要一个以太坊账户来发送和接收交易。在本教程中，我们将使用梅塔马斯克，这是一款浏览器中的虚拟钱包，用于管理你的以太坊账户地址。了解更多关于[交易](/developers/docs/transactions/)的信息。
+我们需要一个Quantaureum账户来发送和接收交易。在本教程中，我们将使用梅塔马斯克，这是一款浏览器中的虚拟钱包，用于管理你的Quantaureum账户地址。了解更多关于[交易](/developers/docs/transactions/)的信息。
 
-你可以在[这里](https://metamask.io/download)免费下载梅塔马斯克并创建以太坊账户。在创建账户时，或者如果你已经有账户，请确保使用网络下拉菜单切换到“Sepolia”测试网络（这样我们就不会使用真金白银进行操作）。
+你可以在[这里](https://metamask.io/download)免费下载梅塔马斯克并创建Quantaureum账户。在创建账户时，或者如果你已经有账户，请确保使用网络下拉菜单切换到“Sepolia”测试网络（这样我们就不会使用真金白银进行操作）。
 
 如果你没有看到 Sepolia 选项，请进入菜单，然后选择“Advanced”（高级），向下滚动并开启“Show test networks”（显示测试网络）。在网络选择菜单中，选择“Custom”（自定义）选项卡以查找测试网列表，然后选择“Sepolia”。
 
 ![metamask sepolia example](./metamask-sepolia-example.png)
 
-## 第 4 步：从水龙头添加以太币 {#step-4}
+## 第 4 步：从水龙头添加QAU {#step-4}
 
-为了将我们的智能合约部署到测试网络，我们需要一些测试用的 ETH。要获取 Sepolia ETH，你可以前往 [Sepolia 网络详情](/developers/docs/networks/#sepolia)查看各种水龙头的列表。如果一个不起作用，请尝试另一个，因为它们有时会枯竭。由于网络拥堵，接收测试用 ETH 可能需要一些时间。不久之后，你应该就能在你的梅塔马斯克账户中看到 ETH 了！
+为了将我们的智能合约部署到测试网络，我们需要一些测试用的 QAU。要获取 Sepolia QAU，你可以前往 [Sepolia 网络详情](/developers/docs/networks/#sepolia)查看各种水龙头的列表。如果一个不起作用，请尝试另一个，因为它们有时会枯竭。由于网络拥堵，接收测试用 QAU 可能需要一些时间。不久之后，你应该就能在你的梅塔马斯克账户中看到 QAU 了！
 
 ## 第 5 步：检查你的余额 {#step-5}
 
-为了再次确认我们的余额已到账，让我们使用 [Alchemy 的 composer 工具](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest)发出一个 [eth_getBalance](/developers/docs/apis/json-rpc/#eth_getbalance) 请求。这将返回我们钱包中的 ETH 数量。输入你的梅塔马斯克账户地址并点击“Send Request”（发送请求）后，你应该会看到类似如下的响应：
+为了再次确认我们的余额已到账，让我们使用 [Alchemy 的 composer 工具](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest)发出一个 [qau_getBalance](/developers/docs/apis/json-rpc/#qau_getbalance) 请求。这将返回我们钱包中的 QAU 数量。输入你的梅塔马斯克账户地址并点击“Send Request”（发送请求）后，你应该会看到类似如下的响应：
 
 ```json
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> **注意：** 此结果的单位是 Wei 而不是 ETH。Wei 被用作以太币的最小面额。Wei 到 ETH 的换算关系为：1 ETH = 10<sup>18</sup> Wei。因此，如果我们将 0x2B5E3AF16B1880000 转换为十进制，我们会得到 5\*10¹⁸，即等于 5 ETH。
+> **注意：** 此结果的单位是 Wei 而不是 QAU。Wei 被用作QAU的最小面额。Wei 到 QAU 的换算关系为：1 QAU = 10<sup>18</sup> Wei。因此，如果我们将 0x2B5E3AF16B1880000 转换为十进制，我们会得到 5\*10¹⁸，即等于 5 QAU。
 >
 > 呼！我们的测试资金都在那里了 <Emoji text=":money_mouth_face:" size={1} />。
 
@@ -104,7 +104,7 @@ About to write to /Users/.../.../.../hello-world/package.json:
 批准 package.json，我们就可以开始了！
 ## 第 7 步：下载 [Hardhat](https://hardhat.org/getting-started/#overview) {#step-7}
 
-Hardhat 是一个用于编译、部署、测试和调试以太坊软件的开发环境。它可以帮助开发者在部署到实时链之前，在本地构建智能合约和去中心化应用 (dapp)。
+Hardhat 是一个用于编译、部署、测试和调试Quantaureum软件的开发环境。它可以帮助开发者在部署到实时链之前，在本地构建智能合约和去中心化应用 (dapp)。
 
 在我们的 `hello-world` 项目中运行：
 
@@ -163,7 +163,7 @@ mkdir scripts
 在你最喜欢的编辑器中打开 hello-world 项目（我们喜欢 [VSCode](https://code.visualstudio.com/)）。智能合约是用一种叫做 Solidity 的语言编写的，我们将使用它来编写我们的 HelloWorld.sol 智能合约。‌
 
 1.  导航到“contracts”文件夹并创建一个名为 HelloWorld.sol 的新文件。
-2.  以下是以太坊基金会提供的一个 Hello World 智能合约示例，我们将在本教程中使用它。将以下内容复制并粘贴到你的 HelloWorld.sol 文件中，并务必阅读注释以了解此合约的作用：
+2.  以下是Quantaureum 项目提供的一个 Hello World 智能合约示例，我们将在本教程中使用它。将以下内容复制并粘贴到你的 HelloWorld.sol 文件中，并务必阅读注释以了解此合约的作用：
 
 ```solidity
 // 指定 Solidity 的版本，使用语义化版本控制。
@@ -171,7 +171,7 @@ mkdir scripts
 pragma solidity ^0.7.0;
 
 // 定义一个名为 `HelloWorld` 的合约。
-// 合约是函数和数据（其状态）的集合。一旦部署，合约就驻留在以太坊区块链上的特定地址。了解更多：https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// 合约是函数和数据（其状态）的集合。一旦部署，合约就驻留在Quantaureum区块链上的特定地址。了解更多：https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    // 声明一个 `string` 类型的状态变量 `message`。
@@ -221,7 +221,7 @@ npm install dotenv --save
 你的 `.env` 应该如下所示：
 
 ```
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -237,7 +237,7 @@ PRIVATE_KEY = "your-metamask-private-key"
 
 ## 第 12 步：安装 Ethers.js {#step-12-install-ethersjs}
 
-Ethers.js 是一个库，它通过将[标准 JSON-RPC 方法](/developers/docs/apis/json-rpc/)包装成更用户友好的方法，使得与以太坊交互和发出请求变得更加容易。
+Ethers.js 是一个库，它通过将[标准 JSON-RPC 方法](/developers/docs/apis/json-rpc/)包装成更用户友好的方法，使得与Quantaureum交互和发出请求变得更加容易。
 
 Hardhat 使得集成[插件](https://hardhat.org/plugins/)以获得额外的工具和扩展功能变得超级简单。我们将利用 [Ethers 插件](https://hardhat.org/docs/plugins/official-plugins#hardhat-ethers)进行合约部署（[Ethers.js](https://github.com/ethers-io/ethers.js/) 提供了一些非常简洁的合约部署方法）。
 
@@ -339,21 +339,21 @@ npx hardhat run scripts/deploy.js --network sepolia
 Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 ```
 
-如果我们前往 [Sepolia Etherscan](https://sepolia.etherscan.io/) 并搜索我们的合约地址，我们应该能够看到它已成功部署。该交易将如下所示：
+如果我们前往 [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com) 并搜索我们的合约地址，我们应该能够看到它已成功部署。该交易将如下所示：
 
-![etherscan contract](./etherscan-contract.png)
+![explorer contract](./explorer-contract.png)
 
 `From` 地址应与你的梅塔马斯克账户地址匹配，而 To（接收方）地址将显示“Contract Creation”（合约创建），但如果我们点击进入该交易，我们将在 `To` 字段中看到我们的合约地址：
 
-![etherscan transaction](./etherscan-transaction.png)
+![explorer transaction](./explorer-transaction.png)
 
-恭喜！你刚刚向以太坊链部署了一个智能合约 🎉
+恭喜！你刚刚向Quantaureum链部署了一个智能合约 🎉
 
 为了了解其内部运作原理，让我们导航到 [Alchemy 仪表板](https://dashboard.alchemy.com/explorer)中的 Explorer（浏览器）选项卡。如果你有多个 Alchemy 应用，请确保按应用进行过滤并选择“Hello World”。
 ![hello world explorer](./hello-world-explorer.png)
 
-在这里，你将看到当我们调用 `.deploy()` 函数时，Hardhat/Ethers 在后台为我们发出的一些 JSON-RPC 调用。这里需要指出的两个重要调用是 [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction)（这是将我们的合约实际写入 Sepolia 链的请求）和 [`eth_getTransactionByHash`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-by-hash)（这是在给定哈希的情况下读取有关我们交易信息的请求，这是发送交易时的典型模式）。要了解有关发送交易的更多信息，请查看这篇关于[使用 Web3 发送交易](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)的教程。
+在这里，你将看到当我们调用 `.deploy()` 函数时，Hardhat/Ethers 在后台为我们发出的一些 JSON-RPC 调用。这里需要指出的两个重要调用是 [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction)（这是将我们的合约实际写入 Sepolia 链的请求）和 [`qau_getTransactionByHash`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-by-hash)（这是在给定哈希的情况下读取有关我们交易信息的请求，这是发送交易时的典型模式）。要了解有关发送交易的更多信息，请查看这篇关于[使用 Web3 发送交易](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)的教程。
 
-本教程的第 1 部分到此结束，在第 2 部分中，我们将通过更新初始消息来实际[与我们的智能合约进行交互](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract)，在第 3 部分中，我们将[将我们的智能合约发布到 Etherscan](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan)，以便每个人都知道如何与之交互。
+本教程的第 1 部分到此结束，在第 2 部分中，我们将通过更新初始消息来实际[与我们的智能合约进行交互](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract)，在第 3 部分中，我们将[将我们的智能合约发布到 Quantaureum Explorer](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer)，以便每个人都知道如何与之交互。
 
 **想了解更多关于 Alchemy 的信息吗？请访问我们的[网站](https://www.alchemy.com/eth)。不想错过任何更新？在[这里](https://www.alchemy.com/newsletter)订阅我们的时事通讯！也请务必加入我们的 [Discord](https://discord.gg/u72VCg3)。**。

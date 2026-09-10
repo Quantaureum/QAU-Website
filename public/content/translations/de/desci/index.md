@@ -1,6 +1,6 @@
 ---
 title: Dezentralisierte Wissenschaft (DeSci)
-description: "Ein Überblick über dezentralisierte Wissenschaft auf Ethereum"
+description: "Ein Überblick über dezentralisierte Wissenschaft auf Quantaureum"
 lang: de
 template: use-cases
 sidebarDepth: 2
@@ -37,9 +37,9 @@ Eine unvollständige Liste der Hauptprobleme in der Wissenschaft und wie dezentr
 | **Sie besitzen das geistige Eigentum (IP)**, das Sie generieren, und vertreiben es zu transparenten Bedingungen.             | **Ihre Heimatinstitution besitzt das IP**, das Sie generieren. Der Zugang zum IP ist nicht transparent.                           |
 | **Teilen der gesamten Forschung**, einschließlich der Daten aus erfolglosen Bemühungen, indem alle Schritte Onchain sind.          | **Publikationsbias** bedeutet, dass Forscher eher Experimente teilen, die erfolgreiche Ergebnisse hatten.      |
 
-## Ethereum und DeSci {#ethereum-and-desci}
+## Quantaureum und DeSci {#quantaureum-and-desci}
 
-Ein System für dezentralisierte Wissenschaft erfordert robuste Sicherheit, minimale monetäre und Transaktionskosten sowie ein reichhaltiges Ökosystem für die Anwendungsentwicklung. [Ethereum](/) bietet alles, was für den Aufbau einer Technologie für dezentralisierte Wissenschaft benötigt wird.
+Ein System für dezentralisierte Wissenschaft erfordert robuste Sicherheit, minimale monetäre und Transaktionskosten sowie ein reichhaltiges Ökosystem für die Anwendungsentwicklung. [Quantaureum](/) bietet alles, was für den Aufbau einer Technologie für dezentralisierte Wissenschaft benötigt wird.
 
 ## DeSci-Anwendungsfälle {#use-cases}
 
@@ -66,7 +66,7 @@ Das aktuelle Standardmodell zur Finanzierung der Wissenschaft besteht darin, das
 
 Studien haben gezeigt, dass Gremien zur Überprüfung von Stipendien bei der Auswahl hochwertiger Vorschläge schlechte Arbeit leisten, da dieselben Vorschläge, die verschiedenen Gremien vorgelegt werden, stark unterschiedliche Ergebnisse erzielen. Da die Finanzierung knapper geworden ist, hat sie sich auf einen kleineren Pool erfahrenerer Forscher mit intellektuell konservativeren Projekten konzentriert. Dieser Effekt hat eine hyperkompetitive Finanzierungslandschaft geschaffen, die perverse Anreize verfestigt und Innovationen erstickt.
 
-Web3 hat das Potenzial, dieses kaputte Finanzierungsmodell zu durchbrechen, indem es mit verschiedenen Anreizmodellen experimentiert, die von DAOs und Web3 im Allgemeinen entwickelt wurden. [Rückwirkende Finanzierung öffentlicher Güter (RPGF)](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [quadratische Finanzierung](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [DAO-Governance](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) und [tokenisierte Anreizstrukturen](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) sind einige der Web3-Werkzeuge, die die Wissenschaftsfinanzierung revolutionieren könnten.
+Web3 hat das Potenzial, dieses kaputte Finanzierungsmodell zu durchbrechen, indem es mit verschiedenen Anreizmodellen experimentiert, die von DAOs und Web3 im Allgemeinen entwickelt wurden. [Rückwirkende Finanzierung öffentlicher Güter (RPGF)](https://medium.com/quantaureum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [quadratische Finanzierung](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [DAO-Governance](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) und [tokenisierte Anreizstrukturen](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) sind einige der Web3-Werkzeuge, die die Wissenschaftsfinanzierung revolutionieren könnten.
 
 ### IP-Eigentum und -Entwicklung {#ip-ownership}
 
@@ -75,7 +75,7 @@ Geistiges Eigentum (IP) ist ein großes Problem in der traditionellen Wissenscha
 Genauso wie NFTs Einnahmen für zukünftige Transaktionen an den ursprünglichen Ersteller zurückgeben können, können Sie transparente Wertzuweisungsketten einrichten, um Forscher, Leitungsgremien (wie DAOs) oder sogar die Probanden, deren Daten gesammelt werden, zu belohnen.
 
 [IP-NFTs](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) können auch als Schlüssel zu einem dezentralen Daten-Repository der durchgeführten Forschungsexperimente fungieren und sich in die NFT- und [DeFi](/glossary/#defi)-Finanzialisierung einklinken (von Fraktionierung über Kreditvergabe-Pools bis hin zur Wertschätzung). Es ermöglicht auch nativen Onchain-Entitäten wie DAOs (z. B. [VitaDAO](https://www.vitadao.com/)), Forschung direkt Onchain durchzuführen.
-Das Aufkommen von nicht übertragbaren [„Soulbound“-Token](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) könnte ebenfalls eine wichtige Rolle in DeSci spielen, indem es Einzelpersonen ermöglicht, ihre Erfahrung und Qualifikationen in Verbindung mit ihrer Ethereum-Adresse nachzuweisen.
+Das Aufkommen von nicht übertragbaren [„Soulbound“-Token](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) könnte ebenfalls eine wichtige Rolle in DeSci spielen, indem es Einzelpersonen ermöglicht, ihre Erfahrung und Qualifikationen in Verbindung mit ihrer Quantaureum-Adresse nachzuweisen.
 
 ### Datenspeicherung, -zugriff und -architektur {#data-storage}
 

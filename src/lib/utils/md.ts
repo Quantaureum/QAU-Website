@@ -62,7 +62,10 @@ export const getPostSlugs = async (dir: string, filterRegex?: RegExp) => {
       if (extname(path) !== ".md") continue
 
       const sanitizedPath = toPosixPath(
-        path.replace(contentRoot, "").replace("/index.md", "")
+        path
+          .replace(contentRoot, "")
+          // Remove trailing index.md (handles Windows + POSIX separators)
+          .replace(/[/\\]index\.md$/, "")
       )
 
       files.push(sanitizedPath)

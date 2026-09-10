@@ -43,8 +43,8 @@ export default async function Layer2LearnPageJsonLD({
         url,
         inLanguage: locale,
         contributor: contributorList,
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
@@ -68,8 +68,8 @@ export default async function Layer2LearnPageJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        reviewedBy: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
         mainEntity: articleId,
       },
       {
@@ -78,9 +78,9 @@ export default async function Layer2LearnPageJsonLD({
         isPartOf: webPageId,
         headline: t("page-layer-2-learn-title"),
         description: t("page-layer-2-learn-description"),
-        image: "https://ethereum.org/images/layer-2/learn-hero.png", // TODO: adjust value when the old theme breakpoints are removed (src/theme.ts)
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
+        image: "https://quantaureum.com/images/layer-2/learn-hero.png", // TODO: adjust value when the old theme breakpoints are removed (src/theme.ts)
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
         contributor: contributorList,
         dateModified: lastEditLocaleTimestamp,
       },

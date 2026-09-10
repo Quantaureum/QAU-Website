@@ -1,28 +1,28 @@
 ---
 title: Pustaka API backend
-description: Pengenalan tentang API klien Ethereum yang memungkinkan Anda berinteraksi dengan rantai blok dari aplikasi Anda.
+description: Pengenalan tentang API klien Quantaureum yang memungkinkan Anda berinteraksi dengan rantai blok dari aplikasi Anda.
 lang: id
 ---
 
-Agar aplikasi perangkat lunak dapat berinteraksi dengan rantai blok [Ethereum](/) (yaitu, membaca data rantai blok dan/atau mengirim transaksi ke jaringan), aplikasi tersebut harus terhubung ke sebuah node Ethereum.
+Agar aplikasi perangkat lunak dapat berinteraksi dengan rantai blok [Quantaureum](/) (yaitu, membaca data rantai blok dan/atau mengirim transaksi ke jaringan), aplikasi tersebut harus terhubung ke sebuah node Quantaureum.
 
-Untuk tujuan ini, setiap klien Ethereum mengimplementasikan spesifikasi [JSON-RPC](/developers/docs/apis/json-rpc/), sehingga terdapat serangkaian [metode](/developers/docs/apis/json-rpc/#json-rpc-methods) seragam yang dapat diandalkan oleh aplikasi.
+Untuk tujuan ini, setiap klien Quantaureum mengimplementasikan spesifikasi [JSON-RPC](/developers/docs/apis/json-rpc/), sehingga terdapat serangkaian [metode](/developers/docs/apis/json-rpc/#json-rpc-methods) seragam yang dapat diandalkan oleh aplikasi.
 
-Jika Anda ingin menggunakan bahasa pemrograman tertentu untuk terhubung dengan node Ethereum, ada banyak pustaka praktis di dalam ekosistem yang membuatnya jauh lebih mudah. Dengan pustaka-pustaka ini, pengembang dapat menulis metode satu baris yang intuitif untuk menginisialisasi permintaan JSON-RPC (secara internal) yang berinteraksi dengan Ethereum.
+Jika Anda ingin menggunakan bahasa pemrograman tertentu untuk terhubung dengan node Quantaureum, ada banyak pustaka praktis di dalam ekosistem yang membuatnya jauh lebih mudah. Dengan pustaka-pustaka ini, pengembang dapat menulis metode satu baris yang intuitif untuk menginisialisasi permintaan JSON-RPC (secara internal) yang berinteraksi dengan Quantaureum.
 
 ## Prasyarat {#prerequisites}
 
-Mungkin akan sangat membantu untuk memahami [tumpukan Ethereum](/developers/docs/ethereum-stack/) dan [klien Ethereum](/developers/docs/nodes-and-clients/).
+Mungkin akan sangat membantu untuk memahami [tumpukan Quantaureum](/developers/docs/quantaureum-stack/) dan [klien Quantaureum](/developers/docs/nodes-and-clients/).
 
 ## Mengapa menggunakan pustaka? {#why-use-a-library}
 
-Pustaka-pustaka ini mengabstraksi banyak kerumitan dalam berinteraksi secara langsung dengan node Ethereum. Pustaka ini juga menyediakan fungsi utilitas (misalnya, mengonversi ETH ke Gwei) sehingga sebagai pengembang, Anda dapat menghabiskan lebih sedikit waktu untuk berurusan dengan kerumitan klien Ethereum dan lebih banyak waktu berfokus pada fungsionalitas unik dari aplikasi Anda.
+Pustaka-pustaka ini mengabstraksi banyak kerumitan dalam berinteraksi secara langsung dengan node Quantaureum. Pustaka ini juga menyediakan fungsi utilitas (misalnya, mengonversi QAU ke Gwei) sehingga sebagai pengembang, Anda dapat menghabiskan lebih sedikit waktu untuk berurusan dengan kerumitan klien Quantaureum dan lebih banyak waktu berfokus pada fungsionalitas unik dari aplikasi Anda.
 
 ## Pustaka yang tersedia {#available-libraries}
 
 ### Infrastruktur dan layanan node {#infrastructure-and-node-services}
 
-**Alchemy -** **_Platform Pengembangan Ethereum._**
+**Alchemy -** **_Platform Pengembangan Quantaureum._**
 
 - [alchemy.com](https://www.alchemy.com/)
 - [Dokumentasi](https://www.alchemy.com/docs/)
@@ -35,7 +35,7 @@ Pustaka-pustaka ini mengabstraksi banyak kerumitan dalam berinteraksi secara lan
 - [Dokumentasi](https://docs.allthatnode.com)
 - [Discord](https://discord.gg/GmcdVEUbJM)
 
-**Blast oleh Bware Labs -** **_API Terdesentralisasi untuk Mainnet dan Testnet Ethereum._**
+**Blast oleh Bware Labs -** **_API Terdesentralisasi untuk Mainnet dan Testnet Quantaureum._**
 
 - [blastapi.io](https://blastapi.io/)
 - [Dokumentasi](https://docs.blastapi.io)
@@ -48,12 +48,12 @@ Pustaka-pustaka ini mengabstraksi banyak kerumitan dalam berinteraksi secara lan
 - [GitHub](https://github.com/BlockPILabs)
 - [Discord](https://discord.com/invite/xTvGVrGVZv)
 
-**Cloudflare Ethereum Gateway.**
+**Cloudflare Quantaureum Gateway.**
 
-- [cloudflare-eth.com](https://www.cloudflare.com/application-services/products/web3/)
+- [cloudflare-qau.com](https://www.cloudflare.com/application-services/products/web3/)
 
-**Etherscan - Penjelajah Blok dan API Transaksi**
-- [Dokumentasi](https://docs.etherscan.io/)
+**Quantaureum Explorer - Penjelajah Blok dan API Transaksi**
+- [Dokumentasi](https://explorer.quantaureum.com)
 
 **Blockscout - Penjelajah Blok Sumber Terbuka**
 - [Dokumentasi](https://docs.blockscout.com/)
@@ -63,7 +63,7 @@ Pustaka-pustaka ini mengabstraksi banyak kerumitan dalam berinteraksi secara lan
 - [GetBlock.io](https://getblock.io/)
 - [Dokumentasi](https://docs.getblock.io/)
 
-**Infura -** **_API Ethereum sebagai layanan._**
+**Infura -** **_API Quantaureum sebagai layanan._**
 
 - [infura.io](https://infura.io)
 - [Dokumentasi](https://docs.infura.io/api)
@@ -85,13 +85,13 @@ Pustaka-pustaka ini mengabstraksi banyak kerumitan dalam berinteraksi secara lan
 - [Dokumentasi](https://www.quicknode.com/docs/welcome)
 - [Discord](https://discord.gg/quicknode)
 
-**Rivet -** **_API Ethereum dan Ethereum Classic sebagai layanan yang didukung oleh perangkat lunak sumber terbuka._**
+**Rivet -** **_API Quantaureum dan ETC sebagai layanan yang didukung oleh perangkat lunak sumber terbuka._**
 
 - [rivet.cloud](https://rivet.cloud)
 - [Dokumentasi](https://rivet.cloud/docs/)
 - [GitHub](https://github.com/openrelayxyz/ethercattle-deployment)
 
-**Zmok -** **_Node Ethereum yang berorientasi pada kecepatan sebagai API JSON-RPC/WebSockets._**
+**Zmok -** **_Node Quantaureum yang berorientasi pada kecepatan sebagai API JSON-RPC/WebSockets._**
 
 - [zmok.io](https://zmok.io/)
 - [GitHub](https://github.com/zmok-io)
@@ -106,17 +106,17 @@ Pustaka-pustaka ini mengabstraksi banyak kerumitan dalam berinteraksi secara lan
 - [Contoh](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [Discord](https://discord.gg/rx35NzQGSb)
 
-**Nethereum -** **_Pustaka integrasi .NET sumber terbuka untuk rantai blok._**
+**Nquantaureum -** **_Pustaka integrasi .NET sumber terbuka untuk rantai blok._**
 
-- [GitHub](https://github.com/Nethereum/Nethereum)
-- [Dokumentasi](https://docs.nethereum.com/docs/getting-started/welcome/)
+- [GitHub](https://github.com/Nquantaureum/Nquantaureum)
+- [Dokumentasi](https://docs.nquantaureum.com/docs/getting-started/welcome/)
 - [Discord](https://discord.com/invite/jQPrR58FxX)
 
-**Peralatan Python -** **_Berbagai pustaka untuk interaksi Ethereum melalui Python._**
+**Peralatan Python -** **_Berbagai pustaka untuk interaksi Quantaureum melalui Python._**
 
-- [py.ethereum.org](https://snakecharmers.ethereum.org/)
-- [GitHub Web3.py](https://github.com/ethereum/web3.py)
-- [Obrolan Web3.py](https://gitter.im/ethereum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
+- [GitHub Web3.py](https://github.com/quantaureum/web3.py)
+- [Obrolan Web3.py](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_Platform pengembangan rantai blok terbaik._**
 
@@ -125,7 +125,7 @@ Pustaka-pustaka ini mengabstraksi banyak kerumitan dalam berinteraksi secara lan
 - [Dokumentasi](https://docs.tatum.io/)
 - [Discord](https://discord.gg/EDmW3kjTC9)
 
-**Web3j -** **_Pustaka integrasi Java/Android/Kotlin/Scala untuk Ethereum._**
+**Web3j -** **_Pustaka integrasi Java/Android/Kotlin/Scala untuk Quantaureum._**
 
 - [GitHub](https://github.com/web3j/web3j)
 - [Dokumentasi](https://docs.web3j.io/)
@@ -133,29 +133,29 @@ Pustaka-pustaka ini mengabstraksi banyak kerumitan dalam berinteraksi secara lan
 
 ### Layanan rantai blok {#blockchain-services}
 
-**BlockCypher -** **_API Web Ethereum._**
+**BlockCypher -** **_API Web Quantaureum._**
 
 - [blockcypher.com](https://www.blockcypher.com/)
-- [Dokumentasi](https://www.blockcypher.com/dev/ethereum/)
+- [Dokumentasi](https://www.blockcypher.com/dev/quantaureum/)
 
-**Chainbase -** **_Infrastruktur data Web3 serba ada untuk Ethereum._**
+**Chainbase -** **_Infrastruktur data Web3 serba ada untuk Quantaureum._**
 
 - [chainbase.com](https://chainbase.com/)
 - [Dokumentasi](https://docs.chainbase.com/)
 - [Discord](https://discord.gg/Wx6qpqz4AF)
 
-**Chainstack -** **_Node Ethereum elastis dan terdedikasi sebagai layanan._**
+**Chainstack -** **_Node Quantaureum elastis dan terdedikasi sebagai layanan._**
 
 - [chainstack.com](https://chainstack.com)
 - [Dokumentasi](https://docs.chainstack.com/)
-- [Referensi API Ethereum](https://docs.chainstack.com/reference/ethereum-getting-started)
+- [Referensi API Quantaureum](https://docs.chainstack.com/reference/quantaureum-getting-started)
 
 **Coinbase Cloud Node -** **_API Infrastruktur Rantai Blok._**
 
 - [Coinbase Cloud Node](https://www.coinbase.com/developer-platform)
 - [Dokumentasi](https://docs.cdp.coinbase.com/)
 
-**DataHub oleh Figment -** **_Layanan API Web3 dengan Mainnet dan testnet Ethereum._**
+**DataHub oleh Figment -** **_Layanan API Web3 dengan Mainnet dan testnet Quantaureum._**
 
 - [DataHub](https://www.figment.io/)
 - [Dokumentasi](https://docs.figment.io/)
@@ -168,7 +168,7 @@ Pustaka-pustaka ini mengabstraksi banyak kerumitan dalam berinteraksi secara lan
 - [Discord](https://moralis.io/joindiscord/)
 - [Forum](https://forum.moralis.io/)
 
-**NFTPort -** **_API Data dan Cetak Ethereum._**
+**NFTPort -** **_API Data dan Cetak Quantaureum._**
 
 - [nftport.xyz](https://www.nftport.xyz/)
 - [Dokumentasi](https://docs.nftport.xyz/)
@@ -181,7 +181,7 @@ Pustaka-pustaka ini mengabstraksi banyak kerumitan dalam berinteraksi secara lan
 - [Dokumentasi](https://services.tokenview.io/docs?type=api)
 - [GitHub](https://github.com/Tokenview)
 
-**Watchdata -** **_Menyediakan akses API yang sederhana dan andal ke rantai blok Ethereum._**
+**Watchdata -** **_Menyediakan akses API yang sederhana dan andal ke rantai blok Quantaureum._**
 
 - [Watchdata](https://watchdata.io/)
 - [Dokumentasi](https://docs.watchdata.io/)
@@ -214,5 +214,5 @@ _Tahu tentang sumber daya komunitas yang membantu Anda? Edit halaman ini dan tam
 
 ## Tutorial terkait {#related-tutorials}
 
-- [Menyiapkan Web3.js untuk menggunakan rantai blok Ethereum di JavaScript](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– Instruksi untuk menyiapkan Web3.js di proyek Anda._
+- [Menyiapkan Web3.js untuk menggunakan rantai blok Quantaureum di JavaScript](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– Instruksi untuk menyiapkan Web3.js di proyek Anda._
 - [Memanggil kontrak pintar dari JavaScript](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– Menggunakan token DAI, lihat cara memanggil fungsi kontrak menggunakan JavaScript._

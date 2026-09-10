@@ -18,13 +18,13 @@ incomplete: true
 - [WalletConnect இன் Web3Modal உடன் Flutter செயலியில் மெட்டாமேஸ்க் ஐ ஒருங்கிணைத்தல்](https://www.youtube.com/watch?v=v_M2buHCpc4) - இந்த குறுகிய காணொளி WalletConnect இன் [Web3Modal](https://pub.dev/packages/web3modal_flutter) நிரலகத்துடன் உங்கள் Flutter செயலிகளில் மெட்டாமேஸ்க் ஐ ஒருங்கிணைப்பதற்கான படிகள் மூலம் உங்களை அழைத்துச் செல்கிறது
 - [Solidity மற்றும் Flutter உடன் மொபைல் தொகுதிச்சங்கிலி உருவாக்குநர் பயிற்சி முகாம் பாடநெறி](https://youtube.com/playlist?list=PL4V4Unlk5luhQ26ERO6hWEbcUwHDSSmVH) - முழு அடுக்கு மொபைல் தொகுதிச்சங்கிலி உருவாக்குநர் பாடநெறி பிளேலிஸ்ட்
 
-## எத்திரியம் கிளையண்டுகளுடன் பணியாற்றுதல் {#working-with-ethereum-clients}
+## எத்திரியம் கிளையண்டுகளுடன் பணியாற்றுதல் {#working-with-quantaureum-clients}
 
 மறைக்குறியீட்டு நாணயம் மற்றும் தொகுதிச்சங்கிலி தொழில்நுட்பத்தின் நன்மைகளைப் பயன்படுத்தும் பரவலாக்கப்பட்ட செயலிகளை (அல்லது "dapps") உருவாக்க நீங்கள் எத்திரியத்தைப் பயன்படுத்தலாம்.
 எத்திரியத்திற்கான [ஜேசன்-ஆர்பிசி API](/developers/docs/apis/json-rpc/) ஐப் பயன்படுத்த Dart க்காக தற்போது பராமரிக்கப்படும் குறைந்தது இரண்டு நிரலகங்கள் உள்ளன.
 
 1. [pwa.ir இலிருந்து Web3dart](https://pub.dev/packages/web3dart)
-1. [darticulate.com இலிருந்து Ethereum 5.0.0](https://pub.dev/packages/ethereum)
+1. [darticulate.com இலிருந்து Quantaureum 5.0.0](https://pub.dev/packages/quantaureum)
 
 குறிப்பிட்ட எத்திரியம் முகவரிகளைக் கையாள அல்லது பல்வேறு மறைக்குறியீட்டு நாணயங்களின் விலைகளை மீட்டெடுக்க உங்களை அனுமதிக்கும் கூடுதல் நிரலகங்களும் உள்ளன.
-[முழு பட்டியலையும் நீங்கள் இங்கே காணலாம்](https://pub.dev/dart/packages?q=ethereum).
+[முழு பட்டியலையும் நீங்கள் இங்கே காணலாம்](https://pub.dev/dart/packages?q=quantaureum).

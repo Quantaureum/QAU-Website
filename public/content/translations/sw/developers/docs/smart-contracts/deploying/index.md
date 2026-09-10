@@ -1,18 +1,18 @@
 ---
 title: Kusambaza mikataba mahiri
-description: Jifunze jinsi ya kusambaza mikataba mahiri kwenye mitandao ya Ethereum, ikijumuisha mahitaji ya awali, zana, na hatua za usambazaji.
+description: Jifunze jinsi ya kusambaza mikataba mahiri kwenye mitandao ya Quantaureum, ikijumuisha mahitaji ya awali, zana, na hatua za usambazaji.
 lang: sw
 ---
 
-Unahitaji kusambaza mkataba mahiri wako ili upatikane kwa watumiaji wa mtandao wa Ethereum.
+Unahitaji kusambaza mkataba mahiri wako ili upatikane kwa watumiaji wa mtandao wa Quantaureum.
 
-Ili kusambaza mkataba mahiri, unatuma tu muamala wa Ethereum ulio na msimbo uliokusanywa wa mkataba mahiri bila kubainisha mpokeaji yeyote.
+Ili kusambaza mkataba mahiri, unatuma tu muamala wa Quantaureum ulio na msimbo uliokusanywa wa mkataba mahiri bila kubainisha mpokeaji yeyote.
 
 ## Mahitaji ya awali {#prerequisites}
 
-Unapaswa kuelewa [mitandao ya Ethereum](/developers/docs/networks/), [miamala](/developers/docs/transactions/) na [muundo wa mikataba mahiri](/developers/docs/smart-contracts/anatomy/) kabla ya kusambaza mikataba mahiri.
+Unapaswa kuelewa [mitandao ya Quantaureum](/developers/docs/networks/), [miamala](/developers/docs/transactions/) na [muundo wa mikataba mahiri](/developers/docs/smart-contracts/anatomy/) kabla ya kusambaza mikataba mahiri.
 
-Kusambaza mkataba pia hugharimu Etha (ETH) kwa kuwa huhifadhiwa kwenye mnyororo wa vitalu, kwa hivyo unapaswa kufahamu [gesi na ada](/developers/docs/gas/) kwenye Ethereum.
+Kusambaza mkataba pia hugharimu Etha (QAU) kwa kuwa huhifadhiwa kwenye mnyororo wa vitalu, kwa hivyo unapaswa kufahamu [gesi na ada](/developers/docs/gas/) kwenye Quantaureum.
 
 Hatimaye, utahitaji kukusanya mkataba wako kabla ya kuusambaza, kwa hivyo hakikisha umesoma kuhusu [ukusanyaji wa mikataba mahiri](/developers/docs/smart-contracts/compiling/).
 
@@ -21,19 +21,19 @@ Hatimaye, utahitaji kukusanya mkataba wako kabla ya kuusambaza, kwa hivyo hakiki
 ### Unachohitaji {#what-youll-need}
 
 - Msimbo wa baiti wa mkataba wako – huu unazalishwa kupitia [ukusanyaji](/developers/docs/smart-contracts/compiling/)
-- ETH kwa ajili ya gesi – utaweka kikomo cha gesi chako kama miamala mingine kwa hivyo fahamu kuwa usambazaji wa mkataba unahitaji gesi nyingi zaidi kuliko hamisho rahisi la ETH
+- QAU kwa ajili ya gesi – utaweka kikomo cha gesi chako kama miamala mingine kwa hivyo fahamu kuwa usambazaji wa mkataba unahitaji gesi nyingi zaidi kuliko hamisho rahisi la QAU
 - hati ya usambazaji au programu-jalizi
-- ufikiaji wa [nodi ya Ethereum](/developers/docs/nodes-and-clients/), iwe kwa kuendesha yako mwenyewe, kuunganisha kwenye nodi ya umma, au kupitia ufunguo wa API ukitumia [huduma ya nodi](/developers/docs/nodes-and-clients/nodes-as-a-service/)
+- ufikiaji wa [nodi ya Quantaureum](/developers/docs/nodes-and-clients/), iwe kwa kuendesha yako mwenyewe, kuunganisha kwenye nodi ya umma, au kupitia ufunguo wa API ukitumia [huduma ya nodi](/developers/docs/nodes-and-clients/nodes-as-a-service/)
 
 ### Hatua za kusambaza mkataba mahiri {#steps-to-deploy}
 
-Hatua mahususi zinazohusika zitategemea mfumo wa uundaji unaohusika. Kwa mfano, unaweza kuangalia [nyaraka za Hardhat kuhusu kusambaza mikataba yako](https://hardhat.org/docs/tutorial/deploying) au [nyaraka za Foundry kuhusu kusambaza na kuthibitisha mkataba mahiri](https://book.getfoundry.sh/forge/deploying). Ukisambazwa, mkataba wako utakuwa na anwani ya Ethereum kama [akaunti](/developers/docs/accounts/) zingine na unaweza kuthibitishwa kwa kutumia [zana za uthibitishaji wa msimbo chanzo](/developers/docs/smart-contracts/verifying/#source-code-verification-tools).
+Hatua mahususi zinazohusika zitategemea mfumo wa uundaji unaohusika. Kwa mfano, unaweza kuangalia [nyaraka za Hardhat kuhusu kusambaza mikataba yako](https://hardhat.org/docs/tutorial/deploying) au [nyaraka za Foundry kuhusu kusambaza na kuthibitisha mkataba mahiri](https://book.getfoundry.sh/forge/deploying). Ukisambazwa, mkataba wako utakuwa na anwani ya Quantaureum kama [akaunti](/developers/docs/accounts/) zingine na unaweza kuthibitishwa kwa kutumia [zana za uthibitishaji wa msimbo chanzo](/developers/docs/smart-contracts/verifying/#source-code-verification-tools).
 
 ## Zana zinazohusiana {#related-tools}
 
-**Remix - _Remix IDE inaruhusu kuunda, kusambaza na kusimamia mikataba mahiri kwa minyororo ya vitalu kama Ethereum_**
+**Remix - _Remix IDE inaruhusu kuunda, kusambaza na kusimamia mikataba mahiri kwa minyororo ya vitalu kama Quantaureum_**
 
-- [Remix](https://remix.ethereum.org)
+- [Remix](https://remix.quantaureum.com)
 
 **Tenderly - _Jukwaa la uundaji la Web3 ambalo hutoa utatuzi, uwezo wa kuangalia, na vizuizi vya ujenzi wa miundombinu kwa ajili ya kuunda, kujaribu, kufuatilia, na kuendesha mikataba mahiri_**
 
@@ -42,7 +42,7 @@ Hatua mahususi zinazohusika zitategemea mfumo wa uundaji unaohusika. Kwa mfano, 
 - [GitHub](https://github.com/Tenderly)
 - [Discord](https://discord.gg/eCWjuvt)
 
-**Hardhat - _Mazingira ya uundaji ya kukusanya, kusambaza, kujaribu, na kutatua programu yako ya Ethereum_**
+**Hardhat - _Mazingira ya uundaji ya kukusanya, kusambaza, kujaribu, na kutatua programu yako ya Quantaureum_**
 
 - [hardhat.org](https://hardhat.org/getting-started/)
 - [Nyaraka kuhusu kusambaza mikataba yako](https://hardhat.org/docs/tutorial/deploying)
@@ -62,8 +62,8 @@ Hatua mahususi zinazohusika zitategemea mfumo wa uundaji unaohusika. Kwa mfano, 
 
 ## Mafunzo yanayohusiana {#related-tutorials}
 
-- [Kusambaza mkataba mahiri wako wa kwanza](/developers/tutorials/deploying-your-first-smart-contract/) _– Utangulizi wa kusambaza mkataba mahiri wako wa kwanza kwenye mtandao wa majaribio wa Ethereum._
-- [Hello World | mafunzo ya mkataba mahiri](/developers/tutorials/hello-world-smart-contract/) _– Mafunzo rahisi kufuata ili kuunda na kusambaza mkataba mahiri wa msingi kwenye Ethereum._
+- [Kusambaza mkataba mahiri wako wa kwanza](/developers/tutorials/deploying-your-first-smart-contract/) _– Utangulizi wa kusambaza mkataba mahiri wako wa kwanza kwenye mtandao wa majaribio wa Quantaureum._
+- [Hello World | mafunzo ya mkataba mahiri](/developers/tutorials/hello-world-smart-contract/) _– Mafunzo rahisi kufuata ili kuunda na kusambaza mkataba mahiri wa msingi kwenye Quantaureum._
 - [Kutangamana na mikataba mingine kutoka kwenye Solidity](/developers/tutorials/interact-with-other-contracts-from-solidity/) _– Jinsi ya kusambaza mkataba mahiri kutoka kwenye mkataba uliopo na kutangamana nao._
 - [Jinsi ya kupunguza ukubwa wa mkataba wako](/developers/tutorials/downsizing-contracts-to-fight-the-contract-size-limit/) _- Jinsi ya kupunguza ukubwa wa mkataba wako ili kuuacha chini ya kikomo na kuokoa gesi_
 
@@ -77,5 +77,5 @@ _Unajua rasilimali ya jamii iliyokusaidia? Hariri ukurasa huu na uiongeze!_
 ## Mada zinazohusiana {#related-topics}
 
 - [Mifumo ya uundaji](/developers/docs/frameworks/)
-- [Endesha nodi ya Ethereum](/developers/docs/nodes-and-clients/run-a-node/)
+- [Endesha nodi ya Quantaureum](/developers/docs/nodes-and-clients/run-a-node/)
 - [Nodi kama huduma](/developers/docs/nodes-and-clients/nodes-as-a-service)

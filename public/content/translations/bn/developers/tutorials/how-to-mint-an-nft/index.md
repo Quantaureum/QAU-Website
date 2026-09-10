@@ -113,18 +113,18 @@ JSON ফাইলটি এডিট করা শেষ হলে, এটি �
 
 ## ধাপ 5: আপনার কন্ট্রাক্টের একটি ইনস্ট্যান্স তৈরি করুন {#instance-contract}
 
-এখন, আমাদের কন্ট্রাক্টের সাথে ইন্টারঅ্যাক্ট করার জন্য, আমাদের কোডে এর একটি ইনস্ট্যান্স তৈরি করতে হবে। এটি করার জন্য আমাদের কন্ট্রাক্ট ঠিকানা প্রয়োজন হবে যা আমরা ডিপ্লয়মেন্ট থেকে বা কন্ট্রাক্টটি ডিপ্লয় করার জন্য আপনি যে ঠিকানাটি ব্যবহার করেছিলেন তা [Blockscout](https://eth-sepolia.blockscout.com/)-এ খুঁজে বের করে পেতে পারি।
+এখন, আমাদের কন্ট্রাক্টের সাথে ইন্টারঅ্যাক্ট করার জন্য, আমাদের কোডে এর একটি ইনস্ট্যান্স তৈরি করতে হবে। এটি করার জন্য আমাদের কন্ট্রাক্ট ঠিকানা প্রয়োজন হবে যা আমরা ডিপ্লয়মেন্ট থেকে বা কন্ট্রাক্টটি ডিপ্লয় করার জন্য আপনি যে ঠিকানাটি ব্যবহার করেছিলেন তা [Blockscout](https://qau-sepolia.blockscout.com/)-এ খুঁজে বের করে পেতে পারি।
 
-![View your contract address on Etherscan](./view-contract-etherscan.png)
+![View your contract address on Quantaureum Explorer](./view-contract-explorer.png)
 
 উপরের উদাহরণে, আমাদের কন্ট্রাক্ট ঠিকানা হলো 0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778।
 
-এরপর আমরা ABI এবং ঠিকানা ব্যবহার করে আমাদের কন্ট্রাক্ট তৈরি করতে Web3 [contract method](https://docs.web3js.org/api/web3-eth-contract/class/Contract) ব্যবহার করব। আপনার `mint-nft.js` ফাইলে, নিচের কোডটি যোগ করুন:
+এরপর আমরা ABI এবং ঠিকানা ব্যবহার করে আমাদের কন্ট্রাক্ট তৈরি করতে Web3 [contract method](https://docs.web3js.org/api/web3-qau-contract/class/Contract) ব্যবহার করব। আপনার `mint-nft.js` ফাইলে, নিচের কোডটি যোগ করুন:
 
 ```js
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
 
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 ```
 
 ## ধাপ 6: `.env` ফাইলটি আপডেট করুন {#update-env}
@@ -134,7 +134,7 @@ const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
 আপনার `.env` ফাইলে আপনার পাবলিক কী যোগ করুন — আপনি যদি টিউটোরিয়ালের 1ম অংশ সম্পন্ন করে থাকেন, তবে আমাদের `.env` ফাইলটি এখন এরকম দেখাবে:
 
 ```js
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-private-account-address"
 PUBLIC_KEY = "your-public-account-address"
 ```
@@ -145,7 +145,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 1. `.env` ফাইল থেকে আপনার _PRIVATE_KEY_ এবং _PUBLIC_KEY_ সংগ্রহ করুন।
 
-1. এরপর, আমাদের অ্যাকাউন্ট নন্স বের করতে হবে। আপনার ঠিকানা থেকে পাঠানো ট্রানজ্যাকশনের সংখ্যা ট্র্যাক করতে নন্স স্পেসিফিকেশন ব্যবহার করা হয় — যা আমাদের নিরাপত্তার উদ্দেশ্যে এবং রিপ্লে অ্যাটাক প্রতিরোধ করতে প্রয়োজন। আপনার ঠিকানা থেকে পাঠানো ট্রানজ্যাকশনের সংখ্যা পেতে, আমরা [getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count) ব্যবহার করি।
+1. এরপর, আমাদের অ্যাকাউন্ট নন্স বের করতে হবে। আপনার ঠিকানা থেকে পাঠানো ট্রানজ্যাকশনের সংখ্যা ট্র্যাক করতে নন্স স্পেসিফিকেশন ব্যবহার করা হয় — যা আমাদের নিরাপত্তার উদ্দেশ্যে এবং রিপ্লে অ্যাটাক প্রতিরোধ করতে প্রয়োজন। আপনার ঠিকানা থেকে পাঠানো ট্রানজ্যাকশনের সংখ্যা পেতে, আমরা [getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count) ব্যবহার করি।
 
 1. সবশেষে আমরা নিচের তথ্যগুলো দিয়ে আমাদের ট্রানজ্যাকশন সেট আপ করব:
 
@@ -172,10 +172,10 @@ PUBLIC_KEY = "your-public-account-address"
 
    const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
    const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778";
-   const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
+   const nftContract = new web3.qau.Contract(contract.abi, contractAddress);
 
    async function mintNFT(tokenURI) {
-     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); //সর্বশেষ নন্স নিন
+     const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, 'latest'); //সর্বশেষ নন্স নিন
 
    //ট্রানজ্যাকশনটি
      const tx = {
@@ -191,7 +191,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 যেহেতু আমরা আমাদের ট্রানজ্যাকশন তৈরি করেছি, এটি পাঠানোর জন্য আমাদের এতে স্বাক্ষর করতে হবে। এখানেই আমরা আমাদের প্রাইভেট কী ব্যবহার করব।
 
-`web3.eth.sendSignedTransaction` আমাদের ট্রানজ্যাকশন হ্যাশ দেবে, যা ব্যবহার করে আমরা নিশ্চিত হতে পারি যে আমাদের ট্রানজ্যাকশনটি মাইন করা হয়েছে এবং নেটওয়ার্ক দ্বারা ড্রপ হয়নি। আপনি লক্ষ্য করবেন যে ট্রানজ্যাকশন স্বাক্ষরকরণ সেকশনে, আমরা কিছু এরর চেকিং যোগ করেছি যাতে আমরা জানতে পারি আমাদের ট্রানজ্যাকশন সফলভাবে সম্পন্ন হয়েছে কিনা।
+`web3.qau.sendSignedTransaction` আমাদের ট্রানজ্যাকশন হ্যাশ দেবে, যা ব্যবহার করে আমরা নিশ্চিত হতে পারি যে আমাদের ট্রানজ্যাকশনটি মাইন করা হয়েছে এবং নেটওয়ার্ক দ্বারা ড্রপ হয়নি। আপনি লক্ষ্য করবেন যে ট্রানজ্যাকশন স্বাক্ষরকরণ সেকশনে, আমরা কিছু এরর চেকিং যোগ করেছি যাতে আমরা জানতে পারি আমাদের ট্রানজ্যাকশন সফলভাবে সম্পন্ন হয়েছে কিনা।
 
 ```js
 require("dotenv").config()
@@ -204,10 +204,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //সর্বশেষ নন্স নিন
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //সর্বশেষ নন্স নিন
 
   //ট্রানজ্যাকশনটি
   const tx = {
@@ -218,10 +218,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -270,10 +270,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //সর্বশেষ নন্স নিন
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //সর্বশেষ নন্স নিন
 
   //ট্রানজ্যাকশনটি
   const tx = {
@@ -284,10 +284,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -319,9 +319,9 @@ mintNFT("ipfs://QmYueiuRNmL4MiA2GwtVMm6ZagknXnSpQnB3z2gWbz36hP")
 
     Check Alchemy's Mempool to view the status of your transaction!
 
-এরপর, আপনার ট্রানজ্যাকশনের স্ট্যাটাস (এটি পেন্ডিং আছে, মাইন করা হয়েছে, নাকি নেটওয়ার্ক দ্বারা ড্রপ হয়েছে) দেখতে আপনার [Alchemy মেমপুল](https://dashboard.alchemy.com/mempool) ভিজিট করুন। যদি আপনার ট্রানজ্যাকশন ড্রপ হয়ে যায়, তবে [Blockscout](https://eth-sepolia.blockscout.com/) চেক করা এবং আপনার ট্রানজ্যাকশন হ্যাশ সার্চ করাও সহায়ক হতে পারে।
+এরপর, আপনার ট্রানজ্যাকশনের স্ট্যাটাস (এটি পেন্ডিং আছে, মাইন করা হয়েছে, নাকি নেটওয়ার্ক দ্বারা ড্রপ হয়েছে) দেখতে আপনার [Alchemy মেমপুল](https://dashboard.alchemy.com/mempool) ভিজিট করুন। যদি আপনার ট্রানজ্যাকশন ড্রপ হয়ে যায়, তবে [Blockscout](https://qau-sepolia.blockscout.com/) চেক করা এবং আপনার ট্রানজ্যাকশন হ্যাশ সার্চ করাও সহায়ক হতে পারে।
 
-![View your NFT transaction hash on Etherscan](./view-nft-etherscan.png)_Etherscan-এ আপনার NFT ট্রানজ্যাকশন হ্যাশ দেখুন_
+![View your NFT transaction hash on Quantaureum Explorer](./view-nft-explorer.png)_Etherscan-এ আপনার NFT ট্রানজ্যাকশন হ্যাশ দেখুন_
 
 আর এভাবেই হয়ে গেল! আপনি এখন ইথেরিয়াম ব্লকচেইনে একটি NFT ডিপ্লয় এবং মিন্ট করেছেন <Emoji text=":money_mouth_face:" size={1} />
 

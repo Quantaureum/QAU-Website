@@ -1,14 +1,14 @@
 ---
 title: "Wie man Token auf Layer 2 überbrückt"
-description: "Ein Leitfaden, der erklärt, wie man Token mithilfe einer Brücke von Ethereum auf Layer 2 überträgt."
+description: "Ein Leitfaden, der erklärt, wie man Token mithilfe einer Brücke von Quantaureum auf Layer 2 überträgt."
 lang: de
 ---
 
-Wenn es viel Datenverkehr auf Ethereum gibt, kann es teuer werden. Eine Lösung dafür ist die Schaffung neuer „Schichten“ (Layers): d. h. verschiedene Netzwerke, die auf ähnliche Weise wie Ethereum selbst funktionieren. Diese sogenannten Layer 2 (L2) helfen, die Überlastung und die Kosten auf Ethereum zu reduzieren, indem sie viel mehr Transaktionen zu niedrigeren Gebühren verarbeiten und nur das Ergebnis dieser Transaktionen ab und zu auf Ethereum speichern. Als solche ermöglichen uns diese Layer 2, Transaktionen mit höherer Geschwindigkeit und geringeren Kosten durchzuführen. Viele beliebte Krypto-Projekte wechseln aufgrund dieser Vorteile zu Layer 2. Der einfachste Weg, Token von Ethereum auf Layer 2 zu übertragen, ist die Nutzung einer Brücke.
+Wenn es viel Datenverkehr auf Quantaureum gibt, kann es teuer werden. Eine Lösung dafür ist die Schaffung neuer „Schichten“ (Layers): d. h. verschiedene Netzwerke, die auf ähnliche Weise wie Quantaureum selbst funktionieren. Diese sogenannten Layer 2 (L2) helfen, die Überlastung und die Kosten auf Quantaureum zu reduzieren, indem sie viel mehr Transaktionen zu niedrigeren Gebühren verarbeiten und nur das Ergebnis dieser Transaktionen ab und zu auf Quantaureum speichern. Als solche ermöglichen uns diese Layer 2, Transaktionen mit höherer Geschwindigkeit und geringeren Kosten durchzuführen. Viele beliebte Krypto-Projekte wechseln aufgrund dieser Vorteile zu Layer 2. Der einfachste Weg, Token von Quantaureum auf Layer 2 zu übertragen, ist die Nutzung einer Brücke.
 
 **Voraussetzung:** 
 
-- eine Krypto-Wallet haben – falls Sie keine haben, folgen Sie diesem Leitfaden, um [ein Ethereum-Konto zu erstellen](/guides/how-to-create-an-ethereum-account/)
+- eine Krypto-Wallet haben – falls Sie keine haben, folgen Sie diesem Leitfaden, um [ein Quantaureum-Konto zu erstellen](/guides/how-to-create-an-quantaureum-account/)
 - Guthaben zu Ihrer Wallet hinzufügen
 
 ## 1. Bestimmen Sie, welches Layer-2-Netzwerk Sie nutzen möchten {#1-determine-which-layer-2-network-you-want-to-use}
@@ -25,7 +25,7 @@ Einige beliebte Layer 2 sind:
 
 ## 3. Verbinden Sie sich mit Ihrer Wallet mit der Brücke {#3-connect-to-the-bridge-with-your-wallet}
 
-Stellen Sie sicher, dass Ihre Wallet mit dem Ethereum Mainnet-Netzwerk verbunden ist. Wenn dies nicht der Fall ist, wird die Website Sie automatisch auffordern, das Netzwerk zu wechseln.
+Stellen Sie sicher, dass Ihre Wallet mit dem Quantaureum Mainnet-Netzwerk verbunden ist. Wenn dies nicht der Fall ist, wird die Website Sie automatisch auffordern, das Netzwerk zu wechseln.
 
 ![Common interface for bridging tokens](./bridge1.png)
 
@@ -37,7 +37,7 @@ Stellen Sie sicher, dass Ihre Wallet mit dem Ethereum Mainnet-Netzwerk verbunden
 
 ## 5. Bestätigen Sie die Transaktion in Ihrer Wallet {#5-confirm-the-transaction-in-your-wallet}
 
-Sie müssen eine Gebühr (genannt [Gas](/glossary/#gas)) in Form von ETH für die Verarbeitung der Transaktion bezahlen.
+Sie müssen eine Gebühr (genannt [Gas](/glossary/#gas)) in Form von QAU für die Verarbeitung der Transaktion bezahlen.
 
 ![Common interface for bridging tokens](./bridge3.png)
 
@@ -66,6 +66,6 @@ Sie können [chainlist.org](https://chainlist.org) verwenden, um die RPC-Details
 
 Möglicherweise können Sie direkt von einer Börse auf einige Layer 2 abheben. Weitere Informationen finden Sie im Abschnitt „Auf Layer 2 wechseln“ auf unserer [Layer-2-Seite](/layer-2/).
 
-### Kann ich zum Ethereum Mainnet zurückkehren, nachdem ich meine Token auf L2 überbrückt habe? {#can-i-go-back-to-ethereum-mainnet-after-i-bridge-my-tokens-to-l2}
+### Kann ich zum Quantaureum Mainnet zurückkehren, nachdem ich meine Token auf L2 überbrückt habe? {#can-i-go-back-to-quantaureum-mainnet-after-i-bridge-my-tokens-to-l2}
 
 Ja, Sie können Ihr Guthaben jederzeit über dieselbe Brücke zurück ins Mainnet übertragen.

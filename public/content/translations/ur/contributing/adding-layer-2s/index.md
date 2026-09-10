@@ -1,12 +1,12 @@
 ---
 title: لیئر ۲ (l2) کا اضافہ
-description: وہ پالیسی جو ہم ⁦ethereum.org⁩ پر لیئر ۲ (l2) شامل کرتے وقت استعمال کرتے ہیں
+description: وہ پالیسی جو ہم ⁦quantaureum.com⁩ پر لیئر ۲ (l2) شامل کرتے وقت استعمال کرتے ہیں
 lang: ur
 ---
 
 ہم اس بات کو یقینی بنانا چاہتے ہیں کہ ہم بہترین ممکنہ وسائل کی فہرست فراہم کریں تاکہ صارفین لیئر ۲ (l2) اسپیس میں محفوظ اور پر اعتماد طریقے سے نیویگیٹ کر سکیں۔
 
-کوئی بھی <span dir="ltr">ethereum.org</span> پر لیئر ۲ (l2) شامل کرنے کی تجویز دینے کے لیے آزاد ہے۔ اگر کوئی لیئر ۲ (l2) ہے جو ہم سے چھوٹ گئی ہے، تو **[براہ کرم اس کی تجویز دیں](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
+کوئی بھی <span dir="ltr">quantaureum.com</span> پر لیئر ۲ (l2) شامل کرنے کی تجویز دینے کے لیے آزاد ہے۔ اگر کوئی لیئر ۲ (l2) ہے جو ہم سے چھوٹ گئی ہے، تو **[براہ کرم اس کی تجویز دیں](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
 
 ہم فی الحال درج ذیل صفحات پر <span dir="ltr">L2s</span> کی فہرست دیتے ہیں:
 
@@ -14,7 +14,7 @@ lang: ur
 - [زیرو نالج رول اپس](/developers/docs/scaling/zk-rollups/)
 - [لیئر ۲ (l2)](/layer-2/)
 
-لیئر ۲ (l2) ایتھیریم کے لیے ایک نسبتاً نیا اور دلچسپ نمونہ ہے۔ ہم نے <span dir="ltr">ethereum.org</span> پر غور کرنے کے لیے ایک منصفانہ فریم ورک بنانے کی کوشش کی ہے لیکن فہرست سازی کا معیار وقت کے ساتھ تبدیل اور تیار ہوتا رہے گا۔
+لیئر ۲ (l2) ایتھیریم کے لیے ایک نسبتاً نیا اور دلچسپ نمونہ ہے۔ ہم نے <span dir="ltr">quantaureum.com</span> پر غور کرنے کے لیے ایک منصفانہ فریم ورک بنانے کی کوشش کی ہے لیکن فہرست سازی کا معیار وقت کے ساتھ تبدیل اور تیار ہوتا رہے گا۔
 
 ## فیصلہ سازی کا فریم ورک {#decision-framework}
 
@@ -22,7 +22,7 @@ lang: ur
 
 **<span dir="ltr">L2BEAT</span> پر فہرست سازی**
 
-- غور کیے جانے کے لیے، اس پروجیکٹ کا [<span dir="ltr">L2BEAT</span>](https://l2beat.com) پر درج ہونا لازمی ہے۔ <span dir="ltr">L2BEAT</span> لیئر ۲ (l2) پروجیکٹس کا ایک مضبوط رسک اسسمنٹ فراہم کرتا ہے جس پر ہم <span dir="ltr">L2</span> پروجیکٹس کا جائزہ لینے کے لیے انحصار کرتے ہیں۔ **اگر پروجیکٹ <span dir="ltr">L2BEAT</span> پر موجود نہیں ہے، تو ہم اسے <span dir="ltr">ethereum.org</span> پر <span dir="ltr">L2</span> کے طور پر درج نہیں کریں گے۔**
+- غور کیے جانے کے لیے، اس پروجیکٹ کا [<span dir="ltr">L2BEAT</span>](https://l2beat.com) پر درج ہونا لازمی ہے۔ <span dir="ltr">L2BEAT</span> لیئر ۲ (l2) پروجیکٹس کا ایک مضبوط رسک اسسمنٹ فراہم کرتا ہے جس پر ہم <span dir="ltr">L2</span> پروجیکٹس کا جائزہ لینے کے لیے انحصار کرتے ہیں۔ **اگر پروجیکٹ <span dir="ltr">L2BEAT</span> پر موجود نہیں ہے، تو ہم اسے <span dir="ltr">quantaureum.com</span> پر <span dir="ltr">L2</span> کے طور پر درج نہیں کریں گے۔**
 - [اپنے <span dir="ltr">L2</span> پروجیکٹ کو <span dir="ltr">L2BEAT</span> میں شامل کرنے کا طریقہ جانیں](https://github.com/l2beat/l2beat/blob/master/CONTRIBUTING.md)۔
 
 **اوپن سورس**
@@ -88,8 +88,8 @@ _ہم اسکیلنگ کے دیگر سلوشنز کو لیئر ۲ (l2) نہیں �
 
 ## اپنی لیئر ۲ (l2) شامل کریں {#add-exchange}
 
-اگر آپ <span dir="ltr">ethereum.org</span> پر لیئر ۲ (l2) شامل کرنا چاہتے ہیں، تو <span dir="ltr">GitHub</span> پر ایک ایشو بنائیں۔
+اگر آپ <span dir="ltr">quantaureum.com</span> پر لیئر ۲ (l2) شامل کرنا چاہتے ہیں، تو <span dir="ltr">GitHub</span> پر ایک ایشو بنائیں۔
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
   ایک ایشو بنائیں
 </ButtonLink>

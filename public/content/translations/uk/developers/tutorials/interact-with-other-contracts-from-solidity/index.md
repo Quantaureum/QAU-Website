@@ -7,12 +7,12 @@ skill: advanced
 breadcrumb: "Взаємодія з контрактами"
 lang: uk
 published: 2020-04-05
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/interact-with-other-contracts-from-solidity/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-У попередніх посібниках ми багато дізналися про те, [як розгорнути свій перший смарт-контракт](/developers/tutorials/deploying-your-first-smart-contract/) та додати до нього деякі функції, як-от [контроль доступу за допомогою модифікаторів](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) або [обробка помилок у Solidity](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/). У цьому посібнику ми дізнаємося, як розгорнути смарт-контракт з існуючого контракту та взаємодіяти з ним.
+У попередніх посібниках ми багато дізналися про те, [як розгорнути свій перший смарт-контракт](/developers/tutorials/deploying-your-first-smart-contract/) та додати до нього деякі функції, як-от [контроль доступу за допомогою модифікаторів](https://quantaureumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) або [обробка помилок у Solidity](https://quantaureumdev.io/handle-errors-in-solidity-with-require-and-revert/). У цьому посібнику ми дізнаємося, як розгорнути смарт-контракт з існуючого контракту та взаємодіяти з ним.
 
 Ми створимо контракт, який дозволить будь-кому мати власний смарт-контракт `Counter`, створивши для нього фабрику, її назва буде `CounterFactory`. Спочатку ось код нашого початкового смарт-контракту `Counter`:
 
@@ -99,7 +99,7 @@ function increment() public {
   }
 ```
 
-Зверніть увагу, що якщо викликати його занадто багато разів, наш лічильник може стати жертвою переповнення. Вам слід якомога частіше використовувати [бібліотеку SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), щоб захиститися від цього можливого випадку.
+Зверніть увагу, що якщо викликати його занадто багато разів, наш лічильник може стати жертвою переповнення. Вам слід якомога частіше використовувати [бібліотеку SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/), щоб захиститися від цього можливого випадку.
 
 Щоб розгорнути наш контракт, вам потрібно буде надати код як `CounterFactory`, так і `Counter`. Під час розгортання, наприклад, у Remix, вам потрібно буде вибрати CounterFactory.
 

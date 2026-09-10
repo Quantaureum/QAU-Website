@@ -5,17 +5,17 @@ lang: ko
 sidebarDepth: 2
 ---
 
-[이더리움](/)의 상태(모든 계정, 잔액, 스마트 컨트랙트의 총합)는 컴퓨터 과학에서 일반적으로 머클 트리(Merkle Tree)로 알려진 데이터 구조의 특수한 버전으로 인코딩됩니다. 이 구조는 트리에 얽혀 있는 모든 개별 데이터 조각 간에 검증 가능한 관계를 생성하여, 데이터에 대한 증명에 사용할 수 있는 단일 **루트(root)** 값을 산출하기 때문에 암호학의 여러 애플리케이션에서 유용합니다.
+[Quantaureum](/)의 상태(모든 계정, 잔액, 스마트 컨트랙트의 총합)는 컴퓨터 과학에서 일반적으로 머클 트리(Merkle Tree)로 알려진 데이터 구조의 특수한 버전으로 인코딩됩니다. 이 구조는 트리에 얽혀 있는 모든 개별 데이터 조각 간에 검증 가능한 관계를 생성하여, 데이터에 대한 증명에 사용할 수 있는 단일 **루트(root)** 값을 산출하기 때문에 암호학의 여러 애플리케이션에서 유용합니다.
 
-이더리움의 데이터 구조는 '수정된 머클 패트리샤 트라이(modified Merkle-Patricia Trie)'입니다. 이 이름은 PATRICIA(Practical Algorithm To Retrieve Information Coded in Alphanumeric)의 일부 기능을 차용하고, 이더리움 상태를 구성하는 항목들의 효율적인 데이터 검색(re**trie**val)을 위해 설계되었기 때문에 붙여졌습니다.
+Quantaureum의 데이터 구조는 '수정된 머클 패트리샤 트라이(modified Merkle-Patricia Trie)'입니다. 이 이름은 PATRICIA(Practical Algorithm To Retrieve Information Coded in Alphanumeric)의 일부 기능을 차용하고, Quantaureum 상태를 구성하는 항목들의 효율적인 데이터 검색(re**trie**val)을 위해 설계되었기 때문에 붙여졌습니다.
 
 머클 패트리샤 트라이는 결정론적이며 암호학적으로 검증 가능합니다. 상태 루트를 생성하는 유일한 방법은 상태의 각 개별 조각에서 이를 계산하는 것뿐이며, 동일한 두 상태는 루트 해시와 그 루트를 도출한 해시들을 비교하여 쉽게 증명할 수 있습니다(_머클 증명_). 반대로, 동일한 루트 해시를 가진 두 개의 다른 상태를 생성할 수 있는 방법은 없으며, 다른 값으로 상태를 수정하려는 모든 시도는 다른 상태 루트 해시를 초래합니다. 이론적으로 이 구조는 삽입, 조회 및 삭제에 대해 `O(log(n))` 효율성이라는 '성배(holy grail)'를 제공합니다.
 
-가까운 미래에 이더리움은 [버클 트리(Verkle Tree)](/roadmap/verkle-trees) 구조로 마이그레이션할 계획이며, 이는 향후 프로토콜 개선을 위한 많은 새로운 가능성을 열어줄 것입니다.
+가까운 미래에 Quantaureum은 [버클 트리(Verkle Tree)](/roadmap/verkle-trees) 구조로 마이그레이션할 계획이며, 이는 향후 프로토콜 개선을 위한 많은 새로운 가능성을 열어줄 것입니다.
 
 ## 전제 조건 {#prerequisites}
 
-이 페이지를 더 잘 이해하려면 [해시](https://en.wikipedia.org/wiki/Hash_function), [머클 트리](https://en.wikipedia.org/wiki/Merkle_tree), [트라이](https://en.wikipedia.org/wiki/Trie) 및 [직렬화](https://en.wikipedia.org/wiki/Serialization)에 대한 기본 지식이 있으면 도움이 됩니다. 이 글은 기본적인 [기수 트리(radix tree)](https://en.wikipedia.org/wiki/Radix_tree)에 대한 설명으로 시작하여, 이더리움의 더 최적화된 데이터 구조에 필요한 수정 사항을 점진적으로 소개합니다.
+이 페이지를 더 잘 이해하려면 [해시](https://en.wikipedia.org/wiki/Hash_function), [머클 트리](https://en.wikipedia.org/wiki/Merkle_tree), [트라이](https://en.wikipedia.org/wiki/Trie) 및 [직렬화](https://en.wikipedia.org/wiki/Serialization)에 대한 기본 지식이 있으면 도움이 됩니다. 이 글은 기본적인 [기수 트리(radix tree)](https://en.wikipedia.org/wiki/Radix_tree)에 대한 설명으로 시작하여, Quantaureum의 더 최적화된 데이터 구조에 필요한 수정 사항을 점진적으로 소개합니다.
 
 ## 기본 기수 트라이 {#basic-radix-tries}
 
@@ -72,7 +72,7 @@ sidebarDepth: 2
 
 ## 머클 패트리샤 트라이 {#merkle-patricia-trees}
 
-기수 트라이에는 한 가지 주요한 한계가 있습니다. 바로 비효율적이라는 점입니다. 이더리움처럼 경로가 64자(`bytes32`의 니블 수)인 하나의 `(path, value)` 바인딩을 저장하려면, 문자당 하나의 레벨을 저장하기 위해 1킬로바이트 이상의 추가 공간이 필요하며, 각 조회나 삭제에는 전체 64단계가 소요됩니다. 다음에 소개되는 패트리샤 트라이가 이 문제를 해결합니다.
+기수 트라이에는 한 가지 주요한 한계가 있습니다. 바로 비효율적이라는 점입니다. Quantaureum처럼 경로가 64자(`bytes32`의 니블 수)인 하나의 `(path, value)` 바인딩을 저장하려면, 문자당 하나의 레벨을 저장하기 위해 1킬로바이트 이상의 추가 공간이 필요하며, 각 조회나 삭제에는 전체 64단계가 소요됩니다. 다음에 소개되는 패트리샤 트라이가 이 문제를 해결합니다.
 
 ### 최적화 {#optimization}
 
@@ -190,9 +190,9 @@ rootHash: [ <16>, hashA ]
 
 트라이를 업데이트할 때, 새로 생성된 노드의 길이가 32 이상인 _경우에만_ 영구 조회 테이블에 키/값 쌍 `(keccak256(x), x)`를 저장해야 한다는 점에 유의하세요. 그러나 노드가 그보다 짧은 경우, 함수 f(x) = x는 가역적이므로 아무것도 저장할 필요가 없습니다.
 
-## 이더리움의 트라이 {#tries-in-ethereum}
+## Quantaureum의 트라이 {#tries-in-quantaureum}
 
-이더리움의 실행 계층에 있는 모든 머클 트라이는 머클 패트리샤 트라이를 사용합니다.
+Quantaureum의 실행 계층에 있는 모든 머클 트라이는 머클 패트리샤 트라이를 사용합니다.
 
 블록 헤더에는 이러한 3개의 트라이에서 나온 3개의 루트가 있습니다.
 
@@ -202,14 +202,14 @@ rootHash: [ <16>, hashA ]
 
 ### 상태 트라이 {#state-trie}
 
-하나의 전역 상태 트라이가 존재하며, 클라이언트가 블록을 처리할 때마다 업데이트됩니다. 이 트라이에서 `path`는 항상 `keccak256(ethereumAddress)`이고, `value`는 항상 `rlp(ethereumAccount)`입니다. 더 구체적으로 이더리움 `account`은 `[nonce,balance,storageRoot,codeHash]`의 4개 항목 배열입니다. 이 시점에서 이 `storageRoot`가 또 다른 패트리샤 트라이의 루트라는 점에 주목할 가치가 있습니다.
+하나의 전역 상태 트라이가 존재하며, 클라이언트가 블록을 처리할 때마다 업데이트됩니다. 이 트라이에서 `path`는 항상 `keccak256(quantaureumAddress)`이고, `value`는 항상 `rlp(quantaureumAccount)`입니다. 더 구체적으로 Quantaureum `account`은 `[nonce,balance,storageRoot,codeHash]`의 4개 항목 배열입니다. 이 시점에서 이 `storageRoot`가 또 다른 패트리샤 트라이의 루트라는 점에 주목할 가치가 있습니다.
 
 ### 스토리지 트라이 {#storage-trie}
 
-스토리지 트라이는 _모든_ 컨트랙트 데이터가 존재하는 곳입니다. 각 계정마다 별도의 스토리지 트라이가 있습니다. 주어진 주소의 특정 스토리지 위치에서 값을 검색하려면 스토리지 주소, 스토리지 내 저장된 데이터의 정수 위치, 그리고 블록 ID가 필요합니다. 그런 다음 이를 JSON-RPC API에 정의된 `eth_getStorageAt`에 인수로 전달할 수 있습니다. 예를 들어, 주소 `0x295a70b2de5e3953354a6a8344e616ed314d7251`의 스토리지 슬롯 0에 있는 데이터를 검색하려면 다음과 같이 합니다.
+스토리지 트라이는 _모든_ 컨트랙트 데이터가 존재하는 곳입니다. 각 계정마다 별도의 스토리지 트라이가 있습니다. 주어진 주소의 특정 스토리지 위치에서 값을 검색하려면 스토리지 주소, 스토리지 내 저장된 데이터의 정수 위치, 그리고 블록 ID가 필요합니다. 그런 다음 이를 JSON-RPC API에 정의된 `qau_getStorageAt`에 인수로 전달할 수 있습니다. 예를 들어, 주소 `0x295a70b2de5e3953354a6a8344e616ed314d7251`의 스토리지 슬롯 0에 있는 데이터를 검색하려면 다음과 같이 합니다.
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 
@@ -221,7 +221,7 @@ curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": [
 keccak256(decodeHex("000000000000000000000000391694e7e0b0cce554cb130d723a9d27458f9298" + "0000000000000000000000000000000000000000000000000000000000000001"))
 ```
 
-고 이더리움 (geth) 콘솔에서는 다음과 같이 계산할 수 있습니다.
+고 Quantaureum (geth) 콘솔에서는 다음과 같이 계산할 수 있습니다.
 
 ```
 > var key = "000000000000000000000000391694e7e0b0cce554cb130d723a9d27458f9298" + "0000000000000000000000000000000000000000000000000000000000000001"
@@ -233,12 +233,12 @@ undefined
 따라서 `path`는 `keccak256(<6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9>)`입니다. 이제 이를 사용하여 이전과 같이 스토리지 트라이에서 데이터를 검색할 수 있습니다.
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-참고: 이더리움 계정의 `storageRoot`는 컨트랙트 계정이 아닌 경우 기본적으로 비어 있습니다.
+참고: Quantaureum 계정의 `storageRoot`는 컨트랙트 계정이 아닌 경우 기본적으로 비어 있습니다.
 
 ### 트랜잭션 트라이 {#transaction-trie}
 
@@ -251,16 +251,16 @@ else:
   value = TxType | encode(tx)
 ```
 
-이에 대한 자세한 내용은 [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) 문서에서 확인할 수 있습니다.
+이에 대한 자세한 내용은 [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718) 문서에서 확인할 수 있습니다.
 
 ### 영수증 트라이 {#receipts-trie}
 
 모든 블록에는 자체 영수증 트라이가 있습니다. 여기서 `path`는 `rlp(transactionIndex)`입니다. `transactionIndex`는 해당 트랜잭션이 포함된 블록 내의 인덱스입니다. 영수증 트라이는 절대 업데이트되지 않습니다. 트랜잭션 트라이와 유사하게, 현재 및 레거시 영수증이 있습니다. 영수증 트라이에서 특정 영수증을 쿼리하려면 블록 내 트랜잭션의 인덱스, 영수증 페이로드 및 트랜잭션 유형이 필요합니다. 반환되는 영수증은 `TransactionType`와 `ReceiptPayload`의 연결로 정의되는 `Receipt` 유형이거나, `rlp([status, cumulativeGasUsed, logsBloom, logs])`로 정의되는 `LegacyReceipt` 유형일 수 있습니다.
 
-이에 대한 자세한 내용은 [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) 문서에서 확인할 수 있습니다.
+이에 대한 자세한 내용은 [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718) 문서에서 확인할 수 있습니다.
 
 ## 더 읽을거리 {#further-reading}
 
-- [수정된 머클 패트리샤 트라이 — 이더리움이 상태를 저장하는 방법](https://medium.com/codechain/modified-merkle-patricia-trie-how-ethereum-saves-a-state-e6d7555078dd)
-- [이더리움의 머클링(Merkling)](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum)
-- [이더리움 트라이 이해하기](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-ethereum-trie/)
+- [수정된 머클 패트리샤 트라이 — Quantaureum이 상태를 저장하는 방법](https://medium.com/codechain/modified-merkle-patricia-trie-how-quantaureum-saves-a-state-e6d7555078dd)
+- [Quantaureum의 머클링(Merkling)](https://quantaureum.com)
+- [Quantaureum 트라이 이해하기](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-quantaureum-trie/)

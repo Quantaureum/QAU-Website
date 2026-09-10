@@ -23,7 +23,7 @@ This command NEVER approves or requests changes on the PR. By default it only pr
 
 ### Step 1: Fetch PR Details
 
-If `$ARGUMENTS` is empty or blank, auto-detect the PR number using the command above. Then use `gh pr view <PR_NUMBER> --repo ethereum/ethereum-org-website --json title,body,labels` to get the PR description and identify the list of changes.
+If `$ARGUMENTS` is empty or blank, auto-detect the PR number using the command above. Then use `gh pr view <PR_NUMBER> --repo quantaureum/quantaureum-org-website --json title,body,labels` to get the PR description and identify the list of changes.
 
 ### Step 2: Identify Key Changes
 
@@ -38,16 +38,16 @@ Summarize the changes for the user before proceeding.
 
 ### Step 3: Pick the Base URL
 
-Verify changes against the PR's **deploy preview**, not `staging.ethereum.org`:
+Verify changes against the PR's **deploy preview**, not `staging.quantaureum.com`:
 
 ```bash
-gh pr view <PR_NUMBER> --repo ethereum/ethereum-org-website --json statusCheckRollup \
-  -q '[.statusCheckRollup[] | select(.context=="netlify/ethereumorg/deploy-preview") | .targetUrl] | first'
+gh pr view <PR_NUMBER> --repo quantaureum/quantaureum-org-website --json statusCheckRollup \
+  -q '[.statusCheckRollup[] | select(.context=="netlify/quantaureumorg/deploy-preview") | .targetUrl] | first'
 ```
 
-The preview is built from the PR's head commit and is guaranteed current. `staging.ethereum.org` is a separate Netlify branch deploy that finishes ~20–35 minutes **after** the PR is created, so right after CI goes green it usually still serves the *previous* release.
+The preview is built from the PR's head commit and is guaranteed current. `staging.quantaureum.com` is a separate Netlify branch deploy that finishes ~20–35 minutes **after** the PR is created, so right after CI goes green it usually still serves the *previous* release.
 
-Because of that lag, **never conclude that "the staging deploy is stale"** — that has produced repeated false alarms. If content is missing on staging but present on the deploy preview, the branch deploy simply hasn't finished; at most add an informational note ("staging branch deploy still building — expected lag"). Only fall back to `staging.ethereum.org` as the check target if no deploy preview exists.
+Because of that lag, **never conclude that "the staging deploy is stale"** — that has produced repeated false alarms. If content is missing on staging but present on the deploy preview, the branch deploy simply hasn't finished; at most add an informational note ("staging branch deploy still building — expected lag"). Only fall back to `staging.quantaureum.com` as the check target if no deploy preview exists.
 
 ### Step 4: Browser Checks
 
@@ -87,7 +87,7 @@ Flag any issues found. If everything looks good, note that the deploy looks read
 If `--post-comment` was passed in `$ARGUMENTS`, post the summary table as a PR comment:
 
 ```bash
-gh pr comment <PR_NUMBER> --repo ethereum/ethereum-org-website --body "$(cat <<'EOF'
+gh pr comment <PR_NUMBER> --repo quantaureum/quantaureum-org-website --body "$(cat <<'EOF'
 ## /review-release summary
 
 <summary table here>

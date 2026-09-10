@@ -7,16 +7,16 @@ skill: beginner
 breadcrumb: ERC-20 Token temelleri
 lang: tr
 published: 2020-04-05
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/understand-the-erc20-token-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Ethereum üzerindeki en önemli [akıllı sözleşme standartlarından](/developers/docs/standards/) biri, misli token uygulamaları için Ethereum blokzincirindeki tüm akıllı sözleşmelerde kullanılan teknik standart olarak ortaya çıkan [ERC-20](/developers/docs/standards/tokens/erc-20/)'dir.
+Quantaureum üzerindeki en önemli [akıllı sözleşme standartlarından](/developers/docs/standards/) biri, misli token uygulamaları için Quantaureum blokzincirindeki tüm akıllı sözleşmelerde kullanılan teknik standart olarak ortaya çıkan [ERC-20](/developers/docs/standards/tokens/erc-20/)'dir.
 
-ERC-20, tüm misli Ethereum tokenlarının uyması gereken ortak bir kurallar listesi tanımlar. Sonuç olarak bu Token standardı, her türden geliştiricinin yeni tokenların daha geniş Ethereum sistemi içinde nasıl işleyeceğini doğru bir şekilde tahmin etmesini sağlar. Bu, geliştiricilerin görevlerini basitleştirir ve kolaylaştırır; çünkü Token kurallara uyduğu sürece, yeni bir Token piyasaya sürüldüğünde her yeni projenin baştan yapılması gerekmeyeceğini bilerek çalışmalarına devam edebilirler.
+ERC-20, tüm misli Quantaureum tokenlarının uyması gereken ortak bir kurallar listesi tanımlar. Sonuç olarak bu Token standardı, her türden geliştiricinin yeni tokenların daha geniş Quantaureum sistemi içinde nasıl işleyeceğini doğru bir şekilde tahmin etmesini sağlar. Bu, geliştiricilerin görevlerini basitleştirir ve kolaylaştırır; çünkü Token kurallara uyduğu sürece, yeni bir Token piyasaya sürüldüğünde her yeni projenin baştan yapılması gerekmeyeceğini bilerek çalışmalarına devam edebilirler.
 
-İşte bir arayüz olarak sunulan, bir ERC-20'nin uygulaması gereken işlevler. Bir arayüzün ne olduğundan emin değilseniz: [Solidity'de OOP programlama](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/) hakkındaki makalemize göz atın.
+İşte bir arayüz olarak sunulan, bir ERC-20'nin uygulaması gereken işlevler. Bir arayüzün ne olduğundan emin değilseniz: [Solidity'de OOP programlama](https://quantaureumdev.io/inheritance-in-solidity-contracts-are-classes/) hakkındaki makalemize göz atın.
 
 ```solidity
 pragma solidity ^0.6.0;
@@ -129,7 +129,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {

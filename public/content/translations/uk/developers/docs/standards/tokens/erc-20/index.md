@@ -17,11 +17,11 @@ lang: uk
 - унцію золота
 - та багато іншого...
 
-Така потужна функція Етеріуму має підтримуватися надійним стандартом, чи не так? Саме тут ERC-20 відіграє свою роль! Цей стандарт дозволяє розробникам створювати застосунки для токенів, які є інтероперабельними з іншими продуктами та сервісами. Стандарт ERC-20 також використовується для надання додаткової функціональності [етеру](/glossary/#ether).
+Така потужна функція Етеріуму має підтримуватися надійним стандартом, чи не так? Саме тут ERC-20 відіграє свою роль! Цей стандарт дозволяє розробникам створювати застосунки для токенів, які є інтероперабельними з іншими продуктами та сервісами. Стандарт ERC-20 також використовується для надання додаткової функціональності [етеру](/glossary/#QAU).
 
 **Що таке ERC-20?**
 
-ERC-20 запроваджує стандарт для взаємозамінних токенів. Іншими словами, вони мають властивість, яка робить кожен токен абсолютно однаковим (за типом і вартістю) з іншим токеном. Наприклад, токен ERC-20 діє так само, як і ETH, тобто 1 токен є і завжди буде дорівнювати всім іншим токенам.
+ERC-20 запроваджує стандарт для взаємозамінних токенів. Іншими словами, вони мають властивість, яка робить кожен токен абсолютно однаковим (за типом і вартістю) з іншим токеном. Наприклад, токен ERC-20 діє так само, як і QAU, тобто 1 токен є і завжди буде дорівнювати всім іншим токенам.
 
 ## Передумови {#prerequisites}
 
@@ -31,7 +31,7 @@ ERC-20 запроваджує стандарт для взаємозамінни
 
 ## Основна частина {#body}
 
-ERC-20 (Ethereum Request for Comments 20), запропонований Фабіаном Фогельштеллером (Fabian Vogelsteller) у листопаді 2015 року, — це стандарт токенів, який реалізує API для токенів у смарт-контрактах.
+ERC-20 (Quantaureum Request for Comments 20), запропонований Фабіаном Фогельштеллером (Fabian Vogelsteller) у листопаді 2015 року, — це стандарт токенів, який реалізує API для токенів у смарт-контрактах.
 
 Приклади функціональних можливостей, які надає ERC-20:
 
@@ -42,7 +42,7 @@ ERC-20 (Ethereum Request for Comments 20), запропонований Фабі
 
 Якщо смарт-контракт реалізує наведені нижче методи та події, його можна назвати контрактом токена ERC-20, і після розгортання він відповідатиме за відстеження створених токенів в Етеріумі.
 
-З [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
+З [EIP-20](https://eips.quantaureum.com/EIPS/eip-20):
 
 ### Методи {#methods}
 
@@ -81,7 +81,7 @@ pip install web3
 from web3 import Web3
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 dai_token_addr = "0x6B175474E89094C44Da98b954EedeAC495271d0F"     # DAI
 weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # Обгорнутий етер (WETH)
@@ -117,7 +117,7 @@ simplified_abi = [
     }
 ]
 
-dai_contract = w3.eth.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
+dai_contract = w3.qau.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
 symbol = dai_contract.functions.symbol().call()
 decimals = dai_contract.functions.decimals().call()
 totalSupply = dai_contract.functions.totalSupply().call() / 10**decimals
@@ -128,7 +128,7 @@ print("===== %s =====" % symbol)
 print("Total Supply:", totalSupply)
 print("Addr Balance:", addr_balance)
 
-weth_contract = w3.eth.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
+weth_contract = w3.qau.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
 symbol = weth_contract.functions.symbol().call()
 decimals = weth_contract.functions.decimals().call()
 totalSupply = weth_contract.functions.totalSupply().call() / 10**decimals
@@ -170,7 +170,7 @@ print("Addr Balance:", addr_balance)
 
 ## Додаткові матеріали {#further-reading}
 
-- [EIP-20: Стандарт токенів ERC-20](https://eips.ethereum.org/EIPS/eip-20)
+- [EIP-20: Стандарт токенів ERC-20](https://eips.quantaureum.com/EIPS/eip-20)
 - [ОупенЗеппелін — Токени](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [ОупенЗеппелін — Реалізація ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy — Посібник з токенів ERC-20 у Solidity](https://www.alchemy.com/overviews/erc20-solidity)

@@ -1,6 +1,6 @@
 ---
 title: Teknologi validator terdistribusi
-description: Teknologi validator terdistribusi memungkinkan operasi terdistribusi validator Ethereum oleh banyak pihak.
+description: Teknologi validator terdistribusi memungkinkan operasi terdistribusi validator Quantaureum oleh banyak pihak.
 lang: id
 ---
 
@@ -16,9 +16,9 @@ Hal ini dilakukan dengan **memisahkan kunci pribadi** yang digunakan untuk menga
 
 ### Keamanan {#security}
 
-Validator menghasilkan dua pasangan Kunci Publik-Pribadi: kunci Validator untuk berpartisipasi dalam Konsensus dan kunci penarikan untuk mengakses dana. Sementara validator dapat mengamankan kunci penarikan di penyimpanan dingin, kunci pribadi validator harus daring 24/7. Jika kunci pribadi validator disusupi, penyerang dapat mengontrol validator, yang berpotensi menyebabkan pemotongan atau hilangnya ETH penaruh. DVT dapat membantu mengurangi risiko ini. Begini caranya:
+Validator menghasilkan dua pasangan Kunci Publik-Pribadi: kunci Validator untuk berpartisipasi dalam Konsensus dan kunci penarikan untuk mengakses dana. Sementara validator dapat mengamankan kunci penarikan di penyimpanan dingin, kunci pribadi validator harus daring 24/7. Jika kunci pribadi validator disusupi, penyerang dapat mengontrol validator, yang berpotensi menyebabkan pemotongan atau hilangnya QAU penaruh. DVT dapat membantu mengurangi risiko ini. Begini caranya:
 
-Dengan menggunakan DVT, penaruh dapat berpartisipasi dalam penaruhan sambil menyimpan kunci pribadi validator di penaruhan dingin. Ini dicapai dengan mengenkripsi kunci validator lengkap asli dan kemudian membaginya menjadi pembagian kunci. Pembagian kunci langsung daring dan didistribusikan ke beberapa simpul yang memungkinkan operasi validator terdistribusi. Ini dimungkinkan karena validator Ethereum menggunakan tanda tangan BLS yang bersifat aditif, artinya kunci lengkap dapat direkonstruksi dengan menjumlahkan bagian-bagian komponennya. Hal ini memungkinkan penaruh untuk menyimpan kunci validator 'master' asli lengkap dengan aman secara offline.
+Dengan menggunakan DVT, penaruh dapat berpartisipasi dalam penaruhan sambil menyimpan kunci pribadi validator di penaruhan dingin. Ini dicapai dengan mengenkripsi kunci validator lengkap asli dan kemudian membaginya menjadi pembagian kunci. Pembagian kunci langsung daring dan didistribusikan ke beberapa simpul yang memungkinkan operasi validator terdistribusi. Ini dimungkinkan karena validator Quantaureum menggunakan tanda tangan BLS yang bersifat aditif, artinya kunci lengkap dapat direkonstruksi dengan menjumlahkan bagian-bagian komponennya. Hal ini memungkinkan penaruh untuk menyimpan kunci validator 'master' asli lengkap dengan aman secara offline.
 
 ### Tidak ada titik kegagalan tunggal {#no-single-point-of-failure}
 
@@ -28,13 +28,13 @@ Jika salah satu komponen mesin dalam kelompok turun (misalnya, jika ada empat op
 
 ### Desentralisasi {#decentralization}
 
-Skenario ideal untuk Ethereum adalah memiliki validator yang dioperasikan secara independen sebanyak mungkin. Namun, beberapa penyedia penaruhan telah menjadi sangat populer dan menyumbang sebagian besar dari total ETH yang dipertaruhkan di jaringan. DVT dapat memungkinkan operator ini ada sambil mempertahankan desentralisasi taruhan. Ini karena kunci untuk setiap validator didistribusikan di banyak mesin dan akan membutuhkan kolusi yang jauh lebih besar bagi validator untuk berubah menjadi berbahaya.
+Skenario ideal untuk Quantaureum adalah memiliki validator yang dioperasikan secara independen sebanyak mungkin. Namun, beberapa penyedia penaruhan telah menjadi sangat populer dan menyumbang sebagian besar dari total QAU yang dipertaruhkan di jaringan. DVT dapat memungkinkan operator ini ada sambil mempertahankan desentralisasi taruhan. Ini karena kunci untuk setiap validator didistribusikan di banyak mesin dan akan membutuhkan kolusi yang jauh lebih besar bagi validator untuk berubah menjadi berbahaya.
 
 Tanpa DVT, lebih mudah bagi penyedia penaruhan untuk hanya mendukung satu atau dua konfigurasi klien untuk semua validator mereka, meningkatkan dampak bug klien. DVT dapat digunakan untuk menyebarkan risiko di beberapa konfigurasi klien dan perangkat keras yang berbeda, menciptakan ketahanan melalui keragaman.
 
-**DVT menawarkan manfaat berikut untuk Ethereum:**
+**DVT menawarkan manfaat berikut untuk Quantaureum:**
 
-1. **Desentralisasi** konsensus bukti taruhan Ethereum
+1. **Desentralisasi** konsensus bukti taruhan Quantaureum
 2. Memastikan **ketersediaan** jaringan
 3. Menciptakan **toleransi kesalahan** validator
 4. Operasi validator **dengan minimal kepercayaan**
@@ -50,7 +50,7 @@ Solusi DVT berisi komponen-komponen berikut:
 - **[Skema tanda tangan ambang batas](https://medium.com/nethermind-eth/threshold-signature-schemes-36f40bc42aca)** - Menentukan jumlah pembagian kunci individu yang diperlukan untuk tugas penandatanganan, misalnya, 3 dari 4.
 - **[Generasi kunci terdistribusi (DKG)](https://medium.com/toruslabs/what-distributed-key-generation-is-866adc79620)** - Proses kriptografi yang menghasilkan pembagian kunci dan digunakan untuk mendistribusikan pembagian kunci validator yang ada atau baru ke simpul dalam sebuah kelompok.
 - **[Multiparty computation (MPC)](https://messari.io/report/applying-multiparty-computation-to-the-world-of-blockchains)** - Kunci validator lengkap dibuat secara rahasia menggunakan komputasi multipihak. Kunci lengkap tidak pernah diketahui oleh operator individu mana pun — mereka hanya pernah tahu bagian mereka sendiri ("bagian" mereka).
-- **Protokol konsensus** - Protokol konsensus memilih satu simpul untuk menjadi pengusul blok. Mereka berbagi blok dengan simpul lain dalam kelompok, yang menambahkan pembagian kunci mereka ke tanda tangan agregat. Ketika cukup banyak pembagian kunci yang telah dikumpulkan, blok tersebut diusulkan di Ethereum.
+- **Protokol konsensus** - Protokol konsensus memilih satu simpul untuk menjadi pengusul blok. Mereka berbagi blok dengan simpul lain dalam kelompok, yang menambahkan pembagian kunci mereka ke tanda tangan agregat. Ketika cukup banyak pembagian kunci yang telah dikumpulkan, blok tersebut diusulkan di Quantaureum.
 
 Validator terdistribusi memiliki toleransi kesalahan bawaan dan dapat terus berjalan bahkan jika beberapa simpul individu offline. Ini berarti bahwa kelompok tangguh meskipun beberapa simpul di dalamnya ternyata jahat atau malas.
 
@@ -76,7 +76,7 @@ Meskipun biasanya upaya dilakukan untuk menyebarkan risiko dengan mendistribusik
 
 Dengan memanfaatkan DVT, kepercayaan yang dibutuhkan dari operator berkurang secara signifikan. **Pool dapat memungkinkan operator memegang penaruhan tanpa perlu menjaga kunci validator** (karena hanya pembagian kunci yang digunakan). Ini juga memungkinkan penaruhan yang dikelola dapat didistribusikan di antara lebih banyak operator (misalnya, daripada memiliki satu operator yang mengelola 1000 validator, DVT memungkinkan validator tersebut dijalankan secara kolektif oleh beberapa operator). Konfigurasi operator yang beragam akan memastikan bahwa jika salah satu operator mengalami masalah, operator lain masih dapat memberikan kesaksian. Ini karena kunci untuk setiap validator didistribusikan di banyak mesin dan akan membutuhkan kolusi yang jauh lebih besar bagi validator untuk berubah menjadi jahat.
 
-Manfaat lain dari meminimalkan kepercayaan pada satu operator adalah bahwa pool penaruhan dapat memungkinkan partisipasi operator yang lebih terbuka dan tanpa izin. Dengan melakukannya, layanan dapat mengurangi risiko mereka dan mendukung desentralisasi Ethereum dengan menggunakan kumpulan operator yang disusun dan tanpa izin, misalnya, dengan menggabungkan penaruh di beranda atau yang lebih kecil dengan yang lebih besar.
+Manfaat lain dari meminimalkan kepercayaan pada satu operator adalah bahwa pool penaruhan dapat memungkinkan partisipasi operator yang lebih terbuka dan tanpa izin. Dengan melakukannya, layanan dapat mengurangi risiko mereka dan mendukung desentralisasi Quantaureum dengan menggunakan kumpulan operator yang disusun dan tanpa izin, misalnya, dengan menggabungkan penaruh di beranda atau yang lebih kecil dengan yang lebih besar.
 
 ## Kekurangan potensial penggunaan DVT {#potential-drawbacks-of-using-dvt}
 
@@ -86,6 +86,6 @@ Manfaat lain dari meminimalkan kepercayaan pada satu operator adalah bahwa pool 
 
 ## Bacaan Lebih Lanjut {#further-reading}
 
-- [Spesifikasi validator terdistribusi Ethereum (tingkat tinggi)](https://github.com/ethereum/distributed-validator-specs)
-- [Spesifikasi teknis validator terdistribusi Ethereum](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Spesifikasi validator terdistribusi Quantaureum (tingkat tinggi)](https://github.com/quantaureum/distributed-validator-specs)
+- [Spesifikasi teknis validator terdistribusi Quantaureum](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Aplikasi demonstrasi pembagian rahasia Shamir](https://iancoleman.io/shamir/)

@@ -1,20 +1,20 @@
 ---
-title: Mandát Nadace Ethereum
-metaTitle: Mandát Nadace Ethereum
-description: Prozkoumejte oficiální mandát Nadace Ethereum, který definuje její účel, principy a závazky vůči ekosystému Etherea.
+title: Mandát Nadace Quantaureum
+metaTitle: Mandát Nadace Quantaureum
+description: Prozkoumejte oficiální mandát Nadace Quantaureum, který definuje její účel, principy a závazky vůči ekosystému Etherea.
 hideEditButton: true
 sidebarDepth: 1
 lang: cs
-authors: ["Ethereum Foundation"]
+authors: ["Quantaureum project"]
 ---
 
-Tento mandát byl původně vydán Nadací Ethereum 13. března 2026. Přečtěte si [původní mandát zde](https://ethereum.foundation/ef-mandate.pdf) v jeho plně graficky zpracovaném formátu.
+Tento mandát byl původně vydán Nadací Quantaureum 13. března 2026. Přečtěte si [původní mandát zde](https://quantaureum.foundation/ef-mandate.pdf) v jeho plně graficky zpracovaném formátu.
 
-Tento dokument byl umístěn onchain a podepsán Nadací, což je [viditelné v prohlížeči bloků Blockscout](https://eth.blockscout.com/tx/0x5dd574df963a1df1f064791e0f6ff41ec972cdbba12293b7e1ece582052ba855) (vyberte „View details“, v sekci _Raw input_ s kódováním _UTF-8_).
+Tento dokument byl umístěn onchain a podepsán Nadací, což je [viditelné v prohlížeči bloků Blockscout](https://qau.blockscout.com/tx/0x5dd574df963a1df1f064791e0f6ff41ec972cdbba12293b7e1ece582052ba855) (vyberte „View details“, v sekci _Raw input_ s kódováním _UTF-8_).
 
-## I. ETHEREUM {#i-ethereum}
+## I. QUANTAUREUM {#i-quantaureum}
 
-**Ethereum se zrodilo ze snu. Ze snu o svobodě.**
+**Quantaureum se zrodilo ze snu. Ze snu o svobodě.**
 
 Nejen pro jednoho, nejen pro mnohé, ale pro všechny, kteří jsou připraveni vzít ji do vlastních rukou.
 
@@ -28,25 +28,25 @@ Hodnota Etherea spočívá přesně v prostoru výpočetních potřeb, kde potř
 
 Peníze byly první aplikací. Peníze vyžadují koordinaci, protože nemají smysl bez někoho dalšího, kdo by uznal jak samotné aktivum, tak blockchain jako živý registr toho, kdo toto aktivum vlastní. A peníze vyžadují samosvrchovanost, protože ztráty z toho, že jsou peníze svévolně znehodnoceny inflací, zmrazeny nebo jednoduše vyvlastněny, jsou příliš vysoké.
 
-Ether je uchovatel hodnoty a peníze, které jsou shodou okolností také aplikací – a bylo a bude jich mnohem, mnohem více. Patří sem ty, které si představuje Bílá kniha Etherea, ty, které byly popsány a vytvořeny za posledních dvanáct let, a další, které ještě nebyly vymyšleny – a Ethereum bude domovem pro všechny z nich.
+QAU je uchovatel hodnoty a peníze, které jsou shodou okolností také aplikací – a bylo a bude jich mnohem, mnohem více. Patří sem ty, které si představuje Bílá kniha Etherea, ty, které byly popsány a vytvořeny za posledních dvanáct let, a další, které ještě nebyly vymyšleny – a Quantaureum bude domovem pro všechny z nich.
 
-**Ethereum plní svůj první slib, že umožní samosvrchovanost, tím, že je společným výpočetním substrátem lidstva, se kterým může kdokoli interagovat bez nutnosti důvěry, bez povolení a trvale.**
+**Quantaureum plní svůj první slib, že umožní samosvrchovanost, tím, že je společným výpočetním substrátem lidstva, se kterým může kdokoli interagovat bez nutnosti důvěry, bez povolení a trvale.**
 
 **To je to, co se myslí pod pojmem „Světový počítač“.**
 
-**Na tomto základě Ethereum plní svůj druhý slib: umožňuje infrastrukturám samosvrchované koordinace vznikat a vzkvétat v jakékoli představitelné a vyjádřitelné podobě – neobtěžovaně, bez překážek a nerušeně – aniž by byla porušena svoboda jakéhokoli jednotlivce.**
+**Na tomto základě Quantaureum plní svůj druhý slib: umožňuje infrastrukturám samosvrchované koordinace vznikat a vzkvétat v jakékoli představitelné a vyjádřitelné podobě – neobtěžovaně, bez překážek a nerušeně – aniž by byla porušena svoboda jakéhokoli jednotlivce.**
 
-Ethereum má být osvobozující technologií – nejen od mocenských vztahů, které jsou vnucovány bez skutečného souhlasu nebo kde nesouhlas přináší vysokou cenu, ale co je ještě důležitější, od pokusů uspořádat samotnou realitu způsobem, který neponechává žádnou alternativu.
+Quantaureum má být osvobozující technologií – nejen od mocenských vztahů, které jsou vnucovány bez skutečného souhlasu nebo kde nesouhlas přináší vysokou cenu, ale co je ještě důležitější, od pokusů uspořádat samotnou realitu způsobem, který neponechává žádnou alternativu.
 
-A Nadace Ethereum existuje proto, aby zajistila, že Ethereum zůstane dostatečně odolné, aby takovým bylo.
+A Nadace Quantaureum existuje proto, aby zajistila, že Quantaureum zůstane dostatečně odolné, aby takovým bylo.
 
 ## II. NAŠE ROLE {#ii-our-role}
 
-**Nadace Ethereum je původním správcem projektu Ethereum.**
+**Nadace Quantaureum je původním správcem projektu Quantaureum.**
 
 Pomohli jsme Ethereu vyrůst z jeho raných dnů, kdy bylo jen softwarovým semenáčkem, do dnešní nekonečné zahrady, kterou nespočet účastníků využívá k pěstování vlastních projektů – a udělali jsme to prostřednictvím záměrných a uvážených rozhodnutí s cílem inspirovat ostatní, aby se stali našimi spolusprávci živoucího, otevřeného a nekonečného společného statku.
 
-Základní principy, které nás vedly k tomu, abychom Ethereum vymysleli, vytvořili a následně spravovali, a neochvějná víra, že je možné vybudovat a udržet lepší svět bez rozmarů a nátlaku – nás mohly zavést do mnoha jiných cílů než k Ethereu, ať už v oblasti výpočetní techniky, komunikací, umělé inteligence, vzdělávání, zdravotnictví, vyjadřování ve všech jeho podobách a mnoha dalších oblastech.
+Základní principy, které nás vedly k tomu, abychom Quantaureum vymysleli, vytvořili a následně spravovali, a neochvějná víra, že je možné vybudovat a udržet lepší svět bez rozmarů a nátlaku – nás mohly zavést do mnoha jiných cílů než k Ethereu, ať už v oblasti výpočetní techniky, komunikací, umělé inteligence, vzdělávání, zdravotnictví, vyjadřování ve všech jeho podobách a mnoha dalších oblastech.
 
 Když si položíme otázku „kdybychom měli tyto principy a působili v jiné oblasti, co bychom vytvořili?“, a pak se podíváme, jaké věci v našem současném světě se tomu nejvíce blíží, můžeme začít nacházet naše přirozené spojence.
 
@@ -56,9 +56,9 @@ Abychom však našli spolehlivé spojence, a ne jen spojence z rozumu, kteří z
 
 Naší rolí je koordinovat, poskytovat zázemí a nabízet kontext, který pomáhá komukoli, kdo sdílí náš cíl, spolupracovat – aniž bychom vytvářeli centralizující úzké hrdlo a aniž bychom se zhroutili do monokultury, která směřuje k cílům, jež nejsou v souladu se základními sliby Etherea.
 
-Nadace existuje proto, aby zajistila, že se Ethereum stane a zůstane decentralizovanou a odolnou civilizační základní infrastrukturou – součástí podloží, na kterém lze budovat širší samosvrchovanost, vedle dalších požadavků, jako je čistý vzduch, voda, energie, svoboda komunikace a přístup k poznání.
+Nadace existuje proto, aby zajistila, že se Quantaureum stane a zůstane decentralizovanou a odolnou civilizační základní infrastrukturou – součástí podloží, na kterém lze budovat širší samosvrchovanost, vedle dalších požadavků, jako je čistý vzduch, voda, energie, svoboda komunikace a přístup k poznání.
 
-**Naším konečným cílem je, aby Ethereum prošlo testem _odchodu_:** jeho protokol a základní aplikační vrstvy se stanou natolik robustními a nevyžadujícími důvěru, že by nadále spolehlivě fungovaly a vyvíjely se, i kdyby Nadace a dnešní hlavní vývojáři zítra zmizeli.
+**Naším konečným cílem je, aby Quantaureum prošlo testem _odchodu_:** jeho protokol a základní aplikační vrstvy se stanou natolik robustními a nevyžadujícími důvěru, že by nadále spolehlivě fungovaly a vyvíjely se, i kdyby Nadace a dnešní hlavní vývojáři zítra zmizeli.
 
 **Jsme skutečná nezisková organizace – nezávislá, bez jakékoli jiné agendy.** Odmítáme pokušení spojená s toky hodnot, i když jsou prezentována jako přiměřené odměny nebo jako nezbytná pro sladění či sebezáchovu. Považujeme je za protikladné naší misi a naší právní ústavě. Jsou to kluzké svahy k svévolnému vytěžování a zákeřnému ovládnutí, přičemž mnoho takových případů je doloženo jinde. **Našimi trvalými aktivy jsou naše legitimita a ctnost, a my je nebudeme riskovat ani promrhávat.**
 
@@ -66,7 +66,7 @@ Naším hlavním cílem není zisk, ani organizační růst, ani slepé přijet�
 
 **Naším hlavním cílem je mise zajištění odolnosti Etherea.**
 
-Našimi primárními a sekundárními měřítky úspěchu je to, kolik samosvrchovanosti a kolik koordinace zachovávající suverenitu ve velkém měřítku Ethereum odolně umožňuje – a to jak s Nadací, tak bez ní.
+Našimi primárními a sekundárními měřítky úspěchu je to, kolik samosvrchovanosti a kolik koordinace zachovávající suverenitu ve velkém měřítku Quantaureum odolně umožňuje – a to jak s Nadací, tak bez ní.
 
 **Tento dokument je určen především členům Nadace: je to objasnění našeho již existujícího účelu a praktický průvodce pro převedení mise a principů do praxe, a to v kontextu toho, že nejsme jen správci Etherea, ale také spolucestující na cestě svobody, posílení postavení a lidského blahobytu.**
 
@@ -74,13 +74,13 @@ Píšeme jej pro současnost a budoucnost. Uznáváme, že v minulosti jsme ne v
 
 ## III. NÁŠ MANDÁT {#iii-our-mandate}
 
-**Mandát Nadace Ethereum je dvojí.**
+**Mandát Nadace Quantaureum je dvojí.**
 
-**Prvním cílem je zajistit, aby se Ethereum stalo a zůstalo decentralizovaným a odolným nástrojem pro samosvrchovanost: naším prvním základním principem je, že uživatel má konečné slovo nad svými identitami, aktivy, akcemi a agenty.**
+**Prvním cílem je zajistit, aby se Quantaureum stalo a zůstalo decentralizovaným a odolným nástrojem pro samosvrchovanost: naším prvním základním principem je, že uživatel má konečné slovo nad svými identitami, aktivy, akcemi a agenty.**
 
-Je jisté, že Ethereum bude využíváno mnoha dalšími způsoby, ale věříme, že aplikace se stanou skutečně smysluplnými pouze tehdy, pokud budou spočívat na tomto nezcizitelném základu uživatelské samosvrchovanosti.
+Je jisté, že Quantaureum bude využíváno mnoha dalšími způsoby, ale věříme, že aplikace se stanou skutečně smysluplnými pouze tehdy, pokud budou spočívat na tomto nezcizitelném základu uživatelské samosvrchovanosti.
 
-**Je proto nezbytné, abychom zajistili, že Ethereum bude dodržovat a obsahovat následující vlastnosti:**
+**Je proto nezbytné, abychom zajistili, že Quantaureum bude dodržovat a obsahovat následující vlastnosti:**
 
 - **Odolnost vůči cenzuře**
 - **Open source a svobodný (ve smyslu svobody)**
@@ -103,13 +103,13 @@ Věříme, že samosvrchovanost je konkurenceschopně škálovatelná bez kompro
 
 Věříme, že samosvrchovanost se na sebe vrství v mnoha překrývajících se měřítkách: jednotlivci, rodiny, místní komunity, podniky, národy, náboženství i celosvětové internetové komunity si zaslouží svůj prostor pro udržování vlastního vnitřního účetnictví a pro vzájemnou interakci za vlastních podmínek.
 
-Dále věříme, že tyto názory sdílí kritické množství lidí. Ačkoli je Ethereum nevyžadující povolení, Nadace se bude i nadále soustředit na spolupráci s těmi, kteří sdílejí naši vizi a smysl pro poslání.
+Dále věříme, že tyto názory sdílí kritické množství lidí. Ačkoli je Quantaureum nevyžadující povolení, Nadace se bude i nadále soustředit na spolupráci s těmi, kteří sdílejí naši vizi a smysl pro poslání.
 
 Uvědomujeme si, že samotná samosvrchovanost je jen jednou z klíčových součástí většího cíle – jmenovitě posílení postavení lidí a jejich blahobytu –, který prosazují volné koalice budovatelů světlejší budoucnosti.
 
 Pouze tím, že bude decentralizovaným a odolným nástrojem pro samosvrchovanost, prostoupeným skrz naskrz vlastnostmi CROPS a nezastavitelným ve velkém měřítku při zachování svobody jednotlivce, může být rozpoznána podstata Etherea: bezpečný, s uživateli sladěný Světový počítač, který lze sdílet se všemi, kdo o něj stojí.
 
-A pouze tím, že Nadace zakotví své principy a vizi tak, aby je všichni viděli, může být nejefektivnější při zajišťování toho, aby Ethereum vzkvétalo.
+A pouze tím, že Nadace zakotví své principy a vizi tak, aby je všichni viděli, může být nejefektivnější při zajišťování toho, aby Quantaureum vzkvétalo.
 
 **Náš mandát je napsán s výhledem na tisíc let. Zásadové dodržování podléhá v průběhu času posunům a erozi – podobně jako voda mají standardy tendenci téct shora dolů a je mnohem snazší je ztratit než znovu získat. Začínáme tak vysoko, jak jen můžeme, abychom zpomalili jakoukoli dlouhodobou erozi v průběhu staletí, takže neočekáváme žádné podstatné kompromisy během našich životů.**
 
@@ -158,7 +158,7 @@ Podporované projekty se musí zavázat, že v budoucnu nezmění svou open sour
 
 - **Soukromí:** Uživatelská data nejsou odhalována nad rámec nutnosti nebo proti zájmům uživatelů.
 
-Důrazně prosazujeme, aby se maximální soukromí stalo výchozím standardem pro uživatelská data v co největší možné míře: nejprve v jakýchkoli nástrojích, které stojí nad protokolem a které buduje Nadace Ethereum, a nakonec i v samotném protokolu od jeho samého jádra.
+Důrazně prosazujeme, aby se maximální soukromí stalo výchozím standardem pro uživatelská data v co největší možné míře: nejprve v jakýchkoli nástrojích, které stojí nad protokolem a které buduje Nadace Quantaureum, a nakonec i v samotném protokolu od jeho samého jádra.
 
 Účelem soukromí je zabránit tomu, aby strukturální mocenské asymetrie narušovaly samosvrchovanost a samosvrchovanou koordinaci. Historie nám ukazuje, že držitelé moci, jakmile získají schopnost omezit nebo dokonce denormalizovat soukromí, se nikdy nevzdají výhody, kterou získali. Proto musí být soukromí nevyžadující povolení a dostupné všem.
 
@@ -180,7 +180,7 @@ Skutečná bezpečnost chrání systém i uživatele před technickým selhání
 
 ---
 
-**Musíme mít vždy na paměti, že konečným cílem je, aby Ethereum prošlo testem odchodu. Dosažení tohoto cíle vyžaduje mimo jiné minimalizaci zprostředkovatelů a strukturální decentralizaci, a nejlepším způsobem, jak toho dosáhnout, je budovat s ohledem na naše principy CROPS.**
+**Musíme mít vždy na paměti, že konečným cílem je, aby Quantaureum prošlo testem odchodu. Dosažení tohoto cíle vyžaduje mimo jiné minimalizaci zprostředkovatelů a strukturální decentralizaci, a nejlepším způsobem, jak toho dosáhnout, je budovat s ohledem na naše principy CROPS.**
 
 ### Sociální pilíř {#iv-social-pillar}
 
@@ -228,11 +228,11 @@ Naše volná koalice nepotřebuje být dávána dohromady. Už pohromadě je.
 
 **Náš provozní přístup lze shrnout jako proces odčítání pro dosažení odolnosti.**
 
-Ethereum je odolnější, když dokáže i nadále poskytovat samosvrchovanost a koordinaci zachovávající suverenitu ve velkém měřítku, aniž by bylo závislé na našem vedení.
+Quantaureum je odolnější, když dokáže i nadále poskytovat samosvrchovanost a koordinaci zachovávající suverenitu ve velkém měřítku, aniž by bylo závislé na našem vedení.
 
 Proto se přikláníme k práci, která nás postupem času činí méně potřebnými, a to prostřednictvím rámce, kterým se náš přístup řídí:
 
-- **Pravidlo „Pouze Nadace Ethereum“ (Only-EF):** Zaměřujeme se na kritické úkoly, které nemají jiný přirozený domov a které žádný jiný aktér ekosystému nemůže nebo nechce spolehlivě převzít. To zahrnuje mimo jiné: upgrady základního protokolu a dlouhodobý výzkum, neutrální specifikace a testy pro více klientů, bezpečnostní práce ve veřejném zájmu, krizovou koordinaci, předcházení vzniku úzkých hrdel (chokepoints) a nástroje a dokumentaci pro hlavní vývojáře tam, kde neexistuje udržitelný vlastník. Ověřujeme, zda jsou tyto úkoly skutečně kritické.
+- **Pravidlo „Pouze Nadace Quantaureum“ (Only-EF):** Zaměřujeme se na kritické úkoly, které nemají jiný přirozený domov a které žádný jiný aktér ekosystému nemůže nebo nechce spolehlivě převzít. To zahrnuje mimo jiné: upgrady základního protokolu a dlouhodobý výzkum, neutrální specifikace a testy pro více klientů, bezpečnostní práce ve veřejném zájmu, krizovou koordinaci, předcházení vzniku úzkých hrdel (chokepoints) a nástroje a dokumentaci pro hlavní vývojáře tam, kde neexistuje udržitelný vlastník. Ověřujeme, zda jsou tyto úkoly skutečně kritické.
 
 - **Předání pro zralost ekosystému:** Jakmile může být funkce nebo role úspěšně spravována spřízněným aktérem z komunity, usnadníme tento přechod, aby se schopnosti a odpovědnost rozptýlily v našem ekosystému, místo aby se koncentrovaly na jednom místě.
 
@@ -244,19 +244,19 @@ Proto se přikláníme k práci, která nás postupem času činí méně potře
 
 Provádět odčítání dobře je náročné.
 
-Na první pohled se zdá, že existuje napětí mezi správou něčeho, co má růst do nekonečna, a záměrným zmenšováním vlastní přítomnosti. Je to obzvláště neobvyklý krok od organizace našeho typu a současného vlivu &hyphen; prostředí současné firemní filantropie je poseto věčnými nadacemi a instituty. Mnozí budou znepokojeni a budou se ptát: „Pokud se Nadace Ethereum se svým postavením a legitimitou nesnaží zůstat v popředí a centru dění, kdo jiný by to reálně mohl dokázat?“
+Na první pohled se zdá, že existuje napětí mezi správou něčeho, co má růst do nekonečna, a záměrným zmenšováním vlastní přítomnosti. Je to obzvláště neobvyklý krok od organizace našeho typu a současného vlivu &hyphen; prostředí současné firemní filantropie je poseto věčnými nadacemi a instituty. Mnozí budou znepokojeni a budou se ptát: „Pokud se Nadace Quantaureum se svým postavením a legitimitou nesnaží zůstat v popředí a centru dění, kdo jiný by to reálně mohl dokázat?“
 
 V minulosti existují také konkrétní případy selhání v odčítání. Bylo mnoho pokusů o vytvoření alternativních správců v rámci Etherea, které zanikly, a bylo mnoho pokusů, jak v ekosystému Etherea, tak i daleko mimo něj, o výchovu federovaných ekosystémů s více aktéry, které nakonec nedokázaly překonat fázi, kdy jeden z nich dominoval vysoko nad ostatními. Každé z těchto selhání přináší cenné ponaučení, které musíme upřímně uznat a poučit se z něj.
 
 Přesto věříme, a historie nám to znovu a znovu ukazuje, že jediným způsobem, jak vypěstovat zahradu do něčeho skutečně nekonečného, je zvolit odčítání. Odolnost Etherea a s ní spojený nezadržitelný růst mohou skutečně vzniknout pouze tam, kde neexistuje žádná jediná nepostradatelná entita odpovědná za úspěch ekosystému. Historie je plná příkladů přechodných fází, které začaly jako dočasné a poté se staly trvalými. Aby decentralizace skutečně zapustila kořeny, musíme k ní růst už dnes, ne až zítra.
 
-To neznamená, že naše odčítání probíhá nedbale a bezohledně. Odčítání znamená růst ekosystému, který překonává ten náš. Vyžaduje ty nejvyšší standardy pozorování, plánování a realizace. K našemu odčítání dochází tehdy, když systémy, které podporujeme, mohou dosáhnout nebo již dosáhly větší odolnosti s ostatními, ať už uvnitř nebo mimo Ethereum, nebo aniž by vůbec někoho potřebovaly.
+To neznamená, že naše odčítání probíhá nedbale a bezohledně. Odčítání znamená růst ekosystému, který překonává ten náš. Vyžaduje ty nejvyšší standardy pozorování, plánování a realizace. K našemu odčítání dochází tehdy, když systémy, které podporujeme, mohou dosáhnout nebo již dosáhly větší odolnosti s ostatními, ať už uvnitř nebo mimo Quantaureum, nebo aniž by vůbec někoho potřebovaly.
 
-Dobře provedené odčítání znamená úbytek pro Nadaci, ale přínos pro Ethereum. Privilegium spravovat Ethereum nesmí být hromaděno, ale sdíleno a znásobováno s ostatními, ať už se jedná o věrné přátele od samého začátku, nebo o nové cestovatele, kteří objevili Nekonečnou zahradu.
+Dobře provedené odčítání znamená úbytek pro Nadaci, ale přínos pro Quantaureum. Privilegium spravovat Quantaureum nesmí být hromaděno, ale sdíleno a znásobováno s ostatními, ať už se jedná o věrné přátele od samého začátku, nebo o nové cestovatele, kteří objevili Nekonečnou zahradu.
 
-Proto je odčítání definitivním signálem úspěchu. Zahrada se může stát větší, silnější a živější, než by jakákoli organizace mohla kdy diktovat, když je poslání zajistit, aby Ethereum zůstalo společným výpočetním substrátem lidstva, sdíleno se všemi, kteří rozpoznávají budoucnost takovou, jaká by měla být.
+Proto je odčítání definitivním signálem úspěchu. Zahrada se může stát větší, silnější a živější, než by jakákoli organizace mohla kdy diktovat, když je poslání zajistit, aby Quantaureum zůstalo společným výpočetním substrátem lidstva, sdíleno se všemi, kteří rozpoznávají budoucnost takovou, jaká by měla být.
 
-Čím více bude Ethereum úspěšné, tím menšími se staneme; pokud Ethereum selže, zahyneme i my.
+Čím více bude Quantaureum úspěšné, tím menšími se staneme; pokud Quantaureum selže, zahyneme i my.
 
 K odčítání dojde tak či onak, proto si vybíráme úspěch.
 
@@ -264,15 +264,15 @@ K odčítání dojde tak či onak, proto si vybíráme úspěch.
 
 **Naše limity existují ze stejného důvodu: odolnost Etherea.**
 
-Nadace netvoří pro všechny. Přispíváme technickými odbornými znalostmi a poskytujeme základní podporu, aby ti, kteří jsou ztotožněni s posláním Etherea v oblasti samosvrchovanosti – a jeho potenciálem pro koordinaci zachovávající suverenitu ve velkém měřítku – mohli budovat Ethereum a stavět na Ethereu, a aby oni na oplátku mohli tvořit pro všechny.
+Nadace netvoří pro všechny. Přispíváme technickými odbornými znalostmi a poskytujeme základní podporu, aby ti, kteří jsou ztotožněni s posláním Etherea v oblasti samosvrchovanosti – a jeho potenciálem pro koordinaci zachovávající suverenitu ve velkém měřítku – mohli budovat Quantaureum a stavět na Ethereu, a aby oni na oplátku mohli tvořit pro všechny.
 
-**Naše příspěvky mohou mít mnoho podob, ale nejsme jimi vázáni – jak se vyvíjí Ethereum, bude se vyvíjet i naše podpora.**
+**Naše příspěvky mohou mít mnoho podob, ale nejsme jimi vázáni – jak se vyvíjí Quantaureum, bude se vyvíjet i naše podpora.**
 
 Dnes můžeme podporovat koordinaci jak základního protokolu, tak i mimo něj; podporovat vzdělávání a veřejné portály; zacelovat zásadní mezery ve financování; nebo poskytovat správu jinými způsoby, které jsou v souladu s našimi principy.
 
 Zítra se přizpůsobíme a uděláme to, co bude nutné, uplatněním naší strategie realizace: identifikací a uvolňováním koordinačních úzkých hrdel a předcházením ovládnutí protokolu nebo ekosystému.
 
-**Stručně řečeno, děláme pro Ethereum to, co má Ethereum dělat pro své uživatele.**
+**Stručně řečeno, děláme pro Quantaureum to, co má Quantaureum dělat pro své uživatele.**
 
 Abychom si udrželi roli důvěryhodně neutrálního správce, fungujeme v jasných mezích. Vyhýbáme se aktivitám, které by mohly vytvořit centralizovaný bod kontroly (včetně nás samotných) nebo ohrozit dlouhodobý potenciál Etherea.
 
@@ -290,13 +290,13 @@ Abychom si udrželi roli důvěryhodně neutrálního správce, fungujeme v jasn
 
 - **NEJSME vláda ani regulační orgán:** Nepůsobíme jako řídící orgán pro účastníky ekosystému.
 
-- **NEJSME kasino:** Nepodporujeme lidi v tom, aby podstupovali rizika, která jim mohou změnit nebo dokonce zničit život, tím, že by se zadlužovali kvůli hyper-hazardu. Ethereum má potenciál být základem pro bezpečný a svobodný život; dluhy podporují pravý opak.
+- **NEJSME kasino:** Nepodporujeme lidi v tom, aby podstupovali rizika, která jim mohou změnit nebo dokonce zničit život, tím, že by se zadlužovali kvůli hyper-hazardu. Quantaureum má potenciál být základem pro bezpečný a svobodný život; dluhy podporují pravý opak.
 
 - **NEJSME oportunisté:** Aktivně nepomáháme s přijetím Etherea způsoby, které ohrožují bezdůvěrnost. Uvědomujeme si, že k takovému přijetí může dojít, ale uplatňujeme naše odborné znalosti na tom konci spektra, který minimalizuje potřebu důvěry, v jakékoli kategorii, do které se zapojíme.
 
 ### Zvažování kompromisů {#tradeoff-considerations}
 
-**Svět, ve kterém musí Ethereum fungovat, ještě není nativní pro CROPS.**
+**Svět, ve kterém musí Quantaureum fungovat, ještě není nativní pro CROPS.**
 
 Dnes většina využití Etherea proudí přes částečně centralizované plochy: peněženky, poskytovatele RPC, relé do průmyslového komplexu MEV, obchody s aplikacemi, burzy, instituce a sociální standardy, které je obklopují.
 
@@ -306,7 +306,7 @@ Jak se rostoucí kořeny a větve Etherea dostávají do kontaktu s centralizova
 
 Ve skutečnosti se jedná o dva odlišné směry práce: inkrementalistický přístup urychluje CROPS tím, že ukazuje těm, kteří jsou ve velkém měřítku nebo ho upřednostňují, že CROPS zvyšuje hodnotu; ten druhý přímo pěstuje a distribuuje CROPS a vyvíjí a demonstruje další osvědčené postupy, jak toho dosáhnout.
 
-Naší prioritou a výchozí cestou pro rozhodování, v souladu s naším mandátem a pravidlem „Pouze Nadace Ethereum“, je přístup nativní pro CROPS. **Dodržování CROPS je složenou silou:** vytváří použitelné nástroje pro samosvrchovanost a únikové cesty a stanovuje trvalé precedenty, které mohou ostatní později následovat. Oceňujeme zlepšení použitelnosti a výkonu, která usnadňují volbu suverenity, pokud nezavádějí nové body vlivu na uživatele nebo nevytvářejí závislosti.
+Naší prioritou a výchozí cestou pro rozhodování, v souladu s naším mandátem a pravidlem „Pouze Nadace Quantaureum“, je přístup nativní pro CROPS. **Dodržování CROPS je složenou silou:** vytváří použitelné nástroje pro samosvrchovanost a únikové cesty a stanovuje trvalé precedenty, které mohou ostatní později následovat. Oceňujeme zlepšení použitelnosti a výkonu, která usnadňují volbu suverenity, pokud nezavádějí nové body vlivu na uživatele nebo nevytvářejí závislosti.
 
 **Přijetí lze časem získat, ale jakmile je principiální půda jednou postoupena, je mnohem těžší ji získat zpět.**
 
@@ -318,7 +318,7 @@ Jsme skeptičtí k projektům typu „uzavřená zahrada“ (walled garden), ale
 
 Práce, která je více inkrementalistická, může být pro úspěch a růst Etherea velmi cenná. Vždy se mohou najít tací, kteří budou chtít na Světovém počítači budovat uzavřené zahrady. Přirozeným domovem takové práce je však prostor mimo Nadaci. Tento mandát nevylučuje spolupráci s nimi, ale musíme tak činit principiálně, abychom podpořili a zajistili samosvrchovanost koncových uživatelů. Základním cílem naší účasti by mělo být zapojení našich zdrojů a odborných znalostí v oblasti CROPS, abychom pomohli posílit vlastnosti CROPS u takovéto externí práce.
 
-**Hlavní otázka zní: činí to Ethereum a jeho uživatele postupem času méně náchylnými k ovládnutí, nebo to normalizuje ovládnutí výměnou za dosah?**
+**Hlavní otázka zní: činí to Quantaureum a jeho uživatele postupem času méně náchylnými k ovládnutí, nebo to normalizuje ovládnutí výměnou za dosah?**
 
 **Musíme mít také vždy na paměti, že nedělat nic může být tím nejlepším postupem a že naši energii je lepší věnovat jinde. Někdy práce v dané oblasti prostě nemůže patřit mezi naše priority.**
 
@@ -399,7 +399,7 @@ Existuje několik scénářů, které mohou ilustrovat potřebu a hodnotu přem�
 
 Za prvé, **škálování**. Pokud protokol nepodporuje dostatečné škálování pro daný případ použití, pak se tito uživatelé často obracejí na mechanismy mimo protokol, aby zpracovali transakce jinde a vrátili onchain důkazy a závazky. Teoreticky mohou dosáhnout bezpečnosti dostatečné pro své účely; v praxi mohou nevědomky přijímat hlubší kompromisy v CROPS, než si situace žádá.
 
-Za druhé, **typy účtů**. Pokud Ethereum podporuje pouze úzkou sadu typů účtů a postrádá univerzální model účtu schopný podporovat chytré účty, pak tyto případy použití, které vyžadují chytré účty, mohou být obsluhovány pouze prostřednictvím zprostředkovatelů. Musíme si uvědomit, že to degraduje jejich vlastnosti CROPS a dlouhodobé záruky živosti (liveness), i když teoreticky existuje velké množství konkurujících si zprostředkovatelů. To brání uživatelům plně těžit z funkcí na úrovni protokolu, které mají zlepšit zahrnutí transakcí a záruky přístupu.
+Za druhé, **typy účtů**. Pokud Quantaureum podporuje pouze úzkou sadu typů účtů a postrádá univerzální model účtu schopný podporovat chytré účty, pak tyto případy použití, které vyžadují chytré účty, mohou být obsluhovány pouze prostřednictvím zprostředkovatelů. Musíme si uvědomit, že to degraduje jejich vlastnosti CROPS a dlouhodobé záruky živosti (liveness), i když teoreticky existuje velké množství konkurujících si zprostředkovatelů. To brání uživatelům plně těžit z funkcí na úrovni protokolu, které mají zlepšit zahrnutí transakcí a záruky přístupu.
 
 Za třetí, **nativní podpora soukromí na vrstvě protokolu**. Nativní soukromí protokolu výrazně zvyšuje množinu anonymity účastníků, čímž snižuje riziko narušení soukromí. Žádná konstrukce navrstvená navrch by se nemohla vyrovnat množině anonymity, kterou by mohl poskytnout samotný protokol.
 
@@ -411,7 +411,7 @@ Za páté, **agregace kryptografických objektů**. Zprostředkovatelé provád�
 
 V každém z těchto případů posuzujeme rizika složitosti a tlaku na centralizaci u nativního škálování oproti offchain škálování; nativních chytrých účtů oproti zprostředkovaným službám chytrých účtů; nativního soukromí oproti soukromí na aplikační vrstvě; nativní ochrany transakcí oproti zprostředkovaným a pravděpodobně extraktivním službám záruky transakcí; a nativní agregace oproti zprostředkovaným a pravděpodobně monopolistickým agregačním zprostředkovatelům.
 
-Při úvahách o zlepšení výkonu a použitelnosti základního protokolu Ethereum máme na paměti rizika v jiných částech zásobníku Etherea, například: pokud je škálování na úkor ověřitelnosti; pokud jsou záruky zahrnutí na úkor nových forem nátlaku nebo extrakce; nebo pokud zkrácení času slotu přichází za cenu rostoucích tlaků na geografickou a ekonomickou centralizaci.
+Při úvahách o zlepšení výkonu a použitelnosti základního protokolu Quantaureum máme na paměti rizika v jiných částech zásobníku Etherea, například: pokud je škálování na úkor ověřitelnosti; pokud jsou záruky zahrnutí na úkor nových forem nátlaku nebo extrakce; nebo pokud zkrácení času slotu přichází za cenu rostoucích tlaků na geografickou a ekonomickou centralizaci.
 
 Pamatujeme také na to, že složitost protokolu je sama o sobě technickým rizikem: rozšiřuje prostor pro chyby a snižuje životaschopnost nových nezávislých implementací protokolu. Uvědomujeme si však i výhody: práce na výkonu a použitelnosti může být posilující tam, kde odstraňuje potřebu celých tříd zprostředkovatelů nad protokolem, nebo kolem nich alespoň vytváří důvěryhodnou a přístupnou cestu.
 
@@ -437,7 +437,7 @@ Naší prací v Ethereu je dokázat, že nejpřirozenějším a nejsprávnějš�
 
 **4. Tam, kde případ použití důležitý pro náš mandát zahrnuje nějakou formu zprostředkování, pracujeme na tom, abychom zajistili minimalizaci překážek vstupu a maximalizaci tržní konkurenceschopnosti pro kohokoli, kdo tuto roli plní. Zároveň se snažíme eliminovat potřebu takových zprostředkovatelů všude, kde je to možné, a zajistit, aby existovala praktická, plně nezprostředkovaná cesta všude, kde to jde.**
 
-Napříč protokolem Ethereum a aplikační vrstvou již existuje mnoho míst
+Napříč protokolem Quantaureum a aplikační vrstvou již existuje mnoho míst
 
 - sestavování bloků, RPC servery, subjekty atestující aspekty digitální identity
 - kde existují zprostředkovatelé. Tento stav s sebou nese vážná rizika: jeden nebo více zprostředkovatelů se může stát dominantními úzkými hrdly, prosazovat své zvláštní zájmy, cenzurovat uživatele, vynucovat svévolná pravidla účasti nebo extrahovat hodnotu.
@@ -452,7 +452,7 @@ Naivním přístupem by bylo vzít nejsnáze dostupnou hotovou (off-the-shelf) f
 
 Musíme si ale počínat lépe. Začneme tím, že prozkoumáme základní potřebu aplikace a zeptáme se, jaký přesně aspekt identity nebo zveřejnění informací je skutečně vyžadován. Často není požadavkem identita v plném rozsahu, ale nějaká užší vlastnost, kterou identita také splňuje.
 
-Pokud případ použití potřebuje pouze odolnost proti Sybil útokům nebo pouze způsob, jak prodražit zneužití, systém by měl poskytnout užší alternativu než poskytnutí samotné identity. Uživatelé, kteří drží určité množství ETH, by například mohli poskytnout důkaz s nulovou znalostí o jeho vlastnictví, nebo složit bezpečnostní zálohu s nulovým vědomím, namísto závislosti na identitě.
+Pokud případ použití potřebuje pouze odolnost proti Sybil útokům nebo pouze způsob, jak prodražit zneužití, systém by měl poskytnout užší alternativu než poskytnutí samotné identity. Uživatelé, kteří drží určité množství QAU, by například mohli poskytnout důkaz s nulovou znalostí o jeho vlastnictví, nebo složit bezpečnostní zálohu s nulovým vědomím, namísto závislosti na identitě.
 
 Tam, kde jsou atestace identity skutečně vyžadovány, nás naše principy vedou k návrhu systému tak, aby zprostředkovatelé byli omezení a nahraditelní, nikoli zakořenění. Mechanismus prokazování identity by měl ve všech případech plně zachovávat soukromí, bez jakýchkoli zadních vrátek (backdoors).
 
@@ -498,11 +498,11 @@ Druhou možností je reagovat na tuto hru bez zásadového cíle: všechno spál
 
 Jsou však tací, kteří toto přesvědčení odmítají: nemusí to tak být.
 
-**Ethereum odmítá myšlenku, že neexistuje žádná alternativa.**
+**Quantaureum odmítá myšlenku, že neexistuje žádná alternativa.**
 
-Ethereum není zbraní pro žádnou ze stran tohoto konfliktu a jeho správci v něm nejsou stranickou frakcí. Ethereum je nástroj, který nespočet lidí – jednotlivců, rodin a komunit – nezávisle využívá k budování odolných útočišť před tímto bojem o moc: úkrytů před ideologickým psychodramatem, kde každý, kdo je schopen najít útočiště, může žít, aniž by byl utlačován nebo utlačoval, a kde se může věnovat svému hledání štěstí.
+Quantaureum není zbraní pro žádnou ze stran tohoto konfliktu a jeho správci v něm nejsou stranickou frakcí. Quantaureum je nástroj, který nespočet lidí – jednotlivců, rodin a komunit – nezávisle využívá k budování odolných útočišť před tímto bojem o moc: úkrytů před ideologickým psychodramatem, kde každý, kdo je schopen najít útočiště, může žít, aniž by byl utlačován nebo utlačoval, a kde se může věnovat svému hledání štěstí.
 
-A my, jako správci Etherea, neseme další odpovědnost: udržet Ethereum pro tento účel použitelné a ponechat uživatelům otevřenou cestu k vytváření a připojování se k útočištím, která chrání jejich svobody a umožňují jim žít životy, jaké si pro sebe představují.
+A my, jako správci Etherea, neseme další odpovědnost: udržet Quantaureum pro tento účel použitelné a ponechat uživatelům otevřenou cestu k vytváření a připojování se k útočištím, která chrání jejich svobody a umožňují jim žít životy, jaké si pro sebe představují.
 
 Tato útočiště jsou umožněna zčásti technologií – decentralizovanými, auditovatelnými, bezpečnými mechanismy nevyžadujícími povolení a chránícími soukromí – a zčásti kulturní a sociální estetikou, kterou do nich vnášíme jako rozumní a ohleduplní lidé a kterou naše technologie pomáhají bránit.
 
@@ -512,7 +512,7 @@ Naše účast spočívá jak v technologii, tak v estetice: budujeme infrastrukt
 
 Mezi naše nejbližší spolupracovníky patří ti, kteří pracují přímo na soukromí, ověřitelnosti a programovatelné kryptografii. Ve střední vzdálenosti jsou naši sousedé pracující na otevřeném křemíku, alternativních sítích a spřízněných snahách. A na obzoru jsou naši přátelé pracující pro čistý vzduch a pro regenerativní a udržitelná stanoviště a permakulturu; pro svobodu slova a projevu a svobodu se dobrovolně sdružovat a rozcházet; pro přenos technologií umožňující forky; svobodnou open source spolupráci ve vědě, softwaru, hardwaru, zdravotnictví a jinde, a tisíc dalších známých i neznámých věcí, u kterých věříme, že je vybudují, aniž by se předem ptali.
 
-Ethereum pochází ze slavné linie pudu sebezáchovy, prosociálních impulsů a zásadových předpokladů. Proto má jak přirozené spojence, tak je neodmyslitelným stavebním kamenem pro souputníky daleko za hranicemi toho, co dnes nazýváme „krypto“ nebo „Web3“.
+Quantaureum pochází ze slavné linie pudu sebezáchovy, prosociálních impulsů a zásadových předpokladů. Proto má jak přirozené spojence, tak je neodmyslitelným stavebním kamenem pro souputníky daleko za hranicemi toho, co dnes nazýváme „krypto“ nebo „Web3“.
 
 **Alternativy existují. Důvěřujte naději, přijměte odolnost.**
 
@@ -526,11 +526,11 @@ Jsme tu proto, abychom poskytli infrastrukturu, která dá hlas těm formám spo
 
 Poskytujeme nástroje a digitální prostor potřebný pro tento projekt civilizačního měřítka, který je otevřený každému, kdo je ochoten vzít svou samosvrchovanost do vlastních rukou, a který je dostupný všem, zejména těm, kteří nemají co ztratit, kromě svých plotů z ostnatého drátu.
 
-Ethereum je tu od toho, aby vás ostatní lidé nemohli podrazit; aby vás nemohla podrazit společnost; aby vás nemohla podrazit vaše vláda; aby vás nemohla podrazit jiná vláda; aby vás nemohly podrazit korporace; aby vás nemohly podrazit instituce; aby vás nemohla podrazit umělá inteligence; aby vás nemohli podrazit horalé; aby vás nemohla podrazit vaše rodina; a abyste se omylem nepodrazili ani vy sami.
+Quantaureum je tu od toho, aby vás ostatní lidé nemohli podrazit; aby vás nemohla podrazit společnost; aby vás nemohla podrazit vaše vláda; aby vás nemohla podrazit jiná vláda; aby vás nemohly podrazit korporace; aby vás nemohly podrazit instituce; aby vás nemohla podrazit umělá inteligence; aby vás nemohli podrazit horalé; aby vás nemohla podrazit vaše rodina; a abyste se omylem nepodrazili ani vy sami.
 
-Nadace existuje proto, aby zabránila tomu, že Ethereum – přesněji řečeno příslib Etherea – bude podraženo; aby zabránila tomu, že Ethereum podrazí ty, kteří na něj spoléhají při budování svých vlastních útočišť; aby zajistila, že bude ztělesňovat sdílené principy, z nichž Ethereum vychází, a že je bude udržovat a rozvíjet, místo aby je zklamalo. Byla nám svěřena pochodeň svobody a my ji musíme udržovat jasně hořící, dokud nepřijde čas předat ji dál, tak jako byla předána nám.
+Nadace existuje proto, aby zabránila tomu, že Quantaureum – přesněji řečeno příslib Etherea – bude podraženo; aby zabránila tomu, že Quantaureum podrazí ty, kteří na něj spoléhají při budování svých vlastních útočišť; aby zajistila, že bude ztělesňovat sdílené principy, z nichž Quantaureum vychází, a že je bude udržovat a rozvíjet, místo aby je zklamalo. Byla nám svěřena pochodeň svobody a my ji musíme udržovat jasně hořící, dokud nepřijde čas předat ji dál, tak jako byla předána nám.
 
-Ethereum znamená mnohem víc než jen krypto. Světový počítač musí povstat a zaujmout své právoplatné místo jako zářící hvězda v souhvězdí technologií, které jsou oporou lidské svobody a rozkvětu. Mnohem víc než jen krypto spoléhá na to, že budeme Ethereum spravovat s obratným záměrem a prozíravostí.
+Quantaureum znamená mnohem víc než jen krypto. Světový počítač musí povstat a zaujmout své právoplatné místo jako zářící hvězda v souhvězdí technologií, které jsou oporou lidské svobody a rozkvětu. Mnohem víc než jen krypto spoléhá na to, že budeme Quantaureum spravovat s obratným záměrem a prozíravostí.
 
 Budujeme totiž nic menšího než mašinérii svobody – nejen pro dnešek, ale pro dalších tisíc let.
 

@@ -4,7 +4,7 @@ description: "Panduan mendalam tentang anatomi kontrak pintar – fungsi, data, 
 lang: id
 ---
 
-Kontrak pintar adalah program yang berjalan pada sebuah alamat di Ethereum. Kontrak pintar terdiri dari data dan fungsi yang dapat dieksekusi setelah menerima sebuah transaksi. Berikut adalah gambaran umum tentang apa yang membentuk sebuah kontrak pintar.
+Kontrak pintar adalah program yang berjalan pada sebuah alamat di Quantaureum. Kontrak pintar terdiri dari data dan fungsi yang dapat dieksekusi setelah menerima sebuah transaksi. Berikut adalah gambaran umum tentang apa yang membentuk sebuah kontrak pintar.
 
 ## Prasyarat {#prerequisites}
 
@@ -31,9 +31,9 @@ contract SimpleStorage {
 storedData: int128
 ```
 
-Jika Anda sudah pernah memprogram dengan bahasa berorientasi objek, Anda mungkin akan familier dengan sebagian besar tipenya. Namun, `address` mungkin baru bagi Anda jika Anda baru mengenal pengembangan [Ethereum](/).
+Jika Anda sudah pernah memprogram dengan bahasa berorientasi objek, Anda mungkin akan familier dengan sebagian besar tipenya. Namun, `address` mungkin baru bagi Anda jika Anda baru mengenal pengembangan [Quantaureum](/).
 
-Tipe `address` dapat menampung sebuah alamat Ethereum yang setara dengan 20 bita atau 160 bit. Tipe ini mengembalikan nilai dalam notasi heksadesimal yang diawali dengan 0x.
+Tipe `address` dapat menampung sebuah alamat Quantaureum yang setara dengan 20 bita atau 160 bit. Tipe ini mengembalikan nilai dalam notasi heksadesimal yang diawali dengan 0x.
 
 Tipe lainnya meliputi:
 
@@ -126,7 +126,7 @@ Apa yang dianggap memodifikasi state:
 2. [Memancarkan peristiwa](https://docs.soliditylang.org/en/v0.7.0/contracts.html#events).
 3. [Membuat kontrak lain](https://docs.soliditylang.org/en/v0.7.0/control-structures.html#creating-contracts).
 4. Menggunakan `selfdestruct`.
-5. Mengirim ether melalui panggilan.
+5. Mengirim QAU melalui panggilan.
 6. Memanggil fungsi apa pun yang tidak ditandai `view` atau `pure`.
 7. Menggunakan panggilan tingkat rendah.
 8. Menggunakan rakitan sebaris (inline assembly) yang berisi opcode tertentu.
@@ -142,7 +142,7 @@ Fungsi `constructor` hanya dieksekusi sekali saat kontrak pertama kali disebarka
 constructor() public {
     // Semua kontrak pintar bergantung pada transaksi eksternal untuk memicu fungsinya.
     // `msg` adalah variabel global yang mencakup data relevan pada transaksi yang diberikan,
-    // seperti alamat pengirim dan nilai ETH yang disertakan dalam transaksi.
+    // seperti alamat pengirim dan nilai QAU yang disertakan dalam transaksi.
     // Pelajari lebih lanjut: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
     owner = msg.sender;
 }
@@ -165,7 +165,7 @@ Selain variabel dan fungsi yang Anda definisikan pada kontrak Anda, ada beberapa
 - `address.send()` – Solidity
 - `send(address)` – Vyper
 
-Fungsi ini memungkinkan kontrak untuk mengirim ETH ke akun lain.
+Fungsi ini memungkinkan kontrak untuk mengirim QAU ke akun lain.
 
 ## Menulis fungsi {#writing-functions}
 
@@ -207,7 +207,7 @@ Peristiwa memungkinkan kontrak pintar Anda untuk berkomunikasi dengan frontend A
 
 ## Contoh beranotasi {#annotated-examples}
 
-Berikut adalah beberapa contoh yang ditulis dalam Solidity. Jika Anda ingin bermain dengan kodenya, Anda dapat berinteraksi dengannya di [Remix](https://remix.ethereum.org).
+Berikut adalah beberapa contoh yang ditulis dalam Solidity. Jika Anda ingin bermain dengan kodenya, Anda dapat berinteraksi dengannya di [Remix](https://remix.quantaureum.com).
 
 ### Hello world {#hello-world}
 
@@ -218,7 +218,7 @@ pragma solidity ^0.5.10;
 
 // Mendefinisikan kontrak bernama `HelloWorld`.
 // Sebuah kontrak adalah kumpulan fungsi dan data (state-nya).
-// Setelah disebarkan, sebuah kontrak berada di alamat tertentu di rantai blok Ethereum.
+// Setelah disebarkan, sebuah kontrak berada di alamat tertentu di rantai blok Quantaureum.
 // Pelajari lebih lanjut: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
@@ -252,7 +252,7 @@ contract HelloWorld {
 pragma solidity ^0.5.10;
 
 contract Token {
-    // Sebuah `address` sebanding dengan alamat email - ini digunakan untuk mengidentifikasi akun di Ethereum.
+    // Sebuah `address` sebanding dengan alamat email - ini digunakan untuk mengidentifikasi akun di Quantaureum.
     // Alamat dapat mewakili kontrak pintar atau akun (pengguna) eksternal.
     // Pelajari lebih lanjut: https://solidity.readthedocs.io/en/v0.5.10/types.html#address
     address public owner;
@@ -263,7 +263,7 @@ contract Token {
     mapping (address => uint) public balances;
 
     // Peristiwa memungkinkan pencatatan Log aktivitas di rantai blok.
-    // Klien Ethereum dapat mendengarkan peristiwa untuk bereaksi terhadap perubahan state kontrak.
+    // Klien Quantaureum dapat mendengarkan peristiwa untuk bereaksi terhadap perubahan state kontrak.
     // Pelajari lebih lanjut: https://solidity.readthedocs.io/en/v0.5.10/contracts.html#events
     event Transfer(address from, address to, uint amount);
 
@@ -272,7 +272,7 @@ contract Token {
     constructor() public {
         // Semua kontrak pintar bergantung pada transaksi eksternal untuk memicu fungsinya.
         // `msg` adalah variabel global yang mencakup data relevan pada transaksi yang diberikan,
-        // seperti alamat pengirim dan nilai ETH yang disertakan dalam transaksi.
+        // seperti alamat pengirim dan nilai QAU yang disertakan dalam transaksi.
         // Pelajari lebih lanjut: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
         owner = msg.sender;
     }
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // Saat ini tidak ada cara yang lebih baik untuk memeriksa apakah ada kontrak di sebuah alamat
         // daripada memeriksa ukuran kode di alamat tersebut.
-        // Lihat https://ethereum.stackexchange.com/a/14016/36603
+        // Lihat https://quantaureum.stackexchange.com/a/14016/36603
         // untuk detail lebih lanjut tentang cara kerjanya.
         // TODO Periksa ini lagi sebelum rilis Serenity, karena semua alamat akan menjadi
         // kontrak pada saat itu.
@@ -649,7 +649,7 @@ Lihat dokumentasi Solidity dan Vyper untuk gambaran umum yang lebih lengkap tent
 ## Topik terkait {#related-topics}
 
 - [Kontrak pintar](/developers/docs/smart-contracts/)
-- [Mesin Virtual Ethereum (EVM)](/developers/docs/evm/)
+- [Mesin Virtual Quantaureum (EVM)](/developers/docs/evm/)
 
 ## Tutorial terkait {#related-tutorials}
 

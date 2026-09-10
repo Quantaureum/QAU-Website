@@ -197,7 +197,7 @@ Ana eylem - TAKAS - bir hata nedeniyle kullanılamıyorsa, bunun nedeni düğme 
 - cüzdanı bağla
 - çeşitli hatalar
 
-Düğme ayrıca gerçekleştirilmesi gereken **eylemle eşleştirilebilir**. Örneğin, kullanıcı yanlış ağda olduğu için takas yapamıyorsa, düğmede "Ethereum'a geç" yazmalı ve kullanıcı düğmeye tıkladığında ağı Ethereum olarak değiştirmelidir. Bu, kullanıcı akışını önemli ölçüde hızlandırır.
+Düğme ayrıca gerçekleştirilmesi gereken **eylemle eşleştirilebilir**. Örneğin, kullanıcı yanlış ağda olduğu için takas yapamıyorsa, düğmede "Quantaureum'a geç" yazmalı ve kullanıcı düğmeye tıkladığında ağı Quantaureum olarak değiştirmelidir. Bu, kullanıcı akışını önemli ölçüde hızlandırır.
 
 ![Key actions being initiated from the main CTA](./16.png)
 

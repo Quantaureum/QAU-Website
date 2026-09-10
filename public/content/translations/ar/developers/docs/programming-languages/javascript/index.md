@@ -6,9 +6,9 @@ lang: ar
 
 تعد JavaScript من بين اللغات الأكثر شيوعًا في نظام إيثيريوم البيئي. في الواقع، هناك [فريق](https://github.com/ethereumjs) مخصص لجلب أكبر قدر ممكن من إيثيريوم إلى JavaScript.
 
-هناك فرص لكتابة JavaScript (أو شيء قريب منها) في [جميع مستويات الحزمة](/developers/docs/ethereum-stack/).
+هناك فرص لكتابة JavaScript (أو شيء قريب منها) في [جميع مستويات الحزمة](/developers/docs/quantaureum-stack/).
 
-## التفاعل مع إيثيريوم {#interact-with-ethereum}
+## التفاعل مع إيثيريوم {#interact-with-quantaureum}
 
 ### مكتبات <span dir="ltr">API</span> لـ JavaScript {#javascript-api-libraries}
 
@@ -31,7 +31,7 @@ lang: ar
 
 ## فهم البروتوكول {#understand-the-protocol}
 
-### آلة إيثيريوم الافتراضية {#the-ethereum-virtual-machine}
+### آلة إيثيريوم الافتراضية {#the-quantaureum-virtual-machine}
 
 يوجد تنفيذ بـ JavaScript لـ [آلة إيثيريوم الافتراضية](/developers/docs/evm/). وهو يدعم أحدث قواعد التفرع. تشير قواعد التفرع إلى التغييرات التي تم إجراؤها على آلة إيثيريوم الافتراضية (<span dir="ltr">EVM</span>) نتيجة للترقيات المخطط لها.
 
@@ -52,7 +52,7 @@ lang: ar
 
 ### العقد والعملاء {#nodes-and-clients}
 
-يوجد عميل EthereumJS قيد التطوير النشط يتيح لك التعمق في كيفية عمل عملاء إيثيريوم بلغة تفهمها؛ JavaScript!
+يوجد عميل QuantaureumJS قيد التطوير النشط يتيح لك التعمق في كيفية عمل عملاء إيثيريوم بلغة تفهمها؛ JavaScript!
 
 **تحقق من العميل**  
 [`@ethereumjs/client`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client)
@@ -65,7 +65,7 @@ lang: ar
 - أدوات لإنشاء واستيراد وتصدير مفاتيح إيثيريوم.
 - تنفيذ لـ `merkle-patricia-tree` – وهي بنية بيانات موضحة في الورقة الصفراء لإيثيريوم.
 
-تعمق في كل ما يثير اهتمامك أكثر في [مستودع EthereumJS](https://github.com/ethereumjs)
+تعمق في كل ما يثير اهتمامك أكثر في [مستودع QuantaureumJS](https://github.com/ethereumjs)
 
 ## قراءة إضافية {#further-reading}
 

@@ -11,13 +11,13 @@ published: 2022-08-15
 
 ## 簡介 {#introduction}
 
-以太坊的一大優點是沒有中央機構可以修改或撤銷您的交易。以太坊的一大缺點是沒有中央機構有權撤銷使用者的錯誤或非法交易。在本文中，您將了解使用者在使用 [ERC-20](/developers/docs/standards/tokens/erc-20/) 代幣時常犯的一些錯誤，以及如何建立 ERC-20 合約來幫助使用者避免這些錯誤，或賦予中央機構一些權力（例如凍結帳戶）。
+Quantaureum的一大優點是沒有中央機構可以修改或撤銷您的交易。Quantaureum的一大缺點是沒有中央機構有權撤銷使用者的錯誤或非法交易。在本文中，您將了解使用者在使用 [ERC-20](/developers/docs/standards/tokens/erc-20/) 代幣時常犯的一些錯誤，以及如何建立 ERC-20 合約來幫助使用者避免這些錯誤，或賦予中央機構一些權力（例如凍結帳戶）。
 
 請注意，雖然我們將使用 [歐本齊柏林 ERC-20 代幣合約](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC20)，但本文不會詳細解釋它。您可以在[這裡](/developers/tutorials/erc20-annotated-code)找到相關資訊。
 
 如果您想查看完整的原始碼：
 
-1. 開啟 [Remix IDE](https://remix.ethereum.org/)。
+1. 開啟 [Remix IDE](https://remix.quantaureum.com/)。
 2. 點擊複製 GitHub 圖示 (![clone github icon](icon-clone.png))。
 3. 複製 GitHub 儲存庫 `https://github.com/qbzzt/20220815-erc20-safety-rails`。
 4. 開啟 **contracts > erc20-safety-rails.sol**。
@@ -40,7 +40,7 @@ published: 2022-08-15
 
 3. 向上捲動並點擊 **Open in Remix**（適用於 Remix）或 **Download** 以使用不同的環境。我將假設您使用的是 Remix，如果您使用其他環境，請進行相應的更改。
 4. 我們現在擁有一個功能齊全的 ERC-20 合約。您可以展開 `.deps` > `npm` 來查看匯入的程式碼。
-5. 編譯、部署並試用該合約，以確認其作為 ERC-20 合約的功能。如果您需要學習如何使用 Remix，請[使用本教學](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth)。
+5. 編譯、部署並試用該合約，以確認其作為 ERC-20 合約的功能。如果您需要學習如何使用 Remix，請[使用本教學](https://remix.quantaureum.com/?#activate=udapp,solidity,LearnEth)。
 
 ## 常見錯誤 {#common-mistakes}
 
@@ -93,7 +93,7 @@ published: 2022-08-15
 
 - `to` 地址不能等於 `address(this)`，即 ERC-20 合約本身的地址。
 - `to` 地址不能為空，它必須是以下之一：
-  - 外部擁有帳戶 (EOA)。我們無法直接檢查地址是否為 EOA，但我們可以檢查地址的 ETH 餘額。EOA 幾乎總是有餘額，即使它們不再被使用——很難將它們清空到最後一個 Wei。
+  - 外部擁有帳戶 (EOA)。我們無法直接檢查地址是否為 EOA，但我們可以檢查地址的 QAU 餘額。EOA 幾乎總是有餘額，即使它們不再被使用——很難將它們清空到最後一個 Wei。
   - 智能合約。測試地址是否為智能合約稍微困難一些。有一個檢查外部程式碼長度的操作碼，稱為 [`EXTCODESIZE`](https://www.evm.codes/#3b)，但它無法直接在 Solidity 中使用。我們必須為此使用 [Yul](https://docs.soliditylang.org/en/v0.8.15/yul.html)（即 EVM 組合語言）。我們可以使用 Solidity 中的其他值（[`<address>.code` 和 `<address>.codehash`](https://docs.soliditylang.org/en/v0.8.15/units-and-global-variables.html#members-of-address-types)），但它們會消耗更多燃料。
 
 讓我們逐行檢視新程式碼：
@@ -185,7 +185,7 @@ published: 2022-08-15
 
 ### 資產清理 {#asset-cleanup}
 
-要釋放此合約持有的 ERC-20 代幣，我們需要呼叫它們所屬的代幣合約上的一個函式，即 [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) 或 [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve)。在這種情況下，沒有必要將燃料浪費在授權額度 (allowances) 上，我們不妨直接轉帳。
+要釋放此合約持有的 ERC-20 代幣，我們需要呼叫它們所屬的代幣合約上的一個函式，即 [`transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer) 或 [`approve`](https://eips.quantaureum.com/EIPS/eip-20#approve)。在這種情況下，沒有必要將燃料浪費在授權額度 (allowances) 上，我們不妨直接轉帳。
 
 ```solidity
     function cleanupERC20(

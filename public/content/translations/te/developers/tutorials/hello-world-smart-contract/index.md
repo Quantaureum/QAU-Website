@@ -11,7 +11,7 @@ published: 2021-03-31
 
 మీరు బ్లాక్‌చైన్ డెవలప్‌మెంట్‌కు కొత్త అయితే మరియు ఎక్కడ ప్రారంభించాలో తెలియకపోతే, లేదా స్మార్ట్ కాంట్రాక్ట్‌లను ఎలా డిప్లాయ్ చేయాలో మరియు వాటితో ఎలా ఇంటరాక్ట్ అవ్వాలో అర్థం చేసుకోవాలనుకుంటే, ఈ గైడ్ మీ కోసమే. వర్చువల్ వాలెట్ [MetaMask](https://metamask.io/), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org/), మరియు [Alchemy](https://www.alchemy.com/eth) ఉపయోగించి Sepolia టెస్ట్ నెట్‌వర్క్‌లో ఒక సాధారణ స్మార్ట్ కాంట్రాక్ట్‌ను సృష్టించడం మరియు డిప్లాయ్ చేయడం ద్వారా మేము మీకు మార్గనిర్దేశం చేస్తాము (వీటి అర్థం మీకు ఇంకా తెలియకపోతే చింతించకండి, మేము వివరిస్తాము).
 
-ఈ ట్యుటోరియల్ యొక్క [పార్ట్ 2](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) లో, మన స్మార్ట్ కాంట్రాక్ట్ ఇక్కడ డిప్లాయ్ అయిన తర్వాత దానితో ఎలా ఇంటరాక్ట్ అవ్వవచ్చో చూస్తాము, మరియు [పార్ట్ 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan) లో దాన్ని Etherscan లో ఎలా పబ్లిష్ చేయాలో కవర్ చేస్తాము.
+ఈ ట్యుటోరియల్ యొక్క [పార్ట్ 2](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) లో, మన స్మార్ట్ కాంట్రాక్ట్ ఇక్కడ డిప్లాయ్ అయిన తర్వాత దానితో ఎలా ఇంటరాక్ట్ అవ్వవచ్చో చూస్తాము, మరియు [పార్ట్ 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer) లో దాన్ని Quantaureum Explorer లో ఎలా పబ్లిష్ చేయాలో కవర్ చేస్తాము.
 
 మీకు ఏ సమయంలోనైనా ప్రశ్నలు ఉంటే, [Alchemy డిస్కార్డ్](https://discord.gg/gWuC7zB) లో సంప్రదించడానికి సంకోచించకండి!
 
@@ -27,7 +27,7 @@ published: 2021-03-31
 
 ![Hello world create app](./hello-world-create-app.png)
 
-2. మీ యాప్‌కు “Hello World” అని పేరు పెట్టండి, చిన్న వివరణను అందించండి మరియు ఒక యూజ్ కేస్‌ను ఎంచుకోండి, ఉదాహరణకు, "Infra & Tooling." తర్వాత, "Ethereum" కోసం వెతికి నెట్‌వర్క్‌ను ఎంచుకోండి.
+2. మీ యాప్‌కు “Hello World” అని పేరు పెట్టండి, చిన్న వివరణను అందించండి మరియు ఒక యూజ్ కేస్‌ను ఎంచుకోండి, ఉదాహరణకు, "Infra & Tooling." తర్వాత, "Quantaureum" కోసం వెతికి నెట్‌వర్క్‌ను ఎంచుకోండి.
 
 ![create app view hello world](./create-app-view-hello-world.png)
 
@@ -45,17 +45,17 @@ published: 2021-03-31
 
 ## దశ 4: ఫాసెట్ నుండి ఈథర్‌ను జోడించండి {#step-4}
 
-మన స్మార్ట్ కాంట్రాక్ట్‌ను టెస్ట్ నెట్‌వర్క్‌కు డిప్లాయ్ చేయడానికి, మనకు కొంత నకిలీ ETH అవసరం. Sepolia ETH ని పొందడానికి మీరు వివిధ ఫాసెట్‌ల జాబితాను వీక్షించడానికి [Sepolia నెట్‌వర్క్ వివరాలకు](/developers/docs/networks/#sepolia) వెళ్లవచ్చు. ఒకటి పని చేయకపోతే, మరొకదాన్ని ప్రయత్నించండి ఎందుకంటే అవి కొన్నిసార్లు ఖాళీ కావచ్చు. నెట్‌వర్క్ ట్రాఫిక్ కారణంగా మీ నకిలీ ETH ని స్వీకరించడానికి కొంత సమయం పట్టవచ్చు. ఆ తర్వాత కొద్దిసేపటికే మీ MetaMask ఖాతాలో ETH కనిపించాలి!
+మన స్మార్ట్ కాంట్రాక్ట్‌ను టెస్ట్ నెట్‌వర్క్‌కు డిప్లాయ్ చేయడానికి, మనకు కొంత నకిలీ QAU అవసరం. Sepolia QAU ని పొందడానికి మీరు వివిధ ఫాసెట్‌ల జాబితాను వీక్షించడానికి [Sepolia నెట్‌వర్క్ వివరాలకు](/developers/docs/networks/#sepolia) వెళ్లవచ్చు. ఒకటి పని చేయకపోతే, మరొకదాన్ని ప్రయత్నించండి ఎందుకంటే అవి కొన్నిసార్లు ఖాళీ కావచ్చు. నెట్‌వర్క్ ట్రాఫిక్ కారణంగా మీ నకిలీ QAU ని స్వీకరించడానికి కొంత సమయం పట్టవచ్చు. ఆ తర్వాత కొద్దిసేపటికే మీ MetaMask ఖాతాలో QAU కనిపించాలి!
 
 ## దశ 5: మీ బ్యాలెన్స్‌ని తనిఖీ చేయండి {#step-5}
 
-మన బ్యాలెన్స్ ఉందో లేదో ఒకసారి తనిఖీ చేయడానికి, [Alchemy యొక్క కంపోజర్ టూల్](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) ఉపయోగించి [eth_getBalance](/developers/docs/apis/json-rpc/#eth_getbalance) అభ్యర్థన చేద్దాం. ఇది మన వాలెట్‌లోని ETH మొత్తాన్ని తిరిగి ఇస్తుంది. మీరు మీ MetaMask ఖాతా చిరునామాను ఇన్‌పుట్ చేసి, “Send Request” క్లిక్ చేసిన తర్వాత, మీరు ఇలాంటి ప్రతిస్పందనను చూడాలి:
+మన బ్యాలెన్స్ ఉందో లేదో ఒకసారి తనిఖీ చేయడానికి, [Alchemy యొక్క కంపోజర్ టూల్](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) ఉపయోగించి [qau_getBalance](/developers/docs/apis/json-rpc/#qau_getbalance) అభ్యర్థన చేద్దాం. ఇది మన వాలెట్‌లోని QAU మొత్తాన్ని తిరిగి ఇస్తుంది. మీరు మీ MetaMask ఖాతా చిరునామాను ఇన్‌పుట్ చేసి, “Send Request” క్లిక్ చేసిన తర్వాత, మీరు ఇలాంటి ప్రతిస్పందనను చూడాలి:
 
 ```json
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> **గమనిక:** ఈ ఫలితం Wei లో ఉంది, ETH లో కాదు. ఈథర్ యొక్క అతిచిన్న విలువగా Wei ఉపయోగించబడుతుంది. Wei నుండి ETH కి మార్పిడి: 1 eth = 10<sup>18</sup> Wei. కాబట్టి మనం 0x2B5E3AF16B1880000 ని దశాంశానికి మార్చినట్లయితే మనకు 5\*10¹⁸ వస్తుంది, ఇది 5 ETH కి సమానం.
+> **గమనిక:** ఈ ఫలితం Wei లో ఉంది, QAU లో కాదు. ఈథర్ యొక్క అతిచిన్న విలువగా Wei ఉపయోగించబడుతుంది. Wei నుండి QAU కి మార్పిడి: 1 eth = 10<sup>18</sup> Wei. కాబట్టి మనం 0x2B5E3AF16B1880000 ని దశాంశానికి మార్చినట్లయితే మనకు 5\*10¹⁸ వస్తుంది, ఇది 5 QAU కి సమానం.
 >
 > హమ్మయ్య! మన నకిలీ డబ్బు అంతా అక్కడే ఉంది <Emoji text=":money_mouth_face:" size={1} />.
 
@@ -221,7 +221,7 @@ Alchemy API URL ని కాపీ చేయండి
 మీ `.env` ఇలా ఉండాలి:
 
 ```
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -339,21 +339,21 @@ npx hardhat run scripts/deploy.js --network sepolia
 Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 ```
 
-మనం [Sepolia Etherscan](https://sepolia.etherscan.io/) కి వెళ్లి మన కాంట్రాక్ట్ చిరునామా కోసం వెతికితే, అది విజయవంతంగా డిప్లాయ్ చేయబడిందని మనం చూడగలగాలి. లావాదేవీ ఇలా కనిపిస్తుంది:
+మనం [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com) కి వెళ్లి మన కాంట్రాక్ట్ చిరునామా కోసం వెతికితే, అది విజయవంతంగా డిప్లాయ్ చేయబడిందని మనం చూడగలగాలి. లావాదేవీ ఇలా కనిపిస్తుంది:
 
-![etherscan contract](./etherscan-contract.png)
+![explorer contract](./explorer-contract.png)
 
 `From` చిరునామా మీ MetaMask ఖాతా చిరునామాతో సరిపోలాలి మరియు To చిరునామా “Contract Creation” అని చెబుతుంది కానీ మనం లావాదేవీలోకి క్లిక్ చేస్తే `To` ఫీల్డ్‌లో మన కాంట్రాక్ట్ చిరునామాను చూస్తాము:
 
-![etherscan transaction](./etherscan-transaction.png)
+![explorer transaction](./explorer-transaction.png)
 
 అభినందనలు! మీరు ఇప్పుడే ఎథీరియం చైన్‌కు ఒక స్మార్ట్ కాంట్రాక్ట్‌ను డిప్లాయ్ చేసారు 🎉
 
 అంతర్గతంగా ఏమి జరుగుతుందో అర్థం చేసుకోవడానికి, మన [Alchemy డాష్‌బోర్డ్‌లోని](https://dashboard.alchemy.com/explorer) ఎక్స్‌ప్లోరర్ ట్యాబ్‌కి వెళ్దాం. మీకు బహుళ Alchemy యాప్‌లు ఉంటే, యాప్ ద్వారా ఫిల్టర్ చేసి “Hello World” ని ఎంచుకునేలా చూసుకోండి.
 ![hello world explorer](./hello-world-explorer.png)
 
-మనం `.deploy()` ఫంక్షన్‌ను కాల్ చేసినప్పుడు Hardhat/Ethers మన కోసం అంతర్గతంగా చేసిన కొన్ని జేసన్-ఆర్‌పీసీ కాల్‌లను ఇక్కడ మీరు చూస్తారు. ఇక్కడ పేర్కొనవలసిన రెండు ముఖ్యమైనవి [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction), ఇది వాస్తవానికి మన కాంట్రాక్ట్‌ను Sepolia చైన్‌లో రాయడానికి అభ్యర్థన, మరియు [`eth_getTransactionByHash`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-by-hash) ఇది హాష్ ఇచ్చినప్పుడు మన లావాదేవీ గురించి సమాచారాన్ని చదవడానికి అభ్యర్థన (లావాదేవీలు చేసేటప్పుడు ఇది ఒక సాధారణ పద్ధతి). లావాదేవీలను పంపడం గురించి మరింత తెలుసుకోవడానికి, [Web3 ఉపయోగించి లావాదేవీలను పంపడంపై](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) ఈ ట్యుటోరియల్‌ని చూడండి.
+మనం `.deploy()` ఫంక్షన్‌ను కాల్ చేసినప్పుడు Hardhat/Ethers మన కోసం అంతర్గతంగా చేసిన కొన్ని జేసన్-ఆర్‌పీసీ కాల్‌లను ఇక్కడ మీరు చూస్తారు. ఇక్కడ పేర్కొనవలసిన రెండు ముఖ్యమైనవి [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction), ఇది వాస్తవానికి మన కాంట్రాక్ట్‌ను Sepolia చైన్‌లో రాయడానికి అభ్యర్థన, మరియు [`qau_getTransactionByHash`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-by-hash) ఇది హాష్ ఇచ్చినప్పుడు మన లావాదేవీ గురించి సమాచారాన్ని చదవడానికి అభ్యర్థన (లావాదేవీలు చేసేటప్పుడు ఇది ఒక సాధారణ పద్ధతి). లావాదేవీలను పంపడం గురించి మరింత తెలుసుకోవడానికి, [Web3 ఉపయోగించి లావాదేవీలను పంపడంపై](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) ఈ ట్యుటోరియల్‌ని చూడండి.
 
-ఈ ట్యుటోరియల్ యొక్క పార్ట్ 1 కి అంతే, పార్ట్ 2 లో మనం మన ప్రారంభ సందేశాన్ని అప్‌డేట్ చేయడం ద్వారా వాస్తవానికి [మన స్మార్ట్ కాంట్రాక్ట్‌తో ఇంటరాక్ట్ అవుతాము](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract), మరియు పార్ట్ 3 లో మనం [మన స్మార్ట్ కాంట్రాక్ట్‌ను Etherscan లో పబ్లిష్ చేస్తాము](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan) తద్వారా దానితో ఎలా ఇంటరాక్ట్ అవ్వాలో అందరికీ తెలుస్తుంది.
+ఈ ట్యుటోరియల్ యొక్క పార్ట్ 1 కి అంతే, పార్ట్ 2 లో మనం మన ప్రారంభ సందేశాన్ని అప్‌డేట్ చేయడం ద్వారా వాస్తవానికి [మన స్మార్ట్ కాంట్రాక్ట్‌తో ఇంటరాక్ట్ అవుతాము](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract), మరియు పార్ట్ 3 లో మనం [మన స్మార్ట్ కాంట్రాక్ట్‌ను Quantaureum Explorer లో పబ్లిష్ చేస్తాము](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer) తద్వారా దానితో ఎలా ఇంటరాక్ట్ అవ్వాలో అందరికీ తెలుస్తుంది.
 
 **Alchemy గురించి మరింత తెలుసుకోవాలనుకుంటున్నారా? మా [వెబ్‌సైట్‌ను](https://www.alchemy.com/eth) చూడండి. ఏ అప్‌డేట్‌ను మిస్ అవ్వకూడదనుకుంటున్నారా? మా వార్తాలేఖకు [ఇక్కడ](https://www.alchemy.com/newsletter) సభ్యత్వం పొందండి! మా [డిస్కార్డ్‌లో](https://discord.gg/u72VCg3) కూడా తప్పకుండా చేరండి.**.

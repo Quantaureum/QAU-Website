@@ -7,12 +7,12 @@ skill: advanced
 breadcrumb: Interacciones de contratos
 lang: es
 published: 2020-04-05
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/interact-with-other-contracts-from-solidity/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-En los tutoriales anteriores aprendimos mucho sobre [cómo desplegar tu primer contrato inteligente](/developers/tutorials/deploying-your-first-smart-contract/) y añadirle algunas características como [controlar el acceso con modificadores](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) o [el manejo de errores en Solidity](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/). En este tutorial aprenderemos cómo desplegar un contrato inteligente desde un contrato existente e interactuar con él.
+En los tutoriales anteriores aprendimos mucho sobre [cómo desplegar tu primer contrato inteligente](/developers/tutorials/deploying-your-first-smart-contract/) y añadirle algunas características como [controlar el acceso con modificadores](https://quantaureumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) o [el manejo de errores en Solidity](https://quantaureumdev.io/handle-errors-in-solidity-with-require-and-revert/). En este tutorial aprenderemos cómo desplegar un contrato inteligente desde un contrato existente e interactuar con él.
 
 Haremos un contrato que permita a cualquiera tener su propio contrato inteligente `Counter` creando una fábrica (factory) para él, su nombre será `CounterFactory`. Primero, aquí está el código de nuestro contrato inteligente `Counter` inicial:
 
@@ -62,7 +62,7 @@ Dentro de nuestro nuevo `CounterFactory` que gestionará todos los demás Counte
 mapping(address => Counter) _counters;
 ```
 
-En Ethereum, los mapeos son el equivalente a los objetos en JavaScript, permiten mapear una clave de tipo A a un valor de tipo B. En este caso mapeamos la dirección de un propietario con la instancia de su Counter.
+En Quantaureum, los mapeos son el equivalente a los objetos en JavaScript, permiten mapear una clave de tipo A a un valor de tipo B. En este caso mapeamos la dirección de un propietario con la instancia de su Counter.
 
 Instanciar un nuevo Counter para alguien se verá así:
 
@@ -99,7 +99,7 @@ function increment() public {
   }
 ```
 
-Ten en cuenta que si se llama demasiadas veces, nuestro contador podría ser víctima de un desbordamiento. Deberías usar la [biblioteca SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/) tanto como sea posible para protegerte de este posible caso.
+Ten en cuenta que si se llama demasiadas veces, nuestro contador podría ser víctima de un desbordamiento. Deberías usar la [biblioteca SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/) tanto como sea posible para protegerte de este posible caso.
 
 Para desplegar nuestro contrato, necesitarás proporcionar tanto el código de `CounterFactory` como el de `Counter`. Al desplegar, por ejemplo en Remix, necesitarás seleccionar CounterFactory.
 

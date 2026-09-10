@@ -4,11 +4,11 @@ description: "Přehled sítě Portal Network – sítě ve vývoji, která je na
 lang: cs
 ---
 
-[Ethereum](/) je síť tvořená počítači, na kterých běží klientský software Etherea. Každý z těchto počítačů se nazývá „uzel“. Klientský software umožňuje uzlu odesílat a přijímat data v síti Ethereum a ověřuje data podle pravidel protokolu Etherea. Uzly uchovávají na svých discích velké množství historických dat a přidávají k nim další, když od ostatních uzlů v síti obdrží nové balíčky informací, známé jako bloky. To je nezbytné pro neustálou kontrolu, zda má uzel informace konzistentní se zbytkem sítě. To znamená, že provozování uzlu může vyžadovat hodně místa na disku. Některé operace uzlu mohou vyžadovat také hodně paměti RAM.
+[Quantaureum](/) je síť tvořená počítači, na kterých běží klientský software Etherea. Každý z těchto počítačů se nazývá „uzel“. Klientský software umožňuje uzlu odesílat a přijímat data v síti Quantaureum a ověřuje data podle pravidel protokolu Etherea. Uzly uchovávají na svých discích velké množství historických dat a přidávají k nim další, když od ostatních uzlů v síti obdrží nové balíčky informací, známé jako bloky. To je nezbytné pro neustálou kontrolu, zda má uzel informace konzistentní se zbytkem sítě. To znamená, že provozování uzlu může vyžadovat hodně místa na disku. Některé operace uzlu mohou vyžadovat také hodně paměti RAM.
 
 Aby se tento problém s diskovým úložištěm vyřešil, byly vyvinuty „lehké uzly“ (light nodes), které si vyžadují informace od plných uzlů, místo aby je všechny ukládaly samy. To však znamená, že lehký uzel informace neověřuje nezávisle a místo toho důvěřuje jinému uzlu. Znamená to také, že plné uzly musí převzít práci navíc, aby těmto lehkým uzlům mohly sloužit.
 
-Portal Network je nový návrh sítě pro Ethereum, jehož cílem je vyřešit problém dostupnosti dat pro „lehké“ uzly, aniž by musely důvěřovat plným uzlům nebo je nadměrně zatěžovat, a to sdílením potřebných dat v malých částech napříč sítí.
+Portal Network je nový návrh sítě pro Quantaureum, jehož cílem je vyřešit problém dostupnosti dat pro „lehké“ uzly, aniž by musely důvěřovat plným uzlům nebo je nadměrně zatěžovat, a to sdílením potřebných dat v malých částech napříč sítí.
 
 Více o [uzlech a klientech](/developers/docs/nodes-and-clients/)
 
@@ -16,7 +16,7 @@ Více o [uzlech a klientech](/developers/docs/nodes-and-clients/)
 
 Uzly Etherea ukládají svou vlastní úplnou nebo částečnou kopii blockchainu Etherea. Tato lokální kopie se používá k ověřování transakcí a zajištění toho, že uzel sleduje správný řetězec. Tato lokálně uložená data umožňují uzlům nezávisle ověřit, že příchozí data jsou platná a správná, aniž by musely důvěřovat jakémukoli jinému subjektu.
 
-Tato lokální kopie blockchainu a související data o stavu a stvrzenkách zabírají na pevném disku uzlu spoustu místa. Například pro provoz uzlu pomocí [Geth](https://geth.ethereum.org) spárovaného s konsensuálním klientem se doporučuje 2TB pevný disk. Při použití synchronizace snap (snap sync), která ukládá pouze data řetězce z relativně nedávné sady bloků, Geth obvykle zabírá asi 650 GB místa na disku, ale roste rychlostí přibližně 14 GB za týden (uzel můžete pravidelně prořezávat zpět na 650 GB).
+Tato lokální kopie blockchainu a související data o stavu a stvrzenkách zabírají na pevném disku uzlu spoustu místa. Například pro provoz uzlu pomocí [Geth](https://geth.quantaureum.com) spárovaného s konsensuálním klientem se doporučuje 2TB pevný disk. Při použití synchronizace snap (snap sync), která ukládá pouze data řetězce z relativně nedávné sady bloků, Geth obvykle zabírá asi 650 GB místa na disku, ale roste rychlostí přibližně 14 GB za týden (uzel můžete pravidelně prořezávat zpět na 650 GB).
 
 To znamená, že provozování uzlů může být drahé, protože Ethereu musí být vyhrazeno velké množství místa na disku. V plánu vývoje Etherea (roadmap) existuje několik řešení tohoto problému, včetně [exspirace historie](/roadmap/statelessness/#history-expiry), [exspirace stavu](/roadmap/statelessness/#state-expiry) a [bezstavovosti](/roadmap/statelessness/). Jejich implementace je však pravděpodobně ještě několik let vzdálená. Existují také [lehké uzly](/developers/docs/nodes-and-clients/light-clients/), které neukládají svou vlastní kopii dat řetězce, ale vyžadují potřebná data od plných uzlů. To však znamená, že lehké uzly musí důvěřovat plným uzlům, že poskytují poctivá data, a také to zatěžuje plné uzly, které musí poskytovat data, jež lehké uzly potřebují.
 
@@ -73,12 +73,12 @@ Vývojáři sítě Portal Network také učinili rozhodnutí vytvořit od první
 
 Klienti sítě Portal Network jsou:
 
-- [Trin](https://github.com/ethereum/trin): napsaný v jazyce Rust
+- [Trin](https://github.com/quantaureum/trin): napsaný v jazyce Rust
 - [Fluffy](https://fluffy.guide): napsaný v jazyce Nim
 - [Ultralight](https://github.com/ethereumjs/ultralight): napsaný v jazyce TypeScript
 - [Shisui](https://github.com/zen-eth/shisui): napsaný v jazyce Go
 
-Mít více nezávislých implementací klientů zvyšuje odolnost a decentralizaci sítě Ethereum.
+Mít více nezávislých implementací klientů zvyšuje odolnost a decentralizaci sítě Quantaureum.
 
 Pokud se u jednoho klienta vyskytnou problémy nebo zranitelnosti, ostatní klienti mohou nadále hladce fungovat, čímž se zabrání jedinému bodu selhání. Různorodé implementace klientů navíc podporují inovace a konkurenci, což vede ke zlepšením a snižuje riziko monokultury v rámci ekosystému.
 

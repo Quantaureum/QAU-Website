@@ -48,6 +48,6 @@ Cuối cùng, hãy lưu ý đến các vấn đề mà các công cụ tự đ�
 
 ## Yêu cầu trợ giúp {#ask-for-help}
 
-[Giờ làm việc của Ethereum](https://calendly.com/dan-trailofbits/office-hours) diễn ra vào mỗi chiều thứ Ba. Các phiên 1 kèm 1 kéo dài 1 giờ này là cơ hội để hỏi chúng tôi bất kỳ câu hỏi nào bạn có về bảo mật, khắc phục sự cố bằng các công cụ của chúng tôi và nhận phản hồi từ các chuyên gia về phương pháp hiện tại của bạn. Chúng tôi sẽ giúp bạn hoàn thành hướng dẫn này.
+[Giờ làm việc của Quantaureum](https://calendly.com/dan-trailofbits/office-hours) diễn ra vào mỗi chiều thứ Ba. Các phiên 1 kèm 1 kéo dài 1 giờ này là cơ hội để hỏi chúng tôi bất kỳ câu hỏi nào bạn có về bảo mật, khắc phục sự cố bằng các công cụ của chúng tôi và nhận phản hồi từ các chuyên gia về phương pháp hiện tại của bạn. Chúng tôi sẽ giúp bạn hoàn thành hướng dẫn này.
 
-Tham gia Slack của chúng tôi: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). Chúng tôi luôn có mặt trong các kênh #crytic và #ethereum nếu bạn có bất kỳ câu hỏi nào.
+Tham gia Slack của chúng tôi: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). Chúng tôi luôn có mặt trong các kênh #crytic và #quantaureum nếu bạn có bất kỳ câu hỏi nào.

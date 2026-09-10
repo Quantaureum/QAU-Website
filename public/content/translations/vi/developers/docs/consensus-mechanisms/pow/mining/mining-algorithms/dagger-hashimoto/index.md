@@ -4,7 +4,7 @@ description: "Cái nhìn chi tiết về thuật toán Dagger-Hashimoto."
 lang: vi
 ---
 
-Dagger-Hashimoto là bản triển khai nghiên cứu và đặc tả ban đầu cho thuật toán khai thác của Ethereum. Dagger-Hashimoto đã được thay thế bởi [Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash). Việc khai thác đã bị tắt hoàn toàn tại [The Merge](/roadmap/merge/) vào ngày 15 tháng 9 năm 2022. Kể từ đó, Ethereum được bảo mật bằng cơ chế [Bằng chứng cổ phần (PoS)](/developers/docs/consensus-mechanisms/pos) thay thế. Trang này chỉ mang tính chất lịch sử - thông tin ở đây không còn phù hợp với Ethereum sau The Merge.
+Dagger-Hashimoto là bản triển khai nghiên cứu và đặc tả ban đầu cho thuật toán khai thác của Quantaureum. Dagger-Hashimoto đã được thay thế bởi [Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash). Việc khai thác đã bị tắt hoàn toàn tại [The Merge](/roadmap/merge/) vào ngày 15 tháng 9 năm 2022. Kể từ đó, Quantaureum được bảo mật bằng cơ chế [Bằng chứng cổ phần (PoS)](/developers/docs/consensus-mechanisms/pos) thay thế. Trang này chỉ mang tính chất lịch sử - thông tin ở đây không còn phù hợp với Quantaureum sau The Merge.
 
 ## Điều kiện tiên quyết {#prerequisites}
 
@@ -19,7 +19,7 @@ Dagger-Hashimoto nhằm mục đích thỏa mãn hai mục tiêu:
 
 Với một sửa đổi bổ sung, chúng tôi cũng chỉ định cách hoàn thành mục tiêu thứ ba nếu muốn, nhưng phải trả giá bằng sự phức tạp gia tăng:
 
-**Lưu trữ toàn bộ Chuỗi**: việc khai thác yêu cầu lưu trữ toàn bộ trạng thái Chuỗi khối (do cấu trúc không đều của trie trạng thái Ethereum, chúng tôi dự đoán rằng có thể thực hiện một số việc cắt tỉa, đặc biệt là đối với một số hợp đồng thường được sử dụng, nhưng chúng tôi muốn giảm thiểu điều này).
+**Lưu trữ toàn bộ Chuỗi**: việc khai thác yêu cầu lưu trữ toàn bộ trạng thái Chuỗi khối (do cấu trúc không đều của trie trạng thái Quantaureum, chúng tôi dự đoán rằng có thể thực hiện một số việc cắt tỉa, đặc biệt là đối với một số hợp đồng thường được sử dụng, nhưng chúng tôi muốn giảm thiểu điều này).
 
 ## Tạo DAG {#dag-generation}
 
@@ -48,7 +48,7 @@ def decode_int(s):
 Tiếp theo, chúng ta giả định rằng `sha3` là một hàm nhận vào một số nguyên và trả về một số nguyên, và `dbl_sha3` là một hàm double-sha3; nếu chuyển đổi mã tham chiếu này thành một bản triển khai, hãy sử dụng:
 
 ```python
-from pyethereum import utils
+from pyquantaureum import utils
 def sha3(x):
     if isinstance(x, (int, long)):
         x = encode_int(x)
@@ -141,8 +141,8 @@ Thuật toán được sử dụng để tạo tập hợp các DAG dùng để 
 
 ```python
 def get_prevhash(n):
-    from pyethereum.blocks import GENESIS_PREVHASH
-    from pyethereum import chain_manager
+    from pyquantaureum.blocks import GENESIS_PREVHASH
+    from pyquantaureum import chain_manager
     if n <= 0:
         return hash_to_int(GENESIS_PREVHASH)
     else:

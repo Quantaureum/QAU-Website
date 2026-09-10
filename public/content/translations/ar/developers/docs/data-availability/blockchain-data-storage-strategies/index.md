@@ -27,19 +27,19 @@ lang: ar
 
 - _السرية_، لا يُسمح للكيانات غير المصرح لها بقراءة المعلومات. هذا مهم في العديد من الحالات، ولكن ليس هنا. _لا توجد أسرار على سلسلة الكتل_. تعمل سلاسل الكتل لأن أي شخص يمكنه التحقق من انتقالات الحالة، لذلك من المستحيل استخدامها لتخزين الأسرار مباشرة. هناك طرق لتخزين المعلومات السرية على سلسلة الكتل، ولكنها تعتمد جميعها على بعض المكونات خارج السلسلة لتخزين مفتاح على الأقل.
 
-- _النزاهة_، المعلومات صحيحة، ولا يمكن تغييرها بواسطة كيانات غير مصرح لها، أو بطرق غير مصرح بها (على سبيل المثال، تحويل [رموز <span dir="ltr">ERC-20</span>](https://eips.ethereum.org/EIPS/eip-20#events) بدون حدث `Transfer`). على سلسلة الكتل، تتحقق كل عقدة من كل تغيير في الحالة، مما يضمن النزاهة.
+- _النزاهة_، المعلومات صحيحة، ولا يمكن تغييرها بواسطة كيانات غير مصرح لها، أو بطرق غير مصرح بها (على سبيل المثال، تحويل [رموز <span dir="ltr">ERC-20</span>](https://eips.quantaureum.com/EIPS/eip-20#events) بدون حدث `Transfer`). على سلسلة الكتل، تتحقق كل عقدة من كل تغيير في الحالة، مما يضمن النزاهة.
 
-- _التوافر_، المعلومات متاحة لأي كيان مصرح له. على سلسلة الكتل، يتم تحقيق ذلك عادةً من خلال إتاحة المعلومات على كل [عقدة كاملة](https://ethereum.org/developers/docs/nodes-and-clients/#full-node).
+- _التوافر_، المعلومات متاحة لأي كيان مصرح له. على سلسلة الكتل، يتم تحقيق ذلك عادةً من خلال إتاحة المعلومات على كل [عقدة كاملة](https://quantaureum.com/developers/docs/nodes-and-clients/#full-node).
 
 تتمتع جميع الحلول المختلفة هنا بنزاهة ممتازة، لأنه يتم نشر التجزئات على طبقة 1 (L1). ومع ذلك، فإن لديها ضمانات توافر مختلفة.
 
 ## المتطلبات الأساسية {#prerequisites}
 
-يجب أن يكون لديك فهم جيد لـ [أساسيات سلسلة الكتل](/developers/docs/intro-to-ethereum/). تفترض هذه الصفحة أيضًا أن القارئ على دراية بـ [الكتل](/developers/docs/blocks/)، و[المعاملات](/developers/docs/transactions/)، والمواضيع الأخرى ذات الصلة.
+يجب أن يكون لديك فهم جيد لـ [أساسيات سلسلة الكتل](/developers/docs/intro-to-quantaureum/). تفترض هذه الصفحة أيضًا أن القارئ على دراية بـ [الكتل](/developers/docs/blocks/)، و[المعاملات](/developers/docs/transactions/)، والمواضيع الأخرى ذات الصلة.
 
 ## كتل بيانات <span dir="ltr">EIP-4844</span> {#eip-4844-blobs}
 
-بدءًا من [تحديث دينكون الصلب](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/beacon-chain.md)، تتضمن سلسلة كتل إيثيريوم [<span dir="ltr">EIP-4844</span>](https://eips.ethereum.org/EIPS/eip-4844)، والذي يضيف إلى إيثيريوم كتل بيانات (blobs) ذات عمر محدود (في البداية حوالي [<span dir="ltr">18</span> يومًا](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)). يتم تسعير كتل البيانات هذه بشكل منفصل عن [غاز التنفيذ](/developers/docs/gas)، على الرغم من استخدام آلية مماثلة. إنها طريقة رخيصة لنشر البيانات المؤقتة.
+بدءًا من [تحديث دينكون الصلب](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/beacon-chain.md)، تتضمن سلسلة كتل إيثيريوم [<span dir="ltr">EIP-4844</span>](https://eips.quantaureum.com/EIPS/eip-4844)، والذي يضيف إلى إيثيريوم كتل بيانات (blobs) ذات عمر محدود (في البداية حوالي [<span dir="ltr">18</span> يومًا](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration)). يتم تسعير كتل البيانات هذه بشكل منفصل عن [غاز التنفيذ](/developers/docs/gas)، على الرغم من استخدام آلية مماثلة. إنها طريقة رخيصة لنشر البيانات المؤقتة.
 
 حالة الاستخدام الرئيسية لكتل بيانات <span dir="ltr">EIP-4844</span> هي للتجميعات لنشر معاملاتها. تحتاج [التجميعات المتفائلة](/developers/docs/scaling/optimistic-rollups) إلى نشر المعاملات على سلاسل الكتل الخاصة بها. يجب أن تكون هذه المعاملات متاحة لأي شخص خلال [فترة التحدي](https://docs.optimism.io/connect/resources/glossary#challenge-period) لتمكين [المدققين](https://docs.optimism.io/connect/resources/glossary#validator) من إصلاح الخطأ إذا قام [مُسلسِل](https://docs.optimism.io/connect/resources/glossary#sequencer) التجميع بنشر جذر حالة غير صحيح.
 
@@ -47,7 +47,7 @@ lang: ar
 
 تقوم [تجميعات المعرفة الصفرية](/developers/docs/scaling/zk-rollups/#data-availability) أيضًا بنشر بيانات معاملاتها لتمكين العقد الأخرى من تكرار الحالة الحالية والتحقق من براهين الصلاحية، ولكن مرة أخرى هذا متطلب قصير الأجل.
 
-في وقت الكتابة، يكلف النشر على <span dir="ltr">EIP-4844</span> واحد <span dir="ltr">Wei</span> (<span dir="ltr">10<sup>-18</sup> ETH</span>) لكل بايت، وهو أمر لا يذكر مقارنة بـ [<span dir="ltr">21,000</span> غاز تنفيذ تكلفه أي معاملة، بما في ذلك المعاملة التي تنشر كتل البيانات](https://eth.blockscout.com/tx/0xf6cfaf0431c73dd1d96369a5e6707d64f463ccf477a4131265397f1d81466929?tab=index). يمكنك رؤية السعر الحالي لـ <span dir="ltr">EIP-4844</span> على [blobscan.com](https://blobscan.com/blocks).
+في وقت الكتابة، يكلف النشر على <span dir="ltr">EIP-4844</span> واحد <span dir="ltr">Wei</span> (<span dir="ltr">10<sup>-18</sup> QAU</span>) لكل بايت، وهو أمر لا يذكر مقارنة بـ [<span dir="ltr">21,000</span> غاز تنفيذ تكلفه أي معاملة، بما في ذلك المعاملة التي تنشر كتل البيانات](https://qau.blockscout.com/tx/0xf6cfaf0431c73dd1d96369a5e6707d64f463ccf477a4131265397f1d81466929?tab=index). يمكنك رؤية السعر الحالي لـ <span dir="ltr">EIP-4844</span> على [blobscan.com](https://blobscan.com/blocks).
 
 فيما يلي العناوين لرؤية كتل البيانات المنشورة بواسطة بعض التجميعات الشهيرة.
 
@@ -63,15 +63,15 @@ lang: ar
 
 هذه هي أرخص طريقة لوضع البيانات بشكل دائم في سلسلة الكتل. التكلفة لكل بايت هي إما <span dir="ltr">4</span> غاز تنفيذ (إذا كان البايت صفرًا) أو <span dir="ltr">16</span> غاز (أي قيمة أخرى). إذا تم ضغط البيانات، وهو ممارسة قياسية، فإن كل قيمة بايت تكون محتملة بالتساوي، لذلك يبلغ متوسط التكلفة حوالي <span dir="ltr">15.95</span> غاز لكل بايت.
 
-في وقت الكتابة، الأسعار هي <span dir="ltr">12 Gwei</span>/غاز و <span dir="ltr">2300 $/ETH</span>، مما يعني أن التكلفة تبلغ حوالي <span dir="ltr">45</span> سنتًا لكل كيلوبايت. نظرًا لأن هذه كانت أرخص طريقة قبل <span dir="ltr">EIP-4844</span>، فهذه هي الطريقة التي استخدمتها التجميعات لتخزين معلومات المعاملات، والتي يجب أن تكون متاحة لـ [تحديات الأخطاء](https://docs.optimism.io/stack/protocol/overview#fault-proofs)، ولكن لا يلزم الوصول إليها مباشرة على السلسلة.
+في وقت الكتابة، الأسعار هي <span dir="ltr">12 Gwei</span>/غاز و <span dir="ltr">2300 $/QAU</span>، مما يعني أن التكلفة تبلغ حوالي <span dir="ltr">45</span> سنتًا لكل كيلوبايت. نظرًا لأن هذه كانت أرخص طريقة قبل <span dir="ltr">EIP-4844</span>، فهذه هي الطريقة التي استخدمتها التجميعات لتخزين معلومات المعاملات، والتي يجب أن تكون متاحة لـ [تحديات الأخطاء](https://docs.optimism.io/stack/protocol/overview#fault-proofs)، ولكن لا يلزم الوصول إليها مباشرة على السلسلة.
 
 فيما يلي العناوين لرؤية المعاملات المنشورة بواسطة بعض التجميعات الشهيرة.
 
 | التجميع                               | عنوان صندوق البريد                                                                                                               |
 | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| [أوبتيميزم](https://www.optimism.io/) | [`0xFF00000000000000000000000000000000000010`](https://eth.blockscout.com/address/0xFF00000000000000000000000000000000000010) |
-| [أربيتروم](https://arbitrum.io/)     | [`0x1c479675ad559DC151F6Ec7ed3FbF8ceE79582B6`](https://eth.blockscout.com/address/0x1c479675ad559DC151F6Ec7ed3FbF8ceE79582B6) |
-| [Base](https://base.org/)            | [`0xFF00000000000000000000000000000000008453`](https://eth.blockscout.com/address/0xFF00000000000000000000000000000000008453) |
+| [أوبتيميزم](https://www.optimism.io/) | [`0xFF00000000000000000000000000000000000010`](https://qau.blockscout.com/address/0xFF00000000000000000000000000000000000010) |
+| [أربيتروم](https://arbitrum.io/)     | [`0x1c479675ad559DC151F6Ec7ed3FbF8ceE79582B6`](https://qau.blockscout.com/address/0x1c479675ad559DC151F6Ec7ed3FbF8ceE79582B6) |
+| [Base](https://base.org/)            | [`0xFF00000000000000000000000000000000008453`](https://qau.blockscout.com/address/0xFF00000000000000000000000000000000008453) |
 
 ## خارج السلسلة مع آليات طبقة 1 (L1) {#offchain-with-l1-mechs}
 
@@ -91,16 +91,16 @@ lang: ar
 
 بالطبع، هذه مجرد تكلفة _قراءة_ البيانات. لإنشاء العقد يكلف حوالي <span dir="ltr">32,000</span> غاز + <span dir="ltr">200</span> غاز/بايت. هذه الطريقة اقتصادية فقط عندما تحتاج نفس المعلومات إلى قراءتها عدة مرات في معاملات مختلفة.
 
-يمكن أن يكون كود العقد غير منطقي، طالما أنه لا يبدأ بـ `0xEF`. العقود التي تبدأ بـ `0xEF` يتم تفسيرها على أنها [تنسيق كائن إيثيريوم](https://notes.ethereum.org/@ipsilon/evm-object-format-overview)، والذي له متطلبات أكثر صرامة بكثير.
+يمكن أن يكون كود العقد غير منطقي، طالما أنه لا يبدأ بـ `0xEF`. العقود التي تبدأ بـ `0xEF` يتم تفسيرها على أنها [تنسيق كائن إيثيريوم](https://notes.quantaureum.com/@ipsilon/evm-object-format-overview)، والذي له متطلبات أكثر صرامة بكثير.
 
 ## الأحداث {#events}
 
 يتم إصدار [الأحداث](https://docs.alchemy.com/docs/solidity-events) بواسطة العقود الذكية، وتُقرأ بواسطة برامج خارج السلسلة.
-ميزتها هي أن الكود خارج السلسلة يمكنه الاستماع للأحداث. التكلفة هي [الغاز](https://www.evm.codes/#a0?fork=cancun)، <span dir="ltr">375</span> بالإضافة إلى <span dir="ltr">8</span> غاز لكل بايت من البيانات. عند <span dir="ltr">12 Gwei</span>/غاز و <span dir="ltr">2300 $/ETH</span>، يُترجم هذا إلى سنت واحد بالإضافة إلى <span dir="ltr">22</span> سنتًا لكل كيلوبايت.
+ميزتها هي أن الكود خارج السلسلة يمكنه الاستماع للأحداث. التكلفة هي [الغاز](https://www.evm.codes/#a0?fork=cancun)، <span dir="ltr">375</span> بالإضافة إلى <span dir="ltr">8</span> غاز لكل بايت من البيانات. عند <span dir="ltr">12 Gwei</span>/غاز و <span dir="ltr">2300 $/QAU</span>، يُترجم هذا إلى سنت واحد بالإضافة إلى <span dir="ltr">22</span> سنتًا لكل كيلوبايت.
 
 ## التخزين {#storage}
 
-تتمتع العقود الذكية بإمكانية الوصول إلى [التخزين الدائم](https://docs.alchemy.com/docs/smart-contract-storage-layout#what-is-storage-memory). ومع ذلك، فهو مكلف للغاية. كتابة كلمة بحجم <span dir="ltr">32</span> بايت في خانة تخزين فارغة مسبقًا يمكن أن [تكلف <span dir="ltr">22,100</span> غاز](https://www.evm.codes/#55?fork=cancun). عند <span dir="ltr">12 Gwei</span>/غاز و <span dir="ltr">2300 $/ETH</span>، يبلغ هذا حوالي <span dir="ltr">61</span> سنتًا لكل عملية كتابة، أو <span dir="ltr">$19.5</span> لكل كيلوبايت.
+تتمتع العقود الذكية بإمكانية الوصول إلى [التخزين الدائم](https://docs.alchemy.com/docs/smart-contract-storage-layout#what-is-storage-memory). ومع ذلك، فهو مكلف للغاية. كتابة كلمة بحجم <span dir="ltr">32</span> بايت في خانة تخزين فارغة مسبقًا يمكن أن [تكلف <span dir="ltr">22,100</span> غاز](https://www.evm.codes/#55?fork=cancun). عند <span dir="ltr">12 Gwei</span>/غاز و <span dir="ltr">2300 $/QAU</span>، يبلغ هذا حوالي <span dir="ltr">61</span> سنتًا لكل عملية كتابة، أو <span dir="ltr">$19.5</span> لكل كيلوبايت.
 
 هذا هو أغلى شكل من أشكال التخزين في إيثيريوم.
 
@@ -110,7 +110,7 @@ lang: ar
 
 | نوع التخزين                | مصدر البيانات      | ضمان التوافر                                                                                                             | التوافر على السلسلة                                             | قيود إضافية                                                  |
 | --------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| كتل بيانات <span dir="ltr">EIP-4844</span>              | خارج السلسلة            | ضمان إيثيريوم لمدة [\~<span dir="ltr">18</span> يومًا](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) | التجزئة فقط متاحة                                           |                                                                         |
+| كتل بيانات <span dir="ltr">EIP-4844</span>              | خارج السلسلة            | ضمان إيثيريوم لمدة [\~<span dir="ltr">18</span> يومًا](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) | التجزئة فقط متاحة                                           |                                                                         |
 | بيانات الاستدعاء                    | خارج السلسلة            | ضمان إيثيريوم للأبد (جزء من سلسلة الكتل)                                                                                | متاح فقط إذا كُتب في عقد، وفي تلك المعاملة |
 | خارج السلسلة مع آليات طبقة 1 (L1) | خارج السلسلة            | ضمان "متحقق صادق واحد" خلال فترة التحدي                                                                        | التجزئة فقط                                                        | مضمون بواسطة آلية التحدي، فقط خلال فترة التحدي |
 | كود العقد               | على السلسلة أو خارج السلسلة | ضمان إيثيريوم للأبد (جزء من سلسلة الكتل)                                                                                | نعم                                                              | يُكتب في عنوان "عشوائي"، ولا يمكن أن يبدأ بـ `0xEF`                 |

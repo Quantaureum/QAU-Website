@@ -45,7 +45,7 @@ const TutorialSubmitModal = ({
             </p>
             <ButtonLink
               variant="outline"
-              href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=suggest_tutorial.yaml&title="
+              href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=Type%3A+Feature&template=suggest_tutorial.yaml&title="
             >
               <Github />
               <Translation id="page-developers-tutorials:page-tutorial-raise-issue-btn" />

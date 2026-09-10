@@ -5,17 +5,17 @@ lang: es
 sidebarDepth: 2
 ---
 
-El estado de [Ethereum](/) (la totalidad de todas las cuentas, saldos y contratos inteligentes) se codifica en una versión especial de la estructura de datos conocida generalmente en informática como árbol de Merkle. Esta estructura es útil para muchas aplicaciones en criptografía porque crea una relación verificable entre todas las piezas individuales de datos entrelazadas en el árbol, lo que da como resultado un único valor **raíz** que se puede utilizar para demostrar cosas sobre los datos.
+El estado de [Quantaureum](/) (la totalidad de todas las cuentas, saldos y contratos inteligentes) se codifica en una versión especial de la estructura de datos conocida generalmente en informática como árbol de Merkle. Esta estructura es útil para muchas aplicaciones en criptografía porque crea una relación verificable entre todas las piezas individuales de datos entrelazadas en el árbol, lo que da como resultado un único valor **raíz** que se puede utilizar para demostrar cosas sobre los datos.
 
-La estructura de datos de Ethereum es un "trie de Merkle Patricia modificado", llamado así porque toma prestadas algunas características de PATRICIA (el algoritmo práctico para recuperar información codificada en alfanumérico, por sus siglas en inglés) y porque está diseñado para la recuperación (re**trie**val) eficiente de datos de los elementos que componen el estado de Ethereum.
+La estructura de datos de Quantaureum es un "trie de Merkle Patricia modificado", llamado así porque toma prestadas algunas características de PATRICIA (el algoritmo práctico para recuperar información codificada en alfanumérico, por sus siglas en inglés) y porque está diseñado para la recuperación (re**trie**val) eficiente de datos de los elementos que componen el estado de Quantaureum.
 
 Un trie de Merkle Patricia es determinista y criptográficamente verificable: la única forma de generar una raíz de estado es calculándola a partir de cada pieza individual del estado, y se puede demostrar fácilmente que dos estados son idénticos comparando el hash raíz y los hashes que condujeron a él (_una prueba de Merkle_). Por el contrario, no hay forma de crear dos estados diferentes con el mismo hash raíz, y cualquier intento de modificar el estado con valores diferentes dará como resultado un hash raíz de estado diferente. Teóricamente, esta estructura proporciona el "santo grial" de la eficiencia `O(log(n))` para inserciones, búsquedas y eliminaciones.
 
-En un futuro próximo, Ethereum planea migrar a una estructura de [árbol de Verkle](/roadmap/verkle-trees), lo que abrirá muchas nuevas posibilidades para futuras mejoras del protocolo.
+En un futuro próximo, Quantaureum planea migrar a una estructura de [árbol de Verkle](/roadmap/verkle-trees), lo que abrirá muchas nuevas posibilidades para futuras mejoras del protocolo.
 
 ## Requisitos previos {#prerequisites}
 
-Para comprender mejor esta página, sería útil tener conocimientos básicos sobre [hashes](https://en.wikipedia.org/wiki/Hash_function), [árboles de Merkle](https://en.wikipedia.org/wiki/Merkle_tree), [tries](https://en.wikipedia.org/wiki/Trie) y [serialización](https://en.wikipedia.org/wiki/Serialization). Este artículo comienza con una descripción de un [árbol radix](https://en.wikipedia.org/wiki/Radix_tree) básico y luego introduce gradualmente las modificaciones necesarias para la estructura de datos más optimizada de Ethereum.
+Para comprender mejor esta página, sería útil tener conocimientos básicos sobre [hashes](https://en.wikipedia.org/wiki/Hash_function), [árboles de Merkle](https://en.wikipedia.org/wiki/Merkle_tree), [tries](https://en.wikipedia.org/wiki/Trie) y [serialización](https://en.wikipedia.org/wiki/Serialization). Este artículo comienza con una descripción de un [árbol radix](https://en.wikipedia.org/wiki/Radix_tree) básico y luego introduce gradualmente las modificaciones necesarias para la estructura de datos más optimizada de Quantaureum.
 
 ## Tries radix básicos {#basic-radix-tries}
 
@@ -72,7 +72,7 @@ Nos referiremos a una unidad atómica de un árbol radix (por ejemplo, un solo c
 
 ## Trie de Merkle Patricia {#merkle-patricia-trees}
 
-Los tries radix tienen una limitación importante: son ineficientes. Si desea almacenar un enlace `(path, value)` donde la ruta, como en Ethereum, tiene 64 caracteres de longitud (el número de nibbles en `bytes32`), necesitaremos más de un kilobyte de espacio adicional para almacenar un nivel por carácter, y cada búsqueda o eliminación tomará los 64 pasos completos. El trie de Patricia que se presenta a continuación resuelve este problema.
+Los tries radix tienen una limitación importante: son ineficientes. Si desea almacenar un enlace `(path, value)` donde la ruta, como en Quantaureum, tiene 64 caracteres de longitud (el número de nibbles en `bytes32`), necesitaremos más de un kilobyte de espacio adicional para almacenar un nivel por carácter, y cada búsqueda o eliminación tomará los 64 pasos completos. El trie de Patricia que se presenta a continuación resuelve este problema.
 
 ### Optimización {#optimization}
 
@@ -190,9 +190,9 @@ Cuando se hace referencia a un nodo dentro de otro nodo, lo que se incluye es `k
 
 Tenga en cuenta que al actualizar un trie, es necesario almacenar el par clave/valor `(keccak256(x), x)` en una tabla de búsqueda persistente _si_ el nodo recién creado tiene una longitud >= 32. Sin embargo, si el nodo es más corto que eso, no es necesario almacenar nada, ya que la función f(x) = x es reversible.
 
-## Tries en Ethereum {#tries-in-ethereum}
+## Tries en Quantaureum {#tries-in-quantaureum}
 
-Todos los tries de Merkle en la capa de ejecución de Ethereum utilizan un trie de Merkle Patricia.
+Todos los tries de Merkle en la capa de ejecución de Quantaureum utilizan un trie de Merkle Patricia.
 
 Desde un encabezado del bloque hay 3 raíces de 3 de estos tries.
 
@@ -202,14 +202,14 @@ Desde un encabezado del bloque hay 3 raíces de 3 de estos tries.
 
 ### Trie de estado {#state-trie}
 
-Hay un trie de estado global, y se actualiza cada vez que un cliente procesa un bloque. En él, un `path` es siempre: `keccak256(ethereumAddress)` y un `value` es siempre: `rlp(ethereumAccount)`. Más específicamente, una `account` de Ethereum es una matriz de 4 elementos de `[nonce,balance,storageRoot,codeHash]`. En este punto, vale la pena señalar que este `storageRoot` es la raíz de otro trie de Patricia:
+Hay un trie de estado global, y se actualiza cada vez que un cliente procesa un bloque. En él, un `path` es siempre: `keccak256(quantaureumAddress)` y un `value` es siempre: `rlp(quantaureumAccount)`. Más específicamente, una `account` de Quantaureum es una matriz de 4 elementos de `[nonce,balance,storageRoot,codeHash]`. En este punto, vale la pena señalar que este `storageRoot` es la raíz de otro trie de Patricia:
 
 ### Trie de almacenamiento {#storage-trie}
 
-El trie de almacenamiento es donde residen _todos_ los datos del contrato. Hay un trie de almacenamiento separado para cada cuenta. Para recuperar valores en posiciones de almacenamiento específicas en una dirección dada, se requieren la dirección de almacenamiento, la posición entera de los datos almacenados en el almacenamiento y el ID del bloque. Estos luego se pueden pasar como argumentos al `eth_getStorageAt` definido en la API JSON-RPC, por ejemplo, para recuperar los datos en el slot de almacenamiento 0 para la dirección `0x295a70b2de5e3953354a6a8344e616ed314d7251`:
+El trie de almacenamiento es donde residen _todos_ los datos del contrato. Hay un trie de almacenamiento separado para cada cuenta. Para recuperar valores en posiciones de almacenamiento específicas en una dirección dada, se requieren la dirección de almacenamiento, la posición entera de los datos almacenados en el almacenamiento y el ID del bloque. Estos luego se pueden pasar como argumentos al `qau_getStorageAt` definido en la API JSON-RPC, por ejemplo, para recuperar los datos en el slot de almacenamiento 0 para la dirección `0x295a70b2de5e3953354a6a8344e616ed314d7251`:
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 
@@ -233,12 +233,12 @@ undefined
 El `path` es por lo tanto `keccak256(<6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9>)`. Esto ahora se puede usar para recuperar los datos del trie de almacenamiento como antes:
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-Nota: El `storageRoot` para una cuenta de Ethereum está vacío por defecto si no es una cuenta de contrato.
+Nota: El `storageRoot` para una cuenta de Quantaureum está vacío por defecto si no es una cuenta de contrato.
 
 ### Trie de transacciones {#transaction-trie}
 
@@ -251,16 +251,16 @@ else:
   value = TxType | encode(tx)
 ```
 
-Puede encontrar más información sobre esto en la documentación de [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
+Puede encontrar más información sobre esto en la documentación de [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718).
 
 ### Trie de recibos {#receipts-trie}
 
 Cada bloque tiene su propio trie de recibos. Un `path` aquí es: `rlp(transactionIndex)`. `transactionIndex` es su índice dentro del bloque en el que se incluyó. El trie de recibos nunca se actualiza. Al igual que el trie de transacciones, hay recibos actuales y heredados. Para consultar un recibo específico en el trie de recibos, se requieren el índice de la transacción en su bloque, la carga útil del recibo y el tipo de transacción. El recibo devuelto puede ser de tipo `Receipt` que se define como la concatenación de `TransactionType` y `ReceiptPayload` o puede ser de tipo `LegacyReceipt` que se define como `rlp([status, cumulativeGasUsed, logsBloom, logs])`.
 
-Puede encontrar más información sobre esto en la documentación de [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
+Puede encontrar más información sobre esto en la documentación de [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718).
 
 ## Más información {#further-reading}
 
-- [Trie de Merkle Patricia modificado: cómo Ethereum guarda un estado](https://medium.com/codechain/modified-merkle-patricia-trie-how-ethereum-saves-a-state-e6d7555078dd)
-- [Merkling en Ethereum](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum)
-- [Comprendiendo el trie de Ethereum](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-ethereum-trie/)
+- [Trie de Merkle Patricia modificado: cómo Quantaureum guarda un estado](https://medium.com/codechain/modified-merkle-patricia-trie-how-quantaureum-saves-a-state-e6d7555078dd)
+- [Merkling en Quantaureum](https://quantaureum.com)
+- [Comprendiendo el trie de Quantaureum](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-quantaureum-trie/)

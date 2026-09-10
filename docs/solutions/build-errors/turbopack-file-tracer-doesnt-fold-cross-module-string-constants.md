@@ -104,7 +104,7 @@ The rule:
 
 ## References
 
-- PR #17906 ([refactor: adopt Turbopack as default bundler](https://github.com/ethereum/ethereum-org-website/pull/17906))
+- PR #17906 ([refactor: adopt Turbopack as default bundler](https://github.com/Quantaureum/quantaureum-website/pull/17906))
 - Commit `5f1aae57` (inline path constants and suppress turbopack file-tracing warnings)
 - [Next.js outputFileTracing](https://nextjs.org/docs/app/api-reference/config/next-config-js/output)
 - [`@vercel/nft`](https://github.com/vercel/nft) — the underlying file tracer

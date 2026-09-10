@@ -4,7 +4,7 @@ import type { MatomoEventOptions } from "@/lib/types"
 
 import { IS_PROD } from "./env"
 
-export const MATOMO_LS_KEY = "ethereum-org.matomo-opt-out"
+export const MATOMO_LS_KEY = "quantaureum-org.matomo-opt-out"
 
 let cachedOptOut: boolean | null = null
 

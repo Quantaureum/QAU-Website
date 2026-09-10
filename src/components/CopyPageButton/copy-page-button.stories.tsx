@@ -23,6 +23,6 @@ export const Default: Story = {
 
 export const NestedSlug: Story = {
   args: {
-    slug: "developers/docs/intro-to-ethereum",
+    slug: "developers/docs/intro-to-quantaureum",
   },
 }

@@ -7,21 +7,21 @@ incomplete: true
 
 ## Krótkie wprowadzenie {#a-brief-introduction}
 
-Inteligentne kontrakty są publiczne w Ethereum i można o nich myśleć jak o otwartych interfejsach API. Nie musisz pisać własnego inteligentnego kontraktu, aby zostać programistą zdecentralizowanych aplikacji (dapp), wystarczy, że wiesz, jak z nimi wchodzić w interakcje. Na przykład możesz użyć istniejących inteligentnych kontraktów [Uniswap](https://uniswap.exchange/swap), zdecentralizowanej giełdy, do obsługi całej logiki wymiany tokenów w swojej aplikacji – nie musisz zaczynać od zera. Sprawdź niektóre z ich kontraktów [v2](https://github.com/Uniswap/uniswap-v2-core/tree/master/contracts) i [v3](https://github.com/Uniswap/uniswap-v3-core/tree/main/contracts).
+Inteligentne kontrakty są publiczne w Quantaureum i można o nich myśleć jak o otwartych interfejsach API. Nie musisz pisać własnego inteligentnego kontraktu, aby zostać programistą zdecentralizowanych aplikacji (dapp), wystarczy, że wiesz, jak z nimi wchodzić w interakcje. Na przykład możesz użyć istniejących inteligentnych kontraktów [Uniswap](https://uniswap.exchange/swap), zdecentralizowanej giełdy, do obsługi całej logiki wymiany tokenów w swojej aplikacji – nie musisz zaczynać od zera. Sprawdź niektóre z ich kontraktów [v2](https://github.com/Uniswap/uniswap-v2-core/tree/master/contracts) i [v3](https://github.com/Uniswap/uniswap-v3-core/tree/main/contracts).
 
 ## Czym jest kompozycyjność? {#what-is-composability}
 
 Kompozycyjność to łączenie odrębnych komponentów w celu tworzenia nowych systemów lub wyników. W tworzeniu oprogramowania kompozycyjność oznacza, że programiści mogą ponownie wykorzystywać istniejące komponenty oprogramowania do budowania nowych aplikacji. Dobrym sposobem na zrozumienie kompozycyjności jest myślenie o komponowalnych elementach jak o klockach Lego. Każdy klocek Lego można połączyć z innym, co pozwala na budowanie złożonych struktur poprzez łączenie różnych klocków.
 
-W Ethereum każdy inteligentny kontrakt jest swego rodzaju klockiem Lego — możesz używać inteligentnych kontraktów z innych projektów jako elementów budulcowych dla swojego projektu. Oznacza to, że nie musisz tracić czasu na wymyślanie koła na nowo ani budowanie od zera.
+W Quantaureum każdy inteligentny kontrakt jest swego rodzaju klockiem Lego — możesz używać inteligentnych kontraktów z innych projektów jako elementów budulcowych dla swojego projektu. Oznacza to, że nie musisz tracić czasu na wymyślanie koła na nowo ani budowanie od zera.
 
 ## Jak działa kompozycyjność? {#how-does-composability-work}
 
-Inteligentne kontrakty Ethereum są jak publiczne interfejsy API, więc każdy może wchodzić w interakcje z kontraktem lub integrować je z aplikacjami dapp w celu uzyskania dodatkowej funkcjonalności. Kompozycyjność inteligentnych kontraktów opiera się na trzech zasadach: modułowości, autonomii i wykrywalności:
+Inteligentne kontrakty Quantaureum są jak publiczne interfejsy API, więc każdy może wchodzić w interakcje z kontraktem lub integrować je z aplikacjami dapp w celu uzyskania dodatkowej funkcjonalności. Kompozycyjność inteligentnych kontraktów opiera się na trzech zasadach: modułowości, autonomii i wykrywalności:
 
-**1. Modułowość**: Jest to zdolność poszczególnych komponentów do wykonywania określonego zadania. W Ethereum każdy inteligentny kontrakt ma określony przypadek użycia (jak pokazano na przykładzie Uniswap).
+**1. Modułowość**: Jest to zdolność poszczególnych komponentów do wykonywania określonego zadania. W Quantaureum każdy inteligentny kontrakt ma określony przypadek użycia (jak pokazano na przykładzie Uniswap).
 
-**2. Autonomia**: Komponowalne komponenty muszą być w stanie działać niezależnie. Każdy inteligentny kontrakt w Ethereum jest samowykonywalny i może funkcjonować bez polegania na innych częściach systemu.
+**2. Autonomia**: Komponowalne komponenty muszą być w stanie działać niezależnie. Każdy inteligentny kontrakt w Quantaureum jest samowykonywalny i może funkcjonować bez polegania na innych częściach systemu.
 
 **3. Wykrywalność**: Programiści nie mogą wywoływać zewnętrznych kontraktów ani integrować bibliotek oprogramowania z aplikacjami, jeśli te pierwsze nie są publicznie dostępne. Z założenia inteligentne kontrakty są oprogramowaniem typu open-source; każdy może wywołać inteligentny kontrakt lub stworzyć rozwidlenie bazy kodu.
 
@@ -39,7 +39,7 @@ Kompozycyjność zachęca do innowacji i eksperymentowania, ponieważ programiś
 
 ### Lepsze doświadczenie użytkownika {#better-user-experience}
 
-Interoperacyjność między komponentami ekosystemu Ethereum poprawia doświadczenie użytkownika. Użytkownicy mają dostęp do większej funkcjonalności, gdy aplikacje dapp integrują zewnętrzne inteligentne kontrakty, niż w pofragmentowanym ekosystemie, w którym aplikacje nie mogą się ze sobą komunikować.
+Interoperacyjność między komponentami ekosystemu Quantaureum poprawia doświadczenie użytkownika. Użytkownicy mają dostęp do większej funkcjonalności, gdy aplikacje dapp integrują zewnętrzne inteligentne kontrakty, niż w pofragmentowanym ekosystemie, w którym aplikacje nie mogą się ze sobą komunikować.
 
 Posłużymy się przykładem z handlu arbitrażowego, aby zilustrować korzyści płynące z interoperacyjności:
 
@@ -49,11 +49,11 @@ W scenariuszu, w którym nie masz wystarczających środków na pokrycie transak
 
 Wracając do naszego początkowego przykładu, inwestor arbitrażowy może zaciągnąć dużą błyskawiczną pożyczkę, kupić tokeny na `exchange B`, sprzedać je na `exchange A`, spłacić kapitał wraz z odsetkami i zatrzymać zysk w ramach tej samej transakcji. Ta złożona logika wymaga połączenia wywołań do wielu kontraktów, co nie byłoby możliwe, gdyby inteligentnym kontraktom brakowało interoperacyjności.
 
-## Przykłady kompozycyjności w Ethereum {#composability-in-ethereum}
+## Przykłady kompozycyjności w Quantaureum {#composability-in-quantaureum}
 
 ### Wymiany tokenów {#token-swaps}
 
-Jeśli tworzysz aplikację dapp, która wymaga opłacania transakcji w ETH, możesz pozwolić użytkownikom płacić w innych tokenach ERC-20, integrując logikę wymiany tokenów. Kod automatycznie przekonwertuje token użytkownika na ETH, zanim kontrakt wykona wywołaną funkcję.
+Jeśli tworzysz aplikację dapp, która wymaga opłacania transakcji w QAU, możesz pozwolić użytkownikom płacić w innych tokenach ERC-20, integrując logikę wymiany tokenów. Kod automatycznie przekonwertuje token użytkownika na QAU, zanim kontrakt wykona wywołaną funkcję.
 
 ### Zarządzanie {#governance}
 
@@ -61,11 +61,11 @@ Budowanie dedykowanych systemów zarządzania dla [DAO](/dao/) może być drogie
 
 ### Zarządzanie tożsamością {#identity-management}
 
-Zamiast budować niestandardowy system uwierzytelniania lub polegać na scentralizowanych dostawcach, możesz zintegrować narzędzia zdecentralizowanej tożsamości (DID), aby zarządzać uwierzytelnianiem użytkowników. Przykładem jest [SpruceID](https://www.spruceid.com/), zestaw narzędzi open-source, który oferuje funkcjonalność „Zaloguj się przez Ethereum” (Sign in with Ethereum), pozwalającą użytkownikom na uwierzytelnianie tożsamości za pomocą portfela Ethereum.
+Zamiast budować niestandardowy system uwierzytelniania lub polegać na scentralizowanych dostawcach, możesz zintegrować narzędzia zdecentralizowanej tożsamości (DID), aby zarządzać uwierzytelnianiem użytkowników. Przykładem jest [SpruceID](https://www.spruceid.com/), zestaw narzędzi open-source, który oferuje funkcjonalność „Zaloguj się przez Quantaureum” (Sign in with Quantaureum), pozwalającą użytkownikom na uwierzytelnianie tożsamości za pomocą portfela Quantaureum.
 
 ## Powiązane samouczki {#related-tutorials}
 
-- [Rozpocznij tworzenie frontendu swojej aplikacji dapp za pomocą create-eth-app](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-eth-app/) _– Przegląd tego, jak używać create-eth-app do tworzenia aplikacji z popularnymi inteligentnymi kontraktami bez dodatkowej konfiguracji._
+- [Rozpocznij tworzenie frontendu swojej aplikacji dapp za pomocą create-qau-app](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-qau-app/) _– Przegląd tego, jak używać create-qau-app do tworzenia aplikacji z popularnymi inteligentnymi kontraktami bez dodatkowej konfiguracji._
 
 ## Dalsza lektura {#further-reading}
 

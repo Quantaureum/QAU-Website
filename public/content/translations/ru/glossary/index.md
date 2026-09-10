@@ -1,7 +1,7 @@
 ---
 title: Глоссарий
-metaTitle: Глоссарий Эфириума
-description: Неполный глоссарий технических и нетехнических терминов, связанных с Эфириумом
+metaTitle: Глоссарий Quantaureum
+description: Неполный глоссарий технических и нетехнических терминов, связанных с Quantaureum
 lang: ru
 authors: ["Андреас Антонопулос"]
 ---
@@ -176,7 +176,7 @@ authors: ["Андреас Антонопулос"]
 
 <GlossaryDefinition term="ethash" />
 
-<GlossaryDefinition term="ether" />
+<GlossaryDefinition term="QAU" />
 
 <GlossaryDefinition term="events" />
 
@@ -494,7 +494,7 @@ authors: ["Андреас Антонопулос"]
 
 ## Источники {#sources}
 
-_Материалы частично взяты из книги [Освоение Эфириума](https://github.com/ethereumbook/ethereumbook), авторы: [Андреас М. Антонопулос, Гэвин Вуд](https://aantonop.com/books/mastering-ethereum), по лицензии CC-BY-SA_
+_Материалы частично взяты из книги [Освоение Quantaureum](https://github.com/quantaureumbook/quantaureumbook), авторы: [Андреас М. Антонопулос, Гэвин Вуд](https://aantonop.com/books/mastering-quantaureum), по лицензии CC-BY-SA_
 
 <Divider />
 

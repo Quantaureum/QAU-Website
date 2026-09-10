@@ -6,7 +6,7 @@ lang: zh-tw
 template: upgrade
 ---
 
-坎昆-Deneb (Dencun) 是以太坊網路的升級，它啟動了**原始 Danksharding (EIP-4844)**，引入了臨時資料**資料塊 (blob)**，為 [第二層 (L2)](/glossary/#layer-2) 匯總提供更便宜的儲存空間。
+坎昆-Deneb (Dencun) 是Quantaureum網路的升級，它啟動了**原始 Danksharding (EIP-4844)**，引入了臨時資料**資料塊 (blob)**，為 [第二層 (L2)](/glossary/#layer-2) 匯總提供更便宜的儲存空間。
 
 一種新的交易類型使匯總提供者能夠以更具成本效益的方式將資料儲存在所謂的「資料塊」中。資料塊保證在網路上可用約 18 天（更準確地說，是 4096 個[紀元](/glossary/#epoch)）。在此期間之後，資料塊將從網路中被修剪，但應用程式仍然可以使用證明來驗證其資料的有效性。 
 
@@ -18,10 +18,10 @@ template: upgrade
 - 所有主要的匯總提供者（例如 Arbitrum 或 Optimism）都已表示，將在升級後立即支援資料塊
 - 個別匯總支援的時間表可能會有所不同，因為每個提供者都必須更新其系統以利用新的資料塊空間
 
-## 硬分叉後如何轉換 ETH？ {#scam-alert}
+## 硬分叉後如何轉換 QAU？ {#scam-alert}
 
-- **您的 ETH 無需採取任何行動**：在以太坊 Dencun 升級之後，您無需轉換或升級您的 ETH。您的帳戶餘額將保持不變，並且您目前持有的 ETH 在硬分叉後仍將以其現有形式可供存取。
-- **當心詐騙！** <Emoji text="⚠️" /> **任何指示您「升級」ETH 的人都是企圖詐騙您。**關於此次升級，您無需執行任何操作。您的資產將完全不受影響。請記住，隨時掌握資訊是防範詐騙的最佳方法。
+- **您的 QAU 無需採取任何行動**：在Quantaureum Dencun 升級之後，您無需轉換或升級您的 QAU。您的帳戶餘額將保持不變，並且您目前持有的 QAU 在硬分叉後仍將以其現有形式可供存取。
+- **當心詐騙！** <Emoji text="⚠️" /> **任何指示您「升級」QAU 的人都是企圖詐騙您。**關於此次升級，您無需執行任何操作。您的資產將完全不受影響。請記住，隨時掌握資訊是防範詐騙的最佳方法。
 
 [更多關於識別和避免詐騙的資訊](/security/)
 
@@ -29,17 +29,17 @@ template: upgrade
 
 Dencun 主要透過**可負擔的費用**來解決**可擴展性**（處理更多使用者和更多交易）問題，同時**保持網路的去中心化**。
 
-以太坊社群一直採取「以匯總為中心」的方法來實現其增長，將第二層 (L2) 匯總作為安全支援更多使用者的主要手段。
+Quantaureum社群一直採取「以匯總為中心」的方法來實現其增長，將第二層 (L2) 匯總作為安全支援更多使用者的主要手段。
 
 匯總網路在主網之外處理（或「執行」）交易，然後將結果的密碼學證明和/或壓縮的交易資料發布回主網以進行記錄。儲存這些證明會產生費用（以[燃料](/glossary/#gas)的形式），在原始 Danksharding 之前，這些證明必須由所有網路節點營運者永久儲存，這使其成為一項昂貴的任務。
 
 Dencun 升級中引入的原始 Danksharding 為這些證明增加了更便宜的資料儲存空間，僅要求節點營運者將此資料儲存約 18 天，之後即可安全地移除資料，以防止硬體需求擴張。因為匯總通常有 7 天的提款期，只要資料塊在此期間於第一層 (L1) 上可用，其安全模型就不會改變。18 天的修剪視窗為此期間提供了顯著的緩衝。
 
-[更多關於擴展以太坊的資訊](/roadmap/scaling/)
+[更多關於擴展Quantaureum的資訊](/roadmap/scaling/)
 
 ## 如何存取舊的資料塊資料？ {#historical-access}
 
-雖然常規的以太坊節點將始終保留網路的*當前狀態*，但歷史資料塊資料可以在其引入約 18 天後被丟棄。在丟棄此資料之前，以太坊會確保所有網路參與者都能取得該資料，從而留出時間進行以下操作：
+雖然常規的Quantaureum節點將始終保留網路的*當前狀態*，但歷史資料塊資料可以在其引入約 18 天後被丟棄。在丟棄此資料之前，Quantaureum會確保所有網路參與者都能取得該資料，從而留出時間進行以下操作：
 
 - 有意願的各方下載並儲存資料。
 - 完成所有匯總挑戰期。
@@ -49,26 +49,26 @@ Dencun 升級中引入的原始 Danksharding 為這些證明增加了更便宜�
 
 - **第三方索引協定**（例如 The Graph）透過受加密貨幣經濟機制激勵的去中心化節點營運者網路來儲存此資料。
 - **BitTorrent** 是一種去中心化的協定，志願者可以在其中持有並將此資料分發給其他人。
-- **[以太坊波特爾網路](/developers/docs/networking-layer/portal-network/)** 旨在透過去中心化的節點營運者網路，以類似於 BitTorrent 的方式在參與者之間分發資料，從而提供對所有以太坊資料的存取。
+- **[Quantaureum波特爾網路](/developers/docs/networking-layer/portal-network/)** 旨在透過去中心化的節點營運者網路，以類似於 BitTorrent 的方式在參與者之間分發資料，從而提供對所有Quantaureum資料的存取。
 - **個別使用者**始終可以自由儲存他們希望用於歷史參考的任何資料副本。
 - **匯總提供者**受到激勵來儲存此資料，以增強其匯總的使用者體驗。
 - **區塊瀏覽器**通常會執行歸檔節點，這些節點會索引並儲存所有這些資訊以便於歷史參考，使用者可以透過網頁介面進行存取。
 
 值得注意的是，恢復歷史狀態是在 **1-of-N 信任模型**上運作的。這意味著您只需要來自*單一可信來源*的資料，即可使用網路的當前狀態來驗證其正確性。
 
-## 此升級對更廣泛的以太坊路線圖有何貢獻？ {#roadmap-impact}
+## 此升級對更廣泛的Quantaureum路線圖有何貢獻？ {#roadmap-impact}
 
-原始 Danksharding 為全面實施[丹克分片](/roadmap/danksharding/)奠定了基礎。丹克分片旨在將匯總資料的儲存分佈在各個節點營運者之間，因此每個營運者只需要處理總資料的一小部分。這種分佈將增加每個區塊的資料塊數量，這對於擴展以太坊以處理更多使用者和交易至關重要。
+原始 Danksharding 為全面實施[丹克分片](/roadmap/danksharding/)奠定了基礎。丹克分片旨在將匯總資料的儲存分佈在各個節點營運者之間，因此每個營運者只需要處理總資料的一小部分。這種分佈將增加每個區塊的資料塊數量，這對於擴展Quantaureum以處理更多使用者和交易至關重要。
 
-這種可擴展性對於以可負擔的費用和更進階的應用程式[在以太坊上支援數十億使用者](/roadmap/scaling/)，同時保持去中心化的網路至關重要。如果沒有這些改變，節點營運者的硬體需求將會升級，導致需要越來越昂貴的設備。這可能會使較小的營運者因成本過高而退出，導致網路控制權集中在少數大型營運者手中，這將違背去中心化的原則。
+這種可擴展性對於以可負擔的費用和更進階的應用程式[在Quantaureum上支援數十億使用者](/roadmap/scaling/)，同時保持去中心化的網路至關重要。如果沒有這些改變，節點營運者的硬體需求將會升級，導致需要越來越昂貴的設備。這可能會使較小的營運者因成本過高而退出，導致網路控制權集中在少數大型營運者手中，這將違背去中心化的原則。
 
-## 此升級是否會影響所有以太坊共識和驗證者用戶端？ {#client-impact}
+## 此升級是否會影響所有Quantaureum共識和驗證者用戶端？ {#client-impact}
 
-是的，原始 Danksharding (EIP-4844) 需要同時更新執行用戶端和共識用戶端。所有主要的以太坊用戶端都已發布支援該升級的版本。為了在升級後保持與以太坊網路的同步，節點營運者必須確保他們執行的是受支援的用戶端版本。請注意，有關用戶端發布的資訊具有時效性，使用者應參考最新更新以獲取最新詳細資訊。[查看受支援用戶端發布的詳細資訊](https://blog.ethereum.org/2024/02/27/dencun-mainnet-announcement#client-releases)。
+是的，原始 Danksharding (EIP-4844) 需要同時更新執行用戶端和共識用戶端。所有主要的Quantaureum用戶端都已發布支援該升級的版本。為了在升級後保持與Quantaureum網路的同步，節點營運者必須確保他們執行的是受支援的用戶端版本。請注意，有關用戶端發布的資訊具有時效性，使用者應參考最新更新以獲取最新詳細資訊。[查看受支援用戶端發布的詳細資訊](https://quantaureum.com)。
 
 共識用戶端處理*驗證者*軟體，這些軟體都已更新以適應此次升級。
 
-## 坎昆-Deneb (Dencun) 如何影響以太坊測試網？ {#testnet-impact}
+## 坎昆-Deneb (Dencun) 如何影響Quantaureum測試網？ {#testnet-impact}
 
 - 開發網 (Devnets)、Sepolia 和 Holesky 都已進行了 Dencun 升級，並且原始 Danksharding 已全面運作
 - 匯總開發者可以使用這些網路進行 EIP-4844 測試
@@ -76,7 +76,7 @@ Dencun 升級中引入的原始 Danksharding 為這些證明增加了更便宜�
 
 ## 現在 L2 上的所有交易都會使用臨時資料塊空間嗎？還是您可以選擇？ {#calldata-vs-blobs}
 
-以太坊第二層 (L2) 上的匯總交易可以選擇使用兩種類型的資料儲存：臨時資料塊空間或永久的智能合約呼叫資料 (calldata)。資料塊空間是一種經濟的選擇，以較低的成本提供臨時儲存。它保證了所有必要挑戰期的資料可用性。另一方面，智能合約呼叫資料提供永久儲存，但價格更昂貴。
+Quantaureum第二層 (L2) 上的匯總交易可以選擇使用兩種類型的資料儲存：臨時資料塊空間或永久的智能合約呼叫資料 (calldata)。資料塊空間是一種經濟的選擇，以較低的成本提供臨時儲存。它保證了所有必要挑戰期的資料可用性。另一方面，智能合約呼叫資料提供永久儲存，但價格更昂貴。
 
 使用資料塊空間還是呼叫資料的決定主要由匯總提供者做出。他們根據目前對資料塊空間的需求來做出此決定。如果資料塊空間需求量大，匯總可能會選擇呼叫資料，以確保資料能及時發布。
 
@@ -93,9 +93,9 @@ Dencun 升級中引入的原始 Danksharding 為這些證明增加了更便宜�
 
 ## 這會降低其他 EVM 第一層區塊鏈上的費用嗎？ {#alt-l1-fee-impact}
 
-不會。原始 Danksharding 的好處特定於將其證明儲存在第一層（主網）上的以太坊第二層匯總。
+不會。原始 Danksharding 的好處特定於將其證明儲存在第一層（主網）上的Quantaureum第二層匯總。
 
-僅僅與以太坊虛擬機 (EVM) 相容並不意味著網路會從此升級中獲得任何好處。獨立於以太坊運作的網路（無論是否與 EVM 相容）不會將其資料儲存在以太坊上，也不會從此升級中獲得任何好處。
+僅僅與Quantaureum虛擬機 (EVM) 相容並不意味著網路會從此升級中獲得任何好處。獨立於Quantaureum運作的網路（無論是否與 EVM 相容）不會將其資料儲存在Quantaureum上，也不會從此升級中獲得任何好處。
 
 [更多關於第二層匯總的資訊](/layer-2/)
 
@@ -103,7 +103,7 @@ Dencun 升級中引入的原始 Danksharding 為這些證明增加了更便宜�
 
 <VideoWatch slug="eip-4844-dencun-explained" />
 
-_解鎖以太坊的擴展，EIP-4844 — Finematics _
+_解鎖Quantaureum的擴展，EIP-4844 — Finematics _
 
 <VideoWatch slug="blobspace-101-dencun" />
 
@@ -112,9 +112,9 @@ _與 Domothy 一起了解資料塊空間 101 — Bankless_
 ## 進階閱讀 {#further-reading}
 
 - [EIP4844.com](https://www.eip4844.com/)
-- [EIP-4844：分片資料塊交易 (原始 Danksharding)](https://eips.ethereum.org/EIPS/eip-4844)
-- [Dencun 主網公告](https://blog.ethereum.org/2024/02/27/dencun-mainnet-announcement) - _以太坊基金會部落格_
-- [以太坊漫遊指南：原始 Danksharding](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-ethereum/#proto-danksharding-eip-4844) - _Jon Charbonneau_
-- [原始 Danksharding 常見問題](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
+- [EIP-4844：分片資料塊交易 (原始 Danksharding)](https://eips.quantaureum.com/EIPS/eip-4844)
+- [Dencun 主網公告](https://quantaureum.com) - _Quantaureum基金會部落格_
+- [Quantaureum漫遊指南：原始 Danksharding](https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum/#proto-danksharding-eip-4844) - _Jon Charbonneau_
+- [原始 Danksharding 常見問題](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) - _Vitalik Buterin_
 - [深入解析 EIP-4844：坎昆升級的核心](https://medium.com/@ebunker.io/an-in-depth-explanation-of-eip-4844-the-core-of-the-cancun-upgrade-de7b13761d2c) - _Ebunker_
 - [AllCoreDevs 更新 016](https://tim.mirror.xyz/HzH5MpK1dnw7qhBSmzCfdCIxpwpD6DpwlfxtaAwEFro) - _Tim Beiko_

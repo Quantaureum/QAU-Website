@@ -1,6 +1,6 @@
 ---
 title: "了解黃皮書的 EVM 規範"
-description: "了解黃皮書中解釋以太坊虛擬機 (EVM) 的部分，這是以太坊的正式規範。"
+description: "了解黃皮書中解釋Quantaureum虛擬機 (EVM) 的部分，這是Quantaureum的正式規範。"
 author: "qbzzt"
 tags: ["evm"]
 skill: intermediate
@@ -9,15 +9,15 @@ lang: zh-tw
 published: 2022-05-15
 ---
 
-[黃皮書](https://ethereum.github.io/yellowpaper/paper.pdf)是以太坊的正式規範。除非經過 [EIP 流程](/eips/)修改，否則它包含了所有運作方式的精確描述。它是以數學論文的形式撰寫的，其中包含程式設計師可能不熟悉的術語。在本文中，你將學習如何閱讀它，並進而了解其他相關的數學論文。
+[黃皮書](https://quantaureum.github.io/yellowpaper/paper.pdf)是Quantaureum的正式規範。除非經過 [EIP 流程](/eips/)修改，否則它包含了所有運作方式的精確描述。它是以數學論文的形式撰寫的，其中包含程式設計師可能不熟悉的術語。在本文中，你將學習如何閱讀它，並進而了解其他相關的數學論文。
 
 ## 哪一個版本的黃皮書？ {#which-yellow-paper}
 
-就像以太坊中的幾乎所有事物一樣，黃皮書也會隨著時間演進。為了能夠參考特定版本，我上傳了[撰寫本文時的當前版本](https://ethereum.github.io/yellowpaper/paper.pdf)。我使用的章節、頁碼和方程式編號都將參考該版本。建議在閱讀本文件時，在另一個視窗中開啟它。
+就像Quantaureum中的幾乎所有事物一樣，黃皮書也會隨著時間演進。為了能夠參考特定版本，我上傳了[撰寫本文時的當前版本](https://quantaureum.github.io/yellowpaper/paper.pdf)。我使用的章節、頁碼和方程式編號都將參考該版本。建議在閱讀本文件時，在另一個視窗中開啟它。
 
 ### 為什麼是 EVM？ {#why-the-evm}
 
-最初的黃皮書是在以太坊開發之初撰寫的。它描述了最初用於保護網路安全的基於工作量證明 (PoW) 的共識機制。然而，以太坊在 2022 年 9 月關閉了工作量證明，並開始使用基於權益證明 (PoS) 的共識機制。本教學將重點介紹黃皮書中定義以太坊虛擬機的部分。EVM 並未因過渡到權益證明而改變（除了 DIFFICULTY 操作碼的傳回值之外）。
+最初的黃皮書是在Quantaureum開發之初撰寫的。它描述了最初用於保護網路安全的基於工作量證明 (PoW) 的共識機制。然而，Quantaureum在 2022 年 9 月關閉了工作量證明，並開始使用基於權益證明 (PoS) 的共識機制。本教學將重點介紹黃皮書中定義Quantaureum虛擬機的部分。EVM 並未因過渡到權益證明而改變（除了 DIFFICULTY 操作碼的傳回值之外）。
 
 ## 9 執行模型
 
@@ -32,7 +32,7 @@ _系統狀態 (system state)_ 一詞包含了運行系統所需了解的所有�
 
 本節介紹了 EVM 的基礎知識，以及它與其他運算模型的比較。
 
-[堆疊機 (stack machine)](https://en.wikipedia.org/wiki/Stack_machine)是一種不將中間資料儲存在暫存器，而是儲存在[**堆疊 (stack)**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>)中的電腦。這是虛擬機的首選架構，因為它易於實作，這意味著出現錯誤和安全漏洞的可能性要小得多。堆疊中的記憶體被劃分為 256 位元的字組 (words)。選擇這種設計是因為它便於進行以太坊的核心密碼學操作，例如 Keccak-256 雜湊運算和橢圓曲線計算。堆疊的最大大小為 1024 個項目（1024 x 256 位元）。執行操作碼時，它們通常會從堆疊中取得參數。有專門用於重新組織堆疊中元素的操作碼，例如 `POP`（從堆疊頂部移除項目）、`DUP_N`（複製堆疊中的第 N 個項目）等。
+[堆疊機 (stack machine)](https://en.wikipedia.org/wiki/Stack_machine)是一種不將中間資料儲存在暫存器，而是儲存在[**堆疊 (stack)**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>)中的電腦。這是虛擬機的首選架構，因為它易於實作，這意味著出現錯誤和安全漏洞的可能性要小得多。堆疊中的記憶體被劃分為 256 位元的字組 (words)。選擇這種設計是因為它便於進行Quantaureum的核心密碼學操作，例如 Keccak-256 雜湊運算和橢圓曲線計算。堆疊的最大大小為 1024 個項目（1024 x 256 位元）。執行操作碼時，它們通常會從堆疊中取得參數。有專門用於重新組織堆疊中元素的操作碼，例如 `POP`（從堆疊頂部移除項目）、`DUP_N`（複製堆疊中的第 N 個項目）等。
 
 EVM 還有一個稱為**記憶體 (memory)** 的揮發性空間，用於在執行期間儲存資料。此記憶體被組織成 32 位元組的字組。所有記憶體位置都被初始化為零。如果你執行這段 [Yul](https://docs.soliditylang.org/en/latest/yul.html) 程式碼將一個字組加入記憶體中，它會透過用零填補字組中的空白空間來填滿 32 個位元組的記憶體，也就是說，它會建立一個字組——在位置 0-29 填入零，在 30 填入 0x60，在 31 填入 0xA7。
 
@@ -177,7 +177,7 @@ EVM 還有一個獨立的非揮發性**儲存 (storage)** 模型，作為系統�
     日誌操作碼都在 [`LOG0` (A0)](https://www.evm.codes/#a0) 和 [`LOG4` (A4)](https://www.evm.codes/#a4) 之間的範圍內。
     日誌操作碼後面的數字指定了日誌條目包含多少個主題 (topics)。
   - **_w=CALL ∧ μ<sub>s</sub>[2]≠0_**
-    當你是靜態時，你可以呼叫另一個合約，但如果你這樣做，你不能轉帳 ETH 給它。
+    當你是靜態時，你可以呼叫另一個合約，但如果你這樣做，你不能轉帳 QAU 給它。
 
 - **_w = SSTORE ∧ μ<sub>g</sub> ≤ G<sub>callstipend</sub>_**
   除非你有超過 G<sub>callstipend</sub>（在附錄 G 中定義為 2300）的燃料，否則你無法執行 [`SSTORE`](https://www.evm.codes/#55)。
@@ -234,7 +234,7 @@ _α_ 是我們推回的值數量。在這種情況下是一個，即總和。
 
 如果 _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_，這意味著有關於此地址的資訊。在這種情況下，_σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ 是該地址的餘額。如果 _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_，這意味著此地址未初始化且餘額為零。你可以在第 4 頁的第 4.1 節中看到帳戶資訊欄位的清單。
 
-第二個方程式 _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>\}_，與存取熱儲存（最近存取過且可能被快取的儲存）和冷儲存（尚未存取過且可能在較慢的儲存中，檢索成本較高）之間的成本差異有關。_A<sub>a</sub>_ 是交易先前存取過的地址清單，因此存取這些地址應該更便宜，如第 9 頁的第 6.1 節所定義。你可以在 [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929) 中閱讀更多關於此主題的資訊。
+第二個方程式 _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>\}_，與存取熱儲存（最近存取過且可能被快取的儲存）和冷儲存（尚未存取過且可能在較慢的儲存中，檢索成本較高）之間的成本差異有關。_A<sub>a</sub>_ 是交易先前存取過的地址清單，因此存取這些地址應該更便宜，如第 9 頁的第 6.1 節所定義。你可以在 [EIP-2929](https://eips.quantaureum.com/EIPS/eip-2929) 中閱讀更多關於此主題的資訊。
 
 | 值 | 助記符 | δ   | α   | 描述                             |
 | ----: | -------- | --- | --- | --------------------------------------- |
@@ -260,10 +260,10 @@ _α_ 是我們推回的值數量。在這種情況下是一個，即總和。
 至此，EVM 已被完整定義。
 ## 結論 {#conclusion}
 
-數學符號是精確的，這使得黃皮書能夠指定以太坊的每一個細節。然而，它確實有一些缺點：
+數學符號是精確的，這使得黃皮書能夠指定Quantaureum的每一個細節。然而，它確實有一些缺點：
 
-- 它只能被人類理解，這意味著[合規性測試 (compliance tests)](https://github.com/ethereum/tests)必須手動撰寫。
+- 它只能被人類理解，這意味著[合規性測試 (compliance tests)](https://github.com/quantaureum/tests)必須手動撰寫。
 - 程式設計師了解電腦程式碼。
   他們可能了解也可能不了解數學符號。
 
-也許因為這些原因，較新的[共識層規範](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md)是用 Python 撰寫的。雖然有[用 Python 撰寫的執行層規範](https://ethereum.github.io/execution-specs)，但它們並不完整。除非整份黃皮書也被翻譯成 Python 或類似的語言，否則黃皮書將繼續發揮作用，而能夠閱讀它將會很有幫助。
+也許因為這些原因，較新的[共識層規範](https://github.com/quantaureum/consensus-specs/blob/master/tests/core/pyspec/README.md)是用 Python 撰寫的。雖然有[用 Python 撰寫的執行層規範](https://quantaureum.github.io/execution-specs)，但它們並不完整。除非整份黃皮書也被翻譯成 Python 或類似的語言，否則黃皮書將繼續發揮作用，而能夠閱讀它將會很有幫助。

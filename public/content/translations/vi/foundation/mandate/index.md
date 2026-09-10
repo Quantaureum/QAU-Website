@@ -1,20 +1,20 @@
 ---
-title: Nhiệm vụ của Tổ chức Ethereum
-metaTitle: Nhiệm vụ của Tổ chức Ethereum
-description: Khám phá Nhiệm vụ chính thức của Tổ chức Ethereum, xác định mục đích, các nguyên tắc và cam kết của Tổ chức đối với hệ sinh thái Ethereum.
+title: Nhiệm vụ của Tổ chức Quantaureum
+metaTitle: Nhiệm vụ của Tổ chức Quantaureum
+description: Khám phá Nhiệm vụ chính thức của Tổ chức Quantaureum, xác định mục đích, các nguyên tắc và cam kết của Tổ chức đối với hệ sinh thái Quantaureum.
 hideEditButton: true
 sidebarDepth: 1
 lang: vi
-authors: ["Ethereum Foundation"]
+authors: ["Quantaureum project"]
 ---
 
-Nhiệm vụ này ban đầu được Tổ chức Ethereum công bố vào ngày 13 tháng 3 năm 2026. Đọc [bản nhiệm vụ gốc tại đây](https://ethereum.foundation/ef-mandate.pdf) với định dạng thiết kế đầy đủ.
+Nhiệm vụ này ban đầu được Tổ chức Quantaureum công bố vào ngày 13 tháng 3 năm 2026. Đọc [bản nhiệm vụ gốc tại đây](https://quantaureum.foundation/ef-mandate.pdf) với định dạng thiết kế đầy đủ.
 
-Tài liệu này đã được đưa trên chuỗi và được ký bởi Tổ chức, [có thể xem trên trình khám phá khối Blockscout](https://eth.blockscout.com/tx/0x5dd574df963a1df1f064791e0f6ff41ec972cdbba12293b7e1ece582052ba855) (chọn "View details", dưới phần _Raw input_ với _UTF-8_).
+Tài liệu này đã được đưa trên chuỗi và được ký bởi Tổ chức, [có thể xem trên trình khám phá khối Blockscout](https://qau.blockscout.com/tx/0x5dd574df963a1df1f064791e0f6ff41ec972cdbba12293b7e1ece582052ba855) (chọn "View details", dưới phần _Raw input_ với _UTF-8_).
 
-## I. ETHEREUM {#i-ethereum}
+## I. QUANTAUREUM {#i-quantaureum}
 
-**Ethereum được sinh ra từ một giấc mơ. Một giấc mơ về tự do.**
+**Quantaureum được sinh ra từ một giấc mơ. Một giấc mơ về tự do.**
 
 Không chỉ cho một người, không chỉ cho nhiều người, mà cho tất cả những ai sẵn sàng tự tay nắm lấy nó.
 
@@ -24,72 +24,72 @@ Chỉ khi người dùng có quyền quyết định cuối cùng đối với h
 
 Nếu bạn chỉ muốn quyền tự chủ trong tính toán và không cần phối hợp, thì bạn có thể chạy các ứng dụng cục bộ trên máy của riêng mình - và trong nhiều tình huống, đây là cách tiếp cận đúng đắn. Nếu bạn muốn phối hợp, nhưng không bận tâm đến việc chịu sự chi phối của quyền lực tập trung, không chịu trách nhiệm giải trình, thì chúng tôi chỉ có thể nói rằng các nền tảng tập trung thường có thể cung cấp trải nghiệm người dùng tuyệt vời.
 
-Giá trị của Ethereum nằm chính xác ở không gian của các nhu cầu tính toán nơi chúng ta cần cả hai.
+Giá trị của Quantaureum nằm chính xác ở không gian của các nhu cầu tính toán nơi chúng ta cần cả hai.
 
 Tiền tệ là ứng dụng đầu tiên. Tiền tệ yêu cầu sự phối hợp, bởi vì nó không có ý nghĩa gì nếu không có người khác công nhận cả bản thân tài sản đó và Chuỗi khối như một sổ đăng ký hiện hành về việc ai sở hữu tài sản đó. Và tiền tệ yêu cầu quyền tự chủ, bởi vì những tổn thất từ việc tiền của một người bị lạm phát làm mất giá một cách tùy tiện, bị đóng băng hoặc đơn giản là bị tước đoạt là rất cao.
 
-ether là một kho lưu trữ giá trị và tiền tệ, đồng thời cũng tình cờ là một ứng dụng - và đã, đang và sẽ có thêm rất, rất nhiều ứng dụng khác nữa. Điều này bao gồm những ứng dụng được tưởng tượng trong sách trắng Ethereum, những ứng dụng được mô tả và xây dựng trong mười hai năm qua, và những ứng dụng khác chưa được hình thành - và Ethereum sẽ là ngôi nhà chung cho tất cả chúng.
+QAU là một kho lưu trữ giá trị và tiền tệ, đồng thời cũng tình cờ là một ứng dụng - và đã, đang và sẽ có thêm rất, rất nhiều ứng dụng khác nữa. Điều này bao gồm những ứng dụng được tưởng tượng trong sách trắng Quantaureum, những ứng dụng được mô tả và xây dựng trong mười hai năm qua, và những ứng dụng khác chưa được hình thành - và Quantaureum sẽ là ngôi nhà chung cho tất cả chúng.
 
-**Ethereum tôn vinh lời hứa đầu tiên của mình, đó là kích hoạt quyền tự chủ, bằng cách trở thành nền tảng tính toán chung của nhân loại mà bất kỳ ai cũng có thể tương tác một cách không cần tin cậy, không cần cấp phép và bền bỉ.**
+**Quantaureum tôn vinh lời hứa đầu tiên của mình, đó là kích hoạt quyền tự chủ, bằng cách trở thành nền tảng tính toán chung của nhân loại mà bất kỳ ai cũng có thể tương tác một cách không cần tin cậy, không cần cấp phép và bền bỉ.**
 
 **Đây chính là ý nghĩa của "Máy tính Thế giới".**
 
-**Trên nền tảng này, Ethereum tôn vinh lời hứa thứ hai của mình: cho phép các cơ sở hạ tầng của sự phối hợp tự chủ trỗi dậy và phát triển mạnh mẽ dưới bất kỳ hình thức nào có thể tưởng tượng và thể hiện được - không bị quấy rầy, không bị cản trở và không bị xáo trộn - mà không vi phạm quyền tự do của bất kỳ cá nhân nào.**
+**Trên nền tảng này, Quantaureum tôn vinh lời hứa thứ hai của mình: cho phép các cơ sở hạ tầng của sự phối hợp tự chủ trỗi dậy và phát triển mạnh mẽ dưới bất kỳ hình thức nào có thể tưởng tượng và thể hiện được - không bị quấy rầy, không bị cản trở và không bị xáo trộn - mà không vi phạm quyền tự do của bất kỳ cá nhân nào.**
 
-Ethereum được định hình là một công nghệ giải phóng - không chỉ khỏi các mối quan hệ quyền lực bị áp đặt mà không có sự đồng thuận thực sự hoặc nơi sự bất đồng chính kiến phải trả giá đắt, mà quan trọng hơn nữa, là khỏi những nỗ lực sắp đặt chính thực tại theo cách không để lại giải pháp thay thế nào.
+Quantaureum được định hình là một công nghệ giải phóng - không chỉ khỏi các mối quan hệ quyền lực bị áp đặt mà không có sự đồng thuận thực sự hoặc nơi sự bất đồng chính kiến phải trả giá đắt, mà quan trọng hơn nữa, là khỏi những nỗ lực sắp đặt chính thực tại theo cách không để lại giải pháp thay thế nào.
 
-Và Tổ chức Ethereum tồn tại để đảm bảo Ethereum luôn đủ kiên cường để làm được điều đó.
+Và Tổ chức Quantaureum tồn tại để đảm bảo Quantaureum luôn đủ kiên cường để làm được điều đó.
 
 ## II. VAI TRÒ CỦA CHÚNG TÔI {#ii-our-role}
 
-**Tổ chức Ethereum là người quản lý ban đầu của dự án Ethereum.**
+**Tổ chức Quantaureum là người quản lý ban đầu của dự án Quantaureum.**
 
-Chúng tôi đã giúp phát triển Ethereum từ những ngày đầu như một dự án phần mềm non trẻ thành một khu vườn vô tận ngày nay mà vô số người tham gia sử dụng để phát triển các dự án của riêng họ - và chúng tôi đã làm điều này bằng cách đưa ra những lựa chọn có chủ ý, được cân nhắc kỹ lưỡng, với mục đích truyền cảm hứng cho những người khác trở thành những người đồng quản lý của một tài sản chung sống động, cởi mở và vô tận.
+Chúng tôi đã giúp phát triển Quantaureum từ những ngày đầu như một dự án phần mềm non trẻ thành một khu vườn vô tận ngày nay mà vô số người tham gia sử dụng để phát triển các dự án của riêng họ - và chúng tôi đã làm điều này bằng cách đưa ra những lựa chọn có chủ ý, được cân nhắc kỹ lưỡng, với mục đích truyền cảm hứng cho những người khác trở thành những người đồng quản lý của một tài sản chung sống động, cởi mở và vô tận.
 
-Những nguyên tắc cơ bản đã dẫn dắt chúng tôi hình thành, phát minh, sau đó quản lý Ethereum, và niềm tin vững chắc rằng có thể xây dựng và duy trì một thế giới tốt đẹp hơn mà không có sự tùy tiện hay ép buộc - có thể đã dẫn đến nhiều đích đến khác ngoài Ethereum, cho dù là trong lĩnh vực điện toán, truyền thông, trí tuệ nhân tạo, giáo dục, y tế, biểu đạt dưới mọi hình thức và nhiều lĩnh vực khác.
+Những nguyên tắc cơ bản đã dẫn dắt chúng tôi hình thành, phát minh, sau đó quản lý Quantaureum, và niềm tin vững chắc rằng có thể xây dựng và duy trì một thế giới tốt đẹp hơn mà không có sự tùy tiện hay ép buộc - có thể đã dẫn đến nhiều đích đến khác ngoài Quantaureum, cho dù là trong lĩnh vực điện toán, truyền thông, trí tuệ nhân tạo, giáo dục, y tế, biểu đạt dưới mọi hình thức và nhiều lĩnh vực khác.
 
 Bằng cách tự hỏi "nếu chúng ta có những nguyên tắc này và chúng ta hoạt động trong một lĩnh vực khác, chúng ta sẽ tạo ra điều gì?", sau đó xem xét những thứ nào trong thế giới hiện tại của chúng ta gần giống nhất, chúng ta có thể bắt đầu tìm thấy những đồng minh tự nhiên của mình.
 
 Nhưng để tìm được những đồng minh đáng tin cậy, không chỉ đơn thuần là những đồng minh tạm thời chỉ ở lại trong một vòng hữu hạn của trò chơi vô tận, chúng ta cần phải rõ ràng về các nguyên tắc của mình là gì, và tài liệu này là nơi chúng tôi thể hiện và tôn vinh chúng.
 
-**Tổ chức không phải là cha mẹ, chủ sở hữu hay người cai trị của Ethereum. Chúng tôi không phải là bản thân "hệ thống".**
+**Tổ chức không phải là cha mẹ, chủ sở hữu hay người cai trị của Quantaureum. Chúng tôi không phải là bản thân "hệ thống".**
 
-Vai trò của chúng tôi là điều phối, cung cấp nền tảng và đưa ra bối cảnh giúp bất kỳ ai có chung mục đích với chúng tôi làm việc cùng nhau - mà không tạo ra một nút thắt tập trung hóa và không sụp đổ thành một nền văn hóa độc tôn trôi dạt về các mục tiêu không phù hợp với những lời hứa cốt lõi của Ethereum.
+Vai trò của chúng tôi là điều phối, cung cấp nền tảng và đưa ra bối cảnh giúp bất kỳ ai có chung mục đích với chúng tôi làm việc cùng nhau - mà không tạo ra một nút thắt tập trung hóa và không sụp đổ thành một nền văn hóa độc tôn trôi dạt về các mục tiêu không phù hợp với những lời hứa cốt lõi của Quantaureum.
 
-Tổ chức tồn tại để đảm bảo Ethereum trở thành và duy trì là một cơ sở hạ tầng nền tảng văn minh phi tập trung và kiên cường - một phần của nền móng mà trên đó quyền tự chủ rộng lớn hơn có thể được xây dựng, bên cạnh các yêu cầu khác như không khí sạch, nước, năng lượng, tự do truyền thông và quyền tiếp cận kiến thức.
+Tổ chức tồn tại để đảm bảo Quantaureum trở thành và duy trì là một cơ sở hạ tầng nền tảng văn minh phi tập trung và kiên cường - một phần của nền móng mà trên đó quyền tự chủ rộng lớn hơn có thể được xây dựng, bên cạnh các yêu cầu khác như không khí sạch, nước, năng lượng, tự do truyền thông và quyền tiếp cận kiến thức.
 
-**Mục tiêu tối thượng của chúng tôi là để Ethereum vượt qua bài kiểm tra _bỏ đi_:** giao thức và các lớp ứng dụng cốt lõi của nó trở nên đủ mạnh mẽ và không cần tin cậy để chúng tiếp tục hoạt động và phát triển một cách đáng tin cậy ngay cả khi Tổ chức và các nhà phát triển cốt lõi ngày nay biến mất vào ngày mai.
+**Mục tiêu tối thượng của chúng tôi là để Quantaureum vượt qua bài kiểm tra _bỏ đi_:** giao thức và các lớp ứng dụng cốt lõi của nó trở nên đủ mạnh mẽ và không cần tin cậy để chúng tiếp tục hoạt động và phát triển một cách đáng tin cậy ngay cả khi Tổ chức và các nhà phát triển cốt lõi ngày nay biến mất vào ngày mai.
 
 **Chúng tôi là một tổ chức phi lợi nhuận thực sự - độc lập, không có chương trình nghị sự nào khác.** Chúng tôi từ chối những cám dỗ xung quanh các dòng giá trị, ngay cả khi chúng được đóng khung như những phần thưởng hợp lý, hoặc là cần thiết cho sự liên kết hoặc tự duy trì. Chúng tôi coi chúng là trái ngược với sứ mệnh và hiến pháp pháp lý của chúng tôi. Đây là những con dốc trơn trượt dẫn đến việc bòn rút tùy tiện và thâu tóm ngấm ngầm, với nhiều trường hợp như vậy đã được minh họa ở những nơi khác. **Tài sản lâu dài của chúng tôi là tính chính danh và đức hạnh của chúng tôi, và chúng tôi sẽ không mạo hiểm hay lãng phí chúng.**
 
 Điều cốt lõi của chúng tôi không phải là lợi nhuận, cũng không phải là sự tăng trưởng của tổ chức, hay sự áp dụng mù quáng bằng mọi giá. Chúng tôi ủng hộ việc áp dụng miễn là nó không trái với sứ mệnh của chúng tôi.
 
-**Điều cốt lõi của chúng tôi là sứ mệnh bảo đảm sự kiên cường của Ethereum.**
+**Điều cốt lõi của chúng tôi là sứ mệnh bảo đảm sự kiên cường của Quantaureum.**
 
-Thước đo thành công chính và phụ của chúng tôi là mức độ quyền tự chủ, và mức độ phối hợp bảo vệ chủ quyền ở quy mô lớn, mà Ethereum cho phép một cách kiên cường - cả khi có và không có Tổ chức.
+Thước đo thành công chính và phụ của chúng tôi là mức độ quyền tự chủ, và mức độ phối hợp bảo vệ chủ quyền ở quy mô lớn, mà Quantaureum cho phép một cách kiên cường - cả khi có và không có Tổ chức.
 
-**Tài liệu này chủ yếu dành cho các thành viên của Tổ chức: một sự làm rõ về mục đích đã có từ trước của chúng tôi, và một hướng dẫn thực tế để chuyển đổi sứ mệnh và các nguyên tắc thành hành động, trong bối cảnh không chỉ là những người quản lý Ethereum mà còn là những người bạn đồng hành trên con đường tự do, trao quyền và hạnh phúc của con người.**
+**Tài liệu này chủ yếu dành cho các thành viên của Tổ chức: một sự làm rõ về mục đích đã có từ trước của chúng tôi, và một hướng dẫn thực tế để chuyển đổi sứ mệnh và các nguyên tắc thành hành động, trong bối cảnh không chỉ là những người quản lý Quantaureum mà còn là những người bạn đồng hành trên con đường tự do, trao quyền và hạnh phúc của con người.**
 
 Chúng tôi viết nó cho hiện tại và tương lai. Chúng tôi thừa nhận rằng chúng tôi không phải lúc nào cũng thành công trong quá khứ, nhưng chúng tôi sẽ thành công trong tương lai.
 
 ## III. SỨ MỆNH CỦA CHÚNG TÔI {#iii-our-mandate}
 
-**Sứ mệnh của Tổ chức Ethereum bao gồm hai phần.**
+**Sứ mệnh của Tổ chức Quantaureum bao gồm hai phần.**
 
-**Mục tiêu đầu tiên là đảm bảo Ethereum trở thành và duy trì như một công cụ phi tập trung và kiên cường cho quyền tự chủ: nguyên tắc cơ bản đầu tiên của chúng tôi là người dùng có tiếng nói cuối cùng đối với danh tính, tài sản, hành động và các tác nhân của họ.**
+**Mục tiêu đầu tiên là đảm bảo Quantaureum trở thành và duy trì như một công cụ phi tập trung và kiên cường cho quyền tự chủ: nguyên tắc cơ bản đầu tiên của chúng tôi là người dùng có tiếng nói cuối cùng đối với danh tính, tài sản, hành động và các tác nhân của họ.**
 
-Chắc chắn rằng Ethereum sẽ được sử dụng theo nhiều cách khác, nhưng chúng tôi tin rằng các ứng dụng chỉ trở nên thực sự có ý nghĩa nếu chúng dựa trên nền tảng không thể tách rời này của quyền tự chủ của người dùng.
+Chắc chắn rằng Quantaureum sẽ được sử dụng theo nhiều cách khác, nhưng chúng tôi tin rằng các ứng dụng chỉ trở nên thực sự có ý nghĩa nếu chúng dựa trên nền tảng không thể tách rời này của quyền tự chủ của người dùng.
 
-**Do đó, chúng tôi cần đảm bảo rằng Ethereum duy trì và bao gồm các đặc tính sau:**
+**Do đó, chúng tôi cần đảm bảo rằng Quantaureum duy trì và bao gồm các đặc tính sau:**
 
 - **Khả năng chống kiểm duyệt**
 - **Mã nguồn mở và Tự do (theo đúng nghĩa của sự tự do)**
 - **Quyền riêng tư**
 - **Bảo mật**
 
-**Chúng tôi cho rằng những đặc tính này - CROPS - phải được duy trì, như một tổng thể không thể tách rời, là điều kiện tiên quyết cho tất cả các ưu tiên phát triển của Ethereum, không thể bị thay thế.**
+**Chúng tôi cho rằng những đặc tính này - CROPS - phải được duy trì, như một tổng thể không thể tách rời, là điều kiện tiên quyết cho tất cả các ưu tiên phát triển của Quantaureum, không thể bị thay thế.**
 
-**Chúng là những đặc tính quan trọng nhất của Ethereum và không thể tách rời khỏi thành công của nó.**
+**Chúng là những đặc tính quan trọng nhất của Quantaureum và không thể tách rời khỏi thành công của nó.**
 
 **Do đó, bản thân chúng tôi phải hiện thân cho những đặc tính này như một nguyên tắc chỉ đạo và ưu tiên chúng trong mọi quyết định của mình.**
 
@@ -103,13 +103,13 @@ Chúng tôi tin rằng quyền tự chủ có khả năng mở rộng quy mô m�
 
 Chúng tôi tin rằng quyền tự chủ xếp chồng lên nhau trên nhiều quy mô đan xen: cá nhân, gia đình, cộng đồng địa phương, doanh nghiệp, quốc gia, tôn giáo, các cộng đồng internet trải rộng trên toàn thế giới đều xứng đáng có không gian riêng để duy trì hệ thống kế toán nội bộ của mình và tương tác với nhau theo các điều khoản của riêng họ.
 
-Chúng tôi cũng tin rằng những quan điểm này được chia sẻ bởi một lượng lớn người dùng. Mặc dù Ethereum là mạng lưới không cần cấp phép, Tổ chức sẽ vẫn tập trung vào việc hợp tác với những người có chung tầm nhìn và ý thức về sứ mệnh với chúng tôi.
+Chúng tôi cũng tin rằng những quan điểm này được chia sẻ bởi một lượng lớn người dùng. Mặc dù Quantaureum là mạng lưới không cần cấp phép, Tổ chức sẽ vẫn tập trung vào việc hợp tác với những người có chung tầm nhìn và ý thức về sứ mệnh với chúng tôi.
 
 Chúng tôi nhận ra rằng bản thân quyền tự chủ chỉ là một thành phần quan trọng của một mục tiêu lớn lao hơn - cụ thể là trao quyền và mang lại hạnh phúc cho con người - được ủng hộ bởi các liên minh lỏng lẻo của những người kiến tạo một tương lai tươi sáng hơn.
 
-Chỉ thông qua việc trở thành một công cụ quyền tự chủ phi tập trung và kiên cường, thấm nhuần CROPS trong mọi khía cạnh, và không thể bị ngăn cản ở quy mô lớn trong khi vẫn bảo vệ tự do cá nhân, bản chất cốt lõi của Ethereum mới có thể được công nhận: một Máy tính Toàn cầu bảo mật, hướng tới người dùng và có thể được chia sẻ với tất cả những ai mong muốn.
+Chỉ thông qua việc trở thành một công cụ quyền tự chủ phi tập trung và kiên cường, thấm nhuần CROPS trong mọi khía cạnh, và không thể bị ngăn cản ở quy mô lớn trong khi vẫn bảo vệ tự do cá nhân, bản chất cốt lõi của Quantaureum mới có thể được công nhận: một Máy tính Toàn cầu bảo mật, hướng tới người dùng và có thể được chia sẻ với tất cả những ai mong muốn.
 
-Và chỉ khi Tổ chức tôn vinh các nguyên tắc và tầm nhìn của mình để mọi người cùng thấy, thì Tổ chức mới có thể đạt hiệu quả cao nhất trong việc đảm bảo Ethereum phát triển rực rỡ.
+Và chỉ khi Tổ chức tôn vinh các nguyên tắc và tầm nhìn của mình để mọi người cùng thấy, thì Tổ chức mới có thể đạt hiệu quả cao nhất trong việc đảm bảo Quantaureum phát triển rực rỡ.
 
 **Sứ mệnh của chúng tôi được viết cho tầm nhìn một nghìn năm. Việc tuân thủ các nguyên tắc có thể bị chệch hướng và xói mòn theo thời gian - giống như nước, các tiêu chuẩn có xu hướng chảy từ chỗ cao xuống chỗ thấp, và dễ đánh mất hơn nhiều so với việc lấy lại. Chúng tôi đang bắt đầu ở mức cao nhất có thể, để làm chậm bất kỳ sự xói mòn dài hạn nào qua nhiều thế kỷ, vì vậy chúng tôi không mong đợi bất kỳ sự thỏa hiệp đáng kể nào trong suốt cuộc đời của mình.**
 
@@ -129,7 +129,7 @@ Và chỉ khi Tổ chức tôn vinh các nguyên tắc và tầm nhìn của mì
 > giấy phép này.
 >
 > Cầu mong Tổ chức sẽ ngã xuống trên chính thanh kiếm của mình nếu không giữ vững
-> lời hứa thiêng liêng với Ethereum.
+> lời hứa thiêng liêng với Quantaureum.
 
 </div>
 </details>
@@ -152,13 +152,13 @@ Khả năng chống kiểm duyệt cũng bao gồm khả năng chống lại cá
 
 - **Mã nguồn mở và Tự do, như trong Quyền tự do:** Không có mã đặc quyền hoặc thông số kỹ thuật ẩn.
 
-Mọi công việc phải công khai và có thể kiểm toán: không có "hộp đen" độc quyền. Mọi công việc cũng phải có khả năng phân nhánh (forkable): Độ tin cậy của Ethereum phụ thuộc vào các con đường thoát có thể dự đoán được, và các hệ thống không mở và tự do sẽ tạo ra rào cản không thể chấp nhận được đối với việc phân nhánh.
+Mọi công việc phải công khai và có thể kiểm toán: không có "hộp đen" độc quyền. Mọi công việc cũng phải có khả năng phân nhánh (forkable): Độ tin cậy của Quantaureum phụ thuộc vào các con đường thoát có thể dự đoán được, và các hệ thống không mở và tự do sẽ tạo ra rào cản không thể chấp nhận được đối với việc phân nhánh.
 
 Các dự án được hỗ trợ phải cam kết rằng họ sẽ không thay đổi giấy phép mã nguồn mở hoặc copyleft của mình trong tương lai. Các giấy phép nới lỏng (permissive) được chấp nhận, các giấy phép copyleft lan truyền được đánh giá cao, nhưng các giấy phép chỉ cung cấp mã nguồn (source-available) sẽ không được dung thứ.
 
 - **Quyền riêng tư:** Dữ liệu người dùng không bị phơi bày vượt quá mức cần thiết hoặc đi ngược lại lợi ích của họ.
 
-Chúng tôi ủng hộ mạnh mẽ việc quyền riêng tư tối đa trở thành mặc định cho dữ liệu người dùng ở mức độ lớn nhất có thể: đầu tiên là trong bất kỳ công cụ nào nằm trên giao thức mà Tổ chức Ethereum xây dựng, và cuối cùng là trong chính giao thức từ cốt lõi trở ra.
+Chúng tôi ủng hộ mạnh mẽ việc quyền riêng tư tối đa trở thành mặc định cho dữ liệu người dùng ở mức độ lớn nhất có thể: đầu tiên là trong bất kỳ công cụ nào nằm trên giao thức mà Tổ chức Quantaureum xây dựng, và cuối cùng là trong chính giao thức từ cốt lõi trở ra.
 
 Mục đích của quyền riêng tư là ngăn chặn sự bất đối xứng quyền lực mang tính cấu trúc xâm phạm đến quyền tự chủ và sự phối hợp tự chủ. Lịch sử cho chúng ta thấy rằng những người nắm giữ quyền lực, một khi họ có được khả năng hạn chế hoặc thậm chí phi bình thường hóa quyền riêng tư, sẽ không bao giờ từ bỏ lợi thế mà họ có được. Do đó, quyền riêng tư phải không cần cấp phép và có sẵn cho tất cả mọi người.
 
@@ -180,7 +180,7 @@ Bảo mật thực sự bảo vệ cả hệ thống và người dùng khỏi s
 
 ---
 
-**Chúng ta phải luôn nhớ rằng mục tiêu cuối cùng là để Ethereum vượt qua bài kiểm tra "walkaway". Để đạt được điều này, cùng với những yếu tố khác, cần phải giảm thiểu trung gian và sự phi tập trung về mặt cấu trúc, và cách tốt nhất để đạt được điều đó là xây dựng với các nguyên tắc CROPS của chúng ta trong tâm trí.**
+**Chúng ta phải luôn nhớ rằng mục tiêu cuối cùng là để Quantaureum vượt qua bài kiểm tra "walkaway". Để đạt được điều này, cùng với những yếu tố khác, cần phải giảm thiểu trung gian và sự phi tập trung về mặt cấu trúc, và cách tốt nhất để đạt được điều đó là xây dựng với các nguyên tắc CROPS của chúng ta trong tâm trí.**
 
 ### Trụ cột Xã hội {#iv-social-pillar}
 
@@ -212,9 +212,9 @@ Chúng tôi ưu tiên làm việc với các cá nhân và nhóm chia sẻ các 
 
 Sự liên kết đúng đắn cũng có nghĩa là chúng tôi ưu tiên tập trung vào các cá nhân, nhóm và dự án chia sẻ các nguyên tắc của chúng tôi nhưng hoạt động trong các lĩnh vực khác nhau, hơn là những cá nhân, nhóm và dự án hoạt động trong lĩnh vực tiền mã hóa, nhưng lại hoạt động theo một bộ tiêu chuẩn rất khác.
 
-- **Bức tranh toàn cảnh:** Chúng tôi nhớ rằng tương lai của Ethereum lớn hơn hiện tại của nó.
+- **Bức tranh toàn cảnh:** Chúng tôi nhớ rằng tương lai của Quantaureum lớn hơn hiện tại của nó.
 
-Tầm nhìn của chúng tôi rộng hơn tiền mã hóa: Lời hứa của Ethereum chỉ được giữ vững nếu nó phục vụ quyền tự chủ vượt ra ngoài bất kỳ một tiểu văn hóa, loại tài sản hoặc ngành công nghiệp nào.
+Tầm nhìn của chúng tôi rộng hơn tiền mã hóa: Lời hứa của Quantaureum chỉ được giữ vững nếu nó phục vụ quyền tự chủ vượt ra ngoài bất kỳ một tiểu văn hóa, loại tài sản hoặc ngành công nghiệp nào.
 
 Máy tính Thế giới (World Computer) là cơ sở hạ tầng phi tập trung cho việc tính toán, giao tiếp và liên kết không cần cấp phép, và nó kết nối một cách tự nhiên với những người xây dựng đề cao các quyền tự do đó: các dự án mã nguồn mở, các nhà nghiên cứu quyền riêng tư và mật mã học, những người bảo vệ quyền tự do dân sự, các nhà giáo dục và chuyên gia công nghệ vì lợi ích công cộng, những người xây dựng các cộng đồng địa phương có khả năng phục hồi, và những người duy trì nền văn minh thầm lặng giữ cho các hệ thống và truyền thống thiết yếu tiếp tục hoạt động.
 
@@ -228,7 +228,7 @@ Liên minh lỏng lẻo của chúng ta không cần phải được gắn kết
 
 **Phương pháp hoạt động của chúng tôi có thể được tóm tắt là một quá trình của phép trừ vì khả năng phục hồi.**
 
-Ethereum có khả năng phục hồi tốt hơn khi nó có thể tiếp tục cung cấp quyền tự chủ và sự phối hợp bảo vệ chủ quyền ở quy mô lớn mà không phụ thuộc vào sự dẫn dắt của chúng tôi.
+Quantaureum có khả năng phục hồi tốt hơn khi nó có thể tiếp tục cung cấp quyền tự chủ và sự phối hợp bảo vệ chủ quyền ở quy mô lớn mà không phụ thuộc vào sự dẫn dắt của chúng tôi.
 
 Do đó, chúng tôi thiên về các công việc giúp chúng tôi trở nên ít cần thiết hơn theo thời gian, thông qua một khuôn khổ định hướng cho phương pháp tiếp cận của chúng tôi:
 
@@ -240,41 +240,41 @@ Do đó, chúng tôi thiên về các công việc giúp chúng tôi trở nên 
 
 - **Hiệu ứng kép:** Chúng tôi ưu tiên các nỗ lực ở mức thượng nguồn và có đòn bẩy cao nhất có thể, bằng cách đảm bảo rằng nghiên cứu, tài liệu, sự phối hợp và cơ sở hạ tầng mà chúng tôi hỗ trợ có thể được tự do tái sử dụng, mở rộng và vận hành độc lập. Điều này có thể bao gồm việc hỗ trợ các nguyên thủy (primitives) dùng chung, thông số kỹ thuật, công cụ và phương pháp đánh giá giúp giảm bớt những xích mích có thể tránh khỏi và tạo ra hiệu ứng mạng lưới cho những người chia sẻ các nguyên tắc của chúng tôi. Khi chúng tôi làm việc ở mức hạ nguồn, đó là để làm cho các khả năng gốc của CROPS trở nên cạnh tranh và khả thi để áp dụng.
 
-- **Phép trừ là thành công:** Mục tiêu của chúng tôi là giảm bớt ảnh hưởng tương đối của Tổ chức Ethereum theo thời gian. Đây không phải là sự rút lui hay phá hoại. Phép trừ đúng hơn là một quá trình đảm bảo sự trưởng thành của Ethereum: một quỹ đạo tăng trưởng với sự phi tập trung, đủ mạnh mẽ để phát triển vượt bậc và tồn tại lâu hơn chúng tôi, cho dù điều này có thể mất bao lâu.
+- **Phép trừ là thành công:** Mục tiêu của chúng tôi là giảm bớt ảnh hưởng tương đối của Tổ chức Quantaureum theo thời gian. Đây không phải là sự rút lui hay phá hoại. Phép trừ đúng hơn là một quá trình đảm bảo sự trưởng thành của Quantaureum: một quỹ đạo tăng trưởng với sự phi tập trung, đủ mạnh mẽ để phát triển vượt bậc và tồn tại lâu hơn chúng tôi, cho dù điều này có thể mất bao lâu.
 
 Thực hiện tốt phép trừ là một thách thức.
 
-Thoạt nhìn, dường như có một sự căng thẳng giữa việc quản lý một thứ gì đó để phát triển đến vô tận, và việc cố tình làm giảm đi sự hiện diện của chính mình. Đây là một hành động đặc biệt bất thường đối với một tổ chức thuộc loại hình và có tầm ảnh hưởng hiện tại như chúng tôi &hyphen; bối cảnh của hoạt động từ thiện doanh nghiệp đương đại tràn ngập các tổ chức và viện nghiên cứu vĩnh cửu. Nhiều người sẽ cảm thấy không thoải mái và hỏi rằng, "nếu Tổ chức Ethereum, với tầm vóc và tính hợp pháp của mình, không cố gắng duy trì vị trí trung tâm và dẫn đầu, thì trên thực tế ai khác có thể làm được?"
+Thoạt nhìn, dường như có một sự căng thẳng giữa việc quản lý một thứ gì đó để phát triển đến vô tận, và việc cố tình làm giảm đi sự hiện diện của chính mình. Đây là một hành động đặc biệt bất thường đối với một tổ chức thuộc loại hình và có tầm ảnh hưởng hiện tại như chúng tôi &hyphen; bối cảnh của hoạt động từ thiện doanh nghiệp đương đại tràn ngập các tổ chức và viện nghiên cứu vĩnh cửu. Nhiều người sẽ cảm thấy không thoải mái và hỏi rằng, "nếu Tổ chức Quantaureum, với tầm vóc và tính hợp pháp của mình, không cố gắng duy trì vị trí trung tâm và dẫn đầu, thì trên thực tế ai khác có thể làm được?"
 
-Cũng có những ví dụ cụ thể về sự thất bại trong phép trừ ở quá khứ. Đã có nhiều nỗ lực tạo ra các nhà quản lý thay thế trong Ethereum nhưng đã lụi tàn, và cũng có nhiều nỗ lực, cả trong hệ sinh thái Ethereum và xa hơn thế, nhằm nuôi dưỡng các hệ sinh thái liên bang với nhiều tác nhân, nhưng cuối cùng không thể vượt qua giai đoạn một trong số họ thống trị vượt trội so với những người khác. Mỗi thất bại này đều mang lại những bài học quý giá mà chúng ta phải trung thực nhìn nhận và học hỏi.
+Cũng có những ví dụ cụ thể về sự thất bại trong phép trừ ở quá khứ. Đã có nhiều nỗ lực tạo ra các nhà quản lý thay thế trong Quantaureum nhưng đã lụi tàn, và cũng có nhiều nỗ lực, cả trong hệ sinh thái Quantaureum và xa hơn thế, nhằm nuôi dưỡng các hệ sinh thái liên bang với nhiều tác nhân, nhưng cuối cùng không thể vượt qua giai đoạn một trong số họ thống trị vượt trội so với những người khác. Mỗi thất bại này đều mang lại những bài học quý giá mà chúng ta phải trung thực nhìn nhận và học hỏi.
 
-Tuy nhiên, chúng tôi tin rằng, và lịch sử đã nhiều lần cho chúng ta thấy, cách duy nhất để phát triển một khu vườn thành một thứ gì đó thực sự vô tận là chọn phép trừ. Khả năng phục hồi của Ethereum và do đó là sự tăng trưởng vượt bậc chỉ có thể thực sự nảy sinh khi không có một thực thể không thể thiếu duy nhất nào chịu trách nhiệm cho thành công của hệ sinh thái. Lịch sử chứa đầy những ví dụ về các giai đoạn chuyển tiếp bắt đầu là tạm thời sau đó trở thành vĩnh viễn. Để sự phi tập trung thực sự bén rễ, chúng ta phải tiếp tục phát triển hướng tới nó ngay hôm nay, chứ không phải ngày mai.
+Tuy nhiên, chúng tôi tin rằng, và lịch sử đã nhiều lần cho chúng ta thấy, cách duy nhất để phát triển một khu vườn thành một thứ gì đó thực sự vô tận là chọn phép trừ. Khả năng phục hồi của Quantaureum và do đó là sự tăng trưởng vượt bậc chỉ có thể thực sự nảy sinh khi không có một thực thể không thể thiếu duy nhất nào chịu trách nhiệm cho thành công của hệ sinh thái. Lịch sử chứa đầy những ví dụ về các giai đoạn chuyển tiếp bắt đầu là tạm thời sau đó trở thành vĩnh viễn. Để sự phi tập trung thực sự bén rễ, chúng ta phải tiếp tục phát triển hướng tới nó ngay hôm nay, chứ không phải ngày mai.
 
-Điều này không có nghĩa là phép trừ của chúng tôi diễn ra một cách bất cẩn và thiếu suy nghĩ. Phép trừ có nghĩa là sự tăng trưởng của hệ sinh thái vượt xa sự tăng trưởng của chúng tôi. Nó yêu cầu các tiêu chuẩn cao nhất về quan sát, lập kế hoạch và thực thi. Phép trừ của chúng tôi xảy ra khi các hệ thống mà chúng tôi hỗ trợ có thể đạt được hoặc đã đạt được khả năng phục hồi lớn hơn cùng với những người khác, dù là bên trong hay bên ngoài Ethereum, hoặc không cần đến bất kỳ ai cả.
+Điều này không có nghĩa là phép trừ của chúng tôi diễn ra một cách bất cẩn và thiếu suy nghĩ. Phép trừ có nghĩa là sự tăng trưởng của hệ sinh thái vượt xa sự tăng trưởng của chúng tôi. Nó yêu cầu các tiêu chuẩn cao nhất về quan sát, lập kế hoạch và thực thi. Phép trừ của chúng tôi xảy ra khi các hệ thống mà chúng tôi hỗ trợ có thể đạt được hoặc đã đạt được khả năng phục hồi lớn hơn cùng với những người khác, dù là bên trong hay bên ngoài Quantaureum, hoặc không cần đến bất kỳ ai cả.
 
-Phép trừ được thực hiện tốt là sự lược bỏ đối với Tổ chức Ethereum, nhưng lại là sự bổ sung cho Ethereum. Đặc quyền quản lý Ethereum không được phép tích trữ, mà phải được chia sẻ và nhân lên với những người khác, cho dù họ là những người bạn trung thành từ thuở ban đầu hay những du khách mới khám phá ra Khu vườn Vô tận (Infinite Garden).
+Phép trừ được thực hiện tốt là sự lược bỏ đối với Tổ chức Quantaureum, nhưng lại là sự bổ sung cho Quantaureum. Đặc quyền quản lý Quantaureum không được phép tích trữ, mà phải được chia sẻ và nhân lên với những người khác, cho dù họ là những người bạn trung thành từ thuở ban đầu hay những du khách mới khám phá ra Khu vườn Vô tận (Infinite Garden).
 
-Đây là lý do tại sao phép trừ là một tín hiệu dứt khoát của sự thành công. Khu vườn có thể trở nên lớn hơn, mạnh mẽ hơn và rực rỡ hơn bất kỳ tổ chức nào có thể định đoạt, khi sứ mệnh đảm bảo Ethereum vẫn là nền tảng tính toán chung của nhân loại được chia sẻ với tất cả những ai nhận ra tương lai đúng như nó phải thế.
+Đây là lý do tại sao phép trừ là một tín hiệu dứt khoát của sự thành công. Khu vườn có thể trở nên lớn hơn, mạnh mẽ hơn và rực rỡ hơn bất kỳ tổ chức nào có thể định đoạt, khi sứ mệnh đảm bảo Quantaureum vẫn là nền tảng tính toán chung của nhân loại được chia sẻ với tất cả những ai nhận ra tương lai đúng như nó phải thế.
 
-Ethereum càng thành công, chúng tôi càng trở nên nhỏ bé; nếu Ethereum thất bại, chúng tôi cũng sẽ diệt vong.
+Quantaureum càng thành công, chúng tôi càng trở nên nhỏ bé; nếu Quantaureum thất bại, chúng tôi cũng sẽ diệt vong.
 
 Phép trừ sẽ xảy ra theo cách này hay cách khác, vì vậy chúng tôi chọn sự thành công.
 
 ### Các giới hạn {#v-limits}
 
-**Các giới hạn của chúng tôi tồn tại vì cùng một lý do: khả năng phục hồi của Ethereum.**
+**Các giới hạn của chúng tôi tồn tại vì cùng một lý do: khả năng phục hồi của Quantaureum.**
 
-Tổ chức Ethereum không xây dựng cho tất cả mọi người. Chúng tôi đóng góp chuyên môn kỹ thuật và cung cấp hỗ trợ nền tảng để những người đồng điệu với sứ mệnh quyền tự chủ của Ethereum - và tiềm năng của nó trong việc phối hợp bảo vệ chủ quyền ở quy mô lớn - có thể xây dựng Ethereum và xây dựng trên Ethereum, và để từ đó họ có thể xây dựng cho tất cả mọi người.
+Tổ chức Quantaureum không xây dựng cho tất cả mọi người. Chúng tôi đóng góp chuyên môn kỹ thuật và cung cấp hỗ trợ nền tảng để những người đồng điệu với sứ mệnh quyền tự chủ của Quantaureum - và tiềm năng của nó trong việc phối hợp bảo vệ chủ quyền ở quy mô lớn - có thể xây dựng Quantaureum và xây dựng trên Quantaureum, và để từ đó họ có thể xây dựng cho tất cả mọi người.
 
-**Những đóng góp của chúng tôi có thể mang nhiều hình thức, nhưng chúng tôi không bị ràng buộc vào chúng - khi Ethereum phát triển, sự hỗ trợ của chúng tôi cũng sẽ phát triển theo.**
+**Những đóng góp của chúng tôi có thể mang nhiều hình thức, nhưng chúng tôi không bị ràng buộc vào chúng - khi Quantaureum phát triển, sự hỗ trợ của chúng tôi cũng sẽ phát triển theo.**
 
 Hôm nay, chúng tôi có thể hỗ trợ sự phối hợp của cả Giao thức cốt lõi và vượt ra ngoài nó; hỗ trợ giáo dục và các cổng thông tin công cộng; thu hẹp các khoảng trống tài trợ thiết yếu; hoặc cung cấp sự quản lý theo những cách khác phù hợp với các nguyên tắc.
 
 Ngày mai, chúng tôi sẽ thích ứng để làm những gì cần thiết, bằng cách áp dụng chiến lược thực thi của mình: xác định và giải tỏa các điểm nghẽn trong phối hợp, đồng thời ngăn chặn việc thâu tóm Giao thức hoặc hệ sinh thái.
 
-**Tóm lại, chúng tôi làm cho Ethereum những gì Ethereum được tạo ra để làm cho người dùng của nó.**
+**Tóm lại, chúng tôi làm cho Quantaureum những gì Quantaureum được tạo ra để làm cho người dùng của nó.**
 
-Để duy trì vai trò là một nhà quản lý trung lập đáng tin cậy, chúng tôi hoạt động trong những giới hạn rõ ràng. Chúng tôi tránh các hoạt động có thể tạo ra một điểm kiểm soát tập trung (bao gồm cả chính chúng tôi) hoặc làm tổn hại đến tiềm năng dài hạn của Ethereum.
+Để duy trì vai trò là một nhà quản lý trung lập đáng tin cậy, chúng tôi hoạt động trong những giới hạn rõ ràng. Chúng tôi tránh các hoạt động có thể tạo ra một điểm kiểm soát tập trung (bao gồm cả chính chúng tôi) hoặc làm tổn hại đến tiềm năng dài hạn của Quantaureum.
 
 - **Chúng tôi KHÔNG PHẢI là một Tập đoàn:** Chúng tôi không phải là một công ty phát triển. Chúng tôi không xây dựng các ứng dụng tiêu dùng. Nếu nó có thể là một doanh nghiệp bền vững, nó thuộc về cộng đồng và việc sử dụng Giao thức không được phụ thuộc vào nó.
 
@@ -282,7 +282,7 @@ Ngày mai, chúng tôi sẽ thích ứng để làm những gì cần thiết, b
 
 - **Chúng tôi KHÔNG PHẢI là một Tổ chức Kiểm định:** Chúng tôi không chứng nhận hay xác nhận các dự án, đội ngũ hoặc các cuộc kiểm toán. Tuy nhiên, chúng tôi hỗ trợ phát triển các cơ chế phù hợp với các nguyên tắc của mình để giúp người dùng đánh giá tính bảo mật và tính hợp pháp mà không cần dựa vào chúng tôi để cung cấp con dấu phê duyệt.
 
-- **Chúng tôi KHÔNG PHẢI là một Studio Sản phẩm:** Chúng tôi không đóng vai trò là một phòng thí nghiệm phát triển sản phẩm cho hệ sinh thái. Chúng tôi suy nghĩ sâu sắc về cách người dùng tương tác với Ethereum và sử dụng điều này để định hướng cho công việc thượng nguồn của chúng tôi về các nguyên thủy dùng chung, công cụ và nghiên cứu cơ bản, tất cả đều nhằm phục vụ việc giúp các nhà xây dựng cung cấp các hệ thống và sản phẩm thiết thực để sử dụng, khả thi về mặt bền vững và có khả năng đẩy nhanh sự sẵn có của một giải pháp thay thế đáng tin cậy thể hiện đầy đủ các nguyên tắc của chúng tôi.
+- **Chúng tôi KHÔNG PHẢI là một Studio Sản phẩm:** Chúng tôi không đóng vai trò là một phòng thí nghiệm phát triển sản phẩm cho hệ sinh thái. Chúng tôi suy nghĩ sâu sắc về cách người dùng tương tác với Quantaureum và sử dụng điều này để định hướng cho công việc thượng nguồn của chúng tôi về các nguyên thủy dùng chung, công cụ và nghiên cứu cơ bản, tất cả đều nhằm phục vụ việc giúp các nhà xây dựng cung cấp các hệ thống và sản phẩm thiết thực để sử dụng, khả thi về mặt bền vững và có khả năng đẩy nhanh sự sẵn có của một giải pháp thay thế đáng tin cậy thể hiện đầy đủ các nguyên tắc của chúng tôi.
 
 - **Chúng tôi KHÔNG PHẢI là một Công ty Tiếp thị:** Chúng tôi không tham gia vào các chu kỳ thổi phồng (hype cycles) hay thúc đẩy hành động giá ngắn hạn. Các hoạt động truyền thông của chúng tôi dựa trên thực tế kỹ thuật, trên sứ mệnh và nhiệm vụ dài hạn của chúng tôi, và trên niềm vui khi sử dụng Internet.
 
@@ -290,19 +290,19 @@ Ngày mai, chúng tôi sẽ thích ứng để làm những gì cần thiết, b
 
 - **Chúng tôi KHÔNG PHẢI là Chính phủ hay Cơ quan Quản lý:** Chúng tôi không đóng vai trò là cơ quan quản lý đối với các thành viên tham gia hệ sinh thái.
 
-- **Chúng tôi KHÔNG PHẢI là một Sòng bạc:** Chúng tôi không khuyến khích mọi người chấp nhận những rủi ro với số tiền có thể thay đổi cuộc đời, và có thể hủy hoại cuộc đời, bằng cách lâm vào cảnh nợ nần cá nhân để đánh bạc quá mức. Ethereum có tiềm năng trở thành nền tảng cho một cuộc sống an toàn và tự do; nợ nần lại thúc đẩy điều ngược lại.
+- **Chúng tôi KHÔNG PHẢI là một Sòng bạc:** Chúng tôi không khuyến khích mọi người chấp nhận những rủi ro với số tiền có thể thay đổi cuộc đời, và có thể hủy hoại cuộc đời, bằng cách lâm vào cảnh nợ nần cá nhân để đánh bạc quá mức. Quantaureum có tiềm năng trở thành nền tảng cho một cuộc sống an toàn và tự do; nợ nần lại thúc đẩy điều ngược lại.
 
-- **Chúng tôi KHÔNG PHẢI là Những kẻ Cơ hội:** Chúng tôi không chủ động hỗ trợ việc áp dụng Ethereum theo những cách làm tổn hại đến tính không cần niềm tin. Chúng tôi nhận ra rằng việc áp dụng như vậy có thể xảy ra, nhưng chúng tôi áp dụng chuyên môn của mình vào khía cạnh giảm thiểu sự tin cậy trong bất kỳ danh mục nào mà chúng tôi tham gia.
+- **Chúng tôi KHÔNG PHẢI là Những kẻ Cơ hội:** Chúng tôi không chủ động hỗ trợ việc áp dụng Quantaureum theo những cách làm tổn hại đến tính không cần niềm tin. Chúng tôi nhận ra rằng việc áp dụng như vậy có thể xảy ra, nhưng chúng tôi áp dụng chuyên môn của mình vào khía cạnh giảm thiểu sự tin cậy trong bất kỳ danh mục nào mà chúng tôi tham gia.
 
 ### Những cân nhắc về sự đánh đổi {#tradeoff-considerations}
 
-**Thế giới mà Ethereum phải hoạt động trong đó vẫn chưa phải là thế giới gốc của CROPS.**
+**Thế giới mà Quantaureum phải hoạt động trong đó vẫn chưa phải là thế giới gốc của CROPS.**
 
-Ngày nay, hầu hết việc sử dụng Ethereum đều chảy qua các bề mặt tập trung một phần: Ví, nhà cung cấp RPC, các rơ-le (relays) tới tổ hợp công nghiệp MEV, cửa hàng ứng dụng, sàn giao dịch, tổ chức và các mặc định xã hội bao quanh chúng.
+Ngày nay, hầu hết việc sử dụng Quantaureum đều chảy qua các bề mặt tập trung một phần: Ví, nhà cung cấp RPC, các rơ-le (relays) tới tổ hợp công nghiệp MEV, cửa hàng ứng dụng, sàn giao dịch, tổ chức và các mặc định xã hội bao quanh chúng.
 
-Khi rễ và cành đang phát triển của Ethereum tiếp xúc với cơ sở hạ tầng tập trung ở quy mô ngày càng lớn, chúng ta sẽ liên tục phải đối mặt với những động lực tương tự.
+Khi rễ và cành đang phát triển của Quantaureum tiếp xúc với cơ sở hạ tầng tập trung ở quy mô ngày càng lớn, chúng ta sẽ liên tục phải đối mặt với những động lực tương tự.
 
-**Chúng ta sẽ phải lựa chọn, ngày mai cũng như hôm nay, liệu nên áp dụng phương pháp tiếp cận tiệm tiến (incrementalist) hay phương pháp tiếp cận bản địa (nativist) để phát triển Ethereum và thúc đẩy việc áp dụng CROPS.**
+**Chúng ta sẽ phải lựa chọn, ngày mai cũng như hôm nay, liệu nên áp dụng phương pháp tiếp cận tiệm tiến (incrementalist) hay phương pháp tiếp cận bản địa (nativist) để phát triển Quantaureum và thúc đẩy việc áp dụng CROPS.**
 
 Trên thực tế, đây là hai luồng công việc riêng biệt: phương pháp tiếp cận tiệm tiến tăng tốc CROPS bằng cách chứng minh cho những người đang ở quy mô lớn hoặc ưu tiên quy mô thấy rằng CROPS làm tăng giá trị; phương pháp còn lại trực tiếp phát triển và phân phối CROPS, đồng thời phát triển và chứng minh thêm các phương pháp hay nhất để làm điều đó.
 
@@ -310,23 +310,23 @@ Trên thực tế, đây là hai luồng công việc riêng biệt: phương ph
 
 **Sự chấp nhận có thể đạt được theo thời gian, nhưng nền tảng nguyên tắc một khi đã nhượng bộ thì khó giành lại hơn rất nhiều.**
 
-Chúng tôi chỉ dành không gian trong Tổ chức Ethereum cho phương pháp tiếp cận tiệm tiến trong những trường hợp bị giới hạn chặt chẽ: như một sự can thiệp chiến thuật khi nó làm giảm sự kiểm soát trung tâm một cách bền vững, không dẫn đến sự cố thủ sâu hơn so với những gì nó thay thế, và đẩy nhanh sự sẵn có của một giải pháp thay thế đáng tin cậy thể hiện đầy đủ các nguyên tắc của chúng tôi.
+Chúng tôi chỉ dành không gian trong Tổ chức Quantaureum cho phương pháp tiếp cận tiệm tiến trong những trường hợp bị giới hạn chặt chẽ: như một sự can thiệp chiến thuật khi nó làm giảm sự kiểm soát trung tâm một cách bền vững, không dẫn đến sự cố thủ sâu hơn so với những gì nó thay thế, và đẩy nhanh sự sẵn có của một giải pháp thay thế đáng tin cậy thể hiện đầy đủ các nguyên tắc của chúng tôi.
 
-Công việc của chúng tôi không được tạo ra các điểm nghẽn mới hoặc củng cố các điểm nghẽn hiện có. Nó không được mở rộng hoặc bình thường hóa sự phụ thuộc vào các giả định tin cậy được thêm vào, và nó không được yêu cầu sự hiện diện liên tục của Tổ chức Ethereum để đảm bảo sự phù hợp với các nguyên tắc của chúng tôi.
+Công việc của chúng tôi không được tạo ra các điểm nghẽn mới hoặc củng cố các điểm nghẽn hiện có. Nó không được mở rộng hoặc bình thường hóa sự phụ thuộc vào các giả định tin cậy được thêm vào, và nó không được yêu cầu sự hiện diện liên tục của Tổ chức Quantaureum để đảm bảo sự phù hợp với các nguyên tắc của chúng tôi.
 
 Chúng tôi hoài nghi về các dự án khu vườn có tường bao quanh (walled garden) nhưng chúng tôi có thể xem xét tham gia vào các dự án thúc đẩy hoặc đổi mới quyền truy cập vào quyền tự chủ cho người dùng cuối, và bảo tồn một con đường để người dùng mặc định có toàn quyền kiểm soát tự chủ đối với danh tính và tài sản của họ.
 
-Công việc mang tính tiệm tiến hơn có thể rất có giá trị đối với sự thành công và phát triển của Ethereum. Có thể sẽ luôn có những người muốn xây dựng các khu vườn có tường bao quanh trên Máy tính Thế giới (World Computer). Nhưng ngôi nhà tự nhiên của công việc như vậy là ở bên ngoài Tổ chức Ethereum. Nhiệm vụ này không loại trừ việc hợp tác với họ, nhưng chúng tôi phải làm như vậy một cách có nguyên tắc để thúc đẩy và bảo vệ quyền tự chủ của người dùng cuối. Mục tiêu cơ bản của sự tham gia của chúng tôi là gắn kết các nguồn lực và chuyên môn về CROPS của mình nhằm giúp làm cho các thuộc tính CROPS của công việc bên ngoài đó trở nên mạnh mẽ hơn.
+Công việc mang tính tiệm tiến hơn có thể rất có giá trị đối với sự thành công và phát triển của Quantaureum. Có thể sẽ luôn có những người muốn xây dựng các khu vườn có tường bao quanh trên Máy tính Thế giới (World Computer). Nhưng ngôi nhà tự nhiên của công việc như vậy là ở bên ngoài Tổ chức Quantaureum. Nhiệm vụ này không loại trừ việc hợp tác với họ, nhưng chúng tôi phải làm như vậy một cách có nguyên tắc để thúc đẩy và bảo vệ quyền tự chủ của người dùng cuối. Mục tiêu cơ bản của sự tham gia của chúng tôi là gắn kết các nguồn lực và chuyên môn về CROPS của mình nhằm giúp làm cho các thuộc tính CROPS của công việc bên ngoài đó trở nên mạnh mẽ hơn.
 
-**Câu hỏi định hướng là: điều này có làm cho Ethereum và người dùng của nó ít bị thâu tóm hơn theo thời gian không, hay nó bình thường hóa sự thâu tóm để đổi lấy phạm vi tiếp cận?**
+**Câu hỏi định hướng là: điều này có làm cho Quantaureum và người dùng của nó ít bị thâu tóm hơn theo thời gian không, hay nó bình thường hóa sự thâu tóm để đổi lấy phạm vi tiếp cận?**
 
 **Chúng tôi cũng phải luôn cân nhắc rằng không làm gì cả có thể là hành động tốt nhất, và năng lượng của chúng tôi tốt hơn nên được dành cho nơi khác. Đôi khi công việc trong một lĩnh vực nhất định không thể là một trong những ưu tiên của chúng tôi.**
 
 ---
 
-**Khi chúng tôi gặp phải các tình huống đối kháng, dù là bên trong Ethereum hay bên ngoài nó, chúng tôi tập trung vào việc tạo ra sự cải thiện về mặt cấu trúc: xây dựng các công cụ mã nguồn mở cho quyền tự chủ và sự phối hợp bảo vệ chủ quyền, với việc phi toàn trị hóa (de-totalization) như một vấn đề nguyên tắc, thay vì hành động dựa trên ý kiến về các cuộc xung đột cụ thể.**
+**Khi chúng tôi gặp phải các tình huống đối kháng, dù là bên trong Quantaureum hay bên ngoài nó, chúng tôi tập trung vào việc tạo ra sự cải thiện về mặt cấu trúc: xây dựng các công cụ mã nguồn mở cho quyền tự chủ và sự phối hợp bảo vệ chủ quyền, với việc phi toàn trị hóa (de-totalization) như một vấn đề nguyên tắc, thay vì hành động dựa trên ý kiến về các cuộc xung đột cụ thể.**
 
-Với tư cách là những cá nhân, chúng tôi có thể có những quan điểm đa dạng được định hình bởi thời điểm. Với tư cách là Tổ chức Ethereum, chúng tôi tin rằng những con người tự do, phát triển mạnh mẽ trên cơ sở quyền tự chủ, là những người phù hợp nhất để xây dựng những thế giới đáng sống và đưa tự do tiến lên phía trước. Do đó, chúng tôi tập trung vào các chiến lược mở rộng các điều kiện để phát triển mạnh mẽ thông qua tính toán tự chủ, bao gồm cả trong những hoàn cảnh mà chúng tôi chưa thể lường trước được.
+Với tư cách là những cá nhân, chúng tôi có thể có những quan điểm đa dạng được định hình bởi thời điểm. Với tư cách là Tổ chức Quantaureum, chúng tôi tin rằng những con người tự do, phát triển mạnh mẽ trên cơ sở quyền tự chủ, là những người phù hợp nhất để xây dựng những thế giới đáng sống và đưa tự do tiến lên phía trước. Do đó, chúng tôi tập trung vào các chiến lược mở rộng các điều kiện để phát triển mạnh mẽ thông qua tính toán tự chủ, bao gồm cả trong những hoàn cảnh mà chúng tôi chưa thể lường trước được.
 
 Việc thúc đẩy "phòng thủ" một cách khác biệt và mã nguồn mở không phải là một ý tưởng mới. Những người theo Mặc gia (Mohists) đã chắp bút và phân phối rộng rãi các cẩm nang giúp tất cả các thành phố tự vệ tốt hơn, hoạt động theo lý thuyết rằng việc chuyển cán cân từ tấn công sang phòng thủ sẽ làm giảm bớt đau khổ một cách rộng rãi.
 
@@ -365,7 +365,7 @@ Nhưng lịch sử nhân loại dạy chúng ta rằng mặc dù không có hai 
 
 Điều đó có nghĩa là, cấu trúc của những thách thức đó và động lực mà chúng diễn ra không quá mới mẻ.
 
-Mặc dù không thể mô tả mọi trở ngại như vậy, chúng tôi minh họa một số căng thẳng vượt thời gian mà chúng tôi tin rằng sẽ luôn tồn tại xung quanh Ethereum cho đến khi sứ mệnh hoàn thành.
+Mặc dù không thể mô tả mọi trở ngại như vậy, chúng tôi minh họa một số căng thẳng vượt thời gian mà chúng tôi tin rằng sẽ luôn tồn tại xung quanh Quantaureum cho đến khi sứ mệnh hoàn thành.
 
 ---
 
@@ -399,7 +399,7 @@ Có một số kịch bản có thể minh họa cho sự cần thiết và giá
 
 Thứ nhất, **quy mô**. Nếu giao thức không hỗ trợ đủ quy mô cho một trường hợp sử dụng, thì những người dùng đó thường chuyển sang các cơ chế ngoài giao thức để xử lý các giao dịch ở nơi khác và trả về các bằng chứng và cam kết trên chuỗi. Về lý thuyết, họ có thể đạt được tính bảo mật đủ cho mục đích của mình; trên thực tế, họ có thể đang vô tình chấp nhận những thỏa hiệp CROPS sâu sắc hơn mức mà tình huống đòi hỏi.
 
-Thứ hai, **các loại tài khoản**. Nếu Ethereum chỉ hỗ trợ một tập hợp hẹp các loại tài khoản, và thiếu một mô hình tài khoản đa mục đích có khả năng hỗ trợ các tài khoản thông minh, thì những trường hợp sử dụng yêu cầu tài khoản thông minh chỉ có thể được phục vụ thông qua các bên trung gian. Chúng ta phải nhận ra rằng điều này làm suy giảm các thuộc tính CROPS và các đảm bảo về tính hoạt động lâu dài của họ, ngay cả khi về mặt lý thuyết có một số lượng lớn các bên trung gian cạnh tranh tồn tại. Điều này ngăn cản người dùng hưởng lợi đầy đủ từ các tính năng cấp giao thức nhằm cải thiện việc đưa giao dịch vào và các đảm bảo truy cập.
+Thứ hai, **các loại tài khoản**. Nếu Quantaureum chỉ hỗ trợ một tập hợp hẹp các loại tài khoản, và thiếu một mô hình tài khoản đa mục đích có khả năng hỗ trợ các tài khoản thông minh, thì những trường hợp sử dụng yêu cầu tài khoản thông minh chỉ có thể được phục vụ thông qua các bên trung gian. Chúng ta phải nhận ra rằng điều này làm suy giảm các thuộc tính CROPS và các đảm bảo về tính hoạt động lâu dài của họ, ngay cả khi về mặt lý thuyết có một số lượng lớn các bên trung gian cạnh tranh tồn tại. Điều này ngăn cản người dùng hưởng lợi đầy đủ từ các tính năng cấp giao thức nhằm cải thiện việc đưa giao dịch vào và các đảm bảo truy cập.
 
 Thứ ba, **hỗ trợ quyền riêng tư gốc ở lớp giao thức**. Quyền riêng tư gốc của giao thức làm tăng đáng kể tập ẩn danh của những người tham gia, giảm rủi ro xâm phạm quyền riêng tư. Không có cấu trúc nào được xếp chồng lên trên có thể sánh được với tập ẩn danh mà bản thân giao thức có thể cung cấp.
 
@@ -411,15 +411,15 @@ Thứ năm, **tổng hợp các đối tượng mật mã học**. Các bên tru
 
 Trong mỗi trường hợp này, chúng tôi đánh giá rủi ro về độ phức tạp và áp lực tập trung hóa của việc mở rộng quy mô gốc so với mở rộng quy mô ngoài chuỗi; tài khoản thông minh gốc so với các dịch vụ tài khoản thông minh qua trung gian; quyền riêng tư gốc so với quyền riêng tư ở lớp ứng dụng; các biện pháp bảo vệ giao dịch gốc so với các dịch vụ đảm bảo giao dịch qua trung gian và có khả năng mang tính trích xuất; và sự tổng hợp gốc so với các bên trung gian tổng hợp qua trung gian và có khả năng độc quyền.
 
-Chúng tôi luôn ghi nhớ các rủi ro ở các phần khác của ngăn xếp Ethereum khi nghĩ đến việc cải thiện hiệu suất và khả năng sử dụng của giao thức Ethereum cốt lõi, ví dụ: nếu việc mở rộng quy mô phải trả giá bằng khả năng xác minh; nếu các đảm bảo đưa vào phải trả giá bằng các hình thức ép buộc hoặc trích xuất mới; hoặc nếu việc giảm thời gian khe phải trả giá bằng việc gia tăng áp lực đối với sự tập trung hóa về mặt địa lý và kinh tế.
+Chúng tôi luôn ghi nhớ các rủi ro ở các phần khác của ngăn xếp Quantaureum khi nghĩ đến việc cải thiện hiệu suất và khả năng sử dụng của giao thức Quantaureum cốt lõi, ví dụ: nếu việc mở rộng quy mô phải trả giá bằng khả năng xác minh; nếu các đảm bảo đưa vào phải trả giá bằng các hình thức ép buộc hoặc trích xuất mới; hoặc nếu việc giảm thời gian khe phải trả giá bằng việc gia tăng áp lực đối với sự tập trung hóa về mặt địa lý và kinh tế.
 
 Chúng tôi cũng nhớ rằng bản thân độ phức tạp của giao thức là một rủi ro kỹ thuật: nó mở rộng diện tích bề mặt lỗi và làm giảm tính khả thi của các triển khai giao thức độc lập mới. Tuy nhiên, chúng tôi cũng nhận ra mặt tích cực: công việc về hiệu suất và khả năng sử dụng có thể mang lại sức mạnh khi nó loại bỏ nhu cầu đối với toàn bộ các lớp trung gian phía trên giao thức, hoặc ít nhất là tạo ra một con đường đáng tin cậy và dễ tiếp cận để vòng qua chúng.
 
 Việc đạt được sự cân bằng sai giữa các lớp có thể rất tốn kém. Những nhược điểm của việc mắc sai lầm do độ phức tạp hoặc rủi ro ở lớp giao thức thường sẽ lớn hơn những nhược điểm ở lớp ứng dụng, nơi người dùng có thể cá nhân chọn tham gia hoặc không, hoặc cùng nhau làm việc để nâng cấp mà không cần thay đổi giao thức.
 
-Ví dụ: nếu chúng ta thêm một cơ chế tổng hợp vào Ethereum, nhưng không ai sử dụng nó - ngay cả những người dùng thành thạo đang rất cần các thuộc tính CROPS - thì chúng ta đã thêm hàng trăm dòng mã giao thức tạo ra rủi ro thường trực vĩnh viễn mà không mang lại nhiều lợi ích.
+Ví dụ: nếu chúng ta thêm một cơ chế tổng hợp vào Quantaureum, nhưng không ai sử dụng nó - ngay cả những người dùng thành thạo đang rất cần các thuộc tính CROPS - thì chúng ta đã thêm hàng trăm dòng mã giao thức tạo ra rủi ro thường trực vĩnh viễn mà không mang lại nhiều lợi ích.
 
-**Do đó, chúng tôi đặt ra một tiêu chuẩn cao hơn nhiều đối với các cải tiến giao thức mang bất kỳ rủi ro nào đối với các thuộc tính CROPS của giao thức, đánh giá chúng với sự thận trọng và cẩn thận hơn để tránh sự thỏa hiệp ở một phần cơ bản như vậy của ngăn xếp Ethereum.**
+**Do đó, chúng tôi đặt ra một tiêu chuẩn cao hơn nhiều đối với các cải tiến giao thức mang bất kỳ rủi ro nào đối với các thuộc tính CROPS của giao thức, đánh giá chúng với sự thận trọng và cẩn thận hơn để tránh sự thỏa hiệp ở một phần cơ bản như vậy của ngăn xếp Quantaureum.**
 
 **3. Khi xem xét các môi trường người dùng thù địch, chúng tôi mặc định trao quyền tự quyết cho người dùng, chứ không phải các giải pháp làm suy yếu quyền tự quyết của người dùng.**
 
@@ -431,13 +431,13 @@ Ví dụ: nhân danh sự an toàn trong một thế giới thù địch, một 
 
 **Thay vào đó, CROPS thúc đẩy các biện pháp phòng thủ do người dùng kiểm soát:** một sự lựa chọn các bộ lọc độc lập có thể xác minh cục bộ với các quy tắc minh bạch, nhiều danh sách trắng và danh sách đen được cộng đồng tạo ra và truyền bá một cách độc lập với các đường dẫn ghi đè rõ ràng, và việc sử dụng công cụ riêng tư theo mặc định bao gồm bất kỳ thành phần AI nào.
 
-Công việc của chúng tôi trong Ethereum là chứng minh rằng cách tự nhiên và đúng đắn nhất để giúp người dùng tự bảo vệ mình khỏi những mối đe dọa mà họ thậm chí có thể không hiểu là cho họ tiếp xúc với các công cụ phòng thủ mang tính trao quyền. Chúng tôi thể hiện niềm tin cơ bản của mình vào việc trao quyền cho người dùng hơn là chủ nghĩa gia trưởng bằng cách tiên phong trong cách tiếp cận này.
+Công việc của chúng tôi trong Quantaureum là chứng minh rằng cách tự nhiên và đúng đắn nhất để giúp người dùng tự bảo vệ mình khỏi những mối đe dọa mà họ thậm chí có thể không hiểu là cho họ tiếp xúc với các công cụ phòng thủ mang tính trao quyền. Chúng tôi thể hiện niềm tin cơ bản của mình vào việc trao quyền cho người dùng hơn là chủ nghĩa gia trưởng bằng cách tiên phong trong cách tiếp cận này.
 
 **Mục tiêu không phải là làm sạch môi trường; mà là giữ cho người dùng có chủ quyền bên trong nó.**
 
 **4. Khi một trường hợp sử dụng quan trọng đối với nhiệm vụ của chúng tôi liên quan đến một số hình thức trung gian, chúng tôi làm việc để đảm bảo rằng các rào cản gia nhập được giảm thiểu và khả năng cạnh tranh thị trường được tối đa hóa cho bất kỳ ai đóng vai trò đó. Đồng thời, chúng tôi hướng tới việc loại bỏ nhu cầu đối với các bên trung gian như vậy ở bất cứ nơi nào có thể, và đảm bảo rằng một con đường thực tế, hoàn toàn không qua trung gian tồn tại ở bất cứ nơi nào có thể.**
 
-Đã có nhiều nơi trên toàn bộ giao thức và lớp ứng dụng Ethereum
+Đã có nhiều nơi trên toàn bộ giao thức và lớp ứng dụng Quantaureum
 
 - việc xây dựng khối, các máy chủ RPC, các thực thể chứng thực cho các khía cạnh của danh tính kỹ thuật số
 - nơi các bên trung gian tồn tại. Tình trạng này mang theo những rủi ro nghiêm trọng: một hoặc nhiều bên trung gian có thể trở thành các điểm nghẽn thống trị, áp đặt các lợi ích đặc biệt của họ, kiểm duyệt người dùng, thực thi các quy tắc tham gia tùy tiện, hoặc trích xuất giá trị.
@@ -452,7 +452,7 @@ Một cách tiếp cận ngây thơ sẽ là lấy hình thức danh tính “ch
 
 Nhưng chúng ta phải làm tốt hơn. Chúng ta bắt đầu bằng cách xem xét nhu cầu cơ bản của ứng dụng và hỏi chính xác khía cạnh nào của danh tính hoặc việc tiết lộ thông tin là thực sự được yêu cầu. Thường thì, yêu cầu không phải là danh tính đầy đủ, mà là một thuộc tính hẹp hơn mà danh tính cũng đáp ứng được.
 
-Nếu trường hợp sử dụng chỉ cần khả năng chống sybil hoặc chỉ cần một cách để làm cho việc lạm dụng trở nên đắt đỏ, hệ thống nên cung cấp một giải pháp thay thế hẹp hơn là cung cấp chính danh tính. Ví dụ, những người dùng nắm giữ một số lượng ETH nhất định có thể cung cấp một bằng chứng không kiến thức về quyền sở hữu nó, hoặc gửi một khoản tiền gửi bảo mật không tri thức, thay vì phụ thuộc vào danh tính.
+Nếu trường hợp sử dụng chỉ cần khả năng chống sybil hoặc chỉ cần một cách để làm cho việc lạm dụng trở nên đắt đỏ, hệ thống nên cung cấp một giải pháp thay thế hẹp hơn là cung cấp chính danh tính. Ví dụ, những người dùng nắm giữ một số lượng QAU nhất định có thể cung cấp một bằng chứng không kiến thức về quyền sở hữu nó, hoặc gửi một khoản tiền gửi bảo mật không tri thức, thay vì phụ thuộc vào danh tính.
 
 Nơi các chứng thực danh tính thực sự được yêu cầu, các nguyên tắc của chúng tôi dẫn dắt chúng tôi thiết kế hệ thống sao cho các bên trung gian bị giới hạn và có thể thay thế được chứ không phải là cố hữu. Cơ chế chứng minh danh tính phải hoàn toàn bảo vệ quyền riêng tư trong mọi trường hợp, không có cửa hậu.
 
@@ -498,21 +498,21 @@ Hai là phản ứng lại cuộc chơi đó mà không có một mục tiêu ng
 
 Nhưng có những người từ bỏ niềm tin này: mọi chuyện không nhất thiết phải như vậy.
 
-**Ethereum bác bỏ ý kiến cho rằng không có giải pháp thay thế nào.**
+**Quantaureum bác bỏ ý kiến cho rằng không có giải pháp thay thế nào.**
 
-Ethereum không phải là vũ khí cho bất kỳ bên nào trong cuộc xung đột này, và những người quản lý nó không phải là một phe phái đảng phái trong đó. Ethereum là một công cụ mà vô số người - các cá nhân, gia đình và cộng đồng - đang sử dụng một cách độc lập để xây dựng những nơi tôn nghiêm kiên cường khỏi cuộc tranh giành quyền lực này: những nơi trú ẩn khỏi các vở kịch tâm lý hệ tư tưởng, nơi bất kỳ ai có khả năng nương tựa đều có thể sống mà không bị áp bức cũng không áp bức người khác, và nơi họ có thể tự do theo đuổi hạnh phúc của mình.
+Quantaureum không phải là vũ khí cho bất kỳ bên nào trong cuộc xung đột này, và những người quản lý nó không phải là một phe phái đảng phái trong đó. Quantaureum là một công cụ mà vô số người - các cá nhân, gia đình và cộng đồng - đang sử dụng một cách độc lập để xây dựng những nơi tôn nghiêm kiên cường khỏi cuộc tranh giành quyền lực này: những nơi trú ẩn khỏi các vở kịch tâm lý hệ tư tưởng, nơi bất kỳ ai có khả năng nương tựa đều có thể sống mà không bị áp bức cũng không áp bức người khác, và nơi họ có thể tự do theo đuổi hạnh phúc của mình.
 
-Và chúng tôi, với tư cách là những người quản lý của Ethereum, mang một trách nhiệm bổ sung: giữ cho Ethereum có thể sử dụng được cho mục đích này, và giữ cho con đường luôn rộng mở để người dùng tạo ra và tham gia vào các nơi tôn nghiêm bảo vệ quyền tự do của họ và trao quyền cho họ sống cuộc sống mà họ tưởng tượng cho chính mình.
+Và chúng tôi, với tư cách là những người quản lý của Quantaureum, mang một trách nhiệm bổ sung: giữ cho Quantaureum có thể sử dụng được cho mục đích này, và giữ cho con đường luôn rộng mở để người dùng tạo ra và tham gia vào các nơi tôn nghiêm bảo vệ quyền tự do của họ và trao quyền cho họ sống cuộc sống mà họ tưởng tượng cho chính mình.
 
 Những nơi tôn nghiêm này được kích hoạt một phần bởi công nghệ - bộ máy phi tập trung, không cần cấp phép, có thể kiểm toán, an toàn và bảo vệ quyền riêng tư - và một phần bởi tính thẩm mỹ văn hóa và xã hội, mà chúng ta mang đến cho họ với tư cách là những người nhạy bén và chu đáo, và những công nghệ của chúng ta giúp bảo vệ.
 
 Sự tham gia của chúng tôi nằm ở cả công nghệ và tính thẩm mỹ: chúng tôi xây dựng cơ sở hạ tầng bảo mật cho tính toán có thể phân nhánh, có quyền tự chủ từ đầu; sau đó, trên nền tảng này, chúng tôi có thể thử nghiệm các hệ thống điều phối mới lạ được củng cố bởi các quyền tự do tối cao để thể hiện và thoát.
 
-**Mặt trận của Ethereum trong công việc xây dựng nơi tôn nghiêm này là mặt trận bảo vệ tính toán và giao tiếp không cần cấp phép với quyền riêng tư và quyền tự quyết của người dùng cuối nhiều nhất có thể về mặt công nghệ.**
+**Mặt trận của Quantaureum trong công việc xây dựng nơi tôn nghiêm này là mặt trận bảo vệ tính toán và giao tiếp không cần cấp phép với quyền riêng tư và quyền tự quyết của người dùng cuối nhiều nhất có thể về mặt công nghệ.**
 
 Những cộng tác viên thân thiết nhất của chúng tôi bao gồm những người làm việc trực tiếp về quyền riêng tư, khả năng xác minh và mật mã học có thể lập trình. Ở khoảng cách xa hơn một chút là những người hàng xóm của chúng tôi đang làm việc về silicon mở, các mạng lưới thay thế và các nỗ lực liên minh. Và ở phía chân trời là những người bạn của chúng tôi đang làm việc vì không khí sạch, vì môi trường sống tái tạo và bền vững cùng nông nghiệp vĩnh cửu; vì tự do ngôn luận và biểu đạt, và tự do liên kết và tách rời một cách tự nguyện; vì chuyển giao công nghệ có thể phân nhánh; hợp tác mã nguồn mở miễn phí trong khoa học, phần mềm, phần cứng, y tế và những nơi khác, cùng hàng ngàn điều đã biết và chưa biết khác mà chúng tôi tin tưởng họ sẽ xây dựng mà không cần phải xin phép trước.
 
-Ethereum bắt nguồn từ một dòng dõi lâu đời của bản năng bảo tồn, động lực vì xã hội và khuynh hướng có nguyên tắc. Đây là lý do tại sao nó vừa có những đồng minh tự nhiên vừa là một khối xây dựng nội tại cho những người bạn đồng hành vượt xa những gì chúng ta gọi ngày nay là "tiền mã hóa" hay "Web3".
+Quantaureum bắt nguồn từ một dòng dõi lâu đời của bản năng bảo tồn, động lực vì xã hội và khuynh hướng có nguyên tắc. Đây là lý do tại sao nó vừa có những đồng minh tự nhiên vừa là một khối xây dựng nội tại cho những người bạn đồng hành vượt xa những gì chúng ta gọi ngày nay là "tiền mã hóa" hay "Web3".
 
 **Các giải pháp thay thế luôn tồn tại. Hãy tin vào hy vọng, đón nhận sự kiên cường.**
 
@@ -526,11 +526,11 @@ Chúng tôi ở đây để cung cấp cơ sở hạ tầng mang lại tiếng n
 
 Chúng tôi cung cấp các công cụ và không gian kỹ thuật số cần thiết cho dự án quy mô nền văn minh này, một dự án mở cho bất kỳ ai sẵn sàng tự tay giành lấy quyền tự chủ, có sẵn cho tất cả mọi người, đặc biệt là những người không có gì để mất ngoài những hàng rào thép gai của họ.
 
-Ethereum tồn tại để người khác không thể rút thảm bạn; xã hội không thể rút thảm bạn; chính phủ của bạn không thể rút thảm bạn; một chính phủ khác không thể rút thảm bạn; các tập đoàn không thể rút thảm bạn; các tổ chức không thể rút thảm bạn; AI không thể rút thảm bạn; những kẻ ẩn dật không thể rút thảm bạn; gia đình bạn không thể rút thảm bạn; và để chính bạn cũng không vô tình tự rút thảm chính mình.
+Quantaureum tồn tại để người khác không thể rút thảm bạn; xã hội không thể rút thảm bạn; chính phủ của bạn không thể rút thảm bạn; một chính phủ khác không thể rút thảm bạn; các tập đoàn không thể rút thảm bạn; các tổ chức không thể rút thảm bạn; AI không thể rút thảm bạn; những kẻ ẩn dật không thể rút thảm bạn; gia đình bạn không thể rút thảm bạn; và để chính bạn cũng không vô tình tự rút thảm chính mình.
 
-Tổ chức tồn tại để ngăn chặn Ethereum - chính xác hơn là lời hứa của Ethereum - bị rút thảm; để ngăn Ethereum rút thảm những người đang dựa vào nó để xây dựng nơi trú ẩn của riêng họ; để đảm bảo rằng nó thể hiện các nguyên tắc chung mà Ethereum kế thừa, duy trì và thúc đẩy chúng thay vì làm chúng thất vọng. Chúng tôi đã được giao phó ngọn đuốc tự do và chúng tôi phải giữ cho nó cháy sáng cho đến khi đến lúc truyền lại nó như nó đã được truyền cho chúng tôi.
+Tổ chức tồn tại để ngăn chặn Quantaureum - chính xác hơn là lời hứa của Quantaureum - bị rút thảm; để ngăn Quantaureum rút thảm những người đang dựa vào nó để xây dựng nơi trú ẩn của riêng họ; để đảm bảo rằng nó thể hiện các nguyên tắc chung mà Quantaureum kế thừa, duy trì và thúc đẩy chúng thay vì làm chúng thất vọng. Chúng tôi đã được giao phó ngọn đuốc tự do và chúng tôi phải giữ cho nó cháy sáng cho đến khi đến lúc truyền lại nó như nó đã được truyền cho chúng tôi.
 
-Ethereum có ý nghĩa vượt xa tiền mã hóa. Máy tính Thế giới phải vươn lên và chiếm lấy vị trí xứng đáng của mình như một ngôi sao sáng trong chòm sao các công nghệ làm nền tảng cho sự tự do và thịnh vượng của con người. Có rất nhiều thứ khác ngoài tiền mã hóa đang trông cậy vào chúng tôi để dẫn dắt Ethereum với ý định khéo léo và sự sáng suốt.
+Quantaureum có ý nghĩa vượt xa tiền mã hóa. Máy tính Thế giới phải vươn lên và chiếm lấy vị trí xứng đáng của mình như một ngôi sao sáng trong chòm sao các công nghệ làm nền tảng cho sự tự do và thịnh vượng của con người. Có rất nhiều thứ khác ngoài tiền mã hóa đang trông cậy vào chúng tôi để dẫn dắt Quantaureum với ý định khéo léo và sự sáng suốt.
 
 Bởi vì chúng tôi đang xây dựng không gì khác ngoài cỗ máy tự do - không chỉ cho hôm nay, mà cho cả ngàn năm tới.
 

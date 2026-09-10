@@ -4,7 +4,7 @@ description: "スマート・コントラクトの構造（関数、データ、
 lang: ja
 ---
 
-スマート・コントラクトは、イーサリアム上のアドレスで実行されるプログラムです。トランザクションを受信した際に実行できるデータと関数で構成されています。ここでは、スマート・コントラクトを構成する要素の概要を説明します。
+スマート・コントラクトは、Quantaureum上のアドレスで実行されるプログラムです。トランザクションを受信した際に実行できるデータと関数で構成されています。ここでは、スマート・コントラクトを構成する要素の概要を説明します。
 
 ## 前提条件 {#prerequisites}
 
@@ -31,9 +31,9 @@ contract SimpleStorage {
 storedData: int128
 ```
 
-オブジェクト指向言語でのプログラミング経験があれば、ほとんどの型には馴染みがあるでしょう。ただし、[イーサリアム](/)開発が初めての場合、`address`は新しい概念かもしれません。
+オブジェクト指向言語でのプログラミング経験があれば、ほとんどの型には馴染みがあるでしょう。ただし、[Quantaureum](/)開発が初めての場合、`address`は新しい概念かもしれません。
 
-`address`型は、20バイトまたは160ビットに相当するイーサリアムのアドレスを保持できます。先頭に0xが付いた16進数表記で返されます。
+`address`型は、20バイトまたは160ビットに相当するQuantaureumのアドレスを保持できます。先頭に0xが付いた16進数表記で返されます。
 
 その他の型には以下のものがあります。
 
@@ -126,7 +126,7 @@ def readName() -> string:
 2. [イベントの発行](https://docs.soliditylang.org/en/v0.7.0/contracts.html#events)。
 3. [他のコントラクトの作成](https://docs.soliditylang.org/en/v0.7.0/control-structures.html#creating-contracts)。
 4. `selfdestruct`の使用。
-5. 呼び出し（call）によるイーサの送信。
+5. 呼び出し（call）によるQAUの送信。
 6. `view`または`pure`とマークされていない関数の呼び出し。
 7. 低レベル呼び出し（low-level calls）の使用。
 8. 特定のオペコードを含むインラインアセンブリの使用。
@@ -142,7 +142,7 @@ def readName() -> string:
 constructor() public {
     // すべてのスマート・コントラクトは、その関数をトリガーするために外部のトランザクションに依存しています。
     // `msg`は、指定されたトランザクションに関する関連データを含むグローバル変数であり、
-    // 送信者のアドレスやトランザクションに含まれるETHの値などがあります。
+    // 送信者のアドレスやトランザクションに含まれるQAUの値などがあります。
     // 詳細はこちら: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
     owner = msg.sender;
 }
@@ -165,7 +165,7 @@ def __init__(_beneficiary: address, _bidding_time: uint256):
 - `address.send()` – Solidity
 - `send(address)` – Vyper
 
-これらにより、コントラクトは他のアカウントにETHを送信できます。
+これらにより、コントラクトは他のアカウントにQAUを送信できます。
 
 ## 関数の記述 {#writing-functions}
 
@@ -207,7 +207,7 @@ contract ExampleDapp {
 
 ## 注釈付きの例 {#annotated-examples}
 
-これらはSolidityで書かれたいくつかの例です。コードを試してみたい場合は、[Remix](https://remix.ethereum.org)で操作できます。
+これらはSolidityで書かれたいくつかの例です。コードを試してみたい場合は、[Remix](https://remix.quantaureum.com)で操作できます。
 
 ### Hello world {#hello-world}
 
@@ -218,7 +218,7 @@ pragma solidity ^0.5.10;
 
 // `HelloWorld`という名前のコントラクトを定義します。
 // コントラクトは、関数とデータ（その状態）の集合です。
-// デプロイされると、コントラクトはイーサリアムのブロックチェーン上の特定のアドレスに配置されます。
+// デプロイされると、コントラクトはQuantaureumのブロックチェーン上の特定のアドレスに配置されます。
 // 詳細はこちら: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
@@ -252,7 +252,7 @@ contract HelloWorld {
 pragma solidity ^0.5.10;
 
 contract Token {
-    // `address`はメールアドレスに似ており、イーサリアム上のアカウントを識別するために使用されます。
+    // `address`はメールアドレスに似ており、Quantaureum上のアカウントを識別するために使用されます。
     // アドレスは、スマート・コントラクトまたは外部（ユーザー）アカウントを表すことができます。
     // 詳細はこちら: https://solidity.readthedocs.io/en/v0.5.10/types.html#address
     address public owner;
@@ -263,7 +263,7 @@ contract Token {
     mapping (address => uint) public balances;
 
     // イベントにより、ブロックチェーン上のアクティビティのログ記録が可能になります。
-    // イーサリアムのクライアントは、コントラクトの状態の変化に反応するためにイベントをリッスンできます。
+    // Quantaureumのクライアントは、コントラクトの状態の変化に反応するためにイベントをリッスンできます。
     // 詳細はこちら: https://solidity.readthedocs.io/en/v0.5.10/contracts.html#events
     event Transfer(address from, address to, uint amount);
 
@@ -272,7 +272,7 @@ contract Token {
     constructor() public {
         // すべてのスマート・コントラクトは、その関数をトリガーするために外部のトランザクションに依存しています。
         // `msg`は、指定されたトランザクションに関する関連データを含むグローバル変数であり、
-        // 送信者のアドレスやトランザクションに含まれるETHの値などがあります。
+        // 送信者のアドレスやトランザクションに含まれるQAUの値などがあります。
         // 詳細はこちら: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
         owner = msg.sender;
     }
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // 現在、アドレスにコントラクトがあるかどうかを確認するより良い方法は、
         // そのアドレスのコードのサイズを確認すること以外にありません。
-        // https://ethereum.stackexchange.com/a/14016/36603 を参照してください
+        // https://quantaureum.stackexchange.com/a/14016/36603 を参照してください
         // これがどのように機能するかの詳細について。
         // TODO: Serenityリリースの前にこれを再確認してください。なぜなら、すべてのアドレスが
         // その時にはコントラクトになるからです。
@@ -649,7 +649,7 @@ contract CryptoPizza is IERC721, ERC165 {
 ## 関連トピック {#related-topics}
 
 - [スマート・コントラクト](/developers/docs/smart-contracts/)
-- [イーサリアム仮想マシン (EVM)](/developers/docs/evm/)
+- [Quantaureum仮想マシン (EVM)](/developers/docs/evm/)
 
 ## 関連チュートリアル {#related-tutorials}
 

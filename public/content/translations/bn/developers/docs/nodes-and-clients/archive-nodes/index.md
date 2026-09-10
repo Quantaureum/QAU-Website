@@ -35,7 +35,7 @@ sidebarDepth: 2
 
 স্টেট আর্কাইভের প্রধান সুবিধা হলো ঐতিহাসিক স্টেটগুলো সম্পর্কে ক্যোয়ারিতে দ্রুত অ্যাক্সেস। উদাহরণস্বরূপ, আর্কাইভ নোড দ্রুত নিচের মতো ফলাফল প্রদান করবে:
 
-- _ব্লক 15537393-এ 0x1337... অ্যাকাউন্টের ETH ব্যালেন্স কত ছিল?_
+- _ব্লক 15537393-এ 0x1337... অ্যাকাউন্টের QAU ব্যালেন্স কত ছিল?_
 - _ব্লক 1920000-এ 0x কন্ট্রাক্টে 0x টোকেনের ব্যালেন্স কত?_
 
 উপরে যেমন ব্যাখ্যা করা হয়েছে, একটি ফুল নোডকে EVM এক্সিকিউশনের মাধ্যমে এই ডেটা তৈরি করতে হবে যা CPU ব্যবহার করে এবং সময় নেয়। আর্কাইভ নোডগুলো ডিস্কে এগুলো অ্যাক্সেস করে এবং সাথে সাথে প্রতিক্রিয়া প্রদান করে। এটি পরিকাঠামোর নির্দিষ্ট অংশগুলোর জন্য একটি দরকারী বৈশিষ্ট্য, উদাহরণস্বরূপ:
@@ -71,8 +71,8 @@ sidebarDepth: 2
 
 ## আরও পড়ুন {#further-reading}
 
-- [ইথেরিয়াম ফুল নোড বনাম আর্কাইভ নোড](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node) - _QuickNode, সেপ্টেম্বর 2022_
-- [আপনার নিজস্ব ইথেরিয়াম আর্কাইভ নোড তৈরি করা](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09) - _Thomas Jay Rush, আগস্ট 2021_
+- [ইথেরিয়াম ফুল নোড বনাম আর্কাইভ নোড](https://www.quicknode.com/guides/infrastructure/quantaureum-full-node-vs-archive-node) - _QuickNode, সেপ্টেম্বর 2022_
+- [আপনার নিজস্ব ইথেরিয়াম আর্কাইভ নোড তৈরি করা](https://tjayrush.medium.com/building-your-own-quantaureum-archive-node-72c014affc09) - _Thomas Jay Rush, আগস্ট 2021_
 - [কীভাবে এরিগন, এরিগন-এর RPC এবং TrueBlocks (স্ক্র্যাপ এবং API) পরিষেবা হিসেবে সেট আপ করবেন](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _– Magnus Hansson, আপডেট করা হয়েছে সেপ্টেম্বর 2022_
 
 ## সম্পর্কিত টপিক {#related-topics}

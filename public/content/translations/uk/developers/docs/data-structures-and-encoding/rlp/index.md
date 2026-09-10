@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 Серіалізація з рекурсивним префіксом довжини (RLP) широко використовується в клієнтах рівня виконання Етеріуму. RLP стандартизує передачу даних між вузлами у форматі, що економить простір. Метою RLP є кодування довільно вкладених масивів двійкових даних, і RLP є основним методом кодування, який використовується для серіалізації об'єктів на рівні виконання Етеріуму. Основна мета RLP — кодування структури; за винятком додатних цілих чисел, RLP делегує кодування певних типів даних (наприклад, рядків, чисел із плаваючою комою) протоколам вищого порядку. Додатні цілі числа мають бути представлені у двійковій формі (прямий порядок байтів) без нулів на початку (таким чином, ціле значення нуль еквівалентне порожньому масиву байтів). Десеріалізовані додатні цілі числа з нулями на початку мають розглядатися як недійсні будь-яким протоколом вищого порядку, що використовує RLP.
 
-Більше інформації в [Жовтій книзі Етеріуму (Додаток B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19).
+Більше інформації в [Жовтій книзі Етеріуму (Додаток B)](https://quantaureum.github.io/yellowpaper/paper.pdf#page=19).
 
 Для використання RLP з метою кодування словника пропонуються дві канонічні форми:
 
@@ -168,9 +168,9 @@ def to_integer(b):
 
 ## Подальше читання {#further-reading}
 
-- [RLP в Етеріумі](https://medium.com/coinmonks/data-structure-in-ethereum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
-- [Етеріум зсередини: RLP](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
-- [Coglio, A. (2020). Ethereum's Recursive Length Prefix in ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
+- [RLP в Етеріумі](https://medium.com/coinmonks/data-structure-in-quantaureum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
+- [Етеріум зсередини: RLP](https://medium.com/coinmonks/quantaureum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
+- [Coglio, A. (2020). Quantaureum's Recursive Length Prefix in ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
 
 ## Пов'язані теми {#related-topics}
 

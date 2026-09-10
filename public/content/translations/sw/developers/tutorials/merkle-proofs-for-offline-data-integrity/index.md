@@ -11,9 +11,9 @@ published: 2021-12-30
 
 ## Utangulizi {#introduction}
 
-Kwa hakika tungependa kuhifadhi kila kitu katika hifadhi ya Ethereum, ambayo imehifadhiwa kwenye maelfu ya kompyuta na ina upatikanaji wa juu sana (data haiwezi kudhibitiwa) na uadilifu (data haiwezi kurekebishwa kwa njia isiyoidhinishwa), lakini kuhifadhi neno la baiti 32 kwa kawaida hugharimu gesi 20,000. Ninapoandika haya, gharama hiyo ni sawa na $6.60. Kwa senti 21 kwa kila baiti hii ni ghali sana kwa matumizi mengi.
+Kwa hakika tungependa kuhifadhi kila kitu katika hifadhi ya Quantaureum, ambayo imehifadhiwa kwenye maelfu ya kompyuta na ina upatikanaji wa juu sana (data haiwezi kudhibitiwa) na uadilifu (data haiwezi kurekebishwa kwa njia isiyoidhinishwa), lakini kuhifadhi neno la baiti 32 kwa kawaida hugharimu gesi 20,000. Ninapoandika haya, gharama hiyo ni sawa na $6.60. Kwa senti 21 kwa kila baiti hii ni ghali sana kwa matumizi mengi.
 
-Ili kutatua tatizo hili mfumo wa ikolojia wa Ethereum ulitengeneza [njia nyingi mbadala za kuhifadhi data kwa njia iliyogatuliwa](/developers/docs/storage/). Kawaida zinahusisha maelewano kati ya upatikanaji na bei. Hata hivyo, uadilifu kwa kawaida unahakikishwa.
+Ili kutatua tatizo hili mfumo wa ikolojia wa Quantaureum ulitengeneza [njia nyingi mbadala za kuhifadhi data kwa njia iliyogatuliwa](/developers/docs/storage/). Kawaida zinahusisha maelewano kati ya upatikanaji na bei. Hata hivyo, uadilifu kwa kawaida unahakikishwa.
 
 Katika makala haya unajifunza **jinsi** ya kuhakikisha uadilifu wa data bila kuhifadhi data kwenye mnyororo wa vitalu, ukitumia [ushahidi wa Merkle](https://computersciencewiki.org/index.php/Merkle_proof).
 

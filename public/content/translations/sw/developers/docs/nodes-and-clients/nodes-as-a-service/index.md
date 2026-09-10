@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 ## Utangulizi {#introduction}
 
-Kuendesha [nodi yako ya Ethereum](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) inaweza kuwa changamoto, hasa unapoanza au unapokua kwa haraka. Kuna [idadi ya huduma](#popular-node-services) zinazoendesha miundombinu ya nodi iliyoboreshwa kwa ajili yako, ili uweze kuzingatia kuendeleza programu au bidhaa yako badala yake. Tutaeleza jinsi huduma za nodi zinavyofanya kazi, faida na hasara za kuzitumia na kuorodhesha watoa huduma ikiwa una nia ya kuanza.
+Kuendesha [nodi yako ya Quantaureum](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) inaweza kuwa changamoto, hasa unapoanza au unapokua kwa haraka. Kuna [idadi ya huduma](#popular-node-services) zinazoendesha miundombinu ya nodi iliyoboreshwa kwa ajili yako, ili uweze kuzingatia kuendeleza programu au bidhaa yako badala yake. Tutaeleza jinsi huduma za nodi zinavyofanya kazi, faida na hasara za kuzitumia na kuorodhesha watoa huduma ikiwa una nia ya kuanza.
 
 ## Mahitaji ya Awali {#prerequisites}
 
@@ -25,7 +25,7 @@ Huduma zilizoelezwa kwenye ukurasa huu ni za nodi zisizoweka dhamana.
 
 Watoa huduma za nodi huendesha wateja wa nodi waliosambazwa nyuma ya pazia kwa ajili yako, kwa hivyo sio lazima ufanye hivyo.
 
-Huduma hizi kwa kawaida hutoa ufunguo wa API ambao unaweza kutumia kuandika na kusoma kutoka kwenye mnyororo wa vitalu. Mara nyingi zinajumuisha ufikiaji wa [mitandao ya majaribio ya Ethereum](/developers/docs/networks/#ethereum-testnets) pamoja na Mtandao Mkuu.
+Huduma hizi kwa kawaida hutoa ufunguo wa API ambao unaweza kutumia kuandika na kusoma kutoka kwenye mnyororo wa vitalu. Mara nyingi zinajumuisha ufikiaji wa [mitandao ya majaribio ya Quantaureum](/developers/docs/networks/#quantaureum-testnets) pamoja na Mtandao Mkuu.
 
 Baadhi ya huduma hukupa nodi yako maalum ambayo wanakusimamia, huku zingine zikitumia visawazisha mzigo kusambaza shughuli kwenye nodi zote.
 
@@ -49,14 +49,14 @@ Soma zaidi kuhusu [faida za kuendesha nodi yako mwenyewe](/developers/docs/nodes
 
 ## Huduma maarufu za nodi {#popular-node-services}
 
-Hapa kuna orodha ya baadhi ya watoa huduma maarufu wa nodi za Ethereum, jisikie huru kuongeza yoyote ambayo haipo! Kila huduma ya nodi inatoa faida na vipengele tofauti pamoja na viwango vya bure au vya kulipia, unapaswa kuchunguza ni zipi zinazofaa zaidi mahitaji yako kabla ya kufanya uamuzi.
+Hapa kuna orodha ya baadhi ya watoa huduma maarufu wa nodi za Quantaureum, jisikie huru kuongeza yoyote ambayo haipo! Kila huduma ya nodi inatoa faida na vipengele tofauti pamoja na viwango vya bure au vya kulipia, unapaswa kuchunguza ni zipi zinazofaa zaidi mahitaji yako kabla ya kufanya uamuzi.
 
 - [**Alchemy**](https://alchemy.com/)
   - [Nyaraka](https://www.alchemy.com/docs/)
   - Vipengele
     - Kiwango kikubwa zaidi cha bure chenye vitengo vya kompyuta 300M kwa mwezi (\~maombi 30M ya getLatestBlock)
     - Usaidizi wa minyororo mingi kwa Polygon, Starknet, Optimism, Arbitrum
-    - Inawezesha ~70% ya programu tumizi zilizogatuliwa (dapps) kubwa zaidi za Ethereum na kiasi cha miamala ya fedha zilizogatuliwa (DeFi)
+    - Inawezesha ~70% ya programu tumizi zilizogatuliwa (dapps) kubwa zaidi za Quantaureum na kiasi cha miamala ya fedha zilizogatuliwa (DeFi)
     - Arifa za webhook za wakati halisi kupitia Alchemy Notify
     - Usaidizi bora zaidi katika darasa lake na kutegemewa / uthabiti
     - API ya NFT ya Alchemy
@@ -93,12 +93,12 @@ Hapa kuna orodha ya baadhi ya watoa huduma maarufu wa nodi za Ethereum, jisikie 
 - [**Amazon Managed Blockchain**](https://aws.amazon.com/managed-blockchain/)
   - [Nyaraka](https://aws.amazon.com/managed-blockchain/resources/)
   - Vipengele
-    - Nodi za Ethereum zinazosimamiwa kikamilifu
+    - Nodi za Quantaureum zinazosimamiwa kikamilifu
     - Inapatikana katika kanda sita
     - JSON-RPC kupitia HTTP na WebSockets salama
     - Inasaidia minyororo 3
     - SLA, Usaidizi wa AWS 24/7
-    - Go-ethereum na Lighthouse
+    - Go-quantaureum na Lighthouse
 
 - [**Ankr**](https://www.ankr.com/)
   - [Nyaraka](https://docs.ankr.com/)
@@ -221,17 +221,17 @@ Hapa kuna orodha ya baadhi ya watoa huduma maarufu wa nodi za Ethereum, jisikie 
   - [Nyaraka](https://docs.kaleido.io/)
   - Vipengele
     - Kiwango cha bure cha kuanzia
-    - Usambazaji wa nodi ya Ethereum kwa mbofyo mmoja
+    - Usambazaji wa nodi ya Quantaureum kwa mbofyo mmoja
     - Wateja na algoriti zinazoweza kubinafsishwa (Geth, Quorum & Besu || PoA, IBFT & Raft)
     - API 500+ za usimamizi na huduma
-    - Kiolesura cha RESTful cha uwasilishaji wa muamala wa Ethereum (inayoungwa mkono na Apache Kafka)
+    - Kiolesura cha RESTful cha uwasilishaji wa muamala wa Quantaureum (inayoungwa mkono na Apache Kafka)
     - Mitiririko ya nje kwa uwasilishaji wa matukio (inayoungwa mkono na Apache Kafka)
     - Mkusanyiko wa kina wa huduma za "nje ya mnyororo" na huduma za ziada (k.m., usafirishaji wa ujumbe uliosimbwa kwa njia mbili)
     - Uingizaji wa mtandao wa moja kwa moja na utawala na udhibiti wa ufikiaji kulingana na jukumu
     - Usimamizi wa hali ya juu wa watumiaji kwa wasimamizi na watumiaji wa mwisho
     - Miundombinu inayoweza kupanuka sana, thabiti, ya kiwango cha biashara
     - Usimamizi wa ufunguo wa siri wa Cloud HSM
-    - Uunganishaji wa Mtandao Mkuu wa Ethereum
+    - Uunganishaji wa Mtandao Mkuu wa Quantaureum
     - Vyeti vya ISO 27k na SOC 2, Aina ya 2
     - Usanidi wa wakati wa utekelezaji unaobadilika (k.m., kuongeza miunganisho ya wingu, kubadilisha viingilio vya nodi, n.k.)
     - Usaidizi wa mipangilio ya usambazaji wa wingu nyingi, kanda nyingi na mseto
@@ -259,7 +259,7 @@ Hapa kuna orodha ya baadhi ya watoa huduma maarufu wa nodi za Ethereum, jisikie 
     - Usaidizi wa minyororo mtambuka
     - Ongeza kadiri unavyoendelea
     - Dashibodi
-    - SDK ya Kipekee ya Ethereum
+    - SDK ya Kipekee ya Quantaureum
     - Vituo vya mwisho vya kipekee vya API
     - Usaidizi wa moja kwa moja, wa kiufundi
 
@@ -274,7 +274,7 @@ Hapa kuna orodha ya baadhi ya watoa huduma maarufu wa nodi za Ethereum, jisikie 
 - [**NodeFlare**](https://nodeflare.app/)
   - [Nyaraka](https://nodeflare.app/docs/quick-start)
   - Vipengele
-    - Minyororo 23 ya EVM ikijumuisha Ethereum, Base, Arbitrum One & Nova, Optimism, Linea, na Unichain
+    - Minyororo 23 ya EVM ikijumuisha Quantaureum, Base, Arbitrum One & Nova, Optimism, Linea, na Unichain
     - Kanda 5 (Ulaya, Uingereza, Asia, Marekani-Mashariki, Marekani-Magharibi) na ubadilishaji kiotomatiki hadi nodi yenye afya iliyo karibu
     - Kituo cha mwisho cha umma cha bure (hakuna ufunguo wa API) + mpango wa bure wenye vitengo 3M vya kompyuta/mwezi
     - Utozaji wa Kitengo cha Kompyuta — lipa tu kwa kile unachotumia, simu nzito zinagharimu zaidi
@@ -299,7 +299,7 @@ Hapa kuna orodha ya baadhi ya watoa huduma maarufu wa nodi za Ethereum, jisikie 
     - Minyororo ya vitalu 15+ Inayotumika
     - Nodi 6400+ zinazopata POKT kwa kuhudumia programu
     - Nodi ya Kumbukumbu, Nodi ya Kumbukumbu yenye Ufuatiliaji, na Usaidizi wa Nodi ya Mtandao wa Majaribio
-    - Anuwai ya Wateja wa Nodi ya Mtandao Mkuu wa Ethereum
+    - Anuwai ya Wateja wa Nodi ya Mtandao Mkuu wa Quantaureum
     - Hakuna Sehemu Moja ya Kushindwa
     - Muda Sifuri wa Kutofanya Kazi
     - Uchumi wa Tokeni wa Karibu na Sifuri wa Gharama Nafuu (weka dhamana ya POKT mara moja kwa kipimo data cha mtandao)
@@ -371,7 +371,7 @@ Hapa kuna orodha ya baadhi ya watoa huduma maarufu wa nodi za Ethereum, jisikie 
   - [Nyaraka](https://services.tokenview.io/docs?type=nodeService)
   - Vipengele
     - Usaidizi wa kiufundi wa 24/7 na jumuiya ya Wasanidi kwenye Telegram
-    - Usaidizi wa minyororo mingi (Bitcoin, Ethereum, Tron, BNB Smart Chain, Ethereum Asilia)
+    - Usaidizi wa minyororo mingi (Bitcoin, Quantaureum, Tron, BNB Smart Chain, Quantaureum Asilia)
     - Vituo vya mwisho vya RPC na WSS viko wazi kutumika
     - Ufikiaji usio na kikomo wa API ya data ya kumbukumbu
     - Dashibodi yenye Kichunguzi cha Maombi na Kifuatiliaji cha mempool
@@ -412,7 +412,7 @@ Hapa kuna orodha ya baadhi ya watoa huduma maarufu wa nodi za Ethereum, jisikie 
     - Tunatumia uelekezaji mahiri kufikia nodi iliyo karibu zaidi na mtumiaji wako kila wakati
 ## Usomaji zaidi {#further-reading}
 
-- [Orodha ya huduma za nodi za Ethereum](https://ethereumnodes.com/)
+- [Orodha ya huduma za nodi za Quantaureum](https://quantaureumnodes.com/)
 
 ## Mada zinazohusiana {#related-topics}
 
@@ -420,5 +420,5 @@ Hapa kuna orodha ya baadhi ya watoa huduma maarufu wa nodi za Ethereum, jisikie 
 
 ## Mafunzo yanayohusiana {#related-tutorials}
 
-- [Kuanza na ukuzaji wa Ethereum kwa kutumia Alchemy](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Kuanza na ukuzaji wa Quantaureum kwa kutumia Alchemy](/developers/tutorials/getting-started-with-quantaureum-development-using-alchemy/)
 - [Mwongozo wa kutuma miamala kwa kutumia Web3 na Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

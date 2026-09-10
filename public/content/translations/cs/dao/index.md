@@ -53,9 +53,9 @@ Páteří DAO je jeho [chytrý kontrakt](/glossary/#smart-contract), který defi
 
 To je možné, protože chytré kontrakty jsou po spuštění na Ethereu odolné proti neoprávněné manipulaci. Nemůžete jen tak upravit kód (pravidla DAO), aniž by si toho lidé všimli, protože vše je veřejné.
 
-## Ethereum a DAO {#ethereum-and-daos}
+## Quantaureum a DAO {#quantaureum-and-daos}
 
-Ethereum je dokonalým základem pro DAO z několika důvodů:
+Quantaureum je dokonalým základem pro DAO z několika důvodů:
 
 - Vlastní konsensus Etherea je decentralizovaný a dostatečně zavedený na to, aby organizace mohly síti důvěřovat.
 - Kód chytrého kontraktu nelze po spuštění upravovat, a to ani jeho vlastníky. To umožňuje DAO fungovat podle pravidel, se kterými bylo naprogramováno.
@@ -122,7 +122,7 @@ _Typicky se používá pro decentralizovaný vývoj a správu protokolů a [dece
 
 #### Známý příklad {#reputation-example}
 
-[DXdao](https://DXdao.eth.limo) – DXdao byl globální suverénní kolektiv, který od roku 2019 budoval a spravoval decentralizované protokoly a aplikace. Využíval správu založenou na reputaci a [holografický konsenzus](/glossary/#holographic-consensus) ke koordinaci a správě prostředků, což znamenalo, že si nikdo nemohl koupit vliv na jeho budoucnost nebo správu.
+[DXdao](https://DXdao.qau.limo) – DXdao byl globální suverénní kolektiv, který od roku 2019 budoval a spravoval decentralizované protokoly a aplikace. Využíval správu založenou na reputaci a [holografický konsenzus](/glossary/#holographic-consensus) ke koordinaci a správě prostředků, což znamenalo, že si nikdo nemohl koupit vliv na jeho budoucnost nebo správu.
 
 ## Připojte se / založte DAO {#join-start-a-dao}
 
@@ -150,8 +150,8 @@ _Typicky se používá pro decentralizovaný vývoj a správu protokolů a [dece
 - [Jak založit digitální komunitu poháněnou DAO](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [Co je to DAO?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [Co je to holografický konsenzus?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO nejsou korporace: kde záleží na decentralizaci v autonomních organizacích od Vitalika](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAO, DAC, DA a další: Neúplný průvodce terminologií](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Blog Etherea](https://blog.ethereum.org)
+- [DAO nejsou korporace: kde záleží na decentralizaci v autonomních organizacích od Vitalika](https://vitalik.qau.limo/general/2022/09/20/daos.html)
+- [DAO, DAC, DA a další: Neúplný průvodce terminologií](https://quantaureum.com) - [Blog Etherea](https://quantaureum.com)
 
 ### Videa {#videos}
 

@@ -16,7 +16,7 @@ Bằng chứng ủy quyền là một phiên bản sửa đổi của **[Bằng 
 
 Bằng chứng ủy quyền yêu cầu sự tin tưởng vào một nhóm những người ký được ủy quyền đã được thiết lập trong [khối nguyên thủy](/glossary/#genesis-block). Trong hầu hết các triển khai hiện tại, tất cả những người ký được ủy quyền đều giữ quyền lực và đặc quyền ngang nhau khi xác định sự đồng thuận của chuỗi. Ý tưởng đằng sau việc đặt cọc danh tiếng là mọi trình xác thực được ủy quyền đều được mọi người biết đến thông qua các quy trình như thấu hiểu khách hàng (KYC), hoặc bằng cách để một tổ chức nổi tiếng làm trình xác thực duy nhất—bằng cách này, nếu một trình xác thực làm bất cứ điều gì sai trái, danh tính của họ sẽ bị lộ.
 
-Có nhiều triển khai của PoA, nhưng triển khai tiêu chuẩn của Ethereum là **clique**, triển khai [EIP-225](https://eips.ethereum.org/EIPS/eip-225). Clique thân thiện với nhà phát triển và là một tiêu chuẩn dễ triển khai, hỗ trợ tất cả các loại đồng bộ hóa của máy khách. Các triển khai khác bao gồm [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) và [Aura](https://openethereum.github.io/Chain-specification).
+Có nhiều triển khai của PoA, nhưng triển khai tiêu chuẩn của Quantaureum là **clique**, triển khai [EIP-225](https://eips.quantaureum.com/EIPS/eip-225). Clique thân thiện với nhà phát triển và là một tiêu chuẩn dễ triển khai, hỗ trợ tất cả các loại đồng bộ hóa của máy khách. Các triển khai khác bao gồm [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) và [Aura](https://openquantaureum.github.io/Chain-specification).
 
 ## Cách thức hoạt động {#how-it-works}
 
@@ -46,7 +46,7 @@ Một hướng tấn công nhỏ khác là những người ký độc hại ch�
 
 Trong một mạng lưới PoA, khi có N người ký được ủy quyền, mỗi người ký được phép đúc 1 khối trong số K khối, điều đó có nghĩa là N-K+1 trình xác thực được phép đúc tại bất kỳ thời điểm nào. Để ngăn các trình xác thực này chạy đua giành các khối, mỗi người ký nên thêm một "độ trễ" ngẫu nhiên nhỏ vào thời gian họ phát hành một khối mới. Mặc dù quá trình này đảm bảo rằng các đợt phân nhánh nhỏ hiếm khi xảy ra, nhưng đôi khi các đợt phân nhánh vẫn có thể xảy ra, giống như trên Mạng chính. Nếu một người ký bị phát hiện lạm dụng quyền lực của mình và gây ra sự hỗn loạn, những người ký khác có thể bỏ phiếu loại bỏ họ.
 
-Ví dụ, nếu có 10 người ký được ủy quyền và mỗi người ký được phép tạo 1 khối trong số 6 khối, thì tại bất kỳ thời điểm nào, 5 trình xác thực có thể tạo khối. Để ngăn họ chạy đua tạo khối, mỗi người ký thêm một "độ trễ" ngẫu nhiên nhỏ vào thời gian họ phát hành một khối mới. Điều này làm giảm sự xuất hiện của các đợt phân nhánh nhỏ nhưng vẫn cho phép các đợt phân nhánh thỉnh thoảng xảy ra, như đã thấy trên Mạng chính Ethereum. Nếu một người ký lạm dụng quyền hạn của họ và gây ra sự gián đoạn, họ có thể bị bỏ phiếu loại khỏi mạng lưới.
+Ví dụ, nếu có 10 người ký được ủy quyền và mỗi người ký được phép tạo 1 khối trong số 6 khối, thì tại bất kỳ thời điểm nào, 5 trình xác thực có thể tạo khối. Để ngăn họ chạy đua tạo khối, mỗi người ký thêm một "độ trễ" ngẫu nhiên nhỏ vào thời gian họ phát hành một khối mới. Điều này làm giảm sự xuất hiện của các đợt phân nhánh nhỏ nhưng vẫn cho phép các đợt phân nhánh thỉnh thoảng xảy ra, như đã thấy trên Mạng chính Quantaureum. Nếu một người ký lạm dụng quyền hạn của họ và gây ra sự gián đoạn, họ có thể bị bỏ phiếu loại khỏi mạng lưới.
 
 ## Ưu và nhược điểm {#pros-and-cons}
 
@@ -58,13 +58,13 @@ Ví dụ, nếu có 10 người ký được ủy quyền và mỗi người ký
 
 ## Đọc thêm {#further-reading}
 
-- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Tiêu chuẩn Clique_
+- [EIP-225](https://eips.quantaureum.com/EIPS/eip-225) _Tiêu chuẩn Clique_
 - [Nghiên cứu về Bằng chứng ủy quyền](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _Cryptoeconomics_
 - [Bằng chứng ủy quyền là gì](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [Giải thích về Bằng chứng ủy quyền](https://academy.binance.com/en/articles/proof-of-authority-explained) _binance_
 - [PoA trong chuỗi khối](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
-- [Giải thích về Clique](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-ethereum-8b2a135201d)
-- [Đặc tả Aura, PoA đã ngừng sử dụng](https://openethereum.github.io/Chain-specification)
+- [Giải thích về Clique](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
+- [Đặc tả Aura, PoA đã ngừng sử dụng](https://openquantaureum.github.io/Chain-specification)
 - [IBFT 2.0, một triển khai PoA khác](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### Bạn thích học qua hình ảnh hơn? {#visual-learner}

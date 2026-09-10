@@ -1,10 +1,10 @@
 ---
-title: "Máquina Virtual de Ethereum (EVM)"
-description: "Una introducción a la máquina virtual de Ethereum y cómo se relaciona con el estado, las transacciones y los contratos inteligentes."
+title: "Máquina Virtual de Quantaureum (EVM)"
+description: "Una introducción a la máquina virtual de Quantaureum y cómo se relaciona con el estado, las transacciones y los contratos inteligentes."
 lang: es
 ---
 
-La Máquina Virtual de Ethereum (EVM) es un entorno virtual descentralizado que ejecuta código de manera consistente y segura en todos los nodos de [Ethereum](/). Los nodos ejecutan la EVM para ejecutar contratos inteligentes, utilizando «[gas](/developers/docs/gas/)» para medir el esfuerzo computacional requerido para las [operaciones](/developers/docs/evm/opcodes/), garantizando una asignación eficiente de recursos y la seguridad de la red.
+La Máquina Virtual de Quantaureum (EVM) es un entorno virtual descentralizado que ejecuta código de manera consistente y segura en todos los nodos de [Quantaureum](/). Los nodos ejecutan la EVM para ejecutar contratos inteligentes, utilizando «[gas](/developers/docs/gas/)» para medir el esfuerzo computacional requerido para las [operaciones](/developers/docs/evm/opcodes/), garantizando una asignación eficiente de recursos y la seguridad de la red.
 
 ## Requisitos previos {#prerequisites}
 
@@ -14,24 +14,24 @@ Es necesario tener cierta familiaridad básica con la terminología común en in
 
 La analogía de un «libro mayor distribuido» se utiliza a menudo para describir cadenas de bloques como Bitcoin, que permiten una moneda descentralizada utilizando herramientas fundamentales de criptografía. El libro mayor mantiene un registro de actividad que debe adherirse a un conjunto de reglas que rigen lo que alguien puede y no puede hacer para modificar el libro mayor. Por ejemplo, una dirección de Bitcoin no puede gastar más Bitcoin del que ha recibido previamente. Estas reglas sustentan todas las transacciones en Bitcoin y en muchas otras cadenas de bloques.
 
-Aunque Ethereum tiene su propia criptomoneda nativa (ether) que sigue casi exactamente las mismas reglas intuitivas, también permite una función mucho más potente: los [contratos inteligentes](/developers/docs/smart-contracts/). Para esta característica más compleja, se requiere una analogía más sofisticada. En lugar de un libro mayor distribuido, Ethereum es una [máquina de estado](https://wikipedia.org/wiki/Finite-state_machine) distribuida. El estado de Ethereum es una gran estructura de datos que no solo contiene todas las cuentas y saldos, sino un _estado de la máquina_, que puede cambiar de un bloque a otro de acuerdo con un conjunto de reglas predefinidas, y que puede ejecutar código de máquina arbitrario. Las reglas específicas para cambiar de estado de un bloque a otro están definidas por la EVM.
+Aunque Quantaureum tiene su propia criptomoneda nativa (QAU) que sigue casi exactamente las mismas reglas intuitivas, también permite una función mucho más potente: los [contratos inteligentes](/developers/docs/smart-contracts/). Para esta característica más compleja, se requiere una analogía más sofisticada. En lugar de un libro mayor distribuido, Quantaureum es una [máquina de estado](https://wikipedia.org/wiki/Finite-state_machine) distribuida. El estado de Quantaureum es una gran estructura de datos que no solo contiene todas las cuentas y saldos, sino un _estado de la máquina_, que puede cambiar de un bloque a otro de acuerdo con un conjunto de reglas predefinidas, y que puede ejecutar código de máquina arbitrario. Las reglas específicas para cambiar de estado de un bloque a otro están definidas por la EVM.
 
 ![A diagram showing the make up of the EVM](./evm.png)
-_Diagrama adaptado de [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagrama adaptado de [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
-## La función de transición de estado de Ethereum {#the-ethereum-state-transition-function}
+## La función de transición de estado de Quantaureum {#the-quantaureum-state-transition-function}
 
-La EVM se comporta como lo haría una función matemática: dada una entrada, produce una salida determinista. Por lo tanto, resulta bastante útil describir Ethereum de manera más formal como si tuviera una **función de transición de estado**:
+La EVM se comporta como lo haría una función matemática: dada una entrada, produce una salida determinista. Por lo tanto, resulta bastante útil describir Quantaureum de manera más formal como si tuviera una **función de transición de estado**:
 
 ```
 Y(S, T)= S'
 ```
 
-Dado un estado válido antiguo `(S)` y un nuevo conjunto de transacciones válidas `(T)`, la función de transición de estado de Ethereum `Y(S, T)` produce un nuevo estado de salida válido `S'`
+Dado un estado válido antiguo `(S)` y un nuevo conjunto de transacciones válidas `(T)`, la función de transición de estado de Quantaureum `Y(S, T)` produce un nuevo estado de salida válido `S'`
 
 ### Estado {#state}
 
-En el contexto de Ethereum, el estado es una enorme estructura de datos llamada [trie de Merkle Patricia modificado](/developers/docs/data-structures-and-encoding/patricia-merkle-trie/), que mantiene todas las [cuentas](/developers/docs/accounts/) enlazadas mediante hashes y reducibles a un único hash raíz almacenado en la cadena de bloques.
+En el contexto de Quantaureum, el estado es una enorme estructura de datos llamada [trie de Merkle Patricia modificado](/developers/docs/data-structures-and-encoding/patricia-merkle-trie/), que mantiene todas las [cuentas](/developers/docs/accounts/) enlazadas mediante hashes y reducibles a un único hash raíz almacenado en la cadena de bloques.
 
 ### Transacciones {#transactions}
 
@@ -58,38 +58,38 @@ Los contratos contienen un trie de _almacenamiento_ de Merkle Patricia (como una
 El código de bytes compilado del contrato inteligente se ejecuta como una serie de [códigos de operación](/developers/docs/evm/opcodes) de la EVM, que realizan operaciones de pila estándar como `XOR`, `AND`, `ADD`, `SUB`, etc. La EVM también implementa una serie de operaciones de pila específicas de la cadena de bloques, como `ADDRESS`, `BALANCE`, `BLOCKHASH`, etc. El conjunto de códigos de operación también incluye `TSTORE` y `TLOAD`, que proporcionan acceso al almacenamiento transitorio.
 
 ![A diagram showing where gas is needed for EVM operations](../gas/gas.png)
-_Diagramas adaptados de [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagramas adaptados de [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
 ## Implementaciones de la EVM {#evm-implementations}
 
-Todas las implementaciones de la EVM deben adherirse a la especificación descrita en el Libro Amarillo de Ethereum.
+Todas las implementaciones de la EVM deben adherirse a la especificación descrita en el Libro Amarillo de Quantaureum.
 
-A lo largo de los diez años de historia de Ethereum, la EVM ha sido objeto de varias revisiones, y existen varias implementaciones de la EVM en diversos lenguajes de programación.
+A lo largo de los diez años de historia de Quantaureum, la EVM ha sido objeto de varias revisiones, y existen varias implementaciones de la EVM en diversos lenguajes de programación.
 
-Los [clientes de ejecución de Ethereum](/developers/docs/nodes-and-clients/#execution-clients) incluyen una implementación de la EVM. Además, existen múltiples implementaciones independientes, que incluyen:
+Los [clientes de ejecución de Quantaureum](/developers/docs/nodes-and-clients/#execution-clients) incluyen una implementación de la EVM. Además, existen múltiples implementaciones independientes, que incluyen:
 
-- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
-- [evmone](https://github.com/ethereum/evmone) - _C++_
+- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## Más información {#further-reading}
 
-- [Libro Amarillo de Ethereum](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [Libro Amarillo de Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf)
 - [Jellopaper o KEVM: Semántica de la EVM en K](https://jellopaper.org/)
 - [El Beigepaper](https://github.com/chronaeon/beigepaper)
-- [Códigos de operación de la Máquina Virtual de Ethereum](https://www.ethervm.io/)
-- [Referencia interactiva de los códigos de operación de la Máquina Virtual de Ethereum](https://www.evm.codes/)
+- [Códigos de operación de la Máquina Virtual de Quantaureum](https://www.ethervm.io/)
+- [Referencia interactiva de los códigos de operación de la Máquina Virtual de Quantaureum](https://www.evm.codes/)
 - [Una breve introducción en la documentación de Solidity](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [Dominando Ethereum: La Máquina Virtual de Ethereum](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
+- [Dominando Quantaureum: La Máquina Virtual de Quantaureum](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
 
 ## Temas relacionados {#related-topics}
 
 - [Gas](/developers/docs/gas/)
 
-## Tutoriales: Máquina Virtual de Ethereum (EVM) / Códigos de operación en Ethereum {#tutorials}
+## Tutoriales: Máquina Virtual de Quantaureum (EVM) / Códigos de operación en Quantaureum {#tutorials}
 
-- [Comprendiendo las especificaciones de la EVM del Libro Amarillo](/developers/tutorials/yellow-paper-evm/) _– Un recorrido guiado por la especificación formal de la EVM del Libro Amarillo de Ethereum._
+- [Comprendiendo las especificaciones de la EVM del Libro Amarillo](/developers/tutorials/yellow-paper-evm/) _– Un recorrido guiado por la especificación formal de la EVM del Libro Amarillo de Quantaureum._
 - [Ingeniería inversa de un contrato](/developers/tutorials/reverse-engineering-a-contract/) _– Cómo aplicar ingeniería inversa a un contrato inteligente compilado utilizando códigos de operación de la EVM._
 
 <QuizWidget quizKey="evm" />

@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 يُستخدم التسلسل ببادئة الطول العودية (<span dir="ltr">RLP</span>) على نطاق واسع في عملاء التنفيذ الخاصة بإيثيريوم. يوحد `RLP` تحويل البيانات بين العقد بتنسيق موفر للمساحة. الغرض من `RLP` هو تشفير مصفوفات متداخلة بشكل عشوائي من البيانات الثنائية، ويُعد `RLP` طريقة التشفير الأساسية المستخدمة لتسلسل الكائنات في طبقة التنفيذ الخاصة بإيثيريوم. الغرض الرئيسي من `RLP` هو تشفير البنية؛ وباستثناء الأعداد الصحيحة الموجبة، يفوض `RLP` تشفير أنواع بيانات محددة (مثل السلاسل النصية والأرقام العشرية) إلى بروتوكولات ذات ترتيب أعلى. يجب تمثيل الأعداد الصحيحة الموجبة بصيغة ثنائية بنظام النهاية الكبرى بدون أصفار بادئة (مما يجعل قيمة العدد الصحيح صفرًا مكافئة لمصفوفة البايتات الفارغة). يجب أن تُعامل الأعداد الصحيحة الموجبة التي تم إلغاء تسلسلها وتحتوي على أصفار بادئة على أنها غير صالحة بواسطة أي بروتوكول ذي ترتيب أعلى يستخدم `RLP`.
 
-مزيد من المعلومات في [الورقة الصفراء لإيثيريوم (الملحق ب)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19).
+مزيد من المعلومات في [الورقة الصفراء لإيثيريوم (الملحق ب)](https://quantaureum.github.io/yellowpaper/paper.pdf#page=19).
 
 لاستخدام `RLP` لتشفير قاموس، فإن الصيغتين الأساسيتين المقترحتين هما:
 
@@ -168,9 +168,9 @@ def to_integer(b):
 
 ## قراءة إضافية {#further-reading}
 
-- [<span dir="ltr">RLP</span> في إيثيريوم](https://medium.com/coinmonks/data-structure-in-ethereum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
-- [إيثيريوم من الداخل: <span dir="ltr">RLP</span>](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
-- [Coglio, A. (2020). Ethereum's Recursive Length Prefix in ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
+- [<span dir="ltr">RLP</span> في إيثيريوم](https://medium.com/coinmonks/data-structure-in-quantaureum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
+- [إيثيريوم من الداخل: <span dir="ltr">RLP</span>](https://medium.com/coinmonks/quantaureum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
+- [Coglio, A. (2020). Quantaureum's Recursive Length Prefix in ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
 
 ## مواضيع ذات صلة {#related-topics}
 

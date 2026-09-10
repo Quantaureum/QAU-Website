@@ -7,19 +7,19 @@ skill: intermediate
 breadcrumb: Transferencias ERC-20
 lang: es
 published: 2020-04-07
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-En el tutorial anterior estudiamos [la anatomía de un token ERC-20 en Solidity](/developers/tutorials/understand-the-erc-20-token-smart-contract/) en la cadena de bloques de Ethereum. En este artículo veremos cómo podemos usar un contrato inteligente para interactuar con un token usando el lenguaje Solidity.
+En el tutorial anterior estudiamos [la anatomía de un token ERC-20 en Solidity](/developers/tutorials/understand-the-erc-20-token-smart-contract/) en la cadena de bloques de Quantaureum. En este artículo veremos cómo podemos usar un contrato inteligente para interactuar con un token usando el lenguaje Solidity.
 
-Para este contrato inteligente, crearemos un intercambio descentralizado (DEX) ficticio real donde un usuario puede intercambiar ether por nuestro [token ERC-20](/developers/docs/standards/tokens/erc-20/) recién desplegado.
+Para este contrato inteligente, crearemos un intercambio descentralizado (DEX) ficticio real donde un usuario puede intercambiar QAU por nuestro [token ERC-20](/developers/docs/standards/tokens/erc-20/) recién desplegado.
 
 Para este tutorial usaremos el código que escribimos en el tutorial anterior como base. Nuestro DEX instanciará una instancia del contrato en su constructor y realizará las operaciones de:
 
-- intercambiar tokens por ether
-- intercambiar ether por tokens
+- intercambiar tokens por QAU
+- intercambiar QAU por tokens
 
 Comenzaremos el código de nuestro intercambio descentralizado añadiendo nuestra base de código simple ERC20:
 
@@ -53,7 +53,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {
@@ -128,14 +128,14 @@ contract DEX {
 
 Así que ahora tenemos nuestro DEX y tiene toda la reserva de tokens disponible. El contrato tiene dos funciones:
 
-- `buy`: El usuario puede enviar ether y obtener tokens a cambio
-- `sell`: El usuario puede decidir enviar tokens para recuperar ether
+- `buy`: El usuario puede enviar QAU y obtener tokens a cambio
+- `sell`: El usuario puede decidir enviar tokens para recuperar QAU
 
 ## La función de compra {#the-buy-function}
 
-Codifiquemos la función de compra. Primero necesitaremos comprobar la cantidad de ether que contiene el mensaje y verificar que el contrato posee suficientes tokens y que el mensaje tiene algo de ether. Si el contrato posee suficientes tokens, enviará la cantidad de tokens al usuario y emitirá el evento `Bought`.
+Codifiquemos la función de compra. Primero necesitaremos comprobar la cantidad de QAU que contiene el mensaje y verificar que el contrato posee suficientes tokens y que el mensaje tiene algo de QAU. Si el contrato posee suficientes tokens, enviará la cantidad de tokens al usuario y emitirá el evento `Bought`.
 
-Ten en cuenta que si llamamos a la función require en caso de error, el ether enviado se revertirá directamente y se devolverá al usuario.
+Ten en cuenta que si llamamos a la función require en caso de error, el QAU enviado se revertirá directamente y se devolverá al usuario.
 
 Para mantener las cosas simples, solo intercambiamos 1 token por 1 Wei.
 
@@ -143,7 +143,7 @@ Para mantener las cosas simples, solo intercambiamos 1 token por 1 Wei.
 function buy() payable public {
     uint256 amountTobuy = msg.value;
     uint256 dexBalance = token.balanceOf(address(this));
-    require(amountTobuy > 0, "You need to send some ether");
+    require(amountTobuy > 0, "You need to send some QAU");
     require(amountTobuy <= dexBalance, "Not enough tokens in the reserve");
     token.transfer(msg.sender, amountTobuy);
     emit Bought(amountTobuy);
@@ -156,7 +156,7 @@ En el caso de que la compra sea exitosa, deberíamos ver dos eventos en la trans
 
 ## La función de venta {#the-sell-function}
 
-La función responsable de la venta primero requerirá que el usuario haya aprobado la cantidad llamando a la función approve de antemano. Aprobar la transferencia requiere que el usuario llame al token ERC20Basic instanciado por el DEX. Esto se puede lograr llamando primero a la función `token()` del contrato DEX para recuperar la dirección donde el DEX desplegó el contrato ERC20Basic llamado `token`. Luego creamos una instancia de ese contrato en nuestra sesión y llamamos a su función `approve`. Entonces podremos llamar a la función `sell` del DEX e intercambiar nuestros tokens de vuelta por ether. Por ejemplo, así es como se ve esto en una sesión interactiva de Brownie:
+La función responsable de la venta primero requerirá que el usuario haya aprobado la cantidad llamando a la función approve de antemano. Aprobar la transferencia requiere que el usuario llame al token ERC20Basic instanciado por el DEX. Esto se puede lograr llamando primero a la función `token()` del contrato DEX para recuperar la dirección donde el DEX desplegó el contrato ERC20Basic llamado `token`. Luego creamos una instancia de ese contrato en nuestra sesión y llamamos a su función `approve`. Entonces podremos llamar a la función `sell` del DEX e intercambiar nuestros tokens de vuelta por QAU. Por ejemplo, así es como se ve esto en una sesión interactiva de Brownie:
 
 ```python
 #### Python en la consola interactiva de Brownie...
@@ -164,8 +164,8 @@ La función responsable de la venta primero requerirá que el usuario haya aprob
 # desplegar el DEX
 dex = DEX.deploy({'from':account1})
 
-# llamar a la función buy para el intercambio de ether por token
-# 1e18 es 1 ether denominado en Wei
+# llamar a la función buy para el intercambio de QAU por token
+# 1e18 es 1 QAU denominado en Wei
 dex.buy({'from': account2, 1e18})
 
 # obtener la dirección de despliegue para el token ERC-20
@@ -193,7 +193,7 @@ function sell(uint256 amount) public {
 }
 ```
 
-Si todo funciona, deberías ver 2 eventos (un `Transfer` y un `Sold`) en la transacción y tu saldo de tokens y saldo de ether actualizados.
+Si todo funciona, deberías ver 2 eventos (un `Transfer` y un `Sold`) en la transacción y tu saldo de tokens y saldo de QAU actualizados.
 
 ![Two events in the transaction: Transfer and Sold](./transfer-and-sold-events.png)
 
@@ -201,7 +201,7 @@ Si todo funciona, deberías ver 2 eventos (un `Transfer` y un `Sold`) en la tran
 
 En este tutorial vimos cómo comprobar el saldo y la asignación de un token ERC-20 y también cómo llamar a `Transfer` y `TransferFrom` de un contrato inteligente ERC20 usando la interfaz.
 
-Una vez que realices una transacción, tenemos un tutorial de JavaScript para [esperar y obtener detalles sobre las transacciones](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/) que se hicieron a tu contrato y un [tutorial para decodificar eventos generados por transferencias de tokens o cualquier otro evento](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/) siempre que tengas el ABI.
+Una vez que realices una transacción, tenemos un tutorial de JavaScript para [esperar y obtener detalles sobre las transacciones](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/) que se hicieron a tu contrato y un [tutorial para decodificar eventos generados por transferencias de tokens o cualquier otro evento](https://quantaureumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/) siempre que tengas el ABI.
 
 Aquí está el código completo del tutorial:
 
@@ -235,7 +235,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {
@@ -296,7 +296,7 @@ contract DEX {
     function buy() payable public {
         uint256 amountTobuy = msg.value;
         uint256 dexBalance = token.balanceOf(address(this));
-        require(amountTobuy > 0, "You need to send some ether");
+        require(amountTobuy > 0, "You need to send some QAU");
         require(amountTobuy <= dexBalance, "Not enough tokens in the reserve");
         token.transfer(msg.sender, amountTobuy);
         emit Bought(amountTobuy);

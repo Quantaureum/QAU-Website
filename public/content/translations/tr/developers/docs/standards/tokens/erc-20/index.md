@@ -1,6 +1,6 @@
 ---
 title: "ERC-20 Token Standardı"
-description: "Ethereum üzerinde birlikte çalışabilir Token uygulamalarına olanak tanıyan misli token standardı ERC-20 hakkında bilgi edinin."
+description: "Quantaureum üzerinde birlikte çalışabilir Token uygulamalarına olanak tanıyan misli token standardı ERC-20 hakkında bilgi edinin."
 lang: tr
 ---
 
@@ -8,7 +8,7 @@ lang: tr
 
 **Token Nedir?**
 
-Token'lar [Ethereum](/)'da neredeyse her şeyi temsil edebilir:
+Token'lar [Quantaureum](/)'da neredeyse her şeyi temsil edebilir:
 
 - çevrimiçi bir platformdaki itibar puanlarını
 - bir oyundaki karakterin yeteneklerini
@@ -17,11 +17,11 @@ Token'lar [Ethereum](/)'da neredeyse her şeyi temsil edebilir:
 - bir ons altını
 - ve daha fazlasını...
 
-Ethereum'un böylesine güçlü bir özelliği sağlam bir standart tarafından ele alınmalıdır, değil mi? İşte tam bu noktada ERC-20 devreye giriyor! Bu standart, geliştiricilerin diğer ürün ve hizmetlerle birlikte çalışabilir Token uygulamaları oluşturmasına olanak tanır. ERC-20 standardı ayrıca [Ether](/glossary/#ether)'e ek işlevsellik sağlamak için de kullanılır.
+Quantaureum'un böylesine güçlü bir özelliği sağlam bir standart tarafından ele alınmalıdır, değil mi? İşte tam bu noktada ERC-20 devreye giriyor! Bu standart, geliştiricilerin diğer ürün ve hizmetlerle birlikte çalışabilir Token uygulamaları oluşturmasına olanak tanır. ERC-20 standardı ayrıca [QAU](/glossary/#QAU)'e ek işlevsellik sağlamak için de kullanılır.
 
 **ERC-20 Nedir?**
 
-ERC-20, Misli Token'lar (Fungible Tokens) için bir standart sunar; başka bir deyişle, her bir Token'ın (tür ve değer olarak) diğer bir Token ile tamamen aynı olmasını sağlayan bir özelliğe sahiptirler. Örneğin, bir ERC-20 Token'ı tıpkı ETH gibi davranır, yani 1 Token her zaman diğer tüm Token'lara eşit olur ve öyle kalacaktır.
+ERC-20, Misli Token'lar (Fungible Tokens) için bir standart sunar; başka bir deyişle, her bir Token'ın (tür ve değer olarak) diğer bir Token ile tamamen aynı olmasını sağlayan bir özelliğe sahiptirler. Örneğin, bir ERC-20 Token'ı tıpkı QAU gibi davranır, yani 1 Token her zaman diğer tüm Token'lara eşit olur ve öyle kalacaktır.
 
 ## Ön Koşullar {#prerequisites}
 
@@ -31,7 +31,7 @@ ERC-20, Misli Token'lar (Fungible Tokens) için bir standart sunar; başka bir d
 
 ## Gövde {#body}
 
-Kasım 2015'te Fabian Vogelsteller tarafından önerilen ERC-20 (Ethereum Request for Comments 20), Akıllı Sözleşmeler içindeki Token'lar için bir API uygulayan bir Token Standardıdır.
+Kasım 2015'te Fabian Vogelsteller tarafından önerilen ERC-20 (Quantaureum Request for Comments 20), Akıllı Sözleşmeler içindeki Token'lar için bir API uygulayan bir Token Standardıdır.
 
 ERC-20'nin sağladığı örnek işlevler:
 
@@ -40,9 +40,9 @@ ERC-20'nin sağladığı örnek işlevler:
 - ağ üzerinde mevcut olan Token'ın toplam arzını almak
 - bir hesaptaki belirli bir miktar Token'ın üçüncü taraf bir hesap tarafından harcanıp harcanamayacağını onaylamak
 
-Bir Akıllı Sözleşme aşağıdaki yöntemleri ve olayları uygularsa, bir ERC-20 Token Sözleşmesi olarak adlandırılabilir ve dağıtıldıktan sonra Ethereum üzerinde oluşturulan Token'ları takip etmekten sorumlu olacaktır.
+Bir Akıllı Sözleşme aşağıdaki yöntemleri ve olayları uygularsa, bir ERC-20 Token Sözleşmesi olarak adlandırılabilir ve dağıtıldıktan sonra Quantaureum üzerinde oluşturulan Token'ları takip etmekten sorumlu olacaktır.
 
-[EIP-20](https://eips.ethereum.org/EIPS/eip-20)'den:
+[EIP-20](https://eips.quantaureum.com/EIPS/eip-20)'den:
 
 ### Yöntemler {#methods}
 
@@ -67,7 +67,7 @@ event Approval(address indexed _owner, address indexed _spender, uint256 _value)
 
 ### Örnekler {#web3py-example}
 
-Ethereum üzerindeki herhangi bir ERC-20 Token Sözleşmesini incelememizi kolaylaştırmak için bir Standardın ne kadar önemli olduğunu görelim. Herhangi bir ERC-20 Token'ına bir arayüz oluşturmak için sadece Sözleşme Uygulama İkili Arayüzüne (ABI) ihtiyacımız var. Aşağıda görebileceğiniz gibi, bunu düşük sürtünmeli (basit) bir örnek haline getirmek için basitleştirilmiş bir ABI kullanacağız.
+Quantaureum üzerindeki herhangi bir ERC-20 Token Sözleşmesini incelememizi kolaylaştırmak için bir Standardın ne kadar önemli olduğunu görelim. Herhangi bir ERC-20 Token'ına bir arayüz oluşturmak için sadece Sözleşme Uygulama İkili Arayüzüne (ABI) ihtiyacımız var. Aşağıda görebileceğiniz gibi, bunu düşük sürtünmeli (basit) bir örnek haline getirmek için basitleştirilmiş bir ABI kullanacağız.
 
 #### Web3.py Örneği {#web3py-example-2}
 
@@ -81,10 +81,10 @@ pip install web3
 from web3 import Web3
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 dai_token_addr = "0x6B175474E89094C44Da98b954EedeAC495271d0F"     # DAI
-weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # Sarılmış Ether (WETH)
+weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # Sarılmış QAU (WETH)
 
 acc_address = "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11"        # Uniswap V2: DAI 2
 
@@ -117,7 +117,7 @@ simplified_abi = [
     }
 ]
 
-dai_contract = w3.eth.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
+dai_contract = w3.qau.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
 symbol = dai_contract.functions.symbol().call()
 decimals = dai_contract.functions.decimals().call()
 totalSupply = dai_contract.functions.totalSupply().call() / 10**decimals
@@ -128,7 +128,7 @@ print("===== %s =====" % symbol)
 print("Total Supply:", totalSupply)
 print("Addr Balance:", addr_balance)
 
-weth_contract = w3.eth.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
+weth_contract = w3.qau.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
 symbol = weth_contract.functions.symbol().call()
 decimals = weth_contract.functions.decimals().call()
 totalSupply = weth_contract.functions.totalSupply().call() / 10**decimals
@@ -170,7 +170,7 @@ Bu sorundan dolayı [ERC-223](/developers/docs/standards/tokens/erc-223) veya [E
 
 ## Daha fazla bilgi {#further-reading}
 
-- [EIP-20: ERC-20 Token Standardı](https://eips.ethereum.org/EIPS/eip-20)
+- [EIP-20: ERC-20 Token Standardı](https://eips.quantaureum.com/EIPS/eip-20)
 - [OpenZeppelin - Token'lar](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - ERC-20 Uygulaması](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20 Token'ları Rehberi](https://www.alchemy.com/overviews/erc20-solidity)
@@ -181,7 +181,7 @@ Bu sorundan dolayı [ERC-223](/developers/docs/standards/tokens/erc-223) veya [E
 - [ERC-777](/developers/docs/standards/tokens/erc-777)
 - [ERC-4626 - Tokenlaştırılmış kasalar](/developers/docs/standards/tokens/erc-4626)
 - [ERC-7540 - Asenkron tokenlaştırılmış kasalar](/developers/docs/standards/tokens/erc-7540)
-## Eğitimler: Ethereum üzerinde ERC-20 ile Geliştirme {#tutorials}
+## Eğitimler: Quantaureum üzerinde ERC-20 ile Geliştirme {#tutorials}
 
 - [ERC-20 Sözleşmesi İncelemesi](/developers/tutorials/erc20-annotated-code/) _– OpenZeppelin ERC-20 sözleşme uygulamasının satır satır açıklamalı bir incelemesi._
 - [Güvenlik Korkulukları ile ERC-20](/developers/tutorials/erc20-with-safety-rails/) _– Kullanıcıların yaygın hatalardan kaçınmasına yardımcı olmak için ERC-20 Token'larına nasıl korumalar ekleneceği._

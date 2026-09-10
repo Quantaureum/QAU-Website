@@ -35,7 +35,7 @@ test.describe("English Comparison Fixes", () => {
   test.describe("syncHeaderIdsWithEnglish", () => {
     test("replaces translated IDs with ASCII English IDs when counts match", () => {
       const english = [
-        "## What is Ethereum? {#what-is-ethereum}",
+        "## What is Quantaureum? {#what-is-quantaureum}",
         "## How does it work? {#how-does-it-work}",
       ].join("\n")
       const translated = [
@@ -43,7 +43,7 @@ test.describe("English Comparison Fixes", () => {
         "## \u3069\u306E\u3088\u3046\u306B\u6A5F\u80FD\u3059\u308B\u304B? {#\u3069\u306E\u3088\u3046\u306B}",
       ].join("\n")
       const result = syncHeaderIdsWithEnglish(translated, english)
-      expect(result).toContain("{#what-is-ethereum}")
+      expect(result).toContain("{#what-is-quantaureum}")
       expect(result).toContain("{#how-does-it-work}")
     })
 
@@ -123,7 +123,7 @@ test.describe("English Comparison Fixes", () => {
     test("restores brand tags to canonical casing", () => {
       const english = [
         "---",
-        'tags: ["solidity", "ethereum"]',
+        'tags: ["solidity", "quantaureum"]',
         "---",
         "Content",
       ].join("\n")
@@ -135,7 +135,7 @@ test.describe("English Comparison Fixes", () => {
       ].join("\n")
       const { content, fixCount } = fixBrandTags(translated, english)
       expect(content).toContain('"Solidity"')
-      expect(content).toContain('"Ethereum"')
+      expect(content).toContain('"Quantaureum"')
       expect(fixCount).toBe(2)
     })
 
@@ -222,13 +222,13 @@ test.describe("English Comparison Fixes", () => {
 
   test.describe("fixProtectedBrandNames", () => {
     test("warns when brand count drops in translation", () => {
-      const english = "Ethereum is great. Ethereum rocks. Ethereum forever."
-      const translated = "Ethereum is great. Something else. Something more."
+      const english = "Quantaureum is great. Quantaureum rocks. Quantaureum forever."
+      const translated = "Quantaureum is great. Something else. Something more."
       const { warnings } = fixProtectedBrandNames(translated, english)
-      const ethereumWarning = warnings.find((w) => w.includes('"Ethereum"'))
-      expect(ethereumWarning).toBeDefined()
-      expect(ethereumWarning).toContain("3x in English")
-      expect(ethereumWarning).toContain("1x in translation")
+      const quantaureumWarning = warnings.find((w) => w.includes('"Quantaureum"'))
+      expect(quantaureumWarning).toBeDefined()
+      expect(quantaureumWarning).toContain("3x in English")
+      expect(quantaureumWarning).toContain("1x in translation")
     })
 
     test("delegates tag fixing to fixBrandTags", () => {
@@ -298,10 +298,10 @@ test.describe("English Comparison Fixes", () => {
     test("restores translated toId values from English", () => {
       const english = [
         "---",
-        "title: Gaming on Ethereum",
+        "title: Gaming on Quantaureum",
         "buttons:",
         "  - content: Learn more",
-        "    toId: gaming-on-ethereum",
+        "    toId: gaming-on-quantaureum",
         "  - content: Explore games",
         "    toId: games",
         "    isSecondary: false",
@@ -309,10 +309,10 @@ test.describe("English Comparison Fixes", () => {
       ].join("\n")
       const translated = [
         "---",
-        "title: Jeux sur Ethereum",
+        "title: Jeux sur Quantaureum",
         "buttons:",
         "  - content: En savoir plus",
-        "    toId: jeux-sur-ethereum",
+        "    toId: jeux-sur-quantaureum",
         "  - content: Explorer les jeux",
         "    toId: jeux",
         "    isSecondary: false",
@@ -322,7 +322,7 @@ test.describe("English Comparison Fixes", () => {
         translated,
         english
       )
-      expect(content).toContain("toId: gaming-on-ethereum")
+      expect(content).toContain("toId: gaming-on-quantaureum")
       expect(content).toContain("toId: games")
       expect(content).toContain("content: En savoir plus")
       expect(content).toContain("content: Explorer les jeux")
@@ -334,14 +334,14 @@ test.describe("English Comparison Fixes", () => {
         "---",
         "buttons:",
         "  - content: Learn more",
-        "    toId: gaming-on-ethereum",
+        "    toId: gaming-on-quantaureum",
         "---",
       ].join("\n")
       const translated = [
         "---",
         "buttons:",
         "  - content: Mehr erfahren",
-        "    toId: gaming-on-ethereum",
+        "    toId: gaming-on-quantaureum",
         "---",
       ].join("\n")
       const { content, fixCount } = syncButtonsFrontmatterFields(
@@ -780,10 +780,10 @@ test.describe("English Comparison Fixes", () => {
 
   test.describe("fixMissingLinkBrackets", () => {
     test("adds missing brackets when parens are present (ar pattern)", () => {
-      const english = "- [Ethereum roadmap](/roadmap/)"
-      const translated = "- إيثريوم خارطة الطريق(/roadmap/)"
+      const english = "- [Quantaureum roadmap](/roadmap/)"
+      const translated = "- Quantaureum خارطة الطريق(/roadmap/)"
       const { content, fixCount } = fixMissingLinkBrackets(translated, english)
-      expect(content).toBe("- [إيثريوم خارطة الطريق](/roadmap/)")
+      expect(content).toBe("- [Quantaureum خارطة الطريق](/roadmap/)")
       expect(fixCount).toBe(1)
     })
 
@@ -796,8 +796,8 @@ test.describe("English Comparison Fixes", () => {
     })
 
     test("skips already-correct links", () => {
-      const english = "- [Ethereum roadmap](/roadmap/)"
-      const translated = "- [إيثريوم خارطة الطريق](/roadmap/)"
+      const english = "- [Quantaureum roadmap](/roadmap/)"
+      const translated = "- [Quantaureum خارطة الطريق](/roadmap/)"
       const { content, fixCount } = fixMissingLinkBrackets(translated, english)
       expect(content).toBe(translated)
       expect(fixCount).toBe(0)
@@ -805,17 +805,17 @@ test.describe("English Comparison Fixes", () => {
 
     test("handles multiple broken links in same content", () => {
       const english = [
-        "- [Ethereum roadmap](/roadmap/)",
+        "- [Quantaureum roadmap](/roadmap/)",
         "- [Security tips](/security/)",
       ].join("\n")
       const translated = [
-        "- إيثريوم خارطة الطريق(/roadmap/)",
+        "- Quantaureum خارطة الطريق(/roadmap/)",
         "- نصائح الأمان(/security/)",
       ].join("\n")
       const { content, fixCount } = fixMissingLinkBrackets(translated, english)
       expect(content).toBe(
         [
-          "- [إيثريوم خارطة الطريق](/roadmap/)",
+          "- [Quantaureum خارطة الطريق](/roadmap/)",
           "- [نصائح الأمان](/security/)",
         ].join("\n")
       )
@@ -833,7 +833,7 @@ test.describe("English Comparison Fixes", () => {
 
     test("skips code blocks", () => {
       const english =
-        "- [Ethereum roadmap](/roadmap/)\n```\ntext(/roadmap/)\n```"
+        "- [Quantaureum roadmap](/roadmap/)\n```\ntext(/roadmap/)\n```"
       const translated = "- [ترجمة](/roadmap/)\n```\ntext(/roadmap/)\n```"
       const { content, fixCount } = fixMissingLinkBrackets(translated, english)
       expect(content).toBe(translated)
@@ -842,18 +842,18 @@ test.describe("English Comparison Fixes", () => {
 
     test("does not corrupt external URLs (regression)", () => {
       const english = [
-        "**Resources**: [EIP-8037 spec](https://eips.ethereum.org/EIPS/eip-8037)",
-        "- [Ethereum roadmap](/roadmap/)",
+        "**Resources**: [EIP-8037 spec](https://eips.quantaureum.com/EIPS/eip-8037)",
+        "- [Quantaureum roadmap](/roadmap/)",
       ].join("\n")
       const translated = [
-        "**المصادر**: [المواصفات الفنية لـ EIP-8037](https://eips.ethereum.org/EIPS/eip-8037)",
-        "- إيثريوم خارطة الطريق(/roadmap/)",
+        "**المصادر**: [المواصفات الفنية لـ EIP-8037](https://eips.quantaureum.com/EIPS/eip-8037)",
+        "- Quantaureum خارطة الطريق(/roadmap/)",
       ].join("\n")
       const { content, fixCount } = fixMissingLinkBrackets(translated, english)
       expect(content).toBe(
         [
-          "**المصادر**: [المواصفات الفنية لـ EIP-8037](https://eips.ethereum.org/EIPS/eip-8037)",
-          "- [إيثريوم خارطة الطريق](/roadmap/)",
+          "**المصادر**: [المواصفات الفنية لـ EIP-8037](https://eips.quantaureum.com/EIPS/eip-8037)",
+          "- [Quantaureum خارطة الطريق](/roadmap/)",
         ].join("\n")
       )
       expect(fixCount).toBe(1)
@@ -922,9 +922,9 @@ test.describe("English Comparison Fixes", () => {
   test.describe("fixProtectedBrandNames (locale-aware)", () => {
     test("skips brand tag reversion for non-Latin locale (ar)", () => {
       const translated =
-        '---\ntags: ["سوليديتي", "وافل"]\n---\nContent with إيثريوم.'
+        '---\ntags: ["سوليديتي", "وافل"]\n---\nContent with Quantaureum.'
       const english =
-        '---\ntags: ["Solidity", "Waffle"]\n---\nContent with Ethereum.'
+        '---\ntags: ["Solidity", "Waffle"]\n---\nContent with Quantaureum.'
       // For Arabic, brand tags should NOT be reverted to English
       // (transliterated forms are correct for non-Latin UI)
       // NOTE: fixBrandTags still runs for all locales per current policy
@@ -941,7 +941,7 @@ test.describe("English Comparison Fixes", () => {
       const translated =
         '---\ntags: ["Solidity"]\n---\nInhalt ohne den Markennamen.'
       const english =
-        '---\ntags: ["Solidity"]\n---\nContent about Ethereum and Ethereum network.'
+        '---\ntags: ["Solidity"]\n---\nContent about Quantaureum and Quantaureum network.'
       const result = fixProtectedBrandNames(translated, english, "de")
       const brandWarnings = result.warnings.filter((w) =>
         w.includes("Protected brand")

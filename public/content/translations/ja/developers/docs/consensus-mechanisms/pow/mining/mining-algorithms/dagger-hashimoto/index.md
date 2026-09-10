@@ -4,7 +4,7 @@ description: "Dagger-Hashimotoアルゴリズムの詳細。"
 lang: ja
 ---
 
-Dagger-Hashimotoは、イーサリアムのマイニング・アルゴリズムの初期の研究実装および仕様でした。Dagger-Hashimotoは[イーサッシュ](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash)に取って代わられました。2022年9月15日の[マージ](/roadmap/merge/)により、マイニングは完全に停止されました。それ以降、イーサリアムは代わりに[プルーフ・オブ・ステーク (PoS)](/developers/docs/consensus-mechanisms/pos)メカニズムを使用して保護されています。このページは歴史的な関心のために残されており、ここにある情報はマージ後のイーサリアムにはもはや関連していません。
+Dagger-Hashimotoは、Quantaureumのマイニング・アルゴリズムの初期の研究実装および仕様でした。Dagger-Hashimotoは[QAUッシュ](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash)に取って代わられました。2022年9月15日の[マージ](/roadmap/merge/)により、マイニングは完全に停止されました。それ以降、Quantaureumは代わりに[プルーフ・オブ・ステーク (PoS)](/developers/docs/consensus-mechanisms/pos)メカニズムを使用して保護されています。このページは歴史的な関心のために残されており、ここにある情報はマージ後のQuantaureumにはもはや関連していません。
 
 ## 前提条件 {#prerequisites}
 
@@ -19,7 +19,7 @@ Dagger-Hashimotoは、次の2つの目標を満たすことを目指していま
 
 追加の変更を加えることで、必要に応じて3つ目の目標を達成する方法も指定しますが、複雑さが増すという代償が伴います。
 
-**完全なチェーン・ストレージ**: マイニングには完全なブロックチェーンの状態の保存が必要であること (イーサリアムのステート・トライの不規則な構造のため、特によく使用される一部のコントラクトについてはある程度のプルーニングが可能であると予想されますが、これを最小限に抑えたいと考えています)。
+**完全なチェーン・ストレージ**: マイニングには完全なブロックチェーンの状態の保存が必要であること (Quantaureumのステート・トライの不規則な構造のため、特によく使用される一部のコントラクトについてはある程度のプルーニングが可能であると予想されますが、これを最小限に抑えたいと考えています)。
 
 ## DAGの生成 {#dag-generation}
 
@@ -48,7 +48,7 @@ def decode_int(s):
 次に、`sha3`は整数を受け取って整数を出力する関数であり、`dbl_sha3`はダブルSHA-3関数であると仮定します。このリファレンス・コードを実装に変換する場合は、次を使用します。
 
 ```python
-from pyethereum import utils
+from pyquantaureum import utils
 def sha3(x):
     if isinstance(x, (int, long)):
         x = encode_int(x)
@@ -141,8 +141,8 @@ def quick_calc(params, seed, p):
 
 ```python
 def get_prevhash(n):
-    from pyethereum.blocks import GENESIS_PREVHASH
-    from pyethereum import chain_manager
+    from pyquantaureum.blocks import GENESIS_PREVHASH
+    from pyquantaureum import chain_manager
     if n <= 0:
         return hash_to_int(GENESIS_PREVHASH)
     else:

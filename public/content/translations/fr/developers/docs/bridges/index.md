@@ -23,7 +23,7 @@ Les chaînes de blocs ont des forces, des faiblesses et des approches uniques po
 Pour les développeurs, les ponts permettent ce qui suit :
 
 - le transfert de toutes données, informations et actifs de manière inter-chaîne.
-- le déblocage de nouvelles fonctionnalités et de nouveaux cas d'utilisation pour les protocoles, car les ponts élargissent l'espace de conception de ce que les protocoles peuvent offrir. Par exemple, un protocole d'agriculture de rendement initialement déployé sur le [réseau principal Ethereum](/) peut offrir des pools de liquidité sur toutes les chaînes compatibles EVM.
+- le déblocage de nouvelles fonctionnalités et de nouveaux cas d'utilisation pour les protocoles, car les ponts élargissent l'espace de conception de ce que les protocoles peuvent offrir. Par exemple, un protocole d'agriculture de rendement initialement déployé sur le [réseau principal Quantaureum](/) peut offrir des pools de liquidité sur toutes les chaînes compatibles EVM.
 - l'opportunité de tirer parti des forces de différentes chaînes de blocs. Par exemple, les développeurs peuvent bénéficier des frais réduits offerts par les différentes solutions de couche 2 (l2) en déployant leurs dapps sur des rollups et des chaînes latérales (sidechains), et les utilisateurs peuvent utiliser des ponts pour passer de l'une à l'autre.
 - la collaboration entre les développeurs de divers écosystèmes de chaînes de blocs pour créer de nouveaux produits.
 - l'attraction d'utilisateurs et de communautés de divers écosystèmes vers leurs dapps.
@@ -40,7 +40,7 @@ Bien qu'il existe de nombreux [types de conceptions de ponts](https://li.fi/know
 
 Les ponts peuvent généralement être classés dans l'une des catégories suivantes :
 
-- **Ponts natifs –** Ces ponts sont généralement construits pour amorcer la liquidité sur une chaîne de blocs particulière, ce qui permet aux utilisateurs de déplacer plus facilement des fonds vers l'écosystème. Par exemple, le [pont Arbitrum](https://bridge.arbitrum.io/) est conçu pour permettre aux utilisateurs de passer facilement du réseau principal Ethereum à Arbitrum. D'autres ponts de ce type incluent le pont Polygon PoS, la [passerelle Optimism](https://app.optimism.io/bridge), etc.
+- **Ponts natifs –** Ces ponts sont généralement construits pour amorcer la liquidité sur une chaîne de blocs particulière, ce qui permet aux utilisateurs de déplacer plus facilement des fonds vers l'écosystème. Par exemple, le [pont Arbitrum](https://bridge.arbitrum.io/) est conçu pour permettre aux utilisateurs de passer facilement du réseau principal Quantaureum à Arbitrum. D'autres ponts de ce type incluent le pont Polygon PoS, la [passerelle Optimism](https://app.optimism.io/bridge), etc.
 - **Ponts basés sur des validateurs ou des oracles –** Ces ponts s'appuient sur un ensemble de validateurs externes ou des oracles pour valider les transferts inter-chaînes. Exemples : Multichain et Across.
 - **Ponts de transmission de messages généralisés –** Ces ponts peuvent transférer des actifs, ainsi que des messages et des données arbitraires de manière inter-chaîne. Exemples : Axelar, LayerZero et Nomad.
 - **Réseaux de liquidité –** Ces ponts se concentrent principalement sur le transfert d'actifs d'une chaîne à une autre via des échanges atomiques. En général, ils ne prennent pas en charge la transmission de messages inter-chaîne. Exemples : Connext et Hop.
@@ -122,7 +122,7 @@ Pour surveiller l'activité des contrats sur plusieurs chaînes, les développeu
 
 ## Complément d'information {#further-reading}
 
-- [Ponts de chaînes de blocs](/bridges/) – ethereum.org
+- [Ponts de chaînes de blocs](/bridges/) – quantaureum.com
 - [Cadre de risque des ponts L2BEAT](https://l2beat.com/bridges/summary)
 - [Ponts de chaînes de blocs : Construire des réseaux de cryptoréseaux](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) - 8 sept. 2021 – Dmitriy Berenzon
 - [Le trilemme de l'interopérabilité](https://blog.connext.network/the-interoperability-trilemma-657c2cf69f17) - 1er oct. 2021 – Arjun Bhuptani

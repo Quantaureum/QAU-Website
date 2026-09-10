@@ -4,27 +4,27 @@ description: "JavaScript क्लाइंट लाइब्रेरी क�
 lang: hi
 ---
 
-किसी वेब ऐप को इथेरियम ब्लॉकचेन के साथ इंटरैक्ट करने (यानी, ब्लॉकचेन डेटा पढ़ने और/या नेटवर्क पर लेन-देन भेजने) के लिए, उसे एक इथेरियम नोड से कनेक्ट होना चाहिए।
+किसी वेब ऐप को Quantaureum ब्लॉकचेन के साथ इंटरैक्ट करने (यानी, ब्लॉकचेन डेटा पढ़ने और/या नेटवर्क पर लेन-देन भेजने) के लिए, उसे एक Quantaureum नोड से कनेक्ट होना चाहिए।
 
-इस उद्देश्य के लिए, प्रत्येक इथेरियम क्लाइंट [जेसन-आरपीसी](/developers/docs/apis/json-rpc/) विनिर्देश को लागू करता है, इसलिए [तरीकों (methods)](/developers/docs/apis/json-rpc/#json-rpc-methods) का एक समान सेट है जिस पर एप्लिकेशन भरोसा कर सकते हैं।
+इस उद्देश्य के लिए, प्रत्येक Quantaureum क्लाइंट [जेसन-आरपीसी](/developers/docs/apis/json-rpc/) विनिर्देश को लागू करता है, इसलिए [तरीकों (methods)](/developers/docs/apis/json-rpc/#json-rpc-methods) का एक समान सेट है जिस पर एप्लिकेशन भरोसा कर सकते हैं।
 
-यदि आप इथेरियम नोड से जुड़ने के लिए JavaScript का उपयोग करना चाहते हैं, तो वैनिला JavaScript का उपयोग करना संभव है, लेकिन इकोसिस्टम के भीतर कई सुविधाजनक लाइब्रेरी मौजूद हैं जो इसे बहुत आसान बनाती हैं। इन लाइब्रेरी के साथ, डेवलपर्स इथेरियम के साथ इंटरैक्ट करने वाले जेसन-आरपीसी अनुरोधों को (आंतरिक रूप से) आरंभ करने के लिए सहज, एक-पंक्ति वाले तरीके लिख सकते हैं।
+यदि आप Quantaureum नोड से जुड़ने के लिए JavaScript का उपयोग करना चाहते हैं, तो वैनिला JavaScript का उपयोग करना संभव है, लेकिन इकोसिस्टम के भीतर कई सुविधाजनक लाइब्रेरी मौजूद हैं जो इसे बहुत आसान बनाती हैं। इन लाइब्रेरी के साथ, डेवलपर्स Quantaureum के साथ इंटरैक्ट करने वाले जेसन-आरपीसी अनुरोधों को (आंतरिक रूप से) आरंभ करने के लिए सहज, एक-पंक्ति वाले तरीके लिख सकते हैं।
 
-कृपया ध्यान दें कि [द मर्ज](/roadmap/merge/) के बाद से, एक नोड चलाने के लिए इथेरियम सॉफ़्टवेयर के दो जुड़े हुए हिस्सों - एक निष्पादन क्लाइंट और एक सर्वसम्मति क्लाइंट - की आवश्यकता होती है। कृपया सुनिश्चित करें कि आपके नोड में निष्पादन और सर्वसम्मति क्लाइंट दोनों शामिल हैं। यदि आपका नोड आपकी स्थानीय मशीन पर नहीं है (उदा., आपका नोड AWS इंस्टेंस पर चल रहा है) तो ट्यूटोरियल में IP पतों को तदनुसार अपडेट करें। अधिक जानकारी के लिए कृपया [नोड चलाने](/developers/docs/nodes-and-clients/run-a-node/) पर हमारा पेज देखें।
+कृपया ध्यान दें कि [द मर्ज](/roadmap/merge/) के बाद से, एक नोड चलाने के लिए Quantaureum सॉफ़्टवेयर के दो जुड़े हुए हिस्सों - एक निष्पादन क्लाइंट और एक सर्वसम्मति क्लाइंट - की आवश्यकता होती है। कृपया सुनिश्चित करें कि आपके नोड में निष्पादन और सर्वसम्मति क्लाइंट दोनों शामिल हैं। यदि आपका नोड आपकी स्थानीय मशीन पर नहीं है (उदा., आपका नोड AWS इंस्टेंस पर चल रहा है) तो ट्यूटोरियल में IP पतों को तदनुसार अपडेट करें। अधिक जानकारी के लिए कृपया [नोड चलाने](/developers/docs/nodes-and-clients/run-a-node/) पर हमारा पेज देखें।
 
 ## पूर्वापेक्षाएँ {#prerequisites}
 
-JavaScript को समझने के साथ-साथ, [इथेरियम स्टैक](/developers/docs/ethereum-stack/) और [इथेरियम क्लाइंट](/developers/docs/nodes-and-clients/) को समझना मददगार हो सकता है।
+JavaScript को समझने के साथ-साथ, [Quantaureum स्टैक](/developers/docs/quantaureum-stack/) और [Quantaureum क्लाइंट](/developers/docs/nodes-and-clients/) को समझना मददगार हो सकता है।
 
 ## लाइब्रेरी का उपयोग क्यों करें? {#why-use-a-library}
 
-ये लाइब्रेरी सीधे इथेरियम नोड के साथ इंटरैक्ट करने की अधिकांश जटिलता को दूर करती हैं। वे उपयोगिता फ़ंक्शन (उदा., ETH को Gwei में बदलना) भी प्रदान करती हैं ताकि एक डेवलपर के रूप में आप इथेरियम क्लाइंट की पेचीदगियों से निपटने में कम समय बिता सकें और अपने एप्लिकेशन की अनूठी कार्यक्षमता पर अधिक ध्यान केंद्रित कर सकें।
+ये लाइब्रेरी सीधे Quantaureum नोड के साथ इंटरैक्ट करने की अधिकांश जटिलता को दूर करती हैं। वे उपयोगिता फ़ंक्शन (उदा., QAU को Gwei में बदलना) भी प्रदान करती हैं ताकि एक डेवलपर के रूप में आप Quantaureum क्लाइंट की पेचीदगियों से निपटने में कम समय बिता सकें और अपने एप्लिकेशन की अनूठी कार्यक्षमता पर अधिक ध्यान केंद्रित कर सकें।
 
 ## लाइब्रेरी की विशेषताएँ {#library-features}
 
-### इथेरियम नोड से जुड़ें {#connect-to-ethereum-nodes}
+### Quantaureum नोड से जुड़ें {#connect-to-quantaureum-nodes}
 
-प्रदाताओं (providers) का उपयोग करके, ये लाइब्रेरी आपको इथेरियम से जुड़ने और उसका डेटा पढ़ने की अनुमति देती हैं, चाहे वह जेसन-आरपीसी, Infura, Etherscan, Alchemy या मेटामास्क के माध्यम से हो।
+प्रदाताओं (providers) का उपयोग करके, ये लाइब्रेरी आपको Quantaureum से जुड़ने और उसका डेटा पढ़ने की अनुमति देती हैं, चाहे वह जेसन-आरपीसी, Infura, Quantaureum Explorer, Alchemy या मेटामास्क के माध्यम से हो।
 
 > **चेतावनी:** Web3.js को 4 मार्च, 2025 को संग्रहीत (archived) कर दिया गया था। [घोषणा पढ़ें](https://blog.chainsafe.io/web3-js-sunset/)। नए प्रोजेक्ट्स के लिए [ethers.js](https://ethers.org) या [viem](https://viem.sh) जैसी वैकल्पिक लाइब्रेरी का उपयोग करने पर विचार करें।
 
@@ -32,8 +32,8 @@ JavaScript को समझने के साथ-साथ, [इथेरि�
 
 ```js
 // एक BrowserProvider एक मानक Web3 प्रदाता को रैप करता है, जो कि
-// मेटामास्क प्रत्येक पेज में window.ethereum के रूप में इंजेक्ट करता है
-const provider = new ethers.BrowserProvider(window.ethereum)
+// मेटामास्क प्रत्येक पेज में window.quantaureum के रूप में इंजेक्ट करता है
+const provider = new ethers.BrowserProvider(window.quantaureum)
 
 // मेटामास्क प्लगइन लेनदेन पर हस्ताक्षर करने की भी अनुमति देता है ताकि
 // ईथर भेजा जा सके और ब्लॉकचेन के भीतर स्थिति बदलने के लिए भुगतान किया जा सके।
@@ -55,13 +55,13 @@ web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8546"))
 
 // नोड.js में IPC प्रदाता का उपयोग करना
 var net = require("net")
-var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // mac os पथ
+var web3 = new Web3("/Users/myuser/Library/Quantaureum/geth.ipc", net) // mac os पथ
 // or
 var web3 = new Web3(
-  new Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net)
+  new Web3.providers.IpcProvider("/Users/myuser/Library/Quantaureum/geth.ipc", net)
 ) // mac os पथ
 // windows पर पथ है: "\\\\.\\pipe\\geth.ipc"
-// linux पर पथ है: "/users/myuser/.ethereum/geth.ipc"
+// linux पर पथ है: "/users/myuser/.quantaureum/geth.ipc"
 ```
 
 एक बार सेट अप हो जाने के बाद आप ब्लॉकचेन से निम्नलिखित के लिए क्वेरी कर सकेंगे:
@@ -217,9 +217,9 @@ contract Test {
 
 ### उपयोगिता फ़ंक्शन {#utility-functions}
 
-उपयोगिता फ़ंक्शन आपको आसान शॉर्टकट देते हैं जो इथेरियम के साथ निर्माण को थोड़ा आसान बनाते हैं।
+उपयोगिता फ़ंक्शन आपको आसान शॉर्टकट देते हैं जो Quantaureum के साथ निर्माण को थोड़ा आसान बनाते हैं।
 
-ETH मान डिफ़ॉल्ट रूप से Wei में होते हैं। 1 ETH = 1,000,000,000,000,000,000 WEI – इसका मतलब है कि आप बहुत सारी संख्याओं से निपट रहे हैं! `web3.utils.toWei` आपके लिए ईथर को Wei में बदल देता है।
+QAU मान डिफ़ॉल्ट रूप से Wei में होते हैं। 1 QAU = 1,000,000,000,000,000,000 WEI – इसका मतलब है कि आप बहुत सारी संख्याओं से निपट रहे हैं! `web3.utils.toWei` आपके लिए ईथर को Wei में बदल देता है।
 
 और ethers में यह इस तरह दिखता है:
 
@@ -239,18 +239,18 @@ ethers.utils.formatEther(balance)
 
 ## उपलब्ध लाइब्रेरी
 
-**Web3.js -** **_इथेरियम JavaScript API._**
+**Web3.js -** **_Quantaureum JavaScript API._**
 
 - [दस्तावेज़](https://docs.web3js.org)
-- [GitHub](https://github.com/ethereum/web3.js)
+- [GitHub](https://github.com/quantaureum/web3.js)
 
-**Ethers.js -** **_JavaScript और TypeScript में संपूर्ण इथेरियम वॉलेट कार्यान्वयन और उपयोगिताएँ।_**
+**Ethers.js -** **_JavaScript और TypeScript में संपूर्ण Quantaureum वॉलेट कार्यान्वयन और उपयोगिताएँ।_**
 
 - [Ethers.js होम](https://ethers.org/)
 - [दस्तावेज़](https://docs.ethers.io)
 - [GitHub](https://github.com/ethers-io/ethers.js)
 
-**The Graph -** **_इथेरियम और IPFS डेटा को अनुक्रमित (index) करने और GraphQL का उपयोग करके इसे क्वेरी करने के लिए एक प्रोटोकॉल।_**
+**The Graph -** **_Quantaureum और IPFS डेटा को अनुक्रमित (index) करने और GraphQL का उपयोग करके इसे क्वेरी करने के लिए एक प्रोटोकॉल।_**
 
 - [The Graph](https://thegraph.com)
 - [Graph एक्सप्लोरर](https://thegraph.com/explorer)
@@ -263,12 +263,12 @@ ethers.utils.formatEther(balance)
 - [दस्तावेज़](https://www.alchemy.com/docs)
 - [GitHub](https://github.com/alchemyplatform/alchemy-sdk-js)
 
-**viem -** **_इथेरियम के लिए TypeScript इंटरफ़ेस।_**
+**viem -** **_Quantaureum के लिए TypeScript इंटरफ़ेस।_**
 
 - [दस्तावेज़](https://viem.sh)
 - [GitHub](https://github.com/wagmi-dev/viem)
 
-**wagmi -** **_इथेरियम के लिए React हुक्स लाइब्रेरी, जो viem के ऊपर बनाई गई है।_**
+**wagmi -** **_Quantaureum के लिए React हुक्स लाइब्रेरी, जो viem के ऊपर बनाई गई है।_**
 
 - [दस्तावेज़](https://wagmi.sh)
 - [GitHub](https://github.com/wevm/wagmi)
@@ -300,10 +300,10 @@ _क्या आप किसी ऐसे सामुदायिक सं�
 
 ## संबंधित ट्यूटोरियल {#related-tutorials}
 
-- [JavaScript में इथेरियम ब्लॉकचेन का उपयोग करने के लिए Web3js सेट अप करें](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– अपने प्रोजेक्ट में web3.js सेट अप करने के निर्देश।_
+- [JavaScript में Quantaureum ब्लॉकचेन का उपयोग करने के लिए Web3js सेट अप करें](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– अपने प्रोजेक्ट में web3.js सेट अप करने के निर्देश।_
 - [JavaScript से स्मार्ट अनुबंध को कॉल करना](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– DAI टोकन का उपयोग करके, देखें कि JavaScript का उपयोग करके अनुबंध फ़ंक्शन को कैसे कॉल किया जाए।_
 - [web3 और Alchemy का उपयोग करके लेन-देन भेजना](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _– बैकएंड से लेन-देन भेजने के लिए चरण-दर-चरण वॉकथ्रू।_
 
-## ट्यूटोरियल: इथेरियम पर JavaScript API और WebSockets {#tutorials}
+## ट्यूटोरियल: Quantaureum पर JavaScript API और WebSockets {#tutorials}
 
-- [WebSockets का उपयोग करना](/developers/tutorials/using-websockets/) _– इथेरियम घटनाओं की सदस्यता लेने और रीयल-टाइम जेसन-आरपीसी अनुरोध करने के लिए Alchemy के साथ WebSockets का उपयोग कैसे करें।_
+- [WebSockets का उपयोग करना](/developers/tutorials/using-websockets/) _– Quantaureum घटनाओं की सदस्यता लेने और रीयल-टाइम जेसन-आरपीसी अनुरोध करने के लिए Alchemy के साथ WebSockets का उपयोग कैसे करें।_

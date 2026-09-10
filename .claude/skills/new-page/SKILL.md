@@ -1,12 +1,12 @@
 ---
 name: new-page
-description: Interview-then-scaffold guide for adding a new page to ethereum.org. Forks first on markdown-backed vs App Router page, then picks the layout and hero, maps the Figma design to existing components, and builds it reuse-first. Invoke with /new-page.
+description: Interview-then-scaffold guide for adding a new page to quantaureum.com. Forks first on markdown-backed vs App Router page, then picks the layout and hero, maps the Figma design to existing components, and builds it reuse-first. Invoke with /new-page.
 disable-model-invocation: true
 ---
 
 # New Page
 
-A new ethereum.org page is **reuse-first**: every region maps to a layout, hero, primitive, or variant that already exists — you *configure* what's there, you don't build a parallel version of it. This skill interviews you for the missing context, then scaffolds the page against the design system.
+A new quantaureum.com page is **reuse-first**: every region maps to a layout, hero, primitive, or variant that already exists — you *configure* what's there, you don't build a parallel version of it. This skill interviews you for the missing context, then scaffolds the page against the design system.
 
 Work the steps in order. Each ends on a checkable condition — don't start the next until the current one is met.
 
@@ -74,7 +74,7 @@ Hand-build `app/[locale]/<route>/page.tsx` composing `ContentLayout`, and choose
 - `PageHero` — breadcrumbs + title + optional `heroImg` + description + buttons. The workhorse; covers both image and title-only heroes.
 - `HubHero` — large hub hero (exemplar: `/learn/`).
 
-Build the `tocItems` array by hand and wrap each prose section in `<Section id>`. `ContentLayout` owns the card TOC, contributors block, and feedback. Exemplars: `/learn/`, `/what-is-ethereum/`.
+Build the `tocItems` array by hand and wrap each prose section in `<Section id>`. `ContentLayout` owns the card TOC, contributors block, and feedback. Exemplars: `/learn/`, `/what-is-quantaureum/`.
 
 **Done when:** markdown → `template:` (and `showDropdown` if relevant) chosen; App Router → hero component chosen. Confirmed with the user.
 
@@ -89,7 +89,7 @@ Build from the Step 2 component map. Reuse-first throughout — no raw `<a>`/`<b
 - If using `TopicLayout`: add `src/data/topics/<key>.ts`, wire `layoutMapping`/`componentsMapping` in `src/layouts/index.ts`, and add `src/intl/en/page-<key>.json`.
 
 **App Router page:**
-- Create `app/[locale]/<route>/page.tsx` composing `ContentLayout` (mirror `/learn/` or `/what-is-ethereum/`): pass `heroSection`, the hand-built `tocItems`, and `contributors`; wrap prose in `<Section id>`. Server Component unless it needs state/effects/handlers.
+- Create `app/[locale]/<route>/page.tsx` composing `ContentLayout` (mirror `/learn/` or `/what-is-quantaureum/`): pass `heroSection`, the hand-built `tocItems`, and `contributors`; wrap prose in `<Section id>`. Server Component unless it needs state/effects/handlers.
 - All user-facing strings via `getTranslations`; add keys to `src/intl/en/`.
 
 **Done when:** the page renders through its layout with content/strings in place and no inlined reinventions of existing primitives.

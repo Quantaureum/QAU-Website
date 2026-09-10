@@ -58,7 +58,7 @@ const pythonExample = `from web3 import Web3
 
 w3 = Web3(Web3.HTTPProvider("https://mainnet.example/v3/KEY"))
 
-latest = w3.eth.get_block("latest")
+latest = w3.qau.get_block("latest")
 print(latest.number)`
 
 const bashExample = `pnpm install

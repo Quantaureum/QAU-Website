@@ -23,27 +23,27 @@ published: 2021-02-26
 
 ## البدء {#getting-started}
 
-يوضح الدليل التعليمي إعداد الاختبار وتشغيله باستخدام yarn، ولكن لا توجد مشكلة إذا كنت تفضل npm - سأقدم مراجع مناسبة إلى [وثائق](https://ethereum-waffle.readthedocs.io/en/latest/index.html) وافل الرسمية.
+يوضح الدليل التعليمي إعداد الاختبار وتشغيله باستخدام yarn، ولكن لا توجد مشكلة إذا كنت تفضل npm - سأقدم مراجع مناسبة إلى [وثائق](https://quantaureum-waffle.readthedocs.io/en/latest/index.html) وافل الرسمية.
 
 ## تثبيت التبعيات {#install-dependencies}
 
-[أضف](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#installation) تبعيات ethereum-waffle وtypescript إلى تبعيات المطور لمشروعك.
+[أضف](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#installation) تبعيات quantaureum-waffle وtypescript إلى تبعيات المطور لمشروعك.
 
 ```bash
-yarn add --dev ethereum-waffle ts-node typescript @types/jest
+yarn add --dev quantaureum-waffle ts-node typescript @types/jest
 ```
 
 ## مثال على عقد ذكي {#example-smart-contract}
 
-خلال الدليل التعليمي، سنعمل على مثال بسيط لعقد ذكي - EtherSplitter. لا يفعل الكثير بخلاف السماح لأي شخص بإرسال بعض الـ wei وتقسيمها بالتساوي بين مستلمين محددين مسبقًا.
+خلال الدليل التعليمي، سنعمل على مثال بسيط لعقد ذكي - QauSplitter. لا يفعل الكثير بخلاف السماح لأي شخص بإرسال بعض الـ wei وتقسيمها بالتساوي بين مستلمين محددين مسبقًا.
 تتطلب دالة التقسيم أن يكون عدد wei زوجيًا، وإلا فسيتم عكسها. لكلا المستلمين، يقوم بإجراء تحويل wei متبوعًا بإصدار حدث التحويل.
 
-ضع مقتطف النص البرمجي EtherSplitter في `src/EtherSplitter.sol`.
+ضع مقتطف النص البرمجي QauSplitter في `src/QauSplitter.sol`.
 
 ```solidity
 pragma solidity ^0.6.0;
 
-contract EtherSplitter {
+contract QauSplitter {
     address payable receiver1;
     address payable receiver2;
 
@@ -66,7 +66,7 @@ contract EtherSplitter {
 
 ## تجميع العقد {#compile-the-contract}
 
-[لتجميع](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) العقد، أضف الإدخال التالي إلى ملف package.json:
+[لتجميع](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) العقد، أضف الإدخال التالي إلى ملف package.json:
 
 ```json
 "scripts": {
@@ -85,11 +85,11 @@ contract EtherSplitter {
 }
 ```
 
-شغِّل `yarn build`. ونتيجة لذلك، سيظهر دليل `build` مع عقد EtherSplitter المجمّع بتنسيق JSON.
+شغِّل `yarn build`. ونتيجة لذلك، سيظهر دليل `build` مع عقد QauSplitter المجمّع بتنسيق JSON.
 
 ## إعداد الاختبار {#test-setup}
 
-يتطلب الاختبار باستخدام وافل استخدام متطابقات Chai وMocha، لذا تحتاج إلى [إضافتها](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) إلى مشروعك. حدّث ملف package.json الخاص بك وأضف إدخال `test` في جزء البرامج النصية:
+يتطلب الاختبار باستخدام وافل استخدام متطابقات Chai وMocha، لذا تحتاج إلى [إضافتها](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) إلى مشروعك. حدّث ملف package.json الخاص بك وأضف إدخال `test` في جزء البرامج النصية:
 
 ```json
 "scripts": {
@@ -98,27 +98,27 @@ contract EtherSplitter {
   }
 ```
 
-إذا كنت تريد [تنفيذ](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) اختباراتك، فما عليك سوى تشغيل `yarn test`.
+إذا كنت تريد [تنفيذ](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#running-tests) اختباراتك، فما عليك سوى تشغيل `yarn test`.
 
 ## اختبار {#testing}
 
-الآن قم بإنشاء دليل `test` وإنشاء الملف الجديد `test\EtherSplitter.test.ts`.
+الآن قم بإنشاء دليل `test` وإنشاء الملف الجديد `test\QauSplitter.test.ts`.
 انسخ المقتطف أدناه والصقه في ملف الاختبار الخاص بنا.
 
 ```ts
 import { expect, use } from "chai"
 import { Contract } from "ethers"
-import { deployContract, MockProvider, solidity } from "ethereum-waffle"
-import EtherSplitter from "../build/EtherSplitter.json"
+import { deployContract, MockProvider, solidity } from "quantaureum-waffle"
+import QauSplitter from "../build/QauSplitter.json"
 
 use(solidity)
 
-describe("Ether Splitter", () => {
+describe("QAU Splitter", () => {
   const [sender, receiver1, receiver2] = new MockProvider().getWallets()
   let splitter: Contract
 
   beforeEach(async () => {
-    splitter = await deployContract(sender, EtherSplitter, [
+    splitter = await deployContract(sender, QauSplitter, [
       receiver1.address,
       receiver2.address,
     ])
@@ -129,9 +129,9 @@ describe("Ether Splitter", () => {
 ```
 
 بضع كلمات قبل أن نبدأ.
-يأتي `MockProvider` مع إصدار وهمي من البلوكتشين. كما أنه يوفر محافظًا وهمية ستخدمنا في اختبار عقد EtherSplitter. يمكننا الحصول على ما يصل إلى عشر محافظ عن طريق استدعاء دالة `getWallets()` على الموفر. في هذا المثال، نحصل على ثلاث محافظ - للمرسل واثنين من المستلمين.
+يأتي `MockProvider` مع إصدار وهمي من البلوكتشين. كما أنه يوفر محافظًا وهمية ستخدمنا في اختبار عقد QauSplitter. يمكننا الحصول على ما يصل إلى عشر محافظ عن طريق استدعاء دالة `getWallets()` على الموفر. في هذا المثال، نحصل على ثلاث محافظ - للمرسل واثنين من المستلمين.
 
-بعد ذلك، نعلن عن متغير يسمى 'splitter' - وهو عقد EtherSplitter الوهمي الخاص بنا. يتم إنشاؤه قبل كل تنفيذ لاختبار واحد بواسطة دالة `deployContract`. تحاكي هذه الدالة نشر عقد من المحفظة التي تم تمريرها كمعامل أول (محفظة المرسل في حالتنا). المعامل الثاني هو واجهة التطبيق الثنائية (ABI) والرمز الثانوي للعقد المختبَر - نمرر هناك ملف json الخاص بعقد EtherSplitter المجمّع من دليل `build`. المعامل الثالث هو مصفوفة تحتوي على وسائط مُنشئ العقد، والتي في حالتنا هي عنوانا المستلمين.
+بعد ذلك، نعلن عن متغير يسمى 'splitter' - وهو عقد QauSplitter الوهمي الخاص بنا. يتم إنشاؤه قبل كل تنفيذ لاختبار واحد بواسطة دالة `deployContract`. تحاكي هذه الدالة نشر عقد من المحفظة التي تم تمريرها كمعامل أول (محفظة المرسل في حالتنا). المعامل الثاني هو واجهة التطبيق الثنائية (ABI) والرمز الثانوي للعقد المختبَر - نمرر هناك ملف json الخاص بعقد QauSplitter المجمّع من دليل `build`. المعامل الثالث هو مصفوفة تحتوي على وسائط مُنشئ العقد، والتي في حالتنا هي عنوانا المستلمين.
 
 ## changeBalances {#changebalances}
 
@@ -178,7 +178,7 @@ it("إصدار حدث عند التحويل إلى المستلم الثاني",
 })
 ```
 
-يسمح لنا متطابق `emit` بالتحقق مما إذا كان العقد قد أصدر حدثًا عند استدعاء دالة. كمعاملات لمتطابق `emit`، فإننا نقدم العقد الوهمي الذي نتوقع أن يصدر الحدث، بالإضافة إلى اسم ذلك الحدث. في حالتنا، العقد الوهمي هو `splitter` واسم الحدث هو `Transfer`. يمكننا أيضًا التحقق من القيم الدقيقة للوسائط التي تم إصدار الحدث بها - نمرر أكبر عدد ممكن من الوسائط إلى متطابق `withArgs`، كما يتوقع إعلان الحدث الخاص بنا. في حالة عقد EtherSplitter، نمرر عناوين المرسل والمستلم مع كمية wei المنقولة.
+يسمح لنا متطابق `emit` بالتحقق مما إذا كان العقد قد أصدر حدثًا عند استدعاء دالة. كمعاملات لمتطابق `emit`، فإننا نقدم العقد الوهمي الذي نتوقع أن يصدر الحدث، بالإضافة إلى اسم ذلك الحدث. في حالتنا، العقد الوهمي هو `splitter` واسم الحدث هو `Transfer`. يمكننا أيضًا التحقق من القيم الدقيقة للوسائط التي تم إصدار الحدث بها - نمرر أكبر عدد ممكن من الوسائط إلى متطابق `withArgs`، كما يتوقع إعلان الحدث الخاص بنا. في حالة عقد QauSplitter، نمرر عناوين المرسل والمستلم مع كمية wei المنقولة.
 
 ## revertedWith {#revertedwith}
 
@@ -192,7 +192,7 @@ it("يتم عكس المعاملة عندما تكون كمية wei غير زو�
 })
 ```
 
-الاختبار، إذا نجح، سيؤكد لنا أن المعاملة قد عُكست بالفعل. ومع ذلك، يجب أن يكون هناك أيضًا تطابق تام بين الرسائل التي مررناها في عبارة `require` والرسالة التي نتوقعها في `revertedWith`. إذا عدنا إلى النص البرمجي لعقد EtherSplitter، في عبارة `require` لمقدار wei، فإننا نقدم الرسالة: 'Uneven wei amount not allowed'. هذا يطابق الرسالة التي نتوقعها في اختبارنا. إذا لم يكونا متساويين، فسيفشل الاختبار.
+الاختبار، إذا نجح، سيؤكد لنا أن المعاملة قد عُكست بالفعل. ومع ذلك، يجب أن يكون هناك أيضًا تطابق تام بين الرسائل التي مررناها في عبارة `require` والرسالة التي نتوقعها في `revertedWith`. إذا عدنا إلى النص البرمجي لعقد QauSplitter، في عبارة `require` لمقدار wei، فإننا نقدم الرسالة: 'Uneven wei amount not allowed'. هذا يطابق الرسالة التي نتوقعها في اختبارنا. إذا لم يكونا متساويين، فسيفشل الاختبار.
 
 ## تهانينا! {#congratulations}
 

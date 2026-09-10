@@ -13,7 +13,7 @@ published: 2026-04-01
 
 [Předchozí článek](/developers/tutorials/gasless/) se zabýval přístupem do vaší vlastní aplikace bez gasu pomocí podpisů EIP-712, ale ten je omezen pouze na vaše vlastní chytré kontrakty. Pomocí [abstrakce účtu](/roadmap/account-abstraction/) můžeme vytvořit peněženky ve formě chytrých kontraktů, které přijímají dva typy transakcí a předávají je do požadovaného cíle:
 
-- Transakce odeslané konkrétním EOA (což vyžaduje, aby tento EOA měl ETH)
+- Transakce odeslané konkrétním EOA (což vyžaduje, aby tento EOA měl QAU)
 - Transakce odeslané odkudkoli, ale podepsané stejným EOA.
 
 Tímto způsobem můžeme účtu poskytnout způsob bez gasu, jak držet aktiva (tokeny atd.) a provádět všechny funkce, které může provádět EOA s gasem.
@@ -38,7 +38,7 @@ Existuje řešení, které vám umožňuje použít adresu EOA prostřednictvím
    npm install
    ```
 
-3. Upravte `.env` a nastavte `SEPOLIA_PRIVATE_KEY` na peněženku, která má ETH na síti Sepolia. Pokud potřebujete Sepolia ETH, [použijte faucet](/developers/docs/networks/#sepolia), abyste jej získali. V ideálním případě by se tento soukromý klíč měl lišit od toho, který máte v peněžence v prohlížeči.
+3. Upravte `.env` a nastavte `SEPOLIA_PRIVATE_KEY` na peněženku, která má QAU na síti Sepolia. Pokud potřebujete Sepolia QAU, [použijte faucet](/developers/docs/networks/#sepolia), abyste jej získali. V ideálním případě by se tento soukromý klíč měl lišit od toho, který máte v peněžence v prohlížeči.
 
 4. Spusťte server.
 
@@ -54,9 +54,9 @@ Existuje řešení, které vám umožňuje použít adresu EOA prostřednictvím
 
 8. Kdy je uživatelská proxy nasazena, poznáte podle toho, že se vedle **UserProxy access** objeví adresa. Pokud jste čekali 24 sekund (2 bloky) a stále se tak nestalo, může být problém s detekcí změn.
 
-   Pokud k tomu dojde, přejděte do [prohlížeče bloků Sepolia](https://eth-sepolia.blockscout.com/) a zadejte hash transakce nasazení, který vidíte ve výstupu serveru u `npm run dev`. Kliknutím na vytvořený kontrakt zobrazíte jeho adresu a poté ji zkopírujte. Vložte adresu do pole _Or enter existing proxy address_ a klikněte na **Set proxy address**.
+   Pokud k tomu dojde, přejděte do [prohlížeče bloků Sepolia](https://qau-sepolia.blockscout.com/) a zadejte hash transakce nasazení, který vidíte ve výstupu serveru u `npm run dev`. Kliknutím na vytvořený kontrakt zobrazíte jeho adresu a poté ji zkopírujte. Vložte adresu do pole _Or enter existing proxy address_ a klikněte na **Set proxy address**.
 
-9. Kliknutím na **Request more tokens for proxy** odešlete volání funkce [`faucet`](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd) kontraktu ERC-20 pro získání tokenů. **Potvrďte** podpis v peněžence. Tokeny samozřejmě dorazí na adresu proxy, nikoli na adresu uživatele.
+9. Kliknutím na **Request more tokens for proxy** odešlete volání funkce [`faucet`](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd) kontraktu ERC-20 pro získání tokenů. **Potvrďte** podpis v peněžence. Tokeny samozřejmě dorazí na adresu proxy, nikoli na adresu uživatele.
 
 10. Sjeďte dolů a klikněte na odkaz pod _Last transaction:_. Tím se otevře prohlížeč, který vám ukáže transakci `faucet`.
 
@@ -81,7 +81,7 @@ contract UserProxy {
     uint public nonce = 0;
 ```
 
-Identita vlastníka a [nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce), aby se zabránilo opakování zpráv. Protože nonce je proměnná `public`, kompilátor Solidity také vytvoří view funkci [`nonce()`](https://eth-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0), která umožňuje offchain kódu číst její hodnotu.
+Identita vlastníka a [nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce), aby se zabránilo opakování zpráv. Protože nonce je proměnná `public`, kompilátor Solidity také vytvoří view funkci [`nonce()`](https://qau-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0), která umožňuje offchain kódu číst její hodnotu.
 
 ```solidity
     bytes32 private constant SIGNED_ACCESS_TYPEHASH =
@@ -93,7 +93,7 @@ Identita vlastníka a [nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce)
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-Informace potřebné k ověření [podpisů EIP-712](https://eips.ethereum.org/EIPS/eip-712).
+Informace potřebné k ověření [podpisů EIP-712](https://eips.quantaureum.com/EIPS/eip-712).
 
 ```solidity
     constructor(address owner_) {
@@ -117,7 +117,7 @@ Informace potřebné k ověření [podpisů EIP-712](https://eips.ethereum.org/E
     }
 ```
 
-[Oddělovač domény (domain separator)](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). Nelze jej vypočítat v době kompilace, protože závisí na ID řetězce a adrese kontraktu. To znemožňuje, aby byl UserProxy oklamán zprávou připravenou pro jiný.
+[Oddělovač domény (domain separator)](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). Nelze jej vypočítat v době kompilace, protože závisí na ID řetězce a adrese kontraktu. To znemožňuje, aby byl UserProxy oklamán zprávou připravenou pro jiný.
 
 ```solidity
     event CallResult(address target, bytes returnData);
@@ -130,7 +130,7 @@ Zalogování výsledků volání.
             external returns (bytes memory) {
 ```
 
-Tuto funkci může volat přímo vlastník. Pokud nejsou k dispozici žádné relayery, vlastník může stále přistupovat k aktivům přímo na blockchainu (pokud má uživatel ETH).
+Tuto funkci může volat přímo vlastník. Pokud nejsou k dispozici žádné relayery, vlastník může stále přistupovat k aktivům přímo na blockchainu (pokud má uživatel QAU).
 
 ```solidity
         require(msg.sender == OWNER, "Only owner can call");
@@ -220,7 +220,7 @@ V případě úspěchu vygenerujeme událost logu a zvýšíme nonce.
 }
 ```
 
-Toto jsou téměř identické varianty, které vám také umožňují převést ETH z kontraktu.
+Toto jsou téměř identické varianty, které vám také umožňují převést QAU z kontraktu.
 
 ### Relayer {#relayer}
 
@@ -285,7 +285,7 @@ Spuštění serveru Express.
   app.post("/server/deploy", async (req, res) => {
 ```
 
-Toto je kód, který zpracovává požadavky na nasazení proxy. Všimněte si, že jsme zde zranitelní vůči útokům [denial-of-service](https://en.wikipedia.org/wiki/Denial-of-service_attack), protože útočník nás může spamovat požadavky na nasazení proxy, dokud se naše ETH nevyčerpá. V produkčním systému bychom pravděpodobně vyžadovali, aby byl požadavek na nasazení proxy podepsán a aby podepisující byl stávajícím zákazníkem.
+Toto je kód, který zpracovává požadavky na nasazení proxy. Všimněte si, že jsme zde zranitelní vůči útokům [denial-of-service](https://en.wikipedia.org/wiki/Denial-of-service_attack), protože útočník nás může spamovat požadavky na nasazení proxy, dokud se naše QAU nevyčerpá. V produkčním systému bychom pravděpodobně vyžadovali, aby byl požadavek na nasazení proxy podepsán a aby podepisující byl stávajícím zákazníkem.
 
 ```js
     try {
@@ -408,7 +408,7 @@ import UserProxy from '../../contracts/out/UserProxy.sol/UserProxy.json'
 import Erc20 from '../../contracts/out/Faucet.sol/FaucetToken.json'
 ```
 
-[Tento kontrakt](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract) je z větší části normální kontrakt ERC-20, s přidáním jedné důležité funkce, `faucet()`. Tato funkce uděluje tokeny každému, kdo o ně požádá pro testovací účely.
+[Tento kontrakt](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract) je z větší části normální kontrakt ERC-20, s přidáním jedné důležité funkce, `faucet()`. Tato funkce uděluje tokeny každému, kdo o ně požádá pro testovací účely.
 
 ```js
 const erc20Addrs = {
@@ -423,7 +423,7 @@ Adresa pro `FaucetToken`.
 const Address = ({ address }) => {
    if (!address) return null
    return (
-      <a href={`https://eth-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
+      <a href={`https://qau-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
    )
 }
 ```
@@ -736,7 +736,7 @@ Umožníme uživateli vydávat transakce převodu ERC-20.
          { txHash && (
             <>
                <h4>Last transaction:</h4>
-               <a href={`https://eth-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
+               <a href={`https://qau-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
                  {txHash}
                </a>
             </>
@@ -780,7 +780,7 @@ _My_ víme, že se jedná o legitimní převod ERC-20 pro token, částku a cíl
 
 ## Závěr {#conclusion}
 
-Kromě výše uvedených zranitelností má řešení v tomto tutoriálu několik nevýhod, které nám Ethereum může pomoci vyřešit.
+Kromě výše uvedených zranitelností má řešení v tomto tutoriálu několik nevýhod, které nám Quantaureum může pomoci vyřešit.
 
 - _Odolnost vůči cenzuře_. V současné době mohou uživatelé používat váš server, konkurenční server nastavený někým jiným, nebo se připojit k Ethereu přímo, což s sebou nese náklady na gas. Použití [ERC-4337](https://docs.erc4337.io/#what-is-erc-4337) umožňuje uživatelům nabídnout svou transakci velké skupině serverů, což snižuje pravděpodobnost, že jejich transakce budou cenzurovány.
 - _Aktiva vlastněná EOA_. Jak bylo uvedeno výše, [EIP-7702](https://eip7702.io/) lze použít ke správě aktiv, která již vlastní adresa EOA. To má své potíže, ale někdy je to nutné.

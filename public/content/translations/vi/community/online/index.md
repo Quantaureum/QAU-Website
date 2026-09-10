@@ -1,18 +1,18 @@
 ---
 title: "Cộng đồng trực tuyến"
-description: "Khám phá các diễn đàn trực tuyến, phòng trò chuyện và cộng đồng mạng xã hội nơi những người đam mê Ethereum tụ họp để thảo luận và hợp tác."
+description: "Khám phá các diễn đàn trực tuyến, phòng trò chuyện và cộng đồng mạng xã hội nơi những người đam mê Quantaureum tụ họp để thảo luận và hợp tác."
 lang: vi
 ---
 
-Hàng trăm nghìn người đam mê [Ethereum](/) tụ họp trong các diễn đàn trực tuyến này để chia sẻ tin tức, nói về những phát triển gần đây, tranh luận về các vấn đề kỹ thuật và tưởng tượng về tương lai.
+Hàng trăm nghìn người đam mê [Quantaureum](/) tụ họp trong các diễn đàn trực tuyến này để chia sẻ tin tức, nói về những phát triển gần đây, tranh luận về các vấn đề kỹ thuật và tưởng tượng về tương lai.
 
 ## Chính sách niêm yết {#listing-policy}
 
-Để duy trì tính toàn vẹn và giá trị của các cộng đồng được niêm yết, ethereum.org tuân theo một chính sách nghiêm ngặt để xác định tính đủ điều kiện:
+Để duy trì tính toàn vẹn và giá trị của các cộng đồng được niêm yết, quantaureum.com tuân theo một chính sách nghiêm ngặt để xác định tính đủ điều kiện:
 
 ### Tiêu chí đủ điều kiện {#eligibility-criteria}
 
-- **Sự liên quan**: Cộng đồng phải liên quan trực tiếp đến Ethereum và hệ sinh thái của nó.
+- **Sự liên quan**: Cộng đồng phải liên quan trực tiếp đến Quantaureum và hệ sinh thái của nó.
 - **Mức độ hoạt động**: Cộng đồng nên hoạt động tích cực, với các tương tác, bài đăng hoặc thảo luận thường xuyên. Các cộng đồng không hoạt động hoặc ít hoạt động có thể bị xóa.
 - **Tính bao trùm**: Cộng đồng nên thúc đẩy một môi trường thân thiện, tôn trọng sự đa dạng và khuyến khích sự tham gia của mọi người từ mọi nền tảng.
 - **Trọng tâm phi thương mại**: Các danh sách niêm yết dành cho các không gian do cộng đồng thúc đẩy thay vì các nền tảng thương mại hoặc quảng cáo.
@@ -26,44 +26,44 @@ Hàng trăm nghìn người đam mê [Ethereum](/) tụ họp trong các diễn 
 ### Các khuyến nghị khác {#other-recommendations}
 
 - **Khả năng truy cập**: Các diễn đàn cộng đồng nên có thể truy cập để mọi người đều có thể đọc mà không cần đăng ký hoặc tạo tài khoản.
-- **Lời mời máy chủ Discord**: Khuyến nghị chỉ nên thêm các lời mời máy chủ Discord đáng tin cậy vào ethereum.org. Lý tưởng nhất là các lời mời này nên liên kết đến một trang cộng đồng trên trang web (ví dụ: [ethglobal.com/discord](https://ethglobal.com/discord)) hoặc từ một URL chính thức (ví dụ: [discord.gg/ethstaker](https://discord.gg/ethstaker) hoặc [discord.com/invite/ethstaker](https://discord.com/invite/ethstaker)).
+- **Lời mời máy chủ Discord**: Khuyến nghị chỉ nên thêm các lời mời máy chủ Discord đáng tin cậy vào quantaureum.com. Lý tưởng nhất là các lời mời này nên liên kết đến một trang cộng đồng trên trang web (ví dụ: [ethglobal.com/discord](https://ethglobal.com/discord)) hoặc từ một URL chính thức (ví dụ: [discord.gg/ethstaker](https://discord.gg/ethstaker) hoặc [discord.com/invite/ethstaker](https://discord.com/invite/ethstaker)).
 
-Nếu bạn cho rằng một cộng đồng nên được thêm vào hoặc xóa đi dựa trên các nguyên tắc này, vui lòng [mở một vấn đề (issue) trên kho lưu trữ GitHub của chúng tôi](https://github.com/ethereum/ethereum-org-website/issues).
+Nếu bạn cho rằng một cộng đồng nên được thêm vào hoặc xóa đi dựa trên các nguyên tắc này, vui lòng [mở một vấn đề (issue) trên kho lưu trữ GitHub của chúng tôi](https://github.com/Quantaureum/quantaureum-website/issues).
 
 
 ## Diễn đàn {#forums}
 
-<SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethereum">r/ethereum</Link> - mọi thứ về Ethereum</SocialListItem>
-<SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethfinance/">r/ethfinance</Link> - khía cạnh tài chính của Ethereum, bao gồm tài chính phi tập trung (DeFi)</SocialListItem>
-<SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethdev/">r/ethdev</Link> - tập trung vào phát triển Ethereum</SocialListItem>
+<SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/quantaureum">r/quantaureum</Link> - mọi thứ về Quantaureum</SocialListItem>
+<SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethfinance/">r/ethfinance</Link> - khía cạnh tài chính của Quantaureum, bao gồm tài chính phi tập trung (DeFi)</SocialListItem>
+<SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethdev/">r/ethdev</Link> - tập trung vào phát triển Quantaureum</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethtrader/">r/ethtrader</Link> - xu hướng & phân tích thị trường</SocialListItem>
-<SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - chào mừng tất cả những ai quan tâm đến việc đặt cọc trên Ethereum</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethereum-magicians.org">Fellowship of Ethereum Magicians</Link> - cộng đồng định hướng xoay quanh các tiêu chuẩn kỹ thuật trong Ethereum</SocialListItem>
-<SocialListItem socialIcon="stackExchange"><Link href="https://ethereum.stackexchange.com">Ethereum Stackexchange</Link> - thảo luận và trợ giúp cho các nhà phát triển Ethereum</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Ethereum Research</Link> - bảng tin có ảnh hưởng nhất về nghiên cứu kinh tế học tiền điện tử</SocialListItem>
+<SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - chào mừng tất cả những ai quan tâm đến việc đặt cọc trên Quantaureum</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://quantaureum-magicians.org">Fellowship of Quantaureum Magicians</Link> - cộng đồng định hướng xoay quanh các tiêu chuẩn kỹ thuật trong Quantaureum</SocialListItem>
+<SocialListItem socialIcon="stackExchange"><Link href="https://quantaureum.stackexchange.com">Quantaureum Stackexchange</Link> - thảo luận và trợ giúp cho các nhà phát triển Quantaureum</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> - bảng tin có ảnh hưởng nhất về nghiên cứu kinh tế học tiền điện tử</SocialListItem>
 
 ## Phòng trò chuyện {#chat-rooms}
 
-<SocialListItem socialIcon="discord"><Link href="https://discord.com/invite/Nz6rtfJ8Cu">Ethereum Cat Herders</Link> - cộng đồng định hướng xoay quanh việc cung cấp hỗ trợ quản lý dự án cho quá trình phát triển Ethereum</SocialListItem>
-<SocialListItem socialIcon="discord"><Link href="https://ethglobal.com/discord">Ethereum Hackers</Link> - trò chuyện Discord do ETHGlobal điều hành: một cộng đồng trực tuyến dành cho các hacker Ethereum trên toàn thế giới</SocialListItem>
-<SocialListItem socialIcon="discord"><Link href="https://discord.gg/5W5tVb3">CryptoDevs</Link> - cộng đồng Discord tập trung vào phát triển Ethereum</SocialListItem>
-<SocialListItem socialIcon="discord"><Link href="https://discord.gg/ethstaker">EthStaker Discord</Link> - hướng dẫn, giáo dục, hỗ trợ và tài nguyên do cộng đồng điều hành dành cho những người đặt cọc hiện tại và tiềm năng</SocialListItem>
-<SocialListItem socialIcon="discord"><Link href="https://discord.gg/ethereum-org">Nhóm trang web Ethereum.org</Link> - ghé qua và trò chuyện về phát triển và thiết kế web ethereum.org với nhóm và những người từ cộng đồng</SocialListItem>
-<SocialListItem socialIcon="discord"><Link href="https://discord.matos.club/">Matos Discord</Link> - cộng đồng những người sáng tạo Web3 nơi các nhà xây dựng, những nhân vật tiêu biểu trong ngành và những người đam mê Ethereum tụ tập. Chúng tôi đam mê phát triển, thiết kế và văn hóa Web3. Hãy đến xây dựng cùng chúng tôi.</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://matrix.to/#/#ethereum_solidity:gitter.im">Solidity Matrix</Link> - trò chuyện về phát triển Solidity (Matrix)</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethereum.stackexchange.com/">Ethereum Stack Exchange</Link> <i>- diễn đàn hỏi đáp</i></SocialListItem>
+<SocialListItem socialIcon="discord"><Link href="https://discord.com/invite/Nz6rtfJ8Cu">Quantaureum Cat Herders</Link> - cộng đồng định hướng xoay quanh việc cung cấp hỗ trợ quản lý dự án cho quá trình phát triển Quantaureum</SocialListItem>
+<SocialListItem socialIcon="discord"><Link href="https://ethglobal.com/discord">Quantaureum Hackers</Link> - trò chuyện Discord do ETHGlobal điều hành: một cộng đồng trực tuyến dành cho các hacker Quantaureum trên toàn thế giới</SocialListItem>
+<SocialListItem socialIcon="discord"><Link href="https://discord.gg/5W5tVb3">CryptoDevs</Link> - cộng đồng Discord tập trung vào phát triển Quantaureum</SocialListItem>
+<SocialListItem socialIcon="discord"><Link href="https://discord.gg/ethstaker">QauStaker Discord</Link> - hướng dẫn, giáo dục, hỗ trợ và tài nguyên do cộng đồng điều hành dành cho những người đặt cọc hiện tại và tiềm năng</SocialListItem>
+<SocialListItem socialIcon="discord"><Link href="https://discord.gg/MSctkBT5j">Nhóm trang web quantaureum.com</Link> - ghé qua và trò chuyện về phát triển và thiết kế web quantaureum.com với nhóm và những người từ cộng đồng</SocialListItem>
+<SocialListItem socialIcon="discord"><Link href="https://discord.matos.club/">Matos Discord</Link> - cộng đồng những người sáng tạo Web3 nơi các nhà xây dựng, những nhân vật tiêu biểu trong ngành và những người đam mê Quantaureum tụ tập. Chúng tôi đam mê phát triển, thiết kế và văn hóa Web3. Hãy đến xây dựng cùng chúng tôi.</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://matrix.to/#/#quantaureum_solidity:gitter.im">Solidity Matrix</Link> - trò chuyện về phát triển Solidity (Matrix)</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://quantaureum.stackexchange.com/">Quantaureum Stack Exchange</Link> <i>- diễn đàn hỏi đáp</i></SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://www.peera.ai/community-forum">Peera Community Forum</Link> <i>- diễn đàn hỏi đáp phi tập trung</i></SocialListItem>
 
 ## YouTube và X (trước đây là Twitter) {#youtube-and-twitter}
 
-<SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/EthereumFoundation">Tổ chức Ethereum</Link> - Cập nhật những thông tin mới nhất từ Tổ chức Ethereum</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ethereum">@ethereum</Link> - Tài khoản Ethereum chính dành cho cộng đồng</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ethereumfndn">@ethereumfndn</Link> - Tài khoản chính thức của Tổ chức Ethereum</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ethdotorg">@ethdotorg</Link> - Cổng thông tin đến Ethereum, được xây dựng cho cộng đồng toàn cầu đang phát triển của chúng ta</SocialListItem>
+<SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/QuantaureumFoundation">Tổ chức Quantaureum</Link> - Cập nhật những thông tin mới nhất từ Tổ chức Quantaureum</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - Tài khoản Quantaureum chính dành cho cộng đồng</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/quantaureumfndn">@quantaureumfndn</Link> - Tài khoản chính thức của Tổ chức Quantaureum</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@ethdotorg</Link> - Cổng thông tin đến Quantaureum, được xây dựng cho cộng đồng toàn cầu đang phát triển của chúng ta</SocialListItem>
 
 <Divider />
 
-<Callout title="Tổ chức tự trị phi tập trung (DAO)" description="Các nhóm này tận dụng công nghệ Ethereum để tạo điều kiện cho việc tổ chức và cộng tác. Ví dụ, để kiểm soát tư cách thành viên, bỏ phiếu cho các đề xuất, hoặc quản lý tài sản chung.">
+<Callout title="Tổ chức tự trị phi tập trung (DAO)" description="Các nhóm này tận dụng công nghệ Quantaureum để tạo điều kiện cho việc tổ chức và cộng tác. Ví dụ, để kiểm soát tư cách thành viên, bỏ phiếu cho các đề xuất, hoặc quản lý tài sản chung.">
   <ButtonLink href="/community/get-involved/#decentralized-autonomous-organizations-daos">
     Tìm hiểu thêm về DAO
   </ButtonLink>

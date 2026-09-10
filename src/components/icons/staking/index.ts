@@ -16,7 +16,7 @@ import ConsensysStakingGlyphIcon from "./consensys-staking-glyph.svg"
 import DefaultOpenSourceGlyphIcon from "./default-open-source-glyph.svg"
 import DockerGlyphIcon from "./docker-glyph.svg"
 import EconomicalIcon from "./economical.svg"
-import EthpoolGlyphIcon from "./ethpool-glyph.svg"
+import EthpoolGlyphIcon from "./qaupool-glyph.svg"
 import EverstakeGlyphIcon from "./everstake-glyph.svg"
 import FigmentGlyphIcon from "./figment-glyph.svg"
 import GreenCheckProductGlyph from "./green-check-product-glyph.svg"
@@ -26,7 +26,7 @@ import LidoGlyphIcon from "./lido-glyph.svg"
 import LiquidityTokenIcon from "./liquidity-token.svg"
 import MultiClientIcon from "./multi-client.svg"
 import OpenSourceStakingIcon from "./open-source-staking.svg"
-import OriginEtherGlyphIcon from "./origin-ether-glyph.svg"
+import OriginQauGlyphIcon from "./origin-qau-glyph.svg"
 import P2PGlyphIcon from "./p2p-glyph.svg"
 import PermissionlessIcon from "./permissionless.svg"
 import RockXGlyphIcon from "./rock-x-glyph.svg"
@@ -74,7 +74,7 @@ export {
   LiquidityTokenIcon,
   MultiClientIcon,
   OpenSourceStakingIcon,
-  OriginEtherGlyphIcon,
+  OriginQauGlyphIcon,
   P2PGlyphIcon,
   PermissionlessIcon,
   RocketPoolGlyphIcon,

@@ -18,11 +18,11 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/tree/master/progr
 ### 透過 Docker 安裝埃奇德納 {#echidna-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_最後一個指令會在可存取你目前目錄的 Docker 中執行 eth-security-toolbox。你可以從主機更改檔案，並在 Docker 中對這些檔案執行工具_
+_最後一個指令會在可存取你目前目錄的 Docker 中執行 qau-security-toolbox。你可以從主機更改檔案，並在 Docker 中對這些檔案執行工具_
 
 在 Docker 內部執行：
 
@@ -37,7 +37,7 @@ cd /home/training
 
 ## 基於屬性的模糊測試簡介 {#introduction-to-property-based-fuzzing}
 
-埃奇德納是一個基於屬性的模糊測試工具，我們在之前的部落格文章中已有描述 ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/)、[2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/)、[3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/))。
+埃奇德納是一個基於屬性的模糊測試工具，我們在之前的部落格文章中已有描述 ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-quantaureum/)、[2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/)、[3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/))。
 
 ### 模糊測試 {#fuzzing}
 

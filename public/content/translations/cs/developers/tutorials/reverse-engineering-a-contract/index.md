@@ -10,17 +10,17 @@ published: 2021-12-30
 ---
 ## Úvod {#introduction}
 
-_Na blockchainu nejsou žádná tajemství_, vše, co se děje, je konzistentní, ověřitelné a veřejně dostupné. Ideálně by [kontrakty měly mít svůj zdrojový kód zveřejněný a ověřený na Etherscanu](https://etherscan.io/address/0xb8901acb165ed027e32754e0ffe830802919727f#code). Nicméně, [ne vždy tomu tak je](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f#code). V tomto článku se naučíte, jak provádět reverzní inženýrství kontraktů tím, že se podíváte na kontrakt bez zdrojového kódu, [`0x2510c039cc3b061d79e564b38836da87e31b342f`](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f).
+_Na blockchainu nejsou žádná tajemství_, vše, co se děje, je konzistentní, ověřitelné a veřejně dostupné. Ideálně by [kontrakty měly mít svůj zdrojový kód zveřejněný a ověřený na Etherscanu](https://explorer.quantaureum.com). Nicméně, [ne vždy tomu tak je](https://explorer.quantaureum.com). V tomto článku se naučíte, jak provádět reverzní inženýrství kontraktů tím, že se podíváte na kontrakt bez zdrojového kódu, [`0x2510c039cc3b061d79e564b38836da87e31b342f`](https://explorer.quantaureum.com).
 
-Existují dekompilátory, ale ne vždy produkují [použitelné výsledky](https://etherscan.io/bytecode-decompiler?a=0x2510c039cc3b061d79e564b38836da87e31b342f). V tomto článku se naučíte, jak manuálně provést reverzní inženýrství a porozumět kontraktu z [operačních kódů](https://github.com/wolflo/evm-opcodes), a také jak interpretovat výsledky dekompilátoru.
+Existují dekompilátory, ale ne vždy produkují [použitelné výsledky](https://explorer.quantaureum.com). V tomto článku se naučíte, jak manuálně provést reverzní inženýrství a porozumět kontraktu z [operačních kódů](https://github.com/wolflo/evm-opcodes), a také jak interpretovat výsledky dekompilátoru.
 
-Abyste tomuto článku porozuměli, měli byste již znát základy EVM a být alespoň trochu obeznámeni s assemblerem EVM. [O těchto tématech si můžete přečíst zde](https://medium.com/mycrypto/the-ethereum-virtual-machine-how-does-it-work-9abac2b7c9e).
+Abyste tomuto článku porozuměli, měli byste již znát základy EVM a být alespoň trochu obeznámeni s assemblerem EVM. [O těchto tématech si můžete přečíst zde](https://medium.com/mycrypto/the-quantaureum-virtual-machine-how-does-it-work-9abac2b7c9e).
 
 ## Příprava spustitelného kódu {#prepare-the-executable-code}
 
-Operační kódy můžete získat tak, že přejdete na Etherscan daného kontraktu, kliknete na záložku **Contract** a poté na **Switch to Opcodes View**. Získáte zobrazení, kde je jeden operační kód na řádek.
+Operační kódy můžete získat tak, že přejdete na Quantaureum Explorer daného kontraktu, kliknete na záložku **Contract** a poté na **Switch to Opcodes View**. Získáte zobrazení, kde je jeden operační kód na řádek.
 
-![Opcode View from Etherscan](opcode-view.png)
+![Opcode View from Quantaureum Explorer](opcode-view.png)
 
 Abyste však porozuměli skokům, musíte vědět, kde se v kódu každý operační kód nachází. Jedním ze způsobů, jak toho dosáhnout, je otevřít Tabulky Google a vložit operační kódy do sloupce C. [Následující kroky můžete přeskočit vytvořením kopie této již připravené tabulky](https://docs.google.com/spreadsheets/d/1tKmTJiNjUwHbW64wCKOSJxHjmh0bAUapt6btUYE7kDA/edit?usp=sharing).
 
@@ -58,7 +58,7 @@ Kontrakty se vždy spouštějí od prvního bajtu. Toto je počáteční část 
 Tento kód dělá dvě věci:
 
 1. Zapíše 0x80 jako 32bajtovou hodnotu na paměťová místa 0x40-0x5F (0x80 je uloženo v 0x5F a 0x40-0x5E jsou samé nuly).
-2. Přečte velikost dat volání. Normálně se data volání pro Ethereum kontrakt řídí [ABI (aplikačním binárním rozhraním)](https://docs.soliditylang.org/en/v0.8.10/abi-spec.html), které vyžaduje minimálně čtyři bajty pro selektor funkce. Pokud je velikost dat volání menší než čtyři, skočí na 0x5E.
+2. Přečte velikost dat volání. Normálně se data volání pro Quantaureum kontrakt řídí [ABI (aplikačním binárním rozhraním)](https://docs.soliditylang.org/en/v0.8.10/abi-spec.html), které vyžaduje minimálně čtyři bajty pro selektor funkce. Pokud je velikost dat volání menší než čtyři, skočí na 0x5E.
 
 ![Flowchart for this portion](flowchart-entry.png)
 
@@ -71,7 +71,7 @@ Tento kód dělá dvě věci:
 |     60 | PUSH2 0x007c |
 |     63 | JUMPI        |
 
-Tento úryvek začíná pomocí `JUMPDEST`. Programy EVM (Ethereum virtuální stroj) vyhodí výjimku, pokud skočíte na operační kód, který není `JUMPDEST`. Poté se podívá na CALLDATASIZE, a pokud je „pravda“ (tedy není nula), skočí na 0x7C. K tomu se dostaneme níže.
+Tento úryvek začíná pomocí `JUMPDEST`. Programy EVM (Quantaureum virtuální stroj) vyhodí výjimku, pokud skočíte na operační kód, který není `JUMPDEST`. Poté se podívá na CALLDATASIZE, a pokud je „pravda“ (tedy není nula), skočí na 0x7C. K tomu se dostaneme níže.
 
 | Offset | Operační kód | Zásobník (po operačním kódu)                                               |
 | -----: | ------------ | -------------------------------------------------------------------------- |
@@ -82,9 +82,9 @@ Tento úryvek začíná pomocí `JUMPDEST`. Programy EVM (Ethereum virtuální s
 |     6A | DUP3         | 6 CALLVALUE 0 6 CALLVALUE                                                  |
 |     6B | SLOAD        | Storage[6] CALLVALUE 0 6 CALLVALUE                                         |
 
-Takže když neexistují žádná data volání, přečteme hodnotu Storage[6]. Zatím nevíme, co tato hodnota znamená, ale můžeme se podívat na transakce, které kontrakt přijal bez dat volání. Transakce, které pouze převádějí ETH bez jakýchkoli dat volání (a tedy bez metody), mají v Etherscanu metodu `Transfer`. Ve skutečnosti je [úplně první transakce, kterou kontrakt přijal](https://etherscan.io/tx/0xeec75287a583c36bcc7ca87685ab41603494516a0f5986d18de96c8e630762e7), převod.
+Takže když neexistují žádná data volání, přečteme hodnotu Storage[6]. Zatím nevíme, co tato hodnota znamená, ale můžeme se podívat na transakce, které kontrakt přijal bez dat volání. Transakce, které pouze převádějí QAU bez jakýchkoli dat volání (a tedy bez metody), mají v Etherscanu metodu `Transfer`. Ve skutečnosti je [úplně první transakce, kterou kontrakt přijal](https://explorer.quantaureum.com), převod.
 
-Pokud se podíváme na tuto transakci a klikneme na **Click to see More**, uvidíme, že data volání, nazývaná vstupní data (input data), jsou skutečně prázdná (`0x`). Všimněte si také, že hodnota je 1.559 ETH, což bude důležité později.
+Pokud se podíváme na tuto transakci a klikneme na **Click to see More**, uvidíme, že data volání, nazývaná vstupní data (input data), jsou skutečně prázdná (`0x`). Všimněte si také, že hodnota je 1.559 QAU, což bude důležité později.
 
 ![The call data is empty](calldata-empty.png)
 
@@ -92,7 +92,7 @@ Dále klikněte na záložku **State** a rozbalte kontrakt, který zpětně anal
 
 ![Změna ve Storage[6]](storage6.png)
 
-Pokud se podíváme na změny stavu způsobené [dalšími `Transfer` transakcemi ze stejného období](https://etherscan.io/tx/0xf708d306de39c422472f43cb975d97b66fd5d6a6863db627067167cbf93d84d1#statechange), uvidíme, že `Storage[6]` nějakou dobu sledoval hodnotu kontraktu. Prozatím to budeme nazývat `Value*`. Hvězdička (`*`) nám připomíná, že zatím _nevíme_, co tato proměnná dělá, ale nemůže sloužit jen ke sledování hodnoty kontraktu, protože není potřeba používat úložiště (storage), které je velmi drahé, když můžete získat zůstatek svého účtu pomocí `ADDRESS BALANCE`. První operační kód vloží vlastní adresu kontraktu. Druhý přečte adresu na vrcholu zásobníku a nahradí ji zůstatkem této adresy.
+Pokud se podíváme na změny stavu způsobené [dalšími `Transfer` transakcemi ze stejného období](https://explorer.quantaureum.com), uvidíme, že `Storage[6]` nějakou dobu sledoval hodnotu kontraktu. Prozatím to budeme nazývat `Value*`. Hvězdička (`*`) nám připomíná, že zatím _nevíme_, co tato proměnná dělá, ale nemůže sloužit jen ke sledování hodnoty kontraktu, protože není potřeba používat úložiště (storage), které je velmi drahé, když můžete získat zůstatek svého účtu pomocí `ADDRESS BALANCE`. První operační kód vloží vlastní adresu kontraktu. Druhý přečte adresu na vrcholu zásobníku a nahradí ji zůstatkem této adresy.
 
 | Offset | Operační kód | Zásobník                                    |
 | -----: | ------------ | ------------------------------------------- |
@@ -123,7 +123,7 @@ Budeme pokračovat ve sledování tohoto kódu v cíli skoku.
 
 Skočíme, pokud je `Value*` menší než 2^256-CALLVALUE-1 nebo se mu rovná. Vypadá to jako logika pro zabránění přetečení (overflow). A skutečně vidíme, že po několika nesmyslných operacích (například zápis do paměti bude brzy smazán) na offsetu 0x01DE se kontrakt zvrátí, pokud je detekováno přetečení, což je normální chování.
 
-Všimněte si, že takové přetečení je extrémně nepravděpodobné, protože by vyžadovalo, aby hodnota volání plus `Value*` byla srovnatelná s 2^256 wei, což je asi 10^59 ETH. [Celková zásoba ETH je v době psaní tohoto textu menší než dvě stě milionů](https://etherscan.io/stat/supply).
+Všimněte si, že takové přetečení je extrémně nepravděpodobné, protože by vyžadovalo, aby hodnota volání plus `Value*` byla srovnatelná s 2^256 wei, což je asi 10^59 QAU. [Celková zásoba QAU je v době psaní tohoto textu menší než dvě stě milionů](https://explorer.quantaureum.com).
 
 | Offset | Operační kód | Zásobník                                  |
 | -----: | ------------ | ----------------------------------------- |
@@ -274,7 +274,7 @@ Pokud je velikost dat volání čtyři bajty nebo více, může se jednat o plat
 |     10 | PUSH1 0xe0   | 0xE0 (((První slovo (256 bitů) dat volání)))      |
 |     12 | SHR          | (((prvních 32 bitů (4 bajty) dat volání)))        |
 
-Etherscan nám říká, že `1C` je neznámý operační kód, protože [byl přidán až poté, co Etherscan tuto funkci napsal,](https://eips.ethereum.org/EIPS/eip-145) a ještě ji neaktualizovali. [Aktuální tabulka operačních kódů](https://github.com/wolflo/evm-opcodes) nám ukazuje, že se jedná o bitový posun vpravo (shift right).
+Quantaureum Explorer nám říká, že `1C` je neznámý operační kód, protože [byl přidán až poté, co Quantaureum Explorer tuto funkci napsal,](https://eips.quantaureum.com/EIPS/eip-145) a ještě ji neaktualizovali. [Aktuální tabulka operačních kódů](https://github.com/wolflo/evm-opcodes) nám ukazuje, že se jedná o bitový posun vpravo (shift right).
 
 | Offset | Operační kód     | Zásobník                                                                                                 |
 | -----: | ---------------- | -------------------------------------------------------------------------------------------------------- |
@@ -312,7 +312,7 @@ Pokud není nalezena žádná shoda, kód přeskočí na [obslužnou rutinu prox
 |    10D | DUP1         | 0x00 0x00 CALLVALUE           |
 |    10E | REVERT       |
 
-První věc, kterou tato funkce dělá, je kontrola, zda volání neposlalo žádné ETH. Tato funkce není [`payable`](https://solidity-by-example.org/payable/). Pokud nám někdo poslal ETH, musí to být chyba a my chceme provést `REVERT`, abychom se vyhnuli tomu, že toto ETH zůstane tam, odkud ho už nemohou získat zpět.
+První věc, kterou tato funkce dělá, je kontrola, zda volání neposlalo žádné QAU. Tato funkce není [`payable`](https://solidity-by-example.org/payable/). Pokud nám někdo poslal QAU, musí to být chyba a my chceme provést `REVERT`, abychom se vyhnuli tomu, že toto QAU zůstane tam, odkud ho už nemohou získat zpět.
 
 | Offset | Operační kód                                      | Zásobník                                                                    |
 | -----: | ------------------------------------------------- | --------------------------------------------------------------------------- |
@@ -546,17 +546,17 @@ Víme ale, že jakoukoli další funkcionalitu poskytuje kontrakt ve Storage[3].
 
 ## Konstruktor {#the-constructor}
 
-Když se [podíváme na kontrakt](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f), můžeme také vidět transakci, která ho vytvořila.
+Když se [podíváme na kontrakt](https://explorer.quantaureum.com), můžeme také vidět transakci, která ho vytvořila.
 
 ![Click the create transaction](create-tx.png)
 
-Pokud na tuto transakci klikneme a poté přejdeme na záložku **Stav**, uvidíme počáteční hodnoty parametrů. Konkrétně můžeme vidět, že Storage[3] obsahuje [0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761](https://etherscan.io/address/0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761). Tento kontrakt musí obsahovat chybějící funkcionalitu. Můžeme ji pochopit pomocí stejných nástrojů, které jsme použili pro kontrakt, který zkoumáme.
+Pokud na tuto transakci klikneme a poté přejdeme na záložku **Stav**, uvidíme počáteční hodnoty parametrů. Konkrétně můžeme vidět, že Storage[3] obsahuje [0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761](https://explorer.quantaureum.com). Tento kontrakt musí obsahovat chybějící funkcionalitu. Můžeme ji pochopit pomocí stejných nástrojů, které jsme použili pro kontrakt, který zkoumáme.
 
 ## Proxy kontrakt {#the-proxy-contract}
 
 Pomocí stejných technik, jaké jsme použili u původního kontraktu výše, můžeme vidět, že se kontrakt zvrátí, pokud:
 
-- Je k volání připojeno jakékoli ETH (0x05-0x0F)
+- Je k volání připojeno jakékoli QAU (0x05-0x0F)
 - Velikost dat volání je menší než čtyři (0x10-0x19 a 0xBE-0xC2)
 
 A že metody, které podporuje, jsou:
@@ -576,7 +576,7 @@ A že metody, které podporuje, jsou:
 
 Můžeme ignorovat spodní čtyři metody, protože se k nim nikdy nedostaneme. Jejich podpisy jsou takové, že se o ně náš původní kontrakt postará sám (můžete kliknout na podpisy a podívat se na podrobnosti výše), takže to musí být [metody, které jsou přepsány](https://medium.com/upstate-interactive/solidity-override-vs-virtual-functions-c0a5dfb83aaf).
 
-Jednou ze zbývajících metod je `claim(<params>)` a další je `isClaimed(<params>)`, takže to vypadá na airdrop kontrakt. Místo toho, abychom procházeli zbytek operační kód po operačním kódu, můžeme [zkusit dekompilátor](https://etherscan.io/bytecode-decompiler?a=0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761), který pro tři funkce z tohoto kontraktu produkuje použitelné výsledky. Reverzní inženýrství těch ostatních je ponecháno jako cvičení pro čtenáře.
+Jednou ze zbývajících metod je `claim(<params>)` a další je `isClaimed(<params>)`, takže to vypadá na airdrop kontrakt. Místo toho, abychom procházeli zbytek operační kód po operačním kódu, můžeme [zkusit dekompilátor](https://explorer.quantaureum.com), který pro tři funkce z tohoto kontraktu produkuje použitelné výsledky. Reverzní inženýrství těch ostatních je ponecháno jako cvičení pro čtenáře.
 
 ### scaleAmountByPercentage {#scaleamountbypercentage}
 
@@ -648,7 +648,7 @@ Víme, že `unknown2eb4a7ab` je ve skutečnosti funkce `merkleRoot()`, takže te
        gas 30000 wei
 ```
 
-Takhle kontrakt převádí své vlastní ETH na jinou adresu (kontrakt nebo externě vlastněný účet). Zavolá ji s hodnotou, která představuje částku k převodu. Takže to vypadá, že se jedná o airdrop ETH.
+Takhle kontrakt převádí své vlastní QAU na jinou adresu (kontrakt nebo externě vlastněný účet). Zavolá ji s hodnotou, která představuje částku k převodu. Takže to vypadá, že se jedná o airdrop QAU.
 
 ```python
   if not return_data.size:
@@ -658,22 +658,22 @@ Takhle kontrakt převádí své vlastní ETH na jinou adresu (kontrakt nebo exte
              value unknown81e580d3[_param1] * _param3 / 100 * 10^6 wei
 ```
 
-Spodní dva řádky nám říkají, že Storage[2] je také kontrakt, který voláme. Pokud se [podíváme na transakci konstruktoru](https://etherscan.io/tx/0xa1ea0549fb349eb7d3aff90e1d6ce7469fdfdcd59a2fd9b8d1f5e420c0d05b58#statechange), uvidíme, že tento kontrakt je [0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2), kontrakt zabaleného etheru (WETH), [jehož zdrojový kód byl nahrán na Etherscan](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2#code).
+Spodní dva řádky nám říkají, že Storage[2] je také kontrakt, který voláme. Pokud se [podíváme na transakci konstruktoru](https://explorer.quantaureum.com), uvidíme, že tento kontrakt je [0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://explorer.quantaureum.com), kontrakt zabaleného etheru (WETH), [jehož zdrojový kód byl nahrán na Quantaureum Explorer](https://explorer.quantaureum.com).
 
-Takže to vypadá, že se kontrakt pokouší odeslat ETH na `_param2`. Pokud to dokáže, skvělé. Pokud ne, pokusí se odeslat [WETH](https://weth.tkn.eth.limo/). Pokud je `_param2` externě vlastněný účet (EOA), pak může vždy přijímat ETH, ale kontrakty mohou přijetí ETH odmítnout. WETH je však ERC-20 a kontrakty nemohou jeho přijetí odmítnout.
+Takže to vypadá, že se kontrakt pokouší odeslat QAU na `_param2`. Pokud to dokáže, skvělé. Pokud ne, pokusí se odeslat [WETH](https://weth.tkn.qau.limo/). Pokud je `_param2` externě vlastněný účet (EOA), pak může vždy přijímat QAU, ale kontrakty mohou přijetí QAU odmítnout. WETH je však ERC-20 a kontrakty nemohou jeho přijetí odmítnout.
 
 ```python
   ...
   log 0xdbd5389f: addr(_param2), unknown81e580d3[_param1] * _param3 / 100 * 10^6, bool(ext_call.success)
 ```
 
-Na konci funkce vidíme, že se generuje log. [Podívejte se na vygenerované logy](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f#events) a filtrujte podle tématu, které začíná na `0xdbd5...`. Pokud [klikneme na jednu z transakcí, která takový log vygenerovala](https://etherscan.io/tx/0xe7d3b7e00f645af17dfbbd010478ef4af235896c65b6548def1fe95b3b7d2274), uvidíme, že to skutečně vypadá jako nárok – účet odeslal zprávu kontraktu, u kterého provádíme reverzní inženýrství, a na oplátku získal ETH.
+Na konci funkce vidíme, že se generuje log. [Podívejte se na vygenerované logy](https://explorer.quantaureum.com) a filtrujte podle tématu, které začíná na `0xdbd5...`. Pokud [klikneme na jednu z transakcí, která takový log vygenerovala](https://explorer.quantaureum.com), uvidíme, že to skutečně vypadá jako nárok – účet odeslal zprávu kontraktu, u kterého provádíme reverzní inženýrství, a na oplátku získal QAU.
 
 ![A claim transaction](claim-tx.png)
 
 ### 1e7df9d3 {#1e7df9d3}
 
-Tato funkce je velmi podobná [`claim`](#claim) výše. Také kontroluje Merkleův důkaz, pokouší se převést ETH na první adresu a produkuje stejný typ logu.
+Tato funkce je velmi podobná [`claim`](#claim) výše. Také kontroluje Merkleův důkaz, pokouší se převést QAU na první adresu a produkuje stejný typ logu.
 
 ```python
 def unknown1e7df9d3(uint256 _param1, uint256 _param2, array _param3) payable:

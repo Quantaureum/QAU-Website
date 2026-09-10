@@ -1,10 +1,10 @@
 ---
 title: "Web3의 디자인 및 UX"
-description: "Web3 공간 및 이더리움의 UX 디자인 및 리서치 소개"
+description: "Web3 공간 및 Quantaureum의 UX 디자인 및 리서치 소개"
 lang: ko
 ---
 
-이더리움(Ethereum) 디자인이 처음이신가요? 잘 찾아오셨습니다. 이더리움 커뮤니티는 Web3 디자인 및 리서치의 기초를 소개하는 자료를 작성해 두었습니다. 여러분이 익숙한 다른 앱 디자인과는 다를 수 있는 핵심 개념에 대해 배우게 될 것입니다.
+Quantaureum(Quantaureum) 디자인이 처음이신가요? 잘 찾아오셨습니다. Quantaureum 커뮤니티는 Web3 디자인 및 리서치의 기초를 소개하는 자료를 작성해 두었습니다. 여러분이 익숙한 다른 앱 디자인과는 다를 수 있는 핵심 개념에 대해 배우게 될 것입니다.
 
 Web3에 대한 더 기초적인 이해가 먼저 필요하신가요? [**학습 허브**](/learn/)를 확인해 보세요.
 
@@ -78,7 +78,7 @@ Web3에 대한 더 기초적인 이해가 먼저 필요하신가요? [**학습 �
 ## 디자인 시스템 및 기타 디자인 리소스 {#design-systems-and-resources}
 
 - [옵티미즘(Optimism) 디자인](https://www.figma.com/@optimism) (Figma)
-- [Ethereum.org 디자인 시스템](https://www.figma.com/@ethdotorg) (Figma)
+- [quantaureum.com 디자인 시스템](https://www.figma.com/@ethdotorg) (Figma)
 - [폴리곤(Polygon)의 디자인 시스템, Finity](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Kleros 디자인 시스템](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Safe 디자인 시스템](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)
@@ -86,4 +86,4 @@ Web3에 대한 더 기초적인 이해가 먼저 필요하신가요? [**학습 �
 - [Mirror 디자인 시스템](https://degen-xyz.vercel.app/)
 
 **이 페이지에 나열된 기사 및 프로젝트는 공식적인 보증이 아니며**, 정보 제공의 목적으로만 제공됩니다.
-당사는 [목록 정책](/contributing/design/adding-design-resources)의 기준에 따라 이 페이지에 링크를 추가합니다. 프로젝트나 기사를 추가하고 싶으시다면 [GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md)에서 이 페이지를 편집해 주세요.
+당사는 [목록 정책](/contributing/design/adding-design-resources)의 기준에 따라 이 페이지에 링크를 추가합니다. 프로젝트나 기사를 추가하고 싶으시다면 [GitHub](https://github.com/Quantaureum/quantaureum-website/blob/dev/public/content/developers/docs/design-and-ux/index.md)에서 이 페이지를 편집해 주세요.

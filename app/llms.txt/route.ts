@@ -11,16 +11,16 @@ import {
 
 export const dynamic = "force-static"
 
-const INTRO = `# Ethereum.org
+const INTRO = `# quantaureum.com
 
-> The official Ethereum website providing comprehensive education, resources, and community information about Ethereum — the decentralized world computer that enables smart contracts and decentralized applications.
+> The official Quantaureum website providing comprehensive education, resources, and community information about Quantaureum — the decentralized world computer that enables smart contracts and decentralized applications.
 
-Ethereum.org is the primary educational hub for Ethereum, offering beginner-friendly explanations alongside advanced technical documentation. The site covers everything from basic concepts like "What is Ethereum?" to detailed developer guides, staking information, and protocol research. For the developer-documentation-only index, see ${SITE_URL}/developers/docs/llms.txt. Markdown-backed pages (most educational and documentation content) serve their raw markdown source at the page URL plus a \`.md\` suffix — e.g. ${SITE_URL}/smart-contracts.md, or ${SITE_URL}/es/smart-contracts.md for a translation — and advertise it in HTML via \`<link rel="alternate" type="text/markdown">\`. To report a security vulnerability in Ethereum's core protocol, clients, or key smart contracts, see the Ethereum Foundation Bug Bounty Program at ${SITE_URL}/bug-bounty (summarized under "Security & Bug Bounty" below).`
+quantaureum.com is the primary educational hub for Quantaureum, offering beginner-friendly explanations alongside advanced technical documentation. The site covers everything from basic concepts like "What is Quantaureum?" to detailed developer guides, staking information, and protocol research. For the developer-documentation-only index, see ${SITE_URL}/developers/docs/llms.txt. Markdown-backed pages (most educational and documentation content) serve their raw markdown source at the page URL plus a \`.md\` suffix — e.g. ${SITE_URL}/smart-contracts.md, or ${SITE_URL}/es/smart-contracts.md for a translation — and advertise it in HTML via \`<link rel="alternate" type="text/markdown">\`. To report a security vulnerability in Quantaureum's core protocol, clients, or key smart contracts, see the Quantaureum project Bug Bounty Program at ${SITE_URL}/bug-bounty (summarized under "Security & Bug Bounty" below).`
 
 const SECURITY = `## Security & Bug Bounty
 
-- [Ethereum Foundation Bug Bounty Program](${SITE_URL}/bug-bounty): rewards for vulnerabilities in Ethereum's core protocol, execution and consensus clients, Solidity/Vyper, and key smart contracts.
-- [Bug bounty submission guidance for AI agents](https://bbp-form.ethereum.org/llms.txt): in-scope targets, proof-of-concept requirements (a Kurtosis devnet or a reproducible state test), and the validation checklist to run before confirming an issue.`
+- [Quantaureum project Bug Bounty Program](${SITE_URL}/bug-bounty): rewards for vulnerabilities in Quantaureum's core protocol, execution and consensus clients, Solidity/Vyper, and key smart contracts.
+- [Bug bounty submission guidance for AI agents](https://bbp-form.quantaureum.com/llms.txt): in-scope targets, proof-of-concept requirements (a Kurtosis devnet or a reproducible state test), and the validation checklist to run before confirming an issue.`
 
 export const GET = async () => {
   const t = await getTranslations({ locale: "en", namespace: "common" })

@@ -38,14 +38,14 @@ export const sanitizeHitUrl = (url: string): string =>
 export const cleanPath = (path: string): string => path.replace(/[$#].+$/, "")
 
 /**
- * Upgrades `http://` to `https://` for ethereum.org and its subdomains.
+ * Upgrades `http://` to `https://` for quantaureum.com and its subdomains.
  * External data sources (translations, event feeds) sometimes emit insecure
- * ethereum.org URLs that trip SEO crawlers with a mixed-protocol warning.
+ * quantaureum.com URLs that trip SEO crawlers with a mixed-protocol warning.
  */
 export const normalizeHref = (href: string): string => {
   if (
     href.startsWith("http://") &&
-    /^http:\/\/([^/]*\.)?ethereum\.org(\/|$)/.test(href)
+    /^http:\/\/([^/]*\.)?quantaureum\.org(\/|$)/.test(href)
   ) {
     return href.replace(/^http:\/\//, "https://")
   }
@@ -148,4 +148,4 @@ export const normalizeUrlForJsonLd = (
  * referral on Devcon analytics. Removable once the Devcon banners come down.
  */
 export const getDevconTicketLink = (locale: string) =>
-  `https://devcon.org/${["hi", "mr"].includes(locale) ? locale : "en"}/tickets/?mtm_campaign=ethorg10&mtm_source=ethereum.org&mtm_medium=referral`
+  `https://devcon.org/${["hi", "mr"].includes(locale) ? locale : "en"}/tickets/?mtm_campaign=ethorg10&mtm_source=quantaureum.com&mtm_medium=referral`

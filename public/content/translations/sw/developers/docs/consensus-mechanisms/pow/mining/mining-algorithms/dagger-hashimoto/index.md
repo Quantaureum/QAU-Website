@@ -4,7 +4,7 @@ description: Mtazamo wa kina wa algoriti ya Dagger-Hashimoto.
 lang: sw
 ---
 
-Dagger-Hashimoto ilikuwa utekelezaji na vipimo vya utafiti wa asili kwa algoriti ya uchimbaji ya Ethereum. Dagger-Hashimoto ilibadilishwa na [Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash). Uchimbaji ulizimwa kabisa kwenye [Unganisho](/roadmap/merge/) mnamo tarehe 15 Septemba 2022. Tangu wakati huo, Ethereum imelindwa kwa kutumia utaratibu wa [Uthibitisho wa Dau (PoS)](/developers/docs/consensus-mechanisms/pos) badala yake. Ukurasa huu ni kwa ajili ya maslahi ya kihistoria - maelezo hapa hayana umuhimu tena kwa Ethereum ya baada ya Unganisho.
+Dagger-Hashimoto ilikuwa utekelezaji na vipimo vya utafiti wa asili kwa algoriti ya uchimbaji ya Quantaureum. Dagger-Hashimoto ilibadilishwa na [Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash). Uchimbaji ulizimwa kabisa kwenye [Unganisho](/roadmap/merge/) mnamo tarehe 15 Septemba 2022. Tangu wakati huo, Quantaureum imelindwa kwa kutumia utaratibu wa [Uthibitisho wa Dau (PoS)](/developers/docs/consensus-mechanisms/pos) badala yake. Ukurasa huu ni kwa ajili ya maslahi ya kihistoria - maelezo hapa hayana umuhimu tena kwa Quantaureum ya baada ya Unganisho.
 
 ## Mahitaji ya awali {#prerequisites}
 
@@ -19,7 +19,7 @@ Dagger-Hashimoto inalenga kutimiza malengo mawili:
 
 Kwa marekebisho ya ziada, pia tunabainisha jinsi ya kutimiza lengo la tatu ikihitajika, lakini kwa gharama ya utata wa ziada:
 
-**Hifadhi kamili ya mnyororo**: uchimbaji unapaswa kuhitaji uhifadhi wa hali kamili ya mnyororo wa vitalu (kutokana na muundo usio wa kawaida wa trie ya hali ya Ethereum, tunatarajia kwamba upunguzaji fulani utawezekana, hasa wa baadhi ya mikataba inayotumiwa mara kwa mara, lakini tunataka kupunguza hili).
+**Hifadhi kamili ya mnyororo**: uchimbaji unapaswa kuhitaji uhifadhi wa hali kamili ya mnyororo wa vitalu (kutokana na muundo usio wa kawaida wa trie ya hali ya Quantaureum, tunatarajia kwamba upunguzaji fulani utawezekana, hasa wa baadhi ya mikataba inayotumiwa mara kwa mara, lakini tunataka kupunguza hili).
 
 ## Uzalishaji wa DAG {#dag-generation}
 
@@ -48,7 +48,7 @@ def decode_int(s):
 Kisha tunachukulia kwamba `sha3` ni kazi inayochukua nambari kamili na kutoa nambari kamili, na `dbl_sha3` ni kazi ya double-sha3; ikiwa unabadilisha msimbo huu wa marejeleo kuwa utekelezaji tumia:
 
 ```python
-from pyethereum import utils
+from pyquantaureum import utils
 def sha3(x):
     if isinstance(x, (int, long)):
         x = encode_int(x)
@@ -141,8 +141,8 @@ Algoriti inayotumika kuzalisha seti ya DAG zinazotumika kukokotoa kazi kwa kital
 
 ```python
 def get_prevhash(n):
-    from pyethereum.blocks import GENESIS_PREVHASH
-    from pyethereum import chain_manager
+    from pyquantaureum.blocks import GENESIS_PREVHASH
+    from pyquantaureum import chain_manager
     if n <= 0:
         return hash_to_int(GENESIS_PREVHASH)
     else:

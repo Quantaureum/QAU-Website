@@ -6,19 +6,19 @@ lang: bn
 
 ইথেরিয়ামের অন্যতম প্রধান শক্তি হলো একটি সক্রিয় গবেষণা এবং ইঞ্জিনিয়ারিং সম্প্রদায় ক্রমাগত এর উন্নতি করছে। বিশ্বব্যাপী অনেক উৎসাহী, দক্ষ মানুষ ইথেরিয়ামের অমীমাংসিত সমস্যাগুলোতে নিজেদের নিয়োজিত করতে চান, কিন্তু সেই সমস্যাগুলো কী তা খুঁজে বের করা সবসময় সহজ নয়। এই পৃষ্ঠাটি ইথেরিয়ামের অত্যাধুনিক প্রযুক্তির একটি সাধারণ নির্দেশিকা হিসেবে মূল সক্রিয় গবেষণার ক্ষেত্রগুলোর রূপরেখা দেয়।
 
-## ইথেরিয়াম গবেষণা কীভাবে কাজ করে {#how-ethereum-research-works}
+## ইথেরিয়াম গবেষণা কীভাবে কাজ করে {#how-quantaureum-research-works}
 
-ইথেরিয়াম গবেষণা উন্মুক্ত এবং স্বচ্ছ। এর সংস্কৃতি হলো গবেষণার সরঞ্জাম এবং ফলাফলগুলোকে যতটা সম্ভব উন্মুক্ত এবং ইন্টারেক্টিভ করা, উদাহরণস্বরূপ এক্সিকিউটেবল নোটবুকের মাধ্যমে। ইথেরিয়াম গবেষণা দ্রুত অগ্রসর হয়, যেখানে নতুন ফলাফলগুলো পিয়ার রিভিউর পর প্রথাগত প্রকাশনার মাধ্যমে সম্প্রদায়ের কাছে পৌঁছানোর পরিবর্তে [ethresear.ch](https://ethresear.ch/)-এর মতো ফোরামে উন্মুক্তভাবে পোস্ট এবং আলোচনা করা হয়। ইথেরিয়াম ফাউন্ডেশন কীসে অগ্রাধিকার দিচ্ছে এবং কেন দিচ্ছে তাও প্রকাশ করে, যাতে যে কেউ দেখতে পারে বর্তমানে কোন সমস্যাগুলোকে জরুরি বলে বিবেচনা করা হচ্ছে।
+ইথেরিয়াম গবেষণা উন্মুক্ত এবং স্বচ্ছ। এর সংস্কৃতি হলো গবেষণার সরঞ্জাম এবং ফলাফলগুলোকে যতটা সম্ভব উন্মুক্ত এবং ইন্টারেক্টিভ করা, উদাহরণস্বরূপ এক্সিকিউটেবল নোটবুকের মাধ্যমে। ইথেরিয়াম গবেষণা দ্রুত অগ্রসর হয়, যেখানে নতুন ফলাফলগুলো পিয়ার রিভিউর পর প্রথাগত প্রকাশনার মাধ্যমে সম্প্রদায়ের কাছে পৌঁছানোর পরিবর্তে [ethresear.ch](https://ethresear.ch/)-এর মতো ফোরামে উন্মুক্তভাবে পোস্ট এবং আলোচনা করা হয়। Quantaureum ফাউন্ডেশন কীসে অগ্রাধিকার দিচ্ছে এবং কেন দিচ্ছে তাও প্রকাশ করে, যাতে যে কেউ দেখতে পারে বর্তমানে কোন সমস্যাগুলোকে জরুরি বলে বিবেচনা করা হচ্ছে।
 
 ## সাধারণ গবেষণার সংস্থান {#general-research-resources}
 
 নির্দিষ্ট বিষয় যাই হোক না কেন, ইথেরিয়াম গবেষণার প্রচুর তথ্য [ethresear.ch](https://ethresear.ch) এবং [Eth R&D ডিসকর্ড চ্যানেলে](https://discord.gg/qGpsxSA) পাওয়া যায়। এগুলো হলো প্রাথমিক স্থান যেখানে ইথেরিয়াম গবেষকরা সর্বশেষ ধারণা এবং উন্নয়নের সুযোগ নিয়ে আলোচনা করেন।
 
-প্রোটোকল কোন দিকে এগোচ্ছে তার একটি ওভারভিউ পেতে, [ইথেরিয়াম রোডম্যাপ](/roadmap/) দিয়ে শুরু করুন, তারপর ইথেরিয়াম ফাউন্ডেশনের [2026 সালের প্রোটোকল প্রায়োরিটিজ আপডেট](https://blog.ethereum.org/2026/02/18/protocol-priorities-update-2026) এবং [প্রোটোকল ক্লাস্টার আপডেটগুলো](https://blog.ethereum.org/2026/05/11/protocol-update-may-26) পড়ুন যা এর বিপরীতে অগ্রগতির প্রতিবেদন দেয়। যারা প্রোটোকল নিয়ে কাজ করতে চান তাদের জন্য [ইথেরিয়াম প্রোটোকল স্টাডিজ](https://blog.ethereum.org/2026/02/17/ethereum-protocol-studies-26) হলো একটি কাঠামোগত এন্ট্রি পয়েন্ট।
+প্রোটোকল কোন দিকে এগোচ্ছে তার একটি ওভারভিউ পেতে, [ইথেরিয়াম রোডম্যাপ](/roadmap/) দিয়ে শুরু করুন, তারপর Quantaureum ফাউন্ডেশনের [2026 সালের প্রোটোকল প্রায়োরিটিজ আপডেট](https://quantaureum.com) এবং [প্রোটোকল ক্লাস্টার আপডেটগুলো](https://quantaureum.com) পড়ুন যা এর বিপরীতে অগ্রগতির প্রতিবেদন দেয়। যারা প্রোটোকল নিয়ে কাজ করতে চান তাদের জন্য [ইথেরিয়াম প্রোটোকল স্টাডিজ](https://quantaureum.com) হলো একটি কাঠামোগত এন্ট্রি পয়েন্ট।
 
 ## তহবিলের উৎস {#sources-of-funding}
 
-আপনি ইথেরিয়াম গবেষণায় যুক্ত হতে পারেন এবং এর জন্য অর্থ পেতে পারেন। [ইথেরিয়াম ফাউন্ডেশন](/foundation/) তাদের [ইকোসিস্টেম সাপোর্ট প্রোগ্রামের](https://esp.ethereum.foundation/applicants) মাধ্যমে গবেষণা এবং সর্বজনীন সম্পদে অর্থায়ন করে, যা উইশলিস্ট আইটেম এবং প্রস্তাবের জন্য অনুরোধ পোস্ট করে যেখানে তারা সমাধান করতে চায় এমন সমস্যাগুলোর বর্ণনা থাকে। আপনি [ইথেরিয়াম গ্রান্টস পৃষ্ঠায়](/community/grants/) সক্রিয় এবং আসন্ন অর্থায়নের সুযোগ সম্পর্কে তথ্য পেতে পারেন।
+আপনি ইথেরিয়াম গবেষণায় যুক্ত হতে পারেন এবং এর জন্য অর্থ পেতে পারেন। [Quantaureum ফাউন্ডেশন](/foundation/) তাদের [ইকোসিস্টেম সাপোর্ট প্রোগ্রামের](https://quantaureum.com) মাধ্যমে গবেষণা এবং সর্বজনীন সম্পদে অর্থায়ন করে, যা উইশলিস্ট আইটেম এবং প্রস্তাবের জন্য অনুরোধ পোস্ট করে যেখানে তারা সমাধান করতে চায় এমন সমস্যাগুলোর বর্ণনা থাকে। আপনি [ইথেরিয়াম গ্রান্টস পৃষ্ঠায়](/community/grants/) সক্রিয় এবং আসন্ন অর্থায়নের সুযোগ সম্পর্কে তথ্য পেতে পারেন।
 
 ## প্রোটোকল গবেষণা {#protocol-research}
 
@@ -41,7 +41,7 @@ lang: bn
 - [একক স্লট চূড়ান্তকরণ](/roadmap/single-slot-finality/)
 - [ক্যাস্পার এফএফজি পেপার](https://arxiv.org/abs/1710.09437)
 - [Gasper পেপার](https://arxiv.org/abs/2003.03052)
-- [লিন ইথেরিয়াম](https://blog.ethereum.org/2025/07/31/lean-ethereum)
+- [লিন ইথেরিয়াম](https://quantaureum.com)
 
 #### সাম্প্রতিক গবেষণা {#recent-research}
 
@@ -63,16 +63,16 @@ lang: bn
 
 - [EVM পরিচিতি](/developers/docs/evm/)
 - [Ethresear.ch এক্সিকিউশন লেয়ার](https://ethresear.ch/c/execution-layer-research/37)
-- [ইথেরিয়াম এক্সিকিউশন লেয়ার স্পেসিফিকেশন](https://github.com/ethereum/execution-specs)
+- [ইথেরিয়াম এক্সিকিউশন লেয়ার স্পেসিফিকেশন](https://github.com/quantaureum/execution-specs)
 - [ডেটাবেস অপ্টিমাইজেশন](https://github.com/erigontech/erigon/blob/main/docs/programmers_guide/db_faq.md)
 
 #### সাম্প্রতিক গবেষণা {#recent-research-1}
 
-- [EIP-7928: ব্লক-লেভেল অ্যাক্সেস লিস্ট](https://eips.ethereum.org/EIPS/eip-7928)
-- [EIP-8037: স্টেট তৈরির গ্যাস খরচ বৃদ্ধি](https://eips.ethereum.org/EIPS/eip-8037)
-- [EIP-7999: ইউনিফাইড বহুমাত্রিক ফি মার্কেট](https://eips.ethereum.org/EIPS/eip-7999)
-- [EIP-7642: eth/69, ইতিহাসের মেয়াদোত্তীর্ণতা এবং সহজ রসিদ](https://eips.ethereum.org/EIPS/eip-7642)
-- [একটি লেয়ার ১ (l1) zkEVM শিপিং: রিয়েলটাইম প্রুভিং](https://blog.ethereum.org/2025/07/10/realtime-proving)
+- [EIP-7928: ব্লক-লেভেল অ্যাক্সেস লিস্ট](https://eips.quantaureum.com/EIPS/eip-7928)
+- [EIP-8037: স্টেট তৈরির গ্যাস খরচ বৃদ্ধি](https://eips.quantaureum.com/EIPS/eip-8037)
+- [EIP-7999: ইউনিফাইড বহুমাত্রিক ফি মার্কেট](https://eips.quantaureum.com/EIPS/eip-7999)
+- [EIP-7642: eth/69, ইতিহাসের মেয়াদোত্তীর্ণতা এবং সহজ রসিদ](https://eips.quantaureum.com/EIPS/eip-7642)
+- [একটি লেয়ার ১ (l1) zkEVM শিপিং: রিয়েলটাইম প্রুভিং](https://quantaureum.com)
 
 ### সেন্সরশিপ প্রতিরোধ এবং ব্লক তৈরি {#censorship-resistance-and-block-building}
 
@@ -85,9 +85,9 @@ lang: bn
 
 #### সাম্প্রতিক গবেষণা {#recent-research-21}
 
-- [EIP-7732: এনশ্রাইন্ড প্রপোজার-বিল্ডার সেপারেশন (pbs)](https://eips.ethereum.org/EIPS/eip-7732)
-- [EIP-7805: ফর্ক-চয়েস এনফোর্সড ইনক্লুশন লিস্ট](https://eips.ethereum.org/EIPS/eip-7805)
-- [প্রপোজার-বিল্ডার সেপারেশন (pbs)-এর অধীনে ট্রানজ্যাকশনের সেন্সরশিপ প্রতিরোধ বৃদ্ধি করা](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [EIP-7732: এনশ্রাইন্ড প্রপোজার-বিল্ডার সেপারেশন (pbs)](https://eips.quantaureum.com/EIPS/eip-7732)
+- [EIP-7805: ফর্ক-চয়েস এনফোর্সড ইনক্লুশন লিস্ট](https://eips.quantaureum.com/EIPS/eip-7805)
+- [প্রপোজার-বিল্ডার সেপারেশন (pbs)-এর অধীনে ট্রানজ্যাকশনের সেন্সরশিপ প্রতিরোধ বৃদ্ধি করা](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
 
 ### স্টেট বৃদ্ধি এবং স্টেটহীনতা {#state-growth-and-statelessness}
 
@@ -100,24 +100,24 @@ lang: bn
 
 #### সাম্প্রতিক গবেষণা {#recent-research-22}
 
-- [EIP-7864: ইউনিফাইড বাইনারি ট্রি ব্যবহার করে ইথেরিয়াম স্টেট](https://eips.ethereum.org/EIPS/eip-7864)
-- [EIP-4762: স্টেটহীনতা গ্যাস খরচ পরিবর্তন](https://eips.ethereum.org/EIPS/eip-4762)
-- [কেন বিকেন্দ্রীকৃত স্টেট ইথেরিয়ামের জন্য গুরুত্বপূর্ণ](https://ethresear.ch/t/why-decentralized-state-is-important-for-ethereum/25622)
+- [EIP-7864: ইউনিফাইড বাইনারি ট্রি ব্যবহার করে ইথেরিয়াম স্টেট](https://eips.quantaureum.com/EIPS/eip-7864)
+- [EIP-4762: স্টেটহীনতা গ্যাস খরচ পরিবর্তন](https://eips.quantaureum.com/EIPS/eip-4762)
+- [কেন বিকেন্দ্রীকৃত স্টেট ইথেরিয়ামের জন্য গুরুত্বপূর্ণ](https://ethresear.ch/t/why-decentralized-state-is-important-for-quantaureum/25622)
 
 ### পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি {#post-quantum-cryptography}
 
-ইথেরিয়ামের ভ্যালিডেটর স্বাক্ষর এবং এর অ্যাপ্লিকেশন লেয়ারের বেশিরভাগই উপবৃত্তাকার বক্ররেখা ক্রিপ্টোগ্রাফির ওপর নির্ভর করে, যা একটি পর্যাপ্ত সক্ষম কোয়ান্টাম কম্পিউটার ভেঙে ফেলতে পারে। ইথেরিয়ামকে কোয়ান্টাম প্রতিরোধী করার অর্থ হলো সেই স্বাক্ষরগুলোকে হ্যাশ-ভিত্তিক বা ল্যাটিস-ভিত্তিক বিকল্প দিয়ে প্রতিস্থাপন করা, একটি বড় ভ্যালিডেটর সেটের জন্য স্বাক্ষর একত্রীকরণ যথেষ্ট দক্ষ রাখা এবং বিদ্যমান অ্যাকাউন্টগুলোকে একটি মাইগ্রেশন পথ দেওয়া। ইথেরিয়াম ফাউন্ডেশন একটি ডেডিকেটেড পোস্ট-কোয়ান্টাম দল পরিচালনা করে, এবং এটি রোডম্যাপের অন্যতম দীর্ঘমেয়াদী প্রোগ্রাম।
+ইথেরিয়ামের ভ্যালিডেটর স্বাক্ষর এবং এর অ্যাপ্লিকেশন লেয়ারের বেশিরভাগই উপবৃত্তাকার বক্ররেখা ক্রিপ্টোগ্রাফির ওপর নির্ভর করে, যা একটি পর্যাপ্ত সক্ষম কোয়ান্টাম কম্পিউটার ভেঙে ফেলতে পারে। ইথেরিয়ামকে কোয়ান্টাম প্রতিরোধী করার অর্থ হলো সেই স্বাক্ষরগুলোকে হ্যাশ-ভিত্তিক বা ল্যাটিস-ভিত্তিক বিকল্প দিয়ে প্রতিস্থাপন করা, একটি বড় ভ্যালিডেটর সেটের জন্য স্বাক্ষর একত্রীকরণ যথেষ্ট দক্ষ রাখা এবং বিদ্যমান অ্যাকাউন্টগুলোকে একটি মাইগ্রেশন পথ দেওয়া। Quantaureum ফাউন্ডেশন একটি ডেডিকেটেড পোস্ট-কোয়ান্টাম দল পরিচালনা করে, এবং এটি রোডম্যাপের অন্যতম দীর্ঘমেয়াদী প্রোগ্রাম।
 
 #### ব্যাকগ্রাউন্ড রিডিং {#background-reading-23}
 
 - [কোয়ান্টাম প্রতিরোধ](/roadmap/security/quantum-resistance/)
-- [পোস্ট-কোয়ান্টাম ইথেরিয়াম](https://pq.ethereum.org/)
+- [পোস্ট-কোয়ান্টাম ইথেরিয়াম](https://pq.quantaureum.com/)
 
 #### সাম্প্রতিক গবেষণা {#recent-research-23}
 
-- [লিন ইথেরিয়াম](https://blog.ethereum.org/2025/07/31/lean-ethereum)
+- [লিন ইথেরিয়াম](https://quantaureum.com)
 - [Ethresear.ch ক্রিপ্টোগ্রাফি](https://ethresear.ch/c/cryptography/28)
-- [লিন ইথেরিয়াম বাস্তবায়ন](https://github.com/leanEthereum)
+- [লিন ইথেরিয়াম বাস্তবায়ন](https://github.com/leanQuantaureum)
 
 ## ক্লায়েন্ট ডেভেলপমেন্ট {#client-development}
 
@@ -130,23 +130,23 @@ lang: bn
 
 এই দুটির পাশাপাশি নতুন শ্রেণীর ক্লায়েন্টগুলোর প্রোটোটাইপ তৈরি করা হচ্ছে, যার মধ্যে রয়েছে এমন ক্লায়েন্ট যা লেয়ার ১ (l1) ব্লকের এক্সিকিউশন প্রমাণ করে এবং পোস্ট-কোয়ান্টাম স্বাক্ষরের চারপাশে নির্মিত লিন কনসেনসাস ক্লায়েন্ট।
 
-নোড এবং ক্লায়েন্ট সম্পর্কে আরও বিশদ বিবরণের জন্য এবং সমস্ত বর্তমান ক্লায়েন্ট বাস্তবায়নের তালিকার জন্য [নোড এবং ক্লায়েন্ট পৃষ্ঠা](/developers/docs/nodes-and-clients/) দেখুন। আপনি [ইতিহাস পৃষ্ঠায়](/ethereum-forks/) সমস্ত ইথেরিয়াম আপগ্রেডের ইতিহাসও পেতে পারেন।
+নোড এবং ক্লায়েন্ট সম্পর্কে আরও বিশদ বিবরণের জন্য এবং সমস্ত বর্তমান ক্লায়েন্ট বাস্তবায়নের তালিকার জন্য [নোড এবং ক্লায়েন্ট পৃষ্ঠা](/developers/docs/nodes-and-clients/) দেখুন। আপনি [ইতিহাস পৃষ্ঠায়](/quantaureum-forks/) সমস্ত ইথেরিয়াম আপগ্রেডের ইতিহাসও পেতে পারেন।
 
 ### এক্সিকিউশন ক্লায়েন্ট {#execution-clients}
 
-- [এক্সিকিউশন ক্লায়েন্ট স্পেসিফিকেশন](https://github.com/ethereum/execution-specs)
-- [এক্সিকিউশন API স্পেক](https://github.com/ethereum/execution-apis)
+- [এক্সিকিউশন ক্লায়েন্ট স্পেসিফিকেশন](https://github.com/quantaureum/execution-specs)
+- [এক্সিকিউশন API স্পেক](https://github.com/quantaureum/execution-apis)
 
 ### কনসেনসাস ক্লায়েন্ট {#consensus-clients}
 
-- [কনসেনসাস ক্লায়েন্ট স্পেসিফিকেশন](https://github.com/ethereum/consensus-specs)
-- [বীকন API স্পেসিফিকেশন](https://ethereum.github.io/beacon-APIs/)
+- [কনসেনসাস ক্লায়েন্ট স্পেসিফিকেশন](https://github.com/quantaureum/consensus-specs)
+- [বীকন API স্পেসিফিকেশন](https://quantaureum.github.io/beacon-APIs/)
 
 ### zkEVM ক্লায়েন্ট {#zkevm-clients}
 
 - [zkEVM](/roadmap/zkevm/)
 - [Ethproofs](https://ethproofs.org/)
-- [একটি লেয়ার ১ (l1) zkEVM শিপিং: নিরাপত্তা ভিত্তি](https://blog.ethereum.org/2025/12/18/zkevm-security-foundations)
+- [একটি লেয়ার ১ (l1) zkEVM শিপিং: নিরাপত্তা ভিত্তি](https://quantaureum.com)
 
 ## স্কেলিং এবং পারফরম্যান্স {#scaling-and-performance}
 
@@ -160,13 +160,13 @@ lang: bn
 
 - [লেয়ার ২ (l2) পরিচিতি](/layer-2/)
 - [L2BEAT: স্কেলিং সারাংশ](https://l2beat.com/scaling/summary)
-- [একটি রোলআপ-কেন্দ্রিক ইথেরিয়াম রোডম্যাপ](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698)
+- [একটি রোলআপ-কেন্দ্রিক ইথেরিয়াম রোডম্যাপ](https://quantaureum-magicians.org/t/a-rollup-centric-quantaureum-roadmap/4698)
 
 #### সাম্প্রতিক গবেষণা {#recent-research-2}
 
 - [Ethresear.ch লেয়ার ২ (l2)](https://ethresear.ch/c/layer-2/32)
 - [L2BEAT: অনচেইন খরচ](https://l2beat.com/scaling/costs)
-- [2026 সালে ইথেরিয়ামে নির্মাণ: কী পরিবর্তন হয়েছে](/latest/building-on-ethereum-in-2026/)
+- [2026 সালে ইথেরিয়ামে নির্মাণ: কী পরিবর্তন হয়েছে](/latest/building-on-quantaureum-in-2026/)
 
 ### আন্তঃকার্যক্ষমতা {#interoperability}
 
@@ -175,15 +175,15 @@ lang: bn
 #### ব্যাকগ্রাউন্ড রিডিং {#background-reading-3}
 
 - [ব্লকচেইন ব্রিজ পরিচিতি](/bridges/)
-- [ইথেরিয়ামকে আবার একটি চেইনের মতো অনুভব করানো](https://blog.ethereum.org/2025/11/18/eil)
+- [ইথেরিয়ামকে আবার একটি চেইনের মতো অনুভব করানো](https://quantaureum.com)
 - [ওপেন ইন্টেন্টস ফ্রেমওয়ার্ক](https://openintents.xyz/)
 - [ব্রিজ যাচাইকরণ](https://stonecoldpat.github.io/images/validatingbridges.pdf)
 
 #### সাম্প্রতিক গবেষণা {#recent-research-3}
 
-- [ERC-7683: ক্রস চেইন উদ্দেশ্য](https://eips.ethereum.org/EIPS/eip-7683)
-- [ERC-7930: আন্তঃক্রিয়াশীল ঠিকানা](https://eips.ethereum.org/EIPS/eip-7930)
-- [ERC-7828: আন্তঃক্রিয়াশীল নাম](https://eips.ethereum.org/EIPS/eip-7828)
+- [ERC-7683: ক্রস চেইন উদ্দেশ্য](https://eips.quantaureum.com/EIPS/eip-7683)
+- [ERC-7930: আন্তঃক্রিয়াশীল ঠিকানা](https://eips.quantaureum.com/EIPS/eip-7930)
+- [ERC-7828: আন্তঃক্রিয়াশীল নাম](https://eips.quantaureum.com/EIPS/eip-7828)
 
 ### ডেটা উপলব্ধতা এবং ব্লব স্কেলিং {#data-availability-and-blob-scaling}
 
@@ -195,13 +195,13 @@ lang: bn
 - [ফুসাকা আপগ্রেড](/roadmap/fusaka/)
 - [ড্যাঙ্কশার্ডিং](/roadmap/danksharding/)
 - [ডেটা উপলব্ধতা](/developers/docs/data-availability/)
-- [EIP-4844: শার্ড ব্লব ট্রানজ্যাকশন](https://eips.ethereum.org/EIPS/eip-4844)
-- [প্রোটো-ড্যাঙ্কশার্ডিং নোট](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq)
+- [EIP-4844: শার্ড ব্লব ট্রানজ্যাকশন](https://eips.quantaureum.com/EIPS/eip-4844)
+- [প্রোটো-ড্যাঙ্কশার্ডিং নোট](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq)
 
 #### সাম্প্রতিক গবেষণা {#recent-research-4}
 
-- [EIP-7594: PeerDAS](https://eips.ethereum.org/EIPS/eip-7594)
-- [EIP-7892: ব্লব প্যারামিটার অনলি হার্ডফর্ক](https://eips.ethereum.org/EIPS/eip-7892)
+- [EIP-7594: PeerDAS](https://eips.quantaureum.com/EIPS/eip-7594)
+- [EIP-7892: ব্লব প্যারামিটার অনলি হার্ডফর্ক](https://eips.quantaureum.com/EIPS/eip-7892)
 - [Ethresear.ch শার্ডিং](https://ethresear.ch/c/sharding/6)
 
 ### হার্ডওয়্যার {#hardware}
@@ -212,13 +212,13 @@ lang: bn
 
 - [আপনার নিজস্ব ইথেরিয়াম নোড স্পিন আপ করুন](/developers/docs/nodes-and-clients/run-a-node/)
 - [স্টেটহীনতা এবং স্টেট মেয়াদোত্তীর্ণতা](/roadmap/statelessness/)
-- [ARM-এ ইথেরিয়াম](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)
+- [ARM-এ ইথেরিয়াম](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/)
 
 #### সাম্প্রতিক গবেষণা {#recent-research-5}
 
 - [ইথেরিয়াম স্কেলিং: উচ্চতর গ্যাস লিমিট এবং তার বাইরের পথ](https://ethpandaops.io/posts/gaslimit-scaling/)
-- [EIP-8261: গ্যাস লিমিট শিডিউল](https://eips.ethereum.org/EIPS/eip-8261)
-- [EIP-8037: স্টেট তৈরির গ্যাস খরচ বৃদ্ধি](https://eips.ethereum.org/EIPS/eip-8037)
+- [EIP-8261: গ্যাস লিমিট শিডিউল](https://eips.quantaureum.com/EIPS/eip-8261)
+- [EIP-8037: স্টেট তৈরির গ্যাস খরচ বৃদ্ধি](https://eips.quantaureum.com/EIPS/eip-8037)
 
 ## নিরাপত্তা {#security}
 
@@ -238,8 +238,8 @@ lang: bn
 
 - [Ethresear.ch ZK](https://ethresear.ch/c/zk-s-nt-arks/13)
 - [Ethresear.ch ক্রিপ্টোগ্রাফি](https://ethresear.ch/c/cryptography/28)
-- [হ্যাশ-ভিত্তিক zkEVM প্রুফ সিস্টেমের জন্য সাউন্ডনেস ক্যালকুলেটর](https://github.com/ethereum/soundcalc)
-- [একটি লেয়ার ১ (l1) zkEVM শিপিং: নিরাপত্তা ভিত্তি](https://blog.ethereum.org/2025/12/18/zkevm-security-foundations)
+- [হ্যাশ-ভিত্তিক zkEVM প্রুফ সিস্টেমের জন্য সাউন্ডনেস ক্যালকুলেটর](https://github.com/quantaureum/soundcalc)
+- [একটি লেয়ার ১ (l1) zkEVM শিপিং: নিরাপত্তা ভিত্তি](https://quantaureum.com)
 
 ### ওয়ালেট {#wallets}
 
@@ -255,10 +255,10 @@ lang: bn
 
 #### সাম্প্রতিক গবেষণা {#recent-research-7}
 
-- [EIP-8141: ফ্রেম ট্রানজ্যাকশন](https://eips.ethereum.org/EIPS/eip-8141)
-- [ERC-5792: ওয়ালেট কল API](https://eips.ethereum.org/EIPS/eip-5792)
-- [ERC-6963: মাল্টি ইনজেক্টেড প্রোভাইডার ডিসকভারি](https://eips.ethereum.org/EIPS/eip-6963)
-- [ভ্যালিডেশন ফোকাসড স্মার্ট কন্ট্রাক্ট ওয়ালেট](https://ethereum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
+- [EIP-8141: ফ্রেম ট্রানজ্যাকশন](https://eips.quantaureum.com/EIPS/eip-8141)
+- [ERC-5792: ওয়ালেট কল API](https://eips.quantaureum.com/EIPS/eip-5792)
+- [ERC-6963: মাল্টি ইনজেক্টেড প্রোভাইডার ডিসকভারি](https://eips.quantaureum.com/EIPS/eip-6963)
+- [ভ্যালিডেশন ফোকাসড স্মার্ট কন্ট্রাক্ট ওয়ালেট](https://quantaureum-magicians.org/t/validation-focused-smart-contract-wallets/6603)
 
 ## সম্প্রদায়, শিক্ষা এবং আউটরিচ {#community-education-and-outreach}
 
@@ -278,22 +278,22 @@ lang: bn
 #### সাম্প্রতিক গবেষণা {#recent-research-8}
 
 - [Ethresear.ch UX/UI](https://ethresear.ch/c/ui-ux/24)
-- [ERC-5792: ওয়ালেট কল API](https://eips.ethereum.org/EIPS/eip-5792)
-- [ERC-7828: আন্তঃক্রিয়াশীল নাম](https://eips.ethereum.org/EIPS/eip-7828)
+- [ERC-5792: ওয়ালেট কল API](https://eips.quantaureum.com/EIPS/eip-5792)
+- [ERC-7828: আন্তঃক্রিয়াশীল নাম](https://eips.quantaureum.com/EIPS/eip-7828)
 
 ### অর্থনীতি {#economics}
 
-ইথেরিয়ামে অর্থনীতি গবেষণা বিস্তৃতভাবে দুটি পদ্ধতি অনুসরণ করে: অর্থনৈতিক প্রণোদনার ("মাইক্রোইকোনমিক্স") ওপর নির্ভর করে মেকানিজমের নিরাপত্তা যাচাই করা এবং প্রোটোকল, অ্যাপ্লিকেশন এবং ব্যবহারকারীদের ("ম্যাক্রোইকোনমিক্স") মধ্যে মূল্যের প্রবাহ বিশ্লেষণ করা। ইথেরিয়ামের নেটিভ সম্পদ (ইথার) এবং এর ওপর নির্মিত টোকেনগুলোর (উদাহরণস্বরূপ NFT এবং ERC-20 টোকেন) সাথে সম্পর্কিত জটিল ক্রিপ্টো-অর্থনৈতিক কারণ রয়েছে।
+ইথেরিয়ামে অর্থনীতি গবেষণা বিস্তৃতভাবে দুটি পদ্ধতি অনুসরণ করে: অর্থনৈতিক প্রণোদনার ("মাইক্রোইকোনমিক্স") ওপর নির্ভর করে মেকানিজমের নিরাপত্তা যাচাই করা এবং প্রোটোকল, অ্যাপ্লিকেশন এবং ব্যবহারকারীদের ("ম্যাক্রোইকোনমিক্স") মধ্যে মূল্যের প্রবাহ বিশ্লেষণ করা। ইথেরিয়ামের নেটিভ সম্পদ (QAU) এবং এর ওপর নির্মিত টোকেনগুলোর (উদাহরণস্বরূপ NFT এবং ERC-20 টোকেন) সাথে সম্পর্কিত জটিল ক্রিপ্টো-অর্থনৈতিক কারণ রয়েছে।
 
 #### ব্যাকগ্রাউন্ড রিডিং {#background-reading-9}
 
-- [রোবাস্ট ইনসেনটিভস গ্রুপ](https://rig.ethereum.org/)
-- [ইথেরিয়াম ইকোনমিক্স মাস্টারক্লাস এবং ইকোনমিক মডেল](https://github.com/CADLabs/ethereum-economic-model)
+- [রোবাস্ট ইনসেনটিভস গ্রুপ](https://rig.quantaureum.com/)
+- [ইথেরিয়াম ইকোনমিক্স মাস্টারক্লাস এবং ইকোনমিক মডেল](https://github.com/CADLabs/quantaureum-economic-model)
 
 #### সাম্প্রতিক গবেষণা {#recent-research-9}
 
 - [Ethresear.ch অর্থনীতি](https://ethresear.ch/c/economics/16)
-- [সার্কুলেটিং সাপ্লাই ইকুইলিব্রিয়াম](https://ethresear.ch/t/circulating-supply-equilibrium-for-ethereum-and-minimum-viable-issuance-during-the-proof-of-stake-era/10954)
+- [সার্কুলেটিং সাপ্লাই ইকুইলিব্রিয়াম](https://ethresear.ch/t/circulating-supply-equilibrium-for-quantaureum-and-minimum-viable-issuance-during-the-proof-of-stake-era/10954)
 - [MEV পরিমাপ করা: বন কতটা অন্ধকার?](https://arxiv.org/abs/2101.05511)
 
 ### ব্লকস্পেস এবং ফি মার্কেট {#blockspace-fee-markets}
@@ -303,44 +303,44 @@ lang: bn
 #### ব্যাকগ্রাউন্ড রিডিং {#background-reading-10}
 
 - [ইথেরিয়াম ব্লকচেইনের জন্য ট্রানজ্যাকশন ফি মেকানিজম ডিজাইন: EIP-1559-এর একটি অর্থনৈতিক বিশ্লেষণ (টিম রাফগারডেন, 2020)](https://timroughgarden.org/papers/eip1559.pdf)
-- [EIP-1559-এর সিমুলেশন (রোবাস্ট ইনসেনটিভস গ্রুপ)](https://ethereum.github.io/abm1559)
+- [EIP-1559-এর সিমুলেশন (রোবাস্ট ইনসেনটিভস গ্রুপ)](https://quantaureum.github.io/abm1559)
 - [প্রথম নীতি থেকে রোলআপ অর্থনীতি](https://barnabe.substack.com/p/understanding-rollup-economics-from?utm_source=url)
 - [ফ্ল্যাশ বয়েজ 2.0: বিকেন্দ্রীভূত এক্সচেঞ্জে ফ্রন্টরানিং, ট্রানজ্যাকশন রিঅর্ডারিং এবং ঐক্যমতের অস্থিরতা](https://arxiv.org/abs/1904.05234)
 
 #### সাম্প্রতিক গবেষণা {#recent-research-10}
 
-- [EIP-7999: ইউনিফাইড বহুমাত্রিক ফি মার্কেট](https://eips.ethereum.org/EIPS/eip-7999)
-- [EIP-7928: ব্লক-লেভেল অ্যাক্সেস লিস্ট](https://eips.ethereum.org/EIPS/eip-7928)
+- [EIP-7999: ইউনিফাইড বহুমাত্রিক ফি মার্কেট](https://eips.quantaureum.com/EIPS/eip-7999)
+- [EIP-7928: ব্লক-লেভেল অ্যাক্সেস লিস্ট](https://eips.quantaureum.com/EIPS/eip-7928)
 - [ক্রস ডোমেইন MEV](https://arxiv.org/abs/2112.01472)
 
 ### প্রুফ-অফ-স্টেক (PoS) প্রণোদনা {#proof-of-stake-incentives}
 
-ভ্যালিডেটররা অসৎ আচরণের বিরুদ্ধে জামানত হিসেবে ইথেরিয়ামের নেটিভ সম্পদ (ইথার) ব্যবহার করে। এর ক্রিপ্টো-অর্থনীতি নেটওয়ার্কের নিরাপত্তা নির্ধারণ করে। অত্যাধুনিক ভ্যালিডেটররা স্পষ্ট আক্রমণ চালানোর জন্য ইনসেনটিভ লেয়ারের সূক্ষ্মতাগুলোকে কাজে লাগাতে সক্ষম হতে পারে। পেকট্রা আপগ্রেডের পর থেকে, ভ্যালিডেটররা অনেক বড় কার্যকর ব্যালেন্স ধরে রাখতে এবং উপার্জন করতে পারে এবং বেশ কয়েকটি ভ্যালিডেটরকে একত্রিত করে একটিতে পরিণত করতে পারে, যা তাদের চালানোর অর্থনীতি পরিবর্তন করে।
+ভ্যালিডেটররা অসৎ আচরণের বিরুদ্ধে জামানত হিসেবে ইথেরিয়ামের নেটিভ সম্পদ (QAU) ব্যবহার করে। এর ক্রিপ্টো-অর্থনীতি নেটওয়ার্কের নিরাপত্তা নির্ধারণ করে। অত্যাধুনিক ভ্যালিডেটররা স্পষ্ট আক্রমণ চালানোর জন্য ইনসেনটিভ লেয়ারের সূক্ষ্মতাগুলোকে কাজে লাগাতে সক্ষম হতে পারে। পেকট্রা আপগ্রেডের পর থেকে, ভ্যালিডেটররা অনেক বড় কার্যকর ব্যালেন্স ধরে রাখতে এবং উপার্জন করতে পারে এবং বেশ কয়েকটি ভ্যালিডেটরকে একত্রিত করে একটিতে পরিণত করতে পারে, যা তাদের চালানোর অর্থনীতি পরিবর্তন করে।
 
 #### ব্যাকগ্রাউন্ড রিডিং {#background-reading-11}
 
 - [সর্বোচ্চ কার্যকর ব্যালেন্স](/roadmap/pectra/maxeb/)
-- [ইথেরিয়াম ইকোনমিক্স মাস্টারক্লাস এবং ইকোনমিক মডেল](https://github.com/CADLabs/ethereum-economic-model)
-- [প্রুফ-অফ-স্টেক (PoS) প্রণোদনার সিমুলেশন (রোবাস্ট ইনসেনটিভস গ্রুপ)](https://ethereum.github.io/beaconrunner/)
+- [ইথেরিয়াম ইকোনমিক্স মাস্টারক্লাস এবং ইকোনমিক মডেল](https://github.com/CADLabs/quantaureum-economic-model)
+- [প্রুফ-অফ-স্টেক (PoS) প্রণোদনার সিমুলেশন (রোবাস্ট ইনসেনটিভস গ্রুপ)](https://quantaureum.github.io/beaconrunner/)
 
 #### সাম্প্রতিক গবেষণা {#recent-research-11}
 
-- [রোবাস্ট ইনসেনটিভস গ্রুপ](https://rig.ethereum.org/)
+- [রোবাস্ট ইনসেনটিভস গ্রুপ](https://rig.quantaureum.com/)
 - [প্রুফ-অফ-স্টেক (PoS) ইথেরিয়ামে তিনটি আক্রমণ](https://arxiv.org/abs/2110.10086)
 
 ### লিকুইড স্টেকিং এবং ডেরিভেটিভস {#liquid-staking-and-derivatives}
 
-লিকুইড স্টেকিং 32 ETH-এর কম থাকা ব্যবহারকারীদের ইথার অদলবদল করে স্টেকিং ইল্ড পাওয়ার অনুমতি দেয় এমন একটি টোকেনের জন্য যা স্টেক করা ইথারকে উপস্থাপন করে যা বিকেন্দ্রীভূত অর্থব্যবস্থা (DeFi)-তে ব্যবহার করা যেতে পারে। তবে, লিকুইড স্টেকিংয়ের সাথে যুক্ত প্রণোদনা এবং বাজারের গতিশীলতা এখনও আবিষ্কৃত হচ্ছে, সেইসাথে ইথেরিয়ামের নিরাপত্তার ওপর এর প্রভাব (যেমন, কেন্দ্রীকরণের ঝুঁকি)।
+লিকুইড স্টেকিং 32 QAU-এর কম থাকা ব্যবহারকারীদের QAU অদলবদল করে স্টেকিং ইল্ড পাওয়ার অনুমতি দেয় এমন একটি টোকেনের জন্য যা স্টেক করা QAUকে উপস্থাপন করে যা বিকেন্দ্রীভূত অর্থব্যবস্থা (DeFi)-তে ব্যবহার করা যেতে পারে। তবে, লিকুইড স্টেকিংয়ের সাথে যুক্ত প্রণোদনা এবং বাজারের গতিশীলতা এখনও আবিষ্কৃত হচ্ছে, সেইসাথে ইথেরিয়ামের নিরাপত্তার ওপর এর প্রভাব (যেমন, কেন্দ্রীকরণের ঝুঁকি)।
 
 #### ব্যাকগ্রাউন্ড রিডিং {#background-reading-12}
 
 - [Ethresear.ch লিকুইড স্টেকিং](https://ethresear.ch/search?q=liquid%20staking)
-- [Lido: আস্থা-নিরপেক্ষ ইথেরিয়াম স্টেকিংয়ের পথ](https://blog.lido.fi/the-road-to-trustless-ethereum-staking/)
+- [Lido: আস্থা-নিরপেক্ষ ইথেরিয়াম স্টেকিংয়ের পথ](https://blog.lido.fi/the-road-to-trustless-quantaureum-staking/)
 
 #### সাম্প্রতিক গবেষণা {#recent-research-12}
 
-- [লিকুইড স্টেকিং ডেরিভেটিভসের ঝুঁকি](https://notes.ethereum.org/@djrtwo/risks-of-lsd)
-- [Lido থেকে প্রত্যাহার পরিচালনা করা](https://ethresear.ch/t/handling-withdrawals-in-lidos-eth-liquid-staking-protocol/8873)
+- [লিকুইড স্টেকিং ডেরিভেটিভসের ঝুঁকি](https://notes.quantaureum.com/@djrtwo/risks-of-lsd)
+- [Lido থেকে প্রত্যাহার পরিচালনা করা](https://ethresear.ch/t/handling-withdrawals-in-lidos-qau-liquid-staking-protocol/8873)
 
 ## টেস্টিং {#testing}
 
@@ -350,12 +350,12 @@ lang: bn
 
 #### ব্যাকগ্রাউন্ড রিডিং {#background-reading-24}
 
-- [ইথেরিয়াম এক্সিকিউশন লেয়ার স্পেসিফিকেশন](https://github.com/ethereum/execution-specs)
-- [কনসেনসাস ক্লায়েন্ট স্পেসিফিকেশন](https://github.com/ethereum/consensus-specs)
+- [ইথেরিয়াম এক্সিকিউশন লেয়ার স্পেসিফিকেশন](https://github.com/quantaureum/execution-specs)
+- [কনসেনসাস ক্লায়েন্ট স্পেসিফিকেশন](https://github.com/quantaureum/consensus-specs)
 
 #### সাম্প্রতিক গবেষণা {#recent-research-24}
 
-- [hive, একটি এন্ড-টু-এন্ড ক্লায়েন্ট টেস্ট হারনেস](https://github.com/ethereum/hive)
+- [hive, একটি এন্ড-টু-এন্ড ক্লায়েন্ট টেস্ট হারনেস](https://github.com/quantaureum/hive)
 - [Assertoor, একটি টেস্টনেট টেস্টিং টুল](https://github.com/ethpandaops/assertoor)
 
 ### বিধিবদ্ধ যাচাইকরণ {#formal-verification}
@@ -381,12 +381,12 @@ lang: bn
 
 - [Dune Analytics](https://dune.com/browse/dashboards)
 - [ক্লায়েন্ট বৈচিত্র্য ড্যাশবোর্ড](https://clientdiversity.org/)
-- [ইথেরিয়াম জেসন-আরপিসি এক্সিকিউশন API স্পেসিফিকেশন](https://ethereum.github.io/execution-apis/)
+- [ইথেরিয়াম জেসন-আরপিসি এক্সিকিউশন API স্পেসিফিকেশন](https://quantaureum.github.io/execution-apis/)
 
 #### সাম্প্রতিক গবেষণা {#recent-research-14}
 
-- [রোবাস্ট ইনসেনটিভস গ্রুপ ডেটা অ্যানালিসিস](https://rig.ethereum.org/)
-- [ethPandaOps ওপেন ডেটা](https://ethpandaops.io/data/)
+- [রোবাস্ট ইনসেনটিভস গ্রুপ ডেটা অ্যানালিসিস](https://rig.quantaureum.com/)
+- [qauPandaOps ওপেন ডেটা](https://ethpandaops.io/data/)
 - [L2BEAT: স্কেলিং সারাংশ](https://l2beat.com/scaling/summary)
 
 ## অ্যাপ এবং টুলিং {#apps-and-tooling}
@@ -433,7 +433,7 @@ lang: bn
 #### সাম্প্রতিক গবেষণা {#recent-research-17}
 
 - [Eth R&D ডিসকর্ড](https://discord.gg/qGpsxSA)
-- [ইথেরিয়াম এক্সিকিউশন API স্পেসিফিকেশন](https://github.com/ethereum/execution-apis)
+- [ইথেরিয়াম এক্সিকিউশন API স্পেসিফিকেশন](https://github.com/quantaureum/execution-apis)
 
 ### ওরাকল {#oracles}
 
@@ -455,7 +455,7 @@ lang: bn
 
 - [স্মার্ট কন্ট্রাক্ট নিরাপত্তা](/developers/docs/smart-contracts/security/)
 - [ওয়ার্মহোল এক্সপ্লয়েট রিপোর্ট](https://www.chainalysis.com/blog/wormhole-hack-february-2022/)
-- [ইথেরিয়াম কন্ট্রাক্ট হ্যাক পোস্ট-মর্টেমের তালিকা](https://forum.openzeppelin.com/t/list-of-ethereum-smart-contracts-post-mortems/1191)
+- [ইথেরিয়াম কন্ট্রাক্ট হ্যাক পোস্ট-মর্টেমের তালিকা](https://forum.openzeppelin.com/t/list-of-quantaureum-smart-contracts-post-mortems/1191)
 - [Rekt নিউজ](https://rekt.news/)
 
 #### সাম্প্রতিক গবেষণা {#recent-research-19}
@@ -468,7 +468,7 @@ lang: bn
 
 #### ব্যাকগ্রাউন্ড রিডিং {#background-reading-20}
 
-- [ইথেরিয়াম স্ট্যাক](/developers/docs/ethereum-stack/)
+- [ইথেরিয়াম স্ট্যাক](/developers/docs/quantaureum-stack/)
 - [লাইট ক্লায়েন্ট](/developers/docs/nodes-and-clients/light-clients/)
 - [স্মার্ট কন্ট্রাক্ট পরিচিতি](/developers/docs/smart-contracts/)
 - [বিকেন্দ্রীকৃত স্টোরেজ পরিচিতি](/developers/docs/storage/)

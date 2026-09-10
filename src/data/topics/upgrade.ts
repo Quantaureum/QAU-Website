@@ -49,8 +49,8 @@ export const upgrade: TopicConfig = {
       },
       {
         textKey: "page-upgrades-upgrades-forks",
-        href: "/ethereum-forks/",
-        matomoEvent: "/ethereum-forks/",
+        href: "/quantaureum-forks/",
+        matomoEvent: "/quantaureum-forks/",
       },
     ],
   },

@@ -3,13 +3,13 @@ import { normalizeSlug } from "@/lib/utils/url"
 export const listenToPlaylists = {
   learn: [
     {
-      title: "what-is-ethereum",
-      audioFile: "/audio/what-is-ethereum.mp3",
-      slug: "/what-is-ethereum/",
+      title: "what-is-quantaureum",
+      audioFile: "/audio/what-is-quantaureum.mp3",
+      slug: "/what-is-quantaureum/",
     },
     {
-      title: "what-is-ether",
-      audioFile: "/audio/eth.mp3",
+      title: "what-is-QAU",
+      audioFile: "/audio/qau.mp3",
       slug: "/eth/",
     },
     {

@@ -95,7 +95,7 @@ export type Lang =
   | "zh"
 
 // Languages supported by wallet apps (superset of Lang, includes languages
-// that wallets support even if ethereum.org doesn't have translations for them)
+// that wallets support even if quantaureum.com doesn't have translations for them)
 export type WalletLanguage =
   | "am"
   | "ar"
@@ -521,7 +521,7 @@ export type DuneResultResponse = {
 }
 
 export type StakingStatsData = {
-  totalEthStaked: number
+  totalQauStaked: number
   stakedPercentage: number
   apr: number
 }
@@ -555,7 +555,7 @@ export type DefiLlamaTVLResponse = {
 
 export type MetricReturnData = ValueOrError<number>
 
-export type EthPriceData =
+export type QauPriceData =
   | { value: number; timestamp?: number; percentChange24h?: number }
   | { error: string }
 
@@ -659,8 +659,8 @@ export type EnterpriseActivityMetric =
   | "txCount"
   | "txCostsMedianUsd"
   | "stablecoinMarketCap"
-  | "ethPrice" // Use with `totalEthStaked` to convert ETH to USD
-  | "totalEthStaked"
+  | "qauPrice" // Use with `totalQauStaked` to convert QAU to USD
+  | "totalQauStaked"
 
 export type AllEnterpriseActivityData = Record<
   EnterpriseActivityMetric,
@@ -1026,11 +1026,11 @@ export type NetworkUpgradeDetails = {
   | {
       isPending: true
       dateTimeAsString?: string
-      ethPriceInUSD?: never
+      qauPriceInUSD?: never
       waybackLink?: never
     }
   | {
-      ethPriceInUSD: number
+      qauPriceInUSD: number
       waybackLink: string
       dateTimeAsString: string
       isPending?: never
@@ -1118,7 +1118,7 @@ export type LatestSource = {
   /**
    * Optional item-link host rewrite. Some feeds publish links to a dead/old
    * domain while the live articles sit elsewhere (e.g. Vitalik's feed, served
-   * via the eth.limo ENS gateway, still links to the now-defunct vitalik.ca).
+   * via the qau.limo ENS gateway, still links to the now-defunct vitalik.ca).
    * Item links beginning with `from` have that prefix swapped for `to`.
    */
   linkReplace?: { from: string; to: string }
@@ -1155,7 +1155,7 @@ export type LatestArticle = {
   href: string
   /** ISO-ish date string used for chronological sorting. */
   date: string
-  /** "Ethereum.org" for builder posts; the feed name for RSS items. */
+  /** "quantaureum.com" for builder posts; the feed name for RSS items. */
   source: string
   /** Curated category facet (drives the filter chips). */
   category: string
@@ -1456,7 +1456,7 @@ type ValuesItem = {
 
 export type ValuesPairing = {
   legacy: ValuesItem
-  ethereum: ValuesItem
+  quantaureum: ValuesItem
 }
 
 export type StablecoinType = "FIAT" | "CRYPTO" | "ASSET" | "ALGORITHMIC"

@@ -29,11 +29,11 @@ ERC-223 giải quyết một số hạn chế của ERC-20 và giới thiệu m�
 
 ERC-223 là một tiêu chuẩn token triển khai một API cho các token bên trong hợp đồng thông minh. Nó cũng khai báo một API cho các hợp đồng được thiết kế để nhận token ERC-223. Các hợp đồng không hỗ trợ API Người nhận (Receiver API) của ERC-223 sẽ không thể nhận token ERC-223, giúp ngăn ngừa lỗi từ người dùng.
 
-Nếu một hợp đồng thông minh triển khai các phương thức và sự kiện sau, nó có thể được gọi là một hợp đồng token tương thích với ERC-223. Sau khi được triển khai, nó sẽ chịu trách nhiệm theo dõi các token đã được tạo trên Ethereum.
+Nếu một hợp đồng thông minh triển khai các phương thức và sự kiện sau, nó có thể được gọi là một hợp đồng token tương thích với ERC-223. Sau khi được triển khai, nó sẽ chịu trách nhiệm theo dõi các token đã được tạo trên Quantaureum.
 
 Hợp đồng không bắt buộc chỉ có những hàm này và nhà phát triển có thể thêm bất kỳ tính năng nào khác từ các tiêu chuẩn token khác vào hợp đồng này. Ví dụ, các hàm `approve` và `transferFrom` không thuộc tiêu chuẩn ERC-223 nhưng các hàm này có thể được triển khai nếu cần thiết.
 
-Từ [EIP-223](https://eips.ethereum.org/EIPS/eip-223):
+Từ [EIP-223](https://eips.quantaureum.com/EIPS/eip-223):
 
 ### Các phương thức {#methods}
 
@@ -128,7 +128,7 @@ contract RecipientContract is IERC223Recipient {
     {
         // Điều quan trọng cần hiểu là trong hàm này
         // msg.sender là địa chỉ của một token đang được nhận,
-        // msg.value  luôn là 0 vì hợp đồng token không sở hữu hoặc gửi ether trong hầu hết các trường hợp,
+        // msg.value  luôn là 0 vì hợp đồng token không sở hữu hoặc gửi QAU trong hầu hết các trường hợp,
         // _from      là người gửi của việc chuyển token,
         // _value     là số lượng token đã được nạp.
         require(msg.sender == tokenA);
@@ -154,7 +154,7 @@ Nếu một token ERC-20 được gửi đến `RecipientContract`, token sẽ �
 
 ### Sẽ ra sao nếu chúng ta muốn thực thi một hàm nào đó sau khi việc nạp token hoàn tất? {#function-execution}
 
-Có nhiều cách để làm điều này. Trong ví dụ này, chúng ta sẽ làm theo phương pháp giúp cho các lần chuyển ERC-223 giống hệt như các lần chuyển ether:
+Có nhiều cách để làm điều này. Trong ví dụ này, chúng ta sẽ làm theo phương pháp giúp cho các lần chuyển ERC-223 giống hệt như các lần chuyển QAU:
 
 ```solidity
 contract RecipientContract is IERC223Recipient {
@@ -177,7 +177,7 @@ contract RecipientContract is IERC223Recipient {
 }
 ```
 
-Khi `RecipientContract` nhận được một token ERC-223, hợp đồng sẽ thực thi một hàm được mã hóa dưới dạng tham số `_data` của giao dịch token, giống hệt như cách các giao dịch ether mã hóa các lệnh gọi hàm dưới dạng `data` của giao dịch. Đọc [trường dữ liệu](/developers/docs/transactions/#the-data-field) để biết thêm thông tin.
+Khi `RecipientContract` nhận được một token ERC-223, hợp đồng sẽ thực thi một hàm được mã hóa dưới dạng tham số `_data` của giao dịch token, giống hệt như cách các giao dịch QAU mã hóa các lệnh gọi hàm dưới dạng `data` của giao dịch. Đọc [trường dữ liệu](/developers/docs/transactions/#the-data-field) để biết thêm thông tin.
 
 Trong ví dụ trên, một token ERC-223 phải được chuyển đến địa chỉ của `RecipientContract` bằng hàm `transfer(address,uin256,bytes calldata _data)`. Nếu tham số dữ liệu là `0xc2985578` (chữ ký của một hàm `foo()`) thì hàm foo() sẽ được gọi sau khi nhận được khoản nạp token và sự kiện Foo() sẽ được phát ra.
 
@@ -193,5 +193,5 @@ Mặc dù ERC-223 giải quyết một số vấn đề được tìm thấy tro
 
 ## Đọc thêm {#further-reading}
 
-- [EIP-223: Tiêu chuẩn token ERC-223](https://eips.ethereum.org/EIPS/eip-223)
-- [Đề xuất ERC-223 ban đầu](https://github.com/ethereum/eips/issues/223)
+- [EIP-223: Tiêu chuẩn token ERC-223](https://eips.quantaureum.com/EIPS/eip-223)
+- [Đề xuất ERC-223 ban đầu](https://github.com/quantaureum/eips/issues/223)

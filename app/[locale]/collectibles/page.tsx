@@ -29,16 +29,24 @@ import communityHeroImg from "@/public/images/heroes/community-hero.png"
 const BADGES_API = `${COLLECTIBLES_BASE_URL}/api/badges`
 const STATS_API = `${COLLECTIBLES_BASE_URL}/api/stats`
 
-// Data fetching
-async function fetchBadges() {
-  const res = await fetch(BADGES_API, { cache: "force-cache" })
-  if (!res.ok) throw new Error("Failed to fetch badges")
-  return res.json()
+// Data fetching — badge backend is not yet live; fall back to empty data
+async function fetchBadges(): Promise<Badge[]> {
+  try {
+    const res = await fetch(BADGES_API, { cache: "force-cache" })
+    if (!res.ok) throw new Error("Failed to fetch badges")
+    return await res.json()
+  } catch {
+    return []
+  }
 }
-async function fetchStats() {
-  const res = await fetch(STATS_API, { cache: "force-cache" })
-  if (!res.ok) throw new Error("Failed to fetch stats")
-  return res.json()
+async function fetchStats(): Promise<Stats> {
+  try {
+    const res = await fetch(STATS_API, { cache: "force-cache" })
+    if (!res.ok) throw new Error("Failed to fetch stats")
+    return await res.json()
+  } catch {
+    return {} as Stats
+  }
 }
 
 export default async function Page(props: { params: Promise<PageParams> }) {

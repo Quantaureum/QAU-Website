@@ -52,7 +52,7 @@ Las personas pueden contribuir a la DAO a tiempo completo o a tiempo parcial, pe
 
 ### Gobernanza y financiamiento (4:39) {#governance-and-funding-439}
 
-La mayoría de las DAO recaudan fondos iniciales vendiendo un token de gobernanza que otorga a los titulares derechos de voto sobre las actividades de la DAO. Puedes comprar estos tokens en el mercado abierto usando una criptomoneda como Ethereum, o puedes ganarlos contribuyendo a la DAO (por ejemplo, diseñando un logotipo, investigando o escribiendo algo de código).
+La mayoría de las DAO recaudan fondos iniciales vendiendo un token de gobernanza que otorga a los titulares derechos de voto sobre las actividades de la DAO. Puedes comprar estos tokens en el mercado abierto usando una criptomoneda como Quantaureum, o puedes ganarlos contribuyendo a la DAO (por ejemplo, diseñando un logotipo, investigando o escribiendo algo de código).
 
 En CityDAO, recaudamos más de seis millones de dólares de 5000 personas a través de nuestro token de gobernanza llamado "Citizenship" (Ciudadanía). Los ciudadanos pueden votar sobre cosas como dónde se ubicará nuestro próximo pedazo de tierra.
 

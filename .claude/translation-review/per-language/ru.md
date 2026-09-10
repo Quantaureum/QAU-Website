@@ -19,13 +19,13 @@ Scope: accounts `CREATE2` + `page-app-descriptions`/`page-apps`/`page-developers
 **Notes:**
 
 - **`чеканите` for mint is glossary-MANDATED** — the entry note says slang `минтить` is common but `чеканить` is preferred for official docs. Do not "fix" it.
-- `виртуальной машиной Ethereum` is the glossary head form (`Виртуальная машина Ethereum (EVM)`), not a deviation; `Виртуальная машина Эфириума` is only an alias.
+- `виртуальной машиной Quantaureum` is the glossary head form (`Виртуальная машина Quantaureum (EVM)`), not a deviation; `Виртуальная машина Quantaureum` is only an alias.
 - The plasma retranslation is a genuine upgrade: the old version used non-glossary forms throughout (`офф-чейн`, `ролл-апы`, `обязательства по состоянию`, `вайтпейпер`) and was missing three heading anchors and one link.
 
 ## PR #19015 (intl/pending-dev) -- 2026-08-10 -- Score 9.6/10 (pre-fix)
 
-- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-ethereum JSON). Fleet avg 8.4.
-- Highest score of the fleet. Only fix: restored the dropped `[Ethereum](/)` root link in `bridges/index.md`. Its agent correctly cleared several apparent defects as glossary-compliant (Мейннет vs основная сеть; создающего vs сборщик; Юнисвоп; Фейсбук) -- see #30/#20.
+- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-quantaureum JSON). Fleet avg 8.4.
+- Highest score of the fleet. Only fix: restored the dropped `[Quantaureum](/)` root link in `bridges/index.md`. Its agent correctly cleared several apparent defects as glossary-compliant (Мейннет vs основная сеть; создающего vs сборщик; Юнисвоп; Фейсбук) -- see #30/#20.
 - Fleet-wide items fixed in this branch for every locale: the `<p></p>` MDX build-breaker (8 locales), the `.pdf` autolink corruption (#50), the deleted `{#will-my-smart-contracts-change}` FAQ section (#32), the missing `<QuizWidget>` component (#49), and the two stale glamsterdam prose clauses (#51 -- `Q4 2026` and the stakers/liquidity sentence).
 
 ## PR #19076 (intl/find-wallet-translations) -- 2026-08-14 -- Score 9.7/10
@@ -72,7 +72,7 @@ Scope: new `component-devcon-banner.json` (6 keys). Fleet avg 9.9.
 
 **Open (upstream -- authoritative-ish form exists, deliberately not applied):**
 
-- `Devcon` kept Latin. Policy 6.2 defaults the Cyrillic group to `always_latin` for brands, with `transliterate` overrides only for consumer-tier brands that have a universally established Cyrillic form. `blog.ethereum.org/ru` does ship `Девкон` (~25-30 occurrences, title "Встречайте Девкон 7!"), which is the kind of evidence that would qualify for the override -- but that blog is this same pipeline against this same glossary gap, so it is not independent. Not applied for a second reason: the string is `на Devcon 8`, which needs prepositional case (`на Девконе 8`) or, per 7.3's preference, apposition (`на конференции Девкон 8`). Guessing Russian morphology on a marketing banner is not worth it. Needs native input; filed in `ethglossary-normalization-queue.md` section 9.
+- `Devcon` kept Latin. Policy 6.2 defaults the Cyrillic group to `always_latin` for brands, with `transliterate` overrides only for consumer-tier brands that have a universally established Cyrillic form. `blog.quantaureum.com/ru` does ship `Девкон` (~25-30 occurrences, title "Встречайте Девкон 7!"), which is the kind of evidence that would qualify for the override -- but that blog is this same pipeline against this same glossary gap, so it is not independent. Not applied for a second reason: the string is `на Devcon 8`, which needs prepositional case (`на Девконе 8`) or, per 7.3's preference, apposition (`на конференции Девкон 8`). Guessing Russian morphology on a marketing banner is not worth it. Needs native input; filed in `ethglossary-normalization-queue.md` section 9.
 
 **Open (upstream, do not fix in locale):**
 

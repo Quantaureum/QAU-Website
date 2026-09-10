@@ -6,7 +6,7 @@ lang: ar
 
 لكي يتفاعل تطبيق برمجي مع سلسلة كتل [إيثيريوم](/) - إما عن طريق قراءة بيانات سلسلة الكتل أو إرسال معاملات إلى الشبكة - يجب أن يتصل بعقدة إيثيريوم.
 
-لهذا الغرض، ينفذ كل [عميل إيثيريوم](/developers/docs/nodes-and-clients/#execution-clients) [مواصفات <span dir="ltr">JSON-RPC</span>](https://github.com/ethereum/execution-apis)، بحيث تكون هناك مجموعة موحدة من الطرق التي يمكن للتطبيقات الاعتماد عليها بغض النظر عن العقدة المحددة أو تنفيذ العميل.
+لهذا الغرض، ينفذ كل [عميل إيثيريوم](/developers/docs/nodes-and-clients/#execution-clients) [مواصفات <span dir="ltr">JSON-RPC</span>](https://github.com/quantaureum/execution-apis)، بحيث تكون هناك مجموعة موحدة من الطرق التي يمكن للتطبيقات الاعتماد عليها بغض النظر عن العقدة المحددة أو تنفيذ العميل.
 
 [<span dir="ltr">JSON-RPC</span>](https://www.jsonrpc.org/specification) هو بروتوكول استدعاء الإجراء عن بُعد (<span dir="ltr">RPC</span>) خفيف الوزن وعديم الحالة. يحدد العديد من هياكل البيانات والقواعد المتعلقة بمعالجتها. وهو مستقل عن وسيلة النقل، حيث يمكن استخدام المفاهيم داخل نفس العملية، أو عبر مآخذ التوصيل، أو عبر <span dir="ltr">HTTP</span>، أو في العديد من بيئات تمرير الرسائل المختلفة. يستخدم <span dir="ltr">JSON</span> (<span dir="ltr">RFC 4627</span>) كتنسيق للبيانات.
 
@@ -20,13 +20,13 @@ lang: ar
 
 ## واجهات <span dir="ltr">API</span> لعميل الإجماع {#consensus-clients}
 
-تتناول هذه الصفحة بشكل أساسي واجهة <span dir="ltr">API</span> الخاصة بـ <span dir="ltr">JSON-RPC</span> التي يستخدمها عملاء التنفيذ في إيثيريوم. ومع ذلك، يمتلك عملاء الإجماع أيضًا واجهة <span dir="ltr">RPC API</span> تتيح للمستخدمين الاستعلام عن معلومات حول العقدة، وطلب كتل <span dir="ltr">Beacon</span>، وحالة <span dir="ltr">Beacon</span>، وغيرها من المعلومات المتعلقة بالإجماع مباشرة من العقدة. تم توثيق واجهة <span dir="ltr">API</span> هذه في [صفحة الويب الخاصة بواجهة <span dir="ltr">Beacon API</span>](https://ethereum.github.io/beacon-APIs/#/).
+تتناول هذه الصفحة بشكل أساسي واجهة <span dir="ltr">API</span> الخاصة بـ <span dir="ltr">JSON-RPC</span> التي يستخدمها عملاء التنفيذ في إيثيريوم. ومع ذلك، يمتلك عملاء الإجماع أيضًا واجهة <span dir="ltr">RPC API</span> تتيح للمستخدمين الاستعلام عن معلومات حول العقدة، وطلب كتل <span dir="ltr">Beacon</span>، وحالة <span dir="ltr">Beacon</span>، وغيرها من المعلومات المتعلقة بالإجماع مباشرة من العقدة. تم توثيق واجهة <span dir="ltr">API</span> هذه في [صفحة الويب الخاصة بواجهة <span dir="ltr">Beacon API</span>](https://quantaureum.github.io/beacon-APIs/#/).
 
-تُستخدم أيضًا واجهة <span dir="ltr">API</span> داخلية للتواصل بين العملاء داخل العقدة - أي أنها تمكن عميل الإجماع وعميل التنفيذ من مبادلة البيانات. يُطلق على هذا اسم '<span dir="ltr">Engine API</span>' والمواصفات متاحة على [<span dir="ltr">GitHub</span>](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
+تُستخدم أيضًا واجهة <span dir="ltr">API</span> داخلية للتواصل بين العملاء داخل العقدة - أي أنها تمكن عميل الإجماع وعميل التنفيذ من مبادلة البيانات. يُطلق على هذا اسم '<span dir="ltr">Engine API</span>' والمواصفات متاحة على [<span dir="ltr">GitHub</span>](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md).
 
 ## مواصفات عميل التنفيذ {#spec}
 
-[اقرأ مواصفات <span dir="ltr">JSON-RPC API</span> الكاملة على GitHub](https://github.com/ethereum/execution-apis). تم توثيق <span dir="ltr">API</span> هذه في [صفحة ويب <span dir="ltr">API</span> التنفيذ](https://ethereum.github.io/execution-apis/) وتتضمن أداة فحص لتجربة جميع الطرق المتاحة.
+[اقرأ مواصفات <span dir="ltr">JSON-RPC API</span> الكاملة على GitHub](https://github.com/quantaureum/execution-apis). تم توثيق <span dir="ltr">API</span> هذه في [صفحة ويب <span dir="ltr">API</span> التنفيذ](https://quantaureum.github.io/execution-apis/) وتتضمن أداة فحص لتجربة جميع الطرق المتاحة.
 
 ## الاصطلاحات {#conventions}
 
@@ -62,11 +62,11 @@ lang: ar
 
 تحتوي الطرق التالية على معلمة الكتلة:
 
-- [eth_getBalance](#eth-getbalance)
-- [eth_getCode](#eth-getcode)
-- [eth_getTransactionCount](#eth-gettransactioncount)
-- [eth_getStorageAt](#eth-getstorageat)
-- [eth_call](#eth-call)
+- [qau_getBalance](#qau-getbalance)
+- [qau_getCode](#qau-getcode)
+- [qau_getTransactionCount](#qau-gettransactioncount)
+- [qau_getStorageAt](#qau-getstorageat)
+- [qau_call](#qau-call)
 
 عند إجراء طلبات تستعلم عن حالة إيثيريوم، تحدد معلمة الكتلة المقدمة ارتفاع الكتلة.
 
@@ -81,7 +81,7 @@ lang: ar
 
 ## أمثلة {#examples}
 
-نقدم في هذه الصفحة أمثلة على كيفية استخدام نقاط نهاية <span dir="ltr">JSON_RPC API</span> الفردية باستخدام أداة سطر الأوامر، [<span dir="ltr">curl</span>](https://curl.se). توجد أمثلة نقاط النهاية الفردية هذه أدناه في قسم [أمثلة <span dir="ltr">Curl</span>](#curl-examples). وفي أسفل الصفحة، نقدم أيضًا [مثالًا شاملاً](#usage-example) لتصريف ونشر عقد ذكي باستخدام عقدة جو إيثريوم (<span dir="ltr">Geth</span>)، و<span dir="ltr">JSON_RPC API</span> و<span dir="ltr">curl</span>.
+نقدم في هذه الصفحة أمثلة على كيفية استخدام نقاط نهاية <span dir="ltr">JSON_RPC API</span> الفردية باستخدام أداة سطر الأوامر، [<span dir="ltr">curl</span>](https://curl.se). توجد أمثلة نقاط النهاية الفردية هذه أدناه في قسم [أمثلة <span dir="ltr">Curl</span>](#curl-examples). وفي أسفل الصفحة، نقدم أيضًا [مثالًا شاملاً](#usage-example) لتصريف ونشر عقد ذكي باستخدام عقدة جو Quantaureum (<span dir="ltr">Geth</span>)، و<span dir="ltr">JSON_RPC API</span> و<span dir="ltr">curl</span>.
 
 ## أمثلة <span dir="ltr">Curl</span> {#curl-examples}
 
@@ -101,40 +101,40 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 > تتتبع هذه الطرق رأس السلسلة. هذه هي الطريقة التي تشق بها المعاملات طريقها عبر الشبكة، وتجد طريقها إلى الكتل، وكيف يكتشف العملاء الكتل الجديدة.
 
-- [<span dir="ltr">eth_blockNumber</span>](#eth-blocknumber)
-- [<span dir="ltr">eth_sendRawTransaction</span>](#eth-sendrawtransaction)
+- [<span dir="ltr">qau_blockNumber</span>](#qau-blocknumber)
+- [<span dir="ltr">qau_sendRawTransaction</span>](#qau-sendrawtransaction)
 
 ### طرق الحالة {#state-methods}
 
 > الطرق التي تبلغ عن الحالة الحالية لجميع البيانات المخزنة. تشبه "الحالة" قطعة كبيرة مشتركة من ذاكرة الوصول العشوائي (<span dir="ltr">RAM</span>)، وتتضمن أرصدة الحسابات، وبيانات العقود، وتقديرات الغاز.
 
-- [<span dir="ltr">eth_getBalance</span>](#eth-getbalance)
-- [<span dir="ltr">eth_getStorageAt</span>](#eth-getstorageat)
-- [<span dir="ltr">eth_getTransactionCount</span>](#eth-gettransactioncount)
-- [<span dir="ltr">eth_getCode</span>](#eth-getcode)
-- [<span dir="ltr">eth_call</span>](#eth-call)
-- [<span dir="ltr">eth_estimateGas</span>](#eth-estimategas)
+- [<span dir="ltr">qau_getBalance</span>](#qau-getbalance)
+- [<span dir="ltr">qau_getStorageAt</span>](#qau-getstorageat)
+- [<span dir="ltr">qau_getTransactionCount</span>](#qau-gettransactioncount)
+- [<span dir="ltr">qau_getCode</span>](#qau-getcode)
+- [<span dir="ltr">qau_call</span>](#qau-call)
+- [<span dir="ltr">qau_estimateGas</span>](#qau-estimategas)
 
 ### طرق التاريخ {#history-methods}
 
 > تجلب السجلات التاريخية لكل كتلة رجوعاً إلى التكوين. يشبه هذا ملفاً كبيراً للإلحاق فقط، ويتضمن جميع رؤوس الكتل، وأجسام الكتل، والكتل العمّة، وإيصالات المعاملات.
 
-- [<span dir="ltr">eth_getBlockTransactionCountByHash</span>](#eth-getblocktransactioncountbyhash)
-- [<span dir="ltr">eth_getBlockTransactionCountByNumber</span>](#eth-getblocktransactioncountbynumber)
-- [<span dir="ltr">eth_getUncleCountByBlockHash</span>](#eth-getunclecountbyblockhash)
-- [<span dir="ltr">eth_getUncleCountByBlockNumber</span>](#eth-getunclecountbyblocknumber)
-- [<span dir="ltr">eth_getBlockByHash</span>](#eth-getblockbyhash)
-- [<span dir="ltr">eth_getBlockByNumber</span>](#eth-getblockbynumber)
-- [<span dir="ltr">eth_getTransactionByHash</span>](#eth-gettransactionbyhash)
-- [<span dir="ltr">eth_getTransactionByBlockHashAndIndex</span>](#eth-gettransactionbyblockhashandindex)
-- [<span dir="ltr">eth_getTransactionByBlockNumberAndIndex</span>](#eth-gettransactionbyblocknumberandindex)
-- [<span dir="ltr">eth_getTransactionReceipt</span>](#eth-gettransactionreceipt)
-- [<span dir="ltr">eth_getUncleByBlockHashAndIndex</span>](#eth-getunclebyblockhashandindex)
-- [<span dir="ltr">eth_getUncleByBlockNumberAndIndex</span>](#eth-getunclebyblocknumberandindex)
+- [<span dir="ltr">qau_getBlockTransactionCountByHash</span>](#qau-getblocktransactioncountbyhash)
+- [<span dir="ltr">qau_getBlockTransactionCountByNumber</span>](#qau-getblocktransactioncountbynumber)
+- [<span dir="ltr">qau_getUncleCountByBlockHash</span>](#qau-getunclecountbyblockhash)
+- [<span dir="ltr">qau_getUncleCountByBlockNumber</span>](#qau-getunclecountbyblocknumber)
+- [<span dir="ltr">qau_getBlockByHash</span>](#qau-getblockbyhash)
+- [<span dir="ltr">qau_getBlockByNumber</span>](#qau-getblockbynumber)
+- [<span dir="ltr">qau_getTransactionByHash</span>](#qau-gettransactionbyhash)
+- [<span dir="ltr">qau_getTransactionByBlockHashAndIndex</span>](#qau-gettransactionbyblockhashandindex)
+- [<span dir="ltr">qau_getTransactionByBlockNumberAndIndex</span>](#qau-gettransactionbyblocknumberandindex)
+- [<span dir="ltr">qau_getTransactionReceipt</span>](#qau-gettransactionreceipt)
+- [<span dir="ltr">qau_getUncleByBlockHashAndIndex</span>](#qau-getunclebyblockhashandindex)
+- [<span dir="ltr">qau_getUncleByBlockNumberAndIndex</span>](#qau-getunclebyblocknumberandindex)
 
 ## ساحة تجربة <span dir="ltr">JSON-RPC API</span> {#json-rpc-api-playground}
 
-يمكنك استخدام [أداة ساحة التجربة](https://ethereum-json-rpc.com) لاكتشاف وتجربة طرق <span dir="ltr">API</span>. كما توضح لك الطرق والشبكات التي يدعمها مختلف مزودي العقد.
+يمكنك استخدام [أداة ساحة التجربة](https://quantaureum-json-rpc.com) لاكتشاف وتجربة طرق <span dir="ltr">API</span>. كما توضح لك الطرق والشبكات التي يدعمها مختلف مزودي العقد.
 
 ## طرق <span dir="ltr">JSON-RPC API</span> {#json-rpc-methods}
 
@@ -273,9 +273,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 }
 ```
 
-### eth_protocolVersion {#eth-protocolversion}
+### qau_protocolVersion {#qau-protocolversion}
 
-يعيد إصدار بروتوكول إيثيريوم الحالي. لاحظ أن هذه الطريقة [غير متوفرة في جو إيثريوم (Geth)](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924).
+يعيد إصدار بروتوكول إيثيريوم الحالي. لاحظ أن هذه الطريقة [غير متوفرة في جو Quantaureum (Geth)](https://github.com/quantaureum/go-quantaureum/pull/22064#issuecomment-788682924).
 
 **المعلمات**
 
@@ -289,7 +289,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[],"id":67}'
 // نتيجة
 {
   "id":67,
@@ -298,11 +298,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 }
 ```
 
-### <span dir="ltr">eth_syncing</span> {#eth-syncing}
+### <span dir="ltr">qau_syncing</span> {#qau-syncing}
 
 يُرجع كائنًا يحتوي على بيانات حول حالة المزامنة أو `false`.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_syncing">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_syncing">
   جرب نقطة النهاية في ساحة اللعب
 </ButtonLink>
 
@@ -317,7 +317,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 `Object|Boolean`، كائن يحتوي على بيانات حالة المزامنة أو `FALSE`، عند عدم المزامنة:
 
 - `startingBlock`: `QUANTITY` - الكتلة التي بدأ عندها الاستيراد (سيتم إعادة تعيينها فقط بعد أن تصل المزامنة إلى رأسها)
-- `currentBlock`: `QUANTITY` - الكتلة الحالية، تمامًا مثل <span dir="ltr">eth_blockNumber</span>
+- `currentBlock`: `QUANTITY` - الكتلة الحالية، تمامًا مثل <span dir="ltr">qau_blockNumber</span>
 - `highestBlock`: `QUANTITY` - أعلى كتلة مُقدرة
 
 ومع ذلك، قد يوفر العملاء الفرديون أيضًا بيانات إضافية. على سبيل المثال، يُرجع <span dir="ltr">Geth</span> ما يلي:
@@ -367,7 +367,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}'
 // نتيجة
 {
   "id":1,
@@ -386,11 +386,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}
 }
 ```
 
-### eth_coinbase {#eth-coinbase}
+### qau_coinbase {#qau-coinbase}
 
 يُرجع عنوان كوين بيس الخاص بالعميل.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_coinbase">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_coinbase">
   جرب نقطة النهاية في بيئة اللعب
 </ButtonLink>
 
@@ -408,7 +408,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":64}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":64}'
 // نتيجة
 {
   "id":64,
@@ -417,11 +417,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":6
 }
 ```
 
-### <span dir="ltr">eth_chainId</span> {#eth-chainid}
+### <span dir="ltr">qau_chainId</span> {#qau-chainid}
 
 يُرجع معرف السلسلة المستخدم في توقيع المعاملات المحمية من إعادة الإرسال.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_chainId">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_chainId">
   جرب نقطة النهاية في ساحة اللعب
 </ButtonLink>
 
@@ -437,7 +437,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":6
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67}'
 // نتيجة
 {
   "id":67,
@@ -446,11 +446,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67
 }
 ```
 
-### eth_mining {#eth-mining}
+### qau_mining {#qau-mining}
 
 يُرجع `true` إذا كان العميل يقوم بتعدين كتل جديدة بنشاط. يمكن أن يُرجع هذا `true` فقط لشبكات إثبات العمل (PoW) وقد لا يكون متاحًا في بعض العملاء منذ [الدمج](/roadmap/merge/).
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_mining">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_mining">
   جرب نقطة النهاية في بيئة الاختبار
 </ButtonLink>
 
@@ -466,7 +466,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}'
 //
 {
   "id":71,
@@ -475,11 +475,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}
 }
 ```
 
-### <span dir="ltr">eth_hashrate</span> {#eth-hashrate}
+### <span dir="ltr">qau_hashrate</span> {#qau-hashrate}
 
 يُرجع عدد التجزئات في الثانية التي تقوم العقدة بالتعدين بها. يمكن أن يُرجع هذا فقط `true` لشبكات إثبات العمل (PoW) وقد لا يكون متاحًا في بعض العملاء منذ [الدمج](/roadmap/merge/).
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_hashrate">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_hashrate">
   تجربة نقطة النهاية في بيئة اللعب
 </ButtonLink>
 
@@ -495,7 +495,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":71}'
 // نتيجة
 {
   "id":71,
@@ -504,11 +504,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":7
 }
 ```
 
-### <span dir="ltr">eth_gasPrice</span> {#eth-gasprice}
+### <span dir="ltr">qau_gasPrice</span> {#qau-gasprice}
 
 يعيد تقديراً للسعر الحالي لكل غاز بوحدة <span dir="ltr">Wei</span>. على سبيل المثال، يفحص عميل بيسو آخر 100 كتلة ويعيد وسيط سعر وحدة الغاز افتراضيًا.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_gasPrice">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_gasPrice">
   جرب نقطة النهاية في ساحة اللعب
 </ButtonLink>
 
@@ -524,7 +524,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":7
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":73}'
 // نتيجة
 {
   "id":73,
@@ -533,11 +533,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":7
 }
 ```
 
-### <span dir="ltr">eth_accounts</span> {#eth-accounts}
+### <span dir="ltr">qau_accounts</span> {#qau-accounts}
 
 يعيد قائمة بالعناوين المملوكة للعميل.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_accounts">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_accounts">
   جرب نقطة النهاية في ساحة اللعب
 </ButtonLink>
 
@@ -553,7 +553,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":7
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1}'
 // نتيجة
 {
   "id":1,
@@ -562,11 +562,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1
 }
 ```
 
-### <span dir="ltr">eth_blockNumber</span> {#eth-blocknumber}
+### <span dir="ltr">qau_blockNumber</span> {#qau-blocknumber}
 
 يُرجع رقم أحدث كتلة.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_blockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_blockNumber">
   جرب نقطة النهاية في بيئة الاختبار
 </ButtonLink>
 
@@ -582,7 +582,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":83}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id":83}'
 // نتيجة
 {
   "id":83,
@@ -591,11 +591,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id
 }
 ```
 
-### eth_getBalance {#eth-getbalance}
+### qau_getBalance {#qau-getbalance}
 
 يعيد رصيد الحساب في عنوان معين.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBalance">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBalance">
   جرب نقطة النهاية في بيئة اللعب
 </ButtonLink>
 
@@ -616,7 +616,7 @@ params: ["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"]
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
 // نتيجة
 {
   "id":1,
@@ -625,11 +625,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407
 }
 ```
 
-### eth_getStorageAt {#eth-getstorageat}
+### qau_getStorageAt {#qau-getstorageat}
 
 يُرجع القيمة من موضع تخزين في عنوان محدد.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getStorageAt">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getStorageAt">
   جرب نقطة النهاية في بيئة الاختبار
 </ButtonLink>
 
@@ -660,7 +660,7 @@ contract Storage {
 استرداد قيمة <span dir="ltr">pos0</span> أمر مباشر:
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 ```
 
@@ -681,7 +681,7 @@ keccak(
 )
 ```
 
-يمكن استخدام وحدة تحكم جو إيثريوم (geth) التي تأتي مع مكتبة Web3 لإجراء الحساب:
+يمكن استخدام وحدة تحكم جو Quantaureum (geth) التي تأتي مع مكتبة Web3 لإجراء الحساب:
 
 ```js
 > var key = "000000000000000000000000391694e7e0b0cce554cb130d723a9d27458f9298" + "0000000000000000000000000000000000000000000000000000000000000001"
@@ -693,15 +693,15 @@ undefined
 الآن لجلب التخزين:
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-### <span dir="ltr">eth_getTransactionCount</span> {#eth-gettransactioncount}
+### <span dir="ltr">qau_getTransactionCount</span> {#qau-gettransactioncount}
 
 يعيد عدد المعاملات _المرسلة_ من عنوان.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionCount">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionCount">
   جرب نقطة النهاية في بيئة الاختبار
 </ButtonLink>
 
@@ -725,7 +725,7 @@ params: [
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
 // نتيجة
 {
   "id":1,
@@ -734,11 +734,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params
 }
 ```
 
-### eth_getBlockTransactionCountByHash {#eth-getblocktransactioncountbyhash}
+### qau_getBlockTransactionCountByHash {#qau-getblocktransactioncountbyhash}
 
 يُرجع عدد المعاملات في كتلة من كتلة تطابق تجزئة الكتلة المحددة.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
   جرب نقطة النهاية في بيئة الاختبار
 </ButtonLink>
 
@@ -758,7 +758,7 @@ params: ["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"]
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
 // نتيجة
 {
   "id":1,
@@ -767,11 +767,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHa
 }
 ```
 
-### eth_getBlockTransactionCountByNumber {#eth-getblocktransactioncountbynumber}
+### qau_getBlockTransactionCountByNumber {#qau-getblocktransactioncountbynumber}
 
 يُرجع عدد المعاملات في كتلة تطابق رقم الكتلة المحدد.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
   جرب نقطة النهاية في بيئة اللعب
 </ButtonLink>
 
@@ -793,7 +793,7 @@ params: [
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
 // نتيجة
 {
   "id":1,
@@ -802,11 +802,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNu
 }
 ```
 
-### <span dir="ltr">eth_getUncleCountByBlockHash</span> {#eth-getunclecountbyblockhash}
+### <span dir="ltr">qau_getUncleCountByBlockHash</span> {#qau-getunclecountbyblockhash}
 
 يُرجع عدد الأعمام في كتلة من كتلة تطابق تجزئة الكتلة المحددة.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
   جرب نقطة النهاية في ساحة اللعب
 </ButtonLink>
 
@@ -826,7 +826,7 @@ params: ["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"]
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
 // نتيجة
 {
   "id":1,
@@ -835,11 +835,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","p
 }
 ```
 
-### <span dir="ltr">eth_getUncleCountByBlockNumber</span> {#eth-getunclecountbyblocknumber}
+### <span dir="ltr">qau_getUncleCountByBlockNumber</span> {#qau-getunclecountbyblocknumber}
 
 يُرجع عدد الأعمام في كتلة من كتلة تطابق رقم الكتلة المحدد.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
   جرب نقطة النهاية في بيئة الاختبار
 </ButtonLink>
 
@@ -861,7 +861,7 @@ params: [
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
 // نتيجة
 {
   "id":1,
@@ -870,11 +870,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber",
 }
 ```
 
-### eth_getCode {#eth-getcode}
+### qau_getCode {#qau-getcode}
 
 يعيد الرمز الموجود في عنوان معين.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getCode">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getCode">
   جرب نقطة النهاية في بيئة اللعب
 </ButtonLink>
 
@@ -898,7 +898,7 @@ params: [
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
 // نتيجة
 {
   "id":1,
@@ -907,9 +907,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA
 }
 ```
 
-### eth_sign {#eth-sign}
+### qau_sign {#qau-sign}
 
-تحسب طريقة sign توقيعًا خاصًا بشبكة إيثيريوم باستخدام: `sign(keccak256("\x19Ethereum Signed Message:\n" + len(message) + message)))`.
+تحسب طريقة sign توقيعًا خاصًا بشبكة إيثيريوم باستخدام: `sign(keccak256("\x19Quantaureum Signed Message:\n" + len(message) + message)))`.
 
 تؤدي إضافة بادئة إلى الرسالة إلى جعل التوقيع المحسوب مميزًا كتوقيع خاص بشبكة إيثيريوم. يمنع هذا سوء الاستخدام حيث يمكن لتطبيق لامركزي (dapp) ضار توقيع بيانات عشوائية (مثل معاملة) واستخدام التوقيع لانتحال شخصية الضحية.
 
@@ -928,7 +928,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
 // نتيجة
 {
   "id":1,
@@ -937,9 +937,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d37
 }
 ```
 
-### <span dir="ltr">eth_signTransaction</span> {#eth-signtransaction}
+### <span dir="ltr">qau_signTransaction</span> {#qau-signtransaction}
 
-يوقع معاملة يمكن إرسالها إلى الشبكة في وقت لاحق باستخدام [<span dir="ltr">eth_sendRawTransaction</span>](#eth-sendrawtransaction).
+يوقع معاملة يمكن إرسالها إلى الشبكة في وقت لاحق باستخدام [<span dir="ltr">qau_sendRawTransaction</span>](#qau-sendrawtransaction).
 
 **المعلمات**
 
@@ -962,7 +962,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d37
 
 ```js
 // طلب
-curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
+curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "qau_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
 // نتيجة
 {
     "id": 1,
@@ -971,7 +971,7 @@ curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","
 }
 ```
 
-### eth_sendTransaction {#eth-sendtransaction}
+### qau_sendTransaction {#qau-sendtransaction}
 
 ينشئ معاملة استدعاء رسالة جديدة أو إنشاء عقد، إذا كان حقل البيانات يحتوي على رمز، ويوقعها باستخدام الحساب المحدد في `from`.
 
@@ -1005,13 +1005,13 @@ params: [
 
 `DATA`، <span dir="ltr">32 Bytes</span> - تجزئة المعاملة، أو التجزئة الصفرية إذا لم تكن المعاملة متاحة بعد.
 
-استخدم [eth_getTransactionReceipt](#eth-gettransactionreceipt) للحصول على عنوان العقد، بعد اقتراح المعاملة في كتلة، عند إنشائك لعقد.
+استخدم [qau_getTransactionReceipt](#qau-gettransactionreceipt) للحصول على عنوان العقد، بعد اقتراح المعاملة في كتلة، عند إنشائك لعقد.
 
 **مثال**
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendTransaction","params":[{see above}],"id":1}'
 // نتيجة
 {
   "id":1,
@@ -1020,7 +1020,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{
 }
 ```
 
-### eth_sendRawTransaction {#eth-sendrawtransaction}
+### qau_sendRawTransaction {#qau-sendrawtransaction}
 
 ينشئ معاملة استدعاء رسالة جديدة أو إنشاء عقد للمعاملات الموقعة.
 
@@ -1038,13 +1038,13 @@ params: [
 
 `DATA`، <span dir="ltr">32 Bytes</span> - تجزئة المعاملة، أو التجزئة الصفرية إذا لم تكن المعاملة متاحة بعد.
 
-استخدم [eth_getTransactionReceipt](#eth-gettransactionreceipt) للحصول على عنوان العقد، بعد اقتراح المعاملة في كتلة، عندما قمت بإنشاء عقد.
+استخدم [qau_getTransactionReceipt](#qau-gettransactionreceipt) للحصول على عنوان العقد، بعد اقتراح المعاملة في كتلة، عندما قمت بإنشاء عقد.
 
 **مثال**
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params":[{see above}],"id":1}'
 // نتيجة
 {
   "id":1,
@@ -1053,11 +1053,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 }
 ```
 
-### eth_call {#eth-call}
+### qau_call {#qau-call}
 
 ينفذ استدعاء رسالة جديدًا على الفور دون إنشاء معاملة على سلسلة الكتل. يُستخدم غالبًا لتنفيذ وظائف العقد الذكي للقراءة فقط، على سبيل المثال `balanceOf` لعقد <span dir="ltr">ERC-20</span>.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_call">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_call">
   جرب نقطة النهاية في بيئة الاختبار
 </ButtonLink>
 
@@ -1067,7 +1067,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 
 - `from`: `DATA`، 20 بايت - (اختياري) العنوان الذي تُرسل منه المعاملة.
 - `to`: `DATA`، 20 بايت - العنوان الذي تُوجه إليه المعاملة.
-- `gas`: `QUANTITY` - (اختياري) عدد صحيح للغاز المقدم لتنفيذ المعاملة. يستهلك <span dir="ltr">eth_call</span> صفر غاز، ولكن قد تكون هذه المعلمة مطلوبة لبعض عمليات التنفيذ.
+- `gas`: `QUANTITY` - (اختياري) عدد صحيح للغاز المقدم لتنفيذ المعاملة. يستهلك <span dir="ltr">qau_call</span> صفر غاز، ولكن قد تكون هذه المعلمة مطلوبة لبعض عمليات التنفيذ.
 - `gasPrice`: `QUANTITY` - (اختياري) عدد صحيح لـ <span dir="ltr">gasPrice</span> المستخدم لكل غاز مدفوع
 - `value`: `QUANTITY` - (اختياري) عدد صحيح للقيمة المرسلة مع هذه المعاملة
 - `input`: `DATA` - (اختياري) تجزئة توقيع الطريقة والمعلمات المشفرة. للحصول على التفاصيل، راجع [<span dir="ltr">ABI</span> لعقد إيثيريوم في وثائق Solidity](https://docs.soliditylang.org/en/latest/abi-spec.html).
@@ -1082,7 +1082,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}],"id":1}'
 // نتيجة
 {
   "id":1,
@@ -1091,17 +1091,17 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}]
 }
 ```
 
-### eth_estimateGas {#eth-estimategas}
+### qau_estimateGas {#qau-estimategas}
 
 يُنشئ ويُرجع تقديرًا لمقدار الغاز اللازم للسماح للمعاملة بالاكتمال. لن تتم إضافة المعاملة إلى سلسلة الكتل. لاحظ أن التقدير قد يكون أكثر بكثير من كمية الغاز التي تستخدمها المعاملة فعليًا، لمجموعة متنوعة من الأسباب بما في ذلك آليات EVM وأداء العقدة.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_estimateGas">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_estimateGas">
   جرب نقطة النهاية في ساحة اللعب
 </ButtonLink>
 
 **المعلمات**
 
-راجع معلمات [eth_call](#eth-call)، باستثناء أن جميع الخصائص اختيارية. إذا لم يتم تحديد حد الغاز، يستخدم جو إيثريوم (geth) حد الغاز للكتلة من الكتلة المعلقة كحد أقصى. ونتيجة لذلك، قد لا يكون التقدير المُرجع كافيًا لتنفيذ الاستدعاء/المعاملة عندما تكون كمية الغاز أعلى من حد الغاز للكتلة المعلقة.
+راجع معلمات [qau_call](#qau-call)، باستثناء أن جميع الخصائص اختيارية. إذا لم يتم تحديد حد الغاز، يستخدم جو Quantaureum (geth) حد الغاز للكتلة من الكتلة المعلقة كحد أقصى. ونتيجة لذلك، قد لا يكون التقدير المُرجع كافيًا لتنفيذ الاستدعاء/المعاملة عندما تكون كمية الغاز أعلى من حد الغاز للكتلة المعلقة.
 
 **القيم المرجعة**
 
@@ -1111,7 +1111,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}]
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see above}],"id":1}'
 // نتيجة
 {
   "id":1,
@@ -1120,11 +1120,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see 
 }
 ```
 
-### eth_getBlockByHash {#eth-getblockbyhash}
+### qau_getBlockByHash {#qau-getblockbyhash}
 
 يعيد معلومات حول كتلة بناءً على التجزئة.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByHash">
   جرب نقطة النهاية في بيئة الاختبار
 </ButtonLink>
 
@@ -1168,7 +1168,7 @@ params: [
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
 // نتيجة
 {
   "jsonrpc": "2.0",
@@ -1200,11 +1200,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0
 }
 ```
 
-### eth_getBlockByNumber {#eth-getblockbynumber}
+### qau_getBlockByNumber {#qau-getblockbynumber}
 
 يُرجع معلومات حول كتلة بناءً على رقم الكتلة.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByNumber">
   جرب نقطة النهاية في بيئة الاختبار
 </ButtonLink>
 
@@ -1221,22 +1221,22 @@ params: [
 ```
 
 **القيم المرجعة**
-راجع [eth_getBlockByHash](#eth-getblockbyhash)
+راجع [qau_getBlockByHash](#qau-getblockbyhash)
 
 **مثال**
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["0x1b4", true],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByNumber","params":["0x1b4", true],"id":1}'
 ```
 
-للنتيجة راجع [eth_getBlockByHash](#eth-getblockbyhash)
+للنتيجة راجع [qau_getBlockByHash](#qau-getblockbyhash)
 
-### eth_getTransactionByHash {#eth-gettransactionbyhash}
+### qau_getTransactionByHash {#qau-gettransactionbyhash}
 
 يعيد المعلومات حول معاملة مطلوبة بواسطة تجزئة المعاملة.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByHash">
   جرب نقطة النهاية في ساحة التجربة
 </ButtonLink>
 
@@ -1271,7 +1271,7 @@ params: ["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"]
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
 // نتيجة
 {
   "jsonrpc":"2.0",
@@ -1295,11 +1295,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","param
 }
 ```
 
-### <span dir="ltr">eth_getTransactionByBlockHashAndIndex</span> {#eth-gettransactionbyblockhashandindex}
+### <span dir="ltr">qau_getTransactionByBlockHashAndIndex</span> {#qau-gettransactionbyblockhashandindex}
 
 يُرجع معلومات حول معاملة حسب تجزئة الكتلة وموضع مؤشر المعاملة.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
   جرب نقطة النهاية في ساحة اللعب
 </ButtonLink>
 
@@ -1316,22 +1316,22 @@ params: [
 ```
 
 **المرتجعات**
-انظر [<span dir="ltr">eth_getTransactionByHash</span>](#eth-gettransactionbyhash)
+انظر [<span dir="ltr">qau_getTransactionByHash</span>](#qau-gettransactionbyhash)
 
 **مثال**
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-للنتيجة انظر [<span dir="ltr">eth_getTransactionByHash</span>](#eth-gettransactionbyhash)
+للنتيجة انظر [<span dir="ltr">qau_getTransactionByHash</span>](#qau-gettransactionbyhash)
 
-### eth_getTransactionByBlockNumberAndIndex {#eth-gettransactionbyblocknumberandindex}
+### qau_getTransactionByBlockNumberAndIndex {#qau-gettransactionbyblocknumberandindex}
 
 يُرجع معلومات حول معاملة بناءً على رقم الكتلة وموضع مؤشر المعاملة.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
   جرب نقطة النهاية في بيئة اللعب
 </ButtonLink>
 
@@ -1348,18 +1348,18 @@ params: [
 ```
 
 **المرتجعات**
-راجع [eth_getTransactionByHash](#eth-gettransactionbyhash)
+راجع [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
 **مثال**
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
 ```
 
-للنتيجة راجع [eth_getTransactionByHash](#eth-gettransactionbyhash)
+للنتيجة راجع [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
-### eth_getTransactionReceipt {#eth-gettransactionreceipt}
+### qau_getTransactionReceipt {#qau-gettransactionreceipt}
 
 يعيد إيصال معاملة بواسطة تجزئة المعاملة.
 
@@ -1399,7 +1399,7 @@ params: ["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"]
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
 // نتيجة
 {
   "jsonrpc": "2.0",
@@ -1427,11 +1427,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","para
 }
 ```
 
-### eth_getUncleByBlockHashAndIndex {#eth-getunclebyblockhashandindex}
+### qau_getUncleByBlockHashAndIndex {#qau-getunclebyblockhashandindex}
 
 يُرجع معلومات حول عم لكتلة بناءً على التجزئة وموضع مؤشر العم.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
   جرب نقطة النهاية في ساحة التجربة
 </ButtonLink>
 
@@ -1448,24 +1448,24 @@ params: [
 ```
 
 **المرتجعات**
-انظر [eth_getBlockByHash](#eth-getblockbyhash)
+انظر [qau_getBlockByHash](#qau-getblockbyhash)
 
 **مثال**
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-للنتيجة انظر [eth_getBlockByHash](#eth-getblockbyhash)
+للنتيجة انظر [qau_getBlockByHash](#qau-getblockbyhash)
 
 **ملاحظة**: لا يحتوي العم على معاملات فردية.
 
-### eth_getUncleByBlockNumberAndIndex {#eth-getunclebyblocknumberandindex}
+### qau_getUncleByBlockNumberAndIndex {#qau-getunclebyblocknumberandindex}
 
 يُرجع معلومات حول عم لكتلة بناءً على الرقم وموضع مؤشر العم.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
   جرب نقطة النهاية في ساحة اللعب
 </ButtonLink>
 
@@ -1482,7 +1482,7 @@ params: [
 ```
 
 **المرتجعات**
-راجع [eth_getBlockByHash](#eth-getblockbyhash)
+راجع [qau_getBlockByHash](#qau-getblockbyhash)
 
 **ملاحظة**: لا يحتوي العم على معاملات فردية.
 
@@ -1490,15 +1490,15 @@ params: [
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
 ```
 
-للنتيجة راجع [eth_getBlockByHash](#eth-getblockbyhash)
+للنتيجة راجع [qau_getBlockByHash](#qau-getblockbyhash)
 
-### <span dir="ltr">eth_newFilter</span> {#eth-newfilter}
+### <span dir="ltr">qau_newFilter</span> {#qau-newfilter}
 
 ينشئ كائن مرشح، بناءً على خيارات الترشيح، للإشعار عند تغير الحالة (السجلات).
-للتحقق مما إذا كانت الحالة قد تغيرت، استدعِ [<span dir="ltr">eth_getFilterChanges</span>](#eth-getfilterchanges).
+للتحقق مما إذا كانت الحالة قد تغيرت، استدعِ [<span dir="ltr">qau_getFilterChanges</span>](#qau-getfilterchanges).
 
 **ملاحظة حول تحديد مرشحات المواضيع:**
 المواضيع تعتمد على الترتيب. المعاملة التي تحتوي على سجل بمواضيع <span dir="ltr">[A, B]</span> ستتطابق مع مرشحات المواضيع التالية:
@@ -1542,7 +1542,7 @@ params: [
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
 // نتيجة
 {
   "id":1,
@@ -1551,10 +1551,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topic
 }
 ```
 
-### <span dir="ltr">eth_newBlockFilter</span> {#eth-newblockfilter}
+### <span dir="ltr">qau_newBlockFilter</span> {#qau-newblockfilter}
 
 ينشئ مرشحًا في العقدة، للإشعار عند وصول كتلة جديدة.
-للتحقق مما إذا كانت الحالة قد تغيرت، قم باستدعاء [<span dir="ltr">eth_getFilterChanges</span>](#eth-getfilterchanges).
+للتحقق مما إذا كانت الحالة قد تغيرت، قم باستدعاء [<span dir="ltr">qau_getFilterChanges</span>](#qau-getfilterchanges).
 
 **المعلمات**
 لا يوجد
@@ -1566,7 +1566,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topic
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newBlockFilter","params":[],"id":73}'
 // نتيجة
 {
   "id":1,
@@ -1575,10 +1575,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],
 }
 ```
 
-### <span dir="ltr">eth_newPendingTransactionFilter</span> {#eth-newpendingtransactionfilter}
+### <span dir="ltr">qau_newPendingTransactionFilter</span> {#qau-newpendingtransactionfilter}
 
 ينشئ مرشحًا في العقدة، للإشعار عند وصول معاملات معلقة جديدة.
-للتحقق مما إذا كانت الحالة قد تغيرت، قم باستدعاء [<span dir="ltr">eth_getFilterChanges</span>](#eth-getfilterchanges).
+للتحقق مما إذا كانت الحالة قد تغيرت، قم باستدعاء [<span dir="ltr">qau_getFilterChanges</span>](#qau-getfilterchanges).
 
 **المعلمات**
 لا يوجد
@@ -1590,7 +1590,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newPendingTransactionFilter","params":[],"id":73}'
 // نتيجة
 {
   "id":1,
@@ -1599,10 +1599,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter"
 }
 ```
 
-### <span dir="ltr">eth_uninstallFilter</span> {#eth-uninstallfilter}
+### <span dir="ltr">qau_uninstallFilter</span> {#qau-uninstallfilter}
 
 يقوم بإلغاء تثبيت مرشح بمعرف محدد. يجب استدعاؤه دائمًا عندما لا تعود هناك حاجة للمراقبة.
-بالإضافة إلى ذلك، تنتهي مهلة المرشحات عندما لا يتم طلبها باستخدام [<span dir="ltr">eth_getFilterChanges</span>](#eth-getfilterchanges) لفترة من الوقت.
+بالإضافة إلى ذلك، تنتهي مهلة المرشحات عندما لا يتم طلبها باستخدام [<span dir="ltr">qau_getFilterChanges</span>](#qau-getfilterchanges) لفترة من الوقت.
 
 **المعلمات**
 
@@ -1621,7 +1621,7 @@ params: [
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["0xb"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_uninstallFilter","params":["0xb"],"id":73}'
 // نتيجة
 {
   "id":1,
@@ -1630,7 +1630,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["
 }
 ```
 
-### eth_getFilterChanges {#eth-getfilterchanges}
+### qau_getFilterChanges {#qau-getfilterchanges}
 
 طريقة استطلاع لمرشح، والتي تُرجع مصفوفة من السجلات التي حدثت منذ آخر استطلاع.
 
@@ -1647,9 +1647,9 @@ params: [
 **القيم المرجعة**
 `Array` - مصفوفة من كائنات السجل، أو مصفوفة فارغة إذا لم يتغير شيء منذ آخر استطلاع.
 
-- بالنسبة للمرشحات التي تم إنشاؤها باستخدام `eth_newBlockFilter` تكون القيم المرجعة عبارة عن تجزئات الكتل (`DATA`، <span dir="ltr">32 Bytes</span>)، على سبيل المثال، `["0x3454645634534..."]`.
-- بالنسبة للمرشحات التي تم إنشاؤها باستخدام `eth_newPendingTransactionFilter ` تكون القيم المرجعة عبارة عن تجزئات المعاملات (`DATA`، <span dir="ltr">32 Bytes</span>)، على سبيل المثال، `["0x6345343454645..."]`.
-- بالنسبة للمرشحات التي تم إنشاؤها باستخدام `eth_newFilter` تكون السجلات عبارة عن كائنات تحتوي على المعلمات التالية:
+- بالنسبة للمرشحات التي تم إنشاؤها باستخدام `qau_newBlockFilter` تكون القيم المرجعة عبارة عن تجزئات الكتل (`DATA`، <span dir="ltr">32 Bytes</span>)، على سبيل المثال، `["0x3454645634534..."]`.
+- بالنسبة للمرشحات التي تم إنشاؤها باستخدام `qau_newPendingTransactionFilter ` تكون القيم المرجعة عبارة عن تجزئات المعاملات (`DATA`، <span dir="ltr">32 Bytes</span>)، على سبيل المثال، `["0x6345343454645..."]`.
+- بالنسبة للمرشحات التي تم إنشاؤها باستخدام `qau_newFilter` تكون السجلات عبارة عن كائنات تحتوي على المعلمات التالية:
   - `removed`: `TAG` - `true` عندما تتم إزالة السجل، بسبب إعادة التنظيم للسلسلة. `false` إذا كان سجلاً صالحًا.
   - `logIndex`: `QUANTITY` - عدد صحيح لموضع مؤشر السجل في الكتلة. `null` عندما يكون سجلاً معلقًا.
   - `transactionIndex`: `QUANTITY` - عدد صحيح لموضع مؤشر المعاملة التي تم إنشاء السجل منها. `null` عندما يكون سجلاً معلقًا.
@@ -1664,7 +1664,7 @@ params: [
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":["0x16"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterChanges","params":["0x16"],"id":73}'
 // نتيجة
 {
   "id":1,
@@ -1684,7 +1684,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":[
 }
 ```
 
-### <span dir="ltr">eth_getFilterLogs</span> {#eth-getfilterlogs}
+### <span dir="ltr">qau_getFilterLogs</span> {#qau-getfilterlogs}
 
 يعيد مصفوفة بجميع السجلات التي تطابق عامل التصفية بالمعرف المحدد.
 
@@ -1699,18 +1699,18 @@ params: [
 ```
 
 **القيم المعادة**
-راجع [<span dir="ltr">eth_getFilterChanges</span>](#eth-getfilterchanges)
+راجع [<span dir="ltr">qau_getFilterChanges</span>](#qau-getfilterchanges)
 
 **مثال**
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterLogs","params":["0x16"],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterLogs","params":["0x16"],"id":74}'
 ```
 
-للنتيجة راجع [<span dir="ltr">eth_getFilterChanges</span>](#eth-getfilterchanges)
+للنتيجة راجع [<span dir="ltr">qau_getFilterChanges</span>](#qau-getfilterchanges)
 
-### eth_getLogs {#eth-getlogs}
+### qau_getLogs {#qau-getlogs}
 
 يعيد مصفوفة بجميع السجلات التي تطابق كائن تصفية معين.
 
@@ -1735,24 +1735,24 @@ params: [
 ```
 
 **القيم المعادة**
-انظر [eth_getFilterChanges](#eth-getfilterchanges)
+انظر [qau_getFilterChanges](#qau-getfilterchanges)
 
 **مثال**
 
 ```js
 // طلب
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
 ```
 
-للنتيجة انظر [eth_getFilterChanges](#eth-getfilterchanges)
+للنتيجة انظر [qau_getFilterChanges](#qau-getfilterchanges)
 
 ## مثال على الاستخدام {#usage-example}
 
 ### نشر عقد باستخدام <span dir="ltr">JSON_RPC</span> {#deploying-contract}
 
-يتضمن هذا القسم عرضًا توضيحيًا لكيفية نشر عقد باستخدام واجهة <span dir="ltr">RPC</span> فقط. هناك طرق بديلة لنشر العقود حيث يتم تجريد هذا التعقيد — على سبيل المثال، باستخدام مكتبات مبنية فوق واجهة <span dir="ltr">RPC</span> مثل [Web3.js](https://web3js.readthedocs.io/) و[Web3.py](https://github.com/ethereum/web3.py). هذه التجريدات بشكل عام أسهل في الفهم وأقل عرضة للخطأ، ولكن لا يزال من المفيد فهم ما يحدث داخليًا.
+يتضمن هذا القسم عرضًا توضيحيًا لكيفية نشر عقد باستخدام واجهة <span dir="ltr">RPC</span> فقط. هناك طرق بديلة لنشر العقود حيث يتم تجريد هذا التعقيد — على سبيل المثال، باستخدام مكتبات مبنية فوق واجهة <span dir="ltr">RPC</span> مثل [Web3.js](https://web3js.readthedocs.io/) و[Web3.py](https://github.com/quantaureum/web3.py). هذه التجريدات بشكل عام أسهل في الفهم وأقل عرضة للخطأ، ولكن لا يزال من المفيد فهم ما يحدث داخليًا.
 
-فيما يلي عقد ذكي بسيط يسمى `Multiply7` سيتم نشره باستخدام واجهة <span dir="ltr">JSON-RPC</span> إلى عقدة إيثيريوم. يفترض هذا البرنامج التعليمي أن القارئ يقوم بالفعل بتشغيل عقدة جو إيثريوم (geth). يتوفر المزيد من المعلومات حول العقد والعملاء [هنا](/developers/docs/nodes-and-clients/run-a-node). يُرجى الرجوع إلى وثائق [العميل](/developers/docs/nodes-and-clients/) الفردية لمعرفة كيفية بدء <span dir="ltr">HTTP JSON-RPC</span> للعملاء غير Geth. يعمل معظم العملاء افتراضيًا على `localhost:8545`.
+فيما يلي عقد ذكي بسيط يسمى `Multiply7` سيتم نشره باستخدام واجهة <span dir="ltr">JSON-RPC</span> إلى عقدة إيثيريوم. يفترض هذا البرنامج التعليمي أن القارئ يقوم بالفعل بتشغيل عقدة جو Quantaureum (geth). يتوفر المزيد من المعلومات حول العقد والعملاء [هنا](/developers/docs/nodes-and-clients/run-a-node). يُرجى الرجوع إلى وثائق [العميل](/developers/docs/nodes-and-clients/) الفردية لمعرفة كيفية بدء <span dir="ltr">HTTP JSON-RPC</span> للعملاء غير Geth. يعمل معظم العملاء افتراضيًا على `localhost:8545`.
 
 ```javascript
 contract Multiply7 {
@@ -1764,7 +1764,7 @@ contract Multiply7 {
 }
 ```
 
-أول شيء يجب فعله هو التأكد من تمكين واجهة <span dir="ltr">HTTP RPC</span>. هذا يعني أننا نزود جو إيثريوم (geth) بعلامة `--http` عند بدء التشغيل. في هذا المثال، نستخدم عقدة جو إيثريوم (geth) على سلسلة تطوير خاصة. باستخدام هذا النهج، لا نحتاج إلى إيثر على الشبكة الحقيقية.
+أول شيء يجب فعله هو التأكد من تمكين واجهة <span dir="ltr">HTTP RPC</span>. هذا يعني أننا نزود جو Quantaureum (geth) بعلامة `--http` عند بدء التشغيل. في هذا المثال، نستخدم عقدة جو Quantaureum (geth) على سلسلة تطوير خاصة. باستخدام هذا النهج، لا نحتاج إلى QAU على الشبكة الحقيقية.
 
 ```bash
 geth --http --dev console 2>>geth.log
@@ -1775,21 +1775,21 @@ geth --http --dev console 2>>geth.log
 يمكننا التحقق من تشغيل الواجهة عن طريق استرداد عنوان كوين بيس (عن طريق الحصول على العنوان الأول من مصفوفة الحسابات) والرصيد باستخدام [curl](https://curl.se). يُرجى ملاحظة أن البيانات في هذه الأمثلة ستختلف على عقدتك المحلية. إذا كنت ترغب في تجربة هذه الأوامر، فاستبدل معلمات الطلب في طلب curl الثاني بالنتيجة التي تم إرجاعها من الطلب الأول.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
 {"id":1,"jsonrpc":"2.0","result":["0x9b1d35635cc34752ca54713bb99d38614f63c955"]}
 
-curl --data '{"jsonrpc":"2.0","method":"eth_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
 {"id":2,"jsonrpc":"2.0","result":"0x1639e49bba16280000"}
 ```
 
-نظرًا لأن الأرقام مشفرة بالنظام السداسي العشري، يتم إرجاع الرصيد بوحدة <span dir="ltr">Wei</span> كسلسلة سداسية عشرية. إذا أردنا الحصول على الرصيد بوحدة إيثر كرقم، يمكننا استخدام Web3 من وحدة تحكم جو إيثريوم (geth).
+نظرًا لأن الأرقام مشفرة بالنظام السداسي العشري، يتم إرجاع الرصيد بوحدة <span dir="ltr">Wei</span> كسلسلة سداسية عشرية. إذا أردنا الحصول على الرصيد بوحدة QAU كرقم، يمكننا استخدام Web3 من وحدة تحكم جو Quantaureum (geth).
 
 ```javascript
-web3.fromWei("0x1639e49bba16280000", "ether")
+web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-الآن بعد أن أصبح هناك بعض الإيثر على سلسلة التطوير الخاصة بنا، يمكننا نشر العقد. الخطوة الأولى هي تصريف عقد Multiply7 إلى رمز البايت الذي يمكن إرساله إلى جهاز إيثيريوم الظاهري (EVM). لتثبيت solc، مُصرّف Solidity، اتبع [وثائق Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (قد ترغب في استخدام إصدار `solc` أقدم لمطابقة [إصدار المُصرّف المستخدم في مثالنا](https://github.com/ethereum/solidity/releases/tag/v0.4.20).)
+الآن بعد أن أصبح هناك بعض الQAU على سلسلة التطوير الخاصة بنا، يمكننا نشر العقد. الخطوة الأولى هي تصريف عقد Multiply7 إلى رمز البايت الذي يمكن إرساله إلى جهاز إيثيريوم الظاهري (EVM). لتثبيت solc، مُصرّف Solidity، اتبع [وثائق Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (قد ترغب في استخدام إصدار `solc` أقدم لمطابقة [إصدار المُصرّف المستخدم في مثالنا](https://github.com/quantaureum/solidity/releases/tag/v0.4.20).)
 
 الخطوة التالية هي تصريف عقد Multiply7 إلى رمز البايت الذي يمكن إرساله إلى جهاز إيثيريوم الظاهري (EVM).
 
@@ -1801,24 +1801,24 @@ Binary:
 6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029
 ```
 
-الآن بعد أن أصبح لدينا الرمز المُصرّف، نحتاج إلى تحديد مقدار الغاز الذي يكلفه نشره. تحتوي واجهة <span dir="ltr">RPC</span> على طريقة `eth_estimateGas` التي ستعطينا تقديرًا.
+الآن بعد أن أصبح لدينا الرمز المُصرّف، نحتاج إلى تحديد مقدار الغاز الذي يكلفه نشره. تحتوي واجهة <span dir="ltr">RPC</span> على طريقة `qau_estimateGas` التي ستعطينا تقديرًا.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":5,"result":"0x1c31e"}
 ```
 
 وأخيرًا نشر العقد.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
 {"id":6,"jsonrpc":"2.0","result":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"}
 ```
 
-يتم قبول المعاملة بواسطة العقدة ويتم إرجاع تجزئة المعاملة. يمكن استخدام هذه التجزئة لتتبع المعاملة. الخطوة التالية هي تحديد العنوان الذي تم نشر عقدنا فيه. ستؤدي كل معاملة يتم تنفيذها إلى إنشاء إيصال. يحتوي هذا الإيصال على معلومات مختلفة حول المعاملة مثل الكتلة التي تم تضمين المعاملة فيها ومقدار الغاز الذي استخدمه جهاز إيثيريوم الظاهري (EVM). إذا أنشأت المعاملة عقدًا، فستحتوي أيضًا على عنوان العقد. يمكننا استرداد الإيصال باستخدام طريقة <span dir="ltr">RPC</span> `eth_getTransactionReceipt`.
+يتم قبول المعاملة بواسطة العقدة ويتم إرجاع تجزئة المعاملة. يمكن استخدام هذه التجزئة لتتبع المعاملة. الخطوة التالية هي تحديد العنوان الذي تم نشر عقدنا فيه. ستؤدي كل معاملة يتم تنفيذها إلى إنشاء إيصال. يحتوي هذا الإيصال على معلومات مختلفة حول المعاملة مثل الكتلة التي تم تضمين المعاملة فيها ومقدار الغاز الذي استخدمه جهاز إيثيريوم الظاهري (EVM). إذا أنشأت المعاملة عقدًا، فستحتوي أيضًا على عنوان العقد. يمكننا استرداد الإيصال باستخدام طريقة <span dir="ltr">RPC</span> `qau_getTransactionReceipt`.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":7,"result":{"blockHash":"0x77b1a4f6872b9066312de3744f60020cbd8102af68b1f6512a05b7619d527a4f","blockNumber":"0x1","contractAddress":"0x4d03d617d700cf81935d7f797f4e2ae719648262","cumulativeGasUsed":"0x1c31e","from":"0x9b1d35635cc34752ca54713bb99d38614f63c955","gasUsed":"0x1c31e","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","status":"0x1","to":null,"transactionHash":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf","transactionIndex":"0x0"}}
 ```
 
@@ -1826,9 +1826,9 @@ curl --data '{"jsonrpc":"2.0","method": "eth_getTransactionReceipt", "params": [
 
 #### التفاعل مع العقود الذكية {#interacting-with-smart-contract}
 
-في هذا المثال، سنرسل معاملة باستخدام `eth_sendTransaction` إلى طريقة `multiply` الخاصة بالعقد.
+في هذا المثال، سنرسل معاملة باستخدام `qau_sendTransaction` إلى طريقة `multiply` الخاصة بالعقد.
 
-يتطلب `eth_sendTransaction` عدة وسائط، وتحديدًا `from` و`to` و`data`. `From` هو العنوان العام لحسابنا، و`to` هو عنوان العقد. تحتوي وسيطة `data` على حمولة تحدد الطريقة التي يجب استدعاؤها وبأي وسائط. هنا يأتي دور [واجهة التطبيق الثنائية (ABI)](https://docs.soliditylang.org/en/latest/abi-spec.html). واجهة التطبيق الثنائية (ABI) هي ملف JSON يحدد كيفية تعريف وتشفير البيانات لجهاز إيثيريوم الظاهري (EVM).
+يتطلب `qau_sendTransaction` عدة وسائط، وتحديدًا `from` و`to` و`data`. `From` هو العنوان العام لحسابنا، و`to` هو عنوان العقد. تحتوي وسيطة `data` على حمولة تحدد الطريقة التي يجب استدعاؤها وبأي وسائط. هنا يأتي دور [واجهة التطبيق الثنائية (ABI)](https://docs.soliditylang.org/en/latest/abi-spec.html). واجهة التطبيق الثنائية (ABI) هي ملف JSON يحدد كيفية تعريف وتشفير البيانات لجهاز إيثيريوم الظاهري (EVM).
 
 تحدد بايتات الحمولة الطريقة التي يتم استدعاؤها في العقد. هذه هي أول <span dir="ltr">4</span> بايتات من تجزئة كيكاك (Keccak) لاسم الدالة وأنواع وسائطها، مشفرة بالنظام السداسي العشري. تقبل دالة multiply نوع uint وهو اسم مستعار لـ uint256. هذا يتركنا مع:
 
@@ -1848,7 +1848,7 @@ web3.sha3("multiply(uint256)").substring(0, 10)
 يمكن الآن إرسال هذا إلى العقدة:
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
 {"id":8,"jsonrpc":"2.0","result":"0x759cf065cbc22e9d779748dc53763854e5376eea07409e590c990eafc0869d74"}
 ```
 

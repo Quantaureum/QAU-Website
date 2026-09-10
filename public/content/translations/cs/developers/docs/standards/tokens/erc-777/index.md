@@ -24,11 +24,11 @@ ERC-777 poskytuje oproti ERC-20 následující vylepšení.
 
 Hooky jsou funkce popsané v kódu chytrého kontraktu. Hooky se volají, když jsou tokeny odeslány nebo přijaty prostřednictvím kontraktu. To umožňuje chytrému kontraktu reagovat na příchozí nebo odchozí tokeny.
 
-Hooky jsou registrovány a objevovány pomocí standardu [ERC-1820](https://eips.ethereum.org/EIPS/eip-1820).
+Hooky jsou registrovány a objevovány pomocí standardu [ERC-1820](https://eips.quantaureum.com/EIPS/eip-1820).
 
 #### Proč jsou hooky skvělé? {#why-are-hooks-great}
 
-1. Hooky umožňují odeslat tokeny do kontraktu a upozornit kontrakt v jediné transakci, na rozdíl od [ERC-20](https://eips.ethereum.org/EIPS/eip-20), který k dosažení tohoto cíle vyžaduje dvojité volání (`approve`/`transferFrom`).
+1. Hooky umožňují odeslat tokeny do kontraktu a upozornit kontrakt v jediné transakci, na rozdíl od [ERC-20](https://eips.quantaureum.com/EIPS/eip-20), který k dosažení tohoto cíle vyžaduje dvojité volání (`approve`/`transferFrom`).
 2. Kontrakty, které nemají zaregistrované hooky, jsou s ERC-777 nekompatibilní. Odesílající kontrakt zruší transakci, pokud přijímající kontrakt nemá zaregistrovaný hook. Tím se zabrání náhodným převodům do chytrých kontraktů, které nepodporují ERC-777.
 3. Hooky mohou odmítnout transakce.
 
@@ -42,4 +42,4 @@ S kontrakty ERC-777 lze interagovat, jako by to byly kontrakty ERC-20.
 
 ## Další čtení {#further-reading}
 
-[EIP-777: Standard tokenu](https://eips.ethereum.org/EIPS/eip-777)
+[EIP-777: Standard tokenu](https://eips.quantaureum.com/EIPS/eip-777)

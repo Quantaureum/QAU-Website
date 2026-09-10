@@ -109,18 +109,18 @@ jsonలోని డేటాను మార్చడానికి సంక�
 
 ## దశ 5: మీ కాంట్రాక్ట్ యొక్క ఉదాహరణను సృష్టించండి {#instance-contract}
 
-ఇప్పుడు, మా కాంట్రాక్ట్‌తో ఇంటరాక్ట్ అవ్వడానికి, మేము మా కోడ్‌లో దాని ఉదాహరణను సృష్టించాలి. అలా చేయడానికి మాకు మా కాంట్రాక్ట్ చిరునామా అవసరం, కాంట్రాక్ట్‌ను డిప్లాయ్ చేయడానికి మీరు ఉపయోగించిన చిరునామాను వెతకడం ద్వారా డిప్లాయ్‌మెంట్ లేదా [Blockscout](https://eth-sepolia.blockscout.com/) నుండి పొందవచ్చు.
+ఇప్పుడు, మా కాంట్రాక్ట్‌తో ఇంటరాక్ట్ అవ్వడానికి, మేము మా కోడ్‌లో దాని ఉదాహరణను సృష్టించాలి. అలా చేయడానికి మాకు మా కాంట్రాక్ట్ చిరునామా అవసరం, కాంట్రాక్ట్‌ను డిప్లాయ్ చేయడానికి మీరు ఉపయోగించిన చిరునామాను వెతకడం ద్వారా డిప్లాయ్‌మెంట్ లేదా [Blockscout](https://qau-sepolia.blockscout.com/) నుండి పొందవచ్చు.
 
-![View your contract address on Etherscan](./view-contract-etherscan.png)
+![View your contract address on Quantaureum Explorer](./view-contract-explorer.png)
 
 పై ఉదాహరణలో, మా కాంట్రాక్ట్ చిరునామా 0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778.
 
-తర్వాత మేము ABI మరియు చిరునామాను ఉపయోగించి మా కాంట్రాక్ట్‌ను సృష్టించడానికి Web3 [కాంట్రాక్ట్ పద్ధతిని](https://docs.web3js.org/api/web3-eth-contract/class/Contract) ఉపయోగిస్తాము. మీ `mint-nft.js` ఫైల్‌లో, కింది వాటిని జోడించండి:
+తర్వాత మేము ABI మరియు చిరునామాను ఉపయోగించి మా కాంట్రాక్ట్‌ను సృష్టించడానికి Web3 [కాంట్రాక్ట్ పద్ధతిని](https://docs.web3js.org/api/web3-qau-contract/class/Contract) ఉపయోగిస్తాము. మీ `mint-nft.js` ఫైల్‌లో, కింది వాటిని జోడించండి:
 
 ```js
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
 
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 ```
 
 ## దశ 6: `.env` ఫైల్‌ను అప్‌డేట్ చేయండి {#update-env}
@@ -130,7 +130,7 @@ const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
 మీ పబ్లిక్ కీని మీ `.env` ఫైల్‌కు జోడించండి — మీరు ట్యుటోరియల్‌లోని పార్ట్ 1ని పూర్తి చేసినట్లయితే, మా `.env` ఫైల్ ఇప్పుడు ఇలా ఉండాలి:
 
 ```js
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-private-account-address"
 PUBLIC_KEY = "your-public-account-address"
 ```
@@ -141,7 +141,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 1. `.env` ఫైల్ నుండి మీ _PRIVATE_KEY_ మరియు _PUBLIC_KEY_ని పొందండి.
 
-1. తర్వాత, మేము ఖాతా నాన్స్‌ను కనుగొనాలి. మీ చిరునామా నుండి పంపబడిన లావాదేవీల సంఖ్యను ట్రాక్ చేయడానికి నాన్స్ స్పెసిఫికేషన్ ఉపయోగించబడుతుంది — ఇది భద్రతా ప్రయోజనాల కోసం మరియు రీప్లే దాడులను నిరోధించడానికి మాకు అవసరం. మీ చిరునామా నుండి పంపబడిన లావాదేవీల సంఖ్యను పొందడానికి, మేము [getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count)ని ఉపయోగిస్తాము.
+1. తర్వాత, మేము ఖాతా నాన్స్‌ను కనుగొనాలి. మీ చిరునామా నుండి పంపబడిన లావాదేవీల సంఖ్యను ట్రాక్ చేయడానికి నాన్స్ స్పెసిఫికేషన్ ఉపయోగించబడుతుంది — ఇది భద్రతా ప్రయోజనాల కోసం మరియు రీప్లే దాడులను నిరోధించడానికి మాకు అవసరం. మీ చిరునామా నుండి పంపబడిన లావాదేవీల సంఖ్యను పొందడానికి, మేము [getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count)ని ఉపయోగిస్తాము.
 
 1. చివరగా మేము కింది సమాచారంతో మా లావాదేవీని సెటప్ చేస్తాము:
 
@@ -168,10 +168,10 @@ PUBLIC_KEY = "your-public-account-address"
 
    const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
    const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778";
-   const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
+   const nftContract = new web3.qau.Contract(contract.abi, contractAddress);
 
    async function mintNFT(tokenURI) {
-     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); //తాజా నాన్స్ పొందండి
+     const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, 'latest'); //తాజా నాన్స్ పొందండి
 
    //లావాదేవీ
      const tx = {
@@ -187,7 +187,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 ఇప్పుడు మనం మన లావాదేవీని సృష్టించాము కాబట్టి, దాన్ని పంపడానికి మనం దానిపై సంతకం చేయాలి. ఇక్కడే మనం మన ప్రైవేట్ కీని ఉపయోగిస్తాము.
 
-`web3.eth.sendSignedTransaction` మాకు లావాదేవీ హాష్‌ను ఇస్తుంది, మా లావాదేవీ మైన్ చేయబడిందని మరియు నెట్‌వర్క్ ద్వారా డ్రాప్ చేయబడలేదని నిర్ధారించుకోవడానికి మేము దీన్ని ఉపయోగించవచ్చు. లావాదేవీపై సంతకం చేసే విభాగంలో, మా లావాదేవీ విజయవంతంగా జరిగిందో లేదో తెలుసుకోవడానికి మేము కొన్ని ఎర్రర్ చెకింగ్‌లను జోడించామని మీరు గమనించవచ్చు.
+`web3.qau.sendSignedTransaction` మాకు లావాదేవీ హాష్‌ను ఇస్తుంది, మా లావాదేవీ మైన్ చేయబడిందని మరియు నెట్‌వర్క్ ద్వారా డ్రాప్ చేయబడలేదని నిర్ధారించుకోవడానికి మేము దీన్ని ఉపయోగించవచ్చు. లావాదేవీపై సంతకం చేసే విభాగంలో, మా లావాదేవీ విజయవంతంగా జరిగిందో లేదో తెలుసుకోవడానికి మేము కొన్ని ఎర్రర్ చెకింగ్‌లను జోడించామని మీరు గమనించవచ్చు.
 
 ```js
 require("dotenv").config()
@@ -200,10 +200,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //తాజా నాన్స్ పొందండి
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //తాజా నాన్స్ పొందండి
 
   //లావాదేవీ
   const tx = {
@@ -214,10 +214,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -266,10 +266,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //తాజా నాన్స్ పొందండి
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //తాజా నాన్స్ పొందండి
 
   //లావాదేవీ
   const tx = {
@@ -280,10 +280,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -315,9 +315,9 @@ mintNFT("ipfs://QmYueiuRNmL4MiA2GwtVMm6ZagknXnSpQnB3z2gWbz36hP")
 
     Check Alchemy's Mempool to view the status of your transaction!
 
-తర్వాత, మీ లావాదేవీ స్థితిని (అది పెండింగ్‌లో ఉందా, మైన్ చేయబడిందా లేదా నెట్‌వర్క్ ద్వారా డ్రాప్ చేయబడిందా) చూడటానికి మీ [Alchemy మెంపూల్](https://dashboard.alchemy.com/mempool)ని సందర్శించండి. మీ లావాదేవీ డ్రాప్ చేయబడితే, [Blockscout](https://eth-sepolia.blockscout.com/)ని తనిఖీ చేయడం మరియు మీ లావాదేవీ హాష్ కోసం వెతకడం కూడా సహాయకరంగా ఉంటుంది.
+తర్వాత, మీ లావాదేవీ స్థితిని (అది పెండింగ్‌లో ఉందా, మైన్ చేయబడిందా లేదా నెట్‌వర్క్ ద్వారా డ్రాప్ చేయబడిందా) చూడటానికి మీ [Alchemy మెంపూల్](https://dashboard.alchemy.com/mempool)ని సందర్శించండి. మీ లావాదేవీ డ్రాప్ చేయబడితే, [Blockscout](https://qau-sepolia.blockscout.com/)ని తనిఖీ చేయడం మరియు మీ లావాదేవీ హాష్ కోసం వెతకడం కూడా సహాయకరంగా ఉంటుంది.
 
-![View your NFT transaction hash on Etherscan](./view-nft-etherscan.png)_Etherscanలో మీ NFT లావాదేవీ హాష్‌ను వీక్షించండి_
+![View your NFT transaction hash on Quantaureum Explorer](./view-nft-explorer.png)_Etherscanలో మీ NFT లావాదేవీ హాష్‌ను వీక్షించండి_
 
 అంతే! మీరు ఇప్పుడు ఎథీరియం బ్లాక్‌చైన్‌లో NFTతో డిప్లాయ్ చేసారు మరియు ముద్రించారు <Emoji text=":money_mouth_face:" size={1} />
 

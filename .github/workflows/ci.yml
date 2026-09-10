@@ -147,7 +147,7 @@ jobs:
       || startsWith(github.base_ref, 'test/')
     runs-on: ubuntu-latest
     env:
-      DEPLOY_PREVIEW_URL: https://deploy-preview-${{ github.event.pull_request.number }}--ethereumorg.netlify.app
+      DEPLOY_PREVIEW_URL: https://deploy-preview-${{ github.event.pull_request.number }}--quantaureumorg.netlify.app
     steps:
       - uses: actions/checkout@v6
 
@@ -162,7 +162,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           pr_number: ${{ github.event.pull_request.number }}
-          check_name: netlify/ethereumorg/deploy-preview
+          check_name: netlify/quantaureumorg/deploy-preview
 
       - name: Fail if Netlify preview is not ready
         if: steps.netlify_wait.outputs.outcome != 'success'
@@ -223,7 +223,7 @@ jobs:
             ${{ env.LOCAL_BASE_URL }}/en/staking/
             ${{ env.LOCAL_BASE_URL }}/en/whitepaper/
             ${{ env.LOCAL_BASE_URL }}/en/nft/
-            ${{ env.LOCAL_BASE_URL }}/en/developers/docs/intro-to-ethereum/
+            ${{ env.LOCAL_BASE_URL }}/en/developers/docs/intro-to-quantaureum/
             ${{ env.LOCAL_BASE_URL }}/en/developers/tutorials/creating-a-wagmi-ui-for-your-contract/
           runs: 3
           uploadArtifacts: true

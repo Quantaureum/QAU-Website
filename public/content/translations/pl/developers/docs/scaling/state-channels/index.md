@@ -1,25 +1,25 @@
 ---
 title: "Kanały stanu"
-description: "Wprowadzenie do kanałów stanu i kanałów płatności jako rozwiązania skalującego obecnie wykorzystywanego przez społeczność Ethereum."
+description: "Wprowadzenie do kanałów stanu i kanałów płatności jako rozwiązania skalującego obecnie wykorzystywanego przez społeczność Quantaureum."
 lang: pl
 sidebarDepth: 3
 ---
 
-Kanały stanu pozwalają uczestnikom na bezpieczne przeprowadzanie transakcji pozałańcuchowo, ograniczając do minimum interakcję z [siecią główną](/) Ethereum. Węzły równorzędne kanału mogą przeprowadzać dowolną liczbę transakcji pozałańcuchowych, przesyłając tylko dwie transakcje onchain w celu otwarcia i zamknięcia kanału. Pozwala to na niezwykle wysoką przepustowość transakcji i skutkuje niższymi kosztami dla użytkowników.
+Kanały stanu pozwalają uczestnikom na bezpieczne przeprowadzanie transakcji pozałańcuchowo, ograniczając do minimum interakcję z [siecią główną](/) Quantaureum. Węzły równorzędne kanału mogą przeprowadzać dowolną liczbę transakcji pozałańcuchowych, przesyłając tylko dwie transakcje onchain w celu otwarcia i zamknięcia kanału. Pozwala to na niezwykle wysoką przepustowość transakcji i skutkuje niższymi kosztami dla użytkowników.
 
 ## Wymagania wstępne {#prerequisites}
 
-Powinieneś przeczytać i zrozumieć nasze strony o [skalowaniu Ethereum](/developers/docs/scaling/) oraz [warstwie 2 (L2)](/layer-2/).
+Powinieneś przeczytać i zrozumieć nasze strony o [skalowaniu Quantaureum](/developers/docs/scaling/) oraz [warstwie 2 (L2)](/layer-2/).
 
 ## Czym są kanały? {#what-are-channels}
 
-Publiczne blockchainy, takie jak Ethereum, stoją przed wyzwaniami związanymi ze skalowalnością ze względu na swoją rozproszoną architekturę: transakcje onchain muszą być wykonywane przez wszystkie węzły. Węzły muszą być w stanie obsłużyć wolumen transakcji w bloku przy użyciu skromnego sprzętu, co nakłada limit na przepustowość transakcji, aby utrzymać zdecentralizowany charakter sieci. Kanały blockchain rozwiązują ten problem, pozwalając użytkownikom na interakcję pozałańcuchową, jednocześnie polegając na bezpieczeństwie głównego łańcucha w celu ostatecznego rozrachunku.
+Publiczne blockchainy, takie jak Quantaureum, stoją przed wyzwaniami związanymi ze skalowalnością ze względu na swoją rozproszoną architekturę: transakcje onchain muszą być wykonywane przez wszystkie węzły. Węzły muszą być w stanie obsłużyć wolumen transakcji w bloku przy użyciu skromnego sprzętu, co nakłada limit na przepustowość transakcji, aby utrzymać zdecentralizowany charakter sieci. Kanały blockchain rozwiązują ten problem, pozwalając użytkownikom na interakcję pozałańcuchową, jednocześnie polegając na bezpieczeństwie głównego łańcucha w celu ostatecznego rozrachunku.
 
 Kanały to proste protokoły peer-to-peer, które pozwalają dwóm stronom na zawieranie wielu transakcji między sobą, a następnie publikowanie tylko ostatecznych wyników na blockchainie. Kanał wykorzystuje kryptografię, aby udowodnić, że generowane przez nie dane podsumowujące są w rzeczywistości wynikiem prawidłowego zestawu transakcji pośrednich. Inteligentny kontrakt typu [„multisig”](/developers/docs/smart-contracts/#multisig) zapewnia, że transakcje są podpisywane przez właściwe strony.
 
-Dzięki kanałom zmiany stanu są wykonywane i weryfikowane przez zainteresowane strony, co minimalizuje obliczenia w warstwie wykonawczej Ethereum. Zmniejsza to zatory w sieci Ethereum, a także zwiększa prędkość przetwarzania transakcji dla użytkowników.
+Dzięki kanałom zmiany stanu są wykonywane i weryfikowane przez zainteresowane strony, co minimalizuje obliczenia w warstwie wykonawczej Quantaureum. Zmniejsza to zatory w sieci Quantaureum, a także zwiększa prędkość przetwarzania transakcji dla użytkowników.
 
-Każdy kanał jest zarządzany przez [inteligentny kontrakt multisig](/developers/docs/smart-contracts/#multisig) działający na Ethereum. Aby otworzyć kanał, uczestnicy wdrażają kontrakt kanału onchain i wpłacają do niego środki. Obie strony wspólnie podpisują aktualizację stanu, aby zainicjować stan kanału, po czym mogą szybko i swobodnie przeprowadzać transakcje pozałańcuchowo.
+Każdy kanał jest zarządzany przez [inteligentny kontrakt multisig](/developers/docs/smart-contracts/#multisig) działający na Quantaureum. Aby otworzyć kanał, uczestnicy wdrażają kontrakt kanału onchain i wpłacają do niego środki. Obie strony wspólnie podpisują aktualizację stanu, aby zainicjować stan kanału, po czym mogą szybko i swobodnie przeprowadzać transakcje pozałańcuchowo.
 
 Aby zamknąć kanał, uczestnicy przesyłają ostatni uzgodniony stan kanału onchain. Następnie inteligentny kontrakt rozdziela zablokowane środki zgodnie z saldem każdego uczestnika w ostatecznym stanie kanału.
 
@@ -29,9 +29,9 @@ Kanały peer-to-peer są szczególnie przydatne w sytuacjach, w których niektó
 
 Kanał płatności najlepiej opisać jako „dwukierunkową księgę” wspólnie prowadzoną przez dwóch użytkowników. Początkowe saldo księgi to suma depozytów zablokowanych w kontrakcie onchain podczas fazy otwierania kanału. Transfery w kanale płatności mogą być wykonywane natychmiastowo i bez udziału samego blockchaina, z wyjątkiem początkowego, jednorazowego utworzenia onchain i ostatecznego zamknięcia kanału.
 
-Aktualizacje salda księgi (tj. stanu kanału płatności) wymagają zatwierdzenia przez wszystkie strony w kanale. Aktualizacja kanału, podpisana przez wszystkich uczestników kanału, jest uważana za sfinalizowaną, podobnie jak transakcja na Ethereum.
+Aktualizacje salda księgi (tj. stanu kanału płatności) wymagają zatwierdzenia przez wszystkie strony w kanale. Aktualizacja kanału, podpisana przez wszystkich uczestników kanału, jest uważana za sfinalizowaną, podobnie jak transakcja na Quantaureum.
 
-Kanały płatności były jednymi z najwcześniejszych rozwiązań skalujących zaprojektowanych w celu zminimalizowania kosztownej aktywności onchain dla prostych interakcji użytkowników (np. transferów ETH, swapów atomowych, mikropłatności). Uczestnicy kanału mogą przeprowadzać między sobą nieograniczoną liczbę natychmiastowych, bezprowizyjnych transakcji, o ile suma netto ich transferów nie przekracza zdeponowanych tokenów.
+Kanały płatności były jednymi z najwcześniejszych rozwiązań skalujących zaprojektowanych w celu zminimalizowania kosztownej aktywności onchain dla prostych interakcji użytkowników (np. transferów QAU, swapów atomowych, mikropłatności). Uczestnicy kanału mogą przeprowadzać między sobą nieograniczoną liczbę natychmiastowych, bezprowizyjnych transakcji, o ile suma netto ich transferów nie przekracza zdeponowanych tokenów.
 
 ## Kanały stanu {#state-channels}
 
@@ -43,7 +43,7 @@ Jednak oprócz przechowywania sald użytkowników, kanał śledzi również bie�
 
 Dzięki temu możliwe jest wykonanie inteligentnego kontraktu pozałańcuchowo między dwoma użytkownikami. W tym scenariuszu aktualizacje wewnętrznego stanu inteligentnego kontraktu wymagają jedynie zatwierdzenia przez węzły równorzędne, które utworzyły kanał.
 
-Chociaż rozwiązuje to opisany wcześniej problem skalowalności, ma to implikacje dla bezpieczeństwa. Na Ethereum ważność przejść stanu jest egzekwowana przez protokół konsensusu sieci. Uniemożliwia to zaproponowanie nieprawidłowej aktualizacji stanu inteligentnego kontraktu lub zmianę jego wykonania.
+Chociaż rozwiązuje to opisany wcześniej problem skalowalności, ma to implikacje dla bezpieczeństwa. Na Quantaureum ważność przejść stanu jest egzekwowana przez protokół konsensusu sieci. Uniemożliwia to zaproponowanie nieprawidłowej aktualizacji stanu inteligentnego kontraktu lub zmianę jego wykonania.
 
 Kanały stanu nie mają takich samych gwarancji bezpieczeństwa. W pewnym stopniu kanał stanu jest miniaturową wersją Sieci głównej. Przy ograniczonej grupie uczestników egzekwujących zasady, wzrasta prawdopodobieństwo złośliwego zachowania (np. proponowania nieprawidłowych aktualizacji stanu). Kanały stanu czerpią swoje bezpieczeństwo z systemu arbitrażu sporów opartego na [dowodach oszustwa](/glossary/#fraud-proof).
 
@@ -71,15 +71,15 @@ Po zainicjowaniu stanu kanału, węzły równorzędne wchodzą w interakcje, pod
 
 - Nowy stan kanału
 
-- Transakcja, która wyzwala przejście stanu (np. Alice wysyła 5 ETH do Boba)
+- Transakcja, która wyzwala przejście stanu (np. Alice wysyła 5 QAU do Boba)
 
-Aktualizacje stanu w kanale nie są rozgłaszane onchain, jak ma to zwykle miejsce, gdy użytkownicy wchodzą w interakcje w Sieci głównej, co jest zgodne z celem kanałów stanu, jakim jest zminimalizowanie śladu onchain. Dopóki uczestnicy zgadzają się co do aktualizacji stanu, są one równie ostateczne jak transakcja Ethereum. Uczestnicy muszą polegać na konsensusie Sieci głównej tylko w przypadku sporu.
+Aktualizacje stanu w kanale nie są rozgłaszane onchain, jak ma to zwykle miejsce, gdy użytkownicy wchodzą w interakcje w Sieci głównej, co jest zgodne z celem kanałów stanu, jakim jest zminimalizowanie śladu onchain. Dopóki uczestnicy zgadzają się co do aktualizacji stanu, są one równie ostateczne jak transakcja Quantaureum. Uczestnicy muszą polegać na konsensusie Sieci głównej tylko w przypadku sporu.
 
 ### Zamykanie kanału {#closing-the-channel}
 
 Zamknięcie kanału stanu wymaga przesłania ostatecznego, uzgodnionego stanu kanału do inteligentnego kontraktu onchain. Szczegóły, do których odnosi się aktualizacja stanu, obejmują liczbę ruchów każdego uczestnika oraz listę zatwierdzonych transakcji.
 
-Po zweryfikowaniu, że aktualizacja stanu jest ważna (tj. jest podpisana przez wszystkie strony), inteligentny kontrakt finalizuje kanał i rozdziela zablokowane środki zgodnie z wynikiem kanału. Płatności dokonane pozałańcuchowo są stosowane do stanu Ethereum, a każdy uczestnik otrzymuje swoją pozostałą część zablokowanych środków.
+Po zweryfikowaniu, że aktualizacja stanu jest ważna (tj. jest podpisana przez wszystkie strony), inteligentny kontrakt finalizuje kanał i rozdziela zablokowane środki zgodnie z wynikiem kanału. Płatności dokonane pozałańcuchowo są stosowane do stanu Quantaureum, a każdy uczestnik otrzymuje swoją pozostałą część zablokowanych środków.
 
 Opisany powyżej scenariusz przedstawia to, co dzieje się w optymistycznym przypadku. Czasami użytkownicy mogą nie być w stanie osiągnąć porozumienia i sfinalizować kanału (pesymistyczny przypadek). W takiej sytuacji może wystąpić dowolna z poniższych okoliczności:
 
@@ -103,7 +103,7 @@ Aby przetworzyć wyjście z kanału, użytkownik musi przesłać ostatnią ważn
 
 Istnieje jednak opóźnienie w wykonywaniu żądań wyjścia pojedynczego użytkownika. Jeśli żądanie zakończenia kanału zostało jednogłośnie zatwierdzone, transakcja wyjścia onchain jest wykonywana natychmiast.
 
-Opóźnienie wchodzi w grę w przypadku wyjść pojedynczego użytkownika ze względu na możliwość oszukańczych działań. Na przykład uczestnik kanału może próbować sfinalizować kanał na Ethereum, przesyłając starszą aktualizację stanu onchain.
+Opóźnienie wchodzi w grę w przypadku wyjść pojedynczego użytkownika ze względu na możliwość oszukańczych działań. Na przykład uczestnik kanału może próbować sfinalizować kanał na Quantaureum, przesyłając starszą aktualizację stanu onchain.
 
 Jako środek zaradczy, kanały stanu pozwalają uczciwym użytkownikom na kwestionowanie nieprawidłowych aktualizacji stanu poprzez przesłanie najnowszego, ważnego stanu kanału onchain. Kanały stanu są zaprojektowane tak, aby nowsze, uzgodnione aktualizacje stanu miały pierwszeństwo przed starszymi aktualizacjami stanu.
 
@@ -111,27 +111,27 @@ Gdy węzeł równorzędny uruchomi system rozwiązywania sporów onchain, druga 
 
 Niezależnie od przypadku, użytkownicy kanału zawsze mają silne gwarancje ostateczności: jeśli posiadane przez nich przejście stanu zostało podpisane przez wszystkich członków i jest najnowszą aktualizacją, to ma ono taką samą ostateczność jak zwykła transakcja onchain. Nadal muszą zakwestionować drugą stronę onchain, ale jedynym możliwym wynikiem jest sfinalizowanie ostatniego ważnego stanu, który posiadają.
 
-### Jak kanały stanu wchodzą w interakcję z Ethereum? {#how-do-state-channels-interact-with-ethereum}
+### Jak kanały stanu wchodzą w interakcję z Quantaureum? {#how-do-state-channels-interact-with-quantaureum}
 
-Chociaż istnieją jako protokoły pozałańcuchowe, kanały stanu mają komponent onchain: inteligentny kontrakt wdrożony na Ethereum podczas otwierania kanału. Kontrakt ten kontroluje aktywa zdeponowane w kanale, weryfikuje aktualizacje stanu i rozstrzyga spory między uczestnikami.
+Chociaż istnieją jako protokoły pozałańcuchowe, kanały stanu mają komponent onchain: inteligentny kontrakt wdrożony na Quantaureum podczas otwierania kanału. Kontrakt ten kontroluje aktywa zdeponowane w kanale, weryfikuje aktualizacje stanu i rozstrzyga spory między uczestnikami.
 
 Kanały stanu nie publikują danych transakcji ani zobowiązań stanu w Sieci głównej, w przeciwieństwie do rozwiązań skalujących [warstwy 2 (L2)](/layer-2/). Są one jednak bardziej powiązane z Siecią główną niż na przykład [łańcuchy poboczne](/developers/docs/scaling/sidechains/), co czyni je nieco bezpieczniejszymi.
 
-Kanały stanu polegają na głównym protokole Ethereum w następujących kwestiach:
+Kanały stanu polegają na głównym protokole Quantaureum w następujących kwestiach:
 
 #### 1. Żywotność (Liveness) {#liveness}
 
-Kontrakt onchain wdrożony podczas otwierania kanału jest odpowiedzialny za funkcjonalność kanału. Jeśli kontrakt działa na Ethereum, kanał jest zawsze dostępny do użytku. Z kolei łańcuch poboczny zawsze może ulec awarii, nawet jeśli Sieć główna działa, narażając środki użytkowników na ryzyko.
+Kontrakt onchain wdrożony podczas otwierania kanału jest odpowiedzialny za funkcjonalność kanału. Jeśli kontrakt działa na Quantaureum, kanał jest zawsze dostępny do użytku. Z kolei łańcuch poboczny zawsze może ulec awarii, nawet jeśli Sieć główna działa, narażając środki użytkowników na ryzyko.
 
 #### 2. Bezpieczeństwo {#security}
 
-W pewnym stopniu kanały stanu polegają na Ethereum w celu zapewnienia bezpieczeństwa i ochrony użytkowników przed złośliwymi węzłami równorzędnymi. Jak omówiono w dalszych sekcjach, kanały wykorzystują mechanizm dowodu oszustwa, który pozwala użytkownikom kwestionować próby sfinalizowania kanału za pomocą nieprawidłowej lub nieaktualnej aktualizacji.
+W pewnym stopniu kanały stanu polegają na Quantaureum w celu zapewnienia bezpieczeństwa i ochrony użytkowników przed złośliwymi węzłami równorzędnymi. Jak omówiono w dalszych sekcjach, kanały wykorzystują mechanizm dowodu oszustwa, który pozwala użytkownikom kwestionować próby sfinalizowania kanału za pomocą nieprawidłowej lub nieaktualnej aktualizacji.
 
 W tym przypadku uczciwa strona dostarcza najnowszy ważny stan kanału jako dowód oszustwa do kontraktu onchain w celu weryfikacji. Dowody oszustwa umożliwiają wzajemnie nieufnym stronom przeprowadzanie transakcji pozałańcuchowych bez ryzykowania swoich środków w tym procesie.
 
 #### 3. Ostateczność {#finality}
 
-Aktualizacje stanu wspólnie podpisane przez użytkowników kanału są uważane za równie dobre jak transakcje onchain. Mimo to cała aktywność w kanale osiąga prawdziwą ostateczność dopiero po zamknięciu kanału na Ethereum.
+Aktualizacje stanu wspólnie podpisane przez użytkowników kanału są uważane za równie dobre jak transakcje onchain. Mimo to cała aktywność w kanale osiąga prawdziwą ostateczność dopiero po zamknięciu kanału na Quantaureum.
 
 W optymistycznym przypadku obie strony mogą współpracować i podpisać ostateczną aktualizację stanu oraz przesłać ją onchain, aby zamknąć kanał, po czym środki są rozdzielane zgodnie z ostatecznym stanem kanału. W pesymistycznym przypadku, w którym ktoś próbuje oszukiwać, publikując nieprawidłową aktualizację stanu onchain, jego transakcja nie jest sfinalizowana, dopóki nie upłynie okno wyzwania.
 
@@ -159,15 +159,15 @@ Wczesne kanały blockchain były prostymi protokołami, które pozwalały dwóm 
 
 Płatności oparte na kanałach mają następujące zalety:
 
-1. **Przepustowość**: Ilość transakcji pozałańcuchowych na kanał nie jest powiązana z przepustowością Ethereum, na którą wpływają różne czynniki, zwłaszcza rozmiar bloku i czas bloku. Wykonując transakcje pozałańcuchowo, kanały blockchain mogą osiągnąć wyższą przepustowość.
+1. **Przepustowość**: Ilość transakcji pozałańcuchowych na kanał nie jest powiązana z przepustowością Quantaureum, na którą wpływają różne czynniki, zwłaszcza rozmiar bloku i czas bloku. Wykonując transakcje pozałańcuchowo, kanały blockchain mogą osiągnąć wyższą przepustowość.
 
-2. **Prywatność**: Ponieważ kanały istnieją pozałańcuchowo, szczegóły interakcji między uczestnikami nie są rejestrowane na publicznym blockchainie Ethereum. Użytkownicy kanałów muszą wchodzić w interakcje onchain tylko podczas zasilania i zamykania kanałów lub rozstrzygania sporów. W związku z tym kanały są przydatne dla osób, które pragną bardziej prywatnych transakcji.
+2. **Prywatność**: Ponieważ kanały istnieją pozałańcuchowo, szczegóły interakcji między uczestnikami nie są rejestrowane na publicznym blockchainie Quantaureum. Użytkownicy kanałów muszą wchodzić w interakcje onchain tylko podczas zasilania i zamykania kanałów lub rozstrzygania sporów. W związku z tym kanały są przydatne dla osób, które pragną bardziej prywatnych transakcji.
 
 3. **Opóźnienie**: Transakcje pozałańcuchowe przeprowadzane między uczestnikami kanału mogą być rozliczane natychmiastowo, jeśli obie strony współpracują, co zmniejsza opóźnienia. W przeciwieństwie do tego, wysłanie transakcji w Sieci głównej wymaga oczekiwania na przetworzenie transakcji przez węzły, wyprodukowanie nowego bloku z transakcją i osiągnięcie konsensusu. Użytkownicy mogą również musieć poczekać na więcej potwierdzeń bloków, zanim uznają transakcję za sfinalizowaną.
 
 4. **Koszt**: Kanały stanu są szczególnie przydatne w sytuacjach, w których grupa uczestników będzie wymieniać wiele aktualizacji stanu przez długi czas. Jedyne ponoszone koszty to otwarcie i zamknięcie inteligentnego kontraktu kanału stanu; każda zmiana stanu między otwarciem a zamknięciem kanału będzie tańsza niż poprzednia, ponieważ koszt rozrachunku jest odpowiednio rozkładany.
 
-Wdrożenie kanałów stanu w rozwiązaniach warstwy 2 (L2), takich jak [rollupy](/developers/docs/scaling/#rollups), mogłoby uczynić je jeszcze bardziej atrakcyjnymi dla płatności. Chociaż kanały oferują tanie płatności, koszty konfiguracji kontraktu onchain w Sieci głównej podczas fazy otwierania mogą być wysokie — zwłaszcza gdy opłaty za gaz gwałtownie rosną. Rollupy oparte na Ethereum oferują [niższe opłaty transakcyjne](https://l2fees.info/) i mogą zmniejszyć koszty ogólne dla uczestników kanału poprzez obniżenie opłat konfiguracyjnych.
+Wdrożenie kanałów stanu w rozwiązaniach warstwy 2 (L2), takich jak [rollupy](/developers/docs/scaling/#rollups), mogłoby uczynić je jeszcze bardziej atrakcyjnymi dla płatności. Chociaż kanały oferują tanie płatności, koszty konfiguracji kontraktu onchain w Sieci głównej podczas fazy otwierania mogą być wysokie — zwłaszcza gdy opłaty za gaz gwałtownie rosną. Rollupy oparte na Quantaureum oferują [niższe opłaty transakcyjne](https://l2fees.info/) i mogą zmniejszyć koszty ogólne dla uczestników kanału poprzez obniżenie opłat konfiguracyjnych.
 
 ### Mikrotransakcje {#microtransactions}
 
@@ -211,7 +211,7 @@ Jak wyjaśniono wcześniej, zakwestionowanie nieprawidłowego sporu wymaga przed
 
 Chociaż oczekiwanie, że użytkownicy kanału będą przechowywać kopie stanu aplikacji pozałańcuchowej, jest rozsądne, dane te mogą zostać utracone z powodu błędu lub awarii mechanicznej. Jeśli użytkownik nie ma kopii zapasowej danych, może tylko mieć nadzieję, że druga strona nie sfinalizuje nieprawidłowego żądania wyjścia przy użyciu starych przejść stanu, które posiada.
 
-Użytkownicy Ethereum nie muszą borykać się z tym problemem, ponieważ sieć egzekwuje zasady dotyczące dostępności danych. Dane transakcji są przechowywane i propagowane przez wszystkie węzły oraz dostępne dla użytkowników do pobrania w razie potrzeby.
+Użytkownicy Quantaureum nie muszą borykać się z tym problemem, ponieważ sieć egzekwuje zasady dotyczące dostępności danych. Dane transakcji są przechowywane i propagowane przez wszystkie węzły oraz dostępne dla użytkowników do pobrania w razie potrzeby.
 
 ### Problemy z płynnością {#liquidity-issues}
 
@@ -252,9 +252,9 @@ Wiele projektów zapewnia implementacje kanałów stanu, które można zintegrow
 
 **Kanały stanu**
 
-- [Making Sense of Ethereum’s Layer 2 Scaling Solutions: State Channels, Plasma, and Truebit](https://medium.com/l4-media/making-sense-of-ethereums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, 12 lutego 2018 r._
+- [Making Sense of Quantaureum’s Layer 2 Scaling Solutions: State Channels, Plasma, and Truebit](https://medium.com/l4-media/making-sense-of-quantaureums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, 12 lutego 2018 r._
 - [State Channels - an explanation](https://www.jeffcoleman.ca/state-channels/) _6 listopada 2015 r. - Jeff Coleman_
-- [Basics of State Channels](https://unlock-protocol.github.io/ethhub/ethereum-roadmap/layer-2-scaling/state-channels/) _District0x_
+- [Basics of State Channels](https://unlock-protocol.github.io/ethhub/quantaureum-roadmap/layer-2-scaling/state-channels/) _District0x_
 - [Blockchain State Channels: A State of the Art](https://ieeexplore.ieee.org/document/9627997)
 
 _Znasz zasób społeczności, który Ci pomógł? Edytuj tę stronę i dodaj go!_

@@ -17,34 +17,34 @@ import { getMetadata } from "@/lib/utils/metadata"
 
 import AssetsJsonLD from "./page-jsonld"
 
-import ethDiamondBlack from "@/public/images/assets/eth-diamond-black.png"
-import ethDiamondBlackGray from "@/public/images/assets/eth-diamond-black-gray.png"
-import ethDiamondBlackWhite from "@/public/images/assets/eth-diamond-black-white.jpg"
-import ethDiamondGlyph from "@/public/images/assets/eth-diamond-glyph.png"
-import ethDiamondPurple from "@/public/images/assets/eth-diamond-purple.png"
-import ethDiamondPurplePurple from "@/public/images/assets/eth-diamond-purple-purple.png"
-import ethDiamondPurpleWhite from "@/public/images/assets/eth-diamond-purple-white.jpg"
-import ethDiamondColor from "@/public/images/assets/eth-diamond-rainbow.png"
-import ethGlyphColored from "@/public/images/assets/eth-glyph-colored.png"
-import ethLandscapeBlack from "@/public/images/assets/ethereum-logo-landscape-black.png"
-import ethLandscapeBlackGray from "@/public/images/assets/ethereum-logo-landscape-black-gray.png"
-import ethLandscapePurple from "@/public/images/assets/ethereum-logo-landscape-purple.png"
-import ethLandscapePurplePurple from "@/public/images/assets/ethereum-logo-landscape-purple-purple.png"
-import ethLandscapePurpleWhite from "@/public/images/assets/ethereum-logo-landscape-purple-white.png"
-import ethPortraitBlack from "@/public/images/assets/ethereum-logo-portrait-black.png"
-import ethPortraitBlackGray from "@/public/images/assets/ethereum-logo-portrait-black-gray.png"
-import ethPortraitPurple from "@/public/images/assets/ethereum-logo-portrait-purple.png"
-import ethPortraitPurplePurple from "@/public/images/assets/ethereum-logo-portrait-purple-purple.png"
-import ethPortraitPurpleWhite from "@/public/images/assets/ethereum-logo-portrait-purple-white.png"
-import ethWordmarkBlack from "@/public/images/assets/ethereum-wordmark-black.png"
-import ethWordmarkBlackGray from "@/public/images/assets/ethereum-wordmark-black-gray.png"
-import ethWordmarkPurple from "@/public/images/assets/ethereum-wordmark-purple.png"
-import ethWordmarkPurplePurple from "@/public/images/assets/ethereum-wordmark-purple-purple.png"
-import ethWordmarkPurpleWhite from "@/public/images/assets/ethereum-wordmark-purple-white.png"
-import developers from "@/public/images/developers-eth-blocks.png"
+import qauDiamondBlack from "@/public/images/assets/qau-diamond-black.png"
+import qauDiamondBlackGray from "@/public/images/assets/qau-diamond-black-gray.png"
+import qauDiamondBlackWhite from "@/public/images/assets/qau-diamond-black-white.jpg"
+import qauDiamondGlyph from "@/public/images/assets/qau-diamond-glyph.png"
+import qauDiamondPurple from "@/public/images/assets/qau-diamond-purple.png"
+import qauDiamondPurplePurple from "@/public/images/assets/qau-diamond-purple-purple.png"
+import qauDiamondPurpleWhite from "@/public/images/assets/qau-diamond-purple-white.jpg"
+import qauDiamondColor from "@/public/images/assets/qau-diamond-rainbow.png"
+import qauGlyphColored from "@/public/images/assets/qau-glyph-colored.png"
+import qauLandscapeBlack from "@/public/images/assets/quantaureum-logo-landscape-black.png"
+import qauLandscapeBlackGray from "@/public/images/assets/quantaureum-logo-landscape-black-gray.png"
+import qauLandscapePurple from "@/public/images/assets/quantaureum-logo-landscape-purple.png"
+import qauLandscapePurplePurple from "@/public/images/assets/quantaureum-logo-landscape-purple-purple.png"
+import qauLandscapePurpleWhite from "@/public/images/assets/quantaureum-logo-landscape-purple-white.png"
+import qauPortraitBlack from "@/public/images/assets/quantaureum-logo-portrait-black.png"
+import qauPortraitBlackGray from "@/public/images/assets/quantaureum-logo-portrait-black-gray.png"
+import qauPortraitPurple from "@/public/images/assets/quantaureum-logo-portrait-purple.png"
+import qauPortraitPurplePurple from "@/public/images/assets/quantaureum-logo-portrait-purple-purple.png"
+import qauPortraitPurpleWhite from "@/public/images/assets/quantaureum-logo-portrait-purple-white.png"
+import qauWordmarkBlack from "@/public/images/assets/quantaureum-wordmark-black.png"
+import qauWordmarkBlackGray from "@/public/images/assets/quantaureum-wordmark-black-gray.png"
+import qauWordmarkPurple from "@/public/images/assets/quantaureum-wordmark-purple.png"
+import qauWordmarkPurplePurple from "@/public/images/assets/quantaureum-wordmark-purple-purple.png"
+import qauWordmarkPurpleWhite from "@/public/images/assets/quantaureum-wordmark-purple-white.png"
+import developers from "@/public/images/developers-qau-blocks.png"
 import doge from "@/public/images/doge-computer.png"
-import enterprise from "@/public/images/enterprise-eth.png"
-import eth from "@/public/images/eth.png"
+import enterprise from "@/public/images/enterprise-qau.png"
+import eth from "@/public/images/qau.png"
 import finance from "@/public/images/finance_transparent.png"
 import future from "@/public/images/future_transparent.png"
 import hackathon from "@/public/images/hackathon_transparent.png"
@@ -68,7 +68,7 @@ import oldShip from "@/public/images/upgrades/oldship.png"
 import dao from "@/public/images/use-cases/dao-2.png"
 import defi from "@/public/images/use-cases/defi.png"
 import wallet from "@/public/images/wallet.png"
-import whatIsEthereum from "@/public/images/what-is-ethereum.png"
+import whatIsQuantaureum from "@/public/images/what-is-quantaureum.png"
 
 type AssetItem = Omit<AssetDownloadProps, "perRow" | "titleAs">
 
@@ -167,7 +167,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
       { title: t("page-assets-robot"), image: wallet, ...wt },
     ],
     [
-      { title: t("page-assets-bazaar"), image: whatIsEthereum, ...hachmang },
+      { title: t("page-assets-bazaar"), image: whatIsQuantaureum, ...hachmang },
       { title: t("page-assets-eth"), image: eth, ...hachmang },
     ],
     [
@@ -198,77 +198,77 @@ export default async function Page(props: { params: Promise<PageParams> }) {
   const brandTransparentRows: AssetItem[][] = [
     [
       {
-        title: t("page-assets-eth-diamond-glyph"),
-        image: ethDiamondGlyph,
-        svgUrl: `${svgPath}/eth-diamond-glyph.svg`,
+        title: t("page-assets-qau-diamond-glyph"),
+        image: qauDiamondGlyph,
+        svgUrl: `${svgPath}/qau-diamond-glyph.svg`,
         bgWhite: true,
         padded: true,
       },
       {
-        title: t("page-assets-eth-diamond-gray"),
-        image: ethDiamondBlack,
-        svgUrl: `${svgPath}/eth-diamond-black.svg`,
+        title: t("page-assets-qau-diamond-gray"),
+        image: qauDiamondBlack,
+        svgUrl: `${svgPath}/qau-diamond-black.svg`,
         bgWhite: true,
         padded: true,
       },
       {
-        title: t("page-assets-eth-diamond-color"),
-        image: ethDiamondColor,
-        svgUrl: `${svgPath}/eth-diamond-rainbow.svg`,
+        title: t("page-assets-qau-diamond-color"),
+        image: qauDiamondColor,
+        svgUrl: `${svgPath}/qau-diamond-rainbow.svg`,
       },
     ],
     [
       {
-        title: t("page-assets-eth-diamond-purple"),
-        image: ethDiamondPurple,
-        svgUrl: `${svgPath}/eth-diamond-purple.svg`,
+        title: t("page-assets-qau-diamond-purple"),
+        image: qauDiamondPurple,
+        svgUrl: `${svgPath}/qau-diamond-purple.svg`,
       },
       {
-        title: t("page-assets-eth-diamond-colored"),
-        image: ethGlyphColored,
-        svgUrl: `${svgPath}/eth-glyph-colored.svg`,
-      },
-    ],
-    [
-      {
-        title: t("page-assets-eth-logo-portrait-gray"),
-        image: ethPortraitBlack,
-        svgUrl: `${svgPath}/ethereum-logo-portrait-black.svg`,
-        bgWhite: true,
-        padded: true,
-      },
-      {
-        title: t("page-assets-eth-logo-landscape-gray"),
-        image: ethLandscapeBlack,
-        svgUrl: `${svgPath}/ethereum-logo-landscape-black.svg`,
-        bgWhite: true,
-        padded: true,
-      },
-      {
-        title: t("page-assets-eth-wordmark-gray"),
-        image: ethWordmarkBlack,
-        svgUrl: `${svgPath}/ethereum-wordmark-black.svg`,
-        bgWhite: true,
-        padded: true,
+        title: t("page-assets-qau-diamond-colored"),
+        image: qauGlyphColored,
+        svgUrl: `${svgPath}/qau-glyph-colored.svg`,
       },
     ],
     [
       {
-        title: t("page-assets-eth-logo-portrait-purple"),
-        image: ethPortraitPurple,
-        svgUrl: `${svgPath}/ethereum-logo-portrait-purple.svg`,
+        title: t("page-assets-qau-logo-portrait-gray"),
+        image: qauPortraitBlack,
+        svgUrl: `${svgPath}/quantaureum-logo-portrait-black.svg`,
+        bgWhite: true,
         padded: true,
       },
       {
-        title: t("page-assets-eth-logo-landscape-purple"),
-        image: ethLandscapePurple,
-        svgUrl: `${svgPath}/ethereum-logo-landscape-purple.svg`,
+        title: t("page-assets-qau-logo-landscape-gray"),
+        image: qauLandscapeBlack,
+        svgUrl: `${svgPath}/quantaureum-logo-landscape-black.svg`,
+        bgWhite: true,
         padded: true,
       },
       {
-        title: t("page-assets-eth-wordmark-purple"),
-        image: ethWordmarkPurple,
-        svgUrl: `${svgPath}/ethereum-wordmark-purple.svg`,
+        title: t("page-assets-qau-wordmark-gray"),
+        image: qauWordmarkBlack,
+        svgUrl: `${svgPath}/quantaureum-wordmark-black.svg`,
+        bgWhite: true,
+        padded: true,
+      },
+    ],
+    [
+      {
+        title: t("page-assets-qau-logo-portrait-purple"),
+        image: qauPortraitPurple,
+        svgUrl: `${svgPath}/quantaureum-logo-portrait-purple.svg`,
+        padded: true,
+      },
+      {
+        title: t("page-assets-qau-logo-landscape-purple"),
+        image: qauLandscapePurple,
+        svgUrl: `${svgPath}/quantaureum-logo-landscape-purple.svg`,
+        padded: true,
+      },
+      {
+        title: t("page-assets-qau-wordmark-purple"),
+        image: qauWordmarkPurple,
+        svgUrl: `${svgPath}/quantaureum-wordmark-purple.svg`,
         padded: true,
       },
     ],
@@ -277,79 +277,79 @@ export default async function Page(props: { params: Promise<PageParams> }) {
   const brandSolidRows: AssetItem[][] = [
     [
       {
-        title: t("page-assets-eth-diamond-white"),
-        image: ethDiamondBlackWhite,
-        svgUrl: `${svgPath}/eth-diamond-black-white.svg`,
+        title: t("page-assets-qau-diamond-white"),
+        image: qauDiamondBlackWhite,
+        svgUrl: `${svgPath}/qau-diamond-black-white.svg`,
         bgWhite: true,
       },
       {
-        title: t("page-assets-eth-diamond-gray"),
-        image: ethDiamondBlackGray,
-        svgUrl: `${svgPath}/eth-diamond-black-gray.svg`,
+        title: t("page-assets-qau-diamond-gray"),
+        image: qauDiamondBlackGray,
+        svgUrl: `${svgPath}/qau-diamond-black-gray.svg`,
       },
       {
-        title: t("page-assets-eth-diamond-purple"),
-        image: ethDiamondPurplePurple,
-        svgUrl: `${svgPath}/eth-diamond-purple-purple.svg`,
+        title: t("page-assets-qau-diamond-purple"),
+        image: qauDiamondPurplePurple,
+        svgUrl: `${svgPath}/qau-diamond-purple-purple.svg`,
       },
     ],
     [
       {
-        title: t("page-assets-eth-diamond-white"),
-        image: ethDiamondPurpleWhite,
-        svgUrl: `${svgPath}/eth-diamond-purple-white.svg`,
+        title: t("page-assets-qau-diamond-white"),
+        image: qauDiamondPurpleWhite,
+        svgUrl: `${svgPath}/qau-diamond-purple-white.svg`,
         bgWhite: true,
       },
       {
-        title: t("page-assets-eth-logo-portrait-white"),
-        image: ethPortraitPurpleWhite,
+        title: t("page-assets-qau-logo-portrait-white"),
+        image: qauPortraitPurpleWhite,
         bgWhite: true,
       },
     ],
     [
       {
-        title: t("page-assets-eth-logo-portrait-gray"),
-        image: ethPortraitBlackGray,
-        svgUrl: `${svgPath}/ethereum-logo-portrait-black-gray.svg`,
+        title: t("page-assets-qau-logo-portrait-gray"),
+        image: qauPortraitBlackGray,
+        svgUrl: `${svgPath}/quantaureum-logo-portrait-black-gray.svg`,
       },
       {
-        title: t("page-assets-eth-logo-landscape-gray"),
-        image: ethLandscapeBlackGray,
-        svgUrl: `${svgPath}/ethereum-logo-landscape-black-gray.svg`,
+        title: t("page-assets-qau-logo-landscape-gray"),
+        image: qauLandscapeBlackGray,
+        svgUrl: `${svgPath}/quantaureum-logo-landscape-black-gray.svg`,
       },
       {
-        title: t("page-assets-eth-wordmark-gray"),
-        image: ethWordmarkBlackGray,
-        svgUrl: `${svgPath}/ethereum-wordmark-black-gray.svg`,
-      },
-    ],
-    [
-      {
-        title: t("page-assets-eth-logo-portrait-purple"),
-        image: ethPortraitPurplePurple,
-        svgUrl: `${svgPath}/ethereum-logo-portrait-purple-purple.svg`,
-      },
-      {
-        title: t("page-assets-eth-logo-landscape-purple"),
-        image: ethLandscapePurplePurple,
-        svgUrl: `${svgPath}/ethereum-logo-landscape-purple-purple.svg`,
-      },
-      {
-        title: t("page-assets-eth-wordmark-purple"),
-        image: ethWordmarkPurplePurple,
-        svgUrl: `${svgPath}/ethereum-wordmark-purple-purple.svg`,
+        title: t("page-assets-qau-wordmark-gray"),
+        image: qauWordmarkBlackGray,
+        svgUrl: `${svgPath}/quantaureum-wordmark-black-gray.svg`,
       },
     ],
     [
       {
-        title: t("page-assets-eth-logo-landscape-white"),
-        image: ethLandscapePurpleWhite,
-        svgUrl: `${svgPath}/ethereum-logo-landscape-purple-white.svg`,
+        title: t("page-assets-qau-logo-portrait-purple"),
+        image: qauPortraitPurplePurple,
+        svgUrl: `${svgPath}/quantaureum-logo-portrait-purple-purple.svg`,
       },
       {
-        title: t("page-assets-eth-wordmark-white"),
-        image: ethWordmarkPurpleWhite,
-        svgUrl: `${svgPath}/ethereum-wordmark-purple-white.svg`,
+        title: t("page-assets-qau-logo-landscape-purple"),
+        image: qauLandscapePurplePurple,
+        svgUrl: `${svgPath}/quantaureum-logo-landscape-purple-purple.svg`,
+      },
+      {
+        title: t("page-assets-qau-wordmark-purple"),
+        image: qauWordmarkPurplePurple,
+        svgUrl: `${svgPath}/quantaureum-wordmark-purple-purple.svg`,
+      },
+    ],
+    [
+      {
+        title: t("page-assets-qau-logo-landscape-white"),
+        image: qauLandscapePurpleWhite,
+        svgUrl: `${svgPath}/quantaureum-logo-landscape-purple-white.svg`,
+      },
+      {
+        title: t("page-assets-qau-wordmark-white"),
+        image: qauWordmarkPurpleWhite,
+        svgUrl: `${svgPath}/quantaureum-wordmark-purple-white.svg`,
       },
     ],
   ]
@@ -363,14 +363,14 @@ export default async function Page(props: { params: Promise<PageParams> }) {
           <Section className="flex flex-col items-center gap-space text-center">
             <Image
               className="w-20 dark:hidden"
-              src={ethDiamondBlack}
-              alt={t("page-assets-eth-diamond-gray")}
+              src={qauDiamondBlack}
+              alt={t("page-assets-qau-diamond-gray")}
               sizes="80px"
             />
             <Image
               className="hidden w-20 dark:block"
-              src={ethDiamondPurple}
-              alt={t("page-assets-eth-diamond-purple")}
+              src={qauDiamondPurple}
+              alt={t("page-assets-qau-diamond-purple")}
               sizes="80px"
             />
             <h1>{t("page-assets-h1")}</h1>
@@ -382,7 +382,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
                 {t("page-assets-historical-artwork")}
               </InlineLink>
               <InlineLink href="#brand">
-                {t("page-assets-ethereum-brand-assets")}
+                {t("page-assets-quantaureum-brand-assets")}
               </InlineLink>
             </div>
           </Section>
@@ -393,7 +393,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
           </Section>
 
           <Section id="brand">
-            <h2>{t("page-assets-ethereum-brand-assets")}</h2>
+            <h2>{t("page-assets-quantaureum-brand-assets")}</h2>
             <h3>{t("page-assets-page-assets-transparent-background")}</h3>
             {renderAssetRows(brandTransparentRows, "h4")}
             <h3>{t("page-assets-page-assets-solid-background")}</h3>

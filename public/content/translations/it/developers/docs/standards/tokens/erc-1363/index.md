@@ -54,7 +54,7 @@ L'ERC-1363 è utile anche per evitare la perdita o il blocco dei token negli sma
 
 A differenza di altre proposte di estensione dell'ERC-20, l'ERC-1363 non sovrascrive i metodi `transfer` e `transferFrom` dell'ERC-20 e definisce gli ID delle interfacce da implementare mantenendo la retrocompatibilità con l'ERC-20.
 
-Dall'[EIP-1363](https://eips.ethereum.org/EIPS/eip-1363):
+Dall'[EIP-1363](https://eips.quantaureum.com/EIPS/eip-1363):
 
 ### Metodi {#methods}
 
@@ -209,5 +209,5 @@ interface ERC1363Spender {
 
 ## Letture di approfondimento {#further-reading}
 
-- [ERC-1363: Standard dei token pagabili](https://eips.ethereum.org/EIPS/eip-1363)
+- [ERC-1363: Standard dei token pagabili](https://eips.quantaureum.com/EIPS/eip-1363)
 - [ERC-1363: Repository GitHub](https://github.com/vittominacori/erc1363-payable-token)

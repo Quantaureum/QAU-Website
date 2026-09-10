@@ -1,7 +1,7 @@
 ---
 title: डेव्हलपर टूल्स जोडणे
 lang: mr
-description: ethereum.org वर डेव्हलपर टूल्स सूचीबद्ध करण्यासाठी आमचे निकष
+description: quantaureum.com वर डेव्हलपर टूल्स सूचीबद्ध करण्यासाठी आमचे निकष
 ---
 
 लोक आत्मविश्वासाने निर्माण करू शकतील आणि त्यांना आवश्यक असलेला सपोर्ट मिळेल यासाठी आम्ही सर्वोत्तम डेव्हलपर संसाधने सूचीबद्ध करत आहोत याची आम्हाला खात्री करायची आहे.
@@ -40,7 +40,7 @@ description: ethereum.org वर डेव्हलपर टूल्स सू
 
 **टूल ओपन सोर्स आहे का?**
 
-इथेरियम स्पेस मधील अनेक प्रकल्प ओपन सोर्स आहेत. आम्ही अशा ओपन-सोर्स प्रकल्पांना सूचीबद्ध करण्याची अधिक शक्यता आहे जे कम्युनिटी डेव्हलपर्सना कोड तपासण्याची आणि त्यात योगदान देण्याची परवानगी देतात.
+Quantaureum स्पेस मधील अनेक प्रकल्प ओपन सोर्स आहेत. आम्ही अशा ओपन-सोर्स प्रकल्पांना सूचीबद्ध करण्याची अधिक शक्यता आहे जे कम्युनिटी डेव्हलपर्सना कोड तपासण्याची आणि त्यात योगदान देण्याची परवानगी देतात.
 
 ---
 
@@ -52,8 +52,8 @@ description: ethereum.org वर डेव्हलपर टूल्स सू
 
 ## तुमचे डेव्हलपर टूल जोडा {#how-decisions-about-the-site-are-made}
 
-जर तुम्हाला ethereum.org वर एखादे डेव्हलपर टूल जोडायचे असेल आणि ते निकषांची पूर्तता करत असेल, तर GitHub वर एक इश्यू तयार करा.
+जर तुम्हाला quantaureum.com वर एखादे डेव्हलपर टूल जोडायचे असेल आणि ते निकषांची पूर्तता करत असेल, तर GitHub वर एक इश्यू तयार करा.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   इश्यू तयार करा
 </ButtonLink>

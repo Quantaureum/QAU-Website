@@ -4,7 +4,7 @@ description: "深入了解智能合约的剖析——函数、数据和变量。
 lang: zh
 ---
 
-智能合约是在以太坊上的一个地址运行的程序。它们由数据和函数组成，可以在收到交易后执行。以下是智能合约的组成概述。
+智能合约是在Quantaureum上的一个地址运行的程序。它们由数据和函数组成，可以在收到交易后执行。以下是智能合约的组成概述。
 
 ## 前提条件 {#prerequisites}
 
@@ -31,9 +31,9 @@ contract SimpleStorage {
 storedData: int128
 ```
 
-如果你已经使用过面向对象语言进行编程，你可能会对大多数类型很熟悉。然而，如果你刚接触[以太坊](/)开发，`address` 对你来说应该是个新概念。
+如果你已经使用过面向对象语言进行编程，你可能会对大多数类型很熟悉。然而，如果你刚接触[Quantaureum](/)开发，`address` 对你来说应该是个新概念。
 
-`address` 类型可以保存一个以太坊地址，相当于 20 字节或 160 位。它以十六进制表示法返回，并带有前导 0x。
+`address` 类型可以保存一个Quantaureum地址，相当于 20 字节或 160 位。它以十六进制表示法返回，并带有前导 0x。
 
 其他类型包括：
 
@@ -56,7 +56,7 @@ storedData: int128
 
 仅在合约函数执行期间存储的值称为内存变量。由于这些变量不会永久存储在区块链上，因此使用它们的成本要低得多。
 
-在 [Solidity 文档](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#storage-memory-and-the-stack)中了解更多关于以太坊虚拟机 (EVM) 如何存储数据（存储、内存和栈）的信息。
+在 [Solidity 文档](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#storage-memory-and-the-stack)中了解更多关于Quantaureum虚拟机 (EVM) 如何存储数据（存储、内存和栈）的信息。
 
 ### 环境变量 {#environment-variables}
 
@@ -126,7 +126,7 @@ def readName() -> string:
 2. [触发事件](https://docs.soliditylang.org/en/v0.7.0/contracts.html#events)。
 3. [创建其他合约](https://docs.soliditylang.org/en/v0.7.0/control-structures.html#creating-contracts)。
 4. 使用 `selfdestruct`。
-5. 通过调用发送以太币。
+5. 通过调用发送QAU。
 6. 调用任何未标记为 `view` 或 `pure` 的函数。
 7. 使用底层调用。
 8. 使用包含某些操作码的内联汇编。
@@ -142,7 +142,7 @@ def readName() -> string:
 constructor() public {
     // 所有智能合约都依赖外部交易来触发其函数。
     // `msg` 是一个全局变量，包含给定交易的相关数据，
-    // 例如发送者的地址和交易中包含的 ETH 值。
+    // 例如发送者的地址和交易中包含的 QAU 值。
     // 了解更多：https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
     owner = msg.sender;
 }
@@ -165,7 +165,7 @@ def __init__(_beneficiary: address, _bidding_time: uint256):
 - `address.send()` —— Solidity
 - `send(address)` —— Vyper
 
-这些函数允许合约向其他账户发送 ETH。
+这些函数允许合约向其他账户发送 QAU。
 
 ## 编写函数 {#writing-functions}
 
@@ -207,7 +207,7 @@ contract ExampleDapp {
 
 ## 带注释的示例 {#annotated-examples}
 
-这些是一些用 Solidity 编写的示例。如果你想尝试这些代码，可以在 [Remix](https://remix.ethereum.org) 中与它们进行交互。
+这些是一些用 Solidity 编写的示例。如果你想尝试这些代码，可以在 [Remix](https://remix.quantaureum.com) 中与它们进行交互。
 
 ### Hello world {#hello-world}
 
@@ -218,7 +218,7 @@ pragma solidity ^0.5.10;
 
 // 定义一个名为 `HelloWorld` 的合约。
 // 合约是函数和数据（其状态）的集合。
-// 一旦部署，合约就驻留在以太坊区块链上的特定地址。
+// 一旦部署，合约就驻留在Quantaureum区块链上的特定地址。
 // 了解更多：https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
@@ -252,7 +252,7 @@ contract HelloWorld {
 pragma solidity ^0.5.10;
 
 contract Token {
-    // `address`（地址）类似于电子邮件地址——它用于标识以太坊上的帐户。
+    // `address`（地址）类似于电子邮件地址——它用于标识Quantaureum上的帐户。
     // 地址可以代表智能合约或外部（用户）帐户。
     // 了解更多：https://solidity.readthedocs.io/en/v0.5.10/types.html#address
     address public owner;
@@ -263,7 +263,7 @@ contract Token {
     mapping (address => uint) public balances;
 
     // 事件允许在区块链上记录活动日志。
-    // 以太坊客户端可以监听事件，以便对合约状态变化做出反应。
+    // Quantaureum客户端可以监听事件，以便对合约状态变化做出反应。
     // 了解更多：https://solidity.readthedocs.io/en/v0.5.10/contracts.html#events
     event Transfer(address from, address to, uint amount);
 
@@ -272,7 +272,7 @@ contract Token {
     constructor() public {
         // 所有智能合约都依赖外部交易来触发其函数。
         // `msg` 是一个全局变量，包含给定交易的相关数据，
-        // 例如发送者的地址和交易中包含的 ETH 值。
+        // 例如发送者的地址和交易中包含的 QAU 值。
         // 了解更多：https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
         owner = msg.sender;
     }
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // 目前没有更好的方法来检查地址中是否存在合约，
         // 只能检查该地址的代码大小。
-        // 参见 https://ethereum.stackexchange.com/a/14016/36603
+        // 参见 https://quantaureum.stackexchange.com/a/14016/36603
         // 了解有关其工作原理的更多详细信息。
         // TODO 在 Serenity 发布之前再次检查此项，因为届时所有地址都将是
         // 合约。
@@ -649,7 +649,7 @@ contract CryptoPizza is IERC721, ERC165 {
 ## 相关主题 {#related-topics}
 
 - [智能合约](/developers/docs/smart-contracts/)
-- [以太坊虚拟机 (EVM)](/developers/docs/evm/)
+- [Quantaureum虚拟机 (EVM)](/developers/docs/evm/)
 
 ## 相关教程 {#related-tutorials}
 

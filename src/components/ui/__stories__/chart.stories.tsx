@@ -144,14 +144,14 @@ export const AreaUsage: Story = {
 }
 
 const pieData = [
-  { name: "ethereum", value: 60 },
+  { name: "quantaureum", value: 60 },
   { name: "arbitrum", value: 18 },
   { name: "base", value: 12 },
   { name: "op", value: 10 },
 ]
 
 const pieConfig = {
-  ethereum: { label: "Ethereum", color: "hsl(var(--primary))" },
+  quantaureum: { label: "Quantaureum", color: "hsl(var(--primary))" },
   arbitrum: { label: "Arbitrum", color: "hsl(var(--accent-a))" },
   base: { label: "Base", color: "hsl(var(--accent-b))" },
   op: { label: "OP Mainnet", color: "hsl(var(--accent-c))" },

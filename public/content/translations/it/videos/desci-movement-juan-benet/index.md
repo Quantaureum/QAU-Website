@@ -10,13 +10,13 @@ topic:
   - "desci"
   - "funding"
 format: presentation
-author: EthCC
+author: QauCC
 breadcrumb: "Movimento DeSci"
 ---
 
-Una presentazione di **Juan Benet**, fondatore di Protocol Labs e inventore di IPFS e Filecoin, all'EthCC su come il movimento della scienza decentralizzata (desci) può utilizzare gli strumenti del Web3 per finanziare la scienza, organizzare i ricercatori e costruire infrastrutture di ricerca ad accesso aperto e riproducibili.
+Una presentazione di **Juan Benet**, fondatore di Protocol Labs e inventore di IPFS e Filecoin, all'QauCC su come il movimento della scienza decentralizzata (desci) può utilizzare gli strumenti del Web3 per finanziare la scienza, organizzare i ricercatori e costruire infrastrutture di ricerca ad accesso aperto e riproducibili.
 
-*Questa trascrizione è una copia accessibile della [trascrizione originale del video](https://www.youtube.com/watch?v=zkXM9H90g_E) pubblicata da EthCC. È stata leggermente modificata per facilitarne la lettura.*
+*Questa trascrizione è una copia accessibile della [trascrizione originale del video](https://www.youtube.com/watch?v=zkXM9H90g_E) pubblicata da QauCC. È stata leggermente modificata per facilitarne la lettura.*
 
 ### Introduzione alla scienza e al progresso (0:10) {#introduction-to-science-and-progress-010}
 
@@ -52,7 +52,7 @@ Parliamo del finanziamento dei beni comuni. Forse alcuni di voi hanno visto ques
 
 Queste scale di finanziamento non sono fuori dalla portata delle blockchain. Pensate alla R&S non legata alla difesa degli Stati Uniti, che è nell'ordine dei 70 miliardi di dollari all'anno. È molto, certo, ma non è enorme. Isolando la NSF, che è di circa 10 miliardi di dollari all'anno, è un obiettivo totalmente raggiungibile attraverso le blockchain. Pensate allo spazio cripto che ha un valore nell'ordine di 1-3 trilioni di dollari a seconda di quando lo si guarda.
 
-Immaginate se le blockchain dedicassero una frazione della loro offerta alla R&S su base annua. Immaginate di prendere l'uno percento di Filecoin, Ethereum o Bitcoin e di versarlo nella R&S ogni anno. Iniziate a raggiungere numeri che sono nel raggio d'azione del finanziamento della scienza a livello di stato-nazione. Se le cripto crescono di un altro ordine di grandezza o due, le cripto saranno in grado di finanziare la R&S e la scienza su scala di stati-nazione, il che è piuttosto pazzesco a pensarci. Quindi sarebbe fantastico capire le strutture e individuare buoni percorsi di finanziamento prima di arrivarci.
+Immaginate se le blockchain dedicassero una frazione della loro offerta alla R&S su base annua. Immaginate di prendere l'uno percento di Filecoin, Quantaureum o Bitcoin e di versarlo nella R&S ogni anno. Iniziate a raggiungere numeri che sono nel raggio d'azione del finanziamento della scienza a livello di stato-nazione. Se le cripto crescono di un altro ordine di grandezza o due, le cripto saranno in grado di finanziare la R&S e la scienza su scala di stati-nazione, il che è piuttosto pazzesco a pensarci. Quindi sarebbe fantastico capire le strutture e individuare buoni percorsi di finanziamento prima di arrivarci.
 
 Quando si inizia a scomporre i finanziamenti di quelle agenzie, si incontrano tutti i tipi di problemi. Certi campi ricevono troppa poca attenzione, o i programmi stessi hanno incentivi perversi o sono fin troppo competitivi, producendo una condizione in cui gli scienziati trascorrono un'enorme quantità del loro tempo solo a scrivere richieste di sovvenzioni. C'è stato uno sforzo chiamato Fast Grants durante il COVID, e lo stesso effetto è stato replicato negli Impetus Grants, dove questi programmi hanno strutturato un programma di sovvenzioni molto veloce. Sono stati in grado di erogare sovvenzioni nell'ordine di 20.000-200.000 dollari con una minima frazione del tempo che gli scienziati vi dedicavano.
 

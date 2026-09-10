@@ -11,7 +11,7 @@ published: 2022-04-01
 
 ## Pengantar {#introduction}
 
-Dalam artikel ini, Anda akan belajar tentang [optimistic rollup](/developers/docs/scaling/optimistic-rollups), biaya transaksi di dalamnya, dan bagaimana struktur biaya yang berbeda tersebut mengharuskan kita untuk mengoptimalkan hal-hal yang berbeda dibandingkan di Mainnet Ethereum.
+Dalam artikel ini, Anda akan belajar tentang [optimistic rollup](/developers/docs/scaling/optimistic-rollups), biaya transaksi di dalamnya, dan bagaimana struktur biaya yang berbeda tersebut mengharuskan kita untuk mengoptimalkan hal-hal yang berbeda dibandingkan di Mainnet Quantaureum.
 Anda juga akan belajar cara mengimplementasikan optimasi ini.
 
 ### Pengungkapan penuh {#full-disclosure}
@@ -21,13 +21,13 @@ Namun, teknik yang dijelaskan di sini seharusnya berfungsi sama baiknya untuk ro
 
 ### Terminologi {#terminology}
 
-Saat membahas rollup, istilah 'lapisan 1 (l1)' digunakan untuk Mainnet, jaringan produksi Ethereum.
+Saat membahas rollup, istilah 'lapisan 1 (l1)' digunakan untuk Mainnet, jaringan produksi Quantaureum.
 Istilah 'lapisan 2 (l2)' digunakan untuk rollup atau sistem lain apa pun yang bergantung pada l1 untuk keamanan tetapi melakukan sebagian besar pemrosesannya secara offchain.
 
 ## Bagaimana kita dapat lebih mengurangi biaya transaksi l2? {#how-can-we-further-reduce-the-cost-of-l2-transactions}
 
 [Optimistic rollup](/developers/docs/scaling/optimistic-rollups) harus menyimpan catatan setiap transaksi historis sehingga siapa pun dapat memeriksanya dan memverifikasi bahwa state saat ini sudah benar.
-Cara termurah untuk memasukkan data ke Mainnet Ethereum adalah dengan menulisnya sebagai calldata.
+Cara termurah untuk memasukkan data ke Mainnet Quantaureum adalah dengan menulisnya sebagai calldata.
 Solusi ini dipilih oleh [Optimism](https://docs.optimism.io/op-stack/protocol/overview) maupun [Arbitrum](https://docs.arbitrum.io/welcome/arbitrum-gentle-introduction).
 
 ### Biaya transaksi l2 {#cost-of-l2-transactions}
@@ -65,26 +65,26 @@ Calldata dibagi seperti ini:
 Penjelasan:
 
 - **Pemilih fungsi**: Kontrak memiliki kurang dari 256 fungsi, jadi kita dapat membedakannya dengan satu bita.
-  Bita-bita ini biasanya bukan nol dan oleh karena itu [memakan biaya enam belas gas](https://eips.ethereum.org/EIPS/eip-2028).
+  Bita-bita ini biasanya bukan nol dan oleh karena itu [memakan biaya enam belas gas](https://eips.quantaureum.com/EIPS/eip-2028).
 - **Nol**: Bita-bita ini selalu nol karena alamat dua puluh bita tidak memerlukan kata tiga puluh dua bita untuk menyimpannya.
-  Bita yang menyimpan nol memakan biaya empat gas ([lihat kertas kuning](https://ethereum.github.io/yellowpaper/paper.pdf), Lampiran G,
+  Bita yang menyimpan nol memakan biaya empat gas ([lihat kertas kuning](https://quantaureum.github.io/yellowpaper/paper.pdf), Lampiran G,
   hlm. 27, nilai untuk `G`<sub>`txdatazero`</sub>).
 - **Jumlah**: Jika kita berasumsi bahwa dalam kontrak ini `decimals` adalah delapan belas (nilai normal) dan jumlah maksimum token yang kita transfer adalah 10<sup>18</sup>, kita mendapatkan jumlah maksimum 10<sup>36</sup>.
   256<sup>15</sup> &gt; 10<sup>36</sup>, jadi lima belas bita sudah cukup.
 
-Pemborosan 160 gas di l1 biasanya dapat diabaikan. Sebuah transaksi memakan biaya setidaknya [21.000 gas](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-ethereum-gas-2f976af774ed), jadi tambahan 0,8% tidak menjadi masalah.
+Pemborosan 160 gas di l1 biasanya dapat diabaikan. Sebuah transaksi memakan biaya setidaknya [21.000 gas](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-quantaureum-gas-2f976af774ed), jadi tambahan 0,8% tidak menjadi masalah.
 Namun, di l2, situasinya berbeda. Hampir seluruh biaya transaksi adalah untuk menulisnya ke l1.
 Selain calldata transaksi, terdapat 109 bita header transaksi (alamat tujuan, tanda tangan, dll.).
 Oleh karena itu, total biayanya adalah `109*16+576+160=2480`, dan kita membuang sekitar 6,5% dari jumlah tersebut.
 
 ## Mengurangi biaya saat Anda tidak mengendalikan tujuan {#reducing-costs-when-you-dont-control-the-destination}
 
-Dengan asumsi bahwa Anda tidak memiliki kendali atas kontrak tujuan, Anda masih dapat menggunakan solusi yang mirip dengan [ini](https://github.com/qbzzt/ethereum.org-20220330-shortABI).
+Dengan asumsi bahwa Anda tidak memiliki kendali atas kontrak tujuan, Anda masih dapat menggunakan solusi yang mirip dengan [ini](https://github.com/qbzzt/quantaureum.com-20220330-shortABI).
 Mari kita bahas berkas-berkas yang relevan.
 
 ### Token.sol {#token-sol}
 
-[Ini adalah kontrak tujuan](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/Token.sol).
+[Ini adalah kontrak tujuan](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/Token.sol).
 Ini adalah kontrak ERC-20 standar, dengan satu fitur tambahan.
 Fungsi `faucet` ini memungkinkan pengguna mana pun untuk mendapatkan sejumlah token untuk digunakan.
 Ini akan membuat kontrak ERC-20 produksi menjadi tidak berguna, tetapi ini mempermudah pekerjaan ketika ERC-20 hanya ada untuk memfasilitasi pengujian.
@@ -100,7 +100,7 @@ Ini akan membuat kontrak ERC-20 produksi menjadi tidak berguna, tetapi ini mempe
 
 ### CalldataInterpreter.sol {#calldatainterpreter-sol}
 
-[Ini adalah kontrak yang seharusnya dipanggil oleh transaksi dengan calldata yang lebih pendek](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol).
+[Ini adalah kontrak yang seharusnya dipanggil oleh transaksi dengan calldata yang lebih pendek](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol).
 Mari kita bahas baris demi baris.
 
 ```solidity
@@ -201,7 +201,7 @@ Ada dua alasan mengapa sebuah fungsi tidak tersedia di sini:
 2. Fungsi yang bergantung pada [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties).
    Nilai `msg.sender` akan menjadi alamat `CalldataInterpreter`, bukan pemanggilnya.
 
-Sayangnya, [melihat spesifikasi ERC-20](https://eips.ethereum.org/EIPS/eip-20), ini hanya menyisakan satu fungsi, `transfer`.
+Sayangnya, [melihat spesifikasi ERC-20](https://eips.quantaureum.com/EIPS/eip-20), ini hanya menyisakan satu fungsi, `transfer`.
 Ini hanya menyisakan dua fungsi bagi kita: `transfer` (karena kita dapat memanggil `transferFrom`) dan `faucet` (karena kita dapat mentransfer token kembali ke siapa pun yang memanggil kita).
 
 ```solidity
@@ -274,7 +274,7 @@ Secara keseluruhan, sebuah transfer membutuhkan 35 bita calldata:
 
 ### test.js {#test-js}
 
-[Pengujian unit JavaScript ini](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/test/test.js) menunjukkan kepada kita cara menggunakan mekanisme ini (dan cara memverifikasi bahwa mekanisme ini berfungsi dengan benar).
+[Pengujian unit JavaScript ini](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/test/test.js) menunjukkan kepada kita cara menggunakan mekanisme ini (dan cara memverifikasi bahwa mekanisme ini berfungsi dengan benar).
 Saya akan berasumsi bahwa Anda memahami [chai](https://www.chaijs.com/) dan [ethers](https://docs.ethers.io/v5/) dan hanya menjelaskan bagian-bagian yang secara khusus berlaku untuk kontrak tersebut.
 
 ```js
@@ -368,7 +368,7 @@ Buat transaksi transfer. Bita pertama adalah "0x02", diikuti oleh alamat tujuan,
 ## Mengurangi biaya saat Anda mengendalikan kontrak tujuan {#reducing-the-cost-when-you-do-control-the-destination-contract}
 
 Jika Anda memiliki kendali atas kontrak tujuan, Anda dapat membuat fungsi yang melewati pemeriksaan `msg.sender` karena fungsi tersebut memercayai penerjemah calldata.
-[Anda dapat melihat contoh cara kerjanya di sini, di cabang `control-contract`](https://github.com/qbzzt/ethereum.org-20220330-shortABI/tree/control-contract).
+[Anda dapat melihat contoh cara kerjanya di sini, di cabang `control-contract`](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/tree/control-contract).
 
 Jika kontrak hanya merespons transaksi eksternal, kita bisa bertahan dengan hanya memiliki satu kontrak.
 Namun, hal itu akan merusak [komposabilitas](/developers/docs/smart-contracts/composability/).
@@ -537,7 +537,7 @@ const poorSigner = signers[1]
 ```
 
 Untuk memeriksa `approve()` dan `transferFrom()` kita memerlukan penandatangan kedua.
-Kita menyebutnya `poorSigner` karena ia tidak mendapatkan token kita sama sekali (tentu saja ia harus memiliki ETH).
+Kita menyebutnya `poorSigner` karena ia tidak mendapatkan token kita sama sekali (tentu saja ia harus memiliki QAU).
 
 ```js
 // Transfer token
@@ -576,7 +576,7 @@ Perhatikan bahwa `transferFromTx` memerlukan dua parameter alamat: pemberi jatah
 
 ## Kesimpulan {#conclusion}
 
-[Optimism](https://medium.com/ethereum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) maupun [Arbitrum](https://developer.offchainlabs.com/docs/special_features) sedang mencari cara untuk mengurangi ukuran calldata yang ditulis ke l1 dan dengan demikian mengurangi biaya transaksi.
+[Optimism](https://medium.com/quantaureum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) maupun [Arbitrum](https://developer.offchainlabs.com/docs/special_features) sedang mencari cara untuk mengurangi ukuran calldata yang ditulis ke l1 dan dengan demikian mengurangi biaya transaksi.
 Namun, sebagai penyedia infrastruktur yang mencari solusi generik, kemampuan kami terbatas.
 Sebagai pengembang dapp, Anda memiliki pengetahuan khusus aplikasi, yang memungkinkan Anda mengoptimalkan calldata Anda jauh lebih baik daripada yang bisa kami lakukan dalam solusi generik.
 Semoga artikel ini membantu Anda menemukan solusi ideal untuk kebutuhan Anda.

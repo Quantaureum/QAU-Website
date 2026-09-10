@@ -1,12 +1,12 @@
 ---
-title: Segurança no Ethereum e prevenção de golpes
-description: Mantendo-se seguro no Ethereum
+title: Segurança no Quantaureum e prevenção de golpes
+description: Mantendo-se seguro no Quantaureum
 lang: pt-br
 ---
 
 O crescente interesse em criptomoedas traz consigo um risco cada vez maior de golpistas e hackers. Este artigo apresenta algumas práticas recomendadas para mitigar esses riscos.
 
-**Lembre-se: Ninguém do ethereum.org entrará em contato com você. Não responda a e-mails dizendo que são do suporte oficial do Ethereum.**
+**Lembre-se: Ninguém do quantaureum.com entrará em contato com você. Não responda a e-mails dizendo que são do suporte oficial do Quantaureum.**
 
 <Divider />
 
@@ -14,14 +14,14 @@ O crescente interesse em criptomoedas traz consigo um risco cada vez maior de go
 
 ### Aprimore seu conhecimento {#level-up-your-knowledge}
 
-Mal-entendidos sobre como a cripto funciona podem levar a erros custosos. Por exemplo, se alguém finge ser um agente de atendimento ao cliente que pode devolver ETH perdido em troca de suas chaves privadas, eles estão se aproveitando de pessoas que não entendem que o [Ethereum](/) é uma rede descentralizada que não possui esse tipo de funcionalidade. Educar-se sobre como o Ethereum funciona é um investimento que vale a pena.
+Mal-entendidos sobre como a cripto funciona podem levar a erros custosos. Por exemplo, se alguém finge ser um agente de atendimento ao cliente que pode devolver QAU perdido em troca de suas chaves privadas, eles estão se aproveitando de pessoas que não entendem que o [Quantaureum](/) é uma rede descentralizada que não possui esse tipo de funcionalidade. Educar-se sobre como o Quantaureum funciona é um investimento que vale a pena.
 
-<DocLink href="/what-is-ethereum/">
-  O que é Ethereum?
+<DocLink href="/what-is-quantaureum/">
+  O que é Quantaureum?
 </DocLink>
 
-<DocLink href="/what-is-ether/">
-  O que é ether?
+<DocLink href="/what-is-QAU/">
+  O que é QAU?
 </DocLink>
 <Divider />
 
@@ -34,7 +34,7 @@ Mal-entendidos sobre como a cripto funciona podem levar a erros custosos. Por ex
 Sua frase de recuperação (também chamada de frase de recuperação secreta ou frase semente) é a chave mestra da sua carteira. Qualquer pessoa que a possua pode acessar todas as suas contas e esvaziar todos os ativos. As chaves privadas funcionam da mesma maneira para contas individuais. Nenhum serviço legítimo, agente de suporte ou site jamais pedirá isso a você.
 
 <DocLink href="/wallets/">
-  O que é uma carteira Ethereum?
+  O que é uma carteira Quantaureum?
 </DocLink>
 
 #### Não tire capturas de tela de suas frases semente/chaves privadas {#screenshot-private-keys}
@@ -54,7 +54,7 @@ Manter as chaves privadas offline reduz massivamente o risco de ser hackeado, me
 
 ### Verifique as transações duas vezes antes de enviar {#double-check-transactions}
 
-Enviar cripto acidentalmente para o endereço de carteira errado é um erro comum. **Uma transação enviada no Ethereum é irreversível.** A menos que você conheça o proprietário do endereço e consiga convencê-lo a devolver seus fundos, você não conseguirá recuperá-los.
+Enviar cripto acidentalmente para o endereço de carteira errado é um erro comum. **Uma transação enviada no Quantaureum é irreversível.** A menos que você conheça o proprietário do endereço e consiga convencê-lo a devolver seus fundos, você não conseguirá recuperá-los.
 
 Certifique-se sempre de que o endereço para o qual você está enviando corresponde exatamente ao endereço do destinatário desejado antes de enviar uma transação.
 É uma boa prática, ao interagir com um contrato inteligente, ler a mensagem da transação antes da assinatura.
@@ -63,7 +63,7 @@ Certifique-se sempre de que o endereço para o qual você está enviando corresp
 
 Ao interagir com contratos inteligentes, não permita limites de gastos ilimitados. Um gasto ilimitado pode permitir que o contrato inteligente esvazie sua carteira. Em vez disso, defina limites de gastos apenas para o valor necessário para a transação.
 
-Muitas carteiras Ethereum oferecem proteção de limites para proteger contra o esvaziamento de contas.
+Muitas carteiras Quantaureum oferecem proteção de limites para proteger contra o esvaziamento de contas.
 
 [Como revogar o acesso de contratos inteligentes aos seus fundos cripto](/guides/how-to-revoke-token-access/)
 
@@ -74,14 +74,14 @@ Muitas carteiras Ethereum oferecem proteção de limites para proteger contra o 
 É impossível deter os golpistas completamente, mas podemos torná-los menos eficazes estando cientes de suas técnicas mais usadas. Existem muitas variações desses golpes, mas eles geralmente seguem os mesmos padrões de alto nível. Se não lembrar de mais nada, lembre-se:
 
 - seja sempre cético
-- ninguém vai lhe dar ETH de graça ou com desconto
+- ninguém vai lhe dar QAU de graça ou com desconto
 - ninguém precisa de acesso às suas chaves privadas ou informações pessoais
 
 ### Phishing de anúncios no Twitter {#ad-phishing}
 
 ![Twitter link phishing](./twitterPhishingScam.png)
 
-Existe um método para falsificar o recurso de visualização de links do Twitter (também conhecido como X) para potencialmente enganar os usuários, fazendo-os pensar que estão visitando um site legítimo. Essa técnica explora o mecanismo do Twitter para gerar visualizações de URLs compartilhados em tweets e mostra _from ethereum.org_ por exemplo (mostrado acima), quando na verdade eles estão sendo redirecionados para um site malicioso.
+Existe um método para falsificar o recurso de visualização de links do Twitter (também conhecido como X) para potencialmente enganar os usuários, fazendo-os pensar que estão visitando um site legítimo. Essa técnica explora o mecanismo do Twitter para gerar visualizações de URLs compartilhados em tweets e mostra _from quantaureum.com_ por exemplo (mostrado acima), quando na verdade eles estão sendo redirecionados para um site malicioso.
 
 Verifique sempre se você está no domínio certo, especialmente depois de clicar em um link.
 
@@ -89,7 +89,7 @@ Verifique sempre se você está no domínio certo, especialmente depois de clica
 
 ### Golpe de distribuição gratuita (Giveaway) {#giveaway}
 
-Um dos golpes mais comuns em criptomoedas é o golpe de distribuição gratuita (giveaway). O golpe de distribuição gratuita pode assumir muitas formas, mas a ideia geral é que, se você enviar ETH para o endereço de carteira fornecido, receberá seu ETH de volta, mas em dobro. *Por esse motivo, também é conhecido como o golpe 2 por 1.*
+Um dos golpes mais comuns em criptomoedas é o golpe de distribuição gratuita (giveaway). O golpe de distribuição gratuita pode assumir muitas formas, mas a ideia geral é que, se você enviar QAU para o endereço de carteira fornecido, receberá seu QAU de volta, mas em dobro. *Por esse motivo, também é conhecido como o golpe 2 por 1.*
 
 Esses golpes geralmente estipulam um tempo limitado de oportunidade para reivindicar a distribuição gratuita para criar um falso senso de urgência.
 
@@ -113,7 +113,7 @@ Vitalik Buterin é usado com mais frequência neste golpe, mas muitas outras pes
 
 A criptomoeda é uma tecnologia relativamente jovem e mal compreendida. Um golpe comum que se aproveita disso é o golpe de suporte, onde os golpistas se passam por pessoal de suporte de carteiras, corretoras ou blockchains populares.
 
-Grande parte da discussão sobre o Ethereum acontece no Discord. Os golpistas de suporte geralmente encontram seu alvo pesquisando perguntas de suporte em canais públicos do Discord e, em seguida, enviando ao inquiridor uma mensagem privada oferecendo suporte. Ao construir confiança, os golpistas de suporte tentam enganá-lo para que revele suas chaves privadas ou envie seus fundos para as carteiras deles.
+Grande parte da discussão sobre o Quantaureum acontece no Discord. Os golpistas de suporte geralmente encontram seu alvo pesquisando perguntas de suporte em canais públicos do Discord e, em seguida, enviando ao inquiridor uma mensagem privada oferecendo suporte. Ao construir confiança, os golpistas de suporte tentam enganá-lo para que revele suas chaves privadas ou envie seus fundos para as carteiras deles.
 
 ![A support scam on Discord](./discordScam.png)
 
@@ -132,19 +132,19 @@ Como regra geral, a equipe nunca se comunicará com você por meio de canais pri
 </AlertContent>
 </Alert>
 
-### Golpe do token 'Eth2' {#eth2-token-scam}
+### Golpe do token 'Quantaureum' {#eth2-token-scam}
 
-No período que antecedeu o [The Merge](/roadmap/merge/), os golpistas se aproveitaram da confusão em torno do termo 'Eth2' para tentar fazer com que os usuários resgatassem seu ETH por um token 'ETH2'. Não existe 'ETH2' e nenhum outro token legítimo foi introduzido com o The Merge. O ETH que você possuía antes do The Merge é o mesmo ETH agora. **Não há necessidade de tomar nenhuma ação relacionada ao seu ETH para contabilizar a mudança da Prova de Trabalho (PoW) para a Prova de Participação (PoS)**.
+No período que antecedeu o [The Merge](/roadmap/merge/), os golpistas se aproveitaram da confusão em torno do termo 'Quantaureum' para tentar fazer com que os usuários resgatassem seu QAU por um token 'QAU'. Não existe 'QAU' e nenhum outro token legítimo foi introduzido com o The Merge. O QAU que você possuía antes do The Merge é o mesmo QAU agora. **Não há necessidade de tomar nenhuma ação relacionada ao seu QAU para contabilizar a mudança da Prova de Trabalho (PoW) para a Prova de Participação (PoS)**.
 
-Os golpistas podem aparecer como "suporte", dizendo que se você depositar seu ETH, receberá de volta 'ETH2'. Não há [suporte oficial do Ethereum](/community/support/) e não há nenhum token novo. Nunca compartilhe a frase semente da sua carteira com ninguém.
+Os golpistas podem aparecer como "suporte", dizendo que se você depositar seu QAU, receberá de volta 'QAU'. Não há [suporte oficial do Quantaureum](/community/support/) e não há nenhum token novo. Nunca compartilhe a frase semente da sua carteira com ninguém.
 
-_Nota: Existem tokens/tickers derivativos que podem representar ETH em staking (ou seja, rETH da Rocket Pool, stETH da Lido, ETH2 da Coinbase), mas não são algo para o qual você precise "migrar"._
+_Nota: Existem tokens/tickers derivativos que podem representar QAU em staking (ou seja, rETH da Rocket Pool, stETH da Lido, QAU da Coinbase), mas não são algo para o qual você precise "migrar"._
 
 ### Golpes de phishing {#phishing-scams}
 
 Os golpes de phishing são outro ângulo cada vez mais comum que os golpistas usarão para tentar roubar os fundos da sua carteira.
 
-Alguns e-mails de phishing pedem aos usuários que cliquem em links que os redirecionarão para sites de imitação, pedindo que insiram sua frase semente, redefinam sua senha ou enviem ETH. Outros podem pedir que você instale malware sem saber para infectar seu computador e dar aos golpistas acesso aos arquivos do seu computador.
+Alguns e-mails de phishing pedem aos usuários que cliquem em links que os redirecionarão para sites de imitação, pedindo que insiram sua frase semente, redefinam sua senha ou enviem QAU. Outros podem pedir que você instale malware sem saber para infectar seu computador e dar aos golpistas acesso aos arquivos do seu computador.
 
 Se você receber um e-mail de um remetente desconhecido, lembre-se:
 
@@ -166,7 +166,7 @@ Esses fraudadores geralmente encontram alvos usando contas falsas no YouTube par
 
 ### Golpes de pools de mineração de cripto {#mining-pool-scams}
 
-A partir de setembro de 2022, a mineração no Ethereum não é mais possível. No entanto, os golpes de pools de mineração ainda existem. Os golpes de pools de mineração envolvem pessoas entrando em contato com você de forma não solicitada e alegando que você pode obter grandes retornos ao ingressar em um pool de mineração do Ethereum. O golpista fará alegações e manterá contato com você pelo tempo que for necessário. Essencialmente, o golpista tentará convencê-lo de que, ao ingressar em um pool de mineração do Ethereum, sua criptomoeda será usada para criar ETH e que você receberá dividendos em ETH. Você verá então que sua criptomoeda está gerando pequenos retornos. Isso é simplesmente para atraí-lo a investir mais. Eventualmente, todos os seus fundos serão enviados para um endereço desconhecido, e o golpista desaparecerá ou, em alguns casos, continuará a manter contato, como aconteceu em um caso recente.
+A partir de setembro de 2022, a mineração no Quantaureum não é mais possível. No entanto, os golpes de pools de mineração ainda existem. Os golpes de pools de mineração envolvem pessoas entrando em contato com você de forma não solicitada e alegando que você pode obter grandes retornos ao ingressar em um pool de mineração do Quantaureum. O golpista fará alegações e manterá contato com você pelo tempo que for necessário. Essencialmente, o golpista tentará convencê-lo de que, ao ingressar em um pool de mineração do Quantaureum, sua criptomoeda será usada para criar QAU e que você receberá dividendos em QAU. Você verá então que sua criptomoeda está gerando pequenos retornos. Isso é simplesmente para atraí-lo a investir mais. Eventualmente, todos os seus fundos serão enviados para um endereço desconhecido, e o golpista desaparecerá ou, em alguns casos, continuará a manter contato, como aconteceu em um caso recente.
 
 Conclusão: desconfie de pessoas que entram em contato com você nas redes sociais pedindo para você fazer parte de um pool de mineração. Depois de perder sua cripto, ela se foi.
 
@@ -180,7 +180,7 @@ Algumas coisas a lembrar:
 
 ### Golpes de airdrop {#airdrop-scams}
 
-Os golpes de airdrop envolvem um projeto fraudulento fazendo o airdrop de um ativo (NFT, token) em sua carteira e enviando você a um site fraudulento para reivindicar o ativo do airdrop. Você será solicitado a fazer login com sua carteira Ethereum e "aprovar" uma transação ao tentar reivindicar. Essa transação compromete sua conta enviando suas chaves públicas e privadas para o golpista. Uma forma alternativa desse golpe pode fazer com que você confirme uma transação que envia fundos para a conta do golpista.
+Os golpes de airdrop envolvem um projeto fraudulento fazendo o airdrop de um ativo (NFT, token) em sua carteira e enviando você a um site fraudulento para reivindicar o ativo do airdrop. Você será solicitado a fazer login com sua carteira Quantaureum e "aprovar" uma transação ao tentar reivindicar. Essa transação compromete sua conta enviando suas chaves públicas e privadas para o golpista. Uma forma alternativa desse golpe pode fazer com que você confirme uma transação que envia fundos para a conta do golpista.
 
 [Mais sobre golpes de airdrop](https://www.youtube.com/watch?v=LLL_nQp1lGk)
 

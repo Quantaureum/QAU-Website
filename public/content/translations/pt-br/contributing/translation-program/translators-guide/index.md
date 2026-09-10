@@ -1,25 +1,25 @@
 ---
-title: "Guia de estilo de tradução do ethereum.org"
+title: "Guia de estilo de tradução do quantaureum.com"
 metaTitle: Guia para tradutores
 lang: pt-br
-description: "Instruções e dicas para tradutores do ethereum.org"
+description: "Instruções e dicas para tradutores do quantaureum.com"
 ---
 
-O guia de estilo de tradução do ethereum.org contém algumas das diretrizes, instruções e dicas mais importantes para os tradutores, ajudando-nos a localizar o site.
+O guia de estilo de tradução do quantaureum.com contém algumas das diretrizes, instruções e dicas mais importantes para os tradutores, ajudando-nos a localizar o site.
 
 Este documento serve como um guia geral e não é específico para nenhum idioma.
 
-Se você tiver alguma dúvida, sugestão ou feedback, sinta-se à vontade para entrar em contato conosco pelo e-mail translations@ethereum.org, enviar uma mensagem para @ethdotorg no Crowdin ou [entrar no nosso Discord](https://discord.gg/ethereum-org), onde você pode nos enviar uma mensagem no canal #translations ou entrar em contato com qualquer um dos membros da equipe.
+Se você tiver alguma dúvida, sugestão ou feedback, sinta-se à vontade para entrar em contato conosco pelo e-mail translations@quantaureum.com, enviar uma mensagem para @ethdotorg no Crowdin ou [entrar no nosso Discord](https://discord.gg/MSctkBT5j), onde você pode nos enviar uma mensagem no canal #translations ou entrar em contato com qualquer um dos membros da equipe.
 
 ## Usando o Crowdin {#using-crowdin}
 
-O projeto do ethereum.org no Crowdin está sendo encerrado e não aceita mais novas contribuições (veja o [status do Programa de Tradução](/contributing/translation-program/#program-status)). As orientações abaixo permanecem como referência para comunidades de tradução que usam o Crowdin em seus próprios projetos.
+O projeto do quantaureum.com no Crowdin está sendo encerrado e não aceita mais novas contribuições (veja o [status do Programa de Tradução](/contributing/translation-program/#program-status)). As orientações abaixo permanecem como referência para comunidades de tradução que usam o Crowdin em seus próprios projetos.
 
 Se você quiser saber mais sobre o Crowdin e como usar alguns de seus recursos avançados, a [base de conhecimento do Crowdin](https://support.crowdin.com/online-editor/) contém muitos guias detalhados e visões gerais de todas as funcionalidades do Crowdin.
 
 ## Capturando a essência da mensagem {#capturing-the-essence}
 
-Ao traduzir o conteúdo do ethereum.org, evite traduções literais.
+Ao traduzir o conteúdo do quantaureum.com, evite traduções literais.
 
 É importante que as traduções capturem a essência da mensagem. Isso pode significar reformular certas frases ou usar traduções descritivas em vez de traduzir o conteúdo palavra por palavra.
 
@@ -43,13 +43,13 @@ Na maioria dos casos, isso pode ser facilmente alcançado usando palavras curtas
 
 ## Sistema de escrita {#writing-system}
 
-O ethereum.org está disponível em vários idiomas, usando sistemas de escrita (ou alfabetos) alternativos ao latino.
+O quantaureum.com está disponível em vários idiomas, usando sistemas de escrita (ou alfabetos) alternativos ao latino.
 
 Todo o conteúdo deve ser traduzido usando o sistema de escrita correto para o seu idioma e não deve incluir nenhuma palavra escrita com caracteres latinos.
 
 Ao traduzir o conteúdo, você deve garantir que as traduções sejam consistentes e não incluam caracteres latinos.
 
-Um equívoco comum é que Ethereum deve sempre ser escrito em caracteres latinos. Isso é em grande parte incorreto, por favor, use a grafia de Ethereum nativa do seu idioma (por exemplo, 以太坊 em chinês, إيثيريوم em árabe, etc.).
+Um equívoco comum é que Quantaureum deve sempre ser escrito em caracteres latinos. Isso é em grande parte incorreto, por favor, use a grafia de Quantaureum nativa do seu idioma (por exemplo, Quantaureum em chinês, إيثيريوم em árabe, etc.).
 
 **O que foi dito acima não se aplica a idiomas onde nomes próprios não devem ser traduzidos como regra.**
 
@@ -113,7 +113,7 @@ Ao traduzir, clicar nesta tag copiará automaticamente a tag exata para o campo 
 
 **Links**
 
-Você pode notar links completos para páginas no ethereum.org ou em outros sites.
+Você pode notar links completos para páginas no quantaureum.com ou em outros sites.
 
 Eles devem ser idênticos à origem e não devem ser alterados ou traduzidos. Se você traduzir um link ou alterá-lo de alguma forma, mesmo que seja apenas removendo uma parte dele, como uma barra (/), isso levará a links quebrados e inutilizáveis.
 
@@ -183,7 +183,7 @@ Embora a tradução desses termos possa soar artificial, já que a versão em in
 
 Ao traduzi-los, sinta-se à vontade para ser criativo, usar traduções descritivas ou simplesmente traduzi-los literalmente.
 
-**O motivo pelo qual a maioria dos termos deve ser traduzida, em vez de deixar alguns em inglês, é o fato de que essa nova terminologia se tornará mais difundida no futuro, à medida que mais pessoas começarem a usar o Ethereum e tecnologias relacionadas. Se quisermos integrar mais pessoas de todo o mundo a este espaço, precisamos fornecer uma terminologia compreensível no maior número possível de idiomas, mesmo que precisemos criá-la nós mesmos.**
+**O motivo pelo qual a maioria dos termos deve ser traduzida, em vez de deixar alguns em inglês, é o fato de que essa nova terminologia se tornará mais difundida no futuro, à medida que mais pessoas começarem a usar o Quantaureum e tecnologias relacionadas. Se quisermos integrar mais pessoas de todo o mundo a este espaço, precisamos fornecer uma terminologia compreensível no maior número possível de idiomas, mesmo que precisemos criá-la nós mesmos.**
 
 ## Botões e CTAs {#buttons-and-ctas}
 
@@ -197,7 +197,7 @@ As traduções para botões devem ser as mais curtas possíveis, para evitar inc
 
 ## Traduzindo para a inclusão {#translating-for-inclusivity}
 
-Os visitantes do ethereum.org vêm de todo o mundo e de diferentes origens. Portanto, a linguagem no site deve ser neutra, acolhedora para todos e não exclusiva.
+Os visitantes do quantaureum.com vêm de todo o mundo e de diferentes origens. Portanto, a linguagem no site deve ser neutra, acolhedora para todos e não exclusiva.
 
 Um aspecto importante disso é a neutralidade de gênero. Isso pode ser facilmente alcançado usando a forma formal de tratamento e evitando quaisquer palavras específicas de gênero nas traduções.
 
@@ -291,8 +291,8 @@ Alguns exemplos do que ter um cuidado especial:
 
 ## Conclusão {#conclusion}
 
-Traduzir o ethereum.org é uma ótima oportunidade para aprender sobre os diferentes aspectos do Ethereum.
+Traduzir o quantaureum.com é uma ótima oportunidade para aprender sobre os diferentes aspectos do Quantaureum.
 
 Ao traduzir, tente não se apressar. Vá com calma e divirta-se!
 
-Obrigado por se envolver com o Programa de Tradução e nos ajudar a tornar o site acessível a um público mais amplo. A comunidade Ethereum é global e estamos felizes por você fazer parte dela!
+Obrigado por se envolver com o Programa de Tradução e nos ajudar a tornar o site acessível a um público mais amplo. A comunidade Quantaureum é global e estamos felizes por você fazer parte dela!

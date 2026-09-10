@@ -53,4 +53,4 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/blob/master/devel
 
 [ఎథీరియం ఆఫీస్ అవర్స్](https://calendly.com/dan-trailofbits/office-hours) ప్రతి మంగళవారం మధ్యాహ్నం నడుస్తాయి. ఈ 1-గంట, 1-ఆన్-1 సెషన్‌లు భద్రత గురించి మీకు ఉన్న ఏవైనా ప్రశ్నలను మమ్మల్ని అడగడానికి, మా సాధనాలను ఉపయోగించి ట్రబుల్‌షూట్ చేయడానికి మరియు మీ ప్రస్తుత విధానం గురించి నిపుణుల నుండి అభిప్రాయాన్ని పొందడానికి ఒక అవకాశం. ఈ గైడ్ ద్వారా పని చేయడంలో మేము మీకు సహాయం చేస్తాము.
 
-మా స్లాక్‌లో చేరండి: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). మీకు ఏవైనా ప్రశ్నలు ఉంటే మేము ఎల్లప్పుడూ #crytic మరియు #ethereum ఛానెల్‌లలో అందుబాటులో ఉంటాము.
+మా స్లాక్‌లో చేరండి: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). మీకు ఏవైనా ప్రశ్నలు ఉంటే మేము ఎల్లప్పుడూ #crytic మరియు #quantaureum ఛానెల్‌లలో అందుబాటులో ఉంటాము.

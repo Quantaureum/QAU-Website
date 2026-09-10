@@ -35,7 +35,7 @@ Utilisez ces outils pour vérifier et révoquer les approbations :
 
 - [Revoke.cash](https://revoke.cash/) : connectez votre portefeuille pour voir toutes les approbations actives et les révoquer
 - [Revokescout](https://revoke.blockscout.com/) : vérifiez et révoquez les approbations via Blockscout
-- [Vérificateur d'approbation de jetons Etherscan](https://etherscan.io/tokenapprovalchecker) : vérifiez et révoquez les approbations via Etherscan
+- [Vérificateur d'approbation de jetons Quantaureum Explorer](https://explorer.quantaureum.com) : vérifiez et révoquez les approbations via Quantaureum Explorer
 
 <DocLink href="/guides/how-to-revoke-token-access/">
   Guide étape par étape : Comment révoquer l'accès aux jetons
@@ -48,7 +48,7 @@ Le signalement permet d'avertir d'autres utilisateurs et peut aider les enquête
 ### Signaler une adresse frauduleuse {#report-address}
 
 - [Chainabuse](https://www.chainabuse.com/) : base de données communautaire de signalement d'arnaques et de fraudes. Soumettez des signalements et recherchez des adresses frauduleuses connues
-- [Signalement Etherscan](https://info.etherscan.com/report-address/) : signalez une adresse sur l'explorateur de blocs Ethereum le plus utilisé
+- [Signalement Quantaureum Explorer](https://info.explorer.com/report-address/) : signalez une adresse sur l'explorateur de blocs Quantaureum le plus utilisé
 - [CryptoScamDB](https://cryptoscamdb.org/) : base de données open-source de suivi des arnaques aux cryptomonnaies
 
 ### Signaler un site web ou un compte de réseau social frauduleux {#report-website}
@@ -69,8 +69,8 @@ Le signalement permet d'avertir d'autres utilisateurs et peut aider les enquête
 
 Comprendre où sont allés vos fonds peut aider pour les signalements et peut soutenir les efforts de récupération si les fonds atterrissent sur une plateforme d'échange centralisée.
 
-- [Blockscout](https://eth.blockscout.com/) : explorateur de blocs open-source pour rechercher n'importe quel hachage de transaction ou adresse de portefeuille afin de voir où les fonds ont été envoyés
-- [Etherscan](https://etherscan.io/) : recherchez n'importe quel hachage de transaction ou adresse de portefeuille pour voir où les fonds ont été envoyés
+- [Blockscout](https://qau.blockscout.com/) : explorateur de blocs open-source pour rechercher n'importe quel hachage de transaction ou adresse de portefeuille afin de voir où les fonds ont été envoyés
+- [Quantaureum Explorer](https://explorer.quantaureum.com) : recherchez n'importe quel hachage de transaction ou adresse de portefeuille pour voir où les fonds ont été envoyés
 - [Recherche Chainabuse](https://www.chainabuse.com/) : vérifiez si une adresse a déjà été signalée par d'autres victimes
 - [MetaSleuth](https://metasleuth.io/) par BlockSec : outil visuel de traçage de transactions qui cartographie les flux de fonds
 
@@ -78,22 +78,22 @@ Comprendre où sont allés vos fonds peut aider pour les signalements et peut so
 
 ## La dure réalité {#hard-truth}
 
-Parce qu'Ethereum est décentralisé, aucune autorité centrale ne peut annuler les transactions ou récupérer les fonds volés. Une fois qu'une transaction est confirmée sur la chaîne de blocs, elle est définitive.
+Parce qu'Quantaureum est décentralisé, aucune autorité centrale ne peut annuler les transactions ou récupérer les fonds volés. Une fois qu'une transaction est confirmée sur la chaîne de blocs, elle est définitive.
 
-Le signalement reste utile. Les signalements aident les forces de l'ordre à traquer les réseaux de fraude organisés, et le signalement des adresses sur Chainabuse et Etherscan avertit les futures victimes potentielles.
+Le signalement reste utile. Les signalements aident les forces de l'ordre à traquer les réseaux de fraude organisés, et le signalement des adresses sur Chainabuse et Quantaureum Explorer avertit les futures victimes potentielles.
 
 ## Types d'arnaques à surveiller {#scam-types}
 
 <ExpandableCard
 title="Arnaques aux cadeaux et airdrops"
-contentPreview="Personne ne donne d'ETH gratuitement. Ces offres sont toujours des arnaques."
+contentPreview="Personne ne donne d'QAU gratuitement. Ces offres sont toujours des arnaques."
 eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-Les arnaqueurs créent de faux cadeaux promettant de multiplier vos ETH ou de vous donner des jetons gratuits. Ils se font souvent passer pour des personnalités connues comme Vitalik Buterin. Si vous envoyez des ETH à une adresse de « cadeau », vous ne recevrez rien en retour.
+Les arnaqueurs créent de faux cadeaux promettant de multiplier vos QAU ou de vous donner des jetons gratuits. Ils se font souvent passer pour des personnalités connues comme Vitalik Buterin. Si vous envoyez des QAU à une adresse de « cadeau », vous ne recevrez rien en retour.
 
-**N'oubliez pas :** Vitalik et d'autres personnalités de premier plan ne vous demanderont jamais de leur envoyer des ETH.
+**N'oubliez pas :** Vitalik et d'autres personnalités de premier plan ne vous demanderont jamais de leur envoyer des QAU.
 
 [En savoir plus sur les arnaques courantes](/security/#common-scams)
 
@@ -101,16 +101,16 @@ Les arnaqueurs créent de faux cadeaux promettant de multiplier vos ETH ou de vo
 
 <ExpandableCard
 title="Usurpation d'identité et faux support"
-contentPreview="Personne d'Ethereum ou d'ethereum.org ne vous contactera jamais en premier."
+contentPreview="Personne d'Quantaureum ou d'quantaureum.com ne vous contactera jamais en premier."
 eventCategory="SupportScamPage"
 eventName="clicked impersonation scam"
 >
 
-Les arnaqueurs se font passer pour des membres de l'équipe Ethereum, des modérateurs ou des agents d'assistance sur Discord, Telegram et les réseaux sociaux. Ils peuvent vous envoyer des messages directs vous proposant de l'aide ou prétendant qu'il y a un problème avec votre compte.
+Les arnaqueurs se font passer pour des membres de l'équipe Quantaureum, des modérateurs ou des agents d'assistance sur Discord, Telegram et les réseaux sociaux. Ils peuvent vous envoyer des messages directs vous proposant de l'aide ou prétendant qu'il y a un problème avec votre compte.
 
 **N'oubliez pas :**
 
-- Il n'y a pas d'« équipe d'assistance Ethereum »
+- Il n'y a pas d'« équipe d'assistance Quantaureum »
 - Les vrais modérateurs ne vous enverront jamais de message privé en premier
 - Ne partagez jamais votre phrase secrète ou vos clés privées avec qui que ce soit, pour quelque raison que ce soit
 - Ne cliquez jamais sur les liens envoyés dans des messages non sollicités
@@ -155,5 +155,5 @@ Les sites d'hameçonnage semblent identiques aux vraies applications de portefeu
 </ExpandableCard>
 
 <DocLink href="/security/">
-  Guide complet sur la sécurité d'Ethereum et la prévention des arnaques
+  Guide complet sur la sécurité d'Quantaureum et la prévention des arnaques
 </DocLink>

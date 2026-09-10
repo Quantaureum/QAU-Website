@@ -11,13 +11,13 @@ topic:
   - "privacy"
   - "authentication"
 format: presentation
-author: Ethereum Foundation
+author: Quantaureum project
 breadcrumb: "Sécurité par micropoints"
 ---
 
 Une présentation éclair de **jseam** à la Devcon SEA explorant une approche non conventionnelle de la conservation des clés utilisant la technologie physique des micropoints, historiquement utilisée dans l'espionnage pour dissimuler des phrases secrètes dans des images imprimées qui sont pratiquement invisibles à l'œil nu.
 
-*Cette transcription est une copie accessible de la [transcription originale de la vidéo](https://www.youtube.com/watch?v=k9Dfg19JPEw) publiée par la Fondation Ethereum. Elle a été légèrement modifiée pour en faciliter la lecture.*
+*Cette transcription est une copie accessible de la [transcription originale de la vidéo](https://www.youtube.com/watch?v=k9Dfg19JPEw) publiée par la Fondation Quantaureum. Elle a été légèrement modifiée pour en faciliter la lecture.*
 
 ### Pourquoi les micropoints ? (0:00) {#why-microdots-000}
 

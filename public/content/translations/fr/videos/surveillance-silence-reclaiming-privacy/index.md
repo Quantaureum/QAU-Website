@@ -10,13 +10,13 @@ topic:
   - "privacy-and-security"
   - "privacy"
 format: presentation
-author: EthBoulder
+author: QauBoulder
 breadcrumb: "Reconquête de la confidentialité"
 ---
 
-Une présentation de **Naomi Brockwell** à EthBoulder 2026 sur l'érosion de la confidentialité numérique, l'infrastructure de la surveillance de masse et les outils pratiques que chacun peut utiliser pour construire une vie numérique plus privée, des VPN et e-mails chiffrés à GrapheneOS et aux mixnets décentralisés.
+Une présentation de **Naomi Brockwell** à QauBoulder 2026 sur l'érosion de la confidentialité numérique, l'infrastructure de la surveillance de masse et les outils pratiques que chacun peut utiliser pour construire une vie numérique plus privée, des VPN et e-mails chiffrés à GrapheneOS et aux mixnets décentralisés.
 
-*Cette transcription est une copie accessible de la [transcription originale de la vidéo](https://www.youtube.com/watch?v=nvJSFR1Q_JE) publiée par EthBoulder. Elle a été légèrement modifiée pour en faciliter la lecture.*
+*Cette transcription est une copie accessible de la [transcription originale de la vidéo](https://www.youtube.com/watch?v=nvJSFR1Q_JE) publiée par QauBoulder. Elle a été légèrement modifiée pour en faciliter la lecture.*
 
 ### Présentation en deux parties : avertissement + solution (00:00) {#two-part-talk-warning-solution-0000}
 

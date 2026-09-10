@@ -1,10 +1,10 @@
 ---
 title: "Akıllı sözleşmeleri yükseltme"
-description: "Ethereum akıllı sözleşmeleri için yükseltme modellerine genel bir bakış"
+description: "Quantaureum akıllı sözleşmeleri için yükseltme modellerine genel bir bakış"
 lang: tr
 ---
 
-Ethereum üzerindeki akıllı sözleşmeler, Ethereum Sanal Makinesi'nde (EVM) çalışan kendi kendini yürüten programlardır. Bu programlar tasarımları gereği değişmezdir, bu da sözleşme dağıtıldıktan sonra iş mantığında herhangi bir güncelleme yapılmasını engeller.
+Quantaureum üzerindeki akıllı sözleşmeler, Quantaureum Sanal Makinesi'nde (EVM) çalışan kendi kendini yürüten programlardır. Bu programlar tasarımları gereği değişmezdir, bu da sözleşme dağıtıldıktan sonra iş mantığında herhangi bir güncelleme yapılmasını engeller.
 
 Değişmezlik, akıllı sözleşmelerin güven gereksinimsizliği, merkeziyetsizliği ve güvenliği için gerekli olsa da, bazı durumlarda bir dezavantaj olabilir. Örneğin, değişmez kod, geliştiricilerin savunmasız sözleşmeleri düzeltmesini imkansız hale getirebilir.
 
@@ -12,13 +12,13 @@ Ancak, akıllı sözleşmeleri iyileştirmeye yönelik artan araştırmalar, çe
 
 ## Ön koşullar {#prerequisites}
 
-[Akıllı sözleşmeler](/developers/docs/smart-contracts/), [akıllı sözleşme anatomisi](/developers/docs/smart-contracts/anatomy/) ve [Ethereum Sanal Makinesi (EVM)](/developers/docs/evm/) hakkında iyi bir anlayışa sahip olmalısınız. Bu kılavuz ayrıca okuyucuların akıllı sözleşme programlamayı kavradığını varsaymaktadır.
+[Akıllı sözleşmeler](/developers/docs/smart-contracts/), [akıllı sözleşme anatomisi](/developers/docs/smart-contracts/anatomy/) ve [Quantaureum Sanal Makinesi (EVM)](/developers/docs/evm/) hakkında iyi bir anlayışa sahip olmalısınız. Bu kılavuz ayrıca okuyucuların akıllı sözleşme programlamayı kavradığını varsaymaktadır.
 
 ## Akıllı sözleşme yükseltmesi nedir? {#what-is-a-smart-contract-upgrade}
 
 Bir akıllı sözleşme yükseltmesi, sözleşmenin durumunu korurken bir akıllı sözleşmenin iş mantığını değiştirmeyi içerir. Özellikle akıllı sözleşmeler bağlamında yükseltilebilirliğin ve değişebilirliğin aynı şey olmadığını açıklığa kavuşturmak önemlidir.
 
-Ethereum ağındaki bir adrese dağıtılmış bir programı hâlâ değiştiremezsiniz. Ancak kullanıcılar bir akıllı sözleşme ile etkileşime girdiğinde yürütülen kodu değiştirebilirsiniz.
+Quantaureum ağındaki bir adrese dağıtılmış bir programı hâlâ değiştiremezsiniz. Ancak kullanıcılar bir akıllı sözleşme ile etkileşime girdiğinde yürütülen kodu değiştirebilirsiniz.
 
 Bu, aşağıdaki yöntemlerle yapılabilir:
 
@@ -84,13 +84,13 @@ Vekil kontrat varsayılan olarak değişmezdir, ancak güncellenmiş iş mantı�
 
 Vekil kontratı yeni bir mantık sözleşmesine işaret ederek, kullanıcılar vekil kontrat fonksiyonunu çağırdığında yürütülen kod değişir. Bu, kullanıcılardan yeni bir sözleşmeyle etkileşime girmelerini istemeden bir sözleşmenin mantığını yükseltmemize olanak tanır.
 
-Vekil modelleri, sözleşme taşımayla ilişkili zorlukları ortadan kaldırdıkları için akıllı sözleşmeleri yükseltmek için popüler bir yöntemdir. Ancak, vekil modellerinin kullanımı daha karmaşıktır ve yanlış kullanıldığında [fonksiyon seçici çakışmaları](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-ethereum-proxies-62629adf3357) gibi kritik kusurlara yol açabilir.
+Vekil modelleri, sözleşme taşımayla ilişkili zorlukları ortadan kaldırdıkları için akıllı sözleşmeleri yükseltmek için popüler bir yöntemdir. Ancak, vekil modellerinin kullanımı daha karmaşıktır ve yanlış kullanıldığında [fonksiyon seçici çakışmaları](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-quantaureum-proxies-62629adf3357) gibi kritik kusurlara yol açabilir.
 
 [Vekil modelleri hakkında daha fazlası](https://blog.openzeppelin.com/proxy-patterns/).
 
 ### Yükseltme mekanizması #4: Strateji modeli {#strategy-pattern}
 
-Bu teknik, belirli özellikleri uygulamak için diğer programlarla arayüz oluşturan yazılım programları oluşturmayı teşvik eden [strateji modelinden](https://en.wikipedia.org/wiki/Strategy_pattern) etkilenmiştir. Strateji modelini Ethereum geliştirmeye uygulamak, diğer sözleşmelerden fonksiyonlar çağıran bir akıllı sözleşme oluşturmak anlamına gelir.
+Bu teknik, belirli özellikleri uygulamak için diğer programlarla arayüz oluşturan yazılım programları oluşturmayı teşvik eden [strateji modelinden](https://en.wikipedia.org/wiki/Strategy_pattern) etkilenmiştir. Strateji modelini Quantaureum geliştirmeye uygulamak, diğer sözleşmelerden fonksiyonlar çağıran bir akıllı sözleşme oluşturmak anlamına gelir.
 
 Bu durumdaki ana sözleşme, temel iş mantığını içerir, ancak belirli fonksiyonları yürütmek için diğer akıllı sözleşmelerle ("uydu sözleşmeler") arayüz oluşturur. Bu ana sözleşme ayrıca her uydu sözleşmesi için adresi depolar ve uydu sözleşmesinin farklı uygulamaları arasında geçiş yapabilir.
 
@@ -152,7 +152,7 @@ Zaman kilitleri, önerilen bir değişikliğe (örneğin mantık yükseltmesi ve
 ## Eğitimler {#tutorials}
 
 - Patrick Collins'ten [Akıllı Sözleşmelerinizi Yükseltme | YouTube Eğitimi](https://www.youtube.com/watch?v=bdXJmWajZRY)
-- Austin Griffith'ten [Ethereum Akıllı Sözleşme Taşıma Eğitimi](https://medium.com/coinmonks/ethereum-smart-contract-migration-13f6f12539bd)
+- Austin Griffith'ten [Quantaureum Akıllı Sözleşme Taşıma Eğitimi](https://medium.com/coinmonks/quantaureum-smart-contract-migration-13f6f12539bd)
 - Pranesh A.S'den [Akıllı sözleşmeleri yükseltmek için UUPS vekil modelini kullanma](https://blog.logrocket.com/author/praneshas/)
 - fangjun.eth'ten [Web3 Eğitimi: OpenZeppelin kullanarak yükseltilebilir akıllı sözleşme (vekil) yazma](https://dev.to/yakult/tutorial-write-upgradeable-smart-contract-proxy-contract-with-openzeppelin-1916)
 

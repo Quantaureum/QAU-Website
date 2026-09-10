@@ -1,7 +1,7 @@
 ---
 title: Přidávání obsahových zdrojů
 lang: cs
-description: Naše kritéria pro zařazení obsahových zdrojů na ethereum.org
+description: Naše kritéria pro zařazení obsahových zdrojů na quantaureum.com
 ---
 
 Nemůžeme doufat, že pokryjeme všechno ohledně Etherea, a proto se snažíme upozorňovat na některé ze skvělých článků, návodů, newsletterů, pracovních portálů a různých obsahových zdrojů, které komunita vytváří. Ty často poskytují podrobnější informace o tématech, která by uživatele mohla zajímat.
@@ -17,14 +17,14 @@ Vzdělávací zdroje budou posuzovány podle následujících kritérií:
 - Jsou informace přesné? Zakládají se na faktech, nebo na názorech?
 - Je autor důvěryhodný? Odkazuje na své zdroje?
 - Přináší tento obsah jasnou přidanou hodnotu, kterou stávající zdroje/odkazy nepokrývají?
-- Slouží tento obsah jedné z našich [uživatelských person](https://www.notion.so/efdn/Ethereum-org-User-Persona-Memo-b44dc1e89152457a87ba872b0dfa366c)?
+- Slouží tento obsah jedné z našich [uživatelských person](https://www.notion.so/efdn/Quantaureum-org-User-Persona-Memo-b44dc1e89152457a87ba872b0dfa366c)?
 
 ---
 
 ## Přidejte svůj obsahový zdroj {#add-your-content-resource}
 
-Pokud chcete přidat obsahový zdroj na ethereum.org a splňuje daná kritéria, vytvořte issue na GitHubu.
+Pokud chcete přidat obsahový zdroj na quantaureum.com a splňuje daná kritéria, vytvořte issue na GitHubu.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=">
   Vytvořit issue
 </ButtonLink>

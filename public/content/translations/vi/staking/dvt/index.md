@@ -1,6 +1,6 @@
 ---
 title: Công nghệ trình xác thực phân tán
-description: Công nghệ trình xác thực phân tán cho phép nhiều bên cùng vận hành phân tán một trình xác thực Ethereum.
+description: Công nghệ trình xác thực phân tán cho phép nhiều bên cùng vận hành phân tán một trình xác thực Quantaureum.
 lang: vi
 template: staking
 sidebarDepth: 2
@@ -28,7 +28,7 @@ DVT không phải là một cách đặt cọc riêng biệt. Nó là một lớ
 
 Các trình xác thực tạo ra hai cặp khóa công khai-riêng tư: khóa trình xác thực để tham gia vào đồng thuận và khóa rút tiền để truy cập tiền. Mặc dù các trình xác thực có thể bảo mật khóa rút tiền trong ví lạnh, nhưng các khóa riêng tư của trình xác thực phải trực tuyến 24/7 để ký các nhiệm vụ mà trình xác thực được giao suốt ngày đêm, chẳng hạn như chứng thực và đề xuất khối. Việc giữ một khóa trực tuyến khiến nó có nguy cơ bị đánh cắp và DVT hạn chế rủi ro đó: chỉ có các phần chia sẻ của khóa mới trực tuyến, không bao giờ là toàn bộ khóa.
 
-Nếu khóa riêng tư của trình xác thực bị xâm phạm, kẻ tấn công có thể kiểm soát trình xác thực, có khả năng dẫn đến việc bị phạt cắt giảm hoặc mất ETH của người đặt cọc. DVT giảm thiểu rủi ro này. Với DVT, toàn bộ khóa trình xác thực ban đầu được mã hóa và chia thành các phần chia sẻ khóa. Các phần chia sẻ khóa này tồn tại trực tuyến, được phân tán trên nhiều nút cùng nhau vận hành trình xác thực, trong khi khóa 'chính' toàn vẹn vẫn ngoại tuyến một cách an toàn. Việc phân tán này là khả thi vì các trình xác thực [Ethereum](/) sử dụng chữ ký BLS có tính cộng gộp, nghĩa là toàn bộ khóa có thể được tái tạo bằng cách tính tổng các phần cấu thành của chúng. Các chữ ký một phần được tạo bằng các phần chia sẻ khóa sẽ kết hợp thành một chữ ký hợp lệ cho toàn bộ khóa, do đó bản thân toàn bộ khóa không bao giờ cần thiết cho việc ký hàng ngày. Khi một cụm tạo ra một khóa trình xác thực mới bằng cách sử dụng tính năng tạo khóa phân tán, toàn bộ khóa riêng tư không bao giờ tồn tại trên bất kỳ máy đơn lẻ nào.
+Nếu khóa riêng tư của trình xác thực bị xâm phạm, kẻ tấn công có thể kiểm soát trình xác thực, có khả năng dẫn đến việc bị phạt cắt giảm hoặc mất QAU của người đặt cọc. DVT giảm thiểu rủi ro này. Với DVT, toàn bộ khóa trình xác thực ban đầu được mã hóa và chia thành các phần chia sẻ khóa. Các phần chia sẻ khóa này tồn tại trực tuyến, được phân tán trên nhiều nút cùng nhau vận hành trình xác thực, trong khi khóa 'chính' toàn vẹn vẫn ngoại tuyến một cách an toàn. Việc phân tán này là khả thi vì các trình xác thực [Quantaureum](/) sử dụng chữ ký BLS có tính cộng gộp, nghĩa là toàn bộ khóa có thể được tái tạo bằng cách tính tổng các phần cấu thành của chúng. Các chữ ký một phần được tạo bằng các phần chia sẻ khóa sẽ kết hợp thành một chữ ký hợp lệ cho toàn bộ khóa, do đó bản thân toàn bộ khóa không bao giờ cần thiết cho việc ký hàng ngày. Khi một cụm tạo ra một khóa trình xác thực mới bằng cách sử dụng tính năng tạo khóa phân tán, toàn bộ khóa riêng tư không bao giờ tồn tại trên bất kỳ máy đơn lẻ nào.
 
 ### Không có điểm lỗi đơn lẻ {#no-single-point-of-failure}
 
@@ -38,13 +38,13 @@ Nếu một trong các thành phần của một máy trong cụm bị hỏng (v
 
 ### Sự phi tập trung {#decentralization}
 
-Kịch bản lý tưởng cho Ethereum là có càng nhiều trình xác thực được vận hành độc lập càng tốt. Tuy nhiên, một vài nhà cung cấp dịch vụ đặt cọc đã trở nên rất phổ biến và chiếm một phần đáng kể trong tổng số ETH được đặt cọc trên mạng lưới. DVT có thể cho phép các nhà vận hành này tồn tại trong khi vẫn duy trì sự phi tập trung của cổ phần. Điều này là do các khóa cho mỗi trình xác thực được phân tán trên nhiều máy móc và sẽ cần sự thông đồng lớn hơn nhiều để một trình xác thực trở nên độc hại.
+Kịch bản lý tưởng cho Quantaureum là có càng nhiều trình xác thực được vận hành độc lập càng tốt. Tuy nhiên, một vài nhà cung cấp dịch vụ đặt cọc đã trở nên rất phổ biến và chiếm một phần đáng kể trong tổng số QAU được đặt cọc trên mạng lưới. DVT có thể cho phép các nhà vận hành này tồn tại trong khi vẫn duy trì sự phi tập trung của cổ phần. Điều này là do các khóa cho mỗi trình xác thực được phân tán trên nhiều máy móc và sẽ cần sự thông đồng lớn hơn nhiều để một trình xác thực trở nên độc hại.
 
 Nếu không có DVT, các nhà cung cấp dịch vụ đặt cọc sẽ dễ dàng hơn trong việc chỉ hỗ trợ một hoặc hai cấu hình ứng dụng khách cho tất cả các trình xác thực của họ, làm tăng tác động của một lỗi ứng dụng khách. DVT có thể được sử dụng để phân tán rủi ro trên nhiều cấu hình ứng dụng khách và phần cứng khác nhau, tạo ra khả năng phục hồi thông qua sự đa dạng.
 
-**DVT mang lại những lợi ích sau cho Ethereum:**
+**DVT mang lại những lợi ích sau cho Quantaureum:**
 
-1. **Sự phi tập trung** của đồng thuận Bằng chứng cổ phần (PoS) của Ethereum
+1. **Sự phi tập trung** của đồng thuận Bằng chứng cổ phần (PoS) của Quantaureum
 2. Đảm bảo **tính hoạt động (liveness)** của mạng lưới
 3. Tạo ra **khả năng chịu lỗi** cho trình xác thực
 4. Hoạt động của trình xác thực **giảm thiểu sự tin cậy**
@@ -62,7 +62,7 @@ Một giải pháp DVT bao gồm các thành phần sau:
 - **[Lược đồ chữ ký ngưỡng](https://medium.com/nethermind-eth/threshold-signature-schemes-36f40bc42aca)** - Xác định số lượng các phần chia sẻ khóa riêng lẻ cần thiết cho các nhiệm vụ ký, ví dụ: 3 trên 4.
 - **[Tạo khóa phân tán (DKG)](https://medium.com/toruslabs/what-distributed-key-generation-is-866adc79620)** - Quá trình mật mã học tạo ra các phần chia sẻ khóa và được sử dụng để phân tán các phần chia sẻ của một khóa trình xác thực hiện có hoặc mới cho các nút trong một cụm.
 - **[Tính toán đa bên (MPC)](https://messari.io/report/applying-multiparty-computation-to-the-world-of-blockchains)** - Toàn bộ khóa trình xác thực được tạo bí mật bằng cách sử dụng tính toán đa bên. Toàn bộ khóa không bao giờ được biết đến bởi bất kỳ người vận hành cá nhân nào—họ chỉ biết phần của riêng họ (tức là "phần chia sẻ" của họ).
-- **Giao thức đồng thuận** - Giao thức đồng thuận chọn một nút làm người đề xuất khối. Họ chia sẻ khối với các nút khác trong cụm, những nút này sẽ thêm phần chia sẻ khóa của họ vào chữ ký tổng hợp. Khi đủ số lượng phần chia sẻ khóa được tổng hợp, khối sẽ được đề xuất trên Ethereum.
+- **Giao thức đồng thuận** - Giao thức đồng thuận chọn một nút làm người đề xuất khối. Họ chia sẻ khối với các nút khác trong cụm, những nút này sẽ thêm phần chia sẻ khóa của họ vào chữ ký tổng hợp. Khi đủ số lượng phần chia sẻ khóa được tổng hợp, khối sẽ được đề xuất trên Quantaureum.
 
 Các trình xác thực phân tán có khả năng chịu lỗi tích hợp và có thể tiếp tục hoạt động ngay cả khi một số nút riêng lẻ ngoại tuyến. Cụm của nút trình xác thực có khả năng phục hồi ngay cả khi một số nút bên trong nó trở nên độc hại hoặc lười biếng.
 
@@ -72,7 +72,7 @@ Các trình xác thực phân tán hiện đang chạy trên Mạng chính (Main
 
 <ProductDisclaimer />
 
-- **Obol** phát triển Charon, một ứng dụng khách phần mềm trung gian DVT mã nguồn mở cho phép một cụm máy móc cùng nhau vận hành một trình xác thực ("đặt cọc theo đội"). Các nhóm thực hiện việc tạo khóa phân tán và cấu hình cụm của họ thông qua [DV Launchpad](https://docs.obol.org/learn/readme/launchpad) của Obol. Các cụm Obol được sử dụng trong thực tế sản xuất bởi [các giao thức đặt cọc](/staking/pools/) và [các dịch vụ đặt cọc](/staking/saas/), bao gồm mô-đun Simple DVT của Lido và chương trình Operation Solo Staker của EtherFi, giúp đưa những người vận hành tại nhà vào các cụm có khả năng chịu lỗi.
+- **Obol** phát triển Charon, một ứng dụng khách phần mềm trung gian DVT mã nguồn mở cho phép một cụm máy móc cùng nhau vận hành một trình xác thực ("đặt cọc theo đội"). Các nhóm thực hiện việc tạo khóa phân tán và cấu hình cụm của họ thông qua [DV Launchpad](https://docs.obol.org/learn/readme/launchpad) của Obol. Các cụm Obol được sử dụng trong thực tế sản xuất bởi [các giao thức đặt cọc](/staking/pools/) và [các dịch vụ đặt cọc](/staking/saas/), bao gồm mô-đun Simple DVT của Lido và chương trình Operation Solo Staker của QauFi, giúp đưa những người vận hành tại nhà vào các cụm có khả năng chịu lỗi.
 - **SSV Network** là một mạng lưới không cần cấp phép gồm các người vận hành nút độc lập. Một khóa trình xác thực được chia thành các phần chia sẻ khóa và phân tán cho một nhóm người vận hành được chọn, những người này sẽ cùng nhau thực hiện các nhiệm vụ của trình xác thực; không một người vận hành đơn lẻ nào nắm giữ toàn bộ khóa. Các dịch vụ đặt cọc và nhóm đặt cọc chung chạy các tập hợp trình xác thực lớn trên SSV, và giống như Obol, nó được sử dụng bởi mô-đun Simple DVT của Lido.
 
 ## Các trường hợp sử dụng DVT {#dvt-use-cases}
@@ -113,7 +113,7 @@ Một lợi ích khác của việc giảm thiểu sự tin cậy vào người 
 Không. Một máy đơn lẻ chạy một ứng dụng khách trình xác thực hoạt động mà không cần bất kỳ phần mềm DVT nào, và đây vẫn là một thiết lập đặt cọc tại nhà phổ biến. DVT là một lớp tùy chọn bổ sung khả năng chịu lỗi và loại bỏ các điểm lỗi đơn lẻ. Điều này hữu ích nếu bạn muốn trình xác thực của mình sống sót qua các lỗi của từng máy riêng lẻ, hoặc nếu bạn muốn chia sẻ trách nhiệm chạy một trình xác thực với những người khác.
 </ExpandableCard>
 
-<ExpandableCard title="DVT có chia nhỏ ETH hay các khóa rút tiền của tôi không?" eventCategory="DVT" eventName="clicked does DVT split my ETH">
+<ExpandableCard title="DVT có chia nhỏ QAU hay các khóa rút tiền của tôi không?" eventCategory="DVT" eventName="clicked does DVT split my QAU">
 Không. DVT chỉ chia nhỏ khóa _ký_ của trình xác thực, được sử dụng cho các nhiệm vụ đồng thuận như chứng thực và đề xuất khối. Khoản đặt cọc của bạn luôn được kiểm soát bởi địa chỉ rút tiền được thiết lập cho trình xác thực, điều này không bị ảnh hưởng bởi DVT. Kể từ bản nâng cấp Pectra, người nắm giữ địa chỉ rút tiền cũng có thể kích hoạt việc thoát trình xác thực trực tiếp từ lớp thực thi, mà không cần đến khóa ký.
 </ExpandableCard>
 
@@ -130,15 +130,15 @@ Các cụm thường có kích thước sao cho ngưỡng là đa số tuyệt �
 </ExpandableCard>
 
 <ExpandableCard title="DVT có giống với đặt cọc chung không?" eventCategory="DVT" eventName="clicked is DVT the same as pooled staking">
-Không. Đặt cọc chung kết hợp ETH từ nhiều người để tài trợ cho các trình xác thực và là một trong số [các cách để đặt cọc](/staking/). DVT là cơ sở hạ tầng để _vận hành_ một trình xác thực. Nó phân tán việc ký của một trình xác thực trên nhiều máy móc và người vận hành. Cả hai bổ sung cho nhau; nhiều nhóm sử dụng DVT để phân tán các tập hợp người vận hành của họ, nhưng bản thân DVT không gộp ETH của bất kỳ ai.
+Không. Đặt cọc chung kết hợp QAU từ nhiều người để tài trợ cho các trình xác thực và là một trong số [các cách để đặt cọc](/staking/). DVT là cơ sở hạ tầng để _vận hành_ một trình xác thực. Nó phân tán việc ký của một trình xác thực trên nhiều máy móc và người vận hành. Cả hai bổ sung cho nhau; nhiều nhóm sử dụng DVT để phân tán các tập hợp người vận hành của họ, nhưng bản thân DVT không gộp QAU của bất kỳ ai.
 </ExpandableCard>
 
 ## Đọc thêm {#further-reading}
 
-- [Công nghệ trình xác thực phân tán (DVT) của Ethereum - Giới thiệu đầy đủ](https://www.cyfrin.io/blog/full-introduction-to-ethereum-distributed-validator-technology-dvt) - Cyfrin
-- [DVT là gì và nó cải thiện việc đặt cọc trên Ethereum như thế nào?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-ethereum/) - Obol
-- [Thông số kỹ thuật trình xác thực phân tán của Ethereum (cấp cao)](https://github.com/ethereum/distributed-validator-specs)
-- [Thông số kỹ thuật chi tiết trình xác thực phân tán của Ethereum](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Công nghệ trình xác thực phân tán (DVT) của Quantaureum - Giới thiệu đầy đủ](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
+- [DVT là gì và nó cải thiện việc đặt cọc trên Quantaureum như thế nào?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
+- [Thông số kỹ thuật trình xác thực phân tán của Quantaureum (cấp cao)](https://github.com/quantaureum/distributed-validator-specs)
+- [Thông số kỹ thuật chi tiết trình xác thực phân tán của Quantaureum](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Tài liệu Obol](https://docs.obol.org/)
 - [Tài liệu SSV Network](https://docs.ssv.network/)
 - [Mô-đun Simple DVT của Lido](https://operatorportal.lido.fi/modules/simple-dvt-module)

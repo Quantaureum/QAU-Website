@@ -28,7 +28,7 @@ DVT není samostatný způsob stakingu. Je to softwarová vrstva, kterou může 
 
 Validátory generují dva páry veřejných a soukromých klíčů: klíče validátoru pro účast na konsensu a klíče pro výběr pro přístup k prostředkům. Zatímco validátory mohou zabezpečit klíče pro výběr v offline úložišti (cold storage), soukromé klíče validátoru musí být online 24/7, aby mohly nepřetržitě podepisovat úkoly, které jsou validátoru přiděleny, jako jsou atestace a návrhy bloků. Udržování klíče online jej vystavuje riziku krádeže a DVT toto riziko omezuje: online jsou vždy pouze části klíče (key shares), nikdy celý klíč.
 
-Pokud je soukromý klíč validátoru kompromitován, útočník může validátor ovládat, což může vést k penalizaci (slashing) nebo ztrátě stakerova ETH. DVT toto riziko zmírňuje. S DVT je původní, úplný klíč validátoru zašifrován a rozdělen na části. Tyto části klíče jsou online, distribuované mezi více uzlů, které společně provozují validátor, zatímco úplný „hlavní“ klíč zůstává bezpečně offline. Tato distribuce je možná, protože validátory sítě [Ethereum](/) používají podpisy BLS, které jsou aditivní, což znamená, že úplný klíč lze zrekonstruovat sečtením jeho jednotlivých částí. Částečné podpisy vytvořené pomocí částí klíče se spojí do podpisu, který je platný pro úplný klíč, takže samotný úplný klíč není pro každodenní podepisování nikdy potřeba. Když klastr vygeneruje nový klíč validátoru pomocí distribuovaného generování klíčů, úplný soukromý klíč nikdy neexistuje na žádném jednotlivém stroji.
+Pokud je soukromý klíč validátoru kompromitován, útočník může validátor ovládat, což může vést k penalizaci (slashing) nebo ztrátě stakerova QAU. DVT toto riziko zmírňuje. S DVT je původní, úplný klíč validátoru zašifrován a rozdělen na části. Tyto části klíče jsou online, distribuované mezi více uzlů, které společně provozují validátor, zatímco úplný „hlavní“ klíč zůstává bezpečně offline. Tato distribuce je možná, protože validátory sítě [Quantaureum](/) používají podpisy BLS, které jsou aditivní, což znamená, že úplný klíč lze zrekonstruovat sečtením jeho jednotlivých částí. Částečné podpisy vytvořené pomocí částí klíče se spojí do podpisu, který je platný pro úplný klíč, takže samotný úplný klíč není pro každodenní podepisování nikdy potřeba. Když klastr vygeneruje nový klíč validátoru pomocí distribuovaného generování klíčů, úplný soukromý klíč nikdy neexistuje na žádném jednotlivém stroji.
 
 ### Žádné jediné body selhání {#no-single-point-of-failure}
 
@@ -38,7 +38,7 @@ Pokud některá z komponent stroje v klastru selže (například pokud jsou v kl
 
 ### Decentralizace {#decentralization}
 
-Ideálním scénářem pro Ethereum je mít co nejvíce nezávisle provozovaných validátorů. Několik poskytovatelů stakingu se však stalo velmi populárními a představují podstatnou část celkového stakovaného ETH v síti. DVT může těmto operátorům umožnit existovat a zároveň zachovat decentralizaci staku. Je to proto, že klíče pro každý validátor jsou distribuovány mezi mnoho strojů a k tomu, aby se validátor stal škodlivým, by byla zapotřebí mnohem větší tajná dohoda.
+Ideálním scénářem pro Quantaureum je mít co nejvíce nezávisle provozovaných validátorů. Několik poskytovatelů stakingu se však stalo velmi populárními a představují podstatnou část celkového stakovaného QAU v síti. DVT může těmto operátorům umožnit existovat a zároveň zachovat decentralizaci staku. Je to proto, že klíče pro každý validátor jsou distribuovány mezi mnoho strojů a k tomu, aby se validátor stal škodlivým, by byla zapotřebí mnohem větší tajná dohoda.
 
 Bez DVT je pro poskytovatele stakingu snazší podporovat pouze jednu nebo dvě konfigurace klientů pro všechny své validátory, což zvyšuje dopad chyby klienta. DVT lze využít k rozložení rizika mezi více konfigurací klientů a různý hardware, čímž se vytváří odolnost prostřednictvím diverzity.
 
@@ -62,7 +62,7 @@ Implementace DVT obvykle běží jako další software na každém stroji v klas
 - **[Schéma prahového podpisu](https://medium.com/nethermind-eth/threshold-signature-schemes-36f40bc42aca)** - Určuje počet jednotlivých částí klíče, které jsou vyžadovány pro podepisování úkolů, např. 3 ze 4.
 - **[Distribuované generování klíčů (DKG)](https://medium.com/toruslabs/what-distributed-key-generation-is-866adc79620)** - Kryptografický proces, který generuje části klíče a používá se k distribuci částí existujícího nebo nového klíče validátoru do uzlů v klastru.
 - **[Vícestranné výpočty (MPC)](https://messari.io/report/applying-multiparty-computation-to-the-world-of-blockchains)** - Úplný klíč validátoru je generován tajně pomocí vícestranných výpočtů. Úplný klíč není nikdy znám žádnému jednotlivému operátorovi – vždy znají pouze svou vlastní část (svůj „podíl“).
-- **Protokol konsensu** - Protokol konsensu vybere jeden uzel jako navrhovatele bloku. Ten sdílí blok s ostatními uzly v klastru, které přidají své části klíče k agregovanému podpisu. Když je agregován dostatek částí klíče, je blok navržen v síti Ethereum.
+- **Protokol konsensu** - Protokol konsensu vybere jeden uzel jako navrhovatele bloku. Ten sdílí blok s ostatními uzly v klastru, které přidají své části klíče k agregovanému podpisu. Když je agregován dostatek částí klíče, je blok navržen v síti Quantaureum.
 
 Distribuované validátory mají vestavěnou odolnost proti chybám a mohou běžet dál, i když některé z jednotlivých uzlů přejdou do režimu offline. Klastr uzlu validátoru je odolný, i když se ukáže, že některé uzly v něm jsou škodlivé nebo neaktivní.
 
@@ -72,7 +72,7 @@ Distribuované validátory dnes běží na síti Mainnet napříč sólo staking
 
 <ProductDisclaimer />
 
-- **Obol** vyvíjí Charon, open-source middlewarového klienta DVT, který umožňuje klastru strojů společně provozovat validátor („squad staking“). Skupiny provádějí distribuované generování klíčů a konfigurují svůj klastr prostřednictvím [DV Launchpadu](https://docs.obol.org/learn/readme/launchpad) od Obolu. Klastry Obol jsou v produkci využívány [protokoly pro staking](/staking/pools/) a [službami pro staking](/staking/saas/), včetně modulu Simple DVT od Lido a programu Operation Solo Staker od EtherFi, který zapojuje domácí operátory do klastrů odolných proti chybám.
+- **Obol** vyvíjí Charon, open-source middlewarového klienta DVT, který umožňuje klastru strojů společně provozovat validátor („squad staking“). Skupiny provádějí distribuované generování klíčů a konfigurují svůj klastr prostřednictvím [DV Launchpadu](https://docs.obol.org/learn/readme/launchpad) od Obolu. Klastry Obol jsou v produkci využívány [protokoly pro staking](/staking/pools/) a [službami pro staking](/staking/saas/), včetně modulu Simple DVT od Lido a programu Operation Solo Staker od QauFi, který zapojuje domácí operátory do klastrů odolných proti chybám.
 - **SSV Network** je síť nezávislých operátorů uzlů nevyžadující povolení. Klíč validátoru je rozdělen na části a distribuován vybrané sadě operátorů, kteří plní úkoly validátoru kolektivně; žádný jednotlivý operátor nikdy nedrží úplný klíč. Služby pro staking a stakingové pooly provozují na SSV velké sady validátorů a stejně jako Obol jej využívá modul Simple DVT od Lido.
 
 ## Případy užití DVT {#dvt-use-cases}
@@ -113,7 +113,7 @@ Další výhodou minimalizace důvěry v jediného operátora je, že stakingov�
 Ne. Jeden stroj s klientem validátoru funguje bez jakéhokoli softwaru DVT a toto zůstává běžným nastavením pro domácí staking. DVT je volitelná vrstva, která přidává odolnost proti chybám a odstraňuje jediné body selhání. To je užitečné, pokud chcete, aby váš validátor přežil selhání jednotlivých strojů, nebo pokud chcete sdílet odpovědnost za provoz validátoru s ostatními.
 </ExpandableCard>
 
-<ExpandableCard title="Rozděluje DVT mé ETH nebo mé klíče pro výběr?" eventCategory="DVT" eventName="clicked does DVT split my ETH">
+<ExpandableCard title="Rozděluje DVT mé QAU nebo mé klíče pro výběr?" eventCategory="DVT" eventName="clicked does DVT split my QAU">
 Ne. DVT rozděluje pouze _podepisovací_ klíč validátoru, který se používá pro úkoly konsensu, jako jsou atestace a návrhy bloků. Váš stake je vždy řízen adresou pro výběr nastavenou pro validátor, která není DVT ovlivněna. Od upgradu Pectra může držitel adresy pro výběr také spustit výstup validátoru přímo z exekuční vrstvy, aniž by vůbec potřeboval podepisovací klíč.
 </ExpandableCard>
 
@@ -130,15 +130,15 @@ Klastry jsou obvykle dimenzovány tak, aby prahovou hodnotou byla dvoutřetinov�
 </ExpandableCard>
 
 <ExpandableCard title="Je DVT to samé jako společný staking?" eventCategory="DVT" eventName="clicked is DVT the same as pooled staking">
-Ne. Společný staking kombinuje ETH od mnoha lidí k financování validátorů a je jedním z několika [způsobů stakingu](/staking/). DVT je infrastruktura pro _provoz_ validátoru. Distribuuje podepisování jednoho validátoru mezi více strojů a operátorů. Tyto dvě věci se doplňují; mnoho poolů používá DVT k distribuci svých sad operátorů, ale samotné DVT nesdružuje ničí ETH.
+Ne. Společný staking kombinuje QAU od mnoha lidí k financování validátorů a je jedním z několika [způsobů stakingu](/staking/). DVT je infrastruktura pro _provoz_ validátoru. Distribuuje podepisování jednoho validátoru mezi více strojů a operátorů. Tyto dvě věci se doplňují; mnoho poolů používá DVT k distribuci svých sad operátorů, ale samotné DVT nesdružuje ničí QAU.
 </ExpandableCard>
 
 ## Další čtení {#further-reading}
 
-- [Technologie distribuovaných validátorů (DVT) Etherea - Úplný úvod](https://www.cyfrin.io/blog/full-introduction-to-ethereum-distributed-validator-technology-dvt) - Cyfrin
-- [Co je DVT a jak zlepšuje staking na Ethereu?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-ethereum/) - Obol
-- [Specifikace distribuovaného validátoru Etherea (vysoká úroveň)](https://github.com/ethereum/distributed-validator-specs)
-- [Technické specifikace distribuovaného validátoru Etherea](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Technologie distribuovaných validátorů (DVT) Etherea - Úplný úvod](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
+- [Co je DVT a jak zlepšuje staking na Ethereu?](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
+- [Specifikace distribuovaného validátoru Etherea (vysoká úroveň)](https://github.com/quantaureum/distributed-validator-specs)
+- [Technické specifikace distribuovaného validátoru Etherea](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Dokumentace Obol](https://docs.obol.org/)
 - [Dokumentace SSV Network](https://docs.ssv.network/)
 - [Modul Simple DVT od Lido](https://operatorportal.lido.fi/modules/simple-dvt-module)

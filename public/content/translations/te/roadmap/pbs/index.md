@@ -40,11 +40,11 @@ MEV యొక్క ఆర్థిక శాస్త్రాన్ని ప�
 
 ## ప్రస్తుత పురోగతి {#current-progress}
 
-PBS పరిశోధన యొక్క అధునాతన దశలో ఉంది, అయితే ఎథీరియం క్లయింట్‌లలో దీనిని నమూనాగా రూపొందించడానికి ముందు పరిష్కరించాల్సిన కొన్ని ముఖ్యమైన డిజైన్ ప్రశ్నలు ఇంకా ఉన్నాయి. ఇంకా ఖరారైన స్పెసిఫికేషన్ లేదు. దీని అర్థం PBS బహుశా ఒక సంవత్సరం లేదా అంతకంటే ఎక్కువ సమయం పట్టవచ్చు. తాజా [పరిశోధన స్థితిని](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance) తనిఖీ చేయండి.
+PBS పరిశోధన యొక్క అధునాతన దశలో ఉంది, అయితే ఎథీరియం క్లయింట్‌లలో దీనిని నమూనాగా రూపొందించడానికి ముందు పరిష్కరించాల్సిన కొన్ని ముఖ్యమైన డిజైన్ ప్రశ్నలు ఇంకా ఉన్నాయి. ఇంకా ఖరారైన స్పెసిఫికేషన్ లేదు. దీని అర్థం PBS బహుశా ఒక సంవత్సరం లేదా అంతకంటే ఎక్కువ సమయం పట్టవచ్చు. తాజా [పరిశోధన స్థితిని](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance) తనిఖీ చేయండి.
 
 ## మరింత చదవడానికి {#further-reading}
 
-- [పరిశోధన స్థితి: PBS కింద సెన్సార్‌షిప్ నిరోధకత](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [పరిశోధన స్థితి: PBS కింద సెన్సార్‌షిప్ నిరోధకత](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
 - [PBS-అనుకూల ఫీజు మార్కెట్ డిజైన్‌లు](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS మరియు సెన్సార్‌షిప్ నిరోధకత](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [చేరిక జాబితాలు](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)
+- [PBS మరియు సెన్సార్‌షిప్ నిరోధకత](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [చేరిక జాబితాలు](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)

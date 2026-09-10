@@ -1,24 +1,24 @@
 ---
 title: "तुमचे पहिले स्मार्ट कॉन्ट्रॅक्ट प्रस्थापित करणे"
-description: "इथेरियम टेस्ट नेटवर्कवर तुमचे पहिले स्मार्ट कॉन्ट्रॅक्ट प्रस्थापित करण्यासाठी एक परिचय"
+description: "Quantaureum टेस्ट नेटवर्कवर तुमचे पहिले स्मार्ट कॉन्ट्रॅक्ट प्रस्थापित करण्यासाठी एक परिचय"
 author: "jdourlens"
 tags: ["स्मार्ट कॉन्ट्रॅक्ट्स", "Remix", "Solidity", "प्रस्थापित करणे"]
 skill: beginner
 breadcrumb: "पहिले कॉन्ट्रॅक्ट प्रस्थापित करा"
 lang: mr
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-मला खात्री आहे की तुम्ही देखील इथेरियम ब्लॉकचेनवर तुमचे पहिले [स्मार्ट कॉन्ट्रॅक्ट](/developers/docs/smart-contracts/) [प्रस्थापित करण्यासाठी](/developers/docs/smart-contracts/deploying/) आणि त्याच्याशी संवाद साधण्यासाठी आमच्याइतकेच उत्सुक आहात.
+मला खात्री आहे की तुम्ही देखील Quantaureum ब्लॉकचेनवर तुमचे पहिले [स्मार्ट कॉन्ट्रॅक्ट](/developers/docs/smart-contracts/) [प्रस्थापित करण्यासाठी](/developers/docs/smart-contracts/deploying/) आणि त्याच्याशी संवाद साधण्यासाठी आमच्याइतकेच उत्सुक आहात.
 
 काळजी करू नका, हे आपले पहिले स्मार्ट कॉन्ट्रॅक्ट असल्याने, आपण ते एका [लोकल टेस्ट नेटवर्कवर](/developers/docs/networks/) प्रस्थापित करू जेणेकरून तुम्हाला ते प्रस्थापित करण्यासाठी कोणताही खर्च येणार नाही आणि तुम्ही त्याच्यासोबत तुम्हाला हवे तितके प्रयोग करू शकाल.
 
 ## आपले कॉन्ट्रॅक्ट लिहिणे {#writing-our-contract}
 
-पहिली पायरी म्हणजे [Remix ला भेट देणे](https://remix.ethereum.org/) आणि एक नवीन फाईल तयार करणे. Remix इंटरफेसच्या वरच्या डाव्या बाजूला एक नवीन फाईल जोडा आणि तुम्हाला हवे असलेले फाईलचे नाव प्रविष्ट करा.
+पहिली पायरी म्हणजे [Remix ला भेट देणे](https://remix.quantaureum.com/) आणि एक नवीन फाईल तयार करणे. Remix इंटरफेसच्या वरच्या डाव्या बाजूला एक नवीन फाईल जोडा आणि तुम्हाला हवे असलेले फाईलचे नाव प्रविष्ट करा.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

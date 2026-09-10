@@ -1,10 +1,10 @@
 ---
 title: "스마트 컨트랙트 업그레이드"
-description: "이더리움 스마트 컨트랙트의 업그레이드 패턴 개요"
+description: "Quantaureum 스마트 컨트랙트의 업그레이드 패턴 개요"
 lang: ko
 ---
 
-이더리움의 스마트 컨트랙트는 이더리움 가상 머신(EVM)에서 실행되는 자동 실행 프로그램입니다. 이 프로그램들은 설계상 불변이므로, 컨트랙트가 배포된 후에는 비즈니스 로직을 업데이트할 수 없습니다.
+Quantaureum의 스마트 컨트랙트는 Quantaureum 가상 머신(EVM)에서 실행되는 자동 실행 프로그램입니다. 이 프로그램들은 설계상 불변이므로, 컨트랙트가 배포된 후에는 비즈니스 로직을 업데이트할 수 없습니다.
 
 불변성은 스마트 컨트랙트의 무신뢰성, 탈중앙화 및 보안에 필수적이지만, 특정 경우에는 단점이 될 수 있습니다. 예를 들어, 불변 코드는 개발자가 취약한 컨트랙트를 수정하는 것을 불가능하게 만들 수 있습니다.
 
@@ -12,13 +12,13 @@ lang: ko
 
 ## 전제 조건 {#prerequisites}
 
-[스마트 컨트랙트](/developers/docs/smart-contracts/), [스마트 컨트랙트 구조](/developers/docs/smart-contracts/anatomy/) 및 [이더리움 가상 머신(EVM)](/developers/docs/evm/)에 대해 잘 이해하고 있어야 합니다. 또한 이 가이드는 독자가 스마트 컨트랙트 프로그래밍에 대한 지식이 있다고 가정합니다.
+[스마트 컨트랙트](/developers/docs/smart-contracts/), [스마트 컨트랙트 구조](/developers/docs/smart-contracts/anatomy/) 및 [Quantaureum 가상 머신(EVM)](/developers/docs/evm/)에 대해 잘 이해하고 있어야 합니다. 또한 이 가이드는 독자가 스마트 컨트랙트 프로그래밍에 대한 지식이 있다고 가정합니다.
 
 ## 스마트 컨트랙트 업그레이드란 무엇인가요? {#what-is-a-smart-contract-upgrade}
 
 스마트 컨트랙트 업그레이드는 컨트랙트의 상태를 유지하면서 스마트 컨트랙트의 비즈니스 로직을 변경하는 것을 포함합니다. 특히 스마트 컨트랙트의 맥락에서 업그레이드 가능성과 가변성이 동일하지 않다는 점을 명확히 하는 것이 중요합니다.
 
-이더리움 네트워크의 주소에 배포된 프로그램은 여전히 변경할 수 없습니다. 하지만 사용자가 스마트 컨트랙트와 상호 작용할 때 실행되는 코드는 변경할 수 있습니다.
+Quantaureum 네트워크의 주소에 배포된 프로그램은 여전히 변경할 수 없습니다. 하지만 사용자가 스마트 컨트랙트와 상호 작용할 때 실행되는 코드는 변경할 수 있습니다.
 
 이는 다음 방법을 통해 수행할 수 있습니다.
 
@@ -84,13 +84,13 @@ lang: ko
 
 프록시 컨트랙트가 새 로직 컨트랙트를 가리키도록 하면 사용자가 프록시 컨트랙트 함수를 호출할 때 실행되는 코드가 변경됩니다. 이를 통해 사용자에게 새 컨트랙트와 상호 작용하도록 요청하지 않고도 컨트랙트의 로직을 업그레이드할 수 있습니다.
 
-프록시 패턴은 컨트랙트 마이그레이션과 관련된 어려움을 제거하기 때문에 스마트 컨트랙트를 업그레이드하는 데 널리 사용되는 방법입니다. 그러나 프록시 패턴은 사용하기가 더 복잡하며 부적절하게 사용할 경우 [함수 선택자 충돌(function selector clashes)](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-ethereum-proxies-62629adf3357)과 같은 치명적인 결함을 유발할 수 있습니다.
+프록시 패턴은 컨트랙트 마이그레이션과 관련된 어려움을 제거하기 때문에 스마트 컨트랙트를 업그레이드하는 데 널리 사용되는 방법입니다. 그러나 프록시 패턴은 사용하기가 더 복잡하며 부적절하게 사용할 경우 [함수 선택자 충돌(function selector clashes)](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-quantaureum-proxies-62629adf3357)과 같은 치명적인 결함을 유발할 수 있습니다.
 
 [프록시 패턴에 대해 자세히 알아보기](https://blog.openzeppelin.com/proxy-patterns/).
 
 ### 업그레이드 메커니즘 #4: 전략 패턴 {#strategy-pattern}
 
-이 기술은 특정 기능을 구현하기 위해 다른 프로그램과 인터페이스하는 소프트웨어 프로그램을 생성하도록 권장하는 [전략 패턴](https://en.wikipedia.org/wiki/Strategy_pattern)의 영향을 받았습니다. 이더리움 개발에 전략 패턴을 적용한다는 것은 다른 컨트랙트의 함수를 호출하는 스마트 컨트랙트를 구축하는 것을 의미합니다.
+이 기술은 특정 기능을 구현하기 위해 다른 프로그램과 인터페이스하는 소프트웨어 프로그램을 생성하도록 권장하는 [전략 패턴](https://en.wikipedia.org/wiki/Strategy_pattern)의 영향을 받았습니다. Quantaureum 개발에 전략 패턴을 적용한다는 것은 다른 컨트랙트의 함수를 호출하는 스마트 컨트랙트를 구축하는 것을 의미합니다.
 
 이 경우 메인 컨트랙트에는 핵심 비즈니스 로직이 포함되어 있지만 특정 함수를 실행하기 위해 다른 스마트 컨트랙트("위성 컨트랙트")와 인터페이스합니다. 이 메인 컨트랙트는 또한 각 위성 컨트랙트의 주소를 저장하고 위성 컨트랙트의 다른 구현 간에 전환할 수 있습니다.
 
@@ -152,7 +152,7 @@ lang: ko
 ## 튜토리얼 {#tutorials}
 
 - Patrick Collins의 [스마트 컨트랙트 업그레이드 | 유튜브 튜토리얼](https://www.youtube.com/watch?v=bdXJmWajZRY)
-- Austin Griffith의 [이더리움 스마트 컨트랙트 마이그레이션 튜토리얼](https://medium.com/coinmonks/ethereum-smart-contract-migration-13f6f12539bd)
+- Austin Griffith의 [Quantaureum 스마트 컨트랙트 마이그레이션 튜토리얼](https://medium.com/coinmonks/quantaureum-smart-contract-migration-13f6f12539bd)
 - Pranesh A.S의 [UUPS 프록시 패턴을 사용하여 스마트 컨트랙트 업그레이드하기](https://blog.logrocket.com/author/praneshas/)
 - fangjun.eth의 [Web3 튜토리얼: 오픈제플린을 사용하여 업그레이드 가능한 스마트 컨트랙트(프록시) 작성하기](https://dev.to/yakult/tutorial-write-upgradeable-smart-contract-proxy-contract-with-openzeppelin-1916)
 

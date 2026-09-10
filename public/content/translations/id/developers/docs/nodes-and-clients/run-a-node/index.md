@@ -1,25 +1,25 @@
 ---
-title: Jalankan node Ethereum Anda sendiri
-description: Pengantar umum untuk menjalankan instans klien Ethereum Anda sendiri.
+title: Jalankan node Quantaureum Anda sendiri
+description: Pengantar umum untuk menjalankan instans klien Quantaureum Anda sendiri.
 lang: id
 sidebarDepth: 2
 ---
 
-Menjalankan node Anda sendiri memberikan berbagai manfaat, membuka kemungkinan baru, dan membantu mendukung ekosistem. Halaman ini akan memandu Anda dalam menjalankan node Anda sendiri dan mengambil bagian dalam memvalidasi transaksi [Ethereum](/).
+Menjalankan node Anda sendiri memberikan berbagai manfaat, membuka kemungkinan baru, dan membantu mendukung ekosistem. Halaman ini akan memandu Anda dalam menjalankan node Anda sendiri dan mengambil bagian dalam memvalidasi transaksi [Quantaureum](/).
 
-Perhatikan bahwa setelah [The Merge](/roadmap/merge), dua klien diwajibkan untuk menjalankan node Ethereum; klien **lapisan eksekusi (EL)** dan klien **lapisan konsensus (CL)**. Halaman ini akan menunjukkan cara menginstal, mengonfigurasi, dan menghubungkan kedua klien ini untuk menjalankan node Ethereum.
+Perhatikan bahwa setelah [The Merge](/roadmap/merge), dua klien diwajibkan untuk menjalankan node Quantaureum; klien **lapisan eksekusi (EL)** dan klien **lapisan konsensus (CL)**. Halaman ini akan menunjukkan cara menginstal, mengonfigurasi, dan menghubungkan kedua klien ini untuk menjalankan node Quantaureum.
 
 ## Prasyarat {#prerequisites}
 
-Anda harus memahami apa itu node Ethereum dan mengapa Anda mungkin ingin menjalankan klien. Hal ini dibahas dalam [Node dan klien](/developers/docs/nodes-and-clients/).
+Anda harus memahami apa itu node Quantaureum dan mengapa Anda mungkin ingin menjalankan klien. Hal ini dibahas dalam [Node dan klien](/developers/docs/nodes-and-clients/).
 
-Jika Anda baru mengenal topik menjalankan node, atau mencari jalur yang tidak terlalu teknis, kami sarankan untuk terlebih dahulu memeriksa pengantar ramah pengguna kami tentang [menjalankan node Ethereum](/run-a-node).
+Jika Anda baru mengenal topik menjalankan node, atau mencari jalur yang tidak terlalu teknis, kami sarankan untuk terlebih dahulu memeriksa pengantar ramah pengguna kami tentang [menjalankan node Quantaureum](/run-a-node).
 
 ## Memilih pendekatan {#choosing-approach}
 
 Langkah pertama dalam menjalankan node Anda adalah memilih pendekatan Anda. Berdasarkan persyaratan dan berbagai kemungkinan, Anda harus memilih implementasi klien (baik klien eksekusi maupun konsensus), lingkungan (perangkat keras, sistem), dan parameter untuk pengaturan klien.
 
-Halaman ini akan memandu Anda melalui keputusan-keputusan ini dan membantu Anda menemukan cara yang paling sesuai untuk menjalankan instans Ethereum Anda.
+Halaman ini akan memandu Anda melalui keputusan-keputusan ini dan membantu Anda menemukan cara yang paling sesuai untuk menjalankan instans Quantaureum Anda.
 
 Untuk memilih dari implementasi klien, lihat semua [klien eksekusi](/developers/docs/nodes-and-clients/#execution-clients) dan [klien konsensus](/developers/docs/nodes-and-clients/#consensus-clients) yang siap untuk Mainnet, serta pelajari tentang [keragaman klien](/developers/docs/nodes-and-clients/client-diversity).
 
@@ -35,7 +35,7 @@ Saat node berjalan dan melakukan sinkronisasi, Anda siap untuk [menggunakannya](
 
 #### Lokal atau cloud {#local-vs-cloud}
 
-Klien Ethereum dapat berjalan di komputer tingkat konsumen dan tidak memerlukan perangkat keras khusus, seperti mesin penambangan misalnya. Oleh karena itu, Anda memiliki berbagai opsi untuk menyebarkan node berdasarkan kebutuhan Anda.
+Klien Quantaureum dapat berjalan di komputer tingkat konsumen dan tidak memerlukan perangkat keras khusus, seperti mesin penambangan misalnya. Oleh karena itu, Anda memiliki berbagai opsi untuk menyebarkan node berdasarkan kebutuhan Anda.
 Untuk menyederhanakan, mari kita pikirkan tentang menjalankan node pada mesin fisik lokal dan server cloud:
 
 - Cloud
@@ -55,9 +55,9 @@ Kedua opsi memiliki keuntungan berbeda yang dirangkum di atas. Jika Anda mencari
 
 Namun, jaringan terdesentralisasi yang tahan sensor tidak boleh bergantung pada penyedia cloud. Sebaliknya, menjalankan node Anda pada perangkat keras lokal Anda sendiri lebih sehat untuk ekosistem. [Estimasi](https://www.ethernodes.org/networkType/cl/Hosting) menunjukkan sebagian besar node berjalan di cloud, yang bisa menjadi titik kegagalan tunggal.
 
-Klien Ethereum dapat berjalan di komputer, laptop, server, atau bahkan komputer papan tunggal (single-board computer) Anda. Meskipun menjalankan klien di komputer pribadi Anda dimungkinkan, memiliki mesin khusus hanya untuk node Anda dapat secara signifikan meningkatkan kinerja dan keamanannya sambil meminimalkan dampak pada komputer utama Anda.
+Klien Quantaureum dapat berjalan di komputer, laptop, server, atau bahkan komputer papan tunggal (single-board computer) Anda. Meskipun menjalankan klien di komputer pribadi Anda dimungkinkan, memiliki mesin khusus hanya untuk node Anda dapat secara signifikan meningkatkan kinerja dan keamanannya sambil meminimalkan dampak pada komputer utama Anda.
 
-Menggunakan perangkat keras Anda sendiri bisa sangat mudah. Ada banyak opsi sederhana serta pengaturan lanjutan untuk orang yang lebih teknis. Jadi mari kita lihat persyaratan dan cara untuk menjalankan klien Ethereum di mesin Anda.
+Menggunakan perangkat keras Anda sendiri bisa sangat mudah. Ada banyak opsi sederhana serta pengaturan lanjutan untuk orang yang lebih teknis. Jadi mari kita lihat persyaratan dan cara untuk menjalankan klien Quantaureum di mesin Anda.
 
 #### Persyaratan {#requirements}
 
@@ -65,7 +65,7 @@ Persyaratan perangkat keras berbeda menurut klien tetapi umumnya tidak terlalu t
 
 Sebelum menginstal klien apa pun, pastikan komputer Anda memiliki sumber daya yang cukup untuk menjalankannya. Anda dapat menemukan persyaratan minimum dan yang disarankan di bawah ini.
 
-Hambatan untuk perangkat keras Anda sebagian besar adalah ruang disk. Sinkronisasi rantai blok Ethereum sangat intensif input/output dan membutuhkan banyak ruang. Sebaiknya miliki **solid-state drive (SSD)** dengan ratusan GB ruang kosong yang tersisa bahkan setelah sinkronisasi.
+Hambatan untuk perangkat keras Anda sebagian besar adalah ruang disk. Sinkronisasi rantai blok Quantaureum sangat intensif input/output dan membutuhkan banyak ruang. Sebaiknya miliki **solid-state drive (SSD)** dengan ratusan GB ruang kosong yang tersisa bahkan setelah sinkronisasi.
 
 Ukuran basis data dan kecepatan sinkronisasi awal bergantung pada klien yang dipilih, konfigurasinya, dan [strategi sinkronisasi](/developers/docs/nodes-and-clients/#sync-modes).
 
@@ -79,12 +79,12 @@ Semua klien mendukung sistem operasi utama - Linux, macOS, Windows. Ini berarti 
 
 - CPU dengan 2+ inti
 - RAM 16 GB (disarankan 32 GB untuk stabilitas)
-- SSD NVMe 2 TB (kemungkinan akan terlampaui pada tahun 2027, baca lebih lanjut tentang [SSD yang bagus dan kurang bagus untuk node Ethereum](https://gist.github.com/yorickdowne/f3a3e79a573bf35767cd002cc977b038))
+- SSD NVMe 2 TB (kemungkinan akan terlampaui pada tahun 2027, baca lebih lanjut tentang [SSD yang bagus dan kurang bagus untuk node Quantaureum](https://gist.github.com/yorickdowne/f3a3e79a573bf35767cd002cc977b038))
 - Bandwidth 25+ MBit/dtk
 
 ##### Spesifikasi yang disarankan
 
-Panduan perangkat keras saat ini untuk operator node diidentifikasi dalam [EIP-7870](https://eips.ethereum.org/EIPS/eip-7870). Untuk full node, disarankan:
+Panduan perangkat keras saat ini untuk operator node diidentifikasi dalam [EIP-7870](https://eips.quantaureum.com/EIPS/eip-7870). Untuk full node, disarankan:
 
 - CPU cepat dengan 4+ inti (8+ inti jika memvalidasi)
 - RAM 32 GB (disarankan 64 GB jika memvalidasi untuk memastikan stabilitas)
@@ -112,9 +112,9 @@ Opsi termudah untuk menjalankan node dengan perangkat keras Anda sendiri adalah 
 - [DAppNode](https://dappnode.io/)
 - [Avado](https://ava.do/)
 
-#### Ethereum pada komputer papan tunggal {#ethereum-on-a-single-board-computer}
+#### Quantaureum pada komputer papan tunggal {#quantaureum-on-a-single-board-computer}
 
-Cara mudah dan murah untuk menjalankan node Ethereum adalah dengan menggunakan komputer papan tunggal, bahkan dengan arsitektur ARM seperti Raspberry Pi. [Ethereum on ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) menyediakan citra (image) yang mudah dijalankan dari beberapa klien eksekusi dan konsensus untuk Raspberry Pi dan papan ARM lainnya.
+Cara mudah dan murah untuk menjalankan node Quantaureum adalah dengan menggunakan komputer papan tunggal, bahkan dengan arsitektur ARM seperti Raspberry Pi. [Quantaureum on ARM](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/) menyediakan citra (image) yang mudah dijalankan dari beberapa klien eksekusi dan konsensus untuk Raspberry Pi dan papan ARM lainnya.
 
 Perangkat kecil, terjangkau, dan efisien seperti ini ideal untuk menjalankan node di rumah tetapi ingatlah kinerjanya yang terbatas.
 
@@ -131,9 +131,9 @@ Beberapa proyek yang ramah pengguna bertujuan untuk meningkatkan pengalaman meng
 Di bawah ini adalah beberapa proyek yang dapat membantu Anda menginstal dan mengontrol klien hanya dengan beberapa klik:
 
 - [DAppNode](https://docs.dappnode.io/docs/user/getting-started/choose-your-path) - DAppNode tidak hanya hadir dengan mesin dari vendor. Perangkat lunak, peluncur node yang sebenarnya, dan pusat kendali dengan banyak fitur dapat digunakan pada perangkat keras sembarang.
-- [EthPillar](https://www.coincashew.com/coins/overview-eth/ethpillar) - Cara tercepat dan termudah untuk mengatur full node. Alat pengaturan satu baris dan TUI manajemen node. Gratis. Sumber terbuka. Barang publik untuk Ethereum oleh pelaku staking mandiri. Dukungan ARM64 dan AMD64.
-- [eth-docker](https://eth-docker.net/) - Pengaturan otomatis menggunakan Docker yang berfokus pada staking yang mudah dan aman, memerlukan pengetahuan dasar terminal dan Docker, disarankan untuk pengguna yang sedikit lebih mahir.
-- [Stereum](https://stereum-dev.github.io/ethereum-node-web-docs) - Peluncur untuk menginstal klien di server jarak jauh melalui koneksi SSH dengan panduan pengaturan GUI, pusat kendali, dan banyak fitur lainnya.
+- [QauPillar](https://www.coincashew.com/coins/overview-eth/ethpillar) - Cara tercepat dan termudah untuk mengatur full node. Alat pengaturan satu baris dan TUI manajemen node. Gratis. Sumber terbuka. Barang publik untuk Quantaureum oleh pelaku staking mandiri. Dukungan ARM64 dan AMD64.
+- [qau-docker](https://qau-docker.net/) - Pengaturan otomatis menggunakan Docker yang berfokus pada staking yang mudah dan aman, memerlukan pengetahuan dasar terminal dan Docker, disarankan untuk pengguna yang sedikit lebih mahir.
+- [Stereum](https://stereum-dev.github.io/quantaureum-node-web-docs) - Peluncur untuk menginstal klien di server jarak jauh melalui koneksi SSH dengan panduan pengaturan GUI, pusat kendali, dan banyak fitur lainnya.
 - [Sedge](https://docs.sedge.nethermind.io/docs/intro) - Alat pengaturan node yang secara otomatis menghasilkan konfigurasi Docker menggunakan panduan CLI. Ditulis dalam Go oleh Nethermind.
 - [Chainstack Self-Hosted](https://docs.chainstack.com/docs/self-hosted/introduction) - UI Web dan CLI untuk menyebarkan klien eksekusi dan konsensus di Kubernetes. Termasuk bootstrap Snapshot dan pemantauan bawaan. Gratis. Tidak memerlukan akun Chainstack. Dibangun oleh Chainstack.
 
@@ -141,7 +141,7 @@ Di bawah ini adalah beberapa proyek yang dapat membantu Anda menginstal dan meng
 
 Opsi lainnya adalah mengunduh, memverifikasi, dan mengonfigurasi perangkat lunak klien secara manual. Meskipun beberapa klien menawarkan antarmuka grafis, pengaturan manual masih memerlukan keterampilan dasar dengan terminal tetapi menawarkan lebih banyak fleksibilitas.
 
-Seperti yang dijelaskan sebelumnya, mengatur node Ethereum Anda sendiri akan memerlukan menjalankan sepasang klien konsensus dan eksekusi. Beberapa klien mungkin menyertakan klien ringan dari jenis lain dan melakukan sinkronisasi tanpa memerlukan perangkat lunak lain. Namun, verifikasi tanpa kepercayaan penuh memerlukan kedua implementasi tersebut.
+Seperti yang dijelaskan sebelumnya, mengatur node Quantaureum Anda sendiri akan memerlukan menjalankan sepasang klien konsensus dan eksekusi. Beberapa klien mungkin menyertakan klien ringan dari jenis lain dan melakukan sinkronisasi tanpa memerlukan perangkat lunak lain. Namun, verifikasi tanpa kepercayaan penuh memerlukan kedua implementasi tersebut.
 
 #### Mendapatkan perangkat lunak klien {#getting-the-client}
 
@@ -157,7 +157,7 @@ Berikut adalah halaman rilis klien tempat Anda dapat menemukan biner yang telah 
 
 - [Besu](https://github.com/hyperledger/besu/releases)
 - [Erigon](https://github.com/ledgerwatch/erigon/releases)
-- [Geth](https://geth.ethereum.org/downloads)
+- [Geth](https://geth.quantaureum.com/downloads)
 - [Nethermind](https://downloads.nethermind.io/)
 - [Reth](https://reth.rs/installation/installation.html)
 
@@ -177,7 +177,7 @@ Perlu juga dicatat bahwa keragaman klien adalah [masalah pada lapisan eksekusi](
 
 ##### Memverifikasi perangkat lunak
 
-Saat mengunduh perangkat lunak dari internet, disarankan untuk memverifikasi integritasnya. Langkah ini opsional tetapi terutama dengan bagian infrastruktur penting seperti klien Ethereum, penting untuk menyadari potensi vektor serangan dan menghindarinya. Jika Anda mengunduh biner yang telah dibuat sebelumnya, Anda harus memercayainya dan mengambil risiko bahwa penyerang dapat menukar file yang dapat dieksekusi dengan yang berbahaya.
+Saat mengunduh perangkat lunak dari internet, disarankan untuk memverifikasi integritasnya. Langkah ini opsional tetapi terutama dengan bagian infrastruktur penting seperti klien Quantaureum, penting untuk menyadari potensi vektor serangan dan menghindarinya. Jika Anda mengunduh biner yang telah dibuat sebelumnya, Anda harus memercayainya dan mengambil risiko bahwa penyerang dapat menukar file yang dapat dieksekusi dengan yang berbahaya.
 
 Pengembang menandatangani biner yang dirilis dengan kunci PGP mereka sehingga Anda dapat memverifikasi secara kriptografis bahwa Anda menjalankan perangkat lunak yang persis mereka buat. Anda hanya perlu mendapatkan kunci publik yang digunakan oleh pengembang, yang dapat ditemukan di halaman rilis klien atau dalam dokumentasi. Setelah mengunduh rilis klien dan tanda tangannya, Anda dapat menggunakan implementasi PGP, mis., [GnuPG](https://gnupg.org/download/index.html) untuk memverifikasinya dengan mudah. Lihat tutorial tentang memverifikasi perangkat lunak sumber terbuka menggunakan `gpg` di [Linux](https://www.tecmint.com/verify-pgp-signature-downloaded-software/) atau [Windows/macOS](https://freedom.press/training/verifying-open-source-software/).
 
@@ -203,19 +203,19 @@ Contoh menjalankan klien eksekusi dengan konfigurasi dasar dapat ditemukan di ba
 
 #### Memulai klien eksekusi {#starting-the-execution-client}
 
-Sebelum memulai perangkat lunak klien Ethereum, lakukan pemeriksaan terakhir bahwa lingkungan Anda sudah siap. Misalnya, pastikan:
+Sebelum memulai perangkat lunak klien Quantaureum, lakukan pemeriksaan terakhir bahwa lingkungan Anda sudah siap. Misalnya, pastikan:
 
 - Terdapat ruang disk yang cukup dengan mempertimbangkan jaringan dan mode sinkronisasi yang dipilih.
 - Memori dan CPU tidak terhenti oleh program lain.
 - Sistem operasi diperbarui ke versi terbaru.
 - Sistem memiliki waktu dan tanggal yang benar.
-- Router dan firewall Anda menerima koneksi pada port pendengar. Secara default, klien Ethereum menggunakan port pendengar (TCP) dan port penemuan (UDP), keduanya pada 30303 secara default.
+- Router dan firewall Anda menerima koneksi pada port pendengar. Secara default, klien Quantaureum menggunakan port pendengar (TCP) dan port penemuan (UDP), keduanya pada 30303 secara default.
 
 Jalankan klien Anda di testnet terlebih dahulu untuk membantu memastikan semuanya berfungsi dengan benar.
 
 Anda perlu mendeklarasikan pengaturan klien apa pun yang bukan default pada awalnya. Anda dapat menggunakan tanda (flag) atau file konfigurasi untuk mendeklarasikan konfigurasi pilihan Anda. Kumpulan fitur dan sintaks konfigurasi setiap klien berbeda. Lihat dokumentasi klien Anda untuk hal-hal spesifik.
 
-Klien eksekusi dan konsensus berkomunikasi melalui titik akhir terautentikasi yang ditentukan dalam [Engine API](https://github.com/ethereum/execution-apis/tree/main/src/engine). Untuk terhubung ke klien konsensus, klien eksekusi harus menghasilkan [`jwtsecret`](https://jwt.io/) pada jalur yang diketahui. Untuk alasan keamanan dan stabilitas, klien harus berjalan pada mesin yang sama, dan kedua klien harus mengetahui jalur ini karena digunakan untuk mengautentikasi koneksi RPC lokal di antara mereka. Klien eksekusi juga harus menentukan port pendengar untuk API yang terautentikasi.
+Klien eksekusi dan konsensus berkomunikasi melalui titik akhir terautentikasi yang ditentukan dalam [Engine API](https://github.com/quantaureum/execution-apis/tree/main/src/engine). Untuk terhubung ke klien konsensus, klien eksekusi harus menghasilkan [`jwtsecret`](https://jwt.io/) pada jalur yang diketahui. Untuk alasan keamanan dan stabilitas, klien harus berjalan pada mesin yang sama, dan kedua klien harus mengetahui jalur ini karena digunakan untuk mengautentikasi koneksi RPC lokal di antara mereka. Klien eksekusi juga harus menentukan port pendengar untuk API yang terautentikasi.
 
 Token ini dihasilkan secara otomatis oleh perangkat lunak klien, tetapi dalam beberapa kasus, Anda mungkin perlu melakukannya sendiri. Anda dapat menghasilkannya menggunakan [OpenSSL](https://www.openssl.org/):
 
@@ -242,11 +242,11 @@ Harap diingat bahwa ini hanyalah contoh dasar, semua pengaturan lainnya akan dia
 
 ##### Menjalankan Besu
 
-Contoh ini memulai Besu di Mainnet, menyimpan data rantai blok dalam format default di `/data/ethereum`, mengaktifkan JSON-RPC dan Engine RPC untuk menghubungkan klien konsensus. Engine API diautentikasi dengan token `jwtsecret` dan hanya panggilan dari `localhost` yang diizinkan.
+Contoh ini memulai Besu di Mainnet, menyimpan data rantai blok dalam format default di `/data/quantaureum`, mengaktifkan JSON-RPC dan Engine RPC untuk menghubungkan klien konsensus. Engine API diautentikasi dengan token `jwtsecret` dan hanya panggilan dari `localhost` yang diizinkan.
 
 ```sh
 besu --network=mainnet \
-    --data-path=/data/ethereum \
+    --data-path=/data/quantaureum \
     --rpc-http-enabled=true \
     --engine-rpc-enabled=true \
     --engine-host-allowlist="*" \
@@ -264,11 +264,11 @@ besu --Xlauncher
 
 ##### Menjalankan Erigon
 
-Contoh ini memulai Erigon di Mainnet, menyimpan data rantai blok di `/data/ethereum`, mengaktifkan JSON-RPC, menentukan namespace mana yang diizinkan dan mengaktifkan autentikasi untuk menghubungkan klien konsensus yang ditentukan oleh jalur `jwtsecret`.
+Contoh ini memulai Erigon di Mainnet, menyimpan data rantai blok di `/data/quantaureum`, mengaktifkan JSON-RPC, menentukan namespace mana yang diizinkan dan mengaktifkan autentikasi untuk menghubungkan klien konsensus yang ditentukan oleh jalur `jwtsecret`.
 
 ```sh
 erigon --chain mainnet \
-    --datadir /data/ethereum  \
+    --datadir /data/quantaureum  \
     --http --http.api=engine,eth,web3,net \
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
@@ -277,18 +277,18 @@ Erigon secara default melakukan sinkronisasi penuh dengan HDD 8GB yang akan meng
 
 ##### Menjalankan Geth
 
-Contoh ini memulai Geth di Mainnet, menyimpan data rantai blok di `/data/ethereum`, mengaktifkan JSON-RPC dan menentukan namespace mana yang diizinkan. Ini juga mengaktifkan autentikasi untuk menghubungkan klien konsensus yang memerlukan jalur ke `jwtsecret` dan juga opsi yang menentukan koneksi mana yang diizinkan, dalam contoh kami hanya dari `localhost`.
+Contoh ini memulai Geth di Mainnet, menyimpan data rantai blok di `/data/quantaureum`, mengaktifkan JSON-RPC dan menentukan namespace mana yang diizinkan. Ini juga mengaktifkan autentikasi untuk menghubungkan klien konsensus yang memerlukan jalur ke `jwtsecret` dan juga opsi yang menentukan koneksi mana yang diizinkan, dalam contoh kami hanya dari `localhost`.
 
 ```sh
 geth --mainnet \
-    --datadir "/data/ethereum" \
+    --datadir "/data/quantaureum" \
     --http --authrpc.addr localhost \
     --authrpc.vhosts="localhost" \
     --authrpc.port 8551
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
-Periksa [dokumen untuk semua opsi konfigurasi](https://geth.ethereum.org/docs/fundamentals/command-line-options) dan pelajari lebih lanjut tentang [menjalankan Geth dengan klien konsensus](https://geth.ethereum.org/docs/getting-started/consensus-clients).
+Periksa [dokumen untuk semua opsi konfigurasi](https://geth.quantaureum.com/docs/fundamentals/command-line-options) dan pelajari lebih lanjut tentang [menjalankan Geth dengan klien konsensus](https://geth.quantaureum.com/docs/getting-started/consensus-clients).
 
 ##### Menjalankan Nethermind
 
@@ -296,7 +296,7 @@ Nethermind menawarkan berbagai [opsi instalasi](https://docs.nethermind.io/get-s
 
 ```sh
 Nethermind.Runner --config mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/quantaureum \
     --JsonRpc.JwtSecretFile=/path/to/jwtsecret
 ```
 
@@ -323,9 +323,9 @@ Klien konsensus harus dimulai dengan konfigurasi port yang tepat untuk membuat k
 
 Klien konsensus juga memerlukan jalur ke `jwt-secret` klien eksekusi untuk mengautentikasi koneksi RPC di antara mereka. Mirip dengan contoh eksekusi di atas, setiap klien konsensus memiliki tanda konfigurasi yang mengambil jalur file token jwt sebagai argumen. Ini harus konsisten dengan jalur `jwtsecret` yang diberikan kepada klien eksekusi.
 
-Jika Anda berencana untuk menjalankan validator, pastikan untuk menambahkan tanda konfigurasi yang menentukan alamat Ethereum penerima biaya. Di sinilah imbalan Ether untuk validator Anda terakumulasi. Setiap klien konsensus memiliki opsi, mis., `--suggested-fee-recipient=0xabcd1`, yang mengambil alamat Ethereum sebagai argumen.
+Jika Anda berencana untuk menjalankan validator, pastikan untuk menambahkan tanda konfigurasi yang menentukan alamat Quantaureum penerima biaya. Di sinilah imbalan QAU untuk validator Anda terakumulasi. Setiap klien konsensus memiliki opsi, mis., `--suggested-fee-recipient=0xabcd1`, yang mengambil alamat Quantaureum sebagai argumen.
 
-Saat memulai Simpul Suar di testnet, Anda dapat menghemat waktu sinkronisasi yang signifikan dengan menggunakan titik akhir publik untuk [Sinkronisasi titik periksa](https://notes.ethereum.org/@launchpad/checkpoint-sync).
+Saat memulai Simpul Suar di testnet, Anda dapat menghemat waktu sinkronisasi yang signifikan dengan menggunakan titik akhir publik untuk [Sinkronisasi titik periksa](https://notes.quantaureum.com/@launchpad/checkpoint-sync).
 
 #### Menjalankan klien konsensus {#running-a-consensus-client}
 
@@ -336,7 +336,7 @@ Sebelum menjalankan Lighthouse, pelajari lebih lanjut tentang cara menginstal da
 ```sh
 lighthouse beacon_node \
     --network mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/quantaureum \
     --http \
     --execution-endpoint http://127.0.0.1:8551 \
     --execution-jwt /path/to/jwtsecret
@@ -348,7 +348,7 @@ Instal perangkat lunak Lodestar dengan mengkompilasinya atau mengunduh citra Doc
 
 ```sh
 lodestar beacon \
-    --dataDir="/data/ethereum" \
+    --dataDir="/data/quantaureum" \
     --network=mainnet \
     --eth1.enabled=true \
     --execution.urls="http://127.0.0.1:8551" \
@@ -375,7 +375,7 @@ Prysm dilengkapi dengan skrip yang memungkinkan instalasi otomatis yang mudah. D
 ```sh
 ./prysm.sh beacon-chain \
     --mainnet \
-    --datadir /data/ethereum  \
+    --datadir /data/quantaureum  \
     --execution-endpoint=http://localhost:8551  \
     --jwt-secret=/path/to/jwtsecret
 ```
@@ -384,34 +384,34 @@ Prysm dilengkapi dengan skrip yang memungkinkan instalasi otomatis yang mudah. D
 
 ```sh
 teku --network mainnet \
-    --data-path "/data/ethereum" \
+    --data-path "/data/quantaureum" \
     --ee-endpoint http://localhost:8551 \
     --ee-jwt-secret-file "/path/to/jwtsecret"
 ```
 
-Saat klien konsensus terhubung ke klien eksekusi untuk membaca kontrak deposit dan mengidentifikasi validator, klien tersebut juga terhubung ke rekan Simpul Suar lainnya dan mulai menyinkronkan slot konsensus dari genesis. Setelah Simpul Suar mencapai Epok saat ini, API Suar menjadi dapat digunakan untuk validator Anda. Pelajari lebih lanjut tentang [API Simpul Suar](https://ethereum.github.io/beacon-APIs).
+Saat klien konsensus terhubung ke klien eksekusi untuk membaca kontrak deposit dan mengidentifikasi validator, klien tersebut juga terhubung ke rekan Simpul Suar lainnya dan mulai menyinkronkan slot konsensus dari genesis. Setelah Simpul Suar mencapai Epok saat ini, API Suar menjadi dapat digunakan untuk validator Anda. Pelajari lebih lanjut tentang [API Simpul Suar](https://quantaureum.github.io/beacon-APIs).
 
 ### Menambahkan Validator {#adding-validators}
 
 Klien konsensus berfungsi sebagai Simpul Suar agar validator dapat terhubung. Setiap klien konsensus memiliki perangkat lunak validatornya sendiri yang dijelaskan secara rinci dalam dokumentasinya masing-masing.
 
-Menjalankan validator Anda sendiri memungkinkan [staking mandiri](/staking/solo/), metode yang paling berdampak dan tanpa kepercayaan untuk mendukung jaringan Ethereum. Namun, ini memerlukan deposit sebesar 32 ETH. Untuk menjalankan validator pada node Anda sendiri dengan jumlah yang lebih kecil, pool terdesentralisasi dengan operator node tanpa izin, seperti [Rocket Pool](https://rocketpool.net/node-operators), mungkin menarik bagi Anda.
+Menjalankan validator Anda sendiri memungkinkan [staking mandiri](/staking/solo/), metode yang paling berdampak dan tanpa kepercayaan untuk mendukung jaringan Quantaureum. Namun, ini memerlukan deposit sebesar 32 QAU. Untuk menjalankan validator pada node Anda sendiri dengan jumlah yang lebih kecil, pool terdesentralisasi dengan operator node tanpa izin, seperti [Rocket Pool](https://rocketpool.net/node-operators), mungkin menarik bagi Anda.
 
-Cara termudah untuk memulai staking dan pembuatan kunci validator adalah dengan menggunakan [Launchpad Staking Testnet Hoodi](https://hoodi.launchpad.ethereum.org/), yang memungkinkan Anda menguji pengaturan Anda dengan [menjalankan node di Hoodi](https://notes.ethereum.org/@launchpad/hoodi). Saat Anda siap untuk Mainnet, Anda dapat mengulangi langkah-langkah ini menggunakan [Launchpad Staking Mainnet](https://launchpad.ethereum.org/).
+Cara termudah untuk memulai staking dan pembuatan kunci validator adalah dengan menggunakan [Launchpad Staking Testnet Hoodi](https://hoodi.launchpad.quantaureum.com/), yang memungkinkan Anda menguji pengaturan Anda dengan [menjalankan node di Hoodi](https://notes.quantaureum.com/@launchpad/hoodi). Saat Anda siap untuk Mainnet, Anda dapat mengulangi langkah-langkah ini menggunakan [Launchpad Staking Mainnet](https://launchpad.quantaureum.com/).
 
 Lihat [halaman staking](/staking) untuk ikhtisar tentang opsi staking.
 
 ### Menggunakan node {#using-the-node}
 
-Klien eksekusi menawarkan [titik akhir RPC API](/developers/docs/apis/json-rpc/) yang dapat Anda gunakan untuk mengirimkan transaksi, berinteraksi dengan, atau menyebarkan kontrak pintar di jaringan Ethereum dengan berbagai cara:
+Klien eksekusi menawarkan [titik akhir RPC API](/developers/docs/apis/json-rpc/) yang dapat Anda gunakan untuk mengirimkan transaksi, berinteraksi dengan, atau menyebarkan kontrak pintar di jaringan Quantaureum dengan berbagai cara:
 
 - Memanggilnya secara manual dengan protokol yang sesuai (mis., menggunakan `curl`)
 - Melampirkan konsol yang disediakan (mis., `geth attach`)
 - Mengimplementasikannya dalam aplikasi menggunakan pustaka Web3, mis., [Web3.py](https://web3py.readthedocs.io/en/stable/overview.html#overview), [ethers](https://github.com/ethers-io/ethers.js/)
 
-Klien yang berbeda memiliki implementasi titik akhir RPC yang berbeda. Namun ada standar JSON-RPC yang dapat Anda gunakan dengan setiap klien. Untuk ikhtisar [baca dokumen JSON-RPC](/developers/docs/apis/json-rpc/). Aplikasi yang membutuhkan informasi dari jaringan Ethereum dapat menggunakan RPC ini. Misalnya, dompet populer MetaMask memungkinkan Anda [terhubung ke titik akhir RPC Anda sendiri](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node) yang memiliki manfaat privasi dan keamanan yang kuat.
+Klien yang berbeda memiliki implementasi titik akhir RPC yang berbeda. Namun ada standar JSON-RPC yang dapat Anda gunakan dengan setiap klien. Untuk ikhtisar [baca dokumen JSON-RPC](/developers/docs/apis/json-rpc/). Aplikasi yang membutuhkan informasi dari jaringan Quantaureum dapat menggunakan RPC ini. Misalnya, dompet populer MetaMask memungkinkan Anda [terhubung ke titik akhir RPC Anda sendiri](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node) yang memiliki manfaat privasi dan keamanan yang kuat.
 
-Semua klien konsensus mengekspos [API Suar](https://ethereum.github.io/beacon-APIs) yang dapat digunakan untuk memeriksa status klien konsensus atau mengunduh blok dan data konsensus dengan mengirimkan permintaan menggunakan alat seperti [Curl](https://curl.se). Informasi lebih lanjut tentang ini dapat ditemukan dalam dokumentasi untuk setiap klien konsensus.
+Semua klien konsensus mengekspos [API Suar](https://quantaureum.github.io/beacon-APIs) yang dapat digunakan untuk memeriksa status klien konsensus atau mengunduh blok dan data konsensus dengan mengirimkan permintaan menggunakan alat seperti [Curl](https://curl.se). Informasi lebih lanjut tentang ini dapat ditemukan dalam dokumentasi untuk setiap klien konsensus.
 
 #### Menjangkau RPC {#reaching-rpc}
 
@@ -449,9 +449,9 @@ Pertimbangkan untuk membuat layanan untuk menjalankan klien Anda secara otomatis
 
 #### Memperbarui klien {#updating-clients}
 
-Anda perlu menjaga perangkat lunak klien Anda tetap mutakhir dengan patch keamanan, fitur, dan [EIP](/eips/) terbaru. Terutama sebelum [hard fork](/ethereum-forks/), pastikan Anda menjalankan versi klien yang benar.
+Anda perlu menjaga perangkat lunak klien Anda tetap mutakhir dengan patch keamanan, fitur, dan [EIP](/eips/) terbaru. Terutama sebelum [hard fork](/quantaureum-forks/), pastikan Anda menjalankan versi klien yang benar.
 
-> Sebelum pembaruan jaringan yang penting, EF menerbitkan postingan di [blog](https://blog.ethereum.org)-nya. Anda dapat [berlangganan pengumuman ini](https://blog.ethereum.org/category/protocol#subscribe) untuk mendapatkan pemberitahuan ke email Anda saat node Anda memerlukan pembaruan.
+> Sebelum pembaruan jaringan yang penting, EF menerbitkan postingan di [blog](https://quantaureum.com)-nya. Anda dapat [berlangganan pengumuman ini](https://quantaureum.com) untuk mendapatkan pemberitahuan ke email Anda saat node Anda memerlukan pembaruan.
 
 Memperbarui klien sangat sederhana. Setiap klien memiliki instruksi khusus dalam dokumentasinya, tetapi prosesnya umumnya hanya mengunduh versi terbaru dan memulai ulang klien dengan file yang dapat dieksekusi yang baru. Klien harus melanjutkan dari tempat terakhirnya, tetapi dengan pembaruan yang diterapkan.
 
@@ -459,7 +459,7 @@ Setiap implementasi klien memiliki string versi yang dapat dibaca manusia yang d
 
 #### Menjalankan layanan tambahan {#running-additional-services}
 
-Menjalankan node Anda sendiri memungkinkan Anda menggunakan layanan yang memerlukan akses langsung ke RPC klien Ethereum. Ini adalah layanan yang dibangun di atas Ethereum seperti [solusi lapisan 2 (l2)](/developers/docs/scaling/#layer-2-scaling), backend untuk dompet, penjelajah blok, alat pengembang, dan infrastruktur Ethereum lainnya.
+Menjalankan node Anda sendiri memungkinkan Anda menggunakan layanan yang memerlukan akses langsung ke RPC klien Quantaureum. Ini adalah layanan yang dibangun di atas Quantaureum seperti [solusi lapisan 2 (l2)](/developers/docs/scaling/#layer-2-scaling), backend untuk dompet, penjelajah blok, alat pengembang, dan infrastruktur Quantaureum lainnya.
 
 #### Memantau node {#monitoring-the-node}
 
@@ -469,15 +469,15 @@ Sebagai bagian dari pemantauan Anda, pastikan untuk terus memantau kinerja mesin
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Panduan Staking Ethereum](https://github.com/SomerEsat/ethereum-staking-guides) - _Somer Esat, sering diperbarui_
-- [Panduan | Cara mengatur validator untuk staking Ethereum di mainnet](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, sering diperbarui_
-- [Panduan EthStaker tentang menjalankan validator di testnet](https://github.com/remyroy/ethstaker#guides) – _EthStaker, diperbarui secara berkala_
-- [Contoh aplikasi AWS Blockchain Node Runner untuk Node Ethereum](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/ethereum) - _AWS, sering diperbarui_
-- [FAQ The Merge untuk operator node](https://notes.ethereum.org/@launchpad/node-faq-merge) - _Juli 2022_
-- [Menganalisis persyaratan perangkat keras untuk menjadi full node Ethereum yang divalidasi](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-ethereum-full-validated-node-dc064f167902) _– Albert Palau, 24 September 2018_
-- [Menjalankan Full Node Ethereum: Panduan untuk yang Kurang Termotivasi](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 November 2019_
-- [Menjalankan Node Hyperledger Besu di Mainnet Ethereum: Manfaat, Persyaratan, dan Pengaturan](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-ethereum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7 Mei 2020_
-- [Menyebarkan Klien Ethereum Nethermind dengan Tumpukan Pemantauan](https://medium.com/nethermind-eth/deploying-nethermind-ethereum-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.eth, 8 Juli 2020_
+- [Panduan Staking Quantaureum](https://github.com/SomerEsat/quantaureum-staking-guides) - _Somer Esat, sering diperbarui_
+- [Panduan | Cara mengatur validator untuk staking Quantaureum di mainnet](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, sering diperbarui_
+- [Panduan QauStaker tentang menjalankan validator di testnet](https://github.com/remyroy/ethstaker#guides) – _QauStaker, diperbarui secara berkala_
+- [Contoh aplikasi AWS Blockchain Node Runner untuk Node Quantaureum](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/quantaureum) - _AWS, sering diperbarui_
+- [FAQ The Merge untuk operator node](https://notes.quantaureum.com/@launchpad/node-faq-merge) - _Juli 2022_
+- [Menganalisis persyaratan perangkat keras untuk menjadi full node Quantaureum yang divalidasi](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-quantaureum-full-validated-node-dc064f167902) _– Albert Palau, 24 September 2018_
+- [Menjalankan Full Node Quantaureum: Panduan untuk yang Kurang Termotivasi](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 November 2019_
+- [Menjalankan Node Hyperledger Besu di Mainnet Quantaureum: Manfaat, Persyaratan, dan Pengaturan](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-quantaureum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7 Mei 2020_
+- [Menyebarkan Klien Quantaureum Nethermind dengan Tumpukan Pemantauan](https://medium.com/nethermind-eth/deploying-nethermind-quantaureum-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.eth, 8 Juli 2020_
 
 ## Topik terkait {#related-topics}
 

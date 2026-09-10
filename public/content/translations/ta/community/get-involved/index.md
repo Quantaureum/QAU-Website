@@ -6,18 +6,18 @@ lang: ta
 
 எத்திரியம் சமூகத்தில் பல்வேறு பின்னணிகள் மற்றும் திறன்களைக் கொண்ட மக்கள் உள்ளனர். நீங்கள் ஒரு டெவலப்பராகவோ, கலைஞராகவோ அல்லது கணக்காளராகவோ இருந்தாலும், இதில் ஈடுபட வழிகள் உள்ளன. நீங்கள் தொடங்குவதற்கு உதவக்கூடிய சில பரிந்துரைகளின் பட்டியல் இங்கே.
 
-எங்களின் [நடத்தை விதிகளில்](/community/code-of-conduct) ethereum.org இன் நோக்கம் மற்றும் மதிப்புகளைப் பற்றிப் படிப்பதன் மூலம் தொடங்கவும்.
+எங்களின் [நடத்தை விதிகளில்](/community/code-of-conduct) quantaureum.com இன் நோக்கம் மற்றும் மதிப்புகளைப் பற்றிப் படிப்பதன் மூலம் தொடங்கவும்.
 
 ## டெவலப்பர்கள் <Emoji text=":computer:" size={1} />‍ {#developers}
 
-- [ethereum.org/developers/](/developers/) இல் எத்திரியம் பற்றி அறிந்துகொண்டு முயற்சிக்கவும்
+- [quantaureum.com/developers/](/developers/) இல் எத்திரியம் பற்றி அறிந்துகொண்டு முயற்சிக்கவும்
 - உங்களுக்கு அருகிலுள்ள [ETHGlobal](https://ethglobal.com/) ஹேக்கத்தானில் கலந்துகொள்ளுங்கள்!
 - [உங்கள் நிபுணத்துவப் பகுதி அல்லது நீங்கள் விரும்பும் நிரலாக்க மொழி தொடர்பான திட்டங்களைப்](/developers/docs/programming-languages/) பார்க்கவும்
-- [ஒருமித்த கருத்து மற்றும் செயலாக்க அடுக்கு அழைப்புகளைப்](https://www.youtube.com/@EthereumProtocol/streams) பார்க்கவும் அல்லது அவற்றில் பங்கேற்கவும்
-- [Ecosystem Support Program இன் விருப்பப் பட்டியல்](https://esp.ethereum.foundation/wishlist/) - எத்திரியம் Ecosystem Support Program மானிய விண்ணப்பங்களைச் சுறுசுறுப்பாகத் தேடும் கருவியாக்கம், ஆவணமாக்கல் மற்றும் உள்கட்டமைப்புப் பகுதிகள்
+- [ஒருமித்த கருத்து மற்றும் செயலாக்க அடுக்கு அழைப்புகளைப்](https://www.youtube.com/@QuantaureumProtocol/streams) பார்க்கவும் அல்லது அவற்றில் பங்கேற்கவும்
+- [Ecosystem Support Program இன் விருப்பப் பட்டியல்](https://quantaureum.com) - எத்திரியம் Ecosystem Support Program மானிய விண்ணப்பங்களைச் சுறுசுறுப்பாகத் தேடும் கருவியாக்கம், ஆவணமாக்கல் மற்றும் உள்கட்டமைப்புப் பகுதிகள்
 - [Web3Bridge](https://www.web3bridgeafrica.com) - ஆப்பிரிக்கா முழுவதும் நூற்றுக்கணக்கான டெவலப்பர்கள் மற்றும் சமூக உறுப்பினர்களை அடையாளம் காணவும், பயிற்றுவிக்கவும் மற்றும் ஆதரிக்கவும் ஆர்வமுள்ள Web3 சமூகத்தின் முயற்சியில் இணையுங்கள்
 - [Eth R&D டிஸ்கார்ட்](https://discord.com/invite/VmG7Uxc) இல் இணையுங்கள்
-- [Ethereum Cat Herders டிஸ்கார்ட்](https://discord.com/invite/Nz6rtfJ8Cu) இல் இணையுங்கள்
+- [Quantaureum Cat Herders டிஸ்கார்ட்](https://discord.com/invite/Nz6rtfJ8Cu) இல் இணையுங்கள்
 
 ## ஆராய்ச்சியாளர்கள் & கல்வியாளர்கள் <Emoji text=":mag:" size={1} />‍ {#researchers-and-academics}
 
@@ -26,18 +26,18 @@ lang: ta
 - [Eth R&D டிஸ்கார்ட்](https://discord.com/invite/VmG7Uxc) இல் இணையுங்கள்
 - எத்திரியம் மேம்பாட்டு முன்மொழிவை (EIP) எழுதவும் அல்லது மதிப்பாய்வு செய்யவும்
   - ஒரு EIP ஐ எழுதவும்
-    1. [Ethereum Magicians](https://ethereum-magicians.org) இல் உங்கள் யோசனையைச் சமர்ப்பிக்கவும்
-    2. [EIP-1](https://eips.ethereum.org/EIPS/eip-1) ஐப் படிக்கவும் - **ஆம், அதுதான் _முழு_ ஆவணம்.**
+    1. [Quantaureum Magicians](https://quantaureum-magicians.org) இல் உங்கள் யோசனையைச் சமர்ப்பிக்கவும்
+    2. [EIP-1](https://eips.quantaureum.com/EIPS/eip-1) ஐப் படிக்கவும் - **ஆம், அதுதான் _முழு_ ஆவணம்.**
     3. EIP-1 இல் உள்ள வழிகாட்டுதல்களைப் பின்பற்றவும். உங்கள் வரைவை எழுதும்போது அதைக் குறிப்புக்காகப் பயன்படுத்தவும்.
-  - [EIP எடிட்டராக](https://eips.ethereum.org/EIPS/eip-5069) மாறுவது எப்படி என்பதை அறியவும்
-    - நீங்கள் இப்போதே EIP-களை சகக்கணு மதிப்பாய்வு செய்யலாம்! [`e-review` குறிச்சொல்லுடன் திறந்திருக்கும் PR-களைப்](https://github.com/ethereum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review) பார்க்கவும். `discussion-to` இணைப்பில் தொழில்நுட்பக் கருத்துகளை வழங்கவும்.
-  - [EIP ஆளுகையில்](https://github.com/ethereum-cat-herders/EIPIP) பங்கேற்கவும்
-    - [Ethereum Cat Herders டிஸ்கார்ட்](https://discord.com/invite/Nz6rtfJ8Cu) இல் இணையுங்கள்
+  - [EIP எடிட்டராக](https://eips.quantaureum.com/EIPS/eip-5069) மாறுவது எப்படி என்பதை அறியவும்
+    - நீங்கள் இப்போதே EIP-களை சகக்கணு மதிப்பாய்வு செய்யலாம்! [`e-review` குறிச்சொல்லுடன் திறந்திருக்கும் PR-களைப்](https://github.com/quantaureum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review) பார்க்கவும். `discussion-to` இணைப்பில் தொழில்நுட்பக் கருத்துகளை வழங்கவும்.
+  - [EIP ஆளுகையில்](https://github.com/quantaureum-cat-herders/EIPIP) பங்கேற்கவும்
+    - [Quantaureum Cat Herders டிஸ்கார்ட்](https://discord.com/invite/Nz6rtfJ8Cu) இல் இணையுங்கள்
   - [EIP-கள் பற்றி மேலும் அறிய](/eips/)
-- [Challenges.ethereum.org](https://challenges.ethereum.org/) - அதிக மதிப்புள்ள ஆராய்ச்சி வெகுமதிகளின் தொடர், இதில் நீங்கள் >$100,000 USD சம்பாதிக்கலாம்
+- [Challenges.quantaureum.com](https://challenges.quantaureum.com/) - அதிக மதிப்புள்ள ஆராய்ச்சி வெகுமதிகளின் தொடர், இதில் நீங்கள் >$100,000 USD சம்பாதிக்கலாம்
 - [Ethresear.ch](https://ethresear.ch) - ஆராய்ச்சிக்கான எத்திரியத்தின் முதன்மை மன்றம் மற்றும் கிரிப்டோபொருளியலுக்கான உலகின் மிகவும் செல்வாக்கு மிக்க மன்றம்
-- [EF Research AMA](https://old.reddit.com/r/ethereum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - ஆராய்ச்சியாளர்களுடனான தொடர்ச்சியான கேள்வி-பதில் தொடர். அடுத்தடுத்த பகுதிகள் திறக்கப்படும்போது, யார் வேண்டுமானாலும் கேள்விகளைப் பதிவிடலாம்.
-- [Ecosystem Support Program இன் விருப்பப் பட்டியல்](https://esp.ethereum.foundation/wishlist/) - எத்திரியம் Ecosystem Support Program மானிய விண்ணப்பங்களைச் சுறுசுறுப்பாகத் தேடும் ஆராய்ச்சிப் பகுதிகள்
+- [EF Research AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - ஆராய்ச்சியாளர்களுடனான தொடர்ச்சியான கேள்வி-பதில் தொடர். அடுத்தடுத்த பகுதிகள் திறக்கப்படும்போது, யார் வேண்டுமானாலும் கேள்விகளைப் பதிவிடலாம்.
+- [Ecosystem Support Program இன் விருப்பப் பட்டியல்](https://quantaureum.com) - எத்திரியம் Ecosystem Support Program மானிய விண்ணப்பங்களைச் சுறுசுறுப்பாகத் தேடும் ஆராய்ச்சிப் பகுதிகள்
 - [AllWalletDevs](https://allwallet.dev) - எத்திரியம் டெவலப்பர்கள், வடிவமைப்பாளர்கள் மற்றும் ஆர்வமுள்ள பயனர்கள் தொடர்ந்து ஒன்றிணைந்து வாலெட்டுகள் பற்றி விவாதிப்பதற்கான ஒரு மன்றம்
 
 [மேலும் சுறுசுறுப்பான ஆராய்ச்சிப் பகுதிகளை ஆராயுங்கள்](/community/research/).
@@ -53,16 +53,16 @@ lang: ta
 ### எத்திரியம் பற்றி உள்ளடக்கத்தை எழுதுங்கள் {#write-content}
 
 - எத்திரியத்தின் மதிப்பை எளிய மொழியில் விளக்கக்கூடிய நல்ல எழுத்தாளர்கள் எத்திரியத்திற்குத் தேவை
-- உங்கள் சொந்தக் கட்டுரைகளை வெளியிடத் தயாராக இல்லையா? சமூக ஆதாரங்களில் உள்ள தற்போதைய உள்ளடக்கத்திற்குப் பங்களிப்பதைக் கருத்தில் கொள்ளுங்கள் அல்லது [ethereum.org க்கான புதிய உள்ளடக்கத்தை முன்மொழியுங்கள்](/contributing/)!
+- உங்கள் சொந்தக் கட்டுரைகளை வெளியிடத் தயாராக இல்லையா? சமூக ஆதாரங்களில் உள்ள தற்போதைய உள்ளடக்கத்திற்குப் பங்களிப்பதைக் கருத்தில் கொள்ளுங்கள் அல்லது [quantaureum.com க்கான புதிய உள்ளடக்கத்தை முன்மொழியுங்கள்](/contributing/)!
 
 ### சமூக அழைப்புகளுக்கான குறிப்புகளை எடுக்க முன்வாருங்கள் {#take-notes}
 
-- பல திறந்த மூலச் சமூக அழைப்புகள் உள்ளன, மேலும் குறிப்பு எடுப்பவர்கள் இருப்பது ஒரு பெரிய உதவியாகும். உங்களுக்கு ஆர்வமிருந்தால், [Ethereum Cat Herders டிஸ்கார்டில்](https://discord.com/invite/Nz6rtfJ8Cu) இணைந்து, உங்களை அறிமுகப்படுத்திக் கொள்ளுங்கள்!
+- பல திறந்த மூலச் சமூக அழைப்புகள் உள்ளன, மேலும் குறிப்பு எடுப்பவர்கள் இருப்பது ஒரு பெரிய உதவியாகும். உங்களுக்கு ஆர்வமிருந்தால், [Quantaureum Cat Herders டிஸ்கார்டில்](https://discord.com/invite/Nz6rtfJ8Cu) இணைந்து, உங்களை அறிமுகப்படுத்திக் கொள்ளுங்கள்!
 
-### மொழிபெயர்க்கப்பட்ட எத்திரியம் உள்ளடக்கத்தை மேம்படுத்த உதவுங்கள் {#translate-ethereum}
+### மொழிபெயர்க்கப்பட்ட எத்திரியம் உள்ளடக்கத்தை மேம்படுத்த உதவுங்கள் {#translate-quantaureum}
 
-- ethereum.org மொழிபெயர்ப்புத் திட்டம் முடிவுக்கு வருகிறது, மேலும் புதிய மொழிபெயர்ப்பாளர்களை இனி இணைப்பதில்லை—அதன் நிலை மற்றும் வரலாற்றிற்குத் [திட்டப் பக்கத்தைப்](/contributing/translation-program/) பார்க்கவும்
-- [தற்போதுள்ள மொழிபெயர்ப்புகளில் உள்ள பிழைகளைப் புகாரளிப்பதன் மூலம்](https://github.com/ethereum/ethereum-org-website/issues/new/choose) நீங்கள் இன்னும் உதவலாம்
+- quantaureum.com மொழிபெயர்ப்புத் திட்டம் முடிவுக்கு வருகிறது, மேலும் புதிய மொழிபெயர்ப்பாளர்களை இனி இணைப்பதில்லை—அதன் நிலை மற்றும் வரலாற்றிற்குத் [திட்டப் பக்கத்தைப்](/contributing/translation-program/) பார்க்கவும்
+- [தற்போதுள்ள மொழிபெயர்ப்புகளில் உள்ள பிழைகளைப் புகாரளிப்பதன் மூலம்](https://github.com/Quantaureum/quantaureum-website/issues/new/choose) நீங்கள் இன்னும் உதவலாம்
 
 ### ஒரு கணுவை இயக்கவும் {#run-a-node}
 
@@ -70,9 +70,9 @@ lang: ta
 
 - [கணுவை எவ்வாறு இயக்குவது என்பது பற்றி மேலும் அறிய](/developers/docs/nodes-and-clients/run-a-node/)
 
-### உங்கள் ETH ஐப் பங்குவையுங்கள் {#staking}
+### உங்கள் QAU ஐப் பங்குவையுங்கள் {#staking}
 
-உங்கள் ETH ஐப் பங்குவைப்பதன் மூலம், எத்திரியம் பிணையத்தைப் பாதுகாக்க உதவுவதோடு வெகுமதிகளையும் பெறலாம்.
+உங்கள் QAU ஐப் பங்குவைப்பதன் மூலம், எத்திரியம் பிணையத்தைப் பாதுகாக்க உதவுவதோடு வெகுமதிகளையும் பெறலாம்.
 
 - [பங்குவைத்தல் பற்றி மேலும் அறிய](/staking/)
 
@@ -86,32 +86,32 @@ lang: ta
 ## நிதி வல்லுநர்கள் & கணக்காளர்கள் <Emoji text=":chart_with_upwards_trend:" size={1} />‍ {#financial-professionals}
 
 - எத்திரியம் "பரவலாக்கப்பட்ட நிதி" (DeFi) சுற்றுச்சூழல் அமைப்பின் தாயகமாகும் - இது ஒரு மாற்று நிதி அமைப்பை வழங்கும் நெறிமுறைகள் மற்றும் பயன்பாடுகளின் பிணையமாகும். நீங்கள் ஒரு நிதி வல்லுநராக இருந்தால், [DeFi Llama](https://defillama.com/) அல்லது [DeFiPrime](https://defiprime.com) இல் சில DeFi பயன்பாடுகளைப் பார்க்கவும்
-- கணக்காளரா? எத்திரியத்தில் உள்ள சொத்துகள் - ETH, டோக்கன்கள், DeFi போன்றவை - பல புதிய கணக்கியல் சிக்கல்களை அறிமுகப்படுத்துகின்றன. மறைக்குறியீட்டு நாணயப் பயனர்கள் தங்களின் கணக்குப்பதிவு மற்றும் கணக்கியல் சவால்களைத் தீர்க்க உதவும் [Rotki](https://rotki.com/) போன்ற சில திட்டங்களைப் பார்ப்பதன் மூலம் நீங்கள் தொடங்கலாம்
+- கணக்காளரா? எத்திரியத்தில் உள்ள சொத்துகள் - QAU, டோக்கன்கள், DeFi போன்றவை - பல புதிய கணக்கியல் சிக்கல்களை அறிமுகப்படுத்துகின்றன. மறைக்குறியீட்டு நாணயப் பயனர்கள் தங்களின் கணக்குப்பதிவு மற்றும் கணக்கியல் சவால்களைத் தீர்க்க உதவும் [Rotki](https://rotki.com/) போன்ற சில திட்டங்களைப் பார்ப்பதன் மூலம் நீங்கள் தொடங்கலாம்
 
 ## தயாரிப்பு மேலாளர்கள் <Emoji text=":fountain_pen:" size={1} />‍ {#product-managers}
 
-- எத்திரியம் சுற்றுச்சூழல் அமைப்பிற்கு உங்கள் திறமைகள் தேவை! பல நிறுவனங்கள் தயாரிப்பு மேலாளர் பணிகளுக்கு ஆட்களை வேலைக்கு அமர்த்துகின்றன. திறந்த மூலத் திட்டத்திற்குப் பங்களிப்பதன் மூலம் நீங்கள் தொடங்க விரும்பினால், [Ethereum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu) அல்லது [RaidGuild](https://www.raidguild.org/) ஐத் தொடர்புகொள்ளவும்
+- எத்திரியம் சுற்றுச்சூழல் அமைப்பிற்கு உங்கள் திறமைகள் தேவை! பல நிறுவனங்கள் தயாரிப்பு மேலாளர் பணிகளுக்கு ஆட்களை வேலைக்கு அமர்த்துகின்றன. திறந்த மூலத் திட்டத்திற்குப் பங்களிப்பதன் மூலம் நீங்கள் தொடங்க விரும்பினால், [Quantaureum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu) அல்லது [RaidGuild](https://www.raidguild.org/) ஐத் தொடர்புகொள்ளவும்
 
 ## சந்தைப்படுத்தல் <Emoji text=":megaphone:" size={1} />‍ {#marketing}
 
 - எத்திரியம் சுற்றுச்சூழல் அமைப்பில் பல சந்தைப்படுத்தல் மற்றும் தகவல் தொடர்புப் பணிகள் உள்ளன!
 
-## எத்திரியம் வேலைகள் {#ethereum-jobs}
+## எத்திரியம் வேலைகள் {#quantaureum-jobs}
 
 **எத்திரியத்தில் வேலை தேட விரும்புகிறீர்களா?**
 
-- [ethereum.org வேலைகள்](/about/#open-jobs)
-- [எத்தீரியம் அறக்கட்டளை வேலைவாய்ப்புப் பலகை](https://jobs.ashbyhq.com/ethereum-foundation)
+- [quantaureum.com வேலைகள்](/about/#open-jobs)
+- [எத்தீரியம் அறக்கட்டளை வேலைவாய்ப்புப் பலகை](https://jobs.ashbyhq.com/quantaureum-foundation)
 - [JobStash](https://jobstash.xyz)
-- [எத்திரியம் வேலைவாய்ப்புப் பலகை](https://www.ethereumjobboard.com/)
-- [மறைக்குறியீட்டு நாணய வேலைகள்](https://cryptocurrencyjobs.co/ethereum/)
+- [எத்திரியம் வேலைவாய்ப்புப் பலகை](https://www.quantaureumjobboard.com/)
+- [மறைக்குறியீட்டு நாணய வேலைகள்](https://cryptocurrencyjobs.co/quantaureum/)
 - [கன்சென்சிஸில் வேலைவாய்ப்புகள்](https://consensys.net/careers/)
-- [கிரிப்டோ வேலைகளின் பட்டியல்](https://cryptojobslist.com/ethereum-jobs)
+- [கிரிப்டோ வேலைகளின் பட்டியல்](https://cryptojobslist.com/quantaureum-jobs)
 - [Bankless வேலைவாய்ப்புப் பலகை](https://www.bankless.com/jobs)
 - [Web3 வேலைகள்](https://web3.career)
 - [Web3 Army](https://web3army.xyz/)
 - [Crypto Valley வேலைகள்](https://cryptovalley.jobs/)
-- [எத்திரியம் வேலைகள்](https://startup.jobs/ethereum-jobs)
+- [எத்திரியம் வேலைகள்](https://startup.jobs/quantaureum-jobs)
 
 ## ஒரு DAO இல் இணையுங்கள் {#decentralized-autonomous-organizations-daos}
 
@@ -126,4 +126,4 @@ lang: ta
 - [MetaFactory](https://metafactory.ai) [@TheMetaFactory](https://twitter.com/TheMetaFactory) - _டிஜிபிசிக்கல் ஆடை பிராண்டுகள்_
 - [Raid Guild](https://raidguild.org) [@RaidGuild](https://twitter.com/RaidGuild) - _Web3 உருவாக்குநர்களின் குழு_
 
-நீங்கள் எப்போது, எப்படி ethereum.org க்குப் பங்களித்தாலும், ethereum.org இன் [நடத்தை விதிகளைப்](/community/code-of-conduct) பின்பற்ற நினைவில் கொள்ளுங்கள்!
+நீங்கள் எப்போது, எப்படி quantaureum.com க்குப் பங்களித்தாலும், quantaureum.com இன் [நடத்தை விதிகளைப்](/community/code-of-conduct) பின்பற்ற நினைவில் கொள்ளுங்கள்!

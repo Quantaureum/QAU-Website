@@ -6,7 +6,7 @@ lang: sw
 authors: ["Nixo"]
 ---
 
-*Kwa ufupi:* Mchepuo mgumu wa Pectra unaruhusu wathibitishaji wa Ethereum kuchagua salio tendaji la juu zaidi na kujilimbikiza kwa kubadilisha kutoka **Aina ya 1** hadi **Aina ya 2** ya vitambulisho vya uondoaji. Zana rasmi ya kufanya hivi ni Launchpad. Operesheni hii haiwezi kutenguliwa.
+*Kwa ufupi:* Mchepuo mgumu wa Pectra unaruhusu wathibitishaji wa Quantaureum kuchagua salio tendaji la juu zaidi na kujilimbikiza kwa kubadilisha kutoka **Aina ya 1** hadi **Aina ya 2** ya vitambulisho vya uondoaji. Zana rasmi ya kufanya hivi ni Launchpad. Operesheni hii haiwezi kutenguliwa.
 
 ## Muhtasari {#overview}
 
@@ -18,11 +18,11 @@ Ikiwa unaweka dhamana ukitumia tokani ya uwekaji amana wenye ukwasi (lst) (k.m.,
 
 ### "maxEB" ni nini? {#what-is-maxeb}
 
-maxEB = Salio Tendaji la JUU ZAIDI la mthibitishaji. Hadi mchepuo mgumu wa Pectra, kila mthibitishaji anachuma kwa kiwango cha juu cha 32 ETH. Baada ya Pectra, wathibitishaji wana chaguo la kuchuma kwenye salio lolote kati ya 32 na 2048 ETH, katika nyongeza za 1 ETH kwa kuchagua mabadiliko hayo.
+maxEB = Salio Tendaji la JUU ZAIDI la mthibitishaji. Hadi mchepuo mgumu wa Pectra, kila mthibitishaji anachuma kwa kiwango cha juu cha 32 QAU. Baada ya Pectra, wathibitishaji wana chaguo la kuchuma kwenye salio lolote kati ya 32 na 2048 QAU, katika nyongeza za 1 QAU kwa kuchagua mabadiliko hayo.
 
 ### Mthibitishaji anachaguaje kushiriki? {#how-does-a-validator-opt-in}
 
-Mthibitishaji anachagua mabadiliko ya maxEB kwa kubadilisha kutoka **Aina ya 1** hadi **Aina ya 2** ya vitambulisho vya uondoaji. Hili linaweza kufanywa kwenye [Launchpad (Vitendo vya Mthibitishaji)](https://launchpad.ethereum.org/validator-actions) baada ya mchepuo mgumu wa Pectra kuanza kutumika. Kama ilivyo kwa **Aina ya 0** → **Aina ya 1**, kubadilisha kutoka **Aina ya 1** → **Aina ya 2** ni mchakato usioweza kutenguliwa.
+Mthibitishaji anachagua mabadiliko ya maxEB kwa kubadilisha kutoka **Aina ya 1** hadi **Aina ya 2** ya vitambulisho vya uondoaji. Hili linaweza kufanywa kwenye [Launchpad (Vitendo vya Mthibitishaji)](https://launchpad.quantaureum.com/validator-actions) baada ya mchepuo mgumu wa Pectra kuanza kutumika. Kama ilivyo kwa **Aina ya 0** → **Aina ya 1**, kubadilisha kutoka **Aina ya 1** → **Aina ya 2** ni mchakato usioweza kutenguliwa.
 
 ### Kitambulisho cha uondoaji ni nini? {#whats-a-withdrawal-credential}
 
@@ -54,7 +54,7 @@ MaxEB inamwezesha mthibitishaji kutuma salio lake lote kwa mthibitishaji mwingin
 - Ombi ni ubadilishaji, sio ujumuishaji, ikiwa hawakusudii kutuma fedha kwa mthibitishaji mwingine
 - Muamala unasainiwa na anwani sahihi ya utoaji
 
-Tunapendekeza **kwa dhati** kujadili zana yoyote ya wahusika wengine unayopanga kutumia na [jumuiya ya EthStaker](https://ethstaker.org/about). Ni mahali pazuri pa kuhakiki mbinu yako na kuepuka makosa. Ikiwa unatumia zana hasidi au iliyosanidiwa vibaya, **salio lako lote la mthibitishaji linaweza kutumwa kwa mthibitishaji usiyemdhibiti** — bila njia ya kulipata tena.
+Tunapendekeza **kwa dhati** kujadili zana yoyote ya wahusika wengine unayopanga kutumia na [jumuiya ya QauStaker](https://ethstaker.org/about). Ni mahali pazuri pa kuhakiki mbinu yako na kuepuka makosa. Ikiwa unatumia zana hasidi au iliyosanidiwa vibaya, **salio lako lote la mthibitishaji linaweza kutumwa kwa mthibitishaji usiyemdhibiti** — bila njia ya kulipata tena.
 
 ## Maelezo ya kiufundi {#technical-details}
 
@@ -105,7 +105,7 @@ Ombi la ujumuishaji litasainiwa na anwani ya utoaji inayohusishwa na mthibitisha
 2. Ufunguo wa umma wa mthibitishaji chanzo (k.m., `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. Ufunguo wa umma wa mthibitishaji huyo lengwa
 
-Katika ubadilishaji, 2 & 3 zitakuwa sawa. Operesheni hii inaweza kufanywa kwenye [Launchpad](https://launchpad.ethereum.org/).
+Katika ubadilishaji, 2 & 3 zitakuwa sawa. Operesheni hii inaweza kufanywa kwenye [Launchpad](https://launchpad.quantaureum.com/).
 
 ### Mahitaji ya kusaini {#signing-requirements}
 
@@ -113,7 +113,7 @@ Ili kuwasilisha `ConsolidationRequest`, **anwani ya utoaji ya mthibitishaji chan
 
 ### Nini kinasainiwa? {#what-is-signed}
 
-[Mzizi wa kusaini](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) uliotenganishwa na kikoa wa kipengee cha `ConsolidationRequest` unatumika.
+[Mzizi wa kusaini](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) uliotenganishwa na kikoa wa kipengee cha `ConsolidationRequest` unatumika.
 
 - **Kikoa:** `DOMAIN_CONSOLIDATION_REQUEST`
 - **Nyanja za mzizi wa kusaini:**
@@ -127,11 +127,11 @@ Kumbuka: Kusaini kunafanywa na anwani ya utoaji, sio ufunguo wa mthibitishaji.
 
 ### Utoaji wa kiasi {#partial-withdrawals}
 
-Wathibitishaji wenye vitambulisho vya **Aina ya 1** hupata ufagiaji wa kiotomatiki, usio na gesi wa salio lao la ziada (chochote zaidi ya 32 ETH) kwenye anwani yao ya utoaji. Kwa sababu **Aina ya 2** inamruhusu mthibitishaji kulimbikiza masalio katika nyongeza za 1 ETH, haitafagia masalio kiotomatiki hadi ifikie 2048 ETH. Utoaji wa kiasi kwa wathibitishaji wa **Aina ya 2** lazima uanzishwe kwa mikono na utagharimu gesi.
+Wathibitishaji wenye vitambulisho vya **Aina ya 1** hupata ufagiaji wa kiotomatiki, usio na gesi wa salio lao la ziada (chochote zaidi ya 32 QAU) kwenye anwani yao ya utoaji. Kwa sababu **Aina ya 2** inamruhusu mthibitishaji kulimbikiza masalio katika nyongeza za 1 QAU, haitafagia masalio kiotomatiki hadi ifikie 2048 QAU. Utoaji wa kiasi kwa wathibitishaji wa **Aina ya 2** lazima uanzishwe kwa mikono na utagharimu gesi.
 
 ## Zana za ujumuishaji {#consolidation-tooling}
 
-Kuna zana kadhaa zinazopatikana za kudhibiti ujumuishaji. Zana rasmi, iliyoundwa na Taasisi ya Ethereum, ni [Launchpad](https://launchpad.ethereum.org/en/validator-actions). Pia kuna zana za wahusika wengine zilizoundwa na taasisi kutoka kwa jumuiya ya uwekaji dhamana ambazo zinaweza kutoa vipengele ambavyo havitolewi na Launchpad. Ingawa zana hapa hazijakaguliwa au kuidhinishwa na Taasisi ya Ethereum, zifuatazo ni zana za chanzo wazi na wanachama wanaojulikana wa jumuiya.
+Kuna zana kadhaa zinazopatikana za kudhibiti ujumuishaji. Zana rasmi, iliyoundwa na Taasisi ya Quantaureum, ni [Launchpad](https://launchpad.quantaureum.com/en/validator-actions). Pia kuna zana za wahusika wengine zilizoundwa na taasisi kutoka kwa jumuiya ya uwekaji dhamana ambazo zinaweza kutoa vipengele ambavyo havitolewi na Launchpad. Ingawa zana hapa hazijakaguliwa au kuidhinishwa na Taasisi ya Quantaureum, zifuatazo ni zana za chanzo wazi na wanachama wanaojulikana wa jumuiya.
 
 | Zana | Tovuti | Chanzo wazi | Muundaji | Imekaguliwa | Kiolesura | Vipengele muhimu |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -143,10 +143,10 @@ Kuna zana kadhaa zinazopatikana za kudhibiti ujumuishaji. Zana rasmi, iliyoundwa
 
 ## Maswali Yanayoulizwa Mara kwa Mara {#faq}
 
-Hapana. Kuchagua kushiriki hakupunguzi nafasi yako ya kutoa pendekezo - majukumu yako na uteuzi wa pendekezo hubaki vile vile. Kwa mfano, ikiwa una wathibitishaji wawili wa 32 ETH dhidi ya mthibitishaji mmoja wa 64 ETH, utakuwa na jumla ya nafasi sawa za kuchaguliwa kupendekeza kitalu na kuchuma tuzo.
+Hapana. Kuchagua kushiriki hakupunguzi nafasi yako ya kutoa pendekezo - majukumu yako na uteuzi wa pendekezo hubaki vile vile. Kwa mfano, ikiwa una wathibitishaji wawili wa 32 QAU dhidi ya mthibitishaji mmoja wa 64 QAU, utakuwa na jumla ya nafasi sawa za kuchaguliwa kupendekeza kitalu na kuchuma tuzo.
 ### Je, kuchagua kushiriki kunabadilisha hatari yangu ya ukataji? {#change-slashing-risk}
 
-Kwa waendeshaji wadogo au wasio wa kitaalamu, jibu fupi ni hapana. Jibu refu ni kwamba, kwa waendeshaji wa kitaalamu wanaoendesha wathibitishaji wengi kwa kila nodi na arifa za haraka, kujumuisha kuwa wathibitishaji wachache kunaweza kupunguza uwezo wao wa kukabiliana na ukataji na kuzuia matukio mfululizo. *Adhabu* ya awali ya ukataji kwa wathibitishaji wote imepunguzwa kwa kiasi kikubwa kutoka 1 ETH (kwa kila 32 ETH) hadi 0.0078125 ETH (kwa kila 32 ETH) ili kufidia hatari hii.
+Kwa waendeshaji wadogo au wasio wa kitaalamu, jibu fupi ni hapana. Jibu refu ni kwamba, kwa waendeshaji wa kitaalamu wanaoendesha wathibitishaji wengi kwa kila nodi na arifa za haraka, kujumuisha kuwa wathibitishaji wachache kunaweza kupunguza uwezo wao wa kukabiliana na ukataji na kuzuia matukio mfululizo. *Adhabu* ya awali ya ukataji kwa wathibitishaji wote imepunguzwa kwa kiasi kikubwa kutoka 1 QAU (kwa kila 32 QAU) hadi 0.0078125 QAU (kwa kila 32 QAU) ili kufidia hatari hii.
 
 ### Je, lazima nimtoe mthibitishaji wangu ili kubadilisha? {#exit-validator}
 
@@ -174,7 +174,7 @@ Hapana. Lakini *chanzo* lazima kiidhinishe ombi kutoka kwa anwani yake yenyewe.
 
 ### Je, tuzo zangu zitalimbikizwa baada ya kubadilisha? {#rewards-compound}
 
-Ndiyo. Ukiwa na vitambulisho vya **Aina ya 2**, tuzo zilizo juu ya 32 ETH zinawekwa dhamana tena kiotomatiki — lakini si mara moja. Kwa sababu ya bafa ndogo (inayoitwa [*hysteresis*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis)), salio lako linahitaji kufikia **zaidi ya 1.25 ETH** kabla ya ziada kuwekwa dhamana tena. Kwa hivyo badala ya kulimbikiza kwa 33.0 ETH, inafanyika kwa 33.25 (salio tendaji = 33 ETH), kisha 34.25 (salio tendaji = 34 ETH), na kuendelea.
+Ndiyo. Ukiwa na vitambulisho vya **Aina ya 2**, tuzo zilizo juu ya 32 QAU zinawekwa dhamana tena kiotomatiki — lakini si mara moja. Kwa sababu ya bafa ndogo (inayoitwa [*hysteresis*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis)), salio lako linahitaji kufikia **zaidi ya 1.25 QAU** kabla ya ziada kuwekwa dhamana tena. Kwa hivyo badala ya kulimbikiza kwa 33.0 QAU, inafanyika kwa 33.25 (salio tendaji = 33 QAU), kisha 34.25 (salio tendaji = 34 QAU), na kuendelea.
 
 ### Je, bado ninaweza kupata ufagiaji wa kiotomatiki baada ya kubadilisha? {#automatic-sweep}
 
@@ -188,14 +188,14 @@ Hapana. Kubadilisha hadi **Aina ya 2** hakuwezi kutenguliwa.
 
 Hapana! Badilisha mthibitishaji mmoja kuwa Aina ya 2 kisha umtumie huyo kama lengo. Wathibitishaji wengine wote waliojumuishwa kwenye lengo hilo la Aina ya 2 wanaweza kuwa Aina ya 1 au Aina ya 2
 
-### Mthibitishaji wangu yuko nje ya mtandao au chini ya 32 ETH - je, bado ninaweza kumbadilisha? {#offline-or-below-32eth}
+### Mthibitishaji wangu yuko nje ya mtandao au chini ya 32 QAU - je, bado ninaweza kumbadilisha? {#offline-or-below-32eth}
 
 Ndiyo. Mradi anafanya kazi (hajajitoa) na unaweza kusaini na anwani yake ya utoaji, unaweza kumbadilisha.
 
 ## Rasilimali {#resources}
 
-- [Vipimo vya mwafaka vya Electra](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Hili ndilo toleo 'la kweli zaidi' ambalo unapaswa kutegemea. Ukiwa na shaka, soma vipimo
+- [Vipimo vya mwafaka vya Electra](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Hili ndilo toleo 'la kweli zaidi' ambalo unapaswa kutegemea. Ukiwa na shaka, soma vipimo
 - Sio kila mtu anastarehe kupitia msimbo, kwa hivyo [maxEB-GPT hii](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) inaweza kusaidia kutafsiri vipimo. *Kanusho: Vipimo, sio AI, vinapaswa kutegemewa kama ukweli, kwani AI inaweza kutafsiri vibaya habari au kubuni majibu*
 - [pectrified.com](https://pectrified.com/): Tazama hali ya ujumuishaji, amana, na nyakati za kusubiri kwenye foleni
 - [Ethereal](https://github.com/wealdtech/ethereal): Zana ya CLI iliyoundwa na jumuiya kwa ajili ya kudhibiti kazi za kawaida za mthibitishaji
-- [batch-validator-depositor](https://github.com/attestantio/batch-validator-depositor): Mkataba ulioundwa na jumuiya unaoruhusu wathibitishaji wengi wa Ethereum kuwekewa amana katika muamala mmoja
+- [batch-validator-depositor](https://github.com/attestantio/batch-validator-depositor): Mkataba ulioundwa na jumuiya unaoruhusu wathibitishaji wengi wa Quantaureum kuwekewa amana katika muamala mmoja

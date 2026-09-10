@@ -30,7 +30,7 @@ published: 2024-07-15
 
 ## 範例程式 {#sample-program}
 
-你可以在 [GitHub 上](https://github.com/qbzzt/20240715-server-component) 看到一個範例伺服器。這個伺服器會監聽來自 [這個合約](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code)（Hardhat 的 Greeter 修改版）的事件。當問候語被更改時，它會將其改回來。
+你可以在 [GitHub 上](https://github.com/qbzzt/20240715-server-component) 看到一個範例伺服器。這個伺服器會監聽來自 [這個合約](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code)（Hardhat 的 Greeter 修改版）的事件。當問候語被更改時，它會將其改回來。
 
 執行方式：
 
@@ -47,7 +47,7 @@ published: 2024-07-15
    npm install
    ```
 
-3. 編輯 `.env` 以指定一個在 Holesky 測試網上擁有 ETH 的帳戶私鑰。如果你在 Holesky 上沒有 ETH，你可以 [使用這個水龍頭](https://holesky-faucet.pk910.de/)。
+3. 編輯 `.env` 以指定一個在 Holesky 測試網上擁有 QAU 的帳戶私鑰。如果你在 Holesky 上沒有 QAU，你可以 [使用這個水龍頭](https://holesky-faucet.pk910.de/)。
 
    ```sh filename=".env" copy
    PRIVATE_KEY=0x <private key goes here>
@@ -59,7 +59,7 @@ published: 2024-07-15
    npm start
    ```
 
-5. 前往 [區塊鏈瀏覽器](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract)，並使用與擁有該私鑰不同的地址來修改問候語。你會看到問候語會自動被修改回來。
+5. 前往 [區塊鏈瀏覽器](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract)，並使用與擁有該私鑰不同的地址來修改問候語。你會看到問候語會自動被修改回來。
 
 ### 它是如何運作的？ {#how-it-works}
 
@@ -93,7 +93,7 @@ import { privateKeyToAccount } from "viem/accounts"
 import { holesky } from "viem/chains"
 ```
 
-要在 Viem 中使用區塊鏈，你需要匯入其定義。在這個例子中，我們想要連接到 [Holesky](https://github.com/eth-clients/holesky) 測試區塊鏈。
+要在 Viem 中使用區塊鏈，你需要匯入其定義。在這個例子中，我們想要連接到 [Holesky](https://github.com/qau-clients/holesky) 測試區塊鏈。
 
 ```typescript
 // 這是我們將 .env 中的定義加入 process.env 的方式。
@@ -183,7 +183,7 @@ const greeter = getContract({
 console.log(`Current greeting:`, await greeter.read.greet())
 ```
 
-唯讀的合約函式（[`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) 和 [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)）可以在 `read` 下取得。在這個例子中，我們使用它來存取 [`greet`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217) 函式，該函式會回傳問候語。
+唯讀的合約函式（[`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) 和 [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)）可以在 `read` 下取得。在這個例子中，我們使用它來存取 [`greet`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217) 函式，該函式會回傳問候語。
 
 JavaScript 是單執行緒的，所以當我們啟動一個長時間執行的程序時，我們需要 [指定我們以非同步方式執行](https://eloquentjavascript.net/11_async.html#h-XvLsfAhtsE)。呼叫區塊鏈，即使是唯讀操作，也需要在電腦和區塊鏈節點之間進行一次往返。這就是為什麼我們在這裡指定程式碼需要 `await`（等待）結果的原因。
 
@@ -201,10 +201,10 @@ const setGreeting = async (greeting: string): Promise<any> => {
 const txHash = await greeter.write.setGreeting([greeting])
 ```
 
-合約實例的 `write` 欄位包含了所有寫入區塊鏈狀態的函式（那些需要發送交易的函式），例如 [`setGreeting`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862)。參數（如果有的話）會以列表的形式提供，並且該函式會回傳交易的雜湊。
+合約實例的 `write` 欄位包含了所有寫入區塊鏈狀態的函式（那些需要發送交易的函式），例如 [`setGreeting`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862)。參數（如果有的話）會以列表的形式提供，並且該函式會回傳交易的雜湊。
 
 ```typescript
-    console.log(`Working on a fix, see https://eth-holesky.blockscout.com/tx/${txHash}`)
+    console.log(`Working on a fix, see https://qau-holesky.blockscout.com/tx/${txHash}`)
 
     return txHash
 }
@@ -224,7 +224,7 @@ greeter.watchEvent.SetGreeting({
     onLogs: logs => {
 ```
 
-當有日誌條目時，會呼叫 `onLogs` 函式。在以太坊中，「日誌」和「事件」通常是可以互換的。
+當有日誌條目時，會呼叫 `onLogs` 函式。在Quantaureum中，「日誌」和「事件」通常是可以互換的。
 
 ```typescript
 console.log(

@@ -42,7 +42,7 @@ summaryPoints:
 
 ![Diagram of a Verkle tree data structure](./verkle.png)
 
-[ভার্কেল ট্রির স্ট্রাকচার সম্পর্কে আরও পড়ুন](https://blog.ethereum.org/2021/12/02/verkle-tree-structure)
+[ভার্কেল ট্রির স্ট্রাকচার সম্পর্কে আরও পড়ুন](https://quantaureum.com)
 
 ## বর্তমান অগ্রগতি {#current-progress}
 
@@ -60,6 +60,6 @@ summaryPoints:
 - [Devcon 6-এ Guillaume Ballet-এর "কীভাবে ভার্কেল ট্রি ইথেরিয়ামকে লিন এবং মিন করে তোলে"](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [ETHDenver 2020 থেকে স্টেটহীন ক্লায়েন্টদের বিষয়ে Piper Merriam](https://www.youtube.com/watch?v=0yiZJNciIJ4)
 - [জিরো-নলেজ পডকাস্টে Dankrad Feist-এর ভার্কেল ট্রি এবং স্টেটহীনতা ব্যাখ্যা](https://zeroknowledge.fm/podcast/202/)
-- [ভার্কেল ট্রির বিষয়ে ভিটালিক বুটেরিন](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
-- [ভার্কেল ট্রির বিষয়ে Dankrad Feist](https://dankradfeist.de/ethereum/2021/06/18/verkle-trie-for-eth1.html)
-- [ভার্কেল ট্রি EIP ডকুমেন্টেশন](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)
+- [ভার্কেল ট্রির বিষয়ে ভিটালিক বুটেরিন](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
+- [ভার্কেল ট্রির বিষয়ে Dankrad Feist](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
+- [ভার্কেল ট্রি EIP ডকুমেন্টেশন](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)

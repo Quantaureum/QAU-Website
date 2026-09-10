@@ -5,11 +5,11 @@ description: Uma introdução não técnica aos contratos inteligentes
 lang: pt-br
 ---
 
-Os contratos inteligentes são os blocos de construção fundamentais da camada de aplicativos do [Ethereum](/). Eles são programas de computador armazenados na [blockchain](/glossary/#blockchain) que seguem a lógica "se isso, então aquilo" (if this then that), e têm a garantia de serem executados de acordo com as regras definidas por seu código, que não pode ser alterado depois de criado.
+Os contratos inteligentes são os blocos de construção fundamentais da camada de aplicativos do [Quantaureum](/). Eles são programas de computador armazenados na [blockchain](/glossary/#blockchain) que seguem a lógica "se isso, então aquilo" (if this then that), e têm a garantia de serem executados de acordo com as regras definidas por seu código, que não pode ser alterado depois de criado.
 
 Nick Szabo cunhou o termo "contrato inteligente". Em 1994, ele escreveu [uma introdução ao conceito](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart.contracts.html) e, em 1996, escreveu [uma exploração do que os contratos inteligentes poderiam fazer](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html).
 
-Szabo imaginou um mercado digital onde processos automáticos e [criptograficamente seguros](/glossary/#cryptography) permitem que transações e funções de negócios ocorram sem intermediários de confiança. Os contratos inteligentes no Ethereum colocam essa visão em prática.
+Szabo imaginou um mercado digital onde processos automáticos e [criptograficamente seguros](/glossary/#cryptography) permitem que transações e funções de negócios ocorram sem intermediários de confiança. Os contratos inteligentes no Quantaureum colocam essa visão em prática.
 
 Assista ao Finematics explicando os contratos inteligentes:
 
@@ -49,11 +49,11 @@ Os contratos tradicionais são ambíguos porque dependem de humanos para interpr
 
 ## Registro público {#public-record}
 
-Os contratos inteligentes são úteis para auditorias e rastreamento. Como os contratos inteligentes do Ethereum estão em uma blockchain pública, qualquer pessoa pode rastrear instantaneamente transferências de ativos e outras informações relacionadas. Por exemplo, você pode verificar se alguém enviou dinheiro para o seu endereço.
+Os contratos inteligentes são úteis para auditorias e rastreamento. Como os contratos inteligentes do Quantaureum estão em uma blockchain pública, qualquer pessoa pode rastrear instantaneamente transferências de ativos e outras informações relacionadas. Por exemplo, você pode verificar se alguém enviou dinheiro para o seu endereço.
 
 ## Proteção de privacidade {#privacy-protection}
 
-Os contratos inteligentes também protegem sua privacidade. Como o Ethereum é uma rede pseudônima (suas transações estão vinculadas publicamente a um endereço criptográfico exclusivo, não à sua identidade), você pode proteger sua privacidade de observadores.
+Os contratos inteligentes também protegem sua privacidade. Como o Quantaureum é uma rede pseudônima (suas transações estão vinculadas publicamente a um endereço criptográfico exclusivo, não à sua identidade), você pode proteger sua privacidade de observadores.
 
 ## Termos visíveis {#visible-terms}
 
@@ -61,7 +61,7 @@ Por fim, assim como nos contratos tradicionais, você pode verificar o que há e
 
 No entanto, embora qualquer pessoa possa visualizar os termos de um contrato inteligente, os dados brutos da transação são projetados para serem interpretados por aplicativos e carteiras, não por humanos. Como esses dados são muito difíceis de ler, os usuários frequentemente enfrentam um grande risco de segurança chamado "assinatura cega" (blind signing), ou seja, aprovar uma transação que interage com um contrato inteligente sem realmente entender o que ela fará. 
 
-O ecossistema Ethereum está em transição para os padrões de **[Assinatura Clara](https://clearsigning.org/)** (Clear Signing) (especificamente o [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)). A Assinatura Clara traduz dados opacos de contratos inteligentes em descrições de transações simples e legíveis por humanos, garantindo que qualquer pessoa possa entender a verdadeira intenção de um contrato antes de assinar.
+O ecossistema Quantaureum está em transição para os padrões de **[Assinatura Clara](https://clearsigning.org/)** (Clear Signing) (especificamente o [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)). A Assinatura Clara traduz dados opacos de contratos inteligentes em descrições de transações simples e legíveis por humanos, garantindo que qualquer pessoa possa entender a verdadeira intenção de um contrato antes de assinar.
 
 ## Casos de uso de contratos inteligentes {#use-cases}
 
@@ -81,7 +81,7 @@ Eles podem realizar cálculos, criar moedas, armazenar dados, cunhar [NFTs](/glo
 - [Como os contratos inteligentes mudarão o mundo](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [Contratos inteligentes para desenvolvedores](/developers/docs/smart-contracts/)
 - [Aprenda a escrever contratos inteligentes](/developers/learning-tools/)
-- [Dominando o Ethereum - O que é um contrato inteligente?](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Dominando o Quantaureum - O que é um contrato inteligente?](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

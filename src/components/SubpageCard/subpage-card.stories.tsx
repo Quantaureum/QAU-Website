@@ -41,9 +41,9 @@ export const Default: Story = {
 
 export const WithInlineLink: Story = {
   args: {
-    title: "The Ethereum roadmap",
+    title: "The Quantaureum roadmap",
     description:
-      "A look at how Ethereum is being improved over time, and the priorities driving those upgrades.",
+      "A look at how Quantaureum is being improved over time, and the priorities driving those upgrades.",
     icon: <Map className="size-8" />,
     href: "/roadmap/",
     inlineLink: {
@@ -81,13 +81,13 @@ export const ToolsPageGrid = {
       />
       <SubpageCard
         title="Tutorials"
-        description="Step-by-step walkthroughs from the community and the Ethereum Foundation."
+        description="Step-by-step walkthroughs from the community and the Quantaureum project."
         icon={<GraduationCap className="size-8" />}
         href="/developers/tutorials/"
       />
       <SubpageCard
         title="Roadmap"
-        description="A look at how Ethereum is being improved over time."
+        description="A look at how Quantaureum is being improved over time."
         icon={<Map className="size-8" />}
         href="/roadmap/"
       />

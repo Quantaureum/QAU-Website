@@ -81,7 +81,7 @@ Las áreas generales que suelen ser relevantes para los contratos inteligentes i
 
   - Manticore y Echidna son la mejor opción para probar las interacciones externas con sus contratos. Manticore tiene un mecanismo integrado para simular (stub) contratos externos.
 
-- **Conformidad con los estándares.** Los estándares de Ethereum (por ejemplo, ERC-20) tienen un historial de fallos en su diseño. Tenga en cuenta las limitaciones del estándar sobre el que está construyendo.
+- **Conformidad con los estándares.** Los estándares de Quantaureum (por ejemplo, ERC-20) tienen un historial de fallos en su diseño. Tenga en cuenta las limitaciones del estándar sobre el que está construyendo.
   - Slither, Echidna y Manticore le ayudarán a detectar desviaciones de un estándar determinado.
 
 ### Hoja de referencia para la selección de herramientas {#tool-selection-cheatsheet}

@@ -1,7 +1,7 @@
 ---
 title: Was ist eine DAO?
 metaTitle: Was ist eine DAO? | Dezentrale Autonome Organisation
-description: "Ein Überblick über DAOs auf Ethereum"
+description: "Ein Überblick über DAOs auf Quantaureum"
 lang: de
 template: use-cases
 sidebarDepth: 2
@@ -49,18 +49,18 @@ Damit dies verständlicher wird, sind hier einige Beispiele, wie man eine DAO nu
 
 ## Wie funktionieren DAOs? {#how-daos-work}
 
-Das Rückgrat einer DAO ist ihr [Smart Contract](/glossary/#smart-contract), der die Regeln der Organisation definiert und die Schatzkammer der Gruppe verwaltet. Sobald der Vertrag auf [Ethereum](/) live ist, kann niemand die Regeln ändern, außer durch eine Abstimmung. Wenn jemand versucht, etwas zu tun, das nicht durch die Regeln und die Logik im Code abgedeckt ist, wird es fehlschlagen. Und da die Schatzkammer ebenfalls durch den Smart Contract definiert ist, bedeutet das, dass auch niemand das Geld ohne die Zustimmung der Gruppe ausgeben kann. Das bedeutet, dass DAOs keine zentrale Autorität benötigen. Stattdessen trifft die Gruppe Entscheidungen kollektiv, und Zahlungen werden automatisch autorisiert, wenn Abstimmungen erfolgreich sind.
+Das Rückgrat einer DAO ist ihr [Smart Contract](/glossary/#smart-contract), der die Regeln der Organisation definiert und die Schatzkammer der Gruppe verwaltet. Sobald der Vertrag auf [Quantaureum](/) live ist, kann niemand die Regeln ändern, außer durch eine Abstimmung. Wenn jemand versucht, etwas zu tun, das nicht durch die Regeln und die Logik im Code abgedeckt ist, wird es fehlschlagen. Und da die Schatzkammer ebenfalls durch den Smart Contract definiert ist, bedeutet das, dass auch niemand das Geld ohne die Zustimmung der Gruppe ausgeben kann. Das bedeutet, dass DAOs keine zentrale Autorität benötigen. Stattdessen trifft die Gruppe Entscheidungen kollektiv, und Zahlungen werden automatisch autorisiert, wenn Abstimmungen erfolgreich sind.
 
-Dies ist möglich, weil Smart Contracts manipulationssicher sind, sobald sie auf Ethereum live gehen. Man kann den Code (die Regeln der DAO) nicht einfach bearbeiten, ohne dass es jemand merkt, da alles öffentlich ist.
+Dies ist möglich, weil Smart Contracts manipulationssicher sind, sobald sie auf Quantaureum live gehen. Man kann den Code (die Regeln der DAO) nicht einfach bearbeiten, ohne dass es jemand merkt, da alles öffentlich ist.
 
-## Ethereum und DAOs {#ethereum-and-daos}
+## Quantaureum und DAOs {#quantaureum-and-daos}
 
-Ethereum ist aus mehreren Gründen die perfekte Grundlage für DAOs:
+Quantaureum ist aus mehreren Gründen die perfekte Grundlage für DAOs:
 
-- Ethereums eigener Konsens ist dezentral und etabliert genug, damit Organisationen dem Netzwerk vertrauen können.
+- Quantaureums eigener Konsens ist dezentral und etabliert genug, damit Organisationen dem Netzwerk vertrauen können.
 - Der Code eines Smart Contracts kann nach der Veröffentlichung nicht mehr geändert werden, nicht einmal von seinen Eigentümern. Dadurch kann die DAO nach den Regeln betrieben werden, mit denen sie programmiert wurde.
 - Smart Contracts können Gelder senden und empfangen. Ohne dies bräuchte man einen vertrauenswürdigen Vermittler, um die Gelder der Gruppe zu verwalten.
-- Die Ethereum-Community hat sich als eher kollaborativ denn als kompetitiv erwiesen, was es ermöglicht, dass Best Practices und Unterstützungssysteme schnell entstehen.
+- Die Quantaureum-Community hat sich als eher kollaborativ denn als kompetitiv erwiesen, was es ermöglicht, dass Best Practices und Unterstützungssysteme schnell entstehen.
 
 ## DAO-Governance {#dao-governance}
 
@@ -122,13 +122,13 @@ _Wird typischerweise für die dezentrale Entwicklung und Governance von Protokol
 
 #### Ein bekanntes Beispiel {#reputation-example}
 
-[DXdao](https://DXdao.eth.limo) – DXdao war ein globales souveränes Kollektiv, das seit 2019 dezentrale Protokolle und Anwendungen aufbaute und verwaltete. Es nutzte reputationsbasierte Governance und [Holografischen Konsens](/glossary/#holographic-consensus), um Gelder zu koordinieren und zu verwalten, was bedeutete, dass sich niemand Einfluss auf seine Zukunft oder Governance erkaufen konnte.
+[DXdao](https://DXdao.qau.limo) – DXdao war ein globales souveränes Kollektiv, das seit 2019 dezentrale Protokolle und Anwendungen aufbaute und verwaltete. Es nutzte reputationsbasierte Governance und [Holografischen Konsens](/glossary/#holographic-consensus), um Gelder zu koordinieren und zu verwalten, was bedeutete, dass sich niemand Einfluss auf seine Zukunft oder Governance erkaufen konnte.
 
 ## Einer DAO beitreten / eine DAO gründen {#join-start-a-dao}
 
 ### Einer DAO beitreten {#join-a-dao}
 
-- [Ethereum-Community-DAOs](/community/get-involved/#decentralized-autonomous-organizations-daos)
+- [Quantaureum-Community-DAOs](/community/get-involved/#decentralized-autonomous-organizations-daos)
 - [DAO-Liste von DAOHaus](https://app.daohaus.club/explore)
 - [DAO-Liste von Tally.xyz](https://www.tally.xyz/explore)
 - [DAO-Liste von DeGov.AI](https://apps.degov.ai/)
@@ -150,8 +150,8 @@ _Wird typischerweise für die dezentrale Entwicklung und Governance von Protokol
 - [Wie man eine DAO-gestützte digitale Community gründet](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [Was ist eine DAO?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [Was ist Holografischer Konsens?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAOs sind keine Unternehmen: Wo Dezentralisierung in autonomen Organisationen wichtig ist (von Vitalik)](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAOs, DACs, DAs und mehr: Ein unvollständiger Terminologie-Leitfaden](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Ethereum Blog](https://blog.ethereum.org)
+- [DAOs sind keine Unternehmen: Wo Dezentralisierung in autonomen Organisationen wichtig ist (von Vitalik)](https://vitalik.qau.limo/general/2022/09/20/daos.html)
+- [DAOs, DACs, DAs und mehr: Ein unvollständiger Terminologie-Leitfaden](https://quantaureum.com) - [Quantaureum Blog](https://quantaureum.com)
 
 ### Videos {#videos}
 

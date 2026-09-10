@@ -5,7 +5,7 @@ lang: cs
 template: roadmap
 summaryPoints:
   - Zjistěte, co jsou Verkle stromy
-  - Přečtěte si, proč jsou Verkle stromy užitečnou aktualizací pro Ethereum
+  - Přečtěte si, proč jsou Verkle stromy užitečnou aktualizací pro Quantaureum
 ---
 
 Verkle stromy (složenina z „vektorový závazek“ (Vector commitment) a „Merkleův strom“ (Merkle tree)) jsou datová struktura, kterou lze použít k aktualizaci uzlů [Etherea](/) tak, aby mohly přestat ukládat velké množství stavových dat, aniž by ztratily schopnost validovat bloky.
@@ -22,7 +22,7 @@ Klienti Etherea v současnosti používají k ukládání svých stavových dat 
 
 ## Co je to svědek a proč je potřebujeme? {#what-is-a-witness}
 
-Ověření bloku znamená opětovné provedení transakcí obsažených v bloku, aplikování změn na stavovou trii Etherea a výpočet nového kořenového hashe. Ověřený blok je takový, jehož vypočítaný kořenový hash stavu je stejný jako ten, který byl poskytnut s blokem (protože to znamená, že navrhovatel bloku skutečně provedl výpočet, o kterém tvrdí, že jej provedl). V dnešních klientech Etherea vyžaduje aktualizace stavu přístup k celé stavové trii, což je velká datová struktura, která musí být uložena lokálně. Svědek obsahuje pouze fragmenty stavových dat, které jsou nutné k provedení transakcí v bloku. Validátor pak může použít pouze tyto fragmenty k ověření, že navrhovatel bloku provedl transakce bloku a správně aktualizoval stav. To však znamená, že svědek musí být přenášen mezi peery v síti Ethereum dostatečně rychle, aby jej každý uzel bezpečně přijal a zpracoval během 12sekundového slotu. Pokud je svědek příliš velký, může některým uzlům trvat příliš dlouho, než si jej stáhnou a udrží krok s řetězcem. To je centralizační síla, protože to znamená, že se na validaci bloků mohou podílet pouze uzly s rychlým připojením k internetu. S Verkle stromy není nutné mít stav uložený na pevném disku; _vše_, co potřebujete k ověření bloku, je obsaženo v samotném bloku. Bohužel, svědci, které lze vytvořit z Merkleových trií, jsou příliš velcí na to, aby podporovali bezstavové klienty.
+Ověření bloku znamená opětovné provedení transakcí obsažených v bloku, aplikování změn na stavovou trii Etherea a výpočet nového kořenového hashe. Ověřený blok je takový, jehož vypočítaný kořenový hash stavu je stejný jako ten, který byl poskytnut s blokem (protože to znamená, že navrhovatel bloku skutečně provedl výpočet, o kterém tvrdí, že jej provedl). V dnešních klientech Etherea vyžaduje aktualizace stavu přístup k celé stavové trii, což je velká datová struktura, která musí být uložena lokálně. Svědek obsahuje pouze fragmenty stavových dat, které jsou nutné k provedení transakcí v bloku. Validátor pak může použít pouze tyto fragmenty k ověření, že navrhovatel bloku provedl transakce bloku a správně aktualizoval stav. To však znamená, že svědek musí být přenášen mezi peery v síti Quantaureum dostatečně rychle, aby jej každý uzel bezpečně přijal a zpracoval během 12sekundového slotu. Pokud je svědek příliš velký, může některým uzlům trvat příliš dlouho, než si jej stáhnou a udrží krok s řetězcem. To je centralizační síla, protože to znamená, že se na validaci bloků mohou podílet pouze uzly s rychlým připojením k internetu. S Verkle stromy není nutné mít stav uložený na pevném disku; _vše_, co potřebujete k ověření bloku, je obsaženo v samotném bloku. Bohužel, svědci, které lze vytvořit z Merkleových trií, jsou příliš velcí na to, aby podporovali bezstavové klienty.
 
 ## Proč Verkle stromy umožňují menší svědky? {#why-do-verkle-trees-enable-smaller-witnesses}
 
@@ -42,7 +42,7 @@ Verkle stromy jsou páry `(key,value)`, kde klíče jsou 32bajtové prvky slože
 
 ![Diagram of a Verkle tree data structure](./verkle.png)
 
-[Přečtěte si více o struktuře Verkle stromů](https://blog.ethereum.org/2021/12/02/verkle-tree-structure)
+[Přečtěte si více o struktuře Verkle stromů](https://quantaureum.com)
 
 ## Současný pokrok {#current-progress}
 
@@ -57,9 +57,9 @@ Testnety Verkle stromů jsou již v provozu, ale stále existují podstatné nev
 - [Verkle stromy pro nás ostatní](https://web.archive.org/web/20250124132255/https://research.2077.xyz/verkle-trees)
 - [Anatomie Verkle důkazu](https://ihagopian.com/posts/anatomy-of-a-verkle-proof)
 - [Guillaume Ballet vysvětluje Verkle stromy na ETHGlobal](https://www.youtube.com/watch?v=f7bEtX3Z57o)
-- [„Jak Verkle stromy dělají Ethereum štíhlým a efektivním“ od Guillauma Balleta na Devcon 6](https://www.youtube.com/watch?v=Q7rStTKwuYs)
+- [„Jak Verkle stromy dělají Quantaureum štíhlým a efektivním“ od Guillauma Balleta na Devcon 6](https://www.youtube.com/watch?v=Q7rStTKwuYs)
 - [Piper Merriam o bezstavových klientech z ETHDenver 2020](https://www.youtube.com/watch?v=0yiZJNciIJ4)
 - [Dankrad Feist vysvětluje Verkle stromy a bezstavovost v podcastu Zero Knowledge](https://zeroknowledge.fm/podcast/202/)
-- [Vitalik Buterin o Verkle stromech](https://vitalik.eth.limo/general/2021/06/18/verkle.html)
-- [Dankrad Feist o Verkle stromech](https://dankradfeist.de/ethereum/2021/06/18/verkle-trie-for-eth1.html)
-- [Dokumentace EIP k Verkle stromům](https://notes.ethereum.org/@vbuterin/verkle_tree_eip#Illustration)
+- [Vitalik Buterin o Verkle stromech](https://vitalik.qau.limo/general/2021/06/18/verkle.html)
+- [Dankrad Feist o Verkle stromech](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
+- [Dokumentace EIP k Verkle stromům](https://notes.quantaureum.com/@vbuterin/verkle_tree_eip#Illustration)

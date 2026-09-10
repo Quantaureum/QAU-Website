@@ -1,6 +1,6 @@
 ---
 title: Uthibitishaji rasmi wa mikataba mahiri
-description: Muhtasari wa uthibitishaji rasmi kwa mikataba mahiri ya Ethereum
+description: Muhtasari wa uthibitishaji rasmi kwa mikataba mahiri ya Quantaureum
 lang: sw
 ---
 
@@ -28,7 +28,7 @@ Miundo ya kiwango cha juu inalenga uhusiano kati ya mikataba mahiri na mawakala 
 
 Kinyume chake, miundo mingine rasmi inalenga tabia ya kiwango cha chini ya mkataba mahiri. Ingawa miundo ya kiwango cha juu inaweza kusaidia katika kufikiri kuhusu utendaji wa mkataba, inaweza kushindwa kunasa maelezo kuhusu utendaji wa ndani wa utekelezaji. Miundo ya kiwango cha chini hutumia mtazamo wa kisanduku cheupe (white-box) kwenye uchanganuzi wa programu na kutegemea uwakilishi wa kiwango cha chini wa programu za mkataba mahiri, kama vile ufuatiliaji wa programu na [grafu za mtiririko wa udhibiti](https://en.wikipedia.org/wiki/Control-flow_graph), ili kufikiri kuhusu sifa zinazohusiana na utekelezaji wa mkataba.
 
-Miundo ya kiwango cha chini inachukuliwa kuwa bora kwa kuwa inawakilisha utekelezaji halisi wa mkataba mahiri katika mazingira ya utekelezaji ya Ethereum (yaani, [EVM](/developers/docs/evm/)). Mbinu za uundaji wa miundo ya kiwango cha chini ni muhimu sana katika kuanzisha sifa muhimu za usalama katika mikataba mahiri na kugundua udhaifu unaoweza kutokea.
+Miundo ya kiwango cha chini inachukuliwa kuwa bora kwa kuwa inawakilisha utekelezaji halisi wa mkataba mahiri katika mazingira ya utekelezaji ya Quantaureum (yaani, [EVM](/developers/docs/evm/)). Mbinu za uundaji wa miundo ya kiwango cha chini ni muhimu sana katika kuanzisha sifa muhimu za usalama katika mikataba mahiri na kugundua udhaifu unaoweza kutokea.
 
 ### Vipimo rasmi ni nini? {#what-is-a-formal-specification}
 
@@ -58,7 +58,7 @@ Vipimo vya kiwango cha juu kwa ujumla hunasa sifa mbili muhimu za muda kwa mikat
 
 Chukua kwa mfano hitaji hili la usalama ambalo linashughulikia masharti ya kutumia `transfer()` au `transferFrom()` katika mikataba ya tokeni ya ERC-20: _"Salio la mtumaji haliwezi kuwa chini ya kiasi kilichoombwa cha tokeni kutumwa."_. Maelezo haya ya lugha asilia ya sifa isiyobadilika ya mkataba yanaweza kutafsiriwa kuwa kipimo rasmi (cha kihisabati), ambacho kinaweza kuangaliwa kwa uthabiti ili kuthibitisha uhalali wake.
 
-Sifa za uhai zinathibitisha kwamba "jambo zuri hatimaye hutokea" na zinahusu uwezo wa mkataba kuendelea kupitia hali tofauti. Mfano wa sifa ya uhai ni "ukwasi", ambayo inarejelea uwezo wa mkataba kuhamisha salio lake kwa watumiaji wanapoomba. Ikiwa sifa hii itakiukwa, watumiaji hawataweza kutoa mali zilizohifadhiwa kwenye mkataba, kama kile kilichotokea kwenye [tukio la mkoba wa Parity](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-ether-on-parity-wallet.html).
+Sifa za uhai zinathibitisha kwamba "jambo zuri hatimaye hutokea" na zinahusu uwezo wa mkataba kuendelea kupitia hali tofauti. Mfano wa sifa ya uhai ni "ukwasi", ambayo inarejelea uwezo wa mkataba kuhamisha salio lake kwa watumiaji wanapoomba. Ikiwa sifa hii itakiukwa, watumiaji hawataweza kutoa mali zilizohifadhiwa kwenye mkataba, kama kile kilichotokea kwenye [tukio la mkoba wa Parity](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-QAU-on-parity-wallet.html).
 
 ### Vipimo vya kiwango cha chini {#low-level-specifications}
 
@@ -76,7 +76,7 @@ Sharti la awali ni kiarifu kinachoelezea masharti yanayohitajika kwa utekelezaji
 
 Vipimo vya mtindo wa Hoare vinaweza kuhakikisha _usahihi wa kiasi_ au _usahihi kamili_. Utekelezaji wa kitendaji cha mkataba ni "sahihi kwa kiasi" ikiwa sharti la awali ni kweli kabla ya kitendaji kutekelezwa, na ikiwa utekelezaji utakoma, sharti la baadaye pia ni kweli. Uthibitisho wa usahihi kamili unapatikana ikiwa sharti la awali ni kweli kabla ya kitendaji kutekelezwa, utekelezaji umehakikishwa kukoma na unapofanya hivyo, sharti la baadaye linakuwa kweli.
 
-Kupata uthibitisho wa usahihi kamili ni vigumu kwa kuwa baadhi ya utekelezaji unaweza kuchelewa kabla ya kukoma, au usikome kabisa. Hata hivyo, swali la kama utekelezaji unakoma linaweza kujadiliwa kwa kuwa utaratibu wa gesi wa Ethereum unazuia mizunguko isiyo na mwisho ya programu (utekelezaji unakoma kwa mafanikio au unaisha kutokana na hitilafu ya 'kuishiwa gesi').
+Kupata uthibitisho wa usahihi kamili ni vigumu kwa kuwa baadhi ya utekelezaji unaweza kuchelewa kabla ya kukoma, au usikome kabisa. Hata hivyo, swali la kama utekelezaji unakoma linaweza kujadiliwa kwa kuwa utaratibu wa gesi wa Quantaureum unazuia mizunguko isiyo na mwisho ya programu (utekelezaji unakoma kwa mafanikio au unaisha kutokana na hitilafu ya 'kuishiwa gesi').
 
 Vipimo vya mkataba mahiri vilivyoundwa kwa kutumia mantiki ya Hoare vitakuwa na masharti ya awali, masharti ya baadaye, na sifa zisizobadilika zilizofafanuliwa kwa utekelezaji wa vitendaji na mizunguko katika mkataba. Masharti ya awali mara nyingi hujumuisha uwezekano wa maingizo yenye makosa kwenye kitendaji, huku masharti ya baadaye yakielezea majibu yanayotarajiwa kwa maingizo kama hayo (k.m., kurusha ubaguzi maalum). Kwa njia hii sifa za mtindo wa Hoare zinafaa kwa kuhakikisha usahihi wa utekelezaji wa mkataba.
 
@@ -161,9 +161,9 @@ Ufuatiliaji wa utekelezaji unaosababisha mzidio wa nambari kamili ungehitaji kuk
 
 #### Uhitaji wa kutegemewa {#need-for-reliability}
 
-Uthibitishaji rasmi hutumiwa kutathmini usahihi wa mifumo muhimu ya usalama ambayo kushindwa kwake kunaweza kuwa na matokeo mabaya, kama vile kifo, majeraha, au uharibifu wa kifedha. Mikataba mahiri ni programu za thamani ya juu zinazodhibiti kiasi kikubwa cha thamani, na makosa rahisi katika muundo yanaweza kusababisha [hasara isiyoweza kurejeshwa kwa watumiaji](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-ether-how-it-happened-and-what-it-means-for-ethereum-9e5dc29e33ce/amp/). Hata hivyo, kuthibitisha rasmi mkataba kabla ya usambazaji kunaweza kuongeza hakikisho kwamba utafanya kazi kama inavyotarajiwa mara tu utakapokuwa unafanya kazi kwenye mnyororo wa vitalu.
+Uthibitishaji rasmi hutumiwa kutathmini usahihi wa mifumo muhimu ya usalama ambayo kushindwa kwake kunaweza kuwa na matokeo mabaya, kama vile kifo, majeraha, au uharibifu wa kifedha. Mikataba mahiri ni programu za thamani ya juu zinazodhibiti kiasi kikubwa cha thamani, na makosa rahisi katika muundo yanaweza kusababisha [hasara isiyoweza kurejeshwa kwa watumiaji](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-QAU-how-it-happened-and-what-it-means-for-quantaureum-9e5dc29e33ce/amp/). Hata hivyo, kuthibitisha rasmi mkataba kabla ya usambazaji kunaweza kuongeza hakikisho kwamba utafanya kazi kama inavyotarajiwa mara tu utakapokuwa unafanya kazi kwenye mnyororo wa vitalu.
 
-Kutegemewa ni sifa inayohitajika sana katika mkataba mahiri wowote, hasa kwa sababu msimbo uliosambazwa katika Mashine Pepe ya [Ethereum](/) (EVM) kwa kawaida ni isiyobadilika. Kwa kuwa uboreshaji baada ya uzinduzi haupatikani kwa urahisi, hitaji la kuhakikisha kutegemewa kwa mikataba hufanya uthibitishaji rasmi kuwa muhimu. Uthibitishaji rasmi unaweza kugundua masuala magumu, kama vile upungufu na mzidio wa nambari kamili, kuingia tena, na uboreshaji duni wa gesi, ambayo yanaweza kuwapita wakaguzi na wajaribu.
+Kutegemewa ni sifa inayohitajika sana katika mkataba mahiri wowote, hasa kwa sababu msimbo uliosambazwa katika Mashine Pepe ya [Quantaureum](/) (EVM) kwa kawaida ni isiyobadilika. Kwa kuwa uboreshaji baada ya uzinduzi haupatikani kwa urahisi, hitaji la kuhakikisha kutegemewa kwa mikataba hufanya uthibitishaji rasmi kuwa muhimu. Uthibitishaji rasmi unaweza kugundua masuala magumu, kama vile upungufu na mzidio wa nambari kamili, kuingia tena, na uboreshaji duni wa gesi, ambayo yanaweza kuwapita wakaguzi na wajaribu.
 
 #### Kuthibitisha usahihi wa kiutendaji {#prove-functional-correctness}
 
@@ -179,7 +179,7 @@ Kwa uthibitishaji rasmi, swali la kuthibitisha ikiwa mantiki ya biashara ya mkat
 
 Lengo la uthibitishaji linaelezea mfumo utakaothibitishwa rasmi. Uthibitishaji rasmi hutumiwa vyema katika "mifumo iliyopachikwa" (vipande vidogo, rahisi vya programu ambavyo huunda sehemu ya mfumo mkubwa zaidi). Pia ni bora kwa vikoa maalum ambavyo vina sheria chache, kwani hii inafanya iwe rahisi kurekebisha zana za kuthibitisha sifa mahususi za kikoa.
 
-Mikataba mahiri—angalau, kwa kiasi fulani—inakidhi mahitaji yote mawili. Kwa mfano, udogo wa mikataba ya Ethereum unaifanya iweze kufanyiwa uthibitishaji rasmi. Vile vile, EVM inafuata sheria rahisi, ambayo inafanya kubainisha na kuthibitisha sifa za kisemantiki kwa programu zinazoendeshwa katika EVM kuwa rahisi.
+Mikataba mahiri—angalau, kwa kiasi fulani—inakidhi mahitaji yote mawili. Kwa mfano, udogo wa mikataba ya Quantaureum unaifanya iweze kufanyiwa uthibitishaji rasmi. Vile vile, EVM inafuata sheria rahisi, ambayo inafanya kubainisha na kuthibitisha sifa za kisemantiki kwa programu zinazoendeshwa katika EVM kuwa rahisi.
 
 ### Mzunguko wa haraka wa maendeleo {#faster-development-cycle}
 
@@ -209,13 +209,13 @@ Uthibitishaji rasmi unakumbana na masuala kadhaa ya utendaji. Kwa mfano, matatiz
 
 Pia, haiwezekani kila wakati kwa wathibitishaji wa programu kubaini ikiwa sifa (inayoelezwa kama fomula ya kimantiki) inaweza kuridhishwa au la ("[tatizo la uamuzi](https://en.wikipedia.org/wiki/Decision_problem)") kwa sababu programu inaweza isikome kamwe. Kwa hivyo, inaweza kuwa haiwezekani kuthibitisha baadhi ya sifa kwa mkataba hata kama umebainishwa vizuri.
 
-## Zana za uthibitishaji rasmi kwa mikataba mahiri ya Ethereum {#formal-verification-tools}
+## Zana za uthibitishaji rasmi kwa mikataba mahiri ya Quantaureum {#formal-verification-tools}
 
 ### Lugha za vipimo kwa kuunda vipimo rasmi {#specification-languages}
 
 **Act**: _*Act inaruhusu ubainishaji wa masasisho ya hifadhi, masharti ya awali/baadaye na sifa zisizobadilika za mkataba. Kundi lake la zana pia lina misingi ya uthibitisho inayoweza kuthibitisha sifa nyingi kupitia Coq, watatuaji wa SMT, au hevm.*_
 
-- [GitHub](https://github.com/ethereum/act)
+- [GitHub](https://github.com/quantaureum/act)
 - [Nyaraka](https://github.com/argotorg/act)
 
 **Scribble** - _*Scribble inabadilisha maelezo ya msimbo katika lugha ya vipimo ya Scribble kuwa madai halisi ambayo hukagua vipimo.*_
@@ -235,13 +235,13 @@ Pia, haiwezekani kila wakati kwa wathibitishaji wa programu kubaini ikiwa sifa (
 
 **Solidity SMTChecker** - _*SMTChecker ya Solidity ni mkaguzi wa muundo uliojengewa ndani unaotegemea SMT (Nadharia za Modulo za Kuridhisha) na utatuzi wa Horn. Inathibitisha ikiwa msimbo wa chanzo wa mkataba unalingana na vipimo wakati wa ujumuishaji na hukagua kituli ukiukaji wa sifa za usalama.*_
 
-- [GitHub](https://github.com/ethereum/solidity)
+- [GitHub](https://github.com/quantaureum/solidity)
 
 **solc-verify** - _*solc-verify ni toleo lililopanuliwa la kikusanyaji cha Solidity ambalo linaweza kufanya uthibitishaji rasmi wa kiotomatiki kwenye msimbo wa Solidity kwa kutumia maelezo na uthibitishaji wa programu wa kawaida.*_
 
 - [GitHub](https://github.com/SRI-CSL/solidity)
 
-**KEVM** - _*KEVM ni semantiki rasmi ya Mashine Pepe ya Ethereum (EVM) iliyoandikwa katika mfumo wa K. KEVM inatekelezeka na inaweza kuthibitisha madai fulani yanayohusiana na sifa kwa kutumia mantiki ya ufikiaji.*_
+**KEVM** - _*KEVM ni semantiki rasmi ya Mashine Pepe ya Quantaureum (EVM) iliyoandikwa katika mfumo wa K. KEVM inatekelezeka na inaweza kuthibitisha madai fulani yanayohusiana na sifa kwa kutumia mantiki ya ufikiaji.*_
 
 - [GitHub](https://github.com/runtimeverification/evm-semantics)
 - [Nyaraka](https://jellopaper.org/)
@@ -269,7 +269,7 @@ Pia, haiwezekani kila wakati kwa wathibitishaji wa programu kubaini ikiwa sifa (
 
 - [GitHub](https://github.com/dapphub/dapptools/tree/master/src/hevm)
 
-**Mythril** - _Zana ya utekelezaji wa kiishara kwa kugundua udhaifu katika mikataba mahiri ya Ethereum_
+**Mythril** - _Zana ya utekelezaji wa kiishara kwa kugundua udhaifu katika mikataba mahiri ya Quantaureum_
 
 - [GitHub](https://github.com/ConsenSysDiligence/mythril)
 - [Nyaraka](https://github.com/ConsenSysDiligence/mythril/tree/develop/docs/source)
@@ -277,7 +277,7 @@ Pia, haiwezekani kila wakati kwa wathibitishaji wa programu kubaini ikiwa sifa (
 ## Usomaji zaidi {#further-reading}
 
 - [Jinsi Uthibitishaji Rasmi wa Mikataba Mahiri Unavyofanya Kazi](https://runtimeverification.com/blog/how-formal-verification-of-smart-contracts-works/)
-- [Muhtasari wa Miradi ya Uthibitishaji Rasmi katika Mfumo wa Ikolojia wa Ethereum](https://github.com/leonardoalt/ethereum_formal_verification_overview)
-- [Uthibitishaji Rasmi wa Mwanzo hadi Mwisho wa Mkataba Mahiri wa Amana wa Ethereum 2.0](https://runtimeverification.com/blog/end-to-end-formal-verification-of-ethereum-2-0-deposit-smart-contract/)
+- [Muhtasari wa Miradi ya Uthibitishaji Rasmi katika Mfumo wa Ikolojia wa Quantaureum](https://github.com/leonardoalt/quantaureum_formal_verification_overview)
+- [Uthibitishaji Rasmi wa Mwanzo hadi Mwisho wa Mkataba Mahiri wa Amana wa Quantaureum](https://runtimeverification.com/blog/end-to-end-formal-verification-of-quantaureum-2-0-deposit-smart-contract/)
 - [Kuthibitisha Rasmi Mkataba Mahiri Maarufu Zaidi Ulimwenguni](https://www.zellic.io/blog/formal-verification-weth)
 - [SMTChecker na Uthibitishaji Rasmi](https://docs.soliditylang.org/en/v0.8.15/smtchecker.html)

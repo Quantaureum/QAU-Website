@@ -21,11 +21,11 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/tree/master/progr
 ### Dockerを使用したマンティコアのインストール {#manticore-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_最後のコマンドは、現在のディレクトリにアクセスできるDocker内でeth-security-toolboxを実行します。ホストからファイルを変更し、Dockerからそのファイルに対してツールを実行できます。_
+_最後のコマンドは、現在のディレクトリにアクセスできるDocker内でqau-security-toolboxを実行します。ホストからファイルを変更し、Dockerからそのファイルに対してツールを実行できます。_
 
 Docker内で以下を実行します。
 
@@ -198,18 +198,18 @@ _探索の概要における f(!=65) は、65以外の任意の値で呼び出�
 最初に行うべきことは、次のコマンドを使用して新しいブロックチェーンを初期化することです。
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 ```
 
-コントラクト・アカウント以外のアカウントは、[m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account)を使用して作成されます。
+コントラクト・アカウント以外のアカウントは、[m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.quantaureum.ManticoreEVM.create_account)を使用して作成されます。
 
 ```python
 user_account = m.create_account(balance=1000)
 ```
 
-Solidityコントラクトは、[m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract)を使用してデプロイできます。
+Solidityコントラクトは、[m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.quantaureum.ManticoreEVM.create_contract)を使用してデプロイできます。
 
 ```solidity
 source_code = '''
@@ -228,7 +228,7 @@ contract_account = m.solidity_create_contract(source_code, owner=user_account)
 
 #### まとめ {#summary}
 
-- [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account)および[m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract)を使用して、ユーザーアカウントおよびコントラクト・アカウントを作成できます。
+- [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.quantaureum.ManticoreEVM.create_account)および[m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.quantaureum.ManticoreEVM.create_contract)を使用して、ユーザーアカウントおよびコントラクト・アカウントを作成できます。
 
 ### トランザクションの実行 {#executing-transactions}
 
@@ -239,7 +239,7 @@ contract_account = m.solidity_create_contract(source_code, owner=user_account)
 
 #### 生のトランザクション {#raw-transaction}
 
-生のトランザクションは、[m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.ethereum.ManticoreEVM.transaction)を使用して実行されます。
+生のトランザクションは、[m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.quantaureum.ManticoreEVM.transaction)を使用して実行されます。
 
 ```python
 m.transaction(caller=user_account,
@@ -250,8 +250,8 @@ m.transaction(caller=user_account,
 
 トランザクションの呼び出し元、アドレス、データ、または値は、具体的またはシンボリックのいずれかになります。
 
-- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.ethereum.ManticoreEVM.make_symbolic_value)はシンボリックな値を作成します。
-- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.ethereum.ManticoreEVM.make_symbolic_buffer)はシンボリックなバイト配列を作成します。
+- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.quantaureum.ManticoreEVM.make_symbolic_value)はシンボリックな値を作成します。
+- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.quantaureum.ManticoreEVM.make_symbolic_buffer)はシンボリックなバイト配列を作成します。
 
 例:
 
@@ -269,7 +269,7 @@ m.transaction(caller=user_account,
 #### 名前付きトランザクション {#named-transaction}
 
 関数は名前を介して実行できます。
-user_accountから0イーサで、シンボリックな値を使用して`f(uint var)`を実行するには、次を使用します。
+user_accountから0QAUで、シンボリックな値を使用して`f(uint var)`を実行するには、次を使用します。
 
 ```python
 symbolic_var = m.make_symbolic_value()
@@ -294,14 +294,14 @@ print("Results are in {}".format(m.workspace))
 
 ### 探索の終了 {#terminate-the-exploration}
 
-探索を停止するには、[m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.ethereum.ManticoreEVM.finalize)を使用します。このメソッドが呼び出されると、それ以上のトランザクションは送信されず、マンティコアは探索された各パスのテストケースを生成します。
+探索を停止するには、[m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.quantaureum.ManticoreEVM.finalize)を使用します。このメソッドが呼び出されると、それ以上のトランザクションは送信されず、マンティコアは探索された各パスのテストケースを生成します。
 
 ### まとめ: マンティコアでの実行 {#summary-running-under-manticore}
 
 これまでのすべての手順をまとめると、次のようになります。
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -363,7 +363,7 @@ data = ABI.deserialize("uint", data)
 
 ### テストケースの生成方法 {#how-to-generate-testcase}
 
-テストケースを生成するには、[m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.ethereum.ManticoreEVM.generate_testcase)を使用します。
+テストケースを生成するには、[m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.quantaureum.ManticoreEVM.generate_testcase)を使用します。
 
 ```python
 m.generate_testcase(state, 'BugFound')
@@ -380,7 +380,7 @@ m.generate_testcase(state, 'BugFound')
 ### まとめ: 例外をスローするパスの取得 {#summary-getting-throwing-path}
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -482,7 +482,7 @@ if solver.check(state.constraints):
 前のコードに制約を追加すると、次のようになります。
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 from manticore.core.smtlib.solver import Z3Solver
 
 solver = Z3Solver.instance()

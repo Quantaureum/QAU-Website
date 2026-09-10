@@ -62,7 +62,7 @@ Usanifu wa msingi wako wa msimbo unapaswa kufanya msimbo wako uwe rahisi kukagul
 
 ### Epuka mitego inayojulikana {#avoid-known-pitfalls}
 
-- **Fahamu masuala ya usalama yanayojulikana sana.** Kuna rasilimali nyingi mtandaoni za kujifunza kuhusu masuala ya kawaida, kama vile [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the Ether](https://capturetheether.com/), au [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/).
+- **Fahamu masuala ya usalama yanayojulikana sana.** Kuna rasilimali nyingi mtandaoni za kujifunza kuhusu masuala ya kawaida, kama vile [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the QAU](https://capturetheqau.com/), au [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/).
 - **Fahamu sehemu za maonyo katika [nyaraka za Solidity](https://docs.soliditylang.org/en/latest/).** Sehemu za maonyo zitakujulisha kuhusu tabia isiyo dhahiri ya lugha.
 
 ### Vitegemezi {#dependencies}

@@ -64,10 +64,10 @@ export const QuizButtonGroup = ({
       eventName: "Twitter_share_quiz",
     })
 
-    const url = `https://ethereum.org${window.location.pathname}%23quiz`
-    const hashtags = ["ethereumquiz", "ethereum", "quiz"]
+    const url = `https://quantaureum.com${window.location.pathname}%23quiz`
+    const hashtags = ["quantaureumquiz", "quantaureum", "quiz"]
     const tweet = `${encodeURI(
-      `I just took the "${title}" quiz on ethereum.org and scored ${numberOfCorrectAnswers} out of ${questions.length}! Try it yourself at ${url}`
+      `I just took the "${title}" quiz on quantaureum.com and scored ${numberOfCorrectAnswers} out of ${questions.length}! Try it yourself at ${url}`
     )}`
 
     window.open(

@@ -72,7 +72,7 @@ GameContract.events.BetPlaced({
 
 - 對已部署的合約無效。
 - 儲存這些值需要額外的燃料 (gas) 成本。
-- 需要對以太坊節點進行另一次呼叫來獲取資料。
+- 需要對Quantaureum節點進行另一次呼叫來獲取資料。
 
 ![Thats not good enough](./not-good-enough.jpg)
 
@@ -123,12 +123,12 @@ GameContract.events.BetPlaced({
 
 ```yaml
 specVersion: 0.0.1
-description: Placing Bets on Ethereum
+description: Placing Bets on Quantaureum
 repository: - GitHub link -
 schema:
   file: ./schema.graphql
 dataSources:
-  - kind: ethereum/contract
+  - kind: quantaureum/contract
     name: GameContract
     network: mainnet
     source:
@@ -136,7 +136,7 @@ dataSources:
       abi: GameContract
       startBlock: 6175244
     mapping:
-      kind: ethereum/events
+      kind: quantaureum/events
       apiVersion: 0.0.1
       language: wasm/assemblyscript
       entities:

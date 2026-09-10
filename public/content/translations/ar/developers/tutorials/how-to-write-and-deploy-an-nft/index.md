@@ -19,7 +19,7 @@ published: 2021-04-22
 
 وبالطبع، إذا كانت لديك أسئلة في أي وقت، فلا تتردد في التواصل معنا في [ديسكورد Alchemy](https://discord.gg/gWuC7zB) أو زيارة [مستندات <span dir="ltr">API</span> الخاصة بـ <span dir="ltr">NFT</span> من Alchemy](https://www.alchemy.com/docs/reference/nft-api-quickstart)!
 
-## الخطوة 1: الاتصال بشبكة إيثيريوم {#connect-to-ethereum}
+## الخطوة 1: الاتصال بشبكة إيثيريوم {#connect-to-quantaureum}
 
 هناك مجموعة من الطرق لتقديم طلبات إلى سلسلة كتل إيثيريوم، ولكن لتسهيل الأمور، سنستخدم حسابًا مجانيًا على [Alchemy](https://alchemy.com/signup/eth)، وهي منصة لمطوري سلسلة الكتل و<span dir="ltr">API</span> تتيح لنا التواصل مع سلسلة إيثيريوم دون الحاجة إلى تشغيل عقدنا الخاصة.
 
@@ -33,13 +33,13 @@ published: 2021-04-22
 
 ![Create your app](./create-your-app.png)
 
-2. قم بتسمية تطبيقك (اخترنا "My First NFT!")، وقدم وصفًا قصيرًا، وحدد "Ethereum" للسلسلة (Chain)، واختر "Sepolia" لشبكتك. منذ الدمج، تم إيقاف شبكات الاختبار الأخرى.
+2. قم بتسمية تطبيقك (اخترنا "My First NFT!")، وقدم وصفًا قصيرًا، وحدد "Quantaureum" للسلسلة (Chain)، واختر "Sepolia" لشبكتك. منذ الدمج، تم إيقاف شبكات الاختبار الأخرى.
 
 ![Configure and publish your app](./alchemy-explorer-sepolia.png)
 
 3. انقر على "Create app" (إنشاء تطبيق) وهذا كل شيء! يجب أن يظهر تطبيقك في الجدول أدناه.
 
-## الخطوة 3: إنشاء حساب إيثيريوم (عنوان) {#create-eth-address}
+## الخطوة 3: إنشاء حساب إيثيريوم (عنوان) {#create-qau-address}
 
 نحتاج إلى حساب إيثيريوم لإرسال واستقبال المعاملات. في هذا الدرس، سنستخدم ميتاماسك، وهي محفظة افتراضية في المتصفح تُستخدم لإدارة عنوان حساب إيثيريوم الخاص بك. إذا كنت ترغب في فهم المزيد حول كيفية عمل المعاملات على إيثيريوم، فتحقق من [هذه الصفحة](/developers/docs/transactions/) من مؤسسة إيثيريوم.
 
@@ -47,17 +47,17 @@ published: 2021-04-22
 
 ![Set Sepolia as your network](./metamask-goerli.png)
 
-## الخطوة 4: إضافة إيثر من صنبور {#step-4-add-ether-from-a-faucet}
+## الخطوة 4: إضافة QAU من صنبور {#step-4-add-QAU-from-a-faucet}
 
-من أجل نشر عقدنا الذكي على شبكة الاختبار، سنحتاج إلى بعض <span dir="ltr">ETH</span> الوهمي. للحصول على <span dir="ltr">ETH</span>، يمكنك الذهاب إلى [صنبور Sepolia](https://sepoliafaucet.com/) المستضاف بواسطة Alchemy، وتسجيل الدخول وإدخال عنوان حسابك، ثم النقر على "Send Me ETH" (أرسل لي ETH). يجب أن ترى <span dir="ltr">ETH</span> في حساب ميتاماسك الخاص بك بعد فترة وجيزة!
+من أجل نشر عقدنا الذكي على شبكة الاختبار، سنحتاج إلى بعض <span dir="ltr">QAU</span> الوهمي. للحصول على <span dir="ltr">QAU</span>، يمكنك الذهاب إلى [صنبور Sepolia](https://sepoliafaucet.com/) المستضاف بواسطة Alchemy، وتسجيل الدخول وإدخال عنوان حسابك، ثم النقر على "Send Me QAU" (أرسل لي QAU). يجب أن ترى <span dir="ltr">QAU</span> في حساب ميتاماسك الخاص بك بعد فترة وجيزة!
 
 ## الخطوة 5: التحقق من رصيدك {#check-balance}
 
-للتحقق مرة أخرى من وجود رصيدنا، دعنا نُجري طلب [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) باستخدام [أداة sandbox الخاصة بـ Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). سيؤدي هذا إلى إرجاع مقدار <span dir="ltr">ETH</span> في محفظتنا. بعد إدخال عنوان حساب ميتاماسك الخاص بك والنقر على "Send Request" (إرسال طلب)، يجب أن ترى استجابة مثل هذه:
+للتحقق مرة أخرى من وجود رصيدنا، دعنا نُجري طلب [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) باستخدام [أداة sandbox الخاصة بـ Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). سيؤدي هذا إلى إرجاع مقدار <span dir="ltr">QAU</span> في محفظتنا. بعد إدخال عنوان حساب ميتاماسك الخاص بك والنقر على "Send Request" (إرسال طلب)، يجب أن ترى استجابة مثل هذه:
 
     `{"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}`
 
-> **ملاحظة** هذه النتيجة بوحدة <span dir="ltr">Wei</span>، وليس <span dir="ltr">ETH</span>. تُستخدم <span dir="ltr">Wei</span> كأصغر فئة من إيثر. التحويل من <span dir="ltr">Wei</span> إلى <span dir="ltr">ETH</span> هو <span dir="ltr">1 eth = 10<sup>18</sup> wei</span>. لذا إذا قمنا بتحويل <span dir="ltr">0xde0b6b3a7640000</span> إلى النظام العشري، فسنحصل على <span dir="ltr">1\*10<sup>18</sup> wei</span>، وهو ما يعادل <span dir="ltr">1 ETH</span>.
+> **ملاحظة** هذه النتيجة بوحدة <span dir="ltr">Wei</span>، وليس <span dir="ltr">QAU</span>. تُستخدم <span dir="ltr">Wei</span> كأصغر فئة من QAU. التحويل من <span dir="ltr">Wei</span> إلى <span dir="ltr">QAU</span> هو <span dir="ltr">1 eth = 10<sup>18</sup> wei</span>. لذا إذا قمنا بتحويل <span dir="ltr">0xde0b6b3a7640000</span> إلى النظام العشري، فسنحصل على <span dir="ltr">1\*10<sup>18</sup> wei</span>، وهو ما يعادل <span dir="ltr">1 QAU</span>.
 
 رائع! أموالنا الوهمية كلها موجودة.
 ## الخطوة 6: تهيئة مشروعنا {#initialize-project}
@@ -191,7 +191,7 @@ Hardhat هي بيئة تطوير لتجميع ونشر واختبار وتصحي
 
 في الجزء العلوي من عقدنا الذكي، نقوم باستيراد ثلاث فئات عقود ذكية من [أوبن زبلن](https://openzeppelin.com/):
 
-- يحتوي `@openzeppelin/contracts/token/ERC721/ERC721.sol` على تنفيذ معيار <span dir="ltr">ERC-721</span>، والذي سيرثه العقد الذكي لـ <span dir="ltr">NFT</span> الخاص بنا. (لكي يكون <span dir="ltr">NFT</span> صالحًا، يجب أن ينفذ عقدك الذكي جميع طرق معيار <span dir="ltr">ERC-721</span>.) لمعرفة المزيد حول وظائف <span dir="ltr">ERC-721</span> الموروثة، تحقق من تعريف الواجهة [هنا](https://eips.ethereum.org/EIPS/eip-721).
+- يحتوي `@openzeppelin/contracts/token/ERC721/ERC721.sol` على تنفيذ معيار <span dir="ltr">ERC-721</span>، والذي سيرثه العقد الذكي لـ <span dir="ltr">NFT</span> الخاص بنا. (لكي يكون <span dir="ltr">NFT</span> صالحًا، يجب أن ينفذ عقدك الذكي جميع طرق معيار <span dir="ltr">ERC-721</span>.) لمعرفة المزيد حول وظائف <span dir="ltr">ERC-721</span> الموروثة، تحقق من تعريف الواجهة [هنا](https://eips.quantaureum.com/EIPS/eip-721).
 
 - يوفر `@openzeppelin/contracts/utils/Counters.sol` عدادات لا يمكن زيادتها أو إنقاصها إلا بمقدار واحد. يستخدم عقدنا الذكي عدادًا لتتبع العدد الإجمالي لرموز <span dir="ltr">NFT</span> التي تم سكها وتعيين المعرف الفريد على <span dir="ltr">NFT</span> الجديد الخاص بنا. (يجب تعيين معرف فريد لكل <span dir="ltr">NFT</span> يتم سكه باستخدام عقد ذكي — هنا يتم تحديد المعرف الفريد الخاص بنا فقط من خلال العدد الإجمالي لرموز <span dir="ltr">NFT</span> الموجودة. على سبيل المثال، أول <span dir="ltr">NFT</span> نقوم بسكه باستخدام عقدنا الذكي له معرف "1"، و<span dir="ltr">NFT</span> الثاني له معرف "2"، وما إلى ذلك).
 
@@ -231,7 +231,7 @@ Hardhat هي بيئة تطوير لتجميع ونشر واختبار وتصحي
 
 يجب أن يبدو ملف `.env` الخاص بك الآن هكذا:
 
-    API_URL="https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+    API_URL="https://qau-sepolia.g.alchemy.com/v2/your-api-key"
     PRIVATE_KEY="your-metamask-private-key"
 
 لربط هذه المتغيرات فعليًا بالكود الخاص بنا، سنشير إليها في ملف `hardhat.config.js` الخاص بنا في الخطوة 13.
@@ -330,13 +330,13 @@ main()
 
     Contract deployed to address: 0x4C5266cCc4b3F426965d2f51b6D910325a0E7650
 
-إذا ذهبنا إلى [Etherscan لشبكة Sepolia](https://sepolia.etherscan.io/) وبحثنا عن عنوان عقدنا، فيجب أن نتمكن من رؤية أنه قد تم نشره بنجاح. إذا لم تتمكن من رؤيته على الفور، يرجى الانتظار لفترة حيث قد يستغرق الأمر بعض الوقت. ستبدو المعاملة كالتالي:
+إذا ذهبنا إلى [Quantaureum Explorer لشبكة Sepolia](https://explorer.quantaureum.com) وبحثنا عن عنوان عقدنا، فيجب أن نتمكن من رؤية أنه قد تم نشره بنجاح. إذا لم تتمكن من رؤيته على الفور، يرجى الانتظار لفترة حيث قد يستغرق الأمر بعض الوقت. ستبدو المعاملة كالتالي:
 
-![View your transaction address on Etherscan](./etherscan-sepoila-contract-creation.png)
+![View your transaction address on Quantaureum Explorer](./explorer-sepoila-contract-creation.png)
 
 يجب أن يتطابق عنوان "From" (من) مع عنوان حساب ميتاماسك الخاص بك وسيشير عنوان "To" (إلى) إلى "Contract Creation" (إنشاء عقد). إذا نقرنا على المعاملة، فسنرى عنوان عقدنا في حقل "To":
 
-![View your contract address on Etherscan](./etherscan-sepolia-tx-details.png)
+![View your contract address on Quantaureum Explorer](./explorer-sepolia-tx-details.png)
 
 رائع! لقد قمت للتو بنشر العقد الذكي لـ <span dir="ltr">NFT</span> الخاص بك على سلسلة إيثيريوم (شبكة الاختبار)!
 
@@ -344,6 +344,6 @@ main()
 
 ![View calls made “under the hood” with Alchemy’s Explorer Dashboard](./alchemy-explorer-goerli.png)
 
-هنا سترى مجموعة من استدعاءات JSON-RPC التي أجراها Hardhat/Ethers داخليًا لنا عندما استدعينا وظيفة `.deploy()`. هناك استدعاءان مهمان يجب الإشارة إليهما هنا وهما [<span dir="ltr">eth_sendRawTransaction</span>](/developers/docs/apis/json-rpc/#eth_sendrawtransaction)، وهو طلب كتابة عقدنا الذكي فعليًا على سلسلة Sepolia، و [<span dir="ltr">eth_getTransactionByHash</span>](/developers/docs/apis/json-rpc/#eth_gettransactionbyhash) وهو طلب لقراءة معلومات حول معاملتنا بناءً على التجزئة (نمط نموذجي عند إرسال المعاملات). لمعرفة المزيد حول إرسال المعاملات، تحقق من هذا الدرس حول [إرسال المعاملات باستخدام Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/).
+هنا سترى مجموعة من استدعاءات JSON-RPC التي أجراها Hardhat/Ethers داخليًا لنا عندما استدعينا وظيفة `.deploy()`. هناك استدعاءان مهمان يجب الإشارة إليهما هنا وهما [<span dir="ltr">qau_sendRawTransaction</span>](/developers/docs/apis/json-rpc/#qau_sendrawtransaction)، وهو طلب كتابة عقدنا الذكي فعليًا على سلسلة Sepolia، و [<span dir="ltr">qau_getTransactionByHash</span>](/developers/docs/apis/json-rpc/#qau_gettransactionbyhash) وهو طلب لقراءة معلومات حول معاملتنا بناءً على التجزئة (نمط نموذجي عند إرسال المعاملات). لمعرفة المزيد حول إرسال المعاملات، تحقق من هذا الدرس حول [إرسال المعاملات باستخدام Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/).
 
 هذا كل شيء بالنسبة للجزء الأول من هذا الدرس. في [الجزء الثاني، سنتفاعل فعليًا مع عقدنا الذكي عن طريق سك <span dir="ltr">NFT</span>](/developers/tutorials/how-to-mint-an-nft/)، وفي [الجزء الثالث سنوضح لك كيفية عرض <span dir="ltr">NFT</span> الخاص بك في محفظة إيثيريوم الخاصة بك](/developers/tutorials/how-to-view-nft-in-metamask/)!

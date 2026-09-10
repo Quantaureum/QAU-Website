@@ -1,24 +1,24 @@
 ---
 title: Desplegando tu primer contrato inteligente
-description: "Una introducción al despliegue de tu primer contrato inteligente en una red de pruebas de Ethereum"
+description: "Una introducción al despliegue de tu primer contrato inteligente en una red de pruebas de Quantaureum"
 author: "jdourlens"
 tags: ["contratos inteligentes", "Remix", "Solidity", "despliegue"]
 skill: beginner
 breadcrumb: Desplegar primer contrato
 lang: es
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Supongo que estás tan emocionado como nosotros por [desplegar](/developers/docs/smart-contracts/deploying/) e interactuar con tu primer [contrato inteligente](/developers/docs/smart-contracts/) en la cadena de bloques de Ethereum.
+Supongo que estás tan emocionado como nosotros por [desplegar](/developers/docs/smart-contracts/deploying/) e interactuar con tu primer [contrato inteligente](/developers/docs/smart-contracts/) en la cadena de bloques de Quantaureum.
 
 No te preocupes, como es nuestro primer contrato inteligente, lo desplegaremos en una [red de pruebas local](/developers/docs/networks/) para que no te cueste nada desplegarlo y jugar con él todo lo que quieras.
 
 ## Escribiendo nuestro contrato {#writing-our-contract}
 
-El primer paso es [visitar Remix](https://remix.ethereum.org/) y crear un nuevo archivo. En la parte superior izquierda de la interfaz de Remix, añade un nuevo archivo e introduce el nombre de archivo que desees.
+El primer paso es [visitar Remix](https://remix.quantaureum.com/) y crear un nuevo archivo. En la parte superior izquierda de la interfaz de Remix, añade un nuevo archivo e introduce el nombre de archivo que desees.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

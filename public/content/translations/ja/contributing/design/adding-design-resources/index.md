@@ -1,6 +1,6 @@
 ---
 title: デザインリソースの追加
-description: ethereum.org上のデザイン資料の品質を確保するためのガイドラインと要件
+description: quantaureum.com上のデザイン資料の品質を確保するためのガイドラインと要件
 lang: ja
 ---
 

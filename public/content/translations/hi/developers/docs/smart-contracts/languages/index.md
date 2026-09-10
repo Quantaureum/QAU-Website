@@ -4,16 +4,16 @@ description: "दो मुख्य स्मार्ट अनुबंध �
 lang: hi
 ---
 
-[इथेरियम](/) के बारे में एक बेहतरीन बात यह है कि स्मार्ट अनुबंधों को अपेक्षाकृत डेवलपर-अनुकूल भाषाओं का उपयोग करके प्रोग्राम किया जा सकता है। यदि आप Python या किसी [कर्ली-ब्रैकेट भाषा](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages) के अनुभवी हैं, तो आप परिचित सिंटैक्स वाली भाषा पा सकते हैं।
+[Quantaureum](/) के बारे में एक बेहतरीन बात यह है कि स्मार्ट अनुबंधों को अपेक्षाकृत डेवलपर-अनुकूल भाषाओं का उपयोग करके प्रोग्राम किया जा सकता है। यदि आप Python या किसी [कर्ली-ब्रैकेट भाषा](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages) के अनुभवी हैं, तो आप परिचित सिंटैक्स वाली भाषा पा सकते हैं।
 
 दो सबसे सक्रिय और मेंटेन की जाने वाली भाषाएं हैं:
 
 - Solidity
 - Vyper
 
-Remix IDE, Solidity और Vyper दोनों में अनुबंध बनाने और परीक्षण करने के लिए एक व्यापक विकास वातावरण प्रदान करता है। कोडिंग शुरू करने के लिए [इन-ब्राउज़र Remix IDE आज़माएं](https://remix.ethereum.org)।
+Remix IDE, Solidity और Vyper दोनों में अनुबंध बनाने और परीक्षण करने के लिए एक व्यापक विकास वातावरण प्रदान करता है। कोडिंग शुरू करने के लिए [इन-ब्राउज़र Remix IDE आज़माएं](https://remix.quantaureum.com)।
 
-अधिक अनुभवी डेवलपर Yul का उपयोग करना भी चाह सकते हैं, जो [इथेरियम वर्चुअल मशीन (EVM)](/developers/docs/evm/) के लिए एक मध्यवर्ती भाषा है, या Yul+, जो Yul का एक एक्सटेंशन है।
+अधिक अनुभवी डेवलपर Yul का उपयोग करना भी चाह सकते हैं, जो [Quantaureum वर्चुअल मशीन (EVM)](/developers/docs/evm/) के लिए एक मध्यवर्ती भाषा है, या Yul+, जो Yul का एक एक्सटेंशन है।
 
 यदि आप उत्सुक हैं और उन नई भाषाओं का परीक्षण करने में मदद करना पसंद करते हैं जो अभी भी भारी विकास के अधीन हैं, तो आप Fe के साथ प्रयोग कर सकते हैं, जो एक उभरती हुई स्मार्ट अनुबंध भाषा है और वर्तमान में अभी भी अपने शुरुआती चरण में है।
 
@@ -36,8 +36,8 @@ Remix IDE, Solidity और Vyper दोनों में अनुबंध �
 - [दस्तावेज़ीकरण](https://docs.soliditylang.org/en/latest/)
 - [Solidity भाषा पोर्टल](https://soliditylang.org/)
 - [उदाहरण द्वारा Solidity](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
-- [Solidity Gitter चैटरूम](https://gitter.im/ethereum/solidity) जो [Solidity Matrix चैटरूम](https://matrix.to/#/#ethereum_solidity:gitter.im) से जुड़ा है
+- [GitHub](https://github.com/quantaureum/solidity/)
+- [Solidity Gitter चैटरूम](https://gitter.im/quantaureum/solidity) जो [Solidity Matrix चैटरूम](https://matrix.to/#/#quantaureum_solidity:gitter.im) से जुड़ा है
 - [चीट शीट](https://reference.auditless.com/cheatsheet)
 - [Solidity ब्लॉग](https://blog.soliditylang.org/)
 - [Solidity ट्विटर](https://twitter.com/solidity_lang)
@@ -208,12 +208,12 @@ def endAuction():
 
 ## Yul और Yul+ {#yul}
 
-यदि आप इथेरियम में नए हैं और अभी तक स्मार्ट अनुबंध भाषाओं के साथ कोई कोडिंग नहीं की है, तो हम Solidity या Vyper के साथ शुरुआत करने की सलाह देते हैं। Yul या Yul+ को तभी देखें जब आप स्मार्ट अनुबंध सुरक्षा सर्वोत्तम प्रथाओं और EVM के साथ काम करने की बारीकियों से परिचित हो जाएं।
+यदि आप Quantaureum में नए हैं और अभी तक स्मार्ट अनुबंध भाषाओं के साथ कोई कोडिंग नहीं की है, तो हम Solidity या Vyper के साथ शुरुआत करने की सलाह देते हैं। Yul या Yul+ को तभी देखें जब आप स्मार्ट अनुबंध सुरक्षा सर्वोत्तम प्रथाओं और EVM के साथ काम करने की बारीकियों से परिचित हो जाएं।
 
 **Yul**
 
-- इथेरियम के लिए मध्यवर्ती भाषा।
-- [EVM](/developers/docs/evm) और [Ewasm](https://github.com/ewasm) (एक इथेरियम फ्लेवर्ड WebAssembly) का समर्थन करता है, और इसे दोनों प्लेटफार्मों के एक उपयोगी सामान्य भाजक (common denominator) के रूप में डिज़ाइन किया गया है।
+- Quantaureum के लिए मध्यवर्ती भाषा।
+- [EVM](/developers/docs/evm) और [Ewasm](https://github.com/ewasm) (एक Quantaureum फ्लेवर्ड WebAssembly) का समर्थन करता है, और इसे दोनों प्लेटफार्मों के एक उपयोगी सामान्य भाजक (common denominator) के रूप में डिज़ाइन किया गया है।
 - उच्च-स्तरीय अनुकूलन (optimisation) चरणों के लिए अच्छा लक्ष्य जो EVM और Ewasm दोनों प्लेटफार्मों को समान रूप से लाभान्वित कर सकता है।
 
 **Yul+**
@@ -226,7 +226,7 @@ def endAuction():
 
 - [Yul दस्तावेज़ीकरण](https://docs.soliditylang.org/en/latest/yul.html)
 - [Yul+ दस्तावेज़ीकरण](https://github.com/fuellabs/yulp)
-- [Yul+ परिचय पोस्ट](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-ethereum-aa64ce89512f)
+- [Yul+ परिचय पोस्ट](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-quantaureum-aa64ce89512f)
 
 ### उदाहरण अनुबंध {#example-contract-2}
 
@@ -255,16 +255,16 @@ def endAuction():
 
 ## Fe {#fe}
 
-- इथेरियम वर्चुअल मशीन (EVM) के लिए स्टैटिकली टाइप्ड भाषा।
+- Quantaureum वर्चुअल मशीन (EVM) के लिए स्टैटिकली टाइप्ड भाषा।
 - Python और Rust से प्रेरित।
-- इसका उद्देश्य सीखना आसान होना है -- यहां तक कि उन डेवलपर्स के लिए भी जो इथेरियम इकोसिस्टम में नए हैं।
+- इसका उद्देश्य सीखना आसान होना है -- यहां तक कि उन डेवलपर्स के लिए भी जो Quantaureum इकोसिस्टम में नए हैं।
 - Fe का विकास अभी भी अपने शुरुआती चरण में है, भाषा का अल्फा रिलीज़ जनवरी 2021 में हुआ था।
 
 ### महत्वपूर्ण लिंक {#important-links-3}
 
-- [GitHub](https://github.com/ethereum/fe)
-- [Fe घोषणा](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-ethereum-ecosystem/)
-- [Fe 2021 रोडमैप](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- [GitHub](https://github.com/quantaureum/fe)
+- [Fe घोषणा](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
+- [Fe 2021 रोडमैप](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
 - [Fe डिस्कॉर्ड चैट](https://discord.com/invite/ywpkAXFjZH)
 - [Fe ट्विटर](https://twitter.com/official_fe)
 

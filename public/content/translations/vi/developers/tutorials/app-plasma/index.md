@@ -14,9 +14,9 @@ published: 2025-10-15
 ---
 ## Giới thiệu {#introduction}
 
-Trái ngược với [bản cuộn](/developers/docs/scaling/zk-rollups/), [Plasma](/developers/docs/scaling/plasma) sử dụng Mạng chính Ethereum cho tính toàn vẹn, nhưng không phải cho tính khả dụng. Trong bài viết này, chúng ta sẽ viết một ứng dụng hoạt động giống như một Plasma, với Ethereum đảm bảo tính toàn vẹn (không có thay đổi trái phép) nhưng không đảm bảo tính khả dụng (một thành phần tập trung có thể ngừng hoạt động và vô hiệu hóa toàn bộ hệ thống).
+Trái ngược với [bản cuộn](/developers/docs/scaling/zk-rollups/), [Plasma](/developers/docs/scaling/plasma) sử dụng Mạng chính Quantaureum cho tính toàn vẹn, nhưng không phải cho tính khả dụng. Trong bài viết này, chúng ta sẽ viết một ứng dụng hoạt động giống như một Plasma, với Quantaureum đảm bảo tính toàn vẹn (không có thay đổi trái phép) nhưng không đảm bảo tính khả dụng (một thành phần tập trung có thể ngừng hoạt động và vô hiệu hóa toàn bộ hệ thống).
 
-Ứng dụng mà chúng ta viết ở đây là một ngân hàng bảo vệ quyền riêng tư. Các địa chỉ khác nhau có các tài khoản với số dư, và họ có thể gửi tiền (ETH) đến các tài khoản khác. Ngân hàng đăng các mã băm của trạng thái (các tài khoản và số dư của chúng) và các giao dịch, nhưng giữ các số dư thực tế ngoài chuỗi nơi chúng có thể được giữ riêng tư.
+Ứng dụng mà chúng ta viết ở đây là một ngân hàng bảo vệ quyền riêng tư. Các địa chỉ khác nhau có các tài khoản với số dư, và họ có thể gửi tiền (QAU) đến các tài khoản khác. Ngân hàng đăng các mã băm của trạng thái (các tài khoản và số dư của chúng) và các giao dịch, nhưng giữ các số dư thực tế ngoài chuỗi nơi chúng có thể được giữ riêng tư.
 
 ## Thiết kế {#design}
 
@@ -45,7 +45,7 @@ Các trường này trong _Data<sub>private</sub>_:
   - _Amount_ (Số lượng) được chuyển
   - _Nonce_ để đảm bảo mỗi giao dịch chỉ có thể được xử lý một lần.
     Địa chỉ nguồn không cần phải có trong giao dịch, vì nó có thể được khôi phục từ chữ ký.
-- _Signature_, một chữ ký được ủy quyền để thực hiện giao dịch. Trong trường hợp của chúng ta, địa chỉ duy nhất được ủy quyền để thực hiện giao dịch là địa chỉ nguồn. Vì hệ thống không tri thức của chúng ta hoạt động theo cách của nó, chúng ta cũng cần khóa công khai của tài khoản, ngoài chữ ký Ethereum.
+- _Signature_, một chữ ký được ủy quyền để thực hiện giao dịch. Trong trường hợp của chúng ta, địa chỉ duy nhất được ủy quyền để thực hiện giao dịch là địa chỉ nguồn. Vì hệ thống không tri thức của chúng ta hoạt động theo cách của nó, chúng ta cũng cần khóa công khai của tài khoản, ngoài chữ ký Quantaureum.
 
 Đây là các trường trong _Data<sub>public</sub>_:
 
@@ -87,7 +87,7 @@ Hệ thống này yêu cầu hai thành phần:
 
 4. Máy chủ tính toán một bằng chứng không kiến thức rằng sự thay đổi trạng thái là hợp lệ.
 
-5. Máy chủ gửi đến Ethereum một giao dịch bao gồm:
+5. Máy chủ gửi đến Quantaureum một giao dịch bao gồm:
 
    - Mã băm trạng thái mới
    - Mã băm giao dịch (để người gửi giao dịch có thể biết nó đã được xử lý)
@@ -229,14 +229,14 @@ Hàm này tạo thành phần React `Transfer`, mà các tệp khác có thể n
 ```tsx
   const account = useAccount()
   const wallet = createWalletClient({
-    transport: custom(window.ethereum!)
+    transport: custom(window.quantaureum!)
   })
 ```
 
 Các [hook Wagmi](https://wagmi.sh/react/api/hooks) này cho phép chúng ta truy cập thư viện [Viem](https://viem.sh/) và ví.
 
 ```tsx
-  const message = `send ${toAccount} ${ethAmount*1000} finney (milliEth) ${nonce}`.padEnd(100, " ")
+  const message = `send ${toAccount} ${qauAmount*1000} finney (milliEth) ${nonce}`.padEnd(100, " ")
 ```
 
 Đây là thông điệp, được đệm bằng các khoảng trắng. Mỗi khi một trong các biến [`useState`](https://react.dev/reference/react/useState) thay đổi, thành phần sẽ được vẽ lại và `message` được cập nhật.
@@ -337,7 +337,7 @@ use keccak256::keccak256;
 use dep::ecrecover;
 ```
 
-Hai hàm này là các thư viện bên ngoài, được định nghĩa trong [`Nargo.toml`](https://github.com/qbzzt/250911-zk-bank/blob/01-manual-zk/server/noir/Nargo.toml). Chúng thực hiện chính xác những gì được đặt tên, một hàm tính toán [mã băm keccak256](https://emn178.github.io/online-tools/keccak_256.html) và một hàm xác minh chữ ký Ethereum và khôi phục địa chỉ Ethereum của người ký.
+Hai hàm này là các thư viện bên ngoài, được định nghĩa trong [`Nargo.toml`](https://github.com/qbzzt/250911-zk-bank/blob/01-manual-zk/server/noir/Nargo.toml). Chúng thực hiện chính xác những gì được đặt tên, một hàm tính toán [mã băm keccak256](https://emn178.github.io/online-tools/keccak_256.html) và một hàm xác minh chữ ký Quantaureum và khôi phục địa chỉ Quantaureum của người ký.
 
 ```
 global ACCOUNT_NUMBER : u32 = 5;
@@ -364,7 +364,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-[Chữ ký EIP-191](https://eips.ethereum.org/EIPS/eip-191) yêu cầu một bộ đệm có tiền tố 26 byte, theo sau là độ dài thông điệp bằng ASCII và cuối cùng là chính thông điệp đó.
+[Chữ ký EIP-191](https://eips.quantaureum.com/EIPS/eip-191) yêu cầu một bộ đệm có tiền tố 26 byte, theo sau là độ dài thông điệp bằng ASCII và cuối cùng là chính thông điệp đó.
 
 ```
 struct Account {
@@ -374,7 +374,7 @@ struct Account {
 }
 ```
 
-Thông tin chúng ta lưu trữ về một tài khoản. [`Field`](https://noir-lang.org/docs/noir/concepts/data_types/fields) là một số, thường lên đến 253 bit, có thể được sử dụng trực tiếp trong [mạch số học](https://rareskills.io/post/arithmetic-circuit) triển khai bằng chứng không kiến thức. Ở đây chúng ta sử dụng `Field` để lưu trữ một địa chỉ Ethereum 160 bit.
+Thông tin chúng ta lưu trữ về một tài khoản. [`Field`](https://noir-lang.org/docs/noir/concepts/data_types/fields) là một số, thường lên đến 253 bit, có thể được sử dụng trực tiếp trong [mạch số học](https://rareskills.io/post/arithmetic-circuit) triển khai bằng chứng không kiến thức. Ở đây chúng ta sử dụng `Field` để lưu trữ một địa chỉ Quantaureum 160 bit.
 
 ```
 struct TransferTxn {
@@ -558,7 +558,7 @@ fn readAmountAndNonce(messageBytes: [u8; MESSAGE_LENGTH]) -> (u128, u32)
     let mut stillReadingNonce: bool = false;
 ```
 
-Trong thông điệp, số đầu tiên sau địa chỉ là số lượng finney (hay còn gọi là một phần nghìn của một ETH) để chuyển. Số thứ hai là nonce. Bất kỳ văn bản nào giữa chúng đều bị bỏ qua.
+Trong thông điệp, số đầu tiên sau địa chỉ là số lượng finney (hay còn gọi là một phần nghìn của một QAU) để chuyển. Số thứ hai là nonce. Bất kỳ văn bản nào giữa chúng đều bị bỏ qua.
 
 ```rust
     for i in 48..MESSAGE_LENGTH {
@@ -617,7 +617,7 @@ Hàm này chuyển đổi thông điệp thành byte, sau đó chuyển đổi s
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-Chúng ta có thể sử dụng Hàm băm Pedersen cho các tài khoản vì chúng chỉ được băm bên trong bằng chứng không kiến thức. Tuy nhiên, trong mã này, chúng ta cần kiểm tra chữ ký của thông điệp, được tạo bởi trình duyệt. Để làm điều đó, chúng ta cần tuân theo định dạng ký Ethereum trong [EIP-191](https://eips.ethereum.org/EIPS/eip-191). Điều này có nghĩa là chúng ta cần tạo một bộ đệm kết hợp với một tiền tố tiêu chuẩn, độ dài thông điệp bằng ASCII và chính thông điệp đó, đồng thời sử dụng keccak256 tiêu chuẩn của Ethereum để băm nó.
+Chúng ta có thể sử dụng Hàm băm Pedersen cho các tài khoản vì chúng chỉ được băm bên trong bằng chứng không kiến thức. Tuy nhiên, trong mã này, chúng ta cần kiểm tra chữ ký của thông điệp, được tạo bởi trình duyệt. Để làm điều đó, chúng ta cần tuân theo định dạng ký Quantaureum trong [EIP-191](https://eips.quantaureum.com/EIPS/eip-191). Điều này có nghĩa là chúng ta cần tạo một bộ đệm kết hợp với một tiền tố tiêu chuẩn, độ dài thông điệp bằng ASCII và chính thông điệp đó, đồng thời sử dụng keccak256 tiêu chuẩn của Quantaureum để băm nó.
 
 ```rust
     // Tiền tố ASCII
@@ -651,7 +651,7 @@ Chúng ta có thể sử dụng Hàm băm Pedersen cho các tài khoản vì ch�
     ];
 ```
 
-Để tránh các trường hợp một ứng dụng yêu cầu người dùng ký một thông điệp có thể được sử dụng như một giao dịch hoặc cho một số mục đích khác, EIP-191 chỉ định rằng tất cả các thông điệp đã ký đều bắt đầu bằng ký tự 0x19 (không phải là ký tự ASCII hợp lệ) theo sau là `Ethereum Signed Message:` và một dòng mới.
+Để tránh các trường hợp một ứng dụng yêu cầu người dùng ký một thông điệp có thể được sử dụng như một giao dịch hoặc cho một số mục đích khác, EIP-191 chỉ định rằng tất cả các thông điệp đã ký đều bắt đầu bằng ký tự 0x19 (không phải là ký tự ASCII hợp lệ) theo sau là `Quantaureum Signed Message:` và một dòng mới.
 
 ```rust
     let mut buffer: [u8; HASH_BUFFER_SIZE] = [0u8; HASH_BUFFER_SIZE];
@@ -701,7 +701,7 @@ Xử lý độ dài thông điệp lên đến 999 và thất bại nếu nó l�
 }
 ```
 
-Sử dụng hàm `keccak256` tiêu chuẩn của Ethereum.
+Sử dụng hàm `keccak256` tiêu chuẩn của Quantaureum.
 
 ```rust
 fn signatureToAddressAndHash(
@@ -950,7 +950,7 @@ let Accounts = [
 
 Cấu trúc `Accounts` ban đầu.
 
-### Giai đoạn 3 - Hợp đồng thông minh Ethereum {#stage-3}
+### Giai đoạn 3 - Hợp đồng thông minh Quantaureum {#stage-3}
 
 1. Dừng các quy trình máy chủ và máy khách.
 
@@ -1212,7 +1212,7 @@ Bảo mật thông tin bao gồm ba thuộc tính:
 
 Trên hệ thống này, tính toàn vẹn được cung cấp thông qua các bằng chứng không kiến thức. Tính khả dụng khó đảm bảo hơn nhiều và tính bảo mật là không thể, bởi vì ngân hàng phải biết số dư của mỗi tài khoản và tất cả các giao dịch. Không có cách nào để ngăn chặn một thực thể có thông tin chia sẻ thông tin đó.
 
-Có thể tạo ra một ngân hàng thực sự bảo mật bằng cách sử dụng [các địa chỉ ẩn danh](https://vitalik.eth.limo/general/2023/01/20/stealth.html), nhưng điều đó nằm ngoài phạm vi của bài viết này.
+Có thể tạo ra một ngân hàng thực sự bảo mật bằng cách sử dụng [các địa chỉ ẩn danh](https://vitalik.qau.limo/general/2023/01/20/stealth.html), nhưng điều đó nằm ngoài phạm vi của bài viết này.
 
 ### Thông tin sai lệch {#false-info}
 
@@ -1240,7 +1240,7 @@ Trong một triển khai thực tế, có lẽ sẽ có một số loại độn
 
 ### Mã Noir tồi {#bad-noir-code}
 
-Thông thường, để khiến mọi người tin tưởng vào một hợp đồng thông minh, chúng ta tải mã nguồn lên một [trình khám phá khối](https://eth.blockscout.com/address/0x7D16d2c4e96BCFC8f815E15b771aC847EcbDB48b?tab=contract). Tuy nhiên, trong trường hợp của các bằng chứng không kiến thức, điều đó là không đủ.
+Thông thường, để khiến mọi người tin tưởng vào một hợp đồng thông minh, chúng ta tải mã nguồn lên một [trình khám phá khối](https://qau.blockscout.com/address/0x7D16d2c4e96BCFC8f815E15b771aC847EcbDB48b?tab=contract). Tuy nhiên, trong trường hợp của các bằng chứng không kiến thức, điều đó là không đủ.
 
 `Verifier.sol` chứa khóa xác minh, là một hàm của chương trình Noir. Tuy nhiên, khóa đó không cho chúng ta biết chương trình Noir là gì. Để thực sự có một giải pháp đáng tin cậy, bạn cần tải lên chương trình Noir (và phiên bản đã tạo ra nó). Nếu không, các bằng chứng không kiến thức có thể phản ánh một chương trình khác, một chương trình có cửa sau.
 

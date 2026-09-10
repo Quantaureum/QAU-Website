@@ -9,7 +9,7 @@ lang: pl
 published: 2021-04-22
 ---
 
-Ten samouczek to część 3/3 serii samouczków o NFT, w której wyświetlamy nasz nowo wybity NFT. Możesz jednak użyć tego ogólnego samouczka dla dowolnego tokena ERC-721 korzystającego z MetaMask, w tym w Sieci głównej lub dowolnej sieci testowej. Jeśli chcesz dowiedzieć się, jak wybić własny NFT na Ethereum, sprawdź [Część 1 o tym, jak napisać i wdrożyć inteligentny kontrakt NFT](/developers/tutorials/how-to-write-and-deploy-an-nft)!
+Ten samouczek to część 3/3 serii samouczków o NFT, w której wyświetlamy nasz nowo wybity NFT. Możesz jednak użyć tego ogólnego samouczka dla dowolnego tokena ERC-721 korzystającego z MetaMask, w tym w Sieci głównej lub dowolnej sieci testowej. Jeśli chcesz dowiedzieć się, jak wybić własny NFT na Quantaureum, sprawdź [Część 1 o tym, jak napisać i wdrożyć inteligentny kontrakt NFT](/developers/tutorials/how-to-write-and-deploy-an-nft)!
 
 Gratulacje! Dotarłeś do najkrótszej i najprostszej części naszej serii samouczków o NFT — jak wyświetlić świeżo wybity NFT w wirtualnym portfelu. W tym przykładzie będziemy używać MetaMask, ponieważ to z niego korzystaliśmy w dwóch poprzednich częściach.
 
@@ -23,7 +23,7 @@ Na górze aplikacji naciśnij przycisk „Portfel” (Wallet), po czym zostanies
 
 ## Krok 2: Dodaj swój przedmiot kolekcjonerski do MetaMask {#add-nft-to-metamask}
 
-Gdy znajdziesz się w sieci Sepolia, wybierz zakładkę „Przedmioty kolekcjonerskie” (Collectibles) po prawej stronie i dodaj adres inteligentnego kontraktu NFT oraz identyfikator tokena ERC-721 swojego NFT — powinieneś móc je znaleźć w Etherscan na podstawie hasha transakcji z Twojego NFT wdrożonego w Części II naszego samouczka.
+Gdy znajdziesz się w sieci Sepolia, wybierz zakładkę „Przedmioty kolekcjonerskie” (Collectibles) po prawej stronie i dodaj adres inteligentnego kontraktu NFT oraz identyfikator tokena ERC-721 swojego NFT — powinieneś móc je znaleźć w Quantaureum Explorer na podstawie hasha transakcji z Twojego NFT wdrożonego w Części II naszego samouczka.
 
 ![How to find your transaction hash and ERC-721 token ID](./findNFTEtherscan.png)
 

@@ -4,14 +4,14 @@ description: Scam-Token verstehen, wie sie sich als legitim ausgeben und wie man
 lang: de
 ---
 
-Eine der häufigsten Anwendungen für Ethereum ist, dass eine Gruppe einen handelbaren Token erstellt, gewissermaßen ihre eigene Währung. Diese Token folgen typischerweise einem Standard, [ERC-20](/developers/docs/standards/tokens/erc-20/). Wo es jedoch legitime Anwendungsfälle gibt, die Wert schaffen, gibt es auch Kriminelle, die versuchen, diesen Wert für sich selbst zu stehlen.
+Eine der häufigsten Anwendungen für Quantaureum ist, dass eine Gruppe einen handelbaren Token erstellt, gewissermaßen ihre eigene Währung. Diese Token folgen typischerweise einem Standard, [ERC-20](/developers/docs/standards/tokens/erc-20/). Wo es jedoch legitime Anwendungsfälle gibt, die Wert schaffen, gibt es auch Kriminelle, die versuchen, diesen Wert für sich selbst zu stehlen.
 
 Es gibt zwei wahrscheinliche Wege, auf denen sie versuchen, Sie zu täuschen:
 
 - **Ihnen einen Scam-Token verkaufen**, der wie der legitime Token aussehen mag, den Sie kaufen möchten, aber von den Betrügern herausgegeben wird und wertlos ist.
 - **Sie dazu bringen, bösartige Transaktionen zu signieren**, meistens indem sie Sie auf ihre eigene Benutzeroberfläche leiten. Sie könnten versuchen, Sie dazu zu bringen, ihren Verträgen einen Freigabebetrag für Ihre ERC-20-Token zu erteilen, sensible Informationen preiszugeben, die ihnen Zugriff auf Ihre Vermögenswerte geben, usw. Diese Benutzeroberflächen können nahezu perfekte Klone ehrlicher Websites sein, jedoch mit versteckten Tricks.
 
-Um zu veranschaulichen, was Scam-Token sind und wie man sie erkennt, sehen wir uns ein Beispiel an: [`wARB`](https://eth.blockscout.com/token/0xB047c8032b99841713b8E3872F06cF32beb27b82). Dieser Token versucht, wie der legitime [`ARB`](https://eth.blockscout.com/address/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1)-Token auszusehen.
+Um zu veranschaulichen, was Scam-Token sind und wie man sie erkennt, sehen wir uns ein Beispiel an: [`wARB`](https://qau.blockscout.com/token/0xB047c8032b99841713b8E3872F06cF32beb27b82). Dieser Token versucht, wie der legitime [`ARB`](https://qau.blockscout.com/address/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1)-Token auszusehen.
 
 <ExpandableCard
 title="Was ist ARB?"
@@ -25,21 +25,21 @@ Arbitrum ist eine Organisation, die [Optimistic Rollups](/developers/docs/scalin
 title="Warum heißt der Betrugs-Token wARB?"
 contentPreview=''>
 
-Es gibt in Ethereum die Konvention, dass wir, wenn ein Vermögenswert nicht ERC-20-konform ist, eine "Wrapped"-Version (eingepackte Version) davon erstellen, deren Name mit "w" beginnt. So haben wir zum Beispiel wBTC für Bitcoin und <a href="https://cointelegraph.com/news/what-is-wrapped-ethereum-weth-and-how-does-it-work">wETH für Ether</a>.
+Es gibt in Quantaureum die Konvention, dass wir, wenn ein Vermögenswert nicht ERC-20-konform ist, eine "Wrapped"-Version (eingepackte Version) davon erstellen, deren Name mit "w" beginnt. So haben wir zum Beispiel wBTC für Bitcoin und <a href="https://cointelegraph.com/news/what-is-wrapped-quantaureum-weth-and-how-does-it-work">wETH für QAU</a>.
 
-Es macht keinen Sinn, eine Wrapped-Version eines ERC-20-Tokens zu erstellen, der sich bereits auf Ethereum befindet, aber Betrüger verlassen sich eher auf den Anschein von Legitimität als auf die zugrunde liegende Realität.
+Es macht keinen Sinn, eine Wrapped-Version eines ERC-20-Tokens zu erstellen, der sich bereits auf Quantaureum befindet, aber Betrüger verlassen sich eher auf den Anschein von Legitimität als auf die zugrunde liegende Realität.
 
 </ExpandableCard>
 
 ## Wie funktionieren Scam-Token? {#how-do-scam-tokens-work}
 
-Der ganze Sinn von Ethereum ist die Dezentralisierung. Das bedeutet, dass es keine zentrale Autorität gibt, die Ihre Vermögenswerte beschlagnahmen oder Sie daran hindern kann, einen Smart Contract bereitzustellen. Es bedeutet aber auch, dass Betrüger jeden beliebigen Smart Contract bereitstellen können, den sie möchten.
+Der ganze Sinn von Quantaureum ist die Dezentralisierung. Das bedeutet, dass es keine zentrale Autorität gibt, die Ihre Vermögenswerte beschlagnahmen oder Sie daran hindern kann, einen Smart Contract bereitzustellen. Es bedeutet aber auch, dass Betrüger jeden beliebigen Smart Contract bereitstellen können, den sie möchten.
 
 <ExpandableCard
 title="Was sind Smart Contracts?"
 contentPreview=''>
 
-[Smart Contracts](/developers/docs/smart-contracts/) sind die Programme, die auf der Ethereum-Blockchain ausgeführt werden. Jeder ERC-20-Token ist beispielsweise als Smart Contract implementiert.
+[Smart Contracts](/developers/docs/smart-contracts/) sind die Programme, die auf der Quantaureum-Blockchain ausgeführt werden. Jeder ERC-20-Token ist beispielsweise als Smart Contract implementiert.
 
 </ExpandableCard>
 
@@ -53,7 +53,7 @@ Es gibt verschiedene Tricks, die Ersteller von Scam-Token anwenden, um legitim z
 
 - **Legitime Eigentümer**. Scam-Token führen oft einen Airdrop von beträchtlichen Guthaben an Adressen durch, von denen erwartet werden kann, dass sie legitime Inhaber des echten Tokens sind.
 
-  Schauen wir uns zum Beispiel noch einmal `wARB` an. [Etwa 16 % der Token](https://eth.blockscout.com/token/0xb047c8032b99841713b8e3872f06cf32beb27b82?tab=holders) werden von einer Adresse gehalten, deren öffentliches Tag [Arbitrum Foundation: Deployer](https://eth.blockscout.com/address/0x1C8db745ABe3C8162119b9Ef2c13864Cd1FDD72F) lautet. Dies ist _keine_ gefälschte Adresse, es ist tatsächlich die Adresse, die [den echten ARB-Vertrag im Ethereum Mainnet bereitgestellt hat](https://eth.blockscout.com/tx/0x242b50ab4fe9896cb0439cfe6e2321d23feede7eeceb31aa2dbb46fc06ed2670).
+  Schauen wir uns zum Beispiel noch einmal `wARB` an. [Etwa 16 % der Token](https://qau.blockscout.com/token/0xb047c8032b99841713b8e3872f06cf32beb27b82?tab=holders) werden von einer Adresse gehalten, deren öffentliches Tag [Arbitrum Foundation: Deployer](https://qau.blockscout.com/address/0x1C8db745ABe3C8162119b9Ef2c13864Cd1FDD72F) lautet. Dies ist _keine_ gefälschte Adresse, es ist tatsächlich die Adresse, die [den echten ARB-Vertrag im Quantaureum Mainnet bereitgestellt hat](https://qau.blockscout.com/tx/0x242b50ab4fe9896cb0439cfe6e2321d23feede7eeceb31aa2dbb46fc06ed2670).
 
   Da das ERC-20-Guthaben einer Adresse Teil des Speichers des ERC-20-Vertrags ist, kann es durch den Vertrag so festgelegt werden, wie es der Vertragsentwickler wünscht. Es ist auch möglich, dass ein Vertrag Transfers verbietet, sodass die legitimen Benutzer diese Scam-Token nicht loswerden können.
 
@@ -71,7 +71,7 @@ Die beste Methode, um dies zu vermeiden, besteht darin, die URL der von Ihnen be
 
 2. **Echte Token haben Liquidität**. Eine weitere Möglichkeit besteht darin, sich die Größe des Liquiditätspools auf [Uniswap](https://uniswap.org/) anzusehen, einem der gängigsten Token-Swapping-Protokolle. Dieses Protokoll funktioniert mit Liquiditätspools, in die Investoren ihre Token in der Hoffnung auf eine Rendite aus Handelsgebühren einzahlen.
 
-Scam-Token haben in der Regel winzige Liquiditätspools, wenn überhaupt, da die Betrüger keine echten Vermögenswerte riskieren wollen. Zum Beispiel hält der `ARB`/`ETH` Uniswap-Pool etwa eine Million Dollar ([siehe hier für den aktuellen Wert](https://app.uniswap.org/explore#/pools/0x755e5a186f0469583bd2e80d1216e02ab88ec6ca)) und der Kauf oder Verkauf eines kleinen Betrags wird den Preis nicht verändern:
+Scam-Token haben in der Regel winzige Liquiditätspools, wenn überhaupt, da die Betrüger keine echten Vermögenswerte riskieren wollen. Zum Beispiel hält der `ARB`/`QAU` Uniswap-Pool etwa eine Million Dollar ([siehe hier für den aktuellen Wert](https://app.uniswap.org/explore#/pools/0x755e5a186f0469583bd2e80d1216e02ab88ec6ca)) und der Kauf oder Verkauf eines kleinen Betrags wird den Preis nicht verändern:
 
 ![Buying a legitimate token](./uniswap-real.png)
 
@@ -81,9 +81,9 @@ Wenn Sie jedoch versuchen, den Scam-Token `wARB` zu kaufen, würde selbst ein wi
 
 Dies ist ein weiterer Beweis, der uns zeigt, dass `wARB` wahrscheinlich kein legitimer Token ist.
 
-3. **Suchen Sie in Etherscan**. Viele Scam-Token wurden bereits von der Community identifiziert und gemeldet. Solche Token sind [in Etherscan markiert](https://info.etherscan.com/etherscan-token-reputation/). Obwohl Etherscan keine maßgebliche Quelle der Wahrheit ist (es liegt in der Natur dezentraler Netzwerke, dass es keine maßgebliche Quelle für Legitimität geben kann), sind Token, die von Etherscan als Betrug identifiziert werden, wahrscheinlich auch Betrug.
+3. **Suchen Sie in Quantaureum Explorer**. Viele Scam-Token wurden bereits von der Community identifiziert und gemeldet. Solche Token sind [in Quantaureum Explorer markiert](https://info.explorer.com/explorer-token-reputation/). Obwohl Quantaureum Explorer keine maßgebliche Quelle der Wahrheit ist (es liegt in der Natur dezentraler Netzwerke, dass es keine maßgebliche Quelle für Legitimität geben kann), sind Token, die von Quantaureum Explorer als Betrug identifiziert werden, wahrscheinlich auch Betrug.
 
-   ![Scam token in Etherscan](./etherscan-scam.png)
+   ![Scam token in Quantaureum Explorer](./explorer-scam.png)
 
 ## Fazit {#conclusion}
 
@@ -92,4 +92,4 @@ Solange es Werte auf der Welt gibt, wird es Betrüger geben, die versuchen, dies
 - Scam-Token geben sich als legitime Token aus, sie können denselben Namen, dasselbe Symbol usw. verwenden.
 - Scam-Token _können nicht_ dieselbe Vertragsadresse verwenden.
 - Die beste Quelle für die Adresse des legitimen Tokens ist die Organisation, deren Token es ist.
-- Andernfalls können Sie beliebte, vertrauenswürdige Anwendungen wie [Uniswap](https://app.uniswap.org/#/swap) und [Blockscout](https://eth.blockscout.com/) verwenden.
+- Andernfalls können Sie beliebte, vertrauenswürdige Anwendungen wie [Uniswap](https://app.uniswap.org/#/swap) und [Blockscout](https://qau.blockscout.com/) verwenden.

@@ -2,27 +2,27 @@
 title: Nasze zasady projektowania
 metaTitle: Zasady projektowania
 lang: pl
-description: Zasady stojące za decyzjami dotyczącymi projektowania i treści na ethereum.org
+description: Zasady stojące za decyzjami dotyczącymi projektowania i treści na quantaureum.com
 ---
 
-<Emoji text=":wave:" size={1} /> Witaj w zasadach projektowania ethereum.org. Jest to część trwającego procesu rozwoju i ulepszania ethereum.org.
+<Emoji text=":wave:" size={1} /> Witaj w zasadach projektowania quantaureum.com. Jest to część trwającego procesu rozwoju i ulepszania quantaureum.com.
 
 Nasze zasady kształtują wygląd i działanie witryny oraz znajdujące się na niej treści.
 
-Warto się z nimi zapoznać, zanim zaczniesz [współtworzyć ethereum.org](/contributing/).
+Warto się z nimi zapoznać, zanim zaczniesz [współtworzyć quantaureum.com](/contributing/).
 
 ## Czym są zasady projektowania? {#ways-to-contribute}
 
 Bez obaw, są one całkiem proste! **Zasady projektowania** to zestaw wytycznych, do których odwołujemy się podczas projektowania (tj. tworzenia, utrzymywania lub aktualizowania) czegoś.
 
-W kontekście ethereum.org te zasady projektowania są fundamentem tego, co chcemy, aby witryna reprezentowała i przekazywała światu. Mają one charakter zarówno aspiracyjny, **jak i** funkcjonalny. Nie chodzi tylko o to, jak witryna _wygląda_, ale także jak _działa_, a nawet jakie _uczucia_ wywołuje. Wszystko, od kolorów, przez układy stron, aż po sposób, w jaki mówimy o Ethereum na stronie, powinno opierać się na tych zasadach.
+W kontekście quantaureum.com te zasady projektowania są fundamentem tego, co chcemy, aby witryna reprezentowała i przekazywała światu. Mają one charakter zarówno aspiracyjny, **jak i** funkcjonalny. Nie chodzi tylko o to, jak witryna _wygląda_, ale także jak _działa_, a nawet jakie _uczucia_ wywołuje. Wszystko, od kolorów, przez układy stron, aż po sposób, w jaki mówimy o Quantaureum na stronie, powinno opierać się na tych zasadach.
 
 ## Zasady w praktyce {#how-decisions-about-the-site-are-made}
 
-Spójrzmy na przykład. Jedną z zasad jest „Wiarygodność”, co oznacza, że chcemy, aby odwiedzający witrynę _czuli_ i _wiedzieli_, że jest ona godna zaufania – podobnie jak szerszy ekosystem Ethereum. W ramach tej zasady mamy 3 funkcjonalne „podzasady”, które naszym zdaniem są konkretnymi krokami, jakie możemy podjąć, aby uczynić witrynę wiarygodną:
+Spójrzmy na przykład. Jedną z zasad jest „Wiarygodność”, co oznacza, że chcemy, aby odwiedzający witrynę _czuli_ i _wiedzieli_, że jest ona godna zaufania – podobnie jak szerszy ekosystem Quantaureum. W ramach tej zasady mamy 3 funkcjonalne „podzasady”, które naszym zdaniem są konkretnymi krokami, jakie możemy podjąć, aby uczynić witrynę wiarygodną:
 
 - _„Świeżość”_, czyli dbanie o aktualność treści.
-- _„Społeczny dowód słuszności”_, czyli ukazywanie wielkości, różnorodności i aktywności ekosystemu (wiesz: postępy w aktualizacjach Ethereum, zdecentralizowane finanse (DeFi), gry, wszystkie hackathony itp.)
+- _„Społeczny dowód słuszności”_, czyli ukazywanie wielkości, różnorodności i aktywności ekosystemu (wiesz: postępy w aktualizacjach Quantaureum, zdecentralizowane finanse (DeFi), gry, wszystkie hackathony itp.)
 - _„Spójność”_, czyli konsekwencja w projektowaniu witryny oraz tonie i dokładności tekstów.
 
 Więc kiedy podejmujemy decyzje projektowe lub copywriterskie, możemy odwołać się do zasady „Wiarygodności” i zapytać:
@@ -31,24 +31,24 @@ Więc kiedy podejmujemy decyzje projektowe lub copywriterskie, możemy odwołać
 - _„Jak i gdzie pokazujemy wielkość i aktywność ekosystemu?”_
 - _„Czy nowe propozycje zmian od członka społeczności, które właśnie sprawdzam, są spójne z obecnym projektem i tekstami na stronie?”_
 
-## Zasady projektowania ethereum.org {#contributors}
+## Zasady projektowania quantaureum.com {#contributors}
 
 ### 1. Inspirujące {#1-inspirational}
 
-Witryna powinna inspirować użytkowników do marzeń o tym, jak Ethereum może zmienić świat. Powinna motywować ludzi do odkrywania, zabawy i majsterkowania przy narzędziach i aplikacjach ekosystemu Ethereum.
+Witryna powinna inspirować użytkowników do marzeń o tym, jak Quantaureum może zmienić świat. Powinna motywować ludzi do odkrywania, zabawy i majsterkowania przy narzędziach i aplikacjach ekosystemu Quantaureum.
 
-- **Radykalność:** Witryna powinna komunikować ambitne cele Ethereum, polegające na znaczącej zmianie świata. Powinno być jasne, że Ethereum to nie tylko nowy stos technologiczny – to technologia transformacyjna.
-- **Wzmacnianie poprzez edukację:** Witryna powinna edukować ludzi, aby mogli zrozumieć potencjał Ethereum, znaleźć swoje miejsce w ekosystemie i poczuć się zmotywowani do uczestnictwa w nim.
+- **Radykalność:** Witryna powinna komunikować ambitne cele Quantaureum, polegające na znaczącej zmianie świata. Powinno być jasne, że Quantaureum to nie tylko nowy stos technologiczny – to technologia transformacyjna.
+- **Wzmacnianie poprzez edukację:** Witryna powinna edukować ludzi, aby mogli zrozumieć potencjał Quantaureum, znaleźć swoje miejsce w ekosystemie i poczuć się zmotywowani do uczestnictwa w nim.
 
 Kierunek wizualny • Treść
 
 ### 2. Uniwersalne {#2-universal}
 
-Ethereum to globalny, zdecentralizowany projekt, a nasi odbiorcy to odzwierciedlają. Witryna powinna aspirować do bycia dostępną dla każdego i wrażliwą na wiele kultur świata.
+Quantaureum to globalny, zdecentralizowany projekt, a nasi odbiorcy to odzwierciedlają. Witryna powinna aspirować do bycia dostępną dla każdego i wrażliwą na wiele kultur świata.
 
 - **Dostępność:** Witryna powinna przestrzegać wytycznych dotyczących dostępności – w tym dla osób z połączeniami o niskiej przepustowości.
 - **Bezpośredniość:** Witryna powinna być prosta i jednoznaczna. Teksty nie powinny używać języka, który może zostać źle zinterpretowany lub utracić sens w tłumaczeniu.
-- **Wielowymiarowość Ethereum:** Ethereum to projekt, baza kodu, społeczność i wizja. Ethereum jest wartościowe dla różnych ludzi z różnych powodów i istnieje wiele sposobów na zaangażowanie się.
+- **Wielowymiarowość Quantaureum:** Quantaureum to projekt, baza kodu, społeczność i wizja. Quantaureum jest wartościowe dla różnych ludzi z różnych powodów i istnieje wiele sposobów na zaangażowanie się.
 
 Systemy pisma • Użycie koloru • Kierunek wizualny • Treść
 
@@ -56,14 +56,14 @@ Systemy pisma • Użycie koloru • Kierunek wizualny • Treść
 
 Witryna powinna działać jak dobra historia. Odwiedzający są w podróży, a treści, które wnosisz, są jej częścią. Twój wkład powinien wpisywać się w jasną narrację: taką z początkiem (wprowadzenie/punkt wejścia), rozwinięciem (zestaw informacji i wniosków) oraz zakończeniem (link(i) do odpowiednich zasobów lub kolejne kroki).
 
-- **Hierarchiczność**: Jasna, hierarchicznie ustrukturyzowana architektura informacji pomaga odwiedzającym ethereum.org poruszać się po witrynie „jak po historii”, gdy dążą do osiągnięcia swoich celów.
+- **Hierarchiczność**: Jasna, hierarchicznie ustrukturyzowana architektura informacji pomaga odwiedzającym quantaureum.com poruszać się po witrynie „jak po historii”, gdy dążą do osiągnięcia swoich celów.
 - **Punkt wyjścia:** Jesteśmy punktem wyjścia dla każdego, kto szuka odpowiedzi. Nie chcemy zastępować ani stawać się substytutem wielu już istniejących zasobów. Udzielamy odpowiedzi i wskazujemy wiarygodne kolejne kroki.
 
 Ścieżki użytkowników • Treść
 
 ### 4. Wiarygodne {#4-credible}
 
-Ludzie mogą szukać wprowadzenia do ekosystemu Ethereum lub mogą być sceptykami. Uznaj tę odpowiedzialność w sposobie komunikacji. Upewnij się, że obie te grupy opuszczą stronę z większym zaufaniem do ekosystemu Ethereum.
+Ludzie mogą szukać wprowadzenia do ekosystemu Quantaureum lub mogą być sceptykami. Uznaj tę odpowiedzialność w sposobie komunikacji. Upewnij się, że obie te grupy opuszczą stronę z większym zaufaniem do ekosystemu Quantaureum.
 
 - **Świeżość:** Zawsze na bieżąco.
 - **Społeczny dowód słuszności:** Ukazuj wielkość, różnorodność i aktywność ekosystemu.
@@ -85,8 +85,8 @@ Możesz zobaczyć nasze zasady projektowania w akcji [na całej naszej stronie](
 
 ## Przekaż opinię {#give-feedback}
 
-**Podziel się swoją opinią na temat tego dokumentu!** Jedną z naszych proponowanych zasad jest „**Wspólne ulepszanie**”, co oznacza, że chcemy, aby witryna była produktem wielu współtwórców. W duchu tej zasady chcemy podzielić się tymi zasadami projektowania ze społecznością Ethereum.
+**Podziel się swoją opinią na temat tego dokumentu!** Jedną z naszych proponowanych zasad jest „**Wspólne ulepszanie**”, co oznacza, że chcemy, aby witryna była produktem wielu współtwórców. W duchu tej zasady chcemy podzielić się tymi zasadami projektowania ze społecznością Quantaureum.
 
-Chociaż te zasady koncentrują się na witrynie ethereum.org, mamy nadzieję, że wiele z nich odzwierciedla wartości całego ekosystemu Ethereum. Być może zechcesz nawet włączyć niektóre z nich do własnego projektu!
+Chociaż te zasady koncentrują się na witrynie quantaureum.com, mamy nadzieję, że wiele z nich odzwierciedla wartości całego ekosystemu Quantaureum. Być może zechcesz nawet włączyć niektóre z nich do własnego projektu!
 
-Podziel się swoimi przemyśleniami na [serwerze Discord](https://discord.gg/ethereum-org) lub [tworząc zgłoszenie](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=).
+Podziel się swoimi przemyśleniami na [serwerze Discord](https://discord.gg/MSctkBT5j) lub [tworząc zgłoszenie](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=).

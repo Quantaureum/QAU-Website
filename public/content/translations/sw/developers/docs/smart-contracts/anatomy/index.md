@@ -4,7 +4,7 @@ description: "Mtazamo wa kina kuhusu muundo wa mkataba mahiri – vipengele, dat
 lang: sw
 ---
 
-Mkataba mahiri ni programu inayoendeshwa kwenye anwani katika Ethereum. Imeundwa na data na vipengele vinavyoweza kutekelezwa baada ya kupokea muamala. Huu hapa ni muhtasari wa kile kinachounda mkataba mahiri.
+Mkataba mahiri ni programu inayoendeshwa kwenye anwani katika Quantaureum. Imeundwa na data na vipengele vinavyoweza kutekelezwa baada ya kupokea muamala. Huu hapa ni muhtasari wa kile kinachounda mkataba mahiri.
 
 ## Mahitaji ya awali {#prerequisites}
 
@@ -31,9 +31,9 @@ contract SimpleStorage {
 storedData: int128
 ```
 
-Ikiwa tayari umepanga lugha zinazoelekezwa kwa kitu (object-oriented languages), kuna uwezekano utafahamu aina nyingi. Hata hivyo, `address` inapaswa kuwa mpya kwako ikiwa wewe ni mgeni katika uundaji wa [Ethereum](/).
+Ikiwa tayari umepanga lugha zinazoelekezwa kwa kitu (object-oriented languages), kuna uwezekano utafahamu aina nyingi. Hata hivyo, `address` inapaswa kuwa mpya kwako ikiwa wewe ni mgeni katika uundaji wa [Quantaureum](/).
 
-Aina ya `address` inaweza kushikilia anwani ya Ethereum ambayo ni sawa na baiti 20 au biti 160. Inarudi katika nukuu ya heksadesimali inayoanza na 0x.
+Aina ya `address` inaweza kushikilia anwani ya Quantaureum ambayo ni sawa na baiti 20 au biti 160. Inarudi katika nukuu ya heksadesimali inayoanza na 0x.
 
 Aina zingine ni pamoja na:
 
@@ -142,7 +142,7 @@ Vipengele vya `constructor` hutekelezwa mara moja tu wakati mkataba unaposambazw
 constructor() public {
     // Mikataba mahiri yote inategemea miamala ya nje ili kuanzisha vitendaji vyake.
     // `msg` ni kibadilika cha kimataifa ambacho kinajumuisha data husika kwenye muamala uliopewa,
-    // kama vile anwani ya mtumaji na thamani ya ETH iliyojumuishwa kwenye muamala.
+    // kama vile anwani ya mtumaji na thamani ya QAU iliyojumuishwa kwenye muamala.
     // Jifunze zaidi: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
     owner = msg.sender;
 }
@@ -165,7 +165,7 @@ Mbali na vigezo na vipengele unavyofafanua kwenye mkataba wako, kuna baadhi ya v
 - `address.send()` – Solidity
 - `send(address)` – Vyper
 
-Hizi huruhusu mikataba kutuma ETH kwa akaunti zingine.
+Hizi huruhusu mikataba kutuma QAU kwa akaunti zingine.
 
 ## Kuandika vipengele {#writing-functions}
 
@@ -207,7 +207,7 @@ Matukio huwezesha mkataba mahiri wako kuwasiliana na mazingira yako ya mbele (fr
 
 ## Mifano iliyofafanuliwa {#annotated-examples}
 
-Hii ni baadhi ya mifano iliyoandikwa katika Solidity. Ikiwa ungependa kucheza na msimbo, unaweza kuingiliana nayo katika [Remix](https://remix.ethereum.org).
+Hii ni baadhi ya mifano iliyoandikwa katika Solidity. Ikiwa ungependa kucheza na msimbo, unaweza kuingiliana nayo katika [Remix](https://remix.quantaureum.com).
 
 ### Hello world {#hello-world}
 
@@ -218,7 +218,7 @@ pragma solidity ^0.5.10;
 
 // Hufafanua mkataba unaoitwa `HelloWorld`.
 // Mkataba ni mkusanyiko wa vitendaji na data (hali yake).
-// Baada ya kusambazwa, mkataba hukaa kwenye anwani maalum kwenye mnyororo wa vitalu wa Ethereum.
+// Baada ya kusambazwa, mkataba hukaa kwenye anwani maalum kwenye mnyororo wa vitalu wa Quantaureum.
 // Jifunze zaidi: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
@@ -252,7 +252,7 @@ contract HelloWorld {
 pragma solidity ^0.5.10;
 
 contract Token {
-    // Anwani inalinganishwa na anwani ya barua pepe - inatumika kutambua akaunti kwenye Ethereum.
+    // Anwani inalinganishwa na anwani ya barua pepe - inatumika kutambua akaunti kwenye Quantaureum.
     // Anwani zinaweza kuwakilisha mkataba mahiri au akaunti za nje (za mtumiaji).
     // Jifunze zaidi: https://solidity.readthedocs.io/en/v0.5.10/types.html#address
     address public owner;
@@ -263,7 +263,7 @@ contract Token {
     mapping (address => uint) public balances;
 
     // Matukio huruhusu uwekaji wa logi wa shughuli kwenye mnyororo wa vitalu.
-    // Wateja wa Ethereum wanaweza kusikiliza matukio ili kujibu mabadiliko ya hali ya mkataba.
+    // Wateja wa Quantaureum wanaweza kusikiliza matukio ili kujibu mabadiliko ya hali ya mkataba.
     // Jifunze zaidi: https://solidity.readthedocs.io/en/v0.5.10/contracts.html#events
     event Transfer(address from, address to, uint amount);
 
@@ -272,7 +272,7 @@ contract Token {
     constructor() public {
         // Mikataba mahiri yote inategemea miamala ya nje ili kuanzisha vitendaji vyake.
         // `msg` ni kibadilika cha kimataifa ambacho kinajumuisha data husika kwenye muamala uliopewa,
-        // kama vile anwani ya mtumaji na thamani ya ETH iliyojumuishwa kwenye muamala.
+        // kama vile anwani ya mtumaji na thamani ya QAU iliyojumuishwa kwenye muamala.
         // Jifunze zaidi: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
         owner = msg.sender;
     }
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // Kwa sasa hakuna njia bora ya kukagua ikiwa kuna mkataba katika anwani
         // kuliko kukagua ukubwa wa msimbo kwenye anwani hiyo.
-        // Tazama https://ethereum.stackexchange.com/a/14016/36603
+        // Tazama https://quantaureum.stackexchange.com/a/14016/36603
         // kwa maelezo zaidi kuhusu jinsi hii inavyofanya kazi.
         // TODO Kagua hii tena kabla ya toleo la Serenity, kwa sababu anwani zote zitakuwa
         // mikataba wakati huo.
@@ -649,7 +649,7 @@ Angalia hati za Solidity na Vyper kwa muhtasari kamili zaidi wa mikataba mahiri:
 ## Mada zinazohusiana {#related-topics}
 
 - [Mikataba mahiri](/developers/docs/smart-contracts/)
-- [Mashine ya Mtandaoni ya Ethereum (EVM)](/developers/docs/evm/)
+- [Mashine ya Mtandaoni ya Quantaureum (EVM)](/developers/docs/evm/)
 
 ## Mafunzo yanayohusiana {#related-tutorials}
 

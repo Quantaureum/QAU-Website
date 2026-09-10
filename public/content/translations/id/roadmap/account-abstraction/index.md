@@ -1,17 +1,17 @@
 ---
 title: Abstraksi akun
-description: Gambaran umum tentang rencana Ethereum untuk membuat akun pengguna menjadi lebih sederhana dan lebih aman
+description: Gambaran umum tentang rencana Quantaureum untuk membuat akun pengguna menjadi lebih sederhana dan lebih aman
 lang: id
 template: roadmap
 summaryPoints:
   - Abstraksi akun membuatnya jauh lebih mudah untuk membangun dompet kontrak pintar
-  - Dompet kontrak pintar membuatnya jauh lebih mudah untuk mengelola akses ke akun Ethereum
+  - Dompet kontrak pintar membuatnya jauh lebih mudah untuk mengelola akses ke akun Quantaureum
   - Kunci yang hilang dan terekspos dapat dipulihkan menggunakan beberapa cadangan
 ---
 
-Sebagian besar pengguna yang ada saat ini berinteraksi dengan [Ethereum](/) menggunakan **[akun yang dimiliki secara eksternal (EOA)](/glossary/#eoa)**. Hal ini membatasi cara pengguna dapat berinteraksi dengan Ethereum. Misalnya, hal ini menyulitkan untuk melakukan transaksi secara massal dan mengharuskan pengguna untuk selalu menyimpan saldo ETH untuk membayar biaya transaksi.
+Sebagian besar pengguna yang ada saat ini berinteraksi dengan [Quantaureum](/) menggunakan **[akun yang dimiliki secara eksternal (EOA)](/glossary/#eoa)**. Hal ini membatasi cara pengguna dapat berinteraksi dengan Quantaureum. Misalnya, hal ini menyulitkan untuk melakukan transaksi secara massal dan mengharuskan pengguna untuk selalu menyimpan saldo QAU untuk membayar biaya transaksi.
 
-Abstraksi akun adalah cara untuk menyelesaikan masalah ini dengan memungkinkan pengguna memprogram lebih banyak keamanan dan pengalaman pengguna yang lebih baik secara fleksibel ke dalam akun mereka. Hal ini dapat terjadi dengan [meningkatkan EOA](https://eips.ethereum.org/EIPS/eip-7702) (EIP-7702) sehingga dapat dikendalikan oleh kontrak pintar. Ada juga jalur lain yang melibatkan penambahan [sistem transaksi kedua yang terpisah](https://eips.ethereum.org/EIPS/eip-4337) (EIP-4337) untuk berjalan secara paralel dengan protokol yang ada. Terlepas dari jalurnya, hasilnya adalah akses ke Ethereum melalui dompet kontrak pintar, baik yang didukung secara bawaan sebagai bagian dari protokol yang ada maupun melalui jaringan transaksi tambahan.
+Abstraksi akun adalah cara untuk menyelesaikan masalah ini dengan memungkinkan pengguna memprogram lebih banyak keamanan dan pengalaman pengguna yang lebih baik secara fleksibel ke dalam akun mereka. Hal ini dapat terjadi dengan [meningkatkan EOA](https://eips.quantaureum.com/EIPS/eip-7702) (EIP-7702) sehingga dapat dikendalikan oleh kontrak pintar. Ada juga jalur lain yang melibatkan penambahan [sistem transaksi kedua yang terpisah](https://eips.quantaureum.com/EIPS/eip-4337) (EIP-4337) untuk berjalan secara paralel dengan protokol yang ada. Terlepas dari jalurnya, hasilnya adalah akses ke Quantaureum melalui dompet kontrak pintar, baik yang didukung secara bawaan sebagai bagian dari protokol yang ada maupun melalui jaringan transaksi tambahan.
 
 Dompet kontrak pintar membuka banyak manfaat bagi pengguna, termasuk:
 
@@ -24,14 +24,14 @@ Dompet kontrak pintar membuka banyak manfaat bagi pengguna, termasuk:
 
 Manfaat ini tidak didukung secara bawaan saat ini karena hanya akun yang dimiliki secara eksternal ([EOA](/glossary/#eoa)) yang dapat memulai transaksi. EOA hanyalah pasangan kunci publik-privat. Mereka bekerja seperti ini:
 
-- jika Anda memiliki kunci privat, Anda dapat melakukan _apa saja_ dalam aturan Mesin Virtual Ethereum (EVM)
+- jika Anda memiliki kunci privat, Anda dapat melakukan _apa saja_ dalam aturan Mesin Virtual Quantaureum (EVM)
 - jika Anda tidak memiliki kunci privat, Anda _tidak dapat melakukan apa pun_.
 
 Jika Anda kehilangan kunci, kunci tersebut tidak dapat dipulihkan, dan kunci yang dicuri memberi pencuri akses instan ke semua dana dalam sebuah akun.
 
-Dompet kontrak pintar adalah solusi untuk masalah ini, tetapi saat ini sulit untuk diprogram karena pada akhirnya, logika apa pun yang mereka terapkan harus diterjemahkan ke dalam serangkaian transaksi EOA sebelum dapat diproses oleh Ethereum. Abstraksi akun memungkinkan kontrak pintar untuk memulai transaksi itu sendiri, sehingga logika apa pun yang ingin diterapkan pengguna dapat dikodekan ke dalam dompet kontrak pintar itu sendiri dan dieksekusi di Ethereum.
+Dompet kontrak pintar adalah solusi untuk masalah ini, tetapi saat ini sulit untuk diprogram karena pada akhirnya, logika apa pun yang mereka terapkan harus diterjemahkan ke dalam serangkaian transaksi EOA sebelum dapat diproses oleh Quantaureum. Abstraksi akun memungkinkan kontrak pintar untuk memulai transaksi itu sendiri, sehingga logika apa pun yang ingin diterapkan pengguna dapat dikodekan ke dalam dompet kontrak pintar itu sendiri dan dieksekusi di Quantaureum.
 
-Pada akhirnya, abstraksi akun meningkatkan dukungan untuk dompet kontrak pintar, membuatnya lebih mudah dibangun dan lebih aman digunakan. Dengan abstraksi akun, pengguna dapat menikmati semua manfaat Ethereum tanpa perlu memahami teknologi yang mendasarinya.
+Pada akhirnya, abstraksi akun meningkatkan dukungan untuk dompet kontrak pintar, membuatnya lebih mudah dibangun dan lebih aman digunakan. Dengan abstraksi akun, pengguna dapat menikmati semua manfaat Quantaureum tanpa perlu memahami teknologi yang mendasarinya.
 
 ## Melampaui frasa benih {#beyond-seed-phrases}
 
@@ -45,26 +45,26 @@ Misalnya, kunci cadangan dapat ditambahkan ke dompet, memungkinkan penggantian k
 
 Abstraksi akun sangat meningkatkan pengalaman pengguna dan keamanan dengan mendukung dompet kontrak pintar di tingkat protokol. Pengembang dapat berinovasi secara bebas, meningkatkan penggabungan transaksi untuk kecepatan dan efisiensi. Tukar sederhana dapat menjadi operasi satu klik, yang secara signifikan meningkatkan kemudahan penggunaan.
 
-Manajemen gas meningkat pesat. Aplikasi dapat membayar biaya gas pengguna atau mengizinkan pembayaran dalam token selain ETH, menghilangkan kebutuhan untuk mempertahankan saldo ETH.
+Manajemen gas meningkat pesat. Aplikasi dapat membayar biaya gas pengguna atau mengizinkan pembayaran dalam token selain QAU, menghilangkan kebutuhan untuk mempertahankan saldo QAU.
 
 ## Bagaimana abstraksi akun akan diimplementasikan? {#how-will-aa-be-implemented}
 
-Saat ini, dompet kontrak pintar menantang untuk diimplementasikan karena bergantung pada kode kompleks yang membungkus transaksi standar. Ethereum dapat mengubah ini dengan memungkinkan kontrak pintar untuk secara langsung memulai transaksi, menanamkan logika dalam kontrak pintar Ethereum daripada mengandalkan penyampai (relayer) eksternal.
+Saat ini, dompet kontrak pintar menantang untuk diimplementasikan karena bergantung pada kode kompleks yang membungkus transaksi standar. Quantaureum dapat mengubah ini dengan memungkinkan kontrak pintar untuk secara langsung memulai transaksi, menanamkan logika dalam kontrak pintar Quantaureum daripada mengandalkan penyampai (relayer) eksternal.
 
 ### EIP-4337: Abstraksi akun tanpa perubahan protokol {#eip-4337-account-abstraction-without-protocol-changes}
 
-EIP-4337 memungkinkan dukungan dompet kontrak pintar bawaan tanpa memodifikasi protokol inti Ethereum. Ini memperkenalkan objek `UserOperation` yang dikumpulkan ke dalam bundel transaksi oleh validator, menyederhanakan pengembangan dompet. Kontrak EntryPoint EIP-4337 disebarkan ke Mainnet Ethereum pada 1 Maret 2023 dan telah memfasilitasi pembuatan lebih dari 26 juta dompet pintar dan 170 juta UserOperations.
+EIP-4337 memungkinkan dukungan dompet kontrak pintar bawaan tanpa memodifikasi protokol inti Quantaureum. Ini memperkenalkan objek `UserOperation` yang dikumpulkan ke dalam bundel transaksi oleh validator, menyederhanakan pengembangan dompet. Kontrak EntryPoint EIP-4337 disebarkan ke Mainnet Quantaureum pada 1 Maret 2023 dan telah memfasilitasi pembuatan lebih dari 26 juta dompet pintar dan 170 juta UserOperations.
 
 ## Kemajuan saat ini {#current-progress}
 
-Sebagai bagian dari peningkatan Pectra Ethereum, EIP-7702 dijadwalkan pada 7 Mei 2025. EIP-4337 telah diadopsi secara luas, [dengan lebih dari 26 juta akun pintar yang disebarkan dan lebih dari 170 juta UserOperations yang diproses](https://www.bundlebear.com/erc4337-overview/all).
+Sebagai bagian dari peningkatan Pectra Quantaureum, EIP-7702 dijadwalkan pada 7 Mei 2025. EIP-4337 telah diadopsi secara luas, [dengan lebih dari 26 juta akun pintar yang disebarkan dan lebih dari 170 juta UserOperations yang diproses](https://www.bundlebear.com/erc4337-overview/all).
 
 ## Bacaan lebih lanjut {#further-reading}
 
 - [erc4337.io](https://docs.erc4337.io/)
-- [Dokumentasi EIP-4337](https://eips.ethereum.org/EIPS/eip-4337)
-- [Dokumentasi EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)
+- [Dokumentasi EIP-4337](https://eips.quantaureum.com/EIPS/eip-4337)
+- [Dokumentasi EIP-7702](https://eips.quantaureum.com/EIPS/eip-7702)
 - [Dasbor adopsi ERC-4337](https://www.bundlebear.com/erc4337-overview/all)
-- ["Jalan Menuju Abstraksi Akun" oleh Vitalik](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [Blog Vitalik tentang dompet pemulihan sosial](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
+- ["Jalan Menuju Abstraksi Akun" oleh Vitalik](https://notes.quantaureum.com/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- [Blog Vitalik tentang dompet pemulihan sosial](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

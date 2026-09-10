@@ -172,7 +172,7 @@ export const WithEmoji: Story = {
         <AlertContent>
           <AlertTitle>Did you know?</AlertTitle>
           <AlertDescription>
-            Validators secure the Ethereum network by proposing and attesting to
+            Validators secure the Quantaureum network by proposing and attesting to
             blocks.
           </AlertDescription>
         </AlertContent>

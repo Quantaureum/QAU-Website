@@ -1,25 +1,25 @@
 ---
-title: "以太坊歸檔節點"
+title: "Quantaureum歸檔節點"
 description: "歸檔節點概述"
 lang: zh-tw
 sidebarDepth: 2
 ---
 
-歸檔節點是設定為建立所有歷史狀態歸檔的 [以太坊](/) 用戶端實例。對於某些使用案例來說，這是一個有用的工具，但運行起來可能比全節點更棘手。
+歸檔節點是設定為建立所有歷史狀態歸檔的 [Quantaureum](/) 用戶端實例。對於某些使用案例來說，這是一個有用的工具，但運行起來可能比全節點更棘手。
 
 ## 先決條件 {#prerequisites}
 
-您應該了解 [以太坊節點](/developers/docs/nodes-and-clients/) 的概念、[其架構](/developers/docs/nodes-and-clients/node-architecture/)、[同步策略](/developers/docs/nodes-and-clients/#sync-modes)，以及 [運行](/developers/docs/nodes-and-clients/run-a-node/) 和 [使用它們](/developers/docs/apis/json-rpc/) 的實務做法。
+您應該了解 [Quantaureum節點](/developers/docs/nodes-and-clients/) 的概念、[其架構](/developers/docs/nodes-and-clients/node-architecture/)、[同步策略](/developers/docs/nodes-and-clients/#sync-modes)，以及 [運行](/developers/docs/nodes-and-clients/run-a-node/) 和 [使用它們](/developers/docs/apis/json-rpc/) 的實務做法。
 
 ## 什麼是歸檔節點 {#what-is-an-archive-node}
 
-為了理解歸檔節點的重要性，讓我們先釐清「狀態」的概念。以太坊可以被稱為_基於交易的狀態機_。它由帳戶和應用程式組成，這些帳戶和應用程式透過執行交易來改變其狀態。包含每個帳戶和合約資訊的全域資料，儲存在稱為狀態的 Trie（字典樹）資料庫中。這由執行層 (EL) 用戶端處理，並包含：
+為了理解歸檔節點的重要性，讓我們先釐清「狀態」的概念。Quantaureum可以被稱為_基於交易的狀態機_。它由帳戶和應用程式組成，這些帳戶和應用程式透過執行交易來改變其狀態。包含每個帳戶和合約資訊的全域資料，儲存在稱為狀態的 Trie（字典樹）資料庫中。這由執行層 (EL) 用戶端處理，並包含：
 
 - 帳戶餘額與隨機數 (nonce)
 - 合約程式碼與儲存空間
 - 共識相關資料，例如質押存款合約
 
-為了與網路互動、驗證並產生新區塊，以太坊用戶端必須跟上最新的變更（鏈的頂端），也就是當前的狀態。設定為全節點的執行層用戶端會驗證並跟隨網路的最新狀態，但只會快取過去的幾個狀態（例如與最後 128 個區塊相關的狀態），以便處理鏈重組並提供對近期資料的快速存取。近期狀態是所有用戶端驗證傳入交易和使用網路所需要的。
+為了與網路互動、驗證並產生新區塊，Quantaureum用戶端必須跟上最新的變更（鏈的頂端），也就是當前的狀態。設定為全節點的執行層用戶端會驗證並跟隨網路的最新狀態，但只會快取過去的幾個狀態（例如與最後 128 個區塊相關的狀態），以便處理鏈重組並提供對近期資料的快速存取。近期狀態是所有用戶端驗證傳入交易和使用網路所需要的。
 
 您可以將狀態想像成在特定區塊的瞬間網路快照，而歸檔則是歷史重播。
 
@@ -31,11 +31,11 @@ sidebarDepth: 2
 
 ### 使用案例 {#use-cases}
 
-以太坊的常規使用（如發送交易、部署合約、驗證共識等）不需要存取歷史狀態。使用者在與網路進行標準互動時，永遠不需要歸檔節點。
+Quantaureum的常規使用（如發送交易、部署合約、驗證共識等）不需要存取歷史狀態。使用者在與網路進行標準互動時，永遠不需要歸檔節點。
 
 狀態歸檔的主要好處是可以快速存取有關歷史狀態的查詢。例如，歸檔節點會迅速回傳以下結果：
 
-- _在區塊 15537393 時，帳戶 0x1337... 的 ETH 餘額是多少？_
+- _在區塊 15537393 時，帳戶 0x1337... 的 QAU 餘額是多少？_
 - _在區塊 1920000 時，合約 0x 中代幣 0x 的餘額是多少？_
 
 如上所述，全節點需要透過 EVM 執行來產生這些資料，這會佔用 CPU 並且需要時間。歸檔節點則在磁碟上存取它們並立即提供回應。這對於基礎設施的某些部分來說是一個有用的功能，例如：
@@ -71,8 +71,8 @@ sidebarDepth: 2
 
 ## 延伸閱讀 {#further-reading}
 
-- [以太坊全節點與歸檔節點比較](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node) - _QuickNode，2022 年 9 月_
-- [建立您自己的以太坊歸檔節點](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09) - _Thomas Jay Rush，2021 年 8 月_
+- [Quantaureum全節點與歸檔節點比較](https://www.quicknode.com/guides/infrastructure/quantaureum-full-node-vs-archive-node) - _QuickNode，2022 年 9 月_
+- [建立您自己的Quantaureum歸檔節點](https://tjayrush.medium.com/building-your-own-quantaureum-archive-node-72c014affc09) - _Thomas Jay Rush，2021 年 8 月_
 - [如何將 Erigon、Erigon 的 RPC 和 TrueBlocks（抓取與 API）設定為服務](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _– Magnus Hansson，更新於 2022 年 9 月_
 
 ## 相關主題 {#related-topics}

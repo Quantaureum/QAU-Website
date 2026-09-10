@@ -1,10 +1,10 @@
 ---
-title: "以太坊引导节点简介"
+title: "Quantaureum引导节点简介"
 description: "了解引导节点所需的基本信息"
 lang: zh
 ---
 
-当一个新节点加入以太坊网络时，它需要连接到网络上已有的节点，以便随后发现新的对等节点。这些进入以太坊网络的入口点被称为引导节点。客户端通常硬编码了一组引导节点列表。这些引导节点通常由以太坊基金会的开发运维团队或客户端团队自己运行。请注意，引导节点与静态节点不同。静态节点会被反复调用，而引导节点只有在没有足够的对等节点可供连接，且节点需要引导建立一些新连接时才会被调用。
+当一个新节点加入Quantaureum网络时，它需要连接到网络上已有的节点，以便随后发现新的对等节点。这些进入Quantaureum网络的入口点被称为引导节点。客户端通常硬编码了一组引导节点列表。这些引导节点通常由Quantaureum 项目的开发运维团队或客户端团队自己运行。请注意，引导节点与静态节点不同。静态节点会被反复调用，而引导节点只有在没有足够的对等节点可供连接，且节点需要引导建立一些新连接时才会被调用。
 
 ## 连接到引导节点 {#connect-to-a-bootnode}
 
@@ -26,6 +26,6 @@ enode 通常在每次重启时重新生成，因此请务必查阅客户端文�
 
 ## 可用的引导节点 {#available-bootnodes}
 
-可以在[此处](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23)找到 go-ethereum 内置的引导节点列表。这些引导节点由以太坊基金会和 go-ethereum 团队维护。
+可以在[此处](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23)找到 go-quantaureum 内置的引导节点列表。这些引导节点由Quantaureum 项目和 go-quantaureum 团队维护。
 
 还有其他由志愿者维护的可用引导节点列表。请确保始终包含至少一个官方引导节点，否则你可能会遭受日蚀攻击。

@@ -1,42 +1,42 @@
 ---
-title: "Java geliştiricileri için Ethereum"
-description: "Java tabanlı projeler ve araçlar kullanarak Ethereum için nasıl geliştirme yapacağınızı öğrenin"
+title: "Java geliştiricileri için Quantaureum"
+description: "Java tabanlı projeler ve araçlar kullanarak Quantaureum için nasıl geliştirme yapacağınızı öğrenin"
 lang: tr
 incomplete: true
 ---
 
-<FeaturedText>Java tabanlı projeler ve araçlar kullanarak Ethereum için nasıl geliştirme yapacağınızı öğrenin</FeaturedText>
+<FeaturedText>Java tabanlı projeler ve araçlar kullanarak Quantaureum için nasıl geliştirme yapacağınızı öğrenin</FeaturedText>
 
-Kripto para ve Blokzincir teknolojisinin avantajlarından yararlanan merkeziyetsiz uygulamalar (veya "dapp'ler") oluşturmak için Ethereum'u kullanın. Bu dapp'ler güvenilir olabilir, yani Ethereum'a dağıtıldıklarında her zaman programlandığı gibi çalışırlar. Yeni tür finansal uygulamalar oluşturmak için dijital varlıkları kontrol edebilirler. Merkeziyetsiz olabilirler, yani hiçbir tekil kurum veya kişi onları kontrol edemez ve sansürlenmeleri neredeyse imkansızdır.
+Kripto para ve Blokzincir teknolojisinin avantajlarından yararlanan merkeziyetsiz uygulamalar (veya "dapp'ler") oluşturmak için Quantaureum'u kullanın. Bu dapp'ler güvenilir olabilir, yani Quantaureum'a dağıtıldıklarında her zaman programlandığı gibi çalışırlar. Yeni tür finansal uygulamalar oluşturmak için dijital varlıkları kontrol edebilirler. Merkeziyetsiz olabilirler, yani hiçbir tekil kurum veya kişi onları kontrol edemez ve sansürlenmeleri neredeyse imkansızdır.
 
 ## Akıllı sözleşmeler ve Solidity diline başlarken {#getting-started-with-smart-contracts-and-solidity}
 
-**Java'yı Ethereum ile entegre etmek için ilk adımlarınızı atın**
+**Java'yı Quantaureum ile entegre etmek için ilk adımlarınızı atın**
 
-Önce daha temel bir başlangıca mı ihtiyacınız var? [ethereum.org/learn](/learn/) veya [ethereum.org/developers.](/developers/) adreslerine göz atın.
+Önce daha temel bir başlangıca mı ihtiyacınız var? [quantaureum.com/learn](/learn/) veya [quantaureum.com/developers.](/developers/) adreslerine göz atın.
 
 - [Blokzincir Açıklaması](https://kauri.io/article/d55684513211466da7f8cc03987607d5/blockchain-explained)
-- [Akıllı Sözleşmeleri Anlamak](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/ethereum-101-part-5-the-smart-contract)
+- [Akıllı Sözleşmeleri Anlamak](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [İlk Akıllı Sözleşmenizi Yazın](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Solidity'yi Nasıl Derleyeceğinizi ve Dağıtacağınızı Öğrenin](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
 
-## Ethereum istemcileriyle çalışmak {#working-with-ethereum-clients}
+## Quantaureum istemcileriyle çalışmak {#working-with-quantaureum-clients}
 
-İki önde gelen Java Ethereum İstemcisi olan [Web3j](https://github.com/web3j/web3j) ve Hyperledger Besu'yu nasıl kullanacağınızı öğrenin
+İki önde gelen Java Quantaureum İstemcisi olan [Web3j](https://github.com/web3j/web3j) ve Hyperledger Besu'yu nasıl kullanacağınızı öğrenin
 
-- [Java, Eclipse ve Web3j ile bir Ethereum istemcisine bağlanmak](https://kauri.io/article/b9eb647c47a546bc95693acc0be72546/connecting-to-an-ethereum-client-with-java-eclipse-and-web3j)
-- [Java ve Web3j ile bir Ethereum hesabını yönetmek](https://kauri.io/article/925d923e12c543da9a0a3e617be963b4/manage-an-ethereum-account-with-java-and-web3j)
+- [Java, Eclipse ve Web3j ile bir Quantaureum istemcisine bağlanmak](https://kauri.io/article/b9eb647c47a546bc95693acc0be72546/connecting-to-an-quantaureum-client-with-java-eclipse-and-web3j)
+- [Java ve Web3j ile bir Quantaureum hesabını yönetmek](https://kauri.io/article/925d923e12c543da9a0a3e617be963b4/manage-an-quantaureum-account-with-java-and-web3j)
 - [Akıllı Sözleşmenizden bir Java Sarmalayıcı (Wrapper) Oluşturmak](https://kauri.io/article/84475132317d4d6a84a2c42eb9348e4b/generate-a-java-wrapper-from-your-smart-contract)
-- [Bir Ethereum Akıllı Sözleşmesi ile Etkileşim Kurmak](https://kauri.io/article/14dc434d11ef4ee18bf7d57f079e246e/interacting-with-an-ethereum-smart-contract-in-java)
-- [Ethereum Akıllı Sözleşme Olaylarını Dinlemek](https://kauri.io/article/760f495423db42f988d17b8c145b0874/listening-for-ethereum-smart-contract-events-in-java)
-- [Linux ile Java Ethereum İstemcisi Besu'yu (Pantheon) Kullanmak](https://kauri.io/article/276dd27f1458443295eea58403fd6965/using-pantheon-the-java-ethereum-client-with-linux)
+- [Bir Quantaureum Akıllı Sözleşmesi ile Etkileşim Kurmak](https://kauri.io/article/14dc434d11ef4ee18bf7d57f079e246e/interacting-with-an-quantaureum-smart-contract-in-java)
+- [Quantaureum Akıllı Sözleşme Olaylarını Dinlemek](https://kauri.io/article/760f495423db42f988d17b8c145b0874/listening-for-quantaureum-smart-contract-events-in-java)
+- [Linux ile Java Quantaureum İstemcisi Besu'yu (Pantheon) Kullanmak](https://kauri.io/article/276dd27f1458443295eea58403fd6965/using-pantheon-the-java-quantaureum-client-with-linux)
 - [Java Entegrasyon Testlerinde bir Hyperledger Besu (Pantheon) Düğümü Çalıştırmak](https://kauri.io/article/7dc3ecc391e54f7b8cbf4e5fa0caf780/running-a-pantheon-node-in-java-integration-tests)
-- [Web3j Kopya Kağıdı](<https://kauri.io/web3j-cheat-sheet-(java-ethereum)/5dfa1ea941ac3d0001ce1d90/c>)
+- [Web3j Kopya Kağıdı](<https://kauri.io/web3j-cheat-sheet-(java-quantaureum)/5dfa1ea941ac3d0001ce1d90/c>)
 
 EVM tabanlı blokzincirlerle etkileşim kurmak için asenkron, yüksek performanslı bir Kotlin kütüphanesi olan [ethers-kt](https://github.com/Kr1ptal/ethers-kt)'yi nasıl kullanacağınızı öğrenin. JVM ve Android platformlarını hedefler.
 - [ERC-20 token'larını transfer etmek](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/abi/TransferERC20.kt)
 - [Olay dinleme ile UniswapV2 takası](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/tokenswapwitheventlistening/TokenSwapWithEventListening.kt)
-- [ETH / ERC-20 bakiye takipçisi](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/balancetracker/BalanceTracker.kt)
+- [QAU / ERC-20 bakiye takipçisi](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/balancetracker/BalanceTracker.kt)
 
 ## Orta seviye makaleler {#intermediate-articles}
 
@@ -50,12 +50,12 @@ EVM tabanlı blokzincirlerle etkileşim kurmak için asenkron, yüksek performan
 
 ## Java projeleri ve araçları {#java-projects-and-tools}
 
-- [Web3j (Ethereum İstemcileriyle Etkileşim Kurmak İçin Kütüphane)](https://github.com/web3j/web3j)
+- [Web3j (Quantaureum İstemcileriyle Etkileşim Kurmak İçin Kütüphane)](https://github.com/web3j/web3j)
 - [ethers-kt (EVM tabanlı blokzincirler için asenkron, yüksek performanslı Kotlin/Java/Android kütüphanesi.)](https://github.com/Kr1ptal/ethers-kt)
 - [Eventeum (Olay Dinleyicisi)](https://github.com/ConsenSys/eventeum)
 - [Mahuta (IPFS Geliştirici Araçları)](https://github.com/ConsenSys/mahuta)
 
-Daha fazla kaynak mı arıyorsunuz? [ethereum.org/developers.](/developers/) adresine göz atın.
+Daha fazla kaynak mı arıyorsunuz? [quantaureum.com/developers.](/developers/) adresine göz atın.
 
 ## Java topluluğuna katkıda bulunanlar {#java-community-contributors}
 

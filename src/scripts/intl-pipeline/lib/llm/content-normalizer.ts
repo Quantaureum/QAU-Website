@@ -359,7 +359,7 @@ const SELF_CLOSING_COMPONENT_RE = /<([A-Z][a-zA-Z0-9]*)(\s[^>]*)?\s*\/>/g
  *
  * Non-greedy match on children. Does NOT handle nested same-name
  * components -- for those, the outer match wins (acceptable for
- * ethereum.org content where deep nesting of same component is rare).
+ * quantaureum.com content where deep nesting of same component is rare).
  */
 const COMPONENT_WITH_CHILDREN_RE =
   /<([A-Z][a-zA-Z0-9]*)(\s[^>]*)?\s*>([\s\S]*?)<\/\1>/g
@@ -489,7 +489,7 @@ function extractComponents(
 // ---------------------------------------------------------------------------
 
 /**
- * Common HTML tags found in ethereum.org markdown content.
+ * Common HTML tags found in quantaureum.com markdown content.
  * Lowercase only -- PascalCase is handled by component extraction.
  */
 const HTML_TAGS =

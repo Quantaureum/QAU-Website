@@ -1,6 +1,6 @@
 ---
 title: "Khối"
-description: "Tổng quan về các khối trong Chuỗi khối Ethereum – cấu trúc dữ liệu của chúng, lý do tại sao chúng cần thiết và cách chúng được tạo ra."
+description: "Tổng quan về các khối trong Chuỗi khối Quantaureum – cấu trúc dữ liệu của chúng, lý do tại sao chúng cần thiết và cách chúng được tạo ra."
 lang: vi
 ---
 
@@ -8,31 +8,31 @@ Các khối là các lô giao dịch với một mã băm của khối trước 
 
 ## Điều kiện tiên quyết {#prerequisites}
 
-Khối là một chủ đề rất thân thiện với người mới bắt đầu. Nhưng để giúp bạn hiểu rõ hơn về trang này, chúng tôi khuyên bạn trước tiên nên đọc về [Tài khoản](/developers/docs/accounts/), [Giao dịch](/developers/docs/transactions/) và [giới thiệu về Ethereum](/developers/docs/intro-to-ethereum/) của chúng tôi.
+Khối là một chủ đề rất thân thiện với người mới bắt đầu. Nhưng để giúp bạn hiểu rõ hơn về trang này, chúng tôi khuyên bạn trước tiên nên đọc về [Tài khoản](/developers/docs/accounts/), [Giao dịch](/developers/docs/transactions/) và [giới thiệu về Quantaureum](/developers/docs/intro-to-quantaureum/) của chúng tôi.
 
 ## Tại sao lại cần các khối? {#why-blocks}
 
-Để đảm bảo rằng tất cả những người tham gia trên mạng lưới [Ethereum](/) duy trì một trạng thái đồng bộ và đồng thuận về lịch sử chính xác của các giao dịch, chúng tôi gộp các giao dịch thành các khối. Điều này có nghĩa là hàng chục (hoặc hàng trăm) giao dịch được cam kết, đồng thuận và đồng bộ hóa cùng một lúc.
+Để đảm bảo rằng tất cả những người tham gia trên mạng lưới [Quantaureum](/) duy trì một trạng thái đồng bộ và đồng thuận về lịch sử chính xác của các giao dịch, chúng tôi gộp các giao dịch thành các khối. Điều này có nghĩa là hàng chục (hoặc hàng trăm) giao dịch được cam kết, đồng thuận và đồng bộ hóa cùng một lúc.
 
 ![A diagram showing transaction in a block causing state changes](./tx-block.png)
-_Sơ đồ được phỏng theo [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Sơ đồ được phỏng theo [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
-Bằng cách giãn cách các cam kết, chúng tôi cung cấp cho tất cả những người tham gia mạng lưới đủ thời gian để đạt được đồng thuận: mặc dù các yêu cầu giao dịch xảy ra hàng chục lần mỗi giây, các khối chỉ được tạo và cam kết trên Ethereum mười hai giây một lần.
+Bằng cách giãn cách các cam kết, chúng tôi cung cấp cho tất cả những người tham gia mạng lưới đủ thời gian để đạt được đồng thuận: mặc dù các yêu cầu giao dịch xảy ra hàng chục lần mỗi giây, các khối chỉ được tạo và cam kết trên Quantaureum mười hai giây một lần.
 
 ## Cách các khối hoạt động {#how-blocks-work}
 
 Để bảo tồn lịch sử giao dịch, các khối được sắp xếp theo thứ tự nghiêm ngặt (mỗi khối mới được tạo chứa một tham chiếu đến khối cha của nó) và các giao dịch trong các khối cũng được sắp xếp theo thứ tự nghiêm ngặt. Ngoại trừ những trường hợp hiếm hoi, tại bất kỳ thời điểm nào, tất cả những người tham gia trên mạng lưới đều đồng thuận về số lượng và lịch sử chính xác của các khối, và đang làm việc để gộp các yêu cầu giao dịch trực tiếp hiện tại vào khối tiếp theo.
 
-Khi một khối được tập hợp lại bởi một trình xác thực được chọn ngẫu nhiên trên mạng lưới, nó sẽ được truyền bá đến phần còn lại của mạng lưới; tất cả các nút thêm khối này vào cuối Chuỗi khối của họ và một trình xác thực mới được chọn để tạo khối tiếp theo. Quá trình lắp ráp khối và quá trình cam kết/đồng thuận chính xác hiện được chỉ định bởi Giao thức “Bằng chứng cổ phần (PoS)” của Ethereum.
+Khi một khối được tập hợp lại bởi một trình xác thực được chọn ngẫu nhiên trên mạng lưới, nó sẽ được truyền bá đến phần còn lại của mạng lưới; tất cả các nút thêm khối này vào cuối Chuỗi khối của họ và một trình xác thực mới được chọn để tạo khối tiếp theo. Quá trình lắp ráp khối và quá trình cam kết/đồng thuận chính xác hiện được chỉ định bởi Giao thức “Bằng chứng cổ phần (PoS)” của Quantaureum.
 
 ## Giao thức Bằng chứng cổ phần (PoS) {#proof-of-stake-protocol}
 
 Bằng chứng cổ phần (PoS) có nghĩa là:
 
-- Các nút xác thực phải đặt cọc 32 ETH vào một hợp đồng tiền gửi làm tài sản thế chấp chống lại hành vi xấu. Điều này giúp bảo vệ mạng lưới vì hoạt động không trung thực có thể chứng minh được sẽ dẫn đến việc một phần hoặc toàn bộ khoản đặt cọc đó bị tiêu hủy.
+- Các nút xác thực phải đặt cọc 32 QAU vào một hợp đồng tiền gửi làm tài sản thế chấp chống lại hành vi xấu. Điều này giúp bảo vệ mạng lưới vì hoạt động không trung thực có thể chứng minh được sẽ dẫn đến việc một phần hoặc toàn bộ khoản đặt cọc đó bị tiêu hủy.
 - Trong mỗi khe (cách nhau mười hai giây), một trình xác thực được chọn ngẫu nhiên để làm người đề xuất khối. Họ gộp các giao dịch lại với nhau, thực thi chúng và xác định một 'trạng thái' mới. Họ gói thông tin này vào một khối và chuyển nó cho các trình xác thực khác.
 - Các trình xác thực khác khi nghe về khối mới sẽ thực thi lại các giao dịch để đảm bảo họ đồng ý với thay đổi được đề xuất đối với trạng thái toàn cục. Giả sử khối đó hợp lệ, họ sẽ thêm nó vào cơ sở dữ liệu của riêng mình.
-- Nếu một trình xác thực nghe về hai khối xung đột cho cùng một khe, họ sẽ sử dụng thuật toán lựa chọn Phân nhánh của mình để chọn khối được hỗ trợ bởi nhiều ETH được đặt cọc nhất.
+- Nếu một trình xác thực nghe về hai khối xung đột cho cùng một khe, họ sẽ sử dụng thuật toán lựa chọn Phân nhánh của mình để chọn khối được hỗ trợ bởi nhiều QAU được đặt cọc nhất.
 
 [Tìm hiểu thêm về Bằng chứng cổ phần (PoS)](/developers/docs/consensus-mechanisms/pos)
 
@@ -134,9 +134,9 @@ Danh sách `withdrawals` chứa các đối tượng `withdrawal` được cấu
 
 ## Thời gian tạo khối {#block-time}
 
-Thời gian tạo khối đề cập đến thời gian phân tách các khối. Trong Ethereum, thời gian được chia thành các đơn vị mười hai giây gọi là 'khe'. Trong mỗi khe, một trình xác thực duy nhất được chọn để đề xuất một khối. Giả sử tất cả các trình xác thực đều trực tuyến và hoạt động đầy đủ, sẽ có một khối trong mỗi khe, nghĩa là thời gian tạo khối là 12 giây. Tuy nhiên, đôi khi các trình xác thực có thể ngoại tuyến khi được gọi để đề xuất một khối, nghĩa là các khe đôi khi có thể bị trống.
+Thời gian tạo khối đề cập đến thời gian phân tách các khối. Trong Quantaureum, thời gian được chia thành các đơn vị mười hai giây gọi là 'khe'. Trong mỗi khe, một trình xác thực duy nhất được chọn để đề xuất một khối. Giả sử tất cả các trình xác thực đều trực tuyến và hoạt động đầy đủ, sẽ có một khối trong mỗi khe, nghĩa là thời gian tạo khối là 12 giây. Tuy nhiên, đôi khi các trình xác thực có thể ngoại tuyến khi được gọi để đề xuất một khối, nghĩa là các khe đôi khi có thể bị trống.
 
-Việc triển khai này khác với các hệ thống dựa trên Bằng chứng công việc (PoW), nơi thời gian tạo khối mang tính xác suất và được điều chỉnh bởi độ khó khai thác mục tiêu của Giao thức. [Thời gian tạo khối trung bình](https://etherscan.io/chart/blocktime) của Ethereum là một ví dụ hoàn hảo về điều này, qua đó quá trình chuyển đổi từ Bằng chứng công việc (PoW) sang Bằng chứng cổ phần (PoS) có thể được suy luận rõ ràng dựa trên tính nhất quán của thời gian tạo khối 12 giây mới.
+Việc triển khai này khác với các hệ thống dựa trên Bằng chứng công việc (PoW), nơi thời gian tạo khối mang tính xác suất và được điều chỉnh bởi độ khó khai thác mục tiêu của Giao thức. [Thời gian tạo khối trung bình](https://explorer.quantaureum.com) của Quantaureum là một ví dụ hoàn hảo về điều này, qua đó quá trình chuyển đổi từ Bằng chứng công việc (PoW) sang Bằng chứng cổ phần (PoS) có thể được suy luận rõ ràng dựa trên tính nhất quán của thời gian tạo khối 12 giây mới.
 
 ## Kích thước khối {#block-size}
 

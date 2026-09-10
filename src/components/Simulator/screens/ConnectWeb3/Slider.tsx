@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl"
 
 import { HStack, VStack } from "@/components/ui/flex"
 
-import { EthGlyphIcon } from "../../icons"
+import { QauGlyphIcon } from "../../icons"
 
 type SliderProps = {
   isConnected: boolean
@@ -63,7 +63,7 @@ export const Slider = ({ isConnected, displayUrl, children }: SliderProps) => {
               <HStack className="mb-6 rounded-full bg-black/5 px-2 py-1 text-xs">
                 <div className="grid size-5 place-items-center rounded-full bg-body">
                   {/* TODO: Remove important flags and `size` class when icon is migrated */}
-                  <EthGlyphIcon className="!size-[1em] !text-sm !text-background" />
+                  <QauGlyphIcon className="!size-[1em] !text-sm !text-background" />
                 </div>
                 <p className="me-0.5">{displayUrl}</p>
               </HStack>

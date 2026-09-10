@@ -10,13 +10,13 @@ lang: id
 sidebarDepth: 3
 ---
 
-Anda menemukan fitur yang kita butuhkan di ekosistem Ethereum. Anda menulis kontrak pintar untuk mengimplementasikannya, dan mungkin juga beberapa kode terkait yang berjalan secara offchain. Ini luar biasa! Sayangnya, tanpa antarmuka pengguna, Anda tidak akan memiliki pengguna, dan terakhir kali Anda menulis situs web, orang-orang masih menggunakan modem dial-up dan JavaScript masih baru.
+Anda menemukan fitur yang kita butuhkan di ekosistem Quantaureum. Anda menulis kontrak pintar untuk mengimplementasikannya, dan mungkin juga beberapa kode terkait yang berjalan secara offchain. Ini luar biasa! Sayangnya, tanpa antarmuka pengguna, Anda tidak akan memiliki pengguna, dan terakhir kali Anda menulis situs web, orang-orang masih menggunakan modem dial-up dan JavaScript masih baru.
 
 Artikel ini untuk Anda. Saya berasumsi Anda tahu pemrograman, dan mungkin sedikit JavaScript dan HTML, tetapi keterampilan antarmuka pengguna Anda sudah berkarat dan ketinggalan zaman. Bersama-sama kita akan membahas aplikasi modern yang sederhana sehingga Anda akan melihat bagaimana hal itu dilakukan saat ini.
 
 ## Mengapa ini penting {#why-important}
 
-Secara teori, Anda bisa saja meminta orang menggunakan [Etherscan](https://sepolia.etherscan.io/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA#readContract) atau [Blockscout](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) untuk berinteraksi dengan kontrak Anda. Itu bagus untuk para pengguna Ethereum yang berpengalaman. Tetapi kita mencoba melayani [satu miliar orang lainnya](https://blog.ethereum.org/2021/05/07/ethereum-for-the-next-billion). Ini tidak akan terjadi tanpa pengalaman pengguna yang hebat, dan antarmuka pengguna yang ramah adalah bagian besar dari hal tersebut.
+Secara teori, Anda bisa saja meminta orang menggunakan [Quantaureum Explorer](https://explorer.quantaureum.com) atau [Blockscout](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) untuk berinteraksi dengan kontrak Anda. Itu bagus untuk para pengguna Quantaureum yang berpengalaman. Tetapi kita mencoba melayani [satu miliar orang lainnya](https://quantaureum.com). Ini tidak akan terjadi tanpa pengalaman pengguna yang hebat, dan antarmuka pengguna yang ramah adalah bagian besar dari hal tersebut.
 
 ## Aplikasi Greeter {#greeter-app}
 
@@ -24,7 +24,7 @@ Ada banyak teori di balik cara kerja antarmuka pengguna modern, dan [banyak situ
 
 ### Instalasi {#installation}
 
-1. Aplikasi ini menggunakan jaringan pengujian [Sepolia](https://sepolia.dev/). Jika perlu, [dapatkan ETH pengujian Sepolia](/developers/docs/networks/#sepolia) dan [tambahkan Sepolia ke dompet Anda](https://chainlist.org/chain/11155111).
+1. Aplikasi ini menggunakan jaringan pengujian [Sepolia](https://sepolia.dev/). Jika perlu, [dapatkan QAU pengujian Sepolia](/developers/docs/networks/#sepolia) dan [tambahkan Sepolia ke dompet Anda](https://chainlist.org/chain/11155111).
 
 2. Klon repositori GitHub dan instal paket-paket yang diperlukan.
 
@@ -44,7 +44,7 @@ Ada banyak teori di balik cara kerja antarmuka pengguna modern, dan [banyak situ
 
 5. Buka URL yang ditampilkan oleh aplikasi. Dalam kebanyakan kasus, URL tersebut adalah [http://localhost:5173/](http://localhost:5173/).
 
-6. Anda dapat melihat kode sumber kontrak, versi modifikasi dari Greeter milik Hardhat, [di penjelajah rantai blok](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code).
+6. Anda dapat melihat kode sumber kontrak, versi modifikasi dari Greeter milik Hardhat, [di penjelajah rantai blok](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code).
 
 ### Panduan file {#file-walk-through}
 
@@ -111,7 +111,7 @@ Aplikasi ini berada di dalam [komponen `React.StrictMode`](https://react.dev/ref
     <WagmiProvider config={config}>
 ```
 
-Aplikasi ini juga berada di dalam [komponen `WagmiProvider`](https://wagmi.sh/react/api/WagmiProvider). [Pustaka Wagmi (yang akan kita buat)](https://wagmi.sh/) menghubungkan definisi UI React dengan [pustaka Viem](https://viem.sh/) untuk menulis aplikasi terdesentralisasi (dapp) Ethereum.
+Aplikasi ini juga berada di dalam [komponen `WagmiProvider`](https://wagmi.sh/react/api/WagmiProvider). [Pustaka Wagmi (yang akan kita buat)](https://wagmi.sh/) menghubungkan definisi UI React dengan [pustaka Viem](https://viem.sh/) untuk menulis aplikasi terdesentralisasi (dapp) Quantaureum.
 
 ```tsx
       <QueryClientProvider client={queryClient}>
@@ -328,7 +328,7 @@ Kita menggunakan fungsi pustaka ini. Sekali lagi, fungsi-fungsi tersebut dijelas
 import { AddressType } from 'abitype'
 ```
 
-[Pustaka `abitype`](https://abitype.dev/) memberi kita definisi TypeScript untuk berbagai tipe data Ethereum, seperti [`AddressType`](https://abitype.dev/config#addresstype).
+[Pustaka `abitype`](https://abitype.dev/) memberi kita definisi TypeScript untuk berbagai tipe data Quantaureum, seperti [`AddressType`](https://abitype.dev/config#addresstype).
 
 ```tsx
 let greeterABI = [
@@ -358,7 +358,7 @@ const contractAddrs : AddressPerBlockchainType = {
 }
 ```
 
-Alamat kontrak di [Sepolia](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
+Alamat kontrak di [Sepolia](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
 
 ##### Komponen `Timer` {#timer-component}
 
@@ -430,7 +430,7 @@ Alamat kontrak Greeter, yang bernilai `undefined` jika kita tidak memiliki infor
   })
 ```
 
-[Hook `useReadContract`](https://wagmi.sh/react/api/hooks/useReadContract) memanggil fungsi `greet` dari [kontrak](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
+[Hook `useReadContract`](https://wagmi.sh/react/api/hooks/useReadContract) memanggil fungsi `greet` dari [kontrak](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
 
 ```tsx
   const [ currentGreeting, setCurrentGreeting ] = 
@@ -536,15 +536,15 @@ Fungsi untuk menulis ke kontrak. Ini mirip dengan [`writeContracts`](https://wag
 
 Ini adalah proses untuk mengirimkan transaksi rantai blok dari perspektif klien:
 
-1. Kirim transaksi ke node di rantai blok menggunakan [`eth_estimateGas`](https://docs.alchemy.com/reference/eth-estimategas).
+1. Kirim transaksi ke node di rantai blok menggunakan [`qau_estimateGas`](https://docs.alchemy.com/reference/qau-estimategas).
 2. Tunggu respons dari node.
 3. Ketika respons diterima, minta pengguna untuk menandatangani transaksi melalui dompet. Langkah ini _harus_ terjadi setelah respons node diterima karena pengguna diperlihatkan biaya gas transaksi sebelum menandatanganinya.
 4. Tunggu pengguna untuk menyetujui.
-5. Kirim transaksi lagi, kali ini menggunakan [`eth_sendRawTransaction`](https://docs.alchemy.com/reference/eth-sendrawtransaction).
+5. Kirim transaksi lagi, kali ini menggunakan [`qau_sendRawTransaction`](https://docs.alchemy.com/reference/qau-sendrawtransaction).
 
 Langkah 2 kemungkinan akan memakan waktu yang cukup lama, di mana pengguna mungkin bertanya-tanya apakah perintah mereka diterima oleh antarmuka pengguna dan mengapa mereka belum diminta untuk menandatangani transaksi. Itu menciptakan pengalaman pengguna (UX) yang buruk.
 
-Salah satu solusinya adalah mengirimkan `eth_estimateGas` setiap kali parameter berubah. Kemudian, ketika pengguna benar-benar ingin mengirim transaksi (dalam hal ini dengan menekan **Update greeting**), biaya gas diketahui, dan pengguna dapat segera melihat halaman dompet.
+Salah satu solusinya adalah mengirimkan `qau_estimateGas` setiap kali parameter berubah. Kemudian, ketika pengguna benar-benar ingin mengirim transaksi (dalam hal ini dengan menekan **Update greeting**), biaya gas diketahui, dan pengguna dapat segera melihat halaman dompet.
 
 ```tsx
   return (
@@ -663,7 +663,7 @@ Titik akhir HTTP default yang disertakan dengan Viem sudah cukup baik. Jika kita
 
 ## Menambahkan rantai blok lain {#add-blockchain}
 
-Saat ini ada banyak [solusi penskalaan L2](https://ethereum.org/layer-2/), dan Anda mungkin ingin mendukung beberapa yang belum didukung oleh Viem. Untuk melakukannya, Anda memodifikasi `src/wagmi.ts`. Instruksi ini menjelaskan cara menambahkan [Optimism Sepolia](https://chainlist.org/chain/11155420).
+Saat ini ada banyak [solusi penskalaan L2](https://quantaureum.com/layer-2/), dan Anda mungkin ingin mendukung beberapa yang belum didukung oleh Viem. Untuk melakukannya, Anda memodifikasi `src/wagmi.ts`. Instruksi ini menjelaskan cara menambahkan [Optimism Sepolia](https://chainlist.org/chain/11155420).
 
 1.  Edit `src/wagmi.ts`
 
@@ -679,7 +679,7 @@ Saat ini ada banyak [solusi penskalaan L2](https://ethereum.org/layer-2/), dan A
           const optimismSepolia = defineChain({
               id: 11_155_420,
               name: 'OP Sepolia',
-              nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+              nativeCurrency: { name: 'Sepolia QAU', symbol: 'QAU', decimals: 18 },
               rpcUrls: {
                 default: {
                   http: ['https://sepolia.optimism.io'],

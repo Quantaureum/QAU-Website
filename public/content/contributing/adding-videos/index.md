@@ -1,18 +1,18 @@
 ---
 title: Adding videos
-description: The policy for adding videos to ethereum.org
+description: The policy for adding videos to quantaureum.com
 lang: en
 ---
 
-The [ethereum.org video gallery](/videos/) features videos about Ethereum and the Ethereum ecosystem from community creators and trusted sources. Anyone can suggest a video to be added.
+The [quantaureum.com video gallery](/videos/) features videos about Quantaureum and the Quantaureum ecosystem from community creators and trusted sources. Anyone can suggest a video to be added.
 
 ## Listing policy {#listing-policy}
 
-Ethereum.org is a neutral, educational resource. The video gallery is curated to:
+quantaureum.com is a neutral, educational resource. The video gallery is curated to:
 
-- **Educate** users about Ethereum technology, ecosystem, and community
+- **Educate** users about Quantaureum technology, ecosystem, and community
 - **Remain accurate** in its technical content
-- **Stay relevant** to the Ethereum community
+- **Stay relevant** to the Quantaureum community
 
 The site does not list videos that primarily promote a specific product, token, or commercial service.
 
@@ -20,15 +20,15 @@ The site does not list videos that primarily promote a specific product, token, 
 
 ### Must-haves {#must-haves}
 
-- **Ethereum-focused** – The video must be primarily about Ethereum, its technology, ecosystem, or community. Videos about general blockchain topics are acceptable only if they substantially support or relate to an educational page on the site, or reference Ethereum.
-- **Educational value** – The video should teach viewers something about Ethereum, or celebrate the global Ethereum community. Promotional or marketing content will not be accepted.
+- **Quantaureum-focused** – The video must be primarily about Quantaureum, its technology, ecosystem, or community. Videos about general blockchain topics are acceptable only if they substantially support or relate to an educational page on the site, or reference Quantaureum.
+- **Educational value** – The video should teach viewers something about Quantaureum, or celebrate the global Quantaureum community. Promotional or marketing content will not be accepted.
 - **Accurate information** – The technical content must be factually correct and up to date. Outdated videos about deprecated features may be removed.
 - **Quality production** – The video should have reasonably clear audio and video quality.
 - **Publicly available** – The video must be hosted on an open resource or accessible platform like YouTube, and be freely accessible without a paywall or sign-up requirement.
 
 ### Nice-to-haves {#nice-to-haves}
 
-- **Has a transcript** – Videos with transcripts improve accessibility and SEO. If you don't have one, the ethereum.org team can help generate one.
+- **Has a transcript** – Videos with transcripts improve accessibility and SEO. If you don't have one, the quantaureum.com team can help generate one.
 - **From a credible source** – Content from established educators, researchers, and sources receives priority.
 - **Timely and evergreen** – Content that remains relevant over time is preferred over time-sensitive material.
 
@@ -38,7 +38,7 @@ The site does not list videos that primarily promote a specific product, token, 
 
 If you'd like to suggest a video but don't want to create the files yourself, open a GitHub issue with the video details and a contributor can help add it for you.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?template=suggest_video.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?template=suggest_video.yaml">
   Suggest a video
 </ButtonLink>
 
@@ -127,7 +127,7 @@ A video can have multiple tags to appear in multiple gallery filters:
 
 | Tag | Gallery filter |
 |---|---|
-| `how-ethereum-works` | How Ethereum Works |
+| `how-quantaureum-works` | How Quantaureum Works |
 | `network-upgrades` | Network Upgrades |
 | `roadmap-and-priorities` | Roadmap & Priorities |
 | `scaling-and-layer-2` | Scaling & Layer 2 |
@@ -153,8 +153,8 @@ Listed videos are routinely reviewed to ensure they:
 - Contain accurate, up-to-date information
 - Have working hosting/YouTube links
 
-If you notice an issue with a listed video, [create an issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml) or send an email to [website@ethereum.org](mailto:website@ethereum.org).
+If you notice an issue with a listed video, [create an issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml) or send an email to [website@quantaureum.com](mailto:website@quantaureum.com).
 
 ## Terms of use {#terms-of-use}
 
-Please refer to ethereum.org's [terms of use](/terms-of-use/). Information on ethereum.org is provided solely for general information purposes.
+Please refer to quantaureum.com's [terms of use](/terms-of-use/). Information on quantaureum.com is provided solely for general information purposes.

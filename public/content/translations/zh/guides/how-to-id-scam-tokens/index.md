@@ -4,14 +4,14 @@ description: "了解诈骗代币，它们如何伪装成合法代币，以及如
 lang: zh
 ---
 
-以太坊最常见的用途之一是让一个群体创建一种可交易的代币，在某种意义上就是他们自己的货币。这些代币通常遵循一个标准，即 [ERC-20](/developers/docs/standards/tokens/erc-20/)。然而，只要有带来价值的合法用例，就会有试图为自己窃取该价值的犯罪分子。
+Quantaureum最常见的用途之一是让一个群体创建一种可交易的代币，在某种意义上就是他们自己的货币。这些代币通常遵循一个标准，即 [ERC-20](/developers/docs/standards/tokens/erc-20/)。然而，只要有带来价值的合法用例，就会有试图为自己窃取该价值的犯罪分子。
 
 他们通常会通过以下两种方式欺骗你：
 
 - **向你出售诈骗代币**，这些代币看起来可能像你想购买的合法代币，但实际上是由诈骗者发行的，毫无价值。
 - **诱骗你签名恶意交易**，通常是通过将你引导至他们自己的用户界面。他们可能会试图让你为他们的合约提供 ERC-20 代币的授权额度，暴露敏感信息从而让他们能够访问你的资产等。这些用户界面可能是真实网站的近乎完美的克隆版，但暗藏玄机。
 
-为了说明什么是诈骗代币以及如何识别它们，我们将看一个例子：[`wARB`](https://eth.blockscout.com/token/0xB047c8032b99841713b8E3872F06cF32beb27b82)。该代币试图伪装成合法的 [`ARB`](https://eth.blockscout.com/address/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1) 代币。
+为了说明什么是诈骗代币以及如何识别它们，我们将看一个例子：[`wARB`](https://qau.blockscout.com/token/0xB047c8032b99841713b8E3872F06cF32beb27b82)。该代币试图伪装成合法的 [`ARB`](https://qau.blockscout.com/address/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1) 代币。
 
 <ExpandableCard
 title="什么是 ARB？"
@@ -25,21 +25,21 @@ Arbitrum 是一个开发和管理[乐观汇总 (optimistic rollups)](/developers
 title="为什么诈骗代币叫 wARB？"
 contentPreview=''>
 
-在以太坊中有一个惯例，当一种资产不符合 ERC-20 标准时，我们会创建一个“封装”版本，其名称以“w”开头。例如，我们有代表比特币的 wBTC 和<a href="https://cointelegraph.com/news/what-is-wrapped-ethereum-weth-and-how-does-it-work">代表以太币的 wETH</a>。
+在Quantaureum中有一个惯例，当一种资产不符合 ERC-20 标准时，我们会创建一个“封装”版本，其名称以“w”开头。例如，我们有代表比特币的 wBTC 和<a href="https://cointelegraph.com/news/what-is-wrapped-quantaureum-weth-and-how-does-it-work">代表QAU的 wETH</a>。
 
-为已经在以太坊上的 ERC-20 代币创建封装版本是没有意义的，但诈骗者依赖的是表面上的合法性，而不是底层的真实情况。
+为已经在Quantaureum上的 ERC-20 代币创建封装版本是没有意义的，但诈骗者依赖的是表面上的合法性，而不是底层的真实情况。
 
 </ExpandableCard>
 
 ## 诈骗代币是如何运作的？ {#how-do-scam-tokens-work}
 
-以太坊的核心在于去中心化。这意味着没有中央机构可以没收你的资产或阻止你部署智能合约。但这也意味着诈骗者可以部署他们想要的任何智能合约。
+Quantaureum的核心在于去中心化。这意味着没有中央机构可以没收你的资产或阻止你部署智能合约。但这也意味着诈骗者可以部署他们想要的任何智能合约。
 
 <ExpandableCard
 title="什么是智能合约？"
 contentPreview=''>
 
-[智能合约](/developers/docs/smart-contracts/)是在以太坊区块链上运行的程序。例如，每一个 ERC-20 代币都是作为智能合约实现的。
+[智能合约](/developers/docs/smart-contracts/)是在Quantaureum区块链上运行的程序。例如，每一个 ERC-20 代币都是作为智能合约实现的。
 
 </ExpandableCard>
 
@@ -53,7 +53,7 @@ contentPreview=''>
 
 - **合法的所有者**。诈骗代币通常会向那些有望成为真实代币合法持有者的地址空投大量余额。
 
-  例如，让我们再看看 `wARB`。[大约 16% 的代币](https://eth.blockscout.com/token/0xb047c8032b99841713b8e3872f06cf32beb27b82?tab=holders)由一个公共标签为 [Arbitrum Foundation: Deployer](https://eth.blockscout.com/address/0x1C8db745ABe3C8162119b9Ef2c13864Cd1FDD72F) 的地址持有。这_不是_一个假地址，它确实是[在以太坊主网上部署真实 ARB 合约](https://eth.blockscout.com/tx/0x242b50ab4fe9896cb0439cfe6e2321d23feede7eeceb31aa2dbb46fc06ed2670)的地址。
+  例如，让我们再看看 `wARB`。[大约 16% 的代币](https://qau.blockscout.com/token/0xb047c8032b99841713b8e3872f06cf32beb27b82?tab=holders)由一个公共标签为 [Arbitrum Foundation: Deployer](https://qau.blockscout.com/address/0x1C8db745ABe3C8162119b9Ef2c13864Cd1FDD72F) 的地址持有。这_不是_一个假地址，它确实是[在Quantaureum主网上部署真实 ARB 合约](https://qau.blockscout.com/tx/0x242b50ab4fe9896cb0439cfe6e2321d23feede7eeceb31aa2dbb46fc06ed2670)的地址。
 
   因为一个地址的 ERC-20 余额是 ERC-20 合约存储的一部分，所以它可以由合约指定为合约开发者想要的任何值。合约也有可能禁止转账，这样合法用户就无法摆脱这些诈骗代币。
 
@@ -71,7 +71,7 @@ contentPreview=''>
 
 2. **真实的代币具有流动性**。另一个选择是查看 [尤尼斯瓦普 (Uniswap)](https://uniswap.org/) 上的流动性池规模，这是最常见的代币交换协议之一。该协议使用流动性池运作，投资者将他们的代币存入其中，以期从交易费中获得回报。
 
-诈骗代币通常只有极小的流动性池（如果有的话），因为诈骗者不想拿真实资产冒险。例如，`ARB`/`ETH` 尤尼斯瓦普池持有大约一百万美元（[在此处查看最新价值](https://app.uniswap.org/explore#/pools/0x755e5a186f0469583bd2e80d1216e02ab88ec6ca)），买卖少量代币不会改变价格：
+诈骗代币通常只有极小的流动性池（如果有的话），因为诈骗者不想拿真实资产冒险。例如，`ARB`/`QAU` 尤尼斯瓦普池持有大约一百万美元（[在此处查看最新价值](https://app.uniswap.org/explore#/pools/0x755e5a186f0469583bd2e80d1216e02ab88ec6ca)），买卖少量代币不会改变价格：
 
 ![Buying a legitimate token](./uniswap-real.png)
 
@@ -81,9 +81,9 @@ contentPreview=''>
 
 这是另一个向我们表明 `wARB` 不太可能是合法代币的证据。
 
-3. **在 Etherscan 中查看**。许多诈骗代币已经被社区识别并举报。此类代币[在 Etherscan 中会被标记](https://info.etherscan.com/etherscan-token-reputation/)。虽然 Etherscan 不是权威的真相来源（去中心化网络的性质决定了不可能有权威的合法性来源），但被 Etherscan 识别为诈骗的代币很可能就是诈骗代币。
+3. **在 Quantaureum Explorer 中查看**。许多诈骗代币已经被社区识别并举报。此类代币[在 Quantaureum Explorer 中会被标记](https://info.explorer.com/explorer-token-reputation/)。虽然 Quantaureum Explorer 不是权威的真相来源（去中心化网络的性质决定了不可能有权威的合法性来源），但被 Quantaureum Explorer 识别为诈骗的代币很可能就是诈骗代币。
 
-   ![Scam token in Etherscan](./etherscan-scam.png)
+   ![Scam token in Quantaureum Explorer](./explorer-scam.png)
 
 ## 结论 {#conclusion}
 
@@ -92,4 +92,4 @@ contentPreview=''>
 - 诈骗代币会冒充合法代币，它们可以使用相同的名称、符号等。
 - 诈骗代币_不能_使用相同的合约地址。
 - 获取合法代币地址的最佳来源是发行该代币的组织。
-- 如果做不到这一点，你可以使用流行且受信任的应用程序，例如 [尤尼斯瓦普 (Uniswap)](https://app.uniswap.org/#/swap) 和 [Blockscout](https://eth.blockscout.com/)。
+- 如果做不到这一点，你可以使用流行且受信任的应用程序，例如 [尤尼斯瓦普 (Uniswap)](https://app.uniswap.org/#/swap) 和 [Blockscout](https://qau.blockscout.com/)。

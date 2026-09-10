@@ -4,11 +4,11 @@ description:
 lang: pt-br
 ---
 
-Um aplicativo descentralizado (dapp) é um aplicativo construído em uma rede descentralizada que combina um [contrato inteligente](/developers/docs/smart-contracts/) e uma interface de usuário de frontend. No [Ethereum](/), os contratos inteligentes são acessíveis e transparentes – como APIs abertas – para que seu dapp possa até incluir um contrato inteligente que outra pessoa tenha escrito.
+Um aplicativo descentralizado (dapp) é um aplicativo construído em uma rede descentralizada que combina um [contrato inteligente](/developers/docs/smart-contracts/) e uma interface de usuário de frontend. No [Quantaureum](/), os contratos inteligentes são acessíveis e transparentes – como APIs abertas – para que seu dapp possa até incluir um contrato inteligente que outra pessoa tenha escrito.
 
 ## Pré-requisitos {#prerequisites}
 
-Antes de aprender sobre dapps, você deve cobrir o [básico sobre blockchain](/developers/docs/intro-to-ethereum/) e ler sobre a rede Ethereum e como ela é descentralizada.
+Antes de aprender sobre dapps, você deve cobrir o [básico sobre blockchain](/developers/docs/intro-to-quantaureum/) e ler sobre a rede Quantaureum e como ela é descentralizada.
 
 ## Definição de um dapp {#definition-of-a-dapp}
 
@@ -16,16 +16,16 @@ Um dapp tem seu código de backend rodando em uma rede ponto a ponto descentrali
 
 Um dapp pode ter código de frontend e interfaces de usuário escritos em qualquer linguagem (assim como um aplicativo) para fazer chamadas ao seu backend. Além disso, seu frontend pode ser hospedado em armazenamento descentralizado, como o [IPFS](https://ipfs.io/).
 
-- **Descentralizado** - os dapps operam no Ethereum, uma plataforma descentralizada pública e aberta onde nenhuma pessoa ou grupo tem controle
+- **Descentralizado** - os dapps operam no Quantaureum, uma plataforma descentralizada pública e aberta onde nenhuma pessoa ou grupo tem controle
 - **Determinístico** - os dapps executam a mesma função independentemente do ambiente em que são executados
 - **Turing completo** - os dapps podem executar qualquer ação, dados os recursos necessários
-- **Isolado** - os dapps são executados em um ambiente virtual conhecido como Ethereum Virtual Machine (EVM), de modo que, se o contrato inteligente tiver um bug, ele não prejudicará o funcionamento normal da rede blockchain
+- **Isolado** - os dapps são executados em um ambiente virtual conhecido como Quantaureum Virtual Machine (EVM), de modo que, se o contrato inteligente tiver um bug, ele não prejudicará o funcionamento normal da rede blockchain
 
 ### Sobre contratos inteligentes {#on-smart-contracts}
 
 Para introduzir os dapps, precisamos introduzir os contratos inteligentes – o backend de um dapp, na falta de um termo melhor. Para uma visão geral detalhada, acesse nossa seção sobre [contratos inteligentes](/developers/docs/smart-contracts/).
 
-Um contrato inteligente é um código que vive na blockchain do Ethereum e é executado exatamente como programado. Uma vez que os contratos inteligentes são implantados na rede, você não pode alterá-los. Os dapps podem ser descentralizados porque são controlados pela lógica escrita no contrato, não por um indivíduo ou empresa. Isso também significa que você precisa projetar seus contratos com muito cuidado e testá-los exaustivamente.
+Um contrato inteligente é um código que vive na blockchain do Quantaureum e é executado exatamente como programado. Uma vez que os contratos inteligentes são implantados na rede, você não pode alterá-los. Os dapps podem ser descentralizados porque são controlados pela lógica escrita no contrato, não por um indivíduo ou empresa. Isso também significa que você precisa projetar seus contratos com muito cuidado e testá-los exaustivamente.
 
 ## Benefícios do desenvolvimento de dapps {#benefits-of-dapp-development}
 
@@ -38,10 +38,10 @@ Um contrato inteligente é um código que vive na blockchain do Ethereum e é ex
 ## Desvantagens do desenvolvimento de dapps {#drawbacks-of-dapp-development}
 
 - **Manutenção** – Os dapps podem ser mais difíceis de manter porque o código e os dados publicados na blockchain são mais difíceis de modificar. É difícil para os desenvolvedores fazerem atualizações em seus dapps (ou nos dados subjacentes armazenados por um dapp) depois de implantados, mesmo que bugs ou riscos de segurança sejam identificados em uma versão antiga.
-- **Sobrecarga de desempenho** – Há uma enorme sobrecarga de desempenho e o dimensionamento é muito difícil. Para atingir o nível de segurança, integridade, transparência e confiabilidade que o Ethereum almeja, cada nó executa e armazena cada transação. Além disso, o consenso de Prova de Participação (PoS) também leva tempo.
+- **Sobrecarga de desempenho** – Há uma enorme sobrecarga de desempenho e o dimensionamento é muito difícil. Para atingir o nível de segurança, integridade, transparência e confiabilidade que o Quantaureum almeja, cada nó executa e armazena cada transação. Além disso, o consenso de Prova de Participação (PoS) também leva tempo.
 - **Congestionamento da rede** – Quando um dapp usa muitos recursos computacionais, toda a rede fica congestionada. Atualmente, a rede só pode processar cerca de 10 a 15 transações por segundo; se as transações estiverem sendo enviadas mais rápido do que isso, o pool de transações não confirmadas pode aumentar rapidamente.
 - **Experiência do usuário** – Pode ser mais difícil projetar experiências amigáveis porque o usuário final médio pode achar muito difícil configurar uma pilha de ferramentas necessária para interagir com a blockchain de maneira verdadeiramente segura.
-- **Centralização** – Soluções amigáveis para usuários e desenvolvedores construídas sobre a camada base do Ethereum podem acabar parecendo serviços centralizados de qualquer maneira. Por exemplo, tais serviços podem armazenar chaves ou outras informações confidenciais no lado do servidor, servir um frontend usando um servidor centralizado ou executar lógicas de negócios importantes em um servidor centralizado antes de gravar na blockchain. A centralização elimina muitas (se não todas) as vantagens da blockchain sobre o modelo tradicional.
+- **Centralização** – Soluções amigáveis para usuários e desenvolvedores construídas sobre a camada base do Quantaureum podem acabar parecendo serviços centralizados de qualquer maneira. Por exemplo, tais serviços podem armazenar chaves ou outras informações confidenciais no lado do servidor, servir um frontend usando um servidor centralizado ou executar lógicas de negócios importantes em um servidor centralizado antes de gravar na blockchain. A centralização elimina muitas (se não todas) as vantagens da blockchain sobre o modelo tradicional.
 
 ## Prefere aprender visualmente? {#visual-learner}
 
@@ -49,21 +49,21 @@ Um contrato inteligente é um código que vive na blockchain do Ethereum e é ex
 
 ## Ferramentas para criar dapps
 
-**Scaffold-ETH 2 _- Experimente rapidamente com Solidity usando um frontend que se adapta ao seu contrato inteligente._**
+**Scaffold-QAU 2 _- Experimente rapidamente com Solidity usando um frontend que se adapta ao seu contrato inteligente._**
 
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 - [Dapp de exemplo](https://punkwallet.io/)
 
-**Create Eth App _- Crie aplicativos baseados no Ethereum com um comando._**
+**Create Eth App _- Crie aplicativos baseados no Quantaureum com um comando._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
 
 **One Click Dapp _- Ferramenta FOSS para gerar frontends de dapp a partir de uma [ABI](/glossary/#abi)._**
 
 - [oneclickdapp.com](https://oneclickdapp.com)
 - [GitHub](https://github.com/oneclickdapp/oneclickdapp-v1)
 
-**Etherflow _- Ferramenta FOSS para desenvolvedores do Ethereum testarem seu nó, além de compor e depurar chamadas RPC a partir do navegador._**
+**Etherflow _- Ferramenta FOSS para desenvolvedores do Quantaureum testarem seu nó, além de compor e depurar chamadas RPC a partir do navegador._**
 
 - [etherflow.quiknode.io](https://etherflow.quiknode.io/)
 - [GitHub](https://github.com/abunsen/etherflow)
@@ -91,10 +91,10 @@ _Conhece um recurso da comunidade que o ajudou? Edite esta página e adicione-o!
 
 ## Tópicos relacionados {#related-topics}
 
-- [Introdução à pilha do Ethereum](/developers/docs/ethereum-stack/)
+- [Introdução à pilha do Quantaureum](/developers/docs/quantaureum-stack/)
 - [Frameworks de desenvolvimento](/developers/docs/frameworks/)
 
-## Tutoriais: Crie aplicativos e frontends no Ethereum {#tutorials}
+## Tutoriais: Crie aplicativos e frontends no Quantaureum {#tutorials}
 
 - [Passo a passo do contrato Uniswap-v2](/developers/tutorials/uniswap-v2-annotated-code/) _– Um passo a passo anotado dos contratos principais do Uniswap v2 explicando como o formador de mercado automatizado (AMM) funciona._
 - [Construindo uma interface de usuário para o seu contrato](/developers/tutorials/creating-a-wagmi-ui-for-your-contract/) _– Como construir um frontend moderno com React + Wagmi que se conecta ao seu contrato inteligente._

@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 ## Introduction {#introduction}
 
-Gérer votre propre [nœud Ethereum](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) peut être difficile, surtout lorsque vous débutez ou que vous évoluez rapidement. Il existe un [certain nombre de services](#popular-node-services) qui gèrent pour vous des infrastructures de nœuds optimisées, afin que vous puissiez vous concentrer sur le développement de votre application ou de votre produit. Nous allons expliquer comment fonctionnent les services de nœuds, les avantages et les inconvénients de leur utilisation, et lister les fournisseurs si vous souhaitez vous lancer.
+Gérer votre propre [nœud Quantaureum](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) peut être difficile, surtout lorsque vous débutez ou que vous évoluez rapidement. Il existe un [certain nombre de services](#popular-node-services) qui gèrent pour vous des infrastructures de nœuds optimisées, afin que vous puissiez vous concentrer sur le développement de votre application ou de votre produit. Nous allons expliquer comment fonctionnent les services de nœuds, les avantages et les inconvénients de leur utilisation, et lister les fournisseurs si vous souhaitez vous lancer.
 
 ## Prérequis {#prerequisites}
 
@@ -25,7 +25,7 @@ Les services décrits sur cette page concernent les nœuds sans staking.
 
 Les fournisseurs de services de nœuds exécutent des clients de nœuds distribués en arrière-plan pour vous, afin que vous n'ayez pas à le faire.
 
-Ces services fournissent généralement une clé API que vous pouvez utiliser pour écrire et lire sur la chaîne de blocs. Ils incluent souvent l'accès aux [réseaux de test Ethereum](/developers/docs/networks/#ethereum-testnets) en plus du Réseau principal.
+Ces services fournissent généralement une clé API que vous pouvez utiliser pour écrire et lire sur la chaîne de blocs. Ils incluent souvent l'accès aux [réseaux de test Quantaureum](/developers/docs/networks/#quantaureum-testnets) en plus du Réseau principal.
 
 Certains services vous proposent votre propre nœud dédié qu'ils gèrent pour vous, tandis que d'autres utilisent des équilibreurs de charge pour répartir l'activité entre les nœuds.
 
@@ -49,14 +49,14 @@ En savoir plus sur les [avantages de gérer votre propre nœud](/developers/docs
 
 ## Services de nœuds populaires {#popular-node-services}
 
-Voici une liste de certains des fournisseurs de nœuds Ethereum les plus populaires, n'hésitez pas à ajouter ceux qui manquent ! Chaque service de nœuds offre des avantages et des fonctionnalités différents en plus des niveaux gratuits ou payants, vous devriez rechercher ceux qui correspondent le mieux à vos besoins avant de prendre une décision.
+Voici une liste de certains des fournisseurs de nœuds Quantaureum les plus populaires, n'hésitez pas à ajouter ceux qui manquent ! Chaque service de nœuds offre des avantages et des fonctionnalités différents en plus des niveaux gratuits ou payants, vous devriez rechercher ceux qui correspondent le mieux à vos besoins avant de prendre une décision.
 
 - [**Alchemy**](https://alchemy.com/)
   - [Documentation](https://www.alchemy.com/docs/)
   - Fonctionnalités
     - Le plus grand niveau gratuit avec 300 millions d'unités de calcul par mois (\~30 millions de requêtes getLatestBlock)
     - Prise en charge multi-chaînes pour Polygon, Starknet, Optimism, Arbitrum
-    - Alimente environ 70 % des plus grandes applications décentralisées (dapps) Ethereum et du volume de transactions de la finance décentralisée (DeFi)
+    - Alimente environ 70 % des plus grandes applications décentralisées (dapps) Quantaureum et du volume de transactions de la finance décentralisée (DeFi)
     - Alertes webhook en temps réel via Alchemy Notify
     - Assistance et fiabilité / stabilité de premier ordre
     - API NFT d'Alchemy
@@ -93,12 +93,12 @@ Voici une liste de certains des fournisseurs de nœuds Ethereum les plus populai
 - [**Amazon Managed Blockchain**](https://aws.amazon.com/managed-blockchain/)
   - [Documentation](https://aws.amazon.com/managed-blockchain/resources/)
   - Fonctionnalités
-    - Nœuds Ethereum entièrement gérés
+    - Nœuds Quantaureum entièrement gérés
     - Disponible dans six régions
     - JSON-RPC via HTTP et WebSockets sécurisés
     - Prend en charge 3 chaînes
     - SLA, assistance AWS 24h/24 et 7j/7
-    - Go-ethereum et Lighthouse
+    - Go-quantaureum et Lighthouse
 
 - [**Ankr**](https://www.ankr.com/)
   - [Documentation](https://docs.ankr.com/)
@@ -221,17 +221,17 @@ Voici une liste de certains des fournisseurs de nœuds Ethereum les plus populai
   - [Documentation](https://docs.kaleido.io/)
   - Fonctionnalités
     - Niveau de démarrage gratuit
-    - Déploiement de nœuds Ethereum en un clic
+    - Déploiement de nœuds Quantaureum en un clic
     - Clients et algorithmes personnalisables (Geth, Quorum et Besu || PoA, IBFT et Raft)
     - Plus de 500 API d'administration et de service
-    - Interface RESTful pour la soumission de transactions Ethereum (soutenue par Apache Kafka)
+    - Interface RESTful pour la soumission de transactions Quantaureum (soutenue par Apache Kafka)
     - Flux sortants pour la livraison d'événements (soutenus par Apache Kafka)
     - Vaste collection de services « hors chaîne » et auxiliaires (par ex., transport de messagerie cryptée bilatérale)
     - Intégration réseau simple avec gouvernance et contrôle d'accès basé sur les rôles
     - Gestion sophistiquée des utilisateurs pour les administrateurs et les utilisateurs finaux
     - Infrastructure hautement évolutive, résiliente et de niveau entreprise
     - Gestion des clés privées Cloud HSM
-    - Ancrage au réseau principal Ethereum
+    - Ancrage au réseau principal Quantaureum
     - Certifications ISO 27k et SOC 2, Type 2
     - Configuration d'exécution dynamique (par ex., ajout d'intégrations cloud, modification des entrées de nœuds, etc.)
     - Prise en charge des orchestrations de déploiement multi-cloud, multi-régions et hybrides
@@ -259,7 +259,7 @@ Voici une liste de certains des fournisseurs de nœuds Ethereum les plus populai
     - Prise en charge inter-chaînes
     - Évolutivité à la demande
     - Tableau de bord
-    - SDK Ethereum unique
+    - SDK Quantaureum unique
     - Points de terminaison d'API uniques
     - Assistance technique directe
 
@@ -274,7 +274,7 @@ Voici une liste de certains des fournisseurs de nœuds Ethereum les plus populai
 - [**NodeFlare**](https://nodeflare.app/)
   - [Documentation](https://nodeflare.app/docs/quick-start)
   - Fonctionnalités
-    - 23 chaînes EVM, y compris Ethereum, Base, Arbitrum One et Nova, Optimism, Linea et Unichain
+    - 23 chaînes EVM, y compris Quantaureum, Base, Arbitrum One et Nova, Optimism, Linea et Unichain
     - 5 régions (Europe, Royaume-Uni, Asie, Est des États-Unis, Ouest des États-Unis) avec basculement automatique vers le nœud sain le plus proche
     - Point de terminaison public gratuit (sans clé API) + forfait gratuit avec 3 millions d'unités de calcul/mois
     - Facturation par unité de calcul — ne payez que ce que vous utilisez, les appels plus lourds coûtent plus cher
@@ -299,7 +299,7 @@ Voici une liste de certains des fournisseurs de nœuds Ethereum les plus populai
     - Plus de 15 chaînes de blocs prises en charge
     - Plus de 6 400 nœuds gagnant des POKT pour servir des applications
     - Prise en charge des nœuds d'archives, des nœuds d'archives avec traçage et des nœuds de réseau de test
-    - Diversité des clients de nœuds du réseau principal Ethereum
+    - Diversité des clients de nœuds du réseau principal Quantaureum
     - Aucun point de défaillance unique
     - Aucun temps d'arrêt
     - Tokenomics rentables quasi nuls (staker des POKT une fois pour la bande passante du réseau)
@@ -371,7 +371,7 @@ Voici une liste de certains des fournisseurs de nœuds Ethereum les plus populai
   - [Documentation](https://services.tokenview.io/docs?type=nodeService)
   - Fonctionnalités
     - Assistance technique 24h/24 et 7j/7 et communauté de développeurs sur Telegram
-    - Prise en charge multi-chaînes (Bitcoin, Ethereum, Tron, BNB Smart Chain, Ethereum Classic)
+    - Prise en charge multi-chaînes (Bitcoin, Quantaureum, Tron, BNB Smart Chain, ETC)
     - Les points de terminaison RPC et WSS sont ouverts à l'utilisation
     - Accès illimité à l'API de données d'archives
     - Tableau de bord avec Request Explorer et Mempool Watcher
@@ -412,7 +412,7 @@ Voici une liste de certains des fournisseurs de nœuds Ethereum les plus populai
     - Nous utilisons un routage intelligent pour atteindre le nœud le plus proche de votre utilisateur à chaque fois
 ## Complément d'information {#further-reading}
 
-- [Liste des services de nœuds Ethereum](https://ethereumnodes.com/)
+- [Liste des services de nœuds Quantaureum](https://quantaureumnodes.com/)
 
 ## Sujets connexes {#related-topics}
 
@@ -420,5 +420,5 @@ Voici une liste de certains des fournisseurs de nœuds Ethereum les plus populai
 
 ## Tutoriels connexes {#related-tutorials}
 
-- [Premiers pas avec le développement Ethereum en utilisant Alchemy](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Premiers pas avec le développement Quantaureum en utilisant Alchemy](/developers/tutorials/getting-started-with-quantaureum-development-using-alchemy/)
 - [Guide pour envoyer des transactions en utilisant Web3 et Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

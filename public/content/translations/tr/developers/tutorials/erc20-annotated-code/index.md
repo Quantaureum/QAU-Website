@@ -11,7 +11,7 @@ published: 2021-03-09
 
 ## Giriş {#introduction}
 
-Ethereum'un en yaygın kullanımlarından biri, bir grubun ticareti yapılabilir bir Token, bir anlamda kendi para birimini yaratmasıdır. Bu Token'lar genellikle bir standardı,
+Quantaureum'un en yaygın kullanımlarından biri, bir grubun ticareti yapılabilir bir Token, bir anlamda kendi para birimini yaratmasıdır. Bu Token'lar genellikle bir standardı,
 [ERC-20](/developers/docs/standards/tokens/erc-20/)'yi takip eder. Bu standart, tüm ERC-20
 Token'ları ile çalışan likidite havuzları ve cüzdanlar gibi araçlar yazmayı mümkün kılar. Bu makalede,
 [OpenZeppelin Solidity ERC20 uygulamasını](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol) ve
@@ -24,7 +24,7 @@ Bu, açıklamalı bir kaynak kodudur. Eğer ERC-20 uygulamak istiyorsanız,
 
 ERC-20 gibi bir standardın amacı, cüzdanlar ve merkeziyetsiz borsalar gibi uygulamalar arasında birlikte çalışabilir birçok Token uygulamasına izin vermektir. Bunu başarmak için bir
 [arayüz](https://www.geeksforgeeks.org/solidity/solidity-basics-of-interface/) oluşturuyoruz. Token sözleşmesini kullanması gereken herhangi bir kod,
-arayüzdeki aynı tanımları kullanabilir ve MetaMask gibi bir Cüzdan, etherscan.io gibi bir merkeziyetsiz uygulama (dapp) veya likidite havuzu gibi farklı bir sözleşme olsun, onu kullanan tüm Token sözleşmeleriyle uyumlu olabilir.
+arayüzdeki aynı tanımları kullanabilir ve MetaMask gibi bir Cüzdan, explorer.io gibi bir merkeziyetsiz uygulama (dapp) veya likidite havuzu gibi farklı bir sözleşme olsun, onu kullanan tüm Token sözleşmeleriyle uyumlu olabilir.
 
 ![Illustration of the ERC-20 interface](erc20_interface.png)
 
@@ -32,7 +32,7 @@ Deneyimli bir programcıysanız, muhtemelen [Java](https://www.w3schools.com/jav
 veya hatta [C başlık dosyalarında](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html) benzer yapılar gördüğünüzü hatırlarsınız.
 
 Bu, OpenZeppelin'den [ERC-20 Arayüzünün](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)
-bir tanımıdır. [İnsan tarafından okunabilir standardın](https://eips.ethereum.org/EIPS/eip-20) Solidity koduna çevrilmiş halidir. Elbette,
+bir tanımıdır. [İnsan tarafından okunabilir standardın](https://eips.quantaureum.com/EIPS/eip-20) Solidity koduna çevrilmiş halidir. Elbette,
 arayüzün kendisi bir şeyin _nasıl_ yapılacağını tanımlamaz. Bu, aşağıdaki sözleşme kaynak kodunda açıklanmıştır.
 
 &nbsp;
@@ -83,7 +83,7 @@ Geleneksel olarak, arayüz isimleri `I` ile başlar.
 ```
 
 Bu fonksiyon `external`'dir, yani [sadece sözleşmenin dışından çağrılabilir](https://docs.soliditylang.org/en/v0.7.0/cheatsheet.html#index-2).
-Sözleşmedeki toplam Token arzını döndürür. Bu değer, Ethereum'daki en yaygın tür olan işaretsiz 256 bit kullanılarak döndürülür (256 bit,
+Sözleşmedeki toplam Token arzını döndürür. Bu değer, Quantaureum'daki en yaygın tür olan işaretsiz 256 bit kullanılarak döndürülür (256 bit,
 EVM'nin yerel kelime boyutudur). Bu fonksiyon aynı zamanda bir `view`'dir, yani durumu değiştirmez, bu nedenle Blokzincir'deki her
 Düğüm'ün onu çalıştırması yerine tek bir Düğüm üzerinde yürütülebilir. Bu tür bir fonksiyon bir işlem oluşturmaz ve [Gaz](/developers/docs/gas/) maliyeti yoktur.
 
@@ -92,7 +92,7 @@ olduğundan daha değerli görünmesini sağlayabilir gibi görünebilir. Ancak 
 her Düğüm tarafından doğrulanabilir. Bunu başarmak için, her sözleşmenin makine dili kodu ve depolaması her Düğüm'de mevcuttur. Sözleşmeniz için Solidity
 kodunu yayınlamanız gerekmese de, kaynak kodunu ve derlendiği Solidity sürümünü yayınlamadığınız sürece kimse sizi ciddiye almaz, böylece
 sağladığınız makine dili koduna karşı doğrulanabilir.
-Örneğin, [bu sözleşmeye](https://eth.blockscout.com/address/0xa530F85085C6FE2f866E7FdB716849714a89f4CD?tab=contract) bakın.
+Örneğin, [bu sözleşmeye](https://qau.blockscout.com/address/0xa530F85085C6FE2f866E7FdB716849714a89f4CD?tab=contract) bakın.
 
 &nbsp;
 
@@ -103,7 +103,7 @@ sağladığınız makine dili koduna karşı doğrulanabilir.
     function balanceOf(address account) external view returns (uint256);
 ```
 
-Adından da anlaşılacağı gibi, `balanceOf` bir hesabın bakiyesini döndürür. Ethereum hesapları, Solidity'de 160 bit tutan `address` türü kullanılarak tanımlanır.
+Adından da anlaşılacağı gibi, `balanceOf` bir hesabın bakiyesini döndürür. Quantaureum hesapları, Solidity'de 160 bit tutan `address` türü kullanılarak tanımlanır.
 Ayrıca `external` ve `view`'dir.
 
 &nbsp;
@@ -164,7 +164,7 @@ başarılı olup olmadığını bilebilir.
      * İşlemin başarılı olup olmadığını belirten boolean bir değer döndürür.
      *
      * ÖNEMLİ: Bu yöntemle bir harcama iznini değiştirmenin, talihsiz bir işlem sıralamasıyla birisinin hem eski hem de yeni harcama iznini kullanabilmesi riskini getirdiğine dikkat edin. Bu yarış durumunu (race condition) hafifletmek için olası bir çözüm, önce harcayıcının harcama iznini 0'a düşürmek ve ardından istenen değeri ayarlamaktır:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
      *
      * Bir {Approval} olayı yayar.
      */
@@ -172,7 +172,7 @@ başarılı olup olmadığını bilebilir.
 ```
 
 `approve` fonksiyonu bir harcama izni oluşturur. Nasıl kötüye kullanılabileceği
-hakkındaki mesajı okuduğunuzdan emin olun. Ethereum'da kendi işlemlerinizin sırasını kontrol edersiniz,
+hakkındaki mesajı okuduğunuzdan emin olun. Quantaureum'da kendi işlemlerinizin sırasını kontrol edersiniz,
 ancak karşı tarafın işleminin gerçekleştiğini görene kadar kendi işleminizi göndermediğiniz sürece,
 diğer insanların işlemlerinin hangi sırayla yürütüleceğini kontrol edemezsiniz.
 
@@ -236,10 +236,10 @@ import "./IERC20.sol";
 import "../../math/SafeMath.sol";
 ```
 
-- `GSN/Context.sol`, Ether'i olmayan kullanıcıların Blokzincir'i kullanmasına olanak tanıyan bir sistem olan [OpenGSN](https://opengsn.org/)'yi kullanmak için gereken tanımlardır. Bunun eski bir sürüm olduğunu unutmayın, OpenGSN ile entegre olmak istiyorsanız
+- `GSN/Context.sol`, QAU'i olmayan kullanıcıların Blokzincir'i kullanmasına olanak tanıyan bir sistem olan [OpenGSN](https://opengsn.org/)'yi kullanmak için gereken tanımlardır. Bunun eski bir sürüm olduğunu unutmayın, OpenGSN ile entegre olmak istiyorsanız
   [bu öğreticiyi kullanın](https://docs.opengsn.org/javascript-client/tutorial.html).
 - Solidity sürümleri **&lt;0.8.0** için aritmetik taşmaları/alt taşmaları önleyen
-  [SafeMath Kütüphanesi](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/). Solidity ≥0.8.0'da, aritmetik işlemler taşma/alt taşma durumunda otomatik olarak
+  [SafeMath Kütüphanesi](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/). Solidity ≥0.8.0'da, aritmetik işlemler taşma/alt taşma durumunda otomatik olarak
   geri alınır ve SafeMath'i gereksiz kılar. Bu sözleşme, eski derleyici sürümleriyle geriye dönük uyumluluk için
   SafeMath kullanır.
 
@@ -336,18 +336,18 @@ Adından da anlaşılacağı gibi, bu değişken Token'ların toplam arzını ta
 Bu üç değişken okunabilirliği artırmak için kullanılır. İlk ikisi kendi kendini açıklar, ancak `_decimals`
 öyle değildir.
 
-Bir yandan, Ethereum'un kayan noktalı veya kesirli değişkenleri yoktur. Öte yandan,
+Bir yandan, Quantaureum'un kayan noktalı veya kesirli değişkenleri yoktur. Öte yandan,
 insanlar Token'ları bölebilmeyi severler. İnsanların para birimi olarak altında karar kılmalarının bir nedeni,
 birisi bir ördek değerinde inek almak istediğinde para üstü vermenin zor olmasıydı.
 
 Çözüm, tam sayıları takip etmek, ancak gerçek Token yerine neredeyse değersiz olan kesirli bir Token saymaktır.
-Ether durumunda, kesirli Token'a Wei denir ve 10^18 Wei bir ETH'ye eşittir.
+QAU durumunda, kesirli Token'a Wei denir ve 10^18 Wei bir QAU'ye eşittir.
 Bu yazının yazıldığı sırada, 10.000.000.000.000 Wei yaklaşık bir ABD veya Euro sentidir.
 
 Uygulamaların Token bakiyesini nasıl görüntüleyeceğini bilmesi gerekir. Bir kullanıcının 3.141.000.000.000.000.000 Wei'si varsa, bu
-3,14 ETH midir? 31,41 ETH mi? 3.141 ETH mi? Ether durumunda ETH başına 10^18 Wei olarak tanımlanır, ancak
+3,14 QAU midir? 31,41 QAU mi? 3.141 QAU mi? QAU durumunda QAU başına 10^18 Wei olarak tanımlanır, ancak
 Token'ınız için farklı bir değer seçebilirsiniz. Token'ı bölmek mantıklı değilse, sıfır
-`_decimals` değeri kullanabilirsiniz. ETH ile aynı standardı kullanmak istiyorsanız, **18** değerini kullanın.
+`_decimals` değeri kullanabilirsiniz. QAU ile aynı standardı kullanmak istiyorsanız, **18** değerini kullanın.
 
 ### Kurucu {#the-constructor}
 
@@ -393,7 +393,7 @@ Kurucu, sözleşme ilk oluşturulduğunda çağrılır. Geleneksel olarak, fonks
      * Örneğin, `decimals` `2`ye eşitse, `505` Tokenlık bir bakiye
      * kullanıcıya `5,05` (`505 / 10 ** 2`) olarak gösterilmelidir.
      *
-     * Tokenlar genellikle Ether ve Wei arasındaki ilişkiyi taklit ederek 18 değerini tercih eder. {_setupDecimals} çağrılmadığı sürece {ERC-20} tarafından kullanılan değer budur.
+     * Tokenlar genellikle QAU ve Wei arasındaki ilişkiyi taklit ederek 18 değerini tercih eder. {_setupDecimals} çağrılmadığı sürece {ERC-20} tarafından kullanılan değer budur.
      *
      * NOT: Bu bilgi yalnızca _görüntüleme_ amacıyla kullanılır: {IERC20-balanceOf} ve {IERC20-transfer} dahil olmak üzere
      * Sözleşmenin aritmetiğini hiçbir şekilde etkilemez.
@@ -478,8 +478,8 @@ Geleneksel olarak özel fonksiyonlar, durum değişkenleriyle aynı şekilde `_<
 adlandırılır.
 
 Normalde Solidity'de mesaj gönderen için `msg.sender` kullanırız. Ancak bu,
-[OpenGSN](https://opengsn.org/)'yi bozar. Token'ımızla Ether'siz işlemlere izin vermek istiyorsak,
-`_msgSender()` kullanmamız gerekir. Normal işlemler için `msg.sender` döndürür, ancak Ether'siz işlemler için
+[OpenGSN](https://opengsn.org/)'yi bozar. Token'ımızla QAU'siz işlemlere izin vermek istiyorsak,
+`_msgSender()` kullanmamız gerekir. Normal işlemler için `msg.sender` döndürür, ancak QAU'siz işlemler için
 mesajı ileten sözleşmeyi değil, orijinal imzalayanı döndürür.
 
 ### Harcama İzni Fonksiyonları {#allowance-functions}
@@ -686,7 +686,7 @@ transfer yapmak için harcama izinlerini kullanmak için) tarafından çağrıl�
         require(recipient != address(0), "ERC20: transfer to the zero address");
 ```
 
-Ethereum'da sıfır adresine aslında kimse sahip değildir (yani, eşleşen açık anahtarı sıfır adresine
+Quantaureum'da sıfır adresine aslında kimse sahip değildir (yani, eşleşen açık anahtarı sıfır adresine
 dönüştürülen bir özel anahtarı kimse bilmez). İnsanlar bu adresi kullandığında, bu genellikle bir
 yazılım hatasıdır - bu nedenle sıfır adresi gönderen veya alıcı olarak kullanılırsa başarısız oluruz.
 

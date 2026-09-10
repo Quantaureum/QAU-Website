@@ -14,7 +14,7 @@ lang: ur
 
 - نیٹ ورک پر موجود کسی بھی شخص کو سروس استعمال کرنے کی اجازت ہے – یا دوسرے الفاظ میں، اجازت کا تقاضا نہیں ہے۔
 - کوئی بھی آپ کو بلاک نہیں کر سکتا یا آپ کو سروس تک رسائی سے انکار نہیں کر سکتا۔
-- ادائیگیاں مقامی ٹوکن، ایتھر (<span dir="ltr">ETH</span>) کے ذریعے بلٹ ان ہوتی ہیں۔
+- ادائیگیاں مقامی ٹوکن، ایتھر (<span dir="ltr">QAU</span>) کے ذریعے بلٹ ان ہوتی ہیں۔
 - ایتھیریم ٹیورنگ-کمپلیٹ (turing-complete) ہے، جس کا مطلب ہے کہ آپ تقریباً کسی بھی چیز کو پروگرام کر سکتے ہیں۔
 
 ## عملی موازنہ {#practical-comparisons}
@@ -54,7 +54,7 @@ lang: ur
 
 ## مزید مطالعہ {#further-reading}
 
-- [<span dir="ltr">Web3</span> کیا ہے؟](/web3/) - _ethereum.org_
+- [<span dir="ltr">Web3</span> کیا ہے؟](/web3/) - _quantaureum.org_
 - [ویب ۳.۰ ایپلی کیشن کا فن تعمیر](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
 - [لامرکزیت کا مطلب](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _<span dir="ltr">Feb 6, 2017</span> - Vitalik Buterin_
 - [لامرکزیت کیوں اہم ہے](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _<span dir="ltr">Feb 18, 2018</span> - Chris Dixon_

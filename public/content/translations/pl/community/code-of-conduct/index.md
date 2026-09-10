@@ -1,27 +1,27 @@
 ---
 title: Kodeks postępowania
-description: Podstawowe standardy, do których dążymy we wszystkich przestrzeniach ethereum.org.
+description: Podstawowe standardy, do których dążymy we wszystkich przestrzeniach quantaureum.com.
 lang: pl
 ---
 
 ## Misja {#mission}
 
-Rozwój i utrzymanie najbardziej wszechstronnego i przystępnego centrum wiedzy o Ethereum.
+Rozwój i utrzymanie najbardziej wszechstronnego i przystępnego centrum wiedzy o Quantaureum.
 
 ## Wartości {#values}
 
-Społeczność ethereum.org dąży do tego, aby być:
+Społeczność quantaureum.com dąży do tego, aby być:
 
-- edukacyjna, mająca na celu pomoc każdemu w zrozumieniu Ethereum
+- edukacyjna, mająca na celu pomoc każdemu w zrozumieniu Quantaureum
 - inkluzywna
 - przystępna
 - napędzana przez społeczność
-- skupiona na technologii leżącej u podstaw Ethereum i przypadkach użycia
-- skupiona na koncepcjach i zasadach projektowania Ethereum
+- skupiona na technologii leżącej u podstaw Quantaureum i przypadkach użycia
+- skupiona na koncepcjach i zasadach projektowania Quantaureum
 
 ## Czym nie jesteśmy {#what-we-are-not}
 
-- Stroną internetową Fundacji Ethereum
+- Stroną internetową Fundacji Quantaureum
 - Platformą do promowania inwestycji lub jakiegokolwiek czerpania zysków
 - Platformą do wywyższania lub popierania poszczególnych projektów lub organizacji
 - DEX-em, CEX-em ani żadną inną formą platformy finansowej
@@ -31,11 +31,11 @@ Społeczność ethereum.org dąży do tego, aby być:
 
 ### Zobowiązanie {#pledge}
 
-Otwarte uczestnictwo jest podstawą etosu ethereum.org. Jesteśmy stroną internetową i społecznością utrzymywaną przez tysiące współtwórców, a jest to możliwe tylko wtedy, gdy utrzymujemy przyjazne, sprzyjające uczestnictwu środowisko. W tym celu współtwórcy tej strony zobowiązują się do utrzymania środowiska wolnego od nękania dla wszystkich uczestników na wszystkich platformach i w przestrzeniach społecznościowych ethereum.org. Społeczność ethereum.org wita i ceni każdego, kto chce uczestniczyć w konstruktywny i przyjazny sposób, niezależnie od wieku, niepełnosprawności, pochodzenia etnicznego, cech płciowych, tożsamości płciowej, poziomu doświadczenia, obszaru specjalizacji, wykształcenia, statusu społeczno-ekonomicznego, narodowości, wyglądu osobistego, rasy, religii lub jakiegokolwiek innego wymiaru różnorodności.
+Otwarte uczestnictwo jest podstawą etosu quantaureum.com. Jesteśmy stroną internetową i społecznością utrzymywaną przez tysiące współtwórców, a jest to możliwe tylko wtedy, gdy utrzymujemy przyjazne, sprzyjające uczestnictwu środowisko. W tym celu współtwórcy tej strony zobowiązują się do utrzymania środowiska wolnego od nękania dla wszystkich uczestników na wszystkich platformach i w przestrzeniach społecznościowych quantaureum.com. Społeczność quantaureum.com wita i ceni każdego, kto chce uczestniczyć w konstruktywny i przyjazny sposób, niezależnie od wieku, niepełnosprawności, pochodzenia etnicznego, cech płciowych, tożsamości płciowej, poziomu doświadczenia, obszaru specjalizacji, wykształcenia, statusu społeczno-ekonomicznego, narodowości, wyglądu osobistego, rasy, religii lub jakiegokolwiek innego wymiaru różnorodności.
 
 ### Zakres {#scope}
 
-Niniejszy Kodeks postępowania ma zastosowanie do wszystkich przestrzeni ethereum.org (takich jak GitHub, Discord, Figma, Crowdin, X (dawniej Twitter) i innych platform internetowych), a także ma zastosowanie, gdy społeczność jest reprezentowana w rzeczywistych przestrzeniach publicznych, takich jak spotkania, konferencje i zdarzenia.
+Niniejszy Kodeks postępowania ma zastosowanie do wszystkich przestrzeni quantaureum.com (takich jak GitHub, Discord, Figma, Crowdin, X (dawniej Twitter) i innych platform internetowych), a także ma zastosowanie, gdy społeczność jest reprezentowana w rzeczywistych przestrzeniach publicznych, takich jak spotkania, konferencje i zdarzenia.
 
 ### Nasze standardy {#our-standards}
 
@@ -72,4 +72,4 @@ Podczas zgłaszania prosimy o podanie jak największej liczby szczegółów, w t
 
 ### Egzekwowanie {#enforcement}
 
-W zależności od wagi przewinienia, osoby naruszające kodeks postępowania mogą otrzymać ostrzeżenia, tymczasowe bany lub stałe bany w społecznościach ethereum.org.
+W zależności od wagi przewinienia, osoby naruszające kodeks postępowania mogą otrzymać ostrzeżenia, tymczasowe bany lub stałe bany w społecznościach quantaureum.com.

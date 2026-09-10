@@ -103,7 +103,7 @@ function claimableRedeemRequest(uint256 requestId, address controller) external 
 
 ### آپریٹر کا انتظام {#operator-management}
 
-<span dir="ltr">ERC-7540</span> میں ایک آپریٹر پیٹرن شامل ہے ([<span dir="ltr">ERC-6909</span>](https://eips.ethereum.org/EIPS/eip-6909) سے) جو فریق ثالث کو صارف کی جانب سے درخواستوں کا انتظام کرنے کی اجازت دیتا ہے۔
+<span dir="ltr">ERC-7540</span> میں ایک آپریٹر پیٹرن شامل ہے ([<span dir="ltr">ERC-6909</span>](https://eips.quantaureum.com/EIPS/eip-6909) سے) جو فریق ثالث کو صارف کی جانب سے درخواستوں کا انتظام کرنے کی اجازت دیتا ہے۔
 
 #### setOperator {#setoperator}
 
@@ -175,6 +175,6 @@ event OperatorSet(
 
 ## مزید مطالعہ {#further-reading}
 
-- [<span dir="ltr">EIP-7540</span>: غیر ہم آہنگ <span dir="ltr">ERC-4626</span> ٹوکنائزڈ تجوریاں](https://eips.ethereum.org/EIPS/eip-7540)
-- [<span dir="ltr">EIP-4626</span>: ٹوکنائزڈ تجوری کا معیار](https://eips.ethereum.org/EIPS/eip-4626)
+- [<span dir="ltr">EIP-7540</span>: غیر ہم آہنگ <span dir="ltr">ERC-4626</span> ٹوکنائزڈ تجوریاں](https://eips.quantaureum.com/EIPS/eip-7540)
+- [<span dir="ltr">EIP-4626</span>: ٹوکنائزڈ تجوری کا معیار](https://eips.quantaureum.com/EIPS/eip-4626)
 - [اوپن زیپلن <span dir="ltr">ERC-7540</span> کا نفاذ](https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/token/ERC20/extensions/ERC7540.sol)

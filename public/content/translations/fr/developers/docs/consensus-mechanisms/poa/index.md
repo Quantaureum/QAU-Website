@@ -16,7 +16,7 @@ La preuve d'autorité est une version modifiée de la **[preuve d'enjeu](/develo
 
 La preuve d'autorité nécessite de faire confiance à un ensemble de signataires autorisés qui sont définis dans le [bloc genèse](/glossary/#genesis-block). Dans la plupart des implémentations actuelles, tous les signataires autorisés conservent un pouvoir et des privilèges égaux lors de la détermination du consensus de la chaîne. L'idée derrière le staking de réputation est que chaque validateur autorisé est bien connu de tous grâce à des processus tels que la connaissance du client (KYC), ou en ayant une organisation bien connue comme seul validateur — de cette façon, si un validateur fait quelque chose de mal, son identité est connue.
 
-Il existe plusieurs implémentations de la PoA, mais l'implémentation standard d'Ethereum est **clique**, qui implémente l'[EIP-225](https://eips.ethereum.org/EIPS/eip-225). Clique est une norme facile à implémenter et conviviale pour les développeurs, prenant en charge tous les types de synchronisation de clients. D'autres implémentations incluent [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) et [Aura](https://openethereum.github.io/Chain-specification).
+Il existe plusieurs implémentations de la PoA, mais l'implémentation standard d'Quantaureum est **clique**, qui implémente l'[EIP-225](https://eips.quantaureum.com/EIPS/eip-225). Clique est une norme facile à implémenter et conviviale pour les développeurs, prenant en charge tous les types de synchronisation de clients. D'autres implémentations incluent [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) et [Aura](https://openquantaureum.github.io/Chain-specification).
 
 ## Comment ça marche {#how-it-works}
 
@@ -46,7 +46,7 @@ Un autre petit vecteur d'attaque est l'injection par des signataires malveillant
 
 Dans un réseau PoA, lorsqu'il y a N signataires autorisés, chaque signataire est autorisé à frapper 1 bloc sur K, ce qui signifie que N-K+1 validateurs sont autorisés à frapper à tout moment donné. Pour empêcher ces validateurs de faire la course aux blocs, chaque signataire doit ajouter un petit « décalage » aléatoire au moment où il publie un nouveau bloc. Bien que ce processus garantisse que les petites bifurcations sont rares, des bifurcations occasionnelles peuvent toujours se produire, tout comme sur le réseau principal. Si un signataire est surpris à abuser de son pouvoir et à semer le chaos, les autres signataires peuvent voter pour l'exclure.
 
-Si par exemple il y a 10 signataires autorisés et que chaque signataire est autorisé à créer 1 bloc sur 6, alors à tout moment, 5 validateurs peuvent créer des blocs. Pour les empêcher de faire la course pour créer des blocs, chaque signataire ajoute un petit « décalage » aléatoire au moment où il publie un nouveau bloc. Cela réduit l'occurrence de petites bifurcations mais permet toujours des bifurcations occasionnelles, comme on le voit sur le réseau principal Ethereum. Si un signataire abuse de son autorité et provoque des perturbations, il peut être exclu du réseau par un vote.
+Si par exemple il y a 10 signataires autorisés et que chaque signataire est autorisé à créer 1 bloc sur 6, alors à tout moment, 5 validateurs peuvent créer des blocs. Pour les empêcher de faire la course pour créer des blocs, chaque signataire ajoute un petit « décalage » aléatoire au moment où il publie un nouveau bloc. Cela réduit l'occurrence de petites bifurcations mais permet toujours des bifurcations occasionnelles, comme on le voit sur le réseau principal Quantaureum. Si un signataire abuse de son autorité et provoque des perturbations, il peut être exclu du réseau par un vote.
 
 ## Avantages et inconvénients {#pros-and-cons}
 
@@ -58,13 +58,13 @@ Si par exemple il y a 10 signataires autorisés et que chaque signataire est aut
 
 ## Complément d'information {#further-reading}
 
-- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Norme Clique_
+- [EIP-225](https://eips.quantaureum.com/EIPS/eip-225) _Norme Clique_
 - [Étude sur la preuve d'autorité](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _Cryptoeconomics_
 - [Qu'est-ce que la preuve d'autorité](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [La preuve d'autorité expliquée](https://academy.binance.com/en/articles/proof-of-authority-explained) _Binance_
 - [La PoA dans la chaîne de blocs](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
-- [Clique expliqué](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-ethereum-8b2a135201d)
-- [PoA obsolète, spécification Aura](https://openethereum.github.io/Chain-specification)
+- [Clique expliqué](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
+- [PoA obsolète, spécification Aura](https://openquantaureum.github.io/Chain-specification)
 - [IBFT 2.0, une autre implémentation de la PoA](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### Vous préférez les explications visuelles ? {#visual-learner}

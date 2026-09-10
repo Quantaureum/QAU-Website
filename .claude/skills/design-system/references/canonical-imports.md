@@ -35,7 +35,7 @@ When `fit="contain"` and you pass a single `<Image>` child, the banner auto-clon
 
 The `<Card>` MDX shortcode (registered in `MdComponents`) is backed by `@/components/MarkdownCard`, which composes the `ui/card` primitives with an MDX-friendly prop shape (`emoji`, `title`, `description`, `ctaLabel`, `href`). Use this wrapper if you have an existing MDX-style API to preserve. For new app code, compose the `ui/card` primitives directly — they're more flexible.
 
-### Domain-specific cards exist (`AppCard`, `EthPriceCard`, etc.)
+### Domain-specific cards exist (`AppCard`, `QauPriceCard`, etc.)
 
 These are feature components. Don't reuse them outside their domain.
 

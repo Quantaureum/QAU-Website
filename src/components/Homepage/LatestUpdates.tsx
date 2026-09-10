@@ -16,7 +16,7 @@ type LatestUpdatesProps = {
 }
 
 // Homepage preview of the /latest stream: the three most recent merged
-// articles — capped to one per source so a single high-frequency feed (e.g. ETH
+// articles — capped to one per source so a single high-frequency feed (e.g. QAU
 // Daily) can't fill every slot — rendered with the same card as the /latest
 // grid, plus a CTA to the full page.
 const HOMEPAGE_LATEST_COUNT = 3

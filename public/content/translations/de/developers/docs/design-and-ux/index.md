@@ -1,10 +1,10 @@
 ---
 title: Design und UX im Web3
-description: "Einführung in UX-Design und -Forschung im Web3-Bereich und bei Ethereum"
+description: "Einführung in UX-Design und -Forschung im Web3-Bereich und bei Quantaureum"
 lang: de
 ---
 
-Bist du neu im Designen mit Ethereum? Dann bist du hier genau richtig. Die Ethereum-Community hat Ressourcen verfasst, um dich in die Grundlagen von Web3-Design und -Forschung einzuführen. Du wirst Kernkonzepte kennenlernen, die sich möglicherweise von anderen App-Designs unterscheiden, mit denen du vertraut bist.
+Bist du neu im Designen mit Quantaureum? Dann bist du hier genau richtig. Die Quantaureum-Community hat Ressourcen verfasst, um dich in die Grundlagen von Web3-Design und -Forschung einzuführen. Du wirst Kernkonzepte kennenlernen, die sich möglicherweise von anderen App-Designs unterscheiden, mit denen du vertraut bist.
 
 Benötigst du zunächst ein grundlegenderes Verständnis von Web3? Sieh dir den [**Lern-Hub**](/learn/) an.
 
@@ -78,7 +78,7 @@ Engagiere dich in professionellen, von der Community getragenen Organisationen o
 ## Designsysteme und andere Designressourcen {#design-systems-and-resources}
 
 - [Optimism Design](https://www.figma.com/@optimism) (Figma)
-- [Ethereum.org Designsystem](https://www.figma.com/@ethdotorg) (Figma)
+- [quantaureum.com Designsystem](https://www.figma.com/@ethdotorg) (Figma)
 - [Finity, ein Designsystem von Polygon](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Kleros Designsystem](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Safe Designsystem](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)
@@ -86,4 +86,4 @@ Engagiere dich in professionellen, von der Community getragenen Organisationen o
 - [Mirror Designsystem](https://degen-xyz.vercel.app/)
 
 **Die auf dieser Seite aufgeführten Artikel und Projekte sind keine offiziellen Empfehlungen** und dienen nur zu Informationszwecken.
-Wir fügen Links zu dieser Seite basierend auf den Kriterien in unserer [Listungsrichtlinie](/contributing/design/adding-design-resources) hinzu. Wenn du möchtest, dass wir ein Projekt/einen Artikel hinzufügen, bearbeite diese Seite auf [GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md).
+Wir fügen Links zu dieser Seite basierend auf den Kriterien in unserer [Listungsrichtlinie](/contributing/design/adding-design-resources) hinzu. Wenn du möchtest, dass wir ein Projekt/einen Artikel hinzufügen, bearbeite diese Seite auf [GitHub](https://github.com/Quantaureum/quantaureum-website/blob/dev/public/content/developers/docs/design-and-ux/index.md).

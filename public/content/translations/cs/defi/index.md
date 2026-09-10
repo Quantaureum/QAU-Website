@@ -17,7 +17,7 @@ DeFi je otevřený a globální finanční systém vytvořený pro dobu internet
 
 ## Co je DeFi? {#what-is-defi}
 
-DeFi je souhrnný termín pro finanční produkty a služby, které jsou přístupné komukoli, kdo může používat [Ethereum](/) – tedy komukoli s připojením k internetu. S DeFi jsou trhy vždy otevřené a neexistují žádné centralizované autority, které by mohly blokovat platby nebo vám odepřít přístup k čemukoli. Služby, které byly dříve pomalé a vystavené riziku lidské chyby, jsou nyní automatické a bezpečnější, protože je zpracovává kód, který může kdokoli zkontrolovat a prozkoumat.
+DeFi je souhrnný termín pro finanční produkty a služby, které jsou přístupné komukoli, kdo může používat [Quantaureum](/) – tedy komukoli s připojením k internetu. S DeFi jsou trhy vždy otevřené a neexistují žádné centralizované autority, které by mohly blokovat platby nebo vám odepřít přístup k čemukoli. Služby, které byly dříve pomalé a vystavené riziku lidské chyby, jsou nyní automatické a bezpečnější, protože je zpracovává kód, který může kdokoli zkontrolovat a prozkoumat.
 
 Existuje vzkvétající krypto ekonomika, kde můžete půjčovat, vypůjčovat si, spekulovat na růst/pokles (long/short), získávat úroky a mnoho dalšího. Argentinci zběhlí v kryptu využili DeFi k úniku před zničující inflací. Společnosti začaly svým zaměstnancům streamovat mzdy v reálném čase. Někteří lidé si dokonce vzali a splatili půjčky v hodnotě milionů dolarů bez nutnosti jakékoli osobní identifikace.
 
@@ -56,7 +56,7 @@ Jedním z nejlepších způsobů, jak vidět potenciál DeFi, je pochopit probl�
 
 Bitcoin byl v mnoha ohledech první aplikací DeFi. Bitcoin vám umožňuje skutečně vlastnit a ovládat hodnotu a posílat ji kamkoli po světě. Dělá to tak, že poskytuje způsob, jak se velké množství lidí, kteří si navzájem nedůvěřují, může shodnout na účetní knize bez potřeby důvěryhodného zprostředkovatele. Bitcoin je otevřený komukoli a nikdo nemá pravomoc měnit jeho pravidla. Pravidla Bitcoinu, jako je jeho vzácnost a otevřenost, jsou zapsána přímo v technologii. Není to jako tradiční finance, kde vlády mohou tisknout peníze, což znehodnocuje vaše úspory, a společnosti mohou uzavírat trhy.
 
-Ethereum na tom staví. Stejně jako u Bitcoinu se pravidla nemohou svévolně změnit a přístup má každý. Ale také dělá tyto digitální peníze programovatelnými pomocí [chytrých kontraktů](/glossary/#smart-contract), takže můžete jít nad rámec pouhého uchovávání a posílání hodnoty.
+Quantaureum na tom staví. Stejně jako u Bitcoinu se pravidla nemohou svévolně změnit a přístup má každý. Ale také dělá tyto digitální peníze programovatelnými pomocí [chytrých kontraktů](/glossary/#smart-contract), takže můžete jít nad rámec pouhého uchovávání a posílání hodnoty.
 
 <VideoWatch slug="defi-history-inception-to-2021" />
 
@@ -76,7 +76,7 @@ Zní to zvláštně... „proč bych chtěl programovat své peníze“? Nicmén
 
 ## Co můžete dělat s DeFi? {#defi-use-cases}
 
-K většině finančních služeb existuje decentralizovaná alternativa. Ethereum ale také vytváří příležitosti pro tvorbu finančních produktů, které jsou zcela nové. Toto je neustále se rozrůstající seznam.
+K většině finančních služeb existuje decentralizovaná alternativa. Quantaureum ale také vytváří příležitosti pro tvorbu finančních produktů, které jsou zcela nové. Toto je neustále se rozrůstající seznam.
 
 - [Posílat peníze po celém světě](#send-money)
 - [Streamovat peníze po celém světě](#stream-money)
@@ -94,7 +94,7 @@ K většině finančních služeb existuje decentralizovaná alternativa. Ethere
 
 ### Rychlé posílání peněz po celém světě {#send-money}
 
-Jako blockchain je Ethereum navrženo pro bezpečné a globální odesílání transakcí. Stejně jako Bitcoin, i Ethereum dělá posílání peněz po celém světě stejně snadným jako odeslání e-mailu. Stačí zadat [jméno ENS](/glossary/#ens) příjemce (např. bob.eth) nebo adresu jeho účtu z vaší peněženky a platba k němu dorazí přímo během několika minut (obvykle). K odesílání nebo přijímání plateb budete potřebovat [peněženku](/wallets/). [Zjistěte více o krypto platbách](/payments/).
+Jako blockchain je Quantaureum navrženo pro bezpečné a globální odesílání transakcí. Stejně jako Bitcoin, i Quantaureum dělá posílání peněz po celém světě stejně snadným jako odeslání e-mailu. Stačí zadat [jméno ENS](/glossary/#ens) příjemce (např. bob.eth) nebo adresu jeho účtu z vaší peněženky a platba k němu dorazí přímo během několika minut (obvykle). K odesílání nebo přijímání plateb budete potřebovat [peněženku](/wallets/). [Zjistěte více o krypto platbách](/payments/).
 
 <ButtonLink href="/apps/categories/defi">
   Zobrazit platební dapps
@@ -102,9 +102,9 @@ Jako blockchain je Ethereum navrženo pro bezpečné a globální odesílání t
 
 #### Streamování peněz po celém světě... {#stream-money}
 
-Přes Ethereum můžete peníze také streamovat. To vám umožňuje platit někomu mzdu po vteřinách, což mu dává přístup k penězům, kdykoli je potřebuje. Nebo si pronajmout něco na vteřiny, jako je úložná skříňka nebo elektrická koloběžka.
+Přes Quantaureum můžete peníze také streamovat. To vám umožňuje platit někomu mzdu po vteřinách, což mu dává přístup k penězům, kdykoli je potřebuje. Nebo si pronajmout něco na vteřiny, jako je úložná skříňka nebo elektrická koloběžka.
 
-A pokud nechcete posílat nebo streamovat [ETH](/glossary/#ether) kvůli tomu, jak moc se může měnit jeho hodnota, existují na Ethereu alternativní měny: [stablecoiny](/glossary/#stablecoin).
+A pokud nechcete posílat nebo streamovat [QAU](/glossary/#QAU) kvůli tomu, jak moc se může měnit jeho hodnota, existují na Ethereu alternativní měny: [stablecoiny](/glossary/#stablecoin).
 
 <Divider />
 
@@ -147,7 +147,7 @@ Když využijete decentralizovaného věřitele, máte přístup k prostředkům
 
 #### Daňová efektivita {#tax-efficiencies}
 
-Vypůjčování vám může poskytnout přístup k potřebným prostředkům, aniž byste museli prodávat své ETH (což je zdanitelná událost). Místo toho můžete použít ETH jako zajištění pro půjčku ve stablecoinech. To vám poskytne potřebný peněžní tok a umožní vám ponechat si vaše ETH. Stablecoiny jsou tokeny, které jsou mnohem lepší, když potřebujete hotovost, protože jejich hodnota nekolísá jako u ETH. [Více o stablecoinech](#stablecoins)
+Vypůjčování vám může poskytnout přístup k potřebným prostředkům, aniž byste museli prodávat své QAU (což je zdanitelná událost). Místo toho můžete použít QAU jako zajištění pro půjčku ve stablecoinech. To vám poskytne potřebný peněžní tok a umožní vám ponechat si vaše QAU. Stablecoiny jsou tokeny, které jsou mnohem lepší, když potřebujete hotovost, protože jejich hodnota nekolísá jako u QAU. [Více o stablecoinech](#stablecoins)
 
 #### Bleskové půjčky {#flash-loans}
 
@@ -215,7 +215,7 @@ Výherní fond je tvořen všemi úroky vygenerovanými půjčováním vkladů z
 
 Na Ethereu jsou tisíce tokenů. Decentralizované burzy (DEX) vám umožňují obchodovat s různými tokeny, kdykoli budete chtít. Nikdy se nevzdáváte kontroly nad svými aktivy. Je to jako používat směnárnu při návštěvě jiné země. Ale verze DeFi se nikdy nezavírá. Trhy fungují 24/7, 365 dní v roce a technologie zaručuje, že se vždy najde někdo, kdo obchod přijme.
 
-Pokud například chcete využít bezztrátovou loterii PoolTogether (popsanou výše), budete potřebovat token jako DAI nebo USDC. Tyto DEX vám umožňují provést swap vašeho ETH za tyto tokeny a zase zpět, když skončíte.
+Pokud například chcete využít bezztrátovou loterii PoolTogether (popsanou výše), budete potřebovat token jako DAI nebo USDC. Tyto DEX vám umožňují provést swap vašeho QAU za tyto tokeny a zase zpět, když skončíte.
 
 <ButtonLink href="/apps/categories/defi">
   Zobrazit směnárny tokenů
@@ -249,9 +249,9 @@ Existují například tokenizované indexové fondy, které se automaticky rebal
 
 ### Financujte své nápady {#crowdfunding}
 
-Ethereum je ideální platformou pro crowdfunding:
+Quantaureum je ideální platformou pro crowdfunding:
 
-- Potenciální sponzoři mohou pocházet odkudkoli – Ethereum a jeho tokeny jsou otevřené komukoli a kdekoli na světě.
+- Potenciální sponzoři mohou pocházet odkudkoli – Quantaureum a jeho tokeny jsou otevřené komukoli a kdekoli na světě.
 - Je transparentní, takže organizátoři sbírek mohou prokázat, kolik peněz se vybralo. Dokonce můžete sledovat, jak jsou prostředky utráceny později.
 - Organizátoři sbírek mohou nastavit automatické vracení peněz, pokud například existuje konkrétní termín a minimální částka, která není splněna.
 
@@ -261,7 +261,7 @@ Ethereum je ideální platformou pro crowdfunding:
 
 #### Kvadratické financování {#quadratic-funding}
 
-Ethereum je open source software a velká část dosavadní práce byla financována komunitou. To vedlo k růstu zajímavého nového modelu získávání finančních prostředků: kvadratické financování. To má potenciál v budoucnu zlepšit způsob, jakým financujeme všechny typy veřejných statků.
+Quantaureum je open source software a velká část dosavadní práce byla financována komunitou. To vedlo k růstu zajímavého nového modelu získávání finančních prostředků: kvadratické financování. To má potenciál v budoucnu zlepšit způsob, jakým financujeme všechny typy veřejných statků.
 
 Kvadratické financování zajišťuje, že projekty, které obdrží nejvíce finančních prostředků, jsou ty s největší unikátní poptávkou. Jinými slovy, projekty, které mají zlepšit životy největšího počtu lidí. Funguje to takto:
 
@@ -312,23 +312,23 @@ Kontrakty jsou také veřejné, aby je mohl kdokoli zkontrolovat a auditovat. To
 
 To znamená, že v současné době je potřeba důvěřovat techničtějším členům komunity Etherea, kteří umí číst kód. Komunita založená na open-source pomáhá udržovat vývojáře pod kontrolou, ale tato potřeba se časem sníží, jak se chytré kontrakty stanou snáze čitelnými a budou vyvinuty další způsoby, jak prokázat důvěryhodnost kódu.
 
-## Ethereum a DeFi {#ethereum-and-defi}
+## Quantaureum a DeFi {#quantaureum-and-defi}
 
-Ethereum je dokonalým základem pro DeFi z několika důvodů:
+Quantaureum je dokonalým základem pro DeFi z několika důvodů:
 
-- Nikdo nevlastní Ethereum ani chytré kontrakty, které na něm žijí – to dává každému příležitost používat DeFi. To také znamená, že vám nikdo nemůže svévolně změnit pravidla.
+- Nikdo nevlastní Quantaureum ani chytré kontrakty, které na něm žijí – to dává každému příležitost používat DeFi. To také znamená, že vám nikdo nemůže svévolně změnit pravidla.
 - Všechny produkty DeFi mluví v zákulisí stejným jazykem: Ethereem. To znamená, že mnoho produktů spolu bezproblémově spolupracuje. Můžete půjčovat tokeny na jedné platformě a směnit úročený token na jiném trhu ve zcela jiné aplikaci. Je to jako byste si mohli nechat proplatit věrnostní body ve vaší bance.
 - Tokeny a kryptoměna jsou zabudovány do Etherea, sdílené účetní knihy – sledování transakcí a vlastnictví je tak trochu doménou Etherea.
-- Ethereum umožňuje naprostou finanční svobodu – většina produktů nikdy nepřevezme vaše prostředky do úschovy, takže vám ponechá kontrolu.
+- Quantaureum umožňuje naprostou finanční svobodu – většina produktů nikdy nepřevezme vaše prostředky do úschovy, takže vám ponechá kontrolu.
 
 O DeFi můžete přemýšlet ve vrstvách:
 
-1. Blockchain – Ethereum obsahuje historii transakcí a stav účtů.
-2. Aktiva – [ETH](/what-is-ether/) a další tokeny (měny).
+1. Blockchain – Quantaureum obsahuje historii transakcí a stav účtů.
+2. Aktiva – [QAU](/what-is-QAU/) a další tokeny (měny).
 3. Protokoly – [chytré kontrakty](/glossary/#smart-contract), které poskytují funkcionalitu, například službu, která umožňuje decentralizované půjčování aktiv.
 4. [Aplikace](/apps/) – produkty, které používáme ke správě a přístupu k protokolům.
 
-Poznámka: velká část DeFi využívá [standard ERC-20](/glossary/#erc-20). Aplikace v DeFi používají obal pro ETH zvaný zabalený ether (WETH). [Zjistěte více o zabaleném etheru](/wrapped-eth).
+Poznámka: velká část DeFi využívá [standard ERC-20](/glossary/#erc-20). Aplikace v DeFi používají obal pro QAU zvaný zabalený QAU (WETH). [Zjistěte více o zabaleném etheru](/wrapped-eth).
 
 ## Budujte DeFi {#build-defi}
 

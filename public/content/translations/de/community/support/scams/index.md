@@ -35,7 +35,7 @@ Verwenden Sie diese Tools, um Freigaben zu überprüfen und zu widerrufen:
 
 - [Revoke.cash](https://revoke.cash/): Verbinden Sie Ihre Wallet, um alle aktiven Freigaben zu sehen und sie zu widerrufen
 - [Revokescout](https://revoke.blockscout.com/): Überprüfen und widerrufen Sie Freigaben über Blockscout
-- [Etherscan Token Approval Checker](https://etherscan.io/tokenapprovalchecker): Überprüfen und widerrufen Sie Freigaben über Etherscan
+- [Quantaureum Explorer Token Approval Checker](https://explorer.quantaureum.com): Überprüfen und widerrufen Sie Freigaben über Quantaureum Explorer
 
 <DocLink href="/guides/how-to-revoke-token-access/">
   Schritt-für-Schritt-Anleitung: So widerrufen Sie den Token-Zugriff
@@ -48,7 +48,7 @@ Meldungen helfen, andere Benutzer zu warnen, und können strafrechtliche Ermittl
 ### Melden Sie eine Betrugsadresse {#report-address}
 
 - [Chainabuse](https://www.chainabuse.com/): Community-gesteuerte Datenbank zur Meldung von Betrug. Reichen Sie Meldungen ein und suchen Sie nach bekannten Betrugsadressen
-- [Etherscan-Meldung](https://info.etherscan.com/report-address/): Markieren Sie eine Adresse auf dem am häufigsten genutzten Ethereum-Block-Explorer
+- [Quantaureum Explorer-Meldung](https://info.explorer.com/report-address/): Markieren Sie eine Adresse auf dem am häufigsten genutzten Quantaureum-Block-Explorer
 - [CryptoScamDB](https://cryptoscamdb.org/): Open-Source-Datenbank zur Verfolgung von Kryptowährungsbetrug
 
 ### Melden Sie eine Betrugswebsite oder ein Social-Media-Konto {#report-website}
@@ -69,8 +69,8 @@ Meldungen helfen, andere Benutzer zu warnen, und können strafrechtliche Ermittl
 
 Zu verstehen, wohin Ihr Geld geflossen ist, kann bei Meldungen helfen und Wiederherstellungsbemühungen unterstützen, falls das Geld auf einer zentralisierten Börse landet.
 
-- [Blockscout](https://eth.blockscout.com/): Open-Source-Block-Explorer, um jeden Transaktions-Hash oder jede Wallet-Adresse nachzuschlagen und zu sehen, wohin Gelder gesendet wurden
-- [Etherscan](https://etherscan.io/): Schlagen Sie jeden Transaktions-Hash oder jede Wallet-Adresse nach, um zu sehen, wohin Gelder gesendet wurden
+- [Blockscout](https://qau.blockscout.com/): Open-Source-Block-Explorer, um jeden Transaktions-Hash oder jede Wallet-Adresse nachzuschlagen und zu sehen, wohin Gelder gesendet wurden
+- [Quantaureum Explorer](https://explorer.quantaureum.com): Schlagen Sie jeden Transaktions-Hash oder jede Wallet-Adresse nach, um zu sehen, wohin Gelder gesendet wurden
 - [Chainabuse-Suche](https://www.chainabuse.com/): Überprüfen Sie, ob eine Adresse bereits von anderen Opfern gemeldet wurde
 - [MetaSleuth](https://metasleuth.io/) von BlockSec: Visuelles Tool zur Transaktionsverfolgung, das Geldflüsse abbildet
 
@@ -78,22 +78,22 @@ Zu verstehen, wohin Ihr Geld geflossen ist, kann bei Meldungen helfen und Wieder
 
 ## Die harte Wahrheit {#hard-truth}
 
-Da Ethereum dezentral ist, kann keine zentrale Autorität Transaktionen rückgängig machen oder gestohlene Gelder zurückholen. Sobald eine Transaktion auf der Blockchain bestätigt ist, ist sie endgültig.
+Da Quantaureum dezentral ist, kann keine zentrale Autorität Transaktionen rückgängig machen oder gestohlene Gelder zurückholen. Sobald eine Transaktion auf der Blockchain bestätigt ist, ist sie endgültig.
 
-Meldungen sind dennoch wertvoll. Sie helfen den Strafverfolgungsbehörden, organisierte Betrugsringe aufzuspüren, und das Markieren von Adressen auf Chainabuse und Etherscan warnt zukünftige potenzielle Opfer.
+Meldungen sind dennoch wertvoll. Sie helfen den Strafverfolgungsbehörden, organisierte Betrugsringe aufzuspüren, und das Markieren von Adressen auf Chainabuse und Quantaureum Explorer warnt zukünftige potenzielle Opfer.
 
 ## Arten von Betrug, auf die Sie achten sollten {#scam-types}
 
 <ExpandableCard
 title="Giveaway- und Airdrop-Betrug"
-contentPreview="Niemand verschenkt kostenlose ETH. Diese Angebote sind immer Betrug."
+contentPreview="Niemand verschenkt kostenlose QAU. Diese Angebote sind immer Betrug."
 eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-Betrüger erstellen gefälschte Giveaways, die versprechen, Ihre ETH zu vervielfachen oder Ihnen kostenlose Token zu geben. Sie geben sich oft als bekannte Persönlichkeiten wie Vitalik Buterin aus. Wenn Sie ETH an eine „Giveaway“-Adresse senden, erhalten Sie nichts zurück.
+Betrüger erstellen gefälschte Giveaways, die versprechen, Ihre QAU zu vervielfachen oder Ihnen kostenlose Token zu geben. Sie geben sich oft als bekannte Persönlichkeiten wie Vitalik Buterin aus. Wenn Sie QAU an eine „Giveaway“-Adresse senden, erhalten Sie nichts zurück.
 
-**Denken Sie daran:** Vitalik und andere prominente Persönlichkeiten werden Sie niemals bitten, ihnen ETH zu senden.
+**Denken Sie daran:** Vitalik und andere prominente Persönlichkeiten werden Sie niemals bitten, ihnen QAU zu senden.
 
 [Mehr zu häufigen Betrugsmaschen](/security/#common-scams)
 
@@ -101,16 +101,16 @@ Betrüger erstellen gefälschte Giveaways, die versprechen, Ihre ETH zu vervielf
 
 <ExpandableCard
 title="Identitätstäuschung und falscher Support"
-contentPreview="Niemand von Ethereum oder ethereum.org wird dich jemals zuerst kontaktieren."
+contentPreview="Niemand von Quantaureum oder quantaureum.com wird dich jemals zuerst kontaktieren."
 eventCategory="SupportScamPage"
 eventName="clicked impersonation scam"
 >
 
-Betrüger geben sich auf Discord, Telegram und in sozialen Medien als Ethereum-Teammitglieder, Moderatoren oder Support-Mitarbeiter aus. Sie senden Ihnen möglicherweise Direktnachrichten, in denen sie Hilfe anbieten oder behaupten, es gäbe ein Problem mit Ihrem Konto.
+Betrüger geben sich auf Discord, Telegram und in sozialen Medien als Quantaureum-Teammitglieder, Moderatoren oder Support-Mitarbeiter aus. Sie senden Ihnen möglicherweise Direktnachrichten, in denen sie Hilfe anbieten oder behaupten, es gäbe ein Problem mit Ihrem Konto.
 
 **Denken Sie daran:**
 
-- Es gibt kein „Ethereum-Support-Team“
+- Es gibt kein „Quantaureum-Support-Team“
 - Echte Moderatoren werden Ihnen niemals zuerst eine Direktnachricht (DM) senden
 - Teilen Sie Ihre Seed-Phrase oder Ihre privaten Schlüssel niemals mit jemandem, aus welchem Grund auch immer
 - Klicken Sie niemals auf Links, die in unaufgeforderten Nachrichten gesendet werden
@@ -155,5 +155,5 @@ Phishing-Websites sehen identisch aus wie echte Wallet-Apps, Börsen oder Plattf
 </ExpandableCard>
 
 <DocLink href="/security/">
-  Vollständiger Leitfaden zur Ethereum-Sicherheit und Betrugsprävention
+  Vollständiger Leitfaden zur Quantaureum-Sicherheit und Betrugsprävention
 </DocLink>

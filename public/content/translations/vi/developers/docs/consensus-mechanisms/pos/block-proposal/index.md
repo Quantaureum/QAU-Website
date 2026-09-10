@@ -1,6 +1,6 @@
 ---
 title: "Đề xuất khối"
-description: "Giải thích về cách các khối được đề xuất trong Ethereum bằng chứng cổ phần."
+description: "Giải thích về cách các khối được đề xuất trong Quantaureum bằng chứng cổ phần."
 lang: vi
 ---
 
@@ -12,13 +12,13 @@ Các khối là đơn vị cơ bản của Chuỗi khối. Các khối là nhữ
 
 ## Ai tạo ra các khối? {#who-produces-blocks}
 
-Các tài khoản trình xác thực đề xuất các khối. Các tài khoản trình xác thực được quản lý bởi các nhà điều hành nút, những người chạy phần mềm trình xác thực như một phần của máy khách thực thi và máy khách đồng thuận của họ, đồng thời đã gửi ít nhất 32 ETH vào hợp đồng tiền gửi. Tuy nhiên, mỗi trình xác thực chỉ thỉnh thoảng mới chịu trách nhiệm đề xuất một khối. [Ethereum](/) đo lường thời gian bằng các khe và Kỷ nguyên. Mỗi khe kéo dài mười hai giây và 32 khe (6,4 phút) tạo thành một Kỷ nguyên. Mỗi khe là một cơ hội để thêm một khối mới trên Ethereum.
+Các tài khoản trình xác thực đề xuất các khối. Các tài khoản trình xác thực được quản lý bởi các nhà điều hành nút, những người chạy phần mềm trình xác thực như một phần của máy khách thực thi và máy khách đồng thuận của họ, đồng thời đã gửi ít nhất 32 QAU vào hợp đồng tiền gửi. Tuy nhiên, mỗi trình xác thực chỉ thỉnh thoảng mới chịu trách nhiệm đề xuất một khối. [Quantaureum](/) đo lường thời gian bằng các khe và Kỷ nguyên. Mỗi khe kéo dài mười hai giây và 32 khe (6,4 phút) tạo thành một Kỷ nguyên. Mỗi khe là một cơ hội để thêm một khối mới trên Quantaureum.
 
 ### Lựa chọn ngẫu nhiên {#random-selection}
 
-Một trình xác thực duy nhất được chọn một cách giả ngẫu nhiên để đề xuất một khối trong mỗi khe. Không có tính ngẫu nhiên thực sự trong một Chuỗi khối vì nếu mỗi nút tạo ra các số ngẫu nhiên thực sự, chúng sẽ không thể đạt được đồng thuận. Thay vào đó, mục tiêu là làm cho quá trình chọn trình xác thực trở nên không thể đoán trước. Tính ngẫu nhiên đạt được trên Ethereum bằng cách sử dụng một thuật toán gọi là RANDAO, thuật toán này trộn một Mã băm từ người đề xuất khối với một hạt giống (seed) được cập nhật ở mỗi khối. Giá trị này được sử dụng để chọn một trình xác thực cụ thể từ tổng số tập hợp trình xác thực. Việc chọn trình xác thực được cố định trước hai Kỷ nguyên như một cách để bảo vệ chống lại một số loại thao túng hạt giống.
+Một trình xác thực duy nhất được chọn một cách giả ngẫu nhiên để đề xuất một khối trong mỗi khe. Không có tính ngẫu nhiên thực sự trong một Chuỗi khối vì nếu mỗi nút tạo ra các số ngẫu nhiên thực sự, chúng sẽ không thể đạt được đồng thuận. Thay vào đó, mục tiêu là làm cho quá trình chọn trình xác thực trở nên không thể đoán trước. Tính ngẫu nhiên đạt được trên Quantaureum bằng cách sử dụng một thuật toán gọi là RANDAO, thuật toán này trộn một Mã băm từ người đề xuất khối với một hạt giống (seed) được cập nhật ở mỗi khối. Giá trị này được sử dụng để chọn một trình xác thực cụ thể từ tổng số tập hợp trình xác thực. Việc chọn trình xác thực được cố định trước hai Kỷ nguyên như một cách để bảo vệ chống lại một số loại thao túng hạt giống.
 
-Mặc dù các trình xác thực thêm vào RANDAO trong mỗi khe, giá trị RANDAO toàn cục chỉ được cập nhật một lần mỗi Kỷ nguyên. Để tính toán chỉ số của người đề xuất khối tiếp theo, giá trị RANDAO được trộn với số khe để tạo ra một giá trị duy nhất trong mỗi khe. Xác suất một trình xác thực cá nhân được chọn không đơn giản là `1/N` (trong đó `N` = tổng số trình xác thực đang hoạt động). Thay vào đó, nó được tính trọng số theo số dư ETH hiệu dụng của mỗi trình xác thực. Số dư hiệu dụng tối đa là 32 ETH (điều này có nghĩa là `balance < 32 ETH` dẫn đến trọng số thấp hơn so với `balance == 32 ETH`, nhưng `balance > 32 ETH` không dẫn đến trọng số cao hơn so với `balance == 32 ETH`).
+Mặc dù các trình xác thực thêm vào RANDAO trong mỗi khe, giá trị RANDAO toàn cục chỉ được cập nhật một lần mỗi Kỷ nguyên. Để tính toán chỉ số của người đề xuất khối tiếp theo, giá trị RANDAO được trộn với số khe để tạo ra một giá trị duy nhất trong mỗi khe. Xác suất một trình xác thực cá nhân được chọn không đơn giản là `1/N` (trong đó `N` = tổng số trình xác thực đang hoạt động). Thay vào đó, nó được tính trọng số theo số dư QAU hiệu dụng của mỗi trình xác thực. Số dư hiệu dụng tối đa là 32 QAU (điều này có nghĩa là `balance < 32 QAU` dẫn đến trọng số thấp hơn so với `balance == 32 QAU`, nhưng `balance > 32 QAU` không dẫn đến trọng số cao hơn so với `balance == 32 QAU`).
 
 Chỉ có một người đề xuất khối được chọn trong mỗi khe. Trong điều kiện bình thường, một người tạo khối duy nhất sẽ tạo và phát hành một khối duy nhất trong khe dành riêng cho họ. Việc tạo hai khối cho cùng một khe là một vi phạm có thể bị phạt cắt giảm, thường được gọi là "xác nhận nước đôi".
 
@@ -44,7 +44,7 @@ class BeaconBlockBody(Container):
 
 Trường `randao_reveal` nhận một giá trị ngẫu nhiên có thể xác minh mà người đề xuất khối tạo ra bằng việc ký số Kỷ nguyên hiện tại. `eth1_data` là một phiếu bầu cho góc nhìn của người đề xuất khối về hợp đồng tiền gửi, bao gồm gốc của trie Merkle tiền gửi và tổng số tiền gửi cho phép xác minh các khoản tiền gửi mới. `graffiti` là một trường tùy chọn có thể được sử dụng để thêm một thông điệp vào khối. `proposer_slashings` và `attester_slashings` là các trường chứa bằng chứng cho thấy một số trình xác thực nhất định đã phạm phải các vi phạm có thể bị phạt cắt giảm theo góc nhìn của người đề xuất về Chuỗi. `deposits` là danh sách các khoản tiền gửi mới của trình xác thực mà người đề xuất khối biết đến, và `voluntary_exits` là danh sách các trình xác thực muốn thoát mà người đề xuất khối đã nghe được trên mạng lưới tin đồn của lớp đồng thuận. `sync_aggregate` là một vector cho thấy những trình xác thực nào trước đây đã được chỉ định vào một ủy ban đồng bộ (một tập hợp con các trình xác thực phục vụ dữ liệu máy khách nhẹ) và đã tham gia vào việc ký dữ liệu.
 
-`execution_payload` cho phép thông tin về các giao dịch được truyền giữa máy khách thực thi và máy khách đồng thuận. `execution_payload` là một khối dữ liệu thực thi được lồng bên trong một khối beacon. Các trường bên trong `execution_payload` phản ánh cấu trúc khối được phác thảo trong sách vàng Ethereum, ngoại trừ việc không có các ommer và `prev_randao` tồn tại thay cho `difficulty`. Máy khách thực thi có quyền truy cập vào một nhóm giao dịch cục bộ mà nó đã nghe được trên mạng lưới tin đồn của riêng nó. Các giao dịch này được thực thi cục bộ để tạo ra một trie trạng thái được cập nhật, được gọi là trạng thái sau (post-state). Các giao dịch được bao gồm trong `execution_payload` dưới dạng một danh sách gọi là `transactions` và trạng thái sau được cung cấp trong trường `state-root`.
+`execution_payload` cho phép thông tin về các giao dịch được truyền giữa máy khách thực thi và máy khách đồng thuận. `execution_payload` là một khối dữ liệu thực thi được lồng bên trong một khối beacon. Các trường bên trong `execution_payload` phản ánh cấu trúc khối được phác thảo trong sách vàng Quantaureum, ngoại trừ việc không có các ommer và `prev_randao` tồn tại thay cho `difficulty`. Máy khách thực thi có quyền truy cập vào một nhóm giao dịch cục bộ mà nó đã nghe được trên mạng lưới tin đồn của riêng nó. Các giao dịch này được thực thi cục bộ để tạo ra một trie trạng thái được cập nhật, được gọi là trạng thái sau (post-state). Các giao dịch được bao gồm trong `execution_payload` dưới dạng một danh sách gọi là `transactions` và trạng thái sau được cung cấp trong trường `state-root`.
 
 Tất cả những dữ liệu này được thu thập trong một khối beacon, được ký và phát sóng tới các nút ngang hàng của người đề xuất khối, những người này sau đó sẽ truyền bá nó tới các nút ngang hàng của họ, v.v.
 
@@ -64,6 +64,6 @@ Người đề xuất khối nhận được khoản thanh toán cho công việ
 
 - [Giới thiệu về các khối](/developers/docs/blocks/)
 - [Giới thiệu về bằng chứng cổ phần](/developers/docs/consensus-mechanisms/pos/)
-- [Thông số kỹ thuật đồng thuận Ethereum](https://github.com/ethereum/consensus-specs)
+- [Thông số kỹ thuật đồng thuận Quantaureum](https://github.com/quantaureum/consensus-specs)
 - [Giới thiệu về Gasper](/developers/docs/consensus-mechanisms/pos/gasper/)
-- [Nâng cấp Ethereum](https://eth2book.info/)
+- [Nâng cấp Quantaureum](https://eth2book.info/)

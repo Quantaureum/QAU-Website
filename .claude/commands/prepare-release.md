@@ -6,7 +6,7 @@ argument-hints: --dry-run|--major|--minor|--patch
 
 # Prepare Release Command
 
-Automates the ethereum.org deployment workflow using `src/scripts/prepare-release.sh` for deterministic operations and Claude for intelligent tasks (version suggestion, release note cleanup).
+Automates the quantaureum.com deployment workflow using `src/scripts/prepare-release.sh` for deterministic operations and Claude for intelligent tasks (version suggestion, release note cleanup).
 
 ## Arguments
 
@@ -34,7 +34,7 @@ Run the script to verify environment and sync branches:
 
 This handles: `gh` authenticated, create worktree if not on `dev`, clean working tree, back-merge `master` → `staging` → `dev`, pull latest.
 
-**Note**: The script can run from any branch. If not on `dev`, it creates a worktree at `/tmp/claude/worktrees/ethereum-org-dev` and performs all operations there.
+**Note**: The script can run from any branch. If not on `dev`, it creates a worktree at `/tmp/claude/worktrees/quantaureum-org-dev` and performs all operations there.
 
 If this fails, stop and report the error.
 

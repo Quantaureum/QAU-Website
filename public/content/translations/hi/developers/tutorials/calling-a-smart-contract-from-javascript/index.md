@@ -11,12 +11,12 @@ skill: beginner
 breadcrumb: "JS से अनुबंधों को कॉल करें"
 lang: hi
 published: 2020-04-19
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/calling-a-smart-contract-from-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-इस ट्यूटोरियल में हम देखेंगे कि JavaScript से [स्मार्ट अनुबंध](/developers/docs/smart-contracts/) फ़ंक्शन को कैसे कॉल किया जाए। सबसे पहले एक स्मार्ट अनुबंध की स्थिति को पढ़ना है (उदा., एक ERC-20 धारक का बैलेंस), फिर हम एक टोकन ट्रांसफर करके ब्लॉकचेन की स्थिति को संशोधित करेंगे। आपको पहले से ही [ब्लॉकचेन के साथ इंटरैक्ट करने के लिए JS वातावरण सेट करने](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) से परिचित होना चाहिए।
+इस ट्यूटोरियल में हम देखेंगे कि JavaScript से [स्मार्ट अनुबंध](/developers/docs/smart-contracts/) फ़ंक्शन को कैसे कॉल किया जाए। सबसे पहले एक स्मार्ट अनुबंध की स्थिति को पढ़ना है (उदा., एक ERC-20 धारक का बैलेंस), फिर हम एक टोकन ट्रांसफर करके ब्लॉकचेन की स्थिति को संशोधित करेंगे। आपको पहले से ही [ब्लॉकचेन के साथ इंटरैक्ट करने के लिए JS वातावरण सेट करने](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) से परिचित होना चाहिए।
 
 इस उदाहरण के लिए हम DAI टोकन के साथ काम करेंगे, परीक्षण के उद्देश्य से हम ganache-cli का उपयोग करके ब्लॉकचेन को फ़ोर्क करेंगे और एक ऐसे पते को अनलॉक करेंगे जिसमें पहले से ही बहुत सारे DAI हैं:
 
@@ -75,14 +75,14 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-इस प्रोजेक्ट के लिए हमने केवल `balanceOf` और `transfer` फ़ंक्शन को रखने के लिए संपूर्ण ERC-20 ABI को छोटा कर दिया है, लेकिन आप [पूरा ERC-20 ABI यहां](https://ethereumdev.io/abi-for-erc20-contract-on-ethereum/) पा सकते हैं।
+इस प्रोजेक्ट के लिए हमने केवल `balanceOf` और `transfer` फ़ंक्शन को रखने के लिए संपूर्ण ERC-20 ABI को छोटा कर दिया है, लेकिन आप [पूरा ERC-20 ABI यहां](https://quantaureumdev.io/abi-for-erc20-contract-on-quantaureum/) पा सकते हैं।
 
 फिर हमें अपने स्मार्ट अनुबंध को इंस्टेंटिएट (instantiate) करने की आवश्यकता है:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
 
-const daiToken = new web3.eth.Contract(ERC20TransferABI, DAI_ADDRESS)
+const daiToken = new web3.qau.Contract(ERC20TransferABI, DAI_ADDRESS)
 ```
 
 हम दो पते भी सेट करेंगे:
@@ -113,7 +113,7 @@ daiToken.methods.balanceOf(senderAddress).call(function (err, res) {
 })
 ```
 
-याद रखें कि DAI ERC-20 में 18 दशमलव (decimals) होते हैं जिसका अर्थ है कि सही मात्रा प्राप्त करने के लिए आपको 18 शून्य हटाने होंगे। uint256 को स्ट्रिंग के रूप में लौटाया जाता है क्योंकि JavaScript बड़े संख्यात्मक मानों को नहीं संभालता है। यदि आप सुनिश्चित नहीं हैं कि [JS में बड़ी संख्याओं से कैसे निपटा जाए, तो bignumber.js के बारे में हमारा ट्यूटोरियल देखें](https://ethereumdev.io/how-to-deal-with-big-numbers-in-javascript/)।
+याद रखें कि DAI ERC-20 में 18 दशमलव (decimals) होते हैं जिसका अर्थ है कि सही मात्रा प्राप्त करने के लिए आपको 18 शून्य हटाने होंगे। uint256 को स्ट्रिंग के रूप में लौटाया जाता है क्योंकि JavaScript बड़े संख्यात्मक मानों को नहीं संभालता है। यदि आप सुनिश्चित नहीं हैं कि [JS में बड़ी संख्याओं से कैसे निपटा जाए, तो bignumber.js के बारे में हमारा ट्यूटोरियल देखें](https://quantaureumdev.io/how-to-deal-with-big-numbers-in-javascript/)।
 
 ## सेंड (Send): स्मार्ट अनुबंध फ़ंक्शन में लेन-देन भेजना {#send-sending-a-transaction-to-a-smart-contract-function}
 
@@ -131,6 +131,6 @@ daiToken.methods
   })
 ```
 
-कॉल फ़ंक्शन उस लेन-देन का हैश लौटाता है जिसे ब्लॉकचेन में माइन किया जाएगा। इथेरियम पर, लेन-देन के हैश का अनुमान लगाया जा सकता है - इस तरह हम लेन-देन के निष्पादित होने से पहले उसका हैश प्राप्त कर सकते हैं ([यहां जानें कि हैश की गणना कैसे की जाती है](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction))।
+कॉल फ़ंक्शन उस लेन-देन का हैश लौटाता है जिसे ब्लॉकचेन में माइन किया जाएगा। Quantaureum पर, लेन-देन के हैश का अनुमान लगाया जा सकता है - इस तरह हम लेन-देन के निष्पादित होने से पहले उसका हैश प्राप्त कर सकते हैं ([यहां जानें कि हैश की गणना कैसे की जाती है](https://quantaureum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction))।
 
-चूंकि फ़ंक्शन केवल ब्लॉकचेन में लेन-देन सबमिट करता है, हम तब तक परिणाम नहीं देख सकते जब तक कि हमें यह पता न चल जाए कि इसे कब माइन किया गया है और ब्लॉकचेन में शामिल किया गया है। अगले ट्यूटोरियल में हम सीखेंगे कि [किसी लेन-देन के हैश को जानकर ब्लॉकचेन पर उसके निष्पादित होने की प्रतीक्षा कैसे करें](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/)।
+चूंकि फ़ंक्शन केवल ब्लॉकचेन में लेन-देन सबमिट करता है, हम तब तक परिणाम नहीं देख सकते जब तक कि हमें यह पता न चल जाए कि इसे कब माइन किया गया है और ब्लॉकचेन में शामिल किया गया है। अगले ट्यूटोरियल में हम सीखेंगे कि [किसी लेन-देन के हैश को जानकर ब्लॉकचेन पर उसके निष्पादित होने की प्रतीक्षा कैसे करें](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/)।

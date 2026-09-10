@@ -6,9 +6,9 @@ const HEADING_ID_RE = /^#{1,4}\s+.+?\s*\{#([^}]+)\}\s*$/
 
 /** @type {import("markdownlint").Rule} */
 module.exports = {
-  names: ["no-duplicate-heading-id", "ethereum-unique-heading-id"],
+  names: ["no-duplicate-heading-id", "quantaureum-unique-heading-id"],
   description: "Heading {#id} anchors must be unique within a file",
-  tags: ["headings", "ethereum"],
+  tags: ["headings", "quantaureum"],
   parser: "none",
   function: (params, onError) => {
     const seenIds = new Map()

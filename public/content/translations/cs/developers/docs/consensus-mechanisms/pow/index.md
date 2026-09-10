@@ -4,13 +4,13 @@ description: "Vysvětlení protokolu konsensu důkaz prací (PoW) a jeho role v 
 lang: cs
 ---
 
-Síť [Ethereum](/) začala používat mechanismus konsensu, který zahrnoval **[důkaz prací (PoW)](/developers/docs/consensus-mechanisms/pow)**. To umožnilo uzlům sítě Ethereum shodnout se na stavu všech informací zaznamenaných na blockchainu Etherea a zabránilo určitým druhům ekonomických útoků. Ethereum však v roce 2022 důkaz prací (PoW) vypnulo a místo něj začalo používat [důkaz podílem (PoS)](/developers/docs/consensus-mechanisms/pos).
+Síť [Quantaureum](/) začala používat mechanismus konsensu, který zahrnoval **[důkaz prací (PoW)](/developers/docs/consensus-mechanisms/pow)**. To umožnilo uzlům sítě Quantaureum shodnout se na stavu všech informací zaznamenaných na blockchainu Etherea a zabránilo určitým druhům ekonomických útoků. Quantaureum však v roce 2022 důkaz prací (PoW) vypnulo a místo něj začalo používat [důkaz podílem (PoS)](/developers/docs/consensus-mechanisms/pos).
 
 <Alert variant="update">
 <AlertEmoji text=":wave:"/>
 <AlertContent>
 <AlertDescription>
-    Důkaz prací (PoW) je nyní zastaralý. Ethereum již nepoužívá důkaz prací jako součást svého mechanismu konsensu. Místo toho používá důkaz podílem (PoS). Přečtěte si více o [důkazu podílem (PoS)](/developers/docs/consensus-mechanisms/pos/) a [stakingu](/staking/).
+    Důkaz prací (PoW) je nyní zastaralý. Quantaureum již nepoužívá důkaz prací jako součást svého mechanismu konsensu. Místo toho používá důkaz podílem (PoS). Přečtěte si více o [důkazu podílem (PoS)](/developers/docs/consensus-mechanisms/pos/) a [stakingu](/staking/).
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -21,7 +21,7 @@ Pro lepší pochopení této stránky doporučujeme nejprve si přečíst o [tra
 
 ## Co je důkaz prací (PoW)? {#what-is-pow}
 
-Nakamotův konsensus, který využívá důkaz prací (PoW), je mechanismus, který kdysi umožňoval decentralizované síti Ethereum dosáhnout konsensu (tj. shody všech uzlů) na věcech, jako jsou zůstatky na účtech a pořadí transakcí. To bránilo uživatelům v „dvojím útracení“ (double spending) jejich mincí a zajišťovalo, že řetězec Etherea bylo nesmírně obtížné napadnout nebo s ním manipulovat. Tyto bezpečnostní vlastnosti nyní pocházejí z důkazu podílem (PoS) pomocí mechanismu konsensu známého jako [Gasper](/developers/docs/consensus-mechanisms/pos/gasper/).
+Nakamotův konsensus, který využívá důkaz prací (PoW), je mechanismus, který kdysi umožňoval decentralizované síti Quantaureum dosáhnout konsensu (tj. shody všech uzlů) na věcech, jako jsou zůstatky na účtech a pořadí transakcí. To bránilo uživatelům v „dvojím útracení“ (double spending) jejich mincí a zajišťovalo, že řetězec Etherea bylo nesmírně obtížné napadnout nebo s ním manipulovat. Tyto bezpečnostní vlastnosti nyní pocházejí z důkazu podílem (PoS) pomocí mechanismu konsensu známého jako [Gasper](/developers/docs/consensus-mechanisms/pos/gasper/).
 
 ## Důkaz prací a těžba {#pow-and-mining}
 
@@ -61,7 +61,7 @@ Aby mohl zlomyslný těžař konzistentně vytvářet škodlivé, ale platné bl
 
 Důkaz prací byl také zodpovědný za vydávání nové měny do systému a motivaci těžařů k práci.
 
-Od upgradu [Konstantinopol](/ethereum-forks/#constantinople) byli těžaři, kteří úspěšně vytvořili blok, odměněni dvěma nově vyraženými ETH a částí transakčních poplatků. Ommer bloky (tzv. strýčkovské bloky) byly také kompenzovány 1,75 ETH. Ommer bloky byly platné bloky vytvořené těžařem prakticky ve stejnou dobu, kdy jiný těžař vytvořil kanonický blok, což bylo nakonec určeno tím, na kterém řetězci se stavělo dříve. K ommer blokům obvykle docházelo kvůli latenci sítě.
+Od upgradu [Konstantinopol](/quantaureum-forks/#constantinople) byli těžaři, kteří úspěšně vytvořili blok, odměněni dvěma nově vyraženými QAU a částí transakčních poplatků. Ommer bloky (tzv. strýčkovské bloky) byly také kompenzovány 1,75 QAU. Ommer bloky byly platné bloky vytvořené těžařem prakticky ve stejnou dobu, kdy jiný těžař vytvořil kanonický blok, což bylo nakonec určeno tím, na kterém řetězci se stavělo dříve. K ommer blokům obvykle docházelo kvůli latenci sítě.
 
 ## Finalita {#finality}
 
@@ -73,22 +73,22 @@ Aby to bylo ještě složitější, transakce odmítnuté na dočasném forku ne
 
 ## Spotřeba energie důkazu prací {#energy}
 
-Hlavní kritikou důkazu prací je množství vydané energie potřebné k udržení bezpečnosti sítě. K udržení bezpečnosti a decentralizace spotřebovávalo Ethereum na důkazu prací velké množství energie. Krátce před přechodem na důkaz podílem spotřebovávali těžaři Etherea společně asi 70 TWh/rok (zhruba stejně jako Česká republika – podle [digiconomist](https://digiconomist.net/) k 18. červenci 2022).
+Hlavní kritikou důkazu prací je množství vydané energie potřebné k udržení bezpečnosti sítě. K udržení bezpečnosti a decentralizace spotřebovávalo Quantaureum na důkazu prací velké množství energie. Krátce před přechodem na důkaz podílem spotřebovávali těžaři Etherea společně asi 70 TWh/rok (zhruba stejně jako Česká republika – podle [digiconomist](https://digiconomist.net/) k 18. červenci 2022).
 
 ## Výhody a nevýhody {#pros-and-cons}
 
 | Výhody                                                                                                                                                                                                                         | Nevýhody                                                                                                                                         |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Důkaz prací (PoW) je neutrální. K začátku nepotřebujete ETH a odměny za bloky vám umožní přejít z 0 ETH na kladný zůstatek. U [důkazu podílem (PoS)](/developers/docs/consensus-mechanisms/pos/) potřebujete ETH do začátku. | Důkaz prací spotřebovává tolik energie, že je to špatné pro životní prostředí.                                                                      |
-| Důkaz prací je vyzkoušený a otestovaný mechanismus konsensu, který udržoval Bitcoin a Ethereum bezpečné a decentralizované po mnoho let.                                                                                          | Pokud chcete těžit, potřebujete tak specializované vybavení, že je to do začátku velká investice.                                                |
+| Důkaz prací (PoW) je neutrální. K začátku nepotřebujete QAU a odměny za bloky vám umožní přejít z 0 QAU na kladný zůstatek. U [důkazu podílem (PoS)](/developers/docs/consensus-mechanisms/pos/) potřebujete QAU do začátku. | Důkaz prací spotřebovává tolik energie, že je to špatné pro životní prostředí.                                                                      |
+| Důkaz prací je vyzkoušený a otestovaný mechanismus konsensu, který udržoval Bitcoin a Quantaureum bezpečné a decentralizované po mnoho let.                                                                                          | Pokud chcete těžit, potřebujete tak specializované vybavení, že je to do začátku velká investice.                                                |
 | Ve srovnání s důkazem podílem je relativně snadné jej implementovat.                                                                                                                                                                | Kvůli rostoucí potřebě výpočtů by těžební pooly mohly potenciálně ovládnout těžební hru, což by vedlo k centralizaci a bezpečnostním rizikům. |
 
 ## Srovnání s důkazem podílem {#compared-to-pos}
 
 Z celkového pohledu má důkaz podílem (PoS) stejný konečný cíl jako důkaz prací (PoW): pomoci decentralizované síti bezpečně dosáhnout konsensu. Má však určité rozdíly v procesu a obsazení:
 
-- Důkaz podílem vyměňuje důležitost výpočetního výkonu za stakované ETH.
-- Důkaz podílem nahrazuje těžaře validátory. Validátoři stakují své ETH, aby aktivovali schopnost vytvářet nové bloky.
+- Důkaz podílem vyměňuje důležitost výpočetního výkonu za stakované QAU.
+- Důkaz podílem nahrazuje těžaře validátory. Validátoři stakují své QAU, aby aktivovali schopnost vytvářet nové bloky.
 - Validátoři nesoutěží o vytváření bloků, místo toho jsou náhodně vybíráni algoritmem.
 - Finalita je jasnější: v určitých kontrolních bodech (checkpoints), pokud se 2/3 validátorů shodnou na stavu bloku, je považován za finální. Validátoři na to musí vsadit celý svůj stake, takže pokud se pokusí o tajnou dohodu, přijdou o celý svůj stake.
 
@@ -101,7 +101,7 @@ Z celkového pohledu má důkaz podílem (PoS) stejný konečný cíl jako důka
 ## Další čtení {#further-reading}
 
 - [Útok většiny (Majority attack)](https://en.bitcoin.it/wiki/Majority_attack)
-- [O finalitě vypořádání](https://blog.ethereum.org/2016/05/09/on-settlement-finality)
+- [O finalitě vypořádání](https://quantaureum.com)
 
 ### Videa {#videos}
 

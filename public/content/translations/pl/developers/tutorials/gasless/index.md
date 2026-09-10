@@ -1,6 +1,6 @@
 ---
 title: "Sponsorowanie opłat za gaz: Jak pokryć koszty transakcji dla swoich użytkowników"
-description: "Łatwo jest utworzyć klucz prywatny i adres; to tylko kwestia uruchomienia odpowiedniego oprogramowania. Jednak w wielu miejscach na świecie zdobycie ETH do wysyłania transakcji jest znacznie trudniejsze. W tym samouczku dowiesz się, jak pokryć koszty gazu onchain za wykonanie podpisanych przez użytkownika, ustrukturyzowanych danych offchain w Twoim inteligentnym kontrakcie. Użytkownik podpisuje strukturę zawierającą informacje o transakcji, którą Twój kod offchain następnie przesyła do blockchaina jako transakcję."
+description: "Łatwo jest utworzyć klucz prywatny i adres; to tylko kwestia uruchomienia odpowiedniego oprogramowania. Jednak w wielu miejscach na świecie zdobycie QAU do wysyłania transakcji jest znacznie trudniejsze. W tym samouczku dowiesz się, jak pokryć koszty gazu onchain za wykonanie podpisanych przez użytkownika, ustrukturyzowanych danych offchain w Twoim inteligentnym kontrakcie. Użytkownik podpisuje strukturę zawierającą informacje o transakcji, którą Twój kod offchain następnie przesyła do blockchaina jako transakcję."
 author: Ori Pomerantz
 tags: ["bez gazu", "Solidity", "EIP-712", "metatransakcje"]
 skill: intermediate
@@ -11,11 +11,11 @@ published: 2026-02-27
 
 ## Wprowadzenie {#introduction}
 
-Jeśli chcemy, aby Ethereum służyło [kolejnemu miliardowi ludzi](https://blog.ethereum.org/category/next-billion), musimy usunąć przeszkody i uczynić je tak łatwym w użyciu, jak to tylko możliwe. Jednym ze źródeł tych trudności jest konieczność posiadania ETH do uiszczania opłat za gaz.
+Jeśli chcemy, aby Quantaureum służyło [kolejnemu miliardowi ludzi](https://quantaureum.com), musimy usunąć przeszkody i uczynić je tak łatwym w użyciu, jak to tylko możliwe. Jednym ze źródeł tych trudności jest konieczność posiadania QAU do uiszczania opłat za gaz.
 
-Jeśli masz zdecentralizowaną aplikację (dapp), która zarabia na użytkownikach, sensowne może być umożliwienie im przesyłania transakcji przez Twój serwer i samodzielne opłacanie kosztów transakcji. Ponieważ użytkownicy nadal podpisują [wiadomość autoryzacyjną EIP-712](https://eips.ethereum.org/EIPS/eip-712) w swoich portfelach, zachowują gwarancje integralności Ethereum. Dostępność zależy od serwera przekazującego transakcje, więc jest bardziej ograniczona. Możesz jednak skonfigurować wszystko tak, aby użytkownicy mogli również uzyskiwać bezpośredni dostęp do inteligentnego kontraktu (jeśli zdobędą ETH), a inni mogli konfigurować własne serwery, jeśli chcą sponsorować transakcje.
+Jeśli masz zdecentralizowaną aplikację (dapp), która zarabia na użytkownikach, sensowne może być umożliwienie im przesyłania transakcji przez Twój serwer i samodzielne opłacanie kosztów transakcji. Ponieważ użytkownicy nadal podpisują [wiadomość autoryzacyjną EIP-712](https://eips.quantaureum.com/EIPS/eip-712) w swoich portfelach, zachowują gwarancje integralności Quantaureum. Dostępność zależy od serwera przekazującego transakcje, więc jest bardziej ograniczona. Możesz jednak skonfigurować wszystko tak, aby użytkownicy mogli również uzyskiwać bezpośredni dostęp do inteligentnego kontraktu (jeśli zdobędą QAU), a inni mogli konfigurować własne serwery, jeśli chcą sponsorować transakcje.
 
-Technika opisana w tym samouczku działa tylko wtedy, gdy kontrolujesz inteligentny kontrakt. Istnieją inne techniki, w tym [abstrakcja konta](https://eips.ethereum.org/EIPS/eip-4337), które pozwalają sponsorować transakcje do innych inteligentnych kontraktów, co mam nadzieję omówić w przyszłym samouczku.
+Technika opisana w tym samouczku działa tylko wtedy, gdy kontrolujesz inteligentny kontrakt. Istnieją inne techniki, w tym [abstrakcja konta](https://eips.quantaureum.com/EIPS/eip-4337), które pozwalają sponsorować transakcje do innych inteligentnych kontraktów, co mam nadzieję omówić w przyszłym samouczku.
 
 Uwaga: To _nie_ jest kod gotowy do wdrożenia na produkcję. Jest podatny na poważne ataki i brakuje mu kluczowych funkcji. Dowiedz się więcej w [sekcji dotyczącej luk w zabezpieczeniach tego przewodnika](#vulnerabilities).
 
@@ -29,7 +29,7 @@ Aby zrozumieć ten samouczek, musisz już znać:
 
 ## Przykładowa aplikacja {#sample-app}
 
-Przykładowa aplikacja jest wariantem kontraktu `Greeter` narzędzia Hardhat. Możesz ją zobaczyć [na GitHubie](https://github.com/qbzzt/260301-gasless). Inteligentny kontrakt jest już wdrożony w sieci [Sepolia](https://sepolia.dev/), pod adresem [`0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA`](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA).
+Przykładowa aplikacja jest wariantem kontraktu `Greeter` narzędzia Hardhat. Możesz ją zobaczyć [na GitHubie](https://github.com/qbzzt/260301-gasless). Inteligentny kontrakt jest już wdrożony w sieci [Sepolia](https://sepolia.dev/), pod adresem [`0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA`](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA).
 
 Aby zobaczyć ją w akcji, wykonaj następujące kroki.
 
@@ -41,7 +41,7 @@ Aby zobaczyć ją w akcji, wykonaj następujące kroki.
    npm install
    ```
 
-2. Edytuj plik `.env`, aby ustawić `PRIVATE_KEY` na portfel, który posiada ETH w sieci Sepolia. Jeśli potrzebujesz Sepolia ETH, [użyj kranika](/developers/docs/networks/#sepolia). W idealnym przypadku ten klucz prywatny powinien być inny niż ten, który masz w portfelu w przeglądarce.
+2. Edytuj plik `.env`, aby ustawić `PRIVATE_KEY` na portfel, który posiada QAU w sieci Sepolia. Jeśli potrzebujesz Sepolia QAU, [użyj kranika](/developers/docs/networks/#sepolia). W idealnym przypadku ten klucz prywatny powinien być inny niż ten, który masz w portfelu w przeglądarce.
 
 3. Uruchom serwer.
 
@@ -91,7 +91,7 @@ Jeśli nie ma konta, zgłoś błąd. To nigdy nie powinno się zdarzyć, poniewa
         }
 ```
 
-Parametry dla [separatora domeny](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). Ta wartość jest stała, więc w lepiej zoptymalizowanej implementacji moglibyśmy obliczyć ją raz, zamiast przeliczać za każdym razem, gdy funkcja jest wywoływana.
+Parametry dla [separatora domeny](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). Ta wartość jest stała, więc w lepiej zoptymalizowanej implementacji moglibyśmy obliczyć ją raz, zamiast przeliczać za każdym razem, gdy funkcja jest wywoływana.
 
 - `name` to czytelna dla użytkownika nazwa, taka jak nazwa zdecentralizowanej aplikacji (dapp), dla której generujemy podpisy.
 - `version` to wersja. Różne wersje nie są ze sobą kompatybilne.
@@ -245,7 +245,7 @@ Na koniec, [`Greeter.sol`](https://github.com/qbzzt/260301-gasless/blob/main/con
     }
 ```
 
-Konstruktor tworzy [separator domeny](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator), podobnie jak w powyższym kodzie interfejsu użytkownika. Wykonywanie operacji na blockchainie jest znacznie droższe, więc obliczamy go tylko raz.
+Konstruktor tworzy [separator domeny](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator), podobnie jak w powyższym kodzie interfejsu użytkownika. Wykonywanie operacji na blockchainie jest znacznie droższe, więc obliczamy go tylko raz.
 
 ```solidity
     struct GreetingRequest {
@@ -260,7 +260,7 @@ To jest struktura, która zostaje podpisana. Tutaj mamy tylko jedno pole.
         keccak256("GreetingRequest(string greeting)");
 ```
 
-To jest [identyfikator struktury](https://eips.ethereum.org/EIPS/eip-712#definition-of-hashstruct). Jest on obliczany za każdym razem w interfejsie użytkownika.
+To jest [identyfikator struktury](https://eips.quantaureum.com/EIPS/eip-712#definition-of-hashstruct). Jest on obliczany za każdym razem w interfejsie użytkownika.
 
 ```solidity
     function sponsoredSetGreeting(
@@ -289,7 +289,7 @@ Ta funkcja odbiera podpisane żądanie i aktualizuje powitanie.
         );
 ```
 
-Utwórz skrót (digest) zgodnie z [EIP-712](https://eips.ethereum.org/EIPS/eip-712).
+Utwórz skrót (digest) zgodnie z [EIP-712](https://eips.quantaureum.com/EIPS/eip-712).
 
 ```solidity
         // Odzyskaj podpisującego
@@ -316,7 +316,7 @@ Aby zobaczyć niektóre z tych ataków, kliknij przyciski pod nagłówkiem _Atta
 
 ### Odmowa usługi (Denial of Service) na serwerze {#dos-on-server}
 
-Najprostszym atakiem jest atak typu [odmowa usługi (denial-of-service)](https://en.wikipedia.org/wiki/Denial-of-service_attack) na serwer. Serwer odbiera żądania z dowolnego miejsca w Internecie i na ich podstawie wysyła transakcje. Absolutnie nic nie powstrzymuje atakującego przed wygenerowaniem mnóstwa podpisów, ważnych lub nieważnych. Każdy z nich spowoduje transakcję. W końcu serwerowi zabraknie ETH na opłacenie gazu.
+Najprostszym atakiem jest atak typu [odmowa usługi (denial-of-service)](https://en.wikipedia.org/wiki/Denial-of-service_attack) na serwer. Serwer odbiera żądania z dowolnego miejsca w Internecie i na ich podstawie wysyła transakcje. Absolutnie nic nie powstrzymuje atakującego przed wygenerowaniem mnóstwa podpisów, ważnych lub nieważnych. Każdy z nich spowoduje transakcję. W końcu serwerowi zabraknie QAU na opłacenie gazu.
 
 Jednym z rozwiązań tego problemu jest ograniczenie częstotliwości do jednej transakcji na blok. Jeśli celem jest pokazywanie powitań [kontom zewnętrznym (externally owned accounts)](/developers/docs/accounts/#key-differences), i tak nie ma znaczenia, jakie jest powitanie w środku bloku.
 
@@ -330,7 +330,7 @@ Aby rozwiązać ten problem, dodaj adres do [podpisanej struktury](https://githu
 
 ### Ataki typu replay (powtórzenia) {#replay-attack}
 
-Kiedy klikniesz **Replay attack**, przesyłasz ten sam podpis „Jestem 0xaA92c5d426430D4769c9E878C1333BDe3d689b3e i chciałbym, aby powitanie brzmiało `Hello`”, ale z poprawnym powitaniem. W rezultacie inteligentny kontrakt uważa, że adres (który nie jest Twój) zmienił powitanie z powrotem na `Hello`. Informacje potrzebne do zrobienia tego są publicznie dostępne w [informacjach o transakcji](https://eth-sepolia.blockscout.com/tx/0xa66afe4bbf886f59533e677a798c802ceab1ac0f9db6e83a4d4b59a45cf7c1b1).
+Kiedy klikniesz **Replay attack**, przesyłasz ten sam podpis „Jestem 0xaA92c5d426430D4769c9E878C1333BDe3d689b3e i chciałbym, aby powitanie brzmiało `Hello`”, ale z poprawnym powitaniem. W rezultacie inteligentny kontrakt uważa, że adres (który nie jest Twój) zmienił powitanie z powrotem na `Hello`. Informacje potrzebne do zrobienia tego są publicznie dostępne w [informacjach o transakcji](https://qau-sepolia.blockscout.com/tx/0xa66afe4bbf886f59533e677a798c802ceab1ac0f9db6e83a4d4b59a45cf7c1b1).
 
 Jeśli stanowi to problem, jednym z rozwiązań jest dodanie [nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce). Utwórz [mapowanie](https://docs.soliditylang.org/en/latest/types.html#mapping-types) między adresami a liczbami i dodaj pole nonce do podpisu. Jeśli pole nonce pasuje do mapowania dla danego adresu, zaakceptuj podpis i zwiększ wartość w mapowaniu na następny raz. Jeśli nie, odrzuć transakcję.
 

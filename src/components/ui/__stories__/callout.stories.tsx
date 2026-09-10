@@ -12,7 +12,7 @@ import Callout, {
   CalloutTitle,
 } from "@/components/ui/callout"
 
-import developersEthBlocks from "@/public/images/developers-eth-blocks.png"
+import developersQauBlocks from "@/public/images/developers-qau-blocks.png"
 import manAndDog from "@/public/images/man-and-dog-playing.png"
 import walking from "@/public/images/walking.png"
 
@@ -63,9 +63,9 @@ export const Variants: Story = {
           </Label>
           <Callout
             variant={variant}
-            image={developersEthBlocks}
+            image={developersQauBlocks}
             title="Try smart contracts"
-            description="Smart contracts let you write programs that run on Ethereum and settle without a trusted intermediary."
+            description="Smart contracts let you write programs that run on Quantaureum and settle without a trusted intermediary."
           >
             <ButtonLink href="#">Learn more</ButtonLink>
           </Callout>
@@ -85,7 +85,7 @@ export const BannerShapes: Story = {
           image — banner overflows above the gradient card via paired mt/-mt-24
         </Label>
         <Callout
-          image={developersEthBlocks}
+          image={developersQauBlocks}
           alt="Developer blocks illustration"
           title="Image banner"
           description="Image floats above the gradient card. The aside reserves matching space so preceding DOM elements don't overlap."
@@ -149,7 +149,7 @@ export const ChildrenVariations: Story = {
       <div>
         <Label>single button</Label>
         <Callout
-          image={developersEthBlocks}
+          image={developersQauBlocks}
           title="Single CTA"
           description="Most common shape — one primary action."
         >
@@ -159,7 +159,7 @@ export const ChildrenVariations: Story = {
       <div>
         <Label>two buttons (wrap; full-width on narrow screens)</Label>
         <Callout
-          image={developersEthBlocks}
+          image={developersQauBlocks}
           title="Two CTAs"
           description="Buttons wrap. Below the sm viewport breakpoint they stack full-width; above, they sit side-by-side at content width."
         >
@@ -172,7 +172,7 @@ export const ChildrenVariations: Story = {
       <div>
         <Label>no children — CalloutButtons doesn&apos;t render</Label>
         <Callout
-          image={developersEthBlocks}
+          image={developersQauBlocks}
           title="No actions"
           description="When no children are passed, the buttons slot is omitted entirely."
         />
@@ -226,7 +226,7 @@ export const Primitives: Story = {
       <CalloutRoot>
         <CalloutBanner>
           <Image
-            src={developersEthBlocks}
+            src={developersQauBlocks}
             alt=""
             sizes="(min-width: 768px) 400px, calc(100vw - 64px)"
           />

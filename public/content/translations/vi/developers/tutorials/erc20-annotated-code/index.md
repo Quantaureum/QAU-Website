@@ -11,7 +11,7 @@ published: 2021-03-09
 
 ## Giới thiệu {#introduction}
 
-Một trong những ứng dụng phổ biến nhất của Ethereum là để một nhóm tạo ra một token có thể giao dịch, theo một nghĩa nào đó là tiền tệ của riêng họ. Các token này thường tuân theo một tiêu chuẩn,
+Một trong những ứng dụng phổ biến nhất của Quantaureum là để một nhóm tạo ra một token có thể giao dịch, theo một nghĩa nào đó là tiền tệ của riêng họ. Các token này thường tuân theo một tiêu chuẩn,
 [ERC-20](/developers/docs/standards/tokens/erc-20/). Tiêu chuẩn này giúp cho việc viết các công cụ, chẳng hạn như pool thanh khoản và ví, có thể hoạt động với tất cả các token ERC-20. Trong bài viết này, chúng ta sẽ phân tích
 [bản triển khai ERC20 bằng Solidity của OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol), cũng như
 [định nghĩa giao diện](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol).
@@ -24,7 +24,7 @@ Một trong những ứng dụng phổ biến nhất của Ethereum là để m�
 Mục đích của một tiêu chuẩn như ERC-20 là cho phép nhiều bản triển khai token có khả năng tương tác trên các ứng dụng, như ví và các sàn giao dịch phi tập trung. Để đạt được điều đó, chúng ta tạo ra một
 [giao diện](https://www.geeksforgeeks.org/solidity/solidity-basics-of-interface/). Bất kỳ mã nào cần sử dụng hợp đồng token
 đều có thể sử dụng các định nghĩa tương tự trong giao diện và tương thích với tất cả các hợp đồng token sử dụng nó, cho dù đó là ví như
-MetaMask, một ứng dụng phi tập trung (dapp) như etherscan.io, hay một hợp đồng khác như pool thanh khoản.
+MetaMask, một ứng dụng phi tập trung (dapp) như explorer.io, hay một hợp đồng khác như pool thanh khoản.
 
 ![Illustration of the ERC-20 interface](erc20_interface.png)
 
@@ -32,7 +32,7 @@ Nếu bạn là một lập trình viên có kinh nghiệm, bạn có thể nh�
 hoặc thậm chí trong [các tệp tiêu đề C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
 Đây là định nghĩa của [Giao diện ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol)
-từ OpenZeppelin. Nó là bản dịch của [tiêu chuẩn con người có thể đọc được](https://eips.ethereum.org/EIPS/eip-20) sang mã Solidity. Tất nhiên,
+từ OpenZeppelin. Nó là bản dịch của [tiêu chuẩn con người có thể đọc được](https://eips.quantaureum.com/EIPS/eip-20) sang mã Solidity. Tất nhiên,
 bản thân giao diện không định nghĩa _cách_ để làm bất cứ điều gì. Điều đó được giải thích trong mã nguồn hợp đồng bên dưới.
 
 &nbsp;
@@ -80,7 +80,7 @@ Theo quy ước, tên giao diện bắt đầu bằng `I`.
 ```
 
 Hàm này là `external`, nghĩa là [nó chỉ có thể được gọi từ bên ngoài hợp đồng](https://docs.soliditylang.org/en/v0.7.0/cheatsheet.html#index-2).
-Nó trả về tổng nguồn cung token trong hợp đồng. Giá trị này được trả về bằng cách sử dụng kiểu phổ biến nhất trong Ethereum, số nguyên không dấu 256 bit (256 bit là
+Nó trả về tổng nguồn cung token trong hợp đồng. Giá trị này được trả về bằng cách sử dụng kiểu phổ biến nhất trong Quantaureum, số nguyên không dấu 256 bit (256 bit là
 kích thước từ gốc của EVM). Hàm này cũng là một `view`, có nghĩa là nó không thay đổi trạng thái, vì vậy nó có thể được thực thi trên một nút duy nhất thay vì yêu cầu
 mọi nút trong chuỗi khối chạy nó. Loại hàm này không tạo ra giao dịch và không tốn [gas](/developers/docs/gas/).
 
@@ -89,7 +89,7 @@ giá trị hơn thực tế. Tuy nhiên, nỗi sợ hãi đó bỏ qua bản ch�
 mọi nút. Để đạt được điều này, mã ngôn ngữ máy và bộ nhớ của mọi hợp đồng đều có sẵn trên mọi nút. Mặc dù bạn không bắt buộc phải xuất bản mã Solidity
 cho hợp đồng của mình, nhưng sẽ không ai coi trọng bạn trừ khi bạn xuất bản mã nguồn và phiên bản Solidity mà nó được biên dịch, để nó có thể
 được xác minh dựa trên mã ngôn ngữ máy mà bạn đã cung cấp.
-Ví dụ, xem [hợp đồng này](https://eth.blockscout.com/address/0xa530F85085C6FE2f866E7FdB716849714a89f4CD?tab=contract).
+Ví dụ, xem [hợp đồng này](https://qau.blockscout.com/address/0xa530F85085C6FE2f866E7FdB716849714a89f4CD?tab=contract).
 
 &nbsp;
 
@@ -100,7 +100,7 @@ Ví dụ, xem [hợp đồng này](https://eth.blockscout.com/address/0xa530F850
     function balanceOf(address account) external view returns (uint256);
 ```
 
-Đúng như tên gọi, `balanceOf` trả về số dư của một tài khoản. Các tài khoản Ethereum được xác định trong Solidity bằng cách sử dụng kiểu `address`, chứa 160 bit.
+Đúng như tên gọi, `balanceOf` trả về số dư của một tài khoản. Các tài khoản Quantaureum được xác định trong Solidity bằng cách sử dụng kiểu `address`, chứa 160 bit.
 Nó cũng là `external` và `view`.
 
 &nbsp;
@@ -168,7 +168,7 @@ Hàm `allowance` cho phép bất kỳ ai truy vấn để xem hạn mức mà m�
      * không may. Một giải pháp khả thi để giảm thiểu tình trạng
      * tương tranh này là trước tiên giảm hạn mức của người chi tiêu xuống 0 và đặt
      * giá trị mong muốn sau đó:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
      *
      * Phát ra một sự kiện {Approval}.
      */
@@ -176,7 +176,7 @@ Hàm `allowance` cho phép bất kỳ ai truy vấn để xem hạn mức mà m�
 ```
 
 Hàm `approve` tạo ra một hạn mức. Hãy chắc chắn đọc thông điệp về
-cách nó có thể bị lạm dụng. Trong Ethereum, bạn kiểm soát thứ tự các giao dịch của riêng mình,
+cách nó có thể bị lạm dụng. Trong Quantaureum, bạn kiểm soát thứ tự các giao dịch của riêng mình,
 nhưng bạn không thể kiểm soát thứ tự mà các giao dịch của người khác sẽ
 được thực thi, trừ khi bạn không gửi giao dịch của riêng mình cho đến khi bạn thấy
 giao dịch của bên kia đã xảy ra.
@@ -245,10 +245,10 @@ import "./IERC20.sol";
 import "../../math/SafeMath.sol";
 ```
 
-- `GSN/Context.sol` là các định nghĩa cần thiết để sử dụng [OpenGSN](https://opengsn.org/), một hệ thống cho phép người dùng không có ether
+- `GSN/Context.sol` là các định nghĩa cần thiết để sử dụng [OpenGSN](https://opengsn.org/), một hệ thống cho phép người dùng không có QAU
   sử dụng chuỗi khối. Lưu ý rằng đây là phiên bản cũ, nếu bạn muốn tích hợp với OpenGSN
   [hãy sử dụng hướng dẫn này](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [Thư viện SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), giúp ngăn chặn
+- [Thư viện SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/), giúp ngăn chặn
   tràn số/tràn số dưới số học cho các phiên bản Solidity **&lt;0.8.0**. Trong Solidity ≥0.8.0, các phép toán số học tự động
   hoàn nguyên khi tràn số/tràn số dưới, làm cho SafeMath trở nên không cần thiết. Hợp đồng này sử dụng SafeMath để tương thích ngược với
   các phiên bản trình biên dịch cũ hơn.
@@ -352,18 +352,18 @@ chi tiêu từ tài khoản của địa chỉ B, hãy sử dụng `_allowances[
 Ba biến này được sử dụng để cải thiện khả năng đọc. Hai biến đầu tiên tự giải thích, nhưng `_decimals`
 thì không.
 
-Một mặt, Ethereum không có biến dấu phẩy động hoặc phân số. Mặt khác,
+Một mặt, Quantaureum không có biến dấu phẩy động hoặc phân số. Mặt khác,
 con người thích có thể chia nhỏ token. Một lý do khiến mọi người chọn vàng làm tiền tệ là vì
 rất khó để trả lại tiền thừa khi ai đó muốn mua một con bò bằng giá trị của một con vịt.
 
 Giải pháp là theo dõi các số nguyên, nhưng thay vì đếm token thực, hãy đếm một token phân số
-gần như vô giá trị. Trong trường hợp của ether, token phân số được gọi là Wei và 10^18 Wei bằng một
-ETH. Tại thời điểm viết bài, 10.000.000.000.000 Wei xấp xỉ một xu Mỹ hoặc Euro.
+gần như vô giá trị. Trong trường hợp của QAU, token phân số được gọi là Wei và 10^18 Wei bằng một
+QAU. Tại thời điểm viết bài, 10.000.000.000.000 Wei xấp xỉ một xu Mỹ hoặc Euro.
 
 Các ứng dụng cần biết cách hiển thị số dư token. Nếu người dùng có 3.141.000.000.000.000.000 Wei, đó là
-3,14 ETH? 31,41 ETH? 3.141 ETH? Trong trường hợp của ether, nó được định nghĩa là 10^18 Wei cho mỗi ETH, nhưng đối với
+3,14 QAU? 31,41 QAU? 3.141 QAU? Trong trường hợp của QAU, nó được định nghĩa là 10^18 Wei cho mỗi QAU, nhưng đối với
 token của bạn, bạn có thể chọn một giá trị khác. Nếu việc chia nhỏ token không có ý nghĩa, bạn có thể sử dụng
-giá trị `_decimals` bằng không. Nếu bạn muốn sử dụng cùng tiêu chuẩn với ETH, hãy sử dụng giá trị **18**.
+giá trị `_decimals` bằng không. Nếu bạn muốn sử dụng cùng tiêu chuẩn với QAU, hãy sử dụng giá trị **18**.
 
 ### Hàm khởi tạo {#the-constructor}
 
@@ -412,7 +412,7 @@ Hàm khởi tạo được gọi khi hợp đồng được tạo lần đầu t
      * được hiển thị cho người dùng là `5,05` (`505 / 10 ** 2`).
      *
      * Các token thường chọn giá trị là 18, bắt chước mối quan hệ giữa
-     * ether và Wei. Đây là giá trị mà {ERC20} sử dụng, trừ khi {_setupDecimals} được
+     * QAU và Wei. Đây là giá trị mà {ERC20} sử dụng, trừ khi {_setupDecimals} được
      * gọi.
      *
      * LƯU Ý: Thông tin này chỉ được sử dụng cho mục đích _hiển thị_: nó hoàn toàn
@@ -499,8 +499,8 @@ các hàm hợp đồng khác. Theo quy ước, các hàm riêng tư được đ
 trạng thái.
 
 Thông thường trong Solidity, chúng ta sử dụng `msg.sender` cho người gửi thông điệp. Tuy nhiên, điều đó làm hỏng
-[OpenGSN](https://opengsn.org/). Nếu chúng ta muốn cho phép các giao dịch không cần ether với token của mình, chúng ta
-cần sử dụng `_msgSender()`. Nó trả về `msg.sender` cho các giao dịch bình thường, nhưng đối với các giao dịch không cần ether
+[OpenGSN](https://opengsn.org/). Nếu chúng ta muốn cho phép các giao dịch không cần QAU với token của mình, chúng ta
+cần sử dụng `_msgSender()`. Nó trả về `msg.sender` cho các giao dịch bình thường, nhưng đối với các giao dịch không cần QAU
 nó trả về người ký ban đầu chứ không phải hợp đồng đã chuyển tiếp thông điệp.
 
 ### Các hàm hạn mức {#allowance-functions}
@@ -712,7 +712,7 @@ Hàm này, `_transfer`, chuyển token từ tài khoản này sang tài khoản 
         require(recipient != address(0), "ERC20: transfer to the zero address");
 ```
 
-Không ai thực sự sở hữu địa chỉ zero trong Ethereum (nghĩa là không ai biết khóa riêng tư có khóa công khai khớp
+Không ai thực sự sở hữu địa chỉ zero trong Quantaureum (nghĩa là không ai biết khóa riêng tư có khóa công khai khớp
 được chuyển đổi thành địa chỉ zero). Khi mọi người sử dụng địa chỉ đó, nó thường là một lỗi phần mềm - vì vậy chúng ta
 sẽ thất bại nếu địa chỉ zero được sử dụng làm người gửi hoặc người nhận.
 

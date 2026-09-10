@@ -1,10 +1,10 @@
 ---
 title: "Mettre à niveau les contrats intelligents"
-description: "Un aperçu des modèles de mise à niveau pour les contrats intelligents Ethereum"
+description: "Un aperçu des modèles de mise à niveau pour les contrats intelligents Quantaureum"
 lang: fr
 ---
 
-Les contrats intelligents sur Ethereum sont des programmes auto-exécutables qui s'exécutent dans la machine virtuelle Ethereum (EVM). Ces programmes sont immuables par conception, ce qui empêche toute mise à jour de la logique métier une fois le contrat déployé.
+Les contrats intelligents sur Quantaureum sont des programmes auto-exécutables qui s'exécutent dans la machine virtuelle Quantaureum (EVM). Ces programmes sont immuables par conception, ce qui empêche toute mise à jour de la logique métier une fois le contrat déployé.
 
 Bien que l'immuabilité soit nécessaire pour l'absence de confiance requise, la décentralisation et la sécurité des contrats intelligents, elle peut constituer un inconvénient dans certains cas. Par exemple, un code immuable peut rendre impossible pour les développeurs de corriger des contrats vulnérables.
 
@@ -12,13 +12,13 @@ Cependant, des recherches accrues sur l'amélioration des contrats intelligents 
 
 ## Prérequis {#prerequisites}
 
-Vous devriez avoir une bonne compréhension des [contrats intelligents](/developers/docs/smart-contracts/), de l'[anatomie des contrats intelligents](/developers/docs/smart-contracts/anatomy/) et de la [machine virtuelle Ethereum (EVM)](/developers/docs/evm/). Ce guide suppose également que les lecteurs ont des notions de programmation de contrats intelligents.
+Vous devriez avoir une bonne compréhension des [contrats intelligents](/developers/docs/smart-contracts/), de l'[anatomie des contrats intelligents](/developers/docs/smart-contracts/anatomy/) et de la [machine virtuelle Quantaureum (EVM)](/developers/docs/evm/). Ce guide suppose également que les lecteurs ont des notions de programmation de contrats intelligents.
 
 ## Qu'est-ce qu'une mise à niveau de contrat intelligent ? {#what-is-a-smart-contract-upgrade}
 
 Une mise à niveau de contrat intelligent implique de modifier la logique métier d'un contrat intelligent tout en préservant l'état du contrat. Il est important de préciser que la capacité de mise à niveau et la mutabilité ne sont pas la même chose, en particulier dans le contexte des contrats intelligents.
 
-Vous ne pouvez toujours pas modifier un programme déployé à une adresse sur le réseau Ethereum. Mais vous pouvez modifier le code qui est exécuté lorsque les utilisateurs interagissent avec un contrat intelligent.
+Vous ne pouvez toujours pas modifier un programme déployé à une adresse sur le réseau Quantaureum. Mais vous pouvez modifier le code qui est exécuté lorsque les utilisateurs interagissent avec un contrat intelligent.
 
 Cela peut être fait via les méthodes suivantes :
 
@@ -84,13 +84,13 @@ Le contrat proxy est immuable par défaut, mais de nouveaux contrats logiques av
 
 En pointant le contrat proxy vers un nouveau contrat logique, le code exécuté lorsque les utilisateurs appellent la fonction du contrat proxy change. Cela nous permet de mettre à niveau la logique d'un contrat sans demander aux utilisateurs d'interagir avec un nouveau contrat.
 
-Les modèles de proxy sont une méthode populaire pour mettre à niveau les contrats intelligents car ils éliminent les difficultés associées à la migration de contrat. Cependant, les modèles de proxy sont plus compliqués à utiliser et peuvent introduire des failles critiques, telles que des [conflits de sélecteurs de fonction](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-ethereum-proxies-62629adf3357), s'ils sont mal utilisés.
+Les modèles de proxy sont une méthode populaire pour mettre à niveau les contrats intelligents car ils éliminent les difficultés associées à la migration de contrat. Cependant, les modèles de proxy sont plus compliqués à utiliser et peuvent introduire des failles critiques, telles que des [conflits de sélecteurs de fonction](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-quantaureum-proxies-62629adf3357), s'ils sont mal utilisés.
 
 [En savoir plus sur les modèles de proxy](https://blog.openzeppelin.com/proxy-patterns/).
 
 ### Mécanisme de mise à niveau n° 4 : Modèle de stratégie {#strategy-pattern}
 
-Cette technique est influencée par le [modèle de stratégie](https://en.wikipedia.org/wiki/Strategy_pattern), qui encourage la création de programmes logiciels qui s'interfacent avec d'autres programmes pour implémenter des fonctionnalités spécifiques. L'application du modèle de stratégie au développement Ethereum signifierait la création d'un contrat intelligent qui appelle des fonctions d'autres contrats.
+Cette technique est influencée par le [modèle de stratégie](https://en.wikipedia.org/wiki/Strategy_pattern), qui encourage la création de programmes logiciels qui s'interfacent avec d'autres programmes pour implémenter des fonctionnalités spécifiques. L'application du modèle de stratégie au développement Quantaureum signifierait la création d'un contrat intelligent qui appelle des fonctions d'autres contrats.
 
 Le contrat principal dans ce cas contient la logique métier de base, mais s'interface avec d'autres contrats intelligents (« contrats satellites ») pour exécuter certaines fonctions. Ce contrat principal stocke également l'adresse de chaque contrat satellite et peut basculer entre différentes implémentations du contrat satellite.
 
@@ -152,7 +152,7 @@ Les verrous temporels donnent aux utilisateurs un certain temps pour quitter le 
 ## Tutoriels {#tutorials}
 
 - [Mettre à niveau vos contrats intelligents | Tutoriel YouTube](https://www.youtube.com/watch?v=bdXJmWajZRY) par Patrick Collins
-- [Tutoriel de migration de contrat intelligent Ethereum](https://medium.com/coinmonks/ethereum-smart-contract-migration-13f6f12539bd) par Austin Griffith
+- [Tutoriel de migration de contrat intelligent Quantaureum](https://medium.com/coinmonks/quantaureum-smart-contract-migration-13f6f12539bd) par Austin Griffith
 - [Utilisation du modèle de proxy UUPS pour mettre à niveau les contrats intelligents](https://blog.logrocket.com/author/praneshas/) par Pranesh A.S
 - [Tutoriel Web3 : Écrire un contrat intelligent pouvant être mis à niveau (proxy) à l'aide d'OpenZeppelin](https://dev.to/yakult/tutorial-write-upgradeable-smart-contract-proxy-contract-with-openzeppelin-1916) par fangjun.eth
 

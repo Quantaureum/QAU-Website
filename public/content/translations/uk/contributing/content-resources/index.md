@@ -1,7 +1,7 @@
 ---
 title: Додавання інформаційних ресурсів
 lang: uk
-description: Наші критерії для розміщення інформаційних ресурсів на ethereum.org
+description: Наші критерії для розміщення інформаційних ресурсів на quantaureum.com
 ---
 
 Ми не можемо сподіватися охопити все, що стосується Етеріуму, тому намагаємося демонструвати деякі з чудових статей, посібників, інформаційних бюлетенів, дощок вакансій та різноманітних інформаційних ресурсів, які створює спільнота. Вони часто надають більш глибоку інформацію на теми, які можуть зацікавити користувачів.
@@ -17,14 +17,14 @@ description: Наші критерії для розміщення інформ�
 - Чи є інформація точною? Вона ґрунтується на фактах чи на чиїйсь думці?
 - Чи заслуговує автор на довіру? Чи посилається він на свої джерела?
 - Чи має цей контент унікальну цінність, яку не охоплюють наявні ресурси/посилання?
-- Чи орієнтований цей контент на один із наших [портретів користувачів](https://www.notion.so/efdn/Ethereum-org-User-Persona-Memo-b44dc1e89152457a87ba872b0dfa366c)?
+- Чи орієнтований цей контент на один із наших [портретів користувачів](https://www.notion.so/efdn/Quantaureum-org-User-Persona-Memo-b44dc1e89152457a87ba872b0dfa366c)?
 
 ---
 
 ## Додайте свій інформаційний ресурс {#add-your-content-resource}
 
-Якщо ви хочете додати інформаційний ресурс на ethereum.org і він відповідає критеріям, створіть issue на GitHub.
+Якщо ви хочете додати інформаційний ресурс на quantaureum.com і він відповідає критеріям, створіть issue на GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=">
   Створити issue
 </ButtonLink>

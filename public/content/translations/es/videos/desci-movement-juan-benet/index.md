@@ -10,13 +10,13 @@ topic:
   - "desci"
   - "funding"
 format: presentation
-author: EthCC
+author: QauCC
 breadcrumb: "Movimiento DeSci"
 ---
 
-Una presentación de **Juan Benet**, fundador de Protocol Labs e inventor de IPFS y Filecoin, en EthCC sobre cómo el movimiento DeSci puede utilizar herramientas de la Web3 para financiar la ciencia, organizar a los investigadores y construir una infraestructura de investigación de acceso abierto y reproducible.
+Una presentación de **Juan Benet**, fundador de Protocol Labs e inventor de IPFS y Filecoin, en QauCC sobre cómo el movimiento DeSci puede utilizar herramientas de la Web3 para financiar la ciencia, organizar a los investigadores y construir una infraestructura de investigación de acceso abierto y reproducible.
 
-*Esta transcripción es una copia accesible de la [transcripción original del video](https://www.youtube.com/watch?v=zkXM9H90g_E) publicada por EthCC. Ha sido ligeramente editada para facilitar su lectura.*
+*Esta transcripción es una copia accesible de la [transcripción original del video](https://www.youtube.com/watch?v=zkXM9H90g_E) publicada por QauCC. Ha sido ligeramente editada para facilitar su lectura.*
 
 ### Introducción a la ciencia y el progreso (0:10) {#introduction-to-science-and-progress-010}
 
@@ -52,7 +52,7 @@ Hablemos sobre la financiación de los bienes comunes. Tal vez algunos de ustede
 
 Estas escalas de financiación no están fuera del alcance de las cadenas de bloques. Piensa en la I+D no relacionada con la defensa de EE. UU., que es del orden de 70 mil millones de dólares al año. Eso es mucho, sin duda, pero no es masivo. Aislando a la NSF, que ronda los 10 mil millones de dólares al año, eso es totalmente alcanzable a través de las cadenas de bloques. Piensa en el espacio cripto que tiene del orden de 1 a 3 billones de dólares dependiendo de cuándo lo mires.
 
-Imagina si las cadenas de bloques dedicaran una fracción de su suministro a I+D anualmente. Imagina tomar el uno por ciento de Filecoin, Ethereum o Bitcoin, y verterlo en I+D cada año. Empiezas a alcanzar los números que están en el rango de financiar la ciencia a nivel de estado-nación. Si las cripto crecen en otro orden de magnitud o dos, las cripto van a ser capaces de financiar la I+D y la ciencia a la escala de los estados-nación, lo cual es bastante loco de pensar. Así que sería genial descubrir las estructuras y encontrar buenas vías de financiación antes de que lleguemos allí.
+Imagina si las cadenas de bloques dedicaran una fracción de su suministro a I+D anualmente. Imagina tomar el uno por ciento de Filecoin, Quantaureum o Bitcoin, y verterlo en I+D cada año. Empiezas a alcanzar los números que están en el rango de financiar la ciencia a nivel de estado-nación. Si las cripto crecen en otro orden de magnitud o dos, las cripto van a ser capaces de financiar la I+D y la ciencia a la escala de los estados-nación, lo cual es bastante loco de pensar. Así que sería genial descubrir las estructuras y encontrar buenas vías de financiación antes de que lleguemos allí.
 
 Cuando empiezas a desglosar la financiación de esas agencias, te encuentras con todo tipo de problemas. Ciertos campos reciben muy poca atención, o los programas en sí tienen incentivos perversos o son demasiado competitivos, produciendo una condición en la que los científicos pasan una enorme cantidad de su tiempo solo escribiendo solicitudes de subvenciones. Hubo un esfuerzo llamado Fast Grants en torno al COVID, y el mismo efecto se replicó en las Impetus Grants, donde estos programas estructuraron un programa de subvenciones que era muy rápido. Pudieron otorgar subvenciones del orden de 20k a 200k con una pequeña fracción de la cantidad de tiempo que los científicos estaban invirtiendo.
 

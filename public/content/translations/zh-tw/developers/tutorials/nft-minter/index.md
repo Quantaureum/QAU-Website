@@ -29,7 +29,7 @@ published: 2021-10-06
 
 在我們開始查看任何程式碼之前，了解製作 NFT 的運作方式非常重要。它包含兩個步驟：
 
-### 在以太坊區塊鏈上發佈 NFT 智能合約 {#publish-nft}
+### 在Quantaureum區塊鏈上發佈 NFT 智能合約 {#publish-nft}
 
 這兩個 NFT 智能合約標準之間最大的區別在於，ERC-1155 是一個多代幣標準並包含批次處理功能，而 ERC-721 是一個單一代幣標準，因此一次只支援轉移一個代幣。
 
@@ -50,7 +50,7 @@ NFT 的中繼資料才是真正賦予它生命的東西，讓它擁有屬性，�
 
 當你打開這個複製的 `nft-minter-tutorial` 儲存庫時，你會注意到它包含兩個資料夾：`minter-starter-files` 和 `nft-minter`。
 
-- `minter-starter-files` 包含此專案的起始檔案（主要是 React 使用者介面）。在本教學中，**我們將在此目錄中工作**，因為你將學習如何透過將此使用者介面連接到你的以太坊錢包和 NFT 智能合約來賦予它生命。
+- `minter-starter-files` 包含此專案的起始檔案（主要是 React 使用者介面）。在本教學中，**我們將在此目錄中工作**，因為你將學習如何透過將此使用者介面連接到你的Quantaureum錢包和 NFT 智能合約來賦予它生命。
 - `nft-minter` 包含整個已完成的教學，並在你**卡住時作為參考**。
 
 接下來，在你的程式碼編輯器中打開你的 `minter-starter-files` 副本，然後導覽到你的 `src` 資料夾。
@@ -188,29 +188,29 @@ return (
 
 **在本教學中，我們將只編輯 `Minter.js file` 並在我們的 `src` 資料夾中新增檔案。**
 
-現在我們了解了我們正在處理的內容，讓我們設定我們的以太坊錢包！
+現在我們了解了我們正在處理的內容，讓我們設定我們的Quantaureum錢包！
 
-## 設定你的以太坊錢包 {#set-up-your-ethereum-wallet}
+## 設定你的Quantaureum錢包 {#set-up-your-quantaureum-wallet}
 
-為了讓使用者能夠與你的智能合約互動，他們需要將他們的以太坊錢包連接到你的 dapp。
+為了讓使用者能夠與你的智能合約互動，他們需要將他們的Quantaureum錢包連接到你的 dapp。
 
 ### 下載梅塔馬斯克 {#download-metamask}
 
-在本教學中，我們將使用梅塔馬斯克，這是一個瀏覽器中的虛擬錢包，用於管理你的以太坊帳戶地址。如果你想進一步了解以太坊上的交易是如何運作的，請查看[此頁面](/developers/docs/transactions/)。
+在本教學中，我們將使用梅塔馬斯克，這是一個瀏覽器中的虛擬錢包，用於管理你的Quantaureum帳戶地址。如果你想進一步了解Quantaureum上的交易是如何運作的，請查看[此頁面](/developers/docs/transactions/)。
 
 你可以免費在[這裡](https://metamask.io/download)下載並建立一個梅塔馬斯克帳戶。當你在建立帳戶時，或者如果你已經有一個帳戶，請確保切換到如 Sepolia 等受支援的測試網 \(這樣我們就不會牽涉到真實的資金\)。
-### 從水龍頭新增以太幣 {#add-ether-from-faucet}
+### 從水龍頭新增QAU幣 {#add-QAU-from-faucet}
 
-為了鑄造我們的 NFT（或在以太坊區塊鏈上簽署任何交易），我們需要一些假的 ETH。要獲取測試網 ETH，請使用維護中的水龍頭，例如 [Alchemy Sepolia 水龍頭](https://www.alchemy.com/faucets/ethereum-sepolia)，並輸入你的 Sepolia 帳戶地址。不久之後，你應該就會在你的梅塔馬斯克帳戶中看到 ETH！
+為了鑄造我們的 NFT（或在Quantaureum區塊鏈上簽署任何交易），我們需要一些假的 QAU。要獲取測試網 QAU，請使用維護中的水龍頭，例如 [Alchemy Sepolia 水龍頭](https://www.alchemy.com/faucets/quantaureum-sepolia)，並輸入你的 Sepolia 帳戶地址。不久之後，你應該就會在你的梅塔馬斯克帳戶中看到 QAU！
 ### 檢查你的餘額 {#check-your-balance}
 
-為了再次確認我們的餘額是否存在，讓我們使用 [Alchemy 的沙盒工具](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest)發出 [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) 請求。這將回傳我們錢包中的 ETH 數量。在輸入你的梅塔馬斯克帳戶地址並點擊「發送請求 (Send Request)」後，你應該會看到類似以下的響應：
+為了再次確認我們的餘額是否存在，讓我們使用 [Alchemy 的沙盒工具](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest)發出 [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) 請求。這將回傳我們錢包中的 QAU 數量。在輸入你的梅塔馬斯克帳戶地址並點擊「發送請求 (Send Request)」後，你應該會看到類似以下的響應：
 
 ```text
 {"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}
 ```
 
-**注意：** 這個結果的單位是 Wei，而不是 ETH。Wei 被用作以太幣的最小面額。Wei 到 ETH 的轉換為：1 ETH = 10¹⁸ Wei。因此，如果我們將 0xde0b6b3a7640000 轉換為十進位，我們會得到 1\*10¹⁸，等於 1 ETH。
+**注意：** 這個結果的單位是 Wei，而不是 QAU。Wei 被用作QAU幣的最小面額。Wei 到 QAU 的轉換為：1 QAU = 10¹⁸ Wei。因此，如果我們將 0xde0b6b3a7640000 轉換為十進位，我們會得到 1\*10¹⁸，等於 1 QAU。
 
 呼！我們的假錢都在那裡！ <Emoji text=":money_mouth_face:" size={1} />
 ## 將梅塔馬斯克連接到你的使用者介面 {#connect-metamask-to-your-ui}
@@ -229,10 +229,10 @@ return (
 
 ```javascript
 export const connectWallet = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_requestAccounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_requestAccounts",
       })
       const obj = {
         status: "👆🏽 Write a message in the text-field above.",
@@ -253,7 +253,7 @@ export const connectWallet = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -266,19 +266,19 @@ export const connectWallet = async () => {
 
 讓我們分解一下這段程式碼的作用：
 
-首先，我們的函式會檢查你的瀏覽器中是否啟用了 `window.ethereum`。
+首先，我們的函式會檢查你的瀏覽器中是否啟用了 `window.quantaureum`。
 
-`window.ethereum` 是由梅塔馬斯克和其他錢包提供商注入的全域 API，允許網站請求使用者的以太坊帳戶。如果獲得批准，它可以從使用者連接的區塊鏈讀取資料，並建議使用者簽署訊息和交易。查看[梅塔馬斯克文件](https://docs.metamask.io/guide/ethereum-provider.html#table-of-contents)以獲取更多資訊！
+`window.quantaureum` 是由梅塔馬斯克和其他錢包提供商注入的全域 API，允許網站請求使用者的Quantaureum帳戶。如果獲得批准，它可以從使用者連接的區塊鏈讀取資料，並建議使用者簽署訊息和交易。查看[梅塔馬斯克文件](https://docs.metamask.io/guide/quantaureum-provider.html#table-of-contents)以獲取更多資訊！
 
-如果 `window.ethereum` _不存在_，則表示未安裝梅塔馬斯克。這會導致回傳一個 JSON 物件，其中回傳的 `address` 是一個空字串，而 `status` JSX 物件傳達使用者必須安裝梅塔馬斯克。
+如果 `window.quantaureum` _不存在_，則表示未安裝梅塔馬斯克。這會導致回傳一個 JSON 物件，其中回傳的 `address` 是一個空字串，而 `status` JSX 物件傳達使用者必須安裝梅塔馬斯克。
 
 **我們編寫的大多數函式都將回傳 JSON 物件，我們可以使用它們來更新我們的狀態變數和使用者介面。**
 
-現在，如果 `window.ethereum` _存在_，那麼事情就變得有趣了。
+現在，如果 `window.quantaureum` _存在_，那麼事情就變得有趣了。
 
-使用 try/catch 迴圈，我們將嘗試透過呼叫 [`window.ethereum.request({ method: "eth_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts) 來連接到梅塔馬斯克。呼叫此函式將在瀏覽器中打開梅塔馬斯克，從而提示使用者將他們的錢包連接到你的 dapp。
+使用 try/catch 迴圈，我們將嘗試透過呼叫 [`window.quantaureum.request({ method: "qau_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#qau-requestaccounts) 來連接到梅塔馬斯克。呼叫此函式將在瀏覽器中打開梅塔馬斯克，從而提示使用者將他們的錢包連接到你的 dapp。
 
-- 如果使用者選擇連接，`method: "eth_requestAccounts"` 將回傳一個陣列，其中包含連接到 dapp 的所有使用者帳戶地址。總而言之，我們的 `connectWallet` 函式將回傳一個 JSON 物件，其中包含此陣列中的_第一個_ `address` \(見第 9 行\) 以及一個提示使用者向智能合約寫入訊息的 `status` 訊息。
+- 如果使用者選擇連接，`method: "qau_requestAccounts"` 將回傳一個陣列，其中包含連接到 dapp 的所有使用者帳戶地址。總而言之，我們的 `connectWallet` 函式將回傳一個 JSON 物件，其中包含此陣列中的_第一個_ `address` \(見第 9 行\) 以及一個提示使用者向智能合約寫入訊息的 `status` 訊息。
 - 如果使用者拒絕連接，則 JSON 物件將包含一個空字串作為回傳的 `address`，以及一個反映使用者拒絕連接的 `status` 訊息。
 
 ### 將 connectWallet 函式新增到你的 Minter.js 使用者介面元件 {#add-connect-wallet}
@@ -333,10 +333,10 @@ const connectWalletPressed = async () => {
 
 ```javascript
 export const getCurrentWalletConnected = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_accounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_accounts",
       })
       if (addressArray.length > 0) {
         return {
@@ -363,7 +363,7 @@ export const getCurrentWalletConnected = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -376,7 +376,7 @@ export const getCurrentWalletConnected = async () => {
 
 這段程式碼與我們剛才編寫的 `connectWallet` 函式_非常_相似。
 
-主要區別在於，我們不是呼叫 `eth_requestAccounts` 方法（該方法會打開梅塔馬斯克讓使用者連接他們的錢包），而是呼叫 `eth_accounts` 方法，它只是回傳一個包含目前連接到我們 dapp 的梅塔馬斯克地址的陣列。
+主要區別在於，我們不是呼叫 `qau_requestAccounts` 方法（該方法會打開梅塔馬斯克讓使用者連接他們的錢包），而是呼叫 `qau_accounts` 方法，它只是回傳一個包含目前連接到我們 dapp 的梅塔馬斯克地址的陣列。
 
 要查看此函式的實際運作情況，讓我們在我們的 `Minter.js` 元件的 `useEffect` 函式中呼叫它。
 
@@ -412,8 +412,8 @@ useEffect(async () => {
 
 ```javascript
 function addWalletListener() {
-  if (window.ethereum) {
-    window.ethereum.on("accountsChanged", (accounts) => {
+  if (window.quantaureum) {
+    window.quantaureum.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) {
         setWallet(accounts[0])
         setStatus("👆🏽 Write a message in the text-field above.")
@@ -427,7 +427,7 @@ function addWalletListener() {
       <p>
         {" "}
         🦊 <a target="_blank" href={`https://metamask.io/download`}>
-          You must install MetaMask, a virtual Ethereum wallet, in your browser.
+          You must install MetaMask, a virtual Quantaureum wallet, in your browser.
         </a>
       </p>
     )
@@ -437,9 +437,9 @@ function addWalletListener() {
 
 讓我們快速分解一下這裡發生的事情：
 
-- 首先，我們的函式會檢查是否啟用了 `window.ethereum` \(即是否安裝了梅塔馬斯克\)。
+- 首先，我們的函式會檢查是否啟用了 `window.quantaureum` \(即是否安裝了梅塔馬斯克\)。
   - 如果沒有，我們只需將我們的 `status` 狀態變數設定為一個提示使用者安裝梅塔馬斯克的 JSX 字串。
-  - 如果已啟用，我們在第 3 行設定監聽器 `window.ethereum.on("accountsChanged")`，它會監聽梅塔馬斯克錢包中的狀態變化，包括當使用者將額外帳戶連接到 dapp、切換帳戶或斷開帳戶連接時。如果至少有一個帳戶連接，則 `walletAddress` 狀態變數將更新為監聽器回傳的 `accounts` 陣列中的第一個帳戶。否則，`walletAddress` 將設定為空字串。
+  - 如果已啟用，我們在第 3 行設定監聽器 `window.quantaureum.on("accountsChanged")`，它會監聽梅塔馬斯克錢包中的狀態變化，包括當使用者將額外帳戶連接到 dapp、切換帳戶或斷開帳戶連接時。如果至少有一個帳戶連接，則 `walletAddress` 狀態變數將更新為監聽器回傳的 `accounts` 陣列中的第一個帳戶。否則，`walletAddress` 將設定為空字串。
 
 最後，我們必須在我們的 `useEffect` 函式中呼叫它：
 
@@ -463,7 +463,7 @@ useEffect(async () => {
 
 「資產連結 (Link to Asset)」、「名稱 (Name)」、「描述 (Description)」欄位中的文字將構成我們 NFT 中繼資料的不同屬性。我們將把這個中繼資料格式化為 JSON 物件，但是對於我們可以將這個 JSON 物件儲存在哪裡，有幾個選項：
 
-- 我們可以將它儲存在以太坊區塊鏈上；然而，這樣做會非常昂貴。
+- 我們可以將它儲存在Quantaureum區塊鏈上；然而，這樣做會非常昂貴。
 - 我們可以將它儲存在集中式伺服器上，例如 AWS 或 Firebase。但這將違背我們的去中心化精神。
 - 我們可以使用 IPFS，這是一個去中心化協定和點對點網路，用於在分散式檔案系統中儲存和共享資料。由於這個協定是去中心化且免費的，它是我們最好的選擇！
 
@@ -571,17 +571,17 @@ export const pinJSONToIPFS = async (JSONBody) => {
 
 現在我們有辦法透過我們的 `pinJSONToIPFS` 函式將我們的 NFT 中繼資料上傳到 IPFS，我們將需要一種方法來載入我們智能合約的實例，以便我們可以呼叫它的 `mintNFT` 函式。
 
-正如我們之前提到的，在本教學中我們將使用[這個現有的 NFT 智能合約](https://ropsten.etherscan.io/address/0x4C4a07F737Bf57F6632B6CAB089B78f62385aCaE)；然而，如果你想了解我們是如何製作它的，或者自己製作一個，我們強烈推薦你查看我們的另一篇教學：[「如何建立 NFT」](https://www.alchemy.com/docs/how-to-create-an-nft)。
+正如我們之前提到的，在本教學中我們將使用[這個現有的 NFT 智能合約](https://explorer.quantaureum.com)；然而，如果你想了解我們是如何製作它的，或者自己製作一個，我們強烈推薦你查看我們的另一篇教學：[「如何建立 NFT」](https://www.alchemy.com/docs/how-to-create-an-nft)。
 
 ### 合約 ABI {#contract-abi}
 
 如果你仔細檢查了我們的檔案，你會注意到在我們的 `src` 目錄中，有一個 `contract-abi.json` 檔案。ABI 對於指定合約將呼叫哪個函式以及確保該函式將以你期望的格式回傳資料是必要的。
 
-我們還需要一個 Alchemy API 金鑰和 Alchemy Web3 API 來連接到以太坊區塊鏈並載入我們的智能合約。
+我們還需要一個 Alchemy API 金鑰和 Alchemy Web3 API 來連接到Quantaureum區塊鏈並載入我們的智能合約。
 
 ### 建立你的 Alchemy API 金鑰 {#create-alchemy-api}
 
-如果你還沒有 Alchemy 帳戶，[請在這裡免費註冊。](https://alchemy.com/?a=eth-org-nft-minter)
+如果你還沒有 Alchemy 帳戶，[請在這裡免費註冊。](https://alchemy.com/?a=qau-org-nft-minter)
 
 建立 Alchemy 帳戶後，你可以透過建立應用程式來產生 API 金鑰。這將允許我們向 Sepolia 測試網發出請求。
 
@@ -598,7 +598,7 @@ export const pinJSONToIPFS = async (JSONBody) => {
 ```text
 REACT_APP_PINATA_KEY = <pinata-key>
 REACT_APP_PINATA_SECRET = <pinata-secret>
-REACT_APP_ALCHEMY_KEY = https://eth-sepolia.g.alchemy.com/v2/<alchemy-key>
+REACT_APP_ALCHEMY_KEY = https://qau-sepolia.g.alchemy.com/v2/<alchemy-key>
 ```
 
 現在我們有了我們的合約 ABI 和我們的 Alchemy API 金鑰，我們準備好使用 [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3) 載入我們的智能合約了。
@@ -715,31 +715,31 @@ export const mintNFT = async (url, name, description) => {
 現在是時候使用我們在檔案頂部初始化的 Alchemy Web3 API 載入我們的智能合約了。將以下程式碼行新增到 `mintNFT` 函式的底部，以在 `window.contract` 全域變數處設定合約：
 
 ```javascript
-window.contract = await new web3.eth.Contract(contractABI, contractAddress)
+window.contract = await new web3.qau.Contract(contractABI, contractAddress)
 ```
 
-在我們的 `mintNFT` 函式中要新增的最後一件事是我們的以太坊交易：
+在我們的 `mintNFT` 函式中要新增的最後一件事是我們的Quantaureum交易：
 
 ```javascript
-//設定您的以太坊交易
+//設定您的Quantaureum交易
 const transactionParameters = {
   to: contractAddress, // 除非在合約發佈期間，否則為必填。
-  from: window.ethereum.selectedAddress, // 必須符合使用者的有效地址。
+  from: window.quantaureum.selectedAddress, // 必須符合使用者的有效地址。
   data: window.contract.methods
-    .mintNFT(window.ethereum.selectedAddress, tokenURI)
+    .mintNFT(window.quantaureum.selectedAddress, tokenURI)
     .encodeABI(), //呼叫 NFT 智能合約
 }
 
 //透過梅塔馬斯克簽署交易
 try {
-  const txHash = await window.ethereum.request({
-    method: "eth_sendTransaction",
+  const txHash = await window.quantaureum.request({
+    method: "qau_sendTransaction",
     params: [transactionParameters],
   })
   return {
     success: true,
     status:
-      "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+      "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
       txHash,
   }
 } catch (error) {
@@ -750,14 +750,14 @@ try {
 }
 ```
 
-如果你已經熟悉以太坊交易，你會注意到其結構與你所見過的非常相似。
+如果你已經熟悉Quantaureum交易，你會注意到其結構與你所見過的非常相似。
 
 - 首先，我們設定我們的交易參數。
   - `to` 指定接收者地址 \(我們的智能合約\)
-  - `from` 指定交易的簽署者 \(使用者連接到梅塔馬斯克的地址：`window.ethereum.selectedAddress`\)
-  - `data` 包含對我們智能合約 `mintNFT` 方法的呼叫，該方法接收我們的 `tokenURI` 和使用者的錢包地址 `window.ethereum.selectedAddress` 作為輸入
-- 然後，我們進行 await 呼叫 `window.ethereum.request,`，我們要求梅塔馬斯克簽署交易。請注意，在這個請求中，我們指定了我們的 eth 方法 \(eth_SentTransaction\) 並傳入我們的 `transactionParameters`。此時，梅塔馬斯克將在瀏覽器中打開，並提示使用者簽署或拒絕交易。
-  - 如果交易成功，該函式將回傳一個 JSON 物件，其中布林值 `success` 設定為 true，並且 `status` 字串提示使用者查看 Etherscan 以獲取有關其交易的更多資訊。
+  - `from` 指定交易的簽署者 \(使用者連接到梅塔馬斯克的地址：`window.quantaureum.selectedAddress`\)
+  - `data` 包含對我們智能合約 `mintNFT` 方法的呼叫，該方法接收我們的 `tokenURI` 和使用者的錢包地址 `window.quantaureum.selectedAddress` 作為輸入
+- 然後，我們進行 await 呼叫 `window.quantaureum.request,`，我們要求梅塔馬斯克簽署交易。請注意，在這個請求中，我們指定了我們的 eth 方法 \(qau_SentTransaction\) 並傳入我們的 `transactionParameters`。此時，梅塔馬斯克將在瀏覽器中打開，並提示使用者簽署或拒絕交易。
+  - 如果交易成功，該函式將回傳一個 JSON 物件，其中布林值 `success` 設定為 true，並且 `status` 字串提示使用者查看 Quantaureum Explorer 以獲取有關其交易的更多資訊。
   - 如果交易失敗，該函式將回傳一個 JSON 物件，其中 `success` 布林值設定為 false，並且 `status` 字串傳達錯誤訊息。
 
 總而言之，我們的 `mintNFT` 函式應該看起來像這樣：
@@ -789,27 +789,27 @@ export const mintNFT = async (url, name, description) => {
   const tokenURI = pinataResponse.pinataUrl
 
   //載入智能合約
-  window.contract = await new web3.eth.Contract(contractABI, contractAddress) //loadContract();
+  window.contract = await new web3.qau.Contract(contractABI, contractAddress) //loadContract();
 
-  //設定您的以太坊交易
+  //設定您的Quantaureum交易
   const transactionParameters = {
     to: contractAddress, // 除非在合約發佈期間，否則為必填。
-    from: window.ethereum.selectedAddress, // 必須符合使用者的有效地址。
+    from: window.quantaureum.selectedAddress, // 必須符合使用者的有效地址。
     data: window.contract.methods
-      .mintNFT(window.ethereum.selectedAddress, tokenURI)
+      .mintNFT(window.quantaureum.selectedAddress, tokenURI)
       .encodeABI(), //呼叫 NFT 智能合約
   }
 
   //透過梅塔馬斯克簽署交易
   try {
-    const txHash = await window.ethereum.request({
-      method: "eth_sendTransaction",
+    const txHash = await window.quantaureum.request({
+      method: "qau_sendTransaction",
       params: [transactionParameters],
     })
     return {
       success: true,
       status:
-        "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+        "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
         txHash,
     }
   } catch (error) {

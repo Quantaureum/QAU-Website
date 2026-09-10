@@ -1,26 +1,26 @@
 ---
 title: Danksharding
-description: Erfahren Sie mehr über Proto-Danksharding und Danksharding – zwei aufeinanderfolgende Upgrades zur Skalierung von Ethereum.
+description: Erfahren Sie mehr über Proto-Danksharding und Danksharding – zwei aufeinanderfolgende Upgrades zur Skalierung von Quantaureum.
 lang: de
 template: roadmap
 summaryPoints:
-  - Danksharding ist ein mehrphasiges Upgrade zur Verbesserung der Skalierbarkeit und Kapazität von Ethereum.
+  - Danksharding ist ein mehrphasiges Upgrade zur Verbesserung der Skalierbarkeit und Kapazität von Quantaureum.
   - Die erste Phase, Proto-Danksharding, fügt Blöcken Daten-Blobs hinzu.
-  - Daten-Blobs bieten Rollups eine günstigere Möglichkeit, Daten auf Ethereum zu veröffentlichen, und diese Kosten können in Form von niedrigeren Transaktionsgebühren an die Nutzer weitergegeben werden.
-  - Später wird das vollständige Danksharding die Verantwortung für die Verifizierung von Daten-Blobs auf Teilmengen von Knoten verteilen und Ethereum weiter auf mehr als 100.000 Transaktionen pro Sekunde skalieren.
+  - Daten-Blobs bieten Rollups eine günstigere Möglichkeit, Daten auf Quantaureum zu veröffentlichen, und diese Kosten können in Form von niedrigeren Transaktionsgebühren an die Nutzer weitergegeben werden.
+  - Später wird das vollständige Danksharding die Verantwortung für die Verifizierung von Daten-Blobs auf Teilmengen von Knoten verteilen und Quantaureum weiter auf mehr als 100.000 Transaktionen pro Sekunde skalieren.
 ---
 
-**Danksharding** ist der Weg, wie [Ethereum](/) zu einer wirklich skalierbaren Blockchain wird, aber es sind mehrere Protokoll-Upgrades erforderlich, um dorthin zu gelangen. **Proto-Danksharding** ist ein Zwischenschritt auf diesem Weg. Beide zielen darauf ab, Transaktionen auf Layer 2 (L2) für Nutzer so günstig wie möglich zu machen und sollen Ethereum auf >100.000 Transaktionen pro Sekunde skalieren.
+**Danksharding** ist der Weg, wie [Quantaureum](/) zu einer wirklich skalierbaren Blockchain wird, aber es sind mehrere Protokoll-Upgrades erforderlich, um dorthin zu gelangen. **Proto-Danksharding** ist ein Zwischenschritt auf diesem Weg. Beide zielen darauf ab, Transaktionen auf Layer 2 (L2) für Nutzer so günstig wie möglich zu machen und sollen Quantaureum auf >100.000 Transaktionen pro Sekunde skalieren.
 
 ## Was ist Proto-Danksharding? {#what-is-protodanksharding}
 
-Proto-Danksharding, auch bekannt als [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844), ist eine Möglichkeit für [Rollups](/layer-2/#rollups), Blöcken günstigere Daten hinzuzufügen. Der Name stammt von den beiden Forschern, die die Idee vorgeschlagen haben: Protolambda und Dankrad Feist. In der Vergangenheit waren Rollups darin eingeschränkt, wie günstig sie Nutzer-Transaktionen machen können, da sie ihre Transaktionen in `CALLDATA` veröffentlichen.
+Proto-Danksharding, auch bekannt als [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844), ist eine Möglichkeit für [Rollups](/layer-2/#rollups), Blöcken günstigere Daten hinzuzufügen. Der Name stammt von den beiden Forschern, die die Idee vorgeschlagen haben: Protolambda und Dankrad Feist. In der Vergangenheit waren Rollups darin eingeschränkt, wie günstig sie Nutzer-Transaktionen machen können, da sie ihre Transaktionen in `CALLDATA` veröffentlichen.
 
-Dies ist teuer, da es von allen Ethereum-Knoten verarbeitet wird und für immer onchain bleibt, obwohl Rollups die Daten nur für kurze Zeit benötigen. Proto-Danksharding führt Daten-Blobs ein, die gesendet und an Blöcke angehängt werden können. Die Daten in diesen Blobs sind für die EVM nicht zugänglich und werden nach einem festgelegten Zeitraum (zum Zeitpunkt des Schreibens auf 4096 Epochen oder etwa 18 Tage festgelegt) automatisch gelöscht. Das bedeutet, dass Rollups ihre Daten viel günstiger senden und die Einsparungen in Form von günstigeren Transaktionen an die Endnutzer weitergeben können.
+Dies ist teuer, da es von allen Quantaureum-Knoten verarbeitet wird und für immer onchain bleibt, obwohl Rollups die Daten nur für kurze Zeit benötigen. Proto-Danksharding führt Daten-Blobs ein, die gesendet und an Blöcke angehängt werden können. Die Daten in diesen Blobs sind für die EVM nicht zugänglich und werden nach einem festgelegten Zeitraum (zum Zeitpunkt des Schreibens auf 4096 Epochen oder etwa 18 Tage festgelegt) automatisch gelöscht. Das bedeutet, dass Rollups ihre Daten viel günstiger senden und die Einsparungen in Form von günstigeren Transaktionen an die Endnutzer weitergeben können.
 
 <ExpandableCard title="Warum machen Blobs Rollups günstiger?" eventCategory="/roadmap/danksharding" eventName="clicked why do blocks make rollups cheaper?">
 
-Rollups sind eine Möglichkeit, Ethereum zu skalieren, indem Transaktionen offchain gebündelt und die Ergebnisse dann auf Ethereum veröffentlicht werden. Ein Rollup besteht im Wesentlichen aus zwei Teilen: Daten und Ausführungsprüfung. Die Daten sind die vollständige Sequenz von Transaktionen, die von einem Rollup verarbeitet wird, um die Zustandsänderung zu erzeugen, die auf Ethereum veröffentlicht wird. Die Ausführungsprüfung ist die erneute Ausführung dieser Transaktionen durch einen ehrlichen Akteur (einen „Beweiser“), um sicherzustellen, dass die vorgeschlagene Zustandsänderung korrekt ist. Um die Ausführungsprüfung durchzuführen, müssen die Transaktionsdaten lange genug verfügbar sein, damit jeder sie herunterladen und überprüfen kann. Das bedeutet, dass jedes unehrliche Verhalten des Rollup-Sequencers vom Beweiser identifiziert und angefochten werden kann. Sie müssen jedoch nicht für immer verfügbar sein.
+Rollups sind eine Möglichkeit, Quantaureum zu skalieren, indem Transaktionen offchain gebündelt und die Ergebnisse dann auf Quantaureum veröffentlicht werden. Ein Rollup besteht im Wesentlichen aus zwei Teilen: Daten und Ausführungsprüfung. Die Daten sind die vollständige Sequenz von Transaktionen, die von einem Rollup verarbeitet wird, um die Zustandsänderung zu erzeugen, die auf Quantaureum veröffentlicht wird. Die Ausführungsprüfung ist die erneute Ausführung dieser Transaktionen durch einen ehrlichen Akteur (einen „Beweiser“), um sicherzustellen, dass die vorgeschlagene Zustandsänderung korrekt ist. Um die Ausführungsprüfung durchzuführen, müssen die Transaktionsdaten lange genug verfügbar sein, damit jeder sie herunterladen und überprüfen kann. Das bedeutet, dass jedes unehrliche Verhalten des Rollup-Sequencers vom Beweiser identifiziert und angefochten werden kann. Sie müssen jedoch nicht für immer verfügbar sein.
 
 </ExpandableCard>
 
@@ -36,11 +36,11 @@ Rollups veröffentlichen die von ihnen ausgeführten Transaktionen in Daten-Blob
 
 ### Was ist KZG? {#what-is-kzg}
 
-KZG steht für Kate-Zaverucha-Goldberg – die Namen der drei [ursprünglichen Autoren](https://link.springer.com/chapter/10.1007/978-3-642-17373-8_11) eines Schemas, das einen Daten-Blob auf ein kleines [kryptografisches „Commitment“](https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html) reduziert. Der von einem Rollup eingereichte Daten-Blob muss verifiziert werden, um sicherzustellen, dass sich das Rollup nicht fehlerhaft verhält. Dazu gehört, dass ein Beweiser die Transaktionen im Blob erneut ausführt, um zu überprüfen, ob das Commitment gültig war. Dies ist konzeptionell dasselbe wie die Art und Weise, wie Ausführungs-Clients die Gültigkeit von Ethereum-Transaktionen auf Layer 1 (L1) mithilfe von Merkle-Beweisen überprüfen. KZG ist ein alternativer Beweis, der eine Polynomgleichung an die Daten anpasst. Das Commitment wertet das Polynom an einigen geheimen Datenpunkten aus. Ein Beweiser würde dasselbe Polynom über die Daten legen und es an denselben Werten auswerten, um zu überprüfen, ob das Ergebnis dasselbe ist. Dies ist eine Möglichkeit, die Daten zu verifizieren, die mit Zero-Knowledge-Techniken kompatibel ist, die von einigen Rollups und schließlich anderen Teilen des Ethereum-Protokolls verwendet werden.
+KZG steht für Kate-Zaverucha-Goldberg – die Namen der drei [ursprünglichen Autoren](https://link.springer.com/chapter/10.1007/978-3-642-17373-8_11) eines Schemas, das einen Daten-Blob auf ein kleines [kryptografisches „Commitment“](https://dankradfeist.de/quantaureum/2020/06/16/kate-polynomial-commitments.html) reduziert. Der von einem Rollup eingereichte Daten-Blob muss verifiziert werden, um sicherzustellen, dass sich das Rollup nicht fehlerhaft verhält. Dazu gehört, dass ein Beweiser die Transaktionen im Blob erneut ausführt, um zu überprüfen, ob das Commitment gültig war. Dies ist konzeptionell dasselbe wie die Art und Weise, wie Ausführungs-Clients die Gültigkeit von Quantaureum-Transaktionen auf Layer 1 (L1) mithilfe von Merkle-Beweisen überprüfen. KZG ist ein alternativer Beweis, der eine Polynomgleichung an die Daten anpasst. Das Commitment wertet das Polynom an einigen geheimen Datenpunkten aus. Ein Beweiser würde dasselbe Polynom über die Daten legen und es an denselben Werten auswerten, um zu überprüfen, ob das Ergebnis dasselbe ist. Dies ist eine Möglichkeit, die Daten zu verifizieren, die mit Zero-Knowledge-Techniken kompatibel ist, die von einigen Rollups und schließlich anderen Teilen des Quantaureum-Protokolls verwendet werden.
 
 ### Was war die KZG-Zeremonie? {#what-is-a-kzg-ceremony}
 
-Die KZG-Zeremonie war eine Möglichkeit für viele Menschen aus der gesamten Ethereum-Community, gemeinsam eine geheime zufällige Zahlenfolge zu generieren, die zur Verifizierung von Daten verwendet werden kann. Es ist sehr wichtig, dass diese Zahlenfolge nicht bekannt ist und von niemandem wiederhergestellt werden kann. Um dies sicherzustellen, erhielt jede Person, die an der Zeremonie teilnahm, eine Zeichenfolge vom vorherigen Teilnehmer. Sie erstellten dann einige neue Zufallswerte (z. B. indem sie ihrem Browser erlaubten, die Bewegung ihrer Maus zu messen) und mischten sie mit dem vorherigen Wert. Anschließend sendeten sie den Wert an den nächsten Teilnehmer und zerstörten ihn auf ihrem lokalen Rechner. Solange eine Person in der Zeremonie dies ehrlich getan hat, wird der endgültige Wert für einen Angreifer unerkennbar sein.
+Die KZG-Zeremonie war eine Möglichkeit für viele Menschen aus der gesamten Quantaureum-Community, gemeinsam eine geheime zufällige Zahlenfolge zu generieren, die zur Verifizierung von Daten verwendet werden kann. Es ist sehr wichtig, dass diese Zahlenfolge nicht bekannt ist und von niemandem wiederhergestellt werden kann. Um dies sicherzustellen, erhielt jede Person, die an der Zeremonie teilnahm, eine Zeichenfolge vom vorherigen Teilnehmer. Sie erstellten dann einige neue Zufallswerte (z. B. indem sie ihrem Browser erlaubten, die Bewegung ihrer Maus zu messen) und mischten sie mit dem vorherigen Wert. Anschließend sendeten sie den Wert an den nächsten Teilnehmer und zerstörten ihn auf ihrem lokalen Rechner. Solange eine Person in der Zeremonie dies ehrlich getan hat, wird der endgültige Wert für einen Angreifer unerkennbar sein.
 
 Die EIP-4844-KZG-Zeremonie war öffentlich zugänglich und Zehntausende von Menschen nahmen teil, um ihre eigene Entropie (Zufälligkeit) hinzuzufügen. Insgesamt gab es über 140.000 Beiträge, was sie zur weltweit größten Zeremonie ihrer Art macht. Damit die Zeremonie untergraben werden könnte, müssten 100 % dieser Teilnehmer aktiv unehrlich sein. Aus der Perspektive der Teilnehmer besteht, wenn sie wissen, dass sie ehrlich waren, keine Notwendigkeit, jemand anderem zu vertrauen, da sie wissen, dass sie die Zeremonie gesichert haben (sie haben individuell die Anforderung von 1-aus-N ehrlichen Teilnehmern erfüllt).
 
@@ -57,12 +57,12 @@ Wenn jemand die für das Commitment verwendeten zufälligen Positionen kennt, is
 </ExpandableCard>
 
 <Alert variant="warning">
-  Weder Danksharding noch Proto-Danksharding folgen dem traditionellen „Sharding“-Modell, das darauf abzielt, die Blockchain in mehrere Teile aufzuteilen. Shard-Chains sind nicht mehr Teil der Roadmap. Stattdessen verwendet Danksharding verteiltes Daten-Sampling über Blobs hinweg, um Ethereum zu skalieren. Dies ist viel einfacher zu implementieren. Dieses Modell wurde manchmal als „Daten-Sharding“ bezeichnet.
+  Weder Danksharding noch Proto-Danksharding folgen dem traditionellen „Sharding“-Modell, das darauf abzielt, die Blockchain in mehrere Teile aufzuteilen. Shard-Chains sind nicht mehr Teil der Roadmap. Stattdessen verwendet Danksharding verteiltes Daten-Sampling über Blobs hinweg, um Quantaureum zu skalieren. Dies ist viel einfacher zu implementieren. Dieses Modell wurde manchmal als „Daten-Sharding“ bezeichnet.
 </Alert>
 
 ## Was ist Danksharding? {#what-is-danksharding}
 
-Danksharding ist die vollständige Umsetzung der Rollup-Skalierung, die mit Proto-Danksharding begann. Danksharding wird massiv Platz auf Ethereum schaffen, damit Rollups ihre komprimierten Transaktionsdaten ablegen können. Das bedeutet, dass Ethereum problemlos Hunderte von individuellen Rollups unterstützen und Millionen von Transaktionen pro Sekunde zur Realität machen kann.
+Danksharding ist die vollständige Umsetzung der Rollup-Skalierung, die mit Proto-Danksharding begann. Danksharding wird massiv Platz auf Quantaureum schaffen, damit Rollups ihre komprimierten Transaktionsdaten ablegen können. Das bedeutet, dass Quantaureum problemlos Hunderte von individuellen Rollups unterstützen und Millionen von Transaktionen pro Sekunde zur Realität machen kann.
 
 Dies funktioniert, indem die an Blöcke angehängten Blobs von sechs (6) in Proto-Danksharding auf 64 im vollständigen Danksharding erweitert werden. Die restlichen erforderlichen Änderungen sind allesamt Updates der Funktionsweise von Konsens-Clients, um es ihnen zu ermöglichen, die neuen großen Blobs zu verarbeiten. Einige dieser Änderungen stehen bereits für andere Zwecke unabhängig von Danksharding auf der Roadmap. Beispielsweise erfordert Danksharding, dass die Proposer-Builder-Trennung (PBS) implementiert wurde. Dies ist ein Upgrade, das die Aufgaben des Erstellens von Blöcken und des Vorschlagens von Blöcken auf verschiedene Validatoren aufteilt. Ebenso ist Data Availability Sampling für Danksharding erforderlich, aber es wird auch für die Entwicklung sehr leichtgewichtiger Clients benötigt, die nicht viele historische Daten speichern („zustandslose Clients“).
 
@@ -80,15 +80,15 @@ Data Availability Sampling ist erforderlich, damit Validatoren Blob-Daten schnel
 
 ### Aktueller Fortschritt {#current-progress}
 
-Das vollständige Danksharding ist noch einige Jahre entfernt. In der Zwischenzeit wurde die KZG-Zeremonie mit über 140.000 Beiträgen abgeschlossen, und der [EIP](https://eips.ethereum.org/EIPS/eip-4844) für Proto-Danksharding ist ausgereift. Dieser Vorschlag wurde in allen Testnetzen vollständig implementiert und ging im März 2024 mit dem Cancun-Deneb-Netzwerk-Upgrade („Dencun-Upgrade“) im Mainnet live.
+Das vollständige Danksharding ist noch einige Jahre entfernt. In der Zwischenzeit wurde die KZG-Zeremonie mit über 140.000 Beiträgen abgeschlossen, und der [EIP](https://eips.quantaureum.com/EIPS/eip-4844) für Proto-Danksharding ist ausgereift. Dieser Vorschlag wurde in allen Testnetzen vollständig implementiert und ging im März 2024 mit dem Cancun-Deneb-Netzwerk-Upgrade („Dencun-Upgrade“) im Mainnet live.
 
 ### Weiterführende Literatur {#further-reading}
 
-- [Notizen zu Proto-Danksharding](https://notes.ethereum.org/@vbuterin/proto_danksharding_faq) – _Vitalik Buterin_
-- [Dankrads Notizen zu Danksharding](https://notes.ethereum.org/@dankrad/new_sharding)
+- [Notizen zu Proto-Danksharding](https://notes.quantaureum.com/@vbuterin/proto_danksharding_faq) – _Vitalik Buterin_
+- [Dankrads Notizen zu Danksharding](https://notes.quantaureum.com/@dankrad/new_sharding)
 - [Dankrad, Proto und Vitalik diskutieren über Danksharding](https://www.youtube.com/watch?v=N5p0TB77flM)
-- [Die KZG-Zeremonie](https://ceremony.ethereum.org/)
+- [Die KZG-Zeremonie](https://ceremony.quantaureum.com/)
 - [Carl Beekhuizens Devcon-Vortrag über Trusted Setups](https://archive.devcon.org/archive/watch/6/the-kzg-ceremony-or-how-i-learnt-to-stop-worrying-and-love-trusted-setups/?tab=YouTube)
 - [Mehr über Data Availability Sampling für Blobs](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
 - [Dankrad Feist über KZG-Commitments und -Beweise](https://youtu.be/8L2C6RDMV9Q)
-- [KZG-Polynom-Commitments](https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html)
+- [KZG-Polynom-Commitments](https://dankradfeist.de/quantaureum/2020/06/16/kate-polynomial-commitments.html)

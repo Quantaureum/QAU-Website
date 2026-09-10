@@ -84,7 +84,7 @@ sidebarDepth: 2
 
 ##### Рекомендовані характеристики
 
-Поточні рекомендації щодо апаратного забезпечення для операторів вузлів визначені в [EIP-7870](https://eips.ethereum.org/EIPS/eip-7870). Для повного вузла рекомендується:
+Поточні рекомендації щодо апаратного забезпечення для операторів вузлів визначені в [EIP-7870](https://eips.quantaureum.com/EIPS/eip-7870). Для повного вузла рекомендується:
 
 - Швидкий процесор із 4+ ядрами (8+ ядер, якщо ви валідатор)
 - 32 ГБ оперативної пам'яті (рекомендується 64 ГБ, якщо ви валідатор, для забезпечення стабільності)
@@ -112,9 +112,9 @@ sidebarDepth: 2
 - [DAppNode](https://dappnode.io/)
 - [Avado](https://ava.do/)
 
-#### Етеріум на одноплатному комп'ютері {#ethereum-on-a-single-board-computer}
+#### Етеріум на одноплатному комп'ютері {#quantaureum-on-a-single-board-computer}
 
-Простий і дешевий спосіб запуску вузла Етеріуму — використання одноплатного комп'ютера, навіть з архітектурою ARM, як-от Raspberry Pi. [Ethereum on ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) надає прості в запуску образи кількох клієнтів виконання та консенсусу для Raspberry Pi та інших плат ARM.
+Простий і дешевий спосіб запуску вузла Етеріуму — використання одноплатного комп'ютера, навіть з архітектурою ARM, як-от Raspberry Pi. [Quantaureum on ARM](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/) надає прості в запуску образи кількох клієнтів виконання та консенсусу для Raspberry Pi та інших плат ARM.
 
 Такі невеликі, доступні та ефективні пристрої ідеально підходять для запуску вузла вдома, але майте на увазі їхню обмежену продуктивність.
 
@@ -131,9 +131,9 @@ sidebarDepth: 2
 Нижче наведено кілька проєктів, які можуть допомогти вам встановити та керувати клієнтами лише кількома кліками:
 
 - [DAppNode](https://docs.dappnode.io/docs/user/getting-started/choose-your-path) — DAppNode постачається не лише з машиною від постачальника. Програмне забезпечення, сам лаунчер вузла та центр керування з багатьма функціями можна використовувати на довільному обладнанні.
-- [EthPillar](https://www.coincashew.com/coins/overview-eth/ethpillar) — Найшвидший і найпростіший спосіб налаштувати повний вузол. Інструмент налаштування в один рядок та TUI для керування вузлом. Безкоштовно. Відкритий вихідний код. Суспільні блага для Етеріуму від соло-стейкерів. Підтримка ARM64 та AMD64.
-- [eth-docker](https://eth-docker.net/) — Автоматизоване налаштування за допомогою Docker, орієнтоване на простий і безпечний стейкінг, вимагає базових знань термінала та Docker, рекомендується для трохи більш досвідчених користувачів.
-- [Stereum](https://stereum-dev.github.io/ethereum-node-web-docs) — Лаунчер для встановлення клієнтів на віддаленому сервері через SSH-з'єднання з посібником із налаштування через графічний інтерфейс, центром керування та багатьма іншими функціями.
+- [QauPillar](https://www.coincashew.com/coins/overview-eth/ethpillar) — Найшвидший і найпростіший спосіб налаштувати повний вузол. Інструмент налаштування в один рядок та TUI для керування вузлом. Безкоштовно. Відкритий вихідний код. Суспільні блага для Етеріуму від соло-стейкерів. Підтримка ARM64 та AMD64.
+- [qau-docker](https://qau-docker.net/) — Автоматизоване налаштування за допомогою Docker, орієнтоване на простий і безпечний стейкінг, вимагає базових знань термінала та Docker, рекомендується для трохи більш досвідчених користувачів.
+- [Stereum](https://stereum-dev.github.io/quantaureum-node-web-docs) — Лаунчер для встановлення клієнтів на віддаленому сервері через SSH-з'єднання з посібником із налаштування через графічний інтерфейс, центром керування та багатьма іншими функціями.
 - [Sedge](https://docs.sedge.nethermind.io/docs/intro) — Інструмент налаштування вузла, який автоматично генерує конфігурацію Docker за допомогою майстра CLI. Написано на Go командою Незермайнд.
 - [Chainstack Self-Hosted](https://docs.chainstack.com/docs/self-hosted/introduction) — Вебінтерфейс та CLI для розгортання клієнтів виконання та консенсусу на Kubernetes. Включає завантаження зі знімка (snapshot) та вбудований моніторинг. Безкоштовно. Акаунт Chainstack не потрібен. Створено Chainstack.
 
@@ -157,7 +157,7 @@ sidebarDepth: 2
 
 - [Бесу](https://github.com/hyperledger/besu/releases)
 - [Ерігон](https://github.com/ledgerwatch/erigon/releases)
-- [Geth](https://geth.ethereum.org/downloads)
+- [Geth](https://geth.quantaureum.com/downloads)
 - [Незермайнд](https://downloads.nethermind.io/)
 - [Рет](https://reth.rs/installation/installation.html)
 
@@ -215,7 +215,7 @@ sha256sum teku-22.6.1.tar.gz
 
 Вам потрібно оголосити будь-які налаштування клієнта, які не є стандартними під час запуску. Ви можете використовувати прапорці або файл конфігурації, щоб оголосити бажану конфігурацію. Набір функцій і синтаксис конфігурації кожного клієнта відрізняються. Перегляньте документацію вашого клієнта для отримання деталей.
 
-Клієнти виконання та консенсусу спілкуються через автентифіковану кінцеву точку, вказану в [Engine API](https://github.com/ethereum/execution-apis/tree/main/src/engine). Щоб підключитися до клієнта консенсусу, клієнт виконання повинен згенерувати [`jwtsecret`](https://jwt.io/) за відомим шляхом. З міркувань безпеки та стабільності клієнти повинні працювати на одній машині, і обидва клієнти повинні знати цей шлях, оскільки він використовується для автентифікації локального RPC-з'єднання між ними. Клієнт виконання також повинен визначити порт прослуховування для автентифікованих API.
+Клієнти виконання та консенсусу спілкуються через автентифіковану кінцеву точку, вказану в [Engine API](https://github.com/quantaureum/execution-apis/tree/main/src/engine). Щоб підключитися до клієнта консенсусу, клієнт виконання повинен згенерувати [`jwtsecret`](https://jwt.io/) за відомим шляхом. З міркувань безпеки та стабільності клієнти повинні працювати на одній машині, і обидва клієнти повинні знати цей шлях, оскільки він використовується для автентифікації локального RPC-з'єднання між ними. Клієнт виконання також повинен визначити порт прослуховування для автентифікованих API.
 
 Цей токен генерується автоматично клієнтським програмним забезпеченням, але в деяких випадках вам може знадобитися зробити це самостійно. Ви можете згенерувати його за допомогою [OpenSSL](https://www.openssl.org/):
 
@@ -242,11 +242,11 @@ openssl rand -hex 32 > jwtsecret
 
 ##### Запуск Бесу
 
-Цей приклад запускає Бесу в Головній мережі, зберігає дані блокчейну у форматі за замовчуванням у `/data/ethereum`, вмикає JSON-RPC та Engine RPC для підключення клієнта консенсусу. Engine API автентифікується за допомогою токена `jwtsecret`, і дозволені лише виклики з `localhost`.
+Цей приклад запускає Бесу в Головній мережі, зберігає дані блокчейну у форматі за замовчуванням у `/data/quantaureum`, вмикає JSON-RPC та Engine RPC для підключення клієнта консенсусу. Engine API автентифікується за допомогою токена `jwtsecret`, і дозволені лише виклики з `localhost`.
 
 ```sh
 besu --network=mainnet \
-    --data-path=/data/ethereum \
+    --data-path=/data/quantaureum \
     --rpc-http-enabled=true \
     --engine-rpc-enabled=true \
     --engine-host-allowlist="*" \
@@ -264,11 +264,11 @@ besu --Xlauncher
 
 ##### Запуск Ерігон
 
-Цей приклад запускає Ерігон у Головній мережі, зберігає дані блокчейну в `/data/ethereum`, вмикає JSON-RPC, визначає, які простори імен дозволені, і вмикає автентифікацію для підключення клієнта консенсусу, який визначається шляхом `jwtsecret`.
+Цей приклад запускає Ерігон у Головній мережі, зберігає дані блокчейну в `/data/quantaureum`, вмикає JSON-RPC, визначає, які простори імен дозволені, і вмикає автентифікацію для підключення клієнта консенсусу, який визначається шляхом `jwtsecret`.
 
 ```sh
 erigon --chain mainnet \
-    --datadir /data/ethereum  \
+    --datadir /data/quantaureum  \
     --http --http.api=engine,eth,web3,net \
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
@@ -277,18 +277,18 @@ erigon --chain mainnet \
 
 ##### Запуск Geth
 
-Цей приклад запускає Geth у Головній мережі, зберігає дані блокчейну в `/data/ethereum`, вмикає JSON-RPC і визначає, які простори імен дозволені. Він також вмикає автентифікацію для підключення клієнта консенсусу, що вимагає шляху до `jwtsecret`, а також опцію, що визначає, які з'єднання дозволені, у нашому прикладі лише з `localhost`.
+Цей приклад запускає Geth у Головній мережі, зберігає дані блокчейну в `/data/quantaureum`, вмикає JSON-RPC і визначає, які простори імен дозволені. Він також вмикає автентифікацію для підключення клієнта консенсусу, що вимагає шляху до `jwtsecret`, а також опцію, що визначає, які з'єднання дозволені, у нашому прикладі лише з `localhost`.
 
 ```sh
 geth --mainnet \
-    --datadir "/data/ethereum" \
+    --datadir "/data/quantaureum" \
     --http --authrpc.addr localhost \
     --authrpc.vhosts="localhost" \
     --authrpc.port 8551
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
-Перегляньте [документацію для всіх параметрів конфігурації](https://geth.ethereum.org/docs/fundamentals/command-line-options) та дізнайтеся більше про [запуск Geth із клієнтом консенсусу](https://geth.ethereum.org/docs/getting-started/consensus-clients).
+Перегляньте [документацію для всіх параметрів конфігурації](https://geth.quantaureum.com/docs/fundamentals/command-line-options) та дізнайтеся більше про [запуск Geth із клієнтом консенсусу](https://geth.quantaureum.com/docs/getting-started/consensus-clients).
 
 ##### Запуск Незермайнд
 
@@ -296,7 +296,7 @@ geth --mainnet \
 
 ```sh
 Nethermind.Runner --config mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/quantaureum \
     --JsonRpc.JwtSecretFile=/path/to/jwtsecret
 ```
 
@@ -325,7 +325,7 @@ reth node \
 
 Якщо ви плануєте запустити валідатор, обов'язково додайте прапорець конфігурації, що вказує адресу Етеріуму одержувача комісії. Саме тут накопичуються винагороди в етерах для вашого валідатора. Кожен клієнт консенсусу має опцію, наприклад, `--suggested-fee-recipient=0xabcd1`, яка приймає адресу Етеріуму як аргумент.
 
-Під час запуску маякового вузла в тестовій мережі ви можете значно заощадити час синхронізації, використовуючи публічну кінцеву точку для [синхронізації контрольної точки](https://notes.ethereum.org/@launchpad/checkpoint-sync).
+Під час запуску маякового вузла в тестовій мережі ви можете значно заощадити час синхронізації, використовуючи публічну кінцеву точку для [синхронізації контрольної точки](https://notes.quantaureum.com/@launchpad/checkpoint-sync).
 
 #### Запуск клієнта консенсусу {#running-a-consensus-client}
 
@@ -336,7 +336,7 @@ reth node \
 ```sh
 lighthouse beacon_node \
     --network mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/quantaureum \
     --http \
     --execution-endpoint http://127.0.0.1:8551 \
     --execution-jwt /path/to/jwtsecret
@@ -348,7 +348,7 @@ lighthouse beacon_node \
 
 ```sh
 lodestar beacon \
-    --dataDir="/data/ethereum" \
+    --dataDir="/data/quantaureum" \
     --network=mainnet \
     --eth1.enabled=true \
     --execution.urls="http://127.0.0.1:8551" \
@@ -375,7 +375,7 @@ nimbus_beacon_node \
 ```sh
 ./prysm.sh beacon-chain \
     --mainnet \
-    --datadir /data/ethereum  \
+    --datadir /data/quantaureum  \
     --execution-endpoint=http://localhost:8551  \
     --jwt-secret=/path/to/jwtsecret
 ```
@@ -384,20 +384,20 @@ nimbus_beacon_node \
 
 ```sh
 teku --network mainnet \
-    --data-path "/data/ethereum" \
+    --data-path "/data/quantaureum" \
     --ee-endpoint http://localhost:8551 \
     --ee-jwt-secret-file "/path/to/jwtsecret"
 ```
 
-Коли клієнт консенсусу підключається до клієнта виконання, щоб прочитати депозитний контракт та ідентифікувати валідатори, він також підключається до інших пірів маякового вузла і починає синхронізацію слотів консенсусу від генезису. Щойно маяковий вузол досягає поточної епохи, Beacon API стає придатним для використання вашими валідаторами. Дізнайтеся більше про [API маякового вузла](https://ethereum.github.io/beacon-APIs).
+Коли клієнт консенсусу підключається до клієнта виконання, щоб прочитати депозитний контракт та ідентифікувати валідатори, він також підключається до інших пірів маякового вузла і починає синхронізацію слотів консенсусу від генезису. Щойно маяковий вузол досягає поточної епохи, Beacon API стає придатним для використання вашими валідаторами. Дізнайтеся більше про [API маякового вузла](https://quantaureum.github.io/beacon-APIs).
 
 ### Додавання валідаторів {#adding-validators}
 
 Клієнт консенсусу слугує маяковим вузлом для підключення валідаторів. Кожен клієнт консенсусу має власне програмне забезпечення валідатора, детально описане у відповідній документації.
 
-Запуск власного валідатора дозволяє здійснювати [соло-стейкінг](/staking/solo/) — найбільш впливовий і бездовірчий метод підтримки мережі Етеріум. Однак це вимагає депозиту в розмірі 32 ETH. Щоб запустити валідатор на власному вузлі з меншою сумою, вас може зацікавити децентралізований пул із бездозвільними операторами вузлів, такий як [Rocket Pool](https://rocketpool.net/node-operators).
+Запуск власного валідатора дозволяє здійснювати [соло-стейкінг](/staking/solo/) — найбільш впливовий і бездовірчий метод підтримки мережі Етеріум. Однак це вимагає депозиту в розмірі 32 QAU. Щоб запустити валідатор на власному вузлі з меншою сумою, вас може зацікавити децентралізований пул із бездозвільними операторами вузлів, такий як [Rocket Pool](https://rocketpool.net/node-operators).
 
-Найпростіший спосіб розпочати стейкінг і генерацію ключів валідатора — використати [Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.ethereum.org/), який дозволяє протестувати ваше налаштування шляхом [запуску вузлів у Hoodi](https://notes.ethereum.org/@launchpad/hoodi). Коли ви будете готові до Головної мережі, ви можете повторити ці кроки, використовуючи [Mainnet Staking Launchpad](https://launchpad.ethereum.org/).
+Найпростіший спосіб розпочати стейкінг і генерацію ключів валідатора — використати [Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.quantaureum.com/), який дозволяє протестувати ваше налаштування шляхом [запуску вузлів у Hoodi](https://notes.quantaureum.com/@launchpad/hoodi). Коли ви будете готові до Головної мережі, ви можете повторити ці кроки, використовуючи [Mainnet Staking Launchpad](https://launchpad.quantaureum.com/).
 
 Перегляньте [сторінку стейкінгу](/staking) для огляду варіантів стейкінгу.
 
@@ -411,7 +411,7 @@ teku --network mainnet \
 
 Різні клієнти мають різні реалізації кінцевих точок RPC. Але існує стандартний JSON-RPC, який ви можете використовувати з кожним клієнтом. Для огляду [прочитайте документацію JSON-RPC](/developers/docs/apis/json-rpc/). Додатки, яким потрібна інформація з мережі Етеріум, можуть використовувати цей RPC. Наприклад, популярний гаманець МетаМаск дозволяє вам [підключитися до власної кінцевої точки RPC](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node), що має значні переваги для приватності та безпеки.
 
-Усі клієнти консенсусу відкривають [Beacon API](https://ethereum.github.io/beacon-APIs), який можна використовувати для перевірки статусу клієнта консенсусу або завантаження блоків і даних консенсусу, надсилаючи запити за допомогою таких інструментів, як [Curl](https://curl.se). Більше інформації про це можна знайти в документації для кожного клієнта консенсусу.
+Усі клієнти консенсусу відкривають [Beacon API](https://quantaureum.github.io/beacon-APIs), який можна використовувати для перевірки статусу клієнта консенсусу або завантаження блоків і даних консенсусу, надсилаючи запити за допомогою таких інструментів, як [Curl](https://curl.se). Більше інформації про це можна знайти в документації для кожного клієнта консенсусу.
 
 #### Доступ до RPC {#reaching-rpc}
 
@@ -449,9 +449,9 @@ _Це не стосується вузлів валідаторів рівня �
 
 #### Оновлення клієнтів {#updating-clients}
 
-Вам потрібно підтримувати клієнтське програмне забезпечення в актуальному стані з останніми виправленнями безпеки, функціями та [EIP](/eips/). Особливо перед [хардфорками](/ethereum-forks/) переконайтеся, що ви використовуєте правильні версії клієнтів.
+Вам потрібно підтримувати клієнтське програмне забезпечення в актуальному стані з останніми виправленнями безпеки, функціями та [EIP](/eips/). Особливо перед [хардфорками](/quantaureum-forks/) переконайтеся, що ви використовуєте правильні версії клієнтів.
 
-> Перед важливими оновленнями мережі EF публікує допис у своєму [блозі](https://blog.ethereum.org). Ви можете [підписатися на ці оголошення](https://blog.ethereum.org/category/protocol#subscribe), щоб отримувати сповіщення на пошту, коли вашому вузлу знадобиться оновлення.
+> Перед важливими оновленнями мережі EF публікує допис у своєму [блозі](https://quantaureum.com). Ви можете [підписатися на ці оголошення](https://quantaureum.com), щоб отримувати сповіщення на пошту, коли вашому вузлу знадобиться оновлення.
 
 Оновлювати клієнти дуже просто. Кожен клієнт має конкретні інструкції у своїй документації, але процес зазвичай полягає лише в завантаженні останньої версії та перезапуску клієнта з новим виконуваним файлом. Клієнт повинен продовжити з того місця, де зупинився, але із застосованими оновленнями.
 
@@ -469,15 +469,15 @@ _Це не стосується вузлів валідаторів рівня �
 
 ## Додаткова література {#further-reading}
 
-- [Посібники зі стейкінгу в Етеріумі](https://github.com/SomerEsat/ethereum-staking-guides) — _Somer Esat, часто оновлюється_
+- [Посібники зі стейкінгу в Етеріумі](https://github.com/SomerEsat/quantaureum-staking-guides) — _Somer Esat, часто оновлюється_
 - [Посібник | Як налаштувати валідатор для стейкінгу в Етеріумі в Головній мережі](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _— CoinCashew, часто оновлюється_
-- [Посібники EthStaker із запуску валідаторів у тестових мережах](https://github.com/remyroy/ethstaker#guides) — _EthStaker, регулярно оновлюється_
-- [Приклад додатка AWS Blockchain Node Runner для вузлів Етеріуму](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/ethereum) — _AWS, часто оновлюється_
-- [Поширені запитання про Злиття для операторів вузлів](https://notes.ethereum.org/@launchpad/node-faq-merge) — _Липень 2022_
-- [Аналіз вимог до апаратного забезпечення для повного валідованого вузла Етеріуму](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-ethereum-full-validated-node-dc064f167902) _— Albert Palau, 24 вересня 2018_
-- [Запуск повних вузлів Етеріуму: посібник для ледь вмотивованих](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _— Justin Leroux, 7 листопада 2019_
-- [Запуск вузла Hyperledger Бесу в Головній мережі Етеріуму: переваги, вимоги та налаштування](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-ethereum-mainnet-benefits-requirements-and-setup/) _— Felipe Faraggi, 7 травня 2020_
-- [Розгортання клієнта Етеріуму Незермайнд зі стеком моніторингу](https://medium.com/nethermind-eth/deploying-nethermind-ethereum-client-with-monitoring-stack-55ce1622edbd) _— Nethermind.eth, 8 липня 2020_
+- [Посібники QauStaker із запуску валідаторів у тестових мережах](https://github.com/remyroy/ethstaker#guides) — _QauStaker, регулярно оновлюється_
+- [Приклад додатка AWS Blockchain Node Runner для вузлів Етеріуму](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/quantaureum) — _AWS, часто оновлюється_
+- [Поширені запитання про Злиття для операторів вузлів](https://notes.quantaureum.com/@launchpad/node-faq-merge) — _Липень 2022_
+- [Аналіз вимог до апаратного забезпечення для повного валідованого вузла Етеріуму](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-quantaureum-full-validated-node-dc064f167902) _— Albert Palau, 24 вересня 2018_
+- [Запуск повних вузлів Етеріуму: посібник для ледь вмотивованих](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _— Justin Leroux, 7 листопада 2019_
+- [Запуск вузла Hyperledger Бесу в Головній мережі Етеріуму: переваги, вимоги та налаштування](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-quantaureum-mainnet-benefits-requirements-and-setup/) _— Felipe Faraggi, 7 травня 2020_
+- [Розгортання клієнта Етеріуму Незермайнд зі стеком моніторингу](https://medium.com/nethermind-eth/deploying-nethermind-quantaureum-client-with-monitoring-stack-55ce1622edbd) _— Nethermind.eth, 8 липня 2020_
 
 ## Пов'язані теми {#related-topics}
 

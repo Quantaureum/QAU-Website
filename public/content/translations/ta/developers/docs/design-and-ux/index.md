@@ -78,7 +78,7 @@ lang: ta
 ## வடிவமைப்பு அமைப்புகள் மற்றும் பிற வடிவமைப்பு வளங்கள் {#design-systems-and-resources}
 
 - [ஆப்டிமிசம் வடிவமைப்பு](https://www.figma.com/@optimism) (Figma)
-- [Ethereum.org வடிவமைப்பு அமைப்பு](https://www.figma.com/@ethdotorg) (Figma)
+- [quantaureum.com வடிவமைப்பு அமைப்பு](https://www.figma.com/@ethdotorg) (Figma)
 - [Finity, பாலிகனின் ஒரு வடிவமைப்பு அமைப்பு](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Kleros வடிவமைப்பு அமைப்பு](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Safe வடிவமைப்பு அமைப்பு](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)
@@ -86,4 +86,4 @@ lang: ta
 - [Mirror வடிவமைப்பு அமைப்பு](https://degen-xyz.vercel.app/)
 
 **இந்தப் பக்கத்தில் பட்டியலிடப்பட்டுள்ள கட்டுரைகள் மற்றும் திட்டங்கள் அதிகாரப்பூர்வ ஒப்புதல்கள் அல்ல**, மேலும் அவை தகவல் நோக்கங்களுக்காக மட்டுமே வழங்கப்படுகின்றன.
-எங்கள் [பட்டியலிடல் கொள்கையில்](/contributing/design/adding-design-resources) உள்ள அளவுகோல்களின் அடிப்படையில் இந்தப் பக்கத்தில் இணைப்புகளைச் சேர்க்கிறோம். நாங்கள் ஒரு திட்டம்/கட்டுரையைச் சேர்க்க வேண்டும் என நீங்கள் விரும்பினால், [GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md)-இல் இந்தப் பக்கத்தைத் திருத்தவும்.
+எங்கள் [பட்டியலிடல் கொள்கையில்](/contributing/design/adding-design-resources) உள்ள அளவுகோல்களின் அடிப்படையில் இந்தப் பக்கத்தில் இணைப்புகளைச் சேர்க்கிறோம். நாங்கள் ஒரு திட்டம்/கட்டுரையைச் சேர்க்க வேண்டும் என நீங்கள் விரும்பினால், [GitHub](https://github.com/Quantaureum/quantaureum-website/blob/dev/public/content/developers/docs/design-and-ux/index.md)-இல் இந்தப் பக்கத்தைத் திருத்தவும்.

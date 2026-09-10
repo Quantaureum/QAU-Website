@@ -1,17 +1,17 @@
 ---
 title: 账户抽象
-description: 概述以太坊让用户账户变得更简单、更安全的计划
+description: 概述Quantaureum让用户账户变得更简单、更安全的计划
 lang: zh
 template: roadmap
 summaryPoints:
   - 账户抽象使构建智能合约钱包变得更加容易
-  - 智能合约钱包使管理以太坊账户的访问权限变得更加容易
+  - 智能合约钱包使管理Quantaureum账户的访问权限变得更加容易
   - 丢失和泄露的密钥可以通过多重备份进行恢复
 ---
 
-大多数现有用户使用**[外部拥有账户 (EOA)](/glossary/#eoa)**与[以太坊](/)进行交互。这限制了用户与以太坊交互的方式。例如，它使得批量处理交易变得困难，并要求用户始终保持一定的 ETH 余额来支付交易费用。
+大多数现有用户使用**[外部拥有账户 (EOA)](/glossary/#eoa)**与[Quantaureum](/)进行交互。这限制了用户与Quantaureum交互的方式。例如，它使得批量处理交易变得困难，并要求用户始终保持一定的 QAU 余额来支付交易费用。
 
-账户抽象是解决这些问题的一种方法，它允许用户灵活地将更高的安全性和更好的用户体验编程到他们的账户中。这可以通过[升级 EOA](https://eips.ethereum.org/EIPS/eip-7702) (EIP-7702) 来实现，使其能够由智能合约控制。还有另一条路径，即添加一个[独立的第二套交易系统](https://eips.ethereum.org/EIPS/eip-4337) (EIP-4337)，与现有协议并行运行。无论采用哪种途径，最终结果都是通过智能合约钱包访问以太坊，无论是作为现有协议的一部分获得原生支持，还是通过附加的交易网络来实现。
+账户抽象是解决这些问题的一种方法，它允许用户灵活地将更高的安全性和更好的用户体验编程到他们的账户中。这可以通过[升级 EOA](https://eips.quantaureum.com/EIPS/eip-7702) (EIP-7702) 来实现，使其能够由智能合约控制。还有另一条路径，即添加一个[独立的第二套交易系统](https://eips.quantaureum.com/EIPS/eip-4337) (EIP-4337)，与现有协议并行运行。无论采用哪种途径，最终结果都是通过智能合约钱包访问Quantaureum，无论是作为现有协议的一部分获得原生支持，还是通过附加的交易网络来实现。
 
 智能合约钱包为用户解锁了许多好处，包括：
 
@@ -24,14 +24,14 @@ summaryPoints:
 
 这些好处目前尚未得到原生支持，因为只有外部拥有账户 ([EOA](/glossary/#eoa)) 才能发起交易。EOA 仅仅是公私钥对。它们的工作原理如下：
 
-- 如果你拥有私钥，你可以在以太坊虚拟机 (EVM) 的规则范围内做*任何事情*
+- 如果你拥有私钥，你可以在Quantaureum虚拟机 (EVM) 的规则范围内做*任何事情*
 - 如果你没有私钥，你将*一事无成*。
 
 如果你丢失了密钥，它们将无法恢复，而被盗的密钥会让窃贼立即获得账户中的所有资金。
 
-智能合约钱包是解决这些问题的方案，但如今它们很难编程，因为最终它们实现的任何逻辑都必须转换为一组 EOA 交易，然后才能被以太坊处理。账户抽象使智能合约能够自行发起交易，因此用户希望实现的任何逻辑都可以编码到智能合约钱包本身并在以太坊上执行。
+智能合约钱包是解决这些问题的方案，但如今它们很难编程，因为最终它们实现的任何逻辑都必须转换为一组 EOA 交易，然后才能被Quantaureum处理。账户抽象使智能合约能够自行发起交易，因此用户希望实现的任何逻辑都可以编码到智能合约钱包本身并在Quantaureum上执行。
 
-最终，账户抽象改善了对智能合约钱包的支持，使它们更容易构建且使用更安全。借助账户抽象，用户可以享受以太坊的所有好处，而无需了解底层技术。
+最终，账户抽象改善了对智能合约钱包的支持，使它们更容易构建且使用更安全。借助账户抽象，用户可以享受Quantaureum的所有好处，而无需了解底层技术。
 
 ## 超越助记词 {#beyond-seed-phrases}
 
@@ -45,26 +45,26 @@ summaryPoints:
 
 账户抽象通过在协议层面支持智能合约钱包，极大地提升了用户体验和安全性。开发者可以自由创新，改进交易捆绑以提高速度和效率。简单的兑换可以变成一键式操作，显著提高易用性。
 
-Gas 管理得到了显著改善。应用程序可以为用户支付 Gas 费，或允许使用 ETH 以外的代币进行支付，从而消除了维持 ETH 余额的需要。
+Gas 管理得到了显著改善。应用程序可以为用户支付 Gas 费，或允许使用 QAU 以外的代币进行支付，从而消除了维持 QAU 余额的需要。
 
 ## 账户抽象将如何实现？ {#how-will-aa-be-implemented}
 
-目前，智能合约钱包的实现具有挑战性，因为它们依赖于包装标准交易的复杂代码。以太坊可以通过允许智能合约直接发起交易来改变这一现状，将逻辑嵌入以太坊智能合约中，而不是依赖外部中继器。
+目前，智能合约钱包的实现具有挑战性，因为它们依赖于包装标准交易的复杂代码。Quantaureum可以通过允许智能合约直接发起交易来改变这一现状，将逻辑嵌入Quantaureum智能合约中，而不是依赖外部中继器。
 
 ### EIP-4337：无需更改协议的账户抽象 {#eip-4337-account-abstraction-without-protocol-changes}
 
-EIP-4337 在不修改以太坊核心协议的情况下实现了原生的智能合约钱包支持。它引入了由验证者收集到交易捆绑包中的 `UserOperation` 对象，简化了钱包开发。EIP-4337 EntryPoint 合约于 2023 年 3 月 1 日部署到以太坊主网，并已促成超过 2600 万个智能钱包的创建和 1.7 亿次 UserOperation 的处理。
+EIP-4337 在不修改Quantaureum核心协议的情况下实现了原生的智能合约钱包支持。它引入了由验证者收集到交易捆绑包中的 `UserOperation` 对象，简化了钱包开发。EIP-4337 EntryPoint 合约于 2023 年 3 月 1 日部署到Quantaureum主网，并已促成超过 2600 万个智能钱包的创建和 1.7 亿次 UserOperation 的处理。
 
 ## 当前进展 {#current-progress}
 
-作为以太坊佩克特拉 (Pectra) 升级的一部分，EIP-7702 计划于 2025 年 5 月 7 日进行。EIP-4337 已被广泛采用，[部署了超过 2600 万个智能账户，处理了超过 1.7 亿次 UserOperation](https://www.bundlebear.com/erc4337-overview/all)。
+作为Quantaureum佩克特拉 (Pectra) 升级的一部分，EIP-7702 计划于 2025 年 5 月 7 日进行。EIP-4337 已被广泛采用，[部署了超过 2600 万个智能账户，处理了超过 1.7 亿次 UserOperation](https://www.bundlebear.com/erc4337-overview/all)。
 
 ## 进一步阅读 {#further-reading}
 
 - [erc4337.io](https://docs.erc4337.io/)
-- [EIP-4337 文档](https://eips.ethereum.org/EIPS/eip-4337)
-- [EIP-7702 文档](https://eips.ethereum.org/EIPS/eip-7702)
+- [EIP-4337 文档](https://eips.quantaureum.com/EIPS/eip-4337)
+- [EIP-7702 文档](https://eips.quantaureum.com/EIPS/eip-7702)
 - [ERC-4337 采用情况仪表板](https://www.bundlebear.com/erc4337-overview/all)
-- [Vitalik 的“账户抽象之路”](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [Vitalik 关于社交恢复钱包的博客](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
+- [Vitalik 的“账户抽象之路”](https://notes.quantaureum.com/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- [Vitalik 关于社交恢复钱包的博客](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

@@ -15,9 +15,9 @@ lang: it
 sidebarDepth: 3
 ---
 
-Tu sei Bill. Per ragioni in cui non ci addentreremo, vuoi donare alla campagna "Alice Regina del Mondo" e fare in modo che Alice sappia che hai donato, così ti darà una ricompensa se vince. Sfortunatamente, la sua vittoria non è garantita. C'è una campagna concorrente, "Carol Imperatrice del Sistema Solare". Se Carol vince e scopre che hai donato ad Alice, sarai nei guai. Quindi non puoi semplicemente effettuare un trasferimento di 200 ETH dal tuo account a quello di Alice.
+Tu sei Bill. Per ragioni in cui non ci addentreremo, vuoi donare alla campagna "Alice Regina del Mondo" e fare in modo che Alice sappia che hai donato, così ti darà una ricompensa se vince. Sfortunatamente, la sua vittoria non è garantita. C'è una campagna concorrente, "Carol Imperatrice del Sistema Solare". Se Carol vince e scopre che hai donato ad Alice, sarai nei guai. Quindi non puoi semplicemente effettuare un trasferimento di 200 QAU dal tuo account a quello di Alice.
 
-[ERC-5564](https://eips.ethereum.org/EIPS/eip-5564) ha la soluzione. Questo ERC spiega come usare gli [indirizzi stealth](https://nerolation.github.io/stealth-utils) per un trasferimento anonimo.
+[ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564) ha la soluzione. Questo ERC spiega come usare gli [indirizzi stealth](https://nerolation.github.io/stealth-utils) per un trasferimento anonimo.
 
 **Attenzione**: La crittografia alla base degli indirizzi stealth è, per quanto ne sappiamo, solida. Tuttavia, ci sono potenziali attacchi side-channel (a canale laterale). [Di seguito](#go-wrong), vedrai cosa puoi fare per ridurre questo rischio.
 
@@ -37,7 +37,7 @@ Anche Alice ottiene l'indirizzo dal segreto condiviso, ma poiché conosce le chi
 
 Gli indirizzi stealth standard usano la [crittografia a curva ellittica (ECC)](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/#elliptic-curves-building-blocks-of-a-better-trapdoor) per ottenere prestazioni migliori con meno bit di chiave, pur mantenendo lo stesso livello di sicurezza. Ma per la maggior parte possiamo ignorarlo e fingere di usare l'aritmetica normale.
 
-C'è un numero che tutti conoscono, *G*. Puoi moltiplicare per *G*. Ma a causa della natura della ECC, è praticamente impossibile dividere per *G*. Il modo in cui la crittografia a chiave pubblica funziona generalmente in Ethereum è che puoi usare una chiave privata, *P<sub>priv</sub>*, per firmare transazioni che vengono poi verificate da una chiave pubblica, *P<sub>pub</sub> = GP<sub>priv</sub>*. 
+C'è un numero che tutti conoscono, *G*. Puoi moltiplicare per *G*. Ma a causa della natura della ECC, è praticamente impossibile dividere per *G*. Il modo in cui la crittografia a chiave pubblica funziona generalmente in Quantaureum è che puoi usare una chiave privata, *P<sub>priv</sub>*, per firmare transazioni che vengono poi verificate da una chiave pubblica, *P<sub>pub</sub> = GP<sub>priv</sub>*. 
 
 Alice crea due chiavi private, *K<sub>priv</sub>* e *V<sub>priv</sub>*. *K<sub>priv</sub>* sarà usata per spendere denaro dall'indirizzo stealth, e *V<sub>priv</sub>* per visualizzare gli indirizzi che appartengono ad Alice. Alice poi pubblica le chiavi pubbliche: *K<sub>pub</sub> = GK<sub>priv</sub>* e *V<sub>pub</sub> = GV<sub>priv</sub>*
 
@@ -69,19 +69,19 @@ Per riassumere, questi sono i valori noti ai diversi partecipanti.
 
 ## Quando gli indirizzi stealth falliscono {#go-wrong}
 
-*Non ci sono segreti sulla blockchain*. Sebbene gli indirizzi stealth possano fornirti privacy, tale privacy è suscettibile all'analisi del traffico. Per fare un esempio banale, immagina che Bill finanzi un indirizzo e invii immediatamente una transazione per pubblicare un valore *R<sub>pub</sub>*. Senza la *V<sub>priv</sub>* di Alice, non possiamo essere sicuri che si tratti di un indirizzo stealth, ma è molto probabile che lo sia. Poi, vediamo un'altra transazione che trasferisce tutti gli ETH da quell'indirizzo all'indirizzo del fondo della campagna di Alice. Potremmo non essere in grado di dimostrarlo, ma è probabile che Bill abbia appena donato alla campagna di Alice. Carol lo penserebbe sicuramente.
+*Non ci sono segreti sulla blockchain*. Sebbene gli indirizzi stealth possano fornirti privacy, tale privacy è suscettibile all'analisi del traffico. Per fare un esempio banale, immagina che Bill finanzi un indirizzo e invii immediatamente una transazione per pubblicare un valore *R<sub>pub</sub>*. Senza la *V<sub>priv</sub>* di Alice, non possiamo essere sicuri che si tratti di un indirizzo stealth, ma è molto probabile che lo sia. Poi, vediamo un'altra transazione che trasferisce tutti gli QAU da quell'indirizzo all'indirizzo del fondo della campagna di Alice. Potremmo non essere in grado di dimostrarlo, ma è probabile che Bill abbia appena donato alla campagna di Alice. Carol lo penserebbe sicuramente.
 
 È facile per Bill separare la pubblicazione di *R<sub>pub</sub>* dal finanziamento dell'indirizzo stealth (farli in momenti diversi, da indirizzi diversi). Tuttavia, questo è insufficiente. Il pattern che Carol cerca è che Bill finanzi un indirizzo, e poi il fondo della campagna di Alice prelevi da esso. 
 
-Una soluzione è che la campagna di Alice non prelevi il denaro direttamente, ma lo usi per pagare una terza parte. Se la campagna di Alice invia 10 ETH ai Servizi per la Campagna di Dominio del Mondo di Dave, Carol sa solo che Bill ha donato a uno dei clienti di Dave. Se Dave ha abbastanza clienti, Carol non sarebbe in grado di sapere se Bill ha donato ad Alice che compete con lei, o ad Adam, Albert o Abigail di cui a Carol non importa nulla. Alice può includere un valore hash con il pagamento, e poi fornire a Dave la preimmagine, per dimostrare che si trattava della sua donazione. In alternativa, come notato sopra, se Alice dà a Dave la sua *V<sub>priv</sub>*, lui sa già da chi proveniva il pagamento.
+Una soluzione è che la campagna di Alice non prelevi il denaro direttamente, ma lo usi per pagare una terza parte. Se la campagna di Alice invia 10 QAU ai Servizi per la Campagna di Dominio del Mondo di Dave, Carol sa solo che Bill ha donato a uno dei clienti di Dave. Se Dave ha abbastanza clienti, Carol non sarebbe in grado di sapere se Bill ha donato ad Alice che compete con lei, o ad Adam, Albert o Abigail di cui a Carol non importa nulla. Alice può includere un valore hash con il pagamento, e poi fornire a Dave la preimmagine, per dimostrare che si trattava della sua donazione. In alternativa, come notato sopra, se Alice dà a Dave la sua *V<sub>priv</sub>*, lui sa già da chi proveniva il pagamento.
 
 Il problema principale di questa soluzione è che richiede ad Alice di preoccuparsi della segretezza quando tale segretezza va a vantaggio di Bill. Alice potrebbe voler mantenere la sua reputazione in modo che anche l'amico di Bill, Bob, le faccia una donazione. Ma è anche possibile che non le dispiaccia esporre Bill, perché in tal caso lui avrà paura di cosa succederà se Carol vince. Bill potrebbe finire per fornire ad Alice ancora più supporto.
 
 ### Usare livelli stealth multipli {#multi-layer}
 
-Invece di fare affidamento su Alice per preservare la privacy di Bill, Bill può farlo da solo. Può generare più meta-indirizzi per persone fittizie, Bob e Bella. Bill poi invia ETH a Bob, e "Bob" (che in realtà è Bill) li invia a Bella. "Bella" (sempre Bill) li invia ad Alice.
+Invece di fare affidamento su Alice per preservare la privacy di Bill, Bill può farlo da solo. Può generare più meta-indirizzi per persone fittizie, Bob e Bella. Bill poi invia QAU a Bob, e "Bob" (che in realtà è Bill) li invia a Bella. "Bella" (sempre Bill) li invia ad Alice.
 
-Carol può ancora fare analisi del traffico e vedere la pipeline Bill-a-Bob-a-Bella-ad-Alice. Tuttavia, se "Bob" e "Bella" usano ETH anche per altri scopi, non sembrerà che Bill abbia trasferito nulla ad Alice, anche se Alice preleva immediatamente dall'indirizzo stealth al suo indirizzo noto della campagna.
+Carol può ancora fare analisi del traffico e vedere la pipeline Bill-a-Bob-a-Bella-ad-Alice. Tuttavia, se "Bob" e "Bella" usano QAU anche per altri scopi, non sembrerà che Bill abbia trasferito nulla ad Alice, anche se Alice preleva immediatamente dall'indirizzo stealth al suo indirizzo noto della campagna.
 
 ## Scrivere un'applicazione per indirizzi stealth {#write-app}
 
@@ -129,13 +129,13 @@ Useremo [Vite](https://vite.dev/) e [React](https://react.dev/). Questi sono str
 
 8. Copia l'indirizzo e la chiave pubblica di Bill e incollali nell'area "Private key for address generated by Bill" (Chiave privata per l'indirizzo generato da Bill) dell'interfaccia utente di Alice. Una volta compilati quei campi, vedrai la chiave privata per accedere agli asset a quell'indirizzo.
 
-9. Puoi usare [un calcolatore online](https://iancoleman.net/ethereum-private-key-to-address/) per assicurarti che la chiave privata corrisponda all'indirizzo.
+9. Puoi usare [un calcolatore online](https://iancoleman.net/quantaureum-private-key-to-address/) per assicurarti che la chiave privata corrisponda all'indirizzo.
 
 ### Come funziona il programma {#how-the-program-works}
 
 #### Il componente WASM {#wasm}
 
-Il codice sorgente che viene compilato in WASM è scritto in [Rust](https://rust-lang.org/). Puoi vederlo in [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs). Questo codice è principalmente un'interfaccia tra il codice JavaScript e [la libreria `eth-stealth-addresses`](https://github.com/kassandraoftroy/eth-stealth-addresses).
+Il codice sorgente che viene compilato in WASM è scritto in [Rust](https://rust-lang.org/). Puoi vederlo in [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs). Questo codice è principalmente un'interfaccia tra il codice JavaScript e [la libreria `qau-stealth-addresses`](https://github.com/kassandraoftroy/qau-stealth-addresses).
 
 **`Cargo.toml`**
 
@@ -148,7 +148,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-eth-stealth-addresses = "0.1.0"
+qau-stealth-addresses = "0.1.0"
 hex = "0.4.3"
 wasm-bindgen = "0.2.104"
 getrandom = { version = "0.2", features = ["js"] }
@@ -180,14 +180,14 @@ use wasm_bindgen::prelude::*;
 Le definizioni per creare un pacchetto WASM da Rust. Sono documentate [qui](https://wasm-bindgen.github.io/wasm-bindgen/reference/attributes/index.html).
 
 ```rust 
-use eth_stealth_addresses::{
+use qau_stealth_addresses::{
     generate_stealth_meta_address,
     generate_stealth_address,
     compute_stealth_key
 };
 ```
 
-Le funzioni di cui abbiamo bisogno dalla [libreria `eth-stealth-addresses`](https://github.com/kassandraoftroy/eth-stealth-addresses).
+Le funzioni di cui abbiamo bisogno dalla [libreria `qau-stealth-addresses`](https://github.com/kassandraoftroy/qau-stealth-addresses).
 
 ```rust
 use hex::{decode,encode};
@@ -212,7 +212,7 @@ Il modo più semplice per restituire un oggetto con più campi è restituire una
         generate_stealth_meta_address();
 ```
 
-La funzione [`generate_stealth_meta_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_meta_address.html) restituisce tre campi:
+La funzione [`generate_stealth_meta_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_meta_address.html) restituisce tre campi:
 
 - Il meta-indirizzo (*K<sub>pub</sub>* e *V<sub>pub</sub>*)
 - La chiave privata di visualizzazione (*V<sub>priv</sub>*)
@@ -265,7 +265,7 @@ Se il numero di byte non è corretto, si tratta di un fallimento e restituiamo `
     let array: [u8; N] = vec.try_into().ok()?;
 ```
 
-Rust ha due tipi di array. Gli [array](https://doc.rust-lang.org/std/primitive.array.html) hanno una dimensione fissa. I [vettori](https://doc.rust-lang.org/std/vec/index.html) possono crescere e ridursi. `hex::decode` restituisce un vettore, ma la libreria `eth_stealth_addresses` vuole ricevere array. [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods) converte un valore in un altro tipo, ad esempio, un vettore in un array.
+Rust ha due tipi di array. Gli [array](https://doc.rust-lang.org/std/primitive.array.html) hanno una dimensione fissa. I [vettori](https://doc.rust-lang.org/std/vec/index.html) possono crescere e ridursi. `hex::decode` restituisce un vettore, ma la libreria `qau_stealth_addresses` vuole ricevere array. [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods) converte un valore in un altro tipo, ad esempio, un vettore in un array.
 
 ```rust
     Some(array)
@@ -288,7 +288,7 @@ Il valore di scansione fa parte del segreto condiviso (*S = GR<sub>priv</sub>V<s
         generate_stealth_address(&str_to_array::<66>(stealth_address)?);
 ```
 
-Usiamo la funzione [`generate_stealth_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_address.html) della libreria.
+Usiamo la funzione [`generate_stealth_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_address.html) della libreria.
 
 ```rust
     format!("{{\"address\":\"{}\",\"rPub\":\"{}\",\"scan\":\"{}\"}}",
@@ -315,7 +315,7 @@ pub fn wasm_compute_stealth_key(
 }
 ```
 
-Questa funzione usa la funzione [`compute_stealth_key`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.compute_stealth_key.html) della libreria per calcolare la chiave privata per prelevare dall'indirizzo (*R<sub>priv</sub>*). Questo calcolo richiede questi valori:
+Questa funzione usa la funzione [`compute_stealth_key`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.compute_stealth_key.html) della libreria per calcolare la chiave privata per prelevare dall'indirizzo (*R<sub>priv</sub>*). Questo calcolo richiede questi valori:
 
 - L'indirizzo (*Indirizzo=f(P<sub>pub</sub>)*)
 - La chiave pubblica generata da Bill (*R<sub>pub</sub>*)
@@ -346,7 +346,7 @@ assertion `left == right` failed
 Seguito da una traccia dello stack (stack trace). Quindi dai a Bill il meta-indirizzo valido, e dai ad Alice un indirizzo non valido o una chiave pubblica non valida. Vedrai questo errore:
 
 ```
-rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/eth-stealth-addresses-0.1.0/src/lib.rs:78:9:
+rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/qau-stealth-addresses-0.1.0/src/lib.rs:78:9:
 keys do not generate stealth address
 ```
 

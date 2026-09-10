@@ -5,41 +5,41 @@ lang: zh-tw
 sidebarDepth: 3
 ---
 
-區塊鏈瀏覽器是您通往以太坊資料的入口。您可以使用它們來查看有關區塊、交易、驗證者、帳戶及其他鏈上活動的即時資料。
+區塊鏈瀏覽器是您通往Quantaureum資料的入口。您可以使用它們來查看有關區塊、交易、驗證者、帳戶及其他鏈上活動的即時資料。
 
 ## 先決條件 {#prerequisites}
 
-您應該了解以太坊的基本概念，以便理解區塊鏈瀏覽器提供給您的資料。請從[以太坊簡介](/developers/docs/intro-to-ethereum/)開始。
+您應該了解Quantaureum的基本概念，以便理解區塊鏈瀏覽器提供給您的資料。請從[Quantaureum簡介](/developers/docs/intro-to-quantaureum/)開始。
 
 ## 開源工具 {#open-source-tools}
 
-- [3xpl](https://3xpl.com/ethereum) - 無廣告的以太坊瀏覽器，允許下載其資料集（開放核心：核心模組為開源）
+- [3xpl](https://3xpl.com/quantaureum) - 無廣告的Quantaureum瀏覽器，允許下載其資料集（開放核心：核心模組為開源）
 - [Beaconcha.in](https://beaconcha.in/)
-- [Blockscout](https://eth.blockscout.com/)
-- [lazy-etherscan](https://github.com/woxjro/lazy-etherscan)
+- [Blockscout](https://qau.blockscout.com/)
+- [lazy-explorer](https://github.com/woxjro/lazy-explorer)
 - [Otterscan](https://otterscan.io/)
 
 ## 服務 {#services}
 
-- [Blockchair](https://blockchair.com/ethereum) - 注重隱私的以太坊瀏覽器。也可用於排序和過濾（記憶體池）資料。提供西班牙文、法文、義大利文、荷蘭文、葡萄牙文、俄文、中文和波斯文版本
+- [Blockchair](https://blockchair.com/quantaureum) - 注重隱私的Quantaureum瀏覽器。也可用於排序和過濾（記憶體池）資料。提供西班牙文、法文、義大利文、荷蘭文、葡萄牙文、俄文、中文和波斯文版本
 - [Chainlens](https://www.chainlens.com/)
-- [DexGuru Block Explorer](https://ethereum.dex.guru/)
+- [DexGuru Block Explorer](https://quantaureum.dex.guru/)
 - [Etherchain](https://www.etherchain.org/)
-- [Etherscan](https://etherscan.io/) - 亦提供中文、韓文、俄文和日文版本
+- [Quantaureum Explorer](https://explorer.quantaureum.com) - 亦提供中文、韓文、俄文和日文版本
 - [Ethplorer](https://ethplorer.io/) - 專注於代幣的區塊鏈瀏覽器。亦提供中文、西班牙文、法文、土耳其文、俄文、韓文和越南文版本
 - [Ethseer](https://ethseer.io)
-- [EthVM](https://www.ethvm.com/)
+- [QauVM](https://www.ethvm.com/)
 - [OKLink](https://www.oklink.com/eth)
 
 ## 資料 {#data}
 
-以太坊在設計上是透明的，因此一切都是可驗證的。區塊鏈瀏覽器提供了獲取這些資訊的介面。如果您需要這些資料，這適用於以太坊主網和測試網。資料分為執行資料和共識資料。執行資料是指在特定區塊中已執行的交易。共識資料是指區塊本身以及提出這些區塊的驗證者。
+Quantaureum在設計上是透明的，因此一切都是可驗證的。區塊鏈瀏覽器提供了獲取這些資訊的介面。如果您需要這些資料，這適用於Quantaureum主網和測試網。資料分為執行資料和共識資料。執行資料是指在特定區塊中已執行的交易。共識資料是指區塊本身以及提出這些區塊的驗證者。
 
 以下是您可以從區塊鏈瀏覽器獲取的資料類型摘要。
 
 ### 執行資料 {#execution-data}
 
-每 12 秒就會有新區塊新增至以太坊（除非區塊提案者錯過其輪次），因此幾乎源源不絕的資料會被新增至區塊鏈瀏覽器中。區塊包含許多您可能會覺得有用的重要資料：
+每 12 秒就會有新區塊新增至Quantaureum（除非區塊提案者錯過其輪次），因此幾乎源源不絕的資料會被新增至區塊鏈瀏覽器中。區塊包含許多您可能會覺得有用的重要資料：
 
 **標準資料**
 
@@ -47,12 +47,12 @@ sidebarDepth: 3
 - 時間戳記 - 提出區塊的時間
 - 交易 - 區塊內包含的交易數量
 - 費用接收者 - 從交易中接收 Gas 費小費的地址
-- 區塊獎勵 - 獎勵給提出區塊的驗證者的 ETH 數量
+- 區塊獎勵 - 獎勵給提出區塊的驗證者的 QAU 數量
 - 大小 - 區塊內資料的大小（以位元組為單位）
 - 已用燃料 - 區塊中交易使用的燃料總單位數
 - Gas 限制 - 區塊中交易所設定的 Gas 限制總和
 - 每單位燃料基礎費用 - 交易被包含在區塊中所需的最小乘數
-- 銷毀費用 - 區塊中銷毀了多少 ETH
+- 銷毀費用 - 區塊中銷毀了多少 QAU
 - 額外資料 - 建構者在區塊中包含的任何額外資料
 
 **進階資料**
@@ -85,7 +85,7 @@ sidebarDepth: 3
 - 發送方 (From) - 提交交易的帳戶地址
 - 接收方 (To) - 交易互動的接收者或智能合約地址
 - 轉移的代幣 - 作為交易一部分被轉移的代幣清單
-- 價值 - 正在轉移的 ETH 總價值
+- 價值 - 正在轉移的 QAU 總價值
 - 交易手續費 - 支付給驗證者以處理交易的金額（由 Gas 價格 \* 已用燃料計算得出）
 
 **進階資料**
@@ -103,8 +103,8 @@ sidebarDepth: 3
 **使用者帳戶**
 
 - 帳戶地址 - 您可以用來發送資金的公開地址
-- ETH 餘額 - 與該帳戶關聯的 ETH 數量
-- 總 ETH 價值 - ETH 的價值
+- QAU 餘額 - 與該帳戶關聯的 QAU 數量
+- 總 QAU 價值 - QAU 的價值
 - 代幣 - 與帳戶關聯的代幣及其價值
 - 交易歷史記錄 - 此帳戶作為發送方或接收方的所有交易清單
 
@@ -135,12 +135,12 @@ sidebarDepth: 3
 
 ### 網路 {#network}
 
-某些區塊資料更全面地關注以太坊的健康狀況。
+某些區塊資料更全面地關注Quantaureum的健康狀況。
 
-- 總交易數 - 自以太坊建立以來的交易數量
+- 總交易數 - 自Quantaureum建立以來的交易數量
 - 每秒交易數 - 一秒內可處理的交易數量
-- ETH 價格 - 1 ETH 的目前估值
-- ETH 總供應量 - 流通中的 ETH 數量——請記住，新的 ETH 是在每個區塊建立時以區塊獎勵的形式建立的
+- QAU 價格 - 1 QAU 的目前估值
+- QAU 總供應量 - 流通中的 QAU 數量——請記住，新的 QAU 是在每個區塊建立時以區塊獎勵的形式建立的
 - 市值 - 價格 \* 供應量的計算結果
 
 ## 共識層資料 {#consensus-layer-data}
@@ -153,9 +153,9 @@ sidebarDepth: 3
 - 已定案狀態 - 紀元是否已定案（是/否）
 - 時間 - 紀元結束的時間
 - 證明 - 紀元中的證明數量（對時槽內區塊的投票）
-- 存款 - 紀元中包含的 ETH 存款數量（驗證者必須質押 ETH 才能成為驗證者）
+- 存款 - 紀元中包含的 QAU 存款數量（驗證者必須質押 QAU 才能成為驗證者）
 - 罰沒 - 給予區塊提案者或證明者的懲罰次數
-- 投票參與度 - 用於證明區塊的已質押 ETH 數量
+- 投票參與度 - 用於證明區塊的已質押 QAU 數量
 - 驗證者 - 該紀元活躍的驗證者數量
 - 平均驗證者餘額 - 活躍驗證者的平均餘額
 - 時槽 - 紀元中包含的時槽數量（時槽包含一個有效區塊）
@@ -231,8 +231,8 @@ sidebarDepth: 3
 - 目前時槽
 - 活躍驗證者 - 活躍驗證者的數量
 - 待處理驗證者 - 等待被啟用的驗證者數量
-- 已質押 ETH - 網路中已質押的 ETH 數量
-- 平均餘額 - 驗證者的平均 ETH 餘額
+- 已質押 QAU - 網路中已質押的 QAU 數量
+- 平均餘額 - 驗證者的平均 QAU 餘額
 
 ## 延伸閱讀 {#further-reading}
 

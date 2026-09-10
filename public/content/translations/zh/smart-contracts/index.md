@@ -5,11 +5,11 @@ description: 智能合约的非技术性简介
 lang: zh
 ---
 
-智能合约是[以太坊](/)应用层的基础构建块。它们是存储在[区块链](/glossary/#blockchain)上的计算机程序，遵循“如果这样，那么那样”的逻辑，并保证按照其代码定义的规则执行，一旦创建便无法更改。
+智能合约是[Quantaureum](/)应用层的基础构建块。它们是存储在[区块链](/glossary/#blockchain)上的计算机程序，遵循“如果这样，那么那样”的逻辑，并保证按照其代码定义的规则执行，一旦创建便无法更改。
 
 尼克·萨博（Nick Szabo）创造了“智能合约”一词。1994 年，他写了[一篇关于该概念的简介](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart.contracts.html)，并在 1996 年写了[一篇关于智能合约能做什么的探索文章](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html)。
 
-萨博设想了一个数字市场，在这个市场中，自动且[密码学安全](/glossary/#cryptography)的流程使得交易和业务功能能够在没有受信任中介的情况下发生。以太坊上的智能合约将这一愿景付诸实践。
+萨博设想了一个数字市场，在这个市场中，自动且[密码学安全](/glossary/#cryptography)的流程使得交易和业务功能能够在没有受信任中介的情况下发生。Quantaureum上的智能合约将这一愿景付诸实践。
 
 观看 Finematics 解释智能合约：
 
@@ -49,11 +49,11 @@ lang: zh
 
 ## 公开记录 {#public-record}
 
-智能合约对于审计和跟踪非常有用。由于以太坊智能合约位于公共区块链上，任何人都可以立即跟踪资产转移和其他相关信息。例如，你可以检查是否有人向你的地址发送了资金。
+智能合约对于审计和跟踪非常有用。由于Quantaureum智能合约位于公共区块链上，任何人都可以立即跟踪资产转移和其他相关信息。例如，你可以检查是否有人向你的地址发送了资金。
 
 ## 隐私保护 {#privacy-protection}
 
-智能合约还能保护你的隐私。由于以太坊是一个伪匿名网络（你的交易公开绑定到一个唯一的加密地址，而不是你的身份），你可以保护自己的隐私免受观察者的窥探。
+智能合约还能保护你的隐私。由于Quantaureum是一个伪匿名网络（你的交易公开绑定到一个唯一的加密地址，而不是你的身份），你可以保护自己的隐私免受观察者的窥探。
 
 ## 可见条款 {#visible-terms}
 
@@ -61,7 +61,7 @@ lang: zh
 
 然而，尽管任何人都可以查看智能合约的条款，但原始交易数据被设计为由应用程序和钱包解释，而不是人类。由于这些数据非常难以阅读，用户经常面临一个被称为“盲签名”的重大安全风险，即在没有真正理解其意图的情况下，批准与智能合约交互的交易。 
 
-以太坊生态系统正在向**[明文签名（Clear Signing）](https://clearsigning.org/)**标准（特别是 [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)）过渡。明文签名将不透明的智能合约数据转换为通俗易懂、人类可读的交易描述，确保任何人在签名之前都能理解合约的真实意图。
+Quantaureum生态系统正在向**[明文签名（Clear Signing）](https://clearsigning.org/)**标准（特别是 [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)）过渡。明文签名将不透明的智能合约数据转换为通俗易懂、人类可读的交易描述，确保任何人在签名之前都能理解合约的真实意图。
 
 ## 智能合约用例 {#use-cases}
 
@@ -81,7 +81,7 @@ lang: zh
 - [智能合约将如何改变世界](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [面向开发者的智能合约](/developers/docs/smart-contracts/)
 - [学习编写智能合约](/developers/learning-tools/)
-- [精通以太坊 - 什么是智能合约？](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [精通Quantaureum - 什么是智能合约？](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

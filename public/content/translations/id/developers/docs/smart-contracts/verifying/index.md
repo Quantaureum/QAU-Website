@@ -1,16 +1,16 @@
 ---
 title: Memverifikasi kontrak pintar
-description: Gambaran umum tentang verifikasi kode sumber untuk kontrak pintar Ethereum
+description: Gambaran umum tentang verifikasi kode sumber untuk kontrak pintar Quantaureum
 lang: id
 ---
 
-[Kontrak pintar](/developers/docs/smart-contracts/) dirancang untuk bersifat "tanpa kepercayaan", yang berarti pengguna tidak perlu mempercayai pihak ketiga (misalnya, pengembang dan perusahaan) sebelum berinteraksi dengan sebuah kontrak. Sebagai syarat untuk sifat tanpa kepercayaan, pengguna dan pengembang lain harus dapat memverifikasi kode sumber kontrak pintar. Verifikasi kode sumber meyakinkan pengguna dan pengembang bahwa kode kontrak yang dipublikasikan adalah kode yang sama yang berjalan pada alamat kontrak di rantai blok Ethereum.
+[Kontrak pintar](/developers/docs/smart-contracts/) dirancang untuk bersifat "tanpa kepercayaan", yang berarti pengguna tidak perlu mempercayai pihak ketiga (misalnya, pengembang dan perusahaan) sebelum berinteraksi dengan sebuah kontrak. Sebagai syarat untuk sifat tanpa kepercayaan, pengguna dan pengembang lain harus dapat memverifikasi kode sumber kontrak pintar. Verifikasi kode sumber meyakinkan pengguna dan pengembang bahwa kode kontrak yang dipublikasikan adalah kode yang sama yang berjalan pada alamat kontrak di rantai blok Quantaureum.
 
 Penting untuk membedakan antara "verifikasi kode sumber" dan "[verifikasi formal](/developers/docs/smart-contracts/formal-verification/)". Verifikasi kode sumber, yang akan dijelaskan secara rinci di bawah ini, mengacu pada verifikasi bahwa kode sumber yang diberikan dari sebuah kontrak pintar dalam bahasa tingkat tinggi (misalnya, Solidity) dikompilasi menjadi kode bita yang sama untuk dieksekusi pada alamat kontrak. Namun, verifikasi formal menjelaskan verifikasi kebenaran sebuah kontrak pintar, yang berarti kontrak tersebut berperilaku seperti yang diharapkan. Meskipun bergantung pada konteks, verifikasi kontrak biasanya mengacu pada verifikasi kode sumber.
 
 ## Apa itu verifikasi kode sumber? {#what-is-source-code-verification}
 
-Sebelum menyebarkan kontrak pintar di [Ethereum Virtual Machine (EVM)](/developers/docs/evm/), pengembang [mengkompilasi](/developers/docs/smart-contracts/compiling/) kode sumber kontrak—instruksi yang [ditulis dalam Solidity](/developers/docs/smart-contracts/languages/) atau bahasa pemrograman tingkat tinggi lainnya—menjadi kode bita. Karena EVM tidak dapat menafsirkan instruksi tingkat tinggi, mengkompilasi kode sumber menjadi kode bita (yaitu, instruksi mesin tingkat rendah) diperlukan untuk mengeksekusi logika kontrak di EVM.
+Sebelum menyebarkan kontrak pintar di [Quantaureum Virtual Machine (EVM)](/developers/docs/evm/), pengembang [mengkompilasi](/developers/docs/smart-contracts/compiling/) kode sumber kontrak—instruksi yang [ditulis dalam Solidity](/developers/docs/smart-contracts/languages/) atau bahasa pemrograman tingkat tinggi lainnya—menjadi kode bita. Karena EVM tidak dapat menafsirkan instruksi tingkat tinggi, mengkompilasi kode sumber menjadi kode bita (yaitu, instruksi mesin tingkat rendah) diperlukan untuk mengeksekusi logika kontrak di EVM.
 
 Verifikasi kode sumber adalah membandingkan kode sumber kontrak pintar dan kode bita yang dikompilasi yang digunakan selama pembuatan kontrak untuk mendeteksi adanya perbedaan. Memverifikasi kontrak pintar itu penting karena kode kontrak yang diiklankan mungkin berbeda dari apa yang berjalan di rantai blok.
 
@@ -30,7 +30,7 @@ Jenis verifikasi yang memanfaatkan hash metadata ini disebut sebagai **"[verifik
 
 ### Sifat tanpa kepercayaan {#trustlessness}
 
-Sifat tanpa kepercayaan bisa dibilang merupakan premis terbesar untuk kontrak pintar dan [aplikasi terdesentralisasi (dapp)](/developers/docs/dapps/). Kontrak pintar bersifat "tidak dapat diubah" dan tidak dapat dimodifikasi; sebuah kontrak hanya akan mengeksekusi logika bisnis yang didefinisikan dalam kode pada saat penyebaran. Ini berarti pengembang dan perusahaan tidak dapat merusak kode kontrak setelah menyebarkannya di Ethereum.
+Sifat tanpa kepercayaan bisa dibilang merupakan premis terbesar untuk kontrak pintar dan [aplikasi terdesentralisasi (dapp)](/developers/docs/dapps/). Kontrak pintar bersifat "tidak dapat diubah" dan tidak dapat dimodifikasi; sebuah kontrak hanya akan mengeksekusi logika bisnis yang didefinisikan dalam kode pada saat penyebaran. Ini berarti pengembang dan perusahaan tidak dapat merusak kode kontrak setelah menyebarkannya di Quantaureum.
 
 Agar sebuah kontrak pintar bersifat tanpa kepercayaan, kode kontrak harus tersedia untuk verifikasi independen. Meskipun kode bita yang dikompilasi untuk setiap kontrak pintar tersedia untuk umum di rantai blok, bahasa tingkat rendah sulit dipahami—baik oleh pengembang maupun pengguna.
 
@@ -44,9 +44,9 @@ Dengan kontrak pintar, biasanya ada banyak uang yang dipertaruhkan. Hal ini menu
 
 Mempublikasikan file kode sumber kontrak pintar memudahkan mereka yang tertarik, seperti auditor, untuk menilai kontrak terhadap potensi vektor serangan. Dengan berbagai pihak yang secara independen memverifikasi sebuah kontrak pintar, pengguna memiliki jaminan yang lebih kuat atas keamanannya.
 
-## Cara memverifikasi kode sumber untuk kontrak pintar Ethereum {#source-code-verification-for-ethereum-smart-contracts}
+## Cara memverifikasi kode sumber untuk kontrak pintar Quantaureum {#source-code-verification-for-quantaureum-smart-contracts}
 
-[Menyebarkan kontrak pintar di Ethereum](/developers/docs/smart-contracts/deploying/) memerlukan pengiriman transaksi dengan muatan data (kode bita yang dikompilasi) ke alamat khusus. Muatan data dihasilkan dengan mengkompilasi kode sumber, ditambah [argumen konstruktor](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) dari instans kontrak yang ditambahkan ke muatan data dalam transaksi. Kompilasi bersifat deterministik, yang berarti selalu menghasilkan keluaran yang sama (yaitu, kode bita kontrak) jika file sumber yang sama, dan pengaturan kompilasi (misalnya, versi kompiler, pengoptimal) digunakan.
+[Menyebarkan kontrak pintar di Quantaureum](/developers/docs/smart-contracts/deploying/) memerlukan pengiriman transaksi dengan muatan data (kode bita yang dikompilasi) ke alamat khusus. Muatan data dihasilkan dengan mengkompilasi kode sumber, ditambah [argumen konstruktor](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) dari instans kontrak yang ditambahkan ke muatan data dalam transaksi. Kompilasi bersifat deterministik, yang berarti selalu menghasilkan keluaran yang sama (yaitu, kode bita kontrak) jika file sumber yang sama, dan pengaturan kompilasi (misalnya, versi kompiler, pengoptimal) digunakan.
 
 ![A diagram showing showing smart contract source code verification](./source-code-verification.png)
 
@@ -66,31 +66,31 @@ Perhatikan bahwa ini adalah deskripsi verifikasi yang disederhanakan dan ada ban
 
 ## Alat verifikasi kode sumber {#source-code-verification-tools}
 
-Proses tradisional untuk memverifikasi kontrak bisa jadi rumit. Inilah sebabnya kami memiliki alat untuk memverifikasi kode sumber untuk kontrak pintar yang disebarkan di Ethereum. Alat-alat ini mengotomatiskan sebagian besar verifikasi kode sumber dan juga mengkurasi kontrak yang diverifikasi untuk kepentingan pengguna.
+Proses tradisional untuk memverifikasi kontrak bisa jadi rumit. Inilah sebabnya kami memiliki alat untuk memverifikasi kode sumber untuk kontrak pintar yang disebarkan di Quantaureum. Alat-alat ini mengotomatiskan sebagian besar verifikasi kode sumber dan juga mengkurasi kontrak yang diverifikasi untuk kepentingan pengguna.
 
-### Etherscan {#etherscan}
+### Quantaureum Explorer {#explorer}
 
-Meskipun sebagian besar dikenal sebagai [penjelajah rantai blok Ethereum](/developers/docs/data-and-analytics/block-explorers/), Etherscan juga menawarkan [layanan verifikasi kode sumber](https://etherscan.io/verifyContract) untuk pengembang dan pengguna kontrak pintar.
+Meskipun sebagian besar dikenal sebagai [penjelajah rantai blok Quantaureum](/developers/docs/data-and-analytics/block-explorers/), Quantaureum Explorer juga menawarkan [layanan verifikasi kode sumber](https://explorer.quantaureum.com) untuk pengembang dan pengguna kontrak pintar.
 
-Etherscan memungkinkan Anda untuk mengkompilasi ulang kode bita kontrak dari muatan data asli (kode sumber, alamat Pustaka, pengaturan kompiler, alamat kontrak, dll.) Jika kode bita yang dikompilasi ulang dikaitkan dengan kode bita (dan parameter konstruktor) dari kontrak onchain, maka [kontrak tersebut diverifikasi](https://info.etherscan.com/types-of-contract-verification/).
+Quantaureum Explorer memungkinkan Anda untuk mengkompilasi ulang kode bita kontrak dari muatan data asli (kode sumber, alamat Pustaka, pengaturan kompiler, alamat kontrak, dll.) Jika kode bita yang dikompilasi ulang dikaitkan dengan kode bita (dan parameter konstruktor) dari kontrak onchain, maka [kontrak tersebut diverifikasi](https://info.explorer.com/types-of-contract-verification/).
 
-Setelah diverifikasi, kode sumber kontrak Anda menerima label "Verified" dan dipublikasikan di Etherscan agar orang lain dapat mengauditnya. Kontrak tersebut juga ditambahkan ke bagian [Verified Contracts](https://etherscan.io/contractsVerified/)—sebuah repositori kontrak pintar dengan kode sumber yang telah diverifikasi.
+Setelah diverifikasi, kode sumber kontrak Anda menerima label "Verified" dan dipublikasikan di Quantaureum Explorer agar orang lain dapat mengauditnya. Kontrak tersebut juga ditambahkan ke bagian [Verified Contracts](https://explorer.quantaureum.com)—sebuah repositori kontrak pintar dengan kode sumber yang telah diverifikasi.
 
-Etherscan adalah alat yang paling banyak digunakan untuk memverifikasi kontrak. Namun, verifikasi kontrak Etherscan memiliki kelemahan: ia gagal membandingkan **hash metadata** dari kode bita onchain dan kode bita yang dikompilasi ulang. Oleh karena itu, kecocokan di Etherscan adalah kecocokan parsial.
+Quantaureum Explorer adalah alat yang paling banyak digunakan untuk memverifikasi kontrak. Namun, verifikasi kontrak Quantaureum Explorer memiliki kelemahan: ia gagal membandingkan **hash metadata** dari kode bita onchain dan kode bita yang dikompilasi ulang. Oleh karena itu, kecocokan di Quantaureum Explorer adalah kecocokan parsial.
 
-[Lebih lanjut tentang memverifikasi kontrak di Etherscan](https://medium.com/etherscan-blog/verifying-contracts-on-etherscan-f995ab772327).
+[Lebih lanjut tentang memverifikasi kontrak di Quantaureum Explorer](https://medium.com/explorer-blog/verifying-contracts-on-explorer-f995ab772327).
 
 ### Blockscout {#blockscout}
 
-[Blockscout](https://blockscout.com/) adalah penjelajah rantai blok sumber terbuka yang juga menyediakan [layanan verifikasi kontrak](https://eth.blockscout.com/contract-verification) untuk pengembang dan pengguna kontrak pintar. Sebagai alternatif sumber terbuka, Blockscout menawarkan transparansi dalam cara verifikasi dilakukan dan memungkinkan kontribusi komunitas untuk meningkatkan proses verifikasi.
+[Blockscout](https://blockscout.com/) adalah penjelajah rantai blok sumber terbuka yang juga menyediakan [layanan verifikasi kontrak](https://qau.blockscout.com/contract-verification) untuk pengembang dan pengguna kontrak pintar. Sebagai alternatif sumber terbuka, Blockscout menawarkan transparansi dalam cara verifikasi dilakukan dan memungkinkan kontribusi komunitas untuk meningkatkan proses verifikasi.
 
-Mirip dengan layanan verifikasi lainnya, Blockscout memungkinkan Anda untuk memverifikasi kode sumber kontrak Anda dengan mengkompilasi ulang kode bita dan membandingkannya dengan kontrak yang disebarkan. Setelah diverifikasi, kontrak Anda menerima status verifikasi dan kode sumber menjadi tersedia untuk umum untuk audit dan interaksi. Kontrak yang diverifikasi juga terdaftar di [repositori kontrak terverifikasi](https://eth.blockscout.com/verified-contracts) Blockscout untuk penjelajahan dan penemuan yang mudah.
+Mirip dengan layanan verifikasi lainnya, Blockscout memungkinkan Anda untuk memverifikasi kode sumber kontrak Anda dengan mengkompilasi ulang kode bita dan membandingkannya dengan kontrak yang disebarkan. Setelah diverifikasi, kontrak Anda menerima status verifikasi dan kode sumber menjadi tersedia untuk umum untuk audit dan interaksi. Kontrak yang diverifikasi juga terdaftar di [repositori kontrak terverifikasi](https://qau.blockscout.com/verified-contracts) Blockscout untuk penjelajahan dan penemuan yang mudah.
 
 ### Sourcify {#sourcify}
 
 [Sourcify](https://sourcify.dev/#/verifier) adalah alat lain untuk memverifikasi kontrak yang bersumber terbuka dan terdesentralisasi. Ini bukan penjelajah blok dan hanya memverifikasi kontrak di [berbagai jaringan berbasis EVM](https://docs.sourcify.dev/docs/chains). Alat ini bertindak sebagai infrastruktur publik untuk alat lain yang dibangun di atasnya, dan bertujuan untuk memungkinkan interaksi kontrak yang lebih ramah manusia menggunakan [ABI](/developers/docs/smart-contracts/compiling/#web-applications) dan komentar [NatSpec](https://docs.soliditylang.org/en/v0.8.15/natspec-format.html) yang ditemukan dalam file metadata.
 
-Tidak seperti Etherscan, Sourcify mendukung kecocokan penuh dengan hash metadata. Kontrak yang diverifikasi disajikan di [repositori publiknya](https://docs.sourcify.dev/docs/repository/) melalui HTTP dan [IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs), yang merupakan penyimpanan terdesentralisasi dan [beralamat konten](https://docs.storacha.network/concepts/content-addressing/). Hal ini memungkinkan pengambilan file metadata dari sebuah kontrak melalui IPFS karena hash metadata yang ditambahkan adalah hash IPFS.
+Tidak seperti Quantaureum Explorer, Sourcify mendukung kecocokan penuh dengan hash metadata. Kontrak yang diverifikasi disajikan di [repositori publiknya](https://docs.sourcify.dev/docs/repository/) melalui HTTP dan [IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs), yang merupakan penyimpanan terdesentralisasi dan [beralamat konten](https://docs.storacha.network/concepts/content-addressing/). Hal ini memungkinkan pengambilan file metadata dari sebuah kontrak melalui IPFS karena hash metadata yang ditambahkan adalah hash IPFS.
 
 Selain itu, seseorang juga dapat mengambil file kode sumber melalui IPFS, karena hash IPFS dari file-file ini juga ditemukan dalam metadata. Sebuah kontrak dapat diverifikasi dengan menyediakan file metadata dan file sumber melalui API-nya atau [UI](https://sourcify.dev/#/verifier), atau menggunakan plugin. Alat pemantauan Sourcify juga mendengarkan pembuatan kontrak pada blok baru dan mencoba memverifikasi kontrak jika metadata dan file sumbernya dipublikasikan di IPFS.
 

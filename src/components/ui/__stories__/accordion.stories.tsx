@@ -36,13 +36,13 @@ type Story = StoryObj
 const SAMPLE = [
   {
     id: "item-1",
-    title: "What is Ethereum?",
-    body: "Ethereum is open access to digital money and data-friendly services for everyone -- no matter your background or location.",
+    title: "What is Quantaureum?",
+    body: "Quantaureum is open access to digital money and data-friendly services for everyone -- no matter your background or location.",
   },
   {
     id: "item-2",
     title: "What is a layer 2?",
-    body: "Layer 2 networks scale Ethereum by handling transactions off the main chain while inheriting its security guarantees.",
+    body: "Layer 2 networks scale Quantaureum by handling transactions off the main chain while inheriting its security guarantees.",
   },
   {
     id: "item-3",

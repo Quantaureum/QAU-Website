@@ -86,7 +86,7 @@ export const WithCurrentPage: Story = {
         </BreadcrumbItem>
         <BreadcrumbSeparator />
         <BreadcrumbItem>
-          <BreadcrumbPage>What is Ethereum?</BreadcrumbPage>
+          <BreadcrumbPage>What is Quantaureum?</BreadcrumbPage>
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>

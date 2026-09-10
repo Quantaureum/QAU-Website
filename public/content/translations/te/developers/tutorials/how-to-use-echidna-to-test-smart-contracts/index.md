@@ -18,11 +18,11 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/tree/master/progr
 ### Docker ద్వారా ఎకిడ్నా {#echidna-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_చివరి కమాండ్ మీ ప్రస్తుత డైరెక్టరీకి యాక్సెస్ ఉన్న Dockerలో eth-security-toolboxని రన్ చేస్తుంది. మీరు మీ హోస్ట్ నుండి ఫైల్‌లను మార్చవచ్చు మరియు Docker నుండి ఫైల్‌లపై టూల్స్‌ను రన్ చేయవచ్చు_
+_చివరి కమాండ్ మీ ప్రస్తుత డైరెక్టరీకి యాక్సెస్ ఉన్న Dockerలో qau-security-toolboxని రన్ చేస్తుంది. మీరు మీ హోస్ట్ నుండి ఫైల్‌లను మార్చవచ్చు మరియు Docker నుండి ఫైల్‌లపై టూల్స్‌ను రన్ చేయవచ్చు_
 
 Docker లోపల, ఇలా రన్ చేయండి:
 
@@ -37,7 +37,7 @@ cd /home/training
 
 ## ప్రాపర్టీ-ఆధారిత ఫజ్జింగ్ పరిచయం {#introduction-to-property-based-fuzzing}
 
-ఎకిడ్నా అనేది ప్రాపర్టీ-ఆధారిత ఫజ్జర్, దీనిని మేము మా మునుపటి బ్లాగ్‌పోస్ట్‌లలో వివరించాము ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
+ఎకిడ్నా అనేది ప్రాపర్టీ-ఆధారిత ఫజ్జర్, దీనిని మేము మా మునుపటి బ్లాగ్‌పోస్ట్‌లలో వివరించాము ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-quantaureum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
 
 ### ఫజ్జింగ్ {#fuzzing}
 

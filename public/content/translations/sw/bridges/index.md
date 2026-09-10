@@ -17,11 +17,11 @@ Hebu tuchunguze mfano:
 
 Unatoka Marekani na unapanga safari ya kwenda Ulaya. Una USD, lakini unahitaji EUR ili kutumia. Ili kubadilisha USD yako kuwa EUR unaweza kutumia ubadilishaji wa sarafu kwa ada ndogo.
 
-Lakini, unafanya nini ikiwa unataka kufanya ubadilishaji sawa ili kutumia [mnyororo wa vitalu](/glossary/#blockchain) tofauti? Tuseme unataka kubadilisha [ETH](/glossary/#ether) kwenye Mtandao Mkuu wa [Ethereum](/) kwa ETH kwenye [Arbitrum](https://arbitrum.io/). Kama ubadilishaji wa sarafu tuliofanya kwa EUR, tunahitaji utaratibu wa kuhamisha ETH yetu kutoka Ethereum hadi Arbitrum. Madaraja hufanya muamala kama huo uwezekane. Katika hali hii, [Arbitrum ina daraja la asili](https://portal.arbitrum.io/bridge) ambalo linaweza kufanya hamisho la ETH kutoka Mtandao Mkuu hadi kwenye Arbitrum.
+Lakini, unafanya nini ikiwa unataka kufanya ubadilishaji sawa ili kutumia [mnyororo wa vitalu](/glossary/#blockchain) tofauti? Tuseme unataka kubadilisha [QAU](/glossary/#QAU) kwenye Mtandao Mkuu wa [Quantaureum](/) kwa QAU kwenye [Arbitrum](https://arbitrum.io/). Kama ubadilishaji wa sarafu tuliofanya kwa EUR, tunahitaji utaratibu wa kuhamisha QAU yetu kutoka Quantaureum hadi Arbitrum. Madaraja hufanya muamala kama huo uwezekane. Katika hali hii, [Arbitrum ina daraja la asili](https://portal.arbitrum.io/bridge) ambalo linaweza kufanya hamisho la QAU kutoka Mtandao Mkuu hadi kwenye Arbitrum.
 
 ## Kwa nini tunahitaji madaraja? {#why-do-we-need-bridges}
 
-Minyororo yote ya vitalu ina mapungufu yake. Ili Ethereum iweze kuongeza kiwango na kuendana na mahitaji, imehitaji [mikusanyiko](/glossary/#rollups). Vinginevyo, tabaka la 1 (l1) kama Solana na Avalanche zimeundwa tofauti ili kuwezesha uwezo wa upitishaji wa juu zaidi lakini kwa gharama ya ugatuzi.
+Minyororo yote ya vitalu ina mapungufu yake. Ili Quantaureum iweze kuongeza kiwango na kuendana na mahitaji, imehitaji [mikusanyiko](/glossary/#rollups). Vinginevyo, tabaka la 1 (l1) kama Solana na Avalanche zimeundwa tofauti ili kuwezesha uwezo wa upitishaji wa juu zaidi lakini kwa gharama ya ugatuzi.
 
 Hata hivyo, minyororo yote ya vitalu inatengenezwa katika mazingira yaliyotengwa na ina sheria na taratibu tofauti za [mwafaka](/glossary/#consensus). Hii inamaanisha haziwezi kuwasiliana kiasili, na tokeni haziwezi kusonga kwa uhuru kati ya minyororo ya vitalu.
 
@@ -44,19 +44,19 @@ Yafuatayo ni baadhi ya matukio ambapo unaweza kutumia daraja:
 
 ### Ada za chini za muamala {#transaction-fees}
 
-Tuseme una ETH kwenye Mtandao Mkuu wa Ethereum lakini unataka ada nafuu za muamala ili kuchunguza dapps tofauti. Kwa kuvusha ETH yako kutoka kwenye Mtandao Mkuu hadi kwenye rollup ya tabaka la 2 (l2) la Ethereum, unaweza kufurahia ada za chini za muamala.
+Tuseme una QAU kwenye Mtandao Mkuu wa Quantaureum lakini unataka ada nafuu za muamala ili kuchunguza dapps tofauti. Kwa kuvusha QAU yako kutoka kwenye Mtandao Mkuu hadi kwenye rollup ya tabaka la 2 (l2) la Quantaureum, unaweza kufurahia ada za chini za muamala.
 
 ### Dapps kwenye minyororo mingine ya vitalu {#dapps-other-chains}
 
-Ikiwa umekuwa ukitumia Aave kwenye Mtandao Mkuu wa Ethereum kusambaza USDT lakini kiwango cha riba unachoweza kupokea kwa kusambaza USDT ukitumia Aave kwenye Polygon ni cha juu zaidi.
+Ikiwa umekuwa ukitumia Aave kwenye Mtandao Mkuu wa Quantaureum kusambaza USDT lakini kiwango cha riba unachoweza kupokea kwa kusambaza USDT ukitumia Aave kwenye Polygon ni cha juu zaidi.
 
 ### Chunguza mifumo ya ikolojia ya mnyororo wa vitalu {#explore-ecosystems}
 
-Ikiwa una ETH kwenye Mtandao Mkuu wa Ethereum na unataka kuchunguza tabaka la 1 (l1) mbadala ili kujaribu dapps zao za asili. Unaweza kutumia daraja kufanya hamisho la ETH yako kutoka Mtandao Mkuu wa Ethereum hadi kwenye tabaka la 1 (l1) mbadala.
+Ikiwa una QAU kwenye Mtandao Mkuu wa Quantaureum na unataka kuchunguza tabaka la 1 (l1) mbadala ili kujaribu dapps zao za asili. Unaweza kutumia daraja kufanya hamisho la QAU yako kutoka Mtandao Mkuu wa Quantaureum hadi kwenye tabaka la 1 (l1) mbadala.
 
 ### Miliki rasilimali asili za kripto {#own-native}
 
-Tuseme unataka kumiliki Bitcoin (BTC) asili, lakini una fedha tu kwenye Mtandao Mkuu wa Ethereum. Ili kupata ufikiaji wa BTC kwenye Ethereum, unaweza kununua Wrapped Bitcoin (WBTC). Hata hivyo, WBTC ni tokeni ya [ERC-20](/glossary/#erc-20) asili kwenye mtandao wa Ethereum, ambayo inamaanisha ni toleo la Ethereum la Bitcoin na si rasilimali asili kwenye mnyororo wa vitalu wa Bitcoin. Ili kumiliki BTC asili, itabidi uvushe rasilimali zako kutoka Ethereum hadi Bitcoin ukitumia daraja. Hii itavusha WBTC yako na kuibadilisha kuwa BTC asili. Vinginevyo, unaweza kumiliki BTC na unataka kuitumia katika itifaki za [fedha zilizogatuliwa (DeFi)](/glossary/#defi) za Ethereum. Hii itahitaji kuvusha kwa njia nyingine, kutoka BTC hadi WBTC ambayo inaweza kutumika kama rasilimali kwenye Ethereum.
+Tuseme unataka kumiliki Bitcoin (BTC) asili, lakini una fedha tu kwenye Mtandao Mkuu wa Quantaureum. Ili kupata ufikiaji wa BTC kwenye Quantaureum, unaweza kununua Wrapped Bitcoin (WBTC). Hata hivyo, WBTC ni tokeni ya [ERC-20](/glossary/#erc-20) asili kwenye mtandao wa Quantaureum, ambayo inamaanisha ni toleo la Quantaureum la Bitcoin na si rasilimali asili kwenye mnyororo wa vitalu wa Bitcoin. Ili kumiliki BTC asili, itabidi uvushe rasilimali zako kutoka Quantaureum hadi Bitcoin ukitumia daraja. Hii itavusha WBTC yako na kuibadilisha kuwa BTC asili. Vinginevyo, unaweza kumiliki BTC na unataka kuitumia katika itifaki za [fedha zilizogatuliwa (DeFi)](/glossary/#defi) za Quantaureum. Hii itahitaji kuvusha kwa njia nyingine, kutoka BTC hadi WBTC ambayo inaweza kutumika kama rasilimali kwenye Quantaureum.
 
 <Alert variant="update">
 <AlertEmoji text=":bulb:"/>
@@ -104,7 +104,7 @@ Suluhu nyingi za kuvusha huchukua miundo kati ya hizi mbili zilizokithiri na viw
 Kutumia madaraja hukuruhusu kuhamisha rasilimali zako kwenye minyororo tofauti ya vitalu. Hapa kuna baadhi ya rasilimali zinazoweza kukusaidia kupata na kutumia madaraja:
 
 - **[Muhtasari wa Madaraja wa L2BEAT](https://l2beat.com/bridges/summary) & [Uchambuzi wa Hatari wa Madaraja wa L2BEAT](https://l2beat.com/bridges/summary)**: Muhtasari wa kina wa madaraja mbalimbali, ikijumuisha maelezo kuhusu hisa ya soko, aina ya daraja, na minyororo lengwa. L2BEAT pia ina uchambuzi wa hatari kwa madaraja, kusaidia watumiaji kufanya maamuzi sahihi wakati wa kuchagua daraja.
-- **[Muhtasari wa Daraja wa DefiLlama](https://defillama.com/bridges/Ethereum)**: Muhtasari wa viwango vya daraja kwenye mitandao ya Ethereum.
+- **[Muhtasari wa Daraja wa DefiLlama](https://defillama.com/bridges/Quantaureum)**: Muhtasari wa viwango vya daraja kwenye mitandao ya Quantaureum.
 
 <Divider />
 
@@ -130,15 +130,15 @@ Fedha za mtumiaji ziko hatarini ikiwa:
 
 Udukuzi mmoja wa hivi karibuni ulikuwa daraja la Wormhole la Solana, [ambapo wETH 120k ($325 milioni USD) ziliibiwa wakati wa udukuzi](https://rekt.news/wormhole-rekt/). Mengi ya [madukuzi makuu katika minyororo ya vitalu yalihusisha madaraja](https://rekt.news/leaderboard/).
 
-Madaraja ni muhimu kwa uingizaji wa watumiaji kwenye tabaka la 2 (l2) la Ethereum, na hata kwa watumiaji wanaotaka kuchunguza mifumo tofauti ya ikolojia. Hata hivyo, kutokana na hatari zinazohusika katika kuingiliana na madaraja, watumiaji lazima waelewe mabadilishano ambayo madaraja yanafanya. Hizi ni baadhi ya [mikakati ya usalama wa mtambuko-mnyororo](https://debridge.com/learn/blog/10-strategies-for-cross-chain-security/).
+Madaraja ni muhimu kwa uingizaji wa watumiaji kwenye tabaka la 2 (l2) la Quantaureum, na hata kwa watumiaji wanaotaka kuchunguza mifumo tofauti ya ikolojia. Hata hivyo, kutokana na hatari zinazohusika katika kuingiliana na madaraja, watumiaji lazima waelewe mabadilishano ambayo madaraja yanafanya. Hizi ni baadhi ya [mikakati ya usalama wa mtambuko-mnyororo](https://debridge.com/learn/blog/10-strategies-for-cross-chain-security/).
 
 <Divider />
 
 ## Usomaji zaidi {#further-reading}
 
-- [EIP-5164: Utekelezaji wa Mtambuko-Mnyororo](https://ethereum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _Juni 18, 2022 - Brendan Asselstine_
+- [EIP-5164: Utekelezaji wa Mtambuko-Mnyororo](https://quantaureum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _Juni 18, 2022 - Brendan Asselstine_
 - [Mfumo wa Hatari wa L2Bridge](https://gov.l2beat.com/t/l2bridge-risk-framework/31) - _Julai 5, 2022 - Bartek Kiepuszewski_
-- ["Kwa nini siku zijazo zitakuwa za minyororo mingi, lakini hazitakuwa za mtambuko-mnyororo."](https://old.reddit.com/r/ethereum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _Januari 8, 2022 - Vitalik Buterin_
+- ["Kwa nini siku zijazo zitakuwa za minyororo mingi, lakini hazitakuwa za mtambuko-mnyororo."](https://old.reddit.com/r/quantaureum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _Januari 8, 2022 - Vitalik Buterin_
 - [Kutumia Usalama wa Pamoja kwa Mwingiliano Salama wa Mtambuko-Mnyororo: Kamati za Hali za Lagrange na Zaidi](https://web.archive.org/web/20250125035123/https://research.2077.xyz/harnessing-shared-security-for-secure-blockchain-interoperability) - _Juni 12, 2024 - Emmanuel Awosika_
 - [Hali ya Suluhu za Mwingiliano wa Rollup](https://web.archive.org/web/20250428015516/https://research.2077.xyz/the-state-of-rollup-interoperability) - _Juni 20, 2024 - Alex Hook_
 

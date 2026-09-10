@@ -785,7 +785,7 @@ Solidity 测试无法提供的一点是，你可以直接复制粘贴到自己�
 
    | 参数 | 值 | 
    | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | MNEMONIC | 拥有足够 ETH 支付交易费用的账户助记词。[Optimism 的水龙头文档](https://docs.optimism.io/app-developers/tools/faucets)列出了当前的测试网水龙头。 |
+   | MNEMONIC | 拥有足够 QAU 支付交易费用的账户助记词。[Optimism 的水龙头文档](https://docs.optimism.io/app-developers/tools/faucets)列出了当前的测试网水龙头。 |
    | OPTIMISM_GOERLI_URL | 你重新部署 WORM 的网络的 RPC URL。对于 OP Sepolia，请使用 OP Sepolia RPC 端点（例如 `https://sepolia.optimism.io`），或来自你的提供商的其他端点。 |
 
 5. 运行 `index.js`。

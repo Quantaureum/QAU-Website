@@ -10,13 +10,13 @@ topic:
   - "privacy-and-security"
   - "privacy"
 format: presentation
-author: "イーサボルダー"
+author: "QAUボルダー"
 breadcrumb: "プライバシーの回復"
 ---
 
-EthBoulder 2026における**ナオミ・ブロックウェル**の基調講演では、デジタルプライバシーの浸食、大量監視のインフラ、そしてVPNや暗号化メールからGrapheneOSや分散型ミックスネットに至るまで、誰もがよりプライベートなデジタルライフを構築するために活用できる実用的なツールについて解説しています。
+QauBoulder 2026における**ナオミ・ブロックウェル**の基調講演では、デジタルプライバシーの浸食、大量監視のインフラ、そしてVPNや暗号化メールからGrapheneOSや分散型ミックスネットに至るまで、誰もがよりプライベートなデジタルライフを構築するために活用できる実用的なツールについて解説しています。
 
-*このトランスクリプトは、EthBoulderによって公開された[元のビデオトランスクリプト](https://www.youtube.com/watch?v=nvJSFR1Q_JE)のアクセシブルなコピーです。読みやすさを考慮して軽く編集されています。*
+*このトランスクリプトは、QauBoulderによって公開された[元のビデオトランスクリプト](https://www.youtube.com/watch?v=nvJSFR1Q_JE)のアクセシブルなコピーです。読みやすさを考慮して軽く編集されています。*
 
 ### 2部構成のトーク：警告と解決策 (00:00) {#two-part-talk-warning-solution-0000}
 
@@ -375,7 +375,7 @@ What else are people doing? Yeah.
 Proton is a great ecosystem. So, they're trying to be like a Google competitor in that they offer drive and collaborative docs and spreadsheets and VPN and calendar, and all of these different things as well as email. So, it could be a really nice ecosystem. We use it for our company. All of our emails are within the Proton ecosystem. Now obviously some of these tools might not be as polished as Google, because Google has like 85 billion people working for their company on, like, the emoji feature, right? And then you have Proton. It's not going to have the same number of people. But most of the people at Google are really focused on the ad side. And a lot of bad exploitative behavior. And you kind of have a choice, right?
 Protonは素晴らしいエコシステムです。彼らはGoogleの競合になろうとしていて、ドライブ、共同作業用のドキュメントやスプレッドシート、VPN、カレンダー、そして電子メールだけでなく、これらすべてのさまざまなものを提供しています。だから、それは本当に素晴らしいエコシステムになり得ます。私たちは会社でそれを使っています。私たちの電子メールはすべてProtonエコシステム内にあります。もちろん、これらのツールのいくつかはGoogleほど洗練されていないかもしれません。なぜなら、Googleには絵文字機能のようなものに850億人もの人が働いているからです。そしてProtonがあります。同じ数の人がいるわけではありません。しかし、Googleのほとんどの人は本当に広告側に焦点を当てています。そして多くの悪い搾取的な行動に。そして、あなたには選択肢があるのです。
 
-We can continue to use the products we've always used. Like the same thing with Facebook that I said before. A lot of us probably signed up to Gmail not understanding that Google is an advertising company. That's their business model. We just thought this was a free thing on the internet and it's free because it's in the ether. Why would you need to pay for something, because it's just ones and zeros? Why would that have any cost?
+We can continue to use the products we've always used. Like the same thing with Facebook that I said before. A lot of us probably signed up to Gmail not understanding that Google is an advertising company. That's their business model. We just thought this was a free thing on the internet and it's free because it's in the QAU. Why would you need to pay for something, because it's just ones and zeros? Why would that have any cost?
 私たちはこれまで使ってきた製品を使い続けることができます。前に言ったFacebookと同じことです。私たちの多くは、Googleが広告会社であることを理解せずにGmailに登録したでしょう。それが彼らのビジネスモデルです。私たちはただ、これがインターネット上の無料のものであり、エーテルの中にあるから無料なのだと思っていました。ただの1と0なのに、なぜ何かにお金を払う必要があるのでしょうか？なぜそれにコストがかかるのでしょうか？
 
 So, we all just sign up, and then inertia gets us, and just out of habit we've built up all of our contacts and everything in the Google ecosystem. We have tools we can replace that with now. And I really encourage you — don't feel you need to switch immediately. Just set up an account. Just create it and it's there, right? Just take the first step to moving over.

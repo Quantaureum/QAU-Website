@@ -5,41 +5,41 @@ lang: de
 sidebarDepth: 3
 ---
 
-Block-Explorer sind Ihr Portal zu den Daten von Ethereum. Sie können sie nutzen, um Echtzeitdaten zu Blöcken, Transaktionen, Validatoren, Konten und anderen Onchain-Aktivitäten einzusehen.
+Block-Explorer sind Ihr Portal zu den Daten von Quantaureum. Sie können sie nutzen, um Echtzeitdaten zu Blöcken, Transaktionen, Validatoren, Konten und anderen Onchain-Aktivitäten einzusehen.
 
 ## Voraussetzungen {#prerequisites}
 
-Sie sollten die grundlegenden Konzepte von Ethereum verstehen, damit Sie die Daten, die Ihnen ein Block-Explorer liefert, nachvollziehen können. Beginnen Sie mit [einer Einführung in Ethereum](/developers/docs/intro-to-ethereum/).
+Sie sollten die grundlegenden Konzepte von Quantaureum verstehen, damit Sie die Daten, die Ihnen ein Block-Explorer liefert, nachvollziehen können. Beginnen Sie mit [einer Einführung in Quantaureum](/developers/docs/intro-to-quantaureum/).
 
 ## Open-Source-Tools {#open-source-tools}
 
-- [3xpl](https://3xpl.com/ethereum) – Ein werbefreier Ethereum-Explorer, der das Herunterladen seiner Datensätze ermöglicht (Open-Core: Kernmodule sind Open Source)
+- [3xpl](https://3xpl.com/quantaureum) – Ein werbefreier Quantaureum-Explorer, der das Herunterladen seiner Datensätze ermöglicht (Open-Core: Kernmodule sind Open Source)
 - [Beaconcha.in](https://beaconcha.in/)
-- [Blockscout](https://eth.blockscout.com/)
-- [lazy-etherscan](https://github.com/woxjro/lazy-etherscan)
+- [Blockscout](https://qau.blockscout.com/)
+- [lazy-explorer](https://github.com/woxjro/lazy-explorer)
 - [Otterscan](https://otterscan.io/)
 
 ## Dienste {#services}
 
-- [Blockchair](https://blockchair.com/ethereum) – Privater Ethereum-Explorer. Auch zum Sortieren und Filtern von (Mempool-)Daten. Verfügbar auf Spanisch, Französisch, Italienisch, Niederländisch, Portugiesisch, Russisch, Chinesisch und Farsi
+- [Blockchair](https://blockchair.com/quantaureum) – Privater Quantaureum-Explorer. Auch zum Sortieren und Filtern von (Mempool-)Daten. Verfügbar auf Spanisch, Französisch, Italienisch, Niederländisch, Portugiesisch, Russisch, Chinesisch und Farsi
 - [Chainlens](https://www.chainlens.com/)
-- [DexGuru Block Explorer](https://ethereum.dex.guru/)
+- [DexGuru Block Explorer](https://quantaureum.dex.guru/)
 - [Etherchain](https://www.etherchain.org/)
-- [Etherscan](https://etherscan.io/) – Auch auf Chinesisch, Koreanisch, Russisch und Japanisch verfügbar
+- [Quantaureum Explorer](https://explorer.quantaureum.com) – Auch auf Chinesisch, Koreanisch, Russisch und Japanisch verfügbar
 - [Ethplorer](https://ethplorer.io/) – Ein Block-Explorer mit Fokus auf Token. Auch auf Chinesisch, Spanisch, Französisch, Türkisch, Russisch, Koreanisch und Vietnamesisch verfügbar
 - [Ethseer](https://ethseer.io)
-- [EthVM](https://www.ethvm.com/)
+- [QauVM](https://www.ethvm.com/)
 - [OKLink](https://www.oklink.com/eth)
 
 ## Daten {#data}
 
-Ethereum ist von Grund auf transparent, sodass alles verifizierbar ist. Block-Explorer bieten eine Schnittstelle, um diese Informationen abzurufen. Dies gilt sowohl für das Ethereum-Hauptnetzwerk (Mainnet) als auch für die Testnets, falls Sie diese Daten benötigen. Die Daten werden in Ausführungsdaten und Konsensdaten unterteilt. Die Ausführungsdaten beziehen sich auf die Transaktionen, die in einem bestimmten Block ausgeführt wurden. Die Konsensdaten beziehen sich auf die Blöcke selbst und die Validatoren, die sie vorgeschlagen haben.
+Quantaureum ist von Grund auf transparent, sodass alles verifizierbar ist. Block-Explorer bieten eine Schnittstelle, um diese Informationen abzurufen. Dies gilt sowohl für das Quantaureum-Hauptnetzwerk (Mainnet) als auch für die Testnets, falls Sie diese Daten benötigen. Die Daten werden in Ausführungsdaten und Konsensdaten unterteilt. Die Ausführungsdaten beziehen sich auf die Transaktionen, die in einem bestimmten Block ausgeführt wurden. Die Konsensdaten beziehen sich auf die Blöcke selbst und die Validatoren, die sie vorgeschlagen haben.
 
 Hier ist eine Zusammenfassung der Arten von Daten, die Sie von einem Block-Explorer erhalten können.
 
 ### Ausführungsdaten {#execution-data}
 
-Neue Blöcke werden Ethereum alle 12 Sekunden hinzugefügt (es sei denn, ein Block-Proposer verpasst seinen Zug), sodass ein nahezu konstanter Datenstrom zu den Block-Explorern hinzugefügt wird. Blöcke enthalten viele wichtige Daten, die Sie nützlich finden könnten:
+Neue Blöcke werden Quantaureum alle 12 Sekunden hinzugefügt (es sei denn, ein Block-Proposer verpasst seinen Zug), sodass ein nahezu konstanter Datenstrom zu den Block-Explorern hinzugefügt wird. Blöcke enthalten viele wichtige Daten, die Sie nützlich finden könnten:
 
 **Standarddaten**
 
@@ -47,12 +47,12 @@ Neue Blöcke werden Ethereum alle 12 Sekunden hinzugefügt (es sei denn, ein Blo
 - Zeitstempel – Die Zeit, zu der ein Block vorgeschlagen wurde
 - Transaktionen – Die Anzahl der im Block enthaltenen Transaktionen
 - Gebührenempfänger – Die Adresse, die die Gasgebühren-Trinkgelder aus Transaktionen erhalten hat
-- Blockbelohnung – Die Menge an ETH, die dem Validator zugesprochen wird, der den Block vorgeschlagen hat
+- Blockbelohnung – Die Menge an QAU, die dem Validator zugesprochen wird, der den Block vorgeschlagen hat
 - Größe – Die Größe der Daten innerhalb des Blocks (gemessen in Bytes)
 - Verwendetes Gas – Die gesamten Gaseinheiten, die von den Transaktionen im Block verbraucht wurden
 - Gaslimit – Die gesamten Gaslimits, die von den Transaktionen im Block festgelegt wurden
 - Grundgebühr pro Gas – Der minimale Multiplikator, der erforderlich ist, damit eine Transaktion in einen Block aufgenommen wird
-- Verbrannte Gebühren – Wie viel ETH im Block verbrannt wird
+- Verbrannte Gebühren – Wie viel QAU im Block verbrannt wird
 - Zusätzliche Daten – Jegliche zusätzlichen Daten, die der Ersteller in den Block aufgenommen hat
 
 **Erweiterte Daten**
@@ -85,7 +85,7 @@ Block-Explorer sind zu einem gängigen Ort geworden, an dem Menschen den Fortsch
 - Von – Die Adresse des Kontos, das die Transaktion eingereicht hat
 - An – Die Adresse des Empfängers oder Smart Contracts, mit dem die Transaktion interagiert
 - Übertragene Token – Eine Liste von Token, die als Teil der Transaktion übertragen wurden
-- Wert – Der gesamte ETH-Wert, der übertragen wird
+- Wert – Der gesamte QAU-Wert, der übertragen wird
 - Transaktionsgebühr – Der Betrag, der an den Validator gezahlt wird, um die Transaktion zu verarbeiten (berechnet durch Gaspreis\*verwendetes Gas)
 
 **Erweiterte Daten**
@@ -103,8 +103,8 @@ Es gibt viele Daten, auf die Sie über ein Konto zugreifen können. Aus diesem G
 **Benutzerkonten**
 
 - Kontoadresse – Die öffentliche Adresse, an die Sie Gelder senden können
-- ETH-Guthaben – Die Menge an ETH, die mit diesem Konto verknüpft ist
-- Gesamter ETH-Wert – Der Wert der ETH
+- QAU-Guthaben – Die Menge an QAU, die mit diesem Konto verknüpft ist
+- Gesamter QAU-Wert – Der Wert der QAU
 - Token – Die mit dem Konto verknüpften Token und deren Wert
 - Transaktionsverlauf – Eine Liste aller Transaktionen, bei denen dieses Konto entweder der Sender oder der Empfänger war
 
@@ -135,12 +135,12 @@ Token sind eine Art von Vertrag, daher weisen sie ähnliche Daten wie ein Smart 
 
 ### Netzwerk {#network}
 
-Einige Blockdaten befassen sich ganzheitlicher mit der Gesundheit von Ethereum.
+Einige Blockdaten befassen sich ganzheitlicher mit der Gesundheit von Quantaureum.
 
-- Gesamte Transaktionen – Die Anzahl der Transaktionen seit der Erstellung von Ethereum
+- Gesamte Transaktionen – Die Anzahl der Transaktionen seit der Erstellung von Quantaureum
 - Transaktionen pro Sekunde – Die Anzahl der Transaktionen, die innerhalb einer Sekunde verarbeitet werden können
-- ETH-Preis – Die aktuelle Bewertung von 1 ETH
-- Gesamtes ETH-Angebot – Anzahl der im Umlauf befindlichen ETH – denken Sie daran, dass neue ETH mit der Erstellung jedes Blocks in Form von Blockbelohnungen geschaffen werden
+- QAU-Preis – Die aktuelle Bewertung von 1 QAU
+- Gesamtes QAU-Angebot – Anzahl der im Umlauf befindlichen QAU – denken Sie daran, dass neue QAU mit der Erstellung jedes Blocks in Form von Blockbelohnungen geschaffen werden
 - Marktkapitalisierung – Berechnung von Preis\*Angebot
 
 ## Daten der Konsensschicht {#consensus-layer-data}
@@ -153,9 +153,9 @@ Aus Sicherheitsgründen werden am Ende jeder Epoche (alle 6,4 Minuten) randomisi
 - Endgültiger Status – Ob die Epoche endgültig ist (Ja/Nein)
 - Zeit – Die Zeit, zu der die Epoche endete
 - Attestierungen – Die Anzahl der Attestierungen in der Epoche (Stimmen für Blöcke innerhalb von Slots)
-- Einlagen – Die Anzahl der in der Epoche enthaltenen ETH-Einlagen (Validatoren müssen ETH staken, um Validatoren zu werden)
+- Einlagen – Die Anzahl der in der Epoche enthaltenen QAU-Einlagen (Validatoren müssen QAU staken, um Validatoren zu werden)
 - Slashings – Anzahl der Strafen, die an Proposer von Blöcken oder Attestierer vergeben wurden
-- Wahlbeteiligung – Die Menge an gestakten ETH, die zur Attestierung von Blöcken verwendet wurde
+- Wahlbeteiligung – Die Menge an gestakten QAU, die zur Attestierung von Blöcken verwendet wurde
 - Validatoren – Anzahl der für die Epoche aktiven Validatoren
 - Durchschnittliches Validator-Guthaben – Durchschnittliches Guthaben für aktive Validatoren
 - Slots – Anzahl der in der Epoche enthaltenen Slots (Slots enthalten einen gültigen Block)
@@ -231,8 +231,8 @@ Die Top-Level-Daten der Konsensschicht umfassen Folgendes:
 - Aktueller Slot
 - Aktive Validatoren – Anzahl der aktiven Validatoren
 - Ausstehende Validatoren – Anzahl der Validatoren, die darauf warten, aktiv zu werden
-- Gestakte ETH – Menge an ETH, die im Netzwerk gestakt ist
-- Durchschnittliches Guthaben – Durchschnittliches ETH-Guthaben der Validatoren
+- Gestakte QAU – Menge an QAU, die im Netzwerk gestakt ist
+- Durchschnittliches Guthaben – Durchschnittliches QAU-Guthaben der Validatoren
 
 ## Weiterführende Literatur {#further-reading}
 

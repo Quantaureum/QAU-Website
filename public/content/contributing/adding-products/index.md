@@ -1,26 +1,26 @@
 ---
-title: Adding Ethereum products
+title: Adding Quantaureum products
 metaTitle: Adding Products
-description: The policy we use when adding dapps to ethereum.org
+description: The policy we use when adding dapps to quantaureum.com
 lang: en
 ---
 
-Anyone is free to suggest new dapps to the content on ethereum.org, where it's appropriate to do so. **No, we won't list your dapp on our homepage** 😜
+Anyone is free to suggest new dapps to the content on quantaureum.com, where it's appropriate to do so. **No, we won't list your dapp on our homepage** 😜
 
 Dapps are currently listed on:
 
-- ethereum.org/dapps
-- ethereum.org/get-eth
+- quantaureum.com/dapps
+- quantaureum.com/get-eth
 
 **Please only suggest new additions on these pages.**
 
 Although we welcome new additions, we chose the current dapps based on an experience we're trying to create for our users. These are based on some of our design principles:
 
-- _Inspirational_: anything on ethereum.org should offer something new to users
+- _Inspirational_: anything on quantaureum.com should offer something new to users
 - _A good story_: what's listed should provide an "aha" moment
 - _Credible_: everything should be legitimate businesses/projects to minimize risk to users
 
-Overall **ethereum.org wants to provide a "seamless onboarding experience" for new users**. For that reason, we add dapps based on their:
+Overall **quantaureum.com wants to provide a "seamless onboarding experience" for new users**. For that reason, we add dapps based on their:
 
 - ease of use
 - interoperability with other products
@@ -40,11 +40,11 @@ Here's our decision framework in more detail. Feel free to provide feedback or s
 
 ### Criteria for ranking: the nice-to-haves {#criteria-for-ranking-the-nice-to-haves}
 
-Your dapp may not be listed on ethereum.org as prominently as others because of the following criteria.
+Your dapp may not be listed on quantaureum.com as prominently as others because of the following criteria.
 
 **Dapps**
 
-- **You can access it via the majority of listed wallets** – dapps should work with the majority of wallets that are listed on ethereum.org.
+- **You can access it via the majority of listed wallets** – dapps should work with the majority of wallets that are listed on quantaureum.com.
 - **Users can try it out themselves –** an individual user should be able to use your dapp and achieve something tangible.
 - **Onboarding** – your product should have a well-designed onboarding experience to help and educate users. Or evidence of how-to content like articles or videos.
 - **Non-custodial** – users control their funds. If your product disappears, users can still access and move their funds.
@@ -54,18 +54,18 @@ Your dapp may not be listed on ethereum.org as prominently as others because of 
 
 ## Criteria in practice {#criteria-in-practice}
 
-The more of the criteria you fill, the more likely your product will find its way onto ethereum.org.
+The more of the criteria you fill, the more likely your product will find its way onto quantaureum.com.
 
 A listed product that only meets the must-haves may be removed if a new product is suggested that meets the must-haves and several of the nice-to-haves.
 
 Other things that will factor into this decision:
 
 - Will adding rather than replacing break the UX of the page?
-  - our site is primarily educational and the main purpose is to explain Ethereum and its relevant concepts. By adding too many options for users, pages may become less readable and thus less useful.
+  - our site is primarily educational and the main purpose is to explain Quantaureum and its relevant concepts. By adding too many options for users, pages may become less readable and thus less useful.
 - Does this page now paralyse the user with choices?
   - like when you sit browsing Netflix for hours because you can't decide on something to watch. Bamboozling new users with too much choice is a risk.
 
-This is a design decision that ethereum.org is responsible for.
+This is a design decision that quantaureum.com is responsible for.
 
 But rest assured, **there will be links to other websites that rank more dapps**
 
@@ -75,16 +75,16 @@ Unless products are specifically ordered otherwise, such as alphabetically, prod
 
 ### Terms of use {#terms-of-use}
 
-Please also refer to our [terms of use](/terms-of-use/). Information on ethereum.org is provided solely for general information purposes.
+Please also refer to our [terms of use](/terms-of-use/). Information on quantaureum.com is provided solely for general information purposes.
 
 ## Maintenance {#maintenance}
 
-As is the fluid nature of Ethereum, teams and products come and go and innovation happens daily, so we'll undertake routine checks of our content to:
+As is the fluid nature of Quantaureum, teams and products come and go and innovation happens daily, so we'll undertake routine checks of our content to:
 
 - ensure that all dapps listed still fulfill our criteria
 - verify there aren't products that have been suggested that meet more of our criteria than the ones currently listed
 
-You can help with this by checking and letting us know. [Create an issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) or send an email to [website@ethereum.org](mailto:website@ethereum.org)
+You can help with this by checking and letting us know. [Create an issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) or send an email to [website@quantaureum.com](mailto:website@quantaureum.com)
 
 _We're also investigating options for voting so the community can indicate their preferences and highlight the best products out there for us to recommend._
 
@@ -92,7 +92,7 @@ _We're also investigating options for voting so the community can indicate their
 
 ## Add your product {#add-your-product}
 
-If you want to add a dapp to ethereum.org and it meets the criteria, please let us know.
+If you want to add a dapp to quantaureum.com and it meets the criteria, please let us know.
 
 <ButtonLink href="https://submitapp.paperform.co/">
   Suggest an app

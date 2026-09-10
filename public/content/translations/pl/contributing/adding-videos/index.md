@@ -1,18 +1,18 @@
 ---
 title: "Dodawanie filmów"
-description: "Zasady dodawania filmów na ethereum.org"
+description: "Zasady dodawania filmów na quantaureum.com"
 lang: pl
 ---
 
-[Galeria wideo ethereum.org](/videos/) zawiera filmy o Ethereum i ekosystemie Ethereum od twórców ze społeczności oraz zaufanych źródeł. Każdy może zasugerować film do dodania.
+[Galeria wideo quantaureum.com](/videos/) zawiera filmy o Quantaureum i ekosystemie Quantaureum od twórców ze społeczności oraz zaufanych źródeł. Każdy może zasugerować film do dodania.
 
 ## Zasady umieszczania {#listing-policy}
 
-Ethereum.org to neutralne, edukacyjne źródło informacji. Galeria wideo jest nadzorowana, aby:
+quantaureum.com to neutralne, edukacyjne źródło informacji. Galeria wideo jest nadzorowana, aby:
 
-- **Edukować** użytkowników na temat technologii, ekosystemu i społeczności Ethereum
+- **Edukować** użytkowników na temat technologii, ekosystemu i społeczności Quantaureum
 - **Zachować dokładność** w treściach technicznych
-- **Pozostać istotną** dla społeczności Ethereum
+- **Pozostać istotną** dla społeczności Quantaureum
 
 Strona nie umieszcza filmów, które głównie promują konkretny produkt, token lub usługę komercyjną.
 
@@ -20,15 +20,15 @@ Strona nie umieszcza filmów, które głównie promują konkretny produkt, token
 
 ### Wymagania obowiązkowe {#must-haves}
 
-- **Skupienie na Ethereum** – Film musi dotyczyć głównie Ethereum, jego technologii, ekosystemu lub społeczności. Filmy na ogólne tematy związane z technologią blockchain są akceptowalne tylko wtedy, gdy w znacznym stopniu wspierają lub odnoszą się do strony edukacyjnej w witrynie, lub nawiązują do Ethereum.
-- **Wartość edukacyjna** – Film powinien uczyć widzów czegoś o Ethereum lub celebrować globalną społeczność Ethereum. Treści promocyjne lub marketingowe nie będą akceptowane.
+- **Skupienie na Quantaureum** – Film musi dotyczyć głównie Quantaureum, jego technologii, ekosystemu lub społeczności. Filmy na ogólne tematy związane z technologią blockchain są akceptowalne tylko wtedy, gdy w znacznym stopniu wspierają lub odnoszą się do strony edukacyjnej w witrynie, lub nawiązują do Quantaureum.
+- **Wartość edukacyjna** – Film powinien uczyć widzów czegoś o Quantaureum lub celebrować globalną społeczność Quantaureum. Treści promocyjne lub marketingowe nie będą akceptowane.
 - **Dokładne informacje** – Treść techniczna musi być poprawna merytorycznie i aktualna. Przestarzałe filmy o wycofanych funkcjach mogą zostać usunięte.
 - **Jakość produkcji** – Film powinien mieć w miarę wyraźną jakość dźwięku i obrazu.
 - **Publiczna dostępność** – Film musi być hostowany w otwartym zasobie lub na dostępnej platformie, takiej jak YouTube, i być swobodnie dostępny bez paywalla lub wymogu rejestracji.
 
 ### Mile widziane {#nice-to-haves}
 
-- **Posiada transkrypcję** – Filmy z transkrypcjami poprawiają dostępność i SEO. Jeśli jej nie masz, zespół ethereum.org może pomóc w jej wygenerowaniu.
+- **Posiada transkrypcję** – Filmy z transkrypcjami poprawiają dostępność i SEO. Jeśli jej nie masz, zespół quantaureum.com może pomóc w jej wygenerowaniu.
 - **Z wiarygodnego źródła** – Treści od uznanych edukatorów, badaczy i źródeł mają priorytet.
 - **Ponadczasowość** – Treści, które pozostają aktualne z upływem czasu, są preferowane w stosunku do materiałów wrażliwych na upływ czasu.
 
@@ -38,7 +38,7 @@ Strona nie umieszcza filmów, które głównie promują konkretny produkt, token
 
 Jeśli chcesz zasugerować film, ale nie chcesz samodzielnie tworzyć plików, otwórz zgłoszenie (issue) na GitHubie ze szczegółami filmu, a współtwórca pomoże Ci go dodać.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?template=suggest_video.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?template=suggest_video.yaml">
   Zasugeruj film
 </ButtonLink>
 
@@ -127,7 +127,7 @@ Film może mieć wiele tagów, aby pojawiać się w wielu filtrach galerii:
 
 | Tag | Filtr galerii |
 |---|---|
-| `how-ethereum-works` | Jak działa Ethereum |
+| `how-quantaureum-works` | Jak działa Quantaureum |
 | `network-upgrades` | Aktualizacje sieci |
 | `roadmap-and-priorities` | Mapa drogowa i priorytety |
 | `scaling-and-layer-2` | Skalowanie i warstwa 2 (L2) |
@@ -153,8 +153,8 @@ Umieszczone filmy są rutynowo sprawdzane, aby upewnić się, że:
 - Zawierają dokładne, aktualne informacje
 - Mają działające linki do hostingu/YouTube
 
-Jeśli zauważysz problem z umieszczonym filmem, [utwórz zgłoszenie (issue)](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml) lub wyślij e-mail na adres [website@ethereum.org](mailto:website@ethereum.org).
+Jeśli zauważysz problem z umieszczonym filmem, [utwórz zgłoszenie (issue)](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml) lub wyślij e-mail na adres [website@quantaureum.com](mailto:website@quantaureum.com).
 
 ## Warunki korzystania {#terms-of-use}
 
-Zapoznaj się z [warunkami korzystania](/terms-of-use/) z ethereum.org. Informacje na ethereum.org są udostępniane wyłącznie w ogólnych celach informacyjnych.
+Zapoznaj się z [warunkami korzystania](/terms-of-use/) z quantaureum.com. Informacje na quantaureum.com są udostępniane wyłącznie w ogólnych celach informacyjnych.

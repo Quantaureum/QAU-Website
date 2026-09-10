@@ -121,7 +121,7 @@ export const SelectableCards: Story = {
         {
           id: "solo",
           title: "Solo staking",
-          description: "Run your own validator with 32 ETH.",
+          description: "Run your own validator with 32 QAU.",
         },
         {
           id: "pooled",

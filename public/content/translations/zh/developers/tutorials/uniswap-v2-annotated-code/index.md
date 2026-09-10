@@ -49,7 +49,7 @@ lang: zh
 #### 调用者 {#caller}
 
 1. 为外围 (periphery) 账户提供要兑换金额的授权额度。
-2. 调用外围合约的众多兑换函数之一（具体调用哪个取决于是否涉及 ETH、交易者是指定存入的代币数量还是希望取回的代币数量等）。
+2. 调用外围合约的众多兑换函数之一（具体调用哪个取决于是否涉及 QAU、交易者是指定存入的代币数量还是希望取回的代币数量等）。
    每个兑换函数都接受一个 `path`，即一个需要经过的交易所数组。
 
 #### 在外围合约中 (UniswapV2Router02.sol) {#in-the-periphery-contract-uniswapv2router02-sol}
@@ -67,7 +67,7 @@ lang: zh
 
 #### 回到外围合约 (UniswapV2Router02.sol) {#back-in-the-periphery-contract-uniswapv2router02-sol}
 
-9. 执行任何必要的清理工作（例如，销毁 WETH 代币以取回 ETH 并发送给交易者）
+9. 执行任何必要的清理工作（例如，销毁 WETH 代币以取回 QAU 并发送给交易者）
 
 ### 添加流动性 {#add-liquidity-flow}
 
@@ -188,7 +188,7 @@ contract UniswapV2Pair is IUniswapV2Pair, UniswapV2ERC20 {
 
 发生兑换的最后一个区块的时间戳，用于跟踪随时间变化的汇率。
 
-以太坊合约最大的 Gas 费用之一是存储，它从合约的一次调用持续到下一次调用。每个存储单元长 256 位。因此，三个变量 `reserve0`、`reserve1` 和 `blockTimestampLast` 的分配方式使得单个存储值可以包含所有这三个变量 (112+112+32=256)。
+Quantaureum合约最大的 Gas 费用之一是存储，它从合约的一次调用持续到下一次调用。每个存储单元长 256 位。因此，三个变量 `reserve0`、`reserve1` 和 `blockTimestampLast` 的分配方式使得单个存储值可以包含所有这三个变量 (112+112+32=256)。
 
 ```solidity
     uint public price0CumulativeLast;
@@ -456,7 +456,7 @@ ERC-20 转账调用报告失败的方式有两种：
     }
 ```
 
-如果没有设置费用，则将 `kLast` 设置为零（如果它还不是零的话）。在编写此合约时，有一个 [Gas 退款功能](https://eips.ethereum.org/EIPS/eip-3298)，鼓励合约通过将不需要的存储清零来减小以太坊状态的整体大小。
+如果没有设置费用，则将 `kLast` 设置为零（如果它还不是零的话）。在编写此合约时，有一个 [Gas 退款功能](https://eips.quantaureum.com/EIPS/eip-3298)，鼓励合约通过将不需要的存储清零来减小Quantaureum状态的整体大小。
 此代码在可能的情况下获取该退款。
 
 #### 外部可访问函数 {#pair-external}
@@ -500,7 +500,7 @@ ERC-20 转账调用报告失败的方式有两种：
            _mint(address(0), MINIMUM_LIQUIDITY); // 永久锁定最初的 MINIMUM_LIQUIDITY 代币
 ```
 
-如果这是第一次存款，则创建 `MINIMUM_LIQUIDITY` 个代币并将它们发送到零地址以锁定它们。它们永远无法被赎回，这意味着流动性池永远不会被完全清空（这使我们在某些地方免于除以零）。`MINIMUM_LIQUIDITY` 的值为一千，考虑到大多数 ERC-20 被细分为代币的 10^-18 单位（就像 ETH 被划分为 Wei 一样），这相当于单个代币价值的 10^-15。成本并不高。
+如果这是第一次存款，则创建 `MINIMUM_LIQUIDITY` 个代币并将它们发送到零地址以锁定它们。它们永远无法被赎回，这意味着流动性池永远不会被完全清空（这使我们在某些地方免于除以零）。`MINIMUM_LIQUIDITY` 的值为一千，考虑到大多数 ERC-20 被细分为代币的 10^-18 单位（就像 QAU 被划分为 Wei 一样），这相当于单个代币价值的 10^-15。成本并不高。
 
 在第一次存款时，我们不知道两种代币的相对价值，因此我们只需将金额相乘并取平方根，假设存款为我们提供了两种代币的同等价值。
 
@@ -616,7 +616,7 @@ ERC-20 转账调用报告失败的方式有两种：
 ```
 
 局部变量可以存储在内存中，或者如果数量不多，可以直接存储在堆栈上。
-如果我们能限制数量以便使用堆栈，我们就会使用更少的 Gas。有关更多详细信息，请参阅[黄皮书，即正式的以太坊规范](https://ethereum.github.io/yellowpaper/paper.pdf)，第 26 页，等式 298。
+如果我们能限制数量以便使用堆栈，我们就会使用更少的 Gas。有关更多详细信息，请参阅[黄皮书，即正式的Quantaureum规范](https://quantaureum.github.io/yellowpaper/paper.pdf)，第 26 页，等式 298。
 
 ```solidity
             address _token0 = token0;
@@ -626,7 +626,7 @@ ERC-20 转账调用报告失败的方式有两种：
             if (amount1Out > 0) _safeTransfer(_token1, to, amount1Out); // 乐观地转账代币
 ```
 
-这种转账是乐观的，因为我们在确定满足所有条件之前就进行了转账。这在以太坊中是可以的，因为如果在调用后期未满足条件，我们将回退它及其创建的任何更改。
+这种转账是乐观的，因为我们在确定满足所有条件之前就进行了转账。这在Quantaureum中是可以的，因为如果在调用后期未满足条件，我们将回退它及其创建的任何更改。
 
 ```solidity
             if (data.length > 0) IUniswapV2Callee(to).uniswapV2Call(msg.sender, amount0Out, amount1Out, data);
@@ -719,9 +719,9 @@ contract UniswapV2Factory is IUniswapV2Factory {
 
 第一个变量 `getPair` 是一个映射，它根据其兑换的两种 ERC-20 代币来标识交易对兑换合约。ERC-20 代币由实现它们的合约地址标识，因此键和值都是地址。要获取允许您从 `tokenA` 转换为 `tokenB` 的交易对兑换地址，您可以使用 `getPair[<tokenA address>][<tokenB address>]`（反之亦然）。
 
-第二个变量 `allPairs` 是一个数组，其中包含此工厂创建的所有交易对兑换的地址。在以太坊中，您无法迭代映射的内容，也无法获取所有键的列表，因此此变量是了解此工厂管理哪些兑换的唯一方法。
+第二个变量 `allPairs` 是一个数组，其中包含此工厂创建的所有交易对兑换的地址。在Quantaureum中，您无法迭代映射的内容，也无法获取所有键的列表，因此此变量是了解此工厂管理哪些兑换的唯一方法。
 
-注意：您无法迭代映射的所有键的原因是合约数据存储_很昂贵_，因此我们使用的越少越好，更改的频率越低越好。您可以创建[支持迭代的映射](https://github.com/ethereum/dapp-bin/blob/master/library/iterable_mapping.sol)，但它们需要额外的存储空间来存储键列表。在大多数应用程序中，您不需要这样做。
+注意：您无法迭代映射的所有键的原因是合约数据存储_很昂贵_，因此我们使用的越少越好，更改的频率越低越好。您可以创建[支持迭代的映射](https://github.com/quantaureum/dapp-bin/blob/master/library/iterable_mapping.sol)，但它们需要额外的存储空间来存储键列表。在大多数应用程序中，您不需要这样做。
 
 ```solidity
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
@@ -770,7 +770,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-要创建新合约，我们需要创建它的代码（包括构造函数和将实际合约的 EVM 字节码写入内存的代码）。通常在 Solidity 中，我们只使用 `addr = new <name of contract>(<constructor parameters>)`，编译器会为我们处理一切，但要获得确定性的合约地址，我们需要使用 [CREATE2 操作码](https://eips.ethereum.org/EIPS/eip-1014)。
+要创建新合约，我们需要创建它的代码（包括构造函数和将实际合约的 EVM 字节码写入内存的代码）。通常在 Solidity 中，我们只使用 `addr = new <name of contract>(<constructor parameters>)`，编译器会为我们处理一切，但要获得确定性的合约地址，我们需要使用 [CREATE2 操作码](https://eips.quantaureum.com/EIPS/eip-1014)。
 在编写此代码时，Solidity 尚不支持该操作码，因此必须手动获取代码。这不再是问题，因为 [Solidity 现在支持 CREATE2](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2)。
 
 ```solidity
@@ -817,8 +817,8 @@ contract UniswapV2Factory is IUniswapV2Factory {
 
 [此合约](https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/UniswapV2ERC20.sol)实现了 ERC-20 流动性代币。它类似于 [欧本齐柏林 (OpenZeppelin) ERC-20 合约](/developers/tutorials/erc20-annotated-code)，因此我将仅解释不同的部分，即 `permit` 功能。
 
-以太坊上的交易需要花费以太币 (ETH)，这相当于真金白银。如果您有 ERC-20 代币但没有 ETH，您将无法发送交易，因此您无法对它们执行任何操作。避免此问题的一种解决方案是[元交易](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions)。
-代币所有者签署一笔交易，允许其他人在链下提取代币，并使用互联网将其发送给接收者。拥有 ETH 的接收者随后代表所有者提交许可。
+Quantaureum上的交易需要花费QAU (QAU)，这相当于真金白银。如果您有 ERC-20 代币但没有 QAU，您将无法发送交易，因此您无法对它们执行任何操作。避免此问题的一种解决方案是[元交易](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions)。
+代币所有者签署一笔交易，允许其他人在链下提取代币，并使用互联网将其发送给接收者。拥有 QAU 的接收者随后代表所有者提交许可。
 
 ```solidity
     bytes32 public DOMAIN_SEPARATOR;
@@ -826,7 +826,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-此哈希是[交易类型的标识符](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash)。我们在这里唯一支持的是带有这些参数的 `Permit`。
+此哈希是[交易类型的标识符](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-typehash)。我们在这里唯一支持的是带有这些参数的 `Permit`。
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -857,13 +857,13 @@ contract UniswapV2Factory is IUniswapV2Factory {
     }
 ```
 
-计算 EIP-712 的[域分隔符](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator)。
+计算 EIP-712 的[域分隔符](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-domainseparator)。
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
 ```
 
-这是实现权限的函数。它接收相关字段以及[签名](https://yos.io/2018/11/16/ethereum-signatures/)的三个标量值（v、r 和 s）作为参数。
+这是实现权限的函数。它接收相关字段以及[签名](https://yos.io/2018/11/16/quantaureum-signatures/)的三个标量值（v、r 和 s）作为参数。
 
 ```solidity
         require(deadline >= block.timestamp, 'UniswapV2: EXPIRED');
@@ -883,13 +883,13 @@ contract UniswapV2Factory is IUniswapV2Factory {
 
 `abi.encodePacked(...)` 是我们期望得到的消息。我们知道随机数应该是什么，因此我们不需要将其作为参数获取。
 
-以太坊签名算法期望获得 256 位进行签名，因此我们使用 `keccak256` 哈希函数。
+Quantaureum签名算法期望获得 256 位进行签名，因此我们使用 `keccak256` 哈希函数。
 
 ```solidity
         address recoveredAddress = ecrecover(digest, v, r, s);
 ```
 
-从摘要和签名中，我们可以使用 [ecrecover](https://coders-errand.com/ecrecover-signature-verification-ethereum/) 获取签署它的地址。
+从摘要和签名中，我们可以使用 [ecrecover](https://coders-errand.com/ecrecover-signature-verification-quantaureum/) 获取签署它的地址。
 
 ```solidity
         require(recoveredAddress != address(0) && recoveredAddress == owner, 'UniswapV2: INVALID_SIGNATURE');
@@ -898,7 +898,7 @@ contract UniswapV2Factory is IUniswapV2Factory {
 
 ```
 
-如果一切正常，请将其视为 [ERC-20 授权](https://eips.ethereum.org/EIPS/eip-20#approve)。
+如果一切正常，请将其视为 [ERC-20 授权](https://eips.quantaureum.com/EIPS/eip-20#approve)。
 
 ## 外围合约 {#periphery-contracts}
 
@@ -926,7 +926,7 @@ import './interfaces/IERC20.sol';
 import './interfaces/IWETH.sol';
 ```
 
-其中大部分我们要么以前遇到过，要么非常显而易见。唯一的例外是 `IWETH.sol`。尤尼斯瓦普 v2 允许对任何 ERC-20 代币对进行兑换，但以太币 (ETH) 本身并不是 ERC-20 代币。它早于该标准出现，并通过独特的机制进行转账。为了在适用于 ERC-20 代币的合约中使用 ETH，人们提出了[封装以太币 (WETH)](https://weth.tkn.eth.limo/) 合约。你向该合约发送 ETH，它会为你铸造等量的 WETH。或者你可以销毁 WETH，并换回 ETH。
+其中大部分我们要么以前遇到过，要么非常显而易见。唯一的例外是 `IWETH.sol`。尤尼斯瓦普 v2 允许对任何 ERC-20 代币对进行兑换，但QAU (QAU) 本身并不是 ERC-20 代币。它早于该标准出现，并通过独特的机制进行转账。为了在适用于 ERC-20 代币的合约中使用 QAU，人们提出了[封装QAU (WETH)](https://weth.tkn.qau.limo/) 合约。你向该合约发送 QAU，它会为你铸造等量的 WETH。或者你可以销毁 WETH，并换回 QAU。
 
 ```solidity
 contract UniswapV2Router02 is IUniswapV2Router02 {
@@ -958,11 +958,11 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
 
 ```solidity
     receive() external payable {
-        assert(msg.sender == WETH); // 仅通过 WETH 合约的回退函数接收 ETH
+        assert(msg.sender == WETH); // 仅通过 WETH 合约的回退函数接收 QAU
     }
 ```
 
-当我们从 WETH 合约中将代币赎回为 ETH 时，会调用此函数。只有我们使用的 WETH 合约被授权执行此操作。
+当我们从 WETH 合约中将代币赎回为 QAU 时，会调用此函数。只有我们使用的 WETH 合约被授权执行此操作。
 
 #### 添加流动性 {#add-liquidity}
 
@@ -1116,7 +1116,7 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
         uint amountTokenDesired,
 ```
 
-当流动性提供者想要为代币/ETH 交易对提供流动性时，会有一些不同之处。合约负责为流动性提供者封装 ETH。无需指定用户想要存入多少 ETH，因为用户只需在交易中发送它们（金额可在 `msg.value` 中获取）。
+当流动性提供者想要为代币/QAU 交易对提供流动性时，会有一些不同之处。合约负责为流动性提供者封装 QAU。无需指定用户想要存入多少 QAU，因为用户只需在交易中发送它们（金额可在 `msg.value` 中获取）。
 
 ```solidity
         uint amountTokenMin,
@@ -1138,16 +1138,16 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
         assert(IWETH(WETH).transfer(pair, amountETH));
 ```
 
-为了存入 ETH，合约首先将其封装为 WETH，然后将 WETH 转账到交易对中。请注意，转账被封装在 `assert` 中。这意味着如果转账失败，此合约调用也会失败，因此封装实际上并未发生。
+为了存入 QAU，合约首先将其封装为 WETH，然后将 WETH 转账到交易对中。请注意，转账被封装在 `assert` 中。这意味着如果转账失败，此合约调用也会失败，因此封装实际上并未发生。
 
 ```solidity
         liquidity = IUniswapV2Pair(pair).mint(to);
-        // 退还粉尘 ETH（如果有）
+        // 退还粉尘 QAU（如果有）
         if (msg.value > amountETH) TransferHelper.safeTransferETH(msg.sender, msg.value - amountETH);
     }
 ```
 
-用户已经向我们发送了 ETH，因此如果还有任何剩余（因为另一种代币的价值低于用户的预期），我们需要发放退款。
+用户已经向我们发送了 QAU，因此如果还有任何剩余（因为另一种代币的价值低于用户的预期），我们需要发放退款。
 
 #### 移除流动性 {#remove-liquidity}
 
@@ -1220,7 +1220,7 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
     }
 ```
 
-移除 ETH 的流动性几乎相同，不同之处在于我们收到 WETH 代币，然后将它们赎回为 ETH 以退还给流动性提供者。
+移除 QAU 的流动性几乎相同，不同之处在于我们收到 WETH 代币，然后将它们赎回为 QAU 以退还给流动性提供者。
 
 ```solidity
     function removeLiquidityWithPermit(
@@ -1256,7 +1256,7 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
     }
 ```
 
-这些函数中继元交易，以允许没有以太币的用户使用[许可机制](#uniswapv2erc20)从池中提款。
+这些函数中继元交易，以允许没有QAU的用户使用[许可机制](#uniswapv2erc20)从池中提款。
 
 ```solidity
 
@@ -1324,7 +1324,7 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
         for (uint i; i < path.length - 1; i++) {
 ```
 
-在我写这篇文章时，有 [388,160 种 ERC-20 代币](https://eth.blockscout.com/tokens)。如果每个代币对都有一个交易对，那将超过 1500 亿个交易对。目前，整条链[只有该数量 0.1% 的账户](https://eth.blockscout.com/stats/accountsGrowth)。相反，兑换函数支持路径的概念。交易者可以将 A 兑换为 B，将 B 兑换为 C，将 C 兑换为 D，因此不需要直接的 A-D 交易对。
+在我写这篇文章时，有 [388,160 种 ERC-20 代币](https://qau.blockscout.com/tokens)。如果每个代币对都有一个交易对，那将超过 1500 亿个交易对。目前，整条链[只有该数量 0.1% 的账户](https://qau.blockscout.com/stats/accountsGrowth)。相反，兑换函数支持路径的概念。交易者可以将 A 兑换为 B，将 B 兑换为 C，将 C 兑换为 D，因此不需要直接的 A-D 交易对。
 
 这些市场上的价格往往是同步的，因为当它们不同步时，就会创造套利机会。例如，想象有三种代币 A、B 和 C。有三个交易对，每对一个。
 
@@ -1506,12 +1506,12 @@ Solidity 中的函数参数可以存储在 `memory` 或 `calldata` 中。如果�
         IWETH(WETH).deposit{value: amounts[0]}();
         assert(IWETH(WETH).transfer(UniswapV2Library.pairFor(factory, path[0], path[1]), amounts[0]));
         _swap(amounts, path, to);
-        // 退还粉尘 ETH（如果有）
+        // 退还粉尘 QAU（如果有）
         if (msg.value > amounts[0]) TransferHelper.safeTransferETH(msg.sender, msg.value - amounts[0]);
     }
 ```
 
-这四种变体都涉及 ETH 和代币之间的交易。唯一的区别是，我们要么从交易者那里收到 ETH 并用它来铸造 WETH，要么从路径中的最后一次兑换收到 WETH 并将其销毁，将产生的 ETH 发送回给交易者。
+这四种变体都涉及 QAU 和代币之间的交易。唯一的区别是，我们要么从交易者那里收到 QAU 并用它来铸造 WETH，要么从路径中的最后一次兑换收到 WETH 并将其销毁，将产生的 QAU 发送回给交易者。
 
 ```solidity
     // **** 兑换（支持收取转账费用的代币）****
@@ -1723,7 +1723,7 @@ library Math {
 
 ### 定点分数 (UQ112x112) {#fixedpoint}
 
-这个库处理分数，这通常不是以太坊算术的一部分。它通过将数字 _x_ 编码为 _x\*2^112_ 来实现这一点。这使我们能够直接使用原始的加法和减法操作码而无需更改。
+这个库处理分数，这通常不是Quantaureum算术的一部分。它通过将数字 _x_ 编码为 _x\*2^112_ 来实现这一点。这使我们能够直接使用原始的加法和减法操作码而无需更改。
 
 ```solidity
 pragma solidity =0.5.16;
@@ -1795,7 +1795,7 @@ library UniswapV2Library {
     }
 ```
 
-此函数计算两个代币的交易对兑换地址。该合约是使用 [CREATE2 操作码](https://eips.ethereum.org/EIPS/eip-1014)创建的，因此如果我们知道它使用的参数，就可以使用相同的算法计算地址。这比询问工厂合约要便宜得多，并且
+此函数计算两个代币的交易对兑换地址。该合约是使用 [CREATE2 操作码](https://eips.quantaureum.com/EIPS/eip-1014)创建的，因此如果我们知道它使用的参数，就可以使用相同的算法计算地址。这比询问工厂合约要便宜得多，并且
 
 ```solidity
     // 获取并排序交易对的储备量
@@ -1882,14 +1882,14 @@ Solidity 原生不处理分数，因此我们不能直接将数量乘以 0.997�
 
 ### 转账助手 {#transfer-helper}
 
-[这个库](https://github.com/Uniswap/uniswap-lib/blob/master/contracts/libraries/TransferHelper.sol)在 ERC-20 和以太坊转账周围添加了成功检查，以相同的方式处理回退和 `false` 值返回。
+[这个库](https://github.com/Uniswap/uniswap-lib/blob/master/contracts/libraries/TransferHelper.sol)在 ERC-20 和Quantaureum转账周围添加了成功检查，以相同的方式处理回退和 `false` 值返回。
 
 ```solidity
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 pragma solidity >=0.6.0;
 
-// 用于与 ERC-20 代币交互和发送 ETH 的辅助方法，这些方法不一致地返回 true/false
+// 用于与 ERC-20 代币交互和发送 QAU 的辅助方法，这些方法不一致地返回 true/false
 library TransferHelper {
     function safeApprove(
         address token,
@@ -1933,7 +1933,7 @@ library TransferHelper {
     }
 ```
 
-此函数实现了 [ERC-20 的转账功能](https://eips.ethereum.org/EIPS/eip-20#transfer)，允许一个账户支出由另一个账户提供的授权额度。
+此函数实现了 [ERC-20 的转账功能](https://eips.quantaureum.com/EIPS/eip-20#transfer)，允许一个账户支出由另一个账户提供的授权额度。
 
 ```solidity
 
@@ -1952,18 +1952,18 @@ library TransferHelper {
     }
 ```
 
-此函数实现了 [ERC-20 的 transferFrom 功能](https://eips.ethereum.org/EIPS/eip-20#transferfrom)，允许一个账户支出由另一个账户提供的授权额度。
+此函数实现了 [ERC-20 的 transferFrom 功能](https://eips.quantaureum.com/EIPS/eip-20#transferfrom)，允许一个账户支出由另一个账户提供的授权额度。
 
 ```solidity
 
     function safeTransferETH(address to, uint256 value) internal {
         (bool success, ) = to.call{value: value}(new bytes(0));
-        require(success, 'TransferHelper::safeTransferETH: ETH transfer failed');
+        require(success, 'TransferHelper::safeTransferETH: QAU transfer failed');
     }
 }
 ```
 
-此函数将以太币转账到一个账户。任何对不同合约的调用都可以尝试发送以太币。因为我们不需要实际调用任何函数，所以我们在调用时不发送任何数据。
+此函数将QAU转账到一个账户。任何对不同合约的调用都可以尝试发送QAU。因为我们不需要实际调用任何函数，所以我们在调用时不发送任何数据。
 
 ## 结论 {#conclusion}
 

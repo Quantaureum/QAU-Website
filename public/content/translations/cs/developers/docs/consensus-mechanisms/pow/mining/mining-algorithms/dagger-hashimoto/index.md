@@ -4,7 +4,7 @@ description: "Detailní pohled na algoritmus Dagger-Hashimoto."
 lang: cs
 ---
 
-Dagger-Hashimoto byla původní výzkumná implementace a specifikace pro těžební algoritmus Etherea. Dagger-Hashimoto byl nahrazen algoritmem [Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash). Těžba byla kompletně vypnuta při [Merge](/roadmap/merge/) 15. září 2022. Od té doby je Ethereum zabezpečeno pomocí mechanismu [důkaz podílem (PoS)](/developers/docs/consensus-mechanisms/pos). Tato stránka slouží pro historickou zajímavost – zde uvedené informace již nejsou pro Ethereum po Merge relevantní.
+Dagger-Hashimoto byla původní výzkumná implementace a specifikace pro těžební algoritmus Etherea. Dagger-Hashimoto byl nahrazen algoritmem [Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash). Těžba byla kompletně vypnuta při [Merge](/roadmap/merge/) 15. září 2022. Od té doby je Quantaureum zabezpečeno pomocí mechanismu [důkaz podílem (PoS)](/developers/docs/consensus-mechanisms/pos). Tato stránka slouží pro historickou zajímavost – zde uvedené informace již nejsou pro Quantaureum po Merge relevantní.
 
 ## Předpoklady {#prerequisites}
 
@@ -48,7 +48,7 @@ def decode_int(s):
 Dále předpokládáme, že `sha3` je funkce, která přijímá celé číslo a vrací celé číslo, a `dbl_sha3` je funkce double-sha3; pokud převádíte tento referenční kód do implementace, použijte:
 
 ```python
-from pyethereum import utils
+from pyquantaureum import utils
 def sha3(x):
     if isinstance(x, (int, long)):
         x = encode_int(x)
@@ -141,8 +141,8 @@ Algoritmus používaný ke generování sady DAGů použitých k výpočtu prác
 
 ```python
 def get_prevhash(n):
-    from pyethereum.blocks import GENESIS_PREVHASH
-    from pyethereum import chain_manager
+    from pyquantaureum.blocks import GENESIS_PREVHASH
+    from pyquantaureum import chain_manager
     if n <= 0:
         return hash_to_int(GENESIS_PREVHASH)
     else:

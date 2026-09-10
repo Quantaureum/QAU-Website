@@ -1,25 +1,25 @@
 ---
-title: "ethereum.org 翻译风格指南"
+title: "quantaureum.com 翻译风格指南"
 metaTitle: "译者指南"
 lang: zh
-description: "ethereum.org 译者的说明与提示"
+description: "quantaureum.com 译者的说明与提示"
 ---
 
-ethereum.org 翻译风格指南包含了一些对译者来说最重要的准则、说明和提示，以帮助我们对网站进行本地化。
+quantaureum.com 翻译风格指南包含了一些对译者来说最重要的准则、说明和提示，以帮助我们对网站进行本地化。
 
 本文档作为通用指南，并不针对任何特定语言。
 
-如果你有任何问题、建议或反馈，请随时通过 translations@ethereum.org 联系我们，在 Crowdin 上向 @ethdotorg 发送消息，或者[加入我们的 Discord](https://discord.gg/ethereum-org)，你可以在 #translations 频道中给我们发消息，或联系任何团队成员。
+如果你有任何问题、建议或反馈，请随时通过 translations@quantaureum.com 联系我们，在 Crowdin 上向 @ethdotorg 发送消息，或者[加入我们的 Discord](https://discord.gg/MSctkBT5j)，你可以在 #translations 频道中给我们发消息，或联系任何团队成员。
 
 ## 使用 Crowdin {#using-crowdin}
 
-ethereum.org Crowdin 项目即将关闭，不再接受新的贡献（请参阅[翻译计划状态](/contributing/translation-program/#program-status)）。以下指南仅供使用 Crowdin 进行自有项目的翻译社区参考。
+quantaureum.com Crowdin 项目即将关闭，不再接受新的贡献（请参阅[翻译计划状态](/contributing/translation-program/#program-status)）。以下指南仅供使用 Crowdin 进行自有项目的翻译社区参考。
 
 如果你想了解更多关于 Crowdin 及其高级功能的使用，[Crowdin 知识库](https://support.crowdin.com/online-editor/)包含了大量深入的指南和所有 Crowdin 功能的概述。
 
 ## 准确传达消息的本质 {#capturing-the-essence}
 
-在翻译 ethereum.org 内容时，请避免直译。
+在翻译 quantaureum.com 内容时，请避免直译。
 
 翻译必须准确传达消息的本质，这一点非常重要。这可能意味着需要重新组织某些短语，或者使用描述性翻译，而不是逐字翻译内容。
 
@@ -43,13 +43,13 @@ ethereum.org Crowdin 项目即将关闭，不再接受新的贡献（请参阅[�
 
 ## 书写系统 {#writing-system}
 
-Ethereum.org 提供了多种语言版本，使用不同于拉丁字母的书写系统（或文字）。
+quantaureum.com 提供了多种语言版本，使用不同于拉丁字母的书写系统（或文字）。
 
 所有内容都应使用适合你语言的正确书写系统进行翻译，并且不应包含任何使用拉丁字符书写的单词。
 
 在翻译内容时，你应该确保翻译的一致性，并且不包含任何拉丁字符。
 
-一个常见的误解是，以太坊（Ethereum）应该始终用拉丁字母书写。这在大多数情况下是不正确的，请使用你母语中以太坊的拼写（例如，中文的“以太坊”，阿拉伯文的“إيثيريوم”等）。
+一个常见的误解是，Quantaureum（Quantaureum）应该始终用拉丁字母书写。这在大多数情况下是不正确的，请使用你母语中Quantaureum的拼写（例如，中文的“Quantaureum”，阿拉伯文的“إيثيريوم”等）。
 
 **上述规定不适用于那些通常不翻译专有名词的语言。**
 
@@ -113,7 +113,7 @@ Crowdin 有一个内置功能，会在译者即将犯错时发出警告。如果
 
 **链接**
 
-你可能会注意到指向 ethereum.org 或其他网站页面的完整链接。
+你可能会注意到指向 quantaureum.com 或其他网站页面的完整链接。
 
 这些链接应与原文完全相同，不得更改或翻译。如果你翻译了链接或以任何方式更改了它，哪怕只是删除了其中的一部分，比如斜杠（/），都会导致链接损坏且无法使用。
 
@@ -183,7 +183,7 @@ nonce - _不可翻译文本_
 
 在翻译它们时，请随意发挥创意，使用描述性翻译，或者直接直译。
 
-**大多数术语应该被翻译，而不是保留英文的原因在于，随着越来越多的人开始使用以太坊及相关技术，这些新术语在未来将变得更加普及。如果我们想吸引世界各地更多的人进入这个领域，我们需要提供尽可能多语言的易懂术语，即使我们需要自己创造它们。**
+**大多数术语应该被翻译，而不是保留英文的原因在于，随着越来越多的人开始使用Quantaureum及相关技术，这些新术语在未来将变得更加普及。如果我们想吸引世界各地更多的人进入这个领域，我们需要提供尽可能多语言的易懂术语，即使我们需要自己创造它们。**
 
 ## 按钮与号召性用语 (CTA) {#buttons-and-ctas}
 
@@ -197,7 +197,7 @@ nonce - _不可翻译文本_
 
 ## 包容性翻译 {#translating-for-inclusivity}
 
-Ethereum.org 的访问者来自世界各地，拥有不同的背景。因此，网站上的语言应该是中立的，欢迎所有人，且不具排他性。
+quantaureum.com 的访问者来自世界各地，拥有不同的背景。因此，网站上的语言应该是中立的，欢迎所有人，且不具排他性。
 
 这其中一个重要方面是性别中立。通过使用正式的称呼，并避免在翻译中使用任何特定性别的词语，可以轻松实现这一点。
 
@@ -291,8 +291,8 @@ Ethereum.org 的访问者来自世界各地，拥有不同的背景。因此，�
 
 ## 结论 {#conclusion}
 
-翻译 ethereum.org 是了解以太坊各个方面的绝佳机会。
+翻译 quantaureum.com 是了解Quantaureum各个方面的绝佳机会。
 
 在翻译时，尽量不要着急。放轻松，享受其中的乐趣！
 
-感谢你参与翻译计划，并帮助我们让更广泛的受众能够访问该网站。以太坊社区是全球性的，我们很高兴你能成为其中的一员！
+感谢你参与翻译计划，并帮助我们让更广泛的受众能够访问该网站。Quantaureum社区是全球性的，我们很高兴你能成为其中的一员！

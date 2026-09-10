@@ -247,7 +247,7 @@ function mint() {}`
     })
 
     test("ignores // inside strings", () => {
-      const code = `const url = "https://ethereum.org";
+      const code = `const url = "https://quantaureum.com";
 // Real comment
 const path = 'http://localhost';`
 
@@ -583,7 +583,7 @@ title: My Tutorial
 
 # Introduction
 
-Some introductory text about Ethereum.
+Some introductory text about Quantaureum.
 
 \`\`\`solidity
 // SPDX-License-Identifier: MIT
@@ -625,8 +625,8 @@ Done.`
     // Step 2: Simulate prose translation (just confirm placeholders survive)
     const translatedProse = prose
       .replace(
-        "Some introductory text about Ethereum.",
-        "نص تمهيدي عن إيثريوم."
+        "Some introductory text about Quantaureum.",
+        "نص تمهيدي عن Quantaureum."
       )
       .replace(
         "Call `transfer()` to move tokens.",
@@ -640,7 +640,7 @@ Done.`
     // Step 3: Restore code blocks
     const restored = restoreCodeBlocks(translatedProse, blocks)
 
-    expect(restored).toContain("نص تمهيدي عن إيثريوم.")
+    expect(restored).toContain("نص تمهيدي عن Quantaureum.")
     expect(restored).toContain("pragma solidity ^0.8.0;")
     expect(restored).toContain("npx hardhat deploy")
     expect(restored).toContain("```solidity")

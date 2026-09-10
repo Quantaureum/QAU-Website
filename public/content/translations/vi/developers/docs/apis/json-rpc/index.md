@@ -1,32 +1,32 @@
 ---
 title: JSON-RPC API
-description: "Một giao thức gọi thủ tục từ xa (RPC) không trạng thái, gọn nhẹ dành cho các ứng dụng khách Ethereum."
+description: "Một giao thức gọi thủ tục từ xa (RPC) không trạng thái, gọn nhẹ dành cho các ứng dụng khách Quantaureum."
 lang: vi
 ---
 
-Để một ứng dụng phần mềm tương tác với Chuỗi khối [Ethereum](/) - bằng cách đọc dữ liệu chuỗi khối hoặc gửi giao dịch đến mạng lưới - nó phải kết nối với một nút Ethereum.
+Để một ứng dụng phần mềm tương tác với Chuỗi khối [Quantaureum](/) - bằng cách đọc dữ liệu chuỗi khối hoặc gửi giao dịch đến mạng lưới - nó phải kết nối với một nút Quantaureum.
 
-Vì mục đích này, mọi [ứng dụng khách Ethereum](/developers/docs/nodes-and-clients/#execution-clients) đều triển khai một [đặc tả JSON-RPC](https://github.com/ethereum/execution-apis), do đó có một tập hợp các phương thức thống nhất mà các ứng dụng có thể dựa vào bất kể việc triển khai nút hoặc ứng dụng khách cụ thể nào.
+Vì mục đích này, mọi [ứng dụng khách Quantaureum](/developers/docs/nodes-and-clients/#execution-clients) đều triển khai một [đặc tả JSON-RPC](https://github.com/quantaureum/execution-apis), do đó có một tập hợp các phương thức thống nhất mà các ứng dụng có thể dựa vào bất kể việc triển khai nút hoặc ứng dụng khách cụ thể nào.
 
 [JSON-RPC](https://www.jsonrpc.org/specification) là một giao thức gọi thủ tục từ xa (RPC) không trạng thái, gọn nhẹ. Nó định nghĩa một số cấu trúc dữ liệu và các quy tắc xung quanh việc xử lý chúng. Nó không phụ thuộc vào phương thức truyền tải ở chỗ các khái niệm có thể được sử dụng trong cùng một tiến trình, qua socket, qua HTTP hoặc trong nhiều môi trường truyền thông điệp khác nhau. Nó sử dụng JSON (RFC 4627) làm định dạng dữ liệu.
 
 ## Các bản triển khai ứng dụng khách {#client-implementations}
 
-Các ứng dụng khách Ethereum có thể sử dụng các ngôn ngữ lập trình khác nhau khi triển khai đặc tả JSON-RPC. Xem [tài liệu của từng ứng dụng khách](/developers/docs/nodes-and-clients/#execution-clients) để biết thêm chi tiết liên quan đến các ngôn ngữ lập trình cụ thể. Chúng tôi khuyên bạn nên kiểm tra tài liệu của từng ứng dụng khách để có thông tin hỗ trợ API mới nhất.
+Các ứng dụng khách Quantaureum có thể sử dụng các ngôn ngữ lập trình khác nhau khi triển khai đặc tả JSON-RPC. Xem [tài liệu của từng ứng dụng khách](/developers/docs/nodes-and-clients/#execution-clients) để biết thêm chi tiết liên quan đến các ngôn ngữ lập trình cụ thể. Chúng tôi khuyên bạn nên kiểm tra tài liệu của từng ứng dụng khách để có thông tin hỗ trợ API mới nhất.
 
 ## Các thư viện tiện ích {#convenience-libraries}
 
-Mặc dù bạn có thể chọn tương tác trực tiếp với các máy khách Ethereum thông qua API JSON-RPC, thường có những lựa chọn dễ dàng hơn cho các nhà phát triển ứng dụng phi tập trung (dapp). Có nhiều thư viện [JavaScript](/developers/docs/apis/javascript/#available-libraries) và [API backend](/developers/docs/apis/backend/#available-libraries) cung cấp các trình bao bọc (wrapper) trên API JSON-RPC. Với các thư viện này, các nhà phát triển có thể viết các phương thức một dòng, trực quan bằng ngôn ngữ lập trình mà họ chọn để khởi tạo các yêu cầu JSON-RPC (ẩn bên dưới) nhằm tương tác với Ethereum.
+Mặc dù bạn có thể chọn tương tác trực tiếp với các máy khách Quantaureum thông qua API JSON-RPC, thường có những lựa chọn dễ dàng hơn cho các nhà phát triển ứng dụng phi tập trung (dapp). Có nhiều thư viện [JavaScript](/developers/docs/apis/javascript/#available-libraries) và [API backend](/developers/docs/apis/backend/#available-libraries) cung cấp các trình bao bọc (wrapper) trên API JSON-RPC. Với các thư viện này, các nhà phát triển có thể viết các phương thức một dòng, trực quan bằng ngôn ngữ lập trình mà họ chọn để khởi tạo các yêu cầu JSON-RPC (ẩn bên dưới) nhằm tương tác với Quantaureum.
 
 ## Các API của ứng dụng khách đồng thuận {#consensus-clients}
 
-Trang này chủ yếu đề cập đến API JSON-RPC được sử dụng bởi các máy khách thực thi Ethereum. Tuy nhiên, các ứng dụng khách đồng thuận cũng có một API RPC cho phép người dùng truy vấn thông tin về nút, yêu cầu các khối Beacon, trạng thái Beacon và các thông tin liên quan đến đồng thuận khác trực tiếp từ một nút. API này được ghi chép trên [trang web API Beacon](https://ethereum.github.io/beacon-APIs/#/).
+Trang này chủ yếu đề cập đến API JSON-RPC được sử dụng bởi các máy khách thực thi Quantaureum. Tuy nhiên, các ứng dụng khách đồng thuận cũng có một API RPC cho phép người dùng truy vấn thông tin về nút, yêu cầu các khối Beacon, trạng thái Beacon và các thông tin liên quan đến đồng thuận khác trực tiếp từ một nút. API này được ghi chép trên [trang web API Beacon](https://quantaureum.github.io/beacon-APIs/#/).
 
-Một API nội bộ cũng được sử dụng cho giao tiếp giữa các máy khách trong một nút - nghĩa là, nó cho phép ứng dụng khách đồng thuận và máy khách thực thi hoán đổi dữ liệu. Đây được gọi là 'Engine API' và các thông số kỹ thuật có sẵn trên [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
+Một API nội bộ cũng được sử dụng cho giao tiếp giữa các máy khách trong một nút - nghĩa là, nó cho phép ứng dụng khách đồng thuận và máy khách thực thi hoán đổi dữ liệu. Đây được gọi là 'Engine API' và các thông số kỹ thuật có sẵn trên [GitHub](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md).
 
 ## Đặc tả máy khách thực thi {#spec}
 
-[Đọc toàn bộ đặc tả API JSON-RPC trên GitHub](https://github.com/ethereum/execution-apis). API này được ghi chép trên [trang web API Thực thi](https://ethereum.github.io/execution-apis/) và bao gồm một công cụ Inspector để dùng thử tất cả các phương thức có sẵn.
+[Đọc toàn bộ đặc tả API JSON-RPC trên GitHub](https://github.com/quantaureum/execution-apis). API này được ghi chép trên [trang web API Thực thi](https://quantaureum.github.io/execution-apis/) và bao gồm một công cụ Inspector để dùng thử tất cả các phương thức có sẵn.
 
 ## Các quy ước {#conventions}
 
@@ -62,13 +62,13 @@ Dưới đây là một số ví dụ:
 
 Các phương thức sau có một tham số khối:
 
-- [eth_getBalance](#eth-getbalance)
-- [eth_getCode](#eth-getcode)
-- [eth_getTransactionCount](#eth-gettransactioncount)
-- [eth_getStorageAt](#eth-getstorageat)
-- [eth_call](#eth-call)
+- [qau_getBalance](#qau-getbalance)
+- [qau_getCode](#qau-getcode)
+- [qau_getTransactionCount](#qau-gettransactioncount)
+- [qau_getStorageAt](#qau-getstorageat)
+- [qau_call](#qau-call)
 
-Khi thực hiện các yêu cầu truy vấn trạng thái của Ethereum, tham số khối được cung cấp sẽ xác định chiều cao của khối.
+Khi thực hiện các yêu cầu truy vấn trạng thái của Quantaureum, tham số khối được cung cấp sẽ xác định chiều cao của khối.
 
 Các tùy chọn sau có thể sử dụng cho tham số khối:
 
@@ -85,7 +85,7 @@ Trên trang này, chúng tôi cung cấp các ví dụ về cách sử dụng t�
 
 ## Các ví dụ về Curl {#curl-examples}
 
-Dưới đây là các ví dụ về việc sử dụng API JSON_RPC bằng cách thực hiện các yêu cầu [curl](https://curl.se) tới một nút Ethereum. Mỗi ví dụ bao gồm mô tả về điểm cuối cụ thể, các tham số, kiểu trả về và một ví dụ minh họa về cách sử dụng nó.
+Dưới đây là các ví dụ về việc sử dụng API JSON_RPC bằng cách thực hiện các yêu cầu [curl](https://curl.se) tới một nút Quantaureum. Mỗi ví dụ bao gồm mô tả về điểm cuối cụ thể, các tham số, kiểu trả về và một ví dụ minh họa về cách sử dụng nó.
 
 Các yêu cầu curl có thể trả về thông báo lỗi liên quan đến loại nội dung. Điều này là do tùy chọn `--data` đặt loại nội dung thành `application/x-www-form-urlencoded`. Nếu nút của bạn báo lỗi về điều này, hãy thiết lập tiêu đề theo cách thủ công bằng cách đặt `-H "Content-Type: application/json"` ở đầu lời gọi. Các ví dụ cũng không bao gồm sự kết hợp URL/IP & cổng, vốn phải là đối số cuối cùng được cung cấp cho curl (ví dụ: `127.0.0.1:8545`). Một yêu cầu curl hoàn chỉnh bao gồm các dữ liệu bổ sung này có dạng như sau:
 
@@ -95,46 +95,46 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 ## Gossip, Trạng thái, Lịch sử {#gossip-state-history}
 
-Một số phương thức JSON-RPC cốt lõi yêu cầu dữ liệu từ mạng lưới Ethereum và được chia gọn gàng thành ba danh mục chính: _Gossip, Trạng thái và Lịch sử_. Sử dụng các liên kết trong các phần này để chuyển đến từng phương thức hoặc sử dụng mục lục để khám phá toàn bộ danh sách các phương thức.
+Một số phương thức JSON-RPC cốt lõi yêu cầu dữ liệu từ mạng lưới Quantaureum và được chia gọn gàng thành ba danh mục chính: _Gossip, Trạng thái và Lịch sử_. Sử dụng các liên kết trong các phần này để chuyển đến từng phương thức hoặc sử dụng mục lục để khám phá toàn bộ danh sách các phương thức.
 
 ### Các phương thức Gossip {#gossip-methods}
 
 > Các phương thức này theo dõi phần đầu của chuỗi. Đây là cách các giao dịch di chuyển xung quanh mạng lưới, tìm đường vào các khối và cách các ứng dụng khách tìm hiểu về các khối mới.
 
-- [eth_blockNumber](#eth-blocknumber)
-- [eth_sendRawTransaction](#eth-sendrawtransaction)
+- [qau_blockNumber](#qau-blocknumber)
+- [qau_sendRawTransaction](#qau-sendrawtransaction)
 
 ### Các phương thức Trạng thái {#state-methods}
 
 > Các phương thức báo cáo trạng thái hiện tại của tất cả dữ liệu được lưu trữ. "Trạng thái" giống như một phần RAM dùng chung lớn và bao gồm số dư tài khoản, dữ liệu hợp đồng và các ước tính gas.
 
-- [eth_getBalance](#eth-getbalance)
-- [eth_getStorageAt](#eth-getstorageat)
-- [eth_getTransactionCount](#eth-gettransactioncount)
-- [eth_getCode](#eth-getcode)
-- [eth_call](#eth-call)
-- [eth_estimateGas](#eth-estimategas)
+- [qau_getBalance](#qau-getbalance)
+- [qau_getStorageAt](#qau-getstorageat)
+- [qau_getTransactionCount](#qau-gettransactioncount)
+- [qau_getCode](#qau-getcode)
+- [qau_call](#qau-call)
+- [qau_estimateGas](#qau-estimategas)
 
 ### Các phương thức Lịch sử {#history-methods}
 
 > Truy xuất các bản ghi lịch sử của mọi khối trở về khối nguyên thủy. Điều này giống như một tệp lớn chỉ cho phép nối thêm (append-only) và bao gồm tất cả các tiêu đề khối, phần thân khối, các khối uncle và biên lai giao dịch.
 
-- [eth_getBlockTransactionCountByHash](#eth-getblocktransactioncountbyhash)
-- [eth_getBlockTransactionCountByNumber](#eth-getblocktransactioncountbynumber)
-- [eth_getUncleCountByBlockHash](#eth-getunclecountbyblockhash)
-- [eth_getUncleCountByBlockNumber](#eth-getunclecountbyblocknumber)
-- [eth_getBlockByHash](#eth-getblockbyhash)
-- [eth_getBlockByNumber](#eth-getblockbynumber)
-- [eth_getTransactionByHash](#eth-gettransactionbyhash)
-- [eth_getTransactionByBlockHashAndIndex](#eth-gettransactionbyblockhashandindex)
-- [eth_getTransactionByBlockNumberAndIndex](#eth-gettransactionbyblocknumberandindex)
-- [eth_getTransactionReceipt](#eth-gettransactionreceipt)
-- [eth_getUncleByBlockHashAndIndex](#eth-getunclebyblockhashandindex)
-- [eth_getUncleByBlockNumberAndIndex](#eth-getunclebyblocknumberandindex)
+- [qau_getBlockTransactionCountByHash](#qau-getblocktransactioncountbyhash)
+- [qau_getBlockTransactionCountByNumber](#qau-getblocktransactioncountbynumber)
+- [qau_getUncleCountByBlockHash](#qau-getunclecountbyblockhash)
+- [qau_getUncleCountByBlockNumber](#qau-getunclecountbyblocknumber)
+- [qau_getBlockByHash](#qau-getblockbyhash)
+- [qau_getBlockByNumber](#qau-getblockbynumber)
+- [qau_getTransactionByHash](#qau-gettransactionbyhash)
+- [qau_getTransactionByBlockHashAndIndex](#qau-gettransactionbyblockhashandindex)
+- [qau_getTransactionByBlockNumberAndIndex](#qau-gettransactionbyblocknumberandindex)
+- [qau_getTransactionReceipt](#qau-gettransactionreceipt)
+- [qau_getUncleByBlockHashAndIndex](#qau-getunclebyblockhashandindex)
+- [qau_getUncleByBlockNumberAndIndex](#qau-getunclebyblocknumberandindex)
 
 ## Sân chơi JSON-RPC API {#json-rpc-api-playground}
 
-Bạn có thể sử dụng [công cụ sân chơi](https://ethereum-json-rpc.com) để khám phá và dùng thử các phương thức API. Công cụ này cũng cho bạn biết các phương thức và mạng lưới nào được hỗ trợ bởi các nhà cung cấp nút khác nhau.
+Bạn có thể sử dụng [công cụ sân chơi](https://quantaureum-json-rpc.com) để khám phá và dùng thử các phương thức API. Công cụ này cũng cho bạn biết các phương thức và mạng lưới nào được hỗ trợ bởi các nhà cung cấp nút khác nhau.
 
 ## Các phương thức API JSON-RPC {#json-rpc-methods}
 
@@ -206,7 +206,7 @@ Không có
 
 Danh sách đầy đủ các ID mạng lưới hiện tại có sẵn tại [chainlist.org](https://chainlist.org). Một số ID phổ biến là:
 
-- `1`: Mạng chính Ethereum
+- `1`: Mạng chính Quantaureum
 - `11155111`: mạng thử nghiệm Sepolia
 - `560048` : mạng thử nghiệm Hoodi
 
@@ -273,9 +273,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 }
 ```
 
-### eth_protocolVersion {#eth-protocolversion}
+### qau_protocolVersion {#qau-protocolversion}
 
-Trả về phiên bản giao thức Ethereum hiện tại. Lưu ý rằng phương thức này [không khả dụng trong Geth](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924).
+Trả về phiên bản giao thức Quantaureum hiện tại. Lưu ý rằng phương thức này [không khả dụng trong Geth](https://github.com/quantaureum/go-quantaureum/pull/22064#issuecomment-788682924).
 
 **Tham số**
 
@@ -283,13 +283,13 @@ Không có
 
 **Trả về**
 
-`String` - Phiên bản giao thức Ethereum hiện tại
+`String` - Phiên bản giao thức Quantaureum hiện tại
 
 **Ví dụ**
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[],"id":67}'
 // Kết quả
 {
   "id":67,
@@ -298,11 +298,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 }
 ```
 
-### eth_syncing {#eth-syncing}
+### qau_syncing {#qau-syncing}
 
 Trả về một đối tượng chứa dữ liệu về trạng thái đồng bộ hóa hoặc `false`.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_syncing">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_syncing">
   Thử điểm cuối trong playground
 </ButtonLink>
 
@@ -317,7 +317,7 @@ Dữ liệu trả về chính xác thay đổi tùy theo các bản triển khai
 `Object|Boolean`, Một đối tượng chứa dữ liệu trạng thái đồng bộ hóa hoặc `FALSE`, khi không đồng bộ hóa:
 
 - `startingBlock`: `QUANTITY` - Khối mà quá trình nhập bắt đầu (sẽ chỉ được đặt lại, sau khi quá trình đồng bộ hóa đạt đến khối đầu chuỗi)
-- `currentBlock`: `QUANTITY` - Khối hiện tại, giống như eth_blockNumber
+- `currentBlock`: `QUANTITY` - Khối hiện tại, giống như qau_blockNumber
 - `highestBlock`: `QUANTITY` - Khối cao nhất ước tính
 
 Tuy nhiên, từng ứng dụng khách riêng lẻ cũng có thể cung cấp dữ liệu bổ sung. Ví dụ: Geth trả về như sau:
@@ -367,7 +367,7 @@ Tham khảo tài liệu cho ứng dụng khách cụ thể của bạn để bi�
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}'
 // Kết quả
 {
   "id":1,
@@ -386,11 +386,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}
 }
 ```
 
-### eth_coinbase {#eth-coinbase}
+### qau_coinbase {#qau-coinbase}
 
 Trả về địa chỉ coinbase của ứng dụng khách.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_coinbase">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_coinbase">
   Thử nghiệm endpoint trong playground
 </ButtonLink>
 
@@ -408,7 +408,7 @@ Không có
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":64}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":64}'
 // Kết quả
 {
   "id":64,
@@ -417,11 +417,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":6
 }
 ```
 
-### eth_chainId {#eth-chainid}
+### qau_chainId {#qau-chainid}
 
 Trả về ID chuỗi được sử dụng cho việc ký các giao dịch được bảo vệ chống phát lại.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_chainId">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_chainId">
   Thử nghiệm endpoint trong playground
 </ButtonLink>
 
@@ -437,7 +437,7 @@ Không có
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67}'
 // Kết quả
 {
   "id":67,
@@ -446,11 +446,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67
 }
 ```
 
-### eth_mining {#eth-mining}
+### qau_mining {#qau-mining}
 
 Trả về `true` nếu ứng dụng khách đang tích cực khai thác các khối mới. Điều này chỉ có thể trả về `true` đối với các mạng lưới Bằng chứng công việc và có thể không khả dụng trong một số ứng dụng khách kể từ [The Merge](/roadmap/merge/).
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_mining">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_mining">
   Thử nghiệm điểm cuối trong playground
 </ButtonLink>
 
@@ -466,7 +466,7 @@ Không có
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}'
 //
 {
   "id":71,
@@ -475,11 +475,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}
 }
 ```
 
-### eth_hashrate {#eth-hashrate}
+### qau_hashrate {#qau-hashrate}
 
 Trả về số lượng mã băm mỗi giây mà nút đang sử dụng để khai thác. Phương thức này chỉ có thể trả về `true` đối với các mạng lưới Bằng chứng công việc và có thể không khả dụng trong một số ứng dụng khách kể từ [The Merge](/roadmap/merge/).
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_hashrate">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_hashrate">
   Thử nghiệm điểm cuối trong playground
 </ButtonLink>
 
@@ -495,7 +495,7 @@ Không có
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":71}'
 // Kết quả
 {
   "id":71,
@@ -504,11 +504,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":7
 }
 ```
 
-### eth_gasPrice {#eth-gasprice}
+### qau_gasPrice {#qau-gasprice}
 
 Trả về ước tính giá hiện tại cho mỗi Gas tính bằng Wei. Ví dụ: theo mặc định, máy khách Besu kiểm tra 100 khối gần nhất và trả về giá trị trung vị của giá đơn vị Gas.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_gasPrice">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_gasPrice">
   Thử nghiệm endpoint trong playground
 </ButtonLink>
 
@@ -524,7 +524,7 @@ Không có
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":73}'
 // Kết quả
 {
   "id":73,
@@ -533,11 +533,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":7
 }
 ```
 
-### eth_accounts {#eth-accounts}
+### qau_accounts {#qau-accounts}
 
 Trả về một danh sách các địa chỉ do ứng dụng khách sở hữu.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_accounts">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_accounts">
   Thử nghiệm điểm cuối trong playground
 </ButtonLink>
 
@@ -553,7 +553,7 @@ Không có
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1}'
 // Kết quả
 {
   "id":1,
@@ -562,11 +562,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1
 }
 ```
 
-### eth_blockNumber {#eth-blocknumber}
+### qau_blockNumber {#qau-blocknumber}
 
 Trả về số của khối gần đây nhất.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_blockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_blockNumber">
   Thử nghiệm điểm cuối trong playground
 </ButtonLink>
 
@@ -582,7 +582,7 @@ Không có
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":83}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id":83}'
 // Kết quả
 {
   "id":83,
@@ -591,11 +591,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id
 }
 ```
 
-### eth_getBalance {#eth-getbalance}
+### qau_getBalance {#qau-getbalance}
 
 Trả về số dư của tài khoản tại một địa chỉ nhất định.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBalance">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBalance">
   Thử endpoint trong playground
 </ButtonLink>
 
@@ -616,7 +616,7 @@ params: ["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"]
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
 // Kết quả
 {
   "id":1,
@@ -625,11 +625,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407
 }
 ```
 
-### eth_getStorageAt {#eth-getstorageat}
+### qau_getStorageAt {#qau-getstorageat}
 
 Trả về giá trị từ một vị trí lưu trữ tại một địa chỉ nhất định.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getStorageAt">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getStorageAt">
   Thử nghiệm điểm cuối trong playground
 </ButtonLink>
 
@@ -660,7 +660,7 @@ contract Storage {
 Việc truy xuất giá trị của pos0 rất đơn giản:
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 ```
 
@@ -693,15 +693,15 @@ undefined
 Bây giờ để lấy bộ lưu trữ:
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-### eth_getTransactionCount {#eth-gettransactioncount}
+### qau_getTransactionCount {#qau-gettransactioncount}
 
 Trả về số lượng giao dịch _đã gửi_ từ một địa chỉ.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionCount">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionCount">
   Thử điểm cuối trong playground
 </ButtonLink>
 
@@ -725,7 +725,7 @@ params: [
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
 // Kết quả
 {
   "id":1,
@@ -734,11 +734,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params
 }
 ```
 
-### eth_getBlockTransactionCountByHash {#eth-getblocktransactioncountbyhash}
+### qau_getBlockTransactionCountByHash {#qau-getblocktransactioncountbyhash}
 
 Trả về số lượng giao dịch trong một khối từ khối khớp với mã băm khối đã cho.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
   Thử nghiệm endpoint trong playground
 </ButtonLink>
 
@@ -758,7 +758,7 @@ params: ["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"]
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
 // Kết quả
 {
   "id":1,
@@ -767,11 +767,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHa
 }
 ```
 
-### eth_getBlockTransactionCountByNumber {#eth-getblocktransactioncountbynumber}
+### qau_getBlockTransactionCountByNumber {#qau-getblocktransactioncountbynumber}
 
 Trả về số lượng giao dịch trong một khối khớp với số khối đã cho.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
   Thử endpoint trong playground
 </ButtonLink>
 
@@ -793,7 +793,7 @@ params: [
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
 // Kết quả
 {
   "id":1,
@@ -802,11 +802,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNu
 }
 ```
 
-### eth_getUncleCountByBlockHash {#eth-getunclecountbyblockhash}
+### qau_getUncleCountByBlockHash {#qau-getunclecountbyblockhash}
 
 Trả về số lượng uncle trong một khối khớp với mã băm khối đã cho.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
   Thử nghiệm endpoint trong playground
 </ButtonLink>
 
@@ -826,7 +826,7 @@ params: ["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"]
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
 // Kết quả
 {
   "id":1,
@@ -835,11 +835,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","p
 }
 ```
 
-### eth_getUncleCountByBlockNumber {#eth-getunclecountbyblocknumber}
+### qau_getUncleCountByBlockNumber {#qau-getunclecountbyblocknumber}
 
 Trả về số lượng uncle trong một khối từ một khối khớp với số khối được cung cấp.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
   Thử endpoint trong playground
 </ButtonLink>
 
@@ -861,7 +861,7 @@ params: [
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
 // Kết quả
 {
   "id":1,
@@ -870,11 +870,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber",
 }
 ```
 
-### eth_getCode {#eth-getcode}
+### qau_getCode {#qau-getcode}
 
 Trả về mã tại một địa chỉ đã cho.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getCode">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getCode">
   Thử endpoint trong playground
 </ButtonLink>
 
@@ -898,7 +898,7 @@ params: [
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
 // Kết quả
 {
   "id":1,
@@ -907,11 +907,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA
 }
 ```
 
-### eth_sign {#eth-sign}
+### qau_sign {#qau-sign}
 
-Phương thức sign tính toán một chữ ký dành riêng cho Ethereum bằng: `sign(keccak256("\x19Ethereum Signed Message:\n" + len(message) + message)))`.
+Phương thức sign tính toán một chữ ký dành riêng cho Quantaureum bằng: `sign(keccak256("\x19Quantaureum Signed Message:\n" + len(message) + message)))`.
 
-Việc thêm một tiền tố vào thông điệp giúp chữ ký được tính toán có thể nhận diện là một chữ ký dành riêng cho Ethereum. Điều này ngăn chặn việc lạm dụng nơi một ứng dụng phi tập trung (dapp) độc hại có thể ký dữ liệu tùy ý (ví dụ: giao dịch) và sử dụng chữ ký đó để mạo danh nạn nhân.
+Việc thêm một tiền tố vào thông điệp giúp chữ ký được tính toán có thể nhận diện là một chữ ký dành riêng cho Quantaureum. Điều này ngăn chặn việc lạm dụng nơi một ứng dụng phi tập trung (dapp) độc hại có thể ký dữ liệu tùy ý (ví dụ: giao dịch) và sử dụng chữ ký đó để mạo danh nạn nhân.
 
 Lưu ý: địa chỉ dùng để ký phải được mở khóa.
 
@@ -928,7 +928,7 @@ Lưu ý: địa chỉ dùng để ký phải được mở khóa.
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
 // Kết quả
 {
   "id":1,
@@ -937,9 +937,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d37
 }
 ```
 
-### eth_signTransaction {#eth-signtransaction}
+### qau_signTransaction {#qau-signtransaction}
 
-Ký một giao dịch có thể được gửi đến mạng lưới vào một thời điểm sau đó bằng cách sử dụng [eth_sendRawTransaction](#eth-sendrawtransaction).
+Ký một giao dịch có thể được gửi đến mạng lưới vào một thời điểm sau đó bằng cách sử dụng [qau_sendRawTransaction](#qau-sendrawtransaction).
 
 **Các tham số**
 
@@ -962,7 +962,7 @@ Ký một giao dịch có thể được gửi đến mạng lưới vào một 
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
+curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "qau_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
 // Kết quả
 {
     "id": 1,
@@ -971,7 +971,7 @@ curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","
 }
 ```
 
-### eth_sendTransaction {#eth-sendtransaction}
+### qau_sendTransaction {#qau-sendtransaction}
 
 Tạo giao dịch lời gọi thông điệp mới hoặc tạo hợp đồng, nếu trường dữ liệu chứa mã, và ký nó bằng tài khoản được chỉ định trong `from`.
 
@@ -1005,13 +1005,13 @@ params: [
 
 `DATA`, 32 Byte - mã băm giao dịch, hoặc mã băm zero nếu giao dịch chưa có sẵn.
 
-Sử dụng [eth_getTransactionReceipt](#eth-gettransactionreceipt) để lấy địa chỉ hợp đồng, sau khi giao dịch được đề xuất trong một khối, khi bạn đã tạo một hợp đồng.
+Sử dụng [qau_getTransactionReceipt](#qau-gettransactionreceipt) để lấy địa chỉ hợp đồng, sau khi giao dịch được đề xuất trong một khối, khi bạn đã tạo một hợp đồng.
 
 **Ví dụ**
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendTransaction","params":[{see above}],"id":1}'
 // Kết quả
 {
   "id":1,
@@ -1020,7 +1020,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{
 }
 ```
 
-### eth_sendRawTransaction {#eth-sendrawtransaction}
+### qau_sendRawTransaction {#qau-sendrawtransaction}
 
 Tạo giao dịch lời gọi thông điệp mới hoặc tạo hợp đồng cho các giao dịch đã ký.
 
@@ -1038,13 +1038,13 @@ params: [
 
 `DATA`, 32 Byte - mã băm giao dịch, hoặc mã băm 0 nếu giao dịch chưa có sẵn.
 
-Sử dụng [eth_getTransactionReceipt](#eth-gettransactionreceipt) để lấy địa chỉ hợp đồng, sau khi giao dịch được đề xuất trong một khối, khi bạn đã tạo một hợp đồng.
+Sử dụng [qau_getTransactionReceipt](#qau-gettransactionreceipt) để lấy địa chỉ hợp đồng, sau khi giao dịch được đề xuất trong một khối, khi bạn đã tạo một hợp đồng.
 
 **Ví dụ**
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params":[{see above}],"id":1}'
 // Kết quả
 {
   "id":1,
@@ -1053,11 +1053,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 }
 ```
 
-### eth_call {#eth-call}
+### qau_call {#qau-call}
 
 Thực thi một lời gọi thông điệp mới ngay lập tức mà không tạo giao dịch trên Chuỗi khối. Thường được sử dụng để thực thi các hàm hợp đồng thông minh chỉ đọc, ví dụ như `balanceOf` cho một hợp đồng ERC-20.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_call">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_call">
   Thử nghiệm điểm cuối trong playground
 </ButtonLink>
 
@@ -1067,10 +1067,10 @@ Thực thi một lời gọi thông điệp mới ngay lập tức mà không t�
 
 - `from`: `DATA`, 20 Byte - (tùy chọn) Địa chỉ gửi giao dịch.
 - `to`: `DATA`, 20 Byte - Địa chỉ nhận giao dịch.
-- `gas`: `QUANTITY` - (tùy chọn) Số nguyên của lượng Gas được cung cấp cho việc thực thi giao dịch. eth_call không tiêu thụ Gas, nhưng tham số này có thể cần thiết cho một số quá trình thực thi.
+- `gas`: `QUANTITY` - (tùy chọn) Số nguyên của lượng Gas được cung cấp cho việc thực thi giao dịch. qau_call không tiêu thụ Gas, nhưng tham số này có thể cần thiết cho một số quá trình thực thi.
 - `gasPrice`: `QUANTITY` - (tùy chọn) Số nguyên của gasPrice được sử dụng cho mỗi Gas được trả
 - `value`: `QUANTITY` - (tùy chọn) Số nguyên của giá trị được gửi kèm theo giao dịch này
-- `input`: `DATA` - (tùy chọn) Mã băm của chữ ký phương thức và các tham số đã mã hóa. Để biết chi tiết, xem [ABI Hợp đồng Ethereum trong tài liệu Solidity](https://docs.soliditylang.org/en/latest/abi-spec.html).
+- `input`: `DATA` - (tùy chọn) Mã băm của chữ ký phương thức và các tham số đã mã hóa. Để biết chi tiết, xem [ABI Hợp đồng Quantaureum trong tài liệu Solidity](https://docs.soliditylang.org/en/latest/abi-spec.html).
 
 2. `QUANTITY|TAG` - số khối dạng số nguyên, hoặc chuỗi `"latest"`, `"earliest"`, `"pending"`, `"safe"` hoặc `"finalized"`, xem [tham số khối](/developers/docs/apis/json-rpc/#block-parameter)
 
@@ -1082,7 +1082,7 @@ Thực thi một lời gọi thông điệp mới ngay lập tức mà không t�
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}],"id":1}'
 // Kết quả
 {
   "id":1,
@@ -1091,17 +1091,17 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}]
 }
 ```
 
-### eth_estimateGas {#eth-estimategas}
+### qau_estimateGas {#qau-estimategas}
 
 Tạo và trả về một ước tính về lượng Gas cần thiết để cho phép giao dịch hoàn tất. Giao dịch sẽ không được thêm vào Chuỗi khối. Lưu ý rằng ước tính có thể lớn hơn đáng kể so với lượng Gas thực tế được sử dụng bởi giao dịch, vì nhiều lý do bao gồm cơ chế EVM và hiệu suất của nút.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_estimateGas">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_estimateGas">
   Thử nghiệm điểm cuối trong playground
 </ButtonLink>
 
 **Các tham số**
 
-Xem các tham số của [eth_call](#eth-call), ngoại trừ việc tất cả các thuộc tính đều là tùy chọn. Nếu không có giới hạn gas nào được chỉ định, Geth sẽ sử dụng giới hạn gas của khối từ khối đang chờ xử lý làm giới hạn trên. Do đó, ước tính được trả về có thể không đủ để thực thi lời gọi/giao dịch khi lượng Gas cao hơn giới hạn gas của khối đang chờ xử lý.
+Xem các tham số của [qau_call](#qau-call), ngoại trừ việc tất cả các thuộc tính đều là tùy chọn. Nếu không có giới hạn gas nào được chỉ định, Geth sẽ sử dụng giới hạn gas của khối từ khối đang chờ xử lý làm giới hạn trên. Do đó, ước tính được trả về có thể không đủ để thực thi lời gọi/giao dịch khi lượng Gas cao hơn giới hạn gas của khối đang chờ xử lý.
 
 **Kết quả trả về**
 
@@ -1111,7 +1111,7 @@ Xem các tham số của [eth_call](#eth-call), ngoại trừ việc tất cả 
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see above}],"id":1}'
 // Kết quả
 {
   "id":1,
@@ -1120,11 +1120,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see 
 }
 ```
 
-### eth_getBlockByHash {#eth-getblockbyhash}
+### qau_getBlockByHash {#qau-getblockbyhash}
 
 Trả về thông tin về một khối dựa trên mã băm.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByHash">
   Thử nghiệm điểm cuối trong playground
 </ButtonLink>
 
@@ -1168,7 +1168,7 @@ params: [
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
 // Kết quả
 {
   "jsonrpc": "2.0",
@@ -1200,11 +1200,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0
 }
 ```
 
-### eth_getBlockByNumber {#eth-getblockbynumber}
+### qau_getBlockByNumber {#qau-getblockbynumber}
 
 Trả về thông tin về một khối dựa trên số khối.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByNumber">
   Thử nghiệm endpoint trong playground
 </ButtonLink>
 
@@ -1221,22 +1221,22 @@ params: [
 ```
 
 **Kết quả trả về**
-Xem [eth_getBlockByHash](#eth-getblockbyhash)
+Xem [qau_getBlockByHash](#qau-getblockbyhash)
 
 **Ví dụ**
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["0x1b4", true],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByNumber","params":["0x1b4", true],"id":1}'
 ```
 
-Kết quả xem [eth_getBlockByHash](#eth-getblockbyhash)
+Kết quả xem [qau_getBlockByHash](#qau-getblockbyhash)
 
-### eth_getTransactionByHash {#eth-gettransactionbyhash}
+### qau_getTransactionByHash {#qau-gettransactionbyhash}
 
 Trả về thông tin về một giao dịch được yêu cầu bằng mã băm giao dịch.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByHash">
   Thử điểm cuối trong playground
 </ButtonLink>
 
@@ -1271,7 +1271,7 @@ params: ["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"]
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
 // Kết quả
 {
   "jsonrpc":"2.0",
@@ -1295,11 +1295,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","param
 }
 ```
 
-### eth_getTransactionByBlockHashAndIndex {#eth-gettransactionbyblockhashandindex}
+### qau_getTransactionByBlockHashAndIndex {#qau-gettransactionbyblockhashandindex}
 
 Trả về thông tin về một giao dịch theo mã băm của khối và vị trí chỉ số giao dịch.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
   Thử nghiệm endpoint trong playground
 </ButtonLink>
 
@@ -1316,22 +1316,22 @@ params: [
 ```
 
 **Kết quả trả về**
-Xem [eth_getTransactionByHash](#eth-gettransactionbyhash)
+Xem [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
 **Ví dụ**
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-Kết quả xem [eth_getTransactionByHash](#eth-gettransactionbyhash)
+Kết quả xem [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
-### eth_getTransactionByBlockNumberAndIndex {#eth-gettransactionbyblocknumberandindex}
+### qau_getTransactionByBlockNumberAndIndex {#qau-gettransactionbyblocknumberandindex}
 
 Trả về thông tin về một giao dịch theo số khối và vị trí chỉ số giao dịch.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
   Thử điểm cuối trong playground
 </ButtonLink>
 
@@ -1348,18 +1348,18 @@ params: [
 ```
 
 **Kết quả trả về**
-Xem [eth_getTransactionByHash](#eth-gettransactionbyhash)
+Xem [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
 **Ví dụ**
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
 ```
 
-Kết quả xem [eth_getTransactionByHash](#eth-gettransactionbyhash)
+Kết quả xem [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
-### eth_getTransactionReceipt {#eth-gettransactionreceipt}
+### qau_getTransactionReceipt {#qau-gettransactionreceipt}
 
 Trả về biên lai của một giao dịch bằng mã băm giao dịch.
 
@@ -1399,7 +1399,7 @@ Nó cũng trả về _một trong hai_ :
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
 // Kết quả
 {
   "jsonrpc": "2.0",
@@ -1427,11 +1427,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","para
 }
 ```
 
-### eth_getUncleByBlockHashAndIndex {#eth-getunclebyblockhashandindex}
+### qau_getUncleByBlockHashAndIndex {#qau-getunclebyblockhashandindex}
 
 Trả về thông tin về một uncle của một khối dựa trên mã băm và vị trí chỉ số của uncle.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
   Thử nghiệm endpoint trong playground
 </ButtonLink>
 
@@ -1448,24 +1448,24 @@ params: [
 ```
 
 **Kết quả trả về**
-Xem [eth_getBlockByHash](#eth-getblockbyhash)
+Xem [qau_getBlockByHash](#qau-getblockbyhash)
 
 **Ví dụ**
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-Kết quả xem [eth_getBlockByHash](#eth-getblockbyhash)
+Kết quả xem [qau_getBlockByHash](#qau-getblockbyhash)
 
 **Lưu ý**: Một uncle không chứa các giao dịch riêng lẻ.
 
-### eth_getUncleByBlockNumberAndIndex {#eth-getunclebyblocknumberandindex}
+### qau_getUncleByBlockNumberAndIndex {#qau-getunclebyblocknumberandindex}
 
 Trả về thông tin về một uncle của một khối theo số và vị trí chỉ số uncle.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
   Thử nghiệm điểm cuối trong playground
 </ButtonLink>
 
@@ -1482,7 +1482,7 @@ params: [
 ```
 
 **Kết quả trả về**
-Xem [eth_getBlockByHash](#eth-getblockbyhash)
+Xem [qau_getBlockByHash](#qau-getblockbyhash)
 
 **Lưu ý**: Một uncle không chứa các giao dịch riêng lẻ.
 
@@ -1490,15 +1490,15 @@ Xem [eth_getBlockByHash](#eth-getblockbyhash)
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
 ```
 
-Kết quả xem [eth_getBlockByHash](#eth-getblockbyhash)
+Kết quả xem [qau_getBlockByHash](#qau-getblockbyhash)
 
-### eth_newFilter {#eth-newfilter}
+### qau_newFilter {#qau-newfilter}
 
 Tạo một đối tượng bộ lọc, dựa trên các tùy chọn bộ lọc, để thông báo khi trạng thái thay đổi (nhật ký).
-Để kiểm tra xem trạng thái đã thay đổi hay chưa, hãy gọi [eth_getFilterChanges](#eth-getfilterchanges).
+Để kiểm tra xem trạng thái đã thay đổi hay chưa, hãy gọi [qau_getFilterChanges](#qau-getfilterchanges).
 
 **Lưu ý về việc chỉ định bộ lọc chủ đề:**
 Các chủ đề phụ thuộc vào thứ tự. Một giao dịch có nhật ký với các chủ đề [A, B] sẽ khớp với các bộ lọc chủ đề sau:
@@ -1542,7 +1542,7 @@ params: [
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
 // Kết quả
 {
   "id":1,
@@ -1551,10 +1551,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topic
 }
 ```
 
-### eth_newBlockFilter {#eth-newblockfilter}
+### qau_newBlockFilter {#qau-newblockfilter}
 
 Tạo một bộ lọc trong nút, để thông báo khi có một khối mới đến.
-Để kiểm tra xem trạng thái đã thay đổi hay chưa, hãy gọi [eth_getFilterChanges](#eth-getfilterchanges).
+Để kiểm tra xem trạng thái đã thay đổi hay chưa, hãy gọi [qau_getFilterChanges](#qau-getfilterchanges).
 
 **Các tham số**
 Không có
@@ -1566,7 +1566,7 @@ Không có
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newBlockFilter","params":[],"id":73}'
 // Kết quả
 {
   "id":1,
@@ -1575,10 +1575,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],
 }
 ```
 
-### eth_newPendingTransactionFilter {#eth-newpendingtransactionfilter}
+### qau_newPendingTransactionFilter {#qau-newpendingtransactionfilter}
 
 Tạo một bộ lọc trong nút, để thông báo khi có các giao dịch đang chờ xử lý mới đến.
-Để kiểm tra xem trạng thái đã thay đổi hay chưa, hãy gọi [eth_getFilterChanges](#eth-getfilterchanges).
+Để kiểm tra xem trạng thái đã thay đổi hay chưa, hãy gọi [qau_getFilterChanges](#qau-getfilterchanges).
 
 **Các tham số**
 Không có
@@ -1590,7 +1590,7 @@ Không có
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newPendingTransactionFilter","params":[],"id":73}'
 // Kết quả
 {
   "id":1,
@@ -1599,10 +1599,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter"
 }
 ```
 
-### eth_uninstallFilter {#eth-uninstallfilter}
+### qau_uninstallFilter {#qau-uninstallfilter}
 
 Gỡ cài đặt một bộ lọc với id đã cho. Luôn nên được gọi khi không còn cần theo dõi nữa.
-Ngoài ra, các bộ lọc sẽ hết hạn khi chúng không được yêu cầu bằng [eth_getFilterChanges](#eth-getfilterchanges) trong một khoảng thời gian.
+Ngoài ra, các bộ lọc sẽ hết hạn khi chúng không được yêu cầu bằng [qau_getFilterChanges](#qau-getfilterchanges) trong một khoảng thời gian.
 
 **Các tham số**
 
@@ -1621,7 +1621,7 @@ params: [
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["0xb"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_uninstallFilter","params":["0xb"],"id":73}'
 // Kết quả
 {
   "id":1,
@@ -1630,7 +1630,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["
 }
 ```
 
-### eth_getFilterChanges {#eth-getfilterchanges}
+### qau_getFilterChanges {#qau-getfilterchanges}
 
 Phương thức thăm dò (polling) cho một bộ lọc, trả về một mảng các nhật ký đã xảy ra kể từ lần thăm dò cuối cùng.
 
@@ -1647,9 +1647,9 @@ params: [
 **Kết quả trả về**
 `Array` - Mảng các đối tượng nhật ký, hoặc một mảng rỗng nếu không có gì thay đổi kể từ lần thăm dò cuối cùng.
 
-- Đối với các bộ lọc được tạo bằng `eth_newBlockFilter`, kết quả trả về là các mã băm khối (`DATA`, 32 Byte), ví dụ: `["0x3454645634534..."]`.
-- Đối với các bộ lọc được tạo bằng `eth_newPendingTransactionFilter `, kết quả trả về là các mã băm giao dịch (`DATA`, 32 Byte), ví dụ: `["0x6345343454645..."]`.
-- Đối với các bộ lọc được tạo bằng `eth_newFilter`, các nhật ký là các đối tượng có các tham số sau:
+- Đối với các bộ lọc được tạo bằng `qau_newBlockFilter`, kết quả trả về là các mã băm khối (`DATA`, 32 Byte), ví dụ: `["0x3454645634534..."]`.
+- Đối với các bộ lọc được tạo bằng `qau_newPendingTransactionFilter `, kết quả trả về là các mã băm giao dịch (`DATA`, 32 Byte), ví dụ: `["0x6345343454645..."]`.
+- Đối với các bộ lọc được tạo bằng `qau_newFilter`, các nhật ký là các đối tượng có các tham số sau:
   - `removed`: `TAG` - `true` khi nhật ký bị xóa do tổ chức lại chuỗi. `false` nếu đó là một nhật ký hợp lệ.
   - `logIndex`: `QUANTITY` - số nguyên của vị trí chỉ số nhật ký trong khối. `null` khi nó là nhật ký đang chờ xử lý.
   - `transactionIndex`: `QUANTITY` - số nguyên của vị trí chỉ số giao dịch mà từ đó nhật ký được tạo ra. `null` khi nó là nhật ký đang chờ xử lý.
@@ -1664,7 +1664,7 @@ params: [
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":["0x16"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterChanges","params":["0x16"],"id":73}'
 // Kết quả
 {
   "id":1,
@@ -1684,7 +1684,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":[
 }
 ```
 
-### eth_getFilterLogs {#eth-getfilterlogs}
+### qau_getFilterLogs {#qau-getfilterlogs}
 
 Trả về một mảng gồm tất cả các nhật ký khớp với bộ lọc có id đã cho.
 
@@ -1699,18 +1699,18 @@ params: [
 ```
 
 **Trả về**
-Xem [eth_getFilterChanges](#eth-getfilterchanges)
+Xem [qau_getFilterChanges](#qau-getfilterchanges)
 
 **Ví dụ**
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterLogs","params":["0x16"],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterLogs","params":["0x16"],"id":74}'
 ```
 
-Kết quả xem [eth_getFilterChanges](#eth-getfilterchanges)
+Kết quả xem [qau_getFilterChanges](#qau-getfilterchanges)
 
-### eth_getLogs {#eth-getlogs}
+### qau_getLogs {#qau-getlogs}
 
 Trả về một mảng chứa tất cả các nhật ký khớp với một đối tượng bộ lọc đã cho.
 
@@ -1735,24 +1735,24 @@ params: [
 ```
 
 **Trả về**
-Xem [eth_getFilterChanges](#eth-getfilterchanges)
+Xem [qau_getFilterChanges](#qau-getfilterchanges)
 
 **Ví dụ**
 
 ```js
 // Yêu cầu
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
 ```
 
-Kết quả xem [eth_getFilterChanges](#eth-getfilterchanges)
+Kết quả xem [qau_getFilterChanges](#qau-getfilterchanges)
 
 ## Ví dụ sử dụng {#usage-example}
 
 ### Triển khai hợp đồng bằng JSON-RPC {#deploying-contract}
 
-Phần này trình bày cách triển khai hợp đồng chỉ bằng giao diện RPC. Có những cách khác để triển khai hợp đồng trong đó sự phức tạp này được trừu tượng hóa—ví dụ: sử dụng các thư viện được xây dựng trên giao diện RPC như [web3.js](https://web3js.readthedocs.io/) và [web3.py](https://github.com/ethereum/web3.py). Những sự trừu tượng hóa này nhìn chung dễ hiểu hơn và ít dễ mắc lỗi hơn, nhưng việc hiểu cách thức hoạt động bên trong vẫn rất hữu ích.
+Phần này trình bày cách triển khai hợp đồng chỉ bằng giao diện RPC. Có những cách khác để triển khai hợp đồng trong đó sự phức tạp này được trừu tượng hóa—ví dụ: sử dụng các thư viện được xây dựng trên giao diện RPC như [web3.js](https://web3js.readthedocs.io/) và [web3.py](https://github.com/quantaureum/web3.py). Những sự trừu tượng hóa này nhìn chung dễ hiểu hơn và ít dễ mắc lỗi hơn, nhưng việc hiểu cách thức hoạt động bên trong vẫn rất hữu ích.
 
-Dưới đây là một hợp đồng thông minh đơn giản có tên `Multiply7` sẽ được triển khai bằng giao diện JSON-RPC tới một nút Ethereum. Hướng dẫn này giả định rằng người đọc đã và đang chạy một nút Geth. Thông tin thêm về các nút và ứng dụng khách có sẵn [tại đây](/developers/docs/nodes-and-clients/run-a-node). Vui lòng tham khảo tài liệu của từng [ứng dụng khách](/developers/docs/nodes-and-clients/) để xem cách khởi chạy HTTP JSON-RPC cho các ứng dụng khách không phải Geth. Hầu hết các ứng dụng khách mặc định phục vụ trên `localhost:8545`.
+Dưới đây là một hợp đồng thông minh đơn giản có tên `Multiply7` sẽ được triển khai bằng giao diện JSON-RPC tới một nút Quantaureum. Hướng dẫn này giả định rằng người đọc đã và đang chạy một nút Geth. Thông tin thêm về các nút và ứng dụng khách có sẵn [tại đây](/developers/docs/nodes-and-clients/run-a-node). Vui lòng tham khảo tài liệu của từng [ứng dụng khách](/developers/docs/nodes-and-clients/) để xem cách khởi chạy HTTP JSON-RPC cho các ứng dụng khách không phải Geth. Hầu hết các ứng dụng khách mặc định phục vụ trên `localhost:8545`.
 
 ```javascript
 contract Multiply7 {
@@ -1764,7 +1764,7 @@ contract Multiply7 {
 }
 ```
 
-Điều đầu tiên cần làm là đảm bảo giao diện HTTP RPC đã được bật. Điều này có nghĩa là chúng ta cung cấp cho Geth cờ `--http` khi khởi động. Trong ví dụ này, chúng ta sử dụng nút Geth trên một chuỗi phát triển riêng tư. Sử dụng phương pháp này, chúng ta không cần ether trên mạng lưới thực.
+Điều đầu tiên cần làm là đảm bảo giao diện HTTP RPC đã được bật. Điều này có nghĩa là chúng ta cung cấp cho Geth cờ `--http` khi khởi động. Trong ví dụ này, chúng ta sử dụng nút Geth trên một chuỗi phát triển riêng tư. Sử dụng phương pháp này, chúng ta không cần QAU trên mạng lưới thực.
 
 ```bash
 geth --http --dev console 2>>geth.log
@@ -1775,21 +1775,21 @@ Lệnh này sẽ khởi chạy giao diện HTTP RPC trên `http://localhost:8545
 Chúng ta có thể xác minh rằng giao diện đang chạy bằng cách truy xuất địa chỉ coinbase (bằng cách lấy địa chỉ đầu tiên từ mảng các tài khoản) và số dư bằng cách sử dụng [curl](https://curl.se). Xin lưu ý rằng dữ liệu trong các ví dụ này sẽ khác nhau trên nút cục bộ của bạn. Nếu bạn muốn thử các lệnh này, hãy thay thế các tham số yêu cầu trong yêu cầu curl thứ hai bằng kết quả trả về từ yêu cầu đầu tiên.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
 {"id":1,"jsonrpc":"2.0","result":["0x9b1d35635cc34752ca54713bb99d38614f63c955"]}
 
-curl --data '{"jsonrpc":"2.0","method":"eth_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
 {"id":2,"jsonrpc":"2.0","result":"0x1639e49bba16280000"}
 ```
 
-Vì các số được mã hóa hex, số dư được trả về bằng wei dưới dạng chuỗi hex. Nếu chúng ta muốn có số dư bằng ether dưới dạng số, chúng ta có thể sử dụng web3 từ bảng điều khiển Geth.
+Vì các số được mã hóa hex, số dư được trả về bằng wei dưới dạng chuỗi hex. Nếu chúng ta muốn có số dư bằng QAU dưới dạng số, chúng ta có thể sử dụng web3 từ bảng điều khiển Geth.
 
 ```javascript
-web3.fromWei("0x1639e49bba16280000", "ether")
+web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-Bây giờ đã có một ít ether trên chuỗi phát triển riêng tư của chúng ta, chúng ta có thể triển khai hợp đồng. Bước đầu tiên là biên dịch hợp đồng Multiply7 thành mã byte để có thể gửi đến EVM. Để cài đặt solc, trình biên dịch Solidity, hãy làm theo [tài liệu Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (Bạn có thể muốn sử dụng một bản phát hành `solc` cũ hơn để khớp với [phiên bản trình biên dịch được sử dụng cho ví dụ của chúng tôi](https://github.com/ethereum/solidity/releases/tag/v0.4.20).)
+Bây giờ đã có một ít QAU trên chuỗi phát triển riêng tư của chúng ta, chúng ta có thể triển khai hợp đồng. Bước đầu tiên là biên dịch hợp đồng Multiply7 thành mã byte để có thể gửi đến EVM. Để cài đặt solc, trình biên dịch Solidity, hãy làm theo [tài liệu Solidity](https://docs.soliditylang.org/en/latest/installing-solidity.html). (Bạn có thể muốn sử dụng một bản phát hành `solc` cũ hơn để khớp với [phiên bản trình biên dịch được sử dụng cho ví dụ của chúng tôi](https://github.com/quantaureum/solidity/releases/tag/v0.4.20).)
 
 Bước tiếp theo là biên dịch hợp đồng Multiply7 thành mã byte để có thể gửi đến EVM.
 
@@ -1801,25 +1801,25 @@ Binary:
 6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029
 ```
 
-Bây giờ chúng ta đã có mã được biên dịch, chúng ta cần xác định xem tốn bao nhiêu gas để triển khai nó. Giao diện RPC có một phương thức `eth_estimateGas` sẽ cung cấp cho chúng ta một ước tính.
+Bây giờ chúng ta đã có mã được biên dịch, chúng ta cần xác định xem tốn bao nhiêu gas để triển khai nó. Giao diện RPC có một phương thức `qau_estimateGas` sẽ cung cấp cho chúng ta một ước tính.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":5,"result":"0x1c31e"}
 ```
 
 Và cuối cùng là triển khai hợp đồng.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
 {"id":6,"jsonrpc":"2.0","result":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"}
 ```
 
 Giao dịch được nút chấp nhận và một mã băm giao dịch được trả về. Mã băm này có thể được sử dụng để theo dõi giao dịch. Bước tiếp theo là xác định địa chỉ nơi hợp đồng của chúng ta được triển khai. Mỗi giao dịch được thực thi sẽ tạo ra một biên lai. Biên lai này chứa nhiều thông tin khác nhau về giao dịch, chẳng hạn như giao dịch được đưa vào khối nào và EVM đã sử dụng bao nhiêu gas. Nếu một giao dịch
-tạo ra một hợp đồng, nó cũng sẽ chứa địa chỉ hợp đồng. Chúng ta có thể truy xuất biên lai bằng phương thức RPC `eth_getTransactionReceipt`.
+tạo ra một hợp đồng, nó cũng sẽ chứa địa chỉ hợp đồng. Chúng ta có thể truy xuất biên lai bằng phương thức RPC `qau_getTransactionReceipt`.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":7,"result":{"blockHash":"0x77b1a4f6872b9066312de3744f60020cbd8102af68b1f6512a05b7619d527a4f","blockNumber":"0x1","contractAddress":"0x4d03d617d700cf81935d7f797f4e2ae719648262","cumulativeGasUsed":"0x1c31e","from":"0x9b1d35635cc34752ca54713bb99d38614f63c955","gasUsed":"0x1c31e","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","status":"0x1","to":null,"transactionHash":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf","transactionIndex":"0x0"}}
 ```
 
@@ -1827,9 +1827,9 @@ Hợp đồng của chúng ta đã được tạo trên `0x4d03d617d700cf81935d7
 
 #### Tương tác với các hợp đồng thông minh {#interacting-with-smart-contract}
 
-Trong ví dụ này, chúng ta sẽ gửi một giao dịch bằng cách sử dụng `eth_sendTransaction` tới phương thức `multiply` của hợp đồng.
+Trong ví dụ này, chúng ta sẽ gửi một giao dịch bằng cách sử dụng `qau_sendTransaction` tới phương thức `multiply` của hợp đồng.
 
-`eth_sendTransaction` yêu cầu một số đối số, cụ thể là `from`, `to` và `data`. `From` là địa chỉ công khai của tài khoản của chúng ta và `to` là địa chỉ hợp đồng. Đối số `data` chứa một payload xác định phương thức nào phải được gọi và với các đối số nào. Đây là lúc [ABI (giao diện nhị phân ứng dụng)](https://docs.soliditylang.org/en/latest/abi-spec.html) phát huy tác dụng. ABI là một tệp JSON xác định cách định nghĩa và mã hóa dữ liệu cho EVM.
+`qau_sendTransaction` yêu cầu một số đối số, cụ thể là `from`, `to` và `data`. `From` là địa chỉ công khai của tài khoản của chúng ta và `to` là địa chỉ hợp đồng. Đối số `data` chứa một payload xác định phương thức nào phải được gọi và với các đối số nào. Đây là lúc [ABI (giao diện nhị phân ứng dụng)](https://docs.soliditylang.org/en/latest/abi-spec.html) phát huy tác dụng. ABI là một tệp JSON xác định cách định nghĩa và mã hóa dữ liệu cho EVM.
 
 Các byte của payload xác định phương thức nào trong hợp đồng được gọi. Đây là 4 byte đầu tiên từ mã băm Keccak trên tên hàm và các kiểu đối số của nó, được mã hóa hex. Hàm multiply chấp nhận một uint, là bí danh của uint256. Điều này để lại cho chúng ta:
 
@@ -1849,7 +1849,7 @@ Kết hợp bộ chọn hàm và đối số được mã hóa, dữ liệu củ
 Bây giờ dữ liệu này có thể được gửi đến nút:
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
 {"id":8,"jsonrpc":"2.0","result":"0x759cf065cbc22e9d779748dc53763854e5376eea07409e590c990eafc0869d74"}
 ```
 

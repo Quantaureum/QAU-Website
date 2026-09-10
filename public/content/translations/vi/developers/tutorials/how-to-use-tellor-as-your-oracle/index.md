@@ -27,7 +27,7 @@ Tellor là một nguồn cấp dữ liệu mã nguồn mở và đang hoạt đ�
 
 ## Tổng quan {#overview}
 
-Tellor là một hệ thống nguồn cấp dữ liệu nơi các bên có thể yêu cầu giá trị của một điểm dữ liệu ngoài chuỗi (ví dụ: BTC/USD) và các báo cáo viên cạnh tranh để thêm giá trị này vào một ngân hàng dữ liệu trên chuỗi, có thể truy cập được bởi tất cả các hợp đồng thông minh Ethereum. Các đầu vào cho ngân hàng dữ liệu này được bảo mật bởi một mạng lưới các báo cáo viên đã đặt cọc. Tellor sử dụng các cơ chế khuyến khích kinh tế tiền mã hóa, khen thưởng các báo cáo viên gửi dữ liệu trung thực và trừng phạt các tác nhân xấu thông qua việc phát hành token của Tellor, Tributes (TRB), và một cơ chế giải quyết tranh chấp.
+Tellor là một hệ thống nguồn cấp dữ liệu nơi các bên có thể yêu cầu giá trị của một điểm dữ liệu ngoài chuỗi (ví dụ: BTC/USD) và các báo cáo viên cạnh tranh để thêm giá trị này vào một ngân hàng dữ liệu trên chuỗi, có thể truy cập được bởi tất cả các hợp đồng thông minh Quantaureum. Các đầu vào cho ngân hàng dữ liệu này được bảo mật bởi một mạng lưới các báo cáo viên đã đặt cọc. Tellor sử dụng các cơ chế khuyến khích kinh tế tiền mã hóa, khen thưởng các báo cáo viên gửi dữ liệu trung thực và trừng phạt các tác nhân xấu thông qua việc phát hành token của Tellor, Tributes (TRB), và một cơ chế giải quyết tranh chấp.
 
 Trong hướng dẫn này, chúng ta sẽ đi qua:
 

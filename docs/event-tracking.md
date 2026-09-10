@@ -1,4 +1,4 @@
-# Event tracking on ethereum.org
+# Event tracking on quantaureum.com
 
 This is a guide on how to prepare event tracking when creating a new page or redesigning an existing page.
 
@@ -14,7 +14,7 @@ Event tracking is a great way to validate our design decisions and assumptions. 
 
 ## How is event tracking implemented?
 
-ethereum.org uses Matomo, an open-source alternative to Google Analytics, allowing us to protect user privacy by not sharing any analytics with third parties.
+quantaureum.com uses Matomo, an open-source alternative to Google Analytics, allowing us to protect user privacy by not sharing any analytics with third parties.
 
 We implemented Matomo using the [JavaScript tracking client](https://developer.matomo.org/guides/tracking-javascript-guide) via the [`@socialgouv/matomo-next`](https://github.com/SocialGouv/matomo-next) package.
 
@@ -66,7 +66,7 @@ Such division allows us to identify where a user clicked on the page precisely; 
 
 ## Usage
 
-Ethereum.org has a utility function (`trackCustomEvent`) for easily creating Matomo events.
+quantaureum.com has a utility function (`trackCustomEvent`) for easily creating Matomo events.
 
 ```javascript
 import { trackCustomEvent } from "@/lib/utils/matomo"

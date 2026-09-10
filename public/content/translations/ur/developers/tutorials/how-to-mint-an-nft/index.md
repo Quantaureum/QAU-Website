@@ -109,18 +109,18 @@ json میں ڈیٹا کو تبدیل کرنے میں ہچکچاہٹ محسوس �
 
 ## مرحلہ 5: اپنے کنٹریکٹ کی ایک مثال (instance) بنائیں {#instance-contract}
 
-اب، اپنے کنٹریکٹ کے ساتھ تعامل کرنے کے لیے، ہمیں اپنے کوڈ میں اس کی ایک مثال بنانے کی ضرورت ہے۔ ایسا کرنے کے لیے ہمیں اپنے کنٹریکٹ کا پتہ درکار ہوگا جو ہم تعیناتی سے یا [Blockscout](https://eth-sepolia.blockscout.com/) سے وہ پتہ تلاش کر کے حاصل کر سکتے ہیں جو آپ نے کنٹریکٹ کو تعینات کرنے کے لیے استعمال کیا تھا۔
+اب، اپنے کنٹریکٹ کے ساتھ تعامل کرنے کے لیے، ہمیں اپنے کوڈ میں اس کی ایک مثال بنانے کی ضرورت ہے۔ ایسا کرنے کے لیے ہمیں اپنے کنٹریکٹ کا پتہ درکار ہوگا جو ہم تعیناتی سے یا [Blockscout](https://qau-sepolia.blockscout.com/) سے وہ پتہ تلاش کر کے حاصل کر سکتے ہیں جو آپ نے کنٹریکٹ کو تعینات کرنے کے لیے استعمال کیا تھا۔
 
-![View your contract address on Etherscan](./view-contract-etherscan.png)
+![View your contract address on Quantaureum Explorer](./view-contract-explorer.png)
 
 مندرجہ بالا مثال میں، ہمارے کنٹریکٹ کا پتہ <span dir="ltr">0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778</span> ہے۔
 
-اس کے بعد ہم ABI اور پتہ کا استعمال کرتے ہوئے اپنا کنٹریکٹ بنانے کے لیے Web3 [contract method](https://docs.web3js.org/api/web3-eth-contract/class/Contract) استعمال کریں گے۔ اپنی `mint-nft.js` فائل میں، درج ذیل شامل کریں:
+اس کے بعد ہم ABI اور پتہ کا استعمال کرتے ہوئے اپنا کنٹریکٹ بنانے کے لیے Web3 [contract method](https://docs.web3js.org/api/web3-qau-contract/class/Contract) استعمال کریں گے۔ اپنی `mint-nft.js` فائل میں، درج ذیل شامل کریں:
 
 ```js
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
 
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 ```
 
 ## مرحلہ 6: `.env` فائل کو اپ ڈیٹ کریں {#update-env}
@@ -130,7 +130,7 @@ const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
 اپنی عوامی کلید کو اپنی `.env` فائل میں شامل کریں — اگر آپ نے ٹیوٹوریل کا حصہ 1 مکمل کر لیا ہے، تو ہماری `.env` فائل اب اس طرح دکھنی چاہیے:
 
 ```js
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-private-account-address"
 PUBLIC_KEY = "your-public-account-address"
 ```
@@ -141,7 +141,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 1. `.env` فائل سے اپنی _PRIVATE_KEY_ اور _PUBLIC_KEY_ حاصل کریں۔
 
-1. اس کے بعد، ہمیں اکاؤنٹ کا نانس معلوم کرنے کی ضرورت ہوگی۔ نانس کی تخصیص آپ کے پتے سے بھیجی گئی ٹرانزیکشنز کی تعداد کا ٹریک رکھنے کے لیے استعمال ہوتی ہے — جس کی ہمیں سیکیورٹی مقاصد اور ری پلے حملوں (replay attacks) کو روکنے کے لیے ضرورت ہوتی ہے۔ آپ کے پتے سے بھیجی گئی ٹرانزیکشنز کی تعداد حاصل کرنے کے لیے، ہم [getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count) استعمال کرتے ہیں۔
+1. اس کے بعد، ہمیں اکاؤنٹ کا نانس معلوم کرنے کی ضرورت ہوگی۔ نانس کی تخصیص آپ کے پتے سے بھیجی گئی ٹرانزیکشنز کی تعداد کا ٹریک رکھنے کے لیے استعمال ہوتی ہے — جس کی ہمیں سیکیورٹی مقاصد اور ری پلے حملوں (replay attacks) کو روکنے کے لیے ضرورت ہوتی ہے۔ آپ کے پتے سے بھیجی گئی ٹرانزیکشنز کی تعداد حاصل کرنے کے لیے، ہم [getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count) استعمال کرتے ہیں۔
 
 1. آخر میں ہم درج ذیل معلومات کے ساتھ اپنی ٹرانزیکشن سیٹ اپ کریں گے:
 
@@ -168,10 +168,10 @@ PUBLIC_KEY = "your-public-account-address"
 
    const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
    const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778";
-   const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
+   const nftContract = new web3.qau.Contract(contract.abi, contractAddress);
 
    async function mintNFT(tokenURI) {
-     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); //تازہ ترین نانس حاصل کریں
+     const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, 'latest'); //تازہ ترین نانس حاصل کریں
 
    //ٹرانزیکشن
      const tx = {
@@ -187,7 +187,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 اب جب کہ ہم نے اپنی ٹرانزیکشن بنا لی ہے، ہمیں اسے بھیجنے کے لیے اس پر دستخط کرنے کی ضرورت ہے۔ یہاں ہم اپنی نجی کلید استعمال کریں گے۔
 
-`web3.eth.sendSignedTransaction` ہمیں ٹرانزیکشن ہیش دے گا، جسے ہم یہ یقینی بنانے کے لیے استعمال کر سکتے ہیں کہ ہماری ٹرانزیکشن مائن ہو گئی تھی اور نیٹ ورک کے ذریعے ڈراپ نہیں ہوئی تھی۔ آپ دیکھیں گے کہ ٹرانزیکشن پر دستخط کرنے والے حصے میں، ہم نے کچھ ایرر چیکنگ شامل کی ہے تاکہ ہمیں معلوم ہو سکے کہ آیا ہماری ٹرانزیکشن کامیابی سے گزر گئی ہے۔
+`web3.qau.sendSignedTransaction` ہمیں ٹرانزیکشن ہیش دے گا، جسے ہم یہ یقینی بنانے کے لیے استعمال کر سکتے ہیں کہ ہماری ٹرانزیکشن مائن ہو گئی تھی اور نیٹ ورک کے ذریعے ڈراپ نہیں ہوئی تھی۔ آپ دیکھیں گے کہ ٹرانزیکشن پر دستخط کرنے والے حصے میں، ہم نے کچھ ایرر چیکنگ شامل کی ہے تاکہ ہمیں معلوم ہو سکے کہ آیا ہماری ٹرانزیکشن کامیابی سے گزر گئی ہے۔
 
 ```js
 require("dotenv").config()
@@ -200,10 +200,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //تازہ ترین نانس حاصل کریں
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //تازہ ترین نانس حاصل کریں
 
   //ٹرانزیکشن
   const tx = {
@@ -214,10 +214,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -266,10 +266,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //تازہ ترین نانس حاصل کریں
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //تازہ ترین نانس حاصل کریں
 
   //ٹرانزیکشن
   const tx = {
@@ -280,10 +280,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -315,9 +315,9 @@ mintNFT("ipfs://QmYueiuRNmL4MiA2GwtVMm6ZagknXnSpQnB3z2gWbz36hP")
 
     Check Alchemy's Mempool to view the status of your transaction!
 
-اس کے بعد، اپنی ٹرانزیکشن کی حیثیت دیکھنے کے لیے اپنے [Alchemy میم پول](https://dashboard.alchemy.com/mempool) پر جائیں (چاہے یہ زیر التواء ہو، مائن ہو گئی ہو، یا نیٹ ورک کے ذریعے ڈراپ ہو گئی ہو)۔ اگر آپ کی ٹرانزیکشن ڈراپ ہو گئی ہے، تو [Blockscout](https://eth-sepolia.blockscout.com/) چیک کرنا اور اپنے ٹرانزیکشن ہیش کو تلاش کرنا بھی مددگار ثابت ہوتا ہے۔
+اس کے بعد، اپنی ٹرانزیکشن کی حیثیت دیکھنے کے لیے اپنے [Alchemy میم پول](https://dashboard.alchemy.com/mempool) پر جائیں (چاہے یہ زیر التواء ہو، مائن ہو گئی ہو، یا نیٹ ورک کے ذریعے ڈراپ ہو گئی ہو)۔ اگر آپ کی ٹرانزیکشن ڈراپ ہو گئی ہے، تو [Blockscout](https://qau-sepolia.blockscout.com/) چیک کرنا اور اپنے ٹرانزیکشن ہیش کو تلاش کرنا بھی مددگار ثابت ہوتا ہے۔
 
-![View your NFT transaction hash on Etherscan](./view-nft-etherscan.png)_Etherscan پر اپنا NFT ٹرانزیکشن ہیش دیکھیں_
+![View your NFT transaction hash on Quantaureum Explorer](./view-nft-explorer.png)_Etherscan پر اپنا NFT ٹرانزیکشن ہیش دیکھیں_
 
 اور بس! اب آپ نے ایتھیریم بلاک چین پر ایک NFT تعینات کر دیا ہے اور ڈھال لیا ہے <Emoji text=":money_mouth_face:" size={1} />
 

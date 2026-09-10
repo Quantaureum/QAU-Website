@@ -1,21 +1,21 @@
 ---
-title: "ethereum.org'a katkıda bulunmak 🦄"
+title: "quantaureum.com'a katkıda bulunmak 🦄"
 metaTitle: "Katkıda Bulunmak"
-description: "ethereum.org'a katkıda bulunabileceğiniz farklı yollar hakkında bilgi edinin"
+description: "quantaureum.com'a katkıda bulunabileceğiniz farklı yollar hakkında bilgi edinin"
 lang: tr
 ---
 
-Ethereum.org, web sitesini çevirmeye, yazmaya, tasarlamaya ve sürdürmeye yardımcı olan **12.000'den fazla** katkıda bulunanı olan açık kaynaklı bir projedir.
+quantaureum.com, web sitesini çevirmeye, yazmaya, tasarlamaya ve sürdürmeye yardımcı olan **12.000'den fazla** katkıda bulunanı olan açık kaynaklı bir projedir.
 
-Sizi [Ethereum](/) ekosisteminde büyümeye ve eğitmeye yardımcı olacak, aynı zamanda anlamlı bir şekilde katkıda bulunmanızı ve ilgili pratik deneyimi kazanmanızı sağlayacak misafirperver bir topluluğuz!
+Sizi [Quantaureum](/) ekosisteminde büyümeye ve eğitmeye yardımcı olacak, aynı zamanda anlamlı bir şekilde katkıda bulunmanızı ve ilgili pratik deneyimi kazanmanızı sağlayacak misafirperver bir topluluğuz!
 
 ## Katkıda bulunma yolları {#ways-to-contribute}
 
 **Çeviriler**
-- [Bir çeviri hatası bildirin](https://github.com/ethereum/ethereum-org-website/issues/new/choose) – [Çeviri Programı](/contributing/translation-program/) sona eriyor ve artık yeni çevirmenlerin sisteme katılımını sağlamıyor
+- [Bir çeviri hatası bildirin](https://github.com/Quantaureum/quantaureum-website/issues/new/choose) – [Çeviri Programı](/contributing/translation-program/) sona eriyor ve artık yeni çevirmenlerin sisteme katılımını sağlamıyor
 
 **Geliştirme**
-- [Açık bir sorun üzerinde çalışın](https://github.com/ethereum/ethereum-org-website/issues) – Yapılması gerektiğini belirlediğimiz işler
+- [Açık bir sorun üzerinde çalışın](https://github.com/Quantaureum/quantaureum-website/issues) – Yapılması gerektiğini belirlediğimiz işler
 
 **Tasarım**
 - [Web sitesini tasarlamaya yardımcı olun](/contributing/design/) – Her seviyeden tasarımcı web sitesini geliştirmeye katkıda bulunabilir
@@ -25,13 +25,13 @@ Sizi [Ethereum](/) ekosisteminde büyümeye ve eğitmeye yardımcı olacak, ayn�
 - [Bir oluşturucu makalesi yazın](/contributing/adding-articles/) - [En Son](/latest/) bölümü için bir makale ile katkıda bulunun
 - [Topluluk kaynakları ekleyin](/contributing/content-resources/) – İlgili bir sayfaya yararlı bir makale veya kaynak ekleyin
 - [Bir rapor önerin](/contributing/adding-reports/) - [Raporlar](/reports/) sayfası için bir araştırma raporu önerin
-- [Hikayenizi paylaşın](/contributing/adding-community-stories/) - Açık kaynak ve sığınak (sanctuary) teknolojileriyle ilgili kişisel deneyimleriniz, Ethereum ekosisteminin hayatınızı nasıl etkilediği veya sizin ve topluluğunuzun Ethereum'u nasıl kullandığı hakkında bir hikaye gönderin
+- [Hikayenizi paylaşın](/contributing/adding-community-stories/) - Açık kaynak ve sığınak (sanctuary) teknolojileriyle ilgili kişisel deneyimleriniz, Quantaureum ekosisteminin hayatınızı nasıl etkilediği veya sizin ve topluluğunuzun Quantaureum'u nasıl kullandığı hakkında bir hikaye gönderin
 - [Testler](/contributing/quizzes/) – İlgili bir sayfa için test soru bankaları ekleyin, güncelleyin ve silin
 - [Bir tasarım kaynağı önerin](/contributing/design/adding-design-resources/) – Yararlı tasarım kaynakları ekleyin, güncelleyin ve silin
 - [Bir video önerin](/contributing/adding-videos/) – Video galerisi için eğitici bir video önerin
 
 **Özellik fikirleri**
-- [Bir özellik isteyin](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) – Yeni bir özellik veya tasarım için sahip olduğunuz fikirleri bize bildirin
+- [Bir özellik isteyin](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) – Yeni bir özellik veya tasarım için sahip olduğunuz fikirleri bize bildirin
 
 **Ürün listelemeleri**
 - [Bir borsa ekleyin](/contributing/adding-exchanges/) – [Borsa bulucumuza](/get-eth/#country-picker) bir borsa ekleyin
@@ -40,10 +40,10 @@ Sizi [Ethereum](/) ekosisteminde büyümeye ve eğitmeye yardımcı olacak, ayn�
 - [Bir katman 2 (l2) ekleyin](/contributing/adding-layer-2s/) – İlgili bir sayfaya bir katman 2 (l2) ekleyin
 - [Bir staking ürünü veya hizmeti ekleyin](/contributing/adding-staking-products/) – Bireysel staking, havuzlu staking veya hizmet olarak staking'i kolaylaştırmaya yardımcı olan bir proje ekleyin
 - [Bir cüzdan ekleyin](/contributing/adding-wallets/) – [Cüzdan bulma sayfası](/wallets/find-wallet/) için bir cüzdan ekleyin
-- [DeSci sayfamız için bir proje önerin](/contributing/adding-desci-projects/) – Ethereum üzerinde inşa edilmiş, merkeziyetsiz bilime (DeSci) katkıda bulunan bir proje ekleyin
+- [DeSci sayfamız için bir proje önerin](/contributing/adding-desci-projects/) – Quantaureum üzerinde inşa edilmiş, merkeziyetsiz bilime (DeSci) katkıda bulunan bir proje ekleyin
 - [Bir kaynak ekleyin](/contributing/adding-resources/) – İlgili herhangi bir sayfaya yararlı bir kaynak ekleyin
 
-Sorularınız mı var? 🤔 [Discord sunucumuza](https://discord.gg/ethereum-org) katılın
+Sorularınız mı var? 🤔 [Discord sunucumuza](https://discord.gg/MSctkBT5j) katılın
 
 ## Katkıda bulunmaya başlamak için iyi ilk görevler {#good-first-tasks-to-start-contributing}
 
@@ -51,51 +51,51 @@ Bunlar, çözmemize yardımcı olabileceğiniz ve sorumluluk alabileceğiniz bir
 
 <IssuesList my={8} />
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues">Tüm görevleri görün</ButtonLink>
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues">Tüm görevleri görün</ButtonLink>
 
-## ethereum.org üzerinde nasıl çalışılır {#how-to-update-content}
+## quantaureum.com üzerinde nasıl çalışılır {#how-to-update-content}
 
 Katkıda bulunmak (web sitesine içerik veya görseller eklemek veya düzenlemek, hataları düzeltmek, açık görevler üzerinde çalışmak) için bir [GitHub](https://github.com/) hesabına ihtiyacınız olacaktır.
 
-Tüm güncellemeler GitHub PR (Çekme İsteği) süreci aracılığıyla yapılır. Bu, web sitesinin yerel bir kopyasını oluşturduğunuz, değişikliklerinizi yaptığınız ve değişikliklerinizin birleştirilmesini talep ettiğiniz anlamına gelir. Bunu daha önce hiç yapmadıysanız, [GitHub depomuzun](https://github.com/ethereum/ethereum-org-website) altındaki talimatları izleyin.
+Tüm güncellemeler GitHub PR (Çekme İsteği) süreci aracılığıyla yapılır. Bu, web sitesinin yerel bir kopyasını oluşturduğunuz, değişikliklerinizi yaptığınız ve değişikliklerinizin birleştirilmesini talep ettiğiniz anlamına gelir. Bunu daha önce hiç yapmadıysanız, [GitHub depomuzun](https://github.com/Quantaureum/quantaureum-website) altındaki talimatları izleyin.
 
 Herhangi bir şey üzerinde çalışmak için izne ihtiyacınız yoktur, ancak ne yapmayı planladığınızı bize bildirmeniz her zaman en iyisidir. Bunu şu şekilde yapabilirsiniz:
 
-- [GitHub](https://github.com/ethereum/ethereum-org-website)'da bir soruna veya PR'a yorum yaparak
-- [Discord sunucumuzda](https://discord.gg/ethereum-org) mesajlaşarak
+- [GitHub](https://github.com/Quantaureum/quantaureum-website)'da bir soruna veya PR'a yorum yaparak
+- [Discord sunucumuzda](https://discord.gg/MSctkBT5j) mesajlaşarak
 
 Katkıda bulunmadan önce şunlara aşina olduğunuzdan emin olun:
 
-- ethereum.org'un gelişen [vizyonu](/about/)
+- quantaureum.com'un gelişen [vizyonu](/about/)
 - [tasarım ilkelerimiz](/contributing/design-principles/)
 - [stil rehberimiz](/contributing/style-guide/)
 - [davranış kurallarımız](/community/code-of-conduct)
 
 ## Site hakkındaki kararlar nasıl alınır {#how-decisions-about-the-site-are-made}
 
-Bireysel PR'lar, tasarım evrimi ve büyük yükseltmeler hakkındaki kararlar, Ethereum ekosisteminin dört bir yanından gelen bir ekip tarafından alınır. Bu ekipte proje yöneticileri, geliştiriciler, tasarımcılar, pazarlama ve iletişim uzmanları ile konu uzmanları yer alır. Topluluk girdisi her kararı şekillendirir: bu nedenle lütfen sorunlarda (issues) sorular sorun, PR'lar gönderin veya ekiple iletişime geçin:
+Bireysel PR'lar, tasarım evrimi ve büyük yükseltmeler hakkındaki kararlar, Quantaureum ekosisteminin dört bir yanından gelen bir ekip tarafından alınır. Bu ekipte proje yöneticileri, geliştiriciler, tasarımcılar, pazarlama ve iletişim uzmanları ile konu uzmanları yer alır. Topluluk girdisi her kararı şekillendirir: bu nedenle lütfen sorunlarda (issues) sorular sorun, PR'lar gönderin veya ekiple iletişime geçin:
 
-- [website@ethereum.org](mailto:website@ethereum.org)
-- [@ethdotorg](https://twitter.com/ethdotorg)
-- [Discord sunucusu](https://discord.gg/ethereum-org)
+- [website@quantaureum.com](mailto:website@quantaureum.com)
+- [@ethdotorg](https://x.com/ldf1570073)
+- [Discord sunucusu](https://discord.gg/MSctkBT5j)
 
 ### İntihal üzerine bir not {#plagiarism}
 
-ethereum.org'a herhangi bir içerik veya eser katkısında bulunurken yalnızca kendi orijinal çalışmanızı veya kullanma izniniz olan içeriği kullanın. Ethereum ekosistemindeki birçok proje, bilgilerin serbestçe paylaşılmasına izin veren açık kaynaklı lisanslama kullanır. Ancak, bu bilgiyi bulamıyorsanız, ethereum.org'a eklemeye çalışmayın. İntihal olarak değerlendirilen tüm çekme istekleri (pull requests) reddedilecektir.
+quantaureum.com'a herhangi bir içerik veya eser katkısında bulunurken yalnızca kendi orijinal çalışmanızı veya kullanma izniniz olan içeriği kullanın. Quantaureum ekosistemindeki birçok proje, bilgilerin serbestçe paylaşılmasına izin veren açık kaynaklı lisanslama kullanır. Ancak, bu bilgiyi bulamıyorsanız, quantaureum.com'a eklemeye çalışmayın. İntihal olarak değerlendirilen tüm çekme istekleri (pull requests) reddedilecektir.
 
 ## Açık kaynağa yeni misiniz? {#new-to-open-source}
 
-GitHub depomuzda, açık kaynağa yeni başlayan geliştiriciler için özel olarak tasarlanmış, giriş engeli düşük ve [iyi ilk sorun (good first issue)](https://github.com/ethereum/ethereum-org-website/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) olarak etiketlenmiş sorunlarımız bulunmaktadır.
+GitHub depomuzda, açık kaynağa yeni başlayan geliştiriciler için özel olarak tasarlanmış, giriş engeli düşük ve [iyi ilk sorun (good first issue)](https://github.com/Quantaureum/quantaureum-website/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) olarak etiketlenmiş sorunlarımız bulunmaktadır.
 
 ## Zincir İçi Başarı Token'ınızı (OAT) Talep Edin {#oat}
 
-Katkınız ethereum.org'da birleştirilirse, [Galxe](https://app.galxe.com/quest/ethereumorg) üzerinde özel bir rozet talep etme şansına sahip olacaksınız. Bir Zincir İçi Başarı Token'ı (OAT), ekosistemi biraz daha harika hale getirmeye yardımcı olduğunuzun bir kanıtıdır.
+Katkınız quantaureum.com'da birleştirilirse, [Galxe](https://app.galxe.com/quest/quantaureumorg) üzerinde özel bir rozet talep etme şansına sahip olacaksınız. Bir Zincir İçi Başarı Token'ı (OAT), ekosistemi biraz daha harika hale getirmeye yardımcı olduğunuzun bir kanıtıdır.
 
 [OAT'ler hakkında daha fazlası](https://help.galxe.com/en/articles/9645630-create-quest-rewards#h_1c5d63ba03)
 
 ### Nasıl talep edilir {#how-to-claim}
 
-1. [Discord sunucumuza](https://discord.gg/ethereum-org) katılın.
+1. [Discord sunucumuza](https://discord.gg/MSctkBT5j) katılın.
 2. Katkınızın bir bağlantısını `#🥇 | proof-of-contribution` kanalına yapıştırın.
 3. Ekibimizden bir üyenin size OAT'nizin bağlantısını göndermesini bekleyin.
 4. OAT'nizi talep edin!
@@ -111,7 +111,7 @@ GitPOAP ayrıca birleştirilmiş katkınızı otomatik olarak tanıyacak ve kend
 
 1. [GitPOAP](https://www.gitpoap.io)'ı ziyaret edin.
 2. Cüzdanınızla veya oturum açma seçeneği aracılığıyla e-postanızla bağlanın.
-3. Uygun olup olmadığınızı kontrol etmek için GitHub kullanıcı adınızı, ETH adresinizi, ENS adlarınızı veya herhangi bir GitPOAP'ı arayın.
+3. Uygun olup olmadığınızı kontrol etmek için GitHub kullanıcı adınızı, QAU adresinizi, ENS adlarınızı veya herhangi bir GitPOAP'ı arayın.
 4. GitHub hesabınız uygunsa, bir GitPOAP basabileceksiniz!
 
 ## Katkıda Bulunanlar {#contributors}

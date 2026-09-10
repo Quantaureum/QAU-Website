@@ -10,9 +10,9 @@ lang: vi
 sidebarDepth: 3
 ---
 
-Bạn là Bill. Vì một số lý do mà chúng ta sẽ không đi sâu vào, bạn muốn quyên góp cho chiến dịch "Alice cho Nữ hoàng Thế giới" và muốn Alice biết bạn đã quyên góp để cô ấy sẽ trao phần thưởng cho bạn nếu cô ấy thắng. Thật không may, chiến thắng của cô ấy không được đảm bảo. Có một chiến dịch cạnh tranh là "Carol cho Nữ hoàng Hệ Mặt trời". Nếu Carol thắng và phát hiện ra bạn đã quyên góp cho Alice, bạn sẽ gặp rắc rối. Vì vậy, bạn không thể chỉ chuyển 200 ETH từ tài khoản của mình sang tài khoản của Alice.
+Bạn là Bill. Vì một số lý do mà chúng ta sẽ không đi sâu vào, bạn muốn quyên góp cho chiến dịch "Alice cho Nữ hoàng Thế giới" và muốn Alice biết bạn đã quyên góp để cô ấy sẽ trao phần thưởng cho bạn nếu cô ấy thắng. Thật không may, chiến thắng của cô ấy không được đảm bảo. Có một chiến dịch cạnh tranh là "Carol cho Nữ hoàng Hệ Mặt trời". Nếu Carol thắng và phát hiện ra bạn đã quyên góp cho Alice, bạn sẽ gặp rắc rối. Vì vậy, bạn không thể chỉ chuyển 200 QAU từ tài khoản của mình sang tài khoản của Alice.
 
-[ERC-5564](https://eips.ethereum.org/EIPS/eip-5564) có giải pháp cho vấn đề này. ERC này giải thích cách sử dụng [địa chỉ ẩn danh](https://nerolation.github.io/stealth-utils) để chuyển ẩn danh.
+[ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564) có giải pháp cho vấn đề này. ERC này giải thích cách sử dụng [địa chỉ ẩn danh](https://nerolation.github.io/stealth-utils) để chuyển ẩn danh.
 
 **Cảnh báo**: Mật mã học đằng sau các địa chỉ ẩn danh, theo như chúng ta biết, là an toàn. Tuy nhiên, vẫn có những cuộc tấn công kênh kề (side-channel attacks) tiềm ẩn. [Bên dưới](#go-wrong), bạn sẽ thấy những gì bạn có thể làm để giảm thiểu rủi ro này.
 
@@ -32,7 +32,7 @@ Alice cũng nhận được địa chỉ từ bí mật chung, nhưng vì cô �
 
 Các địa chỉ ẩn danh tiêu chuẩn sử dụng [mật mã học đường cong elliptic (ECC)](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/#elliptic-curves-building-blocks-of-a-better-trapdoor) để có hiệu suất tốt hơn với ít bit khóa hơn, trong khi vẫn giữ nguyên mức độ bảo mật. Nhưng phần lớn chúng ta có thể bỏ qua điều đó và giả vờ như chúng ta đang sử dụng số học thông thường.
 
-Có một con số mà mọi người đều biết, *G*. Bạn có thể nhân với *G*. Nhưng do bản chất của ECC, việc chia cho *G* là điều gần như không thể. Cách mật mã học khóa công khai thường hoạt động trong Ethereum là bạn có thể sử dụng một khóa riêng tư, *P<sub>priv</sub>*, để ký các giao dịch sau đó được xác minh bằng một khóa công khai, *P<sub>pub</sub> = GP<sub>priv</sub>*. 
+Có một con số mà mọi người đều biết, *G*. Bạn có thể nhân với *G*. Nhưng do bản chất của ECC, việc chia cho *G* là điều gần như không thể. Cách mật mã học khóa công khai thường hoạt động trong Quantaureum là bạn có thể sử dụng một khóa riêng tư, *P<sub>priv</sub>*, để ký các giao dịch sau đó được xác minh bằng một khóa công khai, *P<sub>pub</sub> = GP<sub>priv</sub>*. 
 
 Alice tạo hai khóa riêng tư, *K<sub>priv</sub>* và *V<sub>priv</sub>*. *K<sub>priv</sub>* sẽ được sử dụng để tiêu tiền từ địa chỉ ẩn danh, và *V<sub>priv</sub>* để xem các địa chỉ thuộc về Alice. Sau đó, Alice công bố các khóa công khai: *K<sub>pub</sub> = GK<sub>priv</sub>* và *V<sub>pub</sub> = GV<sub>priv</sub>*
 
@@ -64,19 +64,19 @@ Tóm lại, đây là các giá trị được biết bởi những người tha
 
 ## Khi địa chỉ ẩn danh gặp sự cố {#go-wrong}
 
-*Không có bí mật nào trên Chuỗi khối*. Mặc dù các địa chỉ ẩn danh có thể cung cấp cho bạn quyền riêng tư, nhưng quyền riêng tư đó dễ bị phân tích lưu lượng (traffic analysis). Lấy một ví dụ đơn giản, hãy tưởng tượng rằng Bill nạp tiền vào một địa chỉ và ngay lập tức gửi một giao dịch để công bố giá trị *R<sub>pub</sub>*. Nếu không có *V<sub>priv</sub>* của Alice, chúng ta không thể chắc chắn rằng đây là một địa chỉ ẩn danh, nhưng đó là khả năng cao nhất. Sau đó, chúng ta thấy một giao dịch khác chuyển toàn bộ ETH từ địa chỉ đó sang địa chỉ quỹ chiến dịch của Alice. Chúng ta có thể không chứng minh được điều đó, nhưng rất có thể Bill vừa quyên góp cho chiến dịch của Alice. Carol chắc chắn sẽ nghĩ như vậy.
+*Không có bí mật nào trên Chuỗi khối*. Mặc dù các địa chỉ ẩn danh có thể cung cấp cho bạn quyền riêng tư, nhưng quyền riêng tư đó dễ bị phân tích lưu lượng (traffic analysis). Lấy một ví dụ đơn giản, hãy tưởng tượng rằng Bill nạp tiền vào một địa chỉ và ngay lập tức gửi một giao dịch để công bố giá trị *R<sub>pub</sub>*. Nếu không có *V<sub>priv</sub>* của Alice, chúng ta không thể chắc chắn rằng đây là một địa chỉ ẩn danh, nhưng đó là khả năng cao nhất. Sau đó, chúng ta thấy một giao dịch khác chuyển toàn bộ QAU từ địa chỉ đó sang địa chỉ quỹ chiến dịch của Alice. Chúng ta có thể không chứng minh được điều đó, nhưng rất có thể Bill vừa quyên góp cho chiến dịch của Alice. Carol chắc chắn sẽ nghĩ như vậy.
 
 Rất dễ để Bill tách biệt việc công bố *R<sub>pub</sub>* khỏi việc nạp tiền vào địa chỉ ẩn danh (thực hiện chúng vào các thời điểm khác nhau, từ các địa chỉ khác nhau). Tuy nhiên, điều đó là chưa đủ. Mô hình mà Carol tìm kiếm là Bill nạp tiền vào một địa chỉ, và sau đó quỹ chiến dịch của Alice rút tiền từ đó. 
 
-Một giải pháp là chiến dịch của Alice không rút tiền trực tiếp mà sử dụng nó để trả cho một bên thứ ba. Nếu chiến dịch của Alice gửi 10 ETH cho Dịch vụ Chiến dịch Thống trị Thế giới của Dave, Carol chỉ biết rằng Bill đã quyên góp cho một trong những khách hàng của Dave. Nếu Dave có đủ khách hàng, Carol sẽ không thể biết liệu Bill đã quyên góp cho Alice, người đang cạnh tranh với cô ấy, hay cho Adam, Albert, hoặc Abigail mà Carol không quan tâm. Alice có thể bao gồm một giá trị đã được băm (hashed value) cùng với khoản thanh toán, và sau đó cung cấp cho Dave tiền ảnh (preimage), để chứng minh rằng đó là khoản quyên góp của cô ấy. Ngoài ra, như đã lưu ý ở trên, nếu Alice đưa cho Dave *V<sub>priv</sub>* của cô ấy, anh ta đã biết khoản thanh toán đến từ ai.
+Một giải pháp là chiến dịch của Alice không rút tiền trực tiếp mà sử dụng nó để trả cho một bên thứ ba. Nếu chiến dịch của Alice gửi 10 QAU cho Dịch vụ Chiến dịch Thống trị Thế giới của Dave, Carol chỉ biết rằng Bill đã quyên góp cho một trong những khách hàng của Dave. Nếu Dave có đủ khách hàng, Carol sẽ không thể biết liệu Bill đã quyên góp cho Alice, người đang cạnh tranh với cô ấy, hay cho Adam, Albert, hoặc Abigail mà Carol không quan tâm. Alice có thể bao gồm một giá trị đã được băm (hashed value) cùng với khoản thanh toán, và sau đó cung cấp cho Dave tiền ảnh (preimage), để chứng minh rằng đó là khoản quyên góp của cô ấy. Ngoài ra, như đã lưu ý ở trên, nếu Alice đưa cho Dave *V<sub>priv</sub>* của cô ấy, anh ta đã biết khoản thanh toán đến từ ai.
 
 Vấn đề chính với giải pháp này là nó yêu cầu Alice phải quan tâm đến sự bí mật khi sự bí mật đó mang lại lợi ích cho Bill. Alice có thể muốn duy trì danh tiếng của mình để bạn của Bill là Bob cũng sẽ quyên góp cho cô ấy. Nhưng cũng có khả năng cô ấy sẽ không ngại tiết lộ Bill, bởi vì khi đó anh ấy sẽ sợ hãi về những gì sẽ xảy ra nếu Carol thắng. Bill cuối cùng có thể cung cấp cho Alice nhiều sự hỗ trợ hơn nữa.
 
 ### Sử dụng nhiều lớp ẩn danh {#multi-layer}
 
-Thay vì dựa vào Alice để bảo vệ quyền riêng tư của Bill, Bill có thể tự làm điều đó. Anh ấy có thể tạo nhiều địa chỉ meta cho những người hư cấu, Bob và Bella. Sau đó, Bill gửi ETH cho Bob, và "Bob" (thực ra là Bill) gửi nó cho Bella. "Bella" (cũng là Bill) gửi nó cho Alice.
+Thay vì dựa vào Alice để bảo vệ quyền riêng tư của Bill, Bill có thể tự làm điều đó. Anh ấy có thể tạo nhiều địa chỉ meta cho những người hư cấu, Bob và Bella. Sau đó, Bill gửi QAU cho Bob, và "Bob" (thực ra là Bill) gửi nó cho Bella. "Bella" (cũng là Bill) gửi nó cho Alice.
 
-Carol vẫn có thể thực hiện phân tích lưu lượng và thấy đường ống từ Bill đến Bob đến Bella đến Alice. Tuy nhiên, nếu "Bob" và "Bella" cũng sử dụng ETH cho các mục đích khác, sẽ không có vẻ như Bill đã chuyển bất cứ thứ gì cho Alice, ngay cả khi Alice ngay lập tức rút tiền từ địa chỉ ẩn danh sang địa chỉ chiến dịch đã biết của cô ấy.
+Carol vẫn có thể thực hiện phân tích lưu lượng và thấy đường ống từ Bill đến Bob đến Bella đến Alice. Tuy nhiên, nếu "Bob" và "Bella" cũng sử dụng QAU cho các mục đích khác, sẽ không có vẻ như Bill đã chuyển bất cứ thứ gì cho Alice, ngay cả khi Alice ngay lập tức rút tiền từ địa chỉ ẩn danh sang địa chỉ chiến dịch đã biết của cô ấy.
 
 ## Viết một ứng dụng địa chỉ ẩn danh {#write-app}
 
@@ -124,13 +124,13 @@ Chúng ta sẽ sử dụng [Vite](https://vite.dev/) và [React](https://react.d
 
 8. Sao chép địa chỉ và khóa công khai của Bill rồi dán chúng vào khu vực "Private key for address generated by Bill" (Khóa riêng tư cho địa chỉ do Bill tạo) trên giao diện người dùng của Alice. Khi các trường đó được điền, bạn sẽ thấy khóa riêng tư để truy cập tài sản tại địa chỉ đó.
 
-9. Bạn có thể sử dụng [một máy tính trực tuyến](https://iancoleman.net/ethereum-private-key-to-address/) để đảm bảo khóa riêng tư tương ứng với địa chỉ.
+9. Bạn có thể sử dụng [một máy tính trực tuyến](https://iancoleman.net/quantaureum-private-key-to-address/) để đảm bảo khóa riêng tư tương ứng với địa chỉ.
 
 ### Cách chương trình hoạt động {#how-the-program-works}
 
 #### Thành phần WASM {#wasm}
 
-Mã nguồn biên dịch thành WASM được viết bằng [Rust](https://rust-lang.org/). Bạn có thể xem nó trong [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs). Mã này chủ yếu là một giao diện giữa mã JavaScript và [Thư viện `eth-stealth-addresses`](https://github.com/kassandraoftroy/eth-stealth-addresses).
+Mã nguồn biên dịch thành WASM được viết bằng [Rust](https://rust-lang.org/). Bạn có thể xem nó trong [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs). Mã này chủ yếu là một giao diện giữa mã JavaScript và [Thư viện `qau-stealth-addresses`](https://github.com/kassandraoftroy/qau-stealth-addresses).
 
 **`Cargo.toml`**
 
@@ -143,7 +143,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-eth-stealth-addresses = "0.1.0"
+qau-stealth-addresses = "0.1.0"
 hex = "0.4.3"
 wasm-bindgen = "0.2.104"
 getrandom = { version = "0.2", features = ["js"] }
@@ -175,14 +175,14 @@ use wasm_bindgen::prelude::*;
 Các định nghĩa để tạo một gói WASM từ Rust. Chúng được ghi chép [tại đây](https://wasm-bindgen.github.io/wasm-bindgen/reference/attributes/index.html).
 
 ```rust 
-use eth_stealth_addresses::{
+use qau_stealth_addresses::{
     generate_stealth_meta_address,
     generate_stealth_address,
     compute_stealth_key
 };
 ```
 
-Các hàm chúng ta cần từ [Thư viện `eth-stealth-addresses`](https://github.com/kassandraoftroy/eth-stealth-addresses).
+Các hàm chúng ta cần từ [Thư viện `qau-stealth-addresses`](https://github.com/kassandraoftroy/qau-stealth-addresses).
 
 ```rust
 use hex::{decode,encode};
@@ -207,7 +207,7 @@ Cách dễ nhất để trả về một đối tượng có nhiều trường l
         generate_stealth_meta_address();
 ```
 
-[`generate_stealth_meta_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_meta_address.html) trả về ba trường:
+[`generate_stealth_meta_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_meta_address.html) trả về ba trường:
 
 - Địa chỉ meta (*K<sub>pub</sub>* và *V<sub>pub</sub>*)
 - Khóa riêng tư để xem (*V<sub>priv</sub>*)
@@ -260,7 +260,7 @@ Nếu số lượng byte không chính xác, đó là một sự thất bại, v
     let array: [u8; N] = vec.try_into().ok()?;
 ```
 
-Rust có hai loại mảng. [Mảng](https://doc.rust-lang.org/std/primitive.array.html) có kích thước cố định. [Vector](https://doc.rust-lang.org/std/vec/index.html) có thể tăng và giảm kích thước. `hex::decode` trả về một vector, nhưng thư viện `eth_stealth_addresses` muốn nhận các mảng. [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods) chuyển đổi một giá trị thành một loại khác, ví dụ, một vector thành một mảng.
+Rust có hai loại mảng. [Mảng](https://doc.rust-lang.org/std/primitive.array.html) có kích thước cố định. [Vector](https://doc.rust-lang.org/std/vec/index.html) có thể tăng và giảm kích thước. `hex::decode` trả về một vector, nhưng thư viện `qau_stealth_addresses` muốn nhận các mảng. [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods) chuyển đổi một giá trị thành một loại khác, ví dụ, một vector thành một mảng.
 
 ```rust
     Some(array)
@@ -283,7 +283,7 @@ Giá trị quét là một phần của bí mật chung (*S = GR<sub>priv</sub>V
         generate_stealth_address(&str_to_array::<66>(stealth_address)?);
 ```
 
-Chúng ta sử dụng [`generate_stealth_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_address.html) của thư viện.
+Chúng ta sử dụng [`generate_stealth_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_address.html) của thư viện.
 
 ```rust
     format!("{{\"address\":\"{}\",\"rPub\":\"{}\",\"scan\":\"{}\"}}",
@@ -310,7 +310,7 @@ pub fn wasm_compute_stealth_key(
 }
 ```
 
-Hàm này sử dụng [`compute_stealth_key`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.compute_stealth_key.html) của thư viện để tính toán khóa riêng tư nhằm rút tiền từ địa chỉ (*R<sub>priv</sub>*). Tính toán này yêu cầu các giá trị sau:
+Hàm này sử dụng [`compute_stealth_key`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.compute_stealth_key.html) của thư viện để tính toán khóa riêng tư nhằm rút tiền từ địa chỉ (*R<sub>priv</sub>*). Tính toán này yêu cầu các giá trị sau:
 
 - Địa chỉ (*Address=f(P<sub>pub</sub>)*)
 - Khóa công khai do Bill tạo (*R<sub>pub</sub>*)
@@ -341,7 +341,7 @@ assertion `left == right` failed
 Theo sau là một dấu vết ngăn xếp (stack trace). Sau đó, cung cấp cho Bill địa chỉ meta hợp lệ, và cung cấp cho Alice một địa chỉ không hợp lệ hoặc một khóa công khai không hợp lệ. Bạn sẽ thấy lỗi này:
 
 ```
-rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/eth-stealth-addresses-0.1.0/src/lib.rs:78:9:
+rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/qau-stealth-addresses-0.1.0/src/lib.rs:78:9:
 keys do not generate stealth address
 ```
 

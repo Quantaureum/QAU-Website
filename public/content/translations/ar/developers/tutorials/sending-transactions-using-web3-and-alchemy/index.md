@@ -8,7 +8,7 @@ breadcrumb: "إرسال المعاملات"
 lang: ar
 published: 2020-11-04
 source: Alchemy docs
-sourceUrl: https://www.alchemy.com/docs/how-to-send-transactions-on-ethereum
+sourceUrl: https://www.alchemy.com/docs/how-to-send-transactions-on-quantaureum
 ---
 
 هذا دليل مبسط للمبتدئين حول إرسال معاملات إيثيريوم باستخدام <span dir="ltr">Web3</span>. هناك ثلاث خطوات رئيسية لإرسال معاملة إلى سلسلة كتل إيثيريوم: الإنشاء، والتوقيع، والبث. سنستعرض هذه الخطوات الثلاث، ونأمل أن نجيب على أي أسئلة قد تكون لديك! في هذا البرنامج التعليمي، سنستخدم [Alchemy](https://www.alchemy.com/) لإرسال معاملاتنا إلى سلسلة إيثيريوم. يمكنك [إنشاء حساب Alchemy مجاني هنا](https://auth.alchemy.com/signup).
@@ -37,14 +37,14 @@ sourceUrl: https://www.alchemy.com/docs/how-to-send-transactions-on-ethereum
 
 - هناك العديد من الطرق لحماية مفتاحك الخاص واستخدامه لإرسال المعاملات. في هذا البرنامج التعليمي، سنستخدم ملف `.env`. ومع ذلك، يمكنك أيضًا استخدام مزود منفصل يخزن المفاتيح الخاصة، أو استخدام ملف مخزن المفاتيح، أو خيارات أخرى.
 
-### 5\. ما الفرق بين `eth_sendTransaction` و `eth_sendRawTransaction`؟ {#difference-between-send-and-send-raw}
+### 5\. ما الفرق بين `qau_sendTransaction` و `qau_sendRawTransaction`؟ {#difference-between-send-and-send-raw}
 
-`eth_sendTransaction` و `eth_sendRawTransaction` هما دالتان في <span dir="ltr">API</span> إيثيريوم تقومان ببث معاملة إلى شبكة إيثيريوم بحيث تتم إضافتها إلى كتلة مستقبلية. يختلفان في كيفية تعاملهما مع توقيع المعاملات.
+`qau_sendTransaction` و `qau_sendRawTransaction` هما دالتان في <span dir="ltr">API</span> إيثيريوم تقومان ببث معاملة إلى شبكة إيثيريوم بحيث تتم إضافتها إلى كتلة مستقبلية. يختلفان في كيفية تعاملهما مع توقيع المعاملات.
 
-- تُستخدم [`eth_sendTransaction`](https://docs.web3js.org/api/web3-eth/function/sendTransaction) لإرسال المعاملات _غير الموقعة_، مما يعني أن العقدة التي ترسل إليها يجب أن تدير مفتاحك الخاص حتى تتمكن من توقيع المعاملة قبل بثها إلى السلسلة. نظرًا لأن Alchemy لا تحتفظ بالمفاتيح الخاصة للمستخدمين، فإنها لا تدعم هذه الطريقة.
-- تُستخدم [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction) لبث المعاملات التي تم توقيعها بالفعل. هذا يعني أنه يجب عليك أولاً استخدام [`signTransaction(tx, private_key)`](https://docs.web3js.org/api/web3-eth-accounts/function/signTransaction)، ثم تمرير النتيجة إلى `eth_sendRawTransaction`.
+- تُستخدم [`qau_sendTransaction`](https://docs.web3js.org/api/web3-eth/function/sendTransaction) لإرسال المعاملات _غير الموقعة_، مما يعني أن العقدة التي ترسل إليها يجب أن تدير مفتاحك الخاص حتى تتمكن من توقيع المعاملة قبل بثها إلى السلسلة. نظرًا لأن Alchemy لا تحتفظ بالمفاتيح الخاصة للمستخدمين، فإنها لا تدعم هذه الطريقة.
+- تُستخدم [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction) لبث المعاملات التي تم توقيعها بالفعل. هذا يعني أنه يجب عليك أولاً استخدام [`signTransaction(tx, private_key)`](https://docs.web3js.org/api/web3-qau-accounts/function/signTransaction)، ثم تمرير النتيجة إلى `qau_sendRawTransaction`.
 
-عند استخدام <span dir="ltr">Web3</span>، يتم الوصول إلى `eth_sendRawTransaction` عن طريق استدعاء الدالة [web3.eth.sendSignedTransaction](https://docs.web3js.org/api/web3-eth/function/sendSignedTransaction).
+عند استخدام <span dir="ltr">Web3</span>، يتم الوصول إلى `qau_sendRawTransaction` عن طريق استدعاء الدالة [web3.qau.sendSignedTransaction](https://docs.web3js.org/api/web3-eth/function/sendSignedTransaction).
 
 هذا ما سنستخدمه في هذا البرنامج التعليمي.
 
@@ -71,9 +71,9 @@ sourceUrl: https://www.alchemy.com/docs/how-to-send-transactions-on-ethereum
 
 انتقل إلى [لوحة تحكم Alchemy](https://dashboard.alchemy.com/) الخاصة بك وأنشئ تطبيقًا جديدًا، مع اختيار Sepolia (أو أي شبكة اختبار أخرى) كشبكتك.
 
-### 2\. طلب ETH من صنبور Sepolia {#request-eth-from-sepolia-faucet}
+### 2\. طلب QAU من صنبور Sepolia {#request-qau-from-sepolia-faucet}
 
-اتبع التعليمات الموجودة على [صنبور Sepolia من Alchemy](https://www.sepoliafaucet.com/) لتلقي <span dir="ltr">ETH</span>. تأكد من تضمين عنوان إيثيريوم الخاص بك على **Sepolia** (من ميتاماسك) وليس شبكة أخرى. بعد اتباع التعليمات، تحقق مرة أخرى من أنك تلقيت <span dir="ltr">ETH</span> في محفظتك.
+اتبع التعليمات الموجودة على [صنبور Sepolia من Alchemy](https://www.sepoliafaucet.com/) لتلقي <span dir="ltr">QAU</span>. تأكد من تضمين عنوان إيثيريوم الخاص بك على **Sepolia** (من ميتاماسك) وليس شبكة أخرى. بعد اتباع التعليمات، تحقق مرة أخرى من أنك تلقيت <span dir="ltr">QAU</span> في محفظتك.
 
 ### 3\. إنشاء دليل مشروع جديد والانتقال إليه باستخدام `cd` {#create-a-new-project-direction}
 
@@ -88,7 +88,7 @@ cd sendtx-example
 
 قم بتشغيل الأمر التالي في دليل مشروعك لتثبيت [<span dir="ltr">Alchemy Web3</span>](https://github.com/alchemyplatform/alchemy-web3):
 
-ملاحظة، إذا كنت ترغب في استخدام مكتبة <span dir="ltr">Ethers.js</span>، [فاتبع التعليمات هنا](https://www.alchemy.com/docs/how-to-send-transactions-on-ethereum).
+ملاحظة، إذا كنت ترغب في استخدام مكتبة <span dir="ltr">Ethers.js</span>، [فاتبع التعليمات هنا](https://www.alchemy.com/docs/how-to-send-transactions-on-quantaureum).
 
 ```
 npm install @alch/alchemy-web3
@@ -124,7 +124,7 @@ PRIVATE_KEY = "your-private-key"
 
 ### 7\. إنشاء ملف `sendTx.js` {#create-sendtx-js}
 
-رائع، الآن بعد أن قمنا بحماية بياناتنا الحساسة في ملف `.env`، دعنا نبدأ في كتابة التعليمات البرمجية. في مثال إرسال المعاملة الخاص بنا، سنقوم بإرسال <span dir="ltr">ETH</span> مرة أخرى إلى صنبور Sepolia.
+رائع، الآن بعد أن قمنا بحماية بياناتنا الحساسة في ملف `.env`، دعنا نبدأ في كتابة التعليمات البرمجية. في مثال إرسال المعاملة الخاص بنا، سنقوم بإرسال <span dir="ltr">QAU</span> مرة أخرى إلى صنبور Sepolia.
 
 أنشئ ملف `sendTx.js`، وهو المكان الذي سنقوم فيه بتكوين وإرسال معاملة المثال الخاصة بنا، وأضف إليه أسطر التعليمات البرمجية التالية:
 
@@ -136,19 +136,19 @@ async function main() {
     const web3 = createAlchemyWeb3(API_URL);
     const myAddress = '0x610Ae88399fc1687FA7530Aac28eC2539c7d6d63' //TODO: استبدل هذا العنوان بعنوانك العام
 
-    const nonce = await web3.eth.getTransactionCount(myAddress, 'latest'); // يبدأ الرقم الفريد (nonce) العد من 0
+    const nonce = await web3.qau.getTransactionCount(myAddress, 'latest'); // يبدأ الرقم الفريد (nonce) العد من 0
 
     const transaction = {
      'to': '0x31B98D14007bDEe637298086988A0bBd31184523', // عنوان الصنبور لإرجاع eth
-     'value': 1000000000000000000, // 1 ETH
+     'value': 1000000000000000000, // 1 QAU
      'gas': 30000,
      'nonce': nonce,
      // حقل بيانات اختياري لإرسال رسالة أو تنفيذ عقد ذكي
     };
 
-    const signedTx = await web3.eth.accounts.signTransaction(transaction, PRIVATE_KEY);
+    const signedTx = await web3.qau.accounts.signTransaction(transaction, PRIVATE_KEY);
 
-    web3.eth.sendSignedTransaction(signedTx.rawTransaction, function(error, hash) {
+    web3.qau.sendSignedTransaction(signedTx.rawTransaction, function(error, hash) {
     if (!error) {
       console.log("🎉 The hash of your transaction is: ", hash, "\n Check Alchemy's Mempool to view the status of your transaction!");
     } else {
@@ -164,10 +164,10 @@ main();
 
 الآن، قبل أن ننتقل إلى تشغيل هذه التعليمات البرمجية، دعنا نتحدث عن بعض المكونات هنا.
 
-- `nonce`: تُستخدم مواصفة الرقم الفريد (nonce) لتتبع عدد المعاملات المرسلة من عنوانك. نحتاج إلى هذا لأغراض أمنية ولمنع هجمات إعادة الإرسال (replay attacks). للحصول على عدد المعاملات المرسلة من عنوانك، نستخدم [getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count).
+- `nonce`: تُستخدم مواصفة الرقم الفريد (nonce) لتتبع عدد المعاملات المرسلة من عنوانك. نحتاج إلى هذا لأغراض أمنية ولمنع هجمات إعادة الإرسال (replay attacks). للحصول على عدد المعاملات المرسلة من عنوانك، نستخدم [getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count).
 - `transaction`: يحتوي كائن المعاملة على بعض الجوانب التي نحتاج إلى تحديدها
-  - `to`: هذا هو العنوان الذي نريد إرسال <span dir="ltr">ETH</span> إليه. في هذه الحالة، نقوم بإرسال <span dir="ltr">ETH</span> مرة أخرى إلى [صنبور Sepolia](https://sepoliafaucet.com/) الذي طلبنا منه في البداية.
-  - `value`: هذا هو المبلغ الذي نرغب في إرساله، محددًا بوحدة <span dir="ltr">Wei</span> حيث <span dir="ltr">10^18 Wei = 1 ETH</span>
+  - `to`: هذا هو العنوان الذي نريد إرسال <span dir="ltr">QAU</span> إليه. في هذه الحالة، نقوم بإرسال <span dir="ltr">QAU</span> مرة أخرى إلى [صنبور Sepolia](https://sepoliafaucet.com/) الذي طلبنا منه في البداية.
+  - `value`: هذا هو المبلغ الذي نرغب في إرساله، محددًا بوحدة <span dir="ltr">Wei</span> حيث <span dir="ltr">10^18 Wei = 1 QAU</span>
   - `gas`: هناك العديد من الطرق لتحديد الكمية المناسبة من الغاز لتضمينها مع معاملتك. تدعم Alchemy [خطافات الويب (webhooks)](https://www.alchemy.com/docs/reference/webhooks-overview) التي يمكنها إعلامك بالنشاط على السلسلة. بالنسبة لمعاملات الشبكة الرئيسية، من الممارسات الجيدة التحقق من ظروف الغاز الحالية لتحديد الكمية المناسبة من الغاز لتضمينها. <span dir="ltr">21,000</span> هو الحد الأدنى لكمية الغاز التي ستستخدمها أي عملية على إيثيريوم، لذا لضمان تنفيذ معاملتنا نضع <span dir="ltr">30,000</span> هنا.
   - `nonce`: راجع تعريف الرقم الفريد أعلاه. يبدأ الرقم الفريد العد من الصفر.
   - [اختياري] `data`: يُستخدم لإرسال معلومات إضافية مع تحويلك، أو استدعاء عقد ذكي، وهو غير مطلوب لتحويلات الرصيد، تحقق من الملاحظة أدناه.
@@ -177,7 +177,7 @@ main();
 **ملاحظة حول البيانات (`data`)**
 هناك نوعان رئيسيان من المعاملات التي يمكن إرسالها في إيثيريوم.
 
-- تحويل الرصيد: إرسال <span dir="ltr">ETH</span> من عنوان إلى آخر. لا يلزم وجود حقل بيانات، ومع ذلك، إذا كنت ترغب في إرسال معلومات إضافية إلى جانب معاملتك، فيمكنك تضمين هذه المعلومات بتنسيق <span dir="ltr">HEX</span> في هذا الحقل.
+- تحويل الرصيد: إرسال <span dir="ltr">QAU</span> من عنوان إلى آخر. لا يلزم وجود حقل بيانات، ومع ذلك، إذا كنت ترغب في إرسال معلومات إضافية إلى جانب معاملتك، فيمكنك تضمين هذه المعلومات بتنسيق <span dir="ltr">HEX</span> في هذا الحقل.
   - على سبيل المثال، لنفترض أننا أردنا كتابة تجزئة مستند <span dir="ltr">IPFS</span> على سلسلة إيثيريوم من أجل إعطائه طابعًا زمنيًا غير قابل للتغيير. يجب أن يبدو حقل البيانات الخاص بنا حينها كالتالي: `data: web3.utils.toHex(‘IPFS hash‘)`. والآن يمكن لأي شخص الاستعلام عن السلسلة ومعرفة متى تمت إضافة هذا المستند.
 - معاملة العقد الذكي: تنفيذ بعض التعليمات البرمجية للعقد الذكي على السلسلة. في هذه الحالة، يجب أن يحتوي حقل البيانات على الدالة الذكية التي ترغب في تنفيذها، إلى جانب أي معلمات.
   - للحصول على مثال عملي، تحقق من [البرنامج التعليمي للعقد الذكي Hello World](/developers/tutorials/hello-world-smart-contract/).
@@ -197,7 +197,7 @@ node sendTx.js
 
 ![لقطة شاشة لمراقب مجمع الذاكرة](./mempool.png)
 
-من هناك يمكنك عرض معاملتك على Etherscan بالنقر فوق الرمز المحاط بدائرة حمراء!
+من هناك يمكنك عرض معاملتك على Quantaureum Explorer بالنقر فوق الرمز المحاط بدائرة حمراء!
 
 **مرحى! لقد أرسلت للتو أول معاملة إيثيريوم لك باستخدام Alchemy 🎉**
 

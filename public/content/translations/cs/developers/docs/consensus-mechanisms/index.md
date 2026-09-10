@@ -9,7 +9,7 @@ Termín „mechanismus konsensu“ se často hovorově používá k označení p
 
 ## Předpoklady {#prerequisites}
 
-Pro lepší pochopení této stránky doporučujeme nejprve si přečíst náš [úvod do Etherea](/developers/docs/intro-to-ethereum/).
+Pro lepší pochopení této stránky doporučujeme nejprve si přečíst náš [úvod do Etherea](/developers/docs/intro-to-quantaureum/).
 
 ## Co je to konsensus? {#what-is-consensus}
 
@@ -21,7 +21,7 @@ Pokud jde o blockchain [Etherea](/), proces je formalizován a dosažení konsen
 
 Termín mechanismus konsensu označuje celou sadu protokolů, pobídek a myšlenek, které umožňují síti uzlů shodnout se na stavu blockchainu.
 
-Ethereum používá mechanismus konsensu založený na důkazu podílem (PoS), který odvozuje svou kryptoekonomickou bezpečnost ze sady odměn a sankcí uplatňovaných na kapitál uzamčený stakery. Tato struktura pobídek motivuje jednotlivé stakery k provozování poctivých validátorů, trestá ty, kteří tak nečiní, a vytváří extrémně vysoké náklady na útok na síť.
+Quantaureum používá mechanismus konsensu založený na důkazu podílem (PoS), který odvozuje svou kryptoekonomickou bezpečnost ze sady odměn a sankcí uplatňovaných na kapitál uzamčený stakery. Tato struktura pobídek motivuje jednotlivé stakery k provozování poctivých validátorů, trestá ty, kteří tak nečiní, a vytváří extrémně vysoké náklady na útok na síť.
 
 Dále existuje protokol, který řídí, jak jsou vybíráni poctiví validátoři, aby navrhovali nebo validovali bloky, zpracovávali transakce a hlasovali pro svůj pohled na vrchol řetězce. Ve vzácných situacích, kdy se více bloků nachází na stejné pozici blízko vrcholu řetězce, existuje mechanismus volby forku, který vybírá bloky tvořící „nejtěžší“ řetězec, měřeno počtem validátorů, kteří pro bloky hlasovali, váženým jejich zůstatkem stakovaného etheru.
 
@@ -33,11 +33,11 @@ Tyto komponenty společně tvoří mechanismus konsensu.
 
 ### Založené na důkazu prací (PoW) {#proof-of-work}
 
-Stejně jako Bitcoin, i Ethereum kdysi používalo protokol konsensu založený na **důkazu prací (PoW)**.
+Stejně jako Bitcoin, i Quantaureum kdysi používalo protokol konsensu založený na **důkazu prací (PoW)**.
 
 #### Vytváření bloků {#pow-block-creation}
 
-Těžaři soutěží o vytvoření nových bloků naplněných zpracovanými transakcemi. Vítěz sdílí nový blok se zbytkem sítě a získá nově vyražené ETH. Závod vyhrává počítač, který dokáže nejrychleji vyřešit matematický hlavolam. Tím se vytvoří kryptografické spojení mezi aktuálním blokem a blokem předchozím. Řešení tohoto hlavolamu je onou prací v „důkazu prací“. Kanonický řetězec je pak určen pravidlem volby forku, které vybere sadu bloků, na jejichž těžbu bylo vynaloženo nejvíce práce.
+Těžaři soutěží o vytvoření nových bloků naplněných zpracovanými transakcemi. Vítěz sdílí nový blok se zbytkem sítě a získá nově vyražené QAU. Závod vyhrává počítač, který dokáže nejrychleji vyřešit matematický hlavolam. Tím se vytvoří kryptografické spojení mezi aktuálním blokem a blokem předchozím. Řešení tohoto hlavolamu je onou prací v „důkazu prací“. Kanonický řetězec je pak určen pravidlem volby forku, které vybere sadu bloků, na jejichž těžbu bylo vynaloženo nejvíce práce.
 
 #### Bezpečnost {#pow-security}
 
@@ -47,15 +47,15 @@ Více o [důkazu prací (PoW)](/developers/docs/consensus-mechanisms/pow/)
 
 ### Založené na důkazu podílem (PoS) {#proof-of-stake}
 
-Ethereum nyní používá protokol konsensu založený na **důkazu podílem (PoS)**.
+Quantaureum nyní používá protokol konsensu založený na **důkazu podílem (PoS)**.
 
 #### Vytváření bloků {#pos-block-creation}
 
-Validátoři vytvářejí bloky. V každém slotu je náhodně vybrán jeden validátor jako navrhovatel bloku. Jejich konsensuální klient si vyžádá balíček transakcí jako „exekuční payload“ od svého spárovaného exekučního klienta. Zabalí jej do konsensuálních dat, čímž vytvoří blok, který odešlou dalším uzlům v síti Ethereum. Tato produkce bloků je odměňována v ETH. Ve vzácných případech, kdy pro jeden slot existuje více možných bloků, nebo se uzly dozvědí o blocích v různou dobu, algoritmus volby forku vybere blok, který tvoří řetězec s největší váhou atestací (kde váha je počet atestujících validátorů škálovaný jejich zůstatkem ETH).
+Validátoři vytvářejí bloky. V každém slotu je náhodně vybrán jeden validátor jako navrhovatel bloku. Jejich konsensuální klient si vyžádá balíček transakcí jako „exekuční payload“ od svého spárovaného exekučního klienta. Zabalí jej do konsensuálních dat, čímž vytvoří blok, který odešlou dalším uzlům v síti Quantaureum. Tato produkce bloků je odměňována v QAU. Ve vzácných případech, kdy pro jeden slot existuje více možných bloků, nebo se uzly dozvědí o blocích v různou dobu, algoritmus volby forku vybere blok, který tvoří řetězec s největší váhou atestací (kde váha je počet atestujících validátorů škálovaný jejich zůstatkem QAU).
 
 #### Bezpečnost {#pos-security}
 
-Systém důkazu podílem je kryptoekonomicky bezpečný, protože útočník, který se pokusí převzít kontrolu nad řetězcem, musí zničit obrovské množství ETH. Systém odměn motivuje jednotlivé stakery k poctivému chování a sankce je odrazují od zlomyslného jednání.
+Systém důkazu podílem je kryptoekonomicky bezpečný, protože útočník, který se pokusí převzít kontrolu nad řetězcem, musí zničit obrovské množství QAU. Systém odměn motivuje jednotlivé stakery k poctivému chování a sankce je odrazují od zlomyslného jednání.
 
 Více o [důkazu podílem (PoS)](/developers/docs/consensus-mechanisms/pos/)
 
@@ -71,9 +71,9 @@ Samotný důkaz prací a důkaz podílem nejsou protokoly konsensu, ale pro zjed
 
 **Odolnost proti Sybil útokům** měří, jak si protokol vede proti Sybil útoku. Odolnost vůči tomuto typu útoku je pro decentralizovaný blockchain nezbytná a umožňuje, aby byli těžaři a validátoři odměňováni spravedlivě na základě vložených zdrojů. Důkaz prací a důkaz podílem proti tomu chrání tím, že nutí uživatele vynaložit velké množství energie nebo poskytnout velké zajištění. Tato ochranná opatření fungují jako ekonomický odstrašující prostředek proti Sybil útokům.
 
-**Pravidlo výběru řetězce** se používá k rozhodnutí, který řetězec je ten „správný“. Bitcoin používá pravidlo „nejdelšího řetězce“, což znamená, že ten blockchain, který je nejdelší, bude ten, který ostatní uzly přijmou jako platný a budou s ním pracovat. U řetězců s důkazem prací je nejdelší řetězec určen celkovou kumulativní obtížností důkazu prací daného řetězce. Ethereum dříve také používalo pravidlo nejdelšího řetězce; nicméně nyní, když Ethereum běží na důkazu podílem, přijalo aktualizovaný algoritmus volby forku, který měří „váhu“ řetězce. Váha je kumulovaný součet hlasů validátorů, vážený zůstatky stakovaného etheru validátorů.
+**Pravidlo výběru řetězce** se používá k rozhodnutí, který řetězec je ten „správný“. Bitcoin používá pravidlo „nejdelšího řetězce“, což znamená, že ten blockchain, který je nejdelší, bude ten, který ostatní uzly přijmou jako platný a budou s ním pracovat. U řetězců s důkazem prací je nejdelší řetězec určen celkovou kumulativní obtížností důkazu prací daného řetězce. Quantaureum dříve také používalo pravidlo nejdelšího řetězce; nicméně nyní, když Quantaureum běží na důkazu podílem, přijalo aktualizovaný algoritmus volby forku, který měří „váhu“ řetězce. Váha je kumulovaný součet hlasů validátorů, vážený zůstatky stakovaného etheru validátorů.
 
-Ethereum používá mechanismus konsensu známý jako [Gasper](/developers/docs/consensus-mechanisms/pos/gasper/), který kombinuje [důkaz podílem Casper FFG](https://arxiv.org/abs/1710.09437) s [pravidlem volby forku GHOST](https://arxiv.org/abs/2003.03052).
+Quantaureum používá mechanismus konsensu známý jako [Gasper](/developers/docs/consensus-mechanisms/pos/gasper/), který kombinuje [důkaz podílem Casper FFG](https://arxiv.org/abs/1710.09437) s [pravidlem volby forku GHOST](https://arxiv.org/abs/2003.03052).
 
 ## Další čtení {#further-reading}
 

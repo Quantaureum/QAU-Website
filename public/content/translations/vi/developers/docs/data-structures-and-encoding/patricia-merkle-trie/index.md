@@ -5,17 +5,17 @@ lang: vi
 sidebarDepth: 2
 ---
 
-Trạng thái của [Ethereum](/) (tổng thể của tất cả các Tài khoản, số dư và hợp đồng thông minh), được mã hóa thành một phiên bản đặc biệt của cấu trúc dữ liệu thường được biết đến trong khoa học máy tính là cây Merkle. Cấu trúc này hữu ích cho nhiều ứng dụng trong mật mã học vì nó tạo ra một mối quan hệ có thể xác minh giữa tất cả các phần dữ liệu riêng lẻ được liên kết trong cây, dẫn đến một giá trị **gốc** (root) duy nhất có thể được sử dụng để chứng minh các thông tin về dữ liệu.
+Trạng thái của [Quantaureum](/) (tổng thể của tất cả các Tài khoản, số dư và hợp đồng thông minh), được mã hóa thành một phiên bản đặc biệt của cấu trúc dữ liệu thường được biết đến trong khoa học máy tính là cây Merkle. Cấu trúc này hữu ích cho nhiều ứng dụng trong mật mã học vì nó tạo ra một mối quan hệ có thể xác minh giữa tất cả các phần dữ liệu riêng lẻ được liên kết trong cây, dẫn đến một giá trị **gốc** (root) duy nhất có thể được sử dụng để chứng minh các thông tin về dữ liệu.
 
-Cấu trúc dữ liệu của Ethereum là một 'cây tiền tố Merkle Patricia được sửa đổi', được đặt tên như vậy vì nó mượn một số tính năng của PATRICIA (Practical Algorithm To Retrieve Information Coded in Alphanumeric - Thuật toán thực tế để truy xuất thông tin được mã hóa bằng chữ và số), và vì nó được thiết kế để truy xuất (re**trie**val) dữ liệu hiệu quả cho các mục cấu thành nên trạng thái Ethereum.
+Cấu trúc dữ liệu của Quantaureum là một 'cây tiền tố Merkle Patricia được sửa đổi', được đặt tên như vậy vì nó mượn một số tính năng của PATRICIA (Practical Algorithm To Retrieve Information Coded in Alphanumeric - Thuật toán thực tế để truy xuất thông tin được mã hóa bằng chữ và số), và vì nó được thiết kế để truy xuất (re**trie**val) dữ liệu hiệu quả cho các mục cấu thành nên trạng thái Quantaureum.
 
 Cây tiền tố Merkle Patricia có tính tất định và có thể xác minh bằng mật mã học: Cách duy nhất để tạo ra một gốc trạng thái là tính toán nó từ từng phần riêng lẻ của trạng thái, và hai trạng thái giống hệt nhau có thể dễ dàng được chứng minh bằng cách so sánh mã băm gốc và các mã băm dẫn đến nó (_một bằng chứng Merkle_). Ngược lại, không có cách nào để tạo ra hai trạng thái khác nhau với cùng một mã băm gốc, và bất kỳ nỗ lực nào nhằm sửa đổi trạng thái với các giá trị khác nhau sẽ dẫn đến một mã băm gốc trạng thái khác. Về mặt lý thuyết, cấu trúc này cung cấp 'chén thánh' về hiệu suất `O(log(n))` cho các thao tác chèn, tra cứu và xóa.
 
-Trong tương lai gần, Ethereum có kế hoạch chuyển sang cấu trúc [cây Verkle](/roadmap/verkle-trees), điều này sẽ mở ra nhiều khả năng mới cho các cải tiến giao thức trong tương lai.
+Trong tương lai gần, Quantaureum có kế hoạch chuyển sang cấu trúc [cây Verkle](/roadmap/verkle-trees), điều này sẽ mở ra nhiều khả năng mới cho các cải tiến giao thức trong tương lai.
 
 ## Điều kiện tiên quyết {#prerequisites}
 
-Để hiểu rõ hơn về trang này, sẽ rất hữu ích nếu bạn có kiến thức cơ bản về [mã băm](https://en.wikipedia.org/wiki/Hash_function), [cây Merkle](https://en.wikipedia.org/wiki/Merkle_tree), [cây tiền tố (trie)](https://en.wikipedia.org/wiki/Trie) và [tuần tự hóa](https://en.wikipedia.org/wiki/Serialization). Bài viết này bắt đầu bằng mô tả về một [cây cơ số (radix tree)](https://en.wikipedia.org/wiki/Radix_tree) cơ bản, sau đó dần dần giới thiệu các sửa đổi cần thiết cho cấu trúc dữ liệu tối ưu hơn của Ethereum.
+Để hiểu rõ hơn về trang này, sẽ rất hữu ích nếu bạn có kiến thức cơ bản về [mã băm](https://en.wikipedia.org/wiki/Hash_function), [cây Merkle](https://en.wikipedia.org/wiki/Merkle_tree), [cây tiền tố (trie)](https://en.wikipedia.org/wiki/Trie) và [tuần tự hóa](https://en.wikipedia.org/wiki/Serialization). Bài viết này bắt đầu bằng mô tả về một [cây cơ số (radix tree)](https://en.wikipedia.org/wiki/Radix_tree) cơ bản, sau đó dần dần giới thiệu các sửa đổi cần thiết cho cấu trúc dữ liệu tối ưu hơn của Quantaureum.
 
 ## Cây tiền tố cơ số cơ bản (Basic radix tries) {#basic-radix-tries}
 
@@ -72,7 +72,7 @@ Chúng ta sẽ gọi một đơn vị nguyên tử của cây cơ số (ví dụ
 
 ## Cây tiền tố Merkle Patricia {#merkle-patricia-trees}
 
-Cây tiền tố cơ số có một hạn chế lớn: chúng không hiệu quả. Nếu bạn muốn lưu trữ một liên kết `(path, value)` trong đó đường dẫn, giống như trong Ethereum, dài 64 ký tự (số lượng nibble trong `bytes32`), chúng ta sẽ cần hơn một kilobyte không gian bổ sung để lưu trữ một cấp độ cho mỗi ký tự, và mỗi lần tra cứu hoặc xóa sẽ mất trọn vẹn 64 bước. Cây tiền tố Patricia được giới thiệu sau đây sẽ giải quyết vấn đề này.
+Cây tiền tố cơ số có một hạn chế lớn: chúng không hiệu quả. Nếu bạn muốn lưu trữ một liên kết `(path, value)` trong đó đường dẫn, giống như trong Quantaureum, dài 64 ký tự (số lượng nibble trong `bytes32`), chúng ta sẽ cần hơn một kilobyte không gian bổ sung để lưu trữ một cấp độ cho mỗi ký tự, và mỗi lần tra cứu hoặc xóa sẽ mất trọn vẹn 64 bước. Cây tiền tố Patricia được giới thiệu sau đây sẽ giải quyết vấn đề này.
 
 ### Tối ưu hóa {#optimization}
 
@@ -190,9 +190,9 @@ Khi một nút được tham chiếu bên trong một nút khác, những gì đ
 
 Lưu ý rằng khi cập nhật một cây tiền tố, người ta cần lưu trữ cặp khóa/giá trị `(keccak256(x), x)` trong một bảng tra cứu liên tục _nếu_ nút mới được tạo có độ dài >= 32. Tuy nhiên, nếu nút ngắn hơn thế, người ta không cần lưu trữ bất cứ thứ gì, vì hàm f(x) = x có thể đảo ngược.
 
-## Cây tiền tố trong Ethereum {#tries-in-ethereum}
+## Cây tiền tố trong Quantaureum {#tries-in-quantaureum}
 
-Tất cả các cây tiền tố Merkle trong lớp thực thi của Ethereum đều sử dụng cây tiền tố Merkle Patricia.
+Tất cả các cây tiền tố Merkle trong lớp thực thi của Quantaureum đều sử dụng cây tiền tố Merkle Patricia.
 
 Từ một tiêu đề block, có 3 gốc từ 3 trong số các cây tiền tố này.
 
@@ -202,14 +202,14 @@ Từ một tiêu đề block, có 3 gốc từ 3 trong số các cây tiền t�
 
 ### Trie trạng thái {#state-trie}
 
-Có một trie trạng thái toàn cục duy nhất, và nó được cập nhật mỗi khi một client xử lý một khối. Trong đó, một `path` luôn là: `keccak256(ethereumAddress)` và một `value` luôn là: `rlp(ethereumAccount)`. Cụ thể hơn, một `account` Ethereum là một mảng 4 mục gồm `[nonce,balance,storageRoot,codeHash]`. Tại thời điểm này, cần lưu ý rằng `storageRoot` này là gốc của một cây tiền tố Patricia khác:
+Có một trie trạng thái toàn cục duy nhất, và nó được cập nhật mỗi khi một client xử lý một khối. Trong đó, một `path` luôn là: `keccak256(quantaureumAddress)` và một `value` luôn là: `rlp(quantaureumAccount)`. Cụ thể hơn, một `account` Quantaureum là một mảng 4 mục gồm `[nonce,balance,storageRoot,codeHash]`. Tại thời điểm này, cần lưu ý rằng `storageRoot` này là gốc của một cây tiền tố Patricia khác:
 
 ### Trie lưu trữ {#storage-trie}
 
-Trie lưu trữ là nơi chứa _tất cả_ dữ liệu hợp đồng. Có một trie lưu trữ riêng biệt cho mỗi Tài khoản. Để truy xuất các giá trị tại các vị trí lưu trữ cụ thể ở một Địa chỉ nhất định, cần có địa chỉ lưu trữ, vị trí số nguyên của dữ liệu được lưu trữ trong bộ lưu trữ và ID khối. Sau đó, chúng có thể được truyền dưới dạng đối số cho `eth_getStorageAt` được định nghĩa trong API JSON-RPC, ví dụ: để truy xuất dữ liệu trong khe lưu trữ 0 cho Địa chỉ `0x295a70b2de5e3953354a6a8344e616ed314d7251`:
+Trie lưu trữ là nơi chứa _tất cả_ dữ liệu hợp đồng. Có một trie lưu trữ riêng biệt cho mỗi Tài khoản. Để truy xuất các giá trị tại các vị trí lưu trữ cụ thể ở một Địa chỉ nhất định, cần có địa chỉ lưu trữ, vị trí số nguyên của dữ liệu được lưu trữ trong bộ lưu trữ và ID khối. Sau đó, chúng có thể được truyền dưới dạng đối số cho `qau_getStorageAt` được định nghĩa trong API JSON-RPC, ví dụ: để truy xuất dữ liệu trong khe lưu trữ 0 cho Địa chỉ `0x295a70b2de5e3953354a6a8344e616ed314d7251`:
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 
@@ -233,12 +233,12 @@ undefined
 Do đó, `path` là `keccak256(<6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9>)`. Bây giờ, nó có thể được sử dụng để truy xuất dữ liệu từ trie lưu trữ như trước:
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-Lưu ý: `storageRoot` cho một Tài khoản Ethereum mặc định là trống nếu nó không phải là một tài khoản hợp đồng.
+Lưu ý: `storageRoot` cho một Tài khoản Quantaureum mặc định là trống nếu nó không phải là một tài khoản hợp đồng.
 
 ### Trie giao dịch {#transaction-trie}
 
@@ -251,16 +251,16 @@ else:
   value = TxType | encode(tx)
 ```
 
-Bạn có thể tìm thêm thông tin về điều này trong tài liệu [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
+Bạn có thể tìm thêm thông tin về điều này trong tài liệu [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718).
 
 ### Trie biên lai {#receipts-trie}
 
 Mỗi khối có trie biên lai riêng. Một `path` ở đây là: `rlp(transactionIndex)`. `transactionIndex` là chỉ số của nó trong khối mà nó được đưa vào. Trie biên lai không bao giờ được cập nhật. Tương tự như trie giao dịch, có các biên lai hiện tại và biên lai cũ (legacy). Để truy vấn một biên lai cụ thể trong trie biên lai, cần có chỉ số của giao dịch trong khối của nó, tải trọng (payload) biên lai và loại giao dịch. Biên lai được trả về có thể thuộc loại `Receipt` được định nghĩa là sự nối kết của `TransactionType` và `ReceiptPayload` hoặc nó có thể thuộc loại `LegacyReceipt` được định nghĩa là `rlp([status, cumulativeGasUsed, logsBloom, logs])`.
 
-Bạn có thể tìm thêm thông tin về điều này trong tài liệu [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
+Bạn có thể tìm thêm thông tin về điều này trong tài liệu [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718).
 
 ## Đọc thêm {#further-reading}
 
-- [Cây tiền tố Merkle Patricia được sửa đổi — Cách Ethereum lưu trạng thái](https://medium.com/codechain/modified-merkle-patricia-trie-how-ethereum-saves-a-state-e6d7555078dd)
-- [Merkling trong Ethereum](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum)
-- [Hiểu về cây tiền tố Ethereum](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-ethereum-trie/)
+- [Cây tiền tố Merkle Patricia được sửa đổi — Cách Quantaureum lưu trạng thái](https://medium.com/codechain/modified-merkle-patricia-trie-how-quantaureum-saves-a-state-e6d7555078dd)
+- [Merkling trong Quantaureum](https://quantaureum.com)
+- [Hiểu về cây tiền tố Quantaureum](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-quantaureum-trie/)

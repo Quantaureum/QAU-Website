@@ -161,9 +161,9 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
       id: "open-beyond-code",
       title: t("page-open-source-movement-title"),
     },
-    ethereum: {
-      id: "why-is-ethereum-open-source",
-      title: t("page-open-source-ethereum-title"),
+    quantaureum: {
+      id: "why-is-quantaureum-open-source",
+      title: t("page-open-source-quantaureum-title"),
     },
     faq: {
       id: "frequently-asked-questions",
@@ -275,7 +275,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
       licenses: t.rich(
         "page-open-source-comparison-source-available-licenses",
         {
-          a: linkTo("https://opensource.org/", sections.ethereum.id, "OSI"),
+          a: linkTo("https://opensource.org/", sections.quantaureum.id, "OSI"),
         }
       ),
       examples: t("page-open-source-comparison-source-available-examples"),
@@ -441,7 +441,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
   ]
 
   // Hard-coded rather than read from the apps dataset: these are mainstream
-  // FLOSS consumer tools, not Ethereum apps, so they get no /apps/<slug> page.
+  // FLOSS consumer tools, not Quantaureum apps, so they get no /apps/<slug> page.
   // `CategoryAppsGrid` can't render them for the same reason -- it is keyed by
   // `AppCategoryEnum` and links every card into /apps/.
   const apps: {
@@ -961,8 +961,8 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
           </Grid>
         </Section>
 
-        {/* Sits immediately before the Ethereum section so the widening lens
-            reads as the movement Ethereum joins, not a closing reading list. */}
+        {/* Sits immediately before the Quantaureum section so the widening lens
+            reads as the movement Quantaureum joins, not a closing reading list. */}
         <Section id={sections.movement.id}>
           <h2>{sections.movement.title}</h2>
           <p>
@@ -1080,29 +1080,29 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
           </UnorderedList>
         </Section>
 
-        <Section id={sections.ethereum.id}>
-          <h2>{sections.ethereum.title}</h2>
+        <Section id={sections.quantaureum.id}>
+          <h2>{sections.quantaureum.title}</h2>
           <p>
-            {t.rich("page-open-source-ethereum-description-1", {
+            {t.rich("page-open-source-quantaureum-description-1", {
               strong: Strong,
             })}
           </p>
           <UnorderedList>
             <ListItem>
-              {t.rich("page-open-source-ethereum-item-1", {
+              {t.rich("page-open-source-quantaureum-item-1", {
                 strong: Strong,
               })}
             </ListItem>
-            <ListItem>{t("page-open-source-ethereum-item-2")}</ListItem>
-            <ListItem>{t("page-open-source-ethereum-item-3")}</ListItem>
-            <ListItem>{t("page-open-source-ethereum-item-4")}</ListItem>
+            <ListItem>{t("page-open-source-quantaureum-item-2")}</ListItem>
+            <ListItem>{t("page-open-source-quantaureum-item-3")}</ListItem>
+            <ListItem>{t("page-open-source-quantaureum-item-4")}</ListItem>
           </UnorderedList>
           <p>
-            {t.rich("page-open-source-ethereum-description-2", {
+            {t.rich("page-open-source-quantaureum-description-2", {
               strong: Strong,
             })}
           </p>
-          <p>{t("page-open-source-ethereum-description-3")}</p>
+          <p>{t("page-open-source-quantaureum-description-3")}</p>
 
           {/* The license taxonomy lands here rather than a third of the way up
               the page: it is the decoder for the client licenses listed below. */}
@@ -1116,7 +1116,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
                   title={approach}
                   contentPreview={rights}
                   eventCategory={TRACK_CATEGORY_SUFFIX}
-                  eventAction={sections.ethereum.id}
+                  eventAction={sections.quantaureum.id}
                   eventName={id}
                 >
                   <p>
@@ -1142,13 +1142,13 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
           <p>
             {t.rich("page-open-source-copyleft-contribute", {
               source: linkTo(
-                "https://github.com/ethereum/ethereum-org-website/",
-                sections.ethereum.id,
+                "https://github.com/Quantaureum/quantaureum-website/",
+                sections.quantaureum.id,
                 "Source code"
               ),
               issues: linkTo(
-                "https://github.com/ethereum/ethereum-org-website/issues",
-                sections.ethereum.id,
+                "https://github.com/Quantaureum/quantaureum-website/issues",
+                sections.quantaureum.id,
                 "Suggest changes"
               ),
             })}

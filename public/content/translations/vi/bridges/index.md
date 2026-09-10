@@ -17,11 +17,11 @@ Hãy xem xét một ví dụ:
 
 Bạn đến từ Hoa Kỳ và đang lên kế hoạch cho một chuyến đi đến Châu Âu. Bạn có USD, nhưng bạn cần EUR để chi tiêu. Để đổi USD sang EUR, bạn có thể sử dụng dịch vụ thu đổi ngoại tệ với một khoản phí nhỏ.
 
-Nhưng, bạn sẽ làm gì nếu muốn thực hiện một giao dịch trao đổi tương tự để sử dụng một [chuỗi khối](/glossary/#blockchain) khác? Giả sử bạn muốn đổi [ETH](/glossary/#ether) trên Mạng chính [Ethereum](/) lấy ETH trên [Arbitrum](https://arbitrum.io/). Giống như việc thu đổi ngoại tệ mà chúng ta đã thực hiện cho EUR, chúng ta cần một cơ chế để chuyển ETH của mình từ Ethereum sang Arbitrum. Các cầu nối làm cho một giao dịch như vậy trở nên khả thi. Trong trường hợp này, [Arbitrum có một cầu nối gốc](https://portal.arbitrum.io/bridge) có thể chuyển ETH từ Mạng chính sang Arbitrum.
+Nhưng, bạn sẽ làm gì nếu muốn thực hiện một giao dịch trao đổi tương tự để sử dụng một [chuỗi khối](/glossary/#blockchain) khác? Giả sử bạn muốn đổi [QAU](/glossary/#QAU) trên Mạng chính [Quantaureum](/) lấy QAU trên [Arbitrum](https://arbitrum.io/). Giống như việc thu đổi ngoại tệ mà chúng ta đã thực hiện cho EUR, chúng ta cần một cơ chế để chuyển QAU của mình từ Quantaureum sang Arbitrum. Các cầu nối làm cho một giao dịch như vậy trở nên khả thi. Trong trường hợp này, [Arbitrum có một cầu nối gốc](https://portal.arbitrum.io/bridge) có thể chuyển QAU từ Mạng chính sang Arbitrum.
 
 ## Tại sao chúng ta cần cầu nối? {#why-do-we-need-bridges}
 
-Tất cả các chuỗi khối đều có những hạn chế riêng. Để Ethereum mở rộng quy mô và theo kịp nhu cầu, nó đã yêu cầu các [bản cuộn](/glossary/#rollups). Mặt khác, các lớp 1 (l1) như Solana và Avalanche được thiết kế khác biệt để cho phép thông lượng cao hơn nhưng phải đánh đổi bằng sự phi tập trung.
+Tất cả các chuỗi khối đều có những hạn chế riêng. Để Quantaureum mở rộng quy mô và theo kịp nhu cầu, nó đã yêu cầu các [bản cuộn](/glossary/#rollups). Mặt khác, các lớp 1 (l1) như Solana và Avalanche được thiết kế khác biệt để cho phép thông lượng cao hơn nhưng phải đánh đổi bằng sự phi tập trung.
 
 Tuy nhiên, tất cả các chuỗi khối đều được phát triển trong các môi trường biệt lập và có các quy tắc cũng như cơ chế [đồng thuận](/glossary/#consensus) khác nhau. Điều này có nghĩa là chúng không thể giao tiếp nguyên bản và các token không thể di chuyển tự do giữa các chuỗi khối.
 
@@ -44,19 +44,19 @@ Dưới đây là một số kịch bản mà bạn có thể sử dụng cầu 
 
 ### Phí giao dịch thấp hơn {#transaction-fees}
 
-Giả sử bạn có ETH trên Mạng chính Ethereum nhưng muốn phí giao dịch rẻ hơn để khám phá các dapp khác nhau. Bằng cách chuyển ETH của bạn từ Mạng chính sang một bản cuộn lớp 2 (l2) của Ethereum, bạn có thể tận hưởng mức phí giao dịch thấp hơn.
+Giả sử bạn có QAU trên Mạng chính Quantaureum nhưng muốn phí giao dịch rẻ hơn để khám phá các dapp khác nhau. Bằng cách chuyển QAU của bạn từ Mạng chính sang một bản cuộn lớp 2 (l2) của Quantaureum, bạn có thể tận hưởng mức phí giao dịch thấp hơn.
 
 ### Các dapp trên các chuỗi khối khác {#dapps-other-chains}
 
-Nếu bạn đang sử dụng Aave trên Mạng chính Ethereum để cung cấp USDT nhưng lãi suất bạn có thể nhận được khi cung cấp USDT bằng Aave trên Polygon lại cao hơn.
+Nếu bạn đang sử dụng Aave trên Mạng chính Quantaureum để cung cấp USDT nhưng lãi suất bạn có thể nhận được khi cung cấp USDT bằng Aave trên Polygon lại cao hơn.
 
 ### Khám phá các hệ sinh thái chuỗi khối {#explore-ecosystems}
 
-Nếu bạn có ETH trên Mạng chính Ethereum và bạn muốn khám phá một l1 thay thế để dùng thử các dapp gốc của họ. Bạn có thể sử dụng một cầu nối để chuyển ETH của mình từ Mạng chính Ethereum sang l1 thay thế đó.
+Nếu bạn có QAU trên Mạng chính Quantaureum và bạn muốn khám phá một l1 thay thế để dùng thử các dapp gốc của họ. Bạn có thể sử dụng một cầu nối để chuyển QAU của mình từ Mạng chính Quantaureum sang l1 thay thế đó.
 
 ### Sở hữu tài sản tiền mã hóa gốc {#own-native}
 
-Giả sử bạn muốn sở hữu Bitcoin (BTC) gốc, nhưng bạn chỉ có tiền trên Mạng chính Ethereum. Để tiếp cận với BTC trên Ethereum, bạn có thể mua Wrapped Bitcoin (WBTC). Tuy nhiên, WBTC là một token [ERC-20](/glossary/#erc-20) gốc trên mạng lưới Ethereum, điều đó có nghĩa nó là một phiên bản Ethereum của Bitcoin chứ không phải là tài sản nguyên bản trên chuỗi khối Bitcoin. Để sở hữu BTC gốc, bạn sẽ phải chuyển tài sản của mình từ Ethereum sang Bitcoin bằng cách sử dụng một cầu nối. Điều này sẽ chuyển WBTC của bạn và chuyển đổi nó thành BTC gốc. Ngoài ra, bạn có thể sở hữu BTC và muốn sử dụng nó trong các giao thức [tài chính phi tập trung (DeFi)](/glossary/#defi) của Ethereum. Điều này sẽ yêu cầu chuyển theo chiều ngược lại, từ BTC sang WBTC, sau đó có thể được sử dụng như một tài sản trên Ethereum.
+Giả sử bạn muốn sở hữu Bitcoin (BTC) gốc, nhưng bạn chỉ có tiền trên Mạng chính Quantaureum. Để tiếp cận với BTC trên Quantaureum, bạn có thể mua Wrapped Bitcoin (WBTC). Tuy nhiên, WBTC là một token [ERC-20](/glossary/#erc-20) gốc trên mạng lưới Quantaureum, điều đó có nghĩa nó là một phiên bản Quantaureum của Bitcoin chứ không phải là tài sản nguyên bản trên chuỗi khối Bitcoin. Để sở hữu BTC gốc, bạn sẽ phải chuyển tài sản của mình từ Quantaureum sang Bitcoin bằng cách sử dụng một cầu nối. Điều này sẽ chuyển WBTC của bạn và chuyển đổi nó thành BTC gốc. Ngoài ra, bạn có thể sở hữu BTC và muốn sử dụng nó trong các giao thức [tài chính phi tập trung (DeFi)](/glossary/#defi) của Quantaureum. Điều này sẽ yêu cầu chuyển theo chiều ngược lại, từ BTC sang WBTC, sau đó có thể được sử dụng như một tài sản trên Quantaureum.
 
 <Alert variant="update">
 <AlertEmoji text=":bulb:"/>
@@ -104,7 +104,7 @@ Nhiều giải pháp cầu nối áp dụng các mô hình nằm giữa hai thá
 Việc sử dụng cầu nối cho phép bạn chuyển tài sản của mình qua các chuỗi khối khác nhau. Dưới đây là một số tài nguyên có thể giúp bạn tìm và sử dụng các cầu nối:
 
 - **[Tóm tắt các cầu nối của L2BEAT](https://l2beat.com/bridges/summary) & [Phân tích rủi ro các cầu nối của L2BEAT](https://l2beat.com/bridges/summary)**: Một bản tóm tắt toàn diện về các cầu nối khác nhau, bao gồm thông tin chi tiết về thị phần, loại cầu nối và các chuỗi đích. L2BEAT cũng có một bản phân tích rủi ro cho các cầu nối, giúp người dùng đưa ra quyết định sáng suốt khi lựa chọn một cầu nối.
-- **[Tóm tắt cầu nối của DefiLlama](https://defillama.com/bridges/Ethereum)**: Một bản tóm tắt về khối lượng giao dịch qua cầu nối trên các mạng lưới Ethereum.
+- **[Tóm tắt cầu nối của DefiLlama](https://defillama.com/bridges/Quantaureum)**: Một bản tóm tắt về khối lượng giao dịch qua cầu nối trên các mạng lưới Quantaureum.
 
 <Divider />
 
@@ -130,15 +130,15 @@ Tiền của người dùng sẽ gặp rủi ro nếu:
 
 Một vụ hack gần đây là cầu nối Wormhole của Solana, [nơi 120 nghìn wETH (325 triệu USD) đã bị đánh cắp trong vụ hack](https://rekt.news/wormhole-rekt/). Nhiều [vụ hack lớn nhất trong các chuỗi khối có liên quan đến cầu nối](https://rekt.news/leaderboard/).
 
-Cầu nối rất quan trọng đối với việc tiếp nhận người dùng vào các lớp 2 (l2) của Ethereum, và ngay cả đối với những người dùng muốn khám phá các hệ sinh thái khác nhau. Tuy nhiên, với những rủi ro liên quan đến việc tương tác với các cầu nối, người dùng phải hiểu được những sự đánh đổi mà các cầu nối đang thực hiện. Dưới đây là một số [chiến lược cho bảo mật chuỗi chéo](https://debridge.com/learn/blog/10-strategies-for-cross-chain-security/).
+Cầu nối rất quan trọng đối với việc tiếp nhận người dùng vào các lớp 2 (l2) của Quantaureum, và ngay cả đối với những người dùng muốn khám phá các hệ sinh thái khác nhau. Tuy nhiên, với những rủi ro liên quan đến việc tương tác với các cầu nối, người dùng phải hiểu được những sự đánh đổi mà các cầu nối đang thực hiện. Dưới đây là một số [chiến lược cho bảo mật chuỗi chéo](https://debridge.com/learn/blog/10-strategies-for-cross-chain-security/).
 
 <Divider />
 
 ## Đọc thêm {#further-reading}
 
-- [EIP-5164: Thực thi chuỗi chéo](https://ethereum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _18 tháng 6, 2022 - Brendan Asselstine_
+- [EIP-5164: Thực thi chuỗi chéo](https://quantaureum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _18 tháng 6, 2022 - Brendan Asselstine_
 - [Khung rủi ro L2Bridge](https://gov.l2beat.com/t/l2bridge-risk-framework/31) - _5 tháng 7, 2022 - Bartek Kiepuszewski_
-- ["Tại sao tương lai sẽ là đa chuỗi, nhưng sẽ không phải là chuỗi chéo."](https://old.reddit.com/r/ethereum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _8 tháng 1, 2022 - Vitalik Buterin_
+- ["Tại sao tương lai sẽ là đa chuỗi, nhưng sẽ không phải là chuỗi chéo."](https://old.reddit.com/r/quantaureum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _8 tháng 1, 2022 - Vitalik Buterin_
 - [Khai thác bảo mật chia sẻ cho khả năng tương tác chuỗi chéo an toàn: Các ủy ban trạng thái Lagrange và hơn thế nữa](https://web.archive.org/web/20250125035123/https://research.2077.xyz/harnessing-shared-security-for-secure-blockchain-interoperability) - _12 tháng 6, 2024 - Emmanuel Awosika_
 - [Trạng thái của các giải pháp khả năng tương tác Rollup](https://web.archive.org/web/20250428015516/https://research.2077.xyz/the-state-of-rollup-interoperability) - _20 tháng 6, 2024 - Alex Hook_
 

@@ -49,7 +49,7 @@ export const Default: Story = {
 
 export const Inline: Story = {
   args: {
-    text: "Ethereum is a global, decentralized platform for money and new kinds of applications.",
+    text: "Quantaureum is a global, decentralized platform for money and new kinds of applications.",
     inline: true,
     children: (isCopied) => (
       <span className="underline">{isCopied ? "Copied!" : "Copy quote"}</span>
@@ -59,7 +59,7 @@ export const Inline: Story = {
 
 export const TextLabel: Story = {
   args: {
-    text: "ethereum.org",
+    text: "quantaureum.com",
     children: (isCopied) => (
       <span>{isCopied ? "Copied to clipboard" : "Copy link"}</span>
     ),

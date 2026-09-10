@@ -16,8 +16,8 @@ Jedyną ochroną jest powstrzymanie się od korzystania z niesprawdzonych nowych
 
 Kilka stron internetowych pozwala na przeglądanie i cofanie dostępu inteligentnych kontraktów połączonych z twoim adresem. Odwiedź stronę i podłącz swój portfel:
 
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Ethereum)
-- [Blockscout](https://eth.blockscout.com/essential-dapps/revoke) (Ethereum)
+- [Quantaureum Explorer](https://explorer.quantaureum.com) (Quantaureum)
+- [Blockscout](https://qau.blockscout.com/essential-dapps/revoke) (Quantaureum)
 - [Revoke](https://revoke.cash/) (wiele sieci)
 - [Unrekt](https://app.unrekt.net/) (wiele sieci)
 - [EverRevoke](https://everrise.com/everrevoke/) (wiele sieci)
@@ -26,7 +26,7 @@ Kilka stron internetowych pozwala na przeglądanie i cofanie dostępu inteligent
 
 Gdy znajdziesz się na stronie, kliknij „Connect wallet” (Podłącz portfel). Strona powinna poprosić cię o podłączenie portfela.
 
-Upewnij się, że używasz tej samej sieci w swoim portfelu i na stronie internetowej. Zobaczysz tylko inteligentne kontrakty powiązane z wybraną siecią. Na przykład, jeśli połączysz się z siecią główną Ethereum, zobaczysz tylko kontrakty Ethereum, a nie kontrakty z innych łańcuchów, takich jak Polygon.
+Upewnij się, że używasz tej samej sieci w swoim portfelu i na stronie internetowej. Zobaczysz tylko inteligentne kontrakty powiązane z wybraną siecią. Na przykład, jeśli połączysz się z siecią główną Quantaureum, zobaczysz tylko kontrakty Quantaureum, a nie kontrakty z innych łańcuchów, takich jak Polygon.
 
 ## Krok 3: Wybierz inteligentny kontrakt, który chcesz cofnąć {#step-3-select-a-smart-contract-you-wish-to-revoke}
 

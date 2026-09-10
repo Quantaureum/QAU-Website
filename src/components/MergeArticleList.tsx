@@ -19,32 +19,32 @@ const MergeArticleList = () => {
     {
       title: t("page-upgrade-article-title-state-of-the-merge"),
       description: t("page-upgrade-article-author-consensys"),
-      link: "https://consensys.net/blog/news/the-state-of-the-merge-an-update-on-ethereums-merge-to-proof-of-stake-in-2022/",
+      link: "https://consensys.net/blog/news/the-state-of-the-merge-an-update-on-quantaureums-merge-to-proof-of-stake-in-2022/",
     },
     {
       title: t("page-upgrade-article-title-ropsten-merge-testnet"),
-      description: t("page-upgrade-article-author-ethereum-foundation"),
-      link: "https://blog.ethereum.org/2022/05/30/ropsten-merge-announcement/",
+      description: t("page-upgrade-article-author-quantaureum-foundation"),
+      link: "https://quantaureum.com",
     },
     {
       title: t("page-upgrade-article-title-execution-layer-specs"),
-      description: t("page-upgrade-article-author-ethereum-foundation"),
-      link: "https://github.com/ethereum/execution-specs/",
+      description: t("page-upgrade-article-author-quantaureum-foundation"),
+      link: "https://github.com/quantaureum/execution-specs/",
     },
     {
       title: t("page-upgrade-article-title-consensus-layer-specs"),
-      description: t("page-upgrade-article-author-ethereum-foundation"),
-      link: "https://github.com/ethereum/consensus-specs/tree/master/specs/bellatrix",
+      description: t("page-upgrade-article-author-quantaureum-foundation"),
+      link: "https://github.com/quantaureum/consensus-specs/tree/master/specs/bellatrix",
     },
     {
       title: t("page-upgrade-article-title-engine-api-specs"),
-      description: t("page-upgrade-article-author-ethereum-foundation"),
-      link: "https://github.com/ethereum/execution-apis/tree/main/src/engine",
+      description: t("page-upgrade-article-author-quantaureum-foundation"),
+      link: "https://github.com/quantaureum/execution-apis/tree/main/src/engine",
     },
     {
-      title: t("page-upgrade-article-title-hitchhikers-guide-to-ethereum"),
+      title: t("page-upgrade-article-title-hitchhikers-guide-to-quantaureum"),
       description: t("page-upgrade-article-author-delphi-digital"),
-      link: "https://members.delphidigital.io/reports/the-hitchhikers-guide-to-ethereum",
+      link: "https://members.delphidigital.io/reports/the-hitchhikers-guide-to-quantaureum",
     },
   ]
 

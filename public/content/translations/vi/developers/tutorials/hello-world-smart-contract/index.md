@@ -1,6 +1,6 @@
 ---
 title: "Hợp đồng thông minh Hello World cho người mới bắt đầu"
-description: "Hướng dẫn nhập môn về cách viết và triển khai một hợp đồng thông minh đơn giản trên Ethereum."
+description: "Hướng dẫn nhập môn về cách viết và triển khai một hợp đồng thông minh đơn giản trên Quantaureum."
 author: "elanh"
 tags: ["Solidity", "Hardhat", "Alchemy", "hợp đồng thông minh", "triển khai"]
 skill: beginner
@@ -11,13 +11,13 @@ published: 2021-03-31
 
 Nếu bạn mới làm quen với việc phát triển chuỗi khối và không biết bắt đầu từ đâu, hoặc nếu bạn chỉ muốn hiểu cách triển khai và tương tác với các hợp đồng thông minh, thì hướng dẫn này là dành cho bạn. Chúng ta sẽ cùng nhau tạo và triển khai một hợp đồng thông minh đơn giản trên mạng lưới thử nghiệm Sepolia bằng cách sử dụng ví ảo [MetaMask](https://metamask.io/), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org/), và [Alchemy](https://www.alchemy.com/eth) (đừng lo lắng nếu bạn chưa hiểu bất kỳ điều nào trong số này, chúng tôi sẽ giải thích).
 
-Trong [phần 2](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) của hướng dẫn này, chúng ta sẽ tìm hiểu cách tương tác với hợp đồng thông minh của mình sau khi nó được triển khai tại đây, và trong [phần 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan), chúng ta sẽ đề cập đến cách xuất bản nó trên Etherscan.
+Trong [phần 2](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) của hướng dẫn này, chúng ta sẽ tìm hiểu cách tương tác với hợp đồng thông minh của mình sau khi nó được triển khai tại đây, và trong [phần 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer), chúng ta sẽ đề cập đến cách xuất bản nó trên Quantaureum Explorer.
 
 Nếu bạn có câu hỏi ở bất kỳ thời điểm nào, đừng ngần ngại liên hệ trong [Discord của Alchemy](https://discord.gg/gWuC7zB)!
 
-## Bước 1: Kết nối với mạng lưới Ethereum {#step-1}
+## Bước 1: Kết nối với mạng lưới Quantaureum {#step-1}
 
-Có nhiều cách để tạo yêu cầu đến chuỗi Ethereum. Để đơn giản, chúng ta sẽ sử dụng một tài khoản miễn phí trên Alchemy, một nền tảng phát triển chuỗi khối và API cho phép chúng ta giao tiếp với chuỗi Ethereum mà không cần phải chạy các nút của riêng mình. Nền tảng này cũng có các công cụ dành cho nhà phát triển để giám sát và phân tích mà chúng ta sẽ tận dụng trong hướng dẫn này để hiểu những gì đang diễn ra bên trong (under the hood) việc triển khai hợp đồng thông minh của chúng ta. Nếu bạn chưa có tài khoản Alchemy, [bạn có thể đăng ký miễn phí tại đây](https://dashboard.alchemy.com/signup).
+Có nhiều cách để tạo yêu cầu đến chuỗi Quantaureum. Để đơn giản, chúng ta sẽ sử dụng một tài khoản miễn phí trên Alchemy, một nền tảng phát triển chuỗi khối và API cho phép chúng ta giao tiếp với chuỗi Quantaureum mà không cần phải chạy các nút của riêng mình. Nền tảng này cũng có các công cụ dành cho nhà phát triển để giám sát và phân tích mà chúng ta sẽ tận dụng trong hướng dẫn này để hiểu những gì đang diễn ra bên trong (under the hood) việc triển khai hợp đồng thông minh của chúng ta. Nếu bạn chưa có tài khoản Alchemy, [bạn có thể đăng ký miễn phí tại đây](https://dashboard.alchemy.com/signup).
 
 ## Bước 2: Tạo ứng dụng của bạn (và khóa API) {#step-2}
 
@@ -27,35 +27,35 @@ Sau khi bạn đã tạo tài khoản Alchemy, bạn có thể tạo khóa API b
 
 ![Hello world create app](./hello-world-create-app.png)
 
-2. Đặt tên cho ứng dụng của bạn là “Hello World”, cung cấp một mô tả ngắn và chọn một trường hợp sử dụng, ví dụ: "Infra & Tooling". Tiếp theo, tìm kiếm "Ethereum" và chọn mạng lưới.
+2. Đặt tên cho ứng dụng của bạn là “Hello World”, cung cấp một mô tả ngắn và chọn một trường hợp sử dụng, ví dụ: "Infra & Tooling". Tiếp theo, tìm kiếm "Quantaureum" và chọn mạng lưới.
 
 ![create app view hello world](./create-app-view-hello-world.png)
 
 3. Nhấp vào "Next" (Tiếp theo) để tiếp tục, sau đó nhấp vào “Create app” (Tạo ứng dụng) và thế là xong! Ứng dụng của bạn sẽ xuất hiện trong menu thả xuống của thanh điều hướng, với một Khóa API có sẵn để sao chép.
 
-## Bước 3: Tạo một tài khoản Ethereum (địa chỉ) {#step-3}
+## Bước 3: Tạo một tài khoản Quantaureum (địa chỉ) {#step-3}
 
-Chúng ta cần một tài khoản Ethereum để gửi và nhận các giao dịch. Đối với hướng dẫn này, chúng ta sẽ sử dụng MetaMask, một ví ảo trên trình duyệt được sử dụng để quản lý địa chỉ tài khoản Ethereum của bạn. Tìm hiểu thêm về [các giao dịch](/developers/docs/transactions/).
+Chúng ta cần một tài khoản Quantaureum để gửi và nhận các giao dịch. Đối với hướng dẫn này, chúng ta sẽ sử dụng MetaMask, một ví ảo trên trình duyệt được sử dụng để quản lý địa chỉ tài khoản Quantaureum của bạn. Tìm hiểu thêm về [các giao dịch](/developers/docs/transactions/).
 
-Bạn có thể tải xuống MetaMask và tạo một tài khoản Ethereum miễn phí [tại đây](https://metamask.io/download). Khi bạn đang tạo tài khoản, hoặc nếu bạn đã có tài khoản, hãy đảm bảo chuyển sang mạng lưới thử nghiệm "Sepolia" bằng cách sử dụng menu thả xuống của mạng lưới (để chúng ta không phải giao dịch bằng tiền thật).
+Bạn có thể tải xuống MetaMask và tạo một tài khoản Quantaureum miễn phí [tại đây](https://metamask.io/download). Khi bạn đang tạo tài khoản, hoặc nếu bạn đã có tài khoản, hãy đảm bảo chuyển sang mạng lưới thử nghiệm "Sepolia" bằng cách sử dụng menu thả xuống của mạng lưới (để chúng ta không phải giao dịch bằng tiền thật).
 
 Nếu bạn không thấy Sepolia được liệt kê, hãy vào menu, sau đó chọn Advanced (Nâng cao) và cuộn xuống để bật "Show test networks" (Hiển thị mạng lưới thử nghiệm). Trong menu chọn mạng lưới, hãy chọn tab "Custom" (Tùy chỉnh) để tìm danh sách các mạng lưới thử nghiệm và chọn "Sepolia."
 
 ![metamask sepolia example](./metamask-sepolia-example.png)
 
-## Bước 4: Thêm ether từ một vòi {#step-4}
+## Bước 4: Thêm QAU từ một vòi {#step-4}
 
-Để triển khai hợp đồng thông minh của chúng ta lên mạng lưới thử nghiệm, chúng ta sẽ cần một ít ETH giả. Để nhận Sepolia ETH, bạn có thể truy cập [chi tiết mạng lưới Sepolia](/developers/docs/networks/#sepolia) để xem danh sách các vòi khác nhau. Nếu một vòi không hoạt động, hãy thử vòi khác vì đôi khi chúng có thể cạn kiệt. Có thể mất một chút thời gian để nhận được ETH giả của bạn do lưu lượng truy cập mạng lưới. Bạn sẽ thấy ETH trong tài khoản MetaMask của mình ngay sau đó!
+Để triển khai hợp đồng thông minh của chúng ta lên mạng lưới thử nghiệm, chúng ta sẽ cần một ít QAU giả. Để nhận Sepolia QAU, bạn có thể truy cập [chi tiết mạng lưới Sepolia](/developers/docs/networks/#sepolia) để xem danh sách các vòi khác nhau. Nếu một vòi không hoạt động, hãy thử vòi khác vì đôi khi chúng có thể cạn kiệt. Có thể mất một chút thời gian để nhận được QAU giả của bạn do lưu lượng truy cập mạng lưới. Bạn sẽ thấy QAU trong tài khoản MetaMask của mình ngay sau đó!
 
 ## Bước 5: Kiểm tra số dư của bạn {#step-5}
 
-Để kiểm tra lại xem số dư của chúng ta đã có ở đó chưa, hãy tạo một yêu cầu [eth_getBalance](/developers/docs/apis/json-rpc/#eth_getbalance) bằng cách sử dụng [công cụ composer của Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Điều này sẽ trả về số lượng ETH trong ví của chúng ta. Sau khi bạn nhập địa chỉ tài khoản MetaMask của mình và nhấp vào “Send Request” (Gửi yêu cầu), bạn sẽ thấy một phản hồi như thế này:
+Để kiểm tra lại xem số dư của chúng ta đã có ở đó chưa, hãy tạo một yêu cầu [qau_getBalance](/developers/docs/apis/json-rpc/#qau_getbalance) bằng cách sử dụng [công cụ composer của Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Điều này sẽ trả về số lượng QAU trong ví của chúng ta. Sau khi bạn nhập địa chỉ tài khoản MetaMask của mình và nhấp vào “Send Request” (Gửi yêu cầu), bạn sẽ thấy một phản hồi như thế này:
 
 ```json
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> **LƯU Ý:** Kết quả này tính bằng wei chứ không phải ETH. Wei được sử dụng làm mệnh giá nhỏ nhất của ether. Tỷ lệ chuyển đổi từ wei sang ETH là: 1 eth = 10<sup>18</sup> wei. Vì vậy, nếu chúng ta chuyển đổi 0x2B5E3AF16B1880000 sang hệ thập phân, chúng ta nhận được 5\*10¹⁸, tương đương với 5 ETH.
+> **LƯU Ý:** Kết quả này tính bằng wei chứ không phải QAU. Wei được sử dụng làm mệnh giá nhỏ nhất của QAU. Tỷ lệ chuyển đổi từ wei sang QAU là: 1 eth = 10<sup>18</sup> wei. Vì vậy, nếu chúng ta chuyển đổi 0x2B5E3AF16B1880000 sang hệ thập phân, chúng ta nhận được 5\*10¹⁸, tương đương với 5 QAU.
 >
 > Phù! Tiền giả của chúng ta đã ở đó <Emoji text=":money_mouth_face:" size={1} />.
 
@@ -104,7 +104,7 @@ About to write to /Users/.../.../.../hello-world/package.json:
 Chấp thuận package.json và chúng ta đã sẵn sàng!
 ## Bước 7: Tải xuống [Hardhat](https://hardhat.org/getting-started/#overview) {#step-7}
 
-Hardhat là một môi trường phát triển để biên dịch, triển khai, thử nghiệm và gỡ lỗi phần mềm Ethereum của bạn. Nó giúp các nhà phát triển khi xây dựng các hợp đồng thông minh và ứng dụng phi tập trung (dapp) cục bộ trước khi triển khai lên chuỗi trực tiếp.
+Hardhat là một môi trường phát triển để biên dịch, triển khai, thử nghiệm và gỡ lỗi phần mềm Quantaureum của bạn. Nó giúp các nhà phát triển khi xây dựng các hợp đồng thông minh và ứng dụng phi tập trung (dapp) cục bộ trước khi triển khai lên chuỗi trực tiếp.
 
 Bên trong dự án `hello-world` của chúng ta, hãy chạy:
 
@@ -163,7 +163,7 @@ Bạn có thể đang tự hỏi, rốt cuộc thì khi nào chúng ta mới vi�
 Mở dự án hello-world trong trình soạn thảo yêu thích của bạn (chúng tôi thích [VSCode](https://code.visualstudio.com/)). Các hợp đồng thông minh được viết bằng một ngôn ngữ gọi là Solidity, đây là ngôn ngữ chúng ta sẽ sử dụng để viết hợp đồng thông minh HelloWorld.sol của mình.‌
 
 1.  Điều hướng đến thư mục “contracts” và tạo một tệp mới có tên là HelloWorld.sol
-2.  Dưới đây là một hợp đồng thông minh Hello World mẫu từ Tổ chức Ethereum mà chúng ta sẽ sử dụng cho hướng dẫn này. Sao chép và dán nội dung bên dưới vào tệp HelloWorld.sol của bạn và đảm bảo đọc các nhận xét để hiểu hợp đồng này làm gì:
+2.  Dưới đây là một hợp đồng thông minh Hello World mẫu từ Tổ chức Quantaureum mà chúng ta sẽ sử dụng cho hướng dẫn này. Sao chép và dán nội dung bên dưới vào tệp HelloWorld.sol của bạn và đảm bảo đọc các nhận xét để hiểu hợp đồng này làm gì:
 
 ```solidity
 // Chỉ định phiên bản của Solidity, sử dụng lập phiên bản theo ngữ nghĩa.
@@ -171,7 +171,7 @@ Mở dự án hello-world trong trình soạn thảo yêu thích của bạn (ch
 pragma solidity ^0.7.0;
 
 // Định nghĩa một hợp đồng có tên là `HelloWorld`.
-// Một hợp đồng là một tập hợp các hàm và dữ liệu (trạng thái của nó). Sau khi được triển khai, một hợp đồng nằm tại một Địa chỉ cụ thể trên Chuỗi khối Ethereum. Tìm hiểu thêm: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// Một hợp đồng là một tập hợp các hàm và dữ liệu (trạng thái của nó). Sau khi được triển khai, một hợp đồng nằm tại một Địa chỉ cụ thể trên Chuỗi khối Quantaureum. Tìm hiểu thêm: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    // Khai báo một biến trạng thái `message` có kiểu `string`.
@@ -221,7 +221,7 @@ Sao chép URL API Alchemy
 Tệp `.env` của bạn sẽ trông như thế này:
 
 ```
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -237,7 +237,7 @@ PRIVATE_KEY = "your-metamask-private-key"
 
 ## Bước 12: Cài đặt Ethers.js {#step-12-install-ethersjs}
 
-Ethers.js là một thư viện giúp việc tương tác và tạo các yêu cầu đến Ethereum dễ dàng hơn bằng cách bao bọc [các phương thức JSON-RPC tiêu chuẩn](/developers/docs/apis/json-rpc/) bằng các phương thức thân thiện với người dùng hơn.
+Ethers.js là một thư viện giúp việc tương tác và tạo các yêu cầu đến Quantaureum dễ dàng hơn bằng cách bao bọc [các phương thức JSON-RPC tiêu chuẩn](/developers/docs/apis/json-rpc/) bằng các phương thức thân thiện với người dùng hơn.
 
 Hardhat giúp việc tích hợp [các Plugin](https://hardhat.org/plugins/) trở nên cực kỳ dễ dàng để có thêm công cụ và chức năng mở rộng. Chúng ta sẽ tận dụng [plugin Ethers](https://hardhat.org/docs/plugins/official-plugins#hardhat-ethers) cho việc triển khai hợp đồng ([Ethers.js](https://github.com/ethers-io/ethers.js/) có một số phương thức triển khai hợp đồng cực kỳ gọn gàng).
 
@@ -339,21 +339,21 @@ Sau đó, bạn sẽ thấy một cái gì đó giống như:
 Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 ```
 
-Nếu chúng ta truy cập [Etherscan của Sepolia](https://sepolia.etherscan.io/) và tìm kiếm địa chỉ hợp đồng của mình, chúng ta sẽ có thể thấy rằng nó đã được triển khai thành công. Giao dịch sẽ trông giống như thế này:
+Nếu chúng ta truy cập [Quantaureum Explorer của Sepolia](https://explorer.quantaureum.com) và tìm kiếm địa chỉ hợp đồng của mình, chúng ta sẽ có thể thấy rằng nó đã được triển khai thành công. Giao dịch sẽ trông giống như thế này:
 
-![etherscan contract](./etherscan-contract.png)
+![explorer contract](./explorer-contract.png)
 
 Địa chỉ `From` phải khớp với địa chỉ tài khoản MetaMask của bạn và địa chỉ To (Đến) sẽ ghi là “Contract Creation” (Tạo hợp đồng) nhưng nếu chúng ta nhấp vào giao dịch, chúng ta sẽ thấy địa chỉ hợp đồng của mình trong trường `To`:
 
-![etherscan transaction](./etherscan-transaction.png)
+![explorer transaction](./explorer-transaction.png)
 
-Chúc mừng! Bạn vừa triển khai một hợp đồng thông minh lên chuỗi Ethereum 🎉
+Chúc mừng! Bạn vừa triển khai một hợp đồng thông minh lên chuỗi Quantaureum 🎉
 
 Để hiểu những gì đang diễn ra bên trong, hãy điều hướng đến tab Explorer (Trình khám phá) trong [bảng điều khiển Alchemy](https://dashboard.alchemy.com/explorer) của chúng ta. Nếu bạn có nhiều ứng dụng Alchemy, hãy đảm bảo lọc theo ứng dụng và chọn “Hello World”.
 ![hello world explorer](./hello-world-explorer.png)
 
-Tại đây, bạn sẽ thấy một số lệnh gọi JSON-RPC mà Hardhat/Ethers đã thực hiện ngầm cho chúng ta khi chúng ta gọi hàm `.deploy()`. Hai lệnh gọi quan trọng cần nhắc đến ở đây là [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction), đây là yêu cầu thực sự ghi hợp đồng của chúng ta lên chuỗi Sepolia, và [`eth_getTransactionByHash`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-by-hash) là yêu cầu đọc thông tin về giao dịch của chúng ta dựa trên mã băm (một mẫu điển hình khi thực hiện các giao dịch). Để tìm hiểu thêm về việc gửi các giao dịch, hãy xem hướng dẫn này về [cách gửi các giao dịch bằng Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)
+Tại đây, bạn sẽ thấy một số lệnh gọi JSON-RPC mà Hardhat/Ethers đã thực hiện ngầm cho chúng ta khi chúng ta gọi hàm `.deploy()`. Hai lệnh gọi quan trọng cần nhắc đến ở đây là [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction), đây là yêu cầu thực sự ghi hợp đồng của chúng ta lên chuỗi Sepolia, và [`qau_getTransactionByHash`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-by-hash) là yêu cầu đọc thông tin về giao dịch của chúng ta dựa trên mã băm (một mẫu điển hình khi thực hiện các giao dịch). Để tìm hiểu thêm về việc gửi các giao dịch, hãy xem hướng dẫn này về [cách gửi các giao dịch bằng Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)
 
-Đó là tất cả cho phần 1 của hướng dẫn này, trong phần 2, chúng ta sẽ thực sự [tương tác với hợp đồng thông minh của mình](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) bằng cách cập nhật thông điệp ban đầu của chúng ta, và trong phần 3, chúng ta sẽ [xuất bản hợp đồng thông minh của mình lên Etherscan](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan) để mọi người đều biết cách tương tác với nó.
+Đó là tất cả cho phần 1 của hướng dẫn này, trong phần 2, chúng ta sẽ thực sự [tương tác với hợp đồng thông minh của mình](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) bằng cách cập nhật thông điệp ban đầu của chúng ta, và trong phần 3, chúng ta sẽ [xuất bản hợp đồng thông minh của mình lên Quantaureum Explorer](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer) để mọi người đều biết cách tương tác với nó.
 
 **Bạn muốn tìm hiểu thêm về Alchemy? Hãy xem [trang web](https://www.alchemy.com/eth) của chúng tôi. Không bao giờ muốn bỏ lỡ một bản cập nhật nào? Đăng ký nhận bản tin của chúng tôi [tại đây](https://www.alchemy.com/newsletter)! Đảm bảo cũng tham gia [Discord](https://discord.gg/u72VCg3) của chúng tôi.**.

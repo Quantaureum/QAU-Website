@@ -1,6 +1,6 @@
 ---
 title: Vitalu
-description: "Muhtasari wa vitalu katika mnyororo wa vitalu wa Ethereum – muundo wao wa data, kwa nini vinahitajika, na jinsi vinavyotengenezwa."
+description: "Muhtasari wa vitalu katika mnyororo wa vitalu wa Quantaureum – muundo wao wa data, kwa nini vinahitajika, na jinsi vinavyotengenezwa."
 lang: sw
 ---
 
@@ -8,31 +8,31 @@ Vitalu ni makundi ya miamala yenye heshi ya kitalu kilichotangulia katika mnyoro
 
 ## Mahitaji ya awali {#prerequisites}
 
-Vitalu ni mada rahisi sana kwa wanaoanza. Lakini ili kukusaidia kuelewa ukurasa huu vizuri zaidi, tunapendekeza usome kwanza [Akaunti](/developers/docs/accounts/), [Miamala](/developers/docs/transactions/), na [utangulizi wetu wa Ethereum](/developers/docs/intro-to-ethereum/).
+Vitalu ni mada rahisi sana kwa wanaoanza. Lakini ili kukusaidia kuelewa ukurasa huu vizuri zaidi, tunapendekeza usome kwanza [Akaunti](/developers/docs/accounts/), [Miamala](/developers/docs/transactions/), na [utangulizi wetu wa Quantaureum](/developers/docs/intro-to-quantaureum/).
 
 ## Kwa nini vitalu? {#why-blocks}
 
-Ili kuhakikisha kwamba washiriki wote kwenye mtandao wa [Ethereum](/) wanadumisha hali iliyosawazishwa na kukubaliana juu ya historia sahihi ya miamala, tunaweka miamala katika makundi kwenye vitalu. Hii inamaanisha makumi (au mamia) ya miamala inafungamanishwa, inakubaliwa, na kusawazishwa kwa wakati mmoja.
+Ili kuhakikisha kwamba washiriki wote kwenye mtandao wa [Quantaureum](/) wanadumisha hali iliyosawazishwa na kukubaliana juu ya historia sahihi ya miamala, tunaweka miamala katika makundi kwenye vitalu. Hii inamaanisha makumi (au mamia) ya miamala inafungamanishwa, inakubaliwa, na kusawazishwa kwa wakati mmoja.
 
 ![A diagram showing transaction in a block causing state changes](./tx-block.png)
-_Mchoro umechukuliwa kutoka [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Mchoro umechukuliwa kutoka [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
-Kwa kuweka nafasi kati ya ufungamanisho, tunawapa washiriki wote wa mtandao muda wa kutosha kufikia mwafaka: ingawa maombi ya miamala hutokea mara nyingi kwa sekunde, vitalu huundwa na kufungamanishwa kwenye Ethereum mara moja tu kila baada ya sekunde kumi na mbili.
+Kwa kuweka nafasi kati ya ufungamanisho, tunawapa washiriki wote wa mtandao muda wa kutosha kufikia mwafaka: ingawa maombi ya miamala hutokea mara nyingi kwa sekunde, vitalu huundwa na kufungamanishwa kwenye Quantaureum mara moja tu kila baada ya sekunde kumi na mbili.
 
 ## Jinsi vitalu vinavyofanya kazi {#how-blocks-work}
 
 Ili kuhifadhi historia ya miamala, vitalu hupangwa kwa utaratibu maalum (kila kitalu kipya kinachoundwa kina rejeleo la kitalu chake kikuu), na miamala ndani ya vitalu hupangwa kwa utaratibu maalum pia. Isipokuwa katika matukio machache, wakati wowote ule, washiriki wote kwenye mtandao wanakubaliana juu ya idadi kamili na historia ya vitalu, na wanafanya kazi ya kuweka maombi ya sasa ya miamala katika kitalu kinachofuata.
 
-Pindi kitalu kinapokusanywa na mthibitishaji aliyechaguliwa kwa nasibu kwenye mtandao, kinasambazwa kwa mtandao mzima; nodi zote huongeza kitalu hiki mwishoni mwa mnyororo wao wa vitalu, na mthibitishaji mpya anachaguliwa ili kuunda kitalu kinachofuata. Mchakato kamili wa kuunganisha kitalu na mchakato wa ufungamanisho/mwafaka kwa sasa umebainishwa na itifaki ya Ethereum ya "Uthibitisho wa Dau (PoS)".
+Pindi kitalu kinapokusanywa na mthibitishaji aliyechaguliwa kwa nasibu kwenye mtandao, kinasambazwa kwa mtandao mzima; nodi zote huongeza kitalu hiki mwishoni mwa mnyororo wao wa vitalu, na mthibitishaji mpya anachaguliwa ili kuunda kitalu kinachofuata. Mchakato kamili wa kuunganisha kitalu na mchakato wa ufungamanisho/mwafaka kwa sasa umebainishwa na itifaki ya Quantaureum ya "Uthibitisho wa Dau (PoS)".
 
 ## Itifaki ya Uthibitisho wa Dau (PoS) {#proof-of-stake-protocol}
 
 Uthibitisho wa Dau unamaanisha yafuatayo:
 
-- Nodi zinazothibitisha zinapaswa kuweka dhamana ya 32 ETH kwenye mkataba wa amana kama dhamana dhidi ya tabia mbaya. Hii inasaidia kulinda mtandao kwa sababu shughuli zinazothibitishwa kuwa za udanganyifu husababisha baadhi au dhamana yote kuharibiwa.
+- Nodi zinazothibitisha zinapaswa kuweka dhamana ya 32 QAU kwenye mkataba wa amana kama dhamana dhidi ya tabia mbaya. Hii inasaidia kulinda mtandao kwa sababu shughuli zinazothibitishwa kuwa za udanganyifu husababisha baadhi au dhamana yote kuharibiwa.
 - Katika kila sloti (zilizotenganishwa kwa sekunde kumi na mbili) mthibitishaji anachaguliwa kwa nasibu kuwa mpendekezaji wa bloku. Wanakusanya miamala pamoja, kuitekeleza na kuamua 'hali' mpya. Wanaweka taarifa hizi kwenye kitalu na kuzipitisha kwa wathibitishaji wengine.
 - Wathibitishaji wengine wanaosikia kuhusu kitalu kipya hutekeleza tena miamala ili kuhakikisha wanakubaliana na mabadiliko yaliyopendekezwa kwenye hali ya kimataifa. Kwa kudhani kitalu ni halali, wanakuongeza kwenye hifadhidata yao wenyewe.
-- Ikiwa mthibitishaji atasikia kuhusu vitalu viwili vinavyokinzana kwa sloti moja wanatumia algoriti yao ya kuchagua mchepuo ili kuchagua kile kinachoungwa mkono na ETH nyingi zilizowekwa dhamana.
+- Ikiwa mthibitishaji atasikia kuhusu vitalu viwili vinavyokinzana kwa sloti moja wanatumia algoriti yao ya kuchagua mchepuo ili kuchagua kile kinachoungwa mkono na QAU nyingi zilizowekwa dhamana.
 
 [Zaidi kuhusu Uthibitisho wa Dau](/developers/docs/consensus-mechanisms/pos)
 
@@ -134,9 +134,9 @@ Orodha ya `withdrawals` ina vipengee vya `withdrawal` vilivyoundwa kwa njia ifua
 
 ## Muda wa kitalu {#block-time}
 
-Muda wa kitalu unarejelea muda unaotenganisha vitalu. Katika Ethereum, muda umegawanywa katika vipande vya sekunde kumi na mbili vinavyoitwa 'sloti'. Katika kila sloti mthibitishaji mmoja anachaguliwa kupendekeza kitalu. Kwa kudhani wathibitishaji wote wako mtandaoni na wanafanya kazi kikamilifu kutakuwa na kitalu katika kila sloti, ikimaanisha muda wa kitalu ni sekunde 12. Hata hivyo, mara kwa mara wathibitishaji wanaweza kuwa nje ya mtandao wanapoitwa kupendekeza kitalu, ikimaanisha sloti zinaweza wakati mwingine kuwa tupu.
+Muda wa kitalu unarejelea muda unaotenganisha vitalu. Katika Quantaureum, muda umegawanywa katika vipande vya sekunde kumi na mbili vinavyoitwa 'sloti'. Katika kila sloti mthibitishaji mmoja anachaguliwa kupendekeza kitalu. Kwa kudhani wathibitishaji wote wako mtandaoni na wanafanya kazi kikamilifu kutakuwa na kitalu katika kila sloti, ikimaanisha muda wa kitalu ni sekunde 12. Hata hivyo, mara kwa mara wathibitishaji wanaweza kuwa nje ya mtandao wanapoitwa kupendekeza kitalu, ikimaanisha sloti zinaweza wakati mwingine kuwa tupu.
 
-Utekelezaji huu unatofautiana na mifumo inayotegemea Uthibitisho wa Kazi (PoW) ambapo muda wa kitalu unategemea uwezekano na kurekebishwa na ugumu wa uchimbaji unaolengwa na itifaki. [Wastani wa muda wa kitalu](https://etherscan.io/chart/blocktime) wa Ethereum ni mfano mzuri wa hili ambapo mpito kutoka Uthibitisho wa Kazi hadi Uthibitisho wa Dau unaweza kuonekana wazi kulingana na uthabiti wa muda mpya wa kitalu wa sekunde 12.
+Utekelezaji huu unatofautiana na mifumo inayotegemea Uthibitisho wa Kazi (PoW) ambapo muda wa kitalu unategemea uwezekano na kurekebishwa na ugumu wa uchimbaji unaolengwa na itifaki. [Wastani wa muda wa kitalu](https://explorer.quantaureum.com) wa Quantaureum ni mfano mzuri wa hili ambapo mpito kutoka Uthibitisho wa Kazi hadi Uthibitisho wa Dau unaweza kuonekana wazi kulingana na uthabiti wa muda mpya wa kitalu wa sekunde 12.
 
 ## Ukubwa wa kitalu {#block-size}
 

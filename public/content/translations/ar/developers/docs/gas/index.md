@@ -20,17 +20,17 @@ lang: ar
 رسوم الغاز هي **كمية الغاز المستخدمة للقيام بعملية ما، مضروبة في التكلفة لكل وحدة غاز**. يتم دفع الرسوم بغض النظر عما إذا كانت المعاملة ناجحة أم فاشلة.
 
 ![A diagram showing where gas is needed in EVM operations](./gas.png)
-_مخطط مقتبس من [توضيح EVM لإيثيريوم](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_مخطط مقتبس من [توضيح EVM لإيثيريوم](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
-يجب دفع رسوم الغاز بالعملة الأصلية لإيثيريوم، إيثر (<span dir="ltr">ETH</span>). عادة ما يتم تسعير الغاز بوحدة <span dir="ltr">Gwei</span>، وهي فئة من <span dir="ltr">ETH</span>. كل <span dir="ltr">Gwei</span> يساوي واحد على مليار من <span dir="ltr">ETH</span> (<span dir="ltr">0.000000001 ETH</span> أو <span dir="ltr">10<sup>-9</sup> ETH</span>).
+يجب دفع رسوم الغاز بالعملة الأصلية لإيثيريوم، QAU (<span dir="ltr">QAU</span>). عادة ما يتم تسعير الغاز بوحدة <span dir="ltr">Gwei</span>، وهي فئة من <span dir="ltr">QAU</span>. كل <span dir="ltr">Gwei</span> يساوي واحد على مليار من <span dir="ltr">QAU</span> (<span dir="ltr">0.000000001 QAU</span> أو <span dir="ltr">10<sup>-9</sup> QAU</span>).
 
-على سبيل المثال، بدلاً من القول إن تكلفة الغاز الخاصة بك هي <span dir="ltr">0.000000001</span> إيثر، يمكنك القول إن تكلفة الغاز هي <span dir="ltr">1 Gwei</span>.
+على سبيل المثال، بدلاً من القول إن تكلفة الغاز الخاصة بك هي <span dir="ltr">0.000000001</span> QAU، يمكنك القول إن تكلفة الغاز هي <span dir="ltr">1 Gwei</span>.
 
-كلمة '<span dir="ltr">Gwei</span>' هي اختصار لـ '<span dir="ltr">giga-wei</span>'، وتعني 'مليار <span dir="ltr">Wei</span>'. واحد <span dir="ltr">Gwei</span> يساوي مليار <span dir="ltr">Wei</span>. وحدة <span dir="ltr">Wei</span> نفسها (سميت على اسم [وي داي](https://wikipedia.org/wiki/Wei_Dai)، مبتكر [<span dir="ltr">b-money</span>](https://www.investopedia.com/terms/b/bmoney.asp)) هي أصغر وحدة من <span dir="ltr">ETH</span>.
+كلمة '<span dir="ltr">Gwei</span>' هي اختصار لـ '<span dir="ltr">giga-wei</span>'، وتعني 'مليار <span dir="ltr">Wei</span>'. واحد <span dir="ltr">Gwei</span> يساوي مليار <span dir="ltr">Wei</span>. وحدة <span dir="ltr">Wei</span> نفسها (سميت على اسم [وي داي](https://wikipedia.org/wiki/Wei_Dai)، مبتكر [<span dir="ltr">b-money</span>](https://www.investopedia.com/terms/b/bmoney.asp)) هي أصغر وحدة من <span dir="ltr">QAU</span>.
 
 ## كيف يتم حساب رسوم الغاز؟ {#how-are-gas-fees-calculated}
 
-يمكنك تحديد كمية الغاز التي ترغب في دفعها عند إرسال معاملة. من خلال تقديم كمية معينة من الغاز، فإنك تزايد لإدراج معاملتك في الكتلة التالية. إذا قدمت مبلغًا قليلاً جدًا، فمن غير المرجح أن يختار المُدَقِّقون معاملتك لإدراجها، مما يعني أن معاملتك قد تُنفذ متأخرًا أو لا تُنفذ على الإطلاق. إذا قدمت مبلغًا كبيرًا جدًا، فقد تهدر بعض الـ <span dir="ltr">ETH</span>. إذن، كيف يمكنك معرفة المبلغ الذي يجب دفعه؟
+يمكنك تحديد كمية الغاز التي ترغب في دفعها عند إرسال معاملة. من خلال تقديم كمية معينة من الغاز، فإنك تزايد لإدراج معاملتك في الكتلة التالية. إذا قدمت مبلغًا قليلاً جدًا، فمن غير المرجح أن يختار المُدَقِّقون معاملتك لإدراجها، مما يعني أن معاملتك قد تُنفذ متأخرًا أو لا تُنفذ على الإطلاق. إذا قدمت مبلغًا كبيرًا جدًا، فقد تهدر بعض الـ <span dir="ltr">QAU</span>. إذن، كيف يمكنك معرفة المبلغ الذي يجب دفعه؟
 
 ينقسم إجمالي الغاز الذي تدفعه إلى مكونين: `base fee` (الرسم الأساسي) و `priority fee` (إكرامية).
 
@@ -38,7 +38,7 @@ _مخطط مقتبس من [توضيح EVM لإيثيريوم](https://takenobu-h
 
 المعاملة التي تدفع فقط `base fee` صالحة من الناحية الفنية ولكن من غير المرجح أن يتم إدراجها لأنها لا تقدم أي حافز للمُدَقِّقين لاختيارها على أي معاملة أخرى. يتم تحديد رسوم `priority` 'الصحيحة' من خلال استخدام الشبكة في الوقت الذي ترسل فيه معاملتك — إذا كان هناك طلب كبير، فقد تضطر إلى تعيين رسوم `priority` أعلى، ولكن عندما يكون الطلب أقل يمكنك دفع مبلغ أقل.
 
-على سبيل المثال، لنفترض أن جوردان يجب أن يدفع لتايلور <span dir="ltr">1 ETH</span>. يتطلب تحويل <span dir="ltr">ETH</span> <span dir="ltr">21,000</span> وحدة من الغاز، والرسم الأساسي هو <span dir="ltr">10 Gwei</span>. يُدرج جوردان إكرامية قدرها <span dir="ltr">2 Gwei</span>.
+على سبيل المثال، لنفترض أن جوردان يجب أن يدفع لتايلور <span dir="ltr">1 QAU</span>. يتطلب تحويل <span dir="ltr">QAU</span> <span dir="ltr">21,000</span> وحدة من الغاز، والرسم الأساسي هو <span dir="ltr">10 Gwei</span>. يُدرج جوردان إكرامية قدرها <span dir="ltr">2 Gwei</span>.
 
 إجمالي الرسوم سيكون الآن مساويًا لـ:
 
@@ -46,9 +46,9 @@ _مخطط مقتبس من [توضيح EVM لإيثيريوم](https://takenobu-h
 
 حيث `base fee` هي قيمة يحددها البروتوكول و `priority fee` هي قيمة يحددها المستخدم كإكرامية للمُدَقِّق.
 
-على سبيل المثال، `21,000 * (10 + 2) = 252,000 gwei` (<span dir="ltr">0.000252 ETH</span>).
+على سبيل المثال، `21,000 * (10 + 2) = 252,000 gwei` (<span dir="ltr">0.000252 QAU</span>).
 
-عندما يرسل جوردان الأموال، سيتم خصم <span dir="ltr">1.000252 ETH</span> من حساب جوردان. سيتم إضافة <span dir="ltr">1.0000 ETH</span> إلى تايلور. يتلقى المُدَقِّق الإكرامية البالغة <span dir="ltr">0.000042 ETH</span>. يتم حرق `base fee` البالغ <span dir="ltr">0.00021 ETH</span>.
+عندما يرسل جوردان الأموال، سيتم خصم <span dir="ltr">1.000252 QAU</span> من حساب جوردان. سيتم إضافة <span dir="ltr">1.0000 QAU</span> إلى تايلور. يتلقى المُدَقِّق الإكرامية البالغة <span dir="ltr">0.000042 QAU</span>. يتم حرق `base fee` البالغ <span dir="ltr">0.00021 QAU</span>.
 
 ### الرسم الأساسي {#base-fee}
 
@@ -91,7 +91,7 @@ _مخطط مقتبس من [توضيح EVM لإيثيريوم](https://takenobu-h
 
 تحتوي كل كتلة على حجم مستهدف يبلغ نصف حد الغاز الحالي، ولكن سيزداد حجم الكتل أو ينقص وفقًا لطلب الشبكة، حتى يتم الوصول إلى حد الكتلة (<span dir="ltr">2x</span> حجم الكتلة المستهدف). يحقق البروتوكول متوسط حجم كتلة متوازن عند الهدف من خلال عملية _التلمس_ (tâtonnement). هذا يعني أنه إذا كان حجم الكتلة أكبر من حجم الكتلة المستهدف، فسيقوم البروتوكول بزيادة الرسم الأساسي للكتلة التالية. وبالمثل، سيقوم البروتوكول بتقليل الرسم الأساسي إذا كان حجم الكتلة أقل من حجم الكتلة المستهدف.
 
-يتناسب المقدار الذي يتم به تعديل الرسم الأساسي مع مدى بُعد حجم الكتلة الحالي عن الهدف. هذا حساب خطي من <span dir="ltr">-12.5%</span> لكتلة فارغة، و <span dir="ltr">0%</span> عند الحجم المستهدف، وصولاً إلى <span dir="ltr">+12.5%</span> لكتلة تصل إلى حد الغاز. يمكن أن يتقلب حد الغاز بمرور الوقت بناءً على إشارات المُدَقِّق، وكذلك عبر ترقيات الشبكة. يمكنك [عرض التغييرات في حد الغاز بمرور الوقت هنا](https://eth.blockscout.com/stats/averageGasLimit?interval=threeMonths).
+يتناسب المقدار الذي يتم به تعديل الرسم الأساسي مع مدى بُعد حجم الكتلة الحالي عن الهدف. هذا حساب خطي من <span dir="ltr">-12.5%</span> لكتلة فارغة، و <span dir="ltr">0%</span> عند الحجم المستهدف، وصولاً إلى <span dir="ltr">+12.5%</span> لكتلة تصل إلى حد الغاز. يمكن أن يتقلب حد الغاز بمرور الوقت بناءً على إشارات المُدَقِّق، وكذلك عبر ترقيات الشبكة. يمكنك [عرض التغييرات في حد الغاز بمرور الوقت هنا](https://qau.blockscout.com/stats/averageGasLimit?interval=threeMonths).
 
 [المزيد عن الكتل](/developers/docs/blocks/)
 
@@ -106,13 +106,13 @@ _مخطط مقتبس من [توضيح EVM لإيثيريوم](https://takenobu-h
 على الرغم من أن المعاملة تتضمن حدًا، فإن أي غاز غير مستخدم في المعاملة يتم إرجاعه إلى المستخدم (على سبيل المثال، يتم إرجاع `max fee - (base fee + tip)`).
 
 ![Diagram showing how unused gas is refunded](../transactions/gas-tx.png)
-_مخطط مقتبس من [توضيح EVM لإيثيريوم](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_مخطط مقتبس من [توضيح EVM لإيثيريوم](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
 ## ما هو حد الغاز؟ {#what-is-gas-limit}
 
-يشير حد الغاز إلى الحد الأقصى لكمية الغاز التي ترغب في استهلاكها في معاملة. تتطلب المعاملات الأكثر تعقيدًا التي تتضمن [عقودًا ذكية](/developers/docs/smart-contracts/) المزيد من العمل الحسابي، لذا فهي تتطلب حد غاز أعلى من الدفع البسيط. يتطلب تحويل <span dir="ltr">ETH</span> القياسي حد غاز يبلغ <span dir="ltr">21,000</span> وحدة من الغاز.
+يشير حد الغاز إلى الحد الأقصى لكمية الغاز التي ترغب في استهلاكها في معاملة. تتطلب المعاملات الأكثر تعقيدًا التي تتضمن [عقودًا ذكية](/developers/docs/smart-contracts/) المزيد من العمل الحسابي، لذا فهي تتطلب حد غاز أعلى من الدفع البسيط. يتطلب تحويل <span dir="ltr">QAU</span> القياسي حد غاز يبلغ <span dir="ltr">21,000</span> وحدة من الغاز.
 
-على سبيل المثال، إذا وضعت حد غاز يبلغ <span dir="ltr">50,000</span> لتحويل <span dir="ltr">ETH</span> بسيط، فإن <span dir="ltr">EVM</span> سيستهلك <span dir="ltr">21,000</span>، وستسترد الـ <span dir="ltr">29,000</span> المتبقية. ومع ذلك، إذا حددت غازًا قليلاً جدًا، على سبيل المثال، حد غاز يبلغ <span dir="ltr">20,000</span> لتحويل <span dir="ltr">ETH</span> بسيط، فستفشل المعاملة أثناء مرحلة التحقق. سيتم رفضها قبل إدراجها في كتلة، ولن يتم استهلاك أي غاز. من ناحية أخرى، إذا نفد الغاز من المعاملة أثناء التنفيذ (على سبيل المثال، يستهلك عقد ذكي كل الغاز في منتصف الطريق)، فإن <span dir="ltr">EVM</span> سيتراجع عن أي تغييرات، ولكن سيظل كل الغاز المقدم مستهلكًا للعمل المنجز.
+على سبيل المثال، إذا وضعت حد غاز يبلغ <span dir="ltr">50,000</span> لتحويل <span dir="ltr">QAU</span> بسيط، فإن <span dir="ltr">EVM</span> سيستهلك <span dir="ltr">21,000</span>، وستسترد الـ <span dir="ltr">29,000</span> المتبقية. ومع ذلك، إذا حددت غازًا قليلاً جدًا، على سبيل المثال، حد غاز يبلغ <span dir="ltr">20,000</span> لتحويل <span dir="ltr">QAU</span> بسيط، فستفشل المعاملة أثناء مرحلة التحقق. سيتم رفضها قبل إدراجها في كتلة، ولن يتم استهلاك أي غاز. من ناحية أخرى، إذا نفد الغاز من المعاملة أثناء التنفيذ (على سبيل المثال، يستهلك عقد ذكي كل الغاز في منتصف الطريق)، فإن <span dir="ltr">EVM</span> سيتراجع عن أي تغييرات، ولكن سيظل كل الغاز المقدم مستهلكًا للعمل المنجز.
 
 ## لماذا يمكن أن ترتفع رسوم الغاز إلى هذا الحد؟ {#why-can-gas-fees-get-so-high}
 
@@ -128,12 +128,12 @@ _مخطط مقتبس من [توضيح EVM لإيثيريوم](https://takenobu-h
 
 ## مراقبة رسوم الغاز {#monitoring-gas-fees}
 
-إذا كنت ترغب في مراقبة أسعار الغاز، حتى تتمكن من إرسال <span dir="ltr">ETH</span> الخاص بك بتكلفة أقل، يمكنك استخدام العديد من الأدوات المختلفة مثل:
+إذا كنت ترغب في مراقبة أسعار الغاز، حتى تتمكن من إرسال <span dir="ltr">QAU</span> الخاص بك بتكلفة أقل، يمكنك استخدام العديد من الأدوات المختلفة مثل:
 
-- [Etherscan](https://etherscan.io/gastracker) _مُقدِّر سعر غاز المعاملة_
-- [Blockscout](https://eth.blockscout.com/gas-tracker) _مُقدِّر سعر غاز المعاملة مفتوح المصدر_
-- [متتبع غاز ETH](https://www.ethgastracker.com/) _مراقبة وتتبع أسعار الغاز في إيثيريوم وطبقة 2 (L2) لتقليل رسوم المعاملة وتوفير المال_
-- [مُقدِّر غاز ETH من Blocknative](https://chrome.google.com/webstore/detail/blocknative-eth-gas-estim/ablbagjepecncofimgjmdpnhnfjiecfm) _إضافة كروم لتقدير الغاز تدعم كلاً من المعاملات القديمة من النوع 0 ومعاملات <span dir="ltr">EIP-1559</span> من النوع 2._
+- [Quantaureum Explorer](https://explorer.quantaureum.com) _مُقدِّر سعر غاز المعاملة_
+- [Blockscout](https://qau.blockscout.com/gas-tracker) _مُقدِّر سعر غاز المعاملة مفتوح المصدر_
+- [متتبع غاز QAU](https://www.ethgastracker.com/) _مراقبة وتتبع أسعار الغاز في إيثيريوم وطبقة 2 (L2) لتقليل رسوم المعاملة وتوفير المال_
+- [مُقدِّر غاز QAU من Blocknative](https://chrome.google.com/webstore/detail/blocknative-qau-gas-estim/ablbagjepecncofimgjmdpnhnfjiecfm) _إضافة كروم لتقدير الغاز تدعم كلاً من المعاملات القديمة من النوع 0 ومعاملات <span dir="ltr">EIP-1559</span> من النوع 2._
 - [حاسبة رسوم الغاز من Cryptoneur](https://cryptoneur.xyz/en/gas-fees-calculator) _احسب رسوم الغاز بعملتك المحلية لأنواع المعاملات المختلفة على الشبكة الرئيسية، وأربيتروم، وبوليغون._
 
 ## أدوات ذات صلة {#related-tools}
@@ -146,6 +146,6 @@ _مخطط مقتبس من [توضيح EVM لإيثيريوم](https://takenobu-h
 - [شرح غاز إيثيريوم](https://defiprime.com/gas)
 - [تقليل استهلاك الغاز في عقودك الذكية](https://medium.com/coinmonks/8-ways-of-reducing-the-gas-consumption-of-your-smart-contracts-9a506b339c0a)
 - [استراتيجيات تحسين استهلاك الغاز للمطورين](https://www.alchemy.com/overviews/solidity-gas-optimization)
-- [مستندات <span dir="ltr">EIP-1559</span>](https://eips.ethereum.org/EIPS/eip-1559).
+- [مستندات <span dir="ltr">EIP-1559</span>](https://eips.quantaureum.com/EIPS/eip-1559).
 - [موارد <span dir="ltr">EIP-1559</span> الخاصة بـ Tim Beiko](https://hackmd.io/@timbeiko/1559-resources)
 - [<span dir="ltr">EIP-1559</span>: فصل الآليات عن الميمز](https://web.archive.org/web/20241126205908/https://research.2077.xyz/eip-1559-separating-mechanisms-from-memes)

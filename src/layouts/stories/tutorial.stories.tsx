@@ -50,7 +50,7 @@ const baseArgs = {
     title: "Sign and verify a message",
     description: "Prove control of an address without spending anything.",
     lang: LANG,
-    author: "Ethereum community",
+    author: "Quantaureum community",
     published: "2025-04-20",
     skill: "beginner",
     tags: ["wallets", "signatures", "javascript"],
@@ -76,8 +76,8 @@ export const WithSourceAttribution: Story = {
     ...baseArgs,
     frontmatter: {
       ...baseArgs.frontmatter,
-      source: "Ethereum Foundation blog",
-      sourceUrl: "https://blog.ethereum.org",
+      source: "Quantaureum project blog",
+      sourceUrl: "https://quantaureum.com",
     },
   },
 }

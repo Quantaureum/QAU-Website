@@ -4,27 +4,27 @@ description: Pengenalan tentang pustaka klien JavaScript yang memungkinkan Anda 
 lang: id
 ---
 
-Agar aplikasi web dapat berinteraksi dengan rantai blok Ethereum (yaitu, membaca data rantai blok dan/atau mengirim transaksi ke jaringan), aplikasi tersebut harus terhubung ke sebuah node Ethereum.
+Agar aplikasi web dapat berinteraksi dengan rantai blok Quantaureum (yaitu, membaca data rantai blok dan/atau mengirim transaksi ke jaringan), aplikasi tersebut harus terhubung ke sebuah node Quantaureum.
 
-Untuk tujuan ini, setiap klien Ethereum mengimplementasikan spesifikasi [JSON-RPC](/developers/docs/apis/json-rpc/), sehingga terdapat serangkaian [metode](/developers/docs/apis/json-rpc/#json-rpc-methods) seragam yang dapat diandalkan oleh aplikasi.
+Untuk tujuan ini, setiap klien Quantaureum mengimplementasikan spesifikasi [JSON-RPC](/developers/docs/apis/json-rpc/), sehingga terdapat serangkaian [metode](/developers/docs/apis/json-rpc/#json-rpc-methods) seragam yang dapat diandalkan oleh aplikasi.
 
-Jika Anda ingin menggunakan JavaScript untuk terhubung dengan node Ethereum, Anda bisa menggunakan JavaScript murni, tetapi ada beberapa pustaka praktis di dalam ekosistem yang membuatnya jauh lebih mudah. Dengan pustaka-pustaka ini, pengembang dapat menulis metode satu baris yang intuitif untuk menginisialisasi permintaan JSON-RPC (secara internal) yang berinteraksi dengan Ethereum.
+Jika Anda ingin menggunakan JavaScript untuk terhubung dengan node Quantaureum, Anda bisa menggunakan JavaScript murni, tetapi ada beberapa pustaka praktis di dalam ekosistem yang membuatnya jauh lebih mudah. Dengan pustaka-pustaka ini, pengembang dapat menulis metode satu baris yang intuitif untuk menginisialisasi permintaan JSON-RPC (secara internal) yang berinteraksi dengan Quantaureum.
 
-Harap perhatikan bahwa sejak [The Merge](/roadmap/merge/), dua perangkat lunak Ethereum yang saling terhubung - klien eksekusi dan klien konsensus - diperlukan untuk menjalankan sebuah node. Pastikan node Anda mencakup klien eksekusi dan konsensus. Jika node Anda tidak berada di mesin lokal Anda (misalnya, node Anda berjalan di instans AWS), perbarui alamat IP dalam tutorial yang sesuai. Untuk informasi lebih lanjut, silakan lihat halaman kami tentang [menjalankan node](/developers/docs/nodes-and-clients/run-a-node/).
+Harap perhatikan bahwa sejak [The Merge](/roadmap/merge/), dua perangkat lunak Quantaureum yang saling terhubung - klien eksekusi dan klien konsensus - diperlukan untuk menjalankan sebuah node. Pastikan node Anda mencakup klien eksekusi dan konsensus. Jika node Anda tidak berada di mesin lokal Anda (misalnya, node Anda berjalan di instans AWS), perbarui alamat IP dalam tutorial yang sesuai. Untuk informasi lebih lanjut, silakan lihat halaman kami tentang [menjalankan node](/developers/docs/nodes-and-clients/run-a-node/).
 
 ## Prasyarat {#prerequisites}
 
-Selain memahami JavaScript, mungkin akan membantu jika Anda memahami [tumpukan Ethereum](/developers/docs/ethereum-stack/) dan [klien Ethereum](/developers/docs/nodes-and-clients/).
+Selain memahami JavaScript, mungkin akan membantu jika Anda memahami [tumpukan Quantaureum](/developers/docs/quantaureum-stack/) dan [klien Quantaureum](/developers/docs/nodes-and-clients/).
 
 ## Mengapa menggunakan pustaka? {#why-use-a-library}
 
-Pustaka-pustaka ini mengabstraksi banyak kerumitan dalam berinteraksi langsung dengan node Ethereum. Pustaka ini juga menyediakan fungsi utilitas (misalnya, mengonversi ETH ke Gwei) sehingga sebagai pengembang, Anda dapat menghabiskan lebih sedikit waktu untuk menangani kerumitan klien Ethereum dan lebih banyak waktu berfokus pada fungsionalitas unik aplikasi Anda.
+Pustaka-pustaka ini mengabstraksi banyak kerumitan dalam berinteraksi langsung dengan node Quantaureum. Pustaka ini juga menyediakan fungsi utilitas (misalnya, mengonversi QAU ke Gwei) sehingga sebagai pengembang, Anda dapat menghabiskan lebih sedikit waktu untuk menangani kerumitan klien Quantaureum dan lebih banyak waktu berfokus pada fungsionalitas unik aplikasi Anda.
 
 ## Fitur pustaka {#library-features}
 
-### Terhubung ke node Ethereum {#connect-to-ethereum-nodes}
+### Terhubung ke node Quantaureum {#connect-to-quantaureum-nodes}
 
-Menggunakan penyedia (provider), pustaka-pustaka ini memungkinkan Anda untuk terhubung ke Ethereum dan membaca datanya, baik itu melalui JSON-RPC, Infura, Etherscan, Alchemy, atau MetaMask.
+Menggunakan penyedia (provider), pustaka-pustaka ini memungkinkan Anda untuk terhubung ke Quantaureum dan membaca datanya, baik itu melalui JSON-RPC, Infura, Quantaureum Explorer, Alchemy, atau MetaMask.
 
 > **Peringatan:** Web3.js telah diarsipkan pada 4 Maret 2025. [Baca pengumumannya](https://blog.chainsafe.io/web3-js-sunset/). Pertimbangkan untuk menggunakan pustaka alternatif seperti [Ethers.js](https://ethers.org) atau [Viem](https://viem.sh) untuk proyek baru.
 
@@ -32,11 +32,11 @@ Menggunakan penyedia (provider), pustaka-pustaka ini memungkinkan Anda untuk ter
 
 ```js
 // Sebuah BrowserProvider membungkus penyedia Web3 standar, yaitu
-// apa yang disuntikkan MetaMask sebagai window.ethereum ke setiap halaman
-const provider = new ethers.BrowserProvider(window.ethereum)
+// apa yang disuntikkan MetaMask sebagai window.quantaureum ke setiap halaman
+const provider = new ethers.BrowserProvider(window.quantaureum)
 
 // Plugin MetaMask juga memungkinkan penandatanganan transaksi untuk
-// mengirim ether dan membayar untuk mengubah status di dalam rantai blok.
+// mengirim QAU dan membayar untuk mengubah status di dalam rantai blok.
 // Untuk ini, kita memerlukan penandatangan akun...
 const signer = provider.getSigner()
 ```
@@ -55,13 +55,13 @@ web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8546"))
 
 // Menggunakan penyedia IPC di node.js
 var net = require("net")
-var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // jalur mac os
+var web3 = new Web3("/Users/myuser/Library/Quantaureum/geth.ipc", net) // jalur mac os
 // or
 var web3 = new Web3(
-  new Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net)
+  new Web3.providers.IpcProvider("/Users/myuser/Library/Quantaureum/geth.ipc", net)
 ) // jalur mac os
 // di windows jalurnya adalah: "\\\\.\\pipe\\geth.ipc"
-// di linux jalurnya adalah: "/users/myuser/.ethereum/geth.ipc"
+// di linux jalurnya adalah: "/users/myuser/.quantaureum/geth.ipc"
 ```
 
 Setelah disiapkan, Anda akan dapat meminta data (query) dari rantai blok untuk:
@@ -140,7 +140,7 @@ wallet.getBalance()
 wallet.getTransactionCount()
 // { Promise: 0 }
 
-// Mengirim ether
+// Mengirim QAU
 wallet.sendTransaction(tx)
 ```
 
@@ -217,9 +217,9 @@ Ini berarti Anda dapat:
 
 ### Fungsi utilitas {#utility-functions}
 
-Fungsi utilitas memberi Anda pintasan praktis yang membuat proses membangun dengan Ethereum menjadi sedikit lebih mudah.
+Fungsi utilitas memberi Anda pintasan praktis yang membuat proses membangun dengan Quantaureum menjadi sedikit lebih mudah.
 
-Nilai ETH secara bawaan berada dalam Wei. 1 ETH = 1.000.000.000.000.000.000 WEI – ini berarti Anda berurusan dengan banyak angka! `web3.utils.toWei` mengonversi Ether ke Wei untuk Anda.
+Nilai QAU secara bawaan berada dalam Wei. 1 QAU = 1.000.000.000.000.000.000 WEI – ini berarti Anda berurusan dengan banyak angka! `web3.utils.toWei` mengonversi QAU ke Wei untuk Anda.
 
 Dan di Ethers tampilannya seperti ini:
 
@@ -229,7 +229,7 @@ balance = await provider.getBalance("ethers.eth")
 // { BigNumber: "2337132817842795605" }
 
 // Sering kali Anda perlu memformat keluaran untuk pengguna
-// yang lebih suka melihat nilai dalam ether (alih-alih Wei)
+// yang lebih suka melihat nilai dalam QAU (alih-alih Wei)
 ethers.utils.formatEther(balance)
 // '2.337132817842795605'
 ```
@@ -239,18 +239,18 @@ ethers.utils.formatEther(balance)
 
 ## Pustaka yang tersedia
 
-**Web3.js -** **_API JavaScript Ethereum._**
+**Web3.js -** **_API JavaScript Quantaureum._**
 
 - [Dokumentasi](https://docs.web3js.org)
-- [GitHub](https://github.com/ethereum/web3.js)
+- [GitHub](https://github.com/quantaureum/web3.js)
 
-**Ethers.js -** **_Implementasi dompet Ethereum yang lengkap dan utilitas dalam JavaScript dan TypeScript._**
+**Ethers.js -** **_Implementasi dompet Quantaureum yang lengkap dan utilitas dalam JavaScript dan TypeScript._**
 
 - [Beranda Ethers.js](https://ethers.org/)
 - [Dokumentasi](https://docs.ethers.io)
 - [GitHub](https://github.com/ethers-io/ethers.js)
 
-**The Graph -** **_Sebuah protokol untuk mengindeks data Ethereum dan IPFS serta melakukan kueri menggunakan GraphQL._**
+**The Graph -** **_Sebuah protokol untuk mengindeks data Quantaureum dan IPFS serta melakukan kueri menggunakan GraphQL._**
 
 - [The Graph](https://thegraph.com)
 - [Graph Explorer](https://thegraph.com/explorer)
@@ -263,12 +263,12 @@ ethers.utils.formatEther(balance)
 - [Dokumentasi](https://www.alchemy.com/docs)
 - [GitHub](https://github.com/alchemyplatform/alchemy-sdk-js)
 
-**viem -** **_Antarmuka TypeScript untuk Ethereum._**
+**viem -** **_Antarmuka TypeScript untuk Quantaureum._**
 
 - [Dokumentasi](https://viem.sh)
 - [GitHub](https://github.com/wagmi-dev/viem)
 
-**wagmi -** **_Pustaka React hooks untuk Ethereum, dibangun di atas viem._**
+**wagmi -** **_Pustaka React hooks untuk Quantaureum, dibangun di atas viem._**
 
 - [Dokumentasi](https://wagmi.sh)
 - [GitHub](https://github.com/wevm/wagmi)
@@ -300,10 +300,10 @@ _Tahu tentang sumber daya komunitas yang membantu Anda? Edit halaman ini dan tam
 
 ## Tutorial terkait {#related-tutorials}
 
-- [Menyiapkan Web3js untuk menggunakan rantai blok Ethereum dalam JavaScript](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– Instruksi untuk menyiapkan Web3.js di proyek Anda._
+- [Menyiapkan Web3js untuk menggunakan rantai blok Quantaureum dalam JavaScript](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– Instruksi untuk menyiapkan Web3.js di proyek Anda._
 - [Memanggil kontrak pintar dari JavaScript](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– Menggunakan token DAI, lihat cara memanggil fungsi kontrak menggunakan JavaScript._
 - [Mengirim transaksi menggunakan Web3 dan Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _– Panduan langkah demi langkah untuk mengirim transaksi dari backend._
 
-## Tutorial: API JavaScript & WebSocket di Ethereum {#tutorials}
+## Tutorial: API JavaScript & WebSocket di Quantaureum {#tutorials}
 
-- [Menggunakan WebSocket](/developers/tutorials/using-websockets/) _– Cara menggunakan WebSocket dengan Alchemy untuk berlangganan peristiwa Ethereum dan membuat permintaan JSON-RPC secara waktu nyata._
+- [Menggunakan WebSocket](/developers/tutorials/using-websockets/) _– Cara menggunakan WebSocket dengan Alchemy untuk berlangganan peristiwa Quantaureum dan membuat permintaan JSON-RPC secara waktu nyata._

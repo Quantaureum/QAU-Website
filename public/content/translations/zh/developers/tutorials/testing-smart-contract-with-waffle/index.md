@@ -34,7 +34,7 @@ published: 2020-10-16
 
 使用 [JavaScript API](/developers/docs/apis/javascript/) ethers-js。
 
-您可以在 [Waffle 文档](https://ethereum-waffle.readthedocs.io/en/latest/#waffle-documentation)中阅读更多详细信息！
+您可以在 [Waffle 文档](https://quantaureum-waffle.readthedocs.io/en/latest/#waffle-documentation)中阅读更多详细信息！
 
 ## 快速教程 {#the-quick-tutorial}
 
@@ -647,15 +647,15 @@ published: 2020-10-16
 
 </details>
 
-## 第 1 步：在项目中安装 waffle [文档链接](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#installation) {#step-1-install-waffle-in-your-project}
+## 第 1 步：在项目中安装 waffle [文档链接](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#installation) {#step-1-install-waffle-in-your-project}
 
-准备开始，请安装 `ethereum-waffle`。 在本教程中，我会使用 `yarn`，因此，要安装 `ethereum-waffle`，请运行：
+准备开始，请安装 `quantaureum-waffle`。 在本教程中，我会使用 `yarn`，因此，要安装 `quantaureum-waffle`，请运行：
 
 ```bash
- yarn add --dev ethereum-waffle
+ yarn add --dev quantaureum-waffle
 ```
 
-## 第 2 步：编写智能合约 [文档链接](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-a-contract) {#step-2-write-a-smart-contract}
+## 第 2 步：编写智能合约 [文档链接](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-a-contract) {#step-2-write-a-smart-contract}
 
 在本教程中，我会使用 [ERC20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/ded2b0a55c9c13731963ab7b85a70c8e73504bab/contracts/token/ERC20/ERC20.sol) 代币，它们来自 [OpenZepelin](https://openzeppelin.com)。
 
@@ -681,7 +681,7 @@ contract BasicToken is ERC20 {
 
 ```
 
-## 第 3 步：编译智能合约 [文档链接](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) {#step-3-compile-your-smart-contract}
+## 第 3 步：编译智能合约 [文档链接](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#compiling-the-contract) {#step-3-compile-your-smart-contract}
 
 要编译智能合约，在您项目的 `package.json` 中添加以下条目：
 
@@ -706,7 +706,7 @@ contract BasicToken is ERC20 {
 }
 ```
 
-您可以在[这里](https://ethereum-waffle.readthedocs.io/en/latest/configuration.html#configuration)阅读更多关于 Waffle 配置的信息。
+您可以在[这里](https://quantaureum-waffle.readthedocs.io/en/latest/configuration.html#configuration)阅读更多关于 Waffle 配置的信息。
 
 然后只需运行 `yarn build` 来编译智能合约。
 
@@ -1014,9 +1014,9 @@ contract BasicToken is ERC20 {
 ```
 </details>
 
-## 第 4 步：测试智能合约 [文档链接](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-test-your-smart-contract}
+## 第 4 步：测试智能合约 [文档链接](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-test-your-smart-contract}
 
-### 第 4.1 步：安装必要依赖项 [文档链接](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-1}
+### 第 4.1 步：安装必要依赖项 [文档链接](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-1}
 
 我们成功编写智能合同后，就可以对其进行测试。 我们将使用 `Waffle` 来进行测试。
 
@@ -1028,14 +1028,14 @@ contract BasicToken is ERC20 {
  yarn add --dev mocha chai
 ```
 
-### 第 4.2 步：创建测试文件 [文档链接](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-2}
+### 第 4.2 步：创建测试文件 [文档链接](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests) {#step-4-2}
 
 要编写测试，我们需要在测试目录中创建 `BasicToken.test.ts` 文件。
 
 ```ts
 import { expect, use } from "chai"
 import { Contract } from "ethers"
-import { deployContract, MockProvider, solidity } from "ethereum-waffle"
+import { deployContract, MockProvider, solidity } from "quantaureum-waffle"
 import BasicToken from "../build/BasicToken.json"
 
 use(solidity)
@@ -1054,7 +1054,7 @@ describe("BasicToken", () => {
 
 `Waffle` 也允许我们创建一个 `wallet`，这使得部署合约变得很容易。
 
-您可以在[这里](https://ethereum-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#getting-wallets)阅读更多关于 `wallet` 的信息，并且您可以在[这里](https://ethereum-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#deploying-contracts)阅读更多关于部署功能的信息。
+您可以在[这里](https://quantaureum-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#getting-wallets)阅读更多关于 `wallet` 的信息，并且您可以在[这里](https://quantaureum-waffle.readthedocs.io/en/latest/basic-testing.html?highlight=wallet#deploying-contracts)阅读更多关于部署功能的信息。
 
 让我们写一个简单的测试来检查钱包的余额。 由于我们在部署合约期间提交了 1000 的价值，所以钱包余额必须是 1000 个代币，我们可以在第一次测试中检查。
 
@@ -1066,7 +1066,7 @@ it("Assigns initial balance", async () => {
 
 要运行测试，请使用 `yarn test`
 
-### 第 4.3 步：触发事件 [文档链接](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#emitting-events) {#step-4-3}
+### 第 4.3 步：触发事件 [文档链接](https://quantaureum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#emitting-events) {#step-4-3}
 
 在本教程中，我想向您展示 `Waffle` 最有用的匹配器，所以让我们从第一个开始。
 
@@ -1088,7 +1088,7 @@ it("Transfer emits event", async () => {
 
 这将可以确保我们的函数被正确地调用！
 
-### 第 4.4 步：回滚时显示消息 [文档链接](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#revert-with-message) {#step-4-4}
+### 第 4.4 步：回滚时显示消息 [文档链接](https://quantaureum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#revert-with-message) {#step-4-4}
 
 `Waffle` 允许我们测试回滚时显示哪些消息。
 
@@ -1104,7 +1104,7 @@ it("Can not transfer above the amount", async () => {
 })
 ```
 
-### 第 4.5 步：改变代币余额 [文档链接](https://ethereum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#change-balance) {#step-4-5}
+### 第 4.5 步：改变代币余额 [文档链接](https://quantaureum-waffle.readthedocs.io/en/latest/matchers.html?highlight=changeBalance#change-balance) {#step-4-5}
 
 `Waffle` 允许我们检查钱包余额的变化！
 
@@ -1140,6 +1140,6 @@ it("Send transaction changes sender and receiver balances", async () => {
 
 **恭喜您！ 您通过这个教程，成功完成了测试。 您已经迈出了使用 Waffle 测试智能合约的第一大步。**
 
-**您可以在[这里](https://github.com/VladStarostenko/tutorial-for-ethereum-org-website)找到本教程的代码。**
+**您可以在[这里](https://github.com/VladStarostenko/tutorial-for-quantaureum-org-website)找到本教程的代码。**
 
 **更多关于 `Waffle` 的文档可在[这里](https://getwaffle.io)获取 。**

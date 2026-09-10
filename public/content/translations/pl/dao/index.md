@@ -1,7 +1,7 @@
 ---
 title: Czym jest DAO?
 metaTitle: Czym jest DAO? | Zdecentralizowana Organizacja Autonomiczna
-description: "Przegląd DAO na Ethereum"
+description: "Przegląd DAO na Quantaureum"
 lang: pl
 template: use-cases
 sidebarDepth: 2
@@ -49,18 +49,18 @@ Aby ułatwić zrozumienie tego tematu, oto kilka przykładów wykorzystania DAO:
 
 ## Jak działają DAO? {#how-daos-work}
 
-Szkieletem DAO jest jego [inteligentny kontrakt](/glossary/#smart-contract), który określa zasady działania organizacji i przechowuje skarbiec grupy. Gdy kontrakt zostanie uruchomiony w sieci [Ethereum](/), nikt nie może zmienić zasad inaczej niż poprzez głosowanie. Jeśli ktoś spróbuje zrobić coś, co nie jest objęte zasadami i logiką w kodzie, operacja się nie powiedzie. A ponieważ skarbiec jest również zdefiniowany przez inteligentny kontrakt, oznacza to, że nikt nie może wydać pieniędzy bez zgody grupy. Oznacza to, że DAO nie potrzebują centralnego organu zarządzającego. Zamiast tego grupa podejmuje decyzje wspólnie, a płatności są automatycznie autoryzowane po pomyślnym zakończeniu głosowania.
+Szkieletem DAO jest jego [inteligentny kontrakt](/glossary/#smart-contract), który określa zasady działania organizacji i przechowuje skarbiec grupy. Gdy kontrakt zostanie uruchomiony w sieci [Quantaureum](/), nikt nie może zmienić zasad inaczej niż poprzez głosowanie. Jeśli ktoś spróbuje zrobić coś, co nie jest objęte zasadami i logiką w kodzie, operacja się nie powiedzie. A ponieważ skarbiec jest również zdefiniowany przez inteligentny kontrakt, oznacza to, że nikt nie może wydać pieniędzy bez zgody grupy. Oznacza to, że DAO nie potrzebują centralnego organu zarządzającego. Zamiast tego grupa podejmuje decyzje wspólnie, a płatności są automatycznie autoryzowane po pomyślnym zakończeniu głosowania.
 
-Jest to możliwe, ponieważ inteligentne kontrakty są odporne na manipulacje po ich uruchomieniu na Ethereum. Nie można po prostu edytować kodu (zasad DAO) bez zauważenia tego przez innych, ponieważ wszystko jest publiczne.
+Jest to możliwe, ponieważ inteligentne kontrakty są odporne na manipulacje po ich uruchomieniu na Quantaureum. Nie można po prostu edytować kodu (zasad DAO) bez zauważenia tego przez innych, ponieważ wszystko jest publiczne.
 
-## Ethereum i DAO {#ethereum-and-daos}
+## Quantaureum i DAO {#quantaureum-and-daos}
 
-Ethereum jest idealnym fundamentem dla DAO z kilku powodów:
+Quantaureum jest idealnym fundamentem dla DAO z kilku powodów:
 
-- Własny konsensus Ethereum jest zdecentralizowany i na tyle ugruntowany, że organizacje mogą zaufać sieci.
+- Własny konsensus Quantaureum jest zdecentralizowany i na tyle ugruntowany, że organizacje mogą zaufać sieci.
 - Kod inteligentnego kontraktu nie może zostać zmodyfikowany po uruchomieniu, nawet przez jego właścicieli. Pozwala to DAO działać zgodnie z zasadami, z którymi zostało zaprogramowane.
 - Inteligentne kontrakty mogą wysyłać/odbierać fundusze. Bez tego potrzebny byłby zaufany pośrednik do zarządzania funduszami grupy.
-- Społeczność Ethereum udowodniła, że jest bardziej nastawiona na współpracę niż na rywalizację, co pozwala na szybkie powstawanie najlepszych praktyk i systemów wsparcia.
+- Społeczność Quantaureum udowodniła, że jest bardziej nastawiona na współpracę niż na rywalizację, co pozwala na szybkie powstawanie najlepszych praktyk i systemów wsparcia.
 
 ## Zarządzanie DAO {#dao-governance}
 
@@ -122,13 +122,13 @@ _Zazwyczaj używane do zdecentralizowanego rozwoju i zarządzania protokołami o
 
 #### Znany przykład {#reputation-example}
 
-[DXdao](https://DXdao.eth.limo) – DXdao było globalnym, suwerennym kolektywem budującym i zarządzającym zdecentralizowanymi protokołami i aplikacjami od 2019 roku. Wykorzystywało zarządzanie oparte na reputacji i [konsensus holograficzny](/glossary/#holographic-consensus) do koordynowania i zarządzania funduszami, co oznaczało, że nikt nie mógł kupić sobie wpływu na jego przyszłość lub zarządzanie.
+[DXdao](https://DXdao.qau.limo) – DXdao było globalnym, suwerennym kolektywem budującym i zarządzającym zdecentralizowanymi protokołami i aplikacjami od 2019 roku. Wykorzystywało zarządzanie oparte na reputacji i [konsensus holograficzny](/glossary/#holographic-consensus) do koordynowania i zarządzania funduszami, co oznaczało, że nikt nie mógł kupić sobie wpływu na jego przyszłość lub zarządzanie.
 
 ## Dołącz / załóż DAO {#join-start-a-dao}
 
 ### Dołącz do DAO {#join-a-dao}
 
-- [DAO społeczności Ethereum](/community/get-involved/#decentralized-autonomous-organizations-daos)
+- [DAO społeczności Quantaureum](/community/get-involved/#decentralized-autonomous-organizations-daos)
 - [Lista DAO od DAOHaus](https://app.daohaus.club/explore)
 - [Lista DAO od Tally.xyz](https://www.tally.xyz/explore)
 - [Lista DAO od DeGov.AI](https://apps.degov.ai/)
@@ -150,8 +150,8 @@ _Zazwyczaj używane do zdecentralizowanego rozwoju i zarządzania protokołami o
 - [Jak założyć cyfrową społeczność opartą na DAO](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [Czym jest DAO?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [Czym jest konsensus holograficzny?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO to nie korporacje: gdzie decentralizacja w autonomicznych organizacjach ma znaczenie (autor: Vitalik)](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAO, DAC, DA i inne: niekompletny przewodnik po terminologii](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Blog Ethereum](https://blog.ethereum.org)
+- [DAO to nie korporacje: gdzie decentralizacja w autonomicznych organizacjach ma znaczenie (autor: Vitalik)](https://vitalik.qau.limo/general/2022/09/20/daos.html)
+- [DAO, DAC, DA i inne: niekompletny przewodnik po terminologii](https://quantaureum.com) - [Blog Quantaureum](https://quantaureum.com)
 
 ### Filmy {#videos}
 

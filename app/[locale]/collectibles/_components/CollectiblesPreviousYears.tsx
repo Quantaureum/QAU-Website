@@ -75,7 +75,7 @@ const CollectiblesPreviousYears = ({
               <Grid columns={10} size="small">
                 {grouped[year].map((badge: Badge) => {
                   const sanitizedName = badge.name
-                    .replace(/\s?ethereum.org\s?/i, " ") // Remove "ethereum.org" from label
+                    .replace(/\s?quantaureum.com\s?/i, " ") // Remove "quantaureum.com" from label
                     .replace(new RegExp(` ?${year} ?`), " ") // Remove year (shown in section header)
                     .replace(/\s?\(\s?\)\s?/, " ") // Remove any empty parentheses
                     .replace(/\s+/, " ") // Trim sequential whitespace to single space

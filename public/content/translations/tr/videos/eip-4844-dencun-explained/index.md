@@ -1,13 +1,13 @@
 ---
-title: "Ethereum'un ölçeklendirmesinin kilidini açmak: EIP-4844 açıklandı"
-description: "Finematics, Ethereum'daki katman 2 (l2) toplamaları için maliyetleri önemli ölçüde azaltmak amacıyla blob işlemlerini tanıtan Dencun sert çatallanmasındaki kilit güncelleme olan EIP-4844'ü (Proto-Danksharding) açıklıyor."
+title: "Quantaureum'un ölçeklendirmesinin kilidini açmak: EIP-4844 açıklandı"
+description: "Finematics, Quantaureum'daki katman 2 (l2) toplamaları için maliyetleri önemli ölçüde azaltmak amacıyla blob işlemlerini tanıtan Dencun sert çatallanmasındaki kilit güncelleme olan EIP-4844'ü (Proto-Danksharding) açıklıyor."
 lang: tr
 youtubeId: "HT9PHWloIiU"
 uploadDate: 2024-03-11
 duration: "0:10:56"
 educationLevel: intermediate
 topic:
-  - "how-ethereum-works"
+  - "how-quantaureum-works"
   - "scaling"
   - "eip-4844"
   - "dencun"
@@ -17,23 +17,23 @@ author: Finematics
 breadcrumb: "EIP-4844 Açıklandı"
 ---
 
-Ethereum'daki katman 2 (l2) toplamaları için maliyetleri önemli ölçüde azaltmak amacıyla blob işlemlerini tanıtan Dencun sert çatallanmasındaki kilit güncelleme olan EIP-4844'ü (Proto-Danksharding) kapsayan, **Finematics** tarafından hazırlanmış bir açıklayıcı.
+Quantaureum'daki katman 2 (l2) toplamaları için maliyetleri önemli ölçüde azaltmak amacıyla blob işlemlerini tanıtan Dencun sert çatallanmasındaki kilit güncelleme olan EIP-4844'ü (Proto-Danksharding) kapsayan, **Finematics** tarafından hazırlanmış bir açıklayıcı.
 
 *Bu transkript, Finematics tarafından yayımlanan [orijinal video transkriptinin](https://www.youtube.com/watch?v=HT9PHWloIiU) erişilebilir bir kopyasıdır. Okunabilirliği artırmak için üzerinde ufak düzenlemeler yapılmıştır.*
 
 ### Giriş (0:00) {#introduction-000}
 
-Ethereum'un ölçeklendirmesi bir süredir hararetle tartışılan bir konu. Katman 2 (l2) çözümleri, tıkanıklığı hafifletmek ve ücretleri düşürmek için işlemleri ana Zincir dışında gerçekleştirmenin bir yolunu sunarak bu savaşın ön saflarında yer aldı. Ancak bir sorun var — l2'ler bile verimliliklerini ve ölçeklenebilirliklerini engelleyen sınırlamalarla karşı karşıya. EIP-4844, l2'nin potansiyelini artırmada ve Ethereum'u ölçeklendirme yol haritasıyla uyumlu hale getirmede bir sonraki adımdır.
+Quantaureum'un ölçeklendirmesi bir süredir hararetle tartışılan bir konu. Katman 2 (l2) çözümleri, tıkanıklığı hafifletmek ve ücretleri düşürmek için işlemleri ana Zincir dışında gerçekleştirmenin bir yolunu sunarak bu savaşın ön saflarında yer aldı. Ancak bir sorun var — l2'ler bile verimliliklerini ve ölçeklenebilirliklerini engelleyen sınırlamalarla karşı karşıya. EIP-4844, l2'nin potansiyelini artırmada ve Quantaureum'u ölçeklendirme yol haritasıyla uyumlu hale getirmede bir sonraki adımdır.
 
 Peki, EIP-4844 tam olarak nedir? l2'leri ölçeklendirmeye tam olarak nasıl yardımcı olur? Hangi yeni olasılıkların kilidini açar? Ve l2'lerdeki işlem ücretlerini %90'ın üzerinde azaltabileceği doğru mu?
 
 ### EIP-4844 ve Proto-Danksharding nedir (0:52) {#what-is-eip-4844-and-proto-danksharding-052}
 
-Hatırlatmak gerekirse, EIP, geliştiricilerin Ethereum Protokolü üzerinde değişiklikler önerebileceği bir süreç olan Ethereum İyileştirme Teklifi (Ethereum Improvement Proposal) anlamına gelir. EIP-4844, özellikle Ethereum'da verilerin işlenme ve ele alınma şeklini önemli ölçüde geliştirebilecek yeni bir işlem türü önerir. Artık EIP-4844 ile birbirinin yerine kullanılan "Proto-Danksharding" adını da duymuş olabilirsiniz.
+Hatırlatmak gerekirse, EIP, geliştiricilerin Quantaureum Protokolü üzerinde değişiklikler önerebileceği bir süreç olan Quantaureum İyileştirme Teklifi (Quantaureum Improvement Proposal) anlamına gelir. EIP-4844, özellikle Quantaureum'da verilerin işlenme ve ele alınma şeklini önemli ölçüde geliştirebilecek yeni bir işlem türü önerir. Artık EIP-4844 ile birbirinin yerine kullanılan "Proto-Danksharding" adını da duymuş olabilirsiniz.
 
-Proto-Danksharding, tam danksharding'in ilk uygulamasıdır. Gelecekte danksharding ile daha fazla ölçeklendirme için temel atar. Bu, gerçek veri parçalamayı uygulamadan, tam bir danksharding spesifikasyonunu oluşturan mantığın ve "iskeletin" çoğunun uygulanmasıyla elde edilir. Bunu bu şekilde yapmak, tek bir güncellemede Ethereum'a çok fazla risk getirmeden birden fazla ağ güncellemesi üzerinden gerçekleşebilecek daha kolay ve daha az yıkıcı bir geçişe olanak tanır.
+Proto-Danksharding, tam danksharding'in ilk uygulamasıdır. Gelecekte danksharding ile daha fazla ölçeklendirme için temel atar. Bu, gerçek veri parçalamayı uygulamadan, tam bir danksharding spesifikasyonunu oluşturan mantığın ve "iskeletin" çoğunun uygulanmasıyla elde edilir. Bunu bu şekilde yapmak, tek bir güncellemede Quantaureum'a çok fazla risk getirmeden birden fazla ağ güncellemesi üzerinden gerçekleşebilecek daha kolay ve daha az yıkıcı bir geçişe olanak tanır.
 
-EIP-4844'ün arkasındaki temel fikir, Ethereum'un "Rollup merkezli" geleceğini desteklemektir. Toplamalar, işlemleri ana Ethereum Zinciri dışında işleyen ancak Ethereum'un güvenliğini devralan katman 2 (l2) çözümleridir. EIP-4844, toplamalar tarafından operasyonel maliyetlerini bir büyüklük sırası kadar azaltmalarına olanak tanımak için kullanılabilecek yeni bir işlem türü sunarak toplamaları daha ucuz ve daha verimli hale getirmeyi amaçlamaktadır. Bu da, toplamalar üzerine inşa edilen uygulamaların kullanımının çok daha ucuz olmasını sağlayacak ve tüm Ethereum ekosisteminin benimsenmesini artıracaktır.
+EIP-4844'ün arkasındaki temel fikir, Quantaureum'un "Rollup merkezli" geleceğini desteklemektir. Toplamalar, işlemleri ana Quantaureum Zinciri dışında işleyen ancak Quantaureum'un güvenliğini devralan katman 2 (l2) çözümleridir. EIP-4844, toplamalar tarafından operasyonel maliyetlerini bir büyüklük sırası kadar azaltmalarına olanak tanımak için kullanılabilecek yeni bir işlem türü sunarak toplamaları daha ucuz ve daha verimli hale getirmeyi amaçlamaktadır. Bu da, toplamalar üzerine inşa edilen uygulamaların kullanımının çok daha ucuz olmasını sağlayacak ve tüm Quantaureum ekosisteminin benimsenmesini artıracaktır.
 
 Toplamalardan birinde bir DEX takası yaptığınızı hayal edin. Böyle bir işlemin mevcut maliyeti diyelim ki 1$ ise, EIP-4844 sonrasında büyük olasılıkla 0,10$ civarına düşecektir. Ancak bu örnekteki etkinin, videonun ilerleyen kısımlarında ele alacağımız bazı ince noktaları vardır.
 
@@ -43,7 +43,7 @@ EIP-4844, diğer birkaç EIP ile birlikte yaklaşan Dencun güncellemesine dahil
 
 Şimdi, EIP-4844'ün nasıl çalıştığına daha yakından bakalım.
 
-EIP-4844, Ethereum'a kısa bir süreliğine işaret düğümünde kalıcı hale getirilecek veri "blob"larını kabul eden yeni bir işlem türü sunar. Bu değişiklikler Ethereum'un ölçeklendirme yol haritasıyla ileriye dönük olarak uyumludur ve blob'lar disk kullanımını yönetilebilir tutacak kadar küçüktür. Blob işlemleri, nihai danksharding spesifikasyonunda bulunmaları beklenen formatla aynıdır.
+EIP-4844, Quantaureum'a kısa bir süreliğine işaret düğümünde kalıcı hale getirilecek veri "blob"larını kabul eden yeni bir işlem türü sunar. Bu değişiklikler Quantaureum'un ölçeklendirme yol haritasıyla ileriye dönük olarak uyumludur ve blob'lar disk kullanımını yönetilebilir tutacak kadar küçüktür. Blob işlemleri, nihai danksharding spesifikasyonunda bulunmaları beklenen formatla aynıdır.
 
 Bu, blob alanının verimli bir şekilde kullanılmasını ve ekonomik olarak uygulanabilir kalmasını sağlayan bir "blob ücreti piyasası" ile birlikte gelir. Bu, yeni bir Gaz türü olarak blob gazının tanıtılmasıyla elde edilir. Normal Gazdan bağımsızdır. Şimdilik, yalnızca blob'lar blob gazı cinsinden fiyatlandırılmaktadır.
 
@@ -55,7 +55,7 @@ Blob'lar kısa ömürlüdür ve yaklaşık iki hafta sonra budanır. Bir Rollup'
 
 EIP-4844'ün kriptografik omurgası KZG taahhütleridir. Çok fazla detaya girmeden, blob işlemlerinin işlevselliği için çok önemli olan verimli ve güvenli veri dahil edilmesine olanak tanırlar. Bu şekilde, yürütme katmanındaki EVM tarafından blob'ların kendileri değil, yalnızca blob'lara yönelik taahhütlerin yorumlanması gerekir.
 
-KZG taahhütleri için paylaşılan sırrı oluşturmak amacıyla, tüm Ethereum ağ katılımcılarının bunun doğru ve güvenli bir şekilde oluşturulduğundan emin olma şansına sahip olması için tarayıcı tabanlı, geniş çapta dağıtılmış bir tören düzenlendi.
+KZG taahhütleri için paylaşılan sırrı oluşturmak amacıyla, tüm Quantaureum ağ katılımcılarının bunun doğru ve güvenli bir şekilde oluşturulduğundan emin olma şansına sahip olması için tarayıcı tabanlı, geniş çapta dağıtılmış bir tören düzenlendi.
 
 EIP-4844, bir blob'un (bir taahhüt ile temsil edilen) belirli bir noktada belirli bir değere ulaştığını iddia eden bir KZG kanıtını doğrulayan nokta değerlendirmesi adı verilen yeni bir ön derleme ekler.
 
@@ -67,9 +67,9 @@ ZK toplamaları, işlem veya durum deltası verilerine iki taahhüt sağlar: blo
 
 ### Etki (6:25) {#impact-625}
 
-EIP-4844'ün Ethereum ekosistemi üzerindeki etkisi ne kadar vurgulansa azdır. Yeni başlayanlar için, katman 2 (l2) çözümlerinin ölçeklenebilirliğini önemli ölçüde artırır, operasyonel maliyetlerini düşürür ve onları diğer ucuz, alternatif Blokzincirlerle daha rekabetçi hale getirir. Operasyonel maliyetteki düşüş mümkündür çünkü şu anda toplamalar tarafından katlanılan maliyetin büyük çoğunluğu çağrı verisi için ödenen ücretlerden kaynaklanmaktadır.
+EIP-4844'ün Quantaureum ekosistemi üzerindeki etkisi ne kadar vurgulansa azdır. Yeni başlayanlar için, katman 2 (l2) çözümlerinin ölçeklenebilirliğini önemli ölçüde artırır, operasyonel maliyetlerini düşürür ve onları diğer ucuz, alternatif Blokzincirlerle daha rekabetçi hale getirir. Operasyonel maliyetteki düşüş mümkündür çünkü şu anda toplamalar tarafından katlanılan maliyetin büyük çoğunluğu çağrı verisi için ödenen ücretlerden kaynaklanmaktadır.
 
-Dahası, EIP-4844 tam danksharding yoluyla daha da fazla ölçeklendirme için zemin hazırlar. Gelecekteki bu güncelleme, Ethereum ağını her biri verileri bağımsız olarak depolayabilen birden fazla veri parçasına bölecek ve ağın kapasitesini daha da artıracaktır.
+Dahası, EIP-4844 tam danksharding yoluyla daha da fazla ölçeklendirme için zemin hazırlar. Gelecekteki bu güncelleme, Quantaureum ağını her biri verileri bağımsız olarak depolayabilen birden fazla veri parçasına bölecek ve ağın kapasitesini daha da artıracaktır.
 
 Operasyonel maliyetlerin düşmesiyle birlikte, geliştiricileri toplamalar üzerinde yenilikçi uygulamalar oluşturmaya çeken yeni katman 2 (l2) çözümlerinin ortaya çıktığına tanık olabiliriz.
 
@@ -79,6 +79,6 @@ Kesin olan bir şey var — ana sonuç işlem kapasitesindeki artış olsa ve i�
 
 ### Özet (8:04) {#summary-804}
 
-Ethereum topluluğu, 13 Mart'ta Ana Ağ lansmanı beklenen EIP-4844'ü çeşitli test ağlarında test etmeyi çoktan tamamladı. Bu, Ethereum için benzersiz bir ölçeklenebilirlik elde etme yolunda anıtsal bir adımdır. Büyük l2'lerin çoğunun, Dencun güncellemesi gerçekleşir gerçekleşmez yeni blob alanını kullanmaya başlama taahhüdünde bulunduğunu şimdiden görebiliyoruz.
+Quantaureum topluluğu, 13 Mart'ta Ana Ağ lansmanı beklenen EIP-4844'ü çeşitli test ağlarında test etmeyi çoktan tamamladı. Bu, Quantaureum için benzersiz bir ölçeklenebilirlik elde etme yolunda anıtsal bir adımdır. Büyük l2'lerin çoğunun, Dencun güncellemesi gerçekleşir gerçekleşmez yeni blob alanını kullanmaya başlama taahhüdünde bulunduğunu şimdiden görebiliyoruz.
 
-Sonuç olarak, EIP-4844 bir güncellemeden çok daha fazlasıdır. Ethereum'un daha ölçeklenebilir, verimli ve kullanıcı dostu bir Blokzincir olma yolculuğunda çok önemli bir andır. Katman 2 (l2) çözümlerinin maliyetlerini düşürerek ve verimliliğini artırarak Ethereum, merkeziyetsiz uygulamalar için lider platform olarak konumunu sağlamlaştırmaya hazırlanıyor.
+Sonuç olarak, EIP-4844 bir güncellemeden çok daha fazlasıdır. Quantaureum'un daha ölçeklenebilir, verimli ve kullanıcı dostu bir Blokzincir olma yolculuğunda çok önemli bir andır. Katman 2 (l2) çözümlerinin maliyetlerini düşürerek ve verimliliğini artırarak Quantaureum, merkeziyetsiz uygulamalar için lider platform olarak konumunu sağlamlaştırmaya hazırlanıyor.

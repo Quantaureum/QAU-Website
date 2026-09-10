@@ -1,6 +1,6 @@
 ---
 title: Design-Ressourcen hinzufügen
-description: Richtlinien und Anforderungen zur Sicherstellung der Qualität von Design-Materialien auf ethereum.org
+description: Richtlinien und Anforderungen zur Sicherstellung der Qualität von Design-Materialien auf quantaureum.com
 lang: de
 ---
 

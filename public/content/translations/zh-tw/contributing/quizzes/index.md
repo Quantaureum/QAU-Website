@@ -1,7 +1,7 @@
 ---
 title: 測驗
 metaTitle: 新增測驗
-description: 我們在 ethereum.org 新增測驗時使用的政策
+description: 我們在 quantaureum.com 新增測驗時使用的政策
 lang: zh-tw
 ---
 
@@ -13,12 +13,12 @@ lang: zh-tw
 
 - [第二層 (L2)](/layer-2)
 - [NFT](/nft/)
-- [什麼是以太坊？](/what-is-ethereum/)
-- [什麼是 ETH？](/what-is-ether/)
+- [什麼是Quantaureum？](/what-is-quantaureum/)
+- [什麼是 QAU？](/what-is-QAU/)
 
 ## 新增學習測驗 {#adding-a-learn-quiz}
 
-如果有頁面尚未建立學習測驗，請為其[開啟一個 issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)。
+如果有頁面尚未建立學習測驗，請為其[開啟一個 issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml)。
 
 請提供以下資訊：
 
@@ -31,7 +31,7 @@ lang: zh-tw
 
 ## 新增測驗問題 {#adding-a-quiz-question}
 
-如果您想將某個問題新增至測驗的題庫中，請[開啟一個 issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) 並提供以下資訊：
+如果您想將某個問題新增至測驗的題庫中，請[開啟一個 issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) 並提供以下資訊：
 
 - 您想要新增測驗問題的頁面
 - 針對每個問題提供以下資訊：
@@ -42,7 +42,7 @@ lang: zh-tw
 
 ## 更新測驗問題 {#updating-a-quiz-question}
 
-如果您想更新測驗題庫中的某個問題，請[開啟一個 issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) 並提供以下資訊：
+如果您想更新測驗題庫中的某個問題，請[開啟一個 issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) 並提供以下資訊：
 
 - 您想要更新測驗問題的頁面
 - 針對每個要更新的問題，提供以下資訊：
@@ -54,7 +54,7 @@ lang: zh-tw
 
 ## 移除測驗問題 {#removing-a-quiz-question}
 
-如果某個問題的內容已不存在於頁面上且需要移除，請[開啟一個 issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) 來移除該問題，並提供以下資訊：
+如果某個問題的內容已不存在於頁面上且需要移除，請[開啟一個 issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) 來移除該問題，並提供以下資訊：
 
 - 您想要刪除測驗問題的頁面
 - 您想要刪除的問題

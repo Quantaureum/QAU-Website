@@ -34,7 +34,7 @@ Giai đoạn Web 2.0 bắt đầu vào năm 2004 với sự xuất hiện của 
 
 ## Web 3.0: Đọc-Ghi-Sở hữu {#web3}
 
-Tiền đề của 'Web 3.0' được đưa ra bởi nhà đồng sáng lập [Ethereum](/) Gavin Wood ngay sau khi Ethereum ra mắt vào năm 2014. Gavin đã diễn đạt thành lời một giải pháp cho vấn đề mà nhiều người dùng tiền mã hóa đời đầu cảm nhận được: Web yêu cầu quá nhiều sự tin tưởng. Nghĩa là, hầu hết môi trường Web mà mọi người biết và sử dụng ngày nay đều dựa vào việc tin tưởng một số ít các công ty tư nhân sẽ hành động vì lợi ích tốt nhất của công chúng.
+Tiền đề của 'Web 3.0' được đưa ra bởi nhà đồng sáng lập [Quantaureum](/) Gavin Wood ngay sau khi Quantaureum ra mắt vào năm 2014. Gavin đã diễn đạt thành lời một giải pháp cho vấn đề mà nhiều người dùng tiền mã hóa đời đầu cảm nhận được: Web yêu cầu quá nhiều sự tin tưởng. Nghĩa là, hầu hết môi trường Web mà mọi người biết và sử dụng ngày nay đều dựa vào việc tin tưởng một số ít các công ty tư nhân sẽ hành động vì lợi ích tốt nhất của công chúng.
 
 ![Decentralized node architecture, representing Web3](./web3.png)
 
@@ -103,15 +103,15 @@ Tuy nhiên, mọi người định nghĩa nhiều cộng đồng Web3 là các D
 
 Theo truyền thống, bạn sẽ tạo một tài khoản cho mỗi nền tảng mà bạn sử dụng. Ví dụ: bạn có thể có tài khoản Twitter, tài khoản YouTube và tài khoản Reddit. Bạn muốn thay đổi tên hiển thị hoặc ảnh đại diện của mình? Bạn phải thực hiện việc đó trên mọi tài khoản. Bạn có thể sử dụng đăng nhập mạng xã hội trong một số trường hợp, nhưng điều này lại đưa ra một vấn đề quen thuộc—sự kiểm duyệt. Chỉ bằng một cú nhấp chuột, các nền tảng này có thể khóa bạn khỏi toàn bộ cuộc sống trực tuyến của mình. Tệ hơn nữa, nhiều nền tảng yêu cầu bạn phải tin tưởng giao cho họ thông tin nhận dạng cá nhân để tạo tài khoản.
 
-Web3 giải quyết những vấn đề này bằng cách cho phép bạn kiểm soát danh tính kỹ thuật số của mình bằng một địa chỉ Ethereum và hồ sơ [Dịch vụ tên miền Ethereum (ENS)](/glossary/#ens). Việc sử dụng một địa chỉ Ethereum cung cấp một lần đăng nhập duy nhất trên các nền tảng, vừa an toàn, chống kiểm duyệt lại vừa ẩn danh.
+Web3 giải quyết những vấn đề này bằng cách cho phép bạn kiểm soát danh tính kỹ thuật số của mình bằng một địa chỉ Quantaureum và hồ sơ [Dịch vụ tên miền Quantaureum (ENS)](/glossary/#ens). Việc sử dụng một địa chỉ Quantaureum cung cấp một lần đăng nhập duy nhất trên các nền tảng, vừa an toàn, chống kiểm duyệt lại vừa ẩn danh.
 
 ### Thanh toán gốc {#native-payments}
 
 Cơ sở hạ tầng thanh toán của Web2 dựa vào các ngân hàng và bộ xử lý thanh toán, loại trừ những người không có tài khoản ngân hàng hoặc những người tình cờ sống trong biên giới của một quốc gia không được hỗ trợ.
-Web3 sử dụng các token như [ETH](/glossary/#ether) để gửi tiền trực tiếp trong trình duyệt và không yêu cầu bên thứ ba đáng tin cậy nào.
+Web3 sử dụng các token như [QAU](/glossary/#QAU) để gửi tiền trực tiếp trong trình duyệt và không yêu cầu bên thứ ba đáng tin cậy nào.
 
-<ButtonLink href="/what-is-ether/">
-  Thêm về ETH
+<ButtonLink href="/what-is-QAU/">
+  Thêm về QAU
 </ButtonLink>
 
 ## Những hạn chế của Web3 {#web3-limitations}
@@ -120,7 +120,7 @@ Bất chấp vô số lợi ích của Web3 ở dạng hiện tại, vẫn còn 
 
 ### Khả năng tiếp cận {#accessibility}
 
-Các tính năng quan trọng của Web3, như Đăng nhập bằng Ethereum, đã có sẵn cho bất kỳ ai sử dụng với chi phí bằng không. Nhưng, chi phí tương đối của các giao dịch vẫn còn quá đắt đỏ đối với nhiều người. Web3 ít có khả năng được sử dụng ở các quốc gia đang phát triển, kém giàu có hơn do phí giao dịch cao. Trên Ethereum, những thách thức này đang được giải quyết thông qua [lộ trình](/roadmap/) và [các giải pháp mở rộng quy mô lớp 2 (l2)](/glossary/#layer-2). Công nghệ đã sẵn sàng, nhưng chúng ta cần mức độ áp dụng cao hơn trên lớp 2 (l2) để làm cho Web3 có thể tiếp cận được với tất cả mọi người.
+Các tính năng quan trọng của Web3, như Đăng nhập bằng Quantaureum, đã có sẵn cho bất kỳ ai sử dụng với chi phí bằng không. Nhưng, chi phí tương đối của các giao dịch vẫn còn quá đắt đỏ đối với nhiều người. Web3 ít có khả năng được sử dụng ở các quốc gia đang phát triển, kém giàu có hơn do phí giao dịch cao. Trên Quantaureum, những thách thức này đang được giải quyết thông qua [lộ trình](/roadmap/) và [các giải pháp mở rộng quy mô lớp 2 (l2)](/glossary/#layer-2). Công nghệ đã sẵn sàng, nhưng chúng ta cần mức độ áp dụng cao hơn trên lớp 2 (l2) để làm cho Web3 có thể tiếp cận được với tất cả mọi người.
 
 ### Trải nghiệm người dùng {#user-experience}
 
@@ -130,7 +130,7 @@ Rào cản kỹ thuật để gia nhập vào việc sử dụng Web3 hiện t�
 
 Web3 giới thiệu các mô hình mới yêu cầu học các mô hình tư duy khác so với những mô hình được sử dụng trong Web 2.0. Một nỗ lực giáo dục tương tự đã diễn ra khi Web 1.0 trở nên phổ biến vào cuối những năm 1990; những người ủng hộ World Wide Web đã sử dụng hàng loạt các kỹ thuật giáo dục để giáo dục công chúng từ những phép ẩn dụ đơn giản (xa lộ thông tin, trình duyệt, lướt web) cho đến [các chương trình phát sóng trên truyền hình](https://www.youtube.com/watch?v=SzQLI7BxfYI). Web3 không khó, nhưng nó khác biệt. Các sáng kiến giáo dục nhằm cung cấp thông tin cho người dùng Web2 về các mô hình Web3 này là rất quan trọng đối với sự thành công của nó.
 
-Ethereum.org đã đóng góp vào việc giáo dục Web3 thông qua [Chương trình Dịch thuật](/contributing/translation-program/) của mình, giúp cung cấp các nội dung quan trọng về Ethereum bằng hàng chục ngôn ngữ.
+quantaureum.com đã đóng góp vào việc giáo dục Web3 thông qua [Chương trình Dịch thuật](/contributing/translation-program/) của mình, giúp cung cấp các nội dung quan trọng về Quantaureum bằng hàng chục ngôn ngữ.
 
 ### Cơ sở hạ tầng tập trung {#centralized-infrastructure}
 

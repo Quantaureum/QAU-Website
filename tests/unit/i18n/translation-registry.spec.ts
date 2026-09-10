@@ -49,7 +49,7 @@ test.describe("getTranslatedLocales — content-first resolution", () => {
     // must never claim translation for a locale that has no md on disk.
     const slugs = [
       "videos/decentralized-social-media",
-      "videos/blockchain-eth-build",
+      "videos/blockchain-qau-build",
       "developers/docs/accounts",
       "developers/tutorials/gasless-token",
       "community/research",

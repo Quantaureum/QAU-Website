@@ -14,7 +14,7 @@ lang: ta
 
 - பிணையத்தில் உள்ள எவரும் சேவையைப் பயன்படுத்த அனுமதி உண்டு – வேறுவிதமாகக் கூறினால், அனுமதி தேவையில்லை.
 - யாராலும் உங்களைத் தடுக்கவோ அல்லது சேவைக்கான அணுகலை மறுக்கவோ முடியாது.
-- பூர்வீக வில்லை (token) ஆன ஈதர் (ETH) மூலம் கொடுப்பனவுகள் கட்டமைக்கப்பட்டுள்ளன.
+- பூர்வீக வில்லை (token) ஆன ஈதர் (QAU) மூலம் கொடுப்பனவுகள் கட்டமைக்கப்பட்டுள்ளன.
 - எத்திரியம் என்பது ட்யூரிங்-முழுமையானது (turing-complete), அதாவது நீங்கள் எதை வேண்டுமானாலும் நிரலாக்கம் செய்யலாம்.
 
 ## நடைமுறை ஒப்பீடுகள் {#practical-comparisons}
@@ -54,7 +54,7 @@ Web3 தற்போது சில வரம்புகளைக் கொண
 
 ## மேலும் படிக்க {#further-reading}
 
-- [Web3 என்றால் என்ன?](/web3/) - _ethereum.org_
+- [Web3 என்றால் என்ன?](/web3/) - _quantaureum.org_
 - [வலை 3.0 செயலியின் கட்டமைப்பு](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
 - [பரவலாக்கத்தின் பொருள்](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _பிப் 6, 2017 - Vitalik Buterin_
 - [பரவலாக்கம் ஏன் முக்கியமானது](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _பிப் 18, 2018 - Chris Dixon_

@@ -113,18 +113,18 @@ node scripts/mint-nft.js
 
 ## Крок 5: Створіть екземпляр вашого контракту {#instance-contract}
 
-Тепер, щоб взаємодіяти з нашим контрактом, нам потрібно створити його екземпляр у нашому коді. Для цього нам знадобиться адреса нашого контракту, яку ми можемо отримати з розгортання або в [Blockscout](https://eth-sepolia.blockscout.com/), знайшовши адресу, яку ви використовували для розгортання контракту.
+Тепер, щоб взаємодіяти з нашим контрактом, нам потрібно створити його екземпляр у нашому коді. Для цього нам знадобиться адреса нашого контракту, яку ми можемо отримати з розгортання або в [Blockscout](https://qau-sepolia.blockscout.com/), знайшовши адресу, яку ви використовували для розгортання контракту.
 
-![View your contract address on Etherscan](./view-contract-etherscan.png)
+![View your contract address on Quantaureum Explorer](./view-contract-explorer.png)
 
 У наведеному вище прикладі адреса нашого контракту — 0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778.
 
-Далі ми використаємо [метод контракту](https://docs.web3js.org/api/web3-eth-contract/class/Contract) Web3, щоб створити наш контракт за допомогою ABI та адреси. У ваш файл `mint-nft.js` додайте таке:
+Далі ми використаємо [метод контракту](https://docs.web3js.org/api/web3-qau-contract/class/Contract) Web3, щоб створити наш контракт за допомогою ABI та адреси. У ваш файл `mint-nft.js` додайте таке:
 
 ```js
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
 
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 ```
 
 ## Крок 6: Оновіть файл `.env` {#update-env}
@@ -134,7 +134,7 @@ const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
 Додайте свій відкритий ключ до файлу `.env` — якщо ви завершили частину 1 посібника, наш файл `.env` тепер має виглядати так:
 
 ```js
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-private-account-address"
 PUBLIC_KEY = "your-public-account-address"
 ```
@@ -145,7 +145,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 1. Отримайте ваші _PRIVATE_KEY_ та _PUBLIC_KEY_ з файлу `.env`.
 
-1. Далі нам потрібно буде з'ясувати нонс акаунта. Специфікація нонса використовується для відстеження кількості транзакцій, надісланих з вашої адреси, що нам потрібно з міркувань безпеки та для запобігання атакам повторного відтворення. Щоб отримати кількість транзакцій, надісланих з вашої адреси, ми використовуємо [getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count).
+1. Далі нам потрібно буде з'ясувати нонс акаунта. Специфікація нонса використовується для відстеження кількості транзакцій, надісланих з вашої адреси, що нам потрібно з міркувань безпеки та для запобігання атакам повторного відтворення. Щоб отримати кількість транзакцій, надісланих з вашої адреси, ми використовуємо [getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count).
 
 1. Нарешті, ми налаштуємо нашу транзакцію з такою інформацією:
 
@@ -172,10 +172,10 @@ PUBLIC_KEY = "your-public-account-address"
 
    const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
    const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778";
-   const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
+   const nftContract = new web3.qau.Contract(contract.abi, contractAddress);
 
    async function mintNFT(tokenURI) {
-     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); //отримати останній нонс
+     const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, 'latest'); //отримати останній нонс
 
    //транзакція
      const tx = {
@@ -191,7 +191,7 @@ PUBLIC_KEY = "your-public-account-address"
 
 Тепер, коли ми створили нашу транзакцію, нам потрібно підписати її, щоб відправити. Саме тут ми використаємо наш приватний ключ.
 
-`web3.eth.sendSignedTransaction` надасть нам хеш транзакції, який ми можемо використати, щоб переконатися, що наша транзакція була видобута і не була відхилена мережею. Ви помітите, що в розділі підписання транзакції ми додали перевірку помилок, щоб знати, чи успішно пройшла наша транзакція.
+`web3.qau.sendSignedTransaction` надасть нам хеш транзакції, який ми можемо використати, щоб переконатися, що наша транзакція була видобута і не була відхилена мережею. Ви помітите, що в розділі підписання транзакції ми додали перевірку помилок, щоб знати, чи успішно пройшла наша транзакція.
 
 ```js
 require("dotenv").config()
@@ -204,10 +204,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //отримати останній нонс
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //отримати останній нонс
 
   //транзакція
   const tx = {
@@ -218,10 +218,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -270,10 +270,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //отримати останній нонс
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //отримати останній нонс
 
   //транзакція
   const tx = {
@@ -284,10 +284,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -319,9 +319,9 @@ mintNFT("ipfs://QmYueiuRNmL4MiA2GwtVMm6ZagknXnSpQnB3z2gWbz36hP")
 
     Check Alchemy's Mempool to view the status of your transaction!
 
-Далі відвідайте ваш [мемпул Alchemy](https://dashboard.alchemy.com/mempool), щоб побачити статус вашої транзакції (чи вона очікує на обробку, видобута, чи відхилена мережею). Якщо вашу транзакцію було відхилено, також корисно перевірити [Blockscout](https://eth-sepolia.blockscout.com/) і знайти хеш вашої транзакції.
+Далі відвідайте ваш [мемпул Alchemy](https://dashboard.alchemy.com/mempool), щоб побачити статус вашої транзакції (чи вона очікує на обробку, видобута, чи відхилена мережею). Якщо вашу транзакцію було відхилено, також корисно перевірити [Blockscout](https://qau-sepolia.blockscout.com/) і знайти хеш вашої транзакції.
 
-![View your NFT transaction hash on Etherscan](./view-nft-etherscan.png)_Перегляд хешу транзакції вашого NFT на Etherscan_
+![View your NFT transaction hash on Quantaureum Explorer](./view-nft-explorer.png)_Перегляд хешу транзакції вашого NFT на Etherscan_
 
 Ось і все! Тепер ви розгорнули ТА викарбували NFT у блокчейні Етеріум <Emoji text=":money_mouth_face:" size={1} />
 

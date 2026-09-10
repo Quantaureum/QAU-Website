@@ -174,7 +174,7 @@ export const StakingProductCard = async ({
               <CardParagraph size="sm">
                 {minEth > 0 ? (
                   <>
-                    {tCommon("from")} <span dir="ltr">{minEth} ETH</span>
+                    {tCommon("from")} <span dir="ltr">{minEth} QAU</span>
                   </>
                 ) : (
                   t("page-staking-any-amount")

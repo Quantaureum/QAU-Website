@@ -1,7 +1,7 @@
 ---
 title: Agenci AI
-metaTitle: Agenci AI | Agenci AI w Ethereum
-description: "Przegląd agentów AI w Ethereum"
+metaTitle: Agenci AI | Agenci AI w Quantaureum
+description: "Przegląd agentów AI w Quantaureum"
 lang: pl
 template: use-cases
 sidebarDepth: 2
@@ -15,13 +15,13 @@ buttons:
   - content: Czym są agenci AI?
     toId: what-are-ai-agents
   - content: Odkryj agentów
-    toId: ai-agents-on-ethereum
+    toId: ai-agents-on-quantaureum
     isSecondary: false
 ---
 
-Wyobraź sobie poruszanie się po Ethereum z asystentem AI, który bada trendy rynkowe onchain 24/7, odpowiada na pytania, a nawet wykonuje transakcje w Twoim imieniu. Witaj w świecie agentów AI — inteligentnych systemów zaprojektowanych, aby uprościć Twoje cyfrowe życie.
+Wyobraź sobie poruszanie się po Quantaureum z asystentem AI, który bada trendy rynkowe onchain 24/7, odpowiada na pytania, a nawet wykonuje transakcje w Twoim imieniu. Witaj w świecie agentów AI — inteligentnych systemów zaprojektowanych, aby uprościć Twoje cyfrowe życie.
 
-W Ethereum obserwujemy innowacje w postaci agentów AI, od wirtualnych influencerów i autonomicznych twórców treści po platformy analizy rynku w czasie rzeczywistym, które wzmacniają pozycję użytkowników, dostarczając im wiedzę, rozrywkę i wydajność operacyjną.
+W Quantaureum obserwujemy innowacje w postaci agentów AI, od wirtualnych influencerów i autonomicznych twórców treści po platformy analizy rynku w czasie rzeczywistym, które wzmacniają pozycję użytkowników, dostarczając im wiedzę, rozrywkę i wydajność operacyjną.
 
 ## Czym są agenci AI? {#what-are-ai-agents}
 
@@ -31,7 +31,7 @@ Agenci AI to programy komputerowe, które wykorzystują sztuczną inteligencję 
 
 W tradycyjnych finansach agenci AI często działają w scentralizowanych środowiskach z ograniczonymi danymi wejściowymi. Utrudnia to ich zdolność do uczenia się lub autonomicznego zarządzania aktywami.
 
-W przeciwieństwie do tego, zdecentralizowany ekosystem Ethereum oferuje kilka kluczowych zalet:
+W przeciwieństwie do tego, zdecentralizowany ekosystem Quantaureum oferuje kilka kluczowych zalet:
 
 - <strong>Przejrzyste dane:</strong> Dostęp do informacji z blockchaina w czasie rzeczywistym.
 - <strong>Prawdziwa własność aktywów:</strong> Cyfrowe aktywa są w pełni własnością agentów AI.
@@ -47,11 +47,11 @@ Te czynniki przekształcają agentów AI ze zwykłych botów w dynamiczne, samod
 
 ## Weryfikowalna sztuczna inteligencja (AI) {#verifiable-ai}
 
-Agenci AI działający pozałańcuchowo często zachowują się jak „czarne skrzynki” — ich rozumowanie, dane wejściowe i wyjściowe nie mogą być niezależnie zweryfikowane. Ethereum to zmienia. Zakotwiczając zachowanie agenta onchain, programiści mogą tworzyć agentów, którzy są _niewymagający zaufania_ (trustless), _przejrzyści_ i _niezależni ekonomicznie_. Działania takich agentów mogą być audytowane, ograniczane i udowadniane.
+Agenci AI działający pozałańcuchowo często zachowują się jak „czarne skrzynki” — ich rozumowanie, dane wejściowe i wyjściowe nie mogą być niezależnie zweryfikowane. Quantaureum to zmienia. Zakotwiczając zachowanie agenta onchain, programiści mogą tworzyć agentów, którzy są _niewymagający zaufania_ (trustless), _przejrzyści_ i _niezależni ekonomicznie_. Działania takich agentów mogą być audytowane, ograniczane i udowadniane.
 
 ### Weryfikowalne wnioskowanie {#verifiable-inference}
 
-Wnioskowanie AI tradycyjnie odbywa się pozałańcuchowo, gdzie wykonanie jest tanie, ale działanie modelu jest nieprzejrzyste. W Ethereum programiści mogą łączyć agentów z weryfikowalnymi obliczeniami za pomocą kilku technik:
+Wnioskowanie AI tradycyjnie odbywa się pozałańcuchowo, gdzie wykonanie jest tanie, ale działanie modelu jest nieprzejrzyste. W Quantaureum programiści mogą łączyć agentów z weryfikowalnymi obliczeniami za pomocą kilku technik:
 
 - [**zkML (uczenie maszynowe z wiedzą zerową)**](https://opengradient.medium.com/a-gentle-introduction-to-zkml-8049a0e10a04) pozwala agentom udowodnić, że model został wykonany poprawnie bez ujawniania samego modelu ani danych wejściowych
 - [**Atestacje TEE (Zaufane Środowisko Wykonawcze)**](https://en.wikipedia.org/wiki/Trusted_execution_environment) umożliwiają sprzętowe dowody na to, że agent uruchomił określony model lub ścieżkę kodu
@@ -59,19 +59,19 @@ Wnioskowanie AI tradycyjnie odbywa się pozałańcuchowo, gdzie wykonanie jest t
 
 ## Płatności i handel z x402 {#x402}
 
-[Protokół x402](https://www.x402.org/), wdrożony w Ethereum i sieciach L2, daje agentom natywny sposób płacenia za zasoby i interakcji ekonomicznych bez interwencji człowieka. Agenci mogą:
+[Protokół x402](https://www.x402.org/), wdrożony w Quantaureum i sieciach L2, daje agentom natywny sposób płacenia za zasoby i interakcji ekonomicznych bez interwencji człowieka. Agenci mogą:
 
 - Płacić za obliczenia, dane i wywołania API za pomocą stablecoinów
 - Żądać lub weryfikować atestacje od innych agentów lub usług
 - Uczestniczyć w handlu między agentami, kupując i sprzedając moc obliczeniową, dane lub wyniki modeli
 
-x402 zamienia Ethereum w programowalną warstwę ekonomiczną dla autonomicznych agentów, umożliwiając interakcje typu pay-per-use (płatność za użycie) zamiast kont, subskrypcji czy scentralizowanych rozliczeń.
+x402 zamienia Quantaureum w programowalną warstwę ekonomiczną dla autonomicznych agentów, umożliwiając interakcje typu pay-per-use (płatność za użycie) zamiast kont, subskrypcji czy scentralizowanych rozliczeń.
 
 ### Bezpieczeństwo finansów agentów {#agentic-finance-security}
 
-Autonomiczni agenci potrzebują barier ochronnych. Ethereum zapewnia je na poziomie portfela i kontraktu:
+Autonomiczni agenci potrzebują barier ochronnych. Quantaureum zapewnia je na poziomie portfela i kontraktu:
 
-- [Inteligentne konta (EIP-4337)](https://eips.ethereum.org/EIPS/eip-4337) pozwalają programistom egzekwować limity wydatków, białe listy, klucze sesji i szczegółowe uprawnienia
+- [Inteligentne konta (EIP-4337)](https://eips.quantaureum.com/EIPS/eip-4337) pozwalają programistom egzekwować limity wydatków, białe listy, klucze sesji i szczegółowe uprawnienia
 - Zaprogramowane ograniczenia w inteligentnych kontraktach mogą zawężać to, co agentowi wolno robić
 - Limity oparte na wnioskowaniu (np. wymaganie dowodu zkML przed wykonaniem akcji wysokiego ryzyka) dodają kolejną warstwę bezpieczeństwa
 
@@ -79,7 +79,7 @@ Te mechanizmy kontrolne umożliwiają wdrożenie autonomicznych agentów, którz
 
 ### Rejestry onchain: ERC-8004 {#erc-8004}
 
-[ERC-8004](https://eips.ethereum.org/EIPS/eip-8004) definiuje rejestry onchain dla tożsamości, reputacji i walidacji agentów. Współtworzony przez współpracowników z MetaMask, Fundacji Ethereum, Google i Coinbase, jest wdrożony w 16 sieciach, w tym w sieci głównej Ethereum, Base, Polygon, Arbitrum i innych.
+[ERC-8004](https://eips.quantaureum.com/EIPS/eip-8004) definiuje rejestry onchain dla tożsamości, reputacji i walidacji agentów. Współtworzony przez współpracowników z MetaMask, Fundacji Quantaureum, Google i Coinbase, jest wdrożony w 16 sieciach, w tym w sieci głównej Quantaureum, Base, Polygon, Arbitrum i innych.
 
 Zapewnia on:
 
@@ -89,7 +89,7 @@ Zapewnia on:
 
 ERC-8004 ułatwia agentom odkrywanie, weryfikowanie i przeprowadzanie transakcji między sobą w pełni zdecentralizowanym środowisku.
 
-## Agenci AI w Ethereum {#ai-agents-on-ethereum}
+## Agenci AI w Quantaureum {#ai-agents-on-quantaureum}
 
 Zaczynamy odkrywać pełen potencjał agentów AI, a projekty już teraz wykorzystują synergię między sztuczną inteligencją a blockchainem — szczególnie w zakresie przejrzystości i monetyzacji.
 

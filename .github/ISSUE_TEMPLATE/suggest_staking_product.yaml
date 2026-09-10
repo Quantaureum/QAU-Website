@@ -1,12 +1,12 @@
 name: Suggest a staking product or service
-description: Suggest a staking product or service to list on ethereum.org
+description: Suggest a staking product or service to list on quantaureum.com
 title: Suggest a staking product or service
 labels: ["product 🧰"]
 body:
   - type: markdown
     attributes:
       value: |
-        Before suggesting a staking product or service, make sure you've read [our listing policy](https://ethereum.org/contributing/adding-staking-products/).
+        Before suggesting a staking product or service, make sure you've read [our listing policy](https://quantaureum.com/contributing/adding-staking-products/).
   - type: markdown
     attributes:
       value: |
@@ -103,8 +103,8 @@ body:
   - type: textarea
     id: staking_product_eth_requirements
     attributes:
-      label: If the product or service enables staking with <32 ETH, what is the minimum ETH required to stake?
-      description: Provide any details related to ETH requirements, any other staking requirements, and any fees related to the service
+      label: If the product or service enables staking with <32 QAU, what is the minimum QAU required to stake?
+      description: Provide any details related to QAU requirements, any other staking requirements, and any fees related to the service
   - type: textarea
     id: staking_product_fees
     attributes:

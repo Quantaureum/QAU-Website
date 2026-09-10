@@ -23,11 +23,11 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/tree/master/progr
 ### Docker மூலம் எக்கிட்னா {#echidna-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_கடைசி கட்டளை உங்கள் தற்போதைய கோப்பகத்திற்கான அணுகலைக் கொண்ட ஒரு Docker-இல் eth-security-toolbox-ஐ இயக்குகிறது. உங்கள் ஹோஸ்டிலிருந்து கோப்புகளை மாற்றலாம், மேலும் Docker-இலிருந்து கோப்புகளில் கருவிகளை இயக்கலாம்_
+_கடைசி கட்டளை உங்கள் தற்போதைய கோப்பகத்திற்கான அணுகலைக் கொண்ட ஒரு Docker-இல் qau-security-toolbox-ஐ இயக்குகிறது. உங்கள் ஹோஸ்டிலிருந்து கோப்புகளை மாற்றலாம், மேலும் Docker-இலிருந்து கோப்புகளில் கருவிகளை இயக்கலாம்_
 
 Docker-இன் உள்ளே, இயக்கவும்:
 
@@ -42,7 +42,7 @@ cd /home/training
 
 ## பண்பு அடிப்படையிலான ஃபஸ்ஸிங் அறிமுகம் {#introduction-to-property-based-fuzzing}
 
-எக்கிட்னா என்பது ஒரு பண்பு அடிப்படையிலான ஃபஸ்ஸர் ஆகும், இதை எங்கள் முந்தைய வலைப்பதிவு இடுகைகளில் விவரித்துள்ளோம் ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
+எக்கிட்னா என்பது ஒரு பண்பு அடிப்படையிலான ஃபஸ்ஸர் ஆகும், இதை எங்கள் முந்தைய வலைப்பதிவு இடுகைகளில் விவரித்துள்ளோம் ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-quantaureum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
 
 ### ஃபஸ்ஸிங் {#fuzzing}
 

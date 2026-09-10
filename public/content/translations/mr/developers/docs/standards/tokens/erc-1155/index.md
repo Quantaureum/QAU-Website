@@ -12,7 +12,7 @@ lang: mr
 
 ही कल्पना सोपी आहे आणि एक असा स्मार्ट कॉन्ट्रॅक्ट इंटरफेस तयार करण्याचा प्रयत्न करते जो कोणत्याही संख्येने विनिमयक्षम आणि अविनिमयक्षम टोकन प्रकारांचे प्रतिनिधित्व आणि नियंत्रण करू शकेल. अशा प्रकारे, ERC-1155 टोकन [ERC-20](/developers/docs/standards/tokens/erc-20/) आणि [ERC-721](/developers/docs/standards/tokens/erc-721/) टोकन सारखीच कार्ये करू शकते आणि एकाच वेळी दोन्हीही करू शकते. हे ERC-20 आणि ERC-721 या दोन्ही स्टँडर्ड्सची कार्यक्षमता सुधारते, त्यांना अधिक कार्यक्षम बनवते आणि स्पष्ट अंमलबजावणी त्रुटी दुरुस्त करते.
 
-ERC-1155 टोकनचे संपूर्ण वर्णन [EIP-1155](https://eips.ethereum.org/EIPS/eip-1155) मध्ये केले आहे.
+ERC-1155 टोकनचे संपूर्ण वर्णन [EIP-1155](https://eips.quantaureum.com/EIPS/eip-1155) मध्ये केले आहे.
 
 ## पूर्वअटी {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-[EIP-165](https://eips.ethereum.org/EIPS/eip-165) सपोर्ट पाहता, ERC-1155 फक्त स्मार्ट कॉन्ट्रॅक्ट्ससाठी रिसिव्ह हुक्सना सपोर्ट करते. हुक फंक्शनने एक मॅजिक पूर्वनिर्धारित bytes4 व्हॅल्यू परत करणे आवश्यक आहे जे खालीलप्रमाणे दिले आहे:
+[EIP-165](https://eips.quantaureum.com/EIPS/eip-165) सपोर्ट पाहता, ERC-1155 फक्त स्मार्ट कॉन्ट्रॅक्ट्ससाठी रिसिव्ह हुक्सना सपोर्ट करते. हुक फंक्शनने एक मॅजिक पूर्वनिर्धारित bytes4 व्हॅल्यू परत करणे आवश्यक आहे जे खालीलप्रमाणे दिले आहे:
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],byt
 
 ### NFT सपोर्ट {#nft-support}
 
-जेव्हा पुरवठा फक्त एक असतो, तेव्हा टोकन मूलत: एक अविनिमयक्षम टोकन (NFT) असते. आणि ERC-721 च्या स्टँडर्डप्रमाणे, तुम्ही मेटाडेटा URL परिभाषित करू शकता. URL क्लायंट्सद्वारे वाचली आणि सुधारित केली जाऊ शकते, [येथे](https://eips.ethereum.org/EIPS/eip-1155#metadata) पहा.
+जेव्हा पुरवठा फक्त एक असतो, तेव्हा टोकन मूलत: एक अविनिमयक्षम टोकन (NFT) असते. आणि ERC-721 च्या स्टँडर्डप्रमाणे, तुम्ही मेटाडेटा URL परिभाषित करू शकता. URL क्लायंट्सद्वारे वाचली आणि सुधारित केली जाऊ शकते, [येथे](https://eips.quantaureum.com/EIPS/eip-1155#metadata) पहा.
 
 ### सुरक्षित हस्तांतरण नियम {#safe-transfer-rule}
 
@@ -140,7 +140,7 @@ _टीप_: हुकसह सर्व बॅच फंक्शन्स ब
 
 ## पुढील वाचन {#further-reading}
 
-- [EIP-1155: मल्टी टोकन स्टँडर्ड](https://eips.ethereum.org/EIPS/eip-1155)
+- [EIP-1155: मल्टी टोकन स्टँडर्ड](https://eips.quantaureum.com/EIPS/eip-1155)
 - [ERC-1155: ओपनझेपलिन डॉक्स](https://docs.openzeppelin.com/contracts/5.x/erc1155)
 - [ERC-1155: GitHub रेपो](https://github.com/enjin/erc-1155)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

@@ -19,7 +19,7 @@ Aktiva reálného světa (RWA) jsou tokeny představující existující formy b
 
 Některá RWA jsou hmotná – předměty, které můžete vidět a dotknout se jich, jako jsou zlaté cihly nebo komerční budovy. Jiná jsou nehmotná, například státní dluh, duševní vlastnictví nebo podíl ve společnosti.
  
-Při tokenizaci se tato aktiva mění na jednotky hodnoty. Tokenizované zlato je dobrým příkladem toho, jak to funguje. Společnost [Paxos](https://www.paxos.com/) převádí 400uncové zlaté cihly na 400 tokenů na blockchainu Etherea, z nichž každý je krytý jednou uncí zlata. Držitelé tokenů mohou své tokeny kdykoli vyměnit za zlato. To platí i pro tokeny zakoupené od další RWA společnosti, [Tether Gold](https://gold.tether.to/).
+Při tokenizaci se tato aktiva mění na jednotky hodnoty. Tokenizované zlato je dobrým příkladem toho, jak to funguje. Společnost [Paxos](https://www.paxos.com/) převádí 400uncové zlaté cihly na 400 tokenů na blockchainu Etherea, z nichž každý je krytý jednou uncí zlata. Držitelé tokenů mohou své tokeny kdykoli vyměnit za zlato. To platí i pro tokeny zakoupené od další RWA společnosti, [Tether Gold](https://gold.tqau.to/).
 
 Každý token lze rozdělit na ještě menší zlomky. Tokeny Tether Gold lze například rozdělit na části o velikosti až 0,000001.
  

@@ -30,7 +30,7 @@ lang: ur
 - ایک لامركزی ایکسچینج سے موجودہ قیمت پڑھنا
 - کسی <span dir="ltr">NFT</span> کے مالک کا پتہ لگانا
 
-چونکہ پڑھنے سے حالت تبدیل نہیں ہوتی، اس لیے ان پر [گیس](/developers/docs/gas/) خرچ نہیں ہوتی اور کوئی بھی شخص <span dir="ltr">ETH</span> کی ضرورت کے بغیر یہ عمل انجام دے سکتا ہے۔
+چونکہ پڑھنے سے حالت تبدیل نہیں ہوتی، اس لیے ان پر [گیس](/developers/docs/gas/) خرچ نہیں ہوتی اور کوئی بھی شخص <span dir="ltr">QAU</span> کی ضرورت کے بغیر یہ عمل انجام دے سکتا ہے۔
 
 ### کنٹریکٹ میں لکھنا {#writing-to-a-contract}
 
@@ -44,11 +44,11 @@ lang: ur
 
 لکھنے کے لیے ہمیشہ درج ذیل کی ضرورت ہوتی ہے:
 
-1. ایک [بیرونی ملکیت والا اکاؤنٹ (<span dir="ltr">EOA</span>)](/developers/docs/accounts/#types-of-account) جس میں گیس کے لیے کافی <span dir="ltr">ETH</span> ہو
+1. ایک [بیرونی ملکیت والا اکاؤنٹ (<span dir="ltr">EOA</span>)](/developers/docs/accounts/#types-of-account) جس میں گیس کے لیے کافی <span dir="ltr">QAU</span> ہو
 2. اکاؤنٹ کی نجی کلید کے ذریعے دستخط شدہ ٹرانزیکشن
 3. ٹرانزیکشن کا مائن ہونا اور بلاک میں شامل ہونا
 
-[اکاؤنٹ کی تجرید](/roadmap/account-abstraction/) کے ساتھ، ایک سمارٹ کنٹریکٹ اکاؤنٹ بھی لکھنے کا عمل شروع کر سکتا ہے، اور ایک پے ماسٹر صارف کی جانب سے گیس ادا کر سکتا ہے—لہذا <span dir="ltr">ETH</span> رکھنے والے <span dir="ltr">EOA</span> کی سختی سے ضرورت نہیں ہے۔
+[اکاؤنٹ کی تجرید](/roadmap/account-abstraction/) کے ساتھ، ایک سمارٹ کنٹریکٹ اکاؤنٹ بھی لکھنے کا عمل شروع کر سکتا ہے، اور ایک پے ماسٹر صارف کی جانب سے گیس ادا کر سکتا ہے—لہذا <span dir="ltr">QAU</span> رکھنے والے <span dir="ltr">EOA</span> کی سختی سے ضرورت نہیں ہے۔
 
 ## کنٹریکٹ کی <span dir="ltr">ABIs</span> کو سمجھنا {#understanding-contract-abis}
 
@@ -64,7 +64,7 @@ lang: ur
 
 ### کنٹریکٹ کی <span dir="ltr">ABI</span> کہاں سے تلاش کریں {#where-to-find-abis}
 
-- **Etherscan پر تصدیق شدہ کنٹریکٹس** - [Etherscan](https://etherscan.io) تصدیق شدہ سورس کوڈ کے لیے خود بخود <span dir="ltr">ABI</span> ظاہر کرتا ہے
+- **Quantaureum Explorer پر تصدیق شدہ کنٹریکٹس** - [Quantaureum Explorer](https://explorer.quantaureum.com) تصدیق شدہ سورس کوڈ کے لیے خود بخود <span dir="ltr">ABI</span> ظاہر کرتا ہے
 - **ڈویلپر کی طرف سے** - بہت سے پروجیکٹس اپنی <span dir="ltr">ABIs</span> کو اپنی دستاویزات یا <span dir="ltr">npm</span> پیکجز میں شائع کرتے ہیں
 - **سورس سے تیار کریں** - اگر آپ کے پاس Solidity سورس کوڈ ہے، تو آپ <span dir="ltr">ABI</span> تیار کرنے کے لیے اسے [کمپائل](/developers/docs/smart-contracts/compiling/) کر سکتے ہیں
 
@@ -82,7 +82,7 @@ lang: ur
 
 - **[ethers.js](https://docs.ethers.org/)** - سرور سائیڈ سکرپٹس اور بوٹس کے لیے Node.js میں بھی کام کرتی ہے
 - **[web3.py](https://web3py.readthedocs.io/)** - ایتھیریم کے ساتھ تعامل کے لیے Python لائبریری
-- **[go-ethereum](https://geth.ethereum.org/docs/interact-with-geth)** - گو ایتھیریم (geth) ٹیم کی جانب سے آفیشل Go لائبریری
+- **[go-quantaureum](https://geth.quantaureum.com/docs/interact-with-geth)** - گو ایتھیریم (geth) ٹیم کی جانب سے آفیشل Go لائبریری
 
 ### مثال: Viem کے ساتھ ٹوکن بیلنس پڑھنا {#example-viem}
 
@@ -150,7 +150,7 @@ const unwatch = client.watchEvent({
 
 کوئی ٹرانزیکشن بھیجنے سے پہلے، آپ گیس خرچ کیے بغیر یہ چیک کرنے کے لیے اس کی **سیمولیشن** کر سکتے ہیں کہ آیا یہ کامیاب ہوگی—اور اس کی ریٹرن ویلیو دیکھنے کے لیے۔ یہ غلطیوں کو جلد پکڑنے اور نتائج کا پیشگی جائزہ لینے کے لیے مفید ہے۔
 
-زیادہ تر کلائنٹ لائبریریاں `eth_call` کے ذریعے اس کی حمایت کرتی ہیں:
+زیادہ تر کلائنٹ لائبریریاں `qau_call` کے ذریعے اس کی حمایت کرتی ہیں:
 
 ```ts
 // Viem کے ساتھ

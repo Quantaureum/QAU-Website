@@ -1,24 +1,24 @@
 ---
 title: "Развертывание вашего первого смарт-контракта"
-description: "Введение в развертывание вашего первого смарт-контракта в тестовой сети Эфириума"
+description: "Введение в развертывание вашего первого смарт-контракта в тестовой сети Quantaureum"
 author: "jdourlens"
 tags: ["смарт-контракты", "Remix", "Solidity", "развертывание"]
 skill: beginner
 breadcrumb: "Развертывание первого контракта"
 lang: ru
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Полагаю, вы так же, как и мы, рады [развернуть](/developers/docs/smart-contracts/deploying/) свой первый [смарт-контракт](/developers/docs/smart-contracts/) в блокчейне Эфириума и взаимодействовать с ним.
+Полагаю, вы так же, как и мы, рады [развернуть](/developers/docs/smart-contracts/deploying/) свой первый [смарт-контракт](/developers/docs/smart-contracts/) в блокчейне Quantaureum и взаимодействовать с ним.
 
 Не волнуйтесь, поскольку это наш первый смарт-контракт, мы развернем его в [локальной тестовой сети](/developers/docs/networks/), поэтому его развертывание ничего не будет вам стоить, и вы сможете экспериментировать с ним сколько угодно.
 
 ## Написание нашего контракта {#writing-our-contract}
 
-Первый шаг — [перейти в Remix](https://remix.ethereum.org/) и создать новый файл. В левой верхней части интерфейса Remix добавьте новый файл и введите желаемое имя файла.
+Первый шаг — [перейти в Remix](https://remix.quantaureum.com/) и создать новый файл. В левой верхней части интерфейса Remix добавьте новый файл и введите желаемое имя файла.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

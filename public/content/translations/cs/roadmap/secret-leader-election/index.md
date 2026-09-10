@@ -13,13 +13,13 @@ V dnešním mechanismu konsensu založeném na [důkazu podílem (PoS)](/develop
 
 To by mohlo útočníkovi vytvořit příležitosti k zisku. Například navrhovatel bloku vybraný pro slot `n+1` by mohl provést DOS útok na navrhovatele ve slotu `n`, takže by propásl svou příležitost navrhnout blok. To by útočícímu navrhovateli bloku umožnilo vytěžit MEV z obou slotů, nebo shrábnout všechny transakce, které měly být rozděleny do dvou bloků, a místo toho je zahrnout do jednoho, čímž by získal všechny související poplatky. To pravděpodobně ovlivní domácí validátory více než sofistikované institucionální validátory, kteří mohou k ochraně před DOS útoky využít pokročilejší metody, a mohlo by to tedy působit jako centralizační síla.
 
-Existuje několik řešení tohoto problému. Jedním z nich je [technologie distribuovaných validátorů (DVT)](https://github.com/ethereum/distributed-validator-specs), jejímž cílem je rozložit různé úkoly spojené s provozem validátoru na více strojů s redundancí, takže je pro útočníka mnohem těžší zabránit navržení bloku v konkrétním slotu. Nejrobustnějším řešením je však **tajná volba jediného lídra (Single Secret Leader Election – SSLE)**.
+Existuje několik řešení tohoto problému. Jedním z nich je [technologie distribuovaných validátorů (DVT)](https://github.com/quantaureum/distributed-validator-specs), jejímž cílem je rozložit různé úkoly spojené s provozem validátoru na více strojů s redundancí, takže je pro útočníka mnohem těžší zabránit navržení bloku v konkrétním slotu. Nejrobustnějším řešením je však **tajná volba jediného lídra (Single Secret Leader Election – SSLE)**.
 
 ## Tajná volba jediného lídra {#secret-leader-election}
 
 V SSLE se využívá chytrá kryptografie k zajištění toho, aby pouze vybraný validátor věděl, že byl vybrán. Funguje to tak, že každý validátor předloží závazek k tajemství, které všichni sdílejí. Závazky jsou zamíchány a překonfigurovány tak, aby nikdo nemohl přiřadit závazky k validátorům, ale každý validátor ví, který závazek patří jemu. Poté je náhodně vybrán jeden závazek. Pokud validátor zjistí, že byl vybrán jeho závazek, ví, že je na řadě, aby navrhl blok.
 
-Přední implementace této myšlenky se nazývá [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-ethereum/11763). Funguje následovně:
+Přední implementace této myšlenky se nazývá [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-quantaureum/11763). Funguje následovně:
 
 1. Validátoři se zavážou ke sdílenému tajemství. Závazkové schéma je navrženo tak, aby mohlo být svázáno s identitou validátoru, ale zároveň randomizováno, takže žádná třetí strana nemůže zpětně analyzovat vazbu a spojit konkrétní závazek s konkrétním validátorem.
 2. Na začátku epochy je pomocí RANDAO vybrána náhodná skupina validátorů, která vzorkuje závazky od 16 384 validátorů.

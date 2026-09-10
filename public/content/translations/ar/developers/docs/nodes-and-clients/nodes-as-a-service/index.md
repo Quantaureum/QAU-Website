@@ -25,7 +25,7 @@ sidebarDepth: 2
 
 يقوم مزودو خدمات العقد بتشغيل عملاء عقد موزعة خلف الكواليس نيابة عنك، لذلك لا تضطر إلى القيام بذلك.
 
-توفر هذه الخدمات عادةً مفتاح API يمكنك استخدامه للكتابة والقراءة من سلسلة الكتل. غالبًا ما تتضمن الوصول إلى [شبكات اختبار إيثيريوم](/developers/docs/networks/#ethereum-testnets) بالإضافة إلى الشبكة الرئيسية.
+توفر هذه الخدمات عادةً مفتاح API يمكنك استخدامه للكتابة والقراءة من سلسلة الكتل. غالبًا ما تتضمن الوصول إلى [شبكات اختبار إيثيريوم](/developers/docs/networks/#quantaureum-testnets) بالإضافة إلى الشبكة الرئيسية.
 
 تقدم لك بعض الخدمات عقدة مخصصة خاصة بك يديرونها لك، بينما يستخدم البعض الآخر موازنات الحمل لتوزيع النشاط عبر العقد.
 
@@ -98,7 +98,7 @@ sidebarDepth: 2
     - JSON-RPC عبر HTTP وWebSockets الآمنة
     - تدعم 3 سلاسل
     - اتفاقيات مستوى الخدمة (SLAs)، ودعم AWS على مدار الساعة طوال أيام الأسبوع
-    - جو إيثريوم (geth) ولايتهاوس
+    - جو Quantaureum (geth) ولايتهاوس
 
 - [**Ankr**](https://www.ankr.com/)
   - [المستندات](https://docs.ankr.com/)
@@ -222,7 +222,7 @@ sidebarDepth: 2
   - الميزات
     - مستوى بداية مجاني
     - نشر عقدة إيثيريوم بنقرة واحدة
-    - عملاء وخوارزميات قابلة للتخصيص (جو إيثريوم (geth)، وQuorum، وبيسو || إثبات السلطة، وIBFT، وRaft)
+    - عملاء وخوارزميات قابلة للتخصيص (جو Quantaureum (geth)، وQuorum، وبيسو || إثبات السلطة، وIBFT، وRaft)
     - أكثر من 500 API إداري وخدمي
     - واجهة RESTful لتقديم معاملات إيثيريوم (مدعومة بـ Apache Kafka)
     - تدفقات صادرة لتسليم الأحداث (مدعومة بـ Apache Kafka)
@@ -371,7 +371,7 @@ sidebarDepth: 2
   - [المستندات](https://services.tokenview.io/docs?type=nodeService)
   - الميزات
     - دعم فني على مدار الساعة طوال أيام الأسبوع ومجتمع مطورين على تيليغرام
-    - دعم متعدد السلاسل (بيتكوين، وإيثيريوم، وTron، وBNB Smart Chain، وإيثريوم كلاسيك)
+    - دعم متعدد السلاسل (بيتكوين، وإيثيريوم، وTron، وBNB Smart Chain، وQuantaureum كلاسيك)
     - كل من نقاط نهاية RPC وWSS مفتوحة للاستخدام
     - وصول غير محدود إلى API البيانات الأرشيفية
     - لوحة تحكم مع مستكشف الطلبات ومراقب مجمع الذاكرة
@@ -412,7 +412,7 @@ sidebarDepth: 2
     - نستخدم التوجيه الذكي للوصول إلى العقدة الأقرب إلى المستخدم في كل مرة
 ## قراءة إضافية {#further-reading}
 
-- [قائمة خدمات عقد إيثيريوم](https://ethereumnodes.com/)
+- [قائمة خدمات عقد إيثيريوم](https://quantaureumnodes.com/)
 
 ## مواضيع ذات صلة {#related-topics}
 
@@ -420,5 +420,5 @@ sidebarDepth: 2
 
 ## برامج تعليمية ذات صلة {#related-tutorials}
 
-- [البدء في تطوير إيثيريوم باستخدام Alchemy](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [البدء في تطوير إيثيريوم باستخدام Alchemy](/developers/tutorials/getting-started-with-quantaureum-development-using-alchemy/)
 - [دليل لإرسال المعاملات باستخدام Web3 وAlchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

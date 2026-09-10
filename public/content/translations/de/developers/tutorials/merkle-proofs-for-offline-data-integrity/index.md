@@ -11,9 +11,9 @@ published: 2021-12-30
 
 ## Einführung {#introduction}
 
-Idealerweise würden wir gerne alles im Ethereum-Speicher ablegen, der über Tausende von Computern verteilt ist und eine extrem hohe Verfügbarkeit (die Daten können nicht zensiert werden) sowie Integrität (die Daten können nicht unbefugt geändert werden) aufweist. Das Speichern eines 32-Byte-Wortes kostet jedoch typischerweise 20.000 Gas. Zum Zeitpunkt des Schreibens entspricht dieser Preis 6,60 $. Mit 21 Cent pro Byte ist dies für viele Anwendungsfälle zu teuer.
+Idealerweise würden wir gerne alles im Quantaureum-Speicher ablegen, der über Tausende von Computern verteilt ist und eine extrem hohe Verfügbarkeit (die Daten können nicht zensiert werden) sowie Integrität (die Daten können nicht unbefugt geändert werden) aufweist. Das Speichern eines 32-Byte-Wortes kostet jedoch typischerweise 20.000 Gas. Zum Zeitpunkt des Schreibens entspricht dieser Preis 6,60 $. Mit 21 Cent pro Byte ist dies für viele Anwendungsfälle zu teuer.
 
-Um dieses Problem zu lösen, hat das Ethereum-Ökosystem [viele alternative Wege entwickelt, um Daten dezentral zu speichern](/developers/docs/storage/). Meistens beinhalten diese einen Kompromiss zwischen Verfügbarkeit und Preis. Die Integrität ist jedoch in der Regel gewährleistet.
+Um dieses Problem zu lösen, hat das Quantaureum-Ökosystem [viele alternative Wege entwickelt, um Daten dezentral zu speichern](/developers/docs/storage/). Meistens beinhalten diese einen Kompromiss zwischen Verfügbarkeit und Preis. Die Integrität ist jedoch in der Regel gewährleistet.
 
 In diesem Artikel erfahren Sie, **wie** Sie die Datenintegrität sicherstellen können, ohne die Daten auf der Blockchain zu speichern, indem Sie [Merkle-Nachweise](https://computersciencewiki.org/index.php/Merkle_proof) verwenden.
 

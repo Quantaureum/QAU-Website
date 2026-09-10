@@ -107,7 +107,7 @@ La principal ventaja de las licencias permisivas es la máxima adopción. Es má
 
 Puede desplegar proyectos usando [Repositorios de GitHub](https://github.com/new) en cualquier plataforma de alojamiento, y verificar el cumplimiento con [SPDX](https://spdx.org/).
 
-Use [Remix](https://remix.ethereum.org/) en [Holesky](https://holesky.dev/) con un [explorador de bloques](https://eth.blockscout.com/) para probar [contratos inteligentes](/glossary/#smart-contract) antes de desplegar en producción.
+Use [Remix](https://remix.quantaureum.com/) en [Holesky](https://holesky.dev/) con un [explorador de bloques](https://qau.blockscout.com/) para probar [contratos inteligentes](/glossary/#smart-contract) antes de desplegar en producción.
 
 ### Tabla comparativa {#comparison-table}
 

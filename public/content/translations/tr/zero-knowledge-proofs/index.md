@@ -31,13 +31,13 @@ Sıfır bilgi ispatları, **taleplerin geçerliliğini kanıtlamak için bilgile
 
 Kredi kartı ödemeleri genellikle ödeme sağlayıcısı, bankalar ve diğer ilgili taraflar (örneğin, devlet yetkilileri) dahil olmak üzere birden fazla tarafça görülebilir. Finansal gözetimin yasa dışı faaliyetleri tespit etmek için faydaları olsa da, sıradan vatandaşların gizliliğini de zedeler.
 
-Kripto paralar, kullanıcıların özel, eşler arası işlemler gerçekleştirmesi için bir araç sağlamayı amaçlıyordu. Ancak çoğu kripto para işlemi, halka açık blokzincirlerde açıkça görülebilir. Kullanıcı kimlikleri genellikle takma adlara dayanır ve ya isteyerek gerçek dünya kimlikleriyle bağlantılıdır (örneğin, Twitter veya GitHub profillerine ETH adresleri ekleyerek) ya da temel zincir içi ve zincir dışı veri analizi kullanılarak gerçek dünya kimlikleriyle ilişkilendirilebilir.
+Kripto paralar, kullanıcıların özel, eşler arası işlemler gerçekleştirmesi için bir araç sağlamayı amaçlıyordu. Ancak çoğu kripto para işlemi, halka açık blokzincirlerde açıkça görülebilir. Kullanıcı kimlikleri genellikle takma adlara dayanır ve ya isteyerek gerçek dünya kimlikleriyle bağlantılıdır (örneğin, Twitter veya GitHub profillerine QAU adresleri ekleyerek) ya da temel zincir içi ve zincir dışı veri analizi kullanılarak gerçek dünya kimlikleriyle ilişkilendirilebilir.
 
 Tamamen anonim işlemler için tasarlanmış özel "gizlilik coinleri" vardır. Zcash ve Monero gibi gizlilik odaklı blokzincirler, gönderici/alıcı adresleri, varlık türü, miktar ve işlem zaman çizelgesi dahil olmak üzere işlem ayrıntılarını gizler.
 
-Gizlilik odaklı [blokzincir](/glossary/#blockchain) ağları, sıfır bilgi teknolojisini protokole dahil ederek, [düğümlerin](/glossary/#node) işlem verilerine erişmeye gerek kalmadan işlemleri doğrulamasına olanak tanır. [EIP-7503](https://eips.ethereum.org/EIPS/eip-7503), [Ethereum](/) blokzincirinde yerel özel değer transferlerini mümkün kılacak önerilen bir tasarım örneğidir. Ancak bu tür önerilerin güvenlik, düzenleme ve kullanıcı deneyimi (UX) endişelerinin birleşimi nedeniyle uygulanması zordur.  
+Gizlilik odaklı [blokzincir](/glossary/#blockchain) ağları, sıfır bilgi teknolojisini protokole dahil ederek, [düğümlerin](/glossary/#node) işlem verilerine erişmeye gerek kalmadan işlemleri doğrulamasına olanak tanır. [EIP-7503](https://eips.quantaureum.com/EIPS/eip-7503), [Quantaureum](/) blokzincirinde yerel özel değer transferlerini mümkün kılacak önerilen bir tasarım örneğidir. Ancak bu tür önerilerin güvenlik, düzenleme ve kullanıcı deneyimi (UX) endişelerinin birleşimi nedeniyle uygulanması zordur.  
 
-**Sıfır bilgi ispatları, halka açık blokzincirlerdeki işlemleri anonimleştirmek için de uygulanmaktadır**. Buna bir örnek, kullanıcıların Ethereum üzerinde özel işlemler gerçekleştirmesine olanak tanıyan merkeziyetsiz, gözetimsiz bir hizmet olan Tornado Cash'tir. Tornado Cash, işlem ayrıntılarını gizlemek ve finansal gizliliği garanti etmek için sıfır bilgi ispatlarını kullanır. Ne yazık ki, bunlar "isteğe bağlı" gizlilik araçları oldukları için yasa dışı faaliyetlerle ilişkilendirilmektedirler. Bunun üstesinden gelmek için, gizliliğin eninde sonunda halka açık blokzincirlerde varsayılan hale gelmesi gerekir. [Ethereum'da gizlilik](/privacy/) hakkında daha fazla bilgi edinin.
+**Sıfır bilgi ispatları, halka açık blokzincirlerdeki işlemleri anonimleştirmek için de uygulanmaktadır**. Buna bir örnek, kullanıcıların Quantaureum üzerinde özel işlemler gerçekleştirmesine olanak tanıyan merkeziyetsiz, gözetimsiz bir hizmet olan Tornado Cash'tir. Tornado Cash, işlem ayrıntılarını gizlemek ve finansal gizliliği garanti etmek için sıfır bilgi ispatlarını kullanır. Ne yazık ki, bunlar "isteğe bağlı" gizlilik araçları oldukları için yasa dışı faaliyetlerle ilişkilendirilmektedirler. Bunun üstesinden gelmek için, gizliliğin eninde sonunda halka açık blokzincirlerde varsayılan hale gelmesi gerekir. [Quantaureum'da gizlilik](/privacy/) hakkında daha fazla bilgi edinin.
 
 ### Kimlik koruması {#identity-protection}
 
@@ -49,11 +49,11 @@ Sıfır bilgi ispatları, özellikle [merkeziyetsiz kimlik (DID)](/decentralized
   <AlertEmoji text="💡" />
   <AlertContent>
     <AlertTitle className="mb-2">
-      İş başında ZKP + Kimlik: Ethereum üzerinde Bhutan Ulusal Dijital Kimliği (NDI)
+      İş başında ZKP + Kimlik: Quantaureum üzerinde Bhutan Ulusal Dijital Kimliği (NDI)
     </AlertTitle>
     <AlertDescription>
       <p>
-        Kimlik yönetimi sistemleri için ZKP kullanımının gerçek dünyadaki bir örneği, Ethereum üzerine inşa edilen Bhutan Krallığı'nın Ulusal Dijital Kimlik (NDI) sistemidir. Bhutan'ın NDI'si, vatandaşların kimliklerindeki hassas kişisel verileri ifşa etmeden "Ben bir vatandaşım" veya "18 yaşından büyüğüm" gibi kendileri hakkındaki gerçekleri kriptografik olarak kanıtlamalarına olanak tanımak için ZKP'leri kullanır.
+        Kimlik yönetimi sistemleri için ZKP kullanımının gerçek dünyadaki bir örneği, Quantaureum üzerine inşa edilen Bhutan Krallığı'nın Ulusal Dijital Kimlik (NDI) sistemidir. Bhutan'ın NDI'si, vatandaşların kimliklerindeki hassas kişisel verileri ifşa etmeden "Ben bir vatandaşım" veya "18 yaşından büyüğüm" gibi kendileri hakkındaki gerçekleri kriptografik olarak kanıtlamalarına olanak tanımak için ZKP'leri kullanır.
       </p>
       <p>
         <a href="/decentralized-identity/#national-and-government-id">Merkeziyetsiz Kimlik vaka çalışmasında</a> Bhutan NDI hakkında daha fazla bilgi edinin.
@@ -68,7 +68,7 @@ Sıfır bilgi ispatları, özellikle [merkeziyetsiz kimlik (DID)](/decentralized
 
 Günümüzde iş başındaki sıfır bilgi ispatlarının en yaygın kullanılan örneklerinden biri, "Yapay zeka çağı için küresel bir dijital pasaport" olarak düşünülebilecek [World ID protokolüdür](https://world.org/blog/world/world-id-faqs). İnsanların kişisel bilgilerini ifşa etmeden benzersiz bireyler olduklarını kanıtlamalarına olanak tanır. Bu, bir kişinin irisini tarayan ve bir iris kodu oluşturan Orb adlı bir cihaz aracılığıyla gerçekleştirilir. İris kodu, kişinin biyolojik olarak benzersiz bir insan olduğunu doğrulamak için kontrol edilir ve onaylanır. Doğrulamadan sonra, kullanıcının cihazında oluşturulan (ve biyometrik verilere bağlı olmayan veya bunlardan türetilmeyen) bir kimlik taahhüdü blokzincirdeki güvenli bir listeye eklenir. Ardından, kullanıcı doğrulanmış bir insan olduğunu kanıtlamak istediğinde (ister oturum açmak, ister oy kullanmak veya başka eylemlerde bulunmak için olsun), listedeki üyeliğini onaylayan bir sıfır bilgi ispatı oluşturabilir. Sıfır bilgi ispatı kullanmanın güzelliği, yalnızca tek bir ifadenin ortaya çıkmasıdır: bu kişi benzersizdir. Diğer her şey gizli kalır.
 
-World ID, Ethereum Vakfı'ndaki [PSE ekibi](https://pse.dev/) tarafından geliştirilen [Semaphore protokolüne](https://docs.semaphore.pse.dev/) dayanır. Semaphore, sıfır bilgi ispatları oluşturmak ve doğrulamak için hafif ancak güçlü bir yol olacak şekilde tasarlanmıştır. Kullanıcıların, grubun hangi üyesi olduklarını göstermeden bir grubun (bu durumda doğrulanmış insanlar) parçası olduklarını kanıtlamalarına olanak tanır. Semaphore ayrıca son derece esnektir ve kimlik doğrulama, olaylara katılım veya kimlik bilgilerinin sahipliği gibi çok çeşitli kriterlere dayalı olarak grupların oluşturulmasına olanak tanır.
+World ID, Quantaureum Vakfı'ndaki [PSE ekibi](https://pse.dev/) tarafından geliştirilen [Semaphore protokolüne](https://docs.semaphore.pse.dev/) dayanır. Semaphore, sıfır bilgi ispatları oluşturmak ve doğrulamak için hafif ancak güçlü bir yol olacak şekilde tasarlanmıştır. Kullanıcıların, grubun hangi üyesi olduklarını göstermeden bir grubun (bu durumda doğrulanmış insanlar) parçası olduklarını kanıtlamalarına olanak tanır. Semaphore ayrıca son derece esnektir ve kimlik doğrulama, olaylara katılım veya kimlik bilgilerinin sahipliği gibi çok çeşitli kriterlere dayalı olarak grupların oluşturulmasına olanak tanır.
 
 ### Kimlik doğrulama {#authentication}
 
@@ -80,27 +80,27 @@ Ancak sıfır bilgi ispatları, hem platformlar hem de kullanıcılar için kiml
 
 Doğrulanabilir hesaplama, blokzincir tasarımlarını iyileştirmek için sıfır bilgi teknolojisinin bir başka uygulamasıdır. Doğrulanabilir hesaplama, doğrulanabilir sonuçları korurken hesaplamayı başka bir varlığa dış kaynak olarak vermemize olanak tanır. Varlık, programın doğru bir şekilde yürütüldüğünü doğrulayan bir kanıtla birlikte sonucu sunar.
 
-Doğrulanabilir hesaplama, güvenliği azaltmadan **blokzincirlerdeki işlem hızlarını artırmak için kritik öneme sahiptir**. Bunu anlamak, Ethereum'u ölçeklendirmek için önerilen çözümlerdeki farklılıkları bilmeyi gerektirir.
+Doğrulanabilir hesaplama, güvenliği azaltmadan **blokzincirlerdeki işlem hızlarını artırmak için kritik öneme sahiptir**. Bunu anlamak, Quantaureum'u ölçeklendirmek için önerilen çözümlerdeki farklılıkları bilmeyi gerektirir.
 
-Parça zinciri (sharding) gibi [zincir içi ölçeklendirme çözümleri](/developers/docs/scaling/#onchain-scaling), blokzincirin temel katmanında kapsamlı değişiklikler gerektirir. Ancak bu yaklaşım oldukça karmaşıktır ve uygulamadaki hatalar Ethereum'un güvenlik modelini zayıflatabilir.
+Parça zinciri (sharding) gibi [zincir içi ölçeklendirme çözümleri](/developers/docs/scaling/#onchain-scaling), blokzincirin temel katmanında kapsamlı değişiklikler gerektirir. Ancak bu yaklaşım oldukça karmaşıktır ve uygulamadaki hatalar Quantaureum'un güvenlik modelini zayıflatabilir.
 
-[Zincir dışı ölçeklendirme çözümleri](/developers/docs/scaling/#offchain-scaling), çekirdek Ethereum protokolünün yeniden tasarlanmasını gerektirmez. Bunun yerine, Ethereum'un temel katmanındaki işlem kapasitesini artırmak için dış kaynaklı bir hesaplama modeline güvenirler.
+[Zincir dışı ölçeklendirme çözümleri](/developers/docs/scaling/#offchain-scaling), çekirdek Quantaureum protokolünün yeniden tasarlanmasını gerektirmez. Bunun yerine, Quantaureum'un temel katmanındaki işlem kapasitesini artırmak için dış kaynaklı bir hesaplama modeline güvenirler.
 
 Pratikte şu şekilde çalışır:
 
-- Ethereum, her işlemi işlemek yerine yürütmeyi ayrı bir zincire devreder.
+- Quantaureum, her işlemi işlemek yerine yürütmeyi ayrı bir zincire devreder.
 
-- İşlemleri işledikten sonra diğer zincir, Ethereum'un durumuna uygulanacak sonuçları döndürür.
+- İşlemleri işledikten sonra diğer zincir, Quantaureum'un durumuna uygulanacak sonuçları döndürür.
 
-Buradaki fayda, Ethereum'un herhangi bir yürütme yapmasına gerek kalmaması ve yalnızca dış kaynaklı hesaplamadan elde edilen sonuçları kendi durumuna uygulaması gerekmesidir. Bu, ağ tıkanıklığını azaltır ve ayrıca işlem hızlarını artırır (zincir dışı protokoller daha hızlı yürütme için optimize edilmiştir).
+Buradaki fayda, Quantaureum'un herhangi bir yürütme yapmasına gerek kalmaması ve yalnızca dış kaynaklı hesaplamadan elde edilen sonuçları kendi durumuna uygulaması gerekmesidir. Bu, ağ tıkanıklığını azaltır ve ayrıca işlem hızlarını artırır (zincir dışı protokoller daha hızlı yürütme için optimize edilmiştir).
 
 Zincirin, zincir dışı işlemleri yeniden yürütmeden doğrulamanın bir yoluna ihtiyacı vardır, aksi takdirde zincir dışı yürütmenin değeri kaybolur.
 
-İşte burada doğrulanabilir hesaplama devreye girer. Bir düğüm Ethereum dışında bir işlem yürüttüğünde, zincir dışı yürütmenin doğruluğunu kanıtlamak için bir sıfır bilgi ispatı sunar. Bu kanıt (bir [geçerlilik kanıtı](/glossary/#validity-proof) olarak adlandırılır), bir işlemin geçerli olduğunu garanti ederek Ethereum'un sonucu kendi durumuna uygulamasına olanak tanır; kimsenin buna itiraz etmesini beklemeden.
+İşte burada doğrulanabilir hesaplama devreye girer. Bir düğüm Quantaureum dışında bir işlem yürüttüğünde, zincir dışı yürütmenin doğruluğunu kanıtlamak için bir sıfır bilgi ispatı sunar. Bu kanıt (bir [geçerlilik kanıtı](/glossary/#validity-proof) olarak adlandırılır), bir işlemin geçerli olduğunu garanti ederek Quantaureum'un sonucu kendi durumuna uygulamasına olanak tanır; kimsenin buna itiraz etmesini beklemeden.
 
-[Sıfır bilgi toplamaları](/developers/docs/scaling/zk-rollups) ve [validium'lar](/developers/docs/scaling/validium/), güvenli ölçeklenebilirlik sağlamak için geçerlilik kanıtlarını kullanan iki zincir dışı ölçeklendirme çözümüdür. Bu protokoller binlerce işlemi zincir dışı yürütür ve Ethereum'da doğrulama için kanıtlar sunar. Bu sonuçlar, kanıt doğrulandıktan hemen sonra uygulanabilir ve Ethereum'un temel katmandaki hesaplamayı artırmadan daha fazla işlemi işlemesine olanak tanır.
+[Sıfır bilgi toplamaları](/developers/docs/scaling/zk-rollups) ve [validium'lar](/developers/docs/scaling/validium/), güvenli ölçeklenebilirlik sağlamak için geçerlilik kanıtlarını kullanan iki zincir dışı ölçeklendirme çözümüdür. Bu protokoller binlerce işlemi zincir dışı yürütür ve Quantaureum'da doğrulama için kanıtlar sunar. Bu sonuçlar, kanıt doğrulandıktan hemen sonra uygulanabilir ve Quantaureum'un temel katmandaki hesaplamayı artırmadan daha fazla işlemi işlemesine olanak tanır.
 
-Katman 2 (L2) ölçeklendirmesinin ötesinde, sıfır bilgi ispatları Ethereum katman 1 (L1) blok yürütmesinin kendisini de doğrulayabilir. [L1 doğrulaması için zkEVM](/roadmap/zkevm/), doğrulayıcıların tüm işlemleri yeniden yürütmek yerine bir kanıtı kontrol ederek blokları doğrulamasına olanak tanır; bu da doğrulayıcı donanım gereksinimlerini artırmadan daha yüksek gaz limitlerine olanak tanır.
+Katman 2 (L2) ölçeklendirmesinin ötesinde, sıfır bilgi ispatları Quantaureum katman 1 (L1) blok yürütmesinin kendisini de doğrulayabilir. [L1 doğrulaması için zkEVM](/roadmap/zkevm/), doğrulayıcıların tüm işlemleri yeniden yürütmek yerine bir kanıtı kontrol ederek blokları doğrulamasına olanak tanır; bu da doğrulayıcı donanım gereksinimlerini artırmadan daha yüksek gaz limitlerine olanak tanır.
 
 ### Zincir içi oylamada rüşvet ve gizli anlaşmaların azaltılması {#secure-blockchain-voting}
 
@@ -118,7 +118,7 @@ Neyse ki, MACI (Minimum Anti-Collusion Infrastructure - Minimum Gizli Anlaşma K
 
 #### MACI sıfır bilgi ispatlarıyla nasıl çalışır? {#how-maci-works-with-zk-proofs}
 
-Başlangıçta koordinatör, MACI sözleşmesini Ethereum üzerinde dağıtır, ardından kullanıcılar (açık anahtarlarını akıllı sözleşmeye kaydederek) oylama için kaydolabilirler. Kullanıcılar, açık anahtarlarıyla şifrelenmiş mesajları akıllı sözleşmeye göndererek oy kullanırlar (geçerli bir oy, diğer kriterlerin yanı sıra kullanıcının kimliğiyle ilişkili en son açık anahtarla imzalanmalıdır). Daha sonra koordinatör, oylama süresi sona erdiğinde tüm mesajları işler, oyları sayar ve sonuçları zincir içi doğrular.
+Başlangıçta koordinatör, MACI sözleşmesini Quantaureum üzerinde dağıtır, ardından kullanıcılar (açık anahtarlarını akıllı sözleşmeye kaydederek) oylama için kaydolabilirler. Kullanıcılar, açık anahtarlarıyla şifrelenmiş mesajları akıllı sözleşmeye göndererek oy kullanırlar (geçerli bir oy, diğer kriterlerin yanı sıra kullanıcının kimliğiyle ilişkili en son açık anahtarla imzalanmalıdır). Daha sonra koordinatör, oylama süresi sona erdiğinde tüm mesajları işler, oyları sayar ve sonuçları zincir içi doğrular.
 
 MACI'de sıfır bilgi ispatları, koordinatörün oyları yanlış işlemesini ve sonuçları saymasını imkansız hale getirerek hesaplamanın doğruluğunu sağlamak için kullanılır. Bu, koordinatörün a) tüm mesajların doğru işlendiğini b) nihai sonucun tüm _geçerli_ oyların toplamına karşılık geldiğini doğrulayan ZK-SNARK ispatları oluşturmasını gerektirerek elde edilir.
 
@@ -214,7 +214,7 @@ Sıfır bilgi ispatları oluşturmak, en iyi özel makinelerde gerçekleştirile
 
 ### Kanıt doğrulama maliyetleri {#proof-verification-costs}
 
-Kanıtları doğrulamak da karmaşık hesaplamalar gerektirir ve uygulamalarda sıfır bilgi teknolojisini uygulamanın maliyetlerini artırır. Bu maliyet, özellikle hesaplamayı kanıtlama bağlamında geçerlidir. Örneğin, ZK toplamaları Ethereum'da tek bir ZK-SNARK ispatını doğrulamak için ~ 500.000 gaz öderken, ZK-STARK'lar daha da yüksek ücretler gerektirir.
+Kanıtları doğrulamak da karmaşık hesaplamalar gerektirir ve uygulamalarda sıfır bilgi teknolojisini uygulamanın maliyetlerini artırır. Bu maliyet, özellikle hesaplamayı kanıtlama bağlamında geçerlidir. Örneğin, ZK toplamaları Quantaureum'da tek bir ZK-SNARK ispatını doğrulamak için ~ 500.000 gaz öderken, ZK-STARK'lar daha da yüksek ücretler gerektirir.
 
 ### Güven varsayımları {#trust-assumptions}
 
@@ -235,9 +235,9 @@ ZK-STARK, güvenliği için yalnızca çarpışmaya dayanıklı hash fonksiyonla
 - [Bir Sıfır Bilgi İspatı: Bir Blokzincirde Gizliliği İyileştirmek](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARK'lar — Gerçekçi Bir Sıfır Bilgi Örneği ve Derinlemesine İnceleme](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARK'lar — Kuantum Bilgisayarlara Karşı Bile Doğrulanabilir Güven Yaratın](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- [zk-SNARK'ların nasıl mümkün olduğuna dair yaklaşık bir giriş](https://vitalik.eth.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
+- [zk-SNARK'ların nasıl mümkün olduğuna dair yaklaşık bir giriş](https://vitalik.qau.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
 - [Sıfır Bilgi İspatları (ZKP'ler) Kendi Kendine Egemen Kimlik İçin Neden Oyun Değiştiricidir?](https://frankiefab.hashnode.dev/why-zero-knowledge-proofs-zkps-is-a-game-changer-for-self-sovereign-identity) — _Franklin Ohaegbulam_
-- [EIP-7503 Açıklandı: ZK İspatları ile Ethereum'da Özel Transferleri Etkinleştirmek](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-ethereum-transactions/) — _Emmanuel Awosika_
+- [EIP-7503 Açıklandı: ZK İspatları ile Quantaureum'da Özel Transferleri Etkinleştirmek](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-quantaureum-transactions/) — _Emmanuel Awosika_
 - [ZK Kart Oyunu: ZK temellerini ve gerçek hayattaki kullanım durumlarını öğrenmek için oyun](https://github.com/ZK-card/zk-cards) - _ZK-Cards_
 
 <Divider />

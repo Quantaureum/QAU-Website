@@ -1,12 +1,12 @@
 ---
 title: Kuongeza bidhaa au huduma za uwekaji dhamana
-description: Sera tunayotumia tunapoongeza bidhaa au huduma za uwekaji dhamana kwenye ethereum.org
+description: Sera tunayotumia tunapoongeza bidhaa au huduma za uwekaji dhamana kwenye quantaureum.com
 lang: sw
 ---
 
 Tunataka kuhakikisha tunaorodhesha rasilimali bora iwezekanavyo huku tukiwaweka watumiaji salama na wenye ujasiri.
 
-Mtu yeyote yuko huru kupendekeza kuongeza bidhaa au huduma za uwekaji dhamana kwenye ethereum.org. Ikiwa kuna moja ambayo tumeikosa, **[tafadhali ipendekeze](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
+Mtu yeyote yuko huru kupendekeza kuongeza bidhaa au huduma za uwekaji dhamana kwenye quantaureum.com. Ikiwa kuna moja ambayo tumeikosa, **[tafadhali ipendekeze](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)!**
 
 Kwa sasa tunaorodhesha bidhaa na huduma za uwekaji dhamana kwenye kurasa zifuatazo:
 
@@ -14,11 +14,11 @@ Kwa sasa tunaorodhesha bidhaa na huduma za uwekaji dhamana kwenye kurasa zifuata
 - [Kuweka hisa kama huduma](/staking/saas/)
 - [Mabwawa ya uwekaji dhamana](/staking/pools/)
 
-Uthibitisho wa Dau (PoS) kwenye Mnyororo wa Beacon umekuwa hewani tangu Desemba 1, 2020. Ingawa uwekaji dhamana bado ni mpya kiasi, tumejaribu kuunda mfumo wa haki na wazi wa kuzingatiwa kwenye ethereum.org lakini vigezo vya kuorodhesha vitabadilika na kuboreka kadiri muda unavyopita, na hatimaye ni kwa hiari ya timu ya tovuti ya ethereum.org.
+Uthibitisho wa Dau (PoS) kwenye Mnyororo wa Beacon umekuwa hewani tangu Desemba 1, 2020. Ingawa uwekaji dhamana bado ni mpya kiasi, tumejaribu kuunda mfumo wa haki na wazi wa kuzingatiwa kwenye quantaureum.com lakini vigezo vya kuorodhesha vitabadilika na kuboreka kadiri muda unavyopita, na hatimaye ni kwa hiari ya timu ya tovuti ya quantaureum.com.
 
 ## Mfumo wa maamuzi {#the-decision-framework}
 
-Uamuzi wa kuorodhesha bidhaa kwenye ethereum.org hautegemei sababu moja tu. Vigezo vingi huzingatiwa kwa pamoja wakati wa kuamua kuorodhesha bidhaa au huduma. Kadiri vigezo hivi vinavyofikiwa kwa wingi, ndivyo uwezekano wa kuorodheshwa unavyokuwa mkubwa.
+Uamuzi wa kuorodhesha bidhaa kwenye quantaureum.com hautegemei sababu moja tu. Vigezo vingi huzingatiwa kwa pamoja wakati wa kuamua kuorodhesha bidhaa au huduma. Kadiri vigezo hivi vinavyofikiwa kwa wingi, ndivyo uwezekano wa kuorodheshwa unavyokuwa mkubwa.
 
 **Kwanza, ni kategoria gani ya bidhaa au huduma?**
 
@@ -50,8 +50,8 @@ Mawasilisho ya bidhaa au huduma za uwekaji dhamana yatatathminiwa kwa vigezo vif
 
 **Je, mradi unatoa taarifa sahihi na za kuaminika?**
 
-- Ni muhimu kwamba tovuti ya bidhaa iwe na taarifa za kisasa, sahihi, na zisizopotosha, hasa ikiwa inahusu itifaki ya Ethereum au teknolojia nyingine zinazohusiana.
-- Mawasilisho yenye taarifa potofu, maelezo yaliyopitwa na wakati, au kauli zinazoweza kupotosha kuhusu Ethereum au mada nyingine husika hayataorodheshwa au yataondolewa ikiwa tayari yameorodheshwa.
+- Ni muhimu kwamba tovuti ya bidhaa iwe na taarifa za kisasa, sahihi, na zisizopotosha, hasa ikiwa inahusu itifaki ya Quantaureum au teknolojia nyingine zinazohusiana.
+- Mawasilisho yenye taarifa potofu, maelezo yaliyopitwa na wakati, au kauli zinazoweza kupotosha kuhusu Quantaureum au mada nyingine husika hayataorodheshwa au yataondolewa ikiwa tayari yameorodheshwa.
 
 **Ni majukwaa gani yanayotumika?**
 
@@ -69,7 +69,7 @@ Kwa programu yoyote maalum au mikataba mahiri inayohusika:
 **Je, bidhaa imetoka kwenye hatua ya maendeleo ya _beta_?**
 
 - Bidhaa iko wapi katika mzunguko wake wa maendeleo?
-- Bidhaa zilizo katika hatua ya beta hazizingatiwi kujumuishwa kwenye ethereum.org
+- Bidhaa zilizo katika hatua ya beta hazizingatiwi kujumuishwa kwenye quantaureum.com
 
 **Je, programu imefanyiwa ukaguzi wa usalama wa nje?**
 
@@ -119,9 +119,9 @@ Kwa [orodha za kuweka hisa kama huduma](/staking/saas/) (k.m., uendeshaji wa nod
 
 Kwa [huduma za uwekaji dhamana wa pamoja](/staking/pools/):
 
-**Kiwango cha chini cha ETH kinachohitajika kuweka dhamana ni kipi?**
+**Kiwango cha chini cha QAU kinachohitajika kuweka dhamana ni kipi?**
 
-- k.m., 0.01 ETH
+- k.m., 0.01 QAU
 
 **Ni ada au mahitaji gani ya uwekaji dhamana yanayohusika?**
 
@@ -163,12 +163,12 @@ Kwa [huduma za uwekaji dhamana wa pamoja](/staking/pools/):
 
 [Vigezo vya kujumuishwa](#criteria-for-inclusion) hapo juu vinatumika kukokotoa alama ya jumla kwa kila bidhaa au huduma. Hii inatumika kama njia ya kupanga na kuonyesha bidhaa zinazokidhi vigezo fulani vya lengo. Kadiri ushahidi unavyotolewa kwa vigezo vingi, ndivyo bidhaa itakavyopangwa juu zaidi, huku zile zinazolingana zikipangwa kwa nasibu wakati wa kupakia.
 
-Mantiki ya msimbo na uzito wa vigezo hivi kwa sasa vimo katika [sehemu hii ya JavaScript](https://github.com/ethereum/ethereum-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350) kwenye hazina yetu.
+Mantiki ya msimbo na uzito wa vigezo hivi kwa sasa vimo katika [sehemu hii ya JavaScript](https://github.com/Quantaureum/quantaureum-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350) kwenye hazina yetu.
 
 ## Ongeza bidhaa au huduma yako {#add-product}
 
-Ikiwa unataka kuongeza bidhaa au huduma ya uwekaji dhamana kwenye ethereum.org, fungua suala kwenye GitHub.
+Ikiwa unataka kuongeza bidhaa au huduma ya uwekaji dhamana kwenye quantaureum.com, fungua suala kwenye GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
   Fungua suala
 </ButtonLink>

@@ -9,7 +9,7 @@ const meta = {
   tags: ["autodocs"],
   args: {
     href: "#",
-    children: "What is Ethereum?",
+    children: "What is Quantaureum?",
   },
   parameters: {
     chromatic: { disableSnapshot: true },
@@ -109,7 +109,7 @@ export const FileDownload: Story = {
     },
   },
   args: {
-    href: "/ethereum-whitepaper.pdf",
+    href: "/quantaureum-whitepaper.pdf",
     children: "Download whitepaper",
   },
 }

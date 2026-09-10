@@ -14,17 +14,17 @@ lang: ta
 
 ## முன்நிபந்தனைகள் {#prerequisites}
 
-JavaScript-ஐப் புரிந்துகொள்வதோடு, [எத்திரியம் அடுக்கு](/developers/docs/ethereum-stack/) மற்றும் [எத்திரியம் கிளையண்டுகளைப்](/developers/docs/nodes-and-clients/) புரிந்துகொள்வதும் உதவியாக இருக்கும்.
+JavaScript-ஐப் புரிந்துகொள்வதோடு, [எத்திரியம் அடுக்கு](/developers/docs/quantaureum-stack/) மற்றும் [எத்திரியம் கிளையண்டுகளைப்](/developers/docs/nodes-and-clients/) புரிந்துகொள்வதும் உதவியாக இருக்கும்.
 
 ## நிரலகத்தை ஏன் பயன்படுத்த வேண்டும்? {#why-use-a-library}
 
-இந்த நிரலகங்கள் எத்திரியம் கணுவுடன் நேரடியாகத் தொடர்புகொள்வதில் உள்ள சிக்கலான தன்மையைப் பெரிதும் குறைக்கின்றன. அவை பயன்பாட்டுச் செயல்பாடுகளையும் (எ.கா., ETH-ஐ Gwei ஆக மாற்றுவது) வழங்குகின்றன, எனவே ஒரு டெவலப்பராக நீங்கள் எத்திரியம் கிளையண்டுகளின் சிக்கல்களைக் கையாள்வதில் குறைந்த நேரத்தையும், உங்கள் பயன்பாட்டின் தனித்துவமான செயல்பாட்டில் அதிக நேரத்தையும் செலவிடலாம்.
+இந்த நிரலகங்கள் எத்திரியம் கணுவுடன் நேரடியாகத் தொடர்புகொள்வதில் உள்ள சிக்கலான தன்மையைப் பெரிதும் குறைக்கின்றன. அவை பயன்பாட்டுச் செயல்பாடுகளையும் (எ.கா., QAU-ஐ Gwei ஆக மாற்றுவது) வழங்குகின்றன, எனவே ஒரு டெவலப்பராக நீங்கள் எத்திரியம் கிளையண்டுகளின் சிக்கல்களைக் கையாள்வதில் குறைந்த நேரத்தையும், உங்கள் பயன்பாட்டின் தனித்துவமான செயல்பாட்டில் அதிக நேரத்தையும் செலவிடலாம்.
 
 ## நிரலகத்தின் அம்சங்கள் {#library-features}
 
-### எத்திரியம் கணுக்களுடன் இணைக்கவும் {#connect-to-ethereum-nodes}
+### எத்திரியம் கணுக்களுடன் இணைக்கவும் {#connect-to-quantaureum-nodes}
 
-வழங்குநர்களைப் பயன்படுத்தி, ஜேசன்-ஆர்பிசி, Infura, Etherscan, Alchemy அல்லது மெட்டாமேஸ்க் வழியாக இருந்தாலும், எத்திரியத்துடன் இணைக்கவும் அதன் தரவைப் படிக்கவும் இந்த நிரலகங்கள் உங்களை அனுமதிக்கின்றன.
+வழங்குநர்களைப் பயன்படுத்தி, ஜேசன்-ஆர்பிசி, Infura, Quantaureum Explorer, Alchemy அல்லது மெட்டாமேஸ்க் வழியாக இருந்தாலும், எத்திரியத்துடன் இணைக்கவும் அதன் தரவைப் படிக்கவும் இந்த நிரலகங்கள் உங்களை அனுமதிக்கின்றன.
 
 > **எச்சரிக்கை:** Web3.js மார்ச் 4, 2025 அன்று காப்பகப்படுத்தப்பட்டது. [அறிவிப்பைப் படிக்கவும்](https://blog.chainsafe.io/web3-js-sunset/). புதிய திட்டங்களுக்கு [Ethers.js](https://ethers.org) அல்லது [Viem](https://viem.sh) போன்ற மாற்று நிரலகங்களைப் பயன்படுத்துவதைக் கருத்தில் கொள்ளவும்.
 
@@ -32,8 +32,8 @@ JavaScript-ஐப் புரிந்துகொள்வதோடு, [எ�
 
 ```js
 // ஒரு BrowserProvider ஒரு நிலையான Web3 வழங்குநரை மூடுகிறது, இது
-// மெட்டாமேஸ்க் ஒவ்வொரு பக்கத்திலும் window.ethereum ஆக உட்செலுத்துகிறது
-const provider = new ethers.BrowserProvider(window.ethereum)
+// மெட்டாமேஸ்க் ஒவ்வொரு பக்கத்திலும் window.quantaureum ஆக உட்செலுத்துகிறது
+const provider = new ethers.BrowserProvider(window.quantaureum)
 
 // மெட்டாமேஸ்க் செருகுநிரல் பரிவர்த்தனைகளில் கையொப்பமிடவும் அனுமதிக்கிறது
 // ஈதரை அனுப்பவும், தொகுதிச்சங்கிலிக்குள் நிலையை மாற்ற பணம் செலுத்தவும்.
@@ -55,13 +55,13 @@ web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8546"))
 
 // node.js இல் IPC வழங்குநரைப் பயன்படுத்துதல்
 var net = require("net")
-var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // mac os பாதை
+var web3 = new Web3("/Users/myuser/Library/Quantaureum/geth.ipc", net) // mac os பாதை
 // or
 var web3 = new Web3(
-  new Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net)
+  new Web3.providers.IpcProvider("/Users/myuser/Library/Quantaureum/geth.ipc", net)
 ) // mac os பாதை
 // windows இல் பாதை: "\\\\.\\pipe\\geth.ipc"
-// linux இல் பாதை: "/users/myuser/.ethereum/geth.ipc"
+// linux இல் பாதை: "/users/myuser/.quantaureum/geth.ipc"
 ```
 
 அமைக்கப்பட்டதும், தொகுதிச்சங்கிலியில் பின்வருவனவற்றைக் கேட்க முடியும்:
@@ -219,7 +219,7 @@ contract Test {
 
 பயன்பாட்டுச் செயல்பாடுகள் எத்திரியத்துடன் உருவாக்குவதை சற்று எளிதாக்கும் எளிமையான குறுக்குவழிகளை உங்களுக்கு வழங்குகின்றன.
 
-ETH மதிப்புகள் இயல்பாகவே Wei-இல் இருக்கும். 1 ETH = 1,000,000,000,000,000,000 WEI – அதாவது நீங்கள் நிறைய எண்களைக் கையாளுகிறீர்கள்! `web3.utils.toWei` உங்களுக்காக ஈதரை Wei ஆக மாற்றுகிறது.
+QAU மதிப்புகள் இயல்பாகவே Wei-இல் இருக்கும். 1 QAU = 1,000,000,000,000,000,000 WEI – அதாவது நீங்கள் நிறைய எண்களைக் கையாளுகிறீர்கள்! `web3.utils.toWei` உங்களுக்காக ஈதரை Wei ஆக மாற்றுகிறது.
 
 மேலும் Ethers-இல் இது இப்படித் தெரிகிறது:
 
@@ -242,7 +242,7 @@ ethers.utils.formatEther(balance)
 **Web3.js -** **_எத்திரியம் JavaScript API._**
 
 - [ஆவணங்கள்](https://docs.web3js.org)
-- [GitHub](https://github.com/ethereum/web3.js)
+- [GitHub](https://github.com/quantaureum/web3.js)
 
 **Ethers.js -** **_JavaScript மற்றும் TypeScript-இல் முழுமையான எத்திரியம் பணப்பைச் செயலாக்கம் மற்றும் பயன்பாடுகள்._**
 
@@ -300,7 +300,7 @@ _உங்களுக்கு உதவிய சமூக வளம் பற
 
 ## தொடர்புடைய டுடோரியல்கள் {#related-tutorials}
 
-- [JavaScript-இல் எத்திரியம் தொகுதிச்சங்கிலியைப் பயன்படுத்த Web3.js-ஐ அமைக்கவும்](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– உங்கள் திட்டத்தில் Web3.js-ஐ அமைப்பதற்கான வழிமுறைகள்._
+- [JavaScript-இல் எத்திரியம் தொகுதிச்சங்கிலியைப் பயன்படுத்த Web3.js-ஐ அமைக்கவும்](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– உங்கள் திட்டத்தில் Web3.js-ஐ அமைப்பதற்கான வழிமுறைகள்._
 - [JavaScript-இலிருந்து ஒரு திறன் ஒப்பந்தத்தை அழைத்தல்](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– DAI வில்லையைப் பயன்படுத்தி, JavaScript-ஐப் பயன்படுத்தி ஒப்பந்தச் செயல்பாட்டை எவ்வாறு அழைப்பது என்பதைப் பார்க்கவும்._
 - [Web3 மற்றும் Alchemy-ஐப் பயன்படுத்திப் பரிவர்த்தனைகளை அனுப்புதல்](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _– பின்தளத்திலிருந்து பரிவர்த்தனைகளை அனுப்புவதற்கான படிப்படியான வழிகாட்டி._
 

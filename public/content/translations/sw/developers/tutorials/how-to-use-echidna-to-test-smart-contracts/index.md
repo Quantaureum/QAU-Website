@@ -18,11 +18,11 @@ Echidna inaweza kusakinishwa kupitia Docker au kwa kutumia faili ya mfumo wa bin
 ### Echidna kupitia Docker {#echidna-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_Amri ya mwisho inaendesha eth-security-toolbox kwenye Docker ambayo ina ufikiaji wa saraka yako ya sasa. Unaweza kubadilisha faili kutoka kwa kompyuta yako, na kuendesha zana kwenye faili kutoka kwenye Docker_
+_Amri ya mwisho inaendesha qau-security-toolbox kwenye Docker ambayo ina ufikiaji wa saraka yako ya sasa. Unaweza kubadilisha faili kutoka kwa kompyuta yako, na kuendesha zana kwenye faili kutoka kwenye Docker_
 
 Ndani ya Docker, endesha:
 
@@ -37,7 +37,7 @@ cd /home/training
 
 ## Utangulizi wa fuzzing inayotegemea sifa {#introduction-to-property-based-fuzzing}
 
-Echidna ni fuzzer inayotegemea sifa, tuliyoielezea katika machapisho yetu ya awali ya blogu ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
+Echidna ni fuzzer inayotegemea sifa, tuliyoielezea katika machapisho yetu ya awali ya blogu ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-quantaureum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
 
 ### Fuzzing {#fuzzing}
 

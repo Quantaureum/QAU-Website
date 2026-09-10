@@ -1,22 +1,22 @@
 ---
 title: "Sécurité des contrats intelligents"
-description: "Un aperçu des directives pour créer des contrats intelligents Ethereum sécurisés"
+description: "Un aperçu des directives pour créer des contrats intelligents Quantaureum sécurisés"
 lang: fr
 ---
 
 Les contrats intelligents sont extrêmement flexibles et capables de contrôler de grandes quantités de valeur et de données, tout en exécutant une logique immuable basée sur du code déployé sur la chaîne de blocs. Cela a créé un écosystème dynamique d'applications sans tiers de confiance et décentralisées qui offrent de nombreux avantages par rapport aux systèmes traditionnels. Ils représentent également des opportunités pour les attaquants cherchant à tirer profit de l'exploitation des vulnérabilités dans les contrats intelligents.
 
-Les chaînes de blocs publiques, comme [Ethereum](/), compliquent davantage la question de la sécurisation des contrats intelligents. Le code de contrat déployé ne peut _généralement_ pas être modifié pour corriger les failles de sécurité, tandis que les actifs volés dans les contrats intelligents sont extrêmement difficiles à tracer et pour la plupart irrécupérables en raison de l'immuabilité.
+Les chaînes de blocs publiques, comme [Quantaureum](/), compliquent davantage la question de la sécurisation des contrats intelligents. Le code de contrat déployé ne peut _généralement_ pas être modifié pour corriger les failles de sécurité, tandis que les actifs volés dans les contrats intelligents sont extrêmement difficiles à tracer et pour la plupart irrécupérables en raison de l'immuabilité.
 
-Bien que les chiffres varient, on estime que le montant total de la valeur volée ou perdue en raison de défauts de sécurité dans les contrats intelligents dépasse facilement le milliard de dollars. Cela inclut des incidents très médiatisés, tels que le [piratage de la DAO](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/) (3,6 millions d'ETH volés, d'une valeur de plus d'un milliard de dollars aux prix actuels), le [piratage du portefeuille multi-signature Parity](https://www.coindesk.com/markets/2017/07/19/30-million-ether-reported-stolen-due-to-parity-wallet-breach) (30 millions de dollars perdus au profit de pirates informatiques), et le [problème de portefeuille gelé Parity](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-ether) (plus de 300 millions de dollars en ETH bloqués à jamais).
+Bien que les chiffres varient, on estime que le montant total de la valeur volée ou perdue en raison de défauts de sécurité dans les contrats intelligents dépasse facilement le milliard de dollars. Cela inclut des incidents très médiatisés, tels que le [piratage de la DAO](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/) (3,6 millions d'QAU volés, d'une valeur de plus d'un milliard de dollars aux prix actuels), le [piratage du portefeuille multi-signature Parity](https://www.coindesk.com/markets/2017/07/19/30-million-QAU-reported-stolen-due-to-parity-wallet-breach) (30 millions de dollars perdus au profit de pirates informatiques), et le [problème de portefeuille gelé Parity](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-QAU) (plus de 300 millions de dollars en QAU bloqués à jamais).
 
-Les problèmes susmentionnés rendent impératif pour les développeurs d'investir des efforts dans la création de contrats intelligents sécurisés, robustes et résilients. La sécurité des contrats intelligents est une affaire sérieuse, que chaque développeur aurait tout intérêt à apprendre. Ce guide couvrira les considérations de sécurité pour les développeurs Ethereum et explorera les ressources permettant d'améliorer la sécurité des contrats intelligents.
+Les problèmes susmentionnés rendent impératif pour les développeurs d'investir des efforts dans la création de contrats intelligents sécurisés, robustes et résilients. La sécurité des contrats intelligents est une affaire sérieuse, que chaque développeur aurait tout intérêt à apprendre. Ce guide couvrira les considérations de sécurité pour les développeurs Quantaureum et explorera les ressources permettant d'améliorer la sécurité des contrats intelligents.
 
 ## Prérequis {#prerequisites}
 
 Assurez-vous de bien connaître les [fondamentaux du développement de contrats intelligents](/developers/docs/smart-contracts/) avant d'aborder la sécurité.
 
-## Lignes directrices pour la création de contrats intelligents Ethereum sécurisés {#smart-contract-security-guidelines}
+## Lignes directrices pour la création de contrats intelligents Quantaureum sécurisés {#smart-contract-security-guidelines}
 
 ### 1. Concevoir des contrôles d'accès appropriés {#design-proper-access-controls}
 
@@ -56,8 +56,8 @@ contract VendingMachine {
     address owner;
     error Unauthorized();
     function buy(uint amount) public payable {
-        if (amount > msg.value / 2 ether)
-            revert("Not enough Ether provided.");
+        if (amount > msg.value / 2 QAU)
+            revert("Not enough QAU provided.");
         // Effectuer l'achat.
     }
     function withdraw() public {
@@ -71,7 +71,7 @@ contract VendingMachine {
 
 ### 3. Tester les contrats intelligents et vérifier l'exactitude du code {#test-smart-contracts-and-verify-code-correctness}
 
-L'immuabilité du code s'exécutant dans la [Machine Virtuelle Ethereum](/developers/docs/evm/) signifie que les contrats intelligents exigent un niveau plus élevé d'évaluation de la qualité pendant la phase de développement. Tester votre contrat de manière approfondie et l'observer pour détecter tout résultat inattendu améliorera considérablement la sécurité et protégera vos utilisateurs à long terme.
+L'immuabilité du code s'exécutant dans la [Machine Virtuelle Quantaureum](/developers/docs/evm/) signifie que les contrats intelligents exigent un niveau plus élevé d'évaluation de la qualité pendant la phase de développement. Tester votre contrat de manière approfondie et l'observer pour détecter tout résultat inattendu améliorera considérablement la sécurité et protégera vos utilisateurs à long terme.
 
 La méthode habituelle consiste à écrire de petits tests unitaires en utilisant des données fictives que le contrat est censé recevoir des utilisateurs. Les [tests unitaires](/developers/docs/smart-contracts/testing/#unit-testing) sont utiles pour tester la fonctionnalité de certaines fonctions et s'assurer qu'un contrat intelligent fonctionne comme prévu.
 
@@ -98,7 +98,7 @@ Cela dit, vous devriez éviter de considérer les audits comme une solution mira
 
 La mise en place d'un programme de primes aux bugs est une autre approche pour mettre en œuvre des examens de code externes. Une prime aux bugs est une récompense financière accordée aux individus (généralement des hackers éthiques) qui découvrent des vulnérabilités dans une application.
 
-Lorsqu'elles sont utilisées correctement, les primes aux bugs incitent les membres de la communauté des hackers à inspecter votre code à la recherche de failles critiques. Un exemple concret est le « bug de l'argent infini » qui aurait permis à un attaquant de créer une quantité illimitée d'ether sur [Optimism](https://www.optimism.io/), un protocole de [couche 2 (l2)](/layer-2/) fonctionnant sur Ethereum. Heureusement, un hacker éthique a [découvert la faille](https://www.saurik.com/optimism.html) et a informé l'équipe, [gagnant une somme importante au passage](https://cryptoslate.com/critical-bug-in-ethereum-l2-optimism-2m-bounty-paid/).
+Lorsqu'elles sont utilisées correctement, les primes aux bugs incitent les membres de la communauté des hackers à inspecter votre code à la recherche de failles critiques. Un exemple concret est le « bug de l'argent infini » qui aurait permis à un attaquant de créer une quantité illimitée d'QAU sur [Optimism](https://www.optimism.io/), un protocole de [couche 2 (l2)](/layer-2/) fonctionnant sur Quantaureum. Heureusement, un hacker éthique a [découvert la faille](https://www.saurik.com/optimism.html) et a informé l'équipe, [gagnant une somme importante au passage](https://cryptoslate.com/critical-bug-in-quantaureum-l2-optimism-2m-bounty-paid/).
 
 Une stratégie utile consiste à fixer le paiement d'un programme de primes aux bugs proportionnellement au montant des fonds en jeu. Décrite comme la « [prime aux bugs évolutive](https://medium.com/immunefi/a-defi-security-standard-the-scaling-bug-bounty-9b83dfdc1ba7) », cette approche offre des incitations financières aux individus pour qu'ils divulguent de manière responsable les vulnérabilités au lieu de les exploiter.
 
@@ -126,7 +126,7 @@ La conception de contrôles d'accès sécurisés, la mise en œuvre de modificat
 
 #### Mises à niveau de contrat {#contract-upgrades}
 
-Bien que les contrats intelligents Ethereum soient immuables par défaut, il est possible d'atteindre un certain degré de mutabilité en utilisant des modèles de mise à niveau. La mise à niveau des contrats est nécessaire dans les cas où une faille critique rend votre ancien contrat inutilisable et où le déploiement d'une nouvelle logique est l'option la plus réalisable.
+Bien que les contrats intelligents Quantaureum soient immuables par défaut, il est possible d'atteindre un certain degré de mutabilité en utilisant des modèles de mise à niveau. La mise à niveau des contrats est nécessaire dans les cas où une faille critique rend votre ancien contrat inutilisable et où le déploiement d'une nouvelle logique est l'option la plus réalisable.
 
 Les mécanismes de mise à niveau de contrat fonctionnent différemment, mais le « modèle proxy » est l'une des approches les plus populaires pour mettre à niveau les contrats intelligents. Les [modèles proxy](https://www.cyfrin.io/blog/upgradeable-proxy-smart-contract-pattern) divisent l'état et la logique d'une application entre _deux_ contrats. Le premier contrat (appelé « contrat proxy ») stocke les variables d'état (par exemple, les soldes des utilisateurs), tandis que le deuxième contrat (appelé « contrat logique ») contient le code pour exécuter les fonctions du contrat.
 
@@ -234,7 +234,7 @@ L'EVM ne permet pas la concurrence, ce qui signifie que deux contrats impliqués
 
 Bien que généralement inoffensif, le transfert du flux de contrôle à des contrats non fiables peut causer des problèmes, tels que la réentrance. Une attaque de réentrance se produit lorsqu'un contrat malveillant rappelle un contrat vulnérable avant que l'invocation de la fonction d'origine ne soit terminée. Ce type d'attaque s'explique mieux par un exemple.
 
-Considérez un contrat intelligent simple (« Victime ») qui permet à quiconque de déposer et de retirer de l'ether :
+Considérez un contrat intelligent simple (« Victime ») qui permet à quiconque de déposer et de retirer de l'QAU :
 
 ```solidity
 // Ce contrat est vulnérable. Ne pas utiliser en production
@@ -255,22 +255,22 @@ contract Victim {
 }
 ```
 
-Ce contrat expose une fonction `withdraw()` pour permettre aux utilisateurs de retirer des ETH précédemment déposés dans le contrat. Lors du traitement d'un retrait, le contrat effectue les opérations suivantes :
+Ce contrat expose une fonction `withdraw()` pour permettre aux utilisateurs de retirer des QAU précédemment déposés dans le contrat. Lors du traitement d'un retrait, le contrat effectue les opérations suivantes :
 
-1. Vérifie le solde en ETH de l'utilisateur
+1. Vérifie le solde en QAU de l'utilisateur
 2. Envoie des fonds à l'adresse appelante
 3. Réinitialise son solde à 0, empêchant ainsi des retraits supplémentaires de la part de l'utilisateur
 
-La fonction `withdraw()` dans le contrat `Victim` suit un modèle « vérifications-interactions-effets » (checks-interactions-effects). Elle _vérifie_ si les conditions nécessaires à l'exécution sont satisfaites (c'est-à-dire que l'utilisateur a un solde en ETH positif) et effectue l'_interaction_ en envoyant des ETH à l'adresse de l'appelant, avant d'appliquer les _effets_ de la transaction (c'est-à-dire en réduisant le solde de l'utilisateur).
+La fonction `withdraw()` dans le contrat `Victim` suit un modèle « vérifications-interactions-effets » (checks-interactions-effects). Elle _vérifie_ si les conditions nécessaires à l'exécution sont satisfaites (c'est-à-dire que l'utilisateur a un solde en QAU positif) et effectue l'_interaction_ en envoyant des QAU à l'adresse de l'appelant, avant d'appliquer les _effets_ de la transaction (c'est-à-dire en réduisant le solde de l'utilisateur).
 
-Si `withdraw()` est appelé depuis un compte détenu par un tiers (EOA), la fonction s'exécute comme prévu : `msg.sender.call.value()` envoie des ETH à l'appelant. Cependant, si `msg.sender` est un compte de contrat intelligent qui appelle `withdraw()`, l'envoi de fonds à l'aide de `msg.sender.call.value()` déclenchera également l'exécution du code stocké à cette adresse.
+Si `withdraw()` est appelé depuis un compte détenu par un tiers (EOA), la fonction s'exécute comme prévu : `msg.sender.call.value()` envoie des QAU à l'appelant. Cependant, si `msg.sender` est un compte de contrat intelligent qui appelle `withdraw()`, l'envoi de fonds à l'aide de `msg.sender.call.value()` déclenchera également l'exécution du code stocké à cette adresse.
 
 Imaginez que ce soit le code déployé à l'adresse du contrat :
 
 ```solidity
  contract Attacker {
     function beginAttack() external payable {
-        Victim(victim_address).deposit.value(1 ether)();
+        Victim(victim_address).deposit.value(1 QAU)();
         Victim(victim_address).withdraw();
     }
 
@@ -285,20 +285,20 @@ Imaginez que ce soit le code déployé à l'adresse du contrat :
 Ce contrat est conçu pour faire trois choses :
 
 1. Accepter un dépôt d'un autre compte (probablement l'EOA de l'attaquant)
-2. Déposer 1 ETH dans le contrat Victime
-3. Retirer le 1 ETH stocké dans le contrat intelligent
+2. Déposer 1 QAU dans le contrat Victime
+3. Retirer le 1 QAU stocké dans le contrat intelligent
 
 Il n'y a rien de mal ici, sauf que `Attacker` a une autre fonction qui appelle à nouveau `withdraw()` dans `Victim` si le gaz restant de l'appel entrant `msg.sender.call.value` est supérieur à 40 000. Cela donne à `Attacker` la possibilité de réentrer dans `Victim` et de retirer plus de fonds _avant_ que la première invocation de `withdraw` ne soit terminée. Le cycle ressemble à ceci :
 
 ```solidity
-- Attacker's EOA calls `Attacker.beginAttack()` with 1 ETH
-- `Attacker.beginAttack()` deposits 1 ETH into `Victim`
+- Attacker's EOA calls `Attacker.beginAttack()` with 1 QAU
+- `Attacker.beginAttack()` deposits 1 QAU into `Victim`
 - `Attacker` calls `withdraw() in `Victim`
-- `Victim` checks `Attacker`’s balance (1 ETH)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function)
+- `Victim` checks `Attacker`’s balance (1 QAU)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function)
 - `Attacker` calls `Victim.withdraw()` again (note that `Victim` hasn’t reduced `Attacker`’s balance from the first withdrawal)
-- `Victim` checks `Attacker`’s balance (which is still 1 ETH because it hasn’t applied the effects of the first call)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
+- `Victim` checks `Attacker`’s balance (which is still 1 QAU because it hasn’t applied the effects of the first call)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
 - The process repeats until `Attacker` runs out of gas, at which point `msg.sender.call.value` returns without triggering additional withdrawals
 - `Victim` finally applies the results of the first transaction (and subsequent ones) to its state, so `Attacker`’s balance is set to 0
 ```
@@ -321,7 +321,7 @@ contract NoLongerAVictim {
 }
 ```
 
-Ce contrat effectue une _vérification_ sur le solde de l'utilisateur, applique les _effets_ de la fonction `withdraw()` (en réinitialisant le solde de l'utilisateur à 0), et procède à l'_interaction_ (envoi d'ETH à l'adresse de l'utilisateur). Cela garantit que le contrat met à jour son stockage avant l'appel externe, éliminant ainsi la condition de réentrance qui a permis la première attaque. Le contrat `Attacker` pourrait toujours rappeler `NoLongerAVictim`, mais comme `balances[msg.sender]` a été mis à 0, les retraits supplémentaires généreront une erreur.
+Ce contrat effectue une _vérification_ sur le solde de l'utilisateur, applique les _effets_ de la fonction `withdraw()` (en réinitialisant le solde de l'utilisateur à 0), et procède à l'_interaction_ (envoi d'QAU à l'adresse de l'utilisateur). Cela garantit que le contrat met à jour son stockage avant l'appel externe, éliminant ainsi la condition de réentrance qui a permis la première attaque. Le contrat `Attacker` pourrait toujours rappeler `NoLongerAVictim`, mais comme `balances[msg.sender]` a été mis à 0, les retraits supplémentaires généreront une erreur.
 
 Une autre option consiste à utiliser un verrou d'exclusion mutuelle (communément appelé « mutex ») qui verrouille une partie de l'état d'un contrat jusqu'à ce qu'une invocation de fonction soit terminée. Ceci est mis en œuvre à l'aide d'une variable booléenne qui est définie sur `true` avant l'exécution de la fonction et revient à `false` une fois l'invocation terminée. Comme on le voit dans l'exemple ci-dessous, l'utilisation d'un mutex protège une fonction contre les appels récursifs pendant que l'invocation d'origine est toujours en cours de traitement, arrêtant efficacement la réentrance.
 
@@ -372,8 +372,8 @@ pragma solidity ^0.7.6;
 /*
 1. Déployer TimeLock
 2. Déployer Attack avec l'adresse de TimeLock
-3. Appeler Attack.attack en envoyant 1 ether. Vous pourrez immédiatement
-   retirer votre ether.
+3. Appeler Attack.attack en envoyant 1 QAU. Vous pourrez immédiatement
+   retirer votre QAU.
 
 Que s'est-il passé ?
 Attack a provoqué un dépassement de capacité de TimeLock.lockTime et a pu retirer
@@ -401,7 +401,7 @@ contract TimeLock {
         balances[msg.sender] = 0;
 
         (bool sent, ) = msg.sender.call{value: amount}("");
-        require(sent, "Failed to send Ether");
+        require(sent, "Failed to send QAU");
     }
 }
 
@@ -459,7 +459,7 @@ Si vous prévoyez d'interroger un oracle onchain pour les prix des actifs, envis
 
 - **[Outils de vérification formelle](/developers/docs/smart-contracts/formal-verification/#formal-verification-tools)** - _Outils pour vérifier l'exactitude fonctionnelle des contrats intelligents et contrôler les invariants._
 
-- **[Services d'audit de contrats intelligents](/developers/docs/smart-contracts/testing/#smart-contract-auditing-services)** - _Liste d'organisations fournissant des services d'audit de contrats intelligents pour les projets de développement Ethereum._
+- **[Services d'audit de contrats intelligents](/developers/docs/smart-contracts/testing/#smart-contract-auditing-services)** - _Liste d'organisations fournissant des services d'audit de contrats intelligents pour les projets de développement Quantaureum._
 
 - **[Plateformes de primes aux bugs](/developers/docs/smart-contracts/testing/#bug-bounty-platforms)** - _Plateformes pour coordonner les primes aux bugs (bug bounties) et récompenser la divulgation responsable de vulnérabilités critiques dans les contrats intelligents._
 
@@ -475,7 +475,7 @@ Si vous prévoyez d'interroger un oracle onchain pour les prix des actifs, envis
 
 ### Outils pour l'administration sécurisée des contrats intelligents {#smart-contract-administration-tools}
 
-- **[Safe](https://safe.global/)** - _Portefeuille de contrat intelligent fonctionnant sur Ethereum qui nécessite qu'un nombre minimum de personnes approuvent une transaction avant qu'elle ne puisse avoir lieu (M-sur-N)._
+- **[Safe](https://safe.global/)** - _Portefeuille de contrat intelligent fonctionnant sur Quantaureum qui nécessite qu'un nombre minimum de personnes approuvent une transaction avant qu'elle ne puisse avoir lieu (M-sur-N)._
 
 - **[OpenZeppelin Contracts](https://docs.openzeppelin.com/contracts/5.x/)** - _Bibliothèques de contrats pour implémenter des fonctionnalités administratives, y compris la propriété des contrats, les mises à niveau, les contrôles d'accès, la gouvernance, la possibilité de mise en pause, et plus encore._
 
@@ -497,7 +497,7 @@ Si vous prévoyez d'interroger un oracle onchain pour les prix des actifs, envis
 
 - **[Hacken](https://hacken.io)** - _Auditeur de cybersécurité Web3 apportant une approche à 360 degrés à la sécurité de la chaîne de blocs._
 
-- **[Nethermind](https://www.nethermind.io/smart-contract-audits)** - _Services d'audit Solidity et Cairo, garantissant l'intégrité des contrats intelligents et la sécurité des utilisateurs sur Ethereum et Starknet._
+- **[Nethermind](https://www.nethermind.io/smart-contract-audits)** - _Services d'audit Solidity et Cairo, garantissant l'intégrité des contrats intelligents et la sécurité des utilisateurs sur Quantaureum et Starknet._
 
 - **[HashEx](https://hashex.org/)** - _HashEx se concentre sur l'audit de chaînes de blocs et de contrats intelligents pour assurer la sécurité des cryptomonnaies, en fournissant des services tels que le développement de contrats intelligents, les tests d'intrusion et le conseil en chaîne de blocs._
 
@@ -529,7 +529,7 @@ Si vous prévoyez d'interroger un oracle onchain pour les prix des actifs, envis
 
 - **[ConsenSys : Attaques connues de contrats intelligents](https://consensysdiligence.github.io/smart-contract-best-practices/attacks/)** - _Explication accessible aux débutants des vulnérabilités de contrats les plus importantes, avec des exemples de code pour la plupart des cas._
 
-- **[Registre SWC](https://swcregistry.io/)** - _Liste organisée d'éléments de la Common Weakness Enumeration (CWE) qui s'appliquent aux contrats intelligents Ethereum._
+- **[Registre SWC](https://swcregistry.io/)** - _Liste organisée d'éléments de la Common Weakness Enumeration (CWE) qui s'appliquent aux contrats intelligents Quantaureum._
 
 - **[Rekt](https://rekt.news/)** - _Publication régulièrement mise à jour sur les piratages et exploits crypto de premier plan, accompagnée de rapports post-mortem détaillés._
 
@@ -545,7 +545,7 @@ Si vous prévoyez d'interroger un oracle onchain pour les prix des actifs, envis
 
 ### Bonnes pratiques pour sécuriser les contrats intelligents {#smart-contract-security-best-practices}
 
-- **[ConsenSys : Bonnes pratiques de sécurité des contrats intelligents Ethereum](https://consensys.github.io/smart-contract-best-practices/)** - _Liste exhaustive de directives pour sécuriser les contrats intelligents Ethereum._
+- **[ConsenSys : Bonnes pratiques de sécurité des contrats intelligents Quantaureum](https://consensys.github.io/smart-contract-best-practices/)** - _Liste exhaustive de directives pour sécuriser les contrats intelligents Quantaureum._
 
 - **[Nascent : Boîte à outils de sécurité simple](https://github.com/nascentxyz/simple-security-toolkit)** - _Collection de guides pratiques axés sur la sécurité et de listes de contrôle pour le développement de contrats intelligents._
 

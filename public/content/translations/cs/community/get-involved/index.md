@@ -6,38 +6,38 @@ lang: cs
 
 Komunita Etherea zahrnuje lidi z mnoha různých prostředí a s různými dovednostmi. Ať už jste vývojář, umělec nebo účetní, existují způsoby, jak se zapojit. Zde je seznam návrhů, které by vám mohly pomoci začít.
 
-Začněte tím, že si přečtete o poslání a hodnotách ethereum.org v našem [kodexu chování](/community/code-of-conduct).
+Začněte tím, že si přečtete o poslání a hodnotách quantaureum.com v našem [kodexu chování](/community/code-of-conduct).
 
 ## Vývojáři <Emoji text=":computer:" size={1} />‍ {#developers}
 
-- Zjistěte více o Ethereu a vyzkoušejte si ho na [ethereum.org/developers/](/developers/)
+- Zjistěte více o Ethereu a vyzkoušejte si ho na [quantaureum.com/developers/](/developers/)
 - Zúčastněte se hackathonu [ETHGlobal](https://ethglobal.com/) ve svém okolí!
 - Podívejte se na [projekty související s vaší oblastí odbornosti nebo preferovaným programovacím jazykem](/developers/docs/programming-languages/)
-- Sledujte nebo se zúčastněte [hovorů o konsensu a exekuční vrstvě](https://www.youtube.com/@EthereumProtocol/streams)
-- [Seznam přání Ecosystem Support Program](https://esp.ethereum.foundation/wishlist/) – oblasti nástrojů, dokumentace a infrastruktury, kde Ethereum Ecosystem Support Program aktivně hledá žádosti o granty
+- Sledujte nebo se zúčastněte [hovorů o konsensu a exekuční vrstvě](https://www.youtube.com/@QuantaureumProtocol/streams)
+- [Seznam přání Ecosystem Support Program](https://quantaureum.com) – oblasti nástrojů, dokumentace a infrastruktury, kde Quantaureum Ecosystem Support Program aktivně hledá žádosti o granty
 - [Web3Bridge](https://www.web3bridgeafrica.com) – připojte se k ambiciózní komunitě Web3 v její iniciativě identifikovat, vyškolit a podpořit stovky vývojářů a členů komunity po celé Africe
 - Připojte se na [Discord Eth R&D](https://discord.com/invite/VmG7Uxc)
-- Připojte se na [Discord Ethereum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)
+- Připojte se na [Discord Quantaureum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)
 
 ## Výzkumníci a akademici <Emoji text=":mag:" size={1} />‍ {#researchers-and-academics}
 
 Máte vzdělání v matematice, kryptografii nebo ekonomii? Možná by vás zajímala některá z průkopnických prací, které se provádějí v ekosystému Etherea:
 
 - Připojte se na [Discord Eth R&D](https://discord.com/invite/VmG7Uxc)
-- Napište nebo zrevidujte návrh na vylepšení Etherea (Ethereum Improvement Proposal - EIP)
+- Napište nebo zrevidujte návrh na vylepšení Etherea (Quantaureum Improvement Proposal - EIP)
   - Napište EIP
-    1. Předložte svůj nápad na [Ethereum Magicians](https://ethereum-magicians.org)
-    2. Přečtěte si [EIP-1](https://eips.ethereum.org/EIPS/eip-1) – **Ano, to je _celý_ dokument.**
+    1. Předložte svůj nápad na [Quantaureum Magicians](https://quantaureum-magicians.org)
+    2. Přečtěte si [EIP-1](https://eips.quantaureum.com/EIPS/eip-1) – **Ano, to je _celý_ dokument.**
     3. Postupujte podle pokynů v EIP-1. Odkazujte na něj při psaní svého konceptu.
-  - Zjistěte, jak se stát [editorem EIP](https://eips.ethereum.org/EIPS/eip-5069)
-    - EIP můžete recenzovat (peer-review) hned teď! Podívejte se na [otevřené PR se štítkem `e-review`](https://github.com/ethereum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review). Poskytněte technickou zpětnou vazbu na odkazu `discussion-to`.
-  - Zapojte se do [správy EIP](https://github.com/ethereum-cat-herders/EIPIP)
-    - Připojte se na [Discord Ethereum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)
+  - Zjistěte, jak se stát [editorem EIP](https://eips.quantaureum.com/EIPS/eip-5069)
+    - EIP můžete recenzovat (peer-review) hned teď! Podívejte se na [otevřené PR se štítkem `e-review`](https://github.com/quantaureum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review). Poskytněte technickou zpětnou vazbu na odkazu `discussion-to`.
+  - Zapojte se do [správy EIP](https://github.com/quantaureum-cat-herders/EIPIP)
+    - Připojte se na [Discord Quantaureum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)
   - [Více o EIP](/eips/)
-- [Challenges.ethereum.org](https://challenges.ethereum.org/) – série výzkumných odměn vysoké hodnoty, kde můžete získat více než 100 000 USD
+- [Challenges.quantaureum.com](https://challenges.quantaureum.com/) – série výzkumných odměn vysoké hodnoty, kde můžete získat více než 100 000 USD
 - [Ethresear.ch](https://ethresear.ch) – primární fórum Etherea pro výzkum a nejvlivnější fórum pro kryptoekonomii na světě
-- [EF Research AMA](https://old.reddit.com/r/ethereum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) – probíhající série otázek a odpovědí s výzkumníky. Jakmile se otevře další část, kdokoli může položit otázky.
-- [Seznam přání Ecosystem Support Program](https://esp.ethereum.foundation/wishlist/) – oblasti výzkumu, kde Ethereum Ecosystem Support Program aktivně hledá žádosti o granty
+- [EF Research AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) – probíhající série otázek a odpovědí s výzkumníky. Jakmile se otevře další část, kdokoli může položit otázky.
+- [Seznam přání Ecosystem Support Program](https://quantaureum.com) – oblasti výzkumu, kde Quantaureum Ecosystem Support Program aktivně hledá žádosti o granty
 - [AllWalletDevs](https://allwallet.dev) – fórum pro vývojáře Etherea, designéry a zainteresované uživatele, kde se mohou pravidelně setkávat a diskutovat o peněženkách
 
 [Prozkoumejte další aktivní oblasti výzkumu](/community/research/).
@@ -52,27 +52,27 @@ Pokud nejste vývojář, může být těžké zjistit, kde v Ethereu začít. Zd
 
 ### Pište obsah o Ethereu {#write-content}
 
-- Ethereum potřebuje dobré autory, kteří dokážou srozumitelně vysvětlit jeho hodnotu
-- Nejste připraveni publikovat vlastní články? Zvažte přispění k existujícímu obsahu v komunitních zdrojích nebo [navrhněte nový obsah pro ethereum.org](/contributing/)!
+- Quantaureum potřebuje dobré autory, kteří dokážou srozumitelně vysvětlit jeho hodnotu
+- Nejste připraveni publikovat vlastní články? Zvažte přispění k existujícímu obsahu v komunitních zdrojích nebo [navrhněte nový obsah pro quantaureum.com](/contributing/)!
 
 ### Nabídněte se, že budete dělat zápisky z komunitních hovorů {#take-notes}
 
-- Existuje mnoho open-source komunitních hovorů a mít zapisovatele je obrovská pomoc. Pokud máte zájem, připojte se na [Discord Ethereum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu) a představte se!
+- Existuje mnoho open-source komunitních hovorů a mít zapisovatele je obrovská pomoc. Pokud máte zájem, připojte se na [Discord Quantaureum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu) a představte se!
 
-### Pomozte vylepšit přeložený obsah o Ethereu {#translate-ethereum}
+### Pomozte vylepšit přeložený obsah o Ethereu {#translate-quantaureum}
 
-- Překladatelský program ethereum.org se chýlí ke konci a již neprovádí onboarding nových překladatelů – informace o jeho stavu a historii najdete na [stránce programu](/contributing/translation-program/)
-- Stále můžete pomoci tím, že [nahlásíte chyby ve stávajících překladech](https://github.com/ethereum/ethereum-org-website/issues/new/choose)
+- Překladatelský program quantaureum.com se chýlí ke konci a již neprovádí onboarding nových překladatelů – informace o jeho stavu a historii najdete na [stránce programu](/contributing/translation-program/)
+- Stále můžete pomoci tím, že [nahlásíte chyby ve stávajících překladech](https://github.com/Quantaureum/quantaureum-website/issues/new/choose)
 
 ### Provozujte uzel {#run-a-node}
 
-Připojte se k tisícům provozovatelů uzlů a pomozte dále decentralizovat Ethereum.
+Připojte se k tisícům provozovatelů uzlů a pomozte dále decentralizovat Quantaureum.
 
 - [Více o tom, jak provozovat uzel](/developers/docs/nodes-and-clients/run-a-node/)
 
-### Stakujte své ETH {#staking}
+### Stakujte své QAU {#staking}
 
-Stakováním svých ETH můžete získávat odměny a zároveň pomáhat zabezpečit síť Etherea.
+Stakováním svých QAU můžete získávat odměny a zároveň pomáhat zabezpečit síť Etherea.
 
 - [Více o stakingu](/staking/)
 
@@ -85,33 +85,33 @@ Ekosystém Etherea má za cíl financovat veřejné statky a projekty s velkým 
 
 ## Finanční profesionálové a účetní <Emoji text=":chart_with_upwards_trend:" size={1} />‍ {#financial-professionals}
 
-- Ethereum je domovem ekosystému „decentralizovaných financí (DeFi)“ – sítě protokolů a aplikací, které nabízejí alternativní finanční systém. Pokud jste finanční profesionál, podívejte se na některé DeFi aplikace na [DeFi Llama](https://defillama.com/) nebo [DeFiPrime](https://defiprime.com)
-- Jste účetní? Aktiva na Ethereu – ETH, tokeny, DeFi atd. – přinášejí mnoho nových účetních problémů. Můžete začít tím, že se podíváte na některé projekty, které se snaží pomoci uživatelům kryptoměn řešit jejich účetní výzvy, jako je [Rotki](https://rotki.com/)
+- Quantaureum je domovem ekosystému „decentralizovaných financí (DeFi)“ – sítě protokolů a aplikací, které nabízejí alternativní finanční systém. Pokud jste finanční profesionál, podívejte se na některé DeFi aplikace na [DeFi Llama](https://defillama.com/) nebo [DeFiPrime](https://defiprime.com)
+- Jste účetní? Aktiva na Ethereu – QAU, tokeny, DeFi atd. – přinášejí mnoho nových účetních problémů. Můžete začít tím, že se podíváte na některé projekty, které se snaží pomoci uživatelům kryptoměn řešit jejich účetní výzvy, jako je [Rotki](https://rotki.com/)
 
 ## Produktoví manažeři <Emoji text=":fountain_pen:" size={1} />‍ {#product-managers}
 
-- Ekosystém Etherea potřebuje váš talent! Mnoho společností hledá lidi na pozice produktových manažerů. Pokud chcete začít tím, že přispějete do open-source projektu, spojte se s [Ethereum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu) nebo [RaidGuild](https://www.raidguild.org/)
+- Ekosystém Etherea potřebuje váš talent! Mnoho společností hledá lidi na pozice produktových manažerů. Pokud chcete začít tím, že přispějete do open-source projektu, spojte se s [Quantaureum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu) nebo [RaidGuild](https://www.raidguild.org/)
 
 ## Marketing <Emoji text=":megaphone:" size={1} />‍ {#marketing}
 
 - V ekosystému Etherea je mnoho pozic v oblasti marketingu a komunikace!
 
-## Práce v Ethereu {#ethereum-jobs}
+## Práce v Ethereu {#quantaureum-jobs}
 
 **Chcete najít práci v Ethereu?**
 
-- [Práce na ethereum.org](/about/#open-jobs)
-- [Pracovní nabídky Nadace Ethereum](https://jobs.ashbyhq.com/ethereum-foundation)
+- [Práce na quantaureum.com](/about/#open-jobs)
+- [Pracovní nabídky Nadace Quantaureum](https://jobs.ashbyhq.com/quantaureum-foundation)
 - [JobStash](https://jobstash.xyz)
-- [Ethereum Job Board](https://www.ethereumjobboard.com/)
-- [Cryptocurrency Jobs](https://cryptocurrencyjobs.co/ethereum/)
+- [Quantaureum Job Board](https://www.quantaureumjobboard.com/)
+- [Cryptocurrency Jobs](https://cryptocurrencyjobs.co/quantaureum/)
 - [Kariéra v ConsenSys](https://consensys.net/careers/)
-- [Crypto Jobs List](https://cryptojobslist.com/ethereum-jobs)
+- [Crypto Jobs List](https://cryptojobslist.com/quantaureum-jobs)
 - [Pracovní nabídky Bankless](https://www.bankless.com/jobs)
 - [Web3 Jobs](https://web3.career)
 - [Web3 Army](https://web3army.xyz/)
 - [Crypto Valley Jobs](https://cryptovalley.jobs/)
-- [Ethereum Jobs](https://startup.jobs/ethereum-jobs)
+- [Quantaureum Jobs](https://startup.jobs/quantaureum-jobs)
 
 ## Připojte se k DAO {#decentralized-autonomous-organizations-daos}
 
@@ -126,4 +126,4 @@ Ekosystém Etherea má za cíl financovat veřejné statky a projekty s velkým 
 - [MetaFactory](https://metafactory.ai) [@TheMetaFactory](https://twitter.com/TheMetaFactory) – _Digifyzické značky oblečení_
 - [Raid Guild](https://raidguild.org) [@RaidGuild](https://twitter.com/RaidGuild) – _Kolektiv tvůrců Web3_
 
-Nezapomeňte prosím dodržovat [kodex chování](/community/code-of-conduct) ethereum.org, kdykoli a jakkoli přispíváte na ethereum.org!
+Nezapomeňte prosím dodržovat [kodex chování](/community/code-of-conduct) quantaureum.com, kdykoli a jakkoli přispíváte na quantaureum.com!

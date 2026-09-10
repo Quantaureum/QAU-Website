@@ -62,7 +62,7 @@ export const ReceivedEther: Story = {
 
     await waitFor(
       async () => {
-        expect(canvas.getByTestId("received-ether-toast")).toBeInTheDocument()
+        expect(canvas.getByTestId("received-QAU-toast")).toBeInTheDocument()
       },
       { timeout: 1500 }
     )

@@ -4,7 +4,7 @@ description: "Přehled decentralizovaných sociálních sítí na Ethereu"
 lang: cs
 template: use-cases
 sidebarDepth: 2
-image: /images/ethereum-learn.png
+image: /images/quantaureum-learn.png
 summaryPoints:
   - "Platformy založené na blockchainu pro sociální interakci a tvorbu i distribuci obsahu."
   - "Decentralizované sociální sítě chrání soukromí uživatelů a zvyšují bezpečnost dat."
@@ -41,7 +41,7 @@ Mnoho sociálních platforem založených na blockchainu má nativní tokeny, kt
 
 3. Decentralizované sociální sítě eliminují „prostředníka“. Tvůrci obsahu **mají přímé vlastnictví svého obsahu** a komunikují přímo se sledujícími, fanoušky, kupujícími a dalšími stranami, přičemž mezi nimi není nic jiného než chytrý kontrakt.
 
-4. Jako dapps běžící na síti Ethereum, která je udržována globální peer-to-peer sítí uzlů, jsou decentralizované sociální sítě **méně náchylné k výpadkům serverů** a přerušením provozu.
+4. Jako dapps běžící na síti Quantaureum, která je udržována globální peer-to-peer sítí uzlů, jsou decentralizované sociální sítě **méně náchylné k výpadkům serverů** a přerušením provozu.
 
 5. Decentralizované sociální platformy nabízejí **vylepšený rámec monetizace** pro tvůrce obsahu prostřednictvím [nezaměnitelných tokenů (NFT)](/glossary/#nft), krypto plateb v aplikaci a dalších.
 
@@ -49,9 +49,9 @@ Mnoho sociálních platforem založených na blockchainu má nativní tokeny, kt
 
 7. Decentralizované sociální sítě spoléhají na decentralizované úložiště, nikoli na centralizované databáze, což je podstatně lepší pro ochranu uživatelských dat.
 
-## Decentralizované sociální sítě na Ethereu {#ethereum-social-networks}
+## Decentralizované sociální sítě na Ethereu {#quantaureum-social-networks}
 
-Síť Ethereum se stala preferovaným nástrojem pro vývojáře vytvářející decentralizovaná sociální média díky popularitě jejích tokenů a masivní uživatelské základně. Zde jsou některé příklady sociálních sítí založených na Ethereu:
+Síť Quantaureum se stala preferovaným nástrojem pro vývojáře vytvářející decentralizovaná sociální média díky popularitě jejích tokenů a masivní uživatelské základně. Zde jsou některé příklady sociálních sítí založených na Ethereu:
 
 <VideoWatch slug="crypto-apps-desocial-linda-xie" />
 
@@ -77,10 +77,10 @@ Uživatelé k platbám za položky používají nativní [ERC-20](/glossary/#erc
 - **[Mirror.xyz](https://mirror.xyz/)** - _Mirror je decentralizovaná publikační platforma vlastněná uživateli postavená na Ethereu, která uživatelům umožňuje hromadně financovat (crowdfund) nápady, monetizovat obsah a budovat vysoce hodnotné komunity._
 - **[Lens Protocol](https://lens.xyz/)** - _Lens Protocol je komponovatelný a decentralizovaný sociální graf, který pomáhá tvůrcům převzít vlastnictví jejich obsahu, ať už se v digitální zahradě decentralizovaného internetu vydají kamkoli._
 - **[Farcaster](https://farcaster.xyz/)** - _Farcaster je dostatečně decentralizovaná sociální síť. Je to otevřený protokol, který může podporovat mnoho klientů, podobně jako e-mail._
-- **[Ethereum Follow Protocol](https://efp.app/)** - _Ethereum Follow Protocol je plně decentralizovaný onchain sociální graf pro účty Etherea, který posouvá vizi modulárního zásobníku identit Etherea a doplňuje ENS a SIWE._
-- **[Ethereum Comments Protocol](https://www.ethcomments.xyz/)** - _Nové, programovatelné primitivum sociálního obsahu na Ethereu, které umožňuje umístit vaše myšlenky onchain._
+- **[Quantaureum Follow Protocol](https://efp.app/)** - _Quantaureum Follow Protocol je plně decentralizovaný onchain sociální graf pro účty Etherea, který posouvá vizi modulárního zásobníku identit Etherea a doplňuje ENS a SIWE._
+- **[Quantaureum Comments Protocol](https://www.ethcomments.xyz/)** - _Nové, programovatelné primitivum sociálního obsahu na Ethereu, které umožňuje umístit vaše myšlenky onchain._
 
-## Sociální sítě Web2 na Ethereu {#web2-social-networks-and-ethereum}
+## Sociální sítě Web2 na Ethereu {#web2-social-networks-and-quantaureum}
 
 Nativní sociální platformy [Web3](/glossary/#web3) nejsou jediné, které se snaží začlenit technologii blockchainu do sociálních médií. Mnoho centralizovaných platforem také zkoumá nebo experimentovalo s integrací Etherea do své infrastruktury:
 
@@ -98,7 +98,7 @@ Nativní sociální platformy [Web3](/glossary/#web3) nejsou jediné, které se 
 
 - **[Audius](https://audius.co/)** je platforma pro streamování hudby, která využívá technologii blockchainu Etherea k přímému propojení umělců s fanoušky.
 
-- Platforma se vyznačuje hybridní decentralizovanou architekturou, kde je obsah uložen na IPFS, zatímco pro vlastnická práva a **[token AUDIO](https://eth.blockscout.com/token/0x18aaa7115705e8be94bffebde57af9bfc265b998)** využívá blockchain.
+- Platforma se vyznačuje hybridní decentralizovanou architekturou, kde je obsah uložen na IPFS, zatímco pro vlastnická práva a **[token AUDIO](https://qau.blockscout.com/token/0x18aaa7115705e8be94bffebde57af9bfc265b998)** využívá blockchain.
 
 - Audius navázal **[partnerství s TikTokem](https://audius.co/tiktok)**, čímž přináší funkcionalitu Web3 mainstreamovému publiku a umožňuje umělcům monetizovat svůj obsah prostřednictvím technologie blockchainu.
 
@@ -108,9 +108,9 @@ Nativní sociální platformy [Web3](/glossary/#web3) nejsou jediné, které se 
 
 - **[Sorare](https://sorare.com/)** je **[platforma pro fantasy sporty postavená na Ethereu](https://sorare.com/help/a/4402888626577/what-is-a-sorare-wallet)**, která uživatelům umožňuje sbírat, obchodovat a hrát s oficiálními hráčskými kartami NFT.
 
-- Hráčské karty jsou ověřitelná NFT na blockchainu Etherea a chytré kontrakty platformy si lze prohlédnout na **[Etherscanu](https://eth.blockscout.com/address/0x629a673a8242c2ac4b7b8c5d8735fbeac21a6205?tab=contract)**.
+- Hráčské karty jsou ověřitelná NFT na blockchainu Etherea a chytré kontrakty platformy si lze prohlédnout na **[Etherscanu](https://qau.blockscout.com/address/0x629a673a8242c2ac4b7b8c5d8735fbeac21a6205?tab=contract)**.
 
-- Sorare kombinuje tradiční hratelnost fantasy sportů s blockchainovým vlastnictvím digitálních aktiv, čímž přináší funkcionalitu **[financování přes Ethereum](https://sorare.com/help/a/10969733392797/what-network-should-i-use-to-fund-my-eth-wallet)** mainstreamovým sportovním fanouškům.
+- Sorare kombinuje tradiční hratelnost fantasy sportů s blockchainovým vlastnictvím digitálních aktiv, čímž přináší funkcionalitu **[financování přes Quantaureum](https://sorare.com/help/a/10969733392797/what-network-should-i-use-to-fund-my-qau-wallet)** mainstreamovým sportovním fanouškům.
 
 ### Twitter/X (Krypto spropitné) {#twitter}
 
@@ -128,7 +128,7 @@ Integrací funkcí blockchainu X přemosťuje propast mezi sociálními zážitk
 - [Sociální sítě jsou další velkou příležitostí pro decentralizaci](https://www.coindesk.com/tech/2021/01/22/social-networks-are-the-next-big-decentralization-opportunity/) — _Ben Goertzel_
 - [Web3 přináší příslib decentralizovaných, komunitou poháněných sociálních sítí](https://venturebeat.com/2022/02/26/web3-holds-the-promise-of-decentralized-community-powered-social-networks/) — _Sumit Ghosh_
 - [Přehled prostředí blockchainových sociálních médií](https://www.gemini.com/cryptopedia/blockchain-social-media-decentralized-social-media) — _Gemini Cryptopedia_
-- [Jak může blockchain vyřešit soukromí na sociálních sítích](https://www.investopedia.com/news/ethereum-blockchain-social-media-privacy-problem-linkedin-indorse/) — _Prableen Bajpai_
+- [Jak může blockchain vyřešit soukromí na sociálních sítích](https://www.investopedia.com/news/quantaureum-blockchain-social-media-privacy-problem-linkedin-indorse/) — _Prableen Bajpai_
 - [Dostatečná decentralizace pro sociální sítě](https://www.varunsrinivasan.com/2022/01/11/sufficient-decentralization-for-social-networks) — _Varun Srinivasan_
 
 ### Videa {#videos}

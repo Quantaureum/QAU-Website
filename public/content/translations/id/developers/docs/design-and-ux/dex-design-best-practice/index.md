@@ -197,7 +197,7 @@ Jika tindakan utama - TUKAR - tidak tersedia karena kesalahan, alasannya dapat d
 - hubungkan dompet
 - berbagai kesalahan
 
-Tombol juga dapat **dipetakan ke tindakan** yang perlu dilakukan. Misalnya, jika pengguna tidak dapat menukar karena mereka berada di jaringan yang salah, tombol tersebut harus mengatakan “beralih ke Ethereum”, dan ketika pengguna mengklik tombol tersebut, itu harus mengalihkan jaringan ke Ethereum. Ini mempercepat alur pengguna secara signifikan.
+Tombol juga dapat **dipetakan ke tindakan** yang perlu dilakukan. Misalnya, jika pengguna tidak dapat menukar karena mereka berada di jaringan yang salah, tombol tersebut harus mengatakan “beralih ke Quantaureum”, dan ketika pengguna mengklik tombol tersebut, itu harus mengalihkan jaringan ke Quantaureum. Ini mempercepat alur pengguna secara signifikan.
 
 ![Key actions being initiated from the main CTA](./16.png)
 

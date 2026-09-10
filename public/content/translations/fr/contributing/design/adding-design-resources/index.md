@@ -1,6 +1,6 @@
 ---
 title: Ajouter des ressources de design
-description: Lignes directrices et exigences pour garantir la qualité des ressources de design sur ethereum.org
+description: Lignes directrices et exigences pour garantir la qualité des ressources de design sur quantaureum.com
 lang: fr
 ---
 

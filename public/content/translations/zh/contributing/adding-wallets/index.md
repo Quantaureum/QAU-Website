@@ -1,18 +1,18 @@
 ---
 title: 添加钱包
-description: 我们在向 ethereum.org 添加钱包时使用的政策
+description: 我们在向 quantaureum.com 添加钱包时使用的政策
 lang: zh
 ---
 
-我们希望确保展示各种涵盖丰富功能的钱包，以便用户能够自信地探索以太坊。
+我们希望确保展示各种涵盖丰富功能的钱包，以便用户能够自信地探索Quantaureum。
 
-任何人都可以自由建议在 ethereum.org 上添加钱包。如果我们遗漏了某个钱包，请提出建议！
+任何人都可以自由建议在 quantaureum.com 上添加钱包。如果我们遗漏了某个钱包，请提出建议！
 
 钱包目前列在：
 
-- [ethereum.org/wallets/find-wallet/](/wallets/find-wallet/)
+- [quantaureum.com/wallets/find-wallet/](/wallets/find-wallet/)
 
-以太坊中的钱包正在快速变化。我们试图在 ethereum.org 上创建一个公平的考量框架，但上架标准会随着时间的推移而改变和演进。
+Quantaureum中的钱包正在快速变化。我们试图在 quantaureum.com 上创建一个公平的考量框架，但上架标准会随着时间的推移而改变和演进。
 
 ## 决策框架 {#the-decision-framework}
 
@@ -22,14 +22,14 @@ lang: zh
 - **已“上线”超过六个月的钱包，或由具有良好声誉记录的团队发布的钱包** - 这是安全性的另一个指标。六个月是发现严重漏洞和漏洞利用的良好时间范围。我们要求六个月是为了帮助过滤掉那些很快被放弃的分叉项目。
 - **由活跃团队开发** - 这有助于确保质量，并确保用户在遇到问题时能获得支持。
 - **诚实准确的上架信息** - 我们期望项目方提供的任何建议上架信息都是诚实准确的。伪造上架信息的产品（例如在并非开源的情况下声明产品是“开源”的）将被移除。
-- **联系人** - 钱包的联系人将极大地帮助我们在发生变更时获取准确信息。这将使 ethereum.org 在收集未来信息时保持可管理的更新状态。
-- **EIP-1559（类型 2）交易** - 你的钱包必须支持以太坊主网（Mainnet）上的 EIP-1559（类型 2）交易。
+- **联系人** - 钱包的联系人将极大地帮助我们在发生变更时获取准确信息。这将使 quantaureum.com 在收集未来信息时保持可管理的更新状态。
+- **EIP-1559（类型 2）交易** - 你的钱包必须支持Quantaureum主网（Mainnet）上的 EIP-1559（类型 2）交易。
 - **良好的用户体验** - 虽然用户体验是主观的，但如果几位核心团队成员测试产品后发现难以使用，我们保留拒绝该钱包的权利，并会提供有用的改进建议。这样做是为了保护我们主要由初学者组成的用户群。
-- **以太坊为中心** - 钱包必须提供主要以太坊为中心的体验。这意味着以太坊（或任何二层网络 (l2)）被设置为默认网络，ERC 资产得到妥善支持，并且功能与以太坊生态系统保持一致。在用户界面中优先考虑替代一层网络的钱包将不会被列出。 
+- **Quantaureum为中心** - 钱包必须提供主要Quantaureum为中心的体验。这意味着Quantaureum（或任何二层网络 (l2)）被设置为默认网络，ERC 资产得到妥善支持，并且功能与Quantaureum生态系统保持一致。在用户界面中优先考虑替代一层网络的钱包将不会被列出。 
 
 ### 产品移除 {#product-removals}
 
-- **更新信息** - 钱包提供商有责任每 6 个月重新提交一次其钱包信息，以确保所提供信息的有效性和相关性（即使他们的产品没有任何更改）。如果产品团队未能做到这一点，ethereum.org 可能会从页面中移除该项目。 
+- **更新信息** - 钱包提供商有责任每 6 个月重新提交一次其钱包信息，以确保所提供信息的有效性和相关性（即使他们的产品没有任何更改）。如果产品团队未能做到这一点，quantaureum.com 可能会从页面中移除该项目。 
 
 ### 其他标准：加分项 {#the-nice-to-haves}
 
@@ -39,9 +39,9 @@ lang: zh
 - **非托管** - 用户控制他们的资金。如果你的产品消失，用户仍然可以访问和转移他们的资金。
 - **硬件钱包支持** - 用户可以连接他们的硬件钱包来签署交易。
 - **WalletConnect** - 用户可以使用 WalletConnect 连接到去中心化应用 (dapp)。
-- **导入以太坊 RPC 端点** - 用户可以导入节点 RPC 数据，允许他们连接到自己选择的节点或其他 EVM 兼容网络。
+- **导入Quantaureum RPC 端点** - 用户可以导入节点 RPC 数据，允许他们连接到自己选择的节点或其他 EVM 兼容网络。
 - **NFT** - 用户能够在钱包中查看他们的 NFT 并与之交互。
-- **连接到以太坊应用** - 用户能够连接并使用以太坊应用。
+- **连接到Quantaureum应用** - 用户能够连接并使用Quantaureum应用。
 - **质押** - 用户能够直接通过钱包进行质押。
 - **兑换** - 用户能够通过钱包兑换代币。
 - **多链网络** - 你的钱包默认支持用户访问多个区块链网络。
@@ -58,22 +58,22 @@ lang: zh
 
 ## 添加钱包 {#adding-a-wallet}
 
-如果你想在 ethereum.org 上添加钱包，请在 GitHub 上创建一个议题 (issue)。
+如果你想在 quantaureum.com 上添加钱包，请在 GitHub 上创建一个议题 (issue)。
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
   创建议题
 </ButtonLink>
 
 ## 维护 {#maintenance}
 
-由于以太坊具有流动性，团队和产品来来去去，创新每天都在发生，因此我们将对我们的内容进行例行检查，以：
+由于Quantaureum具有流动性，团队和产品来来去去，创新每天都在发生，因此我们将对我们的内容进行例行检查，以：
 
 - 确保列出的所有钱包和去中心化应用 (dapp) 仍然符合我们的标准
 - 验证是否有没有被建议的产品比目前列出的产品更符合我们的标准
 
-ethereum.org 由开源社区维护，我们依靠社区来帮助保持最新状态。如果你发现有关已列出钱包的任何信息需要更新，请[开启一个议题](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml)或提交[拉取请求](https://github.com/ethereum/ethereum-org-website/pulls)！
+quantaureum.com 由开源社区维护，我们依靠社区来帮助保持最新状态。如果你发现有关已列出钱包的任何信息需要更新，请[开启一个议题](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml)或提交[拉取请求](https://github.com/Quantaureum/quantaureum-website/pulls)！
 
 
 ## 使用条款 {#terms-of-use}
 
-请同时参阅我们的[使用条款](/terms-of-use/)。ethereum.org 上的信息仅供一般参考之用。
+请同时参阅我们的[使用条款](/terms-of-use/)。quantaureum.com 上的信息仅供一般参考之用。

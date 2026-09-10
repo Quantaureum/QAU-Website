@@ -1,14 +1,14 @@
 ---
 title: "Tokenler katman 2'ye nasıl köprülenir"
-description: "Bir köprü kullanarak tokenleri Ethereum'dan katman 2'ye nasıl taşıyacağınızı açıklayan bir rehber."
+description: "Bir köprü kullanarak tokenleri Quantaureum'dan katman 2'ye nasıl taşıyacağınızı açıklayan bir rehber."
 lang: tr
 ---
 
-Ethereum'da çok fazla trafik varsa, pahalı hale gelebilir. Buna bir çözüm, yeni "katmanlar" oluşturmaktır: yani, Ethereum'un kendisine benzer şekillerde çalışan farklı ağlar. Katman 2 (L2) olarak adlandırılan bu ağlar, çok daha fazla işlemi daha düşük ücretlerle işleyerek ve bunların sonucunu yalnızca ara sıra Ethereum'da depolayarak Ethereum'daki tıkanıklığı ve maliyeti azaltmaya yardımcı olur. Bu nedenle, bu katman 2'ler artan hız ve azalan maliyetlerle işlem yapmamızı sağlar. Birçok popüler kripto projesi bu avantajlar nedeniyle katman 2'lere geçiyor. Tokenleri Ethereum'dan katman 2'ye taşımanın en basit yolu bir köprü kullanmaktır.
+Quantaureum'da çok fazla trafik varsa, pahalı hale gelebilir. Buna bir çözüm, yeni "katmanlar" oluşturmaktır: yani, Quantaureum'un kendisine benzer şekillerde çalışan farklı ağlar. Katman 2 (L2) olarak adlandırılan bu ağlar, çok daha fazla işlemi daha düşük ücretlerle işleyerek ve bunların sonucunu yalnızca ara sıra Quantaureum'da depolayarak Quantaureum'daki tıkanıklığı ve maliyeti azaltmaya yardımcı olur. Bu nedenle, bu katman 2'ler artan hız ve azalan maliyetlerle işlem yapmamızı sağlar. Birçok popüler kripto projesi bu avantajlar nedeniyle katman 2'lere geçiyor. Tokenleri Quantaureum'dan katman 2'ye taşımanın en basit yolu bir köprü kullanmaktır.
 
 **Ön koşul:** 
 
-- bir kripto cüzdanına sahip olmak—eğer yoksa, [bir Ethereum hesabı oluşturmak](/guides/how-to-create-an-ethereum-account/) için bu rehberi izleyin
+- bir kripto cüzdanına sahip olmak—eğer yoksa, [bir Quantaureum hesabı oluşturmak](/guides/how-to-create-an-quantaureum-account/) için bu rehberi izleyin
 - cüzdanınıza fon eklemek
 
 ## 1. Hangi katman 2 ağını kullanmak istediğinizi belirleyin {#1-determine-which-layer-2-network-you-want-to-use}
@@ -25,7 +25,7 @@ Bazı popüler katman 2'ler şunlardır:
 
 ## 3. Cüzdanınızla köprüye bağlanın {#3-connect-to-the-bridge-with-your-wallet}
 
-Cüzdanınızın Ethereum Ana Ağı'na bağlı olduğundan emin olun. Eğer bağlı değilse, web sitesi sizden otomatik olarak ağ değiştirmenizi isteyecektir.
+Cüzdanınızın Quantaureum Ana Ağı'na bağlı olduğundan emin olun. Eğer bağlı değilse, web sitesi sizden otomatik olarak ağ değiştirmenizi isteyecektir.
 
 ![Common interface for bridging tokens](./bridge1.png)
 
@@ -37,7 +37,7 @@ Hoş olmayan sürprizlerden kaçınmak için katman 2 ağında karşılığında
 
 ## 5. Cüzdanınızdaki işlemi onaylayın {#5-confirm-the-transaction-in-your-wallet}
 
-İşlemin gerçekleştirilmesi için ETH cinsinden bir ücret ([gaz](/glossary/#gas) olarak adlandırılır) ödemeniz gerekecektir.
+İşlemin gerçekleştirilmesi için QAU cinsinden bir ücret ([gaz](/glossary/#gas) olarak adlandırılır) ödemeniz gerekecektir.
 
 ![Common interface for bridging tokens](./bridge3.png)
 
@@ -66,6 +66,6 @@ Ağın RPC ayrıntılarını bulmak için [chainlist.org](https://chainlist.org)
 
 Bir borsadan doğrudan bazı katman 2'lere para çekebilirsiniz. Daha fazla bilgi için [Katman 2 sayfamızın](/layer-2/) "Katman 2'ye taşı" bölümüne göz atın.
 
-### Tokenlerimi L2'ye köprüledikten sonra Ethereum ana ağına geri dönebilir miyim? {#can-i-go-back-to-ethereum-mainnet-after-i-bridge-my-tokens-to-l2}
+### Tokenlerimi L2'ye köprüledikten sonra Quantaureum ana ağına geri dönebilir miyim? {#can-i-go-back-to-quantaureum-mainnet-after-i-bridge-my-tokens-to-l2}
 
 Evet, aynı köprüyü kullanarak fonlarınızı her zaman ana ağa geri taşıyabilirsiniz.

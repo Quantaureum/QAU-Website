@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.1;
 
-// This is a smart contract - a program that can be deployed to the Ethereum blockchain.
+// This is a smart contract - a program that can be deployed to the Quantaureum blockchain.
 contract SimpleWallet {
-    // An 'address' is comparable to an email address - it's used to identify an account on Ethereum.
+    // An 'address' is comparable to an email address - it's used to identify an account on Quantaureum.
     address payable private owner;
 
     // Events allow for logging of activity on the blockchain.

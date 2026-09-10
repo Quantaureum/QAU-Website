@@ -1,6 +1,6 @@
 ---
 title: Uthibitisho
-description: Maelezo ya uthibitisho kwenye uthibitisho wa hisa wa Ethereum.
+description: Maelezo ya uthibitisho kwenye uthibitisho wa hisa wa Quantaureum.
 lang: sw
 ---
 
@@ -86,7 +86,7 @@ Kumbuka kwamba katika baadhi ya matukio mkusanyaji mwenye bahati anaweza pia kuw
 
 ## Usomaji zaidi {#further-reading}
 
-- [Uthibitisho katika maelezo ya mwafaka yaliyofafanuliwa ya Vitalik](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Uthibitisho katika maelezo ya mwafaka yaliyofafanuliwa ya Vitalik](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [Uthibitisho katika eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Unajua rasilimali ya jamii iliyokusaidia? Hariri ukurasa huu na uiongeze!_

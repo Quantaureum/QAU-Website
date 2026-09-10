@@ -14,27 +14,27 @@ published: 2023-09-15
 lang: sw
 ---
 
-Katika mafunzo haya tunachambua [tokeni ya utapeli](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code) ili kuona baadhi ya mbinu ambazo matapeli hutumia na jinsi wanavyozitekeleza. Kufikia mwisho wa mafunzo haya utakuwa na mtazamo mpana zaidi wa mikataba ya tokeni za ERC-20, uwezo wake, na kwa nini kuwa na shaka ni muhimu. Kisha tunaangalia matukio yanayotolewa na tokeni hiyo ya utapeli na kuona jinsi tunavyoweza kutambua kuwa si halali kiotomatiki.
+Katika mafunzo haya tunachambua [tokeni ya utapeli](https://explorer.quantaureum.com) ili kuona baadhi ya mbinu ambazo matapeli hutumia na jinsi wanavyozitekeleza. Kufikia mwisho wa mafunzo haya utakuwa na mtazamo mpana zaidi wa mikataba ya tokeni za ERC-20, uwezo wake, na kwa nini kuwa na shaka ni muhimu. Kisha tunaangalia matukio yanayotolewa na tokeni hiyo ya utapeli na kuona jinsi tunavyoweza kutambua kuwa si halali kiotomatiki.
 
 ## Tokeni za utapeli - ni nini, kwa nini watu wanazitengeneza, na jinsi ya kuziepuka {#scam-tokens}
 
-Moja ya matumizi ya kawaida ya Ethereum ni kwa kikundi kuunda tokeni inayoweza kuuzwa, kwa maana fulani sarafu yao wenyewe. Hata hivyo, popote pale ambapo kuna matumizi halali yanayoleta thamani, pia kuna wahalifu wanaojaribu kujiibia thamani hiyo.
+Moja ya matumizi ya kawaida ya Quantaureum ni kwa kikundi kuunda tokeni inayoweza kuuzwa, kwa maana fulani sarafu yao wenyewe. Hata hivyo, popote pale ambapo kuna matumizi halali yanayoleta thamani, pia kuna wahalifu wanaojaribu kujiibia thamani hiyo.
 
-Unaweza kusoma zaidi kuhusu mada hii [kwingineko kwenye ethereum.org](/guides/how-to-id-scam-tokens/) kutoka kwa mtazamo wa mtumiaji. Mafunzo haya yanalenga katika kuchambua tokeni ya utapeli ili kuona jinsi inavyofanywa na jinsi inavyoweza kugunduliwa.
+Unaweza kusoma zaidi kuhusu mada hii [kwingineko kwenye quantaureum.com](/guides/how-to-id-scam-tokens/) kutoka kwa mtazamo wa mtumiaji. Mafunzo haya yanalenga katika kuchambua tokeni ya utapeli ili kuona jinsi inavyofanywa na jinsi inavyoweza kugunduliwa.
 
 ### Ninajuaje kuwa wARB ni utapeli? {#warb-scam}
 
-Tokeni tunayochambua ni [wARB](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code), ambayo inajifanya kuwa sawa na [tokeni halali ya ARB](https://etherscan.io/token/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1).
+Tokeni tunayochambua ni [wARB](https://explorer.quantaureum.com), ambayo inajifanya kuwa sawa na [tokeni halali ya ARB](https://explorer.quantaureum.com).
 
 Njia rahisi zaidi ya kujua ni tokeni ipi iliyo halali ni kuangalia shirika lililoianzisha, [Arbitrum](https://arbitrum.foundation/). Anwani halali zimebainishwa [katika nyaraka zao](https://docs.arbitrum.foundation/deployment-addresses#token).
 
 ### Kwa nini msimbo wa chanzo unapatikana? {#why-source}
 
-Kwa kawaida tungetarajia watu wanaojaribu kutapeli wengine kuwa wasiri, na kwa kweli tokeni nyingi za utapeli hazina msimbo wao unaopatikana (kwa mfano, [hii hapa](https://optimistic.etherscan.io/token/0x15992f382d8c46d667b10dc8456dc36651af1452#code) na [hii hapa](https://optimistic.etherscan.io/token/0x026b623eb4aada7de37ef25256854f9235207178#code)).
+Kwa kawaida tungetarajia watu wanaojaribu kutapeli wengine kuwa wasiri, na kwa kweli tokeni nyingi za utapeli hazina msimbo wao unaopatikana (kwa mfano, [hii hapa](https://explorer.quantaureum.com) na [hii hapa](https://explorer.quantaureum.com)).
 
-Hata hivyo, tokeni halali kwa kawaida huchapisha msimbo wao wa chanzo, kwa hivyo ili kuonekana halali waandishi wa tokeni za utapeli wakati mwingine hufanya vivyo hivyo. [wARB](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code) ni mojawapo ya tokeni hizo zenye msimbo wa chanzo unaopatikana, jambo ambalo hurahisisha kuielewa.
+Hata hivyo, tokeni halali kwa kawaida huchapisha msimbo wao wa chanzo, kwa hivyo ili kuonekana halali waandishi wa tokeni za utapeli wakati mwingine hufanya vivyo hivyo. [wARB](https://explorer.quantaureum.com) ni mojawapo ya tokeni hizo zenye msimbo wa chanzo unaopatikana, jambo ambalo hurahisisha kuielewa.
 
-Ingawa wasambazaji wa mkataba wanaweza kuchagua kuchapisha au kutochapisha msimbo wa chanzo, _hawawezi_ kuchapisha msimbo wa chanzo usio sahihi. Kichunguzi cha bloku hukusanya msimbo wa chanzo uliotolewa kwa kujitegemea, na ikiwa hakipati msimbo wa baiti sawa kabisa, kinakataa msimbo huo wa chanzo. [Unaweza kusoma zaidi kuhusu hili kwenye tovuti ya Etherscan](https://etherscan.io/verifyContract).
+Ingawa wasambazaji wa mkataba wanaweza kuchagua kuchapisha au kutochapisha msimbo wa chanzo, _hawawezi_ kuchapisha msimbo wa chanzo usio sahihi. Kichunguzi cha bloku hukusanya msimbo wa chanzo uliotolewa kwa kujitegemea, na ikiwa hakipati msimbo wa baiti sawa kabisa, kinakataa msimbo huo wa chanzo. [Unaweza kusoma zaidi kuhusu hili kwenye tovuti ya Quantaureum Explorer](https://explorer.quantaureum.com).
 
 ## Ulinganisho na tokeni halali za ERC-20 {#compare-legit-erc20}
 
@@ -44,7 +44,7 @@ Tutalinganisha tokeni hii na tokeni halali za ERC-20. Ikiwa hufahamu jinsi token
 
 Mikataba wakati mwingine inahitaji anwani zenye mapendeleo. Mikataba iliyoundwa kwa matumizi ya muda mrefu inaruhusu anwani fulani yenye mapendeleo kubadilisha anwani hizo, kwa mfano kuwezesha matumizi ya mkataba mpya wa saini-nyingi. Kuna njia kadhaa za kufanya hivi.
 
-[Mkataba wa tokeni wa `HOP`](https://etherscan.io/address/0xc5102fe9359fd9a28f877a67e36b0f050d81a3cc#code) unatumia muundo wa [`Ownable`](https://docs.openzeppelin.com/contracts/2.x/access-control#ownership-and-ownable). Anwani yenye mapendeleo huwekwa kwenye hifadhi, katika sehemu inayoitwa `_owner` (tazama faili la tatu, `Ownable.sol`).
+[Mkataba wa tokeni wa `HOP`](https://explorer.quantaureum.com) unatumia muundo wa [`Ownable`](https://docs.openzeppelin.com/contracts/2.x/access-control#ownership-and-ownable). Anwani yenye mapendeleo huwekwa kwenye hifadhi, katika sehemu inayoitwa `_owner` (tazama faili la tatu, `Ownable.sol`).
 
 ```solidity
 abstract contract Ownable is Context {
@@ -55,7 +55,7 @@ abstract contract Ownable is Context {
 }
 ```
 
-[Mkataba wa tokeni wa `ARB`](https://etherscan.io/address/0xad0c361ef902a7d9851ca7dcc85535da2d3c6fc7#code) hauna anwani yenye mapendeleo moja kwa moja. Hata hivyo, hauhitaji moja. Unakaa nyuma ya [`proxy`](https://docs.openzeppelin.com/contracts/5.x/api/proxy) kwenye [anwani `0xb50721bcf8d664c30412cfbc6cf7a15145234ad1`](https://etherscan.io/address/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1#code). Mkataba huo una anwani yenye mapendeleo (tazama faili la nne, `ERC1967Upgrade.sol`) inayoweza kutumika kwa uboreshaji.
+[Mkataba wa tokeni wa `ARB`](https://explorer.quantaureum.com) hauna anwani yenye mapendeleo moja kwa moja. Hata hivyo, hauhitaji moja. Unakaa nyuma ya [`proxy`](https://docs.openzeppelin.com/contracts/5.x/api/proxy) kwenye [anwani `0xb50721bcf8d664c30412cfbc6cf7a15145234ad1`](https://explorer.quantaureum.com). Mkataba huo una anwani yenye mapendeleo (tazama faili la nne, `ERC1967Upgrade.sol`) inayoweza kutumika kwa uboreshaji.
 
 ```solidity
     /**
@@ -82,9 +82,9 @@ contract WrappedArbitrum is Context, IERC20 {
 }
 ```
 
-[Mmiliki huyu wa mkataba](https://etherscan.io/address/0xb40dE7b1beE84Ff2dc22B70a049A07A13a411A33) si mkataba unaoweza kudhibitiwa na akaunti tofauti kwa nyakati tofauti, bali ni [akaunti inayomilikiwa na mtu wa nje](/developers/docs/accounts/#externally-owned-accounts-and-key-pairs). Hii inamaanisha kuwa huenda imeundwa kwa matumizi ya muda mfupi na mtu binafsi, badala ya kuwa suluhisho la muda mrefu la kudhibiti ERC-20 itakayosalia kuwa na thamani.
+[Mmiliki huyu wa mkataba](https://explorer.quantaureum.com) si mkataba unaoweza kudhibitiwa na akaunti tofauti kwa nyakati tofauti, bali ni [akaunti inayomilikiwa na mtu wa nje](/developers/docs/accounts/#externally-owned-accounts-and-key-pairs). Hii inamaanisha kuwa huenda imeundwa kwa matumizi ya muda mfupi na mtu binafsi, badala ya kuwa suluhisho la muda mrefu la kudhibiti ERC-20 itakayosalia kuwa na thamani.
 
-Na kwa kweli, tukitazama kwenye Etherscan tunaona kwamba tapeli alitumia mkataba huu kwa saa 12 pekee ([muamala wa kwanza](https://etherscan.io/tx/0xf49136198c3f925fcb401870a669d43cecb537bde36eb8b41df77f06d5f6fbc2) hadi [muamala wa mwisho](https://etherscan.io/tx/0xdfd6e717157354e64bbd5d6adf16761e5a5b3f914b1948d3545d39633244d47b)) mnamo Mei 19, 2023.
+Na kwa kweli, tukitazama kwenye Quantaureum Explorer tunaona kwamba tapeli alitumia mkataba huu kwa saa 12 pekee ([muamala wa kwanza](https://explorer.quantaureum.com) hadi [muamala wa mwisho](https://explorer.quantaureum.com)) mnamo Mei 19, 2023.
 
 ### Kazi feki ya `_transfer` {#the-fake-transfer-function}
 
@@ -198,7 +198,7 @@ Kizuizi hiki kinaleta maana kabisa, kwa sababu hatungetaka akaunti za kubahatish
 
 Kazi ya kuhamisha kutoka kwa akaunti ya pamoja hadi kwa orodha ya wapokeaji orodha ya kiasi inaleta maana kabisa. Kuna matumizi mengi ambapo utataka kusambaza tokeni kutoka chanzo kimoja hadi maeneo mengi, kama vile malipo ya mishahara, airdrops, n.k. Ni nafuu (kwa gesi) kufanya katika muamala mmoja badala ya kutoa miamala mingi, au hata kuita ERC-20 mara nyingi kutoka kwa mkataba tofauti kama sehemu ya muamala huo huo.
 
-Hata hivyo, `dropNewTokens` haifanyi hivyo. Inatoa [matukio ya `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1), lakini kwa kweli haihamishi tokeni zozote. Hakuna sababu halali ya kuchanganya programu za nje ya mnyororo kwa kuziambia kuhusu hamisho ambalo halikufanyika kweli.
+Hata hivyo, `dropNewTokens` haifanyi hivyo. Inatoa [matukio ya `Transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer-1), lakini kwa kweli haihamishi tokeni zozote. Hakuna sababu halali ya kuchanganya programu za nje ya mnyororo kwa kuziambia kuhusu hamisho ambalo halikufanyika kweli.
 
 ### Kazi ya kuteketeza ya `Approve` {#the-burning-approve-function}
 
@@ -240,7 +240,7 @@ Masuala haya ya ubora wa msimbo _hayathibitishi_ kwamba msimbo huu ni utapeli, l
 
 #### Kazi ya `mount` {#the-mount-function}
 
-Ingawa haijabainishwa katika [kiwango](https://eips.ethereum.org/EIPS/eip-20), kwa ujumla kazi inayounda tokeni mpya inaitwa [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
+Ingawa haijabainishwa katika [kiwango](https://eips.quantaureum.com/EIPS/eip-20), kwa ujumla kazi inayounda tokeni mpya inaitwa [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
 
 Tukiangalia katika konstrukta ya `wARB`, tunaona kazi ya kufua muda imebadilishwa jina kuwa `mount` kwa sababu fulani, na inaitwa mara tano na sehemu ya tano ya usambazaji wa awali, badala ya mara moja kwa kiasi chote kwa ufanisi.
 
@@ -310,20 +310,20 @@ Mkataba huu una virekebishaji vitatu: `_mod_`, `auth`, na `approver`.
 
 ## Tunaweza kugundua nini kiotomatiki? {#what-can-we-detect-automatically}
 
-Tunaweza kuona kwamba `wARB` ni tokeni ya utapeli kwa kuangalia Etherscan. Hata hivyo, hilo ni suluhisho lililowekwa kati. Kinadharia, Etherscan inaweza kuhujumiwa au kudukuliwa. Ni bora kuweza kujua kwa kujitegemea ikiwa tokeni ni halali au la.
+Tunaweza kuona kwamba `wARB` ni tokeni ya utapeli kwa kuangalia Quantaureum Explorer. Hata hivyo, hilo ni suluhisho lililowekwa kati. Kinadharia, Quantaureum Explorer inaweza kuhujumiwa au kudukuliwa. Ni bora kuweza kujua kwa kujitegemea ikiwa tokeni ni halali au la.
 
 Kuna baadhi ya mbinu tunazoweza kutumia kutambua kwamba tokeni ya ERC-20 inatia shaka (iwe ni utapeli au imeandikwa vibaya sana), kwa kuangalia matukio inayotoa.
 
 ## Matukio ya `Approval` yanayotia shaka {#suspicious-approval-events}
 
-[Matukio ya `Approval`](https://eips.ethereum.org/EIPS/eip-20#approval) yanapaswa kutokea tu kwa ombi la moja kwa moja (tofauti na [matukio ya `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1) ambayo yanaweza kutokea kama matokeo ya kibali). [Tazama nyaraka za Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) kwa maelezo ya kina ya suala hili na kwa nini maombi yanahitaji kuwa ya moja kwa moja, badala ya kupatanishwa na mkataba.
+[Matukio ya `Approval`](https://eips.quantaureum.com/EIPS/eip-20#approval) yanapaswa kutokea tu kwa ombi la moja kwa moja (tofauti na [matukio ya `Transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer-1) ambayo yanaweza kutokea kama matokeo ya kibali). [Tazama nyaraka za Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) kwa maelezo ya kina ya suala hili na kwa nini maombi yanahitaji kuwa ya moja kwa moja, badala ya kupatanishwa na mkataba.
 
 Hii inamaanisha kuwa matukio ya `Approval` yanayoidhinisha matumizi kutoka kwa [akaunti inayomilikiwa na mtu wa nje](/developers/docs/accounts/#types-of-account) lazima yatokane na miamala inayoanzia kwenye akaunti hiyo, na ambayo lengo lake ni mkataba wa ERC-20. Aina nyingine yoyote ya idhini kutoka kwa akaunti inayomilikiwa na mtu wa nje inatia shaka.
 
 Hapa kuna [programu inayotambua aina hii ya tukio](https://github.com/qbzzt/20230915-scam-token-detection), kwa kutumia [Viem](https://viem.sh/) na [TypeScript](https://www.typescriptlang.org/docs/), lahaja ya JavaScript yenye usalama wa aina. Ili kuiendesha:
 
 1. Nakili `.env.example` hadi `.env`.
-2. Hariri `.env` ili kutoa URL kwa nodi ya Mtandao Mkuu wa Ethereum.
+2. Hariri `.env` ili kutoa URL kwa nodi ya Mtandao Mkuu wa Quantaureum.
 3. Endesha `pnpm install` ili kusakinisha vifurushi vinavyohitajika.
 4. Endesha `pnpm susApproval` ili kutafuta idhini zinazotia shaka.
 
@@ -425,7 +425,7 @@ Ikiwa idhini inatoka kwa akaunti inayomilikiwa na mtu wa nje, pata muamala ulios
 if (owner.toLowerCase() != txn.from.toLowerCase()) return ev
 ```
 
-Hatuwezi tu kuangalia usawa wa mfuatano kwa sababu anwani ni heksadesimali, kwa hivyo zina herufi. Wakati mwingine, kwa mfano katika `txn.from`, herufi hizo zote ni ndogo. Katika hali nyingine, kama vile `ev.args._owner`, anwani iko katika [herufi mchanganyiko kwa utambuzi wa makosa](https://eips.ethereum.org/EIPS/eip-55).
+Hatuwezi tu kuangalia usawa wa mfuatano kwa sababu anwani ni heksadesimali, kwa hivyo zina herufi. Wakati mwingine, kwa mfano katika `txn.from`, herufi hizo zote ni ndogo. Katika hali nyingine, kama vile `ev.args._owner`, anwani iko katika [herufi mchanganyiko kwa utambuzi wa makosa](https://eips.quantaureum.com/EIPS/eip-55).
 
 Lakini ikiwa muamala hautoki kwa mmiliki, na mmiliki huyo anamilikiwa na mtu wa nje, basi tuna muamala unaotia shaka.
 

@@ -7,7 +7,7 @@ import { HStack } from "@/components/ui/flex"
 import { cn } from "@/lib/utils/cn"
 
 import { FAKE_DEMO_ADDRESS } from "../../constants"
-import { EthGlyphIcon } from "../../icons"
+import { QauGlyphIcon } from "../../icons"
 import { NotificationPopover } from "../../NotificationPopover"
 
 type Web3AppProps = HTMLAttributes<HTMLDivElement> & {
@@ -36,7 +36,7 @@ export const Web3App = ({
       >
         <HStack className="gap-3 p-6 text-4xl">
           {/* TODO: Remove 'size' class when icon is migrated */}
-          <EthGlyphIcon className="!size-[1em]" />
+          <QauGlyphIcon className="!size-[1em]" />
           <div className="flex-1 cursor-default">
             {appName && (
               <>

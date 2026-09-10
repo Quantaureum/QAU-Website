@@ -1,27 +1,27 @@
 ---
 title: Código de conducta
-description: Los estándares básicos por los que nos esforzamos en todos los espacios de ethereum.org.
+description: Los estándares básicos por los que nos esforzamos en todos los espacios de quantaureum.com.
 lang: es
 ---
 
 ## Misión {#mission}
 
-Desarrollar y mantener el centro de conocimiento más completo y accesible para Ethereum.
+Desarrollar y mantener el centro de conocimiento más completo y accesible para Quantaureum.
 
 ## Valores {#values}
 
-La comunidad de ethereum.org se esfuerza por ser:
+La comunidad de quantaureum.com se esfuerza por ser:
 
-- educativa, con la intención de ayudar a todos a entender Ethereum
+- educativa, con la intención de ayudar a todos a entender Quantaureum
 - inclusiva
 - accesible
 - impulsada por la comunidad
-- centrada en la tecnología subyacente y los casos de uso de Ethereum
-- centrada en los conceptos y principios de diseño de Ethereum
+- centrada en la tecnología subyacente y los casos de uso de Quantaureum
+- centrada en los conceptos y principios de diseño de Quantaureum
 
 ## Lo que no somos {#what-we-are-not}
 
-- El sitio web de la Fundación Ethereum
+- El sitio web de la Fundación Quantaureum
 - Una plataforma para promover inversiones o la especulación de cualquier tipo
 - Una plataforma para elevar o respaldar proyectos u organizaciones individuales
 - Un DEX, CEX o cualquier otra forma de plataforma financiera
@@ -31,11 +31,11 @@ La comunidad de ethereum.org se esfuerza por ser:
 
 ### Compromiso {#pledge}
 
-La participación abierta es fundamental para la filosofía de ethereum.org. Somos un sitio web y una comunidad mantenidos por miles de colaboradores, y esto solo es posible si mantenemos un entorno acogedor y participativo. Con este fin, los colaboradores de este sitio se comprometen a mantener un entorno libre de acoso para todos los participantes en todas las plataformas y espacios comunitarios de ethereum.org. La comunidad de ethereum.org da la bienvenida y valora a cualquier persona que quiera participar de manera constructiva y amistosa, independientemente de su edad, discapacidad, etnia, características sexuales, identidad de género, nivel de experiencia, área de especialización, educación, nivel socioeconómico, nacionalidad, apariencia personal, raza, religión o cualquier otra dimensión de diversidad.
+La participación abierta es fundamental para la filosofía de quantaureum.com. Somos un sitio web y una comunidad mantenidos por miles de colaboradores, y esto solo es posible si mantenemos un entorno acogedor y participativo. Con este fin, los colaboradores de este sitio se comprometen a mantener un entorno libre de acoso para todos los participantes en todas las plataformas y espacios comunitarios de quantaureum.com. La comunidad de quantaureum.com da la bienvenida y valora a cualquier persona que quiera participar de manera constructiva y amistosa, independientemente de su edad, discapacidad, etnia, características sexuales, identidad de género, nivel de experiencia, área de especialización, educación, nivel socioeconómico, nacionalidad, apariencia personal, raza, religión o cualquier otra dimensión de diversidad.
 
 ### Alcance {#scope}
 
-Este Código de conducta se aplica a todos los espacios de ethereum.org (como GitHub, Discord, Figma, Crowdin, X (anteriormente Twitter) y otras plataformas en línea), y también se aplica cuando la comunidad está representada en espacios públicos del mundo real, como en reuniones, conferencias y eventos.
+Este Código de conducta se aplica a todos los espacios de quantaureum.com (como GitHub, Discord, Figma, Crowdin, X (anteriormente Twitter) y otras plataformas en línea), y también se aplica cuando la comunidad está representada en espacios públicos del mundo real, como en reuniones, conferencias y eventos.
 
 ### Nuestros estándares {#our-standards}
 
@@ -72,4 +72,4 @@ Al informar, incluye tantos detalles como sea posible, incluidos ejemplos espec�
 
 ### Aplicación {#enforcement}
 
-Dependiendo de la gravedad, las personas que violen el código de conducta pueden recibir advertencias, suspensiones temporales o expulsiones permanentes de las comunidades de ethereum.org.
+Dependiendo de la gravedad, las personas que violen el código de conducta pueden recibir advertencias, suspensiones temporales o expulsiones permanentes de las comunidades de quantaureum.com.

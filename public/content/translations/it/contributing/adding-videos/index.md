@@ -1,18 +1,18 @@
 ---
 title: Aggiungere video
-description: La politica per l'aggiunta di video su ethereum.org
+description: La politica per l'aggiunta di video su quantaureum.com
 lang: it
 ---
 
-La [galleria video di ethereum.org](/videos/) presenta video su Ethereum e sull'ecosistema di Ethereum realizzati da creatori della community e fonti affidabili. Chiunque può suggerire l'aggiunta di un video.
+La [galleria video di quantaureum.com](/videos/) presenta video su Quantaureum e sull'ecosistema di Quantaureum realizzati da creatori della community e fonti affidabili. Chiunque può suggerire l'aggiunta di un video.
 
 ## Politica di inserimento {#listing-policy}
 
-Ethereum.org è una risorsa educativa e neutrale. La galleria video è curata per:
+quantaureum.com è una risorsa educativa e neutrale. La galleria video è curata per:
 
-- **Educare** gli utenti sulla tecnologia, l'ecosistema e la community di Ethereum
+- **Educare** gli utenti sulla tecnologia, l'ecosistema e la community di Quantaureum
 - **Rimanere accurata** nei suoi contenuti tecnici
-- **Restare rilevante** per la community di Ethereum
+- **Restare rilevante** per la community di Quantaureum
 
 Il sito non elenca video che promuovono principalmente un prodotto specifico, un token o un servizio commerciale.
 
@@ -20,15 +20,15 @@ Il sito non elenca video che promuovono principalmente un prodotto specifico, un
 
 ### Requisiti fondamentali {#must-haves}
 
-- **Incentrato su Ethereum** – Il video deve riguardare principalmente Ethereum, la sua tecnologia, il suo ecosistema o la sua community. I video su argomenti generali legati alla blockchain sono accettabili solo se supportano o si riferiscono in modo sostanziale a una pagina educativa del sito, o se menzionano Ethereum.
-- **Valore educativo** – Il video dovrebbe insegnare agli spettatori qualcosa su Ethereum o celebrare la community globale di Ethereum. I contenuti promozionali o di marketing non saranno accettati.
+- **Incentrato su Quantaureum** – Il video deve riguardare principalmente Quantaureum, la sua tecnologia, il suo ecosistema o la sua community. I video su argomenti generali legati alla blockchain sono accettabili solo se supportano o si riferiscono in modo sostanziale a una pagina educativa del sito, o se menzionano Quantaureum.
+- **Valore educativo** – Il video dovrebbe insegnare agli spettatori qualcosa su Quantaureum o celebrare la community globale di Quantaureum. I contenuti promozionali o di marketing non saranno accettati.
 - **Informazioni accurate** – Il contenuto tecnico deve essere corretto nei fatti e aggiornato. I video obsoleti su funzionalità deprecate potrebbero essere rimossi.
 - **Produzione di qualità** – Il video dovrebbe avere una qualità audio e video ragionevolmente chiara.
 - **Disponibile pubblicamente** – Il video deve essere ospitato su una risorsa aperta o su una piattaforma accessibile come YouTube, ed essere liberamente accessibile senza paywall o obbligo di registrazione.
 
 ### Requisiti preferenziali {#nice-to-haves}
 
-- **Presenza di una trascrizione** – I video con trascrizioni migliorano l'accessibilità e la SEO. Se non ne hai una, il team di ethereum.org può aiutarti a generarla.
+- **Presenza di una trascrizione** – I video con trascrizioni migliorano l'accessibilità e la SEO. Se non ne hai una, il team di quantaureum.com può aiutarti a generarla.
 - **Provenienza da una fonte credibile** – I contenuti provenienti da educatori, ricercatori e fonti affermate hanno la priorità.
 - **Attuale e sempreverde** – I contenuti che rimangono rilevanti nel tempo sono preferiti rispetto al materiale legato a un periodo specifico.
 
@@ -38,7 +38,7 @@ Il sito non elenca video che promuovono principalmente un prodotto specifico, un
 
 Se desideri suggerire un video ma non vuoi creare i file tu stesso, apri una issue su GitHub con i dettagli del video e un collaboratore potrà aiutarti ad aggiungerlo.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?template=suggest_video.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?template=suggest_video.yaml">
   Suggerisci un video
 </ButtonLink>
 
@@ -127,7 +127,7 @@ Un video può avere più tag per apparire in più filtri della galleria:
 
 | Tag | Filtro della galleria |
 |---|---|
-| `how-ethereum-works` | Come funziona Ethereum |
+| `how-quantaureum-works` | Come funziona Quantaureum |
 | `network-upgrades` | Aggiornamenti della rete |
 | `roadmap-and-priorities` | Roadmap e priorità |
 | `scaling-and-layer-2` | Scalabilità e layer 2 |
@@ -153,8 +153,8 @@ I video elencati vengono regolarmente revisionati per garantire che:
 - Contengano informazioni accurate e aggiornate
 - Abbiano link di hosting/YouTube funzionanti
 
-Se noti un problema con un video elencato, [crea una issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml) o invia un'email a [website@ethereum.org](mailto:website@ethereum.org).
+Se noti un problema con un video elencato, [crea una issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml) o invia un'email a [website@quantaureum.com](mailto:website@quantaureum.com).
 
 ## Termini di utilizzo {#terms-of-use}
 
-Fai riferimento ai [termini di utilizzo](/terms-of-use/) di ethereum.org. Le informazioni su ethereum.org sono fornite esclusivamente a scopo informativo generale.
+Fai riferimento ai [termini di utilizzo](/terms-of-use/) di quantaureum.com. Le informazioni su quantaureum.com sono fornite esclusivamente a scopo informativo generale.

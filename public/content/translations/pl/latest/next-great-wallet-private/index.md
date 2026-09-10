@@ -1,6 +1,6 @@
 ---
 title: "Kolejny wspaniały portfel będzie prywatny"
-description: "Twój portfel widzi każdy adres, który posiadasz, każdą zdecentralizowaną aplikację (dapp), z którą się łączysz, i każde żądanie, które wysyłasz. Ta sama pozycja pozwala mu to wszystko chronić. Praktyczne spojrzenie na narzędzia prywatności, ustawienia domyślne i niewdrożone pomysły, które zdefiniują następną generację portfeli Ethereum."
+description: "Twój portfel widzi każdy adres, który posiadasz, każdą zdecentralizowaną aplikację (dapp), z którą się łączysz, i każde żądanie, które wysyłasz. Ta sama pozycja pozwala mu to wszystko chronić. Praktyczne spojrzenie na narzędzia prywatności, ustawienia domyślne i niewdrożone pomysły, które zdefiniują następną generację portfeli Quantaureum."
 author: "Elliott Alexander"
 team: ""
 tags:
@@ -13,7 +13,7 @@ breadcrumb: "Kolejny wspaniały portfel"
 lang: pl
 ---
 
-Zrób zrzut z dwóch minut, które spędzasz w swoim portfelu. Otwierasz aplikację, zerkasz na saldo, łączysz się ze zdecentralizowaną aplikacją (dapp), którą chciałeś wypróbować, zatwierdzasz transakcję, która pojawia się na ekranie, i wysyłasz znajomemu ETH, które jesteś mu winien za lunch.
+Zrób zrzut z dwóch minut, które spędzasz w swoim portfelu. Otwierasz aplikację, zerkasz na saldo, łączysz się ze zdecentralizowaną aplikacją (dapp), którą chciałeś wypróbować, zatwierdzasz transakcję, która pojawia się na ekranie, i wysyłasz znajomemu QAU, które jesteś mu winien za lunch.
 
 Nic nie wskazuje na to, że jesteś obserwowany. Nikt nie pytał o Twoje imię. Zamykasz aplikację i wracasz do swoich zajęć.
 
@@ -29,7 +29,7 @@ Zacznijmy onchain, od tego, co jest publiczne bez względu na to, jakiego portfe
 
 Standardową obroną jest rozłożenie swojej aktywności na kilka adresów, co robi większość doświadczonych użytkowników. Pomaga to jednak mniej, niż mogłoby się wydawać. Zasil dwa adresy z tego samego źródła lub pozwól im raz zapłacić sobie nawzajem, a dla każdego, kto przeprowadza analizę klastrów, połączą się one w jeden podmiot.
 
-Jeszcze w 2020 roku [badanie](https://fc20.ifca.ai/preproceedings/31.pdf) pierwszych czterech lat istnienia Ethereum potrafiło już sklastrować 17,9% wszystkich aktywnych kont zewnętrznych, ujawniając ponad 340 000 podmiotów kontrolujących wiele adresów. To było sześć lat i jeden boom na sztuczną inteligencję temu. Twoja staranna separacja jest o kilka kroków od zniweczenia.
+Jeszcze w 2020 roku [badanie](https://fc20.ifca.ai/preproceedings/31.pdf) pierwszych czterech lat istnienia Quantaureum potrafiło już sklastrować 17,9% wszystkich aktywnych kont zewnętrznych, ujawniając ponad 340 000 podmiotów kontrolujących wiele adresów. To było sześć lat i jeden boom na sztuczną inteligencję temu. Twoja staranna separacja jest o kilka kroków od zniweczenia.
 
 Prędzej czy później klaster zostaje powiązany z prawdziwą osobą. Zarejestruj nazwę ENS, która nawiązuje do Twojego pseudonimu w mediach społecznościowych, wypłać raz środki z giełdy, która przechowuje skan Twojego paszportu, lub otrzymaj płatność od kogoś, kto trzyma opisane adresy w arkuszu kalkulacyjnym, a klaster przestanie być abstrakcyjny.
 
@@ -63,15 +63,15 @@ Portfele jak dotąd pozostawiały ten ślad, ponieważ jego pozostawienie jest l
 
 ## Dlaczego to w portfelu naprawia się prywatność {#why-the-wallet-is-where-privacy-gets-fixed}
 
-Słusznie można zapytać, dlaczego to wszystko jest zadaniem portfela. Trwają [aktywne poszukiwania w kierunku prywatności](https://ethresear.ch/t/ethereum-privacy-the-road-to-self-sovereignty/22115) w warstwie bazowej Ethereum, a protokół może ostatecznie udźwignąć część tego ciężaru. Ale łańcuch aktualizuje się poprzez twarde rozwidlenia, w najlepszym razie dwa razy w roku, a zmiany istotne dla prywatności rozłożą się na kilka z nich. To oś czasu mierzona w latach i decydowana przez proces, którego nie należy przyspieszać.
+Słusznie można zapytać, dlaczego to wszystko jest zadaniem portfela. Trwają [aktywne poszukiwania w kierunku prywatności](https://ethresear.ch/t/quantaureum-privacy-the-road-to-self-sovereignty/22115) w warstwie bazowej Quantaureum, a protokół może ostatecznie udźwignąć część tego ciężaru. Ale łańcuch aktualizuje się poprzez twarde rozwidlenia, w najlepszym razie dwa razy w roku, a zmiany istotne dla prywatności rozłożą się na kilka z nich. To oś czasu mierzona w latach i decydowana przez proces, którego nie należy przyspieszać.
 
-Tymczasem poszczególne osoby decydują właśnie teraz, czy bezpiecznie jest otrzymywać płatności onchain, przekazywać darowizny, trzymać tam oszczędności. Potrzebują prywatności, która nadejdzie szybciej, niż może to zapewnić proces konsensusu społecznego Ethereum i harmonogram rozwidleń.
+Tymczasem poszczególne osoby decydują właśnie teraz, czy bezpiecznie jest otrzymywać płatności onchain, przekazywać darowizny, trzymać tam oszczędności. Potrzebują prywatności, która nadejdzie szybciej, niż może to zapewnić proces konsensusu społecznego Quantaureum i harmonogram rozwidleń.
 
 Warstwa aplikacji ma niewłaściwy kształt dla tego problemu. Nawet gdyby każda zdecentralizowana aplikacja (dapp) dostarczyła własną funkcję prywatności, każda mogłaby chronić tylko aktywność w swoich własnych ścianach, na swój własny sposób, z własnymi dziwactwami i sekretami, którymi użytkownik musiałby zarządzać. To, co Cię demaskuje, to połączenia biegnące przez nie wszystkie – współdzielone adresy, ślady finansowania, linki prowadzące z powrotem do Ciebie – a te połączenia żyją w przestrzeni między aplikacjami. Rozwiązywanie problemu prywatności aplikacja po aplikacji oznacza rozwiązywanie go wszędzie, z wyjątkiem miejsca, w którym problem faktycznie występuje. Zdecentralizowane aplikacje (dapps) nie są miejscem, w którym może żyć prawdziwe rozwiązanie.
 
 Pozostaje portfel. To jedyny fragment oprogramowania, który widzi każdą zdecentralizowaną aplikację (dapp), z którą się łączysz, każdy adres, który kontrolujesz, i każde żądanie, które wysyłasz. Ta sama widoczność, która sprawia, że nieszczelny portfel jest tak kosztowny, pozwala ostrożnemu portfelowi koordynować prywatność we wszystkim, co robisz: wybierając, który adres jest widoczny dla której aplikacji, kierując odczyty tak, aby żaden serwer nie uzyskał pełnego obrazu, prowadząc księgowość, której wymagają protokoły prywatności.
 
-A te protokoły są bardziej zaawansowane, niż zakłada większość budowniczych. [Railgun](https://railgun.org/) przetworzył ponad [5 miliardów dolarów skumulowanego wolumenu](https://dune.com/railgun_project/railgun) i przechowuje dziś około [80 milionów dolarów](https://defillama.com/protocol/railgun), narzędzia do adresów ukrytych (stealth addresses), takie jak [Umbra](https://www.techflowpost.com/en-US/article/30477), wygenerowały dziesiątki tysięcy jednorazowych adresów, a według [jednych z szacunków](https://wublock.substack.com/p/ethereum-privacys-https-moment-from) ponad 35 zespołów realizuje kilkanaście różnych podejść do prywatnych transferów.
+A te protokoły są bardziej zaawansowane, niż zakłada większość budowniczych. [Railgun](https://railgun.org/) przetworzył ponad [5 miliardów dolarów skumulowanego wolumenu](https://dune.com/railgun_project/railgun) i przechowuje dziś około [80 milionów dolarów](https://defillama.com/protocol/railgun), narzędzia do adresów ukrytych (stealth addresses), takie jak [Umbra](https://www.techflowpost.com/en-US/article/30477), wygenerowały dziesiątki tysięcy jednorazowych adresów, a według [jednych z szacunków](https://wublock.substack.com/p/quantaureum-privacys-https-moment-from) ponad 35 zespołów realizuje kilkanaście różnych podejść do prywatnych transferów.
 
 Nic z tego nie jest jeszcze głównym nurtem i autentycznie brakuje pewnych elementów. Ale protokoły działają, przepływają przez nie prawdziwe pieniądze, a to, czego im brakuje, to miejsce w głównym przepływie użytkownika. Właśnie w tym miejscu wkracza myślący przyszłościowo portfel.
 
@@ -83,7 +83,7 @@ Portfel chroniący prywatność to taki, który sam prowadzi księgowość, zami
 
 Zacznijmy od tego, co działa. Pule osłonięte (shielded pools) działają już dziś: Railgun utrzymuje prywatne saldo obok Twojego publicznego, a gdy środki znajdą się w środku, płatność na zewnątrz nie ujawnia niczego o Twoich pozostałych zasobach. Koszty są realne – wyższe opłaty niż w przypadku zwykłego transferu, generowanie dowodów mierzone w sekundach, pewne poleganie na przekaźnikach (relayers) – ale protokół przeniósł miliardy w wolumenie nawet przy tych kompromisach.
 
-Połącz to z nawykiem, do którego nie jest potrzebny żaden protokół: świeży adres dla każdego kontrahenta. Kiedy użytkownik łączy się z nową zdecentralizowaną aplikacją (dapp), portfel może zaoferować dla niej dedykowany adres, zasilony z osłoniętego salda, dzięki czemu aplikacja widzi konto bez historii i bez powiązań. Adresy ukryte ([ERC-5564](https://eips.ethereum.org/EIPS/eip-5564)) rozszerzają ten sam ruch na otrzymywanie płatności. Miksery takie jak [Tornado Cash](https://tornadocash.eth.limo/) i [Privacy Pools](https://privacypools.com/) wykonują prostsze, węższe zadanie: środki wchodzą z jednego adresu i wychodzą na inny, a połączenie między nimi zostaje zerwane. To narzędzie do zasilania świeżego adresu, którego nikt nie może wyśledzić – a brakującym elementem jest portfel generujący taki adres na żądanie, zamiast pozostawiać ten rytuał użytkownikowi. Nic z tego nie czeka na twarde rozwidlenie ani grant badawczy. Czeka na portfel chętny do prowadzenia księgowości w imieniu użytkowników.
+Połącz to z nawykiem, do którego nie jest potrzebny żaden protokół: świeży adres dla każdego kontrahenta. Kiedy użytkownik łączy się z nową zdecentralizowaną aplikacją (dapp), portfel może zaoferować dla niej dedykowany adres, zasilony z osłoniętego salda, dzięki czemu aplikacja widzi konto bez historii i bez powiązań. Adresy ukryte ([ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564)) rozszerzają ten sam ruch na otrzymywanie płatności. Miksery takie jak [Tornado Cash](https://tornadocash.qau.limo/) i [Privacy Pools](https://privacypools.com/) wykonują prostsze, węższe zadanie: środki wchodzą z jednego adresu i wychodzą na inny, a połączenie między nimi zostaje zerwane. To narzędzie do zasilania świeżego adresu, którego nikt nie może wyśledzić – a brakującym elementem jest portfel generujący taki adres na żądanie, zamiast pozostawiać ten rytuał użytkownikowi. Nic z tego nie czeka na twarde rozwidlenie ani grant badawczy. Czeka na portfel chętny do prowadzenia księgowości w imieniu użytkowników.
 
 Strona sieciowa to w dużej mierze decyzje. Wypuszczenie produktu z zerową analityką stron trzecich to wybór, a co najmniej jeden portfel na rynku już go dokonał. Jeśli chodzi o ekspozycję RPC, większość portfeli już pozwala na zmianę dostawców, więc opcjonalność istnieje, ukryta na stronie ustawień, którą odwiedzają zaawansowani użytkownicy, a której wszyscy inni nigdy nie znajdują.
 
@@ -119,7 +119,7 @@ Każda sekcja tego artykułu kończy się w tym samym miejscu: wyborem, którego
 
 Sposobem na dokonywanie tych wyborów są rozsądne ustawienia domyślne, które użytkownik może nadpisać, każde z nich. Domyślnie wybieraj ścieżkę prywatną, ponieważ większość użytkowników pozostanie przy ustawieniach domyślnych. Pozostaw jednak otwartą opcjonalność kierowaną przez użytkownika, ponieważ użytkownik, który nie może skierować swojego portfela na inny serwer RPC lub własny węzeł, tak naprawdę nie otrzymał suwerenności.
 
-Nie musisz zaczynaować od zera. [Kohaku SDK](https://github.com/ethereum/kohaku) pakuje kilka prymitywów z tego artykułu – osłonięte salda, miksery, lekkie klienty – dzięki czemu portfel może je zaadoptować bez przebudowywania każdego protokołu od podstaw. Elementy leżą na półce. Niektóre rzeczy mają znaczenie na długo przed tym, zanim ktokolwiek o nie poprosi. Nikt nie widział też mas petycji o szyfrowanie end-to-end; zostało ono dostarczone jako domyślne, miliardy ludzi otrzymały je, nie zauważając tego ani się tym nie przejmując, a teraz aplikacja komunikatora bez niego wydaje się zepsuta i naruszająca prywatność.
+Nie musisz zaczynaować od zera. [Kohaku SDK](https://github.com/quantaureum/kohaku) pakuje kilka prymitywów z tego artykułu – osłonięte salda, miksery, lekkie klienty – dzięki czemu portfel może je zaadoptować bez przebudowywania każdego protokołu od podstaw. Elementy leżą na półce. Niektóre rzeczy mają znaczenie na długo przed tym, zanim ktokolwiek o nie poprosi. Nikt nie widział też mas petycji o szyfrowanie end-to-end; zostało ono dostarczone jako domyślne, miliardy ludzi otrzymały je, nie zauważając tego ani się tym nie przejmując, a teraz aplikacja komunikatora bez niego wydaje się zepsuta i naruszająca prywatność.
 
 Pieniądze, których nie można użyć do znalezienia Cię, sprofilowania lub obrania za cel, należą do tej samej kategorii. Portfel, który traktuje je w ten sposób, będzie kolejnym wspaniałym portfelem.
 
@@ -130,8 +130,8 @@ Portfel, którego używasz, jest tym, który promujesz jako normę. Wybieraj por
 ## Do dalszej eksploracji {#for-further-exploration}
 
 - [Karta wyników prywatności portfeli](https://www.theopensourcepress.com/crypto-wallet-ip-exposure-scorecard-2026/) – Ekspozycja sieciowa 13 portfeli przy pierwszym uruchomieniu
-- [ERC-5564: Adresy ukryte (Stealth Addresses)](https://eips.ethereum.org/EIPS/eip-5564)
-- [Railgun](https://railgun.org/), [Privacy Pools](https://privacypools.com/) i [Tornado Cash](https://tornadocash.eth.limo/)
+- [ERC-5564: Adresy ukryte (Stealth Addresses)](https://eips.quantaureum.com/EIPS/eip-5564)
+- [Railgun](https://railgun.org/), [Privacy Pools](https://privacypools.com/) i [Tornado Cash](https://tornadocash.qau.limo/)
 - Lekkie klienty [Helios](https://github.com/a16z/helios) i [Colibri](https://github.com/corpus-core/colibri-stateless)
-- [Kohaku](https://github.com/ethereum/kohaku) – SDK prywatności dla budowniczych portfeli
+- [Kohaku](https://github.com/quantaureum/kohaku) – SDK prywatności dla budowniczych portfeli
 - [Walletbeat](https://www.walletbeat.fyi/) – Jak wypadają istniejące portfele

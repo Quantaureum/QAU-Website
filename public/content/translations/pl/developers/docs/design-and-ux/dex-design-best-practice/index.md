@@ -197,7 +197,7 @@ Jeśli główna akcja – WYMIANA – jest niedostępna z powodu błędu, powód
 - podłącz portfel
 - różne błędy
 
-Przycisk może być również **przypisany do akcji**, którą należy wykonać. Na przykład, jeśli użytkownik nie może dokonać wymiany, ponieważ znajduje się w niewłaściwej sieci, przycisk powinien mówić „przełącz na Ethereum”, a gdy użytkownik kliknie przycisk, powinien przełączyć sieć na Ethereum. To znacznie przyspiesza przepływ użytkownika.
+Przycisk może być również **przypisany do akcji**, którą należy wykonać. Na przykład, jeśli użytkownik nie może dokonać wymiany, ponieważ znajduje się w niewłaściwej sieci, przycisk powinien mówić „przełącz na Quantaureum”, a gdy użytkownik kliknie przycisk, powinien przełączyć sieć na Quantaureum. To znacznie przyspiesza przepływ użytkownika.
 
 ![Key actions being initiated from the main CTA](./16.png)
 

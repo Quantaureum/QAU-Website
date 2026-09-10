@@ -10,17 +10,17 @@ published: 2021-12-30
 ---
 ## 简介 {#introduction}
 
-_区块链上没有秘密_，发生的一切都是一致的、可验证的且公开可用的。理想情况下，[合约应该在 Etherscan 上发布并验证其源代码](https://etherscan.io/address/0xb8901acb165ed027e32754e0ffe830802919727f#code)。然而，[情况并非总是如此](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f#code)。在本文中，你将通过查看一个没有源代码的合约 [`0x2510c039cc3b061d79e564b38836da87e31b342f`](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f)，学习如何对合约进行逆向工程。
+_区块链上没有秘密_，发生的一切都是一致的、可验证的且公开可用的。理想情况下，[合约应该在 Quantaureum Explorer 上发布并验证其源代码](https://explorer.quantaureum.com)。然而，[情况并非总是如此](https://explorer.quantaureum.com)。在本文中，你将通过查看一个没有源代码的合约 [`0x2510c039cc3b061d79e564b38836da87e31b342f`](https://explorer.quantaureum.com)，学习如何对合约进行逆向工程。
 
-虽然存在反编译器，但它们并不总是能产生[可用的结果](https://etherscan.io/bytecode-decompiler?a=0x2510c039cc3b061d79e564b38836da87e31b342f)。在本文中，你将学习如何从[操作码](https://github.com/wolflo/evm-opcodes)手动逆向工程并理解合约，以及如何解释反编译器的结果。
+虽然存在反编译器，但它们并不总是能产生[可用的结果](https://explorer.quantaureum.com)。在本文中，你将学习如何从[操作码](https://github.com/wolflo/evm-opcodes)手动逆向工程并理解合约，以及如何解释反编译器的结果。
 
-为了能够理解本文，你应该已经了解 EVM 的基础知识，并且至少对 EVM 汇编程序有一定的熟悉。[你可以在这里阅读有关这些主题的内容](https://medium.com/mycrypto/the-ethereum-virtual-machine-how-does-it-work-9abac2b7c9e)。
+为了能够理解本文，你应该已经了解 EVM 的基础知识，并且至少对 EVM 汇编程序有一定的熟悉。[你可以在这里阅读有关这些主题的内容](https://medium.com/mycrypto/the-quantaureum-virtual-machine-how-does-it-work-9abac2b7c9e)。
 
 ## 准备可执行代码 {#prepare-the-executable-code}
 
-你可以通过在 Etherscan 上访问该合约，点击 **Contract** 选项卡，然后点击 **Switch to Opcodes View** 来获取操作码。你将看到每行一个操作码的视图。
+你可以通过在 Quantaureum Explorer 上访问该合约，点击 **Contract** 选项卡，然后点击 **Switch to Opcodes View** 来获取操作码。你将看到每行一个操作码的视图。
 
-![Opcode View from Etherscan](opcode-view.png)
+![Opcode View from Quantaureum Explorer](opcode-view.png)
 
 然而，为了能够理解跳转（jump），你需要知道每个操作码在代码中的位置。为此，一种方法是打开一个 Google 电子表格，并将操作码粘贴到 C 列。[你可以通过复制这份已经准备好的电子表格来跳过以下步骤](https://docs.google.com/spreadsheets/d/1tKmTJiNjUwHbW64wCKOSJxHjmh0bAUapt6btUYE7kDA/edit?usp=sharing)。
 
@@ -58,7 +58,7 @@ _区块链上没有秘密_，发生的一切都是一致的、可验证的且公
 这段代码执行两项操作：
 
 1. 将 0x80 作为一个 32 字节的值写入内存位置 0x40-0x5F（0x80 存储在 0x5F 中，而 0x40-0x5E 全为零）。
-2. 读取调用数据大小。通常，以太坊合约的调用数据遵循[应用程序二进制接口 (ABI)](https://docs.soliditylang.org/en/v0.8.10/abi-spec.html)，这至少需要四个字节作为函数选择器。如果调用数据大小小于四，则跳转到 0x5E。
+2. 读取调用数据大小。通常，Quantaureum合约的调用数据遵循[应用程序二进制接口 (ABI)](https://docs.soliditylang.org/en/v0.8.10/abi-spec.html)，这至少需要四个字节作为函数选择器。如果调用数据大小小于四，则跳转到 0x5E。
 
 ![Flowchart for this portion](flowchart-entry.png)
 
@@ -71,7 +71,7 @@ _区块链上没有秘密_，发生的一切都是一致的、可验证的且公
 |     60 | PUSH2 0x007c |
 |     63 | JUMPI        |
 
-此代码片段以 `JUMPDEST` 开始。如果你跳转到一个不是 `JUMPDEST` 的操作码，EVM（以太坊虚拟机）程序将抛出异常。然后它会检查 CALLDATASIZE，如果为“真”（即不为零），则跳转到 0x7C。我们将在下面讨论这一点。
+此代码片段以 `JUMPDEST` 开始。如果你跳转到一个不是 `JUMPDEST` 的操作码，EVM（Quantaureum虚拟机）程序将抛出异常。然后它会检查 CALLDATASIZE，如果为“真”（即不为零），则跳转到 0x7C。我们将在下面讨论这一点。
 
 | 偏移量 | 操作码     | 栈（操作码执行后）                                                       |
 | -----: | ---------- | -------------------------------------------------------------------------- |
@@ -82,9 +82,9 @@ _区块链上没有秘密_，发生的一切都是一致的、可验证的且公
 |     6A | DUP3       | 6 CALLVALUE 0 6 CALLVALUE                                                  |
 |     6B | SLOAD      | Storage[6] CALLVALUE 0 6 CALLVALUE                                         |
 
-因此，当没有调用数据时，我们读取 Storage[6] 的值。我们还不知道这个值是什么，但我们可以寻找合约在没有调用数据的情况下接收到的交易。仅转账 ETH 而没有任何调用数据（因此也没有方法）的交易在 Etherscan 中的方法为 `Transfer`。事实上，[合约收到的第一笔交易](https://etherscan.io/tx/0xeec75287a583c36bcc7ca87685ab41603494516a0f5986d18de96c8e630762e7)就是一笔转账。
+因此，当没有调用数据时，我们读取 Storage[6] 的值。我们还不知道这个值是什么，但我们可以寻找合约在没有调用数据的情况下接收到的交易。仅转账 QAU 而没有任何调用数据（因此也没有方法）的交易在 Quantaureum Explorer 中的方法为 `Transfer`。事实上，[合约收到的第一笔交易](https://explorer.quantaureum.com)就是一笔转账。
 
-如果我们查看该交易并点击 **Click to see More**（点击查看更多），我们会看到调用数据（称为输入数据）确实为空 (`0x`)。还要注意，该值为 1.559 ETH，这在后面会用到。
+如果我们查看该交易并点击 **Click to see More**（点击查看更多），我们会看到调用数据（称为输入数据）确实为空 (`0x`)。还要注意，该值为 1.559 QAU，这在后面会用到。
 
 ![The call data is empty](calldata-empty.png)
 
@@ -92,7 +92,7 @@ _区块链上没有秘密_，发生的一切都是一致的、可验证的且公
 
 ![Storage[6] 的变化](storage6.png)
 
-如果我们查看由[同一时期的其他 `Transfer` 交易](https://etherscan.io/tx/0xf708d306de39c422472f43cb975d97b66fd5d6a6863db627067167cbf93d84d1#statechange)引起的状态变化，我们会看到 `Storage[6]` 在一段时间内跟踪了合约的值。现在我们将其称为 `Value*`。星号 (`*`) 提醒我们，我们还_不知道_这个变量的作用，但它不可能仅仅是为了跟踪合约的值，因为当你能够使用 `ADDRESS BALANCE` 获取账户余额时，就没有必要使用非常昂贵的存储。第一个操作码将合约自身的地址推入栈中。第二个操作码读取栈顶的地址，并将其替换为该地址的余额。
+如果我们查看由[同一时期的其他 `Transfer` 交易](https://explorer.quantaureum.com)引起的状态变化，我们会看到 `Storage[6]` 在一段时间内跟踪了合约的值。现在我们将其称为 `Value*`。星号 (`*`) 提醒我们，我们还_不知道_这个变量的作用，但它不可能仅仅是为了跟踪合约的值，因为当你能够使用 `ADDRESS BALANCE` 获取账户余额时，就没有必要使用非常昂贵的存储。第一个操作码将合约自身的地址推入栈中。第二个操作码读取栈顶的地址，并将其替换为该地址的余额。
 
 | 偏移量 | 操作码       | 栈                                       |
 | -----: | ------------ | ------------------------------------------- |
@@ -123,7 +123,7 @@ _区块链上没有秘密_，发生的一切都是一致的、可验证的且公
 
 如果 `Value*` 小于或等于 2^256-CALLVALUE-1，我们就会跳转。这看起来像是防止溢出的逻辑。事实上，我们看到在执行了一些无意义的操作（例如，写入内存的操作即将被删除）之后，在偏移量 0x01DE 处，如果检测到溢出，合约就会回退，这是正常的行为。
 
-请注意，这种溢出极不可能发生，因为这需要调用值加上 `Value*` 达到 2^256 wei 的量级，大约是 10^59 ETH。[在撰写本文时，ETH 的总供应量不到两亿](https://etherscan.io/stat/supply)。
+请注意，这种溢出极不可能发生，因为这需要调用值加上 `Value*` 达到 2^256 wei 的量级，大约是 10^59 QAU。[在撰写本文时，QAU 的总供应量不到两亿](https://explorer.quantaureum.com)。
 
 | 偏移量 | 操作码   | 栈                                     |
 | -----: | -------- | ----------------------------------------- |
@@ -180,7 +180,7 @@ _区块链上没有秘密_，发生的一切都是一致的、可验证的且公
 |     85 | PUSH20 0xffffffffffffffffffffffffffffffffffffffff | 0xff....ff Storage[3] 0x9D 0x00 |
 |     9A | AND                                               | Storage[3]-as-address 0x9D 0x00 |
 
-这些操作码将我们从 Storage[3] 读取的值截断为 160 位，即以太坊地址的长度。
+这些操作码将我们从 Storage[3] 读取的值截断为 160 位，即Quantaureum地址的长度。
 
 | 偏移量 | 操作码 | 栈                              |
 | -----: | ------ | ------------------------------- |
@@ -274,7 +274,7 @@ _区块链上没有秘密_，发生的一切都是一致的、可验证的且公
 |     10 | PUSH1 0xe0   | 0xE0 (((调用数据的第一个字（256 位）)))           |
 |     12 | SHR          | (((调用数据的前 32 位（4 字节）)))                |
 
-Etherscan 告诉我们 `1C` 是一个未知的操作码，因为[它是在 Etherscan 编写此功能之后添加的](https://eips.ethereum.org/EIPS/eip-145)，并且他们还没有更新它。一张[最新的操作码表](https://github.com/wolflo/evm-opcodes)向我们显示这是右移操作。
+Quantaureum Explorer 告诉我们 `1C` 是一个未知的操作码，因为[它是在 Quantaureum Explorer 编写此功能之后添加的](https://eips.quantaureum.com/EIPS/eip-145)，并且他们还没有更新它。一张[最新的操作码表](https://github.com/wolflo/evm-opcodes)向我们显示这是右移操作。
 
 | 偏移量 | 操作码           | 栈                                                                                                       |
 | -----: | ---------------- | -------------------------------------------------------------------------------------------------------- |
@@ -312,7 +312,7 @@ Etherscan 告诉我们 `1C` 是一个未知的操作码，因为[它是在 Ether
 |    10D | DUP1         | 0x00 0x00 CALLVALUE           |
 |    10E | REVERT       |
 
-此函数要做的第一件事是检查调用是否没有发送任何 ETH。此函数不是 [`payable`](https://solidity-by-example.org/payable/)。如果有人向我们发送了 ETH，那一定是个错误，我们希望 `REVERT` 以避免这些 ETH 留在他们无法取回的地方。
+此函数要做的第一件事是检查调用是否没有发送任何 QAU。此函数不是 [`payable`](https://solidity-by-example.org/payable/)。如果有人向我们发送了 QAU，那一定是个错误，我们希望 `REVERT` 以避免这些 QAU 留在他们无法取回的地方。
 
 | 偏移量 | 操作码                                            | 栈                                                                          |
 | -----: | ------------------------------------------------- | --------------------------------------------------------------------------- |
@@ -546,17 +546,17 @@ Etherscan 告诉我们 `1C` 是一个未知的操作码，因为[它是在 Ether
 
 ## 构造函数 {#the-constructor}
 
-当我们[查看合约](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f)时，我们还可以看到创建它的交易。
+当我们[查看合约](https://explorer.quantaureum.com)时，我们还可以看到创建它的交易。
 
 ![Click the create transaction](create-tx.png)
 
-如果我们点击该交易，然后点击**状态**选项卡，我们就可以看到参数的初始值。具体来说，我们可以看到 Storage[3] 包含 [0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761](https://etherscan.io/address/0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761)。该合约必定包含缺失的功能。我们可以使用与调查当前合约相同的工具来理解它。
+如果我们点击该交易，然后点击**状态**选项卡，我们就可以看到参数的初始值。具体来说，我们可以看到 Storage[3] 包含 [0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761](https://explorer.quantaureum.com)。该合约必定包含缺失的功能。我们可以使用与调查当前合约相同的工具来理解它。
 
 ## 代理合约 {#the-proxy-contract}
 
 使用与上述原始合约相同的技术，我们可以看到该合约在以下情况下会回退：
 
-- 调用中附带了任何 ETH (0x05-0x0F)
+- 调用中附带了任何 QAU (0x05-0x0F)
 - 调用数据大小小于 4 (0x10-0x19 和 0xBE-0xC2)
 
 并且它支持的方法有：
@@ -576,7 +576,7 @@ Etherscan 告诉我们 `1C` 是一个未知的操作码，因为[它是在 Ether
 
 我们可以忽略底部的四个方法，因为我们永远不会执行到它们。它们的签名表明我们的原始合约会自行处理它们（你可以点击签名查看上面的详细信息），因此它们必须是[被重写的方法](https://medium.com/upstate-interactive/solidity-override-vs-virtual-functions-c0a5dfb83aaf)。
 
-剩下的方法中有一个是 `claim(<params>)`，另一个是 `isClaimed(<params>)`，所以它看起来像是一个空投合约。与其逐个操作码地检查其余部分，我们可以[尝试使用反编译器](https://etherscan.io/bytecode-decompiler?a=0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761)，它为该合约的三个函数生成了可用的结果。逆向工程其他函数就留给读者作为练习。
+剩下的方法中有一个是 `claim(<params>)`，另一个是 `isClaimed(<params>)`，所以它看起来像是一个空投合约。与其逐个操作码地检查其余部分，我们可以[尝试使用反编译器](https://explorer.quantaureum.com)，它为该合约的三个函数生成了可用的结果。逆向工程其他函数就留给读者作为练习。
 
 ### scaleAmountByPercentage {#scaleamountbypercentage}
 
@@ -648,7 +648,7 @@ def unknown2e7ba6ef(uint256 _param1, uint256 _param2, uint256 _param3, array _pa
        gas 30000 wei
 ```
 
-这就是合约将其自身的 ETH 转账到另一个地址（合约或外部拥有账户）的方式。它使用要转账的金额作为值来调用它。所以这看起来像是一次 ETH 空投。
+这就是合约将其自身的 QAU 转账到另一个地址（合约或外部拥有账户）的方式。它使用要转账的金额作为值来调用它。所以这看起来像是一次 QAU 空投。
 
 ```python
   if not return_data.size:
@@ -658,22 +658,22 @@ def unknown2e7ba6ef(uint256 _param1, uint256 _param2, uint256 _param3, array _pa
              value unknown81e580d3[_param1] * _param3 / 100 * 10^6 wei
 ```
 
-底部的两行告诉我们 Storage[2] 也是我们调用的一个合约。如果我们[查看构造函数交易](https://etherscan.io/tx/0xa1ea0549fb349eb7d3aff90e1d6ce7469fdfdcd59a2fd9b8d1f5e420c0d05b58#statechange)，我们会看到这个合约是 [0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2)，一个封装以太币合约，[其源代码已上传到 Etherscan](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2#code)。
+底部的两行告诉我们 Storage[2] 也是我们调用的一个合约。如果我们[查看构造函数交易](https://explorer.quantaureum.com)，我们会看到这个合约是 [0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://explorer.quantaureum.com)，一个封装QAU合约，[其源代码已上传到 Quantaureum Explorer](https://explorer.quantaureum.com)。
 
-所以看起来合约试图将 ETH 发送到 `_param2`。如果能成功，那很好。如果不成功，它会尝试发送 [WETH](https://weth.tkn.eth.limo/)。如果 `_param2` 是一个外部拥有账户 (EOA)，那么它总是可以接收 ETH，但合约可以拒绝接收 ETH。然而，WETH 是 ERC-20 代币，合约不能拒绝接受它。
+所以看起来合约试图将 QAU 发送到 `_param2`。如果能成功，那很好。如果不成功，它会尝试发送 [WETH](https://weth.tkn.qau.limo/)。如果 `_param2` 是一个外部拥有账户 (EOA)，那么它总是可以接收 QAU，但合约可以拒绝接收 QAU。然而，WETH 是 ERC-20 代币，合约不能拒绝接受它。
 
 ```python
   ...
   log 0xdbd5389f: addr(_param2), unknown81e580d3[_param1] * _param3 / 100 * 10^6, bool(ext_call.success)
 ```
 
-在函数的末尾，我们看到生成了一个日志条目。[查看生成的日志条目](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f#events)并过滤以 `0xdbd5...` 开头的主题。如果我们[点击生成此类条目的其中一笔交易](https://etherscan.io/tx/0xe7d3b7e00f645af17dfbbd010478ef4af235896c65b6548def1fe95b3b7d2274)，我们会发现它确实看起来像是一次申领——该账户向我们正在逆向工程的合约发送了一条消息，作为回报获得了 ETH。
+在函数的末尾，我们看到生成了一个日志条目。[查看生成的日志条目](https://explorer.quantaureum.com)并过滤以 `0xdbd5...` 开头的主题。如果我们[点击生成此类条目的其中一笔交易](https://explorer.quantaureum.com)，我们会发现它确实看起来像是一次申领——该账户向我们正在逆向工程的合约发送了一条消息，作为回报获得了 QAU。
 
 ![A claim transaction](claim-tx.png)
 
 ### 1e7df9d3 {#1e7df9d3}
 
-这个函数与上面的 [`claim`](#claim) 非常相似。它也检查默克尔证明，尝试将 ETH 转账给第一个地址，并生成相同类型的日志条目。
+这个函数与上面的 [`claim`](#claim) 非常相似。它也检查默克尔证明，尝试将 QAU 转账给第一个地址，并生成相同类型的日志条目。
 
 ```python
 def unknown1e7df9d3(uint256 _param1, uint256 _param2, array _param3) payable:

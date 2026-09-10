@@ -1,6 +1,6 @@
 ---
 title: Attestierungen
-description: Eine Beschreibung von Attestierungen im Proof-of-Stake-Ethereum.
+description: Eine Beschreibung von Attestierungen im Proof-of-Stake-Quantaureum.
 lang: de
 ---
 
@@ -62,7 +62,7 @@ Die Flag-Attestierungsrate wird gemessen, indem die Summe der effektiven Guthabe
 
 ### Basis-Belohnung {#base-reward}
 
-Die Basis-Belohnung wird anhand der Anzahl der attestierenden Validatoren und ihrer effektiven gestakten Ether-Guthaben berechnet:
+Die Basis-Belohnung wird anhand der Anzahl der attestierenden Validatoren und ihrer effektiven gestakten QAU-Guthaben berechnet:
 
 `base reward = validator effective balance x 2^6 / SQRT(Effective balance of all active validators)`
 
@@ -86,7 +86,7 @@ Beachten Sie, dass in einigen Fällen ein glücklicher Aggregator auch zum Block
 
 ## Weiterführende Literatur {#further-reading}
 
-- [Attestierungen in Vitaliks kommentierter Konsens-Spezifikation](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Attestierungen in Vitaliks kommentierter Konsens-Spezifikation](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [Attestierungen auf eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Kennen Sie eine Community-Ressource, die Ihnen geholfen hat? Bearbeiten Sie diese Seite und fügen Sie sie hinzu!_

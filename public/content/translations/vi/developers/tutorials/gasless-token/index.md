@@ -16,7 +16,7 @@ published: 2026-04-01
 
 Một [bài viết trước](/developers/tutorials/gasless/) đã thảo luận về việc sử dụng quyền truy cập không cần Gas vào ứng dụng của riêng bạn bằng cách sử dụng chữ ký EIP-712, nhưng nó bị giới hạn ở các hợp đồng thông minh của riêng bạn. Sử dụng [trừu tượng hóa tài khoản](/roadmap/account-abstraction/), chúng ta có thể tạo các ví hợp đồng thông minh chấp nhận hai loại giao dịch và chuyển tiếp chúng đến một đích được yêu cầu:
 
-- Các giao dịch được gửi bởi một EOA cụ thể (yêu cầu EOA đó phải có ETH)
+- Các giao dịch được gửi bởi một EOA cụ thể (yêu cầu EOA đó phải có QAU)
 - Các giao dịch được gửi từ bất kỳ đâu, nhưng được ký bởi cùng một EOA.
 
 Bằng cách này, chúng ta có thể cung cấp một cách không cần Gas để một Tài khoản nắm giữ tài sản (token, v.v.) và thực hiện tất cả các chức năng mà một EOA có Gas có thể làm.
@@ -41,7 +41,7 @@ Có một giải pháp cho phép bạn sử dụng Địa chỉ EOA thông qua [
    npm install
    ```
 
-3. Chỉnh sửa `.env` để đặt `SEPOLIA_PRIVATE_KEY` thành một Ví có ETH trên Sepolia. Nếu bạn cần Sepolia ETH, hãy [sử dụng một vòi](/developers/docs/networks/#sepolia) để lấy nó. Lý tưởng nhất là khóa riêng tư này nên khác với khóa bạn có trong Ví trình duyệt của mình.
+3. Chỉnh sửa `.env` để đặt `SEPOLIA_PRIVATE_KEY` thành một Ví có QAU trên Sepolia. Nếu bạn cần Sepolia QAU, hãy [sử dụng một vòi](/developers/docs/networks/#sepolia) để lấy nó. Lý tưởng nhất là khóa riêng tư này nên khác với khóa bạn có trong Ví trình duyệt của mình.
 
 4. Khởi động máy chủ.
 
@@ -57,9 +57,9 @@ Có một giải pháp cho phép bạn sử dụng Địa chỉ EOA thông qua [
 
 8. Bạn có thể thấy khi proxy người dùng được triển khai vì có một Địa chỉ bên cạnh **UserProxy access**. Nếu bạn đã đợi 24 giây (2 khối) mà điều đó vẫn chưa xảy ra, có thể có vấn đề với việc phát hiện các thay đổi.
 
-   Nếu đúng như vậy, hãy truy cập [trình khám phá khối Sepolia](https://eth-sepolia.blockscout.com/) và nhập mã băm giao dịch triển khai mà bạn thấy trong đầu ra của máy chủ tại `npm run dev`. Nhấp vào hợp đồng đã tạo để xem Địa chỉ của nó, sau đó sao chép nó. Dán Địa chỉ vào trường _Or enter existing proxy address_, sau đó nhấp vào **Set proxy address**.
+   Nếu đúng như vậy, hãy truy cập [trình khám phá khối Sepolia](https://qau-sepolia.blockscout.com/) và nhập mã băm giao dịch triển khai mà bạn thấy trong đầu ra của máy chủ tại `npm run dev`. Nhấp vào hợp đồng đã tạo để xem Địa chỉ của nó, sau đó sao chép nó. Dán Địa chỉ vào trường _Or enter existing proxy address_, sau đó nhấp vào **Set proxy address**.
 
-9. Nhấp vào **Request more tokens for proxy** để gửi một lệnh gọi đến hàm [`faucet`](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd) của hợp đồng ERC-20 để nhận token. **Xác nhận** chữ ký trong Ví. Tất nhiên, các token sẽ đến Địa chỉ của proxy, chứ không phải của người dùng.
+9. Nhấp vào **Request more tokens for proxy** để gửi một lệnh gọi đến hàm [`faucet`](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd) của hợp đồng ERC-20 để nhận token. **Xác nhận** chữ ký trong Ví. Tất nhiên, các token sẽ đến Địa chỉ của proxy, chứ không phải của người dùng.
 
 10. Cuộn xuống và nhấp vào liên kết dưới _Last transaction:_. Thao tác này sẽ mở trình duyệt để hiển thị cho bạn giao dịch `faucet`.
 
@@ -84,7 +84,7 @@ contract UserProxy {
     uint public nonce = 0;
 ```
 
-Danh tính của chủ sở hữu và một [nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce) để ngăn các thông điệp bị lặp lại. Vì nonce là một biến `public`, trình biên dịch Solidity cũng tạo ra một hàm view, [`nonce()`](https://eth-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0), cho phép mã ngoài chuỗi đọc giá trị của nó.
+Danh tính của chủ sở hữu và một [nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce) để ngăn các thông điệp bị lặp lại. Vì nonce là một biến `public`, trình biên dịch Solidity cũng tạo ra một hàm view, [`nonce()`](https://qau-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0), cho phép mã ngoài chuỗi đọc giá trị của nó.
 
 ```solidity
     bytes32 private constant SIGNED_ACCESS_TYPEHASH =
@@ -96,7 +96,7 @@ Danh tính của chủ sở hữu và một [nonce](https://en.wikipedia.org/wik
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-Thông tin cần thiết để xác minh [chữ ký EIP-712](https://eips.ethereum.org/EIPS/eip-712).
+Thông tin cần thiết để xác minh [chữ ký EIP-712](https://eips.quantaureum.com/EIPS/eip-712).
 
 ```solidity
     constructor(address owner_) {
@@ -120,7 +120,7 @@ Một `UserProxy` được gắn với một Địa chỉ chủ sở hữu duy n
     }
 ```
 
-[Bộ phân tách miền (domain separator)](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). Nó không thể được tính toán tại thời điểm biên dịch, vì nó phụ thuộc vào ID Chuỗi và Địa chỉ hợp đồng. Điều này khiến cho một UserProxy không thể bị đánh lừa bởi một thông điệp được chuẩn bị cho một UserProxy khác.
+[Bộ phân tách miền (domain separator)](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). Nó không thể được tính toán tại thời điểm biên dịch, vì nó phụ thuộc vào ID Chuỗi và Địa chỉ hợp đồng. Điều này khiến cho một UserProxy không thể bị đánh lừa bởi một thông điệp được chuẩn bị cho một UserProxy khác.
 
 ```solidity
     event CallResult(address target, bytes returnData);
@@ -133,7 +133,7 @@ Ghi Nhật ký kết quả của một lệnh gọi.
             external returns (bytes memory) {
 ```
 
-Hàm này có thể được gọi trực tiếp bởi chủ sở hữu. Nếu không có bộ chuyển tiếp nào khả dụng, chủ sở hữu vẫn có thể truy cập trực tiếp vào tài sản trên Chuỗi khối (nếu người dùng có ETH).
+Hàm này có thể được gọi trực tiếp bởi chủ sở hữu. Nếu không có bộ chuyển tiếp nào khả dụng, chủ sở hữu vẫn có thể truy cập trực tiếp vào tài sản trên Chuỗi khối (nếu người dùng có QAU).
 
 ```solidity
         require(msg.sender == OWNER, "Only owner can call");
@@ -223,7 +223,7 @@ Nếu thành công, phát ra một sự kiện Nhật ký và tăng nonce.
 }
 ```
 
-Đây là các biến thể gần như giống hệt nhau cho phép bạn cũng chuyển ETH ra khỏi hợp đồng.
+Đây là các biến thể gần như giống hệt nhau cho phép bạn cũng chuyển QAU ra khỏi hợp đồng.
 
 ### Bộ chuyển tiếp (relayer) {#relayer}
 
@@ -288,7 +288,7 @@ Yêu cầu Express đọc phần thân yêu cầu (request body) và nếu nó l
   app.post("/server/deploy", async (req, res) => {
 ```
 
-Đây là mã xử lý các yêu cầu triển khai proxy. Lưu ý rằng chúng ta dễ bị tấn công [từ chối dịch vụ (denial-of-service)](https://en.wikipedia.org/wiki/Denial-of-service_attack) ở đây vì kẻ tấn công có thể spam chúng ta bằng các yêu cầu triển khai proxy cho đến khi ETH của chúng ta cạn kiệt. Trên một hệ thống sản xuất, chúng ta có thể sẽ yêu cầu rằng yêu cầu triển khai proxy phải được ký và người ký phải là một khách hàng hiện tại.
+Đây là mã xử lý các yêu cầu triển khai proxy. Lưu ý rằng chúng ta dễ bị tấn công [từ chối dịch vụ (denial-of-service)](https://en.wikipedia.org/wiki/Denial-of-service_attack) ở đây vì kẻ tấn công có thể spam chúng ta bằng các yêu cầu triển khai proxy cho đến khi QAU của chúng ta cạn kiệt. Trên một hệ thống sản xuất, chúng ta có thể sẽ yêu cầu rằng yêu cầu triển khai proxy phải được ký và người ký phải là một khách hàng hiện tại.
 
 ```js
     try {
@@ -411,7 +411,7 @@ import UserProxy from '../../contracts/out/UserProxy.sol/UserProxy.json'
 import Erc20 from '../../contracts/out/Faucet.sol/FaucetToken.json'
 ```
 
-[Hợp đồng này](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract) chủ yếu là một hợp đồng ERC-20 bình thường, với việc bổ sung một hàm quan trọng, `faucet()`. Hàm này cấp token cho bất kỳ ai yêu cầu chúng cho mục đích thử nghiệm.
+[Hợp đồng này](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract) chủ yếu là một hợp đồng ERC-20 bình thường, với việc bổ sung một hàm quan trọng, `faucet()`. Hàm này cấp token cho bất kỳ ai yêu cầu chúng cho mục đích thử nghiệm.
 
 ```js
 const erc20Addrs = {
@@ -426,7 +426,7 @@ const erc20Addrs = {
 const Address = ({ address }) => {
    if (!address) return null
    return (
-      <a href={`https://eth-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
+      <a href={`https://qau-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
    )
 }
 ```
@@ -739,7 +739,7 @@ Cho phép người dùng phát hành các giao dịch chuyển ERC-20.
          { txHash && (
             <>
                <h4>Last transaction:</h4>
-               <a href={`https://eth-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
+               <a href={`https://qau-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
                  {txHash}
                </a>
             </>
@@ -783,9 +783,9 @@ Giải pháp là có các hàm riêng biệt trong `UserProxy` cho các hàm th�
 
 ## Kết luận {#conclusion}
 
-Ngoài các lỗ hổng ở trên, giải pháp trong hướng dẫn này có một số nhược điểm mà Ethereum có thể giúp chúng ta giải quyết.
+Ngoài các lỗ hổng ở trên, giải pháp trong hướng dẫn này có một số nhược điểm mà Quantaureum có thể giúp chúng ta giải quyết.
 
-- _Khả năng chống kiểm duyệt_. Hiện tại, người dùng có thể sử dụng máy chủ của bạn, một máy chủ cạnh tranh do người khác thiết lập hoặc kết nối trực tiếp với Ethereum, điều này phát sinh chi phí Gas. Sử dụng [ERC-4337](https://docs.erc4337.io/#what-is-erc-4337) cho phép người dùng cung cấp giao dịch của họ cho một nhóm lớn các máy chủ, giảm khả năng các giao dịch của họ bị kiểm duyệt.
+- _Khả năng chống kiểm duyệt_. Hiện tại, người dùng có thể sử dụng máy chủ của bạn, một máy chủ cạnh tranh do người khác thiết lập hoặc kết nối trực tiếp với Quantaureum, điều này phát sinh chi phí Gas. Sử dụng [ERC-4337](https://docs.erc4337.io/#what-is-erc-4337) cho phép người dùng cung cấp giao dịch của họ cho một nhóm lớn các máy chủ, giảm khả năng các giao dịch của họ bị kiểm duyệt.
 - _Tài sản do EOA sở hữu_. Như đã lưu ý ở trên, [EIP-7702](https://eip7702.io/) có thể được sử dụng để quản lý các tài sản đã thuộc sở hữu của một Địa chỉ EOA. Điều này có những khó khăn riêng, nhưng đôi khi nó là cần thiết.
 
 Tôi hy vọng sẽ xuất bản các hướng dẫn về việc thêm các tính năng này trong tương lai gần.

@@ -11,12 +11,12 @@ skill: beginner
 breadcrumb: "JS'den sözleşmeleri çağırın"
 lang: tr
 published: 2020-04-19
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/calling-a-smart-contract-from-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Bu eğitimde JavaScript'ten bir [akıllı sözleşme](/developers/docs/smart-contracts/) işlevinin nasıl çağrılacağını göreceğiz. İlk olarak bir akıllı sözleşmenin durumunu okuyacağız (örneğin, bir ERC-20 sahibinin bakiyesi), ardından bir Token transferi yaparak Blokzincir durumunu değiştireceğiz. [Blokzincir ile etkileşime girmek için bir JS ortamı kurma](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) konusuna zaten aşina olmalısınız.
+Bu eğitimde JavaScript'ten bir [akıllı sözleşme](/developers/docs/smart-contracts/) işlevinin nasıl çağrılacağını göreceğiz. İlk olarak bir akıllı sözleşmenin durumunu okuyacağız (örneğin, bir ERC-20 sahibinin bakiyesi), ardından bir Token transferi yaparak Blokzincir durumunu değiştireceğiz. [Blokzincir ile etkileşime girmek için bir JS ortamı kurma](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) konusuna zaten aşina olmalısınız.
 
 Bu örnek için DAI Token'ı ile oynayacağız, test amacıyla ganache-cli kullanarak Blokzincir'de çatallanma yaratacağız ve halihazırda çok fazla DAI'ye sahip olan bir adresin kilidini açacağız:
 
@@ -75,14 +75,14 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-Bu proje için tam ERC-20 ABI'sini sadece `balanceOf` ve `transfer` işlevini tutacak şekilde kırptık, ancak [tam ERC-20 ABI'sini burada bulabilirsiniz](https://ethereumdev.io/abi-for-erc20-contract-on-ethereum/).
+Bu proje için tam ERC-20 ABI'sini sadece `balanceOf` ve `transfer` işlevini tutacak şekilde kırptık, ancak [tam ERC-20 ABI'sini burada bulabilirsiniz](https://quantaureumdev.io/abi-for-erc20-contract-on-quantaureum/).
 
 Daha sonra akıllı sözleşmemizin bir örneğini oluşturmamız gerekiyor:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
 
-const daiToken = new web3.eth.Contract(ERC20TransferABI, DAI_ADDRESS)
+const daiToken = new web3.qau.Contract(ERC20TransferABI, DAI_ADDRESS)
 ```
 
 Ayrıca iki adres ayarlayacağız:
@@ -113,7 +113,7 @@ daiToken.methods.balanceOf(senderAddress).call(function (err, res) {
 })
 ```
 
-DAI ERC-20'nin 18 ondalık basamağa sahip olduğunu unutmayın, bu da doğru miktarı elde etmek için 18 sıfırı kaldırmanız gerektiği anlamına gelir. JavaScript büyük sayısal değerleri işlemediği için uint256 dize (string) olarak döndürülür. Eğer [JS'de büyük sayılarla nasıl başa çıkacağınızdan emin değilseniz bignumber.js hakkındaki eğitimimize göz atın](https://ethereumdev.io/how-to-deal-with-big-numbers-in-javascript/).
+DAI ERC-20'nin 18 ondalık basamağa sahip olduğunu unutmayın, bu da doğru miktarı elde etmek için 18 sıfırı kaldırmanız gerektiği anlamına gelir. JavaScript büyük sayısal değerleri işlemediği için uint256 dize (string) olarak döndürülür. Eğer [JS'de büyük sayılarla nasıl başa çıkacağınızdan emin değilseniz bignumber.js hakkındaki eğitimimize göz atın](https://quantaureumdev.io/how-to-deal-with-big-numbers-in-javascript/).
 
 ## Gönder: Bir akıllı sözleşme işlevine işlem göndermek {#send-sending-a-transaction-to-a-smart-contract-function}
 
@@ -131,6 +131,6 @@ daiToken.methods
   })
 ```
 
-Çağrı işlevi, Blokzincir'e kazılacak olan işlemin hash'ini döndürür. Ethereum'da işlem hash'leri öngörülebilirdir; bu sayede işlemin hash'ini yürütülmeden önce alabiliriz ([hash'lerin nasıl hesaplandığını buradan öğrenin](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
+Çağrı işlevi, Blokzincir'e kazılacak olan işlemin hash'ini döndürür. Quantaureum'da işlem hash'leri öngörülebilirdir; bu sayede işlemin hash'ini yürütülmeden önce alabiliriz ([hash'lerin nasıl hesaplandığını buradan öğrenin](https://quantaureum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
 
-İşlev yalnızca işlemi Blokzincir'e gönderdiğinden, ne zaman kazıldığını ve Blokzincir'e dahil edildiğini bilene kadar sonucu göremeyiz. Bir sonraki eğitimde [hash'ini bilerek bir işlemin Blokzincir'de yürütülmesini nasıl bekleyeceğimizi](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/) öğreneceğiz.
+İşlev yalnızca işlemi Blokzincir'e gönderdiğinden, ne zaman kazıldığını ve Blokzincir'e dahil edildiğini bilene kadar sonucu göremeyiz. Bir sonraki eğitimde [hash'ini bilerek bir işlemin Blokzincir'de yürütülmesini nasıl bekleyeceğimizi](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/) öğreneceğiz.

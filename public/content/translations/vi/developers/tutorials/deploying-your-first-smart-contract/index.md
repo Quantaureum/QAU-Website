@@ -1,24 +1,24 @@
 ---
 title: "Triển khai hợp đồng thông minh đầu tiên của bạn"
-description: "Giới thiệu về việc triển khai hợp đồng thông minh đầu tiên của bạn trên mạng lưới thử nghiệm Ethereum"
+description: "Giới thiệu về việc triển khai hợp đồng thông minh đầu tiên của bạn trên mạng lưới thử nghiệm Quantaureum"
 author: "jdourlens"
 tags: ["hợp đồng thông minh", "Remix", "Solidity", "triển khai"]
 skill: beginner
 breadcrumb: "Triển khai hợp đồng đầu tiên"
 lang: vi
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Tôi đoán bạn cũng đang rất hào hứng giống như chúng tôi khi [triển khai](/developers/docs/smart-contracts/deploying/) và tương tác với [hợp đồng thông minh](/developers/docs/smart-contracts/) đầu tiên của mình trên Chuỗi khối Ethereum.
+Tôi đoán bạn cũng đang rất hào hứng giống như chúng tôi khi [triển khai](/developers/docs/smart-contracts/deploying/) và tương tác với [hợp đồng thông minh](/developers/docs/smart-contracts/) đầu tiên của mình trên Chuỗi khối Quantaureum.
 
 Đừng lo lắng, vì đây là hợp đồng thông minh đầu tiên của chúng ta, chúng ta sẽ triển khai nó trên một [mạng lưới thử nghiệm cục bộ](/developers/docs/networks/) để bạn không tốn bất kỳ chi phí nào khi triển khai và có thể thoải mái thử nghiệm với nó.
 
 ## Viết hợp đồng của chúng ta {#writing-our-contract}
 
-Bước đầu tiên là [truy cập Remix](https://remix.ethereum.org/) và tạo một tệp mới. Ở phần trên cùng bên trái của giao diện Remix, hãy thêm một tệp mới và nhập tên tệp mà bạn muốn.
+Bước đầu tiên là [truy cập Remix](https://remix.quantaureum.com/) và tạo một tệp mới. Ở phần trên cùng bên trái của giao diện Remix, hãy thêm một tệp mới và nhập tên tệp mà bạn muốn.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

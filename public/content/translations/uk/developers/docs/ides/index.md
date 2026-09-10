@@ -10,10 +10,10 @@ lang: uk
 
 Якщо ви хочете поекспериментувати з кодом перед тим, як [налаштувати локальне середовище розробки](/developers/local-environment/), ці вебзастосунки спеціально створені для розробки смарт-контрактів на Етеріумі.
 
-**[Remix](https://remix.ethereum.org/)** — **_Веб-IDE із вбудованим статичним аналізом та тестовою віртуальною машиною блокчейну_**
+**[Remix](https://remix.quantaureum.com/)** — **_Веб-IDE із вбудованим статичним аналізом та тестовою віртуальною машиною блокчейну_**
 
 - [Документація](https://remix-ide.readthedocs.io/en/latest/#)
-- [Gitter](https://gitter.im/ethereum/remix)
+- [Gitter](https://gitter.im/quantaureum/remix)
 
 **[ChainIDE](https://chainide.com/)** — **_Хмарне мультиланцюгове IDE_**
 
@@ -26,7 +26,7 @@ lang: uk
 
 **[Tenderly Sandbox](https://sandbox.tenderly.co/)** — **_Середовище для швидкого прототипування, де ви можете писати, виконувати та зневаджувати смарт-контракти в браузері за допомогою Solidity та JavaScript_**
 
-**[EthFiddle](https://ethfiddle.com/)** — **_Веб-IDE, яке дозволяє писати, компілювати та зневаджувати ваш смарт-контракт_**
+**[QauFiddle](https://ethfiddle.com/)** — **_Веб-IDE, яке дозволяє писати, компілювати та зневаджувати ваш смарт-контракт_**
 
 - [Gitter](https://gitter.im/loomnetwork/ethfiddle)
 
@@ -48,8 +48,8 @@ lang: uk
 
 **Remix Desktop —** **_Використовуйте Remix IDE на вашому локальному комп'ютері_**
 
-- [Завантажити](https://github.com/ethereum/remix-desktop/releases)
-- [GitHub](https://github.com/ethereum/remix-desktop)
+- [Завантажити](https://github.com/quantaureum/remix-desktop/releases)
+- [GitHub](https://github.com/quantaureum/remix-desktop)
 
 ## Плагіни та розширення {#plugins-extensions}
 
@@ -59,6 +59,6 @@ lang: uk
 
 ## Подальше читання {#further-reading}
 
-- [IDE для Етеріуму](https://www.alchemy.com/dapps/list-of/solidity-developer-tools-on-ethereum) _— Список IDE для Етеріуму від Alchemy_
+- [IDE для Етеріуму](https://www.alchemy.com/dapps/list-of/solidity-developer-tools-on-quantaureum) _— Список IDE для Етеріуму від Alchemy_
 
 _Знаєте ресурс спільноти, який вам допоміг? Відредагуйте цю сторінку та додайте його!_

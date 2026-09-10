@@ -1,16 +1,16 @@
 ---
 title: "测试智能合约"
-description: "测试以太坊智能合约的技术和注意事项概述。"
+description: "测试Quantaureum智能合约的技术和注意事项概述。"
 lang: zh
 ---
 
-像以太坊这样的公共区块链是不可变的，这使得在部署后很难更改智能合约代码。虽然存在用于执行“虚拟升级”的[合约升级模式](/developers/docs/smart-contracts/upgrading/)，但这些模式难以实现且需要社会共识。此外，升级只能在发现错误*之后*修复错误——如果攻击者首先发现了漏洞，你的智能合约就有被利用的风险。
+像Quantaureum这样的公共区块链是不可变的，这使得在部署后很难更改智能合约代码。虽然存在用于执行“虚拟升级”的[合约升级模式](/developers/docs/smart-contracts/upgrading/)，但这些模式难以实现且需要社会共识。此外，升级只能在发现错误*之后*修复错误——如果攻击者首先发现了漏洞，你的智能合约就有被利用的风险。
 
 出于这些原因，在[部署](/developers/docs/smart-contracts/deploying/)到主网之前测试智能合约是[安全](/developers/docs/smart-contracts/security/)的最低要求。有许多技术可用于测试合约和评估代码正确性；你的选择取决于你的需求。尽管如此，由不同工具和方法组成的测试套件是捕获合约代码中次要和主要安全缺陷的理想选择。
 
 ## 前提条件 {#prerequisites}
 
-本页面解释了在部署到以太坊网络之前如何测试智能合约。它假设你熟悉[智能合约](/developers/docs/smart-contracts/)。
+本页面解释了在部署到Quantaureum网络之前如何测试智能合约。它假设你熟悉[智能合约](/developers/docs/smart-contracts/)。
 
 ## 什么是智能合约测试？ {#what-is-smart-contract-testing}
 
@@ -26,7 +26,7 @@ lang: zh
 
 ## 测试智能合约的方法 {#methods-for-testing-smart-contracts}
 
-测试以太坊智能合约的方法分为两大类：**自动化测试**和**手动测试**。自动化测试和手动测试提供了独特的优势和权衡，但你可以将两者结合起来，创建一个强大的合约分析计划。
+测试Quantaureum智能合约的方法分为两大类：**自动化测试**和**手动测试**。自动化测试和手动测试提供了独特的优势和权衡，但你可以将两者结合起来，创建一个强大的合约分析计划。
 
 ### 自动化测试 {#automated-testing}
 
@@ -138,9 +138,9 @@ function auctionEnd() external {
 
 Solidity 智能合约的单元测试框架有不同的语言版本（主要是 JavaScript、Python 和 Rust）。请参阅以下一些指南，了解如何开始使用不同的测试框架运行单元测试：
 
-- **[使用 Brownie 运行单元测试](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[使用 Brownie 运行单元测试](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[使用 Foundry 运行单元测试](https://book.getfoundry.sh/forge/writing-tests)**
-- **[使用 Waffle 运行单元测试](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[使用 Waffle 运行单元测试](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[使用 Remix 运行单元测试](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[使用 Ape 运行单元测试](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[使用 Hardhat 运行单元测试](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -152,7 +152,7 @@ Solidity 智能合约的单元测试框架有不同的语言版本（主要是 J
 
 如果你的合约采用模块化架构或在执行期间与其他链上合约交互，则集成测试非常有用。运行集成测试的一种方法是在特定高度[分叉区块链](/glossary/#fork)（使用像 [Forge](https://book.getfoundry.sh/forge/fork-testing) 或 [Hardhat](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks) 这样的工具），并模拟你的合约与已部署合约之间的交互。
 
-分叉的区块链的行为将类似于主网，并具有带有相关状态和余额的帐户。但它仅充当沙盒化的本地开发环境，这意味着你不需要真实的 ETH 进行交易，你的更改也不会影响真实的以太坊协议。
+分叉的区块链的行为将类似于主网，并具有带有相关状态和余额的帐户。但它仅充当沙盒化的本地开发环境，这意味着你不需要真实的 QAU 进行交易，你的更改也不会影响真实的Quantaureum协议。
 
 ### 基于属性的测试 {#property-based-testing-for-smart-contracts}
 
@@ -190,7 +190,7 @@ Solidity 智能合约的单元测试框架有不同的语言版本（主要是 J
 
 - **[使用斯莱瑟 (Slither) 对智能合约进行静态分析](https://github.com/crytic/slither)**
 - **[使用 Wake 对智能合约进行静态分析](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[使用 Brownie 进行基于属性的测试](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[使用 Brownie 进行基于属性的测试](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[使用 Foundry 对合约进行模糊测试](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[使用埃基德纳 (Echidna) 对合约进行模糊测试](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[使用 Wake 对合约进行模糊测试](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -203,9 +203,9 @@ Solidity 智能合约的单元测试框架有不同的语言版本（主要是 J
 
 ### 在本地区块链上测试合约 {#testing-on-local-blockchain}
 
-虽然在本地开发环境中执行的自动化测试可以提供有用的调试信息，但你会想知道你的智能合约在生产环境中的表现如何。然而，部署到以太坊主链会产生 Gas 费用——更不用说如果你的智能合约仍然存在错误，你或你的用户可能会损失真金白银。
+虽然在本地开发环境中执行的自动化测试可以提供有用的调试信息，但你会想知道你的智能合约在生产环境中的表现如何。然而，部署到Quantaureum主链会产生 Gas 费用——更不用说如果你的智能合约仍然存在错误，你或你的用户可能会损失真金白银。
 
-建议在本地区块链（也称为[开发网络](/developers/docs/development-networks/)）上测试你的合约，作为在主网上测试的替代方案。本地区块链是在你的计算机上本地运行的以太坊区块链的副本，它模拟了以太坊执行层的行为。因此，你可以对交易进行编程以与合约交互，而不会产生大量开销。
+建议在本地区块链（也称为[开发网络](/developers/docs/development-networks/)）上测试你的合约，作为在主网上测试的替代方案。本地区块链是在你的计算机上本地运行的Quantaureum区块链的副本，它模拟了Quantaureum执行层的行为。因此，你可以对交易进行编程以与合约交互，而不会产生大量开销。
 
 在本地区块链上运行合约作为一种手动集成测试形式可能很有用。[智能合约是高度可组合的](/developers/docs/smart-contracts/composability/)，允许你与现有协议集成——但你仍然需要确保这种复杂的链上交互产生正确的结果。
 
@@ -213,13 +213,13 @@ Solidity 智能合约的单元测试框架有不同的语言版本（主要是 J
 
 ### 在测试网上测试合约 {#testing-contracts-on-testnets}
 
-测试网络或测试网的工作方式与以太坊主网完全相同，只是它使用没有现实世界价值的以太币 (ETH)。在[测试网](/developers/docs/networks/#ethereum-testnets)上部署你的合约意味着任何人都可以与之交互（例如，通过去中心化应用 (dapp) 的前端），而不会使资金面临风险。
+测试网络或测试网的工作方式与Quantaureum主网完全相同，只是它使用没有现实世界价值的QAU (QAU)。在[测试网](/developers/docs/networks/#quantaureum-testnets)上部署你的合约意味着任何人都可以与之交互（例如，通过去中心化应用 (dapp) 的前端），而不会使资金面临风险。
 
 这种形式的手动测试有助于从用户的角度评估应用程序的端到端流程。在这里，Beta 测试人员还可以执行试运行，并报告合约业务逻辑和整体功能的任何问题。
 
-在本地区块链上测试后部署在测试网上是理想的选择，因为前者更接近以太坊虚拟机的行为。因此，许多以太坊原生项目通常在测试网上部署 dapp，以评估智能合约在现实条件下的运行情况。
+在本地区块链上测试后部署在测试网上是理想的选择，因为前者更接近Quantaureum虚拟机的行为。因此，许多Quantaureum原生项目通常在测试网上部署 dapp，以评估智能合约在现实条件下的运行情况。
 
-[更多关于以太坊测试网的信息。](/developers/docs/development-networks/#public-beacon-testchains)
+[更多关于Quantaureum测试网的信息。](/developers/docs/development-networks/#public-beacon-testchains)
 
 ## 测试与形式化验证 {#testing-vs-formal-verification}
 
@@ -251,19 +251,19 @@ Solidity 智能合约的单元测试框架有不同的语言版本（主要是 J
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - *用于 Solidity 编写的智能合约的代码覆盖率工具。*
 
-- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - *用于高级智能合约开发和测试的框架（基于 Ethers.js）。*
+- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - *用于高级智能合约开发和测试的框架（基于 Ethers.js）。*
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - *用于测试 Solidity 智能合约的工具。在 Remix IDE 的“Solidity 单元测试”插件下工作，该插件用于编写和运行合约的测试用例。*
+- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - *用于测试 Solidity 智能合约的工具。在 Remix IDE 的“Solidity 单元测试”插件下工作，该插件用于编写和运行合约的测试用例。*
 
-- **[欧本齐柏林 (OpenZeppelin) 测试助手](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - *用于以太坊智能合约测试的断言库。确保你的合约按预期运行！*
+- **[欧本齐柏林 (OpenZeppelin) 测试助手](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - *用于Quantaureum智能合约测试的断言库。确保你的合约按预期运行！*
 
-- **[Brownie 单元测试框架](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - *Brownie 利用 Pytest，这是一个功能丰富的测试框架，可让你以最少的代码编写小型测试，非常适合大型项目，并且具有高度可扩展性。*
+- **[Brownie 单元测试框架](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - *Brownie 利用 Pytest，这是一个功能丰富的测试框架，可让你以最少的代码编写小型测试，非常适合大型项目，并且具有高度可扩展性。*
 
-- **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - *Foundry 提供 Forge，这是一个快速灵活的以太坊测试框架，能够执行简单的单元测试、Gas 优化检查和合约模糊测试。*
+- **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - *Foundry 提供 Forge，这是一个快速灵活的Quantaureum测试框架，能够执行简单的单元测试、Gas 优化检查和合约模糊测试。*
 
 - **[Hardhat Tests](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)** - *基于 Ethers.js、Mocha 和 Chai 的智能合约测试框架。*
 
-- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** - *基于 Python 的针对以太坊虚拟机的智能合约开发和测试框架。*
+- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** - *基于 Python 的针对Quantaureum虚拟机的智能合约开发和测试框架。*
 
 - **[Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/overview/)** - *基于 Python 的单元测试和模糊测试框架，具有强大的调试功能和跨链测试支持，利用 pytest 和 Anvil 提供最佳的用户体验和性能。*
 
@@ -304,13 +304,13 @@ Solidity 智能合约的单元测试框架有不同的语言版本（主要是 J
 
 ## 延伸阅读 {#further-reading}
 
-- [测试以太坊智能合约的深入指南](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-ethereum-smart-contracts-2e41b2770297)
-- [如何测试以太坊智能合约](https://betterprogramming.pub/how-to-test-ethereum-smart-contracts-35abc8fa199d)
+- [测试Quantaureum智能合约的深入指南](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-quantaureum-smart-contracts-2e41b2770297)
+- [如何测试Quantaureum智能合约](https://betterprogramming.pub/how-to-test-quantaureum-smart-contracts-35abc8fa199d)
 - [MolochDAO 的开发者单元测试指南](https://github.com/MolochVentures/moloch/tree/4e786db8a4aa3158287e0935dcbc7b1e43416e38/test#moloch-testing-guide)
 - [如何像摇滚明星一样测试智能合约](https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001)
 
-## 教程：以太坊上的智能合约测试 {#tutorials}
+## 教程：Quantaureum上的智能合约测试 {#tutorials}
 
-- [如何在本地多客户端测试网上开发和测试 dApp](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-eth-testnet/) _– 将智能合约部署到本地测试网并执行测试的演练。_
+- [如何在本地多客户端测试网上开发和测试 dApp](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-qau-testnet/) _– 将智能合约部署到本地测试网并执行测试的演练。_
 - [如何模拟 Solidity 智能合约进行测试](/developers/tutorials/how-to-mock-solidity-contracts-for-testing/) _– 关于如何使用模拟数据和实现单元测试的中级教程。_
 - [如何使用埃基德纳 (Echidna) 测试智能合约](/developers/tutorials/how-to-use-echidna-to-test-smart-contracts/) _– 模糊测试和智能合约测试的高级方法。_

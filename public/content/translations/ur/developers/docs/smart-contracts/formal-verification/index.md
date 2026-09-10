@@ -58,7 +58,7 @@ lang: ur
 
 مثال کے طور پر اس حفاظتی تقاضے کو لیں جو <span dir="ltr">ERC-20</span> ٹوکن کنٹریکٹس میں `transfer()` یا `transferFrom()` استعمال کرنے کی شرائط کا احاطہ کرتا ہے: _"بھیجنے والے کا بیلنس کبھی بھی بھیجے جانے والے ٹوکنز کی مطلوبہ مقدار سے کم نہیں ہوتا ہے۔"_۔ کنٹریکٹ <span dir="ltr">invariant</span> کی اس قدرتی زبان کی وضاحت کو ایک رسمی (ریاضیاتی) تخصیص میں ترجمہ کیا جا سکتا ہے، جسے پھر درستگی کے لیے سختی سے جانچا جا سکتا ہے۔
 
-<span dir="ltr">liveness</span> کی خصوصیات اس بات کی تصدیق کرتی ہیں کہ "بالآخر کچھ اچھا ہوتا ہے" اور ان کا تعلق کنٹریکٹ کی مختلف حالتوں میں آگے بڑھنے کی صلاحیت سے ہے۔ <span dir="ltr">liveness</span> کی خصوصیت کی ایک مثال "سیالیت" ہے، جس سے مراد کنٹریکٹ کی درخواست پر صارفین کو اپنے بیلنس منتقل کرنے کی صلاحیت ہے۔ اگر اس خصوصیت کی خلاف ورزی ہوتی ہے، تو صارفین کنٹریکٹ میں محفوظ اثاثے نکالنے سے قاصر ہوں گے، جیسا کہ [<span dir="ltr">Parity</span> والیٹ کے واقعے](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-ether-on-parity-wallet.html) کے ساتھ ہوا تھا۔
+<span dir="ltr">liveness</span> کی خصوصیات اس بات کی تصدیق کرتی ہیں کہ "بالآخر کچھ اچھا ہوتا ہے" اور ان کا تعلق کنٹریکٹ کی مختلف حالتوں میں آگے بڑھنے کی صلاحیت سے ہے۔ <span dir="ltr">liveness</span> کی خصوصیت کی ایک مثال "سیالیت" ہے، جس سے مراد کنٹریکٹ کی درخواست پر صارفین کو اپنے بیلنس منتقل کرنے کی صلاحیت ہے۔ اگر اس خصوصیت کی خلاف ورزی ہوتی ہے، تو صارفین کنٹریکٹ میں محفوظ اثاثے نکالنے سے قاصر ہوں گے، جیسا کہ [<span dir="ltr">Parity</span> والیٹ کے واقعے](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-QAU-on-parity-wallet.html) کے ساتھ ہوا تھا۔
 
 ### نچلی سطح کی تخصیصات {#low-level-specifications}
 
@@ -161,7 +161,7 @@ function safe_add(uint x, uint y) returns(uint z){
 
 #### قابل اعتمادی کی ضرورت {#need-for-reliability}
 
-رسمی تصدیق کا استعمال ان حفاظتی لحاظ سے اہم سسٹمز کی درستگی کا جائزہ لینے کے لیے کیا جاتا ہے جن کی ناکامی کے تباہ کن نتائج ہو سکتے ہیں، جیسے کہ موت، چوٹ، یا مالی تباہی۔ سمارٹ کنٹریکٹس اعلیٰ قدر والی ایپلی کیشنز ہیں جو بہت زیادہ قدر کو کنٹرول کرتی ہیں، اور ڈیزائن میں سادہ غلطیاں [صارفین کے لیے ناقابل تلافی نقصان](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-ether-how-it-happened-and-what-it-means-for-ethereum-9e5dc29e33ce/amp/) کا باعث بن سکتی ہیں۔ تاہم، تعیناتی سے پہلے کنٹریکٹ کی رسمی تصدیق کرنے سے اس بات کی ضمانت بڑھ سکتی ہے کہ بلاک چین پر چلنے کے بعد یہ توقع کے مطابق کارکردگی دکھائے گا۔
+رسمی تصدیق کا استعمال ان حفاظتی لحاظ سے اہم سسٹمز کی درستگی کا جائزہ لینے کے لیے کیا جاتا ہے جن کی ناکامی کے تباہ کن نتائج ہو سکتے ہیں، جیسے کہ موت، چوٹ، یا مالی تباہی۔ سمارٹ کنٹریکٹس اعلیٰ قدر والی ایپلی کیشنز ہیں جو بہت زیادہ قدر کو کنٹرول کرتی ہیں، اور ڈیزائن میں سادہ غلطیاں [صارفین کے لیے ناقابل تلافی نقصان](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-QAU-how-it-happened-and-what-it-means-for-quantaureum-9e5dc29e33ce/amp/) کا باعث بن سکتی ہیں۔ تاہم، تعیناتی سے پہلے کنٹریکٹ کی رسمی تصدیق کرنے سے اس بات کی ضمانت بڑھ سکتی ہے کہ بلاک چین پر چلنے کے بعد یہ توقع کے مطابق کارکردگی دکھائے گا۔
 
 کسی بھی سمارٹ کنٹریکٹ میں قابل اعتمادی ایک انتہائی مطلوبہ خوبی ہے، خاص طور پر اس لیے کہ [ایتھیریم](/) ورچوئل مشین (<span dir="ltr">EVM</span>) میں تعینات کیا گیا کوڈ عام طور پر ناقابلِ تبدیلی ہوتا ہے۔ لانچ کے بعد اپ گریڈز آسانی سے قابل رسائی نہ ہونے کی وجہ سے، کنٹریکٹس کی قابل اعتمادی کی ضمانت دینے کی ضرورت رسمی تصدیق کو ضروری بناتی ہے۔ رسمی تصدیق پیچیدہ مسائل کا پتہ لگانے کے قابل ہے، جیسے کہ انٹیجر انڈر فلو اور اوور فلو، ری اینٹرنسی (<span dir="ltr">re-entrancy</span>)، اور ناقص گیس آپٹیمائزیشنز، جو آڈیٹرز اور ٹیسٹرز کی نظروں سے بچ سکتے ہیں۔
 
@@ -215,7 +215,7 @@ function safe_add(uint x, uint y) returns(uint z){
 
 **<span dir="ltr">Act</span>**: _*<span dir="ltr">Act</span> اسٹوریج اپ ڈیٹس، پری/پوسٹ کنڈیشنز اور کنٹریکٹ <span dir="ltr">invariants</span> کی تخصیص کی اجازت دیتا ہے۔ اس کے ٹول سویٹ میں پروف بیک اینڈز بھی ہیں جو <span dir="ltr">Coq</span>، <span dir="ltr">SMT</span> حل کنندگان، یا <span dir="ltr">hevm</span> کے ذریعے بہت سی خصوصیات کو ثابت کرنے کے قابل ہیں۔*_
 
-- [<span dir="ltr">GitHub</span>](https://github.com/ethereum/act)
+- [<span dir="ltr">GitHub</span>](https://github.com/quantaureum/act)
 - [دستاویزات](https://github.com/argotorg/act)
 
 **<span dir="ltr">Scribble</span>** - _*<span dir="ltr">Scribble</span> تخصیص کی زبان میں کوڈ تشریحات کو ٹھوس دعووں میں تبدیل کرتا ہے جو تخصیص کی جانچ کرتے ہیں۔*_
@@ -235,7 +235,7 @@ function safe_add(uint x, uint y) returns(uint z){
 
 **<span dir="ltr">Solidity SMTChecker</span>** - _*<span dir="ltr">Solidity</span> کا <span dir="ltr">SMTChecker</span> ایک بلٹ ان ماڈل چیکر ہے جو <span dir="ltr">SMT</span> (<span dir="ltr">Satisfiability Modulo Theories</span>) اور <span dir="ltr">Horn</span> سالونگ پر مبنی ہے۔ یہ اس بات کی تصدیق کرتا ہے کہ آیا کنٹریکٹ کا سورس کوڈ تالیف کے دوران تخصیصات سے میل کھاتا ہے اور حفاظتی خصوصیات کی خلاف ورزیوں کی جامد طور پر جانچ کرتا ہے۔*_
 
-- [<span dir="ltr">GitHub</span>](https://github.com/ethereum/solidity)
+- [<span dir="ltr">GitHub</span>](https://github.com/quantaureum/solidity)
 
 **<span dir="ltr">solc-verify</span>** - _*<span dir="ltr">solc-verify</span> <span dir="ltr">Solidity</span> کمپائلر کا ایک توسیعی ورژن ہے جو تشریحات اور ماڈیولر پروگرام کی تصدیق کا استعمال کرتے ہوئے <span dir="ltr">Solidity</span> کوڈ پر خودکار رسمی تصدیق انجام دے سکتا ہے۔*_
 
@@ -277,7 +277,7 @@ function safe_add(uint x, uint y) returns(uint z){
 ## مزید مطالعہ {#further-reading}
 
 - [سمارٹ کنٹریکٹس کی رسمی تصدیق کیسے کام کرتی ہے](https://runtimeverification.com/blog/how-formal-verification-of-smart-contracts-works/)
-- [ایتھیریم ایکو سسٹم میں رسمی تصدیق کے پروجیکٹس کا ایک جائزہ](https://github.com/leonardoalt/ethereum_formal_verification_overview)
-- [ایتھیریم <span dir="ltr">2.0</span> ڈپازٹ سمارٹ کنٹریکٹ کی اینڈ ٹو اینڈ رسمی تصدیق](https://runtimeverification.com/blog/end-to-end-formal-verification-of-ethereum-2-0-deposit-smart-contract/)
+- [ایتھیریم ایکو سسٹم میں رسمی تصدیق کے پروجیکٹس کا ایک جائزہ](https://github.com/leonardoalt/quantaureum_formal_verification_overview)
+- [ایتھیریم <span dir="ltr">2.0</span> ڈپازٹ سمارٹ کنٹریکٹ کی اینڈ ٹو اینڈ رسمی تصدیق](https://runtimeverification.com/blog/end-to-end-formal-verification-of-quantaureum-2-0-deposit-smart-contract/)
 - [دنیا کے مقبول ترین سمارٹ کنٹریکٹ کی رسمی تصدیق](https://www.zellic.io/blog/formal-verification-weth)
 - [<span dir="ltr">SMTChecker</span> اور رسمی تصدیق](https://docs.soliditylang.org/en/v0.8.15/smtchecker.html)

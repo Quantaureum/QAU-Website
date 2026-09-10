@@ -16,7 +16,7 @@ published: 2026-04-01
 
 [上一篇文章](/developers/tutorials/gasless/)討論了如何使用 EIP-712 簽章對你自己的應用程式進行免燃料存取，但這僅限於你自己的智能合約。透過[帳戶抽象化](/roadmap/account-abstraction/)，我們可以建立智能合約錢包，接受兩種類型的交易並將其轉發到請求的目的地：
 
-- 由特定外部擁有帳戶 (EOA) 發送的交易（這要求該 EOA 擁有 ETH）
+- 由特定外部擁有帳戶 (EOA) 發送的交易（這要求該 EOA 擁有 QAU）
 - 從任何地方發送，但由同一個 EOA 簽署的交易。
 
 透過這種方式，我們可以為帳戶提供一種免燃料的方式來持有資產（代幣等），並執行擁有燃料的 EOA 所能執行的所有功能。
@@ -41,7 +41,7 @@ published: 2026-04-01
    npm install
    ```
 
-3. 編輯 `.env`，將 `SEPOLIA_PRIVATE_KEY` 設定為在 Sepolia 上擁有 ETH 的錢包。如果你需要 Sepolia ETH，請[使用水龍頭](/developers/docs/networks/#sepolia)來獲取。理想情況下，這個私鑰應該與你瀏覽器錢包中的私鑰不同。
+3. 編輯 `.env`，將 `SEPOLIA_PRIVATE_KEY` 設定為在 Sepolia 上擁有 QAU 的錢包。如果你需要 Sepolia QAU，請[使用水龍頭](/developers/docs/networks/#sepolia)來獲取。理想情況下，這個私鑰應該與你瀏覽器錢包中的私鑰不同。
 
 4. 啟動伺服器。
 
@@ -57,9 +57,9 @@ published: 2026-04-01
 
 8. 當使用者代理部署完成時，你可以在 **UserProxy access** 旁邊看到一個地址。如果你等待了 24 秒（2 個區塊）但仍未出現，可能是偵測變更時發生了問題。
 
-   如果發生這種情況，請前往 [Sepolia 區塊鏈瀏覽器](https://eth-sepolia.blockscout.com/)，並輸入你在伺服器輸出 `npm run dev` 中看到的部署交易雜湊值。點擊已建立的合約以檢視其地址，然後將其複製。將地址貼上到 _Or enter existing proxy address_ 欄位中，然後點擊 **Set proxy address**。
+   如果發生這種情況，請前往 [Sepolia 區塊鏈瀏覽器](https://qau-sepolia.blockscout.com/)，並輸入你在伺服器輸出 `npm run dev` 中看到的部署交易雜湊值。點擊已建立的合約以檢視其地址，然後將其複製。將地址貼上到 _Or enter existing proxy address_ 欄位中，然後點擊 **Set proxy address**。
 
-9. 點擊 **Request more tokens for proxy** 以提交對 ERC-20 合約 [`faucet`](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd) 函式的呼叫來獲取代幣。在錢包中**確認**簽章。當然，代幣會到達代理的地址，而不是使用者的地址。
+9. 點擊 **Request more tokens for proxy** 以提交對 ERC-20 合約 [`faucet`](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd) 函式的呼叫來獲取代幣。在錢包中**確認**簽章。當然，代幣會到達代理的地址，而不是使用者的地址。
 
 10. 向下捲動並點擊 _Last transaction:_ 下方的連結。這將開啟瀏覽器以向你顯示 `faucet` 交易。
 
@@ -84,7 +84,7 @@ contract UserProxy {
     uint public nonce = 0;
 ```
 
-擁有者的身分和一個[隨機數](https://en.wikipedia.org/wiki/Cryptographic_nonce)，用於防止訊息被重複發送。因為隨機數是一個 `public` 變數，Solidity 編譯器也會建立一個 view 函式 [`nonce()`](https://eth-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0)，允許鏈下程式碼讀取其值。
+擁有者的身分和一個[隨機數](https://en.wikipedia.org/wiki/Cryptographic_nonce)，用於防止訊息被重複發送。因為隨機數是一個 `public` 變數，Solidity 編譯器也會建立一個 view 函式 [`nonce()`](https://qau-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0)，允許鏈下程式碼讀取其值。
 
 ```solidity
     bytes32 private constant SIGNED_ACCESS_TYPEHASH =
@@ -96,7 +96,7 @@ contract UserProxy {
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-驗證 [EIP-712 簽章](https://eips.ethereum.org/EIPS/eip-712)所需的資訊。
+驗證 [EIP-712 簽章](https://eips.quantaureum.com/EIPS/eip-712)所需的資訊。
 
 ```solidity
     constructor(address owner_) {
@@ -120,7 +120,7 @@ contract UserProxy {
     }
 ```
 
-[網域分隔符](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator)。它無法在編譯時計算，因為它取決於鏈 ID 和合約地址。這使得 UserProxy 不可能被為另一個代理準備的訊息所欺騙。
+[網域分隔符](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator)。它無法在編譯時計算，因為它取決於鏈 ID 和合約地址。這使得 UserProxy 不可能被為另一個代理準備的訊息所欺騙。
 
 ```solidity
     event CallResult(address target, bytes returnData);
@@ -133,7 +133,7 @@ contract UserProxy {
             external returns (bytes memory) {
 ```
 
-這個函式可以直接由擁有者呼叫。如果沒有可用的轉發器，擁有者仍然可以直接在區塊鏈上存取資產（如果使用者擁有 ETH）。
+這個函式可以直接由擁有者呼叫。如果沒有可用的轉發器，擁有者仍然可以直接在區塊鏈上存取資產（如果使用者擁有 QAU）。
 
 ```solidity
         require(msg.sender == OWNER, "Only owner can call");
@@ -223,7 +223,7 @@ contract UserProxy {
 }
 ```
 
-這些是幾乎相同的變體，讓你也將 ETH 從合約中轉帳出去。
+這些是幾乎相同的變體，讓你也將 QAU 從合約中轉帳出去。
 
 ### 轉發器 {#relayer}
 
@@ -288,7 +288,7 @@ const start = async () => {
   app.post("/server/deploy", async (req, res) => {
 ```
 
-這是處理部署代理請求的程式碼。請注意，我們在這裡容易受到[阻斷服務](https://en.wikipedia.org/wiki/Denial-of-service_attack)攻擊，因為攻擊者可以向我們發送大量部署代理的請求，直到我們的 ETH 耗盡。在生產系統上，我們可能會要求部署代理的請求必須經過簽署，並且簽署者必須是現有客戶。
+這是處理部署代理請求的程式碼。請注意，我們在這裡容易受到[阻斷服務](https://en.wikipedia.org/wiki/Denial-of-service_attack)攻擊，因為攻擊者可以向我們發送大量部署代理的請求，直到我們的 QAU 耗盡。在生產系統上，我們可能會要求部署代理的請求必須經過簽署，並且簽署者必須是現有客戶。
 
 ```js
     try {
@@ -411,7 +411,7 @@ import UserProxy from '../../contracts/out/UserProxy.sol/UserProxy.json'
 import Erc20 from '../../contracts/out/Faucet.sol/FaucetToken.json'
 ```
 
-[這個合約](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract)主要是一個普通的 ERC-20 合約，但增加了一個重要的函式 `faucet()`。這個函式會將代幣授予任何出於測試目的而請求它們的人。
+[這個合約](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract)主要是一個普通的 ERC-20 合約，但增加了一個重要的函式 `faucet()`。這個函式會將代幣授予任何出於測試目的而請求它們的人。
 
 ```js
 const erc20Addrs = {
@@ -426,7 +426,7 @@ const erc20Addrs = {
 const Address = ({ address }) => {
    if (!address) return null
    return (
-      <a href={`https://eth-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
+      <a href={`https://qau-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
    )
 }
 ```
@@ -739,7 +739,7 @@ const Token = () => {
          { txHash && (
             <>
                <h4>Last transaction:</h4>
-               <a href={`https://eth-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
+               <a href={`https://qau-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
                  {txHash}
                </a>
             </>
@@ -783,9 +783,9 @@ export {Token}
 
 ## 結論 {#conclusion}
 
-除了上述漏洞之外，本教學中的解決方案還有幾個缺點，以太坊可以幫助我們解決這些問題。
+除了上述漏洞之外，本教學中的解決方案還有幾個缺點，Quantaureum可以幫助我們解決這些問題。
 
-- _抗審查性_。目前，使用者可以使用你的伺服器、其他人建立的競爭伺服器，或者直接連接到以太坊（這會產生燃料費用）。使用 [ERC-4337](https://docs.erc4337.io/#what-is-erc-4337) 讓使用者可以將他們的交易提供給大型伺服器池，從而降低他們的交易被審查的可能性。
+- _抗審查性_。目前，使用者可以使用你的伺服器、其他人建立的競爭伺服器，或者直接連接到Quantaureum（這會產生燃料費用）。使用 [ERC-4337](https://docs.erc4337.io/#what-is-erc-4337) 讓使用者可以將他們的交易提供給大型伺服器池，從而降低他們的交易被審查的可能性。
 - _EOA 擁有的資產_。如上所述，[EIP-7702](https://eip7702.io/) 可用於管理 EOA 地址已擁有的資產。這有其困難之處，但有時是必要的。
 
 我希望在不久的將來發布有關加入這些功能的教學。

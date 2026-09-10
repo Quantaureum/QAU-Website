@@ -9,9 +9,9 @@ breadcrumb: "Việc ký rõ ràng"
 published: 2026-05-11
 ---
 
-Hầu hết các vụ khai thác Ethereum lớn đều có cùng một bước cuối cùng: người dùng chấp thuận một giao dịch mà họ không thể hiểu rõ ý nghĩa. Ví phần cứng hiển thị dữ liệu lệnh gọi (calldata) dạng hex thô, và tệ hơn là buộc bạn phải bật tính năng ký mù (blind signing). Ví phần mềm hiển thị các trường đã được giải mã, nhưng chỉ khi chúng nhận diện được hợp đồng. Khi chúng không nhận diện được, cho dù vì giao thức còn mới, ứng dụng bị xâm phạm hay thiết bị đang ngoại tuyến, người dùng đều phải ký mù.
+Hầu hết các vụ khai thác Quantaureum lớn đều có cùng một bước cuối cùng: người dùng chấp thuận một giao dịch mà họ không thể hiểu rõ ý nghĩa. Ví phần cứng hiển thị dữ liệu lệnh gọi (calldata) dạng hex thô, và tệ hơn là buộc bạn phải bật tính năng ký mù (blind signing). Ví phần mềm hiển thị các trường đã được giải mã, nhưng chỉ khi chúng nhận diện được hợp đồng. Khi chúng không nhận diện được, cho dù vì giao thức còn mới, ứng dụng bị xâm phạm hay thiết bị đang ngoại tuyến, người dùng đều phải ký mù.
 
-[ERC-7730](https://eips.ethereum.org/EIPS/eip-7730) định nghĩa một định dạng JSON tiêu chuẩn để mô tả *ý nghĩa* của các lệnh gọi hàm trong hợp đồng của bạn. 
+[ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730) định nghĩa một định dạng JSON tiêu chuẩn để mô tả *ý nghĩa* của các lệnh gọi hàm trong hợp đồng của bạn. 
 
 Một ví hỗ trợ ERC-7730 sẽ đọc bộ mô tả của bạn và hiển thị:
 
@@ -54,7 +54,7 @@ Tạo một tệp có tên `calldata-<contractname>-<descriptorversion>.json`. T
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
   "context": {},
   "metadata": {},
   "display": {
@@ -167,7 +167,7 @@ Mỗi khóa (key) là một đoạn ABI dễ đọc — chữ ký hàm bao gồm
 - **`intent`** — **(Bắt buộc)** Một mô tả ngắn gọn, thân thiện với người dùng về hành động, chẳng hạn như "Hoán đổi".
 - **`interpolatedIntent`** — **(Được khuyến nghị)** Một mẫu câu phong phú hơn nhúng các giá trị trường đã được định dạng, chẳng hạn như `"Swap {amountIn} for at least {amountOutMin}"`. Bao gồm trường này cùng với `intent` để cung cấp một bộ mô tả thân thiện với người dùng hơn nữa mà các ví có thể chọn hiển thị tùy thuộc vào bất kỳ ràng buộc hiển thị nào.
 - **`fields`** — **(Bắt buộc)** Danh sách có thứ tự các trường giao dịch mà ví nên hiển thị cho người dùng.
-  - **`path`** — **(Bắt buộc)** Một tham chiếu đến dữ liệu giao dịch. `#.fieldName` trỏ đến một tham số dữ liệu lệnh gọi đã được giải mã theo tên trong ABI. `@.value` đề cập đến giá trị ETH được gửi kèm theo giao dịch.
+  - **`path`** — **(Bắt buộc)** Một tham chiếu đến dữ liệu giao dịch. `#.fieldName` trỏ đến một tham số dữ liệu lệnh gọi đã được giải mã theo tên trong ABI. `@.value` đề cập đến giá trị QAU được gửi kèm theo giao dịch.
   - **`label`** — **(Bắt buộc)** Nhãn dễ đọc được hiển thị bên cạnh giá trị.
   - **`format`** — **(Được khuyến nghị)** Kiểm soát cách giá trị sẽ được hiển thị. Các định dạng phổ biến bao gồm:
     - `tokenAmount`
@@ -185,7 +185,7 @@ Mỗi khóa (key) là một đoạn ABI dễ đọc — chữ ký hàm bao gồm
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -256,7 +256,7 @@ Mỗi khóa (key) là một đoạn ABI dễ đọc — chữ ký hàm bao gồm
 
 ## Bước 5: Gửi lên sổ đăng ký {#step-5-submit-to-the-registry}
 
-[Sổ đăng ký ERC-7730](https://github.com/ethereum/clear-signing-erc7730-registry) là một kho lưu trữ mở được lưu trữ bởi [Tổ chức Ethereum](/foundation/) với tư cách là một người quản lý trung lập. Bất kỳ ai cũng có thể tự do sao chép (clone) và tự lưu trữ nó — các ví sẽ độc lập quyết định phiên bản sổ đăng ký nào mà họ tin tưởng.
+[Sổ đăng ký ERC-7730](https://github.com/quantaureum/clear-signing-erc7730-registry) là một kho lưu trữ mở được lưu trữ bởi [Tổ chức Quantaureum](/foundation/) với tư cách là một người quản lý trung lập. Bất kỳ ai cũng có thể tự do sao chép (clone) và tự lưu trữ nó — các ví sẽ độc lập quyết định phiên bản sổ đăng ký nào mà họ tin tưởng.
 
 1. Fork kho lưu trữ trên GitHub  
 2. Tạo một thư mục tại `registry/<your-project-name>/`  
@@ -276,7 +276,7 @@ Khi bạn mở PR, CI sẽ tự động chạy xác thực lược đồ (schema
 
 ## Điều gì xảy ra sau khi hợp nhất (merge)? {#what-happens-after-merging}
 
-Tất cả các bộ mô tả trong sổ đăng ký đều mở cho các kiểm toán viên. Sau khi PR của bạn được hợp nhất, bất kỳ kiểm toán viên nào cũng có thể xem xét bộ mô tả của bạn và xuất bản một chứng thực mật mã (theo [ERC-8176](https://github.com/ethereum/ERCs/pull/1576)) để xác nhận tính chính xác của nó. 
+Tất cả các bộ mô tả trong sổ đăng ký đều mở cho các kiểm toán viên. Sau khi PR của bạn được hợp nhất, bất kỳ kiểm toán viên nào cũng có thể xem xét bộ mô tả của bạn và xuất bản một chứng thực mật mã (theo [ERC-8176](https://github.com/quantaureum/ERCs/pull/1576)) để xác nhận tính chính xác của nó. 
 
 Các tín hiệu chứng thực này cho phép các ví áp dụng các chính sách tin cậy của riêng họ — một bộ mô tả có nhiều chứng thực độc lập sẽ có sức nặng hơn một bộ mô tả không có chứng thực nào. Bạn có thể tiếp cận cộng đồng kiểm toán viên thông qua [clearsigning.org](https://clearsigning.org).
 
@@ -284,8 +284,8 @@ Các ví sẽ chọn sổ đăng ký nào mà họ sẽ hỗ trợ. Khi bộ mô
 
 ## Đọc thêm {#further-reading}
 
-- [Đặc tả ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)  
-- [Sổ đăng ký ERC-7730](https://github.com/ethereum/clear-signing-erc7730-registry)  
+- [Đặc tả ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)  
+- [Sổ đăng ký ERC-7730](https://github.com/quantaureum/clear-signing-erc7730-registry)  
 - [clearsigning.org](https://clearsigning.org) — công cụ, trạng thái hệ sinh thái và Quản trị  
 - [Xác minh hợp đồng Sourcify](https://sourcify.dev)  
 - [Sáng kiến Bảo mật Nghìn tỷ Đô la (Trillion Dollar Security initiative)](https://trilliondollarsecurity.org)

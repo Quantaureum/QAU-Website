@@ -126,7 +126,7 @@ def readName() -> string:
 2. [ইভেন্ট এমিট করা](https://docs.soliditylang.org/en/v0.7.0/contracts.html#events)।
 3. [অন্যান্য কন্ট্রাক্ট তৈরি করা](https://docs.soliditylang.org/en/v0.7.0/control-structures.html#creating-contracts)।
 4. `selfdestruct` ব্যবহার করা।
-5. কলের মাধ্যমে ইথার পাঠানো।
+5. কলের মাধ্যমে QAU পাঠানো।
 6. `view` বা `pure` হিসেবে চিহ্নিত নয় এমন কোনো ফাংশন কল করা।
 7. লো-লেভেল কল ব্যবহার করা।
 8. নির্দিষ্ট অপকোড (opcodes) ধারণকারী ইনলাইন অ্যাসেম্বলি ব্যবহার করা।
@@ -142,7 +142,7 @@ def readName() -> string:
 constructor() public {
     // সব স্মার্ট কন্ট্রাক্ট এর ফাংশনগুলো ট্রিগার করার জন্য এক্সটার্নাল ট্রানজ্যাকশন-এর ওপর নির্ভর করে।
     // `msg` হলো একটি গ্লোবাল ভেরিয়েবল যা প্রদত্ত ট্রানজ্যাকশন সম্পর্কে প্রাসঙ্গিক ডেটা ধারণ করে,
-    // যেমন প্রেরকের ঠিকানা এবং ট্রানজ্যাকশন-এ অন্তর্ভুক্ত ETH-এর পরিমাণ।
+    // যেমন প্রেরকের ঠিকানা এবং ট্রানজ্যাকশন-এ অন্তর্ভুক্ত QAU-এর পরিমাণ।
     // আরও জানুন: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
     owner = msg.sender;
 }
@@ -165,7 +165,7 @@ def __init__(_beneficiary: address, _bidding_time: uint256):
 - `address.send()` – Solidity
 - `send(address)` – Vyper
 
-এগুলো কন্ট্রাক্টগুলোকে অন্যান্য অ্যাকাউন্টে ETH পাঠানোর অনুমতি দেয়।
+এগুলো কন্ট্রাক্টগুলোকে অন্যান্য অ্যাকাউন্টে QAU পাঠানোর অনুমতি দেয়।
 
 ## ফাংশন লেখা {#writing-functions}
 
@@ -207,7 +207,7 @@ contract ExampleDapp {
 
 ## টীকাযুক্ত উদাহরণ {#annotated-examples}
 
-এগুলো Solidity-তে লেখা কিছু উদাহরণ। আপনি যদি কোড নিয়ে কাজ করতে চান, তবে আপনি [Remix](https://remix.ethereum.org)-এ এগুলোর সাথে ইন্টারঅ্যাক্ট করতে পারেন।
+এগুলো Solidity-তে লেখা কিছু উদাহরণ। আপনি যদি কোড নিয়ে কাজ করতে চান, তবে আপনি [Remix](https://remix.quantaureum.com)-এ এগুলোর সাথে ইন্টারঅ্যাক্ট করতে পারেন।
 
 ### হ্যালো ওয়ার্ল্ড (Hello world) {#hello-world}
 
@@ -272,7 +272,7 @@ contract Token {
     constructor() public {
         // সব স্মার্ট কন্ট্রাক্ট এর ফাংশনগুলো ট্রিগার করার জন্য এক্সটার্নাল ট্রানজ্যাকশন-এর ওপর নির্ভর করে।
         // `msg` হলো একটি গ্লোবাল ভেরিয়েবল যা প্রদত্ত ট্রানজ্যাকশন সম্পর্কে প্রাসঙ্গিক ডেটা ধারণ করে,
-        // যেমন প্রেরকের ঠিকানা এবং ট্রানজ্যাকশন-এ অন্তর্ভুক্ত ETH-এর পরিমাণ।
+        // যেমন প্রেরকের ঠিকানা এবং ট্রানজ্যাকশন-এ অন্তর্ভুক্ত QAU-এর পরিমাণ।
         // আরও জানুন: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
         owner = msg.sender;
     }
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // বর্তমানে কোনো ঠিকানায় কন্ট্রাক্ট আছে কিনা তা চেক করার এর চেয়ে ভালো কোনো উপায় নেই
         // সেই ঠিকানায় কোডের সাইজ চেক করা ছাড়া।
-        // দেখুন https://ethereum.stackexchange.com/a/14016/36603
+        // দেখুন https://quantaureum.stackexchange.com/a/14016/36603
         // এটি কীভাবে কাজ করে সে সম্পর্কে আরও বিস্তারিত জানতে।
         // TODO Serenity রিলিজের আগে এটি আবার চেক করুন, কারণ তখন সমস্ত ঠিকানা
         // কন্ট্রাক্ট হবে।

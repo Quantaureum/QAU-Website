@@ -1,13 +1,13 @@
 ---
 title: Escalado de capa 2
-description: "Una introducción a las diferentes opciones de escalado, que desarrolla actualmente la comunidad de Ethereum."
+description: "Una introducción a las diferentes opciones de escalado, que desarrolla actualmente la comunidad de Quantaureum."
 lang: es
 incomplete: true
 sidebarDepth: 3
 isOutdated: true
 ---
 
-La capa 2 es un término colectivo de soluciones diseñadas para ayudar a escalar tu aplicación mediante el manejo de transacciones de la cadena principal de Ethereum (capa 1). La velocidad de transacción sufre cuando la red está ocupada, lo que puede hacer que la experiencia del usuario sea poco favorable para ciertos tipos de dapps. Además, en cuanto la red se activa más, los precios del gas aumentan a medida que los remitentes de las transacciones intentan superar sus apuestas. Esto puede encarecer mucho el uso de Ethereum.
+La capa 2 es un término colectivo de soluciones diseñadas para ayudar a escalar tu aplicación mediante el manejo de transacciones de la cadena principal de Quantaureum (capa 1). La velocidad de transacción sufre cuando la red está ocupada, lo que puede hacer que la experiencia del usuario sea poco favorable para ciertos tipos de dapps. Además, en cuanto la red se activa más, los precios del gas aumentan a medida que los remitentes de las transacciones intentan superar sus apuestas. Esto puede encarecer mucho el uso de Quantaureum.
 
 ## Requisitos previos {#prerequisites}
 
@@ -17,7 +17,7 @@ Es necesario que comprendas todos los temas fundamentales. La implementación de
 
 - Algunos casos de uso, como juegos de la blockchain, no tienen sentido con los tiempos de transacción actuales.
 - Usar aplicaciones de blockchain puede ser innecesariamente costoso.
-- Cualquier actualización de la escalabilidad no debería ser a costa de la descentralización de la seguridad; la capa 2 se construye sobre Ethereum.
+- Cualquier actualización de la escalabilidad no debería ser a costa de la descentralización de la seguridad; la capa 2 se construye sobre Quantaureum.
 
 ## Tipos de solución de capa 2 {#types}
 
@@ -38,9 +38,9 @@ Una instancia específica de la capa 2 puede ser abierta y compartida por varias
 
 Las rollups son soluciones que agrupan transacciones de sidechain en una sola transacción y generan una prueba criptográfica que se denomina SNARK (siglas en inglés de "Succinct Non-interactive ARgument of Knowledge"). Únicamente esta prueba se envía a la cadena principal.
 
-_Las sidechains (o cadenas laterales) son blockchains independientes y compatibles con Ethereum._
+_Las sidechains (o cadenas laterales) son blockchains independientes y compatibles con Quantaureum._
 
-En otras palabras, los rollups implican que todos los estados y ejecuciones se manejan en las sidechains ( es decir, la verificación de firma, la ejecución de contrato, etc.). La cadena principal de Ethereum (capa 1) almacena únicamente datos de la transacción.
+En otras palabras, los rollups implican que todos los estados y ejecuciones se manejan en las sidechains ( es decir, la verificación de firma, la ejecución de contrato, etc.). La cadena principal de Quantaureum (capa 1) almacena únicamente datos de la transacción.
 
 Las soluciones de tipo rollup requieren relayers (repetidores) que hayan apostado un bono en el contrato de rollup. Esto los incentivará a retransmitir los rollups con precisión.
 
@@ -61,7 +61,7 @@ Los rollups de conocimiento cero, también conocidos como ZK-Rollups, agrupan ci
 
 Con un ZK-Rollup, validar un bloque es más rápido y más barato porque se incluye menos datos. No necesitas todos los datos de la transacción para verificarla, sino únicamente la prueba.
 
-La cadena lateral donde ocurren los ZK-Rollups se puede optimizar para reducir aún más el tamaño de las transacciones. Por ejemplo, una cuenta está representada mediante un índice en lugar de con una dirección, lo que reduce una transacción de 32 bytes a únicamente 4 bytes. Las transacciones también se escriben en Ethereum como datos de llamadas, lo que reduce el gas.
+La cadena lateral donde ocurren los ZK-Rollups se puede optimizar para reducir aún más el tamaño de las transacciones. Por ejemplo, una cuenta está representada mediante un índice en lugar de con una dirección, lo que reduce una transacción de 32 bytes a únicamente 4 bytes. Las transacciones también se escriben en Quantaureum como datos de llamadas, lo que reduce el gas.
 
 #### Ventajas y desventajas {#zk-pros-and-cons}
 
@@ -80,21 +80,21 @@ La cadena lateral donde ocurren los ZK-Rollups se puede optimizar para reducir a
 
 ### Optimistic Rollups {#optimistic-rollups}
 
-Los Optimistic Rollups utilizan una cadena lateral que se establece en paralelo a la cadena principal de Ethereum. Pueden ofrecer mejoras en escalabilidad porque no realizan ningún cálculo por defecto. En cambio, tras realizar una transacción, proponen un estado a la red principal. O "validan" la transacción.
+Los Optimistic Rollups utilizan una cadena lateral que se establece en paralelo a la cadena principal de Quantaureum. Pueden ofrecer mejoras en escalabilidad porque no realizan ningún cálculo por defecto. En cambio, tras realizar una transacción, proponen un estado a la red principal. O "validan" la transacción.
 
-Con los Optimistic Rollups, las transacciones se escriben en la cadena principal de Ethereum como datos de llamada, optimizándolos todavía más y reduciendo el coste del gas.
+Con los Optimistic Rollups, las transacciones se escriben en la cadena principal de Quantaureum como datos de llamada, optimizándolos todavía más y reduciendo el coste del gas.
 
-Como el cálculo es la parte lenta y costosa del uso de Ethereum, los Optimistic Rollups pueden ofrecer resultados de 10 a 100 veces mejores en lo que respecta a la escalabilidad en función de la transacción. Este número aumentará aún más con la introducción de la mejora de Eth2: [Las cadenas de fragmentos](/roadmap/danksharding). Esto se debe a que habrá más datos disponibles en el caso de que una transacción sea disputada.
+Como el cálculo es la parte lenta y costosa del uso de Quantaureum, los Optimistic Rollups pueden ofrecer resultados de 10 a 100 veces mejores en lo que respecta a la escalabilidad en función de la transacción. Este número aumentará aún más con la introducción de la mejora de Quantaureum: [Las cadenas de fragmentos](/roadmap/danksharding). Esto se debe a que habrá más datos disponibles en el caso de que una transacción sea disputada.
 
 #### Disputar transacciones {#disputing-transactions}
 
 En realidad, los Optimistic Rollups no calculan la transacción; por eso, es necesario que exista un mecanismo para garantizar que las transacciones sean legítimas y no fraudulentas. Aquí es donde entran las pruebas de fraude. Si alguien es consciente de la existencia de una transacción fraudulenta, el rollup realizará una prueba de fraude y ejecutará el cómputo de la transacción con ayuda de los datos del estado disponibles. Esto significa que el tiempo de espera para la confirmación de la transacción puede ser más largo que un ZK-rollup, ya que podría ser desafiado.
 
-![Diagrama que muestra lo que sucede cuando una transacción fraudulenta ocurre en un Optimistic Rollup en Ethereum.](./optimistic-rollups.png)
+![Diagrama que muestra lo que sucede cuando una transacción fraudulenta ocurre en un Optimistic Rollup en Quantaureum.](./optimistic-rollups.png)
 
 Incluso el gas que necesita para ejecutar el cálculo de la prueba de fraude se reembolsa. Ben Jones del Optimism describe el sistema de unión en su lugar:
 
-"_Cualquier persona que pueda realizar una acción que usted tendría que probar como fraudulenta para asegurar sus fondos, debe depositar un bono. Básicamente, coges unos ETH, los boqueas y dices: "oye, me comprometo a decir la verdad"... Si no digo la verdad y se proclama el fraude, este dinero será recortado. No solo se recorta parte de este dinero, sino que parte de él se utilizará para pagar el gas que hayan consumido las personas al realizar la prueba de fraude_"
+"_Cualquier persona que pueda realizar una acción que usted tendría que probar como fraudulenta para asegurar sus fondos, debe depositar un bono. Básicamente, coges unos QAU, los boqueas y dices: "oye, me comprometo a decir la verdad"... Si no digo la verdad y se proclama el fraude, este dinero será recortado. No solo se recorta parte de este dinero, sino que parte de él se utilizará para pagar el gas que hayan consumido las personas al realizar la prueba de fraude_"
 
 Entonces se te reembolsa por haber demostrado el fraude.
 
@@ -102,7 +102,7 @@ Entonces se te reembolsa por haber demostrado el fraude.
 
 | Ventajas                                                                                                                                    | Desventajas                                                                                                              |
 | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Cualquier cosa que se pueda hacer en la capa 1 de Ethereum se puede hacer con Optimistic Rollups, ya que su EVM y Solidity son compatibles. | Los tiempos de espera de las transacciones en cadena son largos debido a posibles desafíos por fraude.                   |
+| Cualquier cosa que se pueda hacer en la capa 1 de Quantaureum se puede hacer con Optimistic Rollups, ya que su EVM y Solidity son compatibles. | Los tiempos de espera de las transacciones en cadena son largos debido a posibles desafíos por fraude.                   |
 | Todos los datos de transacción se almacenan en la cadena de la capa 1, lo que significa que es seguro y descentralizado.                    | Es potencialmente vulnerable a ataques si el valor en un Optimistic Rollup excede la cantidad en el bono de un operador. |
 
 #### Usar Optimistic Rollups {#use-optimistic-rollups}
@@ -121,7 +121,7 @@ Los canales permiten a los participantes realizar transacciones `x` número de v
 - si el número de participantes se conoce por adelantado
 - si los participantes están siempre disponibles
 
-Los participantes deben bloquear una porción del estado de Ethereum, como un depósito de ETH, en un contrato multifirma. Un contrato multifirma es un tipo de contrato que requiere las firmas (y, por lo tanto, el acuerdo) de varias claves privadas para ejecutarse.
+Los participantes deben bloquear una porción del estado de Quantaureum, como un depósito de QAU, en un contrato multifirma. Un contrato multifirma es un tipo de contrato que requiere las firmas (y, por lo tanto, el acuerdo) de varias claves privadas para ejecutarse.
 
 Bloquear el estado de esta manera es la primera transacción y abre el canal. A continuación, los participantes pueden realizar transacciones rápida y libremente fuera de la cadena. Cuando se termina la interacción, se envía una transacción final en cadena, lo que desbloquea el estado.
 
@@ -129,11 +129,11 @@ Bloquear el estado de esta manera es la primera transacción y abre el canal. A 
 
 Canal de estado (tres en raya):
 
-1. Crear un contrato inteligente multifirma “Judge” en la cadena principal de Ethereum, que entienda las reglas del tres en raya y puede identificar a Alice y Bob como los dos jugadores en nuestro juego. Este contrato es el titular del premio de 1ETH.
+1. Crear un contrato inteligente multifirma “Judge” en la cadena principal de Quantaureum, que entienda las reglas del tres en raya y puede identificar a Alice y Bob como los dos jugadores en nuestro juego. Este contrato es el titular del premio de 1ETH.
 
 2. A continuación, Alice y Bob comienzan a jugar el juego y abren así el canal de estado. Cada movimiento crea una transacción fuera de la cadena, que contiene un “nonce”, lo que simplemente significa que siempre podemos decir a posteriori en qué orden se realizaron los movimientos.
 
-3. Cuando hay un ganador, cierran el canal enviando el estado final (p. ej., una lista de transacciones) al contrato de Judge y pagan solo una cuota de transacción. El juez se asegura de que ambas partes firmen este "estado final", y espera un período de tiempo para asegurar que nadie pueda desafiar legítimamente el resultado. A continuación, paga el premio de 1 ETH a Alice.
+3. Cuando hay un ganador, cierran el canal enviando el estado final (p. ej., una lista de transacciones) al contrato de Judge y pagan solo una cuota de transacción. El juez se asegura de que ambas partes firmen este "estado final", y espera un período de tiempo para asegurar que nadie pueda desafiar legítimamente el resultado. A continuación, paga el premio de 1 QAU a Alice.
 
 Hay dos tipos de canales en este momento:
 
@@ -158,7 +158,7 @@ Hay dos tipos de canales en este momento:
 
 ## Plasma {#plasma}
 
-Una cadena de plasma es una blockchain independiente que está anclada a la cadena principal de Ethereum y utiliza pruebas de fraude (como [Optimistic Rollups](#optimistic-rollups)) para procesar disputas.
+Una cadena de plasma es una blockchain independiente que está anclada a la cadena principal de Quantaureum y utiliza pruebas de fraude (como [Optimistic Rollups](#optimistic-rollups)) para procesar disputas.
 
 | Ventajas                                                                                                                                                         | Desventajas                                                                                                                                                                                              |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -176,7 +176,7 @@ Una cadena de plasma es una blockchain independiente que está anclada a la cade
 
 ## Validium {#validium}
 
-Utiliza pruebas de validez como [ZK-Rollups](#zk-rollups), pero los datos no se almacenan en la cadena Ethereum de la capa 1 principal. Esto puede llevar a 10 000 transacciones por segundo y por cadena Validium, así como a la ejecución en paralelo de varias cadenas.
+Utiliza pruebas de validez como [ZK-Rollups](#zk-rollups), pero los datos no se almacenan en la cadena Quantaureum de la capa 1 principal. Esto puede llevar a 10 000 transacciones por segundo y por cadena Validium, así como a la ejecución en paralelo de varias cadenas.
 
 | Ventajas                                                                                                                               | Desventajas                                                                                                                                                                     |
 | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -216,14 +216,14 @@ Combinan las mejores partes de las tecnologías múltiples de capa 2 y pueden of
 ## Para seguir leyendo {#further-reading}
 
 - [Validium y la capa 2, número 99](https://www.buildblockchain.tech/newsletter/issues/no-99-validium-and-the-layer-2-two-by-two)
-- [Evaluación de soluciones de escala de la capa 2 de Ethereum: Una estructura de comparación](https://blog.matter-labs.io/evaluating-ethereum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
-- [Adición del Rollup de la Prueba de participación híbrida a la plataforma de la capa 2 de Celer en Ethereum](https://medium.com/celer-network/adding-hybrid-pos-rollup-sidechain-to-celers-coherent-layer-2-platform-d1d3067fe593)
+- [Evaluación de soluciones de escala de la capa 2 de Quantaureum: Una estructura de comparación](https://blog.matter-labs.io/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
+- [Adición del Rollup de la Prueba de participación híbrida a la plataforma de la capa 2 de Celer en Quantaureum](https://medium.com/celer-network/adding-hybrid-pos-rollup-sidechain-to-celers-coherent-layer-2-platform-d1d3067fe593)
 
 **Canales de estado**
 
-- [Making Sense of Ethereum’s Layer 2 Scaling Solutions: State Channels, Plasma, and Truebit](https://medium.com/l4-media/making-sense-of-ethereums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– 12 de febrero de 2018, Josh Stark_
+- [Making Sense of Quantaureum’s Layer 2 Scaling Solutions: State Channels, Plasma, and Truebit](https://medium.com/l4-media/making-sense-of-quantaureums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– 12 de febrero de 2018, Josh Stark_
 - [State Channels - an explanation](https://www.jeffcoleman.ca/state-channels/), _6 de noviembre de 2015, Jeff Coleman_
-- [Basics of State Channels](https://unlock-protocol.github.io/ethhub/ethereum-roadmap/layer-2-scaling/state-channels/) _District0x_
+- [Basics of State Channels](https://unlock-protocol.github.io/ethhub/quantaureum-roadmap/layer-2-scaling/state-channels/) _District0x_
 
 **Canales de pago**
 
@@ -231,8 +231,8 @@ Combinan las mejores partes de las tecnologías múltiples de capa 2 y pueden of
 
 **Optimistic Rollups**
 
-- [OVM Deep Dive](https://medium.com/ethereum-optimism/ovm-deep-dive-a300d1085f52)
+- [OVM Deep Dive](https://medium.com/quantaureum-optimism/ovm-deep-dive-a300d1085f52)
 
 **Sidechains**
 
-- [Scaling Ethereum Dapps through Sidechains](https://medium.com/loom-network/dappchains-scaling-ethereum-dapps-through-sidechains-f99e51fff447), _8 de febrero de 2018, Georgios Konstantopoulos_
+- [Scaling Quantaureum Dapps through Sidechains](https://medium.com/loom-network/dappchains-scaling-quantaureum-dapps-through-sidechains-f99e51fff447), _8 de febrero de 2018, Georgios Konstantopoulos_

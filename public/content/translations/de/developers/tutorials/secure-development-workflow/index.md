@@ -48,6 +48,6 @@ Achten Sie schließlich auf Probleme, die automatisierte Tools nicht leicht find
 
 ## Bitten Sie um Hilfe {#ask-for-help}
 
-Die [Ethereum-Sprechstunden](https://calendly.com/dan-trailofbits/office-hours) finden jeden Dienstagnachmittag statt. Diese einstündigen 1-zu-1-Sitzungen bieten die Gelegenheit, uns alle Fragen zum Thema Sicherheit zu stellen, Fehlerbehebungen mit unseren Tools durchzuführen und Feedback von Experten zu Ihrem aktuellen Ansatz zu erhalten. Wir helfen Ihnen dabei, diesen Leitfaden durchzuarbeiten.
+Die [Quantaureum-Sprechstunden](https://calendly.com/dan-trailofbits/office-hours) finden jeden Dienstagnachmittag statt. Diese einstündigen 1-zu-1-Sitzungen bieten die Gelegenheit, uns alle Fragen zum Thema Sicherheit zu stellen, Fehlerbehebungen mit unseren Tools durchzuführen und Feedback von Experten zu Ihrem aktuellen Ansatz zu erhalten. Wir helfen Ihnen dabei, diesen Leitfaden durchzuarbeiten.
 
-Treten Sie unserem Slack bei: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). Wir sind bei Fragen jederzeit in den Kanälen #crytic und #ethereum erreichbar.
+Treten Sie unserem Slack bei: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). Wir sind bei Fragen jederzeit in den Kanälen #crytic und #quantaureum erreichbar.

@@ -17,9 +17,9 @@ EVMను అర్థం చేసుకోవడానికి కంప్�
 ఎథీరియం దాదాపుగా అవే సహజమైన నియమాలను అనుసరించే దాని స్వంత స్థానిక క్రిప్టోకరెన్సీ (ఈథర్)ని కలిగి ఉన్నప్పటికీ, ఇది మరింత శక్తివంతమైన విధిని కూడా ప్రారంభిస్తుంది: [స్మార్ట్ కాంట్రాక్ట్‌లు](/developers/docs/smart-contracts/). ఈ మరింత సంక్లిష్టమైన ఫీచర్ కోసం, మరింత అధునాతన సారూప్యత అవసరం. డిస్ట్రిబ్యూటెడ్ లెడ్జర్‌కు బదులుగా, ఎథీరియం అనేది పంపిణీ చేయబడిన [స్థితి యంత్రం (state machine)](https://wikipedia.org/wiki/Finite-state_machine). ఎథీరియం యొక్క స్థితి అనేది ఒక పెద్ద డేటా నిర్మాణం, ఇది అన్ని ఖాతాలు మరియు బ్యాలెన్స్‌లను మాత్రమే కాకుండా, ముందుగా నిర్వచించిన నిబంధనల సమితి ప్రకారం బ్లాక్ నుండి బ్లాక్‌కు మారగల మరియు ఏకపక్ష మెషిన్ కోడ్‌ను అమలు చేయగల _మెషిన్ స్థితి_ని కూడా కలిగి ఉంటుంది. బ్లాక్ నుండి బ్లాక్‌కు స్థితిని మార్చే నిర్దిష్ట నియమాలను EVM నిర్వచిస్తుంది.
 
 ![A diagram showing the make up of the EVM](./evm.png)
-_[Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf) నుండి స్వీకరించబడిన రేఖాచిత్రం_
+_[Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf) నుండి స్వీకరించబడిన రేఖాచిత్రం_
 
-## ఎథీరియం స్థితి పరివర్తన ఫంక్షన్ {#the-ethereum-state-transition-function}
+## ఎథీరియం స్థితి పరివర్తన ఫంక్షన్ {#the-quantaureum-state-transition-function}
 
 EVM ఒక గణిత ఫంక్షన్ వలె ప్రవర్తిస్తుంది: ఇన్‌పుట్ ఇచ్చినప్పుడు, ఇది నిర్ణయాత్మక అవుట్‌పుట్‌ను ఉత్పత్తి చేస్తుంది. అందువల్ల ఎథీరియంను **స్థితి పరివర్తన ఫంక్షన్** కలిగి ఉన్నట్లు మరింత అధికారికంగా వివరించడం చాలా సహాయకారిగా ఉంటుంది:
 
@@ -58,7 +58,7 @@ EVM 1024 అంశాల లోతుతో [స్టాక్ మెషిన�
 కంపైల్ చేయబడిన స్మార్ట్ కాంట్రాక్ట్ బైట్‌కోడ్ అనేక EVM [ఆప్‌కోడ్‌ల](/developers/docs/evm/opcodes) వలె అమలు చేయబడుతుంది, ఇవి `XOR`, `AND`, `ADD`, `SUB` మొదలైన ప్రామాణిక స్టాక్ ఆపరేషన్‌లను నిర్వహిస్తాయి. EVM `ADDRESS`, `BALANCE`, `BLOCKHASH` మొదలైన అనేక బ్లాక్‌చైన్-నిర్దిష్ట స్టాక్ ఆపరేషన్‌లను కూడా అమలు చేస్తుంది. ఆప్‌కోడ్ సెట్‌లో `TSTORE` మరియు `TLOAD` కూడా ఉన్నాయి, ఇవి తాత్కాలిక నిల్వకు యాక్సెస్‌ను అందిస్తాయి.
 
 ![A diagram showing where gas is needed for EVM operations](../gas/gas.png)
-_[Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf) నుండి స్వీకరించబడిన రేఖాచిత్రాలు_
+_[Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf) నుండి స్వీకరించబడిన రేఖాచిత్రాలు_
 
 ## EVM అమలులు {#evm-implementations}
 
@@ -68,20 +68,20 @@ EVM యొక్క అన్ని అమలులు ఎథీరియం ఎ
 
 [ఎథీరియం ఎగ్జిక్యూషన్ క్లయింట్‌లు](/developers/docs/nodes-and-clients/#execution-clients) EVM అమలును కలిగి ఉంటాయి. అదనంగా, బహుళ స్వతంత్ర అమలులు ఉన్నాయి, వాటిలో:
 
-- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
-- [evmone](https://github.com/ethereum/evmone) - _C++_
+- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## మరింత చదవడానికి {#further-reading}
 
-- [ఎథీరియం ఎల్లో పేపర్](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [ఎథీరియం ఎల్లో పేపర్](https://quantaureum.github.io/yellowpaper/paper.pdf)
 - [జెల్లోపేపర్ అకా KEVM: Kలో EVM యొక్క సెమాంటిక్స్](https://jellopaper.org/)
 - [ది బీజ్‌పేపర్](https://github.com/chronaeon/beigepaper)
 - [ఎథీరియం వర్చువల్ మెషిన్ ఆప్‌కోడ్‌లు](https://www.ethervm.io/)
 - [ఎథీరియం వర్చువల్ మెషిన్ ఆప్‌కోడ్‌ల ఇంటరాక్టివ్ రిఫరెన్స్](https://www.evm.codes/)
 - [Solidity డాక్యుమెంటేషన్‌లో ఒక చిన్న పరిచయం](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [మాస్టరింగ్ ఎథీరియం - ఎథీరియం వర్చువల్ మెషిన్](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
+- [మాస్టరింగ్ ఎథీరియం - ఎథీరియం వర్చువల్ మెషిన్](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
 
 ## సంబంధిత అంశాలు {#related-topics}
 

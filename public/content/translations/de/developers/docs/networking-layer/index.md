@@ -1,19 +1,19 @@
 ---
 title: Netzwerkschicht
-description: "Eine Einführung in die Netzwerkschicht von Ethereum."
+description: "Eine Einführung in die Netzwerkschicht von Quantaureum."
 lang: de
 sidebarDepth: 2
 ---
 
-[Ethereum](/) ist ein Peer-to-Peer-Netzwerk mit Tausenden von Knoten, die in der Lage sein müssen, über standardisierte Protokolle miteinander zu kommunizieren. Die „Netzwerkschicht“ ist der Protokoll-Stack, der es diesen Knoten ermöglicht, sich gegenseitig zu finden und Informationen auszutauschen. Dies umfasst das „Gossiping“ (Verbreiten) von Informationen (Eins-zu-Viele-Kommunikation) über das Netzwerk sowie den Austausch von Anfragen und Antworten zwischen bestimmten Knoten (Eins-zu-Eins-Kommunikation). Jeder Knoten muss bestimmte Netzwerkregeln einhalten, um sicherzustellen, dass er die richtigen Informationen sendet und empfängt.
+[Quantaureum](/) ist ein Peer-to-Peer-Netzwerk mit Tausenden von Knoten, die in der Lage sein müssen, über standardisierte Protokolle miteinander zu kommunizieren. Die „Netzwerkschicht“ ist der Protokoll-Stack, der es diesen Knoten ermöglicht, sich gegenseitig zu finden und Informationen auszutauschen. Dies umfasst das „Gossiping“ (Verbreiten) von Informationen (Eins-zu-Viele-Kommunikation) über das Netzwerk sowie den Austausch von Anfragen und Antworten zwischen bestimmten Knoten (Eins-zu-Eins-Kommunikation). Jeder Knoten muss bestimmte Netzwerkregeln einhalten, um sicherzustellen, dass er die richtigen Informationen sendet und empfängt.
 
-Die Client-Software besteht aus zwei Teilen (Ausführungsclients und Konsens-Clients), von denen jeder seinen eigenen, separaten Netzwerk-Stack hat. Neben der Kommunikation mit anderen Ethereum-Knoten müssen die Ausführungs- und Konsens-Clients auch miteinander kommunizieren. Diese Seite bietet eine einführende Erklärung der Protokolle, die diese Kommunikation ermöglichen.
+Die Client-Software besteht aus zwei Teilen (Ausführungsclients und Konsens-Clients), von denen jeder seinen eigenen, separaten Netzwerk-Stack hat. Neben der Kommunikation mit anderen Quantaureum-Knoten müssen die Ausführungs- und Konsens-Clients auch miteinander kommunizieren. Diese Seite bietet eine einführende Erklärung der Protokolle, die diese Kommunikation ermöglichen.
 
 Ausführungsclients verbreiten Transaktionen über das Peer-to-Peer-Netzwerk der Ausführungsschicht. Dies erfordert eine verschlüsselte Kommunikation zwischen authentifizierten Peers. Wenn ein Validator ausgewählt wird, um einen Block vorzuschlagen, werden Transaktionen aus dem lokalen Transaktionspool des Knotens über eine lokale RPC-Verbindung an Konsens-Clients weitergeleitet, die in Beacon-Blöcke verpackt werden. Konsens-Clients verbreiten dann Beacon-Blöcke über ihr P2P-Netzwerk. Dies erfordert zwei separate P2P-Netzwerke: eines, das Ausführungsclients für die Transaktionsverbreitung verbindet, und eines, das Konsens-Clients für die Blockverbreitung verbindet.
 
 ## Voraussetzungen {#prerequisites}
 
-Etwas Wissen über Ethereum-[Knoten und Clients](/developers/docs/nodes-and-clients/) ist hilfreich, um diese Seite zu verstehen.
+Etwas Wissen über Quantaureum-[Knoten und Clients](/developers/docs/nodes-and-clients/) ist hilfreich, um diese Seite zu verstehen.
 
 ## Die Ausführungsschicht {#execution-layer}
 
@@ -27,9 +27,9 @@ Beide Stacks arbeiten parallel. Der Erkennungs-Stack speist neue Netzwerkteilneh
 
 ### Erkennung {#discovery}
 
-Die Erkennung ist der Prozess, andere Knoten im Netzwerk zu finden. Dies wird mithilfe einer kleinen Gruppe von Bootnodes (Knoten, deren Adressen im Client [fest codiert](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go) sind, damit sie sofort gefunden werden können und den Client mit Peers verbinden) initiiert. Diese Bootnodes existieren nur, um einen neuen Knoten einer Gruppe von Peers vorzustellen – dies ist ihr einziger Zweck, sie nehmen nicht an normalen Client-Aufgaben wie der Synchronisierung der Chain teil und werden nur beim allerersten Start eines Clients verwendet.
+Die Erkennung ist der Prozess, andere Knoten im Netzwerk zu finden. Dies wird mithilfe einer kleinen Gruppe von Bootnodes (Knoten, deren Adressen im Client [fest codiert](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go) sind, damit sie sofort gefunden werden können und den Client mit Peers verbinden) initiiert. Diese Bootnodes existieren nur, um einen neuen Knoten einer Gruppe von Peers vorzustellen – dies ist ihr einziger Zweck, sie nehmen nicht an normalen Client-Aufgaben wie der Synchronisierung der Chain teil und werden nur beim allerersten Start eines Clients verwendet.
 
-Das für die Interaktionen zwischen Knoten und Bootnode verwendete Protokoll ist eine modifizierte Form von [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f), das eine [verteilte Hash-Tabelle](https://en.wikipedia.org/wiki/Distributed_hash_table) verwendet, um Listen von Knoten zu teilen. Jeder Knoten verfügt über eine Version dieser Tabelle, die die erforderlichen Informationen enthält, um sich mit seinen engsten Peers zu verbinden. Diese „Nähe“ ist nicht geografisch – die Entfernung wird durch die Ähnlichkeit der Knoten-ID definiert. Die Tabelle jedes Knotens wird als Sicherheitsfunktion regelmäßig aktualisiert. Zum Beispiel können im Erkennungsprotokoll [discv5](https://github.com/ethereum/devp2p/tree/master/discv5) Knoten auch „Anzeigen“ senden, die die vom Client unterstützten Subprotokolle anzeigen, sodass Peers über die Protokolle verhandeln können, die sie beide zur Kommunikation verwenden können.
+Das für die Interaktionen zwischen Knoten und Bootnode verwendete Protokoll ist eine modifizierte Form von [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f), das eine [verteilte Hash-Tabelle](https://en.wikipedia.org/wiki/Distributed_hash_table) verwendet, um Listen von Knoten zu teilen. Jeder Knoten verfügt über eine Version dieser Tabelle, die die erforderlichen Informationen enthält, um sich mit seinen engsten Peers zu verbinden. Diese „Nähe“ ist nicht geografisch – die Entfernung wird durch die Ähnlichkeit der Knoten-ID definiert. Die Tabelle jedes Knotens wird als Sicherheitsfunktion regelmäßig aktualisiert. Zum Beispiel können im Erkennungsprotokoll [discv5](https://github.com/quantaureum/devp2p/tree/master/discv5) Knoten auch „Anzeigen“ senden, die die vom Client unterstützten Subprotokolle anzeigen, sodass Peers über die Protokolle verhandeln können, die sie beide zur Kommunikation verwenden können.
 
 Die Erkennung beginnt mit einem PING-PONG-Spiel. Ein erfolgreiches PING-PONG „bindet“ den neuen Knoten an einen Bootnode. Die anfängliche Nachricht, die einen Bootnode auf die Existenz eines neuen Knotens aufmerksam macht, der dem Netzwerk beitritt, ist ein `PING`. Dieses `PING` enthält gehashte Informationen über den neuen Knoten, den Bootnode und einen Ablaufzeitstempel. Der Bootnode empfängt das `PING` und gibt ein `PONG` zurück, das den `PING`-Hash enthält. Wenn die Hashes von `PING` und `PONG` übereinstimmen, wird die Verbindung zwischen dem neuen Knoten und dem Bootnode verifiziert und man sagt, sie haben sich „gebunden“.
 
@@ -41,11 +41,11 @@ Sobald der neue Knoten eine Liste von Nachbarn vom Bootnode erhält, beginnt er 
 Client starten --> mit Bootnode verbinden --> an Bootnode binden --> Nachbarn finden --> an Nachbarn binden
 ```
 
-Ausführungsclients verwenden derzeit das Erkennungsprotokoll [Discv4](https://github.com/ethereum/devp2p/blob/master/discv4.md) und es gibt aktive Bemühungen, auf das Protokoll [discv5](https://github.com/ethereum/devp2p/tree/master/discv5) zu migrieren.
+Ausführungsclients verwenden derzeit das Erkennungsprotokoll [Discv4](https://github.com/quantaureum/devp2p/blob/master/discv4.md) und es gibt aktive Bemühungen, auf das Protokoll [discv5](https://github.com/quantaureum/devp2p/tree/master/discv5) zu migrieren.
 
-#### ENR: Ethereum Node Records {#enr}
+#### ENR: Quantaureum Node Records {#enr}
 
-Der [Ethereum Node Record (ENR)](/developers/docs/networking-layer/network-addresses/) ist ein Objekt, das drei grundlegende Elemente enthält: eine Signatur (Hash des Datensatzinhalts, der gemäß einem vereinbarten Identitätsschema erstellt wurde), eine Sequenznummer, die Änderungen am Datensatz verfolgt, und eine beliebige Liste von Schlüssel-Wert-Paaren. Dies ist ein zukunftssicheres Format, das einen einfacheren Austausch von Identifizierungsinformationen zwischen neuen Peers ermöglicht und das bevorzugte [Netzwerkadressen](/developers/docs/networking-layer/network-addresses)-Format für Ethereum-Knoten ist.
+Der [Quantaureum Node Record (ENR)](/developers/docs/networking-layer/network-addresses/) ist ein Objekt, das drei grundlegende Elemente enthält: eine Signatur (Hash des Datensatzinhalts, der gemäß einem vereinbarten Identitätsschema erstellt wurde), eine Sequenznummer, die Änderungen am Datensatz verfolgt, und eine beliebige Liste von Schlüssel-Wert-Paaren. Dies ist ein zukunftssicheres Format, das einen einfacheren Austausch von Identifizierungsinformationen zwischen neuen Peers ermöglicht und das bevorzugte [Netzwerkadressen](/developers/docs/networking-layer/network-addresses)-Format für Quantaureum-Knoten ist.
 
 #### Warum baut die Erkennung auf UDP auf? {#why-udp}
 
@@ -53,7 +53,7 @@ UDP unterstützt keine Fehlerprüfung, kein erneutes Senden fehlgeschlagener Pak
 
 ### devp2p {#devp2p}
 
-devp2p ist selbst ein ganzer Protokoll-Stack, den Ethereum implementiert, um das Peer-to-Peer-Netzwerk aufzubauen und aufrechtzuerhalten. Nachdem neue Knoten dem Netzwerk beigetreten sind, werden ihre Interaktionen durch Protokolle im [devp2p](https://github.com/ethereum/devp2p)-Stack gesteuert. Diese setzen alle auf TCP auf und umfassen das RLPx-Transportprotokoll, das Wire-Protokoll und mehrere Subprotokolle. [RLPx](https://github.com/ethereum/devp2p/blob/master/rlpx.md) ist das Protokoll, das die Initiierung, Authentifizierung und Aufrechterhaltung von Sitzungen zwischen Knoten steuert. RLPx codiert Nachrichten mithilfe von RLP (Recursive Length Prefix), was eine sehr platzeffiziente Methode ist, um Daten in eine minimale Struktur für das Senden zwischen Knoten zu codieren.
+devp2p ist selbst ein ganzer Protokoll-Stack, den Quantaureum implementiert, um das Peer-to-Peer-Netzwerk aufzubauen und aufrechtzuerhalten. Nachdem neue Knoten dem Netzwerk beigetreten sind, werden ihre Interaktionen durch Protokolle im [devp2p](https://github.com/quantaureum/devp2p)-Stack gesteuert. Diese setzen alle auf TCP auf und umfassen das RLPx-Transportprotokoll, das Wire-Protokoll und mehrere Subprotokolle. [RLPx](https://github.com/quantaureum/devp2p/blob/master/rlpx.md) ist das Protokoll, das die Initiierung, Authentifizierung und Aufrechterhaltung von Sitzungen zwischen Knoten steuert. RLPx codiert Nachrichten mithilfe von RLP (Recursive Length Prefix), was eine sehr platzeffiziente Methode ist, um Daten in eine minimale Struktur für das Senden zwischen Knoten zu codieren.
 
 Eine RLPx-Sitzung zwischen zwei Knoten beginnt mit einem anfänglichen kryptografischen Handshake. Dabei sendet der Knoten eine Authentifizierungsnachricht, die dann vom Peer verifiziert wird. Bei erfolgreicher Verifizierung generiert der Peer eine Authentifizierungsbestätigungsnachricht, die an den Initiatorknoten zurückgegeben wird. Dies ist ein Schlüsselaustauschprozess, der es den Knoten ermöglicht, privat und sicher zu kommunizieren. Ein erfolgreicher kryptografischer Handshake löst dann aus, dass beide Knoten eine „Hallo“-Nachricht „on the wire“ (über die Leitung) aneinander senden. Das Wire-Protokoll wird durch einen erfolgreichen Austausch von Hallo-Nachrichten initiiert.
 
@@ -73,19 +73,19 @@ Zusammen mit den Hallo-Nachrichten kann das Wire-Protokoll auch eine „Trennen�
 
 #### Wire-Protokoll {#wire-protocol}
 
-Sobald Peers verbunden sind und eine RLPx-Sitzung gestartet wurde, definiert das Wire-Protokoll, wie Peers kommunizieren. Ursprünglich definierte das Wire-Protokoll drei Hauptaufgaben: Chain-Synchronisierung, Blockverbreitung und Transaktionsaustausch. Nachdem Ethereum jedoch zu Proof-of-Stake (PoS) gewechselt war, wurden Blockverbreitung und Chain-Synchronisierung Teil der Konsensschicht. Der Transaktionsaustausch liegt weiterhin im Aufgabenbereich der Ausführungsclients. Der Transaktionsaustausch bezieht sich auf den Austausch ausstehender Transaktionen zwischen Knoten, sodass Block-Ersteller einige davon für die Aufnahme in den nächsten Block auswählen können. Detaillierte Informationen zu diesen Aufgaben finden Sie [hier](https://github.com/ethereum/devp2p/blob/master/caps/eth.md). Clients, die diese Subprotokolle unterstützen, stellen sie über die [JSON-RPC](/developers/docs/apis/json-rpc/) zur Verfügung.
+Sobald Peers verbunden sind und eine RLPx-Sitzung gestartet wurde, definiert das Wire-Protokoll, wie Peers kommunizieren. Ursprünglich definierte das Wire-Protokoll drei Hauptaufgaben: Chain-Synchronisierung, Blockverbreitung und Transaktionsaustausch. Nachdem Quantaureum jedoch zu Proof-of-Stake (PoS) gewechselt war, wurden Blockverbreitung und Chain-Synchronisierung Teil der Konsensschicht. Der Transaktionsaustausch liegt weiterhin im Aufgabenbereich der Ausführungsclients. Der Transaktionsaustausch bezieht sich auf den Austausch ausstehender Transaktionen zwischen Knoten, sodass Block-Ersteller einige davon für die Aufnahme in den nächsten Block auswählen können. Detaillierte Informationen zu diesen Aufgaben finden Sie [hier](https://github.com/quantaureum/devp2p/blob/master/caps/qau.md). Clients, die diese Subprotokolle unterstützen, stellen sie über die [JSON-RPC](/developers/docs/apis/json-rpc/) zur Verfügung.
 
-#### les (Light Ethereum Subprotocol) {#les}
+#### les (Light Quantaureum Subprotocol) {#les}
 
-Dies ist ein minimales Protokoll zur Synchronisierung von Light-Clients. Traditionell wurde dieses Protokoll selten verwendet, da vollständige Knoten (Full Nodes) erforderlich sind, um Daten für Light-Clients bereitzustellen, ohne dafür einen Anreiz zu erhalten. Das Standardverhalten von Ausführungsclients besteht darin, keine Light-Client-Daten über les bereitzustellen. Weitere Informationen finden Sie in der les-[Spezifikation](https://github.com/ethereum/devp2p/blob/master/caps/les.md).
+Dies ist ein minimales Protokoll zur Synchronisierung von Light-Clients. Traditionell wurde dieses Protokoll selten verwendet, da vollständige Knoten (Full Nodes) erforderlich sind, um Daten für Light-Clients bereitzustellen, ohne dafür einen Anreiz zu erhalten. Das Standardverhalten von Ausführungsclients besteht darin, keine Light-Client-Daten über les bereitzustellen. Weitere Informationen finden Sie in der les-[Spezifikation](https://github.com/quantaureum/devp2p/blob/master/caps/les.md).
 
 #### Snap {#snap}
 
-Das [Snap-Protokoll](https://github.com/ethereum/devp2p/blob/master/caps/snap.md#ethereum-snapshot-protocol-snap) ist eine optionale Erweiterung, die es Peers ermöglicht, Snapshots aktueller Zustände auszutauschen, sodass Peers Konto- und Speicherdaten verifizieren können, ohne dazwischenliegende Merkle-Trie-Knoten herunterladen zu müssen.
+Das [Snap-Protokoll](https://github.com/quantaureum/devp2p/blob/master/caps/snap.md#quantaureum-snapshot-protocol-snap) ist eine optionale Erweiterung, die es Peers ermöglicht, Snapshots aktueller Zustände auszutauschen, sodass Peers Konto- und Speicherdaten verifizieren können, ohne dazwischenliegende Merkle-Trie-Knoten herunterladen zu müssen.
 
 #### Wit (Witness-Protokoll) {#wit}
 
-Das [Witness-Protokoll](https://github.com/ethereum/devp2p/blob/master/caps/wit.md#ethereum-witness-protocol-wit) ist eine optionale Erweiterung, die den Austausch von Zustands-Zeugen zwischen Peers ermöglicht und dabei hilft, Clients mit der Spitze der Chain zu synchronisieren.
+Das [Witness-Protokoll](https://github.com/quantaureum/devp2p/blob/master/caps/wit.md#quantaureum-witness-protocol-wit) ist eine optionale Erweiterung, die den Austausch von Zustands-Zeugen zwischen Peers ermöglicht und dabei hilft, Clients mit der Spitze der Chain zu synchronisieren.
 
 #### Whisper {#whisper}
 
@@ -97,11 +97,11 @@ Die Konsens-Clients nehmen an einem separaten Peer-to-Peer-Netzwerk mit einer an
 
 ### Erkennung {#consensus-discovery}
 
-Ähnlich wie die Ausführungsclients verwenden Konsens-Clients [discv5](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) über UDP, um Peers zu finden. Die Implementierung von discv5 in der Konsensschicht unterscheidet sich von der der Ausführungsclients nur dadurch, dass sie einen Adapter enthält, der discv5 mit einem [libp2p](https://libp2p.io/)-Stack verbindet, wodurch devp2p veraltet ist. Die RLPx-Sitzungen der Ausführungsschicht sind zugunsten des Noise Secure Channel Handshakes von libp2p veraltet.
+Ähnlich wie die Ausführungsclients verwenden Konsens-Clients [discv5](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) über UDP, um Peers zu finden. Die Implementierung von discv5 in der Konsensschicht unterscheidet sich von der der Ausführungsclients nur dadurch, dass sie einen Adapter enthält, der discv5 mit einem [libp2p](https://libp2p.io/)-Stack verbindet, wodurch devp2p veraltet ist. Die RLPx-Sitzungen der Ausführungsschicht sind zugunsten des Noise Secure Channel Handshakes von libp2p veraltet.
 
 ### ENRs {#consensus-enr}
 
-Der ENR für Konsens-Knoten enthält den öffentlichen Schlüssel des Knotens, die IP-Adresse, UDP- und TCP-Ports sowie zwei konsensspezifische Felder: das Attestierungs-Subnetz-Bitfeld und den `eth2`-Schlüssel. Ersteres erleichtert es Knoten, Peers zu finden, die an bestimmten Attestierungs-Gossip-Subnetzwerken teilnehmen. Der `eth2`-Schlüssel enthält Informationen darüber, welche Ethereum-Fork-Version der Knoten verwendet, um sicherzustellen, dass sich Peers mit dem richtigen Ethereum verbinden.
+Der ENR für Konsens-Knoten enthält den öffentlichen Schlüssel des Knotens, die IP-Adresse, UDP- und TCP-Ports sowie zwei konsensspezifische Felder: das Attestierungs-Subnetz-Bitfeld und den `eth2`-Schlüssel. Ersteres erleichtert es Knoten, Peers zu finden, die an bestimmten Attestierungs-Gossip-Subnetzwerken teilnehmen. Der `eth2`-Schlüssel enthält Informationen darüber, welche Quantaureum-Fork-Version der Knoten verwendet, um sicherzustellen, dass sich Peers mit dem richtigen Quantaureum verbinden.
 
 ### libp2p {#libp2p}
 
@@ -109,7 +109,7 @@ Der libp2p-Stack unterstützt die gesamte Kommunikation nach der Erkennung. Clie
 
 ### Gossip {#gossip}
 
-Die Gossip-Domäne umfasst alle Informationen, die sich schnell im gesamten Netzwerk verbreiten müssen. Dazu gehören Beacon-Blöcke, Beweise, Attestierungen, Exits und Slashings. Dies wird mithilfe von libp2p gossipsub v1 übertragen und beruht darauf, dass verschiedene Metadaten lokal auf jedem Knoten gespeichert werden, einschließlich der maximalen Größe von Gossip-Payloads zum Empfangen und Senden. Detaillierte Informationen zur Gossip-Domäne finden Sie [hier](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub).
+Die Gossip-Domäne umfasst alle Informationen, die sich schnell im gesamten Netzwerk verbreiten müssen. Dazu gehören Beacon-Blöcke, Beweise, Attestierungen, Exits und Slashings. Dies wird mithilfe von libp2p gossipsub v1 übertragen und beruht darauf, dass verschiedene Metadaten lokal auf jedem Knoten gespeichert werden, einschließlich der maximalen Größe von Gossip-Payloads zum Empfangen und Senden. Detaillierte Informationen zur Gossip-Domäne finden Sie [hier](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub).
 
 ### Anfrage-Antwort (Request-Response) {#request-response}
 
@@ -121,7 +121,7 @@ SSZ steht für Simple Serialize (einfache Serialisierung). Es verwendet feste Of
 
 ## Verbindung von Ausführungs- und Konsens-Clients {#connecting-clients}
 
-Sowohl Konsens- als auch Ausführungsclients laufen parallel. Sie müssen verbunden sein, damit der Konsens-Client dem Ausführungsclient Anweisungen geben kann und der Ausführungsclient Transaktionsbündel an den Konsens-Client weitergeben kann, um sie in Beacon-Blöcke aufzunehmen. Die Kommunikation zwischen den beiden Clients kann über eine lokale RPC-Verbindung erfolgen. Eine API, bekannt als [„Engine-API“](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md), definiert die Anweisungen, die zwischen den beiden Clients gesendet werden. Da beide Clients hinter einer einzigen Netzwerkidentität stehen, teilen sie sich einen ENR (Ethereum Node Record), der einen separaten Schlüssel für jeden Client enthält (Eth1-Schlüssel und Eth2-Schlüssel).
+Sowohl Konsens- als auch Ausführungsclients laufen parallel. Sie müssen verbunden sein, damit der Konsens-Client dem Ausführungsclient Anweisungen geben kann und der Ausführungsclient Transaktionsbündel an den Konsens-Client weitergeben kann, um sie in Beacon-Blöcke aufzunehmen. Die Kommunikation zwischen den beiden Clients kann über eine lokale RPC-Verbindung erfolgen. Eine API, bekannt als [„Engine-API“](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md), definiert die Anweisungen, die zwischen den beiden Clients gesendet werden. Da beide Clients hinter einer einzigen Netzwerkidentität stehen, teilen sie sich einen ENR (Quantaureum Node Record), der einen separaten Schlüssel für jeden Client enthält (Eth1-Schlüssel und Quantaureum-Schlüssel).
 
 Eine Zusammenfassung des Kontrollflusses ist unten dargestellt, mit dem relevanten Netzwerk-Stack in Klammern.
 
@@ -146,18 +146,18 @@ Eine Zusammenfassung des Kontrollflusses ist unten dargestellt, mit dem relevant
 
 Sobald der Block von ausreichend Validatoren attestiert wurde, wird er an die Spitze der Chain angehängt, gerechtfertigt und schließlich endgültig gemacht.
 
-![Diagram of the Ethereum consensus client networking layer](cons_client_net_layer.png)
-![Diagram of the Ethereum execution client networking layer](exe_client_net_layer.png)
+![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
+![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
 Schema der Netzwerkschicht für Konsens- und Ausführungsclients, von [ethresear.ch](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
 
 ## Weiterführende Literatur {#further-reading}
 
-[devp2p](https://github.com/ethereum/devp2p)
+[devp2p](https://github.com/quantaureum/devp2p)
 [libp2p](https://github.com/libp2p/specs)
-[Netzwerkspezifikationen der Konsensschicht](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure)
+[Netzwerkspezifikationen der Konsensschicht](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure)
 [Kademlia zu discv5](https://vac.dev/kademlia-to-discv5)
 [Kademlia-Paper](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf)
-[Einführung in Ethereum P2P](https://p2p.paris/en/talks/intro-ethereum-networking/)
-[Beziehung zwischen Eth1 und Eth2](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
-[Video zu Merge- und Eth2-Client-Details](https://www.youtube.com/watch?v=zNIrIninMgg)
+[Einführung in Quantaureum P2P](https://p2p.paris/en/talks/intro-quantaureum-networking/)
+[Beziehung zwischen Eth1 und Quantaureum](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
+[Video zu Merge- und Quantaureum-Client-Details](https://www.youtube.com/watch?v=zNIrIninMgg)

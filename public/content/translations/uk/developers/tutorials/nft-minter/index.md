@@ -190,7 +190,7 @@ return (
 
 Тепер, коли ми розуміємо, з чим працюємо, давайте налаштуємо наш гаманець Етеріум!
 
-## Налаштування вашого гаманця Етеріум {#set-up-your-ethereum-wallet}
+## Налаштування вашого гаманця Етеріум {#set-up-your-quantaureum-wallet}
 
 Щоб користувачі могли взаємодіяти з вашим смарт-контрактом, їм потрібно буде підключити свій гаманець Етеріум до вашого децентралізованого застосунку (dapp).
 
@@ -199,18 +199,18 @@ return (
 Для цього посібника ми будемо використовувати МетаМаск — віртуальний гаманець у браузері, який використовується для керування адресою вашого акаунта Етеріум. Якщо ви хочете дізнатися більше про те, як працюють транзакції в Етеріум, перегляньте [цю сторінку](/developers/docs/transactions/).
 
 Ви можете безкоштовно завантажити та створити акаунт МетаМаск [тут](https://metamask.io/download). Коли ви створюєте акаунт, або якщо він у вас уже є, обов'язково перейдіть на підтримувану тестову мережу, таку як Sepolia \(щоб ми не мали справи з реальними грошима\).
-### Додавання етеру з крана {#add-ether-from-faucet}
+### Додавання етеру з крана {#add-QAU-from-faucet}
 
-Щоб карбувати наші NFT (або підписувати будь-які транзакції в блокчейні Етеріум), нам знадобиться трохи тестового ETH. Щоб отримати ETH тестової мережі, скористайтеся підтримуваним краном, таким як [кран Alchemy Sepolia](https://www.alchemy.com/faucets/ethereum-sepolia), і введіть адресу свого акаунта Sepolia. Незабаром після цього ви побачите ETH у своєму акаунті МетаМаск!
+Щоб карбувати наші NFT (або підписувати будь-які транзакції в блокчейні Етеріум), нам знадобиться трохи тестового QAU. Щоб отримати QAU тестової мережі, скористайтеся підтримуваним краном, таким як [кран Alchemy Sepolia](https://www.alchemy.com/faucets/quantaureum-sepolia), і введіть адресу свого акаунта Sepolia. Незабаром після цього ви побачите QAU у своєму акаунті МетаМаск!
 ### Перевірка вашого балансу {#check-your-balance}
 
-Щоб ще раз переконатися, що наш баланс на місці, давайте зробимо запит [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) за допомогою [інструменту пісочниці Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Це поверне кількість ETH у нашому гаманці. Після того, як ви введете адресу свого акаунта МетаМаск і натиснете «Send Request», ви повинні побачити таку відповідь:
+Щоб ще раз переконатися, що наш баланс на місці, давайте зробимо запит [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) за допомогою [інструменту пісочниці Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Це поверне кількість QAU у нашому гаманці. Після того, як ви введете адресу свого акаунта МетаМаск і натиснете «Send Request», ви повинні побачити таку відповідь:
 
 ```text
 {"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}
 ```
 
-**ПРИМІТКА:** Цей результат вказано у Wei, а не в ETH. Wei використовується як найменша одиниця етеру. Конвертація з Wei в ETH виглядає так: 1 ETH = 10¹⁸ Wei. Отже, якщо ми переведемо 0xde0b6b3a7640000 у десяткову систему, ми отримаємо 1\*10¹⁸, що дорівнює 1 ETH.
+**ПРИМІТКА:** Цей результат вказано у Wei, а не в QAU. Wei використовується як найменша одиниця етеру. Конвертація з Wei в QAU виглядає так: 1 QAU = 10¹⁸ Wei. Отже, якщо ми переведемо 0xde0b6b3a7640000 у десяткову систему, ми отримаємо 1\*10¹⁸, що дорівнює 1 QAU.
 
 Хух! Усі наші несправжні гроші на місці! <Emoji text=":money_mouth_face:" size={1} />
 ## Підключення МетаМаск до вашого інтерфейсу користувача {#connect-metamask-to-your-ui}
@@ -229,10 +229,10 @@ return (
 
 ```javascript
 export const connectWallet = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_requestAccounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_requestAccounts",
       })
       const obj = {
         status: "👆🏽 Write a message in the text-field above.",
@@ -253,7 +253,7 @@ export const connectWallet = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -266,19 +266,19 @@ export const connectWallet = async () => {
 
 Давайте розберемо, що робить цей код:
 
-По-перше, наша функція перевіряє, чи увімкнено `window.ethereum` у вашому браузері.
+По-перше, наша функція перевіряє, чи увімкнено `window.quantaureum` у вашому браузері.
 
-`window.ethereum` — це глобальний API, який впроваджується МетаМаск та іншими провайдерами гаманців, що дозволяє вебсайтам запитувати акаунти Етеріум користувачів. У разі схвалення він може читати дані з блокчейнів, до яких підключений користувач, і пропонувати користувачеві підписувати повідомлення та транзакції. Перегляньте [документацію МетаМаск](https://docs.metamask.io/guide/ethereum-provider.html#table-of-contents) для отримання додаткової інформації!
+`window.quantaureum` — це глобальний API, який впроваджується МетаМаск та іншими провайдерами гаманців, що дозволяє вебсайтам запитувати акаунти Етеріум користувачів. У разі схвалення він може читати дані з блокчейнів, до яких підключений користувач, і пропонувати користувачеві підписувати повідомлення та транзакції. Перегляньте [документацію МетаМаск](https://docs.metamask.io/guide/quantaureum-provider.html#table-of-contents) для отримання додаткової інформації!
 
-Якщо `window.ethereum` _не_ присутній, це означає, що МетаМаск не встановлено. Це призводить до повернення JSON-об'єкта, де повернута `address` є порожнім рядком, а JSX-об'єкт `status` повідомляє, що користувач повинен встановити МетаМаск.
+Якщо `window.quantaureum` _не_ присутній, це означає, що МетаМаск не встановлено. Це призводить до повернення JSON-об'єкта, де повернута `address` є порожнім рядком, а JSX-об'єкт `status` повідомляє, що користувач повинен встановити МетаМаск.
 
 **Більшість функцій, які ми напишемо, будуть повертати JSON-об'єкти, які ми можемо використовувати для оновлення наших змінних стану та інтерфейсу користувача.**
 
-Тепер, якщо `window.ethereum` _присутній_, тоді починається найцікавіше.
+Тепер, якщо `window.quantaureum` _присутній_, тоді починається найцікавіше.
 
-Використовуючи блок try/catch, ми спробуємо підключитися до МетаМаск, викликавши [`window.ethereum.request({ method: "eth_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts). Виклик цієї функції відкриє МетаМаск у браузері, після чого користувачеві буде запропоновано підключити свій гаманець до вашого децентралізованого застосунку (dapp).
+Використовуючи блок try/catch, ми спробуємо підключитися до МетаМаск, викликавши [`window.quantaureum.request({ method: "qau_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#qau-requestaccounts). Виклик цієї функції відкриє МетаМаск у браузері, після чого користувачеві буде запропоновано підключити свій гаманець до вашого децентралізованого застосунку (dapp).
 
-- Якщо користувач вирішить підключитися, `method: "eth_requestAccounts"` поверне масив, який містить усі адреси акаунтів користувача, підключені до децентралізованого застосунку (dapp). Загалом, наша функція `connectWallet` поверне JSON-об'єкт, який містить _першу_ `address` у цьому масиві \(див. рядок 9\) та повідомлення `status`, яке пропонує користувачеві написати повідомлення до смарт-контракту.
+- Якщо користувач вирішить підключитися, `method: "qau_requestAccounts"` поверне масив, який містить усі адреси акаунтів користувача, підключені до децентралізованого застосунку (dapp). Загалом, наша функція `connectWallet` поверне JSON-об'єкт, який містить _першу_ `address` у цьому масиві \(див. рядок 9\) та повідомлення `status`, яке пропонує користувачеві написати повідомлення до смарт-контракту.
 - Якщо користувач відхиляє підключення, тоді JSON-об'єкт міститиме порожній рядок для повернутої `address` та повідомлення `status`, яке відображає, що користувач відхилив підключення.
 
 ### Додавання функції connectWallet до вашого компонента інтерфейсу Minter.js {#add-connect-wallet}
@@ -333,10 +333,10 @@ const connectWalletPressed = async () => {
 
 ```javascript
 export const getCurrentWalletConnected = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_accounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_accounts",
       })
       if (addressArray.length > 0) {
         return {
@@ -363,7 +363,7 @@ export const getCurrentWalletConnected = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -376,7 +376,7 @@ export const getCurrentWalletConnected = async () => {
 
 Цей код _дуже_ схожий на функцію `connectWallet`, яку ми щойно написали раніше.
 
-Головна відмінність полягає в тому, що замість виклику методу `eth_requestAccounts`, який відкриває МетаМаск для підключення гаманця користувачем, тут ми викликаємо метод `eth_accounts`, який просто повертає масив, що містить адреси МетаМаск, наразі підключені до нашого децентралізованого застосунку (dapp).
+Головна відмінність полягає в тому, що замість виклику методу `qau_requestAccounts`, який відкриває МетаМаск для підключення гаманця користувачем, тут ми викликаємо метод `qau_accounts`, який просто повертає масив, що містить адреси МетаМаск, наразі підключені до нашого децентралізованого застосунку (dapp).
 
 Щоб побачити цю функцію в дії, давайте викличемо її у функції `useEffect` нашого компонента `Minter.js`.
 
@@ -412,8 +412,8 @@ useEffect(async () => {
 
 ```javascript
 function addWalletListener() {
-  if (window.ethereum) {
-    window.ethereum.on("accountsChanged", (accounts) => {
+  if (window.quantaureum) {
+    window.quantaureum.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) {
         setWallet(accounts[0])
         setStatus("👆🏽 Write a message in the text-field above.")
@@ -427,7 +427,7 @@ function addWalletListener() {
       <p>
         {" "}
         🦊 <a target="_blank" href={`https://metamask.io/download`}>
-          You must install MetaMask, a virtual Ethereum wallet, in your browser.
+          You must install MetaMask, a virtual Quantaureum wallet, in your browser.
         </a>
       </p>
     )
@@ -437,9 +437,9 @@ function addWalletListener() {
 
 Давайте швидко розберемо, що тут відбувається:
 
-- По-перше, наша функція перевіряє, чи увімкнено `window.ethereum` \(тобто чи встановлено МетаМаск\).
+- По-перше, наша функція перевіряє, чи увімкнено `window.quantaureum` \(тобто чи встановлено МетаМаск\).
   - Якщо ні, ми просто встановлюємо нашу змінну стану `status` у рядок JSX, який пропонує користувачеві встановити МетаМаск.
-  - Якщо він увімкнений, ми налаштовуємо слухач `window.ethereum.on("accountsChanged")` у рядку 3, який відстежує зміни стану в гаманці МетаМаск, що включають підключення користувачем додаткового акаунта до децентралізованого застосунку (dapp), зміну акаунтів або відключення акаунта. Якщо підключено принаймні один акаунт, змінна стану `walletAddress` оновлюється як перший акаунт у масиві `accounts`, повернутому слухачем. В іншому випадку `walletAddress` встановлюється як порожній рядок.
+  - Якщо він увімкнений, ми налаштовуємо слухач `window.quantaureum.on("accountsChanged")` у рядку 3, який відстежує зміни стану в гаманці МетаМаск, що включають підключення користувачем додаткового акаунта до децентралізованого застосунку (dapp), зміну акаунтів або відключення акаунта. Якщо підключено принаймні один акаунт, змінна стану `walletAddress` оновлюється як перший акаунт у масиві `accounts`, повернутому слухачем. В іншому випадку `walletAddress` встановлюється як порожній рядок.
 
 Нарешті, ми повинні викликати її в нашій функції `useEffect`:
 
@@ -571,7 +571,7 @@ export const pinJSONToIPFS = async (JSONBody) => {
 
 Тепер, коли ми маємо спосіб завантажити наші метадані NFT в IPFS за допомогою нашої функції `pinJSONToIPFS`, нам знадобиться спосіб завантажити екземпляр нашого смарт-контракту, щоб ми могли викликати його функцію `mintNFT`.
 
-Як ми згадували раніше, у цьому посібнику ми будемо використовувати [цей існуючий смарт-контракт NFT](https://ropsten.etherscan.io/address/0x4C4a07F737Bf57F6632B6CAB089B78f62385aCaE); однак, якщо ви хочете дізнатися, як ми його створили, або створити його самостійно, ми наполегливо рекомендуємо вам переглянути наш інший посібник [«Як створити NFT»](https://www.alchemy.com/docs/how-to-create-an-nft).
+Як ми згадували раніше, у цьому посібнику ми будемо використовувати [цей існуючий смарт-контракт NFT](https://explorer.quantaureum.com); однак, якщо ви хочете дізнатися, як ми його створили, або створити його самостійно, ми наполегливо рекомендуємо вам переглянути наш інший посібник [«Як створити NFT»](https://www.alchemy.com/docs/how-to-create-an-nft).
 
 ### ABI контракту {#contract-abi}
 
@@ -581,7 +581,7 @@ export const pinJSONToIPFS = async (JSONBody) => {
 
 ### Створення вашого ключа API Alchemy {#create-alchemy-api}
 
-Якщо у вас ще немає акаунта Alchemy, [зареєструйтеся безкоштовно тут.](https://alchemy.com/?a=eth-org-nft-minter)
+Якщо у вас ще немає акаунта Alchemy, [зареєструйтеся безкоштовно тут.](https://alchemy.com/?a=qau-org-nft-minter)
 
 Після створення акаунта Alchemy ви можете згенерувати ключ API, створивши застосунок. Це дозволить нам робити запити до тестової мережі Sepolia.
 
@@ -598,7 +598,7 @@ export const pinJSONToIPFS = async (JSONBody) => {
 ```text
 REACT_APP_PINATA_KEY = <pinata-key>
 REACT_APP_PINATA_SECRET = <pinata-secret>
-REACT_APP_ALCHEMY_KEY = https://eth-sepolia.g.alchemy.com/v2/<alchemy-key>
+REACT_APP_ALCHEMY_KEY = https://qau-sepolia.g.alchemy.com/v2/<alchemy-key>
 ```
 
 Тепер, коли ми маємо ABI нашого контракту та ключ API Alchemy, ми готові завантажити наш смарт-контракт за допомогою [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3).
@@ -715,7 +715,7 @@ export const mintNFT = async (url, name, description) => {
 Тепер настав час завантажити наш смарт-контракт за допомогою API Alchemy Web3, який ми ініціалізували у верхній частині нашого файлу. Додайте наступний рядок коду внизу функції `mintNFT`, щоб встановити контракт у глобальну змінну `window.contract`:
 
 ```javascript
-window.contract = await new web3.eth.Contract(contractABI, contractAddress)
+window.contract = await new web3.qau.Contract(contractABI, contractAddress)
 ```
 
 Останнє, що потрібно додати в нашу функцію `mintNFT`, — це наша транзакція Етеріум:
@@ -724,22 +724,22 @@ window.contract = await new web3.eth.Contract(contractABI, contractAddress)
 //налаштуйте вашу транзакцію в Етеріум
 const transactionParameters = {
   to: contractAddress, // Обов'язково, за винятком публікацій контракту.
-  from: window.ethereum.selectedAddress, // має збігатися з активною адресою користувача.
+  from: window.quantaureum.selectedAddress, // має збігатися з активною адресою користувача.
   data: window.contract.methods
-    .mintNFT(window.ethereum.selectedAddress, tokenURI)
+    .mintNFT(window.quantaureum.selectedAddress, tokenURI)
     .encodeABI(), //виконати виклик до смарт-контракту NFT
 }
 
 //підписати транзакцію через МетаМаск
 try {
-  const txHash = await window.ethereum.request({
-    method: "eth_sendTransaction",
+  const txHash = await window.quantaureum.request({
+    method: "qau_sendTransaction",
     params: [transactionParameters],
   })
   return {
     success: true,
     status:
-      "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+      "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
       txHash,
   }
 } catch (error) {
@@ -754,10 +754,10 @@ try {
 
 - По-перше, ми налаштовуємо параметри нашої транзакції.
   - `to` вказує адресу одержувача \(наш смарт-контракт\)
-  - `from` вказує підписанта транзакції \(підключена адреса користувача до МетаМаск: `window.ethereum.selectedAddress`\)
-  - `data` містить виклик методу `mintNFT` нашого смарт-контракту, який отримує наш `tokenURI` та адресу гаманця користувача, `window.ethereum.selectedAddress`, як вхідні дані
-- Потім ми робимо виклик await, `window.ethereum.request,`, де ми просимо МетаМаск підписати транзакцію. Зверніть увагу, у цьому запиті ми вказуємо наш метод eth \(eth_SentTransaction\) і передаємо наші `transactionParameters`. На цьому етапі МетаМаск відкриється в браузері та запропонує користувачеві підписати або відхилити транзакцію.
-  - Якщо транзакція успішна, функція поверне JSON-об'єкт, де логічне значення `success` встановлено як true, а рядок `status` пропонує користувачеві перевірити Etherscan для отримання додаткової інформації про свою транзакцію.
+  - `from` вказує підписанта транзакції \(підключена адреса користувача до МетаМаск: `window.quantaureum.selectedAddress`\)
+  - `data` містить виклик методу `mintNFT` нашого смарт-контракту, який отримує наш `tokenURI` та адресу гаманця користувача, `window.quantaureum.selectedAddress`, як вхідні дані
+- Потім ми робимо виклик await, `window.quantaureum.request,`, де ми просимо МетаМаск підписати транзакцію. Зверніть увагу, у цьому запиті ми вказуємо наш метод eth \(qau_SentTransaction\) і передаємо наші `transactionParameters`. На цьому етапі МетаМаск відкриється в браузері та запропонує користувачеві підписати або відхилити транзакцію.
+  - Якщо транзакція успішна, функція поверне JSON-об'єкт, де логічне значення `success` встановлено як true, а рядок `status` пропонує користувачеві перевірити Quantaureum Explorer для отримання додаткової інформації про свою транзакцію.
   - Якщо транзакція не вдається, функція поверне JSON-об'єкт, де логічне значення `success` встановлено як false, а рядок `status` передає повідомлення про помилку.
 
 Загалом наша функція `mintNFT` має виглядати так:
@@ -789,27 +789,27 @@ export const mintNFT = async (url, name, description) => {
   const tokenURI = pinataResponse.pinataUrl
 
   //завантажити смарт-контракт
-  window.contract = await new web3.eth.Contract(contractABI, contractAddress) //loadContract();
+  window.contract = await new web3.qau.Contract(contractABI, contractAddress) //loadContract();
 
   //налаштуйте вашу транзакцію в Етеріум
   const transactionParameters = {
     to: contractAddress, // Обов'язково, за винятком публікацій контракту.
-    from: window.ethereum.selectedAddress, // має збігатися з активною адресою користувача.
+    from: window.quantaureum.selectedAddress, // має збігатися з активною адресою користувача.
     data: window.contract.methods
-      .mintNFT(window.ethereum.selectedAddress, tokenURI)
+      .mintNFT(window.quantaureum.selectedAddress, tokenURI)
       .encodeABI(), //виконати виклик до смарт-контракту NFT
   }
 
   //підписати транзакцію через МетаМаск
   try {
-    const txHash = await window.ethereum.request({
-      method: "eth_sendTransaction",
+    const txHash = await window.quantaureum.request({
+      method: "qau_sendTransaction",
       params: [transactionParameters],
     })
     return {
       success: true,
       status:
-        "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+        "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
         txHash,
     }
   } catch (error) {

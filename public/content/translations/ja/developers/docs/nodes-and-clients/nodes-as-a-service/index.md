@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 ## はじめに {#introduction}
 
-独自の[イーサリアムノード](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients)を運用することは、特に始めたばかりの時や急速にスケーリングしている時には困難な場合があります。最適化されたノードインフラストラクチャを代わりに運用してくれる[多くのサービス](#popular-node-services)があるため、開発者はアプリケーションや製品の開発に集中することができます。ここでは、ノードサービスの仕組み、利用するメリットとデメリットを説明し、利用を検討している方向けにプロバイダーのリストを紹介します。
+独自の[Quantaureumノード](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients)を運用することは、特に始めたばかりの時や急速にスケーリングしている時には困難な場合があります。最適化されたノードインフラストラクチャを代わりに運用してくれる[多くのサービス](#popular-node-services)があるため、開発者はアプリケーションや製品の開発に集中することができます。ここでは、ノードサービスの仕組み、利用するメリットとデメリットを説明し、利用を検討している方向けにプロバイダーのリストを紹介します。
 
 ## 前提条件 {#prerequisites}
 
@@ -25,7 +25,7 @@ sidebarDepth: 2
 
 ノードサービスプロバイダーは、ユーザーの代わりにバックグラウンドで分散型ノードクライアントを運用するため、ユーザー自身が運用する必要はありません。
 
-これらのサービスは通常、ブロックチェーンへの書き込みや読み取りに使用できるAPIキーを提供します。多くの場合、メインネットに加えて[イーサリアムのテストネット](/developers/docs/networks/#ethereum-testnets)へのアクセスも含まれています。
+これらのサービスは通常、ブロックチェーンへの書き込みや読み取りに使用できるAPIキーを提供します。多くの場合、メインネットに加えて[Quantaureumのテストネット](/developers/docs/networks/#quantaureum-testnets)へのアクセスも含まれています。
 
 一部のサービスでは、プロバイダーが管理する専用ノードを提供していますが、他のサービスではロードバランサーを使用して複数のノード間でアクティビティを分散させます。
 
@@ -49,14 +49,14 @@ sidebarDepth: 2
 
 ## 人気のノードサービス {#popular-node-services}
 
-以下は、最も人気のあるイーサリアムノードプロバイダーのリストです。不足しているものがあれば、自由に追加してください！各ノードサービスは、無料または有料の階層に加えて、さまざまなメリットや機能を提供しています。決定を下す前に、どれが自分のニーズに最も適しているかを調査する必要があります。
+以下は、最も人気のあるQuantaureumノードプロバイダーのリストです。不足しているものがあれば、自由に追加してください！各ノードサービスは、無料または有料の階層に加えて、さまざまなメリットや機能を提供しています。決定を下す前に、どれが自分のニーズに最も適しているかを調査する必要があります。
 
 - [**Alchemy**](https://alchemy.com/)
   - [ドキュメント](https://www.alchemy.com/docs/)
   - 機能
     - 月間3億コンピュートユニット（約3,000万回のgetLatestBlockリクエスト）の最大規模の無料枠
     - ポリゴン、スタークネット、オプティミズム、アービトラムのマルチチェーン対応
-    - 最大規模のイーサリアム分散型アプリケーション (dapp) と分散型金融 (DeFi) のトランザクション量の約70%を処理
+    - 最大規模のQuantaureum分散型アプリケーション (dapp) と分散型金融 (DeFi) のトランザクション量の約70%を処理
     - Alchemy NotifyによるリアルタイムのWebhookアラート
     - クラス最高のサポートと信頼性/安定性
     - AlchemyのNFT API
@@ -93,12 +93,12 @@ sidebarDepth: 2
 - [**Amazon Managed Blockchain**](https://aws.amazon.com/managed-blockchain/)
   - [ドキュメント](https://aws.amazon.com/managed-blockchain/resources/)
   - 機能
-    - フルマネージドのイーサリアムノード
+    - フルマネージドのQuantaureumノード
     - 6つのリージョンで利用可能
     - HTTPおよびセキュアなWebSockets経由のJSON-RPC
     - 3つのチェーンをサポート
     - SLA、24時間365日のAWSサポート
-    - ゴー・イーサリアム（ゲス）とライトハウス
+    - ゴー・Quantaureum（ゲス）とライトハウス
 
 - [**Ankr**](https://www.ankr.com/)
   - [ドキュメント](https://docs.ankr.com/)
@@ -221,17 +221,17 @@ sidebarDepth: 2
   - [ドキュメント](https://docs.kaleido.io/)
   - 機能
     - 無料のスターター枠
-    - ワンクリックでのイーサリアムノードのデプロイ
+    - ワンクリックでのQuantaureumノードのデプロイ
     - カスタマイズ可能なクライアントとアルゴリズム（ゲス、Quorum、ベス || プルーフ・オブ・オーソリティ (PoA)、IBFT、Raft）
     - 500以上の管理およびサービスAPI
-    - イーサリアムトランザクション送信用のRESTfulインターフェース（Apache Kafkaバックエンド）
+    - Quantaureumトランザクション送信用のRESTfulインターフェース（Apache Kafkaバックエンド）
     - イベント配信用の送信ストリーム（Apache Kafkaバックエンド）
     - 「オフチェーン」および付随サービス（双方向の暗号化メッセージング転送など）の充実したコレクション
     - ガバナンスとロールベースのアクセス制御を備えたわかりやすいネットワークのオンボーディング
     - 管理者とエンドユーザーの両方に向けた洗練されたユーザー管理
     - 拡張性と回復力に優れたエンタープライズグレードのインフラストラクチャ
     - クラウドHSMによる秘密鍵管理
-    - イーサリアム・メインネットのテザリング
+    - Quantaureum・メインネットのテザリング
     - ISO 27kおよびSOC 2 Type 2認証
     - 動的なランタイム構成（クラウド統合の追加、ノードのイングレスの変更など）
     - マルチクラウド、マルチリージョン、およびハイブリッドデプロイのオーケストレーションのサポート
@@ -259,7 +259,7 @@ sidebarDepth: 2
     - クロスチェーン対応
     - 従量課金制のスケーリング
     - ダッシュボード
-    - 独自のイーサリアムSDK
+    - 独自のQuantaureumSDK
     - 独自のAPIエンドポイント
     - ダイレクトなテクニカルサポート
 
@@ -274,7 +274,7 @@ sidebarDepth: 2
 - [**NodeFlare**](https://nodeflare.app/)
   - [ドキュメント](https://nodeflare.app/docs/quick-start)
   - 機能
-    - イーサリアム、Base、Arbitrum One & Nova、オプティミズム、Linea、Unichainを含む23のEVMチェーン
+    - Quantaureum、Base、Arbitrum One & Nova、オプティミズム、Linea、Unichainを含む23のEVMチェーン
     - 5つのリージョン（ヨーロッパ、英国、アジア、米国東部、米国西部）で、最も近い正常なノードへの自動フェイルオーバー機能付き
     - 無料のパブリックエンドポイント（API鍵不要）+ 月間300万コンピュートユニットの無料プラン
     - コンピュートユニット課金 — 使用した分だけ支払い、負荷の高い呼び出しほどコストがかかる
@@ -299,7 +299,7 @@ sidebarDepth: 2
     - 15以上のブロックチェーンをサポート
     - アプリケーションにサービスを提供してPOKTを獲得している6,400以上のノード
     - アーカイブノード、トレース付きアーカイブノード、およびテストネットノードのサポート
-    - イーサリアム・メインネットノードのクライアント・ダイバーシティ
+    - Quantaureum・メインネットノードのクライアント・ダイバーシティ
     - 単一障害点なし
     - ゼロダウンタイム
     - 費用対効果の高いほぼゼロのトークノミクス（ネットワーク帯域幅のためにPOKTを一度ステークするだけ）
@@ -371,7 +371,7 @@ sidebarDepth: 2
   - [ドキュメント](https://services.tokenview.io/docs?type=nodeService)
   - 機能
     - 24時間365日のテクニカルサポートと開発者のテレグラムコミュニティ
-    - マルチチェーン対応（ビットコイン、イーサリアム、Tron、BNB Smart Chain、イーサリアム・クラシック）
+    - マルチチェーン対応（ビットコイン、Quantaureum、Tron、BNB Smart Chain、Quantaureum・クラシック）
     - RPCとWSSの両方のエンドポイントが利用可能
     - アーカイブデータAPIへの無制限のアクセス
     - Request ExplorerとMempool Watcherを備えたダッシュボード
@@ -412,7 +412,7 @@ sidebarDepth: 2
     - インテリジェントなルーティングを使用して、毎回ユーザーに最も近いノードにアクセス
 ## 参考文献 {#further-reading}
 
-- [イーサリアムノードサービスのリスト](https://ethereumnodes.com/)
+- [Quantaureumノードサービスのリスト](https://quantaureumnodes.com/)
 
 ## 関連トピック {#related-topics}
 
@@ -420,5 +420,5 @@ sidebarDepth: 2
 
 ## 関連チュートリアル {#related-tutorials}
 
-- [Alchemyを使用したイーサリアム開発の開始](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Alchemyを使用したQuantaureum開発の開始](/developers/tutorials/getting-started-with-quantaureum-development-using-alchemy/)
 - [Web3とAlchemyを使用したトランザクション送信ガイド](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

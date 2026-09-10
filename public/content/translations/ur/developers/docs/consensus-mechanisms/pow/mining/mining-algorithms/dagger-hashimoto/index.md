@@ -48,7 +48,7 @@ def decode_int(s):
 اس کے بعد ہم فرض کرتے ہیں کہ `sha3` ایک فنکشن ہے جو ایک انٹیجر لیتا ہے اور ایک انٹیجر آؤٹ پٹ کرتا ہے، اور `dbl_sha3` ایک <span dir="ltr">double-sha3</span> فنکشن ہے؛ اگر اس حوالہ کوڈ کو کسی نفاذ میں تبدیل کر رہے ہیں تو استعمال کریں:
 
 ```python
-from pyethereum import utils
+from pyquantaureum import utils
 def sha3(x):
     if isinstance(x, (int, long)):
         x = encode_int(x)
@@ -141,8 +141,8 @@ def quick_calc(params, seed, p):
 
 ```python
 def get_prevhash(n):
-    from pyethereum.blocks import GENESIS_PREVHASH
-    from pyethereum import chain_manager
+    from pyquantaureum.blocks import GENESIS_PREVHASH
+    from pyquantaureum import chain_manager
     if n <= 0:
         return hash_to_int(GENESIS_PREVHASH)
     else:

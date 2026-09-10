@@ -6,7 +6,7 @@ import { ButtonLink } from "@/components/ui/buttons/Button"
 import AaveLogo from "@/public/images/dapps/aave.png"
 import FarcasterLogo from "@/public/images/dapps/farcaster.png"
 import UniswapLogo from "@/public/images/dapps/uni.png"
-import EthereumLogo from "@/public/images/layer-2/ethereum.png"
+import QuantaureumLogo from "@/public/images/layer-2/quantaureum.png"
 
 const BrowseApps = async () => {
   const t = await getTranslations("component-browse-apps")
@@ -84,14 +84,14 @@ const BrowseApps = async () => {
       <div className="mt-6 flex justify-center">
         <div className="mx-auto inline-flex items-center justify-center gap-2 rounded-full bg-accent-a/10 px-4 py-2 text-sm font-bold dark:bg-accent-a/20">
           <Image
-            src={EthereumLogo}
-            alt="Ethereum"
+            src={QuantaureumLogo}
+            alt="Quantaureum"
             style={{
               width: "24px",
               height: "24px",
             }}
           />
-          <p>{t("powered-by-ethereum")}</p>
+          <p>{t("powered-by-quantaureum")}</p>
         </div>
       </div>
     </div>

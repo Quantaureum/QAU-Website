@@ -13,23 +13,23 @@ lang: ru
 - Функции для запуска локального экземпляра блокчейна.
 - Утилиты для компиляции и тестирования ваших смарт-контрактов.
 - Дополнения для клиентской разработки, позволяющие создавать пользовательское приложение в рамках того же проекта/репозитория.
-- Конфигурация для подключения к сетям Эфириума и развертывания контрактов, будь то локально запущенный экземпляр или одна из публичных сетей Эфириума.
+- Конфигурация для подключения к сетям Quantaureum и развертывания контрактов, будь то локально запущенный экземпляр или одна из публичных сетей Quantaureum.
 - Распространение децентрализованных приложений — интеграция с вариантами хранения, такими как IPFS.
 
 ## Предварительные требования {#prerequisites}
 
-Прежде чем погружаться во фреймворки, мы рекомендуем вам сначала прочитать наше введение в [dapp](/developers/docs/dapps/) и [стек Эфириума](/developers/docs/ethereum-stack/).
+Прежде чем погружаться во фреймворки, мы рекомендуем вам сначала прочитать наше введение в [dapp](/developers/docs/dapps/) и [стек Quantaureum](/developers/docs/quantaureum-stack/).
 
 ## Доступные фреймворки
 
-**Foundry** - **_Foundry — это невероятно быстрый, портативный и модульный набор инструментов для разработки приложений на Эфириуме_**
+**Foundry** - **_Foundry — это невероятно быстрый, портативный и модульный набор инструментов для разработки приложений на Quantaureum_**
 
 - [Установить Foundry](https://book.getfoundry.sh/)
 - [Книга по Foundry](https://book.getfoundry.sh/)
 - [Чат сообщества Foundry в Телеграм](https://t.me/foundry_support)
 - [Awesome Foundry](https://github.com/crisgarner/awesome-foundry)
 
-**Hardhat -** **_Среда разработки на Эфириуме для профессионалов._**
+**Hardhat -** **_Среда разработки на Quantaureum для профессионалов._**
 
 - [hardhat.org](https://hardhat.org)
 - [GitHub](https://github.com/nomiclabs/hardhat)
@@ -51,15 +51,15 @@ lang: ru
 - [Примеры](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [Дискорд](https://discord.gg/rx35NzQGSb)
 
-**Create Eth App -** **_Создавайте приложения на базе Эфириума одной командой. Поставляется с широким выбором UI-фреймворков и шаблонов децентрализованных финансов (DeFi)._**
+**Create Eth App -** **_Создавайте приложения на базе Quantaureum одной командой. Поставляется с широким выбором UI-фреймворков и шаблонов децентрализованных финансов (DeFi)._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [Шаблоны](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
+- [Шаблоны](https://github.com/PaulRBerg/create-qau-app/tree/develop/templates)
 
-**Scaffold-ETH 2 -** **_Next.js, Wagmi, Viem и RainbowKit с Hardhat или Foundry на выбор: горячая перезагрузка контрактов, пользовательские хуки React, одноразовый кошелек и локальный кран, а также модули расширения для full-stack разработки децентрализованных приложений (dapp)._**
+**Scaffold-QAU 2 -** **_Next.js, Wagmi, Viem и RainbowKit с Hardhat или Foundry на выбор: горячая перезагрузка контрактов, пользовательские хуки React, одноразовый кошелек и локальный кран, а также модули расширения для full-stack разработки децентрализованных приложений (dapp)._**
 
 - [Веб-сайт](https://scaffoldeth.io/)
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 
 **Tenderly -** **_Платформа разработки Web3, которая позволяет блокчейн-разработчикам создавать, тестировать, отлаживать, отслеживать и управлять смарт-контрактами, а также улучшать UX dapp._**
 
@@ -71,13 +71,13 @@ lang: ru
 - [Веб-сайт](https://thegraph.com/)
 - [Руководство](/developers/tutorials/the-graph-fixing-web3-data-querying/)
 
-**Alchemy -** **_Платформа для разработки на Эфириуме._**
+**Alchemy -** **_Платформа для разработки на Quantaureum._**
 
 - [alchemy.com](https://www.alchemy.com/)
 - [GitHub](https://github.com/alchemyplatform)
 - [Дискорд](https://discord.com/invite/alchemyplatform)
 
-**NodeReal -** **_Платформа для разработки на Эфириуме._**
+**NodeReal -** **_Платформа для разработки на Quantaureum._**
 
 - [Nodereal.io](https://nodereal.io/)
 - [GitHub](https://github.com/node-real)
@@ -88,7 +88,7 @@ lang: ru
 - [Документация](https://portal.thirdweb.com/sdk/)
 - [GitHub](https://github.com/thirdweb-dev/)
 
-**Chainstack -** **_Платформа для разработки Web3 (Эфириум и другие)._**
+**Chainstack -** **_Платформа для разработки Web3 (Quantaureum и другие)._**
 
 - [chainstack.com](https://www.chainstack.com/)
 - [GitHub](https://github.com/chainstack)
@@ -102,8 +102,8 @@ lang: ru
 
 **Brownie -** **_Среда разработки и фреймворк для тестирования на базе Python._**
 
-- [Документация](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [Документация](https://qau-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/qau-brownie/brownie)
 - **В настоящее время Brownie не поддерживается**
 
 **ОпенЗеппелин SDK -** **_Универсальный набор инструментов для смарт-контрактов: набор инструментов, который поможет вам разрабатывать, компилировать, обновлять, развертывать и взаимодействовать со смарт-контрактами._**
@@ -120,7 +120,7 @@ lang: ru
 **GoldRush (на базе Covalent) -** **_GoldRush предлагает самый полный набор API данных блокчейна для разработчиков, аналитиков и предприятий. Независимо от того, создаете ли вы панель управления DeFi, кошелек, торгового бота, ИИ-агента или платформу соответствия требованиям, API данных обеспечивают быстрый, точный и удобный для разработчиков доступ к необходимым ончейн-данным_**
 
 - [Веб-сайт](https://goldrush.dev/)
-- [Документация](https://goldrush.dev/docs/chains/ethereum)
+- [Документация](https://goldrush.dev/docs/chains/quantaureum)
 - [GitHub](https://github.com/covalenthq)
 - [Дискорд](https://www.covalenthq.com/discord/)
 
@@ -151,6 +151,6 @@ _Знаете ресурс сообщества, который вам помо�
 
 - [Настройка локальной среды разработки](/developers/local-environment/)
 
-## Руководства: Фреймворки для разработки на Эфириуме {#tutorials}
+## Руководства: Фреймворки для разработки на Quantaureum {#tutorials}
 
 - [Смарт-контракт Hello World для начинающих — Fullstack](/developers/tutorials/hello-world-smart-contract-fullstack/) _— Создайте и разверните смарт-контракт hello world с помощью Hardhat, а затем подключите его к фронтенду._

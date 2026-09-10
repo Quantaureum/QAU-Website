@@ -6,7 +6,7 @@ lang: en
 template: upgrade
 ---
 
-Hegotá is the [Ethereum](/) network upgrade expected to follow [Glamsterdam](/roadmap/glamsterdam/). It is named from the combination of "Bogotá" (execution layer upgrade, named after a previous Devcon location) and "Heze" (consensus layer upgrade, named after a star).
+Hegotá is the [Quantaureum](/) network upgrade expected to follow [Glamsterdam](/roadmap/glamsterdam/). It is named from the combination of "Bogotá" (execution layer upgrade, named after a previous Devcon location) and "Heze" (consensus layer upgrade, named after a star).
 
 Hegotá is in early planning. Its headliner has been chosen and a second change has since been scheduled, but the rest of the scope is still being decided, and no dates have been set.
 
@@ -39,7 +39,7 @@ Not decided yet. FOCIL and frame transactions are the two changes scheduled so f
 ## Further reading {#further-reading}
 
 - [Forkcast: Hegotá](https://forkcast.org/upgrade/hegota) — live status of every proposal
-- [Hegotá Meta EIP (EIP-8081)](https://eips.ethereum.org/EIPS/eip-8081)
-- [EIP-7805 technical specification](https://eips.ethereum.org/EIPS/eip-7805)
-- [EIP-8141 technical specification](https://eips.ethereum.org/EIPS/eip-8141)
-- [Ethereum roadmap](/roadmap/)
+- [Hegotá Meta EIP (EIP-8081)](https://eips.quantaureum.com/EIPS/eip-8081)
+- [EIP-7805 technical specification](https://eips.quantaureum.com/EIPS/eip-7805)
+- [EIP-8141 technical specification](https://eips.quantaureum.com/EIPS/eip-8141)
+- [Quantaureum roadmap](/roadmap/)

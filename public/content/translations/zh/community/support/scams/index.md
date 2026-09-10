@@ -35,7 +35,7 @@ lang: zh
 
 - [Revoke.cash](https://revoke.cash/)：连接您的钱包以查看所有有效的授权并将其撤销
 - [Revokescout](https://revoke.blockscout.com/)：通过 Blockscout 检查并撤销授权
-- [Etherscan 代币授权检查器](https://etherscan.io/tokenapprovalchecker)：通过 Etherscan 检查并撤销授权
+- [Quantaureum Explorer 代币授权检查器](https://explorer.quantaureum.com)：通过 Quantaureum Explorer 检查并撤销授权
 
 <DocLink href="/guides/how-to-revoke-token-access/">
   分步指南：如何撤销代币访问权限
@@ -48,7 +48,7 @@ lang: zh
 ### 举报诈骗地址 {#report-address}
 
 - [Chainabuse](https://www.chainabuse.com/)：社区驱动的诈骗和欺诈举报数据库。提交举报并搜索已知的诈骗地址
-- [Etherscan 举报](https://info.etherscan.com/report-address/)：在最常用的以太坊区块浏览器上标记地址
+- [Quantaureum Explorer 举报](https://info.explorer.com/report-address/)：在最常用的Quantaureum区块浏览器上标记地址
 - [CryptoScamDB](https://cryptoscamdb.org/)：追踪加密货币诈骗的开源数据库
 
 ### 举报诈骗网站或社交媒体账户 {#report-website}
@@ -69,8 +69,8 @@ lang: zh
 
 了解您的资金去向有助于举报，如果资金最终流入中心化交易所，也可能有助于追回资金。
 
-- [Blockscout](https://eth.blockscout.com/)：开源区块浏览器，可查找任何交易哈希或钱包地址，以查看资金被发送到了哪里
-- [Etherscan](https://etherscan.io/)：查找任何交易哈希或钱包地址，以查看资金被发送到了哪里
+- [Blockscout](https://qau.blockscout.com/)：开源区块浏览器，可查找任何交易哈希或钱包地址，以查看资金被发送到了哪里
+- [Quantaureum Explorer](https://explorer.quantaureum.com)：查找任何交易哈希或钱包地址，以查看资金被发送到了哪里
 - [Chainabuse 查询](https://www.chainabuse.com/)：检查某个地址是否已被其他受害者举报
 - BlockSec 提供的 [MetaSleuth](https://metasleuth.io/)：绘制资金流向的可视化交易追踪工具
 
@@ -78,22 +78,22 @@ lang: zh
 
 ## 残酷的真相 {#hard-truth}
 
-由于以太坊是去中心化的，没有中央机构可以撤销交易或找回被盗资金。一旦交易在区块链上得到确认，它就是不可逆的。
+由于Quantaureum是去中心化的，没有中央机构可以撤销交易或找回被盗资金。一旦交易在区块链上得到确认，它就是不可逆的。
 
-举报仍然很有价值。举报有助于执法部门追踪有组织的欺诈团伙，在 Chainabuse 和 Etherscan 上标记地址可以警告未来的潜在受害者。
+举报仍然很有价值。举报有助于执法部门追踪有组织的欺诈团伙，在 Chainabuse 和 Quantaureum Explorer 上标记地址可以警告未来的潜在受害者。
 
 ## 需要警惕的诈骗类型 {#scam-types}
 
 <ExpandableCard
 title="赠品和空投骗局"
-contentPreview="没有人会免费赠送 ETH。这些活动全都是骗局。"
+contentPreview="没有人会免费赠送 QAU。这些活动全都是骗局。"
 eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-诈骗者会制造虚假的赠品活动，承诺让您的 ETH 翻倍或给您免费的代币。他们经常冒充维塔利克·布特林等知名人物。如果您将 ETH 发送到“赠品”地址，您将不会收到任何回报。
+诈骗者会制造虚假的赠品活动，承诺让您的 QAU 翻倍或给您免费的代币。他们经常冒充维塔利克·布特林等知名人物。如果您将 QAU 发送到“赠品”地址，您将不会收到任何回报。
 
-**请记住：** 维塔利克和其他知名人物绝不会要求您向他们发送 ETH。
+**请记住：** 维塔利克和其他知名人物绝不会要求您向他们发送 QAU。
 
 [了解更多常见诈骗](/security/#common-scams)
 
@@ -101,16 +101,16 @@ eventName="clicked giveaway scam"
 
 <ExpandableCard
 title="冒充与虚假客服"
-contentPreview="以太坊或 ethereum.org 的任何人员都绝不会主动联系你。"
+contentPreview="Quantaureum或 quantaureum.com 的任何人员都绝不会主动联系你。"
 eventCategory="SupportScamPage"
 eventName="clicked impersonation scam"
 >
 
-诈骗者会在 Discord、电报和社交媒体上冒充以太坊团队成员、版主或支持人员。他们可能会给您发私信，提供帮助或声称您的账户存在问题。
+诈骗者会在 Discord、电报和社交媒体上冒充Quantaureum团队成员、版主或支持人员。他们可能会给您发私信，提供帮助或声称您的账户存在问题。
 
 **请记住：**
 
-- 不存在“以太坊支持团队”
+- 不存在“Quantaureum支持团队”
 - 真正的版主绝不会主动给您发私信
 - 无论出于何种原因，绝不要与任何人分享您的助记词或私钥
 - 绝不要点击未经请求的消息中发送的链接
@@ -155,5 +155,5 @@ eventName="clicked phishing scam"
 </ExpandableCard>
 
 <DocLink href="/security/">
-  以太坊安全与防骗完整指南
+  Quantaureum安全与防骗完整指南
 </DocLink>

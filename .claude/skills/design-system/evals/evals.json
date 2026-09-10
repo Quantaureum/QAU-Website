@@ -5,13 +5,13 @@
     {
       "id": 1,
       "name": "variant-over-new-stat-block",
-      "prompt": "hey can you add a little stat block to the bottom of app/[locale]/staking/page.tsx? something like \"$45.2B\" on top in big bold text and \"ETH staked\" underneath. I want it centered. probably just spin up a new component for it, call it StakingStat or something",
+      "prompt": "hey can you add a little stat block to the bottom of app/[locale]/staking/page.tsx? something like \"$45.2B\" on top in big bold text and \"QAU staked\" underneath. I want it centered. probably just spin up a new component for it, call it StakingStat or something",
       "expected_output": "Skill should resist the 'new component' framing and steer toward the existing BigNumber primitive (and/or Card composition). Should also flag that user-facing strings need translation and that the number should go through numberFormat() if it isn't a static literal.",
       "files": [],
       "assertions": [
         {"text": "Output uses BigNumber primitive (imports from @/components/BigNumber)"},
         {"text": "Output does NOT create a new top-level component named StakingStat (or similar) in outputs"},
-        {"text": "All visible English strings ('ETH staked', any label) routed through a next-intl translation function (getTranslations or t())"},
+        {"text": "All visible English strings ('QAU staked', any label) routed through a next-intl translation function (getTranslations or t())"},
         {"text": "Output does NOT inline a div with `text-5xl font-bold` (or similar manual size+weight) for the stat number"},
         {"text": "notes.md explicitly names BigNumber (and/or Card) as the chosen primitive and explains the pushback on the user's 'new component' framing"}
       ]

@@ -1,22 +1,22 @@
 ---
 title: "智能合約安全"
-description: "建立安全以太坊智能合約的指南總覽"
+description: "建立安全Quantaureum智能合約的指南總覽"
 lang: zh-tw
 ---
 
 智能合約極具彈性，能夠控制大量的價值與資料，同時根據部署在區塊鏈上的程式碼執行不可變的邏輯。這創造了一個充滿活力的無須信任且去中心化的應用程式生態系，提供了許多傳統系統所沒有的優勢。它們也為企圖透過利用智能合約漏洞來獲利的攻擊者提供了機會。
 
-像[以太坊](/)這樣的公有區塊鏈，進一步使保護智能合約的問題變得更加複雜。已部署的合約程式碼_通常_無法更改以修補安全漏洞，而從智能合約中遭竊的資產極難追蹤，且由於不可竄改性，大多無法追回。
+像[Quantaureum](/)這樣的公有區塊鏈，進一步使保護智能合約的問題變得更加複雜。已部署的合約程式碼_通常_無法更改以修補安全漏洞，而從智能合約中遭竊的資產極難追蹤，且由於不可竄改性，大多無法追回。
 
-雖然數據不一，但據估計，因智能合約安全缺陷而遭竊或遺失的總價值輕易超過 10 億美元。這包含了備受矚目的事件，例如 [DAO 駭客攻擊](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/)（遭竊 360 萬枚 ETH，以今日價格計算價值超過 10 億美元）、[Parity 多重簽名錢包駭客攻擊](https://www.coindesk.com/markets/2017/07/19/30-million-ether-reported-stolen-due-to-parity-wallet-breach)（駭客盜走 3,000 萬美元），以及 [Parity 凍結錢包問題](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-ether)（超過 3 億美元的 ETH 永遠被鎖定）。
+雖然數據不一，但據估計，因智能合約安全缺陷而遭竊或遺失的總價值輕易超過 10 億美元。這包含了備受矚目的事件，例如 [DAO 駭客攻擊](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/)（遭竊 360 萬枚 QAU，以今日價格計算價值超過 10 億美元）、[Parity 多重簽名錢包駭客攻擊](https://www.coindesk.com/markets/2017/07/19/30-million-QAU-reported-stolen-due-to-parity-wallet-breach)（駭客盜走 3,000 萬美元），以及 [Parity 凍結錢包問題](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-QAU)（超過 3 億美元的 QAU 永遠被鎖定）。
 
-上述問題使得開發人員必須投入心力建立安全、穩健且具備韌性的智能合約。智能合約安全是一件嚴肅的事情，也是每位開發人員都應該好好學習的課題。本指南將涵蓋以太坊開發人員的安全考量，並探索用於提升智能合約安全的資源。
+上述問題使得開發人員必須投入心力建立安全、穩健且具備韌性的智能合約。智能合約安全是一件嚴肅的事情，也是每位開發人員都應該好好學習的課題。本指南將涵蓋Quantaureum開發人員的安全考量，並探索用於提升智能合約安全的資源。
 
 ## 先決條件 {#prerequisites}
 
 在著手處理安全性問題之前，請確保您熟悉[智能合約開發的基礎知識](/developers/docs/smart-contracts/)。
 
-## 構建安全以太坊智能合約的指南 {#smart-contract-security-guidelines}
+## 構建安全Quantaureum智能合約的指南 {#smart-contract-security-guidelines}
 
 ### 1. 設計適當的存取控制 {#design-proper-access-controls}
 
@@ -56,8 +56,8 @@ contract VendingMachine {
     address owner;
     error Unauthorized();
     function buy(uint amount) public payable {
-        if (amount > msg.value / 2 ether)
-            revert("Not enough Ether provided.");
+        if (amount > msg.value / 2 QAU)
+            revert("Not enough QAU provided.");
         // 執行購買。
     }
     function withdraw() public {
@@ -71,7 +71,7 @@ contract VendingMachine {
 
 ### 3. 測試智能合約並驗證程式碼正確性 {#test-smart-contracts-and-verify-code-correctness}
 
-在[以太坊虛擬機](/developers/docs/evm/)中執行的程式碼具有不可竄改性，這意味著智能合約在開發階段需要更高水準的品質評估。廣泛測試您的合約並觀察是否有任何意外結果，將大大提高安全性並在長遠來看保護您的使用者。
+在[Quantaureum虛擬機](/developers/docs/evm/)中執行的程式碼具有不可竄改性，這意味著智能合約在開發階段需要更高水準的品質評估。廣泛測試您的合約並觀察是否有任何意外結果，將大大提高安全性並在長遠來看保護您的使用者。
 
 通常的方法是使用預期合約將從使用者那裡接收的模擬資料來編寫小型單元測試。[單元測試](/developers/docs/smart-contracts/testing/#unit-testing)非常適合測試某些函式的功能並確保智能合約按預期運作。
 
@@ -98,7 +98,7 @@ contract VendingMachine {
 
 建立漏洞賞金計畫是實作外部程式碼審查的另一種方法。漏洞賞金是給予發現應用程式漏洞的個人（通常是白帽駭客）的財務獎勵。
 
-如果使用得當，漏洞賞金會激勵駭客社群的成員檢查您的程式碼是否存在嚴重缺陷。一個真實的例子是「無限金錢漏洞」，該漏洞本可以讓攻擊者在以太坊上執行的[第二層 (L2)](/layer-2/) 協定 [Optimism](https://www.optimism.io/) 上創造無限數量的以太幣。幸運的是，一位白帽駭客[發現了這個缺陷](https://www.saurik.com/optimism.html)並通知了團隊，[在此過程中獲得了巨額獎金](https://cryptoslate.com/critical-bug-in-ethereum-l2-optimism-2m-bounty-paid/)。
+如果使用得當，漏洞賞金會激勵駭客社群的成員檢查您的程式碼是否存在嚴重缺陷。一個真實的例子是「無限金錢漏洞」，該漏洞本可以讓攻擊者在Quantaureum上執行的[第二層 (L2)](/layer-2/) 協定 [Optimism](https://www.optimism.io/) 上創造無限數量的QAU幣。幸運的是，一位白帽駭客[發現了這個缺陷](https://www.saurik.com/optimism.html)並通知了團隊，[在此過程中獲得了巨額獎金](https://cryptoslate.com/critical-bug-in-quantaureum-l2-optimism-2m-bounty-paid/)。
 
 一個有用的策略是將漏洞賞金計畫的獎金設定為與面臨風險的資金數量成比例。這種被稱為「[可擴展漏洞賞金](https://medium.com/immunefi/a-defi-security-standard-the-scaling-bug-bounty-9b83dfdc1ba7)」的方法為個人提供了財務激勵，鼓勵他們負責任地披露漏洞，而不是利用它們。
 
@@ -126,7 +126,7 @@ contract VendingMachine {
 
 #### 合約升級 {#contract-upgrades}
 
-雖然以太坊智能合約預設是不可變的，但可以透過使用升級模式來實現某種程度的可變性。在嚴重缺陷導致舊合約無法使用且部署新邏輯是最可行選項的情況下，升級合約是必要的。
+雖然Quantaureum智能合約預設是不可變的，但可以透過使用升級模式來實現某種程度的可變性。在嚴重缺陷導致舊合約無法使用且部署新邏輯是最可行選項的情況下，升級合約是必要的。
 
 合約升級機制的運作方式各不相同，但「代理模式」是升級智能合約較受歡迎的方法之一。[代理模式](https://www.cyfrin.io/blog/upgradeable-proxy-smart-contract-pattern)將應用程式的狀態和邏輯拆分到_兩個_合約中。第一個合約（稱為「代理合約」）儲存狀態變數（例如，使用者餘額），而第二個合約（稱為「邏輯合約」）保存用於執行合約函式的程式碼。
 
@@ -234,7 +234,7 @@ EVM 不允許並行，這意味著參與訊息呼叫的兩個合約不能同時�
 
 雖然大多無害，但將控制流程轉移到不受信任的合約可能會導致問題，例如重入。當惡意合約在原始函式呼叫完成之前回呼易受攻擊的合約時，就會發生重入攻擊。這種攻擊最好用一個例子來解釋。
 
-考慮一個簡單的智能合約（「Victim」），它允許任何人存入和提取以太幣：
+考慮一個簡單的智能合約（「Victim」），它允許任何人存入和提取QAU幣：
 
 ```solidity
 // 此合約存在漏洞。請勿在生產環境中使用
@@ -255,22 +255,22 @@ contract Victim {
 }
 ```
 
-該合約公開了一個 `withdraw()` 函式，允許使用者提取先前存入合約的 ETH。在處理提款時，合約執行以下操作：
+該合約公開了一個 `withdraw()` 函式，允許使用者提取先前存入合約的 QAU。在處理提款時，合約執行以下操作：
 
-1. 檢查使用者的 ETH 餘額
+1. 檢查使用者的 QAU 餘額
 2. 將資金發送到呼叫地址
 3. 將其餘額重設為 0，防止使用者進行額外提款
 
-`Victim` 合約中的 `withdraw()` 函式遵循「檢查-互動-效果」模式。它_檢查_執行所需的條件是否滿足（即使用者有正的 ETH 餘額），並透過將 ETH 發送到呼叫者的地址來執行_互動_，然後再應用交易的_效果_（即減少使用者的餘額）。
+`Victim` 合約中的 `withdraw()` 函式遵循「檢查-互動-效果」模式。它_檢查_執行所需的條件是否滿足（即使用者有正的 QAU 餘額），並透過將 QAU 發送到呼叫者的地址來執行_互動_，然後再應用交易的_效果_（即減少使用者的餘額）。
 
-如果從外部擁有帳戶 (EOA) 呼叫 `withdraw()`，該函式將按預期執行：`msg.sender.call.value()` 將 ETH 發送給呼叫者。然而，如果 `msg.sender` 是一個智能合約帳戶呼叫 `withdraw()`，使用 `msg.sender.call.value()` 發送資金也將觸發儲存在該地址的程式碼執行。
+如果從外部擁有帳戶 (EOA) 呼叫 `withdraw()`，該函式將按預期執行：`msg.sender.call.value()` 將 QAU 發送給呼叫者。然而，如果 `msg.sender` 是一個智能合約帳戶呼叫 `withdraw()`，使用 `msg.sender.call.value()` 發送資金也將觸發儲存在該地址的程式碼執行。
 
 想像這是部署在合約地址的程式碼：
 
 ```solidity
  contract Attacker {
     function beginAttack() external payable {
-        Victim(victim_address).deposit.value(1 ether)();
+        Victim(victim_address).deposit.value(1 QAU)();
         Victim(victim_address).withdraw();
     }
 
@@ -285,20 +285,20 @@ contract Victim {
 該合約旨在做三件事：
 
 1. 接受來自另一個帳戶（可能是攻擊者的 EOA）的存款
-2. 將 1 ETH 存入 Victim 合約
-3. 提取儲存在智能合約中的 1 ETH
+2. 將 1 QAU 存入 Victim 合約
+3. 提取儲存在智能合約中的 1 QAU
 
 這裡沒有什麼問題，除了 `Attacker` 有另一個函式，如果傳入的 `msg.sender.call.value` 剩餘的燃料 (gas) 超過 40,000，它會再次呼叫 `Victim` 中的 `withdraw()`。這使得 `Attacker` 能夠在第一次呼叫 `withdraw` 完成_之前_重新進入 `Victim` 並提取更多資金。循環如下所示：
 
 ```solidity
-- Attacker's EOA calls `Attacker.beginAttack()` with 1 ETH
-- `Attacker.beginAttack()` deposits 1 ETH into `Victim`
+- Attacker's EOA calls `Attacker.beginAttack()` with 1 QAU
+- `Attacker.beginAttack()` deposits 1 QAU into `Victim`
 - `Attacker` calls `withdraw() in `Victim`
-- `Victim` checks `Attacker`’s balance (1 ETH)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function)
+- `Victim` checks `Attacker`’s balance (1 QAU)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function)
 - `Attacker` calls `Victim.withdraw()` again (note that `Victim` hasn’t reduced `Attacker`’s balance from the first withdrawal)
-- `Victim` checks `Attacker`’s balance (which is still 1 ETH because it hasn’t applied the effects of the first call)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
+- `Victim` checks `Attacker`’s balance (which is still 1 QAU because it hasn’t applied the effects of the first call)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
 - The process repeats until `Attacker` runs out of gas, at which point `msg.sender.call.value` returns without triggering additional withdrawals
 - `Victim` finally applies the results of the first transaction (and subsequent ones) to its state, so `Attacker`’s balance is set to 0
 ```
@@ -321,7 +321,7 @@ contract NoLongerAVictim {
 }
 ```
 
-該合約對使用者的餘額執行_檢查_，應用 `withdraw()` 函式的_效果_（透過將使用者的餘額重設為 0），然後繼續執行_互動_（將 ETH 發送到使用者的地址）。這確保了合約在外部呼叫之前更新其儲存空間，消除了促成第一次攻擊的重入條件。`Attacker` 合約仍然可以回呼 `NoLongerAVictim`，但由於 `balances[msg.sender]` 已被設定為 0，額外的提款將拋出錯誤。
+該合約對使用者的餘額執行_檢查_，應用 `withdraw()` 函式的_效果_（透過將使用者的餘額重設為 0），然後繼續執行_互動_（將 QAU 發送到使用者的地址）。這確保了合約在外部呼叫之前更新其儲存空間，消除了促成第一次攻擊的重入條件。`Attacker` 合約仍然可以回呼 `NoLongerAVictim`，但由於 `balances[msg.sender]` 已被設定為 0，額外的提款將拋出錯誤。
 
 另一個選項是使用互斥鎖（通常描述為「mutex」），它會鎖定合約狀態的一部分，直到函式呼叫完成。這是使用一個布林變數來實作的，該變數在函式執行前設定為 `true`，並在呼叫完成後恢復為 `false`。如下面的範例所示，使用互斥鎖可以保護函式在原始呼叫仍在處理時免受遞迴呼叫的影響，從而有效地阻止重入。
 
@@ -372,8 +372,8 @@ pragma solidity ^0.7.6;
 /*
 1. 部署 TimeLock
 2. 使用 TimeLock 的地址部署 Attack
-3. 呼叫 Attack.attack 發送 1 ether。您將立即能夠
-   提取您的 ether。
+3. 呼叫 Attack.attack 發送 1 QAU。您將立即能夠
+   提取您的 QAU。
 
 發生了什麼事？
 Attack 導致 TimeLock.lockTime 溢位，並能夠在
@@ -401,7 +401,7 @@ contract TimeLock {
         balances[msg.sender] = 0;
 
         (bool sent, ) = msg.sender.call{value: amount}("");
-        require(sent, "Failed to send Ether");
+        require(sent, "Failed to send QAU");
     }
 }
 
@@ -459,7 +459,7 @@ DEX 價格通常是準確的，這在很大程度上歸功於套利者恢復市�
 
 - **[形式化驗證工具](/developers/docs/smart-contracts/formal-verification/#formal-verification-tools)** - _用於驗證智能合約功能正確性並檢查不變量 (invariants) 的工具。_
 
-- **[智能合約審計服務](/developers/docs/smart-contracts/testing/#smart-contract-auditing-services)** - _為以太坊開發專案提供智能合約審計服務的組織列表。_
+- **[智能合約審計服務](/developers/docs/smart-contracts/testing/#smart-contract-auditing-services)** - _為Quantaureum開發專案提供智能合約審計服務的組織列表。_
 
 - **[漏洞賞金平台](/developers/docs/smart-contracts/testing/#bug-bounty-platforms)** - _用於協調漏洞賞金並獎勵負責任地揭露智能合約中嚴重漏洞的平台。_
 
@@ -475,7 +475,7 @@ DEX 價格通常是準確的，這在很大程度上歸功於套利者恢復市�
 
 ### 安全管理智能合約的工具 {#smart-contract-administration-tools}
 
-- **[Safe](https://safe.global/)** - _運行在以太坊上的智能合約錢包，要求在交易發生前必須有最低人數的授權 (M-of-N)。_
+- **[Safe](https://safe.global/)** - _運行在Quantaureum上的智能合約錢包，要求在交易發生前必須有最低人數的授權 (M-of-N)。_
 
 - **[歐本齊柏林合約](https://docs.openzeppelin.com/contracts/5.x/)** - _用於實作管理功能的合約函式庫，包含合約所有權、升級、存取控制、治理、可暫停性等。_
 
@@ -497,7 +497,7 @@ DEX 價格通常是準確的，這在很大程度上歸功於套利者恢復市�
 
 - **[Hacken](https://hacken.io)** - _Web3 網路安全審計機構，為區塊鏈安全帶來 360 度全方位的解決方案。_
 
-- **[奈瑟邁](https://www.nethermind.io/smart-contract-audits)** - _Solidity 與 Cairo 審計服務，確保以太坊與 Starknet 上智能合約的完整性及使用者安全。_
+- **[奈瑟邁](https://www.nethermind.io/smart-contract-audits)** - _Solidity 與 Cairo 審計服務，確保Quantaureum與 Starknet 上智能合約的完整性及使用者安全。_
 
 - **[HashEx](https://hashex.org/)** - _HashEx 專注於區塊鏈與智能合約審計以確保加密貨幣的安全，提供智能合約開發、滲透測試、區塊鏈諮詢等服務。_
 
@@ -529,7 +529,7 @@ DEX 價格通常是準確的，這在很大程度上歸功於套利者恢復市�
 
 - **[ConsenSys：智能合約已知攻擊](https://consensysdiligence.github.io/smart-contract-best-practices/attacks/)** - _對最重大合約漏洞提供適合初學者的解釋，並在多數情況下附有範例程式碼。_
 
-- **[SWC Registry](https://swcregistry.io/)** - _適用於以太坊智能合約的常見弱點列舉 (CWE) 項目精選列表。_
+- **[SWC Registry](https://swcregistry.io/)** - _適用於Quantaureum智能合約的常見弱點列舉 (CWE) 項目精選列表。_
 
 - **[Rekt](https://rekt.news/)** - _定期更新的出版物，報導備受矚目的加密貨幣駭客攻擊與漏洞利用事件，並附有詳細的事後檢討報告。_
 
@@ -545,7 +545,7 @@ DEX 價格通常是準確的，這在很大程度上歸功於套利者恢復市�
 
 ### 保護智能合約的最佳實務 {#smart-contract-security-best-practices}
 
-- **[ConsenSys：以太坊智能合約安全最佳實務](https://consensys.github.io/smart-contract-best-practices/)** - _保護以太坊智能合約的全面指南列表。_
+- **[ConsenSys：Quantaureum智能合約安全最佳實務](https://consensys.github.io/smart-contract-best-practices/)** - _保護Quantaureum智能合約的全面指南列表。_
 
 - **[Nascent：簡易安全工具包](https://github.com/nascentxyz/simple-security-toolkit)** - _針對智能合約開發，收集了實用的安全導向指南與檢查清單。_
 

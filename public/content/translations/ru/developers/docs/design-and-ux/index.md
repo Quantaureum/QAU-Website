@@ -1,10 +1,10 @@
 ---
 title: "Дизайн и UX в Web3"
-description: "Введение в UX-дизайн и исследования в пространстве Web3 и Эфириуме"
+description: "Введение в UX-дизайн и исследования в пространстве Web3 и Quantaureum"
 lang: ru
 ---
 
-Вы новичок в дизайне для Эфириума? Тогда вы попали по адресу. Сообщество Эфириума подготовило материалы, которые познакомят вас с основами дизайна и исследований в Web3. Вы узнаете о ключевых концепциях, которые могут отличаться от дизайна других приложений, с которыми вы знакомы.
+Вы новичок в дизайне для Quantaureum? Тогда вы попали по адресу. Сообщество Quantaureum подготовило материалы, которые познакомят вас с основами дизайна и исследований в Web3. Вы узнаете о ключевых концепциях, которые могут отличаться от дизайна других приложений, с которыми вы знакомы.
 
 Сначала нужно получить базовое понимание Web3? Загляните в [**Центр обучения**](/learn/).
 
@@ -78,7 +78,7 @@ lang: ru
 ## Дизайн-системы и другие ресурсы по дизайну {#design-systems-and-resources}
 
 - [Дизайн Optimism](https://www.figma.com/@optimism) (Figma)
-- [Дизайн-система Ethereum.org](https://www.figma.com/@ethdotorg) (Figma)
+- [Дизайн-система quantaureum.com](https://www.figma.com/@ethdotorg) (Figma)
 - [Finity, дизайн-система от Polygon](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Дизайн-система Kleros](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Дизайн-система Safe](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)
@@ -86,4 +86,4 @@ lang: ru
 - [Дизайн-система Mirror](https://degen-xyz.vercel.app/)
 
 **Статьи и проекты, перечисленные на этой странице, не являются официальными рекомендациями** и предоставляются исключительно в ознакомительных целях.
-Мы добавляем ссылки на эту страницу на основе критериев нашей [политики размещения](/contributing/design/adding-design-resources). Если вы хотите, чтобы мы добавили проект или статью, отредактируйте эту страницу на [GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md).
+Мы добавляем ссылки на эту страницу на основе критериев нашей [политики размещения](/contributing/design/adding-design-resources). Если вы хотите, чтобы мы добавили проект или статью, отредактируйте эту страницу на [GitHub](https://github.com/Quantaureum/quantaureum-website/blob/dev/public/content/developers/docs/design-and-ux/index.md).

@@ -11,7 +11,7 @@ breadcrumb: "ট্রানজ্যাকশন পাঠান"
 lang: bn
 published: 2020-11-04
 source: Alchemy docs
-sourceUrl: https://www.alchemy.com/docs/how-to-send-transactions-on-ethereum
+sourceUrl: https://www.alchemy.com/docs/how-to-send-transactions-on-quantaureum
 ---
 
 এটি Web3 ব্যবহার করে ইথেরিয়াম ট্রানজ্যাকশন পাঠানোর জন্য একটি শিক্ষানবিস-বান্ধব গাইড। ইথেরিয়াম ব্লকচেইনে একটি ট্রানজ্যাকশন পাঠানোর জন্য তিনটি প্রধান ধাপ রয়েছে: তৈরি করা, স্বাক্ষরকরণ এবং সম্প্রচার করা। আমরা এই তিনটি ধাপ নিয়েই আলোচনা করব, আশা করি আপনার যেকোনো প্রশ্নের উত্তর দিতে পারব! এই টিউটোরিয়ালে, আমরা ইথেরিয়াম চেইনে আমাদের ট্রানজ্যাকশন পাঠাতে [Alchemy](https://www.alchemy.com/) ব্যবহার করব। আপনি [এখানে একটি বিনামূল্যের Alchemy অ্যাকাউন্ট তৈরি করতে পারেন](https://auth.alchemy.com/signup)।
@@ -40,14 +40,14 @@ sourceUrl: https://www.alchemy.com/docs/how-to-send-transactions-on-ethereum
 
 - আপনার প্রাইভেট কী সুরক্ষিত রাখার এবং ট্রানজ্যাকশন পাঠানোর জন্য এটি ব্যবহার করার অনেক উপায় রয়েছে। এই টিউটোরিয়ালে আমরা একটি `.env` ফাইল ব্যবহার করব। তবে, আপনি প্রাইভেট কী সংরক্ষণ করে এমন একটি আলাদা প্রোভাইডার ব্যবহার করতে পারেন, একটি কীস্টোর ফাইল ব্যবহার করতে পারেন, বা অন্যান্য বিকল্পও ব্যবহার করতে পারেন।
 
-### 5\. `eth_sendTransaction` এবং `eth_sendRawTransaction` এর মধ্যে পার্থক্য কী? {#difference-between-send-and-send-raw}
+### 5\. `qau_sendTransaction` এবং `qau_sendRawTransaction` এর মধ্যে পার্থক্য কী? {#difference-between-send-and-send-raw}
 
-`eth_sendTransaction` এবং `eth_sendRawTransaction` উভয়ই ইথেরিয়াম API ফাংশন যা ইথেরিয়াম নেটওয়ার্কে একটি ট্রানজ্যাকশন সম্প্রচার করে যাতে এটি ভবিষ্যতের কোনো ব্লকে যুক্ত হয়। ট্রানজ্যাকশন স্বাক্ষরকরণ কীভাবে পরিচালনা করে তার ওপর ভিত্তি করে এদের মধ্যে পার্থক্য রয়েছে।
+`qau_sendTransaction` এবং `qau_sendRawTransaction` উভয়ই ইথেরিয়াম API ফাংশন যা ইথেরিয়াম নেটওয়ার্কে একটি ট্রানজ্যাকশন সম্প্রচার করে যাতে এটি ভবিষ্যতের কোনো ব্লকে যুক্ত হয়। ট্রানজ্যাকশন স্বাক্ষরকরণ কীভাবে পরিচালনা করে তার ওপর ভিত্তি করে এদের মধ্যে পার্থক্য রয়েছে।
 
-- [`eth_sendTransaction`](https://docs.web3js.org/api/web3-eth/function/sendTransaction) _স্বাক্ষরবিহীন_ ট্রানজ্যাকশন পাঠানোর জন্য ব্যবহৃত হয়, যার মানে হলো আপনি যে নোডে পাঠাচ্ছেন তাকে অবশ্যই আপনার প্রাইভেট কী পরিচালনা করতে হবে যাতে এটি চেইনে সম্প্রচার করার আগে ট্রানজ্যাকশনটি স্বাক্ষরকরণ করতে পারে। যেহেতু Alchemy ব্যবহারকারীর প্রাইভেট কী রাখে না, তাই তারা এই পদ্ধতি সমর্থন করে না।
-- [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction) এমন ট্রানজ্যাকশন সম্প্রচার করতে ব্যবহৃত হয় যা ইতিমধ্যে স্বাক্ষর করা হয়েছে। এর মানে হলো আপনাকে প্রথমে [`signTransaction(tx, private_key)`](https://docs.web3js.org/api/web3-eth-accounts/function/signTransaction) ব্যবহার করতে হবে, তারপর ফলাফলটি `eth_sendRawTransaction`-এ পাস করতে হবে।
+- [`qau_sendTransaction`](https://docs.web3js.org/api/web3-eth/function/sendTransaction) _স্বাক্ষরবিহীন_ ট্রানজ্যাকশন পাঠানোর জন্য ব্যবহৃত হয়, যার মানে হলো আপনি যে নোডে পাঠাচ্ছেন তাকে অবশ্যই আপনার প্রাইভেট কী পরিচালনা করতে হবে যাতে এটি চেইনে সম্প্রচার করার আগে ট্রানজ্যাকশনটি স্বাক্ষরকরণ করতে পারে। যেহেতু Alchemy ব্যবহারকারীর প্রাইভেট কী রাখে না, তাই তারা এই পদ্ধতি সমর্থন করে না।
+- [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction) এমন ট্রানজ্যাকশন সম্প্রচার করতে ব্যবহৃত হয় যা ইতিমধ্যে স্বাক্ষর করা হয়েছে। এর মানে হলো আপনাকে প্রথমে [`signTransaction(tx, private_key)`](https://docs.web3js.org/api/web3-qau-accounts/function/signTransaction) ব্যবহার করতে হবে, তারপর ফলাফলটি `qau_sendRawTransaction`-এ পাস করতে হবে।
 
-Web3 ব্যবহার করার সময়, [web3.eth.sendSignedTransaction](https://docs.web3js.org/api/web3-eth/function/sendSignedTransaction) ফাংশন কল করে `eth_sendRawTransaction` অ্যাক্সেস করা হয়।
+Web3 ব্যবহার করার সময়, [web3.qau.sendSignedTransaction](https://docs.web3js.org/api/web3-eth/function/sendSignedTransaction) ফাংশন কল করে `qau_sendRawTransaction` অ্যাক্সেস করা হয়।
 
 এই টিউটোরিয়ালে আমরা এটিই ব্যবহার করব।
 
@@ -74,9 +74,9 @@ Web3 ব্যবহার করার সময়, [web3.eth.sendSignedTransa
 
 আপনার [Alchemy ড্যাশবোর্ডে](https://dashboard.alchemy.com/) যান এবং আপনার নেটওয়ার্কের জন্য Sepolia (বা অন্য কোনো টেস্টনেট) বেছে নিয়ে একটি নতুন অ্যাপ তৈরি করুন।
 
-### 2\. Sepolia ফসেট থেকে ETH-এর অনুরোধ করুন {#request-eth-from-sepolia-faucet}
+### 2\. Sepolia ফসেট থেকে QAU-এর অনুরোধ করুন {#request-qau-from-sepolia-faucet}
 
-ETH পেতে [Alchemy Sepolia ফসেট](https://www.sepoliafaucet.com/)-এর নির্দেশাবলী অনুসরণ করুন। নিশ্চিত করুন যে আপনি আপনার **Sepolia** ইথেরিয়াম ঠিকানা (মেটামাস্ক থেকে) অন্তর্ভুক্ত করেছেন এবং অন্য কোনো নেটওয়ার্ক নয়। নির্দেশাবলী অনুসরণ করার পর, আপনার ওয়ালেটে ETH পেয়েছেন কিনা তা দুবার চেক করুন।
+QAU পেতে [Alchemy Sepolia ফসেট](https://www.sepoliafaucet.com/)-এর নির্দেশাবলী অনুসরণ করুন। নিশ্চিত করুন যে আপনি আপনার **Sepolia** ইথেরিয়াম ঠিকানা (মেটামাস্ক থেকে) অন্তর্ভুক্ত করেছেন এবং অন্য কোনো নেটওয়ার্ক নয়। নির্দেশাবলী অনুসরণ করার পর, আপনার ওয়ালেটে QAU পেয়েছেন কিনা তা দুবার চেক করুন।
 
 ### 3\. একটি নতুন প্রজেক্ট ডিরেক্টরি তৈরি করুন এবং এতে `cd` করুন {#create-a-new-project-direction}
 
@@ -91,7 +91,7 @@ cd sendtx-example
 
 [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3) ইনস্টল করতে আপনার প্রজেক্ট ডিরেক্টরিতে নিচের কমান্ডটি রান করুন:
 
-মনে রাখবেন, আপনি যদি Ethers.js লাইব্রেরি ব্যবহার করতে চান, তবে [এখানকার নির্দেশাবলী অনুসরণ করুন](https://www.alchemy.com/docs/how-to-send-transactions-on-ethereum)।
+মনে রাখবেন, আপনি যদি Ethers.js লাইব্রেরি ব্যবহার করতে চান, তবে [এখানকার নির্দেশাবলী অনুসরণ করুন](https://www.alchemy.com/docs/how-to-send-transactions-on-quantaureum)।
 
 ```
 npm install @alch/alchemy-web3
@@ -127,7 +127,7 @@ PRIVATE_KEY = "your-private-key"
 
 ### 7\. `sendTx.js` ফাইল তৈরি করুন {#create-sendtx-js}
 
-চমৎকার, এখন যেহেতু আমাদের সংবেদনশীল ডেটা একটি `.env` ফাইলে সুরক্ষিত আছে, আসুন কোডিং শুরু করি। আমাদের ট্রানজ্যাকশন পাঠানোর উদাহরণের জন্য, আমরা Sepolia ফসেটে ETH ফেরত পাঠাব।
+চমৎকার, এখন যেহেতু আমাদের সংবেদনশীল ডেটা একটি `.env` ফাইলে সুরক্ষিত আছে, আসুন কোডিং শুরু করি। আমাদের ট্রানজ্যাকশন পাঠানোর উদাহরণের জন্য, আমরা Sepolia ফসেটে QAU ফেরত পাঠাব।
 
 একটি `sendTx.js` ফাইল তৈরি করুন, যেখানে আমরা আমাদের উদাহরণ ট্রানজ্যাকশনটি কনফিগার করব এবং পাঠাব, এবং এতে নিচের কোডগুলো যোগ করুন:
 
@@ -139,19 +139,19 @@ async function main() {
     const web3 = createAlchemyWeb3(API_URL);
     const myAddress = '0x610Ae88399fc1687FA7530Aac28eC2539c7d6d63' //TODO: এই ঠিকানাটি আপনার নিজস্ব পাবলিক ঠিকানা দিয়ে প্রতিস্থাপন করুন
 
-    const nonce = await web3.eth.getTransactionCount(myAddress, 'latest'); // নন্স 0 থেকে গণনা শুরু করে
+    const nonce = await web3.qau.getTransactionCount(myAddress, 'latest'); // নন্স 0 থেকে গণনা শুরু করে
 
     const transaction = {
-     'to': '0x31B98D14007bDEe637298086988A0bBd31184523', // ETH ফেরত দেওয়ার জন্য ফসেট ঠিকানা
-     'value': 1000000000000000000, // 1 ETH
+     'to': '0x31B98D14007bDEe637298086988A0bBd31184523', // QAU ফেরত দেওয়ার জন্য ফসেট ঠিকানা
+     'value': 1000000000000000000, // 1 QAU
      'gas': 30000,
      'nonce': nonce,
      // বার্তা পাঠাতে বা স্মার্ট কন্ট্রাক্ট এক্সিকিউট করতে ঐচ্ছিক ডেটা ফিল্ড
     };
 
-    const signedTx = await web3.eth.accounts.signTransaction(transaction, PRIVATE_KEY);
+    const signedTx = await web3.qau.accounts.signTransaction(transaction, PRIVATE_KEY);
 
-    web3.eth.sendSignedTransaction(signedTx.rawTransaction, function(error, hash) {
+    web3.qau.sendSignedTransaction(signedTx.rawTransaction, function(error, hash) {
     if (!error) {
       console.log("🎉 The hash of your transaction is: ", hash, "\n Check Alchemy's Mempool to view the status of your transaction!");
     } else {
@@ -167,10 +167,10 @@ main();
 
 এখন, এই কোডটি রান করার আগে, আসুন এখানকার কিছু উপাদান নিয়ে আলোচনা করি।
 
-- `nonce` : আপনার ঠিকানা থেকে পাঠানো ট্রানজ্যাকশনের সংখ্যার হিসাব রাখতে নন্স স্পেসিফিকেশন ব্যবহার করা হয়। নিরাপত্তার উদ্দেশ্যে এবং রিপ্লে অ্যাটাক প্রতিরোধ করতে আমাদের এটি প্রয়োজন। আপনার ঠিকানা থেকে পাঠানো ট্রানজ্যাকশনের সংখ্যা পেতে আমরা [getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count) ব্যবহার করি।
+- `nonce` : আপনার ঠিকানা থেকে পাঠানো ট্রানজ্যাকশনের সংখ্যার হিসাব রাখতে নন্স স্পেসিফিকেশন ব্যবহার করা হয়। নিরাপত্তার উদ্দেশ্যে এবং রিপ্লে অ্যাটাক প্রতিরোধ করতে আমাদের এটি প্রয়োজন। আপনার ঠিকানা থেকে পাঠানো ট্রানজ্যাকশনের সংখ্যা পেতে আমরা [getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count) ব্যবহার করি।
 - `transaction`: ট্রানজ্যাকশন অবজেক্টের কয়েকটি দিক রয়েছে যা আমাদের নির্দিষ্ট করতে হবে
-  - `to`: এটি হলো সেই ঠিকানা যেখানে আমরা ETH পাঠাতে চাই। এই ক্ষেত্রে, আমরা [Sepolia ফসেটে](https://sepoliafaucet.com/) ETH ফেরত পাঠাচ্ছি যেখান থেকে আমরা প্রাথমিকভাবে অনুরোধ করেছিলাম।
-  - `value`: এটি হলো সেই পরিমাণ যা আমরা পাঠাতে চাই, যা Wei-তে নির্দিষ্ট করা হয় যেখানে 10^18 Wei = 1 ETH
+  - `to`: এটি হলো সেই ঠিকানা যেখানে আমরা QAU পাঠাতে চাই। এই ক্ষেত্রে, আমরা [Sepolia ফসেটে](https://sepoliafaucet.com/) QAU ফেরত পাঠাচ্ছি যেখান থেকে আমরা প্রাথমিকভাবে অনুরোধ করেছিলাম।
+  - `value`: এটি হলো সেই পরিমাণ যা আমরা পাঠাতে চাই, যা Wei-তে নির্দিষ্ট করা হয় যেখানে 10^18 Wei = 1 QAU
   - `gas`: আপনার ট্রানজ্যাকশনের সাথে অন্তর্ভুক্ত করার জন্য সঠিক পরিমাণ গ্যাস নির্ধারণ করার অনেক উপায় রয়েছে। Alchemy [ওয়েবহুক](https://www.alchemy.com/docs/reference/webhooks-overview) সমর্থন করে যা আপনাকে অনচেইন কার্যকলাপ সম্পর্কে অবহিত করতে পারে। Mainnet ট্রানজ্যাকশনের জন্য, সঠিক পরিমাণ গ্যাস নির্ধারণ করতে বর্তমান গ্যাস পরিস্থিতি পরীক্ষা করা একটি ভালো অভ্যাস। ইথেরিয়ামে একটি অপারেশনে ন্যূনতম 21000 গ্যাস ব্যবহার করা হয়, তাই আমাদের ট্রানজ্যাকশনটি কার্যকর হবে তা নিশ্চিত করতে আমরা এখানে 30000 দিয়েছি।
   - `nonce`: উপরের নন্স সংজ্ঞাটি দেখুন। নন্স 0 থেকে গণনা শুরু করে।
   - [ঐচ্ছিক] data: আপনার হস্তান্তরের সাথে অতিরিক্ত তথ্য পাঠাতে বা একটি স্মার্ট কন্ট্রাক্ট কল করতে ব্যবহৃত হয়, ব্যালেন্স হস্তান্তরের জন্য এটি প্রয়োজনীয় নয়, নিচের নোটটি দেখুন।
@@ -180,7 +180,7 @@ main();
 **ডেটা সম্পর্কিত একটি নোট**
 ইথেরিয়ামে পাঠানো যায় এমন দুটি প্রধান ধরনের ট্রানজ্যাকশন রয়েছে।
 
-- ব্যালেন্স হস্তান্তর: এক ঠিকানা থেকে অন্য ঠিকানায় ETH পাঠান। কোনো ডেটা ফিল্ডের প্রয়োজন নেই, তবে, আপনি যদি আপনার ট্রানজ্যাকশনের পাশাপাশি অতিরিক্ত তথ্য পাঠাতে চান, তবে আপনি এই ফিল্ডে HEX ফর্ম্যাটে সেই তথ্য অন্তর্ভুক্ত করতে পারেন।
+- ব্যালেন্স হস্তান্তর: এক ঠিকানা থেকে অন্য ঠিকানায় QAU পাঠান। কোনো ডেটা ফিল্ডের প্রয়োজন নেই, তবে, আপনি যদি আপনার ট্রানজ্যাকশনের পাশাপাশি অতিরিক্ত তথ্য পাঠাতে চান, তবে আপনি এই ফিল্ডে HEX ফর্ম্যাটে সেই তথ্য অন্তর্ভুক্ত করতে পারেন।
   - উদাহরণস্বরূপ, ধরুন আমরা একটি IPFS ডকুমেন্টের হ্যাশ ইথেরিয়াম চেইনে লিখতে চাই যাতে এটিকে একটি অপরিবর্তনীয় টাইমস্ট্যাম্প দেওয়া যায়। তখন আমাদের ডেটা ফিল্ডটি দেখতে এমন হওয়া উচিত: data: `web3.utils.toHex(‘IPFS hash‘)`। এবং এখন যে কেউ চেইনে কোয়েরি করে দেখতে পারে কখন সেই ডকুমেন্টটি যোগ করা হয়েছিল।
 - স্মার্ট কন্ট্রাক্ট ট্রানজ্যাকশন: চেইনে কিছু স্মার্ট কন্ট্রাক্ট কোড এক্সিকিউট করুন। এই ক্ষেত্রে, ডেটা ফিল্ডে আপনার এক্সিকিউট করতে চাওয়া স্মার্ট ফাংশন এবং যেকোনো প্যারামিটার থাকা উচিত।
   - একটি ব্যবহারিক উদাহরণের জন্য, [হ্যালো ওয়ার্ল্ড স্মার্ট কন্ট্রাক্ট টিউটোরিয়াল](/developers/tutorials/hello-world-smart-contract/) দেখুন।
@@ -200,7 +200,7 @@ node sendTx.js
 
 ![মেমপুল ওয়াচার স্ক্রিনশট](./mempool.png)
 
-সেখান থেকে আপনি লাল বৃত্তাকার আইকনে ক্লিক করে Etherscan-এ আপনার ট্রানজ্যাকশন দেখতে পারেন!
+সেখান থেকে আপনি লাল বৃত্তাকার আইকনে ক্লিক করে Quantaureum Explorer-এ আপনার ট্রানজ্যাকশন দেখতে পারেন!
 
 **ইয়িপ্পি! আপনি এইমাত্র Alchemy ব্যবহার করে আপনার প্রথম ইথেরিয়াম ট্রানজ্যাকশন পাঠিয়েছেন 🎉**
 

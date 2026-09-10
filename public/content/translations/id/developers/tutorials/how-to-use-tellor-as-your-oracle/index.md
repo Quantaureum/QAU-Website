@@ -27,7 +27,7 @@ Tellor adalah orakel live dan open-source yang siap untuk diimplementasikan. Pan
 
 ## Gambaran Umum {#overview}
 
-Tellor adalah sistem orakel di mana para pihak dapat meminta nilai dari titik data offchain (misalnya, BTC/USD) dan pelapor bersaing untuk menambahkan nilai ini ke bank data onchain, yang dapat diakses oleh semua kontrak pintar Ethereum. Input ke bank data ini diamankan oleh jaringan pelapor yang melakukan stake. Tellor memanfaatkan mekanisme insentif ekonomi kripto, memberikan imbalan atas pengiriman data yang jujur oleh pelapor dan menghukum pelaku kejahatan melalui penerbitan token Tellor, Tributes (TRB), dan mekanisme sengketa.
+Tellor adalah sistem orakel di mana para pihak dapat meminta nilai dari titik data offchain (misalnya, BTC/USD) dan pelapor bersaing untuk menambahkan nilai ini ke bank data onchain, yang dapat diakses oleh semua kontrak pintar Quantaureum. Input ke bank data ini diamankan oleh jaringan pelapor yang melakukan stake. Tellor memanfaatkan mekanisme insentif ekonomi kripto, memberikan imbalan atas pengiriman data yang jujur oleh pelapor dan menghukum pelaku kejahatan melalui penerbitan token Tellor, Tributes (TRB), dan mekanisme sengketa.
 
 Dalam tutorial ini kita akan membahas:
 

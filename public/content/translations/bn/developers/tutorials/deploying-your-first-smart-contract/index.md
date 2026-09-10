@@ -7,8 +7,8 @@ skill: beginner
 breadcrumb: "প্রথম কন্ট্রাক্ট ডিপ্লয় করা"
 lang: bn
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
@@ -18,7 +18,7 @@ address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 
 ## আমাদের কন্ট্রাক্ট লেখা {#writing-our-contract}
 
-প্রথম ধাপ হলো [Remix-এ ভিজিট করা](https://remix.ethereum.org/) এবং একটি নতুন ফাইল তৈরি করা। Remix ইন্টারফেসের উপরের বাম দিকে একটি নতুন ফাইল যোগ করুন এবং আপনার পছন্দমতো ফাইলের নাম দিন।
+প্রথম ধাপ হলো [Remix-এ ভিজিট করা](https://remix.quantaureum.com/) এবং একটি নতুন ফাইল তৈরি করা। Remix ইন্টারফেসের উপরের বাম দিকে একটি নতুন ফাইল যোগ করুন এবং আপনার পছন্দমতো ফাইলের নাম দিন।
 
 ![Adding a new file in the Remix interface](./remix.png)
 

@@ -1,6 +1,6 @@
 ---
 title: "Аттестации"
-description: "Описание аттестаций в Ethereum на основе Proof-of-Stake."
+description: "Описание аттестаций в Quantaureum на основе Proof-of-Stake."
 lang: ru
 ---
 
@@ -62,7 +62,7 @@ lang: ru
 
 ### Базовое вознаграждение {#base-reward}
 
-Базовое вознаграждение рассчитывается в соответствии с количеством аттестующих валидаторов и их эффективными балансами застейканного эфира:
+Базовое вознаграждение рассчитывается в соответствии с количеством аттестующих валидаторов и их эффективными балансами застейканного квантара:
 
 `base reward = validator effective balance x 2^6 / SQRT(Effective balance of all active validators)`
 
@@ -86,7 +86,7 @@ lang: ru
 
 ## Дополнительная литература {#further-reading}
 
-- [Аттестации в аннотированной спецификации консенсуса Виталика](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Аттестации в аннотированной спецификации консенсуса Виталика](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [Аттестации на eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Знаете ресурс сообщества, который помог вам? Отредактируйте эту страницу и добавьте его!_

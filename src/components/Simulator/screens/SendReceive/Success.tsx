@@ -16,14 +16,14 @@ const ICON_SIZE = "text-[4.5rem]"
 
 type SuccessProps = {
   tokenBalances: Array<TokenBalance>
-  sentEthAmount: number
-  ethPrice: number
+  sentQauAmount: number
+  qauPrice: number
   recipient: string
 }
 export const Success = ({
   tokenBalances,
-  sentEthAmount,
-  ethPrice,
+  sentQauAmount,
+  qauPrice,
   recipient,
 }: SuccessProps) => {
   const t = useTranslations("component-wallet-simulator")
@@ -32,9 +32,9 @@ export const Success = ({
   const [showWallet, setShowWallet] = useState(false)
   const [categoryIndex, setCategoryIndex] = useState(0)
 
-  const usdAmount = sentEthAmount * ethPrice
+  const usdAmount = sentQauAmount * qauPrice
   const usdValue = formatWalletUsd(usdAmount)
-  const sentEthValue = formatWalletToken(sentEthAmount, locale)
+  const sentQauValue = formatWalletToken(sentQauAmount, locale)
 
   // Show spinner for defined number of milliseconds, switching "loading" state to false when complete
   const SPINNER_DURATION = 1000
@@ -110,7 +110,7 @@ export const Success = ({
                 ) : (
                   <span>
                     {t.rich("sim-success-sent", {
-                      ethAmount: sentEthValue,
+                      qauAmount: sentQauValue,
                       usdAmount: usdValue,
                       recipient,
                       strong: (chunks) => <strong>{chunks}</strong>,

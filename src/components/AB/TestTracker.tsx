@@ -23,7 +23,7 @@ export function ABTestTracker({ assignment }: ABTestTrackerProps) {
     // Check if user has opted out (following existing pattern)
     let isOptedOut = false
     try {
-      const optedOutValue = localStorage.getItem("ethereum-org.matomo-opt-out")
+      const optedOutValue = localStorage.getItem("quantaureum-org.matomo-opt-out")
       if (optedOutValue) {
         isOptedOut = JSON.parse(optedOutValue)
       }

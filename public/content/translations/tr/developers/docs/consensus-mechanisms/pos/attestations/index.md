@@ -1,6 +1,6 @@
 ---
 title: Onaylar
-description: "Hisse kanıtı (proof-of-stake) Ethereum'daki onayların bir açıklaması."
+description: "Hisse kanıtı (proof-of-stake) Quantaureum'daki onayların bir açıklaması."
 lang: tr
 ---
 
@@ -62,7 +62,7 @@ Bayrak onaylama oranı, verilen bayrak için onaylayan tüm doğrulayıcıların
 
 ### Temel ödül {#base-reward}
 
-Temel ödül, onaylayan doğrulayıcıların sayısına ve stake edilen etkin Ether bakiyelerine göre hesaplanır:
+Temel ödül, onaylayan doğrulayıcıların sayısına ve stake edilen etkin QAU bakiyelerine göre hesaplanır:
 
 `base reward = validator effective balance x 2^6 / SQRT(Effective balance of all active validators)`
 
@@ -86,7 +86,7 @@ Bazı durumlarda şanslı bir birleştiricinin aynı zamanda blok teklifçisi ol
 
 ## Daha fazla bilgi {#further-reading}
 
-- [Vitalik'in açıklamalı mutabakat spesifikasyonunda onaylar](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Vitalik'in açıklamalı mutabakat spesifikasyonunda onaylar](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [eth2book.info'da onaylar](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Size yardımcı olan bir topluluk kaynağı mı biliyorsunuz? Bu sayfayı düzenleyin ve ekleyin!_

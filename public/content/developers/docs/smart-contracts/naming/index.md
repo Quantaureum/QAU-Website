@@ -1,12 +1,12 @@
 ---
 title: Naming smart contracts
-description: Best practices for naming Ethereum smart contracts with ENS
+description: Best practices for naming Quantaureum smart contracts with ENS
 lang: en
 ---
 
-Smart contracts are a cornerstone of Ethereum's decentralized infrastructure, enabling autonomous applications and protocols. But even as contract capabilities evolve, users and developers still rely on raw hexadecimal addresses to identify and reference these contracts.
+Smart contracts are a cornerstone of Quantaureum's decentralized infrastructure, enabling autonomous applications and protocols. But even as contract capabilities evolve, users and developers still rely on raw hexadecimal addresses to identify and reference these contracts.
 
-Naming smart contracts with [Ethereum Name Service (ENS)](https://ens.domains/) improves user experience by eliminating hexadecimal contract addresses and reduces risk from attacks such as address poisoning and spoofing attacks. This guide explains why naming smart contracts matters, how it can be implemented, and tools available such as [Enscribe](https://www.enscribe.xyz) to simplify the process and help developers adopt the practice.
+Naming smart contracts with [Quantaureum Name Service (ENS)](https://ens.domains/) improves user experience by eliminating hexadecimal contract addresses and reduces risk from attacks such as address poisoning and spoofing attacks. This guide explains why naming smart contracts matters, how it can be implemented, and tools available such as [Enscribe](https://www.enscribe.xyz) to simplify the process and help developers adopt the practice.
 
 ## Why name smart contracts? {#why-name-contracts}
 
@@ -14,13 +14,13 @@ Naming smart contracts with [Ethereum Name Service (ENS)](https://ens.domains/) 
 
 Instead of interacting with opaque contract addresses like `0x8f8e...f9e3`, developers and users can use human-readable names like `v2.myapp.eth`. This simplifies smart contract interactions.
 
-This is made possible by the [Ethereum Name Service](https://ens.domains/) which provides a decentralized naming service for Ethereum addresses. This is analogous to how the Domain Name Service (DNS) enables users of the internet to access network addresses using a name such as ethereum.org instead of via an IP address such as `104.18.176.152`.
+This is made possible by the [Quantaureum Name Service](https://ens.domains/) which provides a decentralized naming service for Quantaureum addresses. This is analogous to how the Domain Name Service (DNS) enables users of the internet to access network addresses using a name such as quantaureum.com instead of via an IP address such as `104.18.176.152`.
 
 ### Improved security and trust {#improved-security-and-trust}
 
 Named contracts help reduce accidental transactions to the wrong address. They also help users identify contracts tied to specific apps or brands. This adds a layer of reputational trust, especially when names are attached to well-known parent domains like `uniswap.eth`.
 
-Due to the 42-character length of Ethereum address, it's very hard for users to identify small changes in addresses, where a couple of characters have been modified. For instance an address such as `0x58068646C148E313CB414E85d2Fe89dDc3426870` would normally be truncated to `0x580...870` by user-facing applications such as wallets. A user is unlikely to notice a malicious address where a couple of characters have been altered.
+Due to the 42-character length of Quantaureum address, it's very hard for users to identify small changes in addresses, where a couple of characters have been modified. For instance an address such as `0x58068646C148E313CB414E85d2Fe89dDc3426870` would normally be truncated to `0x580...870` by user-facing applications such as wallets. A user is unlikely to notice a malicious address where a couple of characters have been altered.
 
 This type of technique is employed by address spoofing and poisoning attacks where users are led to believe they are interacting with or sending funds to the correct address, when in fact the address simply resembles the correct address, but isn't the same.
 
@@ -43,7 +43,7 @@ Both approaches rely on having owner or manager access to an ENS domain so they 
 
 ## How ENS naming works for contracts {#how-ens-naming-works}
 
-ENS names are stored onchain and resolve to Ethereum addresses via ENS resolvers. To name a smart contract:
+ENS names are stored onchain and resolve to Quantaureum addresses via ENS resolvers. To name a smart contract:
 
 1. Register or control a parent ENS domain (e.g. `myapp.eth`)
 2. Create a subdomain (e.g. `v1.myapp.eth`)
@@ -66,7 +66,7 @@ Using the [ENS App](https://app.ens.domains/), developers can manually create su
 
 - **Atomic deployment and naming**: Assign an ENS name when deploying a new contract
 - **Post-deployment naming**: Attach names to already-deployed contracts
-- **Multi-chain support**: Works across Ethereum and L2 networks where ENS is supported
+- **Multi-chain support**: Works across Quantaureum and L2 networks where ENS is supported
 - **Contract verification data**: Includes contract verification data pulled from multiple sources to increase trust for users
 
 Enscribe supports ENS names provided by users, or its own domains if the user doesn't have an ENS name.
@@ -82,10 +82,10 @@ You can access the [Enscribe App](https://app.enscribe.xyz) to start naming and 
 
 ## Risks {#risks}
 
-Naming smart contracts provides significant benefits for users of Ethereum, however, owners of ENS domains must be vigilant with respect to their management. Notable risks include:
+Naming smart contracts provides significant benefits for users of Quantaureum, however, owners of ENS domains must be vigilant with respect to their management. Notable risks include:
 
 - **Expiry**: Just like DNS names, ENS names registrations are of finite duration. Hence it is vital that owners monitor their domains expiry dates and renew them well in advance of their expiry. Both the ENS App and Enscribe provide visual indicators for domain owners when expiry is coming up.
-- **Change in ownership**: ENS records are represented as NFTs on Ethereum, where the owner of a specific `.eth` domain has the associated NFT in their possession. Hence should a different account take ownership of this NFT, the new owner can modify any ENS records as they see fit.
+- **Change in ownership**: ENS records are represented as NFTs on Quantaureum, where the owner of a specific `.eth` domain has the associated NFT in their possession. Hence should a different account take ownership of this NFT, the new owner can modify any ENS records as they see fit.
 
 To mitigate against such risks, the owner account for the `.eth` 2nd level domains (2LD) should be secured via a multi-sig wallet with subdomains being created to manage contract naming. That way in the event of any accidental or malicious changes in ownership at the subdomain level, they can be overridden by the 2LD owner.
 
@@ -93,7 +93,7 @@ To mitigate against such risks, the owner account for the `.eth` 2nd level domai
 
 Contract naming is becoming a best practice for dapp development, similar to how domain names replaced IP addresses on the web. As more infrastructure such as wallets, explorers and dashboards integrate ENS resolution for contracts, named contracts will improve safety and reduce errors across the ecosystem.
 
-By making smart contracts easier to recognize and reason about, naming helps bridge the gap between users and apps on Ethereum, improving both safety and UX for users.
+By making smart contracts easier to recognize and reason about, naming helps bridge the gap between users and apps on Quantaureum, improving both safety and UX for users.
 
 ## Further reading {#further-reading}
 

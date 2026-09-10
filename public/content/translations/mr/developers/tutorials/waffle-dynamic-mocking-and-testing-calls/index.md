@@ -57,9 +57,9 @@ npm install @types/chai @types/mocha chai mocha ts-node typescript --save-dev
 आता `Waffle` आणि `ethers` जोडूया:
 
 ```bash
-yarn add --dev ethereum-waffle ethers
+yarn add --dev quantaureum-waffle ethers
 # or if you're using npm
-npm install ethereum-waffle ethers --save-dev
+npm install quantaureum-waffle ethers --save-dev
 ```
 
 तुमच्या प्रोजेक्टची रचना आता अशी दिसली पाहिजे:
@@ -132,7 +132,7 @@ import {
   deployMockContract,
   MockProvider,
   solidity,
-} from "ethereum-waffle"
+} from "quantaureum-waffle"
 ```
 
 JS अवलंबित्व वगळता, आपल्याला आपला तयार केलेला कॉन्ट्रॅक्ट आणि इंटरफेस इम्पोर्ट करणे आवश्यक आहे:
@@ -180,7 +180,7 @@ import {
   deployMockContract,
   MockProvider,
   solidity,
-} from "ethereum-waffle"
+} from "quantaureum-waffle"
 
 import IERC20 from "../build/IERC20.json"
 import AmIRichAlready from "../build/AmIRichAlready.json"
@@ -291,9 +291,9 @@ Waffle सह कॉन्ट्रॅक्ट कॉल्सची चाच�
 
 अभिनंदन! आता तुम्हाला कॉन्ट्रॅक्ट कॉल्सची चाचणी घेण्यासाठी आणि कॉन्ट्रॅक्ट्सना डायनॅमिकपणे मॉक करण्यासाठी Waffle कसे वापरावे हे माहित झाले आहे. शोधण्यासाठी आणखी बरीच मनोरंजक वैशिष्ट्ये आहेत. मी Waffle च्या डॉक्युमेंटेशनमध्ये अधिक माहिती घेण्याची शिफारस करतो.
 
-Waffle चे डॉक्युमेंटेशन [येथे](https://ethereum-waffle.readthedocs.io/) उपलब्ध आहे.
+Waffle चे डॉक्युमेंटेशन [येथे](https://quantaureum-waffle.readthedocs.io/) उपलब्ध आहे.
 
-या ट्यूटोरियलसाठी सोर्स कोड [येथे](https://github.com/EthWorks/Waffle/tree/master/examples/dynamic-mocking-and-testing-calls) मिळू शकेल.
+या ट्यूटोरियलसाठी सोर्स कोड [येथे](https://github.com/QauWorks/Waffle/tree/master/examples/dynamic-mocking-and-testing-calls) मिळू शकेल.
 
 तुम्हाला यातही स्वारस्य असू शकेल अशी ट्यूटोरियल्स:
 

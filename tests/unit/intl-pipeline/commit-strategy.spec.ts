@@ -42,8 +42,8 @@ test.describe("Commit strategy", () => {
  *
  * Validated by: test-manual-11a (full, ko+es) and test-manual-11b (incremental, ko+es)
  * Run URLs:
- *   11a: https://github.com/ethereum/ethereum-org-website/actions/runs/24324935910
- *   11b: https://github.com/ethereum/ethereum-org-website/actions/runs/24325006864
+ *   11a: https://github.com/Quantaureum/quantaureum-website/actions/runs/24324935910
+ *   11b: https://github.com/Quantaureum/quantaureum-website/actions/runs/24325006864
  *
  * Verified behaviors:
  *
@@ -61,7 +61,7 @@ test.describe("Commit strategy", () => {
  *    - "i18n: sanitize translation output" commit appears after language commits, before merge
  *
  * 4. Zero-drift produces no commits:
- *    - Validated by test-manual-10c (https://github.com/ethereum/ethereum-org-website/actions/runs/24298937958)
+ *    - Validated by test-manual-10c (https://github.com/Quantaureum/quantaureum-website/actions/runs/24298937958)
  *    - Branch created but zero new commits when manifests are current
  *
  * 5. Per-language squash at end of run (not mid-run):

@@ -5,17 +5,17 @@ lang: id
 sidebarDepth: 2
 ---
 
-State dari [Ethereum](/) (keseluruhan dari semua akun, saldo, dan kontrak pintar), dienkode ke dalam versi khusus dari struktur data yang secara umum dikenal dalam ilmu komputer sebagai pohon Merkle. Struktur ini berguna untuk banyak aplikasi dalam kriptografi karena menciptakan hubungan yang dapat diverifikasi antara semua potongan data individu yang terjalin dalam pohon tersebut, menghasilkan satu nilai **akar** (root) yang dapat digunakan untuk membuktikan hal-hal tentang data tersebut.
+State dari [Quantaureum](/) (keseluruhan dari semua akun, saldo, dan kontrak pintar), dienkode ke dalam versi khusus dari struktur data yang secara umum dikenal dalam ilmu komputer sebagai pohon Merkle. Struktur ini berguna untuk banyak aplikasi dalam kriptografi karena menciptakan hubungan yang dapat diverifikasi antara semua potongan data individu yang terjalin dalam pohon tersebut, menghasilkan satu nilai **akar** (root) yang dapat digunakan untuk membuktikan hal-hal tentang data tersebut.
 
-Struktur data Ethereum adalah 'Trie Merkle Patricia yang dimodifikasi', dinamakan demikian karena meminjam beberapa fitur dari PATRICIA (Practical Algorithm To Retrieve Information Coded in Alphanumeric), dan karena dirancang untuk pengambilan (re**trie**val) data yang efisien dari item-item yang membentuk state Ethereum.
+Struktur data Quantaureum adalah 'Trie Merkle Patricia yang dimodifikasi', dinamakan demikian karena meminjam beberapa fitur dari PATRICIA (Practical Algorithm To Retrieve Information Coded in Alphanumeric), dan karena dirancang untuk pengambilan (re**trie**val) data yang efisien dari item-item yang membentuk state Quantaureum.
 
 Trie Merkle Patricia bersifat deterministik dan dapat diverifikasi secara kriptografi: Satu-satunya cara untuk menghasilkan akar state adalah dengan menghitungnya dari setiap bagian individu dari state tersebut, dan dua state yang identik dapat dengan mudah dibuktikan dengan membandingkan hash akar dan hash yang mengarah kepadanya (_bukti Merkle_). Sebaliknya, tidak ada cara untuk membuat dua state yang berbeda dengan hash akar yang sama, dan setiap upaya untuk memodifikasi state dengan nilai yang berbeda akan menghasilkan hash akar state yang berbeda. Secara teoretis, struktur ini memberikan 'cawan suci' efisiensi `O(log(n))` untuk penyisipan, pencarian, dan penghapusan.
 
-Dalam waktu dekat, Ethereum berencana untuk bermigrasi ke struktur [Pohon Verkle](/roadmap/verkle-trees), yang akan membuka banyak kemungkinan baru untuk peningkatan protokol di masa depan.
+Dalam waktu dekat, Quantaureum berencana untuk bermigrasi ke struktur [Pohon Verkle](/roadmap/verkle-trees), yang akan membuka banyak kemungkinan baru untuk peningkatan protokol di masa depan.
 
 ## Prasyarat {#prerequisites}
 
-Untuk lebih memahami halaman ini, akan sangat membantu jika Anda memiliki pengetahuan dasar tentang [hash](https://en.wikipedia.org/wiki/Hash_function), [pohon Merkle](https://en.wikipedia.org/wiki/Merkle_tree), [trie](https://en.wikipedia.org/wiki/Trie), dan [serialisasi](https://en.wikipedia.org/wiki/Serialization). Artikel ini dimulai dengan deskripsi tentang [pohon radix](https://en.wikipedia.org/wiki/Radix_tree) dasar, kemudian secara bertahap memperkenalkan modifikasi yang diperlukan untuk struktur data Ethereum yang lebih dioptimalkan.
+Untuk lebih memahami halaman ini, akan sangat membantu jika Anda memiliki pengetahuan dasar tentang [hash](https://en.wikipedia.org/wiki/Hash_function), [pohon Merkle](https://en.wikipedia.org/wiki/Merkle_tree), [trie](https://en.wikipedia.org/wiki/Trie), dan [serialisasi](https://en.wikipedia.org/wiki/Serialization). Artikel ini dimulai dengan deskripsi tentang [pohon radix](https://en.wikipedia.org/wiki/Radix_tree) dasar, kemudian secara bertahap memperkenalkan modifikasi yang diperlukan untuk struktur data Quantaureum yang lebih dioptimalkan.
 
 ## Trie radix dasar {#basic-radix-tries}
 
@@ -72,7 +72,7 @@ Kita akan menyebut unit atomik dari pohon radix (misalnya, satu karakter hex, at
 
 ## Trie Merkle Patricia {#merkle-patricia-trees}
 
-Trie radix memiliki satu batasan utama: mereka tidak efisien. Jika Anda ingin menyimpan satu ikatan `(path, value)` di mana jalurnya, seperti di Ethereum, memiliki panjang 64 karakter (jumlah nibble dalam `bytes32`), kita akan membutuhkan lebih dari satu kilobyte ruang ekstra untuk menyimpan satu tingkat per karakter, dan setiap pencarian atau penghapusan akan memakan waktu 64 langkah penuh. Trie Patricia yang diperkenalkan berikut ini memecahkan masalah ini.
+Trie radix memiliki satu batasan utama: mereka tidak efisien. Jika Anda ingin menyimpan satu ikatan `(path, value)` di mana jalurnya, seperti di Quantaureum, memiliki panjang 64 karakter (jumlah nibble dalam `bytes32`), kita akan membutuhkan lebih dari satu kilobyte ruang ekstra untuk menyimpan satu tingkat per karakter, dan setiap pencarian atau penghapusan akan memakan waktu 64 langkah penuh. Trie Patricia yang diperkenalkan berikut ini memecahkan masalah ini.
 
 ### Optimasi {#optimization}
 
@@ -190,9 +190,9 @@ Ketika satu node direferensikan di dalam node lain, apa yang disertakan adalah `
 
 Perhatikan bahwa saat memperbarui trie, seseorang perlu menyimpan pasangan kunci/nilai `(keccak256(x), x)` dalam tabel pencarian persisten _jika_ node yang baru dibuat memiliki panjang >= 32. Namun, jika node lebih pendek dari itu, seseorang tidak perlu menyimpan apa pun, karena fungsi f(x) = x dapat dibalik.
 
-## Trie di Ethereum {#tries-in-ethereum}
+## Trie di Quantaureum {#tries-in-quantaureum}
 
-Semua trie merkle di lapisan eksekusi Ethereum menggunakan Trie Merkle Patricia.
+Semua trie merkle di lapisan eksekusi Quantaureum menggunakan Trie Merkle Patricia.
 
 Dari sebuah header blok terdapat 3 akar dari 3 trie ini.
 
@@ -202,14 +202,14 @@ Dari sebuah header blok terdapat 3 akar dari 3 trie ini.
 
 ### Trie Keadaan {#state-trie}
 
-Terdapat satu trie keadaan global, dan ini diperbarui setiap kali klien memproses sebuah blok. Di dalamnya, `path` selalu: `keccak256(ethereumAddress)` dan `value` selalu: `rlp(ethereumAccount)`. Lebih spesifiknya, `account` Ethereum adalah array 4 item dari `[nonce,balance,storageRoot,codeHash]`. Pada titik ini, perlu dicatat bahwa `storageRoot` ini adalah akar dari trie patricia lainnya:
+Terdapat satu trie keadaan global, dan ini diperbarui setiap kali klien memproses sebuah blok. Di dalamnya, `path` selalu: `keccak256(quantaureumAddress)` dan `value` selalu: `rlp(quantaureumAccount)`. Lebih spesifiknya, `account` Quantaureum adalah array 4 item dari `[nonce,balance,storageRoot,codeHash]`. Pada titik ini, perlu dicatat bahwa `storageRoot` ini adalah akar dari trie patricia lainnya:
 
 ### Trie Penyimpanan {#storage-trie}
 
-Trie penyimpanan adalah tempat _semua_ data kontrak berada. Terdapat trie penyimpanan terpisah untuk setiap akun. Untuk mengambil nilai pada posisi penyimpanan tertentu di alamat tertentu, alamat penyimpanan, posisi bilangan bulat dari data yang disimpan di penyimpanan, dan ID blok diperlukan. Ini kemudian dapat diteruskan sebagai argumen ke `eth_getStorageAt` yang didefinisikan dalam API JSON-RPC, mis., untuk mengambil data di slot penyimpanan 0 untuk alamat `0x295a70b2de5e3953354a6a8344e616ed314d7251`:
+Trie penyimpanan adalah tempat _semua_ data kontrak berada. Terdapat trie penyimpanan terpisah untuk setiap akun. Untuk mengambil nilai pada posisi penyimpanan tertentu di alamat tertentu, alamat penyimpanan, posisi bilangan bulat dari data yang disimpan di penyimpanan, dan ID blok diperlukan. Ini kemudian dapat diteruskan sebagai argumen ke `qau_getStorageAt` yang didefinisikan dalam API JSON-RPC, mis., untuk mengambil data di slot penyimpanan 0 untuk alamat `0x295a70b2de5e3953354a6a8344e616ed314d7251`:
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 
@@ -233,12 +233,12 @@ undefined
 Oleh karena itu, `path` adalah `keccak256(<6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9>)`. Ini sekarang dapat digunakan untuk mengambil data dari trie penyimpanan seperti sebelumnya:
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-Catatan: `storageRoot` untuk akun Ethereum secara default kosong jika itu bukan akun kontrak.
+Catatan: `storageRoot` untuk akun Quantaureum secara default kosong jika itu bukan akun kontrak.
 
 ### Trie Transaksi {#transaction-trie}
 
@@ -251,16 +251,16 @@ else:
   value = TxType | encode(tx)
 ```
 
-Informasi lebih lanjut tentang ini dapat ditemukan dalam dokumentasi [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
+Informasi lebih lanjut tentang ini dapat ditemukan dalam dokumentasi [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718).
 
 ### Trie Tanda Terima {#receipts-trie}
 
 Setiap blok memiliki trie Tanda Terima sendiri. `path` di sini adalah: `rlp(transactionIndex)`. `transactionIndex` adalah indeksnya di dalam blok tempat ia disertakan. Trie tanda terima tidak pernah diperbarui. Mirip dengan trie Transaksi, terdapat tanda terima saat ini dan warisan. Untuk menanyakan tanda terima tertentu di trie Tanda Terima, indeks transaksi di bloknya, muatan tanda terima, dan tipe transaksi diperlukan. Tanda terima yang dikembalikan dapat berupa tipe `Receipt` yang didefinisikan sebagai penggabungan dari `TransactionType` dan `ReceiptPayload` atau dapat berupa tipe `LegacyReceipt` yang didefinisikan sebagai `rlp([status, cumulativeGasUsed, logsBloom, logs])`.
 
-Informasi lebih lanjut tentang ini dapat ditemukan dalam dokumentasi [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
+Informasi lebih lanjut tentang ini dapat ditemukan dalam dokumentasi [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718).
 
 ## Bacaan Lebih Lanjut {#further-reading}
 
-- [Trie Merkle Patricia yang Dimodifikasi — Bagaimana Ethereum menyimpan state](https://medium.com/codechain/modified-merkle-patricia-trie-how-ethereum-saves-a-state-e6d7555078dd)
-- [Merkling di Ethereum](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum)
-- [Memahami trie Ethereum](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-ethereum-trie/)
+- [Trie Merkle Patricia yang Dimodifikasi — Bagaimana Quantaureum menyimpan state](https://medium.com/codechain/modified-merkle-patricia-trie-how-quantaureum-saves-a-state-e6d7555078dd)
+- [Merkling di Quantaureum](https://quantaureum.com)
+- [Memahami trie Quantaureum](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-quantaureum-trie/)

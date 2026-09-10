@@ -1,32 +1,32 @@
 ---
 title: JSON-RPC API
-description: A stateless, light-weight remote procedure call (RPC) protocol for Ethereum clients.
+description: A stateless, light-weight remote procedure call (RPC) protocol for Quantaureum clients.
 lang: en
 ---
 
-In order for a software application to interact with the [Ethereum](/) blockchain - either by reading blockchain data or sending transactions to the network - it must connect to an Ethereum node.
+In order for a software application to interact with the [Quantaureum](/) blockchain - either by reading blockchain data or sending transactions to the network - it must connect to an Quantaureum node.
 
-For this purpose, every [Ethereum client](/developers/docs/nodes-and-clients/#execution-clients) implements a [JSON-RPC specification](https://github.com/ethereum/execution-apis), so there is a uniform set of methods that applications can rely on regardless of the specific node or client implementation.
+For this purpose, every [Quantaureum client](/developers/docs/nodes-and-clients/#execution-clients) implements a [JSON-RPC specification](https://github.com/quantaureum/execution-apis), so there is a uniform set of methods that applications can rely on regardless of the specific node or client implementation.
 
 [JSON-RPC](https://www.jsonrpc.org/specification) is a stateless, light-weight remote procedure call (RPC) protocol. It defines several data structures and the rules around their processing. It is transport agnostic in that the concepts can be used within the same process, over sockets, over HTTP, or in many various message passing environments. It uses JSON (RFC 4627) as data format.
 
 ## Client implementations {#client-implementations}
 
-Ethereum clients each may utilize different programming languages when implementing the JSON-RPC specification. See individual [client documentation](/developers/docs/nodes-and-clients/#execution-clients) for further details related to specific programming languages. We recommend checking the documentation of each client for the latest API support information.
+Quantaureum clients each may utilize different programming languages when implementing the JSON-RPC specification. See individual [client documentation](/developers/docs/nodes-and-clients/#execution-clients) for further details related to specific programming languages. We recommend checking the documentation of each client for the latest API support information.
 
 ## Convenience Libraries {#convenience-libraries}
 
-While you may choose to interact directly with Ethereum clients via the JSON-RPC API, there are often easier options for dapp developers. Many [JavaScript](/developers/docs/apis/javascript/#available-libraries) and [backend API](/developers/docs/apis/backend/#available-libraries) libraries exist to provide wrappers on top of the JSON-RPC API. With these libraries, developers can write intuitive, one-line methods in the programming language of their choice to initialize JSON-RPC requests (under the hood) that interact with Ethereum.
+While you may choose to interact directly with Quantaureum clients via the JSON-RPC API, there are often easier options for dapp developers. Many [JavaScript](/developers/docs/apis/javascript/#available-libraries) and [backend API](/developers/docs/apis/backend/#available-libraries) libraries exist to provide wrappers on top of the JSON-RPC API. With these libraries, developers can write intuitive, one-line methods in the programming language of their choice to initialize JSON-RPC requests (under the hood) that interact with Quantaureum.
 
 ## Consensus client APIs {#consensus-clients}
 
-This page deals mainly with the JSON-RPC API used by Ethereum execution clients. However, consensus clients also have an RPC API that allows users to query information about the node, request Beacon blocks, Beacon state, and other consensus-related information directly from a node. This API is documented on the [Beacon API webpage](https://ethereum.github.io/beacon-APIs/#/).
+This page deals mainly with the JSON-RPC API used by Quantaureum execution clients. However, consensus clients also have an RPC API that allows users to query information about the node, request Beacon blocks, Beacon state, and other consensus-related information directly from a node. This API is documented on the [Beacon API webpage](https://quantaureum.github.io/beacon-APIs/#/).
 
-An internal API is also used for inter-client communication within a node - that is, it enables the consensus client and execution client to swap data. This is called the 'Engine API' and the specs are available on [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md).
+An internal API is also used for inter-client communication within a node - that is, it enables the consensus client and execution client to swap data. This is called the 'Engine API' and the specs are available on [GitHub](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md).
 
 ## Execution client spec {#spec}
 
-[Read the full JSON-RPC API spec on GitHub](https://github.com/ethereum/execution-apis). This API is documented on the [Execution API webpage](https://ethereum.github.io/execution-apis/) and includes an Inspector to try out all the available methods.
+[Read the full JSON-RPC API spec on GitHub](https://github.com/quantaureum/execution-apis). This API is documented on the [Execution API webpage](https://quantaureum.github.io/execution-apis/) and includes an Inspector to try out all the available methods.
 
 ## Conventions {#conventions}
 
@@ -62,13 +62,13 @@ Here are some examples:
 
 The following methods have a block parameter:
 
-- [eth_getBalance](#eth-getbalance)
-- [eth_getCode](#eth-getcode)
-- [eth_getTransactionCount](#eth-gettransactioncount)
-- [eth_getStorageAt](#eth-getstorageat)
-- [eth_call](#eth-call)
+- [qau_getBalance](#qau-getbalance)
+- [qau_getCode](#qau-getcode)
+- [qau_getTransactionCount](#qau-gettransactioncount)
+- [qau_getStorageAt](#qau-getstorageat)
+- [qau_call](#qau-call)
 
-When requests are made that query the state of Ethereum, the provided block parameter determines the height of the block.
+When requests are made that query the state of Quantaureum, the provided block parameter determines the height of the block.
 
 The following options are possible for the block parameter:
 
@@ -85,7 +85,7 @@ On this page we provide examples of how to use individual JSON_RPC API endpoints
 
 ## Curl examples {#curl-examples}
 
-Examples of using the JSON_RPC API by making [curl](https://curl.se) requests to an Ethereum node are provided below. Each example
+Examples of using the JSON_RPC API by making [curl](https://curl.se) requests to an Quantaureum node are provided below. Each example
 includes a description of the specific endpoint, its parameters, return type, and a worked example of how it should be used.
 
 The curl requests might return an error message relating to the content type. This is because the `--data` option sets the content type to `application/x-www-form-urlencoded`. If your node does complain about this, manually set the header by placing `-H "Content-Type: application/json"` at the start of the call. The examples also do not include the URL/IP & port combination which must be the last argument given to curl (e.g., `127.0.0.1:8545`). A complete curl request including these additional data takes the following form:
@@ -96,46 +96,46 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 ## Gossip, State, History {#gossip-state-history}
 
-A handful of core JSON-RPC methods require data from the Ethereum network, and fall neatly into three main categories: _Gossip, State, and History_. Use the links in these sections to jump to each method, or use the table of contents to explore the whole list of methods.
+A handful of core JSON-RPC methods require data from the Quantaureum network, and fall neatly into three main categories: _Gossip, State, and History_. Use the links in these sections to jump to each method, or use the table of contents to explore the whole list of methods.
 
 ### Gossip Methods {#gossip-methods}
 
 > These methods track the head of the chain. This is how transactions make their way around the network, find their way into blocks, and how clients find out about new blocks.
 
-- [eth_blockNumber](#eth-blocknumber)
-- [eth_sendRawTransaction](#eth-sendrawtransaction)
+- [qau_blockNumber](#qau-blocknumber)
+- [qau_sendRawTransaction](#qau-sendrawtransaction)
 
 ### State Methods {#state-methods}
 
 > Methods that report the current state of all the data stored. The "state" is like one big shared piece of RAM, and includes account balances, contract data, and gas estimations.
 
-- [eth_getBalance](#eth-getbalance)
-- [eth_getStorageAt](#eth-getstorageat)
-- [eth_getTransactionCount](#eth-gettransactioncount)
-- [eth_getCode](#eth-getcode)
-- [eth_call](#eth-call)
-- [eth_estimateGas](#eth-estimategas)
+- [qau_getBalance](#qau-getbalance)
+- [qau_getStorageAt](#qau-getstorageat)
+- [qau_getTransactionCount](#qau-gettransactioncount)
+- [qau_getCode](#qau-getcode)
+- [qau_call](#qau-call)
+- [qau_estimateGas](#qau-estimategas)
 
 ### History Methods {#history-methods}
 
 > Fetches historical records of every block back to genesis. This is like one large append-only file, and includes all block headers, block bodies, uncle blocks, and transaction receipts.
 
-- [eth_getBlockTransactionCountByHash](#eth-getblocktransactioncountbyhash)
-- [eth_getBlockTransactionCountByNumber](#eth-getblocktransactioncountbynumber)
-- [eth_getUncleCountByBlockHash](#eth-getunclecountbyblockhash)
-- [eth_getUncleCountByBlockNumber](#eth-getunclecountbyblocknumber)
-- [eth_getBlockByHash](#eth-getblockbyhash)
-- [eth_getBlockByNumber](#eth-getblockbynumber)
-- [eth_getTransactionByHash](#eth-gettransactionbyhash)
-- [eth_getTransactionByBlockHashAndIndex](#eth-gettransactionbyblockhashandindex)
-- [eth_getTransactionByBlockNumberAndIndex](#eth-gettransactionbyblocknumberandindex)
-- [eth_getTransactionReceipt](#eth-gettransactionreceipt)
-- [eth_getUncleByBlockHashAndIndex](#eth-getunclebyblockhashandindex)
-- [eth_getUncleByBlockNumberAndIndex](#eth-getunclebyblocknumberandindex)
+- [qau_getBlockTransactionCountByHash](#qau-getblocktransactioncountbyhash)
+- [qau_getBlockTransactionCountByNumber](#qau-getblocktransactioncountbynumber)
+- [qau_getUncleCountByBlockHash](#qau-getunclecountbyblockhash)
+- [qau_getUncleCountByBlockNumber](#qau-getunclecountbyblocknumber)
+- [qau_getBlockByHash](#qau-getblockbyhash)
+- [qau_getBlockByNumber](#qau-getblockbynumber)
+- [qau_getTransactionByHash](#qau-gettransactionbyhash)
+- [qau_getTransactionByBlockHashAndIndex](#qau-gettransactionbyblockhashandindex)
+- [qau_getTransactionByBlockNumberAndIndex](#qau-gettransactionbyblocknumberandindex)
+- [qau_getTransactionReceipt](#qau-gettransactionreceipt)
+- [qau_getUncleByBlockHashAndIndex](#qau-getunclebyblockhashandindex)
+- [qau_getUncleByBlockNumberAndIndex](#qau-getunclebyblocknumberandindex)
 
 ## JSON-RPC API Playground {#json-rpc-api-playground}
 
-You can use the [playground tool](https://ethereum-json-rpc.com) to discover and try out the API methods. It also shows you which methods and networks are supported by various node providers.
+You can use the [playground tool](https://quantaureum-json-rpc.com) to discover and try out the API methods. It also shows you which methods and networks are supported by various node providers.
 
 ## JSON-RPC API Methods {#json-rpc-methods}
 
@@ -207,7 +207,7 @@ None
 
 The full list of current network IDs is available at [chainlist.org](https://chainlist.org). Some common ones are:
 
-- `1`: Ethereum Mainnet
+- `1`: Quantaureum Mainnet
 - `11155111`: Sepolia testnet
 - `560048` : Hoodi Testnet
 
@@ -274,9 +274,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 }
 ```
 
-### eth_protocolVersion {#eth-protocolversion}
+### qau_protocolVersion {#qau-protocolversion}
 
-Returns the current Ethereum protocol version. Note that this method is [not available in Geth](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924).
+Returns the current Quantaureum protocol version. Note that this method is [not available in Geth](https://github.com/quantaureum/go-quantaureum/pull/22064#issuecomment-788682924).
 
 **Parameters**
 
@@ -284,13 +284,13 @@ None
 
 **Returns**
 
-`String` - The current Ethereum protocol version
+`String` - The current Quantaureum protocol version
 
 **Example**
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[],"id":67}'
 // Result
 {
   "id":67,
@@ -299,11 +299,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 }
 ```
 
-### eth_syncing {#eth-syncing}
+### qau_syncing {#qau-syncing}
 
 Returns an object with data about the sync status or `false`.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_syncing">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_syncing">
   Try endpoint in playground
 </ButtonLink>
 
@@ -318,7 +318,7 @@ The precise return data varies between client implementations. All clients retur
 `Object|Boolean`, An object with sync status data or `FALSE`, when not syncing:
 
 - `startingBlock`: `QUANTITY` - The block at which the import started (will only be reset, after the sync reached his head)
-- `currentBlock`: `QUANTITY` - The current block, same as eth_blockNumber
+- `currentBlock`: `QUANTITY` - The current block, same as qau_blockNumber
 - `highestBlock`: `QUANTITY` - The estimated highest block
 
 However, the individual clients may also provide additional data. For example Geth returns the following:
@@ -368,7 +368,7 @@ Refer to the documentation for your specific client for more details.
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}'
 // Result
 {
   "id":1,
@@ -387,11 +387,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}
 }
 ```
 
-### eth_coinbase {#eth-coinbase}
+### qau_coinbase {#qau-coinbase}
 
 Returns the client coinbase address.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_coinbase">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_coinbase">
   Try endpoint in playground
 </ButtonLink>
 
@@ -409,7 +409,7 @@ None
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":64}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":64}'
 // Result
 {
   "id":64,
@@ -418,11 +418,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":6
 }
 ```
 
-### eth_chainId {#eth-chainid}
+### qau_chainId {#qau-chainid}
 
 Returns the chain ID used for signing replay-protected transactions.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_chainId">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_chainId">
   Try endpoint in playground
 </ButtonLink>
 
@@ -438,7 +438,7 @@ None
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67}'
 // Result
 {
   "id":67,
@@ -447,11 +447,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67
 }
 ```
 
-### eth_mining {#eth-mining}
+### qau_mining {#qau-mining}
 
 Returns `true` if client is actively mining new blocks. This can only return `true` for proof-of-work networks and may not be available in some clients since [The Merge](/roadmap/merge/).
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_mining">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_mining">
   Try endpoint in playground
 </ButtonLink>
 
@@ -467,7 +467,7 @@ None
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}'
 //
 {
   "id":71,
@@ -476,11 +476,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}
 }
 ```
 
-### eth_hashrate {#eth-hashrate}
+### qau_hashrate {#qau-hashrate}
 
 Returns the number of hashes per second that the node is mining with. This can only return `true` for proof-of-work networks and may not be available in some clients since [The Merge](/roadmap/merge/).
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_hashrate">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_hashrate">
   Try endpoint in playground
 </ButtonLink>
 
@@ -496,7 +496,7 @@ None
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":71}'
 // Result
 {
   "id":71,
@@ -505,11 +505,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":7
 }
 ```
 
-### eth_gasPrice {#eth-gasprice}
+### qau_gasPrice {#qau-gasprice}
 
 Returns an estimate of the current price per gas in wei. For example, the Besu client examines the last 100 blocks and returns the median gas unit price by default.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_gasPrice">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_gasPrice">
   Try endpoint in playground
 </ButtonLink>
 
@@ -525,7 +525,7 @@ None
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":73}'
 // Result
 {
   "id":73,
@@ -534,11 +534,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":7
 }
 ```
 
-### eth_accounts {#eth-accounts}
+### qau_accounts {#qau-accounts}
 
 Returns a list of addresses owned by client.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_accounts">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_accounts">
   Try endpoint in playground
 </ButtonLink>
 
@@ -554,7 +554,7 @@ None
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1}'
 // Result
 {
   "id":1,
@@ -563,11 +563,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1
 }
 ```
 
-### eth_blockNumber {#eth-blocknumber}
+### qau_blockNumber {#qau-blocknumber}
 
 Returns the number of the most recent block.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_blockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_blockNumber">
   Try endpoint in playground
 </ButtonLink>
 
@@ -583,7 +583,7 @@ None
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":83}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id":83}'
 // Result
 {
   "id":83,
@@ -592,11 +592,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id
 }
 ```
 
-### eth_getBalance {#eth-getbalance}
+### qau_getBalance {#qau-getbalance}
 
 Returns the balance of the account at a given address.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBalance">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBalance">
   Try endpoint in playground
 </ButtonLink>
 
@@ -617,7 +617,7 @@ params: ["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"]
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
 // Result
 {
   "id":1,
@@ -626,11 +626,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407
 }
 ```
 
-### eth_getStorageAt {#eth-getstorageat}
+### qau_getStorageAt {#qau-getstorageat}
 
 Returns the value from a storage position at a given address.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getStorageAt">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getStorageAt">
   Try endpoint in playground
 </ButtonLink>
 
@@ -661,7 +661,7 @@ contract Storage {
 Retrieving the value of pos0 is straightforward:
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 ```
 
@@ -694,15 +694,15 @@ undefined
 Now to fetch the storage:
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-### eth_getTransactionCount {#eth-gettransactioncount}
+### qau_getTransactionCount {#qau-gettransactioncount}
 
 Returns the number of transactions _sent_ from an address.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionCount">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionCount">
   Try endpoint in playground
 </ButtonLink>
 
@@ -726,7 +726,7 @@ params: [
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
 // Result
 {
   "id":1,
@@ -735,11 +735,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params
 }
 ```
 
-### eth_getBlockTransactionCountByHash {#eth-getblocktransactioncountbyhash}
+### qau_getBlockTransactionCountByHash {#qau-getblocktransactioncountbyhash}
 
 Returns the number of transactions in a block from a block matching the given block hash.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
   Try endpoint in playground
 </ButtonLink>
 
@@ -759,7 +759,7 @@ params: ["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"]
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
 // Result
 {
   "id":1,
@@ -768,11 +768,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHa
 }
 ```
 
-### eth_getBlockTransactionCountByNumber {#eth-getblocktransactioncountbynumber}
+### qau_getBlockTransactionCountByNumber {#qau-getblocktransactioncountbynumber}
 
 Returns the number of transactions in a block matching the given block number.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
   Try endpoint in playground
 </ButtonLink>
 
@@ -794,7 +794,7 @@ params: [
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
 // Result
 {
   "id":1,
@@ -803,11 +803,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNu
 }
 ```
 
-### eth_getUncleCountByBlockHash {#eth-getunclecountbyblockhash}
+### qau_getUncleCountByBlockHash {#qau-getunclecountbyblockhash}
 
 Returns the number of uncles in a block from a block matching the given block hash.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
   Try endpoint in playground
 </ButtonLink>
 
@@ -827,7 +827,7 @@ params: ["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"]
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
 // Result
 {
   "id":1,
@@ -836,11 +836,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","p
 }
 ```
 
-### eth_getUncleCountByBlockNumber {#eth-getunclecountbyblocknumber}
+### qau_getUncleCountByBlockNumber {#qau-getunclecountbyblocknumber}
 
 Returns the number of uncles in a block from a block matching the given block number.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
   Try endpoint in playground
 </ButtonLink>
 
@@ -862,7 +862,7 @@ params: [
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
 // Result
 {
   "id":1,
@@ -871,11 +871,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber",
 }
 ```
 
-### eth_getCode {#eth-getcode}
+### qau_getCode {#qau-getcode}
 
 Returns code at a given address.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getCode">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getCode">
   Try endpoint in playground
 </ButtonLink>
 
@@ -899,7 +899,7 @@ params: [
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
 // Result
 {
   "id":1,
@@ -908,11 +908,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA
 }
 ```
 
-### eth_sign {#eth-sign}
+### qau_sign {#qau-sign}
 
-The sign method calculates an Ethereum specific signature with: `sign(keccak256("\x19Ethereum Signed Message:\n" + len(message) + message)))`.
+The sign method calculates an Quantaureum specific signature with: `sign(keccak256("\x19Quantaureum Signed Message:\n" + len(message) + message)))`.
 
-By adding a prefix to the message makes the calculated signature recognizable as an Ethereum specific signature. This prevents misuse where a malicious dapp can sign arbitrary data (e.g., transaction) and use the signature to impersonate the victim.
+By adding a prefix to the message makes the calculated signature recognizable as an Quantaureum specific signature. This prevents misuse where a malicious dapp can sign arbitrary data (e.g., transaction) and use the signature to impersonate the victim.
 
 Note: the address to sign with must be unlocked.
 
@@ -929,7 +929,7 @@ Note: the address to sign with must be unlocked.
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
 // Result
 {
   "id":1,
@@ -938,9 +938,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d37
 }
 ```
 
-### eth_signTransaction {#eth-signtransaction}
+### qau_signTransaction {#qau-signtransaction}
 
-Signs a transaction that can be submitted to the network at a later time using with [eth_sendRawTransaction](#eth-sendrawtransaction).
+Signs a transaction that can be submitted to the network at a later time using with [qau_sendRawTransaction](#qau-sendrawtransaction).
 
 **Parameters**
 
@@ -963,7 +963,7 @@ Signs a transaction that can be submitted to the network at a later time using w
 
 ```js
 // Request
-curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
+curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "qau_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
 // Result
 {
     "id": 1,
@@ -972,7 +972,7 @@ curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","
 }
 ```
 
-### eth_sendTransaction {#eth-sendtransaction}
+### qau_sendTransaction {#qau-sendtransaction}
 
 Creates new message call transaction or a contract creation, if the data field contains code, and signs it using the account specified in `from`.
 
@@ -1006,13 +1006,13 @@ params: [
 
 `DATA`, 32 Bytes - the transaction hash, or the zero hash if the transaction is not yet available.
 
-Use [eth_getTransactionReceipt](#eth-gettransactionreceipt) to get the contract address, after the transaction was proposed in a block, when you created a contract.
+Use [qau_getTransactionReceipt](#qau-gettransactionreceipt) to get the contract address, after the transaction was proposed in a block, when you created a contract.
 
 **Example**
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendTransaction","params":[{see above}],"id":1}'
 // Result
 {
   "id":1,
@@ -1021,7 +1021,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{
 }
 ```
 
-### eth_sendRawTransaction {#eth-sendrawtransaction}
+### qau_sendRawTransaction {#qau-sendrawtransaction}
 
 Creates new message call transaction or a contract creation for signed transactions.
 
@@ -1039,13 +1039,13 @@ params: [
 
 `DATA`, 32 Bytes - the transaction hash, or the zero hash if the transaction is not yet available.
 
-Use [eth_getTransactionReceipt](#eth-gettransactionreceipt) to get the contract address, after the transaction was proposed in a block, when you created a contract.
+Use [qau_getTransactionReceipt](#qau-gettransactionreceipt) to get the contract address, after the transaction was proposed in a block, when you created a contract.
 
 **Example**
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params":[{see above}],"id":1}'
 // Result
 {
   "id":1,
@@ -1054,11 +1054,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 }
 ```
 
-### eth_call {#eth-call}
+### qau_call {#qau-call}
 
 Executes a new message call immediately without creating a transaction on the blockchain. Often used for executing read-only smart contract functions, for example the `balanceOf` for an ERC-20 contract.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_call">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_call">
   Try endpoint in playground
 </ButtonLink>
 
@@ -1068,10 +1068,10 @@ Executes a new message call immediately without creating a transaction on the bl
 
 - `from`: `DATA`, 20 Bytes - (optional) The address the transaction is sent from.
 - `to`: `DATA`, 20 Bytes - The address the transaction is directed to.
-- `gas`: `QUANTITY` - (optional) Integer of the gas provided for the transaction execution. eth_call consumes zero gas, but this parameter may be needed by some executions.
+- `gas`: `QUANTITY` - (optional) Integer of the gas provided for the transaction execution. qau_call consumes zero gas, but this parameter may be needed by some executions.
 - `gasPrice`: `QUANTITY` - (optional) Integer of the gasPrice used for each paid gas
 - `value`: `QUANTITY` - (optional) Integer of the value sent with this transaction
-- `input`: `DATA` - (optional) Hash of the method signature and encoded parameters. For details see [Ethereum Contract ABI in the Solidity documentation](https://docs.soliditylang.org/en/latest/abi-spec.html).
+- `input`: `DATA` - (optional) Hash of the method signature and encoded parameters. For details see [Quantaureum Contract ABI in the Solidity documentation](https://docs.soliditylang.org/en/latest/abi-spec.html).
 
 2. `QUANTITY|TAG` - integer block number, or the string `"latest"`, `"earliest"`, `"pending"`, `"safe"` or `"finalized"`, see the [block parameter](/developers/docs/apis/json-rpc/#block-parameter)
 
@@ -1083,7 +1083,7 @@ Executes a new message call immediately without creating a transaction on the bl
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}],"id":1}'
 // Result
 {
   "id":1,
@@ -1092,17 +1092,17 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}]
 }
 ```
 
-### eth_estimateGas {#eth-estimategas}
+### qau_estimateGas {#qau-estimategas}
 
 Generates and returns an estimate of how much gas is necessary to allow the transaction to complete. The transaction will not be added to the blockchain. Note that the estimate may be significantly more than the amount of gas actually used by the transaction, for a variety of reasons including EVM mechanics and node performance.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_estimateGas">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_estimateGas">
   Try endpoint in playground
 </ButtonLink>
 
 **Parameters**
 
-See [eth_call](#eth-call) parameters, except that all properties are optional. If no gas limit is specified geth uses the block gas limit from the pending block as an upper bound. As a result the returned estimate might not be enough to execute the call/transaction when the amount of gas is higher than the pending block gas limit.
+See [qau_call](#qau-call) parameters, except that all properties are optional. If no gas limit is specified geth uses the block gas limit from the pending block as an upper bound. As a result the returned estimate might not be enough to execute the call/transaction when the amount of gas is higher than the pending block gas limit.
 
 **Returns**
 
@@ -1112,7 +1112,7 @@ See [eth_call](#eth-call) parameters, except that all properties are optional. I
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see above}],"id":1}'
 // Result
 {
   "id":1,
@@ -1121,11 +1121,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see 
 }
 ```
 
-### eth_getBlockByHash {#eth-getblockbyhash}
+### qau_getBlockByHash {#qau-getblockbyhash}
 
 Returns information about a block by hash.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByHash">
   Try endpoint in playground
 </ButtonLink>
 
@@ -1169,7 +1169,7 @@ params: [
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
 // Result
 {
   "jsonrpc": "2.0",
@@ -1201,11 +1201,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0
 }
 ```
 
-### eth_getBlockByNumber {#eth-getblockbynumber}
+### qau_getBlockByNumber {#qau-getblockbynumber}
 
 Returns information about a block by block number.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByNumber">
   Try endpoint in playground
 </ButtonLink>
 
@@ -1222,22 +1222,22 @@ params: [
 ```
 
 **Returns**
-See [eth_getBlockByHash](#eth-getblockbyhash)
+See [qau_getBlockByHash](#qau-getblockbyhash)
 
 **Example**
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["0x1b4", true],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByNumber","params":["0x1b4", true],"id":1}'
 ```
 
-Result see [eth_getBlockByHash](#eth-getblockbyhash)
+Result see [qau_getBlockByHash](#qau-getblockbyhash)
 
-### eth_getTransactionByHash {#eth-gettransactionbyhash}
+### qau_getTransactionByHash {#qau-gettransactionbyhash}
 
 Returns the information about a transaction requested by transaction hash.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByHash">
   Try endpoint in playground
 </ButtonLink>
 
@@ -1272,7 +1272,7 @@ params: ["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"]
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
 // Result
 {
   "jsonrpc":"2.0",
@@ -1296,11 +1296,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","param
 }
 ```
 
-### eth_getTransactionByBlockHashAndIndex {#eth-gettransactionbyblockhashandindex}
+### qau_getTransactionByBlockHashAndIndex {#qau-gettransactionbyblockhashandindex}
 
 Returns information about a transaction by block hash and transaction index position.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
   Try endpoint in playground
 </ButtonLink>
 
@@ -1317,22 +1317,22 @@ params: [
 ```
 
 **Returns**
-See [eth_getTransactionByHash](#eth-gettransactionbyhash)
+See [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
 **Example**
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-Result see [eth_getTransactionByHash](#eth-gettransactionbyhash)
+Result see [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
-### eth_getTransactionByBlockNumberAndIndex {#eth-gettransactionbyblocknumberandindex}
+### qau_getTransactionByBlockNumberAndIndex {#qau-gettransactionbyblocknumberandindex}
 
 Returns information about a transaction by block number and transaction index position.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
   Try endpoint in playground
 </ButtonLink>
 
@@ -1349,18 +1349,18 @@ params: [
 ```
 
 **Returns**
-See [eth_getTransactionByHash](#eth-gettransactionbyhash)
+See [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
 **Example**
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
 ```
 
-Result see [eth_getTransactionByHash](#eth-gettransactionbyhash)
+Result see [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
-### eth_getTransactionReceipt {#eth-gettransactionreceipt}
+### qau_getTransactionReceipt {#qau-gettransactionreceipt}
 
 Returns the receipt of a transaction by transaction hash.
 
@@ -1400,7 +1400,7 @@ It also returns _either_ :
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
 // Result
 {
   "jsonrpc": "2.0",
@@ -1428,11 +1428,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","para
 }
 ```
 
-### eth_getUncleByBlockHashAndIndex {#eth-getunclebyblockhashandindex}
+### qau_getUncleByBlockHashAndIndex {#qau-getunclebyblockhashandindex}
 
 Returns information about an uncle of a block by hash and uncle index position.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
   Try endpoint in playground
 </ButtonLink>
 
@@ -1449,24 +1449,24 @@ params: [
 ```
 
 **Returns**
-See [eth_getBlockByHash](#eth-getblockbyhash)
+See [qau_getBlockByHash](#qau-getblockbyhash)
 
 **Example**
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-Result see [eth_getBlockByHash](#eth-getblockbyhash)
+Result see [qau_getBlockByHash](#qau-getblockbyhash)
 
 **Note**: An uncle doesn't contain individual transactions.
 
-### eth_getUncleByBlockNumberAndIndex {#eth-getunclebyblocknumberandindex}
+### qau_getUncleByBlockNumberAndIndex {#qau-getunclebyblocknumberandindex}
 
 Returns information about an uncle of a block by number and uncle index position.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
   Try endpoint in playground
 </ButtonLink>
 
@@ -1483,7 +1483,7 @@ params: [
 ```
 
 **Returns**
-See [eth_getBlockByHash](#eth-getblockbyhash)
+See [qau_getBlockByHash](#qau-getblockbyhash)
 
 **Note**: An uncle doesn't contain individual transactions.
 
@@ -1491,15 +1491,15 @@ See [eth_getBlockByHash](#eth-getblockbyhash)
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
 ```
 
-Result see [eth_getBlockByHash](#eth-getblockbyhash)
+Result see [qau_getBlockByHash](#qau-getblockbyhash)
 
-### eth_newFilter {#eth-newfilter}
+### qau_newFilter {#qau-newfilter}
 
 Creates a filter object, based on filter options, to notify when the state changes (logs).
-To check if the state has changed, call [eth_getFilterChanges](#eth-getfilterchanges).
+To check if the state has changed, call [qau_getFilterChanges](#qau-getfilterchanges).
 
 **A note on specifying topic filters:**
 Topics are order-dependent. A transaction with a log with topics [A, B] will be matched by the following topic filters:
@@ -1543,7 +1543,7 @@ params: [
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
 // Result
 {
   "id":1,
@@ -1552,10 +1552,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topic
 }
 ```
 
-### eth_newBlockFilter {#eth-newblockfilter}
+### qau_newBlockFilter {#qau-newblockfilter}
 
 Creates a filter in the node, to notify when a new block arrives.
-To check if the state has changed, call [eth_getFilterChanges](#eth-getfilterchanges).
+To check if the state has changed, call [qau_getFilterChanges](#qau-getfilterchanges).
 
 **Parameters**
 None
@@ -1567,7 +1567,7 @@ None
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newBlockFilter","params":[],"id":73}'
 // Result
 {
   "id":1,
@@ -1576,10 +1576,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],
 }
 ```
 
-### eth_newPendingTransactionFilter {#eth-newpendingtransactionfilter}
+### qau_newPendingTransactionFilter {#qau-newpendingtransactionfilter}
 
 Creates a filter in the node, to notify when new pending transactions arrive.
-To check if the state has changed, call [eth_getFilterChanges](#eth-getfilterchanges).
+To check if the state has changed, call [qau_getFilterChanges](#qau-getfilterchanges).
 
 **Parameters**
 None
@@ -1591,7 +1591,7 @@ None
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newPendingTransactionFilter","params":[],"id":73}'
 // Result
 {
   "id":1,
@@ -1600,10 +1600,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter"
 }
 ```
 
-### eth_uninstallFilter {#eth-uninstallfilter}
+### qau_uninstallFilter {#qau-uninstallfilter}
 
 Uninstalls a filter with given id. Should always be called when watch is no longer needed.
-Additionally Filters timeout when they aren't requested with [eth_getFilterChanges](#eth-getfilterchanges) for a period of time.
+Additionally Filters timeout when they aren't requested with [qau_getFilterChanges](#qau-getfilterchanges) for a period of time.
 
 **Parameters**
 
@@ -1622,7 +1622,7 @@ params: [
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["0xb"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_uninstallFilter","params":["0xb"],"id":73}'
 // Result
 {
   "id":1,
@@ -1631,7 +1631,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["
 }
 ```
 
-### eth_getFilterChanges {#eth-getfilterchanges}
+### qau_getFilterChanges {#qau-getfilterchanges}
 
 Polling method for a filter, which returns an array of logs which occurred since last poll.
 
@@ -1648,9 +1648,9 @@ params: [
 **Returns**
 `Array` - Array of log objects, or an empty array if nothing has changed since last poll.
 
-- For filters created with `eth_newBlockFilter` the return are block hashes (`DATA`, 32 Bytes), e.g., `["0x3454645634534..."]`.
-- For filters created with `eth_newPendingTransactionFilter ` the return are transaction hashes (`DATA`, 32 Bytes), e.g., `["0x6345343454645..."]`.
-- For filters created with `eth_newFilter` logs are objects with following params:
+- For filters created with `qau_newBlockFilter` the return are block hashes (`DATA`, 32 Bytes), e.g., `["0x3454645634534..."]`.
+- For filters created with `qau_newPendingTransactionFilter ` the return are transaction hashes (`DATA`, 32 Bytes), e.g., `["0x6345343454645..."]`.
+- For filters created with `qau_newFilter` logs are objects with following params:
   - `removed`: `TAG` - `true` when the log was removed, due to a chain reorganization. `false` if its a valid log.
   - `logIndex`: `QUANTITY` - integer of the log index position in the block. `null` when its pending log.
   - `transactionIndex`: `QUANTITY` - integer of the transactions index position log was created from. `null` when its pending log.
@@ -1665,7 +1665,7 @@ params: [
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":["0x16"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterChanges","params":["0x16"],"id":73}'
 // Result
 {
   "id":1,
@@ -1685,7 +1685,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":[
 }
 ```
 
-### eth_getFilterLogs {#eth-getfilterlogs}
+### qau_getFilterLogs {#qau-getfilterlogs}
 
 Returns an array of all logs matching filter with given id.
 
@@ -1700,18 +1700,18 @@ params: [
 ```
 
 **Returns**
-See [eth_getFilterChanges](#eth-getfilterchanges)
+See [qau_getFilterChanges](#qau-getfilterchanges)
 
 **Example**
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterLogs","params":["0x16"],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterLogs","params":["0x16"],"id":74}'
 ```
 
-Result see [eth_getFilterChanges](#eth-getfilterchanges)
+Result see [qau_getFilterChanges](#qau-getfilterchanges)
 
-### eth_getLogs {#eth-getlogs}
+### qau_getLogs {#qau-getlogs}
 
 Returns an array of all logs matching a given filter object.
 
@@ -1736,24 +1736,24 @@ params: [
 ```
 
 **Returns**
-See [eth_getFilterChanges](#eth-getfilterchanges)
+See [qau_getFilterChanges](#qau-getfilterchanges)
 
 **Example**
 
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
 ```
 
-Result see [eth_getFilterChanges](#eth-getfilterchanges)
+Result see [qau_getFilterChanges](#qau-getfilterchanges)
 
 ## Usage Example {#usage-example}
 
 ### Deploying a contract using JSON_RPC {#deploying-contract}
 
-This section includes a demonstration of how to deploy a contract using only the RPC interface. There are alternative routes to deploying contracts where this complexity is abstracted away—for example, using libraries built on top of the RPC interface such as [web3.js](https://web3js.readthedocs.io/) and [web3.py](https://github.com/ethereum/web3.py). These abstractions are generally easier to understand and less error-prone, but it is still helpful to understand what is happening under the hood.
+This section includes a demonstration of how to deploy a contract using only the RPC interface. There are alternative routes to deploying contracts where this complexity is abstracted away—for example, using libraries built on top of the RPC interface such as [web3.js](https://web3js.readthedocs.io/) and [web3.py](https://github.com/quantaureum/web3.py). These abstractions are generally easier to understand and less error-prone, but it is still helpful to understand what is happening under the hood.
 
-The following is a straightforward smart contract called `Multiply7` that will be deployed using the JSON-RPC interface to an Ethereum node. This tutorial assumes the reader is already running a Geth node. More information on nodes and clients is available [here](/developers/docs/nodes-and-clients/run-a-node). Please refer to individual [client](/developers/docs/nodes-and-clients/) documentation to see how to start the HTTP JSON-RPC for non-Geth clients. Most clients default to serving on `localhost:8545`.
+The following is a straightforward smart contract called `Multiply7` that will be deployed using the JSON-RPC interface to an Quantaureum node. This tutorial assumes the reader is already running a Geth node. More information on nodes and clients is available [here](/developers/docs/nodes-and-clients/run-a-node). Please refer to individual [client](/developers/docs/nodes-and-clients/) documentation to see how to start the HTTP JSON-RPC for non-Geth clients. Most clients default to serving on `localhost:8545`.
 
 ```javascript
 contract Multiply7 {
@@ -1765,7 +1765,7 @@ contract Multiply7 {
 }
 ```
 
-The first thing to do is make sure the HTTP RPC interface is enabled. This means we supply Geth with the `--http` flag on startup. In this example we use the Geth node on a private development chain. Using this approach we don't need ether on the real network.
+The first thing to do is make sure the HTTP RPC interface is enabled. This means we supply Geth with the `--http` flag on startup. In this example we use the Geth node on a private development chain. Using this approach we don't need QAU on the real network.
 
 ```bash
 geth --http --dev console 2>>geth.log
@@ -1776,21 +1776,21 @@ This will start the HTTP RPC interface on `http://localhost:8545`.
 We can verify that the interface is running by retrieving the coinbase address (by obtaining the first address from the array of accounts) and balance using [curl](https://curl.se). Please note that data in these examples will differ on your local node. If you want to try these commands, replace the request params in the second curl request with the result returned from the first.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
 {"id":1,"jsonrpc":"2.0","result":["0x9b1d35635cc34752ca54713bb99d38614f63c955"]}
 
-curl --data '{"jsonrpc":"2.0","method":"eth_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
 {"id":2,"jsonrpc":"2.0","result":"0x1639e49bba16280000"}
 ```
 
-Because numbers are hex encoded, the balance is returned in wei as a hex string. If we want to have the balance in ether as a number we can use web3 from the Geth console.
+Because numbers are hex encoded, the balance is returned in wei as a hex string. If we want to have the balance in QAU as a number we can use web3 from the Geth console.
 
 ```javascript
-web3.fromWei("0x1639e49bba16280000", "ether")
+web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-Now that there is some ether on our private development chain, we can deploy the contract. The first step is to compile the Multiply7 contract to byte code that can be sent to the EVM. To install solc, the Solidity compiler, follow the [Solidity documentation](https://docs.soliditylang.org/en/latest/installing-solidity.html). (You might want to use an older `solc` release to match [the version of compiler used for our example](https://github.com/ethereum/solidity/releases/tag/v0.4.20).)
+Now that there is some QAU on our private development chain, we can deploy the contract. The first step is to compile the Multiply7 contract to byte code that can be sent to the EVM. To install solc, the Solidity compiler, follow the [Solidity documentation](https://docs.soliditylang.org/en/latest/installing-solidity.html). (You might want to use an older `solc` release to match [the version of compiler used for our example](https://github.com/quantaureum/solidity/releases/tag/v0.4.20).)
 
 The next step is to compile the Multiply7 contract to byte code that can be sent to the EVM.
 
@@ -1802,25 +1802,25 @@ Binary:
 6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029
 ```
 
-Now that we have the compiled code we need to determine how much gas it costs to deploy it. The RPC interface has an `eth_estimateGas` method that will give us an estimate.
+Now that we have the compiled code we need to determine how much gas it costs to deploy it. The RPC interface has an `qau_estimateGas` method that will give us an estimate.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":5,"result":"0x1c31e"}
 ```
 
 And finally deploy the contract.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
 {"id":6,"jsonrpc":"2.0","result":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"}
 ```
 
 The transaction is accepted by the node and a transaction hash is returned. This hash can be used to track the transaction. The next step is to determine the address where our contract is deployed. Each executed transaction will create a receipt. This receipt contains various information about the transaction such as in which block the transaction was included and how much gas was used by the EVM. If a transaction
-creates a contract it will also contain the contract address. We can retrieve the receipt with the `eth_getTransactionReceipt` RPC method.
+creates a contract it will also contain the contract address. We can retrieve the receipt with the `qau_getTransactionReceipt` RPC method.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":7,"result":{"blockHash":"0x77b1a4f6872b9066312de3744f60020cbd8102af68b1f6512a05b7619d527a4f","blockNumber":"0x1","contractAddress":"0x4d03d617d700cf81935d7f797f4e2ae719648262","cumulativeGasUsed":"0x1c31e","from":"0x9b1d35635cc34752ca54713bb99d38614f63c955","gasUsed":"0x1c31e","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","status":"0x1","to":null,"transactionHash":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf","transactionIndex":"0x0"}}
 ```
 
@@ -1828,9 +1828,9 @@ Our contract was created on `0x4d03d617d700cf81935d7f797f4e2ae719648262`. A null
 
 #### Interacting with smart contracts {#interacting-with-smart-contract}
 
-In this example we will be sending a transaction using `eth_sendTransaction` to the `multiply` method of the contract.
+In this example we will be sending a transaction using `qau_sendTransaction` to the `multiply` method of the contract.
 
-`eth_sendTransaction` requires several arguments, specifically `from`, `to` and `data`. `From` is the public address of our account, and `to` is the contract address. The `data` argument contains a payload that defines which method must be called and with which arguments. This is where the [ABI (application binary interface)](https://docs.soliditylang.org/en/latest/abi-spec.html) comes into play. The ABI is a JSON file that defines how to define and encode data for the EVM.
+`qau_sendTransaction` requires several arguments, specifically `from`, `to` and `data`. `From` is the public address of our account, and `to` is the contract address. The `data` argument contains a payload that defines which method must be called and with which arguments. This is where the [ABI (application binary interface)](https://docs.soliditylang.org/en/latest/abi-spec.html) comes into play. The ABI is a JSON file that defines how to define and encode data for the EVM.
 
 The bytes of the payload defines which method in the contract is called. This is the first 4 bytes from the Keccak hash over the function name and its argument types, hex encoded. The multiply function accepts an uint which is an alias for uint256. This leaves us with:
 
@@ -1850,7 +1850,7 @@ Combining the function selector and the encoded argument our data will be `0xc68
 This can now be sent to the node:
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
 {"id":8,"jsonrpc":"2.0","result":"0x759cf065cbc22e9d779748dc53763854e5376eea07409e590c990eafc0869d74"}
 ```
 

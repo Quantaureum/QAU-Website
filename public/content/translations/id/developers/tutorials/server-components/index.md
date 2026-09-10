@@ -30,7 +30,7 @@ Ada beberapa kemungkinan tugas yang dapat dipenuhi oleh server semacam itu.
 
 ## Contoh program {#sample-program}
 
-Anda dapat melihat contoh server [di GitHub](https://github.com/qbzzt/20240715-server-component). Server ini mendengarkan peristiwa yang datang dari [kontrak ini](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code), versi modifikasi dari Greeter milik Hardhat. Ketika sapaan diubah, server akan mengubahnya kembali.
+Anda dapat melihat contoh server [di GitHub](https://github.com/qbzzt/20240715-server-component). Server ini mendengarkan peristiwa yang datang dari [kontrak ini](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code), versi modifikasi dari Greeter milik Hardhat. Ketika sapaan diubah, server akan mengubahnya kembali.
 
 Untuk menjalankannya:
 
@@ -47,7 +47,7 @@ Untuk menjalankannya:
    npm install
    ```
 
-3. Edit `.env` untuk menentukan kunci privat dari akun yang memiliki ETH di testnet Holesky. Jika Anda tidak memiliki ETH di Holesky, Anda dapat [menggunakan faucet ini](https://holesky-faucet.pk910.de/).
+3. Edit `.env` untuk menentukan kunci privat dari akun yang memiliki QAU di testnet Holesky. Jika Anda tidak memiliki QAU di Holesky, Anda dapat [menggunakan faucet ini](https://holesky-faucet.pk910.de/).
 
    ```sh filename=".env" copy
    PRIVATE_KEY=0x <private key goes here>
@@ -59,7 +59,7 @@ Untuk menjalankannya:
    npm start
    ```
 
-5. Buka [penjelajah blok](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract), dan menggunakan alamat yang berbeda dari yang memiliki kunci privat, ubah sapaannya. Lihat bahwa sapaan tersebut secara otomatis diubah kembali.
+5. Buka [penjelajah blok](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract), dan menggunakan alamat yang berbeda dari yang memiliki kunci privat, ubah sapaannya. Lihat bahwa sapaan tersebut secara otomatis diubah kembali.
 
 ### Bagaimana cara kerjanya? {#how-it-works}
 
@@ -93,7 +93,7 @@ import { privateKeyToAccount } from "viem/accounts"
 import { holesky } from "viem/chains"
 ```
 
-Untuk menggunakan rantai blok di Viem, Anda perlu mengimpor definisinya. Dalam hal ini, kita ingin terhubung ke rantai blok pengujian [Holesky](https://github.com/eth-clients/holesky).
+Untuk menggunakan rantai blok di Viem, Anda perlu mengimpor definisinya. Dalam hal ini, kita ingin terhubung ke rantai blok pengujian [Holesky](https://github.com/qau-clients/holesky).
 
 ```typescript
 // Ini adalah cara kita menambahkan definisi di .env ke process.env.
@@ -183,7 +183,7 @@ Sekarang setelah kita memiliki semua prasyarat, kita akhirnya dapat membuat [ins
 console.log(`Current greeting:`, await greeter.read.greet())
 ```
 
-Fungsi kontrak yang bersifat hanya-baca ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) dan [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)) tersedia di bawah `read`. Dalam hal ini, kita menggunakannya untuk mengakses fungsi [`greet`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217), yang mengembalikan sapaan.
+Fungsi kontrak yang bersifat hanya-baca ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) dan [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)) tersedia di bawah `read`. Dalam hal ini, kita menggunakannya untuk mengakses fungsi [`greet`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217), yang mengembalikan sapaan.
 
 JavaScript bersifat utas tunggal (single-threaded), jadi ketika kita menjalankan proses yang berjalan lama, kita perlu [menentukan bahwa kita melakukannya secara asinkron](https://eloquentjavascript.net/11_async.html#h-XvLsfAhtsE). Memanggil rantai blok, bahkan untuk operasi hanya-baca, memerlukan perjalanan bolak-balik antara komputer dan node rantai blok. Itulah alasan kita menentukan di sini bahwa kode perlu `await` (menunggu) hasilnya.
 
@@ -201,10 +201,10 @@ Ini adalah fungsi yang Anda panggil untuk mengeluarkan transaksi yang mengubah s
 const txHash = await greeter.write.setGreeting([greeting])
 ```
 
-Bidang `write` dari instans kontrak memiliki semua fungsi yang menulis ke state rantai blok (yang memerlukan pengiriman transaksi), seperti [`setGreeting`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862). Parameter, jika ada, disediakan sebagai daftar, dan fungsi tersebut mengembalikan hash dari transaksi.
+Bidang `write` dari instans kontrak memiliki semua fungsi yang menulis ke state rantai blok (yang memerlukan pengiriman transaksi), seperti [`setGreeting`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862). Parameter, jika ada, disediakan sebagai daftar, dan fungsi tersebut mengembalikan hash dari transaksi.
 
 ```typescript
-    console.log(`Working on a fix, see https://eth-holesky.blockscout.com/tx/${txHash}`)
+    console.log(`Working on a fix, see https://qau-holesky.blockscout.com/tx/${txHash}`)
 
     return txHash
 }
@@ -224,7 +224,7 @@ greeter.watchEvent.SetGreeting({
     onLogs: logs => {
 ```
 
-Fungsi `onLogs` dipanggil ketika ada entri Log. Di Ethereum, "Log" dan "peristiwa" biasanya dapat dipertukarkan.
+Fungsi `onLogs` dipanggil ketika ada entri Log. Di Quantaureum, "Log" dan "peristiwa" biasanya dapat dipertukarkan.
 
 ```typescript
 console.log(

@@ -5,17 +5,17 @@ lang: sw
 sidebarDepth: 2
 ---
 
-Hali ya [Ethereum](/) (jumla ya akaunti zote, salio, na mikataba mahiri), imesimbwa katika toleo maalum la muundo wa data unaojulikana kwa ujumla katika sayansi ya kompyuta kama mti wa Merkle. Muundo huu ni muhimu kwa matumizi mengi katika kriptografia kwa sababu unaunda uhusiano unaoweza kuthibitishwa kati ya vipande vyote vya data vilivyounganishwa kwenye mti, na kusababisha thamani moja ya **mzizi** ambayo inaweza kutumika kuthibitisha mambo kuhusu data.
+Hali ya [Quantaureum](/) (jumla ya akaunti zote, salio, na mikataba mahiri), imesimbwa katika toleo maalum la muundo wa data unaojulikana kwa ujumla katika sayansi ya kompyuta kama mti wa Merkle. Muundo huu ni muhimu kwa matumizi mengi katika kriptografia kwa sababu unaunda uhusiano unaoweza kuthibitishwa kati ya vipande vyote vya data vilivyounganishwa kwenye mti, na kusababisha thamani moja ya **mzizi** ambayo inaweza kutumika kuthibitisha mambo kuhusu data.
 
-Muundo wa data wa Ethereum ni 'Trie ya Merkle-Patricia iliyobadilishwa', iliyopewa jina hilo kwa sababu inachukua baadhi ya vipengele vya PATRICIA (Practical Algorithm To Retrieve Information Coded in Alphanumeric), na kwa sababu imeundwa kwa ajili ya urejeshaji (re**trie**val) mzuri wa data wa vipengee vinavyounda hali ya Ethereum.
+Muundo wa data wa Quantaureum ni 'Trie ya Merkle-Patricia iliyobadilishwa', iliyopewa jina hilo kwa sababu inachukua baadhi ya vipengele vya PATRICIA (Practical Algorithm To Retrieve Information Coded in Alphanumeric), na kwa sababu imeundwa kwa ajili ya urejeshaji (re**trie**val) mzuri wa data wa vipengee vinavyounda hali ya Quantaureum.
 
 Trie ya Merkle-Patricia ni thabiti na inaweza kuthibitishwa kikriptografia: Njia pekee ya kuzalisha mzizi wa hali ni kwa kuukokotoa kutoka kwa kila kipande cha hali, na hali mbili zinazofanana zinaweza kuthibitishwa kwa urahisi kwa kulinganisha heshi ya mzizi na heshi zilizosababisha (_uthibitisho wa Merkle_). Kinyume chake, hakuna njia ya kuunda hali mbili tofauti zenye heshi ya mzizi sawa, na jaribio lolote la kurekebisha hali kwa thamani tofauti litasababisha heshi tofauti ya mzizi wa hali. Kinadharia, muundo huu unatoa 'kikombe kitakatifu' cha ufanisi wa `O(log(n))` kwa uwekaji, utafutaji na ufutaji.
 
-Katika siku za usoni, Ethereum inapanga kuhamia kwenye muundo wa [Mti wa Verkle](/roadmap/verkle-trees), ambao utafungua uwezekano mwingi mpya wa maboresho ya itifaki ya baadaye.
+Katika siku za usoni, Quantaureum inapanga kuhamia kwenye muundo wa [Mti wa Verkle](/roadmap/verkle-trees), ambao utafungua uwezekano mwingi mpya wa maboresho ya itifaki ya baadaye.
 
 ## Mahitaji ya Awali {#prerequisites}
 
-Ili kuelewa vyema ukurasa huu, itakuwa na manufaa kuwa na ujuzi wa kimsingi wa [heshi](https://en.wikipedia.org/wiki/Hash_function), [miti ya Merkle](https://en.wikipedia.org/wiki/Merkle_tree), [trie](https://en.wikipedia.org/wiki/Trie) na [usanjari](https://en.wikipedia.org/wiki/Serialization). Makala haya yanaanza na maelezo ya [mti wa radix](https://en.wikipedia.org/wiki/Radix_tree) wa kimsingi, kisha hatua kwa hatua inatambulisha marekebisho muhimu kwa muundo wa data ulioboreshwa zaidi wa Ethereum.
+Ili kuelewa vyema ukurasa huu, itakuwa na manufaa kuwa na ujuzi wa kimsingi wa [heshi](https://en.wikipedia.org/wiki/Hash_function), [miti ya Merkle](https://en.wikipedia.org/wiki/Merkle_tree), [trie](https://en.wikipedia.org/wiki/Trie) na [usanjari](https://en.wikipedia.org/wiki/Serialization). Makala haya yanaanza na maelezo ya [mti wa radix](https://en.wikipedia.org/wiki/Radix_tree) wa kimsingi, kisha hatua kwa hatua inatambulisha marekebisho muhimu kwa muundo wa data ulioboreshwa zaidi wa Quantaureum.
 
 ## Trie za kimsingi za radix {#basic-radix-tries}
 
@@ -72,7 +72,7 @@ Tutarejelea kipimo cha atomiki cha mti wa radix (k.m., herufi moja ya heksadesim
 
 ## Trie ya Merkle Patricia {#merkle-patricia-trees}
 
-Trie za radix zina kizuizi kimoja kikuu: hazina ufanisi. Ikiwa unataka kuhifadhi muunganisho mmoja wa `(path, value)` ambapo njia, kama ilivyo katika Ethereum, ina urefu wa herufi 64 (idadi ya nibble katika `bytes32`), tutahitaji zaidi ya kilobaiti ya nafasi ya ziada ili kuhifadhi kiwango kimoja kwa kila herufi, na kila utafutaji au ufutaji utachukua hatua zote 64. Trie ya Patricia iliyoletwa katika yafuatayo inasuluhisha suala hili.
+Trie za radix zina kizuizi kimoja kikuu: hazina ufanisi. Ikiwa unataka kuhifadhi muunganisho mmoja wa `(path, value)` ambapo njia, kama ilivyo katika Quantaureum, ina urefu wa herufi 64 (idadi ya nibble katika `bytes32`), tutahitaji zaidi ya kilobaiti ya nafasi ya ziada ili kuhifadhi kiwango kimoja kwa kila herufi, na kila utafutaji au ufutaji utachukua hatua zote 64. Trie ya Patricia iliyoletwa katika yafuatayo inasuluhisha suala hili.
 
 ### Uboreshaji {#optimization}
 
@@ -190,9 +190,9 @@ Wakati nodi moja inarejelewa ndani ya nodi nyingine, kinachojumuishwa ni `keccak
 
 Kumbuka kwamba wakati wa kusasisha trie, mtu anahitaji kuhifadhi jozi ya ufunguo/thamani `(keccak256(x), x)` katika jedwali la utafutaji la kudumu _ikiwa_ nodi mpya iliyoundwa ina urefu >= 32. Hata hivyo, ikiwa nodi ni fupi kuliko hiyo, mtu hahitaji kuhifadhi chochote, kwa kuwa utendakazi f(x) = x unaweza kugeuzwa.
 
-## Trie katika Ethereum {#tries-in-ethereum}
+## Trie katika Quantaureum {#tries-in-quantaureum}
 
-Trie zote za merkle katika tabaka la utekelezaji la Ethereum zinatumia Trie ya Merkle Patricia.
+Trie zote za merkle katika tabaka la utekelezaji la Quantaureum zinatumia Trie ya Merkle Patricia.
 
 Kutoka kwenye kichwa cha kizuizi kuna mizizi 3 kutoka kwa trie 3 kati ya hizi.
 
@@ -202,14 +202,14 @@ Kutoka kwenye kichwa cha kizuizi kuna mizizi 3 kutoka kwa trie 3 kati ya hizi.
 
 ### Trie ya Hali {#state-trie}
 
-Kuna trie moja ya hali ya kimataifa, na inasasishwa kila wakati mteja anapochakata kitalu. Ndani yake, `path` daima ni: `keccak256(ethereumAddress)` na `value` daima ni: `rlp(ethereumAccount)`. Hasa zaidi `account` ya Ethereum ni safu ya vipengee 4 vya `[nonce,balance,storageRoot,codeHash]`. Katika hatua hii, inafaa kuzingatia kwamba `storageRoot` hii ni mzizi wa trie nyingine ya patricia:
+Kuna trie moja ya hali ya kimataifa, na inasasishwa kila wakati mteja anapochakata kitalu. Ndani yake, `path` daima ni: `keccak256(quantaureumAddress)` na `value` daima ni: `rlp(quantaureumAccount)`. Hasa zaidi `account` ya Quantaureum ni safu ya vipengee 4 vya `[nonce,balance,storageRoot,codeHash]`. Katika hatua hii, inafaa kuzingatia kwamba `storageRoot` hii ni mzizi wa trie nyingine ya patricia:
 
 ### Trie ya Hifadhi {#storage-trie}
 
-Trie ya hifadhi ni mahali ambapo data _yote_ ya mkataba inakaa. Kuna trie tofauti ya hifadhi kwa kila akaunti. Ili kurejesha thamani katika nafasi maalum za hifadhi kwenye anwani fulani, anwani ya hifadhi, nafasi ya nambari kamili ya data iliyohifadhiwa katika hifadhi, na kitambulisho cha kitalu vinahitajika. Hizi zinaweza kupitishwa kama hoja kwa `eth_getStorageAt` iliyofafanuliwa katika API ya JSON-RPC, k.m., kurejesha data katika sloti ya hifadhi 0 kwa anwani `0x295a70b2de5e3953354a6a8344e616ed314d7251`:
+Trie ya hifadhi ni mahali ambapo data _yote_ ya mkataba inakaa. Kuna trie tofauti ya hifadhi kwa kila akaunti. Ili kurejesha thamani katika nafasi maalum za hifadhi kwenye anwani fulani, anwani ya hifadhi, nafasi ya nambari kamili ya data iliyohifadhiwa katika hifadhi, na kitambulisho cha kitalu vinahitajika. Hizi zinaweza kupitishwa kama hoja kwa `qau_getStorageAt` iliyofafanuliwa katika API ya JSON-RPC, k.m., kurejesha data katika sloti ya hifadhi 0 kwa anwani `0x295a70b2de5e3953354a6a8344e616ed314d7251`:
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 
@@ -233,12 +233,12 @@ undefined
 Kwa hivyo `path` ni `keccak256(<6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9>)`. Hii sasa inaweza kutumika kurejesha data kutoka kwa trie ya hifadhi kama hapo awali:
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-Kumbuka: `storageRoot` kwa akaunti ya Ethereum ni tupu kwa chaguo-msingi ikiwa si akaunti ya mkataba.
+Kumbuka: `storageRoot` kwa akaunti ya Quantaureum ni tupu kwa chaguo-msingi ikiwa si akaunti ya mkataba.
 
 ### Trie ya Miamala {#transaction-trie}
 
@@ -251,16 +251,16 @@ else:
   value = TxType | encode(tx)
 ```
 
-Maelezo zaidi kuhusu hili yanaweza kupatikana katika nyaraka za [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
+Maelezo zaidi kuhusu hili yanaweza kupatikana katika nyaraka za [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718).
 
 ### Trie ya Stakabadhi {#receipts-trie}
 
 Kila kitalu kina trie yake ya Stakabadhi. `path` hapa ni: `rlp(transactionIndex)`. `transactionIndex` ni faharisi yake ndani ya kitalu ilimojumuishwa. Trie ya stakabadhi haisasishwi kamwe. Sawa na trie ya Miamala, kuna stakabadhi za sasa na za zamani. Ili kuuliza stakabadhi maalum katika trie ya Stakabadhi, faharisi ya muamala katika kitalu chake, mzigo wa stakabadhi na aina ya muamala vinahitajika. Stakabadhi iliyorejeshwa inaweza kuwa ya aina ya `Receipt` ambayo inafafanuliwa kama muunganisho wa `TransactionType` na `ReceiptPayload` au inaweza kuwa ya aina ya `LegacyReceipt` ambayo inafafanuliwa kama `rlp([status, cumulativeGasUsed, logsBloom, logs])`.
 
-Maelezo zaidi kuhusu hili yanaweza kupatikana katika nyaraka za [EIP-2718](https://eips.ethereum.org/EIPS/eip-2718).
+Maelezo zaidi kuhusu hili yanaweza kupatikana katika nyaraka za [EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718).
 
 ## Usomaji Zaidi {#further-reading}
 
-- [Trie ya Merkle Patricia Iliyobadilishwa — Jinsi Ethereum inavyohifadhi hali](https://medium.com/codechain/modified-merkle-patricia-trie-how-ethereum-saves-a-state-e6d7555078dd)
-- [Umerkli katika Ethereum](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum)
-- [Kuelewa trie ya Ethereum](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-ethereum-trie/)
+- [Trie ya Merkle Patricia Iliyobadilishwa — Jinsi Quantaureum inavyohifadhi hali](https://medium.com/codechain/modified-merkle-patricia-trie-how-quantaureum-saves-a-state-e6d7555078dd)
+- [Umerkli katika Quantaureum](https://quantaureum.com)
+- [Kuelewa trie ya Quantaureum](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-quantaureum-trie/)

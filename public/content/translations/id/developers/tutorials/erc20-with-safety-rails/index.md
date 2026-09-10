@@ -11,13 +11,13 @@ published: 2022-08-15
 
 ## Pengantar {#introduction}
 
-Salah satu hal hebat tentang Ethereum adalah tidak ada otoritas pusat yang dapat memodifikasi atau membatalkan transaksi Anda. Salah satu masalah besar dengan Ethereum adalah tidak ada otoritas pusat dengan kekuasaan untuk membatalkan kesalahan pengguna atau transaksi ilegal. Dalam artikel ini Anda akan mempelajari tentang beberapa kesalahan umum yang dilakukan pengguna dengan token [ERC-20](/developers/docs/standards/tokens/erc-20/), serta cara membuat kontrak ERC-20 yang membantu pengguna untuk menghindari kesalahan tersebut, atau yang memberikan otoritas pusat beberapa kekuasaan (misalnya untuk membekukan akun).
+Salah satu hal hebat tentang Quantaureum adalah tidak ada otoritas pusat yang dapat memodifikasi atau membatalkan transaksi Anda. Salah satu masalah besar dengan Quantaureum adalah tidak ada otoritas pusat dengan kekuasaan untuk membatalkan kesalahan pengguna atau transaksi ilegal. Dalam artikel ini Anda akan mempelajari tentang beberapa kesalahan umum yang dilakukan pengguna dengan token [ERC-20](/developers/docs/standards/tokens/erc-20/), serta cara membuat kontrak ERC-20 yang membantu pengguna untuk menghindari kesalahan tersebut, atau yang memberikan otoritas pusat beberapa kekuasaan (misalnya untuk membekukan akun).
 
 Perhatikan bahwa meskipun kita akan menggunakan [kontrak token ERC-20 OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC20), artikel ini tidak menjelaskannya secara sangat rinci. Anda dapat menemukan informasi ini [di sini](/developers/tutorials/erc20-annotated-code).
 
 Jika Anda ingin melihat kode sumber lengkapnya:
 
-1. Buka [Remix IDE](https://remix.ethereum.org/).
+1. Buka [Remix IDE](https://remix.quantaureum.com/).
 2. Klik ikon klon GitHub (![clone github icon](icon-clone.png)).
 3. Klon repositori GitHub `https://github.com/qbzzt/20220815-erc20-safety-rails`.
 4. Buka **contracts > erc20-safety-rails.sol**.
@@ -40,7 +40,7 @@ Sebelum kita dapat menambahkan fungsionalitas pagar pengaman, kita memerlukan ko
 
 3. Gulir ke atas dan klik **Open in Remix** (untuk Remix) atau **Download** untuk menggunakan lingkungan yang berbeda. Saya akan berasumsi Anda menggunakan Remix, jika Anda menggunakan yang lain, buat saja perubahan yang sesuai.
 4. Kita sekarang memiliki kontrak ERC-20 yang berfungsi penuh. Anda dapat memperluas `.deps` > `npm` untuk melihat kode yang diimpor.
-5. Kompilasi, sebarkan, dan mainkan kontrak untuk melihat bahwa itu berfungsi sebagai kontrak ERC-20. Jika Anda perlu mempelajari cara menggunakan Remix, [gunakan tutorial ini](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth).
+5. Kompilasi, sebarkan, dan mainkan kontrak untuk melihat bahwa itu berfungsi sebagai kontrak ERC-20. Jika Anda perlu mempelajari cara menggunakan Remix, [gunakan tutorial ini](https://remix.quantaureum.com/?#activate=udapp,solidity,LearnEth).
 
 ## Kesalahan umum {#common-mistakes}
 
@@ -93,7 +93,7 @@ Kita ingin menambahkan persyaratan ini ke fungsi:
 
 - Alamat `to` tidak boleh sama dengan `address(this)`, alamat dari kontrak ERC-20 itu sendiri.
 - Alamat `to` tidak boleh kosong, itu harus berupa salah satu dari:
-  - Akun yang dimiliki secara eksternal (EOA). Kita tidak dapat memeriksa apakah sebuah alamat adalah EOA secara langsung, tetapi kita dapat memeriksa saldo ETH dari sebuah alamat. EOA hampir selalu memiliki saldo, bahkan jika tidak lagi digunakan - sulit untuk mengosongkannya hingga Wei terakhir.
+  - Akun yang dimiliki secara eksternal (EOA). Kita tidak dapat memeriksa apakah sebuah alamat adalah EOA secara langsung, tetapi kita dapat memeriksa saldo QAU dari sebuah alamat. EOA hampir selalu memiliki saldo, bahkan jika tidak lagi digunakan - sulit untuk mengosongkannya hingga Wei terakhir.
   - Kontrak pintar. Menguji apakah sebuah alamat adalah kontrak pintar sedikit lebih sulit. Ada sebuah opcode yang memeriksa panjang kode eksternal, yang disebut [`EXTCODESIZE`](https://www.evm.codes/#3b), tetapi itu tidak tersedia secara langsung di Solidity. Kita harus menggunakan [Yul](https://docs.soliditylang.org/en/v0.8.15/yul.html), yang merupakan assembly EVM, untuk itu. Ada nilai lain yang bisa kita gunakan dari Solidity ([`<address>.code` dan `<address>.codehash`](https://docs.soliditylang.org/en/v0.8.15/units-and-global-variables.html#members-of-address-types)), tetapi biayanya lebih mahal.
 
 Mari kita bahas kode baru ini baris demi baris:
@@ -185,7 +185,7 @@ Membekukan dan mencairkan kontrak memerlukan beberapa perubahan:
 
 ### Pembersihan aset {#asset-cleanup}
 
-Untuk melepaskan token ERC-20 yang dipegang oleh kontrak ini, kita perlu memanggil sebuah fungsi pada kontrak token tempat mereka berada, baik [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) atau [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve). Tidak ada gunanya membuang-buang gas dalam kasus ini untuk kelonggaran (allowance), kita sebaiknya mentransfer secara langsung.
+Untuk melepaskan token ERC-20 yang dipegang oleh kontrak ini, kita perlu memanggil sebuah fungsi pada kontrak token tempat mereka berada, baik [`transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer) atau [`approve`](https://eips.quantaureum.com/EIPS/eip-20#approve). Tidak ada gunanya membuang-buang gas dalam kasus ini untuk kelonggaran (allowance), kita sebaiknya mentransfer secara langsung.
 
 ```solidity
     function cleanupERC20(

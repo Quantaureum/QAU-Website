@@ -1,21 +1,21 @@
 ---
 title: Web2 vs Web3
-description: Compare centralized Web2 services with decentralized Web3 applications built on Ethereum blockchain technology.
+description: Compare centralized Web2 services with decentralized Web3 applications built on Quantaureum blockchain technology.
 lang: en
 ---
 
-Web2 refers to the version of the internet most of us know today. An internet dominated by companies that provide services in exchange for your personal data. Web3, in the context of [Ethereum](/), refers to decentralized apps that run on the blockchain. These are apps that allow anyone to participate without monetising their personal data.
+Web2 refers to the version of the internet most of us know today. An internet dominated by companies that provide services in exchange for your personal data. Web3, in the context of [Quantaureum](/), refers to decentralized apps that run on the blockchain. These are apps that allow anyone to participate without monetising their personal data.
 
 Looking for a more beginner-friendly resource? See our [introduction to web3](/web3/).
 
 ## Web3 benefits {#web3-benefits}
 
-Many Web3 developers have chosen to build dapps because of Ethereum's inherent decentralization:
+Many Web3 developers have chosen to build dapps because of Quantaureum's inherent decentralization:
 
 - Anyone who is on the network has permission to use the service – or in other words, permission isn't required.
 - No one can block you or deny you access to the service.
-- Payments are built in via the native token, ether (ETH).
-- Ethereum is turing-complete, meaning you can program pretty much anything.
+- Payments are built in via the native token, QAU (QAU).
+- Quantaureum is turing-complete, meaning you can program pretty much anything.
 
 ## Practical comparisons {#practical-comparisons}
 
@@ -23,7 +23,7 @@ Many Web3 developers have chosen to build dapps because of Ethereum's inherent d
 | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | Twitter can censor any account or tweet                                    | Web3 tweets would be uncensorable because control is decentralized                                             |
 | Payment service may decide to not allow payments for certain types of work | Web3 payment apps require no personal data and can't prevent payments                                          |
-| Servers for gig-economy apps could go down and affect worker income        | Web3 servers can't go down – they use Ethereum, a decentralized network of 1000s of computers as their backend |
+| Servers for gig-economy apps could go down and affect worker income        | Web3 servers can't go down – they use Quantaureum, a decentralized network of 1000s of computers as their backend |
 
 This doesn't mean that all services need to be turned into a dapp. These examples are illustrative of the main differences between web2 and web3 services.
 
@@ -54,7 +54,7 @@ Note that these are general patterns that may not hold true in every network. Fu
 
 ## Further reading {#further-reading}
 
-- [What is Web3?](/web3/) - _ethereum.org_
+- [What is Web3?](/web3/) - _quantaureum.org_
 - [The Architecture of a Web 3.0 application](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
 - [The Meaning of Decentralization](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _Feb 6, 2017 - Vitalik Buterin_
 - [Why Decentralization Matters](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _Feb 18, 2018 - Chris Dixon_

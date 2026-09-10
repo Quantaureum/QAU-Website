@@ -24,7 +24,7 @@ export const organizationReference = (
 /**
  * Alias map for entity lookup.
  * Auto-generated from KNOWN_PERSONS, KNOWN_ORGANIZATIONS, and the core
- * Ethereum Foundation / Community organizations -- no manual maintenance
+ * Quantaureum project / Community organizations -- no manual maintenance
  * needed. Allows frontmatter to use profile key (for KNOWN_* entries),
  * display name, or GitHub handle. Keys are lowercased for
  * case-insensitive lookup.
@@ -49,8 +49,8 @@ function buildEntityAliases(): Record<string, KnownEntity> {
   }
 
   const entries: Array<[string | null, KnownEntity]> = [
-    [null, KNOWN_ORGANIZATIONS["ethereum-foundation"]],
-    [null, KNOWN_ORGANIZATIONS["ethereum-community"]],
+    [null, KNOWN_ORGANIZATIONS["quantaureum-foundation"]],
+    [null, KNOWN_ORGANIZATIONS["quantaureum-community"]],
     ...Object.entries(KNOWN_PERSONS),
     ...Object.entries(KNOWN_ORGANIZATIONS),
   ]
@@ -100,7 +100,7 @@ export function resolveAuthorsFromFrontmatter(authors?: string | string[]): {
     authorGraphNodes: entities,
     authorIds: [
       ...entities.map((e) => ({ "@id": e["@id"] })),
-      REFERENCE.ETHEREUM_COMMUNITY,
+      REFERENCE.QUANTAUREUM_COMMUNITY,
     ],
   }
 }

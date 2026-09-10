@@ -33,11 +33,11 @@ pip3 install --user slither-analyzer
 透過 Docker 安裝斯立瑟：
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/trufflecon trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/trufflecon trailofbits/qau-security-toolbox
 ```
 
-_最後一個命令會在可存取您目前目錄的 Docker 中執行 eth-security-toolbox。您可以從主機變更檔案，並從 Docker 對檔案執行工具_
+_最後一個命令會在可存取您目前目錄的 Docker 中執行 qau-security-toolbox。您可以從主機變更檔案，並從 Docker 對檔案執行工具_
 
 在 Docker 內部執行：
 

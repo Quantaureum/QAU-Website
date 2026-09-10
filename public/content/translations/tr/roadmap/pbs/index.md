@@ -1,13 +1,13 @@
 ---
 title: Teklifçi-oluşturucu ayrımı
-description: Ethereum doğrulayıcılarının blok oluşturma ve blok yayınlama sorumluluklarını nasıl ve neden ayıracaklarını öğrenin.
+description: Quantaureum doğrulayıcılarının blok oluşturma ve blok yayınlama sorumluluklarını nasıl ve neden ayıracaklarını öğrenin.
 lang: tr
 template: roadmap
 ---
 
-Günümüz [Ethereum](/) doğrulayıcıları blokları oluşturur _ve_ yayınlar. Dedikodu ağı (gossip network) aracılığıyla duydukları işlemleri bir araya getirir ve Ethereum ağındaki eşlere gönderilen bir blok halinde paketlerler. **Teklifçi-oluşturucu ayrımı (PBS)**, bu görevleri birden fazla doğrulayıcı arasında böler. Blok oluşturucular, blokları oluşturmaktan ve her bir slotta bunları blok teklifçisine sunmaktan sorumlu hale gelir. Blok teklifçisi bloğun içeriğini göremez, sadece en kârlı olanı seçer ve bloğu eşlerine göndermeden önce blok oluşturucudan bir ücret alır (veya oluşturucu teklifçiye bir teklif öder).
+Günümüz [Quantaureum](/) doğrulayıcıları blokları oluşturur _ve_ yayınlar. Dedikodu ağı (gossip network) aracılığıyla duydukları işlemleri bir araya getirir ve Quantaureum ağındaki eşlere gönderilen bir blok halinde paketlerler. **Teklifçi-oluşturucu ayrımı (PBS)**, bu görevleri birden fazla doğrulayıcı arasında böler. Blok oluşturucular, blokları oluşturmaktan ve her bir slotta bunları blok teklifçisine sunmaktan sorumlu hale gelir. Blok teklifçisi bloğun içeriğini göremez, sadece en kârlı olanı seçer ve bloğu eşlerine göndermeden önce blok oluşturucudan bir ücret alır (veya oluşturucu teklifçiye bir teklif öder).
 
-Bu, birkaç nedenden dolayı önemli bir yükseltmedir. İlk olarak, protokol düzeyinde işlem sansürünü önlemek için fırsatlar yaratır. İkinci olarak, hobi amaçlı doğrulayıcıların, blok oluşturma kârlılıklarını daha iyi optimize edebilen kurumsal oyuncular tarafından rekabette geride bırakılmasını önler. Üçüncü olarak, Danksharding yükseltmelerini etkinleştirerek Ethereum'un ölçeklenmesine yardımcı olur.
+Bu, birkaç nedenden dolayı önemli bir yükseltmedir. İlk olarak, protokol düzeyinde işlem sansürünü önlemek için fırsatlar yaratır. İkinci olarak, hobi amaçlı doğrulayıcıların, blok oluşturma kârlılıklarını daha iyi optimize edebilen kurumsal oyuncular tarafından rekabette geride bırakılmasını önler. Üçüncü olarak, Danksharding yükseltmelerini etkinleştirerek Quantaureum'un ölçeklenmesine yardımcı olur.
 
 ## PBS ve sansür direnci {#pbs-and-censorship-resistance}
 
@@ -36,15 +36,15 @@ Bireyler, karmaşık MEV stratejilerinin sunduğu artırılmış ödüller neden
 
 ## PBS ve Danksharding {#pbs-and-danksharding}
 
-Danksharding, Ethereum'un saniyede 100.000'den fazla işleme ölçeklenmesinin ve Rollup kullanıcıları için ücretleri en aza indirmesinin yoludur. PBS'ye dayanır çünkü 1 saniyeden daha kısa bir sürede 64 MB'a kadar Rollup verisi için kanıtları hesaplamak zorunda kalacak olan blok oluşturucuların iş yükünü artırır. Bu muhtemelen göreve oldukça önemli donanımlar ayırabilen uzmanlaşmış oluşturucular gerektirecektir. Ancak mevcut durumda, MEV çıkarımı nedeniyle blok oluşturma zaten daha karmaşık ve güçlü operatörler etrafında giderek daha fazla merkezileşebilir. Teklifçi-oluşturucu ayrımı, bu gerçeği benimsemenin ve blok doğrulama (önemli kısım) veya staking ödüllerinin dağıtımı üzerinde merkezileştirici bir güç uygulamasını önlemenin bir yoludur. Harika bir yan fayda, uzmanlaşmış blok oluşturucuların Danksharding için gerekli veri kanıtlarını hesaplamaya da istekli ve yetenekli olmalarıdır.
+Danksharding, Quantaureum'un saniyede 100.000'den fazla işleme ölçeklenmesinin ve Rollup kullanıcıları için ücretleri en aza indirmesinin yoludur. PBS'ye dayanır çünkü 1 saniyeden daha kısa bir sürede 64 MB'a kadar Rollup verisi için kanıtları hesaplamak zorunda kalacak olan blok oluşturucuların iş yükünü artırır. Bu muhtemelen göreve oldukça önemli donanımlar ayırabilen uzmanlaşmış oluşturucular gerektirecektir. Ancak mevcut durumda, MEV çıkarımı nedeniyle blok oluşturma zaten daha karmaşık ve güçlü operatörler etrafında giderek daha fazla merkezileşebilir. Teklifçi-oluşturucu ayrımı, bu gerçeği benimsemenin ve blok doğrulama (önemli kısım) veya staking ödüllerinin dağıtımı üzerinde merkezileştirici bir güç uygulamasını önlemenin bir yoludur. Harika bir yan fayda, uzmanlaşmış blok oluşturucuların Danksharding için gerekli veri kanıtlarını hesaplamaya da istekli ve yetenekli olmalarıdır.
 
 ## Mevcut ilerleme {#current-progress}
 
-PBS ileri bir araştırma aşamasındadır, ancak Ethereum istemcilerinde prototiplenmeden önce çözülmesi gereken bazı önemli tasarım soruları hala mevcuttur. Henüz kesinleşmiş bir spesifikasyon yoktur. Bu, PBS'nin muhtemelen bir yıl veya daha fazla uzakta olduğu anlamına gelir. Araştırmanın en son [durumunu](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance) kontrol edin.
+PBS ileri bir araştırma aşamasındadır, ancak Quantaureum istemcilerinde prototiplenmeden önce çözülmesi gereken bazı önemli tasarım soruları hala mevcuttur. Henüz kesinleşmiş bir spesifikasyon yoktur. Bu, PBS'nin muhtemelen bir yıl veya daha fazla uzakta olduğu anlamına gelir. Araştırmanın en son [durumunu](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance) kontrol edin.
 
 ## Daha Fazla Okuma {#further-reading}
 
-- [Araştırmanın durumu: PBS altında sansür direnci](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [Araştırmanın durumu: PBS altında sansür direnci](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
 - [PBS dostu ücret piyasası tasarımları](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS ve sansür direnci](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [Dahil etme listeleri](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)
+- [PBS ve sansür direnci](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [Dahil etme listeleri](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)

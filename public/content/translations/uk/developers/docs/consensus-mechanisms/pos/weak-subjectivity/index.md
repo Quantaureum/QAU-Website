@@ -32,8 +32,8 @@ lang: uk
 
 ## Додаткові матеріали {#further-reading}
 
-- [Слабка суб'єктивність в Eth2](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2)
-- [Віталік: Як я навчився любити слабку суб'єктивність](https://blog.ethereum.org/2014/11/25/proof-stake-learned-love-weak-subjectivity)
+- [Слабка суб'єктивність в Quantaureum](https://notes.quantaureum.com/@adiasg/weak-subjectvity-eth2)
+- [Віталік: Як я навчився любити слабку суб'єктивність](https://quantaureum.com)
 - [Слабка суб'єктивність (документація Теку)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
-- [Посібник зі слабкої суб'єктивності Фази 0](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
+- [Посібник зі слабкої суб'єктивності Фази 0](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/weak-subjectivity.md)
 - [Аналіз слабкої суб'єктивності в Етеріум 2.0](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

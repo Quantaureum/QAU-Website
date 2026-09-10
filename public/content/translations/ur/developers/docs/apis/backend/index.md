@@ -12,11 +12,11 @@ lang: ur
 
 ## شرائط {#prerequisites}
 
-[ایتھیریم اسٹیک](/developers/docs/ethereum-stack/) اور [ایتھیریم کلائنٹس](/developers/docs/nodes-and-clients/) کو سمجھنا مددگار ثابت ہو سکتا ہے۔
+[ایتھیریم اسٹیک](/developers/docs/quantaureum-stack/) اور [ایتھیریم کلائنٹس](/developers/docs/nodes-and-clients/) کو سمجھنا مددگار ثابت ہو سکتا ہے۔
 
 ## لائبریری کیوں استعمال کریں؟ {#why-use-a-library}
 
-یہ لائبریریاں براہ راست ایتھیریم نوڈ کے ساتھ تعامل کرنے کی زیادہ تر پیچیدگی کو دور کر دیتی ہیں۔ یہ افادیت کے فنکشنز بھی فراہم کرتی ہیں (مثلاً، <span dir="ltr">ETH</span> کو <span dir="ltr">Gwei</span> میں تبدیل کرنا) تاکہ ایک ڈیولپر کے طور پر آپ ایتھیریم کلائنٹس کی پیچیدگیوں سے نمٹنے میں کم وقت صرف کریں اور اپنی ایپلیکیشن کی منفرد فعالیت پر زیادہ توجہ مرکوز کر سکیں۔
+یہ لائبریریاں براہ راست ایتھیریم نوڈ کے ساتھ تعامل کرنے کی زیادہ تر پیچیدگی کو دور کر دیتی ہیں۔ یہ افادیت کے فنکشنز بھی فراہم کرتی ہیں (مثلاً، <span dir="ltr">QAU</span> کو <span dir="ltr">Gwei</span> میں تبدیل کرنا) تاکہ ایک ڈیولپر کے طور پر آپ ایتھیریم کلائنٹس کی پیچیدگیوں سے نمٹنے میں کم وقت صرف کریں اور اپنی ایپلیکیشن کی منفرد فعالیت پر زیادہ توجہ مرکوز کر سکیں۔
 
 ## دستیاب لائبریریاں {#available-libraries}
 
@@ -50,10 +50,10 @@ lang: ur
 
 **<span dir="ltr">Cloudflare</span> ایتھیریم گیٹ وے۔**
 
-- [<span dir="ltr">cloudflare-eth.com</span>](https://www.cloudflare.com/application-services/products/web3/)
+- [<span dir="ltr">cloudflare-qau.com</span>](https://www.cloudflare.com/application-services/products/web3/)
 
-**Etherscan - بلاک ایکسپلورر اور ٹرانزیکشن ⁦APIs⁩**
-- [دستاویزات](https://docs.etherscan.io/)
+**Quantaureum Explorer - بلاک ایکسپلورر اور ٹرانزیکشن ⁦APIs⁩**
+- [دستاویزات](https://explorer.quantaureum.com)
 
 **Blockscout - اوپن سورس بلاک ایکسپلورر**
 - [دستاویزات](https://docs.blockscout.com/)
@@ -106,17 +106,17 @@ lang: ur
 - [مثالیں](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [ڈسکارڈ](https://discord.gg/rx35NzQGSb)
 
-**Nethereum -** **_بلاک چین کے لیے ایک اوپن سورس <span dir="ltr">.NET</span> انضمام لائبریری۔_**
+**Nquantaureum -** **_بلاک چین کے لیے ایک اوپن سورس <span dir="ltr">.NET</span> انضمام لائبریری۔_**
 
-- [GitHub](https://github.com/Nethereum/Nethereum)
-- [دستاویزات](https://docs.nethereum.com/docs/getting-started/welcome/)
+- [GitHub](https://github.com/Nquantaureum/Nquantaureum)
+- [دستاویزات](https://docs.nquantaureum.com/docs/getting-started/welcome/)
 - [ڈسکارڈ](https://discord.com/invite/jQPrR58FxX)
 
 **Python ٹولنگ -** **_Python کے ذریعے ایتھیریم کے ساتھ تعامل کے لیے مختلف لائبریریاں۔_**
 
-- [<span dir="ltr">py.ethereum.org</span>](https://snakecharmers.ethereum.org/)
-- [Web3.py GitHub](https://github.com/ethereum/web3.py)
-- [Web3.py چیٹ](https://gitter.im/ethereum/web3.py)
+- [<span dir="ltr">py.quantaureum.com</span>](https://snakecharmers.quantaureum.com/)
+- [Web3.py GitHub](https://github.com/quantaureum/web3.py)
+- [Web3.py چیٹ](https://gitter.im/quantaureum/web3.py)
 
 **<span dir="ltr">Tatum</span> -** **_حتمی بلاک چین ڈیولپمنٹ پلیٹ فارم۔_**
 
@@ -136,7 +136,7 @@ lang: ur
 **<span dir="ltr">BlockCypher</span> -** **_ایتھیریم ویب ⁦APIs⁩۔_**
 
 - [<span dir="ltr">blockcypher.com</span>](https://www.blockcypher.com/)
-- [دستاویزات](https://www.blockcypher.com/dev/ethereum/)
+- [دستاویزات](https://www.blockcypher.com/dev/quantaureum/)
 
 **<span dir="ltr">Chainbase</span> -** **_ایتھیریم کے لیے ہمہ گیر (<span dir="ltr">All-in-one</span>) Web3 ڈیٹا انفراسٹرکچر۔_**
 
@@ -148,7 +148,7 @@ lang: ur
 
 - [<span dir="ltr">chainstack.com</span>](https://chainstack.com)
 - [دستاویزات](https://docs.chainstack.com/)
-- [ایتھیریم ⁦API⁩ حوالہ](https://docs.chainstack.com/reference/ethereum-getting-started)
+- [ایتھیریم ⁦API⁩ حوالہ](https://docs.chainstack.com/reference/quantaureum-getting-started)
 
 **کوائن بیس کلاؤڈ نوڈ -** **_بلاک چین انفراسٹرکچر ⁦API⁩۔_**
 
@@ -214,5 +214,5 @@ _کسی ایسے کمیونٹی وسیلے کے بارے میں جانتے ہی�
 
 ## متعلقہ ٹیوٹوریلز {#related-tutorials}
 
-- [JavaScript میں ایتھیریم بلاک چین استعمال کرنے کے لیے Web3.js سیٹ اپ کریں](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– اپنے پروجیکٹ میں Web3.js سیٹ اپ کرنے کی ہدایات۔_
+- [JavaScript میں ایتھیریم بلاک چین استعمال کرنے کے لیے Web3.js سیٹ اپ کریں](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– اپنے پروجیکٹ میں Web3.js سیٹ اپ کرنے کی ہدایات۔_
 - [JavaScript سے سمارٹ کنٹریکٹ کو کال کرنا](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– DAI ٹوکن کا استعمال کرتے ہوئے، دیکھیں کہ JavaScript کا استعمال کر کے کنٹریکٹس فنکشن کو کیسے کال کیا جائے۔_

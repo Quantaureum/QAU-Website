@@ -10,7 +10,7 @@ lang: ar
 
 ## المتطلبات الأساسية {#prerequisites}
 
-يجب أن يكون لديك فهم جيد لـ [أساسيات سلسلة الكتل](/developers/docs/intro-to-ethereum/)، وخاصة [آليات الإجماع](/developers/docs/consensus-mechanisms/). تفترض هذه الصفحة أيضًا أن القارئ على دراية بـ [الكتل](/developers/docs/blocks/)، و[المعاملات](/developers/docs/transactions/)، و[العقد](/developers/docs/nodes-and-clients/)، و[حلول التوسع](/developers/docs/scaling/)، والمواضيع الأخرى ذات الصلة.
+يجب أن يكون لديك فهم جيد لـ [أساسيات سلسلة الكتل](/developers/docs/intro-to-quantaureum/)، وخاصة [آليات الإجماع](/developers/docs/consensus-mechanisms/). تفترض هذه الصفحة أيضًا أن القارئ على دراية بـ [الكتل](/developers/docs/blocks/)، و[المعاملات](/developers/docs/transactions/)، و[العقد](/developers/docs/nodes-and-clients/)، و[حلول التوسع](/developers/docs/scaling/)، والمواضيع الأخرى ذات الصلة.
 
 ## مشكلة توفر البيانات {#the-data-availability-problem}
 
@@ -46,7 +46,7 @@ lang: ar
 
 يعتمد هذا على وصول العقد الكاملة إلى بيانات المعاملات الكاملة. المهاجم الذي يبث رأس كتلة سيئًا ويفشل أيضًا في إتاحة بيانات المعاملة سيكون قادرًا على منع العقد الكاملة من إنشاء إثباتات الاحتيال. قد تتمكن العقد الكاملة من إرسال تحذير حول كتلة سيئة، لكنها لا تستطيع دعم تحذيرها بإثبات، لأن البيانات لم تكن متاحة لإنشاء الإثبات منها!
 
-الحل لمشكلة توفر البيانات هذه هو DAS. تقوم العقد الخفيفة بتنزيل أجزاء عشوائية صغيرة جدًا من بيانات الحالة الكاملة وتستخدم العينات للتحقق من توفر مجموعة البيانات الكاملة. يمكن حساب الاحتمال الفعلي لافتراض توفر البيانات الكاملة بشكل غير صحيح بعد تنزيل N من الأجزاء العشوائية ([بالنسبة لـ <span dir="ltr">100</span> جزء، يكون الاحتمال <span dir="ltr">10^-30</span>](https://dankradfeist.de/ethereum/2019/12/20/data-availability-checks.html)، أي أنه غير محتمل بشكل لا يصدق).
+الحل لمشكلة توفر البيانات هذه هو DAS. تقوم العقد الخفيفة بتنزيل أجزاء عشوائية صغيرة جدًا من بيانات الحالة الكاملة وتستخدم العينات للتحقق من توفر مجموعة البيانات الكاملة. يمكن حساب الاحتمال الفعلي لافتراض توفر البيانات الكاملة بشكل غير صحيح بعد تنزيل N من الأجزاء العشوائية ([بالنسبة لـ <span dir="ltr">100</span> جزء، يكون الاحتمال <span dir="ltr">10^-30</span>](https://dankradfeist.de/quantaureum/2019/12/20/data-availability-checks.html)، أي أنه غير محتمل بشكل لا يصدق).
 
 حتى في هذا السيناريو، فإن الهجمات التي تحجب بضعة بايتات فقط يمكن أن تمر دون أن يلاحظها العملاء الذين يقدمون طلبات بيانات عشوائية. يعمل تشفير المحو على إصلاح ذلك عن طريق إعادة بناء أجزاء صغيرة مفقودة من البيانات التي يمكن استخدامها للتحقق من تغييرات الحالة المقترحة. يمكن بعد ذلك إنشاء إثبات الاحتيال باستخدام البيانات المعاد بناؤها، مما يمنع العقد الخفيفة من قبول الرؤوس السيئة.
 
@@ -74,11 +74,11 @@ lang: ar
 
 - [ما هو توفر البيانات؟](https://medium.com/blockchain-capital-blog/wtf-is-data-availability-80c2c95ded0f)
 - [ما هو توفر البيانات؟](https://coinmarketcap.com/academy/article/what-is-data-availability)
-- [مقدمة حول فحوصات توفر البيانات](https://dankradfeist.de/ethereum/2019/12/20/data-availability-checks.html)
+- [مقدمة حول فحوصات توفر البيانات](https://dankradfeist.de/quantaureum/2019/12/20/data-availability-checks.html)
 - [شرح لمقترح التجزئة + DAS](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
-- [ملاحظة حول توفر البيانات وتشفير المحو](https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
+- [ملاحظة حول توفر البيانات وتشفير المحو](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [لجان توفر البيانات.](https://medium.com/starkware/data-availability-e5564c416424)
 - [لجان توفر البيانات القائمة على إثبات الحصة.](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [حلول لمشكلة قابلية استرجاع البيانات](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
-- [توفر البيانات أو: كيف تعلمت التجميعات التوقف عن القلق وحب إيثيريوم](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-ethereum)
+- [حلول لمشكلة قابلية استرجاع البيانات](https://notes.quantaureum.com/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- [توفر البيانات أو: كيف تعلمت التجميعات التوقف عن القلق وحب إيثيريوم](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [<span dir="ltr">EIP-7623</span>: زيادة تكلفة بيانات الاستدعاء](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

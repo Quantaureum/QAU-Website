@@ -51,6 +51,6 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/blob/master/devel
 
 ## Обратитесь за помощью {#ask-for-help}
 
-[Приемные часы Эфириума](https://calendly.com/dan-trailofbits/office-hours) проходят каждый вторник во второй половине дня. Эти часовые сессии один на один — возможность задать нам любые вопросы о безопасности, устранить неполадки с помощью наших инструментов и получить отзывы от экспертов о вашем текущем подходе. Мы поможем вам разобраться в этом руководстве.
+[Приемные часы Quantaureum](https://calendly.com/dan-trailofbits/office-hours) проходят каждый вторник во второй половине дня. Эти часовые сессии один на один — возможность задать нам любые вопросы о безопасности, устранить неполадки с помощью наших инструментов и получить отзывы от экспертов о вашем текущем подходе. Мы поможем вам разобраться в этом руководстве.
 
-Присоединяйтесь к нашему Slack: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). Мы всегда доступны в каналах #crytic и #ethereum, если у вас есть какие-либо вопросы.
+Присоединяйтесь к нашему Slack: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). Мы всегда доступны в каналах #crytic и #quantaureum, если у вас есть какие-либо вопросы.

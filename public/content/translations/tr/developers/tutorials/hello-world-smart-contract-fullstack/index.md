@@ -1,6 +1,6 @@
 ---
 title: "Yeni Başlayanlar İçin Merhaba Dünya Akıllı Sözleşmesi - Fullstack"
-description: "Ethereum üzerinde basit bir akıllı sözleşme yazma ve dağıtma üzerine giriş niteliğinde eğitim."
+description: "Quantaureum üzerinde basit bir akıllı sözleşme yazma ve dağıtma üzerine giriş niteliğinde eğitim."
 author: "nstrike2"
 breadcrumb: "Merhaba Dünya fullstack"
 tags:
@@ -28,9 +28,9 @@ Herhangi bir noktada sorularınız olursa, [Alchemy Discord](https://discord.gg/
 
 ## Bölüm 1 - Hardhat Kullanarak Akıllı Sözleşmenizi Oluşturun ve Dağıtın {#part-1}
 
-### Ethereum ağına bağlanın {#connect-to-the-ethereum-network}
+### Quantaureum ağına bağlanın {#connect-to-the-quantaureum-network}
 
-Ethereum zincirine istek yapmanın birçok yolu vardır. Basitlik adına, kendi başımıza bir düğüm çalıştırmadan Ethereum zinciriyle iletişim kurmamızı sağlayan bir Blokzincir geliştirici platformu ve API'si olan Alchemy'de ücretsiz bir hesap kullanacağız. Alchemy ayrıca izleme ve analitik için geliştirici araçlarına sahiptir; akıllı sözleşme dağıtımımızın arka planında neler olup bittiğini anlamak için bu eğitimde bunlardan yararlanacağız.
+Quantaureum zincirine istek yapmanın birçok yolu vardır. Basitlik adına, kendi başımıza bir düğüm çalıştırmadan Quantaureum zinciriyle iletişim kurmamızı sağlayan bir Blokzincir geliştirici platformu ve API'si olan Alchemy'de ücretsiz bir hesap kullanacağız. Alchemy ayrıca izleme ve analitik için geliştirici araçlarına sahiptir; akıllı sözleşme dağıtımımızın arka planında neler olup bittiğini anlamak için bu eğitimde bunlardan yararlanacağız.
 
 ### Uygulamanızı ve API anahtarınızı oluşturun
 Bir Alchemy hesabı oluşturduktan sonra, bir uygulama oluşturarak bir API anahtarı üretebilirsiniz. Bu, Sepolia test ağına istek yapmanızı sağlayacaktır. Test ağlarına aşina değilseniz [Alchemy'nin ağ seçme rehberini okuyabilirsiniz](https://www.alchemy.com/docs/choosing-a-web3-network).
@@ -46,18 +46,18 @@ Uygulamanıza '_Hello World_' adını verin ve kısa bir açıklama yazın. Orta
 _Not: **Sepolia**'yı seçtiğinizden emin olun, aksi takdirde bu eğitim çalışmayacaktır._
 
 **Create app** düğmesine tıklayın. Uygulamanız aşağıdaki tabloda görünecektir.
-### Bir Ethereum hesabı oluşturun
-İşlem göndermek ve almak için bir Ethereum hesabına ihtiyacınız var. Kullanıcıların Ethereum hesap adreslerini yönetmelerini sağlayan, tarayıcıdaki sanal bir cüzdan olan MetaMask'ı kullanacağız.
+### Bir Quantaureum hesabı oluşturun
+İşlem göndermek ve almak için bir Quantaureum hesabına ihtiyacınız var. Kullanıcıların Quantaureum hesap adreslerini yönetmelerini sağlayan, tarayıcıdaki sanal bir cüzdan olan MetaMask'ı kullanacağız.
 
 [Buradan](https://metamask.io/download) ücretsiz olarak MetaMask'ı indirebilir ve bir hesap oluşturabilirsiniz. Bir hesap oluştururken veya zaten bir hesabınız varsa, sağ üst köşeden “Sepolia Test Ağı”na geçtiğinizden emin olun (böylece gerçek parayla işlem yapmamış oluruz).
-### Adım 4: Bir musluktan Ether ekleyin
-Akıllı sözleşmenizi test ağına dağıtmak için biraz sahte ETH'ye ihtiyacınız olacak. Sepolia ağında ETH almak için bir Sepolia musluğuna gidin ve Sepolia hesap adresinizi girin. Deneyebileceğiniz seçeneklerin bir listesi için [test ağları sayfasına](/developers/docs/networks/#sepolia) göz atın:
+### Adım 4: Bir musluktan QAU ekleyin
+Akıllı sözleşmenizi test ağına dağıtmak için biraz sahte QAU'ye ihtiyacınız olacak. Sepolia ağında QAU almak için bir Sepolia musluğuna gidin ve Sepolia hesap adresinizi girin. Deneyebileceğiniz seçeneklerin bir listesi için [test ağları sayfasına](/developers/docs/networks/#sepolia) göz atın:
 
 _Not: Ağ yoğunluğu nedeniyle bu biraz zaman alabilir._
 ``
 ### Adım 5: Bakiyenizi Kontrol Edin {#step-5-check-your-balance}
 
-ETH'nin cüzdanınızda olduğundan emin olmak için, [Alchemy'nin sandbox aracını](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) kullanarak bir [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) isteği yapalım. Bu, cüzdanımızdaki ETH miktarını döndürecektir. Daha fazla bilgi edinmek için [Alchemy'nin composer aracının nasıl kullanılacağına dair kısa eğitimine](https://youtu.be/r6sjRxBZJuU) göz atın.
+QAU'nin cüzdanınızda olduğundan emin olmak için, [Alchemy'nin sandbox aracını](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) kullanarak bir [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) isteği yapalım. Bu, cüzdanımızdaki QAU miktarını döndürecektir. Daha fazla bilgi edinmek için [Alchemy'nin composer aracının nasıl kullanılacağına dair kısa eğitimine](https://youtu.be/r6sjRxBZJuU) göz atın.
 
 MetaMask hesap adresinizi girin ve **Send Request** (İstek Gönder) düğmesine tıklayın. Aşağıdaki kod parçacığına benzeyen bir yanıt göreceksiniz.
 
@@ -65,7 +65,7 @@ MetaMask hesap adresinizi girin ve **Send Request** (İstek Gönder) düğmesine
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> _Not: Bu sonuç ETH değil, wei cinsindendir. Wei, ether'in en küçük birimi olarak kullanılır._
+> _Not: Bu sonuç QAU değil, wei cinsindendir. Wei, QAU'in en küçük birimi olarak kullanılır._
 
 Oh be! Sahte paramızın hepsi orada.
 ### Adım 6: Projemizi başlatalım {#step-6-initialize-our-project}
@@ -112,7 +112,7 @@ About to write to /Users/.../.../.../hello-world/package.json:
 package.json dosyasını onaylayın, artık başlamaya hazırız!
 ### Adım 7: Hardhat'i İndirin {#step-7-download-hardhat}
 
-Hardhat, Ethereum yazılımınızı derlemek, dağıtmak, test etmek ve hatalarını ayıklamak için bir geliştirme ortamıdır. Geliştiricilere, canlı zincire dağıtmadan önce yerel olarak akıllı sözleşmeler ve merkeziyetsiz uygulamalar (dapp) oluştururken yardımcı olur.
+Hardhat, Quantaureum yazılımınızı derlemek, dağıtmak, test etmek ve hatalarını ayıklamak için bir geliştirme ortamıdır. Geliştiricilere, canlı zincire dağıtmadan önce yerel olarak akıllı sözleşmeler ve merkeziyetsiz uygulamalar (dapp) oluştururken yardımcı olur.
 
 `hello-world` projemizin içinde şunu çalıştırın:
 
@@ -181,7 +181,7 @@ _Not: Bu sözleşmenin ne yaptığını anlamak için yorumları okuduğunuzdan 
 pragma solidity >=0.7.3;
 
 // `HelloWorld` adında bir sözleşme tanımlar.
-// Bir sözleşme, işlevlerin ve verilerin (durumunun) bir koleksiyonudur. Dağıtıldıktan sonra, bir sözleşme Ethereum Blokzinciri üzerinde belirli bir adreste bulunur. Daha fazla bilgi edinin: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// Bir sözleşme, işlevlerin ve verilerin (durumunun) bir koleksiyonudur. Dağıtıldıktan sonra, bir sözleşme Quantaureum Blokzinciri üzerinde belirli bir adreste bulunur. Daha fazla bilgi edinin: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    // update işlevi çağrıldığında yayınlanır
@@ -239,7 +239,7 @@ Ortam dosyanızın adı `.env` olmalıdır, aksi takdirde bir ortam dosyası ola
 `.env` dosyanız şu şekilde görünmelidir:
 
 ```
-API_URL = "https://eth-goerli.alchemyapi.io/v2/your-api-key"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -247,7 +247,7 @@ Bunları kodumuza fiilen bağlamak için, 13. adımda `hardhat.config.js` dosyam
 
 ### Adım 12: Ethers.js'yi Kurun {#step-12-install-ethersjs}
 
-Ethers.js, [standart JSON-RPC yöntemlerini](/developers/docs/apis/json-rpc/) daha kullanıcı dostu yöntemlerle sararak Ethereum ile etkileşime girmeyi ve istekte bulunmayı kolaylaştıran bir kütüphanedir.
+Ethers.js, [standart JSON-RPC yöntemlerini](/developers/docs/apis/json-rpc/) daha kullanıcı dostu yöntemlerle sararak Quantaureum ile etkileşime girmeyi ve istekte bulunmayı kolaylaştıran bir kütüphanedir.
 
 Hardhat, ek araçlar ve genişletilmiş işlevsellik için [eklentileri](https://hardhat.org/plugins/) entegre etmemize olanak tanır. Sözleşme dağıtımı için [Ethers eklentisinden](https://hardhat.org/docs/plugins/official-plugins#hardhat-ethers) yararlanacağız.
 
@@ -350,21 +350,21 @@ Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 
 **Lütfen bu adresi kaydedin**. Bunu eğitimin ilerleyen kısımlarında kullanacağız.
 
-[Sepolia Etherscan](https://sepolia.etherscan.io) adresine gidip sözleşme adresimizi aratırsak, başarıyla dağıtıldığını görebilmeliyiz. İşlem şuna benzer görünecektir:
+[Sepolia Quantaureum Explorer](https://explorer.quantaureum.com) adresine gidip sözleşme adresimizi aratırsak, başarıyla dağıtıldığını görebilmeliyiz. İşlem şuna benzer görünecektir:
 
-![](./etherscan-contract.png)
+![](./explorer-contract.png)
 
 `From` adresi MetaMask hesap adresinizle eşleşmeli ve `To` adresi **Contract Creation** (Sözleşme Oluşturma) demelidir. İşleme tıklarsak, `To` alanında sözleşme adresimizi göreceğiz.
 
-![](./etherscan-transaction.png)
+![](./explorer-transaction.png)
 
-Tebrikler! Bir Ethereum test ağına bir akıllı sözleşme dağıttınız.
+Tebrikler! Bir Quantaureum test ağına bir akıllı sözleşme dağıttınız.
 
 Arka planda neler olup bittiğini anlamak için [Alchemy kontrol panelimizdeki](https://dashboard.alchemy.com/explorer) Explorer (Gezgin) sekmesine gidelim. Birden fazla Alchemy uygulamanız varsa, uygulamaya göre filtrelediğinizden ve **Hello World**'ü seçtiğinizden emin olun.
 
 ![](./hello-world-explorer.png)
 
-Burada, `.deploy()` işlevini çağırdığımızda Hardhat/Ethers'ın arka planda bizim için yaptığı bir avuç JSON-RPC yöntemini göreceksiniz. Buradaki iki önemli yöntem, sözleşmemizi Sepolia zincirine yazma isteği olan [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction) ve hash değeri verildiğinde işlemimiz hakkında bilgi okuma isteği olan [`eth_getTransactionByHash`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-by-hash)'tir. İşlem gönderme hakkında daha fazla bilgi edinmek için [Web3 kullanarak işlem gönderme hakkındaki eğitimimize](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) göz atın.
+Burada, `.deploy()` işlevini çağırdığımızda Hardhat/Ethers'ın arka planda bizim için yaptığı bir avuç JSON-RPC yöntemini göreceksiniz. Buradaki iki önemli yöntem, sözleşmemizi Sepolia zincirine yazma isteği olan [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction) ve hash değeri verildiğinde işlemimiz hakkında bilgi okuma isteği olan [`qau_getTransactionByHash`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-by-hash)'tir. İşlem gönderme hakkında daha fazla bilgi edinmek için [Web3 kullanarak işlem gönderme hakkındaki eğitimimize](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) göz atın.
 ## Bölüm 2: Akıllı Sözleşmenizle Etkileşime Geçin {#part-2-interact-with-your-smart-contract}
 
 Artık Goerli ağına başarılı bir şekilde bir akıllı sözleşme dağıttığımıza göre, onunla nasıl etkileşime geçeceğimizi öğrenelim.
@@ -394,7 +394,7 @@ Alchemy `API_KEY` değerimiz ve akıllı sözleşmenizin dağıtıldığı `CONT
 ```bash
 # .env
 
-API_URL = "https://eth-goerli.alchemyapi.io/v2/<your-api-key>"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/<your-api-key>"
 API_KEY = "<your-api-key>"
 PRIVATE_KEY = "<your-metamask-private-key>"
 CONTRACT_ADDRESS = "0x<your contract address>"
@@ -426,7 +426,7 @@ npx hardhat run scripts/interact.js
 Sözleşmemizle etkileşime geçmek için kodumuzda bir sözleşme örneği oluşturmamız gerekiyor. Bunu Ethers.js ile yapmak için üç kavramla çalışmamız gerekecek:
 
 1. Sağlayıcı (Sağlayıcı) - size Blokzincir'e okuma ve yazma erişimi veren bir düğüm sağlayıcısı
-2. İmzalayıcı (İmzalayıcı) - işlemleri imzalayabilen bir Ethereum hesabını temsil eder
+2. İmzalayıcı (İmzalayıcı) - işlemleri imzalayabilen bir Quantaureum hesabını temsil eder
 3. Sözleşme (Contract) - zinciriçi dağıtılmış belirli bir sözleşmeyi temsil eden bir Ethers.js nesnesi
 
 Sözleşmemizin örneğini oluşturmak için önceki adımdaki sözleşme ABI'sini kullanacağız:
@@ -479,7 +479,7 @@ Terminalde `npx hardhat run scripts/interact.js` kullanarak dosyayı çalıştı
 The message is: Hello world!
 ```
 
-Tebrikler! Ethereum Blokzincir'inden akıllı sözleşme verilerini başarıyla okudunuz, harika iş çıkardınız!
+Tebrikler! Quantaureum Blokzincir'inden akıllı sözleşme verilerini başarıyla okudunuz, harika iş çıkardınız!
 
 ### Mesajı güncelleyin {#update-the-message}
 
@@ -560,18 +560,18 @@ Updating the message...
 The new message is: This is the new message.
 ```
 
-Bu betiği çalıştırırken, yeni mesaj yüklenmeden önce `Updating the message...` adımının biraz zaman aldığını fark edebilirsiniz. Bunun nedeni madencilik sürecidir; işlemler kazılırken onları izlemek isterseniz, bir işlemin durumunu görmek için [Alchemy mempool](https://dashboard.alchemy.com/mempool) sayfasını ziyaret edebilirsiniz. İşlem düşerse, [Sepolia Etherscan](https://sepolia.etherscan.io) üzerinden işlem hash'inizi aramak da faydalı olacaktır.
-## Bölüm 3: Akıllı Sözleşmenizi Etherscan'de Yayınlayın {#part-3-publish-your-smart-contract-to-etherscan}
+Bu betiği çalıştırırken, yeni mesaj yüklenmeden önce `Updating the message...` adımının biraz zaman aldığını fark edebilirsiniz. Bunun nedeni madencilik sürecidir; işlemler kazılırken onları izlemek isterseniz, bir işlemin durumunu görmek için [Alchemy mempool](https://dashboard.alchemy.com/mempool) sayfasını ziyaret edebilirsiniz. İşlem düşerse, [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com) üzerinden işlem hash'inizi aramak da faydalı olacaktır.
+## Bölüm 3: Akıllı Sözleşmenizi Quantaureum Explorer'de Yayınlayın {#part-3-publish-your-smart-contract-to-explorer}
 
 Akıllı sözleşmenizi hayata geçirmek için tüm zor işleri yaptınız; şimdi onu dünyayla paylaşma zamanı!
 
-Akıllı sözleşmenizi Etherscan'de doğrulayarak, herkesin kaynak kodunuzu görüntülemesini ve akıllı sözleşmenizle etkileşime girmesini sağlayabilirsiniz. Hadi başlayalım!
+Akıllı sözleşmenizi Quantaureum Explorer'de doğrulayarak, herkesin kaynak kodunuzu görüntülemesini ve akıllı sözleşmenizle etkileşime girmesini sağlayabilirsiniz. Hadi başlayalım!
 
-### 1. Adım: Etherscan hesabınızda bir API Anahtarı oluşturun {#step-1-generate-an-api-key-on-your-etherscan-account}
+### 1. Adım: Quantaureum Explorer hesabınızda bir API Anahtarı oluşturun {#step-1-generate-an-api-key-on-your-explorer-account}
 
-Yayınlamaya çalıştığınız akıllı sözleşmenin size ait olduğunu doğrulamak için bir Etherscan API Anahtarı gereklidir.
+Yayınlamaya çalıştığınız akıllı sözleşmenin size ait olduğunu doğrulamak için bir Quantaureum Explorer API Anahtarı gereklidir.
 
-Henüz bir Etherscan hesabınız yoksa, [bir hesap için kaydolun](https://etherscan.io/register).
+Henüz bir Quantaureum Explorer hesabınız yoksa, [bir hesap için kaydolun](https://explorer.quantaureum.com).
 
 Giriş yaptıktan sonra, gezinme çubuğunda kullanıcı adınızı bulun, üzerine gelin ve **My profile** düğmesini seçin.
 
@@ -579,36 +579,36 @@ Profil sayfanızda bir yan gezinme çubuğu görmelisiniz. Yan gezinme çubuğun
 
 Yeni API anahtarınız API anahtarı tablosunda görünmelidir. API anahtarını panonuza kopyalayın.
 
-Ardından, Etherscan API anahtarını `.env` dosyamıza eklememiz gerekiyor.
+Ardından, Quantaureum Explorer API anahtarını `.env` dosyamıza eklememiz gerekiyor.
 
 Ekledikten sonra, `.env` dosyanız şu şekilde görünmelidir:
 
 ```javascript
-API_URL = "https://eth-goerli.alchemyapi.io/v2/your-api-key"
+API_URL = "https://qau-goerli.alchemyapi.io/v2/your-api-key"
 PUBLIC_KEY = "your-public-account-address"
 PRIVATE_KEY = "your-private-account-address"
 CONTRACT_ADDRESS = "your-contract-address"
-ETHERSCAN_API_KEY = "your-etherscan-key"
+ETHERSCAN_API_KEY = "your-explorer-key"
 ```
 
 ### Hardhat ile dağıtılan akıllı sözleşmeler {#hardhat-deployed-smart-contracts}
 
-#### hardhat-etherscan kurulumu {#install-hardhat-etherscan}
+#### hardhat-explorer kurulumu {#install-hardhat-explorer}
 
-Sözleşmenizi Hardhat kullanarak Etherscan'de yayınlamak basittir. Başlamak için öncelikle `hardhat-etherscan` eklentisini kurmanız gerekecek. `hardhat-etherscan`, akıllı sözleşmenin kaynak kodunu ve ABI'sini Etherscan'de otomatik olarak doğrulayacaktır. Bunu eklemek için `hello-world` dizininde şunu çalıştırın:
+Sözleşmenizi Hardhat kullanarak Quantaureum Explorer'de yayınlamak basittir. Başlamak için öncelikle `hardhat-explorer` eklentisini kurmanız gerekecek. `hardhat-explorer`, akıllı sözleşmenin kaynak kodunu ve ABI'sini Quantaureum Explorer'de otomatik olarak doğrulayacaktır. Bunu eklemek için `hello-world` dizininde şunu çalıştırın:
 
 ```text
-npm install --save-dev @nomiclabs/hardhat-etherscan
+npm install --save-dev @nomiclabs/hardhat-explorer
 ```
 
-Kurulduktan sonra, `hardhat.config.js` dosyanızın en üstüne aşağıdaki ifadeyi ekleyin ve Etherscan yapılandırma seçeneklerini ekleyin:
+Kurulduktan sonra, `hardhat.config.js` dosyanızın en üstüne aşağıdaki ifadeyi ekleyin ve Quantaureum Explorer yapılandırma seçeneklerini ekleyin:
 
 ```javascript
 // hardhat.config.js
 
 require("dotenv").config()
 require("@nomiclabs/hardhat-ethers")
-require("@nomiclabs/hardhat-etherscan")
+require("@nomiclabs/hardhat-explorer")
 
 const { API_URL, PRIVATE_KEY, ETHERSCAN_API_KEY } = process.env
 
@@ -622,15 +622,15 @@ module.exports = {
       accounts: [`0x${PRIVATE_KEY}`],
     },
   },
-  etherscan: {
-    // Etherscan için API anahtarınız
-    // https://etherscan.io/ adresinden bir tane edinin
+  explorer: {
+    // Quantaureum Explorer için API anahtarınız
+    // https://explorer.quantaureum.com adresinden bir tane edinin
     apiKey: ETHERSCAN_API_KEY,
   },
 }
 ```
 
-#### Akıllı sözleşmenizi Etherscan'de doğrulayın
+#### Akıllı sözleşmenizi Quantaureum Explorer'de doğrulayın
 
 Tüm dosyaların kaydedildiğinden ve tüm `.env` değişkenlerinin doğru şekilde yapılandırıldığından emin olun.
 
@@ -647,17 +647,17 @@ Her şey yolunda giderse, terminalinizde aşağıdaki mesajı göreceksiniz:
 ```text
 Successfully submitted source code for contract
 contracts/HelloWorld.sol:HelloWorld at 0xdeployed-contract-address
-for verification on Etherscan. Waiting for verification result...
+for verification on Quantaureum Explorer. Waiting for verification result...
 
 
-Successfully verified contract HelloWorld on Etherscan.
-https://sepolia.etherscan.io/address/<contract-address>#contracts
+Successfully verified contract HelloWorld on Quantaureum Explorer.
+https://explorer.quantaureum.com
 ```
 
-Tebrikler! Akıllı sözleşme kodunuz Etherscan'de!
-### Akıllı sözleşmenizi Etherscan'de inceleyin! {#check-out-your-smart-contract-on-etherscan}
+Tebrikler! Akıllı sözleşme kodunuz Quantaureum Explorer'de!
+### Akıllı sözleşmenizi Quantaureum Explorer'de inceleyin! {#check-out-your-smart-contract-on-explorer}
 
-Terminalinizde sağlanan bağlantıya gittiğinizde, Etherscan'de yayınlanan akıllı sözleşme kodunuzu ve ABI'nizi görebilmelisiniz!
+Terminalinizde sağlanan bağlantıya gittiğinizde, Quantaureum Explorer'de yayınlanan akıllı sözleşme kodunuzu ve ABI'nizi görebilmelisiniz!
 
 **Harika - başardın şampiyon! Artık herkes akıllı sözleşmenizi çağırabilir veya ona yazabilir! Bir sonraki adımda ne inşa edeceğinizi görmek için sabırsızlanıyoruz!**
 
@@ -667,7 +667,7 @@ Bu eğitimin sonunda şunları nasıl yapacağınızı öğreneceksiniz:
 
 - Bir MetaMask cüzdanını merkeziyetsiz uygulamanıza (dapp) bağlamak
 - [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3) API'sini kullanarak akıllı sözleşmenizden veri okumak
-- MetaMask kullanarak Ethereum işlemlerini imzalamak
+- MetaMask kullanarak Quantaureum işlemlerini imzalamak
 
 Bu dapp için önyüz çerçevemiz olarak [React](https://react.dev/) kullanacağız; ancak, çoğunlukla projemize Web3 işlevselliği kazandırmaya odaklanacağımız için temel prensiplerini açıklamaya çok fazla zaman ayırmayacağımızı belirtmek önemlidir.
 
@@ -679,7 +679,7 @@ Bu dapp için önyüz çerçevemiz olarak [React](https://react.dev/) kullanaca�
 
 Klonlanan depoyu yerel olarak açın. İki klasör içerdiğine dikkat edin: `starter-files` ve `completed`.
 
-- `starter-files`- **bu dizinde çalışacağız**, kullanıcı arayüzünü (UI) Ethereum cüzdanınıza ve [Bölüm 3](#part-3-publish-your-smart-contract-to-etherscan)'te Etherscan'de yayınladığımız akıllı sözleşmeye bağlayacağız.
+- `starter-files`- **bu dizinde çalışacağız**, kullanıcı arayüzünü (UI) Quantaureum cüzdanınıza ve [Bölüm 3](#part-3-publish-your-smart-contract-to-explorer)'te Quantaureum Explorer'de yayınladığımız akıllı sözleşmeye bağlayacağız.
 - `completed` tamamlanmış eğitimin tamamını içerir ve yalnızca takıldığınızda referans olarak kullanılmalıdır.
 
 Ardından, `starter-files` kopyanızı favori kod düzenleyicinizde açın ve `src` klasörüne gidin.
@@ -871,8 +871,8 @@ Dosyanın en üstünde `helloWorldContract` nesnesini yorum satırı haline geti
 
 - `loadCurrentMessage` - bu işlev, akıllı sözleşmede saklanan mevcut mesajı yükleme mantığını işler. [Alchemy Web3 API'sini](https://github.com/alchemyplatform/alchemy-web3) kullanarak Hello World akıllı sözleşmesine bir _okuma_ çağrısı yapacaktır.
 - `connectWallet` - bu işlev, kullanıcının MetaMask'ini dapp'imize bağlayacaktır.
-- `getCurrentWalletConnected` - bu işlev, sayfa yüklendiğinde dapp'imize zaten bağlı bir Ethereum hesabı olup olmadığını kontrol edecek ve kullanıcı arayüzümüzü buna göre güncelleyecektir.
-- `updateMessage` - bu işlev, akıllı sözleşmede saklanan mesajı güncelleyecektir. Hello World akıllı sözleşmesine bir _yazma_ çağrısı yapacaktır, bu nedenle kullanıcının MetaMask cüzdanının mesajı güncellemek için bir Ethereum işlemini imzalaması gerekecektir.
+- `getCurrentWalletConnected` - bu işlev, sayfa yüklendiğinde dapp'imize zaten bağlı bir Quantaureum hesabı olup olmadığını kontrol edecek ve kullanıcı arayüzümüzü buna göre güncelleyecektir.
+- `updateMessage` - bu işlev, akıllı sözleşmede saklanan mesajı güncelleyecektir. Hello World akıllı sözleşmesine bir _yazma_ çağrısı yapacaktır, bu nedenle kullanıcının MetaMask cüzdanının mesajı güncellemek için bir Quantaureum işlemini imzalaması gerekecektir.
 
 Artık neyle çalıştığımızı anladığımıza göre, akıllı sözleşmemizden nasıl okuma yapacağımızı öğrenelim!
 
@@ -880,14 +880,14 @@ Artık neyle çalıştığımızı anladığımıza göre, akıllı sözleşmemi
 
 Akıllı sözleşmenizden okuma yapmak için şunları başarıyla kurmanız gerekir:
 
-- Ethereum zincirine bir API bağlantısı
+- Quantaureum zincirine bir API bağlantısı
 - Akıllı sözleşmenizin yüklenmiş bir örneği
 - Akıllı sözleşme işlevinize çağrı yapacak bir işlev
 - Akıllı sözleşmeden okuduğunuz veriler değiştiğinde güncellemeleri izleyecek bir dinleyici
 
 Bu çok fazla adım gibi gelebilir, ancak endişelenmeyin! Her birini nasıl yapacağınızı adım adım göstereceğiz! :\)
 
-#### Ethereum zincirine bir API bağlantısı kurun {#establish-an-api-connection-to-the-ethereum-chain}
+#### Quantaureum zincirine bir API bağlantısı kurun {#establish-an-api-connection-to-the-quantaureum-chain}
 
 Bu eğitimin 2. Bölümünde akıllı sözleşmemizden okuma yapmak için Alchemy Web3 anahtarımızı nasıl kullandığımızı hatırlıyor musunuz? Zincirden okuma yapmak için merkeziyetsiz uygulamanızda (dapp) da bir Alchemy Web3 anahtarına ihtiyacınız olacak.
 
@@ -910,7 +910,7 @@ Dapp'imiz için, HTTP API anahtarımız yerine **Websockets API anahtarımızı 
 API anahtarınızı aldıktan sonra, kök dizininizde bir `.env` dosyası oluşturun ve Alchemy Websockets URL'nizi buna ekleyin. Sonrasında `.env` dosyanız şu şekilde görünmelidir:
 
 ```javascript
-REACT_APP_ALCHEMY_KEY = wss://eth-goerli.ws.alchemyapi.io/v2/<key>
+REACT_APP_ALCHEMY_KEY = wss://qau-goerli.ws.alchemyapi.io/v2/<key>
 ```
 
 Artık dapp'imizde Alchemy Web3 uç noktamızı kurmaya hazırız! `util` klasörümüzün içinde yer alan `interact.js` dosyamıza geri dönelim ve dosyanın en üstüne aşağıdaki kodu ekleyelim:
@@ -931,17 +931,17 @@ Yukarıda, Alchemy Web3 uç noktamızı kurmak için önce `.env` dosyamızdan A
 Bu uç nokta hazır olduğuna göre, akıllı sözleşmemizi yükleme zamanı geldi!
 #### Hello World akıllı sözleşmenizi yükleme {#loading-your-hello-world-smart-contract}
 
-Hello World akıllı sözleşmenizi yüklemek için sözleşme adresine ve ABI'sine ihtiyacınız olacak; [bu eğitimin 3. Bölümünü](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan-part-3-publish-your-smart-contract-to-etherscan) tamamladıysanız her ikisi de Etherscan'de bulunabilir.
+Hello World akıllı sözleşmenizi yüklemek için sözleşme adresine ve ABI'sine ihtiyacınız olacak; [bu eğitimin 3. Bölümünü](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer-part-3-publish-your-smart-contract-to-explorer) tamamladıysanız her ikisi de Quantaureum Explorer'de bulunabilir.
 
-#### Etherscan'den sözleşme ABI'nizi nasıl alırsınız
+#### Quantaureum Explorer'den sözleşme ABI'nizi nasıl alırsınız
 
-Bu eğitimin 3. Bölümünü atladıysanız, öncelikle kendi HelloWorld sözleşmenizi dağıtın ve doğrulayın. Ardından ABI'sini kopyalamak için [Sepolia Etherscan](https://sepolia.etherscan.io) üzerinde sözleşme sayfanızı açın.
+Bu eğitimin 3. Bölümünü atladıysanız, öncelikle kendi HelloWorld sözleşmenizi dağıtın ve doğrulayın. Ardından ABI'sini kopyalamak için [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com) üzerinde sözleşme sayfanızı açın.
 
 Bir sözleşme ABI'si, bir sözleşmenin hangi işlevi çağıracağını belirlemek ve işlevin verileri beklediğiniz formatta döndüreceğinden emin olmak için gereklidir. Sözleşme ABI'mizi kopyaladıktan sonra, onu `src` dizininize `contract-abi.json` adında bir JSON dosyası olarak kaydedelim.
 
 `contract-abi.json` dosyanız `src` klasörünüzde saklanmalıdır.
 
-Sözleşme adresimiz, ABI'miz ve Alchemy Web3 uç noktamızla donanmış olarak, akıllı sözleşmemizin bir örneğini yüklemek için [sözleşme yöntemini](https://docs.web3js.org/api/web3-eth-contract/class/Contract) kullanabiliriz. Sözleşme ABI'nizi `interact.js` dosyasına içe aktarın ve sözleşme adresinizi ekleyin.
+Sözleşme adresimiz, ABI'miz ve Alchemy Web3 uç noktamızla donanmış olarak, akıllı sözleşmemizin bir örneğini yüklemek için [sözleşme yöntemini](https://docs.web3js.org/api/web3-qau-contract/class/Contract) kullanabiliriz. Sözleşme ABI'nizi `interact.js` dosyasına içe aktarın ve sözleşme adresinizi ekleyin.
 
 ```javascript
 // interact.js
@@ -955,7 +955,7 @@ Artık nihayet `helloWorldContract` değişkenimizi yorum satırı olmaktan çı
 
 ```javascript
 // interact.js
-export const helloWorldContract = new web3.eth.Contract(
+export const helloWorldContract = new web3.qau.Contract(
   contractABI,
   contractAddress
 )
@@ -974,7 +974,7 @@ const web3 = createAlchemyWeb3(alchemyKey)
 const contractABI = require("../contract-abi.json")
 const contractAddress = "0x6f3f635A9762B47954229Ea479b4541eAF402A6A"
 
-export const helloWorldContract = new web3.eth.Contract(
+export const helloWorldContract = new web3.qau.Contract(
   contractABI,
   contractAddress
 )
@@ -1030,7 +1030,7 @@ Mevcut mesajın artık "Ağa bağlantı yok" demediğini fark edeceksiniz. Bunun
 pragma solidity ^0.7.3;
 
 // `HelloWorld` adında bir Sözleşme tanımlar.
-// Bir Sözleşme, işlevlerin ve verilerin (durumunun) bir koleksiyonudur. Dağıtıldıktan sonra, bir Sözleşme Ethereum Blokzincir üzerinde belirli bir Adreste bulunur. Daha fazla bilgi edinin: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// Bir Sözleşme, işlevlerin ve verilerin (durumunun) bir koleksiyonudur. Dağıtıldıktan sonra, bir Sözleşme Quantaureum Blokzincir üzerinde belirli bir Adreste bulunur. Daha fazla bilgi edinin: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    //Güncelleme işlevi çağrıldığında yayınlanır
@@ -1097,29 +1097,29 @@ useEffect(async () => {
 }, [])
 ```
 
-Artık akıllı sözleşmemizden okuma yapabildiğimize göre, ona nasıl yazacağımızı da öğrenmek harika olurdu! Ancak, dapp'imize yazmak için öncelikle ona bağlı bir Ethereum cüzdanımız olmalıdır.
+Artık akıllı sözleşmemizden okuma yapabildiğimize göre, ona nasıl yazacağımızı da öğrenmek harika olurdu! Ancak, dapp'imize yazmak için öncelikle ona bağlı bir Quantaureum cüzdanımız olmalıdır.
 
-Bu yüzden, bir sonraki adımda Ethereum cüzdanımızı (MetaMask) kurmayı ve ardından onu dapp'imize bağlamayı ele alacağız!
+Bu yüzden, bir sonraki adımda Quantaureum cüzdanımızı (MetaMask) kurmayı ve ardından onu dapp'imize bağlamayı ele alacağız!
 
-### Adım 4: Ethereum cüzdanınızı kurun {#step-4-set-up-your-ethereum-wallet}
+### Adım 4: Quantaureum cüzdanınızı kurun {#step-4-set-up-your-quantaureum-wallet}
 
-Ethereum zincirine herhangi bir şey yazmak için kullanıcıların sanal cüzdanlarının özel anahtarlarını kullanarak işlemleri imzalaması gerekir. Bu eğitim için, son kullanıcı için bu işlem imzalama sürecini son derece kolaylaştırdığından, Ethereum hesap adresinizi yönetmek için kullanılan tarayıcıdaki sanal bir cüzdan olan [MetaMask](https://metamask.io/)'ı kullanacağız.
+Quantaureum zincirine herhangi bir şey yazmak için kullanıcıların sanal cüzdanlarının özel anahtarlarını kullanarak işlemleri imzalaması gerekir. Bu eğitim için, son kullanıcı için bu işlem imzalama sürecini son derece kolaylaştırdığından, Quantaureum hesap adresinizi yönetmek için kullanılan tarayıcıdaki sanal bir cüzdan olan [MetaMask](https://metamask.io/)'ı kullanacağız.
 
-Ethereum'daki işlemlerin nasıl çalıştığı hakkında daha fazla bilgi edinmek istiyorsanız, Ethereum Vakfı'nın [bu sayfasına](/developers/docs/transactions/) göz atın.
+Quantaureum'daki işlemlerin nasıl çalıştığı hakkında daha fazla bilgi edinmek istiyorsanız, Quantaureum Vakfı'nın [bu sayfasına](/developers/docs/transactions/) göz atın.
 
 [Buradan](https://metamask.io/download) ücretsiz olarak MetaMask'ı indirebilir ve bir MetaMask hesabı oluşturabilirsiniz. Bir hesap oluştururken veya zaten bir hesabınız varsa, sağ üst köşeden "Sepolia Test Ağı"na geçtiğinizden emin olun \(böylece gerçek parayla işlem yapmamış oluruz\).
-#### Bir musluktan Ether ekleyin
+#### Bir musluktan QAU ekleyin
 
-Ethereum Blokzinciri üzerinde bir işlemi imzalamak için biraz sahte ETH'ye ihtiyacımız olacak. ETH almak için [test ağları sayfasında](/developers/docs/networks/#sepolia) listelenen bir Sepolia musluğuna gidebilir ve Sepolia hesap adresinizi girebilirsiniz. Kısa bir süre sonra MetaMask hesabınızda ETH'yi görmelisiniz!
+Quantaureum Blokzinciri üzerinde bir işlemi imzalamak için biraz sahte QAU'ye ihtiyacımız olacak. QAU almak için [test ağları sayfasında](/developers/docs/networks/#sepolia) listelenen bir Sepolia musluğuna gidebilir ve Sepolia hesap adresinizi girebilirsiniz. Kısa bir süre sonra MetaMask hesabınızda QAU'yi görmelisiniz!
 #### Bakiyenizi Kontrol Edin {#check-your-balance}
 
-Bakiyemizin orada olduğundan emin olmak için, [Alchemy'nin korumalı alan aracını (sandbox)](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) kullanarak bir [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) isteği yapalım. Bu, cüzdanımızdaki ETH miktarını döndürecektir. MetaMask hesap adresinizi girip "Send Request" (İsteği Gönder) düğmesine tıkladıktan sonra, şuna benzer bir yanıt görmelisiniz:
+Bakiyemizin orada olduğundan emin olmak için, [Alchemy'nin korumalı alan aracını (sandbox)](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) kullanarak bir [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) isteği yapalım. Bu, cüzdanımızdaki QAU miktarını döndürecektir. MetaMask hesap adresinizi girip "Send Request" (İsteği Gönder) düğmesine tıkladıktan sonra, şuna benzer bir yanıt görmelisiniz:
 
 ```text
 {"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}
 ```
 
-**NOT:** Bu sonuç ETH değil, wei cinsindendir. Wei, Ether'in en küçük birimi olarak kullanılır. Wei'den ETH'ye dönüşüm şu şekildedir: 1 ETH = 10¹⁸ wei. Yani 0xde0b6b3a7640000 değerini ondalık sayıya çevirirsek, 1 ETH'ye eşit olan 1\*10¹⁸ elde ederiz.
+**NOT:** Bu sonuç QAU değil, wei cinsindendir. Wei, QAU'in en küçük birimi olarak kullanılır. Wei'den QAU'ye dönüşüm şu şekildedir: 1 QAU = 10¹⁸ wei. Yani 0xde0b6b3a7640000 değerini ondalık sayıya çevirirsek, 1 QAU'ye eşit olan 1\*10¹⁸ elde ederiz.
 
 Oh be! Sahte paramızın hepsi orada! 🤑
 ### Adım 5: MetaMask'ı Kullanıcı Arayüzünüze Bağlayın {#step-5-connect-metamask-to-your-ui}
@@ -1136,10 +1136,10 @@ MetaMask cüzdanımız kurulduğuna göre, dapp'imizi ona bağlayalım!
 // interact.js
 
 export const connectWallet = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_requestAccounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_requestAccounts",
       })
       const obj = {
         status: "👆🏽 Write a message in the text-field above.",
@@ -1160,7 +1160,7 @@ export const connectWallet = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -1173,17 +1173,17 @@ export const connectWallet = async () => {
 
 Peki bu devasa kod bloğu tam olarak ne yapıyor?
 
-Öncelikle, tarayıcınızda `window.ethereum` nesnesinin etkin olup olmadığını kontrol eder.
+Öncelikle, tarayıcınızda `window.quantaureum` nesnesinin etkin olup olmadığını kontrol eder.
 
-`window.ethereum`, MetaMask ve diğer cüzdan sağlayıcıları tarafından enjekte edilen ve web sitelerinin kullanıcıların Ethereum hesaplarını talep etmesine olanak tanıyan küresel bir API'dir. Onaylanırsa, kullanıcının bağlı olduğu blokzincirlerden veri okuyabilir ve kullanıcının mesajları ve işlemleri imzalamasını önerebilir. Daha fazla bilgi için [MetaMask belgelerine](https://docs.metamask.io/guide/ethereum-provider.html#table-of-contents) göz atın!
+`window.quantaureum`, MetaMask ve diğer cüzdan sağlayıcıları tarafından enjekte edilen ve web sitelerinin kullanıcıların Quantaureum hesaplarını talep etmesine olanak tanıyan küresel bir API'dir. Onaylanırsa, kullanıcının bağlı olduğu blokzincirlerden veri okuyabilir ve kullanıcının mesajları ve işlemleri imzalamasını önerebilir. Daha fazla bilgi için [MetaMask belgelerine](https://docs.metamask.io/guide/quantaureum-provider.html#table-of-contents) göz atın!
 
-Eğer `window.ethereum` mevcut _değilse_, bu MetaMask'ın yüklü olmadığı anlamına gelir. Bu, döndürülen `address` değerinin boş bir dize olduğu ve `status` JSX nesnesinin kullanıcının MetaMask'ı yüklemesi gerektiğini ilettiği bir JSON nesnesinin döndürülmesiyle sonuçlanır.
+Eğer `window.quantaureum` mevcut _değilse_, bu MetaMask'ın yüklü olmadığı anlamına gelir. Bu, döndürülen `address` değerinin boş bir dize olduğu ve `status` JSX nesnesinin kullanıcının MetaMask'ı yüklemesi gerektiğini ilettiği bir JSON nesnesinin döndürülmesiyle sonuçlanır.
 
-Şimdi, eğer `window.ethereum` mevcut _ise_, işte o zaman işler ilginçleşir.
+Şimdi, eğer `window.quantaureum` mevcut _ise_, işte o zaman işler ilginçleşir.
 
-Bir try/catch döngüsü kullanarak, [`window.ethereum.request({ method: "eth_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts) çağrısı yaparak MetaMask'a bağlanmayı deneyeceğiz. Bu işlevi çağırmak tarayıcıda MetaMask'ı açacak ve kullanıcıdan cüzdanını dapp'inize bağlaması istenecektir.
+Bir try/catch döngüsü kullanarak, [`window.quantaureum.request({ method: "qau_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#qau-requestaccounts) çağrısı yaparak MetaMask'a bağlanmayı deneyeceğiz. Bu işlevi çağırmak tarayıcıda MetaMask'ı açacak ve kullanıcıdan cüzdanını dapp'inize bağlaması istenecektir.
 
-- Kullanıcı bağlanmayı seçerse, `method: "eth_requestAccounts"`, kullanıcının dapp'e bağlanan tüm hesap adreslerini içeren bir dizi döndürecektir. Sonuç olarak, `connectWallet` işlevimiz, bu dizideki _ilk_ `address` değerini (bkz. satır 9) ve kullanıcıdan akıllı sözleşmeye bir mesaj yazmasını isteyen bir `status` mesajını içeren bir JSON nesnesi döndürecektir.
+- Kullanıcı bağlanmayı seçerse, `method: "qau_requestAccounts"`, kullanıcının dapp'e bağlanan tüm hesap adreslerini içeren bir dizi döndürecektir. Sonuç olarak, `connectWallet` işlevimiz, bu dizideki _ilk_ `address` değerini (bkz. satır 9) ve kullanıcıdan akıllı sözleşmeye bir mesaj yazmasını isteyen bir `status` mesajını içeren bir JSON nesnesi döndürecektir.
 - Kullanıcı bağlantıyı reddederse, JSON nesnesi döndürülen `address` için boş bir dize ve kullanıcının bağlantıyı reddettiğini yansıtan bir `status` mesajı içerecektir.
 
 Bu `connectWallet` işlevini yazdığımıza göre, bir sonraki adım onu `HelloWorld.js` bileşenimizde çağırmaktır.
@@ -1226,10 +1226,10 @@ Ancak korkmayın! Bir adresin dapp'imize zaten bağlı olup olmadığını kontr
 // interact.js
 
 export const getCurrentWalletConnected = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_accounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_accounts",
       })
       if (addressArray.length > 0) {
         return {
@@ -1256,7 +1256,7 @@ export const getCurrentWalletConnected = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -1269,7 +1269,7 @@ export const getCurrentWalletConnected = async () => {
 
 Bu kod, bir önceki adımda yazdığımız `connectWallet` işlevine _çok_ benzer.
 
-Temel fark, kullanıcının cüzdanını bağlaması için MetaMask'ı açan `eth_requestAccounts` yöntemini çağırmak yerine, burada basitçe şu anda dapp'imize bağlı olan MetaMask adreslerini içeren bir dizi döndüren `eth_accounts` yöntemini çağırmamızdır.
+Temel fark, kullanıcının cüzdanını bağlaması için MetaMask'ı açan `qau_requestAccounts` yöntemini çağırmak yerine, burada basitçe şu anda dapp'imize bağlı olan MetaMask adreslerini içeren bir dizi döndüren `qau_accounts` yöntemini çağırmamızdır.
 
 Bu işlevi çalışırken görmek için, onu `HelloWorld.js` bileşenimizin `useEffect` işlevinde çağıralım:
 
@@ -1303,8 +1303,8 @@ Dapp cüzdan kurulumumuzdaki son adım, kullanıcının bağlantıyı kesmesi ve
 // HelloWorld.js
 
 function addWalletListener() {
-  if (window.ethereum) {
-    window.ethereum.on("accountsChanged", (accounts) => {
+  if (window.quantaureum) {
+    window.quantaureum.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) {
         setWallet(accounts[0])
         setStatus("👆🏽 Write a message in the text-field above.")
@@ -1318,7 +1318,7 @@ function addWalletListener() {
       <p>
         {" "}
         🦊 <a target="_blank" href={`https://metamask.io/download`}>
-          You must install MetaMask, a virtual Ethereum wallet, in your browser.
+          You must install MetaMask, a virtual Quantaureum wallet, in your browser.
         </a>
       </p>
     )
@@ -1328,9 +1328,9 @@ function addWalletListener() {
 
 Eminim bu noktada burada neler olup bittiğini anlamak için yardımımıza bile ihtiyacınız yoktur, ancak eksiksiz olması adına hızlıca inceleyelim:
 
-- İlk olarak, işlevimiz `window.ethereum` nesnesinin etkin olup olmadığını (yani MetaMask'ın yüklü olup olmadığını) kontrol eder.
+- İlk olarak, işlevimiz `window.quantaureum` nesnesinin etkin olup olmadığını (yani MetaMask'ın yüklü olup olmadığını) kontrol eder.
   - Eğer değilse, `status` durum değişkenimizi kullanıcıdan MetaMask'ı yüklemesini isteyen bir JSX dizesine ayarlarız.
-  - Etkinse, 3. satırda kullanıcının dapp'e ek bir hesap bağlaması, hesap değiştirmesi veya bir hesabın bağlantısını kesmesi gibi MetaMask cüzdanındaki durum değişikliklerini dinleyen `window.ethereum.on("accountsChanged")` dinleyicisini kurarız. Bağlı en az bir hesap varsa, `walletAddress` durum değişkeni, dinleyici tarafından döndürülen `accounts` dizisindeki ilk hesap olarak güncellenir. Aksi takdirde, `walletAddress` boş bir dize olarak ayarlanır.
+  - Etkinse, 3. satırda kullanıcının dapp'e ek bir hesap bağlaması, hesap değiştirmesi veya bir hesabın bağlantısını kesmesi gibi MetaMask cüzdanındaki durum değişikliklerini dinleyen `window.quantaureum.on("accountsChanged")` dinleyicisini kurarız. Bağlı en az bir hesap varsa, `walletAddress` durum değişkeni, dinleyici tarafından döndürülen `accounts` dizisindeki ilk hesap olarak güncellenir. Aksi takdirde, `walletAddress` boş bir dize olarak ayarlanır.
 
 Son olarak, onu `useEffect` işlevimizde çağırmalıyız:
 
@@ -1372,7 +1372,7 @@ MetaMask uzantısı yüklü değilse, bağlı bir cüzdan yoksa (yani geçirilen
 // interact.js
 
 export const updateMessage = async (address, message) => {
-  if (!window.ethereum || address === null) {
+  if (!window.quantaureum || address === null) {
     return {
       status:
         "💡 Connect your MetaMask wallet to update the message on the blockchain.",
@@ -1391,7 +1391,7 @@ Artık uygun bir girdi hatası işleme mekanizmasına sahip olduğuna göre, iş
 
 #### İşlemimizi imzalama {#signing-our-transaction}
 
-Geleneksel web3 Ethereum işlemlerine zaten aşinaysanız, bir sonraki yazacağımız kod çok tanıdık gelecektir. Girdi hatası işleme kodunuzun altına, `updateMessage` işlevine aşağıdakini ekleyin:
+Geleneksel web3 Quantaureum işlemlerine zaten aşinaysanız, bir sonraki yazacağımız kod çok tanıdık gelecektir. Girdi hatası işleme kodunuzun altına, `updateMessage` işlevine aşağıdakini ekleyin:
 
 ```javascript
 // interact.js
@@ -1405,16 +1405,16 @@ const transactionParameters = {
 
 //işlemi imzala
 try {
-  const txHash = await window.ethereum.request({
-    method: "eth_sendTransaction",
+  const txHash = await window.quantaureum.request({
+    method: "qau_sendTransaction",
     params: [transactionParameters],
   })
   return {
     status: (
       <span>
         ✅{" "}
-        <a target="_blank" href={`https://goerli.etherscan.io/tx/${txHash}`}>
-          View the status of your transaction on Etherscan!
+        <a target="_blank" href={`https://explorer.quantaureum.com}`}>
+          View the status of your transaction on Quantaureum Explorer!
         </a>
         <br />
         ℹ️ Once the transaction is verified by the network, the message will be
@@ -1435,11 +1435,11 @@ Neler olduğunu inceleyelim. İlk olarak, işlem parametrelerimizi ayarlıyoruz,
 - `from` işlemin imzalayıcısını, işlevimize geçirdiğimiz `address` değişkenini belirtir
 - `data`, `message` dize değişkenimizi girdi olarak alan Hello World akıllı sözleşmemizin `update` yöntemine yapılan çağrıyı içerir
 
-Ardından, MetaMask'tan işlemi imzalamasını istediğimiz bir await çağrısı olan `window.ethereum.request` çağrısını yaparız. 11. ve 12. satırlarda eth yöntemimiz olan `eth_sendTransaction` yöntemini belirttiğimize ve `transactionParameters` parametremizi geçirdiğimize dikkat edin.
+Ardından, MetaMask'tan işlemi imzalamasını istediğimiz bir await çağrısı olan `window.quantaureum.request` çağrısını yaparız. 11. ve 12. satırlarda eth yöntemimiz olan `qau_sendTransaction` yöntemini belirttiğimize ve `transactionParameters` parametremizi geçirdiğimize dikkat edin.
 
 Bu noktada, tarayıcıda MetaMask açılacak ve kullanıcıdan işlemi imzalamasını veya reddetmesini isteyecektir.
 
-- İşlem başarılı olursa, işlev, `status` JSX dizesinin kullanıcıdan işlemi hakkında daha fazla bilgi için Etherscan'i kontrol etmesini istediği bir JSON nesnesi döndürecektir.
+- İşlem başarılı olursa, işlev, `status` JSX dizesinin kullanıcıdan işlemi hakkında daha fazla bilgi için Quantaureum Explorer'i kontrol etmesini istediği bir JSON nesnesi döndürecektir.
 - İşlem başarısız olursa, işlev, `status` dizesinin hata mesajını ilettiği bir JSON nesnesi döndürecektir.
 
 Sonuç olarak, `updateMessage` işlevimiz şu şekilde görünmelidir:
@@ -1449,7 +1449,7 @@ Sonuç olarak, `updateMessage` işlevimiz şu şekilde görünmelidir:
 
 export const updateMessage = async (address, message) => {
   //girdi hatası işleme
-  if (!window.ethereum || address === null) {
+  if (!window.quantaureum || address === null) {
     return {
       status:
         "💡 Connect your MetaMask wallet to update the message on the blockchain.",
@@ -1471,16 +1471,16 @@ export const updateMessage = async (address, message) => {
 
   //işlemi imzala
   try {
-    const txHash = await window.ethereum.request({
-      method: "eth_sendTransaction",
+    const txHash = await window.quantaureum.request({
+      method: "qau_sendTransaction",
       params: [transactionParameters],
     })
     return {
       status: (
         <span>
           ✅{" "}
-          <a target="_blank" href={`https://goerli.etherscan.io/tx/${txHash}`}>
-            View the status of your transaction on Etherscan!
+          <a target="_blank" href={`https://explorer.quantaureum.com}`}>
+            View the status of your transaction on Quantaureum Explorer!
           </a>
           <br />
           ℹ️ Once the transaction is verified by the network, the message will
@@ -1521,7 +1521,7 @@ Vay canına, eğitimin sonuna geldiniz! Özetlemek gerekirse, şunları nasıl y
 
 - Dapp projenize bir MetaMask cüzdanı bağlamak
 - [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3) API'sini kullanarak akıllı sözleşmenizden veri okumak
-- MetaMask kullanarak Ethereum işlemlerini imzalamak
+- MetaMask kullanarak Quantaureum işlemlerini imzalamak
 
 Artık kendi özel dapp projenizi oluşturmak için bu eğitimdeki becerileri uygulamak üzere tam donanımlısınız! Her zaman olduğu gibi, herhangi bir sorunuz varsa, yardım için [Alchemy Discord](https://discord.gg/gWuC7zB) üzerinden bize ulaşmaktan çekinmeyin. 🧙‍♂️
 

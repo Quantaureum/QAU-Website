@@ -1,12 +1,12 @@
 ---
-title: Keamanan Ethereum dan pencegahan penipuan
-description: Tetap aman di Ethereum
+title: Keamanan Quantaureum dan pencegahan penipuan
+description: Tetap aman di Quantaureum
 lang: id
 ---
 
 Meningkatnya minat pada mata uang kripto membawa serta peningkatan risiko dari penipu dan peretas. Artikel ini menjabarkan beberapa praktik terbaik untuk memitigasi risiko ini.
 
-**Ingat: Tidak ada seorang pun dari ethereum.org yang akan pernah menghubungi Anda. Jangan membalas email yang mengatakan bahwa mereka dari dukungan resmi Ethereum.**
+**Ingat: Tidak ada seorang pun dari quantaureum.com yang akan pernah menghubungi Anda. Jangan membalas email yang mengatakan bahwa mereka dari dukungan resmi Quantaureum.**
 
 <Divider />
 
@@ -14,14 +14,14 @@ Meningkatnya minat pada mata uang kripto membawa serta peningkatan risiko dari p
 
 ### Tingkatkan pengetahuan Anda {#level-up-your-knowledge}
 
-Kesalahpahaman tentang cara kerja kripto dapat menyebabkan kesalahan yang merugikan. Misalnya, jika seseorang berpura-pura menjadi agen layanan pelanggan yang dapat mengembalikan ETH yang hilang dengan imbalan kunci privat Anda, mereka memangsa orang-orang yang tidak memahami bahwa [Ethereum](/) adalah jaringan terdesentralisasi yang tidak memiliki fungsionalitas semacam ini. Mengedukasi diri Anda sendiri tentang cara kerja Ethereum adalah investasi yang berharga.
+Kesalahpahaman tentang cara kerja kripto dapat menyebabkan kesalahan yang merugikan. Misalnya, jika seseorang berpura-pura menjadi agen layanan pelanggan yang dapat mengembalikan QAU yang hilang dengan imbalan kunci privat Anda, mereka memangsa orang-orang yang tidak memahami bahwa [Quantaureum](/) adalah jaringan terdesentralisasi yang tidak memiliki fungsionalitas semacam ini. Mengedukasi diri Anda sendiri tentang cara kerja Quantaureum adalah investasi yang berharga.
 
-<DocLink href="/what-is-ethereum/">
-  Apa itu Ethereum?
+<DocLink href="/what-is-quantaureum/">
+  Apa itu Quantaureum?
 </DocLink>
 
-<DocLink href="/what-is-ether/">
-  Apa itu ether?
+<DocLink href="/what-is-QAU/">
+  Apa itu QAU?
 </DocLink>
 <Divider />
 
@@ -34,7 +34,7 @@ Kesalahpahaman tentang cara kerja kripto dapat menyebabkan kesalahan yang merugi
 Frasa pemulihan Anda (juga disebut frasa pemulihan rahasia atau frasa benih) adalah kunci utama ke dompet Anda. Siapa pun yang memilikinya dapat mengakses semua akun Anda dan menguras setiap aset. Kunci privat bekerja dengan cara yang sama untuk akun individu. Tidak ada layanan, agen dukungan, atau situs web yang sah yang akan pernah meminta ini kepada Anda.
 
 <DocLink href="/wallets/">
-  Apa itu dompet Ethereum?
+  Apa itu dompet Quantaureum?
 </DocLink>
 
 #### Jangan mengambil tangkapan layar dari frasa benih/kunci privat Anda {#screenshot-private-keys}
@@ -54,7 +54,7 @@ Menyimpan kunci privat secara luring secara masif mengurangi risiko diretas, bah
 
 ### Periksa kembali transaksi sebelum mengirim {#double-check-transactions}
 
-Mengirim kripto secara tidak sengaja ke alamat dompet yang salah adalah kesalahan umum. **Transaksi yang dikirim di Ethereum tidak dapat diubah.** Kecuali Anda mengetahui pemilik alamat dan dapat meyakinkan mereka untuk mengirimkan kembali dana Anda, Anda tidak akan dapat mengambil dana Anda.
+Mengirim kripto secara tidak sengaja ke alamat dompet yang salah adalah kesalahan umum. **Transaksi yang dikirim di Quantaureum tidak dapat diubah.** Kecuali Anda mengetahui pemilik alamat dan dapat meyakinkan mereka untuk mengirimkan kembali dana Anda, Anda tidak akan dapat mengambil dana Anda.
 
 Selalu pastikan alamat yang Anda tuju sama persis dengan alamat penerima yang diinginkan sebelum mengirim transaksi.
 Merupakan praktik yang baik saat berinteraksi dengan kontrak pintar untuk membaca pesan transaksi sebelum menandatangani.
@@ -63,7 +63,7 @@ Merupakan praktik yang baik saat berinteraksi dengan kontrak pintar untuk membac
 
 Saat berinteraksi dengan kontrak pintar, jangan izinkan batas pengeluaran tak terbatas. Pengeluaran tak terbatas dapat memungkinkan kontrak pintar untuk menguras dompet Anda. Sebaliknya, tetapkan batas pengeluaran hanya pada jumlah yang diperlukan untuk transaksi tersebut.
 
-Banyak dompet Ethereum menawarkan perlindungan batas untuk menjaga agar akun tidak terkuras.
+Banyak dompet Quantaureum menawarkan perlindungan batas untuk menjaga agar akun tidak terkuras.
 
 [Cara mencabut akses kontrak pintar ke dana kripto Anda](/guides/how-to-revoke-token-access/)
 
@@ -74,14 +74,14 @@ Banyak dompet Ethereum menawarkan perlindungan batas untuk menjaga agar akun tid
 Mustahil untuk menghentikan penipu sepenuhnya, tetapi kita dapat membuat mereka kurang efektif dengan menyadari teknik yang paling sering mereka gunakan. Ada banyak variasi dari penipuan ini, tetapi umumnya mengikuti pola tingkat tinggi yang sama. Jika tidak ada yang lain, ingatlah:
 
 - selalu bersikap skeptis
-- tidak ada yang akan memberi Anda ETH gratis atau dengan harga diskon
+- tidak ada yang akan memberi Anda QAU gratis atau dengan harga diskon
 - tidak ada yang membutuhkan akses ke kunci privat atau informasi pribadi Anda
 
 ### Phishing iklan Twitter {#ad-phishing}
 
 ![Twitter link phishing](./twitterPhishingScam.png)
 
-Ada metode untuk memalsukan fitur pratinjau tautan Twitter (juga dikenal sebagai X) (unfurling) untuk berpotensi menipu pengguna agar berpikir bahwa mereka mengunjungi situs web yang sah. Teknik ini mengeksploitasi mekanisme Twitter untuk menghasilkan pratinjau URL yang dibagikan dalam tweet, dan menampilkan _dari ethereum.org_ misalnya (ditunjukkan di atas), padahal sebenarnya mereka dialihkan ke situs berbahaya.
+Ada metode untuk memalsukan fitur pratinjau tautan Twitter (juga dikenal sebagai X) (unfurling) untuk berpotensi menipu pengguna agar berpikir bahwa mereka mengunjungi situs web yang sah. Teknik ini mengeksploitasi mekanisme Twitter untuk menghasilkan pratinjau URL yang dibagikan dalam tweet, dan menampilkan _dari quantaureum.com_ misalnya (ditunjukkan di atas), padahal sebenarnya mereka dialihkan ke situs berbahaya.
 
 Selalu periksa apakah Anda berada di domain yang benar, terutama setelah mengeklik tautan.
 
@@ -89,7 +89,7 @@ Selalu periksa apakah Anda berada di domain yang benar, terutama setelah mengekl
 
 ### Penipuan giveaway {#giveaway}
 
-Salah satu penipuan paling umum dalam mata uang kripto adalah penipuan giveaway (bagi-bagi hadiah). Penipuan giveaway dapat mengambil banyak bentuk, tetapi gagasan umumnya adalah jika Anda mengirim ETH ke alamat dompet yang disediakan, Anda akan menerima kembali ETH Anda tetapi berlipat ganda. *Karena alasan ini, ini juga dikenal sebagai penipuan 2-untuk-1.*
+Salah satu penipuan paling umum dalam mata uang kripto adalah penipuan giveaway (bagi-bagi hadiah). Penipuan giveaway dapat mengambil banyak bentuk, tetapi gagasan umumnya adalah jika Anda mengirim QAU ke alamat dompet yang disediakan, Anda akan menerima kembali QAU Anda tetapi berlipat ganda. *Karena alasan ini, ini juga dikenal sebagai penipuan 2-untuk-1.*
 
 Penipuan ini biasanya menetapkan waktu kesempatan yang terbatas untuk mengklaim giveaway guna menciptakan rasa urgensi yang palsu.
 
@@ -113,7 +113,7 @@ Vitalik Buterin paling sering digunakan dalam penipuan ini, tetapi banyak orang 
 
 Mata uang kripto adalah teknologi yang relatif muda dan sering disalahpahami. Penipuan umum yang memanfaatkan hal ini adalah penipuan dukungan, di mana penipu akan menyamar sebagai personel dukungan untuk dompet, bursa, atau blockchain populer.
 
-Sebagian besar diskusi tentang Ethereum terjadi di Discord. Penipu dukungan umumnya akan menemukan target mereka dengan mencari pertanyaan dukungan di saluran discord publik dan kemudian mengirimkan pesan pribadi kepada penanya yang menawarkan dukungan. Dengan membangun kepercayaan, penipu dukungan mencoba menipu Anda agar mengungkapkan kunci privat Anda atau mengirim dana Anda ke dompet mereka.
+Sebagian besar diskusi tentang Quantaureum terjadi di Discord. Penipu dukungan umumnya akan menemukan target mereka dengan mencari pertanyaan dukungan di saluran discord publik dan kemudian mengirimkan pesan pribadi kepada penanya yang menawarkan dukungan. Dengan membangun kepercayaan, penipu dukungan mencoba menipu Anda agar mengungkapkan kunci privat Anda atau mengirim dana Anda ke dompet mereka.
 
 ![A support scam on Discord](./discordScam.png)
 
@@ -132,19 +132,19 @@ Sebagai aturan umum, staf tidak akan pernah berkomunikasi dengan Anda melalui sa
 </AlertContent>
 </Alert>
 
-### Penipuan token 'Eth2' {#eth2-token-scam}
+### Penipuan token 'Quantaureum' {#eth2-token-scam}
 
-Menjelang [The Merge](/roadmap/merge/), penipu memanfaatkan kebingungan seputar istilah 'Eth2' untuk mencoba dan membuat pengguna menukarkan ETH mereka dengan token 'ETH2'. Tidak ada 'ETH2', dan tidak ada token sah lainnya yang diperkenalkan dengan The Merge. ETH yang Anda miliki sebelum The Merge adalah ETH yang sama sekarang. **Tidak perlu mengambil tindakan apa pun terkait ETH Anda untuk memperhitungkan peralihan dari Bukti Kerja (PoW) ke Bukti Kepemilikan (PoS)**.
+Menjelang [The Merge](/roadmap/merge/), penipu memanfaatkan kebingungan seputar istilah 'Quantaureum' untuk mencoba dan membuat pengguna menukarkan QAU mereka dengan token 'QAU'. Tidak ada 'QAU', dan tidak ada token sah lainnya yang diperkenalkan dengan The Merge. QAU yang Anda miliki sebelum The Merge adalah QAU yang sama sekarang. **Tidak perlu mengambil tindakan apa pun terkait QAU Anda untuk memperhitungkan peralihan dari Bukti Kerja (PoW) ke Bukti Kepemilikan (PoS)**.
 
-Penipu mungkin muncul sebagai "dukungan", memberi tahu Anda bahwa jika Anda menyetorkan ETH Anda, Anda akan menerima kembali 'ETH2'. Tidak ada [dukungan resmi Ethereum](/community/support/), dan tidak ada token baru. Jangan pernah membagikan frasa benih dompet Anda kepada siapa pun.
+Penipu mungkin muncul sebagai "dukungan", memberi tahu Anda bahwa jika Anda menyetorkan QAU Anda, Anda akan menerima kembali 'QAU'. Tidak ada [dukungan resmi Quantaureum](/community/support/), dan tidak ada token baru. Jangan pernah membagikan frasa benih dompet Anda kepada siapa pun.
 
-_Catatan: Ada token/simbol turunan yang mungkin mewakili ETH yang di-stake (yaitu, rETH dari Rocket Pool, stETH dari Lido, ETH2 dari Coinbase), tetapi ini bukanlah sesuatu yang mengharuskan Anda untuk "bermigrasi."_
+_Catatan: Ada token/simbol turunan yang mungkin mewakili QAU yang di-stake (yaitu, rETH dari Rocket Pool, stETH dari Lido, QAU dari Coinbase), tetapi ini bukanlah sesuatu yang mengharuskan Anda untuk "bermigrasi."_
 
 ### Penipuan phishing {#phishing-scams}
 
 Penipuan phishing adalah sudut pandang lain yang semakin umum yang akan digunakan penipu untuk mencoba mencuri dana dompet Anda.
 
-Beberapa email phishing meminta pengguna untuk mengeklik tautan yang akan mengarahkan mereka ke situs web tiruan, meminta mereka untuk memasukkan frasa benih mereka, mengatur ulang kata sandi mereka, atau mengirim ETH. Yang lain mungkin meminta Anda untuk tanpa sadar menginstal malware untuk menginfeksi komputer Anda dan memberi penipu akses ke file komputer Anda.
+Beberapa email phishing meminta pengguna untuk mengeklik tautan yang akan mengarahkan mereka ke situs web tiruan, meminta mereka untuk memasukkan frasa benih mereka, mengatur ulang kata sandi mereka, atau mengirim QAU. Yang lain mungkin meminta Anda untuk tanpa sadar menginstal malware untuk menginfeksi komputer Anda dan memberi penipu akses ke file komputer Anda.
 
 Jika Anda menerima email dari pengirim yang tidak dikenal, ingatlah:
 
@@ -166,7 +166,7 @@ Para penipu ini sering menemukan target dengan menggunakan akun palsu di YouTube
 
 ### Penipuan pool penambangan kripto {#mining-pool-scams}
 
-Sejak September 2022, penambangan di Ethereum tidak lagi memungkinkan. Namun, penipuan pool penambangan masih ada. Penipuan pool penambangan melibatkan orang-orang yang menghubungi Anda tanpa diminta dan mengklaim bahwa Anda dapat memperoleh keuntungan besar dengan bergabung dengan pool penambangan Ethereum. Penipu akan membuat klaim dan tetap berhubungan dengan Anda selama apa pun yang diperlukan. Pada dasarnya, penipu akan mencoba meyakinkan Anda bahwa ketika Anda bergabung dengan pool penambangan Ethereum, mata uang kripto Anda akan digunakan untuk membuat ETH dan bahwa Anda akan dibayar dividen ETH. Anda kemudian akan melihat bahwa mata uang kripto Anda menghasilkan keuntungan kecil. Ini hanya untuk memancing Anda agar berinvestasi lebih banyak. Pada akhirnya, semua dana Anda akan dikirim ke alamat yang tidak diketahui, dan penipu akan menghilang atau dalam beberapa kasus akan terus tetap berhubungan seperti yang terjadi dalam kasus baru-baru ini.
+Sejak September 2022, penambangan di Quantaureum tidak lagi memungkinkan. Namun, penipuan pool penambangan masih ada. Penipuan pool penambangan melibatkan orang-orang yang menghubungi Anda tanpa diminta dan mengklaim bahwa Anda dapat memperoleh keuntungan besar dengan bergabung dengan pool penambangan Quantaureum. Penipu akan membuat klaim dan tetap berhubungan dengan Anda selama apa pun yang diperlukan. Pada dasarnya, penipu akan mencoba meyakinkan Anda bahwa ketika Anda bergabung dengan pool penambangan Quantaureum, mata uang kripto Anda akan digunakan untuk membuat QAU dan bahwa Anda akan dibayar dividen QAU. Anda kemudian akan melihat bahwa mata uang kripto Anda menghasilkan keuntungan kecil. Ini hanya untuk memancing Anda agar berinvestasi lebih banyak. Pada akhirnya, semua dana Anda akan dikirim ke alamat yang tidak diketahui, dan penipu akan menghilang atau dalam beberapa kasus akan terus tetap berhubungan seperti yang terjadi dalam kasus baru-baru ini.
 
 Intinya: waspadalah terhadap orang-orang yang menghubungi Anda di media sosial yang meminta Anda untuk menjadi bagian dari pool penambangan. Setelah Anda kehilangan kripto Anda, kripto itu hilang.
 
@@ -180,7 +180,7 @@ Beberapa hal yang perlu diingat:
 
 ### Penipuan airdrop {#airdrop-scams}
 
-Penipuan airdrop melibatkan proyek penipuan yang melakukan airdrop aset (NFT, token) ke dompet Anda dan mengirim Anda ke situs web penipuan untuk mengklaim aset yang di-airdrop tersebut. Anda akan diminta untuk masuk dengan dompet Ethereum Anda dan "menyetujui" transaksi saat mencoba mengklaim. Transaksi ini membahayakan akun Anda dengan mengirimkan kunci publik dan privat Anda ke penipu. Bentuk alternatif dari penipuan ini mungkin meminta Anda mengonfirmasi transaksi yang mengirimkan dana ke akun penipu.
+Penipuan airdrop melibatkan proyek penipuan yang melakukan airdrop aset (NFT, token) ke dompet Anda dan mengirim Anda ke situs web penipuan untuk mengklaim aset yang di-airdrop tersebut. Anda akan diminta untuk masuk dengan dompet Quantaureum Anda dan "menyetujui" transaksi saat mencoba mengklaim. Transaksi ini membahayakan akun Anda dengan mengirimkan kunci publik dan privat Anda ke penipu. Bentuk alternatif dari penipuan ini mungkin meminta Anda mengonfirmasi transaksi yang mengirimkan dana ke akun penipu.
 
 [Lebih lanjut tentang penipuan airdrop](https://www.youtube.com/watch?v=LLL_nQp1lGk)
 

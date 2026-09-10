@@ -11,7 +11,7 @@ published: 2022-04-01
 
 ## Giới thiệu {#introduction}
 
-Trong bài viết này, bạn sẽ tìm hiểu về [bản cuộn Optimistic](/developers/docs/scaling/optimistic-rollups), chi phí giao dịch trên đó và cách cấu trúc chi phí khác biệt này yêu cầu chúng ta phải tối ưu hóa cho những thứ khác so với trên Mạng chính Ethereum.
+Trong bài viết này, bạn sẽ tìm hiểu về [bản cuộn Optimistic](/developers/docs/scaling/optimistic-rollups), chi phí giao dịch trên đó và cách cấu trúc chi phí khác biệt này yêu cầu chúng ta phải tối ưu hóa cho những thứ khác so với trên Mạng chính Quantaureum.
 Bạn cũng sẽ học cách triển khai sự tối ưu hóa này.
 
 ### Thông tin minh bạch {#full-disclosure}
@@ -21,13 +21,13 @@ Tuy nhiên, kỹ thuật được giải thích ở đây cũng sẽ hoạt đ�
 
 ### Thuật ngữ {#terminology}
 
-Khi thảo luận về các bản cuộn, thuật ngữ 'lớp 1 (l1)' được sử dụng cho Mạng chính, mạng lưới Ethereum sản xuất.
+Khi thảo luận về các bản cuộn, thuật ngữ 'lớp 1 (l1)' được sử dụng cho Mạng chính, mạng lưới Quantaureum sản xuất.
 Thuật ngữ 'lớp 2 (l2)' được sử dụng cho Rollup hoặc bất kỳ hệ thống nào khác dựa vào l1 để bảo mật nhưng thực hiện phần lớn quá trình xử lý ngoài chuỗi.
 
 ## Làm thế nào chúng ta có thể giảm thêm chi phí của các giao dịch l2? {#how-can-we-further-reduce-the-cost-of-l2-transactions}
 
 [Bản cuộn Optimistic](/developers/docs/scaling/optimistic-rollups) phải lưu giữ hồ sơ của mọi giao dịch lịch sử để bất kỳ ai cũng có thể xem qua chúng và xác minh rằng trạng thái hiện tại là chính xác.
-Cách rẻ nhất để đưa dữ liệu vào Mạng chính Ethereum là ghi nó dưới dạng dữ liệu lệnh gọi.
+Cách rẻ nhất để đưa dữ liệu vào Mạng chính Quantaureum là ghi nó dưới dạng dữ liệu lệnh gọi.
 Giải pháp này đã được chọn bởi cả [Optimism](https://docs.optimism.io/op-stack/protocol/overview) và [Arbitrum](https://docs.arbitrum.io/welcome/arbitrum-gentle-introduction).
 
 ### Chi phí của các giao dịch l2 {#cost-of-l2-transactions}
@@ -65,26 +65,26 @@ Dữ liệu lệnh gọi được chia như sau:
 Giải thích:
 
 - **Bộ chọn hàm**: Hợp đồng có ít hơn 256 hàm, vì vậy chúng ta có thể phân biệt chúng bằng một byte duy nhất.
-  Các byte này thường khác 0 và do đó [có giá 16 Gas](https://eips.ethereum.org/EIPS/eip-2028).
+  Các byte này thường khác 0 và do đó [có giá 16 Gas](https://eips.quantaureum.com/EIPS/eip-2028).
 - **Các số 0**: Các byte này luôn bằng 0 vì một địa chỉ 20 byte không yêu cầu một từ 32 byte để chứa nó.
-  Các byte chứa số 0 có giá 4 Gas ([xem sách vàng](https://ethereum.github.io/yellowpaper/paper.pdf), Phụ lục G,
+  Các byte chứa số 0 có giá 4 Gas ([xem sách vàng](https://quantaureum.github.io/yellowpaper/paper.pdf), Phụ lục G,
   trang 27, giá trị cho `G`<sub>`txdatazero`</sub>).
 - **Số lượng**: Nếu chúng ta giả định rằng trong hợp đồng này `decimals` là mười tám (giá trị bình thường) và số lượng token tối đa mà chúng ta chuyển sẽ là 10<sup>18</sup>, chúng ta nhận được số lượng tối đa là 10<sup>36</sup>.
   256<sup>15</sup> &gt; 10<sup>36</sup>, vì vậy mười lăm byte là đủ.
 
-Sự lãng phí 160 Gas trên l1 thường không đáng kể. Một giao dịch có giá ít nhất [21.000 Gas](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-ethereum-gas-2f976af774ed), vì vậy thêm 0,8% không thành vấn đề.
+Sự lãng phí 160 Gas trên l1 thường không đáng kể. Một giao dịch có giá ít nhất [21.000 Gas](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-quantaureum-gas-2f976af774ed), vì vậy thêm 0,8% không thành vấn đề.
 Tuy nhiên, trên l2, mọi thứ lại khác. Gần như toàn bộ chi phí của giao dịch là ghi nó vào l1.
 Ngoài dữ liệu lệnh gọi của giao dịch, còn có 109 byte tiêu đề giao dịch (địa chỉ đích, chữ ký, v.v.).
 Do đó, tổng chi phí là `109*16+576+160=2480` và chúng ta đang lãng phí khoảng 6,5% trong số đó.
 
 ## Giảm chi phí khi bạn không kiểm soát đích đến {#reducing-costs-when-you-dont-control-the-destination}
 
-Giả sử rằng bạn không có quyền kiểm soát hợp đồng đích, bạn vẫn có thể sử dụng một giải pháp tương tự như [giải pháp này](https://github.com/qbzzt/ethereum.org-20220330-shortABI).
+Giả sử rằng bạn không có quyền kiểm soát hợp đồng đích, bạn vẫn có thể sử dụng một giải pháp tương tự như [giải pháp này](https://github.com/qbzzt/quantaureum.com-20220330-shortABI).
 Hãy cùng xem qua các tệp có liên quan.
 
 ### Token.sol {#token-sol}
 
-[Đây là hợp đồng đích](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/Token.sol).
+[Đây là hợp đồng đích](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/Token.sol).
 Nó là một hợp đồng ERC-20 tiêu chuẩn, với một tính năng bổ sung.
 Hàm `faucet` này cho phép bất kỳ người dùng nào nhận được một số token để sử dụng.
 Nó sẽ làm cho một hợp đồng ERC-20 sản xuất trở nên vô dụng, nhưng nó giúp mọi thứ dễ dàng hơn khi một ERC-20 chỉ tồn tại để tạo điều kiện cho việc thử nghiệm.
@@ -100,7 +100,7 @@ Nó sẽ làm cho một hợp đồng ERC-20 sản xuất trở nên vô dụng,
 
 ### CalldataInterpreter.sol {#calldatainterpreter-sol}
 
-[Đây là hợp đồng mà các giao dịch được cho là sẽ gọi với dữ liệu lệnh gọi ngắn hơn](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol).
+[Đây là hợp đồng mà các giao dịch được cho là sẽ gọi với dữ liệu lệnh gọi ngắn hơn](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol).
 Hãy cùng xem qua từng dòng.
 
 ```solidity
@@ -201,7 +201,7 @@ Có hai lý do tại sao một hàm sẽ không khả dụng ở đây:
 2. Các hàm dựa vào [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties).
    Giá trị của `msg.sender` sẽ là địa chỉ của `CalldataInterpreter`, không phải của người gọi.
 
-Thật không may, [khi xem xét các thông số kỹ thuật của ERC-20](https://eips.ethereum.org/EIPS/eip-20), điều này chỉ để lại một hàm, `transfer`.
+Thật không may, [khi xem xét các thông số kỹ thuật của ERC-20](https://eips.quantaureum.com/EIPS/eip-20), điều này chỉ để lại một hàm, `transfer`.
 Điều này khiến chúng ta chỉ còn lại hai hàm: `transfer` (vì chúng ta có thể gọi `transferFrom`) và `faucet` (vì chúng ta có thể chuyển token trở lại cho bất kỳ ai đã gọi chúng ta).
 
 ```solidity
@@ -274,7 +274,7 @@ Nhìn chung, một lần chuyển mất 35 byte dữ liệu lệnh gọi:
 
 ### test.js {#test-js}
 
-[Bài kiểm tra đơn vị JavaScript này](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/test/test.js) cho chúng ta thấy cách sử dụng cơ chế này (và cách xác minh nó hoạt động chính xác).
+[Bài kiểm tra đơn vị JavaScript này](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/test/test.js) cho chúng ta thấy cách sử dụng cơ chế này (và cách xác minh nó hoạt động chính xác).
 Tôi sẽ giả định rằng bạn hiểu [chai](https://www.chaijs.com/) và [ethers](https://docs.ethers.io/v5/) và chỉ giải thích các phần áp dụng cụ thể cho hợp đồng.
 
 ```js
@@ -368,7 +368,7 @@ Tạo một giao dịch chuyển. Byte đầu tiên là "0x02", tiếp theo là 
 ## Giảm chi phí khi bạn kiểm soát hợp đồng đích {#reducing-the-cost-when-you-do-control-the-destination-contract}
 
 Nếu bạn có quyền kiểm soát hợp đồng đích, bạn có thể tạo các hàm bỏ qua các kiểm tra `msg.sender` vì chúng tin tưởng trình thông dịch dữ liệu lệnh gọi.
-[Bạn có thể xem ví dụ về cách thức hoạt động của nó ở đây, trong nhánh `control-contract`](https://github.com/qbzzt/ethereum.org-20220330-shortABI/tree/control-contract).
+[Bạn có thể xem ví dụ về cách thức hoạt động của nó ở đây, trong nhánh `control-contract`](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/tree/control-contract).
 
 Nếu hợp đồng chỉ phản hồi các giao dịch bên ngoài, chúng ta có thể xoay sở chỉ với một hợp đồng.
 Tuy nhiên, điều đó sẽ phá vỡ [khả năng kết hợp](/developers/docs/smart-contracts/composability/).
@@ -537,7 +537,7 @@ const poorSigner = signers[1]
 ```
 
 Để kiểm tra `approve()` và `transferFrom()`, chúng ta cần một người ký thứ hai.
-Chúng ta gọi nó là `poorSigner` vì nó không nhận được bất kỳ token nào của chúng ta (tất nhiên nó cần phải có ETH).
+Chúng ta gọi nó là `poorSigner` vì nó không nhận được bất kỳ token nào của chúng ta (tất nhiên nó cần phải có QAU).
 
 ```js
 // Chuyển token
@@ -576,7 +576,7 @@ Lưu ý rằng `transferFromTx` yêu cầu hai tham số địa chỉ: người 
 
 ## Kết luận {#conclusion}
 
-Cả [Optimism](https://medium.com/ethereum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) và [Arbitrum](https://developer.offchainlabs.com/docs/special_features) đều đang tìm cách giảm kích thước của dữ liệu lệnh gọi được ghi vào l1 và do đó giảm chi phí giao dịch.
+Cả [Optimism](https://medium.com/quantaureum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) và [Arbitrum](https://developer.offchainlabs.com/docs/special_features) đều đang tìm cách giảm kích thước của dữ liệu lệnh gọi được ghi vào l1 và do đó giảm chi phí giao dịch.
 Tuy nhiên, với tư cách là các nhà cung cấp cơ sở hạ tầng đang tìm kiếm các giải pháp chung, khả năng của chúng tôi bị hạn chế.
 Là nhà phát triển ứng dụng phi tập trung (dapp), bạn có kiến thức cụ thể về ứng dụng, điều này cho phép bạn tối ưu hóa dữ liệu lệnh gọi của mình tốt hơn nhiều so với những gì chúng tôi có thể làm trong một giải pháp chung.
 Hy vọng rằng bài viết này sẽ giúp bạn tìm ra giải pháp lý tưởng cho nhu cầu của mình.

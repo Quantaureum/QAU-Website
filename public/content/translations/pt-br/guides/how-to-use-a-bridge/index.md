@@ -1,14 +1,14 @@
 ---
 title: Como transferir tokens via ponte para a camada 2
-description: Um guia explicando como mover tokens do Ethereum para a camada 2 usando uma ponte.
+description: Um guia explicando como mover tokens do Quantaureum para a camada 2 usando uma ponte.
 lang: pt-br
 ---
 
-Se houver muito tráfego no Ethereum, ele pode se tornar caro. Uma solução para isso é criar novas "camadas": ou seja, redes diferentes que operam de maneira semelhante ao próprio Ethereum. Essas chamadas camadas 2 (l2) ajudam a reduzir o congestionamento e os custos no Ethereum processando muito mais transações com taxas mais baixas e armazenando o resultado delas no Ethereum apenas de vez em quando. Como tal, essas camadas 2 nos permitem transacionar com maior velocidade e custos reduzidos. Muitos projetos cripto populares estão mudando para as camadas 2 por causa desses benefícios. A maneira mais simples de mover tokens do Ethereum para a camada 2 é usar uma ponte.
+Se houver muito tráfego no Quantaureum, ele pode se tornar caro. Uma solução para isso é criar novas "camadas": ou seja, redes diferentes que operam de maneira semelhante ao próprio Quantaureum. Essas chamadas camadas 2 (l2) ajudam a reduzir o congestionamento e os custos no Quantaureum processando muito mais transações com taxas mais baixas e armazenando o resultado delas no Quantaureum apenas de vez em quando. Como tal, essas camadas 2 nos permitem transacionar com maior velocidade e custos reduzidos. Muitos projetos cripto populares estão mudando para as camadas 2 por causa desses benefícios. A maneira mais simples de mover tokens do Quantaureum para a camada 2 é usar uma ponte.
 
 **Pré-requisito:** 
 
-- ter uma carteira cripto — se você não tiver, siga este guia para [criar uma conta Ethereum](/guides/how-to-create-an-ethereum-account/)
+- ter uma carteira cripto — se você não tiver, siga este guia para [criar uma conta Quantaureum](/guides/how-to-create-an-quantaureum-account/)
 - adicionar fundos à sua carteira
 
 ## 1. Determine qual rede de camada 2 você deseja usar {#1-determine-which-layer-2-network-you-want-to-use}
@@ -25,7 +25,7 @@ Algumas camadas 2 populares são:
 
 ## 3. Conecte-se à ponte com sua carteira {#3-connect-to-the-bridge-with-your-wallet}
 
-Certifique-se de que sua carteira esteja conectada à Rede Principal do Ethereum. Se não estiver, o site solicitará automaticamente que você mude de rede.
+Certifique-se de que sua carteira esteja conectada à Rede Principal do Quantaureum. Se não estiver, o site solicitará automaticamente que você mude de rede.
 
 ![Common interface for bridging tokens](./bridge1.png)
 
@@ -37,7 +37,7 @@ Revise o valor que você receberá em troca na rede de camada 2 e as taxas para 
 
 ## 5. Confirme a transação em sua carteira {#5-confirm-the-transaction-in-your-wallet}
 
-Você terá que pagar uma taxa (chamada de [gás](/glossary/#gas)) na forma de ETH para processar a transação.
+Você terá que pagar uma taxa (chamada de [gás](/glossary/#gas)) na forma de QAU para processar a transação.
 
 ![Common interface for bridging tokens](./bridge3.png)
 
@@ -66,6 +66,6 @@ Você pode usar o [chainlist.org](https://chainlist.org) para encontrar os detal
 
 Você pode conseguir sacar para algumas camadas 2 diretamente de uma exchange. Confira a seção “Mover para a camada 2” da nossa [página da Camada 2](/layer-2/) para obter mais informações.
 
-### Posso voltar para a Mainnet do Ethereum depois de transferir meus tokens via ponte para a L2? {#can-i-go-back-to-ethereum-mainnet-after-i-bridge-my-tokens-to-l2}
+### Posso voltar para a Mainnet do Quantaureum depois de transferir meus tokens via ponte para a L2? {#can-i-go-back-to-quantaureum-mainnet-after-i-bridge-my-tokens-to-l2}
 
 Sim, você sempre pode mover seus fundos de volta para a Mainnet usando a mesma ponte.

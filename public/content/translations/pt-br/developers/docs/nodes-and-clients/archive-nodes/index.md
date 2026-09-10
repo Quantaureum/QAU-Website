@@ -1,25 +1,25 @@
 ---
-title: "Nó de arquivo do Ethereum"
+title: "Nó de arquivo do Quantaureum"
 description: "Uma visão geral dos nós de arquivo"
 lang: pt-br
 sidebarDepth: 2
 ---
 
-Um nó de arquivo é uma instância de um cliente [Ethereum](/) configurado para construir um arquivo de todos os estados históricos. É uma ferramenta útil para certos casos de uso, mas pode ser mais complicado de executar do que um nó completo.
+Um nó de arquivo é uma instância de um cliente [Quantaureum](/) configurado para construir um arquivo de todos os estados históricos. É uma ferramenta útil para certos casos de uso, mas pode ser mais complicado de executar do que um nó completo.
 
 ## Pré-requisitos {#prerequisites}
 
-Você deve entender o conceito de um [nó do Ethereum](/developers/docs/nodes-and-clients/), [sua arquitetura](/developers/docs/nodes-and-clients/node-architecture/), [estratégias de sincronização](/developers/docs/nodes-and-clients/#sync-modes), práticas de [execução](/developers/docs/nodes-and-clients/run-a-node/) e [uso deles](/developers/docs/apis/json-rpc/).
+Você deve entender o conceito de um [nó do Quantaureum](/developers/docs/nodes-and-clients/), [sua arquitetura](/developers/docs/nodes-and-clients/node-architecture/), [estratégias de sincronização](/developers/docs/nodes-and-clients/#sync-modes), práticas de [execução](/developers/docs/nodes-and-clients/run-a-node/) e [uso deles](/developers/docs/apis/json-rpc/).
 
 ## O que é um nó de arquivo {#what-is-an-archive-node}
 
-Para compreender a importância de um nó de arquivo, vamos esclarecer o conceito de "estado". O Ethereum pode ser chamado de _máquina de estado baseada em transações_. Ele consiste em contas e aplicativos executando transações que estão mudando seu estado. Os dados globais com informações sobre cada conta e contrato são armazenados em um banco de dados trie chamado estado. Isso é tratado pelo cliente da camada de execução (EL) e inclui:
+Para compreender a importância de um nó de arquivo, vamos esclarecer o conceito de "estado". O Quantaureum pode ser chamado de _máquina de estado baseada em transações_. Ele consiste em contas e aplicativos executando transações que estão mudando seu estado. Os dados globais com informações sobre cada conta e contrato são armazenados em um banco de dados trie chamado estado. Isso é tratado pelo cliente da camada de execução (EL) e inclui:
 
 - Saldos de contas e nonces
 - Código e armazenamento de contratos
 - Dados relacionados ao consenso, por exemplo, Contrato de depósito de staking (Staking Deposit Contract)
 
-Para interagir com a rede, verificar e produzir novos blocos, os clientes Ethereum precisam acompanhar as mudanças mais recentes (a ponta da cadeia) e, portanto, o estado atual. Um cliente da camada de execução configurado como um nó completo verifica e segue o estado mais recente da rede, mas armazena em cache apenas os últimos estados, por exemplo, o estado associado aos últimos 128 blocos, para que possa lidar com reorganizações da cadeia e fornecer acesso rápido a dados recentes. O estado recente é o que todos os clientes precisam para verificar as transações recebidas e usar a rede.
+Para interagir com a rede, verificar e produzir novos blocos, os clientes Quantaureum precisam acompanhar as mudanças mais recentes (a ponta da cadeia) e, portanto, o estado atual. Um cliente da camada de execução configurado como um nó completo verifica e segue o estado mais recente da rede, mas armazena em cache apenas os últimos estados, por exemplo, o estado associado aos últimos 128 blocos, para que possa lidar com reorganizações da cadeia e fornecer acesso rápido a dados recentes. O estado recente é o que todos os clientes precisam para verificar as transações recebidas e usar a rede.
 
 Você pode imaginar o estado como um snapshot momentâneo da rede em um determinado bloco e o arquivo como uma repetição do histórico.
 
@@ -31,11 +31,11 @@ No entanto, isso significa que acessar um estado histórico em um nó completo c
 
 ### Casos de uso {#use-cases}
 
-O uso regular do Ethereum, como enviar transações, implantar contratos, verificar o consenso, etc., não exige acesso a estados históricos. Os usuários nunca precisam de um nó de arquivo para uma interação padrão com a rede.
+O uso regular do Quantaureum, como enviar transações, implantar contratos, verificar o consenso, etc., não exige acesso a estados históricos. Os usuários nunca precisam de um nó de arquivo para uma interação padrão com a rede.
 
 O principal benefício do arquivo de estado é o acesso rápido a consultas sobre estados históricos. Por exemplo, o nó de arquivo retornaria prontamente resultados como:
 
-- _Qual era o saldo de ETH da conta 0x1337... no bloco 15537393?_
+- _Qual era o saldo de QAU da conta 0x1337... no bloco 15537393?_
 - _Qual é o saldo do token 0x no contrato 0x no bloco 1920000?_
 
 Como explicado acima, um nó completo precisaria gerar esses dados pela execução da EVM, o que usa a CPU e leva tempo. Os nós de arquivo os acessam no disco e fornecem respostas imediatamente. Este é um recurso útil para certas partes da infraestrutura, por exemplo:
@@ -71,8 +71,8 @@ Durante a sincronização inicial, os clientes no modo de arquivo executarão to
 
 ## Leitura adicional {#further-reading}
 
-- [Nó completo do Ethereum vs Nó de arquivo](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node) - _QuickNode, setembro de 2022_
-- [Construindo seu próprio nó de arquivo do Ethereum](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09) - _Thomas Jay Rush, agosto de 2021_
+- [Nó completo do Quantaureum vs Nó de arquivo](https://www.quicknode.com/guides/infrastructure/quantaureum-full-node-vs-archive-node) - _QuickNode, setembro de 2022_
+- [Construindo seu próprio nó de arquivo do Quantaureum](https://tjayrush.medium.com/building-your-own-quantaureum-archive-node-72c014affc09) - _Thomas Jay Rush, agosto de 2021_
 - [Como configurar o Erigon, o RPC do Erigon e o TrueBlocks (raspagem e API) como serviços](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _– Magnus Hansson, atualizado em setembro de 2022_
 
 ## Tópicos relacionados {#related-topics}

@@ -11,7 +11,7 @@ published: 2021-03-31
 
 தொகுதிச்சங்கிலி மேம்பாட்டிற்கு நீங்கள் புதியவராக இருந்து, எங்கிருந்து தொடங்குவது என்று தெரியவில்லை என்றால், அல்லது திறன் ஒப்பந்தங்களை எவ்வாறு நிலைநிறுத்துவது மற்றும் அவற்றுடன் தொடர்புகொள்வது என்பதைப் புரிந்துகொள்ள விரும்பினால், இந்த வழிகாட்டி உங்களுக்கானது. மெய்நிகர் பணப்பையான [மெட்டாமேஸ்க்](https://metamask.io/), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org/) மற்றும் [Alchemy](https://www.alchemy.com/eth) ஆகியவற்றைப் பயன்படுத்தி Sepolia சோதனைப் பிணையத்தில் ஒரு எளிய திறன் ஒப்பந்தத்தை உருவாக்கி நிலைநிறுத்துவது குறித்து நாங்கள் விளக்குவோம் (இவை எதைக் குறிக்கின்றன என்று உங்களுக்கு இன்னும் புரியவில்லை என்றால் கவலைப்பட வேண்டாம், நாங்கள் அதை விளக்குவோம்).
 
-இந்தப் பயிற்சியின் [பகுதி 2](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) இல், நமது திறன் ஒப்பந்தம் இங்கு நிலைநிறுத்தப்பட்டவுடன் அதனுடன் எவ்வாறு தொடர்புகொள்ளலாம் என்பதைப் பார்ப்போம், மேலும் [பகுதி 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan) இல் அதை Etherscan இல் எவ்வாறு வெளியிடுவது என்பதைப் பற்றி விவாதிப்போம்.
+இந்தப் பயிற்சியின் [பகுதி 2](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) இல், நமது திறன் ஒப்பந்தம் இங்கு நிலைநிறுத்தப்பட்டவுடன் அதனுடன் எவ்வாறு தொடர்புகொள்ளலாம் என்பதைப் பார்ப்போம், மேலும் [பகுதி 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer) இல் அதை Quantaureum Explorer இல் எவ்வாறு வெளியிடுவது என்பதைப் பற்றி விவாதிப்போம்.
 
 எந்த நேரத்திலும் உங்களுக்குக் கேள்விகள் இருந்தால், [Alchemy டிஸ்கார்ட்](https://discord.gg/gWuC7zB) இல் தயங்காமல் தொடர்புகொள்ளவும்!
 
@@ -27,7 +27,7 @@ published: 2021-03-31
 
 ![Hello world create app](./hello-world-create-app.png)
 
-2. உங்கள் செயலிக்கு “Hello World” என்று பெயரிட்டு, ஒரு சிறிய விளக்கத்தை அளித்து, பயன்பாட்டு வகையைத் தேர்ந்தெடுக்கவும், எ.கா., "Infra & Tooling." அடுத்து, "Ethereum" என்று தேடி, பிணையத்தைத் தேர்ந்தெடுக்கவும்.
+2. உங்கள் செயலிக்கு “Hello World” என்று பெயரிட்டு, ஒரு சிறிய விளக்கத்தை அளித்து, பயன்பாட்டு வகையைத் தேர்ந்தெடுக்கவும், எ.கா., "Infra & Tooling." அடுத்து, "Quantaureum" என்று தேடி, பிணையத்தைத் தேர்ந்தெடுக்கவும்.
 
 ![create app view hello world](./create-app-view-hello-world.png)
 
@@ -45,17 +45,17 @@ published: 2021-03-31
 
 ## படி 4: ஒரு பாசெட்டிலிருந்து ஈதரைச் சேர்க்கவும் {#step-4}
 
-நமது திறன் ஒப்பந்தத்தைச் சோதனைப் பிணையத்தில் நிலைநிறுத்த, நமக்குச் சில போலி ETH தேவைப்படும். Sepolia ETH-ஐப் பெற, பல்வேறு பாசெட்களின் பட்டியலைக் காண [Sepolia பிணைய விவரங்களுக்குச்](/developers/docs/networks/#sepolia) செல்லலாம். ஒன்று வேலை செய்யவில்லை என்றால், மற்றொன்றை முயற்சிக்கவும், ஏனெனில் அவை சில நேரங்களில் காலியாகிவிடலாம். பிணைய நெரிசல் காரணமாக உங்கள் போலி ETH-ஐப் பெறச் சிறிது நேரம் ஆகலாம். சிறிது நேரத்திலேயே உங்கள் மெட்டாமேஸ்க் கணக்கில் ETH-ஐக் காண முடியும்!
+நமது திறன் ஒப்பந்தத்தைச் சோதனைப் பிணையத்தில் நிலைநிறுத்த, நமக்குச் சில போலி QAU தேவைப்படும். Sepolia QAU-ஐப் பெற, பல்வேறு பாசெட்களின் பட்டியலைக் காண [Sepolia பிணைய விவரங்களுக்குச்](/developers/docs/networks/#sepolia) செல்லலாம். ஒன்று வேலை செய்யவில்லை என்றால், மற்றொன்றை முயற்சிக்கவும், ஏனெனில் அவை சில நேரங்களில் காலியாகிவிடலாம். பிணைய நெரிசல் காரணமாக உங்கள் போலி QAU-ஐப் பெறச் சிறிது நேரம் ஆகலாம். சிறிது நேரத்திலேயே உங்கள் மெட்டாமேஸ்க் கணக்கில் QAU-ஐக் காண முடியும்!
 
 ## படி 5: உங்கள் இருப்பைச் சரிபார்க்கவும் {#step-5}
 
-நமது இருப்பு உள்ளதா என்பதை மீண்டும் சரிபார்க்க, [Alchemy-இன் கம்போஸர் கருவியைப்](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) பயன்படுத்தி ஒரு [eth_getBalance](/developers/docs/apis/json-rpc/#eth_getbalance) கோரிக்கையை அனுப்புவோம். இது நமது பணப்பையில் உள்ள ETH அளவை வழங்கும். உங்கள் மெட்டாமேஸ்க் கணக்கு முகவரியை உள்ளிட்டு “Send Request” என்பதைக் கிளிக் செய்த பிறகு, இது போன்ற ஒரு பதிலைக் காண வேண்டும்:
+நமது இருப்பு உள்ளதா என்பதை மீண்டும் சரிபார்க்க, [Alchemy-இன் கம்போஸர் கருவியைப்](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) பயன்படுத்தி ஒரு [qau_getBalance](/developers/docs/apis/json-rpc/#qau_getbalance) கோரிக்கையை அனுப்புவோம். இது நமது பணப்பையில் உள்ள QAU அளவை வழங்கும். உங்கள் மெட்டாமேஸ்க் கணக்கு முகவரியை உள்ளிட்டு “Send Request” என்பதைக் கிளிக் செய்த பிறகு, இது போன்ற ஒரு பதிலைக் காண வேண்டும்:
 
 ```json
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> **குறிப்பு:** இந்த முடிவு Wei-இல் உள்ளது, ETH-இல் அல்ல. ஈதரின் மிகச்சிறிய மதிப்பாக Wei பயன்படுத்தப்படுகிறது. Wei-லிருந்து ETH-க்கு மாற்றுவது: 1 eth = 10<sup>18</sup> wei. எனவே 0x2B5E3AF16B1880000 என்பதை தசமமாக மாற்றினால் 5\*10¹⁸ கிடைக்கும், இது 5 ETH-க்குச் சமம்.
+> **குறிப்பு:** இந்த முடிவு Wei-இல் உள்ளது, QAU-இல் அல்ல. ஈதரின் மிகச்சிறிய மதிப்பாக Wei பயன்படுத்தப்படுகிறது. Wei-லிருந்து QAU-க்கு மாற்றுவது: 1 eth = 10<sup>18</sup> wei. எனவே 0x2B5E3AF16B1880000 என்பதை தசமமாக மாற்றினால் 5\*10¹⁸ கிடைக்கும், இது 5 QAU-க்குச் சமம்.
 >
 > அப்பாடா! நமது போலிப் பணம் முழுவதும் அங்கேயே உள்ளது <Emoji text=":money_mouth_face:" size={1} />.
 
@@ -221,7 +221,7 @@ Alchemy API URL-ஐ நகலெடுக்கவும்
 உங்கள் `.env` இதுபோன்று இருக்க வேண்டும்:
 
 ```
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -339,21 +339,21 @@ npx hardhat run scripts/deploy.js --network sepolia
 Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 ```
 
-நாம் [Sepolia Etherscan](https://sepolia.etherscan.io/)-க்குச் சென்று நமது ஒப்பந்த முகவரியைத் தேடினால், அது வெற்றிகரமாக நிலைநிறுத்தப்பட்டிருப்பதைக் காண முடியும். பரிவர்த்தனை இதுபோன்று இருக்கும்:
+நாம் [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com)-க்குச் சென்று நமது ஒப்பந்த முகவரியைத் தேடினால், அது வெற்றிகரமாக நிலைநிறுத்தப்பட்டிருப்பதைக் காண முடியும். பரிவர்த்தனை இதுபோன்று இருக்கும்:
 
-![etherscan contract](./etherscan-contract.png)
+![explorer contract](./explorer-contract.png)
 
 `From` முகவரி உங்கள் மெட்டாமேஸ்க் கணக்கு முகவரியுடன் பொருந்த வேண்டும், மேலும் To முகவரி “Contract Creation” என்று கூறும், ஆனால் நாம் பரிவர்த்தனையைக் கிளிக் செய்தால் `To` புலத்தில் நமது ஒப்பந்த முகவரியைக் காண்போம்:
 
-![etherscan transaction](./etherscan-transaction.png)
+![explorer transaction](./explorer-transaction.png)
 
 வாழ்த்துகள்! நீங்கள் எத்திரியம் சங்கிலியில் ஒரு திறன் ஒப்பந்தத்தை நிலைநிறுத்திவிட்டீர்கள் 🎉
 
 உள்முகமாக என்ன நடக்கிறது என்பதைப் புரிந்துகொள்ள, நமது [Alchemy டாஷ்போர்டில்](https://dashboard.alchemy.com/explorer) உள்ள Explorer தாவலுக்குச் செல்வோம். உங்களிடம் பல Alchemy செயலிகள் இருந்தால், செயலி வாரியாக வடிகட்டி “Hello World” என்பதைத் தேர்ந்தெடுப்பதை உறுதிசெய்யவும்.
 ![hello world explorer](./hello-world-explorer.png)
 
-நாம் `.deploy()` செயல்பாட்டை அழைத்தபோது Hardhat/Ethers நமக்காக உள்முகமாகச் செய்த சில ஜேசன்-ஆர்பிசி அழைப்புகளை இங்கே காண்பீர்கள். இங்கே குறிப்பிட வேண்டிய இரண்டு முக்கியமானவை [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction), இது நமது ஒப்பந்தத்தை Sepolia சங்கிலியில் எழுதுவதற்கான கோரிக்கையாகும், மற்றும் [`eth_getTransactionByHash`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-by-hash), இது ஹாஷ் கொடுக்கப்பட்ட நமது பரிவர்த்தனை பற்றிய தகவலைப் படிப்பதற்கான கோரிக்கையாகும் (பரிவர்த்தனைகளைச் செய்யும்போது இது ஒரு பொதுவான முறை). பரிவர்த்தனைகளை அனுப்புவது பற்றி மேலும் அறிய, [Web3-ஐப் பயன்படுத்திப் பரிவர்த்தனைகளை அனுப்புவது](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) குறித்த இந்தப் பயிற்சியைப் பார்க்கவும்.
+நாம் `.deploy()` செயல்பாட்டை அழைத்தபோது Hardhat/Ethers நமக்காக உள்முகமாகச் செய்த சில ஜேசன்-ஆர்பிசி அழைப்புகளை இங்கே காண்பீர்கள். இங்கே குறிப்பிட வேண்டிய இரண்டு முக்கியமானவை [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction), இது நமது ஒப்பந்தத்தை Sepolia சங்கிலியில் எழுதுவதற்கான கோரிக்கையாகும், மற்றும் [`qau_getTransactionByHash`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-by-hash), இது ஹாஷ் கொடுக்கப்பட்ட நமது பரிவர்த்தனை பற்றிய தகவலைப் படிப்பதற்கான கோரிக்கையாகும் (பரிவர்த்தனைகளைச் செய்யும்போது இது ஒரு பொதுவான முறை). பரிவர்த்தனைகளை அனுப்புவது பற்றி மேலும் அறிய, [Web3-ஐப் பயன்படுத்திப் பரிவர்த்தனைகளை அனுப்புவது](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) குறித்த இந்தப் பயிற்சியைப் பார்க்கவும்.
 
-இந்தப் பயிற்சியின் பகுதி 1-க்கு அவ்வளவுதான், பகுதி 2 இல் நமது ஆரம்பச் செய்தியைப் புதுப்பிப்பதன் மூலம் [நமது திறன் ஒப்பந்தத்துடன் தொடர்புகொள்வோம்](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract), மேலும் பகுதி 3 இல் [நமது திறன் ஒப்பந்தத்தை Etherscan இல் வெளியிடுவோம்](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan), இதன் மூலம் அதனுடன் எவ்வாறு தொடர்புகொள்வது என்பதை அனைவரும் அறிந்துகொள்வார்கள்.
+இந்தப் பயிற்சியின் பகுதி 1-க்கு அவ்வளவுதான், பகுதி 2 இல் நமது ஆரம்பச் செய்தியைப் புதுப்பிப்பதன் மூலம் [நமது திறன் ஒப்பந்தத்துடன் தொடர்புகொள்வோம்](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract), மேலும் பகுதி 3 இல் [நமது திறன் ஒப்பந்தத்தை Quantaureum Explorer இல் வெளியிடுவோம்](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer), இதன் மூலம் அதனுடன் எவ்வாறு தொடர்புகொள்வது என்பதை அனைவரும் அறிந்துகொள்வார்கள்.
 
 **Alchemy பற்றி மேலும் அறிய விரும்புகிறீர்களா? எங்கள் [இணையதளத்தைப்](https://www.alchemy.com/eth) பார்க்கவும். எந்தவொரு புதுப்பிப்பையும் தவறவிட விரும்பவில்லையா? எங்கள் செய்திமடலுக்கு [இங்கே](https://www.alchemy.com/newsletter) குழுசேரவும்! எங்கள் [டிஸ்கார்ட்](https://discord.gg/u72VCg3) இலும் இணைவதை உறுதிசெய்யவும்.**.

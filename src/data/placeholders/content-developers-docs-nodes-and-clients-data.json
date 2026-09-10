@@ -58,5 +58,9 @@
   "/content/translations/tr/developers/docs/nodes-and-clients/nodes.png": {
     "hash": "8d368670",
     "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAICAYAAADwdn+XAAAACXBIWXMAAAsTAAALEwEAmpwYAAABfElEQVR4nIVRO0vDYBRNi1AHFxcnETcHC06uriKCf0AQ3AUXde3iXCiCi/4BBcXRIhKfFauljX1Jm6ZPmz5M8sU2TfP4cjRiQUT0wuUcOJd7z72XYf6JUCjkO+K48VoPm1WNHtS6CPId+F0tAHg/iwKBgBcM4/mgHgBfyQ652mOhtMhXy2Zf7zim9uZQvQeFEK0qdRf+nIyv7g2L7jqOAZlP9KVs1JKSN4YlN9E2kGbZ4jCTy+V8c9NT6/HTw1WSuox0n2+P9cLDmpK6SPRK8S2RkNhLMQ8lz1FSESC+UqfestFSLLNOzFnmKBwe2wke7mfPL5aKsftkO/24p+WjS+V4lFOFxEqr24k0ahUQIWOrtRLEhubUG7rTUuy+0JRnPq0meIy5yN5hkmUx4lo/u8aEi01KtwELhH8y5UzEJMlLA+or2iquBuv+OB68g3TFVBMjoiKd6JYJ2wY1ehRiXcnzouH/fjDPAH/jLDBUsTD/8cKNkuwslwlGBzXvY0kwTWsW/GMAAAAASUVORK5CYII="
+  },
+  "/content/developers/docs/nodes-and-clients/qau1qau2client.png": {
+    "hash": "9b48ab5d",
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAICAYAAADwdn+XAAAACXBIWXMAABYlAAAWJQFJUiTwAAABvUlEQVR4nF2RS2sTARSFx6SiwcdOROwv6MIudVelCOLKhVm4EBElu7oTxIUj7ltNmM2gFaG04kghTdKAQhikdRqTPpj4qNimSUpMAmmnQ8akJpOZTya2Bb2bA5fDvfe7RxD+K0VR/KIo+lToo154QnVtwjHKL5ztny89xShPYZWHPS/gExQFv6rSJ4r49pqHPN2EAMWFEquztHdbbrdpYrcaNr3qPvA8qqoe/Wd7OBw+EolErj0bG7s1Hk0OUMj8QI/j6MkOetJGn22zPg8l/bOhxYb6g8GAMKdxR0vzKJVicGTkyklZlu9KknR/fOrteda1PMvTdLTXrpN+gz0/6fLtPW4+u1NLz9w4NTB0XNgoUjV2IJczxT0Ef083tQC7ZonfFs2tqts269iW8RehUe0hRKPRE8JChtuZRR6mUr8GBUHwSZJ09eno6L3pD4tn2Mjm0RN0lmZsZyXRZSlmszYHxeXvtU+x4f4LwcABv/e8UCh0WJblS1I4fDOurZyllitRSMHXpMvqO/iScKlkoaLXKx/j10+fu3ysl4J39n4KBwMVxU+z/pjm9itapoxlPKdlyDS2JrDqF/dT+APkxDyrDYeCkgAAAABJRU5ErkJggg=="
   }
 }

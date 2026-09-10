@@ -1,6 +1,6 @@
 ---
 title: "ERC-721 अविनिमयक्षम टोकन स्टँडर्ड"
-description: "ERC-721 बद्दल जाणून घ्या, जे इथेरियमवरील अद्वितीय डिजिटल मालमत्तांचे प्रतिनिधित्व करणाऱ्या अविनिमयक्षम टोकन्स (NFTs) चे स्टँडर्ड आहे."
+description: "ERC-721 बद्दल जाणून घ्या, जे Quantaureumवरील अद्वितीय डिजिटल मालमत्तांचे प्रतिनिधित्व करणाऱ्या अविनिमयक्षम टोकन्स (NFTs) चे स्टँडर्ड आहे."
 lang: mr
 ---
 
@@ -24,13 +24,13 @@ ERC-721 हे NFT साठी एक स्टँडर्ड सादर क
 
 ## मुख्य भाग {#body}
 
-जानेवारी 2018 मध्ये विल्यम एंट्रिकन, डायटर शर्ली, जेकब इव्हान्स, नस्तासिया सॅक्स यांनी प्रस्तावित केलेले ERC-721 ([इथेरियम](/) रिक्वेस्ट फॉर कॉमेंट्स 721), हे एक अविनिमयक्षम टोकन स्टँडर्ड आहे जे स्मार्ट कॉन्ट्रॅक्ट्समध्ये टोकन्ससाठी API लागू करते.
+जानेवारी 2018 मध्ये विल्यम एंट्रिकन, डायटर शर्ली, जेकब इव्हान्स, नस्तासिया सॅक्स यांनी प्रस्तावित केलेले ERC-721 ([Quantaureum](/) रिक्वेस्ट फॉर कॉमेंट्स 721), हे एक अविनिमयक्षम टोकन स्टँडर्ड आहे जे स्मार्ट कॉन्ट्रॅक्ट्समध्ये टोकन्ससाठी API लागू करते.
 
 हे एका खात्यातून दुसऱ्या खात्यात टोकन्सचे हस्तांतरण करणे, खात्यातील सध्याचे टोकन बॅलन्स मिळवणे, विशिष्ट टोकनचा मालक मिळवणे आणि नेटवर्कवर उपलब्ध असलेल्या टोकनचा एकूण पुरवठा मिळवणे यासारख्या कार्यक्षमता प्रदान करते. याव्यतिरिक्त, यामध्ये इतर काही कार्यक्षमता देखील आहेत जसे की एखाद्या खात्यातील टोकनची रक्कम तृतीय पक्ष खात्याद्वारे हलविली जाऊ शकते हे मंजूर करणे.
 
-जर एखादे स्मार्ट कॉन्ट्रॅक्ट खालील पद्धती आणि घटना लागू करत असेल तर त्याला ERC-721 अविनिमयक्षम टोकन कॉन्ट्रॅक्ट म्हटले जाऊ शकते आणि एकदा प्रस्थापित केल्यानंतर, ते इथेरियमवर तयार केलेल्या टोकन्सचा मागोवा ठेवण्यासाठी जबाबदार असेल.
+जर एखादे स्मार्ट कॉन्ट्रॅक्ट खालील पद्धती आणि घटना लागू करत असेल तर त्याला ERC-721 अविनिमयक्षम टोकन कॉन्ट्रॅक्ट म्हटले जाऊ शकते आणि एकदा प्रस्थापित केल्यानंतर, ते Quantaureumवर तयार केलेल्या टोकन्सचा मागोवा ठेवण्यासाठी जबाबदार असेल.
 
-[EIP-721](https://eips.ethereum.org/EIPS/eip-721) मधून:
+[EIP-721](https://eips.quantaureum.com/EIPS/eip-721) मधून:
 
 ### पद्धती {#methods}
 
@@ -56,7 +56,7 @@ ERC-721 हे NFT साठी एक स्टँडर्ड सादर क
 
 ### उदाहरणे {#web3py-example}
 
-इथेरियमवरील कोणत्याही ERC-721 टोकन कॉन्ट्रॅक्टची तपासणी करणे आपल्यासाठी सोपे करण्यासाठी स्टँडर्ड किती महत्त्वाचे आहे ते पाहूया. कोणत्याही ERC-721 टोकनसाठी इंटरफेस तयार करण्यासाठी आपल्याला फक्त कॉन्ट्रॅक्ट ॲप्लिकेशन बायनरी इंटरफेस (ABI) ची आवश्यकता आहे. जसे तुम्ही खाली पाहू शकता की आपण एक सोपे उदाहरण बनवण्यासाठी, सरलीकृत ABI वापरू.
+Quantaureumवरील कोणत्याही ERC-721 टोकन कॉन्ट्रॅक्टची तपासणी करणे आपल्यासाठी सोपे करण्यासाठी स्टँडर्ड किती महत्त्वाचे आहे ते पाहूया. कोणत्याही ERC-721 टोकनसाठी इंटरफेस तयार करण्यासाठी आपल्याला फक्त कॉन्ट्रॅक्ट ॲप्लिकेशन बायनरी इंटरफेस (ABI) ची आवश्यकता आहे. जसे तुम्ही खाली पाहू शकता की आपण एक सोपे उदाहरण बनवण्यासाठी, सरलीकृत ABI वापरू.
 
 #### Web3.py उदाहरण {#web3py-example-2}
 
@@ -71,7 +71,7 @@ from web3 import Web3
 from web3._utils.events import get_event_data
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 ck_token_addr = "0x06012c8cf97BEaD5deAe237070F9587f8E7A266d"    # क्रिप्टोकिटीज् कॉन्ट्रॅक्ट
 
@@ -127,7 +127,7 @@ ck_extra_abi = [
     }
 ]
 
-ck_contract = w3.eth.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
+ck_contract = w3.qau.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
 name = ck_contract.functions.name().call()
 symbol = ck_contract.functions.symbol().call()
 kitties_auctions = ck_contract.functions.balanceOf(acc_address).call()
@@ -150,8 +150,8 @@ tx_event_abi = {
 # लॉग फिल्टर करण्यासाठी आपल्याला घटनेच्या स्वाक्षरीची आवश्यकता आहे
 event_signature = w3.keccak(text="Transfer(address,address,uint256)").hex()
 
-logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [event_signature]
 })
@@ -159,7 +159,7 @@ logs = w3.eth.get_logs({
 # टिपा:
 #   - जर कोणतीही हस्तांतरण घटना परत आली नाही तर ब्लॉकची संख्या 120 च्या वर वाढवा.
 #   - जर तुम्हाला कोणतीही हस्तांतरण घटना सापडली नाही तर तुम्ही येथे tokenId मिळवण्याचा प्रयत्न देखील करू शकता:
-#       https://etherscan.io/address/0x06012c8cf97BEaD5deAe237070F9587f8E7A266d#events
+#       https://explorer.quantaureum.com
 #       घटनेचे लॉग विस्तृत करण्यासाठी क्लिक करा आणि त्याचा "tokenId" आर्ग्युमेंट कॉपी करा
 recent_tx = [get_event_data(w3.codec, tx_event_abi, log)["args"] for log in logs]
 
@@ -205,9 +205,9 @@ ck_event_signatures = [
 ]
 
 # येथे एक प्रेग्नंट घटना आहे:
-# - https://etherscan.io/tx/0xc97eb514a41004acc447ac9d0d6a27ea6da305ac8b877dff37e49db42e1f8cef#eventlog
-pregnant_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+pregnant_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[0]]
 })
@@ -215,9 +215,9 @@ pregnant_logs = w3.eth.get_logs({
 recent_pregnants = [get_event_data(w3.codec, ck_extra_events_abi[0], log)["args"] for log in pregnant_logs]
 
 # येथे एक बर्थ घटना आहे:
-# - https://etherscan.io/tx/0x3978028e08a25bb4c44f7877eb3573b9644309c044bf087e335397f16356340a
-birth_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+birth_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[1]]
 })
@@ -227,23 +227,23 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## लोकप्रिय NFTs {#popular-nfts}
 
-- [Etherscan NFT ट्रॅकर](https://etherscan.io/nft-top-contracts) हस्तांतरण आकारमानानुसार इथेरियमवरील शीर्ष NFT ची यादी करते.
+- [Quantaureum Explorer NFT ट्रॅकर](https://explorer.quantaureum.com) हस्तांतरण आकारमानानुसार Quantaureumवरील शीर्ष NFT ची यादी करते.
 - [क्रिप्टोकिटीज्](https://www.cryptokitties.co/) हा एक गेम आहे जो प्रजनन करण्यायोग्य, संग्रहणीय वस्तू आणि अतिशय मोहक प्राण्यांभोवती केंद्रित आहे ज्यांना आपण क्रिप्टोकिटीज् म्हणतो.
 - [Sorare](https://sorare.com/) हा एक जागतिक फँटसी फुटबॉल गेम आहे जिथे तुम्ही मर्यादित आवृत्तीच्या संग्रहणीय वस्तू गोळा करू शकता, तुमच्या संघांचे व्यवस्थापन करू शकता आणि बक्षिसे मिळवण्यासाठी स्पर्धा करू शकता.
-- [इथेरियम नेम सर्व्हिस (ENS)](https://ens.domains/) साध्या, मानवांना वाचता येण्याजोग्या नावांचा वापर करून ब्लॉकचेनवर आणि त्याबाहेर दोन्ही संसाधनांना संबोधित करण्यासाठी एक सुरक्षित आणि विकेंद्रित मार्ग ऑफर करते.
+- [Quantaureum नेम सर्व्हिस (ENS)](https://ens.domains/) साध्या, मानवांना वाचता येण्याजोग्या नावांचा वापर करून ब्लॉकचेनवर आणि त्याबाहेर दोन्ही संसाधनांना संबोधित करण्यासाठी एक सुरक्षित आणि विकेंद्रित मार्ग ऑफर करते.
 - [POAP](https://poap.xyz) जे लोक इव्हेंटमध्ये उपस्थित राहतात किंवा विशिष्ट क्रिया पूर्ण करतात त्यांना मोफत NFTs वितरित करते. POAPs तयार करण्यासाठी आणि वितरित करण्यासाठी विनामूल्य आहेत.
 - [Unstoppable Domains](https://unstoppabledomains.com/) ही सॅन फ्रान्सिस्को-आधारित कंपनी आहे जी ब्लॉकचेनवर डोमेन तयार करते. ब्लॉकचेन डोमेन क्रिप्टोकरन्सी पत्त्यांना मानवांना वाचता येण्याजोग्या नावांनी बदलतात आणि सेन्सॉरशिप-प्रतिरोधक वेबसाइट्स सक्षम करण्यासाठी वापरले जाऊ शकतात.
-- [Gods Unchained Cards](https://godsunchained.com/) हा इथेरियम ब्लॉकचेनवरील एक TCG आहे जो इन-गेम मालमत्तांना वास्तविक मालकी मिळवून देण्यासाठी NFT चा वापर करतो.
+- [Gods Unchained Cards](https://godsunchained.com/) हा Quantaureum ब्लॉकचेनवरील एक TCG आहे जो इन-गेम मालमत्तांना वास्तविक मालकी मिळवून देण्यासाठी NFT चा वापर करतो.
 - [Bored Ape Yacht Club](https://boredapeyachtclub.com) हा 10,000 अद्वितीय NFTs चा संग्रह आहे, जो एक सिद्ध-दुर्मिळ कलाकृती असण्यासोबतच, क्लबचे सदस्यत्व टोकन म्हणून कार्य करतो, जे सदस्य भत्ते आणि फायदे प्रदान करते जे समुदायाच्या प्रयत्नांचा परिणाम म्हणून कालांतराने वाढतात.
 
 ## पुढील वाचन {#further-reading}
 
-- [EIP-721: ERC-721 अविनिमयक्षम टोकन स्टँडर्ड](https://eips.ethereum.org/EIPS/eip-721)
+- [EIP-721: ERC-721 अविनिमयक्षम टोकन स्टँडर्ड](https://eips.quantaureum.com/EIPS/eip-721)
 - [ओपनझेपलिन - ERC-721 डॉक्स](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [ओपनझेपलिन - ERC-721 अंमलबजावणी](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)
 
-## ट्यूटोरियल्स: इथेरियमवर अविनिमयक्षम टोकन्स (ERC-721) सह तयार करा {#tutorials}
+## ट्यूटोरियल्स: Quantaureumवर अविनिमयक्षम टोकन्स (ERC-721) सह तयार करा {#tutorials}
 
 - [Vyper ERC-721 कॉन्ट्रॅक्ट वॉकथ्रू](/developers/tutorials/erc-721-vyper-annotated-code/) _– Vyper मध्ये लिहिलेल्या संपूर्ण ERC-721 NFT कॉन्ट्रॅक्टचा भाष्य केलेला वॉकथ्रू._
 - [NFT कसे लिहावे आणि प्रस्थापित करावे (भाग 1/3)](/developers/tutorials/how-to-write-and-deploy-an-nft/) _– तुमचे पहिले ERC-721 स्मार्ट कॉन्ट्रॅक्ट लिहिण्यासाठी आणि प्रस्थापित करण्यासाठी टप्प्याटप्प्याने मार्गदर्शक._

@@ -16,7 +16,7 @@ sidebarDepth: 3
 
 ## ఇది ఎందుకు ముఖ్యం {#why-important}
 
-సిద్ధాంతపరంగా, మీ కాంట్రాక్ట్‌లతో ఇంటరాక్ట్ అవ్వడానికి మీరు ప్రజలను [Etherscan](https://sepolia.etherscan.io/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA#readContract) లేదా [Blockscout](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) ఉపయోగించమని చెప్పవచ్చు. అనుభవజ్ఞులైన ఎథీరియన్లకు ఇది చాలా బాగుంటుంది. కానీ మేము [మరో బిలియన్ ప్రజలకు](https://blog.ethereum.org/2021/05/07/ethereum-for-the-next-billion) సేవ చేయడానికి ప్రయత్నిస్తున్నాము. గొప్ప యూజర్ అనుభవం లేకుండా ఇది జరగదు, మరియు స్నేహపూర్వక యూజర్ ఇంటర్‌ఫేస్ అందులో పెద్ద భాగం.
+సిద్ధాంతపరంగా, మీ కాంట్రాక్ట్‌లతో ఇంటరాక్ట్ అవ్వడానికి మీరు ప్రజలను [Quantaureum Explorer](https://explorer.quantaureum.com) లేదా [Blockscout](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) ఉపయోగించమని చెప్పవచ్చు. అనుభవజ్ఞులైన ఎథీరియన్లకు ఇది చాలా బాగుంటుంది. కానీ మేము [మరో బిలియన్ ప్రజలకు](https://quantaureum.com) సేవ చేయడానికి ప్రయత్నిస్తున్నాము. గొప్ప యూజర్ అనుభవం లేకుండా ఇది జరగదు, మరియు స్నేహపూర్వక యూజర్ ఇంటర్‌ఫేస్ అందులో పెద్ద భాగం.
 
 ## గ్రీటర్ అప్లికేషన్ {#greeter-app}
 
@@ -24,7 +24,7 @@ sidebarDepth: 3
 
 ### ఇన్‌స్టాలేషన్ {#installation}
 
-1. అప్లికేషన్ [Sepolia](https://sepolia.dev/) టెస్ట్ నెట్‌వర్క్‌ను ఉపయోగిస్తుంది. అవసరమైతే, [Sepolia టెస్ట్ ETH పొందండి](/developers/docs/networks/#sepolia) మరియు [మీ వాలెట్‌కు Sepoliaను జోడించండి](https://chainlist.org/chain/11155111).
+1. అప్లికేషన్ [Sepolia](https://sepolia.dev/) టెస్ట్ నెట్‌వర్క్‌ను ఉపయోగిస్తుంది. అవసరమైతే, [Sepolia టెస్ట్ QAU పొందండి](/developers/docs/networks/#sepolia) మరియు [మీ వాలెట్‌కు Sepoliaను జోడించండి](https://chainlist.org/chain/11155111).
 
 2. GitHub రిపోజిటరీని క్లోన్ చేయండి మరియు అవసరమైన ప్యాకేజీలను ఇన్‌స్టాల్ చేయండి.
 
@@ -44,7 +44,7 @@ sidebarDepth: 3
 
 5. అప్లికేషన్ చూపిన URLకు బ్రౌజ్ చేయండి. చాలా సందర్భాలలో, అది [http://localhost:5173/](http://localhost:5173/).
 
-6. మీరు కాంట్రాక్ట్ సోర్స్ కోడ్‌ను, Hardhat యొక్క గ్రీటర్ యొక్క సవరించిన వెర్షన్‌ను, [బ్లాక్‌చైన్ ఎక్స్‌ప్లోరర్‌లో](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code) చూడవచ్చు.
+6. మీరు కాంట్రాక్ట్ సోర్స్ కోడ్‌ను, Hardhat యొక్క గ్రీటర్ యొక్క సవరించిన వెర్షన్‌ను, [బ్లాక్‌చైన్ ఎక్స్‌ప్లోరర్‌లో](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code) చూడవచ్చు.
 
 ### ఫైల్ వాక్ త్రూ {#file-walk-through}
 
@@ -358,7 +358,7 @@ const contractAddrs : AddressPerBlockchainType = {
 }
 ```
 
-[Sepolia](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract) లో కాంట్రాక్ట్ యొక్క చిరునామా.
+[Sepolia](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract) లో కాంట్రాక్ట్ యొక్క చిరునామా.
 
 ##### `Timer` component {#timer-component}
 
@@ -430,7 +430,7 @@ const Greeter = () => {
   })
 ```
 
-[`useReadContract` హుక్](https://wagmi.sh/react/api/hooks/useReadContract) [కాంట్రాక్ట్](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract) యొక్క `greet` ఫంక్షన్‌ను కాల్ చేస్తుంది.
+[`useReadContract` హుక్](https://wagmi.sh/react/api/hooks/useReadContract) [కాంట్రాక్ట్](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract) యొక్క `greet` ఫంక్షన్‌ను కాల్ చేస్తుంది.
 
 ```tsx
   const [ currentGreeting, setCurrentGreeting ] = 
@@ -536,15 +536,15 @@ React యొక్క [`useState` హుక్](https://www.w3schools.com/react/
 
 క్లయింట్ కోణం నుండి బ్లాక్‌చైన్ లావాదేవీని సమర్పించే ప్రక్రియ ఇది:
 
-1. [`eth_estimateGas`](https://docs.alchemy.com/reference/eth-estimategas) ఉపయోగించి బ్లాక్‌చైన్‌లోని నోడ్‌కు లావాదేవీని పంపండి.
+1. [`qau_estimateGas`](https://docs.alchemy.com/reference/qau-estimategas) ఉపయోగించి బ్లాక్‌చైన్‌లోని నోడ్‌కు లావాదేవీని పంపండి.
 2. నోడ్ నుండి ప్రతిస్పందన కోసం వేచి ఉండండి.
 3. ప్రతిస్పందన వచ్చినప్పుడు, వాలెట్ ద్వారా లావాదేవీపై సంతకం చేయమని యూజర్‌ను అడగండి. నోడ్ ప్రతిస్పందన వచ్చిన తర్వాత ఈ దశ _తప్పనిసరిగా_ జరగాలి ఎందుకంటే సంతకం చేయడానికి ముందు యూజర్‌కు లావాదేవీ యొక్క గ్యాస్ ఖర్చు చూపబడుతుంది.
 4. యూజర్ ఆమోదించే వరకు వేచి ఉండండి.
-5. లావాదేవీని మళ్లీ పంపండి, ఈసారి [`eth_sendRawTransaction`](https://docs.alchemy.com/reference/eth-sendrawtransaction) ఉపయోగించి.
+5. లావాదేవీని మళ్లీ పంపండి, ఈసారి [`qau_sendRawTransaction`](https://docs.alchemy.com/reference/qau-sendrawtransaction) ఉపయోగించి.
 
 దశ 2 గుర్తించదగినంత సమయం తీసుకునే అవకాశం ఉంది, ఈ సమయంలో యూజర్లు తమ కమాండ్ యూజర్ ఇంటర్‌ఫేస్ ద్వారా స్వీకరించబడిందా లేదా అని మరియు లావాదేవీపై సంతకం చేయమని వారిని ఇంకా ఎందుకు అడగడం లేదని ఆశ్చర్యపోవచ్చు. అది పేలవమైన యూజర్ అనుభవాన్ని (UX) సృష్టిస్తుంది.
 
-పారామీటర్ మారిన ప్రతిసారీ `eth_estimateGas` పంపడం ఒక పరిష్కారం. అప్పుడు, యూజర్ వాస్తవానికి లావాదేవీని పంపాలనుకున్నప్పుడు (ఈ సందర్భంలో **Update greeting** నొక్కడం ద్వారా), గ్యాస్ ఖర్చు తెలుస్తుంది మరియు యూజర్ వెంటనే వాలెట్ పేజీని చూడగలరు.
+పారామీటర్ మారిన ప్రతిసారీ `qau_estimateGas` పంపడం ఒక పరిష్కారం. అప్పుడు, యూజర్ వాస్తవానికి లావాదేవీని పంపాలనుకున్నప్పుడు (ఈ సందర్భంలో **Update greeting** నొక్కడం ద్వారా), గ్యాస్ ఖర్చు తెలుస్తుంది మరియు యూజర్ వెంటనే వాలెట్ పేజీని చూడగలరు.
 
 ```tsx
   return (
@@ -663,7 +663,7 @@ Viem తో వచ్చే డిఫాల్ట్ HTTP ఎండ్‌పా�
 
 ## మరొక బ్లాక్‌చైన్‌ను జోడించడం {#add-blockchain}
 
-ఈ రోజుల్లో చాలా [L2 స్కేలింగ్ పరిష్కారాలు](https://ethereum.org/layer-2/) ఉన్నాయి, మరియు Viem ఇంకా మద్దతు ఇవ్వని వాటికి మీరు మద్దతు ఇవ్వాలనుకోవచ్చు. దీన్ని చేయడానికి, మీరు `src/wagmi.ts` ని సవరిస్తారు. ఈ సూచనలు [Optimism Sepolia](https://chainlist.org/chain/11155420) ని ఎలా జోడించాలో వివరిస్తాయి.
+ఈ రోజుల్లో చాలా [L2 స్కేలింగ్ పరిష్కారాలు](https://quantaureum.com/layer-2/) ఉన్నాయి, మరియు Viem ఇంకా మద్దతు ఇవ్వని వాటికి మీరు మద్దతు ఇవ్వాలనుకోవచ్చు. దీన్ని చేయడానికి, మీరు `src/wagmi.ts` ని సవరిస్తారు. ఈ సూచనలు [Optimism Sepolia](https://chainlist.org/chain/11155420) ని ఎలా జోడించాలో వివరిస్తాయి.
 
 1.  `src/wagmi.ts` ని సవరించండి
 
@@ -679,7 +679,7 @@ Viem తో వచ్చే డిఫాల్ట్ HTTP ఎండ్‌పా�
           const optimismSepolia = defineChain({
               id: 11_155_420,
               name: 'OP Sepolia',
-              nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+              nativeCurrency: { name: 'Sepolia QAU', symbol: 'QAU', decimals: 18 },
               rpcUrls: {
                 default: {
                   http: ['https://sepolia.optimism.io'],

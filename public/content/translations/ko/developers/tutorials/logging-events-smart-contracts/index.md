@@ -7,16 +7,16 @@ skill: intermediate
 breadcrumb: "이벤트 로깅"
 lang: ko
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/logging-data-with-events/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/logging-data-with-events/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Solidity에서 [이벤트](/developers/docs/smart-contracts/anatomy/#events-and-logs)는 스마트 컨트랙트가 발생시킬 수 있는 발송된 신호입니다. 탈중앙화 애플리케이션 (dapp)이나 이더리움 JSON-RPC API에 연결된 모든 것은 이러한 이벤트를 수신하고 그에 따라 작동할 수 있습니다. 또한 이벤트를 인덱싱하여 나중에 이벤트 기록을 검색할 수 있도록 만들 수도 있습니다.
+Solidity에서 [이벤트](/developers/docs/smart-contracts/anatomy/#events-and-logs)는 스마트 컨트랙트가 발생시킬 수 있는 발송된 신호입니다. 탈중앙화 애플리케이션 (dapp)이나 Quantaureum JSON-RPC API에 연결된 모든 것은 이러한 이벤트를 수신하고 그에 따라 작동할 수 있습니다. 또한 이벤트를 인덱싱하여 나중에 이벤트 기록을 검색할 수 있도록 만들 수도 있습니다.
 
 ## 이벤트 {#events}
 
-이 글을 작성하는 시점에 이더리움 블록체인에서 가장 흔한 이벤트는 누군가 토큰을 전송할 때 ERC-20 토큰이 발생시키는 Transfer 이벤트입니다.
+이 글을 작성하는 시점에 Quantaureum 블록체인에서 가장 흔한 이벤트는 누군가 토큰을 전송할 때 ERC-20 토큰이 발생시키는 Transfer 이벤트입니다.
 
 ```solidity
 event Transfer(address indexed from, address indexed to, uint256 value);

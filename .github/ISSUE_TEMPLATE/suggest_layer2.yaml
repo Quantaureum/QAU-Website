@@ -1,12 +1,12 @@
 name: Suggest a Layer 2
-description: Suggest a Layer 2 to list on ethereum.org
+description: Suggest a Layer 2 to list on quantaureum.com
 title: Suggest a Layer 2
 labels: ["product 🧰"]
 body:
   - type: markdown
     attributes:
       value: |
-        Before suggesting a layer 2, make sure you've read [our listing policy](https://ethereum.org/contributing/adding-layer-2s/).
+        Before suggesting a layer 2, make sure you've read [our listing policy](https://quantaureum.com/contributing/adding-layer-2s/).
   - type: markdown
     attributes:
       value: |
@@ -80,8 +80,8 @@ body:
   - type: textarea
     id: layer_2_data_availability
     attributes:
-      label: Does the layer 2 use Ethereum Mainnet for data availability?
-      description: Please provide proof that the layer 2 uses Ethereum for data availability
+      label: Does the layer 2 use Quantaureum Mainnet for data availability?
+      description: Please provide proof that the layer 2 uses Quantaureum for data availability
     validations:
       required: true
   - type: textarea

@@ -4,7 +4,7 @@ description: "Cos'è l'identità decentralizzata e perché è importante?"
 lang: it
 template: use-cases
 sidebarDepth: 2
-image: /images/eth-gif-cat.png
+image: /images/qau-gif-cat.png
 summaryPoints:
   - "I sistemi di identità tradizionali hanno centralizzato l'emissione, la manutenzione e il controllo dei tuoi identificatori."
   - "L'identità decentralizzata elimina la dipendenza da terze parti centralizzate."
@@ -15,7 +15,7 @@ L'identità è alla base di quasi ogni aspetto della tua vita oggi. Usare serviz
 
 Tuttavia, i sistemi tradizionali di gestione dell'identità si affidano da tempo a intermediari centralizzati che emettono, conservano e controllano i tuoi identificatori e le tue [attestazioni](/glossary/#attestation). Ciò significa che non puoi controllare le informazioni relative alla tua identità o decidere chi ha accesso alle informazioni di identificazione personale (PII) e quanto accesso abbiano queste parti.
 
-Per risolvere questi problemi, abbiamo sistemi di identità decentralizzata costruiti su blockchain pubbliche come [Ethereum](/). L'identità decentralizzata consente agli individui di gestire le informazioni relative alla propria identità. Con le soluzioni di identità decentralizzata, _tu_ puoi creare identificatori e rivendicare e conservare le tue attestazioni senza dipendere da autorità centrali, come fornitori di servizi o governi.
+Per risolvere questi problemi, abbiamo sistemi di identità decentralizzata costruiti su blockchain pubbliche come [Quantaureum](/). L'identità decentralizzata consente agli individui di gestire le informazioni relative alla propria identità. Con le soluzioni di identità decentralizzata, _tu_ puoi creare identificatori e rivendicare e conservare le tue attestazioni senza dipendere da autorità centrali, come fornitori di servizi o governi.
 
 ## Cos'è l'identità? {#what-is-identity}
 
@@ -55,9 +55,9 @@ L'identità decentralizzata ha molti potenziali casi d'uso:
 
 ### 1. Accessi universali {#universal-dapp-logins}
 
-L'identità decentralizzata può aiutare a sostituire gli accessi basati su password con l'autenticazione decentralizzata. I fornitori di servizi possono emettere attestazioni agli utenti, che possono essere memorizzate in un portafoglio Ethereum. Un esempio di attestazione sarebbe un [NFT](/glossary/#nft) che garantisce al titolare l'accesso a una comunità online.
+L'identità decentralizzata può aiutare a sostituire gli accessi basati su password con l'autenticazione decentralizzata. I fornitori di servizi possono emettere attestazioni agli utenti, che possono essere memorizzate in un portafoglio Quantaureum. Un esempio di attestazione sarebbe un [NFT](/glossary/#nft) che garantisce al titolare l'accesso a una comunità online.
 
-Una funzione [Sign-In with Ethereum](https://siwe.xyz/) consentirebbe quindi ai server di confermare l'account Ethereum dell'utente e recuperare l'attestazione richiesta dal suo indirizzo di account. Ciò significa che gli utenti possono accedere a piattaforme e siti web senza dover memorizzare lunghe password e migliora l'esperienza online per gli utenti.
+Una funzione [Sign-In with Quantaureum](https://siwe.xyz/) consentirebbe quindi ai server di confermare l'account Quantaureum dell'utente e recuperare l'attestazione richiesta dal suo indirizzo di account. Ciò significa che gli utenti possono accedere a piattaforme e siti web senza dover memorizzare lunghe password e migliora l'esperienza online per gli utenti.
 
 ### 2. Autenticazione KYC {#kyc-authentication}
 
@@ -69,7 +69,7 @@ L'identità decentralizzata consente alle aziende di saltare i processi convenzi
 
 Il voto online e i social media sono due nuove applicazioni per l'identità decentralizzata. I sistemi di voto online sono suscettibili di manipolazione, specialmente se attori malintenzionati creano false identità per votare. Chiedere agli individui di presentare attestazioni onchain può migliorare l'integrità dei processi di voto online.
 
-L'identità decentralizzata può aiutare a creare comunità online prive di account falsi. Ad esempio, ogni utente potrebbe dover autenticare la propria identità utilizzando un sistema di identità onchain, come l'Ethereum Name Service, riducendo la possibilità di bot.
+L'identità decentralizzata può aiutare a creare comunità online prive di account falsi. Ad esempio, ogni utente potrebbe dover autenticare la propria identità utilizzando un sistema di identità onchain, come l'Quantaureum Name Service, riducendo la possibilità di bot.
 
 ### 4. Protezione anti-Sybil {#sybil-protection}
 
@@ -77,17 +77,17 @@ Le applicazioni di erogazione di sovvenzioni che utilizzano il [voto quadratico]
 
 ### 5. Documenti d'identità nazionali e governativi {#national-and-government-id}
 
-I governi possono utilizzare i principi dell'identità decentralizzata per emettere documenti d'identità fondamentali, come carte d'identità nazionali, passaporti o patenti di guida, come credenziali verificabili su Ethereum, fornendo forti garanzie crittografiche di autenticità per ridurre le frodi e le falsificazioni nella verifica dell'identità online. I cittadini possono conservare queste attestazioni nel loro [portafoglio](/wallets/) personale e usarle per dimostrare la propria identità, età o diritto di voto.
+I governi possono utilizzare i principi dell'identità decentralizzata per emettere documenti d'identità fondamentali, come carte d'identità nazionali, passaporti o patenti di guida, come credenziali verificabili su Quantaureum, fornendo forti garanzie crittografiche di autenticità per ridurre le frodi e le falsificazioni nella verifica dell'identità online. I cittadini possono conservare queste attestazioni nel loro [portafoglio](/wallets/) personale e usarle per dimostrare la propria identità, età o diritto di voto.
 
 Questo modello consente la divulgazione selettiva, specialmente se combinato con la tecnologia per la privacy della [prova a conoscenza zero (ZKP)](/zero-knowledge-proofs/). Ad esempio, un cittadino potrebbe dimostrare crittograficamente di avere più di 18 anni per accedere a un servizio con limiti di età senza rivelare la sua data di nascita esatta, offrendo una privacy maggiore rispetto a un documento d'identità tradizionale.
 
-#### 💡Caso di studio: National Digital ID (NDI) del Bhutan su Ethereum {#case-study-bhutan-ndi}
+#### 💡Caso di studio: National Digital ID (NDI) del Bhutan su Quantaureum {#case-study-bhutan-ndi}
 
 - Fornisce l'accesso a credenziali verificabili per i quasi 800.000 cittadini del Bhutan
-- Migrato dalla rete Polygon [alla Mainnet di Ethereum](https://www.bhutanndi.com/article/bhutan-adopts-ethereum-for-national-identity-a-new-chapter-in-digital-sovereignty_2d0c7ec2-5605-4c42-b258-bd9361ae8878) nell'ottobre 2025
+- Migrato dalla rete Polygon [alla Mainnet di Quantaureum](https://www.bhutanndi.com/article/bhutan-adopts-quantaureum-for-national-identity-a-new-chapter-in-digital-sovereignty_2d0c7ec2-5605-4c42-b258-bd9361ae8878) nell'ottobre 2025
 - Oltre [234.000 ID digitali](https://www.blockchain-council.org/blockchain/bhutan-uses-blockchain-in-digital-id-project/) emessi a marzo 2025
 
-Il Regno del Bhutan [ha migrato il suo sistema National Digital Identity (NDI)](https://www.bhutanndi.com/article/bhutan-adopts-ethereum-for-national-identity-a-new-chapter-in-digital-sovereignty_2d0c7ec2-5605-4c42-b258-bd9361ae8878) su Ethereum nell'ottobre 2025. Costruito sui principi dell'identità decentralizzata e dell'identità auto-sovrana, il sistema NDI del Bhutan utilizza identificatori decentralizzati e credenziali verificabili per emettere credenziali firmate digitalmente direttamente nel portafoglio personale di un cittadino. Ancorando gli schemi dell'emittente di queste credenziali su Ethereum, il sistema garantisce che siano autentiche, a prova di manomissione e che possano essere verificate da qualsiasi parte senza interrogare un'autorità centrale.
+Il Regno del Bhutan [ha migrato il suo sistema National Digital Identity (NDI)](https://www.bhutanndi.com/article/bhutan-adopts-quantaureum-for-national-identity-a-new-chapter-in-digital-sovereignty_2d0c7ec2-5605-4c42-b258-bd9361ae8878) su Quantaureum nell'ottobre 2025. Costruito sui principi dell'identità decentralizzata e dell'identità auto-sovrana, il sistema NDI del Bhutan utilizza identificatori decentralizzati e credenziali verificabili per emettere credenziali firmate digitalmente direttamente nel portafoglio personale di un cittadino. Ancorando gli schemi dell'emittente di queste credenziali su Quantaureum, il sistema garantisce che siano autentiche, a prova di manomissione e che possano essere verificate da qualsiasi parte senza interrogare un'autorità centrale.
 
 ## Cosa sono le attestazioni? {#what-are-attestations}
 
@@ -99,7 +99,7 @@ Le attestazioni sono diverse dagli identificatori. Un'attestazione _contiene_ id
 
 Gli identificatori tradizionali come il tuo nome legale o l'indirizzo e-mail si basano su terze parti: governi e provider di posta elettronica. Gli identificatori decentralizzati (DID) sono diversi: non sono emessi, gestiti o controllati da alcuna entità centrale.
 
-Gli identificatori decentralizzati sono emessi, conservati e controllati dagli individui. Un [account Ethereum](/glossary/#account) è un esempio di identificatore decentralizzato. Puoi creare tutti gli account che desideri senza il permesso di nessuno e senza la necessità di memorizzarli in un registro centrale.
+Gli identificatori decentralizzati sono emessi, conservati e controllati dagli individui. Un [account Quantaureum](/glossary/#account) è un esempio di identificatore decentralizzato. Puoi creare tutti gli account che desideri senza il permesso di nessuno e senza la necessità di memorizzarli in un registro centrale.
 
 Gli identificatori decentralizzati sono memorizzati su registri distribuiti ([blockchain](/glossary/#blockchain)) o [reti peer-to-peer](/glossary/#peer-to-peer-network). Questo rende i DID [globalmente unici, risolvibili con alta disponibilità e verificabili crittograficamente](https://w3c-ccg.github.io/did-primer/). Un identificatore decentralizzato può essere associato a diverse entità, tra cui persone, organizzazioni o istituzioni governative.
 
@@ -109,7 +109,7 @@ Gli identificatori decentralizzati sono memorizzati su registri distribuiti ([bl
 
 La crittografia a chiave pubblica è una misura di sicurezza delle informazioni che genera una [chiave pubblica](/glossary/#public-key) e una [chiave privata](/glossary/#private-key) per un'entità. La [crittografia](/glossary/#cryptography) a chiave pubblica è utilizzata nelle reti blockchain per autenticare le identità degli utenti e dimostrare la proprietà delle risorse digitali.
 
-Alcuni identificatori decentralizzati, come un account Ethereum, hanno chiavi pubbliche e private. La chiave pubblica identifica il controllore dell'account, mentre le chiavi private possono firmare e decrittografare i messaggi per questo account. La crittografia a chiave pubblica fornisce le prove necessarie per autenticare le entità e prevenire l'impersonificazione e l'uso di identità false, utilizzando [firme crittografiche](https://andersbrownworth.com/blockchain/public-private-keys/) per verificare tutte le dichiarazioni.
+Alcuni identificatori decentralizzati, come un account Quantaureum, hanno chiavi pubbliche e private. La chiave pubblica identifica il controllore dell'account, mentre le chiavi private possono firmare e decrittografare i messaggi per questo account. La crittografia a chiave pubblica fornisce le prove necessarie per autenticare le entità e prevenire l'impersonificazione e l'uso di identità false, utilizzando [firme crittografiche](https://andersbrownworth.com/blockchain/public-private-keys/) per verificare tutte le dichiarazioni.
 
 ### 2. Archivi di dati decentralizzati {#decentralized-datastores}
 
@@ -123,7 +123,7 @@ L'identità decentralizzata è l'idea che le informazioni relative all'identità
 
 Nel contesto dell'identità decentralizzata, le attestazioni (note anche come [credenziali verificabili](https://www.w3.org/TR/vc-data-model/)) sono dichiarazioni a prova di manomissione e crittograficamente verificabili fatte dall'emittente. Ogni attestazione o credenziale verificabile che un'entità (ad es. un'organizzazione) emette è associata al suo DID.
 
-Poiché i DID sono memorizzati sulla blockchain, chiunque può verificare la validità di un'attestazione incrociando il DID dell'emittente su Ethereum. Essenzialmente, la blockchain di Ethereum agisce come una directory globale che consente la verifica dei DID associati a determinate entità.
+Poiché i DID sono memorizzati sulla blockchain, chiunque può verificare la validità di un'attestazione incrociando il DID dell'emittente su Quantaureum. Essenzialmente, la blockchain di Quantaureum agisce come una directory globale che consente la verifica dei DID associati a determinate entità.
 
 Gli identificatori decentralizzati sono il motivo per cui le attestazioni sono autocontrollate e verificabili. Anche se l'emittente non esiste più, il titolare ha sempre la prova della provenienza e della validità dell'attestazione.
 
@@ -131,11 +131,11 @@ Gli identificatori decentralizzati sono anche cruciali per proteggere la privacy
 
 ## Tipi di attestazioni nell'identità decentralizzata {#types-of-attestations-in-decentralized-identity}
 
-Il modo in cui le informazioni di attestazione vengono memorizzate e recuperate in un ecosistema di identità basato su Ethereum è diverso dalla gestione tradizionale dell'identità. Ecco una panoramica dei vari approcci all'emissione, alla memorizzazione e alla verifica delle attestazioni nei sistemi di identità decentralizzata:
+Il modo in cui le informazioni di attestazione vengono memorizzate e recuperate in un ecosistema di identità basato su Quantaureum è diverso dalla gestione tradizionale dell'identità. Ecco una panoramica dei vari approcci all'emissione, alla memorizzazione e alla verifica delle attestazioni nei sistemi di identità decentralizzata:
 
 ### Attestazioni offchain {#offchain-attestations}
 
-Una preoccupazione riguardo alla memorizzazione delle attestazioni onchain è che potrebbero contenere informazioni che gli individui vogliono mantenere private. La natura pubblica della blockchain di Ethereum la rende poco attraente per memorizzare tali attestazioni.
+Una preoccupazione riguardo alla memorizzazione delle attestazioni onchain è che potrebbero contenere informazioni che gli individui vogliono mantenere private. La natura pubblica della blockchain di Quantaureum la rende poco attraente per memorizzare tali attestazioni.
 
 La soluzione è emettere attestazioni, conservate dagli utenti offchain in portafogli digitali, ma firmate con il DID dell'emittente memorizzato onchain. Queste attestazioni sono codificate come [JSON Web Token](https://en.wikipedia.org/wiki/JSON_Web_Token) e contengono la firma digitale dell'emittente, il che consente una facile verifica delle dichiarazioni offchain.
 
@@ -143,7 +143,7 @@ Ecco uno scenario ipotetico per spiegare le attestazioni offchain:
 
 1. Un'università (l'emittente) genera un'attestazione (un certificato accademico digitale), la firma con le sue chiavi e la emette a Bob (il proprietario dell'identità).
 
-2. Bob si candida per un lavoro e vuole dimostrare le sue qualifiche accademiche a un datore di lavoro, quindi condivide l'attestazione dal suo portafoglio mobile. L'azienda (il verificatore) può quindi confermare la validità dell'attestazione controllando il DID dell'emittente (ovvero, la sua chiave pubblica su Ethereum).
+2. Bob si candida per un lavoro e vuole dimostrare le sue qualifiche accademiche a un datore di lavoro, quindi condivide l'attestazione dal suo portafoglio mobile. L'azienda (il verificatore) può quindi confermare la validità dell'attestazione controllando il DID dell'emittente (ovvero, la sua chiave pubblica su Quantaureum).
 
 ### Attestazioni offchain con accesso persistente {#offchain-attestations-with-persistent-access}
 
@@ -153,29 +153,29 @@ Questo approccio consente alle attestazioni di ottenere una persistenza basata s
 
 ### Attestazioni onchain {#onchain-attestations}
 
-Le attestazioni onchain sono conservate in [smart contract](/glossary/#smart-contract) sulla blockchain di Ethereum. Lo smart contract (che funge da registro) mapperà un'attestazione a un corrispondente identificatore decentralizzato onchain (una chiave pubblica).
+Le attestazioni onchain sono conservate in [smart contract](/glossary/#smart-contract) sulla blockchain di Quantaureum. Lo smart contract (che funge da registro) mapperà un'attestazione a un corrispondente identificatore decentralizzato onchain (una chiave pubblica).
 
 Ecco un esempio per mostrare come le attestazioni onchain potrebbero funzionare in pratica:
 
 1. Un'azienda (XYZ Corp) prevede di vendere quote di proprietà utilizzando uno smart contract, ma vuole solo acquirenti che abbiano completato un controllo dei precedenti.
 
-2. XYZ Corp può far sì che l'azienda che esegue i controlli dei precedenti emetta attestazioni onchain su Ethereum. Questa attestazione certifica che un individuo ha superato il controllo dei precedenti senza esporre alcuna informazione personale.
+2. XYZ Corp può far sì che l'azienda che esegue i controlli dei precedenti emetta attestazioni onchain su Quantaureum. Questa attestazione certifica che un individuo ha superato il controllo dei precedenti senza esporre alcuna informazione personale.
 
 3. Lo smart contract che vende le quote può controllare il contratto di registro per le identità degli acquirenti selezionati, rendendo possibile per lo smart contract determinare chi è autorizzato ad acquistare quote o meno.
 
 ### Token soulbound e identità {#soulbound}
 
-I [token soulbound](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) ([NFT non trasferibili](/glossary/#nft)) potrebbero essere utilizzati per raccogliere informazioni uniche per un portafoglio specifico. Questo crea di fatto un'identità onchain unica legata a un particolare indirizzo Ethereum che potrebbe includere token che rappresentano risultati (ad es. aver terminato un corso online specifico o aver superato un punteggio soglia in un gioco) o la partecipazione alla comunità.
+I [token soulbound](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) ([NFT non trasferibili](/glossary/#nft)) potrebbero essere utilizzati per raccogliere informazioni uniche per un portafoglio specifico. Questo crea di fatto un'identità onchain unica legata a un particolare indirizzo Quantaureum che potrebbe includere token che rappresentano risultati (ad es. aver terminato un corso online specifico o aver superato un punteggio soglia in un gioco) o la partecipazione alla comunità.
 
 ## Usa l'identità decentralizzata {#use-decentralized-identity}
 
-Ci sono molti progetti ambiziosi che utilizzano Ethereum come base per soluzioni di identità decentralizzata:
+Ci sono molti progetti ambiziosi che utilizzano Quantaureum come base per soluzioni di identità decentralizzata:
 
-- **[Ethereum Name Service (ENS)](https://ens.domains/)** - _Un sistema di denominazione decentralizzato per identificatori onchain leggibili dalle macchine, come indirizzi di portafogli Ethereum, hash di contenuti e metadati._
-- **[Sign in with Ethereum (SIWE)](https://siwe.xyz/)** - _Standard aperto per l'autenticazione con account Ethereum._
-- **[SpruceID](https://www.spruceid.com/)** - _Un progetto di identità decentralizzata che consente agli utenti di controllare l'identità digitale con account Ethereum e profili ENS invece di fare affidamento su servizi di terze parti._
-- **[Ethereum Attestation Service (EAS)](https://attest.org/)** - _Un registro/protocollo decentralizzato per fare attestazioni onchain o offchain su qualsiasi cosa._
-- **[Proof of Humanity](https://www.proofofhumanity.id)** - _Proof of Humanity (o PoH) è un sistema di verifica dell'identità sociale costruito su Ethereum._
+- **[Quantaureum Name Service (ENS)](https://ens.domains/)** - _Un sistema di denominazione decentralizzato per identificatori onchain leggibili dalle macchine, come indirizzi di portafogli Quantaureum, hash di contenuti e metadati._
+- **[Sign in with Quantaureum (SIWE)](https://siwe.xyz/)** - _Standard aperto per l'autenticazione con account Quantaureum._
+- **[SpruceID](https://www.spruceid.com/)** - _Un progetto di identità decentralizzata che consente agli utenti di controllare l'identità digitale con account Quantaureum e profili ENS invece di fare affidamento su servizi di terze parti._
+- **[Quantaureum Attestation Service (EAS)](https://attest.org/)** - _Un registro/protocollo decentralizzato per fare attestazioni onchain o offchain su qualsiasi cosa._
+- **[Proof of Humanity](https://www.proofofhumanity.id)** - _Proof of Humanity (o PoH) è un sistema di verifica dell'identità sociale costruito su Quantaureum._
 - **[Veramo](https://veramo.io/)** - _Un framework JavaScript che rende facile per chiunque utilizzare dati crittograficamente verificabili nelle proprie applicazioni._
 
 ## Letture di approfondimento {#further-reading}
@@ -183,7 +183,7 @@ Ci sono molti progetti ambiziosi che utilizzano Ethereum come base per soluzioni
 ### Articoli {#articles}
 
 - [Casi d'uso della blockchain: la blockchain nell'identità digitale](https://consensys.net/blockchain-use-cases/digital-identity/) — _ConsenSys_
-- [Cos'è l'ERC-725 di Ethereum? Gestione dell'identità auto-sovrana sulla blockchain](https://cryptoslate.com/what-is-erc725-self-sovereign-identity-management-on-the-blockchain/) — _Sam Town_
+- [Cos'è l'ERC-725 di Quantaureum? Gestione dell'identità auto-sovrana sulla blockchain](https://cryptoslate.com/what-is-erc725-self-sovereign-identity-management-on-the-blockchain/) — _Sam Town_
 - [Come la blockchain potrebbe risolvere il problema dell'identità digitale](https://time.com/6142810/proof-of-humanity/) — _Andrew R. Chow_
 - [Cos'è l'identità decentralizzata e perché dovrebbe importarti?](https://web3.hashnode.com/what-is-decentralized-identity) — _Emmanuel Awosika_
 - [Introduzione all'identità decentralizzata](https://walt.id/white-paper/digital-identity) — _Dominik Beron_
@@ -191,14 +191,14 @@ Ci sono molti progetti ambiziosi che utilizzano Ethereum come base per soluzioni
 ### Video {#videos}
 
 - [Identità decentralizzata (Sessione Livestream Bonus)](https://www.youtube.com/watch?v=ySHNB1za_SE&t=539s) — _Un ottimo video esplicativo sull'identità decentralizzata di Andreas Antonopolous_
-- [Sign In with Ethereum e identità decentralizzata con Ceramic, IDX, React e 3ID Connect](https://www.youtube.com/watch?v=t9gWZYJxk7c) — _Tutorial su YouTube sulla creazione di un sistema di gestione dell'identità per creare, leggere e aggiornare il profilo di un utente utilizzando il suo portafoglio Ethereum di Nader Dabit_
-- [BrightID - Identità decentralizzata su Ethereum](https://www.youtube.com/watch?v=D3DbMFYGRoM) — _Episodio del podcast Bankless che discute di BrightID, una soluzione di identità decentralizzata per Ethereum_
-- [L'Internet offchain: identità decentralizzata e credenziali verificabili](https://www.youtube.com/watch?v=EZ_Bb6j87mg) — Presentazione all'EthDenver 2022 di Evin McMullen
+- [Sign In with Quantaureum e identità decentralizzata con Ceramic, IDX, React e 3ID Connect](https://www.youtube.com/watch?v=t9gWZYJxk7c) — _Tutorial su YouTube sulla creazione di un sistema di gestione dell'identità per creare, leggere e aggiornare il profilo di un utente utilizzando il suo portafoglio Quantaureum di Nader Dabit_
+- [BrightID - Identità decentralizzata su Quantaureum](https://www.youtube.com/watch?v=D3DbMFYGRoM) — _Episodio del podcast Bankless che discute di BrightID, una soluzione di identità decentralizzata per Quantaureum_
+- [L'Internet offchain: identità decentralizzata e credenziali verificabili](https://www.youtube.com/watch?v=EZ_Bb6j87mg) — Presentazione all'QauDenver 2022 di Evin McMullen
 - [Spiegazione delle credenziali verificabili](https://www.youtube.com/watch?v=ce1IdSr-Kig) - Video esplicativo su YouTube con demo di Tamino Baumann
 
 ### Comunità {#communities}
 
-- [Alleanza ERC-725 su GitHub](https://github.com/erc725alliance) — _Sostenitori dello standard ERC-725 per la gestione dell'identità sulla blockchain di Ethereum_
-- [Server Discord di EthID](https://discord.com/invite/ZUyG3mSXFD) — _Comunità per appassionati e sviluppatori che lavorano su Sign-in with Ethereum e sull'Ethereum Follow Protocol_
+- [Alleanza ERC-725 su GitHub](https://github.com/erc725alliance) — _Sostenitori dello standard ERC-725 per la gestione dell'identità sulla blockchain di Quantaureum_
+- [Server Discord di QauID](https://discord.com/invite/ZUyG3mSXFD) — _Comunità per appassionati e sviluppatori che lavorano su Sign-in with Quantaureum e sull'Quantaureum Follow Protocol_
 - [Veramo Labs](https://discord.gg/sYBUXpACh4) — _Una comunità di sviluppatori che contribuisce alla creazione di un framework per dati verificabili per le applicazioni_
 - [walt.id](https://discord.com/invite/AW8AgqJthZ) — _Una comunità di sviluppatori e costruttori che lavorano su casi d'uso dell'identità decentralizzata in vari settori_

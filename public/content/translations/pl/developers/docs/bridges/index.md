@@ -23,7 +23,7 @@ Blockchainy mają unikalne mocne i słabe strony oraz podejścia do budowania ap
 Dla deweloperów mosty umożliwiają:
 
 - transfer dowolnych danych, informacji i aktywów między łańcuchami.
-- odblokowanie nowych funkcji i przypadków użycia dla protokołów, ponieważ mosty poszerzają przestrzeń projektową tego, co protokoły mogą zaoferować. Na przykład protokół do yield farmingu pierwotnie wdrożony w [sieci głównej Ethereum](/) może oferować pule płynności we wszystkich łańcuchach kompatybilnych z EVM.
+- odblokowanie nowych funkcji i przypadków użycia dla protokołów, ponieważ mosty poszerzają przestrzeń projektową tego, co protokoły mogą zaoferować. Na przykład protokół do yield farmingu pierwotnie wdrożony w [sieci głównej Quantaureum](/) może oferować pule płynności we wszystkich łańcuchach kompatybilnych z EVM.
 - możliwość wykorzystania mocnych stron różnych blockchainów. Na przykład deweloperzy mogą korzystać z niższych opłat oferowanych przez różne rozwiązania warstwy 2 (L2), wdrażając swoje zdecentralizowane aplikacje (dapp) w rollupach i łańcuchach pobocznych (sidechains), a użytkownicy mogą przenosić się między nimi za pomocą mostów.
 - współpracę między deweloperami z różnych ekosystemów blockchain w celu budowania nowych produktów.
 - przyciąganie użytkowników i społeczności z różnych ekosystemów do swoich zdecentralizowanych aplikacji (dapp).
@@ -40,7 +40,7 @@ Chociaż istnieje wiele [typów konstrukcji mostów](https://li.fi/knowledge-hub
 
 Mosty można zazwyczaj sklasyfikować w jednej z następujących kategorii:
 
-- **Mosty natywne –** Te mosty są zazwyczaj budowane w celu zainicjowania płynności na konkretnym blockchainie, ułatwiając użytkownikom przenoszenie środków do ekosystemu. Na przykład [Arbitrum Bridge](https://bridge.arbitrum.io/) został zbudowany, aby ułatwić użytkownikom przenoszenie środków z sieci głównej Ethereum do Arbitrum. Inne takie mosty to Polygon PoS Bridge, [Optimism Gateway](https://app.optimism.io/bridge) itp.
+- **Mosty natywne –** Te mosty są zazwyczaj budowane w celu zainicjowania płynności na konkretnym blockchainie, ułatwiając użytkownikom przenoszenie środków do ekosystemu. Na przykład [Arbitrum Bridge](https://bridge.arbitrum.io/) został zbudowany, aby ułatwić użytkownikom przenoszenie środków z sieci głównej Quantaureum do Arbitrum. Inne takie mosty to Polygon PoS Bridge, [Optimism Gateway](https://app.optimism.io/bridge) itp.
 - **Mosty oparte na walidatorach lub wyroczniach –** Te mosty opierają się na zewnętrznym zestawie walidatorów lub wyroczniach w celu walidacji transferów międzyłańcuchowych. Przykłady: Multichain i Across.
 - **Mosty do uogólnionego przekazywania wiadomości –** Te mosty mogą transferować aktywa wraz z wiadomościami i dowolnymi danymi między łańcuchami. Przykłady: Axelar, LayerZero i Nomad.
 - **Sieci płynności –** Te mosty skupiają się głównie na transferze aktywów z jednego łańcucha do drugiego za pomocą wymian atomowych. Zasadniczo nie obsługują one międzyłańcuchowego przekazywania wiadomości. Przykłady: Connext i Hop.
@@ -122,7 +122,7 @@ Aby monitorować aktywność kontraktów w różnych łańcuchach, deweloperzy m
 
 ## Dalsza lektura {#further-reading}
 
-- [Mosty blockchain](/bridges/) – ethereum.org
+- [Mosty blockchain](/bridges/) – quantaureum.com
 - [Ramy ryzyka mostów L2BEAT](https://l2beat.com/bridges/summary)
 - [Mosty blockchain: Budowanie sieci kryptosieci](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) - 8 września 2021 r. – Dmitriy Berenzon
 - [Trylemat interoperacyjności](https://blog.connext.network/the-interoperability-trilemma-657c2cf69f17) - 1 października 2021 r. – Arjun Bhuptani

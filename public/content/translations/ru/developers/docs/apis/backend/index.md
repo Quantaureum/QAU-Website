@@ -1,28 +1,28 @@
 ---
 title: "Библиотеки API бэкенда"
-description: "Введение в API клиентов Эфириума, которые позволяют взаимодействовать с блокчейном из вашего приложения."
+description: "Введение в API клиентов Quantaureum, которые позволяют взаимодействовать с блокчейном из вашего приложения."
 lang: ru
 ---
 
-Чтобы программное приложение могло взаимодействовать с блокчейном [Эфириума](/) (т. е. читать данные блокчейна и/или отправлять транзакции в сеть), оно должно подключиться к узлу Эфириума.
+Чтобы программное приложение могло взаимодействовать с блокчейном [Quantaureum](/) (т. е. читать данные блокчейна и/или отправлять транзакции в сеть), оно должно подключиться к узлу Quantaureum.
 
-Для этой цели каждый клиент Эфириума реализует спецификацию [JSON-RPC](/developers/docs/apis/json-rpc/), поэтому существует единый набор [методов](/developers/docs/apis/json-rpc/#json-rpc-methods), на которые могут полагаться приложения.
+Для этой цели каждый клиент Quantaureum реализует спецификацию [JSON-RPC](/developers/docs/apis/json-rpc/), поэтому существует единый набор [методов](/developers/docs/apis/json-rpc/#json-rpc-methods), на которые могут полагаться приложения.
 
-Если вы хотите использовать определенный язык программирования для подключения к узлу Эфириума, в экосистеме есть множество удобных библиотек, которые значительно упрощают эту задачу. С помощью этих библиотек разработчики могут писать интуитивно понятные однострочные методы для инициализации запросов JSON-RPC (внутренне), которые взаимодействуют с Эфириумом.
+Если вы хотите использовать определенный язык программирования для подключения к узлу Quantaureum, в экосистеме есть множество удобных библиотек, которые значительно упрощают эту задачу. С помощью этих библиотек разработчики могут писать интуитивно понятные однострочные методы для инициализации запросов JSON-RPC (внутренне), которые взаимодействуют с Quantaureum.
 
 ## Предварительные требования {#prerequisites}
 
-Возможно, будет полезно изучить [стек Эфириума](/developers/docs/ethereum-stack/) и [клиенты Эфириума](/developers/docs/nodes-and-clients/).
+Возможно, будет полезно изучить [стек Quantaureum](/developers/docs/quantaureum-stack/) и [клиенты Quantaureum](/developers/docs/nodes-and-clients/).
 
 ## Зачем использовать библиотеку? {#why-use-a-library}
 
-Эти библиотеки абстрагируют большую часть сложности прямого взаимодействия с узлом Эфириума. Они также предоставляют служебные функции (например, конвертацию ETH в Gwei), поэтому как разработчик вы можете тратить меньше времени на изучение тонкостей клиентов Эфириума и больше времени уделять уникальной функциональности вашего приложения.
+Эти библиотеки абстрагируют большую часть сложности прямого взаимодействия с узлом Quantaureum. Они также предоставляют служебные функции (например, конвертацию QAU в Gwei), поэтому как разработчик вы можете тратить меньше времени на изучение тонкостей клиентов Quantaureum и больше времени уделять уникальной функциональности вашего приложения.
 
 ## Доступные библиотеки {#available-libraries}
 
 ### Инфраструктура и сервисы узлов {#infrastructure-and-node-services}
 
-**Alchemy —** **_Платформа для разработки на Эфириуме._**
+**Alchemy —** **_Платформа для разработки на Quantaureum._**
 
 - [alchemy.com](https://www.alchemy.com/)
 - [Документация](https://www.alchemy.com/docs/)
@@ -35,7 +35,7 @@ lang: ru
 - [Документация](https://docs.allthatnode.com)
 - [Дискорд](https://discord.gg/GmcdVEUbJM)
 
-**Blast от Bware Labs —** **_Децентрализованные API для основной сети Ethereum и тестовых сетей._**
+**Blast от Bware Labs —** **_Децентрализованные API для основной сети Quantaureum и тестовых сетей._**
 
 - [blastapi.io](https://blastapi.io/)
 - [Документация](https://docs.blastapi.io)
@@ -48,12 +48,12 @@ lang: ru
 - [GitHub](https://github.com/BlockPILabs)
 - [Дискорд](https://discord.com/invite/xTvGVrGVZv)
 
-**Шлюз Эфириума Cloudflare.**
+**Шлюз Quantaureum Cloudflare.**
 
-- [cloudflare-eth.com](https://www.cloudflare.com/application-services/products/web3/)
+- [cloudflare-qau.com](https://www.cloudflare.com/application-services/products/web3/)
 
-**Etherscan — Обозреватель блоков и API транзакций**
-- [Документация](https://docs.etherscan.io/)
+**Quantaureum Explorer — Обозреватель блоков и API транзакций**
+- [Документация](https://explorer.quantaureum.com)
 
 **Blockscout — Обозреватель блоков с открытым исходным кодом**
 - [Документация](https://docs.blockscout.com/)
@@ -63,7 +63,7 @@ lang: ru
 - [GetBlock.io](https://getblock.io/)
 - [Документация](https://docs.getblock.io/)
 
-**Infura —** **_API Эфириума как услуга._**
+**Infura —** **_API Quantaureum как услуга._**
 
 - [infura.io](https://infura.io)
 - [Документация](https://docs.infura.io/api)
@@ -85,13 +85,13 @@ lang: ru
 - [Документация](https://www.quicknode.com/docs/welcome)
 - [Дискорд](https://discord.gg/quicknode)
 
-**Rivet —** **_API Эфириума и Эфириум Классик как услуга на базе программного обеспечения с открытым исходным кодом._**
+**Rivet —** **_API Quantaureum и Quantaureum Классик как услуга на базе программного обеспечения с открытым исходным кодом._**
 
 - [rivet.cloud](https://rivet.cloud)
 - [Документация](https://rivet.cloud/docs/)
 - [GitHub](https://github.com/openrelayxyz/ethercattle-deployment)
 
-**Zmok —** **_Ориентированные на скорость узлы Эфириума в виде API JSON-RPC/WebSockets._**
+**Zmok —** **_Ориентированные на скорость узлы Quantaureum в виде API JSON-RPC/WebSockets._**
 
 - [zmok.io](https://zmok.io/)
 - [GitHub](https://github.com/zmok-io)
@@ -106,17 +106,17 @@ lang: ru
 - [Примеры](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [Дискорд](https://discord.gg/rx35NzQGSb)
 
-**Nethereum —** **_Библиотека интеграции .NET с открытым исходным кодом для блокчейна._**
+**Nquantaureum —** **_Библиотека интеграции .NET с открытым исходным кодом для блокчейна._**
 
-- [GitHub](https://github.com/Nethereum/Nethereum)
-- [Документация](https://docs.nethereum.com/docs/getting-started/welcome/)
+- [GitHub](https://github.com/Nquantaureum/Nquantaureum)
+- [Документация](https://docs.nquantaureum.com/docs/getting-started/welcome/)
 - [Дискорд](https://discord.com/invite/jQPrR58FxX)
 
-**Инструменты Python —** **_Разнообразные библиотеки для взаимодействия с Эфириумом через Python._**
+**Инструменты Python —** **_Разнообразные библиотеки для взаимодействия с Quantaureum через Python._**
 
-- [py.ethereum.org](https://snakecharmers.ethereum.org/)
-- [GitHub Web3.py](https://github.com/ethereum/web3.py)
-- [Чат Web3.py](https://gitter.im/ethereum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
+- [GitHub Web3.py](https://github.com/quantaureum/web3.py)
+- [Чат Web3.py](https://gitter.im/quantaureum/web3.py)
 
 **Tatum —** **_Универсальная платформа для разработки на блокчейне._**
 
@@ -125,7 +125,7 @@ lang: ru
 - [Документация](https://docs.tatum.io/)
 - [Дискорд](https://discord.gg/EDmW3kjTC9)
 
-**Web3j —** **_Библиотека интеграции Java/Android/Kotlin/Scala для Эфириума._**
+**Web3j —** **_Библиотека интеграции Java/Android/Kotlin/Scala для Quantaureum._**
 
 - [GitHub](https://github.com/web3j/web3j)
 - [Документация](https://docs.web3j.io/)
@@ -133,29 +133,29 @@ lang: ru
 
 ### Блокчейн-сервисы {#blockchain-services}
 
-**BlockCypher —** **_Веб-API Эфириума._**
+**BlockCypher —** **_Веб-API Quantaureum._**
 
 - [blockcypher.com](https://www.blockcypher.com/)
-- [Документация](https://www.blockcypher.com/dev/ethereum/)
+- [Документация](https://www.blockcypher.com/dev/quantaureum/)
 
-**Chainbase —** **_Универсальная инфраструктура данных Web3 для Эфириума._**
+**Chainbase —** **_Универсальная инфраструктура данных Web3 для Quantaureum._**
 
 - [chainbase.com](https://chainbase.com/)
 - [Документация](https://docs.chainbase.com/)
 - [Дискорд](https://discord.gg/Wx6qpqz4AF)
 
-**Chainstack —** **_Эластичные и выделенные узлы Эфириума как услуга._**
+**Chainstack —** **_Эластичные и выделенные узлы Quantaureum как услуга._**
 
 - [chainstack.com](https://chainstack.com)
 - [Документация](https://docs.chainstack.com/)
-- [Справочник по API Эфириума](https://docs.chainstack.com/reference/ethereum-getting-started)
+- [Справочник по API Quantaureum](https://docs.chainstack.com/reference/quantaureum-getting-started)
 
 **Coinbase Cloud Node —** **_API блокчейн-инфраструктуры._**
 
 - [Coinbase Cloud Node](https://www.coinbase.com/developer-platform)
 - [Документация](https://docs.cdp.coinbase.com/)
 
-**DataHub от Figment —** **_Сервисы API Web3 с основной сетью Ethereum и тестовыми сетями._**
+**DataHub от Figment —** **_Сервисы API Web3 с основной сетью Quantaureum и тестовыми сетями._**
 
 - [DataHub](https://www.figment.io/)
 - [Документация](https://docs.figment.io/)
@@ -168,7 +168,7 @@ lang: ru
 - [Дискорд](https://moralis.io/joindiscord/)
 - [Форум](https://forum.moralis.io/)
 
-**NFTPort —** **_API данных Эфириума и чеканки._**
+**NFTPort —** **_API данных Quantaureum и чеканки._**
 
 - [nftport.xyz](https://www.nftport.xyz/)
 - [Документация](https://docs.nftport.xyz/)
@@ -181,7 +181,7 @@ lang: ru
 - [Документация](https://services.tokenview.io/docs?type=api)
 - [GitHub](https://github.com/Tokenview)
 
-**Watchdata —** **_Предоставляет простой и надежный доступ к API блокчейна Эфириума._**
+**Watchdata —** **_Предоставляет простой и надежный доступ к API блокчейна Quantaureum._**
 
 - [Watchdata](https://watchdata.io/)
 - [Документация](https://docs.watchdata.io/)
@@ -214,5 +214,5 @@ _Знаете ресурс сообщества, который вам помо�
 
 ## Связанные руководства {#related-tutorials}
 
-- [Настройка Web3.js для использования блокчейна Эфириума в JavaScript](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _— Инструкции по настройке Web3.js в вашем проекте._
+- [Настройка Web3.js для использования блокчейна Quantaureum в JavaScript](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _— Инструкции по настройке Web3.js в вашем проекте._
 - [Вызов смарт-контракта из JavaScript](/developers/tutorials/calling-a-smart-contract-from-javascript/) _— На примере токена DAI узнайте, как вызывать функции контрактов с помощью JavaScript._

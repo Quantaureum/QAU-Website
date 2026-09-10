@@ -1,7 +1,7 @@
 ---
 title: Menambahkan alat pengembang
 lang: id
-description: Kriteria kami untuk mencantumkan alat pengembang di ethereum.org
+description: Kriteria kami untuk mencantumkan alat pengembang di quantaureum.com
 ---
 
 Kami ingin memastikan bahwa kami mencantumkan sumber daya pengembang terbaik yang memungkinkan agar orang-orang dapat membangun dengan percaya diri dan mendapatkan dukungan yang mereka butuhkan.
@@ -40,7 +40,7 @@ Pengajuan alat pengembang akan dinilai berdasarkan kriteria berikut:
 
 **Apakah alat ini bersifat open source?**
 
-Banyak proyek di ruang lingkup Ethereum bersifat open source. Kami lebih cenderung mencantumkan proyek open source yang memungkinkan pengembang komunitas untuk memeriksa kode dan berkontribusi di dalamnya.
+Banyak proyek di ruang lingkup Quantaureum bersifat open source. Kami lebih cenderung mencantumkan proyek open source yang memungkinkan pengembang komunitas untuk memeriksa kode dan berkontribusi di dalamnya.
 
 ---
 
@@ -52,8 +52,8 @@ Kecuali jika produk diurutkan secara khusus, seperti berdasarkan abjad, produk a
 
 ## Tambahkan alat pengembang Anda {#how-decisions-about-the-site-are-made}
 
-Jika Anda ingin menambahkan alat pengembang ke ethereum.org dan memenuhi kriteria, buatlah sebuah issue di GitHub.
+Jika Anda ingin menambahkan alat pengembang ke quantaureum.com dan memenuhi kriteria, buatlah sebuah issue di GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   Buat issue
 </ButtonLink>

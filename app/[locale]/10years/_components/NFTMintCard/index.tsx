@@ -71,7 +71,7 @@ const NFTMintCard = async () => {
               {t("page-10-year-mint-card-ended-description")}
             </AlertDescription>
             <Link
-              href={`https://opensea.io/item/ethereum/${TORCH_CONTRACT_ADDRESS}`}
+              href={`https://opensea.io/item/quantaureum/${TORCH_CONTRACT_ADDRESS}`}
               title={TORCH_CONTRACT_ADDRESS}
             >
               {t("page-10-year-nft-link-label")}

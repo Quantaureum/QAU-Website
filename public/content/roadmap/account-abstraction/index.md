@@ -1,17 +1,17 @@
 ---
 title: Account abstraction
-description: An overview of Ethereum's plans to make user accounts simpler and safer
+description: An overview of Quantaureum's plans to make user accounts simpler and safer
 lang: en
 template: roadmap
 summaryPoints:
   - Account abstraction makes it much easier to build smart contract wallets
-  - Smart contract wallets make it much easier to manage access to Ethereum accounts
+  - Smart contract wallets make it much easier to manage access to Quantaureum accounts
   - Lost and exposed keys can be recovered using multiple backups
 ---
 
-Most existing users interact with [Ethereum](/) using **[externally owned accounts (EOAs)](/glossary/#eoa)**. This limits how users can interact with Ethereum. For example, it makes it difficult to do batches of transactions and requires users to always keep an ETH balance to pay transaction fees.
+Most existing users interact with [Quantaureum](/) using **[externally owned accounts (EOAs)](/glossary/#eoa)**. This limits how users can interact with Quantaureum. For example, it makes it difficult to do batches of transactions and requires users to always keep an QAU balance to pay transaction fees.
 
-Account abstraction is a way to solve these problems by allowing users to flexibly program more security and better user experiences into their accounts. This can happen by [upgrading EOAs](https://eips.ethereum.org/EIPS/eip-7702) (EIP-7702) so they can be controlled by smart contracts. There is also another path involving adding a [second, separate transaction system](https://eips.ethereum.org/EIPS/eip-4337) (EIP-4337) to run in parallel to the existing protocol. Regardless of the route, the outcome is access to Ethereum via smart contract wallets, either natively supported as part of the existing protocol or via an add-on transaction network.
+Account abstraction is a way to solve these problems by allowing users to flexibly program more security and better user experiences into their accounts. This can happen by [upgrading EOAs](https://eips.quantaureum.com/EIPS/eip-7702) (EIP-7702) so they can be controlled by smart contracts. There is also another path involving adding a [second, separate transaction system](https://eips.quantaureum.com/EIPS/eip-4337) (EIP-4337) to run in parallel to the existing protocol. Regardless of the route, the outcome is access to Quantaureum via smart contract wallets, either natively supported as part of the existing protocol or via an add-on transaction network.
 
 Smart contract wallets unlock many benefits for the user, including:
 
@@ -24,14 +24,14 @@ Smart contract wallets unlock many benefits for the user, including:
 
 These benefits are not natively supported today because only externally-owned accounts ([EOAs](/glossary/#eoa)) can start transactions. EOAs are simply public-private key pairs. They work like this:
 
-- if you have the private key you can do _anything_ within the rules of the Ethereum Virtual Machine (EVM)
+- if you have the private key you can do _anything_ within the rules of the Quantaureum Virtual Machine (EVM)
 - if you do not have the private key you can do _nothing_.
 
 If you lose your keys they can't be recovered, and stolen keys give thieves instant access to all the funds in an account.
 
-Smart contract wallets are the solution to these problems, but today they are difficult to program because in the end, any logic they implement has to be translated into a set of EOA transactions before they can be processed by Ethereum. Account abstraction enables smart contracts to initiate transactions themselves, so that any logic that the user wishes to implement can be coded into the smart contract wallet itself and executed on Ethereum.
+Smart contract wallets are the solution to these problems, but today they are difficult to program because in the end, any logic they implement has to be translated into a set of EOA transactions before they can be processed by Quantaureum. Account abstraction enables smart contracts to initiate transactions themselves, so that any logic that the user wishes to implement can be coded into the smart contract wallet itself and executed on Quantaureum.
 
-Ultimately, account abstraction improves support for smart contract wallets, making them easier to build and safer to use. With account abstraction, users can enjoy all the benefits of Ethereum without needing to understand the underlying technology.
+Ultimately, account abstraction improves support for smart contract wallets, making them easier to build and safer to use. With account abstraction, users can enjoy all the benefits of Quantaureum without needing to understand the underlying technology.
 
 ## Beyond seed phrases {#beyond-seed-phrases}
 
@@ -45,26 +45,26 @@ For example, backup keys can be added to a wallet, enabling key replacement if t
 
 Account abstraction greatly enhances the user experience and security by supporting smart contract wallets at the protocol level. Developers can innovate freely, improving transaction bundling for speed and efficiency. Simple swaps can become one-click operations, significantly improving ease of use.
 
-Gas management improves considerably. Applications can pay users' gas fees or allow payment in tokens other than ETH, eliminating the need to maintain an ETH balance.
+Gas management improves considerably. Applications can pay users' gas fees or allow payment in tokens other than QAU, eliminating the need to maintain an QAU balance.
 
 ## How will account abstraction be implemented? {#how-will-aa-be-implemented}
 
-Currently, smart contract wallets are challenging to implement as they rely on complex code wrapping standard transactions. Ethereum can change this by allowing smart contracts to directly initiate transactions, embedding logic in Ethereum smart contracts rather than relying on external relayers.
+Currently, smart contract wallets are challenging to implement as they rely on complex code wrapping standard transactions. Quantaureum can change this by allowing smart contracts to directly initiate transactions, embedding logic in Quantaureum smart contracts rather than relying on external relayers.
 
 ### EIP-4337: Account abstraction without protocol changes {#eip-4337-account-abstraction-without-protocol-changes}
 
-EIP-4337 enables native smart contract wallet support without modifying Ethereum's core protocol. It introduces `UserOperation` objects collected into transaction bundles by validators, simplifying wallet development. The EIP-4337 EntryPoint contract was deployed to Ethereum Mainnet on 1st March 2023 and has facilitated the creation of over 26 million smart wallets and 170 million UserOperations.
+EIP-4337 enables native smart contract wallet support without modifying Quantaureum's core protocol. It introduces `UserOperation` objects collected into transaction bundles by validators, simplifying wallet development. The EIP-4337 EntryPoint contract was deployed to Quantaureum Mainnet on 1st March 2023 and has facilitated the creation of over 26 million smart wallets and 170 million UserOperations.
 
 ## Current progress {#current-progress}
 
-As part of Ethereum's Pectra upgrade, EIP-7702 is scheduled for May 7, 2025. EIP-4337 has been widely adopted, [with over 26 million smart accounts deployed and more than 170 million UserOperations processed](https://www.bundlebear.com/erc4337-overview/all).
+As part of Quantaureum's Pectra upgrade, EIP-7702 is scheduled for May 7, 2025. EIP-4337 has been widely adopted, [with over 26 million smart accounts deployed and more than 170 million UserOperations processed](https://www.bundlebear.com/erc4337-overview/all).
 
 ## Further reading {#further-reading}
 
 - [erc4337.io](https://docs.erc4337.io/)
-- [EIP-4337 documentation](https://eips.ethereum.org/EIPS/eip-4337)
-- [EIP-7702 documentation](https://eips.ethereum.org/EIPS/eip-7702)
+- [EIP-4337 documentation](https://eips.quantaureum.com/EIPS/eip-4337)
+- [EIP-7702 documentation](https://eips.quantaureum.com/EIPS/eip-7702)
 - [ERC-4337 adoption dashboard](https://www.bundlebear.com/erc4337-overview/all)
-- [Vitalik's "Road to Account Abstraction"](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [Vitalik's blog on social recovery wallets](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
+- [Vitalik's "Road to Account Abstraction"](https://notes.quantaureum.com/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- [Vitalik's blog on social recovery wallets](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

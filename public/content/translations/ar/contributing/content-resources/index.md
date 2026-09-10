@@ -1,7 +1,7 @@
 ---
 title: إضافة موارد المحتوى
 lang: ar
-description: معاييرنا لإدراج موارد المحتوى على ⁦ethereum.org⁩
+description: معاييرنا لإدراج موارد المحتوى على ⁦quantaureum.com⁩
 ---
 
 لا يمكننا أن نأمل في تغطية كل ما يخص إيثيريوم، لذا نحاول عرض بعض المقالات الرائعة، والبرامج التعليمية، والنشرات الإخبارية، ولوحات الوظائف، وموارد المحتوى المختلفة التي ينشئها المجتمع. غالبًا ما توفر هذه الموارد معلومات أكثر تعمقًا حول الموضوعات التي قد يهتم بها المستخدمون.
@@ -17,14 +17,14 @@ description: معاييرنا لإدراج موارد المحتوى على ⁦e
 - هل المعلومات دقيقة؟ هل هي مبنية على حقائق أم آراء؟
 - هل المؤلف موثوق؟ هل يشير إلى مصادره؟
 - هل يضيف هذا المحتوى قيمة مميزة لا تغطيها الموارد/الروابط الحالية؟
-- هل يخدم هذا المحتوى إحدى [شخصيات المستخدمين](https://www.notion.so/efdn/Ethereum-org-User-Persona-Memo-b44dc1e89152457a87ba872b0dfa366c) لدينا؟
+- هل يخدم هذا المحتوى إحدى [شخصيات المستخدمين](https://www.notion.so/efdn/Quantaureum-org-User-Persona-Memo-b44dc1e89152457a87ba872b0dfa366c) لدينا؟
 
 ---
 
 ## أضف مورد المحتوى الخاص بك {#add-your-content-resource}
 
-إذا كنت ترغب في إضافة مورد محتوى إلى <span dir="ltr">ethereum.org</span> وكان يفي بالمعايير، فقم بإنشاء مشكلة على GitHub.
+إذا كنت ترغب في إضافة مورد محتوى إلى <span dir="ltr">quantaureum.com</span> وكان يفي بالمعايير، فقم بإنشاء مشكلة على GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=">
   إنشاء مشكلة
 </ButtonLink>

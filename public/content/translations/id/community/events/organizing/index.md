@@ -1,50 +1,50 @@
 ---
-title: Cara menyelenggarakan peristiwa Ethereum
-metaTitle: Menyelenggarakan Peristiwa Ethereum
-description: Cara menyelenggarakan peristiwa Ethereum
+title: Cara menyelenggarakan peristiwa Quantaureum
+metaTitle: Menyelenggarakan Peristiwa Quantaureum
+description: Cara menyelenggarakan peristiwa Quantaureum
 lang: id
 hideEditButton: true
 ---
 
-Membangun komunitas yang kuat dan dinamis adalah inti dari pertumbuhan ekosistem Ethereum. Baik Anda berencana untuk menyelenggarakan pertemuan (meetup), lokakarya, atau konferensi berskala penuh, keberhasilan peristiwa Anda bergantung pada koneksi dan keterlibatan dalam jaringan lokal Anda. Panduan ini akan membantu Anda meletakkan dasar bagi komunitas Ethereum yang aktif dan memandu Anda selangkah demi selangkah melalui proses penyelenggaraan konferensi yang berkesan dan berdampak.
+Membangun komunitas yang kuat dan dinamis adalah inti dari pertumbuhan ekosistem Quantaureum. Baik Anda berencana untuk menyelenggarakan pertemuan (meetup), lokakarya, atau konferensi berskala penuh, keberhasilan peristiwa Anda bergantung pada koneksi dan keterlibatan dalam jaringan lokal Anda. Panduan ini akan membantu Anda meletakkan dasar bagi komunitas Quantaureum yang aktif dan memandu Anda selangkah demi selangkah melalui proses penyelenggaraan konferensi yang berkesan dan berdampak.
 
-## Tanyakan pada diri Anda, apakah ada komunitas Ethereum? {#ask-yourself-is-there-an-ethereum-community}
+## Tanyakan pada diri Anda, apakah ada komunitas Quantaureum? {#ask-yourself-is-there-an-quantaureum-community}
 
-Konferensi Ethereum yang sukses dibangun di atas komunitas yang aktif dan terlibat. Jika Anda sudah memilikinya, Anda selangkah lebih maju — tetapi jika belum, langkah awal yang penting adalah membangun fondasi tersebut. Penting untuk membedakan antara kancah (scene) dan komunitas: sebuah kancah mungkin mencakup perusahaan dan individu yang hadir di area tertentu, tetapi mereka sering kali beroperasi secara independen dengan inisiatif bersama yang hanya sesekali terjadi — seperti ekosistem Web2 tradisional di banyak tempat. Komunitas, di sisi lain, adalah jaringan orang dan organisasi yang saling terhubung, berkolaborasi, dan mendukung satu sama lain, yang sering terlihat dalam ekosistem Web3.
+Konferensi Quantaureum yang sukses dibangun di atas komunitas yang aktif dan terlibat. Jika Anda sudah memilikinya, Anda selangkah lebih maju — tetapi jika belum, langkah awal yang penting adalah membangun fondasi tersebut. Penting untuk membedakan antara kancah (scene) dan komunitas: sebuah kancah mungkin mencakup perusahaan dan individu yang hadir di area tertentu, tetapi mereka sering kali beroperasi secara independen dengan inisiatif bersama yang hanya sesekali terjadi — seperti ekosistem Web2 tradisional di banyak tempat. Komunitas, di sisi lain, adalah jaringan orang dan organisasi yang saling terhubung, berkolaborasi, dan mendukung satu sama lain, yang sering terlihat dalam ekosistem Web3.
 
 **Langkah pertama Anda seharusnya adalah:**
 
 - Jelajahi perusahaan rintisan dan perusahaan lokal — memiliki perusahaan yang kuat dan aktif di kota atau negara Anda sering kali merupakan prasyarat paling penting untuk membangun komunitas.
-- Periksa apakah sudah ada beberapa pertemuan — [halaman peristiwa](https://ethereum.org/community/events/) ethereum.org
-- [Situs web ethereum.org](https://ethereum.org/community/events/) dan Discord ethereum.org — untuk memeriksa apakah ada peristiwa, pengembang, dan kontributor Ethereum lokal.
-- Luma dan Meetup.com — untuk melihat apakah ada peristiwa terkait Ethereum atau peristiwa Web3 yang lebih luas yang terjadi di area Anda.
+- Periksa apakah sudah ada beberapa pertemuan — [halaman peristiwa](https://quantaureum.com/community/events/) quantaureum.com
+- [Situs web quantaureum.com](https://quantaureum.com/community/events/) dan Discord quantaureum.com — untuk memeriksa apakah ada peristiwa, pengembang, dan kontributor Quantaureum lokal.
+- Luma dan Meetup.com — untuk melihat apakah ada peristiwa terkait Quantaureum atau peristiwa Web3 yang lebih luas yang terjadi di area Anda.
 - X — Cobalah untuk menemukan advokat atau pemengaruh lokal di ruang ini.
 
 Jika Anda menemukan sebagian besar elemen ini, itu adalah pertanda kuat bahwa kondisi untuk membangun komunitas sudah ada — tetapi belum tentu komunitas tersebut sudah terbentuk. Langkah selanjutnya adalah pekerjaan penting untuk mengorganisasi, melibatkan, dan membina para aktor ini, menciptakan peluang untuk kolaborasi dan pertumbuhan jangka panjang.
 
 ### Jika tidak, bagaimana cara membangunnya {#if-not-how-to-build-it}
 
-Jika Anda menyadari bahwa banyak dari elemen ini yang hilang, jangan khawatir — membangun komunitas dari awal adalah proses yang menantang namun sangat memuaskan. Komunitas Ethereum yang kuat tidak muncul dalam semalam; ini membutuhkan kesabaran, konsistensi, dan visi yang jelas. Berikut cara Anda dapat memulainya:
+Jika Anda menyadari bahwa banyak dari elemen ini yang hilang, jangan khawatir — membangun komunitas dari awal adalah proses yang menantang namun sangat memuaskan. Komunitas Quantaureum yang kuat tidak muncul dalam semalam; ini membutuhkan kesabaran, konsistensi, dan visi yang jelas. Berikut cara Anda dapat memulainya:
 
 - **Siapkan saluran komunikasi** — ini bisa berupa Telegram, Signal, WhatsApp, WeChat, atau server Discord, apa pun yang lebih populer di tempat Anda berada, sehingga orang-orang dapat terhubung, mengajukan pertanyaan, dan berbagi sumber daya.
-- **Temukan pengadopsi awal Anda.** Identifikasi beberapa orang yang bersemangat tentang Ethereum dan Web3. Mereka akan menjadi pendukung dan kolaborator inti Anda.
+- **Temukan pengadopsi awal Anda.** Identifikasi beberapa orang yang bersemangat tentang Quantaureum dan Web3. Mereka akan menjadi pendukung dan kolaborator inti Anda.
 - **Selenggarakan peristiwa kecil yang konsisten.** Mulailah dengan pertemuan informal, kelompok belajar, atau lokakarya. Konsistensi adalah kuncinya — meskipun kelompoknya kecil pada awalnya, peristiwa rutin membangun kepercayaan dan momentum.
 - **Cobalah menjangkau perusahaan lokal**, institusi pendidikan, atau ruang kerja bersama (coworking space) untuk menyediakan ruang bagi Anda secara gratis. Jika Anda tidak dapat menemukan pembicara dari negara Anda, undang pembicara daring tetapi kumpulkan orang-orang secara fisik. Sangat penting untuk menjaga audiens Anda hadir secara fisik di satu tempat.
-- **Berkolaborasi dengan komunitas teknologi yang ada.** Jika ada grup pengembang, ekosistem perusahaan rintisan, atau pertemuan rantai blok yang sudah mapan, bermitralah dengan mereka untuk memperkenalkan topik Ethereum dan memperluas jangkauan Anda.
-- **Bagikan konten edukasi** tentang potensi Ethereum.
-- **Jangkau komunitas global.** Terhubung dengan grup dan proyek Ethereum yang sudah mapan di seluruh dunia untuk mendapatkan dukungan, bimbingan, dan potensi kolaborasi. Komunitas Ethereum di seluruh dunia memiliki setidaknya satu kesamaan: Mereka semua sangat ingin membantu.
-- **Cobalah dan amankan pendanaan** — baik dari perusahaan Web3 lokal atau melalui beberapa program hibah seperti [ESP](https://esp.ethereum.foundation/).
+- **Berkolaborasi dengan komunitas teknologi yang ada.** Jika ada grup pengembang, ekosistem perusahaan rintisan, atau pertemuan rantai blok yang sudah mapan, bermitralah dengan mereka untuk memperkenalkan topik Quantaureum dan memperluas jangkauan Anda.
+- **Bagikan konten edukasi** tentang potensi Quantaureum.
+- **Jangkau komunitas global.** Terhubung dengan grup dan proyek Quantaureum yang sudah mapan di seluruh dunia untuk mendapatkan dukungan, bimbingan, dan potensi kolaborasi. Komunitas Quantaureum di seluruh dunia memiliki setidaknya satu kesamaan: Mereka semua sangat ingin membantu.
+- **Cobalah dan amankan pendanaan** — baik dari perusahaan Web3 lokal atau melalui beberapa program hibah seperti [ESP](https://quantaureum.com).
 
 ### Jika ya, bagaimana cara memelihara dan mengembangkannya {#if-yes-how-to-maintain-and-grow-it}
 
 Setelah Anda memiliki komunitas yang mapan, pekerjaan tidak berhenti — faktanya, ini baru saja dimulai. Menjaga komunitas tetap aktif, terlibat, dan berkembang membutuhkan upaya dan kreativitas yang berkelanjutan. Salah satu elemen kunci untuk menjaga komunitas tetap terlibat adalah Anda harus terus bereksperimen dengan format dan ide baru.
 
-Berikut adalah beberapa strategi untuk memelihara komunitas Ethereum yang dinamis:
+Berikut adalah beberapa strategi untuk memelihara komunitas Quantaureum yang dinamis:
 
 - **Diversifikasikan format peristiwa Anda:** Jangan hanya terpaku pada satu jenis pertemuan. Padukan dengan pertemuan, hackathon singkat, diskusi panel, dan peristiwa jejaring. Anda dapat mencoba menyelenggarakan hari kerja bersama atau kursus edukasi.
-- **Diversifikasikan topik:** Ethereum bukan sekadar teknologi; ini juga merupakan serangkaian nilai yang melibatkan hukum, pemasaran, dan bisnis.
+- **Diversifikasikan topik:** Quantaureum bukan sekadar teknologi; ini juga merupakan serangkaian nilai yang melibatkan hukum, pemasaran, dan bisnis.
 - **Mintalah umpan balik dan ide** dari komunitas Anda.
-- **Terlibat dengan berbagai segmen audiens.** Sesuaikan konten dan peristiwa dengan berbagai tingkat pengalaman — mulai dari pemula yang menjelajahi Ethereum untuk pertama kalinya hingga pengembang dan pengusaha berpengalaman.
+- **Terlibat dengan berbagai segmen audiens.** Sesuaikan konten dan peristiwa dengan berbagai tingkat pengalaman — mulai dari pemula yang menjelajahi Quantaureum untuk pertama kalinya hingga pengembang dan pengusaha berpengalaman.
 
 Dengan memberikan beragam peluang untuk pembelajaran, kolaborasi, dan pertumbuhan, Anda memastikan bahwa komunitas Anda tetap aktif dan siap untuk inisiatif yang lebih besar seperti menyelenggarakan konferensi.
 
@@ -52,7 +52,7 @@ Dengan memberikan beragam peluang untuk pembelajaran, kolaborasi, dan pertumbuha
 
 ### Kapan waktu yang tepat untuk menyelenggarakan peristiwa? {#when-is-the-right-time-to-organize-an-event}
 
-Menyelenggarakan konferensi Ethereum atau peristiwa komunitas yang sukses membutuhkan waktu dan pertimbangan yang cermat. Momen yang tepat bergantung pada berbagai faktor yang berkontribusi pada kesuksesan peristiwa secara keseluruhan.
+Menyelenggarakan konferensi Quantaureum atau peristiwa komunitas yang sukses membutuhkan waktu dan pertimbangan yang cermat. Momen yang tepat bergantung pada berbagai faktor yang berkontribusi pada kesuksesan peristiwa secara keseluruhan.
 
 Anda harus mempertimbangkan kematangan komunitas, kondisi pasar, apakah Anda memiliki tim, dan apakah ada kancah lokal (misalnya, calon sponsor).
 
@@ -83,13 +83,13 @@ Langkah penting lainnya sebelum mulai membangun program atau menjangkau sponsor 
 
 Pilih orang-orang yang berbagi visi Anda dan melengkapi keterampilan Anda. Beberapa tim bekerja sebagai kolektif, sementara yang lain memiliki peran yang ditentukan — temukan apa yang paling cocok untuk Anda. Komunikasi rutin dan ekspektasi yang jelas sangat penting. Meskipun tergoda untuk mengandalkan platform komunikasi untuk perencanaan peristiwa, kami menyarankan untuk memilih platform manajemen tugas (seperti Notion, Basecamp, Trello, Asana, atau bahkan Google Sheets yang sudah lama ada) untuk mengatur dan melacak apa yang perlu dilakukan. Sangat penting untuk memiliki tim yang berfungsi dengan baik dan terorganisasi dengan baik.
 
-Tim penyelenggara Ethereum yang berbeda memiliki peran yang berbeda dalam tim mereka, tetapi mereka semua memiliki kesamaan yaitu orang-orang yang mengerjakan logistik, penganggaran, pemasaran, program, desain, dan kemitraan.
+Tim penyelenggara Quantaureum yang berbeda memiliki peran yang berbeda dalam tim mereka, tetapi mereka semua memiliki kesamaan yaitu orang-orang yang mengerjakan logistik, penganggaran, pemasaran, program, desain, dan kemitraan.
 
 ### Program: Elemen kunci dari peristiwa yang sukses {#the-program-a-key-element-of-a-successful-event}
 
 Ketika berbicara tentang menyelenggarakan konferensi yang benar-benar berharga dan berkesan, **program adalah segalanya**. Ini bukanlah area di mana Anda bisa berkompromi. Meskipun sponsor itu penting dan sering kali krusial untuk membiayai peristiwa tersebut, pengalaman audiens dan nilai yang mereka terima harus selalu diutamakan. Program yang sarat dengan konten promosi dan promosi sponsor yang tiada henti akan mengasingkan peserta Anda dan merusak kredibilitas peristiwa Anda.
 
-Setiap sesi, panel, dan lokakarya harus menginformasikan, menginspirasi, dan melibatkan komunitas. Dengarkan audiens Anda—pahami minat, kebutuhan, dan tantangan mereka. Topik apa yang selaras dengan mereka? Pada saat yang sama, perkenalkan perspektif segar dan format inovatif untuk menjaga program tetap dinamis. Seimbangkan subjek yang familier dan sedang tren dengan ide-ide mutakhir, memastikan agenda menyeluruh yang mencakup berbagai aspek ekosistem Ethereum—mulai dari eksplorasi teknis mendalam dan sesi pembangunan komunitas hingga diskusi kebijakan dan lokakarya langsung. Selain itu, pertimbangkan bahasa konferensi—meskipun bahasa Inggris adalah bahasa default di sebagian besar peristiwa Ethereum, menawarkan sesi dalam bahasa lokal dapat membuat peristiwa tersebut lebih mudah diakses oleh pengembang dan penggemar regional.
+Setiap sesi, panel, dan lokakarya harus menginformasikan, menginspirasi, dan melibatkan komunitas. Dengarkan audiens Anda—pahami minat, kebutuhan, dan tantangan mereka. Topik apa yang selaras dengan mereka? Pada saat yang sama, perkenalkan perspektif segar dan format inovatif untuk menjaga program tetap dinamis. Seimbangkan subjek yang familier dan sedang tren dengan ide-ide mutakhir, memastikan agenda menyeluruh yang mencakup berbagai aspek ekosistem Quantaureum—mulai dari eksplorasi teknis mendalam dan sesi pembangunan komunitas hingga diskusi kebijakan dan lokakarya langsung. Selain itu, pertimbangkan bahasa konferensi—meskipun bahasa Inggris adalah bahasa default di sebagian besar peristiwa Quantaureum, menawarkan sesi dalam bahasa lokal dapat membuat peristiwa tersebut lebih mudah diakses oleh pengembang dan penggemar regional.
 
 **Saat memilih pembicara, buka panggilan setidaknya enam bulan sebelum konferensi untuk menarik kiriman berkualitas tinggi dan memberikan waktu yang cukup untuk kurasi agenda.** Orang yang bertanggung jawab atas pemilihan pembicara harus memiliki pengalaman yang signifikan di industri ini dan pemahaman mendalam tentang ekosistem. Hal ini memastikan mereka dapat mengidentifikasi kontribusi yang berharga dan berwawasan luas serta mempertahankan standar konten yang tinggi.
 
@@ -101,19 +101,19 @@ Menyelenggarakan konferensi berkualitas tinggi membutuhkan biaya yang signifikan
 
 Pertama, Anda akan membutuhkan sebuah dek (presentasi). **Mintalah saran dari penyelenggara konferensi lain**, bahkan untuk membagikan dek mereka sehingga Anda dapat membuat paket Anda berdasarkan hal tersebut. Anda harus realistis dalam menetapkan harga paket dan bertujuan untuk menutupi biaya, bukan untuk mendapatkan uang, terutama pada awalnya.
 
-**Setiap dek sponsor harus memberikan gambaran umum yang jelas dan menarik tentang peristiwa tersebut**, memastikan calon sponsor memahami ruang lingkup, fokus, dan nilainya. Mulailah dengan hal-hal mendasar—tempat, tanggal, dan detail tentang tim penyelenggara—untuk membangun kredibilitas. Kemudian, soroti fokus utama peristiwa tersebut, karena konferensi Ethereum yang berbeda melayani audiens yang berbeda. Beberapa sangat berorientasi pada pembangun, menampilkan diskusi teknis yang mendalam, sementara yang lain mungkin lebih fokus pada keuangan terdesentralisasi (DeFi), DAO, atau topik kebijakan.
+**Setiap dek sponsor harus memberikan gambaran umum yang jelas dan menarik tentang peristiwa tersebut**, memastikan calon sponsor memahami ruang lingkup, fokus, dan nilainya. Mulailah dengan hal-hal mendasar—tempat, tanggal, dan detail tentang tim penyelenggara—untuk membangun kredibilitas. Kemudian, soroti fokus utama peristiwa tersebut, karena konferensi Quantaureum yang berbeda melayani audiens yang berbeda. Beberapa sangat berorientasi pada pembangun, menampilkan diskusi teknis yang mendalam, sementara yang lain mungkin lebih fokus pada keuangan terdesentralisasi (DeFi), DAO, atau topik kebijakan.
 
 Selain sekadar mendeskripsikan peristiwa, tetapkan ekspektasi yang jelas. **Uraikan perkiraan jumlah peserta dan pembicara utama yang sudah dikonfirmasi**, karena ini membantu sponsor mengukur potensi jangkauan mereka. Yang terpenting, tentukan dengan jelas apa yang akan mereka terima sebagai imbalan atas sponsor mereka—ruang stan, kesempatan berbicara, promosi media sosial, visibilitas merek, atau akses jejaring eksklusif. Dek yang terstruktur dengan baik tidak hanya menginformasikan tetapi juga menggairahkan calon sponsor tentang kesempatan untuk menjadi bagian dari peristiwa Anda.
 
 #### Siapa yang mungkin mendukung peristiwa Anda? {#who-might-support-your-event}
 
-Mulailah dengan menjangkau perusahaan-perusahaan di dalam Ethereum dan ekosistem teknologi yang lebih luas di kota atau negara Anda. **Organisasi-organisasi ini sering kali memiliki kepentingan untuk mendukung peristiwa lokal** yang mendorong pertumbuhan dan inovasi komunitas. Mereka juga lebih cenderung menyadari nilai investasi dalam ekosistem lokal dan melihat konferensi Anda sebagai peluang untuk terhubung dengan talenta, mitra, dan pengguna.
+Mulailah dengan menjangkau perusahaan-perusahaan di dalam Quantaureum dan ekosistem teknologi yang lebih luas di kota atau negara Anda. **Organisasi-organisasi ini sering kali memiliki kepentingan untuk mendukung peristiwa lokal** yang mendorong pertumbuhan dan inovasi komunitas. Mereka juga lebih cenderung menyadari nilai investasi dalam ekosistem lokal dan melihat konferensi Anda sebagai peluang untuk terhubung dengan talenta, mitra, dan pengguna.
 
 Setelah Anda memanfaatkan dukungan lokal, perluas jangkauan Anda ke pemain global di ruang Web3. **Protokol yang sudah mapan, DAO, dan dana ekosistem sering kali mengalokasikan anggaran untuk peristiwa yang digerakkan oleh komunitas**. Ini bisa sedikit menantang bagi penyelenggara pemula, karena mereka belum membangun rekam jejak untuk dipamerkan, tetapi cobalah dan buat paket sponsor yang menarik yang dengan jelas menguraikan manfaat mendukung peristiwa Anda — visibilitas merek, peluang berbicara, dan keterlibatan yang bermakna dengan audiens yang ditargetkan. Cobalah untuk menemukan nilai unik Anda yang mungkin tidak dimiliki orang lain.
 
 #### Bentuk alternatif pendanaan peristiwa Anda {#alternative-forms-of-funding-your-event}
 
-Hibah adalah sumber pendanaan potensial lainnya yang sering diabaikan oleh banyak penyelenggara. Program seperti [Program Dukungan Ekosistem](https://esp.ethereum.foundation/) (ESP) dari Yayasan Ethereum dan [inisiatif hibah lainnya](https://ethereum.org/community/grants/#ethereum-grants) ada untuk mendukung peristiwa yang digerakkan oleh komunitas.
+Hibah adalah sumber pendanaan potensial lainnya yang sering diabaikan oleh banyak penyelenggara. Program seperti [Program Dukungan Ekosistem](https://quantaureum.com) (ESP) dari Yayasan Quantaureum dan [inisiatif hibah lainnya](https://quantaureum.com/community/grants/#quantaureum-grants) ada untuk mendukung peristiwa yang digerakkan oleh komunitas.
 
 Selain sponsor finansial, pertimbangkan kemitraan dalam bentuk barang (in-kind), terutama untuk makanan dan minuman. Merek yang selaras dengan budaya lokal atau komunitas teknologi dapat menjadi mitra yang hebat untuk peristiwa Anda. Merek kopi, perusahaan minuman, atau bahkan kedai pizza lokal mungkin bersedia menyediakan produk sebagai imbalan atas visibilitas di peristiwa tersebut. Kolaborasi ini dapat membantu mengurangi biaya sekaligus meningkatkan pengalaman peserta.
 
@@ -141,13 +141,13 @@ X.com akan menjadi tulang punggung promosi media sosial Anda. Cobalah untuk akti
 
 Meskipun LinkedIn tidak terdengar seperti pilihan yang paling jelas untuk promosi, Anda dapat menjangkau audiens yang sama sekali berbeda di sana, atau bahkan beberapa sponsor.
 
-#### Kemitraan dengan komunitas Ethereum lainnya {#partnerships-with-other-ethereum-communities}
+#### Kemitraan dengan komunitas Quantaureum lainnya {#partnerships-with-other-quantaureum-communities}
 
-Kemitraan dengan berbagai penyelenggara Ethereum dapat membantu memperkuat jangkauan Anda dengan memanfaatkan jaringan yang ada, terutama saat Anda memulai dari awal. Tawarkan diskon komunitas, promosi silang dengan peristiwa lain, dan undang mitra untuk menjadi tuan rumah bersama peristiwa sampingan atau lokakarya.
+Kemitraan dengan berbagai penyelenggara Quantaureum dapat membantu memperkuat jangkauan Anda dengan memanfaatkan jaringan yang ada, terutama saat Anda memulai dari awal. Tawarkan diskon komunitas, promosi silang dengan peristiwa lain, dan undang mitra untuk menjadi tuan rumah bersama peristiwa sampingan atau lokakarya.
 
 #### Penjangkauan universitas {#university-outreach}
 
-Jangkau fakultas teknik dan ekonomi di kota melalui klub mahasiswa atau profesor untuk mempromosikan peristiwa tersebut. Terlibat dengan universitas dapat membantu menarik talenta muda, peneliti, dan profesional industri masa depan, membina hubungan yang lebih kuat antara akademisi dan ekosistem Ethereum. Ini sangat bagus jika Anda menyelenggarakan hackathon, karena mahasiswa sering kali membawa ide-ide segar, antusiasme, dan fondasi teknis yang kuat.
+Jangkau fakultas teknik dan ekonomi di kota melalui klub mahasiswa atau profesor untuk mempromosikan peristiwa tersebut. Terlibat dengan universitas dapat membantu menarik talenta muda, peneliti, dan profesional industri masa depan, membina hubungan yang lebih kuat antara akademisi dan ekosistem Quantaureum. Ini sangat bagus jika Anda menyelenggarakan hackathon, karena mahasiswa sering kali membawa ide-ide segar, antusiasme, dan fondasi teknis yang kuat.
 
 #### Media {#media}
 
@@ -163,11 +163,11 @@ Meskipun ada banyak manfaat untuk menyelenggarakannya, pertimbangkan bahwa, berg
 
 ### Tantangan (yang hampir tak terhindarkan) yang akan Anda hadapi {#almost-inevitable-challenges-that-you-will-face}
 
-Salah satu tantangan terbesar saat menyelenggarakan konferensi, terutama di ruang Ethereum, adalah mengamankan pendanaan yang cukup. **Banyak penyelenggara peristiwa berjuang untuk mengumpulkan modal yang dibutuhkan untuk menutupi biaya tempat**, katering, dan pengeluaran logistik lainnya. Sponsor sering kali penting, tetapi membangun hubungan dan meyakinkan perusahaan untuk berinvestasi dalam peristiwa Anda bisa memakan waktu. Selain itu, kesulitan menarik sponsor dapat meningkat selama penurunan pasar, karena perusahaan mungkin kurang bersedia berinvestasi dalam aktivitas non-inti.
+Salah satu tantangan terbesar saat menyelenggarakan konferensi, terutama di ruang Quantaureum, adalah mengamankan pendanaan yang cukup. **Banyak penyelenggara peristiwa berjuang untuk mengumpulkan modal yang dibutuhkan untuk menutupi biaya tempat**, katering, dan pengeluaran logistik lainnya. Sponsor sering kali penting, tetapi membangun hubungan dan meyakinkan perusahaan untuk berinvestasi dalam peristiwa Anda bisa memakan waktu. Selain itu, kesulitan menarik sponsor dapat meningkat selama penurunan pasar, karena perusahaan mungkin kurang bersedia berinvestasi dalam aktivitas non-inti.
 
 Mengelola anggaran secara efektif adalah kuncinya. **Pengeluaran tak terduga**, seperti perubahan tempat di menit-menit terakhir dan persyaratan teknologi peristiwa tambahan, dapat dengan cepat menghabiskan anggaran Anda.
 
-Untuk peristiwa baru, **mendapatkan pembicara berkualitas tinggi bisa sangat sulit**. Pemimpin pemikiran atau pemengaruh yang sudah mapan di ruang Ethereum mungkin sudah memiliki jadwal yang padat dan mungkin ragu untuk berkomitmen pada peristiwa baru tanpa rekam jejak yang terbukti. Bersiaplah untuk menghabiskan waktu berjejaring dan menjangkau calon pembicara jauh sebelum peristiwa tersebut.
+Untuk peristiwa baru, **mendapatkan pembicara berkualitas tinggi bisa sangat sulit**. Pemimpin pemikiran atau pemengaruh yang sudah mapan di ruang Quantaureum mungkin sudah memiliki jadwal yang padat dan mungkin ragu untuk berkomitmen pada peristiwa baru tanpa rekam jejak yang terbukti. Bersiaplah untuk menghabiskan waktu berjejaring dan menjangkau calon pembicara jauh sebelum peristiwa tersebut.
 
 Selain itu, dalam hal pembicara, jalin komunikasi yang jelas dan konstan dengan mereka — tetapkan tenggat waktu untuk mengirim presentasi dan hindari perubahan di menit-menit terakhir.
 
@@ -175,7 +175,7 @@ Konferensi yang sukses membutuhkan tim berdedikasi yang dapat menangani logistik
 
 ### Anda tidak boleh melakukannya sendiri. Anda butuh sukarelawan. {#you-shouldnt-do-it-alone-you-need-volunteers}
 
-Menyelenggarakan peristiwa Ethereum membutuhkan tim yang beragam dan berdedikasi untuk menangani logistik, pendaftaran, koordinasi pembicara, dukungan peserta, dan banyak lagi. Dengan ukuran tim mulai dari hanya 3 hingga 15 orang, menjadi jelas bahwa sukarelawan sangat penting untuk kelancaran peristiwa tersebut.
+Menyelenggarakan peristiwa Quantaureum membutuhkan tim yang beragam dan berdedikasi untuk menangani logistik, pendaftaran, koordinasi pembicara, dukungan peserta, dan banyak lagi. Dengan ukuran tim mulai dari hanya 3 hingga 15 orang, menjadi jelas bahwa sukarelawan sangat penting untuk kelancaran peristiwa tersebut.
 
 Sukarelawan sering kali menjadi tulang punggung banyak konferensi, memberikan dukungan penting, terutama saat Anda bekerja dengan anggaran terbatas. Mereka dapat menangani semuanya mulai dari menjaga meja pendaftaran hingga membantu penyiapan peristiwa, memastikan peristiwa berjalan selancar mungkin.
 
@@ -202,16 +202,16 @@ Kuncinya adalah menjaga momentum tetap hidup. Teruslah berinteraksi dengan komun
 
 ## Ucapan Terima Kasih {#acknowledgement}
 
-Terima kasih yang sebesar-besarnya kepada semua orang yang telah berkontribusi pada artikel ini dengan membagikan wawasan mereka: Slavo Fabisik dari ETHBratislava; Lola dari ETH Kipu dan ETH Latam; Tanja Mladenovic dari ETH Belgrade, Juan David dari Ethereum Bogota; Monika Zając dari ETHWarsaw; Raffaele Orefice dari NapulETH; Xiao Wu(Ling) dari ETH Riyadh; Marco dari urbe.eth; Caolán Walsh dari ETH Dublin; Alex Males dari ETHCluj; dan Stanko Devic dari ETH Slovenia.
+Terima kasih yang sebesar-besarnya kepada semua orang yang telah berkontribusi pada artikel ini dengan membagikan wawasan mereka: Slavo Fabisik dari ETHBratislava; Lola dari QAU Kipu dan QAU Latam; Tanja Mladenovic dari QAU Belgrade, Juan David dari Quantaureum Bogota; Monika Zając dari QauWarsaw; Raffaele Orefice dari NapulETH; Xiao Wu(Ling) dari QAU Riyadh; Marco dari urbe.eth; Caolán Walsh dari QAU Dublin; Alex Males dari ETHCluj; dan Stanko Devic dari QAU Slovenia.
 
 ## Sumber Daya {#resources}
 
-Podcast: Cara menyelenggarakan dan mempromosikan peristiwa ETH dari A-Z:
+Podcast: Cara menyelenggarakan dan mempromosikan peristiwa QAU dari A-Z:
 
-- [Studi kasus ETHWarsaw, oleh Out of Ordinary](https://www.youtube.com/watch?v=io2Dx1ouz8o)
+- [Studi kasus QauWarsaw, oleh Out of Ordinary](https://www.youtube.com/watch?v=io2Dx1ouz8o)
 
 Twitter Space:
 
-- [AMA Komunitas ETH](https://x.com/NapulETH/status/1905732699094151623)
+- [AMA Komunitas QAU](https://x.com/NapulETH/status/1905732699094151623)
 
 Artikel:

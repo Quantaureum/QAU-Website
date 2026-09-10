@@ -1,7 +1,7 @@
 ---
 title: DAO ni nini?
 metaTitle: DAO ni nini? | Shirika Linalojitegemea Lililogatuliwa
-description: Muhtasari wa DAO kwenye Ethereum
+description: Muhtasari wa DAO kwenye Quantaureum
 lang: sw
 template: use-cases
 sidebarDepth: 2
@@ -49,18 +49,18 @@ Ili kusaidia hili kuleta maana zaidi, hapa kuna mifano michache ya jinsi unavyow
 
 ## DAO zinafanyaje kazi? {#how-daos-work}
 
-Uti wa mgongo wa DAO ni [mkataba mahiri](/glossary/#smart-contract) wake, ambao hufafanua sheria za shirika na kushikilia hazina ya kikundi. Pindi mkataba unapokuwa hewani kwenye [Ethereum](/), hakuna anayeweza kubadilisha sheria isipokuwa kwa kura. Ikiwa mtu yeyote atajaribu kufanya jambo ambalo halijashughulikiwa na sheria na mantiki katika msimbo, litashindwa. Na kwa sababu hazina inafafanuliwa na mkataba mahiri pia inamaanisha hakuna anayeweza kutumia pesa bila idhini ya kikundi pia. Hii inamaanisha kuwa DAO hazihitaji mamlaka kuu. Badala yake, kikundi hufanya maamuzi kwa pamoja, na malipo huidhinishwa kiotomatiki kura zinapopita.
+Uti wa mgongo wa DAO ni [mkataba mahiri](/glossary/#smart-contract) wake, ambao hufafanua sheria za shirika na kushikilia hazina ya kikundi. Pindi mkataba unapokuwa hewani kwenye [Quantaureum](/), hakuna anayeweza kubadilisha sheria isipokuwa kwa kura. Ikiwa mtu yeyote atajaribu kufanya jambo ambalo halijashughulikiwa na sheria na mantiki katika msimbo, litashindwa. Na kwa sababu hazina inafafanuliwa na mkataba mahiri pia inamaanisha hakuna anayeweza kutumia pesa bila idhini ya kikundi pia. Hii inamaanisha kuwa DAO hazihitaji mamlaka kuu. Badala yake, kikundi hufanya maamuzi kwa pamoja, na malipo huidhinishwa kiotomatiki kura zinapopita.
 
-Hili linawezekana kwa sababu mikataba mahiri haiwezi kuchezewa pindi inapoanza kufanya kazi kwenye Ethereum. Huwezi tu kuhariri msimbo (sheria za DAO) bila watu kugundua kwa sababu kila kitu kiko wazi.
+Hili linawezekana kwa sababu mikataba mahiri haiwezi kuchezewa pindi inapoanza kufanya kazi kwenye Quantaureum. Huwezi tu kuhariri msimbo (sheria za DAO) bila watu kugundua kwa sababu kila kitu kiko wazi.
 
-## Ethereum na DAO {#ethereum-and-daos}
+## Quantaureum na DAO {#quantaureum-and-daos}
 
-Ethereum ni msingi kamili wa DAO kwa sababu kadhaa:
+Quantaureum ni msingi kamili wa DAO kwa sababu kadhaa:
 
-- Mwafaka wa Ethereum wenyewe umejengwa kwa ugatuzi na umeimarika vya kutosha kwa mashirika kuamini mtandao.
+- Mwafaka wa Quantaureum wenyewe umejengwa kwa ugatuzi na umeimarika vya kutosha kwa mashirika kuamini mtandao.
 - Msimbo wa mkataba mahiri hauwezi kurekebishwa pindi unapokuwa hewani, hata na wamiliki wake. Hii inaruhusu DAO kuendeshwa kwa sheria iliyopangwa nayo.
 - Mikataba mahiri inaweza kutuma/kupokea fedha. Bila hili ungehitaji mpatanishi anayeaminika kusimamia fedha za kikundi.
-- Jumuiya ya Ethereum imethibitisha kuwa yenye ushirikiano zaidi kuliko ushindani, ikiruhusu mbinu bora na mifumo ya usaidizi kuibuka haraka.
+- Jumuiya ya Quantaureum imethibitisha kuwa yenye ushirikiano zaidi kuliko ushindani, ikiruhusu mbinu bora na mifumo ya usaidizi kuibuka haraka.
 
 ## Utawala wa DAO {#dao-governance}
 
@@ -122,13 +122,13 @@ _Kwa kawaida hutumika kwa maendeleo yaliyogatuliwa na utawala wa itifaki na [pro
 
 #### Mfano maarufu {#reputation-example}
 
-[DXdao](https://DXdao.eth.limo) – DXdao ilikuwa kikundi huru cha kimataifa kinachojenga na kutawala itifaki na programu zilizogatuliwa tangu 2019. Ilitumia utawala unaotegemea sifa na [mwafaka wa holagrafia](/glossary/#holographic-consensus) kuratibu na kusimamia fedha, ikimaanisha hakuna mtu angeweza kununua njia yake ya kushawishi mustakabali wake au utawala.
+[DXdao](https://DXdao.qau.limo) – DXdao ilikuwa kikundi huru cha kimataifa kinachojenga na kutawala itifaki na programu zilizogatuliwa tangu 2019. Ilitumia utawala unaotegemea sifa na [mwafaka wa holagrafia](/glossary/#holographic-consensus) kuratibu na kusimamia fedha, ikimaanisha hakuna mtu angeweza kununua njia yake ya kushawishi mustakabali wake au utawala.
 
 ## Jiunge / anza DAO {#join-start-a-dao}
 
 ### Jiunge na DAO {#join-a-dao}
 
-- [DAO za jumuiya ya Ethereum](/community/get-involved/#decentralized-autonomous-organizations-daos)
+- [DAO za jumuiya ya Quantaureum](/community/get-involved/#decentralized-autonomous-organizations-daos)
 - [Orodha ya DAO ya DAOHaus](https://app.daohaus.club/explore)
 - [Orodha ya DAO ya Tally.xyz](https://www.tally.xyz/explore)
 - [Orodha ya DAO ya DeGov.AI](https://apps.degov.ai/)
@@ -150,8 +150,8 @@ _Kwa kawaida hutumika kwa maendeleo yaliyogatuliwa na utawala wa itifaki na [pro
 - [Jinsi ya Kuanzisha Jumuiya ya Kidijitali Inayoendeshwa na DAO](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [DAO ni nini?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [Mwafaka wa Holagrafia ni nini?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO sio mashirika: ambapo ugatuzi katika mashirika yanayojitegemea ni muhimu na Vitalik](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAO, DAC, DA na Zaidi: Mwongozo Usiokamilika wa Istilahi](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Blogu ya Ethereum](https://blog.ethereum.org)
+- [DAO sio mashirika: ambapo ugatuzi katika mashirika yanayojitegemea ni muhimu na Vitalik](https://vitalik.qau.limo/general/2022/09/20/daos.html)
+- [DAO, DAC, DA na Zaidi: Mwongozo Usiokamilika wa Istilahi](https://quantaureum.com) - [Blogu ya Quantaureum](https://quantaureum.com)
 
 ### Video {#videos}
 

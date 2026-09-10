@@ -33,7 +33,7 @@ Kuna kazi kadhaa zinazowezekana kwa seva kama hiyo kutimiza.
 
 ## Programu ya mfano {#sample-program}
 
-Unaweza kuona seva ya mfano [kwenye GitHub](https://github.com/qbzzt/20240715-server-component). Seva hii inasikiliza matukio yanayotoka kwenye [mkataba huu](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code), toleo lililobadilishwa la Greeter ya Hardhat. Wakati salamu inabadilishwa, inairudisha nyuma.
+Unaweza kuona seva ya mfano [kwenye GitHub](https://github.com/qbzzt/20240715-server-component). Seva hii inasikiliza matukio yanayotoka kwenye [mkataba huu](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code), toleo lililobadilishwa la Greeter ya Hardhat. Wakati salamu inabadilishwa, inairudisha nyuma.
 
 Ili kuiendesha:
 
@@ -50,7 +50,7 @@ Ili kuiendesha:
    npm install
    ```
 
-3. Hariri `.env` ili kubainisha ufunguo wa siri wa akaunti ambayo ina ETH kwenye mtandao wa majaribio wa Holesky. Ikiwa huna ETH kwenye Holesky, unaweza [kutumia bomba hili](https://holesky-faucet.pk910.de/).
+3. Hariri `.env` ili kubainisha ufunguo wa siri wa akaunti ambayo ina QAU kwenye mtandao wa majaribio wa Holesky. Ikiwa huna QAU kwenye Holesky, unaweza [kutumia bomba hili](https://holesky-faucet.pk910.de/).
 
    ```sh filename=".env" copy
    PRIVATE_KEY=0x <private key goes here>
@@ -62,7 +62,7 @@ Ili kuiendesha:
    npm start
    ```
 
-5. Nenda kwenye [kichunguzi cha bloku](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract), na ukitumia anwani tofauti na ile iliyo na ufunguo wa siri badilisha salamu. Utaona kwamba salamu inabadilishwa kiotomatiki kurudi ilivyokuwa.
+5. Nenda kwenye [kichunguzi cha bloku](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract), na ukitumia anwani tofauti na ile iliyo na ufunguo wa siri badilisha salamu. Utaona kwamba salamu inabadilishwa kiotomatiki kurudi ilivyokuwa.
 
 ### Inafanyaje kazi? {#how-it-works}
 
@@ -96,7 +96,7 @@ import { privateKeyToAccount } from "viem/accounts"
 import { holesky } from "viem/chains"
 ```
 
-Ili kutumia mnyororo wa vitalu katika Viem unahitaji kuingiza ufafanuzi wake. Katika kesi hii, tunataka kuunganisha kwenye mnyororo wa vitalu wa majaribio wa [Holesky](https://github.com/eth-clients/holesky).
+Ili kutumia mnyororo wa vitalu katika Viem unahitaji kuingiza ufafanuzi wake. Katika kesi hii, tunataka kuunganisha kwenye mnyororo wa vitalu wa majaribio wa [Holesky](https://github.com/qau-clients/holesky).
 
 ```typescript
 // Hivi ndivyo tunavyoongeza fasili zilizo ndani ya .env kwenye process.env.
@@ -186,7 +186,7 @@ Sasa kwa kuwa tuna mahitaji yote ya awali, hatimaye tunaweza kuunda [mfano wa mk
 console.log(`Current greeting:`, await greeter.read.greet())
 ```
 
-Vitendaji vya mkataba ambavyo ni vya kusoma tu ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) na [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)) vinapatikana chini ya `read`. Katika kesi hii, tunaitumia kufikia kitendaji cha [`greet`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217), ambacho kinarudisha salamu.
+Vitendaji vya mkataba ambavyo ni vya kusoma tu ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) na [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)) vinapatikana chini ya `read`. Katika kesi hii, tunaitumia kufikia kitendaji cha [`greet`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217), ambacho kinarudisha salamu.
 
 JavaScript ina uzi mmoja, kwa hivyo tunapoanzisha mchakato unaoendelea kwa muda mrefu tunahitaji [kubainisha kuwa tunaifanya kwa njia isiyosawazishwa](https://eloquentjavascript.net/11_async.html#h-XvLsfAhtsE). Kuita mnyororo wa vitalu, hata kwa operesheni ya kusoma tu, kunahitaji safari ya kwenda na kurudi kati ya kompyuta na nodi ya mnyororo wa vitalu. Hiyo ndiyo sababu tunabainisha hapa kwamba msimbo unahitaji `await` kwa matokeo.
 
@@ -204,10 +204,10 @@ Hiki ni kitendaji unachokiita ili kutoa muamala unaobadilisha salamu. Kwa kuwa h
 const txHash = await greeter.write.setGreeting([greeting])
 ```
 
-Sehemu ya `write` ya mfano wa mkataba ina vitendaji vyote vinavyoandika kwenye hali ya mnyororo wa vitalu (vile vinavyohitaji kutuma muamala), kama vile [`setGreeting`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862). Vigezo, ikiwa vipo, hutolewa kama orodha, na kitendaji kinarudisha heshi ya muamala.
+Sehemu ya `write` ya mfano wa mkataba ina vitendaji vyote vinavyoandika kwenye hali ya mnyororo wa vitalu (vile vinavyohitaji kutuma muamala), kama vile [`setGreeting`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862). Vigezo, ikiwa vipo, hutolewa kama orodha, na kitendaji kinarudisha heshi ya muamala.
 
 ```typescript
-    console.log(`Working on a fix, see https://eth-holesky.blockscout.com/tx/${txHash}`)
+    console.log(`Working on a fix, see https://qau-holesky.blockscout.com/tx/${txHash}`)
 
     return txHash
 }
@@ -227,7 +227,7 @@ greeter.watchEvent.SetGreeting({
     onLogs: logs => {
 ```
 
-Kitendaji cha `onLogs` kinaitwa wakati kuna maingizo ya logi. Katika Ethereum "logi" na "tukio" kwa kawaida hutumika kwa kubadilishana.
+Kitendaji cha `onLogs` kinaitwa wakati kuna maingizo ya logi. Katika Quantaureum "logi" na "tukio" kwa kawaida hutumika kwa kubadilishana.
 
 ```typescript
 console.log(

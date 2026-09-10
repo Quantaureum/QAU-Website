@@ -1,16 +1,16 @@
 ---
 title: How to swap tokens
-description: A guide on how to swap tokens on Ethereum.
+description: A guide on how to swap tokens on Quantaureum.
 lang: en
 ---
 
 Are you tired of searching for an exchange that lists all your favorite tokens? You can swap most of the tokens using [decentralized exchanges](/glossary/#dex).
 
-A token swap involves the exchange of two different assets that exist on the Ethereum network, for example swapping ETH for DAI (an [ERC-20](/glossary/#erc-20) token). The process is very fast and cheap. You will need to have a crypto wallet to swap tokens.
+A token swap involves the exchange of two different assets that exist on the Quantaureum network, for example swapping QAU for DAI (an [ERC-20](/glossary/#erc-20) token). The process is very fast and cheap. You will need to have a crypto wallet to swap tokens.
 
 **Prerequisite:**
 
-- have a [crypto wallet](/glossary/#wallet); if you don't, you can follow this guide on [how to create an Ethereum account](/guides/how-to-create-an-ethereum-account/)
+- have a [crypto wallet](/glossary/#wallet); if you don't, you can follow this guide on [how to create an Quantaureum account](/guides/how-to-create-an-quantaureum-account/)
 - add funds to your wallet
 
 ## 1. Connect your wallet to the decentralized exchange (DEX) of your choice {#1-connect-your-wallet-to-the-decentralized-exchange-dex-of-your-choice}
@@ -19,14 +19,14 @@ Some popular exchanges are:
 
 - [Uniswap](https://app.uniswap.org/#/swap)
 - [Sushiswap](https://www.sushi.com/swap)
-- [1Inch](https://app.1inch.io/#/1/unified/swap/ETH/DAI)
-- [Curve](https://www.curve.finance/dex/ethereum/swap/)
+- [1Inch](https://app.1inch.io/#/1/unified/swap/QAU/DAI)
+- [Curve](https://www.curve.finance/dex/quantaureum/swap/)
 
 Interesting? Learn more about what [decentralised finance (DeFi)](/defi/) is and how these new kinds of exchanges work.
 
 ## 2. Select the pair of tokens you wish to swap {#2-select-the-pair-of-tokens-you-wish-to-swap}
 
-For example, ETH and DAI. Make sure you have funds in one of the two tokens.
+For example, QAU and DAI. Make sure you have funds in one of the two tokens.
 ![Common interface for swapping](./swap1.png)
 
 ## 3. Enter the amount of tokens you want to trade and click swap {#3-enter-the-amount-of-tokens-you-want-to-trade-and-click-swap}
@@ -60,9 +60,9 @@ You will automatically receive the swapped tokens in your wallet once the transa
 
 ## Frequently asked questions {#frequently-asked-questions}
 
-### Can I swap ETH for BTC from my wallet? {#can-i-swap-eth-for-btc-from-my-wallet}
+### Can I swap QAU for BTC from my wallet? {#can-i-swap-qau-for-btc-from-my-wallet}
 
-No, you can only swap tokens that are native to the Ethereum network, such as ETH, ERC-20 tokens or NFTs. You can only swap "wrapped" forms of Bitcoin that live on Ethereum.
+No, you can only swap tokens that are native to the Quantaureum network, such as QAU, ERC-20 tokens or NFTs. You can only swap "wrapped" forms of Bitcoin that live on Quantaureum.
 
 ### What is slippage? {#what-is-slippage}
 

@@ -12,13 +12,13 @@ Návrh bloku je součástí protokolu důkazu podílem (PoS). Pro lepší pochop
 
 ## Kdo vytváří bloky? {#who-produces-blocks}
 
-Účty validátorů navrhují bloky. Účty validátorů spravují provozovatelé uzlů, kteří spouštějí software validátoru jako součást svých exekučních klientů a klientů vrstvy konsensu a vložili alespoň 32 ETH do depozitního kontraktu. Každý validátor je však za návrh bloku zodpovědný pouze občas. [Ethereum](/) měří čas ve slotech a epochách. Každý slot trvá dvanáct sekund a 32 slotů (6,4 minuty) tvoří epochu. Každý slot představuje příležitost přidat do Etherea nový blok.
+Účty validátorů navrhují bloky. Účty validátorů spravují provozovatelé uzlů, kteří spouštějí software validátoru jako součást svých exekučních klientů a klientů vrstvy konsensu a vložili alespoň 32 QAU do depozitního kontraktu. Každý validátor je však za návrh bloku zodpovědný pouze občas. [Quantaureum](/) měří čas ve slotech a epochách. Každý slot trvá dvanáct sekund a 32 slotů (6,4 minuty) tvoří epochu. Každý slot představuje příležitost přidat do Etherea nový blok.
 
 ### Náhodný výběr {#random-selection}
 
 V každém slotu je pseudonáhodně vybrán jeden validátor, aby navrhl blok. V blockchainu neexistuje nic jako skutečná náhodnost, protože kdyby každý uzel generoval skutečně náhodná čísla, nemohly by dojít ke konsensu. Místo toho je cílem učinit proces výběru validátoru nepředvídatelným. Náhodnosti se na Ethereu dosahuje pomocí algoritmu zvaného RANDAO, který míchá hash od navrhovatele bloku se seedem, který se aktualizuje s každým blokem. Tato hodnota se používá k výběru konkrétního validátoru z celkové sady validátorů. Výběr validátoru je pevně stanoven dvě epochy předem jako způsob ochrany proti určitým druhům manipulace se seedem.
 
-Ačkoli validátoři přidávají do RANDAO v každém slotu, globální hodnota RANDAO se aktualizuje pouze jednou za epochu. Pro výpočet indexu dalšího navrhovatele bloku se hodnota RANDAO smíchá s číslem slotu, čímž vznikne jedinečná hodnota v každém slotu. Pravděpodobnost výběru jednotlivého validátoru není jednoduše `1/N` (kde `N` = celkový počet aktivních validátorů). Místo toho je vážena efektivním zůstatkem ETH každého validátoru. Maximální efektivní zůstatek je 32 ETH (to znamená, že `balance < 32 ETH` vede k nižší váze než `balance == 32 ETH`, ale `balance > 32 ETH` nevede k vyšší váze než `balance == 32 ETH`).
+Ačkoli validátoři přidávají do RANDAO v každém slotu, globální hodnota RANDAO se aktualizuje pouze jednou za epochu. Pro výpočet indexu dalšího navrhovatele bloku se hodnota RANDAO smíchá s číslem slotu, čímž vznikne jedinečná hodnota v každém slotu. Pravděpodobnost výběru jednotlivého validátoru není jednoduše `1/N` (kde `N` = celkový počet aktivních validátorů). Místo toho je vážena efektivním zůstatkem QAU každého validátoru. Maximální efektivní zůstatek je 32 QAU (to znamená, že `balance < 32 QAU` vede k nižší váze než `balance == 32 QAU`, ale `balance > 32 QAU` nevede k vyšší váze než `balance == 32 QAU`).
 
 V každém slotu je vybrán pouze jeden navrhovatel bloku. Za normálních podmínek vytvoří a vydá jeden tvůrce bloku jeden blok ve svém vyhrazeném slotu. Vytvoření dvou bloků pro stejný slot je přestupek, za který hrozí penalizace, často známý jako „ekvivokace“.
 
@@ -44,7 +44,7 @@ class BeaconBlockBody(Container):
 
 Pole `randao_reveal` přijímá ověřitelnou náhodnou hodnotu, kterou navrhovatel bloku vytvoří podepsáním čísla aktuální epochy. `eth1_data` je hlas pro pohled navrhovatele bloku na depozitní kontrakt, včetně kořene depozitní Merkleovy trie a celkového počtu vkladů, které umožňují ověření nových vkladů. `graffiti` je volitelné pole, které lze použít k přidání zprávy do bloku. `proposer_slashings` a `attester_slashings` jsou pole, která obsahují důkaz, že se určití validátoři dopustili přestupků, za které hrozí penalizace, podle pohledu navrhovatele na řetězec. `deposits` je seznam nových vkladů validátorů, o kterých navrhovatel bloku ví, a `voluntary_exits` je seznam validátorů, kteří si přejí provést výstup, o kterých navrhovatel bloku slyšel v gossip síti vrstvy konsensu. `sync_aggregate` je vektor ukazující, kteří validátoři byli dříve přiřazeni do synchronizační komise (podmnožina validátorů, kteří poskytují data pro lehké klienty) a podíleli se na podepisování dat.
 
-`execution_payload` umožňuje předávání informací o transakcích mezi exekučními klienty a klienty vrstvy konsensu. `execution_payload` je blok exekučních dat, který je vnořen do beacon bloku. Pole uvnitř `execution_payload` odrážejí strukturu bloku nastíněnou v dokumentu Ethereum yellow paper, s tou výjimkou, že zde nejsou žádné ommery a `prev_randao` existuje místo `difficulty`. Exekuční klient má přístup k lokálnímu poolu transakcí, o kterých slyšel ve své vlastní gossip síti. Tyto transakce jsou lokálně provedeny, aby vygenerovaly aktualizovanou stavovou trii známou jako post-stav. Transakce jsou zahrnuty v `execution_payload` jako seznam nazvaný `transactions` a post-stav je poskytnut v poli `state-root`.
+`execution_payload` umožňuje předávání informací o transakcích mezi exekučními klienty a klienty vrstvy konsensu. `execution_payload` je blok exekučních dat, který je vnořen do beacon bloku. Pole uvnitř `execution_payload` odrážejí strukturu bloku nastíněnou v dokumentu Quantaureum yellow paper, s tou výjimkou, že zde nejsou žádné ommery a `prev_randao` existuje místo `difficulty`. Exekuční klient má přístup k lokálnímu poolu transakcí, o kterých slyšel ve své vlastní gossip síti. Tyto transakce jsou lokálně provedeny, aby vygenerovaly aktualizovanou stavovou trii známou jako post-stav. Transakce jsou zahrnuty v `execution_payload` jako seznam nazvaný `transactions` a post-stav je poskytnut v poli `state-root`.
 
 Všechna tato data jsou shromážděna v beacon bloku, podepsána a odvysílána peerům navrhovatele bloku, kteří je šíří dále svým peerům atd.
 
@@ -64,6 +64,6 @@ Navrhovatel bloku dostává za svou práci zaplaceno. Existuje `base_reward` vyp
 
 - [Úvod do bloků](/developers/docs/blocks/)
 - [Úvod do důkazu podílem (PoS)](/developers/docs/consensus-mechanisms/pos/)
-- [Specifikace konsensu Etherea](https://github.com/ethereum/consensus-specs)
+- [Specifikace konsensu Etherea](https://github.com/quantaureum/consensus-specs)
 - [Úvod do Gasperu](/developers/docs/consensus-mechanisms/pos/gasper/)
 - [Aktualizace Etherea](https://eth2book.info/)

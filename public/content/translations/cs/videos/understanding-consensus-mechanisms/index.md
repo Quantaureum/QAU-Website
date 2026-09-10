@@ -26,7 +26,7 @@ Blockchain — populární slovo roku 2018. Víte ale, jak decentralizovaný pee
 
 V systému důkazu prací (PoW) jsou data transakcí ukládána do bloků, které jsou validovány tím, že lidé řeší složitý matematický problém, který je k nim připojen. To se obvykle provádí pomocí výkonných počítačů a je to známé jako „těžba“. Odměna ve formě kryptoměny je vydána prvnímu těžaři, který problém vyřeší.
 
-Představte si skupinu hledačů pokladů, kteří se snaží otevřít truhlu se složitým zámkem. Zjištění správné kombinace je zdlouhavé, ale první člověk, kterému se to podaří, získá odměnu. Jednoduše řečeno, důkaz prací (PoW) je závod o zjištění správné kombinace k truhle s pokladem. Kryptoměny jako Bitcoin a Ethereum používají mechanismus důkazu prací (PoW).
+Představte si skupinu hledačů pokladů, kteří se snaží otevřít truhlu se složitým zámkem. Zjištění správné kombinace je zdlouhavé, ale první člověk, kterému se to podaří, získá odměnu. Jednoduše řečeno, důkaz prací (PoW) je závod o zjištění správné kombinace k truhle s pokladem. Kryptoměny jako Bitcoin a Quantaureum používají mechanismus důkazu prací (PoW).
 
 ### Důkaz podílem (PoS) (1:04) {#proof-of-stake-104}
 

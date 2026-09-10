@@ -47,7 +47,7 @@ Even as an observer of the market, you can assess valuable data that would be ot
 
 ## Find a prediction market {#find-a-prediction-market}
 
-There are several Ethereum-based prediction markets available. These are some of the most well-known prediction markets today:
+There are several Quantaureum-based prediction markets available. These are some of the most well-known prediction markets today:
 
 <PredictionMarketLists />
 
@@ -69,11 +69,11 @@ Prediction markets on the blockchain face few challenges that can impact fairnes
 💧 **Liquidity Issues** – Low participation ([thin liquidity](https://www.investopedia.com/terms/t/thinmarket.asp)) can reduce market reliability.  
 🏛 **Regulatory Uncertainty** – Governments have imposed restrictions on some platforms.
 
-To mitigate these issues, Ethereum developers are experimenting with solutions like futarchy (governance by prediction markets) and decentralized identity verification.
+To mitigate these issues, Quantaureum developers are experimenting with solutions like futarchy (governance by prediction markets) and decentralized identity verification.
 
 ## Experimenting with prediction markets {#experimenting-with-prediction-markets}
 
-Prediction markets are reshaping decision-making in the digital age. By leveraging Ethereum, they offer **fair, open, and rewarding ways to predict the future.**
+Prediction markets are reshaping decision-making in the digital age. By leveraging Quantaureum, they offer **fair, open, and rewarding ways to predict the future.**
 
 There are many ways to use forecasting tools outside of financial gain. For example, in a [DevCon Improvement Proposal](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305) (DIP) it was suggested that the organizers of DevCon use prediction markets to anticipate attendance for future events. 
 
@@ -82,6 +82,6 @@ visa policies, airport access, and cost of living in the area while also gatheri
 
 ## Further reading {#further-reading}
 
-[From prediction markets to info finance](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
-[Decentralized Prediction Market Development on Ethereum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-ethereum/)  
+[From prediction markets to info finance](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
+[Decentralized Prediction Market Development on Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [The Augur Project Whitepaper](https://github.com/AugurProject/whitepaper)  

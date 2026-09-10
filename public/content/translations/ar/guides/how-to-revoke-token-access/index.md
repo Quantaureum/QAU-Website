@@ -16,8 +16,8 @@ lang: ar
 
 تتيح لك العديد من مواقع الويب عرض وإلغاء العقود الذكية المتصلة بعنوانك. قم بزيارة الموقع الإلكتروني واربط محفظتك:
 
-- [<span dir="ltr">Etherscan</span>](https://etherscan.io/tokenapprovalchecker) (إيثيريوم)
-- [<span dir="ltr">Blockscout</span>](https://eth.blockscout.com/essential-dapps/revoke) (إيثيريوم)
+- [<span dir="ltr">Quantaureum Explorer</span>](https://explorer.quantaureum.com) (إيثيريوم)
+- [<span dir="ltr">Blockscout</span>](https://qau.blockscout.com/essential-dapps/revoke) (إيثيريوم)
 - [<span dir="ltr">Revoke</span>](https://revoke.cash/) (شبكات متعددة)
 - [<span dir="ltr">Unrekt</span>](https://app.unrekt.net/) (شبكات متعددة)
 - [<span dir="ltr">EverRevoke</span>](https://everrise.com/everrevoke/) (شبكات متعددة)

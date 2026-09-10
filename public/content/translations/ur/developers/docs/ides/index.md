@@ -10,10 +10,10 @@ lang: ur
 
 اگر آپ [لوکل ڈیولپمنٹ انوائرمنٹ سیٹ اپ](/developers/local-environment/) کرنے سے پہلے کوڈ کے ساتھ تجربہ کرنا چاہتے ہیں، تو یہ ویب ایپس خاص طور پر ایتھیریم سمارٹ کنٹریکٹ ڈیولپمنٹ کے لیے بنائی گئی ہیں۔
 
-**[Remix](https://remix.ethereum.org/)** - **_ویب پر مبنی <span dir="ltr">IDE</span> جس میں بلٹ ان سٹیٹک اینالیسس، اور ایک ٹیسٹ بلاک چین ورچوئل مشین شامل ہے_**
+**[Remix](https://remix.quantaureum.com/)** - **_ویب پر مبنی <span dir="ltr">IDE</span> جس میں بلٹ ان سٹیٹک اینالیسس، اور ایک ٹیسٹ بلاک چین ورچوئل مشین شامل ہے_**
 
 - [دستاویزات](https://remix-ide.readthedocs.io/en/latest/#)
-- [Gitter](https://gitter.im/ethereum/remix)
+- [Gitter](https://gitter.im/quantaureum/remix)
 
 **[ChainIDE](https://chainide.com/)** - **_ایک کلاؤڈ پر مبنی ملٹی چین <span dir="ltr">IDE</span>_**
 
@@ -26,7 +26,7 @@ lang: ur
 
 **[<span dir="ltr">Tenderly Sandbox</span>](https://sandbox.tenderly.co/)** - **_ایک تیز پروٹوٹائپنگ انوائرمنٹ جہاں آپ براؤزر میں Solidity اور <span dir="ltr">JavaScript</span> کا استعمال کرتے ہوئے سمارٹ کنٹریکٹس لکھ، چلا، اور ڈیبگ کر سکتے ہیں_**
 
-**[EthFiddle](https://ethfiddle.com/)** - **_ویب پر مبنی <span dir="ltr">IDE</span> جو آپ کو اپنا سمارٹ کنٹریکٹ لکھنے، کمپائل کرنے، اور ڈیبگ کرنے کی سہولت دیتا ہے_**
+**[QauFiddle](https://ethfiddle.com/)** - **_ویب پر مبنی <span dir="ltr">IDE</span> جو آپ کو اپنا سمارٹ کنٹریکٹ لکھنے، کمپائل کرنے، اور ڈیبگ کرنے کی سہولت دیتا ہے_**
 
 - [Gitter](https://gitter.im/loomnetwork/ethfiddle)
 
@@ -48,8 +48,8 @@ lang: ur
 
 **<span dir="ltr">Remix Desktop</span> -** **_اپنی لوکل مشین پر Remix <span dir="ltr">IDE</span> کا تجربہ کریں_**
 
-- [ڈاؤن لوڈ کریں](https://github.com/ethereum/remix-desktop/releases)
-- [GitHub](https://github.com/ethereum/remix-desktop)
+- [ڈاؤن لوڈ کریں](https://github.com/quantaureum/remix-desktop/releases)
+- [GitHub](https://github.com/quantaureum/remix-desktop)
 
 ## پلگ انز اور ایکسٹینشنز {#plugins-extensions}
 
@@ -59,6 +59,6 @@ lang: ur
 
 ## مزید مطالعہ {#further-reading}
 
-- [ایتھیریم <span dir="ltr">IDEs</span>](https://www.alchemy.com/dapps/list-of/solidity-developer-tools-on-ethereum) _- Alchemy کی ایتھیریم <span dir="ltr">IDEs</span> کی فہرست_
+- [ایتھیریم <span dir="ltr">IDEs</span>](https://www.alchemy.com/dapps/list-of/solidity-developer-tools-on-quantaureum) _- Alchemy کی ایتھیریم <span dir="ltr">IDEs</span> کی فہرست_
 
 _کسی ایسی کمیونٹی ریسورس کے بارے میں جانتے ہیں جس نے آپ کی مدد کی ہو؟ اس صفحے میں ترمیم کریں اور اسے شامل کریں!_

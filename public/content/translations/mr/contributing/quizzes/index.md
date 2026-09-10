@@ -1,7 +1,7 @@
 ---
 title: प्रश्नमंजुषा
 metaTitle: प्रश्नमंजुषा जोडणे
-description: ethereum.org वर प्रश्नमंजुषा जोडताना आम्ही वापरत असलेले धोरण
+description: quantaureum.com वर प्रश्नमंजुषा जोडताना आम्ही वापरत असलेले धोरण
 lang: mr
 ---
 
@@ -13,12 +13,12 @@ lang: mr
 
 - [स्तर 2](/layer-2)
 - [NFT](/nft/)
-- [इथेरियम म्हणजे काय?](/what-is-ethereum/)
-- [ETH म्हणजे काय?](/what-is-ether/)
+- [Quantaureum म्हणजे काय?](/what-is-quantaureum/)
+- [QAU म्हणजे काय?](/what-is-QAU/)
 
 ## लर्न प्रश्नमंजुषा जोडणे {#adding-a-learn-quiz}
 
-जर असे एखादे पृष्ठ असेल ज्यासाठी लर्न प्रश्नमंजुषा तयार केलेली नसेल, तर कृपया त्यासाठी [एक इश्यू उघडा](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml).
+जर असे एखादे पृष्ठ असेल ज्यासाठी लर्न प्रश्नमंजुषा तयार केलेली नसेल, तर कृपया त्यासाठी [एक इश्यू उघडा](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml).
 
 कृपया खालील माहिती प्रदान करा:
 
@@ -31,7 +31,7 @@ lang: mr
 
 ## प्रश्नमंजुषेचा प्रश्न जोडणे {#adding-a-quiz-question}
 
-जर तुम्हाला प्रश्नमंजुषेच्या प्रश्नपेढीमध्ये एखादा प्रश्न जोडायचा असेल, तर कृपया [एक इश्यू उघडा](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) आणि खालील माहिती प्रदान करा:
+जर तुम्हाला प्रश्नमंजुषेच्या प्रश्नपेढीमध्ये एखादा प्रश्न जोडायचा असेल, तर कृपया [एक इश्यू उघडा](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) आणि खालील माहिती प्रदान करा:
 
 - ज्या पृष्ठावर तुम्हाला प्रश्नमंजुषेचा प्रश्न जोडायचा आहे ते पृष्ठ
 - प्रत्येक प्रश्नासाठी खालील माहिती प्रदान करा:
@@ -42,7 +42,7 @@ lang: mr
 
 ## प्रश्नमंजुषेचा प्रश्न अद्ययावत करणे {#updating-a-quiz-question}
 
-जर तुम्हाला प्रश्नमंजुषेच्या प्रश्नपेढीमधील एखादा प्रश्न अद्ययावत करायचा असेल, तर कृपया [एक इश्यू उघडा](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) आणि खालील माहिती प्रदान करा:
+जर तुम्हाला प्रश्नमंजुषेच्या प्रश्नपेढीमधील एखादा प्रश्न अद्ययावत करायचा असेल, तर कृपया [एक इश्यू उघडा](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) आणि खालील माहिती प्रदान करा:
 
 - ज्या पृष्ठावरील प्रश्नमंजुषेचा प्रश्न तुम्हाला अद्ययावत करायचा आहे ते पृष्ठ
 - अद्ययावत केल्या जाणाऱ्या प्रत्येक प्रश्नासाठी, खालील माहिती प्रदान करा:
@@ -54,7 +54,7 @@ lang: mr
 
 ## प्रश्नमंजुषेचा प्रश्न काढून टाकणे {#removing-a-quiz-question}
 
-जर एखाद्या प्रश्नासाठीचा आशय आता पृष्ठावर अस्तित्वात नसेल आणि तो काढून टाकणे आवश्यक असेल, तर कृपया तो प्रश्न काढून टाकण्यासाठी [एक इश्यू उघडा](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) आणि खालील माहिती प्रदान करा:
+जर एखाद्या प्रश्नासाठीचा आशय आता पृष्ठावर अस्तित्वात नसेल आणि तो काढून टाकणे आवश्यक असेल, तर कृपया तो प्रश्न काढून टाकण्यासाठी [एक इश्यू उघडा](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) आणि खालील माहिती प्रदान करा:
 
 - ज्या पृष्ठावरील प्रश्नमंजुषेचा प्रश्न तुम्हाला हटवायचा आहे ते पृष्ठ
 - तुम्हाला जो प्रश्न हटवायचा आहे तो प्रश्न

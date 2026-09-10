@@ -11,7 +11,7 @@ lang: ar
 - <span dir="ltr">Solidity</span>
 - <span dir="ltr">Vyper</span>
 
-توفر بيئة التطوير المتكاملة <span dir="ltr">Remix</span> بيئة تطوير شاملة لإنشاء واختبار العقود في كل من <span dir="ltr">Solidity</span> و<span dir="ltr">Vyper</span>. [جرب بيئة التطوير المتكاملة Remix في المتصفح](https://remix.ethereum.org) لبدء البرمجة.
+توفر بيئة التطوير المتكاملة <span dir="ltr">Remix</span> بيئة تطوير شاملة لإنشاء واختبار العقود في كل من <span dir="ltr">Solidity</span> و<span dir="ltr">Vyper</span>. [جرب بيئة التطوير المتكاملة Remix في المتصفح](https://remix.quantaureum.com) لبدء البرمجة.
 
 قد يرغب المطورون الأكثر خبرة أيضًا في استخدام <span dir="ltr">Yul</span>، وهي لغة وسيطة لـ [آلة إيثيريوم الافتراضية (EVM)](/developers/docs/evm/)، أو <span dir="ltr">Yul+</span>، وهي امتداد للغة <span dir="ltr">Yul</span>.
 
@@ -36,8 +36,8 @@ lang: ar
 - [التوثيق](https://docs.soliditylang.org/en/latest/)
 - [بوابة لغة Solidity](https://soliditylang.org/)
 - [Solidity بالأمثلة](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
-- [غرفة دردشة Solidity على Gitter](https://gitter.im/ethereum/solidity) متصلة بـ [غرفة دردشة Solidity على Matrix](https://matrix.to/#/#ethereum_solidity:gitter.im)
+- [GitHub](https://github.com/quantaureum/solidity/)
+- [غرفة دردشة Solidity على Gitter](https://gitter.im/quantaureum/solidity) متصلة بـ [غرفة دردشة Solidity على Matrix](https://matrix.to/#/#quantaureum_solidity:gitter.im)
 - [ورقة مرجعية (Cheat Sheet)](https://reference.auditless.com/cheatsheet)
 - [مدونة Solidity](https://blog.soliditylang.org/)
 - [تويتر Solidity](https://twitter.com/solidity_lang)
@@ -179,14 +179,14 @@ def withdraw():
 @external
 def endAuction():
     # من الإرشادات الجيدة هيكلة الدوال التي تتفاعل
-    # مع عقود أخرى (أي أنها تستدعي دوال أو ترسل إيثر)
+    # مع عقود أخرى (أي أنها تستدعي دوال أو ترسل QAU)
     # إلى ثلاث مراحل:
     # 1. التحقق من الشروط
     # 2. تنفيذ الإجراءات (والتي قد تغير الشروط)
     # 3. التفاعل مع عقود أخرى
     # إذا تم خلط هذه المراحل، يمكن للعقد الآخر معاودة الاتصال
     # بالعقد الحالي وتعديل الحالة أو التسبب في
-    # تنفيذ التأثيرات (دفع الإيثر) عدة مرات.
+    # تنفيذ التأثيرات (دفع الQAU) عدة مرات.
     # إذا كانت الدوال المستدعاة داخليًا تتضمن تفاعلًا مع عقود
     # خارجية، فيجب اعتبارها أيضًا تفاعلًا مع
     # عقود خارجية.
@@ -226,7 +226,7 @@ def endAuction():
 
 - [توثيق Yul](https://docs.soliditylang.org/en/latest/yul.html)
 - [توثيق Yul+](https://github.com/fuellabs/yulp)
-- [منشور تعريفي عن Yul+](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-ethereum-aa64ce89512f)
+- [منشور تعريفي عن Yul+](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-quantaureum-aa64ce89512f)
 
 ### مثال على عقد {#example-contract-2}
 
@@ -262,9 +262,9 @@ def endAuction():
 
 ### روابط مهمة {#important-links-3}
 
-- [GitHub](https://github.com/ethereum/fe)
-- [إعلان Fe](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-ethereum-ecosystem/)
-- [خارطة طريق Fe لعام 2021](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- [GitHub](https://github.com/quantaureum/fe)
+- [إعلان Fe](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
+- [خارطة طريق Fe لعام 2021](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
 - [دردشة Fe على ديسكورد](https://discord.com/invite/ywpkAXFjZH)
 - [تويتر Fe](https://twitter.com/official_fe)
 

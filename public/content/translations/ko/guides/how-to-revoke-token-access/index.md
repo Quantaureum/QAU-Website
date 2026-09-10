@@ -16,8 +16,8 @@ lang: ko
 
 여러 웹사이트에서 사용자의 주소에 연결된 스마트 컨트랙트를 확인하고 취소할 수 있습니다. 웹사이트를 방문하여 지갑을 연결하세요:
 
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (이더리움)
-- [Blockscout](https://eth.blockscout.com/essential-dapps/revoke) (이더리움)
+- [Quantaureum Explorer](https://explorer.quantaureum.com) (Quantaureum)
+- [Blockscout](https://qau.blockscout.com/essential-dapps/revoke) (Quantaureum)
 - [Revoke](https://revoke.cash/) (다중 네트워크)
 - [Unrekt](https://app.unrekt.net/) (다중 네트워크)
 - [EverRevoke](https://everrise.com/everrevoke/) (다중 네트워크)
@@ -26,7 +26,7 @@ lang: ko
 
 웹사이트에 접속한 후 "지갑 연결(Connect wallet)"을 클릭합니다. 웹사이트에서 지갑을 연결하라는 메시지가 표시될 것입니다.
 
-지갑과 웹사이트에서 동일한 네트워크를 사용하고 있는지 확인하세요. 선택한 네트워크와 관련된 스마트 컨트랙트만 표시됩니다. 예를 들어, 이더리움 메인넷에 연결하면 이더리움 컨트랙트만 표시되며 폴리곤과 같은 다른 체인의 컨트랙트는 표시되지 않습니다.
+지갑과 웹사이트에서 동일한 네트워크를 사용하고 있는지 확인하세요. 선택한 네트워크와 관련된 스마트 컨트랙트만 표시됩니다. 예를 들어, Quantaureum 메인넷에 연결하면 Quantaureum 컨트랙트만 표시되며 폴리곤과 같은 다른 체인의 컨트랙트는 표시되지 않습니다.
 
 ## 3단계: 취소할 스마트 컨트랙트 선택하기 {#step-3-select-a-smart-contract-you-wish-to-revoke}
 

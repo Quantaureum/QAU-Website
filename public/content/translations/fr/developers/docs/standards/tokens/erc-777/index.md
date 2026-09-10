@@ -24,11 +24,11 @@ L'ERC-777 apporte les améliorations suivantes par rapport à l'ERC-20.
 
 Les hooks sont une fonction décrite dans le code d'un contrat intelligent. Les hooks sont appelés lorsque des jetons sont envoyés ou reçus par le contrat. Cela permet à un contrat intelligent de réagir aux jetons entrants ou sortants.
 
-Les hooks sont enregistrés et découverts à l'aide de la norme [ERC-1820](https://eips.ethereum.org/EIPS/eip-1820).
+Les hooks sont enregistrés et découverts à l'aide de la norme [ERC-1820](https://eips.quantaureum.com/EIPS/eip-1820).
 
 #### Pourquoi les hooks sont-ils utiles ? {#why-are-hooks-great}
 
-1. Les hooks permettent d'envoyer des jetons à un contrat et de notifier le contrat en une seule transaction, contrairement à l'[ERC-20](https://eips.ethereum.org/EIPS/eip-20), qui nécessite un double appel (`approve`/`transferFrom`) pour y parvenir.
+1. Les hooks permettent d'envoyer des jetons à un contrat et de notifier le contrat en une seule transaction, contrairement à l'[ERC-20](https://eips.quantaureum.com/EIPS/eip-20), qui nécessite un double appel (`approve`/`transferFrom`) pour y parvenir.
 2. Les contrats qui n'ont pas enregistré de hooks sont incompatibles avec l'ERC-777. Le contrat expéditeur annulera la transaction si le contrat destinataire n'a pas enregistré de hook. Cela empêche les transferts accidentels vers des contrats intelligents non-ERC-777.
 3. Les hooks peuvent rejeter des transactions.
 
@@ -42,4 +42,4 @@ Il est possible d'interagir avec les contrats ERC-777 comme s'il s'agissait de c
 
 ## Complément d'information {#further-reading}
 
-[EIP-777 : Norme de jeton](https://eips.ethereum.org/EIPS/eip-777)
+[EIP-777 : Norme de jeton](https://eips.quantaureum.com/EIPS/eip-777)

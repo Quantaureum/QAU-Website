@@ -6,7 +6,7 @@ lang: te
 
 ఒక సాఫ్ట్‌వేర్ అప్లికేషన్ [ఎథీరియం](/) బ్లాక్‌చైన్‌తో ఇంటరాక్ట్ అవ్వాలంటే - బ్లాక్‌చైన్ డేటాను చదవడం ద్వారా లేదా నెట్‌వర్క్‌కు లావాదేవీలను పంపడం ద్వారా - అది తప్పనిసరిగా ఒక ఎథీరియం నోడ్‌కు కనెక్ట్ అవ్వాలి.
 
-ఈ ప్రయోజనం కోసం, ప్రతి [ఎథీరియం క్లయింట్](/developers/docs/nodes-and-clients/#execution-clients) ఒక [జేసన్-ఆర్‌పీసీ స్పెసిఫికేషన్‌ను](https://github.com/ethereum/execution-apis) అమలు చేస్తుంది, కాబట్టి నిర్దిష్ట నోడ్ లేదా క్లయింట్ అమలుతో సంబంధం లేకుండా అప్లికేషన్‌లు ఆధారపడగల ఏకరీతి పద్ధతుల సమితి ఉంటుంది.
+ఈ ప్రయోజనం కోసం, ప్రతి [ఎథీరియం క్లయింట్](/developers/docs/nodes-and-clients/#execution-clients) ఒక [జేసన్-ఆర్‌పీసీ స్పెసిఫికేషన్‌ను](https://github.com/quantaureum/execution-apis) అమలు చేస్తుంది, కాబట్టి నిర్దిష్ట నోడ్ లేదా క్లయింట్ అమలుతో సంబంధం లేకుండా అప్లికేషన్‌లు ఆధారపడగల ఏకరీతి పద్ధతుల సమితి ఉంటుంది.
 
 [జేసన్-ఆర్‌పీసీ](https://www.jsonrpc.org/specification) అనేది ఒక స్టేట్‌లెస్, తేలికపాటి రిమోట్ ప్రొసీజర్ కాల్ (RPC) ప్రోటోకాల్. ఇది అనేక డేటా నిర్మాణాలను మరియు వాటి ప్రాసెసింగ్ చుట్టూ ఉన్న నియమాలను నిర్వచిస్తుంది. ఈ కాన్సెప్ట్‌లను ఒకే ప్రాసెస్‌లో, సాకెట్‌ల ద్వారా, HTTP ద్వారా లేదా అనేక విభిన్న సందేశ పంపే వాతావరణాలలో ఉపయోగించవచ్చు కాబట్టి ఇది ట్రాన్స్‌పోర్ట్ అజ్ఞేయవాది (transport agnostic). ఇది JSON (RFC 4627)ను డేటా ఫార్మాట్‌గా ఉపయోగిస్తుంది.
 
@@ -20,13 +20,13 @@ lang: te
 
 ## ఏకాభిప్రాయ క్లయింట్ APIలు {#consensus-clients}
 
-ఈ పేజీ ప్రధానంగా ఎథీరియం అమలు క్లయింట్‌లు ఉపయోగించే జేసన్-ఆర్‌పీసీ API గురించి వివరిస్తుంది. అయితే, ఏకాభిప్రాయ క్లయింట్‌లు కూడా ఒక RPC APIని కలిగి ఉంటాయి, ఇది నోడ్ గురించి సమాచారాన్ని అడగడానికి, బీకన్ బ్లాక్‌లు, బీకన్ స్థితి మరియు ఇతర ఏకాభిప్రాయ సంబంధిత సమాచారాన్ని నేరుగా నోడ్ నుండి అభ్యర్థించడానికి వినియోగదారులను అనుమతిస్తుంది. ఈ API [బీకన్ API వెబ్‌పేజీ](https://ethereum.github.io/beacon-APIs/#/)లో డాక్యుమెంట్ చేయబడింది.
+ఈ పేజీ ప్రధానంగా ఎథీరియం అమలు క్లయింట్‌లు ఉపయోగించే జేసన్-ఆర్‌పీసీ API గురించి వివరిస్తుంది. అయితే, ఏకాభిప్రాయ క్లయింట్‌లు కూడా ఒక RPC APIని కలిగి ఉంటాయి, ఇది నోడ్ గురించి సమాచారాన్ని అడగడానికి, బీకన్ బ్లాక్‌లు, బీకన్ స్థితి మరియు ఇతర ఏకాభిప్రాయ సంబంధిత సమాచారాన్ని నేరుగా నోడ్ నుండి అభ్యర్థించడానికి వినియోగదారులను అనుమతిస్తుంది. ఈ API [బీకన్ API వెబ్‌పేజీ](https://quantaureum.github.io/beacon-APIs/#/)లో డాక్యుమెంట్ చేయబడింది.
 
-నోడ్ లోపల క్లయింట్‌ల మధ్య కమ్యూనికేషన్ కోసం ఒక అంతర్గత API కూడా ఉపయోగించబడుతుంది - అంటే, ఇది ఏకాభిప్రాయ క్లయింట్ మరియు అమలు క్లయింట్ డేటాను మార్పిడి చేసుకోవడానికి వీలు కల్పిస్తుంది. దీనిని 'ఇంజిన్ API' అని పిలుస్తారు మరియు దీని స్పెసిఫికేషన్‌లు [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md)లో అందుబాటులో ఉన్నాయి.
+నోడ్ లోపల క్లయింట్‌ల మధ్య కమ్యూనికేషన్ కోసం ఒక అంతర్గత API కూడా ఉపయోగించబడుతుంది - అంటే, ఇది ఏకాభిప్రాయ క్లయింట్ మరియు అమలు క్లయింట్ డేటాను మార్పిడి చేసుకోవడానికి వీలు కల్పిస్తుంది. దీనిని 'ఇంజిన్ API' అని పిలుస్తారు మరియు దీని స్పెసిఫికేషన్‌లు [GitHub](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md)లో అందుబాటులో ఉన్నాయి.
 
 ## అమలు క్లయింట్ స్పెసిఫికేషన్ {#spec}
 
-[GitHubలో పూర్తి జేసన్-ఆర్‌పీసీ API స్పెసిఫికేషన్‌ను చదవండి](https://github.com/ethereum/execution-apis). ఈ API [అమలు API వెబ్‌పేజీ](https://ethereum.github.io/execution-apis/)లో డాక్యుమెంట్ చేయబడింది మరియు అందుబాటులో ఉన్న అన్ని పద్ధతులను ప్రయత్నించడానికి ఒక ఇన్‌స్పెక్టర్‌ను కలిగి ఉంటుంది.
+[GitHubలో పూర్తి జేసన్-ఆర్‌పీసీ API స్పెసిఫికేషన్‌ను చదవండి](https://github.com/quantaureum/execution-apis). ఈ API [అమలు API వెబ్‌పేజీ](https://quantaureum.github.io/execution-apis/)లో డాక్యుమెంట్ చేయబడింది మరియు అందుబాటులో ఉన్న అన్ని పద్ధతులను ప్రయత్నించడానికి ఒక ఇన్‌స్పెక్టర్‌ను కలిగి ఉంటుంది.
 
 ## సంప్రదాయాలు {#conventions}
 
@@ -62,11 +62,11 @@ JSON ద్వారా రెండు కీలక డేటా రకాల�
 
 కింది పద్ధతులు బ్లాక్ పారామితిని కలిగి ఉంటాయి:
 
-- [eth_getBalance](#eth-getbalance)
-- [eth_getCode](#eth-getcode)
-- [eth_getTransactionCount](#eth-gettransactioncount)
-- [eth_getStorageAt](#eth-getstorageat)
-- [eth_call](#eth-call)
+- [qau_getBalance](#qau-getbalance)
+- [qau_getCode](#qau-getcode)
+- [qau_getTransactionCount](#qau-gettransactioncount)
+- [qau_getStorageAt](#qau-getstorageat)
+- [qau_call](#qau-call)
 
 ఎథీరియం స్థితిని ప్రశ్నించే అభ్యర్థనలు చేసినప్పుడు, అందించిన బ్లాక్ పారామితి బ్లాక్ యొక్క ఎత్తును నిర్ణయిస్తుంది.
 
@@ -101,40 +101,40 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 > ఈ పద్ధతులు చైన్ యొక్క హెడ్‌ను ట్రాక్ చేస్తాయి. లావాదేవీలు నెట్‌వర్క్ అంతటా ఎలా ప్రయాణిస్తాయి, బ్లాక్‌లలోకి ఎలా చేరుకుంటాయి మరియు కొత్త బ్లాక్‌ల గురించి క్లయింట్లు ఎలా తెలుసుకుంటారు అనేది దీని ద్వారానే జరుగుతుంది.
 
-- [eth_blockNumber](#eth-blocknumber)
-- [eth_sendRawTransaction](#eth-sendrawtransaction)
+- [qau_blockNumber](#qau-blocknumber)
+- [qau_sendRawTransaction](#qau-sendrawtransaction)
 
 ### స్థితి పద్ధతులు {#state-methods}
 
 > నిల్వ చేయబడిన మొత్తం డేటా యొక్క ప్రస్తుత స్థితిని నివేదించే పద్ధతులు. "స్థితి" అనేది పంచుకోబడిన ఒక పెద్ద RAM లాంటిది, మరియు ఇందులో ఖాతా బ్యాలెన్స్‌లు, కాంట్రాక్ట్ డేటా మరియు గ్యాస్ అంచనాలు ఉంటాయి.
 
-- [eth_getBalance](#eth-getbalance)
-- [eth_getStorageAt](#eth-getstorageat)
-- [eth_getTransactionCount](#eth-gettransactioncount)
-- [eth_getCode](#eth-getcode)
-- [eth_call](#eth-call)
-- [eth_estimateGas](#eth-estimategas)
+- [qau_getBalance](#qau-getbalance)
+- [qau_getStorageAt](#qau-getstorageat)
+- [qau_getTransactionCount](#qau-gettransactioncount)
+- [qau_getCode](#qau-getcode)
+- [qau_call](#qau-call)
+- [qau_estimateGas](#qau-estimategas)
 
 ### చరిత్ర పద్ధతులు {#history-methods}
 
 > ప్రారంభం (genesis) వరకు ఉన్న ప్రతి బ్లాక్ యొక్క చారిత్రక రికార్డులను పొందుతుంది. ఇది కేవలం జోడించడానికి మాత్రమే (append-only) వీలున్న ఒక పెద్ద ఫైల్ లాంటిది, మరియు ఇందులో అన్ని బ్లాక్ హెడర్‌లు, బ్లాక్ బాడీలు, అంకుల్ బ్లాక్‌లు మరియు లావాదేవీ రశీదులు ఉంటాయి.
 
-- [eth_getBlockTransactionCountByHash](#eth-getblocktransactioncountbyhash)
-- [eth_getBlockTransactionCountByNumber](#eth-getblocktransactioncountbynumber)
-- [eth_getUncleCountByBlockHash](#eth-getunclecountbyblockhash)
-- [eth_getUncleCountByBlockNumber](#eth-getunclecountbyblocknumber)
-- [eth_getBlockByHash](#eth-getblockbyhash)
-- [eth_getBlockByNumber](#eth-getblockbynumber)
-- [eth_getTransactionByHash](#eth-gettransactionbyhash)
-- [eth_getTransactionByBlockHashAndIndex](#eth-gettransactionbyblockhashandindex)
-- [eth_getTransactionByBlockNumberAndIndex](#eth-gettransactionbyblocknumberandindex)
-- [eth_getTransactionReceipt](#eth-gettransactionreceipt)
-- [eth_getUncleByBlockHashAndIndex](#eth-getunclebyblockhashandindex)
-- [eth_getUncleByBlockNumberAndIndex](#eth-getunclebyblocknumberandindex)
+- [qau_getBlockTransactionCountByHash](#qau-getblocktransactioncountbyhash)
+- [qau_getBlockTransactionCountByNumber](#qau-getblocktransactioncountbynumber)
+- [qau_getUncleCountByBlockHash](#qau-getunclecountbyblockhash)
+- [qau_getUncleCountByBlockNumber](#qau-getunclecountbyblocknumber)
+- [qau_getBlockByHash](#qau-getblockbyhash)
+- [qau_getBlockByNumber](#qau-getblockbynumber)
+- [qau_getTransactionByHash](#qau-gettransactionbyhash)
+- [qau_getTransactionByBlockHashAndIndex](#qau-gettransactionbyblockhashandindex)
+- [qau_getTransactionByBlockNumberAndIndex](#qau-gettransactionbyblocknumberandindex)
+- [qau_getTransactionReceipt](#qau-gettransactionreceipt)
+- [qau_getUncleByBlockHashAndIndex](#qau-getunclebyblockhashandindex)
+- [qau_getUncleByBlockNumberAndIndex](#qau-getunclebyblocknumberandindex)
 
 ## జేసన్-ఆర్‌పీసీ API ప్లేగ్రౌండ్ {#json-rpc-api-playground}
 
-API పద్ధతులను కనుగొనడానికి మరియు ప్రయత్నించడానికి మీరు [ప్లేగ్రౌండ్ సాధనాన్ని](https://ethereum-json-rpc.com) ఉపయోగించవచ్చు. వివిధ నోడ్ ప్రొవైడర్లు ఏ పద్ధతులు మరియు నెట్‌వర్క్‌లకు మద్దతు ఇస్తారో కూడా ఇది మీకు చూపుతుంది.
+API పద్ధతులను కనుగొనడానికి మరియు ప్రయత్నించడానికి మీరు [ప్లేగ్రౌండ్ సాధనాన్ని](https://quantaureum-json-rpc.com) ఉపయోగించవచ్చు. వివిధ నోడ్ ప్రొవైడర్లు ఏ పద్ధతులు మరియు నెట్‌వర్క్‌లకు మద్దతు ఇస్తారో కూడా ఇది మీకు చూపుతుంది.
 
 ## జేసన్-ఆర్‌పీసీ API మెథడ్స్ {#json-rpc-methods}
 
@@ -273,9 +273,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 }
 ```
 
-### eth_protocolVersion {#eth-protocolversion}
+### qau_protocolVersion {#qau-protocolversion}
 
-ప్రస్తుత ఎథీరియం ప్రోటోకాల్ వెర్షన్‌ను అందిస్తుంది. ఈ పద్ధతి [Geth‌లో అందుబాటులో లేదు](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924) అని గమనించండి.
+ప్రస్తుత ఎథీరియం ప్రోటోకాల్ వెర్షన్‌ను అందిస్తుంది. ఈ పద్ధతి [Geth‌లో అందుబాటులో లేదు](https://github.com/quantaureum/go-quantaureum/pull/22064#issuecomment-788682924) అని గమనించండి.
 
 **పారామితులు**
 
@@ -289,7 +289,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[],"id":67}'
 // ఫలితం
 {
   "id":67,
@@ -298,11 +298,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 }
 ```
 
-### eth_syncing {#eth-syncing}
+### qau_syncing {#qau-syncing}
 
 సమకాలీకరణ స్థితి గురించి డేటాతో కూడిన ఆబ్జెక్ట్‌ను లేదా `false`ని అందిస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_syncing">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_syncing">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
 </ButtonLink>
 
@@ -317,7 +317,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 `Object|Boolean`, సమకాలీకరణ స్థితి డేటాతో కూడిన ఆబ్జెక్ట్ లేదా సమకాలీకరణలో లేనప్పుడు `FALSE`:
 
 - `startingBlock`: `QUANTITY` - దిగుమతి ప్రారంభమైన బ్లాక్ (సమకాలీకరణ దాని హెడ్‌కు చేరుకున్న తర్వాత మాత్రమే రీసెట్ చేయబడుతుంది)
-- `currentBlock`: `QUANTITY` - ప్రస్తుత బ్లాక్, eth_blockNumber వలె ఉంటుంది
+- `currentBlock`: `QUANTITY` - ప్రస్తుత బ్లాక్, qau_blockNumber వలె ఉంటుంది
 - `highestBlock`: `QUANTITY` - అంచనా వేయబడిన అత్యధిక బ్లాక్
 
 అయితే, వ్యక్తిగత క్లయింట్‌లు అదనపు డేటాను కూడా అందించవచ్చు. ఉదాహరణకు గెత్ కింది వాటిని అందిస్తుంది:
@@ -367,7 +367,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}'
 // ఫలితం
 {
   "id":1,
@@ -386,11 +386,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}
 }
 ```
 
-### eth_coinbase {#eth-coinbase}
+### qau_coinbase {#qau-coinbase}
 
 క్లయింట్ కాయిన్‌బేస్ చిరునామాను తిరిగి ఇస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_coinbase">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_coinbase">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
 </ButtonLink>
 
@@ -408,7 +408,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":64}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":64}'
 // ఫలితం
 {
   "id":64,
@@ -417,11 +417,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":6
 }
 ```
 
-### eth_chainId {#eth-chainid}
+### qau_chainId {#qau-chainid}
 
 రీప్లే-రక్షిత లావాదేవీలపై సంతకం చేయడానికి ఉపయోగించే చైన్ ID ని అందిస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_chainId">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_chainId">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
 </ButtonLink>
 
@@ -437,7 +437,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":6
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67}'
 // ఫలితం
 {
   "id":67,
@@ -446,11 +446,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67
 }
 ```
 
-### eth_mining {#eth-mining}
+### qau_mining {#qau-mining}
 
 క్లయింట్ చురుకుగా కొత్త బ్లాక్‌లను మైనింగ్ చేస్తుంటే `true`ని అందిస్తుంది. ఇది ప్రూఫ్-ఆఫ్-వర్క్ నెట్‌వర్క్‌ల కోసం మాత్రమే `true`ని అందించగలదు మరియు [ది మెర్జ్](/roadmap/merge/) తర్వాత కొన్ని క్లయింట్‌లలో అందుబాటులో ఉండకపోవచ్చు.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_mining">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_mining">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
 </ButtonLink>
 
@@ -466,7 +466,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}'
 //
 {
   "id":71,
@@ -475,11 +475,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}
 }
 ```
 
-### eth_hashrate {#eth-hashrate}
+### qau_hashrate {#qau-hashrate}
 
 నోడ్ మైనింగ్ చేస్తున్న సెకనుకు హాష్‌ల సంఖ్యను అందిస్తుంది. ఇది ప్రూఫ్-ఆఫ్-వర్క్ (PoW) నెట్‌వర్క్‌ల కోసం మాత్రమే `true`ని అందించగలదు మరియు [ది మెర్జ్](/roadmap/merge/) జరిగినప్పటి నుండి కొన్ని క్లయింట్‌లలో అందుబాటులో ఉండకపోవచ్చు.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_hashrate">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_hashrate">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
 </ButtonLink>
 
@@ -495,7 +495,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":71}'
 // ఫలితం
 {
   "id":71,
@@ -504,11 +504,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":7
 }
 ```
 
-### eth_gasPrice {#eth-gasprice}
+### qau_gasPrice {#qau-gasprice}
 
 Wei లో ప్రస్తుత గ్యాస్ ధర యొక్క అంచనాను తిరిగి ఇస్తుంది. ఉదాహరణకు, బేసు క్లయింట్ గత 100 బ్లాక్‌లను పరిశీలిస్తుంది మరియు అప్రమేయంగా మధ్యగత గ్యాస్ యూనిట్ ధరను తిరిగి ఇస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_gasPrice">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_gasPrice">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
 </ButtonLink>
 
@@ -524,7 +524,7 @@ Wei లో ప్రస్తుత గ్యాస్ ధర యొక్క �
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":73}'
 // ఫలితం
 {
   "id":73,
@@ -533,11 +533,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":7
 }
 ```
 
-### eth_accounts {#eth-accounts}
+### qau_accounts {#qau-accounts}
 
 క్లయింట్ స్వంతమైన చిరునామాల జాబితాను అందిస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_accounts">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_accounts">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
 </ButtonLink>
 
@@ -553,7 +553,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":7
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1}'
 // ఫలితం
 {
   "id":1,
@@ -562,11 +562,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1
 }
 ```
 
-### eth_blockNumber {#eth-blocknumber}
+### qau_blockNumber {#qau-blocknumber}
 
 అత్యంత తాజా బ్లాక్ సంఖ్యను తిరిగి ఇస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_blockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_blockNumber">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
 </ButtonLink>
 
@@ -582,7 +582,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":83}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id":83}'
 // ఫలితం
 {
   "id":83,
@@ -591,11 +591,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id
 }
 ```
 
-### eth_getBalance {#eth-getbalance}
+### qau_getBalance {#qau-getbalance}
 
 ఇచ్చిన చిరునామా వద్ద ఉన్న ఖాతా యొక్క బ్యాలెన్స్‌ను అందిస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBalance">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBalance">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
 </ButtonLink>
 
@@ -616,7 +616,7 @@ params: ["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"]
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
 // ఫలితం
 {
   "id":1,
@@ -625,11 +625,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407
 }
 ```
 
-### eth_getStorageAt {#eth-getstorageat}
+### qau_getStorageAt {#qau-getstorageat}
 
 ఇచ్చిన చిరునామాలోని నిల్వ స్థానం నుండి విలువను అందిస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getStorageAt">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getStorageAt">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
 </ButtonLink>
 
@@ -660,7 +660,7 @@ contract Storage {
 pos0 యొక్క విలువను తిరిగి పొందడం చాలా సులభం:
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 ```
 
@@ -693,15 +693,15 @@ undefined
 ఇప్పుడు నిల్వను పొందడానికి:
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-### eth_getTransactionCount {#eth-gettransactioncount}
+### qau_getTransactionCount {#qau-gettransactioncount}
 
 ఒక చిరునామా నుండి _పంపబడిన_ లావాదేవీల సంఖ్యను తిరిగి ఇస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionCount">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionCount">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
 </ButtonLink>
 
@@ -725,7 +725,7 @@ params: [
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
 // ఫలితం
 {
   "id":1,
@@ -734,11 +734,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params
 }
 ```
 
-### eth_getBlockTransactionCountByHash {#eth-getblocktransactioncountbyhash}
+### qau_getBlockTransactionCountByHash {#qau-getblocktransactioncountbyhash}
 
 ఇచ్చిన బ్లాక్ హాష్‌కి సరిపోలే బ్లాక్ నుండి లావాదేవీల సంఖ్యను అందిస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
 </ButtonLink>
 
@@ -758,7 +758,7 @@ params: ["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"]
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
 // ఫలితం
 {
   "id":1,
@@ -767,11 +767,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHa
 }
 ```
 
-### eth_getBlockTransactionCountByNumber {#eth-getblocktransactioncountbynumber}
+### qau_getBlockTransactionCountByNumber {#qau-getblocktransactioncountbynumber}
 
 ఇచ్చిన బ్లాక్ సంఖ్యకు సరిపోలే బ్లాక్‌లోని లావాదేవీల సంఖ్యను అందిస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
 </ButtonLink>
 
@@ -793,7 +793,7 @@ params: [
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
 // ఫలితం
 {
   "id":1,
@@ -802,11 +802,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNu
 }
 ```
 
-### eth_getUncleCountByBlockHash {#eth-getunclecountbyblockhash}
+### qau_getUncleCountByBlockHash {#qau-getunclecountbyblockhash}
 
 ఇచ్చిన బ్లాక్ హాష్‌కు సరిపోలే బ్లాక్ నుండి, ఆ బ్లాక్‌లోని అంకుల్స్ సంఖ్యను అందిస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
 </ButtonLink>
 
@@ -826,7 +826,7 @@ params: ["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"]
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
 // ఫలితం
 {
   "id":1,
@@ -835,11 +835,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","p
 }
 ```
 
-### eth_getUncleCountByBlockNumber {#eth-getunclecountbyblocknumber}
+### qau_getUncleCountByBlockNumber {#qau-getunclecountbyblocknumber}
 
 ఇచ్చిన బ్లాక్ సంఖ్యకు సరిపోలే బ్లాక్‌లోని అంకుల్స్ సంఖ్యను తిరిగి ఇస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
 </ButtonLink>
 
@@ -861,7 +861,7 @@ params: [
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
 // ఫలితం
 {
   "id":1,
@@ -870,11 +870,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber",
 }
 ```
 
-### eth_getCode {#eth-getcode}
+### qau_getCode {#qau-getcode}
 
 ఇచ్చిన చిరునామా వద్ద ఉన్న కోడ్‌ను తిరిగి ఇస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getCode">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getCode">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
 </ButtonLink>
 
@@ -898,7 +898,7 @@ params: [
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
 // ఫలితం
 {
   "id":1,
@@ -907,9 +907,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA
 }
 ```
 
-### eth_sign {#eth-sign}
+### qau_sign {#qau-sign}
 
-sign పద్ధతి ఎథీరియం-నిర్దిష్ట సంతకాన్ని దీనితో లెక్కిస్తుంది: `sign(keccak256("\x19Ethereum Signed Message:\n" + len(message) + message)))`.
+sign పద్ధతి ఎథీరియం-నిర్దిష్ట సంతకాన్ని దీనితో లెక్కిస్తుంది: `sign(keccak256("\x19Quantaureum Signed Message:\n" + len(message) + message)))`.
 
 సందేశానికి ప్రిఫిక్స్‌ను జోడించడం ద్వారా లెక్కించిన సంతకాన్ని ఎథీరియం-నిర్దిష్ట సంతకంగా గుర్తించేలా చేస్తుంది. హానికరమైన వికేంద్రీకృత అప్లికేషన్ (dapp) ఏకపక్ష డేటాపై (ఉదా., లావాదేవీ) సంతకం చేసి, బాధితుడిలా నటించడానికి ఆ సంతకాన్ని ఉపయోగించే దుర్వినియోగాన్ని ఇది నిరోధిస్తుంది.
 
@@ -928,7 +928,7 @@ sign పద్ధతి ఎథీరియం-నిర్దిష్ట సం
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
 // ఫలితం
 {
   "id":1,
@@ -937,9 +937,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d37
 }
 ```
 
-### eth_signTransaction {#eth-signtransaction}
+### qau_signTransaction {#qau-signtransaction}
 
-[eth_sendRawTransaction](#eth-sendrawtransaction) ఉపయోగించి తర్వాత నెట్‌వర్క్‌కు సమర్పించగల లావాదేవీపై సంతకం చేస్తుంది.
+[qau_sendRawTransaction](#qau-sendrawtransaction) ఉపయోగించి తర్వాత నెట్‌వర్క్‌కు సమర్పించగల లావాదేవీపై సంతకం చేస్తుంది.
 
 **పారామితులు**
 
@@ -962,7 +962,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d37
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
+curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "qau_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
 // ఫలితం
 {
     "id": 1,
@@ -971,7 +971,7 @@ curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","
 }
 ```
 
-### eth_sendTransaction {#eth-sendtransaction}
+### qau_sendTransaction {#qau-sendtransaction}
 
 డేటా ఫీల్డ్‌లో కోడ్ ఉంటే, ఇది కొత్త సందేశ పిలుపు లావాదేవీని లేదా కాంట్రాక్ట్ సృష్టిని సృష్టిస్తుంది మరియు `from` లో పేర్కొన్న ఖాతాను ఉపయోగించి దానిపై సంతకం చేస్తుంది.
 
@@ -1005,13 +1005,13 @@ params: [
 
 `DATA`, 32 బైట్‌లు - లావాదేవీ హాష్, లేదా లావాదేవీ ఇంకా అందుబాటులో లేకపోతే జీరో హాష్.
 
-మీరు కాంట్రాక్ట్‌ను సృష్టించినప్పుడు, లావాదేవీ ఒక బ్లాక్‌లో ప్రతిపాదించబడిన తర్వాత, కాంట్రాక్ట్ చిరునామాను పొందడానికి [eth_getTransactionReceipt](#eth-gettransactionreceipt) ని ఉపయోగించండి.
+మీరు కాంట్రాక్ట్‌ను సృష్టించినప్పుడు, లావాదేవీ ఒక బ్లాక్‌లో ప్రతిపాదించబడిన తర్వాత, కాంట్రాక్ట్ చిరునామాను పొందడానికి [qau_getTransactionReceipt](#qau-gettransactionreceipt) ని ఉపయోగించండి.
 
 **ఉదాహరణ**
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendTransaction","params":[{see above}],"id":1}'
 // ఫలితం
 {
   "id":1,
@@ -1020,7 +1020,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{
 }
 ```
 
-### eth_sendRawTransaction {#eth-sendrawtransaction}
+### qau_sendRawTransaction {#qau-sendrawtransaction}
 
 సంతకం చేసిన లావాదేవీల కోసం కొత్త సందేశ పిలుపు లావాదేవీని లేదా కాంట్రాక్ట్ సృష్టిని సృష్టిస్తుంది.
 
@@ -1038,13 +1038,13 @@ params: [
 
 `DATA`, 32 బైట్‌లు - లావాదేవీ హాష్, లేదా లావాదేవీ ఇంకా అందుబాటులో లేకపోతే జీరో హాష్.
 
-మీరు కాంట్రాక్ట్‌ను సృష్టించినప్పుడు, లావాదేవీ ఒక బ్లాక్‌లో ప్రతిపాదించబడిన తర్వాత కాంట్రాక్ట్ చిరునామాను పొందడానికి [eth_getTransactionReceipt](#eth-gettransactionreceipt) ని ఉపయోగించండి.
+మీరు కాంట్రాక్ట్‌ను సృష్టించినప్పుడు, లావాదేవీ ఒక బ్లాక్‌లో ప్రతిపాదించబడిన తర్వాత కాంట్రాక్ట్ చిరునామాను పొందడానికి [qau_getTransactionReceipt](#qau-gettransactionreceipt) ని ఉపయోగించండి.
 
 **ఉదాహరణ**
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params":[{see above}],"id":1}'
 // ఫలితం
 {
   "id":1,
@@ -1053,11 +1053,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 }
 ```
 
-### eth_call {#eth-call}
+### qau_call {#qau-call}
 
 బ్లాక్‌చైన్‌పై లావాదేవీని సృష్టించకుండా వెంటనే కొత్త సందేశ పిలుపును అమలు చేస్తుంది. చదవడానికి మాత్రమే (read-only) ఉండే స్మార్ట్ కాంట్రాక్ట్ ఫంక్షన్‌లను అమలు చేయడానికి తరచుగా ఉపయోగించబడుతుంది, ఉదాహరణకు ERC-20 కాంట్రాక్ట్ కోసం `balanceOf`.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_call">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_call">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ను ప్రయత్నించండి
 </ButtonLink>
 
@@ -1067,7 +1067,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 
 - `from`: `DATA`, 20 బైట్‌లు - (ఐచ్ఛికం) లావాదేవీ పంపబడే చిరునామా.
 - `to`: `DATA`, 20 బైట్‌లు - లావాదేవీ నిర్దేశించబడిన చిరునామా.
-- `gas`: `QUANTITY` - (ఐచ్ఛికం) లావాదేవీ అమలు కోసం అందించబడిన గ్యాస్ యొక్క పూర్ణాంకం (Integer). eth_call సున్నా గ్యాస్‌ను వినియోగిస్తుంది, కానీ కొన్ని అమలులకు ఈ పారామితి అవసరం కావచ్చు.
+- `gas`: `QUANTITY` - (ఐచ్ఛికం) లావాదేవీ అమలు కోసం అందించబడిన గ్యాస్ యొక్క పూర్ణాంకం (Integer). qau_call సున్నా గ్యాస్‌ను వినియోగిస్తుంది, కానీ కొన్ని అమలులకు ఈ పారామితి అవసరం కావచ్చు.
 - `gasPrice`: `QUANTITY` - (ఐచ్ఛికం) చెల్లించిన ప్రతి గ్యాస్ కోసం ఉపయోగించే gasPrice యొక్క పూర్ణాంకం
 - `value`: `QUANTITY` - (ఐచ్ఛికం) ఈ లావాదేవీతో పంపబడిన విలువ యొక్క పూర్ణాంకం
 - `input`: `DATA` - (ఐచ్ఛికం) పద్ధతి సంతకం మరియు ఎన్‌కోడ్ చేయబడిన పారామితుల హాష్. వివరాల కోసం [Solidity డాక్యుమెంటేషన్‌లోని ఎథీరియం కాంట్రాక్ట్ ABI](https://docs.soliditylang.org/en/latest/abi-spec.html)ని చూడండి.
@@ -1082,7 +1082,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}],"id":1}'
 // ఫలితం
 {
   "id":1,
@@ -1091,17 +1091,17 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}]
 }
 ```
 
-### eth_estimateGas {#eth-estimategas}
+### qau_estimateGas {#qau-estimategas}
 
 లావాదేవీని పూర్తి చేయడానికి ఎంత గ్యాస్ అవసరమో అంచనాను రూపొందించి తిరిగి ఇస్తుంది. ఈ లావాదేవీ బ్లాక్‌చైన్‌కు జోడించబడదు. EVM మెకానిక్స్ మరియు నోడ్ పనితీరుతో సహా వివిధ కారణాల వల్ల, లావాదేవీ వాస్తవానికి ఉపయోగించే గ్యాస్ మొత్తం కంటే ఈ అంచనా గణనీయంగా ఎక్కువగా ఉండవచ్చని గమనించండి.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_estimateGas">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_estimateGas">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
 </ButtonLink>
 
 **పారామితులు**
 
-అన్ని లక్షణాలు ఐచ్ఛికం అనే మినహాయింపుతో, [eth_call](#eth-call) పారామితులను చూడండి. గ్యాస్ పరిమితిని పేర్కొనకపోతే, పెండింగ్‌లో ఉన్న బ్లాక్ నుండి బ్లాక్ గ్యాస్ పరిమితిని geth ఎగువ పరిమితిగా ఉపయోగిస్తుంది. ఫలితంగా, గ్యాస్ మొత్తం పెండింగ్‌లో ఉన్న బ్లాక్ గ్యాస్ పరిమితి కంటే ఎక్కువగా ఉన్నప్పుడు, కాల్/లావాదేవీని అమలు చేయడానికి తిరిగి వచ్చిన అంచనా సరిపోకపోవచ్చు.
+అన్ని లక్షణాలు ఐచ్ఛికం అనే మినహాయింపుతో, [qau_call](#qau-call) పారామితులను చూడండి. గ్యాస్ పరిమితిని పేర్కొనకపోతే, పెండింగ్‌లో ఉన్న బ్లాక్ నుండి బ్లాక్ గ్యాస్ పరిమితిని geth ఎగువ పరిమితిగా ఉపయోగిస్తుంది. ఫలితంగా, గ్యాస్ మొత్తం పెండింగ్‌లో ఉన్న బ్లాక్ గ్యాస్ పరిమితి కంటే ఎక్కువగా ఉన్నప్పుడు, కాల్/లావాదేవీని అమలు చేయడానికి తిరిగి వచ్చిన అంచనా సరిపోకపోవచ్చు.
 
 **తిరిగి ఇచ్చేవి**
 
@@ -1111,7 +1111,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}]
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see above}],"id":1}'
 // ఫలితం
 {
   "id":1,
@@ -1120,11 +1120,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see 
 }
 ```
 
-### eth_getBlockByHash {#eth-getblockbyhash}
+### qau_getBlockByHash {#qau-getblockbyhash}
 
 హాష్ ద్వారా బ్లాక్ గురించిన సమాచారాన్ని అందిస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByHash">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
 </ButtonLink>
 
@@ -1168,7 +1168,7 @@ params: [
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
 // ఫలితం
 {
   "jsonrpc": "2.0",
@@ -1200,11 +1200,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0
 }
 ```
 
-### eth_getBlockByNumber {#eth-getblockbynumber}
+### qau_getBlockByNumber {#qau-getblockbynumber}
 
 బ్లాక్ నంబర్ ద్వారా బ్లాక్ గురించిన సమాచారాన్ని అందిస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByNumber">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
 </ButtonLink>
 
@@ -1221,22 +1221,22 @@ params: [
 ```
 
 **రిటర్న్స్**
-[eth_getBlockByHash](#eth-getblockbyhash) చూడండి
+[qau_getBlockByHash](#qau-getblockbyhash) చూడండి
 
 **ఉదాహరణ**
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["0x1b4", true],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByNumber","params":["0x1b4", true],"id":1}'
 ```
 
-ఫలితం కోసం [eth_getBlockByHash](#eth-getblockbyhash) చూడండి
+ఫలితం కోసం [qau_getBlockByHash](#qau-getblockbyhash) చూడండి
 
-### eth_getTransactionByHash {#eth-gettransactionbyhash}
+### qau_getTransactionByHash {#qau-gettransactionbyhash}
 
 లావాదేవీ హాష్ ద్వారా అభ్యర్థించిన లావాదేవీ గురించిన సమాచారాన్ని అందిస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByHash">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
 </ButtonLink>
 
@@ -1271,7 +1271,7 @@ params: ["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"]
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
 // ఫలితం
 {
   "jsonrpc":"2.0",
@@ -1295,11 +1295,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","param
 }
 ```
 
-### eth_getTransactionByBlockHashAndIndex {#eth-gettransactionbyblockhashandindex}
+### qau_getTransactionByBlockHashAndIndex {#qau-gettransactionbyblockhashandindex}
 
 బ్లాక్ హాష్ మరియు లావాదేవీ సూచిక స్థానం ద్వారా ఒక లావాదేవీ గురించి సమాచారాన్ని అందిస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
 </ButtonLink>
 
@@ -1316,22 +1316,22 @@ params: [
 ```
 
 **రిటర్న్స్**
-[eth_getTransactionByHash](#eth-gettransactionbyhash) చూడండి
+[qau_getTransactionByHash](#qau-gettransactionbyhash) చూడండి
 
 **ఉదాహరణ**
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-ఫలితం కోసం [eth_getTransactionByHash](#eth-gettransactionbyhash) చూడండి
+ఫలితం కోసం [qau_getTransactionByHash](#qau-gettransactionbyhash) చూడండి
 
-### eth_getTransactionByBlockNumberAndIndex {#eth-gettransactionbyblocknumberandindex}
+### qau_getTransactionByBlockNumberAndIndex {#qau-gettransactionbyblocknumberandindex}
 
 బ్లాక్ సంఖ్య మరియు లావాదేవీ సూచిక స్థానాన్ని బట్టి ఒక లావాదేవీ గురించిన సమాచారాన్ని అందిస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
 </ButtonLink>
 
@@ -1348,18 +1348,18 @@ params: [
 ```
 
 **రిటర్న్స్**
-[eth_getTransactionByHash](#eth-gettransactionbyhash) చూడండి
+[qau_getTransactionByHash](#qau-gettransactionbyhash) చూడండి
 
 **ఉదాహరణ**
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
 ```
 
-ఫలితం కోసం [eth_getTransactionByHash](#eth-gettransactionbyhash) చూడండి
+ఫలితం కోసం [qau_getTransactionByHash](#qau-gettransactionbyhash) చూడండి
 
-### eth_getTransactionReceipt {#eth-gettransactionreceipt}
+### qau_getTransactionReceipt {#qau-gettransactionreceipt}
 
 లావాదేవీ హాష్ ద్వారా లావాదేవీ యొక్క రశీదును అందిస్తుంది.
 
@@ -1399,7 +1399,7 @@ params: ["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"]
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
 // ఫలితం
 {
   "jsonrpc": "2.0",
@@ -1427,11 +1427,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","para
 }
 ```
 
-### eth_getUncleByBlockHashAndIndex {#eth-getunclebyblockhashandindex}
+### qau_getUncleByBlockHashAndIndex {#qau-getunclebyblockhashandindex}
 
 హాష్ మరియు అంకుల్ సూచిక స్థానం ఆధారంగా ఒక బ్లాక్ యొక్క అంకుల్ గురించిన సమాచారాన్ని అందిస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
 </ButtonLink>
 
@@ -1448,24 +1448,24 @@ params: [
 ```
 
 **రిటర్న్స్**
-[eth_getBlockByHash](#eth-getblockbyhash) చూడండి
+[qau_getBlockByHash](#qau-getblockbyhash) చూడండి
 
 **ఉదాహరణ**
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-ఫలితం కోసం [eth_getBlockByHash](#eth-getblockbyhash) చూడండి
+ఫలితం కోసం [qau_getBlockByHash](#qau-getblockbyhash) చూడండి
 
 **గమనిక**: అంకుల్ వ్యక్తిగత లావాదేవీలను కలిగి ఉండదు.
 
-### eth_getUncleByBlockNumberAndIndex {#eth-getunclebyblocknumberandindex}
+### qau_getUncleByBlockNumberAndIndex {#qau-getunclebyblocknumberandindex}
 
 బ్లాక్ నంబర్ మరియు అంకుల్ సూచిక స్థానం ఆధారంగా ఒక బ్లాక్ యొక్క అంకుల్ గురించి సమాచారాన్ని అందిస్తుంది.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
   ప్లేగ్రౌండ్‌లో ఎండ్‌పాయింట్‌ని ప్రయత్నించండి
 </ButtonLink>
 
@@ -1482,7 +1482,7 @@ params: [
 ```
 
 **రిటర్న్స్**
-[eth_getBlockByHash](#eth-getblockbyhash) చూడండి
+[qau_getBlockByHash](#qau-getblockbyhash) చూడండి
 
 **గమనిక**: ఒక అంకుల్ వ్యక్తిగత లావాదేవీలను కలిగి ఉండదు.
 
@@ -1490,15 +1490,15 @@ params: [
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
 ```
 
-ఫలితం కోసం [eth_getBlockByHash](#eth-getblockbyhash) చూడండి
+ఫలితం కోసం [qau_getBlockByHash](#qau-getblockbyhash) చూడండి
 
-### eth_newFilter {#eth-newfilter}
+### qau_newFilter {#qau-newfilter}
 
 స్థితి మారినప్పుడు (లాగ్‌లు) తెలియజేయడానికి, ఫిల్టర్ ఎంపికల ఆధారంగా ఫిల్టర్ ఆబ్జెక్ట్‌ను సృష్టిస్తుంది.
-స్థితి మారిందో లేదో తనిఖీ చేయడానికి, [eth_getFilterChanges](#eth-getfilterchanges)కి కాల్ చేయండి.
+స్థితి మారిందో లేదో తనిఖీ చేయడానికి, [qau_getFilterChanges](#qau-getfilterchanges)కి కాల్ చేయండి.
 
 **టాపిక్ ఫిల్టర్‌లను పేర్కొనడంపై ఒక గమనిక:**
 టాపిక్‌లు క్రమంపై ఆధారపడి ఉంటాయి. [A, B] టాపిక్‌లతో లాగ్ ఉన్న లావాదేవీ కింది టాపిక్ ఫిల్టర్‌లతో సరిపోలుతుంది:
@@ -1542,7 +1542,7 @@ params: [
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
 // ఫలితం
 {
   "id":1,
@@ -1551,10 +1551,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topic
 }
 ```
 
-### eth_newBlockFilter {#eth-newblockfilter}
+### qau_newBlockFilter {#qau-newblockfilter}
 
 కొత్త బ్లాక్ వచ్చినప్పుడు తెలియజేయడానికి, నోడ్‌లో ఫిల్టర్‌ను సృష్టిస్తుంది.
-స్థితి మారిందో లేదో తనిఖీ చేయడానికి, [eth_getFilterChanges](#eth-getfilterchanges)ని కాల్ చేయండి.
+స్థితి మారిందో లేదో తనిఖీ చేయడానికి, [qau_getFilterChanges](#qau-getfilterchanges)ని కాల్ చేయండి.
 
 **పారామితులు**
 ఏమీ లేవు
@@ -1566,7 +1566,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topic
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newBlockFilter","params":[],"id":73}'
 // ఫలితం
 {
   "id":1,
@@ -1575,10 +1575,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],
 }
 ```
 
-### eth_newPendingTransactionFilter {#eth-newpendingtransactionfilter}
+### qau_newPendingTransactionFilter {#qau-newpendingtransactionfilter}
 
 కొత్త పెండింగ్ లావాదేవీలు వచ్చినప్పుడు తెలియజేయడానికి, నోడ్‌లో ఒక ఫిల్టర్‌ను సృష్టిస్తుంది.
-స్థితి మారిందో లేదో తనిఖీ చేయడానికి, [eth_getFilterChanges](#eth-getfilterchanges)కి కాల్ చేయండి.
+స్థితి మారిందో లేదో తనిఖీ చేయడానికి, [qau_getFilterChanges](#qau-getfilterchanges)కి కాల్ చేయండి.
 
 **పారామితులు**
 ఏమీ లేవు
@@ -1590,7 +1590,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newPendingTransactionFilter","params":[],"id":73}'
 // ఫలితం
 {
   "id":1,
@@ -1599,10 +1599,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter"
 }
 ```
 
-### eth_uninstallFilter {#eth-uninstallfilter}
+### qau_uninstallFilter {#qau-uninstallfilter}
 
 ఇచ్చిన ఐడీ గల ఫిల్టర్‌ను అన్‌ఇన్‌స్టాల్ చేస్తుంది. వాచ్ (watch) ఇకపై అవసరం లేనప్పుడు దీనిని ఎల్లప్పుడూ కాల్ చేయాలి.
-అదనంగా, కొంత సమయం పాటు [eth_getFilterChanges](#eth-getfilterchanges) తో అభ్యర్థించబడనప్పుడు ఫిల్టర్‌లు టైమ్‌అవుట్ అవుతాయి.
+అదనంగా, కొంత సమయం పాటు [qau_getFilterChanges](#qau-getfilterchanges) తో అభ్యర్థించబడనప్పుడు ఫిల్టర్‌లు టైమ్‌అవుట్ అవుతాయి.
 
 **పారామితులు**
 
@@ -1621,7 +1621,7 @@ params: [
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["0xb"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_uninstallFilter","params":["0xb"],"id":73}'
 // ఫలితం
 {
   "id":1,
@@ -1630,7 +1630,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["
 }
 ```
 
-### eth_getFilterChanges {#eth-getfilterchanges}
+### qau_getFilterChanges {#qau-getfilterchanges}
 
 ఫిల్టర్ కోసం పోలింగ్ పద్ధతి, ఇది గత పోల్ నుండి సంభవించిన లాగ్‌ల శ్రేణిని అందిస్తుంది.
 
@@ -1647,9 +1647,9 @@ params: [
 **రిటర్న్స్**
 `Array` - లాగ్ ఆబ్జెక్ట్‌ల శ్రేణి, లేదా గత పోల్ నుండి ఏమీ మారకపోతే ఖాళీ శ్రేణి.
 
-- `eth_newBlockFilter` తో సృష్టించబడిన ఫిల్టర్‌ల కోసం అందించేవి బ్లాక్ హాష్‌లు (`DATA`, 32 బైట్‌లు), ఉదా., `["0x3454645634534..."]`.
-- `eth_newPendingTransactionFilter ` తో సృష్టించబడిన ఫిల్టర్‌ల కోసం అందించేవి లావాదేవీ హాష్‌లు (`DATA`, 32 బైట్‌లు), ఉదా., `["0x6345343454645..."]`.
-- `eth_newFilter` తో సృష్టించబడిన ఫిల్టర్‌ల కోసం లాగ్‌లు కింది పారామితులతో కూడిన ఆబ్జెక్ట్‌లు:
+- `qau_newBlockFilter` తో సృష్టించబడిన ఫిల్టర్‌ల కోసం అందించేవి బ్లాక్ హాష్‌లు (`DATA`, 32 బైట్‌లు), ఉదా., `["0x3454645634534..."]`.
+- `qau_newPendingTransactionFilter ` తో సృష్టించబడిన ఫిల్టర్‌ల కోసం అందించేవి లావాదేవీ హాష్‌లు (`DATA`, 32 బైట్‌లు), ఉదా., `["0x6345343454645..."]`.
+- `qau_newFilter` తో సృష్టించబడిన ఫిల్టర్‌ల కోసం లాగ్‌లు కింది పారామితులతో కూడిన ఆబ్జెక్ట్‌లు:
   - `removed`: `TAG` - చైన్ పునర్‌వ్యవస్థీకరణ కారణంగా లాగ్ తీసివేయబడినప్పుడు `true`. ఇది చెల్లుబాటు అయ్యే లాగ్ అయితే `false`.
   - `logIndex`: `QUANTITY` - బ్లాక్‌లోని లాగ్ సూచిక స్థానం యొక్క పూర్ణాంకం. ఇది పెండింగ్ లాగ్ అయినప్పుడు `null`.
   - `transactionIndex`: `QUANTITY` - లాగ్ సృష్టించబడిన లావాదేవీల సూచిక స్థానం యొక్క పూర్ణాంకం. ఇది పెండింగ్ లాగ్ అయినప్పుడు `null`.
@@ -1664,7 +1664,7 @@ params: [
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":["0x16"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterChanges","params":["0x16"],"id":73}'
 // ఫలితం
 {
   "id":1,
@@ -1684,7 +1684,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":[
 }
 ```
 
-### eth_getFilterLogs {#eth-getfilterlogs}
+### qau_getFilterLogs {#qau-getfilterlogs}
 
 ఇచ్చిన id తో ఫిల్టర్‌కు సరిపోలే అన్ని లాగ్‌ల శ్రేణిని తిరిగి ఇస్తుంది.
 
@@ -1699,18 +1699,18 @@ params: [
 ```
 
 **రిటర్న్స్**
-[eth_getFilterChanges](#eth-getfilterchanges) చూడండి
+[qau_getFilterChanges](#qau-getfilterchanges) చూడండి
 
 **ఉదాహరణ**
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterLogs","params":["0x16"],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterLogs","params":["0x16"],"id":74}'
 ```
 
-ఫలితం కోసం [eth_getFilterChanges](#eth-getfilterchanges) చూడండి
+ఫలితం కోసం [qau_getFilterChanges](#qau-getfilterchanges) చూడండి
 
-### eth_getLogs {#eth-getlogs}
+### qau_getLogs {#qau-getlogs}
 
 ఇచ్చిన ఫిల్టర్ ఆబ్జెక్ట్‌కు సరిపోలే అన్ని లాగ్‌ల శ్రేణిని అందిస్తుంది.
 
@@ -1735,22 +1735,22 @@ params: [
 ```
 
 **అందించేవి**
-[eth_getFilterChanges](#eth-getfilterchanges) చూడండి
+[qau_getFilterChanges](#qau-getfilterchanges) చూడండి
 
 **ఉదాహరణ**
 
 ```js
 // అభ్యర్థన
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
 ```
 
-ఫలితం కోసం [eth_getFilterChanges](#eth-getfilterchanges) చూడండి
+ఫలితం కోసం [qau_getFilterChanges](#qau-getfilterchanges) చూడండి
 
 ## వాడుక ఉదాహరణ {#usage-example}
 
 ### జేసన్-ఆర్‌పీసీని ఉపయోగించి కాంట్రాక్ట్‌ను డిప్లాయ్ చేయడం {#deploying-contract}
 
-ఈ విభాగం కేవలం RPC ఇంటర్‌ఫేస్‌ను మాత్రమే ఉపయోగించి కాంట్రాక్ట్‌ను ఎలా డిప్లాయ్ చేయాలో చూపే ప్రదర్శనను కలిగి ఉంటుంది. ఈ సంక్లిష్టతను దాచిపెట్టి కాంట్రాక్ట్‌లను డిప్లాయ్ చేయడానికి ప్రత్యామ్నాయ మార్గాలు ఉన్నాయి—ఉదాహరణకు, RPC ఇంటర్‌ఫేస్ పైన నిర్మించబడిన [Web3.js](https://web3js.readthedocs.io/) మరియు [Web3.py](https://github.com/ethereum/web3.py) వంటి లైబ్రరీలను ఉపయోగించడం. ఈ అబ్‌స్ట్రాక్షన్‌లు సాధారణంగా అర్థం చేసుకోవడానికి సులభంగా ఉంటాయి మరియు తక్కువ లోపాలకు దారితీస్తాయి, కానీ అంతర్గతంగా (under the hood) ఏమి జరుగుతుందో అర్థం చేసుకోవడం ఇప్పటికీ సహాయకరంగా ఉంటుంది.
+ఈ విభాగం కేవలం RPC ఇంటర్‌ఫేస్‌ను మాత్రమే ఉపయోగించి కాంట్రాక్ట్‌ను ఎలా డిప్లాయ్ చేయాలో చూపే ప్రదర్శనను కలిగి ఉంటుంది. ఈ సంక్లిష్టతను దాచిపెట్టి కాంట్రాక్ట్‌లను డిప్లాయ్ చేయడానికి ప్రత్యామ్నాయ మార్గాలు ఉన్నాయి—ఉదాహరణకు, RPC ఇంటర్‌ఫేస్ పైన నిర్మించబడిన [Web3.js](https://web3js.readthedocs.io/) మరియు [Web3.py](https://github.com/quantaureum/web3.py) వంటి లైబ్రరీలను ఉపయోగించడం. ఈ అబ్‌స్ట్రాక్షన్‌లు సాధారణంగా అర్థం చేసుకోవడానికి సులభంగా ఉంటాయి మరియు తక్కువ లోపాలకు దారితీస్తాయి, కానీ అంతర్గతంగా (under the hood) ఏమి జరుగుతుందో అర్థం చేసుకోవడం ఇప్పటికీ సహాయకరంగా ఉంటుంది.
 
 కిందిది `Multiply7` అని పిలువబడే ఒక సరళమైన స్మార్ట్ కాంట్రాక్ట్, ఇది జేసన్-ఆర్‌పీసీ ఇంటర్‌ఫేస్‌ను ఉపయోగించి ఎథీరియం నోడ్‌కు డిప్లాయ్ చేయబడుతుంది. చదివేవారు ఇప్పటికే Geth నోడ్‌ను రన్ చేస్తున్నారని ఈ ట్యుటోరియల్ భావిస్తుంది. నోడ్‌లు మరియు క్లయింట్‌ల గురించి మరింత సమాచారం [ఇక్కడ](/developers/docs/nodes-and-clients/run-a-node) అందుబాటులో ఉంది. Geth కాని క్లయింట్‌ల కోసం HTTP జేసన్-ఆర్‌పీసీని ఎలా ప్రారంభించాలో చూడటానికి దయచేసి వ్యక్తిగత [క్లయింట్](/developers/docs/nodes-and-clients/) డాక్యుమెంటేషన్‌ను చూడండి. చాలా క్లయింట్‌లు అప్రమేయంగా `localhost:8545` పై సేవలందిస్తాయి.
 
@@ -1775,21 +1775,21 @@ geth --http --dev console 2>>geth.log
 [curl](https://curl.se) ఉపయోగించి కాయిన్‌బేస్ చిరునామాను (ఖాతాల శ్రేణి నుండి మొదటి చిరునామాను పొందడం ద్వారా) మరియు బ్యాలెన్స్‌ను తిరిగి పొందడం ద్వారా ఇంటర్‌ఫేస్ రన్ అవుతోందని మనం ధృవీకరించవచ్చు. ఈ ఉదాహరణలలోని డేటా మీ స్థానిక నోడ్‌లో భిన్నంగా ఉంటుందని దయచేసి గమనించండి. మీరు ఈ ఆదేశాలను ప్రయత్నించాలనుకుంటే, రెండవ curl అభ్యర్థనలోని అభ్యర్థన పారామితులను మొదటి దాని నుండి వచ్చిన ఫలితంతో భర్తీ చేయండి.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
 {"id":1,"jsonrpc":"2.0","result":["0x9b1d35635cc34752ca54713bb99d38614f63c955"]}
 
-curl --data '{"jsonrpc":"2.0","method":"eth_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
 {"id":2,"jsonrpc":"2.0","result":"0x1639e49bba16280000"}
 ```
 
 సంఖ్యలు హెక్స్ ఎన్‌కోడ్ చేయబడినందున, బ్యాలెన్స్ హెక్స్ స్ట్రింగ్‌గా Weiలో తిరిగి ఇవ్వబడుతుంది. మనం బ్యాలెన్స్‌ను ఈథర్‌లో ఒక సంఖ్యగా పొందాలనుకుంటే, Geth కన్సోల్ నుండి web3ని ఉపయోగించవచ్చు.
 
 ```javascript
-web3.fromWei("0x1639e49bba16280000", "ether")
+web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-ఇప్పుడు మన ప్రైవేట్ డెవలప్‌మెంట్ చైన్‌లో కొంత ఈథర్ ఉన్నందున, మనం కాంట్రాక్ట్‌ను డిప్లాయ్ చేయవచ్చు. EVMకి పంపగల బైట్‌కోడ్‌గా Multiply7 కాంట్రాక్ట్‌ను కంపైలింగ్ చేయడం మొదటి దశ. Solidity కంపైలర్ అయిన solcని ఇన్‌స్టాల్ చేయడానికి, [Solidity డాక్యుమెంటేషన్](https://docs.soliditylang.org/en/latest/installing-solidity.html)ను అనుసరించండి. ([మన ఉదాహరణ కోసం ఉపయోగించిన కంపైలర్ వెర్షన్](https://github.com/ethereum/solidity/releases/tag/v0.4.20)తో సరిపోలడానికి మీరు పాత `solc` విడుదలను ఉపయోగించాలనుకోవచ్చు.)
+ఇప్పుడు మన ప్రైవేట్ డెవలప్‌మెంట్ చైన్‌లో కొంత ఈథర్ ఉన్నందున, మనం కాంట్రాక్ట్‌ను డిప్లాయ్ చేయవచ్చు. EVMకి పంపగల బైట్‌కోడ్‌గా Multiply7 కాంట్రాక్ట్‌ను కంపైలింగ్ చేయడం మొదటి దశ. Solidity కంపైలర్ అయిన solcని ఇన్‌స్టాల్ చేయడానికి, [Solidity డాక్యుమెంటేషన్](https://docs.soliditylang.org/en/latest/installing-solidity.html)ను అనుసరించండి. ([మన ఉదాహరణ కోసం ఉపయోగించిన కంపైలర్ వెర్షన్](https://github.com/quantaureum/solidity/releases/tag/v0.4.20)తో సరిపోలడానికి మీరు పాత `solc` విడుదలను ఉపయోగించాలనుకోవచ్చు.)
 
 తదుపరి దశ Multiply7 కాంట్రాక్ట్‌ను EVMకి పంపగల బైట్‌కోడ్‌గా కంపైలింగ్ చేయడం.
 
@@ -1801,24 +1801,24 @@ Binary:
 6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029
 ```
 
-ఇప్పుడు మన వద్ద కంపైల్ చేయబడిన కోడ్ ఉన్నందున, దాన్ని డిప్లాయ్ చేయడానికి ఎంత గ్యాస్ ఖర్చవుతుందో మనం నిర్ణయించాలి. RPC ఇంటర్‌ఫేస్‌లో `eth_estimateGas` పద్ధతి ఉంది, అది మనకు అంచనాను ఇస్తుంది.
+ఇప్పుడు మన వద్ద కంపైల్ చేయబడిన కోడ్ ఉన్నందున, దాన్ని డిప్లాయ్ చేయడానికి ఎంత గ్యాస్ ఖర్చవుతుందో మనం నిర్ణయించాలి. RPC ఇంటర్‌ఫేస్‌లో `qau_estimateGas` పద్ధతి ఉంది, అది మనకు అంచనాను ఇస్తుంది.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":5,"result":"0x1c31e"}
 ```
 
 మరియు చివరగా కాంట్రాక్ట్‌ను డిప్లాయ్ చేయండి.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
 {"id":6,"jsonrpc":"2.0","result":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"}
 ```
 
-లావాదేవీ నోడ్ ద్వారా అంగీకరించబడుతుంది మరియు లావాదేవీ హాష్ తిరిగి ఇవ్వబడుతుంది. లావాదేవీని ట్రాక్ చేయడానికి ఈ హాష్‌ను ఉపయోగించవచ్చు. మన కాంట్రాక్ట్ ఎక్కడ డిప్లాయ్ చేయబడిందో ఆ చిరునామాను నిర్ణయించడం తదుపరి దశ. అమలు చేయబడిన ప్రతి లావాదేవీ ఒక రశీదును సృష్టిస్తుంది. ఈ రశీదులో లావాదేవీ ఏ బ్లాక్‌లో చేర్చబడింది మరియు EVM ద్వారా ఎంత గ్యాస్ ఉపయోగించబడింది వంటి లావాదేవీకి సంబంధించిన వివిధ సమాచారం ఉంటుంది. ఒక లావాదేవీ కాంట్రాక్ట్‌ను సృష్టిస్తే, అది కాంట్రాక్ట్ చిరునామాను కూడా కలిగి ఉంటుంది. మనం `eth_getTransactionReceipt` RPC పద్ధతితో రశీదును తిరిగి పొందవచ్చు.
+లావాదేవీ నోడ్ ద్వారా అంగీకరించబడుతుంది మరియు లావాదేవీ హాష్ తిరిగి ఇవ్వబడుతుంది. లావాదేవీని ట్రాక్ చేయడానికి ఈ హాష్‌ను ఉపయోగించవచ్చు. మన కాంట్రాక్ట్ ఎక్కడ డిప్లాయ్ చేయబడిందో ఆ చిరునామాను నిర్ణయించడం తదుపరి దశ. అమలు చేయబడిన ప్రతి లావాదేవీ ఒక రశీదును సృష్టిస్తుంది. ఈ రశీదులో లావాదేవీ ఏ బ్లాక్‌లో చేర్చబడింది మరియు EVM ద్వారా ఎంత గ్యాస్ ఉపయోగించబడింది వంటి లావాదేవీకి సంబంధించిన వివిధ సమాచారం ఉంటుంది. ఒక లావాదేవీ కాంట్రాక్ట్‌ను సృష్టిస్తే, అది కాంట్రాక్ట్ చిరునామాను కూడా కలిగి ఉంటుంది. మనం `qau_getTransactionReceipt` RPC పద్ధతితో రశీదును తిరిగి పొందవచ్చు.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":7,"result":{"blockHash":"0x77b1a4f6872b9066312de3744f60020cbd8102af68b1f6512a05b7619d527a4f","blockNumber":"0x1","contractAddress":"0x4d03d617d700cf81935d7f797f4e2ae719648262","cumulativeGasUsed":"0x1c31e","from":"0x9b1d35635cc34752ca54713bb99d38614f63c955","gasUsed":"0x1c31e","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","status":"0x1","to":null,"transactionHash":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf","transactionIndex":"0x0"}}
 ```
 
@@ -1826,9 +1826,9 @@ curl --data '{"jsonrpc":"2.0","method": "eth_getTransactionReceipt", "params": [
 
 #### స్మార్ట్ కాంట్రాక్ట్‌లతో పరస్పర చర్య చేయడం {#interacting-with-smart-contract}
 
-ఈ ఉదాహరణలో మనం కాంట్రాక్ట్ యొక్క `multiply` పద్ధతికి `eth_sendTransaction` ఉపయోగించి లావాదేవీని పంపుతాము.
+ఈ ఉదాహరణలో మనం కాంట్రాక్ట్ యొక్క `multiply` పద్ధతికి `qau_sendTransaction` ఉపయోగించి లావాదేవీని పంపుతాము.
 
-`eth_sendTransaction` కి అనేక ఆర్గ్యుమెంట్‌లు అవసరం, ప్రత్యేకంగా `from`, `to` మరియు `data`. `From` అనేది మన ఖాతా యొక్క పబ్లిక్ చిరునామా, మరియు `to` అనేది కాంట్రాక్ట్ చిరునామా. `data` ఆర్గ్యుమెంట్ ఏ పద్ధతిని పిలవాలి మరియు ఏ ఆర్గ్యుమెంట్‌లతో పిలవాలి అని నిర్వచించే పేలోడ్‌ను కలిగి ఉంటుంది. ఇక్కడే [ABI (అప్లికేషన్ బైనరీ ఇంటర్‌ఫేస్)](https://docs.soliditylang.org/en/latest/abi-spec.html) తెరపైకి వస్తుంది. ABI అనేది EVM కోసం డేటాను ఎలా నిర్వచించాలి మరియు ఎన్‌కోడ్ చేయాలో నిర్వచించే JSON ఫైల్.
+`qau_sendTransaction` కి అనేక ఆర్గ్యుమెంట్‌లు అవసరం, ప్రత్యేకంగా `from`, `to` మరియు `data`. `From` అనేది మన ఖాతా యొక్క పబ్లిక్ చిరునామా, మరియు `to` అనేది కాంట్రాక్ట్ చిరునామా. `data` ఆర్గ్యుమెంట్ ఏ పద్ధతిని పిలవాలి మరియు ఏ ఆర్గ్యుమెంట్‌లతో పిలవాలి అని నిర్వచించే పేలోడ్‌ను కలిగి ఉంటుంది. ఇక్కడే [ABI (అప్లికేషన్ బైనరీ ఇంటర్‌ఫేస్)](https://docs.soliditylang.org/en/latest/abi-spec.html) తెరపైకి వస్తుంది. ABI అనేది EVM కోసం డేటాను ఎలా నిర్వచించాలి మరియు ఎన్‌కోడ్ చేయాలో నిర్వచించే JSON ఫైల్.
 
 పేలోడ్ యొక్క బైట్‌లు కాంట్రాక్ట్‌లో ఏ పద్ధతిని పిలుస్తాయో నిర్వచిస్తాయి. ఇది ఫంక్షన్ పేరు మరియు దాని ఆర్గ్యుమెంట్ రకాలపై కేకాక్ హాష్ (Keccak hash) నుండి మొదటి 4 బైట్‌లు, హెక్స్ ఎన్‌కోడ్ చేయబడింది. మల్టిప్లై (multiply) ఫంక్షన్ uintని అంగీకరిస్తుంది, ఇది uint256కి మారుపేరు. ఇది మనకు దీన్ని ఇస్తుంది:
 
@@ -1848,7 +1848,7 @@ web3.sha3("multiply(uint256)").substring(0, 10)
 దీన్ని ఇప్పుడు నోడ్‌కు పంపవచ్చు:
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
 {"id":8,"jsonrpc":"2.0","result":"0x759cf065cbc22e9d779748dc53763854e5376eea07409e590c990eafc0869d74"}
 ```
 

@@ -17,11 +17,11 @@ Mafunzo haya yatakusaidia kusanidi ufuatiliaji wa nodi yako ya Geth ili uweze ku
 
 - Unapaswa kuwa tayari unaendesha mfumo wa Geth.
 - Hatua na mifano mingi ni kwa ajili ya mazingira ya Linux, ujuzi wa kimsingi wa terminal utasaidia.
-- Tazama muhtasari huu wa video wa vipimo vya Geth: [Kufuatilia miundombinu ya Ethereum na Péter Szilágyi](https://www.youtube.com/watch?v=cOBab8IJMYI).
+- Tazama muhtasari huu wa video wa vipimo vya Geth: [Kufuatilia miundombinu ya Quantaureum na Péter Szilágyi](https://www.youtube.com/watch?v=cOBab8IJMYI).
 
 ## Mkusanyiko wa ufuatiliaji {#monitoring-stack}
 
-Mteja wa Ethereum hukusanya data nyingi ambazo zinaweza kusomwa kwa mfumo wa hifadhidata ya mpangilio wa matukio. Ili kurahisisha ufuatiliaji, unaweza kuingiza haya kwenye programu ya kuona data. Kuna chaguzi nyingi zinazopatikana:
+Mteja wa Quantaureum hukusanya data nyingi ambazo zinaweza kusomwa kwa mfumo wa hifadhidata ya mpangilio wa matukio. Ili kurahisisha ufuatiliaji, unaweza kuingiza haya kwenye programu ya kuona data. Kuna chaguzi nyingi zinazopatikana:
 
 - [Prometheus](https://prometheus.io/) (mtindo wa kuvuta)
 - [InfluxDB](https://www.influxdata.com/get-influxdb/) (mtindo wa kusukuma)

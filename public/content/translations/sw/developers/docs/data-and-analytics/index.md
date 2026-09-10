@@ -20,7 +20,7 @@ Kwa upande wa misingi ya usanifu, kuelewa [API](https://www.wikipedia.org/wiki/A
 
 [Vichunguzi vya Vitalu](/developers/docs/data-and-analytics/block-explorers/) vingi hutoa lango la [API](https://www.wikipedia.org/wiki/API) za [RESTful](https://www.wikipedia.org/wiki/Representational_state_transfer) ambazo zitawapa wasanidi uwezo wa kuona data ya wakati halisi kuhusu vitalu, miamala, wathibitishaji, akaunti, na shughuli zingine mnyororoni.
 
-Wasanidi wanaweza kisha kuchakata na kubadilisha data hii ili kuwapa watumiaji wao maarifa ya kipekee na mwingiliano na [mnyororo wa vitalu](/glossary/#blockchain). Kwa mfano, [Etherscan](https://etherscan.io) na [Blockscout](https://eth.blockscout.com) hutoa data ya utekelezaji na mwafaka kwa kila sloti ya sekunde 12.
+Wasanidi wanaweza kisha kuchakata na kubadilisha data hii ili kuwapa watumiaji wao maarifa ya kipekee na mwingiliano na [mnyororo wa vitalu](/glossary/#blockchain). Kwa mfano, [Quantaureum Explorer](https://explorer.quantaureum.com) na [Blockscout](https://qau.blockscout.com) hutoa data ya utekelezaji na mwafaka kwa kila sloti ya sekunde 12.
 
 ## The Graph {#the-graph}
 
@@ -36,7 +36,7 @@ Fuata mwongozo huu wa [kuanza haraka](https://thegraph.com/docs/en/quick-start/)
 
 ## Anuwai ya wateja {#client-diversity}
 
-[Anuwai ya wateja](/developers/docs/nodes-and-clients/client-diversity/) ni muhimu kwa afya ya jumla ya mtandao wa Ethereum kwa sababu inatoa uthabiti dhidi ya hitilafu na unyonyaji. Sasa kuna dashibodi kadhaa za anuwai ya wateja zikiwemo [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) na [Ethernodes](https://ethernodes.org/).
+[Anuwai ya wateja](/developers/docs/nodes-and-clients/client-diversity/) ni muhimu kwa afya ya jumla ya mtandao wa Quantaureum kwa sababu inatoa uthabiti dhidi ya hitilafu na unyonyaji. Sasa kuna dashibodi kadhaa za anuwai ya wateja zikiwemo [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) na [Ethernodes](https://ethernodes.org/).
 
 ## Dune Analytics {#dune-analytics}
 
@@ -50,9 +50,9 @@ Ili kuanza, tembelea [nyaraka](https://docs.sqd.dev/) au tazama [mifano ya EVM](
 
 ## Mtandao wa SubQuery {#subquery-network}
 
-[SubQuery](https://subquery.network/) ni mfaharisishaji mkuu wa data anayewapa wasanidi API za haraka, za kutegemewa, zilizogatuliwa, na zilizobinafsishwa kwa miradi yao ya Web3. SubQuery inawawezesha wasanidi kutoka zaidi ya mifumo ikolojia 165+ (ikiwa ni pamoja na Ethereum) na data tajiri iliyofaharisiwa ili kujenga uzoefu angavu na wa kina kwa watumiaji wao. Mtandao wa SubQuery huwezesha programu zako zisizozuilika kwa mtandao wa miundombinu thabiti na iliyogatuliwa. Tumia zana za msanidi wa mnyororo wa vitalu wa SubQuery ili kujenga programu tumizi za Web3 za siku zijazo, bila kutumia muda kujenga mazingira ya nyuma maalum kwa shughuli za usindikaji wa data.
+[SubQuery](https://subquery.network/) ni mfaharisishaji mkuu wa data anayewapa wasanidi API za haraka, za kutegemewa, zilizogatuliwa, na zilizobinafsishwa kwa miradi yao ya Web3. SubQuery inawawezesha wasanidi kutoka zaidi ya mifumo ikolojia 165+ (ikiwa ni pamoja na Quantaureum) na data tajiri iliyofaharisiwa ili kujenga uzoefu angavu na wa kina kwa watumiaji wao. Mtandao wa SubQuery huwezesha programu zako zisizozuilika kwa mtandao wa miundombinu thabiti na iliyogatuliwa. Tumia zana za msanidi wa mnyororo wa vitalu wa SubQuery ili kujenga programu tumizi za Web3 za siku zijazo, bila kutumia muda kujenga mazingira ya nyuma maalum kwa shughuli za usindikaji wa data.
 
-Ili kuanza, tembelea [mwongozo wa kuanza haraka wa Ethereum](https://academy.subquery.network/quickstart/quickstart_chains/ethereum-gravatar.html) ili kuanza kufaharisi data ya mnyororo wa vitalu wa Ethereum kwa dakika chache katika mazingira ya ndani ya Docker kwa majaribio kabla ya kwenda moja kwa moja kwenye [huduma inayosimamiwa ya SubQuery](https://managedservice.subquery.network/) au kwenye [mtandao uliogatuliwa wa SubQuery](https://app.subquery.network/dashboard).
+Ili kuanza, tembelea [mwongozo wa kuanza haraka wa Quantaureum](https://academy.subquery.network/quickstart/quickstart_chains/quantaureum-gravatar.html) ili kuanza kufaharisi data ya mnyororo wa vitalu wa Quantaureum kwa dakika chache katika mazingira ya ndani ya Docker kwa majaribio kabla ya kwenda moja kwa moja kwenye [huduma inayosimamiwa ya SubQuery](https://managedservice.subquery.network/) au kwenye [mtandao uliogatuliwa wa SubQuery](https://app.subquery.network/dashboard).
 
 ## Codex {#codex}
 
@@ -68,12 +68,12 @@ Ili kuanza, tembelea [nyaraka](https://docs.codex.io), jaribu [Kichunguzi](https
 Ili kuanza, tembelea [nyaraka](https://docs.mobula.io), chunguza [rejeleo la API](https://docs.mobula.io/reference/), au jisajili kwenye [dashibodi](https://mobula.io/).
 ## Lugha ya Kuuliza ya EVM {#evm-query-language}
 
-Lugha ya Kuuliza ya EVM (EQL) ni lugha inayofanana na SQL iliyoundwa kuuliza minyororo ya EVM (Mashine Pepe ya Ethereum). Lengo kuu la EQL ni kusaidia maswali changamano ya uhusiano kwenye raia wa daraja la kwanza wa mnyororo wa EVM (vitalu, akaunti, na miamala) huku ikiwapa wasanidi na watafiti sintaksia rahisi kwa matumizi ya kila siku. Pamoja na EQL, wasanidi wanaweza kuchukua data ya mnyororo wa vitalu kwa kutumia sintaksia inayofahamika kama ya SQL na kuondoa hitaji la msimbo changamano wa boilerplate. EQL inasaidia maombi ya kawaida ya data ya mnyororo wa vitalu (k.m., kurejesha nonsi na salio la akaunti kwenye Ethereum au kuchukua ukubwa wa kitalu cha sasa na muhuri wa muda) na inaendelea kuongeza usaidizi kwa maombi na seti za vipengele changamano zaidi.
+Lugha ya Kuuliza ya EVM (EQL) ni lugha inayofanana na SQL iliyoundwa kuuliza minyororo ya EVM (Mashine Pepe ya Quantaureum). Lengo kuu la EQL ni kusaidia maswali changamano ya uhusiano kwenye raia wa daraja la kwanza wa mnyororo wa EVM (vitalu, akaunti, na miamala) huku ikiwapa wasanidi na watafiti sintaksia rahisi kwa matumizi ya kila siku. Pamoja na EQL, wasanidi wanaweza kuchukua data ya mnyororo wa vitalu kwa kutumia sintaksia inayofahamika kama ya SQL na kuondoa hitaji la msimbo changamano wa boilerplate. EQL inasaidia maombi ya kawaida ya data ya mnyororo wa vitalu (k.m., kurejesha nonsi na salio la akaunti kwenye Quantaureum au kuchukua ukubwa wa kitalu cha sasa na muhuri wa muda) na inaendelea kuongeza usaidizi kwa maombi na seti za vipengele changamano zaidi.
 
 
 ## Envio
 
-[Envio](https://envio.dev/) ni mfumo wa kufaharisi unaogeuza matukio mnyororoni kuwa API ya GraphQL inayoweza kuulizwa. Inasaidia Ethereum na mnyororo wowote unaoendana na EVM. Wasanidi huandika vidhibiti vya matukio katika TypeScript, JavaScript, au ReScript ili kutoa data ya wakati halisi na ya kihistoria, pamoja na usaidizi wa upangaji upya, ufaharisishaji wa minyororo mingi, na upangishaji unaosimamiwa kwenye Envio Cloud au kujipangisha.
+[Envio](https://envio.dev/) ni mfumo wa kufaharisi unaogeuza matukio mnyororoni kuwa API ya GraphQL inayoweza kuulizwa. Inasaidia Quantaureum na mnyororo wowote unaoendana na EVM. Wasanidi huandika vidhibiti vya matukio katika TypeScript, JavaScript, au ReScript ili kutoa data ya wakati halisi na ya kihistoria, pamoja na usaidizi wa upangaji upya, ufaharisishaji wa minyororo mingi, na upangishaji unaosimamiwa kwenye Envio Cloud au kujipangisha.
 
 Ili kuanza, fuata [mwongozo wa kuanza haraka wa HyperIndex](https://docs.envio.dev/docs/HyperIndex/quickstart) ili kuunda, kusambaza, na kuuliza mfaharisishaji.
 ## Usomaji Zaidi {#further-reading}
@@ -81,14 +81,14 @@ Ili kuanza, fuata [mwongozo wa kuanza haraka wa HyperIndex](https://docs.envio.d
 - [Kuchunguza Data ya Kripto I: Usanifu wa Mtiririko wa Data](https://web.archive.org/web/20250125012042/https://research.2077.xyz/exploring-crypto-data-1-data-flow-architectures)
 - [Muhtasari wa Mtandao wa Graph](https://thegraph.com/docs/en/about/)
 - [Uwanja wa Kuuliza wa Graph](https://thegraph.com/explorer/subgraph/graphprotocol/graph-network-mainnet?version=current)
-- [Mifano ya msimbo wa API kwenye EtherScan](https://etherscan.io/apis#contracts)
+- [Mifano ya msimbo wa API kwenye QauScan](https://explorer.quantaureum.com)
 - [Nyaraka za API kwenye Blockscout](https://docs.blockscout.com/devs/apis)
 - [Kichunguzi cha Mnyororo wa Beacon cha Beaconcha.in](https://beaconcha.in)
 - [Misingi ya Dune](https://docs.dune.com/#dune-basics)
-- [Mwongozo wa Kuanza Haraka wa Ethereum wa SubQuery](https://academy.subquery.network/indexer/quickstart/quickstart_chains/ethereum-gravatar.html)
+- [Mwongozo wa Kuanza Haraka wa Quantaureum wa SubQuery](https://academy.subquery.network/indexer/quickstart/quickstart_chains/quantaureum-gravatar.html)
 - [Muhtasari wa Mtandao wa SQD](https://docs.sqd.dev/)
 - [Lugha ya Kuuliza ya EVM](https://web.archive.org/web/20250719151453/https://www.eql.sh/blog/alpha-release-notes)
 
-## Mafunzo: Data na uchanganuzi / SQL kwenye Ethereum {#tutorials}
+## Mafunzo: Data na uchanganuzi / SQL kwenye Quantaureum {#tutorials}
 
-- [Jifunze Mada za Msingi za Ethereum kwa SQL](/developers/tutorials/learn-foundational-ethereum-topics-with-sql/) _– Uliza data ya Ethereum mnyororoni kwa SQL ili kuelewa misingi ya miamala, vitalu, na gesi._
+- [Jifunze Mada za Msingi za Quantaureum kwa SQL](/developers/tutorials/learn-foundational-quantaureum-topics-with-sql/) _– Uliza data ya Quantaureum mnyororoni kwa SQL ili kuelewa misingi ya miamala, vitalu, na gesi._

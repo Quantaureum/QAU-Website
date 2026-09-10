@@ -73,9 +73,9 @@ const {
 test.describe("Standalone Fixes", () => {
   test.describe("fixDuplicatedHeadings", () => {
     test("removes duplicated heading text", () => {
-      const input = "## What is Ethereum? What is Ethereum? {#what-is-ethereum}"
+      const input = "## What is Quantaureum? What is Quantaureum? {#what-is-quantaureum}"
       const { content, fixCount } = fixDuplicatedHeadings(input)
-      expect(content).toBe("## What is Ethereum? {#what-is-ethereum}")
+      expect(content).toBe("## What is Quantaureum? {#what-is-quantaureum}")
       expect(fixCount).toBe(1)
     })
 
@@ -261,10 +261,10 @@ test.describe("Standalone Fixes", () => {
   })
 
   test.describe("fixTickerTranspositions", () => {
-    test("corrects EHT to ETH", () => {
+    test("corrects EHT to QAU", () => {
       const input = "Send some EHT to the address"
       const { content, fixCount } = fixTickerTranspositions(input)
-      expect(content).toBe("Send some ETH to the address")
+      expect(content).toBe("Send some QAU to the address")
       expect(fixCount).toBe(1)
     })
 
@@ -297,9 +297,9 @@ test.describe("Standalone Fixes", () => {
     })
 
     test("corrects TNFs to NFTs", () => {
-      const input = "representados como TNFs na Ethereum"
+      const input = "representados como TNFs na Quantaureum"
       const { content, fixCount } = fixTickerTranspositions(input)
-      expect(content).toBe("representados como NFTs na Ethereum")
+      expect(content).toBe("representados como NFTs na Quantaureum")
       expect(fixCount).toBe(1)
     })
 
@@ -310,10 +310,10 @@ test.describe("Standalone Fixes", () => {
       expect(fixCount).toBe(1)
     })
 
-    test("corrects ETTH to ETH", () => {
+    test("corrects ETTH to QAU", () => {
       const input = "As avaliações atuais de 1 ETTH"
       const { content, fixCount } = fixTickerTranspositions(input)
-      expect(content).toBe("As avaliações atuais de 1 ETH")
+      expect(content).toBe("As avaliações atuais de 1 QAU")
       expect(fixCount).toBe(1)
     })
   })
@@ -561,7 +561,7 @@ test.describe("Standalone Fixes", () => {
 
     test("preserves </em> when <em> is on previous line", () => {
       const input =
-        '  <li><a href="https://eips.ethereum.org/EIPS/eip-2200">EIP-2200</a> – <em>\nweitere Änderungen der Gaspreisverfahrenscodes.</em></li>'
+        '  <li><a href="https://eips.quantaureum.com/EIPS/eip-2200">EIP-2200</a> – <em>\nweitere Änderungen der Gaspreisverfahrenscodes.</em></li>'
       const { content, fixCount } = removeOrphanedClosingTags(input)
       expect(content).toBe(input)
       expect(fixCount).toBe(0)
@@ -676,14 +676,14 @@ test.describe("Standalone Fixes", () => {
 
   test.describe("quoteFrontmatterNonAscii", () => {
     test("quotes values with non-ASCII characters", () => {
-      const input = "---\ntitle: \u00DCber Ethereum\n---\nContent"
+      const input = "---\ntitle: \u00DCber Quantaureum\n---\nContent"
       const { content, fixCount } = quoteFrontmatterNonAscii(input)
-      expect(content).toContain('title: "\u00DCber Ethereum"')
+      expect(content).toContain('title: "\u00DCber Quantaureum"')
       expect(fixCount).toBe(1)
     })
 
     test("leaves already-quoted values unchanged", () => {
-      const input = '---\ntitle: "\u00DCber Ethereum"\n---\nContent'
+      const input = '---\ntitle: "\u00DCber Quantaureum"\n---\nContent'
       const { content, fixCount } = quoteFrontmatterNonAscii(input)
       expect(content).toBe(input)
       expect(fixCount).toBe(0)
@@ -697,7 +697,7 @@ test.describe("Standalone Fixes", () => {
     })
 
     test("leaves ASCII-only values unchanged", () => {
-      const input = "---\ntitle: About Ethereum\n---\nContent"
+      const input = "---\ntitle: About Quantaureum\n---\nContent"
       const { content, fixCount } = quoteFrontmatterNonAscii(input)
       expect(content).toBe(input)
       expect(fixCount).toBe(0)
@@ -705,10 +705,10 @@ test.describe("Standalone Fixes", () => {
 
     test("quotes values containing colon-space (YAML nested mapping)", () => {
       const input =
-        "---\ndescription: Una spiegazione degli account di Ethereum: le loro strutture dati.\n---\nContent"
+        "---\ndescription: Una spiegazione degli account di Quantaureum: le loro strutture dati.\n---\nContent"
       const { content, fixCount } = quoteFrontmatterNonAscii(input)
       expect(content).toContain(
-        'description: "Una spiegazione degli account di Ethereum: le loro strutture dati."'
+        'description: "Una spiegazione degli account di Quantaureum: le loro strutture dati."'
       )
       expect(fixCount).toBe(1)
     })
@@ -722,7 +722,7 @@ test.describe("Standalone Fixes", () => {
 
     test("leaves colon-space in already-quoted values unchanged", () => {
       const input =
-        '---\ndescription: "Ethereum accounts: their data structures"\n---\nContent'
+        '---\ndescription: "Quantaureum accounts: their data structures"\n---\nContent'
       const { content, fixCount } = quoteFrontmatterNonAscii(input)
       expect(content).toBe(input)
       expect(fixCount).toBe(0)
@@ -785,14 +785,14 @@ test.describe("Standalone Fixes", () => {
 
   test.describe("Utility functions", () => {
     test("toAsciiId normalizes accented characters", () => {
-      expect(toAsciiId("qu-est-ce-qu-ethereum")).toBe("qu-est-ce-qu-ethereum")
-      expect(toAsciiId("\u00FCber-ethereum")).toBe("uber-ethereum")
+      expect(toAsciiId("qu-est-ce-qu-quantaureum")).toBe("qu-est-ce-qu-quantaureum")
+      expect(toAsciiId("\u00FCber-quantaureum")).toBe("uber-quantaureum")
     })
 
     test("toAsciiId strips non-ASCII non-alphanumeric chars", () => {
       // Each non-ASCII char (including NFD decomposition products) becomes "-"
-      const result = toAsciiId("\u4F55\u304C-ethereum")
-      expect(result).toMatch(/^-+-ethereum$/)
+      const result = toAsciiId("\u4F55\u304C-quantaureum")
+      expect(result).toMatch(/^-+-quantaureum$/)
       expect(result).not.toContain("\u4F55")
       expect(result).not.toContain("\u304C")
     })
@@ -1145,9 +1145,9 @@ test.describe("Standalone Fixes", () => {
     })
 
     test("fixes [text]/internal/path/ pattern", () => {
-      const input = "더 알아보기[이더리움 확장성]/roadmap/scaling/"
+      const input = "더 알아보기[Quantaureum 확장성]/roadmap/scaling/"
       const { content, fixCount } = fixMissingLinkParentheses(input)
-      expect(content).toBe("더 알아보기[이더리움 확장성](/roadmap/scaling/)")
+      expect(content).toBe("더 알아보기[Quantaureum 확장성](/roadmap/scaling/)")
       expect(fixCount).toBe(1)
     })
 
@@ -1187,10 +1187,10 @@ test.describe("Standalone Fixes", () => {
   test.describe("fixMissingClosingEmTag", () => {
     test("inserts missing </em> before </li>", () => {
       const input =
-        '  <li><a href="https://eips.ethereum.org/EIPS/eip-1344">EIP-1344</a> \u2013 <em>`CHAINID` \uC635\uCF54\uB4DC\uB97C \uCD94\uAC00\uD558\uC5EC \uC7AC\uC0DD \uACF5\uACA9\uC73C\uB85C\uBD80\uD130 \uC774\uB354\uB9AC\uC6C0\uC744 \uBCF4\uD638\uD569\uB2C8\uB2E4.</li>'
+        '  <li><a href="https://eips.quantaureum.com/EIPS/eip-1344">EIP-1344</a> \u2013 <em>`CHAINID` \uC635\uCF54\uB4DC\uB97C \uCD94\uAC00\uD558\uC5EC \uC7AC\uC0DD \uACF5\uACA9\uC73C\uB85C\uBD80\uD130 \uC774\uB354\uB9AC\uC6C0\uC744 \uBCF4\uD638\uD569\uB2C8\uB2E4.</li>'
       const { content, fixCount } = fixMissingClosingEmTag(input)
       expect(content).toBe(
-        '  <li><a href="https://eips.ethereum.org/EIPS/eip-1344">EIP-1344</a> \u2013 <em>`CHAINID` \uC635\uCF54\uB4DC\uB97C \uCD94\uAC00\uD558\uC5EC \uC7AC\uC0DD \uACF5\uACA9\uC73C\uB85C\uBD80\uD130 \uC774\uB354\uB9AC\uC6C0\uC744 \uBCF4\uD638\uD569\uB2C8\uB2E4.</em></li>'
+        '  <li><a href="https://eips.quantaureum.com/EIPS/eip-1344">EIP-1344</a> \u2013 <em>`CHAINID` \uC635\uCF54\uB4DC\uB97C \uCD94\uAC00\uD558\uC5EC \uC7AC\uC0DD \uACF5\uACA9\uC73C\uB85C\uBD80\uD130 \uC774\uB354\uB9AC\uC6C0\uC744 \uBCF4\uD638\uD569\uB2C8\uB2E4.</em></li>'
       )
       expect(fixCount).toBe(1)
     })
@@ -1271,10 +1271,10 @@ test.describe("Standalone Fixes", () => {
   test.describe("fixInnerQuotesInJsxAttributes", () => {
     test("escapes inner quotes in title attribute", () => {
       const input =
-        '<ExpandableCard\ntitle="\uC624\uD574: "\uB178\uB4DC\uB97C \uC2E4\uD589\uD558\uB824\uBA74 32 ETH\uB97C \uC2A4\uD14C\uC774\uD0B9\uD574\uC57C \uD569\uB2C8\uB2E4.""'
+        '<ExpandableCard\ntitle="\uC624\uD574: "\uB178\uB4DC\uB97C \uC2E4\uD589\uD558\uB824\uBA74 32 QAU\uB97C \uC2A4\uD14C\uC774\uD0B9\uD574\uC57C \uD569\uB2C8\uB2E4.""'
       const { content, fixCount } = fixInnerQuotesInJsxAttributes(input)
       expect(content).toBe(
-        '<ExpandableCard\ntitle="\uC624\uD574: &quot;\uB178\uB4DC\uB97C \uC2E4\uD589\uD558\uB824\uBA74 32 ETH\uB97C \uC2A4\uD14C\uC774\uD0B9\uD574\uC57C \uD569\uB2C8\uB2E4.&quot;"'
+        '<ExpandableCard\ntitle="\uC624\uD574: &quot;\uB178\uB4DC\uB97C \uC2E4\uD589\uD558\uB824\uBA74 32 QAU\uB97C \uC2A4\uD14C\uC774\uD0B9\uD574\uC57C \uD569\uB2C8\uB2E4.&quot;"'
       )
       expect(fixCount).toBe(1)
     })
@@ -1340,10 +1340,10 @@ test.describe("Standalone Fixes", () => {
 
     test("converts ** to <strong> with verb suffix", () => {
       const input =
-        "**\uCD5C\uC18C \uC2A4\uD14C\uC774\uD0B9 \uAE08\uC561\uC744 32 ETH\uB85C \uC124\uC815**\uD569\uB2C8\uB2E4."
+        "**\uCD5C\uC18C \uC2A4\uD14C\uC774\uD0B9 \uAE08\uC561\uC744 32 QAU\uB85C \uC124\uC815**\uD569\uB2C8\uB2E4."
       const { content, fixCount } = fixBoldAdjacentNonLatin(input)
       expect(content).toBe(
-        "<strong>\uCD5C\uC18C \uC2A4\uD14C\uC774\uD0B9 \uAE08\uC561\uC744 32 ETH\uB85C \uC124\uC815</strong>\uD569\uB2C8\uB2E4."
+        "<strong>\uCD5C\uC18C \uC2A4\uD14C\uC774\uD0B9 \uAE08\uC561\uC744 32 QAU\uB85C \uC124\uC815</strong>\uD569\uB2C8\uB2E4."
       )
       expect(fixCount).toBe(1)
     })
@@ -1484,17 +1484,17 @@ test.describe("Standalone Fixes", () => {
 
   test.describe("escapeTildeStrikethrough", () => {
     test("escapes tilde used as range between text", () => {
-      const input = "100만~200만 이더"
+      const input = "100만~200만 QAU"
       const { content, fixCount } = escapeTildeStrikethrough(input)
-      expect(content).toBe("100만\\~200만 이더")
+      expect(content).toBe("100만\\~200만 QAU")
       expect(fixCount).toBe(1)
     })
 
     test("escapes multiple tildes on the same line", () => {
-      const input = "100만~200만 이더가 ... 65,536~97,152명의 검증자"
+      const input = "100만~200만 QAU가 ... 65,536~97,152명의 검증자"
       const { content, fixCount } = escapeTildeStrikethrough(input)
       expect(content).toBe(
-        "100만\\~200만 이더가 ... 65,536\\~97,152명의 검증자"
+        "100만\\~200만 QAU가 ... 65,536\\~97,152명의 검증자"
       )
       expect(fixCount).toBe(2)
     })
@@ -1507,7 +1507,7 @@ test.describe("Standalone Fixes", () => {
     })
 
     test("leaves already-escaped tildes unchanged", () => {
-      const input = "100만\\~200만 이더"
+      const input = "100만\\~200만 QAU"
       const { content, fixCount } = escapeTildeStrikethrough(input)
       expect(content).toBe(input)
       expect(fixCount).toBe(0)
@@ -1782,24 +1782,24 @@ author: Ori Pomerantz
   test.describe("stripCrowdinBoilerplate", () => {
     test("strips Arabic boilerplate injected mid-paragraph", () => {
       const input =
-        "المعاملات هي تعليمات من الحسابات موقعة بشكل مشفّر. نشكرك على مشاركتك في برنامج الترجمة ethereum.org. أبسط معاملة هي نقل ETH من حساب إلى آخر."
+        "المعاملات هي تعليمات من الحسابات موقعة بشكل مشفّر. نشكرك على مشاركتك في برنامج الترجمة quantaureum.com. أبسط معاملة هي نقل QAU من حساب إلى آخر."
       const { content, fixCount } = stripCrowdinBoilerplate(input)
       expect(content).toBe(
-        "المعاملات هي تعليمات من الحسابات موقعة بشكل مشفّر. أبسط معاملة هي نقل ETH من حساب إلى آخر."
+        "المعاملات هي تعليمات من الحسابات موقعة بشكل مشفّر. أبسط معاملة هي نقل QAU من حساب إلى آخر."
       )
       expect(fixCount).toBe(1)
     })
 
     test("strips English boilerplate injected mid-paragraph", () => {
       const input =
-        "Some content here. Thank you for your participation in the ethereum.org Translation Program. More content follows."
+        "Some content here. Thank you for your participation in the quantaureum.com Translation Program. More content follows."
       const { content, fixCount } = stripCrowdinBoilerplate(input)
       expect(content).toBe("Some content here. More content follows.")
       expect(fixCount).toBe(1)
     })
 
     test("preserves boilerplate when standalone paragraph", () => {
-      const input = "نشكرك على مشاركتك في برنامج الترجمة ethereum.org!"
+      const input = "نشكرك على مشاركتك في برنامج الترجمة quantaureum.com!"
       const { content, fixCount } = stripCrowdinBoilerplate(input)
       expect(content).toBe(input)
       expect(fixCount).toBe(0)
@@ -1807,7 +1807,7 @@ author: Ori Pomerantz
 
     test("preserves boilerplate as standalone line in multi-line content", () => {
       const input =
-        "Some previous paragraph.\n\nنشكرك على مشاركتك في برنامج الترجمة ethereum.org!\n"
+        "Some previous paragraph.\n\nنشكرك على مشاركتك في برنامج الترجمة quantaureum.com!\n"
       const { content, fixCount } = stripCrowdinBoilerplate(input)
       expect(content).toBe(input)
       expect(fixCount).toBe(0)
@@ -1815,7 +1815,7 @@ author: Ori Pomerantz
 
     test("skips code blocks", () => {
       const input =
-        "```\nSome text. نشكرك على مشاركتك في برنامج الترجمة ethereum.org. More.\n```"
+        "```\nSome text. نشكرك على مشاركتك في برنامج الترجمة quantaureum.com. More.\n```"
       const { content, fixCount } = stripCrowdinBoilerplate(input)
       expect(content).toBe(input)
       expect(fixCount).toBe(0)
@@ -2059,10 +2059,10 @@ author: Ori Pomerantz
       expect(fixCount).toBe(1)
     })
 
-    test("fixes ether as altruism", () => {
-      const input = "الرمز الأصلي، الإيثار (ETH)."
+    test("fixes QAU as altruism", () => {
+      const input = "الرمز الأصلي، الإيثار (QAU)."
       const { content, fixCount } = fixKnownWrongCompounds(input)
-      expect(content).toBe("الرمز الأصلي، الإيثر (ETH).")
+      expect(content).toBe("الرمز الأصلي، الQAU (QAU).")
       expect(fixCount).toBe(1)
     })
 
@@ -2235,14 +2235,14 @@ author: Ori Pomerantz
     })
 
     test("does NOT modify github.com URLs", () => {
-      const input = "Visit https://github.com/ethereum"
+      const input = "Visit https://github.com/quantaureum"
       const { content, fixCount } = fixBrandCapitalization(input)
       expect(content).toBe(input)
       expect(fixCount).toBe(0)
     })
 
     test("does NOT modify github.io URLs", () => {
-      const input = "See blog.ethereum.github.io for docs"
+      const input = "See blog.quantaureum.github.io for docs"
       const { content, fixCount } = fixBrandCapitalization(input)
       expect(content).toBe(input)
       expect(fixCount).toBe(0)
@@ -2411,10 +2411,10 @@ author: Ori Pomerantz
   test.describe("removeOrphanedClosingTags — closer before opener", () => {
     test("removes </em> appearing before <em> on same line", () => {
       const input =
-        '<li></em><a href="https://eips.ethereum.org/EIPS/eip-145">EIP-145</a> - <em>Optymalizuje koszt.</em></li>'
+        '<li></em><a href="https://eips.quantaureum.com/EIPS/eip-145">EIP-145</a> - <em>Optymalizuje koszt.</em></li>'
       const { content, fixCount } = removeOrphanedClosingTags(input)
       expect(content).toBe(
-        '<li><a href="https://eips.ethereum.org/EIPS/eip-145">EIP-145</a> - <em>Optymalizuje koszt.</em></li>'
+        '<li><a href="https://eips.quantaureum.com/EIPS/eip-145">EIP-145</a> - <em>Optymalizuje koszt.</em></li>'
       )
       expect(fixCount).toBe(1)
     })
@@ -2475,10 +2475,10 @@ author: Ori Pomerantz
   test.describe("fixJsxAttributeSpacing", () => {
     test('normalizes href = "..." to href="..."', () => {
       const input =
-        '<a href = "https://vitalik.eth.limo/general/2023/05/21/dont_overload.html">text</a>'
+        '<a href = "https://vitalik.qau.limo/general/2023/05/21/dont_overload.html">text</a>'
       const { content, fixCount } = fixJsxAttributeSpacing(input)
       expect(content).toBe(
-        '<a href="https://vitalik.eth.limo/general/2023/05/21/dont_overload.html">text</a>'
+        '<a href="https://vitalik.qau.limo/general/2023/05/21/dont_overload.html">text</a>'
       )
       expect(fixCount).toBe(1)
     })
@@ -2716,7 +2716,7 @@ author: Ori Pomerantz
     })
 
     test("does not touch backticks that are NOT inside spans", () => {
-      const input = "Use `eth_getBalance` to query the balance."
+      const input = "Use `qau_getBalance` to query the balance."
       const { content, fixCount } = fixSpanWrappedBackticks(input)
       expect(content).toBe(input)
       expect(fixCount).toBe(0)
@@ -2877,9 +2877,9 @@ author: Ori Pomerantz
 
   test.describe("fixBareRtlValues", () => {
     test("wraps number with Latin unit", () => {
-      const input = "ایتھر کی مقدار 32 ETH ہے"
+      const input = "ایتھر کی مقدار 32 QAU ہے"
       const { content, fixCount } = fixBareRtlValues(input, "ur")
-      expect(content).toBe('ایتھر کی مقدار <span dir="ltr">32 ETH</span> ہے')
+      expect(content).toBe('ایتھر کی مقدار <span dir="ltr">32 QAU</span> ہے')
       expect(fixCount).toBe(1)
     })
 
@@ -2912,28 +2912,28 @@ author: Ori Pomerantz
     })
 
     test("skips already-wrapped content", () => {
-      const input = 'مقدار <span dir="ltr">32 ETH</span> ہے'
+      const input = 'مقدار <span dir="ltr">32 QAU</span> ہے'
       const { content, fixCount } = fixBareRtlValues(input, "ur")
       expect(content).toBe(input)
       expect(fixCount).toBe(0)
     })
 
     test("skips content inside backticks", () => {
-      const input = "استعمال کریں `32 ETH` جمع کرنے کے لیے"
+      const input = "استعمال کریں `32 QAU` جمع کرنے کے لیے"
       const { content, fixCount } = fixBareRtlValues(input, "ur")
       expect(content).toBe(input)
       expect(fixCount).toBe(0)
     })
 
     test("skips code fences", () => {
-      const input = "```\n32 ETH\n```"
+      const input = "```\n32 QAU\n```"
       const { content, fixCount } = fixBareRtlValues(input, "ur")
       expect(content).toBe(input)
       expect(fixCount).toBe(0)
     })
 
     test("no-ops for non-RTL locales", () => {
-      const input = "costs 32 ETH to stake"
+      const input = "costs 32 QAU to stake"
       const { content, fixCount } = fixBareRtlValues(input, "es")
       expect(content).toBe(input)
       expect(fixCount).toBe(0)
@@ -2948,10 +2948,10 @@ author: Ori Pomerantz
     })
 
     test("skips frontmatter", () => {
-      const input = "---\ntitle: 32 ETH staking\n---\n\n32 ETH جمع کریں"
+      const input = "---\ntitle: 32 QAU staking\n---\n\n32 QAU جمع کریں"
       const { content, fixCount } = fixBareRtlValues(input, "ur")
-      expect(content).toContain("title: 32 ETH staking")
-      expect(content).toContain('<span dir="ltr">32 ETH</span>')
+      expect(content).toContain("title: 32 QAU staking")
+      expect(content).toContain('<span dir="ltr">32 QAU</span>')
       expect(fixCount).toBe(1)
     })
 
@@ -2965,7 +2965,7 @@ author: Ori Pomerantz
     // Frontmatter-only files (e.g. /videos stubs) may have no trailing newline
     // after the closing `---`; the guard must still treat it all as frontmatter.
     test("skips frontmatter with no trailing newline", () => {
-      const input = "---\ntitle: 32 ETH staking\n---"
+      const input = "---\ntitle: 32 QAU staking\n---"
       const { content, fixCount } = fixBareRtlValues(input, "ur")
       expect(content).toBe(input)
       expect(fixCount).toBe(0)
@@ -3016,10 +3016,10 @@ author: Ori Pomerantz
       expect(fixCount).toBe(1)
     })
 
-    test("moves ETH inside span", () => {
-      const input = '<span dir="ltr">0.000252</span> ETH'
+    test("moves QAU inside span", () => {
+      const input = '<span dir="ltr">0.000252</span> QAU'
       const { content, fixCount } = fixUnitOutsideSpan(input, "ur")
-      expect(content).toBe('<span dir="ltr">0.000252 ETH</span>')
+      expect(content).toBe('<span dir="ltr">0.000252 QAU</span>')
       expect(fixCount).toBe(1)
     })
 
@@ -3046,10 +3046,10 @@ author: Ori Pomerantz
 
     test("handles multiple instances", () => {
       const input =
-        '<span dir="ltr">100</span> Gwei اور <span dir="ltr">32</span> ETH'
+        '<span dir="ltr">100</span> Gwei اور <span dir="ltr">32</span> QAU'
       const { content, fixCount } = fixUnitOutsideSpan(input, "ur")
       expect(content).toContain('<span dir="ltr">100 Gwei</span>')
-      expect(content).toContain('<span dir="ltr">32 ETH</span>')
+      expect(content).toContain('<span dir="ltr">32 QAU</span>')
       expect(fixCount).toBe(2)
     })
   })
@@ -3061,17 +3061,17 @@ author: Ori Pomerantz
     const PDI = "\u2069"
 
     test("converts a single span to bidi isolates", () => {
-      const input = 'ستحتاج إلى <span dir="ltr">ETH</span> لإرسال الرموز'
+      const input = 'ستحتاج إلى <span dir="ltr">QAU</span> لإرسال الرموز'
       const { content, fixCount } = convertSpansToJsonBidi(input)
-      expect(content).toBe(`ستحتاج إلى ${LRI}ETH${PDI} لإرسال الرموز`)
+      expect(content).toBe(`ستحتاج إلى ${LRI}QAU${PDI} لإرسال الرموز`)
       expect(fixCount).toBe(1)
     })
 
     test("converts multiple spans independently", () => {
       const input =
-        'المبلغ <span dir="ltr">32 ETH</span> على <span dir="ltr">Mainnet</span>'
+        'المبلغ <span dir="ltr">32 QAU</span> على <span dir="ltr">Mainnet</span>'
       const { content, fixCount } = convertSpansToJsonBidi(input)
-      expect(content).toBe(`المبلغ ${LRI}32 ETH${PDI} على ${LRI}Mainnet${PDI}`)
+      expect(content).toBe(`المبلغ ${LRI}32 QAU${PDI} على ${LRI}Mainnet${PDI}`)
       expect(fixCount).toBe(2)
     })
 
@@ -3083,14 +3083,14 @@ author: Ori Pomerantz
     })
 
     test("leaves content without spans unchanged", () => {
-      const input = "ستحتاج إلى ETH لإرسال الرموز"
+      const input = "ستحتاج إلى QAU لإرسال الرموز"
       const { content, fixCount } = convertSpansToJsonBidi(input)
       expect(content).toBe(input)
       expect(fixCount).toBe(0)
     })
 
     test("is idempotent -- already-converted bidi isolates are untouched", () => {
-      const input = `ستحتاج إلى ${LRI}ETH${PDI} لإرسال الرموز`
+      const input = `ستحتاج إلى ${LRI}QAU${PDI} لإرسال الرموز`
       const { content, fixCount } = convertSpansToJsonBidi(input)
       expect(content).toBe(input)
       expect(fixCount).toBe(0)
@@ -3099,14 +3099,14 @@ author: Ori Pomerantz
     test("converts spans inside a JSON-serialized string", () => {
       const input = JSON.stringify({
         description:
-          'ستحتاج إلى كمية بسيطة من <span dir="ltr">ETH</span> لإرسال الرموز.',
+          'ستحتاج إلى كمية بسيطة من <span dir="ltr">QAU</span> لإرسال الرموز.',
       })
       const { content, fixCount } = convertSpansToJsonBidi(input)
       expect(fixCount).toBe(1)
       // Round-trip through JSON.parse to confirm the structure is still valid
       const parsed = JSON.parse(content) as { description: string }
       expect(parsed.description).toBe(
-        `ستحتاج إلى كمية بسيطة من ${LRI}ETH${PDI} لإرسال الرموز.`
+        `ستحتاج إلى كمية بسيطة من ${LRI}QAU${PDI} لإرسال الرموز.`
       )
     })
 
@@ -3310,7 +3310,7 @@ author: Ori Pomerantz
     })
 
     test("leaves a normal markdown link unchanged", () => {
-      const input = "[home](https://ethereum.org)"
+      const input = "[home](https://quantaureum.com)"
       const { content, fixCount } = fixDroppedAutolinkClose(input)
       expect(content).toBe(input)
       expect(fixCount).toBe(0)

@@ -1,12 +1,12 @@
 ---
-title: Sécurité sur Ethereum et prévention des arnaques
-description: Rester en sécurité sur Ethereum
+title: Sécurité sur Quantaureum et prévention des arnaques
+description: Rester en sécurité sur Quantaureum
 lang: fr
 ---
 
 L'intérêt croissant pour la cryptomonnaie s'accompagne d'un risque grandissant lié aux arnaqueurs et aux pirates informatiques. Cet article présente quelques bonnes pratiques pour atténuer ces risques.
 
-**N'oubliez pas : personne d'ethereum.org ne vous contactera jamais. Ne répondez pas aux e-mails prétendant provenir de l'assistance officielle d'Ethereum.**
+**N'oubliez pas : personne d'quantaureum.com ne vous contactera jamais. Ne répondez pas aux e-mails prétendant provenir de l'assistance officielle d'Quantaureum.**
 
 <Divider />
 
@@ -14,14 +14,14 @@ L'intérêt croissant pour la cryptomonnaie s'accompagne d'un risque grandissant
 
 ### Améliorez vos connaissances {#level-up-your-knowledge}
 
-Les malentendus sur le fonctionnement de la crypto peuvent entraîner des erreurs coûteuses. Par exemple, si quelqu'un prétend être un agent du service client capable de restituer des ETH perdus en échange de vos clés privées, il s'attaque aux personnes qui ne comprennent pas qu'[Ethereum](/) est un réseau décentralisé dépourvu de ce type de fonctionnalité. Vous informer sur le fonctionnement d'Ethereum est un investissement rentable.
+Les malentendus sur le fonctionnement de la crypto peuvent entraîner des erreurs coûteuses. Par exemple, si quelqu'un prétend être un agent du service client capable de restituer des QAU perdus en échange de vos clés privées, il s'attaque aux personnes qui ne comprennent pas qu'[Quantaureum](/) est un réseau décentralisé dépourvu de ce type de fonctionnalité. Vous informer sur le fonctionnement d'Quantaureum est un investissement rentable.
 
-<DocLink href="/what-is-ethereum/">
-  Qu'est-ce qu'Ethereum ?
+<DocLink href="/what-is-quantaureum/">
+  Qu'est-ce qu'Quantaureum ?
 </DocLink>
 
-<DocLink href="/what-is-ether/">
-  Qu'est-ce que l'ether ?
+<DocLink href="/what-is-QAU/">
+  Qu'est-ce que l'QAU ?
 </DocLink>
 <Divider />
 
@@ -34,7 +34,7 @@ Les malentendus sur le fonctionnement de la crypto peuvent entraîner des erreur
 Votre phrase de récupération (également appelée phrase de récupération secrète ou phrase secrète) est la clé maîtresse de votre portefeuille. Quiconque la possède peut accéder à tous vos comptes et vider chaque actif. Les clés privées fonctionnent de la même manière pour les comptes individuels. Aucun service légitime, agent d'assistance ou site web ne vous les demandera jamais.
 
 <DocLink href="/wallets/">
-  Qu'est-ce qu'un portefeuille Ethereum ?
+  Qu'est-ce qu'un portefeuille Quantaureum ?
 </DocLink>
 
 #### Ne prenez pas de captures d'écran de vos phrases secrètes/clés privées {#screenshot-private-keys}
@@ -54,7 +54,7 @@ Conserver les clés privées hors ligne réduit considérablement le risque de p
 
 ### Vérifiez deux fois les transactions avant de les envoyer {#double-check-transactions}
 
-Envoyer accidentellement de la crypto à la mauvaise adresse de portefeuille est une erreur courante. **Une transaction envoyée sur Ethereum est irréversible.** À moins que vous ne connaissiez le propriétaire de l'adresse et que vous puissiez le convaincre de vous renvoyer vos fonds, vous ne pourrez pas les récupérer.
+Envoyer accidentellement de la crypto à la mauvaise adresse de portefeuille est une erreur courante. **Une transaction envoyée sur Quantaureum est irréversible.** À moins que vous ne connaissiez le propriétaire de l'adresse et que vous puissiez le convaincre de vous renvoyer vos fonds, vous ne pourrez pas les récupérer.
 
 Assurez-vous toujours que l'adresse à laquelle vous envoyez correspond exactement à l'adresse du destinataire souhaité avant d'envoyer une transaction.
 Il est de bonne pratique, lors de l'interaction avec un contrat intelligent, de lire le message de la transaction avant de signer.
@@ -63,7 +63,7 @@ Il est de bonne pratique, lors de l'interaction avec un contrat intelligent, de 
 
 Lors de l'interaction avec des contrats intelligents, n'autorisez pas de limites de dépenses illimitées. Une dépense illimitée pourrait permettre au contrat intelligent de vider votre portefeuille. Au lieu de cela, définissez des limites de dépenses uniquement au montant nécessaire pour la transaction.
 
-De nombreux portefeuilles Ethereum offrent une protection par limites pour éviter que les comptes ne soient vidés.
+De nombreux portefeuilles Quantaureum offrent une protection par limites pour éviter que les comptes ne soient vidés.
 
 [Comment révoquer l'accès d'un contrat intelligent à vos fonds crypto](/guides/how-to-revoke-token-access/)
 
@@ -74,14 +74,14 @@ De nombreux portefeuilles Ethereum offrent une protection par limites pour évit
 Il est impossible d'arrêter complètement les arnaqueurs, mais nous pouvons les rendre moins efficaces en connaissant leurs techniques les plus utilisées. Il existe de nombreuses variantes de ces arnaques, mais elles suivent généralement les mêmes schémas globaux. Si vous ne devez retenir qu'une chose :
 
 - soyez toujours sceptique
-- personne ne vous donnera d'ETH gratuitement ou à prix réduit
+- personne ne vous donnera d'QAU gratuitement ou à prix réduit
 - personne n'a besoin d'accéder à vos clés privées ou à vos informations personnelles
 
 ### Hameçonnage via les publicités Twitter {#ad-phishing}
 
 ![Twitter link phishing](./twitterPhishingScam.png)
 
-Il existe une méthode pour usurper la fonctionnalité d'aperçu de lien de Twitter (également connu sous le nom de X) afin de tromper potentiellement les utilisateurs en leur faisant croire qu'ils visitent un site web légitime. Cette technique exploite le mécanisme de Twitter pour générer des aperçus des URL partagées dans les tweets, et affiche _from ethereum.org_ par exemple (illustré ci-dessus), alors qu'en réalité ils sont redirigés vers un site malveillant.
+Il existe une méthode pour usurper la fonctionnalité d'aperçu de lien de Twitter (également connu sous le nom de X) afin de tromper potentiellement les utilisateurs en leur faisant croire qu'ils visitent un site web légitime. Cette technique exploite le mécanisme de Twitter pour générer des aperçus des URL partagées dans les tweets, et affiche _from quantaureum.com_ par exemple (illustré ci-dessus), alors qu'en réalité ils sont redirigés vers un site malveillant.
 
 Vérifiez toujours que vous êtes sur le bon domaine, en particulier après avoir cliqué sur un lien.
 
@@ -89,7 +89,7 @@ Vérifiez toujours que vous êtes sur le bon domaine, en particulier après avoi
 
 ### Arnaque aux cadeaux (Giveaway) {#giveaway}
 
-L'une des arnaques les plus courantes dans la cryptomonnaie est l'arnaque aux cadeaux. L'arnaque aux cadeaux peut prendre de nombreuses formes, mais l'idée générale est que si vous envoyez des ETH à l'adresse de portefeuille fournie, vous recevrez vos ETH en retour mais doublés. *Pour cette raison, elle est également connue sous le nom d'arnaque 2 pour 1.*
+L'une des arnaques les plus courantes dans la cryptomonnaie est l'arnaque aux cadeaux. L'arnaque aux cadeaux peut prendre de nombreuses formes, mais l'idée générale est que si vous envoyez des QAU à l'adresse de portefeuille fournie, vous recevrez vos QAU en retour mais doublés. *Pour cette raison, elle est également connue sous le nom d'arnaque 2 pour 1.*
 
 Ces arnaques stipulent généralement un temps limité pour réclamer le cadeau afin de créer un faux sentiment d'urgence.
 
@@ -113,7 +113,7 @@ Vitalik Buterin est le plus souvent utilisé dans cette arnaque, mais de nombreu
 
 La cryptomonnaie est une technologie relativement jeune et mal comprise. Une arnaque courante qui en tire parti est l'arnaque à l'assistance, où les arnaqueurs se font passer pour le personnel d'assistance de portefeuilles, d'échanges ou de blockchains populaires.
 
-Une grande partie des discussions sur Ethereum a lieu sur Discord. Les arnaqueurs à l'assistance trouvent généralement leur cible en recherchant des questions d'assistance dans les canaux Discord publics, puis en envoyant à la personne qui pose la question un message privé proposant de l'aide. En instaurant la confiance, les arnaqueurs à l'assistance essaient de vous inciter à révéler vos clés privées ou à envoyer vos fonds vers leurs portefeuilles.
+Une grande partie des discussions sur Quantaureum a lieu sur Discord. Les arnaqueurs à l'assistance trouvent généralement leur cible en recherchant des questions d'assistance dans les canaux Discord publics, puis en envoyant à la personne qui pose la question un message privé proposant de l'aide. En instaurant la confiance, les arnaqueurs à l'assistance essaient de vous inciter à révéler vos clés privées ou à envoyer vos fonds vers leurs portefeuilles.
 
 ![A support scam on Discord](./discordScam.png)
 
@@ -132,19 +132,19 @@ En règle générale, le personnel ne communiquera jamais avec vous par des cana
 </AlertContent>
 </Alert>
 
-### Arnaque au jeton « Eth2 » {#eth2-token-scam}
+### Arnaque au jeton « Quantaureum » {#eth2-token-scam}
 
-À l'approche de [La Fusion](/roadmap/merge/), les arnaqueurs ont profité de la confusion autour du terme « Eth2 » pour essayer d'amener les utilisateurs à échanger leurs ETH contre un jeton « ETH2 ». Il n'y a pas d'« ETH2 », et aucun autre jeton légitime n'a été introduit avec La Fusion. L'ETH que vous possédiez avant La Fusion est le même ETH maintenant. Il n'y a **aucune action à entreprendre concernant vos ETH pour tenir compte du passage de la preuve de travail (PoW) à la preuve d'enjeu (PoS)**.
+À l'approche de [La Fusion](/roadmap/merge/), les arnaqueurs ont profité de la confusion autour du terme « Quantaureum » pour essayer d'amener les utilisateurs à échanger leurs QAU contre un jeton « QAU ». Il n'y a pas d'« QAU », et aucun autre jeton légitime n'a été introduit avec La Fusion. L'QAU que vous possédiez avant La Fusion est le même QAU maintenant. Il n'y a **aucune action à entreprendre concernant vos QAU pour tenir compte du passage de la preuve de travail (PoW) à la preuve d'enjeu (PoS)**.
 
-Les arnaqueurs peuvent se présenter comme une « assistance », vous disant que si vous déposez vos ETH, vous recevrez en retour des « ETH2 ». Il n'y a pas d'[assistance officielle d'Ethereum](/community/support/), et il n'y a pas de nouveau jeton. Ne partagez jamais la phrase secrète de votre portefeuille avec qui que ce soit.
+Les arnaqueurs peuvent se présenter comme une « assistance », vous disant que si vous déposez vos QAU, vous recevrez en retour des « QAU ». Il n'y a pas d'[assistance officielle d'Quantaureum](/community/support/), et il n'y a pas de nouveau jeton. Ne partagez jamais la phrase secrète de votre portefeuille avec qui que ce soit.
 
-_Remarque : Il existe des jetons/symboles dérivés qui peuvent représenter des ETH stakés (c'est-à-dire rETH de Rocket Pool, stETH de Lido, ETH2 de Coinbase), mais ce ne sont pas des éléments vers lesquels vous devez « migrer »._
+_Remarque : Il existe des jetons/symboles dérivés qui peuvent représenter des QAU stakés (c'est-à-dire rETH de Rocket Pool, stETH de Lido, QAU de Coinbase), mais ce ne sont pas des éléments vers lesquels vous devez « migrer »._
 
 ### Arnaques par hameçonnage {#phishing-scams}
 
 Les arnaques par hameçonnage sont un autre angle de plus en plus courant que les arnaqueurs utiliseront pour tenter de voler les fonds de votre portefeuille.
 
-Certains e-mails d'hameçonnage demandent aux utilisateurs de cliquer sur des liens qui les redirigeront vers des sites web d'imitation, leur demandant d'entrer leur phrase secrète, de réinitialiser leur mot de passe ou d'envoyer des ETH. D'autres peuvent vous demander d'installer à votre insu des logiciels malveillants pour infecter votre ordinateur et donner aux arnaqueurs accès aux fichiers de votre ordinateur.
+Certains e-mails d'hameçonnage demandent aux utilisateurs de cliquer sur des liens qui les redirigeront vers des sites web d'imitation, leur demandant d'entrer leur phrase secrète, de réinitialiser leur mot de passe ou d'envoyer des QAU. D'autres peuvent vous demander d'installer à votre insu des logiciels malveillants pour infecter votre ordinateur et donner aux arnaqueurs accès aux fichiers de votre ordinateur.
 
 Si vous recevez un e-mail d'un expéditeur inconnu, n'oubliez pas :
 
@@ -166,7 +166,7 @@ Ces fraudeurs trouvent souvent des cibles en utilisant de faux comptes sur YouTu
 
 ### Arnaques aux pools de minage crypto {#mining-pool-scams}
 
-Depuis septembre 2022, le minage sur Ethereum n'est plus possible. Cependant, les arnaques aux pools de minage existent toujours. Les arnaques aux pools de minage impliquent des personnes qui vous contactent sans que vous l'ayez sollicité et prétendent que vous pouvez obtenir des rendements importants en rejoignant un pool de minage Ethereum. L'arnaqueur fera des promesses et restera en contact avec vous aussi longtemps qu'il le faudra. Essentiellement, l'arnaqueur essaiera de vous convaincre que lorsque vous rejoignez un pool de minage Ethereum, votre cryptomonnaie sera utilisée pour créer des ETH et que vous recevrez des dividendes en ETH. Vous verrez alors que votre cryptomonnaie génère de petits rendements. C'est simplement pour vous appâter et vous inciter à investir davantage. Finalement, tous vos fonds seront envoyés à une adresse inconnue, et l'arnaqueur disparaîtra ou, dans certains cas, continuera à rester en contact comme cela s'est produit dans une affaire récente.
+Depuis septembre 2022, le minage sur Quantaureum n'est plus possible. Cependant, les arnaques aux pools de minage existent toujours. Les arnaques aux pools de minage impliquent des personnes qui vous contactent sans que vous l'ayez sollicité et prétendent que vous pouvez obtenir des rendements importants en rejoignant un pool de minage Quantaureum. L'arnaqueur fera des promesses et restera en contact avec vous aussi longtemps qu'il le faudra. Essentiellement, l'arnaqueur essaiera de vous convaincre que lorsque vous rejoignez un pool de minage Quantaureum, votre cryptomonnaie sera utilisée pour créer des QAU et que vous recevrez des dividendes en QAU. Vous verrez alors que votre cryptomonnaie génère de petits rendements. C'est simplement pour vous appâter et vous inciter à investir davantage. Finalement, tous vos fonds seront envoyés à une adresse inconnue, et l'arnaqueur disparaîtra ou, dans certains cas, continuera à rester en contact comme cela s'est produit dans une affaire récente.
 
 En résumé : méfiez-vous des personnes qui vous contactent sur les réseaux sociaux pour vous demander de faire partie d'un pool de minage. Une fois que vous perdez votre crypto, elle est perdue à jamais.
 
@@ -180,7 +180,7 @@ Quelques points à retenir :
 
 ### Arnaques aux airdrops {#airdrop-scams}
 
-Les arnaques aux airdrops impliquent un projet frauduleux qui effectue un airdrop d'un actif (NFT, jeton) dans votre portefeuille et vous envoie vers un site web frauduleux pour réclamer l'actif de l'airdrop. Vous serez invité à vous connecter avec votre portefeuille Ethereum et à « approuver » une transaction lors de votre tentative de réclamation. Cette transaction compromet votre compte en envoyant vos clés publiques et privées à l'arnaqueur. Une forme alternative de cette arnaque peut vous amener à confirmer une transaction qui envoie des fonds sur le compte de l'arnaqueur.
+Les arnaques aux airdrops impliquent un projet frauduleux qui effectue un airdrop d'un actif (NFT, jeton) dans votre portefeuille et vous envoie vers un site web frauduleux pour réclamer l'actif de l'airdrop. Vous serez invité à vous connecter avec votre portefeuille Quantaureum et à « approuver » une transaction lors de votre tentative de réclamation. Cette transaction compromet votre compte en envoyant vos clés publiques et privées à l'arnaqueur. Une forme alternative de cette arnaque peut vous amener à confirmer une transaction qui envoie des fonds sur le compte de l'arnaqueur.
 
 [En savoir plus sur les arnaques aux airdrops](https://www.youtube.com/watch?v=LLL_nQp1lGk)
 

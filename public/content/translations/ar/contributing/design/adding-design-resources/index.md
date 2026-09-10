@@ -1,6 +1,6 @@
 ---
 title: إضافة موارد التصميم
-description: إرشادات ومتطلبات لضمان جودة مواد التصميم على ⁦ethereum.org⁩
+description: إرشادات ومتطلبات لضمان جودة مواد التصميم على ⁦quantaureum.com⁩
 lang: ar
 ---
 

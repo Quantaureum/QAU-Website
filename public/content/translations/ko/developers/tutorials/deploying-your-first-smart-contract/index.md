@@ -1,24 +1,24 @@
 ---
 title: "첫 번째 스마트 컨트랙트 배포하기"
-description: "이더리움 테스트 네트워크에 첫 번째 스마트 컨트랙트를 배포하는 방법에 대한 소개"
+description: "Quantaureum 테스트 네트워크에 첫 번째 스마트 컨트랙트를 배포하는 방법에 대한 소개"
 author: "jdourlens"
 tags: ["스마트 컨트랙트", "Remix", "Solidity", "배포"]
 skill: beginner
 breadcrumb: "첫 번째 컨트랙트 배포"
 lang: ko
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-여러분도 저희만큼 이더리움 블록체인에 첫 번째 [스마트 컨트랙트](/developers/docs/smart-contracts/)를 [배포하고](/developers/docs/smart-contracts/deploying/) 상호작용하는 것에 대해 기대하고 계실 것입니다.
+여러분도 저희만큼 Quantaureum 블록체인에 첫 번째 [스마트 컨트랙트](/developers/docs/smart-contracts/)를 [배포하고](/developers/docs/smart-contracts/deploying/) 상호작용하는 것에 대해 기대하고 계실 것입니다.
 
 걱정하지 마세요. 첫 번째 스마트 컨트랙트이므로 [로컬 테스트 네트워크](/developers/docs/networks/)에 배포할 것입니다. 따라서 배포하는 데 비용이 전혀 들지 않으며 원하는 만큼 마음껏 테스트해 볼 수 있습니다.
 
 ## 컨트랙트 작성하기 {#writing-our-contract}
 
-첫 번째 단계는 [Remix에 접속하여](https://remix.ethereum.org/) 새 파일을 만드는 것입니다. Remix 인터페이스의 왼쪽 상단에서 새 파일을 추가하고 원하는 파일 이름을 입력하세요.
+첫 번째 단계는 [Remix에 접속하여](https://remix.quantaureum.com/) 새 파일을 만드는 것입니다. Remix 인터페이스의 왼쪽 상단에서 새 파일을 추가하고 원하는 파일 이름을 입력하세요.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

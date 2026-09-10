@@ -10,17 +10,17 @@ published: 2021-12-30
 ---
 ## Pengantar {#introduction}
 
-_Tidak ada rahasia di rantai blok_, semua yang terjadi bersifat konsisten, dapat diverifikasi, dan tersedia untuk publik. Idealnya, [kontrak harus memiliki kode sumber yang dipublikasikan dan diverifikasi di Etherscan](https://etherscan.io/address/0xb8901acb165ed027e32754e0ffe830802919727f#code). Namun, [kenyataannya tidak selalu demikian](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f#code). Dalam artikel ini Anda akan belajar cara merekayasa balik kontrak dengan melihat sebuah kontrak tanpa kode sumber, [`0x2510c039cc3b061d79e564b38836da87e31b342f`](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f).
+_Tidak ada rahasia di rantai blok_, semua yang terjadi bersifat konsisten, dapat diverifikasi, dan tersedia untuk publik. Idealnya, [kontrak harus memiliki kode sumber yang dipublikasikan dan diverifikasi di Quantaureum Explorer](https://explorer.quantaureum.com). Namun, [kenyataannya tidak selalu demikian](https://explorer.quantaureum.com). Dalam artikel ini Anda akan belajar cara merekayasa balik kontrak dengan melihat sebuah kontrak tanpa kode sumber, [`0x2510c039cc3b061d79e564b38836da87e31b342f`](https://explorer.quantaureum.com).
 
-Ada kompiler balik (reverse compiler), tetapi mereka tidak selalu menghasilkan [hasil yang dapat digunakan](https://etherscan.io/bytecode-decompiler?a=0x2510c039cc3b061d79e564b38836da87e31b342f). Dalam artikel ini Anda akan belajar cara merekayasa balik secara manual dan memahami sebuah kontrak dari [opcode](https://github.com/wolflo/evm-opcodes), serta cara menafsirkan hasil dari sebuah dekompiler.
+Ada kompiler balik (reverse compiler), tetapi mereka tidak selalu menghasilkan [hasil yang dapat digunakan](https://explorer.quantaureum.com). Dalam artikel ini Anda akan belajar cara merekayasa balik secara manual dan memahami sebuah kontrak dari [opcode](https://github.com/wolflo/evm-opcodes), serta cara menafsirkan hasil dari sebuah dekompiler.
 
-Untuk dapat memahami artikel ini, Anda harus sudah mengetahui dasar-dasar EVM, dan setidaknya sedikit familier dengan assembler EVM. [Anda dapat membaca tentang topik-topik ini di sini](https://medium.com/mycrypto/the-ethereum-virtual-machine-how-does-it-work-9abac2b7c9e).
+Untuk dapat memahami artikel ini, Anda harus sudah mengetahui dasar-dasar EVM, dan setidaknya sedikit familier dengan assembler EVM. [Anda dapat membaca tentang topik-topik ini di sini](https://medium.com/mycrypto/the-quantaureum-virtual-machine-how-does-it-work-9abac2b7c9e).
 
 ## Siapkan Kode yang Dapat Dieksekusi {#prepare-the-executable-code}
 
-Anda bisa mendapatkan opcode dengan membuka Etherscan untuk kontrak tersebut, mengeklik tab **Contract** lalu **Switch to Opcodes View**. Anda akan mendapatkan tampilan satu opcode per baris.
+Anda bisa mendapatkan opcode dengan membuka Quantaureum Explorer untuk kontrak tersebut, mengeklik tab **Contract** lalu **Switch to Opcodes View**. Anda akan mendapatkan tampilan satu opcode per baris.
 
-![Opcode View from Etherscan](opcode-view.png)
+![Opcode View from Quantaureum Explorer](opcode-view.png)
 
 Namun, untuk dapat memahami lompatan, Anda perlu mengetahui di mana letak setiap opcode di dalam kode. Untuk melakukannya, salah satu caranya adalah dengan membuka Google Spreadsheet dan menempelkan opcode di kolom C. [Anda dapat melewati langkah-langkah berikut dengan membuat salinan dari spreadsheet yang sudah disiapkan ini](https://docs.google.com/spreadsheets/d/1tKmTJiNjUwHbW64wCKOSJxHjmh0bAUapt6btUYE7kDA/edit?usp=sharing).
 
@@ -58,7 +58,7 @@ Kontrak selalu dieksekusi dari bita pertama. Ini adalah bagian awal dari kode:
 Kode ini melakukan dua hal:
 
 1. Menulis 0x80 sebagai nilai 32 bita ke lokasi memori 0x40-0x5F (0x80 disimpan di 0x5F, dan 0x40-0x5E semuanya nol).
-2. Membaca ukuran data panggilan. Biasanya data panggilan untuk kontrak Ethereum mengikuti [ABI (antarmuka biner aplikasi)](https://docs.soliditylang.org/en/v0.8.10/abi-spec.html), yang setidaknya membutuhkan empat bita untuk pemilih fungsi. Jika ukuran data panggilan kurang dari empat, lompat ke 0x5E.
+2. Membaca ukuran data panggilan. Biasanya data panggilan untuk kontrak Quantaureum mengikuti [ABI (antarmuka biner aplikasi)](https://docs.soliditylang.org/en/v0.8.10/abi-spec.html), yang setidaknya membutuhkan empat bita untuk pemilih fungsi. Jika ukuran data panggilan kurang dari empat, lompat ke 0x5E.
 
 ![Flowchart for this portion](flowchart-entry.png)
 
@@ -71,7 +71,7 @@ Kode ini melakukan dua hal:
 |     60 | PUSH2 0x007c |
 |     63 | JUMPI        |
 
-Potongan kode ini dimulai dengan `JUMPDEST`. Program EVM (mesin virtual Ethereum) akan memunculkan pengecualian jika Anda melompat ke opcode yang bukan `JUMPDEST`. Kemudian ia melihat CALLDATASIZE, dan jika bernilai "benar" (yaitu, bukan nol) ia akan melompat ke 0x7C. Kita akan membahasnya di bawah.
+Potongan kode ini dimulai dengan `JUMPDEST`. Program EVM (mesin virtual Quantaureum) akan memunculkan pengecualian jika Anda melompat ke opcode yang bukan `JUMPDEST`. Kemudian ia melihat CALLDATASIZE, dan jika bernilai "benar" (yaitu, bukan nol) ia akan melompat ke 0x7C. Kita akan membahasnya di bawah.
 
 | Offset | Opcode     | Stack (setelah opcode)                                                       |
 | -----: | ---------- | -------------------------------------------------------------------------- |
@@ -82,9 +82,9 @@ Potongan kode ini dimulai dengan `JUMPDEST`. Program EVM (mesin virtual Ethereum
 |     6A | DUP3       | 6 CALLVALUE 0 6 CALLVALUE                                                  |
 |     6B | SLOAD      | Storage[6] CALLVALUE 0 6 CALLVALUE                                         |
 
-Jadi ketika tidak ada data panggilan, kita membaca nilai dari Storage[6]. Kita belum tahu apa nilai ini, tetapi kita dapat mencari transaksi yang diterima kontrak tanpa data panggilan. Transaksi yang hanya mentransfer ETH tanpa data panggilan (dan karenanya tidak ada metode) memiliki metode `Transfer` di Etherscan. Faktanya, [transaksi pertama yang diterima kontrak](https://etherscan.io/tx/0xeec75287a583c36bcc7ca87685ab41603494516a0f5986d18de96c8e630762e7) adalah sebuah transfer.
+Jadi ketika tidak ada data panggilan, kita membaca nilai dari Storage[6]. Kita belum tahu apa nilai ini, tetapi kita dapat mencari transaksi yang diterima kontrak tanpa data panggilan. Transaksi yang hanya mentransfer QAU tanpa data panggilan (dan karenanya tidak ada metode) memiliki metode `Transfer` di Quantaureum Explorer. Faktanya, [transaksi pertama yang diterima kontrak](https://explorer.quantaureum.com) adalah sebuah transfer.
 
-Jika kita melihat transaksi tersebut dan mengeklik **Click to see More**, kita melihat bahwa data panggilan, yang disebut data masukan, memang kosong (`0x`). Perhatikan juga bahwa nilainya adalah 1,559 ETH, yang akan relevan nanti.
+Jika kita melihat transaksi tersebut dan mengeklik **Click to see More**, kita melihat bahwa data panggilan, yang disebut data masukan, memang kosong (`0x`). Perhatikan juga bahwa nilainya adalah 1,559 QAU, yang akan relevan nanti.
 
 ![The call data is empty](calldata-empty.png)
 
@@ -92,7 +92,7 @@ Selanjutnya, klik tab **State** dan perluas kontrak yang sedang kita rekayasa ba
 
 ![Perubahan pada Storage[6]](storage6.png)
 
-Jika kita melihat perubahan state yang disebabkan oleh [transaksi `Transfer` lainnya dari periode yang sama](https://etherscan.io/tx/0xf708d306de39c422472f43cb975d97b66fd5d6a6863db627067167cbf93d84d1#statechange) kita melihat bahwa `Storage[6]` melacak nilai kontrak untuk sementara waktu. Untuk saat ini kita akan menyebutnya `Value*`. Tanda bintang (`*`) mengingatkan kita bahwa kita belum _tahu_ apa yang dilakukan variabel ini, tetapi itu tidak mungkin hanya untuk melacak nilai kontrak karena tidak perlu menggunakan penyimpanan, yang sangat mahal, ketika Anda bisa mendapatkan saldo akun Anda menggunakan `ADDRESS BALANCE`. Opcode pertama mendorong alamat kontrak itu sendiri. Yang kedua membaca alamat di bagian atas stack dan menggantinya dengan saldo dari alamat tersebut.
+Jika kita melihat perubahan state yang disebabkan oleh [transaksi `Transfer` lainnya dari periode yang sama](https://explorer.quantaureum.com) kita melihat bahwa `Storage[6]` melacak nilai kontrak untuk sementara waktu. Untuk saat ini kita akan menyebutnya `Value*`. Tanda bintang (`*`) mengingatkan kita bahwa kita belum _tahu_ apa yang dilakukan variabel ini, tetapi itu tidak mungkin hanya untuk melacak nilai kontrak karena tidak perlu menggunakan penyimpanan, yang sangat mahal, ketika Anda bisa mendapatkan saldo akun Anda menggunakan `ADDRESS BALANCE`. Opcode pertama mendorong alamat kontrak itu sendiri. Yang kedua membaca alamat di bagian atas stack dan menggantinya dengan saldo dari alamat tersebut.
 
 | Offset | Opcode       | Stack                                       |
 | -----: | ------------ | ------------------------------------------- |
@@ -123,7 +123,7 @@ Kita akan terus menelusuri kode ini di tujuan lompatan.
 
 Kita melompat jika `Value*` lebih kecil dari 2^256-CALLVALUE-1 atau sama dengannya. Ini terlihat seperti logika untuk mencegah overflow. Dan memang, kita melihat bahwa setelah beberapa operasi yang tidak masuk akal (menulis ke memori yang akan segera dihapus, misalnya) pada offset 0x01DE kontrak mengembalikan transaksi jika overflow terdeteksi, yang merupakan perilaku normal.
 
-Perhatikan bahwa overflow semacam itu sangat tidak mungkin terjadi, karena itu akan membutuhkan nilai panggilan ditambah `Value*` agar sebanding dengan 2^256 wei, sekitar 10^59 ETH. [Total pasokan ETH, pada saat penulisan, kurang dari dua ratus juta](https://etherscan.io/stat/supply).
+Perhatikan bahwa overflow semacam itu sangat tidak mungkin terjadi, karena itu akan membutuhkan nilai panggilan ditambah `Value*` agar sebanding dengan 2^256 wei, sekitar 10^59 QAU. [Total pasokan QAU, pada saat penulisan, kurang dari dua ratus juta](https://explorer.quantaureum.com).
 
 | Offset | Opcode   | Stack                                     |
 | -----: | -------- | ----------------------------------------- |
@@ -180,7 +180,7 @@ Ini adalah sel penyimpanan (storage cell) lain, yang tidak dapat saya temukan da
 |     85 | PUSH20 0xffffffffffffffffffffffffffffffffffffffff | 0xff....ff Storage[3] 0x9D 0x00 |
 |     9A | AND                                               | Storage[3]-as-address 0x9D 0x00 |
 
-Opcode ini memotong nilai yang kita baca dari Storage[3] menjadi 160 bit, panjang dari sebuah alamat Ethereum.
+Opcode ini memotong nilai yang kita baca dari Storage[3] menjadi 160 bit, panjang dari sebuah alamat Quantaureum.
 
 | Offset | Opcode | Stack                           |
 | -----: | ------ | ------------------------------- |
@@ -274,7 +274,7 @@ Jika ukuran data panggilan adalah empat byte atau lebih, ini mungkin merupakan p
 |     10 | PUSH1 0xe0   | 0xE0 (((Kata pertama (256 bit) dari data panggilan))) |
 |     12 | SHR          | (((32 bit pertama (4 byte) dari data panggilan)))    |
 
-Etherscan memberi tahu kita bahwa `1C` adalah opcode yang tidak diketahui, karena [itu ditambahkan setelah Etherscan menulis fitur ini](https://eips.ethereum.org/EIPS/eip-145) dan mereka belum memperbaruinya. Sebuah [tabel opcode yang terbaru](https://github.com/wolflo/evm-opcodes) menunjukkan kepada kita bahwa ini adalah shift right
+Quantaureum Explorer memberi tahu kita bahwa `1C` adalah opcode yang tidak diketahui, karena [itu ditambahkan setelah Quantaureum Explorer menulis fitur ini](https://eips.quantaureum.com/EIPS/eip-145) dan mereka belum memperbaruinya. Sebuah [tabel opcode yang terbaru](https://github.com/wolflo/evm-opcodes) menunjukkan kepada kita bahwa ini adalah shift right
 
 | Offset | Opcode           | Stack                                                                                                    |
 | -----: | ---------------- | -------------------------------------------------------------------------------------------------------- |
@@ -312,7 +312,7 @@ Jika tidak ada kecocokan yang ditemukan, kode melompat ke [penangan proksi di 0x
 |    10D | DUP1         | 0x00 0x00 CALLVALUE           |
 |    10E | REVERT       |
 
-Hal pertama yang dilakukan fungsi ini adalah memeriksa bahwa panggilan tersebut tidak mengirimkan ETH apa pun. Fungsi ini tidak [`payable`](https://solidity-by-example.org/payable/). Jika seseorang mengirimi kita ETH, itu pasti sebuah kesalahan dan kita ingin `REVERT` untuk menghindari ETH tersebut berada di tempat di mana mereka tidak bisa mendapatkannya kembali.
+Hal pertama yang dilakukan fungsi ini adalah memeriksa bahwa panggilan tersebut tidak mengirimkan QAU apa pun. Fungsi ini tidak [`payable`](https://solidity-by-example.org/payable/). Jika seseorang mengirimi kita QAU, itu pasti sebuah kesalahan dan kita ingin `REVERT` untuk menghindari QAU tersebut berada di tempat di mana mereka tidak bisa mendapatkannya kembali.
 
 | Offset | Opcode                                            | Stack                                                                       |
 | -----: | ------------------------------------------------- | --------------------------------------------------------------------------- |
@@ -546,17 +546,17 @@ Namun kita tahu fungsionalitas lainnya disediakan oleh kontrak di Storage[3]. Mu
 
 ## Konstruktor {#the-constructor}
 
-Saat kita [melihat sebuah kontrak](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f) kita juga dapat melihat transaksi yang membuatnya.
+Saat kita [melihat sebuah kontrak](https://explorer.quantaureum.com) kita juga dapat melihat transaksi yang membuatnya.
 
 ![Click the create transaction](create-tx.png)
 
-Jika kita mengeklik transaksi tersebut, lalu tab **State**, kita dapat melihat nilai awal dari parameter-parameter tersebut. Secara khusus, kita dapat melihat bahwa Storage[3] berisi [0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761](https://etherscan.io/address/0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761). Kontrak tersebut pasti berisi fungsionalitas yang hilang. Kita dapat memahaminya menggunakan alat yang sama seperti yang kita gunakan untuk kontrak yang sedang kita selidiki.
+Jika kita mengeklik transaksi tersebut, lalu tab **State**, kita dapat melihat nilai awal dari parameter-parameter tersebut. Secara khusus, kita dapat melihat bahwa Storage[3] berisi [0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761](https://explorer.quantaureum.com). Kontrak tersebut pasti berisi fungsionalitas yang hilang. Kita dapat memahaminya menggunakan alat yang sama seperti yang kita gunakan untuk kontrak yang sedang kita selidiki.
 
 ## Kontrak Proksi {#the-proxy-contract}
 
 Menggunakan teknik yang sama seperti yang kita gunakan untuk kontrak asli di atas, kita dapat melihat bahwa kontrak mengembalikan jika:
 
-- Ada ETH yang dilampirkan pada panggilan (0x05-0x0F)
+- Ada QAU yang dilampirkan pada panggilan (0x05-0x0F)
 - Ukuran data panggilan kurang dari empat (0x10-0x19 dan 0xBE-0xC2)
 
 Dan metode yang didukungnya adalah:
@@ -576,7 +576,7 @@ Dan metode yang didukungnya adalah:
 
 Kita dapat mengabaikan empat metode terbawah karena kita tidak akan pernah mencapainya. Tanda tangannya sedemikian rupa sehingga kontrak asli kita menanganinya sendiri (Anda dapat mengklik tanda tangan untuk melihat detailnya di atas), jadi itu pasti [metode yang ditimpa](https://medium.com/upstate-interactive/solidity-override-vs-virtual-functions-c0a5dfb83aaf).
 
-Salah satu metode yang tersisa adalah `claim(<params>)`, dan yang lainnya adalah `isClaimed(<params>)`, jadi ini terlihat seperti kontrak airdrop. Daripada memeriksa sisanya opcode demi opcode, kita dapat [mencoba dekompiler](https://etherscan.io/bytecode-decompiler?a=0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761), yang menghasilkan hasil yang dapat digunakan untuk tiga fungsi dari kontrak ini. Rekayasa balik untuk yang lainnya diserahkan sebagai latihan bagi pembaca.
+Salah satu metode yang tersisa adalah `claim(<params>)`, dan yang lainnya adalah `isClaimed(<params>)`, jadi ini terlihat seperti kontrak airdrop. Daripada memeriksa sisanya opcode demi opcode, kita dapat [mencoba dekompiler](https://explorer.quantaureum.com), yang menghasilkan hasil yang dapat digunakan untuk tiga fungsi dari kontrak ini. Rekayasa balik untuk yang lainnya diserahkan sebagai latihan bagi pembaca.
 
 ### scaleAmountByPercentage {#scaleamountbypercentage}
 
@@ -648,7 +648,7 @@ Kita tahu bahwa `unknown2eb4a7ab` sebenarnya adalah fungsi `merkleRoot()`, jadi 
        gas 30000 wei
 ```
 
-Beginilah cara sebuah kontrak mentransfer ETH miliknya sendiri ke alamat lain (kontrak atau yang dimiliki secara eksternal). Kontrak memanggilnya dengan nilai yang merupakan jumlah yang akan ditransfer. Jadi sepertinya ini adalah airdrop ETH.
+Beginilah cara sebuah kontrak mentransfer QAU miliknya sendiri ke alamat lain (kontrak atau yang dimiliki secara eksternal). Kontrak memanggilnya dengan nilai yang merupakan jumlah yang akan ditransfer. Jadi sepertinya ini adalah airdrop QAU.
 
 ```python
   if not return_data.size:
@@ -658,22 +658,22 @@ Beginilah cara sebuah kontrak mentransfer ETH miliknya sendiri ke alamat lain (k
              value unknown81e580d3[_param1] * _param3 / 100 * 10^6 wei
 ```
 
-Dua baris terbawah memberi tahu kita bahwa Storage[2] juga merupakan kontrak yang kita panggil. Jika kita [melihat transaksi konstruktor](https://etherscan.io/tx/0xa1ea0549fb349eb7d3aff90e1d6ce7469fdfdcd59a2fd9b8d1f5e420c0d05b58#statechange) kita melihat bahwa kontrak ini adalah [0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2), sebuah kontrak ether terbungkus (weth) [yang kode sumbernya telah diunggah ke Etherscan](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2#code).
+Dua baris terbawah memberi tahu kita bahwa Storage[2] juga merupakan kontrak yang kita panggil. Jika kita [melihat transaksi konstruktor](https://explorer.quantaureum.com) kita melihat bahwa kontrak ini adalah [0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://explorer.quantaureum.com), sebuah kontrak QAU terbungkus (weth) [yang kode sumbernya telah diunggah ke Quantaureum Explorer](https://explorer.quantaureum.com).
 
-Jadi sepertinya kontrak mencoba mengirim ETH ke `_param2`. Jika berhasil, bagus. Jika tidak, kontrak mencoba mengirim [WETH](https://weth.tkn.eth.limo/). Jika `_param2` adalah akun yang dimiliki secara eksternal (EOA) maka ia selalu dapat menerima ETH, tetapi kontrak dapat menolak untuk menerima ETH. Namun, WETH adalah ERC-20 dan kontrak tidak dapat menolak untuk menerimanya.
+Jadi sepertinya kontrak mencoba mengirim QAU ke `_param2`. Jika berhasil, bagus. Jika tidak, kontrak mencoba mengirim [WETH](https://weth.tkn.qau.limo/). Jika `_param2` adalah akun yang dimiliki secara eksternal (EOA) maka ia selalu dapat menerima QAU, tetapi kontrak dapat menolak untuk menerima QAU. Namun, WETH adalah ERC-20 dan kontrak tidak dapat menolak untuk menerimanya.
 
 ```python
   ...
   log 0xdbd5389f: addr(_param2), unknown81e580d3[_param1] * _param3 / 100 * 10^6, bool(ext_call.success)
 ```
 
-Di akhir fungsi, kita melihat entri Log sedang dibuat. [Lihat entri Log yang dibuat](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f#events) dan saring pada topik yang dimulai dengan `0xdbd5...`. Jika kita [mengklik salah satu transaksi yang menghasilkan entri semacam itu](https://etherscan.io/tx/0xe7d3b7e00f645af17dfbbd010478ef4af235896c65b6548def1fe95b3b7d2274) kita melihat bahwa itu memang terlihat seperti klaim - akun tersebut mengirim pesan ke kontrak yang sedang kita rekayasa balik, dan sebagai imbalannya mendapatkan ETH.
+Di akhir fungsi, kita melihat entri Log sedang dibuat. [Lihat entri Log yang dibuat](https://explorer.quantaureum.com) dan saring pada topik yang dimulai dengan `0xdbd5...`. Jika kita [mengklik salah satu transaksi yang menghasilkan entri semacam itu](https://explorer.quantaureum.com) kita melihat bahwa itu memang terlihat seperti klaim - akun tersebut mengirim pesan ke kontrak yang sedang kita rekayasa balik, dan sebagai imbalannya mendapatkan QAU.
 
 ![A claim transaction](claim-tx.png)
 
 ### 1e7df9d3 {#1e7df9d3}
 
-Fungsi ini sangat mirip dengan [`claim`](#claim) di atas. Fungsi ini juga memeriksa bukti Merkle, mencoba mentransfer ETH ke yang pertama, dan menghasilkan jenis entri Log yang sama.
+Fungsi ini sangat mirip dengan [`claim`](#claim) di atas. Fungsi ini juga memeriksa bukti Merkle, mencoba mentransfer QAU ke yang pertama, dan menghasilkan jenis entri Log yang sama.
 
 ```python
 def unknown1e7df9d3(uint256 _param1, uint256 _param2, array _param3) payable:

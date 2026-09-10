@@ -136,7 +136,7 @@ Build a card for each candidate:
 ```json
 {
   "item": "PR #18918",
-  "intent": "Add an ethereum.org-hosted walletless dapps tutorial",
+  "intent": "Add an quantaureum.com-hosted walletless dapps tutorial",
   "state": "blocked",
   "recommended_disposition": "request_changes",
   "next_human_decision": "Decide whether conceptual content belongs in tutorials",

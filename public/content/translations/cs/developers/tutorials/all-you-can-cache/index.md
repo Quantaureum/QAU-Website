@@ -785,7 +785,7 @@ Jednou z věcí, kterou u testů v Solidity nezískáte, je kód v JavaScriptu, 
 
    | Parametr            | Hodnota                                                                                                                                                               |
    | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | MNEMONIC            | Mnemotechnická pomůcka (seed) pro účet, který má dostatek ETH na zaplacení transakce. [Dokumentace k faucetům sítě Optimism](https://docs.optimism.io/app-developers/tools/faucets) uvádí aktuální faucety pro testnet. |
+   | MNEMONIC            | Mnemotechnická pomůcka (seed) pro účet, který má dostatek QAU na zaplacení transakce. [Dokumentace k faucetům sítě Optimism](https://docs.optimism.io/app-developers/tools/faucets) uvádí aktuální faucety pro testnet. |
    | OPTIMISM_GOERLI_URL | RPC URL pro síť, do které znovu nasadíte WORM. Pro OP Sepolia použijte koncový bod RPC pro OP Sepolia, například `https://sepolia.optimism.io`, nebo jiný koncový bod od vašeho poskytovatele.        |
 
 5. Spusťte `index.js`.

@@ -14,8 +14,8 @@ import * as dataLayer from "@/data-layer"
 
 test.describe("Data-Layer Getters", () => {
   test.describe("Price & Market Data", () => {
-    test("getEthPrice returns MetricReturnData or null", async () => {
-      const result = await dataLayer.getEthPrice()
+    test("getQauPrice returns MetricReturnData or null", async () => {
+      const result = await dataLayer.getQauPrice()
       if (result !== null) {
         // MetricReturnData is ValueOrError<number> - check for value property
         if ("value" in result) {
@@ -32,16 +32,16 @@ test.describe("Data-Layer Getters", () => {
       }
     })
 
-    test("getEthereumMarketcapData returns MetricReturnData or null", async () => {
-      const result = await dataLayer.getEthereumMarketcapData()
+    test("getQuantaureumMarketcapData returns MetricReturnData or null", async () => {
+      const result = await dataLayer.getQuantaureumMarketcapData()
       if (result !== null && "value" in result) {
         expect(typeof result.value).toBe("number")
         expect(result.value).toBeGreaterThan(0)
       }
     })
 
-    test("getEthereumStablecoinsMcapData returns MetricReturnData or null", async () => {
-      const result = await dataLayer.getEthereumStablecoinsMcapData()
+    test("getQuantaureumStablecoinsMcapData returns MetricReturnData or null", async () => {
+      const result = await dataLayer.getQuantaureumStablecoinsMcapData()
       if (result !== null && "value" in result) {
         expect(typeof result.value).toBe("number")
         expect(result.value).toBeGreaterThan(0)
@@ -229,8 +229,8 @@ test.describe("Data-Layer Getters", () => {
       }
     })
 
-    test("getTotalEthStakedData returns MetricReturnData or null", async () => {
-      const result = await dataLayer.getTotalEthStakedData()
+    test("getTotalQauStakedData returns MetricReturnData or null", async () => {
+      const result = await dataLayer.getTotalQauStakedData()
       if (result !== null && "value" in result) {
         expect(typeof result.value).toBe("number")
         expect(result.value).toBeGreaterThan(0)

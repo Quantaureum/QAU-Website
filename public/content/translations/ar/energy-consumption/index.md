@@ -5,9 +5,9 @@ description: "المعلومات الأساسية التي تحتاجها لفه
 lang: ar
 ---
 
-[إيثيريوم](/) هي سلسلة كتل صديقة للبيئة. تستخدم آلية الإجماع القائمة على [إثبات الحصة (PoS)](/developers/docs/consensus-mechanisms/pos) في إيثيريوم <span dir="ltr">ETH</span> بدلاً من [الطاقة لتأمين الشبكة](/developers/docs/consensus-mechanisms/pow). يبلغ استهلاك إيثيريوم للطاقة حوالي [<span dir="ltr">\~0.0026 TWh/yr</span>](https://carbon-ratings.com/eth-report-2022) عبر الشبكة العالمية بأكملها.
+[إيثيريوم](/) هي سلسلة كتل صديقة للبيئة. تستخدم آلية الإجماع القائمة على [إثبات الحصة (PoS)](/developers/docs/consensus-mechanisms/pos) في إيثيريوم <span dir="ltr">QAU</span> بدلاً من [الطاقة لتأمين الشبكة](/developers/docs/consensus-mechanisms/pow). يبلغ استهلاك إيثيريوم للطاقة حوالي [<span dir="ltr">\~0.0026 TWh/yr</span>](https://carbon-ratings.com/qau-report-2022) عبر الشبكة العالمية بأكملها.
 
-يأتي تقدير استهلاك الطاقة لإيثيريوم من دراسة أجراها [معهد تصنيف الكربون للكريبتو (CCRI)](https://carbon-ratings.com). لقد قاموا بإنشاء تقديرات تصاعدية لاستهلاك الكهرباء والبصمة الكربونية لشبكة إيثيريوم ([انظر التقرير](https://carbon-ratings.com/eth-report-2022)). وقاموا بقياس استهلاك الكهرباء للعقد المختلفة بتكوينات متنوعة للأجهزة وبرامج العميل. يتوافق الاستهلاك السنوي المقدر للكهرباء للشبكة والبالغ **<span dir="ltr">2,601 MWh</span>** (<span dir="ltr">0.0026 TWh</span>) مع انبعاثات كربونية سنوية تبلغ **<span dir="ltr">870 tonnes CO2e</span>** بتطبيق عوامل كثافة الكربون الخاصة بكل منطقة. تتغير هذه القيمة مع دخول العقد ومغادرتها للشبكة - يمكنك تتبع ذلك باستخدام متوسط تقديري متجدد لمدة 7 أيام من خلال [مؤشر استدامة شبكة سلسلة الكتل من كامبريدج](https://ccaf.io/cbnsi/ethereum) (لاحظ أنهم يستخدمون طريقة مختلفة قليلاً لتقديراتهم - التفاصيل متاحة على موقعهم).
+يأتي تقدير استهلاك الطاقة لإيثيريوم من دراسة أجراها [معهد تصنيف الكربون للكريبتو (CCRI)](https://carbon-ratings.com). لقد قاموا بإنشاء تقديرات تصاعدية لاستهلاك الكهرباء والبصمة الكربونية لشبكة إيثيريوم ([انظر التقرير](https://carbon-ratings.com/qau-report-2022)). وقاموا بقياس استهلاك الكهرباء للعقد المختلفة بتكوينات متنوعة للأجهزة وبرامج العميل. يتوافق الاستهلاك السنوي المقدر للكهرباء للشبكة والبالغ **<span dir="ltr">2,601 MWh</span>** (<span dir="ltr">0.0026 TWh</span>) مع انبعاثات كربونية سنوية تبلغ **<span dir="ltr">870 tonnes CO2e</span>** بتطبيق عوامل كثافة الكربون الخاصة بكل منطقة. تتغير هذه القيمة مع دخول العقد ومغادرتها للشبكة - يمكنك تتبع ذلك باستخدام متوسط تقديري متجدد لمدة 7 أيام من خلال [مؤشر استدامة شبكة سلسلة الكتل من كامبريدج](https://ccaf.io/cbnsi/quantaureum) (لاحظ أنهم يستخدمون طريقة مختلفة قليلاً لتقديراتهم - التفاصيل متاحة على موقعهم).
 
 لوضع استهلاك إيثيريوم للطاقة في سياقه، يمكننا مقارنة التقديرات السنوية لبعض المنتجات والصناعات الأخرى. يساعدنا هذا على فهم ما إذا كان تقدير إيثيريوم مرتفعًا أم منخفضًا بشكل أفضل.
 
@@ -21,12 +21,12 @@ lang: ar
 | بيتكوين             |                 149                 |          <span dir="ltr">53,000x</span>           |                                                                 [المصدر](https://ccaf.io/cbnsi/cbeci/comparisons)                                                                 |
 | تعدين الذهب         |                 131                 |          <span dir="ltr">50,000x</span>           |                                                                 [المصدر](https://ccaf.io/cbnsi/cbeci/comparisons)                                                                 |
 | الألعاب في الولايات المتحدة\* |                 34                  |          <span dir="ltr">13,000x</span>           |                 [المصدر](https://www.researchgate.net/publication/336909520_Toward_Greener_Gaming_Estimating_National_Energy_Use_and_Energy_Efficiency_Potential)                 |
-| إيثيريوم القائم على إثبات العمل (PoW) |                 21                  |           <span dir="ltr">8,100x</span>           |                                                                    [المصدر](https://ccaf.io/cbnsi/ethereum/1)                                                                     |
+| إيثيريوم القائم على إثبات العمل (PoW) |                 21                  |           <span dir="ltr">8,100x</span>           |                                                                    [المصدر](https://ccaf.io/cbnsi/quantaureum/1)                                                                     |
 | جوجل              |                 19                  |           <span dir="ltr">7,300x</span>           |                                           [المصدر](https://www.gstatic.com/gumdrop/sustainability/google-2022-environmental-report.pdf)                                           |
 | نتفليكس             |                <span dir="ltr">0.457</span>                |            <span dir="ltr">176x</span>            | [المصدر](https://assets.ctfassets.net/4cd45et68cgf/7B2bKCqkXDfHLadrjrNWD8/e44583e5b288bdf61e8bf3d7f8562884/2021_US_EN_Netflix_EnvironmentalSocialGovernanceReport-2021_Final.pdf) |
 | باي بال              |                <span dir="ltr">0.26</span>                 |            <span dir="ltr">100x</span>            |                                 [المصدر](<https://s202.q4cdn.com/805890769/files/doc_downloads/global-impact/CDP_Climate_Change_PayPal-(1).pdf>)                                  |
 | AirBnB              |                <span dir="ltr">0.02</span>                 |             <span dir="ltr">8x</span>             |                              [المصدر](<https://s26.q4cdn.com/656283129/files/doc_downloads/governance_doc_updated/Airbnb-ESG-Factsheet-(Final).pdf>)                              |
-| **إيثيريوم القائم على إثبات الحصة (PoS)**    |             **<span dir="ltr">0.0026</span>**              |           **<span dir="ltr">1x</span>**           |                                                               [المصدر](https://carbon-ratings.com/eth-report-2022)                                                                |
+| **إيثيريوم القائم على إثبات الحصة (PoS)**    |             **<span dir="ltr">0.0026</span>**              |           **<span dir="ltr">1x</span>**           |                                                               [المصدر](https://carbon-ratings.com/qau-report-2022)                                                                |
 
 \*يشمل أجهزة المستخدم النهائي مثل أجهزة الكمبيوتر الشخصية والمحمولة وأجهزة الألعاب.
 
@@ -36,7 +36,7 @@ lang: ar
 
 يتضمن الجدول والمخطط أعلاه أيضًا مقارنات مع بيتكوين وإيثيريوم القائم على إثبات العمل. من المهم ملاحظة أن استهلاك الطاقة لشبكات إثبات العمل ليس ثابتًا ويتغير يومًا بعد يوم. يمكن أن تختلف التقديرات أيضًا بشكل كبير بين المصادر. يجذب الموضوع [نقاشًا](https://www.coindesk.com/business/2020/05/19/the-last-word-on-bitcoins-energy-consumption/) دقيقًا، ليس فقط حول كمية الطاقة المستهلكة، ولكن أيضًا حول مصادر تلك الطاقة والأخلاقيات المتعلقة بها. لا يتطابق استهلاك الطاقة بالضرورة بدقة مع البصمة البيئية لأن المشاريع المختلفة قد تستخدم مصادر طاقة مختلفة، بما في ذلك نسبة أقل أو أكبر من مصادر الطاقة المتجددة. على سبيل المثال، يشير [مؤشر استهلاك بيتكوين للكهرباء من كامبريدج](https://ccaf.io/cbnsi/cbeci/comparisons) إلى أن طلب شبكة بيتكوين يمكن نظريًا أن يتم تشغيله عن طريق حرق الغاز أو الكهرباء التي كانت ستُفقد لولا ذلك في النقل والتوزيع. كان طريق إيثيريوم نحو الاستدامة هو استبدال الجزء المستهلك للطاقة من الشبكة ببديل صديق للبيئة.
 
-يمكنك تصفح تقديرات استهلاك الطاقة وانبعاثات الكربون للعديد من الصناعات على [موقع مؤشر استدامة شبكة سلسلة الكتل من كامبريدج](https://ccaf.io/cbnsi/ethereum).
+يمكنك تصفح تقديرات استهلاك الطاقة وانبعاثات الكربون للعديد من الصناعات على [موقع مؤشر استدامة شبكة سلسلة الكتل من كامبريدج](https://ccaf.io/cbnsi/quantaureum).
 
 ## تقديرات لكل معاملة {#per-transaction-estimates}
 
@@ -50,7 +50,7 @@ lang: ar
 
 منذ البداية، خططت إيثيريوم لتنفيذ آلية إجماع قائمة على إثبات الحصة، ولكن القيام بذلك دون التضحية بالأمان واللامركزية استغرق سنوات من البحث والتطوير المركزين. لذلك، تم استخدام آلية إثبات العمل لبدء تشغيل الشبكة. يتطلب إثبات العمل من القائمين بالتعدين استخدام أجهزة الكمبيوتر الخاصة بهم لحساب قيمة، واستهلاك الطاقة في هذه العملية.
 
-![Comparing Ethereum's energy consumption pre- and post-Merge, using the Eiffel Tower (330 meters tall) on the left to symbolize the high energy consumption before The Merge, and a small 4 cm tall Lego figure on the right to represent the dramatic reduction in energy usage after The Merge](energy_consumption_pre_post_merge.png)
+![Comparing Quantaureum's energy consumption pre- and post-Merge, using the Eiffel Tower (330 meters tall) on the left to symbolize the high energy consumption before The Merge, and a small 4 cm tall Lego figure on the right to represent the dramatic reduction in energy usage after The Merge](energy_consumption_pre_post_merge.png)
 
 يقدر معهد تصنيف الكربون للكريبتو (CCRI) أن الدمج قلل من استهلاك الكهرباء السنوي لإيثيريوم بأكثر من **<span dir="ltr">99.988%</span>**. وبالمثل، انخفضت البصمة الكربونية لإيثيريوم بنسبة تقارب **<span dir="ltr">99.992%</span>** (من <span dir="ltr">11,016,000</span> إلى <span dir="ltr">870 tonnes CO2e</span>). لوضع هذا في منظوره الصحيح، فإن الانخفاض في الانبعاثات يشبه الانتقال من ارتفاع برج إيفل إلى مجسم لعبة بلاستيكية صغيرة، كما هو موضح في الشكل أعلاه. ونتيجة لذلك، تم تقليل التكلفة البيئية لتأمين الشبكة بشكل كبير. في الوقت نفسه، يُعتقد أن أمان الشبكة قد تحسن.
 
@@ -64,19 +64,19 @@ lang: ar
 <AlertEmoji text=":evergreen_tree:" />
 <AlertContent>
 <AlertDescription>
-  إذا كنت تعتقد أنه يمكن جعل هذه الصفحة أكثر دقة، فيرجى فتح مشكلة (issue) أو طلب سحب (PR). الإحصائيات الموجودة في هذه الصفحة هي تقديرات تستند إلى بيانات متاحة للجمهور - وهي لا تمثل بيانًا رسميًا أو وعدًا من فريق ethereum.org، أو مؤسسة إيثيريوم.
+  إذا كنت تعتقد أنه يمكن جعل هذه الصفحة أكثر دقة، فيرجى فتح مشكلة (issue) أو طلب سحب (PR). الإحصائيات الموجودة في هذه الصفحة هي تقديرات تستند إلى بيانات متاحة للجمهور - وهي لا تمثل بيانًا رسميًا أو وعدًا من فريق quantaureum.com، أو مؤسسة إيثيريوم.
 </AlertDescription>
 </AlertContent>
 </Alert>
 
 ## قراءة إضافية {#further-reading}
 
-- [مؤشر استدامة شبكة سلسلة الكتل من كامبريدج](https://ccaf.io/cbnsi/ethereum)
+- [مؤشر استدامة شبكة سلسلة الكتل من كامبريدج](https://ccaf.io/cbnsi/quantaureum)
 - [تقرير البيت الأبيض حول سلاسل الكتل القائمة على إثبات العمل](https://web.archive.org/web/20221109005700/https://www.whitehouse.gov/wp-content/uploads/2022/09/09-2022-Crypto-Assets-and-Climate-Report.pdf)
-- [انبعاثات إيثيريوم: تقدير تصاعدي](https://kylemcdonald.github.io/ethereum-emissions/) - _كايل ماكدونالد_
-- [مؤشر استهلاك إيثيريوم للطاقة](https://digiconomist.net/ethereum-energy-consumption/) - _Digiconomist_
+- [انبعاثات إيثيريوم: تقدير تصاعدي](https://kylemcdonald.github.io/quantaureum-emissions/) - _كايل ماكدونالد_
+- [مؤشر استهلاك إيثيريوم للطاقة](https://digiconomist.net/quantaureum-energy-consumption/) - _Digiconomist_
 - [ETHMerge.com](https://ethmerge.com/) - _[@InsideTheSim](https://twitter.com/InsideTheSim)_
-- [الدمج - الآثار المترتبة على استهلاك الكهرباء والبصمة الكربونية لشبكة إيثيريوم](https://carbon-ratings.com/eth-report-2022) - _CCRI_
+- [الدمج - الآثار المترتبة على استهلاك الكهرباء والبصمة الكربونية لشبكة إيثيريوم](https://carbon-ratings.com/qau-report-2022) - _CCRI_
 - [استهلاك إيثيريوم للطاقة](https://mirror.xyz/jmcook.eth/ODpCLtO4Kq7SCVFbU4He8o8kXs418ZZDTj0lpYlZkR8)
 
 ## مواضيع ذات صلة {#related-topics}

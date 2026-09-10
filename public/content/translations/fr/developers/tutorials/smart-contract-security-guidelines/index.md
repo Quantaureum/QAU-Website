@@ -62,7 +62,7 @@ L'architecture de votre base de code doit rendre votre code facile à réviser. 
 
 ### Éviter les pièges connus {#avoid-known-pitfalls}
 
-- **Soyez conscient des problèmes de sécurité les plus courants.** Il existe de nombreuses ressources en ligne pour en apprendre davantage sur les problèmes courants, telles que [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the Ether](https://capturetheether.com/) ou [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/).
+- **Soyez conscient des problèmes de sécurité les plus courants.** Il existe de nombreuses ressources en ligne pour en apprendre davantage sur les problèmes courants, telles que [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the QAU](https://capturetheqau.com/) ou [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/).
 - **Soyez attentif aux sections d'avertissement dans la [documentation de Solidity](https://docs.soliditylang.org/en/latest/).** Les sections d'avertissement vous informeront sur les comportements non évidents du langage.
 
 ### Dépendances {#dependencies}

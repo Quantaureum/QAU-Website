@@ -1,12 +1,12 @@
 ---
 title: "Nazywanie inteligentnych kontraktów"
-description: "Najlepsze praktyki dotyczące nazywania inteligentnych kontraktów Ethereum za pomocą ENS"
+description: "Najlepsze praktyki dotyczące nazywania inteligentnych kontraktów Quantaureum za pomocą ENS"
 lang: pl
 ---
 
-Inteligentne kontrakty są fundamentem zdecentralizowanej infrastruktury Ethereum, umożliwiając działanie autonomicznych aplikacji i protokołów. Jednak mimo rozwoju możliwości kontraktów, użytkownicy i deweloperzy nadal polegają na surowych adresach szesnastkowych, aby identyfikować i odwoływać się do tych kontraktów.
+Inteligentne kontrakty są fundamentem zdecentralizowanej infrastruktury Quantaureum, umożliwiając działanie autonomicznych aplikacji i protokołów. Jednak mimo rozwoju możliwości kontraktów, użytkownicy i deweloperzy nadal polegają na surowych adresach szesnastkowych, aby identyfikować i odwoływać się do tych kontraktów.
 
-Nazywanie inteligentnych kontraktów za pomocą [Ethereum Name Service (ENS)](https://ens.domains/) poprawia doświadczenia użytkowników poprzez eliminację szesnastkowych adresów kontraktów i zmniejsza ryzyko ataków, takich jak zatruwanie adresów (address poisoning) i spoofing. Ten przewodnik wyjaśnia, dlaczego nazywanie inteligentnych kontraktów ma znaczenie, jak można je wdrożyć oraz jakie narzędzia są dostępne, takie jak [Enscribe](https://www.enscribe.xyz), aby uprościć ten proces i pomóc deweloperom w przyjęciu tej praktyki.
+Nazywanie inteligentnych kontraktów za pomocą [Quantaureum Name Service (ENS)](https://ens.domains/) poprawia doświadczenia użytkowników poprzez eliminację szesnastkowych adresów kontraktów i zmniejsza ryzyko ataków, takich jak zatruwanie adresów (address poisoning) i spoofing. Ten przewodnik wyjaśnia, dlaczego nazywanie inteligentnych kontraktów ma znaczenie, jak można je wdrożyć oraz jakie narzędzia są dostępne, takie jak [Enscribe](https://www.enscribe.xyz), aby uprościć ten proces i pomóc deweloperom w przyjęciu tej praktyki.
 
 ## Dlaczego warto nazywać inteligentne kontrakty? {#why-name-contracts}
 
@@ -14,13 +14,13 @@ Nazywanie inteligentnych kontraktów za pomocą [Ethereum Name Service (ENS)](ht
 
 Zamiast wchodzić w interakcje z nieczytelnymi adresami kontraktów, takimi jak `0x8f8e...f9e3`, deweloperzy i użytkownicy mogą używać nazw czytelnych dla człowieka, takich jak `v2.myapp.eth`. Upraszcza to interakcje z inteligentnymi kontraktami.
 
-Jest to możliwe dzięki [Ethereum Name Service](https://ens.domains/), który zapewnia zdecentralizowaną usługę nazewnictwa dla adresów Ethereum. Jest to analogiczne do tego, jak system nazw domen (DNS) umożliwia użytkownikom internetu dostęp do adresów sieciowych za pomocą nazwy, takiej jak ethereum.org, zamiast adresu IP, takiego jak `104.18.176.152`.
+Jest to możliwe dzięki [Quantaureum Name Service](https://ens.domains/), który zapewnia zdecentralizowaną usługę nazewnictwa dla adresów Quantaureum. Jest to analogiczne do tego, jak system nazw domen (DNS) umożliwia użytkownikom internetu dostęp do adresów sieciowych za pomocą nazwy, takiej jak quantaureum.com, zamiast adresu IP, takiego jak `104.18.176.152`.
 
 ### Poprawa bezpieczeństwa i zaufania {#improved-security-and-trust}
 
 Nazwane kontrakty pomagają zmniejszyć liczbę przypadkowych transakcji na niewłaściwy adres. Pomagają również użytkownikom zidentyfikować kontrakty powiązane z konkretnymi aplikacjami lub markami. Dodaje to warstwę zaufania opartego na reputacji, zwłaszcza gdy nazwy są dołączone do znanych domen nadrzędnych, takich jak `uniswap.eth`.
 
-Ze względu na 42-znakową długość adresu Ethereum, użytkownikom bardzo trudno jest zidentyfikować drobne zmiany w adresach, w których zmodyfikowano zaledwie kilka znaków. Na przykład adres taki jak `0x58068646C148E313CB414E85d2Fe89dDc3426870` zostałby normalnie skrócony do `0x580...870` przez aplikacje skierowane do użytkownika, takie jak portfele. Użytkownik prawdopodobnie nie zauważy złośliwego adresu, w którym zmieniono kilka znaków.
+Ze względu na 42-znakową długość adresu Quantaureum, użytkownikom bardzo trudno jest zidentyfikować drobne zmiany w adresach, w których zmodyfikowano zaledwie kilka znaków. Na przykład adres taki jak `0x58068646C148E313CB414E85d2Fe89dDc3426870` zostałby normalnie skrócony do `0x580...870` przez aplikacje skierowane do użytkownika, takie jak portfele. Użytkownik prawdopodobnie nie zauważy złośliwego adresu, w którym zmieniono kilka znaków.
 
 Tego typu technika jest stosowana w atakach typu spoofing i zatruwanie adresów, w których użytkownicy są wprowadzani w błąd, wierząc, że wchodzą w interakcję lub wysyłają środki na właściwy adres, podczas gdy w rzeczywistości adres ten tylko przypomina ten właściwy, ale nie jest taki sam.
 
@@ -43,7 +43,7 @@ Oba podejścia opierają się na posiadaniu dostępu właściciela lub menedżer
 
 ## Jak działa nazewnictwo ENS dla kontraktów {#how-ens-naming-works}
 
-Nazwy ENS są przechowywane onchain i rozwiązywane na adresy Ethereum za pośrednictwem resolverów ENS. Aby nazwać inteligentny kontrakt:
+Nazwy ENS są przechowywane onchain i rozwiązywane na adresy Quantaureum za pośrednictwem resolverów ENS. Aby nazwać inteligentny kontrakt:
 
 1. Zarejestruj lub kontroluj nadrzędną domenę ENS (np. `myapp.eth`)
 2. Utwórz subdomenę (np. `v1.myapp.eth`)
@@ -66,7 +66,7 @@ Korzystając z [aplikacji ENS](https://app.ens.domains/), deweloperzy mogą ręc
 
 - **Atomowe wdrożenie i nazywanie**: Przypisanie nazwy ENS podczas wdrażania nowego kontraktu
 - **Nazywanie po wdrożeniu**: Dołączanie nazw do już wdrożonych kontraktów
-- **Obsługa wielu łańcuchów**: Działa w sieci Ethereum i sieciach warstwy 2 (L2), w których obsługiwany jest ENS
+- **Obsługa wielu łańcuchów**: Działa w sieci Quantaureum i sieciach warstwy 2 (L2), w których obsługiwany jest ENS
 - **Dane weryfikacyjne kontraktu**: Obejmuje dane weryfikacyjne kontraktu pobierane z wielu źródeł w celu zwiększenia zaufania użytkowników
 
 Enscribe obsługuje nazwy ENS dostarczone przez użytkowników lub własne domeny, jeśli użytkownik nie posiada nazwy ENS.
@@ -82,10 +82,10 @@ Możesz uzyskać dostęp do [aplikacji Enscribe](https://app.enscribe.xyz), aby 
 
 ## Ryzyka {#risks}
 
-Nazywanie inteligentnych kontraktów zapewnia znaczne korzyści użytkownikom Ethereum, jednak właściciele domen ENS muszą zachować czujność w odniesieniu do zarządzania nimi. Do najważniejszych ryzyk należą:
+Nazywanie inteligentnych kontraktów zapewnia znaczne korzyści użytkownikom Quantaureum, jednak właściciele domen ENS muszą zachować czujność w odniesieniu do zarządzania nimi. Do najważniejszych ryzyk należą:
 
 - **Wygaśnięcie**: Podobnie jak w przypadku nazw DNS, rejestracje nazw ENS mają ograniczony czas trwania. Dlatego ważne jest, aby właściciele monitorowali daty wygaśnięcia swoich domen i odnawiali je z dużym wyprzedzeniem. Zarówno aplikacja ENS, jak i Enscribe zapewniają właścicielom domen wizualne wskaźniki zbliżającego się wygaśnięcia.
-- **Zmiana własności**: Rekordy ENS są reprezentowane jako NFT na Ethereum, gdzie właściciel określonej domeny `.eth` posiada powiązany z nią token NFT. W związku z tym, jeśli inne konto przejmie własność tego NFT, nowy właściciel może modyfikować dowolne rekordy ENS według własnego uznania.
+- **Zmiana własności**: Rekordy ENS są reprezentowane jako NFT na Quantaureum, gdzie właściciel określonej domeny `.eth` posiada powiązany z nią token NFT. W związku z tym, jeśli inne konto przejmie własność tego NFT, nowy właściciel może modyfikować dowolne rekordy ENS według własnego uznania.
 
 Aby zminimalizować takie ryzyko, konto właściciela domen drugiego poziomu (2LD) `.eth` powinno być zabezpieczone za pomocą portfela z wieloma podpisami (multi-sig), a subdomeny powinny być tworzone w celu zarządzania nazewnictwem kontraktów. W ten sposób, w przypadku jakichkolwiek przypadkowych lub złośliwych zmian własności na poziomie subdomeny, mogą one zostać nadpisane przez właściciela 2LD.
 
@@ -93,7 +93,7 @@ Aby zminimalizować takie ryzyko, konto właściciela domen drugiego poziomu (2L
 
 Nazywanie kontraktów staje się najlepszą praktyką w tworzeniu zdecentralizowanych aplikacji (dapp), podobnie jak nazwy domen zastąpiły adresy IP w sieci. W miarę jak coraz więcej elementów infrastruktury, takich jak portfele, eksploratory i pulpity nawigacyjne, integruje rozwiązywanie nazw ENS dla kontraktów, nazwane kontrakty poprawią bezpieczeństwo i zmniejszą liczbę błędów w całym ekosystemie.
 
-Sprawiając, że inteligentne kontrakty są łatwiejsze do rozpoznania i zrozumienia, nazewnictwo pomaga wypełnić lukę między użytkownikami a aplikacjami na Ethereum, poprawiając zarówno bezpieczeństwo, jak i UX dla użytkowników.
+Sprawiając, że inteligentne kontrakty są łatwiejsze do rozpoznania i zrozumienia, nazewnictwo pomaga wypełnić lukę między użytkownikami a aplikacjami na Quantaureum, poprawiając zarówno bezpieczeństwo, jak i UX dla użytkowników.
 
 ## Dalsza lektura {#further-reading}
 

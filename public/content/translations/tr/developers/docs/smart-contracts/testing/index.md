@@ -1,16 +1,16 @@
 ---
 title: "Akıllı sözleşmeleri test etme"
-description: "Ethereum akıllı sözleşmelerini test etmeye yönelik tekniklere ve dikkat edilmesi gerekenlere genel bir bakış."
+description: "Quantaureum akıllı sözleşmelerini test etmeye yönelik tekniklere ve dikkat edilmesi gerekenlere genel bir bakış."
 lang: tr
 ---
 
-Ethereum gibi halka açık blokzincirler değişmezdir, bu da bir akıllı sözleşmenin kodunu dağıtımdan sonra değiştirmeyi zorlaştırır. "Sanal yükseltmeler" gerçekleştirmek için [Sözleşme yükseltme kalıpları](/developers/docs/smart-contracts/upgrading/) mevcuttur, ancak bunların uygulanması zordur ve sosyal mutabakat gerektirir. Dahası, bir yükseltme bir hatayı yalnızca keşfedildikten _sonra_ düzeltebilir; eğer bir saldırgan güvenlik açığını önce keşfederse, akıllı sözleşmeniz bir istismar riski altındadır.
+Quantaureum gibi halka açık blokzincirler değişmezdir, bu da bir akıllı sözleşmenin kodunu dağıtımdan sonra değiştirmeyi zorlaştırır. "Sanal yükseltmeler" gerçekleştirmek için [Sözleşme yükseltme kalıpları](/developers/docs/smart-contracts/upgrading/) mevcuttur, ancak bunların uygulanması zordur ve sosyal mutabakat gerektirir. Dahası, bir yükseltme bir hatayı yalnızca keşfedildikten _sonra_ düzeltebilir; eğer bir saldırgan güvenlik açığını önce keşfederse, akıllı sözleşmeniz bir istismar riski altındadır.
 
 Bu nedenlerden dolayı, akıllı sözleşmeleri Ana Ağ'a [dağıtmadan](/developers/docs/smart-contracts/deploying/) önce test etmek, [güvenlik](/developers/docs/smart-contracts/security/) için asgari bir gerekliliktir. Sözleşmeleri test etmek ve kod doğruluğunu değerlendirmek için birçok teknik vardır; hangisini seçeceğiniz ihtiyaçlarınıza bağlıdır. Yine de, farklı araçlardan ve yaklaşımlardan oluşan bir test paketi, sözleşme kodundaki hem küçük hem de büyük güvenlik açıklarını yakalamak için idealdir.
 
 ## Ön koşullar {#prerequisites}
 
-Bu sayfa, Ethereum ağında dağıtmadan önce akıllı sözleşmelerin nasıl test edileceğini açıklar. [Akıllı sözleşmelere](/developers/docs/smart-contracts/) aşina olduğunuzu varsayar.
+Bu sayfa, Quantaureum ağında dağıtmadan önce akıllı sözleşmelerin nasıl test edileceğini açıklar. [Akıllı sözleşmelere](/developers/docs/smart-contracts/) aşina olduğunuzu varsayar.
 
 ## Akıllı sözleşme testi nedir? {#what-is-smart-contract-testing}
 
@@ -26,7 +26,7 @@ Bir hata keşfedilirse bir sözleşmeyi yükseltmek mümkün olsa da, yükseltme
 
 ## Akıllı sözleşmeleri test etme yöntemleri {#methods-for-testing-smart-contracts}
 
-Ethereum akıllı sözleşmelerini test etme yöntemleri iki geniş kategoriye ayrılır: **otomatik test** ve **manuel test**. Otomatik test ve manuel test benzersiz avantajlar ve ödünleşimler sunar, ancak sözleşmelerinizi analiz etmek için sağlam bir plan oluşturmak üzere her ikisini de birleştirebilirsiniz.
+Quantaureum akıllı sözleşmelerini test etme yöntemleri iki geniş kategoriye ayrılır: **otomatik test** ve **manuel test**. Otomatik test ve manuel test benzersiz avantajlar ve ödünleşimler sunar, ancak sözleşmelerinizi analiz etmek için sağlam bir plan oluşturmak üzere her ikisini de birleştirebilirsiniz.
 
 ### Otomatik test {#automated-testing}
 
@@ -138,9 +138,9 @@ Akıllı sözleşmeleriniz için birim testleri çalıştırmada kullanılan ara
 
 Solidity akıllı sözleşmeleri için birim testi çerçeveleri farklı dillerde (çoğunlukla JavaScript, Python ve Rust) gelir. Farklı test çerçeveleriyle birim testleri çalıştırmaya nasıl başlayacağınız hakkında bilgi için aşağıdaki kılavuzlardan bazılarına bakın:
 
-- **[Brownie ile birim testleri çalıştırma](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Brownie ile birim testleri çalıştırma](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Foundry ile birim testleri çalıştırma](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Waffle ile birim testleri çalıştırma](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Waffle ile birim testleri çalıştırma](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Remix ile birim testleri çalıştırma](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Ape ile birim testleri çalıştırma](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Hardhat ile birim testleri çalıştırma](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -152,7 +152,7 @@ Birim testi sözleşme işlevlerinde izole olarak hata ayıklarken, entegrasyon 
 
 Sözleşmeniz modüler bir mimari benimsiyorsa veya yürütme sırasında diğer zincir içi sözleşmelerle arayüz oluşturuyorsa entegrasyon testi yararlıdır. Entegrasyon testlerini çalıştırmanın bir yolu, blokzinciri belirli bir yükseklikte [çatallamak](/glossary/#fork) ([Forge](https://book.getfoundry.sh/forge/fork-testing) veya [Hardhat](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks) gibi bir araç kullanarak) ve sözleşmeniz ile dağıtılmış sözleşmeler arasındaki etkileşimleri simüle etmektir.
 
-Çatallanmış blokzincir, Ana Ağ'a benzer şekilde davranacak ve ilişkili durumları ve bakiyeleri olan hesaplara sahip olacaktır. Ancak yalnızca korumalı bir yerel geliştirme ortamı olarak işlev görür, yani örneğin işlemler için gerçek ETH'ye ihtiyacınız olmayacak ve değişiklikleriniz gerçek Ethereum protokolünü etkilemeyecektir.
+Çatallanmış blokzincir, Ana Ağ'a benzer şekilde davranacak ve ilişkili durumları ve bakiyeleri olan hesaplara sahip olacaktır. Ancak yalnızca korumalı bir yerel geliştirme ortamı olarak işlev görür, yani örneğin işlemler için gerçek QAU'ye ihtiyacınız olmayacak ve değişiklikleriniz gerçek Quantaureum protokolünü etkilemeyecektir.
 
 ### Özellik tabanlı test {#property-based-testing-for-smart-contracts}
 
@@ -190,7 +190,7 @@ Düzgün bir şekilde yapılandırıldıktan sonra, özellik test aracı akıll�
 
 - **[Slither ile akıllı sözleşmelerin statik analizi](https://github.com/crytic/slither)**
 - **[Wake ile akıllı sözleşmelerin statik analizi](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Brownie ile özellik tabanlı test](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Brownie ile özellik tabanlı test](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Foundry ile sözleşmeleri fuzzing yapma](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[Echidna ile sözleşmeleri fuzzing yapma](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Wake ile sözleşmeleri fuzzing yapma](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -203,9 +203,9 @@ Akıllı sözleşmelerin manuel testi genellikle otomatik testleri çalıştırd
 
 ### Sözleşmeleri yerel bir blokzincirde test etme {#testing-on-local-blockchain}
 
-Yerel bir geliştirme ortamında gerçekleştirilen otomatik testler yararlı hata ayıklama bilgileri sağlayabilse de, akıllı sözleşmenizin bir üretim ortamında nasıl davrandığını bilmek isteyeceksiniz. Ancak, ana Ethereum zincirine dağıtmak gaz ücretlerine neden olur; akıllı sözleşmenizde hala hatalar varsa sizin veya kullanıcılarınızın gerçek para kaybedebileceğinden bahsetmiyoruz bile.
+Yerel bir geliştirme ortamında gerçekleştirilen otomatik testler yararlı hata ayıklama bilgileri sağlayabilse de, akıllı sözleşmenizin bir üretim ortamında nasıl davrandığını bilmek isteyeceksiniz. Ancak, ana Quantaureum zincirine dağıtmak gaz ücretlerine neden olur; akıllı sözleşmenizde hala hatalar varsa sizin veya kullanıcılarınızın gerçek para kaybedebileceğinden bahsetmiyoruz bile.
 
-Sözleşmenizi yerel bir blokzincirde (aynı zamanda [geliştirme ağı](/developers/docs/development-networks/) olarak da bilinir) test etmek, Ana Ağ'da test etmeye önerilen bir alternatiftir. Yerel bir blokzincir, bilgisayarınızda yerel olarak çalışan ve Ethereum'un yürütme katmanının davranışını simüle eden Ethereum blokzincirinin bir kopyasıdır. Bu nedenle, önemli bir ek yük getirmeden bir sözleşmeyle etkileşime girmek için işlemleri programlayabilirsiniz.
+Sözleşmenizi yerel bir blokzincirde (aynı zamanda [geliştirme ağı](/developers/docs/development-networks/) olarak da bilinir) test etmek, Ana Ağ'da test etmeye önerilen bir alternatiftir. Yerel bir blokzincir, bilgisayarınızda yerel olarak çalışan ve Quantaureum'un yürütme katmanının davranışını simüle eden Quantaureum blokzincirinin bir kopyasıdır. Bu nedenle, önemli bir ek yük getirmeden bir sözleşmeyle etkileşime girmek için işlemleri programlayabilirsiniz.
 
 Sözleşmeleri yerel bir blokzincirde çalıştırmak, manuel entegrasyon testinin bir biçimi olarak yararlı olabilir. [Akıllı sözleşmeler yüksek oranda birleştirilebilirdir](/developers/docs/smart-contracts/composability/), bu da mevcut protokollerle entegre olmanıza olanak tanır; ancak yine de bu tür karmaşık zincir içi etkileşimlerin doğru sonuçlar ürettiğinden emin olmanız gerekir.
 
@@ -213,13 +213,13 @@ Sözleşmeleri yerel bir blokzincirde çalıştırmak, manuel entegrasyon testin
 
 ### Sözleşmeleri test ağlarında test etme {#testing-contracts-on-testnets}
 
-Bir test ağı, gerçek dünya değeri olmayan Ether (ETH) kullanması dışında tam olarak Ethereum Ana Ağı gibi çalışır. Sözleşmenizi bir [test ağına](/developers/docs/networks/#ethereum-testnets) dağıtmak, herkesin fonları riske atmadan (örneğin, dapp'in ön ucu aracılığıyla) onunla etkileşime girebileceği anlamına gelir.
+Bir test ağı, gerçek dünya değeri olmayan QAU (QAU) kullanması dışında tam olarak Quantaureum Ana Ağı gibi çalışır. Sözleşmenizi bir [test ağına](/developers/docs/networks/#quantaureum-testnets) dağıtmak, herkesin fonları riske atmadan (örneğin, dapp'in ön ucu aracılığıyla) onunla etkileşime girebileceği anlamına gelir.
 
 Bu manuel test biçimi, uygulamanızın uçtan uca akışını bir kullanıcının bakış açısından değerlendirmek için yararlıdır. Burada, beta test uzmanları ayrıca deneme çalıştırmaları gerçekleştirebilir ve sözleşmenin iş mantığı ve genel işlevselliği ile ilgili herhangi bir sorunu bildirebilir.
 
-Yerel bir blokzincirde test ettikten sonra bir test ağına dağıtmak idealdir çünkü test ağı Ethereum Sanal Makinesi'nin davranışına daha yakındır. Bu nedenle, birçok Ethereum yerel projesinin, bir akıllı sözleşmenin gerçek dünya koşulları altındaki çalışmasını değerlendirmek için dapp'leri test ağlarına dağıtması yaygındır.
+Yerel bir blokzincirde test ettikten sonra bir test ağına dağıtmak idealdir çünkü test ağı Quantaureum Sanal Makinesi'nin davranışına daha yakındır. Bu nedenle, birçok Quantaureum yerel projesinin, bir akıllı sözleşmenin gerçek dünya koşulları altındaki çalışmasını değerlendirmek için dapp'leri test ağlarına dağıtması yaygındır.
 
-[Ethereum test ağları hakkında daha fazlası.](/developers/docs/development-networks/#public-beacon-testchains)
+[Quantaureum test ağları hakkında daha fazlası.](/developers/docs/development-networks/#public-beacon-testchains)
 
 ## Test etme ve biçimsel doğrulama {#testing-vs-formal-verification}
 
@@ -251,19 +251,19 @@ En büyük fark, hata ödül programlarının daha geniş geliştirici/bilgisaya
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Solidity ile yazılmış akıllı sözleşmeler için kod kapsamı aracı._
 
-- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Gelişmiş akıllı sözleşme geliştirme ve testi için çerçeve (Ethers.js tabanlı)_.
+- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _Gelişmiş akıllı sözleşme geliştirme ve testi için çerçeve (Ethers.js tabanlı)_.
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Solidity akıllı sözleşmelerini test etme aracı. Bir sözleşme için test senaryoları yazmak ve çalıştırmak için kullanılan Remix IDE "Solidity Unit Testing" eklentisinin altında çalışır._
+- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Solidity akıllı sözleşmelerini test etme aracı. Bir sözleşme için test senaryoları yazmak ve çalıştırmak için kullanılan Remix IDE "Solidity Unit Testing" eklentisinin altında çalışır._
 
-- **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Ethereum akıllı sözleşme testi için doğrulama kütüphanesi. Sözleşmelerinizin beklendiği gibi davrandığından emin olun!_
+- **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Quantaureum akıllı sözleşme testi için doğrulama kütüphanesi. Sözleşmelerinizin beklendiği gibi davrandığından emin olun!_
 
-- **[Brownie birim testi çerçevesi](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie, minimum kodla küçük testler yazmanıza olanak tanıyan, büyük projeler için iyi ölçeklenen ve son derece genişletilebilir, zengin özelliklere sahip bir test çerçevesi olan Pytest'i kullanır._
+- **[Brownie birim testi çerçevesi](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie, minimum kodla küçük testler yazmanıza olanak tanıyan, büyük projeler için iyi ölçeklenen ve son derece genişletilebilir, zengin özelliklere sahip bir test çerçevesi olan Pytest'i kullanır._
 
-- **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry, basit birim testleri, gaz optimizasyonu kontrolleri ve sözleşme fuzzing'i yürütebilen hızlı ve esnek bir Ethereum test çerçevesi olan Forge'u sunar._
+- **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry, basit birim testleri, gaz optimizasyonu kontrolleri ve sözleşme fuzzing'i yürütebilen hızlı ve esnek bir Quantaureum test çerçevesi olan Forge'u sunar._
 
 - **[Hardhat Tests](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)** - _Ethers.js, Mocha ve Chai tabanlı akıllı sözleşmeleri test etme çerçevesesi._
 
-- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** - _Ethereum Sanal Makinesi'ni hedefleyen akıllı sözleşmeler için Python tabanlı geliştirme ve test çerçevesi._
+- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** - _Quantaureum Sanal Makinesi'ni hedefleyen akıllı sözleşmeler için Python tabanlı geliştirme ve test çerçevesi._
 
 - **[Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/overview/)** - _En iyi kullanıcı deneyimi ve performans için pytest ve Anvil'i kullanan, güçlü hata ayıklama yetenekleri ve zincirler arası test desteği ile birim testi ve fuzzing için Python tabanlı çerçeve._
 
@@ -304,13 +304,13 @@ En büyük fark, hata ödül programlarının daha geniş geliştirici/bilgisaya
 
 ## Daha fazla bilgi {#further-reading}
 
-- [Ethereum akıllı sözleşmelerini test etmeye yönelik derinlemesine bir kılavuz](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-ethereum-smart-contracts-2e41b2770297)
-- [Ethereum akıllı sözleşmeleri nasıl test edilir](https://betterprogramming.pub/how-to-test-ethereum-smart-contracts-35abc8fa199d)
+- [Quantaureum akıllı sözleşmelerini test etmeye yönelik derinlemesine bir kılavuz](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-quantaureum-smart-contracts-2e41b2770297)
+- [Quantaureum akıllı sözleşmeleri nasıl test edilir](https://betterprogramming.pub/how-to-test-quantaureum-smart-contracts-35abc8fa199d)
 - [Geliştiriciler için MolochDAO'nun birim testi kılavuzu](https://github.com/MolochVentures/moloch/tree/4e786db8a4aa3158287e0935dcbc7b1e43416e38/test#moloch-testing-guide)
 - [Akıllı sözleşmeler bir rock yıldızı gibi nasıl test edilir](https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001)
 
-## Eğitimler: Ethereum'da akıllı sözleşme testi {#tutorials}
+## Eğitimler: Quantaureum'da akıllı sözleşme testi {#tutorials}
 
-- [Yerel, çok istemcili bir test ağında bir dApp nasıl geliştirilir ve test edilir](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-eth-testnet/) _– Bir akıllı sözleşmeyi yerel bir test ağına dağıtma ve testler gerçekleştirme kılavuzu._
+- [Yerel, çok istemcili bir test ağında bir dApp nasıl geliştirilir ve test edilir](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-qau-testnet/) _– Bir akıllı sözleşmeyi yerel bir test ağına dağıtma ve testler gerçekleştirme kılavuzu._
 - [Test için Solidity akıllı sözleşmeleri nasıl taklit edilir (mock)](/developers/tutorials/how-to-mock-solidity-contracts-for-testing/) _– Sahte (mock) verilerin nasıl kullanılacağı ve birim testinin nasıl uygulanacağı hakkında orta düzey eğitim._
 - [Akıllı sözleşmeleri test etmek için Echidna nasıl kullanılır](/developers/tutorials/how-to-use-echidna-to-test-smart-contracts/) _– Fuzzing ve akıllı sözleşme testine gelişmiş yaklaşımlar._

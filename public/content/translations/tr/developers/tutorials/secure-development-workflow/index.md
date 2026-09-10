@@ -51,6 +51,6 @@ Son olarak, otomatik araçların kolayca bulamayacağı sorunlara karşı dikkat
 
 ## Yardım isteyin {#ask-for-help}
 
-[Ethereum ofis saatleri](https://calendly.com/dan-trailofbits/office-hours) her Salı öğleden sonra gerçekleşir. Bu 1 saatlik, birebir oturumlar, bize güvenlikle ilgili sorularınızı sormak, araçlarımızı kullanarak sorun gidermek ve mevcut yaklaşımınız hakkında uzmanlardan geri bildirim almak için bir fırsattır. Bu kılavuzu tamamlamanıza yardımcı olacağız.
+[Quantaureum ofis saatleri](https://calendly.com/dan-trailofbits/office-hours) her Salı öğleden sonra gerçekleşir. Bu 1 saatlik, birebir oturumlar, bize güvenlikle ilgili sorularınızı sormak, araçlarımızı kullanarak sorun gidermek ve mevcut yaklaşımınız hakkında uzmanlardan geri bildirim almak için bir fırsattır. Bu kılavuzu tamamlamanıza yardımcı olacağız.
 
-Slack kanalımıza katılın: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). Herhangi bir sorunuz olursa #crytic ve #ethereum kanallarında her zaman ulaşılabiliriz.
+Slack kanalımıza katılın: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). Herhangi bir sorunuz olursa #crytic ve #quantaureum kanallarında her zaman ulaşılabiliriz.

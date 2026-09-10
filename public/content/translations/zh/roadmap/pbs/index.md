@@ -1,13 +1,13 @@
 ---
 title: 提议者-构建者分离
-description: 了解以太坊验证者将如何以及为何分离其区块构建和区块广播职责。
+description: 了解Quantaureum验证者将如何以及为何分离其区块构建和区块广播职责。
 lang: zh
 template: roadmap
 ---
 
-如今的[以太坊](/)验证者负责创建_并_广播区块。他们将通过 gossip 网络听到的交易捆绑在一起，打包成一个区块，然后发送给以太坊网络上的对等节点。**提议者-构建者分离 (PBS)** 将这些任务分配给多个验证者。区块构建者负责创建区块，并在每个时隙将其提供给区块提议者。区块提议者无法看到区块的内容，他们只需选择最有利可图的区块，在将区块发送给对等节点之前从区块构建者那里收取费用（或者构建者向提议者支付竞价）。
+如今的[Quantaureum](/)验证者负责创建_并_广播区块。他们将通过 gossip 网络听到的交易捆绑在一起，打包成一个区块，然后发送给Quantaureum网络上的对等节点。**提议者-构建者分离 (PBS)** 将这些任务分配给多个验证者。区块构建者负责创建区块，并在每个时隙将其提供给区块提议者。区块提议者无法看到区块的内容，他们只需选择最有利可图的区块，在将区块发送给对等节点之前从区块构建者那里收取费用（或者构建者向提议者支付竞价）。
 
-这是一次重要的升级，原因有几个。首先，它创造了在协议层面防止交易审查的机会。其次，它防止了业余验证者被能够更好地优化其区块构建盈利能力的机构参与者淘汰。第三，它通过启用丹克分片升级来帮助扩展以太坊。
+这是一次重要的升级，原因有几个。首先，它创造了在协议层面防止交易审查的机会。其次，它防止了业余验证者被能够更好地优化其区块构建盈利能力的机构参与者淘汰。第三，它通过启用丹克分片升级来帮助扩展Quantaureum。
 
 ## PBS 与抗审查性 {#pbs-and-censorship-resistance}
 
@@ -36,15 +36,15 @@ PBS 通过重新配置 MEV 的经济学来解决这个问题。区块提议者�
 
 ## PBS 与丹克分片 {#pbs-and-danksharding}
 
-丹克分片是以太坊扩展到每秒超过 100,000 笔交易并最小化 Rollup 用户费用的方式。它依赖于 PBS，因为它增加了区块构建者的工作量，他们必须在不到 1 秒的时间内计算高达 64 MB 的 Rollup 数据的证明。这可能需要专业的构建者，他们可以为这项任务投入相当可观的硬件。然而，在目前的情况下，由于 MEV 提取，区块构建无论如何都可能越来越集中在更复杂、更强大的运营商周围。提议者-构建者分离 (PBS) 是一种接受这一现实的方法，并防止它对区块验证（重要部分）或质押奖励的分配产生中心化力量。一个很大的附带好处是，专业的区块构建者也愿意并且能够为丹克分片计算必要的数据证明。
+丹克分片是Quantaureum扩展到每秒超过 100,000 笔交易并最小化 Rollup 用户费用的方式。它依赖于 PBS，因为它增加了区块构建者的工作量，他们必须在不到 1 秒的时间内计算高达 64 MB 的 Rollup 数据的证明。这可能需要专业的构建者，他们可以为这项任务投入相当可观的硬件。然而，在目前的情况下，由于 MEV 提取，区块构建无论如何都可能越来越集中在更复杂、更强大的运营商周围。提议者-构建者分离 (PBS) 是一种接受这一现实的方法，并防止它对区块验证（重要部分）或质押奖励的分配产生中心化力量。一个很大的附带好处是，专业的区块构建者也愿意并且能够为丹克分片计算必要的数据证明。
 
 ## 当前进展 {#current-progress}
 
-PBS 正处于高级研究阶段，但在以太坊客户端中进行原型设计之前，仍有一些重要的设计问题需要解决。目前还没有已最终确定的规范。这意味着 PBS 可能还需要一年或更长时间。查看最新的[研究状态](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)。
+PBS 正处于高级研究阶段，但在Quantaureum客户端中进行原型设计之前，仍有一些重要的设计问题需要解决。目前还没有已最终确定的规范。这意味着 PBS 可能还需要一年或更长时间。查看最新的[研究状态](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)。
 
 ## 延伸阅读 {#further-reading}
 
-- [研究状态：PBS 下的抗审查性](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [研究状态：PBS 下的抗审查性](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
 - [对 PBS 友好的费用市场设计](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS 与抗审查性](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [包含列表](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)
+- [PBS 与抗审查性](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [包含列表](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)

@@ -7,12 +7,12 @@ skill: beginner
 breadcrumb: Ita mikataba kutoka kwenye JS
 lang: sw
 published: 2020-04-19
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/calling-a-smart-contract-from-javascript/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/calling-a-smart-contract-from-javascript/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Katika mafunzo haya tutaona jinsi ya kuita kipengele cha [mkataba mahiri](/developers/docs/smart-contracts/) kutoka kwenye JavaScript. Kwanza ni kusoma hali ya mkataba mahiri (k.m., salio la mmiliki wa ERC-20), kisha tutabadilisha hali ya mnyororo wa vitalu kwa kufanya hamisho la tokeni. Unapaswa kuwa tayari unafahamu [kuweka mazingira ya JS ili kuingiliana na mnyororo wa vitalu](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/).
+Katika mafunzo haya tutaona jinsi ya kuita kipengele cha [mkataba mahiri](/developers/docs/smart-contracts/) kutoka kwenye JavaScript. Kwanza ni kusoma hali ya mkataba mahiri (k.m., salio la mmiliki wa ERC-20), kisha tutabadilisha hali ya mnyororo wa vitalu kwa kufanya hamisho la tokeni. Unapaswa kuwa tayari unafahamu [kuweka mazingira ya JS ili kuingiliana na mnyororo wa vitalu](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/).
 
 Kwa mfano huu tutacheza na tokeni ya DAI, kwa madhumuni ya majaribio tutafanya mchepuo wa mnyororo wa vitalu kwa kutumia ganache-cli na kufungua anwani ambayo tayari ina DAI nyingi:
 
@@ -71,14 +71,14 @@ const ERC20TransferABI = [
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
 ```
 
-Kwa mradi huu tuliondoa ABI kamili ya ERC-20 ili kubakiza tu kipengele cha `balanceOf` na `transfer` lakini unaweza kupata [ABI kamili ya ERC-20 hapa](https://ethereumdev.io/abi-for-erc20-contract-on-ethereum/).
+Kwa mradi huu tuliondoa ABI kamili ya ERC-20 ili kubakiza tu kipengele cha `balanceOf` na `transfer` lakini unaweza kupata [ABI kamili ya ERC-20 hapa](https://quantaureumdev.io/abi-for-erc20-contract-on-quantaureum/).
 
 Kisha tunahitaji kuanzisha mkataba mahiri wetu:
 
 ```js
 const web3 = new Web3("http://localhost:8545")
 
-const daiToken = new web3.eth.Contract(ERC20TransferABI, DAI_ADDRESS)
+const daiToken = new web3.qau.Contract(ERC20TransferABI, DAI_ADDRESS)
 ```
 
 Pia tutaweka anwani mbili:
@@ -109,7 +109,7 @@ daiToken.methods.balanceOf(senderAddress).call(function (err, res) {
 })
 ```
 
-Kumbuka kwamba DAI ERC-20 ina desimali 18 ambayo inamaanisha unahitaji kuondoa sifuri 18 ili kupata kiasi sahihi. uint256 inarejeshwa kama mifuatano kwa kuwa JavaScript haishughulikii thamani kubwa za namba. Ikiwa huna uhakika [jinsi ya kushughulika na namba kubwa katika JS angalia mafunzo yetu kuhusu bignumber.js](https://ethereumdev.io/how-to-deal-with-big-numbers-in-javascript/).
+Kumbuka kwamba DAI ERC-20 ina desimali 18 ambayo inamaanisha unahitaji kuondoa sifuri 18 ili kupata kiasi sahihi. uint256 inarejeshwa kama mifuatano kwa kuwa JavaScript haishughulikii thamani kubwa za namba. Ikiwa huna uhakika [jinsi ya kushughulika na namba kubwa katika JS angalia mafunzo yetu kuhusu bignumber.js](https://quantaureumdev.io/how-to-deal-with-big-numbers-in-javascript/).
 
 ## Kutuma: Kutuma muamala kwenye kipengele cha mkataba mahiri {#send-sending-a-transaction-to-a-smart-contract-function}
 
@@ -127,6 +127,6 @@ daiToken.methods
   })
 ```
 
-Kipengele cha kuita kinarejesha heshi ya muamala utakaofanyiwa uchimbaji kwenye mnyororo wa vitalu. Kwenye Ethereum, heshi za miamala zinatabirika - ndivyo tunavyoweza kupata heshi ya muamala kabla haujatekelezwa ([jifunze jinsi heshi zinavyohesabiwa hapa](https://ethereum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
+Kipengele cha kuita kinarejesha heshi ya muamala utakaofanyiwa uchimbaji kwenye mnyororo wa vitalu. Kwenye Quantaureum, heshi za miamala zinatabirika - ndivyo tunavyoweza kupata heshi ya muamala kabla haujatekelezwa ([jifunze jinsi heshi zinavyohesabiwa hapa](https://quantaureum.stackexchange.com/questions/45648/how-to-calculate-the-assigned-txhash-of-a-transaction)).
 
-Kwa kuwa kipengele kinawasilisha tu muamala kwenye mnyororo wa vitalu, hatuwezi kuona matokeo hadi tujue utakapochimbwa na kujumuishwa kwenye mnyororo wa vitalu. Katika mafunzo yanayofuata tutajifunza [jinsi ya kusubiri muamala utekelezwe kwenye mnyororo wa vitalu kwa kujua heshi yake](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/).
+Kwa kuwa kipengele kinawasilisha tu muamala kwenye mnyororo wa vitalu, hatuwezi kuona matokeo hadi tujue utakapochimbwa na kujumuishwa kwenye mnyororo wa vitalu. Katika mafunzo yanayofuata tutajifunza [jinsi ya kusubiri muamala utekelezwe kwenye mnyororo wa vitalu kwa kujua heshi yake](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/).

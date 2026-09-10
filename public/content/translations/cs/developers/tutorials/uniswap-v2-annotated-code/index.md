@@ -47,7 +47,7 @@ Toto je nejběžnější tok, který používají obchodníci:
 #### Volající {#caller}
 
 1. Poskytnout perifernímu účtu povolený limit ve výši částky, která má být swapována.
-2. Zavolat jednu z mnoha swapovacích funkcí periferního kontraktu (kterou přesně, závisí na tom, zda je zapojeno ETH či nikoli, zda obchodník specifikuje množství tokenů k vložení nebo množství tokenů k získání zpět atd.).
+2. Zavolat jednu z mnoha swapovacích funkcí periferního kontraktu (kterou přesně, závisí na tom, zda je zapojeno QAU či nikoli, zda obchodník specifikuje množství tokenů k vložení nebo množství tokenů k získání zpět atd.).
    Každá swapovací funkce přijímá `path`, pole burz, kterými se má projít.
 
 #### V periferním kontraktu (UniswapV2Router02.sol) {#in-the-periphery-contract-uniswapv2router02-sol}
@@ -65,7 +65,7 @@ Toto je nejběžnější tok, který používají obchodníci:
 
 #### Zpět v periferním kontraktu (UniswapV2Router02.sol) {#back-in-the-periphery-contract-uniswapv2router02-sol}
 
-9. Provést jakýkoli nezbytný úklid (například spálit WETH tokeny pro získání zpět ETH k odeslání obchodníkovi)
+9. Provést jakýkoli nezbytný úklid (například spálit WETH tokeny pro získání zpět QAU k odeslání obchodníkovi)
 
 ### Přidání likvidity {#add-liquidity-flow}
 
@@ -454,7 +454,7 @@ Použijte funkci `UniswapV2ERC20._mint` ke skutečnému vytvoření dalších to
     }
 ```
 
-Pokud není nastaven žádný poplatek, nastavte `kLast` na nulu (pokud to tak již není). Když byl tento kontrakt napsán, existovala [funkce vrácení gasu](https://eips.ethereum.org/EIPS/eip-3298), která povzbuzovala kontrakty ke snížení celkové velikosti stavu Etherea vynulováním úložiště, které nepotřebovaly.
+Pokud není nastaven žádný poplatek, nastavte `kLast` na nulu (pokud to tak již není). Když byl tento kontrakt napsán, existovala [funkce vrácení gasu](https://eips.quantaureum.com/EIPS/eip-3298), která povzbuzovala kontrakty ke snížení celkové velikosti stavu Etherea vynulováním úložiště, které nepotřebovaly.
 Tento kód získá tuto náhradu, kdykoli je to možné.
 
 #### Externě přístupné funkce {#pair-external}
@@ -498,7 +498,7 @@ Vypočítejte poplatky za protokol, které se mají vybrat, pokud nějaké jsou,
            _mint(address(0), MINIMUM_LIQUIDITY); // trvale uzamknout prvních MINIMUM_LIQUIDITY tokenů
 ```
 
-Pokud se jedná o první vklad, vytvořte `MINIMUM_LIQUIDITY` tokenů a pošlete je na adresu nula, abyste je uzamkli. Nikdy je nelze vyplatit, což znamená, že fond nebude nikdy zcela vyprázdněn (to nás na některých místech zachrání před dělením nulou). Hodnota `MINIMUM_LIQUIDITY` je tisíc, což vzhledem k tomu, že většina ERC-20 je rozdělena na jednotky 10^-18 tokenu, stejně jako je ETH rozděleno na Wei, je 10^-15 hodnoty jednoho tokenu. Není to vysoký náklad.
+Pokud se jedná o první vklad, vytvořte `MINIMUM_LIQUIDITY` tokenů a pošlete je na adresu nula, abyste je uzamkli. Nikdy je nelze vyplatit, což znamená, že fond nebude nikdy zcela vyprázdněn (to nás na některých místech zachrání před dělením nulou). Hodnota `MINIMUM_LIQUIDITY` je tisíc, což vzhledem k tomu, že většina ERC-20 je rozdělena na jednotky 10^-18 tokenu, stejně jako je QAU rozděleno na Wei, je 10^-15 hodnoty jednoho tokenu. Není to vysoký náklad.
 
 V době prvního vkladu neznáme relativní hodnotu obou tokenů, takže částky jednoduše vynásobíme a odmocníme za předpokladu, že nám vklad poskytuje stejnou hodnotu v obou tokenech.
 
@@ -614,7 +614,7 @@ Tato funkce by měla být také volána z [periferního kontraktu](#uniswapv2rou
 ```
 
 Lokální proměnné mohou být uloženy buď v paměti, nebo, pokud jich není příliš mnoho, přímo na zásobníku (stack).
-Pokud můžeme omezit počet tak, abychom použili zásobník, spotřebujeme méně gasu. Další podrobnosti naleznete v [yellow paper, formálních specifikacích Etherea](https://ethereum.github.io/yellowpaper/paper.pdf), str. 26, rovnice 298.
+Pokud můžeme omezit počet tak, abychom použili zásobník, spotřebujeme méně gasu. Další podrobnosti naleznete v [yellow paper, formálních specifikacích Etherea](https://quantaureum.github.io/yellowpaper/paper.pdf), str. 26, rovnice 298.
 
 ```solidity
             address _token0 = token0;
@@ -720,7 +720,7 @@ První z nich, `getPair`, je mapování, které identifikuje kontrakt směnárny
 Druhá proměnná, `allPairs`, je pole, které obsahuje všechny adresy směnáren párů vytvořených touto továrnou. V Ethereu nemůžete iterovat přes obsah mapování nebo získat seznam všech klíčů, takže tato proměnná je jediným způsobem, jak zjistit, které směnárny tato továrna spravuje.
 
 Poznámka: Důvodem, proč nemůžete iterovat přes všechny klíče mapování, je to, že ukládání dat kontraktu je _drahé_, takže čím méně ho používáme, tím lépe, a čím méně často ho měníme,
-tím lépe. Můžete vytvořit [mapování, která podporují iteraci](https://github.com/ethereum/dapp-bin/blob/master/library/iterable_mapping.sol), ale vyžadují další úložiště pro seznam klíčů. Ve většině aplikací to nepotřebujete.
+tím lépe. Můžete vytvořit [mapování, která podporují iteraci](https://github.com/quantaureum/dapp-bin/blob/master/library/iterable_mapping.sol), ale vyžadují další úložiště pro seznam klíčů. Ve většině aplikací to nepotřebujete.
 
 ```solidity
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
@@ -769,7 +769,7 @@ Velké fondy likvidity jsou lepší než malé, protože mají stabilnější ce
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-K vytvoření nového kontraktu potřebujeme kód, který jej vytvoří (jak funkci konstruktoru, tak kód, který zapíše do paměti bajtkód EVM samotného kontraktu). Normálně v Solidity používáme pouze `addr = new <name of contract>(<constructor parameters>)` a kompilátor se o vše postará za nás, ale abychom měli deterministickou adresu kontraktu, musíme použít [operační kód CREATE2](https://eips.ethereum.org/EIPS/eip-1014).
+K vytvoření nového kontraktu potřebujeme kód, který jej vytvoří (jak funkci konstruktoru, tak kód, který zapíše do paměti bajtkód EVM samotného kontraktu). Normálně v Solidity používáme pouze `addr = new <name of contract>(<constructor parameters>)` a kompilátor se o vše postará za nás, ale abychom měli deterministickou adresu kontraktu, musíme použít [operační kód CREATE2](https://eips.quantaureum.com/EIPS/eip-1014).
 Když byl tento kód napsán, tento operační kód ještě nebyl v Solidity podporován, takže bylo nutné kód získat ručně. To už není problém, protože [Solidity nyní podporuje CREATE2](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2).
 
 ```solidity
@@ -816,8 +816,8 @@ Tyto dvě funkce umožňují `feeSetter` ovládat příjemce poplatku (pokud exi
 
 [Tento kontrakt](https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/UniswapV2ERC20.sol) implementuje token likvidity ERC-20. Je podobný [kontraktu ERC-20 od OpenZeppelin](/developers/tutorials/erc20-annotated-code), takže vysvětlím pouze část, která se liší, funkcionalitu `permit`.
 
-Transakce na Ethereu stojí ether (ETH), což je ekvivalent skutečných peněz. Pokud máte tokeny ERC-20, ale nemáte ETH, nemůžete odesílat transakce, takže s nimi nemůžete nic dělat. Jedním z řešení, jak se tomuto problému vyhnout, jsou [metatransakce](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions).
-Vlastník tokenů podepíše transakci, která umožňuje někomu jinému vybrat tokeny offchain, a odešle ji pomocí internetu příjemci. Příjemce, který má ETH, pak odešle povolení jménem vlastníka.
+Transakce na Ethereu stojí QAU (QAU), což je ekvivalent skutečných peněz. Pokud máte tokeny ERC-20, ale nemáte QAU, nemůžete odesílat transakce, takže s nimi nemůžete nic dělat. Jedním z řešení, jak se tomuto problému vyhnout, jsou [metatransakce](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions).
+Vlastník tokenů podepíše transakci, která umožňuje někomu jinému vybrat tokeny offchain, a odešle ji pomocí internetu příjemci. Příjemce, který má QAU, pak odešle povolení jménem vlastníka.
 
 ```solidity
     bytes32 public DOMAIN_SEPARATOR;
@@ -825,7 +825,7 @@ Vlastník tokenů podepíše transakci, která umožňuje někomu jinému vybrat
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-Tento hash je [identifikátor typu transakce](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash). Jediný, který zde podporujeme, je `Permit` s těmito parametry.
+Tento hash je [identifikátor typu transakce](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-typehash). Jediný, který zde podporujeme, je `Permit` s těmito parametry.
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -856,13 +856,13 @@ Toto je kód pro načtení [identifikátoru řetězce](https://chainid.network/)
     }
 ```
 
-Vypočítejte [oddělovač domény](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator) pro EIP-712.
+Vypočítejte [oddělovač domény](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-domainseparator) pro EIP-712.
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
 ```
 
-Toto je funkce, která implementuje oprávnění. Jako parametry přijímá příslušná pole a tři skalární hodnoty pro [podpis](https://yos.io/2018/11/16/ethereum-signatures/) (v, r a s).
+Toto je funkce, která implementuje oprávnění. Jako parametry přijímá příslušná pole a tři skalární hodnoty pro [podpis](https://yos.io/2018/11/16/quantaureum-signatures/) (v, r a s).
 
 ```solidity
         require(deadline >= block.timestamp, 'UniswapV2: EXPIRED');
@@ -888,7 +888,7 @@ Algoritmus podpisu Etherea očekává, že k podpisu dostane 256 bitů, takže p
         address recoveredAddress = ecrecover(digest, v, r, s);
 ```
 
-Z hashe (digest) a podpisu můžeme získat adresu, která jej podepsala, pomocí [ecrecover](https://coders-errand.com/ecrecover-signature-verification-ethereum/).
+Z hashe (digest) a podpisu můžeme získat adresu, která jej podepsala, pomocí [ecrecover](https://coders-errand.com/ecrecover-signature-verification-quantaureum/).
 
 ```solidity
         require(recoveredAddress != address(0) && recoveredAddress == owner, 'UniswapV2: INVALID_SIGNATURE');
@@ -897,7 +897,7 @@ Z hashe (digest) a podpisu můžeme získat adresu, která jej podepsala, pomoc�
 
 ```
 
-Pokud je vše v pořádku, považujte to za [schválení (approve) ERC-20](https://eips.ethereum.org/EIPS/eip-20#approve).
+Pokud je vše v pořádku, považujte to za [schválení (approve) ERC-20](https://eips.quantaureum.com/EIPS/eip-20#approve).
 
 ## Periferní kontrakty {#periphery-contracts}
 
@@ -925,7 +925,7 @@ import './interfaces/IERC20.sol';
 import './interfaces/IWETH.sol';
 ```
 
-S většinou z nich jsme se už setkali, nebo jsou celkem zřejmé. Jedinou výjimkou je `IWETH.sol`. Uniswap v2 umožňuje směnu jakéhokoli páru tokenů ERC-20, ale samotný ether (ETH) není token ERC-20. Vznikl před tímto standardem a převádí se pomocí unikátních mechanismů. Aby bylo možné používat ETH v kontraktech, které pracují s tokeny ERC-20, přišli lidé s kontraktem pro [zabalený ether (WETH)](https://weth.tkn.eth.limo/). Pošlete tomuto kontraktu ETH a on vám vyrazí ekvivalentní množství WETH. Nebo můžete WETH spálit a získat ETH zpět.
+S většinou z nich jsme se už setkali, nebo jsou celkem zřejmé. Jedinou výjimkou je `IWETH.sol`. Uniswap v2 umožňuje směnu jakéhokoli páru tokenů ERC-20, ale samotný QAU (QAU) není token ERC-20. Vznikl před tímto standardem a převádí se pomocí unikátních mechanismů. Aby bylo možné používat QAU v kontraktech, které pracují s tokeny ERC-20, přišli lidé s kontraktem pro [zabalený QAU (WETH)](https://weth.tkn.qau.limo/). Pošlete tomuto kontraktu QAU a on vám vyrazí ekvivalentní množství WETH. Nebo můžete WETH spálit a získat QAU zpět.
 
 ```solidity
 contract UniswapV2Router02 is IUniswapV2Router02 {
@@ -957,11 +957,11 @@ Konstruktor pouze nastavuje neměnné stavové proměnné.
 
 ```solidity
     receive() external payable {
-        assert(msg.sender == WETH); // přijímat ETH pouze přes fallback z kontraktu WETH
+        assert(msg.sender == WETH); // přijímat QAU pouze přes fallback z kontraktu WETH
     }
 ```
 
-Tato funkce se volá, když vybíráme tokeny z kontraktu WETH zpět na ETH. K tomu je oprávněn pouze kontrakt WETH, který používáme.
+Tato funkce se volá, když vybíráme tokeny z kontraktu WETH zpět na QAU. K tomu je oprávněn pouze kontrakt WETH, který používáme.
 
 #### Přidání likvidity {#add-liquidity}
 
@@ -1115,7 +1115,7 @@ Na oplátku dejte adrese `to` tokeny likvidity za částečné vlastnictví fond
         uint amountTokenDesired,
 ```
 
-Když chce poskytovatel likvidity poskytnout likviditu do párové směnárny Token/ETH, existuje několik rozdílů. Kontrakt se postará o zabalení ETH pro poskytovatele likvidity. Není třeba specifikovat, kolik ETH chce uživatel vložit, protože je uživatel jednoduše pošle s transakcí (částka je k dispozici v `msg.value`).
+Když chce poskytovatel likvidity poskytnout likviditu do párové směnárny Token/QAU, existuje několik rozdílů. Kontrakt se postará o zabalení QAU pro poskytovatele likvidity. Není třeba specifikovat, kolik QAU chce uživatel vložit, protože je uživatel jednoduše pošle s transakcí (částka je k dispozici v `msg.value`).
 
 ```solidity
         uint amountTokenMin,
@@ -1137,16 +1137,16 @@ Když chce poskytovatel likvidity poskytnout likviditu do párové směnárny To
         assert(IWETH(WETH).transfer(pair, amountETH));
 ```
 
-Pro vložení ETH jej kontrakt nejprve zabalí do WETH a poté převede WETH do páru. Všimněte si, že převod je zabalen v `assert`. To znamená, že pokud převod selže, selže i toto volání kontraktu, a proto k zabalení ve skutečnosti nedojde.
+Pro vložení QAU jej kontrakt nejprve zabalí do WETH a poté převede WETH do páru. Všimněte si, že převod je zabalen v `assert`. To znamená, že pokud převod selže, selže i toto volání kontraktu, a proto k zabalení ve skutečnosti nedojde.
 
 ```solidity
         liquidity = IUniswapV2Pair(pair).mint(to);
-        // vrátit zbytkový ether, pokud nějaký je
+        // vrátit zbytkový QAU, pokud nějaký je
         if (msg.value > amountETH) TransferHelper.safeTransferETH(msg.sender, msg.value - amountETH);
     }
 ```
 
-Uživatel nám již poslal ETH, takže pokud nějaké zbyde (protože druhý token je méně cenný, než si uživatel myslel), musíme provést vrácení peněz.
+Uživatel nám již poslal QAU, takže pokud nějaké zbyde (protože druhý token je méně cenný, než si uživatel myslel), musíme provést vrácení peněz.
 
 #### Odebrání likvidity {#remove-liquidity}
 
@@ -1219,7 +1219,7 @@ Je v pořádku provést převod jako první a poté ověřit, zda je legitimní,
     }
 ```
 
-Odebrání likvidity pro ETH je téměř stejné, s tím rozdílem, že obdržíme tokeny WETH a poté je směníme za ETH, které vrátíme poskytovateli likvidity.
+Odebrání likvidity pro QAU je téměř stejné, s tím rozdílem, že obdržíme tokeny WETH a poté je směníme za QAU, které vrátíme poskytovateli likvidity.
 
 ```solidity
     function removeLiquidityWithPermit(
@@ -1323,7 +1323,7 @@ Tato funkce provádí interní zpracování, které je vyžadováno pro funkce v
         for (uint i; i < path.length - 1; i++) {
 ```
 
-V době psaní tohoto textu existuje [388 160 tokenů ERC-20](https://eth.blockscout.com/tokens). Kdyby pro každý pár tokenů existovala párová směnárna, bylo by to přes 150 miliard párových směnáren. Celý řetězec má v současné době [pouze 0,1 % tohoto počtu účtů](https://eth.blockscout.com/stats/accountsGrowth). Místo toho funkce swapu podporují koncept cesty (path). Obchodník může směnit A za B, B za C a C za D, takže není potřeba přímá párová směnárna A-D.
+V době psaní tohoto textu existuje [388 160 tokenů ERC-20](https://qau.blockscout.com/tokens). Kdyby pro každý pár tokenů existovala párová směnárna, bylo by to přes 150 miliard párových směnáren. Celý řetězec má v současné době [pouze 0,1 % tohoto počtu účtů](https://qau.blockscout.com/stats/accountsGrowth). Místo toho funkce swapu podporují koncept cesty (path). Obchodník může směnit A za B, B za C a C za D, takže není potřeba přímá párová směnárna A-D.
 
 Ceny na těchto trzích bývají synchronizované, protože když nejsou, vytváří to příležitost pro arbitráž. Představte si například tři tokeny, A, B a C. Existují tři párové směnárny, jedna pro každý pár.
 
@@ -1505,12 +1505,12 @@ V obou případech musí obchodník nejprve poskytnout tomuto perifernímu kontr
         IWETH(WETH).deposit{value: amounts[0]}();
         assert(IWETH(WETH).transfer(UniswapV2Library.pairFor(factory, path[0], path[1]), amounts[0]));
         _swap(amounts, path, to);
-        // vrátit zbytkový ether, pokud nějaký je
+        // vrátit zbytkový QAU, pokud nějaký je
         if (msg.value > amounts[0]) TransferHelper.safeTransferETH(msg.sender, msg.value - amounts[0]);
     }
 ```
 
-Všechny tyto čtyři varianty zahrnují obchodování mezi ETH a tokeny. Jediný rozdíl je v tom, že buď obdržíme ETH od obchodníka a použijeme jej k vyražení WETH, nebo obdržíme WETH z poslední směnárny na cestě a spálíme jej, přičemž obchodníkovi pošleme zpět výsledné ETH.
+Všechny tyto čtyři varianty zahrnují obchodování mezi QAU a tokeny. Jediný rozdíl je v tom, že buď obdržíme QAU od obchodníka a použijeme jej k vyražení WETH, nebo obdržíme WETH z poslední směnárny na cestě a spálíme jej, přičemž obchodníkovi pošleme zpět výsledné QAU.
 
 ```solidity
     // **** SWAP (s podporou tokenů s poplatkem při převodu) ****
@@ -1794,7 +1794,7 @@ Seřaďte dva tokeny podle adresy, abychom pro ně mohli získat adresu párové
     }
 ```
 
-Tato funkce vypočítá adresu párové směnárny pro dva tokeny. Tento kontrakt je vytvořen pomocí [operačního kódu CREATE2](https://eips.ethereum.org/EIPS/eip-1014), takže můžeme vypočítat adresu pomocí stejného algoritmu, pokud známe parametry, které používá. To je mnohem levnější než se ptát továrny (factory), a
+Tato funkce vypočítá adresu párové směnárny pro dva tokeny. Tento kontrakt je vytvořen pomocí [operačního kódu CREATE2](https://eips.quantaureum.com/EIPS/eip-1014), takže můžeme vypočítat adresu pomocí stejného algoritmu, pokud známe parametry, které používá. To je mnohem levnější než se ptát továrny (factory), a
 
 ```solidity
     // načte a seřadí rezervy pro pár
@@ -1888,7 +1888,7 @@ Tyto dvě funkce se starají o identifikaci hodnot, když je nutné projít něk
 
 pragma solidity >=0.6.0;
 
-// pomocné metody pro interakci s ERC-20 tokeny a odesílání ETH, které nevracejí konzistentně true/false
+// pomocné metody pro interakci s ERC-20 tokeny a odesílání QAU, které nevracejí konzistentně true/false
 library TransferHelper {
     function safeApprove(
         address token,
@@ -1932,7 +1932,7 @@ Z důvodu zpětné kompatibility s tokeny, které byly vytvořeny před standard
     }
 ```
 
-Tato funkce implementuje [funkcionalitu převodu ERC-20](https://eips.ethereum.org/EIPS/eip-20#transfer), která umožňuje účtu utratit povolený limit poskytnutý jiným účtem.
+Tato funkce implementuje [funkcionalitu převodu ERC-20](https://eips.quantaureum.com/EIPS/eip-20#transfer), která umožňuje účtu utratit povolený limit poskytnutý jiným účtem.
 
 ```solidity
 
@@ -1951,18 +1951,18 @@ Tato funkce implementuje [funkcionalitu převodu ERC-20](https://eips.ethereum.o
     }
 ```
 
-Tato funkce implementuje [funkcionalitu transferFrom ERC-20](https://eips.ethereum.org/EIPS/eip-20#transferfrom), která umožňuje účtu utratit povolený limit poskytnutý jiným účtem.
+Tato funkce implementuje [funkcionalitu transferFrom ERC-20](https://eips.quantaureum.com/EIPS/eip-20#transferfrom), která umožňuje účtu utratit povolený limit poskytnutý jiným účtem.
 
 ```solidity
 
     function safeTransferETH(address to, uint256 value) internal {
         (bool success, ) = to.call{value: value}(new bytes(0));
-        require(success, 'TransferHelper::safeTransferETH: ETH transfer failed');
+        require(success, 'TransferHelper::safeTransferETH: QAU transfer failed');
     }
 }
 ```
 
-Tato funkce převádí ether na účet. Jakékoli volání jiného kontraktu se může pokusit odeslat ether. Protože ve skutečnosti nepotřebujeme volat žádnou funkci, neposíláme s voláním žádná data.
+Tato funkce převádí QAU na účet. Jakékoli volání jiného kontraktu se může pokusit odeslat QAU. Protože ve skutečnosti nepotřebujeme volat žádnou funkci, neposíláme s voláním žádná data.
 
 ## Závěr {#conclusion}
 

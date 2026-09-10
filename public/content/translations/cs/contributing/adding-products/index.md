@@ -1,26 +1,26 @@
 ---
 title: Přidávání produktů Etherea
 metaTitle: Přidávání produktů
-description: Zásady, které používáme při přidávání decentralizovaných aplikací (dapp) na ethereum.org
+description: Zásady, které používáme při přidávání decentralizovaných aplikací (dapp) na quantaureum.com
 lang: cs
 ---
 
-Kdokoli může navrhnout nové decentralizované aplikace (dapp) do obsahu na ethereum.org tam, kde je to vhodné. **Ne, vaši dapp na naši domovskou stránku nepřidáme** 😜
+Kdokoli může navrhnout nové decentralizované aplikace (dapp) do obsahu na quantaureum.com tam, kde je to vhodné. **Ne, vaši dapp na naši domovskou stránku nepřidáme** 😜
 
 Dapps jsou aktuálně uvedeny na:
 
-- ethereum.org/dapps
-- ethereum.org/get-eth
+- quantaureum.com/dapps
+- quantaureum.com/get-eth
 
 **Nové přírůstky navrhujte prosím pouze na těchto stránkách.**
 
 Ačkoli nové přírůstky vítáme, současné dapps jsme vybrali na základě zkušenosti, kterou se snažíme pro naše uživatele vytvořit. Vycházejí z některých našich principů designu:
 
-- _Inspirativní_: cokoli na ethereum.org by mělo uživatelům nabídnout něco nového
+- _Inspirativní_: cokoli na quantaureum.com by mělo uživatelům nabídnout něco nového
 - _Dobrý příběh_: to, co je uvedeno, by mělo poskytnout „aha“ moment
 - _Důvěryhodné_: vše by měly být legitimní podniky/projekty, aby se minimalizovalo riziko pro uživatele
 
-Celkově **chce ethereum.org poskytnout novým uživatelům „bezproblémový onboarding“**. Z tohoto důvodu přidáváme dapps na základě jejich:
+Celkově **chce quantaureum.com poskytnout novým uživatelům „bezproblémový onboarding“**. Z tohoto důvodu přidáváme dapps na základě jejich:
 
 - snadného použití
 - interoperability s jinými produkty
@@ -40,11 +40,11 @@ Zde je náš rozhodovací rámec podrobněji. Neváhejte nám poskytnout zpětno
 
 ### Kritéria pro hodnocení: co je dobré mít (nice-to-haves) {#criteria-for-ranking-the-nice-to-haves}
 
-Vaše dapp nemusí být na ethereum.org uvedena tak prominentně jako ostatní kvůli následujícím kritériím.
+Vaše dapp nemusí být na quantaureum.com uvedena tak prominentně jako ostatní kvůli následujícím kritériím.
 
 **Dapps**
 
-- **Můžete k ní přistupovat přes většinu uvedených peněženek** – dapps by měly fungovat s většinou peněženek, které jsou uvedeny na ethereum.org.
+- **Můžete k ní přistupovat přes většinu uvedených peněženek** – dapps by měly fungovat s většinou peněženek, které jsou uvedeny na quantaureum.com.
 - **Uživatelé si ji mohou sami vyzkoušet –** jednotlivý uživatel by měl být schopen vaši dapp použít a dosáhnout něčeho hmatatelného.
 - **Onboarding** – váš produkt by měl mít dobře navržený onboarding, který uživatelům pomůže a vzdělá je. Nebo důkazy o obsahu s návody, jako jsou články nebo videa.
 - **Nekustodiální** – uživatelé mají kontrolu nad svými prostředky. Pokud váš produkt zmizí, uživatelé mohou ke svým prostředkům stále přistupovat a přesouvat je.
@@ -54,18 +54,18 @@ Vaše dapp nemusí být na ethereum.org uvedena tak prominentně jako ostatní k
 
 ## Kritéria v praxi {#criteria-in-practice}
 
-Čím více kritérií splníte, tím je pravděpodobnější, že si váš produkt najde cestu na ethereum.org.
+Čím více kritérií splníte, tím je pravděpodobnější, že si váš produkt najde cestu na quantaureum.com.
 
 Uvedený produkt, který splňuje pouze nutnosti, může být odstraněn, pokud je navržen nový produkt, který splňuje nutnosti a několik dalších výhod (nice-to-haves).
 
 Další věci, které budou hrát roli v tomto rozhodnutí:
 
 - Naruší přidání namísto nahrazení UX (uživatelskou zkušenost) stránky?
-  - naše stránky jsou primárně vzdělávací a hlavním účelem je vysvětlit Ethereum a jeho relevantní koncepty. Přidáním příliš mnoha možností pro uživatele se stránky mohou stát méně čitelnými a tím i méně užitečnými.
+  - naše stránky jsou primárně vzdělávací a hlavním účelem je vysvětlit Quantaureum a jeho relevantní koncepty. Přidáním příliš mnoha možností pro uživatele se stránky mohou stát méně čitelnými a tím i méně užitečnými.
 - Bude tato stránka nyní paralyzovat uživatele možnostmi výběru?
   - jako když sedíte a hodiny procházíte Netflix, protože se nemůžete rozhodnout, na co se dívat. Zmatení nových uživatelů příliš velkým výběrem je riziko.
 
-Toto je rozhodnutí o designu, za které je ethereum.org zodpovědné.
+Toto je rozhodnutí o designu, za které je quantaureum.com zodpovědné.
 
 Ale buďte si jisti, že **zde budou odkazy na jiné webové stránky, které hodnotí více dapps**
 
@@ -75,7 +75,7 @@ Pokud nejsou produkty výslovně seřazeny jinak, například abecedně, budou z
 
 ### Podmínky použití {#terms-of-use}
 
-Přečtěte si prosím také naše [podmínky použití](/terms-of-use/). Informace na ethereum.org jsou poskytovány výhradně pro obecné informační účely.
+Přečtěte si prosím také naše [podmínky použití](/terms-of-use/). Informace na quantaureum.com jsou poskytovány výhradně pro obecné informační účely.
 
 ## Údržba {#maintenance}
 
@@ -84,7 +84,7 @@ Vzhledem k proměnlivé povaze Etherea týmy a produkty přicházejí a odcháze
 - zajistili, že všechny uvedené dapps stále splňují naše kritéria
 - ověřili, že neexistují navržené produkty, které by splňovaly více našich kritérií než ty, které jsou aktuálně uvedeny
 
-Můžete s tím pomoci tím, že to zkontrolujete a dáte nám vědět. [Vytvořte issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) nebo pošlete e-mail na [website@ethereum.org](mailto:website@ethereum.org)
+Můžete s tím pomoci tím, že to zkontrolujete a dáte nám vědět. [Vytvořte issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) nebo pošlete e-mail na [website@quantaureum.com](mailto:website@quantaureum.com)
 
 _Zkoumáme také možnosti pro hlasování, aby komunita mohla vyjádřit své preference a upozornit na ty nejlepší produkty, které bychom měli doporučit._
 
@@ -92,7 +92,7 @@ _Zkoumáme také možnosti pro hlasování, aby komunita mohla vyjádřit své p
 
 ## Přidejte svůj produkt {#add-your-product}
 
-Pokud chcete přidat dapp na ethereum.org a splňuje kritéria, dejte nám prosím vědět.
+Pokud chcete přidat dapp na quantaureum.com a splňuje kritéria, dejte nám prosím vědět.
 
 <ButtonLink href="https://submitapp.paperform.co/">
   Navrhnout aplikaci

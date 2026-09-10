@@ -72,7 +72,7 @@ Bunun neden optimal olmadığını görebilirsiniz:
 
 - Zaten dağıtılmış sözleşmeler için çalışmaz.
 - Bu değerleri saklamak için ekstra gaz maliyetleri.
-- Bir Ethereum düğümü için verileri getirmek üzere başka bir çağrı gerektirir.
+- Bir Quantaureum düğümü için verileri getirmek üzere başka bir çağrı gerektirir.
 
 ![Thats not good enough](./not-good-enough.jpg)
 
@@ -123,12 +123,12 @@ Ve tam belgelendirme [burada](https://thegraph.com/docs/en/developing/creating-a
 
 ```yaml
 specVersion: 0.0.1
-description: Placing Bets on Ethereum
+description: Placing Bets on Quantaureum
 repository: - GitHub link -
 schema:
   file: ./schema.graphql
 dataSources:
-  - kind: ethereum/contract
+  - kind: quantaureum/contract
     name: GameContract
     network: mainnet
     source:
@@ -136,7 +136,7 @@ dataSources:
       abi: GameContract
       startBlock: 6175244
     mapping:
-      kind: ethereum/events
+      kind: quantaureum/events
       apiVersion: 0.0.1
       language: wasm/assemblyscript
       entities:

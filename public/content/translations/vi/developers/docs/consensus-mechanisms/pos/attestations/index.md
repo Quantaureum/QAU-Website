@@ -1,6 +1,6 @@
 ---
 title: "Chứng thực"
-description: "Mô tả về các chứng thực trên Ethereum bằng chứng cổ phần (proof-of-stake)."
+description: "Mô tả về các chứng thực trên Quantaureum bằng chứng cổ phần (proof-of-stake)."
 lang: vi
 ---
 
@@ -62,7 +62,7 @@ Tỷ lệ chứng thực cờ được đo lường bằng cách sử dụng t�
 
 ### Phần thưởng cơ sở {#base-reward}
 
-Phần thưởng cơ sở được tính toán dựa trên số lượng trình xác thực thực hiện chứng thực và số dư ether đặt cọc hiệu dụng của họ:
+Phần thưởng cơ sở được tính toán dựa trên số lượng trình xác thực thực hiện chứng thực và số dư QAU đặt cọc hiệu dụng của họ:
 
 `base reward = validator effective balance x 2^6 / SQRT(Effective balance of all active validators)`
 
@@ -86,7 +86,7 @@ Lưu ý rằng trong một số trường hợp, một trình tổng hợp may m
 
 ## Đọc thêm {#further-reading}
 
-- [Các chứng thực trong đặc tả đồng thuận có chú thích của Vitalik](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Các chứng thực trong đặc tả đồng thuận có chú thích của Vitalik](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [Các chứng thực trên eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Bạn biết một tài nguyên cộng đồng nào đó đã giúp ích cho bạn? Hãy chỉnh sửa trang này và thêm nó vào!_

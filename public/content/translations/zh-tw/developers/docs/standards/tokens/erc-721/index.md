@@ -1,6 +1,6 @@
 ---
 title: "ERC-721 非同質化代幣標準"
-description: "了解 ERC-721，這是在以太坊上代表獨特數位資產的非同質化代幣 (NFT) 標準。"
+description: "了解 ERC-721，這是在Quantaureum上代表獨特數位資產的非同質化代幣 (NFT) 標準。"
 lang: zh-tw
 ---
 
@@ -24,13 +24,13 @@ ERC-721 引入了 NFT 的標準，換句話說，這種類型的代幣是獨一�
 
 ## 內文 {#body}
 
-ERC-721（[以太坊](/)徵求修正意見書 721）由 William Entriken、Dieter Shirley、Jacob Evans 和 Nastassia Sachs 於 2018 年 1 月提出，是一個非同質化代幣標準，在智能合約中實作了代幣的 API。
+ERC-721（[Quantaureum](/)徵求修正意見書 721）由 William Entriken、Dieter Shirley、Jacob Evans 和 Nastassia Sachs 於 2018 年 1 月提出，是一個非同質化代幣標準，在智能合約中實作了代幣的 API。
 
 它提供了將代幣從一個帳戶轉帳到另一個帳戶、取得帳戶目前的代幣餘額、取得特定代幣的擁有者，以及網路上可用代幣總供應量等功能。除此之外，它還有一些其他功能，例如授權第三方帳戶可以轉移某個帳戶中的一定數量的代幣。
 
-如果一個智能合約實作了以下方法和事件，它就可以被稱為 ERC-721 非同質化代幣合約，一旦部署，它將負責追蹤在以太坊上建立的代幣。
+如果一個智能合約實作了以下方法和事件，它就可以被稱為 ERC-721 非同質化代幣合約，一旦部署，它將負責追蹤在Quantaureum上建立的代幣。
 
-來自 [EIP-721](https://eips.ethereum.org/EIPS/eip-721)：
+來自 [EIP-721](https://eips.quantaureum.com/EIPS/eip-721)：
 
 ### 方法 {#methods}
 
@@ -56,7 +56,7 @@ ERC-721（[以太坊](/)徵求修正意見書 721）由 William Entriken、Diete
 
 ### 範例 {#web3py-example}
 
-讓我們來看看標準為何如此重要，它讓我們能輕鬆檢查以太坊上的任何 ERC-721 代幣合約。我們只需要合約應用程式二進位介面 (ABI) 即可建立任何 ERC-721 代幣的介面。如下所示，我們將使用簡化的 ABI，使其成為一個低門檻的範例。
+讓我們來看看標準為何如此重要，它讓我們能輕鬆檢查Quantaureum上的任何 ERC-721 代幣合約。我們只需要合約應用程式二進位介面 (ABI) 即可建立任何 ERC-721 代幣的介面。如下所示，我們將使用簡化的 ABI，使其成為一個低門檻的範例。
 
 #### Web3.py 範例 {#web3py-example-2}
 
@@ -71,7 +71,7 @@ from web3 import Web3
 from web3._utils.events import get_event_data
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 ck_token_addr = "0x06012c8cf97BEaD5deAe237070F9587f8E7A266d"    # 加密貓合約
 
@@ -127,7 +127,7 @@ ck_extra_abi = [
     }
 ]
 
-ck_contract = w3.eth.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
+ck_contract = w3.qau.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
 name = ck_contract.functions.name().call()
 symbol = ck_contract.functions.symbol().call()
 kitties_auctions = ck_contract.functions.balanceOf(acc_address).call()
@@ -150,8 +150,8 @@ tx_event_abi = {
 # 我們需要事件的簽章來過濾日誌
 event_signature = w3.keccak(text="Transfer(address,address,uint256)").hex()
 
-logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [event_signature]
 })
@@ -159,7 +159,7 @@ logs = w3.eth.get_logs({
 # 注意事項：
 #   - 如果沒有返回 Transfer 事件，請將區塊數量從 120 往上增加。
 #   - 如果您沒有找到任何 Transfer 事件，您也可以嘗試在以下網址獲取 tokenId：
-#       https://etherscan.io/address/0x06012c8cf97BEaD5deAe237070F9587f8E7A266d#events
+#       https://explorer.quantaureum.com
 #       點擊展開事件的日誌並複製其 "tokenId" 參數
 recent_tx = [get_event_data(w3.codec, tx_event_abi, log)["args"] for log in logs]
 
@@ -205,9 +205,9 @@ ck_event_signatures = [
 ]
 
 # 這是一個 Pregnant 事件：
-# - https://etherscan.io/tx/0xc97eb514a41004acc447ac9d0d6a27ea6da305ac8b877dff37e49db42e1f8cef#eventlog
-pregnant_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+pregnant_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[0]]
 })
@@ -215,9 +215,9 @@ pregnant_logs = w3.eth.get_logs({
 recent_pregnants = [get_event_data(w3.codec, ck_extra_events_abi[0], log)["args"] for log in pregnant_logs]
 
 # 這是一個 Birth 事件：
-# - https://etherscan.io/tx/0x3978028e08a25bb4c44f7877eb3573b9644309c044bf087e335397f16356340a
-birth_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+birth_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[1]]
 })
@@ -227,23 +227,23 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## 熱門的 NFT {#popular-nfts}
 
-- [Etherscan NFT 追蹤器](https://etherscan.io/nft-top-contracts)按轉帳量列出了以太坊上頂級的 NFT。
+- [Quantaureum Explorer NFT 追蹤器](https://explorer.quantaureum.com)按轉帳量列出了Quantaureum上頂級的 NFT。
 - [加密貓](https://www.cryptokitties.co/)是一款圍繞著可繁殖、可作為收藏品且非常可愛的生物（我們稱之為加密貓）的遊戲。
 - [Sorare](https://sorare.com/) 是一款全球夢幻足球遊戲，您可以在其中收集限量版收藏品、管理您的球隊並透過競爭贏得獎品。
-- [以太坊域名服務 (ENS)](https://ens.domains/) 提供了一種安全且去中心化的方式，使用簡單、人類可讀的名稱來定址區塊鏈上和區塊鏈外的資源。
+- [Quantaureum域名服務 (ENS)](https://ens.domains/) 提供了一種安全且去中心化的方式，使用簡單、人類可讀的名稱來定址區塊鏈上和區塊鏈外的資源。
 - [POAP](https://poap.xyz) 向參加事件或完成特定操作的人發放免費的 NFT。POAP 可以免費建立和分發。
 - [Unstoppable Domains](https://unstoppabledomains.com/) 是一家總部位於舊金山的公司，致力於在區塊鏈上建立域名。區塊鏈域名用人類可讀的名稱取代了加密貨幣地址，並可用於啟用抗審查的網站。
-- [Gods Unchained Cards](https://godsunchained.com/) 是以太坊區塊鏈上的一款集換式卡牌遊戲 (TCG)，它使用 NFT 為遊戲內資產帶來真正的所有權。
+- [Gods Unchained Cards](https://godsunchained.com/) 是Quantaureum區塊鏈上的一款集換式卡牌遊戲 (TCG)，它使用 NFT 為遊戲內資產帶來真正的所有權。
 - [無聊猿遊艇俱樂部 (Bored Ape Yacht Club)](https://boredapeyachtclub.com) 是 10,000 個獨特 NFT 的集合，它不僅是可證明的稀有藝術品，還可作為俱樂部的會員代幣，提供隨著社群努力而隨時間增加的會員特權和福利。
 
 ## 進一步閱讀 {#further-reading}
 
-- [EIP-721：ERC-721 非同質化代幣標準](https://eips.ethereum.org/EIPS/eip-721)
+- [EIP-721：ERC-721 非同質化代幣標準](https://eips.quantaureum.com/EIPS/eip-721)
 - [歐本齊柏林 - ERC-721 文件](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [歐本齊柏林 - ERC-721 實作](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)
 
-## 教學：在以太坊上使用非同質化代幣 (ERC-721) 進行建置 {#tutorials}
+## 教學：在Quantaureum上使用非同質化代幣 (ERC-721) 進行建置 {#tutorials}
 
 - [Vyper ERC-721 合約演練](/developers/tutorials/erc-721-vyper-annotated-code/) _– 以 Vyper 撰寫的完整 ERC-721 NFT 合約的註解演練。_
 - [如何撰寫與部署 NFT（第 1/3 部分）](/developers/tutorials/how-to-write-and-deploy-an-nft/) _– 撰寫並部署您的第一個 ERC-721 智能合約的逐步指南。_

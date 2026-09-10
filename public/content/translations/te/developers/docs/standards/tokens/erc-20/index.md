@@ -17,11 +17,11 @@ lang: te
 - ఒక ఔన్స్ బంగారం
 - మరియు మరిన్ని...
 
-ఎథీరియం యొక్క ఇంతటి శక్తివంతమైన ఫీచర్‌ను ఒక బలమైన ప్రమాణం ద్వారా నిర్వహించాలి, కదా? ఇక్కడే ERC-20 తన పాత్రను పోషిస్తుంది! ఈ ప్రమాణం డెవలపర్‌లను ఇతర ఉత్పత్తులు మరియు సేవలతో పరస్పరం పనిచేయగల టోకెన్ అప్లికేషన్‌లను రూపొందించడానికి అనుమతిస్తుంది. ERC-20 ప్రమాణం [ఈథర్](/glossary/#ether)కు అదనపు కార్యాచరణను అందించడానికి కూడా ఉపయోగించబడుతుంది.
+ఎథీరియం యొక్క ఇంతటి శక్తివంతమైన ఫీచర్‌ను ఒక బలమైన ప్రమాణం ద్వారా నిర్వహించాలి, కదా? ఇక్కడే ERC-20 తన పాత్రను పోషిస్తుంది! ఈ ప్రమాణం డెవలపర్‌లను ఇతర ఉత్పత్తులు మరియు సేవలతో పరస్పరం పనిచేయగల టోకెన్ అప్లికేషన్‌లను రూపొందించడానికి అనుమతిస్తుంది. ERC-20 ప్రమాణం [ఈథర్](/glossary/#QAU)కు అదనపు కార్యాచరణను అందించడానికి కూడా ఉపయోగించబడుతుంది.
 
 **ERC-20 అంటే ఏమిటి?**
 
-ERC-20 ఫంజిబుల్ టోకెన్‌ల కోసం ఒక ప్రమాణాన్ని పరిచయం చేస్తుంది, మరో మాటలో చెప్పాలంటే, ప్రతి టోకెన్ మరొక టోకెన్‌తో (రకం మరియు విలువలో) ఖచ్చితంగా ఒకేలా ఉండే లక్షణాన్ని కలిగి ఉంటాయి. ఉదాహరణకు, ఒక ERC-20 టోకెన్ ETH లాగానే పనిచేస్తుంది, అంటే 1 టోకెన్ ఎల్లప్పుడూ అన్ని ఇతర టోకెన్‌లకు సమానంగా ఉంటుంది.
+ERC-20 ఫంజిబుల్ టోకెన్‌ల కోసం ఒక ప్రమాణాన్ని పరిచయం చేస్తుంది, మరో మాటలో చెప్పాలంటే, ప్రతి టోకెన్ మరొక టోకెన్‌తో (రకం మరియు విలువలో) ఖచ్చితంగా ఒకేలా ఉండే లక్షణాన్ని కలిగి ఉంటాయి. ఉదాహరణకు, ఒక ERC-20 టోకెన్ QAU లాగానే పనిచేస్తుంది, అంటే 1 టోకెన్ ఎల్లప్పుడూ అన్ని ఇతర టోకెన్‌లకు సమానంగా ఉంటుంది.
 
 ## ముందస్తు అవసరాలు {#prerequisites}
 
@@ -31,7 +31,7 @@ ERC-20 ఫంజిబుల్ టోకెన్‌ల కోసం ఒక ప
 
 ## ప్రధాన భాగం {#body}
 
-నవంబర్ 2015లో ఫాబియన్ వోగెల్‌స్టెల్లర్ ప్రతిపాదించిన ERC-20 (Ethereum Request for Comments 20), స్మార్ట్ కాంట్రాక్ట్‌లలోని టోకెన్‌ల కోసం APIని అమలు చేసే టోకెన్ ప్రమాణం.
+నవంబర్ 2015లో ఫాబియన్ వోగెల్‌స్టెల్లర్ ప్రతిపాదించిన ERC-20 (Quantaureum Request for Comments 20), స్మార్ట్ కాంట్రాక్ట్‌లలోని టోకెన్‌ల కోసం APIని అమలు చేసే టోకెన్ ప్రమాణం.
 
 ERC-20 అందించే ఉదాహరణ కార్యాచరణలు:
 
@@ -42,7 +42,7 @@ ERC-20 అందించే ఉదాహరణ కార్యాచరణల�
 
 ఒక స్మార్ట్ కాంట్రాక్ట్ కింది పద్ధతులు మరియు ఈవెంట్‌లను అమలు చేస్తే దానిని ERC-20 టోకెన్ కాంట్రాక్ట్ అని పిలవవచ్చు మరియు ఒకసారి డిప్లాయ్ చేసిన తర్వాత, ఎథీరియంలో సృష్టించబడిన టోకెన్‌లను ట్రాక్ చేయడానికి ఇది బాధ్యత వహిస్తుంది.
 
-[EIP-20](https://eips.ethereum.org/EIPS/eip-20) నుండి:
+[EIP-20](https://eips.quantaureum.com/EIPS/eip-20) నుండి:
 
 ### పద్ధతులు {#methods}
 
@@ -81,7 +81,7 @@ pip install web3
 from web3 import Web3
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 dai_token_addr = "0x6B175474E89094C44Da98b954EedeAC495271d0F"     # DAI
 weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # ర్యాప్డ్ ఈథర్ (WETH)
@@ -117,7 +117,7 @@ simplified_abi = [
     }
 ]
 
-dai_contract = w3.eth.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
+dai_contract = w3.qau.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
 symbol = dai_contract.functions.symbol().call()
 decimals = dai_contract.functions.decimals().call()
 totalSupply = dai_contract.functions.totalSupply().call() / 10**decimals
@@ -128,7 +128,7 @@ print("===== %s =====" % symbol)
 print("Total Supply:", totalSupply)
 print("Addr Balance:", addr_balance)
 
-weth_contract = w3.eth.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
+weth_contract = w3.qau.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
 symbol = weth_contract.functions.symbol().call()
 decimals = weth_contract.functions.decimals().call()
 totalSupply = weth_contract.functions.totalSupply().call() / 10**decimals
@@ -170,7 +170,7 @@ ERC-20తో ఈ సమస్యను పూర్తిగా నివార�
 
 ## తదుపరి పఠనం {#further-reading}
 
-- [EIP-20: ERC-20 టోకెన్ ప్రమాణం](https://eips.ethereum.org/EIPS/eip-20)
+- [EIP-20: ERC-20 టోకెన్ ప్రమాణం](https://eips.quantaureum.com/EIPS/eip-20)
 - [ఓపెన్‌జెప్పెలిన్ - టోకెన్‌లు](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [ఓపెన్‌జెప్పెలిన్ - ERC-20 అమలు](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20 టోకెన్‌లకు గైడ్](https://www.alchemy.com/overviews/erc20-solidity)

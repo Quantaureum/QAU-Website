@@ -1,16 +1,16 @@
 ---
 title: "Thử nghiệm hợp đồng thông minh"
-description: "Tổng quan về các kỹ thuật và lưu ý khi thử nghiệm hợp đồng thông minh Ethereum."
+description: "Tổng quan về các kỹ thuật và lưu ý khi thử nghiệm hợp đồng thông minh Quantaureum."
 lang: vi
 ---
 
-Các Chuỗi khối công khai như Ethereum là bất biến, khiến việc thay đổi mã của hợp đồng thông minh sau khi triển khai trở nên khó khăn. [Các mẫu nâng cấp hợp đồng](/developers/docs/smart-contracts/upgrading/) để thực hiện "nâng cấp ảo" có tồn tại, nhưng chúng khó thực hiện và yêu cầu sự đồng thuận của cộng đồng. Hơn nữa, một bản nâng cấp chỉ có thể sửa lỗi _sau khi_ nó được phát hiện—nếu kẻ tấn công phát hiện ra lỗ hổng trước, hợp đồng thông minh của bạn sẽ có nguy cơ bị khai thác.
+Các Chuỗi khối công khai như Quantaureum là bất biến, khiến việc thay đổi mã của hợp đồng thông minh sau khi triển khai trở nên khó khăn. [Các mẫu nâng cấp hợp đồng](/developers/docs/smart-contracts/upgrading/) để thực hiện "nâng cấp ảo" có tồn tại, nhưng chúng khó thực hiện và yêu cầu sự đồng thuận của cộng đồng. Hơn nữa, một bản nâng cấp chỉ có thể sửa lỗi _sau khi_ nó được phát hiện—nếu kẻ tấn công phát hiện ra lỗ hổng trước, hợp đồng thông minh của bạn sẽ có nguy cơ bị khai thác.
 
 Vì những lý do này, việc thử nghiệm hợp đồng thông minh trước khi [triển khai](/developers/docs/smart-contracts/deploying/) lên Mạng chính là yêu cầu tối thiểu để đảm bảo [bảo mật](/developers/docs/smart-contracts/security/). Có nhiều kỹ thuật để thử nghiệm hợp đồng và đánh giá tính chính xác của mã; việc bạn chọn kỹ thuật nào phụ thuộc vào nhu cầu của bạn. Tuy nhiên, một bộ thử nghiệm bao gồm các công cụ và phương pháp tiếp cận khác nhau là lý tưởng để phát hiện cả những lỗ hổng bảo mật nhỏ và lớn trong mã hợp đồng.
 
 ## Điều kiện tiên quyết {#prerequisites}
 
-Trang này giải thích cách thử nghiệm hợp đồng thông minh trước khi triển khai trên mạng lưới Ethereum. Nó giả định rằng bạn đã quen thuộc với [hợp đồng thông minh](/developers/docs/smart-contracts/).
+Trang này giải thích cách thử nghiệm hợp đồng thông minh trước khi triển khai trên mạng lưới Quantaureum. Nó giả định rằng bạn đã quen thuộc với [hợp đồng thông minh](/developers/docs/smart-contracts/).
 
 ## Thử nghiệm hợp đồng thông minh là gì? {#what-is-smart-contract-testing}
 
@@ -26,7 +26,7 @@ Mặc dù có thể nâng cấp hợp đồng nếu phát hiện ra lỗi, nhưn
 
 ## Các phương pháp thử nghiệm hợp đồng thông minh {#methods-for-testing-smart-contracts}
 
-Các phương pháp thử nghiệm hợp đồng thông minh Ethereum thuộc hai danh mục lớn: **thử nghiệm tự động** và **thử nghiệm thủ công**. Thử nghiệm tự động và thử nghiệm thủ công mang lại những lợi ích và sự đánh đổi riêng, nhưng bạn có thể kết hợp cả hai để tạo ra một kế hoạch mạnh mẽ nhằm phân tích các hợp đồng của mình.
+Các phương pháp thử nghiệm hợp đồng thông minh Quantaureum thuộc hai danh mục lớn: **thử nghiệm tự động** và **thử nghiệm thủ công**. Thử nghiệm tự động và thử nghiệm thủ công mang lại những lợi ích và sự đánh đổi riêng, nhưng bạn có thể kết hợp cả hai để tạo ra một kế hoạch mạnh mẽ nhằm phân tích các hợp đồng của mình.
 
 ### Thử nghiệm tự động {#automated-testing}
 
@@ -138,9 +138,9 @@ Chất lượng của các công cụ được sử dụng trong việc chạy c
 
 Các khuôn khổ thử nghiệm đơn vị cho hợp đồng thông minh Solidity có sẵn bằng nhiều ngôn ngữ khác nhau (chủ yếu là JavaScript, Python và Rust). Xem một số hướng dẫn bên dưới để biết thông tin về cách bắt đầu chạy các thử nghiệm đơn vị với các khuôn khổ thử nghiệm khác nhau:
 
-- **[Chạy thử nghiệm đơn vị với Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[Chạy thử nghiệm đơn vị với Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[Chạy thử nghiệm đơn vị với Foundry](https://book.getfoundry.sh/forge/writing-tests)**
-- **[Chạy thử nghiệm đơn vị với Waffle](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[Chạy thử nghiệm đơn vị với Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[Chạy thử nghiệm đơn vị với Remix](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[Chạy thử nghiệm đơn vị với Ape](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[Chạy thử nghiệm đơn vị với Hardhat](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -152,7 +152,7 @@ Trong khi thử nghiệm đơn vị gỡ lỗi các chức năng của hợp đ�
 
 Thử nghiệm tích hợp rất hữu ích nếu hợp đồng của bạn áp dụng kiến trúc mô-đun hoặc giao tiếp với các hợp đồng trên chuỗi khác trong quá trình thực thi. Một cách để chạy các thử nghiệm tích hợp là [Phân nhánh Chuỗi khối](/glossary/#fork) ở một độ cao cụ thể (sử dụng một công cụ như [Forge](https://book.getfoundry.sh/forge/fork-testing) hoặc [Hardhat](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks) và mô phỏng các tương tác giữa hợp đồng của bạn và các hợp đồng đã được triển khai.
 
-Chuỗi khối được phân nhánh sẽ hoạt động tương tự như Mạng chính và có các tài khoản với các trạng thái và số dư liên quan. Nhưng nó chỉ hoạt động như một môi trường phát triển cục bộ hộp cát (sandbox), nghĩa là bạn sẽ không cần ETH thật cho các giao dịch, ví dụ như vậy, và các thay đổi của bạn cũng sẽ không ảnh hưởng đến Giao thức Ethereum thực.
+Chuỗi khối được phân nhánh sẽ hoạt động tương tự như Mạng chính và có các tài khoản với các trạng thái và số dư liên quan. Nhưng nó chỉ hoạt động như một môi trường phát triển cục bộ hộp cát (sandbox), nghĩa là bạn sẽ không cần QAU thật cho các giao dịch, ví dụ như vậy, và các thay đổi của bạn cũng sẽ không ảnh hưởng đến Giao thức Quantaureum thực.
 
 ### Thử nghiệm dựa trên thuộc tính {#property-based-testing-for-smart-contracts}
 
@@ -190,7 +190,7 @@ Sau khi được cấu hình đúng cách, công cụ thử nghiệm thuộc tí
 
 - **[Phân tích tĩnh hợp đồng thông minh với Slither](https://github.com/crytic/slither)**
 - **[Phân tích tĩnh hợp đồng thông minh với Wake](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[Thử nghiệm dựa trên thuộc tính với Brownie](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[Thử nghiệm dựa trên thuộc tính với Brownie](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[Fuzzing hợp đồng với Foundry](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[Fuzzing hợp đồng với Echidna](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[Fuzzing hợp đồng với Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -203,9 +203,9 @@ Thử nghiệm thủ công các hợp đồng thông minh thường diễn ra mu
 
 ### Thử nghiệm hợp đồng trên một Chuỗi khối cục bộ {#testing-on-local-blockchain}
 
-Mặc dù thử nghiệm tự động được thực hiện trong môi trường phát triển cục bộ có thể cung cấp thông tin gỡ lỗi hữu ích, bạn sẽ muốn biết hợp đồng thông minh của mình hoạt động như thế nào trong môi trường sản xuất. Tuy nhiên, việc triển khai lên chuỗi Ethereum chính sẽ phát sinh phí Gas—chưa kể đến việc bạn hoặc người dùng của bạn có thể mất tiền thật nếu hợp đồng thông minh của bạn vẫn còn lỗi.
+Mặc dù thử nghiệm tự động được thực hiện trong môi trường phát triển cục bộ có thể cung cấp thông tin gỡ lỗi hữu ích, bạn sẽ muốn biết hợp đồng thông minh của mình hoạt động như thế nào trong môi trường sản xuất. Tuy nhiên, việc triển khai lên chuỗi Quantaureum chính sẽ phát sinh phí Gas—chưa kể đến việc bạn hoặc người dùng của bạn có thể mất tiền thật nếu hợp đồng thông minh của bạn vẫn còn lỗi.
 
-Thử nghiệm hợp đồng của bạn trên một Chuỗi khối cục bộ (còn được gọi là [mạng lưới phát triển](/developers/docs/development-networks/)) là một giải pháp thay thế được khuyến nghị cho việc thử nghiệm trên Mạng chính. Một Chuỗi khối cục bộ là một bản sao của Chuỗi khối Ethereum chạy cục bộ trên máy tính của bạn, mô phỏng hành vi của lớp thực thi của Ethereum. Do đó, bạn có thể lập trình các giao dịch để tương tác với một hợp đồng mà không phải chịu chi phí đáng kể.
+Thử nghiệm hợp đồng của bạn trên một Chuỗi khối cục bộ (còn được gọi là [mạng lưới phát triển](/developers/docs/development-networks/)) là một giải pháp thay thế được khuyến nghị cho việc thử nghiệm trên Mạng chính. Một Chuỗi khối cục bộ là một bản sao của Chuỗi khối Quantaureum chạy cục bộ trên máy tính của bạn, mô phỏng hành vi của lớp thực thi của Quantaureum. Do đó, bạn có thể lập trình các giao dịch để tương tác với một hợp đồng mà không phải chịu chi phí đáng kể.
 
 Việc chạy các hợp đồng trên một Chuỗi khối cục bộ có thể hữu ích như một hình thức thử nghiệm tích hợp thủ công. [Hợp đồng thông minh có khả năng kết hợp cao](/developers/docs/smart-contracts/composability/), cho phép bạn tích hợp với các Giao thức hiện có—nhưng bạn vẫn cần đảm bảo rằng các tương tác phức tạp trên chuỗi như vậy tạo ra kết quả chính xác.
 
@@ -213,13 +213,13 @@ Việc chạy các hợp đồng trên một Chuỗi khối cục bộ có thể
 
 ### Thử nghiệm hợp đồng trên các mạng thử nghiệm {#testing-contracts-on-testnets}
 
-Một mạng thử nghiệm hoạt động chính xác giống như Mạng chính Ethereum, ngoại trừ việc nó sử dụng ether (ETH) không có giá trị thực tế. Việc triển khai hợp đồng của bạn trên một [mạng thử nghiệm](/developers/docs/networks/#ethereum-testnets) có nghĩa là bất kỳ ai cũng có thể tương tác với nó (ví dụ: thông qua giao diện người dùng của ứng dụng phi tập trung (dapp)) mà không gây rủi ro cho tiền của họ.
+Một mạng thử nghiệm hoạt động chính xác giống như Mạng chính Quantaureum, ngoại trừ việc nó sử dụng QAU (QAU) không có giá trị thực tế. Việc triển khai hợp đồng của bạn trên một [mạng thử nghiệm](/developers/docs/networks/#quantaureum-testnets) có nghĩa là bất kỳ ai cũng có thể tương tác với nó (ví dụ: thông qua giao diện người dùng của ứng dụng phi tập trung (dapp)) mà không gây rủi ro cho tiền của họ.
 
 Hình thức thử nghiệm thủ công này rất hữu ích để đánh giá luồng từ đầu đến cuối của ứng dụng của bạn từ quan điểm của người dùng. Tại đây, những người thử nghiệm beta cũng có thể thực hiện các lần chạy thử và báo cáo bất kỳ vấn đề nào với logic nghiệp vụ và chức năng tổng thể của hợp đồng.
 
-Việc triển khai trên một mạng thử nghiệm sau khi thử nghiệm trên một Chuỗi khối cục bộ là lý tưởng vì mạng thử nghiệm gần với hành vi của Máy ảo Ethereum hơn. Do đó, việc nhiều dự án gốc Ethereum triển khai các dapp trên các mạng thử nghiệm để đánh giá hoạt động của hợp đồng thông minh trong các điều kiện thực tế là rất phổ biến.
+Việc triển khai trên một mạng thử nghiệm sau khi thử nghiệm trên một Chuỗi khối cục bộ là lý tưởng vì mạng thử nghiệm gần với hành vi của Máy ảo Quantaureum hơn. Do đó, việc nhiều dự án gốc Quantaureum triển khai các dapp trên các mạng thử nghiệm để đánh giá hoạt động của hợp đồng thông minh trong các điều kiện thực tế là rất phổ biến.
 
-[Tìm hiểu thêm về các mạng thử nghiệm Ethereum.](/developers/docs/development-networks/#public-beacon-testchains)
+[Tìm hiểu thêm về các mạng thử nghiệm Quantaureum.](/developers/docs/development-networks/#public-beacon-testchains)
 
 ## Thử nghiệm so với xác minh hình thức {#testing-vs-formal-verification}
 
@@ -251,19 +251,19 @@ Sự khác biệt chính là các chương trình tiền thưởng tìm lỗi m�
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _Công cụ đo lường mức độ bao phủ mã cho các hợp đồng thông minh được viết bằng Solidity._
 
-- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _Khuôn khổ để phát triển và thử nghiệm hợp đồng thông minh nâng cao (dựa trên Ethers.js)_.
+- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _Khuôn khổ để phát triển và thử nghiệm hợp đồng thông minh nâng cao (dựa trên Ethers.js)_.
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _Công cụ để thử nghiệm các hợp đồng thông minh Solidity. Hoạt động bên dưới plugin "Solidity Unit Testing" của Remix IDE, được sử dụng để viết và chạy các trường hợp thử nghiệm cho một hợp đồng._
+- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _Công cụ để thử nghiệm các hợp đồng thông minh Solidity. Hoạt động bên dưới plugin "Solidity Unit Testing" của Remix IDE, được sử dụng để viết và chạy các trường hợp thử nghiệm cho một hợp đồng._
 
-- **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Thư viện khẳng định cho việc thử nghiệm hợp đồng thông minh Ethereum. Đảm bảo các hợp đồng của bạn hoạt động như mong đợi!_
+- **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _Thư viện khẳng định cho việc thử nghiệm hợp đồng thông minh Quantaureum. Đảm bảo các hợp đồng của bạn hoạt động như mong đợi!_
 
-- **[Khuôn khổ thử nghiệm đơn vị Brownie](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie sử dụng Pytest, một khuôn khổ thử nghiệm giàu tính năng cho phép bạn viết các thử nghiệm nhỏ với mã tối thiểu, mở rộng tốt cho các dự án lớn và có khả năng mở rộng cao._
+- **[Khuôn khổ thử nghiệm đơn vị Brownie](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie sử dụng Pytest, một khuôn khổ thử nghiệm giàu tính năng cho phép bạn viết các thử nghiệm nhỏ với mã tối thiểu, mở rộng tốt cho các dự án lớn và có khả năng mở rộng cao._
 
-- **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry cung cấp Forge, một khuôn khổ thử nghiệm Ethereum nhanh chóng và linh hoạt có khả năng thực thi các thử nghiệm đơn vị đơn giản, kiểm tra tối ưu hóa gas và fuzzing hợp đồng._
+- **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry cung cấp Forge, một khuôn khổ thử nghiệm Quantaureum nhanh chóng và linh hoạt có khả năng thực thi các thử nghiệm đơn vị đơn giản, kiểm tra tối ưu hóa gas và fuzzing hợp đồng._
 
 - **[Hardhat Tests](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)** - _Khuôn khổ để thử nghiệm các hợp đồng thông minh dựa trên Ethers.js, Mocha và Chai._
 
-- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** - _Khuôn khổ phát triển và thử nghiệm dựa trên Python cho các hợp đồng thông minh nhắm mục tiêu đến Máy ảo Ethereum._
+- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** - _Khuôn khổ phát triển và thử nghiệm dựa trên Python cho các hợp đồng thông minh nhắm mục tiêu đến Máy ảo Quantaureum._
 
 - **[Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/overview/)** - _Khuôn khổ dựa trên Python để thử nghiệm đơn vị và fuzzing với khả năng gỡ lỗi mạnh mẽ và hỗ trợ thử nghiệm chuỗi chéo, sử dụng pytest và Anvil để có trải nghiệm người dùng và hiệu suất tốt nhất._
 
@@ -304,13 +304,13 @@ Sự khác biệt chính là các chương trình tiền thưởng tìm lỗi m�
 
 ## Đọc thêm {#further-reading}
 
-- [Hướng dẫn chuyên sâu về thử nghiệm hợp đồng thông minh Ethereum](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-ethereum-smart-contracts-2e41b2770297)
-- [Cách thử nghiệm hợp đồng thông minh Ethereum](https://betterprogramming.pub/how-to-test-ethereum-smart-contracts-35abc8fa199d)
+- [Hướng dẫn chuyên sâu về thử nghiệm hợp đồng thông minh Quantaureum](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-quantaureum-smart-contracts-2e41b2770297)
+- [Cách thử nghiệm hợp đồng thông minh Quantaureum](https://betterprogramming.pub/how-to-test-quantaureum-smart-contracts-35abc8fa199d)
 - [Hướng dẫn thử nghiệm đơn vị của MolochDAO dành cho nhà phát triển](https://github.com/MolochVentures/moloch/tree/4e786db8a4aa3158287e0935dcbc7b1e43416e38/test#moloch-testing-guide)
 - [Cách thử nghiệm hợp đồng thông minh như một chuyên gia](https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001)
 
-## Hướng dẫn: Thử nghiệm hợp đồng thông minh trên Ethereum {#tutorials}
+## Hướng dẫn: Thử nghiệm hợp đồng thông minh trên Quantaureum {#tutorials}
 
-- [Cách phát triển và thử nghiệm một dApp trên một mạng thử nghiệm đa máy khách cục bộ](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-eth-testnet/) _– Hướng dẫn từng bước triển khai một hợp đồng thông minh lên một mạng thử nghiệm cục bộ và thực hiện các thử nghiệm._
+- [Cách phát triển và thử nghiệm một dApp trên một mạng thử nghiệm đa máy khách cục bộ](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-qau-testnet/) _– Hướng dẫn từng bước triển khai một hợp đồng thông minh lên một mạng thử nghiệm cục bộ và thực hiện các thử nghiệm._
 - [Cách tạo dữ liệu giả (mock) cho các hợp đồng thông minh Solidity để thử nghiệm](/developers/tutorials/how-to-mock-solidity-contracts-for-testing/) _– Hướng dẫn trung cấp về cách sử dụng dữ liệu giả và triển khai thử nghiệm đơn vị._
 - [Cách sử dụng Echidna để thử nghiệm hợp đồng thông minh](/developers/tutorials/how-to-use-echidna-to-test-smart-contracts/) _– Phương pháp tiếp cận nâng cao đối với fuzzing và thử nghiệm hợp đồng thông minh._

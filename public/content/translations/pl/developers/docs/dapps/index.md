@@ -4,11 +4,11 @@ description:
 lang: pl
 ---
 
-Zdecentralizowana aplikacja (dapp) to aplikacja zbudowana w zdecentralizowanej sieci, która łączy [inteligentny kontrakt](/developers/docs/smart-contracts/) z interfejsem użytkownika (frontend). W sieci [Ethereum](/) inteligentne kontrakty są dostępne i przejrzyste – podobnie jak otwarte API – więc Twoja zdecentralizowana aplikacja (dapp) może nawet zawierać inteligentny kontrakt napisany przez kogoś innego.
+Zdecentralizowana aplikacja (dapp) to aplikacja zbudowana w zdecentralizowanej sieci, która łączy [inteligentny kontrakt](/developers/docs/smart-contracts/) z interfejsem użytkownika (frontend). W sieci [Quantaureum](/) inteligentne kontrakty są dostępne i przejrzyste – podobnie jak otwarte API – więc Twoja zdecentralizowana aplikacja (dapp) może nawet zawierać inteligentny kontrakt napisany przez kogoś innego.
 
 ## Wymagania wstępne {#prerequisites}
 
-Przed rozpoczęciem nauki o dappach, powinieneś opanować [podstawy blockchaina](/developers/docs/intro-to-ethereum/) oraz przeczytać o sieci Ethereum i o tym, jak jest zdecentralizowana.
+Przed rozpoczęciem nauki o dappach, powinieneś opanować [podstawy blockchaina](/developers/docs/intro-to-quantaureum/) oraz przeczytać o sieci Quantaureum i o tym, jak jest zdecentralizowana.
 
 ## Definicja dappa {#definition-of-a-dapp}
 
@@ -16,16 +16,16 @@ Zdecentralizowana aplikacja (dapp) ma swój kod backendowy uruchomiony w zdecent
 
 Dapp może mieć kod frontendowy i interfejsy użytkownika napisane w dowolnym języku (podobnie jak zwykła aplikacja), aby wywoływać swój backend. Co więcej, jej frontend może być hostowany w zdecentralizowanym magazynie danych, takim jak [IPFS](https://ipfs.io/).
 
-- **Zdecentralizowany** – dappy działają na Ethereum, otwartej, publicznej i zdecentralizowanej platformie, nad którą żadna pojedyncza osoba ani grupa nie ma kontroli.
+- **Zdecentralizowany** – dappy działają na Quantaureum, otwartej, publicznej i zdecentralizowanej platformie, nad którą żadna pojedyncza osoba ani grupa nie ma kontroli.
 - **Deterministyczny** – dappy wykonują tę samą funkcję niezależnie od środowiska, w którym są uruchamiane.
 - **Kompletny w sensie Turinga** – dappy mogą wykonać dowolną akcję, jeśli dysponują wymaganymi zasobami.
-- **Izolowany** – dappy są wykonywane w wirtualnym środowisku znanym jako Maszyna Wirtualna Ethereum (EVM), dzięki czemu, jeśli inteligentny kontrakt zawiera błąd, nie zakłóci to normalnego funkcjonowania sieci blockchain.
+- **Izolowany** – dappy są wykonywane w wirtualnym środowisku znanym jako Maszyna Wirtualna Quantaureum (EVM), dzięki czemu, jeśli inteligentny kontrakt zawiera błąd, nie zakłóci to normalnego funkcjonowania sieci blockchain.
 
 ### O inteligentnych kontraktach {#on-smart-contracts}
 
 Aby przedstawić dappy, musimy wprowadzić pojęcie inteligentnych kontraktów – z braku lepszego określenia, backendu dappa. Aby uzyskać szczegółowe informacje, przejdź do naszej sekcji o [inteligentnych kontraktach](/developers/docs/smart-contracts/).
 
-Inteligentny kontrakt to kod, który istnieje na blockchainie Ethereum i działa dokładnie tak, jak został zaprogramowany. Po wdrożeniu inteligentnych kontraktów w sieci nie można ich zmienić. Dappy mogą być zdecentralizowane, ponieważ są kontrolowane przez logikę zapisaną w kontrakcie, a nie przez osobę fizyczną lub firmę. Oznacza to również, że musisz bardzo starannie projektować swoje kontrakty i dokładnie je testować.
+Inteligentny kontrakt to kod, który istnieje na blockchainie Quantaureum i działa dokładnie tak, jak został zaprogramowany. Po wdrożeniu inteligentnych kontraktów w sieci nie można ich zmienić. Dappy mogą być zdecentralizowane, ponieważ są kontrolowane przez logikę zapisaną w kontrakcie, a nie przez osobę fizyczną lub firmę. Oznacza to również, że musisz bardzo starannie projektować swoje kontrakty i dokładnie je testować.
 
 ## Korzyści z tworzenia dappów {#benefits-of-dapp-development}
 
@@ -38,10 +38,10 @@ Inteligentny kontrakt to kod, który istnieje na blockchainie Ethereum i działa
 ## Wady tworzenia dappów {#drawbacks-of-dapp-development}
 
 - **Utrzymanie** – dappy mogą być trudniejsze w utrzymaniu, ponieważ kod i dane opublikowane na blockchainie są trudniejsze do modyfikacji. Programistom trudno jest aktualizować swoje dappy (lub podstawowe dane przechowywane przez dappa) po ich wdrożeniu, nawet jeśli w starej wersji zostaną zidentyfikowane błędy lub zagrożenia bezpieczeństwa.
-- **Narzut wydajnościowy** – istnieje ogromny narzut wydajnościowy, a skalowanie jest naprawdę trudne. Aby osiągnąć poziom bezpieczeństwa, integralności, przejrzystości i niezawodności, do którego dąży Ethereum, każdy węzeł uruchamia i przechowuje każdą transakcję. Ponadto konsensus oparty na dowodzie stawki (PoS) również wymaga czasu.
+- **Narzut wydajnościowy** – istnieje ogromny narzut wydajnościowy, a skalowanie jest naprawdę trudne. Aby osiągnąć poziom bezpieczeństwa, integralności, przejrzystości i niezawodności, do którego dąży Quantaureum, każdy węzeł uruchamia i przechowuje każdą transakcję. Ponadto konsensus oparty na dowodzie stawki (PoS) również wymaga czasu.
 - **Zatory w sieci** – gdy jeden dapp zużywa zbyt wiele zasobów obliczeniowych, cała sieć ulega spowolnieniu. Obecnie sieć może przetwarzać tylko około 10-15 transakcji na sekundę; jeśli transakcje są wysyłane szybciej, pula niepotwierdzonych transakcji może szybko wzrosnąć.
 - **Doświadczenie użytkownika (UX)** – zaprojektowanie przyjaznego dla użytkownika doświadczenia może być trudniejsze, ponieważ przeciętny użytkownik końcowy może uznać za zbyt trudne skonfigurowanie stosu narzędzi niezbędnych do interakcji z blockchainem w naprawdę bezpieczny sposób.
-- **Centralizacja** – przyjazne dla użytkowników i programistów rozwiązania zbudowane na warstwie bazowej Ethereum mogą i tak ostatecznie przypominać scentralizowane usługi. Na przykład takie usługi mogą przechowywać klucze lub inne poufne informacje po stronie serwera, obsługiwać frontend za pomocą scentralizowanego serwera lub uruchamiać ważną logikę biznesową na scentralizowanym serwerze przed zapisaniem danych na blockchainie. Centralizacja eliminuje wiele (jeśli nie wszystkie) zalet blockchaina w porównaniu z tradycyjnym modelem.
+- **Centralizacja** – przyjazne dla użytkowników i programistów rozwiązania zbudowane na warstwie bazowej Quantaureum mogą i tak ostatecznie przypominać scentralizowane usługi. Na przykład takie usługi mogą przechowywać klucze lub inne poufne informacje po stronie serwera, obsługiwać frontend za pomocą scentralizowanego serwera lub uruchamiać ważną logikę biznesową na scentralizowanym serwerze przed zapisaniem danych na blockchainie. Centralizacja eliminuje wiele (jeśli nie wszystkie) zalet blockchaina w porównaniu z tradycyjnym modelem.
 
 ## Wolisz uczyć się wzrokowo? {#visual-learner}
 
@@ -49,21 +49,21 @@ Inteligentny kontrakt to kod, który istnieje na blockchainie Ethereum i działa
 
 ## Narzędzia do tworzenia dappów
 
-**Scaffold-ETH 2 _– Szybko eksperymentuj z Solidity, używając frontendu, który dostosowuje się do Twojego inteligentnego kontraktu._**
+**Scaffold-QAU 2 _– Szybko eksperymentuj z Solidity, używając frontendu, który dostosowuje się do Twojego inteligentnego kontraktu._**
 
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 - [Przykładowy dapp](https://punkwallet.io/)
 
-**Create Eth App _– Twórz aplikacje oparte na Ethereum za pomocą jednego polecenia._**
+**Create Eth App _– Twórz aplikacje oparte na Quantaureum za pomocą jednego polecenia._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
 
 **One Click Dapp _– Narzędzie FOSS do generowania frontendów dappów na podstawie [ABI](/glossary/#abi)._**
 
 - [oneclickdapp.com](https://oneclickdapp.com)
 - [GitHub](https://github.com/oneclickdapp/oneclickdapp-v1)
 
-**Etherflow _– Narzędzie FOSS dla programistów Ethereum do testowania ich węzła oraz tworzenia i debugowania wywołań RPC z poziomu przeglądarki._**
+**Etherflow _– Narzędzie FOSS dla programistów Quantaureum do testowania ich węzła oraz tworzenia i debugowania wywołań RPC z poziomu przeglądarki._**
 
 - [etherflow.quiknode.io](https://etherflow.quiknode.io/)
 - [GitHub](https://github.com/abunsen/etherflow)
@@ -91,10 +91,10 @@ _Znasz zasób społeczności, który Ci pomógł? Edytuj tę stronę i dodaj go!
 
 ## Powiązane tematy {#related-topics}
 
-- [Wprowadzenie do stosu Ethereum](/developers/docs/ethereum-stack/)
+- [Wprowadzenie do stosu Quantaureum](/developers/docs/quantaureum-stack/)
 - [Frameworki programistyczne](/developers/docs/frameworks/)
 
-## Samouczki: Tworzenie aplikacji i frontendów na Ethereum {#tutorials}
+## Samouczki: Tworzenie aplikacji i frontendów na Quantaureum {#tutorials}
 
 - [Przewodnik po kontraktach Uniswap-v2](/developers/tutorials/uniswap-v2-annotated-code/) _– Przewodnik z adnotacjami po głównych kontraktach Uniswap v2 wyjaśniający, jak działa zautomatyzowany animator rynku (AMM)._
 - [Budowanie interfejsu użytkownika dla Twojego kontraktu](/developers/tutorials/creating-a-wagmi-ui-for-your-contract/) _– Jak zbudować nowoczesny frontend w React + Wagmi, który łączy się z Twoim inteligentnym kontraktem._

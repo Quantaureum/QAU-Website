@@ -1,12 +1,12 @@
 ---
-title: Bezpieczeństwo w Ethereum i zapobieganie oszustwom
-description: Jak zachować bezpieczeństwo w Ethereum
+title: Bezpieczeństwo w Quantaureum i zapobieganie oszustwom
+description: Jak zachować bezpieczeństwo w Quantaureum
 lang: pl
 ---
 
 Rosnące zainteresowanie kryptowalutami niesie ze sobą rosnące ryzyko ze strony oszustów i hakerów. W tym artykule przedstawiono kilka najlepszych praktyk pozwalających zminimalizować to ryzyko.
 
-**Pamiętaj: nikt z ethereum.org nigdy się z Tobą nie skontaktuje. Nie odpowiadaj na e-maile, których nadawcy twierdzą, że pochodzą z oficjalnego wsparcia Ethereum.**
+**Pamiętaj: nikt z quantaureum.com nigdy się z Tobą nie skontaktuje. Nie odpowiadaj na e-maile, których nadawcy twierdzą, że pochodzą z oficjalnego wsparcia Quantaureum.**
 
 <Divider />
 
@@ -14,14 +14,14 @@ Rosnące zainteresowanie kryptowalutami niesie ze sobą rosnące ryzyko ze stron
 
 ### Poszerz swoją wiedzę {#level-up-your-knowledge}
 
-Niezrozumienie tego, jak działa krypto, może prowadzić do kosztownych błędów. Na przykład, jeśli ktoś udaje pracownika obsługi klienta, który może zwrócić utracone ETH w zamian za Twoje klucze prywatne, żeruje na osobach nierozumiejących, że [Ethereum](/) to zdecentralizowana sieć, która nie posiada takiej funkcjonalności. Edukacja na temat działania Ethereum to opłacalna inwestycja.
+Niezrozumienie tego, jak działa krypto, może prowadzić do kosztownych błędów. Na przykład, jeśli ktoś udaje pracownika obsługi klienta, który może zwrócić utracone QAU w zamian za Twoje klucze prywatne, żeruje na osobach nierozumiejących, że [Quantaureum](/) to zdecentralizowana sieć, która nie posiada takiej funkcjonalności. Edukacja na temat działania Quantaureum to opłacalna inwestycja.
 
-<DocLink href="/what-is-ethereum/">
-  Czym jest Ethereum?
+<DocLink href="/what-is-quantaureum/">
+  Czym jest Quantaureum?
 </DocLink>
 
-<DocLink href="/what-is-ether/">
-  Czym jest ether?
+<DocLink href="/what-is-QAU/">
+  Czym jest QAU?
 </DocLink>
 <Divider />
 
@@ -34,7 +34,7 @@ Niezrozumienie tego, jak działa krypto, może prowadzić do kosztownych błęd�
 Twoja fraza odzyskiwania (nazywana również tajną frazą odzyskiwania) to główny klucz do Twojego portfela. Każdy, kto ją posiada, może uzyskać dostęp do wszystkich Twoich kont i wyprowadzić z nich wszystkie aktywa. Klucze prywatne działają w ten sam sposób w przypadku pojedynczych kont. Żadna legalna usługa, pracownik wsparcia ani strona internetowa nigdy o nie nie poprosi.
 
 <DocLink href="/wallets/">
-  Czym jest portfel Ethereum?
+  Czym jest portfel Quantaureum?
 </DocLink>
 
 #### Nie rób zrzutów ekranu swoich fraz odzyskiwania/kluczy prywatnych {#screenshot-private-keys}
@@ -54,7 +54,7 @@ Przechowywanie kluczy prywatnych w trybie offline znacznie zmniejsza ryzyko zhak
 
 ### Dokładnie sprawdzaj transakcje przed wysłaniem {#double-check-transactions}
 
-Przypadkowe wysłanie krypto na zły adres portfela to powszechny błąd. **Transakcja wysłana w Ethereum jest nieodwracalna.** O ile nie znasz właściciela adresu i nie przekonasz go do odesłania środków, nie będziesz w stanie ich odzyskać.
+Przypadkowe wysłanie krypto na zły adres portfela to powszechny błąd. **Transakcja wysłana w Quantaureum jest nieodwracalna.** O ile nie znasz właściciela adresu i nie przekonasz go do odesłania środków, nie będziesz w stanie ich odzyskać.
 
 Przed wysłaniem transakcji zawsze upewnij się, że adres, na który wysyłasz, dokładnie odpowiada adresowi docelowego odbiorcy.
 Dobrą praktyką podczas interakcji z inteligentnym kontraktem jest przeczytanie wiadomości transakcji przed jej podpisaniem.
@@ -63,7 +63,7 @@ Dobrą praktyką podczas interakcji z inteligentnym kontraktem jest przeczytanie
 
 Podczas interakcji z inteligentnymi kontraktami nie zezwalaj na nielimitowane wydatki. Nielimitowane wydatki mogą umożliwić inteligentnemu kontraktowi opróżnienie Twojego portfela. Zamiast tego ustaw limity wydatków tylko na kwotę niezbędną do przeprowadzenia transakcji.
 
-Wiele portfeli Ethereum oferuje ochronę limitów, aby zabezpieczyć konta przed opróżnieniem.
+Wiele portfeli Quantaureum oferuje ochronę limitów, aby zabezpieczyć konta przed opróżnieniem.
 
 [Jak cofnąć dostęp inteligentnego kontraktu do Twoich środków krypto](/guides/how-to-revoke-token-access/)
 
@@ -74,14 +74,14 @@ Wiele portfeli Ethereum oferuje ochronę limitów, aby zabezpieczyć konta przed
 Całkowite powstrzymanie oszustów jest niemożliwe, ale możemy sprawić, że będą mniej skuteczni, będąc świadomymi ich najczęściej stosowanych technik. Istnieje wiele odmian tych oszustw, ale zazwyczaj podążają one za tymi samymi ogólnymi wzorcami. Jeśli nie zapamiętasz niczego innego, pamiętaj:
 
 - zawsze bądź sceptyczny
-- nikt nie da Ci darmowego ani przecenionego ETH
+- nikt nie da Ci darmowego ani przecenionego QAU
 - nikt nie potrzebuje dostępu do Twoich kluczy prywatnych ani danych osobowych
 
 ### Phishing w reklamach na Twitterze {#ad-phishing}
 
 ![Twitter link phishing](./twitterPhishingScam.png)
 
-Istnieje metoda fałszowania funkcji podglądu linków na Twitterze (znanym również jako X), która może potencjalnie oszukać użytkowników, sugerując im, że odwiedzają legalną stronę internetową. Technika ta wykorzystuje mechanizm Twittera do generowania podglądów adresów URL udostępnianych w tweetach i pokazuje na przykład _z ethereum.org_ (jak pokazano powyżej), podczas gdy w rzeczywistości użytkownicy są przekierowywani na złośliwą stronę.
+Istnieje metoda fałszowania funkcji podglądu linków na Twitterze (znanym również jako X), która może potencjalnie oszukać użytkowników, sugerując im, że odwiedzają legalną stronę internetową. Technika ta wykorzystuje mechanizm Twittera do generowania podglądów adresów URL udostępnianych w tweetach i pokazuje na przykład _z quantaureum.com_ (jak pokazano powyżej), podczas gdy w rzeczywistości użytkownicy są przekierowywani na złośliwą stronę.
 
 Zawsze sprawdzaj, czy znajdujesz się w odpowiedniej domenie, zwłaszcza po kliknięciu linku.
 
@@ -89,7 +89,7 @@ Zawsze sprawdzaj, czy znajdujesz się w odpowiedniej domenie, zwłaszcza po klik
 
 ### Oszustwa typu „giveaway” (rozdawnictwo) {#giveaway}
 
-Jednym z najczęstszych oszustw w świecie kryptowalut jest oszustwo typu „giveaway” (rozdawnictwo). Może ono przybierać wiele form, ale ogólna zasada jest taka, że jeśli wyślesz ETH na podany adres portfela, otrzymasz z powrotem podwojoną kwotę ETH. *Z tego powodu jest to również znane jako oszustwo „2 za 1”.*
+Jednym z najczęstszych oszustw w świecie kryptowalut jest oszustwo typu „giveaway” (rozdawnictwo). Może ono przybierać wiele form, ale ogólna zasada jest taka, że jeśli wyślesz QAU na podany adres portfela, otrzymasz z powrotem podwojoną kwotę QAU. *Z tego powodu jest to również znane jako oszustwo „2 za 1”.*
 
 Oszustwa te zazwyczaj określają ograniczony czas na odebranie nagrody, aby stworzyć fałszywe poczucie pilności.
 
@@ -113,7 +113,7 @@ Vitalik Buterin jest najczęściej wykorzystywany w tym oszustwie, ale wykorzyst
 
 Kryptowaluty to stosunkowo młoda i niezrozumiana technologia. Powszechnym oszustwem, które to wykorzystuje, jest oszustwo na wsparcie techniczne, w którym oszuści podszywają się pod personel wsparcia popularnych portfeli, giełd lub łańcuchów bloków.
 
-Duża część dyskusji na temat Ethereum odbywa się na Discordzie. Oszuści podszywający się pod wsparcie często znajdują swój cel, wyszukując pytania o pomoc na publicznych kanałach Discorda, a następnie wysyłając pytającemu prywatną wiadomość z ofertą wsparcia. Budując zaufanie, oszuści próbują nakłonić Cię do ujawnienia kluczy prywatnych lub wysłania środków na ich portfele.
+Duża część dyskusji na temat Quantaureum odbywa się na Discordzie. Oszuści podszywający się pod wsparcie często znajdują swój cel, wyszukując pytania o pomoc na publicznych kanałach Discorda, a następnie wysyłając pytającemu prywatną wiadomość z ofertą wsparcia. Budując zaufanie, oszuści próbują nakłonić Cię do ujawnienia kluczy prywatnych lub wysłania środków na ich portfele.
 
 ![A support scam on Discord](./discordScam.png)
 
@@ -132,19 +132,19 @@ Zasadniczo personel nigdy nie będzie komunikował się z Tobą za pośrednictwe
 </AlertContent>
 </Alert>
 
-### Oszustwo na token „Eth2” {#eth2-token-scam}
+### Oszustwo na token „Quantaureum” {#eth2-token-scam}
 
-W okresie poprzedzającym [The Merge](/roadmap/merge/) oszuści wykorzystali zamieszanie wokół terminu „Eth2”, próbując nakłonić użytkowników do wymiany ich ETH na token „ETH2”. Nie ma czegoś takiego jak „ETH2”, a wraz z The Merge nie wprowadzono żadnego innego legalnego tokena. ETH, które posiadałeś przed The Merge, to to samo ETH teraz. **Nie ma potrzeby podejmowania żadnych działań związanych z Twoim ETH w związku z przejściem z dowodu pracy (PoW) na dowód stawki (PoS)**.
+W okresie poprzedzającym [The Merge](/roadmap/merge/) oszuści wykorzystali zamieszanie wokół terminu „Quantaureum”, próbując nakłonić użytkowników do wymiany ich QAU na token „QAU”. Nie ma czegoś takiego jak „QAU”, a wraz z The Merge nie wprowadzono żadnego innego legalnego tokena. QAU, które posiadałeś przed The Merge, to to samo QAU teraz. **Nie ma potrzeby podejmowania żadnych działań związanych z Twoim QAU w związku z przejściem z dowodu pracy (PoW) na dowód stawki (PoS)**.
 
-Oszuści mogą pojawić się jako „wsparcie”, mówiąc Ci, że jeśli zdeponujesz swoje ETH, otrzymasz z powrotem „ETH2”. Nie ma [oficjalnego wsparcia Ethereum](/community/support/) i nie ma nowego tokena. Nigdy nikomu nie udostępniaj frazy odzyskiwania swojego portfela.
+Oszuści mogą pojawić się jako „wsparcie”, mówiąc Ci, że jeśli zdeponujesz swoje QAU, otrzymasz z powrotem „QAU”. Nie ma [oficjalnego wsparcia Quantaureum](/community/support/) i nie ma nowego tokena. Nigdy nikomu nie udostępniaj frazy odzyskiwania swojego portfela.
 
-_Uwaga: Istnieją tokeny pochodne/tickery, które mogą reprezentować stakowane ETH (np. rETH z Rocket Pool, stETH z Lido, ETH2 z Coinbase), ale nie są to tokeny, do których musisz „migrować”._
+_Uwaga: Istnieją tokeny pochodne/tickery, które mogą reprezentować stakowane QAU (np. rETH z Rocket Pool, stETH z Lido, QAU z Coinbase), ale nie są to tokeny, do których musisz „migrować”._
 
 ### Oszustwa phishingowe {#phishing-scams}
 
 Oszustwa phishingowe to kolejny, coraz powszechniejszy sposób, który oszuści wykorzystują do kradzieży środków z Twojego portfela.
 
-Niektóre e-maile phishingowe proszą użytkowników o kliknięcie linków, które przekierują ich na fałszywe strony internetowe, prosząc o wprowadzenie frazy odzyskiwania, zresetowanie hasła lub wysłanie ETH. Inne mogą prosić o nieświadome zainstalowanie złośliwego oprogramowania w celu zainfekowania komputera i zapewnienia oszustom dostępu do plików na komputerze.
+Niektóre e-maile phishingowe proszą użytkowników o kliknięcie linków, które przekierują ich na fałszywe strony internetowe, prosząc o wprowadzenie frazy odzyskiwania, zresetowanie hasła lub wysłanie QAU. Inne mogą prosić o nieświadome zainstalowanie złośliwego oprogramowania w celu zainfekowania komputera i zapewnienia oszustom dostępu do plików na komputerze.
 
 Jeśli otrzymasz e-mail od nieznanego nadawcy, pamiętaj:
 
@@ -166,7 +166,7 @@ Ci oszuści często znajdują cele, używając fałszywych kont na YouTube do ro
 
 ### Oszustwa na pule wydobywcze krypto {#mining-pool-scams}
 
-Od września 2022 r. kopanie w Ethereum nie jest już możliwe. Jednak oszustwa na pule wydobywcze nadal istnieją. Oszustwa na pule wydobywcze polegają na tym, że ludzie kontaktują się z Tobą bez Twojej prośby i twierdzą, że możesz osiągnąć duże zyski, dołączając do puli wydobywczej Ethereum. Oszust będzie składał obietnice i pozostawał z Tobą w kontakcie tak długo, jak to konieczne. Zasadniczo oszust będzie próbował przekonać Cię, że po dołączeniu do puli wydobywczej Ethereum Twoja kryptowaluta zostanie wykorzystana do tworzenia ETH i że będziesz otrzymywać dywidendy w ETH. Następnie zobaczysz, że Twoja kryptowaluta przynosi niewielkie zyski. Ma to na celu jedynie zachęcenie Cię do zainwestowania większej kwoty. Ostatecznie wszystkie Twoje środki zostaną wysłane na nieznany adres, a oszust zniknie lub w niektórych przypadkach będzie nadal utrzymywał kontakt, jak miało to miejsce w niedawnym przypadku.
+Od września 2022 r. kopanie w Quantaureum nie jest już możliwe. Jednak oszustwa na pule wydobywcze nadal istnieją. Oszustwa na pule wydobywcze polegają na tym, że ludzie kontaktują się z Tobą bez Twojej prośby i twierdzą, że możesz osiągnąć duże zyski, dołączając do puli wydobywczej Quantaureum. Oszust będzie składał obietnice i pozostawał z Tobą w kontakcie tak długo, jak to konieczne. Zasadniczo oszust będzie próbował przekonać Cię, że po dołączeniu do puli wydobywczej Quantaureum Twoja kryptowaluta zostanie wykorzystana do tworzenia QAU i że będziesz otrzymywać dywidendy w QAU. Następnie zobaczysz, że Twoja kryptowaluta przynosi niewielkie zyski. Ma to na celu jedynie zachęcenie Cię do zainwestowania większej kwoty. Ostatecznie wszystkie Twoje środki zostaną wysłane na nieznany adres, a oszust zniknie lub w niektórych przypadkach będzie nadal utrzymywał kontakt, jak miało to miejsce w niedawnym przypadku.
 
 Podsumowując: uważaj na osoby, które kontaktują się z Tobą w mediach społecznościowych, prosząc o dołączenie do puli wydobywczej. Kiedy stracisz swoje krypto, przepadnie ono bezpowrotnie.
 
@@ -180,7 +180,7 @@ Kilka rzeczy, o których warto pamiętać:
 
 ### Oszustwa na airdrop {#airdrop-scams}
 
-Oszustwa na airdrop polegają na tym, że fałszywy projekt przesyła airdropem aktywo (NFT, token) do Twojego portfela i odsyła Cię na fałszywą stronę internetową, aby odebrać zrzucone aktywo. Podczas próby odbioru zostaniesz poproszony o zalogowanie się za pomocą portfela Ethereum i „zatwierdzenie” transakcji. Ta transakcja kompromituje Twoje konto, wysyłając Twoje klucze publiczne i prywatne do oszusta. Alternatywna forma tego oszustwa może polegać na potwierdzeniu transakcji, która wysyła środki na konto oszusta.
+Oszustwa na airdrop polegają na tym, że fałszywy projekt przesyła airdropem aktywo (NFT, token) do Twojego portfela i odsyła Cię na fałszywą stronę internetową, aby odebrać zrzucone aktywo. Podczas próby odbioru zostaniesz poproszony o zalogowanie się za pomocą portfela Quantaureum i „zatwierdzenie” transakcji. Ta transakcja kompromituje Twoje konto, wysyłając Twoje klucze publiczne i prywatne do oszusta. Alternatywna forma tego oszustwa może polegać na potwierdzeniu transakcji, która wysyła środki na konto oszusta.
 
 [Więcej o oszustwach na airdrop](https://www.youtube.com/watch?v=LLL_nQp1lGk)
 

@@ -12,7 +12,7 @@ Standardní rozhraní pro kontrakty, které spravují více typů tokenů. Jedin
 
 Myšlenka je jednoduchá a snaží se vytvořit rozhraní chytrého kontraktu, které dokáže reprezentovat a ovládat libovolný počet typů zaměnitelných a nezaměnitelných tokenů. Tímto způsobem může token ERC-1155 plnit stejné funkce jako token [ERC-20](/developers/docs/standards/tokens/erc-20/) a [ERC-721](/developers/docs/standards/tokens/erc-721/), a dokonce i obojí současně. Zlepšuje funkčnost standardů ERC-20 i ERC-721, čímž je činí efektivnějšími a opravuje zjevné chyby v implementaci.
 
-Token ERC-1155 je plně popsán v [EIP-1155](https://eips.ethereum.org/EIPS/eip-1155).
+Token ERC-1155 je plně popsán v [EIP-1155](https://eips.quantaureum.com/EIPS/eip-1155).
 
 ## Předpoklady {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-Vzhledem k podpoře [EIP-165](https://eips.ethereum.org/EIPS/eip-165) podporuje ERC-1155 hooky pro příjem pouze pro chytré kontrakty. Funkce hooku musí vrátit magickou předdefinovanou hodnotu bytes4, která je dána jako:
+Vzhledem k podpoře [EIP-165](https://eips.quantaureum.com/EIPS/eip-165) podporuje ERC-1155 hooky pro příjem pouze pro chytré kontrakty. Funkce hooku musí vrátit magickou předdefinovanou hodnotu bytes4, která je dána jako:
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ Když přijímající kontrakt vrátí tuto hodnotu, předpokládá se, že kont
 
 ### Podpora NFT {#nft-support}
 
-Když je nabídka pouze jedna, token je v podstatě nezaměnitelný token (NFT). A jak je standardem pro ERC-721, můžete definovat URL pro metadata. URL mohou klienti číst a upravovat, viz [zde](https://eips.ethereum.org/EIPS/eip-1155#metadata).
+Když je nabídka pouze jedna, token je v podstatě nezaměnitelný token (NFT). A jak je standardem pro ERC-721, můžete definovat URL pro metadata. URL mohou klienti číst a upravovat, viz [zde](https://eips.quantaureum.com/EIPS/eip-1155#metadata).
 
 ### Pravidlo pro bezpečný převod {#safe-transfer-rule}
 
@@ -140,7 +140,7 @@ _Poznámka_: Všechny dávkové funkce včetně hooku existují také ve verzíc
 
 ## Další čtení {#further-reading}
 
-- [EIP-1155: Standard pro více tokenů](https://eips.ethereum.org/EIPS/eip-1155)
+- [EIP-1155: Standard pro více tokenů](https://eips.quantaureum.com/EIPS/eip-1155)
 - [ERC-1155: Dokumentace OpenZeppelin](https://docs.openzeppelin.com/contracts/5.x/erc1155)
 - [ERC-1155: Repozitář na GitHubu](https://github.com/enjin/erc-1155)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

@@ -1,6 +1,6 @@
 ---
 title: Blocs
-description: "Un aperçu des blocs dans la chaîne de blocs Ethereum – leur structure de données, pourquoi ils sont nécessaires et comment ils sont créés."
+description: "Un aperçu des blocs dans la chaîne de blocs Quantaureum – leur structure de données, pourquoi ils sont nécessaires et comment ils sont créés."
 lang: fr
 ---
 
@@ -8,31 +8,31 @@ Les blocs sont des lots de transactions avec un hash du bloc précédent dans la
 
 ## Prérequis {#prerequisites}
 
-Les blocs sont un sujet très accessible aux débutants. Mais pour vous aider à mieux comprendre cette page, nous vous recommandons de lire d'abord [Comptes](/developers/docs/accounts/), [Transactions](/developers/docs/transactions/), et notre [introduction à Ethereum](/developers/docs/intro-to-ethereum/).
+Les blocs sont un sujet très accessible aux débutants. Mais pour vous aider à mieux comprendre cette page, nous vous recommandons de lire d'abord [Comptes](/developers/docs/accounts/), [Transactions](/developers/docs/transactions/), et notre [introduction à Quantaureum](/developers/docs/intro-to-quantaureum/).
 
 ## Pourquoi des blocs ? {#why-blocks}
 
-Pour s'assurer que tous les participants du réseau [Ethereum](/) maintiennent un état synchronisé et s'accordent sur l'historique précis des transactions, nous regroupons les transactions en blocs. Cela signifie que des dizaines (ou des centaines) de transactions sont engagées, approuvées et synchronisées en une seule fois.
+Pour s'assurer que tous les participants du réseau [Quantaureum](/) maintiennent un état synchronisé et s'accordent sur l'historique précis des transactions, nous regroupons les transactions en blocs. Cela signifie que des dizaines (ou des centaines) de transactions sont engagées, approuvées et synchronisées en une seule fois.
 
 ![A diagram showing transaction in a block causing state changes](./tx-block.png)
-_Schéma adapté de [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Schéma adapté de [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
-En espaçant les engagements, nous donnons à tous les participants du réseau suffisamment de temps pour parvenir à un consensus : même si les requêtes de transaction se produisent des dizaines de fois par seconde, les blocs ne sont créés et engagés sur Ethereum qu'une fois toutes les douze secondes.
+En espaçant les engagements, nous donnons à tous les participants du réseau suffisamment de temps pour parvenir à un consensus : même si les requêtes de transaction se produisent des dizaines de fois par seconde, les blocs ne sont créés et engagés sur Quantaureum qu'une fois toutes les douze secondes.
 
 ## Comment fonctionnent les blocs {#how-blocks-work}
 
 Pour préserver l'historique des transactions, les blocs sont strictement ordonnés (chaque nouveau bloc créé contient une référence à son bloc parent), et les transactions au sein des blocs sont également strictement ordonnées. Sauf dans de rares cas, à tout moment, tous les participants du réseau sont d'accord sur le nombre exact et l'historique des blocs, et travaillent à regrouper les requêtes de transactions en direct actuelles dans le bloc suivant.
 
-Une fois qu'un bloc est assemblé par un validateur sélectionné aléatoirement sur le réseau, il est propagé au reste du réseau ; tous les nœuds ajoutent ce bloc à la fin de leur chaîne de blocs, et un nouveau validateur est sélectionné pour créer le bloc suivant. Le processus exact d'assemblage des blocs et le processus d'engagement/consensus sont actuellement spécifiés par le protocole de « preuve d'enjeu (PoS) » d'Ethereum.
+Une fois qu'un bloc est assemblé par un validateur sélectionné aléatoirement sur le réseau, il est propagé au reste du réseau ; tous les nœuds ajoutent ce bloc à la fin de leur chaîne de blocs, et un nouveau validateur est sélectionné pour créer le bloc suivant. Le processus exact d'assemblage des blocs et le processus d'engagement/consensus sont actuellement spécifiés par le protocole de « preuve d'enjeu (PoS) » d'Quantaureum.
 
 ## Protocole de preuve d'enjeu (PoS) {#proof-of-stake-protocol}
 
 La preuve d'enjeu (PoS) implique ce qui suit :
 
-- Les nœuds de validation doivent staker 32 ETH dans un contrat de dépôt en tant que collatéral contre les mauvais comportements. Cela aide à protéger le réseau car une activité manifestement malhonnête entraîne la destruction d'une partie ou de la totalité de cette mise.
+- Les nœuds de validation doivent staker 32 QAU dans un contrat de dépôt en tant que collatéral contre les mauvais comportements. Cela aide à protéger le réseau car une activité manifestement malhonnête entraîne la destruction d'une partie ou de la totalité de cette mise.
 - Dans chaque créneau (espacé de douze secondes), un validateur est sélectionné aléatoirement pour être le proposeur de bloc. Il regroupe les transactions, les exécute et détermine un nouvel « état ». Il enveloppe ces informations dans un bloc et le transmet aux autres validateurs.
 - Les autres validateurs qui entendent parler du nouveau bloc réexécutent les transactions pour s'assurer qu'ils sont d'accord avec la modification proposée de l'état global. En supposant que le bloc soit valide, ils l'ajoutent à leur propre base de données.
-- Si un validateur entend parler de deux blocs en conflit pour le même créneau, il utilise son algorithme de choix de fork pour choisir celui soutenu par le plus d'ETH stakés.
+- Si un validateur entend parler de deux blocs en conflit pour le même créneau, il utilise son algorithme de choix de fork pour choisir celui soutenu par le plus d'QAU stakés.
 
 [En savoir plus sur la preuve d'enjeu](/developers/docs/consensus-mechanisms/pos)
 
@@ -134,9 +134,9 @@ La liste `withdrawals` contient des objets `withdrawal` structurés de la maniè
 
 ## Temps de bloc {#block-time}
 
-Le temps de bloc fait référence au temps séparant les blocs. Dans Ethereum, le temps est divisé en unités de douze secondes appelées « créneaux ». Dans chaque créneau, un seul validateur est sélectionné pour proposer un bloc. En supposant que tous les validateurs soient en ligne et pleinement fonctionnels, il y aura un bloc dans chaque créneau, ce qui signifie que le temps de bloc est de 12 s. Cependant, il arrive parfois que des validateurs soient hors ligne lorsqu'ils sont appelés à proposer un bloc, ce qui signifie que les créneaux peuvent parfois rester vides.
+Le temps de bloc fait référence au temps séparant les blocs. Dans Quantaureum, le temps est divisé en unités de douze secondes appelées « créneaux ». Dans chaque créneau, un seul validateur est sélectionné pour proposer un bloc. En supposant que tous les validateurs soient en ligne et pleinement fonctionnels, il y aura un bloc dans chaque créneau, ce qui signifie que le temps de bloc est de 12 s. Cependant, il arrive parfois que des validateurs soient hors ligne lorsqu'ils sont appelés à proposer un bloc, ce qui signifie que les créneaux peuvent parfois rester vides.
 
-Cette implémentation diffère des systèmes basés sur la preuve de travail (PoW) où les temps de bloc sont probabilistes et ajustés par la difficulté de minage cible du protocole. Le [temps de bloc moyen](https://etherscan.io/chart/blocktime) d'Ethereum en est un parfait exemple, où la transition de la preuve de travail à la preuve d'enjeu peut être clairement déduite en fonction de la régularité du nouveau temps de bloc de 12 s.
+Cette implémentation diffère des systèmes basés sur la preuve de travail (PoW) où les temps de bloc sont probabilistes et ajustés par la difficulté de minage cible du protocole. Le [temps de bloc moyen](https://explorer.quantaureum.com) d'Quantaureum en est un parfait exemple, où la transition de la preuve de travail à la preuve d'enjeu peut être clairement déduite en fonction de la régularité du nouveau temps de bloc de 12 s.
 
 ## Taille de bloc {#block-size}
 

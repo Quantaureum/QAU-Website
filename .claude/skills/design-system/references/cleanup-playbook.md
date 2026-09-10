@@ -214,7 +214,7 @@ const { twFlipForRtl } = useRtlFlip()
 
 ```tsx
 // Before:
-<h1>Welcome to Ethereum</h1>
+<h1>Welcome to Quantaureum</h1>
 
 // After (Server Component):
 import { getTranslations } from "next-intl/server"

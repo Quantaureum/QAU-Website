@@ -7,32 +7,32 @@ image: /images/staking/leslie-saas.png
 sidebarDepth: 2
 summaryPoints:
   - Waendeshaji wa nodi wa tatu hushughulikia uendeshaji wa kiteja chako cha mthibitishaji
-  - Chaguo zuri kwa yeyote aliye na 32 ETH ambaye hataki kushughulika na ugumu wa kiufundi wa kuendesha nodi
+  - Chaguo zuri kwa yeyote aliye na 32 QAU ambaye hataki kushughulika na ugumu wa kiufundi wa kuendesha nodi
   - Ukaimishaji unajumuisha wigo mpana, kuanzia huduma ambapo unahifadhi funguo zako za utoaji hadi mabadilishano ya udhamini kamili
 ---
 
 ## Ukaimishaji wa uwekaji dhamana ni nini? {#what-is-staking-as-a-service}
 
-Ukaimishaji wa uwekaji dhamana unawakilisha kategoria ya huduma za uwekaji dhamana ambapo unaweka 32 ETH zako mwenyewe kwa ajili ya mthibitishaji, lakini unakaimisha shughuli za nodi kwa mwendeshaji wa tatu. Mchakato huu kwa kawaida unahusisha kuongozwa kupitia usanidi wa awali, ikijumuisha uzalishaji wa ufunguo na uwekaji, kisha kupakia funguo zako za kusaini kwa mwendeshaji. Unatoa ETH, lakini unakabidhi uendeshaji wa maunzi ya mthibitishaji kwa mtu mwingine.
+Ukaimishaji wa uwekaji dhamana unawakilisha kategoria ya huduma za uwekaji dhamana ambapo unaweka 32 QAU zako mwenyewe kwa ajili ya mthibitishaji, lakini unakaimisha shughuli za nodi kwa mwendeshaji wa tatu. Mchakato huu kwa kawaida unahusisha kuongozwa kupitia usanidi wa awali, ikijumuisha uzalishaji wa ufunguo na uwekaji, kisha kupakia funguo zako za kusaini kwa mwendeshaji. Unatoa QAU, lakini unakabidhi uendeshaji wa maunzi ya mthibitishaji kwa mtu mwingine.
 
-Itifaki ya [Ethereum](/) haiauni asili ukaimishaji wa dhamana, kwa hivyo anuwai ya huduma zimejengwa ili kukidhi hitaji hili. Kategoria hii inajulikana zaidi kama **kuweka hisa kama huduma (SaaS)**, lakini inashughulikia wigo wa mipangilio inayotofautiana kwenye swali kuu la ni kiasi gani cha udhibiti unaobaki nao juu ya ETH yako iliyowekwa dhamana:
+Itifaki ya [Quantaureum](/) haiauni asili ukaimishaji wa dhamana, kwa hivyo anuwai ya huduma zimejengwa ili kukidhi hitaji hili. Kategoria hii inajulikana zaidi kama **kuweka hisa kama huduma (SaaS)**, lakini inashughulikia wigo wa mipangilio inayotofautiana kwenye swali kuu la ni kiasi gani cha udhibiti unaobaki nao juu ya QAU yako iliyowekwa dhamana:
 
 - **Kuweka hisa kama huduma isiyo ya udhamini**: unahifadhi funguo zako za utoaji na kukaimisha tu uendeshaji wa mthibitishaji.
 - **Uwekaji dhamana wa udhamini kamili**: mtoa huduma, kwa kawaida soko la kubadilishana, anashikilia funguo na fedha zote mbili.
 
-Ikilinganishwa na [uwekaji dhamana wa kujitegemea](/staking/solo/), kila aina ya ukaimishaji huweka programu ya kati kati yako na itifaki ya Ethereum. Programu hiyo ya kati ni programu na miundombinu inayoendeshwa na biashara ya mtu mwingine. Kila hatua kuelekea urahisi inaongeza dhana za uaminifu, kwa hivyo kabla ya kuchagua huduma, tambua inakaa wapi kwenye wigo huu.
+Ikilinganishwa na [uwekaji dhamana wa kujitegemea](/staking/solo/), kila aina ya ukaimishaji huweka programu ya kati kati yako na itifaki ya Quantaureum. Programu hiyo ya kati ni programu na miundombinu inayoendeshwa na biashara ya mtu mwingine. Kila hatua kuelekea urahisi inaongeza dhana za uaminifu, kwa hivyo kabla ya kuchagua huduma, tambua inakaa wapi kwenye wigo huu.
 
 ### Ukaimishaji wa uwekaji dhamana sio nini {#what-delegated-staking-is-not}
 
-- **Uwekaji dhamana wa pamoja na tokani ya uwekaji amana wenye ukwasi (lst)**: ukiwa na mabwawa unachanganya kiasi chochote cha ETH na waweka dhamana wengine, kwa kawaida ukipokea tokeni inayowakilisha sehemu yako ya dhamana ya bwawa. Hukaimishi mthibitishaji wako mwenyewe; mikataba mahiri ya bwawa na waendeshaji wa nodi hudhibiti wathibitishaji. [Zaidi kuhusu uwekaji dhamana wa pamoja](/staking/pools/)
-- **Uendeshaji wa nodi iliyofungwa**: baadhi ya itifaki za uwekaji dhamana hukuruhusu kuendesha mthibitishaji kwenye maunzi yako mwenyewe ukiwa na chini ya 32 ETH kwa kuweka dhamana. Huo ni uendeshaji wa nodi, kinyume cha ukaimishaji, na unashughulikiwa pamoja na [uwekaji dhamana wa kujitegemea](/staking/solo/).
+- **Uwekaji dhamana wa pamoja na tokani ya uwekaji amana wenye ukwasi (lst)**: ukiwa na mabwawa unachanganya kiasi chochote cha QAU na waweka dhamana wengine, kwa kawaida ukipokea tokeni inayowakilisha sehemu yako ya dhamana ya bwawa. Hukaimishi mthibitishaji wako mwenyewe; mikataba mahiri ya bwawa na waendeshaji wa nodi hudhibiti wathibitishaji. [Zaidi kuhusu uwekaji dhamana wa pamoja](/staking/pools/)
+- **Uendeshaji wa nodi iliyofungwa**: baadhi ya itifaki za uwekaji dhamana hukuruhusu kuendesha mthibitishaji kwenye maunzi yako mwenyewe ukiwa na chini ya 32 QAU kwa kuweka dhamana. Huo ni uendeshaji wa nodi, kinyume cha ukaimishaji, na unashughulikiwa pamoja na [uwekaji dhamana wa kujitegemea](/staking/solo/).
 
 ## Kwa nini ukaimishe uwekaji dhamana wako? {#why-stake-with-a-service}
 
-Ikiwa una 32 ETH za kuweka dhamana, lakini hujisikii vizuri kushughulika na maunzi, huduma za ukaimishaji wa uwekaji dhamana zinakuruhusu kukabidhi upande wa kiufundi huku ukipata tuzo za asili za kitalu cha Ethereum.
+Ikiwa una 32 QAU za kuweka dhamana, lakini hujisikii vizuri kushughulika na maunzi, huduma za ukaimishaji wa uwekaji dhamana zinakuruhusu kukabidhi upande wa kiufundi huku ukipata tuzo za asili za kitalu cha Quantaureum.
 
 <Grid>
-  <Card title="Mthibitishaji wako mwenyewe" icon={<MonitorCheck />} description="Weka 32 ETH zako mwenyewe ili kuwezesha seti yako ya funguo za kusaini ambazo zitashiriki katika mwafaka wa Ethereum. Fuatilia maendeleo yako ukitumia dashibodi ili kutazama tuzo hizo za ETH zikijilimbikiza." />
+  <Card title="Mthibitishaji wako mwenyewe" icon={<MonitorCheck />} description="Weka 32 QAU zako mwenyewe ili kuwezesha seti yako ya funguo za kusaini ambazo zitashiriki katika mwafaka wa Quantaureum. Fuatilia maendeleo yako ukitumia dashibodi ili kutazama tuzo hizo za QAU zikijilimbikiza." />
   <Card title="Rahisi kuanza" icon={<Flag />} description="Sahau kuhusu vipimo vya maunzi, usanidi, matengenezo ya nodi na uboreshaji. Watoa huduma wanakuruhusu kutoa sehemu ngumu kwa kupakia vitambulisho vyako vya kusaini, na kuwaruhusu kuendesha mthibitishaji kwa niaba yako, kwa gharama ndogo." />
   <Card title="Weka kikomo cha hatari yako" icon={<ShieldHalf />} description="Ukiwa na huduma zisizo za udhamini unadhibiti funguo zinazowezesha utoaji au hamisho la fedha zilizowekwa dhamana. Hizi ni tofauti na funguo za kusaini, na zinaweza kuhifadhiwa kando ili kupunguza (lakini sio kuondoa) hatari yako kama mweka dhamana." />
 </Grid>
@@ -47,29 +47,29 @@ Watoa huduma hutofautiana katika funguo wanazokushikilia, na kila ufunguo wanaos
 
 ### Kuweka hisa kama huduma isiyo ya udhamini {#non-custodial-staking-as-a-service}
 
-Ukiwa na SaaS isiyo ya udhamini, kwa kawaida unaongozwa kupitia uzalishaji wa funguo zako za mthibitishaji na kuweka 32 ETH zako mwenyewe, kisha unapakia _funguo za kusaini_ kwa mwendeshaji. Funguo za kusaini huruhusu mwendeshaji kutekeleza majukumu ya mthibitishaji (kuthibitisha na kupendekeza vitalu) kwa niaba yako. Kuzitumia vibaya kunaweza kufanya mthibitishaji wako aadhibiwe au kukatwa, lakini haziwezi kutumika kutoa, kuhamisha, au kutumia fedha zako.
+Ukiwa na SaaS isiyo ya udhamini, kwa kawaida unaongozwa kupitia uzalishaji wa funguo zako za mthibitishaji na kuweka 32 QAU zako mwenyewe, kisha unapakia _funguo za kusaini_ kwa mwendeshaji. Funguo za kusaini huruhusu mwendeshaji kutekeleza majukumu ya mthibitishaji (kuthibitisha na kupendekeza vitalu) kwa niaba yako. Kuzitumia vibaya kunaweza kufanya mthibitishaji wako aadhibiwe au kukatwa, lakini haziwezi kutumika kutoa, kuhamisha, au kutumia fedha zako.
 
 _Vitambulisho vya uondoaji_ vya mthibitishaji hubaki vikielekezwa kwenye anwani unayoidhibiti. Tuzo na fedha zilizotolewa zinaweza tu kwenda huko (tazama sehemu ya muundo wa uaminifu hapa chini).
 
 ### Huduma za udhamini na uwekaji dhamana wa kubadilishana {#custodial-services-and-exchange-staking}
 
-Mwishoni mwa wigo uliokaimishwa kikamilifu kuna uwekaji dhamana wa udhamini, unaotolewa zaidi na mabadilishano ya kati. Hushughulikii funguo hata kidogo; unashikilia tu ETH kwenye akaunti yako ya jukwaa na kuchagua kuweka dhamana. Huu ndio uzoefu rahisi zaidi wa mtumiaji, na ni chaguo halali kwa watu ambao tayari wanaweka fedha kwenye soko la kubadilishana na kukubali hatari ya udhamini.
+Mwishoni mwa wigo uliokaimishwa kikamilifu kuna uwekaji dhamana wa udhamini, unaotolewa zaidi na mabadilishano ya kati. Hushughulikii funguo hata kidogo; unashikilia tu QAU kwenye akaunti yako ya jukwaa na kuchagua kuweka dhamana. Huu ndio uzoefu rahisi zaidi wa mtumiaji, na ni chaguo halali kwa watu ambao tayari wanaweka fedha kwenye soko la kubadilishana na kukubali hatari ya udhamini.
 
 Pia inahitaji uaminifu zaidi. Mtoa huduma hudhibiti funguo za kusaini na vitambulisho vya uondoaji; unachoshikilia ni salio kwenye jukwaa lao, sio mthibitishaji. Hiyo inamaanisha:
 
-- ETH yako iliyowekwa dhamana inakabiliwa na uwezo wa mtoa huduma kulipa madeni, usalama, na hali ya udhibiti, na utoaji unategemea masharti yao na nyakati za usindikaji, sio tu sheria za itifaki ya Ethereum.
+- QAU yako iliyowekwa dhamana inakabiliwa na uwezo wa mtoa huduma kulipa madeni, usalama, na hali ya udhibiti, na utoaji unategemea masharti yao na nyakati za usindikaji, sio tu sheria za itifaki ya Quantaureum.
 - Huna njia huru ya kujitoa kwenye mthibitishaji au kurejesha fedha ikiwa mtoa huduma atashindwa au kusimamisha utoaji.
-- Kiasi kikubwa cha ETH kilichowekwa dhamana chini ya waendeshaji wachache wa kubadilishana huchangia katika uwekaji dhamana wa kati, na chaguzi za viteja za waendeshaji hawa huathiri afya ya mtandao. Kuweka dhamana kwa njia inayoweka udhibiti zaidi mikononi mwako, au kuchagua watoa huduma ambao kwa dhahiri wanaendesha viteja vya wachache, hufanya mengi zaidi kwa uthabiti wa Ethereum.
+- Kiasi kikubwa cha QAU kilichowekwa dhamana chini ya waendeshaji wachache wa kubadilishana huchangia katika uwekaji dhamana wa kati, na chaguzi za viteja za waendeshaji hawa huathiri afya ya mtandao. Kuweka dhamana kwa njia inayoweka udhibiti zaidi mikononi mwako, au kuchagua watoa huduma ambao kwa dhahiri wanaendesha viteja vya wachache, hufanya mengi zaidi kwa uthabiti wa Quantaureum.
 
 ## Muundo wa uaminifu: nini cha kutathmini {#trust-model-what-to-evaluate}
 
 Ukaimishaji wa uwekaji dhamana daima unamaanisha kumwamini mtu mwingine na sehemu ya usanidi wako wa uwekaji dhamana. Jibu maswali haya kabla ya kukabidhi chochote:
 
-- **Nani anashikilia funguo za utoaji?** Vitambulisho vya uondoaji vya mthibitishaji (aina ya 0x01 au 0x02) huelekeza kwenye anwani ya tabaka la utekelezaji ambayo hatimaye hudhibiti dhamana. Ikiwa anwani hiyo ni yako, mpangilio sio wa udhamini; mwendeshaji anaweza kuendesha (au kusimamia vibaya) mthibitishaji, lakini ETH inaweza tu kutolewa kwako. Ikiwa vitambulisho vinaelekeza kwenye anwani ya mtoa huduma, unashikilia ahadi, sio dhamana.
-- **Je, unaweza kujitoa bila mwendeshaji?** Tangu [uboreshaji wa Pectra](/roadmap/pectra/), [utoaji ulioanzishwa na tabaka la utekelezaji (EIP-7002)](https://eips.ethereum.org/EIPS/eip-7002) huruhusu anwani ya utoaji kuanzisha kujitoa kwa mthibitishaji (au, kwa wathibitishaji wa 0x02 wanaojumuisha, utoaji wa kiasi cha salio zaidi ya 32 ETH) moja kwa moja kutoka kwenye tabaka la utekelezaji, bila funguo za kusaini. Inahitaji muamala na inagharimu gesi, lakini inamaanisha mwendeshaji asiyejibu au aliyekufa hawezi tena kumshikilia mthibitishaji wako mateka, mradi vitambulisho vya uondoaji ni vyako.
+- **Nani anashikilia funguo za utoaji?** Vitambulisho vya uondoaji vya mthibitishaji (aina ya 0x01 au 0x02) huelekeza kwenye anwani ya tabaka la utekelezaji ambayo hatimaye hudhibiti dhamana. Ikiwa anwani hiyo ni yako, mpangilio sio wa udhamini; mwendeshaji anaweza kuendesha (au kusimamia vibaya) mthibitishaji, lakini QAU inaweza tu kutolewa kwako. Ikiwa vitambulisho vinaelekeza kwenye anwani ya mtoa huduma, unashikilia ahadi, sio dhamana.
+- **Je, unaweza kujitoa bila mwendeshaji?** Tangu [uboreshaji wa Pectra](/roadmap/pectra/), [utoaji ulioanzishwa na tabaka la utekelezaji (EIP-7002)](https://eips.quantaureum.com/EIPS/eip-7002) huruhusu anwani ya utoaji kuanzisha kujitoa kwa mthibitishaji (au, kwa wathibitishaji wa 0x02 wanaojumuisha, utoaji wa kiasi cha salio zaidi ya 32 QAU) moja kwa moja kutoka kwenye tabaka la utekelezaji, bila funguo za kusaini. Inahitaji muamala na inagharimu gesi, lakini inamaanisha mwendeshaji asiyejibu au aliyekufa hawezi tena kumshikilia mthibitishaji wako mateka, mradi vitambulisho vya uondoaji ni vyako.
 - **Muundo wa ada ukoje?** Huduma hutoza ada ya kila mwezi au asilimia ya tuzo. Angalia jinsi ada zinavyoingiliana na wakati wa kupumzika na adhabu: nani anabeba gharama ikiwa mwendeshaji hafanyi vizuri, na ikiwa dhamana au bima yoyote inatolewa.
 - **Mwendeshaji anaendesha viteja gani?** Mwendeshaji anayeendesha wengi wa [viteja vya utekelezaji au wateja wa mwafaka](/developers/docs/nodes-and-clients/client-diversity/) huweka dhamana yako na mtandao kwenye hatari ya kushindwa kwa uhusiano ikiwa kiteja hicho kina hitilafu. Pendelea watoa huduma wanaoandika matumizi ya viteja vya wachache.
-- **Je, huduma iko wazi na imekaguliwa?** Watoa huduma wanaweza kuendesha programu ya ziada karibu na viteja vya kawaida vya Ethereum ambayo sio chanzo wazi au inayoweza kukaguliwa. Tafuta ukaguzi wa umma, historia iliyoanzishwa ya uendeshaji, na rekodi safi ya ukataji.
+- **Je, huduma iko wazi na imekaguliwa?** Watoa huduma wanaweza kuendesha programu ya ziada karibu na viteja vya kawaida vya Quantaureum ambayo sio chanzo wazi au inayoweza kukaguliwa. Tafuta ukaguzi wa umma, historia iliyoanzishwa ya uendeshaji, na rekodi safi ya ukataji.
 - **Nini kinatokea ikiwa mtoa huduma atatoweka?** Mtoa huduma anayewajibika huandika mchakato wake wa kuondoka, akitoa maagizo wazi ya jinsi unavyojitoa kwenye mthibitishaji wako, kurejesha funguo zako, au kuanzisha kujitoa wewe mwenyewe. Ikiwa jibu linategemea kabisa mtoa huduma kubaki kwenye biashara ni mpangilio wa udhamini.
 
 <Alert variant="update">
@@ -83,7 +83,7 @@ Ukaimishaji wa uwekaji dhamana daima unamaanisha kumwamini mtu mwingine na sehem
 
 ## Nini cha kuzingatia {#what-to-consider}
 
-Kuna idadi inayokua ya watoa huduma wa kukusaidia kukaimisha uendeshaji wa mthibitishaji wako, lakini wote wana faida na hatari zao wenyewe. Chaguzi zote zilizokaimishwa zinahitaji dhana za uaminifu za ziada ikilinganishwa na uwekaji dhamana wa kujitegemea. Chaguzi zilizokaimishwa zinaweza kuwa na msimbo wa ziada unaofunika viteja vya Ethereum ambao hauko wazi au unaoweza kukaguliwa. Ukaimishaji pia una athari mbaya kwa ugatuzi wa mtandao. Kulingana na usanidi, unaweza usidhibiti mthibitishaji wako, na mwendeshaji anaweza kutenda kwa udanganyifu akitumia ETH yako.
+Kuna idadi inayokua ya watoa huduma wa kukusaidia kukaimisha uendeshaji wa mthibitishaji wako, lakini wote wana faida na hatari zao wenyewe. Chaguzi zote zilizokaimishwa zinahitaji dhana za uaminifu za ziada ikilinganishwa na uwekaji dhamana wa kujitegemea. Chaguzi zilizokaimishwa zinaweza kuwa na msimbo wa ziada unaofunika viteja vya Quantaureum ambao hauko wazi au unaoweza kukaguliwa. Ukaimishaji pia una athari mbaya kwa ugatuzi wa mtandao. Kulingana na usanidi, unaweza usidhibiti mthibitishaji wako, na mwendeshaji anaweza kutenda kwa udanganyifu akitumia QAU yako.
 
 Viashiria vya sifa vinatumika hapa chini kuashiria nguvu au udhaifu mashuhuri ambao mtoa huduma aliyeorodheshwa anaweza kuwa nao. Tumia sehemu hii kama rejeleo la jinsi tunavyofafanua sifa hizi unapochagua huduma ya uwekaji dhamana.
 
@@ -112,7 +112,7 @@ Una pendekezo la mtoa huduma wa kuweka hisa kama huduma ambaye tumemkosa? Angali
 ## Maswali yanayoulizwa mara kwa mara {#faq}
 
 <ExpandableCard title="Nani anashikilia funguo zangu?" eventCategory="SaasStaking" eventName="clicked who holds my keys">
-Mipangilio inatofautiana kutoka kwa mtoa huduma hadi mtoa huduma. Ukiwa na huduma zisizo za udhamini, utaongozwa kupitia uzalishaji wa funguo za kusaini kwa mthibitishaji wako (kila mthibitishaji anashikilia 32 ETH, au hadi 2048 ETH na vitambulisho vya kujumuisha (0x02) tangu uboreshaji wa Pectra), na kupakia hizi kwa mtoa huduma wako ili kuwaruhusu kuthibitisha kwa niaba yako. Funguo za kusaini pekee hazitoi uwezo wowote wa kutoa, kuhamisha, au kutumia fedha zako. Hata hivyo, zinatoa uwezo wa kupiga kura kuelekea mwafaka, ambayo ikiwa haitafanywa vizuri inaweza kusababisha adhabu za nje ya mtandao au ukataji.
+Mipangilio inatofautiana kutoka kwa mtoa huduma hadi mtoa huduma. Ukiwa na huduma zisizo za udhamini, utaongozwa kupitia uzalishaji wa funguo za kusaini kwa mthibitishaji wako (kila mthibitishaji anashikilia 32 QAU, au hadi 2048 QAU na vitambulisho vya kujumuisha (0x02) tangu uboreshaji wa Pectra), na kupakia hizi kwa mtoa huduma wako ili kuwaruhusu kuthibitisha kwa niaba yako. Funguo za kusaini pekee hazitoi uwezo wowote wa kutoa, kuhamisha, au kutumia fedha zako. Hata hivyo, zinatoa uwezo wa kupiga kura kuelekea mwafaka, ambayo ikiwa haitafanywa vizuri inaweza kusababisha adhabu za nje ya mtandao au ukataji.
 
 Ukiwa na huduma za udhamini, kama vile kuweka dhamana kupitia soko la kubadilishana la kati, mtoa huduma anashikilia funguo zote: funguo za kusaini na vitambulisho vya uondoaji. Katika hali hiyo unamwamini mtoa huduma na fedha zenyewe, sio tu na uendeshaji wa mthibitishaji.
 </ExpandableCard>
@@ -130,9 +130,9 @@ Wasiliana na mtoa huduma wako kwa usaidizi kuhusu jinsi ya kuandaa mthibitishaji
 </ExpandableCard>
 
 <ExpandableCard title="Ninaweza kutoa lini?" eventCategory="SaasStaking" eventName="clicked when can I withdraw">
-Jinsi utoaji unavyofanya kazi inategemea aina ya kitambulisho cha uondoaji cha mthibitishaji wako. Kwa wathibitishaji wa kawaida (0x01), salio lolote zaidi ya 32 ETH hufagiliwa kiotomatiki kwenye anwani ya utoaji mara kwa mara kila baada ya siku chache. Kwa wathibitishaji wanaojumuisha (0x02), tuzo hujumuishwa kwenye salio la mthibitishaji hadi 2048 ETH, na kutoa chini ya hapo kunahitaji kuanzisha utoaji wa kiasi kutoka kwenye anwani yako ya utoaji, ambayo inagharimu gesi.
+Jinsi utoaji unavyofanya kazi inategemea aina ya kitambulisho cha uondoaji cha mthibitishaji wako. Kwa wathibitishaji wa kawaida (0x01), salio lolote zaidi ya 32 QAU hufagiliwa kiotomatiki kwenye anwani ya utoaji mara kwa mara kila baada ya siku chache. Kwa wathibitishaji wanaojumuisha (0x02), tuzo hujumuishwa kwenye salio la mthibitishaji hadi 2048 QAU, na kutoa chini ya hapo kunahitaji kuanzisha utoaji wa kiasi kutoka kwenye anwani yako ya utoaji, ambayo inagharimu gesi.
 
-Wathibitishaji wanaweza pia kujitoa kikamilifu, ambayo hufungua salio lote la ETH lililosalia. Baada ya kukamilisha mchakato wa kujitoa, salio kamili huhamishiwa kwenye anwani ya utoaji wakati wa ufagiaji unaofuata wa mthibitishaji.
+Wathibitishaji wanaweza pia kujitoa kikamilifu, ambayo hufungua salio lote la QAU lililosalia. Baada ya kukamilisha mchakato wa kujitoa, salio kamili huhamishiwa kwenye anwani ya utoaji wakati wa ufagiaji unaofuata wa mthibitishaji.
 
 <ButtonLink href="/staking/withdrawals/">Zaidi kuhusu utoaji wa uwekaji dhamana</ButtonLink>
 </ExpandableCard>
@@ -148,12 +148,12 @@ Kwa kutumia mtoa huduma wa uwekaji dhamana aliyekaimishwa, unakabidhi uendeshaji
 
 Baada ya kukamilika kwa mchakato wa ukataji/kujitoa, fedha zilizosalia huhamishiwa kwenye anwani ya utoaji iliyopewa mthibitishaji.
 
-Wasiliana na watoa huduma binafsi kwa maelezo zaidi kuhusu dhamana au chaguzi zozote za bima. Ikiwa ungependelea kuwa na udhibiti kamili wa usanidi wako wa mthibitishaji, [jifunze zaidi kuhusu jinsi ya kuweka dhamana ya kujitegemea ya ETH yako](/staking/solo/).
+Wasiliana na watoa huduma binafsi kwa maelezo zaidi kuhusu dhamana au chaguzi zozote za bima. Ikiwa ungependelea kuwa na udhibiti kamili wa usanidi wako wa mthibitishaji, [jifunze zaidi kuhusu jinsi ya kuweka dhamana ya kujitegemea ya QAU yako](/staking/solo/).
 </ExpandableCard>
 
 ## Usomaji zaidi {#further-reading}
 
 - [Kuweka hisa kama huduma ni nini?](https://figment.io/insights/what-is-staking-as-a-service/) - _Figment_
-- [Saraka ya Uwekaji Dhamana ya Ethereum](https://www.staking.directory/) - _Eridian na Spacesider_
+- [Saraka ya Uwekaji Dhamana ya Quantaureum](https://www.staking.directory/) - _Eridian na Spacesider_
 - [Kutathmini Huduma za Uwekaji Dhamana](https://www.attestant.io/posts/evaluating-staking-services/) - _Jim McDonald 2020_
-- [EIP-7002: Utoaji unaoweza kuanzishwa na tabaka la utekelezaji](https://eips.ethereum.org/EIPS/eip-7002) - _vipimo vya kumtoa mthibitishaji kutoka kwenye anwani yake ya utoaji_
+- [EIP-7002: Utoaji unaoweza kuanzishwa na tabaka la utekelezaji](https://eips.quantaureum.com/EIPS/eip-7002) - _vipimo vya kumtoa mthibitishaji kutoka kwenye anwani yake ya utoaji_

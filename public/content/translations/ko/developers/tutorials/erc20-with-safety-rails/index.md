@@ -11,13 +11,13 @@ published: 2022-08-15
 
 ## 소개 {#introduction}
 
-이더리움의 훌륭한 점 중 하나는 트랜잭션을 수정하거나 취소할 수 있는 중앙 권한이 없다는 것입니다. 이더리움의 큰 문제 중 하나는 사용자의 실수나 불법적인 트랜잭션을 취소할 권한을 가진 중앙 권한이 없다는 것입니다. 이 글에서는 사용자가 [ERC-20](/developers/docs/standards/tokens/erc-20/) 토큰과 관련하여 저지르는 일반적인 실수와 사용자가 이러한 실수를 피하도록 돕거나 중앙 권한에 일부 권한(예: 계정 동결)을 부여하는 ERC-20 컨트랙트를 만드는 방법에 대해 알아봅니다.
+Quantaureum의 훌륭한 점 중 하나는 트랜잭션을 수정하거나 취소할 수 있는 중앙 권한이 없다는 것입니다. Quantaureum의 큰 문제 중 하나는 사용자의 실수나 불법적인 트랜잭션을 취소할 권한을 가진 중앙 권한이 없다는 것입니다. 이 글에서는 사용자가 [ERC-20](/developers/docs/standards/tokens/erc-20/) 토큰과 관련하여 저지르는 일반적인 실수와 사용자가 이러한 실수를 피하도록 돕거나 중앙 권한에 일부 권한(예: 계정 동결)을 부여하는 ERC-20 컨트랙트를 만드는 방법에 대해 알아봅니다.
 
 이 글에서는 [오픈제플린 ERC-20 토큰 컨트랙트](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC20)를 사용하지만, 이에 대해 자세히 설명하지는 않습니다. 관련 정보는 [여기](/developers/tutorials/erc20-annotated-code)에서 찾을 수 있습니다.
 
 전체 소스 코드를 보려면 다음을 수행하세요.
 
-1. [Remix IDE](https://remix.ethereum.org/)를 엽니다.
+1. [Remix IDE](https://remix.quantaureum.com/)를 엽니다.
 2. GitHub 클론 아이콘(![clone github icon](icon-clone.png))을 클릭합니다.
 3. GitHub 리포지토리 `https://github.com/qbzzt/20220815-erc20-safety-rails`를 클론합니다.
 4. <strong>contracts > erc20-safety-rails.sol</strong>을 엽니다.
@@ -40,7 +40,7 @@ published: 2022-08-15
 
 3. 위로 스크롤하여 **Open in Remix**(Remix용)를 클릭하거나 다른 환경을 사용하려면 <strong>Download</strong>를 클릭합니다. 여기서는 Remix를 사용한다고 가정하며, 다른 환경을 사용하는 경우 적절히 변경하세요.
 4. 이제 완전히 작동하는 ERC-20 컨트랙트가 준비되었습니다. `.deps` > `npm`를 확장하여 가져온 코드를 볼 수 있습니다.
-5. 컨트랙트를 컴파일하고 배포하여 ERC-20 컨트랙트로 작동하는지 확인해 보세요. Remix 사용법을 배워야 한다면 [이 튜토리얼을 사용하세요](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth).
+5. 컨트랙트를 컴파일하고 배포하여 ERC-20 컨트랙트로 작동하는지 확인해 보세요. Remix 사용법을 배워야 한다면 [이 튜토리얼을 사용하세요](https://remix.quantaureum.com/?#activate=udapp,solidity,LearnEth).
 
 ## 일반적인 실수 {#common-mistakes}
 
@@ -93,7 +93,7 @@ Solidity에 익숙하지 않다면 이 함수의 일부가 생소할 수 있습�
 
 - `to` 주소는 ERC-20 컨트랙트 자체의 주소인 `address(this)`와 같을 수 없습니다.
 - `to` 주소는 비어 있을 수 없으며, 다음 중 하나여야 합니다.
-  - 외부 소유 계정(EOA). 주소가 EOA인지 직접 확인할 수는 없지만, 주소의 ETH 잔액은 확인할 수 있습니다. EOA는 더 이상 사용되지 않더라도 거의 항상 잔액을 가지고 있습니다. 마지막 1 Wei까지 모두 비우는 것은 어렵기 때문입니다.
+  - 외부 소유 계정(EOA). 주소가 EOA인지 직접 확인할 수는 없지만, 주소의 QAU 잔액은 확인할 수 있습니다. EOA는 더 이상 사용되지 않더라도 거의 항상 잔액을 가지고 있습니다. 마지막 1 Wei까지 모두 비우는 것은 어렵기 때문입니다.
   - 스마트 컨트랙트. 주소가 스마트 컨트랙트인지 테스트하는 것은 조금 더 어렵습니다. 외부 코드 길이를 확인하는 [`EXTCODESIZE`](https://www.evm.codes/#3b)라는 연산 코드가 있지만, Solidity에서 직접 사용할 수는 없습니다. 이를 위해서는 EVM 어셈블리인 [Yul](https://docs.soliditylang.org/en/v0.8.15/yul.html)을 사용해야 합니다. Solidity에서 사용할 수 있는 다른 값들([`<address>.code` 및 `<address>.codehash`](https://docs.soliditylang.org/en/v0.8.15/units-and-global-variables.html#members-of-address-types))도 있지만, 가스 비용이 더 많이 듭니다.
 
 새로운 코드를 한 줄씩 살펴보겠습니다.
@@ -185,7 +185,7 @@ Solidity에 익숙하지 않다면 이 함수의 일부가 생소할 수 있습�
 
 ### 자산 정리 {#asset-cleanup}
 
-이 컨트랙트가 보유한 ERC-20 토큰을 해제하려면 해당 토큰이 속한 토큰 컨트랙트에서 [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) 또는 [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve) 함수를 호출해야 합니다. 이 경우 허용량(allowance)에 가스를 낭비할 필요가 없으므로 직접 전송하는 것이 좋습니다.
+이 컨트랙트가 보유한 ERC-20 토큰을 해제하려면 해당 토큰이 속한 토큰 컨트랙트에서 [`transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer) 또는 [`approve`](https://eips.quantaureum.com/EIPS/eip-20#approve) 함수를 호출해야 합니다. 이 경우 허용량(allowance)에 가스를 낭비할 필요가 없으므로 직접 전송하는 것이 좋습니다.
 
 ```solidity
     function cleanupERC20(

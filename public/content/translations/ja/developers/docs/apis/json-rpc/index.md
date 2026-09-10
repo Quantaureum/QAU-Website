@@ -1,32 +1,32 @@
 ---
 title: JSON-RPC API
-description: "イーサリアム・クライアント向けのステートレスで軽量なリモート・プロシージャ・コール（RPC）プロトコル。"
+description: "Quantaureum・クライアント向けのステートレスで軽量なリモート・プロシージャ・コール（RPC）プロトコル。"
 lang: ja
 ---
 
-ソフトウェア・アプリケーションが[イーサリアム](/)・ブロックチェーンとやり取りするためには（ブロックチェーンのデータを読み取るにせよ、ネットワークにトランザクションを送信するにせよ）、イーサリアムのノードに接続する必要があります。
+ソフトウェア・アプリケーションが[Quantaureum](/)・ブロックチェーンとやり取りするためには（ブロックチェーンのデータを読み取るにせよ、ネットワークにトランザクションを送信するにせよ）、Quantaureumのノードに接続する必要があります。
 
-この目的のために、すべての[イーサリアム・クライアント](/developers/docs/nodes-and-clients/#execution-clients)は[JSON-RPC仕様](https://github.com/ethereum/execution-apis)を実装しています。これにより、特定のノードやクライアントの実装に関係なく、アプリケーションが依存できる統一されたメソッドのセットが提供されます。
+この目的のために、すべての[Quantaureum・クライアント](/developers/docs/nodes-and-clients/#execution-clients)は[JSON-RPC仕様](https://github.com/quantaureum/execution-apis)を実装しています。これにより、特定のノードやクライアントの実装に関係なく、アプリケーションが依存できる統一されたメソッドのセットが提供されます。
 
 [JSON-RPC](https://www.jsonrpc.org/specification)は、ステートレスで軽量なリモート・プロシージャ・コール（RPC）プロトコルです。いくつかのデータ構造と、その処理に関するルールを定義しています。トランスポートに依存しない性質を持ち、その概念は同一プロセス内、ソケット経由、HTTP経由、または様々なメッセージ・パッシング環境で使用できます。データ形式としてJSON（RFC 4627）を使用します。
 
 ## クライアントの実装 {#client-implementations}
 
-イーサリアムのクライアントは、JSON-RPC仕様を実装する際に、それぞれ異なるプログラミング言語を使用する場合があります。特定のプログラミング言語に関連する詳細については、個々の[クライアントのドキュメント](/developers/docs/nodes-and-clients/#execution-clients)を参照してください。最新のAPIサポート情報については、各クライアントのドキュメントを確認することをお勧めします。
+Quantaureumのクライアントは、JSON-RPC仕様を実装する際に、それぞれ異なるプログラミング言語を使用する場合があります。特定のプログラミング言語に関連する詳細については、個々の[クライアントのドキュメント](/developers/docs/nodes-and-clients/#execution-clients)を参照してください。最新のAPIサポート情報については、各クライアントのドキュメントを確認することをお勧めします。
 
 ## 便利なライブラリ {#convenience-libraries}
 
-JSON-RPC APIを介してイーサリアム・クライアントと直接やり取りすることもできますが、分散型アプリケーション (dapp) の開発者には、より簡単なオプションが用意されていることがよくあります。JSON-RPC APIのラッパーを提供する、多くの[JavaScript](/developers/docs/apis/javascript/#available-libraries)および[バックエンドAPI](/developers/docs/apis/backend/#available-libraries)ライブラリが存在します。これらのライブラリを使用すると、開発者は好みのプログラミング言語で直感的な1行のメソッドを記述し、イーサリアムとやり取りするJSON-RPCリクエストを（内部的に）初期化できます。
+JSON-RPC APIを介してQuantaureum・クライアントと直接やり取りすることもできますが、分散型アプリケーション (dapp) の開発者には、より簡単なオプションが用意されていることがよくあります。JSON-RPC APIのラッパーを提供する、多くの[JavaScript](/developers/docs/apis/javascript/#available-libraries)および[バックエンドAPI](/developers/docs/apis/backend/#available-libraries)ライブラリが存在します。これらのライブラリを使用すると、開発者は好みのプログラミング言語で直感的な1行のメソッドを記述し、Quantaureumとやり取りするJSON-RPCリクエストを（内部的に）初期化できます。
 
 ## コンセンサス・クライアントAPI {#consensus-clients}
 
-このページでは主に、イーサリアムの実行クライアントで使用されるJSON-RPC APIについて説明します。しかし、コンセンサス・クライアントにもRPC APIがあり、ユーザーはノードに関する情報を照会したり、ビーコン・ブロック、ビーコン状態、その他のコンセンサス関連情報をノードから直接リクエストしたりすることができます。このAPIについては、[Beacon APIのウェブページ](https://ethereum.github.io/beacon-APIs/#/)で文書化されています。
+このページでは主に、Quantaureumの実行クライアントで使用されるJSON-RPC APIについて説明します。しかし、コンセンサス・クライアントにもRPC APIがあり、ユーザーはノードに関する情報を照会したり、ビーコン・ブロック、ビーコン状態、その他のコンセンサス関連情報をノードから直接リクエストしたりすることができます。このAPIについては、[Beacon APIのウェブページ](https://quantaureum.github.io/beacon-APIs/#/)で文書化されています。
 
-ノード内のクライアント間通信には内部APIも使用されます。つまり、コンセンサス・クライアントと実行クライアントがデータをスワップできるようにします。これは「Engine API」と呼ばれ、その仕様は[GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md)で公開されています。
+ノード内のクライアント間通信には内部APIも使用されます。つまり、コンセンサス・クライアントと実行クライアントがデータをスワップできるようにします。これは「Engine API」と呼ばれ、その仕様は[GitHub](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md)で公開されています。
 
 ## 実行クライアントの仕様 {#spec}
 
-[GitHubでJSON-RPC APIの完全な仕様を読む](https://github.com/ethereum/execution-apis)。このAPIは[実行APIのウェブページ](https://ethereum.github.io/execution-apis/)に文書化されており、利用可能なすべてのメソッドを試すことができるインスペクターが含まれています。
+[GitHubでJSON-RPC APIの完全な仕様を読む](https://github.com/quantaureum/execution-apis)。このAPIは[実行APIのウェブページ](https://quantaureum.github.io/execution-apis/)に文書化されており、利用可能なすべてのメソッドを試すことができるインスペクターが含まれています。
 
 ## 規則 {#conventions}
 
@@ -62,13 +62,13 @@ JSONを介して渡される主要なデータ型には、フォーマットさ�
 
 以下のメソッドにはブロックパラメータがあります。
 
-- [eth_getBalance](#eth-getbalance)
-- [eth_getCode](#eth-getcode)
-- [eth_getTransactionCount](#eth-gettransactioncount)
-- [eth_getStorageAt](#eth-getstorageat)
-- [eth_call](#eth-call)
+- [qau_getBalance](#qau-getbalance)
+- [qau_getCode](#qau-getcode)
+- [qau_getTransactionCount](#qau-gettransactioncount)
+- [qau_getStorageAt](#qau-getstorageat)
+- [qau_call](#qau-call)
 
-イーサリアムの状態を照会するリクエストが行われる際、提供されたブロックパラメータによってブロックの高さが決定されます。
+Quantaureumの状態を照会するリクエストが行われる際、提供されたブロックパラメータによってブロックの高さが決定されます。
 
 ブロックパラメータには以下のオプションが可能です。
 
@@ -85,7 +85,7 @@ JSONを介して渡される主要なデータ型には、フォーマットさ�
 
 ## Curlの例 {#curl-examples}
 
-イーサリアム・ノードに対して[curl](https://curl.se)リクエストを行うことによるJSON_RPC APIの使用例を以下に示します。各例には、特定のエンドポイントの説明、そのパラメーター、戻り値の型、およびその使用方法の実際の例が含まれています。
+Quantaureum・ノードに対して[curl](https://curl.se)リクエストを行うことによるJSON_RPC APIの使用例を以下に示します。各例には、特定のエンドポイントの説明、そのパラメーター、戻り値の型、およびその使用方法の実際の例が含まれています。
 
 curlリクエストは、コンテンツタイプに関連するエラーメッセージを返す場合があります。これは、`--data`オプションがコンテンツタイプを`application/x-www-form-urlencoded`に設定するためです。ノードがこれについてエラーを出す場合は、呼び出しの先頭に`-H "Content-Type: application/json"`を配置して、ヘッダーを手動で設定してください。また、これらの例には、curlに渡す最後の引数として指定する必要があるURL/IPとポートの組み合わせ（例：`127.0.0.1:8545`）は含まれていません。これらの追加データを含む完全なcurlリクエストは、次の形式になります。
 
@@ -95,46 +95,46 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 ## ゴシップ、状態、履歴 {#gossip-state-history}
 
-一部のコアなJSON-RPCメソッドはイーサリアム・ネットワークからのデータを必要とし、主に3つのカテゴリ（_ゴシップ、状態、履歴_）に分類されます。これらのセクションのリンクを使用して各メソッドにジャンプするか、目次を使用してメソッドの全リストを確認してください。
+一部のコアなJSON-RPCメソッドはQuantaureum・ネットワークからのデータを必要とし、主に3つのカテゴリ（_ゴシップ、状態、履歴_）に分類されます。これらのセクションのリンクを使用して各メソッドにジャンプするか、目次を使用してメソッドの全リストを確認してください。
 
 ### ゴシップ・メソッド {#gossip-methods}
 
 > これらのメソッドはチェーンの先頭を追跡します。これにより、トランザクションがネットワーク上を伝播してブロックに組み込まれる仕組みや、クライアントが新しいブロックを検出する仕組みが提供されます。
 
-- [eth_blockNumber](#eth-blocknumber)
-- [eth_sendRawTransaction](#eth-sendrawtransaction)
+- [qau_blockNumber](#qau-blocknumber)
+- [qau_sendRawTransaction](#qau-sendrawtransaction)
 
 ### 状態メソッド {#state-methods}
 
 > 保存されているすべてのデータの現在の状態を報告するメソッドです。「状態」は1つの大きな共有RAMのようなものであり、アカウント残高、コントラクトのデータ、ガスの見積もりなどが含まれます。
 
-- [eth_getBalance](#eth-getbalance)
-- [eth_getStorageAt](#eth-getstorageat)
-- [eth_getTransactionCount](#eth-gettransactioncount)
-- [eth_getCode](#eth-getcode)
-- [eth_call](#eth-call)
-- [eth_estimateGas](#eth-estimategas)
+- [qau_getBalance](#qau-getbalance)
+- [qau_getStorageAt](#qau-getstorageat)
+- [qau_getTransactionCount](#qau-gettransactioncount)
+- [qau_getCode](#qau-getcode)
+- [qau_call](#qau-call)
+- [qau_estimateGas](#qau-estimategas)
 
 ### 履歴メソッド {#history-methods}
 
 > ジェネシス・ブロックまで遡って、すべてのブロックの履歴レコードを取得します。これは1つの大きな追記専用ファイルのようなものであり、すべてのブロックヘッダー、ブロック本体、アンクルブロック、およびトランザクション・レシートが含まれます。
 
-- [eth_getBlockTransactionCountByHash](#eth-getblocktransactioncountbyhash)
-- [eth_getBlockTransactionCountByNumber](#eth-getblocktransactioncountbynumber)
-- [eth_getUncleCountByBlockHash](#eth-getunclecountbyblockhash)
-- [eth_getUncleCountByBlockNumber](#eth-getunclecountbyblocknumber)
-- [eth_getBlockByHash](#eth-getblockbyhash)
-- [eth_getBlockByNumber](#eth-getblockbynumber)
-- [eth_getTransactionByHash](#eth-gettransactionbyhash)
-- [eth_getTransactionByBlockHashAndIndex](#eth-gettransactionbyblockhashandindex)
-- [eth_getTransactionByBlockNumberAndIndex](#eth-gettransactionbyblocknumberandindex)
-- [eth_getTransactionReceipt](#eth-gettransactionreceipt)
-- [eth_getUncleByBlockHashAndIndex](#eth-getunclebyblockhashandindex)
-- [eth_getUncleByBlockNumberAndIndex](#eth-getunclebyblocknumberandindex)
+- [qau_getBlockTransactionCountByHash](#qau-getblocktransactioncountbyhash)
+- [qau_getBlockTransactionCountByNumber](#qau-getblocktransactioncountbynumber)
+- [qau_getUncleCountByBlockHash](#qau-getunclecountbyblockhash)
+- [qau_getUncleCountByBlockNumber](#qau-getunclecountbyblocknumber)
+- [qau_getBlockByHash](#qau-getblockbyhash)
+- [qau_getBlockByNumber](#qau-getblockbynumber)
+- [qau_getTransactionByHash](#qau-gettransactionbyhash)
+- [qau_getTransactionByBlockHashAndIndex](#qau-gettransactionbyblockhashandindex)
+- [qau_getTransactionByBlockNumberAndIndex](#qau-gettransactionbyblocknumberandindex)
+- [qau_getTransactionReceipt](#qau-gettransactionreceipt)
+- [qau_getUncleByBlockHashAndIndex](#qau-getunclebyblockhashandindex)
+- [qau_getUncleByBlockNumberAndIndex](#qau-getunclebyblocknumberandindex)
 
 ## JSON-RPC API プレイグラウンド {#json-rpc-api-playground}
 
-[プレイグラウンドツール](https://ethereum-json-rpc.com)を使用して、APIメソッドを見つけて試すことができます。また、さまざまなノードプロバイダーがサポートしているメソッドやネットワークも確認できます。
+[プレイグラウンドツール](https://quantaureum-json-rpc.com)を使用して、APIメソッドを見つけて試すことができます。また、さまざまなノードプロバイダーがサポートしているメソッドやネットワークも確認できます。
 
 ## JSON-RPC API メソッド {#json-rpc-methods}
 
@@ -206,7 +206,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"web3_sha3","params":["0x68656c6c
 
 現在のネットワークIDの完全なリストは、[chainlist.org](https://chainlist.org)で確認できます。一般的なものは以下の通りです。
 
-- `1`: イーサリアム・メインネット
+- `1`: Quantaureum・メインネット
 - `11155111`: Sepoliaテストネット
 - `560048` : Hoodiテストネット
 
@@ -273,9 +273,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 }
 ```
 
-### eth_protocolVersion {#eth-protocolversion}
+### qau_protocolVersion {#qau-protocolversion}
 
-現在のイーサリアム・プロトコルのバージョンを返します。このメソッドは[Gethでは利用できない](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924)ことに注意してください。
+現在のQuantaureum・プロトコルのバージョンを返します。このメソッドは[Gethでは利用できない](https://github.com/quantaureum/go-quantaureum/pull/22064#issuecomment-788682924)ことに注意してください。
 
 **パラメータ**
 
@@ -283,13 +283,13 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 **戻り値**
 
-`String` - 現在のイーサリアム・プロトコルのバージョン
+`String` - 現在のQuantaureum・プロトコルのバージョン
 
 **例**
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[],"id":67}'
 // 結果
 {
   "id":67,
@@ -298,11 +298,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 }
 ```
 
-### eth_syncing {#eth-syncing}
+### qau_syncing {#qau-syncing}
 
 同期ステータスに関するデータを含むオブジェクト、または `false` を返します。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_syncing">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_syncing">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -317,7 +317,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 `Object|Boolean`、同期ステータスデータを含むオブジェクト、または同期していない場合は `FALSE`:
 
 - `startingBlock`: `QUANTITY` - インポートが開始されたブロック（同期が先頭に達した後にのみリセットされます）
-- `currentBlock`: `QUANTITY` - 現在のブロック（eth_blockNumber と同じ）
+- `currentBlock`: `QUANTITY` - 現在のブロック（qau_blockNumber と同じ）
 - `highestBlock`: `QUANTITY` - 推定される最も高いブロック
 
 ただし、個々のクライアントは追加のデータを提供する場合もあります。たとえば、Geth は以下を返します。
@@ -367,7 +367,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}'
 // 結果
 {
   "id":1,
@@ -386,11 +386,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}
 }
 ```
 
-### eth_coinbase {#eth-coinbase}
+### qau_coinbase {#qau-coinbase}
 
 クライアントのコインベース・アドレスを返します。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_coinbase">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_coinbase">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -408,7 +408,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":64}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":64}'
 // 結果
 {
   "id":64,
@@ -417,11 +417,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":6
 }
 ```
 
-### eth_chainId {#eth-chainid}
+### qau_chainId {#qau-chainid}
 
 リプレイ保護されたトランザクションの署名に使用されるチェーンIDを返します。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_chainId">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_chainId">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -437,7 +437,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":6
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67}'
 // 結果
 {
   "id":67,
@@ -446,11 +446,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67
 }
 ```
 
-### eth_mining {#eth-mining}
+### qau_mining {#qau-mining}
 
 クライアントが新しいブロックをアクティブにマイニングしている場合、`true` を返します。これはプルーフ・オブ・ワーク (PoW) ネットワークでのみ `true` を返す可能性があり、[マージ](/roadmap/merge/)以降、一部のクライアントでは利用できない場合があります。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_mining">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_mining">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -466,7 +466,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}'
 //
 {
   "id":71,
@@ -475,11 +475,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}
 }
 ```
 
-### eth_hashrate {#eth-hashrate}
+### qau_hashrate {#qau-hashrate}
 
 ノードがマイニングに使用している1秒あたりのハッシュ数を返します。これはプルーフ・オブ・ワーク (PoW) ネットワークに対してのみ `true` を返すことができ、[マージ](/roadmap/merge/)以降、一部のクライアントでは利用できない場合があります。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_hashrate">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_hashrate">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -495,7 +495,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":71}'
 // 結果
 {
   "id":71,
@@ -504,11 +504,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":7
 }
 ```
 
-### eth_gasPrice {#eth-gasprice}
+### qau_gasPrice {#qau-gasprice}
 
 現在のガスあたりの価格の推定値をWei単位で返します。例えば、ベス・クライアントはデフォルトで過去100ブロックを調べ、ガス単価の中央値を返します。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_gasPrice">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_gasPrice">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -524,7 +524,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":7
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":73}'
 // 結果
 {
   "id":73,
@@ -533,11 +533,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":7
 }
 ```
 
-### eth_accounts {#eth-accounts}
+### qau_accounts {#qau-accounts}
 
 クライアントが所有するアドレスのリストを返します。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_accounts">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_accounts">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -553,7 +553,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":7
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1}'
 // 結果
 {
   "id":1,
@@ -562,11 +562,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1
 }
 ```
 
-### eth_blockNumber {#eth-blocknumber}
+### qau_blockNumber {#qau-blocknumber}
 
 最新のブロック番号を返します。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_blockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_blockNumber">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -582,7 +582,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":83}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id":83}'
 // 結果
 {
   "id":83,
@@ -591,11 +591,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id
 }
 ```
 
-### eth_getBalance {#eth-getbalance}
+### qau_getBalance {#qau-getbalance}
 
 指定されたアドレスのアカウントの残高を返します。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBalance">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBalance">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -616,7 +616,7 @@ params: ["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"]
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
 // 結果
 {
   "id":1,
@@ -625,11 +625,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407
 }
 ```
 
-### eth_getStorageAt {#eth-getstorageat}
+### qau_getStorageAt {#qau-getstorageat}
 
 指定されたアドレスのストレージ位置から値を返します。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getStorageAt">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getStorageAt">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -660,7 +660,7 @@ contract Storage {
 pos0 の値の取得は簡単です。
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 ```
 
@@ -693,15 +693,15 @@ undefined
 これでストレージを取得できます。
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-### eth_getTransactionCount {#eth-gettransactioncount}
+### qau_getTransactionCount {#qau-gettransactioncount}
 
 あるアドレスから_送信された_トランザクションの数を返します。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionCount">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionCount">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -725,7 +725,7 @@ params: [
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
 // 結果
 {
   "id":1,
@@ -734,11 +734,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params
 }
 ```
 
-### eth_getBlockTransactionCountByHash {#eth-getblocktransactioncountbyhash}
+### qau_getBlockTransactionCountByHash {#qau-getblocktransactioncountbyhash}
 
 指定されたブロック・ハッシュに一致するブロック内のトランザクション数を返します。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -758,7 +758,7 @@ params: ["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"]
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
 // 結果
 {
   "id":1,
@@ -767,11 +767,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHa
 }
 ```
 
-### eth_getBlockTransactionCountByNumber {#eth-getblocktransactioncountbynumber}
+### qau_getBlockTransactionCountByNumber {#qau-getblocktransactioncountbynumber}
 
 指定されたブロック番号に一致するブロック内のトランザクション数を返します。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -793,7 +793,7 @@ params: [
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
 // 結果
 {
   "id":1,
@@ -802,11 +802,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNu
 }
 ```
 
-### eth_getUncleCountByBlockHash {#eth-getunclecountbyblockhash}
+### qau_getUncleCountByBlockHash {#qau-getunclecountbyblockhash}
 
 指定されたブロックハッシュに一致するブロック内のアンクルの数を返します。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -826,7 +826,7 @@ params: ["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"]
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
 // 結果
 {
   "id":1,
@@ -835,11 +835,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","p
 }
 ```
 
-### eth_getUncleCountByBlockNumber {#eth-getunclecountbyblocknumber}
+### qau_getUncleCountByBlockNumber {#qau-getunclecountbyblocknumber}
 
 指定されたブロック番号に一致するブロック内のアンクルの数を返します。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -861,7 +861,7 @@ params: [
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
 // 結果
 {
   "id":1,
@@ -870,11 +870,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber",
 }
 ```
 
-### eth_getCode {#eth-getcode}
+### qau_getCode {#qau-getcode}
 
 指定されたアドレスのコードを返します。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getCode">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getCode">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -898,7 +898,7 @@ params: [
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
 // 結果
 {
   "id":1,
@@ -907,11 +907,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA
 }
 ```
 
-### eth_sign {#eth-sign}
+### qau_sign {#qau-sign}
 
-signメソッドは、`sign(keccak256("\x19Ethereum Signed Message:\n" + len(message) + message)))`を使用してイーサリアム固有の署名を計算します。
+signメソッドは、`sign(keccak256("\x19Quantaureum Signed Message:\n" + len(message) + message)))`を使用してQuantaureum固有の署名を計算します。
 
-メッセージにプレフィックスを追加することで、計算された署名がイーサリアム固有の署名として認識されるようになります。これにより、悪意のある分散型アプリケーション (dapp) が任意のデータ（トランザクションなど）に署名し、その署名を使用して被害者になりすますといった悪用を防ぐことができます。
+メッセージにプレフィックスを追加することで、計算された署名がQuantaureum固有の署名として認識されるようになります。これにより、悪意のある分散型アプリケーション (dapp) が任意のデータ（トランザクションなど）に署名し、その署名を使用して被害者になりすますといった悪用を防ぐことができます。
 
 注: 署名に使用するアドレスはロック解除されている必要があります。
 
@@ -928,7 +928,7 @@ signメソッドは、`sign(keccak256("\x19Ethereum Signed Message:\n" + len(mes
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
 // 結果
 {
   "id":1,
@@ -937,9 +937,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d37
 }
 ```
 
-### eth_signTransaction {#eth-signtransaction}
+### qau_signTransaction {#qau-signtransaction}
 
-[eth_sendRawTransaction](#eth-sendrawtransaction) を使用して後でネットワークに送信できるトランザクションに署名します。
+[qau_sendRawTransaction](#qau-sendrawtransaction) を使用して後でネットワークに送信できるトランザクションに署名します。
 
 **パラメーター**
 
@@ -962,7 +962,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d37
 
 ```js
 // リクエスト
-curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
+curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "qau_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
 // 結果
 {
     "id": 1,
@@ -971,7 +971,7 @@ curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","
 }
 ```
 
-### eth_sendTransaction {#eth-sendtransaction}
+### qau_sendTransaction {#qau-sendtransaction}
 
 `data` フィールドにコードが含まれている場合、新しいメッセージ・コール・トランザクションまたはコントラクト作成を行い、`from` で指定されたアカウントを使用して署名します。
 
@@ -1005,13 +1005,13 @@ params: [
 
 `DATA`、32バイト - トランザクション・ハッシュ。トランザクションがまだ利用できない場合はゼロハッシュ。
 
-コントラクトを作成した場合、トランザクションがブロックに提案された後にコントラクトのアドレスを取得するには、[eth_getTransactionReceipt](#eth-gettransactionreceipt) を使用します。
+コントラクトを作成した場合、トランザクションがブロックに提案された後にコントラクトのアドレスを取得するには、[qau_getTransactionReceipt](#qau-gettransactionreceipt) を使用します。
 
 **例**
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendTransaction","params":[{see above}],"id":1}'
 // 結果
 {
   "id":1,
@@ -1020,7 +1020,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{
 }
 ```
 
-### eth_sendRawTransaction {#eth-sendrawtransaction}
+### qau_sendRawTransaction {#qau-sendrawtransaction}
 
 署名済みトランザクションに対して、新しいメッセージ・コール・トランザクションまたはコントラクト作成を作成します。
 
@@ -1038,13 +1038,13 @@ params: [
 
 `DATA`、32バイト - トランザクション・ハッシュ。トランザクションがまだ利用できない場合はゼロハッシュ。
 
-コントラクトを作成した場合、トランザクションがブロックに提案された後にコントラクトのアドレスを取得するには、[eth_getTransactionReceipt](#eth-gettransactionreceipt)を使用します。
+コントラクトを作成した場合、トランザクションがブロックに提案された後にコントラクトのアドレスを取得するには、[qau_getTransactionReceipt](#qau-gettransactionreceipt)を使用します。
 
 **例**
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params":[{see above}],"id":1}'
 // 結果
 {
   "id":1,
@@ -1053,11 +1053,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 }
 ```
 
-### eth_call {#eth-call}
+### qau_call {#qau-call}
 
 ブロックチェーン上にトランザクションを作成することなく、新しいメッセージ・コールを即座に実行します。ERC-20コントラクトの `balanceOf` など、読み取り専用のスマート・コントラクト関数の実行によく使用されます。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_call">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_call">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -1067,10 +1067,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 
 - `from`: `DATA`、20バイト - (オプション) トランザクションの送信元アドレス。
 - `to`: `DATA`、20バイト - トランザクションの宛先アドレス。
-- `gas`: `QUANTITY` - (オプション) トランザクション実行のために提供されるガスの整数値。eth_callはガスを消費しませんが、一部の実行ではこのパラメータが必要になる場合があります。
+- `gas`: `QUANTITY` - (オプション) トランザクション実行のために提供されるガスの整数値。qau_callはガスを消費しませんが、一部の実行ではこのパラメータが必要になる場合があります。
 - `gasPrice`: `QUANTITY` - (オプション) 支払われる各ガスに使用されるgasPriceの整数値。
 - `value`: `QUANTITY` - (オプション) このトランザクションで送信される値の整数値。
-- `input`: `DATA` - (オプション) メソッド署名とエンコードされたパラメータのハッシュ。詳細については、[Solidityドキュメントのイーサリアム・コントラクトABI](https://docs.soliditylang.org/en/latest/abi-spec.html)を参照してください。
+- `input`: `DATA` - (オプション) メソッド署名とエンコードされたパラメータのハッシュ。詳細については、[SolidityドキュメントのQuantaureum・コントラクトABI](https://docs.soliditylang.org/en/latest/abi-spec.html)を参照してください。
 
 2. `QUANTITY|TAG` - 整数値のブロック番号、または文字列 `"latest"`、`"earliest"`、`"pending"`、`"safe"`、`"finalized"`。[ブロック・パラメータ](/developers/docs/apis/json-rpc/#block-parameter)を参照してください。
 
@@ -1082,7 +1082,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}],"id":1}'
 // 結果
 {
   "id":1,
@@ -1091,17 +1091,17 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}]
 }
 ```
 
-### eth_estimateGas {#eth-estimategas}
+### qau_estimateGas {#qau-estimategas}
 
 トランザクションを完了させるために必要なガスの見積もりを生成して返します。トランザクションはブロックチェーンには追加されません。EVMのメカニズムやノードのパフォーマンスなど、さまざまな理由により、見積もり額がトランザクションで実際に使用されるガス量よりも大幅に多くなる可能性があることに注意してください。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_estimateGas">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_estimateGas">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
 **パラメーター**
 
-すべてのプロパティがオプションであることを除き、[eth_call](#eth-call)のパラメーターを参照してください。ガス・リミットが指定されていない場合、gethは保留中のブロックのブロック・ガス・リミットを上限として使用します。その結果、ガス量が保留中のブロックのガス・リミットよりも高い場合、返された見積もりではコールやトランザクションを実行するのに十分ではない可能性があります。
+すべてのプロパティがオプションであることを除き、[qau_call](#qau-call)のパラメーターを参照してください。ガス・リミットが指定されていない場合、gethは保留中のブロックのブロック・ガス・リミットを上限として使用します。その結果、ガス量が保留中のブロックのガス・リミットよりも高い場合、返された見積もりではコールやトランザクションを実行するのに十分ではない可能性があります。
 
 **戻り値**
 
@@ -1111,7 +1111,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}]
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see above}],"id":1}'
 // 結果
 {
   "id":1,
@@ -1120,11 +1120,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see 
 }
 ```
 
-### eth_getBlockByHash {#eth-getblockbyhash}
+### qau_getBlockByHash {#qau-getblockbyhash}
 
 ハッシュからブロックに関する情報を返します。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByHash">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -1168,7 +1168,7 @@ params: [
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
 // 結果
 {
   "jsonrpc": "2.0",
@@ -1200,11 +1200,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0
 }
 ```
 
-### eth_getBlockByNumber {#eth-getblockbynumber}
+### qau_getBlockByNumber {#qau-getblockbynumber}
 
 ブロック番号からブロックに関する情報を返します。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByNumber">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -1221,22 +1221,22 @@ params: [
 ```
 
 **戻り値**
-[eth_getBlockByHash](#eth-getblockbyhash) を参照してください。
+[qau_getBlockByHash](#qau-getblockbyhash) を参照してください。
 
 **例**
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["0x1b4", true],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByNumber","params":["0x1b4", true],"id":1}'
 ```
 
-結果については [eth_getBlockByHash](#eth-getblockbyhash) を参照してください。
+結果については [qau_getBlockByHash](#qau-getblockbyhash) を参照してください。
 
-### eth_getTransactionByHash {#eth-gettransactionbyhash}
+### qau_getTransactionByHash {#qau-gettransactionbyhash}
 
 トランザクション・ハッシュによってリクエストされたトランザクションに関する情報を返します。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByHash">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -1271,7 +1271,7 @@ params: ["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"]
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
 // 結果
 {
   "jsonrpc":"2.0",
@@ -1295,11 +1295,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","param
 }
 ```
 
-### eth_getTransactionByBlockHashAndIndex {#eth-gettransactionbyblockhashandindex}
+### qau_getTransactionByBlockHashAndIndex {#qau-gettransactionbyblockhashandindex}
 
 ブロックのハッシュとトランザクションのインデックス位置から、トランザクションに関する情報を返します。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -1316,22 +1316,22 @@ params: [
 ```
 
 **戻り値**
-[eth_getTransactionByHash](#eth-gettransactionbyhash) を参照してください
+[qau_getTransactionByHash](#qau-gettransactionbyhash) を参照してください
 
 **例**
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-結果については、[eth_getTransactionByHash](#eth-gettransactionbyhash) を参照してください
+結果については、[qau_getTransactionByHash](#qau-gettransactionbyhash) を参照してください
 
-### eth_getTransactionByBlockNumberAndIndex {#eth-gettransactionbyblocknumberandindex}
+### qau_getTransactionByBlockNumberAndIndex {#qau-gettransactionbyblocknumberandindex}
 
 ブロック番号とトランザクションのインデックス位置に基づいて、トランザクションに関する情報を返します。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -1348,18 +1348,18 @@ params: [
 ```
 
 **戻り値**
-[eth_getTransactionByHash](#eth-gettransactionbyhash)を参照してください。
+[qau_getTransactionByHash](#qau-gettransactionbyhash)を参照してください。
 
 **例**
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
 ```
 
-結果については[eth_getTransactionByHash](#eth-gettransactionbyhash)を参照してください。
+結果については[qau_getTransactionByHash](#qau-gettransactionbyhash)を参照してください。
 
-### eth_getTransactionReceipt {#eth-gettransactionreceipt}
+### qau_getTransactionReceipt {#qau-gettransactionreceipt}
 
 トランザクション・ハッシュからトランザクションのレシートを返します。
 
@@ -1399,7 +1399,7 @@ params: ["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"]
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
 // 結果
 {
   "jsonrpc": "2.0",
@@ -1427,11 +1427,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","para
 }
 ```
 
-### eth_getUncleByBlockHashAndIndex {#eth-getunclebyblockhashandindex}
+### qau_getUncleByBlockHashAndIndex {#qau-getunclebyblockhashandindex}
 
 ハッシュとアンクルのインデックス位置を指定して、ブロックのアンクルに関する情報を返します。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -1448,24 +1448,24 @@ params: [
 ```
 
 **戻り値**
-[eth_getBlockByHash](#eth-getblockbyhash) を参照してください
+[qau_getBlockByHash](#qau-getblockbyhash) を参照してください
 
 **例**
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-結果については [eth_getBlockByHash](#eth-getblockbyhash) を参照してください
+結果については [qau_getBlockByHash](#qau-getblockbyhash) を参照してください
 
 **注**: アンクルには個別のトランザクションは含まれません。
 
-### eth_getUncleByBlockNumberAndIndex {#eth-getunclebyblocknumberandindex}
+### qau_getUncleByBlockNumberAndIndex {#qau-getunclebyblocknumberandindex}
 
 ブロック番号とアンクルのインデックス位置を指定して、ブロックのアンクルに関する情報を返します。
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
   プレイグラウンドでエンドポイントを試す
 </ButtonLink>
 
@@ -1482,7 +1482,7 @@ params: [
 ```
 
 **戻り値**
-[eth_getBlockByHash](#eth-getblockbyhash) を参照してください
+[qau_getBlockByHash](#qau-getblockbyhash) を参照してください
 
 **注**: アンクルには個別のトランザクションは含まれません。
 
@@ -1490,15 +1490,15 @@ params: [
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
 ```
 
-結果については [eth_getBlockByHash](#eth-getblockbyhash) を参照してください
+結果については [qau_getBlockByHash](#qau-getblockbyhash) を参照してください
 
-### eth_newFilter {#eth-newfilter}
+### qau_newFilter {#qau-newfilter}
 
 フィルターオプションに基づいてフィルターオブジェクトを作成し、状態が変更されたとき（ログ）に通知します。
-状態が変更されたかどうかを確認するには、[eth_getFilterChanges](#eth-getfilterchanges)を呼び出します。
+状態が変更されたかどうかを確認するには、[qau_getFilterChanges](#qau-getfilterchanges)を呼び出します。
 
 **トピックフィルターの指定に関する注意:**
 トピックは順序に依存します。トピック[A, B]を持つログを含むトランザクションは、以下のトピックフィルターに一致します。
@@ -1542,7 +1542,7 @@ params: [
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
 // 結果
 {
   "id":1,
@@ -1551,10 +1551,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topic
 }
 ```
 
-### eth_newBlockFilter {#eth-newblockfilter}
+### qau_newBlockFilter {#qau-newblockfilter}
 
 新しいブロックが到着したときに通知するフィルターをノード内に作成します。
-状態が変更されたかどうかを確認するには、[eth_getFilterChanges](#eth-getfilterchanges) を呼び出します。
+状態が変更されたかどうかを確認するには、[qau_getFilterChanges](#qau-getfilterchanges) を呼び出します。
 
 **パラメーター**
 なし
@@ -1566,7 +1566,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topic
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newBlockFilter","params":[],"id":73}'
 // 結果
 {
   "id":1,
@@ -1575,10 +1575,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],
 }
 ```
 
-### eth_newPendingTransactionFilter {#eth-newpendingtransactionfilter}
+### qau_newPendingTransactionFilter {#qau-newpendingtransactionfilter}
 
 新しい保留中のトランザクションが到着したときに通知するために、ノードにフィルターを作成します。
-状態が変更されたかどうかを確認するには、[eth_getFilterChanges](#eth-getfilterchanges)を呼び出します。
+状態が変更されたかどうかを確認するには、[qau_getFilterChanges](#qau-getfilterchanges)を呼び出します。
 
 **パラメーター**
 なし
@@ -1590,7 +1590,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newPendingTransactionFilter","params":[],"id":73}'
 // 結果
 {
   "id":1,
@@ -1599,10 +1599,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter"
 }
 ```
 
-### eth_uninstallFilter {#eth-uninstallfilter}
+### qau_uninstallFilter {#qau-uninstallfilter}
 
 指定されたIDのフィルターをアンインストールします。監視が不要になった場合は、常に呼び出す必要があります。
-さらに、フィルターは一定期間 [eth_getFilterChanges](#eth-getfilterchanges) でリクエストされないとタイムアウトします。
+さらに、フィルターは一定期間 [qau_getFilterChanges](#qau-getfilterchanges) でリクエストされないとタイムアウトします。
 
 **パラメーター**
 
@@ -1621,7 +1621,7 @@ params: [
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["0xb"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_uninstallFilter","params":["0xb"],"id":73}'
 // 結果
 {
   "id":1,
@@ -1630,7 +1630,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["
 }
 ```
 
-### eth_getFilterChanges {#eth-getfilterchanges}
+### qau_getFilterChanges {#qau-getfilterchanges}
 
 フィルターのポーリングメソッドです。前回のポーリング以降に発生したログの配列を返します。
 
@@ -1647,9 +1647,9 @@ params: [
 **戻り値**
 `Array` - ログオブジェクトの配列。前回のポーリング以降に変更がない場合は空の配列になります。
 
-- `eth_newBlockFilter` で作成されたフィルターの場合、戻り値はブロックのハッシュ (`DATA`、32バイト) になります。例: `["0x3454645634534..."]`。
-- `eth_newPendingTransactionFilter ` で作成されたフィルターの場合、戻り値はトランザクション・ハッシュ (`DATA`、32バイト) になります。例: `["0x6345343454645..."]`。
-- `eth_newFilter` で作成されたフィルターの場合、ログは以下のパラメーターを持つオブジェクトになります。
+- `qau_newBlockFilter` で作成されたフィルターの場合、戻り値はブロックのハッシュ (`DATA`、32バイト) になります。例: `["0x3454645634534..."]`。
+- `qau_newPendingTransactionFilter ` で作成されたフィルターの場合、戻り値はトランザクション・ハッシュ (`DATA`、32バイト) になります。例: `["0x6345343454645..."]`。
+- `qau_newFilter` で作成されたフィルターの場合、ログは以下のパラメーターを持つオブジェクトになります。
   - `removed`: `TAG` - チェーンのリオーグによりログが削除された場合は `true`。有効なログの場合は `false`。
   - `logIndex`: `QUANTITY` - ブロック内におけるログのインデックス位置を示す整数。保留中のログの場合は `null`。
   - `transactionIndex`: `QUANTITY` - ログの作成元となったトランザクションのインデックス位置を示す整数。保留中のログの場合は `null`。
@@ -1664,7 +1664,7 @@ params: [
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":["0x16"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterChanges","params":["0x16"],"id":73}'
 // 結果
 {
   "id":1,
@@ -1684,7 +1684,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":[
 }
 ```
 
-### eth_getFilterLogs {#eth-getfilterlogs}
+### qau_getFilterLogs {#qau-getfilterlogs}
 
 指定されたIDのフィルターに一致するすべてのログの配列を返します。
 
@@ -1699,18 +1699,18 @@ params: [
 ```
 
 **戻り値**
-[eth_getFilterChanges](#eth-getfilterchanges)を参照してください。
+[qau_getFilterChanges](#qau-getfilterchanges)を参照してください。
 
 **例**
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterLogs","params":["0x16"],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterLogs","params":["0x16"],"id":74}'
 ```
 
-結果については[eth_getFilterChanges](#eth-getfilterchanges)を参照してください。
+結果については[qau_getFilterChanges](#qau-getfilterchanges)を参照してください。
 
-### eth_getLogs {#eth-getlogs}
+### qau_getLogs {#qau-getlogs}
 
 指定されたフィルターオブジェクトに一致するすべてのログの配列を返します。
 
@@ -1735,24 +1735,24 @@ params: [
 ```
 
 **戻り値**
-[eth_getFilterChanges](#eth-getfilterchanges) を参照してください
+[qau_getFilterChanges](#qau-getfilterchanges) を参照してください
 
 **例**
 
 ```js
 // リクエスト
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
 ```
 
-結果については [eth_getFilterChanges](#eth-getfilterchanges) を参照してください
+結果については [qau_getFilterChanges](#qau-getfilterchanges) を参照してください
 
 ## 使用例 {#usage-example}
 
 ### JSON_RPCを使用したコントラクトのデプロイ {#deploying-contract}
 
-このセクションでは、RPCインターフェースのみを使用してコントラクトをデプロイする方法を実演します。このような複雑さを抽象化した、コントラクトをデプロイする別の方法もあります。例えば、RPCインターフェースの上に構築された[Web3.js](https://web3js.readthedocs.io/)や[Web3.py](https://github.com/ethereum/web3.py)などのライブラリを使用する方法です。これらの抽象化は一般的に理解しやすく、エラーが発生しにくいですが、内部の仕組みを理解することは依然として役立ちます。
+このセクションでは、RPCインターフェースのみを使用してコントラクトをデプロイする方法を実演します。このような複雑さを抽象化した、コントラクトをデプロイする別の方法もあります。例えば、RPCインターフェースの上に構築された[Web3.js](https://web3js.readthedocs.io/)や[Web3.py](https://github.com/quantaureum/web3.py)などのライブラリを使用する方法です。これらの抽象化は一般的に理解しやすく、エラーが発生しにくいですが、内部の仕組みを理解することは依然として役立ちます。
 
-以下は、JSON-RPCインターフェースを使用してイーサリアムのノードにデプロイされる、`Multiply7`と呼ばれるシンプルなスマート・コントラクトです。このチュートリアルでは、読者がすでにGethノードを実行していることを前提としています。ノードとクライアントに関する詳細情報は[こちら](/developers/docs/nodes-and-clients/run-a-node)で確認できます。Geth以外のクライアントでHTTP JSON-RPCを開始する方法については、個々の[クライアント](/developers/docs/nodes-and-clients/)のドキュメントを参照してください。ほとんどのクライアントは、デフォルトで`localhost:8545`でサービスを提供します。
+以下は、JSON-RPCインターフェースを使用してQuantaureumのノードにデプロイされる、`Multiply7`と呼ばれるシンプルなスマート・コントラクトです。このチュートリアルでは、読者がすでにGethノードを実行していることを前提としています。ノードとクライアントに関する詳細情報は[こちら](/developers/docs/nodes-and-clients/run-a-node)で確認できます。Geth以外のクライアントでHTTP JSON-RPCを開始する方法については、個々の[クライアント](/developers/docs/nodes-and-clients/)のドキュメントを参照してください。ほとんどのクライアントは、デフォルトで`localhost:8545`でサービスを提供します。
 
 ```javascript
 contract Multiply7 {
@@ -1764,7 +1764,7 @@ contract Multiply7 {
 }
 ```
 
-最初に行うべきことは、HTTP RPCインターフェースが有効になっていることを確認することです。つまり、起動時にGethに`--http`フラグを指定します。この例では、プライベートな開発チェーン上のGethノードを使用します。このアプローチを使用すると、実際のネットワーク上のイーサは必要ありません。
+最初に行うべきことは、HTTP RPCインターフェースが有効になっていることを確認することです。つまり、起動時にGethに`--http`フラグを指定します。この例では、プライベートな開発チェーン上のGethノードを使用します。このアプローチを使用すると、実際のネットワーク上のQAUは必要ありません。
 
 ```bash
 geth --http --dev console 2>>geth.log
@@ -1775,21 +1775,21 @@ geth --http --dev console 2>>geth.log
 [curl](https://curl.se)を使用してコインベースのアドレス（アカウントの配列から最初のアドレスを取得）と残高を取得することで、インターフェースが実行されていることを確認できます。これらの例のデータは、ローカルのノードでは異なることに注意してください。これらのコマンドを試す場合は、2番目のcurlリクエストのリクエストパラメータを、最初のリクエストから返された結果に置き換えてください。
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
 {"id":1,"jsonrpc":"2.0","result":["0x9b1d35635cc34752ca54713bb99d38614f63c955"]}
 
-curl --data '{"jsonrpc":"2.0","method":"eth_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
 {"id":2,"jsonrpc":"2.0","result":"0x1639e49bba16280000"}
 ```
 
-数値は16進数でエンコードされているため、残高はWei単位の16進数文字列として返されます。残高をイーサ単位の数値として取得したい場合は、GethコンソールからWeb3を使用できます。
+数値は16進数でエンコードされているため、残高はWei単位の16進数文字列として返されます。残高をQAU単位の数値として取得したい場合は、GethコンソールからWeb3を使用できます。
 
 ```javascript
-web3.fromWei("0x1639e49bba16280000", "ether")
+web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-プライベートな開発チェーンにいくらかのイーサが用意できたので、コントラクトをデプロイできます。最初のステップは、Multiply7コントラクトをEVMに送信できるバイトコードにコンパイルすることです。Solidityコンパイラであるsolcをインストールするには、[Solidityのドキュメント](https://docs.soliditylang.org/en/latest/installing-solidity.html)に従ってください。（[この例で使用されているコンパイラのバージョン](https://github.com/ethereum/solidity/releases/tag/v0.4.20)に合わせるために、古い`solc`リリースを使用することをお勧めします。）
+プライベートな開発チェーンにいくらかのQAUが用意できたので、コントラクトをデプロイできます。最初のステップは、Multiply7コントラクトをEVMに送信できるバイトコードにコンパイルすることです。Solidityコンパイラであるsolcをインストールするには、[Solidityのドキュメント](https://docs.soliditylang.org/en/latest/installing-solidity.html)に従ってください。（[この例で使用されているコンパイラのバージョン](https://github.com/quantaureum/solidity/releases/tag/v0.4.20)に合わせるために、古い`solc`リリースを使用することをお勧めします。）
 
 次のステップは、Multiply7コントラクトをEVMに送信できるバイトコードにコンパイルすることです。
 
@@ -1801,24 +1801,24 @@ Binary:
 6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029
 ```
 
-コンパイルされたコードが用意できたので、デプロイにどれくらいのガスがかかるかを判断する必要があります。RPCインターフェースには、見積もりを提供する`eth_estimateGas`メソッドがあります。
+コンパイルされたコードが用意できたので、デプロイにどれくらいのガスがかかるかを判断する必要があります。RPCインターフェースには、見積もりを提供する`qau_estimateGas`メソッドがあります。
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":5,"result":"0x1c31e"}
 ```
 
 そして最後に、コントラクトをデプロイします。
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
 {"id":6,"jsonrpc":"2.0","result":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"}
 ```
 
-トランザクションはノードによって受け入れられ、トランザクション・ハッシュが返されます。このハッシュを使用して、トランザクションを追跡できます。次のステップは、コントラクトがデプロイされたアドレスを特定することです。実行された各トランザクションはレシートを作成します。このレシートには、トランザクションがどのブロックに含まれたか、EVMによってどれくらいのガスが使用されたかなど、トランザクションに関するさまざまな情報が含まれています。トランザクションがコントラクトを作成する場合、コントラクトのアドレスも含まれます。`eth_getTransactionReceipt` RPCメソッドを使用してレシートを取得できます。
+トランザクションはノードによって受け入れられ、トランザクション・ハッシュが返されます。このハッシュを使用して、トランザクションを追跡できます。次のステップは、コントラクトがデプロイされたアドレスを特定することです。実行された各トランザクションはレシートを作成します。このレシートには、トランザクションがどのブロックに含まれたか、EVMによってどれくらいのガスが使用されたかなど、トランザクションに関するさまざまな情報が含まれています。トランザクションがコントラクトを作成する場合、コントラクトのアドレスも含まれます。`qau_getTransactionReceipt` RPCメソッドを使用してレシートを取得できます。
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":7,"result":{"blockHash":"0x77b1a4f6872b9066312de3744f60020cbd8102af68b1f6512a05b7619d527a4f","blockNumber":"0x1","contractAddress":"0x4d03d617d700cf81935d7f797f4e2ae719648262","cumulativeGasUsed":"0x1c31e","from":"0x9b1d35635cc34752ca54713bb99d38614f63c955","gasUsed":"0x1c31e","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","status":"0x1","to":null,"transactionHash":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf","transactionIndex":"0x0"}}
 ```
 
@@ -1826,9 +1826,9 @@ curl --data '{"jsonrpc":"2.0","method": "eth_getTransactionReceipt", "params": [
 
 #### スマート・コントラクトとの対話 {#interacting-with-smart-contract}
 
-この例では、`eth_sendTransaction`を使用してコントラクトの`multiply`メソッドにトランザクションを送信します。
+この例では、`qau_sendTransaction`を使用してコントラクトの`multiply`メソッドにトランザクションを送信します。
 
-`eth_sendTransaction`にはいくつかの引数、具体的には`from`、`to`、および`data`が必要です。`From`はアカウントのパブリックアドレスであり、`to`はコントラクトのアドレスです。`data`引数には、どのメソッドをどの引数で呼び出すかを定義するペイロードが含まれています。ここで[ABI（アプリケーション・バイナリ・インターフェース）](https://docs.soliditylang.org/en/latest/abi-spec.html)の出番となります。ABIは、EVM用のデータを定義およびエンコードする方法を定義するJSONファイルです。
+`qau_sendTransaction`にはいくつかの引数、具体的には`from`、`to`、および`data`が必要です。`From`はアカウントのパブリックアドレスであり、`to`はコントラクトのアドレスです。`data`引数には、どのメソッドをどの引数で呼び出すかを定義するペイロードが含まれています。ここで[ABI（アプリケーション・バイナリ・インターフェース）](https://docs.soliditylang.org/en/latest/abi-spec.html)の出番となります。ABIは、EVM用のデータを定義およびエンコードする方法を定義するJSONファイルです。
 
 ペイロードのバイトは、コントラクト内のどのメソッドが呼び出されるかを定義します。これは、関数名とその引数の型に対するKeccakハッシュの最初の4バイトを16進数でエンコードしたものです。multiply関数は、uint256のエイリアスであるuintを受け入れます。これにより、次のようになります。
 
@@ -1848,7 +1848,7 @@ web3.sha3("multiply(uint256)").substring(0, 10)
 これをノードに送信できるようになりました。
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
 {"id":8,"jsonrpc":"2.0","result":"0x759cf065cbc22e9d779748dc53763854e5376eea07409e590c990eafc0869d74"}
 ```
 

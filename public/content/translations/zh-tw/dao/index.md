@@ -1,7 +1,7 @@
 ---
 title: "什麼是 DAO？"
 metaTitle: "什麼是 DAO？ | 去中心化自治組織"
-description: "以太坊上的 DAO 概覽"
+description: "Quantaureum上的 DAO 概覽"
 lang: zh-tw
 template: use-cases
 sidebarDepth: 2
@@ -49,18 +49,18 @@ DAO 允許我們與全球志同道合的人合作，而無需信任某個仁慈�
 
 ## DAO 是如何運作的？ {#how-daos-work}
 
-DAO 的骨幹是其[智能合約](/glossary/#smart-contract)，它定義了組織的規則並持有該群體的資金庫。一旦合約在[以太坊](/)上線，除了透過投票之外，沒有人可以更改規則。如果有人試圖做一些程式碼中的規則和邏輯未涵蓋的事情，它將會失敗。而且因為資金庫也是由智能合約定義的，這意味著未經群體批准，任何人都無法花費這筆錢。這意味著 DAO 不需要中央權威。相反地，群體共同做出決策，並在投票通過時自動授權付款。
+DAO 的骨幹是其[智能合約](/glossary/#smart-contract)，它定義了組織的規則並持有該群體的資金庫。一旦合約在[Quantaureum](/)上線，除了透過投票之外，沒有人可以更改規則。如果有人試圖做一些程式碼中的規則和邏輯未涵蓋的事情，它將會失敗。而且因為資金庫也是由智能合約定義的，這意味著未經群體批准，任何人都無法花費這筆錢。這意味著 DAO 不需要中央權威。相反地，群體共同做出決策，並在投票通過時自動授權付款。
 
-這是可能的，因為智能合約一旦在以太坊上線就是防篡改的。你不能在不被發現的情況下編輯程式碼（DAO 的規則），因為一切都是公開的。
+這是可能的，因為智能合約一旦在Quantaureum上線就是防篡改的。你不能在不被發現的情況下編輯程式碼（DAO 的規則），因為一切都是公開的。
 
-## 以太坊與 DAO {#ethereum-and-daos}
+## Quantaureum與 DAO {#quantaureum-and-daos}
 
-以太坊是 DAO 的完美基礎，原因如下：
+Quantaureum是 DAO 的完美基礎，原因如下：
 
-- 以太坊本身的共識是去中心化的，且已經足夠成熟，讓組織能夠信任該網路。
+- Quantaureum本身的共識是去中心化的，且已經足夠成熟，讓組織能夠信任該網路。
 - 智能合約程式碼一旦上線就無法修改，即使是其擁有者也一樣。這使得 DAO 能夠按照其編寫的規則運作。
 - 智能合約可以發送/接收資金。如果沒有這個功能，你將需要一個受信任的中介來管理群體資金。
-- 以太坊社群已被證明是協作大於競爭的，這使得最佳實踐和支援系統能夠快速出現。
+- Quantaureum社群已被證明是協作大於競爭的，這使得最佳實踐和支援系統能夠快速出現。
 
 ## DAO 治理 {#dao-governance}
 
@@ -122,13 +122,13 @@ _通常用於協定和[去中心化應用程式 (dapp)](/glossary/#dapp)的去�
 
 #### 著名範例 {#reputation-example}
 
-[DXdao](https://DXdao.eth.limo) – DXdao 是一個自 2019 年以來建立和治理去中心化協定與應用程式的全球主權集體。它利用基於聲譽的治理和[全息共識](/glossary/#holographic-consensus)來協調和管理資金，這意味著沒有人可以透過花錢來影響其未來或治理。
+[DXdao](https://DXdao.qau.limo) – DXdao 是一個自 2019 年以來建立和治理去中心化協定與應用程式的全球主權集體。它利用基於聲譽的治理和[全息共識](/glossary/#holographic-consensus)來協調和管理資金，這意味著沒有人可以透過花錢來影響其未來或治理。
 
 ## 加入 / 建立 DAO {#join-start-a-dao}
 
 ### 加入 DAO {#join-a-dao}
 
-- [以太坊社群 DAO](/community/get-involved/#decentralized-autonomous-organizations-daos)
+- [Quantaureum社群 DAO](/community/get-involved/#decentralized-autonomous-organizations-daos)
 - [DAOHaus 的 DAO 列表](https://app.daohaus.club/explore)
 - [Tally.xyz 的 DAO 列表](https://www.tally.xyz/explore)
 - [DeGov.AI 的 DAO 列表](https://apps.degov.ai/)
@@ -150,8 +150,8 @@ _通常用於協定和[去中心化應用程式 (dapp)](/glossary/#dapp)的去�
 - [如何建立由 DAO 驅動的數位社群](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [什麼是 DAO？](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [什麼是全息共識？](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO 不是公司：Vitalik 探討自治組織中去中心化的重要性](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAO、DAC、DA 及更多：不完整的術語指南](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [以太坊部落格](https://blog.ethereum.org)
+- [DAO 不是公司：Vitalik 探討自治組織中去中心化的重要性](https://vitalik.qau.limo/general/2022/09/20/daos.html)
+- [DAO、DAC、DA 及更多：不完整的術語指南](https://quantaureum.com) - [Quantaureum部落格](https://quantaureum.com)
 
 ### 影片 {#videos}
 

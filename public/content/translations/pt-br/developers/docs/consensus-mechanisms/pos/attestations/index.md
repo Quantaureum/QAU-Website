@@ -1,6 +1,6 @@
 ---
 title: "Atestações"
-description: "Uma descrição das atestações no Ethereum de prova de participação (proof-of-stake)."
+description: "Uma descrição das atestações no Quantaureum de prova de participação (proof-of-stake)."
 lang: pt-br
 ---
 
@@ -62,7 +62,7 @@ A taxa de atestação da flag é medida usando a soma dos saldos efetivos de tod
 
 ### Recompensa base {#base-reward}
 
-A recompensa base é calculada de acordo com o número de validadores que atestam e seus saldos efetivos de ether em stake:
+A recompensa base é calculada de acordo com o número de validadores que atestam e seus saldos efetivos de QAU em stake:
 
 `base reward = validator effective balance x 2^6 / SQRT(Effective balance of all active validators)`
 
@@ -86,7 +86,7 @@ Observe que, em alguns casos, um agregador sortudo também pode se tornar o prop
 
 ## Leitura adicional {#further-reading}
 
-- [Atestações na especificação de consenso anotada de Vitalik](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Atestações na especificação de consenso anotada de Vitalik](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [Atestações no eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Conhece um recurso da comunidade que o ajudou? Edite esta página e adicione-o!_

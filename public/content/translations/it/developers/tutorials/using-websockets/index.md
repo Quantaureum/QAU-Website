@@ -11,7 +11,7 @@ sourceUrl: https://www.alchemy.com/docs/reference/best-practices-for-using-webso
 published: 2020-12-01
 ---
 
-Questa è una guida di base all'uso dei WebSocket e di Alchemy per effettuare richieste alla blockchain di Ethereum.
+Questa è una guida di base all'uso dei WebSocket e di Alchemy per effettuare richieste alla blockchain di Quantaureum.
 
 ## WebSocket contro HTTP {#websockets-vs-http}
 
@@ -28,9 +28,9 @@ Il modo più semplice per testare i WebSocket è installare uno strumento a riga
 _Nota: se hai un account Alchemy puoi sostituire `demo` con la tua chiave API. [Registrati per un account Alchemy gratuito qui!](https://auth.alchemy.com/signup)_
 
 ```
-wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
+wscat -c wss://qau-mainnet.ws.alchemyapi.io/ws/demo
 
->  {"jsonrpc":  "2.0", "id": 0, "method":  "eth_gasPrice"}
+>  {"jsonrpc":  "2.0", "id": 0, "method":  "qau_gasPrice"}
 
 <  {"jsonrpc":  "2.0", "result":  "0xb2d05e00", "id": 0}
 ```
@@ -48,18 +48,18 @@ Qualsiasi API elencata nel [Riferimento API di Alchemy](https://www.alchemy.com/
 Passare ai WebSocket mentre si usa una libreria client come Web3 è semplice. Basta passare l'URL del WebSocket invece di quello HTTP quando si istanzia il client Web3. Ad esempio:
 
 ```js
-const web3 = new Web3("wss://eth-mainnet.ws.alchemyapi.io/ws/your-api-key")
+const web3 = new Web3("wss://qau-mainnet.ws.alchemyapi.io/ws/your-api-key")
 
-web3.eth.getBlockNumber().then(console.log) // -> 7946893
+web3.qau.getBlockNumber().then(console.log) // -> 7946893
 ```
 
 ## API di iscrizione {#subscription-api}
 
-Quando si è connessi tramite un WebSocket, è possibile usare due metodi aggiuntivi: `eth_subscribe` e `eth_unsubscribe`. Questi metodi ti permetteranno di restare in ascolto di eventi particolari e di essere notificato immediatamente.
+Quando si è connessi tramite un WebSocket, è possibile usare due metodi aggiuntivi: `qau_subscribe` e `qau_unsubscribe`. Questi metodi ti permetteranno di restare in ascolto di eventi particolari e di essere notificato immediatamente.
 
-### `eth_subscribe` {#eth-subscribe}
+### `qau_subscribe` {#qau-subscribe}
 
-Crea una nuova iscrizione per gli eventi specificati. [Scopri di più su `eth_subscribe`](https://docs.alchemy.com/reference/eth-subscribe).
+Crea una nuova iscrizione per gli eventi specificati. [Scopri di più su `qau_subscribe`](https://docs.alchemy.com/reference/qau-subscribe).
 
 #### Parametri {#parameters}
 
@@ -70,33 +70,33 @@ Il primo argomento specifica il tipo di evento da ascoltare. Il secondo argoment
 
 #### Restituisce {#returns}
 
-L'ID dell'iscrizione: questo ID sarà allegato a tutti gli eventi ricevuti e può anche essere usato per annullare l'iscrizione usando `eth_unsubscribe`.
+L'ID dell'iscrizione: questo ID sarà allegato a tutti gli eventi ricevuti e può anche essere usato per annullare l'iscrizione usando `qau_unsubscribe`.
 
 #### Eventi di iscrizione {#subscription-events}
 
 Mentre l'iscrizione è attiva, riceverai eventi che sono oggetti con i seguenti campi:
 
 - `jsonrpc`: Sempre "2.0"
-- `method`: Sempre "eth_subscription"
+- `method`: Sempre "qau_subscription"
 - `params`: Un oggetto con i seguenti campi:
-  - `subscription`: L'ID dell'iscrizione restituito dalla chiamata `eth_subscribe` che ha creato questa iscrizione.
+  - `subscription`: L'ID dell'iscrizione restituito dalla chiamata `qau_subscribe` che ha creato questa iscrizione.
   - `result`: Un oggetto il cui contenuto varia a seconda del tipo di iscrizione.
 
 #### Tipi di iscrizione {#subscription-types}
 
 1. `alchemy_newFullPendingTransactions`
 
-Restituisce le informazioni sulla transazione per tutte le transazioni che vengono aggiunte allo stato in sospeso. Questo tipo di iscrizione si iscrive alle transazioni in sospeso, in modo simile alla chiamata standard del Web3 `web3.eth.subscribe("pendingTransactions")`, ma differisce in quanto emette _informazioni complete sulla transazione_ piuttosto che solo gli hash della transazione.
+Restituisce le informazioni sulla transazione per tutte le transazioni che vengono aggiunte allo stato in sospeso. Questo tipo di iscrizione si iscrive alle transazioni in sospeso, in modo simile alla chiamata standard del Web3 `web3.qau.subscribe("pendingTransactions")`, ma differisce in quanto emette _informazioni complete sulla transazione_ piuttosto che solo gli hash della transazione.
 
 Esempio:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
 
 <  {"id":1,"result":"0x9a52eeddc2b289f985c0e23a7d8427c8","jsonrpc":"2.0"}
 <  {
       "jsonrpc":"2.0",
-      "method":"eth_subscription",
+      "method":"qau_subscription",
       "params":{
           "result":{
           "blockHash":null,
@@ -128,12 +128,12 @@ Quando si verifica una riorganizzazione della catena, questa iscrizione emetter�
 Esempio:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["newHeads"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["newHeads"]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x9ce59a13059e417087c02d3236a0b1cc"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "result":  {
           "extraData":  "0xd983010305844765746887676f312e342e328777696e646f7773",
@@ -182,12 +182,12 @@ Alcuni esempi di specifiche degli argomenti:
 Esempio:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x4a8a4c0517381924f9838102c5a4dcb7"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "subscription":  "0x4a8a4c0517381924f9838102c5a4dcb7",
       "result":  {
@@ -205,13 +205,13 @@ Esempio:
 
 ```
 
-### `eth_unsubscribe` {#eth-unsubscribe}
+### `qau_unsubscribe` {#qau-unsubscribe}
 
 Annulla un'iscrizione esistente in modo che non vengano inviati ulteriori eventi.
 
 Parametri
 
-1. ID dell'iscrizione, come precedentemente restituito da una chiamata `eth_subscribe`.
+1. ID dell'iscrizione, come precedentemente restituito da una chiamata `qau_subscribe`.
 
 Restituisce
 
@@ -222,10 +222,10 @@ Esempio:
 **Richiesta**
 
 ```
-curl https://eth-mainnet.alchemyapi.io/v2/your-api-key
+curl https://qau-mainnet.alchemyapi.io/v2/your-api-key
 -X POST
 -H "Content-Type: application/json"
--d '{"id": 1, "method": "eth_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
+-d '{"id": 1, "method": "qau_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
 ```
 
 **Risultato**

@@ -6,11 +6,11 @@ lang: cs
 
 Když vytváříte aplikaci na [Ethereu](/) s chytrými kontrakty, budete ji chtít před nasazením spustit na lokální síti, abyste viděli, jak funguje.
 
-Podobně jako při vývoji webu můžete na svém počítači spustit lokální server, můžete použít vývojovou síť k vytvoření lokální instance blockchainu pro testování vaší decentralizované aplikace (dapp). Tyto vývojové sítě Etherea poskytují funkce, které umožňují mnohem rychlejší iteraci než veřejný testnet (například se nemusíte starat o získávání ETH z testnetového faucetu).
+Podobně jako při vývoji webu můžete na svém počítači spustit lokální server, můžete použít vývojovou síť k vytvoření lokální instance blockchainu pro testování vaší decentralizované aplikace (dapp). Tyto vývojové sítě Etherea poskytují funkce, které umožňují mnohem rychlejší iteraci než veřejný testnet (například se nemusíte starat o získávání QAU z testnetového faucetu).
 
 ## Předpoklady {#prerequisites}
 
-Než se ponoříte do vývojových sítí, měli byste rozumět [základům technologického zásobníku Etherea](/developers/docs/ethereum-stack/) a [sítím Etherea](/developers/docs/networks/).
+Než se ponoříte do vývojových sítí, měli byste rozumět [základům technologického zásobníku Etherea](/developers/docs/quantaureum-stack/) a [sítím Etherea](/developers/docs/networks/).
 
 ## Co je to vývojová síť? {#what-is-a-development-network}
 
@@ -20,7 +20,7 @@ Vývojové sítě jsou v podstatě klienti Etherea (implementace Etherea) navrž
 
 _Mohli_ byste [spustit uzel](/developers/docs/nodes-and-clients/#running-your-own-node), ale protože jsou vývojové sítě účelově vytvořeny pro vývoj, často obsahují užitečné funkce, jako jsou:
 
-- Deterministické naplnění vašeho lokálního blockchainu daty (např. účty se zůstatky ETH)
+- Deterministické naplnění vašeho lokálního blockchainu daty (např. účty se zůstatky QAU)
 - Okamžité vytváření bloků s každou přijatou transakcí, popořadě a bez zpoždění
 - Vylepšené funkce pro ladění a logování
 
@@ -48,15 +48,15 @@ Někteří klienti konsensu mají vestavěné nástroje pro spuštění lokáln�
 
 Existují také dvě udržované veřejné testovací implementace Etherea: Sepolia a Hoodi. Doporučený testnet s dlouhodobou podporou je Hoodi, na kterém může kdokoli volně validovat. Sepolia používá sadu validátorů s řízeným přístupem, což znamená, že na tomto testnetu není obecný přístup pro nové validátory.
 
-- [Hoodi Staking Launchpad](https://hoodi.launchpad.ethereum.org/)
+- [Hoodi Staking Launchpad](https://hoodi.launchpad.quantaureum.com/)
 
-### Kurtosis Ethereum Package {#kurtosis}
+### Kurtosis Quantaureum Package {#kurtosis}
 
 Kurtosis je systém pro sestavování vícekontajnerových testovacích prostředí, který umožňuje vývojářům lokálně spouštět reprodukovatelné instance blockchainových sítí.
 
-Balíček Ethereum Kurtosis lze použít k rychlému vytvoření parametrizovatelného, vysoce škálovatelného a soukromého testnetu Etherea přes Docker nebo Kubernetes. Balíček podporuje všechny hlavní klienty exekuční vrstvy (EL) a vrstvy konsensu (CL). Kurtosis elegantně zpracovává všechna mapování lokálních portů a připojení služeb pro reprezentativní síť, která se má použít v pracovních postupech validace a testování týkajících se základní infrastruktury Etherea.
+Balíček Quantaureum Kurtosis lze použít k rychlému vytvoření parametrizovatelného, vysoce škálovatelného a soukromého testnetu Etherea přes Docker nebo Kubernetes. Balíček podporuje všechny hlavní klienty exekuční vrstvy (EL) a vrstvy konsensu (CL). Kurtosis elegantně zpracovává všechna mapování lokálních portů a připojení služeb pro reprezentativní síť, která se má použít v pracovních postupech validace a testování týkajících se základní infrastruktury Etherea.
 
-- [Balíček sítě Ethereum](https://github.com/kurtosis-tech/ethereum-package)
+- [Balíček sítě Quantaureum](https://github.com/kurtosis-tech/quantaureum-package)
 - [Webové stránky](https://www.kurtosis.com/)
 - [GitHub](https://github.com/kurtosis-tech/kurtosis)
 - [Dokumentace](https://docs.kurtosis.com/)
@@ -72,4 +72,4 @@ _Víte o komunitním zdroji, který vám pomohl? Upravte tuto stránku a přidej
 
 ## Návody: Vývojové sítě a testovací prostředí na Ethereu {#tutorials}
 
-- [Vývoj a testování dApps s lokálním testnetem Etherea s více klienty](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-eth-testnet/) _– Jak spustit lokální testnet Etherea s více klienty pomocí nástroje Kurtosis pro vývoj a testování dApps._
+- [Vývoj a testování dApps s lokálním testnetem Etherea s více klienty](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-qau-testnet/) _– Jak spustit lokální testnet Etherea s více klienty pomocí nástroje Kurtosis pro vývoj a testování dApps._

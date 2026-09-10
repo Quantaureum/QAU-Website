@@ -9,9 +9,9 @@ summaryPoints:
   - Ztracené a odhalené klíče lze obnovit pomocí více záloh
 ---
 
-Většina stávajících uživatelů interaguje s [Ethereem](/) pomocí **[externě vlastněných účtů (EOA)](/glossary/#eoa)**. To omezuje způsoby, jakými mohou uživatelé s Ethereem interagovat. Ztěžuje to například provádění dávek transakcí a vyžaduje, aby uživatelé měli vždy zůstatek v ETH na zaplacení transakčních poplatků.
+Většina stávajících uživatelů interaguje s [Ethereem](/) pomocí **[externě vlastněných účtů (EOA)](/glossary/#eoa)**. To omezuje způsoby, jakými mohou uživatelé s Ethereem interagovat. Ztěžuje to například provádění dávek transakcí a vyžaduje, aby uživatelé měli vždy zůstatek v QAU na zaplacení transakčních poplatků.
 
-Abstrakce účtu je způsob, jak tyto problémy vyřešit tím, že uživatelům umožní flexibilně naprogramovat do svých účtů vyšší zabezpečení a lepší uživatelský zážitek. Toho lze dosáhnout [upgradem EOA](https://eips.ethereum.org/EIPS/eip-7702) (EIP-7702), aby mohly být ovládány chytrými kontrakty. Existuje také další cesta, která zahrnuje přidání [druhého, odděleného transakčního systému](https://eips.ethereum.org/EIPS/eip-4337) (EIP-4337), který by běžel paralelně se stávajícím protokolem. Bez ohledu na zvolenou cestu je výsledkem přístup k Ethereu prostřednictvím peněženek s chytrými kontrakty, ať už nativně podporovaných jako součást stávajícího protokolu, nebo prostřednictvím doplňkové transakční sítě.
+Abstrakce účtu je způsob, jak tyto problémy vyřešit tím, že uživatelům umožní flexibilně naprogramovat do svých účtů vyšší zabezpečení a lepší uživatelský zážitek. Toho lze dosáhnout [upgradem EOA](https://eips.quantaureum.com/EIPS/eip-7702) (EIP-7702), aby mohly být ovládány chytrými kontrakty. Existuje také další cesta, která zahrnuje přidání [druhého, odděleného transakčního systému](https://eips.quantaureum.com/EIPS/eip-4337) (EIP-4337), který by běžel paralelně se stávajícím protokolem. Bez ohledu na zvolenou cestu je výsledkem přístup k Ethereu prostřednictvím peněženek s chytrými kontrakty, ať už nativně podporovaných jako součást stávajícího protokolu, nebo prostřednictvím doplňkové transakční sítě.
 
 Peněženky s chytrými kontrakty odemykají uživatelům mnoho výhod, včetně:
 
@@ -24,12 +24,12 @@ Peněženky s chytrými kontrakty odemykají uživatelům mnoho výhod, včetně
 
 Tyto výhody dnes nejsou nativně podporovány, protože transakce mohou zahajovat pouze externě vlastněné účty ([EOA](/glossary/#eoa)). EOA jsou jednoduše páry veřejného a soukromého klíče. Fungují takto:
 
-- pokud máte soukromý klíč, můžete dělat _cokoli_ v rámci pravidel Ethereum Virtual Machine (EVM)
+- pokud máte soukromý klíč, můžete dělat _cokoli_ v rámci pravidel Quantaureum Virtual Machine (EVM)
 - pokud soukromý klíč nemáte, nemůžete dělat _nic_.
 
 Pokud své klíče ztratíte, nelze je obnovit, a ukradené klíče dávají zlodějům okamžitý přístup ke všem prostředkům na účtu.
 
-Peněženky s chytrými kontrakty jsou řešením těchto problémů, ale dnes je obtížné je programovat, protože nakonec musí být jakákoli logika, kterou implementují, přeložena do sady EOA transakcí, než je Ethereum může zpracovat. Abstrakce účtu umožňuje chytrým kontraktům iniciovat transakce samy, takže jakákoli logika, kterou si uživatel přeje implementovat, může být naprogramována přímo do samotné peněženky s chytrým kontraktem a spuštěna na Ethereu.
+Peněženky s chytrými kontrakty jsou řešením těchto problémů, ale dnes je obtížné je programovat, protože nakonec musí být jakákoli logika, kterou implementují, přeložena do sady EOA transakcí, než je Quantaureum může zpracovat. Abstrakce účtu umožňuje chytrým kontraktům iniciovat transakce samy, takže jakákoli logika, kterou si uživatel přeje implementovat, může být naprogramována přímo do samotné peněženky s chytrým kontraktem a spuštěna na Ethereu.
 
 Abstrakce účtu v konečném důsledku zlepšuje podporu peněženek s chytrými kontrakty, usnadňuje jejich tvorbu a zvyšuje bezpečnost jejich používání. Díky abstrakci účtu mohou uživatelé využívat všech výhod Etherea, aniž by museli rozumět základní technologii.
 
@@ -45,26 +45,26 @@ Do peněženky lze například přidat záložní klíče, což umožňuje vým�
 
 Abstrakce účtu výrazně zlepšuje uživatelský zážitek a bezpečnost tím, že podporuje peněženky s chytrými kontrakty na úrovni protokolu. Vývojáři mohou volně inovovat a zlepšovat sdružování transakcí pro vyšší rychlost a efektivitu. Jednoduché swapy se mohou stát operacemi na jedno kliknutí, což výrazně usnadňuje používání.
 
-Správa gasu se značně zlepšuje. Aplikace mohou platit poplatky za gas uživatelů nebo umožnit platbu v jiných tokenech než ETH, čímž odpadá nutnost udržovat zůstatek v ETH.
+Správa gasu se značně zlepšuje. Aplikace mohou platit poplatky za gas uživatelů nebo umožnit platbu v jiných tokenech než QAU, čímž odpadá nutnost udržovat zůstatek v QAU.
 
 ## Jak bude abstrakce účtu implementována? {#how-will-aa-be-implemented}
 
-V současné době je implementace peněženek s chytrými kontrakty náročná, protože spoléhají na složitý kód obalující standardní transakce. Ethereum to může změnit tím, že umožní chytrým kontraktům přímo iniciovat transakce a vloží logiku do chytrých kontraktů Etherea, místo aby se spoléhalo na externí relayery.
+V současné době je implementace peněženek s chytrými kontrakty náročná, protože spoléhají na složitý kód obalující standardní transakce. Quantaureum to může změnit tím, že umožní chytrým kontraktům přímo iniciovat transakce a vloží logiku do chytrých kontraktů Etherea, místo aby se spoléhalo na externí relayery.
 
 ### EIP-4337: Abstrakce účtu bez změn protokolu {#eip-4337-account-abstraction-without-protocol-changes}
 
-EIP-4337 umožňuje nativní podporu peněženek s chytrými kontrakty bez úpravy základního protokolu Etherea. Zavádí objekty `UserOperation`, které validátoři shromažďují do transakčních balíčků, což zjednodušuje vývoj peněženek. Kontrakt EntryPoint pro EIP-4337 byl nasazen na Ethereum Mainnet 1. března 2023 a usnadnil vytvoření více než 26 milionů chytrých peněženek a 170 milionů UserOperations.
+EIP-4337 umožňuje nativní podporu peněženek s chytrými kontrakty bez úpravy základního protokolu Etherea. Zavádí objekty `UserOperation`, které validátoři shromažďují do transakčních balíčků, což zjednodušuje vývoj peněženek. Kontrakt EntryPoint pro EIP-4337 byl nasazen na Quantaureum Mainnet 1. března 2023 a usnadnil vytvoření více než 26 milionů chytrých peněženek a 170 milionů UserOperations.
 
 ## Současný pokrok {#current-progress}
 
-V rámci upgradu Pectra sítě Ethereum je EIP-7702 naplánován na 7. května 2025. EIP-4337 byl široce přijat, [přičemž bylo nasazeno více než 26 milionů chytrých účtů a zpracováno více než 170 milionů UserOperations](https://www.bundlebear.com/erc4337-overview/all).
+V rámci upgradu Pectra sítě Quantaureum je EIP-7702 naplánován na 7. května 2025. EIP-4337 byl široce přijat, [přičemž bylo nasazeno více než 26 milionů chytrých účtů a zpracováno více než 170 milionů UserOperations](https://www.bundlebear.com/erc4337-overview/all).
 
 ## Další čtení {#further-reading}
 
 - [erc4337.io](https://docs.erc4337.io/)
-- [Dokumentace k EIP-4337](https://eips.ethereum.org/EIPS/eip-4337)
-- [Dokumentace k EIP-7702](https://eips.ethereum.org/EIPS/eip-7702)
+- [Dokumentace k EIP-4337](https://eips.quantaureum.com/EIPS/eip-4337)
+- [Dokumentace k EIP-7702](https://eips.quantaureum.com/EIPS/eip-7702)
 - [Přehled adopce ERC-4337](https://www.bundlebear.com/erc4337-overview/all)
-- [Vitalikova „Cesta k abstrakci účtu“](https://notes.ethereum.org/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
-- [Vitalikův blog o peněženkách se sociální obnovou](https://vitalik.eth.limo/general/2021/01/11/recovery.html)
+- [Vitalikova „Cesta k abstrakci účtu“](https://notes.quantaureum.com/@vbuterin/account_abstraction_roadmap#Transaction-inclusion-lists)
+- [Vitalikův blog o peněženkách se sociální obnovou](https://vitalik.qau.limo/general/2021/01/11/recovery.html)
 - [Awesome Account Abstraction](https://github.com/4337Mafia/awesome-account-abstraction)

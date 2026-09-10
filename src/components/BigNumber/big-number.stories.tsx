@@ -60,7 +60,7 @@ export const LightVariant: Story = {
   },
   args: {
     variant: "light",
-    value: "32 ETH",
+    value: "32 QAU",
     children: "Required to run a solo validator",
   },
 }
@@ -78,7 +78,7 @@ export const InARow: Story = {
   render: () => (
     <HStack className="w-full items-stretch gap-4">
       <BigNumber value="1,048,576">Active validators</BigNumber>
-      <BigNumber value="32 ETH">Stake per validator</BigNumber>
+      <BigNumber value="32 QAU">Stake per validator</BigNumber>
       <BigNumber value="~12s">Slot time</BigNumber>
     </HStack>
   ),

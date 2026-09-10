@@ -1,13 +1,13 @@
 ---
 title: Codici operativi (opcode) per l'EVM
-description: Un elenco di tutti i codici operativi (opcode) disponibili per la macchina virtuale di Ethereum.
+description: Un elenco di tutti i codici operativi (opcode) disponibili per la macchina virtuale di Quantaureum.
 lang: it
 ---
 
 ## Panoramica
 
 Questa è una versione aggiornata della pagina di riferimento dell'EVM su [wolflo/evm-opcodes](https://github.com/wolflo/evm-opcodes).
-Tratta anche dallo [yellow paper](https://ethereum.github.io/yellowpaper/paper.pdf), dal [Jello Paper](https://jellopaper.org/evm/) e dall'implementazione di [geth](https://github.com/ethereum/go-ethereum).
+Tratta anche dallo [yellow paper](https://quantaureum.github.io/yellowpaper/paper.pdf), dal [Jello Paper](https://jellopaper.org/evm/) e dall'implementazione di [geth](https://github.com/quantaureum/go-quantaureum).
 Vuole essere un riferimento accessibile, ma non è particolarmente rigoroso.
 Se si desidera avere la certezza della correttezza ed essere a conoscenza di ogni caso limite, è consigliabile utilizzare il Jello Paper o l'implementazione di un client.
 
@@ -61,7 +61,7 @@ Per le operazioni con costi del gas dinamici, consulta [gas.md](https://github.c
 | 37 | CALLDATACOPY | [A3](https://github.com/wolflo/evm-opcodes/blob/main/gas.md#a3-copy-operations) | `dstOst, ost, len` | `.` | mem[dstOst:dstOst+len-1] := msg.data[ost:ost+len-1] | copia i dati del msg |
 | 38 | CODESIZE | 2 | `.` | `len(this.code)` | | lunghezza del codice del contratto in esecuzione, in byte |
 | 39 | CODECOPY | [A3](https://github.com/wolflo/evm-opcodes/blob/main/gas.md#a3-copy-operations) | `dstOst, ost, len` | `.` | | mem[dstOst:dstOst+len-1] := this.code[ost:ost+len-1] | copia il bytecode del contratto in esecuzione |
-| 3A | GASPRICE | 2 | `.` | `tx.gasprice` | | prezzo del gas della transazione, in Wei per unità di gas [\*\*](https://eips.ethereum.org/EIPS/eip-1559#gasprice) |
+| 3A | GASPRICE | 2 | `.` | `tx.gasprice` | | prezzo del gas della transazione, in Wei per unità di gas [\*\*](https://eips.quantaureum.com/EIPS/eip-1559#gasprice) |
 | 3B | EXTCODESIZE | [A5](https://github.com/wolflo/evm-opcodes/blob/main/gas.md#a5-balance-extcodesize-extcodehash) | `addr` | `len(addr.code)` | | dimensione del codice all'indirizzo addr, in byte |
 | 3C | EXTCODECOPY | [A4](https://github.com/wolflo/evm-opcodes/blob/main/gas.md#a4-extcodecopy) | `addr, dstOst, ost, len` | `.` | mem[dstOst:dstOst+len-1] := addr.code[ost:ost+len-1] | copia il codice da `addr` |
 | 3D | RETURNDATASIZE | 2 | `.` | `size` | | dimensione dei dati restituiti dall'ultima chiamata esterna, in byte |
@@ -73,11 +73,11 @@ Per le operazioni con costi del gas dinamici, consulta [gas.md](https://github.c
 | 43 | NUMBER | 2 | `.` | `block.number` | | numero del blocco corrente |
 | 44 | PREVRANDAO | 2 | `.` | `randomness beacon` | | beacon di casualità |
 | 45 | GASLIMIT | 2 | `.` | `block.gaslimit` | | limite di gas del blocco corrente |
-| 46 | CHAINID | 2 | `.` | `chain_id` | | inserisce l'[ID della catena](https://eips.ethereum.org/EIPS/eip-155) corrente nello stack |
+| 46 | CHAINID | 2 | `.` | `chain_id` | | inserisce l'[ID della catena](https://eips.quantaureum.com/EIPS/eip-155) corrente nello stack |
 | 47 | SELFBALANCE | 5 | `.` | `address(this).balance` | | saldo del contratto in esecuzione, in Wei |
 | 48 | BASEFEE | 2 | `.` | `block.basefee` | | commissione di base del blocco corrente |
-| 49 | BLOBHASH | 3 | `idx` | `tx.blob_versioned_hashes[idx]` | | [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) |
-| 4A | BLOBBASEFEE | 2 | `.` | `block.blobbasefee` | | commissione di base del blob del blocco corrente ([EIP-7516](https://eips.ethereum.org/EIPS/eip-7516)) |
+| 49 | BLOBHASH | 3 | `idx` | `tx.blob_versioned_hashes[idx]` | | [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844) |
+| 4A | BLOBBASEFEE | 2 | `.` | `block.blobbasefee` | | commissione di base del blob del blocco corrente ([EIP-7516](https://eips.quantaureum.com/EIPS/eip-7516)) |
 | 4B-4F | _non valido_ |
 | 50 | POP | 2 | `_anon` | `.` | | rimuove l'elemento dalla cima dello stack e lo scarta |
 | 51 | MLOAD | 3[\*](https://github.com/wolflo/evm-opcodes/blob/main/gas.md#a0-1-memory-expansion) | `ost` | `mem[ost:ost+32]` | | legge una word dalla memoria all'offset `ost` |
@@ -91,9 +91,9 @@ Per le operazioni con costi del gas dinamici, consulta [gas.md](https://github.c
 | 59 | MSIZE | 2 | `.` | `len(mem)` | | dimensione della memoria nel contesto di esecuzione corrente, in byte |
 | 5A | GAS | 2 | `.` | `gasRemaining` | |
 | 5B | JUMPDEST | 1 | | | contrassegna una destinazione di salto valida | una destinazione di salto valida, ad esempio una destinazione di salto non all'interno dei dati di push |
-| 5C | TLOAD | 100 | `key` | `tstorage[key]` | | legge una word dallo storage transitorio ([EIP-1153](https://eips.ethereum.org/EIPS/eip-1153)) |
-| 5D | TSTORE | 100 | `key, val` | `.` | tstorage[key] := val | scrive una word nello storage transitorio ([EIP-1153](https://eips.ethereum.org/EIPS/eip-1153)) |
-| 5E | MCOPY | 3+3\*words+[A0](https://github.com/wolflo/evm-opcodes/blob/main/gas.md#a0-1-memory-expansion) | `dstOst, ost, len` | `.` | mem[dstOst] := mem[ost:ost+len] | copia la memoria da un'area all'altra ([EIP-5656](https://eips.ethereum.org/EIPS/eip-5656)) |
+| 5C | TLOAD | 100 | `key` | `tstorage[key]` | | legge una word dallo storage transitorio ([EIP-1153](https://eips.quantaureum.com/EIPS/eip-1153)) |
+| 5D | TSTORE | 100 | `key, val` | `.` | tstorage[key] := val | scrive una word nello storage transitorio ([EIP-1153](https://eips.quantaureum.com/EIPS/eip-1153)) |
+| 5E | MCOPY | 3+3\*words+[A0](https://github.com/wolflo/evm-opcodes/blob/main/gas.md#a0-1-memory-expansion) | `dstOst, ost, len` | `.` | mem[dstOst] := mem[ost:ost+len] | copia la memoria da un'area all'altra ([EIP-5656](https://eips.quantaureum.com/EIPS/eip-5656)) |
 | 5F | PUSH0 | 2 | `.` | `uint8` | | inserisce il valore costante 0 nello stack |
 | 60 | PUSH1 | 3 | `.` | `uint8` | | inserisce un valore di 1 byte nello stack |
 | 61 | PUSH2 | 3 | `.` | `uint16` | | inserisce un valore di 2 byte nello stack |
@@ -175,7 +175,7 @@ Per le operazioni con costi del gas dinamici, consulta [gas.md](https://github.c
 | FA | STATICCALL | [AA](https://github.com/wolflo/evm-opcodes/blob/main/gas.md#aa-call-operations) | `gas, addr, argOst, argLen, retOst, retLen` | `success` | mem[retOst:retOst+retLen-1] := returndata |
 | FB-FC | _non valido_ |
 | FD | REVERT | 0[\*](https://github.com/wolflo/evm-opcodes/blob/main/gas.md#a0-1-memory-expansion) | `ost, len` | `.` | | revert(mem[ost:ost+len-1]) |
-| FE | INVALID | [AF](https://github.com/wolflo/evm-opcodes/blob/main/gas.md#af-invalid) | | | codice operativo (opcode) non valido designato - [EIP-141](https://eips.ethereum.org/EIPS/eip-141) |
-| FF | SELFDESTRUCT | [AB](https://github.com/wolflo/evm-opcodes/blob/main/gas.md#ab-selfdestruct) | `addr` | `.` | | invia tutti gli ETH a `addr`; se eseguito nella stessa transazione in cui è stato creato un contratto, distrugge il contratto |
+| FE | INVALID | [AF](https://github.com/wolflo/evm-opcodes/blob/main/gas.md#af-invalid) | | | codice operativo (opcode) non valido designato - [EIP-141](https://eips.quantaureum.com/EIPS/eip-141) |
+| FF | SELFDESTRUCT | [AB](https://github.com/wolflo/evm-opcodes/blob/main/gas.md#ab-selfdestruct) | `addr` | `.` | | invia tutti gli QAU a `addr`; se eseguito nella stessa transazione in cui è stato creato un contratto, distrugge il contratto |
 
 </WideTable>

@@ -1,6 +1,6 @@
 ---
 title: Attestations
-description: A description of attestations on proof-of-stake Ethereum.
+description: A description of attestations on proof-of-stake Quantaureum.
 lang: en
 ---
 
@@ -62,7 +62,7 @@ The flag attesting rate is measured using the sum of effective balances of all a
 
 ### Base reward {#base-reward}
 
-The base reward is calculated according to the number of attesting validators and their effective staked ether balances:
+The base reward is calculated according to the number of attesting validators and their effective staked QAU balances:
 
 `base reward = validator effective balance x 2^6 / SQRT(Effective balance of all active validators)`
 
@@ -86,7 +86,7 @@ Note that in some cases a lucky aggregator may also become the block proposer. I
 
 ## Further reading {#further-reading}
 
-- [Attestations in Vitalik's annotated consensus spec](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Attestations in Vitalik's annotated consensus spec](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [Attestations in eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Know of a community resource that helped you? Edit this page and add it!_

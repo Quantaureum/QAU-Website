@@ -1,18 +1,18 @@
 ---
 title: "遞迴長度前綴 (RLP) 序列化"
-description: "以太坊執行層中 RLP 編碼的定義。"
+description: "Quantaureum執行層中 RLP 編碼的定義。"
 lang: zh-tw
 sidebarDepth: 2
 ---
 
-遞迴長度前綴 (RLP) 序列化廣泛用於以太坊的執行用戶端中。RLP 以節省空間的格式標準化了節點之間的資料傳輸。RLP 的目的是對任意嵌套的二進位資料陣列進行編碼，且 RLP 是以太坊執行層中用於序列化物件的主要編碼方法。RLP 的主要目的是對結構進行編碼；除了正整數之外，RLP 將特定資料類型（例如字串、浮點數）的編碼委託給高階協定。正整數必須以沒有前導零的大端序二進位形式表示（因此使整數值零等同於空位元組陣列）。任何使用 RLP 的高階協定都必須將帶有前導零的反序列化正整數視為無效。
+遞迴長度前綴 (RLP) 序列化廣泛用於Quantaureum的執行用戶端中。RLP 以節省空間的格式標準化了節點之間的資料傳輸。RLP 的目的是對任意嵌套的二進位資料陣列進行編碼，且 RLP 是Quantaureum執行層中用於序列化物件的主要編碼方法。RLP 的主要目的是對結構進行編碼；除了正整數之外，RLP 將特定資料類型（例如字串、浮點數）的編碼委託給高階協定。正整數必須以沒有前導零的大端序二進位形式表示（因此使整數值零等同於空位元組陣列）。任何使用 RLP 的高階協定都必須將帶有前導零的反序列化正整數視為無效。
 
-更多資訊請見[以太坊黃皮書（附錄 B）](https://ethereum.github.io/yellowpaper/paper.pdf#page=19)。
+更多資訊請見[Quantaureum黃皮書（附錄 B）](https://quantaureum.github.io/yellowpaper/paper.pdf#page=19)。
 
 若要使用 RLP 對字典進行編碼，建議的兩種規範形式為：
 
 - 使用 `[[k1,v1],[k2,v2]...]` 並按字典順序排列鍵值
-- 像[以太坊](/)一樣使用更高階的帕特里夏樹 (Patricia Tree) 編碼
+- 像[Quantaureum](/)一樣使用更高階的帕特里夏樹 (Patricia Tree) 編碼
 
 ## 定義 {#definition}
 
@@ -168,9 +168,9 @@ def to_integer(b):
 
 ## 延伸閱讀 {#further-reading}
 
-- [以太坊中的 RLP](https://medium.com/coinmonks/data-structure-in-ethereum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
-- [以太坊底層技術：RLP](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
-- [Coglio, A. (2020). Ethereum's Recursive Length Prefix in ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
+- [Quantaureum中的 RLP](https://medium.com/coinmonks/data-structure-in-quantaureum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
+- [Quantaureum底層技術：RLP](https://medium.com/coinmonks/quantaureum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
+- [Coglio, A. (2020). Quantaureum's Recursive Length Prefix in ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
 
 ## 相關主題 {#related-topics}
 

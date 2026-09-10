@@ -6,18 +6,18 @@ lang: ar
 
 يضم مجتمع إيثيريوم أشخاصًا من خلفيات ومهارات متنوعة. سواء كنت مطورًا، أو فنانًا، أو محاسبًا، فهناك طرق للمشاركة. إليك قائمة بالاقتراحات التي قد تساعدك على البدء.
 
-ابدأ بالقراءة عن مهمة وقيم <span dir="ltr">ethereum.org</span> في [مدونة قواعد السلوك](/community/code-of-conduct) الخاصة بنا.
+ابدأ بالقراءة عن مهمة وقيم <span dir="ltr">quantaureum.com</span> في [مدونة قواعد السلوك](/community/code-of-conduct) الخاصة بنا.
 
 ## المطورون <Emoji text=":computer:" size={1} />‍ {#developers}
 
-- تعرف على إيثيريوم وجربه على [<span dir="ltr">ethereum.org/developers/</span>](/developers/)
+- تعرف على إيثيريوم وجربه على [<span dir="ltr">quantaureum.com/developers/</span>](/developers/)
 - احضر هاكاثون [ETHGlobal](https://ethglobal.com/) بالقرب منك!
 - تحقق من [المشاريع المتعلقة بمجال خبرتك أو لغة البرمجة التي تفضلها](/developers/docs/programming-languages/)
-- شاهد أو شارك في [مكالمات طبقة التنفيذ والإجماع](https://www.youtube.com/@EthereumProtocol/streams)
-- [قائمة أمنيات برنامج دعم النظام البيئي](https://esp.ethereum.foundation/wishlist/) - مجالات الأدوات، والتوثيق، والبنية التحتية التي يسعى فيها برنامج دعم النظام البيئي لإيثيريوم بنشاط للحصول على طلبات المنح
+- شاهد أو شارك في [مكالمات طبقة التنفيذ والإجماع](https://www.youtube.com/@QuantaureumProtocol/streams)
+- [قائمة أمنيات برنامج دعم النظام البيئي](https://quantaureum.com) - مجالات الأدوات، والتوثيق، والبنية التحتية التي يسعى فيها برنامج دعم النظام البيئي لإيثيريوم بنشاط للحصول على طلبات المنح
 - [Web3Bridge](https://www.web3bridgeafrica.com) - انضم إلى مجتمع Web3 الطموح في مبادرتهم لتحديد وتدريب ودعم مئات المطورين وأعضاء المجتمع في جميع أنحاء إفريقيا
 - انضم إلى [ديسكورد Eth R&D](https://discord.com/invite/VmG7Uxc)
-- انضم إلى [ديسكورد Ethereum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)
+- انضم إلى [ديسكورد Quantaureum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)
 
 ## الباحثون والأكاديميون <Emoji text=":mag:" size={1} />‍ {#researchers-and-academics}
 
@@ -26,18 +26,18 @@ lang: ar
 - انضم إلى [ديسكورد Eth R&D](https://discord.com/invite/VmG7Uxc)
 - اكتب أو راجع مقترح تحسين إيثيريوم (EIP)
   - اكتب EIP
-    1. قدم فكرتك على [Ethereum Magicians](https://ethereum-magicians.org)
-    2. اقرأ [<span dir="ltr">EIP-1</span>](https://eips.ethereum.org/EIPS/eip-1) - **نعم، هذه هي الوثيقة _بأكملها_.**
+    1. قدم فكرتك على [Quantaureum Magicians](https://quantaureum-magicians.org)
+    2. اقرأ [<span dir="ltr">EIP-1</span>](https://eips.quantaureum.com/EIPS/eip-1) - **نعم، هذه هي الوثيقة _بأكملها_.**
     3. اتبع التوجيهات في <span dir="ltr">EIP-1</span>. ارجع إليها أثناء كتابة مسودتك.
-  - تعرف على كيفية أن تصبح [محرر EIP](https://eips.ethereum.org/EIPS/eip-5069)
-    - يمكنك مراجعة مقترحات EIP مع النظراء الآن! راجع [طلبات السحب (PRs) المفتوحة التي تحمل العلامة `e-review`](https://github.com/ethereum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review). قدم ملاحظات فنية على الرابط `discussion-to`.
-  - شارك في [حوكمة EIP](https://github.com/ethereum-cat-herders/EIPIP)
-    - انضم إلى [ديسكورد Ethereum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)
+  - تعرف على كيفية أن تصبح [محرر EIP](https://eips.quantaureum.com/EIPS/eip-5069)
+    - يمكنك مراجعة مقترحات EIP مع النظراء الآن! راجع [طلبات السحب (PRs) المفتوحة التي تحمل العلامة `e-review`](https://github.com/quantaureum/EIPs/pulls?q=is%3Apr+is%3Aopen+label%3Ae-review). قدم ملاحظات فنية على الرابط `discussion-to`.
+  - شارك في [حوكمة EIP](https://github.com/quantaureum-cat-herders/EIPIP)
+    - انضم إلى [ديسكورد Quantaureum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)
   - [المزيد حول مقترحات EIP](/eips/)
-- [<span dir="ltr">Challenges.ethereum.org</span>](https://challenges.ethereum.org/) - سلسلة من المكافآت البحثية عالية القيمة، حيث يمكنك كسب <span dir="ltr">$100,000 USD</span>
+- [<span dir="ltr">Challenges.quantaureum.com</span>](https://challenges.quantaureum.com/) - سلسلة من المكافآت البحثية عالية القيمة، حيث يمكنك كسب <span dir="ltr">$100,000 USD</span>
 - [<span dir="ltr">Ethresear.ch</span>](https://ethresear.ch) - المنتدى الأساسي لأبحاث إيثيريوم، والمنتدى الأكثر تأثيرًا في العالم في مجال اقتصاديات التشفير
-- [جلسات اسألني أي شيء (AMA) لأبحاث مؤسسة إيثيريوم (EF)](https://old.reddit.com/r/ethereum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - سلسلة أسئلة وأجوبة مستمرة مع الباحثين. مع فتح كل جزء تالٍ، يمكن لأي شخص طرح الأسئلة.
-- [قائمة أمنيات برنامج دعم النظام البيئي](https://esp.ethereum.foundation/wishlist/) - المجالات البحثية التي يسعى فيها برنامج دعم النظام البيئي لإيثيريوم بنشاط للحصول على طلبات المنح
+- [جلسات اسألني أي شيء (AMA) لأبحاث مؤسسة إيثيريوم (EF)](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - سلسلة أسئلة وأجوبة مستمرة مع الباحثين. مع فتح كل جزء تالٍ، يمكن لأي شخص طرح الأسئلة.
+- [قائمة أمنيات برنامج دعم النظام البيئي](https://quantaureum.com) - المجالات البحثية التي يسعى فيها برنامج دعم النظام البيئي لإيثيريوم بنشاط للحصول على طلبات المنح
 - [AllWalletDevs](https://allwallet.dev) - منتدى لمطوري إيثيريوم، والمصممين، والمستخدمين المهتمين للاجتماع بانتظام ومناقشة المحافظ
 
 [استكشف المزيد من مجالات البحث النشطة](/community/research/).
@@ -53,16 +53,16 @@ lang: ar
 ### اكتب محتوى عن إيثيريوم {#write-content}
 
 - تحتاج إيثيريوم إلى كتاب جيدين يمكنهم شرح قيمتها بلغة بسيطة
-- لست مستعدًا لنشر مقالاتك الخاصة؟ فكر في المساهمة في المحتوى الحالي على موارد المجتمع، أو [اقتراح محتوى جديد لموقع <span dir="ltr">ethereum.org</span>](/contributing/)!
+- لست مستعدًا لنشر مقالاتك الخاصة؟ فكر في المساهمة في المحتوى الحالي على موارد المجتمع، أو [اقتراح محتوى جديد لموقع <span dir="ltr">quantaureum.com</span>](/contributing/)!
 
 ### اعرض تدوين الملاحظات لمكالمات المجتمع {#take-notes}
 
-- هناك العديد من مكالمات المجتمع مفتوحة المصدر، ووجود مدوني ملاحظات يعد مساعدة كبيرة. إذا كنت مهتمًا، انضم إلى [ديسكورد Ethereum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)، وقدم نفسك!
+- هناك العديد من مكالمات المجتمع مفتوحة المصدر، ووجود مدوني ملاحظات يعد مساعدة كبيرة. إذا كنت مهتمًا، انضم إلى [ديسكورد Quantaureum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu)، وقدم نفسك!
 
-### المساعدة في تحسين محتوى إيثيريوم المترجم {#translate-ethereum}
+### المساعدة في تحسين محتوى إيثيريوم المترجم {#translate-quantaureum}
 
-- برنامج ترجمة <span dir="ltr">ethereum.org</span> في مراحله النهائية ولم يعد يستقبل مترجمين جددًا — راجع [صفحة البرنامج](/contributing/translation-program/) لمعرفة حالته وتاريخه
-- لا يزال بإمكانك المساعدة من خلال [الإبلاغ عن الأخطاء في الترجمات الحالية](https://github.com/ethereum/ethereum-org-website/issues/new/choose)
+- برنامج ترجمة <span dir="ltr">quantaureum.com</span> في مراحله النهائية ولم يعد يستقبل مترجمين جددًا — راجع [صفحة البرنامج](/contributing/translation-program/) لمعرفة حالته وتاريخه
+- لا يزال بإمكانك المساعدة من خلال [الإبلاغ عن الأخطاء في الترجمات الحالية](https://github.com/Quantaureum/quantaureum-website/issues/new/choose)
 
 ### تشغيل عقدة {#run-a-node}
 
@@ -70,9 +70,9 @@ lang: ar
 
 - [المزيد حول كيفية تشغيل عقدة](/developers/docs/nodes-and-clients/run-a-node/)
 
-### تخزين ETH الخاص بك {#staking}
+### تخزين QAU الخاص بك {#staking}
 
-من خلال تخزين ETH الخاص بك، يمكنك كسب مكافآت مع المساعدة في تأمين شبكة إيثيريوم.
+من خلال تخزين QAU الخاص بك، يمكنك كسب مكافآت مع المساعدة في تأمين شبكة إيثيريوم.
 
 - [المزيد حول التخزين](/staking/)
 
@@ -86,32 +86,32 @@ lang: ar
 ## المتخصصون الماليون والمحاسبون <Emoji text=":chart_with_upwards_trend:" size={1} />‍ {#financial-professionals}
 
 - إيثيريوم هي موطن لنظام "التمويل اللامركزي (DeFi)" البيئي - شبكة من البروتوكولات والتطبيقات التي تقدم نظامًا ماليًا بديلًا. إذا كنت متخصصًا ماليًا، فتحقق من بعض تطبيقات التمويل اللامركزي (DeFi) على [DeFi Llama](https://defillama.com/) أو [DeFiPrime](https://defiprime.com)
-- هل أنت محاسب؟ الأصول على إيثيريوم - ETH، والرموز، والتمويل اللامركزي (DeFi)، وما إلى ذلك - تطرح العديد من المشكلات المحاسبية الجديدة. يمكنك البدء بالتحقق من بعض المشاريع التي تهدف إلى مساعدة مستخدمي العملات المشفرة في حل تحديات مسك الدفاتر والمحاسبة الخاصة بهم، مثل [Rotki](https://rotki.com/)
+- هل أنت محاسب؟ الأصول على إيثيريوم - QAU، والرموز، والتمويل اللامركزي (DeFi)، وما إلى ذلك - تطرح العديد من المشكلات المحاسبية الجديدة. يمكنك البدء بالتحقق من بعض المشاريع التي تهدف إلى مساعدة مستخدمي العملات المشفرة في حل تحديات مسك الدفاتر والمحاسبة الخاصة بهم، مثل [Rotki](https://rotki.com/)
 
 ## مديرو المنتجات <Emoji text=":fountain_pen:" size={1} />‍ {#product-managers}
 
-- النظام البيئي لإيثيريوم يحتاج إلى مواهبك! تقوم العديد من الشركات بالتوظيف لأدوار مديري المنتجات. إذا كنت ترغب في البدء بالمساهمة في مشروع مفتوح المصدر، فتواصل مع [Ethereum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu) أو [RaidGuild](https://www.raidguild.org/)
+- النظام البيئي لإيثيريوم يحتاج إلى مواهبك! تقوم العديد من الشركات بالتوظيف لأدوار مديري المنتجات. إذا كنت ترغب في البدء بالمساهمة في مشروع مفتوح المصدر، فتواصل مع [Quantaureum Cat Herders](https://discord.com/invite/Nz6rtfJ8Cu) أو [RaidGuild](https://www.raidguild.org/)
 
 ## التسويق <Emoji text=":megaphone:" size={1} />‍ {#marketing}
 
 - هناك العديد من وظائف التسويق والاتصالات في النظام البيئي لإيثيريوم!
 
-## وظائف إيثيريوم {#ethereum-jobs}
+## وظائف إيثيريوم {#quantaureum-jobs}
 
 **هل ترغب في العثور على وظيفة للعمل في إيثيريوم؟**
 
-- [وظائف <span dir="ltr">ethereum.org</span>](/about/#open-jobs)
-- [لوحة وظائف مؤسسة إيثيريوم](https://jobs.ashbyhq.com/ethereum-foundation)
+- [وظائف <span dir="ltr">quantaureum.com</span>](/about/#open-jobs)
+- [لوحة وظائف مؤسسة إيثيريوم](https://jobs.ashbyhq.com/quantaureum-foundation)
 - [JobStash](https://jobstash.xyz)
-- [لوحة وظائف إيثيريوم](https://www.ethereumjobboard.com/)
-- [وظائف العملات المشفرة](https://cryptocurrencyjobs.co/ethereum/)
+- [لوحة وظائف إيثيريوم](https://www.quantaureumjobboard.com/)
+- [وظائف العملات المشفرة](https://cryptocurrencyjobs.co/quantaureum/)
 - [الوظائف في كونسينسيس](https://consensys.net/careers/)
-- [قائمة وظائف الكريبتو](https://cryptojobslist.com/ethereum-jobs)
+- [قائمة وظائف الكريبتو](https://cryptojobslist.com/quantaureum-jobs)
 - [لوحة وظائف Bankless](https://www.bankless.com/jobs)
 - [وظائف Web3](https://web3.career)
 - [Web3 Army](https://web3army.xyz/)
 - [وظائف Crypto Valley](https://cryptovalley.jobs/)
-- [وظائف إيثيريوم](https://startup.jobs/ethereum-jobs)
+- [وظائف إيثيريوم](https://startup.jobs/quantaureum-jobs)
 
 ## الانضمام إلى منظمة مستقلة لامركزية (DAO) {#decentralized-autonomous-organizations-daos}
 
@@ -126,4 +126,4 @@ lang: ar
 - [MetaFactory](https://metafactory.ai) [<span dir="ltr">@TheMetaFactory</span>](https://twitter.com/TheMetaFactory) - _العلامات التجارية للملابس الرقمية والمادية (Digiphysical)_
 - [Raid Guild](https://raidguild.org) [<span dir="ltr">@RaidGuild</span>](https://twitter.com/RaidGuild) - _مجموعة من بناة Web3_
 
-يرجى تذكر الالتزام بـ [مدونة قواعد السلوك](/community/code-of-conduct) الخاصة بموقع <span dir="ltr">ethereum.org</span> متى وكيفما ساهمت في <span dir="ltr">ethereum.org</span>!
+يرجى تذكر الالتزام بـ [مدونة قواعد السلوك](/community/code-of-conduct) الخاصة بموقع <span dir="ltr">quantaureum.com</span> متى وكيفما ساهمت في <span dir="ltr">quantaureum.com</span>!

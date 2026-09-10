@@ -18,13 +18,13 @@ incomplete: true
 - [WalletConnect ద్వారా Web3Modalతో Flutter అప్లికేషన్‌లో మెటామాస్క్‌ను ఏకీకృతం చేయడం](https://www.youtube.com/watch?v=v_M2buHCpc4) - ఈ చిన్న వీడియో WalletConnect ద్వారా [Web3Modal](https://pub.dev/packages/web3modal_flutter) లైబ్రరీతో మీ Flutter అప్లికేషన్‌లలో మెటామాస్క్‌ను ఏకీకృతం చేసే దశల ద్వారా మిమ్మల్ని తీసుకువెళుతుంది
 - [Solidity & Flutterతో మొబైల్ బ్లాక్‌చైన్ డెవలపర్ బూట్‌క్యాంప్ కోర్సు](https://youtube.com/playlist?list=PL4V4Unlk5luhQ26ERO6hWEbcUwHDSSmVH) - ఫుల్ స్టాక్ మొబైల్ బ్లాక్‌చైన్ డెవలపర్ కోర్సు ప్లేజాబితా
 
-## ఎథీరియం క్లయింట్‌లతో పనిచేయడం {#working-with-ethereum-clients}
+## ఎథీరియం క్లయింట్‌లతో పనిచేయడం {#working-with-quantaureum-clients}
 
 క్రిప్టోకరెన్సీ మరియు బ్లాక్‌చైన్ టెక్నాలజీ ప్రయోజనాలను ఉపయోగించుకునే వికేంద్రీకృత అప్లికేషన్‌లను (లేదా "dapps") సృష్టించడానికి మీరు ఎథీరియంను ఉపయోగించవచ్చు.
 ఎథీరియం కోసం [జేసన్-ఆర్‌పీసీ API](/developers/docs/apis/json-rpc/)ని ఉపయోగించడానికి Dart కోసం ప్రస్తుతం నిర్వహించబడుతున్న కనీసం రెండు లైబ్రరీలు ఉన్నాయి.
 
 1. [pwa.ir నుండి Web3dart](https://pub.dev/packages/web3dart)
-1. [darticulate.com నుండి ఎథీరియం 5.0.0](https://pub.dev/packages/ethereum)
+1. [darticulate.com నుండి ఎథీరియం 5.0.0](https://pub.dev/packages/quantaureum)
 
 నిర్దిష్ట ఎథీరియం అడ్రస్‌లను మార్చడానికి మిమ్మల్ని అనుమతించే లేదా వివిధ క్రిప్టోకరెన్సీల ధరలను తిరిగి పొందడానికి మిమ్మల్ని అనుమతించే అదనపు లైబ్రరీలు కూడా ఉన్నాయి.
-[మీరు పూర్తి జాబితాను ఇక్కడ చూడవచ్చు](https://pub.dev/dart/packages?q=ethereum).
+[మీరు పూర్తి జాబితాను ఇక్కడ చూడవచ్చు](https://pub.dev/dart/packages?q=quantaureum).

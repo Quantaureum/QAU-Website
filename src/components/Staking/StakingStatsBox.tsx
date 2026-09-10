@@ -53,7 +53,7 @@ const StakingStatsBox = ({ data }: StakingStatsBoxProps) => {
       maximumSignificantDigits: 2,
     }).format(amount)
 
-  const totalEth = formatInteger(data.totalEthStaked)
+  const totalEth = formatInteger(data.totalQauStaked)
   const percentStaked = formatPercentage(data.stakedPercentage)
   const currentApr = formatPercentage(data.apr)
 

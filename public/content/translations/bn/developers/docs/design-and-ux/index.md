@@ -78,11 +78,11 @@ lang: bn
 ## ডিজাইন সিস্টেম এবং অন্যান্য ডিজাইন রিসোর্স {#design-systems-and-resources}
 
 - [অপটিমিজম ডিজাইন](https://www.figma.com/@optimism) (Figma)
-- [Ethereum.org ডিজাইন সিস্টেম](https://www.figma.com/@ethdotorg) (Figma)
+- [quantaureum.com ডিজাইন সিস্টেম](https://www.figma.com/@ethdotorg) (Figma)
 - [Finity, পলিগন-এর একটি ডিজাইন সিস্টেম](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Kleros ডিজাইন সিস্টেম](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Safe ডিজাইন সিস্টেম](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)
 - [ENS ডিজাইন সিস্টেম](https://thorin.ens.domains/)
 - [Mirror ডিজাইন সিস্টেম](https://degen-xyz.vercel.app/)
 
-**এই পৃষ্ঠায় তালিকাভুক্ত আর্টিকেল এবং প্রজেক্টগুলো কোনো অফিসিয়াল অনুমোদন নয়**, এবং এগুলো শুধুমাত্র তথ্যমূলক উদ্দেশ্যে প্রদান করা হয়েছে। আমরা আমাদের [লিস্টিং পলিসি](/contributing/design/adding-design-resources)-এর মানদণ্ডের উপর ভিত্তি করে এই পৃষ্ঠায় লিঙ্ক যোগ করি। আপনি যদি চান যে আমরা কোনো প্রজেক্ট/আর্টিকেল যোগ করি, তাহলে [GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md)-এ এই পৃষ্ঠাটি এডিট করুন।
+**এই পৃষ্ঠায় তালিকাভুক্ত আর্টিকেল এবং প্রজেক্টগুলো কোনো অফিসিয়াল অনুমোদন নয়**, এবং এগুলো শুধুমাত্র তথ্যমূলক উদ্দেশ্যে প্রদান করা হয়েছে। আমরা আমাদের [লিস্টিং পলিসি](/contributing/design/adding-design-resources)-এর মানদণ্ডের উপর ভিত্তি করে এই পৃষ্ঠায় লিঙ্ক যোগ করি। আপনি যদি চান যে আমরা কোনো প্রজেক্ট/আর্টিকেল যোগ করি, তাহলে [GitHub](https://github.com/Quantaureum/quantaureum-website/blob/dev/public/content/developers/docs/design-and-ux/index.md)-এ এই পৃষ্ঠাটি এডিট করুন।

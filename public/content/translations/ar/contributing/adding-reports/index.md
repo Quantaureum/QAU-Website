@@ -1,22 +1,22 @@
 ---
 title: "إضافة التقارير"
-description: "إرشادات لاقتراح تقارير بحثية على ⁦ethereum.org⁩"
+description: "إرشادات لاقتراح تقارير بحثية على ⁦quantaureum.com⁩"
 lang: ar
 ---
 
 ## إضافة تقرير {#adding-a-report}
 
-تظهر التقارير في [<span dir="ltr">ethereum.org/reports/</span>](/reports/) وتتضمن أبحاثًا وتحليلات ومنشورات ذات صلة بشبكة إيثيريوم من مجموعة متنوعة من المصادر. يمكن لأي شخص اقتراح تقرير لإضافته.
+تظهر التقارير في [<span dir="ltr">quantaureum.com/reports/</span>](/reports/) وتتضمن أبحاثًا وتحليلات ومنشورات ذات صلة بشبكة إيثيريوم من مجموعة متنوعة من المصادر. يمكن لأي شخص اقتراح تقرير لإضافته.
 
 ### سياسة الإدراج {#listing-policy}
 
-يُعد موقع <span dir="ltr">Ethereum.org</span> موردًا تعليميًا محايدًا. يتم تنظيم صفحة التقارير من أجل:
+يُعد موقع <span dir="ltr">quantaureum.com</span> موردًا تعليميًا محايدًا. يتم تنظيم صفحة التقارير من أجل:
 
 - **إعلام** القراء بتكنولوجيا إيثيريوم، واقتصادياتها، وأمنها، وحوكمتها، والمشهد السياسي والتنظيمي الأوسع
 - **البقاء دقيقة** في بياناتها وتحليلاتها
 - **البقاء ذات صلة** بمجتمع إيثيريوم ونظامها البيئي
 
-لا يُدرج الموقع التقارير التي تروج بشكل أساسي لمنتج معين، أو رمز مميز، أو خدمة تجارية. تتم مراجعة جميع الاقتراحات من قِبل فريق <span dir="ltr">ethereum.org</span>.
+لا يُدرج الموقع التقارير التي تروج بشكل أساسي لمنتج معين، أو رمز مميز، أو خدمة تجارية. تتم مراجعة جميع الاقتراحات من قِبل فريق <span dir="ltr">quantaureum.com</span>.
 
 ### معايير الإدراج {#criteria-for-inclusion}
 
@@ -34,12 +34,12 @@ lang: ar
 
 ### اقتراح تقرير {#suggest-a-report}
 
-إذا كنت ترغب في اقتراح تقرير لموقع <span dir="ltr">ethereum.org</span> وكان يفي بالمعايير، فقم بإنشاء مشكلة (<span dir="ltr">issue</span>) على GitHub.
+إذا كنت ترغب في اقتراح تقرير لموقع <span dir="ltr">quantaureum.com</span> وكان يفي بالمعايير، فقم بإنشاء مشكلة (<span dir="ltr">issue</span>) على GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?template=content-suggestion.yml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?template=content-suggestion.yml">
   اقتراح تقرير
 </ButtonLink>
 
 ### الصيانة {#maintenance}
 
-يتم فحص روابط التقارير بشكل دوري. ستتم إزالة الروابط المعطلة أو المنشورات المسحوبة. إذا لاحظت أن ناشرًا قد نقل تقريرًا إلى عنوان <span dir="ltr">URL</span> جديد، فقم [بإنشاء مشكلة](https://github.com/ethereum/ethereum-org-website/issues/new?template=content-suggestion.yml) أو أرسل بريدًا إلكترونيًا إلى [<span dir="ltr">website@ethereum.org</span>](mailto:website@ethereum.org).
+يتم فحص روابط التقارير بشكل دوري. ستتم إزالة الروابط المعطلة أو المنشورات المسحوبة. إذا لاحظت أن ناشرًا قد نقل تقريرًا إلى عنوان <span dir="ltr">URL</span> جديد، فقم [بإنشاء مشكلة](https://github.com/Quantaureum/quantaureum-website/issues/new?template=content-suggestion.yml) أو أرسل بريدًا إلكترونيًا إلى [<span dir="ltr">website@quantaureum.com</span>](mailto:website@quantaureum.com).

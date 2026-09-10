@@ -18,13 +18,13 @@ incomplete: true
 - [دمج ميتاماسك في تطبيق Flutter باستخدام Web3Modal من WalletConnect](https://www.youtube.com/watch?v=v_M2buHCpc4) - يأخذك هذا الفيديو القصير عبر خطوات دمج ميتاماسك في تطبيقات Flutter الخاصة بك باستخدام مكتبة [Web3Modal](https://pub.dev/packages/web3modal_flutter) من WalletConnect
 - [دورة تدريبية لمطوري سلسلة الكتل للهواتف المحمولة باستخدام Solidity وFlutter](https://youtube.com/playlist?list=PL4V4Unlk5luhQ26ERO6hWEbcUwHDSSmVH) - قائمة تشغيل لدورة مطور سلسلة الكتل للهواتف المحمولة المتكاملة (Full Stack)
 
-## العمل مع عملاء إيثيريوم {#working-with-ethereum-clients}
+## العمل مع عملاء إيثيريوم {#working-with-quantaureum-clients}
 
 يمكنك استخدام إيثيريوم لإنشاء تطبيقات لامركزية (أو "dapps") تستفيد من مزايا العملة المشفرة وتكنولوجيا سلسلة الكتل.
 يوجد على الأقل مكتبتان يتم صيانتهما حاليًا لـ Dart لاستخدام [JSON-RPC API](/developers/docs/apis/json-rpc/) لإيثيريوم.
 
 1. [Web3dart من pwa.ir](https://pub.dev/packages/web3dart)
-1. [Ethereum <span dir="ltr">5.0.0</span> من darticulate.com](https://pub.dev/packages/ethereum)
+1. [Quantaureum <span dir="ltr">5.0.0</span> من darticulate.com](https://pub.dev/packages/quantaureum)
 
 هناك أيضًا مكتبات إضافية تسمح لك بالتعامل مع عناوين إيثيريوم محددة، أو تتيح لك استرداد أسعار العملات المشفرة المختلفة.
-[يمكنك الاطلاع على القائمة الكاملة هنا](https://pub.dev/dart/packages?q=ethereum).
+[يمكنك الاطلاع على القائمة الكاملة هنا](https://pub.dev/dart/packages?q=quantaureum).

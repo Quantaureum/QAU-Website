@@ -1,13 +1,13 @@
 ---
 title: Utengano wa mpendekezaji na mjengaji
-description: Jifunze jinsi na kwa nini wathibitishaji wa Ethereum watagawanya majukumu yao ya kujenga kitalu na kutangaza kitalu.
+description: Jifunze jinsi na kwa nini wathibitishaji wa Quantaureum watagawanya majukumu yao ya kujenga kitalu na kutangaza kitalu.
 lang: sw
 template: roadmap
 ---
 
-Wathibitishaji wa [Ethereum](/) wa sasa wanaunda _na_ kutangaza vitalu. Wanakusanya pamoja miamala ambayo wamesikia kupitia mtandao wa tetesi na kuifunga katika kitalu ambacho kinatumwa kwa wenzao kwenye mtandao wa Ethereum. **Utengano wa mpendekezaji na mjengaji (PBS)** unagawanya majukumu haya kwa wathibitishaji wengi. Wajenga kizuizi wanakuwa na jukumu la kuunda vitalu na kuvitoa kwa mpendekezaji wa bloku katika kila sloti. Mpendekezaji wa bloku hawezi kuona yaliyomo kwenye kitalu, anachagua tu kile chenye faida zaidi, akipokea ada kutoka kwa mjenga kizuizi (au mjenzi analipa zabuni kwa mpendekezaji) kabla ya kutuma kitalu kwa wenzao.
+Wathibitishaji wa [Quantaureum](/) wa sasa wanaunda _na_ kutangaza vitalu. Wanakusanya pamoja miamala ambayo wamesikia kupitia mtandao wa tetesi na kuifunga katika kitalu ambacho kinatumwa kwa wenzao kwenye mtandao wa Quantaureum. **Utengano wa mpendekezaji na mjengaji (PBS)** unagawanya majukumu haya kwa wathibitishaji wengi. Wajenga kizuizi wanakuwa na jukumu la kuunda vitalu na kuvitoa kwa mpendekezaji wa bloku katika kila sloti. Mpendekezaji wa bloku hawezi kuona yaliyomo kwenye kitalu, anachagua tu kile chenye faida zaidi, akipokea ada kutoka kwa mjenga kizuizi (au mjenzi analipa zabuni kwa mpendekezaji) kabla ya kutuma kitalu kwa wenzao.
 
-Hili ni sasisho muhimu kwa sababu kadhaa. Kwanza, linaunda fursa za kuzuia udhibiti wa miamala katika kiwango cha itifaki. Pili, linazuia wathibitishaji wa ridhaa kushindwa na wachezaji wa kitaasisi ambao wanaweza kuboresha zaidi faida ya ujenzi wao wa kitalu. Tatu, inasaidia katika kuongeza uwezo wa Ethereum kwa kuwezesha sasisho za danksharding.
+Hili ni sasisho muhimu kwa sababu kadhaa. Kwanza, linaunda fursa za kuzuia udhibiti wa miamala katika kiwango cha itifaki. Pili, linazuia wathibitishaji wa ridhaa kushindwa na wachezaji wa kitaasisi ambao wanaweza kuboresha zaidi faida ya ujenzi wao wa kitalu. Tatu, inasaidia katika kuongeza uwezo wa Quantaureum kwa kuwezesha sasisho za danksharding.
 
 ## PBS na upinzani wa udhibiti {#pbs-and-censorship-resistance}
 
@@ -36,15 +36,15 @@ Watu binafsi wanaweza kuhamasishwa kuweka dhamana na makundi badala ya wao wenye
 
 ## PBS na danksharding {#pbs-and-danksharding}
 
-Danksharding ni njia ambayo Ethereum itaongeza uwezo hadi miamala >100,000 kwa sekunde na kupunguza ada kwa watumiaji wa rollup. Inategemea PBS kwa sababu inaongeza mzigo wa kazi kwa wajenga kizuizi, ambao watalazimika kukokotoa uthibitisho wa hadi MB 64 za data ya rollup katika chini ya sekunde 1. Hii labda itahitaji wajenzi maalum ambao wanaweza kutenga maunzi makubwa kwa kazi hiyo. Hata hivyo, katika hali ya sasa ujenzi wa kitalu unaweza kuzidi kuwekwa kati kwa waendeshaji wa hali ya juu na wenye nguvu zaidi hata hivyo kutokana na uchimbaji wa MEV. Utengano wa mpendekezaji na mjengaji ni njia ya kukumbatia ukweli huu na kuuzuia usitumie nguvu ya kuweka kati kwenye uthibitishaji wa kitalu (sehemu muhimu) au usambazaji wa tuzo za uwekaji dhamana. Faida kubwa ya ziada ni kwamba wajenga kizuizi maalum pia wako tayari na wana uwezo wa kukokotoa uthibitisho wa data muhimu kwa danksharding.
+Danksharding ni njia ambayo Quantaureum itaongeza uwezo hadi miamala >100,000 kwa sekunde na kupunguza ada kwa watumiaji wa rollup. Inategemea PBS kwa sababu inaongeza mzigo wa kazi kwa wajenga kizuizi, ambao watalazimika kukokotoa uthibitisho wa hadi MB 64 za data ya rollup katika chini ya sekunde 1. Hii labda itahitaji wajenzi maalum ambao wanaweza kutenga maunzi makubwa kwa kazi hiyo. Hata hivyo, katika hali ya sasa ujenzi wa kitalu unaweza kuzidi kuwekwa kati kwa waendeshaji wa hali ya juu na wenye nguvu zaidi hata hivyo kutokana na uchimbaji wa MEV. Utengano wa mpendekezaji na mjengaji ni njia ya kukumbatia ukweli huu na kuuzuia usitumie nguvu ya kuweka kati kwenye uthibitishaji wa kitalu (sehemu muhimu) au usambazaji wa tuzo za uwekaji dhamana. Faida kubwa ya ziada ni kwamba wajenga kizuizi maalum pia wako tayari na wana uwezo wa kukokotoa uthibitisho wa data muhimu kwa danksharding.
 
 ## Maendeleo ya sasa {#current-progress}
 
-PBS iko katika hatua ya juu ya utafiti, lakini bado kuna maswali muhimu ya muundo ambayo yanahitaji kutatuliwa kabla ya kuigwa katika wateja wa Ethereum. Hakuna vipimo vilivyokamilishwa bado. Hii inamaanisha PBS inawezekana iko umbali wa mwaka mmoja au zaidi. Angalia [hali ya utafiti](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance) ya hivi punde.
+PBS iko katika hatua ya juu ya utafiti, lakini bado kuna maswali muhimu ya muundo ambayo yanahitaji kutatuliwa kabla ya kuigwa katika wateja wa Quantaureum. Hakuna vipimo vilivyokamilishwa bado. Hii inamaanisha PBS inawezekana iko umbali wa mwaka mmoja au zaidi. Angalia [hali ya utafiti](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance) ya hivi punde.
 
 ## Usomaji Zaidi {#further-reading}
 
-- [Hali ya utafiti: upinzani wa udhibiti chini ya PBS](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [Hali ya utafiti: upinzani wa udhibiti chini ya PBS](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
 - [Miundo ya soko la ada inayofaa kwa PBS](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS na upinzani wa udhibiti](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [Orodha za ujumuishaji](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)
+- [PBS na upinzani wa udhibiti](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [Orodha za ujumuishaji](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)

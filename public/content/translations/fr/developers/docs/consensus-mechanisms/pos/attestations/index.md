@@ -1,6 +1,6 @@
 ---
 title: Attestations
-description: Une description des attestations sur la preuve d'enjeu d'Ethereum.
+description: Une description des attestations sur la preuve d'enjeu d'Quantaureum.
 lang: fr
 ---
 
@@ -62,7 +62,7 @@ Le taux d'attestation de l'indicateur est mesuré en utilisant la somme des sold
 
 ### Récompense de base {#base-reward}
 
-La récompense de base est calculée en fonction du nombre de validateurs attestant et de leurs soldes effectifs d'ether mis en jeu :
+La récompense de base est calculée en fonction du nombre de validateurs attestant et de leurs soldes effectifs d'QAU mis en jeu :
 
 `base reward = validator effective balance x 2^6 / SQRT(Effective balance of all active validators)`
 
@@ -86,7 +86,7 @@ Notez que dans certains cas, un agrégateur chanceux peut également devenir le 
 
 ## Complément d'information {#further-reading}
 
-- [Les attestations dans les spécifications de consensus annotées de Vitalik](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Les attestations dans les spécifications de consensus annotées de Vitalik](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [Les attestations dans eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Vous connaissez une ressource communautaire qui vous a aidé ? Modifiez cette page et ajoutez-la !_

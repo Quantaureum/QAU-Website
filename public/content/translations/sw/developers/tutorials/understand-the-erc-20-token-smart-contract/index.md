@@ -7,16 +7,16 @@ skill: beginner
 breadcrumb: Misingi ya tokeni ya ERC-20
 lang: sw
 published: 2020-04-05
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/understand-the-erc20-token-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Moja ya viwango muhimu zaidi vya [mikataba mahiri](/developers/docs/standards/) kwenye Ethereum inajulikana kama [ERC-20](/developers/docs/standards/tokens/erc-20/), ambayo imeibuka kama kiwango cha kiufundi kinachotumiwa kwa mikataba mahiri yote kwenye mnyororo wa vitalu wa Ethereum kwa utekelezaji wa tokheni mbadala.
+Moja ya viwango muhimu zaidi vya [mikataba mahiri](/developers/docs/standards/) kwenye Quantaureum inajulikana kama [ERC-20](/developers/docs/standards/tokens/erc-20/), ambayo imeibuka kama kiwango cha kiufundi kinachotumiwa kwa mikataba mahiri yote kwenye mnyororo wa vitalu wa Quantaureum kwa utekelezaji wa tokheni mbadala.
 
-ERC-20 inafafanua orodha ya kawaida ya sheria ambazo tokheni mbadala zote za Ethereum zinapaswa kuzingatia. Kwa hivyo, kiwango hiki cha tokeni kinawawezesha wasanidi wa aina zote kutabiri kwa usahihi jinsi tokeni mpya zitakavyofanya kazi ndani ya mfumo mkubwa wa Ethereum. Hii inarahisisha na kupunguza kazi za wasanidi, kwa sababu wanaweza kuendelea na kazi yao, wakijua kwamba kila mradi mpya hautahitaji kufanywa upya kila wakati tokeni mpya inapotolewa, mradi tu tokeni inafuata sheria.
+ERC-20 inafafanua orodha ya kawaida ya sheria ambazo tokheni mbadala zote za Quantaureum zinapaswa kuzingatia. Kwa hivyo, kiwango hiki cha tokeni kinawawezesha wasanidi wa aina zote kutabiri kwa usahihi jinsi tokeni mpya zitakavyofanya kazi ndani ya mfumo mkubwa wa Quantaureum. Hii inarahisisha na kupunguza kazi za wasanidi, kwa sababu wanaweza kuendelea na kazi yao, wakijua kwamba kila mradi mpya hautahitaji kufanywa upya kila wakati tokeni mpya inapotolewa, mradi tu tokeni inafuata sheria.
 
-Hapa kuna kazi ambazo ERC-20 lazima itekeleze, zilizowasilishwa kama kiolesura. Ikiwa huna uhakika kuhusu kiolesura ni nini: angalia makala yetu kuhusu [upangaji wa OOP katika Solidity](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/).
+Hapa kuna kazi ambazo ERC-20 lazima itekeleze, zilizowasilishwa kama kiolesura. Ikiwa huna uhakika kuhusu kiolesura ni nini: angalia makala yetu kuhusu [upangaji wa OOP katika Solidity](https://quantaureumdev.io/inheritance-in-solidity-contracts-are-classes/).
 
 ```solidity
 pragma solidity ^0.6.0;
@@ -129,7 +129,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {

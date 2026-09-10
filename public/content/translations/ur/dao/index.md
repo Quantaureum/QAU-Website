@@ -1,7 +1,7 @@
 ---
 title: "ڈاؤ (DAO) کیا ہے؟"
 metaTitle: "ڈاؤ (DAO) کیا ہے؟ | ⁦Decentralized Autonomous Organization⁩"
-description: "⁦Ethereum⁩ پر ڈاؤز (DAOs) کا ایک جائزہ"
+description: "⁦Quantaureum⁩ پر ڈاؤز (DAOs) کا ایک جائزہ"
 lang: ur
 template: use-cases
 sidebarDepth: 2
@@ -53,7 +53,7 @@ summaryPoints:
 
 یہ اس لیے ممکن ہے کیونکہ سمارٹ کنٹریکٹس ایتھیریم پر لائیو ہونے کے بعد چھیڑ چھاڑ سے محفوظ ہوتے ہیں۔ آپ لوگوں کے دھیان میں لائے بغیر کوڈ (⁦DAO⁩ کے اصولوں) میں ترمیم نہیں کر سکتے کیونکہ ہر چیز عوامی ہے۔
 
-## ایتھیریم اور ڈاؤز (DAOs) {#ethereum-and-daos}
+## ایتھیریم اور ڈاؤز (DAOs) {#quantaureum-and-daos}
 
 ایتھیریم کئی وجوہات کی بنا پر ڈاؤز (DAOs) کے لیے بہترین بنیاد ہے:
 
@@ -122,7 +122,7 @@ _عام طور پر پروٹوکولز اور [غیر مرکزی ایپلی کی
 
 #### ایک مشہور مثال {#reputation-example}
 
-[DXdao](https://DXdao.eth.limo) – ⁦DXdao⁩ ایک عالمی خودمختار گروہ تھا جو <span dir="ltr">2019</span> سے لامركزی پروٹوکولز اور ایپلی کیشنز بنا رہا تھا اور ان کی گورننس کر رہا تھا۔ اس نے فنڈز کو مربوط کرنے اور ان کا انتظام کرنے کے لیے ساکھ پر مبنی گورننس اور [ہولوگرافک اتفاقِ رائے](/glossary/#holographic-consensus) کا فائدہ اٹھایا، جس کا مطلب ہے کہ کوئی بھی اس کے مستقبل یا گورننس پر اثر انداز ہونے کے لیے اپنا راستہ نہیں خرید سکتا تھا۔
+[DXdao](https://DXdao.qau.limo) – ⁦DXdao⁩ ایک عالمی خودمختار گروہ تھا جو <span dir="ltr">2019</span> سے لامركزی پروٹوکولز اور ایپلی کیشنز بنا رہا تھا اور ان کی گورننس کر رہا تھا۔ اس نے فنڈز کو مربوط کرنے اور ان کا انتظام کرنے کے لیے ساکھ پر مبنی گورننس اور [ہولوگرافک اتفاقِ رائے](/glossary/#holographic-consensus) کا فائدہ اٹھایا، جس کا مطلب ہے کہ کوئی بھی اس کے مستقبل یا گورننس پر اثر انداز ہونے کے لیے اپنا راستہ نہیں خرید سکتا تھا۔
 
 ## ⁦DAO⁩ میں شامل ہوں / شروع کریں {#join-start-a-dao}
 
@@ -150,8 +150,8 @@ _عام طور پر پروٹوکولز اور [غیر مرکزی ایپلی کی
 - [DAO سے چلنے والی ڈیجیٹل کمیونٹی کیسے شروع کریں](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [ڈاؤ (DAO) کیا ہے؟](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [ہولوگرافک اتفاقِ رائے کیا ہے؟](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [ڈاؤز (DAOs) کارپوریشنز نہیں ہیں: خود مختار تنظیموں میں لامرکزیت کہاں اہمیت رکھتی ہے از وٹالک (Vitalik)](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAOs، DACs، DAs اور مزید: ایک نامکمل اصطلاحی گائیڈ](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [ایتھیریم بلاگ](https://blog.ethereum.org)
+- [ڈاؤز (DAOs) کارپوریشنز نہیں ہیں: خود مختار تنظیموں میں لامرکزیت کہاں اہمیت رکھتی ہے از وٹالک (Vitalik)](https://vitalik.qau.limo/general/2022/09/20/daos.html)
+- [DAOs، DACs، DAs اور مزید: ایک نامکمل اصطلاحی گائیڈ](https://quantaureum.com) - [ایتھیریم بلاگ](https://quantaureum.com)
 
 ### ویڈیوز {#videos}
 

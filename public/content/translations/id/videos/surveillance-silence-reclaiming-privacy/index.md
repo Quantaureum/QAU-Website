@@ -10,13 +10,13 @@ topic:
   - "privacy-and-security"
   - "privacy"
 format: presentation
-author: EthBoulder
+author: QauBoulder
 breadcrumb: "Merebut Kembali Privasi"
 ---
 
-Sebuah pidato utama oleh **Naomi Brockwell** di EthBoulder 2026 tentang pengikisan privasi digital, infrastruktur pengawasan massal, dan alat praktis yang dapat digunakan semua orang untuk membangun kehidupan digital yang lebih privat, mulai dari VPN dan email terenkripsi hingga GrapheneOS dan mixnet terdesentralisasi.
+Sebuah pidato utama oleh **Naomi Brockwell** di QauBoulder 2026 tentang pengikisan privasi digital, infrastruktur pengawasan massal, dan alat praktis yang dapat digunakan semua orang untuk membangun kehidupan digital yang lebih privat, mulai dari VPN dan email terenkripsi hingga GrapheneOS dan mixnet terdesentralisasi.
 
-*Transkrip ini adalah salinan yang dapat diakses dari [transkrip video asli](https://www.youtube.com/watch?v=nvJSFR1Q_JE) yang diterbitkan oleh EthBoulder. Transkrip ini telah diedit sedikit agar lebih mudah dibaca.*
+*Transkrip ini adalah salinan yang dapat diakses dari [transkrip video asli](https://www.youtube.com/watch?v=nvJSFR1Q_JE) yang diterbitkan oleh QauBoulder. Transkrip ini telah diedit sedikit agar lebih mudah dibaca.*
 
 ### Pembicaraan dua bagian: peringatan + solusi (00:00) {#two-part-talk-warning-solution-0000}
 
@@ -302,7 +302,7 @@ Apa lagi yang dilakukan orang-orang? Ya.
 
 Proton adalah ekosistem yang hebat. Jadi, mereka mencoba menjadi seperti pesaing Google di mana mereka menawarkan *drive* dan dokumen kolaboratif dan *spreadsheet* dan VPN dan kalender, dan semua hal berbeda ini serta email. Jadi, ini bisa menjadi ekosistem yang sangat bagus. Kami menggunakannya untuk perusahaan kami. Semua email kami berada di dalam ekosistem Proton. Sekarang jelas beberapa alat ini mungkin tidak sehalus Google, karena Google memiliki sekitar 85 miliar orang yang bekerja untuk perusahaan mereka pada, seperti, fitur emoji, bukan? Dan kemudian Anda memiliki Proton. Ia tidak akan memiliki jumlah orang yang sama. Tetapi sebagian besar orang di Google benar-benar fokus pada sisi iklan. Dan banyak perilaku eksploitatif yang buruk. Dan Anda semacam memiliki pilihan, bukan?
 
-Kita dapat terus menggunakan produk yang selalu kita gunakan. Seperti hal yang sama dengan Facebook yang saya katakan sebelumnya. Banyak dari kita mungkin mendaftar ke Gmail tanpa memahami bahwa Google adalah perusahaan periklanan. Itu model bisnis mereka. Kita hanya berpikir ini adalah hal gratis di internet dan gratis karena ada di *ether*. Mengapa Anda perlu membayar untuk sesuatu, karena itu hanya angka satu dan nol? Mengapa itu harus ada biayanya?
+Kita dapat terus menggunakan produk yang selalu kita gunakan. Seperti hal yang sama dengan Facebook yang saya katakan sebelumnya. Banyak dari kita mungkin mendaftar ke Gmail tanpa memahami bahwa Google adalah perusahaan periklanan. Itu model bisnis mereka. Kita hanya berpikir ini adalah hal gratis di internet dan gratis karena ada di *QAU*. Mengapa Anda perlu membayar untuk sesuatu, karena itu hanya angka satu dan nol? Mengapa itu harus ada biayanya?
 
 Jadi, kita semua mendaftar saja, dan kemudian kelembaman menguasai kita, dan hanya karena kebiasaan kita telah membangun semua kontak kita dan segalanya di ekosistem Google. Kita memiliki alat yang dapat kita gunakan untuk menggantinya sekarang. Dan saya sangat mendorong Anda — jangan merasa Anda perlu segera beralih. Siapkan saja akun. Buat saja dan itu ada di sana, bukan? Ambil saja langkah pertama untuk pindah.
 

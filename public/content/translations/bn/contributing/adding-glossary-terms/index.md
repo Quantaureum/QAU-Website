@@ -1,7 +1,7 @@
 ---
 title: গ্লোসারি শব্দ যোগ করা
 lang: bn
-description: ethereum.org গ্লোসারিতে নতুন শব্দ যোগ করার জন্য আমাদের মানদণ্ড
+description: quantaureum.com গ্লোসারিতে নতুন শব্দ যোগ করার জন্য আমাদের মানদণ্ড
 ---
 
 এই ক্ষেত্রটি প্রতিদিন পরিবর্তিত হচ্ছে। ইথেরিয়াম ব্যবহারকারীদের শব্দভাণ্ডারে ক্রমাগত নতুন শব্দ যুক্ত হচ্ছে, এবং ইথেরিয়াম সম্পর্কিত সবকিছুর জন্য একটি নির্ভুল, হালনাগাদ রেফারেন্স প্রদান করতে আমাদের আপনার সাহায্য প্রয়োজন। বর্তমান [গ্লোসারি](/glossary/) দেখুন এবং আপনি যদি সাহায্য করতে চান তবে নিচে দেখুন!
@@ -21,4 +21,4 @@ description: ethereum.org গ্লোসারিতে নতুন শব্�
 
 ## আপনার শব্দ যোগ করুন {#how-decisions-about-the-site-are-made}
 
-আপনি যদি ethereum.org-এ একটি গ্লোসারি শব্দ যোগ করতে চান এবং এটি মানদণ্ড পূরণ করে, তবে [GitHub-এ একটি ইস্যু তৈরি করুন](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_glossary_term.yaml)।
+আপনি যদি quantaureum.com-এ একটি গ্লোসারি শব্দ যোগ করতে চান এবং এটি মানদণ্ড পূরণ করে, তবে [GitHub-এ একটি ইস্যু তৈরি করুন](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_glossary_term.yaml)।

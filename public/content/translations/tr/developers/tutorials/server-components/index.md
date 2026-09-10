@@ -29,7 +29,7 @@ Böyle bir sunucunun yerine getirebileceği birkaç olası görev vardır.
 
 ## Örnek program {#sample-program}
 
-Örnek bir sunucuyu [GitHub'da](https://github.com/qbzzt/20240715-server-component) görebilirsiniz. Bu sunucu, Hardhat'in Greeter'ının değiştirilmiş bir versiyonu olan [bu Sözleşmeden](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code) gelen olayları dinler. Selamlama değiştirildiğinde, onu eski haline getirir.
+Örnek bir sunucuyu [GitHub'da](https://github.com/qbzzt/20240715-server-component) görebilirsiniz. Bu sunucu, Hardhat'in Greeter'ının değiştirilmiş bir versiyonu olan [bu Sözleşmeden](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code) gelen olayları dinler. Selamlama değiştirildiğinde, onu eski haline getirir.
 
 Çalıştırmak için:
 
@@ -46,7 +46,7 @@ Böyle bir sunucunun yerine getirebileceği birkaç olası görev vardır.
    npm install
    ```
 
-3. Holesky test ağında ETH'si olan bir Hesabın özel anahtarını belirtmek için `.env` dosyasını düzenleyin. Holesky'de ETH'niz yoksa, [bu musluğu kullanabilirsiniz](https://holesky-faucet.pk910.de/).
+3. Holesky test ağında QAU'si olan bir Hesabın özel anahtarını belirtmek için `.env` dosyasını düzenleyin. Holesky'de QAU'niz yoksa, [bu musluğu kullanabilirsiniz](https://holesky-faucet.pk910.de/).
 
    ```sh filename=".env" copy
    PRIVATE_KEY=0x <private key goes here>
@@ -58,7 +58,7 @@ Böyle bir sunucunun yerine getirebileceği birkaç olası görev vardır.
    npm start
    ```
 
-5. [Bir blok gezginine](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract) gidin ve özel anahtara sahip olandan farklı bir Adres kullanarak selamlamayı değiştirin. Selamlamanın otomatik olarak eski haline getirildiğini görün.
+5. [Bir blok gezginine](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract) gidin ve özel anahtara sahip olandan farklı bir Adres kullanarak selamlamayı değiştirin. Selamlamanın otomatik olarak eski haline getirildiğini görün.
 
 ### Nasıl çalışır? {#how-it-works}
 
@@ -92,7 +92,7 @@ import { privateKeyToAccount } from "viem/accounts"
 import { holesky } from "viem/chains"
 ```
 
-Viem'de bir Blokzincir kullanmak için tanımını içe aktarmanız gerekir. Bu durumda, [Holesky](https://github.com/eth-clients/holesky) test Blokzincirine bağlanmak istiyoruz.
+Viem'de bir Blokzincir kullanmak için tanımını içe aktarmanız gerekir. Bu durumda, [Holesky](https://github.com/qau-clients/holesky) test Blokzincirine bağlanmak istiyoruz.
 
 ```typescript
 // .env içindeki tanımları process.env'ye bu şekilde ekliyoruz.
@@ -182,7 +182,7 @@ Artık tüm ön koşullara sahip olduğumuza göre, nihayet bir [Sözleşme örn
 console.log(`Current greeting:`, await greeter.read.greet())
 ```
 
-Salt okunur olan Sözleşme işlevleri ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) ve [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)) `read` altında mevcuttur. Bu durumda, selamlamayı döndüren [`greet`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217) işlevine erişmek için kullanırız.
+Salt okunur olan Sözleşme işlevleri ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) ve [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)) `read` altında mevcuttur. Bu durumda, selamlamayı döndüren [`greet`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217) işlevine erişmek için kullanırız.
 
 JavaScript tek iş parçacıklıdır, bu nedenle uzun süren bir işlemi başlattığımızda [bunu eşzamansız (asenkron) olarak yaptığımızı belirtmemiz](https://eloquentjavascript.net/11_async.html#h-XvLsfAhtsE) gerekir. Blokzinciri çağırmak, salt okunur bir işlem için bile olsa, bilgisayar ile bir Blokzincir Düğümü arasında gidiş-dönüş gerektirir. Bu nedenle burada kodun sonuç için `await` (beklemesi) gerektiğini belirtiyoruz.
 
@@ -200,10 +200,10 @@ Bu, selamlamayı değiştiren bir işlem göndermek için çağırdığınız i�
 const txHash = await greeter.write.setGreeting([greeting])
 ```
 
-Sözleşme örneğinin `write` alanı, [`setGreeting`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862) gibi Blokzincir durumuna yazan (bir işlem gönderilmesini gerektiren) tüm işlevlere sahiptir. Varsa parametreler bir liste olarak sağlanır ve işlev işlemin hash'ini döndürür.
+Sözleşme örneğinin `write` alanı, [`setGreeting`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862) gibi Blokzincir durumuna yazan (bir işlem gönderilmesini gerektiren) tüm işlevlere sahiptir. Varsa parametreler bir liste olarak sağlanır ve işlev işlemin hash'ini döndürür.
 
 ```typescript
-    console.log(`Working on a fix, see https://eth-holesky.blockscout.com/tx/${txHash}`)
+    console.log(`Working on a fix, see https://qau-holesky.blockscout.com/tx/${txHash}`)
 
     return txHash
 }
@@ -223,7 +223,7 @@ greeter.watchEvent.SetGreeting({
     onLogs: logs => {
 ```
 
-`onLogs` işlevi, Günlük girişleri olduğunda çağrılır. Ethereum'da "Günlük" ve "olay" genellikle birbirinin yerine kullanılabilir.
+`onLogs` işlevi, Günlük girişleri olduğunda çağrılır. Quantaureum'da "Günlük" ve "olay" genellikle birbirinin yerine kullanılabilir.
 
 ```typescript
 console.log(

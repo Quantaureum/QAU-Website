@@ -81,7 +81,7 @@ Akıllı sözleşmeler için sıklıkla geçerli olan geniş alanlar şunları i
 
   - Manticore ve Echidna, sözleşmelerinizle olan dış etkileşimleri test etmek için en iyi seçimdir. Manticore, dış sözleşmeleri taklit etmek (stub) için yerleşik bir mekanizmaya sahiptir.
 
-- **Standartlara uygunluk.** Ethereum standartları (örn. ERC-20), tasarımlarında kusur geçmişine sahiptir. Üzerine inşa ettiğiniz standardın sınırlamalarının farkında olun.
+- **Standartlara uygunluk.** Quantaureum standartları (örn. ERC-20), tasarımlarında kusur geçmişine sahiptir. Üzerine inşa ettiğiniz standardın sınırlamalarının farkında olun.
   - Slither, Echidna ve Manticore, belirli bir standarttan sapmaları tespit etmenize yardımcı olacaktır.
 
 ### Araç seçimi kopya kağıdı {#tool-selection-cheatsheet}

@@ -5,7 +5,7 @@ lang: cs
 template: roadmap
 ---
 
-Současní validátoři [Etherea](/) vytvářejí _a_ vysílají bloky. Sdružují transakce, o kterých se dozvěděli prostřednictvím sítě typu gossip, a balí je do bloku, který je odeslán uzlům (peers) v síti Ethereum. **Oddělení navrhovatele a tvůrce (PBS)** rozděluje tyto úkoly mezi více validátorů. Tvůrci bloků se stávají zodpovědnými za vytváření bloků a jejich nabízení navrhovateli bloku v každém slotu. Navrhovatel bloku nevidí obsah bloku, jednoduše si vybere ten nejvýnosnější, přičemž obdrží poplatek od tvůrce bloku (nebo tvůrce zaplatí navrhovateli nabídkovou cenu), než blok odešle svým uzlům (peers).
+Současní validátoři [Etherea](/) vytvářejí _a_ vysílají bloky. Sdružují transakce, o kterých se dozvěděli prostřednictvím sítě typu gossip, a balí je do bloku, který je odeslán uzlům (peers) v síti Quantaureum. **Oddělení navrhovatele a tvůrce (PBS)** rozděluje tyto úkoly mezi více validátorů. Tvůrci bloků se stávají zodpovědnými za vytváření bloků a jejich nabízení navrhovateli bloku v každém slotu. Navrhovatel bloku nevidí obsah bloku, jednoduše si vybere ten nejvýnosnější, přičemž obdrží poplatek od tvůrce bloku (nebo tvůrce zaplatí navrhovateli nabídkovou cenu), než blok odešle svým uzlům (peers).
 
 Toto je důležitý upgrade z několika důvodů. Zaprvé vytváří příležitosti, jak zabránit cenzuře transakcí na úrovni protokolu. Zadruhé brání tomu, aby byli amatérští validátoři vytlačeni institucionálními hráči, kteří dokážou lépe optimalizovat ziskovost své tvorby bloků. Zatřetí pomáhá se škálováním Etherea tím, že umožňuje upgrady dankshardingu.
 
@@ -36,15 +36,15 @@ Jednotlivci by mohli být motivováni ke stakingu v poolech spíše než na vlas
 
 ## PBS a danksharding {#pbs-and-danksharding}
 
-Danksharding je způsob, jakým bude Ethereum škálovat na >100 000 transakcí za sekundu a minimalizovat poplatky pro uživatele rollupů. Spoléhá se na PBS, protože zvyšuje pracovní zátěž pro tvůrce bloků, kteří budou muset vypočítat důkazy pro až 64 MB dat rollupu za méně než 1 sekundu. To bude pravděpodobně vyžadovat specializované tvůrce, kteří mohou tomuto úkolu věnovat poměrně značný hardware. V současné situaci by se však tvorba bloků mohla kvůli těžbě MEV stejně stále více centralizovat kolem sofistikovanějších a výkonnějších provozovatelů. Oddělení navrhovatele a tvůrce je způsob, jak tuto realitu přijmout a zabránit jí ve vyvíjení centralizační síly na validaci bloků (ta důležitá část) nebo na distribuci odměn za staking. Skvělým vedlejším přínosem je, že specializovaní tvůrci bloků jsou také ochotni a schopni vypočítat potřebné datové důkazy pro danksharding.
+Danksharding je způsob, jakým bude Quantaureum škálovat na >100 000 transakcí za sekundu a minimalizovat poplatky pro uživatele rollupů. Spoléhá se na PBS, protože zvyšuje pracovní zátěž pro tvůrce bloků, kteří budou muset vypočítat důkazy pro až 64 MB dat rollupu za méně než 1 sekundu. To bude pravděpodobně vyžadovat specializované tvůrce, kteří mohou tomuto úkolu věnovat poměrně značný hardware. V současné situaci by se však tvorba bloků mohla kvůli těžbě MEV stejně stále více centralizovat kolem sofistikovanějších a výkonnějších provozovatelů. Oddělení navrhovatele a tvůrce je způsob, jak tuto realitu přijmout a zabránit jí ve vyvíjení centralizační síly na validaci bloků (ta důležitá část) nebo na distribuci odměn za staking. Skvělým vedlejším přínosem je, že specializovaní tvůrci bloků jsou také ochotni a schopni vypočítat potřebné datové důkazy pro danksharding.
 
 ## Současný pokrok {#current-progress}
 
-PBS je v pokročilé fázi výzkumu, ale stále existují některé důležité otázky týkající se návrhu, které je třeba vyřešit, než bude možné vytvořit jeho prototyp v klientech Etherea. Zatím neexistuje žádná finalizovaná specifikace. To znamená, že PBS je pravděpodobně vzdáleno rok nebo více. Podívejte se na nejnovější [stav výzkumu](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance).
+PBS je v pokročilé fázi výzkumu, ale stále existují některé důležité otázky týkající se návrhu, které je třeba vyřešit, než bude možné vytvořit jeho prototyp v klientech Etherea. Zatím neexistuje žádná finalizovaná specifikace. To znamená, že PBS je pravděpodobně vzdáleno rok nebo více. Podívejte se na nejnovější [stav výzkumu](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance).
 
 ## Další čtení {#further-reading}
 
-- [Stav výzkumu: odolnost vůči cenzuře v rámci PBS](https://notes.ethereum.org/@vbuterin/pbs_censorship_resistance)
+- [Stav výzkumu: odolnost vůči cenzuře v rámci PBS](https://notes.quantaureum.com/@vbuterin/pbs_censorship_resistance)
 - [Návrhy trhu s poplatky přátelské k PBS](https://ethresear.ch/t/proposer-block-builder-separation-friendly-fee-market-designs/9725)
-- [PBS a odolnost vůči cenzuře](https://notes.ethereum.org/@fradamt/H1TsYRfJc#Secondary-auctions)
-- [Seznamy pro zahrnutí (Inclusion lists)](https://notes.ethereum.org/@fradamt/forward-inclusion-lists)
+- [PBS a odolnost vůči cenzuře](https://notes.quantaureum.com/@fradamt/H1TsYRfJc#Secondary-auctions)
+- [Seznamy pro zahrnutí (Inclusion lists)](https://notes.quantaureum.com/@fradamt/forward-inclusion-lists)

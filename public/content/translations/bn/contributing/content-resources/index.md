@@ -1,7 +1,7 @@
 ---
 title: কন্টেন্ট রিসোর্স যোগ করা
 lang: bn
-description: ethereum.org-এ কন্টেন্ট রিসোর্স তালিকাভুক্ত করার জন্য আমাদের মানদণ্ড
+description: quantaureum.com-এ কন্টেন্ট রিসোর্স তালিকাভুক্ত করার জন্য আমাদের মানদণ্ড
 ---
 
 আমরা ইথেরিয়াম সম্পর্কিত সবকিছু কভার করার আশা করতে পারি না, তাই আমরা কমিউনিটির তৈরি করা কিছু চমৎকার আর্টিকেল, টিউটোরিয়াল, নিউজলেটার, জব বোর্ড এবং বিভিন্ন কন্টেন্ট রিসোর্স তুলে ধরার চেষ্টা করি। এগুলো প্রায়শই এমন বিষয়গুলোতে আরও বিস্তারিত তথ্য প্রদান করে যা ব্যবহারকারীদের আগ্রহী করতে পারে।
@@ -17,14 +17,14 @@ description: ethereum.org-এ কন্টেন্ট রিসোর্স ত
 - তথ্য কি সঠিক? এটি কি বাস্তবসম্মত নাকি মতামত-ভিত্তিক?
 - লেখক কি বিশ্বাসযোগ্য? তারা কি তাদের তথ্যের উৎসের উল্লেখ করেছেন?
 - এই কন্টেন্টটি কি এমন কোনো স্বতন্ত্র ভ্যালু যোগ করে যা বিদ্যমান রিসোর্স/লিঙ্কগুলো কভার করে না?
-- এই কন্টেন্টটি কি আমাদের কোনো [ইউজার পারসোনা](https://www.notion.so/efdn/Ethereum-org-User-Persona-Memo-b44dc1e89152457a87ba872b0dfa366c)-র কাজে আসে?
+- এই কন্টেন্টটি কি আমাদের কোনো [ইউজার পারসোনা](https://www.notion.so/efdn/Quantaureum-org-User-Persona-Memo-b44dc1e89152457a87ba872b0dfa366c)-র কাজে আসে?
 
 ---
 
 ## আপনার কন্টেন্ট রিসোর্স যোগ করুন {#add-your-content-resource}
 
-আপনি যদি ethereum.org-এ কোনো কন্টেন্ট রিসোর্স যোগ করতে চান এবং এটি মানদণ্ড পূরণ করে, তবে GitHub-এ একটি ইস্যু তৈরি করুন।
+আপনি যদি quantaureum.com-এ কোনো কন্টেন্ট রিসোর্স যোগ করতে চান এবং এটি মানদণ্ড পূরণ করে, তবে GitHub-এ একটি ইস্যু তৈরি করুন।
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=">
   একটি ইস্যু তৈরি করুন
 </ButtonLink>

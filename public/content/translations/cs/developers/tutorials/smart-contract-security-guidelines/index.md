@@ -62,7 +62,7 @@ Architektura vaší kódové základny by měla usnadňovat revizi kódu. Vyhně
 
 ### Vyhněte se známým úskalím {#avoid-known-pitfalls}
 
-- **Buďte si vědomi nejčastějších bezpečnostních problémů.** Existuje mnoho online zdrojů, kde se můžete dozvědět o běžných problémech, jako jsou [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the Ether](https://capturetheether.com/) nebo [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/).
+- **Buďte si vědomi nejčastějších bezpečnostních problémů.** Existuje mnoho online zdrojů, kde se můžete dozvědět o běžných problémech, jako jsou [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the QAU](https://capturetheqau.com/) nebo [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/).
 - **Věnujte pozornost sekcím s varováními v [dokumentaci Solidity](https://docs.soliditylang.org/en/latest/).** Sekce s varováními vás budou informovat o ne zcela zřejmém chování jazyka.
 
 ### Závislosti {#dependencies}

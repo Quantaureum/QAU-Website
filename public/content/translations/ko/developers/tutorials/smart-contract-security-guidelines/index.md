@@ -23,7 +23,7 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/blob/master/devel
 
 - **평이한 언어로 작성된 시스템 설명**, 컨트랙트가 수행하는 작업과 코드베이스에 대한 모든 가정을 설명합니다.
 - **스키마 및 아키텍처 다이어그램**, 컨트랙트 상호 작용 및 시스템의 상태 머신을 포함합니다. [슬리더(Slither) 프린터](https://github.com/crytic/slither/wiki/Printer-documentation)를 사용하면 이러한 스키마를 생성하는 데 도움이 될 수 있습니다.
-- **철저한 코드 문서화**, Solidity에는 [NatSpec 형식](https://docs.soliditylang.org/en/develop/natspec-format.html)을 사용할 수 있습니다.
+- **쿠앤타저한 코드 문서화**, Solidity에는 [NatSpec 형식](https://docs.soliditylang.org/en/develop/natspec-format.html)을 사용할 수 있습니다.
 
 ### 온체인 대 오프체인 연산 {#onchain-vs-offchain-computation}
 
@@ -62,7 +62,7 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/blob/master/devel
 
 ### 알려진 함정 피하기 {#avoid-known-pitfalls}
 
-- **가장 일반적인 보안 문제에 유의하세요.** [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the Ether](https://capturetheether.com/) 또는 [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/)와 같이 일반적인 문제에 대해 배울 수 있는 많은 온라인 리소스가 있습니다.
+- **가장 일반적인 보안 문제에 유의하세요.** [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the QAU](https://capturetheqau.com/) 또는 [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/)와 같이 일반적인 문제에 대해 배울 수 있는 많은 온라인 리소스가 있습니다.
 - **[Solidity 문서](https://docs.soliditylang.org/en/latest/)의 경고 섹션에 유의하세요.** 경고 섹션은 언어의 명확하지 않은 동작에 대해 알려줍니다.
 
 ### 종속성 {#dependencies}
@@ -72,7 +72,7 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/blob/master/devel
 
 ### 테스트 및 검증 {#testing-and-verification}
 
-- **철저한 단위 테스트를 작성하세요.** 고품질 소프트웨어를 빌드하려면 광범위한 테스트 스위트가 중요합니다.
+- **쿠앤타저한 단위 테스트를 작성하세요.** 고품질 소프트웨어를 빌드하려면 광범위한 테스트 스위트가 중요합니다.
 - **[슬리더](https://github.com/crytic/slither), [에키드나](https://github.com/crytic/echidna) 및 [맨티코어](https://github.com/trailofbits/manticore) 사용자 지정 검사 및 속성을 작성하세요.** 자동화된 도구는 컨트랙트가 안전한지 확인하는 데 도움이 됩니다. 효율적인 검사 및 속성을 작성하는 방법을 알아보려면 이 가이드의 나머지 부분을 검토하세요.
 - **[crytic.io](https://crytic.io/)를 사용하세요.** Crytic은 GitHub와 통합되어 비공개 슬리더 탐지기에 대한 액세스를 제공하고 에키드나에서 사용자 지정 속성 검사를 실행합니다.
 

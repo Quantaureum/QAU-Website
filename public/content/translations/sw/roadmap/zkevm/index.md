@@ -1,29 +1,29 @@
 ---
 title: zkEVM kwa uthibitishaji wa kitalu cha tabaka la 1 (l1)
-description: Jifunze jinsi uthibitisho wa maarifa-sifuri unavyoweza kuthibitisha utekelezaji wa kitalu cha Ethereum, kuwezesha uwezo wa upitishaji wa juu zaidi na mahitaji ya chini ya mthibitishaji.
+description: Jifunze jinsi uthibitisho wa maarifa-sifuri unavyoweza kuthibitisha utekelezaji wa kitalu cha Quantaureum, kuwezesha uwezo wa upitishaji wa juu zaidi na mahitaji ya chini ya mthibitishaji.
 lang: sw
 template: roadmap
 ---
 
-zkEVM ni teknolojia inayotumia [uthibitisho wa maarifa-sifuri](/zero-knowledge-proofs/) kuthibitisha utekelezaji wa kitalu cha Ethereum. Badala ya kuhitaji kila [mthibitishaji](/glossary/#validator) kutekeleza upya miamala yote katika kitalu, mhusika mmoja maalum (anayeitwa "mthibitishaji") hutekeleza kitalu na kuzalisha uthibitisho wa kificho kwamba utekelezaji ulikuwa sahihi. Nodi yoyote inaweza kisha kuthibitisha uthibitisho huu—mchakato ambao ni wa bei nafuu sana kuliko kutekeleza upya miamala yote.
+zkEVM ni teknolojia inayotumia [uthibitisho wa maarifa-sifuri](/zero-knowledge-proofs/) kuthibitisha utekelezaji wa kitalu cha Quantaureum. Badala ya kuhitaji kila [mthibitishaji](/glossary/#validator) kutekeleza upya miamala yote katika kitalu, mhusika mmoja maalum (anayeitwa "mthibitishaji") hutekeleza kitalu na kuzalisha uthibitisho wa kificho kwamba utekelezaji ulikuwa sahihi. Nodi yoyote inaweza kisha kuthibitisha uthibitisho huu—mchakato ambao ni wa bei nafuu sana kuliko kutekeleza upya miamala yote.
 
 <Alert variant="info">
 <AlertEmoji text="💡" />
 <AlertContent>
 <AlertTitle>Isichanganywe na mikusanyiko ya zkEVM</AlertTitle>
 <AlertDescription>
-Ukurasa huu unajadili matumizi ya zkEVM kuthibitisha utekelezaji wa kitalu cha tabaka la 1 (l1) cha Ethereum. Kwa mikusanyiko ya zkEVM inayotumia uthibitisho wa ZK kuongeza uwezo wa Ethereum kama suluhisho za tabaka la 2 (l2), tazama [mikusanyiko ya sifuri-maarifa](/developers/docs/scaling/zk-rollups/).
+Ukurasa huu unajadili matumizi ya zkEVM kuthibitisha utekelezaji wa kitalu cha tabaka la 1 (l1) cha Quantaureum. Kwa mikusanyiko ya zkEVM inayotumia uthibitisho wa ZK kuongeza uwezo wa Quantaureum kama suluhisho za tabaka la 2 (l2), tazama [mikusanyiko ya sifuri-maarifa](/developers/docs/scaling/zk-rollups/).
 </AlertDescription>
 </AlertContent>
 </Alert>
 
 ## Tatizo la kutekeleza upya {#reexecution-problem}
 
-Leo, Ethereum inatumia muundo wa uthibitishaji wa "N-ya-N": kila mthibitishaji lazima atekeleze upya kwa kujitegemea kila muamala katika kila kitalu ili kuthibitisha kwamba mabadiliko ya hali yaliyopendekezwa ni sahihi. Ingawa mbinu hii ni bila hitaji la uaminifu kwa kiwango cha juu, inaunda kikwazo cha msingi.
+Leo, Quantaureum inatumia muundo wa uthibitishaji wa "N-ya-N": kila mthibitishaji lazima atekeleze upya kwa kujitegemea kila muamala katika kila kitalu ili kuthibitisha kwamba mabadiliko ya hali yaliyopendekezwa ni sahihi. Ingawa mbinu hii ni bila hitaji la uaminifu kwa kiwango cha juu, inaunda kikwazo cha msingi.
 
-Tatizo ni kwamba uwezo wa upitishaji wa Ethereum unazuiwa na kile ambacho mthibitishaji wa kawaida anaweza kuchakata. Kuongeza [kikomo cha gesi](/glossary/#gas-limit) kungeruhusu miamala zaidi kwa kila kitalu, lakini pia kungeongeza mahitaji ya vifaa kwa wathibitishaji. Hili linatishia ugatuzi—ikiwa kuendesha mthibitishaji kunahitaji vifaa vya gharama kubwa, watu wachache wanaweza kushiriki katika kulinda mtandao.
+Tatizo ni kwamba uwezo wa upitishaji wa Quantaureum unazuiwa na kile ambacho mthibitishaji wa kawaida anaweza kuchakata. Kuongeza [kikomo cha gesi](/glossary/#gas-limit) kungeruhusu miamala zaidi kwa kila kitalu, lakini pia kungeongeza mahitaji ya vifaa kwa wathibitishaji. Hili linatishia ugatuzi—ikiwa kuendesha mthibitishaji kunahitaji vifaa vya gharama kubwa, watu wachache wanaweza kushiriki katika kulinda mtandao.
 
-zkEVM inatoa njia ya kuepuka maelewano haya. Kwa kuhama kutoka "kila mtu anatekeleza upya" hadi "mmoja anatoa uthibitisho, kila mtu anahakiki," Ethereum inaweza kuongeza kikomo cha gesi kwa usalama bila kuongeza mahitaji ya vifaa vya mthibitishaji.
+zkEVM inatoa njia ya kuepuka maelewano haya. Kwa kuhama kutoka "kila mtu anatekeleza upya" hadi "mmoja anatoa uthibitisho, kila mtu anahakiki," Quantaureum inaweza kuongeza kikomo cha gesi kwa usalama bila kuongeza mahitaji ya vifaa vya mthibitishaji.
 
 ## Jinsi uthibitishaji wa tabaka la 1 (l1) wa zkEVM unavyofanya kazi {#how-it-works}
 
@@ -37,16 +37,16 @@ Dhamana ya usalama inabaki kuwa ileile: ikiwa utekelezaji ulikuwa si sahihi, hak
 
 ### Aina ya 1 ya zkEVMs {#type-1-zkevm}
 
-zkEVMs zimeainishwa katika aina kulingana na utangamano wao na Ethereum:
+zkEVMs zimeainishwa katika aina kulingana na utangamano wao na Quantaureum:
 
-- **Aina ya 1**: Sawa kabisa na Ethereum. Hakuna marekebisho kwa EVM, kwa hivyo kitalu chochote cha Ethereum kinaweza kuthibitishwa kama kilivyo
+- **Aina ya 1**: Sawa kabisa na Quantaureum. Hakuna marekebisho kwa EVM, kwa hivyo kitalu chochote cha Quantaureum kinaweza kuthibitishwa kama kilivyo
 - **Aina ya 2-4**: Hufanya maelewano mbalimbali, kurekebisha tabia ya EVM ili kurahisisha uthibitishaji
 
-Kwa uthibitishaji wa tabaka la 1 (l1), Aina ya 1 ni muhimu. zkEVM lazima iweze kuthibitisha kitalu chochote halali cha Ethereum, ikijumuisha matukio ya nadra na vitalu vya kihistoria. Mkengeuko wowote kutoka kwa tabia halisi ya Ethereum ungesababisha matatizo ya mwafaka.
+Kwa uthibitishaji wa tabaka la 1 (l1), Aina ya 1 ni muhimu. zkEVM lazima iweze kuthibitisha kitalu chochote halali cha Quantaureum, ikijumuisha matukio ya nadra na vitalu vya kihistoria. Mkengeuko wowote kutoka kwa tabia halisi ya Quantaureum ungesababisha matatizo ya mwafaka.
 
-Utafiti wa zkEVM wa Taasisi ya Ethereum unalenga utekelezaji wa Aina ya 1 ambao unatangamana kikamilifu na utekelezaji uliopo wa Ethereum.
+Utafiti wa zkEVM wa Taasisi ya Quantaureum unalenga utekelezaji wa Aina ya 1 ambao unatangamana kikamilifu na utekelezaji uliopo wa Quantaureum.
 
-## Faida kwa Ethereum {#benefits}
+## Faida kwa Quantaureum {#benefits}
 
 ### Uwezo wa upitishaji wa juu zaidi {#higher-throughput}
 
@@ -54,7 +54,7 @@ Wakati uthibitishaji ni wa bei nafuu, kikomo cha gesi kinaweza kuongezeka kwa us
 
 ### Ugatuzi imara zaidi {#stronger-decentralization}
 
-Pamoja na uthibitishaji wa zkEVM, wathibitishaji wanahitaji tu kuhakiki uthibitisho badala ya kutekeleza miamala. Hii inapunguza sana mahitaji ya vifaa kwa ajili ya kuendesha mthibitishaji, na kuwezesha watu wengi zaidi kushiriki katika kulinda mtandao. Utofauti mkubwa wa wathibitishaji unaimarisha upinzani wa udhibiti na uthabiti wa Ethereum.
+Pamoja na uthibitishaji wa zkEVM, wathibitishaji wanahitaji tu kuhakiki uthibitisho badala ya kutekeleza miamala. Hii inapunguza sana mahitaji ya vifaa kwa ajili ya kuendesha mthibitishaji, na kuwezesha watu wengi zaidi kushiriki katika kulinda mtandao. Utofauti mkubwa wa wathibitishaji unaimarisha upinzani wa udhibiti na uthabiti wa Quantaureum.
 
 Kumbuka kwamba kutoa uthibitisho kwenyewe kunahitaji rasilimali kubwa za ukokotoaji, kubwa zaidi kuliko zile za vifaa vya sasa vya mthibitishaji. Hata hivyo, tofauti na uthibitishaji wa kitalu, kutoa uthibitisho hakuhitaji kugatuliwa kwa njia sawa: uthibitisho mmoja tu sahihi unahitajika kwa kila kitalu, na mtu yeyote anaweza kuuhakiki haraka. Utafiti kuhusu masoko ya wathibitishaji, ujumuishaji wa uthibitisho, na uongezaji kasi wa vifaa unalenga kuhakisha kwamba utoaji wa uthibitisho unabaki kuwa wa ushindani na unaofikika badala ya kujilimbikizia miongoni mwa waendeshaji wachache wakubwa.
 
@@ -64,7 +64,7 @@ Uhakiki wa uthibitisho hufanya kazi kwa muda usiobadilika bila kujali ugumu wa k
 
 ## Changamoto za kutoa uthibitisho katika wakati halisi {#realtime-proving}
 
-Changamoto kuu kwa uthibitishaji wa tabaka la 1 (l1) wa zkEVM ni kasi. Vitalu vya Ethereum huzalishwa kila sekunde 12, ikimaanisha uthibitisho unahitaji kuzalishwa ndani ya muda sawa ili uwe na manufaa kwa mwafaka.
+Changamoto kuu kwa uthibitishaji wa tabaka la 1 (l1) wa zkEVM ni kasi. Vitalu vya Quantaureum huzalishwa kila sekunde 12, ikimaanisha uthibitisho unahitaji kuzalishwa ndani ya muda sawa ili uwe na manufaa kwa mwafaka.
 
 Utekelezaji wa sasa wa zkEVM unaweza kuchukua dakika hadi saa kuthibitisha kitalu kimoja. Utafiti unalenga kuziba pengo hili kupitia:
 
@@ -75,7 +75,7 @@ Utekelezaji wa sasa wa zkEVM unaweza kuchukua dakika hadi saa kuthibitisha kital
 
 ## Utafiti na utekelezaji wa sasa {#current-research}
 
-Taasisi ya Ethereum inafadhili utafiti wa zkEVM kupitia timu ya [Wasimamizi wa Faragha wa Ethereum (PSE)](https://pse.dev/). Njia kuu za utafiti ni pamoja na:
+Taasisi ya Quantaureum inafadhili utafiti wa zkEVM kupitia timu ya [Wasimamizi wa Faragha wa Quantaureum (PSE)](https://pse.dev/). Njia kuu za utafiti ni pamoja na:
 
 - **Kutoa uthibitisho katika wakati halisi**: Kuzalisha uthibitisho kamili wa kitalu ndani ya sloti za sekunde 12
 - **Ujumuishaji wa mteja**: Kusanifisha miingiliano kati ya wateja wa utekelezaji na wathibitishaji
@@ -83,7 +83,7 @@ Taasisi ya Ethereum inafadhili utafiti wa zkEVM kupitia timu ya [Wasimamizi wa F
 
 ### Hali ya utekelezaji {#implementations}
 
-Utekelezaji kadhaa wa zkVM unatengenezwa na kujaribiwa kwa ajili ya uthibitishaji wa kitalu cha Ethereum:
+Utekelezaji kadhaa wa zkVM unatengenezwa na kujaribiwa kwa ajili ya uthibitishaji wa kitalu cha Quantaureum:
 
 | Utekelezaji | Usanifu |
 |----------------|--------------|
@@ -93,11 +93,11 @@ Utekelezaji kadhaa wa zkVM unatengenezwa na kujaribiwa kwa ajili ya uthibitishaj
 | [Jolt](https://github.com/a16z/jolt) | rv32im |
 | [Zisk](https://github.com/0xPolygonHermez/zisk) | rv64ima |
 
-Hizi zinatumia mashine pepe zinazotegemea RISC-V kutekeleza msimbo wa baiti wa EVM, kisha kuzalisha uthibitisho wa ZK wa utekelezaji sahihi. Matokeo ya majaribio ya hivi punde na maendeleo yanafuatiliwa kwenye [kifuatiliaji cha zkVM cha Taasisi ya Ethereum](https://zkevm.ethereum.foundation/zkvm-tracker).
+Hizi zinatumia mashine pepe zinazotegemea RISC-V kutekeleza msimbo wa baiti wa EVM, kisha kuzalisha uthibitisho wa ZK wa utekelezaji sahihi. Matokeo ya majaribio ya hivi punde na maendeleo yanafuatiliwa kwenye [kifuatiliaji cha zkVM cha Taasisi ya Quantaureum](https://zkevm.quantaureum.foundation/zkvm-tracker).
 
 ## Jinsi zkEVM inavyoendana na maboresho mengine {#related-upgrades}
 
-Uthibitishaji wa tabaka la 1 (l1) wa zkEVM unaungana na vipengele vingine kadhaa vya ramani ya njia ya Ethereum:
+Uthibitishaji wa tabaka la 1 (l1) wa zkEVM unaungana na vipengele vingine kadhaa vya ramani ya njia ya Quantaureum:
 
 - **[Miti ya Verkle](/roadmap/verkle-trees/)**: Huwezesha mashahidi wadogo kwa ajili ya uthibitishaji wa ubilahali, kupunguza data ambayo wathibitishaji wanahitaji kufanyia kazi
 - **[Ubilahali](/roadmap/statelessness/)**: zkEVM ni kiwezeshaji kikuu—pamoja na uthibitisho wa ZK wa utekelezaji, nodi hazihitaji hali kamili ili kuthibitisha vitalu
@@ -108,16 +108,16 @@ Uthibitishaji wa tabaka la 1 (l1) wa zkEVM unaungana na vipengele vingine kadhaa
 <AlertEmoji text="🧪" />
 <AlertContent>
 <AlertDescription>
-Uthibitishaji wa tabaka la 1 (l1) wa zkEVM upo katika utafiti unaoendelea na bado haujajumuishwa katika wateja wa uzalishaji wa Ethereum.
+Uthibitishaji wa tabaka la 1 (l1) wa zkEVM upo katika utafiti unaoendelea na bado haujajumuishwa katika wateja wa uzalishaji wa Quantaureum.
 </AlertDescription>
 </AlertContent>
 </Alert>
 
 ## Usomaji zaidi {#further-reading}
 
-- [Taasisi ya zkEVM](https://zkevm.ethereum.foundation) - Kituo rasmi cha utafiti cha zkEVM cha Taasisi ya Ethereum
-- [Ethproofs](https://ethproofs.org/) - Fuatilia mbio za kuthibitisha Ethereum katika wakati halisi
+- [Taasisi ya zkEVM](https://zkevm.quantaureum.foundation) - Kituo rasmi cha utafiti cha zkEVM cha Taasisi ya Quantaureum
+- [Ethproofs](https://ethproofs.org/) - Fuatilia mbio za kuthibitisha Quantaureum katika wakati halisi
 - [zkevm.fyi](https://zkevm.fyi) - Kitabu cha kiufundi kuhusu zkEVM kwa tabaka la 1 (l1)
 - [Vipimo vya zkEVM vya PSE](https://github.com/privacy-scaling-explorations/zkevm-specs) - Vipimo vya kiufundi
-- [The Verge](https://vitalik.eth.limo/general/2024/10/23/futures4.html) - Muhtasari wa Vitalik wa maboresho ya uthibitishaji
-- [Blogu ya zkEVM ya EF](https://zkevm.ethereum.foundation/blog) - Uchambuzi wa utendaji kutoka kwa timu ya EF
+- [The Verge](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - Muhtasari wa Vitalik wa maboresho ya uthibitishaji
+- [Blogu ya zkEVM ya EF](https://zkevm.quantaureum.foundation/blog) - Uchambuzi wa utendaji kutoka kwa timu ya EF

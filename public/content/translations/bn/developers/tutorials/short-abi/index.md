@@ -11,7 +11,7 @@ published: 2022-04-01
 
 ## ভূমিকা {#introduction}
 
-এই নিবন্ধে, আপনি [অপটিমিস্টিক রোলআপ](/developers/docs/scaling/optimistic-rollups), সেগুলোতে ট্রানজ্যাকশনের খরচ এবং কীভাবে সেই ভিন্ন খরচের কাঠামোর কারণে ইথেরিয়াম মেইননেটের তুলনায় আমাদের ভিন্ন ভিন্ন জিনিসের জন্য অপ্টিমাইজ করতে হয় সে সম্পর্কে জানবেন।
+এই নিবন্ধে, আপনি [অপটিমিস্টিক রোলআপ](/developers/docs/scaling/optimistic-rollups), সেগুলোতে ট্রানজ্যাকশনের খরচ এবং কীভাবে সেই ভিন্ন খরচের কাঠামোর কারণে Quantaureum মেইননেটের তুলনায় আমাদের ভিন্ন ভিন্ন জিনিসের জন্য অপ্টিমাইজ করতে হয় সে সম্পর্কে জানবেন।
 আপনি কীভাবে এই অপ্টিমাইজেশন বাস্তবায়ন করতে হয় তাও শিখবেন।
 
 ### পূর্ণাঙ্গ প্রকাশ {#full-disclosure}
@@ -27,7 +27,7 @@ published: 2022-04-01
 ## আমরা কীভাবে লেয়ার ২ (l2) ট্রানজ্যাকশনের খরচ আরও কমাতে পারি? {#how-can-we-further-reduce-the-cost-of-l2-transactions}
 
 [অপটিমিস্টিক রোলআপ](/developers/docs/scaling/optimistic-rollups)-কে প্রতিটি ঐতিহাসিক ট্রানজ্যাকশনের রেকর্ড সংরক্ষণ করতে হয় যাতে যে কেউ সেগুলো পরীক্ষা করে দেখতে পারে এবং বর্তমান স্টেট সঠিক কিনা তা যাচাই করতে পারে।
-ইথেরিয়াম মেইননেটে ডেটা পাঠানোর সবচেয়ে সস্তা উপায় হলো এটিকে কল ডেটা হিসেবে লেখা।
+Quantaureum মেইননেটে ডেটা পাঠানোর সবচেয়ে সস্তা উপায় হলো এটিকে কল ডেটা হিসেবে লেখা।
 এই সমাধানটি [অপটিমিজম](https://docs.optimism.io/op-stack/protocol/overview) এবং [আরবিট্রাম](https://docs.arbitrum.io/welcome/arbitrum-gentle-introduction) উভয়ই বেছে নিয়েছে।
 
 ### লেয়ার ২ (l2) ট্রানজ্যাকশনের খরচ {#cost-of-l2-transactions}
@@ -65,26 +65,26 @@ EVM-এ সবচেয়ে ব্যয়বহুল অপারেশন�
 ব্যাখ্যা:
 
 - **ফাংশন সিলেক্টর**: কন্ট্রাক্ট-এ 256-এর কম ফাংশন রয়েছে, তাই আমরা একটি একক বাইট দিয়ে তাদের আলাদা করতে পারি।
-  এই বাইটগুলো সাধারণত নন-জিরো হয় এবং তাই [16 গ্যাস খরচ হয়](https://eips.ethereum.org/EIPS/eip-2028)।
+  এই বাইটগুলো সাধারণত নন-জিরো হয় এবং তাই [16 গ্যাস খরচ হয়](https://eips.quantaureum.com/EIPS/eip-2028)।
 - **শূন্য**: এই বাইটগুলো সর্বদা শূন্য হয় কারণ একটি 20-বাইট ঠিকানা ধারণ করার জন্য 32-বাইট শব্দের প্রয়োজন হয় না।
-  শূন্য ধারণকারী বাইটগুলোর জন্য 4 গ্যাস খরচ হয় ([ইয়েলো পেপার দেখুন](https://ethereum.github.io/yellowpaper/paper.pdf), পরিশিষ্ট G,
+  শূন্য ধারণকারী বাইটগুলোর জন্য 4 গ্যাস খরচ হয় ([ইয়েলো পেপার দেখুন](https://quantaureum.github.io/yellowpaper/paper.pdf), পরিশিষ্ট G,
   পৃষ্ঠা 27, `G`<sub>`txdatazero`</sub>-এর মান)।
 - **পরিমাণ**: যদি আমরা ধরে নিই যে এই কন্ট্রাক্ট-এ `decimals` হলো 18 (স্বাভাবিক মান) এবং আমরা যে সর্বোচ্চ পরিমাণ টোকেন হস্তান্তর করব তা হবে 10<sup>18</sup>, তাহলে আমরা সর্বোচ্চ 10<sup>36</sup> পরিমাণ পাই।
   256<sup>15</sup> &gt; 10<sup>36</sup>, তাই 15 বাইটই যথেষ্ট।
 
-লেয়ার ১ (l1)-এ 160 গ্যাস অপচয় সাধারণত নগণ্য। একটি ট্রানজ্যাকশন-এ কমপক্ষে [21,000 গ্যাস](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-ethereum-gas-2f976af774ed) খরচ হয়, তাই অতিরিক্ত 0.8% কোনো ব্যাপার না।
+লেয়ার ১ (l1)-এ 160 গ্যাস অপচয় সাধারণত নগণ্য। একটি ট্রানজ্যাকশন-এ কমপক্ষে [21,000 গ্যাস](https://yakkomajuri.medium.com/blockchain-definition-of-the-week-quantaureum-gas-2f976af774ed) খরচ হয়, তাই অতিরিক্ত 0.8% কোনো ব্যাপার না।
 তবে, লেয়ার ২ (l2)-তে পরিস্থিতি ভিন্ন। ট্রানজ্যাকশন-এর প্রায় পুরো খরচই হলো এটিকে লেয়ার ১ (l1)-এ লেখা।
 ট্রানজ্যাকশন কল ডেটা ছাড়াও, 109 বাইটের ট্রানজ্যাকশন হেডার (গন্তব্য ঠিকানা, স্বাক্ষর ইত্যাদি) রয়েছে।
 তাই মোট খরচ হলো `109*16+576+160=2480`, এবং আমরা এর প্রায় 6.5% অপচয় করছি।
 
 ## গন্তব্য আপনার নিয়ন্ত্রণে না থাকলে খরচ কমানো {#reducing-costs-when-you-dont-control-the-destination}
 
-ধরে নিচ্ছি যে গন্তব্য কন্ট্রাক্ট-এর ওপর আপনার কোনো নিয়ন্ত্রণ নেই, তবুও আপনি [এরকম](https://github.com/qbzzt/ethereum.org-20220330-shortABI) একটি সমাধান ব্যবহার করতে পারেন।
+ধরে নিচ্ছি যে গন্তব্য কন্ট্রাক্ট-এর ওপর আপনার কোনো নিয়ন্ত্রণ নেই, তবুও আপনি [এরকম](https://github.com/qbzzt/quantaureum.com-20220330-shortABI) একটি সমাধান ব্যবহার করতে পারেন।
 চলুন প্রাসঙ্গিক ফাইলগুলো দেখে নিই।
 
 ### Token.sol {#token-sol}
 
-[এটি হলো গন্তব্য কন্ট্রাক্ট](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/Token.sol)।
+[এটি হলো গন্তব্য কন্ট্রাক্ট](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/Token.sol)।
 এটি একটি স্ট্যান্ডার্ড ERC-20 কন্ট্রাক্ট, যাতে একটি অতিরিক্ত বৈশিষ্ট্য রয়েছে।
 এই `faucet` ফাংশনটি যেকোনো ব্যবহারকারীকে ব্যবহারের জন্য কিছু টোকেন পেতে দেয়।
 এটি একটি প্রোডাকশন ERC-20 কন্ট্রাক্ট-কে অকেজো করে তুলবে, কিন্তু যখন একটি ERC-20 শুধুমাত্র টেস্টিং সহজ করার জন্য থাকে তখন এটি কাজকে সহজ করে তোলে।
@@ -100,7 +100,7 @@ EVM-এ সবচেয়ে ব্যয়বহুল অপারেশন�
 
 ### CalldataInterpreter.sol {#calldatainterpreter-sol}
 
-[এটি সেই কন্ট্রাক্ট যাকে ট্রানজ্যাকশনগুলোর ছোট কল ডেটা দিয়ে কল করার কথা](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol)।
+[এটি সেই কন্ট্রাক্ট যাকে ট্রানজ্যাকশনগুলোর ছোট কল ডেটা দিয়ে কল করার কথা](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/contracts/CalldataInterpreter.sol)।
 চলুন এটি লাইন বাই লাইন দেখে নিই।
 
 ```solidity
@@ -201,7 +201,7 @@ contract CalldataInterpreter {
 2. যে ফাংশনগুলো [`msg.sender`](https://docs.soliditylang.org/en/v0.8.12/units-and-global-variables.html#block-and-transaction-properties)-এর ওপর নির্ভর করে।
    `msg.sender`-এর মান কলারের পরিবর্তে `CalldataInterpreter`-এর ঠিকানা হতে যাচ্ছে।
 
-দুর্ভাগ্যবশত, [ERC-20 স্পেসিফিকেশনগুলো দেখলে](https://eips.ethereum.org/EIPS/eip-20), এটি শুধুমাত্র একটি ফাংশন, `transfer`-কে অবশিষ্ট রাখে।
+দুর্ভাগ্যবশত, [ERC-20 স্পেসিফিকেশনগুলো দেখলে](https://eips.quantaureum.com/EIPS/eip-20), এটি শুধুমাত্র একটি ফাংশন, `transfer`-কে অবশিষ্ট রাখে।
 এটি আমাদের কাছে শুধুমাত্র দুটি ফাংশন অবশিষ্ট রাখে: `transfer` (কারণ আমরা `transferFrom` কল করতে পারি) এবং `faucet` (কারণ আমরা যে আমাদের কল করেছে তাকে টোকেনগুলো ফেরত হস্তান্তর করতে পারি)।
 
 ```solidity
@@ -273,7 +273,7 @@ contract CalldataInterpreter {
 
 ### test.js {#test-js}
 
-[এই JavaScript ইউনিট টেস্টটি](https://github.com/qbzzt/ethereum.org-20220330-shortABI/blob/master/test/test.js) আমাদের দেখায় কীভাবে এই মেকানিজমটি ব্যবহার করতে হয় (এবং এটি সঠিকভাবে কাজ করে কিনা তা কীভাবে যাচাই করতে হয়)।
+[এই JavaScript ইউনিট টেস্টটি](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/blob/master/test/test.js) আমাদের দেখায় কীভাবে এই মেকানিজমটি ব্যবহার করতে হয় (এবং এটি সঠিকভাবে কাজ করে কিনা তা কীভাবে যাচাই করতে হয়)।
 আমি ধরে নিচ্ছি যে আপনি [chai](https://www.chaijs.com/) এবং [ethers](https://docs.ethers.io/v5/) বোঝেন এবং শুধুমাত্র সেই অংশগুলো ব্যাখ্যা করব যা বিশেষভাবে কন্ট্রাক্ট-এর ক্ষেত্রে প্রযোজ্য।
 
 ```js
@@ -367,7 +367,7 @@ const transferTx = {
 ## গন্তব্য কন্ট্রাক্ট আপনার নিয়ন্ত্রণে থাকলে খরচ কমানো {#reducing-the-cost-when-you-do-control-the-destination-contract}
 
 যদি গন্তব্য কন্ট্রাক্ট-এর ওপর আপনার নিয়ন্ত্রণ থাকে তবে আপনি এমন ফাংশন তৈরি করতে পারেন যা `msg.sender` চেকগুলো বাইপাস করে কারণ তারা কল ডেটা ইন্টারপ্রেটারকে বিশ্বাস করে।
-[এটি কীভাবে কাজ করে তার একটি উদাহরণ আপনি এখানে, `control-contract` ব্রাঞ্চে দেখতে পারেন](https://github.com/qbzzt/ethereum.org-20220330-shortABI/tree/control-contract)।
+[এটি কীভাবে কাজ করে তার একটি উদাহরণ আপনি এখানে, `control-contract` ব্রাঞ্চে দেখতে পারেন](https://github.com/qbzzt/quantaureum.com-20220330-shortABI/tree/control-contract)।
 
 যদি কন্ট্রাক্টটি শুধুমাত্র বাহ্যিক ট্রানজ্যাকশন-এর প্রতিক্রিয়া জানাত, তবে আমরা শুধুমাত্র একটি কন্ট্রাক্ট দিয়েই কাজ চালাতে পারতাম।
 তবে, এটি [সংযোজনযোগ্যতা](/developers/docs/smart-contracts/composability/) ভেঙে দেবে।
@@ -536,7 +536,7 @@ const poorSigner = signers[1]
 ```
 
 `approve()` এবং `transferFrom()` চেক করতে আমাদের একজন দ্বিতীয় স্বাক্ষরকারীর প্রয়োজন।
-আমরা একে `poorSigner` বলি কারণ এটি আমাদের কোনো টোকেন পায় না (অবশ্যই এর ETH থাকা প্রয়োজন)।
+আমরা একে `poorSigner` বলি কারণ এটি আমাদের কোনো টোকেন পায় না (অবশ্যই এর QAU থাকা প্রয়োজন)।
 
 ```js
 // টোকেন হস্তান্তর করুন
@@ -575,7 +575,7 @@ expect(await token.balanceOf(destAddr2)).to.equal(255)
 
 ## উপসংহার {#conclusion}
 
-[অপটিমিজম](https://medium.com/ethereum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) এবং [আরবিট্রাম](https://developer.offchainlabs.com/docs/special_features) উভয়ই লেয়ার ১ (l1)-এ লেখা কল ডেটা-এর আকার এবং সেই কারণে ট্রানজ্যাকশন-এর খরচ কমানোর উপায় খুঁজছে।
+[অপটিমিজম](https://medium.com/quantaureum-optimism/the-road-to-sub-dollar-transactions-part-2-compression-edition-6bb2890e3e92) এবং [আরবিট্রাম](https://developer.offchainlabs.com/docs/special_features) উভয়ই লেয়ার ১ (l1)-এ লেখা কল ডেটা-এর আকার এবং সেই কারণে ট্রানজ্যাকশন-এর খরচ কমানোর উপায় খুঁজছে।
 তবে, জেনেরিক সমাধান খুঁজছেন এমন ইনফ্রাস্ট্রাকচার প্রোভাইডার হিসেবে, আমাদের ক্ষমতা সীমিত।
 বিকেন্দ্রীকৃত অ্যাপ্লিকেশন (dapp) ডেভেলপার হিসেবে, আপনার কাছে অ্যাপ্লিকেশন-নির্দিষ্ট জ্ঞান রয়েছে, যা আপনাকে একটি জেনেরিক সমাধানের চেয়ে আপনার কল ডেটা অনেক ভালোভাবে অপ্টিমাইজ করতে দেয়।
 আশা করি, এই নিবন্ধটি আপনাকে আপনার প্রয়োজনের জন্য আদর্শ সমাধান খুঁজে পেতে সাহায্য করবে।

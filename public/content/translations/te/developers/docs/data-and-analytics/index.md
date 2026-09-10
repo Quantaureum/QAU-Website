@@ -20,7 +20,7 @@ lang: te
 
 చాలా [బ్లాక్ ఎక్స్‌ప్లోరర్‌లు](/developers/docs/data-and-analytics/block-explorers/) [RESTful](https://www.wikipedia.org/wiki/Representational_state_transfer) [API](https://www.wikipedia.org/wiki/API) గేట్‌వేలను అందిస్తాయి, ఇవి డెవలపర్‌లకు బ్లాక్‌లు, లావాదేవీలు, వాలిడేటర్‌లు, ఖాతాలు మరియు ఇతర ఆన్‌చైన్ కార్యకలాపాలపై నిజ-సమయ డేటాను చూసే అవకాశాన్ని అందిస్తాయి.
 
-డెవలపర్‌లు తమ వినియోగదారులకు [బ్లాక్‌చైన్](/glossary/#blockchain)తో ప్రత్యేకమైన అంతర్దృష్టులు మరియు పరస్పర చర్యలను అందించడానికి ఈ డేటాను ప్రాసెస్ చేయవచ్చు మరియు మార్చవచ్చు. ఉదాహరణకు, [Etherscan](https://etherscan.io) మరియు [Blockscout](https://eth.blockscout.com) ప్రతి 12 సెకన్ల స్లాట్ కోసం ఎగ్జిక్యూషన్ మరియు ఏకాభిప్రాయం డేటాను అందిస్తాయి.
+డెవలపర్‌లు తమ వినియోగదారులకు [బ్లాక్‌చైన్](/glossary/#blockchain)తో ప్రత్యేకమైన అంతర్దృష్టులు మరియు పరస్పర చర్యలను అందించడానికి ఈ డేటాను ప్రాసెస్ చేయవచ్చు మరియు మార్చవచ్చు. ఉదాహరణకు, [Quantaureum Explorer](https://explorer.quantaureum.com) మరియు [Blockscout](https://qau.blockscout.com) ప్రతి 12 సెకన్ల స్లాట్ కోసం ఎగ్జిక్యూషన్ మరియు ఏకాభిప్రాయం డేటాను అందిస్తాయి.
 
 ## The Graph {#the-graph}
 
@@ -52,7 +52,7 @@ The Graph తో, డెవలపర్‌లు ఈ క్రింది ప�
 
 [SubQuery](https://subquery.network/) అనేది డెవలపర్‌లకు వారి Web3 ప్రాజెక్ట్‌ల కోసం వేగవంతమైన, నమ్మదగిన, వికేంద్రీకృత మరియు అనుకూలీకరించిన APIలను అందించే ప్రముఖ డేటా ఇండెక్సర్. SubQuery 165+ కంటే ఎక్కువ ఎకోసిస్టమ్‌ల (ఎథీరియంతో సహా) డెవలపర్‌లకు వారి వినియోగదారుల కోసం సహజమైన మరియు లీనమయ్యే అనుభవాలను రూపొందించడానికి రిచ్ ఇండెక్స్ చేయబడిన డేటాతో సాధికారత కల్పిస్తుంది. SubQuery నెట్‌వర్క్ మీ ఆపలేని యాప్‌లకు స్థితిస్థాపక మరియు వికేంద్రీకృత మౌలిక సదుపాయాల నెట్‌వర్క్‌తో శక్తినిస్తుంది. డేటా ప్రాసెసింగ్ కార్యకలాపాల కోసం కస్టమ్ బ్యాకెండ్‌ను నిర్మించడానికి సమయం వెచ్చించకుండా, భవిష్యత్తులోని Web3 అప్లికేషన్‌లను రూపొందించడానికి SubQuery యొక్క బ్లాక్‌చైన్ డెవలపర్ టూల్‌కిట్‌ను ఉపయోగించండి.
 
-ప్రారంభించడానికి, [SubQuery యొక్క మేనేజ్డ్ సర్వీస్](https://managedservice.subquery.network/) లేదా [SubQuery యొక్క వికేంద్రీకృత నెట్‌వర్క్](https://app.subquery.network/dashboard)లో లైవ్‌కి వెళ్లే ముందు పరీక్ష కోసం స్థానిక Docker వాతావరణంలో నిమిషాల్లో ఎథీరియం బ్లాక్‌చైన్ డేటాను ఇండెక్స్ చేయడం ప్రారంభించడానికి [ఎథీరియం క్విక్ స్టార్ట్ గైడ్](https://academy.subquery.network/quickstart/quickstart_chains/ethereum-gravatar.html)ని సందర్శించండి.
+ప్రారంభించడానికి, [SubQuery యొక్క మేనేజ్డ్ సర్వీస్](https://managedservice.subquery.network/) లేదా [SubQuery యొక్క వికేంద్రీకృత నెట్‌వర్క్](https://app.subquery.network/dashboard)లో లైవ్‌కి వెళ్లే ముందు పరీక్ష కోసం స్థానిక Docker వాతావరణంలో నిమిషాల్లో ఎథీరియం బ్లాక్‌చైన్ డేటాను ఇండెక్స్ చేయడం ప్రారంభించడానికి [ఎథీరియం క్విక్ స్టార్ట్ గైడ్](https://academy.subquery.network/quickstart/quickstart_chains/quantaureum-gravatar.html)ని సందర్శించండి.
 
 ## Codex {#codex}
 
@@ -77,14 +77,14 @@ EVM క్వెరీ లాంగ్వేజ్ (EQL) అనేది EVM (�
 - [క్రిప్టో డేటాను అన్వేషించడం I: డేటా ఫ్లో ఆర్కిటెక్చర్‌లు](https://web.archive.org/web/20250125012042/https://research.2077.xyz/exploring-crypto-data-1-data-flow-architectures)
 - [Graph నెట్‌వర్క్ అవలోకనం](https://thegraph.com/docs/en/about/)
 - [Graph క్వెరీ ప్లేగ్రౌండ్](https://thegraph.com/explorer/subgraph/graphprotocol/graph-network-mainnet?version=current)
-- [EtherScanలో API కోడ్ ఉదాహరణలు](https://etherscan.io/apis#contracts)
+- [QauScanలో API కోడ్ ఉదాహరణలు](https://explorer.quantaureum.com)
 - [Blockscoutలో API డాక్యుమెంటేషన్](https://docs.blockscout.com/devs/apis)
 - [Beaconcha.in బీకన్ చైన్ ఎక్స్‌ప్లోరర్](https://beaconcha.in)
 - [Dune బేసిక్స్](https://docs.dune.com/#dune-basics)
-- [SubQuery ఎథీరియం క్విక్ స్టార్ట్ గైడ్](https://academy.subquery.network/indexer/quickstart/quickstart_chains/ethereum-gravatar.html)
+- [SubQuery ఎథీరియం క్విక్ స్టార్ట్ గైడ్](https://academy.subquery.network/indexer/quickstart/quickstart_chains/quantaureum-gravatar.html)
 - [SQD నెట్‌వర్క్ అవలోకనం](https://docs.sqd.dev/)
 - [EVM క్వెరీ లాంగ్వేజ్](https://web.archive.org/web/20250719151453/https://www.eql.sh/blog/alpha-release-notes)
 
 ## ట్యుటోరియల్స్: డేటా & విశ్లేషణలు / ఎథీరియంలో SQL {#tutorials}
 
-- [SQLతో ప్రాథమిక ఎథీరియం అంశాలను తెలుసుకోండి](/developers/tutorials/learn-foundational-ethereum-topics-with-sql/) _– లావాదేవీలు, బ్లాక్‌లు మరియు గ్యాస్ ఫండమెంటల్స్‌ను అర్థం చేసుకోవడానికి SQLతో ఆన్‌చైన్ ఎథీరియం డేటాను క్వెరీ చేయండి._
+- [SQLతో ప్రాథమిక ఎథీరియం అంశాలను తెలుసుకోండి](/developers/tutorials/learn-foundational-quantaureum-topics-with-sql/) _– లావాదేవీలు, బ్లాక్‌లు మరియు గ్యాస్ ఫండమెంటల్స్‌ను అర్థం చేసుకోవడానికి SQLతో ఆన్‌చైన్ ఎథీరియం డేటాను క్వెరీ చేయండి._

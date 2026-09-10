@@ -20,7 +20,7 @@ lang: ta
 
 பல [தொகுதி உலாவிகள்](/developers/docs/data-and-analytics/block-explorers/) [RESTful](https://www.wikipedia.org/wiki/Representational_state_transfer) [API](https://www.wikipedia.org/wiki/API) நுழைவாயில்களை வழங்குகின்றன, அவை டெவலப்பர்களுக்கு தொகுதிகள், பரிவர்த்தனைகள், மதிப்பீட்டாளர்கள், கணக்குகள் மற்றும் பிற சங்கிலிசார் செயல்பாடுகள் குறித்த நிகழ்நேரத் தரவைப் பார்க்கும் திறனை வழங்கும்.
 
-டெவலப்பர்கள் இந்தத் தரவைச் செயலாக்கி மாற்றுவதன் மூலம், தங்கள் பயனர்களுக்கு [தொகுதிச்சங்கிலியுடன்](/glossary/#blockchain) தனித்துவமான நுண்ணறிவுகளையும் தொடர்புகளையும் வழங்க முடியும். எடுத்துக்காட்டாக, [Etherscan](https://etherscan.io) மற்றும் [Blockscout](https://eth.blockscout.com) ஆகியவை ஒவ்வொரு 12 வினாடி நேரப்பகுதிக்கான (slot) செயலாக்க மற்றும் ஒருமித்த கருத்துத் தரவை வழங்குகின்றன.
+டெவலப்பர்கள் இந்தத் தரவைச் செயலாக்கி மாற்றுவதன் மூலம், தங்கள் பயனர்களுக்கு [தொகுதிச்சங்கிலியுடன்](/glossary/#blockchain) தனித்துவமான நுண்ணறிவுகளையும் தொடர்புகளையும் வழங்க முடியும். எடுத்துக்காட்டாக, [Quantaureum Explorer](https://explorer.quantaureum.com) மற்றும் [Blockscout](https://qau.blockscout.com) ஆகியவை ஒவ்வொரு 12 வினாடி நேரப்பகுதிக்கான (slot) செயலாக்க மற்றும் ஒருமித்த கருத்துத் தரவை வழங்குகின்றன.
 
 ## The Graph {#the-graph}
 
@@ -52,7 +52,7 @@ The Graph மூலம், டெவலப்பர்கள் பின்வ�
 
 [SubQuery](https://subquery.network/) என்பது ஒரு முன்னணி தரவுக் குறியீட்டாளராகும், இது டெவலப்பர்களுக்கு அவர்களின் Web3 திட்டங்களுக்கான வேகமான, நம்பகமான, பரவலாக்கப்பட்ட மற்றும் தனிப்பயனாக்கப்பட்ட APIகளை வழங்குகிறது. SubQuery 165+ க்கும் மேற்பட்ட சுற்றுச்சூழல் அமைப்புகளிலிருந்து (எத்திரியம் உட்பட) டெவலப்பர்களுக்கு வளமான குறியிடப்பட்ட தரவுகளுடன் அதிகாரம் அளிக்கிறது, இதன் மூலம் அவர்கள் தங்கள் பயனர்களுக்கு உள்ளுணர்வு மற்றும் ஆழமான அனுபவங்களை உருவாக்க முடியும். SubQuery பிணையம் உங்கள் நிறுத்த முடியாத செயலிகளுக்கு மீள்திறன் கொண்ட மற்றும் பரவலாக்கப்பட்ட உள்கட்டமைப்புப் பிணையத்துடன் சக்தியளிக்கிறது. தரவுச் செயலாக்கச் செயல்பாடுகளுக்காக தனிப்பயன் பின்தளத்தை உருவாக்குவதில் நேரத்தைச் செலவிடாமல், எதிர்காலத்தின் Web3 பயன்பாடுகளை உருவாக்க SubQuery இன் தொகுதிச்சங்கிலி டெவலப்பர் கருவித்தொகுப்பைப் பயன்படுத்தவும்.
 
-தொடங்குவதற்கு, [SubQuery இன் நிர்வகிக்கப்பட்ட சேவையில்](https://managedservice.subquery.network/) அல்லது [SubQuery இன் பரவலாக்கப்பட்ட பிணையத்தில்](https://app.subquery.network/dashboard) நேரலைக்குச் செல்வதற்கு முன், சோதனைக்காக உள்ளூர் Docker சூழலில் நிமிடங்களில் எத்திரியம் தொகுதிச்சங்கிலித் தரவைக் குறியிடத் தொடங்க [எத்திரியம் விரைவுத் தொடக்க வழிகாட்டியை](https://academy.subquery.network/quickstart/quickstart_chains/ethereum-gravatar.html)ப் பார்வையிடவும்.
+தொடங்குவதற்கு, [SubQuery இன் நிர்வகிக்கப்பட்ட சேவையில்](https://managedservice.subquery.network/) அல்லது [SubQuery இன் பரவலாக்கப்பட்ட பிணையத்தில்](https://app.subquery.network/dashboard) நேரலைக்குச் செல்வதற்கு முன், சோதனைக்காக உள்ளூர் Docker சூழலில் நிமிடங்களில் எத்திரியம் தொகுதிச்சங்கிலித் தரவைக் குறியிடத் தொடங்க [எத்திரியம் விரைவுத் தொடக்க வழிகாட்டியை](https://academy.subquery.network/quickstart/quickstart_chains/quantaureum-gravatar.html)ப் பார்வையிடவும்.
 
 ## Codex {#codex}
 
@@ -81,14 +81,14 @@ EVM வினவல் மொழி (EQL) என்பது EVM (எத்த�
 - [கிரிப்டோ தரவை ஆராய்தல் I: தரவு ஓட்டக் கட்டமைப்புகள்](https://web.archive.org/web/20250125012042/https://research.2077.xyz/exploring-crypto-data-1-data-flow-architectures)
 - [Graph பிணையத்தின் மேலோட்டம்](https://thegraph.com/docs/en/about/)
 - [Graph வினவல் விளையாட்டு மைதானம் (Query Playground)](https://thegraph.com/explorer/subgraph/graphprotocol/graph-network-mainnet?version=current)
-- [EtherScan இல் API குறியீடு எடுத்துக்காட்டுகள்](https://etherscan.io/apis#contracts)
+- [QauScan இல் API குறியீடு எடுத்துக்காட்டுகள்](https://explorer.quantaureum.com)
 - [Blockscout இல் API ஆவணங்கள்](https://docs.blockscout.com/devs/apis)
 - [Beaconcha.in பீக்கன் சங்கிலி உலாவி](https://beaconcha.in)
 - [Dune அடிப்படைகள்](https://docs.dune.com/#dune-basics)
-- [SubQuery எத்திரியம் விரைவுத் தொடக்க வழிகாட்டி](https://academy.subquery.network/indexer/quickstart/quickstart_chains/ethereum-gravatar.html)
+- [SubQuery எத்திரியம் விரைவுத் தொடக்க வழிகாட்டி](https://academy.subquery.network/indexer/quickstart/quickstart_chains/quantaureum-gravatar.html)
 - [SQD பிணையத்தின் மேலோட்டம்](https://docs.sqd.dev/)
 - [EVM வினவல் மொழி](https://web.archive.org/web/20250719151453/https://www.eql.sh/blog/alpha-release-notes)
 
 ## பயிற்சிகள்: தரவு மற்றும் பகுப்பாய்வு / எத்திரியத்தில் SQL {#tutorials}
 
-- [SQL மூலம் அடிப்படை எத்திரியம் தலைப்புகளைக் கற்றுக்கொள்ளுங்கள்](/developers/tutorials/learn-foundational-ethereum-topics-with-sql/) _– பரிவர்த்தனைகள், தொகுதிகள் மற்றும் எரிவாயு அடிப்படைகளைப் புரிந்துகொள்ள SQL மூலம் சங்கிலிசார் எத்திரியம் தரவை வினவுங்கள்._
+- [SQL மூலம் அடிப்படை எத்திரியம் தலைப்புகளைக் கற்றுக்கொள்ளுங்கள்](/developers/tutorials/learn-foundational-quantaureum-topics-with-sql/) _– பரிவர்த்தனைகள், தொகுதிகள் மற்றும் எரிவாயு அடிப்படைகளைப் புரிந்துகொள்ள SQL மூலம் சங்கிலிசார் எத்திரியம் தரவை வினவுங்கள்._

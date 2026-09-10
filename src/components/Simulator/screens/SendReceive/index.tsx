@@ -5,7 +5,7 @@ import isChromatic from "chromatic"
 
 import type { PhoneScreenProps } from "@/lib/types"
 
-import { useGasEthPrice } from "../../../../hooks/useGasEthPrice"
+import { useGasQauPrice } from "../../../../hooks/useGasQauPrice"
 import {
   ETH_TRANSFER_GAS_UNITS,
   FALLBACK_ETH_PRICE,
@@ -18,29 +18,29 @@ import { WalletHome } from "../../WalletHome"
 import type { TokenBalance } from "../../WalletHome/interfaces"
 
 import { CONTACTS } from "./constants"
-import { ReceivedEther } from "./ReceivedEther"
-import { ReceiveEther } from "./ReceiveEther"
-import { SendEther } from "./SendEther"
+import { ReceivedEther } from "./ReceivedQau"
+import { ReceiveEther } from "./ReceiveQau"
+import { SendEther } from "./SendQau"
 import { SendFromContacts } from "./SendFromContacts"
 import { SendSummary } from "./SendSummary"
 import { Success } from "./Success"
 
 export const SendReceive = ({ nav, ctaLabel }: PhoneScreenProps) => {
   const { progressStepper, step } = nav
-  const { ethPrice: fetchedPrice, gasPrice: fetchedGasPrice } = useGasEthPrice()
-  const ethPrice =
+  const { qauPrice: fetchedPrice, gasPrice: fetchedGasPrice } = useGasQauPrice()
+  const qauPrice =
     fetchedPrice > 1 && !isChromatic() ? fetchedPrice : FALLBACK_ETH_PRICE
   const gasPriceGwei =
     fetchedGasPrice > 0 && !isChromatic()
       ? fetchedGasPrice
       : FALLBACK_GAS_PRICE_GWEI
-  const ethTransferFee = ETH_TRANSFER_GAS_UNITS * gasPriceGwei * 1e-9
-  const ethReceiveAmount = USD_RECEIVE_AMOUNT / ethPrice
+  const qauTransferFee = ETH_TRANSFER_GAS_UNITS * gasPriceGwei * 1e-9
+  const qauReceiveAmount = USD_RECEIVE_AMOUNT / qauPrice
   const [chosenAmount, setChosenAmount] = useState(0)
-  const ethChosenAmount = chosenAmount / ethPrice
+  const qauChosenAmount = chosenAmount / qauPrice
   const [recipient, setRecipient] = useState<string | null>(null)
-  const ethAfterTransfer = Math.max(
-    ethReceiveAmount - chosenAmount / ethPrice - ethTransferFee,
+  const qauAfterTransfer = Math.max(
+    qauReceiveAmount - chosenAmount / qauPrice - qauTransferFee,
     0
   )
 
@@ -59,15 +59,15 @@ export const SendReceive = ({ nav, ctaLabel }: PhoneScreenProps) => {
   const tokenBalancesAfterSend = useMemo<Array<TokenBalance>>(
     () =>
       defaultTokenBalances.map((token) =>
-        token.ticker === "ETH"
+        token.ticker === "QAU"
           ? {
               ...token,
-              amount: ethAfterTransfer,
-              usdConversion: ethPrice,
+              amount: qauAfterTransfer,
+              usdConversion: qauPrice,
             }
           : token
       ),
-    [ethPrice, ethAfterTransfer]
+    [qauPrice, qauAfterTransfer]
   )
 
   return (
@@ -77,17 +77,17 @@ export const SendReceive = ({ nav, ctaLabel }: PhoneScreenProps) => {
       {[2].includes(step) && (
         <ReceivedEther
           nav={nav}
-          ethPrice={ethPrice}
+          qauPrice={qauPrice}
           defaultTokenBalances={defaultTokenBalances}
-          ethReceiveAmount={ethReceiveAmount}
+          qauReceiveAmount={qauReceiveAmount}
           sender={CONTACTS[0].name}
         />
       )}
       {[3].includes(step) && (
         <SendEther
           chosenAmount={chosenAmount}
-          ethPrice={ethPrice}
-          ethBalance={ethReceiveAmount}
+          qauPrice={qauPrice}
+          qauBalance={qauReceiveAmount}
           setChosenAmount={setChosenAmount}
         />
       )}
@@ -97,17 +97,17 @@ export const SendReceive = ({ nav, ctaLabel }: PhoneScreenProps) => {
       {[5].includes(step) && (
         <SendSummary
           chosenAmount={chosenAmount}
-          ethPrice={ethPrice}
-          ethTransferFee={ethTransferFee}
+          qauPrice={qauPrice}
+          qauTransferFee={qauTransferFee}
           recipient={recipient!}
-          ethAvailable={ethReceiveAmount}
+          qauAvailable={qauReceiveAmount}
         />
       )}
       {[6].includes(step) && (
         <Success
           tokenBalances={tokenBalancesAfterSend}
-          ethPrice={ethPrice}
-          sentEthAmount={ethChosenAmount}
+          qauPrice={qauPrice}
+          sentQauAmount={qauChosenAmount}
           recipient={recipient!}
         />
       )}

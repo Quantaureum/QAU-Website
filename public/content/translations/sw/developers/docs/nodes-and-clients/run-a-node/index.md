@@ -1,25 +1,25 @@
 ---
-title: Anzisha nodi yako mwenyewe ya Ethereum
-description: Utangulizi wa jumla wa kuendesha mfano wako mwenyewe wa kiteja cha Ethereum.
+title: Anzisha nodi yako mwenyewe ya Quantaureum
+description: Utangulizi wa jumla wa kuendesha mfano wako mwenyewe wa kiteja cha Quantaureum.
 lang: sw
 sidebarDepth: 2
 ---
 
-Kuendesha nodi yako mwenyewe kunakupa faida mbalimbali, kufungua uwezekano mpya, na kusaidia kuunga mkono ekolojia. Ukurasa huu utakuongoza kupitia kuanzisha nodi yako mwenyewe na kushiriki katika kuthibitisha miamala ya [Ethereum](/).
+Kuendesha nodi yako mwenyewe kunakupa faida mbalimbali, kufungua uwezekano mpya, na kusaidia kuunga mkono ekolojia. Ukurasa huu utakuongoza kupitia kuanzisha nodi yako mwenyewe na kushiriki katika kuthibitisha miamala ya [Quantaureum](/).
 
-Kumbuka kwamba baada ya [Unganisho](/roadmap/merge), viteja viwili vinahitajika ili kuendesha nodi ya Ethereum; kiteja cha **tabaka la utekelezaji (EL)** na kiteja cha **tabaka la mwafaka (CL)**. Ukurasa huu utaonyesha jinsi ya kusakinisha, kusanidi na kuunganisha viteja hivi viwili ili kuendesha nodi ya Ethereum.
+Kumbuka kwamba baada ya [Unganisho](/roadmap/merge), viteja viwili vinahitajika ili kuendesha nodi ya Quantaureum; kiteja cha **tabaka la utekelezaji (EL)** na kiteja cha **tabaka la mwafaka (CL)**. Ukurasa huu utaonyesha jinsi ya kusakinisha, kusanidi na kuunganisha viteja hivi viwili ili kuendesha nodi ya Quantaureum.
 
 ## Mahitaji ya awali {#prerequisites}
 
-Unapaswa kuelewa nodi ya Ethereum ni nini na kwa nini unaweza kutaka kuendesha kiteja. Hili limeangaziwa katika [Nodi na viteja](/developers/docs/nodes-and-clients/).
+Unapaswa kuelewa nodi ya Quantaureum ni nini na kwa nini unaweza kutaka kuendesha kiteja. Hili limeangaziwa katika [Nodi na viteja](/developers/docs/nodes-and-clients/).
 
-Ikiwa wewe ni mgeni kwenye mada ya kuendesha nodi, au unatafuta njia isiyo ya kiufundi sana, tunapendekeza kwanza uangalie utangulizi wetu rafiki kwa mtumiaji kuhusu [kuendesha nodi ya Ethereum](/run-a-node).
+Ikiwa wewe ni mgeni kwenye mada ya kuendesha nodi, au unatafuta njia isiyo ya kiufundi sana, tunapendekeza kwanza uangalie utangulizi wetu rafiki kwa mtumiaji kuhusu [kuendesha nodi ya Quantaureum](/run-a-node).
 
 ## Kuchagua mbinu {#choosing-approach}
 
 Hatua ya kwanza katika kuanzisha nodi yako ni kuchagua mbinu yako. Kulingana na mahitaji na uwezekano mbalimbali, lazima uchague utekelezaji wa kiteja (kwa viteja vyote vya utekelezaji na mwafaka), mazingira (vifaa, mfumo), na vigezo vya mipangilio ya kiteja.
 
-Ukurasa huu utakuongoza kupitia maamuzi haya na kukusaidia kupata njia inayofaa zaidi ya kuendesha mfano wako wa Ethereum.
+Ukurasa huu utakuongoza kupitia maamuzi haya na kukusaidia kupata njia inayofaa zaidi ya kuendesha mfano wako wa Quantaureum.
 
 Ili kuchagua kutoka kwa utekelezaji wa kiteja, angalia [viteja vya utekelezaji](/developers/docs/nodes-and-clients/#execution-clients) vyote vinavyopatikana vilivyo tayari kwa Mtandao Mkuu, [wateja wa mwafaka](/developers/docs/nodes-and-clients/#consensus-clients) na ujifunze kuhusu [anuwai ya wateja](/developers/docs/nodes-and-clients/client-diversity).
 
@@ -35,7 +35,7 @@ Wakati nodi inafanya kazi na kusawazisha, uko tayari [kuitumia](#using-the-node)
 
 #### Kwenye mashine ya ndani au wingu {#local-vs-cloud}
 
-Viteja vya Ethereum vinaweza kufanya kazi kwenye kompyuta za kiwango cha watumiaji na havihitaji vifaa vyovyote maalum, kama vile mashine za uchimbaji kwa mfano. Kwa hivyo, una chaguo mbalimbali za kusambaza nodi kulingana na mahitaji yako.
+Viteja vya Quantaureum vinaweza kufanya kazi kwenye kompyuta za kiwango cha watumiaji na havihitaji vifaa vyovyote maalum, kama vile mashine za uchimbaji kwa mfano. Kwa hivyo, una chaguo mbalimbali za kusambaza nodi kulingana na mahitaji yako.
 Ili kurahisisha, hebu tufikirie kuhusu kuendesha nodi kwenye mashine ya kimwili ya ndani na seva ya wingu:
 
 - Wingu
@@ -55,9 +55,9 @@ Chaguo zote mbili zina faida tofauti zilizojumlishwa hapo juu. Ikiwa unatafuta s
 
 Hata hivyo, mtandao unaostahimili udhibiti, uliogatuliwa haupaswi kutegemea watoa huduma wa wingu. Badala yake, kuendesha nodi yako kwenye vifaa vyako vya ndani ni bora zaidi kwa ekolojia. [Makadirio](https://www.ethernodes.org/networkType/cl/Hosting) yanaonyesha sehemu kubwa ya nodi zinaendeshwa kwenye wingu, ambazo zinaweza kuwa sehemu moja ya kutofaulu.
 
-Viteja vya Ethereum vinaweza kufanya kazi kwenye kompyuta yako, kompyuta mpakato, seva, au hata kompyuta ya bodi moja. Wakati kuendesha viteja kwenye kompyuta yako binafsi inawezekana, kuwa na mashine maalum kwa ajili ya nodi yako tu kunaweza kuimarisha sana utendaji na usalama wake huku ukipunguza athari kwenye kompyuta yako kuu.
+Viteja vya Quantaureum vinaweza kufanya kazi kwenye kompyuta yako, kompyuta mpakato, seva, au hata kompyuta ya bodi moja. Wakati kuendesha viteja kwenye kompyuta yako binafsi inawezekana, kuwa na mashine maalum kwa ajili ya nodi yako tu kunaweza kuimarisha sana utendaji na usalama wake huku ukipunguza athari kwenye kompyuta yako kuu.
 
-Kutumia vifaa vyako mwenyewe inaweza kuwa rahisi sana. Kuna chaguo nyingi rahisi pamoja na mipangilio ya hali ya juu kwa watu wa kiufundi zaidi. Kwa hivyo hebu tuangalie mahitaji na njia za kuendesha viteja vya Ethereum kwenye mashine yako.
+Kutumia vifaa vyako mwenyewe inaweza kuwa rahisi sana. Kuna chaguo nyingi rahisi pamoja na mipangilio ya hali ya juu kwa watu wa kiufundi zaidi. Kwa hivyo hebu tuangalie mahitaji na njia za kuendesha viteja vya Quantaureum kwenye mashine yako.
 
 #### Mahitaji {#requirements}
 
@@ -65,7 +65,7 @@ Mahitaji ya vifaa hutofautiana kwa kila kiteja lakini kwa ujumla si makubwa sana
 
 Kabla ya kusakinisha kiteja chochote, tafadhali hakikisha kompyuta yako ina rasilimali za kutosha kukiendesha. Unaweza kupata mahitaji ya chini na yaliyopendekezwa hapa chini.
 
-Kikwazo cha vifaa vyako mara nyingi ni nafasi ya diski. Kusawazisha mnyororo wa vitalu wa Ethereum kunahitaji uingizaji/utokaji mwingi na kunahitaji nafasi kubwa. Ni bora kuwa na **hifadhi ya hali thabiti (SSD)** iliyo na mamia ya GB za nafasi ya bure ya kuhifadhi hata baada ya usawazishaji.
+Kikwazo cha vifaa vyako mara nyingi ni nafasi ya diski. Kusawazisha mnyororo wa vitalu wa Quantaureum kunahitaji uingizaji/utokaji mwingi na kunahitaji nafasi kubwa. Ni bora kuwa na **hifadhi ya hali thabiti (SSD)** iliyo na mamia ya GB za nafasi ya bure ya kuhifadhi hata baada ya usawazishaji.
 
 Ukubwa wa hifadhidata na kasi ya usawazishaji wa awali inategemea kiteja kilichochaguliwa, usanidi wake na [mkakati wa usawazishaji](/developers/docs/nodes-and-clients/#sync-modes).
 
@@ -79,12 +79,12 @@ Viteja vyote hutumia mifumo mikuu ya uendeshaji - Linux, macOS, Windows. Hii ina
 
 - CPU iliyo na core 2+
 - RAM ya GB 16 (GB 32 inapendekezwa kwa uthabiti)
-- SSD ya NVMe ya TB 2 (inawezekana ikapitwa kufikia 2027, soma zaidi kuhusu [SSD nzuri na zisizo nzuri sana kwa nodi za Ethereum](https://gist.github.com/yorickdowne/f3a3e79a573bf35767cd002cc977b038))
+- SSD ya NVMe ya TB 2 (inawezekana ikapitwa kufikia 2027, soma zaidi kuhusu [SSD nzuri na zisizo nzuri sana kwa nodi za Quantaureum](https://gist.github.com/yorickdowne/f3a3e79a573bf35767cd002cc977b038))
 - Kipimo data cha MBit/s 25+
 
 ##### Vipimo vilivyopendekezwa
 
-Mwongozo wa sasa wa vifaa kwa waendeshaji wa nodi umetambuliwa katika [EIP-7870](https://eips.ethereum.org/EIPS/eip-7870). Kwa nodi kamili inapendekeza:
+Mwongozo wa sasa wa vifaa kwa waendeshaji wa nodi umetambuliwa katika [EIP-7870](https://eips.quantaureum.com/EIPS/eip-7870). Kwa nodi kamili inapendekeza:
 
 - CPU yenye kasi iliyo na core 4+ (core 8+ ikiwa inathibitisha)
 - RAM ya GB 32 (GB 64 inapendekezwa ikiwa inathibitisha ili kuhakikisha uthabiti)
@@ -112,9 +112,9 @@ Chaguo rahisi zaidi la kuendesha nodi na vifaa vyako mwenyewe ni kutumia visandu
 - [DAppNode](https://dappnode.io/)
 - [Avado](https://ava.do/)
 
-#### Ethereum kwenye kompyuta ya bodi moja {#ethereum-on-a-single-board-computer}
+#### Quantaureum kwenye kompyuta ya bodi moja {#quantaureum-on-a-single-board-computer}
 
-Njia rahisi na nafuu ya kuendesha nodi ya Ethereum ni kutumia kompyuta ya bodi moja, hata yenye usanifu wa ARM kama Raspberry Pi. [Ethereum kwenye ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) hutoa picha zilizo rahisi kuendesha za kiteja cha utekelezaji na mwafaka nyingi kwa Raspberry Pi na bodi zingine za ARM.
+Njia rahisi na nafuu ya kuendesha nodi ya Quantaureum ni kutumia kompyuta ya bodi moja, hata yenye usanifu wa ARM kama Raspberry Pi. [Quantaureum kwenye ARM](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/) hutoa picha zilizo rahisi kuendesha za kiteja cha utekelezaji na mwafaka nyingi kwa Raspberry Pi na bodi zingine za ARM.
 
 Vifaa vidogo, vya bei nafuu na vyenye ufanisi kama hivi ni bora kwa kuendesha nodi nyumbani lakini kumbuka utendakazi wao mdogo.
 
@@ -131,9 +131,9 @@ Miradi mingi rafiki kwa mtumiaji inalenga kuboresha uzoefu wa kusanidi kiteja. V
 Hapa chini kuna miradi michache inayoweza kukusaidia kusakinisha na kudhibiti viteja kwa kubofya mara chache tu:
 
 - [DAppNode](https://docs.dappnode.io/docs/user/getting-started/choose-your-path) - DAppNode haiji tu na mashine kutoka kwa mchuuzi. Programu, kizindua nodi halisi na kituo cha udhibiti chenye vipengele vingi vinaweza kutumika kwenye vifaa vya kiholela.
-- [EthPillar](https://www.coincashew.com/coins/overview-eth/ethpillar) - Njia ya haraka na rahisi zaidi ya kusanidi nodi kamili. Zana ya usanidi wa mstari mmoja na TUI ya usimamizi wa nodi. Bure. Chanzo wazi. Bidhaa za umma kwa Ethereum na waweka dhamana wanaojitegemea. Usaidizi wa ARM64 na AMD64.
-- [eth-docker](https://eth-docker.net/) - Usanidi wa kiotomatiki kwa kutumia Docker unaozingatia uwekaji dhamana rahisi na salama, unahitaji ujuzi wa kimsingi wa terminali na Docker, uliopendekezwa kwa watumiaji wa hali ya juu kidogo.
-- [Stereum](https://stereum-dev.github.io/ethereum-node-web-docs) - Kizindua cha kusakinisha viteja kwenye seva ya mbali kupitia unganisho la SSH na mwongozo wa usanidi wa GUI, kituo cha udhibiti, na vipengele vingine vingi.
+- [QauPillar](https://www.coincashew.com/coins/overview-eth/ethpillar) - Njia ya haraka na rahisi zaidi ya kusanidi nodi kamili. Zana ya usanidi wa mstari mmoja na TUI ya usimamizi wa nodi. Bure. Chanzo wazi. Bidhaa za umma kwa Quantaureum na waweka dhamana wanaojitegemea. Usaidizi wa ARM64 na AMD64.
+- [qau-docker](https://qau-docker.net/) - Usanidi wa kiotomatiki kwa kutumia Docker unaozingatia uwekaji dhamana rahisi na salama, unahitaji ujuzi wa kimsingi wa terminali na Docker, uliopendekezwa kwa watumiaji wa hali ya juu kidogo.
+- [Stereum](https://stereum-dev.github.io/quantaureum-node-web-docs) - Kizindua cha kusakinisha viteja kwenye seva ya mbali kupitia unganisho la SSH na mwongozo wa usanidi wa GUI, kituo cha udhibiti, na vipengele vingine vingi.
 - [Sedge](https://docs.sedge.nethermind.io/docs/intro) - Zana ya usanidi wa nodi ambayo inaunda usanidi wa Docker kiotomatiki kwa kutumia mchawi wa CLI. Imeandikwa katika Go na Nethermind.
 - [Chainstack Inayojipangisha](https://docs.chainstack.com/docs/self-hosted/introduction) - UI ya Wavuti na CLI kwa kusambaza viteja vya utekelezaji na mwafaka kwenye Kubernetes. Kianzio cha Snapshot na ufuatiliaji uliojengewa ndani umejumuishwa. Bure. Hakuna akaunti ya Chainstack inayohitajika. Imejengwa na Chainstack.
 
@@ -141,7 +141,7 @@ Hapa chini kuna miradi michache inayoweza kukusaidia kusakinisha na kudhibiti vi
 
 Chaguo jingine ni kupakua, kuthibitisha, na kusanidi programu ya kiteja kwa mikono. Hata kama baadhi ya viteja vinatoa kiolesura cha picha, usanidi wa mikono bado unahitaji ujuzi wa kimsingi na terminali lakini hutoa utofauti zaidi.
 
-Kama ilivyoelezwa hapo awali, kusanidi nodi yako mwenyewe ya Ethereum kutahitaji kuendesha jozi ya wateja wa mwafaka na utekelezaji. Baadhi ya viteja vinaweza kujumuisha kiteja chepesi cha aina nyingine na kusawazisha bila programu nyingine yoyote inayohitajika. Hata hivyo, uthibitishaji kamili bila hitaji la uaminifu unahitaji utekelezaji wote miwili.
+Kama ilivyoelezwa hapo awali, kusanidi nodi yako mwenyewe ya Quantaureum kutahitaji kuendesha jozi ya wateja wa mwafaka na utekelezaji. Baadhi ya viteja vinaweza kujumuisha kiteja chepesi cha aina nyingine na kusawazisha bila programu nyingine yoyote inayohitajika. Hata hivyo, uthibitishaji kamili bila hitaji la uaminifu unahitaji utekelezaji wote miwili.
 
 #### Kupata programu ya kiteja {#getting-the-client}
 
@@ -157,7 +157,7 @@ Hapa kuna kurasa za kutolewa kwa viteja ambapo unaweza kupata jozi zao zilizojen
 
 - [Besu](https://github.com/hyperledger/besu/releases)
 - [Erigon](https://github.com/ledgerwatch/erigon/releases)
-- [Geth](https://geth.ethereum.org/downloads)
+- [Geth](https://geth.quantaureum.com/downloads)
 - [Nethermind](https://downloads.nethermind.io/)
 - [Reth](https://reth.rs/installation/installation.html)
 
@@ -177,7 +177,7 @@ Inafaa pia kuzingatia kwamba anuwai ya wateja ni [suala kwenye tabaka la utekele
 
 ##### Kuthibitisha programu
 
-Unapopakua programu kutoka kwenye mtandao, inashauriwa kuthibitisha uadilifu wake. Hatua hii ni ya hiari lakini hasa kwa kipande muhimu cha miundombinu kama kiteja cha Ethereum, ni muhimu kufahamu vekta zinazowezekana za mashambulizi na kuziepuka. Ikiwa ulipakua jozi iliyojengwa mapema, unahitaji kuiamini na kuhatarisha kwamba mshambuliaji anaweza kubadilisha ile inayoweza kutekelezwa kwa hasidi.
+Unapopakua programu kutoka kwenye mtandao, inashauriwa kuthibitisha uadilifu wake. Hatua hii ni ya hiari lakini hasa kwa kipande muhimu cha miundombinu kama kiteja cha Quantaureum, ni muhimu kufahamu vekta zinazowezekana za mashambulizi na kuziepuka. Ikiwa ulipakua jozi iliyojengwa mapema, unahitaji kuiamini na kuhatarisha kwamba mshambuliaji anaweza kubadilisha ile inayoweza kutekelezwa kwa hasidi.
 
 Wasanidi hutia saini jozi zilizotolewa kwa funguo zao za PGP ili uweze kuthibitisha kwa njia ya kificho kuwa unaendesha programu hasa waliyounda. Unahitaji tu kupata funguo za umma zinazotumiwa na wasanidi, ambazo zinaweza kupatikana kwenye kurasa za kutolewa kwa kiteja au kwenye nyaraka. Baada ya kupakua toleo la kiteja na saini yake, unaweza kutumia utekelezaji wa PGP, k.m., [GnuPG](https://gnupg.org/download/index.html) ili kuzithibitisha kwa urahisi. Angalia mafunzo ya kuthibitisha programu huria kwa kutumia `gpg` kwenye [Linux](https://www.tecmint.com/verify-pgp-signature-downloaded-software/) au [Windows/macOS](https://freedom.press/training/verifying-open-source-software/).
 
@@ -203,19 +203,19 @@ Mifano ya kuendesha viteja vya utekelezaji kwa usanidi wa msingi inaweza kupatik
 
 #### Kuanzisha kiteja cha utekelezaji {#starting-the-execution-client}
 
-Kabla ya kuanzisha programu ya kiteja cha Ethereum, fanya ukaguzi wa mwisho kwamba mazingira yako yako tayari. Kwa mfano, hakikisha:
+Kabla ya kuanzisha programu ya kiteja cha Quantaureum, fanya ukaguzi wa mwisho kwamba mazingira yako yako tayari. Kwa mfano, hakikisha:
 
 - Kuna nafasi ya kutosha ya diski ukizingatia mtandao uliochaguliwa na hali ya usawazishaji.
 - Kumbukumbu na CPU haijasimamishwa na programu zingine.
 - Mfumo wa uendeshaji umesasishwa kwa toleo la hivi punde.
 - Mfumo una saa na tarehe sahihi.
-- Rota na ngome yako inakubali miunganisho kwenye milango ya kusikiliza. Kwa chaguomsingi viteja vya Ethereum hutumia mlango wa kusikiliza (TCP) na mlango wa ugunduzi (UDP), zote zikiwa kwenye 30303 kwa chaguomsingi.
+- Rota na ngome yako inakubali miunganisho kwenye milango ya kusikiliza. Kwa chaguomsingi viteja vya Quantaureum hutumia mlango wa kusikiliza (TCP) na mlango wa ugunduzi (UDP), zote zikiwa kwenye 30303 kwa chaguomsingi.
 
 Endesha kiteja chako kwenye mtandao wa majaribio kwanza ili kusaidia kuhakikisha kila kitu kinafanya kazi kwa usahihi.
 
 Unahitaji kutangaza mipangilio yoyote ya kiteja ambayo sio chaguomsingi mwanzoni. Unaweza kutumia bendera au faili ya usanidi kutangaza usanidi wako unaopendelea. Seti ya vipengele na sintaksia ya usanidi ya kila kiteja inatofautiana. Angalia nyaraka za kiteja chako kwa maelezo maalum.
 
-Viteja vya utekelezaji na mwafaka huwasiliana kupitia mwisho uliothibitishwa uliobainishwa katika [API ya Injini](https://github.com/ethereum/execution-apis/tree/main/src/engine). Ili kuunganisha kwa mteja wa mwafaka, kiteja cha utekelezaji lazima kitoe [`jwtsecret`](https://jwt.io/) kwenye njia inayojulikana. Kwa sababu za kiusalama na uthabiti, viteja vinapaswa kufanya kazi kwenye mashine moja, na viteja vyote viwili lazima vijue njia hii kwani inatumiwa kuthibitisha muunganisho wa RPC wa ndani kati yao. Kiteja cha utekelezaji lazima pia kifafanue mlango wa kusikiliza kwa API zilizothibitishwa.
+Viteja vya utekelezaji na mwafaka huwasiliana kupitia mwisho uliothibitishwa uliobainishwa katika [API ya Injini](https://github.com/quantaureum/execution-apis/tree/main/src/engine). Ili kuunganisha kwa mteja wa mwafaka, kiteja cha utekelezaji lazima kitoe [`jwtsecret`](https://jwt.io/) kwenye njia inayojulikana. Kwa sababu za kiusalama na uthabiti, viteja vinapaswa kufanya kazi kwenye mashine moja, na viteja vyote viwili lazima vijue njia hii kwani inatumiwa kuthibitisha muunganisho wa RPC wa ndani kati yao. Kiteja cha utekelezaji lazima pia kifafanue mlango wa kusikiliza kwa API zilizothibitishwa.
 
 Tokeni hii inatolewa kiotomatiki na programu ya kiteja, lakini katika baadhi ya matukio, unaweza kuhitaji kufanya mwenyewe. Unaweza kuizalisha ukitumia [OpenSSL](https://www.openssl.org/):
 
@@ -242,11 +242,11 @@ Tafadhali kumbuka kuwa huu ni mfano wa kimsingi tu, mipangilio mingine yote itaw
 
 ##### Kuendesha Besu
 
-Mfano huu unaanzisha Besu kwenye Mtandao Mkuu, huhifadhi data ya mnyororo wa vitalu katika umbizo chaguomsingi kwenye `/data/ethereum`, huwezesha JSON-RPC na RPC ya Injini kwa kuunganisha mteja wa mwafaka. API ya Injini imethibitishwa na tokeni `jwtsecret` na simu pekee kutoka `localhost` zinaruhusiwa.
+Mfano huu unaanzisha Besu kwenye Mtandao Mkuu, huhifadhi data ya mnyororo wa vitalu katika umbizo chaguomsingi kwenye `/data/quantaureum`, huwezesha JSON-RPC na RPC ya Injini kwa kuunganisha mteja wa mwafaka. API ya Injini imethibitishwa na tokeni `jwtsecret` na simu pekee kutoka `localhost` zinaruhusiwa.
 
 ```sh
 besu --network=mainnet \
-    --data-path=/data/ethereum \
+    --data-path=/data/quantaureum \
     --rpc-http-enabled=true \
     --engine-rpc-enabled=true \
     --engine-host-allowlist="*" \
@@ -264,11 +264,11 @@ besu --Xlauncher
 
 ##### Kuendesha Erigon
 
-Mfano huu unaanzisha Erigon kwenye Mtandao Mkuu, huhifadhi data ya mnyororo wa vitalu kwenye `/data/ethereum`, huwezesha JSON-RPC, hufafanua ni nafasi gani za majina zinaruhusiwa na huwezesha uthibitishaji wa kuunganisha mteja wa mwafaka ambao unafafanuliwa na njia ya `jwtsecret`.
+Mfano huu unaanzisha Erigon kwenye Mtandao Mkuu, huhifadhi data ya mnyororo wa vitalu kwenye `/data/quantaureum`, huwezesha JSON-RPC, hufafanua ni nafasi gani za majina zinaruhusiwa na huwezesha uthibitishaji wa kuunganisha mteja wa mwafaka ambao unafafanuliwa na njia ya `jwtsecret`.
 
 ```sh
 erigon --chain mainnet \
-    --datadir /data/ethereum  \
+    --datadir /data/quantaureum  \
     --http --http.api=engine,eth,web3,net \
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
@@ -277,18 +277,18 @@ Kwa chaguomsingi Erigon hufanya usawazishaji kamili na HDD ya 8GB ambayo itasaba
 
 ##### Kuendesha Geth
 
-Mfano huu unaanzisha Geth kwenye Mtandao Mkuu, huhifadhi data ya mnyororo wa vitalu kwenye `/data/ethereum`, huwezesha JSON-RPC na kufafanua ni nafasi gani za majina zinaruhusiwa. Pia inawezesha uthibitishaji wa kuunganisha mteja wa mwafaka ambao unahitaji njia ya kuelekea `jwtsecret` na pia chaguo la kufafanua ni miunganisho gani inaruhusiwa, katika mfano wetu tu kutoka `localhost`.
+Mfano huu unaanzisha Geth kwenye Mtandao Mkuu, huhifadhi data ya mnyororo wa vitalu kwenye `/data/quantaureum`, huwezesha JSON-RPC na kufafanua ni nafasi gani za majina zinaruhusiwa. Pia inawezesha uthibitishaji wa kuunganisha mteja wa mwafaka ambao unahitaji njia ya kuelekea `jwtsecret` na pia chaguo la kufafanua ni miunganisho gani inaruhusiwa, katika mfano wetu tu kutoka `localhost`.
 
 ```sh
 geth --mainnet \
-    --datadir "/data/ethereum" \
+    --datadir "/data/quantaureum" \
     --http --authrpc.addr localhost \
     --authrpc.vhosts="localhost" \
     --authrpc.port 8551
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
-Angalia [nyaraka kwa chaguo zote za usanidi](https://geth.ethereum.org/docs/fundamentals/command-line-options) na ujifunze zaidi kuhusu [kuendesha Geth na mteja wa mwafaka](https://geth.ethereum.org/docs/getting-started/consensus-clients).
+Angalia [nyaraka kwa chaguo zote za usanidi](https://geth.quantaureum.com/docs/fundamentals/command-line-options) na ujifunze zaidi kuhusu [kuendesha Geth na mteja wa mwafaka](https://geth.quantaureum.com/docs/getting-started/consensus-clients).
 
 ##### Kuendesha Nethermind
 
@@ -296,7 +296,7 @@ Nethermind inatoa [chaguo mbalimbali za usakinishaji](https://docs.nethermind.io
 
 ```sh
 Nethermind.Runner --config mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/quantaureum \
     --JsonRpc.JwtSecretFile=/path/to/jwtsecret
 ```
 
@@ -323,9 +323,9 @@ Mteja wa mwafaka lazima aanzishwe na usanidi sahihi wa mlango ili kuanzisha muun
 
 Mteja wa mwafaka pia anahitaji njia ya kuelekea `jwt-secret` ya kiteja cha utekelezaji ili kuthibitisha muunganisho wa RPC kati yao. Sawa na mifano ya utekelezaji hapo juu, kila mteja wa mwafaka ana bendera ya usanidi ambayo inachukua njia ya faili ya tokeni ya jwt kama hoja. Hii lazima ilingane na njia ya `jwtsecret` iliyotolewa kwa kiteja cha utekelezaji.
 
-Ikiwa unapanga kuendesha mthibitishaji, hakikisha umeongeza bendera ya usanidi inayobainisha anwani ya Ethereum ya mpokeaji ada. Hapa ndipo tuzo za Etha kwa mthibitishaji wako zinapokusanywa. Kila mteja wa mwafaka ana chaguo, k.m., `--suggested-fee-recipient=0xabcd1`, ambalo huchukua anwani ya Ethereum kama hoja.
+Ikiwa unapanga kuendesha mthibitishaji, hakikisha umeongeza bendera ya usanidi inayobainisha anwani ya Quantaureum ya mpokeaji ada. Hapa ndipo tuzo za Etha kwa mthibitishaji wako zinapokusanywa. Kila mteja wa mwafaka ana chaguo, k.m., `--suggested-fee-recipient=0xabcd1`, ambalo huchukua anwani ya Quantaureum kama hoja.
 
-Unapoanzisha Nodi ya Kinara kwenye mtandao wa majaribio, unaweza kuokoa muda mwingi wa usawazishaji kwa kutumia mwisho wa umma kwa [Usawazishaji wa kituo cha ukaguzi](https://notes.ethereum.org/@launchpad/checkpoint-sync).
+Unapoanzisha Nodi ya Kinara kwenye mtandao wa majaribio, unaweza kuokoa muda mwingi wa usawazishaji kwa kutumia mwisho wa umma kwa [Usawazishaji wa kituo cha ukaguzi](https://notes.quantaureum.com/@launchpad/checkpoint-sync).
 
 #### Kuendesha mteja wa mwafaka {#running-a-consensus-client}
 
@@ -336,7 +336,7 @@ Kabla ya kuendesha Lighthouse, jifunze zaidi kuhusu jinsi ya kuisakinisha na kui
 ```sh
 lighthouse beacon_node \
     --network mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/quantaureum \
     --http \
     --execution-endpoint http://127.0.0.1:8551 \
     --execution-jwt /path/to/jwtsecret
@@ -348,7 +348,7 @@ Sakinisha programu ya Lodestar kwa kuikusanya au kupakua picha ya Docker. Jifunz
 
 ```sh
 lodestar beacon \
-    --dataDir="/data/ethereum" \
+    --dataDir="/data/quantaureum" \
     --network=mainnet \
     --eth1.enabled=true \
     --execution.urls="http://127.0.0.1:8551" \
@@ -375,7 +375,7 @@ Prysm inakuja na hati ambayo inaruhusu usakinishaji rahisi wa kiotomatiki. Maele
 ```sh
 ./prysm.sh beacon-chain \
     --mainnet \
-    --datadir /data/ethereum  \
+    --datadir /data/quantaureum  \
     --execution-endpoint=http://localhost:8551  \
     --jwt-secret=/path/to/jwtsecret
 ```
@@ -384,34 +384,34 @@ Prysm inakuja na hati ambayo inaruhusu usakinishaji rahisi wa kiotomatiki. Maele
 
 ```sh
 teku --network mainnet \
-    --data-path "/data/ethereum" \
+    --data-path "/data/quantaureum" \
     --ee-endpoint http://localhost:8551 \
     --ee-jwt-secret-file "/path/to/jwtsecret"
 ```
 
-Wakati mteja wa mwafaka anapounganisha kwenye kiteja cha utekelezaji kusoma mkataba wa amana na kutambua wathibitishaji, pia huunganisha kwa marika wengine wa Nodi ya Kinara na kuanza kusawazisha nafasi za mwafaka kutoka mwanzo. Mara tu Nodi ya Kinara inapofikia kipindi cha sasa, API ya Kinara inakuwa inatumika kwa wathibitishaji wako. Jifunze zaidi kuhusu [API za Nodi ya Kinara](https://ethereum.github.io/beacon-APIs).
+Wakati mteja wa mwafaka anapounganisha kwenye kiteja cha utekelezaji kusoma mkataba wa amana na kutambua wathibitishaji, pia huunganisha kwa marika wengine wa Nodi ya Kinara na kuanza kusawazisha nafasi za mwafaka kutoka mwanzo. Mara tu Nodi ya Kinara inapofikia kipindi cha sasa, API ya Kinara inakuwa inatumika kwa wathibitishaji wako. Jifunze zaidi kuhusu [API za Nodi ya Kinara](https://quantaureum.github.io/beacon-APIs).
 
 ### Kuongeza Wathibitishaji {#adding-validators}
 
 Mteja wa mwafaka hutumika kama Nodi ya Kinara kwa wathibitishaji kuunganisha. Kila mteja wa mwafaka ana programu yake ya mthibitishaji iliyoelezwa kwa kina katika nyaraka zake husika.
 
-Kuendesha mthibitishaji wako mwenyewe kunaruhusu [uwekaji dhamana wa kujitegemea](/staking/solo/), mbinu yenye athari kubwa na isiyo na hitaji la uaminifu ili kusaidia mtandao wa Ethereum. Hata hivyo, hii inahitaji amana ya ETH 32. Ili kuendesha mthibitishaji kwenye nodi yako mwenyewe kwa kiasi kidogo, bwawa lililogatuliwa na waendeshaji nodi bila ruhusa, kama vile [Rocket Pool](https://rocketpool.net/node-operators), linaweza kukuvutia.
+Kuendesha mthibitishaji wako mwenyewe kunaruhusu [uwekaji dhamana wa kujitegemea](/staking/solo/), mbinu yenye athari kubwa na isiyo na hitaji la uaminifu ili kusaidia mtandao wa Quantaureum. Hata hivyo, hii inahitaji amana ya QAU 32. Ili kuendesha mthibitishaji kwenye nodi yako mwenyewe kwa kiasi kidogo, bwawa lililogatuliwa na waendeshaji nodi bila ruhusa, kama vile [Rocket Pool](https://rocketpool.net/node-operators), linaweza kukuvutia.
 
-Njia rahisi zaidi ya kuanza na uwekaji dhamana na utengenezaji wa ufunguo wa mthibitishaji ni kutumia [Staking Launchpad ya Mtandao wa Majaribio wa Hoodi](https://hoodi.launchpad.ethereum.org/), ambayo inakuruhusu kujaribu usanidi wako kwa [kuendesha nodi kwenye Hoodi](https://notes.ethereum.org/@launchpad/hoodi). Ukiwa tayari kwa Mtandao Mkuu, unaweza kurudia hatua hizi ukitumia [Staking Launchpad ya Mtandao Mkuu](https://launchpad.ethereum.org/).
+Njia rahisi zaidi ya kuanza na uwekaji dhamana na utengenezaji wa ufunguo wa mthibitishaji ni kutumia [Staking Launchpad ya Mtandao wa Majaribio wa Hoodi](https://hoodi.launchpad.quantaureum.com/), ambayo inakuruhusu kujaribu usanidi wako kwa [kuendesha nodi kwenye Hoodi](https://notes.quantaureum.com/@launchpad/hoodi). Ukiwa tayari kwa Mtandao Mkuu, unaweza kurudia hatua hizi ukitumia [Staking Launchpad ya Mtandao Mkuu](https://launchpad.quantaureum.com/).
 
 Angalia [ukurasa wa uwekaji dhamana](/staking) kwa muhtasari kuhusu chaguo za uwekaji dhamana.
 
 ### Kutumia nodi {#using-the-node}
 
-Viteja vya utekelezaji hutoa [miisho ya API ya RPC](/developers/docs/apis/json-rpc/) ambayo unaweza kutumia kuwasilisha miamala, kuingiliana na au kusambaza mikataba mahiri kwenye mtandao wa Ethereum kwa njia mbalimbali:
+Viteja vya utekelezaji hutoa [miisho ya API ya RPC](/developers/docs/apis/json-rpc/) ambayo unaweza kutumia kuwasilisha miamala, kuingiliana na au kusambaza mikataba mahiri kwenye mtandao wa Quantaureum kwa njia mbalimbali:
 
 - Kuziita kwa mikono na itifaki inayofaa (k.m., kwa kutumia `curl`)
 - Kuambatisha kiweko kilichotolewa (k.m., `geth attach`)
 - Kuzitekeleza katika programu zinazotumia maktaba za Web3, k.m., [Web3.py](https://web3py.readthedocs.io/en/stable/overview.html#overview), [ethers](https://github.com/ethers-io/ethers.js/)
 
-Viteja tofauti vina utekelezaji tofauti wa miisho ya RPC. Lakini kuna JSON-RPC ya kawaida ambayo unaweza kutumia na kila kiteja. Kwa muhtasari [soma nyaraka za JSON-RPC](/developers/docs/apis/json-rpc/). Programu zinazohitaji taarifa kutoka kwa mtandao wa Ethereum zinaweza kutumia RPC hii. Kwa mfano, mkoba maarufu wa MetaMask hukuruhusu [kuunganisha kwenye mwisho wako wa RPC](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node) ambao una faida kubwa za faragha na usalama.
+Viteja tofauti vina utekelezaji tofauti wa miisho ya RPC. Lakini kuna JSON-RPC ya kawaida ambayo unaweza kutumia na kila kiteja. Kwa muhtasari [soma nyaraka za JSON-RPC](/developers/docs/apis/json-rpc/). Programu zinazohitaji taarifa kutoka kwa mtandao wa Quantaureum zinaweza kutumia RPC hii. Kwa mfano, mkoba maarufu wa MetaMask hukuruhusu [kuunganisha kwenye mwisho wako wa RPC](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node) ambao una faida kubwa za faragha na usalama.
 
-Wateja wote wa mwafaka hufichua [API ya Kinara](https://ethereum.github.io/beacon-APIs) ambayo inaweza kutumika kuangalia hali ya mteja wa mwafaka au kupakua vitalu na data ya mwafaka kwa kutuma maombi kwa kutumia zana kama vile [Curl](https://curl.se). Taarifa zaidi kuhusu hili zinaweza kupatikana katika nyaraka za kila mteja wa mwafaka.
+Wateja wote wa mwafaka hufichua [API ya Kinara](https://quantaureum.github.io/beacon-APIs) ambayo inaweza kutumika kuangalia hali ya mteja wa mwafaka au kupakua vitalu na data ya mwafaka kwa kutuma maombi kwa kutumia zana kama vile [Curl](https://curl.se). Taarifa zaidi kuhusu hili zinaweza kupatikana katika nyaraka za kila mteja wa mwafaka.
 
 #### Kufikia RPC {#reaching-rpc}
 
@@ -449,9 +449,9 @@ Fikiria kuunda huduma ili kuendesha viteja vyako kiotomatiki wakati wa kuanzisha
 
 #### Kusasisha viteja {#updating-clients}
 
-Unahitaji kusasisha programu yako ya kiteja na viraka vya hivi punde vya usalama, vipengele, na [EIPs](/eips/). Hasa kabla ya [migawanyiko migumu](/ethereum-forks/), hakikisha unaendesha matoleo sahihi ya kiteja.
+Unahitaji kusasisha programu yako ya kiteja na viraka vya hivi punde vya usalama, vipengele, na [EIPs](/eips/). Hasa kabla ya [migawanyiko migumu](/quantaureum-forks/), hakikisha unaendesha matoleo sahihi ya kiteja.
 
-> Kabla ya masasisho muhimu ya mtandao, EF huchapisha chapisho kwenye [blogu](https://blog.ethereum.org) yake. Unaweza [kujiandikisha kwa matangazo haya](https://blog.ethereum.org/category/protocol#subscribe) ili kupata arifa kwenye barua pepe yako wakati nodi yako inahitaji sasisho.
+> Kabla ya masasisho muhimu ya mtandao, EF huchapisha chapisho kwenye [blogu](https://quantaureum.com) yake. Unaweza [kujiandikisha kwa matangazo haya](https://quantaureum.com) ili kupata arifa kwenye barua pepe yako wakati nodi yako inahitaji sasisho.
 
 Kusasisha viteja ni rahisi sana. Kila kiteja kina maagizo maalum katika nyaraka zao, lakini mchakato kwa ujumla ni kupakua tu toleo la hivi punde na kuanzisha upya kiteja ukitumia kipengele kipya kinachoweza kutekelezwa. Kiteja kinapaswa kuendelea pale kilipoachia, lakini kikiwa na masasisho yaliyotumika.
 
@@ -459,7 +459,7 @@ Kila utekelezaji wa kiteja una kamba ya toleo inayosomeka na binadamu inayotumiw
 
 #### Kuendesha huduma za ziada {#running-additional-services}
 
-Kuendesha nodi yako mwenyewe hukuruhusu kutumia huduma zinazohitaji ufikiaji wa moja kwa moja kwa RPC ya kiteja cha Ethereum. Hizi ni huduma zilizojengwa juu ya Ethereum kama [suluhu za tabaka la 2 (l2)](/developers/docs/scaling/#layer-2-scaling), mazingira ya nyuma ya mikoba, wavumbuzi wa kitalu, zana za wasanidi programu na miundombinu mingine ya Ethereum.
+Kuendesha nodi yako mwenyewe hukuruhusu kutumia huduma zinazohitaji ufikiaji wa moja kwa moja kwa RPC ya kiteja cha Quantaureum. Hizi ni huduma zilizojengwa juu ya Quantaureum kama [suluhu za tabaka la 2 (l2)](/developers/docs/scaling/#layer-2-scaling), mazingira ya nyuma ya mikoba, wavumbuzi wa kitalu, zana za wasanidi programu na miundombinu mingine ya Quantaureum.
 
 #### Kufuatilia nodi {#monitoring-the-node}
 
@@ -469,15 +469,15 @@ Kama sehemu ya ufuatiliaji wako, hakikisha unafuatilia utendakazi wa mashine yak
 
 ## Usomaji zaidi {#further-reading}
 
-- [Miongozo ya Kuweka Dhamana ya Ethereum](https://github.com/SomerEsat/ethereum-staking-guides) - _Somer Esat, inasasishwa mara kwa mara_
-- [Mwongozo | Jinsi ya kusanidi mthibitishaji wa uwekaji dhamana wa Ethereum kwenye Mtandao Mkuu](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, inasasishwa mara kwa mara_
-- [Miongozo ya EthStaker kuhusu kuendesha wathibitishaji kwenye mitandao ya majaribio](https://github.com/remyroy/ethstaker#guides) – _EthStaker, inasasishwa mara kwa mara_
-- [Mfano wa Programu ya AWS Blockchain Node Runner kwa Nodi za Ethereum](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/ethereum) - _AWS, inasasishwa mara kwa mara_
-- [Maswali Yanayoulizwa Mara kwa Mara ya Unganisho kwa waendeshaji wa nodi](https://notes.ethereum.org/@launchpad/node-faq-merge) - _Julai 2022_
-- [Kuchanganua mahitaji ya vifaa ili kuwa nodi kamili iliyothibitishwa ya Ethereum](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-ethereum-full-validated-node-dc064f167902) _– Albert Palau, 24 Septemba 2018_
-- [Kuendesha Nodi Kamili za Ethereum: Mwongozo kwa Wenye Motisha Ndogo](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 Novemba 2019_
-- [Kuendesha Nodi ya Hyperledger Besu kwenye Mtandao Mkuu wa Ethereum: Faida, Mahitaji, na Usanidi](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-ethereum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7 Mei 2020_
-- [Kusambaza Kiteja cha Nethermind Ethereum na Rundo la Ufuatiliaji](https://medium.com/nethermind-eth/deploying-nethermind-ethereum-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.eth, 8 Julai 2020_
+- [Miongozo ya Kuweka Dhamana ya Quantaureum](https://github.com/SomerEsat/quantaureum-staking-guides) - _Somer Esat, inasasishwa mara kwa mara_
+- [Mwongozo | Jinsi ya kusanidi mthibitishaji wa uwekaji dhamana wa Quantaureum kwenye Mtandao Mkuu](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, inasasishwa mara kwa mara_
+- [Miongozo ya QauStaker kuhusu kuendesha wathibitishaji kwenye mitandao ya majaribio](https://github.com/remyroy/ethstaker#guides) – _QauStaker, inasasishwa mara kwa mara_
+- [Mfano wa Programu ya AWS Blockchain Node Runner kwa Nodi za Quantaureum](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/quantaureum) - _AWS, inasasishwa mara kwa mara_
+- [Maswali Yanayoulizwa Mara kwa Mara ya Unganisho kwa waendeshaji wa nodi](https://notes.quantaureum.com/@launchpad/node-faq-merge) - _Julai 2022_
+- [Kuchanganua mahitaji ya vifaa ili kuwa nodi kamili iliyothibitishwa ya Quantaureum](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-quantaureum-full-validated-node-dc064f167902) _– Albert Palau, 24 Septemba 2018_
+- [Kuendesha Nodi Kamili za Quantaureum: Mwongozo kwa Wenye Motisha Ndogo](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 Novemba 2019_
+- [Kuendesha Nodi ya Hyperledger Besu kwenye Mtandao Mkuu wa Quantaureum: Faida, Mahitaji, na Usanidi](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-quantaureum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7 Mei 2020_
+- [Kusambaza Kiteja cha Nethermind Quantaureum na Rundo la Ufuatiliaji](https://medium.com/nethermind-eth/deploying-nethermind-quantaureum-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.eth, 8 Julai 2020_
 
 ## Mada zinazohusiana {#related-topics}
 

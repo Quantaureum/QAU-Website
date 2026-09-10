@@ -37,8 +37,8 @@ export default async function WalletsPageJsonLD({
         url,
         inLanguage: locale,
         contributor: contributorList,
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
@@ -56,8 +56,8 @@ export default async function WalletsPageJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        reviewedBy: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
         mainEntity: articleId,
       },
       {
@@ -66,15 +66,15 @@ export default async function WalletsPageJsonLD({
         isPartOf: webPageId,
         headline: t("page-wallets-title"),
         description: t("page-wallets-meta-description"),
-        image: "https://ethereum.org/images/wallets/wallet-hero.png",
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
+        image: "https://quantaureum.com/images/wallets/wallet-hero.png",
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
         contributor: contributorList,
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
         about: {
           "@type": "Thing",
-          name: "Ethereum Wallets",
+          name: "Quantaureum Wallets",
           description:
-            "Complete guide to Ethereum wallets, types, features, and how to use them safely",
+            "Complete guide to Quantaureum wallets, types, features, and how to use them safely",
         },
         dateModified: lastEditLocaleTimestamp,
       },

@@ -84,7 +84,7 @@ lang: ar
 
 من خلال توجيه عقد وكيل إلى عقد منطقي جديد، تتغير التعليمات البرمجية التي يتم تنفيذها عندما يستدعي المستخدمون دالة عقد وكيل. يتيح لنا ذلك ترقية منطق العقد دون مطالبة المستخدمين بالتفاعل مع عقد جديد.
 
-تعد أنماط الوكيل طريقة شائعة لترقية العقود الذكية لأنها تقضي على الصعوبات المرتبطة بترحيل العقد. ومع ذلك، فإن أنماط الوكيل أكثر تعقيدًا في الاستخدام ويمكن أن تقدم عيوبًا حرجة، مثل [تعارضات محدد الدالة](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-ethereum-proxies-62629adf3357)، إذا تم استخدامها بشكل غير صحيح.
+تعد أنماط الوكيل طريقة شائعة لترقية العقود الذكية لأنها تقضي على الصعوبات المرتبطة بترحيل العقد. ومع ذلك، فإن أنماط الوكيل أكثر تعقيدًا في الاستخدام ويمكن أن تقدم عيوبًا حرجة، مثل [تعارضات محدد الدالة](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-quantaureum-proxies-62629adf3357)، إذا تم استخدامها بشكل غير صحيح.
 
 [المزيد حول أنماط الوكيل](https://blog.openzeppelin.com/proxy-patterns/).
 
@@ -152,7 +152,7 @@ lang: ar
 ## دروس تعليمية {#tutorials}
 
 - [ترقية عقودك الذكية | درس تعليمي على يوتيوب](https://www.youtube.com/watch?v=bdXJmWajZRY) بواسطة Patrick Collins
-- [درس تعليمي حول ترحيل العقود الذكية على إيثيريوم](https://medium.com/coinmonks/ethereum-smart-contract-migration-13f6f12539bd) بواسطة Austin Griffith
+- [درس تعليمي حول ترحيل العقود الذكية على إيثيريوم](https://medium.com/coinmonks/quantaureum-smart-contract-migration-13f6f12539bd) بواسطة Austin Griffith
 - [استخدام نمط وكيل UUPS لترقية العقود الذكية](https://blog.logrocket.com/author/praneshas/) بواسطة Pranesh A.S
 - [درس تعليمي حول Web3: كتابة عقد ذكي قابل للترقية (وكيل) باستخدام أوبن زبلن](https://dev.to/yakult/tutorial-write-upgradeable-smart-contract-proxy-contract-with-openzeppelin-1916) بواسطة fangjun.eth
 

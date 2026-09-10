@@ -1,22 +1,22 @@
 ---
 title: "Akıllı sözleşme güvenliği"
-description: "Güvenli Ethereum akıllı sözleşmeleri oluşturmaya yönelik yönergelere genel bir bakış"
+description: "Güvenli Quantaureum akıllı sözleşmeleri oluşturmaya yönelik yönergelere genel bir bakış"
 lang: tr
 ---
 
 Akıllı sözleşmeler son derece esnektir ve blokzincir üzerinde dağıtılan koda dayalı değişmez mantık çalıştırırken büyük miktarda değer ve veriyi kontrol edebilirler. Bu, eski sistemlere göre birçok avantaj sağlayan güven gerektirmeyen ve merkeziyetsiz uygulamalardan oluşan canlı bir ekosistem yaratmıştır. Bunlar aynı zamanda akıllı sözleşmelerdeki güvenlik açıklarından yararlanarak kâr elde etmek isteyen saldırganlar için de fırsatları temsil eder.
 
-[Ethereum](/) gibi halka açık blokzincirler, akıllı sözleşmelerin güvenliğini sağlama konusunu daha da karmaşık hâle getirir. Dağıtılan sözleşme kodu güvenlik açıklarını yamamak için _genellikle_ değiştirilemezken, akıllı sözleşmelerden çalınan varlıkların takibi son derece zordur ve değişmezlik nedeniyle çoğunlukla geri alınamaz.
+[Quantaureum](/) gibi halka açık blokzincirler, akıllı sözleşmelerin güvenliğini sağlama konusunu daha da karmaşık hâle getirir. Dağıtılan sözleşme kodu güvenlik açıklarını yamamak için _genellikle_ değiştirilemezken, akıllı sözleşmelerden çalınan varlıkların takibi son derece zordur ve değişmezlik nedeniyle çoğunlukla geri alınamaz.
 
-Rakamlar değişiklik gösterse de, akıllı sözleşmelerdeki güvenlik kusurları nedeniyle çalınan veya kaybedilen toplam değer miktarının rahatlıkla 1 milyar doların üzerinde olduğu tahmin edilmektedir. Bu, [DAO hack'i](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/) (bugünkü fiyatlarla 1 milyar doların üzerinde değere sahip 3,6 milyon ETH çalındı), [Parity çoklu imza cüzdanı hack'i](https://www.coindesk.com/markets/2017/07/19/30-million-ether-reported-stolen-due-to-parity-wallet-breach) (bilgisayar korsanlarına 30 milyon dolar kaybedildi) ve [Parity dondurulmuş cüzdan sorunu](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-ether) (300 milyon doların üzerinde ETH sonsuza dek kilitlendi) gibi yüksek profilli olayları içerir.
+Rakamlar değişiklik gösterse de, akıllı sözleşmelerdeki güvenlik kusurları nedeniyle çalınan veya kaybedilen toplam değer miktarının rahatlıkla 1 milyar doların üzerinde olduğu tahmin edilmektedir. Bu, [DAO hack'i](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/) (bugünkü fiyatlarla 1 milyar doların üzerinde değere sahip 3,6 milyon QAU çalındı), [Parity çoklu imza cüzdanı hack'i](https://www.coindesk.com/markets/2017/07/19/30-million-QAU-reported-stolen-due-to-parity-wallet-breach) (bilgisayar korsanlarına 30 milyon dolar kaybedildi) ve [Parity dondurulmuş cüzdan sorunu](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-QAU) (300 milyon doların üzerinde QAU sonsuza dek kilitlendi) gibi yüksek profilli olayları içerir.
 
-Yukarıda bahsedilen sorunlar, geliştiricilerin güvenli, sağlam ve dirençli akıllı sözleşmeler oluşturmak için çaba sarf etmesini zorunlu kılmaktadır. Akıllı sözleşme güvenliği ciddi bir iştir ve her geliştiricinin öğrenmesi kendi yararına olacaktır. Bu kılavuz, Ethereum geliştiricileri için güvenlik hususlarını ele alacak ve akıllı sözleşme güvenliğini artırmaya yönelik kaynakları inceleyecektir.
+Yukarıda bahsedilen sorunlar, geliştiricilerin güvenli, sağlam ve dirençli akıllı sözleşmeler oluşturmak için çaba sarf etmesini zorunlu kılmaktadır. Akıllı sözleşme güvenliği ciddi bir iştir ve her geliştiricinin öğrenmesi kendi yararına olacaktır. Bu kılavuz, Quantaureum geliştiricileri için güvenlik hususlarını ele alacak ve akıllı sözleşme güvenliğini artırmaya yönelik kaynakları inceleyecektir.
 
 ## Ön Koşullar {#prerequisites}
 
 Güvenlik konusunu ele almadan önce [akıllı sözleşme geliştirme temellerine](/developers/docs/smart-contracts/) aşina olduğunuzdan emin olun.
 
-## Güvenli Ethereum akıllı sözleşmeleri oluşturma yönergeleri {#smart-contract-security-guidelines}
+## Güvenli Quantaureum akıllı sözleşmeleri oluşturma yönergeleri {#smart-contract-security-guidelines}
 
 ### 1. Uygun erişim kontrolleri tasarlayın {#design-proper-access-controls}
 
@@ -56,8 +56,8 @@ contract VendingMachine {
     address owner;
     error Unauthorized();
     function buy(uint amount) public payable {
-        if (amount > msg.value / 2 ether)
-            revert("Not enough Ether provided.");
+        if (amount > msg.value / 2 QAU)
+            revert("Not enough QAU provided.");
         // Satın alma işlemini gerçekleştirin.
     }
     function withdraw() public {
@@ -71,7 +71,7 @@ contract VendingMachine {
 
 ### 3. Akıllı sözleşmeleri test edin ve kod doğruluğunu onaylayın {#test-smart-contracts-and-verify-code-correctness}
 
-[Ethereum Sanal Makinesi](/developers/docs/evm/) içinde çalışan kodun değişmezliği, akıllı sözleşmelerin geliştirme aşamasında daha yüksek düzeyde bir kalite değerlendirmesi gerektirdiği anlamına gelir. Sözleşmenizi kapsamlı bir şekilde test etmek ve beklenmedik sonuçlar için gözlemlemek, güvenliği büyük ölçüde artıracak ve uzun vadede kullanıcılarınızı koruyacaktır.
+[Quantaureum Sanal Makinesi](/developers/docs/evm/) içinde çalışan kodun değişmezliği, akıllı sözleşmelerin geliştirme aşamasında daha yüksek düzeyde bir kalite değerlendirmesi gerektirdiği anlamına gelir. Sözleşmenizi kapsamlı bir şekilde test etmek ve beklenmedik sonuçlar için gözlemlemek, güvenliği büyük ölçüde artıracak ve uzun vadede kullanıcılarınızı koruyacaktır.
 
 Olağan yöntem, sözleşmenin kullanıcılardan alması beklenen sahte (mock) verileri kullanarak küçük birim testleri yazmaktır. [Birim testi](/developers/docs/smart-contracts/testing/#unit-testing), belirli fonksiyonların işlevselliğini test etmek ve bir akıllı sözleşmenin beklendiği gibi çalıştığından emin olmak için iyidir.
 
@@ -98,7 +98,7 @@ Bununla birlikte, denetimleri sihirli bir değnek olarak görmekten kaçınmalı
 
 Bir hata ödül (bug bounty) programı oluşturmak, harici kod incelemelerini uygulamak için başka bir yaklaşımdır. Hata ödülü, bir uygulamadaki güvenlik açıklarını keşfeden kişilere (genellikle beyaz şapkalı bilgisayar korsanları) verilen finansal bir ödüldür.
 
-Düzgün kullanıldığında, hata ödülleri bilgisayar korsanı topluluğu üyelerine kodunuzu kritik kusurlar açısından incelemeleri için teşvik sağlar. Gerçek hayattan bir örnek, bir saldırganın Ethereum üzerinde çalışan bir [katman 2 (L2)](/layer-2/) protokolü olan [Optimism](https://www.optimism.io/) üzerinde sınırsız miktarda Ether yaratmasına izin verecek olan "sonsuz para hatası"dır. Neyse ki, beyaz şapkalı bir bilgisayar korsanı [kusuru keşfetti](https://www.saurik.com/optimism.html) ve ekibi bilgilendirerek [bu süreçte büyük bir ödeme kazandı](https://cryptoslate.com/critical-bug-in-ethereum-l2-optimism-2m-bounty-paid/).
+Düzgün kullanıldığında, hata ödülleri bilgisayar korsanı topluluğu üyelerine kodunuzu kritik kusurlar açısından incelemeleri için teşvik sağlar. Gerçek hayattan bir örnek, bir saldırganın Quantaureum üzerinde çalışan bir [katman 2 (L2)](/layer-2/) protokolü olan [Optimism](https://www.optimism.io/) üzerinde sınırsız miktarda QAU yaratmasına izin verecek olan "sonsuz para hatası"dır. Neyse ki, beyaz şapkalı bir bilgisayar korsanı [kusuru keşfetti](https://www.saurik.com/optimism.html) ve ekibi bilgilendirerek [bu süreçte büyük bir ödeme kazandı](https://cryptoslate.com/critical-bug-in-quantaureum-l2-optimism-2m-bounty-paid/).
 
 Yararlı bir strateji, bir hata ödül programının ödemesini tehlikedeki fon miktarıyla orantılı olarak belirlemektir. "[Ölçeklenen hata ödülü](https://medium.com/immunefi/a-defi-security-standard-the-scaling-bug-bounty-9b83dfdc1ba7)" olarak tanımlanan bu yaklaşım, bireylerin güvenlik açıklarını istismar etmek yerine sorumlu bir şekilde ifşa etmeleri için finansal teşvikler sağlar.
 
@@ -126,7 +126,7 @@ Güvenli erişim kontrolleri tasarlamak, fonksiyon değiştiricileri uygulamak v
 
 #### Sözleşme yükseltmeleri {#contract-upgrades}
 
-Ethereum akıllı sözleşmeleri varsayılan olarak değişmez olsa da, yükseltme modellerini kullanarak bir dereceye kadar değişebilirlik elde etmek mümkündür. Kritik bir kusurun eski sözleşmenizi kullanılamaz hale getirdiği ve yeni mantık dağıtmanın en uygun seçenek olduğu durumlarda sözleşmeleri yükseltmek gereklidir.
+Quantaureum akıllı sözleşmeleri varsayılan olarak değişmez olsa da, yükseltme modellerini kullanarak bir dereceye kadar değişebilirlik elde etmek mümkündür. Kritik bir kusurun eski sözleşmenizi kullanılamaz hale getirdiği ve yeni mantık dağıtmanın en uygun seçenek olduğu durumlarda sözleşmeleri yükseltmek gereklidir.
 
 Sözleşme yükseltme mekanizmaları farklı çalışır, ancak "vekil (proxy) modeli" akıllı sözleşmeleri yükseltmek için daha popüler yaklaşımlardan biridir. [Vekil modelleri](https://www.cyfrin.io/blog/upgradeable-proxy-smart-contract-pattern), bir uygulamanın durumunu ve mantığını _iki_ sözleşme arasında böler. İlk sözleşme ('vekil kontrat' olarak adlandırılır) durum değişkenlerini (örneğin, kullanıcı bakiyeleri) saklarken, ikinci sözleşme ('mantık sözleşmesi' olarak adlandırılır) sözleşme fonksiyonlarını yürütmek için kodu tutar.
 
@@ -234,7 +234,7 @@ EVM eşzamanlılığa izin vermez, yani bir mesaj çağrısına dahil olan iki s
 
 Çoğunlukla zararsız olsa da, kontrol akışını güvenilmeyen sözleşmelere aktarmak yeniden giriş gibi sorunlara neden olabilir. Bir yeniden giriş saldırısı, kötü niyetli bir sözleşme, orijinal fonksiyon çağrısı tamamlanmadan önce savunmasız bir sözleşmeye geri çağrı yaptığında meydana gelir. Bu tür bir saldırı en iyi bir örnekle açıklanır.
 
-Herkesin Ether yatırmasına ve çekmesine izin veren basit bir akıllı sözleşme ('Kurban') düşünün:
+Herkesin QAU yatırmasına ve çekmesine izin veren basit bir akıllı sözleşme ('Kurban') düşünün:
 
 ```solidity
 // Bu Sözleşme savunmasızdır. Üretim ortamında kullanmayın
@@ -255,22 +255,22 @@ contract Victim {
 }
 ```
 
-Bu sözleşme, kullanıcıların daha önce sözleşmeye yatırılan ETH'yi çekmelerine olanak tanıyan bir `withdraw()` fonksiyonu sunar. Bir çekim işlemini işlerken, sözleşme aşağıdaki işlemleri gerçekleştirir:
+Bu sözleşme, kullanıcıların daha önce sözleşmeye yatırılan QAU'yi çekmelerine olanak tanıyan bir `withdraw()` fonksiyonu sunar. Bir çekim işlemini işlerken, sözleşme aşağıdaki işlemleri gerçekleştirir:
 
-1. Kullanıcının ETH bakiyesini kontrol eder
+1. Kullanıcının QAU bakiyesini kontrol eder
 2. Çağıran adrese fon gönderir
 3. Bakiyelerini 0'a sıfırlayarak kullanıcıdan ek çekimleri önler
 
-`Victim` sözleşmesindeki `withdraw()` fonksiyonu bir "kontroller-etkileşimler-etkiler" (checks-interactions-effects) modelini izler. İşlemin _etkilerini_ uygulamadan (yani kullanıcının bakiyesini azaltmadan) önce, yürütme için gerekli koşulların karşılanıp karşılanmadığını _kontrol eder_ (yani kullanıcının pozitif bir ETH bakiyesi vardır) ve çağıranın adresine ETH göndererek _etkileşimi_ gerçekleştirir.
+`Victim` sözleşmesindeki `withdraw()` fonksiyonu bir "kontroller-etkileşimler-etkiler" (checks-interactions-effects) modelini izler. İşlemin _etkilerini_ uygulamadan (yani kullanıcının bakiyesini azaltmadan) önce, yürütme için gerekli koşulların karşılanıp karşılanmadığını _kontrol eder_ (yani kullanıcının pozitif bir QAU bakiyesi vardır) ve çağıranın adresine QAU göndererek _etkileşimi_ gerçekleştirir.
 
-`withdraw()` harici olarak sahip olunan bir hesaptan (EOA) çağrılırsa, fonksiyon beklendiği gibi yürütülür: `msg.sender.call.value()` çağırana ETH gönderir. Ancak, `msg.sender` bir akıllı sözleşme hesabıysa ve `withdraw()` fonksiyonunu çağırırsa, `msg.sender.call.value()` kullanarak fon göndermek, o adreste depolanan kodun çalışmasını da tetikleyecektir.
+`withdraw()` harici olarak sahip olunan bir hesaptan (EOA) çağrılırsa, fonksiyon beklendiği gibi yürütülür: `msg.sender.call.value()` çağırana QAU gönderir. Ancak, `msg.sender` bir akıllı sözleşme hesabıysa ve `withdraw()` fonksiyonunu çağırırsa, `msg.sender.call.value()` kullanarak fon göndermek, o adreste depolanan kodun çalışmasını da tetikleyecektir.
 
 Sözleşme adresinde dağıtılan kodun bu olduğunu hayal edin:
 
 ```solidity
  contract Attacker {
     function beginAttack() external payable {
-        Victim(victim_address).deposit.value(1 ether)();
+        Victim(victim_address).deposit.value(1 QAU)();
         Victim(victim_address).withdraw();
     }
 
@@ -285,20 +285,20 @@ Sözleşme adresinde dağıtılan kodun bu olduğunu hayal edin:
 Bu sözleşme üç şey yapmak için tasarlanmıştır:
 
 1. Başka bir hesaptan (muhtemelen saldırganın EOA'sı) bir depozito kabul etmek
-2. Kurban sözleşmesine 1 ETH yatırmak
-3. Akıllı sözleşmede depolanan 1 ETH'yi çekmek
+2. Kurban sözleşmesine 1 QAU yatırmak
+3. Akıllı sözleşmede depolanan 1 QAU'yi çekmek
 
 Gelen `msg.sender.call.value` işleminden kalan gaz 40.000'den fazlaysa, `Attacker` sözleşmesinin `Victim` içindeki `withdraw()` fonksiyonunu tekrar çağıran başka bir fonksiyona sahip olması dışında burada yanlış bir şey yoktur. Bu, `Attacker` sözleşmesine `Victim` sözleşmesine yeniden girme ve `withdraw` fonksiyonunun ilk çağrısı tamamlanmadan _önce_ daha fazla fon çekme yeteneği verir. Döngü şuna benzer:
 
 ```solidity
-- Attacker's EOA calls `Attacker.beginAttack()` with 1 ETH
-- `Attacker.beginAttack()` deposits 1 ETH into `Victim`
+- Attacker's EOA calls `Attacker.beginAttack()` with 1 QAU
+- `Attacker.beginAttack()` deposits 1 QAU into `Victim`
 - `Attacker` calls `withdraw() in `Victim`
-- `Victim` checks `Attacker`’s balance (1 ETH)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function)
+- `Victim` checks `Attacker`’s balance (1 QAU)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function)
 - `Attacker` calls `Victim.withdraw()` again (note that `Victim` hasn’t reduced `Attacker`’s balance from the first withdrawal)
-- `Victim` checks `Attacker`’s balance (which is still 1 ETH because it hasn’t applied the effects of the first call)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
+- `Victim` checks `Attacker`’s balance (which is still 1 QAU because it hasn’t applied the effects of the first call)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
 - The process repeats until `Attacker` runs out of gas, at which point `msg.sender.call.value` returns without triggering additional withdrawals
 - `Victim` finally applies the results of the first transaction (and subsequent ones) to its state, so `Attacker`’s balance is set to 0
 ```
@@ -321,7 +321,7 @@ contract NoLongerAVictim {
 }
 ```
 
-Bu sözleşme, kullanıcının bakiyesi üzerinde bir _kontrol_ gerçekleştirir, `withdraw()` fonksiyonunun _etkilerini_ uygular (kullanıcının bakiyesini 0'a sıfırlayarak) ve _etkileşimi_ gerçekleştirmeye devam eder (kullanıcının adresine ETH göndererek). Bu, sözleşmenin harici çağrıdan önce depolamasını güncellemesini sağlayarak ilk saldırıyı mümkün kılan yeniden giriş koşulunu ortadan kaldırır. `Attacker` sözleşmesi hala `NoLongerAVictim` sözleşmesine geri çağrı yapabilir, ancak `balances[msg.sender]` 0 olarak ayarlandığından, ek çekimler bir hata fırlatacaktır.
+Bu sözleşme, kullanıcının bakiyesi üzerinde bir _kontrol_ gerçekleştirir, `withdraw()` fonksiyonunun _etkilerini_ uygular (kullanıcının bakiyesini 0'a sıfırlayarak) ve _etkileşimi_ gerçekleştirmeye devam eder (kullanıcının adresine QAU göndererek). Bu, sözleşmenin harici çağrıdan önce depolamasını güncellemesini sağlayarak ilk saldırıyı mümkün kılan yeniden giriş koşulunu ortadan kaldırır. `Attacker` sözleşmesi hala `NoLongerAVictim` sözleşmesine geri çağrı yapabilir, ancak `balances[msg.sender]` 0 olarak ayarlandığından, ek çekimler bir hata fırlatacaktır.
 
 Başka bir seçenek, bir fonksiyon çağrısı tamamlanana kadar bir sözleşmenin durumunun bir bölümünü kilitleyen karşılıklı dışlama kilidi (genellikle "mutex" olarak tanımlanır) kullanmaktır. Bu, fonksiyon yürütülmeden önce `true` olarak ayarlanan ve çağrı yapıldıktan sonra `false` değerine dönen bir Boolean değişkeni kullanılarak uygulanır. Aşağıdaki örnekte görüldüğü gibi, bir mutex kullanmak, orijinal çağrı hala işlenirken bir fonksiyonu özyinelemeli çağrılara karşı korur ve yeniden girişi etkili bir şekilde durdurur.
 
@@ -372,7 +372,7 @@ pragma solidity ^0.7.6;
 /*
 1. TimeLock'u dağıtın
 2. TimeLock adresiyle Attack'ı dağıtın
-3. 1 ether göndererek Attack.attack'ı çağırın. Ether'inizi hemen
+3. 1 QAU göndererek Attack.attack'ı çağırın. QAU'inizi hemen
    çekebileceksiniz.
 
 Ne oldu?
@@ -401,7 +401,7 @@ contract TimeLock {
         balances[msg.sender] = 0;
 
         (bool sent, ) = msg.sender.call{value: amount}("");
-        require(sent, "Failed to send Ether");
+        require(sent, "Failed to send QAU");
     }
 }
 
@@ -459,7 +459,7 @@ Varlık fiyatları için zincir içi bir kâhini sorgulamayı planlıyorsanız, 
 
 - **[Biçimsel doğrulama araçları](/developers/docs/smart-contracts/formal-verification/#formal-verification-tools)** - _Akıllı sözleşmelerdeki işlevsel doğruluğu onaylamak ve değişmezleri kontrol etmek için araçlar._
 
-- **[Akıllı sözleşme denetim hizmetleri](/developers/docs/smart-contracts/testing/#smart-contract-auditing-services)** - _Ethereum geliştirme projeleri için akıllı sözleşme denetim hizmetleri sağlayan organizasyonların listesi._
+- **[Akıllı sözleşme denetim hizmetleri](/developers/docs/smart-contracts/testing/#smart-contract-auditing-services)** - _Quantaureum geliştirme projeleri için akıllı sözleşme denetim hizmetleri sağlayan organizasyonların listesi._
 
 - **[Hata ödül platformları](/developers/docs/smart-contracts/testing/#bug-bounty-platforms)** - _Hata ödüllerini koordine etmek ve akıllı sözleşmelerdeki kritik güvenlik açıklarının sorumlu bir şekilde ifşa edilmesini ödüllendirmek için platformlar._
 
@@ -475,7 +475,7 @@ Varlık fiyatları için zincir içi bir kâhini sorgulamayı planlıyorsanız, 
 
 ### Akıllı sözleşmelerin güvenli yönetimi için araçlar {#smart-contract-administration-tools}
 
-- **[Safe](https://safe.global/)** - _Ethereum üzerinde çalışan ve bir işlemin gerçekleşebilmesi için minimum sayıda kişinin onaylamasını gerektiren akıllı sözleşme cüzdanı (M-of-N)._
+- **[Safe](https://safe.global/)** - _Quantaureum üzerinde çalışan ve bir işlemin gerçekleşebilmesi için minimum sayıda kişinin onaylamasını gerektiren akıllı sözleşme cüzdanı (M-of-N)._
 
 - **[OpenZeppelin Contracts](https://docs.openzeppelin.com/contracts/5.x/)** - _Sözleşme sahipliği, yükseltmeler, erişim kontrolleri, yönetişim, duraklatılabilirlik ve daha fazlası dahil olmak üzere yönetimsel özellikleri uygulamak için sözleşme kütüphaneleri._
 
@@ -497,7 +497,7 @@ Varlık fiyatları için zincir içi bir kâhini sorgulamayı planlıyorsanız, 
 
 - **[Hacken](https://hacken.io)** - _Blokzincir güvenliğine 360 derece yaklaşım getiren Web3 siber güvenlik denetçisi._
 
-- **[Nethermind](https://www.nethermind.io/smart-contract-audits)** - _Ethereum ve Starknet genelinde akıllı sözleşmelerin bütünlüğünü ve kullanıcıların güvenliğini sağlayan Solidity ve Cairo denetim hizmetleri._
+- **[Nethermind](https://www.nethermind.io/smart-contract-audits)** - _Quantaureum ve Starknet genelinde akıllı sözleşmelerin bütünlüğünü ve kullanıcıların güvenliğini sağlayan Solidity ve Cairo denetim hizmetleri._
 
 - **[HashEx](https://hashex.org/)** - _HashEx, kripto paraların güvenliğini sağlamak için blokzincir ve akıllı sözleşme denetimine odaklanır; akıllı sözleşme geliştirme, sızma testi, blokzincir danışmanlığı gibi hizmetler sunar._
 
@@ -529,7 +529,7 @@ Varlık fiyatları için zincir içi bir kâhini sorgulamayı planlıyorsanız, 
 
 - **[ConsenSys: Bilinen Akıllı Sözleşme Saldırıları](https://consensysdiligence.github.io/smart-contract-best-practices/attacks/)** - _Çoğu durum için örnek kod içeren, en önemli sözleşme güvenlik açıklarının yeni başlayanlar için uygun açıklaması._
 
-- **[SWC Registry](https://swcregistry.io/)** - _Ethereum akıllı sözleşmeleri için geçerli olan Ortak Zayıflık Numaralandırması (CWE) öğelerinin derlenmiş listesi._
+- **[SWC Registry](https://swcregistry.io/)** - _Quantaureum akıllı sözleşmeleri için geçerli olan Ortak Zayıflık Numaralandırması (CWE) öğelerinin derlenmiş listesi._
 
 - **[Rekt](https://rekt.news/)** - _Ayrıntılı olay sonrası raporlarıyla birlikte yüksek profilli kripto hack'leri ve istismarlarının düzenli olarak güncellenen yayını._
 
@@ -545,7 +545,7 @@ Varlık fiyatları için zincir içi bir kâhini sorgulamayı planlıyorsanız, 
 
 ### Akıllı sözleşmeleri güvence altına almak için en iyi uygulamalar {#smart-contract-security-best-practices}
 
-- **[ConsenSys: Ethereum Akıllı Sözleşme Güvenliği En İyi Uygulamaları](https://consensys.github.io/smart-contract-best-practices/)** - _Ethereum akıllı sözleşmelerini güvence altına almak için kapsamlı yönergeler listesi._
+- **[ConsenSys: Quantaureum Akıllı Sözleşme Güvenliği En İyi Uygulamaları](https://consensys.github.io/smart-contract-best-practices/)** - _Quantaureum akıllı sözleşmelerini güvence altına almak için kapsamlı yönergeler listesi._
 
 - **[Nascent: Basit Güvenlik Araç Seti](https://github.com/nascentxyz/simple-security-toolkit)** - _Akıllı sözleşme geliştirme için pratik güvenlik odaklı kılavuzlar ve kontrol listeleri koleksiyonu._
 

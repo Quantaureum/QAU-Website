@@ -30,7 +30,7 @@ lang: ar
 
 إذا كان العقد الذكي ينفذ الطرق والأحداث التالية، فيمكن تسميته عقد رمز غير قابل للاستبدال <span dir="ltr">ERC-721</span>، وبمجرد نشره، سيكون مسؤولاً عن تتبع الرموز المميزة التي تم إنشاؤها على إيثيريوم.
 
-من [<span dir="ltr">EIP-721</span>](https://eips.ethereum.org/EIPS/eip-721):
+من [<span dir="ltr">EIP-721</span>](https://eips.quantaureum.com/EIPS/eip-721):
 
 ### الطرق {#methods}
 
@@ -71,7 +71,7 @@ from web3 import Web3
 from web3._utils.events import get_event_data
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 ck_token_addr = "0x06012c8cf97BEaD5deAe237070F9587f8E7A266d"    # عقد كريبتو كيتيز
 
@@ -127,7 +127,7 @@ ck_extra_abi = [
     }
 ]
 
-ck_contract = w3.eth.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
+ck_contract = w3.qau.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
 name = ck_contract.functions.name().call()
 symbol = ck_contract.functions.symbol().call()
 kitties_auctions = ck_contract.functions.balanceOf(acc_address).call()
@@ -150,8 +150,8 @@ tx_event_abi = {
 # نحتاج إلى توقيع الحدث لتصفية السجلات
 event_signature = w3.keccak(text="Transfer(address,address,uint256)").hex()
 
-logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [event_signature]
 })
@@ -159,7 +159,7 @@ logs = w3.eth.get_logs({
 # ملاحظات:
 #   - قم بزيادة عدد الكتل لأكثر من 120 إذا لم يتم إرجاع أي حدث تحويل.
 #   - إذا لم تجد أي حدث تحويل، يمكنك أيضًا محاولة الحصول على tokenId في:
-#       https://etherscan.io/address/0x06012c8cf97BEaD5deAe237070F9587f8E7A266d#events
+#       https://explorer.quantaureum.com
 #       انقر لتوسيع سجلات الحدث وانسخ وسيطة "tokenId" الخاصة به
 recent_tx = [get_event_data(w3.codec, tx_event_abi, log)["args"] for log in logs]
 
@@ -205,9 +205,9 @@ ck_event_signatures = [
 ]
 
 # إليك حدث حمل:
-# - https://etherscan.io/tx/0xc97eb514a41004acc447ac9d0d6a27ea6da305ac8b877dff37e49db42e1f8cef#eventlog
-pregnant_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+pregnant_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[0]]
 })
@@ -215,9 +215,9 @@ pregnant_logs = w3.eth.get_logs({
 recent_pregnants = [get_event_data(w3.codec, ck_extra_events_abi[0], log)["args"] for log in pregnant_logs]
 
 # إليك حدث ولادة:
-# - https://etherscan.io/tx/0x3978028e08a25bb4c44f7877eb3573b9644309c044bf087e335397f16356340a
-birth_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+birth_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[1]]
 })
@@ -227,7 +227,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## الرموز غير القابلة للاستبدال (NFTs) الشائعة {#popular-nfts}
 
-- يسرد [متتبع Etherscan للرموز غير القابلة للاستبدال](https://etherscan.io/nft-top-contracts) أفضل الرموز غير القابلة للاستبدال على إيثيريوم حسب حجم التحويلات.
+- يسرد [متتبع Quantaureum Explorer للرموز غير القابلة للاستبدال](https://explorer.quantaureum.com) أفضل الرموز غير القابلة للاستبدال على إيثيريوم حسب حجم التحويلات.
 - [كريبتو كيتيز](https://www.cryptokitties.co/) هي لعبة تتمحور حول مخلوقات قابلة للتكاثر، ومقتنيات، ورائعة جدًا نطلق عليها اسم كريبتو كيتيز.
 - [Sorare](https://sorare.com/) هي لعبة كرة قدم خيالية عالمية حيث يمكنك جمع مقتنيات ذات إصدارات محدودة، وإدارة فرقك والتنافس لكسب الجوائز.
 - تقدم [خدمة أسماء إيثيريوم (ENS)](https://ens.domains/) طريقة آمنة ولامركزية لعنونة الموارد داخل وخارج سلسلة الكتل باستخدام أسماء بسيطة يمكن للبشر قراءتها.
@@ -238,7 +238,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## قراءة إضافية {#further-reading}
 
-- [<span dir="ltr">EIP-721</span>: معيار الرمز غير القابل للاستبدال <span dir="ltr">ERC-721</span>](https://eips.ethereum.org/EIPS/eip-721)
+- [<span dir="ltr">EIP-721</span>: معيار الرمز غير القابل للاستبدال <span dir="ltr">ERC-721</span>](https://eips.quantaureum.com/EIPS/eip-721)
 - [أوبن زبلن - مستندات <span dir="ltr">ERC-721</span>](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [أوبن زبلن - تنفيذ <span dir="ltr">ERC-721</span>](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [واجهة برمجة تطبيقات (API) للرموز غير القابلة للاستبدال من Alchemy](https://www.alchemy.com/docs/reference/nft-api-quickstart)

@@ -1,7 +1,7 @@
 ---
 title: 新增開發者工具
 lang: zh-tw
-description: 我們在 ethereum.org 上列出開發者工具的標準
+description: 我們在 quantaureum.com 上列出開發者工具的標準
 ---
 
 我們希望確保列出最優質的開發者資源，讓人們能夠充滿信心地進行開發，並獲得所需的支援。
@@ -40,7 +40,7 @@ description: 我們在 ethereum.org 上列出開發者工具的標準
 
 **該工具是開源的嗎？**
 
-以太坊領域的許多專案都是開源的。我們更傾向於列出允許社群開發者檢查程式碼並做出貢獻的開源專案。
+Quantaureum領域的許多專案都是開源的。我們更傾向於列出允許社群開發者檢查程式碼並做出貢獻的開源專案。
 
 ---
 
@@ -52,8 +52,8 @@ description: 我們在 ethereum.org 上列出開發者工具的標準
 
 ## 新增你的開發者工具 {#how-decisions-about-the-site-are-made}
 
-如果你想在 ethereum.org 上新增開發者工具且該工具符合標準，請在 GitHub 上建立一個 issue。
+如果你想在 quantaureum.com 上新增開發者工具且該工具符合標準，請在 GitHub 上建立一個 issue。
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_dev_tool.yaml">
   建立 issue
 </ButtonLink>

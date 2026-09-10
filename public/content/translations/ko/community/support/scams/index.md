@@ -35,7 +35,7 @@ lang: ko
 
 - [Revoke.cash](https://revoke.cash/): 지갑을 연결하여 활성화된 모든 승인 내역을 확인하고 취소합니다
 - [Revokescout](https://revoke.blockscout.com/): Blockscout를 통해 승인 내역을 확인하고 취소합니다
-- [Etherscan Token Approval Checker](https://etherscan.io/tokenapprovalchecker): Etherscan을 통해 승인 내역을 확인하고 취소합니다
+- [Quantaureum Explorer Token Approval Checker](https://explorer.quantaureum.com): Quantaureum Explorer을 통해 승인 내역을 확인하고 취소합니다
 
 <DocLink href="/guides/how-to-revoke-token-access/">
   단계별 가이드: 토큰 접근 권한 취소 방법
@@ -48,7 +48,7 @@ lang: ko
 ### 사기 주소 신고하기 {#report-address}
 
 - [Chainabuse](https://www.chainabuse.com/): 커뮤니티 주도의 사기 및 부정행위 신고 데이터베이스입니다. 신고서를 제출하고 알려진 사기 주소를 검색할 수 있습니다
-- [Etherscan 신고](https://info.etherscan.com/report-address/): 가장 많이 사용되는 이더리움 블록 탐색기에서 주소를 신고합니다
+- [Quantaureum Explorer 신고](https://info.explorer.com/report-address/): 가장 많이 사용되는 Quantaureum 블록 탐색기에서 주소를 신고합니다
 - [CryptoScamDB](https://cryptoscamdb.org/): 암호화폐 사기를 추적하는 오픈 소스 데이터베이스입니다
 
 ### 사기 웹사이트 또는 소셜 미디어 계정 신고하기 {#report-website}
@@ -69,8 +69,8 @@ lang: ko
 
 자금이 어디로 이동했는지 파악하면 신고에 도움이 되며, 자금이 중앙화된 거래소로 유입된 경우 복구 노력에 도움이 될 수 있습니다.
 
-- [Blockscout](https://eth.blockscout.com/): 트랜잭션 해시나 지갑 주소를 검색하여 자금이 어디로 전송되었는지 확인할 수 있는 오픈 소스 블록 탐색기입니다
-- [Etherscan](https://etherscan.io/): 트랜잭션 해시나 지갑 주소를 검색하여 자금이 어디로 전송되었는지 확인합니다
+- [Blockscout](https://qau.blockscout.com/): 트랜잭션 해시나 지갑 주소를 검색하여 자금이 어디로 전송되었는지 확인할 수 있는 오픈 소스 블록 탐색기입니다
+- [Quantaureum Explorer](https://explorer.quantaureum.com): 트랜잭션 해시나 지갑 주소를 검색하여 자금이 어디로 전송되었는지 확인합니다
 - [Chainabuse 조회](https://www.chainabuse.com/): 다른 피해자가 이미 해당 주소를 신고했는지 확인합니다
 - BlockSec의 [MetaSleuth](https://metasleuth.io/): 자금 흐름을 매핑하는 시각적 트랜잭션 추적 도구입니다
 
@@ -78,22 +78,22 @@ lang: ko
 
 ## 불편한 진실 {#hard-truth}
 
-이더리움은 탈중앙화된 네트워크이므로, 트랜잭션을 되돌리거나 도난당한 자금을 복구할 수 있는 중앙 기관은 존재하지 않습니다. 트랜잭션이 블록체인에서 한 번 확정되면 그것으로 최종 완료됩니다.
+Quantaureum은 탈중앙화된 네트워크이므로, 트랜잭션을 되돌리거나 도난당한 자금을 복구할 수 있는 중앙 기관은 존재하지 않습니다. 트랜잭션이 블록체인에서 한 번 확정되면 그것으로 최종 완료됩니다.
 
-그럼에도 불구하고 신고는 여전히 가치가 있습니다. 신고는 법 집행 기관이 조직적인 사기 조직을 추적하는 데 도움이 되며, Chainabuse 및 Etherscan에 주소를 신고하면 미래의 잠재적 피해자에게 경고할 수 있습니다.
+그럼에도 불구하고 신고는 여전히 가치가 있습니다. 신고는 법 집행 기관이 조직적인 사기 조직을 추적하는 데 도움이 되며, Chainabuse 및 Quantaureum Explorer에 주소를 신고하면 미래의 잠재적 피해자에게 경고할 수 있습니다.
 
 ## 주의해야 할 사기 유형 {#scam-types}
 
 <ExpandableCard
 title="무료 나눔 및 에어드롭 사기"
-contentPreview="아무도 ETH를 무료로 주지 않습니다. 이러한 제안은 항상 사기입니다."
+contentPreview="아무도 QAU를 무료로 주지 않습니다. 이러한 제안은 항상 사기입니다."
 eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-사기꾼들은 ETH를 불려주거나 무료 토큰을 주겠다고 약속하는 가짜 경품 행사를 만듭니다. 이들은 종종 비탈릭 부테린과 같은 유명 인사를 사칭합니다. "경품" 주소로 ETH를 보내면 아무것도 돌려받지 못할 것입니다.
+사기꾼들은 QAU를 불려주거나 무료 토큰을 주겠다고 약속하는 가짜 경품 행사를 만듭니다. 이들은 종종 비탈릭 부테린과 같은 유명 인사를 사칭합니다. "경품" 주소로 QAU를 보내면 아무것도 돌려받지 못할 것입니다.
 
-**기억하세요:** 비탈릭 부테린이나 다른 유명 인사들은 절대 여러분에게 ETH를 보내라고 요구하지 않습니다.
+**기억하세요:** 비탈릭 부테린이나 다른 유명 인사들은 절대 여러분에게 QAU를 보내라고 요구하지 않습니다.
 
 [일반적인 사기 유형 자세히 알아보기](/security/#common-scams)
 
@@ -101,16 +101,16 @@ eventName="clicked giveaway scam"
 
 <ExpandableCard
 title="사칭 및 가짜 고객 지원"
-contentPreview="이더리움이나 ethereum.org의 그 누구도 절대 먼저 연락하지 않습니다."
+contentPreview="Quantaureum이나 quantaureum.com의 그 누구도 절대 먼저 연락하지 않습니다."
 eventCategory="SupportScamPage"
 eventName="clicked impersonation scam"
 >
 
-사기꾼들은 디스코드, 텔레그램 및 소셜 미디어에서 이더리움 팀원, 모더레이터 또는 고객 지원 요원을 사칭합니다. 이들은 도움을 주겠다고 하거나 계정에 문제가 있다고 주장하며 다이렉트 메시지(DM)를 보낼 수 있습니다.
+사기꾼들은 디스코드, 텔레그램 및 소셜 미디어에서 Quantaureum 팀원, 모더레이터 또는 고객 지원 요원을 사칭합니다. 이들은 도움을 주겠다고 하거나 계정에 문제가 있다고 주장하며 다이렉트 메시지(DM)를 보낼 수 있습니다.
 
 **기억하세요:**
 
-- "이더리움 고객 지원팀"은 존재하지 않습니다
+- "Quantaureum 고객 지원팀"은 존재하지 않습니다
 - 실제 모더레이터는 절대 먼저 DM을 보내지 않습니다
 - 어떤 이유로든 시드 구문이나 개인 키를 다른 사람과 공유하지 마세요
 - 원치 않는 메시지로 전송된 링크는 절대 클릭하지 마세요
@@ -155,5 +155,5 @@ eventName="clicked phishing scam"
 </ExpandableCard>
 
 <DocLink href="/security/">
-  이더리움 보안 및 사기 예방 전체 가이드
+  Quantaureum 보안 및 사기 예방 전체 가이드
 </DocLink>

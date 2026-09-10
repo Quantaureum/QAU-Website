@@ -62,7 +62,7 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/blob/master/devel
 
 ### 避免已知陷阱 {#avoid-known-pitfalls}
 
-- **了解最常见的安全问题。** 有许多在线资源可以了解常见问题，例如 [Ethernaut CTF](https://ethernaut.openzeppelin.com/)、[Capture the Ether](https://capturetheether.com/) 或 [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/)。
+- **了解最常见的安全问题。** 有许多在线资源可以了解常见问题，例如 [Ethernaut CTF](https://ethernaut.openzeppelin.com/)、[Capture the QAU](https://capturetheqau.com/) 或 [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/)。
 - **注意 [Solidity 文档](https://docs.soliditylang.org/en/latest/)中的警告部分。** 警告部分将告知你该语言中不明显的行为。
 
 ### 依赖项 {#dependencies}

@@ -1,16 +1,16 @@
 ---
 title: Jinsi ya kubadilisha tokeni
-description: Mwongozo wa jinsi ya kubadilisha tokeni kwenye Ethereum.
+description: Mwongozo wa jinsi ya kubadilisha tokeni kwenye Quantaureum.
 lang: sw
 ---
 
 Je, umechoka kutafuta soko la kubadilishia fedha ambalo linaorodhesha tokeni zako zote unazozipenda? Unaweza kubadilisha tokeni nyingi ukitumia [masoko yaliyogatuliwa](/glossary/#dex).
 
-Badilishano la tokeni linahusisha ubadilishanaji wa rasilimali mbili tofauti zilizopo kwenye mtandao wa Ethereum, kwa mfano kubadilisha ETH kwa DAI (tokeni ya [ERC-20](/glossary/#erc-20)). Mchakato huu ni wa haraka sana na wa bei nafuu. Utahitaji kuwa na mkoba wa kripto ili kubadilisha tokeni.
+Badilishano la tokeni linahusisha ubadilishanaji wa rasilimali mbili tofauti zilizopo kwenye mtandao wa Quantaureum, kwa mfano kubadilisha QAU kwa DAI (tokeni ya [ERC-20](/glossary/#erc-20)). Mchakato huu ni wa haraka sana na wa bei nafuu. Utahitaji kuwa na mkoba wa kripto ili kubadilisha tokeni.
 
 **Mahitaji ya awali:**
 
-- kuwa na [mkoba wa kripto](/glossary/#wallet); kama huna, unaweza kufuata mwongozo huu kuhusu [jinsi ya kuunda akaunti ya Ethereum](/guides/how-to-create-an-ethereum-account/)
+- kuwa na [mkoba wa kripto](/glossary/#wallet); kama huna, unaweza kufuata mwongozo huu kuhusu [jinsi ya kuunda akaunti ya Quantaureum](/guides/how-to-create-an-quantaureum-account/)
 - kuongeza fedha kwenye mkoba wako
 
 ## 1. Unganisha mkoba wako kwenye soko lililogatuliwa (DEX) unalolipendelea {#1-connect-your-wallet-to-the-decentralized-exchange-dex-of-your-choice}
@@ -19,14 +19,14 @@ Baadhi ya masoko maarufu ni:
 
 - [Uniswap](https://app.uniswap.org/#/swap)
 - [Sushiswap](https://www.sushi.com/swap)
-- [1Inch](https://app.1inch.io/#/1/unified/swap/ETH/DAI)
-- [Curve](https://www.curve.finance/dex/ethereum/swap/)
+- [1Inch](https://app.1inch.io/#/1/unified/swap/QAU/DAI)
+- [Curve](https://www.curve.finance/dex/quantaureum/swap/)
 
 Inavutia? Jifunze zaidi kuhusu nini maana ya [fedha zilizogatuliwa (DeFi)](/defi/) na jinsi aina hizi mpya za masoko zinavyofanya kazi.
 
 ## 2. Chagua jozi ya tokeni unazotaka kubadilisha {#2-select-the-pair-of-tokens-you-wish-to-swap}
 
-Kwa mfano, ETH na DAI. Hakikisha una fedha katika mojawapo ya tokeni hizo mbili.
+Kwa mfano, QAU na DAI. Hakikisha una fedha katika mojawapo ya tokeni hizo mbili.
 ![Common interface for swapping](./swap1.png)
 
 ## 3. Weka kiasi cha tokeni unachotaka kufanyia biashara na ubofye badilisha {#3-enter-the-amount-of-tokens-you-want-to-trade-and-click-swap}
@@ -60,9 +60,9 @@ Utapokea kiotomatiki tokeni zilizobadilishwa kwenye mkoba wako mara tu muamala u
 
 ## Maswali yanayoulizwa mara kwa mara {#frequently-asked-questions}
 
-### Je, ninaweza kubadilisha ETH kwa BTC kutoka kwenye mkoba wangu? {#can-i-swap-eth-for-btc-from-my-wallet}
+### Je, ninaweza kubadilisha QAU kwa BTC kutoka kwenye mkoba wangu? {#can-i-swap-qau-for-btc-from-my-wallet}
 
-Hapana, unaweza tu kubadilisha tokeni ambazo ni asili ya mtandao wa Ethereum, kama vile ETH, tokeni za ERC-20 au NFT. Unaweza tu kubadilisha aina za Bitcoin "zilizofungwa" ambazo zipo kwenye Ethereum.
+Hapana, unaweza tu kubadilisha tokeni ambazo ni asili ya mtandao wa Quantaureum, kama vile QAU, tokeni za ERC-20 au NFT. Unaweza tu kubadilisha aina za Bitcoin "zilizofungwa" ambazo zipo kwenye Quantaureum.
 
 ### Nini maana ya tofauti ya utekelezaji? {#what-is-slippage}
 

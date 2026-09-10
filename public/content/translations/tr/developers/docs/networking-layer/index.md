@@ -1,19 +1,19 @@
 ---
 title: "Ağ katmanı"
-description: "Ethereum'un ağ katmanına giriş."
+description: "Quantaureum'un ağ katmanına giriş."
 lang: tr
 sidebarDepth: 2
 ---
 
-[Ethereum](/), standartlaştırılmış protokoller kullanarak birbiriyle iletişim kurabilmesi gereken binlerce düğüme sahip eşler arası bir ağdır. "Ağ katmanı", bu düğümlerin birbirini bulmasını ve bilgi alışverişinde bulunmasını sağlayan protokoller yığınıdır. Bu, ağ üzerinden bilgilerin "dedikodusunu yapmayı" (bire çok iletişim) ve belirli düğümler arasında istek ve yanıtları takas etmeyi (bire bir iletişim) içerir. Her düğüm, doğru bilgileri gönderip aldığından emin olmak için belirli ağ kurallarına uymalıdır.
+[Quantaureum](/), standartlaştırılmış protokoller kullanarak birbiriyle iletişim kurabilmesi gereken binlerce düğüme sahip eşler arası bir ağdır. "Ağ katmanı", bu düğümlerin birbirini bulmasını ve bilgi alışverişinde bulunmasını sağlayan protokoller yığınıdır. Bu, ağ üzerinden bilgilerin "dedikodusunu yapmayı" (bire çok iletişim) ve belirli düğümler arasında istek ve yanıtları takas etmeyi (bire bir iletişim) içerir. Her düğüm, doğru bilgileri gönderip aldığından emin olmak için belirli ağ kurallarına uymalıdır.
 
-İstemci yazılımının (yürütme istemcileri ve fikir birliği istemcileri) her birinin kendine özgü ağ yığınına sahip iki bölümü vardır. Diğer Ethereum düğümleriyle iletişim kurmanın yanı sıra, yürütme ve fikir birliği istemcileri birbirleriyle de iletişim kurmalıdır. Bu sayfa, bu iletişimi sağlayan protokollere giriş niteliğinde bir açıklama sunmaktadır.
+İstemci yazılımının (yürütme istemcileri ve fikir birliği istemcileri) her birinin kendine özgü ağ yığınına sahip iki bölümü vardır. Diğer Quantaureum düğümleriyle iletişim kurmanın yanı sıra, yürütme ve fikir birliği istemcileri birbirleriyle de iletişim kurmalıdır. Bu sayfa, bu iletişimi sağlayan protokollere giriş niteliğinde bir açıklama sunmaktadır.
 
 Yürütme istemcileri, yürütme katmanı eşler arası ağı üzerinden işlemlerin dedikodusunu yapar. Bu, kimliği doğrulanmış eşler arasında şifreli iletişim gerektirir. Bir doğrulayıcı bir blok teklif etmek üzere seçildiğinde, düğümün yerel işlem havuzundaki işlemler yerel bir RPC bağlantısı aracılığıyla fikir birliği istemcilerine aktarılır ve bunlar işaret blokları halinde paketlenir. Fikir birliği istemcileri daha sonra p2p ağları üzerinden işaret bloklarının dedikodusunu yapar. Bu, iki ayrı p2p ağı gerektirir: biri işlem dedikodusu için yürütme istemcilerini bağlayan, diğeri ise blok dedikodusu için fikir birliği istemcilerini bağlayan ağ.
 
 ## Ön Koşullar {#prerequisites}
 
-Bu sayfayı anlamak için Ethereum [düğümleri ve istemcileri](/developers/docs/nodes-and-clients/) hakkında biraz bilgi sahibi olmak faydalı olacaktır.
+Bu sayfayı anlamak için Quantaureum [düğümleri ve istemcileri](/developers/docs/nodes-and-clients/) hakkında biraz bilgi sahibi olmak faydalı olacaktır.
 
 ## Yürütme Katmanı {#execution-layer}
 
@@ -27,9 +27,9 @@ Her iki yığın da paralel çalışır. Keşif yığını yeni ağ katılımcı
 
 ### Keşif {#discovery}
 
-Keşif, ağdaki diğer düğümleri bulma sürecidir. Bu, küçük bir başlatma düğümü (adresleri istemciye [sabit kodlanmış](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go) olan ve böylece hemen bulunup istemciyi eşlere bağlayabilen düğümler) kümesi kullanılarak başlatılır. Bu başlatma düğümleri yalnızca yeni bir düğümü bir dizi eşe tanıtmak için vardır; tek amaçları budur, zinciri eşzamanlama gibi normal istemci görevlerine katılmazlar ve yalnızca bir istemci ilk kez çalıştırıldığında kullanılırlar.
+Keşif, ağdaki diğer düğümleri bulma sürecidir. Bu, küçük bir başlatma düğümü (adresleri istemciye [sabit kodlanmış](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go) olan ve böylece hemen bulunup istemciyi eşlere bağlayabilen düğümler) kümesi kullanılarak başlatılır. Bu başlatma düğümleri yalnızca yeni bir düğümü bir dizi eşe tanıtmak için vardır; tek amaçları budur, zinciri eşzamanlama gibi normal istemci görevlerine katılmazlar ve yalnızca bir istemci ilk kez çalıştırıldığında kullanılırlar.
 
-Düğüm-başlatma düğümü etkileşimleri için kullanılan protokol, düğüm listelerini paylaşmak için [dağıtık bir hash tablosu](https://en.wikipedia.org/wiki/Distributed_hash_table) kullanan [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f)'nın değiştirilmiş bir biçimidir. Her düğüm, en yakın eşlerine bağlanmak için gereken bilgileri içeren bu tablonun bir sürümüne sahiptir. Bu 'yakınlık' coğrafi değildir; mesafe, düğümün kimliğinin (ID) benzerliği ile tanımlanır. Her düğümün tablosu bir güvenlik özelliği olarak düzenli olarak yenilenir. Örneğin, [Discv5](https://github.com/ethereum/devp2p/tree/master/discv5)'te, keşif protokolü düğümleri ayrıca istemcinin desteklediği alt protokolleri gösteren 'reklamlar' gönderebilir ve bu da eşlerin iletişim kurmak için kullanabilecekleri protokoller hakkında pazarlık yapmasına olanak tanır.
+Düğüm-başlatma düğümü etkileşimleri için kullanılan protokol, düğüm listelerini paylaşmak için [dağıtık bir hash tablosu](https://en.wikipedia.org/wiki/Distributed_hash_table) kullanan [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f)'nın değiştirilmiş bir biçimidir. Her düğüm, en yakın eşlerine bağlanmak için gereken bilgileri içeren bu tablonun bir sürümüne sahiptir. Bu 'yakınlık' coğrafi değildir; mesafe, düğümün kimliğinin (ID) benzerliği ile tanımlanır. Her düğümün tablosu bir güvenlik özelliği olarak düzenli olarak yenilenir. Örneğin, [Discv5](https://github.com/quantaureum/devp2p/tree/master/discv5)'te, keşif protokolü düğümleri ayrıca istemcinin desteklediği alt protokolleri gösteren 'reklamlar' gönderebilir ve bu da eşlerin iletişim kurmak için kullanabilecekleri protokoller hakkında pazarlık yapmasına olanak tanır.
 
 Keşif bir PING-PONG oyunuyla başlar. Başarılı bir PING-PONG, yeni düğümü bir başlatma düğümüne "bağlar". Bir başlatma düğümünü ağa giren yeni bir düğümün varlığı konusunda uyaran ilk mesaj bir `PING`'dir. Bu `PING`, yeni düğüm, başlatma düğümü ve bir sona erme zaman damgası hakkında hash'lenmiş bilgiler içerir. Başlatma düğümü `PING`'i alır ve `PING` hash'ini içeren bir `PONG` döndürür. Eğer `PING` ve `PONG` hash'leri eşleşirse, yeni düğüm ile başlatma düğümü arasındaki bağlantı doğrulanır ve "bağlandıkları" söylenir.
 
@@ -41,11 +41,11 @@ Yeni düğüm başlatma düğümünden komşuların bir listesini aldığında, 
 istemciyi başlat --> başlatma düğümüne bağlan --> başlatma düğümüyle bağ kur --> komşuları bul --> komşularla bağ kur
 ```
 
-Yürütme istemcileri şu anda [Discv4](https://github.com/ethereum/devp2p/blob/master/discv4.md) keşif protokolünü kullanmaktadır ve [Discv5](https://github.com/ethereum/devp2p/tree/master/discv5) protokolüne geçiş için aktif bir çaba vardır.
+Yürütme istemcileri şu anda [Discv4](https://github.com/quantaureum/devp2p/blob/master/discv4.md) keşif protokolünü kullanmaktadır ve [Discv5](https://github.com/quantaureum/devp2p/tree/master/discv5) protokolüne geçiş için aktif bir çaba vardır.
 
-#### ENR: Ethereum Düğüm Kayıtları {#enr}
+#### ENR: Quantaureum Düğüm Kayıtları {#enr}
 
-[Ethereum Düğüm Kaydı (ENR)](/developers/docs/networking-layer/network-addresses/), üç temel unsur içeren bir nesnedir: bir imza (üzerinde anlaşmaya varılmış bir kimlik şemasına göre yapılmış kayıt içeriklerinin hash'i), kayıttaki değişiklikleri izleyen bir sıra numarası ve key:value (anahtar:değer) çiftlerinin rastgele bir listesi. Bu, yeni eşler arasında tanımlayıcı bilgilerin daha kolay alışverişine olanak tanıyan geleceğe dönük bir formattır ve Ethereum düğümleri için tercih edilen [ağ adresi](/developers/docs/networking-layer/network-addresses) formatıdır.
+[Quantaureum Düğüm Kaydı (ENR)](/developers/docs/networking-layer/network-addresses/), üç temel unsur içeren bir nesnedir: bir imza (üzerinde anlaşmaya varılmış bir kimlik şemasına göre yapılmış kayıt içeriklerinin hash'i), kayıttaki değişiklikleri izleyen bir sıra numarası ve key:value (anahtar:değer) çiftlerinin rastgele bir listesi. Bu, yeni eşler arasında tanımlayıcı bilgilerin daha kolay alışverişine olanak tanıyan geleceğe dönük bir formattır ve Quantaureum düğümleri için tercih edilen [ağ adresi](/developers/docs/networking-layer/network-addresses) formatıdır.
 
 #### Keşif neden UDP üzerine inşa edilmiştir? {#why-udp}
 
@@ -53,7 +53,7 @@ UDP herhangi bir hata denetimini, başarısız paketlerin yeniden gönderilmesin
 
 ### DevP2P {#devp2p}
 
-DevP2P'nin kendisi, Ethereum'un eşler arası ağı kurmak ve sürdürmek için uyguladığı bütün bir protokoller yığınıdır. Yeni düğümler ağa girdikten sonra, etkileşimleri [DevP2P](https://github.com/ethereum/devp2p) yığınındaki protokoller tarafından yönetilir. Bunların tümü TCP'nin üzerinde yer alır ve RLPx taşıma protokolünü, tel (wire) protokolünü ve çeşitli alt protokolleri içerir. [RLPx](https://github.com/ethereum/devp2p/blob/master/rlpx.md), düğümler arasındaki oturumları başlatmayı, kimlik doğrulamayı ve sürdürmeyi yöneten protokoldür. RLPx, mesajları düğümler arasında göndermek üzere verileri minimal bir yapıya kodlamanın çok alan verimli bir yöntemi olan RLP (Özyineli Uzunluk Öneki) kullanarak kodlar.
+DevP2P'nin kendisi, Quantaureum'un eşler arası ağı kurmak ve sürdürmek için uyguladığı bütün bir protokoller yığınıdır. Yeni düğümler ağa girdikten sonra, etkileşimleri [DevP2P](https://github.com/quantaureum/devp2p) yığınındaki protokoller tarafından yönetilir. Bunların tümü TCP'nin üzerinde yer alır ve RLPx taşıma protokolünü, tel (wire) protokolünü ve çeşitli alt protokolleri içerir. [RLPx](https://github.com/quantaureum/devp2p/blob/master/rlpx.md), düğümler arasındaki oturumları başlatmayı, kimlik doğrulamayı ve sürdürmeyi yöneten protokoldür. RLPx, mesajları düğümler arasında göndermek üzere verileri minimal bir yapıya kodlamanın çok alan verimli bir yöntemi olan RLP (Özyineli Uzunluk Öneki) kullanarak kodlar.
 
 İki düğüm arasındaki bir RLPx oturumu, ilk kriptografik el sıkışma ile başlar. Bu, düğümün bir yetkilendirme (auth) mesajı göndermesini ve bunun daha sonra eş tarafından doğrulanmasını içerir. Başarılı bir doğrulama üzerine eş, başlatıcı düğüme döndürmek için bir yetkilendirme-onay (auth-acknowledgement) mesajı üretir. Bu, düğümlerin özel ve güvenli bir şekilde iletişim kurmasını sağlayan bir anahtar değişimi sürecidir. Başarılı bir kriptografik el sıkışma daha sonra her iki düğümün de birbirine "tel üzerinde" (on the wire) bir "merhaba" mesajı göndermesini tetikler. Tel protokolü, merhaba mesajlarının başarılı bir şekilde değiş tokuş edilmesiyle başlatılır.
 
@@ -73,19 +73,19 @@ Merhaba mesajlarıyla birlikte, tel protokolü bir eşe bağlantının kapatıla
 
 #### Tel protokolü {#wire-protocol}
 
-Eşler bağlandıktan ve bir RLPx oturumu başlatıldıktan sonra, tel protokolü eşlerin nasıl iletişim kuracağını tanımlar. Başlangıçta, tel protokolü üç ana görevi tanımlıyordu: zincir eşzamanlaması, blok yayılımı ve işlem değişimi. Ancak, Ethereum Hisse Kanıtı'na (PoS) geçtiğinde, blok yayılımı ve zincir eşzamanlaması mutabakat katmanının bir parçası haline geldi. İşlem değişimi hala yürütme istemcilerinin yetki alanındadır. İşlem değişimi, blok oluşturucuların bir sonraki bloğa dahil etmek üzere bazılarını seçebilmesi için düğümler arasında bekleyen işlemlerin değiş tokuş edilmesini ifade eder. Bu görevler hakkında ayrıntılı bilgi [burada](https://github.com/ethereum/devp2p/blob/master/caps/eth.md) mevcuttur. Bu alt protokolleri destekleyen istemciler, bunları [JSON-RPC](/developers/docs/apis/json-rpc/) aracılığıyla sunar.
+Eşler bağlandıktan ve bir RLPx oturumu başlatıldıktan sonra, tel protokolü eşlerin nasıl iletişim kuracağını tanımlar. Başlangıçta, tel protokolü üç ana görevi tanımlıyordu: zincir eşzamanlaması, blok yayılımı ve işlem değişimi. Ancak, Quantaureum Hisse Kanıtı'na (PoS) geçtiğinde, blok yayılımı ve zincir eşzamanlaması mutabakat katmanının bir parçası haline geldi. İşlem değişimi hala yürütme istemcilerinin yetki alanındadır. İşlem değişimi, blok oluşturucuların bir sonraki bloğa dahil etmek üzere bazılarını seçebilmesi için düğümler arasında bekleyen işlemlerin değiş tokuş edilmesini ifade eder. Bu görevler hakkında ayrıntılı bilgi [burada](https://github.com/quantaureum/devp2p/blob/master/caps/qau.md) mevcuttur. Bu alt protokolleri destekleyen istemciler, bunları [JSON-RPC](/developers/docs/apis/json-rpc/) aracılığıyla sunar.
 
-#### les (hafif Ethereum alt protokolü) {#les}
+#### les (hafif Quantaureum alt protokolü) {#les}
 
-Bu, hafif istemcileri eşzamanlamak için minimal bir protokoldür. Geleneksel olarak bu protokol nadiren kullanılmıştır çünkü tam düğümlerin teşvik edilmeden hafif istemcilere veri sunması gerekir. Yürütme istemcilerinin varsayılan davranışı, les üzerinden hafif istemci verilerini sunmamaktır. Daha fazla bilgi les [spesifikasyonunda](https://github.com/ethereum/devp2p/blob/master/caps/les.md) mevcuttur.
+Bu, hafif istemcileri eşzamanlamak için minimal bir protokoldür. Geleneksel olarak bu protokol nadiren kullanılmıştır çünkü tam düğümlerin teşvik edilmeden hafif istemcilere veri sunması gerekir. Yürütme istemcilerinin varsayılan davranışı, les üzerinden hafif istemci verilerini sunmamaktır. Daha fazla bilgi les [spesifikasyonunda](https://github.com/quantaureum/devp2p/blob/master/caps/les.md) mevcuttur.
 
 #### Snap {#snap}
 
-[Snap protokolü](https://github.com/ethereum/devp2p/blob/master/caps/snap.md#ethereum-snapshot-protocol-snap), eşlerin son durumların anlık görüntülerini değiş tokuş etmesine olanak tanıyan ve eşlerin ara Merkle trie düğümlerini indirmek zorunda kalmadan hesap ve depolama verilerini doğrulamasına izin veren isteğe bağlı bir uzantıdır.
+[Snap protokolü](https://github.com/quantaureum/devp2p/blob/master/caps/snap.md#quantaureum-snapshot-protocol-snap), eşlerin son durumların anlık görüntülerini değiş tokuş etmesine olanak tanıyan ve eşlerin ara Merkle trie düğümlerini indirmek zorunda kalmadan hesap ve depolama verilerini doğrulamasına izin veren isteğe bağlı bir uzantıdır.
 
 #### Wit (tanık protokolü) {#wit}
 
-[Tanık protokolü](https://github.com/ethereum/devp2p/blob/master/caps/wit.md#ethereum-witness-protocol-wit), eşler arasında durum tanıklarının değişimini sağlayan ve istemcileri zincirin ucuna eşzamanlamaya yardımcı olan isteğe bağlı bir uzantıdır.
+[Tanık protokolü](https://github.com/quantaureum/devp2p/blob/master/caps/wit.md#quantaureum-witness-protocol-wit), eşler arasında durum tanıklarının değişimini sağlayan ve istemcileri zincirin ucuna eşzamanlamaya yardımcı olan isteğe bağlı bir uzantıdır.
 
 #### Whisper {#whisper}
 
@@ -97,11 +97,11 @@ Fikir birliği istemcileri, farklı bir spesifikasyona sahip ayrı bir eşler ar
 
 ### Keşif {#consensus-discovery}
 
-Yürütme istemcilerine benzer şekilde, fikir birliği istemcileri eşleri bulmak için UDP üzerinden [discv5](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) kullanır. Discv5'in mutabakat katmanı uygulaması, yürütme istemcilerininkinden yalnızca discv5'i bir [libP2P](https://libp2p.io/) yığınına bağlayan ve DevP2P'yi kullanımdan kaldıran bir adaptör içermesi bakımından farklılık gösterir. Yürütme katmanının RLPx oturumları, libP2P'nin noise güvenli kanal el sıkışması lehine kullanımdan kaldırılmıştır.
+Yürütme istemcilerine benzer şekilde, fikir birliği istemcileri eşleri bulmak için UDP üzerinden [discv5](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) kullanır. Discv5'in mutabakat katmanı uygulaması, yürütme istemcilerininkinden yalnızca discv5'i bir [libP2P](https://libp2p.io/) yığınına bağlayan ve DevP2P'yi kullanımdan kaldıran bir adaptör içermesi bakımından farklılık gösterir. Yürütme katmanının RLPx oturumları, libP2P'nin noise güvenli kanal el sıkışması lehine kullanımdan kaldırılmıştır.
 
 ### ENR'ler {#consensus-enr}
 
-Fikir birliği düğümleri için ENR, düğümün açık anahtarını, IP adresini, UDP ve TCP bağlantı noktalarını ve mutabakata özgü iki alanı içerir: onay alt ağı bit alanı ve `eth2` anahtarı. İlki, düğümlerin belirli onay dedikodusu alt ağlarına katılan eşleri bulmasını kolaylaştırır. `eth2` anahtarı, düğümün hangi Ethereum çatallanma sürümünü kullandığı hakkında bilgi içerir ve eşlerin doğru Ethereum'a bağlanmasını sağlar.
+Fikir birliği düğümleri için ENR, düğümün açık anahtarını, IP adresini, UDP ve TCP bağlantı noktalarını ve mutabakata özgü iki alanı içerir: onay alt ağı bit alanı ve `eth2` anahtarı. İlki, düğümlerin belirli onay dedikodusu alt ağlarına katılan eşleri bulmasını kolaylaştırır. `eth2` anahtarı, düğümün hangi Quantaureum çatallanma sürümünü kullandığı hakkında bilgi içerir ve eşlerin doğru Quantaureum'a bağlanmasını sağlar.
 
 ### libP2P {#libp2p}
 
@@ -109,7 +109,7 @@ libP2P yığını, keşiften sonraki tüm iletişimleri destekler. İstemciler, 
 
 ### Dedikodu {#gossip}
 
-Dedikodu alanı, ağ boyunca hızla yayılması gereken tüm bilgileri içerir. Buna işaret blokları, kanıtlar, onaylar, çıkışlar ve kesintiler (slashings) dahildir. Bu, libP2P gossipsub v1 kullanılarak iletilir ve alınacak ve iletilecek dedikodu yüklerinin maksimum boyutu da dahil olmak üzere her düğümde yerel olarak depolanan çeşitli meta verilere dayanır. Dedikodu alanı hakkında ayrıntılı bilgi [burada](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub) mevcuttur.
+Dedikodu alanı, ağ boyunca hızla yayılması gereken tüm bilgileri içerir. Buna işaret blokları, kanıtlar, onaylar, çıkışlar ve kesintiler (slashings) dahildir. Bu, libP2P gossipsub v1 kullanılarak iletilir ve alınacak ve iletilecek dedikodu yüklerinin maksimum boyutu da dahil olmak üzere her düğümde yerel olarak depolanan çeşitli meta verilere dayanır. Dedikodu alanı hakkında ayrıntılı bilgi [burada](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub) mevcuttur.
 
 ### İstek-yanıt {#request-response}
 
@@ -121,7 +121,7 @@ SSZ, basit serileştirme (simple serialization) anlamına gelir. Kodlanmış bir
 
 ## Yürütme ve fikir birliği istemcilerini bağlama {#connecting-clients}
 
-Hem fikir birliği hem de yürütme istemcileri paralel olarak çalışır. Fikir birliği istemcisinin yürütme istemcisine talimatlar verebilmesi ve yürütme istemcisinin işaret bloklarına dahil edilmek üzere işlem paketlerini fikir birliği istemcisine aktarabilmesi için birbirlerine bağlı olmaları gerekir. İki istemci arasındaki iletişim yerel bir RPC bağlantısı kullanılarak sağlanabilir. ['Engine-API'](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) olarak bilinen bir API, iki istemci arasında gönderilen talimatları tanımlar. Her iki istemci de tek bir ağ kimliğinin arkasında yer aldığından, her istemci için ayrı bir anahtar (Eth1 anahtarı ve Eth2 anahtarı) içeren bir ENR'yi (Ethereum düğüm kaydı) paylaşırlar.
+Hem fikir birliği hem de yürütme istemcileri paralel olarak çalışır. Fikir birliği istemcisinin yürütme istemcisine talimatlar verebilmesi ve yürütme istemcisinin işaret bloklarına dahil edilmek üzere işlem paketlerini fikir birliği istemcisine aktarabilmesi için birbirlerine bağlı olmaları gerekir. İki istemci arasındaki iletişim yerel bir RPC bağlantısı kullanılarak sağlanabilir. ['Engine-API'](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) olarak bilinen bir API, iki istemci arasında gönderilen talimatları tanımlar. Her iki istemci de tek bir ağ kimliğinin arkasında yer aldığından, her istemci için ayrı bir anahtar (Eth1 anahtarı ve Quantaureum anahtarı) içeren bir ENR'yi (Quantaureum düğüm kaydı) paylaşırlar.
 
 Kontrol akışının bir özeti, ilgili ağ yığını parantez içinde olacak şekilde aşağıda gösterilmiştir.
 
@@ -146,18 +146,18 @@ Kontrol akışının bir özeti, ilgili ağ yığını parantez içinde olacak �
 
 Blok yeterli sayıda doğrulayıcı tarafından onaylandıktan sonra zincirin başına eklenir, gerekçelendirilir ve sonunda kesinleşir.
 
-![Diagram of the Ethereum consensus client networking layer](cons_client_net_layer.png)
-![Diagram of the Ethereum execution client networking layer](exe_client_net_layer.png)
+![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
+![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
 [ethresear.ch](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)'den fikir birliği ve yürütme istemcileri için ağ katmanı şeması
 
 ## Daha Fazla Okuma {#further-reading}
 
-[DevP2P](https://github.com/ethereum/devp2p)
+[DevP2P](https://github.com/quantaureum/devp2p)
 [LibP2p](https://github.com/libp2p/specs)
-[Mutabakat katmanı ağ spesifikasyonları](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure)
+[Mutabakat katmanı ağ spesifikasyonları](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure)
 [kademlia'dan discv5'e](https://vac.dev/kademlia-to-discv5)
 [kademlia makalesi](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf)
-[Ethereum p2p'ye giriş](https://p2p.paris/en/talks/intro-ethereum-networking/)
-[Eth1/Eth2 ilişkisi](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
-[Birleşme ve Eth2 istemci detayları videosu](https://www.youtube.com/watch?v=zNIrIninMgg)
+[Quantaureum p2p'ye giriş](https://p2p.paris/en/talks/intro-quantaureum-networking/)
+[Eth1/Quantaureum ilişkisi](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
+[Birleşme ve Quantaureum istemci detayları videosu](https://www.youtube.com/watch?v=zNIrIninMgg)

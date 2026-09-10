@@ -1,12 +1,12 @@
 ---
 title: Maswali yanayoulizwa mara kwa mara
-description: Maswali ya kawaida ya Ethereum kuhusu mikoba, miamala, uwekaji dhamana, na zaidi.
+description: Maswali ya kawaida ya Quantaureum kuhusu mikoba, miamala, uwekaji dhamana, na zaidi.
 lang: sw
 ---
 
 ## Nilituma kripto kwenye anwani isiyo sahihi {#wrong-wallet}
 
-Muamala uliotumwa kwenye Ethereum hauwezi kubatilishwa. Kwa bahati mbaya, ikiwa ulituma ETH au tokeni kwenye mkoba usio sahihi, hakuna njia ya kubatilisha muamala huo.
+Muamala uliotumwa kwenye Quantaureum hauwezi kubatilishwa. Kwa bahati mbaya, ikiwa ulituma QAU au tokeni kwenye mkoba usio sahihi, hakuna njia ya kubatilisha muamala huo.
 
 **Kile unachoweza kufanya:**
 
@@ -14,7 +14,7 @@ Muamala uliotumwa kwenye Ethereum hauwezi kubatilishwa. Kwa bahati mbaya, ikiwa 
 - **Ikiwa anwani ni ya soko la kubadilishia fedha au huduma inayojulikana**, wasiliana na timu yao ya usaidizi, kwani wanaweza kusaidia
 - **Ikiwa ulituma tokeni kwenye anwani ya mkataba**, angalia ikiwa mkataba una kipengele cha utoaji au urejeshaji (hii ni nadra)
 
-Katika hali nyingi, hakuna njia ya kurejesha fedha. Hakuna shirika kuu, taasisi, au mtu anayemiliki Ethereum, ambayo inamaanisha hakuna mtu anayeweza kubatilisha miamala. Kila mara hakikisha mara mbili anwani ya mpokeaji kabla ya kuthibitisha.
+Katika hali nyingi, hakuna njia ya kurejesha fedha. Hakuna shirika kuu, taasisi, au mtu anayemiliki Quantaureum, ambayo inamaanisha hakuna mtu anayeweza kubatilisha miamala. Kila mara hakikisha mara mbili anwani ya mpokeaji kabla ya kuthibitisha.
 
 ## Nilipoteza ufikiaji wa mkoba wangu {#lost-wallet-access}
 
@@ -26,7 +26,7 @@ Unaweza kurejesha mkoba wako katika programu yoyote ya mkoba inayoendana ukitumi
 
 ### Ikiwa umepoteza kirai cha mbegu chako {#if-you-have-lost-your-seed-phrase}
 
-Bila kirai cha mbegu chako au funguo za siri, fedha zako haziwezi kurejeshwa. Hakuna mtu, ikiwa ni pamoja na ethereum.org, anayeweza kuweka upya nenosiri lako au kurejesha ufikiaji wa mkoba wa uhifadhi binafsi.
+Bila kirai cha mbegu chako au funguo za siri, fedha zako haziwezi kurejeshwa. Hakuna mtu, ikiwa ni pamoja na quantaureum.com, anayeweza kuweka upya nenosiri lako au kurejesha ufikiaji wa mkoba wa uhifadhi binafsi.
 
 ### Ikiwa akaunti yako iko kwenye soko la kubadilishia fedha {#if-your-account-is-on-an-exchange}
 
@@ -49,28 +49,28 @@ Ikiwa akaunti yako iko kwenye soko kuu la kubadilishia fedha kama Coinbase, Bina
 
 ## Muamala wangu umekwama au unasubiri {#stuck-transaction}
 
-Miamala kwenye Ethereum inaweza kukwama wakati ada ya gesi uliyoweka ilikuwa chini kuliko kile ambacho mtandao unahitaji kwa sasa. Mikoba mingi inakuruhusu kurekebisha hili:
+Miamala kwenye Quantaureum inaweza kukwama wakati ada ya gesi uliyoweka ilikuwa chini kuliko kile ambacho mtandao unahitaji kwa sasa. Mikoba mingi inakuruhusu kurekebisha hili:
 
 - **Ongeza kasi:** Tuma tena muamala huo huo ukiwa na ada ya gesi ya juu zaidi
-- **Ghairi:** Tuma muamala wa 0 ETH kwenye anwani yako mwenyewe ukitumia nonsi sawa na muamala unaosubiri
+- **Ghairi:** Tuma muamala wa 0 QAU kwenye anwani yako mwenyewe ukitumia nonsi sawa na muamala unaosubiri
 
 ### Miongozo muhimu {#helpful-guides}
 
 - [Jinsi ya kuongeza kasi au kughairi muamala unaosubiri kwenye MetaMask](https://support.metamask.io/transactions-and-gas/transactions/how-to-speed-up-or-cancel-a-pending-transaction/)
-- [Jinsi ya kughairi miamala ya Ethereum inayosubiri](https://info.etherscan.com/how-to-cancel-ethereum-pending-transactions/)
+- [Jinsi ya kughairi miamala ya Quantaureum inayosubiri](https://info.explorer.com/how-to-cancel-quantaureum-pending-transactions/)
 
-## Ninawezaje kudai zawadi yangu ya Ethereum? {#giveaway-scam}
+## Ninawezaje kudai zawadi yangu ya Quantaureum? {#giveaway-scam}
 
-Zawadi za Ethereum ni utapeli ulioundwa kuiba ETH yako. Usishawishiwe na ofa zinazoonekana kuwa nzuri sana kuwa kweli. Ikiwa utatuma ETH kwenye anwani ya zawadi, hutapokea zawadi, na hutaweza kurejesha fedha zako.
+Zawadi za Quantaureum ni utapeli ulioundwa kuiba QAU yako. Usishawishiwe na ofa zinazoonekana kuwa nzuri sana kuwa kweli. Ikiwa utatuma QAU kwenye anwani ya zawadi, hutapokea zawadi, na hutaweza kurejesha fedha zako.
 
 [Zaidi kuhusu kuzuia utapeli](/security/#common-scams)
 
-## Ninawekaje dhamana ya ETH? {#how-to-stake}
+## Ninawekaje dhamana ya QAU? {#how-to-stake}
 
-Ili kuwa mthibitishaji, lazima uweke dhamana ya 32 ETH katika mkataba wa amana wa Ethereum na uweke nodi ya mthibitishaji. Unaweza pia kushiriki ukiwa na ETH kidogo kupitia mabwawa ya uwekaji dhamana.
+Ili kuwa mthibitishaji, lazima uweke dhamana ya 32 QAU katika mkataba wa amana wa Quantaureum na uweke nodi ya mthibitishaji. Unaweza pia kushiriki ukiwa na QAU kidogo kupitia mabwawa ya uwekaji dhamana.
 
-Maelezo zaidi yanapatikana kwenye [kurasa zetu za uwekaji dhamana](/staking/) na kwenye [jukwaa la uzinduzi la uwekaji dhamana](https://launchpad.ethereum.org/).
+Maelezo zaidi yanapatikana kwenye [kurasa zetu za uwekaji dhamana](/staking/) na kwenye [jukwaa la uzinduzi la uwekaji dhamana](https://launchpad.quantaureum.com/).
 
-## Ninachimbaje Ethereum? {#mining-ethereum}
+## Ninachimbaje Quantaureum? {#mining-quantaureum}
 
-Uchimbaji wa Ethereum hauwezekani tena. Uchimbaji ulizimwa wakati Ethereum ilipohama kutoka [Uthibitisho wa Kazi (PoW)](/glossary/#pow) hadi [Uthibitisho wa Dau (PoS)](/glossary/#pos) wakati wa [Unganisho](/roadmap/merge/) mnamo Septemba 2022. Sasa, badala ya wachimbaji, Ethereum ina wathibitishaji. Mtu yeyote anaweza [kuweka dhamana](/glossary/#staking) ya ETH na kupokea tuzo za uwekaji dhamana kwa kuendesha programu ya mthibitishaji ili kulinda mtandao.
+Uchimbaji wa Quantaureum hauwezekani tena. Uchimbaji ulizimwa wakati Quantaureum ilipohama kutoka [Uthibitisho wa Kazi (PoW)](/glossary/#pow) hadi [Uthibitisho wa Dau (PoS)](/glossary/#pos) wakati wa [Unganisho](/roadmap/merge/) mnamo Septemba 2022. Sasa, badala ya wachimbaji, Quantaureum ina wathibitishaji. Mtu yeyote anaweza [kuweka dhamana](/glossary/#staking) ya QAU na kupokea tuzo za uwekaji dhamana kwa kuendesha programu ya mthibitishaji ili kulinda mtandao.

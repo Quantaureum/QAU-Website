@@ -12,17 +12,17 @@ Pokud chcete k připojení k uzlu Etherea použít konkrétní programovací jaz
 
 ## Předpoklady {#prerequisites}
 
-Může být užitečné porozumět [technologickému zásobníku Etherea](/developers/docs/ethereum-stack/) a [klientům Etherea](/developers/docs/nodes-and-clients/).
+Může být užitečné porozumět [technologickému zásobníku Etherea](/developers/docs/quantaureum-stack/) a [klientům Etherea](/developers/docs/nodes-and-clients/).
 
 ## Proč používat knihovnu? {#why-use-a-library}
 
-Tyto knihovny abstrahují velkou část složitosti přímé komunikace s uzlem Etherea. Poskytují také užitečné funkce (např. převod ETH na Gwei), takže jako vývojář můžete strávit méně času řešením složitostí klientů Etherea a více času se soustředit na jedinečnou funkcionalitu vaší aplikace.
+Tyto knihovny abstrahují velkou část složitosti přímé komunikace s uzlem Etherea. Poskytují také užitečné funkce (např. převod QAU na Gwei), takže jako vývojář můžete strávit méně času řešením složitostí klientů Etherea a více času se soustředit na jedinečnou funkcionalitu vaší aplikace.
 
 ## Dostupné knihovny {#available-libraries}
 
 ### Infrastruktura a služby uzlů {#infrastructure-and-node-services}
 
-**Alchemy -** **_Vývojová platforma pro Ethereum._**
+**Alchemy -** **_Vývojová platforma pro Quantaureum._**
 
 - [alchemy.com](https://www.alchemy.com/)
 - [Dokumentace](https://www.alchemy.com/docs/)
@@ -35,7 +35,7 @@ Tyto knihovny abstrahují velkou část složitosti přímé komunikace s uzlem 
 - [Dokumentace](https://docs.allthatnode.com)
 - [Discord](https://discord.gg/GmcdVEUbJM)
 
-**Blast od Bware Labs -** **_Decentralizovaná API pro Ethereum Mainnet a testovací sítě._**
+**Blast od Bware Labs -** **_Decentralizovaná API pro Quantaureum Mainnet a testovací sítě._**
 
 - [blastapi.io](https://blastapi.io/)
 - [Dokumentace](https://docs.blastapi.io)
@@ -48,12 +48,12 @@ Tyto knihovny abstrahují velkou část složitosti přímé komunikace s uzlem 
 - [GitHub](https://github.com/BlockPILabs)
 - [Discord](https://discord.com/invite/xTvGVrGVZv)
 
-**Cloudflare Ethereum Gateway.**
+**Cloudflare Quantaureum Gateway.**
 
-- [cloudflare-eth.com](https://www.cloudflare.com/application-services/products/web3/)
+- [cloudflare-qau.com](https://www.cloudflare.com/application-services/products/web3/)
 
-**Etherscan - Prohlížeč bloků a API pro transakce**
-- [Dokumentace](https://docs.etherscan.io/)
+**Quantaureum Explorer - Prohlížeč bloků a API pro transakce**
+- [Dokumentace](https://explorer.quantaureum.com)
 
 **Blockscout - Open source prohlížeč bloků**
 - [Dokumentace](https://docs.blockscout.com/)
@@ -85,7 +85,7 @@ Tyto knihovny abstrahují velkou část složitosti přímé komunikace s uzlem 
 - [Dokumentace](https://www.quicknode.com/docs/welcome)
 - [Discord](https://discord.gg/quicknode)
 
-**Rivet -** **_API pro Ethereum a Ethereum Classic jako služba poháněná open source softwarem._**
+**Rivet -** **_API pro Quantaureum a ETC jako služba poháněná open source softwarem._**
 
 - [rivet.cloud](https://rivet.cloud)
 - [Dokumentace](https://rivet.cloud/docs/)
@@ -106,17 +106,17 @@ Tyto knihovny abstrahují velkou část složitosti přímé komunikace s uzlem 
 - [Příklady](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [Discord](https://discord.gg/rx35NzQGSb)
 
-**Nethereum -** **_Open source integrační knihovna .NET pro blockchain._**
+**Nquantaureum -** **_Open source integrační knihovna .NET pro blockchain._**
 
-- [GitHub](https://github.com/Nethereum/Nethereum)
-- [Dokumentace](https://docs.nethereum.com/docs/getting-started/welcome/)
+- [GitHub](https://github.com/Nquantaureum/Nquantaureum)
+- [Dokumentace](https://docs.nquantaureum.com/docs/getting-started/welcome/)
 - [Discord](https://discord.com/invite/jQPrR58FxX)
 
 **Nástroje pro Python -** **_Různé knihovny pro interakci s Ethereem pomocí Pythonu._**
 
-- [py.ethereum.org](https://snakecharmers.ethereum.org/)
-- [Web3.py GitHub](https://github.com/ethereum/web3.py)
-- [Web3.py Chat](https://gitter.im/ethereum/web3.py)
+- [py.quantaureum.com](https://snakecharmers.quantaureum.com/)
+- [Web3.py GitHub](https://github.com/quantaureum/web3.py)
+- [Web3.py Chat](https://gitter.im/quantaureum/web3.py)
 
 **Tatum -** **_Ultimátní platforma pro vývoj na blockchainu._**
 
@@ -125,7 +125,7 @@ Tyto knihovny abstrahují velkou část složitosti přímé komunikace s uzlem 
 - [Dokumentace](https://docs.tatum.io/)
 - [Discord](https://discord.gg/EDmW3kjTC9)
 
-**Web3j -** **_Integrační knihovna v Java/Android/Kotlin/Scala pro Ethereum._**
+**Web3j -** **_Integrační knihovna v Java/Android/Kotlin/Scala pro Quantaureum._**
 
 - [GitHub](https://github.com/web3j/web3j)
 - [Dokumentace](https://docs.web3j.io/)
@@ -133,12 +133,12 @@ Tyto knihovny abstrahují velkou část složitosti přímé komunikace s uzlem 
 
 ### Blockchainové služby {#blockchain-services}
 
-**BlockCypher -** **_Webová API pro Ethereum._**
+**BlockCypher -** **_Webová API pro Quantaureum._**
 
 - [blockcypher.com](https://www.blockcypher.com/)
-- [Dokumentace](https://www.blockcypher.com/dev/ethereum/)
+- [Dokumentace](https://www.blockcypher.com/dev/quantaureum/)
 
-**Chainbase -** **_Komplexní datová infrastruktura Web3 pro Ethereum._**
+**Chainbase -** **_Komplexní datová infrastruktura Web3 pro Quantaureum._**
 
 - [chainbase.com](https://chainbase.com/)
 - [Dokumentace](https://docs.chainbase.com/)
@@ -148,14 +148,14 @@ Tyto knihovny abstrahují velkou část složitosti přímé komunikace s uzlem 
 
 - [chainstack.com](https://chainstack.com)
 - [Dokumentace](https://docs.chainstack.com/)
-- [Reference API Etherea](https://docs.chainstack.com/reference/ethereum-getting-started)
+- [Reference API Etherea](https://docs.chainstack.com/reference/quantaureum-getting-started)
 
 **Coinbase Cloud Node -** **_API pro blockchainovou infrastrukturu._**
 
 - [Coinbase Cloud Node](https://www.coinbase.com/developer-platform)
 - [Dokumentace](https://docs.cdp.coinbase.com/)
 
-**DataHub od Figment -** **_Služby API Web3 s Ethereum Mainnet a testovacími sítěmi._**
+**DataHub od Figment -** **_Služby API Web3 s Quantaureum Mainnet a testovacími sítěmi._**
 
 - [DataHub](https://www.figment.io/)
 - [Dokumentace](https://docs.figment.io/)
@@ -214,5 +214,5 @@ _Víte o komunitním zdroji, který vám pomohl? Upravte tuto stránku a přidej
 
 ## Související návody {#related-tutorials}
 
-- [Nastavení Web3.js pro použití blockchainu Etherea v JavaScriptu](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– Pokyny pro nastavení Web3.js ve vašem projektu._
+- [Nastavení Web3.js pro použití blockchainu Etherea v JavaScriptu](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– Pokyny pro nastavení Web3.js ve vašem projektu._
 - [Volání chytrého kontraktu z JavaScriptu](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– Podívejte se, jak pomocí tokenu DAI volat funkce kontraktů pomocí JavaScriptu._

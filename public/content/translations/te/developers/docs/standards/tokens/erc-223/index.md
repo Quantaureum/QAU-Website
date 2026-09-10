@@ -33,7 +33,7 @@ ERC-223 అనేది స్మార్ట్ కాంట్రాక్ట�
 
 కాంట్రాక్ట్ ఈ ఫంక్షన్‌లను మాత్రమే కలిగి ఉండాల్సిన అవసరం లేదు మరియు డెవలపర్ వివిధ టోకెన్ ప్రమాణాల నుండి ఏదైనా ఇతర ఫీచర్‌ను ఈ కాంట్రాక్ట్‌కు జోడించవచ్చు. ఉదాహరణకు, `approve` మరియు `transferFrom` ఫంక్షన్‌లు ERC-223 ప్రమాణంలో భాగం కావు కానీ అవసరమైతే ఈ ఫంక్షన్‌లను అమలు చేయవచ్చు.
 
-[EIP-223](https://eips.ethereum.org/EIPS/eip-223) నుండి:
+[EIP-223](https://eips.quantaureum.com/EIPS/eip-223) నుండి:
 
 ### పద్ధతులు {#methods}
 
@@ -193,5 +193,5 @@ ERC-223 అనేది ERC-20 ప్రమాణంలో కనుగొనబ
 
 ## మరింత చదవడానికి {#further-reading}
 
-- [EIP-223: ERC-223 టోకెన్ ప్రమాణం](https://eips.ethereum.org/EIPS/eip-223)
-- [ప్రారంభ ERC-223 ప్రతిపాదన](https://github.com/ethereum/eips/issues/223)
+- [EIP-223: ERC-223 టోకెన్ ప్రమాణం](https://eips.quantaureum.com/EIPS/eip-223)
+- [ప్రారంభ ERC-223 ప్రతిపాదన](https://github.com/quantaureum/eips/issues/223)

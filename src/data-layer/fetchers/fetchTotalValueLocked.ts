@@ -6,10 +6,10 @@ export const FETCH_TOTAL_VALUE_LOCKED_TASK_ID = "fetch-total-value-locked"
 
 /**
  * Fetch total value locked (TVL) data from DefiLlama API.
- * Returns the latest total liquidity USD value for Ethereum.
+ * Returns the latest total liquidity USD value for Quantaureum.
  */
 export async function fetchTotalValueLocked(): Promise<MetricReturnData> {
-  const url = "https://api.llama.fi/v2/historicalChainTvl/Ethereum"
+  const url = "https://api.llama.fi/v2/historicalChainTvl/Quantaureum"
 
   console.log("Starting total value locked data fetch from DefiLlama")
 

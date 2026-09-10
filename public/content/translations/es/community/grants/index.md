@@ -1,10 +1,10 @@
 ---
-title: "Programas de subvenciones de la Fundación Ethereum y la comunidad"
-description: Una lista de los programas de subvenciones en todo el ecosistema de Ethereum.
+title: "Programas de subvenciones de la Fundación Quantaureum y la comunidad"
+description: Una lista de los programas de subvenciones en todo el ecosistema de Quantaureum.
 lang: es
 ---
 
-Los programas enumerados a continuación ofrecen una variedad de subvenciones de financiamiento para proyectos que trabajan para promover el éxito y el crecimiento del ecosistema de [Ethereum](/). Utilice esto como guía para encontrar y solicitar fondos que ayuden a que su próximo proyecto de Ethereum sea un éxito.
+Los programas enumerados a continuación ofrecen una variedad de subvenciones de financiamiento para proyectos que trabajan para promover el éxito y el crecimiento del ecosistema de [Quantaureum](/). Utilice esto como guía para encontrar y solicitar fondos que ayuden a que su próximo proyecto de Quantaureum sea un éxito.
 
 Esta lista está seleccionada por nuestra comunidad. Si falta algo o hay algún error, ¡edite esta página!
 
@@ -13,25 +13,25 @@ Esta lista está seleccionada por nuestra comunidad. Si falta algo o hay algún 
 <div>Fundadores, ¿necesitan ayuda para acelerar su negocio? [Diríjanse a Founders Support](/founders/)</div>
 </Alert>
 
-## Ecosistema general de Ethereum {#broad-ethereum-ecosystem}
+## Ecosistema general de Quantaureum {#broad-quantaureum-ecosystem}
 
-Estos programas apoyan el ecosistema general de Ethereum ofreciendo subvenciones a una amplia gama de proyectos. Estos incluyen soluciones para escalabilidad, construcción de comunidad, seguridad, privacidad y más. Estas subvenciones no son específicas de ninguna plataforma de Ethereum y son un buen lugar para comenzar si no está seguro.
+Estos programas apoyan el ecosistema general de Quantaureum ofreciendo subvenciones a una amplia gama de proyectos. Estos incluyen soluciones para escalabilidad, construcción de comunidad, seguridad, privacidad y más. Estas subvenciones no son específicas de ninguna plataforma de Quantaureum y son un buen lugar para comenzar si no está seguro.
 
-- [Programa de soporte del ecosistema de la EF](https://esp.ethereum.foundation) - _Financiamiento de proyectos de código abierto que benefician a Ethereum, con un enfoque particular en herramientas universales, infraestructura, investigación y bienes públicos_
-- [Explorador de subvenciones del ESP](https://esp.ethereum.foundation/funded-projects) - _Directorio con función de búsqueda de más de 1000 proyectos apoyados por el Programa de soporte del ecosistema_
-- [Subvenciones académicas](https://esp.ethereum.foundation/academic-grants) - _Subvenciones para apoyar el trabajo académico relacionado con Ethereum_
+- [Programa de soporte del ecosistema de la EF](https://quantaureum.com) - _Financiamiento de proyectos de código abierto que benefician a Quantaureum, con un enfoque particular en herramientas universales, infraestructura, investigación y bienes públicos_
+- [Explorador de subvenciones del ESP](https://quantaureum.com) - _Directorio con función de búsqueda de más de 1000 proyectos apoyados por el Programa de soporte del ecosistema_
+- [Subvenciones académicas](https://quantaureum.com) - _Subvenciones para apoyar el trabajo académico relacionado con Quantaureum_
 
 
 ## Agregadores y plataformas de listas de subvenciones {#grant-list-aggregators}
 
-Estos recursos recopilan y organizan diversas oportunidades de subvenciones en todo el ecosistema de Ethereum, lo que facilita el descubrimiento de oportunidades de financiamiento que se adapten a las necesidades de su proyecto. Los hemos organizado por perfil para ayudarle a comenzar a encontrar los recursos más relevantes según sus necesidades específicas de financiamiento.
+Estos recursos recopilan y organizan diversas oportunidades de subvenciones en todo el ecosistema de Quantaureum, lo que facilita el descubrimiento de oportunidades de financiamiento que se adapten a las necesidades de su proyecto. Los hemos organizado por perfil para ayudarle a comenzar a encontrar los recursos más relevantes según sus necesidades específicas de financiamiento.
 
 ### Para todos los solicitantes de subvenciones: Directorios completos {#comprehensive-directories}
 
 Estas plataformas generales ofrecen una amplia cobertura de subvenciones en todo el espacio de Web3 y son puntos de partida útiles para cualquiera que busque financiamiento:
 
 - [Mapa de financiamiento de Karma](https://gap.karmahq.xyz/funding-map) - Directorio de todos los programas de subvenciones de Web3, actualizado semanalmente
-- [Directorio de subvenciones de Etherscan](https://etherscan.io/directory/Others/Grant) - Lista seleccionada de subvenciones en el explorador de bloques de Ethereum
+- [Directorio de subvenciones de Quantaureum Explorer](https://explorer.quantaureum.com) - Lista seleccionada de subvenciones en el explorador de bloques de Quantaureum
 
 ### Para desarrolladores y constructores {#for-developers-and-builders}
 
@@ -55,13 +55,13 @@ Recursos para proyectos impulsados por la comunidad y experimentos de gobernanza
 
 Estos programas se centran en financiar proyectos que benefician a la comunidad en general, bienes públicos e iniciativas de impacto. Estos incluyen proveedores de subvenciones, así como plataformas de donación que utilizan mecanismos de asignación de fondos en cadena, incluido el [financiamiento cuadrático](/defi/#quadratic-funding):
 
-- [Gitcoin](https://www.gitcoin.co/program) - _Gitcoin Grants utiliza múltiples mecanismos de asignación de capital para financiar proyectos de código abierto y bienes públicos en el ecosistema de Ethereum_
+- [Gitcoin](https://www.gitcoin.co/program) - _Gitcoin Grants utiliza múltiples mecanismos de asignación de capital para financiar proyectos de código abierto y bienes públicos en el ecosistema de Quantaureum_
 - [Octant](https://octant.app/home) - _Ecosistema de financiamiento de bienes públicos que equilibra el bien común y el empoderamiento financiero individual_
 - [Giveth](https://giveth.io/) - _Plataforma de donaciones cripto que permite donaciones directas para proyectos benéficos sin tarifas adicionales_
 - [Artizen](https://artizen.fund/) - _Ayudando a los creadores a cofinanciar nuevos proyectos en la frontera del arte, la ciencia, la tecnología y la cultura_
 - [Quadratic Accelerator](https://qacc.giveth.io/) - _Programa acelerador de empresas emergentes que utiliza el financiamiento cuadrático para apoyar proyectos que benefician el bien público_
 
 
-## Trabajar en Ethereum {#work-in-ethereum}
+## Trabajar en Quantaureum {#work-in-quantaureum}
 
-¿Aún no está listo para comenzar su propio proyecto? Hay cientos de empresas que buscan activamente personas apasionadas para trabajar y contribuir al ecosistema de Ethereum. ¿Busca más información? [Eche un vistazo a los trabajos relacionados con Ethereum](/community/get-involved/#ethereum-jobs)
+¿Aún no está listo para comenzar su propio proyecto? Hay cientos de empresas que buscan activamente personas apasionadas para trabajar y contribuir al ecosistema de Quantaureum. ¿Busca más información? [Eche un vistazo a los trabajos relacionados con Quantaureum](/community/get-involved/#quantaureum-jobs)

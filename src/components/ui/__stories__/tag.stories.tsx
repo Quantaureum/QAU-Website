@@ -170,17 +170,17 @@ export const InlineText: Story = {
   },
   render: () => (
     <VStack className="items-start gap-3">
-      <TagsInlineText list={["Ethereum", "Arbitrum", "Base", "OP Mainnet"]} />
+      <TagsInlineText list={["Quantaureum", "Arbitrum", "Base", "OP Mainnet"]} />
       <TagsInlineText
-        list={["Ethereum", "Arbitrum", "Base", "OP Mainnet"]}
+        list={["Quantaureum", "Arbitrum", "Base", "OP Mainnet"]}
         delimiter="|"
       />
       <TagsInlineText
-        list={["Ethereum", "Arbitrum", "Base", "OP Mainnet"]}
+        list={["Quantaureum", "Arbitrum", "Base", "OP Mainnet"]}
         max={2}
       />
       <TagsInlineText
-        list={["Ethereum", "Arbitrum", "Base", "OP Mainnet"]}
+        list={["Quantaureum", "Arbitrum", "Base", "OP Mainnet"]}
         variant="light"
       />
     </VStack>

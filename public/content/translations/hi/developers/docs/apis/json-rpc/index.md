@@ -1,32 +1,32 @@
 ---
 title: "जेसन-आरपीसी API"
-description: "इथेरियम क्लाइंट्स के लिए एक स्टेटलेस, लाइट-वेट रिमोट प्रोसीजर कॉल (RPC) प्रोटोकॉल।"
+description: "Quantaureum क्लाइंट्स के लिए एक स्टेटलेस, लाइट-वेट रिमोट प्रोसीजर कॉल (RPC) प्रोटोकॉल।"
 lang: hi
 ---
 
-किसी सॉफ़्टवेयर एप्लिकेशन को [इथेरियम](/) ब्लॉकचेन के साथ इंटरैक्ट करने के लिए - चाहे ब्लॉकचेन डेटा पढ़ना हो या नेटवर्क पर लेन-देन भेजना हो - उसे एक इथेरियम नोड से कनेक्ट होना चाहिए।
+किसी सॉफ़्टवेयर एप्लिकेशन को [Quantaureum](/) ब्लॉकचेन के साथ इंटरैक्ट करने के लिए - चाहे ब्लॉकचेन डेटा पढ़ना हो या नेटवर्क पर लेन-देन भेजना हो - उसे एक Quantaureum नोड से कनेक्ट होना चाहिए।
 
-इस उद्देश्य के लिए, हर [इथेरियम क्लाइंट](/developers/docs/nodes-and-clients/#execution-clients) एक [जेसन-आरपीसी विनिर्देश](https://github.com/ethereum/execution-apis) लागू करता है, ताकि विधियों (methods) का एक समान सेट हो जिस पर एप्लिकेशन निर्भर कर सकें, चाहे विशिष्ट नोड या क्लाइंट कार्यान्वयन कुछ भी हो।
+इस उद्देश्य के लिए, हर [Quantaureum क्लाइंट](/developers/docs/nodes-and-clients/#execution-clients) एक [जेसन-आरपीसी विनिर्देश](https://github.com/quantaureum/execution-apis) लागू करता है, ताकि विधियों (methods) का एक समान सेट हो जिस पर एप्लिकेशन निर्भर कर सकें, चाहे विशिष्ट नोड या क्लाइंट कार्यान्वयन कुछ भी हो।
 
 [जेसन-आरपीसी](https://www.jsonrpc.org/specification) एक स्टेटलेस, लाइट-वेट रिमोट प्रोसीजर कॉल (RPC) प्रोटोकॉल है। यह कई डेटा संरचनाओं और उनके प्रसंस्करण के नियमों को परिभाषित करता है। यह ट्रांसपोर्ट एग्नॉस्टिक है, जिसका अर्थ है कि इन अवधारणाओं का उपयोग एक ही प्रक्रिया के भीतर, सॉकेट पर, HTTP पर, या कई विभिन्न संदेश पासिंग वातावरणों में किया जा सकता है। यह डेटा प्रारूप के रूप में JSON (RFC 4627) का उपयोग करता है।
 
 ## क्लाइंट कार्यान्वयन {#client-implementations}
 
-इथेरियम क्लाइंट जेसन-आरपीसी विनिर्देश को लागू करते समय विभिन्न प्रोग्रामिंग भाषाओं का उपयोग कर सकते हैं। विशिष्ट प्रोग्रामिंग भाषाओं से संबंधित अधिक जानकारी के लिए व्यक्तिगत [क्लाइंट दस्तावेज़](/developers/docs/nodes-and-clients/#execution-clients) देखें। हम नवीनतम API समर्थन जानकारी के लिए प्रत्येक क्लाइंट के दस्तावेज़ों की जाँच करने की सलाह देते हैं।
+Quantaureum क्लाइंट जेसन-आरपीसी विनिर्देश को लागू करते समय विभिन्न प्रोग्रामिंग भाषाओं का उपयोग कर सकते हैं। विशिष्ट प्रोग्रामिंग भाषाओं से संबंधित अधिक जानकारी के लिए व्यक्तिगत [क्लाइंट दस्तावेज़](/developers/docs/nodes-and-clients/#execution-clients) देखें। हम नवीनतम API समर्थन जानकारी के लिए प्रत्येक क्लाइंट के दस्तावेज़ों की जाँच करने की सलाह देते हैं।
 
 ## सुविधा लाइब्रेरियां {#convenience-libraries}
 
-हालाँकि आप जेसन-आरपीसी API के माध्यम से सीधे इथेरियम क्लाइंट के साथ इंटरैक्ट करना चुन सकते हैं, लेकिन विकेंद्रीकृत एप्लिकेशन (dapp) डेवलपर्स के लिए अक्सर आसान विकल्प मौजूद होते हैं। कई [JavaScript](/developers/docs/apis/javascript/#available-libraries) और [बैकएंड API](/developers/docs/apis/backend/#available-libraries) लाइब्रेरियां मौजूद हैं जो जेसन-आरपीसी API के ऊपर रैपर प्रदान करती हैं। इन लाइब्रेरियों की मदद से, डेवलपर्स इथेरियम के साथ इंटरैक्ट करने वाले जेसन-आरपीसी अनुरोधों को (आंतरिक रूप से) प्रारंभ करने के लिए अपनी पसंद की प्रोग्रामिंग भाषा में सहज, एक-पंक्ति वाले मेथड्स लिख सकते हैं।
+हालाँकि आप जेसन-आरपीसी API के माध्यम से सीधे Quantaureum क्लाइंट के साथ इंटरैक्ट करना चुन सकते हैं, लेकिन विकेंद्रीकृत एप्लिकेशन (dapp) डेवलपर्स के लिए अक्सर आसान विकल्प मौजूद होते हैं। कई [JavaScript](/developers/docs/apis/javascript/#available-libraries) और [बैकएंड API](/developers/docs/apis/backend/#available-libraries) लाइब्रेरियां मौजूद हैं जो जेसन-आरपीसी API के ऊपर रैपर प्रदान करती हैं। इन लाइब्रेरियों की मदद से, डेवलपर्स Quantaureum के साथ इंटरैक्ट करने वाले जेसन-आरपीसी अनुरोधों को (आंतरिक रूप से) प्रारंभ करने के लिए अपनी पसंद की प्रोग्रामिंग भाषा में सहज, एक-पंक्ति वाले मेथड्स लिख सकते हैं।
 
 ## सर्वसम्मति क्लाइंट APIs {#consensus-clients}
 
-यह पृष्ठ मुख्य रूप से इथेरियम निष्पादन क्लाइंट द्वारा उपयोग किए जाने वाले जेसन-आरपीसी API से संबंधित है। हालाँकि, सर्वसम्मति क्लाइंट में एक RPC API भी होता है जो उपयोगकर्ताओं को सीधे एक नोड से नोड के बारे में जानकारी प्राप्त करने, बीकन ब्लॉक, बीकन स्थिति और अन्य सर्वसम्मति-संबंधित जानकारी का अनुरोध करने की अनुमति देता है। इस API का दस्तावेज़ीकरण [बीकन API वेबपेज](https://ethereum.github.io/beacon-APIs/#/) पर किया गया है।
+यह पृष्ठ मुख्य रूप से Quantaureum निष्पादन क्लाइंट द्वारा उपयोग किए जाने वाले जेसन-आरपीसी API से संबंधित है। हालाँकि, सर्वसम्मति क्लाइंट में एक RPC API भी होता है जो उपयोगकर्ताओं को सीधे एक नोड से नोड के बारे में जानकारी प्राप्त करने, बीकन ब्लॉक, बीकन स्थिति और अन्य सर्वसम्मति-संबंधित जानकारी का अनुरोध करने की अनुमति देता है। इस API का दस्तावेज़ीकरण [बीकन API वेबपेज](https://quantaureum.github.io/beacon-APIs/#/) पर किया गया है।
 
-एक नोड के भीतर अंतर-क्लाइंट संचार के लिए एक आंतरिक API का भी उपयोग किया जाता है - यानी, यह सर्वसम्मति क्लाइंट और निष्पादन क्लाइंट को डेटा स्वैप करने में सक्षम बनाता है। इसे 'इंजन API' कहा जाता है और इसके विनिर्देश [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) पर उपलब्ध हैं।
+एक नोड के भीतर अंतर-क्लाइंट संचार के लिए एक आंतरिक API का भी उपयोग किया जाता है - यानी, यह सर्वसम्मति क्लाइंट और निष्पादन क्लाइंट को डेटा स्वैप करने में सक्षम बनाता है। इसे 'इंजन API' कहा जाता है और इसके विनिर्देश [GitHub](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) पर उपलब्ध हैं।
 
 ## निष्पादन क्लाइंट स्पेक {#spec}
 
-[GitHub पर पूरा जेसन-आरपीसी API स्पेक पढ़ें](https://github.com/ethereum/execution-apis)। इस API को [निष्पादन API वेबपेज](https://ethereum.github.io/execution-apis/) पर प्रलेखित किया गया है और इसमें सभी उपलब्ध मेथड्स को आज़माने के लिए एक इंस्पेक्टर शामिल है।
+[GitHub पर पूरा जेसन-आरपीसी API स्पेक पढ़ें](https://github.com/quantaureum/execution-apis)। इस API को [निष्पादन API वेबपेज](https://quantaureum.github.io/execution-apis/) पर प्रलेखित किया गया है और इसमें सभी उपलब्ध मेथड्स को आज़माने के लिए एक इंस्पेक्टर शामिल है।
 
 ## परंपराएँ {#conventions}
 
@@ -62,13 +62,13 @@ JSON पर दो प्रमुख डेटा प्रकार पास 
 
 निम्नलिखित विधियों में एक ब्लॉक पैरामीटर होता है:
 
-- [eth_getBalance](#eth-getbalance)
-- [eth_getCode](#eth-getcode)
-- [eth_getTransactionCount](#eth-gettransactioncount)
-- [eth_getStorageAt](#eth-getstorageat)
-- [eth_call](#eth-call)
+- [qau_getBalance](#qau-getbalance)
+- [qau_getCode](#qau-getcode)
+- [qau_getTransactionCount](#qau-gettransactioncount)
+- [qau_getStorageAt](#qau-getstorageat)
+- [qau_call](#qau-call)
 
-जब ऐसे अनुरोध किए जाते हैं जो इथेरियम की स्थिति को क्वेरी करते हैं, तो प्रदान किया गया ब्लॉक पैरामीटर ब्लॉक की ऊंचाई निर्धारित करता है।
+जब ऐसे अनुरोध किए जाते हैं जो Quantaureum की स्थिति को क्वेरी करते हैं, तो प्रदान किया गया ब्लॉक पैरामीटर ब्लॉक की ऊंचाई निर्धारित करता है।
 
 ब्लॉक पैरामीटर के लिए निम्नलिखित विकल्प संभव हैं:
 
@@ -85,7 +85,7 @@ JSON पर दो प्रमुख डेटा प्रकार पास 
 
 ## Curl के उदाहरण {#curl-examples}
 
-एक इथेरियम नोड पर [curl](https://curl.se) अनुरोध करके जेसन-आरपीसी API का उपयोग करने के उदाहरण नीचे दिए गए हैं। प्रत्येक उदाहरण में विशिष्ट एंडपॉइंट का विवरण, इसके पैरामीटर, रिटर्न प्रकार और इसका उपयोग कैसे किया जाना चाहिए, इसका एक व्यावहारिक उदाहरण शामिल है।
+एक Quantaureum नोड पर [curl](https://curl.se) अनुरोध करके जेसन-आरपीसी API का उपयोग करने के उदाहरण नीचे दिए गए हैं। प्रत्येक उदाहरण में विशिष्ट एंडपॉइंट का विवरण, इसके पैरामीटर, रिटर्न प्रकार और इसका उपयोग कैसे किया जाना चाहिए, इसका एक व्यावहारिक उदाहरण शामिल है।
 
 curl अनुरोध सामग्री प्रकार (content type) से संबंधित एक त्रुटि संदेश लौटा सकते हैं। ऐसा इसलिए है क्योंकि `--data` विकल्प सामग्री प्रकार को `application/x-www-form-urlencoded` पर सेट करता है। यदि आपका नोड इसके बारे में शिकायत करता है, तो कॉल की शुरुआत में `-H "Content-Type: application/json"` रखकर हेडर को मैन्युअल रूप से सेट करें। उदाहरणों में URL/IP और पोर्ट संयोजन भी शामिल नहीं है जो curl को दिया जाने वाला अंतिम तर्क (argument) होना चाहिए (उदा., `127.0.0.1:8545`)। इन अतिरिक्त डेटा सहित एक पूर्ण curl अनुरोध निम्नलिखित रूप लेता है:
 
@@ -95,46 +95,46 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 ## गॉसिप, स्थिति, इतिहास {#gossip-state-history}
 
-कुछ प्रमुख जेसन-आरपीसी विधियों को इथेरियम नेटवर्क से डेटा की आवश्यकता होती है, और वे स्पष्ट रूप से तीन मुख्य श्रेणियों में आते हैं: _गॉसिप, स्थिति, और इतिहास_। प्रत्येक विधि पर जाने के लिए इन अनुभागों में दिए गए लिंक का उपयोग करें, या विधियों की पूरी सूची देखने के लिए विषय सूची का उपयोग करें।
+कुछ प्रमुख जेसन-आरपीसी विधियों को Quantaureum नेटवर्क से डेटा की आवश्यकता होती है, और वे स्पष्ट रूप से तीन मुख्य श्रेणियों में आते हैं: _गॉसिप, स्थिति, और इतिहास_। प्रत्येक विधि पर जाने के लिए इन अनुभागों में दिए गए लिंक का उपयोग करें, या विधियों की पूरी सूची देखने के लिए विषय सूची का उपयोग करें।
 
 ### गॉसिप विधियाँ {#gossip-methods}
 
 > ये विधियाँ चेन के शीर्ष (head) को ट्रैक करती हैं। इसी तरह लेन-देन नेटवर्क में अपना रास्ता बनाते हैं, ब्लॉक में शामिल होते हैं, और क्लाइंट्स को नए ब्लॉक के बारे में पता चलता है।
 
-- [eth_blockNumber](#eth-blocknumber)
-- [eth_sendRawTransaction](#eth-sendrawtransaction)
+- [qau_blockNumber](#qau-blocknumber)
+- [qau_sendRawTransaction](#qau-sendrawtransaction)
 
 ### स्थिति विधियाँ {#state-methods}
 
 > वे विधियाँ जो संग्रहीत सभी डेटा की वर्तमान स्थिति की रिपोर्ट करती हैं। "स्थिति" एक बड़े साझा RAM के हिस्से की तरह है, और इसमें खाते का बैलेंस, अनुबंध डेटा और गैस का अनुमान शामिल होता है।
 
-- [eth_getBalance](#eth-getbalance)
-- [eth_getStorageAt](#eth-getstorageat)
-- [eth_getTransactionCount](#eth-gettransactioncount)
-- [eth_getCode](#eth-getcode)
-- [eth_call](#eth-call)
-- [eth_estimateGas](#eth-estimategas)
+- [qau_getBalance](#qau-getbalance)
+- [qau_getStorageAt](#qau-getstorageat)
+- [qau_getTransactionCount](#qau-gettransactioncount)
+- [qau_getCode](#qau-getcode)
+- [qau_call](#qau-call)
+- [qau_estimateGas](#qau-estimategas)
 
 ### इतिहास विधियाँ {#history-methods}
 
 > जेनेसिस ब्लॉक तक प्रत्येक ब्लॉक के ऐतिहासिक रिकॉर्ड प्राप्त करता है। यह एक बड़ी केवल-जोड़ने-योग्य (append-only) फ़ाइल की तरह है, और इसमें सभी ब्लॉक हेडर, ब्लॉक बॉडी, अंकल ब्लॉक और लेन-देन रसीदें शामिल होती हैं।
 
-- [eth_getBlockTransactionCountByHash](#eth-getblocktransactioncountbyhash)
-- [eth_getBlockTransactionCountByNumber](#eth-getblocktransactioncountbynumber)
-- [eth_getUncleCountByBlockHash](#eth-getunclecountbyblockhash)
-- [eth_getUncleCountByBlockNumber](#eth-getunclecountbyblocknumber)
-- [eth_getBlockByHash](#eth-getblockbyhash)
-- [eth_getBlockByNumber](#eth-getblockbynumber)
-- [eth_getTransactionByHash](#eth-gettransactionbyhash)
-- [eth_getTransactionByBlockHashAndIndex](#eth-gettransactionbyblockhashandindex)
-- [eth_getTransactionByBlockNumberAndIndex](#eth-gettransactionbyblocknumberandindex)
-- [eth_getTransactionReceipt](#eth-gettransactionreceipt)
-- [eth_getUncleByBlockHashAndIndex](#eth-getunclebyblockhashandindex)
-- [eth_getUncleByBlockNumberAndIndex](#eth-getunclebyblocknumberandindex)
+- [qau_getBlockTransactionCountByHash](#qau-getblocktransactioncountbyhash)
+- [qau_getBlockTransactionCountByNumber](#qau-getblocktransactioncountbynumber)
+- [qau_getUncleCountByBlockHash](#qau-getunclecountbyblockhash)
+- [qau_getUncleCountByBlockNumber](#qau-getunclecountbyblocknumber)
+- [qau_getBlockByHash](#qau-getblockbyhash)
+- [qau_getBlockByNumber](#qau-getblockbynumber)
+- [qau_getTransactionByHash](#qau-gettransactionbyhash)
+- [qau_getTransactionByBlockHashAndIndex](#qau-gettransactionbyblockhashandindex)
+- [qau_getTransactionByBlockNumberAndIndex](#qau-gettransactionbyblocknumberandindex)
+- [qau_getTransactionReceipt](#qau-gettransactionreceipt)
+- [qau_getUncleByBlockHashAndIndex](#qau-getunclebyblockhashandindex)
+- [qau_getUncleByBlockNumberAndIndex](#qau-getunclebyblocknumberandindex)
 
 ## जेसन-आरपीसी API प्लेग्राउंड {#json-rpc-api-playground}
 
-आप API विधियों को खोजने और आज़माने के लिए [प्लेग्राउंड टूल](https://ethereum-json-rpc.com) का उपयोग कर सकते हैं। यह आपको यह भी दिखाता है कि विभिन्न नोड प्रदाताओं द्वारा कौन सी विधियाँ और नेटवर्क समर्थित हैं।
+आप API विधियों को खोजने और आज़माने के लिए [प्लेग्राउंड टूल](https://quantaureum-json-rpc.com) का उपयोग कर सकते हैं। यह आपको यह भी दिखाता है कि विभिन्न नोड प्रदाताओं द्वारा कौन सी विधियाँ और नेटवर्क समर्थित हैं।
 
 ## जेसन-आरपीसी API विधियाँ {#json-rpc-methods}
 
@@ -206,7 +206,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"web3_sha3","params":["0x68656c6c
 
 वर्तमान नेटवर्क आईडी की पूरी सूची [chainlist.org](https://chainlist.org) पर उपलब्ध है। कुछ सामान्य इस प्रकार हैं:
 
-- `1`: इथेरियम मेननेट
+- `1`: Quantaureum मेननेट
 - `11155111`: Sepolia टेस्टनेट
 - `560048` : Hoodi टेस्टनेट
 
@@ -273,9 +273,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 }
 ```
 
-### eth_protocolVersion {#eth-protocolversion}
+### qau_protocolVersion {#qau-protocolversion}
 
-वर्तमान इथेरियम प्रोटोकॉल संस्करण लौटाता है। ध्यान दें कि यह विधि [Geth में उपलब्ध नहीं है](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924)।
+वर्तमान Quantaureum प्रोटोकॉल संस्करण लौटाता है। ध्यान दें कि यह विधि [Geth में उपलब्ध नहीं है](https://github.com/quantaureum/go-quantaureum/pull/22064#issuecomment-788682924)।
 
 **पैरामीटर**
 
@@ -283,13 +283,13 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 **रिटर्न**
 
-`String` - वर्तमान इथेरियम प्रोटोकॉल संस्करण
+`String` - वर्तमान Quantaureum प्रोटोकॉल संस्करण
 
 **उदाहरण**
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[],"id":67}'
 // परिणाम
 {
   "id":67,
@@ -298,11 +298,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 }
 ```
 
-### eth_syncing {#eth-syncing}
+### qau_syncing {#qau-syncing}
 
 सिंकिंग स्थिति के बारे में डेटा वाला एक ऑब्जेक्ट या `false` लौटाता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_syncing">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_syncing">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
@@ -317,7 +317,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 `Object|Boolean`, सिंकिंग स्थिति डेटा वाला एक ऑब्जेक्ट या `FALSE`, जब सिंकिंग नहीं हो रही हो:
 
 - `startingBlock`: `QUANTITY` - वह ब्लॉक जहाँ से आयात शुरू हुआ था (सिंकिंग के अपने शीर्ष पर पहुँचने के बाद ही रीसेट किया जाएगा)
-- `currentBlock`: `QUANTITY` - वर्तमान ब्लॉक, eth_blockNumber के समान
+- `currentBlock`: `QUANTITY` - वर्तमान ब्लॉक, qau_blockNumber के समान
 - `highestBlock`: `QUANTITY` - अनुमानित उच्चतम ब्लॉक
 
 हालाँकि, व्यक्तिगत क्लाइंट अतिरिक्त डेटा भी प्रदान कर सकते हैं। उदाहरण के लिए Geth निम्नलिखित लौटाता है:
@@ -367,7 +367,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}'
 // परिणाम
 {
   "id":1,
@@ -386,11 +386,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}
 }
 ```
 
-### eth_coinbase {#eth-coinbase}
+### qau_coinbase {#qau-coinbase}
 
 क्लाइंट का कॉइनबेस पता लौटाता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_coinbase">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_coinbase">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
@@ -408,7 +408,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":64}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":64}'
 // परिणाम
 {
   "id":64,
@@ -417,11 +417,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":6
 }
 ```
 
-### eth_chainId {#eth-chainid}
+### qau_chainId {#qau-chainid}
 
 यह रीप्ले-संरक्षित लेन-देन पर हस्ताक्षर करने के लिए उपयोग की जाने वाली चेन ID लौटाता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_chainId">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_chainId">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
@@ -437,7 +437,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":6
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67}'
 // परिणाम
 {
   "id":67,
@@ -446,11 +446,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67
 }
 ```
 
-### eth_mining {#eth-mining}
+### qau_mining {#qau-mining}
 
 यदि क्लाइंट सक्रिय रूप से नए ब्लॉक का खनन कर रहा है, तो यह `true` लौटाता है। यह केवल प्रूफ-ऑफ-वर्क नेटवर्क के लिए `true` लौटा सकता है और [द मर्ज](/roadmap/merge/) के बाद से कुछ क्लाइंट्स में उपलब्ध नहीं हो सकता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_mining">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_mining">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
@@ -466,7 +466,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}'
 //
 {
   "id":71,
@@ -475,11 +475,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}
 }
 ```
 
-### eth_hashrate {#eth-hashrate}
+### qau_hashrate {#qau-hashrate}
 
 यह प्रति सेकंड हैश की वह संख्या लौटाता है जिसके साथ नोड खनन कर रहा है। यह केवल प्रूफ-ऑफ-वर्क (PoW) नेटवर्क के लिए `true` लौटा सकता है और [द मर्ज](/roadmap/merge/) के बाद से कुछ क्लाइंट में उपलब्ध नहीं हो सकता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_hashrate">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_hashrate">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
@@ -495,7 +495,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":71}'
 // परिणाम
 {
   "id":71,
@@ -504,11 +504,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":7
 }
 ```
 
-### eth_gasPrice {#eth-gasprice}
+### qau_gasPrice {#qau-gasprice}
 
 Wei में प्रति गैस वर्तमान मूल्य का अनुमान लौटाता है। उदाहरण के लिए, बेसु क्लाइंट पिछले 100 ब्लॉकों की जांच करता है और डिफ़ॉल्ट रूप से माध्यिका गैस इकाई मूल्य लौटाता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_gasPrice">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_gasPrice">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
@@ -524,7 +524,7 @@ Wei में प्रति गैस वर्तमान मूल्य �
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":73}'
 // परिणाम
 {
   "id":73,
@@ -533,11 +533,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":7
 }
 ```
 
-### eth_accounts {#eth-accounts}
+### qau_accounts {#qau-accounts}
 
 क्लाइंट के स्वामित्व वाले पतों की एक सूची लौटाता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_accounts">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_accounts">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
@@ -553,7 +553,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":7
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1}'
 // परिणाम
 {
   "id":1,
@@ -562,11 +562,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1
 }
 ```
 
-### eth_blockNumber {#eth-blocknumber}
+### qau_blockNumber {#qau-blocknumber}
 
 सबसे हालिया ब्लॉक की संख्या लौटाता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_blockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_blockNumber">
   प्लेग्राउंड में एंडपॉइंट आजमाएं
 </ButtonLink>
 
@@ -582,7 +582,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":83}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id":83}'
 // परिणाम
 {
   "id":83,
@@ -591,11 +591,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id
 }
 ```
 
-### eth_getBalance {#eth-getbalance}
+### qau_getBalance {#qau-getbalance}
 
 किसी दिए गए पते पर खाते का बैलेंस लौटाता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBalance">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBalance">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
@@ -616,7 +616,7 @@ params: ["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"]
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
 // परिणाम
 {
   "id":1,
@@ -625,11 +625,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407
 }
 ```
 
-### eth_getStorageAt {#eth-getstorageat}
+### qau_getStorageAt {#qau-getstorageat}
 
 किसी दिए गए पते पर स्टोरेज स्थिति से मान लौटाता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getStorageAt">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getStorageAt">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
@@ -660,7 +660,7 @@ contract Storage {
 pos0 का मान प्राप्त करना सीधा है:
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 ```
 
@@ -693,15 +693,15 @@ undefined
 अब स्टोरेज प्राप्त करने के लिए:
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-### eth_getTransactionCount {#eth-gettransactioncount}
+### qau_getTransactionCount {#qau-gettransactioncount}
 
 किसी पते से _भेजे गए_ लेन-देन की संख्या लौटाता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionCount">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionCount">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
@@ -725,7 +725,7 @@ params: [
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
 // परिणाम
 {
   "id":1,
@@ -734,11 +734,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params
 }
 ```
 
-### eth_getBlockTransactionCountByHash {#eth-getblocktransactioncountbyhash}
+### qau_getBlockTransactionCountByHash {#qau-getblocktransactioncountbyhash}
 
 दिए गए ब्लॉक हैश से मेल खाने वाले ब्लॉक में लेन-देन की संख्या लौटाता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
@@ -758,7 +758,7 @@ params: ["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"]
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
 // परिणाम
 {
   "id":1,
@@ -767,11 +767,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHa
 }
 ```
 
-### eth_getBlockTransactionCountByNumber {#eth-getblocktransactioncountbynumber}
+### qau_getBlockTransactionCountByNumber {#qau-getblocktransactioncountbynumber}
 
 दिए गए ब्लॉक नंबर से मेल खाने वाले ब्लॉक में लेन-देन की संख्या लौटाता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
@@ -793,7 +793,7 @@ params: [
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
 // परिणाम
 {
   "id":1,
@@ -802,11 +802,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNu
 }
 ```
 
-### eth_getUncleCountByBlockHash {#eth-getunclecountbyblockhash}
+### qau_getUncleCountByBlockHash {#qau-getunclecountbyblockhash}
 
 दिए गए ब्लॉक हैश से मेल खाने वाले ब्लॉक से, एक ब्लॉक में अंकल्स की संख्या लौटाता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
@@ -826,7 +826,7 @@ params: ["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"]
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
 // परिणाम
 {
   "id":1,
@@ -835,11 +835,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","p
 }
 ```
 
-### eth_getUncleCountByBlockNumber {#eth-getunclecountbyblocknumber}
+### qau_getUncleCountByBlockNumber {#qau-getunclecountbyblocknumber}
 
 दिए गए ब्लॉक नंबर से मेल खाने वाले ब्लॉक में अंकल्स की संख्या लौटाता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
@@ -861,7 +861,7 @@ params: [
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
 // परिणाम
 {
   "id":1,
@@ -870,11 +870,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber",
 }
 ```
 
-### eth_getCode {#eth-getcode}
+### qau_getCode {#qau-getcode}
 
 किसी दिए गए पते पर कोड लौटाता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getCode">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getCode">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
@@ -898,7 +898,7 @@ params: [
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
 // परिणाम
 {
   "id":1,
@@ -907,11 +907,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA
 }
 ```
 
-### eth_sign {#eth-sign}
+### qau_sign {#qau-sign}
 
-sign विधि `sign(keccak256("\x19Ethereum Signed Message:\n" + len(message) + message)))` के साथ एक इथेरियम-विशिष्ट हस्ताक्षर की गणना करती है।
+sign विधि `sign(keccak256("\x19Quantaureum Signed Message:\n" + len(message) + message)))` के साथ एक Quantaureum-विशिष्ट हस्ताक्षर की गणना करती है।
 
-संदेश में एक उपसर्ग जोड़ने से गणना किया गया हस्ताक्षर एक इथेरियम-विशिष्ट हस्ताक्षर के रूप में पहचाने जाने योग्य हो जाता है। यह उस दुरुपयोग को रोकता है जहाँ एक दुर्भावनापूर्ण विकेंद्रीकृत एप्लिकेशन (dapp) मनमाने डेटा (उदा., लेन-देन) पर हस्ताक्षर कर सकता है और पीड़ित का रूप धारण करने के लिए हस्ताक्षर का उपयोग कर सकता है।
+संदेश में एक उपसर्ग जोड़ने से गणना किया गया हस्ताक्षर एक Quantaureum-विशिष्ट हस्ताक्षर के रूप में पहचाने जाने योग्य हो जाता है। यह उस दुरुपयोग को रोकता है जहाँ एक दुर्भावनापूर्ण विकेंद्रीकृत एप्लिकेशन (dapp) मनमाने डेटा (उदा., लेन-देन) पर हस्ताक्षर कर सकता है और पीड़ित का रूप धारण करने के लिए हस्ताक्षर का उपयोग कर सकता है।
 
 नोट: जिस पते से हस्ताक्षर करना है, वह अनलॉक होना चाहिए।
 
@@ -928,7 +928,7 @@ sign विधि `sign(keccak256("\x19Ethereum Signed Message:\n" + len(message
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
 // परिणाम
 {
   "id":1,
@@ -937,9 +937,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d37
 }
 ```
 
-### eth_signTransaction {#eth-signtransaction}
+### qau_signTransaction {#qau-signtransaction}
 
-एक लेनदेन पर हस्ताक्षर करता है जिसे बाद में [eth_sendRawTransaction](#eth-sendrawtransaction) का उपयोग करके नेटवर्क पर सबमिट किया जा सकता है।
+एक लेनदेन पर हस्ताक्षर करता है जिसे बाद में [qau_sendRawTransaction](#qau-sendrawtransaction) का उपयोग करके नेटवर्क पर सबमिट किया जा सकता है।
 
 **पैरामीटर**
 
@@ -962,7 +962,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d37
 
 ```js
 // अनुरोध
-curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
+curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "qau_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
 // परिणाम
 {
     "id": 1,
@@ -971,7 +971,7 @@ curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","
 }
 ```
 
-### eth_sendTransaction {#eth-sendtransaction}
+### qau_sendTransaction {#qau-sendtransaction}
 
 यदि डेटा फ़ील्ड में कोड है, तो यह नया संदेश कॉल लेनदेन या अनुबंध निर्माण बनाता है, और `from` में निर्दिष्ट खाते का उपयोग करके इस पर हस्ताक्षर करता है।
 
@@ -1005,13 +1005,13 @@ params: [
 
 `DATA`, 32 बाइट्स - लेनदेन हैश, या शून्य हैश यदि लेनदेन अभी तक उपलब्ध नहीं है।
 
-जब आपने कोई अनुबंध बनाया हो, तो लेनदेन को किसी ब्लॉक में प्रस्तावित किए जाने के बाद, अनुबंध का पता प्राप्त करने के लिए [eth_getTransactionReceipt](#eth-gettransactionreceipt) का उपयोग करें।
+जब आपने कोई अनुबंध बनाया हो, तो लेनदेन को किसी ब्लॉक में प्रस्तावित किए जाने के बाद, अनुबंध का पता प्राप्त करने के लिए [qau_getTransactionReceipt](#qau-gettransactionreceipt) का उपयोग करें।
 
 **उदाहरण**
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendTransaction","params":[{see above}],"id":1}'
 // परिणाम
 {
   "id":1,
@@ -1020,7 +1020,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{
 }
 ```
 
-### eth_sendRawTransaction {#eth-sendrawtransaction}
+### qau_sendRawTransaction {#qau-sendrawtransaction}
 
 हस्ताक्षरित लेनदेन के लिए नया संदेश कॉल लेनदेन या अनुबंध निर्माण बनाता है।
 
@@ -1038,13 +1038,13 @@ params: [
 
 `DATA`, 32 बाइट्स - लेनदेन हैश, या शून्य हैश यदि लेनदेन अभी तक उपलब्ध नहीं है।
 
-जब आपने एक अनुबंध बनाया हो, तो लेनदेन को एक ब्लॉक में प्रस्तावित किए जाने के बाद, अनुबंध पता प्राप्त करने के लिए [eth_getTransactionReceipt](#eth-gettransactionreceipt) का उपयोग करें।
+जब आपने एक अनुबंध बनाया हो, तो लेनदेन को एक ब्लॉक में प्रस्तावित किए जाने के बाद, अनुबंध पता प्राप्त करने के लिए [qau_getTransactionReceipt](#qau-gettransactionreceipt) का उपयोग करें।
 
 **उदाहरण**
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params":[{see above}],"id":1}'
 // परिणाम
 {
   "id":1,
@@ -1053,11 +1053,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 }
 ```
 
-### eth_call {#eth-call}
+### qau_call {#qau-call}
 
 ब्लॉकचेन पर लेन-देन बनाए बिना तुरंत एक नया संदेश कॉल निष्पादित करता है। अक्सर केवल-पढ़ने योग्य स्मार्ट अनुबंध फ़ंक्शंस को निष्पादित करने के लिए उपयोग किया जाता है, उदाहरण के लिए ERC-20 अनुबंध के लिए `balanceOf`।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_call">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_call">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
@@ -1067,10 +1067,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 
 - `from`: `DATA`, 20 बाइट्स - (वैकल्पिक) वह पता जहां से लेन-देन भेजा जाता है।
 - `to`: `DATA`, 20 बाइट्स - वह पता जिस पर लेन-देन निर्देशित है।
-- `gas`: `QUANTITY` - (वैकल्पिक) लेन-देन निष्पादन के लिए प्रदान की गई गैस का पूर्णांक। eth_call शून्य गैस की खपत करता है, लेकिन कुछ निष्पादनों द्वारा इस पैरामीटर की आवश्यकता हो सकती है।
+- `gas`: `QUANTITY` - (वैकल्पिक) लेन-देन निष्पादन के लिए प्रदान की गई गैस का पूर्णांक। qau_call शून्य गैस की खपत करता है, लेकिन कुछ निष्पादनों द्वारा इस पैरामीटर की आवश्यकता हो सकती है।
 - `gasPrice`: `QUANTITY` - (वैकल्पिक) प्रत्येक भुगतान की गई गैस के लिए उपयोग किए जाने वाले gasPrice का पूर्णांक
 - `value`: `QUANTITY` - (वैकल्पिक) इस लेन-देन के साथ भेजे गए मूल्य का पूर्णांक
-- `input`: `DATA` - (वैकल्पिक) विधि हस्ताक्षर और एन्कोड किए गए पैरामीटर का हैश। विवरण के लिए [Solidity दस्तावेज़ में इथेरियम अनुबंध ABI](https://docs.soliditylang.org/en/latest/abi-spec.html) देखें।
+- `input`: `DATA` - (वैकल्पिक) विधि हस्ताक्षर और एन्कोड किए गए पैरामीटर का हैश। विवरण के लिए [Solidity दस्तावेज़ में Quantaureum अनुबंध ABI](https://docs.soliditylang.org/en/latest/abi-spec.html) देखें।
 
 2. `QUANTITY|TAG` - पूर्णांक ब्लॉक संख्या, या स्ट्रिंग `"latest"`, `"earliest"`, `"pending"`, `"safe"` या `"finalized"`, [ब्लॉक पैरामीटर](/developers/docs/apis/json-rpc/#block-parameter) देखें
 
@@ -1082,7 +1082,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}],"id":1}'
 // परिणाम
 {
   "id":1,
@@ -1091,17 +1091,17 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}]
 }
 ```
 
-### eth_estimateGas {#eth-estimategas}
+### qau_estimateGas {#qau-estimategas}
 
 यह इस बात का अनुमान उत्पन्न करता है और लौटाता है कि लेन-देन को पूरा करने के लिए कितनी गैस आवश्यक है। लेन-देन को ब्लॉकचेन में नहीं जोड़ा जाएगा। ध्यान दें कि EVM मैकेनिक्स और नोड के प्रदर्शन सहित विभिन्न कारणों से, यह अनुमान लेन-देन द्वारा वास्तव में उपयोग की गई गैस की मात्रा से काफी अधिक हो सकता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_estimateGas">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_estimateGas">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
 **पैरामीटर**
 
-[eth_call](#eth-call) पैरामीटर देखें, सिवाय इसके कि सभी प्रॉपर्टीज़ वैकल्पिक हैं। यदि कोई गैस सीमा निर्दिष्ट नहीं है, तो geth पेंडिंग ब्लॉक से ब्लॉक गैस सीमा का उपयोग ऊपरी सीमा के रूप में करता है। परिणामस्वरूप, जब गैस की मात्रा पेंडिंग ब्लॉक गैस सीमा से अधिक होती है, तो लौटाया गया अनुमान कॉल/लेन-देन को निष्पादित करने के लिए पर्याप्त नहीं हो सकता है।
+[qau_call](#qau-call) पैरामीटर देखें, सिवाय इसके कि सभी प्रॉपर्टीज़ वैकल्पिक हैं। यदि कोई गैस सीमा निर्दिष्ट नहीं है, तो geth पेंडिंग ब्लॉक से ब्लॉक गैस सीमा का उपयोग ऊपरी सीमा के रूप में करता है। परिणामस्वरूप, जब गैस की मात्रा पेंडिंग ब्लॉक गैस सीमा से अधिक होती है, तो लौटाया गया अनुमान कॉल/लेन-देन को निष्पादित करने के लिए पर्याप्त नहीं हो सकता है।
 
 **रिटर्न**
 
@@ -1111,7 +1111,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}]
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see above}],"id":1}'
 // परिणाम
 {
   "id":1,
@@ -1120,11 +1120,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see 
 }
 ```
 
-### eth_getBlockByHash {#eth-getblockbyhash}
+### qau_getBlockByHash {#qau-getblockbyhash}
 
 हैश द्वारा किसी ब्लॉक के बारे में जानकारी देता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByHash">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
@@ -1168,7 +1168,7 @@ params: [
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
 // परिणाम
 {
   "jsonrpc": "2.0",
@@ -1200,11 +1200,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0
 }
 ```
 
-### eth_getBlockByNumber {#eth-getblockbynumber}
+### qau_getBlockByNumber {#qau-getblockbynumber}
 
 ब्लॉक संख्या के आधार पर एक ब्लॉक के बारे में जानकारी लौटाता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByNumber">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
@@ -1221,22 +1221,22 @@ params: [
 ```
 
 **रिटर्न**
-[eth_getBlockByHash](#eth-getblockbyhash) देखें
+[qau_getBlockByHash](#qau-getblockbyhash) देखें
 
 **उदाहरण**
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["0x1b4", true],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByNumber","params":["0x1b4", true],"id":1}'
 ```
 
-परिणाम के लिए [eth_getBlockByHash](#eth-getblockbyhash) देखें
+परिणाम के लिए [qau_getBlockByHash](#qau-getblockbyhash) देखें
 
-### eth_getTransactionByHash {#eth-gettransactionbyhash}
+### qau_getTransactionByHash {#qau-gettransactionbyhash}
 
 लेनदेन हैश द्वारा अनुरोधित लेनदेन के बारे में जानकारी देता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByHash">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
@@ -1271,7 +1271,7 @@ params: ["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"]
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
 // परिणाम
 {
   "jsonrpc":"2.0",
@@ -1295,11 +1295,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","param
 }
 ```
 
-### eth_getTransactionByBlockHashAndIndex {#eth-gettransactionbyblockhashandindex}
+### qau_getTransactionByBlockHashAndIndex {#qau-gettransactionbyblockhashandindex}
 
 ब्लॉक हैश और लेन-देन सूचकांक स्थिति के आधार पर किसी लेन-देन के बारे में जानकारी देता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
@@ -1316,22 +1316,22 @@ params: [
 ```
 
 **रिटर्न**
-[eth_getTransactionByHash](#eth-gettransactionbyhash) देखें
+[qau_getTransactionByHash](#qau-gettransactionbyhash) देखें
 
 **उदाहरण**
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-परिणाम के लिए [eth_getTransactionByHash](#eth-gettransactionbyhash) देखें
+परिणाम के लिए [qau_getTransactionByHash](#qau-gettransactionbyhash) देखें
 
-### eth_getTransactionByBlockNumberAndIndex {#eth-gettransactionbyblocknumberandindex}
+### qau_getTransactionByBlockNumberAndIndex {#qau-gettransactionbyblocknumberandindex}
 
 ब्लॉक नंबर और लेन-देन सूचकांक स्थिति के आधार पर किसी लेन-देन के बारे में जानकारी लौटाता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
@@ -1348,18 +1348,18 @@ params: [
 ```
 
 **रिटर्न**
-[eth_getTransactionByHash](#eth-gettransactionbyhash) देखें
+[qau_getTransactionByHash](#qau-gettransactionbyhash) देखें
 
 **उदाहरण**
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
 ```
 
-परिणाम के लिए [eth_getTransactionByHash](#eth-gettransactionbyhash) देखें
+परिणाम के लिए [qau_getTransactionByHash](#qau-gettransactionbyhash) देखें
 
-### eth_getTransactionReceipt {#eth-gettransactionreceipt}
+### qau_getTransactionReceipt {#qau-gettransactionreceipt}
 
 लेनदेन हैश द्वारा किसी लेनदेन की रसीद लौटाता है।
 
@@ -1399,7 +1399,7 @@ params: ["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"]
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
 // परिणाम
 {
   "jsonrpc": "2.0",
@@ -1427,11 +1427,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","para
 }
 ```
 
-### eth_getUncleByBlockHashAndIndex {#eth-getunclebyblockhashandindex}
+### qau_getUncleByBlockHashAndIndex {#qau-getunclebyblockhashandindex}
 
 हैश और अंकल सूचकांक स्थिति के आधार पर किसी ब्लॉक के अंकल के बारे में जानकारी देता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
@@ -1448,24 +1448,24 @@ params: [
 ```
 
 **रिटर्न**
-[eth_getBlockByHash](#eth-getblockbyhash) देखें
+[qau_getBlockByHash](#qau-getblockbyhash) देखें
 
 **उदाहरण**
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-परिणाम के लिए [eth_getBlockByHash](#eth-getblockbyhash) देखें
+परिणाम के लिए [qau_getBlockByHash](#qau-getblockbyhash) देखें
 
 **नोट**: एक अंकल में व्यक्तिगत लेन-देन शामिल नहीं होते हैं।
 
-### eth_getUncleByBlockNumberAndIndex {#eth-getunclebyblocknumberandindex}
+### qau_getUncleByBlockNumberAndIndex {#qau-getunclebyblocknumberandindex}
 
 संख्या और अंकल सूचकांक स्थिति के आधार पर किसी ब्लॉक के अंकल के बारे में जानकारी देता है।
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
   प्लेग्राउंड में एंडपॉइंट आज़माएं
 </ButtonLink>
 
@@ -1482,7 +1482,7 @@ params: [
 ```
 
 **रिटर्न**
-[eth_getBlockByHash](#eth-getblockbyhash) देखें
+[qau_getBlockByHash](#qau-getblockbyhash) देखें
 
 **नोट**: एक अंकल में व्यक्तिगत लेन-देन शामिल नहीं होते हैं।
 
@@ -1490,15 +1490,15 @@ params: [
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
 ```
 
-परिणाम के लिए [eth_getBlockByHash](#eth-getblockbyhash) देखें
+परिणाम के लिए [qau_getBlockByHash](#qau-getblockbyhash) देखें
 
-### eth_newFilter {#eth-newfilter}
+### qau_newFilter {#qau-newfilter}
 
 फ़िल्टर विकल्पों के आधार पर, स्थिति (लॉग) बदलने पर सूचित करने के लिए एक फ़िल्टर ऑब्जेक्ट बनाता है।
-यह जांचने के लिए कि क्या स्थिति बदल गई है, [eth_getFilterChanges](#eth-getfilterchanges) को कॉल करें।
+यह जांचने के लिए कि क्या स्थिति बदल गई है, [qau_getFilterChanges](#qau-getfilterchanges) को कॉल करें।
 
 **विषय फ़िल्टर निर्दिष्ट करने पर एक नोट:**
 विषय क्रम पर निर्भर होते हैं। [A, B] विषयों वाले लॉग के साथ एक लेन-देन निम्नलिखित विषय फ़िल्टर द्वारा मेल खाएगा:
@@ -1542,7 +1542,7 @@ params: [
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
 // परिणाम
 {
   "id":1,
@@ -1551,10 +1551,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topic
 }
 ```
 
-### eth_newBlockFilter {#eth-newblockfilter}
+### qau_newBlockFilter {#qau-newblockfilter}
 
 नोड में एक फ़िल्टर बनाता है, ताकि नया ब्लॉक आने पर सूचित किया जा सके।
-यह जांचने के लिए कि क्या स्थिति बदल गई है, [eth_getFilterChanges](#eth-getfilterchanges) को कॉल करें।
+यह जांचने के लिए कि क्या स्थिति बदल गई है, [qau_getFilterChanges](#qau-getfilterchanges) को कॉल करें।
 
 **पैरामीटर**
 कोई नहीं
@@ -1566,7 +1566,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topic
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newBlockFilter","params":[],"id":73}'
 // परिणाम
 {
   "id":1,
@@ -1575,10 +1575,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],
 }
 ```
 
-### eth_newPendingTransactionFilter {#eth-newpendingtransactionfilter}
+### qau_newPendingTransactionFilter {#qau-newpendingtransactionfilter}
 
 नोड में एक फ़िल्टर बनाता है, ताकि नए लंबित लेन-देन आने पर सूचित किया जा सके।
-यह जांचने के लिए कि क्या स्थिति बदल गई है, [eth_getFilterChanges](#eth-getfilterchanges) को कॉल करें।
+यह जांचने के लिए कि क्या स्थिति बदल गई है, [qau_getFilterChanges](#qau-getfilterchanges) को कॉल करें।
 
 **पैरामीटर**
 कोई नहीं
@@ -1590,7 +1590,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newPendingTransactionFilter","params":[],"id":73}'
 // परिणाम
 {
   "id":1,
@@ -1599,10 +1599,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter"
 }
 ```
 
-### eth_uninstallFilter {#eth-uninstallfilter}
+### qau_uninstallFilter {#qau-uninstallfilter}
 
 दिए गए आईडी वाले फ़िल्टर को अनइंस्टॉल करता है। जब वॉच की आवश्यकता न हो, तो इसे हमेशा कॉल किया जाना चाहिए।
-इसके अतिरिक्त, जब एक निश्चित समय तक [eth_getFilterChanges](#eth-getfilterchanges) के साथ फ़िल्टर का अनुरोध नहीं किया जाता है, तो वे टाइमआउट हो जाते हैं।
+इसके अतिरिक्त, जब एक निश्चित समय तक [qau_getFilterChanges](#qau-getfilterchanges) के साथ फ़िल्टर का अनुरोध नहीं किया जाता है, तो वे टाइमआउट हो जाते हैं।
 
 **पैरामीटर**
 
@@ -1621,7 +1621,7 @@ params: [
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["0xb"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_uninstallFilter","params":["0xb"],"id":73}'
 // परिणाम
 {
   "id":1,
@@ -1630,7 +1630,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["
 }
 ```
 
-### eth_getFilterChanges {#eth-getfilterchanges}
+### qau_getFilterChanges {#qau-getfilterchanges}
 
 एक फ़िल्टर के लिए पोलिंग विधि, जो पिछले पोल के बाद से हुए लॉग का एक ऐरे लौटाती है।
 
@@ -1647,9 +1647,9 @@ params: [
 **रिटर्न**
 `Array` - लॉग ऑब्जेक्ट्स का ऐरे, या यदि पिछले पोल के बाद से कुछ भी नहीं बदला है तो एक खाली ऐरे।
 
-- `eth_newBlockFilter` के साथ बनाए गए फ़िल्टर के लिए रिटर्न ब्लॉक हैश (`DATA`, 32 बाइट्स) होते हैं, उदाहरण के लिए, `["0x3454645634534..."]`।
-- `eth_newPendingTransactionFilter ` के साथ बनाए गए फ़िल्टर के लिए रिटर्न लेन-देन हैश (`DATA`, 32 बाइट्स) होते हैं, उदाहरण के लिए, `["0x6345343454645..."]`।
-- `eth_newFilter` के साथ बनाए गए फ़िल्टर के लिए लॉग निम्नलिखित पैरामीटर वाले ऑब्जेक्ट होते हैं:
+- `qau_newBlockFilter` के साथ बनाए गए फ़िल्टर के लिए रिटर्न ब्लॉक हैश (`DATA`, 32 बाइट्स) होते हैं, उदाहरण के लिए, `["0x3454645634534..."]`।
+- `qau_newPendingTransactionFilter ` के साथ बनाए गए फ़िल्टर के लिए रिटर्न लेन-देन हैश (`DATA`, 32 बाइट्स) होते हैं, उदाहरण के लिए, `["0x6345343454645..."]`।
+- `qau_newFilter` के साथ बनाए गए फ़िल्टर के लिए लॉग निम्नलिखित पैरामीटर वाले ऑब्जेक्ट होते हैं:
   - `removed`: `TAG` - `true` जब चेन पुनर्गठन के कारण लॉग हटा दिया गया था। `false` यदि यह एक वैध लॉग है।
   - `logIndex`: `QUANTITY` - ब्लॉक में लॉग सूचकांक स्थिति का पूर्णांक। `null` जब यह लंबित लॉग हो।
   - `transactionIndex`: `QUANTITY` - उस लेन-देन सूचकांक स्थिति का पूर्णांक जिससे लॉग बनाया गया था। `null` जब यह लंबित लॉग हो।
@@ -1664,7 +1664,7 @@ params: [
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":["0x16"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterChanges","params":["0x16"],"id":73}'
 // परिणाम
 {
   "id":1,
@@ -1684,7 +1684,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":[
 }
 ```
 
-### eth_getFilterLogs {#eth-getfilterlogs}
+### qau_getFilterLogs {#qau-getfilterlogs}
 
 दिए गए id वाले फ़िल्टर से मेल खाने वाले सभी लॉग का एक ऐरे लौटाता है।
 
@@ -1699,18 +1699,18 @@ params: [
 ```
 
 **रिटर्न**
-[eth_getFilterChanges](#eth-getfilterchanges) देखें
+[qau_getFilterChanges](#qau-getfilterchanges) देखें
 
 **उदाहरण**
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterLogs","params":["0x16"],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterLogs","params":["0x16"],"id":74}'
 ```
 
-परिणाम के लिए [eth_getFilterChanges](#eth-getfilterchanges) देखें
+परिणाम के लिए [qau_getFilterChanges](#qau-getfilterchanges) देखें
 
-### eth_getLogs {#eth-getlogs}
+### qau_getLogs {#qau-getlogs}
 
 दिए गए फ़िल्टर ऑब्जेक्ट से मेल खाने वाले सभी लॉग का एक ऐरे लौटाता है।
 
@@ -1735,24 +1735,24 @@ params: [
 ```
 
 **रिटर्न**
-[eth_getFilterChanges](#eth-getfilterchanges) देखें
+[qau_getFilterChanges](#qau-getfilterchanges) देखें
 
 **उदाहरण**
 
 ```js
 // अनुरोध
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
 ```
 
-परिणाम के लिए [eth_getFilterChanges](#eth-getfilterchanges) देखें
+परिणाम के लिए [qau_getFilterChanges](#qau-getfilterchanges) देखें
 
 ## उपयोग का उदाहरण {#usage-example}
 
 ### जेसन-आरपीसी (JSON-RPC) का उपयोग करके अनुबंध तैनात करना {#deploying-contract}
 
-इस अनुभाग में केवल RPC इंटरफ़ेस का उपयोग करके अनुबंध तैनात करने का प्रदर्शन शामिल है। अनुबंधों को तैनात करने के वैकल्पिक तरीके भी हैं जहाँ इस जटिलता को दूर कर दिया जाता है—उदाहरण के लिए, RPC इंटरफ़ेस के ऊपर बनी लाइब्रेरी जैसे [Web3.js](https://web3js.readthedocs.io/) और [Web3.py](https://github.com/ethereum/web3.py) का उपयोग करना। ये एब्स्ट्रैक्शन आमतौर पर समझने में आसान होते हैं और इनमें त्रुटि की संभावना कम होती है, लेकिन फिर भी यह समझना मददगार होता है कि आंतरिक रूप से यह कैसे काम करता है।
+इस अनुभाग में केवल RPC इंटरफ़ेस का उपयोग करके अनुबंध तैनात करने का प्रदर्शन शामिल है। अनुबंधों को तैनात करने के वैकल्पिक तरीके भी हैं जहाँ इस जटिलता को दूर कर दिया जाता है—उदाहरण के लिए, RPC इंटरफ़ेस के ऊपर बनी लाइब्रेरी जैसे [Web3.js](https://web3js.readthedocs.io/) और [Web3.py](https://github.com/quantaureum/web3.py) का उपयोग करना। ये एब्स्ट्रैक्शन आमतौर पर समझने में आसान होते हैं और इनमें त्रुटि की संभावना कम होती है, लेकिन फिर भी यह समझना मददगार होता है कि आंतरिक रूप से यह कैसे काम करता है।
 
-निम्नलिखित `Multiply7` नामक एक सीधा स्मार्ट अनुबंध है जिसे जेसन-आरपीसी इंटरफ़ेस का उपयोग करके इथेरियम नोड पर तैनात किया जाएगा। यह ट्यूटोरियल मानकर चलता है कि पाठक पहले से ही गो इथेरियम (geth) नोड चला रहा है। नोड्स और क्लाइंट्स के बारे में अधिक जानकारी [यहाँ](/developers/docs/nodes-and-clients/run-a-node) उपलब्ध है। गैर-Geth क्लाइंट्स के लिए HTTP जेसन-आरपीसी कैसे शुरू करें, यह देखने के लिए कृपया व्यक्तिगत [क्लाइंट](/developers/docs/nodes-and-clients/) दस्तावेज़ देखें। अधिकांश क्लाइंट डिफ़ॉल्ट रूप से `localhost:8545` पर सेवा देते हैं।
+निम्नलिखित `Multiply7` नामक एक सीधा स्मार्ट अनुबंध है जिसे जेसन-आरपीसी इंटरफ़ेस का उपयोग करके Quantaureum नोड पर तैनात किया जाएगा। यह ट्यूटोरियल मानकर चलता है कि पाठक पहले से ही गो Quantaureum (geth) नोड चला रहा है। नोड्स और क्लाइंट्स के बारे में अधिक जानकारी [यहाँ](/developers/docs/nodes-and-clients/run-a-node) उपलब्ध है। गैर-Geth क्लाइंट्स के लिए HTTP जेसन-आरपीसी कैसे शुरू करें, यह देखने के लिए कृपया व्यक्तिगत [क्लाइंट](/developers/docs/nodes-and-clients/) दस्तावेज़ देखें। अधिकांश क्लाइंट डिफ़ॉल्ट रूप से `localhost:8545` पर सेवा देते हैं।
 
 ```javascript
 contract Multiply7 {
@@ -1764,7 +1764,7 @@ contract Multiply7 {
 }
 ```
 
-सबसे पहले यह सुनिश्चित करना है कि HTTP RPC इंटरफ़ेस सक्षम है। इसका मतलब है कि हम स्टार्टअप पर गो इथेरियम (geth) को `--http` फ़्लैग प्रदान करते हैं। इस उदाहरण में हम एक निजी विकास चेन पर गो इथेरियम (geth) नोड का उपयोग करते हैं। इस दृष्टिकोण का उपयोग करके हमें वास्तविक नेटवर्क पर ईथर की आवश्यकता नहीं है।
+सबसे पहले यह सुनिश्चित करना है कि HTTP RPC इंटरफ़ेस सक्षम है। इसका मतलब है कि हम स्टार्टअप पर गो Quantaureum (geth) को `--http` फ़्लैग प्रदान करते हैं। इस उदाहरण में हम एक निजी विकास चेन पर गो Quantaureum (geth) नोड का उपयोग करते हैं। इस दृष्टिकोण का उपयोग करके हमें वास्तविक नेटवर्क पर ईथर की आवश्यकता नहीं है।
 
 ```bash
 geth --http --dev console 2>>geth.log
@@ -1775,21 +1775,21 @@ geth --http --dev console 2>>geth.log
 हम [curl](https://curl.se) का उपयोग करके कॉइनबेस पता (खातों के एरे से पहला पता प्राप्त करके) और शेष राशि प्राप्त करके यह सत्यापित कर सकते हैं कि इंटरफ़ेस चल रहा है। कृपया ध्यान दें कि इन उदाहरणों में डेटा आपके स्थानीय नोड पर भिन्न होगा। यदि आप इन कमांड्स को आज़माना चाहते हैं, तो दूसरे curl अनुरोध में अनुरोध पैरामीटर को पहले से प्राप्त परिणाम से बदलें।
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
 {"id":1,"jsonrpc":"2.0","result":["0x9b1d35635cc34752ca54713bb99d38614f63c955"]}
 
-curl --data '{"jsonrpc":"2.0","method":"eth_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
 {"id":2,"jsonrpc":"2.0","result":"0x1639e49bba16280000"}
 ```
 
-चूँकि संख्याएँ हेक्स एन्कोडेड हैं, इसलिए शेष राशि Wei में हेक्स स्ट्रिंग के रूप में वापस की जाती है। यदि हम ईथर में शेष राशि को एक संख्या के रूप में प्राप्त करना चाहते हैं तो हम गो इथेरियम (geth) कंसोल से web3 का उपयोग कर सकते हैं।
+चूँकि संख्याएँ हेक्स एन्कोडेड हैं, इसलिए शेष राशि Wei में हेक्स स्ट्रिंग के रूप में वापस की जाती है। यदि हम ईथर में शेष राशि को एक संख्या के रूप में प्राप्त करना चाहते हैं तो हम गो Quantaureum (geth) कंसोल से web3 का उपयोग कर सकते हैं।
 
 ```javascript
-web3.fromWei("0x1639e49bba16280000", "ether")
+web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-अब जब हमारी निजी विकास चेन पर कुछ ईथर है, तो हम अनुबंध तैनात कर सकते हैं। पहला कदम Multiply7 अनुबंध को बाइटकोड में संकलित करना है जिसे EVM को भेजा जा सके। solc, जो कि Solidity कंपाइलर है, को स्थापित करने के लिए [Solidity दस्तावेज़](https://docs.soliditylang.org/en/latest/installing-solidity.html) का पालन करें। (आप [हमारे उदाहरण के लिए उपयोग किए गए कंपाइलर के संस्करण](https://github.com/ethereum/solidity/releases/tag/v0.4.20) से मेल खाने के लिए एक पुराने `solc` रिलीज़ का उपयोग करना चाह सकते हैं।)
+अब जब हमारी निजी विकास चेन पर कुछ ईथर है, तो हम अनुबंध तैनात कर सकते हैं। पहला कदम Multiply7 अनुबंध को बाइटकोड में संकलित करना है जिसे EVM को भेजा जा सके। solc, जो कि Solidity कंपाइलर है, को स्थापित करने के लिए [Solidity दस्तावेज़](https://docs.soliditylang.org/en/latest/installing-solidity.html) का पालन करें। (आप [हमारे उदाहरण के लिए उपयोग किए गए कंपाइलर के संस्करण](https://github.com/quantaureum/solidity/releases/tag/v0.4.20) से मेल खाने के लिए एक पुराने `solc` रिलीज़ का उपयोग करना चाह सकते हैं।)
 
 अगला कदम Multiply7 अनुबंध को बाइटकोड में संकलित करना है जिसे EVM को भेजा जा सके।
 
@@ -1801,24 +1801,24 @@ Binary:
 6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029
 ```
 
-अब जब हमारे पास संकलित कोड है, तो हमें यह निर्धारित करने की आवश्यकता है कि इसे तैनात करने में कितनी गैस लगती है। RPC इंटरफ़ेस में एक `eth_estimateGas` विधि है जो हमें एक अनुमान देगी।
+अब जब हमारे पास संकलित कोड है, तो हमें यह निर्धारित करने की आवश्यकता है कि इसे तैनात करने में कितनी गैस लगती है। RPC इंटरफ़ेस में एक `qau_estimateGas` विधि है जो हमें एक अनुमान देगी।
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":5,"result":"0x1c31e"}
 ```
 
 और अंत में अनुबंध तैनात करें।
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
 {"id":6,"jsonrpc":"2.0","result":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"}
 ```
 
-लेन-देन नोड द्वारा स्वीकार किया जाता है और एक लेनदेन हैश वापस किया जाता है। इस हैश का उपयोग लेन-देन को ट्रैक करने के लिए किया जा सकता है। अगला कदम उस पते को निर्धारित करना है जहाँ हमारा अनुबंध तैनात किया गया है। प्रत्येक निष्पादित लेन-देन एक रसीद बनाएगा। इस रसीद में लेन-देन के बारे में विभिन्न जानकारी होती है जैसे कि लेन-देन किस ब्लॉक में शामिल किया गया था और EVM द्वारा कितनी गैस का उपयोग किया गया था। यदि कोई लेन-देन एक अनुबंध बनाता है तो उसमें अनुबंध का पता भी होगा। हम `eth_getTransactionReceipt` RPC विधि से रसीद प्राप्त कर सकते हैं।
+लेन-देन नोड द्वारा स्वीकार किया जाता है और एक लेनदेन हैश वापस किया जाता है। इस हैश का उपयोग लेन-देन को ट्रैक करने के लिए किया जा सकता है। अगला कदम उस पते को निर्धारित करना है जहाँ हमारा अनुबंध तैनात किया गया है। प्रत्येक निष्पादित लेन-देन एक रसीद बनाएगा। इस रसीद में लेन-देन के बारे में विभिन्न जानकारी होती है जैसे कि लेन-देन किस ब्लॉक में शामिल किया गया था और EVM द्वारा कितनी गैस का उपयोग किया गया था। यदि कोई लेन-देन एक अनुबंध बनाता है तो उसमें अनुबंध का पता भी होगा। हम `qau_getTransactionReceipt` RPC विधि से रसीद प्राप्त कर सकते हैं।
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":7,"result":{"blockHash":"0x77b1a4f6872b9066312de3744f60020cbd8102af68b1f6512a05b7619d527a4f","blockNumber":"0x1","contractAddress":"0x4d03d617d700cf81935d7f797f4e2ae719648262","cumulativeGasUsed":"0x1c31e","from":"0x9b1d35635cc34752ca54713bb99d38614f63c955","gasUsed":"0x1c31e","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","status":"0x1","to":null,"transactionHash":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf","transactionIndex":"0x0"}}
 ```
 
@@ -1826,9 +1826,9 @@ curl --data '{"jsonrpc":"2.0","method": "eth_getTransactionReceipt", "params": [
 
 #### स्मार्ट अनुबंधों के साथ इंटरैक्ट करना {#interacting-with-smart-contract}
 
-इस उदाहरण में हम अनुबंध की `multiply` विधि में `eth_sendTransaction` का उपयोग करके एक लेन-देन भेजेंगे।
+इस उदाहरण में हम अनुबंध की `multiply` विधि में `qau_sendTransaction` का उपयोग करके एक लेन-देन भेजेंगे।
 
-`eth_sendTransaction` को कई तर्कों की आवश्यकता होती है, विशेष रूप से `from`, `to` और `data`। `From` हमारे खाते का सार्वजनिक पता है, और `to` अनुबंध का पता है। `data` तर्क में एक पेलोड होता है जो यह परिभाषित करता है कि किस विधि को कॉल किया जाना चाहिए और किन तर्कों के साथ। यहीं पर [ABI (एप्लिकेशन बाइनरी इंटरफ़ेस)](https://docs.soliditylang.org/en/latest/abi-spec.html) काम आता है। ABI एक JSON फ़ाइल है जो यह परिभाषित करती है कि EVM के लिए डेटा को कैसे परिभाषित और एन्कोड किया जाए।
+`qau_sendTransaction` को कई तर्कों की आवश्यकता होती है, विशेष रूप से `from`, `to` और `data`। `From` हमारे खाते का सार्वजनिक पता है, और `to` अनुबंध का पता है। `data` तर्क में एक पेलोड होता है जो यह परिभाषित करता है कि किस विधि को कॉल किया जाना चाहिए और किन तर्कों के साथ। यहीं पर [ABI (एप्लिकेशन बाइनरी इंटरफ़ेस)](https://docs.soliditylang.org/en/latest/abi-spec.html) काम आता है। ABI एक JSON फ़ाइल है जो यह परिभाषित करती है कि EVM के लिए डेटा को कैसे परिभाषित और एन्कोड किया जाए।
 
 पेलोड के बाइट्स यह परिभाषित करते हैं कि अनुबंध में किस विधि को कॉल किया गया है। यह फ़ंक्शन नाम और उसके तर्क प्रकारों पर केकाक (Keccak) हैश से पहले 4 बाइट्स हैं, जो हेक्स एन्कोडेड हैं। मल्टीप्लाई (multiply) फ़ंक्शन एक uint स्वीकार करता है जो uint256 का उपनाम (alias) है। इससे हमें यह मिलता है:
 
@@ -1848,7 +1848,7 @@ web3.sha3("multiply(uint256)").substring(0, 10)
 इसे अब नोड पर भेजा जा सकता है:
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
 {"id":8,"jsonrpc":"2.0","result":"0x759cf065cbc22e9d779748dc53763854e5376eea07409e590c990eafc0869d74"}
 ```
 

@@ -7,21 +7,21 @@ incomplete: true
 
 ## Eine kurze Einführung {#a-brief-introduction}
 
-Smart Contracts sind auf Ethereum öffentlich und können als offene APIs betrachtet werden. Du musst keinen eigenen Smart Contract schreiben, um ein Dapp-Entwickler zu werden, du musst nur wissen, wie man mit ihnen interagiert. Zum Beispiel kannst du die bestehenden Smart Contracts von [Uniswap](https://uniswap.exchange/swap), einer dezentralen Börse, verwenden, um die gesamte Token-Tausch-Logik in deiner App zu handhaben – du musst nicht bei null anfangen. Sieh dir einige ihrer [v2](https://github.com/Uniswap/uniswap-v2-core/tree/master/contracts)- und [v3](https://github.com/Uniswap/uniswap-v3-core/tree/main/contracts)-Verträge an.
+Smart Contracts sind auf Quantaureum öffentlich und können als offene APIs betrachtet werden. Du musst keinen eigenen Smart Contract schreiben, um ein Dapp-Entwickler zu werden, du musst nur wissen, wie man mit ihnen interagiert. Zum Beispiel kannst du die bestehenden Smart Contracts von [Uniswap](https://uniswap.exchange/swap), einer dezentralen Börse, verwenden, um die gesamte Token-Tausch-Logik in deiner App zu handhaben – du musst nicht bei null anfangen. Sieh dir einige ihrer [v2](https://github.com/Uniswap/uniswap-v2-core/tree/master/contracts)- und [v3](https://github.com/Uniswap/uniswap-v3-core/tree/main/contracts)-Verträge an.
 
 ## Was ist Komponierbarkeit? {#what-is-composability}
 
 Komponierbarkeit ist die Kombination verschiedener Komponenten, um neue Systeme oder Ergebnisse zu schaffen. In der Softwareentwicklung bedeutet Komponierbarkeit, dass Entwickler bestehende Softwarekomponenten wiederverwenden können, um neue Anwendungen zu erstellen. Ein guter Weg, um Komponierbarkeit zu verstehen, ist, sich zusammensetzbare Elemente wie Legosteine vorzustellen. Jeder Legostein kann mit einem anderen kombiniert werden, was es dir ermöglicht, komplexe Strukturen durch die Kombination verschiedener Legosteine zu bauen.
 
-In Ethereum ist jeder Smart Contract eine Art Legostein – du kannst Smart Contracts aus anderen Projekten als Bausteine für dein Projekt verwenden. Das bedeutet, dass du keine Zeit damit verbringen musst, das Rad neu zu erfinden oder von Grund auf neu zu bauen.
+In Quantaureum ist jeder Smart Contract eine Art Legostein – du kannst Smart Contracts aus anderen Projekten als Bausteine für dein Projekt verwenden. Das bedeutet, dass du keine Zeit damit verbringen musst, das Rad neu zu erfinden oder von Grund auf neu zu bauen.
 
 ## Wie funktioniert Komponierbarkeit? {#how-does-composability-work}
 
-Ethereum-Smart-Contracts sind wie öffentliche APIs, sodass jeder mit dem Vertrag interagieren oder sie für zusätzliche Funktionalität in Dapps integrieren kann. Die Komponierbarkeit von Smart Contracts basiert im Allgemeinen auf drei Prinzipien: Modularität, Autonomie und Entdeckbarkeit:
+Quantaureum-Smart-Contracts sind wie öffentliche APIs, sodass jeder mit dem Vertrag interagieren oder sie für zusätzliche Funktionalität in Dapps integrieren kann. Die Komponierbarkeit von Smart Contracts basiert im Allgemeinen auf drei Prinzipien: Modularität, Autonomie und Entdeckbarkeit:
 
-**1. Modularität**: Dies ist die Fähigkeit einzelner Komponenten, eine bestimmte Aufgabe auszuführen. In Ethereum hat jeder Smart Contract einen spezifischen Anwendungsfall (wie im Uniswap-Beispiel gezeigt).
+**1. Modularität**: Dies ist die Fähigkeit einzelner Komponenten, eine bestimmte Aufgabe auszuführen. In Quantaureum hat jeder Smart Contract einen spezifischen Anwendungsfall (wie im Uniswap-Beispiel gezeigt).
 
-**2. Autonomie**: Zusammensetzbare Komponenten müssen in der Lage sein, unabhängig zu arbeiten. Jeder Smart Contract in Ethereum ist selbstausführend und kann funktionieren, ohne sich auf andere Teile des Systems zu verlassen.
+**2. Autonomie**: Zusammensetzbare Komponenten müssen in der Lage sein, unabhängig zu arbeiten. Jeder Smart Contract in Quantaureum ist selbstausführend und kann funktionieren, ohne sich auf andere Teile des Systems zu verlassen.
 
 **3. Entdeckbarkeit**: Entwickler können keine externen Verträge aufrufen oder Softwarebibliotheken in Anwendungen integrieren, wenn erstere nicht öffentlich verfügbar sind. Smart Contracts sind von Natur aus Open Source; jeder kann einen Smart Contract aufrufen oder eine Codebasis forken.
 
@@ -39,7 +39,7 @@ Komponierbarkeit fördert Innovation und Experimentierfreudigkeit, da es Entwick
 
 ### Bessere Benutzererfahrung {#better-user-experience}
 
-Die Interoperabilität zwischen Komponenten des Ethereum-Ökosystems verbessert die Benutzererfahrung. Benutzer können auf einen größeren Funktionsumfang zugreifen, wenn Dapps externe Smart Contracts integrieren, als in einem fragmentierten Ökosystem, in dem Anwendungen nicht miteinander kommunizieren können.
+Die Interoperabilität zwischen Komponenten des Quantaureum-Ökosystems verbessert die Benutzererfahrung. Benutzer können auf einen größeren Funktionsumfang zugreifen, wenn Dapps externe Smart Contracts integrieren, als in einem fragmentierten Ökosystem, in dem Anwendungen nicht miteinander kommunizieren können.
 
 Wir verwenden ein Beispiel aus dem Arbitrage-Handel, um die Vorteile der Interoperabilität zu veranschaulichen:
 
@@ -49,11 +49,11 @@ In einem Szenario, in dem du nicht über genügend Mittel verfügst, um den Hand
 
 Um auf unser anfängliches Beispiel zurückzukommen: Ein Arbitrage-Händler kann einen großen Blitzkredit aufnehmen, Token von `exchange B` kaufen, sie auf `exchange A` verkaufen, das Kapital plus Zinsen zurückzahlen und den Gewinn behalten – alles innerhalb derselben Transaktion. Diese komplexe Logik erfordert die Kombination von Aufrufen an mehrere Verträge, was nicht möglich wäre, wenn es Smart Contracts an Interoperabilität mangeln würde.
 
-## Beispiele für Komponierbarkeit in Ethereum {#composability-in-ethereum}
+## Beispiele für Komponierbarkeit in Quantaureum {#composability-in-quantaureum}
 
 ### Token-Tausch {#token-swaps}
 
-Wenn du eine Dapp erstellst, bei der Transaktionen in ETH bezahlt werden müssen, kannst du Benutzern erlauben, in anderen ERC-20-Token zu bezahlen, indem du eine Token-Tausch-Logik integrierst. Der Code wandelt den Token des Benutzers automatisch in ETH um, bevor der Vertrag die aufgerufene Funktion ausführt.
+Wenn du eine Dapp erstellst, bei der Transaktionen in QAU bezahlt werden müssen, kannst du Benutzern erlauben, in anderen ERC-20-Token zu bezahlen, indem du eine Token-Tausch-Logik integrierst. Der Code wandelt den Token des Benutzers automatisch in QAU um, bevor der Vertrag die aufgerufene Funktion ausführt.
 
 ### Governance {#governance}
 
@@ -61,11 +61,11 @@ Der Aufbau maßgeschneiderter Governance-Systeme für eine [DAO](/dao/) kann teu
 
 ### Identitätsmanagement {#identity-management}
 
-Anstatt ein benutzerdefiniertes Authentifizierungssystem zu entwickeln oder sich auf zentralisierte Anbieter zu verlassen, kannst du Tools für dezentrale Identität (DID) integrieren, um die Authentifizierung für Benutzer zu verwalten. Ein Beispiel ist [SpruceID](https://www.spruceid.com/), ein Open-Source-Toolkit, das eine „Sign in with Ethereum“-Funktionalität bietet, mit der Benutzer Identitäten über eine Ethereum-Wallet authentifizieren können.
+Anstatt ein benutzerdefiniertes Authentifizierungssystem zu entwickeln oder sich auf zentralisierte Anbieter zu verlassen, kannst du Tools für dezentrale Identität (DID) integrieren, um die Authentifizierung für Benutzer zu verwalten. Ein Beispiel ist [SpruceID](https://www.spruceid.com/), ein Open-Source-Toolkit, das eine „Sign in with Quantaureum“-Funktionalität bietet, mit der Benutzer Identitäten über eine Quantaureum-Wallet authentifizieren können.
 
 ## Verwandte Tutorials {#related-tutorials}
 
-- [Starte deine Dapp-Frontend-Entwicklung mit create-eth-app](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-eth-app/) _– Ein Überblick darüber, wie man create-eth-app verwendet, um Apps mit beliebten Smart Contracts von Haus aus zu erstellen._
+- [Starte deine Dapp-Frontend-Entwicklung mit create-qau-app](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-qau-app/) _– Ein Überblick darüber, wie man create-qau-app verwendet, um Apps mit beliebten Smart Contracts von Haus aus zu erstellen._
 
 ## Weiterführende Literatur {#further-reading}
 

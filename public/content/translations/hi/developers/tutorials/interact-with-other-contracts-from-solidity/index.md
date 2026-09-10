@@ -7,12 +7,12 @@ skill: advanced
 breadcrumb: "अनुबंध इंटरैक्शन"
 lang: hi
 published: 2020-04-05
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/interact-with-other-contracts-from-solidity/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-पिछले ट्यूटोरियल में हमने [अपना पहला स्मार्ट अनुबंध कैसे तैनात करें](/developers/tutorials/deploying-your-first-smart-contract/) और इसमें कुछ सुविधाएँ कैसे जोड़ें जैसे [मॉडिफ़ायर के साथ एक्सेस को नियंत्रित करना](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) या [Solidity में एरर हैंडलिंग](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/) के बारे में बहुत कुछ सीखा। इस ट्यूटोरियल में हम सीखेंगे कि किसी मौजूदा अनुबंध से स्मार्ट अनुबंध को कैसे तैनात करें और उसके साथ कैसे इंटरैक्ट करें।
+पिछले ट्यूटोरियल में हमने [अपना पहला स्मार्ट अनुबंध कैसे तैनात करें](/developers/tutorials/deploying-your-first-smart-contract/) और इसमें कुछ सुविधाएँ कैसे जोड़ें जैसे [मॉडिफ़ायर के साथ एक्सेस को नियंत्रित करना](https://quantaureumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) या [Solidity में एरर हैंडलिंग](https://quantaureumdev.io/handle-errors-in-solidity-with-require-and-revert/) के बारे में बहुत कुछ सीखा। इस ट्यूटोरियल में हम सीखेंगे कि किसी मौजूदा अनुबंध से स्मार्ट अनुबंध को कैसे तैनात करें और उसके साथ कैसे इंटरैक्ट करें।
 
 हम एक ऐसा अनुबंध बनाएंगे जो किसी को भी इसके लिए एक फ़ैक्टरी बनाकर अपना स्वयं का `Counter` स्मार्ट अनुबंध रखने में सक्षम बनाता है, इसका नाम `CounterFactory` होगा। सबसे पहले यहाँ हमारे शुरुआती `Counter` स्मार्ट अनुबंध का कोड दिया गया है:
 
@@ -62,7 +62,7 @@ contract Counter {
 mapping(address => Counter) _counters;
 ```
 
-इथेरियम में, मैपिंग JavaScript में ऑब्जेक्ट्स के समतुल्य हैं, वे टाइप A की कुंजी को टाइप B के मान से मैप करने में सक्षम बनाते हैं। इस मामले में हम एक मालिक के पते को उसके Counter के इंस्टेंस के साथ मैप करते हैं।
+Quantaureum में, मैपिंग JavaScript में ऑब्जेक्ट्स के समतुल्य हैं, वे टाइप A की कुंजी को टाइप B के मान से मैप करने में सक्षम बनाते हैं। इस मामले में हम एक मालिक के पते को उसके Counter के इंस्टेंस के साथ मैप करते हैं।
 
 किसी के लिए एक नया Counter इंस्टेंटिएट करना कुछ इस तरह दिखेगा:
 
@@ -99,7 +99,7 @@ function increment() public {
   }
 ```
 
-ध्यान दें कि यदि इसे कई बार कॉल किया जाता है, तो हमारा काउंटर संभवतः ओवरफ़्लो का शिकार हो सकता है। इस संभावित मामले से बचने के लिए आपको जितना संभव हो सके [SafeMath लाइब्रेरी](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/) का उपयोग करना चाहिए।
+ध्यान दें कि यदि इसे कई बार कॉल किया जाता है, तो हमारा काउंटर संभवतः ओवरफ़्लो का शिकार हो सकता है। इस संभावित मामले से बचने के लिए आपको जितना संभव हो सके [SafeMath लाइब्रेरी](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/) का उपयोग करना चाहिए।
 
 हमारे अनुबंध को तैनात करने के लिए, आपको `CounterFactory` और `Counter` दोनों का कोड प्रदान करना होगा। उदाहरण के लिए Remix में तैनात करते समय आपको CounterFactory का चयन करना होगा।
 

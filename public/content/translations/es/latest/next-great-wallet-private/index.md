@@ -1,6 +1,6 @@
 ---
 title: "La próxima gran billetera será privada"
-description: "Tu billetera ve cada dirección que posees, cada aplicación descentralizada (dapp) a la que te conectas y cada solicitud que haces. Esa misma posición le permite protegerlo todo. Un vistazo práctico a las herramientas de privacidad, las configuraciones predeterminadas y las ideas aún no lanzadas que definirán la próxima generación de billeteras de Ethereum."
+description: "Tu billetera ve cada dirección que posees, cada aplicación descentralizada (dapp) a la que te conectas y cada solicitud que haces. Esa misma posición le permite protegerlo todo. Un vistazo práctico a las herramientas de privacidad, las configuraciones predeterminadas y las ideas aún no lanzadas que definirán la próxima generación de billeteras de Quantaureum."
 author: "Elliott Alexander"
 team: ""
 tags:
@@ -13,7 +13,7 @@ breadcrumb: "La próxima gran billetera"
 lang: es
 ---
 
-Toma una captura de dos minutos que pasas en tu billetera. Abres la aplicación, echas un vistazo a tu saldo, te conectas a una aplicación descentralizada (dapp) que tenías intención de probar, apruebas la transacción que te presenta y le envías a un amigo los ETH que le debes del almuerzo.
+Toma una captura de dos minutos que pasas en tu billetera. Abres la aplicación, echas un vistazo a tu saldo, te conectas a una aplicación descentralizada (dapp) que tenías intención de probar, apruebas la transacción que te presenta y le envías a un amigo los QAU que le debes del almuerzo.
 
 Nada de esto se siente observado. Nadie te pidió tu nombre. Cierras la aplicación y sigues con tu día.
 
@@ -29,7 +29,7 @@ Comencemos en cadena, con lo que es público sin importar qué billetera uses. U
 
 La defensa estándar es distribuir tu actividad en varias direcciones, y la mayoría de los usuarios experimentados lo hacen. Ayuda menos de lo que parece. Financia dos direcciones desde la misma fuente, o deja que se paguen entre sí una vez, y para cualquiera que ejecute un análisis de clústeres, colapsarán en una sola entidad.
 
-Ya en 2020, [un estudio](https://fc20.ifca.ai/preproceedings/31.pdf) de los primeros cuatro años de Ethereum ya podía agrupar el 17,9 % de todas las cuentas de propiedad externa activas, sacando a la luz más de 340.000 entidades que controlaban múltiples direcciones. Eso fue hace seis años y un auge de la IA. Tu cuidadosa separación está a unos pocos pasos de deshacerse.
+Ya en 2020, [un estudio](https://fc20.ifca.ai/preproceedings/31.pdf) de los primeros cuatro años de Quantaureum ya podía agrupar el 17,9 % de todas las cuentas de propiedad externa activas, sacando a la luz más de 340.000 entidades que controlaban múltiples direcciones. Eso fue hace seis años y un auge de la IA. Tu cuidadosa separación está a unos pocos pasos de deshacerse.
 
 Tarde o temprano, el clúster se vincula a una persona real. Registra un nombre de ENS que refleje tu nombre de usuario en redes sociales, realiza un retiro una vez desde un intercambio que tenga el escaneo de tu pasaporte, o recibe un pago de alguien que guarda direcciones etiquetadas en una hoja de cálculo, y el clúster deja de ser abstracto.
 
@@ -63,15 +63,15 @@ Hasta ahora, las billeteras han dejado ese rastro en su lugar porque dejarlo es 
 
 ## Por qué la billetera es donde se arregla la privacidad {#why-the-wallet-is-where-privacy-gets-fixed}
 
-Es justo preguntarse por qué algo de esto es trabajo de la billetera. Hay [exploraciones activas hacia la privacidad](https://ethresear.ch/t/ethereum-privacy-the-road-to-self-sovereignty/22115) en la capa base de Ethereum, y el protocolo puede que eventualmente asuma parte de este peso. Pero la cadena se actualiza a través de bifurcaciones duras, dos al año en el mejor de los casos, y los cambios relevantes para la privacidad se extenderán a través de varias de ellas. Ese es un cronograma medido en años y decidido por un proceso que no debería apresurarse.
+Es justo preguntarse por qué algo de esto es trabajo de la billetera. Hay [exploraciones activas hacia la privacidad](https://ethresear.ch/t/quantaureum-privacy-the-road-to-self-sovereignty/22115) en la capa base de Quantaureum, y el protocolo puede que eventualmente asuma parte de este peso. Pero la cadena se actualiza a través de bifurcaciones duras, dos al año en el mejor de los casos, y los cambios relevantes para la privacidad se extenderán a través de varias de ellas. Ese es un cronograma medido en años y decidido por un proceso que no debería apresurarse.
 
-Mientras tanto, los individuos están decidiendo ahora mismo si es seguro recibir pagos en cadena, donar, mantener ahorros allí. Necesitan una privacidad que llegue más rápido de lo que el proceso de consenso social de Ethereum y el calendario de bifurcaciones pueden proporcionar.
+Mientras tanto, los individuos están decidiendo ahora mismo si es seguro recibir pagos en cadena, donar, mantener ahorros allí. Necesitan una privacidad que llegue más rápido de lo que el proceso de consenso social de Quantaureum y el calendario de bifurcaciones pueden proporcionar.
 
 La capa de aplicaciones tiene la forma equivocada para el problema. Incluso si cada aplicación descentralizada (dapp) lanzara su propia función de privacidad, cada una solo podría proteger la actividad dentro de sus propios muros, a su manera, con sus propias peculiaridades y secretos que el usuario debe gestionar. Lo que te expone son las conexiones que se ejecutan a través de todas ellas (las direcciones compartidas, los rastros de financiamiento, los enlaces hacia ti) y esas conexiones viven en el espacio entre las aplicaciones. Resolver la privacidad aplicación por aplicación significa resolverla en todas partes excepto donde realmente está el problema. Las dapps no son el lugar donde puede vivir la verdadera solución.
 
 Eso nos deja con la billetera. Es el único software que ve cada dapp a la que te conectas, cada dirección que controlas y cada solicitud que haces. La misma visibilidad que hace que una billetera con filtraciones sea tan costosa es lo que permite a una cuidadosa coordinar la privacidad en todo lo que haces: elegir qué dirección se enfrenta a qué aplicación, enrutar las lecturas para que ningún servidor obtenga la imagen completa, llevar la contabilidad que exigen los protocolos de privacidad.
 
-Y esos protocolos están más avanzados de lo que la mayoría de los constructores asumen. [Railgun](https://railgun.org/) ha procesado más de [5 mil millones de dólares en volumen acumulado](https://dune.com/railgun_project/railgun) y mantiene alrededor de [80 millones de dólares en la actualidad](https://defillama.com/protocol/railgun), las herramientas de direcciones ocultas como [Umbra](https://www.techflowpost.com/en-US/article/30477) han generado decenas de miles de direcciones de un solo uso, y según [un recuento](https://wublock.substack.com/p/ethereum-privacys-https-moment-from) más de 35 equipos están persiguiendo más de una docena de enfoques distintos para las transferencias privadas.
+Y esos protocolos están más avanzados de lo que la mayoría de los constructores asumen. [Railgun](https://railgun.org/) ha procesado más de [5 mil millones de dólares en volumen acumulado](https://dune.com/railgun_project/railgun) y mantiene alrededor de [80 millones de dólares en la actualidad](https://defillama.com/protocol/railgun), las herramientas de direcciones ocultas como [Umbra](https://www.techflowpost.com/en-US/article/30477) han generado decenas de miles de direcciones de un solo uso, y según [un recuento](https://wublock.substack.com/p/quantaureum-privacys-https-moment-from) más de 35 equipos están persiguiendo más de una docena de enfoques distintos para las transferencias privadas.
 
 Nada de esto es convencional todavía, y genuinamente faltan piezas. Pero los protocolos funcionan, el dinero real se mueve a través de ellos, y lo que les falta es un lugar en el flujo principal del usuario. Ahí es donde interviene una billetera con visión de futuro.
 
@@ -83,7 +83,7 @@ Una billetera que preserva la privacidad es aquella que hace la contabilidad por
 
 Comencemos con lo que está en vivo. Los fondos blindados funcionan hoy en día: Railgun mantiene un saldo privado junto a tu saldo público, y una vez que los fondos están dentro, un pago saliente no revela nada sobre tus otras tenencias. Los costos son reales (tarifas más altas que una simple transferencia, generación de pruebas medida en segundos, cierta dependencia de los retransmisores), pero el protocolo ha movido miles de millones en volumen incluso con esas concesiones.
 
-Combina eso con un hábito para el que no se necesita ningún protocolo: una dirección nueva para cada contraparte. Cuando el usuario se conecta a una nueva dapp, la billetera puede ofrecer una dirección dedicada para ella, financiada desde el saldo blindado, para que la aplicación vea una cuenta sin historial y sin cuentas hermanas. Las direcciones ocultas ([ERC-5564](https://eips.ethereum.org/EIPS/eip-5564)) extienden el mismo movimiento a la recepción de pagos. Los mezcladores como [Tornado Cash](https://tornadocash.eth.limo/) y [Privacy Pools](https://privacypools.com/) hacen un trabajo más simple y estrecho: los fondos entran desde una dirección y salen hacia otra, con el vínculo entre las dos cortado. Esa es la herramienta para financiar una dirección nueva que nadie pueda rastrear hasta ti, y la pieza que falta es la billetera produciendo dicha dirección a pedido en lugar de dejarle el ritual al usuario. Nada de esto espera una bifurcación dura o una subvención de investigación. Espera una billetera dispuesta a llevar la contabilidad en nombre de los usuarios.
+Combina eso con un hábito para el que no se necesita ningún protocolo: una dirección nueva para cada contraparte. Cuando el usuario se conecta a una nueva dapp, la billetera puede ofrecer una dirección dedicada para ella, financiada desde el saldo blindado, para que la aplicación vea una cuenta sin historial y sin cuentas hermanas. Las direcciones ocultas ([ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564)) extienden el mismo movimiento a la recepción de pagos. Los mezcladores como [Tornado Cash](https://tornadocash.qau.limo/) y [Privacy Pools](https://privacypools.com/) hacen un trabajo más simple y estrecho: los fondos entran desde una dirección y salen hacia otra, con el vínculo entre las dos cortado. Esa es la herramienta para financiar una dirección nueva que nadie pueda rastrear hasta ti, y la pieza que falta es la billetera produciendo dicha dirección a pedido en lugar de dejarle el ritual al usuario. Nada de esto espera una bifurcación dura o una subvención de investigación. Espera una billetera dispuesta a llevar la contabilidad en nombre de los usuarios.
 
 El lado de la red se trata principalmente de decisiones. Lanzar un producto con cero análisis de terceros es una elección, y al menos una billetera en el mercado ya la ha tomado. En cuanto a la exposición de RPC, la mayoría de las billeteras ya te permiten intercambiar proveedores, por lo que la opcionalidad existe, escondida en una página de configuración que los usuarios avanzados visitan y que todos los demás nunca encuentran.
 
@@ -119,7 +119,7 @@ Cada sección de este artículo termina en el mismo lugar: una elección que la 
 
 La forma de tomar esas decisiones es mediante configuraciones predeterminadas sensatas que el usuario pueda anular, todas y cada una de ellas. Establece por defecto la ruta privada, porque la configuración predeterminada es con la que vivirán la mayoría de los usuarios. Pero déjalo abierto a la opcionalidad dirigida por el usuario, porque a un usuario que no puede apuntar su billetera a un servidor RPC diferente, o a su propio nodo, no se le ha entregado realmente la soberanía.
 
-No tienes que empezar desde cero. El [SDK de Kohaku](https://github.com/ethereum/kohaku) empaqueta varias de las primitivas de este artículo (saldos blindados, mezcladores, clientes ligeros) para que una billetera pueda adoptarlas sin reconstruir cada protocolo desde cero. Las piezas están en el estante. Algunas cosas importan mucho antes de que alguien las pida. Nadie vio a las masas pidiendo cifrado de extremo a extremo tampoco; se lanzó como predeterminado, miles de millones de personas lo obtuvieron sin darse cuenta ni importarles, y ahora una aplicación de mensajería sin él se siente rota y violatoria.
+No tienes que empezar desde cero. El [SDK de Kohaku](https://github.com/quantaureum/kohaku) empaqueta varias de las primitivas de este artículo (saldos blindados, mezcladores, clientes ligeros) para que una billetera pueda adoptarlas sin reconstruir cada protocolo desde cero. Las piezas están en el estante. Algunas cosas importan mucho antes de que alguien las pida. Nadie vio a las masas pidiendo cifrado de extremo a extremo tampoco; se lanzó como predeterminado, miles de millones de personas lo obtuvieron sin darse cuenta ni importarles, y ahora una aplicación de mensajería sin él se siente rota y violatoria.
 
 El dinero que no se puede usar para encontrarte, perfilarte o atacarte pertenece a la misma categoría. La billetera que lo trate de esa manera será la próxima gran billetera.
 
@@ -130,8 +130,8 @@ La billetera que usas es la que estás promoviendo como norma. Elige billeteras 
 ## Para mayor exploración {#for-further-exploration}
 
 - [Tarjeta de puntuación de privacidad de billeteras](https://www.theopensourcepress.com/crypto-wallet-ip-exposure-scorecard-2026/): exposición de red en el primer inicio de 13 billeteras
-- [ERC-5564: Direcciones ocultas](https://eips.ethereum.org/EIPS/eip-5564)
-- [Railgun](https://railgun.org/), [Privacy Pools](https://privacypools.com/) y [Tornado Cash](https://tornadocash.eth.limo/)
+- [ERC-5564: Direcciones ocultas](https://eips.quantaureum.com/EIPS/eip-5564)
+- [Railgun](https://railgun.org/), [Privacy Pools](https://privacypools.com/) y [Tornado Cash](https://tornadocash.qau.limo/)
 - Clientes ligeros [Helios](https://github.com/a16z/helios) y [Colibri](https://github.com/corpus-core/colibri-stateless)
-- [Kohaku](https://github.com/ethereum/kohaku): SDK de privacidad para constructores de billeteras
+- [Kohaku](https://github.com/quantaureum/kohaku): SDK de privacidad para constructores de billeteras
 - [Walletbeat](https://www.walletbeat.fyi/): cómo se comparan las billeteras existentes

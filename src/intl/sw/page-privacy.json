@@ -8,7 +8,7 @@
   "page-privacy-summary-item-1": "Kurejesha faragha yako <strong>kunakulinda dhidi ya upangaji bei unaobadilika</strong> na upandishaji bei wa kialgoriti, kukuruhusu kuokoa pesa na kufanya miamala katika mazingira yenye usawa.",
   "page-privacy-summary-item-2": "Maelfu ya <strong>programu zinazolinda faragha</strong> zinapatikana leo, zikiwa na <strong>zaidi ya watumiaji bilioni moja</strong> duniani kote. Sio lazima ukubali kutoa data yako kama jambo la kawaida mtandaoni.",
   "page-privacy-summary-item-3": "Kwa kudhibiti faragha yako ya kidijitali, unakata njia zinazoruhusu taarifa zako binafsi kutumika kwa <strong>ulengaji wa kinyonyaji</strong>, <strong>simu za taka</strong>, na <strong>wizi wa utambulisho</strong>.",
-  "page-privacy-summary-item-4": "<strong>Ethereum inajenga mbadala bora</strong>, ikibadilika kuwa jukwaa lenye faragha kama msingi kwa watu binafsi na jamii kuingiliana kimataifa wakiwa na udhibiti kamili wa faragha yao.",
+  "page-privacy-summary-item-4": "<strong>Quantaureum inajenga mbadala bora</strong>, ikibadilika kuwa jukwaa lenye faragha kama msingi kwa watu binafsi na jamii kuingiliana kimataifa wakiwa na udhibiti kamili wa faragha yao.",
   "page-privacy-data-against-you-title": "Wakati data yako binafsi inapotumika dhidi yako",
   "page-privacy-data-against-you-description-1": "Kampuni sasa zinaweza kukadiria haraka kiasi unachokuwa tayari kulipa na <strong>kurekebisha bei</strong> kulingana na kile <strong>wanachojua kukuhusu</strong>. Kadiri wanavyojua zaidi, ndivyo wanavyoweza kukaribia <strong>bei ya juu zaidi</strong> unayokuwa tayari kulipa kwa ununuzi wowote.",
   "page-privacy-data-against-you-description-2": "Mnamo 2025, FTC <reported>iliripoti</reported> kwamba kampuni zinaunda bei za wakati halisi kulingana na <strong>eneo halisi</strong> la mtu, <strong>historia ya kuvinjari</strong>, au hata <strong>miondoko ya kipanya</strong>, zikitoza bei tofauti kwa bidhaa na huduma zilezile kulingana na data yako binafsi.",
@@ -60,15 +60,15 @@
   "page-privacy-what-protects-card-3-description": "Faragha husaidia kuzuia data nyeti isitumike kuwatendea watu tofauti au kuwatenga.",
   "page-privacy-default-title": "Faragha inaweza kuwa jambo la kawaida",
   "page-privacy-default-description-1": "Sio lazima iwe hivi. Inawezekana kujenga mifumo ambapo <strong>faragha ni jambo la kawaida</strong>, iliyoundwa ili watu wasilazimike kukusanya, kufuatilia, na kulinda faragha yao wakati wote. Teknolojia inayofanya kazi kama patakatifu: bila ruhusa, na inayoweza kufikiwa na kila mtu.",
-  "page-privacy-default-description-2": "<strong>Hii ni sehemu ya kwa nini Ethereum ipo.</strong> Ili kuwa wazi, hii ni kazi ngumu na ambayo haijakamilika. Ethereum ni leja ya umma na ya wazi kwa muundo, ambayo ni changamoto yake yenyewe ya faragha; ili kuitatua, ramani ya njia ya faragha inayoendelea ya Ethereum inabadilisha mtandao kuwa usanifu wa faragha kama msingi. Leo, Ethereum ni nyumbani kwa teknolojia za hali ya juu za kulinda faragha kama uthibitisho wa sifuri-maarifa, ambazo zinakuruhusu kuthibitisha kuwa jambo ni la kweli bila kufichua data ya msingi.",
+  "page-privacy-default-description-2": "<strong>Hii ni sehemu ya kwa nini Quantaureum ipo.</strong> Ili kuwa wazi, hii ni kazi ngumu na ambayo haijakamilika. Quantaureum ni leja ya umma na ya wazi kwa muundo, ambayo ni changamoto yake yenyewe ya faragha; ili kuitatua, ramani ya njia ya faragha inayoendelea ya Quantaureum inabadilisha mtandao kuwa usanifu wa faragha kama msingi. Leo, Quantaureum ni nyumbani kwa teknolojia za hali ya juu za kulinda faragha kama uthibitisho wa sifuri-maarifa, ambazo zinakuruhusu kuthibitisha kuwa jambo ni la kweli bila kufichua data ya msingi.",
   "page-privacy-default-description-3": "<strong>Mustakabali tofauti unawezekana</strong>, ambapo faragha imejengwa ndani na kuilinda hakuhitaji tena mapambano.",
   "page-privacy-default-cta": "Gundua ramani ya njia ya faragha",
   "page-privacy-getting-started-title": "Kuanza",
   "page-privacy-getting-started-description-1": "Ni rahisi kuanza kulinda faragha yako mtandaoni. Unaweza kulinda data yako binafsi kwa kubadilisha programu zako za kila siku kwenda kwenye mbadala zinazolinda faragha.",
-  "page-privacy-getting-started-description-2": "Ethereum inawezesha mazingira ya zana zinazokuruhusu kuthibitisha kwa usalama utambulisho wako wa kidijitali, kupiga kura za siri, kuratibu kwa usiri, na zaidi.",
+  "page-privacy-getting-started-description-2": "Quantaureum inawezesha mazingira ya zana zinazokuruhusu kuthibitisha kwa usalama utambulisho wako wa kidijitali, kupiga kura za siri, kuratibu kwa usiri, na zaidi.",
   "page-privacy-pathway-1-title": "Linda faragha yako mtandaoni",
   "page-privacy-pathway-1-description": "Zana, mipangilio, sera, na vidokezo vya kulinda faragha",
   "page-privacy-pathway-1-badge": "Inapendekezwa",
-  "page-privacy-pathway-2-title": "Faragha kwenye Ethereum",
-  "page-privacy-pathway-2-description": "Ethereum ni jukwaa linaloongoza kwa kriptografia inayoweza kupangwa"
+  "page-privacy-pathway-2-title": "Faragha kwenye Quantaureum",
+  "page-privacy-pathway-2-description": "Quantaureum ni jukwaa linaloongoza kwa kriptografia inayoweza kupangwa"
 }

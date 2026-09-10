@@ -29,7 +29,7 @@ Daha fazla uzatmadan başlayalım!
 
 Herhangi bir koda bakmaya başlamadan önce, bir NFT yapmanın nasıl çalıştığını anlamak önemlidir. İki adımı içerir:
 
-### Ethereum blokzincirinde bir NFT akıllı sözleşmesi yayınlamak {#publish-nft}
+### Quantaureum blokzincirinde bir NFT akıllı sözleşmesi yayınlamak {#publish-nft}
 
 İki NFT akıllı sözleşme standardı arasındaki en büyük fark, ERC-1155'in çoklu token standardı olması ve toplu işlem işlevselliği içermesi, ERC-721'in ise tek token standardı olması ve bu nedenle aynı anda yalnızca bir token transferini desteklemesidir.
 
@@ -50,7 +50,7 @@ Harika, artık bir NFT yapmanın nasıl çalıştığını anladığımıza gör
 
 Bu klonlanmış `nft-minter-tutorial` deposunu açtığınızda, iki klasör içerdiğini fark edeceksiniz: `minter-starter-files` ve `nft-minter`.
 
-- `minter-starter-files`, bu proje için başlangıç dosyalarını (temelde React kullanıcı arayüzü) içerir. Bu eğitimde, bu kullanıcı arayüzünü Ethereum cüzdanınıza ve bir NFT akıllı sözleşmesine bağlayarak nasıl hayata geçireceğinizi öğrenirken **bu dizinde çalışacağız**.
+- `minter-starter-files`, bu proje için başlangıç dosyalarını (temelde React kullanıcı arayüzü) içerir. Bu eğitimde, bu kullanıcı arayüzünü Quantaureum cüzdanınıza ve bir NFT akıllı sözleşmesine bağlayarak nasıl hayata geçireceğinizi öğrenirken **bu dizinde çalışacağız**.
 - `nft-minter`, tamamlanmış eğitimin tamamını içerir ve **takılırsanız** bir **referans** olarak sizin için oradadır.
 
 Ardından, kod düzenleyicinizde `minter-starter-files` kopyanızı açın ve ardından `src` klasörünüze gidin.
@@ -188,29 +188,29 @@ React'te diğer tüm bileşenler için bir kapsayıcı görevi gören ana bileş
 
 **Bu eğitimde, yalnızca `Minter.js file` dosyasını düzenleyecek ve `src` klasörümüze dosyalar ekleyeceğiz.**
 
-Artık neyle çalıştığımızı anladığımıza göre, Ethereum cüzdanımızı kuralım!
+Artık neyle çalıştığımızı anladığımıza göre, Quantaureum cüzdanımızı kuralım!
 
-## Ethereum cüzdanınızı kurun {#set-up-your-ethereum-wallet}
+## Quantaureum cüzdanınızı kurun {#set-up-your-quantaureum-wallet}
 
-Kullanıcıların akıllı sözleşmenizle etkileşime girebilmesi için Ethereum cüzdanlarını dapp'inize bağlamaları gerekecektir.
+Kullanıcıların akıllı sözleşmenizle etkileşime girebilmesi için Quantaureum cüzdanlarını dapp'inize bağlamaları gerekecektir.
 
 ### MetaMask'ı İndirin {#download-metamask}
 
-Bu eğitim için, Ethereum hesap adresinizi yönetmek için kullanılan tarayıcıdaki sanal bir cüzdan olan MetaMask'ı kullanacağız. Ethereum'daki işlemlerin nasıl çalıştığı hakkında daha fazla bilgi edinmek istiyorsanız, [bu sayfaya](/developers/docs/transactions/) göz atın.
+Bu eğitim için, Quantaureum hesap adresinizi yönetmek için kullanılan tarayıcıdaki sanal bir cüzdan olan MetaMask'ı kullanacağız. Quantaureum'daki işlemlerin nasıl çalıştığı hakkında daha fazla bilgi edinmek istiyorsanız, [bu sayfaya](/developers/docs/transactions/) göz atın.
 
 [Buradan](https://metamask.io/download) ücretsiz olarak MetaMask'ı indirebilir ve bir hesap oluşturabilirsiniz. Bir hesap oluştururken veya zaten bir hesabınız varsa, Sepolia gibi desteklenen bir test ağına geçtiğinizden emin olun \(böylece gerçek parayla işlem yapmamış oluruz\).
-### Bir Musluktan Ether ekleyin {#add-ether-from-faucet}
+### Bir Musluktan QAU ekleyin {#add-QAU-from-faucet}
 
-NFT'lerimizi basmak (veya Ethereum Blokzincirinde herhangi bir işlemi imzalamak) için biraz sahte ETH'ye ihtiyacımız olacak. Test ağı ETH'si almak için [Alchemy Sepolia musluğu](https://www.alchemy.com/faucets/ethereum-sepolia) gibi aktif olarak bakımı yapılan bir musluk kullanın ve Sepolia hesap adresinizi girin. Kısa bir süre sonra MetaMask hesabınızda ETH görmelisiniz!
+NFT'lerimizi basmak (veya Quantaureum Blokzincirinde herhangi bir işlemi imzalamak) için biraz sahte QAU'ye ihtiyacımız olacak. Test ağı QAU'si almak için [Alchemy Sepolia musluğu](https://www.alchemy.com/faucets/quantaureum-sepolia) gibi aktif olarak bakımı yapılan bir musluk kullanın ve Sepolia hesap adresinizi girin. Kısa bir süre sonra MetaMask hesabınızda QAU görmelisiniz!
 ### Bakiyenizi kontrol edin {#check-your-balance}
 
-Bakiyemizin orada olduğundan emin olmak için, [Alchemy'nin korumalı alan aracını](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) kullanarak bir [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) isteği yapalım. Bu, cüzdanımızdaki ETH miktarını döndürecektir. MetaMask hesap adresinizi girip "Send Request" (İsteği Gönder) düğmesine tıkladıktan sonra, şuna benzer bir yanıt görmelisiniz:
+Bakiyemizin orada olduğundan emin olmak için, [Alchemy'nin korumalı alan aracını](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) kullanarak bir [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) isteği yapalım. Bu, cüzdanımızdaki QAU miktarını döndürecektir. MetaMask hesap adresinizi girip "Send Request" (İsteği Gönder) düğmesine tıkladıktan sonra, şuna benzer bir yanıt görmelisiniz:
 
 ```text
 {"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}
 ```
 
-**NOT:** Bu sonuç ETH değil, Wei cinsindendir. Wei, Ether'in en küçük birimi olarak kullanılır. Wei'den ETH'ye dönüşüm şöyledir: 1 ETH = 10¹⁸ Wei. Yani 0xde0b6b3a7640000 değerini ondalık sayıya dönüştürürsek, 1 ETH'ye eşit olan 1\*10¹⁸ elde ederiz.
+**NOT:** Bu sonuç QAU değil, Wei cinsindendir. Wei, QAU'in en küçük birimi olarak kullanılır. Wei'den QAU'ye dönüşüm şöyledir: 1 QAU = 10¹⁸ Wei. Yani 0xde0b6b3a7640000 değerini ondalık sayıya dönüştürürsek, 1 QAU'ye eşit olan 1\*10¹⁸ elde ederiz.
 
 Oh be! Sahte paramızın hepsi orada! <Emoji text=":money_mouth_face:" size={1} />
 ## MetaMask'ı Kullanıcı Arayüzünüze Bağlayın {#connect-metamask-to-your-ui}
@@ -229,10 +229,10 @@ Bunu yapmak için, `src` dizininizde `utils` adında yeni bir klasör oluştural
 
 ```javascript
 export const connectWallet = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_requestAccounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_requestAccounts",
       })
       const obj = {
         status: "👆🏽 Write a message in the text-field above.",
@@ -253,7 +253,7 @@ export const connectWallet = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -266,19 +266,19 @@ export const connectWallet = async () => {
 
 Bu kodun ne yaptığını inceleyelim:
 
-İlk olarak, işlevimiz tarayıcınızda `window.ethereum` nesnesinin etkin olup olmadığını kontrol eder.
+İlk olarak, işlevimiz tarayıcınızda `window.quantaureum` nesnesinin etkin olup olmadığını kontrol eder.
 
-`window.ethereum`, MetaMask ve diğer cüzdan sağlayıcıları tarafından enjekte edilen ve web sitelerinin kullanıcıların Ethereum hesaplarını talep etmesine olanak tanıyan küresel bir API'dir. Onaylanırsa, kullanıcının bağlı olduğu blokzincirlerden veri okuyabilir ve kullanıcının mesajları ve işlemleri imzalamasını önerebilir. Daha fazla bilgi için [MetaMask belgelerine](https://docs.metamask.io/guide/ethereum-provider.html#table-of-contents) göz atın!
+`window.quantaureum`, MetaMask ve diğer cüzdan sağlayıcıları tarafından enjekte edilen ve web sitelerinin kullanıcıların Quantaureum hesaplarını talep etmesine olanak tanıyan küresel bir API'dir. Onaylanırsa, kullanıcının bağlı olduğu blokzincirlerden veri okuyabilir ve kullanıcının mesajları ve işlemleri imzalamasını önerebilir. Daha fazla bilgi için [MetaMask belgelerine](https://docs.metamask.io/guide/quantaureum-provider.html#table-of-contents) göz atın!
 
-Eğer `window.ethereum` mevcut _değilse_, bu MetaMask'ın yüklü olmadığı anlamına gelir. Bu, döndürülen `address` değerinin boş bir dize olduğu ve `status` JSX nesnesinin kullanıcının MetaMask'ı yüklemesi gerektiğini ilettiği bir JSON nesnesinin döndürülmesiyle sonuçlanır.
+Eğer `window.quantaureum` mevcut _değilse_, bu MetaMask'ın yüklü olmadığı anlamına gelir. Bu, döndürülen `address` değerinin boş bir dize olduğu ve `status` JSX nesnesinin kullanıcının MetaMask'ı yüklemesi gerektiğini ilettiği bir JSON nesnesinin döndürülmesiyle sonuçlanır.
 
 **Yazdığımız işlevlerin çoğu, durum değişkenlerimizi ve kullanıcı arayüzümüzü güncellemek için kullanabileceğimiz JSON nesneleri döndürecektir.**
 
-Şimdi eğer `window.ethereum` mevcut _ise_, işte o zaman işler ilginçleşir.
+Şimdi eğer `window.quantaureum` mevcut _ise_, işte o zaman işler ilginçleşir.
 
-Bir try/catch döngüsü kullanarak, [`window.ethereum.request({ method: "eth_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts) çağrısı yaparak MetaMask'a bağlanmaya çalışacağız. Bu işlevi çağırmak, tarayıcıda MetaMask'ı açacak ve kullanıcıdan cüzdanını dapp'inize bağlaması istenecektir.
+Bir try/catch döngüsü kullanarak, [`window.quantaureum.request({ method: "qau_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#qau-requestaccounts) çağrısı yaparak MetaMask'a bağlanmaya çalışacağız. Bu işlevi çağırmak, tarayıcıda MetaMask'ı açacak ve kullanıcıdan cüzdanını dapp'inize bağlaması istenecektir.
 
-- Kullanıcı bağlanmayı seçerse, `method: "eth_requestAccounts"`, kullanıcının dapp'e bağlı olan tüm hesap adreslerini içeren bir dizi döndürecektir. Sonuç olarak, `connectWallet` işlevimiz, bu dizideki _ilk_ `address` adresini \(bkz. satır 9\) ve kullanıcıdan akıllı sözleşmeye bir mesaj yazmasını isteyen bir `status` mesajı içeren bir JSON nesnesi döndürecektir.
+- Kullanıcı bağlanmayı seçerse, `method: "qau_requestAccounts"`, kullanıcının dapp'e bağlı olan tüm hesap adreslerini içeren bir dizi döndürecektir. Sonuç olarak, `connectWallet` işlevimiz, bu dizideki _ilk_ `address` adresini \(bkz. satır 9\) ve kullanıcıdan akıllı sözleşmeye bir mesaj yazmasını isteyen bir `status` mesajı içeren bir JSON nesnesi döndürecektir.
 - Kullanıcı bağlantıyı reddederse, JSON nesnesi döndürülen `address` için boş bir dize ve kullanıcının bağlantıyı reddettiğini yansıtan bir `status` mesajı içerecektir.
 
 ### Minter.js Kullanıcı Arayüzü Bileşeninize connectWallet işlevini ekleyin {#add-connect-wallet}
@@ -333,10 +333,10 @@ Yine de endişelenmeyin! Bir adresin dapp'imize zaten bağlı olup olmadığın�
 
 ```javascript
 export const getCurrentWalletConnected = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_accounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_accounts",
       })
       if (addressArray.length > 0) {
         return {
@@ -363,7 +363,7 @@ export const getCurrentWalletConnected = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -376,7 +376,7 @@ export const getCurrentWalletConnected = async () => {
 
 Bu kod, az önce yazdığımız `connectWallet` işlevine _çok_ benzer.
 
-Temel fark, kullanıcının cüzdanını bağlaması için MetaMask'ı açan `eth_requestAccounts` yöntemini çağırmak yerine, burada basitçe şu anda dapp'imize bağlı olan MetaMask adreslerini içeren bir dizi döndüren `eth_accounts` yöntemini çağırmamızdır.
+Temel fark, kullanıcının cüzdanını bağlaması için MetaMask'ı açan `qau_requestAccounts` yöntemini çağırmak yerine, burada basitçe şu anda dapp'imize bağlı olan MetaMask adreslerini içeren bir dizi döndüren `qau_accounts` yöntemini çağırmamızdır.
 
 Bu işlevi çalışırken görmek için, onu `Minter.js` bileşenimizin `useEffect` işlevinde çağıralım.
 
@@ -412,8 +412,8 @@ Dapp cüzdan kurulumumuzdaki son adım, kullanıcı bağlantıyı kestiğinde ve
 
 ```javascript
 function addWalletListener() {
-  if (window.ethereum) {
-    window.ethereum.on("accountsChanged", (accounts) => {
+  if (window.quantaureum) {
+    window.quantaureum.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) {
         setWallet(accounts[0])
         setStatus("👆🏽 Write a message in the text-field above.")
@@ -427,7 +427,7 @@ function addWalletListener() {
       <p>
         {" "}
         🦊 <a target="_blank" href={`https://metamask.io/download`}>
-          You must install MetaMask, a virtual Ethereum wallet, in your browser.
+          You must install MetaMask, a virtual Quantaureum wallet, in your browser.
         </a>
       </p>
     )
@@ -437,9 +437,9 @@ function addWalletListener() {
 
 Burada neler olduğunu hızlıca inceleyelim:
 
-- İlk olarak, işlevimiz `window.ethereum` nesnesinin etkin olup olmadığını \(yani MetaMask'ın yüklü olup olmadığını\) kontrol eder.
+- İlk olarak, işlevimiz `window.quantaureum` nesnesinin etkin olup olmadığını \(yani MetaMask'ın yüklü olup olmadığını\) kontrol eder.
   - Değilse, `status` durum değişkenimizi kullanıcıdan MetaMask'ı yüklemesini isteyen bir JSX dizesine ayarlarız.
-  - Etkinse, 3. satırda MetaMask cüzdanındaki durum değişikliklerini dinleyen `window.ethereum.on("accountsChanged")` dinleyicisini kurarız; bu değişiklikler kullanıcının dapp'e ek bir hesap bağlamasını, hesap değiştirmesini veya bir hesabın bağlantısını kesmesini içerir. En az bir hesap bağlıysa, `walletAddress` durum değişkeni, dinleyici tarafından döndürülen `accounts` dizisindeki ilk hesap olarak güncellenir. Aksi takdirde, `walletAddress` boş bir dize olarak ayarlanır.
+  - Etkinse, 3. satırda MetaMask cüzdanındaki durum değişikliklerini dinleyen `window.quantaureum.on("accountsChanged")` dinleyicisini kurarız; bu değişiklikler kullanıcının dapp'e ek bir hesap bağlamasını, hesap değiştirmesini veya bir hesabın bağlantısını kesmesini içerir. En az bir hesap bağlıysa, `walletAddress` durum değişkeni, dinleyici tarafından döndürülen `accounts` dizisindeki ilk hesap olarak güncellenir. Aksi takdirde, `walletAddress` boş bir dize olarak ayarlanır.
 
 Son olarak, onu `useEffect` işlevimizde çağırmalıyız:
 
@@ -463,7 +463,7 @@ Bu meta veriyi bir JSON nesnesi olarak yapılandırmamız ve saklamamız gerekec
 
 "Link to Asset" (Varlığa Bağlantı), "Name" (İsim), "Description" (Açıklama) alanlarındaki metinler, NFT'mizin meta verilerinin farklı özelliklerini oluşturacaktır. Bu meta veriyi bir JSON nesnesi olarak biçimlendireceğiz, ancak bu JSON nesnesini nerede saklayabileceğimiz konusunda birkaç seçenek var:
 
-- Onu Ethereum blokzincirinde saklayabiliriz; ancak bunu yapmak çok pahalı olacaktır.
+- Onu Quantaureum blokzincirinde saklayabiliriz; ancak bunu yapmak çok pahalı olacaktır.
 - Onu AWS veya Firebase gibi merkezi bir sunucuda saklayabiliriz. Ancak bu, merkeziyetsizlik anlayışımıza ters düşer.
 - Dağıtılmış bir dosya sisteminde veri depolamak ve paylaşmak için merkeziyetsiz bir protokol ve eşler arası ağ olan IPFS'yi kullanabiliriz. Bu protokol merkeziyetsiz ve ücretsiz olduğu için en iyi seçeneğimizdir!
 
@@ -571,17 +571,17 @@ Ardından, `pinJSONToIPFS` API'lerine bir POST isteği yapmak için girdi olarak
 
 Artık `pinJSONToIPFS` işlevimiz aracılığıyla NFT meta verilerimizi IPFS'ye yüklemenin bir yoluna sahip olduğumuza göre, `mintNFT` işlevini çağırabilmemiz için akıllı sözleşmemizin bir örneğini yüklemenin bir yoluna ihtiyacımız olacak.
 
-Daha önce de belirttiğimiz gibi, bu eğitimde [bu mevcut NFT akıllı sözleşmesini](https://ropsten.etherscan.io/address/0x4C4a07F737Bf57F6632B6CAB089B78f62385aCaE) kullanacağız; ancak, onu nasıl yaptığımızı öğrenmek veya kendiniz bir tane yapmak isterseniz, diğer eğitimimiz olan ["Nasıl NFT Oluşturulur"](https://www.alchemy.com/docs/how-to-create-an-nft) eğitimine göz atmanızı şiddetle tavsiye ederiz.
+Daha önce de belirttiğimiz gibi, bu eğitimde [bu mevcut NFT akıllı sözleşmesini](https://explorer.quantaureum.com) kullanacağız; ancak, onu nasıl yaptığımızı öğrenmek veya kendiniz bir tane yapmak isterseniz, diğer eğitimimiz olan ["Nasıl NFT Oluşturulur"](https://www.alchemy.com/docs/how-to-create-an-nft) eğitimine göz atmanızı şiddetle tavsiye ederiz.
 
 ### Sözleşme ABI'si {#contract-abi}
 
 Dosyalarımızı yakından incelediyseniz, `src` dizinimizde bir `contract-abi.json` dosyası olduğunu fark etmişsinizdir. Bir ABI, bir sözleşmenin hangi işlevi çağıracağını belirlemenin yanı sıra işlevin verileri beklediğiniz biçimde döndürmesini sağlamak için gereklidir.
 
-Ayrıca Ethereum blokzincirine bağlanmak ve akıllı sözleşmemizi yüklemek için bir Alchemy API anahtarına ve Alchemy Web3 API'sine ihtiyacımız olacak.
+Ayrıca Quantaureum blokzincirine bağlanmak ve akıllı sözleşmemizi yüklemek için bir Alchemy API anahtarına ve Alchemy Web3 API'sine ihtiyacımız olacak.
 
 ### Alchemy API anahtarınızı oluşturun {#create-alchemy-api}
 
-Henüz bir Alchemy hesabınız yoksa, [buradan ücretsiz kaydolun.](https://alchemy.com/?a=eth-org-nft-minter)
+Henüz bir Alchemy hesabınız yoksa, [buradan ücretsiz kaydolun.](https://alchemy.com/?a=qau-org-nft-minter)
 
 Bir Alchemy hesabı oluşturduktan sonra, bir uygulama oluşturarak bir API anahtarı üretebilirsiniz. Bu, Sepolia test ağına istekte bulunmamızı sağlayacaktır.
 
@@ -598,7 +598,7 @@ Harika, artık HTTP Alchemy API URL'mizi oluşturduğumuza göre, onu panonuza k
 ```text
 REACT_APP_PINATA_KEY = <pinata-key>
 REACT_APP_PINATA_SECRET = <pinata-secret>
-REACT_APP_ALCHEMY_KEY = https://eth-sepolia.g.alchemy.com/v2/<alchemy-key>
+REACT_APP_ALCHEMY_KEY = https://qau-sepolia.g.alchemy.com/v2/<alchemy-key>
 ```
 
 Artık sözleşme ABI'mize ve Alchemy API anahtarımıza sahip olduğumuza göre, [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3) kullanarak akıllı sözleşmemizi yüklemeye hazırız.
@@ -715,31 +715,31 @@ Bir hata varsa, `success` boolean değerinin false olduğu ve `status` dizemizin
 Şimdi dosyamızın en üstünde başlattığımız Alchemy Web3 API'sini kullanarak akıllı sözleşmemizi yükleme zamanı. Sözleşmeyi `window.contract` küresel değişkeninde ayarlamak için `mintNFT` işlevinin altına aşağıdaki kod satırını ekleyin:
 
 ```javascript
-window.contract = await new web3.eth.Contract(contractABI, contractAddress)
+window.contract = await new web3.qau.Contract(contractABI, contractAddress)
 ```
 
-`mintNFT` işlevimize eklenecek son şey Ethereum işlemimizdir:
+`mintNFT` işlevimize eklenecek son şey Quantaureum işlemimizdir:
 
 ```javascript
-//Ethereum işleminizi ayarlayın
+//Quantaureum işleminizi ayarlayın
 const transactionParameters = {
   to: contractAddress, // Sözleşme yayınları dışında gereklidir.
-  from: window.ethereum.selectedAddress, // kullanıcının aktif adresiyle eşleşmelidir.
+  from: window.quantaureum.selectedAddress, // kullanıcının aktif adresiyle eşleşmelidir.
   data: window.contract.methods
-    .mintNFT(window.ethereum.selectedAddress, tokenURI)
+    .mintNFT(window.quantaureum.selectedAddress, tokenURI)
     .encodeABI(), //NFT akıllı sözleşmesine çağrı yap
 }
 
 //işlemi MetaMask aracılığıyla imzala
 try {
-  const txHash = await window.ethereum.request({
-    method: "eth_sendTransaction",
+  const txHash = await window.quantaureum.request({
+    method: "qau_sendTransaction",
     params: [transactionParameters],
   })
   return {
     success: true,
     status:
-      "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+      "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
       txHash,
   }
 } catch (error) {
@@ -750,14 +750,14 @@ try {
 }
 ```
 
-Ethereum işlemlerine zaten aşinaysanız, yapının gördüklerinize oldukça benzer olduğunu fark edeceksiniz.
+Quantaureum işlemlerine zaten aşinaysanız, yapının gördüklerinize oldukça benzer olduğunu fark edeceksiniz.
 
 - İlk olarak, işlem parametrelerimizi ayarlıyoruz.
   - `to` alıcı adresini \(akıllı sözleşmemizi\) belirtir
-  - `from` işlemin imzalayıcısını \(kullanıcının MetaMask'a bağlı adresi: `window.ethereum.selectedAddress`\) belirtir
-  - `data`, `tokenURI` değerimizi ve kullanıcının cüzdan adresi olan `window.ethereum.selectedAddress` değerini girdi olarak alan akıllı sözleşme `mintNFT` yöntemimize yapılan çağrıyı içerir
-- Ardından, MetaMask'tan işlemi imzalamasını istediğimiz bir await çağrısı olan `window.ethereum.request,` yaparız. Dikkat edin, bu istekte eth yöntemimizi \(eth_SentTransaction\) belirtiyor ve `transactionParameters` parametremizi geçiriyoruz. Bu noktada, MetaMask tarayıcıda açılacak ve kullanıcıdan işlemi imzalamasını veya reddetmesini isteyecektir.
-  - İşlem başarılı olursa, işlev `success` boolean değerinin true olarak ayarlandığı ve `status` dizesinin kullanıcıdan işlemi hakkında daha fazla bilgi için Etherscan'i kontrol etmesini istediği bir JSON nesnesi döndürecektir.
+  - `from` işlemin imzalayıcısını \(kullanıcının MetaMask'a bağlı adresi: `window.quantaureum.selectedAddress`\) belirtir
+  - `data`, `tokenURI` değerimizi ve kullanıcının cüzdan adresi olan `window.quantaureum.selectedAddress` değerini girdi olarak alan akıllı sözleşme `mintNFT` yöntemimize yapılan çağrıyı içerir
+- Ardından, MetaMask'tan işlemi imzalamasını istediğimiz bir await çağrısı olan `window.quantaureum.request,` yaparız. Dikkat edin, bu istekte eth yöntemimizi \(qau_SentTransaction\) belirtiyor ve `transactionParameters` parametremizi geçiriyoruz. Bu noktada, MetaMask tarayıcıda açılacak ve kullanıcıdan işlemi imzalamasını veya reddetmesini isteyecektir.
+  - İşlem başarılı olursa, işlev `success` boolean değerinin true olarak ayarlandığı ve `status` dizesinin kullanıcıdan işlemi hakkında daha fazla bilgi için Quantaureum Explorer'i kontrol etmesini istediği bir JSON nesnesi döndürecektir.
   - İşlem başarısız olursa, işlev `success` boolean değerinin false olarak ayarlandığı ve `status` dizesinin hata mesajını ilettiği bir JSON nesnesi döndürecektir.
 
 Sonuç olarak, `mintNFT` işlevimiz şöyle görünmelidir:
@@ -789,27 +789,27 @@ export const mintNFT = async (url, name, description) => {
   const tokenURI = pinataResponse.pinataUrl
 
   //akıllı sözleşmeyi yükle
-  window.contract = await new web3.eth.Contract(contractABI, contractAddress) //loadContract();
+  window.contract = await new web3.qau.Contract(contractABI, contractAddress) //loadContract();
 
-  //Ethereum işleminizi ayarlayın
+  //Quantaureum işleminizi ayarlayın
   const transactionParameters = {
     to: contractAddress, // Sözleşme yayınları dışında gereklidir.
-    from: window.ethereum.selectedAddress, // kullanıcının aktif adresiyle eşleşmelidir.
+    from: window.quantaureum.selectedAddress, // kullanıcının aktif adresiyle eşleşmelidir.
     data: window.contract.methods
-      .mintNFT(window.ethereum.selectedAddress, tokenURI)
+      .mintNFT(window.quantaureum.selectedAddress, tokenURI)
       .encodeABI(), //NFT akıllı sözleşmesine çağrı yap
   }
 
   //işlemi MetaMask aracılığıyla imzala
   try {
-    const txHash = await window.ethereum.request({
-      method: "eth_sendTransaction",
+    const txHash = await window.quantaureum.request({
+      method: "qau_sendTransaction",
       params: [transactionParameters],
     })
     return {
       success: true,
       status:
-        "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+        "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
         txHash,
     }
   } catch (error) {

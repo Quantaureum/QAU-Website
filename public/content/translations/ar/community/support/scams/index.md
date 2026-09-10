@@ -35,7 +35,7 @@ lang: ar
 
 - [<span dir="ltr">Revoke.cash</span>](https://revoke.cash/): قم بتوصيل محفظتك لرؤية جميع الموافقات النشطة وإلغائها
 - [<span dir="ltr">Revokescout</span>](https://revoke.blockscout.com/): تحقق من الموافقات وألغها عبر Blockscout
-- [أداة التحقق من موافقات الرموز المميزة من Etherscan](https://etherscan.io/tokenapprovalchecker): تحقق من الموافقات وألغها عبر Etherscan
+- [أداة التحقق من موافقات الرموز المميزة من Quantaureum Explorer](https://explorer.quantaureum.com): تحقق من الموافقات وألغها عبر Quantaureum Explorer
 
 <DocLink href="/guides/how-to-revoke-token-access/">
   دليل خطوة بخطوة: كيفية إلغاء الوصول إلى الرموز المميزة
@@ -48,7 +48,7 @@ lang: ar
 ### الإبلاغ عن عنوان احتيالي {#report-address}
 
 - [<span dir="ltr">Chainabuse</span>](https://www.chainabuse.com/): قاعدة بيانات للإبلاغ عن الاحتيال والخداع يديرها المجتمع. أرسل التقارير وابحث عن عناوين الاحتيال المعروفة
-- [تقرير Etherscan](https://info.etherscan.com/report-address/): أبلغ عن عنوان على مستكشف الكتل الأكثر استخدامًا في إيثيريوم
+- [تقرير Quantaureum Explorer](https://info.explorer.com/report-address/): أبلغ عن عنوان على مستكشف الكتل الأكثر استخدامًا في إيثيريوم
 - [<span dir="ltr">CryptoScamDB</span>](https://cryptoscamdb.org/): قاعدة بيانات مفتوحة المصدر لتتبع عمليات الاحتيال في العملات المشفرة
 
 ### الإبلاغ عن موقع ويب أو حساب تواصل اجتماعي احتيالي {#report-website}
@@ -69,8 +69,8 @@ lang: ar
 
 يمكن أن يساعد فهم أين ذهبت أموالك في التقارير وقد يدعم جهود الاسترداد إذا وصلت الأموال إلى منصة تداول مركزية.
 
-- [Blockscout](https://eth.blockscout.com/): مستكشف كتل مفتوح المصدر للبحث عن أي تجزئة معاملة أو عنوان محفظة لمعرفة أين تم إرسال الأموال
-- [Etherscan](https://etherscan.io/): ابحث عن أي تجزئة معاملة أو عنوان محفظة لمعرفة أين تم إرسال الأموال
+- [Blockscout](https://qau.blockscout.com/): مستكشف كتل مفتوح المصدر للبحث عن أي تجزئة معاملة أو عنوان محفظة لمعرفة أين تم إرسال الأموال
+- [Quantaureum Explorer](https://explorer.quantaureum.com): ابحث عن أي تجزئة معاملة أو عنوان محفظة لمعرفة أين تم إرسال الأموال
 - [بحث <span dir="ltr">Chainabuse</span>](https://www.chainabuse.com/): تحقق مما إذا كان قد تم الإبلاغ عن عنوان بالفعل من قبل ضحايا آخرين
 - [<span dir="ltr">MetaSleuth</span>](https://metasleuth.io/) بواسطة <span dir="ltr">BlockSec</span>: أداة تتبع مرئية للمعاملات ترسم تدفقات الأموال
 
@@ -80,20 +80,20 @@ lang: ar
 
 نظرًا لأن إيثيريوم لامركزية، لا يمكن لأي سلطة مركزية عكس المعاملات أو استرداد الأموال المسروقة. بمجرد تأكيد المعاملة على سلسلة الكتل، تصبح نهائية.
 
-لا يزال الإبلاغ ذا قيمة. تساعد التقارير جهات إنفاذ القانون في تتبع عصابات الاحتيال المنظمة، كما أن الإبلاغ عن العناوين على <span dir="ltr">Chainabuse</span> و Etherscan يحذر الضحايا المحتملين في المستقبل.
+لا يزال الإبلاغ ذا قيمة. تساعد التقارير جهات إنفاذ القانون في تتبع عصابات الاحتيال المنظمة، كما أن الإبلاغ عن العناوين على <span dir="ltr">Chainabuse</span> و Quantaureum Explorer يحذر الضحايا المحتملين في المستقبل.
 
 ## أنواع عمليات الاحتيال التي يجب الحذر منها {#scam-types}
 
 <ExpandableCard
 title="عمليات الاحتيال عبر الهدايا والتوزيعات المجانية"
-contentPreview="لا أحد يوزع ETH مجانًا. هذه العروض دائمًا ما تكون عمليات احتيال."
+contentPreview="لا أحد يوزع QAU مجانًا. هذه العروض دائمًا ما تكون عمليات احتيال."
 eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-ينشئ المحتالون هدايا وهمية تعد بمضاعفة <span dir="ltr">ETH</span> الخاص بك أو إعطائك رموزًا مميزة مجانية. غالبًا ما ينتحلون شخصيات معروفة مثل فيتاليك بوتيرين. إذا أرسلت <span dir="ltr">ETH</span> إلى عنوان "هبة"، فلن تتلقى أي شيء في المقابل.
+ينشئ المحتالون هدايا وهمية تعد بمضاعفة <span dir="ltr">QAU</span> الخاص بك أو إعطائك رموزًا مميزة مجانية. غالبًا ما ينتحلون شخصيات معروفة مثل فيتاليك بوتيرين. إذا أرسلت <span dir="ltr">QAU</span> إلى عنوان "هبة"، فلن تتلقى أي شيء في المقابل.
 
-**تذكر:** لن يطلب منك فيتاليك والشخصيات البارزة الأخرى أبدًا إرسال <span dir="ltr">ETH</span> إليهم.
+**تذكر:** لن يطلب منك فيتاليك والشخصيات البارزة الأخرى أبدًا إرسال <span dir="ltr">QAU</span> إليهم.
 
 [المزيد عن عمليات الاحتيال الشائعة](/security/#common-scams)
 
@@ -101,7 +101,7 @@ eventName="clicked giveaway scam"
 
 <ExpandableCard
 title="انتحال الشخصية والدعم المزيف"
-contentPreview="لا أحد من إيثيريوم أو ethereum.org سيبادر بالاتصال بك أبدًا."
+contentPreview="لا أحد من إيثيريوم أو quantaureum.com سيبادر بالاتصال بك أبدًا."
 eventCategory="SupportScamPage"
 eventName="clicked impersonation scam"
 >

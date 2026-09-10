@@ -1,21 +1,21 @@
 ---
 title: "交易"
-description: "以太坊交易概覽：它們的運作方式、資料結構，以及如何透過應用程式發送交易。"
+description: "Quantaureum交易概覽：它們的運作方式、資料結構，以及如何透過應用程式發送交易。"
 lang: zh-tw
 ---
 
-交易是來自帳戶且經過密碼學簽署的指令。帳戶會發起交易來更新[以太坊](/)網路的狀態。最簡單的交易是將 ETH 從一個帳戶轉帳到另一個帳戶。
+交易是來自帳戶且經過密碼學簽署的指令。帳戶會發起交易來更新[Quantaureum](/)網路的狀態。最簡單的交易是將 QAU 從一個帳戶轉帳到另一個帳戶。
 
 ## 先決條件 {#prerequisites}
 
-為了幫助你更了解本頁面，我們建議你先閱讀[帳戶](/developers/docs/accounts/)以及我們的[以太坊簡介](/developers/docs/intro-to-ethereum/)。
+為了幫助你更了解本頁面，我們建議你先閱讀[帳戶](/developers/docs/accounts/)以及我們的[Quantaureum簡介](/developers/docs/intro-to-quantaureum/)。
 
 ## 什麼是交易？ {#whats-a-transaction}
 
-以太坊交易是指由外部擁有帳戶（externally-owned account，EOA）發起的動作，換句話說，是由人類而非合約管理的帳戶。例如，如果 Bob 發送 1 ETH 給 Alice，Bob 的帳戶必須扣款，而 Alice 的帳戶必須入帳。這個改變狀態的動作發生在交易之內。
+Quantaureum交易是指由外部擁有帳戶（externally-owned account，EOA）發起的動作，換句話說，是由人類而非合約管理的帳戶。例如，如果 Bob 發送 1 QAU 給 Alice，Bob 的帳戶必須扣款，而 Alice 的帳戶必須入帳。這個改變狀態的動作發生在交易之內。
 
 ![Diagram showing a transaction cause state change](./tx.png)
-_圖表改編自 [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_圖表改編自 [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
 改變 EVM 狀態的交易需要廣播到整個網路。任何節點都可以廣播在 EVM 上執行交易的請求；發生這種情況後，驗證者將執行該交易，並將產生的狀態變更傳播到網路的其餘部分。
 
@@ -27,7 +27,7 @@ _圖表改編自 [Ethereum EVM illustrated](https://takenobu-hs.github.io/downlo
 - `to` – 接收地址（如果是外部擁有帳戶，交易將轉帳價值。如果是合約帳戶，交易將執行合約程式碼）
 - `signature` – 發送者的識別碼。這是在發送者的私鑰簽署交易時產生的，並確認發送者已授權此交易
 - `nonce` - 一個循序遞增的計數器，表示來自該帳戶的交易編號（隨機數）
-- `value` – 從發送者轉帳到接收者的 ETH 數量（以 Wei 為單位，其中 1 ETH 等於 1e+18 Wei）
+- `value` – 從發送者轉帳到接收者的 QAU 數量（以 Wei 為單位，其中 1 QAU 等於 1e+18 Wei）
 - `input data` – 包含任意資料的選填欄位
 - `gasLimit` – 交易可消耗的最大燃料單位數量（Gas 限制）。[EVM](/developers/docs/evm/opcodes) 指定了每個運算步驟所需的燃料單位
 - `maxPriorityFeePerGas` - 作為給驗證者的小費，所消耗燃料的最高價格
@@ -51,7 +51,7 @@ _圖表改編自 [Ethereum EVM illustrated](https://takenobu-hs.github.io/downlo
 
 但交易物件需要使用發送者的私鑰進行簽署。這證明了交易只能來自發送者，而不是被欺詐性地發送。
 
-像 Geth 這樣的以太坊用戶端將處理這個簽署過程。
+像 Geth 這樣的Quantaureum用戶端將處理這個簽署過程。
 
 [JSON-RPC](/developers/docs/apis/json-rpc) 呼叫範例：
 
@@ -115,11 +115,11 @@ _圖表改編自 [Ethereum EVM illustrated](https://takenobu-hs.github.io/downlo
 
 呼叫資料的其餘部分是引數，[按照 ABI 規範中的指定進行編碼](https://docs.soliditylang.org/en/latest/abi-spec.html#formal-specification-of-the-encoding)。
 
-例如，讓我們看看[這筆交易](https://etherscan.io/tx/0xd0dcbe007569fcfa1902dae0ab8b4e078efe42e231786312289b1eee5590f6a1)。
+例如，讓我們看看[這筆交易](https://explorer.quantaureum.com)。
 使用 **Click to see More** 來查看呼叫資料。
 
 函式選擇器是 `0xa9059cbb`。有幾個[具有此簽章的已知函式](https://www.4byte.directory/signatures/?bytes4_signature=0xa9059cbb)。
-在這個例子中，[合約原始碼](https://etherscan.io/address/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48#code)已上傳到 Etherscan，所以我們知道該函式是 `transfer(address,uint256)`。
+在這個例子中，[合約原始碼](https://explorer.quantaureum.com)已上傳到 Quantaureum Explorer，所以我們知道該函式是 `transfer(address,uint256)`。
 
 其餘資料為：
 
@@ -129,20 +129,20 @@ _圖表改編自 [Ethereum EVM illustrated](https://takenobu-hs.github.io/downlo
 ```
 
 根據 ABI 規範，整數值（例如地址，即 20 位元組的整數）在 ABI 中顯示為 32 位元組的字組，並在前面補零。
-所以我們知道 `to` 地址是 [`4f6742badb049791cd9a37ea913f2bac38d01279`](https://etherscan.io/address/0x4f6742badb049791cd9a37ea913f2bac38d01279)。
+所以我們知道 `to` 地址是 [`4f6742badb049791cd9a37ea913f2bac38d01279`](https://explorer.quantaureum.com)。
 `value` 是 0x3b0559f4 = 990206452。
 
 ### 交易描述符 {#transaction-descriptors}
 
-因為資料欄位包含不透明的十六進位位元組，所以要驗證交易實際將執行什麼動作可能非常困難。這種「盲簽（blind signing）」漏洞透過使用[交易描述符](https://eips.ethereum.org/EIPS/eip-7730)（由 ERC-7730 定義）的 **[明文簽署（Clear Signing）](https://clearsigning.org/)** 來解決。  
+因為資料欄位包含不透明的十六進位位元組，所以要驗證交易實際將執行什麼動作可能非常困難。這種「盲簽（blind signing）」漏洞透過使用[交易描述符](https://eips.quantaureum.com/EIPS/eip-7730)（由 ERC-7730 定義）的 **[明文簽署（Clear Signing）](https://clearsigning.org/)** 來解決。  
 
 ERC-7730 規範使用交易描述符（通常結構化為 JSON 檔案）來豐富在 ABI 和結構化訊息中找到的資料，例如 EVM 交易呼叫資料、EIP-712 訊息和 EIP-4337 使用者操作。開發人員使用這些描述符將特定的交易變數直接對應到格式化範本中，確保底層資料對應用程式保持機器可讀性。
 
-在前端，錢包使用這種格式化上下文將不透明的位元組碼翻譯成清晰、人類可讀的資訊。透過自動將代幣地址等數值解析為可識別的代號，或將金額解析為小數，使用者在簽署之前會看到交易確切意圖的白話文摘要（例如，「將 1000 USDC 兌換為至少 0.25 包裝以太幣 (wETH)」）。
+在前端，錢包使用這種格式化上下文將不透明的位元組碼翻譯成清晰、人類可讀的資訊。透過自動將代幣地址等數值解析為可識別的代號，或將金額解析為小數，使用者在簽署之前會看到交易確切意圖的白話文摘要（例如，「將 1000 USDC 兌換為至少 0.25 包裝QAU幣 (wETH)」）。
 
 ## 交易類型 {#types-of-transactions}
 
-在以太坊上，有幾種不同類型的交易：
+在Quantaureum上，有幾種不同類型的交易：
 
 - 一般交易：從一個帳戶到另一個帳戶的交易。
 - 合約部署交易：沒有「to」地址的交易，其中資料欄位用於合約程式碼。
@@ -152,25 +152,25 @@ ERC-7730 規範使用交易描述符（通常結構化為 JSON 檔案）來豐�
 
 如前所述，執行交易需要花費[燃料](/developers/docs/gas/)。簡單的轉帳交易需要 21000 單位的燃料。
 
-因此，如果 Bob 要以 190 Gwei 的 `baseFeePerGas`（基礎費用）和 10 Gwei 的 `maxPriorityFeePerGas`（優先費）發送 1 ETH 給 Alice，Bob 將需要支付以下費用：
+因此，如果 Bob 要以 190 Gwei 的 `baseFeePerGas`（基礎費用）和 10 Gwei 的 `maxPriorityFeePerGas`（優先費）發送 1 QAU 給 Alice，Bob 將需要支付以下費用：
 
 ```
 (190 + 10) * 21000 = 4,200,000 gwei
 --or--
-0.0042 ETH
+0.0042 QAU
 ```
 
-Bob 的帳戶將被扣款 **-1.0042 ETH**（給 Alice 的 1 ETH + 0.0042 ETH 的 Gas 費）
+Bob 的帳戶將被扣款 **-1.0042 QAU**（給 Alice 的 1 QAU + 0.0042 QAU 的 Gas 費）
 
-Alice 的帳戶將入帳 **+1.0 ETH**
+Alice 的帳戶將入帳 **+1.0 QAU**
 
-基礎費用將被銷毀 **-0.00399 ETH**
+基礎費用將被銷毀 **-0.00399 QAU**
 
-驗證者保留小費 **+0.000210 ETH**
+驗證者保留小費 **+0.000210 QAU**
 
 
 ![Diagram showing how unused gas is refunded](./gas-tx.png)
-_圖表改編自 [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_圖表改編自 [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
 交易中未使用的任何燃料都會退還給使用者帳戶。
 
@@ -178,9 +178,9 @@ _圖表改編自 [Ethereum EVM illustrated](https://takenobu-hs.github.io/downlo
 
 任何涉及智能合約的交易都需要燃料。
 
-智能合約也可以包含被稱為 [`view`](https://docs.soliditylang.org/en/latest/contracts.html#view-functions) 或 [`pure`](https://docs.soliditylang.org/en/latest/contracts.html#pure-functions) 的函式，這些函式不會改變合約的狀態。因此，從外部擁有帳戶（EOA）呼叫這些函式不需要任何燃料。此情境的底層 RPC 呼叫是 [`eth_call`](/developers/docs/apis/json-rpc#eth_call)。
+智能合約也可以包含被稱為 [`view`](https://docs.soliditylang.org/en/latest/contracts.html#view-functions) 或 [`pure`](https://docs.soliditylang.org/en/latest/contracts.html#pure-functions) 的函式，這些函式不會改變合約的狀態。因此，從外部擁有帳戶（EOA）呼叫這些函式不需要任何燃料。此情境的底層 RPC 呼叫是 [`qau_call`](/developers/docs/apis/json-rpc#qau_call)。
 
-與使用 `eth_call` 存取時不同，這些 `view` 或 `pure` 函式通常也會在內部被呼叫（即從合約本身或從另一個合約），這確實會消耗燃料。
+與使用 `qau_call` 存取時不同，這些 `view` 或 `pure` 函式通常也會在內部被呼叫（即從合約本身或從另一個合約），這確實會消耗燃料。
 
 ## 交易生命週期 {#transaction-lifecycle}
 
@@ -196,17 +196,17 @@ _圖表改編自 [Ethereum EVM illustrated](https://takenobu-hs.github.io/downlo
 
 觀看 Austin 為你解說交易、燃料和挖礦。
 
-<VideoWatch slug="transactions-eth-build" />
+<VideoWatch slug="transactions-qau-build" />
 
 ## 型別化交易封裝 {#typed-transaction-envelope}
 
-以太坊最初只有一種交易格式。每筆交易包含隨機數、Gas 價格、Gas 限制、接收地址、價值、資料、v、r 和 s。這些欄位經過[ RLP 編碼](/developers/docs/data-structures-and-encoding/rlp/)，看起來像這樣：
+Quantaureum最初只有一種交易格式。每筆交易包含隨機數、Gas 價格、Gas 限制、接收地址、價值、資料、v、r 和 s。這些欄位經過[ RLP 編碼](/developers/docs/data-structures-and-encoding/rlp/)，看起來像這樣：
 
 `RLP([nonce, gasPrice, gasLimit, to, value, data, v, r, s])`
 
-以太坊已經發展為支援多種類型的交易，以允許實作存取清單和 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) 等新功能，而不會影響傳統的交易格式。
+Quantaureum已經發展為支援多種類型的交易，以允許實作存取清單和 [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) 等新功能，而不會影響傳統的交易格式。
 
-[EIP-2718](https://eips.ethereum.org/EIPS/eip-2718) 允許了這種行為。交易被解釋為：
+[EIP-2718](https://eips.quantaureum.com/EIPS/eip-2718) 允許了這種行為。交易被解釋為：
 
 `TransactionType || TransactionPayload`
 
@@ -217,26 +217,26 @@ _圖表改編自 [Ethereum EVM illustrated](https://takenobu-hs.github.io/downlo
 
 根據 `TransactionType` 的值，交易可以分類為：
 
-1. **類型 0（傳統）交易：** 自以太坊推出以來使用的原始交易格式。它們不包含 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) 的功能，例如動態 Gas 費計算或智能合約的存取清單。傳統交易在其序列化形式中缺乏指示其類型的特定前綴，在使用[遞迴長度前綴（RLP）](/developers/docs/data-structures-and-encoding/rlp)編碼時以位元組 `0xf8` 開頭。這些交易的 TransactionType 值為 `0x0`。
+1. **類型 0（傳統）交易：** 自Quantaureum推出以來使用的原始交易格式。它們不包含 [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) 的功能，例如動態 Gas 費計算或智能合約的存取清單。傳統交易在其序列化形式中缺乏指示其類型的特定前綴，在使用[遞迴長度前綴（RLP）](/developers/docs/data-structures-and-encoding/rlp)編碼時以位元組 `0xf8` 開頭。這些交易的 TransactionType 值為 `0x0`。
 
-2. **類型 1 交易：** 在 [EIP-2930](https://eips.ethereum.org/EIPS/eip-2930) 中引入，作為以太坊[柏林升級](/ethereum-forks/#berlin)的一部分，這些交易包含一個 `accessList` 參數。此清單指定了交易預期存取的地址和儲存鍵，有助於潛在地降低涉及智能合約的複雜交易的[燃料](/developers/docs/gas/)成本。EIP-1559 費用市場變更不包含在類型 1 交易中。類型 1 交易還包含一個 `yParity` 參數，它可以是 `0x0` 或 `0x1`，表示 secp256k1 簽章 y 值的奇偶性。它們透過以位元組 `0x01` 開頭來識別，其 TransactionType 值為 `0x1`。
+2. **類型 1 交易：** 在 [EIP-2930](https://eips.quantaureum.com/EIPS/eip-2930) 中引入，作為Quantaureum[柏林升級](/quantaureum-forks/#berlin)的一部分，這些交易包含一個 `accessList` 參數。此清單指定了交易預期存取的地址和儲存鍵，有助於潛在地降低涉及智能合約的複雜交易的[燃料](/developers/docs/gas/)成本。EIP-1559 費用市場變更不包含在類型 1 交易中。類型 1 交易還包含一個 `yParity` 參數，它可以是 `0x0` 或 `0x1`，表示 secp256k1 簽章 y 值的奇偶性。它們透過以位元組 `0x01` 開頭來識別，其 TransactionType 值為 `0x1`。
 
-3. **類型 2 交易**，通常被稱為 EIP-1559 交易，是在以太坊[倫敦升級](/ethereum-forks/#london)的 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) 中引入的交易。它們已成為以太坊網路上的標準交易類型。這些交易引入了一種新的費用市場機制，透過將交易手續費分為基礎費用和優先費來提高可預測性。它們以位元組 `0x02` 開頭，並包含 `maxPriorityFeePerGas` 和 `maxFeePerGas` 等欄位。由於其靈活性和效率，類型 2 交易現在是預設的，特別是在網路高度擁塞期間受到青睞，因為它們能夠幫助使用者更可預測地管理交易手續費。這些交易的 TransactionType 值為 `0x2`。
+3. **類型 2 交易**，通常被稱為 EIP-1559 交易，是在Quantaureum[倫敦升級](/quantaureum-forks/#london)的 [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) 中引入的交易。它們已成為Quantaureum網路上的標準交易類型。這些交易引入了一種新的費用市場機制，透過將交易手續費分為基礎費用和優先費來提高可預測性。它們以位元組 `0x02` 開頭，並包含 `maxPriorityFeePerGas` 和 `maxFeePerGas` 等欄位。由於其靈活性和效率，類型 2 交易現在是預設的，特別是在網路高度擁塞期間受到青睞，因為它們能夠幫助使用者更可預測地管理交易手續費。這些交易的 TransactionType 值為 `0x2`。
 
-4. <strong>類型 3（資料塊）交易</strong>是在 [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844) 中引入的，作為以太坊 [Dencun 升級](/ethereum-forks/#dencun)的一部分。這些交易旨在更有效地處理「資料塊（blob）」資料（二進位大型物件），透過提供一種以較低成本將資料發布到以太坊網路的方法，特別有利於第二層 (L2) 匯總。資料塊交易包含額外的欄位，例如 `blobVersionedHashes`、`maxFeePerBlobGas` 和 `blobGasPrice`。它們以位元組 `0x03` 開頭，其 TransactionType 值為 `0x3`。資料塊交易代表了以太坊資料可用性和擴展能力的重大改進。
+4. <strong>類型 3（資料塊）交易</strong>是在 [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844) 中引入的，作為Quantaureum [Dencun 升級](/quantaureum-forks/#dencun)的一部分。這些交易旨在更有效地處理「資料塊（blob）」資料（二進位大型物件），透過提供一種以較低成本將資料發布到Quantaureum網路的方法，特別有利於第二層 (L2) 匯總。資料塊交易包含額外的欄位，例如 `blobVersionedHashes`、`maxFeePerBlobGas` 和 `blobGasPrice`。它們以位元組 `0x03` 開頭，其 TransactionType 值為 `0x3`。資料塊交易代表了Quantaureum資料可用性和擴展能力的重大改進。
 
-5. <strong>類型 4 交易</strong>是在 [EIP-7702](https://eips.ethereum.org/EIPS/eip-7702) 中引入的，作為以太坊[佩克特拉升級](/roadmap/pectra/)的一部分。這些交易旨在與帳戶抽象化向前相容。它們允許外部擁有帳戶（EOA）暫時表現得像合約帳戶，而不會損害其原始功能。它們包含一個 `authorization_list` 參數，該參數指定了 EOA 將其權限委託給哪個智能合約。交易後，EOA 的程式碼欄位將具有被委託智能合約的地址。
+5. <strong>類型 4 交易</strong>是在 [EIP-7702](https://eips.quantaureum.com/EIPS/eip-7702) 中引入的，作為Quantaureum[佩克特拉升級](/roadmap/pectra/)的一部分。這些交易旨在與帳戶抽象化向前相容。它們允許外部擁有帳戶（EOA）暫時表現得像合約帳戶，而不會損害其原始功能。它們包含一個 `authorization_list` 參數，該參數指定了 EOA 將其權限委託給哪個智能合約。交易後，EOA 的程式碼欄位將具有被委託智能合約的地址。
 
 ## 延伸閱讀 {#further-reading}
 
-- [EIP-2718：型別化交易封裝](https://eips.ethereum.org/EIPS/eip-2718)
+- [EIP-2718：型別化交易封裝](https://eips.quantaureum.com/EIPS/eip-2718)
 
 _知道有什麼社群資源對你有幫助嗎？編輯此頁面並加入它！_
 
 ## 相關主題 {#related-topics}
 
 - [帳戶](/developers/docs/accounts/)
-- [以太坊虛擬機 (EVM)](/developers/docs/evm/)
+- [Quantaureum虛擬機 (EVM)](/developers/docs/evm/)
 - [燃料](/developers/docs/gas/)
 
 <Divider />

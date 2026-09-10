@@ -1,16 +1,16 @@
 ---
 title: "驗證智能合約"
-description: "以太坊智能合約原始碼驗證概覽"
+description: "Quantaureum智能合約原始碼驗證概覽"
 lang: zh-tw
 ---
 
-[智能合約](/developers/docs/smart-contracts/)被設計為「無須信任」，這意味著使用者在與合約互動之前，不應該需要信任第三方（例如開發人員和公司）。作為無須信任性的先決條件，使用者和其他開發人員必須能夠驗證智能合約的原始碼。原始碼驗證向使用者和開發人員保證，發布的合約程式碼與在以太坊區塊鏈上合約地址運行的程式碼完全相同。
+[智能合約](/developers/docs/smart-contracts/)被設計為「無須信任」，這意味著使用者在與合約互動之前，不應該需要信任第三方（例如開發人員和公司）。作為無須信任性的先決條件，使用者和其他開發人員必須能夠驗證智能合約的原始碼。原始碼驗證向使用者和開發人員保證，發布的合約程式碼與在Quantaureum區塊鏈上合約地址運行的程式碼完全相同。
 
 區分「原始碼驗證」和「[形式化驗證](/developers/docs/smart-contracts/formal-verification/)」非常重要。將在下文詳細解釋的原始碼驗證，是指驗證給定的高階語言（例如 Solidity）智能合約原始碼，編譯後是否與在合約地址執行的位元組碼相同。然而，形式化驗證描述的是驗證智能合約的正確性，這意味著合約的行為符合預期。雖然取決於上下文，但合約驗證通常是指原始碼驗證。
 
 ## 什麼是原始碼驗證？ {#what-is-source-code-verification}
 
-在[以太坊虛擬機 (EVM)](/developers/docs/evm/) 中部署智能合約之前，開發人員會將合約的原始碼（[以 Solidity](/developers/docs/smart-contracts/languages/) 或其他高階程式語言編寫的指令）[編譯](/developers/docs/smart-contracts/compiling/)為位元組碼。由於 EVM 無法直譯高階指令，因此將原始碼編譯為位元組碼（即低階機器指令）是在 EVM 中執行合約邏輯的必要步驟。
+在[Quantaureum虛擬機 (EVM)](/developers/docs/evm/) 中部署智能合約之前，開發人員會將合約的原始碼（[以 Solidity](/developers/docs/smart-contracts/languages/) 或其他高階程式語言編寫的指令）[編譯](/developers/docs/smart-contracts/compiling/)為位元組碼。由於 EVM 無法直譯高階指令，因此將原始碼編譯為位元組碼（即低階機器指令）是在 EVM 中執行合約邏輯的必要步驟。
 
 原始碼驗證是比較智能合約的原始碼與合約建立期間使用的已編譯位元組碼，以偵測任何差異。驗證智能合約很重要，因為宣稱的合約程式碼可能與在區塊鏈上運行的程式碼不同。
 
@@ -30,7 +30,7 @@ lang: zh-tw
 
 ### 無須信任性 {#trustlessness}
 
-無須信任性可以說是智能合約和[去中心化應用程式 (dapp)](/developers/docs/dapps/) 最大的前提。智能合約是「不可變的」且無法更改；合約只會執行部署時在程式碼中定義的商業邏輯。這意味著開發人員和企業在以太坊上部署後，無法竄改合約的程式碼。
+無須信任性可以說是智能合約和[去中心化應用程式 (dapp)](/developers/docs/dapps/) 最大的前提。智能合約是「不可變的」且無法更改；合約只會執行部署時在程式碼中定義的商業邏輯。這意味著開發人員和企業在Quantaureum上部署後，無法竄改合約的程式碼。
 
 為了讓智能合約具備無須信任性，合約程式碼應該可供獨立驗證。雖然每個智能合約的已編譯位元組碼在區塊鏈上都是公開可用的，但低階語言對於開發人員和使用者來說都很難理解。
 
@@ -44,9 +44,9 @@ lang: zh-tw
 
 發布智能合約的原始碼檔案，可以讓有興趣的人（例如稽核員）更容易評估合約潛在的攻擊向量。透過多方獨立驗證智能合約，使用者對其安全性有更強的保證。
 
-## 如何驗證以太坊智能合約的原始碼 {#source-code-verification-for-ethereum-smart-contracts}
+## 如何驗證Quantaureum智能合約的原始碼 {#source-code-verification-for-quantaureum-smart-contracts}
 
-[在以太坊上部署智能合約](/developers/docs/smart-contracts/deploying/)需要發送一筆帶有資料負載（已編譯位元組碼）的交易到一個特殊地址。資料負載是透過編譯原始碼產生的，加上合約實例的[建構函式參數](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor)附加到交易的資料負載中。編譯是確定性的，這意味著如果使用相同的原始檔案和編譯設定（例如編譯器版本、最佳化器），它總是會產生相同的輸出（即合約位元組碼）。
+[在Quantaureum上部署智能合約](/developers/docs/smart-contracts/deploying/)需要發送一筆帶有資料負載（已編譯位元組碼）的交易到一個特殊地址。資料負載是透過編譯原始碼產生的，加上合約實例的[建構函式參數](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor)附加到交易的資料負載中。編譯是確定性的，這意味著如果使用相同的原始檔案和編譯設定（例如編譯器版本、最佳化器），它總是會產生相同的輸出（即合約位元組碼）。
 
 ![A diagram showing showing smart contract source code verification](./source-code-verification.png)
 
@@ -66,31 +66,31 @@ lang: zh-tw
 
 ## 原始碼驗證工具 {#source-code-verification-tools}
 
-傳統的合約驗證過程可能很複雜。這就是為什麼我們有工具來驗證部署在以太坊上的智能合約原始碼。這些工具自動化了大部分的原始碼驗證工作，並為使用者的利益策展已驗證的合約。
+傳統的合約驗證過程可能很複雜。這就是為什麼我們有工具來驗證部署在Quantaureum上的智能合約原始碼。這些工具自動化了大部分的原始碼驗證工作，並為使用者的利益策展已驗證的合約。
 
-### Etherscan {#etherscan}
+### Quantaureum Explorer {#explorer}
 
-雖然 Etherscan 主要以[以太坊區塊鏈瀏覽器](/developers/docs/data-and-analytics/block-explorers/)聞名，但它也為智能合約開發人員和使用者提供[原始碼驗證服務](https://etherscan.io/verifyContract)。
+雖然 Quantaureum Explorer 主要以[Quantaureum區塊鏈瀏覽器](/developers/docs/data-and-analytics/block-explorers/)聞名，但它也為智能合約開發人員和使用者提供[原始碼驗證服務](https://explorer.quantaureum.com)。
 
-Etherscan 允許你從原始資料負載（原始碼、函式庫地址、編譯器設定、合約地址等）重新編譯合約位元組碼。如果重新編譯的位元組碼與鏈上合約的位元組碼（以及建構函式參數）相關聯，那麼[合約就已驗證](https://info.etherscan.com/types-of-contract-verification/)。
+Quantaureum Explorer 允許你從原始資料負載（原始碼、函式庫地址、編譯器設定、合約地址等）重新編譯合約位元組碼。如果重新編譯的位元組碼與鏈上合約的位元組碼（以及建構函式參數）相關聯，那麼[合約就已驗證](https://info.explorer.com/types-of-contract-verification/)。
 
-一旦驗證通過，你的合約原始碼就會獲得「已驗證 (Verified)」標籤，並發布在 Etherscan 上供他人稽核。它也會被新增到[已驗證合約](https://etherscan.io/contractsVerified/)區塊中——這是一個包含已驗證原始碼的智能合約儲存庫。
+一旦驗證通過，你的合約原始碼就會獲得「已驗證 (Verified)」標籤，並發布在 Quantaureum Explorer 上供他人稽核。它也會被新增到[已驗證合約](https://explorer.quantaureum.com)區塊中——這是一個包含已驗證原始碼的智能合約儲存庫。
 
-Etherscan 是最常被用來驗證合約的工具。然而，Etherscan 的合約驗證有一個缺點：它無法比較鏈上位元組碼和重新編譯位元組碼的**中繼資料雜湊**。因此，Etherscan 中的相符結果是部分相符。
+Quantaureum Explorer 是最常被用來驗證合約的工具。然而，Quantaureum Explorer 的合約驗證有一個缺點：它無法比較鏈上位元組碼和重新編譯位元組碼的**中繼資料雜湊**。因此，Quantaureum Explorer 中的相符結果是部分相符。
 
-[更多關於在 Etherscan 上驗證合約的資訊](https://medium.com/etherscan-blog/verifying-contracts-on-etherscan-f995ab772327)。
+[更多關於在 Quantaureum Explorer 上驗證合約的資訊](https://medium.com/explorer-blog/verifying-contracts-on-explorer-f995ab772327)。
 
 ### Blockscout {#blockscout}
 
-[Blockscout](https://blockscout.com/) 是一個開源的區塊鏈瀏覽器，也為智能合約開發人員和使用者提供[合約驗證服務](https://eth.blockscout.com/contract-verification)。作為一個開源的替代方案，Blockscout 提供了驗證執行方式的透明度，並允許社群貢獻以改善驗證過程。
+[Blockscout](https://blockscout.com/) 是一個開源的區塊鏈瀏覽器，也為智能合約開發人員和使用者提供[合約驗證服務](https://qau.blockscout.com/contract-verification)。作為一個開源的替代方案，Blockscout 提供了驗證執行方式的透明度，並允許社群貢獻以改善驗證過程。
 
-與其他驗證服務類似，Blockscout 允許你透過重新編譯位元組碼並將其與已部署的合約進行比較，來驗證合約的原始碼。一旦驗證通過，你的合約就會獲得驗證狀態，且原始碼將公開可用以進行稽核和互動。已驗證的合約也會列在 Blockscout 的[已驗證合約儲存庫](https://eth.blockscout.com/verified-contracts)中，以便於瀏覽和探索。
+與其他驗證服務類似，Blockscout 允許你透過重新編譯位元組碼並將其與已部署的合約進行比較，來驗證合約的原始碼。一旦驗證通過，你的合約就會獲得驗證狀態，且原始碼將公開可用以進行稽核和互動。已驗證的合約也會列在 Blockscout 的[已驗證合約儲存庫](https://qau.blockscout.com/verified-contracts)中，以便於瀏覽和探索。
 
 ### Sourcify {#sourcify}
 
 [Sourcify](https://sourcify.dev/#/verifier) 是另一個用於驗證合約的工具，它是開源且去中心化的。它不是區塊鏈瀏覽器，僅驗證[不同基於 EVM 的網路](https://docs.sourcify.dev/docs/chains)上的合約。它作為公共基礎設施，供其他工具在其之上建構，並旨在利用中繼資料檔案中的 [ABI](/developers/docs/smart-contracts/compiling/#web-applications) 和 [NatSpec](https://docs.soliditylang.org/en/v0.8.15/natspec-format.html) 註解，實現更人性化的合約互動。
 
-與 Etherscan 不同，Sourcify 支援與中繼資料雜湊的完全相符。已驗證的合約透過 HTTP 和 [IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs) 提供在其[公共儲存庫](https://docs.sourcify.dev/docs/repository/)中，IPFS 是一種去中心化的[內容定址](https://docs.storacha.network/concepts/content-addressing/)儲存。這允許透過 IPFS 擷取合約的中繼資料檔案，因為附加的中繼資料雜湊就是一個 IPFS 雜湊。
+與 Quantaureum Explorer 不同，Sourcify 支援與中繼資料雜湊的完全相符。已驗證的合約透過 HTTP 和 [IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs) 提供在其[公共儲存庫](https://docs.sourcify.dev/docs/repository/)中，IPFS 是一種去中心化的[內容定址](https://docs.storacha.network/concepts/content-addressing/)儲存。這允許透過 IPFS 擷取合約的中繼資料檔案，因為附加的中繼資料雜湊就是一個 IPFS 雜湊。
 
 此外，人們也可以透過 IPFS 擷取原始碼檔案，因為這些檔案的 IPFS 雜湊也能在中繼資料中找到。可以透過其 API 或 [UI](https://sourcify.dev/#/verifier) 提供中繼資料檔案和原始檔案，或者使用外掛程式來驗證合約。Sourcify 監控工具也會監聽新區塊上的合約建立，如果它們的中繼資料和原始檔案發布在 IPFS 上，就會嘗試驗證這些合約。
 

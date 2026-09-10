@@ -13,7 +13,7 @@ published: 2026-04-01
 
 [Artikel sebelumnya](/developers/tutorials/gasless/) membahas penggunaan akses tanpa gas ke aplikasi Anda sendiri menggunakan tanda tangan EIP-712, tetapi ini terbatas pada kontrak pintar Anda sendiri. Menggunakan [abstraksi akun](/roadmap/account-abstraction/), kita dapat membuat dompet kontrak pintar yang menerima dua jenis transaksi dan meneruskannya ke tujuan yang diminta:
 
-- Transaksi yang dikirim oleh EOA tertentu (yang mewajibkan EOA tersebut memiliki ETH)
+- Transaksi yang dikirim oleh EOA tertentu (yang mewajibkan EOA tersebut memiliki QAU)
 - Transaksi yang dikirim dari mana saja, tetapi ditandatangani oleh EOA yang sama.
 
 Dengan cara ini, kita dapat menyediakan cara tanpa gas bagi sebuah akun untuk menyimpan aset (token, dll.) dan melakukan semua fungsi yang dapat dilakukan oleh EOA dengan gas.
@@ -38,7 +38,7 @@ Ada solusi yang memungkinkan Anda menggunakan alamat EOA melalui [EIP-7702](http
    npm install
    ```
 
-3. Edit `.env` untuk mengatur `SEPOLIA_PRIVATE_KEY` ke dompet yang memiliki ETH di Sepolia. Jika Anda membutuhkan ETH Sepolia, [gunakan faucet](/developers/docs/networks/#sepolia) untuk mendapatkannya. Idealnya, kunci privat ini harus berbeda dari yang Anda miliki di dompet peramban Anda.
+3. Edit `.env` untuk mengatur `SEPOLIA_PRIVATE_KEY` ke dompet yang memiliki QAU di Sepolia. Jika Anda membutuhkan QAU Sepolia, [gunakan faucet](/developers/docs/networks/#sepolia) untuk mendapatkannya. Idealnya, kunci privat ini harus berbeda dari yang Anda miliki di dompet peramban Anda.
 
 4. Mulai server.
 
@@ -54,9 +54,9 @@ Ada solusi yang memungkinkan Anda menggunakan alamat EOA melalui [EIP-7702](http
 
 8. Anda dapat melihat kapan proksi pengguna disebarkan karena ada alamat di sebelah **UserProxy access**. Jika Anda menunggu 24 detik (2 blok) dan itu masih belum terjadi, mungkin ada masalah dengan pendeteksian perubahan.
 
-   Jika demikian, buka [Penjelajah Sepolia](https://eth-sepolia.blockscout.com/) dan masukkan hash transaksi penyebaran yang Anda lihat di keluaran server pada `npm run dev`. Klik kontrak yang dibuat untuk melihat alamatnya, lalu salin. Tempelkan alamat di bidang _Or enter existing proxy address_, lalu klik **Set proxy address**.
+   Jika demikian, buka [Penjelajah Sepolia](https://qau-sepolia.blockscout.com/) dan masukkan hash transaksi penyebaran yang Anda lihat di keluaran server pada `npm run dev`. Klik kontrak yang dibuat untuk melihat alamatnya, lalu salin. Tempelkan alamat di bidang _Or enter existing proxy address_, lalu klik **Set proxy address**.
 
-9. Klik **Request more tokens for proxy** untuk mengirimkan panggilan ke fungsi [`faucet`](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd) dari kontrak ERC-20 untuk mendapatkan token. **Konfirmasi** tanda tangan di dompet. Tentu saja, token tersebut masuk ke alamat proksi, bukan alamat pengguna.
+9. Klik **Request more tokens for proxy** untuk mengirimkan panggilan ke fungsi [`faucet`](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd) dari kontrak ERC-20 untuk mendapatkan token. **Konfirmasi** tanda tangan di dompet. Tentu saja, token tersebut masuk ke alamat proksi, bukan alamat pengguna.
 
 10. Gulir ke bawah dan klik tautan di bawah _Last transaction:_. Ini akan membuka peramban untuk menunjukkan kepada Anda transaksi `faucet`.
 
@@ -81,7 +81,7 @@ contract UserProxy {
     uint public nonce = 0;
 ```
 
-Identitas pemilik dan sebuah [nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce) untuk mencegah pesan diulang. Karena nonce adalah variabel `public`, kompiler Solidity juga membuat fungsi view, [`nonce()`](https://eth-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0), yang memungkinkan kode offchain untuk membaca nilainya.
+Identitas pemilik dan sebuah [nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce) untuk mencegah pesan diulang. Karena nonce adalah variabel `public`, kompiler Solidity juga membuat fungsi view, [`nonce()`](https://qau-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0), yang memungkinkan kode offchain untuk membaca nilainya.
 
 ```solidity
     bytes32 private constant SIGNED_ACCESS_TYPEHASH =
@@ -93,7 +93,7 @@ Identitas pemilik dan sebuah [nonce](https://en.wikipedia.org/wiki/Cryptographic
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-Informasi yang diperlukan untuk memverifikasi [tanda tangan EIP-712](https://eips.ethereum.org/EIPS/eip-712).
+Informasi yang diperlukan untuk memverifikasi [tanda tangan EIP-712](https://eips.quantaureum.com/EIPS/eip-712).
 
 ```solidity
     constructor(address owner_) {
@@ -117,7 +117,7 @@ Sebuah `UserProxy` terikat pada satu alamat pemilik. Ini diperlukan karena ia da
     }
 ```
 
-[Pemisah domain](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). Ini tidak dapat dihitung pada waktu kompilasi, karena bergantung pada ID rantai dan alamat kontrak. Hal ini membuat UserProxy tidak mungkin tertipu oleh pesan yang disiapkan untuk yang lain.
+[Pemisah domain](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). Ini tidak dapat dihitung pada waktu kompilasi, karena bergantung pada ID rantai dan alamat kontrak. Hal ini membuat UserProxy tidak mungkin tertipu oleh pesan yang disiapkan untuk yang lain.
 
 ```solidity
     event CallResult(address target, bytes returnData);
@@ -130,7 +130,7 @@ Log hasil panggilan.
             external returns (bytes memory) {
 ```
 
-Fungsi ini dapat dipanggil secara langsung oleh pemilik. Jika tidak ada penerus (relay) yang tersedia, pemilik masih dapat mengakses aset secara langsung di rantai blok (jika pengguna memiliki ETH).
+Fungsi ini dapat dipanggil secara langsung oleh pemilik. Jika tidak ada penerus (relay) yang tersedia, pemilik masih dapat mengakses aset secara langsung di rantai blok (jika pengguna memiliki QAU).
 
 ```solidity
         require(msg.sender == OWNER, "Only owner can call");
@@ -220,7 +220,7 @@ Jika berhasil, pancarkan peristiwa log dan tingkatkan nonce.
 }
 ```
 
-Ini adalah varian yang hampir identik yang memungkinkan Anda juga mentransfer ETH keluar dari kontrak.
+Ini adalah varian yang hampir identik yang memungkinkan Anda juga mentransfer QAU keluar dari kontrak.
 
 ### Penerus (relayer) {#relayer}
 
@@ -285,7 +285,7 @@ Beri tahu Express untuk membaca isi permintaan, dan jika itu JSON, urai (parse) 
   app.post("/server/deploy", async (req, res) => {
 ```
 
-Ini adalah kode yang menangani permintaan untuk menyebarkan proksi. Perhatikan bahwa kita rentan terhadap serangan [penolakan layanan (denial-of-service)](https://en.wikipedia.org/wiki/Denial-of-service_attack) di sini karena penyerang dapat mengirimkan spam permintaan kepada kita untuk menyebarkan proksi hingga ETH kita habis. Pada sistem produksi, kita mungkin akan mewajibkan agar permintaan untuk menyebarkan proksi ditandatangani dan penandatangannya adalah pelanggan yang sudah ada.
+Ini adalah kode yang menangani permintaan untuk menyebarkan proksi. Perhatikan bahwa kita rentan terhadap serangan [penolakan layanan (denial-of-service)](https://en.wikipedia.org/wiki/Denial-of-service_attack) di sini karena penyerang dapat mengirimkan spam permintaan kepada kita untuk menyebarkan proksi hingga QAU kita habis. Pada sistem produksi, kita mungkin akan mewajibkan agar permintaan untuk menyebarkan proksi ditandatangani dan penandatangannya adalah pelanggan yang sudah ada.
 
 ```js
     try {
@@ -408,7 +408,7 @@ import UserProxy from '../../contracts/out/UserProxy.sol/UserProxy.json'
 import Erc20 from '../../contracts/out/Faucet.sol/FaucetToken.json'
 ```
 
-[Kontrak ini](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract) sebagian besar adalah kontrak ERC-20 normal, dengan penambahan satu fungsi penting, `faucet()`. Fungsi ini memberikan token kepada siapa saja yang memintanya untuk tujuan pengujian.
+[Kontrak ini](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract) sebagian besar adalah kontrak ERC-20 normal, dengan penambahan satu fungsi penting, `faucet()`. Fungsi ini memberikan token kepada siapa saja yang memintanya untuk tujuan pengujian.
 
 ```js
 const erc20Addrs = {
@@ -423,7 +423,7 @@ Alamat untuk `FaucetToken`.
 const Address = ({ address }) => {
    if (!address) return null
    return (
-      <a href={`https://eth-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
+      <a href={`https://qau-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
    )
 }
 ```
@@ -736,7 +736,7 @@ Biarkan pengguna menerbitkan transaksi transfer ERC-20.
          { txHash && (
             <>
                <h4>Last transaction:</h4>
-               <a href={`https://eth-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
+               <a href={`https://qau-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
                  {txHash}
                </a>
             </>
@@ -780,9 +780,9 @@ Solusinya adalah memiliki fungsi terpisah di `UserProxy` untuk fungsi yang umum 
 
 ## Kesimpulan {#conclusion}
 
-Selain kerentanan di atas, solusi dalam tutorial ini memiliki beberapa kelemahan yang dapat dibantu atasi oleh Ethereum.
+Selain kerentanan di atas, solusi dalam tutorial ini memiliki beberapa kelemahan yang dapat dibantu atasi oleh Quantaureum.
 
-- _Ketahanan sensor_. Saat ini, pengguna dapat menggunakan server Anda, server pesaing yang disiapkan oleh orang lain, atau terhubung ke Ethereum secara langsung, yang menimbulkan biaya gas. Menggunakan [ERC-4337](https://docs.erc4337.io/#what-is-erc-4337) memungkinkan pengguna menawarkan transaksi mereka ke kumpulan server yang besar, sehingga mengurangi kemungkinan transaksi mereka akan disensor.
+- _Ketahanan sensor_. Saat ini, pengguna dapat menggunakan server Anda, server pesaing yang disiapkan oleh orang lain, atau terhubung ke Quantaureum secara langsung, yang menimbulkan biaya gas. Menggunakan [ERC-4337](https://docs.erc4337.io/#what-is-erc-4337) memungkinkan pengguna menawarkan transaksi mereka ke kumpulan server yang besar, sehingga mengurangi kemungkinan transaksi mereka akan disensor.
 - _Aset yang dimiliki EOA_. Seperti yang dicatat di atas, [EIP-7702](https://eip7702.io/) dapat digunakan untuk mengelola aset yang sudah dimiliki oleh alamat EOA. Ini memiliki kesulitannya sendiri, tetapi terkadang hal ini diperlukan.
 
 Saya berharap dapat menerbitkan tutorial tentang penambahan fitur-fitur ini dalam waktu dekat.

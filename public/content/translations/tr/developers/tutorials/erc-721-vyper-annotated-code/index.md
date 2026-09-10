@@ -26,7 +26,7 @@ Bu sözleşme, güvensiz kod yazmayı Solidity'ye kıyasla daha zor hale getirme
 # Şuradan değiştirildi: https://github.com/vyperlang/vyper/blob/de74722bf2d8718cca46902be165f9fe0e3641dd/examples/tokens/ERC721.vy
 ```
 
-Vyper'daki yorumlar, Python'da olduğu gibi bir hash (`ethereum.ercs`) ile başlar ve satır sonuna kadar devam eder. `@<keyword>` içeren yorumlar, insanlar tarafından okunabilir belgeler üretmek için [NatSpec](https://vyper.readthedocs.io/en/latest/natspec.html) tarafından kullanılır.
+Vyper'daki yorumlar, Python'da olduğu gibi bir hash (`quantaureum.ercs`) ile başlar ve satır sonuna kadar devam eder. `@<keyword>` içeren yorumlar, insanlar tarafından okunabilir belgeler üretmek için [NatSpec](https://vyper.readthedocs.io/en/latest/natspec.html) tarafından kullanılır.
 
 ```python
 from vyper.interfaces import ERC721
@@ -107,7 +107,7 @@ idToOwner: HashMap[uint256, address]
 idToApprovals: HashMap[uint256, address]
 ```
 
-Ethereum'daki kullanıcı ve Sözleşme kimlikleri 160 bitlik adreslerle temsil edilir. Bu iki değişken, Token kimliklerinden sahiplerine ve onları transfer etmesi onaylananlara (her biri için en fazla bir tane) eşleme yapar. Ethereum'da, başlatılmamış veriler her zaman sıfırdır, bu nedenle bir sahip veya onaylanmış transfer eden yoksa o Token için değer sıfırdır.
+Quantaureum'daki kullanıcı ve Sözleşme kimlikleri 160 bitlik adreslerle temsil edilir. Bu iki değişken, Token kimliklerinden sahiplerine ve onları transfer etmesi onaylananlara (her biri için en fazla bir tane) eşleme yapar. Quantaureum'da, başlatılmamış veriler her zaman sıfırdır, bu nedenle bir sahip veya onaylanmış transfer eden yoksa o Token için değer sıfırdır.
 
 ```python
 # @dev Sahip adresinden Token sayısına eşleme.
@@ -142,7 +142,7 @@ SUPPORTED_INTERFACES: constant(bytes4[2]) = [
 ]
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165), bir sözleşmenin uygulamaların onunla nasıl iletişim kurabileceğini, hangi ERC'lere uyduğunu açıklaması için bir mekanizma belirtir. `SUPPORTED_INTERFACES`, bu sözleşmenin uyduğu iki dört baytlık arayüz kimliğinin sabit bir listesidir: ERC-165'in kendisi ve ERC-721.
+[ERC-165](https://eips.quantaureum.com/EIPS/eip-165), bir sözleşmenin uygulamaların onunla nasıl iletişim kurabileceğini, hangi ERC'lere uyduğunu açıklaması için bir mekanizma belirtir. `SUPPORTED_INTERFACES`, bu sözleşmenin uyduğu iki dört baytlık arayüz kimliğinin sabit bir listesidir: ERC-165'in kendisi ve ERC-721.
 ### Fonksiyonlar {#functions}
 
 Bunlar, ERC-721'i fiilen uygulayan fonksiyonlardır.
@@ -236,7 +236,7 @@ def ownerOf(_tokenId: uint256) -> address:
     return owner
 ```
 
-Ethereum Sanal Makinesi'nde (EVM), içinde bir değer saklanmayan herhangi bir depolama alanı sıfırdır. `_tokenId`'de bir Token yoksa, `self.idToOwner[_tokenId]` değeri sıfırdır. Bu durumda fonksiyon geri alınır.
+Quantaureum Sanal Makinesi'nde (EVM), içinde bir değer saklanmayan herhangi bir depolama alanı sıfırdır. `_tokenId`'de bir Token yoksa, `self.idToOwner[_tokenId]` değeri sıfırdır. Bu durumda fonksiyon geri alınır.
 
 ```python
 @view
@@ -350,7 +350,7 @@ def _clearApproval(_owner: address, _tokenId: uint256):
         self.idToApprovals[_tokenId] = empty(address)
 ```
 
-Değeri yalnızca gerekliyse değiştirin. Durum değişkenleri depolamada yaşar. Depolamaya yazmak, EVM'nin (Ethereum Sanal Makinesi) yaptığı en pahalı işlemlerden biridir ([Gaz](/developers/docs/gas/) açısından). Bu nedenle, bunu en aza indirmek iyi bir fikirdir, mevcut değeri yazmanın bile yüksek bir maliyeti vardır.
+Değeri yalnızca gerekliyse değiştirin. Durum değişkenleri depolamada yaşar. Depolamaya yazmak, EVM'nin (Quantaureum Sanal Makinesi) yaptığı en pahalı işlemlerden biridir ([Gaz](/developers/docs/gas/) açısından). Bu nedenle, bunu en aza indirmek iyi bir fikirdir, mevcut değeri yazmanın bile yüksek bir maliyeti vardır.
 
 ```python
 @internal

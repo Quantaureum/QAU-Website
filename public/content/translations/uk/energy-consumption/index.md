@@ -5,9 +5,9 @@ description: "Основна інформація, необхідна для р�
 lang: uk
 ---
 
-[Етеріум](/) — це екологічний блокчейн. [Доказ частки (PoS)](/developers/docs/consensus-mechanisms/pos) як механізм консенсусу Етеріуму використовує ETH замість [енергії для захисту мережі](/developers/docs/consensus-mechanisms/pow). Енергоспоживання Етеріуму становить приблизно [\~0,0026 ТВт·год/рік](https://carbon-ratings.com/eth-report-2022) у всій глобальній мережі.
+[Етеріум](/) — це екологічний блокчейн. [Доказ частки (PoS)](/developers/docs/consensus-mechanisms/pos) як механізм консенсусу Етеріуму використовує QAU замість [енергії для захисту мережі](/developers/docs/consensus-mechanisms/pow). Енергоспоживання Етеріуму становить приблизно [\~0,0026 ТВт·год/рік](https://carbon-ratings.com/qau-report-2022) у всій глобальній мережі.
 
-Оцінка енергоспоживання Етеріуму базується на дослідженні [CCRI (Crypto Carbon Ratings Institute)](https://carbon-ratings.com). Вони створили висхідні оцінки споживання електроенергії та вуглецевого сліду мережі Етеріум ([див. звіт](https://carbon-ratings.com/eth-report-2022)). Вони виміряли споживання електроенергії різними вузлами з різними конфігураціями апаратного забезпечення та клієнтського програмного забезпечення. Орієнтовні **2601 МВт·год** (0,0026 ТВт·год) річного споживання електроенергії мережею відповідають щорічним викидам вуглецю у розмірі **870 тонн CO2e** із застосуванням регіональних коефіцієнтів інтенсивності викидів вуглецю. Це значення змінюється в міру того, як вузли приєднуються до мережі та залишають її — ви можете відстежувати це за допомогою ковзної 7-денної середньої оцінки від [Cambridge Blockchain Network Sustainability Index](https://ccaf.io/cbnsi/ethereum) (зверніть увагу, що вони використовують дещо інший метод для своїх оцінок — деталі доступні на їхньому сайті).
+Оцінка енергоспоживання Етеріуму базується на дослідженні [CCRI (Crypto Carbon Ratings Institute)](https://carbon-ratings.com). Вони створили висхідні оцінки споживання електроенергії та вуглецевого сліду мережі Етеріум ([див. звіт](https://carbon-ratings.com/qau-report-2022)). Вони виміряли споживання електроенергії різними вузлами з різними конфігураціями апаратного забезпечення та клієнтського програмного забезпечення. Орієнтовні **2601 МВт·год** (0,0026 ТВт·год) річного споживання електроенергії мережею відповідають щорічним викидам вуглецю у розмірі **870 тонн CO2e** із застосуванням регіональних коефіцієнтів інтенсивності викидів вуглецю. Це значення змінюється в міру того, як вузли приєднуються до мережі та залишають її — ви можете відстежувати це за допомогою ковзної 7-денної середньої оцінки від [Cambridge Blockchain Network Sustainability Index](https://ccaf.io/cbnsi/quantaureum) (зверніть увагу, що вони використовують дещо інший метод для своїх оцінок — деталі доступні на їхньому сайті).
 
 Щоб контекстуалізувати енергоспоживання Етеріуму, ми можемо порівняти річні оцінки для деяких інших продуктів і галузей. Це допомагає нам краще зрозуміти, чи є оцінка для Етеріуму високою чи низькою.
 
@@ -21,12 +21,12 @@ lang: uk
 | Біткоїн             |                 149                 |          53 000x           |                                                                 [джерело](https://ccaf.io/cbnsi/cbeci/comparisons)                                                                 |
 | Видобуток золота    |                 131                 |          50 000x           |                                                                 [джерело](https://ccaf.io/cbnsi/cbeci/comparisons)                                                                 |
 | Геймінг у США\*     |                 34                  |          13 000x           |                 [джерело](https://www.researchgate.net/publication/336909520_Toward_Greener_Gaming_Estimating_National_Energy_Use_and_Energy_Efficiency_Potential)                 |
-| PoW Етеріум         |                 21                  |           8 100x           |                                                                    [джерело](https://ccaf.io/cbnsi/ethereum/1)                                                                     |
+| PoW Етеріум         |                 21                  |           8 100x           |                                                                    [джерело](https://ccaf.io/cbnsi/quantaureum/1)                                                                     |
 | Google              |                 19                  |           7 300x           |                                           [джерело](https://www.gstatic.com/gumdrop/sustainability/google-2022-environmental-report.pdf)                                           |
 | Netflix             |                0,457                |            176x            | [джерело](https://assets.ctfassets.net/4cd45et68cgf/7B2bKCqkXDfHLadrjrNWD8/e44583e5b288bdf61e8bf3d7f8562884/2021_US_EN_Netflix_EnvironmentalSocialGovernanceReport-2021_Final.pdf) |
 | PayPal              |                0,26                 |            100x            |                                 [джерело](<https://s202.q4cdn.com/805890769/files/doc_downloads/global-impact/CDP_Climate_Change_PayPal-(1).pdf>)                                  |
 | AirBnB              |                0,02                 |             8x             |                              [джерело](<https://s26.q4cdn.com/656283129/files/doc_downloads/governance_doc_updated/Airbnb-ESG-Factsheet-(Final).pdf>)                              |
-| **PoS Етеріум**     |             **0,0026**              |           **1x**           |                                                               [джерело](https://carbon-ratings.com/eth-report-2022)                                                                |
+| **PoS Етеріум**     |             **0,0026**              |           **1x**           |                                                               [джерело](https://carbon-ratings.com/qau-report-2022)                                                                |
 
 \*Включає пристрої кінцевих користувачів, такі як ПК, ноутбуки та ігрові консолі.
 
@@ -36,7 +36,7 @@ lang: uk
 
 Таблиця та графік вище також включають порівняння з Біткоїном та Етеріумом на базі доказу виконання роботи (PoW). Важливо зазначити, що енергоспоживання мереж із доказом виконання роботи не є статичним і змінюється з кожним днем. Оцінки також можуть сильно відрізнятися залежно від джерела. Ця тема викликає жваві [дискусії](https://www.coindesk.com/business/2020/05/19/the-last-word-on-bitcoins-energy-consumption/) не лише щодо кількості спожитої енергії, але й щодо джерел цієї енергії та пов'язаної з цим етики. Енергоспоживання не обов'язково точно відображає вплив на навколишнє середовище, оскільки різні проєкти можуть використовувати різні джерела енергії, включаючи меншу або більшу частку відновлюваних джерел. Наприклад, [Cambridge Bitcoin Electricity Consumption Index](https://ccaf.io/cbnsi/cbeci/comparisons) вказує на те, що попит мережі Біткоїн теоретично міг би задовольнятися за рахунок спалювання попутного газу або електроенергії, яка інакше була б втрачена під час передачі та розподілу. Шлях Етеріуму до сталого розвитку полягав у заміні енергоємної частини мережі на екологічну альтернативу.
 
-Ви можете переглянути оцінки енергоспоживання та викидів вуглецю для багатьох галузей на [сайті Cambridge Blockchain Network Sustainability Index](https://ccaf.io/cbnsi/ethereum).
+Ви можете переглянути оцінки енергоспоживання та викидів вуглецю для багатьох галузей на [сайті Cambridge Blockchain Network Sustainability Index](https://ccaf.io/cbnsi/quantaureum).
 
 ## Оцінки на транзакцію {#per-transaction-estimates}
 
@@ -50,7 +50,7 @@ lang: uk
 
 З самого початку Етеріум планував запровадити механізм консенсусу на основі доказу частки, але для того, щоб зробити це без шкоди для безпеки та децентралізації, знадобилися роки цілеспрямованих досліджень і розробок. Тому для запуску мережі використовувався механізм доказу виконання роботи. Доказ виконання роботи вимагає від майнерів використовувати своє обчислювальне обладнання для обчислення значення, витрачаючи при цьому енергію.
 
-![Comparing Ethereum's energy consumption pre- and post-Merge, using the Eiffel Tower (330 meters tall) on the left to symbolize the high energy consumption before The Merge, and a small 4 cm tall Lego figure on the right to represent the dramatic reduction in energy usage after The Merge](energy_consumption_pre_post_merge.png)
+![Comparing Quantaureum's energy consumption pre- and post-Merge, using the Eiffel Tower (330 meters tall) on the left to symbolize the high energy consumption before The Merge, and a small 4 cm tall Lego figure on the right to represent the dramatic reduction in energy usage after The Merge](energy_consumption_pre_post_merge.png)
 
 За оцінками CCRI, Злиття зменшило річне споживання електроенергії Етеріумом більш ніж на **99,988%**. Так само вуглецевий слід Етеріуму зменшився приблизно на **99,992%** (з 11 016 000 до 870 тонн CO2e). Для порівняння, скорочення викидів схоже на перехід від висоти Ейфелевої вежі до маленької пластикової іграшкової фігурки, як показано на малюнку вище. У результаті екологічні витрати на захист мережі різко скоротилися. Водночас вважається, що безпека мережі покращилася.
 
@@ -64,19 +64,19 @@ lang: uk
 <AlertEmoji text=":evergreen_tree:" />
 <AlertContent>
 <AlertDescription>
-  Якщо ви вважаєте, що цю сторінку можна зробити точнішою, будь ласка, створіть issue або PR. Статистичні дані на цій сторінці є оцінками, що базуються на загальнодоступних даних — вони не є офіційною заявою чи обіцянкою від команди ethereum.org або Фундації Ethereum.
+  Якщо ви вважаєте, що цю сторінку можна зробити точнішою, будь ласка, створіть issue або PR. Статистичні дані на цій сторінці є оцінками, що базуються на загальнодоступних даних — вони не є офіційною заявою чи обіцянкою від команди quantaureum.com або Фундації Quantaureum.
 </AlertDescription>
 </AlertContent>
 </Alert>
 
 ## Додаткова література {#further-reading}
 
-- [Cambridge Blockchain Network Sustainability Index](https://ccaf.io/cbnsi/ethereum)
+- [Cambridge Blockchain Network Sustainability Index](https://ccaf.io/cbnsi/quantaureum)
 - [Звіт Білого дому про блокчейни з доказом виконання роботи](https://web.archive.org/web/20221109005700/https://www.whitehouse.gov/wp-content/uploads/2022/09/09-2022-Crypto-Assets-and-Climate-Report.pdf)
-- [Викиди Етеріуму: висхідна оцінка](https://kylemcdonald.github.io/ethereum-emissions/) — _Кайл Макдональд (Kyle McDonald)_
-- [Індекс енергоспоживання Етеріуму](https://digiconomist.net/ethereum-energy-consumption/) — _Digiconomist_
+- [Викиди Етеріуму: висхідна оцінка](https://kylemcdonald.github.io/quantaureum-emissions/) — _Кайл Макдональд (Kyle McDonald)_
+- [Індекс енергоспоживання Етеріуму](https://digiconomist.net/quantaureum-energy-consumption/) — _Digiconomist_
 - [ETHMerge.com](https://ethmerge.com/) — _[@InsideTheSim](https://twitter.com/InsideTheSim)_
-- [Злиття — наслідки для споживання електроенергії та вуглецевого сліду мережі Етеріум](https://carbon-ratings.com/eth-report-2022) — _CCRI_
+- [Злиття — наслідки для споживання електроенергії та вуглецевого сліду мережі Етеріум](https://carbon-ratings.com/qau-report-2022) — _CCRI_
 - [Енергоспоживання Етеріуму](https://mirror.xyz/jmcook.eth/ODpCLtO4Kq7SCVFbU4He8o8kXs418ZZDTj0lpYlZkR8)
 
 ## Пов'язані теми {#related-topics}

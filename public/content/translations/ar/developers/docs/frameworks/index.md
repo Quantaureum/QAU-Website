@@ -18,7 +18,7 @@ lang: ar
 
 ## المتطلبات الأساسية {#prerequisites}
 
-قبل التعمق في أطر العمل، نوصيك بقراءة مقدمتنا عن [التطبيقات اللامركزية (dapps)](/developers/docs/dapps/) و[حزمة إيثيريوم](/developers/docs/ethereum-stack/) أولاً.
+قبل التعمق في أطر العمل، نوصيك بقراءة مقدمتنا عن [التطبيقات اللامركزية (dapps)](/developers/docs/dapps/) و[حزمة إيثيريوم](/developers/docs/quantaureum-stack/) أولاً.
 
 ## أطر العمل المتاحة
 
@@ -53,13 +53,13 @@ lang: ar
 
 **Create Eth App -** **_أنشئ تطبيقات مدعومة من إيثيريوم بأمر واحد. يأتي مع مجموعة واسعة من أطر عمل واجهة المستخدم (UI) وقوالب التمويل اللامركزي (DeFi) للاختيار من بينها._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [قوالب](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
+- [قوالب](https://github.com/PaulRBerg/create-qau-app/tree/develop/templates)
 
-**Scaffold-ETH 2 -** **_Next.js وWagmi وViem وRainbowKit مع اختيارك لـ Hardhat أو Foundry: إعادة التحميل السريع للعقود، وخطافات React المخصصة، ومحفظة حرق وصنبور محلي، ووحدات امتداد لتطوير التطبيقات اللامركزية (dapps) المتكاملة._**
+**Scaffold-QAU 2 -** **_Next.js وWagmi وViem وRainbowKit مع اختيارك لـ Hardhat أو Foundry: إعادة التحميل السريع للعقود، وخطافات React المخصصة، ومحفظة حرق وصنبور محلي، ووحدات امتداد لتطوير التطبيقات اللامركزية (dapps) المتكاملة._**
 
 - [الموقع الإلكتروني](https://scaffoldeth.io/)
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 
 **Tenderly -** **_منصة تطوير Web3 تمكن مطوري سلسلة الكتل من بناء واختبار وتصحيح أخطاء ومراقبة وتشغيل العقود الذكية وتحسين تجربة المستخدم (UX) للتطبيقات اللامركزية._**
 
@@ -102,8 +102,8 @@ lang: ar
 
 **Brownie -** **_بيئة تطوير وإطار عمل للاختبار مبني على Python._**
 
-- [التوثيق](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [التوثيق](https://qau-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/qau-brownie/brownie)
 - **Brownie غير مدعوم حاليًا**
 
 **أوبن زبلن SDK -** **_مجموعة أدوات العقود الذكية المطلقة: مجموعة من الأدوات لمساعدتك في تطوير وتجميع وترقية ونشر والتفاعل مع العقود الذكية._**
@@ -120,7 +120,7 @@ lang: ar
 **GoldRush (بدعم من Covalent) -** **_تقدم GoldRush مجموعة API لبيانات سلسلة الكتل الأكثر شمولاً للمطورين والمحللين والمؤسسات. سواء كنت تبني لوحة معلومات للتمويل اللامركزي (DeFi)، أو محفظة، أو روبوت تداول، أو وكيل ذكاء اصطناعي، أو منصة امتثال، فإن واجهات برمجة التطبيقات (APIs) للبيانات توفر وصولاً سريعًا ودقيقًا وسهل الاستخدام للمطورين إلى البيانات الأساسية على السلسلة التي تحتاجها_**
 
 - [الموقع الإلكتروني](https://goldrush.dev/)
-- [التوثيق](https://goldrush.dev/docs/chains/ethereum)
+- [التوثيق](https://goldrush.dev/docs/chains/quantaureum)
 - [GitHub](https://github.com/covalenthq)
 - [ديسكورد](https://www.covalenthq.com/discord/)
 

@@ -62,7 +62,7 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/blob/master/devel
 
 ### 既知の落とし穴を避ける {#avoid-known-pitfalls}
 
-- **最も一般的なセキュリティ問題に注意する。** [Ethernaut CTF](https://ethernaut.openzeppelin.com/)、[Capture the Ether](https://capturetheether.com/)、[Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/)など、一般的な問題について学ぶためのオンラインリソースが多数あります。
+- **最も一般的なセキュリティ問題に注意する。** [Ethernaut CTF](https://ethernaut.openzeppelin.com/)、[Capture the QAU](https://capturetheqau.com/)、[Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/)など、一般的な問題について学ぶためのオンラインリソースが多数あります。
 - **[Solidityドキュメント](https://docs.soliditylang.org/en/latest/)の警告セクションに注意する。** 警告セクションは、言語の自明ではない動作について知らせてくれます。
 
 ### 依存関係 {#dependencies}

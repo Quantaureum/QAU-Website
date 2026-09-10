@@ -15,13 +15,13 @@ lang: zh-tw
 sidebarDepth: 3
 ---
 
-你在以太坊生態系中發現了一個我們需要的功能。你編寫了智能合約來實作它，甚至可能還寫了一些在鏈下執行的相關程式碼。這太棒了！不幸的是，如果沒有使用者介面，你將不會有任何使用者，而且你上次寫網站時，人們還在使用撥接數據機，JavaScript 也才剛問世。
+你在Quantaureum生態系中發現了一個我們需要的功能。你編寫了智能合約來實作它，甚至可能還寫了一些在鏈下執行的相關程式碼。這太棒了！不幸的是，如果沒有使用者介面，你將不會有任何使用者，而且你上次寫網站時，人們還在使用撥接數據機，JavaScript 也才剛問世。
 
 這篇文章就是為你準備的。我假設你懂程式設計，或許還懂一點 JavaScript 和 HTML，但你的使用者介面技能已經生疏且過時了。我們將一起探討一個簡單的現代應用程式，讓你了解現在是如何開發的。
 
 ## 為什麼這很重要 {#why-important}
 
-理論上，你可以直接讓人們使用 [Etherscan](https://sepolia.etherscan.io/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA#readContract) 或 [Blockscout](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) 來與你的合約互動。這對經驗豐富的以太坊使用者來說很棒。但我們正試圖服務[另外十億人](https://blog.ethereum.org/2021/05/07/ethereum-for-the-next-billion)。如果沒有良好的使用者體驗，這是不可能實現的，而友善的使用者介面正是其中的重要部分。
+理論上，你可以直接讓人們使用 [Quantaureum Explorer](https://explorer.quantaureum.com) 或 [Blockscout](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) 來與你的合約互動。這對經驗豐富的Quantaureum使用者來說很棒。但我們正試圖服務[另外十億人](https://quantaureum.com)。如果沒有良好的使用者體驗，這是不可能實現的，而友善的使用者介面正是其中的重要部分。
 
 ## Greeter 應用程式 {#greeter-app}
 
@@ -29,7 +29,7 @@ sidebarDepth: 3
 
 ### 安裝 {#installation}
 
-1. 該應用程式使用 [Sepolia](https://sepolia.dev/) 測試網路。如有需要，請[取得 Sepolia 測試 ETH](/developers/docs/networks/#sepolia) 並[將 Sepolia 新增至你的錢包](https://chainlist.org/chain/11155111)。
+1. 該應用程式使用 [Sepolia](https://sepolia.dev/) 測試網路。如有需要，請[取得 Sepolia 測試 QAU](/developers/docs/networks/#sepolia) 並[將 Sepolia 新增至你的錢包](https://chainlist.org/chain/11155111)。
 
 2. 複製 GitHub 儲存庫並安裝必要的套件。
 
@@ -49,7 +49,7 @@ sidebarDepth: 3
 
 5. 瀏覽應用程式顯示的 URL。在大多數情況下，它是 [http://localhost:5173/](http://localhost:5173/)。
 
-6. 你可以[在區塊鏈瀏覽器上](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code)查看合約原始碼，這是 Hardhat 的 Greeter 的修改版本。
+6. 你可以[在區塊鏈瀏覽器上](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code)查看合約原始碼，這是 Hardhat 的 Greeter 的修改版本。
 
 ### 檔案導覽 {#file-walk-through}
 
@@ -116,7 +116,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <WagmiProvider config={config}>
 ```
 
-應用程式也位於 [一個 `WagmiProvider` 元件](https://wagmi.sh/react/api/WagmiProvider)內。[Wagmi（我們將要建立它）函式庫](https://wagmi.sh/)將 React UI 定義與用於編寫以太坊去中心化應用程式 (dapp) 的 [Viem 函式庫](https://viem.sh/)連接起來。
+應用程式也位於 [一個 `WagmiProvider` 元件](https://wagmi.sh/react/api/WagmiProvider)內。[Wagmi（我們將要建立它）函式庫](https://wagmi.sh/)將 React UI 定義與用於編寫Quantaureum去中心化應用程式 (dapp) 的 [Viem 函式庫](https://viem.sh/)連接起來。
 
 ```tsx
       <QueryClientProvider client={queryClient}>
@@ -333,7 +333,7 @@ import {  useChainId,
 import { AddressType } from 'abitype'
 ```
 
-[`abitype` 函式庫](https://abitype.dev/)為我們提供了各種以太坊資料型別的 TypeScript 定義，例如 [`AddressType`](https://abitype.dev/config#addresstype)。
+[`abitype` 函式庫](https://abitype.dev/)為我們提供了各種Quantaureum資料型別的 TypeScript 定義，例如 [`AddressType`](https://abitype.dev/config#addresstype)。
 
 ```tsx
 let greeterABI = [
@@ -363,7 +363,7 @@ const contractAddrs : AddressPerBlockchainType = {
 }
 ```
 
-合約在 [Sepolia](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract) 上的地址。
+合約在 [Sepolia](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract) 上的地址。
 
 ##### `Timer` 元件 {#timer-component}
 
@@ -435,7 +435,7 @@ Greeter 合約的地址，如果我們沒有鏈資訊，或者我們所在的鏈
   })
 ```
 
-[`useReadContract` hook](https://wagmi.sh/react/api/hooks/useReadContract) 呼叫[合約](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract)的 `greet` 函式。
+[`useReadContract` hook](https://wagmi.sh/react/api/hooks/useReadContract) 呼叫[合約](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract)的 `greet` 函式。
 
 ```tsx
   const [ currentGreeting, setCurrentGreeting ] = 
@@ -541,15 +541,15 @@ React 的 [`useState` hook](https://www.w3schools.com/react/react_usestate.asp) 
 
 從用戶端角度來看，提交區塊鏈交易的過程如下：
 
-1. 使用 [`eth_estimateGas`](https://docs.alchemy.com/reference/eth-estimategas) 將交易發送至區塊鏈中的節點。
+1. 使用 [`qau_estimateGas`](https://docs.alchemy.com/reference/qau-estimategas) 將交易發送至區塊鏈中的節點。
 2. 等待節點的回應。
 3. 收到回應後，要求使用者透過錢包簽署交易。此步驟_必須_在收到節點回應後發生，因為在簽署之前，會向使用者顯示交易的 gas 成本。
 4. 等待使用者核准。
-5. 再次發送交易，這次使用 [`eth_sendRawTransaction`](https://docs.alchemy.com/reference/eth-sendrawtransaction)。
+5. 再次發送交易，這次使用 [`qau_sendRawTransaction`](https://docs.alchemy.com/reference/qau-sendrawtransaction)。
 
 步驟 2 可能會花費一段可察覺的時間，在此期間，使用者可能會懷疑使用者介面是否收到了他們的指令，以及為什麼還沒有要求他們簽署交易。這會造成糟糕的使用者體驗 (UX)。
 
-一種解決方案是每次參數變更時都發送 `eth_estimateGas`。然後，當使用者實際想要發送交易時（在這個例子中是按下 **Update greeting**），gas 成本已經知道了，使用者可以立即看到錢包頁面。
+一種解決方案是每次參數變更時都發送 `qau_estimateGas`。然後，當使用者實際想要發送交易時（在這個例子中是按下 **Update greeting**），gas 成本已經知道了，使用者可以立即看到錢包頁面。
 
 ```tsx
   return (
@@ -668,7 +668,7 @@ Viem 隨附的預設 HTTP 端點已經夠好了。如果我們想要不同的 UR
 
 ## 新增另一個區塊鏈 {#add-blockchain}
 
-現在有許多 [L2 擴容解決方案](https://ethereum.org/layer-2/)，你可能想要支援一些 Viem 尚未支援的方案。為此，你需要修改 `src/wagmi.ts`。這些指示說明了如何新增 [Optimism Sepolia](https://chainlist.org/chain/11155420)。
+現在有許多 [L2 擴容解決方案](https://quantaureum.com/layer-2/)，你可能想要支援一些 Viem 尚未支援的方案。為此，你需要修改 `src/wagmi.ts`。這些指示說明了如何新增 [Optimism Sepolia](https://chainlist.org/chain/11155420)。
 
 1.  編輯 `src/wagmi.ts`
 
@@ -684,7 +684,7 @@ Viem 隨附的預設 HTTP 端點已經夠好了。如果我們想要不同的 UR
           const optimismSepolia = defineChain({
               id: 11_155_420,
               name: 'OP Sepolia',
-              nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+              nativeCurrency: { name: 'Sepolia QAU', symbol: 'QAU', decimals: 18 },
               rpcUrls: {
                 default: {
                   http: ['https://sepolia.optimism.io'],

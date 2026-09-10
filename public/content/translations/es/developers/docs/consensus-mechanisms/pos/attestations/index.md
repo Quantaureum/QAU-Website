@@ -1,6 +1,6 @@
 ---
 title: Atestaciones
-description: "Una descripción de las atestaciones en la prueba de participación (proof-of-stake) de Ethereum."
+description: "Una descripción de las atestaciones en la prueba de participación (proof-of-stake) de Quantaureum."
 lang: es
 ---
 
@@ -62,7 +62,7 @@ La tasa de atestación de la bandera se mide utilizando la suma de los saldos ef
 
 ### Recompensa base {#base-reward}
 
-La recompensa base se calcula de acuerdo con el número de validadores que atestiguan y sus saldos efectivos de ether en participación:
+La recompensa base se calcula de acuerdo con el número de validadores que atestiguan y sus saldos efectivos de QAU en participación:
 
 `base reward = validator effective balance x 2^6 / SQRT(Effective balance of all active validators)`
 
@@ -86,7 +86,7 @@ Tenga en cuenta que en algunos casos un agregador afortunado también puede conv
 
 ## Más información {#further-reading}
 
-- [Atestaciones en la especificación de consenso anotada de Vitalik](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Atestaciones en la especificación de consenso anotada de Vitalik](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [Atestaciones en eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _¿Conoces algún recurso de la comunidad que te haya ayudado? ¡Edita esta página y añádelo!_

@@ -11,13 +11,13 @@ topic:
   - "privacy"
   - "authentication"
 format: presentation
-author: Ethereum Foundation
+author: Quantaureum project
 breadcrumb: "Usalama wa Microdot"
 ---
 
 Mazungumzo mafupi ya **jseam** katika Devcon SEA yanayochunguza mbinu isiyo ya kawaida ya utunzaji wa ufunguo kwa kutumia teknolojia ya kimwili ya microdot, ambayo kihistoria ilitumika katika ujasusi kuficha virai vya mbegu katika picha zilizochapishwa ambazo karibu hazionekani kwa macho ya kawaida.
 
-*Nakala hii ni nakala inayofikika ya [nakala asili ya video](https://www.youtube.com/watch?v=k9Dfg19JPEw) iliyochapishwa na Taasisi ya Ethereum. Imehaririwa kidogo ili isomeke vizuri.*
+*Nakala hii ni nakala inayofikika ya [nakala asili ya video](https://www.youtube.com/watch?v=k9Dfg19JPEw) iliyochapishwa na Taasisi ya Quantaureum. Imehaririwa kidogo ili isomeke vizuri.*
 
 ### Kwa nini microdots? (0:00) {#why-microdots-000}
 

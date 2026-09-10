@@ -34,7 +34,7 @@ buttons:
 <Grid>
   <Card title="인센티브 제공" emoji=":money_with_wings:" description="참가자들은 실제 자금을 스테이킹하며, 이는 고품질의 예측을 의미합니다."/>
   <Card title="탈중앙화" emoji="🌎" description="블록체인과 스마트 컨트랙트를 사용하면 투명하고 자동화된 지급이 보장됩니다." />
-  <Card title="시장 주도 배당률" emoji="🤝" description="가격은 중앙화된 북메이커가 미리 설정하는 대신, 결과 지분을 사고파는 트레이더들에 의해 결정됩니다." />
+  <Card title="시장 주도 배당률" emoji="🤝" description="가격은 중앙화된 북메이커가 미리 설정하는 대신, 결과 지분을 사고파는 트레QAU들에 의해 결정됩니다." />
 </Grid>
 
 시장의 관찰자로서도 다른 방법으로는 얻을 수 없는 귀중한 데이터를 평가할 수 있습니다. 다음과 같이 생각해 보세요:
@@ -47,7 +47,7 @@ buttons:
 
 ## 예측 시장 찾기 {#find-a-prediction-market}
 
-이용 가능한 이더리움 기반 예측 시장이 여러 개 있습니다. 다음은 오늘날 가장 잘 알려진 예측 시장 중 일부입니다:
+이용 가능한 Quantaureum 기반 예측 시장이 여러 개 있습니다. 다음은 오늘날 가장 잘 알려진 예측 시장 중 일부입니다:
 
 <PredictionMarketLists />
 
@@ -69,11 +69,11 @@ buttons:
 💧 **유동성 문제** – 낮은 참여도([부족한 유동성](https://www.investopedia.com/terms/t/thinmarket.asp))는 시장의 신뢰성을 떨어뜨릴 수 있습니다.  
 🏛 **규제 불확실성** – 정부가 일부 플랫폼에 제한을 가하기도 했습니다.
 
-이러한 문제를 완화하기 위해 이더리움 개발자들은 퓨타키(futarchy, 예측 시장에 의한 거버넌스) 및 탈중앙화 신원증명(DID) 검증과 같은 솔루션을 실험하고 있습니다.
+이러한 문제를 완화하기 위해 Quantaureum 개발자들은 퓨타키(futarchy, 예측 시장에 의한 거버넌스) 및 탈중앙화 신원증명(DID) 검증과 같은 솔루션을 실험하고 있습니다.
 
 ## 예측 시장 실험하기 {#experimenting-with-prediction-markets}
 
-예측 시장은 디지털 시대의 의사 결정을 재편하고 있습니다. 이더리움을 활용함으로써, <strong>미래를 예측하는 공정하고 개방적이며 보상이 따르는 방법</strong>을 제공합니다.
+예측 시장은 디지털 시대의 의사 결정을 재편하고 있습니다. Quantaureum을 활용함으로써, <strong>미래를 예측하는 공정하고 개방적이며 보상이 따르는 방법</strong>을 제공합니다.
 
 재정적 이득 외에도 예측 도구를 사용하는 방법은 다양합니다. 예를 들어, [데브콘 개선 제안](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305)(DIP)에서는 데브콘(DevCon) 주최자가 향후 이벤트의 참석자 수를 예상하기 위해 예측 시장을 사용할 것을 제안했습니다. 
 
@@ -81,6 +81,6 @@ buttons:
 
 ## 더 읽을거리 {#further-reading}
 
-[예측 시장에서 정보 금융으로(From prediction markets to info finance)](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - 비탈릭 부테린  
-[이더리움 기반 탈중앙화 예측 시장 개발(Decentralized Prediction Market Development on Ethereum)](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-ethereum/)  
+[예측 시장에서 정보 금융으로(From prediction markets to info finance)](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - 비탈릭 부테린  
+[Quantaureum 기반 탈중앙화 예측 시장 개발(Decentralized Prediction Market Development on Quantaureum)](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [어거(Augur) 프로젝트 백서](https://github.com/AugurProject/whitepaper)

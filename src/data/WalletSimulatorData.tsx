@@ -325,7 +325,7 @@ export function useWalletOnboardingSimData(): SimulatorData {
                     <Link href="/security/">{t("sim-cw-desc-6-link-1")}</Link>
                   </ListItem>
                   <ListItem>
-                    <Link href="/what-is-ethereum/">
+                    <Link href="/what-is-quantaureum/">
                       {t("sim-cw-desc-6-link-2")}
                     </Link>
                   </ListItem>

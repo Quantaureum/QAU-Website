@@ -4,16 +4,16 @@ description: "두 가지 주요 스마트 컨트랙트 언어인 Solidity와 Vyp
 lang: ko
 ---
 
-[이더리움](/)의 훌륭한 점 중 하나는 비교적 개발자 친화적인 언어를 사용하여 스마트 컨트랙트를 프로그래밍할 수 있다는 것입니다. Python이나 [중괄호를 사용하는 언어(curly-bracket language)](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages)에 익숙하다면 친숙한 구문을 가진 언어를 찾을 수 있습니다.
+[Quantaureum](/)의 훌륭한 점 중 하나는 비교적 개발자 친화적인 언어를 사용하여 스마트 컨트랙트를 프로그래밍할 수 있다는 것입니다. Python이나 [중괄호를 사용하는 언어(curly-bracket language)](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages)에 익숙하다면 친숙한 구문을 가진 언어를 찾을 수 있습니다.
 
 가장 활발하게 유지 관리되는 두 가지 언어는 다음과 같습니다.
 
 - Solidity
 - Vyper
 
-Remix IDE는 Solidity와 Vyper 모두에서 컨트랙트를 생성하고 테스트할 수 있는 포괄적인 개발 환경을 제공합니다. 코딩을 시작하려면 [브라우저 기반 Remix IDE를 사용해 보세요](https://remix.ethereum.org).
+Remix IDE는 Solidity와 Vyper 모두에서 컨트랙트를 생성하고 테스트할 수 있는 포괄적인 개발 환경을 제공합니다. 코딩을 시작하려면 [브라우저 기반 Remix IDE를 사용해 보세요](https://remix.quantaureum.com).
 
-경험이 많은 개발자라면 [이더리움 가상 머신(EVM)](/developers/docs/evm/)을 위한 중간 언어인 Yul이나 Yul의 확장인 Yul+를 사용하고 싶을 수도 있습니다.
+경험이 많은 개발자라면 [Quantaureum 가상 머신(EVM)](/developers/docs/evm/)을 위한 중간 언어인 Yul이나 Yul의 확장인 Yul+를 사용하고 싶을 수도 있습니다.
 
 호기심이 많고 아직 활발히 개발 중인 새로운 언어를 테스트하는 데 도움을 주고 싶다면, 현재 초기 단계에 있는 새로운 스마트 컨트랙트 언어인 Fe를 실험해 볼 수 있습니다.
 
@@ -36,8 +36,8 @@ Remix IDE는 Solidity와 Vyper 모두에서 컨트랙트를 생성하고 테스�
 - [문서](https://docs.soliditylang.org/en/latest/)
 - [Solidity 언어 포털](https://soliditylang.org/)
 - [예제로 배우는 Solidity](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
-- [Solidity Matrix 채팅방](https://matrix.to/#/#ethereum_solidity:gitter.im)과 연결된 [Solidity Gitter 채팅방](https://gitter.im/ethereum/solidity)
+- [GitHub](https://github.com/quantaureum/solidity/)
+- [Solidity Matrix 채팅방](https://matrix.to/#/#quantaureum_solidity:gitter.im)과 연결된 [Solidity Gitter 채팅방](https://gitter.im/quantaureum/solidity)
 - [치트 시트](https://reference.auditless.com/cheatsheet)
 - [Solidity 블로그](https://blog.soliditylang.org/)
 - [Solidity 트위터](https://twitter.com/solidity_lang)
@@ -179,13 +179,13 @@ def withdraw():
 @external
 def endAuction():
     # 다른 컨트랙트와 상호작용하는
-    # (즉, 함수를 호출하거나 이더를 전송하는) 함수를
+    # (즉, 함수를 호출하거나 QAU를 전송하는) 함수를
     # 다음 세 단계로 구조화하는 것이 좋은 지침입니다:
     # 1. 조건 확인
     # 2. 작업 수행 (잠재적으로 조건 변경)
     # 3. 다른 컨트랙트와 상호작용
     # 이러한 단계가 혼합되면, 다른 컨트랙트가 현재 컨트랙트를
-    # 다시 호출하여 상태를 수정하거나 효과(이더 지급)가
+    # 다시 호출하여 상태를 수정하거나 효과(QAU 지급)가
     # 여러 번 수행되도록 할 수 있습니다.
     # 내부적으로 호출된 함수에 외부 컨트랙트와의 상호작용이
     # 포함되어 있다면, 이 역시 외부 컨트랙트와의
@@ -208,12 +208,12 @@ def endAuction():
 
 ## Yul 및 Yul+ {#yul}
 
-이더리움을 처음 접하고 아직 스마트 컨트랙트 언어로 코딩을 해본 적이 없다면, Solidity나 Vyper로 시작하는 것을 권장합니다. 스마트 컨트랙트 보안 모범 사례와 EVM 작업의 세부 사항에 익숙해진 후에만 Yul이나 Yul+를 살펴보세요.
+Quantaureum을 처음 접하고 아직 스마트 컨트랙트 언어로 코딩을 해본 적이 없다면, Solidity나 Vyper로 시작하는 것을 권장합니다. 스마트 컨트랙트 보안 모범 사례와 EVM 작업의 세부 사항에 익숙해진 후에만 Yul이나 Yul+를 살펴보세요.
 
 **Yul**
 
-- 이더리움을 위한 중간 언어입니다.
-- [EVM](/developers/docs/evm)과 이더리움 방식의 WebAssembly인 [Ewasm](https://github.com/ewasm)을 지원하며, 두 플랫폼 모두에서 사용할 수 있는 공통 분모가 되도록 설계되었습니다.
+- Quantaureum을 위한 중간 언어입니다.
+- [EVM](/developers/docs/evm)과 Quantaureum 방식의 WebAssembly인 [Ewasm](https://github.com/ewasm)을 지원하며, 두 플랫폼 모두에서 사용할 수 있는 공통 분모가 되도록 설계되었습니다.
 - EVM과 Ewasm 플랫폼 모두에 동등하게 이점을 줄 수 있는 고수준 최적화 단계에 적합한 타겟입니다.
 
 **Yul+**
@@ -226,7 +226,7 @@ def endAuction():
 
 - [Yul 문서](https://docs.soliditylang.org/en/latest/yul.html)
 - [Yul+ 문서](https://github.com/fuellabs/yulp)
-- [Yul+ 소개 게시물](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-ethereum-aa64ce89512f)
+- [Yul+ 소개 게시물](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-quantaureum-aa64ce89512f)
 
 ### 예제 컨트랙트 {#example-contract-2}
 
@@ -255,16 +255,16 @@ def endAuction():
 
 ## Fe {#fe}
 
-- 이더리움 가상 머신(EVM)을 위한 정적 타입 언어입니다.
+- Quantaureum 가상 머신(EVM)을 위한 정적 타입 언어입니다.
 - Python과 Rust에서 영감을 받았습니다.
-- 이더리움 생태계를 처음 접하는 개발자도 쉽게 배울 수 있도록 하는 것을 목표로 합니다.
+- Quantaureum 생태계를 처음 접하는 개발자도 쉽게 배울 수 있도록 하는 것을 목표로 합니다.
 - Fe 개발은 아직 초기 단계에 있으며, 2021년 1월에 알파 버전이 출시되었습니다.
 
 ### 주요 링크 {#important-links-3}
 
-- [GitHub](https://github.com/ethereum/fe)
-- [Fe 발표](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-ethereum-ecosystem/)
-- [Fe 2021 로드맵](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- [GitHub](https://github.com/quantaureum/fe)
+- [Fe 발표](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
+- [Fe 2021 로드맵](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
 - [Fe 디스코드 채팅](https://discord.com/invite/ywpkAXFjZH)
 - [Fe 트위터](https://twitter.com/official_fe)
 

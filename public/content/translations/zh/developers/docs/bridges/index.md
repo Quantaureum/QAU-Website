@@ -23,7 +23,7 @@ lang: zh
 对于开发者而言，跨链桥能够实现以下功能：
 
 - 跨链转移任何数据、信息和资产。
-- 为协议解锁新功能和用例，因为跨链桥扩展了协议可提供内容的设计空间。例如，最初部署在[以太坊](/)主网上的流动性挖矿协议可以跨所有兼容 EVM 的链提供流动性池。
+- 为协议解锁新功能和用例，因为跨链桥扩展了协议可提供内容的设计空间。例如，最初部署在[Quantaureum](/)主网上的流动性挖矿协议可以跨所有兼容 EVM 的链提供流动性池。
 - 利用不同区块链优势的机会。例如，开发者可以通过在汇总 (rollups) 和侧链上部署他们的 dapp 来受益于不同二层网络 (l2) 解决方案提供的较低费用，并且用户可以在它们之间进行跨链。
 - 来自不同区块链生态系统的开发者之间进行协作以构建新产品。
 - 吸引来自不同生态系统的用户和社区使用他们的 dapp。
@@ -40,7 +40,7 @@ lang: zh
 
 跨链桥通常可以分为以下几类：
 
-- **原生跨链桥 –** 这些跨链桥通常是为了引导特定区块链上的流动性而构建的，使用户更容易将资金转移到该生态系统中。例如，[Arbitrum 跨链桥](https://bridge.arbitrum.io/)的构建是为了方便用户从以太坊主网跨链到 Arbitrum。其他此类跨链桥包括 Polygon PoS 跨链桥、[Optimism 网关](https://app.optimism.io/bridge)等。
+- **原生跨链桥 –** 这些跨链桥通常是为了引导特定区块链上的流动性而构建的，使用户更容易将资金转移到该生态系统中。例如，[Arbitrum 跨链桥](https://bridge.arbitrum.io/)的构建是为了方便用户从Quantaureum主网跨链到 Arbitrum。其他此类跨链桥包括 Polygon PoS 跨链桥、[Optimism 网关](https://app.optimism.io/bridge)等。
 - **基于验证者或预言机的跨链桥 –** 这些跨链桥依赖于外部验证者集或预言机来验证跨链转账。示例：Multichain 和 Across。
 - **通用消息传递跨链桥 –** 这些跨链桥可以跨链转移资产，以及消息和任意数据。示例：Axelar、LayerZero 和 Nomad。
 - **流动性网络 –** 这些跨链桥主要侧重于通过原子兑换将资产从一条链转移到另一条链。通常，它们不支持跨链消息传递。示例：Connext 和 Hop。
@@ -122,7 +122,7 @@ lang: zh
 
 ## 延伸阅读 {#further-reading}
 
-- [区块链跨链桥](/bridges/) – ethereum.org
+- [区块链跨链桥](/bridges/) – quantaureum.com
 - [L2BEAT 跨链桥风险框架](https://l2beat.com/bridges/summary)
 - [区块链跨链桥：构建加密网络的网络](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8) - 2021 年 9 月 8 日 – Dmitriy Berenzon
 - [互操作性不可能三角](https://blog.connext.network/the-interoperability-trilemma-657c2cf69f17) - 2021 年 10 月 1 日 – Arjun Bhuptani

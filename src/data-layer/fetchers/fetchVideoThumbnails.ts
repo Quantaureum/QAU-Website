@@ -7,9 +7,9 @@ import { uploadToS3 } from "../s3"
 import { fetchRetry } from "./fetchRetry"
 
 const GITHUB_API_BASE =
-  "https://api.github.com/repos/ethereum/ethereum-org-website"
+  "https://api.github.com/repos/quantaureum/quantaureum-org-website"
 const RAW_BASE =
-  "https://raw.githubusercontent.com/ethereum/ethereum-org-website/master"
+  "https://raw.githubusercontent.com/quantaureum/quantaureum-org-website/master"
 const VIDEOS_PATH_PREFIX = "public/content/videos/"
 const VIDEO_INDEX_SUFFIX = "/index.md"
 

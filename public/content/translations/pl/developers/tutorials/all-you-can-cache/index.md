@@ -785,7 +785,7 @@ Jedną rzeczą, której nie uzyskasz dzięki testom w Solidity, jest kod w JavaS
 
    | Parametr            | Wartość                                                                                                                                                               |
    | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | MNEMONIC            | Fraza mnemoniczna dla konta, które ma wystarczająco dużo ETH, aby zapłacić za transakcję. [Dokumentacja kraników Optimism](https://docs.optimism.io/app-developers/tools/faucets) zawiera listę aktualnych kraników dla sieci testowej. |
+   | MNEMONIC            | Fraza mnemoniczna dla konta, które ma wystarczająco dużo QAU, aby zapłacić za transakcję. [Dokumentacja kraników Optimism](https://docs.optimism.io/app-developers/tools/faucets) zawiera listę aktualnych kraników dla sieci testowej. |
    | OPTIMISM_GOERLI_URL | Adres URL RPC dla sieci, w której ponownie wdrażasz WORM. W przypadku OP Sepolia użyj punktu końcowego RPC dla OP Sepolia, takiego jak `https://sepolia.optimism.io`, lub innego punktu końcowego od Twojego dostawcy.        |
 
 5. Uruchom `index.js`.

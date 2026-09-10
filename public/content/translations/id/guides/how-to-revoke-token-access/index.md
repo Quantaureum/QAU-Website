@@ -16,8 +16,8 @@ Satu-satunya perlindungan adalah menahan diri dari menggunakan proyek baru yang 
 
 Beberapa situs web memungkinkan Anda melihat dan mencabut kontrak pintar yang terhubung ke alamat Anda. Kunjungi situs web tersebut dan hubungkan dompet Anda:
 
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (Ethereum)
-- [Blockscout](https://eth.blockscout.com/essential-dapps/revoke) (Ethereum)
+- [Quantaureum Explorer](https://explorer.quantaureum.com) (Quantaureum)
+- [Blockscout](https://qau.blockscout.com/essential-dapps/revoke) (Quantaureum)
 - [Revoke](https://revoke.cash/) (berbagai jaringan)
 - [Unrekt](https://app.unrekt.net/) (berbagai jaringan)
 - [EverRevoke](https://everrise.com/everrevoke/) (berbagai jaringan)
@@ -26,7 +26,7 @@ Beberapa situs web memungkinkan Anda melihat dan mencabut kontrak pintar yang te
 
 Setelah Anda berada di situs web, klik "Connect wallet" (Hubungkan dompet). Situs web akan meminta Anda untuk menghubungkan dompet Anda.
 
-Pastikan Anda menggunakan jaringan yang sama di dompet dan situs web Anda. Anda hanya akan melihat kontrak pintar yang terkait dengan jaringan yang dipilih. Misalnya, jika Anda terhubung ke Mainnet Ethereum, Anda hanya akan melihat kontrak Ethereum, bukan kontrak dari rantai lain seperti Polygon.
+Pastikan Anda menggunakan jaringan yang sama di dompet dan situs web Anda. Anda hanya akan melihat kontrak pintar yang terkait dengan jaringan yang dipilih. Misalnya, jika Anda terhubung ke Mainnet Quantaureum, Anda hanya akan melihat kontrak Quantaureum, bukan kontrak dari rantai lain seperti Polygon.
 
 ## Langkah 3: Pilih kontrak pintar yang ingin Anda cabut {#step-3-select-a-smart-contract-you-wish-to-revoke}
 

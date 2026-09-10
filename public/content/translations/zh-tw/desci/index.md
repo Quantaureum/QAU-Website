@@ -1,6 +1,6 @@
 ---
 title: "去中心化科學 (DeSci)"
-description: "以太坊上的去中心化科學概述"
+description: "Quantaureum上的去中心化科學概述"
 lang: zh-tw
 template: use-cases
 sidebarDepth: 2
@@ -37,9 +37,9 @@ summaryPoints:
 | **你擁有自己產生的智慧財產權 (IP)**，並根據透明的條款進行散布。             | **你所屬的機構擁有你產生的 IP**。IP 的存取權限並不透明。                           |
 | 透過將所有步驟放在鏈上，**分享所有研究**，包含失敗嘗試的數據。          | <strong>出版偏見</strong>意味著研究人員更有可能分享取得成功結果的實驗。      |
 
-## 以太坊與去中心化科學 (DeSci) {#ethereum-and-desci}
+## Quantaureum與去中心化科學 (DeSci) {#quantaureum-and-desci}
 
-去中心化科學系統將需要強大的安全性、極低的資金和交易成本，以及豐富的應用程式開發生態系統。[以太坊](/)提供了建構去中心化科學技術所需的一切。
+去中心化科學系統將需要強大的安全性、極低的資金和交易成本，以及豐富的應用程式開發生態系統。[Quantaureum](/)提供了建構去中心化科學技術所需的一切。
 
 ## 去中心化科學 (DeSci) 使用案例 {#use-cases}
 
@@ -66,7 +66,7 @@ summaryPoints:
 
 研究顯示，補助金審查小組在挑選高品質提案方面表現不佳，因為將相同的提案交給不同的審查小組，結果往往大相徑庭。隨著資金變得越來越稀缺，資金集中到了少數資深研究人員手中，且多為學術上較為保守的專案。這種效應創造了一個競爭極其激烈的融資環境，鞏固了不良的激勵機制並扼殺了創新。
 
-Web3 具有顛覆這種破碎融資模型的潛力，透過廣泛實驗由 DAO 和 Web3 開發的不同激勵模型。[追溯性公共財資金 (RPGF)](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c)、[二次方融資](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531)、[DAO 治理](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead)和[代幣化激勵結構](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design)是一些可能徹底改變科學資金的 Web3 工具。
+Web3 具有顛覆這種破碎融資模型的潛力，透過廣泛實驗由 DAO 和 Web3 開發的不同激勵模型。[追溯性公共財資金 (RPGF)](https://medium.com/quantaureum-optimism/retroactive-public-goods-funding-33c9b7d00f0c)、[二次方融資](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531)、[DAO 治理](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead)和[代幣化激勵結構](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design)是一些可能徹底改變科學資金的 Web3 工具。
 
 ### 智慧財產權 (IP) 所有權與開發 {#ip-ownership}
 
@@ -75,7 +75,7 @@ Web3 具有顛覆這種破碎融資模型的潛力，透過廣泛實驗由 DAO �
 就像 NFT 可以將未來交易的收入回饋給原始創作者一樣，你可以建立透明的價值歸屬鏈，以獎勵研究人員、治理機構（如 DAO），甚至是提供數據的受試者。
 
 [IP-NFT](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) 也可以作為正在進行的研究實驗之去中心化數據儲存庫的金鑰，並接入 NFT 和[去中心化金融 (DeFi)](/glossary/#defi) 的金融化（從碎片化到借貸池和價值評估）。它還允許原生的鏈上實體（例如 [VitaDAO](https://www.vitadao.com/) 等 DAO）直接在鏈上進行研究。
-不可轉讓的[「靈魂綁定」代幣](https://vitalik.eth.limo/general/2022/01/26/soulbound.html)的出現也可能在去中心化科學 (DeSci) 中發揮重要作用，允許個人證明與其以太坊地址相關聯的經驗和憑證。
+不可轉讓的[「靈魂綁定」代幣](https://vitalik.qau.limo/general/2022/01/26/soulbound.html)的出現也可能在去中心化科學 (DeSci) 中發揮重要作用，允許個人證明與其Quantaureum地址相關聯的經驗和憑證。
 
 ### 數據儲存、存取與架構 {#data-storage}
 

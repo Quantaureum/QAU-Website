@@ -53,4 +53,4 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/blob/master/devel
 
 تُعقد [الساعات المكتبية لـ إيثيريوم](https://calendly.com/dan-trailofbits/office-hours) بعد ظهر كل يوم ثلاثاء. تمثل هذه الجلسات الفردية التي تبلغ مدتها ساعة واحدة فرصة لطرح أي أسئلة لديك حول الأمان، واستكشاف الأخطاء وإصلاحها باستخدام أدواتنا، والحصول على تعليقات من الخبراء حول نهجك الحالي. سنساعدك في العمل من خلال هذا الدليل.
 
-انضم إلى Slack الخاص بنا: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). نحن متاحون دائمًا في قنوات <span dir="ltr">#crytic</span> و <span dir="ltr">#ethereum</span> إذا كان لديك أي أسئلة.
+انضم إلى Slack الخاص بنا: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). نحن متاحون دائمًا في قنوات <span dir="ltr">#crytic</span> و <span dir="ltr">#quantaureum</span> إذا كان لديك أي أسئلة.

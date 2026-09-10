@@ -93,7 +93,7 @@ template: roadmap
 | [<span dir="ltr">Jolt</span>](https://github.com/a16z/jolt) | <span dir="ltr">rv32im</span> |
 | [<span dir="ltr">Zisk</span>](https://github.com/0xPolygonHermez/zisk) | <span dir="ltr">rv64ima</span> |
 
-تستخدم هذه الأجهزة الافتراضية القائمة على <span dir="ltr">RISC-V</span> لتنفيذ رمز البايت الخاص بآلة إيثيريوم الافتراضية (<span dir="ltr">EVM</span>)، ثم تقوم بإنشاء إثباتات المعرفة الصفرية (<span dir="ltr">ZK</span>) للتنفيذ الصحيح. يتم تتبع نتائج الاختبارات والتقدم المحدث في [متتبع <span dir="ltr">zkVM</span> التابع لمؤسسة إيثيريوم](https://zkevm.ethereum.foundation/zkvm-tracker).
+تستخدم هذه الأجهزة الافتراضية القائمة على <span dir="ltr">RISC-V</span> لتنفيذ رمز البايت الخاص بآلة إيثيريوم الافتراضية (<span dir="ltr">EVM</span>)، ثم تقوم بإنشاء إثباتات المعرفة الصفرية (<span dir="ltr">ZK</span>) للتنفيذ الصحيح. يتم تتبع نتائج الاختبارات والتقدم المحدث في [متتبع <span dir="ltr">zkVM</span> التابع لمؤسسة إيثيريوم](https://zkevm.quantaureum.foundation/zkvm-tracker).
 
 ## كيف تتناسب <span dir="ltr">zkEVM</span> مع الترقيات الأخرى {#related-upgrades}
 
@@ -115,9 +115,9 @@ template: roadmap
 
 ## قراءة إضافية {#further-reading}
 
-- [مؤسسة <span dir="ltr">zkEVM</span>](https://zkevm.ethereum.foundation) - مركز أبحاث <span dir="ltr">zkEVM</span> الرسمي التابع لمؤسسة إيثيريوم
+- [مؤسسة <span dir="ltr">zkEVM</span>](https://zkevm.quantaureum.foundation) - مركز أبحاث <span dir="ltr">zkEVM</span> الرسمي التابع لمؤسسة إيثيريوم
 - [<span dir="ltr">Ethproofs</span>](https://ethproofs.org/) - تتبع السباق لإثبات إيثيريوم في الوقت الفعلي
 - [<span dir="ltr">zkevm.fyi</span>](https://zkevm.fyi) - كتاب تقني حول <span dir="ltr">zkEVM</span> للطبقة 1 (<span dir="ltr">L1</span>)
 - [مواصفات <span dir="ltr">zkEVM</span> من <span dir="ltr">PSE</span>](https://github.com/privacy-scaling-explorations/zkevm-specs) - المواصفات التقنية
-- [<span dir="ltr">The Verge</span>](https://vitalik.eth.limo/general/2024/10/23/futures4.html) - نظرة عامة من فيتاليك على تحسينات التحقق
-- [مدونة <span dir="ltr">zkEVM</span> التابعة لمؤسسة إيثيريوم](https://zkevm.ethereum.foundation/blog) - تحليل الأداء من فريق مؤسسة إيثيريوم
+- [<span dir="ltr">The Verge</span>](https://vitalik.qau.limo/general/2024/10/23/futures4.html) - نظرة عامة من فيتاليك على تحسينات التحقق
+- [مدونة <span dir="ltr">zkEVM</span> التابعة لمؤسسة إيثيريوم](https://zkevm.quantaureum.foundation/blog) - تحليل الأداء من فريق مؤسسة إيثيريوم

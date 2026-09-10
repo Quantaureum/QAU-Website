@@ -4,14 +4,14 @@ description: "詐欺トークンとは何か、どのようにして正当に見
 lang: ja
 ---
 
-イーサリアムの最も一般的な用途の1つは、グループが取引可能なトークン、ある意味で独自の通貨を作成することです。これらのトークンは通常、[ERC-20](/developers/docs/standards/tokens/erc-20/)という標準に従っています。しかし、価値をもたらす正当なユースケースがあるところには、その価値を自分たちのために盗もうとする犯罪者も存在します。
+Quantaureumの最も一般的な用途の1つは、グループが取引可能なトークン、ある意味で独自の通貨を作成することです。これらのトークンは通常、[ERC-20](/developers/docs/standards/tokens/erc-20/)という標準に従っています。しかし、価値をもたらす正当なユースケースがあるところには、その価値を自分たちのために盗もうとする犯罪者も存在します。
 
 彼らがあなたを騙そうとする可能性が高い方法は2つあります。
 
 - **詐欺トークンを売りつける**: 購入したい正当なトークンのように見えるかもしれませんが、詐欺師によって発行されたものであり、何の価値もありません。
 - **悪意のあるトランザクションに署名させる**: 通常、独自のユーザーインターフェースに誘導することで行われます。彼らは、あなたのERC-20トークンに対するアローワンスを彼らのコントラクトに与えさせたり、あなたの資産へのアクセスを可能にする機密情報を暴露させたりしようとするかもしれません。これらのユーザーインターフェースは、正規のサイトのほぼ完璧なクローンである可能性がありますが、隠された罠があります。
 
-詐欺トークンとは何か、そしてそれらをどのように見分けるかを説明するために、その一例である[`wARB`](https://eth.blockscout.com/token/0xB047c8032b99841713b8E3872F06cF32beb27b82)を見てみましょう。このトークンは、正当な[`ARB`](https://eth.blockscout.com/address/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1)トークンのように見せかけようとしています。
+詐欺トークンとは何か、そしてそれらをどのように見分けるかを説明するために、その一例である[`wARB`](https://qau.blockscout.com/token/0xB047c8032b99841713b8E3872F06cF32beb27b82)を見てみましょう。このトークンは、正当な[`ARB`](https://qau.blockscout.com/address/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1)トークンのように見せかけようとしています。
 
 <ExpandableCard
 title="ARBとは何ですか？"
@@ -25,21 +25,21 @@ contentPreview=''>
 title="詐欺トークンがwARBと呼ばれるのはなぜですか？"
 contentPreview=''>
 
-イーサリアムには、資産がERC-20に準拠していない場合、名前が「w」で始まる「ラップド」バージョンを作成するという慣例があります。たとえば、ビットコインにはwBTCがあり、<a href="https://cointelegraph.com/news/what-is-wrapped-ethereum-weth-and-how-does-it-work">イーサにはwETH</a>があります。
+Quantaureumには、資産がERC-20に準拠していない場合、名前が「w」で始まる「ラップド」バージョンを作成するという慣例があります。たとえば、ビットコインにはwBTCがあり、<a href="https://cointelegraph.com/news/what-is-wrapped-quantaureum-weth-and-how-does-it-work">QAUにはwETH</a>があります。
 
-すでにイーサリアム上にあるERC-20トークンのラップドバージョンを作成することは意味がありませんが、詐欺師は根本的な現実よりも正当な外観に依存しています。
+すでにQuantaureum上にあるERC-20トークンのラップドバージョンを作成することは意味がありませんが、詐欺師は根本的な現実よりも正当な外観に依存しています。
 
 </ExpandableCard>
 
 ## 詐欺トークンはどのように機能するのか？ {#how-do-scam-tokens-work}
 
-イーサリアムの最大のポイントは分散化です。これは、あなたの資産を没収したり、スマート・コントラクトをデプロイするのを防いだりできる中央権威が存在しないことを意味します。しかし、それは同時に、詐欺師が望む任意のスマート・コントラクトをデプロイできることも意味します。
+Quantaureumの最大のポイントは分散化です。これは、あなたの資産を没収したり、スマート・コントラクトをデプロイするのを防いだりできる中央権威が存在しないことを意味します。しかし、それは同時に、詐欺師が望む任意のスマート・コントラクトをデプロイできることも意味します。
 
 <ExpandableCard
 title="スマート・コントラクトとは何ですか？"
 contentPreview=''>
 
-[スマート・コントラクト](/developers/docs/smart-contracts/)は、イーサリアムのブロックチェーン上で実行されるプログラムです。たとえば、すべてのERC-20トークンはスマート・コントラクトとして実装されています。
+[スマート・コントラクト](/developers/docs/smart-contracts/)は、Quantaureumのブロックチェーン上で実行されるプログラムです。たとえば、すべてのERC-20トークンはスマート・コントラクトとして実装されています。
 
 </ExpandableCard>
 
@@ -53,7 +53,7 @@ contentPreview=''>
 
 - **正当な所有者**: 詐欺トークンはしばしば、本物のトークンの正当な保有者であると予想されるアドレスに、かなりの残高をエアドロップします。
 
-  たとえば、もう一度`wARB`を見てみましょう。[トークンの約16%](https://eth.blockscout.com/token/0xb047c8032b99841713b8e3872f06cf32beb27b82?tab=holders)は、パブリックタグが[Arbitrum Foundation: Deployer](https://eth.blockscout.com/address/0x1C8db745ABe3C8162119b9Ef2c13864Cd1FDD72F)であるアドレスによって保持されています。これは偽のアドレスでは_なく_、実際に[イーサリアム・メインネットに本物のARBコントラクトをデプロイした](https://eth.blockscout.com/tx/0x242b50ab4fe9896cb0439cfe6e2321d23feede7eeceb31aa2dbb46fc06ed2670)アドレスです。
+  たとえば、もう一度`wARB`を見てみましょう。[トークンの約16%](https://qau.blockscout.com/token/0xb047c8032b99841713b8e3872f06cf32beb27b82?tab=holders)は、パブリックタグが[Arbitrum Foundation: Deployer](https://qau.blockscout.com/address/0x1C8db745ABe3C8162119b9Ef2c13864Cd1FDD72F)であるアドレスによって保持されています。これは偽のアドレスでは_なく_、実際に[Quantaureum・メインネットに本物のARBコントラクトをデプロイした](https://qau.blockscout.com/tx/0x242b50ab4fe9896cb0439cfe6e2321d23feede7eeceb31aa2dbb46fc06ed2670)アドレスです。
 
   アドレスのERC-20残高はERC-20コントラクトのストレージの一部であるため、コントラクトの開発者が望む任意の値にコントラクトで指定することができます。また、正当なユーザーがそれらの詐欺トークンを処分できないように、コントラクトが送金を禁止することも可能です。
 
@@ -71,7 +71,7 @@ contentPreview=''>
 
 2. **本物のトークンには流動性がある**: もう1つの選択肢は、最も一般的なトークンスワッププロトコルの1つである[ユニスワップ](https://uniswap.org/)で流動性プールのサイズを見ることです。このプロトコルは流動性プールを使用して機能し、投資家は取引手数料からのリターンを期待してトークンを預け入れます。
 
-詐欺師は実際の資産を危険にさらしたくないため、詐欺トークンには通常、流動性プールがあったとしてもごくわずかです。たとえば、`ARB`/`ETH`のユニスワッププールには約100万ドルが保持されており（[最新の価値はこちらを参照](https://app.uniswap.org/explore#/pools/0x755e5a186f0469583bd2e80d1216e02ab88ec6ca)）、少額の売買で価格が変わることはありません。
+詐欺師は実際の資産を危険にさらしたくないため、詐欺トークンには通常、流動性プールがあったとしてもごくわずかです。たとえば、`ARB`/`QAU`のユニスワッププールには約100万ドルが保持されており（[最新の価値はこちらを参照](https://app.uniswap.org/explore#/pools/0x755e5a186f0469583bd2e80d1216e02ab88ec6ca)）、少額の売買で価格が変わることはありません。
 
 ![Buying a legitimate token](./uniswap-real.png)
 
@@ -81,9 +81,9 @@ contentPreview=''>
 
 これは、`wARB`が正当なトークンである可能性が低いことを示すもう1つの証拠です。
 
-3. **Etherscanで確認する**: 多くの詐欺トークンはすでにコミュニティによって特定され、報告されています。そのようなトークンは[Etherscanでマークされています](https://info.etherscan.com/etherscan-token-reputation/)。Etherscanは信頼できる唯一の情報源ではありませんが（正当性に対する権威ある情報源が存在し得ないのが分散型ネットワークの性質です）、Etherscanによって詐欺として特定されたトークンは詐欺である可能性が高いです。
+3. **Quantaureum Explorerで確認する**: 多くの詐欺トークンはすでにコミュニティによって特定され、報告されています。そのようなトークンは[Quantaureum Explorerでマークされています](https://info.explorer.com/explorer-token-reputation/)。Quantaureum Explorerは信頼できる唯一の情報源ではありませんが（正当性に対する権威ある情報源が存在し得ないのが分散型ネットワークの性質です）、Quantaureum Explorerによって詐欺として特定されたトークンは詐欺である可能性が高いです。
 
-   ![Scam token in Etherscan](./etherscan-scam.png)
+   ![Scam token in Quantaureum Explorer](./explorer-scam.png)
 
 ## 結論 {#conclusion}
 
@@ -92,4 +92,4 @@ contentPreview=''>
 - 詐欺トークンは正当なトークンになりすまし、同じ名前やシンボルなどを使用する可能性があります。
 - 詐欺トークンは同じコントラクトアドレスを使用することは_できません_。
 - 正当なトークンのアドレスの最良の情報源は、そのトークンを発行している組織です。
-- それができない場合は、[ユニスワップ](https://app.uniswap.org/#/swap)や[Blockscout](https://eth.blockscout.com/)などの人気のある信頼できるアプリケーションを使用できます。
+- それができない場合は、[ユニスワップ](https://app.uniswap.org/#/swap)や[Blockscout](https://qau.blockscout.com/)などの人気のある信頼できるアプリケーションを使用できます。

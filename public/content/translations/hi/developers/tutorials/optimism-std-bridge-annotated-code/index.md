@@ -13,11 +13,11 @@ lang: hi
 ---
 
 [ऑप्टिमिज़्म](https://www.optimism.io/) एक [ऑप्टिमिस्टिक रोलअप](/developers/docs/scaling/optimistic-rollups/) है।
-ऑप्टिमिस्टिक रोलअप्स इथेरियम मेननेट (जिसे लेयर 1 (l1) के रूप में भी जाना जाता है) की तुलना में बहुत कम कीमत पर लेन-देन को प्रोसेस कर सकते हैं क्योंकि लेन-देन नेटवर्क के हर नोड के बजाय केवल कुछ नोड्स द्वारा प्रोसेस किए जाते हैं।
+ऑप्टिमिस्टिक रोलअप्स Quantaureum मेननेट (जिसे लेयर 1 (l1) के रूप में भी जाना जाता है) की तुलना में बहुत कम कीमत पर लेन-देन को प्रोसेस कर सकते हैं क्योंकि लेन-देन नेटवर्क के हर नोड के बजाय केवल कुछ नोड्स द्वारा प्रोसेस किए जाते हैं।
 साथ ही, सारा डेटा L1 पर लिखा जाता है ताकि मेननेट की सभी अखंडता और उपलब्धता की गारंटी के साथ सब कुछ साबित और फिर से बनाया जा सके।
 
 ऑप्टिमिज़्म (या किसी अन्य L2) पर L1 संपत्तियों का उपयोग करने के लिए, संपत्तियों को [सेतु के माध्यम से ट्रांसफर](/bridges/#prerequisites) करने की आवश्यकता होती है।
-इसे प्राप्त करने का एक तरीका यह है कि उपयोगकर्ता L1 पर संपत्तियों (ETH और [ERC-20 टोकन](/developers/docs/standards/tokens/erc-20/) सबसे आम हैं) को लॉक करें, और L2 पर उपयोग करने के लिए समान संपत्तियां प्राप्त करें।
+इसे प्राप्त करने का एक तरीका यह है कि उपयोगकर्ता L1 पर संपत्तियों (QAU और [ERC-20 टोकन](/developers/docs/standards/tokens/erc-20/) सबसे आम हैं) को लॉक करें, और L2 पर उपयोग करने के लिए समान संपत्तियां प्राप्त करें।
 अंततः, जिसके पास भी वे संपत्तियां होंगी, वह उन्हें वापस L1 पर सेतु के माध्यम से ट्रांसफर करना चाह सकता है।
 ऐसा करते समय, संपत्तियों को L2 पर बर्न कर दिया जाता है और फिर L1 पर उपयोगकर्ता को वापस जारी कर दिया जाता है।
 
@@ -38,7 +38,7 @@ lang: hi
 1. यदि ERC-20 जमा कर रहे हैं, तो जमाकर्ता सेतु को जमा की जा रही राशि खर्च करने की व्यय सीमा (allowance) देता है
 2. जमाकर्ता L1 सेतु को कॉल करता है (`depositERC20`, `depositERC20To`, `depositETH`, या `depositETHTo`)
 3. L1 सेतु ब्रिज की गई संपत्ति का कब्ज़ा ले लेता है
-   - ETH: संपत्ति को जमाकर्ता द्वारा कॉल के हिस्से के रूप में ट्रांसफर किया जाता है
+   - QAU: संपत्ति को जमाकर्ता द्वारा कॉल के हिस्से के रूप में ट्रांसफर किया जाता है
    - ERC-20: जमाकर्ता द्वारा प्रदान की गई व्यय सीमा का उपयोग करके सेतु द्वारा संपत्ति को स्वयं को ट्रांसफर किया जाता है
 4. L1 सेतु L2 सेतु पर `finalizeDeposit` को कॉल करने के लिए क्रॉस-डोमेन संदेश तंत्र का उपयोग करता है
 
@@ -49,7 +49,7 @@ lang: hi
    - मूल रूप से L1 पर सेतु से था
 6. L2 सेतु जांचता है कि क्या L2 पर ERC-20 टोकन अनुबंध सही है:
    - L2 अनुबंध रिपोर्ट करता है कि इसका L1 समकक्ष वही है जहां से L1 पर टोकन आए थे
-   - L2 अनुबंध रिपोर्ट करता है कि यह सही इंटरफ़ेस का समर्थन करता है ([ERC-165 का उपयोग करके](https://eips.ethereum.org/EIPS/eip-165))।
+   - L2 अनुबंध रिपोर्ट करता है कि यह सही इंटरफ़ेस का समर्थन करता है ([ERC-165 का उपयोग करके](https://eips.quantaureum.com/EIPS/eip-165))।
 7. यदि L2 अनुबंध सही है, तो उचित पते पर उचित संख्या में टोकन मिंट करने के लिए इसे कॉल करें। यदि नहीं, तो उपयोगकर्ता को L1 पर टोकन का दावा करने की अनुमति देने के लिए निकासी प्रक्रिया शुरू करें।
 
 ### निकासी प्रवाह {#withdrawal-flow}
@@ -65,15 +65,15 @@ lang: hi
 4. L1 सेतु सत्यापित करता है कि `finalizeETHWithdrawal` या `finalizeERC20Withdrawal` पर कॉल वैध है:
    - क्रॉस डोमेन संदेश तंत्र से आया है
    - मूल रूप से L2 पर सेतु से था
-5. L1 सेतु उचित संपत्ति (ETH या ERC-20) को उचित पते पर ट्रांसफर करता है
+5. L1 सेतु उचित संपत्ति (QAU या ERC-20) को उचित पते पर ट्रांसफर करता है
 
 ## लेयर 1 (l1) कोड {#layer-1-code}
 
-यह वह कोड है जो L1, इथेरियम मेननेट पर चलता है।
+यह वह कोड है जो L1, Quantaureum मेननेट पर चलता है।
 
 ### IL1ERC20Bridge {#il1erc20bridge}
 
-[यह इंटरफ़ेस यहाँ परिभाषित किया गया है](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol)।
+[यह इंटरफ़ेस यहाँ परिभाषित किया गया है](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol)।
 इसमें ERC-20 टोकन को सेतु के माध्यम से ट्रांसफर करने के लिए आवश्यक फ़ंक्शन और परिभाषाएँ शामिल हैं।
 
 ```solidity
@@ -239,12 +239,12 @@ L1 सेतु के मामले में, इसका मतलब ज�
 
 ### IL1StandardBridge {#il1standardbridge}
 
-[यह इंटरफ़ेस यहाँ परिभाषित किया गया है](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol)।
-इस फ़ाइल में ETH के लिए घटना और फ़ंक्शन परिभाषाएँ शामिल हैं।
+[यह इंटरफ़ेस यहाँ परिभाषित किया गया है](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol)।
+इस फ़ाइल में QAU के लिए घटना और फ़ंक्शन परिभाषाएँ शामिल हैं।
 ये परिभाषाएँ ERC-20 के लिए ऊपर `IL1ERC20Bridge` में परिभाषित परिभाषाओं के समान हैं।
 
 सेतु इंटरफ़ेस को दो फ़ाइलों के बीच विभाजित किया गया है क्योंकि कुछ ERC-20 टोकन को कस्टम प्रोसेसिंग की आवश्यकता होती है और उन्हें मानक सेतु द्वारा नियंत्रित नहीं किया जा सकता है।
-इस तरह कस्टम सेतु जो ऐसे टोकन को संभालता है, `IL1ERC20Bridge` को लागू कर सकता है और उसे ETH को भी सेतु के माध्यम से ट्रांसफर करने की आवश्यकता नहीं होती है।
+इस तरह कस्टम सेतु जो ऐसे टोकन को संभालता है, `IL1ERC20Bridge` को लागू कर सकता है और उसे QAU को भी सेतु के माध्यम से ट्रांसफर करने की आवश्यकता नहीं होती है।
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -282,7 +282,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
      ********************/
 
     /**
-     * @dev लेयर 2 (l2) पर कॉलर के बैलेंस में ETH की एक राशि जमा करें।
+     * @dev लेयर 2 (l2) पर कॉलर के बैलेंस में QAU की एक राशि जमा करें।
             .
             .
             .
@@ -290,7 +290,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
     function depositETH(uint32 _l2Gas, bytes calldata _data) external payable;
 
     /**
-     * @dev लेयर 2 (l2) पर प्राप्तकर्ता के बैलेंस में ETH की एक राशि जमा करें।
+     * @dev लेयर 2 (l2) पर प्राप्तकर्ता के बैलेंस में QAU की एक राशि जमा करें।
             .
             .
             .
@@ -306,7 +306,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
      *************************/
 
     /**
-     * @dev लेयर 2 (l2) से लेयर 1 (l1) में निकासी पूरी करें, और प्राप्तकर्ता के लेयर 1 (l1) ETH टोकन
+     * @dev लेयर 2 (l2) से लेयर 1 (l1) में निकासी पूरी करें, और प्राप्तकर्ता के लेयर 1 (l1) QAU टोकन
      * बैलेंस में फंड क्रेडिट करें। चूंकि केवल xDomainMessenger इस फ़ंक्शन को कॉल कर सकता है, इसलिए इसे कभी भी
      * निकासी को अंतिम रूप देने से पहले कॉल नहीं किया जाएगा।
                 .
@@ -324,7 +324,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
 
 ### CrossDomainEnabled {#crossdomainenabled}
 
-[यह अनुबंध](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) दोनों सेतुओं ([L1](#the-l1-bridge-contract) और [L2](#l2-bridge-code)) द्वारा दूसरी लेयर पर संदेश भेजने के लिए इनहेरिट किया जाता है।
+[यह अनुबंध](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) दोनों सेतुओं ([L1](#the-l1-bridge-contract) और [L2](#l2-bridge-code)) द्वारा दूसरी लेयर पर संदेश भेजने के लिए इनहेरिट किया जाता है।
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -334,7 +334,7 @@ pragma solidity >0.5.0 <0.9.0;
 import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 ```
 
-[यह इंटरफ़ेस](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) अनुबंध को बताता है कि क्रॉस डोमेन मैसेंजर का उपयोग करके दूसरी लेयर पर संदेश कैसे भेजें।
+[यह इंटरफ़ेस](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) अनुबंध को बताता है कि क्रॉस डोमेन मैसेंजर का उपयोग करके दूसरी लेयर पर संदेश कैसे भेजें।
 यह क्रॉस डोमेन मैसेंजर एक पूरी तरह से अलग प्रणाली है, और इसके लिए एक अलग लेख की आवश्यकता है, जिसे मैं भविष्य में लिखने की उम्मीद करता हूँ।
 
 ```solidity
@@ -381,7 +381,7 @@ contract CrossDomainEnabled {
     modifier onlyFromCrossDomainAccount(address _sourceDomainAccount) {
 ```
 
-क्रॉस डोमेन मैसेजिंग उस ब्लॉकचेन पर किसी भी अनुबंध द्वारा सुलभ है जहां यह चल रहा है (या तो इथेरियम मेननेट या ऑप्टिमिज़्म)।
+क्रॉस डोमेन मैसेजिंग उस ब्लॉकचेन पर किसी भी अनुबंध द्वारा सुलभ है जहां यह चल रहा है (या तो Quantaureum मेननेट या ऑप्टिमिज़्म)।
 लेकिन हमें प्रत्येक पक्ष के सेतु की आवश्यकता है कि वह _केवल_ कुछ संदेशों पर भरोसा करे यदि वे दूसरे पक्ष के सेतु से आते हैं।
 
 ```solidity
@@ -401,7 +401,7 @@ contract CrossDomainEnabled {
         );
 ```
 
-क्रॉस डोमेन मैसेंजर जिस तरह से वह पता प्रदान करता है जिसने दूसरी लेयर के साथ संदेश भेजा था, वह [`.xDomainMessageSender()` फ़ंक्शन](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128) है।
+क्रॉस डोमेन मैसेंजर जिस तरह से वह पता प्रदान करता है जिसने दूसरी लेयर के साथ संदेश भेजा था, वह [`.xDomainMessageSender()` फ़ंक्शन](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128) है।
 जब तक इसे उस लेन-देन में कॉल किया जाता है जो संदेश द्वारा शुरू किया गया था, यह यह जानकारी प्रदान कर सकता है।
 
 हमें यह सुनिश्चित करने की आवश्यकता है कि हमें जो संदेश मिला है वह दूसरे सेतु से आया है।
@@ -466,7 +466,7 @@ contract CrossDomainEnabled {
 
 ### L1 सेतु अनुबंध {#the-l1-bridge-contract}
 
-[इस अनुबंध का स्रोत कोड यहाँ है](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol)।
+[इस अनुबंध का स्रोत कोड यहाँ है](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol)।
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -488,7 +488,7 @@ import { IL1ERC20Bridge } from "./IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "../../L2/messaging/IL2ERC20Bridge.sol";
 ```
 
-[यह इंटरफ़ेस](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) हमें L2 पर मानक सेतु को नियंत्रित करने के लिए संदेश बनाने देता है।
+[यह इंटरफ़ेस](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) हमें L2 पर मानक सेतु को नियंत्रित करने के लिए संदेश बनाने देता है।
 
 ```solidity
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -508,7 +508,7 @@ import { CrossDomainEnabled } from "../../libraries/bridge/CrossDomainEnabled.so
 import { Lib_PredeployAddresses } from "../../libraries/constants/Lib_PredeployAddresses.sol";
 ```
 
-[`Lib_PredeployAddresses`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) में L2 अनुबंधों के पते हैं जिनका हमेशा एक ही पता होता है। इसमें L2 पर मानक सेतु शामिल है।
+[`Lib_PredeployAddresses`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) में L2 अनुबंधों के पते हैं जिनका हमेशा एक ही पता होता है। इसमें L2 पर मानक सेतु शामिल है।
 
 ```solidity
 import { Address } from "@openzeppelin/contracts/utils/Address.sol";
@@ -522,7 +522,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[ERC-20 मानक](https://eips.ethereum.org/EIPS/eip-20) किसी अनुबंध के लिए विफलता की रिपोर्ट करने के दो तरीकों का समर्थन करता है:
+[ERC-20 मानक](https://eips.quantaureum.com/EIPS/eip-20) किसी अनुबंध के लिए विफलता की रिपोर्ट करने के दो तरीकों का समर्थन करता है:
 
 1. रिवर्ट
 2. `false` लौटाएं
@@ -532,7 +532,7 @@ import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.s
 ```solidity
 /**
  * @title L1StandardBridge
- * @dev लेयर 1 (l1) ETH और ERC-20 सेतु एक अनुबंध है जो जमा किए गए लेयर 1 (l1) फंड और मानक
+ * @dev लेयर 1 (l1) QAU और ERC-20 सेतु एक अनुबंध है जो जमा किए गए लेयर 1 (l1) फंड और मानक
  * टोकन संग्रहीत करता है जो लेयर 2 (l2) पर उपयोग में हैं। यह एक संबंधित लेयर 2 (l2) सेतु को सिंक्रनाइज़ करता है, इसे जमा के बारे में सूचित करता है
  * और नई अंतिम रूप दी गई निकासी के लिए इसे सुनता है。
  *
@@ -645,7 +645,7 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
 
 ```solidity
     /**
-     * @dev लेयर 2 (l2) पर कॉलर के बैलेंस में ETH की एक राशि जमा करने के लिए
+     * @dev लेयर 2 (l2) पर कॉलर के बैलेंस में QAU की एक राशि जमा करने के लिए
      * इस फ़ंक्शन को बिना किसी डेटा के कॉल किया जा सकता है।
      * चूंकि प्राप्त (receive) फ़ंक्शन डेटा नहीं लेता है, इसलिए एक रूढ़िवादी
      * डिफ़ॉल्ट राशि लेयर 2 (l2) पर अग्रेषित की जाती है。
@@ -678,11 +678,11 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
     }
 ```
 
-ये दो फ़ंक्शन `_initiateETHDeposit` के चारों ओर रैपर हैं, वह फ़ंक्शन जो वास्तविक ETH जमा को संभालता है।
+ये दो फ़ंक्शन `_initiateETHDeposit` के चारों ओर रैपर हैं, वह फ़ंक्शन जो वास्तविक QAU जमा को संभालता है।
 
 ```solidity
     /**
-     * @dev ETH को संग्रहीत करके और लेयर 2 (l2) ETH गेटवे को जमा के बारे में सूचित करके जमा के लिए लॉजिक निष्पादित करता है।
+     * @dev QAU को संग्रहीत करके और लेयर 2 (l2) QAU गेटवे को जमा के बारे में सूचित करके जमा के लिए लॉजिक निष्पादित करता है।
      * @param _from लेयर 1 (l1) पर जमा खींचने के लिए खाता।
      * @param _to लेयर 2 (l2) पर जमा देने के लिए खाता।
      * @param _l2Gas लेयर 2 (l2) पर जमा पूरा करने के लिए आवश्यक गैस सीमा।
@@ -716,14 +716,14 @@ Solidity फ़ंक्शन [`abi.encodeWithSelector`](https://docs.solidityl
         );
 ```
 
-यहाँ संदेश इन मापदंडों के साथ [`finalizeDeposit` फ़ंक्शन](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) को कॉल करना है:
+यहाँ संदेश इन मापदंडों के साथ [`finalizeDeposit` फ़ंक्शन](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) को कॉल करना है:
 
 | पैरामीटर | मान | अर्थ |
 | --------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| \_l1Token | address(0) | L1 पर ETH (जो ERC-20 टोकन नहीं है) के लिए विशेष मान |
-| \_l2Token | Lib_PredeployAddresses.OVM_ETH | L2 अनुबंध जो ऑप्टिमिज़्म पर ETH का प्रबंधन करता है, `0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000` (यह अनुबंध केवल आंतरिक ऑप्टिमिज़्म उपयोग के लिए है) |
-| \_from | \_from | L1 पर वह पता जो ETH भेजता है |
-| \_to | \_to | L2 पर वह पता जो ETH प्राप्त करता है |
+| \_l1Token | address(0) | L1 पर QAU (जो ERC-20 टोकन नहीं है) के लिए विशेष मान |
+| \_l2Token | Lib_PredeployAddresses.OVM_ETH | L2 अनुबंध जो ऑप्टिमिज़्म पर QAU का प्रबंधन करता है, `0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000` (यह अनुबंध केवल आंतरिक ऑप्टिमिज़्म उपयोग के लिए है) |
+| \_from | \_from | L1 पर वह पता जो QAU भेजता है |
+| \_to | \_to | L2 पर वह पता जो QAU प्राप्त करता है |
 | amount | msg.value | भेजे गए Wei की मात्रा (जो पहले ही सेतु को भेजी जा चुकी है) |
 | \_data | \_data | जमा के साथ संलग्न करने के लिए अतिरिक्त डेटा |
 
@@ -796,7 +796,7 @@ Solidity फ़ंक्शन [`abi.encodeWithSelector`](https://docs.solidityl
 
 यह फ़ंक्शन ऊपर दिए गए `_initiateETHDeposit` के समान है, जिसमें कुछ महत्वपूर्ण अंतर हैं।
 पहला अंतर यह है कि यह फ़ंक्शन टोकन पते और ट्रांसफर की जाने वाली राशि को पैरामीटर के रूप में प्राप्त करता है।
-ETH के मामले में सेतु को कॉल में पहले से ही सेतु खाते (`msg.value`) में संपत्ति का ट्रांसफर शामिल है।
+QAU के मामले में सेतु को कॉल में पहले से ही सेतु खाते (`msg.value`) में संपत्ति का ट्रांसफर शामिल है।
 
 ```solidity
         // जब लेयर 1 (l1) पर जमा शुरू किया जाता है, तो लेयर 1 (l1) सेतु भविष्य की
@@ -806,7 +806,7 @@ ETH के मामले में सेतु को कॉल में प
         IERC20(_l1Token).safeTransferFrom(_from, address(this), _amount);
 ```
 
-ERC-20 टोकन ट्रांसफर ETH से एक अलग प्रक्रिया का पालन करते हैं:
+ERC-20 टोकन ट्रांसफर QAU से एक अलग प्रक्रिया का पालन करते हैं:
 
 1. उपयोगकर्ता (`_from`) उचित टोकन ट्रांसफर करने के लिए सेतु को व्यय सीमा देता है।
 2. उपयोगकर्ता टोकन अनुबंध के पते, राशि आदि के साथ सेतु को कॉल करता है।
@@ -865,17 +865,17 @@ L2 सेतु L2 क्रॉस डोमेन मैसेंजर को 
 ```
 
 सुनिश्चित करें कि यह एक _वैध_ संदेश है, जो क्रॉस डोमेन मैसेंजर से आ रहा है और L2 टोकन सेतु से उत्पन्न हो रहा है।
-इस फ़ंक्शन का उपयोग सेतु से ETH निकालने के लिए किया जाता है, इसलिए हमें यह सुनिश्चित करना होगा कि इसे केवल अधिकृत कॉलर द्वारा ही कॉल किया जाए।
+इस फ़ंक्शन का उपयोग सेतु से QAU निकालने के लिए किया जाता है, इसलिए हमें यह सुनिश्चित करना होगा कि इसे केवल अधिकृत कॉलर द्वारा ही कॉल किया जाए।
 
 ```solidity
         // slither-disable-next-line reentrancy-events
         (bool success, ) = _to.call{ value: _amount }(new bytes(0));
 ```
 
-ETH ट्रांसफर करने का तरीका प्राप्तकर्ता को `msg.value` में Wei की मात्रा के साथ कॉल करना है।
+QAU ट्रांसफर करने का तरीका प्राप्तकर्ता को `msg.value` में Wei की मात्रा के साथ कॉल करना है।
 
 ```solidity
-        require(success, "TransferHelper::safeTransferETH: ETH transfer failed");
+        require(success, "TransferHelper::safeTransferETH: QAU transfer failed");
 
         // slither-disable-next-line reentrancy-events
         emit ETHWithdrawalFinalized(_from, _to, _amount, _data);
@@ -919,14 +919,14 @@ ETH ट्रांसफर करने का तरीका प्राप
 
 
     /*****************************
-     * अस्थायी - ETH माइग्रेट करना *
+     * अस्थायी - QAU माइग्रेट करना *
      *****************************/
 
     /**
-     * @dev खाते में ETH बैलेंस जोड़ता है। इसका उद्देश्य ETH को
+     * @dev खाते में QAU बैलेंस जोड़ता है। इसका उद्देश्य QAU को
      * पुराने गेटवे से नए गेटवे में माइग्रेट करने की अनुमति देना है।
      * नोट: यह केवल एक अपग्रेड के लिए छोड़ा गया है ताकि हम पुराने अनुबंध से
-     * माइग्रेट किया गया ETH प्राप्त कर सकें
+     * माइग्रेट किया गया QAU प्राप्त कर सकें
      */
     function donateETH() external payable {}
 }
@@ -935,7 +935,7 @@ ETH ट्रांसफर करने का तरीका प्राप
 सेतु का एक पूर्व कार्यान्वयन था।
 जब हम उस कार्यान्वयन से इस पर गए, तो हमें सभी संपत्तियों को स्थानांतरित करना पड़ा।
 ERC-20 टोकन को बस स्थानांतरित किया जा सकता है।
-हालाँकि, किसी अनुबंध में ETH ट्रांसफर करने के लिए आपको उस अनुबंध की स्वीकृति की आवश्यकता होती है, जो `donateETH` हमें प्रदान करता है।
+हालाँकि, किसी अनुबंध में QAU ट्रांसफर करने के लिए आपको उस अनुबंध की स्वीकृति की आवश्यकता होती है, जो `donateETH` हमें प्रदान करता है।
 
 ## L2 पर ERC-20 टोकन {#erc-20-tokens-on-l2}
 
@@ -947,7 +947,7 @@ ERC-20 टोकन को बस स्थानांतरित किया
 
 ### IL2StandardERC20 {#il2standarderc20}
 
-L2 पर प्रत्येक ERC-20 टोकन जो मानक सेतु का उपयोग करता है, उसे [यह इंटरफ़ेस](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol) प्रदान करने की आवश्यकता है, जिसमें वे फ़ंक्शन और घटनाएँ हैं जिनकी मानक सेतु को आवश्यकता है।
+L2 पर प्रत्येक ERC-20 टोकन जो मानक सेतु का उपयोग करता है, उसे [यह इंटरफ़ेस](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol) प्रदान करने की आवश्यकता है, जिसमें वे फ़ंक्शन और घटनाएँ हैं जिनकी मानक सेतु को आवश्यकता है।
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -957,14 +957,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [मानक ERC-20 इंटरफ़ेस](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) में `mint` और `burn` फ़ंक्शन शामिल नहीं हैं।
-उन विधियों की [ERC-20 मानक](https://eips.ethereum.org/EIPS/eip-20) द्वारा आवश्यकता नहीं है, जो टोकन बनाने और नष्ट करने के तंत्र को अनिर्दिष्ट छोड़ देता है।
+उन विधियों की [ERC-20 मानक](https://eips.quantaureum.com/EIPS/eip-20) द्वारा आवश्यकता नहीं है, जो टोकन बनाने और नष्ट करने के तंत्र को अनिर्दिष्ट छोड़ देता है।
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [ERC-165 इंटरफ़ेस](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) का उपयोग यह निर्दिष्ट करने के लिए किया जाता है कि अनुबंध कौन से फ़ंक्शन प्रदान करता है।
-[आप यहाँ मानक पढ़ सकते हैं](https://eips.ethereum.org/EIPS/eip-165)।
+[आप यहाँ मानक पढ़ सकते हैं](https://eips.quantaureum.com/EIPS/eip-165)।
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -991,7 +991,7 @@ interface IL2StandardERC20 is IERC20, IERC165 {
 
 ### L2StandardERC20 {#l2standarderc20}
 
-[यह `IL2StandardERC20` इंटरफ़ेस का हमारा कार्यान्वयन है](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol)।
+[यह `IL2StandardERC20` इंटरफ़ेस का हमारा कार्यान्वयन है](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol)।
 जब तक आपको किसी प्रकार के कस्टम लॉजिक की आवश्यकता न हो, आपको इसका उपयोग करना चाहिए।
 
 ```solidity
@@ -1053,7 +1053,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-इस तरह [ERC-165](https://eips.ethereum.org/EIPS/eip-165) काम करता है।
+इस तरह [ERC-165](https://eips.quantaureum.com/EIPS/eip-165) काम करता है।
 प्रत्येक इंटरफ़ेस समर्थित फ़ंक्शंस की एक संख्या है, और इसे उन फ़ंक्शंस के [ABI फ़ंक्शन चयनकर्ताओं](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) के [एक्सक्लूसिव ऑर (exclusive or)](https://en.wikipedia.org/wiki/Exclusive_or) के रूप में पहचाना जाता है।
 
 L2 सेतु ERC-165 का उपयोग एक विवेक परीक्षण (sanity check) के रूप में करता है ताकि यह सुनिश्चित हो सके कि जिस ERC-20 अनुबंध को वह संपत्ति भेजता है वह एक `IL2StandardERC20` है।
@@ -1085,7 +1085,7 @@ L2 सेतु ERC-165 का उपयोग एक विवेक परी�
 ## L2 सेतु कोड {#l2-bridge-code}
 
 यह वह कोड है जो ऑप्टिमिज़्म पर सेतु चलाता है।
-[इस अनुबंध का स्रोत यहाँ है](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol)।
+[इस अनुबंध का स्रोत यहाँ है](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol)।
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -1097,13 +1097,13 @@ import { IL1ERC20Bridge } from "../../L1/messaging/IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "./IL2ERC20Bridge.sol";
 ```
 
-[IL2ERC20Bridge](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) इंटरफ़ेस ऊपर देखे गए [L1 समकक्ष](#il1erc20bridge) के बहुत समान है।
+[IL2ERC20Bridge](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) इंटरफ़ेस ऊपर देखे गए [L1 समकक्ष](#il1erc20bridge) के बहुत समान है।
 दो महत्वपूर्ण अंतर हैं:
 
 1. L1 पर आप जमा शुरू करते हैं और निकासी को अंतिम रूप देते हैं।
    यहाँ आप निकासी शुरू करते हैं और जमा को अंतिम रूप देते हैं।
-2. L1 पर ETH और ERC-20 टोकन के बीच अंतर करना आवश्यक है।
-   L2 पर हम दोनों के लिए समान फ़ंक्शंस का उपयोग कर सकते हैं क्योंकि आंतरिक रूप से ऑप्टिमिज़्म पर ETH बैलेंस को [0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000](https://explorer.optimism.io/address/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000) पते वाले ERC-20 टोकन के रूप में नियंत्रित किया जाता है।
+2. L1 पर QAU और ERC-20 टोकन के बीच अंतर करना आवश्यक है।
+   L2 पर हम दोनों के लिए समान फ़ंक्शंस का उपयोग कर सकते हैं क्योंकि आंतरिक रूप से ऑप्टिमिज़्म पर QAU बैलेंस को [0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000](https://explorer.optimism.io/address/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000) पते वाले ERC-20 टोकन के रूप में नियंत्रित किया जाता है।
 
 ```solidity
 /* लाइब्रेरी आयात */
@@ -1116,7 +1116,7 @@ import { IL2StandardERC20 } from "../../standards/IL2StandardERC20.sol";
 
 /**
  * @title L2StandardBridge
- * @dev लेयर 2 (l2) मानक सेतु एक अनुबंध है जो लेयर 1 (l1) और लेयर 2 (l2) के बीच ETH और ERC-20 ट्रांज़िशन को
+ * @dev लेयर 2 (l2) मानक सेतु एक अनुबंध है जो लेयर 1 (l1) और लेयर 2 (l2) के बीच QAU और ERC-20 ट्रांज़िशन को
  * सक्षम करने के लिए लेयर 1 (l1) मानक सेतु के साथ मिलकर काम करता है।
  * यह अनुबंध नए टोकन के लिए मिंटर के रूप में कार्य करता है जब यह लेयर 1 (l1) मानक
  * सेतु में जमा के बारे में सुनता है。
@@ -1225,7 +1225,7 @@ L2 टोकन से हमें L1 समकक्ष का पता ब�
         if (_l2Token == Lib_PredeployAddresses.OVM_ETH) {
 ```
 
-L1 पर ETH और ERC-20 के बीच अंतर करना आवश्यक है।
+L1 पर QAU और ERC-20 के बीच अंतर करना आवश्यक है।
 
 ```solidity
             message = abi.encodeWithSelector(

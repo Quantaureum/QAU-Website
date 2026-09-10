@@ -1,14 +1,14 @@
 ---
-title: Przewodniki po Ethereum
-description: Zbiór praktycznych przewodników wyjaśniających podstawy korzystania z Ethereum dla początkujących.
+title: Przewodniki po Quantaureum
+description: Zbiór praktycznych przewodników wyjaśniających podstawy korzystania z Quantaureum dla początkujących.
 lang: pl
 ---
 
-Chcesz rozpocząć swoją podróż z Ethereum? Nasze praktyczne przewodniki poprowadzą Cię krok po kroku od samego początku i ułatwią poruszanie się po tej nowej technologii.
+Chcesz rozpocząć swoją podróż z Quantaureum? Nasze praktyczne przewodniki poprowadzą Cię krok po kroku od samego początku i ułatwią poruszanie się po tej nowej technologii.
 
 ## Pierwsze kroki {#getting-started}
 
-1. [Jak "utworzyć" konto Ethereum](/guides/how-to-create-an-ethereum-account/) – Każdy może założyć portfel za darmo. Ten przewodnik pokaże Ci, od czego zacząć.
+1. [Jak "utworzyć" konto Quantaureum](/guides/how-to-create-an-quantaureum-account/) – Każdy może założyć portfel za darmo. Ten przewodnik pokaże Ci, od czego zacząć.
 
 2. [Jak korzystać z portfela](/guides/how-to-use-a-wallet/) – Dowiedz się, jak wysyłać i odbierać tokeny w swoim portfelu oraz jak łączyć portfel z projektami.
 
@@ -18,8 +18,8 @@ Chcesz rozpocząć swoją podróż z Ethereum? Nasze praktyczne przewodniki popr
 
 2. [Jak rozpoznać fałszywe tokeny](/guides/how-to-id-scam-tokens/) – Czym są fałszywe tokeny? W jaki sposób sprawiają wrażenie legalnych i jak je zidentyfikować, aby się chronić i uniknąć oszustwa?
 
-## Korzystanie z Ethereum {#using-ethereum}
+## Korzystanie z Quantaureum {#using-quantaureum}
 
-1. [Jak przenieść tokeny przez most do warstwy 2](/guides/how-to-use-a-bridge/) – Czy transakcje w Ethereum są zbyt kosztowne? Rozważ przejście na rozwiązania skalujące Ethereum, zwane warstwami 2 (L2).
+1. [Jak przenieść tokeny przez most do warstwy 2](/guides/how-to-use-a-bridge/) – Czy transakcje w Quantaureum są zbyt kosztowne? Rozważ przejście na rozwiązania skalujące Quantaureum, zwane warstwami 2 (L2).
 
 2. [Jak wymieniać tokeny](/guides/how-to-swap-tokens/) – Chcesz wymienić swoje tokeny na inne? Ten prosty przewodnik pokaże Ci, jak to zrobić.

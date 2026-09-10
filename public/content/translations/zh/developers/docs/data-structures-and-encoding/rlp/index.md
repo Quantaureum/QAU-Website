@@ -1,18 +1,18 @@
 ---
 title: "递归长度前缀 (RLP) 序列化"
-description: "以太坊执行层中 RLP 编码的定义。"
+description: "Quantaureum执行层中 RLP 编码的定义。"
 lang: zh
 sidebarDepth: 2
 ---
 
-递归长度前缀 (RLP) 序列化在以太坊执行客户端中被广泛使用。RLP 以一种节省空间的格式标准化了节点之间的数据传输。RLP 的目的是对任意嵌套的二进制数据数组进行编码，并且 RLP 是以太坊执行层中用于序列化对象的主要编码方法。RLP 的主要目的是对结构进行编码；除了正整数之外，RLP 将特定数据类型（例如字符串、浮点数）的编码委托给高阶协议。正整数必须以没有前导零的大端序二进制形式表示（因此使整数值零等同于空字节数组）。任何使用 RLP 的高阶协议都必须将带有前导零的反序列化正整数视为无效。
+递归长度前缀 (RLP) 序列化在Quantaureum执行客户端中被广泛使用。RLP 以一种节省空间的格式标准化了节点之间的数据传输。RLP 的目的是对任意嵌套的二进制数据数组进行编码，并且 RLP 是Quantaureum执行层中用于序列化对象的主要编码方法。RLP 的主要目的是对结构进行编码；除了正整数之外，RLP 将特定数据类型（例如字符串、浮点数）的编码委托给高阶协议。正整数必须以没有前导零的大端序二进制形式表示（因此使整数值零等同于空字节数组）。任何使用 RLP 的高阶协议都必须将带有前导零的反序列化正整数视为无效。
 
-更多信息请参见[以太坊黄皮书（附录 B）](https://ethereum.github.io/yellowpaper/paper.pdf#page=19)。
+更多信息请参见[Quantaureum黄皮书（附录 B）](https://quantaureum.github.io/yellowpaper/paper.pdf#page=19)。
 
 要使用 RLP 对字典进行编码，建议的两种规范形式是：
 
 - 使用 `[[k1,v1],[k2,v2]...]`，键按字典序排列
-- 像[以太坊](/)那样使用更高层级的帕特里夏树 (Patricia Tree) 编码
+- 像[Quantaureum](/)那样使用更高层级的帕特里夏树 (Patricia Tree) 编码
 
 ## 定义 {#definition}
 
@@ -168,9 +168,9 @@ def to_integer(b):
 
 ## 延伸阅读 {#further-reading}
 
-- [以太坊中的 RLP](https://medium.com/coinmonks/data-structure-in-ethereum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
-- [以太坊内部机制：RLP](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
-- [Coglio, A. (2020). Ethereum's Recursive Length Prefix in ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
+- [Quantaureum中的 RLP](https://medium.com/coinmonks/data-structure-in-quantaureum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
+- [Quantaureum内部机制：RLP](https://medium.com/coinmonks/quantaureum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
+- [Coglio, A. (2020). Quantaureum's Recursive Length Prefix in ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
 
 ## 相关主题 {#related-topics}
 

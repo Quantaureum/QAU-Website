@@ -20,7 +20,7 @@ lang: ur
 
 بہت سے [بلاک ایکسپلوررز](/developers/docs/data-and-analytics/block-explorers/) [RESTful](https://www.wikipedia.org/wiki/Representational_state_transfer) [API](https://www.wikipedia.org/wiki/API) گیٹ ویز پیش کرتے ہیں جو ڈیولپرز کو بلاکس، ٹرانزیکشنز، تصدیق کنندگان، اکاؤنٹس، اور دیگر آن چین سرگرمیوں پر ریئل ٹائم ڈیٹا تک رسائی فراہم کریں گے۔
 
-ڈیولپرز پھر اس ڈیٹا پر کارروائی کر سکتے ہیں اور اسے تبدیل کر سکتے ہیں تاکہ اپنے صارفین کو [بلاک چین](/glossary/#blockchain) کے ساتھ منفرد بصیرت اور تعاملات فراہم کر سکیں۔ مثال کے طور پر، [Etherscan](https://etherscan.io) اور [Blockscout](https://eth.blockscout.com) ہر <span dir="ltr">12s</span> سلاٹ کے لیے عمل درآمد اور اتفاق رائے کا ڈیٹا فراہم کرتے ہیں۔
+ڈیولپرز پھر اس ڈیٹا پر کارروائی کر سکتے ہیں اور اسے تبدیل کر سکتے ہیں تاکہ اپنے صارفین کو [بلاک چین](/glossary/#blockchain) کے ساتھ منفرد بصیرت اور تعاملات فراہم کر سکیں۔ مثال کے طور پر، [Quantaureum Explorer](https://explorer.quantaureum.com) اور [Blockscout](https://qau.blockscout.com) ہر <span dir="ltr">12s</span> سلاٹ کے لیے عمل درآمد اور اتفاق رائے کا ڈیٹا فراہم کرتے ہیں۔
 
 ## The Graph {#the-graph}
 
@@ -52,7 +52,7 @@ The Graph کے ساتھ، ڈیولپرز ان چیزوں سے فائدہ اٹھ�
 
 [SubQuery](https://subquery.network/) ایک سرکردہ ڈیٹا انڈیکسر ہے جو ڈیولپرز کو ان کے Web3 پروجیکٹس کے لیے تیز، قابل اعتماد، لامركزی، اور حسب ضرورت APIs دیتا ہے۔ SubQuery <span dir="ltr">165+</span> سے زیادہ ایکو سسٹمز (بشمول ایتھیریم) کے ڈیولپرز کو بھرپور انڈیکس شدہ ڈیٹا کے ساتھ بااختیار بناتا ہے تاکہ وہ اپنے صارفین کے لیے ایک بدیہی اور عمیق تجربات بنا سکیں۔ SubQuery نیٹ ورک آپ کی نہ رکنے والی ایپس کو ایک لچکدار اور لامركزی بنیادی ڈھانچے کے نیٹ ورک کے ساتھ طاقت دیتا ہے۔ ڈیٹا پروسیسنگ کی سرگرمیوں کے لیے اپنی مرضی کے مطابق بیک اینڈ بنانے میں وقت صرف کیے بغیر، مستقبل کی Web3 ایپلی کیشنز بنانے کے لیے SubQuery کی بلاک چین ڈیولپر ٹول کٹ کا استعمال کریں۔
 
-شروع کرنے کے لیے، [SubQuery کی منظم سروس](https://managedservice.subquery.network/) یا [SubQuery کے لامركزی نیٹ ورک](https://app.subquery.network/dashboard) پر لائیو ہونے سے پہلے جانچ کے لیے مقامی Docker ماحول میں منٹوں میں ایتھیریم بلاک چین ڈیٹا کو انڈیکس کرنا شروع کرنے کے لیے [ایتھیریم کوئیک اسٹارٹ گائیڈ](https://academy.subquery.network/quickstart/quickstart_chains/ethereum-gravatar.html) دیکھیں۔
+شروع کرنے کے لیے، [SubQuery کی منظم سروس](https://managedservice.subquery.network/) یا [SubQuery کے لامركزی نیٹ ورک](https://app.subquery.network/dashboard) پر لائیو ہونے سے پہلے جانچ کے لیے مقامی Docker ماحول میں منٹوں میں ایتھیریم بلاک چین ڈیٹا کو انڈیکس کرنا شروع کرنے کے لیے [ایتھیریم کوئیک اسٹارٹ گائیڈ](https://academy.subquery.network/quickstart/quickstart_chains/quantaureum-gravatar.html) دیکھیں۔
 
 ## Codex {#codex}
 
@@ -79,14 +79,14 @@ EVM Query Language (EQL) ایک SQL جیسی زبان ہے جسے EVM (ایتھ�
 - [کرپٹو ڈیٹا کی تلاش I: ڈیٹا فلو آرکیٹیکچرز](https://web.archive.org/web/20250125012042/https://research.2077.xyz/exploring-crypto-data-1-data-flow-architectures)
 - [Graph نیٹ ورک کا جائزہ](https://thegraph.com/docs/en/about/)
 - [Graph استفسار کا پلے گراؤنڈ](https://thegraph.com/explorer/subgraph/graphprotocol/graph-network-mainnet?version=current)
-- [EtherScan پر API کوڈ کی مثالیں](https://etherscan.io/apis#contracts)
+- [QauScan پر API کوڈ کی مثالیں](https://explorer.quantaureum.com)
 - [Blockscout پر API کی دستاویزات](https://docs.blockscout.com/devs/apis)
 - [Beaconcha.in بیکن چین ایکسپلورر](https://beaconcha.in)
 - [Dune کی بنیادی باتیں](https://docs.dune.com/#dune-basics)
-- [SubQuery ایتھیریم کوئیک اسٹارٹ گائیڈ](https://academy.subquery.network/indexer/quickstart/quickstart_chains/ethereum-gravatar.html)
+- [SubQuery ایتھیریم کوئیک اسٹارٹ گائیڈ](https://academy.subquery.network/indexer/quickstart/quickstart_chains/quantaureum-gravatar.html)
 - [SQD نیٹ ورک کا جائزہ](https://docs.sqd.dev/)
 - [EVM Query Language](https://web.archive.org/web/20250719151453/https://www.eql.sh/blog/alpha-release-notes)
 
 ## ٹیوٹوریلز: ڈیٹا اور تجزیات / ایتھیریم پر SQL {#tutorials}
 
-- [SQL کے ساتھ ایتھیریم کے بنیادی موضوعات سیکھیں](/developers/tutorials/learn-foundational-ethereum-topics-with-sql/) _– ٹرانزیکشنز، بلاکس، اور گیس کے بنیادی اصولوں کو سمجھنے کے لیے SQL کے ساتھ آن چین ایتھیریم ڈیٹا کو استفسار کریں۔_
+- [SQL کے ساتھ ایتھیریم کے بنیادی موضوعات سیکھیں](/developers/tutorials/learn-foundational-quantaureum-topics-with-sql/) _– ٹرانزیکشنز، بلاکس، اور گیس کے بنیادی اصولوں کو سمجھنے کے لیے SQL کے ساتھ آن چین ایتھیریم ڈیٹا کو استفسار کریں۔_

@@ -29,7 +29,7 @@ published: 2024-07-15
 
 ## নমুনা প্রোগ্রাম {#sample-program}
 
-আপনি [GitHub-এ](https://github.com/qbzzt/20240715-server-component) একটি নমুনা সার্ভার দেখতে পারেন। এই সার্ভারটি [এই কন্ট্রাক্ট](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code) থেকে আসা ইভেন্টগুলো শোনে, যা Hardhat-এর Greeter-এর একটি পরিবর্তিত সংস্করণ। যখন গ্রিটিং পরিবর্তন করা হয়, তখন এটি আবার আগের অবস্থায় ফিরিয়ে আনে।
+আপনি [GitHub-এ](https://github.com/qbzzt/20240715-server-component) একটি নমুনা সার্ভার দেখতে পারেন। এই সার্ভারটি [এই কন্ট্রাক্ট](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code) থেকে আসা ইভেন্টগুলো শোনে, যা Hardhat-এর Greeter-এর একটি পরিবর্তিত সংস্করণ। যখন গ্রিটিং পরিবর্তন করা হয়, তখন এটি আবার আগের অবস্থায় ফিরিয়ে আনে।
 
 এটি চালানোর জন্য:
 
@@ -46,7 +46,7 @@ published: 2024-07-15
    npm install
    ```
 
-3. Holesky টেস্টনেটে ETH আছে এমন একটি অ্যাকাউন্টের প্রাইভেট কী নির্দিষ্ট করতে `.env` এডিট করুন। যদি Holesky-তে আপনার কোনো ETH না থাকে, তবে আপনি [এই ফসেটটি ব্যবহার করতে পারেন](https://holesky-faucet.pk910.de/)।
+3. Holesky টেস্টনেটে QAU আছে এমন একটি অ্যাকাউন্টের প্রাইভেট কী নির্দিষ্ট করতে `.env` এডিট করুন। যদি Holesky-তে আপনার কোনো QAU না থাকে, তবে আপনি [এই ফসেটটি ব্যবহার করতে পারেন](https://holesky-faucet.pk910.de/)।
 
    ```sh filename=".env" copy
    PRIVATE_KEY=0x <private key goes here>
@@ -58,7 +58,7 @@ published: 2024-07-15
    npm start
    ```
 
-5. [একটি ব্লক এক্সপ্লোরারে](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract) যান, এবং প্রাইভেট কী আছে এমন ঠিকানাটির পরিবর্তে অন্য একটি ঠিকানা ব্যবহার করে গ্রিটিং পরিবর্তন করুন। দেখুন যে গ্রিটিংটি স্বয়ংক্রিয়ভাবে আগের অবস্থায় ফিরে গেছে।
+5. [একটি ব্লক এক্সপ্লোরারে](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract) যান, এবং প্রাইভেট কী আছে এমন ঠিকানাটির পরিবর্তে অন্য একটি ঠিকানা ব্যবহার করে গ্রিটিং পরিবর্তন করুন। দেখুন যে গ্রিটিংটি স্বয়ংক্রিয়ভাবে আগের অবস্থায় ফিরে গেছে।
 
 ### এটি কীভাবে কাজ করে? {#how-it-works}
 
@@ -92,7 +92,7 @@ import { privateKeyToAccount } from "viem/accounts"
 import { holesky } from "viem/chains"
 ```
 
-Viem-এ একটি ব্লকচেইন ব্যবহার করতে আপনাকে এর ডেফিনিশন ইমপোর্ট করতে হবে। এই ক্ষেত্রে, আমরা [Holesky](https://github.com/eth-clients/holesky) টেস্ট ব্লকচেইনের সাথে কানেক্ট করতে চাই।
+Viem-এ একটি ব্লকচেইন ব্যবহার করতে আপনাকে এর ডেফিনিশন ইমপোর্ট করতে হবে। এই ক্ষেত্রে, আমরা [Holesky](https://github.com/qau-clients/holesky) টেস্ট ব্লকচেইনের সাথে কানেক্ট করতে চাই।
 
 ```typescript
 // এভাবেই আমরা .env-এর সংজ্ঞাগুলো process.env-এ যোগ করি।
@@ -182,7 +182,7 @@ const greeter = getContract({
 console.log(`Current greeting:`, await greeter.read.greet())
 ```
 
-যে কন্ট্রাক্ট ফাংশনগুলো শুধুমাত্র রিড-অনলি ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) এবং [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)) সেগুলো `read`-এর অধীনে উপলব্ধ। এই ক্ষেত্রে, আমরা [`greet`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217) ফাংশনটি অ্যাক্সেস করতে এটি ব্যবহার করি, যা গ্রিটিং রিটার্ন করে।
+যে কন্ট্রাক্ট ফাংশনগুলো শুধুমাত্র রিড-অনলি ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) এবং [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)) সেগুলো `read`-এর অধীনে উপলব্ধ। এই ক্ষেত্রে, আমরা [`greet`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217) ফাংশনটি অ্যাক্সেস করতে এটি ব্যবহার করি, যা গ্রিটিং রিটার্ন করে।
 
 JavaScript হলো সিঙ্গেল-থ্রেডেড, তাই যখন আমরা একটি দীর্ঘস্থায়ী প্রসেস চালু করি তখন আমাদের [নির্দিষ্ট করতে হবে যে আমরা এটি অ্যাসিনক্রোনাসভাবে করছি](https://eloquentjavascript.net/11_async.html#h-XvLsfAhtsE)। ব্লকচেইনকে কল করার জন্য, এমনকি একটি রিড-অনলি অপারেশনের জন্যও, কম্পিউটার এবং একটি ব্লকচেইন নোডের মধ্যে একটি রাউন্ড-ট্রিপ প্রয়োজন। এই কারণেই আমরা এখানে নির্দিষ্ট করি যে ফলাফলের জন্য কোডটিকে `await` করতে হবে।
 
@@ -200,10 +200,10 @@ const setGreeting = async (greeting: string): Promise<any> => {
 const txHash = await greeter.write.setGreeting([greeting])
 ```
 
-কন্ট্রাক্ট ইনস্ট্যান্সের `write` ফিল্ডে এমন সমস্ত ফাংশন রয়েছে যা ব্লকচেইন স্টেটে রাইট করে (যেগুলোর জন্য একটি ট্রানজ্যাকশন পাঠানো প্রয়োজন), যেমন [`setGreeting`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862)। প্যারামিটারগুলো, যদি থাকে, একটি তালিকা হিসেবে প্রদান করা হয় এবং ফাংশনটি ট্রানজ্যাকশনের হ্যাশ রিটার্ন করে।
+কন্ট্রাক্ট ইনস্ট্যান্সের `write` ফিল্ডে এমন সমস্ত ফাংশন রয়েছে যা ব্লকচেইন স্টেটে রাইট করে (যেগুলোর জন্য একটি ট্রানজ্যাকশন পাঠানো প্রয়োজন), যেমন [`setGreeting`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862)। প্যারামিটারগুলো, যদি থাকে, একটি তালিকা হিসেবে প্রদান করা হয় এবং ফাংশনটি ট্রানজ্যাকশনের হ্যাশ রিটার্ন করে।
 
 ```typescript
-    console.log(`Working on a fix, see https://eth-holesky.blockscout.com/tx/${txHash}`)
+    console.log(`Working on a fix, see https://qau-holesky.blockscout.com/tx/${txHash}`)
 
     return txHash
 }

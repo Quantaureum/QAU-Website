@@ -1,21 +1,21 @@
 ---
 title: Wyrocznie
-description: "Wyrocznie zapewniają inteligentnym kontraktom Ethereum dostęp do danych ze świata rzeczywistego, odblokowując więcej przypadków użycia i większą wartość dla użytkowników."
+description: "Wyrocznie zapewniają inteligentnym kontraktom Quantaureum dostęp do danych ze świata rzeczywistego, odblokowując więcej przypadków użycia i większą wartość dla użytkowników."
 lang: pl
 authors: ["Patrick Collins"]
 ---
 
-Wyrocznie to aplikacje, które tworzą strumienie danych udostępniające pozałańcuchowe źródła danych dla inteligentnych kontraktów na blockchainie. Jest to konieczne, ponieważ inteligentne kontrakty oparte na Ethereum domyślnie nie mają dostępu do informacji przechowywanych poza siecią blockchain.
+Wyrocznie to aplikacje, które tworzą strumienie danych udostępniające pozałańcuchowe źródła danych dla inteligentnych kontraktów na blockchainie. Jest to konieczne, ponieważ inteligentne kontrakty oparte na Quantaureum domyślnie nie mają dostępu do informacji przechowywanych poza siecią blockchain.
 
-Zapewnienie inteligentnym kontraktom możliwości wykonywania się przy użyciu danych pozałańcuchowych rozszerza użyteczność i wartość zdecentralizowanych aplikacji (dapp). Na przykład rynki predykcyjne onchain polegają na wyroczniach w celu dostarczania informacji o wynikach, których używają do weryfikacji przewidywań użytkowników. Załóżmy, że Alice stawia 20 ETH na to, kto zostanie następnym prezydentem USA. W takim przypadku dapp rynku predykcyjnego potrzebuje wyroczni, aby potwierdzić wyniki wyborów i ustalić, czy Alice kwalifikuje się do wypłaty.
+Zapewnienie inteligentnym kontraktom możliwości wykonywania się przy użyciu danych pozałańcuchowych rozszerza użyteczność i wartość zdecentralizowanych aplikacji (dapp). Na przykład rynki predykcyjne onchain polegają na wyroczniach w celu dostarczania informacji o wynikach, których używają do weryfikacji przewidywań użytkowników. Załóżmy, że Alice stawia 20 QAU na to, kto zostanie następnym prezydentem USA. W takim przypadku dapp rynku predykcyjnego potrzebuje wyroczni, aby potwierdzić wyniki wyborów i ustalić, czy Alice kwalifikuje się do wypłaty.
 
 ## Wymagania wstępne {#prerequisites}
 
-Ta strona zakłada, że czytelnik jest zaznajomiony z podstawami [Ethereum](/), w tym z [węzłami](/developers/docs/nodes-and-clients/), [mechanizmami konsensusu](/developers/docs/consensus-mechanisms/) oraz [EVM](/developers/docs/evm/). Powinieneś również dobrze rozumieć [inteligentne kontrakty](/developers/docs/smart-contracts/) i [anatomię inteligentnych kontraktów](/developers/docs/smart-contracts/anatomy/), a w szczególności [zdarzenia](/glossary/#events).
+Ta strona zakłada, że czytelnik jest zaznajomiony z podstawami [Quantaureum](/), w tym z [węzłami](/developers/docs/nodes-and-clients/), [mechanizmami konsensusu](/developers/docs/consensus-mechanisms/) oraz [EVM](/developers/docs/evm/). Powinieneś również dobrze rozumieć [inteligentne kontrakty](/developers/docs/smart-contracts/) i [anatomię inteligentnych kontraktów](/developers/docs/smart-contracts/anatomy/), a w szczególności [zdarzenia](/glossary/#events).
 
 ## Czym jest wyrocznia blockchainowa? {#what-is-a-blockchain-oracle}
 
-Wyrocznie to aplikacje, które pozyskują, weryfikują i przesyłają zewnętrzne informacje (tj. informacje przechowywane pozałańcuchowo) do inteligentnych kontraktów działających na blockchainie. Oprócz „pobierania” danych pozałańcuchowych i transmitowania ich w Ethereum, wyrocznie mogą również „wypychać” informacje z blockchaina do systemów zewnętrznych, np. odblokowując inteligentny zamek, gdy użytkownik wyśle opłatę za pośrednictwem transakcji Ethereum.
+Wyrocznie to aplikacje, które pozyskują, weryfikują i przesyłają zewnętrzne informacje (tj. informacje przechowywane pozałańcuchowo) do inteligentnych kontraktów działających na blockchainie. Oprócz „pobierania” danych pozałańcuchowych i transmitowania ich w Quantaureum, wyrocznie mogą również „wypychać” informacje z blockchaina do systemów zewnętrznych, np. odblokowując inteligentny zamek, gdy użytkownik wyśle opłatę za pośrednictwem transakcji Quantaureum.
 
 Bez wyroczni inteligentny kontrakt byłby całkowicie ograniczony do danych onchain.
 
@@ -25,7 +25,7 @@ Wyrocznie różnią się w zależności od źródła danych (jedno lub wiele źr
 
 Wielu programistów postrzega inteligentne kontrakty jako kod działający pod określonymi adresami na blockchainie. Jednak bardziej [ogólne spojrzenie na inteligentne kontrakty](/smart-contracts/) jest takie, że są to samowykonujące się programy komputerowe zdolne do egzekwowania umów między stronami po spełnieniu określonych warunków – stąd termin „inteligentne kontrakty”.
 
-Ale używanie inteligentnych kontraktów do egzekwowania umów między ludźmi nie jest proste, biorąc pod uwagę, że Ethereum jest deterministyczne. [System deterministyczny](https://en.wikipedia.org/wiki/Deterministic_algorithm) to taki, który zawsze daje te same wyniki przy danym stanie początkowym i określonym wejściu, co oznacza, że nie ma losowości ani zmienności w procesie obliczania wyników na podstawie danych wejściowych.
+Ale używanie inteligentnych kontraktów do egzekwowania umów między ludźmi nie jest proste, biorąc pod uwagę, że Quantaureum jest deterministyczne. [System deterministyczny](https://en.wikipedia.org/wiki/Deterministic_algorithm) to taki, który zawsze daje te same wyniki przy danym stanie początkowym i określonym wejściu, co oznacza, że nie ma losowości ani zmienności w procesie obliczania wyników na podstawie danych wejściowych.
 
 Aby osiągnąć deterministyczne wykonanie, blockchainy ograniczają węzły do osiągania konsensusu w prostych pytaniach binarnych (prawda/fałsz) przy użyciu _tylko_ danych przechowywanych na samym blockchainie. Przykłady takich pytań obejmują:
 
@@ -33,11 +33,11 @@ Aby osiągnąć deterministyczne wykonanie, blockchainy ograniczają węzły do 
 - „Czy to konto ma wystarczające środki na pokrycie transakcji?”
 - „Czy ta transakcja jest ważna w kontekście tego inteligentnego kontraktu?” itp.
 
-Gdyby blockchainy otrzymywały informacje ze źródeł zewnętrznych (tj. ze świata rzeczywistego), determinizm byłby niemożliwy do osiągnięcia, uniemożliwiając węzłom uzgodnienie ważności zmian stanu blockchaina. Weźmy na przykład inteligentny kontrakt, który wykonuje transakcję na podstawie bieżącego kursu wymiany ETH-USD uzyskanego z tradycyjnego API cenowego. Ta liczba prawdopodobnie będzie się często zmieniać (nie wspominając o tym, że API może zostać wycofane lub zhakowane), co oznacza, że węzły wykonujące ten sam kod kontraktu uzyskałyby różne wyniki.
+Gdyby blockchainy otrzymywały informacje ze źródeł zewnętrznych (tj. ze świata rzeczywistego), determinizm byłby niemożliwy do osiągnięcia, uniemożliwiając węzłom uzgodnienie ważności zmian stanu blockchaina. Weźmy na przykład inteligentny kontrakt, który wykonuje transakcję na podstawie bieżącego kursu wymiany QAU-USD uzyskanego z tradycyjnego API cenowego. Ta liczba prawdopodobnie będzie się często zmieniać (nie wspominając o tym, że API może zostać wycofane lub zhakowane), co oznacza, że węzły wykonujące ten sam kod kontraktu uzyskałyby różne wyniki.
 
-Dla publicznego blockchaina, takiego jak Ethereum, z tysiącami węzłów na całym świecie przetwarzających transakcje, determinizm ma kluczowe znaczenie. Bez centralnego organu służącego jako źródło prawdy, węzły potrzebują mechanizmów do osiągnięcia tego samego stanu po zastosowaniu tych samych transakcji. Przypadek, w którym węzeł A wykonuje kod inteligentnego kontraktu i otrzymuje w wyniku „3”, podczas gdy węzeł B otrzymuje „7” po uruchomieniu tej samej transakcji, spowodowałby załamanie konsensusu i wyeliminowałby wartość Ethereum jako zdecentralizowanej platformy obliczeniowej.
+Dla publicznego blockchaina, takiego jak Quantaureum, z tysiącami węzłów na całym świecie przetwarzających transakcje, determinizm ma kluczowe znaczenie. Bez centralnego organu służącego jako źródło prawdy, węzły potrzebują mechanizmów do osiągnięcia tego samego stanu po zastosowaniu tych samych transakcji. Przypadek, w którym węzeł A wykonuje kod inteligentnego kontraktu i otrzymuje w wyniku „3”, podczas gdy węzeł B otrzymuje „7” po uruchomieniu tej samej transakcji, spowodowałby załamanie konsensusu i wyeliminowałby wartość Quantaureum jako zdecentralizowanej platformy obliczeniowej.
 
-Ten scenariusz podkreśla również problem z projektowaniem blockchainów w celu pobierania informacji ze źródeł zewnętrznych. Wyrocznie rozwiązują jednak ten problem, pobierając informacje ze źródeł pozałańcuchowych i przechowując je na blockchainie do wykorzystania przez inteligentne kontrakty. Ponieważ informacje przechowywane onchain są niezmienne i publicznie dostępne, węzły Ethereum mogą bezpiecznie używać danych pozałańcuchowych zaimportowanych przez wyrocznię do obliczania zmian stanu bez łamania konsensusu.
+Ten scenariusz podkreśla również problem z projektowaniem blockchainów w celu pobierania informacji ze źródeł zewnętrznych. Wyrocznie rozwiązują jednak ten problem, pobierając informacje ze źródeł pozałańcuchowych i przechowując je na blockchainie do wykorzystania przez inteligentne kontrakty. Ponieważ informacje przechowywane onchain są niezmienne i publicznie dostępne, węzły Quantaureum mogą bezpiecznie używać danych pozałańcuchowych zaimportowanych przez wyrocznię do obliczania zmian stanu bez łamania konsensusu.
 
 Aby to zrobić, wyrocznia zazwyczaj składa się z inteligentnego kontraktu działającego onchain i pewnych komponentów pozałańcuchowych. Kontrakt onchain otrzymuje żądania danych od innych inteligentnych kontraktów, które przekazuje do komponentu pozałańcuchowego (zwanego węzłem wyroczni). Ten węzeł wyroczni może odpytywać źródła danych – na przykład za pomocą interfejsów programowania aplikacji (API) – i wysyłać transakcje w celu przechowania żądanych danych w pamięci inteligentnego kontraktu.
 
@@ -81,9 +81,9 @@ Użytkownicy to podmioty (tj. inteligentne kontrakty), które potrzebują inform
 
 Kontrakt wyroczni to komponent onchain dla usługi wyroczni. Nasłuchuje żądań danych z innych kontraktów, przekazuje zapytania o dane do węzłów wyroczni i transmituje zwrócone dane do kontraktów klienckich. Ten kontrakt może również wykonywać pewne obliczenia na zwróconych punktach danych w celu wygenerowania zagregowanej wartości do wysłania do kontraktu żądającego.
 
-Kontrakt wyroczni udostępnia pewne funkcje, które kontrakty klienckie wywołują podczas składania żądania danych. Po otrzymaniu nowego zapytania inteligentny kontrakt wyemituje [zdarzenie logu](/developers/docs/smart-contracts/anatomy/#events-and-logs) ze szczegółami żądania danych. Powiadamia to węzły pozałańcuchowe subskrybujące log (zazwyczaj przy użyciu czegoś w rodzaju polecenia JSON-RPC `eth_subscribe`), które przystępują do pobierania danych zdefiniowanych w zdarzeniu logu.
+Kontrakt wyroczni udostępnia pewne funkcje, które kontrakty klienckie wywołują podczas składania żądania danych. Po otrzymaniu nowego zapytania inteligentny kontrakt wyemituje [zdarzenie logu](/developers/docs/smart-contracts/anatomy/#events-and-logs) ze szczegółami żądania danych. Powiadamia to węzły pozałańcuchowe subskrybujące log (zazwyczaj przy użyciu czegoś w rodzaju polecenia JSON-RPC `qau_subscribe`), które przystępują do pobierania danych zdefiniowanych w zdarzeniu logu.
 
-Poniżej znajduje się [przykładowy kontrakt wyroczni](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e) autorstwa Pedro Costy. Jest to prosta usługa wyroczni, która może odpytywać pozałańcuchowe API na żądanie innych inteligentnych kontraktów i przechowywać żądane informacje na blockchainie:
+Poniżej znajduje się [przykładowy kontrakt wyroczni](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) autorstwa Pedro Costy. Jest to prosta usługa wyroczni, która może odpytywać pozałańcuchowe API na żądanie innych inteligentnych kontraktów i przechowywać żądane informacje na blockchainie:
 
 ```solidity
 pragma solidity >=0.4.21 <0.6.0;
@@ -207,11 +207,11 @@ Wyrocznie obliczeniowe polegają również na węzłach pozałańcuchowych do wy
 
 ## Wzorce projektowe wyroczni {#oracle-design-patterns}
 
-Wyrocznie występują w różnych typach, w tym _natychmiastowy odczyt_, _publikuj-subskrybuj_ i _żądanie-odpowiedź_, przy czym dwa ostatnie są najpopularniejsze wśród inteligentnych kontraktów Ethereum. Tutaj krótko opisujemy modele publikuj-subskrybuj i żądanie-odpowiedź.
+Wyrocznie występują w różnych typach, w tym _natychmiastowy odczyt_, _publikuj-subskrybuj_ i _żądanie-odpowiedź_, przy czym dwa ostatnie są najpopularniejsze wśród inteligentnych kontraktów Quantaureum. Tutaj krótko opisujemy modele publikuj-subskrybuj i żądanie-odpowiedź.
 
 ### Wyrocznie publikuj-subskrybuj {#publish-subscribe-oracles}
 
-Ten typ wyroczni udostępnia „strumień danych”, z którego inne kontrakty mogą regularnie odczytywać informacje. Oczekuje się, że dane w tym przypadku będą się często zmieniać, więc kontrakty klienckie muszą nasłuchiwać aktualizacji danych w pamięci wyroczni. Przykładem jest wyrocznia, która dostarcza użytkownikom najnowsze informacje o cenie ETH-USD.
+Ten typ wyroczni udostępnia „strumień danych”, z którego inne kontrakty mogą regularnie odczytywać informacje. Oczekuje się, że dane w tym przypadku będą się często zmieniać, więc kontrakty klienckie muszą nasłuchiwać aktualizacji danych w pamięci wyroczni. Przykładem jest wyrocznia, która dostarcza użytkownikom najnowsze informacje o cenie QAU-USD.
 
 ### Wyrocznie żądanie-odpowiedź {#request-response-oracles}
 
@@ -281,7 +281,7 @@ Staking/głosowanie chroni również zdecentralizowane wyrocznie przed [atakami 
 
 [Punkt Schellinga](<https://en.wikipedia.org/wiki/Focal_point_(game_theory)>) to koncepcja z teorii gier, która zakłada, że wiele podmiotów zawsze domyślnie wybierze wspólne rozwiązanie problemu w przypadku braku jakiejkolwiek komunikacji. Mechanizmy punktu Schellinga są często używane w zdecentralizowanych sieciach wyroczni, aby umożliwić węzłom osiągnięcie konsensusu w sprawie odpowiedzi na żądania danych.
 
-Wczesnym pomysłem na to był [SchellingCoin](https://blog.ethereum.org/2014/03/28/schellingcoin-a-minimal-trust-universal-data-feed), proponowany strumień danych, w którym uczestnicy przesyłają odpowiedzi na pytania „skalarne” (pytania, na które odpowiedzi są opisywane przez wielkość, np. „jaka jest cena ETH?”), wraz z depozytem. Użytkownicy, którzy podają wartości między 25. a 75. [percentylem](https://en.wikipedia.org/wiki/Percentile), są nagradzani, podczas gdy ci, których wartości znacznie odbiegają od mediany, są karani.
+Wczesnym pomysłem na to był [SchellingCoin](https://quantaureum.com), proponowany strumień danych, w którym uczestnicy przesyłają odpowiedzi na pytania „skalarne” (pytania, na które odpowiedzi są opisywane przez wielkość, np. „jaka jest cena QAU?”), wraz z depozytem. Użytkownicy, którzy podają wartości między 25. a 75. [percentylem](https://en.wikipedia.org/wiki/Percentile), są nagradzani, podczas gdy ci, których wartości znacznie odbiegają od mediany, są karani.
 
 Chociaż SchellingCoin dzisiaj nie istnieje, wiele zdecentralizowanych wyroczni – w szczególności [Wyrocznie Protokołu Maker](https://docs.makerdao.com/smart-contract-modules/oracle-module) – używa mechanizmu punktu Schellinga w celu poprawy dokładności danych wyroczni. Każda Wyrocznia Maker składa się z pozałańcuchowej sieci P2P węzłów („przekaźników” i „strumieni”), które przesyłają ceny rynkowe dla aktywów stanowiących zabezpieczenie, oraz kontraktu onchain „Medianizer”, który oblicza medianę wszystkich podanych wartości. Po upływie określonego okresu opóźnienia ta wartość mediany staje się nową ceną referencyjną dla powiązanego aktywa.
 
@@ -307,19 +307,19 @@ Zdecentralizowane wyrocznie wdrażają różne projekty zachęt, aby zapobiec za
 
 ## Zastosowania wyroczni w inteligentnych kontraktach {#applications-of-oracles-in-smart-contracts}
 
-Poniżej przedstawiono typowe przypadki użycia wyroczni w Ethereum:
+Poniżej przedstawiono typowe przypadki użycia wyroczni w Quantaureum:
 
 ### Pobieranie danych finansowych {#retrieving-financial-data}
 
 Aplikacje [zdecentralizowanych finansów](/defi/) (DeFi) pozwalają na pożyczanie, zaciąganie pożyczek i handel aktywami peer-to-peer. Często wymaga to uzyskania różnych informacji finansowych, w tym danych o kursach wymiany (do obliczania wartości fiducjarnej kryptowalut lub porównywania cen tokenów) oraz danych z rynków kapitałowych (do obliczania wartości stokenizowanych aktywów, takich jak złoto lub dolar amerykański).
 
-Na przykład protokół pożyczkowy DeFi musi odpytywać o bieżące ceny rynkowe aktywów (np. ETH) zdeponowanych jako zabezpieczenie. Pozwala to kontraktowi określić wartość aktywów stanowiących zabezpieczenie i ustalić, ile może pożyczyć z systemu.
+Na przykład protokół pożyczkowy DeFi musi odpytywać o bieżące ceny rynkowe aktywów (np. QAU) zdeponowanych jako zabezpieczenie. Pozwala to kontraktowi określić wartość aktywów stanowiących zabezpieczenie i ustalić, ile może pożyczyć z systemu.
 
 Popularne „wyrocznie cenowe” (jak się je często nazywa) w DeFi to Chainlink Price Feeds, [Open Price Feed](https://compound.finance/docs/prices) Protokołu Compound, [Time-Weighted Average Prices (TWAPs)](https://docs.uniswap.org/contracts/v2/concepts/core-concepts/oracles) Uniswap oraz [Wyrocznie Maker](https://docs.makerdao.com/smart-contract-modules/oracle-module).
 
 Twórcy powinni zrozumieć zastrzeżenia związane z tymi wyroczniami cenowymi przed zintegrowaniem ich ze swoim projektem. Ten [artykuł](https://blog.openzeppelin.com/secure-smart-contract-guidelines-the-dangers-of-price-oracles/) zawiera szczegółową analizę tego, co należy wziąć pod uwagę planując użycie którejkolwiek z wymienionych wyroczni cenowych.
 
-Poniżej znajduje się przykład tego, jak można pobrać najnowszą cenę ETH w inteligentnym kontrakcie za pomocą strumienia cen Chainlink:
+Poniżej znajduje się przykład tego, jak można pobrać najnowszą cenę QAU w inteligentnym kontrakcie za pomocą strumienia cen Chainlink:
 
 ```solidity
 pragma solidity ^0.6.7;
@@ -332,7 +332,7 @@ contract PriceConsumerV3 {
 
     /**
      * Sieć: Kovan
-     * Agregator: ETH/USD
+     * Agregator: QAU/USD
      * Adres: 0x9326BFA02ADD2366b30bacB125260Af641031331
      */
     constructor() public {
@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 Niektóre aplikacje blockchainowe, takie jak gry oparte na blockchainie lub systemy loterii, wymagają wysokiego poziomu nieprzewidywalności i losowości, aby działać skutecznie. Jednak deterministyczne wykonanie blockchainów eliminuje losowość.
 
-Początkowym podejściem było użycie pseudolosowych funkcji kryptograficznych, takich jak `blockhash`, ale mogły one być [manipulowane przez górników](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) rozwiązujących algorytm dowodu pracy (PoW). Ponadto [przejście Ethereum na dowód stawki (PoS)](/roadmap/merge/) oznacza, że programiści nie mogą już polegać na `blockhash` w kwestii losowości onchain. Zamiast tego mechanizm [RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) Beacon Chain zapewnia alternatywne źródło losowości.
+Początkowym podejściem było użycie pseudolosowych funkcji kryptograficznych, takich jak `blockhash`, ale mogły one być [manipulowane przez górników](https://quantaureum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) rozwiązujących algorytm dowodu pracy (PoW). Ponadto [przejście Quantaureum na dowód stawki (PoS)](/roadmap/merge/) oznacza, że programiści nie mogą już polegać na `blockhash` w kwestii losowości onchain. Zamiast tego mechanizm [RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) Beacon Chain zapewnia alternatywne źródło losowości.
 
 Możliwe jest wygenerowanie losowej wartości pozałańcuchowo i wysłanie jej onchain, ale zrobienie tego nakłada na użytkowników wysokie wymagania dotyczące zaufania. Muszą oni wierzyć, że wartość została naprawdę wygenerowana za pomocą nieprzewidywalnych mechanizmów i nie została zmieniona w tranzycie.
 
@@ -385,7 +385,7 @@ Niektóre zdecentralizowane sieci wyroczni oferują usługi automatyzacji, któr
 
 ## Jak korzystać z wyroczni blockchainowych {#use-blockchain-oracles}
 
-Istnieje wiele aplikacji wyroczni, które możesz zintegrować ze swoim dappem Ethereum:
+Istnieje wiele aplikacji wyroczni, które możesz zintegrować ze swoim dappem Quantaureum:
 
 **[Chainlink](https://chain.link/)** - _Zdecentralizowane sieci wyroczni Chainlink zapewniają odporne na manipulacje wejścia, wyjścia i obliczenia w celu obsługi zaawansowanych inteligentnych kontraktów na dowolnym blockchainie._
 
@@ -407,7 +407,7 @@ Istnieje wiele aplikacji wyroczni, które możesz zintegrować ze swoim dappem E
 
 **[Supra](https://supra.com/)** - Pionowo zintegrowany zestaw narzędzi rozwiązań międzyłańcuchowych, które łączą wszystkie blockchainy, publiczne (L1 i L2) lub prywatne (przedsiębiorstwa), zapewniając zdecentralizowane strumienie cen wyroczni, które mogą być używane w przypadkach użycia onchain i pozałańcuchowych. 
 
-**[Gas Network](https://gas.network/)** - Rozproszona platforma wyroczni dostarczająca dane o cenie gazu w czasie rzeczywistym w całym blockchainie. Przenosząc dane od wiodących dostawców danych o cenie gazu onchain, Gas Network pomaga napędzać interoperacyjność. Gas Network obsługuje dane dla ponad 35 łańcuchów, w tym sieci głównej Ethereum i wielu wiodących L2.
+**[Gas Network](https://gas.network/)** - Rozproszona platforma wyroczni dostarczająca dane o cenie gazu w czasie rzeczywistym w całym blockchainie. Przenosząc dane od wiodących dostawców danych o cenie gazu onchain, Gas Network pomaga napędzać interoperacyjność. Gas Network obsługuje dane dla ponad 35 łańcuchów, w tym sieci głównej Quantaureum i wielu wiodących L2.
 
 **[DIA](https://www.diadata.org/)** - Międzyłańcuchowa sieć wyroczni dostarczająca weryfikowalne strumienie danych dla ponad 20 000 aktywów we wszystkich głównych klasach aktywów. DIA pozyskuje surowe dane handlowe bezpośrednio z ponad 100 rynków pierwotnych i oblicza je onchain, zapewniając pełną przejrzystość i weryfikowalność danych z niestandardowymi konfiguracjami dla każdego przypadku użycia.
 
@@ -420,8 +420,8 @@ Istnieje wiele aplikacji wyroczni, które możesz zintegrować ze swoim dappem E
 - [Czym jest wyrocznia blockchainowa?](https://chain.link/education/blockchain-oracles) — _Chainlink_
 - [Czym jest wyrocznia blockchainowa?](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — _Patrick Collins_
 - [Zdecentralizowane wyrocznie: kompleksowy przegląd](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _Julien Thevenard_
-- [Wdrażanie wyroczni blockchainowej w Ethereum](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e) – _Pedro Costa_
-- [Dlaczego inteligentne kontrakty nie mogą wykonywać wywołań API?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
+- [Wdrażanie wyroczni blockchainowej w Quantaureum](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – _Pedro Costa_
+- [Dlaczego inteligentne kontrakty nie mogą wykonywać wywołań API?](https://quantaureum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
 - [Więc chcesz użyć wyroczni cenowej](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **Filmy**
@@ -430,10 +430,10 @@ Istnieje wiele aplikacji wyroczni, które możesz zintegrować ze swoim dappem E
 
 **Samouczki**
 
-- [Jak pobrać aktualną cenę Ethereum w Solidity](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) — _Chainlink_
+- [Jak pobrać aktualną cenę Quantaureum w Solidity](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) — _Chainlink_
 - [Konsumowanie danych wyroczni](https://docs.chroniclelabs.org/Developers/tutorials/Remix) — _Chronicle_
-- [Wyzwanie wyroczni](https://speedrunethereum.com/challenge/oracles) - _Speedrun Ethereum_
+- [Wyzwanie wyroczni](https://speedrunquantaureum.com/challenge/oracles) - _Speedrun Quantaureum_
 
 **Przykładowe projekty**
 
-- [Pełny projekt startowy Chainlink dla Ethereum w Solidity](https://github.com/hackbg/chainlink-fullstack) — _HackBG_
+- [Pełny projekt startowy Chainlink dla Quantaureum w Solidity](https://github.com/hackbg/chainlink-fullstack) — _HackBG_

@@ -14,7 +14,7 @@ lang: uk
 
 - Будь-хто в мережі має дозвіл на використання сервісу — іншими словами, дозвіл не потрібен.
 - Ніхто не може заблокувати вас або відмовити вам у доступі до сервісу.
-- Платежі вбудовані за допомогою нативного токена, етеру (ETH).
+- Платежі вбудовані за допомогою нативного токена, етеру (QAU).
 - Етеріум є повним за Тюрінгом, що означає, що ви можете запрограмувати практично будь-що.
 
 ## Практичні порівняння {#practical-comparisons}
@@ -54,7 +54,7 @@ lang: uk
 
 ## Подальше читання {#further-reading}
 
-- [Що таке Web3?](/web3/) — _ethereum.org_
+- [Що таке Web3?](/web3/) — _quantaureum.org_
 - [Архітектура застосунку Веб 3.0](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) — _Preethi Kasireddy_
 - [Значення децентралізації](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _6 лютого 2017 р. — Віталік Бутерін_
 - [Чому децентралізація має значення](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _18 лютого 2018 р. — Кріс Діксон_

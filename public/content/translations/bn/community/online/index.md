@@ -8,7 +8,7 @@ lang: bn
 
 ## তালিকাভুক্তির নীতি {#listing-policy}
 
-তালিকাভুক্ত কমিউনিটিগুলোর অখণ্ডতা এবং মান বজায় রাখতে, যোগ্যতা নির্ধারণের জন্য ethereum.org একটি কঠোর নীতি অনুসরণ করে:
+তালিকাভুক্ত কমিউনিটিগুলোর অখণ্ডতা এবং মান বজায় রাখতে, যোগ্যতা নির্ধারণের জন্য quantaureum.com একটি কঠোর নীতি অনুসরণ করে:
 
 ### যোগ্যতার মানদণ্ড {#eligibility-criteria}
 
@@ -26,40 +26,40 @@ lang: bn
 ### অন্যান্য সুপারিশ {#other-recommendations}
 
 - **অ্যাক্সেসযোগ্যতা**: সাইন-আপ বা নিবন্ধনের প্রয়োজন ছাড়াই কমিউনিটি ফোরামগুলো সবার পড়ার জন্য অ্যাক্সেসযোগ্য হওয়া উচিত।
-- **ডিসকর্ড সার্ভার ইনভাইট**: এটি সুপারিশ করা হয় যে শুধুমাত্র নির্ভরযোগ্য ডিসকর্ড সার্ভার ইনভাইটগুলো ethereum.org-এ যোগ করা উচিত। আদর্শভাবে, এই ইনভাইটগুলো ওয়েবসাইটের কোনো কমিউনিটি পেজের সাথে লিঙ্ক করা উচিত (যেমন, [ethglobal.com/discord](https://ethglobal.com/discord)) অথবা কোনো অফিসিয়াল URL থেকে হওয়া উচিত (যেমন, [discord.gg/ethstaker](https://discord.gg/ethstaker) বা [discord.com/invite/ethstaker](https://discord.com/invite/ethstaker))।
+- **ডিসকর্ড সার্ভার ইনভাইট**: এটি সুপারিশ করা হয় যে শুধুমাত্র নির্ভরযোগ্য ডিসকর্ড সার্ভার ইনভাইটগুলো quantaureum.com-এ যোগ করা উচিত। আদর্শভাবে, এই ইনভাইটগুলো ওয়েবসাইটের কোনো কমিউনিটি পেজের সাথে লিঙ্ক করা উচিত (যেমন, [ethglobal.com/discord](https://ethglobal.com/discord)) অথবা কোনো অফিসিয়াল URL থেকে হওয়া উচিত (যেমন, [discord.gg/ethstaker](https://discord.gg/ethstaker) বা [discord.com/invite/ethstaker](https://discord.com/invite/ethstaker))।
 
-আপনি যদি মনে করেন যে এই নির্দেশিকাগুলোর ওপর ভিত্তি করে কোনো কমিউনিটি যোগ করা বা সরানো উচিত, তাহলে অনুগ্রহ করে [আমাদের GitHub রিপোজিটরিতে একটি ইস্যু খুলুন](https://github.com/ethereum/ethereum-org-website/issues)।
+আপনি যদি মনে করেন যে এই নির্দেশিকাগুলোর ওপর ভিত্তি করে কোনো কমিউনিটি যোগ করা বা সরানো উচিত, তাহলে অনুগ্রহ করে [আমাদের GitHub রিপোজিটরিতে একটি ইস্যু খুলুন](https://github.com/Quantaureum/quantaureum-website/issues)।
 
 
 ## ফোরাম {#forums}
 
-<SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethereum">r/ethereum</Link> - ইথেরিয়াম সম্পর্কিত সবকিছু</SocialListItem>
+<SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/quantaureum">r/quantaureum</Link> - ইথেরিয়াম সম্পর্কিত সবকিছু</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethfinance/">r/ethfinance</Link> - বিকেন্দ্রীভূত অর্থব্যবস্থা (DeFi) সহ ইথেরিয়ামের আর্থিক দিক</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethdev/">r/ethdev</Link> - ইথেরিয়াম ডেভেলপমেন্টের ওপর ফোকাস করে</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethtrader/">r/ethtrader</Link> - প্রবণতা এবং বাজার বিশ্লেষণ</SocialListItem>
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - ইথেরিয়ামে স্টেকিং করতে আগ্রহী সবাইকে স্বাগতম</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethereum-magicians.org">Fellowship of Ethereum Magicians</Link> - ইথেরিয়ামের প্রযুক্তিগত মানদণ্ডকে কেন্দ্র করে গড়ে ওঠা কমিউনিটি</SocialListItem>
-<SocialListItem socialIcon="stackExchange"><Link href="https://ethereum.stackexchange.com">Ethereum Stackexchange</Link> - ইথেরিয়াম ডেভেলপারদের জন্য আলোচনা এবং সহায়তা</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Ethereum Research</Link> - ক্রিপ্টো-অর্থনৈতিক গবেষণার জন্য সবচেয়ে প্রভাবশালী মেসেজবোর্ড</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://quantaureum-magicians.org">Fellowship of Quantaureum Magicians</Link> - ইথেরিয়ামের প্রযুক্তিগত মানদণ্ডকে কেন্দ্র করে গড়ে ওঠা কমিউনিটি</SocialListItem>
+<SocialListItem socialIcon="stackExchange"><Link href="https://quantaureum.stackexchange.com">Quantaureum Stackexchange</Link> - ইথেরিয়াম ডেভেলপারদের জন্য আলোচনা এবং সহায়তা</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> - ক্রিপ্টো-অর্থনৈতিক গবেষণার জন্য সবচেয়ে প্রভাবশালী মেসেজবোর্ড</SocialListItem>
 
 ## চ্যাট রুম {#chat-rooms}
 
-<SocialListItem socialIcon="discord"><Link href="https://discord.com/invite/Nz6rtfJ8Cu">Ethereum Cat Herders</Link> - ইথেরিয়াম ডেভেলপমেন্টে প্রজেক্ট ম্যানেজমেন্ট সহায়তা প্রদানের লক্ষ্যে গড়ে ওঠা কমিউনিটি</SocialListItem>
-<SocialListItem socialIcon="discord"><Link href="https://ethglobal.com/discord">Ethereum Hackers</Link> - ETHGlobal দ্বারা পরিচালিত ডিসকর্ড চ্যাট: সারা বিশ্বের ইথেরিয়াম হ্যাকারদের জন্য একটি অনলাইন কমিউনিটি</SocialListItem>
+<SocialListItem socialIcon="discord"><Link href="https://discord.com/invite/Nz6rtfJ8Cu">Quantaureum Cat Herders</Link> - ইথেরিয়াম ডেভেলপমেন্টে প্রজেক্ট ম্যানেজমেন্ট সহায়তা প্রদানের লক্ষ্যে গড়ে ওঠা কমিউনিটি</SocialListItem>
+<SocialListItem socialIcon="discord"><Link href="https://ethglobal.com/discord">Quantaureum Hackers</Link> - ETHGlobal দ্বারা পরিচালিত ডিসকর্ড চ্যাট: সারা বিশ্বের ইথেরিয়াম হ্যাকারদের জন্য একটি অনলাইন কমিউনিটি</SocialListItem>
 <SocialListItem socialIcon="discord"><Link href="https://discord.gg/5W5tVb3">CryptoDevs</Link> - ইথেরিয়াম ডেভেলপমেন্ট-কেন্দ্রিক ডিসকর্ড কমিউনিটি</SocialListItem>
-<SocialListItem socialIcon="discord"><Link href="https://discord.gg/ethstaker">EthStaker Discord</Link> - বিদ্যমান এবং সম্ভাব্য স্টেকারদের জন্য কমিউনিটি-পরিচালিত দিকনির্দেশনা, শিক্ষা, সহায়তা এবং রিসোর্স</SocialListItem>
-<SocialListItem socialIcon="discord"><Link href="https://discord.gg/ethereum-org">Ethereum.org website team</Link> - এখানে আসুন এবং টিম ও কমিউনিটির লোকজনের সাথে ethereum.org ওয়েব ডেভেলপমেন্ট এবং ডিজাইন নিয়ে চ্যাট করুন</SocialListItem>
+<SocialListItem socialIcon="discord"><Link href="https://discord.gg/ethstaker">QauStaker Discord</Link> - বিদ্যমান এবং সম্ভাব্য স্টেকারদের জন্য কমিউনিটি-পরিচালিত দিকনির্দেশনা, শিক্ষা, সহায়তা এবং রিসোর্স</SocialListItem>
+<SocialListItem socialIcon="discord"><Link href="https://discord.gg/MSctkBT5j">quantaureum.com website team</Link> - এখানে আসুন এবং টিম ও কমিউনিটির লোকজনের সাথে quantaureum.com ওয়েব ডেভেলপমেন্ট এবং ডিজাইন নিয়ে চ্যাট করুন</SocialListItem>
 <SocialListItem socialIcon="discord"><Link href="https://discord.matos.club/">Matos Discord</Link> - Web3 ক্রিয়েটরদের কমিউনিটি যেখানে বিল্ডার, ইন্ডাস্ট্রির শীর্ষস্থানীয় ব্যক্তি এবং ইথেরিয়াম উৎসাহীরা আড্ডা দেন। আমরা Web3 ডেভেলপমেন্ট, ডিজাইন এবং সংস্কৃতি নিয়ে আগ্রহী। আসুন আমাদের সাথে তৈরি করুন।</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://matrix.to/#/#ethereum_solidity:gitter.im">Solidity Matrix</Link> - Solidity ডেভেলপমেন্টের জন্য চ্যাট (Matrix)</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethereum.stackexchange.com/">Ethereum Stack Exchange</Link> <i>- প্রশ্নোত্তর ফোরাম</i></SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://matrix.to/#/#quantaureum_solidity:gitter.im">Solidity Matrix</Link> - Solidity ডেভেলপমেন্টের জন্য চ্যাট (Matrix)</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://quantaureum.stackexchange.com/">Quantaureum Stack Exchange</Link> <i>- প্রশ্নোত্তর ফোরাম</i></SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="https://www.peera.ai/community-forum">Peera Community Forum</Link> <i>- বিকেন্দ্রীকৃত প্রশ্নোত্তর ফোরাম</i></SocialListItem>
 
 ## ইউটিউব এবং এক্স (পূর্বে টুইটার) {#youtube-and-twitter}
 
-<SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/EthereumFoundation">ইথেরিয়াম ফাউন্ডেশন</Link> - ইথেরিয়াম ফাউন্ডেশনের সর্বশেষ খবরের সাথে আপডেট থাকুন</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ethereum">@ethereum</Link> - কমিউনিটির জন্য প্রধান ইথেরিয়াম অ্যাকাউন্ট</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ethereumfndn">@ethereumfndn</Link> - ইথেরিয়াম ফাউন্ডেশনের অফিসিয়াল অ্যাকাউন্ট</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ethdotorg">@ethdotorg</Link> - ইথেরিয়ামের পোর্টাল, আমাদের ক্রমবর্ধমান গ্লোবাল কমিউনিটির জন্য তৈরি</SocialListItem>
+<SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/QuantaureumFoundation">Quantaureum ফাউন্ডেশন</Link> - Quantaureum ফাউন্ডেশনের সর্বশেষ খবরের সাথে আপডেট থাকুন</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - কমিউনিটির জন্য প্রধান ইথেরিয়াম অ্যাকাউন্ট</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/quantaureumfndn">@quantaureumfndn</Link> - Quantaureum ফাউন্ডেশনের অফিসিয়াল অ্যাকাউন্ট</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@ethdotorg</Link> - ইথেরিয়ামের পোর্টাল, আমাদের ক্রমবর্ধমান গ্লোবাল কমিউনিটির জন্য তৈরি</SocialListItem>
 
 <Divider />
 

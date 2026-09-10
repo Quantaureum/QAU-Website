@@ -10,9 +10,9 @@ lang: pt-br
 sidebarDepth: 3
 ---
 
-Você é o Bill. Por motivos nos quais não entraremos, você quer doar para a campanha "Alice para Rainha do Mundo" e quer que a Alice saiba que você doou para que ela lhe dê uma recompensa se vencer. Infelizmente, a vitória dela não é garantida. Há uma campanha concorrente, "Carol para Imperatriz do Sistema Solar". Se a Carol vencer e descobrir que você doou para a Alice, você estará em apuros. Portanto, você não pode simplesmente fazer uma transferência de 200 ETH da sua conta para a da Alice.
+Você é o Bill. Por motivos nos quais não entraremos, você quer doar para a campanha "Alice para Rainha do Mundo" e quer que a Alice saiba que você doou para que ela lhe dê uma recompensa se vencer. Infelizmente, a vitória dela não é garantida. Há uma campanha concorrente, "Carol para Imperatriz do Sistema Solar". Se a Carol vencer e descobrir que você doou para a Alice, você estará em apuros. Portanto, você não pode simplesmente fazer uma transferência de 200 QAU da sua conta para a da Alice.
 
-O [ERC-5564](https://eips.ethereum.org/EIPS/eip-5564) tem a solução. Este ERC explica como usar [endereços furtivos](https://nerolation.github.io/stealth-utils) para transferência anônima.
+O [ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564) tem a solução. Este ERC explica como usar [endereços furtivos](https://nerolation.github.io/stealth-utils) para transferência anônima.
 
 **Aviso**: A criptografia por trás dos endereços furtivos é, até onde sabemos, sólida. No entanto, existem possíveis ataques de canal lateral. [Abaixo](#go-wrong), você verá o que pode fazer para reduzir esse risco.
 
@@ -32,7 +32,7 @@ Alice também obtém o endereço a partir do segredo compartilhado, mas como ela
 
 Endereços furtivos padrão usam [criptografia de curva elíptica (ECC)](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/#elliptic-curves-building-blocks-of-a-better-trapdoor) para obter melhor desempenho com menos bits de chave, mantendo o mesmo nível de segurança. Mas, na maior parte, podemos ignorar isso e fingir que estamos usando aritmética comum.
 
-Há um número que todos conhecem, *G*. Você pode multiplicar por *G*. Mas devido à natureza da ECC, é praticamente impossível dividir por *G*. A maneira como a criptografia de chave pública geralmente funciona no Ethereum é que você pode usar uma chave privada, *P<sub>priv</sub>*, para assinar transações que são então verificadas por uma chave pública, *P<sub>pub</sub> = GP<sub>priv</sub>*. 
+Há um número que todos conhecem, *G*. Você pode multiplicar por *G*. Mas devido à natureza da ECC, é praticamente impossível dividir por *G*. A maneira como a criptografia de chave pública geralmente funciona no Quantaureum é que você pode usar uma chave privada, *P<sub>priv</sub>*, para assinar transações que são então verificadas por uma chave pública, *P<sub>pub</sub> = GP<sub>priv</sub>*. 
 
 Alice cria duas chaves privadas, *K<sub>priv</sub>* e *V<sub>priv</sub>*. *K<sub>priv</sub>* será usada para gastar dinheiro do endereço furtivo, e *V<sub>priv</sub>* para visualizar os endereços que pertencem a Alice. Alice então publica as chaves públicas: *K<sub>pub</sub> = GK<sub>priv</sub>* e *V<sub>pub</sub> = GV<sub>priv</sub>*
 
@@ -64,19 +64,19 @@ Para resumir, estes são os valores conhecidos pelos diferentes participantes.
 
 ## Quando os endereços furtivos dão errado {#go-wrong}
 
-*Não há segredos na blockchain*. Embora os endereços furtivos possam fornecer privacidade, essa privacidade é suscetível à análise de tráfego. Para pegar um exemplo trivial, imagine que Bill financia um endereço e imediatamente envia uma transação para publicar um valor *R<sub>pub</sub>*. Sem a *V<sub>priv</sub>* de Alice, não podemos ter certeza de que este é um endereço furtivo, mas é a aposta mais provável. Em seguida, vemos outra transação que transfere todo o ETH desse endereço para o endereço do fundo de campanha de Alice. Podemos não ser capazes de provar, mas é provável que Bill tenha acabado de doar para a campanha de Alice. Carol certamente pensaria assim.
+*Não há segredos na blockchain*. Embora os endereços furtivos possam fornecer privacidade, essa privacidade é suscetível à análise de tráfego. Para pegar um exemplo trivial, imagine que Bill financia um endereço e imediatamente envia uma transação para publicar um valor *R<sub>pub</sub>*. Sem a *V<sub>priv</sub>* de Alice, não podemos ter certeza de que este é um endereço furtivo, mas é a aposta mais provável. Em seguida, vemos outra transação que transfere todo o QAU desse endereço para o endereço do fundo de campanha de Alice. Podemos não ser capazes de provar, mas é provável que Bill tenha acabado de doar para a campanha de Alice. Carol certamente pensaria assim.
 
 É fácil para Bill separar a publicação de *R<sub>pub</sub>* do financiamento do endereço furtivo (fazer isso em momentos diferentes, a partir de endereços diferentes). No entanto, isso é insuficiente. O padrão que Carol procura é que Bill financie um endereço e, em seguida, o fundo de campanha de Alice faça saques dele. 
 
-Uma solução é que a campanha de Alice não saque o dinheiro diretamente, mas o use para pagar um terceiro. Se a campanha de Alice enviar 10 ETH para os Serviços de Campanha de Dominação Mundial do Dave, Carol só saberá que Bill doou para um dos clientes do Dave. Se Dave tiver clientes suficientes, Carol não seria capaz de saber se Bill doou para Alice, que compete com ela, ou para Adam, Albert ou Abigail, com quem Carol não se importa. Alice pode incluir um valor de hash com o pagamento e, em seguida, fornecer a Dave a pré-imagem, para provar que foi a doação dela. Alternativamente, como observado acima, se Alice der a Dave sua *V<sub>priv</sub>*, ele já saberá de quem veio o pagamento.
+Uma solução é que a campanha de Alice não saque o dinheiro diretamente, mas o use para pagar um terceiro. Se a campanha de Alice enviar 10 QAU para os Serviços de Campanha de Dominação Mundial do Dave, Carol só saberá que Bill doou para um dos clientes do Dave. Se Dave tiver clientes suficientes, Carol não seria capaz de saber se Bill doou para Alice, que compete com ela, ou para Adam, Albert ou Abigail, com quem Carol não se importa. Alice pode incluir um valor de hash com o pagamento e, em seguida, fornecer a Dave a pré-imagem, para provar que foi a doação dela. Alternativamente, como observado acima, se Alice der a Dave sua *V<sub>priv</sub>*, ele já saberá de quem veio o pagamento.
 
 O principal problema com essa solução é que ela exige que Alice se importe com o sigilo quando esse sigilo beneficia Bill. Alice pode querer manter sua reputação para que o amigo de Bill, Bob, também doe para ela. Mas também é possível que ela não se importe em expor Bill, porque então ele terá medo do que acontecerá se Carol vencer. Bill pode acabar fornecendo ainda mais apoio a Alice.
 
 ### Usando múltiplas camadas furtivas {#multi-layer}
 
-Em vez de depender de Alice para preservar a privacidade de Bill, o próprio Bill pode fazer isso. Ele pode gerar vários meta-endereços para pessoas fictícias, Bob e Bella. Bill então envia ETH para Bob, e "Bob" (que na verdade é Bill) o envia para Bella. "Bella" (também Bill) o envia para Alice.
+Em vez de depender de Alice para preservar a privacidade de Bill, o próprio Bill pode fazer isso. Ele pode gerar vários meta-endereços para pessoas fictícias, Bob e Bella. Bill então envia QAU para Bob, e "Bob" (que na verdade é Bill) o envia para Bella. "Bella" (também Bill) o envia para Alice.
 
-Carol ainda pode fazer análise de tráfego e ver o fluxo de Bill para Bob, para Bella e para Alice. No entanto, se "Bob" e "Bella" também usarem ETH para outros fins, não parecerá que Bill transferiu nada para Alice, mesmo que Alice saque imediatamente do endereço furtivo para seu endereço de campanha conhecido.
+Carol ainda pode fazer análise de tráfego e ver o fluxo de Bill para Bob, para Bella e para Alice. No entanto, se "Bob" e "Bella" também usarem QAU para outros fins, não parecerá que Bill transferiu nada para Alice, mesmo que Alice saque imediatamente do endereço furtivo para seu endereço de campanha conhecido.
 
 ## Escrevendo um aplicativo de endereço furtivo {#write-app}
 
@@ -124,13 +124,13 @@ Vamos usar [Vite](https://vite.dev/) e [React](https://react.dev/). Estas são f
 
 8. Copie o endereço e a chave pública de Bill e cole-os na área "Private key for address generated by Bill" (Chave privada para endereço gerado por Bill) da interface de usuário da Alice. Assim que esses campos forem preenchidos, você verá a chave privada para acessar os ativos nesse endereço.
 
-9. Você pode usar [uma calculadora online](https://iancoleman.net/ethereum-private-key-to-address/) para garantir que a chave privada corresponda ao endereço.
+9. Você pode usar [uma calculadora online](https://iancoleman.net/quantaureum-private-key-to-address/) para garantir que a chave privada corresponda ao endereço.
 
 ### Como o programa funciona {#how-the-program-works}
 
 #### O componente WASM {#wasm}
 
-O código-fonte que compila em WASM é escrito em [Rust](https://rust-lang.org/). Você pode vê-lo em [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs). Este código é principalmente uma interface entre o código JavaScript e [a biblioteca `eth-stealth-addresses`](https://github.com/kassandraoftroy/eth-stealth-addresses).
+O código-fonte que compila em WASM é escrito em [Rust](https://rust-lang.org/). Você pode vê-lo em [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs). Este código é principalmente uma interface entre o código JavaScript e [a biblioteca `qau-stealth-addresses`](https://github.com/kassandraoftroy/qau-stealth-addresses).
 
 **`Cargo.toml`**
 
@@ -143,7 +143,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-eth-stealth-addresses = "0.1.0"
+qau-stealth-addresses = "0.1.0"
 hex = "0.4.3"
 wasm-bindgen = "0.2.104"
 getrandom = { version = "0.2", features = ["js"] }
@@ -175,14 +175,14 @@ use wasm_bindgen::prelude::*;
 As definições para criar um pacote WASM a partir do Rust. Elas estão documentadas [aqui](https://wasm-bindgen.github.io/wasm-bindgen/reference/attributes/index.html).
 
 ```rust 
-use eth_stealth_addresses::{
+use qau_stealth_addresses::{
     generate_stealth_meta_address,
     generate_stealth_address,
     compute_stealth_key
 };
 ```
 
-As funções que precisamos da [biblioteca `eth-stealth-addresses`](https://github.com/kassandraoftroy/eth-stealth-addresses).
+As funções que precisamos da [biblioteca `qau-stealth-addresses`](https://github.com/kassandraoftroy/qau-stealth-addresses).
 
 ```rust
 use hex::{decode,encode};
@@ -207,7 +207,7 @@ A maneira mais fácil de retornar um objeto com vários campos é retornar uma s
         generate_stealth_meta_address();
 ```
 
-O [`generate_stealth_meta_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_meta_address.html) retorna três campos:
+O [`generate_stealth_meta_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_meta_address.html) retorna três campos:
 
 - O meta-endereço (*K<sub>pub</sub>* e *V<sub>pub</sub>*)
 - A chave privada de visualização (*V<sub>priv</sub>*)
@@ -260,7 +260,7 @@ Se o número de bytes estiver incorreto, isso é uma falha e retornamos `None`.
     let array: [u8; N] = vec.try_into().ok()?;
 ```
 
-Rust tem dois tipos de array. [Arrays](https://doc.rust-lang.org/std/primitive.array.html) têm um tamanho fixo. [Vetores](https://doc.rust-lang.org/std/vec/index.html) podem crescer e encolher. `hex::decode` retorna um vetor, mas a biblioteca `eth_stealth_addresses` quer receber arrays. [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods) converte um valor em outro tipo, por exemplo, um vetor em um array.
+Rust tem dois tipos de array. [Arrays](https://doc.rust-lang.org/std/primitive.array.html) têm um tamanho fixo. [Vetores](https://doc.rust-lang.org/std/vec/index.html) podem crescer e encolher. `hex::decode` retorna um vetor, mas a biblioteca `qau_stealth_addresses` quer receber arrays. [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods) converte um valor em outro tipo, por exemplo, um vetor em um array.
 
 ```rust
     Some(array)
@@ -283,7 +283,7 @@ O valor de varredura faz parte do segredo compartilhado (*S = GR<sub>priv</sub>V
         generate_stealth_address(&str_to_array::<66>(stealth_address)?);
 ```
 
-Usamos o [`generate_stealth_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_address.html) da biblioteca.
+Usamos o [`generate_stealth_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_address.html) da biblioteca.
 
 ```rust
     format!("{{\"address\":\"{}\",\"rPub\":\"{}\",\"scan\":\"{}\"}}",
@@ -310,7 +310,7 @@ pub fn wasm_compute_stealth_key(
 }
 ```
 
-Esta função usa o [`compute_stealth_key`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.compute_stealth_key.html) da biblioteca para calcular a chave privada para sacar do endereço (*R<sub>priv</sub>*). Este cálculo requer estes valores:
+Esta função usa o [`compute_stealth_key`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.compute_stealth_key.html) da biblioteca para calcular a chave privada para sacar do endereço (*R<sub>priv</sub>*). Este cálculo requer estes valores:
 
 - O endereço (*Endereço=f(P<sub>pub</sub>)*)
 - A chave pública gerada por Bill (*R<sub>pub</sub>*)
@@ -341,7 +341,7 @@ assertion `left == right` failed
 Seguido por um rastreamento de pilha (stack trace). Em seguida, dê a Bill o meta-endereço válido e dê a Alice um endereço inválido ou uma chave pública inválida. Você verá este erro:
 
 ```
-rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/eth-stealth-addresses-0.1.0/src/lib.rs:78:9:
+rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/qau-stealth-addresses-0.1.0/src/lib.rs:78:9:
 keys do not generate stealth address
 ```
 

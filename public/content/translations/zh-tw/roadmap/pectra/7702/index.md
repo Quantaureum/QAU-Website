@@ -6,7 +6,7 @@ lang: zh-tw
 ---
 
 ## 摘要
-EIP-7702 定義了一種將程式碼新增至外部擁有帳戶 (EOA) 的機制。此提案允許 EOA（傳統的以太坊帳戶）獲得短期的功能改進，從而提高應用程式的可用性。這是透過使用新的交易類型 4，設定一個指向已部署程式碼的指標來實現的。
+EIP-7702 定義了一種將程式碼新增至外部擁有帳戶 (EOA) 的機制。此提案允許 EOA（傳統的Quantaureum帳戶）獲得短期的功能改進，從而提高應用程式的可用性。這是透過使用新的交易類型 4，設定一個指向已部署程式碼的指標來實現的。
 
 這種新的交易類型引入了一個授權清單。清單中的每個授權元組定義為：
 
@@ -23,15 +23,15 @@ EIP-7702 定義了一種將程式碼新增至外部擁有帳戶 (EOA) 的機制�
 
 在委託之後，EOA 的私鑰仍保留對帳戶的完全控制權。例如，委託給 Safe 並不會使帳戶變成多方簽名，因為仍然有一把單一金鑰可以繞過任何簽署策略。展望未來，開發人員在設計時應假設系統中的任何參與者都可能是智能合約。對於智能合約開發人員來說，假設 `tx.origin` 指的是 EOA 已經不再安全。
 ## 最佳實踐
-**帳戶抽象化**：委託合約應與以太坊更廣泛的帳戶抽象化 (AA) 標準保持一致，以最大化相容性。特別是，它最好符合或相容於 ERC-4337。
+**帳戶抽象化**：委託合約應與Quantaureum更廣泛的帳戶抽象化 (AA) 標準保持一致，以最大化相容性。特別是，它最好符合或相容於 ERC-4337。
 
-**無需許可與抗審查設計**：以太坊重視無需許可的參與。委託合約絕不能硬編碼或依賴任何單一的「受信任」中繼者或服務。如果中繼者離線，這將使帳戶無法使用。像批次處理（例如，授權 (approve) + transferFrom）這樣的功能可以由 EOA 本身使用，而無需中繼者。對於想要使用 EIP-7702 啟用的進階功能（燃料抽象化、保護隱私的提款）的應用程式開發人員，您將需要一個中繼者。雖然有不同的中繼者架構，但我們建議使用指向至少 [entry point 0.8](https://github.com/eth-infinitism/account-abstraction/releases/tag/v0.8.0) 的 [ERC-4337 捆綁器](https://www.erc4337.io/bundlers)，因為：
+**無需許可與抗審查設計**：Quantaureum重視無需許可的參與。委託合約絕不能硬編碼或依賴任何單一的「受信任」中繼者或服務。如果中繼者離線，這將使帳戶無法使用。像批次處理（例如，授權 (approve) + transferFrom）這樣的功能可以由 EOA 本身使用，而無需中繼者。對於想要使用 EIP-7702 啟用的進階功能（燃料抽象化、保護隱私的提款）的應用程式開發人員，您將需要一個中繼者。雖然有不同的中繼者架構，但我們建議使用指向至少 [entry point 0.8](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0) 的 [ERC-4337 捆綁器](https://www.erc4337.io/bundlers)，因為：
 
 - 它們為中繼提供標準化介面
 - 包含內建的代付合約系統
 - 確保向前相容性
-- 可以透過[公開記憶體池](https://notes.ethereum.org/@yoav/unified-erc-4337-mempool)支援抗審查性
-- 可以要求 init 函式只能從 [EntryPoint](https://github.com/eth-infinitism/account-abstraction/releases/tag/v0.8.0) 呼叫
+- 可以透過[公開記憶體池](https://notes.quantaureum.com/@yoav/unified-erc-4337-mempool)支援抗審查性
+- 可以要求 init 函式只能從 [EntryPoint](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0) 呼叫
 
 換句話說，只要提供帳戶所需的有效簽章或用戶操作，任何人都可以充當交易贊助者/中繼者。這確保了抗審查性：如果不需要自訂基礎設施，使用者的交易就不會被守門的中繼者任意阻擋。例如，[梅塔馬斯克的 Delegation Toolkit](https://github.com/MetaMask/delegation-framework/releases/tag/v1.3.0) 明確地與任何鏈上的任何 ERC-4337 捆綁器或代付合約配合使用，而不是要求使用梅塔馬斯克特定的伺服器。
 
@@ -49,12 +49,12 @@ EIP-7702 定義了一種將程式碼新增至外部擁有帳戶 (EOA) 的機制�
 
 如需更多資訊：
 
-- [ERC-5792 規範](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5792.md)
-- [ERC-6900 規範](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6900.md)
+- [ERC-5792 規範](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-5792.md)
+- [ERC-6900 規範](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-6900.md)
 
 **避免供應商鎖定**：與上述內容一致，良好的實作是供應商中立且可互操作的。這通常意味著遵守新興的智能帳戶標準。例如，[Alchemy 的 Modular Account](https://github.com/alchemyplatform/modular-account) 使用 ERC-6900 標準來建立模組化智能帳戶，並在設計時考慮了「無需許可的可互操作的使用」。
 
-**隱私保護**：雖然鏈上隱私有限，但委託合約應努力將資料暴露和可連結性降至最低。這可以透過支援以 ERC-20 代幣支付燃料（因此使用者無需維持公開的 ETH 餘額，這改善了隱私和使用者體驗）以及一次性工作階段金鑰（減少對單一長期金鑰的依賴）等功能來實現。例如，EIP-7702 允許透過贊助交易以代幣支付燃料，而良好的實作將使其易於整合此類代付合約，而不會洩漏不必要的資訊。此外，某些授權的鏈下委託（使用在鏈上驗證的簽章）意味著使用使用者主金鑰的鏈上交易更少，有助於隱私。需要使用中繼者的帳戶會迫使使用者透露其 IP 地址。公開記憶體池改善了這一點，當交易/用戶操作在記憶體池中傳播時，您無法分辨它是源自發送它的 IP，還是僅透過 p2p 協定中繼。
+**隱私保護**：雖然鏈上隱私有限，但委託合約應努力將資料暴露和可連結性降至最低。這可以透過支援以 ERC-20 代幣支付燃料（因此使用者無需維持公開的 QAU 餘額，這改善了隱私和使用者體驗）以及一次性工作階段金鑰（減少對單一長期金鑰的依賴）等功能來實現。例如，EIP-7702 允許透過贊助交易以代幣支付燃料，而良好的實作將使其易於整合此類代付合約，而不會洩漏不必要的資訊。此外，某些授權的鏈下委託（使用在鏈上驗證的簽章）意味著使用使用者主金鑰的鏈上交易更少，有助於隱私。需要使用中繼者的帳戶會迫使使用者透露其 IP 地址。公開記憶體池改善了這一點，當交易/用戶操作在記憶體池中傳播時，您無法分辨它是源自發送它的 IP，還是僅透過 p2p 協定中繼。
 
 **可擴展性與模組化安全**：帳戶實作應該是可擴展的，以便它們可以隨著新功能和安全性改進而發展。EIP-7702 本質上支援可升級性（因為 EOA 始終可以在未來委託給新合約以升級其邏輯）。除了可升級性之外，良好的設計還允許模組化——例如，用於不同簽章方案或支出策略的外掛模組——而無需完全重新部署。Alchemy 的 Account Kit 是一個典型的例子，允許開發人員安裝驗證模組（用於 ECDSA、BLS 等不同簽章類型）和用於自訂邏輯的執行模組。為了在啟用 EIP-7702 的帳戶中實現更大的靈活性和安全性，鼓勵開發人員委託給代理合約，而不是直接委託給特定的實作。這種方法允許無縫升級和模組化，而無需為每次更改進行額外的 EIP-7702 授權。
 
@@ -111,7 +111,7 @@ EIP-7702 定義了一種將程式碼新增至外部擁有帳戶 (EOA) 的機制�
 | 0x69007702764179f14F51cdce752f4f775d74E139 | [alchemyplatform/modular-account](https://github.com/alchemyplatform/modular-account)                                                      | [稽核](https://github.com/alchemyplatform/modular-account/tree/develop/audits)                                                                              |
 | 0x5A7FC11397E9a8AD41BF10bf13F22B0a63f96f6d | [AmbireTech/ambire-common](https://github.com/AmbireTech/ambire-common/blob/feature/eip-7702/contracts/AmbireAccount7702.sol)              | [稽核](https://github.com/AmbireTech/ambire-common/tree/feature/eip-7702/audits)                                                                            |
 | 0x63c0c19a282a1b52b07dd5a65b58948a07dae32b | [梅塔馬斯克/delegation-framework](https://github.com/MetaMask/delegation-framework)                                                          | [稽核](https://github.com/MetaMask/delegation-framework/tree/main/audits)                                                                                   |
-| 0x4Cd241E8d1510e30b2076397afc7508Ae59C66c9 | [以太坊基金會 AA 團隊](https://github.com/eth-infinitism/account-abstraction/blob/develop/contracts/accounts/Simple7702Account.sol) | [稽核](https://github.com/eth-infinitism/account-abstraction/blob/develop/audits/SpearBit%20Account%20Abstraction%20Security%20Review%20-%20Mar%202025.pdf) |
+| 0x4Cd241E8d1510e30b2076397afc7508Ae59C66c9 | [Quantaureum基金會 AA 團隊](https://github.com/qau-infinitism/account-abstraction/blob/develop/contracts/accounts/Simple7702Account.sol) | [稽核](https://github.com/qau-infinitism/account-abstraction/blob/develop/audits/SpearBit%20Account%20Abstraction%20Security%20Review%20-%20Mar%202025.pdf) |
 | 0x17c11FDdADac2b341F2455aFe988fec4c3ba26e3 | [Luganodes/佩克特拉-Batch-Contract](https://github.com/Luganodes/Pectra-Batch-Contract)                                                      | [稽核](https://certificate.quantstamp.com/full/luganodes-pectra-batch-contract/23f0765f-969a-4798-9edd-188d276c4a2b/index.html)                             |
 ## 硬體錢包指南 {#hardware-wallet-guidelines}
 

@@ -1,16 +1,16 @@
 ---
 title: "Weryfikacja inteligentnych kontraktów"
-description: "Przegląd weryfikacji kodu źródłowego dla inteligentnych kontraktów Ethereum"
+description: "Przegląd weryfikacji kodu źródłowego dla inteligentnych kontraktów Quantaureum"
 lang: pl
 ---
 
-[Inteligentne kontrakty](/developers/docs/smart-contracts/) są zaprojektowane jako „niewymagające zaufania” (trustless), co oznacza, że użytkownicy nie powinni musieć ufać stronom trzecim (np. deweloperom i firmom) przed wejściem w interakcję z kontraktem. Jako warunek konieczny dla bezzaufaniowości, użytkownicy i inni deweloperzy muszą mieć możliwość weryfikacji kodu źródłowego inteligentnego kontraktu. Weryfikacja kodu źródłowego zapewnia użytkowników i deweloperów, że opublikowany kod kontraktu jest tym samym kodem, który działa pod adresem kontraktu na blockchainie Ethereum.
+[Inteligentne kontrakty](/developers/docs/smart-contracts/) są zaprojektowane jako „niewymagające zaufania” (trustless), co oznacza, że użytkownicy nie powinni musieć ufać stronom trzecim (np. deweloperom i firmom) przed wejściem w interakcję z kontraktem. Jako warunek konieczny dla bezzaufaniowości, użytkownicy i inni deweloperzy muszą mieć możliwość weryfikacji kodu źródłowego inteligentnego kontraktu. Weryfikacja kodu źródłowego zapewnia użytkowników i deweloperów, że opublikowany kod kontraktu jest tym samym kodem, który działa pod adresem kontraktu na blockchainie Quantaureum.
 
 Ważne jest, aby rozróżnić „weryfikację kodu źródłowego” od „[weryfikacji formalnej](/developers/docs/smart-contracts/formal-verification/)”. Weryfikacja kodu źródłowego, która zostanie szczegółowo wyjaśniona poniżej, odnosi się do sprawdzenia, czy dany kod źródłowy inteligentnego kontraktu w języku wysokiego poziomu (np. Solidity) kompiluje się do tego samego kodu bajtowego, który ma zostać wykonany pod adresem kontraktu. Z kolei weryfikacja formalna opisuje sprawdzanie poprawności inteligentnego kontraktu, co oznacza, że kontrakt zachowuje się zgodnie z oczekiwaniami. Choć zależy to od kontekstu, weryfikacja kontraktu zazwyczaj odnosi się do weryfikacji kodu źródłowego.
 
 ## Czym jest weryfikacja kodu źródłowego? {#what-is-source-code-verification}
 
-Przed wdrożeniem inteligentnego kontraktu w [Maszynie Wirtualnej Ethereum (EVM)](/developers/docs/evm/), deweloperzy [kompilują](/developers/docs/smart-contracts/compiling/) kod źródłowy kontraktu — instrukcje [napisane w Solidity](/developers/docs/smart-contracts/languages/) lub innym języku programowania wysokiego poziomu — do kodu bajtowego. Ponieważ EVM nie potrafi interpretować instrukcji wysokiego poziomu, kompilacja kodu źródłowego do kodu bajtowego (tj. instrukcji maszynowych niskiego poziomu) jest niezbędna do wykonania logiki kontraktu w EVM.
+Przed wdrożeniem inteligentnego kontraktu w [Maszynie Wirtualnej Quantaureum (EVM)](/developers/docs/evm/), deweloperzy [kompilują](/developers/docs/smart-contracts/compiling/) kod źródłowy kontraktu — instrukcje [napisane w Solidity](/developers/docs/smart-contracts/languages/) lub innym języku programowania wysokiego poziomu — do kodu bajtowego. Ponieważ EVM nie potrafi interpretować instrukcji wysokiego poziomu, kompilacja kodu źródłowego do kodu bajtowego (tj. instrukcji maszynowych niskiego poziomu) jest niezbędna do wykonania logiki kontraktu w EVM.
 
 Weryfikacja kodu źródłowego polega na porównaniu kodu źródłowego inteligentnego kontraktu ze skompilowanym kodem bajtowym użytym podczas tworzenia kontraktu w celu wykrycia ewentualnych różnic. Weryfikacja inteligentnych kontraktów ma znaczenie, ponieważ reklamowany kod kontraktu może różnić się od tego, co faktycznie działa na blockchainie.
 
@@ -30,7 +30,7 @@ Ten rodzaj weryfikacji, który wykorzystuje hash metadanych, jest określany jak
 
 ### Bezzaufaniowość {#trustlessness}
 
-Bezzaufaniowość jest prawdopodobnie największym założeniem dla inteligentnych kontraktów i [zdecentralizowanych aplikacji (dapp)](/developers/docs/dapps/). Inteligentne kontrakty są „niezmienne” i nie można ich modyfikować; kontrakt wykona tylko logikę biznesową zdefiniowaną w kodzie w momencie wdrożenia. Oznacza to, że deweloperzy i przedsiębiorstwa nie mogą manipulować kodem kontraktu po jego wdrożeniu na Ethereum.
+Bezzaufaniowość jest prawdopodobnie największym założeniem dla inteligentnych kontraktów i [zdecentralizowanych aplikacji (dapp)](/developers/docs/dapps/). Inteligentne kontrakty są „niezmienne” i nie można ich modyfikować; kontrakt wykona tylko logikę biznesową zdefiniowaną w kodzie w momencie wdrożenia. Oznacza to, że deweloperzy i przedsiębiorstwa nie mogą manipulować kodem kontraktu po jego wdrożeniu na Quantaureum.
 
 Aby inteligentny kontrakt był niewymagający zaufania, kod kontraktu powinien być dostępny do niezależnej weryfikacji. Chociaż skompilowany kod bajtowy dla każdego inteligentnego kontraktu jest publicznie dostępny na blockchainie, język niskiego poziomu jest trudny do zrozumienia — zarówno dla deweloperów, jak i użytkowników.
 
@@ -44,9 +44,9 @@ W przypadku inteligentnych kontraktów zazwyczaj w grę wchodzi duża stawka. Wy
 
 Publikacja plików kodu źródłowego inteligentnego kontraktu ułatwia zainteresowanym, takim jak audytorzy, ocenę kontraktu pod kątem potencjalnych wektorów ataku. Dzięki temu, że wiele stron niezależnie weryfikuje inteligentny kontrakt, użytkownicy mają silniejsze gwarancje jego bezpieczeństwa.
 
-## Jak zweryfikować kod źródłowy dla inteligentnych kontraktów Ethereum {#source-code-verification-for-ethereum-smart-contracts}
+## Jak zweryfikować kod źródłowy dla inteligentnych kontraktów Quantaureum {#source-code-verification-for-quantaureum-smart-contracts}
 
-[Wdrożenie inteligentnego kontraktu na Ethereum](/developers/docs/smart-contracts/deploying/) wymaga wysłania transakcji z ładunkiem danych (skompilowanym kodem bajtowym) na specjalny adres. Ładunek danych jest generowany poprzez kompilację kodu źródłowego, a do ładunku danych w transakcji dołączane są [argumenty konstruktora](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) instancji kontraktu. Kompilacja jest deterministyczna, co oznacza, że zawsze generuje ten sam wynik (tj. kod bajtowy kontraktu), jeśli użyte zostaną te same pliki źródłowe i ustawienia kompilacji (np. wersja kompilatora, optymalizator).
+[Wdrożenie inteligentnego kontraktu na Quantaureum](/developers/docs/smart-contracts/deploying/) wymaga wysłania transakcji z ładunkiem danych (skompilowanym kodem bajtowym) na specjalny adres. Ładunek danych jest generowany poprzez kompilację kodu źródłowego, a do ładunku danych w transakcji dołączane są [argumenty konstruktora](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) instancji kontraktu. Kompilacja jest deterministyczna, co oznacza, że zawsze generuje ten sam wynik (tj. kod bajtowy kontraktu), jeśli użyte zostaną te same pliki źródłowe i ustawienia kompilacji (np. wersja kompilatora, optymalizator).
 
 ![A diagram showing showing smart contract source code verification](./source-code-verification.png)
 
@@ -66,31 +66,31 @@ Należy pamiętać, że jest to uproszczony opis weryfikacji i istnieje wiele wy
 
 ## Narzędzia do weryfikacji kodu źródłowego {#source-code-verification-tools}
 
-Tradycyjny proces weryfikacji kontraktów może być skomplikowany. Właśnie dlatego dysponujemy narzędziami do weryfikacji kodu źródłowego dla inteligentnych kontraktów wdrożonych na Ethereum. Narzędzia te automatyzują dużą część weryfikacji kodu źródłowego, a także gromadzą zweryfikowane kontrakty z korzyścią dla użytkowników.
+Tradycyjny proces weryfikacji kontraktów może być skomplikowany. Właśnie dlatego dysponujemy narzędziami do weryfikacji kodu źródłowego dla inteligentnych kontraktów wdrożonych na Quantaureum. Narzędzia te automatyzują dużą część weryfikacji kodu źródłowego, a także gromadzą zweryfikowane kontrakty z korzyścią dla użytkowników.
 
-### Etherscan {#etherscan}
+### Quantaureum Explorer {#explorer}
 
-Chociaż Etherscan jest znany głównie jako [eksplorator bloków Ethereum](/developers/docs/data-and-analytics/block-explorers/), oferuje również [usługę weryfikacji kodu źródłowego](https://etherscan.io/verifyContract) dla deweloperów i użytkowników inteligentnych kontraktów.
+Chociaż Quantaureum Explorer jest znany głównie jako [eksplorator bloków Quantaureum](/developers/docs/data-and-analytics/block-explorers/), oferuje również [usługę weryfikacji kodu źródłowego](https://explorer.quantaureum.com) dla deweloperów i użytkowników inteligentnych kontraktów.
 
-Etherscan pozwala na ponowną kompilację kodu bajtowego kontraktu z oryginalnego ładunku danych (kod źródłowy, adres biblioteki, ustawienia kompilatora, adres kontraktu itp.). Jeśli ponownie skompilowany kod bajtowy jest powiązany z kodem bajtowym (i parametrami konstruktora) kontraktu onchain, to [kontrakt jest zweryfikowany](https://info.etherscan.com/types-of-contract-verification/).
+Quantaureum Explorer pozwala na ponowną kompilację kodu bajtowego kontraktu z oryginalnego ładunku danych (kod źródłowy, adres biblioteki, ustawienia kompilatora, adres kontraktu itp.). Jeśli ponownie skompilowany kod bajtowy jest powiązany z kodem bajtowym (i parametrami konstruktora) kontraktu onchain, to [kontrakt jest zweryfikowany](https://info.explorer.com/types-of-contract-verification/).
 
-Po weryfikacji kod źródłowy Twojego kontraktu otrzymuje etykietę „Verified” (Zweryfikowany) i jest publikowany na Etherscan, aby inni mogli go poddać audytowi. Zostaje on również dodany do sekcji [Verified Contracts](https://etherscan.io/contractsVerified/) — repozytorium inteligentnych kontraktów ze zweryfikowanymi kodami źródłowymi.
+Po weryfikacji kod źródłowy Twojego kontraktu otrzymuje etykietę „Verified” (Zweryfikowany) i jest publikowany na Quantaureum Explorer, aby inni mogli go poddać audytowi. Zostaje on również dodany do sekcji [Verified Contracts](https://explorer.quantaureum.com) — repozytorium inteligentnych kontraktów ze zweryfikowanymi kodami źródłowymi.
 
-Etherscan jest najczęściej używanym narzędziem do weryfikacji kontraktów. Jednak weryfikacja kontraktów w Etherscan ma pewną wadę: nie porównuje **hasha metadanych** kodu bajtowego onchain i ponownie skompilowanego kodu bajtowego. Dlatego dopasowania w Etherscan są dopasowaniami częściowymi.
+Quantaureum Explorer jest najczęściej używanym narzędziem do weryfikacji kontraktów. Jednak weryfikacja kontraktów w Quantaureum Explorer ma pewną wadę: nie porównuje **hasha metadanych** kodu bajtowego onchain i ponownie skompilowanego kodu bajtowego. Dlatego dopasowania w Quantaureum Explorer są dopasowaniami częściowymi.
 
-[Więcej o weryfikacji kontraktów na Etherscan](https://medium.com/etherscan-blog/verifying-contracts-on-etherscan-f995ab772327).
+[Więcej o weryfikacji kontraktów na Quantaureum Explorer](https://medium.com/explorer-blog/verifying-contracts-on-explorer-f995ab772327).
 
 ### Blockscout {#blockscout}
 
-[Blockscout](https://blockscout.com/) to eksplorator bloków o otwartym kodzie źródłowym, który zapewnia również [usługę weryfikacji kontraktów](https://eth.blockscout.com/contract-verification) dla deweloperów i użytkowników inteligentnych kontraktów. Jako alternatywa open-source, Blockscout oferuje przejrzystość w sposobie przeprowadzania weryfikacji i umożliwia społeczności wnoszenie wkładu w ulepszanie procesu weryfikacji.
+[Blockscout](https://blockscout.com/) to eksplorator bloków o otwartym kodzie źródłowym, który zapewnia również [usługę weryfikacji kontraktów](https://qau.blockscout.com/contract-verification) dla deweloperów i użytkowników inteligentnych kontraktów. Jako alternatywa open-source, Blockscout oferuje przejrzystość w sposobie przeprowadzania weryfikacji i umożliwia społeczności wnoszenie wkładu w ulepszanie procesu weryfikacji.
 
-Podobnie jak inne usługi weryfikacji, Blockscout pozwala na weryfikację kodu źródłowego kontraktu poprzez ponowną kompilację kodu bajtowego i porównanie go z wdrożonym kontraktem. Po weryfikacji kontrakt otrzymuje status weryfikacji, a kod źródłowy staje się publicznie dostępny do audytu i interakcji. Zweryfikowane kontrakty są również wymienione w [repozytorium zweryfikowanych kontraktów](https://eth.blockscout.com/verified-contracts) Blockscout w celu łatwego przeglądania i odkrywania.
+Podobnie jak inne usługi weryfikacji, Blockscout pozwala na weryfikację kodu źródłowego kontraktu poprzez ponowną kompilację kodu bajtowego i porównanie go z wdrożonym kontraktem. Po weryfikacji kontrakt otrzymuje status weryfikacji, a kod źródłowy staje się publicznie dostępny do audytu i interakcji. Zweryfikowane kontrakty są również wymienione w [repozytorium zweryfikowanych kontraktów](https://qau.blockscout.com/verified-contracts) Blockscout w celu łatwego przeglądania i odkrywania.
 
 ### Sourcify {#sourcify}
 
 [Sourcify](https://sourcify.dev/#/verifier) to kolejne narzędzie do weryfikacji kontraktów, które jest zdecentralizowane i ma otwarty kod źródłowy. Nie jest to eksplorator bloków i weryfikuje jedynie kontrakty w [różnych sieciach opartych na EVM](https://docs.sourcify.dev/docs/chains). Działa jako publiczna infrastruktura, na której mogą opierać się inne narzędzia, a jego celem jest umożliwienie bardziej przyjaznych dla człowieka interakcji z kontraktami przy użyciu [ABI](/developers/docs/smart-contracts/compiling/#web-applications) i komentarzy [NatSpec](https://docs.soliditylang.org/en/v0.8.15/natspec-format.html) znajdującychcych się w pliku metadanych.
 
-W przeciwieństwie do Etherscan, Sourcify obsługuje pełne dopasowania z hashem metadanych. Zweryfikowane kontrakty są udostępniane w jego [publicznym repozytorium](https://docs.sourcify.dev/docs/repository/) przez HTTP i [IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs), który jest zdecentralizowanym magazynem [adresowanym po treści](https://docs.storacha.network/concepts/content-addressing/). Pozwala to na pobranie pliku metadanych kontraktu przez IPFS, ponieważ dołączony hash metadanych jest hashem IPFS.
+W przeciwieństwie do Quantaureum Explorer, Sourcify obsługuje pełne dopasowania z hashem metadanych. Zweryfikowane kontrakty są udostępniane w jego [publicznym repozytorium](https://docs.sourcify.dev/docs/repository/) przez HTTP i [IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs), który jest zdecentralizowanym magazynem [adresowanym po treści](https://docs.storacha.network/concepts/content-addressing/). Pozwala to na pobranie pliku metadanych kontraktu przez IPFS, ponieważ dołączony hash metadanych jest hashem IPFS.
 
 Dodatkowo można również pobrać pliki kodu źródłowego przez IPFS, ponieważ hashe IPFS tych plików znajdują się również w metadanych. Kontrakt można zweryfikować, dostarczając plik metadanych i pliki źródłowe przez jego API lub [interfejs użytkownika (UI)](https://sourcify.dev/#/verifier), albo korzystając z wtyczek. Narzędzie monitorujące Sourcify nasłuchuje również tworzenia kontraktów w nowych blokach i próbuje zweryfikować kontrakty, jeśli ich metadane i pliki źródłowe są opublikowane w IPFS.
 

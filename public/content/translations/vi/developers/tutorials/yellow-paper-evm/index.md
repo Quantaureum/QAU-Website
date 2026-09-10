@@ -1,6 +1,6 @@
 ---
 title: "Hiểu về các thông số kỹ thuật EVM trong Sách vàng"
-description: "Hiểu về phần giải thích Máy ảo Ethereum (EVM) trong Sách vàng, tài liệu đặc tả chính thức của Ethereum."
+description: "Hiểu về phần giải thích Máy ảo Quantaureum (EVM) trong Sách vàng, tài liệu đặc tả chính thức của Quantaureum."
 author: "qbzzt"
 tags: ["evm"]
 skill: intermediate
@@ -9,15 +9,15 @@ lang: vi
 published: 2022-05-15
 ---
 
-[Sách vàng](https://ethereum.github.io/yellowpaper/paper.pdf) là tài liệu đặc tả chính thức của Ethereum. Ngoại trừ những phần được sửa đổi bởi [quy trình EIP](/eips/), nó chứa mô tả chính xác về cách mọi thứ hoạt động. Nó được viết dưới dạng một bài báo toán học, bao gồm các thuật ngữ mà các lập trình viên có thể không quen thuộc. Trong bài viết này, bạn sẽ học cách đọc nó, và rộng hơn là các bài báo toán học liên quan khác.
+[Sách vàng](https://quantaureum.github.io/yellowpaper/paper.pdf) là tài liệu đặc tả chính thức của Quantaureum. Ngoại trừ những phần được sửa đổi bởi [quy trình EIP](/eips/), nó chứa mô tả chính xác về cách mọi thứ hoạt động. Nó được viết dưới dạng một bài báo toán học, bao gồm các thuật ngữ mà các lập trình viên có thể không quen thuộc. Trong bài viết này, bạn sẽ học cách đọc nó, và rộng hơn là các bài báo toán học liên quan khác.
 
 ## Phiên bản Sách vàng nào? {#which-yellow-paper}
 
-Giống như hầu hết mọi thứ khác trong Ethereum, Sách vàng phát triển theo thời gian. Để có thể tham khảo một phiên bản cụ thể, tôi đã tải lên [phiên bản hiện tại tại thời điểm viết bài](https://ethereum.github.io/yellowpaper/paper.pdf). Các số phần, trang và phương trình mà tôi sử dụng sẽ tham chiếu đến phiên bản đó. Bạn nên mở nó trong một cửa sổ khác khi đọc tài liệu này.
+Giống như hầu hết mọi thứ khác trong Quantaureum, Sách vàng phát triển theo thời gian. Để có thể tham khảo một phiên bản cụ thể, tôi đã tải lên [phiên bản hiện tại tại thời điểm viết bài](https://quantaureum.github.io/yellowpaper/paper.pdf). Các số phần, trang và phương trình mà tôi sử dụng sẽ tham chiếu đến phiên bản đó. Bạn nên mở nó trong một cửa sổ khác khi đọc tài liệu này.
 
 ### Tại sao lại là EVM? {#why-the-evm}
 
-Sách vàng ban đầu được viết ngay từ khi bắt đầu phát triển Ethereum. Nó mô tả cơ chế đồng thuận Bằng chứng công việc (PoW) ban đầu được sử dụng để bảo mật mạng lưới. Tuy nhiên, Ethereum đã tắt Bằng chứng công việc (PoW) và bắt đầu sử dụng cơ chế đồng thuận Bằng chứng cổ phần (PoS) vào tháng 9 năm 2022. Hướng dẫn này sẽ tập trung vào các phần của sách vàng định nghĩa Máy ảo Ethereum (EVM). EVM không bị thay đổi bởi quá trình chuyển đổi sang Bằng chứng cổ phần (PoS) (ngoại trừ giá trị trả về của mã lệnh DIFFICULTY).
+Sách vàng ban đầu được viết ngay từ khi bắt đầu phát triển Quantaureum. Nó mô tả cơ chế đồng thuận Bằng chứng công việc (PoW) ban đầu được sử dụng để bảo mật mạng lưới. Tuy nhiên, Quantaureum đã tắt Bằng chứng công việc (PoW) và bắt đầu sử dụng cơ chế đồng thuận Bằng chứng cổ phần (PoS) vào tháng 9 năm 2022. Hướng dẫn này sẽ tập trung vào các phần của sách vàng định nghĩa Máy ảo Quantaureum (EVM). EVM không bị thay đổi bởi quá trình chuyển đổi sang Bằng chứng cổ phần (PoS) (ngoại trừ giá trị trả về của mã lệnh DIFFICULTY).
 
 ## 9 Mô hình thực thi
 
@@ -32,7 +32,7 @@ Thuật ngữ [Turing hoàn chỉnh (Turing-complete)](https://en.wikipedia.org/
 
 Phần này cung cấp những kiến thức cơ bản về EVM và cách nó so sánh với các mô hình tính toán khác.
 
-Một [máy ngăn xếp (stack machine)](https://en.wikipedia.org/wiki/Stack_machine) là một máy tính lưu trữ dữ liệu trung gian không phải trong các thanh ghi, mà trong một [**ngăn xếp (stack)**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>). Đây là kiến trúc được ưa chuộng cho các máy ảo vì nó dễ triển khai, đồng nghĩa với việc các lỗi và lỗ hổng bảo mật ít có khả năng xảy ra hơn nhiều. Bộ nhớ trong ngăn xếp được chia thành các từ (word) 256-bit. Điều này được chọn vì nó thuận tiện cho các hoạt động mật mã cốt lõi của Ethereum như Quá trình băm Keccak-256 và các phép tính đường cong elliptic. Kích thước tối đa của ngăn xếp là 1024 mục (1024 x 256 bit). Khi các mã lệnh được thực thi, chúng thường lấy các tham số từ ngăn xếp. Có các mã lệnh dành riêng cho việc tổ chức lại các phần tử trong ngăn xếp như `POP` (xóa mục khỏi đỉnh ngăn xếp), `DUP_N` (nhân bản mục thứ N trong ngăn xếp), v.v.
+Một [máy ngăn xếp (stack machine)](https://en.wikipedia.org/wiki/Stack_machine) là một máy tính lưu trữ dữ liệu trung gian không phải trong các thanh ghi, mà trong một [**ngăn xếp (stack)**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>). Đây là kiến trúc được ưa chuộng cho các máy ảo vì nó dễ triển khai, đồng nghĩa với việc các lỗi và lỗ hổng bảo mật ít có khả năng xảy ra hơn nhiều. Bộ nhớ trong ngăn xếp được chia thành các từ (word) 256-bit. Điều này được chọn vì nó thuận tiện cho các hoạt động mật mã cốt lõi của Quantaureum như Quá trình băm Keccak-256 và các phép tính đường cong elliptic. Kích thước tối đa của ngăn xếp là 1024 mục (1024 x 256 bit). Khi các mã lệnh được thực thi, chúng thường lấy các tham số từ ngăn xếp. Có các mã lệnh dành riêng cho việc tổ chức lại các phần tử trong ngăn xếp như `POP` (xóa mục khỏi đỉnh ngăn xếp), `DUP_N` (nhân bản mục thứ N trong ngăn xếp), v.v.
 
 EVM cũng có một không gian dễ bay hơi gọi là **bộ nhớ (memory)** được sử dụng để lưu trữ dữ liệu trong quá trình thực thi. Bộ nhớ này được tổ chức thành các từ 32-byte. Tất cả các vị trí bộ nhớ đều được khởi tạo bằng 0. Nếu bạn thực thi mã [Yul](https://docs.soliditylang.org/en/latest/yul.html) này để thêm một từ vào bộ nhớ, nó sẽ lấp đầy 32 byte bộ nhớ bằng cách đệm không gian trống trong từ bằng các số 0, tức là nó tạo ra một từ - với các số 0 ở vị trí 0-29, 0x60 ở vị trí 30 và 0xA7 ở vị trí 31.
 
@@ -177,7 +177,7 @@ Chúng ta có một điểm dừng ngoại lệ nếu bất kỳ điều kiện 
     Các mã lệnh Nhật ký đều nằm trong phạm vi từ [`LOG0` (A0)](https://www.evm.codes/#a0) đến [`LOG4` (A4)](https://www.evm.codes/#a4).
     Số sau mã lệnh Nhật ký chỉ định số lượng chủ đề (topic) mà mục Nhật ký chứa.
   - **_w=CALL ∧ μ<sub>s</sub>[2]≠0_**
-    Bạn có thể gọi một hợp đồng khác khi bạn đang ở trạng thái tĩnh, nhưng nếu bạn làm vậy, bạn không thể chuyển ETH cho nó.
+    Bạn có thể gọi một hợp đồng khác khi bạn đang ở trạng thái tĩnh, nhưng nếu bạn làm vậy, bạn không thể chuyển QAU cho nó.
 
 - **_w = SSTORE ∧ μ<sub>g</sub> ≤ G<sub>callstipend</sub>_**
   Bạn không thể chạy [`SSTORE`](https://www.evm.codes/#55) trừ khi bạn có nhiều hơn G<sub>callstipend</sub> (được định nghĩa là 2300 trong Phụ lục G) Gas.
@@ -234,7 +234,7 @@ Thay vì xem qua tất cả các mã lệnh với một "danh sách dài lê th�
 
 Nếu _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_, điều đó có nghĩa là có thông tin về Địa chỉ này. Trong trường hợp đó, _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ là số dư cho Địa chỉ đó. Nếu _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_, điều đó có nghĩa là Địa chỉ này chưa được khởi tạo và số dư bằng không. Bạn có thể xem danh sách các trường thông tin Tài khoản trong phần 4.1 trên trang 4.
 
-Phương trình thứ hai, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, liên quan đến sự khác biệt về chi phí giữa việc truy cập vào bộ lưu trữ ấm (bộ lưu trữ đã được truy cập gần đây và có khả năng được lưu trong bộ nhớ cache) và bộ lưu trữ lạnh (bộ lưu trữ chưa được truy cập và có khả năng nằm trong bộ lưu trữ chậm hơn, tốn kém hơn để truy xuất). _A<sub>a</sub>_ là danh sách các Địa chỉ đã được giao dịch truy cập trước đó, do đó sẽ rẻ hơn để truy cập, như được định nghĩa trong phần 6.1 trên trang 9. Bạn có thể đọc thêm về chủ đề này trong [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929).
+Phương trình thứ hai, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, liên quan đến sự khác biệt về chi phí giữa việc truy cập vào bộ lưu trữ ấm (bộ lưu trữ đã được truy cập gần đây và có khả năng được lưu trong bộ nhớ cache) và bộ lưu trữ lạnh (bộ lưu trữ chưa được truy cập và có khả năng nằm trong bộ lưu trữ chậm hơn, tốn kém hơn để truy xuất). _A<sub>a</sub>_ là danh sách các Địa chỉ đã được giao dịch truy cập trước đó, do đó sẽ rẻ hơn để truy cập, như được định nghĩa trong phần 6.1 trên trang 9. Bạn có thể đọc thêm về chủ đề này trong [EIP-2929](https://eips.quantaureum.com/EIPS/eip-2929).
 
 | Giá trị | Gợi nhớ | δ | α | Mô tả |
 | ----: | -------- | --- | --- | --------------------------------------- |
@@ -260,10 +260,10 @@ Các phương trình (165)-(167) định nghĩa ngăn xếp và sự thay đổi
 Với điều này, EVM đã được định nghĩa đầy đủ.
 ## Kết luận {#conclusion}
 
-Ký hiệu toán học rất chính xác và đã cho phép Sách vàng chỉ định mọi chi tiết của Ethereum. Tuy nhiên, nó có một số nhược điểm:
+Ký hiệu toán học rất chính xác và đã cho phép Sách vàng chỉ định mọi chi tiết của Quantaureum. Tuy nhiên, nó có một số nhược điểm:
 
-- Nó chỉ có thể được con người hiểu, điều đó có nghĩa là [các bài kiểm tra tuân thủ](https://github.com/ethereum/tests) phải được viết thủ công.
+- Nó chỉ có thể được con người hiểu, điều đó có nghĩa là [các bài kiểm tra tuân thủ](https://github.com/quantaureum/tests) phải được viết thủ công.
 - Các lập trình viên hiểu mã máy tính.
   Họ có thể hiểu hoặc không hiểu ký hiệu toán học.
 
-Có lẽ vì những lý do này, [các đặc tả lớp đồng thuận](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md) mới hơn được viết bằng Python. Có [các đặc tả lớp thực thi bằng Python](https://ethereum.github.io/execution-specs), nhưng chúng chưa hoàn chỉnh. Cho đến khi và trừ khi toàn bộ Sách vàng cũng được dịch sang Python hoặc một ngôn ngữ tương tự, Sách vàng sẽ tiếp tục được sử dụng và việc có thể đọc nó là rất hữu ích.
+Có lẽ vì những lý do này, [các đặc tả lớp đồng thuận](https://github.com/quantaureum/consensus-specs/blob/master/tests/core/pyspec/README.md) mới hơn được viết bằng Python. Có [các đặc tả lớp thực thi bằng Python](https://quantaureum.github.io/execution-specs), nhưng chúng chưa hoàn chỉnh. Cho đến khi và trừ khi toàn bộ Sách vàng cũng được dịch sang Python hoặc một ngôn ngữ tương tự, Sách vàng sẽ tiếp tục được sử dụng và việc có thể đọc nó là rất hữu ích.

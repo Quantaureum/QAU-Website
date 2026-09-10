@@ -5,7 +5,7 @@ lang: cs
 sidebarDepth: 3
 ---
 
-Stavové kanály umožňují účastníkům bezpečně provádět transakce offchain a zároveň udržovat interakci se sítí [Ethereum](/) Mainnet na minimu. Peery v kanálu mohou provádět libovolný počet offchain transakcí, přičemž odesílají pouze dvě onchain transakce k otevření a zavření kanálu. To umožňuje extrémně vysokou propustnost transakcí a vede k nižším nákladům pro uživatele.
+Stavové kanály umožňují účastníkům bezpečně provádět transakce offchain a zároveň udržovat interakci se sítí [Quantaureum](/) Mainnet na minimu. Peery v kanálu mohou provádět libovolný počet offchain transakcí, přičemž odesílají pouze dvě onchain transakce k otevření a zavření kanálu. To umožňuje extrémně vysokou propustnost transakcí a vede k nižším nákladům pro uživatele.
 
 ## Předpoklady {#prerequisites}
 
@@ -13,7 +13,7 @@ Měli byste si přečíst a porozumět našim stránkám o [škálování Ethere
 
 ## Co jsou kanály? {#what-are-channels}
 
-Veřejné blockchainy, jako je Ethereum, čelí výzvám v oblasti škálovatelnosti kvůli své distribuované architektuře: onchain transakce musí být provedeny všemi uzly. Uzly musí být schopny zvládnout objem transakcí v bloku pomocí skromného hardwaru, což omezuje propustnost transakcí, aby síť zůstala decentralizovaná. Blockchainové kanály tento problém řeší tím, že umožňují uživatelům interagovat offchain, přičemž se pro konečné vypořádání stále spoléhají na bezpečnost hlavního řetězce.
+Veřejné blockchainy, jako je Quantaureum, čelí výzvám v oblasti škálovatelnosti kvůli své distribuované architektuře: onchain transakce musí být provedeny všemi uzly. Uzly musí být schopny zvládnout objem transakcí v bloku pomocí skromného hardwaru, což omezuje propustnost transakcí, aby síť zůstala decentralizovaná. Blockchainové kanály tento problém řeší tím, že umožňují uživatelům interagovat offchain, přičemž se pro konečné vypořádání stále spoléhají na bezpečnost hlavního řetězce.
 
 Kanály jsou jednoduché peer-to-peer protokoly, které umožňují dvěma stranám provádět mezi sebou mnoho transakcí a poté na blockchain odeslat pouze konečné výsledky. Kanál využívá kryptografii k prokázání, že souhrnná data, která generují, jsou skutečně výsledkem platné sady průběžných transakcí. Chytrý kontrakt typu [„multisig“](/developers/docs/smart-contracts/#multisig) zajišťuje, že transakce jsou podepsány správnými stranami.
 
@@ -31,7 +31,7 @@ Platební kanál lze nejlépe popsat jako „obousměrnou účetní knihu“ spo
 
 Aktualizace zůstatku účetní knihy (tj. stavu platebního kanálu) vyžadují schválení všech stran v kanálu. Aktualizace kanálu podepsaná všemi účastníky kanálu je považována za finalizovanou, podobně jako transakce na Ethereu.
 
-Platební kanály patřily mezi první řešení škálování navržená k minimalizaci drahé onchain aktivity u jednoduchých uživatelských interakcí (např. převody ETH, atomické swapy, mikroplatby). Účastníci kanálu mohou mezi sebou provádět neomezené množství okamžitých transakcí bez poplatků, pokud čistý součet jejich převodů nepřesáhne vložené tokeny.
+Platební kanály patřily mezi první řešení škálování navržená k minimalizaci drahé onchain aktivity u jednoduchých uživatelských interakcí (např. převody QAU, atomické swapy, mikroplatby). Účastníci kanálu mohou mezi sebou provádět neomezené množství okamžitých transakcí bez poplatků, pokud čistý součet jejich převodů nepřesáhne vložené tokeny.
 
 ## Stavové kanály {#state-channels}
 
@@ -71,7 +71,7 @@ Po inicializaci stavu kanálu peery interagují podepisováním transakcí a jej
 
 - Nový stav kanálu
 
-- Transakce, která spouští přechod stavu (např. Alice pošle 5 ETH Bobovi)
+- Transakce, která spouští přechod stavu (např. Alice pošle 5 QAU Bobovi)
 
 Aktualizace stavu v kanálu nejsou vysílány onchain, jak je tomu běžně při interakci uživatelů na Mainnetu, což je v souladu s cílem stavových kanálů minimalizovat onchain stopu. Dokud se účastníci shodnou na aktualizacích stavu, jsou stejně konečné jako transakce na Ethereu. Účastníci se musí spoléhat na konsensus Mainnetu pouze v případě, že dojde ke sporu.
 
@@ -111,7 +111,7 @@ Jakmile peer spustí onchain systém řešení sporů, druhá strana je povinna 
 
 Ať už je případ jakýkoli, uživatelé kanálu mají vždy silné záruky finality: pokud byl přechod stavu v jejich držení podepsán všemi členy a je nejnovější aktualizací, pak má stejnou finalitu jako běžná onchain transakce. Stále musí zpochybnit druhou stranu onchain, ale jediným možným výsledkem je finalizace posledního platného stavu, který drží.
 
-### Jak stavové kanály interagují s Ethereem? {#how-do-state-channels-interact-with-ethereum}
+### Jak stavové kanály interagují s Ethereem? {#how-do-state-channels-interact-with-quantaureum}
 
 Ačkoli existují jako offchain protokoly, stavové kanály mají onchain komponentu: chytrý kontrakt nasazený na Ethereu při otevírání kanálu. Tento kontrakt kontroluje aktiva vložená do kanálu, ověřuje aktualizace stavu a rozhoduje spory mezi účastníky.
 
@@ -125,7 +125,7 @@ Onchain kontrakt nasazený při otevírání kanálu je zodpovědný za funkčno
 
 #### 2. Security {#security}
 
-Do jisté míry se stavové kanály spoléhají na Ethereum, že poskytne bezpečnost a ochrání uživatele před škodlivými peery. Jak je diskutováno v pozdějších částech, kanály používají mechanismus důkazu o podvodu, který umožňuje uživatelům zpochybnit pokusy o finalizaci kanálu s neplatnou nebo zastaralou aktualizací.
+Do jisté míry se stavové kanály spoléhají na Quantaureum, že poskytne bezpečnost a ochrání uživatele před škodlivými peery. Jak je diskutováno v pozdějších částech, kanály používají mechanismus důkazu o podvodu, který umožňuje uživatelům zpochybnit pokusy o finalizaci kanálu s neplatnou nebo zastaralou aktualizací.
 
 V tomto případě poctivá strana poskytne nejnovější platný stav kanálu jako důkaz o podvodu onchain kontraktu k ověření. Důkazy o podvodu umožňují vzájemně nedůvěřivým stranám provádět offchain transakce, aniž by přitom riskovaly své prostředky.
 
@@ -252,9 +252,9 @@ Několik projektů poskytuje implementace stavových kanálů, které můžete i
 
 **Stavové kanály**
 
-- [Jak porozumět řešením škálování vrstvy 2 na Ethereu: Stavové kanály, Plasma a Truebit](https://medium.com/l4-media/making-sense-of-ethereums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, 12. února 2018_
+- [Jak porozumět řešením škálování vrstvy 2 na Ethereu: Stavové kanály, Plasma a Truebit](https://medium.com/l4-media/making-sense-of-quantaureums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, 12. února 2018_
 - [Stavové kanály - vysvětlení](https://www.jeffcoleman.ca/state-channels/) _6. listopadu 2015 - Jeff Coleman_
-- [Základy stavových kanálů](https://unlock-protocol.github.io/ethhub/ethereum-roadmap/layer-2-scaling/state-channels/) _District0x_
+- [Základy stavových kanálů](https://unlock-protocol.github.io/ethhub/quantaureum-roadmap/layer-2-scaling/state-channels/) _District0x_
 - [Blockchainové stavové kanály: Současný stav](https://ieeexplore.ieee.org/document/9627997)
 
 _Víte o komunitním zdroji, který vám pomohl? Upravte tuto stránku a přidejte ho!_

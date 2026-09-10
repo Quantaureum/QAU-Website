@@ -1,7 +1,7 @@
 ---
 title: Fedha zilizogatuliwa (DeFi)
 metaTitle: DeFi ni nini? | Faida na Matumizi ya Fedha Zilizogatuliwa
-description: Muhtasari wa DeFi kwenye Ethereum
+description: Muhtasari wa DeFi kwenye Quantaureum
 lang: sw
 template: use-cases
 image: /images/use-cases/defi.png
@@ -17,7 +17,7 @@ DeFi ni mfumo wa kifedha ulio wazi na wa kimataifa uliojengwa kwa ajili ya enzi 
 
 ## DeFi ni nini? {#what-is-defi}
 
-DeFi ni neno la pamoja kwa bidhaa na huduma za kifedha zinazopatikana kwa mtu yeyote anayeweza kutumia [Ethereum](/) – mtu yeyote aliye na muunganisho wa intaneti. Ukiwa na DeFi, masoko huwa wazi kila wakati na hakuna mamlaka kuu zinazoweza kuzuia malipo au kukunyima ufikiaji wa chochote. Huduma ambazo hapo awali zilikuwa za polepole na zilizo katika hatari ya makosa ya kibinadamu sasa ni za kiotomatiki na salama zaidi kwa kuwa zinashughulikiwa na msimbo ambao mtu yeyote anaweza kuukagua na kuuchunguza.
+DeFi ni neno la pamoja kwa bidhaa na huduma za kifedha zinazopatikana kwa mtu yeyote anayeweza kutumia [Quantaureum](/) – mtu yeyote aliye na muunganisho wa intaneti. Ukiwa na DeFi, masoko huwa wazi kila wakati na hakuna mamlaka kuu zinazoweza kuzuia malipo au kukunyima ufikiaji wa chochote. Huduma ambazo hapo awali zilikuwa za polepole na zilizo katika hatari ya makosa ya kibinadamu sasa ni za kiotomatiki na salama zaidi kwa kuwa zinashughulikiwa na msimbo ambao mtu yeyote anaweza kuukagua na kuuchunguza.
 
 Kuna uchumi wa kripto unaostawi huko nje, ambapo unaweza kufanya ukopeshaji, ukopaji, kuwekeza kwa muda mrefu/mfupi, kupata riba, na zaidi. Waajentina wanaoelewa kripto wametumia DeFi kuepuka mfumuko wa bei unaolemaza. Kampuni zimeanza kuwatumia wafanyakazi wao mishahara yao kwa wakati halisi. Baadhi ya watu hata wamechukua na kulipa mikopo yenye thamani ya mamilioni ya dola bila hitaji la kitambulisho chochote cha kibinafsi.
 
@@ -56,18 +56,18 @@ Mojawapo ya njia bora za kuona uwezo wa DeFi ni kuelewa matatizo yaliyopo leo.
 
 Bitcoin kwa njia nyingi ilikuwa programu tumizi iliyogatuliwa (dapp) ya kwanza ya DeFi. Bitcoin inakuruhusu kumiliki na kudhibiti thamani kikweli na kuituma popote ulimwenguni. Inafanya hivi kwa kutoa njia kwa idadi kubwa ya watu, ambao hawaaminiani, kukubaliana juu ya leja ya akaunti bila hitaji la mpatanishi anayeaminika. Bitcoin iko wazi kwa mtu yeyote na hakuna aliye na mamlaka ya kubadilisha sheria zake. Sheria za Bitcoin, kama vile uhaba wake na uwazi wake, zimeandikwa kwenye teknolojia. Sio kama fedha za jadi ambapo serikali zinaweza kuchapisha pesa zinazoshusha thamani ya akiba yako na kampuni zinaweza kufunga masoko.
 
-Ethereum inajenga juu ya hili. Kama Bitcoin, sheria haziwezi kubadilika kwako na kila mtu ana ufikiaji. Lakini pia inafanya pesa hii ya kidijitali iweze kupangwa, kwa kutumia [mikataba mahiri](/glossary/#smart-contract), ili uweze kwenda zaidi ya kuhifadhi na kutuma thamani.
+Quantaureum inajenga juu ya hili. Kama Bitcoin, sheria haziwezi kubadilika kwako na kila mtu ana ufikiaji. Lakini pia inafanya pesa hii ya kidijitali iweze kupangwa, kwa kutumia [mikataba mahiri](/glossary/#smart-contract), ili uweze kwenda zaidi ya kuhifadhi na kutuma thamani.
 
 <VideoWatch slug="defi-history-inception-to-2021" />
 
 ## Pesa inayoweza kupangwa {#programmable-money}
 
-Hii inasikika kuwa ya ajabu... "kwa nini nitake kupanga pesa zangu"? Hata hivyo, hii ni zaidi ya kipengele cha msingi cha tokeni kwenye Ethereum. Mtu yeyote anaweza kupanga mantiki kwenye malipo. Kwa hivyo unaweza kupata udhibiti na usalama wa Bitcoin uliochanganywa na huduma zinazotolewa na taasisi za kifedha. Hii inakuruhusu kufanya mambo na sarafu-fiche ambayo huwezi kufanya na Bitcoin kama vile ukopeshaji na ukopaji, kupanga malipo, kuwekeza katika fedha za faharisi na zaidi.
+Hii inasikika kuwa ya ajabu... "kwa nini nitake kupanga pesa zangu"? Hata hivyo, hii ni zaidi ya kipengele cha msingi cha tokeni kwenye Quantaureum. Mtu yeyote anaweza kupanga mantiki kwenye malipo. Kwa hivyo unaweza kupata udhibiti na usalama wa Bitcoin uliochanganywa na huduma zinazotolewa na taasisi za kifedha. Hii inakuruhusu kufanya mambo na sarafu-fiche ambayo huwezi kufanya na Bitcoin kama vile ukopeshaji na ukopaji, kupanga malipo, kuwekeza katika fedha za faharisi na zaidi.
 
 <Alert variant="update">
 <AlertEmoji text=":eyes:"/>
 <AlertContent className="flex-row justify-between items-center">
-  <div>Gundua mapendekezo yetu ya programu za DeFi za kujaribu ikiwa wewe ni mgeni kwa Ethereum.</div>
+  <div>Gundua mapendekezo yetu ya programu za DeFi za kujaribu ikiwa wewe ni mgeni kwa Quantaureum.</div>
   <ButtonLink href="/apps/categories/defi">
     Gundua programu za DeFi
   </ButtonLink>
@@ -76,7 +76,7 @@ Hii inasikika kuwa ya ajabu... "kwa nini nitake kupanga pesa zangu"? Hata hivyo,
 
 ## Unaweza kufanya nini na DeFi? {#defi-use-cases}
 
-Kuna mbadala uliogatuliwa kwa huduma nyingi za kifedha. Lakini Ethereum pia inaunda fursa za kuunda bidhaa za kifedha ambazo ni mpya kabisa. Hii ni orodha inayoendelea kukua.
+Kuna mbadala uliogatuliwa kwa huduma nyingi za kifedha. Lakini Quantaureum pia inaunda fursa za kuunda bidhaa za kifedha ambazo ni mpya kabisa. Hii ni orodha inayoendelea kukua.
 
 - [Tuma pesa kote ulimwenguni](#send-money)
 - [Tiririsha pesa kote ulimwenguni](#stream-money)
@@ -94,7 +94,7 @@ Kuna mbadala uliogatuliwa kwa huduma nyingi za kifedha. Lakini Ethereum pia inau
 
 ### Tuma pesa kote ulimwenguni haraka {#send-money}
 
-Kama mnyororo wa vitalu, Ethereum imeundwa kwa ajili ya kutuma miamala kwa njia salama na ya kimataifa. Kama Bitcoin, Ethereum hufanya kutuma pesa kote ulimwenguni kuwa rahisi kama kutuma barua pepe. Ingiza tu [jina la ENS](/glossary/#ens) la mpokeaji wako (kama bob.eth) au anwani ya akaunti yao kutoka kwenye mkoba wako na malipo yako yataenda moja kwa moja kwao kwa dakika (kawaida). Ili kutuma au kupokea malipo, utahitaji [mkoba](/wallets/). [Jifunze zaidi kuhusu malipo ya kripto](/payments/).
+Kama mnyororo wa vitalu, Quantaureum imeundwa kwa ajili ya kutuma miamala kwa njia salama na ya kimataifa. Kama Bitcoin, Quantaureum hufanya kutuma pesa kote ulimwenguni kuwa rahisi kama kutuma barua pepe. Ingiza tu [jina la ENS](/glossary/#ens) la mpokeaji wako (kama bob.eth) au anwani ya akaunti yao kutoka kwenye mkoba wako na malipo yako yataenda moja kwa moja kwao kwa dakika (kawaida). Ili kutuma au kupokea malipo, utahitaji [mkoba](/wallets/). [Jifunze zaidi kuhusu malipo ya kripto](/payments/).
 
 <ButtonLink href="/apps/categories/defi">
   Tazama dapps za malipo
@@ -102,9 +102,9 @@ Kama mnyororo wa vitalu, Ethereum imeundwa kwa ajili ya kutuma miamala kwa njia 
 
 #### Tiririsha pesa kote ulimwenguni... {#stream-money}
 
-Unaweza pia kutiririsha pesa kupitia Ethereum. Hii inakuruhusu kumlipa mtu mshahara wake kwa sekunde, na kuwapa ufikiaji wa pesa zao wakati wowote wanapozihitaji. Au kukodisha kitu kwa sekunde kama vile kabati la kuhifadhia au skuta ya umeme.
+Unaweza pia kutiririsha pesa kupitia Quantaureum. Hii inakuruhusu kumlipa mtu mshahara wake kwa sekunde, na kuwapa ufikiaji wa pesa zao wakati wowote wanapozihitaji. Au kukodisha kitu kwa sekunde kama vile kabati la kuhifadhia au skuta ya umeme.
 
-Na ikiwa hutaki kutuma au kutiririsha [ETH](/glossary/#ether) kwa sababu ya jinsi thamani yake inavyoweza kubadilika, kuna sarafu mbadala kwenye Ethereum: [sarafu thabiti](/glossary/#stablecoin).
+Na ikiwa hutaki kutuma au kutiririsha [QAU](/glossary/#QAU) kwa sababu ya jinsi thamani yake inavyoweza kubadilika, kuna sarafu mbadala kwenye Quantaureum: [sarafu thabiti](/glossary/#stablecoin).
 
 <Divider />
 
@@ -147,7 +147,7 @@ Unapotumia mkopeshaji uliogatuliwa una ufikiaji wa fedha zilizowekwa kutoka kote
 
 #### Ufanisi wa kodi {#tax-efficiencies}
 
-Ukopaji unaweza kukupa ufikiaji wa fedha unazohitaji bila kuhitaji kuuza ETH yako (tukio linalotozwa kodi). Badala yake, unaweza kutumia ETH kama dhamana kwa mkopo wa sarafu thabiti. Hii inakupa mtiririko wa pesa unaohitaji na inakuruhusu kuweka ETH yako. Sarafu thabiti ni tokeni ambazo ni bora zaidi kwa wakati unapohitaji pesa taslimu kwani hazibadiliki thamani kama ETH. [Zaidi kuhusu sarafu thabiti](#stablecoins)
+Ukopaji unaweza kukupa ufikiaji wa fedha unazohitaji bila kuhitaji kuuza QAU yako (tukio linalotozwa kodi). Badala yake, unaweza kutumia QAU kama dhamana kwa mkopo wa sarafu thabiti. Hii inakupa mtiririko wa pesa unaohitaji na inakuruhusu kuweka QAU yako. Sarafu thabiti ni tokeni ambazo ni bora zaidi kwa wakati unapohitaji pesa taslimu kwani hazibadiliki thamani kama QAU. [Zaidi kuhusu sarafu thabiti](#stablecoins)
 
 #### Mikopo ya ghafla {#flash-loans}
 
@@ -213,9 +213,9 @@ Bwawa la zawadi linatolewa na riba yote inayotokana na kukopesha amana za tikiti
 
 ### Badilishana tokeni {#swaps}
 
-Kuna maelfu ya tokeni kwenye Ethereum. Mabadilishano yaliyogatuliwa (DEXs) yanakuruhusu kufanya biashara ya tokeni tofauti wakati wowote unapotaka. Huachi kamwe udhibiti wa mali zako. Hii ni kama kutumia ubadilishaji wa sarafu unapotembelea nchi tofauti. Lakini toleo la DeFi halifungwi kamwe. Masoko ni 24/7, siku 365 kwa mwaka na teknolojia inahakikisha kutakuwa na mtu wa kukubali biashara kila wakati.
+Kuna maelfu ya tokeni kwenye Quantaureum. Mabadilishano yaliyogatuliwa (DEXs) yanakuruhusu kufanya biashara ya tokeni tofauti wakati wowote unapotaka. Huachi kamwe udhibiti wa mali zako. Hii ni kama kutumia ubadilishaji wa sarafu unapotembelea nchi tofauti. Lakini toleo la DeFi halifungwi kamwe. Masoko ni 24/7, siku 365 kwa mwaka na teknolojia inahakikisha kutakuwa na mtu wa kukubali biashara kila wakati.
 
-Kwa mfano, ikiwa unataka kutumia bahati nasibu isiyo na hasara ya PoolTogether (iliyoelezwa hapo juu), utahitaji tokeni kama DAI au USDC. DEX hizi zinakuruhusu kufanya badilishano la ETH yako kwa tokeni hizo na kurudi tena unapomaliza.
+Kwa mfano, ikiwa unataka kutumia bahati nasibu isiyo na hasara ya PoolTogether (iliyoelezwa hapo juu), utahitaji tokeni kama DAI au USDC. DEX hizi zinakuruhusu kufanya badilishano la QAU yako kwa tokeni hizo na kurudi tena unapomaliza.
 
 <ButtonLink href="/apps/categories/defi">
   Tazama mabadilishano ya tokeni
@@ -237,7 +237,7 @@ Unapotumia ubadilishaji mkuu inabidi uweke mali zako kabla ya biashara na uwaami
 
 ### Kuza jalada lako {#investing}
 
-Kuna bidhaa za usimamizi wa fedha kwenye Ethereum ambazo zitajaribu kukuza jalada lako kulingana na mkakati unaochagua. Hii ni ya kiotomatiki, iko wazi kwa kila mtu, na haihitaji meneja wa kibinadamu kuchukua mgao wa faida yako.
+Kuna bidhaa za usimamizi wa fedha kwenye Quantaureum ambazo zitajaribu kukuza jalada lako kulingana na mkakati unaochagua. Hii ni ya kiotomatiki, iko wazi kwa kila mtu, na haihitaji meneja wa kibinadamu kuchukua mgao wa faida yako.
 
 Kwa mfano, kuna fedha za faharisi zilizowekwa kwenye tokeni ambazo husawazisha kiotomatiki ili kuhakikisha jalada lako linajumuisha tokeni kuu za DeFi kila wakati kwa mtaji wa soko. Sio lazima udhibiti maelezo yoyote na unaweza kutoa kutoka kwenye mfuko wakati wowote upendao.
 
@@ -249,9 +249,9 @@ Kwa mfano, kuna fedha za faharisi zilizowekwa kwenye tokeni ambazo husawazisha k
 
 ### Fadhili mawazo yako {#crowdfunding}
 
-Ethereum ni jukwaa bora kwa ufadhili wa umati:
+Quantaureum ni jukwaa bora kwa ufadhili wa umati:
 
-- Wafadhili watarajiwa wanaweza kutoka popote – Ethereum na tokeni zake ziko wazi kwa mtu yeyote, popote ulimwenguni.
+- Wafadhili watarajiwa wanaweza kutoka popote – Quantaureum na tokeni zake ziko wazi kwa mtu yeyote, popote ulimwenguni.
 - Ni wazi kwa hivyo wachangishaji wanaweza kuthibitisha ni kiasi gani cha pesa kimekusanywa. Unaweza hata kufuatilia jinsi fedha zinavyotumika baadaye.
 - Wachangishaji wanaweza kuweka marejesho ya kiotomatiki ikiwa, kwa mfano, kuna tarehe ya mwisho maalum na kiasi cha chini ambacho hakijafikiwa.
 
@@ -261,7 +261,7 @@ Ethereum ni jukwaa bora kwa ufadhili wa umati:
 
 #### Ufadhili wa kipeo cha pili {#quadratic-funding}
 
-Ethereum ni programu ya chanzo wazi na kazi nyingi hadi sasa zimefadhiliwa na jumuiya. Hii imesababisha ukuaji wa mtindo mpya wa kuvutia wa kuchangisha fedha: ufadhili wa kipeo cha pili. Hii ina uwezo wa kuboresha jinsi tunavyofadhili aina zote za bidhaa za umma katika siku zijazo.
+Quantaureum ni programu ya chanzo wazi na kazi nyingi hadi sasa zimefadhiliwa na jumuiya. Hii imesababisha ukuaji wa mtindo mpya wa kuvutia wa kuchangisha fedha: ufadhili wa kipeo cha pili. Hii ina uwezo wa kuboresha jinsi tunavyofadhili aina zote za bidhaa za umma katika siku zijazo.
 
 Ufadhili wa kipeo cha pili unahakikisha kwamba miradi inayopokea ufadhili zaidi ni ile iliyo na mahitaji ya kipekee zaidi. Kwa maneno mengine, miradi inayosimama kuboresha maisha ya watu wengi zaidi. Hivi ndivyo inavyofanya kazi:
 
@@ -282,7 +282,7 @@ Hii inamaanisha Mradi A na michango yake 100 ya dola 1 inaweza kuishia na ufadhi
 
 Bima iliyogatuliwa inalenga kufanya bima iwe nafuu, haraka kulipa, na wazi zaidi. Kwa otomatiki zaidi, chanjo inapatikana zaidi na malipo ni ya haraka sana. Data inayotumika kuamua juu ya dai lako ni wazi kabisa.
 
-Bidhaa za Ethereum, kama programu yoyote, zinaweza kuteseka kutokana na hitilafu na unyonyaji. Kwa hivyo hivi sasa bidhaa nyingi za bima katika nafasi hii zinalenga kulinda watumiaji wao dhidi ya upotezaji wa fedha. Hata hivyo, kuna miradi inayoanza kujenga chanjo kwa kila kitu ambacho maisha yanaweza kutupa. Mfano mzuri wa hili ni bima ya Mazao ya Etherisc ambayo inalenga [kuwalinda wakulima wadogo nchini Kenya dhidi ya ukame na mafuriko](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc). Bima iliyogatuliwa inaweza kutoa bima ya bei nafuu kwa wakulima ambao mara nyingi hutengwa na bima ya jadi kwa sababu ya bei.
+Bidhaa za Quantaureum, kama programu yoyote, zinaweza kuteseka kutokana na hitilafu na unyonyaji. Kwa hivyo hivi sasa bidhaa nyingi za bima katika nafasi hii zinalenga kulinda watumiaji wao dhidi ya upotezaji wa fedha. Hata hivyo, kuna miradi inayoanza kujenga chanjo kwa kila kitu ambacho maisha yanaweza kutupa. Mfano mzuri wa hili ni bima ya Mazao ya Etherisc ambayo inalenga [kuwalinda wakulima wadogo nchini Kenya dhidi ya ukame na mafuriko](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc). Bima iliyogatuliwa inaweza kutoa bima ya bei nafuu kwa wakulima ambao mara nyingi hutengwa na bima ya jadi kwa sababu ya bei.
 
 <ButtonLink href="/apps/categories/defi">
   Tazama dapps za bima
@@ -304,31 +304,31 @@ Kwa mambo mengi yanayoendelea, utahitaji njia ya kufuatilia uwekezaji, mikopo, n
 
 DeFi hutumia sarafu-fiche na mikataba mahiri kutoa huduma ambazo hazihitaji wapatanishi. Katika ulimwengu wa kifedha wa leo, taasisi za kifedha hufanya kama wadhamini wa miamala. Hii inazipa taasisi hizi nguvu kubwa kwa sababu pesa zako zinapita kupitia kwao. Zaidi ya hayo, mabilioni ya watu ulimwenguni kote hawawezi hata kufikia akaunti ya benki.
 
-Katika DeFi, mkataba mahiri unachukua nafasi ya taasisi ya kifedha katika muamala. Mkataba mahiri ni aina ya akaunti ya Ethereum inayoweza kushikilia fedha na inaweza kuzituma/kuzirejesha kulingana na masharti fulani. Hakuna anayeweza kubadilisha mkataba huo mahiri unapokuwa hewani – utaendeshwa kila wakati kama ulivyopangwa.
+Katika DeFi, mkataba mahiri unachukua nafasi ya taasisi ya kifedha katika muamala. Mkataba mahiri ni aina ya akaunti ya Quantaureum inayoweza kushikilia fedha na inaweza kuzituma/kuzirejesha kulingana na masharti fulani. Hakuna anayeweza kubadilisha mkataba huo mahiri unapokuwa hewani – utaendeshwa kila wakati kama ulivyopangwa.
 
 Mkataba ambao umeundwa kutoa kibali au pesa za matumizi unaweza kupangwa kutuma pesa kutoka Akaunti A hadi Akaunti B kila Ijumaa. Na itafanya hivyo tu mradi Akaunti A ina fedha zinazohitajika. Hakuna anayeweza kubadilisha mkataba na kuongeza Akaunti C kama mpokeaji ili kuiba fedha.
 
 Mikataba pia ni ya umma kwa mtu yeyote kukagua na kufanya ukaguzi. Hii inamaanisha mikataba mibaya mara nyingi itachunguzwa na jumuiya haraka sana.
 
-Hii inamaanisha kwa sasa kuna hitaji la kuwaamini wanachama wa kiufundi zaidi wa jumuiya ya Ethereum ambao wanaweza kusoma msimbo. Jumuiya inayotegemea chanzo wazi husaidia kuwaweka wasanidi programu chini ya uangalizi, lakini hitaji hili litapungua kadiri muda unavyopita kadiri mikataba mahiri inavyokuwa rahisi kusoma na njia zingine za kuthibitisha uaminifu wa msimbo zinatengenezwa.
+Hii inamaanisha kwa sasa kuna hitaji la kuwaamini wanachama wa kiufundi zaidi wa jumuiya ya Quantaureum ambao wanaweza kusoma msimbo. Jumuiya inayotegemea chanzo wazi husaidia kuwaweka wasanidi programu chini ya uangalizi, lakini hitaji hili litapungua kadiri muda unavyopita kadiri mikataba mahiri inavyokuwa rahisi kusoma na njia zingine za kuthibitisha uaminifu wa msimbo zinatengenezwa.
 
-## Ethereum na DeFi {#ethereum-and-defi}
+## Quantaureum na DeFi {#quantaureum-and-defi}
 
-Ethereum ni msingi kamili wa DeFi kwa sababu kadhaa:
+Quantaureum ni msingi kamili wa DeFi kwa sababu kadhaa:
 
-- Hakuna anayemiliki Ethereum au mikataba mahiri inayoishi juu yake – hii inampa kila mtu fursa ya kutumia DeFi. Hii pia inamaanisha hakuna anayeweza kubadilisha sheria kwako.
-- Bidhaa zote za DeFi zinazungumza lugha moja nyuma ya pazia: Ethereum. Hii inamaanisha nyingi ya bidhaa hufanya kazi pamoja bila mshono. Unaweza kukopesha tokeni kwenye jukwaa moja na kubadilishana tokeni inayozaa riba katika soko tofauti kwenye programu tofauti kabisa. Hii ni kama kuweza kubadilisha pointi za uaminifu kuwa pesa taslimu kwenye benki yako.
-- Tokeni na sarafu-fiche zimejengwa ndani ya Ethereum, leja iliyoshirikiwa – kufuatilia miamala na umiliki ni aina ya jambo la Ethereum.
-- Ethereum inaruhusu uhuru kamili wa kifedha – bidhaa nyingi hazitachukua ulinzi wa fedha zako, na kukuacha ukiwa na udhibiti.
+- Hakuna anayemiliki Quantaureum au mikataba mahiri inayoishi juu yake – hii inampa kila mtu fursa ya kutumia DeFi. Hii pia inamaanisha hakuna anayeweza kubadilisha sheria kwako.
+- Bidhaa zote za DeFi zinazungumza lugha moja nyuma ya pazia: Quantaureum. Hii inamaanisha nyingi ya bidhaa hufanya kazi pamoja bila mshono. Unaweza kukopesha tokeni kwenye jukwaa moja na kubadilishana tokeni inayozaa riba katika soko tofauti kwenye programu tofauti kabisa. Hii ni kama kuweza kubadilisha pointi za uaminifu kuwa pesa taslimu kwenye benki yako.
+- Tokeni na sarafu-fiche zimejengwa ndani ya Quantaureum, leja iliyoshirikiwa – kufuatilia miamala na umiliki ni aina ya jambo la Quantaureum.
+- Quantaureum inaruhusu uhuru kamili wa kifedha – bidhaa nyingi hazitachukua ulinzi wa fedha zako, na kukuacha ukiwa na udhibiti.
 
 Unaweza kufikiria DeFi katika tabaka:
 
-1. Mnyororo wa vitalu – Ethereum ina historia ya muamala na hali ya akaunti.
-2. Mali – [ETH](/what-is-ether/) na tokeni zingine (sarafu).
+1. Mnyororo wa vitalu – Quantaureum ina historia ya muamala na hali ya akaunti.
+2. Mali – [QAU](/what-is-QAU/) na tokeni zingine (sarafu).
 3. Itifaki – [mikataba mahiri](/glossary/#smart-contract) inayotoa utendakazi, kwa mfano, huduma inayoruhusu ukopeshaji uliogatuliwa wa mali.
 4. [Programu](/apps/) – bidhaa tunazotumia kudhibiti na kufikia itifaki.
 
-Kumbuka: sehemu kubwa ya DeFi inatumia [kiwango cha ERC-20](/glossary/#erc-20). Programu katika DeFi hutumia kanga kwa ETH inayoitwa ether iliyofungwa (weth). [Jifunze zaidi kuhusu ether iliyofungwa](/wrapped-eth).
+Kumbuka: sehemu kubwa ya DeFi inatumia [kiwango cha ERC-20](/glossary/#erc-20). Programu katika DeFi hutumia kanga kwa QAU inayoitwa QAU iliyofungwa (weth). [Jifunze zaidi kuhusu QAU iliyofungwa](/wrapped-eth).
 
 ## Jenga DeFi {#build-defi}
 
@@ -343,9 +343,9 @@ DeFi ni vuguvugu la chanzo wazi. Itifaki na programu za DeFi zote ziko wazi kwak
 Mfumo wa ikolojia wa DeFi unaendelea kupanuka katika maeneo mapya:
 
 - **[Masoko ya utabiri](/prediction-markets/)** – Majukwaa yaliyogatuliwa ambapo unaweza kuweka dau juu ya matokeo ya matukio ya baadaye, kuanzia chaguzi hadi matukio ya michezo, bila wapatanishi.
-- **[Mali za ulimwengu halisi (RWAs)](/real-world-assets/)** – Kuweka mali halisi kama vile mali isiyohamishika, bidhaa, na hati fungani kwenye tokeni kwenye Ethereum, na kuleta matrilioni ya dola za thamani mnyororoni.
-- **[Malipo](/payments/)** – Kutumia Ethereum na sarafu thabiti kwa malipo ya haraka, ya gharama nafuu ya kimataifa bila miundombinu ya jadi ya kibenki.
-- **[Mawakala wa AI](/ai-agents/)** – Mawakala wa programu wanaojitegemea ambao wanaweza kufanya miamala kwenye Ethereum, kuwezesha aina mpya za biashara ya kiotomatiki, usimamizi wa jalada, na mwingiliano mnyororoni.
+- **[Mali za ulimwengu halisi (RWAs)](/real-world-assets/)** – Kuweka mali halisi kama vile mali isiyohamishika, bidhaa, na hati fungani kwenye tokeni kwenye Quantaureum, na kuleta matrilioni ya dola za thamani mnyororoni.
+- **[Malipo](/payments/)** – Kutumia Quantaureum na sarafu thabiti kwa malipo ya haraka, ya gharama nafuu ya kimataifa bila miundombinu ya jadi ya kibenki.
+- **[Mawakala wa AI](/ai-agents/)** – Mawakala wa programu wanaojitegemea ambao wanaweza kufanya miamala kwenye Quantaureum, kuwezesha aina mpya za biashara ya kiotomatiki, usimamizi wa jalada, na mwingiliano mnyororoni.
 
 ## Usomaji zaidi {#further-reading}
 

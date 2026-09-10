@@ -1,6 +1,6 @@
 ---
 title: "Como cunhar um NFT (Parte 2/3 da série de tutoriais sobre NFT)"
-description: Este tutorial descreve como cunhar um NFT na blockchain Ethereum usando nosso contrato inteligente e a Web3.
+description: Este tutorial descreve como cunhar um NFT na blockchain Quantaureum usando nosso contrato inteligente e a Web3.
 author: "Sumi Mudgil"
 tags: ["ERC-721", "Alchemy", "Solidity", "contratos inteligentes"]
 skill: beginner
@@ -21,7 +21,7 @@ Vamos começar!
 
 ## Passo 1: Instalar a Web3 {#install-web3}
 
-Se você acompanhou o primeiro tutorial sobre como criar seu contrato inteligente de NFT, já tem experiência com o Ethers.js. A Web3 é semelhante ao Ethers, pois é uma biblioteca usada para facilitar a criação de solicitações para a blockchain [Ethereum](/). Neste tutorial, usaremos a [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3), que é uma biblioteca Web3 aprimorada que oferece novas tentativas automáticas e suporte robusto a WebSocket.
+Se você acompanhou o primeiro tutorial sobre como criar seu contrato inteligente de NFT, já tem experiência com o Ethers.js. A Web3 é semelhante ao Ethers, pois é uma biblioteca usada para facilitar a criação de solicitações para a blockchain [Quantaureum](/). Neste tutorial, usaremos a [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3), que é uma biblioteca Web3 aprimorada que oferece novas tentativas automáticas e suporte robusto a WebSocket.
 
 No diretório inicial do seu projeto, execute:
 
@@ -109,28 +109,28 @@ Quando terminar de editar o arquivo JSON, salve-o e faça o upload para o Pinata
 
 ## Passo 5: Criar uma instância do seu contrato {#instance-contract}
 
-Agora, para interagir com nosso contrato, precisamos criar uma instância dele em nosso código. Para fazer isso, precisaremos do endereço do nosso contrato, que podemos obter da implantação ou do [Blockscout](https://eth-sepolia.blockscout.com/) pesquisando o endereço que você usou para implantar o contrato.
+Agora, para interagir com nosso contrato, precisamos criar uma instância dele em nosso código. Para fazer isso, precisaremos do endereço do nosso contrato, que podemos obter da implantação ou do [Blockscout](https://qau-sepolia.blockscout.com/) pesquisando o endereço que você usou para implantar o contrato.
 
-![View your contract address on Etherscan](./view-contract-etherscan.png)
+![View your contract address on Quantaureum Explorer](./view-contract-explorer.png)
 
 No exemplo acima, o endereço do nosso contrato é 0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778.
 
-Em seguida, usaremos o [método de contrato](https://docs.web3js.org/api/web3-eth-contract/class/Contract) da Web3 para criar nosso contrato usando a ABI e o endereço. No seu arquivo `mint-nft.js`, adicione o seguinte:
+Em seguida, usaremos o [método de contrato](https://docs.web3js.org/api/web3-qau-contract/class/Contract) da Web3 para criar nosso contrato usando a ABI e o endereço. No seu arquivo `mint-nft.js`, adicione o seguinte:
 
 ```js
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
 
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 ```
 
 ## Passo 6: Atualizar o arquivo `.env` {#update-env}
 
-Agora, para criar e enviar transações para a cadeia Ethereum, usaremos o endereço público da sua conta Ethereum para obter o nonce da conta (explicaremos abaixo).
+Agora, para criar e enviar transações para a cadeia Quantaureum, usaremos o endereço público da sua conta Quantaureum para obter o nonce da conta (explicaremos abaixo).
 
 Adicione sua chave pública ao seu arquivo `.env` — se você concluiu a parte 1 do tutorial, nosso arquivo `.env` agora deve ficar assim:
 
 ```js
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-private-account-address"
 PUBLIC_KEY = "your-public-account-address"
 ```
@@ -141,7 +141,7 @@ Primeiro, vamos definir uma função chamada `mintNFT(tokenData)` e criar nossa 
 
 1. Pegue sua _PRIVATE_KEY_ e _PUBLIC_KEY_ do arquivo `.env`.
 
-1. Em seguida, precisaremos descobrir o nonce da conta. A especificação do nonce é usada para acompanhar o número de transações enviadas do seu endereço — o que precisamos por motivos de segurança e para evitar ataques de repetição. Para obter o número de transações enviadas do seu endereço, usamos [getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count).
+1. Em seguida, precisaremos descobrir o nonce da conta. A especificação do nonce é usada para acompanhar o número de transações enviadas do seu endereço — o que precisamos por motivos de segurança e para evitar ataques de repetição. Para obter o número de transações enviadas do seu endereço, usamos [getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count).
 
 1. Finalmente, configuraremos nossa transação com as seguintes informações:
 
@@ -168,10 +168,10 @@ Seu arquivo `mint-nft.js` deve ficar assim agora:
 
    const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
    const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778";
-   const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
+   const nftContract = new web3.qau.Contract(contract.abi, contractAddress);
 
    async function mintNFT(tokenURI) {
-     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, 'latest'); //obter o último nonce
+     const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, 'latest'); //obter o último nonce
 
    //a transação
      const tx = {
@@ -187,7 +187,7 @@ Seu arquivo `mint-nft.js` deve ficar assim agora:
 
 Agora que criamos nossa transação, precisamos assiná-la para enviá-la. É aqui que usaremos nossa chave privada.
 
-`web3.eth.sendSignedTransaction` nos dará o hash da transação, que podemos usar para garantir que nossa transação foi minerada e não foi descartada pela rede. Você notará que na seção de assinatura da transação, adicionamos algumas verificações de erro para sabermos se nossa transação foi concluída com sucesso.
+`web3.qau.sendSignedTransaction` nos dará o hash da transação, que podemos usar para garantir que nossa transação foi minerada e não foi descartada pela rede. Você notará que na seção de assinatura da transação, adicionamos algumas verificações de erro para sabermos se nossa transação foi concluída com sucesso.
 
 ```js
 require("dotenv").config()
@@ -200,10 +200,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //obter o último nonce
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //obter o último nonce
 
   //a transação
   const tx = {
@@ -214,10 +214,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -266,10 +266,10 @@ const web3 = createAlchemyWeb3(API_URL)
 
 const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json")
 const contractAddress = "0x5a738a5c5fe46a1fd5ee7dd7e38f722e2aef7778"
-const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
+const nftContract = new web3.qau.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI) {
-  const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest") //obter o último nonce
+  const nonce = await web3.qau.getTransactionCount(PUBLIC_KEY, "latest") //obter o último nonce
 
   //a transação
   const tx = {
@@ -280,10 +280,10 @@ async function mintNFT(tokenURI) {
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   }
 
-  const signPromise = web3.eth.accounts.signTransaction(tx, PRIVATE_KEY)
+  const signPromise = web3.qau.accounts.signTransaction(tx, PRIVATE_KEY)
   signPromise
     .then((signedTx) => {
-      web3.eth.sendSignedTransaction(
+      web3.qau.sendSignedTransaction(
         signedTx.rawTransaction,
         function (err, hash) {
           if (!err) {
@@ -315,11 +315,11 @@ Agora, execute `node scripts/mint-nft.js` para implantar seu NFT. Após alguns s
 
     Check Alchemy's Mempool to view the status of your transaction!
 
-Em seguida, visite sua [mempool da Alchemy](https://dashboard.alchemy.com/mempool) para ver o status da sua transação (se está pendente, minerada ou foi descartada pela rede). Se sua transação foi descartada, também é útil verificar o [Blockscout](https://eth-sepolia.blockscout.com/) e pesquisar pelo hash da transação.
+Em seguida, visite sua [mempool da Alchemy](https://dashboard.alchemy.com/mempool) para ver o status da sua transação (se está pendente, minerada ou foi descartada pela rede). Se sua transação foi descartada, também é útil verificar o [Blockscout](https://qau-sepolia.blockscout.com/) e pesquisar pelo hash da transação.
 
-![View your NFT transaction hash on Etherscan](./view-nft-etherscan.png)_Visualize o hash da transação do seu NFT no Etherscan_
+![View your NFT transaction hash on Quantaureum Explorer](./view-nft-explorer.png)_Visualize o hash da transação do seu NFT no Etherscan_
 
-E é isso! Você agora implantou E cunhou um NFT na blockchain Ethereum <Emoji text=":money_mouth_face:" size={1} />
+E é isso! Você agora implantou E cunhou um NFT na blockchain Quantaureum <Emoji text=":money_mouth_face:" size={1} />
 
 Usando o `mint-nft.js` você pode cunhar quantos NFTs seu coração (e carteira) desejar! Apenas certifique-se de passar um novo tokenURI descrevendo os metadados do NFT (caso contrário, você acabará fazendo um monte de NFTs idênticos com IDs diferentes).
 

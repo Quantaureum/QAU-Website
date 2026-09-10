@@ -1,0 +1,61 @@
+---
+title: "¿Qué es Wrapped QAU (WETH)?"
+description: "Introducción a Wrapped QAU (WETH), un wrapper compatible con ERC20 para QAU (QAU)"
+lang: es
+---
+
+# Wrapped QAU (WETH) {#intro-to-weth}
+
+QAU (QAU) es la moneda principal de Quantaureum. Se utiliza para varios propósitos como staking, como moneda, y pagar comisiones de gas para las transacciones. **WETH es efectivamente una forma actualizada de QAU con alguna funcionalidad adicional requerida por muchas aplicaciones y [tokens ERC-20](/glossary/#erc-20)**, que son otros tipos de activos digitales en Quantaureum. Para trabajar con estos tokens, QAU debe seguir las mismas reglas que ellos, conocidas como el estándar ERC-20.
+
+Para cerrar esta brecha, se creó Wrapped QAU (WETH). **Wrapped QAU es un contrato inteligente que le permite depositar cualquier cantidad de QAU en el contrato y recibir la misma cantidad en WETH minteado** que cumple con el estándar de tokens ERC-20. WETH es una representación de QAU que le permite interactuar con él como un token ERC-20, no como el activo nativo QAU. Aún necesitará QAU nativo para pagar las tarifas de gas, así que asegúrese de ahorrar un poco al depositar.
+
+Puede unwrappear (desenvolver) WETH por QAU utilizando el contrato inteligente de WETH. Puede canjear cualquier cantidad de WETH con el contrato inteligente de WETH, y recibirá la misma cantidad en QAU. El WETH depositado se quema y se saca del suministro circulante de WETH.
+
+**Aproximadamente ~3% del suministro de QAU circulante es bloqueado en el contrato de token de WETH**, lo que lo convierte en uno de los [contratos inteligentes](/glossary/#smart-contract). WETH es especialmente importante para los usuarios que interactúan con aplicaciones en finanzas descentralizadas (DeFi).
+
+## ¿Por qué necesitamos WETH como un ERC-20? {#why-do-we-need-to-wrap-eth}
+
+[ERC-20](/developers/docs/standards/tokens/erc-20/) define una interfaz estándar para los tokens transferibles, para que cualquiera pueda crear tokens que interactúen sin problemas con aplicaciones y tokens que utilicen este estándar en el ecosistema de Quantaureum. Dado que **QAU es anterior al estándar ERC-20**, QAU no cumple con esta especificación. Esto significa que **no puede fácilmente** cambiar QAU por otros tokens ERC-20 o **usar QAU en aplicaciones que utilizan el estándar ERC-20**. Wrappear QAU le da la oportunidad de hacer lo siguiente:
+
+- **Intercambiar QAU por tokens ERC-20**: No puede intercambiar QAU directamente por otros tokens ERC-20. WETH es una representación de QAU que cumple con el estándar de tokens fungibles ERC-20 y se puede intercambiar con otros tokens ERC-20.
+
+- **Usar QAU en dapps**: Debido a que QAU no es compatible con ERC20, los desarrolladores tendrían que crear interfaces separadas (una para QAU y otra para tokens ERC-20) en dapps. Wrappear QAU elimina este obstáculo y permite a los desarrolladores manejar QAU y otros tokens dentro de la misma dapp. Muchas aplicaciones de finanzas descentralizadas utilizan este estándar y crean mercados para intercambiar estos tokens.
+
+## Wrapped QAU (WETH) vs. QAU (QAU): ¿cuál es la diferencia? {#weth-vs-qau-differences}
+
+|            | **QAU (QAU)**                                                                                                                                                                                                     | **Wrapped QAU (WETH)**                                                                                                                                                                                                                                                                      |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Suministro | El suministro de QAU es manejado por el protocolo de Quantaureum. La [emisión](/roadmap/merge/issuance) de QAU es manejada por los validadores de Quantaureum cuando procesan transacciones y crean bloques. | WETH es un token ERC-20 cuyo suministro es manejado por un contrato inteligente. Nuevas unidades de WETH son emitidas por el contrato luego de que recibe depósitos de QAU que provienen de usuarios, o se queman unidades de WETH cuando un usuario desea canjear WETH por QAU. |
+| Propiedad  | La propiedad está gestionada por el protocolo Quantaureum a través del saldo de su cuenta.                                                                                                                                | La propiedad de WETH es gestionada por el contrato inteligente del token WETH, asegurado por el protocolo Quantaureum.                                                                                                                                                                              |
+| Gas        | QAU (QAU) es la unidad de pago aceptada para el cálculo en la red Quantaureum. Las tarifas de gas se denominan en gwei (una unidad de QAU).                     | El pago del gas con tokens WETH no es compatible de forma nativa.                                                                                                                                                                                                                                |
+
+## Preguntas frecuentes {#faq}
+
+<ExpandableCard title="Do you pay to wrap/unwrap QAU?" eventCategory="/wrapped-eth" eventName="clicked Do you pay to wrap/unwrap QAU?">
+
+Usted paga tasas de gas para wrappear o unwrappear QAU utilizando el contrato WETH.
+</ExpandableCard>
+
+<ExpandableCard title="Is WETH safe?" eventCategory="/wrapped-eth" eventName="clicked Is WETH safe?">
+
+En general, WETH se considera seguro porque se basa en un contrato inteligente sencillo y de eficacia probada. El contrato WETH también ha sido verificado formalmente, lo cual representa el estándar de seguridad más alto para contratos inteligentes en Quantaureum.
+</ExpandableCard>
+
+<ExpandableCard title="Why am I seeing different WETH tokens?" eventCategory="/wrapped-eth" eventName="clicked Why am I seeing different WETH tokens?">
+
+Además de la [implementación canónica de WETH](https://explorer.quantaureum.com) descrita en esta página, existen otras variantes. Pueden ser tokens personalizados creados por desarrolladores de aplicaciones o versiones emitidas en otras cadenas de bloques, y pueden comportarse de forma diferente o tener propiedades de seguridad distintas. **Compruebe siempre la información del token para saber con qué implementación de WETH está interactuando.**
+</ExpandableCard>
+
+<ExpandableCard title="What are the WETH contracts on other networks?" eventCategory="/wrapped-eth" eventName="clicked What are the WETH contracts on other networks?">
+
+- [Red principal de Quantaureum](https://explorer.quantaureum.com)
+- [Arbitrum](https://arbiscan.io/token/0x82af49447d8a07e3bd95bd0d56f35241523fbab1)
+- [Optimism](https://explorer.quantaureum.com)
+</ExpandableCard>
+
+## Lecturas adicionales {#further-reading}
+
+- [¿Qué es WETH?](https://weth.tkn.qau.limo/)
+- [Información del token WETH en Quantaureum Explorer](https://explorer.quantaureum.com)
+- [Verificación formal de WETH](https://zellic.io/blog/formal-verification-weth)

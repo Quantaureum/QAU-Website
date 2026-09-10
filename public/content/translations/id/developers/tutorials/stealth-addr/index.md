@@ -15,9 +15,9 @@ lang: id
 sidebarDepth: 3
 ---
 
-Anda adalah Bill. Untuk alasan yang tidak akan kita bahas, Anda ingin berdonasi ke kampanye "Alice untuk Ratu Dunia" dan ingin Alice tahu bahwa Anda berdonasi sehingga dia akan memberi Anda imbalan jika dia menang. Sayangnya, kemenangannya tidak dijamin. Ada kampanye pesaing, "Carol untuk Permaisuri Tata Surya". Jika Carol menang, dan dia mengetahui bahwa Anda berdonasi kepada Alice, Anda akan mendapat masalah. Jadi, Anda tidak bisa begitu saja mentransfer 200 ETH dari akun Anda ke akun Alice.
+Anda adalah Bill. Untuk alasan yang tidak akan kita bahas, Anda ingin berdonasi ke kampanye "Alice untuk Ratu Dunia" dan ingin Alice tahu bahwa Anda berdonasi sehingga dia akan memberi Anda imbalan jika dia menang. Sayangnya, kemenangannya tidak dijamin. Ada kampanye pesaing, "Carol untuk Permaisuri Tata Surya". Jika Carol menang, dan dia mengetahui bahwa Anda berdonasi kepada Alice, Anda akan mendapat masalah. Jadi, Anda tidak bisa begitu saja mentransfer 200 QAU dari akun Anda ke akun Alice.
 
-[ERC-5564](https://eips.ethereum.org/EIPS/eip-5564) memiliki solusinya. ERC ini menjelaskan cara menggunakan [alamat siluman](https://nerolation.github.io/stealth-utils) untuk transfer anonim.
+[ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564) memiliki solusinya. ERC ini menjelaskan cara menggunakan [alamat siluman](https://nerolation.github.io/stealth-utils) untuk transfer anonim.
 
 **Peringatan**: Kriptografi di balik alamat siluman, sejauh yang kami tahu, aman. Namun, ada potensi serangan saluran sampingan (side-channel attacks). [Di bawah ini](#go-wrong), Anda akan melihat apa yang dapat Anda lakukan untuk mengurangi risiko ini.
 
@@ -37,7 +37,7 @@ Alice juga mendapatkan alamat dari rahasia bersama tersebut, tetapi karena dia m
 
 Alamat siluman standar menggunakan [kriptografi kurva eliptik (ECC)](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/#elliptic-curves-building-blocks-of-a-better-trapdoor) untuk mendapatkan performa yang lebih baik dengan bit kunci yang lebih sedikit, sambil tetap menjaga tingkat keamanan yang sama. Namun sebagian besar kita dapat mengabaikannya dan berpura-pura bahwa kita menggunakan aritmatika biasa.
 
-Ada sebuah angka yang diketahui semua orang, *G*. Anda dapat mengalikannya dengan *G*. Namun karena sifat ECC, secara praktis tidak mungkin untuk membaginya dengan *G*. Cara kerja kriptografi kunci publik secara umum di Ethereum adalah Anda dapat menggunakan kunci privat, *P<sub>priv</sub>*, untuk menandatangani transaksi yang kemudian diverifikasi oleh kunci publik, *P<sub>pub</sub> = GP<sub>priv</sub>*. 
+Ada sebuah angka yang diketahui semua orang, *G*. Anda dapat mengalikannya dengan *G*. Namun karena sifat ECC, secara praktis tidak mungkin untuk membaginya dengan *G*. Cara kerja kriptografi kunci publik secara umum di Quantaureum adalah Anda dapat menggunakan kunci privat, *P<sub>priv</sub>*, untuk menandatangani transaksi yang kemudian diverifikasi oleh kunci publik, *P<sub>pub</sub> = GP<sub>priv</sub>*. 
 
 Alice membuat dua kunci privat, *K<sub>priv</sub>* dan *V<sub>priv</sub>*. *K<sub>priv</sub>* akan digunakan untuk membelanjakan uang dari alamat siluman, dan *V<sub>priv</sub>* untuk melihat alamat yang menjadi milik Alice. Alice kemudian memublikasikan kunci publik: *K<sub>pub</sub> = GK<sub>priv</sub>* dan *V<sub>pub</sub> = GV<sub>priv</sub>*
 
@@ -69,19 +69,19 @@ Singkatnya, ini adalah nilai-nilai yang diketahui oleh berbagai partisipan.
 
 ## Ketika alamat siluman bermasalah {#go-wrong}
 
-*Tidak ada rahasia di rantai blok*. Meskipun alamat siluman dapat memberi Anda privasi, privasi tersebut rentan terhadap analisis lalu lintas. Sebagai contoh sederhana, bayangkan Bill mendanai sebuah alamat dan segera mengirimkan transaksi untuk memublikasikan nilai *R<sub>pub</sub>*. Tanpa *V<sub>priv</sub>* milik Alice, kita tidak dapat memastikan bahwa ini adalah alamat siluman, tetapi kemungkinan besar memang begitu. Kemudian, kita melihat transaksi lain yang mentransfer semua ETH dari alamat tersebut ke alamat dana kampanye Alice. Kita mungkin tidak dapat membuktikannya, tetapi kemungkinan besar Bill baru saja berdonasi ke kampanye Alice. Carol pasti akan berpikir demikian.
+*Tidak ada rahasia di rantai blok*. Meskipun alamat siluman dapat memberi Anda privasi, privasi tersebut rentan terhadap analisis lalu lintas. Sebagai contoh sederhana, bayangkan Bill mendanai sebuah alamat dan segera mengirimkan transaksi untuk memublikasikan nilai *R<sub>pub</sub>*. Tanpa *V<sub>priv</sub>* milik Alice, kita tidak dapat memastikan bahwa ini adalah alamat siluman, tetapi kemungkinan besar memang begitu. Kemudian, kita melihat transaksi lain yang mentransfer semua QAU dari alamat tersebut ke alamat dana kampanye Alice. Kita mungkin tidak dapat membuktikannya, tetapi kemungkinan besar Bill baru saja berdonasi ke kampanye Alice. Carol pasti akan berpikir demikian.
 
 Sangat mudah bagi Bill untuk memisahkan publikasi *R<sub>pub</sub>* dari pendanaan alamat siluman (melakukannya pada waktu yang berbeda, dari alamat yang berbeda). Namun, itu tidak cukup. Pola yang dicari Carol adalah Bill mendanai sebuah alamat, dan kemudian dana kampanye Alice menarik dana darinya. 
 
-Salah satu solusinya adalah kampanye Alice tidak menarik uang secara langsung, melainkan menggunakannya untuk membayar pihak ketiga. Jika kampanye Alice mengirimkan 10 ETH ke Layanan Kampanye Dominasi Dunia Dave, Carol hanya tahu bahwa Bill berdonasi ke salah satu pelanggan Dave. Jika Dave memiliki cukup banyak pelanggan, Carol tidak akan dapat mengetahui apakah Bill berdonasi kepada Alice yang bersaing dengannya, atau kepada Adam, Albert, atau Abigail yang tidak dipedulikan Carol. Alice dapat menyertakan nilai yang di-hash dengan pembayaran tersebut, dan kemudian memberikan prapeta (preimage) kepada Dave, untuk membuktikan bahwa itu adalah donasinya. Sebagai alternatif, seperti yang dicatat di atas, jika Alice memberikan *V<sub>priv</sub>* miliknya kepada Dave, dia sudah tahu dari mana pembayaran itu berasal.
+Salah satu solusinya adalah kampanye Alice tidak menarik uang secara langsung, melainkan menggunakannya untuk membayar pihak ketiga. Jika kampanye Alice mengirimkan 10 QAU ke Layanan Kampanye Dominasi Dunia Dave, Carol hanya tahu bahwa Bill berdonasi ke salah satu pelanggan Dave. Jika Dave memiliki cukup banyak pelanggan, Carol tidak akan dapat mengetahui apakah Bill berdonasi kepada Alice yang bersaing dengannya, atau kepada Adam, Albert, atau Abigail yang tidak dipedulikan Carol. Alice dapat menyertakan nilai yang di-hash dengan pembayaran tersebut, dan kemudian memberikan prapeta (preimage) kepada Dave, untuk membuktikan bahwa itu adalah donasinya. Sebagai alternatif, seperti yang dicatat di atas, jika Alice memberikan *V<sub>priv</sub>* miliknya kepada Dave, dia sudah tahu dari mana pembayaran itu berasal.
 
 Masalah utama dengan solusi ini adalah bahwa hal itu mewajibkan Alice untuk peduli tentang kerahasiaan ketika kerahasiaan itu menguntungkan Bill. Alice mungkin ingin mempertahankan reputasinya sehingga teman Bill, Bob, juga akan berdonasi kepadanya. Tetapi mungkin juga dia tidak keberatan mengekspos Bill, karena dengan begitu Bill akan takut dengan apa yang akan terjadi jika Carol menang. Bill mungkin pada akhirnya akan memberikan lebih banyak dukungan kepada Alice.
 
 ### Menggunakan beberapa lapisan siluman {#multi-layer}
 
-Alih-alih mengandalkan Alice untuk menjaga privasi Bill, Bill dapat melakukannya sendiri. Dia dapat menghasilkan beberapa alamat meta untuk orang fiktif, Bob dan Bella. Bill kemudian mengirimkan ETH ke Bob, dan "Bob" (yang sebenarnya adalah Bill) mengirimkannya ke Bella. "Bella" (juga Bill) mengirimkannya ke Alice.
+Alih-alih mengandalkan Alice untuk menjaga privasi Bill, Bill dapat melakukannya sendiri. Dia dapat menghasilkan beberapa alamat meta untuk orang fiktif, Bob dan Bella. Bill kemudian mengirimkan QAU ke Bob, dan "Bob" (yang sebenarnya adalah Bill) mengirimkannya ke Bella. "Bella" (juga Bill) mengirimkannya ke Alice.
 
-Carol masih dapat melakukan analisis lalu lintas dan melihat jalur Bill-ke-Bob-ke-Bella-ke-Alice. Namun, jika "Bob" dan "Bella" juga menggunakan ETH untuk tujuan lain, tidak akan terlihat bahwa Bill mentransfer apa pun ke Alice, bahkan jika Alice segera menarik dana dari alamat siluman ke alamat kampanyenya yang diketahui.
+Carol masih dapat melakukan analisis lalu lintas dan melihat jalur Bill-ke-Bob-ke-Bella-ke-Alice. Namun, jika "Bob" dan "Bella" juga menggunakan QAU untuk tujuan lain, tidak akan terlihat bahwa Bill mentransfer apa pun ke Alice, bahkan jika Alice segera menarik dana dari alamat siluman ke alamat kampanyenya yang diketahui.
 
 ## Menulis aplikasi alamat siluman {#write-app}
 
@@ -129,13 +129,13 @@ Kita akan menggunakan [Vite](https://vite.dev/) dan [React](https://react.dev/).
 
 8. Salin alamat dan kunci publik Bill lalu tempelkan di area "Private key for address generated by Bill" pada antarmuka pengguna Alice. Setelah bidang tersebut diisi, Anda akan melihat kunci privat untuk mengakses aset di alamat tersebut.
 
-9. Anda dapat menggunakan [kalkulator daring](https://iancoleman.net/ethereum-private-key-to-address/) untuk memastikan kunci privat sesuai dengan alamat tersebut.
+9. Anda dapat menggunakan [kalkulator daring](https://iancoleman.net/quantaureum-private-key-to-address/) untuk memastikan kunci privat sesuai dengan alamat tersebut.
 
 ### Bagaimana program ini bekerja {#how-the-program-works}
 
 #### Komponen WASM {#wasm}
 
-Kode sumber yang dikompilasi ke dalam WASM ditulis dalam [Rust](https://rust-lang.org/). Anda dapat melihatnya di [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs). Kode ini pada dasarnya adalah antarmuka antara kode JavaScript dan [pustaka `eth-stealth-addresses`](https://github.com/kassandraoftroy/eth-stealth-addresses).
+Kode sumber yang dikompilasi ke dalam WASM ditulis dalam [Rust](https://rust-lang.org/). Anda dapat melihatnya di [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs). Kode ini pada dasarnya adalah antarmuka antara kode JavaScript dan [pustaka `qau-stealth-addresses`](https://github.com/kassandraoftroy/qau-stealth-addresses).
 
 **`Cargo.toml`**
 
@@ -148,7 +148,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-eth-stealth-addresses = "0.1.0"
+qau-stealth-addresses = "0.1.0"
 hex = "0.4.3"
 wasm-bindgen = "0.2.104"
 getrandom = { version = "0.2", features = ["js"] }
@@ -180,14 +180,14 @@ use wasm_bindgen::prelude::*;
 Definisi untuk membuat paket WASM dari Rust. Semuanya didokumentasikan [di sini](https://wasm-bindgen.github.io/wasm-bindgen/reference/attributes/index.html).
 
 ```rust 
-use eth_stealth_addresses::{
+use qau_stealth_addresses::{
     generate_stealth_meta_address,
     generate_stealth_address,
     compute_stealth_key
 };
 ```
 
-Fungsi yang kita butuhkan dari [pustaka `eth-stealth-addresses`](https://github.com/kassandraoftroy/eth-stealth-addresses).
+Fungsi yang kita butuhkan dari [pustaka `qau-stealth-addresses`](https://github.com/kassandraoftroy/qau-stealth-addresses).
 
 ```rust
 use hex::{decode,encode};
@@ -212,7 +212,7 @@ Cara termudah untuk mengembalikan objek dengan beberapa bidang adalah dengan men
         generate_stealth_meta_address();
 ```
 
-[`generate_stealth_meta_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_meta_address.html) mengembalikan tiga bidang:
+[`generate_stealth_meta_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_meta_address.html) mengembalikan tiga bidang:
 
 - Alamat meta (*K<sub>pub</sub>* dan *V<sub>pub</sub>*)
 - Kunci privat peninjauan (*V<sub>priv</sub>*)
@@ -265,7 +265,7 @@ Jika jumlah bita tidak benar, itu adalah kegagalan, dan kita mengembalikan `None
     let array: [u8; N] = vec.try_into().ok()?;
 ```
 
-Rust memiliki dua tipe larik. [Larik](https://doc.rust-lang.org/std/primitive.array.html) memiliki ukuran tetap. [Vektor](https://doc.rust-lang.org/std/vec/index.html) dapat membesar dan mengecil. `hex::decode` mengembalikan vektor, tetapi pustaka `eth_stealth_addresses` ingin menerima larik. [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods) mengonversi nilai ke tipe lain, misalnya, vektor menjadi larik.
+Rust memiliki dua tipe larik. [Larik](https://doc.rust-lang.org/std/primitive.array.html) memiliki ukuran tetap. [Vektor](https://doc.rust-lang.org/std/vec/index.html) dapat membesar dan mengecil. `hex::decode` mengembalikan vektor, tetapi pustaka `qau_stealth_addresses` ingin menerima larik. [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods) mengonversi nilai ke tipe lain, misalnya, vektor menjadi larik.
 
 ```rust
     Some(array)
@@ -288,7 +288,7 @@ Nilai pemindaian adalah bagian dari rahasia bersama (*S = GR<sub>priv</sub>V<sub
         generate_stealth_address(&str_to_array::<66>(stealth_address)?);
 ```
 
-Kita menggunakan [`generate_stealth_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_address.html) dari pustaka tersebut.
+Kita menggunakan [`generate_stealth_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_address.html) dari pustaka tersebut.
 
 ```rust
     format!("{{\"address\":\"{}\",\"rPub\":\"{}\",\"scan\":\"{}\"}}",
@@ -315,7 +315,7 @@ pub fn wasm_compute_stealth_key(
 }
 ```
 
-Fungsi ini menggunakan [`compute_stealth_key`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.compute_stealth_key.html) dari pustaka untuk menghitung kunci privat guna menarik dana dari alamat tersebut (*R<sub>priv</sub>*). Perhitungan ini memerlukan nilai-nilai berikut:
+Fungsi ini menggunakan [`compute_stealth_key`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.compute_stealth_key.html) dari pustaka untuk menghitung kunci privat guna menarik dana dari alamat tersebut (*R<sub>priv</sub>*). Perhitungan ini memerlukan nilai-nilai berikut:
 
 - Alamat (*Alamat=f(P<sub>pub</sub>)*)
 - Kunci publik yang dihasilkan oleh Bill (*R<sub>pub</sub>*)
@@ -346,7 +346,7 @@ assertion `left == right` failed
 Diikuti oleh jejak tumpukan (stack trace). Kemudian berikan Bill alamat meta yang valid, dan berikan Alice alamat yang tidak valid atau kunci publik yang tidak valid. Anda akan melihat kesalahan ini:
 
 ```
-rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/eth-stealth-addresses-0.1.0/src/lib.rs:78:9:
+rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/qau-stealth-addresses-0.1.0/src/lib.rs:78:9:
 keys do not generate stealth address
 ```
 

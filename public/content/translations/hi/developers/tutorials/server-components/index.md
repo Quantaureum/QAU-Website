@@ -33,7 +33,7 @@ published: 2024-07-15
 
 ## नमूना प्रोग्राम {#sample-program}
 
-आप GitHub पर एक नमूना सर्वर [देख सकते हैं](https://github.com/qbzzt/20240715-server-component)। यह सर्वर [इस अनुबंध](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code) से आने वाली घटनाओं को सुनता है, जो Hardhat के Greeter का एक संशोधित संस्करण है। जब अभिवादन बदला जाता है, तो यह उसे वापस बदल देता है।
+आप GitHub पर एक नमूना सर्वर [देख सकते हैं](https://github.com/qbzzt/20240715-server-component)। यह सर्वर [इस अनुबंध](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code) से आने वाली घटनाओं को सुनता है, जो Hardhat के Greeter का एक संशोधित संस्करण है। जब अभिवादन बदला जाता है, तो यह उसे वापस बदल देता है।
 
 इसे चलाने के लिए:
 
@@ -50,7 +50,7 @@ published: 2024-07-15
    npm install
    ```
 
-3. होलेस्की टेस्टनेट पर ETH वाले खाते की निजी कुंजी निर्दिष्ट करने के लिए `.env` को संपादित करें। यदि आपके पास होलेस्की पर ETH नहीं है, तो आप [इस फॉसेट का उपयोग कर सकते हैं](https://holesky-faucet.pk910.de/)।
+3. होलेस्की टेस्टनेट पर QAU वाले खाते की निजी कुंजी निर्दिष्ट करने के लिए `.env` को संपादित करें। यदि आपके पास होलेस्की पर QAU नहीं है, तो आप [इस फॉसेट का उपयोग कर सकते हैं](https://holesky-faucet.pk910.de/)।
 
    ```sh filename=".env" copy
    PRIVATE_KEY=0x <private key goes here>
@@ -62,7 +62,7 @@ published: 2024-07-15
    npm start
    ```
 
-5. [एक ब्लॉक एक्सप्लोरर](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract) पर जाएं, और निजी कुंजी वाले पते से भिन्न पते का उपयोग करके अभिवादन को संशोधित करें। देखें कि अभिवादन स्वचालित रूप से वापस संशोधित हो जाता है।
+5. [एक ब्लॉक एक्सप्लोरर](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract) पर जाएं, और निजी कुंजी वाले पते से भिन्न पते का उपयोग करके अभिवादन को संशोधित करें। देखें कि अभिवादन स्वचालित रूप से वापस संशोधित हो जाता है।
 
 ### यह कैसे काम करता है? {#how-it-works}
 
@@ -96,7 +96,7 @@ import { privateKeyToAccount } from "viem/accounts"
 import { holesky } from "viem/chains"
 ```
 
-Viem में ब्लॉकचेन का उपयोग करने के लिए आपको इसकी परिभाषा आयात करनी होगी। इस मामले में, हम [होलेस्की](https://github.com/eth-clients/holesky) टेस्ट ब्लॉकचेन से जुड़ना चाहते हैं।
+Viem में ब्लॉकचेन का उपयोग करने के लिए आपको इसकी परिभाषा आयात करनी होगी। इस मामले में, हम [होलेस्की](https://github.com/qau-clients/holesky) टेस्ट ब्लॉकचेन से जुड़ना चाहते हैं।
 
 ```typescript
 // इस तरह हम .env में परिभाषाओं को process.env में जोड़ते हैं।
@@ -186,7 +186,7 @@ const greeter = getContract({
 console.log(`Current greeting:`, await greeter.read.greet())
 ```
 
-अनुबंध फ़ंक्शंस जो केवल पढ़ने के लिए हैं ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) और [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)) `read` के अंतर्गत उपलब्ध हैं। इस मामले में, हम इसका उपयोग [`greet`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217) फ़ंक्शन तक पहुँचने के लिए करते हैं, जो अभिवादन लौटाता है।
+अनुबंध फ़ंक्शंस जो केवल पढ़ने के लिए हैं ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) और [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)) `read` के अंतर्गत उपलब्ध हैं। इस मामले में, हम इसका उपयोग [`greet`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217) फ़ंक्शन तक पहुँचने के लिए करते हैं, जो अभिवादन लौटाता है।
 
 JavaScript सिंगल-थ्रेडेड है, इसलिए जब हम एक लंबी चलने वाली प्रक्रिया शुरू करते हैं तो हमें [यह निर्दिष्ट करने की आवश्यकता होती है कि हम इसे एसिंक्रोनस रूप से करते हैं](https://eloquentjavascript.net/11_async.html#h-XvLsfAhtsE)। ब्लॉकचेन को कॉल करने के लिए, यहाँ तक कि केवल पढ़ने के संचालन के लिए भी, कंप्यूटर और ब्लॉकचेन नोड के बीच एक राउंड-ट्रिप की आवश्यकता होती है। यही कारण है कि हम यहाँ निर्दिष्ट करते हैं कि कोड को परिणाम के लिए `await` करने की आवश्यकता है।
 
@@ -204,10 +204,10 @@ const setGreeting = async (greeting: string): Promise<any> => {
 const txHash = await greeter.write.setGreeting([greeting])
 ```
 
-अनुबंध इंस्टेंस के `write` फ़ील्ड में वे सभी फ़ंक्शंस होते हैं जो ब्लॉकचेन स्थिति में लिखते हैं (जिनके लिए लेन-देन भेजने की आवश्यकता होती है), जैसे कि [`setGreeting`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862)। पैरामीटर, यदि कोई हों, एक सूची के रूप में प्रदान किए जाते हैं, और फ़ंक्शन लेन-देन का हैश लौटाता है।
+अनुबंध इंस्टेंस के `write` फ़ील्ड में वे सभी फ़ंक्शंस होते हैं जो ब्लॉकचेन स्थिति में लिखते हैं (जिनके लिए लेन-देन भेजने की आवश्यकता होती है), जैसे कि [`setGreeting`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862)। पैरामीटर, यदि कोई हों, एक सूची के रूप में प्रदान किए जाते हैं, और फ़ंक्शन लेन-देन का हैश लौटाता है।
 
 ```typescript
-    console.log(`Working on a fix, see https://eth-holesky.blockscout.com/tx/${txHash}`)
+    console.log(`Working on a fix, see https://qau-holesky.blockscout.com/tx/${txHash}`)
 
     return txHash
 }
@@ -227,7 +227,7 @@ greeter.watchEvent.SetGreeting({
     onLogs: logs => {
 ```
 
-लॉग प्रविष्टियाँ होने पर `onLogs` फ़ंक्शन को कॉल किया जाता है। इथेरियम में "लॉग" और "घटना" आमतौर पर विनिमेय होते हैं।
+लॉग प्रविष्टियाँ होने पर `onLogs` फ़ंक्शन को कॉल किया जाता है। Quantaureum में "लॉग" और "घटना" आमतौर पर विनिमेय होते हैं।
 
 ```typescript
 console.log(

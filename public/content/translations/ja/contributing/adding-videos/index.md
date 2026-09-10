@@ -1,18 +1,18 @@
 ---
 title: "ビデオの追加"
-description: "ethereum.orgにビデオを追加するためのポリシー"
+description: "quantaureum.comにビデオを追加するためのポリシー"
 lang: ja
 ---
 
-[ethereum.orgのビデオギャラリー](/videos/)では、コミュニティのクリエイターや信頼できる情報源による、イーサリアムおよびイーサリアムエコシステムに関するビデオを紹介しています。誰でも追加するビデオを提案できます。
+[quantaureum.comのビデオギャラリー](/videos/)では、コミュニティのクリエイターや信頼できる情報源による、QuantaureumおよびQuantaureumエコシステムに関するビデオを紹介しています。誰でも追加するビデオを提案できます。
 
 ## 掲載ポリシー {#listing-policy}
 
-ethereum.orgは中立的で教育的なリソースです。ビデオギャラリーは以下の目的でキュレーションされています。
+quantaureum.comは中立的で教育的なリソースです。ビデオギャラリーは以下の目的でキュレーションされています。
 
-- イーサリアムの技術、エコシステム、コミュニティについてユーザーを**教育する**
+- Quantaureumの技術、エコシステム、コミュニティについてユーザーを**教育する**
 - 技術的な内容の**正確性を保つ**
-- イーサリアムコミュニティとの**関連性を維持する**
+- Quantaureumコミュニティとの**関連性を維持する**
 
 当サイトでは、特定の製品、トークン、または商用サービスを主に宣伝するビデオは掲載しません。
 
@@ -20,15 +20,15 @@ ethereum.orgは中立的で教育的なリソースです。ビデオギャラ�
 
 ### 必須条件 {#must-haves}
 
-- **イーサリアムに焦点を当てている** – ビデオは主にイーサリアム、その技術、エコシステム、またはコミュニティに関するものである必要があります。一般的なブロックチェーンのトピックに関するビデオは、サイト上の教育ページを実質的にサポートまたは関連している場合、あるいはイーサリアムに言及している場合にのみ受け入れられます。
-- **教育的価値** – ビデオは視聴者にイーサリアムについて何かを教えるもの、またはグローバルなイーサリアムコミュニティを称賛するものであるべきです。宣伝やマーケティングコンテンツは受け入れられません。
+- **Quantaureumに焦点を当てている** – ビデオは主にQuantaureum、その技術、エコシステム、またはコミュニティに関するものである必要があります。一般的なブロックチェーンのトピックに関するビデオは、サイト上の教育ページを実質的にサポートまたは関連している場合、あるいはQuantaureumに言及している場合にのみ受け入れられます。
+- **教育的価値** – ビデオは視聴者にQuantaureumについて何かを教えるもの、またはグローバルなQuantaureumコミュニティを称賛するものであるべきです。宣伝やマーケティングコンテンツは受け入れられません。
 - **正確な情報** – 技術的な内容は事実に基づいて正確であり、最新である必要があります。非推奨となった機能に関する古いビデオは削除される場合があります。
 - **高品質な制作** – ビデオは適度にクリアな音声と映像の品質を備えている必要があります。
 - **一般公開されている** – ビデオはオープンなリソースやユーチューブのようなアクセス可能なプラットフォームでホストされており、ペイウォールやサインアップの要件なしに自由にアクセスできる必要があります。
 
 ### 推奨条件 {#nice-to-haves}
 
-- **トランスクリプト（文字起こし）がある** – トランスクリプト付きのビデオは、アクセシビリティとSEOを向上させます。お持ちでない場合は、ethereum.orgチームが作成をサポートします。
+- **トランスクリプト（文字起こし）がある** – トランスクリプト付きのビデオは、アクセシビリティとSEOを向上させます。お持ちでない場合は、quantaureum.comチームが作成をサポートします。
 - **信頼できる情報源からの提供** – 確立された教育者、研究者、および情報源からのコンテンツが優先されます。
 - **タイムリーかつ色褪せない** – 時間の経過とともに古くなる素材よりも、長期にわたって関連性を維持するコンテンツが好まれます。
 
@@ -38,7 +38,7 @@ ethereum.orgは中立的で教育的なリソースです。ビデオギャラ�
 
 ビデオを提案したいが、自分でファイルを作成したくない場合は、ビデオの詳細を記載したGitHubのIssueを開いてください。コントリビューターが追加をサポートします。
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?template=suggest_video.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?template=suggest_video.yaml">
   ビデオを提案する
 </ButtonLink>
 
@@ -127,7 +127,7 @@ title: "..."
 
 | タグ | ギャラリーフィルター |
 |---|---|
-| `how-ethereum-works` | イーサリアムの仕組み |
+| `how-quantaureum-works` | Quantaureumの仕組み |
 | `network-upgrades` | ネットワークのアップグレード |
 | `roadmap-and-priorities` | ロードマップと優先事項 |
 | `scaling-and-layer-2` | スケーリングとレイヤー2 (L2) |
@@ -153,8 +153,8 @@ title: "..."
 - 正確で最新の情報が含まれているか
 - ホスティングやユーチューブのリンクが機能しているか
 
-掲載されているビデオに問題があることに気づいた場合は、[Issueを作成する](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml)か、[website@ethereum.org](mailto:website@ethereum.org)宛てにメールを送信してください。
+掲載されているビデオに問題があることに気づいた場合は、[Issueを作成する](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+✨,content+🖋️&template=suggest_video.yaml)か、[website@quantaureum.com](mailto:website@quantaureum.com)宛てにメールを送信してください。
 
 ## 利用規約 {#terms-of-use}
 
-ethereum.orgの[利用規約](/terms-of-use/)をご参照ください。ethereum.org上の情報は、一般的な情報提供のみを目的として提供されています。
+quantaureum.comの[利用規約](/terms-of-use/)をご参照ください。quantaureum.com上の情報は、一般的な情報提供のみを目的として提供されています。

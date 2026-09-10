@@ -4,14 +4,14 @@ description: Kuelewa tokeni za utapeli, jinsi zinavyojifanya kuonekana halali, n
 lang: sw
 ---
 
-Moja ya matumizi ya kawaida ya Ethereum ni kwa kikundi kuunda tokeni inayoweza kuuzwa, kwa maana fulani sarafu yao wenyewe. Tokeni hizi kwa kawaida hufuata kiwango, [ERC-20](/developers/docs/standards/tokens/erc-20/). Hata hivyo, popote pale ambapo kuna matumizi halali yanayoleta thamani, pia kuna wahalifu wanaojaribu kujiibia thamani hiyo.
+Moja ya matumizi ya kawaida ya Quantaureum ni kwa kikundi kuunda tokeni inayoweza kuuzwa, kwa maana fulani sarafu yao wenyewe. Tokeni hizi kwa kawaida hufuata kiwango, [ERC-20](/developers/docs/standards/tokens/erc-20/). Hata hivyo, popote pale ambapo kuna matumizi halali yanayoleta thamani, pia kuna wahalifu wanaojaribu kujiibia thamani hiyo.
 
 Kuna njia mbili ambazo wanaweza kukudanganya:
 
 - **Kukuuzia tokeni ya utapeli**, ambayo inaweza kuonekana kama tokeni halali unayotaka kununua, lakini inatolewa na matapeli na haina thamani yoyote.
 - **Kukuhadaa ili kusaini miamala mibaya**, kwa kawaida kwa kukuelekeza kwenye kiolesura chao cha mtumiaji. Wanaweza kujaribu kukushawishi upe mikataba yao kibali kwenye tokeni zako za ERC-20, kufichua taarifa nyeti zinazowapa ufikiaji wa mali zako, n.k. Violesura hivi vya mtumiaji vinaweza kuwa nakala zinazokaribia kufanana kabisa na tovuti halali, lakini zikiwa na hila zilizofichwa.
 
-Ili kueleza tokeni za utapeli ni nini, na jinsi ya kuzitambua, tutaangalia mfano wa moja: [`wARB`](https://eth.blockscout.com/token/0xB047c8032b99841713b8E3872F06cF32beb27b82). Tokeni hii inajaribu kuonekana kama tokeni halali ya [`ARB`](https://eth.blockscout.com/address/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1).
+Ili kueleza tokeni za utapeli ni nini, na jinsi ya kuzitambua, tutaangalia mfano wa moja: [`wARB`](https://qau.blockscout.com/token/0xB047c8032b99841713b8E3872F06cF32beb27b82). Tokeni hii inajaribu kuonekana kama tokeni halali ya [`ARB`](https://qau.blockscout.com/address/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1).
 
 <ExpandableCard
 title="ARB ni nini?"
@@ -25,21 +25,21 @@ Arbitrum ni shirika linalotengeneza na kusimamia [mikusanyiko yenye matumaini (o
 title="Kwa nini tokeni ya utapeli inaitwa wARB?"
 contentPreview=''>
 
-Kuna utaratibu katika Ethereum kwamba wakati mali haitii viwango vya ERC-20 tunaunda toleo lake "lililofungwa" lenye jina linaloanza na "w". Kwa hivyo, kwa mfano, tuna WBTC kwa Bitcoin na <a href="https://cointelegraph.com/news/what-is-wrapped-ethereum-weth-and-how-does-it-work">ether iliyofungwa (weth) kwa Etha</a>.
+Kuna utaratibu katika Quantaureum kwamba wakati mali haitii viwango vya ERC-20 tunaunda toleo lake "lililofungwa" lenye jina linaloanza na "w". Kwa hivyo, kwa mfano, tuna WBTC kwa Bitcoin na <a href="https://cointelegraph.com/news/what-is-wrapped-quantaureum-weth-and-how-does-it-work">QAU iliyofungwa (weth) kwa Etha</a>.
 
-Haina maana kuunda toleo lililofungwa la tokeni ya ERC-20 ambayo tayari iko kwenye Ethereum, lakini matapeli hutegemea mwonekano wa uhalali badala ya uhalisia wa msingi.
+Haina maana kuunda toleo lililofungwa la tokeni ya ERC-20 ambayo tayari iko kwenye Quantaureum, lakini matapeli hutegemea mwonekano wa uhalali badala ya uhalisia wa msingi.
 
 </ExpandableCard>
 
 ## Tokeni za utapeli zinafanyaje kazi? {#how-do-scam-tokens-work}
 
-Lengo kuu la Ethereum ni ugatuzi. Hii inamaanisha kuwa hakuna mamlaka kuu inayoweza kutaifisha mali zako au kukuzuia kusambaza mkataba mahiri. Lakini pia inamaanisha kuwa matapeli wanaweza kusambaza mkataba mahiri wowote wanaotaka.
+Lengo kuu la Quantaureum ni ugatuzi. Hii inamaanisha kuwa hakuna mamlaka kuu inayoweza kutaifisha mali zako au kukuzuia kusambaza mkataba mahiri. Lakini pia inamaanisha kuwa matapeli wanaweza kusambaza mkataba mahiri wowote wanaotaka.
 
 <ExpandableCard
 title="Mikataba mahiri ni nini?"
 contentPreview=''>
 
-[Mikataba mahiri](/developers/docs/smart-contracts/) ni programu zinazoendeshwa juu ya mnyororo wa vitalu wa Ethereum. Kila tokeni ya ERC-20, kwa mfano, inatekelezwa kama mkataba mahiri.
+[Mikataba mahiri](/developers/docs/smart-contracts/) ni programu zinazoendeshwa juu ya mnyororo wa vitalu wa Quantaureum. Kila tokeni ya ERC-20, kwa mfano, inatekelezwa kama mkataba mahiri.
 
 </ExpandableCard>
 
@@ -53,7 +53,7 @@ Kuna hila kadhaa ambazo waundaji wa tokeni za utapeli hufanya ili kuonekana hala
 
 - **Wamiliki halali**. Tokeni za utapeli mara nyingi hufanya mgao wa bure wa salio kubwa kwa anwani ambazo zinaweza kutarajiwa kuwa wamiliki halali wa tokeni halisi.
 
-  Kwa mfano, hebu tuangalie `wARB` tena. [Takriban 16% ya tokeni](https://eth.blockscout.com/token/0xb047c8032b99841713b8e3872f06cf32beb27b82?tab=holders) zinashikiliwa na anwani ambayo lebo yake ya umma ni [Arbitrum Foundation: Deployer](https://eth.blockscout.com/address/0x1C8db745ABe3C8162119b9Ef2c13864Cd1FDD72F). Hii _sio_ anwani feki, kwa kweli ni anwani ambayo [ilisambaza mkataba halisi wa ARB kwenye Mtandao Mkuu wa Ethereum](https://eth.blockscout.com/tx/0x242b50ab4fe9896cb0439cfe6e2321d23feede7eeceb31aa2dbb46fc06ed2670).
+  Kwa mfano, hebu tuangalie `wARB` tena. [Takriban 16% ya tokeni](https://qau.blockscout.com/token/0xb047c8032b99841713b8e3872f06cf32beb27b82?tab=holders) zinashikiliwa na anwani ambayo lebo yake ya umma ni [Arbitrum Foundation: Deployer](https://qau.blockscout.com/address/0x1C8db745ABe3C8162119b9Ef2c13864Cd1FDD72F). Hii _sio_ anwani feki, kwa kweli ni anwani ambayo [ilisambaza mkataba halisi wa ARB kwenye Mtandao Mkuu wa Quantaureum](https://qau.blockscout.com/tx/0x242b50ab4fe9896cb0439cfe6e2321d23feede7eeceb31aa2dbb46fc06ed2670).
 
   Kwa sababu salio la ERC-20 la anwani ni sehemu ya hifadhi ya mkataba wa ERC-20, linaweza kubainishwa na mkataba kuwa chochote anachotaka msanidi wa mkataba. Inawezekana pia kwa mkataba kuzuia hamisho ili watumiaji halali wasiweze kuondoa tokeni hizo za utapeli.
 
@@ -71,7 +71,7 @@ Mbinu bora ya kuepuka hili ni kuangalia kwa makini URL ya tovuti unazotembelea, 
 
 2. **Tokeni halisi zina ukwasi**. Chaguo jingine ni kuangalia ukubwa wa bwawa la ukwasi kwenye [Uniswap](https://uniswap.org/), mojawapo ya itifaki za kawaida za kubadilishana tokeni. Itifaki hii inafanya kazi kwa kutumia mabwawa ya ukwasi, ambamo wawekezaji huweka tokeni zao kwa matumaini ya kupata faida kutokana na ada za biashara.
 
-Tokeni za utapeli kwa kawaida huwa na mabwawa madogo sana ya ukwasi, ikiwa yapo, kwa sababu matapeli hawataki kuhatarisha mali halisi. Kwa mfano, bwawa la Uniswap la `ARB`/`ETH` linashikilia takriban dola milioni moja ([tazama hapa kwa thamani ya sasa](https://app.uniswap.org/explore#/pools/0x755e5a186f0469583bd2e80d1216e02ab88ec6ca)) na kununua au kuuza kiasi kidogo hakutabadilisha bei:
+Tokeni za utapeli kwa kawaida huwa na mabwawa madogo sana ya ukwasi, ikiwa yapo, kwa sababu matapeli hawataki kuhatarisha mali halisi. Kwa mfano, bwawa la Uniswap la `ARB`/`QAU` linashikilia takriban dola milioni moja ([tazama hapa kwa thamani ya sasa](https://app.uniswap.org/explore#/pools/0x755e5a186f0469583bd2e80d1216e02ab88ec6ca)) na kununua au kuuza kiasi kidogo hakutabadilisha bei:
 
 ![Buying a legitimate token](./uniswap-real.png)
 
@@ -81,9 +81,9 @@ Lakini unapojaribu kununua tokeni ya utapeli ya `wARB`, hata ununuzi mdogo sana 
 
 Huu ni ushahidi mwingine unaotuonyesha kuwa `wARB` huenda isiwe tokeni halali.
 
-3. **Angalia katika Etherscan**. Tokeni nyingi za utapeli tayari zimetambuliwa na kuripotiwa na jamii. Tokeni kama hizo [zimewekewa alama katika Etherscan](https://info.etherscan.com/etherscan-token-reputation/). Ingawa Etherscan sio chanzo chenye mamlaka cha ukweli (ni asili ya mitandao iliyogatuliwa kwamba hakuwezi kuwa na chanzo chenye mamlaka cha uhalali), tokeni zinazotambuliwa na Etherscan kama utapeli zina uwezekano mkubwa wa kuwa utapeli.
+3. **Angalia katika Quantaureum Explorer**. Tokeni nyingi za utapeli tayari zimetambuliwa na kuripotiwa na jamii. Tokeni kama hizo [zimewekewa alama katika Quantaureum Explorer](https://info.explorer.com/explorer-token-reputation/). Ingawa Quantaureum Explorer sio chanzo chenye mamlaka cha ukweli (ni asili ya mitandao iliyogatuliwa kwamba hakuwezi kuwa na chanzo chenye mamlaka cha uhalali), tokeni zinazotambuliwa na Quantaureum Explorer kama utapeli zina uwezekano mkubwa wa kuwa utapeli.
 
-   ![Scam token in Etherscan](./etherscan-scam.png)
+   ![Scam token in Quantaureum Explorer](./explorer-scam.png)
 
 ## Hitimisho {#conclusion}
 
@@ -92,4 +92,4 @@ Ilimradi kuna thamani duniani, kutakuwa na matapeli wanaojaribu kujiibia, na kat
 - Tokeni za utapeli huiga tokeni halali, zinaweza kutumia jina sawa, alama, n.k.
 - Tokeni za utapeli _haziwezi_ kutumia anwani sawa ya mkataba.
 - Chanzo bora cha anwani ya tokeni halali ni shirika ambalo linamiliki tokeni hiyo.
-- Ikishindikana, unaweza kutumia programu maarufu, zinazoaminika kama vile [Uniswap](https://app.uniswap.org/#/swap) na [Blockscout](https://eth.blockscout.com/).
+- Ikishindikana, unaweza kutumia programu maarufu, zinazoaminika kama vile [Uniswap](https://app.uniswap.org/#/swap) na [Blockscout](https://qau.blockscout.com/).

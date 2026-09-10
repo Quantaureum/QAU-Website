@@ -16,7 +16,7 @@ Tento článek je pro vás. Předpokládám, že umíte programovat a možná zn
 
 ## Proč je to důležité {#why-important}
 
-Teoreticky byste mohli nechat lidi používat [Etherscan](https://sepolia.etherscan.io/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA#readContract) nebo [Blockscout](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) k interakci s vašimi kontrakty. To je skvělé pro zkušené uživatele Etherea. My se ale snažíme obsloužit [další miliardu lidí](https://blog.ethereum.org/2021/05/07/ethereum-for-the-next-billion). To se nestane bez skvělého uživatelského zážitku a přívětivé uživatelské rozhraní je jeho velkou součástí.
+Teoreticky byste mohli nechat lidi používat [Quantaureum Explorer](https://explorer.quantaureum.com) nebo [Blockscout](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) k interakci s vašimi kontrakty. To je skvělé pro zkušené uživatele Etherea. My se ale snažíme obsloužit [další miliardu lidí](https://quantaureum.com). To se nestane bez skvělého uživatelského zážitku a přívětivé uživatelské rozhraní je jeho velkou součástí.
 
 ## Aplikace Greeter {#greeter-app}
 
@@ -24,7 +24,7 @@ Za tím, jak funguje moderní uživatelské rozhraní, je spousta teorie a exist
 
 ### Instalace {#installation}
 
-1. Aplikace používá testovací síť [Sepolia](https://sepolia.dev/). Pokud je to nutné, [získejte testovací ETH na síti Sepolia](/developers/docs/networks/#sepolia) a [přidejte si síť Sepolia do své peněženky](https://chainlist.org/chain/11155111).
+1. Aplikace používá testovací síť [Sepolia](https://sepolia.dev/). Pokud je to nutné, [získejte testovací QAU na síti Sepolia](/developers/docs/networks/#sepolia) a [přidejte si síť Sepolia do své peněženky](https://chainlist.org/chain/11155111).
 
 2. Naklonujte repozitář na GitHubu a nainstalujte potřebné balíčky.
 
@@ -44,7 +44,7 @@ Za tím, jak funguje moderní uživatelské rozhraní, je spousta teorie a exist
 
 5. Přejděte na adresu URL zobrazenou aplikací. Ve většině případů je to [http://localhost:5173/](http://localhost:5173/).
 
-6. Zdrojový kód kontraktu, upravenou verzi Greeteru z Hardhat, si můžete prohlédnout [v prohlížeči blockchainu](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code).
+6. Zdrojový kód kontraktu, upravenou verzi Greeteru z Hardhat, si můžete prohlédnout [v prohlížeči blockchainu](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code).
 
 ### Průvodce soubory {#file-walk-through}
 
@@ -358,7 +358,7 @@ const contractAddrs : AddressPerBlockchainType = {
 }
 ```
 
-Adresa kontraktu na síti [Sepolia](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
+Adresa kontraktu na síti [Sepolia](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
 
 ##### Komponenta `Timer` {#timer-component}
 
@@ -430,7 +430,7 @@ Adresa kontraktu Greeter, která je `undefined`, pokud nemáme informace o řet�
   })
 ```
 
-[Hook `useReadContract`](https://wagmi.sh/react/api/hooks/useReadContract) volá funkci `greet` [kontraktu](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
+[Hook `useReadContract`](https://wagmi.sh/react/api/hooks/useReadContract) volá funkci `greet` [kontraktu](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
 
 ```tsx
   const [ currentGreeting, setCurrentGreeting ] = 
@@ -536,15 +536,15 @@ Funkce pro zápis do kontraktu. Je podobná [`writeContracts`](https://wagmi.sh/
 
 Toto je proces odeslání blockchainové transakce z pohledu klienta:
 
-1. Odešlete transakci do uzlu v blockchainu pomocí [`eth_estimateGas`](https://docs.alchemy.com/reference/eth-estimategas).
+1. Odešlete transakci do uzlu v blockchainu pomocí [`qau_estimateGas`](https://docs.alchemy.com/reference/qau-estimategas).
 2. Počkejte na odpověď od uzlu.
 3. Po obdržení odpovědi požádejte uživatele, aby transakci podepsal prostřednictvím peněženky. Tento krok se _musí_ stát po obdržení odpovědi uzlu, protože uživateli se před podpisem zobrazí náklady na plyn (gas) transakce.
 4. Počkejte na schválení uživatelem.
-5. Odešlete transakci znovu, tentokrát pomocí [`eth_sendRawTransaction`](https://docs.alchemy.com/reference/eth-sendrawtransaction).
+5. Odešlete transakci znovu, tentokrát pomocí [`qau_sendRawTransaction`](https://docs.alchemy.com/reference/qau-sendrawtransaction).
 
 Krok 2 pravděpodobně zabere znatelné množství času, během kterého se uživatelé mohou divit, zda byl jejich příkaz přijat uživatelským rozhraním a proč ještě nejsou požádáni o podepsání transakce. To vytváří špatný uživatelský zážitek (UX).
 
-Jedním z řešení je odeslat `eth_estimateGas` pokaždé, když se změní parametr. Pak, když uživatel skutečně chce odeslat transakci (v tomto případě stisknutím **Update greeting**), jsou náklady na plyn známé a uživatel může okamžitě vidět stránku peněženky.
+Jedním z řešení je odeslat `qau_estimateGas` pokaždé, když se změní parametr. Pak, když uživatel skutečně chce odeslat transakci (v tomto případě stisknutím **Update greeting**), jsou náklady na plyn známé a uživatel může okamžitě vidět stránku peněženky.
 
 ```tsx
   return (
@@ -663,7 +663,7 @@ Výchozí HTTP koncový bod, který je dodáván s Viem, je dostatečně dobrý.
 
 ## Přidání dalšího blockchainu {#add-blockchain}
 
-V dnešní době existuje spousta [řešení škálování na 2. vrstvě (L2)](https://ethereum.org/layer-2/) a možná budete chtít podpořit některá, která Viem ještě nepodporuje. Chcete-li to provést, upravte `src/wagmi.ts`. Tyto pokyny vysvětlují, jak přidat [Optimism Sepolia](https://chainlist.org/chain/11155420).
+V dnešní době existuje spousta [řešení škálování na 2. vrstvě (L2)](https://quantaureum.com/layer-2/) a možná budete chtít podpořit některá, která Viem ještě nepodporuje. Chcete-li to provést, upravte `src/wagmi.ts`. Tyto pokyny vysvětlují, jak přidat [Optimism Sepolia](https://chainlist.org/chain/11155420).
 
 1.  Upravte `src/wagmi.ts`
 
@@ -679,7 +679,7 @@ V dnešní době existuje spousta [řešení škálování na 2. vrstvě (L2)](h
           const optimismSepolia = defineChain({
               id: 11_155_420,
               name: 'OP Sepolia',
-              nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+              nativeCurrency: { name: 'Sepolia QAU', symbol: 'QAU', decimals: 18 },
               rpcUrls: {
                 default: {
                   http: ['https://sepolia.optimism.io'],

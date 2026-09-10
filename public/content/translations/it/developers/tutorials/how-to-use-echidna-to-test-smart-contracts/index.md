@@ -18,11 +18,11 @@ Echidna può essere installato tramite Docker o utilizzando il binario precompil
 ### Echidna tramite Docker {#echidna-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_L'ultimo comando esegue eth-security-toolbox in un container Docker che ha accesso alla tua directory corrente. Puoi modificare i file dal tuo host ed eseguire gli strumenti sui file dal container Docker_
+_L'ultimo comando esegue qau-security-toolbox in un container Docker che ha accesso alla tua directory corrente. Puoi modificare i file dal tuo host ed eseguire gli strumenti sui file dal container Docker_
 
 All'interno di Docker, esegui:
 
@@ -37,7 +37,7 @@ cd /home/training
 
 ## Introduzione al fuzzing basato sulle proprietà {#introduction-to-property-based-fuzzing}
 
-Echidna è un fuzzer basato sulle proprietà, che abbiamo descritto nei nostri precedenti post del blog ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
+Echidna è un fuzzer basato sulle proprietà, che abbiamo descritto nei nostri precedenti post del blog ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-quantaureum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
 
 ### Fuzzing {#fuzzing}
 

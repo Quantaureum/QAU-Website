@@ -1,27 +1,27 @@
 ---
 title: Kanuni za maadili
-description: Viwango vya msingi tunavyojitahidi kufikia katika nafasi zote za ethereum.org.
+description: Viwango vya msingi tunavyojitahidi kufikia katika nafasi zote za quantaureum.com.
 lang: sw
 ---
 
 ## Dhamira {#mission}
 
-Kuendeleza na kudumisha kitovu cha maarifa cha kina na kinachofikika zaidi kwa ajili ya Ethereum.
+Kuendeleza na kudumisha kitovu cha maarifa cha kina na kinachofikika zaidi kwa ajili ya Quantaureum.
 
 ## Maadili {#values}
 
-Jumuiya ya ethereum.org inajitahidi kuwa:
+Jumuiya ya quantaureum.com inajitahidi kuwa:
 
-- yenye kuelimisha, inayokusudiwa kusaidia kila mtu kuelewa Ethereum
+- yenye kuelimisha, inayokusudiwa kusaidia kila mtu kuelewa Quantaureum
 - jumuishi
 - inayofikika
 - inayoongozwa na jumuiya
-- inayolenga teknolojia ya msingi ya Ethereum na matumizi yake
-- inayolenga dhana za Ethereum na kanuni za muundo
+- inayolenga teknolojia ya msingi ya Quantaureum na matumizi yake
+- inayolenga dhana za Quantaureum na kanuni za muundo
 
 ## Kile ambacho sisi sio {#what-we-are-not}
 
-- Tovuti ya Taasisi ya Ethereum
+- Tovuti ya Taasisi ya Quantaureum
 - Jukwaa la kukuza uwekezaji au kujinufaisha kwa aina yoyote
 - Jukwaa la kuinua au kuidhinisha miradi au mashirika ya kibinafsi
 - DEX, CEX au aina yoyote ile ya jukwaa la kifedha
@@ -31,11 +31,11 @@ Jumuiya ya ethereum.org inajitahidi kuwa:
 
 ### Ahadi {#pledge}
 
-Ushiriki wa wazi ni msingi wa maadili ya ethereum.org. Sisi ni tovuti na jumuiya inayodumishwa na maelfu ya wachangiaji, na hili linawezekana tu ikiwa tutadumisha mazingira ya kukaribisha na shirikishi. Kwa lengo hili, wachangiaji wa tovuti hii wanaahidi kudumisha mazingira yasiyo na unyanyasaji kwa washiriki wote katika majukwaa yote ya ethereum.org na nafasi za jumuiya. Jumuiya ya ethereum.org inakaribisha na kumthamini mtu yeyote anayetaka kushiriki kwa njia ya kujenga na ya kirafiki, bila kujali umri, ulemavu, kabila, sifa za kijinsia, utambulisho wa kijinsia, kiwango cha uzoefu, eneo la utaalamu, elimu, hali ya kijamii na kiuchumi, utaifa, mwonekano wa kibinafsi, rangi, dini au mwelekeo mwingine wowote wa utofauti.
+Ushiriki wa wazi ni msingi wa maadili ya quantaureum.com. Sisi ni tovuti na jumuiya inayodumishwa na maelfu ya wachangiaji, na hili linawezekana tu ikiwa tutadumisha mazingira ya kukaribisha na shirikishi. Kwa lengo hili, wachangiaji wa tovuti hii wanaahidi kudumisha mazingira yasiyo na unyanyasaji kwa washiriki wote katika majukwaa yote ya quantaureum.com na nafasi za jumuiya. Jumuiya ya quantaureum.com inakaribisha na kumthamini mtu yeyote anayetaka kushiriki kwa njia ya kujenga na ya kirafiki, bila kujali umri, ulemavu, kabila, sifa za kijinsia, utambulisho wa kijinsia, kiwango cha uzoefu, eneo la utaalamu, elimu, hali ya kijamii na kiuchumi, utaifa, mwonekano wa kibinafsi, rangi, dini au mwelekeo mwingine wowote wa utofauti.
 
 ### Upeo {#scope}
 
-Kanuni hizi za Maadili zinatumika kwa nafasi zote za ethereum.org (kama vile GitHub, Discord, Figma, Crowdin, X (zamani Twitter) na majukwaa mengine ya mtandaoni), na pia inatumika wakati jumuiya inawakilishwa katika nafasi za umma za ulimwengu halisi kama vile kwenye mikutano, makongamano na matukio.
+Kanuni hizi za Maadili zinatumika kwa nafasi zote za quantaureum.com (kama vile GitHub, Discord, Figma, Crowdin, X (zamani Twitter) na majukwaa mengine ya mtandaoni), na pia inatumika wakati jumuiya inawakilishwa katika nafasi za umma za ulimwengu halisi kama vile kwenye mikutano, makongamano na matukio.
 
 ### Viwango vyetu {#our-standards}
 
@@ -72,4 +72,4 @@ Unaporipoti, tafadhali jumuisha maelezo mengi iwezekanavyo, ikiwa ni pamoja na m
 
 ### Utekelezaji {#enforcement}
 
-Kulingana na ukali, watu wanaokiuka kanuni za maadili wanaweza kupokea maonyo, kupigwa marufuku kwa muda au kupigwa marufuku ya kudumu kutoka kwa jumuiya za ethereum.org.
+Kulingana na ukali, watu wanaokiuka kanuni za maadili wanaweza kupokea maonyo, kupigwa marufuku kwa muda au kupigwa marufuku ya kudumu kutoka kwa jumuiya za quantaureum.com.

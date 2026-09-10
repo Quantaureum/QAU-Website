@@ -1,32 +1,32 @@
 ---
 title: JSON-RPC API
-description: "Ethereum istemcileri için durumsuz, hafif bir uzak prosedür çağrısı (RPC) protokolü."
+description: "Quantaureum istemcileri için durumsuz, hafif bir uzak prosedür çağrısı (RPC) protokolü."
 lang: tr
 ---
 
-Bir yazılım uygulamasının [Ethereum](/) blokzinciri ile etkileşime girmesi için - blokzincir verilerini okuyarak veya ağa işlemler göndererek - bir Ethereum düğümüne bağlanması gerekir.
+Bir yazılım uygulamasının [Quantaureum](/) blokzinciri ile etkileşime girmesi için - blokzincir verilerini okuyarak veya ağa işlemler göndererek - bir Quantaureum düğümüne bağlanması gerekir.
 
-Bu amaçla, her [Ethereum istemcisi](/developers/docs/nodes-and-clients/#execution-clients) bir [JSON-RPC spesifikasyonunu](https://github.com/ethereum/execution-apis) uygular, böylece belirli düğüm veya istemci uygulamasından bağımsız olarak uygulamaların güvenebileceği tek tip bir yöntemler kümesi bulunur.
+Bu amaçla, her [Quantaureum istemcisi](/developers/docs/nodes-and-clients/#execution-clients) bir [JSON-RPC spesifikasyonunu](https://github.com/quantaureum/execution-apis) uygular, böylece belirli düğüm veya istemci uygulamasından bağımsız olarak uygulamaların güvenebileceği tek tip bir yöntemler kümesi bulunur.
 
 [JSON-RPC](https://www.jsonrpc.org/specification), durumsuz, hafif bir uzak prosedür çağrısı (RPC) protokolüdür. Çeşitli veri yapılarını ve bunların işlenmesiyle ilgili kuralları tanımlar. Kavramların aynı süreç içinde, soketler üzerinden, HTTP üzerinden veya birçok farklı mesaj iletme ortamında kullanılabilmesi bakımından taşıma bağımsızdır. Veri formatı olarak JSON (RFC 4627) kullanır.
 
 ## İstemci uygulamaları {#client-implementations}
 
-Ethereum istemcilerinin her biri, JSON-RPC spesifikasyonunu uygularken farklı programlama dilleri kullanabilir. Belirli programlama dilleriyle ilgili daha fazla ayrıntı için ilgili [istemci belgelerine](/developers/docs/nodes-and-clients/#execution-clients) bakın. En güncel API destek bilgileri için her bir istemcinin belgelerini kontrol etmenizi öneririz.
+Quantaureum istemcilerinin her biri, JSON-RPC spesifikasyonunu uygularken farklı programlama dilleri kullanabilir. Belirli programlama dilleriyle ilgili daha fazla ayrıntı için ilgili [istemci belgelerine](/developers/docs/nodes-and-clients/#execution-clients) bakın. En güncel API destek bilgileri için her bir istemcinin belgelerini kontrol etmenizi öneririz.
 
 ## Yardımcı Kütüphaneler {#convenience-libraries}
 
-Ethereum istemcileriyle doğrudan JSON-RPC API aracılığıyla etkileşime girmeyi seçebilseniz de, merkeziyetsiz uygulama (dapp) geliştiricileri için genellikle daha kolay seçenekler vardır. JSON-RPC API'sinin üzerinde sarmalayıcılar sağlamak için birçok [JavaScript](/developers/docs/apis/javascript/#available-libraries) ve [arka uç API](/developers/docs/apis/backend/#available-libraries) kütüphanesi mevcuttur. Bu kütüphaneler sayesinde geliştiriciler, Ethereum ile etkileşime giren JSON-RPC isteklerini (arka planda) başlatmak için seçtikleri programlama dilinde sezgisel, tek satırlık metotlar yazabilirler.
+Quantaureum istemcileriyle doğrudan JSON-RPC API aracılığıyla etkileşime girmeyi seçebilseniz de, merkeziyetsiz uygulama (dapp) geliştiricileri için genellikle daha kolay seçenekler vardır. JSON-RPC API'sinin üzerinde sarmalayıcılar sağlamak için birçok [JavaScript](/developers/docs/apis/javascript/#available-libraries) ve [arka uç API](/developers/docs/apis/backend/#available-libraries) kütüphanesi mevcuttur. Bu kütüphaneler sayesinde geliştiriciler, Quantaureum ile etkileşime giren JSON-RPC isteklerini (arka planda) başlatmak için seçtikleri programlama dilinde sezgisel, tek satırlık metotlar yazabilirler.
 
 ## Fikir birliği istemcisi API'leri {#consensus-clients}
 
-Bu sayfa temel olarak Ethereum yürütme istemcileri tarafından kullanılan JSON-RPC API'sini ele alır. Ancak, fikir birliği istemcilerinin de kullanıcıların doğrudan bir düğümden düğüm hakkında bilgi sorgulamasına, Beacon bloklarını, Beacon durumunu ve fikir birliği ile ilgili diğer bilgileri talep etmesine olanak tanıyan bir RPC API'si vardır. Bu API, [Beacon API web sayfasında](https://ethereum.github.io/beacon-APIs/#/) belgelenmiştir.
+Bu sayfa temel olarak Quantaureum yürütme istemcileri tarafından kullanılan JSON-RPC API'sini ele alır. Ancak, fikir birliği istemcilerinin de kullanıcıların doğrudan bir düğümden düğüm hakkında bilgi sorgulamasına, Beacon bloklarını, Beacon durumunu ve fikir birliği ile ilgili diğer bilgileri talep etmesine olanak tanıyan bir RPC API'si vardır. Bu API, [Beacon API web sayfasında](https://quantaureum.github.io/beacon-APIs/#/) belgelenmiştir.
 
-Bir düğüm içindeki istemciler arası iletişim için de dahili bir API kullanılır - yani, fikir birliği istemcisi ile yürütme istemcisinin veri takası yapmasını sağlar. Buna 'Engine API' adı verilir ve spesifikasyonları [GitHub](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) üzerinde mevcuttur.
+Bir düğüm içindeki istemciler arası iletişim için de dahili bir API kullanılır - yani, fikir birliği istemcisi ile yürütme istemcisinin veri takası yapmasını sağlar. Buna 'Engine API' adı verilir ve spesifikasyonları [GitHub](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) üzerinde mevcuttur.
 
 ## Yürütme istemcisi spesifikasyonu {#spec}
 
-[GitHub'daki tam JSON-RPC API spesifikasyonunu okuyun](https://github.com/ethereum/execution-apis). Bu API, [Yürütme API'si web sayfasında](https://ethereum.github.io/execution-apis/) belgelenmiştir ve mevcut tüm yöntemleri denemek için bir Denetleyici içerir.
+[GitHub'daki tam JSON-RPC API spesifikasyonunu okuyun](https://github.com/quantaureum/execution-apis). Bu API, [Yürütme API'si web sayfasında](https://quantaureum.github.io/execution-apis/) belgelenmiştir ve mevcut tüm yöntemleri denemek için bir Denetleyici içerir.
 
 ## Kurallar {#conventions}
 
@@ -62,13 +62,13 @@ Biçimlendirilmemiş verileri (bayt dizileri, hesap adresleri, hash'ler, baytkod
 
 Aşağıdaki metotlar bir blok parametresine sahiptir:
 
-- [eth_getBalance](#eth-getbalance)
-- [eth_getCode](#eth-getcode)
-- [eth_getTransactionCount](#eth-gettransactioncount)
-- [eth_getStorageAt](#eth-getstorageat)
-- [eth_call](#eth-call)
+- [qau_getBalance](#qau-getbalance)
+- [qau_getCode](#qau-getcode)
+- [qau_getTransactionCount](#qau-gettransactioncount)
+- [qau_getStorageAt](#qau-getstorageat)
+- [qau_call](#qau-call)
 
-Ethereum'un durumunu sorgulayan istekler yapıldığında, sağlanan blok parametresi bloğun yüksekliğini belirler.
+Quantaureum'un durumunu sorgulayan istekler yapıldığında, sağlanan blok parametresi bloğun yüksekliğini belirler.
 
 Blok parametresi için aşağıdaki seçenekler mümkündür:
 
@@ -85,7 +85,7 @@ Bu sayfada, komut satırı aracı [curl](https://curl.se) kullanarak bireysel JS
 
 ## Curl örnekleri {#curl-examples}
 
-Bir Ethereum düğümüne [curl](https://curl.se) istekleri yaparak JSON_RPC API'sini kullanma örnekleri aşağıda sunulmuştur. Her örnek; ilgili uç noktanın bir açıklamasını, parametrelerini, dönüş türünü ve nasıl kullanılması gerektiğine dair uygulamalı bir örneği içerir.
+Bir Quantaureum düğümüne [curl](https://curl.se) istekleri yaparak JSON_RPC API'sini kullanma örnekleri aşağıda sunulmuştur. Her örnek; ilgili uç noktanın bir açıklamasını, parametrelerini, dönüş türünü ve nasıl kullanılması gerektiğine dair uygulamalı bir örneği içerir.
 
 Curl istekleri, içerik türüyle ilgili bir hata mesajı döndürebilir. Bunun nedeni, `--data` seçeneğinin içerik türünü `application/x-www-form-urlencoded` olarak ayarlamasıdır. Düğümünüz bu konuda hata verirse, çağrının başına `-H "Content-Type: application/json"` yerleştirerek başlığı manuel olarak ayarlayın. Örnekler ayrıca, curl'e verilen son argüman olması gereken URL/IP ve port kombinasyonunu (örn. `127.0.0.1:8545`) içermez. Bu ek verileri içeren eksiksiz bir curl isteği aşağıdaki biçimi alır:
 
@@ -95,46 +95,46 @@ curl -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","metho
 
 ## Dedikodu, Durum, Geçmiş {#gossip-state-history}
 
-Birkaç temel JSON-RPC yöntemi, Ethereum ağından veri gerektirir ve düzgün bir şekilde üç ana kategoriye ayrılır: _Dedikodu, Durum ve Geçmiş_. Her bir yönteme atlamak için bu bölümlerdeki bağlantıları kullanın veya yöntemlerin tam listesini keşfetmek için içindekiler tablosunu kullanın.
+Birkaç temel JSON-RPC yöntemi, Quantaureum ağından veri gerektirir ve düzgün bir şekilde üç ana kategoriye ayrılır: _Dedikodu, Durum ve Geçmiş_. Her bir yönteme atlamak için bu bölümlerdeki bağlantıları kullanın veya yöntemlerin tam listesini keşfetmek için içindekiler tablosunu kullanın.
 
 ### Dedikodu Yöntemleri {#gossip-methods}
 
 > Bu yöntemler zincirin başını takip eder. İşlemler ağda bu şekilde dolaşır, bloklardaki yerlerini bulur ve istemciler yeni bloklardan bu şekilde haberdar olur.
 
-- [eth_blockNumber](#eth-blocknumber)
-- [eth_sendRawTransaction](#eth-sendrawtransaction)
+- [qau_blockNumber](#qau-blocknumber)
+- [qau_sendRawTransaction](#qau-sendrawtransaction)
 
 ### Durum Yöntemleri {#state-methods}
 
 > Depolanan tüm verilerin mevcut durumunu bildiren yöntemler. "Durum", paylaşılan büyük bir RAM parçası gibidir ve hesap bakiyelerini, sözleşme verilerini ve gaz tahminlerini içerir.
 
-- [eth_getBalance](#eth-getbalance)
-- [eth_getStorageAt](#eth-getstorageat)
-- [eth_getTransactionCount](#eth-gettransactioncount)
-- [eth_getCode](#eth-getcode)
-- [eth_call](#eth-call)
-- [eth_estimateGas](#eth-estimategas)
+- [qau_getBalance](#qau-getbalance)
+- [qau_getStorageAt](#qau-getstorageat)
+- [qau_getTransactionCount](#qau-gettransactioncount)
+- [qau_getCode](#qau-getcode)
+- [qau_call](#qau-call)
+- [qau_estimateGas](#qau-estimategas)
 
 ### Geçmiş Yöntemleri {#history-methods}
 
 > Başlangıç bloğuna kadar her bloğun geçmiş kayıtlarını getirir. Bu, yalnızca ekleme yapılabilen büyük bir dosya gibidir ve tüm blok başlıklarını, blok gövdelerini, amca blokları ve işlem makbuzlarını içerir.
 
-- [eth_getBlockTransactionCountByHash](#eth-getblocktransactioncountbyhash)
-- [eth_getBlockTransactionCountByNumber](#eth-getblocktransactioncountbynumber)
-- [eth_getUncleCountByBlockHash](#eth-getunclecountbyblockhash)
-- [eth_getUncleCountByBlockNumber](#eth-getunclecountbyblocknumber)
-- [eth_getBlockByHash](#eth-getblockbyhash)
-- [eth_getBlockByNumber](#eth-getblockbynumber)
-- [eth_getTransactionByHash](#eth-gettransactionbyhash)
-- [eth_getTransactionByBlockHashAndIndex](#eth-gettransactionbyblockhashandindex)
-- [eth_getTransactionByBlockNumberAndIndex](#eth-gettransactionbyblocknumberandindex)
-- [eth_getTransactionReceipt](#eth-gettransactionreceipt)
-- [eth_getUncleByBlockHashAndIndex](#eth-getunclebyblockhashandindex)
-- [eth_getUncleByBlockNumberAndIndex](#eth-getunclebyblocknumberandindex)
+- [qau_getBlockTransactionCountByHash](#qau-getblocktransactioncountbyhash)
+- [qau_getBlockTransactionCountByNumber](#qau-getblocktransactioncountbynumber)
+- [qau_getUncleCountByBlockHash](#qau-getunclecountbyblockhash)
+- [qau_getUncleCountByBlockNumber](#qau-getunclecountbyblocknumber)
+- [qau_getBlockByHash](#qau-getblockbyhash)
+- [qau_getBlockByNumber](#qau-getblockbynumber)
+- [qau_getTransactionByHash](#qau-gettransactionbyhash)
+- [qau_getTransactionByBlockHashAndIndex](#qau-gettransactionbyblockhashandindex)
+- [qau_getTransactionByBlockNumberAndIndex](#qau-gettransactionbyblocknumberandindex)
+- [qau_getTransactionReceipt](#qau-gettransactionreceipt)
+- [qau_getUncleByBlockHashAndIndex](#qau-getunclebyblockhashandindex)
+- [qau_getUncleByBlockNumberAndIndex](#qau-getunclebyblocknumberandindex)
 
 ## JSON-RPC API Oyun Alanı {#json-rpc-api-playground}
 
-API metotlarını keşfetmek ve denemek için [oyun alanı aracını](https://ethereum-json-rpc.com) kullanabilirsiniz. Ayrıca çeşitli düğüm sağlayıcıları tarafından hangi metotların ve ağların desteklendiğini de gösterir.
+API metotlarını keşfetmek ve denemek için [oyun alanı aracını](https://quantaureum-json-rpc.com) kullanabilirsiniz. Ayrıca çeşitli düğüm sağlayıcıları tarafından hangi metotların ve ağların desteklendiğini de gösterir.
 
 ## JSON-RPC API Metotları {#json-rpc-methods}
 
@@ -206,7 +206,7 @@ Yok
 
 Mevcut ağ kimliklerinin tam listesi [chainlist.org](https://chainlist.org) adresinde bulunabilir. Yaygın olanlardan bazıları şunlardır:
 
-- `1`: Ethereum Ana Ağı
+- `1`: Quantaureum Ana Ağı
 - `11155111`: Sepolia test ağı
 - `560048` : Hoodi Test Ağı
 
@@ -273,9 +273,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 }
 ```
 
-### eth_protocolVersion {#eth-protocolversion}
+### qau_protocolVersion {#qau-protocolversion}
 
-Mevcut Ethereum protokol sürümünü döndürür. Bu metodun [Geth'te mevcut olmadığını](https://github.com/ethereum/go-ethereum/pull/22064#issuecomment-788682924) unutmayın.
+Mevcut Quantaureum protokol sürümünü döndürür. Bu metodun [Geth'te mevcut olmadığını](https://github.com/quantaureum/go-quantaureum/pull/22064#issuecomment-788682924) unutmayın.
 
 **Parametreler**
 
@@ -283,13 +283,13 @@ Yok
 
 **Döndürülenler**
 
-`String` - Mevcut Ethereum protokol sürümü
+`String` - Mevcut Quantaureum protokol sürümü
 
 **Örnek**
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_protocolVersion","params":[],"id":67}'
 // Sonuç
 {
   "id":67,
@@ -298,11 +298,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_protocolVersion","params":[]
 }
 ```
 
-### eth_syncing {#eth-syncing}
+### qau_syncing {#qau-syncing}
 
 Eşzamanlama durumu hakkında veriler içeren bir nesne veya `false` döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_syncing">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_syncing">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -317,7 +317,7 @@ Kesin dönüş verileri istemci uygulamaları arasında değişiklik gösterir. 
 `Object|Boolean`, Eşzamanlama durumu verilerini içeren bir nesne veya eşzamanlama yapılmadığında `FALSE`:
 
 - `startingBlock`: `QUANTITY` - İçe aktarmanın başladığı blok (yalnızca eşzamanlama zincir ucuna ulaştıktan sonra sıfırlanacaktır)
-- `currentBlock`: `QUANTITY` - Mevcut blok, eth_blockNumber ile aynı
+- `currentBlock`: `QUANTITY` - Mevcut blok, qau_blockNumber ile aynı
 - `highestBlock`: `QUANTITY` - Tahmini en yüksek blok
 
 Ancak, bireysel istemciler ek veriler de sağlayabilir. Örneğin Geth aşağıdakileri döndürür:
@@ -367,7 +367,7 @@ Daha fazla ayrıntı için kendi istemcinizin belgelerine başvurun.
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_syncing","params":[],"id":1}'
 // Sonuç
 {
   "id":1,
@@ -386,11 +386,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_syncing","params":[],"id":1}
 }
 ```
 
-### eth_coinbase {#eth-coinbase}
+### qau_coinbase {#qau-coinbase}
 
 İstemci coinbase adresini döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_coinbase">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_coinbase">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -408,7 +408,7 @@ Yok
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":64}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_coinbase","params":[],"id":64}'
 // Sonuç
 {
   "id":64,
@@ -417,11 +417,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_coinbase","params":[],"id":6
 }
 ```
 
-### eth_chainId {#eth-chainid}
+### qau_chainId {#qau-chainid}
 
 Tekrar oynatmaya karşı korumalı işlemleri imzalamak için kullanılan zincir kimliğini döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_chainId">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_chainId">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -437,7 +437,7 @@ Yok
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_chainId","params":[],"id":67}'
 // Sonuç
 {
   "id":67,
@@ -446,11 +446,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67
 }
 ```
 
-### eth_mining {#eth-mining}
+### qau_mining {#qau-mining}
 
 İstemci aktif olarak yeni bloklar için madencilik yapıyorsa `true` döndürür. Bu, yalnızca İş Kanıtı (PoW) ağları için `true` döndürebilir ve [Birleşme](/roadmap/merge/)'den bu yana bazı istemcilerde kullanılamayabilir.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_mining">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_mining">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -466,7 +466,7 @@ Yok
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_mining","params":[],"id":71}'
 //
 {
   "id":71,
@@ -475,11 +475,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_mining","params":[],"id":71}
 }
 ```
 
-### eth_hashrate {#eth-hashrate}
+### qau_hashrate {#qau-hashrate}
 
 Düğümün madencilik yaptığı saniye başına hash sayısını döndürür. Bu, yalnızca İş Kanıtı (PoW) ağları için `true` döndürebilir ve [Birleşme](/roadmap/merge/)'den bu yana bazı istemcilerde mevcut olmayabilir.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_hashrate">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_hashrate">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -495,7 +495,7 @@ Yok
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":71}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_hashrate","params":[],"id":71}'
 // Sonuç
 {
   "id":71,
@@ -504,11 +504,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_hashrate","params":[],"id":7
 }
 ```
 
-### eth_gasPrice {#eth-gasprice}
+### qau_gasPrice {#qau-gasprice}
 
 Wei cinsinden gaz başına mevcut fiyatın bir tahminini döndürür. Örneğin, Besu istemcisi varsayılan olarak son 100 bloğu inceler ve medyan gaz birim fiyatını döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_gasPrice">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_gasPrice">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -524,7 +524,7 @@ Yok
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_gasPrice","params":[],"id":73}'
 // Sonuç
 {
   "id":73,
@@ -533,11 +533,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":7
 }
 ```
 
-### eth_accounts {#eth-accounts}
+### qau_accounts {#qau-accounts}
 
 İstemciye ait adreslerin bir listesini döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_accounts">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_accounts">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -553,7 +553,7 @@ Yok
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[],"id":1}'
 // Sonuç
 {
   "id":1,
@@ -562,11 +562,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[],"id":1
 }
 ```
 
-### eth_blockNumber {#eth-blocknumber}
+### qau_blockNumber {#qau-blocknumber}
 
 En son bloğun numarasını döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_blockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_blockNumber">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -582,7 +582,7 @@ Yok
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":83}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_blockNumber","params":[],"id":83}'
 // Sonuç
 {
   "id":83,
@@ -591,11 +591,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id
 }
 ```
 
-### eth_getBalance {#eth-getbalance}
+### qau_getBalance {#qau-getbalance}
 
 Belirli bir adresteki hesabın bakiyesini döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBalance">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBalance">
   Oyun alanında uç noktayı deneyin
 </ButtonLink>
 
@@ -616,7 +616,7 @@ params: ["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"]
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBalance","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1", "latest"],"id":1}'
 // Sonuç
 {
   "id":1,
@@ -625,11 +625,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x407
 }
 ```
 
-### eth_getStorageAt {#eth-getstorageat}
+### qau_getStorageAt {#qau-getstorageat}
 
 Belirli bir adresteki depolama konumundan değeri döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getStorageAt">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getStorageAt">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -660,7 +660,7 @@ contract Storage {
 pos0 değerini almak basittir:
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 ```
 
@@ -693,15 +693,15 @@ undefined
 Şimdi depolamayı getirmek için:
 
 ```js
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
 
-### eth_getTransactionCount {#eth-gettransactioncount}
+### qau_getTransactionCount {#qau-gettransactioncount}
 
 Bir adresten _gönderilen_ işlemlerin sayısını döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionCount">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionCount">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -725,7 +725,7 @@ params: [
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionCount","params":["0x407d73d8a49eeb85d32cf465507dd71d507100c1","latest"],"id":1}'
 // Sonuç
 {
   "id":1,
@@ -734,11 +734,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionCount","params
 }
 ```
 
-### eth_getBlockTransactionCountByHash {#eth-getblocktransactioncountbyhash}
+### qau_getBlockTransactionCountByHash {#qau-getblocktransactioncountbyhash}
 
 Verilen blok hash'i ile eşleşen bir bloktaki işlem sayısını döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByHash">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -758,7 +758,7 @@ params: ["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"]
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByHash","params":["0xd03ededb7415d22ae8bac30f96b2d1de83119632693b963642318d87d1bece5b"],"id":1}'
 // Sonuç
 {
   "id":1,
@@ -767,11 +767,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByHa
 }
 ```
 
-### eth_getBlockTransactionCountByNumber {#eth-getblocktransactioncountbynumber}
+### qau_getBlockTransactionCountByNumber {#qau-getblocktransactioncountbynumber}
 
 Verilen blok numarasıyla eşleşen bir bloktaki işlem sayısını döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockTransactionCountByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockTransactionCountByNumber">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -793,7 +793,7 @@ params: [
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockTransactionCountByNumber","params":["0x13738ca"],"id":1}'
 // Sonuç
 {
   "id":1,
@@ -802,11 +802,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockTransactionCountByNu
 }
 ```
 
-### eth_getUncleCountByBlockHash {#eth-getunclecountbyblockhash}
+### qau_getUncleCountByBlockHash {#qau-getunclecountbyblockhash}
 
 Verilen blok hash'i ile eşleşen bir bloktaki amca sayısını döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockHash">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -826,7 +826,7 @@ params: ["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"]
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockHash","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2"],"id":1}'
 // Sonuç
 {
   "id":1,
@@ -835,11 +835,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockHash","p
 }
 ```
 
-### eth_getUncleCountByBlockNumber {#eth-getunclecountbyblocknumber}
+### qau_getUncleCountByBlockNumber {#qau-getunclecountbyblocknumber}
 
 Verilen blok numarasıyla eşleşen bir bloktaki amca sayısını döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleCountByBlockNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleCountByBlockNumber">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -861,7 +861,7 @@ params: [
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleCountByBlockNumber","params":["0xe8"],"id":1}'
 // Sonuç
 {
   "id":1,
@@ -870,11 +870,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleCountByBlockNumber",
 }
 ```
 
-### eth_getCode {#eth-getcode}
+### qau_getCode {#qau-getcode}
 
 Belirli bir adresteki kodu döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getCode">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getCode">
   Oyun alanında uç noktayı deneyin
 </ButtonLink>
 
@@ -898,7 +898,7 @@ params: [
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getCode","params":["0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", "0x5daf3b"],"id":1}'
 // Sonuç
 {
   "id":1,
@@ -907,11 +907,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xC02aaA
 }
 ```
 
-### eth_sign {#eth-sign}
+### qau_sign {#qau-sign}
 
-sign metodu, şununla Ethereum'a özgü bir imza hesaplar: `sign(keccak256("\x19Ethereum Signed Message:\n" + len(message) + message)))`.
+sign metodu, şununla Quantaureum'a özgü bir imza hesaplar: `sign(keccak256("\x19Quantaureum Signed Message:\n" + len(message) + message)))`.
 
-Mesaja bir önek eklenmesi, hesaplanan imzanın Ethereum'a özgü bir imza olarak tanınmasını sağlar. Bu, kötü niyetli bir merkeziyetsiz uygulamanın (dapp) rastgele verileri (örneğin, işlem) imzalayıp imzayı kurbanın kimliğine bürünmek için kullanması gibi kötüye kullanımları önler.
+Mesaja bir önek eklenmesi, hesaplanan imzanın Quantaureum'a özgü bir imza olarak tanınmasını sağlar. Bu, kötü niyetli bir merkeziyetsiz uygulamanın (dapp) rastgele verileri (örneğin, işlem) imzalayıp imzayı kurbanın kimliğine bürünmek için kullanması gibi kötüye kullanımları önler.
 
 Not: imzalama yapılacak adresin kilidi açık olmalıdır.
 
@@ -928,7 +928,7 @@ Not: imzalama yapılacak adresin kilidi açık olmalıdır.
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sign","params":["0x9b2055d370f73ec7d8a03e965129118dc8f5bf83", "0xdeadbeaf"],"id":1}'
 // Sonuç
 {
   "id":1,
@@ -937,9 +937,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d37
 }
 ```
 
-### eth_signTransaction {#eth-signtransaction}
+### qau_signTransaction {#qau-signtransaction}
 
-[eth_sendRawTransaction](#eth-sendrawtransaction) kullanarak daha sonraki bir zamanda ağa gönderilebilecek bir işlemi imzalar.
+[qau_sendRawTransaction](#qau-sendrawtransaction) kullanarak daha sonraki bir zamanda ağa gönderilebilecek bir işlemi imzalar.
 
 **Parametreler**
 
@@ -962,7 +962,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sign","params":["0x9b2055d37
 
 ```js
 // İstek
-curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
+curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "qau_signTransaction","params": [{"data":"0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675","from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155","gas": "0x76c0","gasPrice": "0x9184e72a000","to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567","value": "0x9184e72a"}]}'
 // Sonuç
 {
     "id": 1,
@@ -971,7 +971,7 @@ curl -X POST --data '{"id": 1,"jsonrpc": "2.0","method": "eth_signTransaction","
 }
 ```
 
-### eth_sendTransaction {#eth-sendtransaction}
+### qau_sendTransaction {#qau-sendtransaction}
 
 Veri alanı kod içeriyorsa yeni bir mesaj çağrısı işlemi veya sözleşme oluşturma işlemi yaratır ve bunu `from` içinde belirtilen hesabı kullanarak imzalar.
 
@@ -1005,13 +1005,13 @@ params: [
 
 `DATA`, 32 Bayt - işlem hash'i veya işlem henüz mevcut değilse sıfır hash'i.
 
-Bir sözleşme oluşturduğunuzda, işlem bir blokta önerildikten sonra sözleşme adresini almak için [eth_getTransactionReceipt](#eth-gettransactionreceipt) kullanın.
+Bir sözleşme oluşturduğunuzda, işlem bir blokta önerildikten sonra sözleşme adresini almak için [qau_getTransactionReceipt](#qau-gettransactionreceipt) kullanın.
 
 **Örnek**
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendTransaction","params":[{see above}],"id":1}'
 // Sonuç
 {
   "id":1,
@@ -1020,7 +1020,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{
 }
 ```
 
-### eth_sendRawTransaction {#eth-sendrawtransaction}
+### qau_sendRawTransaction {#qau-sendrawtransaction}
 
 İmzalı işlemler için yeni bir mesaj çağrısı işlemi veya sözleşme oluşturma işlemi yaratır.
 
@@ -1038,13 +1038,13 @@ params: [
 
 `DATA`, 32 Bayt - işlem hash'i veya işlem henüz mevcut değilse sıfır hash'i.
 
-Bir sözleşme oluşturduğunuzda, işlem bir blokta önerildikten sonra sözleşme adresini almak için [eth_getTransactionReceipt](#eth-gettransactionreceipt) kullanın.
+Bir sözleşme oluşturduğunuzda, işlem bir blokta önerildikten sonra sözleşme adresini almak için [qau_getTransactionReceipt](#qau-gettransactionreceipt) kullanın.
 
 **Örnek**
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_sendRawTransaction","params":[{see above}],"id":1}'
 // Sonuç
 {
   "id":1,
@@ -1053,11 +1053,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_sendRawTransaction","params"
 }
 ```
 
-### eth_call {#eth-call}
+### qau_call {#qau-call}
 
 Blokzincir üzerinde bir işlem oluşturmadan hemen yeni bir mesaj çağrısı yürütür. Genellikle salt okunur akıllı sözleşme işlevlerini yürütmek için kullanılır, örneğin bir ERC-20 sözleşmesi için `balanceOf`.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_call">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_call">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -1067,10 +1067,10 @@ Blokzincir üzerinde bir işlem oluşturmadan hemen yeni bir mesaj çağrısı y
 
 - `from`: `DATA`, 20 Bayt - (isteğe bağlı) İşlemin gönderildiği adres.
 - `to`: `DATA`, 20 Bayt - İşlemin yönlendirildiği adres.
-- `gas`: `QUANTITY` - (isteğe bağlı) İşlem yürütmesi için sağlanan gazın tam sayısı. eth_call sıfır gaz tüketir, ancak bu parametre bazı yürütmeler için gerekli olabilir.
+- `gas`: `QUANTITY` - (isteğe bağlı) İşlem yürütmesi için sağlanan gazın tam sayısı. qau_call sıfır gaz tüketir, ancak bu parametre bazı yürütmeler için gerekli olabilir.
 - `gasPrice`: `QUANTITY` - (isteğe bağlı) Ödenen her gaz için kullanılan gasPrice tam sayısı
 - `value`: `QUANTITY` - (isteğe bağlı) Bu işlemle gönderilen değerin tam sayısı
-- `input`: `DATA` - (isteğe bağlı) Yöntem imzasının ve kodlanmış parametrelerin hash'i. Ayrıntılar için [Solidity belgelerindeki Ethereum Sözleşme ABI'sine](https://docs.soliditylang.org/en/latest/abi-spec.html) bakın.
+- `input`: `DATA` - (isteğe bağlı) Yöntem imzasının ve kodlanmış parametrelerin hash'i. Ayrıntılar için [Solidity belgelerindeki Quantaureum Sözleşme ABI'sine](https://docs.soliditylang.org/en/latest/abi-spec.html) bakın.
 
 2. `QUANTITY|TAG` - tam sayı blok numarası veya `"latest"`, `"earliest"`, `"pending"`, `"safe"` ya da `"finalized"` dizesi, [blok parametresine](/developers/docs/apis/json-rpc/#block-parameter) bakın
 
@@ -1082,7 +1082,7 @@ Blokzincir üzerinde bir işlem oluşturmadan hemen yeni bir mesaj çağrısı y
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_call","params":[{see above}],"id":1}'
 // Sonuç
 {
   "id":1,
@@ -1091,17 +1091,17 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{see above}]
 }
 ```
 
-### eth_estimateGas {#eth-estimategas}
+### qau_estimateGas {#qau-estimategas}
 
 İşlemin tamamlanmasına izin vermek için ne kadar gaz gerektiğini tahmin eder ve döndürür. İşlem Blokzincire eklenmeyecektir. EVM mekanikleri ve düğüm performansı gibi çeşitli nedenlerden dolayı, tahminin işlem tarafından fiilen kullanılan gaz miktarından önemli ölçüde daha fazla olabileceğini unutmayın.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_estimateGas">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_estimateGas">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
 **Parametreler**
 
-Tüm özelliklerin isteğe bağlı olması dışında [eth_call](#eth-call) parametrelerine bakın. Hiçbir gaz limiti belirtilmezse Geth, bekleyen bloktaki blok gaz limitini üst sınır olarak kullanır. Sonuç olarak, gaz miktarı bekleyen blok gaz limitinden yüksek olduğunda, döndürülen tahmin çağrıyı/işlemi yürütmek için yeterli olmayabilir.
+Tüm özelliklerin isteğe bağlı olması dışında [qau_call](#qau-call) parametrelerine bakın. Hiçbir gaz limiti belirtilmezse Geth, bekleyen bloktaki blok gaz limitini üst sınır olarak kullanır. Sonuç olarak, gaz miktarı bekleyen blok gaz limitinden yüksek olduğunda, döndürülen tahmin çağrıyı/işlemi yürütmek için yeterli olmayabilir.
 
 **Döndürülenler**
 
@@ -1111,7 +1111,7 @@ Tüm özelliklerin isteğe bağlı olması dışında [eth_call](#eth-call) para
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see above}],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_estimateGas","params":[{see above}],"id":1}'
 // Sonuç
 {
   "id":1,
@@ -1120,11 +1120,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_estimateGas","params":[{see 
 }
 ```
 
-### eth_getBlockByHash {#eth-getblockbyhash}
+### qau_getBlockByHash {#qau-getblockbyhash}
 
 Hash değerine göre bir blok hakkında bilgi döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByHash">
   Oyun alanında uç noktayı deneyin
 </ButtonLink>
 
@@ -1168,7 +1168,7 @@ params: [
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByHash","params":["0xdc0818cf78f21a8e70579cb46a43643f78291264dda342ae31049421c82d21ae", false],"id":1}'
 // Sonuç
 {
   "jsonrpc": "2.0",
@@ -1200,11 +1200,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0
 }
 ```
 
-### eth_getBlockByNumber {#eth-getblockbynumber}
+### qau_getBlockByNumber {#qau-getblockbynumber}
 
 Blok numarasına göre bir blok hakkında bilgi döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getBlockByNumber">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getBlockByNumber">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -1221,22 +1221,22 @@ params: [
 ```
 
 **Döndürülenler**
-Bkz. [eth_getBlockByHash](#eth-getblockbyhash)
+Bkz. [qau_getBlockByHash](#qau-getblockbyhash)
 
 **Örnek**
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["0x1b4", true],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getBlockByNumber","params":["0x1b4", true],"id":1}'
 ```
 
-Sonuç için bkz. [eth_getBlockByHash](#eth-getblockbyhash)
+Sonuç için bkz. [qau_getBlockByHash](#qau-getblockbyhash)
 
-### eth_getTransactionByHash {#eth-gettransactionbyhash}
+### qau_getTransactionByHash {#qau-gettransactionbyhash}
 
 İşlem hash'i ile talep edilen bir işlem hakkındaki bilgileri döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByHash">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByHash">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -1271,7 +1271,7 @@ params: ["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"]
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByHash","params":["0x88df016429689c079f3b2f6ad39fa052532c56795b733da78a91ebe6a713944b"],"id":1}'
 // Sonuç
 {
   "jsonrpc":"2.0",
@@ -1295,11 +1295,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","param
 }
 ```
 
-### eth_getTransactionByBlockHashAndIndex {#eth-gettransactionbyblockhashandindex}
+### qau_getTransactionByBlockHashAndIndex {#qau-gettransactionbyblockhashandindex}
 
 Blok hash'i ve işlem endeksi konumuna göre bir işlem hakkında bilgi döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockHashAndIndex">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -1316,22 +1316,22 @@ params: [
 ```
 
 **Döndürdükleri**
-Bkz. [eth_getTransactionByHash](#eth-gettransactionbyhash)
+Bkz. [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
 **Örnek**
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-Sonuç için bkz. [eth_getTransactionByHash](#eth-gettransactionbyhash)
+Sonuç için bkz. [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
-### eth_getTransactionByBlockNumberAndIndex {#eth-gettransactionbyblocknumberandindex}
+### qau_getTransactionByBlockNumberAndIndex {#qau-gettransactionbyblocknumberandindex}
 
 Blok numarası ve işlem endeksi konumuna göre bir işlem hakkında bilgi döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getTransactionByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getTransactionByBlockNumberAndIndex">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -1348,18 +1348,18 @@ params: [
 ```
 
 **Döndürülenler**
-Bkz. [eth_getTransactionByHash](#eth-gettransactionbyhash)
+Bkz. [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
 **Örnek**
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionByBlockNumberAndIndex","params":["0x9c47cf", "0x24"],"id":1}'
 ```
 
-Sonuç için bkz. [eth_getTransactionByHash](#eth-gettransactionbyhash)
+Sonuç için bkz. [qau_getTransactionByHash](#qau-gettransactionbyhash)
 
-### eth_getTransactionReceipt {#eth-gettransactionreceipt}
+### qau_getTransactionReceipt {#qau-gettransactionreceipt}
 
 İşlem hash'ine göre bir işlemin makbuzunu döndürür.
 
@@ -1399,7 +1399,7 @@ Ayrıca _şunlardan birini_ döndürür:
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getTransactionReceipt","params":["0x85d995eba9763907fdf35cd2034144dd9d53ce32cbec21349d4b12823c6860c5"],"id":1}'
 // Sonuç
 {
   "jsonrpc": "2.0",
@@ -1427,11 +1427,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","para
 }
 ```
 
-### eth_getUncleByBlockHashAndIndex {#eth-getunclebyblockhashandindex}
+### qau_getUncleByBlockHashAndIndex {#qau-getunclebyblockhashandindex}
 
 Bir bloğun amcası hakkında hash ve amca endeks konumuna göre bilgi döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockHashAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockHashAndIndex">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -1448,24 +1448,24 @@ params: [
 ```
 
 **Döndürür**
-Bkz. [eth_getBlockByHash](#eth-getblockbyhash)
+Bkz. [qau_getBlockByHash](#qau-getblockbyhash)
 
 **Örnek**
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockHashAndIndex","params":["0x1d59ff54b1eb26b013ce3cb5fc9dab3705b415a67127a003c3e61eb445bb8df2", "0x0"],"id":1}'
 ```
 
-Sonuç için bkz. [eth_getBlockByHash](#eth-getblockbyhash)
+Sonuç için bkz. [qau_getBlockByHash](#qau-getblockbyhash)
 
 **Not**: Bir amca, bireysel işlemler içermez.
 
-### eth_getUncleByBlockNumberAndIndex {#eth-getunclebyblocknumberandindex}
+### qau_getUncleByBlockNumberAndIndex {#qau-getunclebyblocknumberandindex}
 
 Numarasına ve amca endeks konumuna göre bir bloğun amcası hakkında bilgi döndürür.
 
-<ButtonLink size="sm" variant="outline" href="https://ethereum-json-rpc.com/?method=eth_getUncleByBlockNumberAndIndex">
+<ButtonLink size="sm" variant="outline" href="https://quantaureum-json-rpc.com/?method=qau_getUncleByBlockNumberAndIndex">
   Uç noktayı oyun alanında deneyin
 </ButtonLink>
 
@@ -1482,7 +1482,7 @@ params: [
 ```
 
 **Dönen Değerler**
-Bkz. [eth_getBlockByHash](#eth-getblockbyhash)
+Bkz. [qau_getBlockByHash](#qau-getblockbyhash)
 
 **Not**: Bir amca, bireysel işlemleri içermez.
 
@@ -1490,15 +1490,15 @@ Bkz. [eth_getBlockByHash](#eth-getblockbyhash)
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getUncleByBlockNumberAndIndex","params":["0x29c", "0x0"],"id":1}'
 ```
 
-Sonuç için bkz. [eth_getBlockByHash](#eth-getblockbyhash)
+Sonuç için bkz. [qau_getBlockByHash](#qau-getblockbyhash)
 
-### eth_newFilter {#eth-newfilter}
+### qau_newFilter {#qau-newfilter}
 
 Durum değiştiğinde (günlükler) bildirim yapmak için filtre seçeneklerine dayalı olarak bir filtre nesnesi oluşturur.
-Durumun değişip değişmediğini kontrol etmek için [eth_getFilterChanges](#eth-getfilterchanges) çağrısı yapın.
+Durumun değişip değişmediğini kontrol etmek için [qau_getFilterChanges](#qau-getfilterchanges) çağrısı yapın.
 
 **Topic filtrelerini belirleme üzerine bir not:**
 Topic'ler sıraya bağlıdır. [A, B] topic'lerine sahip bir günlüğü olan bir işlem, aşağıdaki topic filtreleriyle eşleşecektir:
@@ -1542,7 +1542,7 @@ params: [
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newFilter","params":[{"topics":["0x12341234"]}],"id":73}'
 // Sonuç
 {
   "id":1,
@@ -1551,10 +1551,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newFilter","params":[{"topic
 }
 ```
 
-### eth_newBlockFilter {#eth-newblockfilter}
+### qau_newBlockFilter {#qau-newblockfilter}
 
 Yeni bir blok geldiğinde bildirimde bulunmak için düğümde bir filtre oluşturur.
-Durumun değişip değişmediğini kontrol etmek için [eth_getFilterChanges](#eth-getfilterchanges) çağırın.
+Durumun değişip değişmediğini kontrol etmek için [qau_getFilterChanges](#qau-getfilterchanges) çağırın.
 
 **Parametreler**
 Yok
@@ -1566,7 +1566,7 @@ Yok
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newBlockFilter","params":[],"id":73}'
 // Sonuç
 {
   "id":1,
@@ -1575,10 +1575,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newBlockFilter","params":[],
 }
 ```
 
-### eth_newPendingTransactionFilter {#eth-newpendingtransactionfilter}
+### qau_newPendingTransactionFilter {#qau-newpendingtransactionfilter}
 
 Yeni bekleyen işlemler ulaştığında bildirimde bulunmak için düğümde bir filtre oluşturur.
-Durumun değişip değişmediğini kontrol etmek için [eth_getFilterChanges](#eth-getfilterchanges) çağrısı yapın.
+Durumun değişip değişmediğini kontrol etmek için [qau_getFilterChanges](#qau-getfilterchanges) çağrısı yapın.
 
 **Parametreler**
 Yok
@@ -1590,7 +1590,7 @@ Yok
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter","params":[],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_newPendingTransactionFilter","params":[],"id":73}'
 // Sonuç
 {
   "id":1,
@@ -1599,10 +1599,10 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_newPendingTransactionFilter"
 }
 ```
 
-### eth_uninstallFilter {#eth-uninstallfilter}
+### qau_uninstallFilter {#qau-uninstallfilter}
 
 Verilen id'ye sahip bir filtreyi kaldırır. İzlemeye artık ihtiyaç duyulmadığında her zaman çağrılmalıdır.
-Ayrıca filtreler, belirli bir süre boyunca [eth_getFilterChanges](#eth-getfilterchanges) ile talep edilmediklerinde zaman aşımına uğrar.
+Ayrıca filtreler, belirli bir süre boyunca [qau_getFilterChanges](#qau-getfilterchanges) ile talep edilmediklerinde zaman aşımına uğrar.
 
 **Parametreler**
 
@@ -1621,7 +1621,7 @@ params: [
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["0xb"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_uninstallFilter","params":["0xb"],"id":73}'
 // Sonuç
 {
   "id":1,
@@ -1630,7 +1630,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_uninstallFilter","params":["
 }
 ```
 
-### eth_getFilterChanges {#eth-getfilterchanges}
+### qau_getFilterChanges {#qau-getfilterchanges}
 
 Bir filtre için yoklama yöntemi, son yoklamadan bu yana oluşan günlüklerin bir dizisini döndürür.
 
@@ -1647,9 +1647,9 @@ params: [
 **Döndürülenler**
 `Array` - Günlük nesnelerinden oluşan bir dizi veya son yoklamadan bu yana hiçbir şey değişmediyse boş bir dizi.
 
-- `eth_newBlockFilter` ile oluşturulan filtreler için dönüş değerleri blok hash'leridir (`DATA`, 32 Bayt), örn. `["0x3454645634534..."]`.
-- `eth_newPendingTransactionFilter ` ile oluşturulan filtreler için dönüş değerleri işlem hash'leridir (`DATA`, 32 Bayt), örn. `["0x6345343454645..."]`.
-- `eth_newFilter` ile oluşturulan filtreler için günlükler aşağıdaki parametrelere sahip nesnelerdir:
+- `qau_newBlockFilter` ile oluşturulan filtreler için dönüş değerleri blok hash'leridir (`DATA`, 32 Bayt), örn. `["0x3454645634534..."]`.
+- `qau_newPendingTransactionFilter ` ile oluşturulan filtreler için dönüş değerleri işlem hash'leridir (`DATA`, 32 Bayt), örn. `["0x6345343454645..."]`.
+- `qau_newFilter` ile oluşturulan filtreler için günlükler aşağıdaki parametrelere sahip nesnelerdir:
   - `removed`: `TAG` - Günlük, bir zincir yeniden düzenlemesi nedeniyle kaldırıldığında `true` olur. Geçerli bir günlükse `false` olur.
   - `logIndex`: `QUANTITY` - günlüğün bloktaki endeks konumunun tam sayısı. Bekleyen bir günlük olduğunda `null` olur.
   - `transactionIndex`: `QUANTITY` - günlüğün oluşturulduğu işlemin endeks konumunun tam sayısı. Bekleyen bir günlük olduğunda `null` olur.
@@ -1664,7 +1664,7 @@ params: [
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":["0x16"],"id":73}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterChanges","params":["0x16"],"id":73}'
 // Sonuç
 {
   "id":1,
@@ -1684,7 +1684,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterChanges","params":[
 }
 ```
 
-### eth_getFilterLogs {#eth-getfilterlogs}
+### qau_getFilterLogs {#qau-getfilterlogs}
 
 Verilen id'ye sahip filtreyle eşleşen tüm günlüklerin bir dizisini döndürür.
 
@@ -1699,18 +1699,18 @@ params: [
 ```
 
 **Döndürülenler**
-Bkz. [eth_getFilterChanges](#eth-getfilterchanges)
+Bkz. [qau_getFilterChanges](#qau-getfilterchanges)
 
 **Örnek**
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getFilterLogs","params":["0x16"],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getFilterLogs","params":["0x16"],"id":74}'
 ```
 
-Sonuç için bkz. [eth_getFilterChanges](#eth-getfilterchanges)
+Sonuç için bkz. [qau_getFilterChanges](#qau-getfilterchanges)
 
-### eth_getLogs {#eth-getlogs}
+### qau_getLogs {#qau-getlogs}
 
 Belirli bir filtre nesnesiyle eşleşen tüm günlüklerin bir dizisini döndürür.
 
@@ -1735,24 +1735,24 @@ params: [
 ```
 
 **Döndürülenler**
-Bkz. [eth_getFilterChanges](#eth-getfilterchanges)
+Bkz. [qau_getFilterChanges](#qau-getfilterchanges)
 
 **Örnek**
 
 ```js
 // İstek
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"qau_getLogs","params":[{"topics":["0x000000000000000000000000a94f5374fce5edbc8e2a8697c15331677e6ebf0b"]}],"id":74}'
 ```
 
-Sonuç için bkz. [eth_getFilterChanges](#eth-getfilterchanges)
+Sonuç için bkz. [qau_getFilterChanges](#qau-getfilterchanges)
 
 ## Kullanım Örneği {#usage-example}
 
 ### JSON-RPC kullanarak bir sözleşme dağıtmak {#deploying-contract}
 
-Bu bölüm, yalnızca RPC arayüzünü kullanarak bir sözleşmenin nasıl dağıtılacağına dair bir gösterim içerir. Bu karmaşıklığın soyutlandığı sözleşmeleri dağıtmanın alternatif yolları vardır; örneğin, RPC arayüzü üzerine inşa edilmiş [web3.js](https://web3js.readthedocs.io/) ve [web3.py](https://github.com/ethereum/web3.py) gibi kütüphaneleri kullanmak. Bu soyutlamaların anlaşılması genellikle daha kolaydır ve daha az hataya açıktır, ancak arka planda neler olduğunu anlamak yine de faydalıdır.
+Bu bölüm, yalnızca RPC arayüzünü kullanarak bir sözleşmenin nasıl dağıtılacağına dair bir gösterim içerir. Bu karmaşıklığın soyutlandığı sözleşmeleri dağıtmanın alternatif yolları vardır; örneğin, RPC arayüzü üzerine inşa edilmiş [web3.js](https://web3js.readthedocs.io/) ve [web3.py](https://github.com/quantaureum/web3.py) gibi kütüphaneleri kullanmak. Bu soyutlamaların anlaşılması genellikle daha kolaydır ve daha az hataya açıktır, ancak arka planda neler olduğunu anlamak yine de faydalıdır.
 
-Aşağıdaki, bir Ethereum düğümüne JSON-RPC arayüzü kullanılarak dağıtılacak olan `Multiply7` adlı basit bir akıllı sözleşmedir. Bu eğitim, okuyucunun halihazırda bir Geth düğümü çalıştırdığını varsaymaktadır. Düğümler ve istemciler hakkında daha fazla bilgi [burada](/developers/docs/nodes-and-clients/run-a-node) mevcuttur. Geth dışındaki istemciler için HTTP JSON-RPC'nin nasıl başlatılacağını görmek üzere lütfen ilgili [istemci](/developers/docs/nodes-and-clients/) belgelerine başvurun. Çoğu istemci varsayılan olarak `localhost:8545` üzerinde hizmet verir.
+Aşağıdaki, bir Quantaureum düğümüne JSON-RPC arayüzü kullanılarak dağıtılacak olan `Multiply7` adlı basit bir akıllı sözleşmedir. Bu eğitim, okuyucunun halihazırda bir Geth düğümü çalıştırdığını varsaymaktadır. Düğümler ve istemciler hakkında daha fazla bilgi [burada](/developers/docs/nodes-and-clients/run-a-node) mevcuttur. Geth dışındaki istemciler için HTTP JSON-RPC'nin nasıl başlatılacağını görmek üzere lütfen ilgili [istemci](/developers/docs/nodes-and-clients/) belgelerine başvurun. Çoğu istemci varsayılan olarak `localhost:8545` üzerinde hizmet verir.
 
 ```javascript
 contract Multiply7 {
@@ -1764,7 +1764,7 @@ contract Multiply7 {
 }
 ```
 
-Yapılacak ilk şey, HTTP RPC arayüzünün etkinleştirildiğinden emin olmaktır. Bu, başlangıçta Geth'e `--http` bayrağını sağladığımız anlamına gelir. Bu örnekte, özel bir geliştirme zincirindeki Geth düğümünü kullanıyoruz. Bu yaklaşımı kullanarak gerçek ağda Ether'e ihtiyacımız olmaz.
+Yapılacak ilk şey, HTTP RPC arayüzünün etkinleştirildiğinden emin olmaktır. Bu, başlangıçta Geth'e `--http` bayrağını sağladığımız anlamına gelir. Bu örnekte, özel bir geliştirme zincirindeki Geth düğümünü kullanıyoruz. Bu yaklaşımı kullanarak gerçek ağda QAU'e ihtiyacımız olmaz.
 
 ```bash
 geth --http --dev console 2>>geth.log
@@ -1775,21 +1775,21 @@ Bu, `http://localhost:8545` üzerinde HTTP RPC arayüzünü başlatacaktır.
 [curl](https://curl.se) kullanarak Coinbase adresini (hesaplar dizisinden ilk adresi alarak) ve bakiyeyi alıp arayüzün çalıştığını doğrulayabiliriz. Lütfen bu örneklerdeki verilerin yerel düğümünüzde farklılık göstereceğini unutmayın. Bu komutları denemek isterseniz, ikinci curl isteğindeki istek parametrelerini ilkinden dönen sonuçla değiştirin.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method":"eth_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_accounts","params":[], "id":1}' -H "Content-Type: application/json" localhost:8545
 {"id":1,"jsonrpc":"2.0","result":["0x9b1d35635cc34752ca54713bb99d38614f63c955"]}
 
-curl --data '{"jsonrpc":"2.0","method":"eth_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method":"qau_getBalance", "params": ["0x9b1d35635cc34752ca54713bb99d38614f63c955", "latest"], "id":2}' -H "Content-Type: application/json" localhost:8545
 {"id":2,"jsonrpc":"2.0","result":"0x1639e49bba16280000"}
 ```
 
-Sayılar onaltılık (hex) olarak kodlandığından, bakiye Wei cinsinden bir onaltılık dize olarak döndürülür. Bakiyeyi sayı olarak Ether cinsinden almak istersek, Geth konsolundan web3 kullanabiliriz.
+Sayılar onaltılık (hex) olarak kodlandığından, bakiye Wei cinsinden bir onaltılık dize olarak döndürülür. Bakiyeyi sayı olarak QAU cinsinden almak istersek, Geth konsolundan web3 kullanabiliriz.
 
 ```javascript
-web3.fromWei("0x1639e49bba16280000", "ether")
+web3.fromWei("0x1639e49bba16280000", "QAU")
 // "410"
 ```
 
-Artık özel geliştirme zincirimizde bir miktar Ether olduğuna göre, sözleşmeyi dağıtabiliriz. İlk adım, Multiply7 sözleşmesini EVM'ye gönderilebilecek baytkoda derlemektir. Solidity derleyicisi olan solc'yi kurmak için [Solidity belgelerini](https://docs.soliditylang.org/en/latest/installing-solidity.html) izleyin. ([Örneğimiz için kullanılan derleyici sürümüyle](https://github.com/ethereum/solidity/releases/tag/v0.4.20) eşleşmesi için daha eski bir `solc` sürümü kullanmak isteyebilirsiniz.)
+Artık özel geliştirme zincirimizde bir miktar QAU olduğuna göre, sözleşmeyi dağıtabiliriz. İlk adım, Multiply7 sözleşmesini EVM'ye gönderilebilecek baytkoda derlemektir. Solidity derleyicisi olan solc'yi kurmak için [Solidity belgelerini](https://docs.soliditylang.org/en/latest/installing-solidity.html) izleyin. ([Örneğimiz için kullanılan derleyici sürümüyle](https://github.com/quantaureum/solidity/releases/tag/v0.4.20) eşleşmesi için daha eski bir `solc` sürümü kullanmak isteyebilirsiniz.)
 
 Bir sonraki adım, Multiply7 sözleşmesini EVM'ye gönderilebilecek baytkoda derlemektir.
 
@@ -1801,24 +1801,24 @@ Binary:
 6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029
 ```
 
-Artık derlenmiş koda sahip olduğumuza göre, onu dağıtmanın ne kadar gaza mal olacağını belirlememiz gerekiyor. RPC arayüzü, bize bir tahmin verecek olan bir `eth_estimateGas` yöntemine sahiptir.
+Artık derlenmiş koda sahip olduğumuza göre, onu dağıtmanın ne kadar gaza mal olacağını belirlememiz gerekiyor. RPC arayüzü, bize bir tahmin verecek olan bir `qau_estimateGas` yöntemine sahiptir.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_estimateGas", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 5}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":5,"result":"0x1c31e"}
 ```
 
 Ve son olarak sözleşmeyi dağıtın.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0x9b1d35635cc34752ca54713bb99d38614f63c955", "gas": "0x1c31e", "data": "0x6060604052341561000f57600080fd5b60eb8061001d6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063c6888fa1146044575b600080fd5b3415604e57600080fd5b606260048080359060200190919050506078565b6040518082815260200191505060405180910390f35b60007f24abdb5865df5079dcc5ac590ff6f01d5c16edbc5fab4e195d9febd1114503da600783026040518082815260200191505060405180910390a16007820290509190505600a165627a7a7230582040383f19d9f65246752244189b02f56e8d0980ed44e7a56c0b200458caad20bb0029"}], "id": 6}' -H "Content-Type: application/json" localhost:8545
 {"id":6,"jsonrpc":"2.0","result":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"}
 ```
 
-İşlem düğüm tarafından kabul edilir ve bir işlem hash'i döndürülür. Bu hash, işlemi izlemek için kullanılabilir. Bir sonraki adım, sözleşmemizin dağıtıldığı adresi belirlemektir. Yürütülen her işlem bir makbuz oluşturacaktır. Bu makbuz, işlemin hangi bloğa dahil edildiği ve EVM tarafından ne kadar gaz kullanıldığı gibi işlem hakkında çeşitli bilgiler içerir. Bir işlem bir sözleşme oluşturursa, sözleşme adresini de içerecektir. Makbuzu `eth_getTransactionReceipt` RPC yöntemiyle alabiliriz.
+İşlem düğüm tarafından kabul edilir ve bir işlem hash'i döndürülür. Bu hash, işlemi izlemek için kullanılabilir. Bir sonraki adım, sözleşmemizin dağıtıldığı adresi belirlemektir. Yürütülen her işlem bir makbuz oluşturacaktır. Bu makbuz, işlemin hangi bloğa dahil edildiği ve EVM tarafından ne kadar gaz kullanıldığı gibi işlem hakkında çeşitli bilgiler içerir. Bir işlem bir sözleşme oluşturursa, sözleşme adresini de içerecektir. Makbuzu `qau_getTransactionReceipt` RPC yöntemiyle alabiliriz.
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_getTransactionReceipt", "params": ["0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf"], "id": 7}' -H "Content-Type: application/json" localhost:8545
 {"jsonrpc":"2.0","id":7,"result":{"blockHash":"0x77b1a4f6872b9066312de3744f60020cbd8102af68b1f6512a05b7619d527a4f","blockNumber":"0x1","contractAddress":"0x4d03d617d700cf81935d7f797f4e2ae719648262","cumulativeGasUsed":"0x1c31e","from":"0x9b1d35635cc34752ca54713bb99d38614f63c955","gasUsed":"0x1c31e","logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","status":"0x1","to":null,"transactionHash":"0xe1f3095770633ab2b18081658bad475439f6a08c902d0915903bafff06e6febf","transactionIndex":"0x0"}}
 ```
 
@@ -1826,9 +1826,9 @@ Sözleşmemiz `0x4d03d617d700cf81935d7f797f4e2ae719648262` üzerinde oluşturuld
 
 #### Akıllı sözleşmelerle etkileşim kurmak {#interacting-with-smart-contract}
 
-Bu örnekte, sözleşmenin `multiply` yöntemine `eth_sendTransaction` kullanarak bir işlem göndereceğiz.
+Bu örnekte, sözleşmenin `multiply` yöntemine `qau_sendTransaction` kullanarak bir işlem göndereceğiz.
 
-`eth_sendTransaction` birkaç argüman gerektirir, özellikle `from`, `to` ve `data`. `From` hesabımızın genel adresidir ve `to` sözleşme adresidir. `data` argümanı, hangi yöntemin hangi argümanlarla çağrılması gerektiğini tanımlayan bir yük (payload) içerir. İşte bu noktada [ABI (uygulama ikili arayüzü)](https://docs.soliditylang.org/en/latest/abi-spec.html) devreye girer. ABI, EVM için verilerin nasıl tanımlanacağını ve kodlanacağını belirleyen bir JSON dosyasıdır.
+`qau_sendTransaction` birkaç argüman gerektirir, özellikle `from`, `to` ve `data`. `From` hesabımızın genel adresidir ve `to` sözleşme adresidir. `data` argümanı, hangi yöntemin hangi argümanlarla çağrılması gerektiğini tanımlayan bir yük (payload) içerir. İşte bu noktada [ABI (uygulama ikili arayüzü)](https://docs.soliditylang.org/en/latest/abi-spec.html) devreye girer. ABI, EVM için verilerin nasıl tanımlanacağını ve kodlanacağını belirleyen bir JSON dosyasıdır.
 
 Yükün baytları, sözleşmede hangi yöntemin çağrılacağını tanımlar. Bu, işlev adı ve argüman türleri üzerinden alınan Keccak hash'inin onaltılık (hex) olarak kodlanmış ilk 4 baytıdır. Çarpma (multiply) işlevi, uint256 için bir takma ad olan bir uint kabul eder. Bu bize şunu verir:
 
@@ -1848,7 +1848,7 @@ Bu, `0000000000000000000000000000000000000000000000000000000000000006` olarak ko
 Bu artık düğüme gönderilebilir:
 
 ```bash
-curl --data '{"jsonrpc":"2.0","method": "eth_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
+curl --data '{"jsonrpc":"2.0","method": "qau_sendTransaction", "params": [{"from": "0xeb85a5557e5bdc18ee1934a89d8bb402398ee26a", "to": "0x6ff93b4b46b41c0c3c9baee01c255d3b4675963d", "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000006"}], "id": 8}' -H "Content-Type: application/json" localhost:8545
 {"id":8,"jsonrpc":"2.0","result":"0x759cf065cbc22e9d779748dc53763854e5376eea07409e590c990eafc0869d74"}
 ```
 

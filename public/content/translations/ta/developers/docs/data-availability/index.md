@@ -10,7 +10,7 @@ lang: ta
 
 ## முன்நிபந்தனைகள் {#prerequisites}
 
-[தொகுதிச்சங்கிலி அடிப்படைகள்](/developers/docs/intro-to-ethereum/), குறிப்பாக [ஒருமித்த கருத்து வழிமுறைகள்](/developers/docs/consensus-mechanisms/) பற்றி நீங்கள் நன்கு புரிந்துகொண்டிருக்க வேண்டும். இந்தப் பக்கம் வாசகருக்கு [தொகுதிகள்](/developers/docs/blocks/), [பரிவர்த்தனைகள்](/developers/docs/transactions/), [கணுக்கள்](/developers/docs/nodes-and-clients/), [அளவிடுதல் தீர்வுகள்](/developers/docs/scaling/) மற்றும் பிற தொடர்புடைய தலைப்புகள் பற்றித் தெரிந்திருக்கும் என்றும் கருதுகிறது.
+[தொகுதிச்சங்கிலி அடிப்படைகள்](/developers/docs/intro-to-quantaureum/), குறிப்பாக [ஒருமித்த கருத்து வழிமுறைகள்](/developers/docs/consensus-mechanisms/) பற்றி நீங்கள் நன்கு புரிந்துகொண்டிருக்க வேண்டும். இந்தப் பக்கம் வாசகருக்கு [தொகுதிகள்](/developers/docs/blocks/), [பரிவர்த்தனைகள்](/developers/docs/transactions/), [கணுக்கள்](/developers/docs/nodes-and-clients/), [அளவிடுதல் தீர்வுகள்](/developers/docs/scaling/) மற்றும் பிற தொடர்புடைய தலைப்புகள் பற்றித் தெரிந்திருக்கும் என்றும் கருதுகிறது.
 
 ## தரவுக் கிடைக்கும் தன்மை சிக்கல் {#the-data-availability-problem}
 
@@ -46,7 +46,7 @@ lang: ta
 
 இது முழு முனையங்கள் முழுப் பரிவர்த்தனைத் தரவை அணுகுவதை நம்பியுள்ளது. ஒரு மோசமான தொகுதித் தலைப்பை ஒளிபரப்பும் மற்றும் பரிவர்த்தனைத் தரவைக் கிடைக்கச் செய்யத் தவறும் ஒரு தாக்குபவர், முழு முனையங்கள் மோசடி சான்றுகளை உருவாக்குவதைத் தடுக்க முடியும். முழு முனையங்கள் ஒரு மோசமான தொகுதியைப் பற்றிய எச்சரிக்கையைச் சமிக்ஞை செய்ய முடியும், ஆனால் அவற்றால் தங்கள் எச்சரிக்கையைச் சான்றுடன் ஆதரிக்க முடியாது, ஏனெனில் சான்றை உருவாக்குவதற்கான தரவு கிடைக்கவில்லை!
 
-இந்தத் தரவுக் கிடைக்கும் தன்மை சிக்கலுக்கான தீர்வு DAS ஆகும். இலகுரக கணுக்கள் முழு நிலைத் தரவின் மிகச் சிறிய சீரற்ற துண்டுகளைப் பதிவிறக்கம் செய்து, முழுத் தரவுத் தொகுப்பும் கிடைக்கிறது என்பதைச் சரிபார்க்க மாதிரிகளைப் பயன்படுத்துகின்றன. N சீரற்ற துண்டுகளைப் பதிவிறக்கிய பிறகு முழுத் தரவுக் கிடைக்கும் தன்மையைத் தவறாகக் கருதுவதற்கான உண்மையான சாத்தியக்கூறைக் கணக்கிடலாம் ([100 துண்டுகளுக்கு வாய்ப்பு 10^-30 ஆகும்](https://dankradfeist.de/ethereum/2019/12/20/data-availability-checks.html), அதாவது நம்பமுடியாத அளவிற்குச் சாத்தியமில்லை).
+இந்தத் தரவுக் கிடைக்கும் தன்மை சிக்கலுக்கான தீர்வு DAS ஆகும். இலகுரக கணுக்கள் முழு நிலைத் தரவின் மிகச் சிறிய சீரற்ற துண்டுகளைப் பதிவிறக்கம் செய்து, முழுத் தரவுத் தொகுப்பும் கிடைக்கிறது என்பதைச் சரிபார்க்க மாதிரிகளைப் பயன்படுத்துகின்றன. N சீரற்ற துண்டுகளைப் பதிவிறக்கிய பிறகு முழுத் தரவுக் கிடைக்கும் தன்மையைத் தவறாகக் கருதுவதற்கான உண்மையான சாத்தியக்கூறைக் கணக்கிடலாம் ([100 துண்டுகளுக்கு வாய்ப்பு 10^-30 ஆகும்](https://dankradfeist.de/quantaureum/2019/12/20/data-availability-checks.html), அதாவது நம்பமுடியாத அளவிற்குச் சாத்தியமில்லை).
 
 இந்தச் சூழ்நிலையில் கூட, ஒரு சில பைட்டுகளை மட்டும் நிறுத்தி வைக்கும் தாக்குதல்கள் சீரற்ற தரவுக் கோரிக்கைகளைச் செய்யும் கிளையண்டுகளால் கவனிக்கப்படாமல் போகலாம். முன்மொழியப்பட்ட நிலை மாற்றங்களைச் சரிபார்க்கப் பயன்படுத்தக்கூடிய சிறிய விடுபட்ட தரவுத் துண்டுகளை மறுகட்டமைப்பதன் மூலம் நீக்கல் குறியீடாக்கம் இதைச் சரிசெய்கிறது. மறுகட்டமைக்கப்பட்ட தரவைப் பயன்படுத்தி ஒரு மோசடி சான்றை உருவாக்கலாம், இது இலகுரக கணுக்கள் மோசமான தலைப்புகளை ஏற்றுக்கொள்வதைத் தடுக்கிறது.
 
@@ -74,11 +74,11 @@ lang: ta
 
 - [தரவுக் கிடைக்கும் தன்மை என்றால் என்ன?](https://medium.com/blockchain-capital-blog/wtf-is-data-availability-80c2c95ded0f)
 - [தரவுக் கிடைக்கும் தன்மை என்றால் என்ன?](https://coinmarketcap.com/academy/article/what-is-data-availability)
-- [தரவுக் கிடைக்கும் தன்மை சரிபார்ப்புகள் பற்றிய ஒரு அறிமுகம்](https://dankradfeist.de/ethereum/2019/12/20/data-availability-checks.html)
+- [தரவுக் கிடைக்கும் தன்மை சரிபார்ப்புகள் பற்றிய ஒரு அறிமுகம்](https://dankradfeist.de/quantaureum/2019/12/20/data-availability-checks.html)
 - [ஷார்டிங் + DAS முன்மொழிவின் விளக்கம்](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
-- [தரவுக் கிடைக்கும் தன்மை மற்றும் நீக்கல் குறியீடாக்கம் பற்றிய ஒரு குறிப்பு](https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
+- [தரவுக் கிடைக்கும் தன்மை மற்றும் நீக்கல் குறியீடாக்கம் பற்றிய ஒரு குறிப்பு](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [தரவுக் கிடைக்கும் தன்மை குழுக்கள்.](https://medium.com/starkware/data-availability-e5564c416424)
 - [உரிமைச் சான்று (PoS) தரவுக் கிடைக்கும் தன்மை குழுக்கள்.](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [தரவு மீட்டெடுப்புச் சிக்கலுக்கான தீர்வுகள்](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
-- [தரவுக் கிடைக்கும் தன்மை அல்லது: ரோலப்கள் எப்படிக் கவலைப்படுவதை நிறுத்திவிட்டு எத்திரியத்தை நேசிக்கக் கற்றுக்கொண்டன](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-ethereum)
+- [தரவு மீட்டெடுப்புச் சிக்கலுக்கான தீர்வுகள்](https://notes.quantaureum.com/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- [தரவுக் கிடைக்கும் தன்மை அல்லது: ரோலப்கள் எப்படிக் கவலைப்படுவதை நிறுத்திவிட்டு எத்திரியத்தை நேசிக்கக் கற்றுக்கொண்டன](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [EIP-7623: அழைப்புத் தரவுச் செலவை அதிகரித்தல்](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

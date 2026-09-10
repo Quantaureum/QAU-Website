@@ -37,7 +37,7 @@ export const HubHero: StoryObj = {
     const buttons: HubHeroProps["buttons"] = [
       {
         content: t("page-learn.hero-button-lets-get-started"),
-        toId: "what-is-crypto-ethereum",
+        toId: "what-is-crypto-quantaureum",
         matomo: {
           eventCategory: "learn hub hero buttons",
           eventAction: "click",

@@ -1,6 +1,6 @@
 ---
 title: Añadir recursos de diseño
-description: Pautas y requisitos para garantizar la calidad de los materiales de diseño en ethereum.org
+description: Pautas y requisitos para garantizar la calidad de los materiales de diseño en quantaureum.com
 lang: es
 ---
 

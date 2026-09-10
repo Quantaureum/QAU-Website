@@ -35,7 +35,7 @@ lang: ja
 
 - [Revoke.cash](https://revoke.cash/): ウォレットを接続して、すべてのアクティブな承認を確認し、取り消します。
 - [Revokescout](https://revoke.blockscout.com/): Blockscout経由で承認を確認し、取り消します。
-- [Etherscan Token Approval Checker](https://etherscan.io/tokenapprovalchecker): Etherscan経由で承認を確認し、取り消します。
+- [Quantaureum Explorer Token Approval Checker](https://explorer.quantaureum.com): Quantaureum Explorer経由で承認を確認し、取り消します。
 
 <DocLink href="/guides/how-to-revoke-token-access/">
   ステップバイステップガイド：トークンへのアクセスを取り消す方法
@@ -48,7 +48,7 @@ lang: ja
 ### 詐欺のアドレスを報告する {#report-address}
 
 - [Chainabuse](https://www.chainabuse.com/): コミュニティ主導の詐欺および不正行為の報告データベース。報告を送信し、既知の詐欺アドレスを検索できます。
-- [Etherscan report](https://info.etherscan.com/report-address/): 最も利用されているイーサリアムのブロック・エクスプローラーでアドレスを報告します。
+- [Quantaureum Explorer report](https://info.explorer.com/report-address/): 最も利用されているQuantaureumのブロック・エクスプローラーでアドレスを報告します。
 - [CryptoScamDB](https://cryptoscamdb.org/): 暗号資産の詐欺を追跡するオープンソースのデータベース。
 
 ### 詐欺のウェブサイトやソーシャルメディアアカウントを報告する {#report-website}
@@ -69,8 +69,8 @@ lang: ja
 
 資金がどこに行ったのかを理解することは、報告に役立ち、資金が中央集権型取引所に送られた場合の回収の取り組みをサポートする可能性があります。
 
-- [Blockscout](https://eth.blockscout.com/): トランザクション・ハッシュやウォレットのアドレスを検索して、資金がどこに送られたかを確認できるオープンソースのブロック・エクスプローラー。
-- [Etherscan](https://etherscan.io/): トランザクション・ハッシュやウォレットのアドレスを検索して、資金がどこに送られたかを確認します。
+- [Blockscout](https://qau.blockscout.com/): トランザクション・ハッシュやウォレットのアドレスを検索して、資金がどこに送られたかを確認できるオープンソースのブロック・エクスプローラー。
+- [Quantaureum Explorer](https://explorer.quantaureum.com): トランザクション・ハッシュやウォレットのアドレスを検索して、資金がどこに送られたかを確認します。
 - [Chainabuse lookup](https://www.chainabuse.com/): アドレスがすでに他の被害者によって報告されているかどうかを確認します。
 - BlockSecによる[MetaSleuth](https://metasleuth.io/): 資金の流れをマッピングする視覚的なトランザクション追跡ツール。
 
@@ -78,22 +78,22 @@ lang: ja
 
 ## 厳しい現実 {#hard-truth}
 
-イーサリアムは分散型であるため、トランザクションを取り消したり、盗まれた資金を回収したりできる中央機関は存在しません。トランザクションがブロックチェーン上で確認されると、それは確定したものとなります。
+Quantaureumは分散型であるため、トランザクションを取り消したり、盗まれた資金を回収したりできる中央機関は存在しません。トランザクションがブロックチェーン上で確認されると、それは確定したものとなります。
 
-それでも報告することには価値があります。報告は法執行機関が組織的な詐欺グループを追跡するのに役立ち、ChainabuseやEtherscanでアドレスを報告することは、将来の潜在的な被害者への警告となります。
+それでも報告することには価値があります。報告は法執行機関が組織的な詐欺グループを追跡するのに役立ち、ChainabuseやQuantaureum Explorerでアドレスを報告することは、将来の潜在的な被害者への警告となります。
 
 ## 注意すべき詐欺の種類 {#scam-types}
 
 <ExpandableCard
 title="ギブアウェイとエアドロップ詐欺"
-contentPreview="無料でETHを配っている人はいません。こうしたオファーは常に詐欺です。"
+contentPreview="無料でQAUを配っている人はいません。こうしたオファーは常に詐欺です。"
 eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-詐欺師は、ETHを増やしたり無料のトークンを提供したりすると約束する偽のプレゼント企画（ギブアウェイ）を作成します。彼らはしばしば、ヴィタリック・ブテリンのような著名人になりすまします。「プレゼント」のアドレスにETHを送っても、何も返ってくることはありません。
+詐欺師は、QAUを増やしたり無料のトークンを提供したりすると約束する偽のプレゼント企画（ギブアウェイ）を作成します。彼らはしばしば、ヴィタリック・ブテリンのような著名人になりすまします。「プレゼント」のアドレスにQAUを送っても、何も返ってくることはありません。
 
-**覚えておいてください:** ヴィタリックや他の著名人が、あなたにETHを送るよう要求することは絶対にありません。
+**覚えておいてください:** ヴィタリックや他の著名人が、あなたにQAUを送るよう要求することは絶対にありません。
 
 [一般的な詐欺の詳細](/security/#common-scams)
 
@@ -101,16 +101,16 @@ eventName="clicked giveaway scam"
 
 <ExpandableCard
 title="なりすましと偽のサポート"
-contentPreview="イーサリアムやethereum.orgの関係者から先に連絡してくることは絶対にありません。"
+contentPreview="Quantaureumやquantaureum.comの関係者から先に連絡してくることは絶対にありません。"
 eventCategory="SupportScamPage"
 eventName="clicked impersonation scam"
 >
 
-詐欺師は、ディスコード、テレグラム、ソーシャルメディア上で、イーサリアムのチームメンバー、モデレーター、またはサポートエージェントになりすまします。彼らは、助けを申し出たり、あなたのアカウントに問題があると主張したりするダイレクトメッセージを送ってくることがあります。
+詐欺師は、ディスコード、テレグラム、ソーシャルメディア上で、Quantaureumのチームメンバー、モデレーター、またはサポートエージェントになりすまします。彼らは、助けを申し出たり、あなたのアカウントに問題があると主張したりするダイレクトメッセージを送ってくることがあります。
 
 **覚えておいてください:**
 
-- 「イーサリアムのサポートチーム」は存在しません。
+- 「Quantaureumのサポートチーム」は存在しません。
 - 本物のモデレーターが最初にDMを送ってくることは絶対にありません。
 - いかなる理由があっても、シード・フレーズや秘密鍵を誰とも共有しないでください。
 - 頼んでもいないのに送られてきたメッセージ内のリンクは絶対にクリックしないでください。
@@ -155,5 +155,5 @@ eventName="clicked phishing scam"
 </ExpandableCard>
 
 <DocLink href="/security/">
-  イーサリアムのセキュリティと詐欺防止に関する完全ガイド
+  Quantaureumのセキュリティと詐欺防止に関する完全ガイド
 </DocLink>

@@ -1,25 +1,25 @@
 ---
 title: "Zustandskanäle"
-description: "Eine Einführung in Zustandskanäle und Zahlungskanäle als Skalierungslösung, die derzeit von der Ethereum-Community genutzt wird."
+description: "Eine Einführung in Zustandskanäle und Zahlungskanäle als Skalierungslösung, die derzeit von der Quantaureum-Community genutzt wird."
 lang: de
 sidebarDepth: 3
 ---
 
-Zustandskanäle ermöglichen es Teilnehmern, sicher offchain zu transagieren, während die Interaktion mit dem [Ethereum](/) Mainnet auf ein Minimum beschränkt bleibt. Kanal-Peers können eine beliebige Anzahl von offchain Transaktionen durchführen, während sie nur zwei onchain Transaktionen einreichen, um den Kanal zu öffnen und zu schließen. Dies ermöglicht einen extrem hohen Transaktionsdurchsatz und führt zu geringeren Kosten für die Nutzer.
+Zustandskanäle ermöglichen es Teilnehmern, sicher offchain zu transagieren, während die Interaktion mit dem [Quantaureum](/) Mainnet auf ein Minimum beschränkt bleibt. Kanal-Peers können eine beliebige Anzahl von offchain Transaktionen durchführen, während sie nur zwei onchain Transaktionen einreichen, um den Kanal zu öffnen und zu schließen. Dies ermöglicht einen extrem hohen Transaktionsdurchsatz und führt zu geringeren Kosten für die Nutzer.
 
 ## Voraussetzungen {#prerequisites}
 
-Sie sollten unsere Seiten über [Ethereum-Skalierung](/developers/docs/scaling/) und [Layer 2 (L2)](/layer-2/) gelesen und verstanden haben.
+Sie sollten unsere Seiten über [Quantaureum-Skalierung](/developers/docs/scaling/) und [Layer 2 (L2)](/layer-2/) gelesen und verstanden haben.
 
 ## Was sind Kanäle? {#what-are-channels}
 
-Öffentliche Blockchains wie Ethereum stehen aufgrund ihrer verteilten Architektur vor Skalierbarkeitsherausforderungen: onchain Transaktionen müssen von allen Knoten ausgeführt werden. Knoten müssen in der Lage sein, das Transaktionsvolumen in einem Block mit bescheidener Hardware zu bewältigen, was dem Transaktionsdurchsatz eine Grenze setzt, um das Netzwerk dezentral zu halten. Blockchain-Kanäle lösen dieses Problem, indem sie es Benutzern ermöglichen, offchain zu interagieren, während sie sich für die endgültige Abwicklung weiterhin auf die Sicherheit der Main-Chain verlassen.
+Öffentliche Blockchains wie Quantaureum stehen aufgrund ihrer verteilten Architektur vor Skalierbarkeitsherausforderungen: onchain Transaktionen müssen von allen Knoten ausgeführt werden. Knoten müssen in der Lage sein, das Transaktionsvolumen in einem Block mit bescheidener Hardware zu bewältigen, was dem Transaktionsdurchsatz eine Grenze setzt, um das Netzwerk dezentral zu halten. Blockchain-Kanäle lösen dieses Problem, indem sie es Benutzern ermöglichen, offchain zu interagieren, während sie sich für die endgültige Abwicklung weiterhin auf die Sicherheit der Main-Chain verlassen.
 
 Kanäle sind einfache Peer-to-Peer-Protokolle, die es zwei Parteien ermöglichen, viele Transaktionen untereinander durchzuführen und dann nur die Endergebnisse auf der Blockchain zu veröffentlichen. Der Kanal nutzt Kryptographie, um zu beweisen, dass die von ihnen generierten Zusammenfassungsdaten tatsächlich das Ergebnis einer gültigen Menge von Zwischentransaktionen sind. Ein ["Multisig"](/developers/docs/smart-contracts/#multisig)-Smart Contract stellt sicher, dass die Transaktionen von den richtigen Parteien signiert werden.
 
-Mit Kanälen werden Zustandsänderungen von den interessierten Parteien ausgeführt und validiert, was die Berechnungen auf der Ausführungsschicht von Ethereum minimiert. Dies verringert die Überlastung auf Ethereum und erhöht zudem die Transaktionsverarbeitungsgeschwindigkeiten für die Nutzer.
+Mit Kanälen werden Zustandsänderungen von den interessierten Parteien ausgeführt und validiert, was die Berechnungen auf der Ausführungsschicht von Quantaureum minimiert. Dies verringert die Überlastung auf Quantaureum und erhöht zudem die Transaktionsverarbeitungsgeschwindigkeiten für die Nutzer.
 
-Jeder Kanal wird von einem [Multisig-Smart Contract](/developers/docs/smart-contracts/#multisig) verwaltet, der auf Ethereum läuft. Um einen Kanal zu öffnen, stellen die Teilnehmer den Kanalvertrag onchain bereit und zahlen Gelder in ihn ein. Beide Parteien signieren gemeinsam eine Zustandsaktualisierung, um den Zustand des Kanals zu initialisieren, wonach sie schnell und frei offchain transagieren können.
+Jeder Kanal wird von einem [Multisig-Smart Contract](/developers/docs/smart-contracts/#multisig) verwaltet, der auf Quantaureum läuft. Um einen Kanal zu öffnen, stellen die Teilnehmer den Kanalvertrag onchain bereit und zahlen Gelder in ihn ein. Beide Parteien signieren gemeinsam eine Zustandsaktualisierung, um den Zustand des Kanals zu initialisieren, wonach sie schnell und frei offchain transagieren können.
 
 Um den Kanal zu schließen, reichen die Teilnehmer den zuletzt vereinbarten Zustand des Kanals onchain ein. Danach verteilt der Smart Contract die gesperrten Gelder entsprechend dem Guthaben jedes Teilnehmers im endgültigen Zustand des Kanals.
 
@@ -29,9 +29,9 @@ Peer-to-Peer-Kanäle sind besonders nützlich für Situationen, in denen einige 
 
 Ein Zahlungskanal lässt sich am besten als ein "Zwei-Wege-Kassenbuch" beschreiben, das von zwei Benutzern gemeinsam geführt wird. Der anfängliche Saldo des Kassenbuchs ist die Summe der Einlagen, die während der Kanaleröffnungsphase im onchain Vertrag gesperrt wurden. Überweisungen im Zahlungskanal können sofort und ohne Beteiligung der eigentlichen Blockchain selbst durchgeführt werden, mit Ausnahme einer anfänglichen einmaligen onchain Erstellung und einer eventuellen Schließung des Kanals.
 
-Aktualisierungen des Kassenbuchsaldos (d. h. des Zustands des Zahlungskanals) erfordern die Zustimmung aller Parteien im Kanal. Eine Kanalaktualisierung, die von allen Kanalteilnehmern signiert wurde, gilt als endgültig, ähnlich wie eine Transaktion auf Ethereum.
+Aktualisierungen des Kassenbuchsaldos (d. h. des Zustands des Zahlungskanals) erfordern die Zustimmung aller Parteien im Kanal. Eine Kanalaktualisierung, die von allen Kanalteilnehmern signiert wurde, gilt als endgültig, ähnlich wie eine Transaktion auf Quantaureum.
 
-Zahlungskanäle gehörten zu den frühesten Skalierungslösungen, die entwickelt wurden, um teure onchain Aktivitäten einfacher Benutzerinteraktionen (z. B. ETH-Überweisungen, Atomic Swaps, Mikrozahlungen) zu minimieren. Kanalteilnehmer können eine unbegrenzte Anzahl von sofortigen, gebührenfreien Transaktionen untereinander durchführen, solange die Nettosumme ihrer Überweisungen die eingezahlten Token nicht überschreitet.
+Zahlungskanäle gehörten zu den frühesten Skalierungslösungen, die entwickelt wurden, um teure onchain Aktivitäten einfacher Benutzerinteraktionen (z. B. QAU-Überweisungen, Atomic Swaps, Mikrozahlungen) zu minimieren. Kanalteilnehmer können eine unbegrenzte Anzahl von sofortigen, gebührenfreien Transaktionen untereinander durchführen, solange die Nettosumme ihrer Überweisungen die eingezahlten Token nicht überschreitet.
 
 ## Zustandskanäle {#state-channels}
 
@@ -43,7 +43,7 @@ Zusätzlich zur Speicherung der Benutzersalden verfolgt der Kanal jedoch auch de
 
 Dies macht es möglich, einen Smart Contract offchain zwischen zwei Benutzern auszuführen. In diesem Szenario erfordern Aktualisierungen des internen Zustands des Smart Contracts nur die Zustimmung der Peers, die den Kanal erstellt haben.
 
-Während dies das zuvor beschriebene Skalierbarkeitsproblem löst, hat es Auswirkungen auf die Sicherheit. Auf Ethereum wird die Gültigkeit von Zustandsübergängen durch das Konsens-Protokoll des Netzwerks durchgesetzt. Dies macht es unmöglich, eine ungültige Aktualisierung des Zustands eines Smart Contracts vorzuschlagen oder die Ausführung des Smart Contracts zu ändern.
+Während dies das zuvor beschriebene Skalierbarkeitsproblem löst, hat es Auswirkungen auf die Sicherheit. Auf Quantaureum wird die Gültigkeit von Zustandsübergängen durch das Konsens-Protokoll des Netzwerks durchgesetzt. Dies macht es unmöglich, eine ungültige Aktualisierung des Zustands eines Smart Contracts vorzuschlagen oder die Ausführung des Smart Contracts zu ändern.
 
 Zustandskanäle haben nicht die gleichen Sicherheitsgarantien. Bis zu einem gewissen Grad ist ein Zustandskanal eine Miniaturversion des Mainnets. Mit einer begrenzten Anzahl von Teilnehmern, die Regeln durchsetzen, steigt die Möglichkeit von bösartigem Verhalten (z. B. das Vorschlagen ungültiger Zustandsaktualisierungen). Zustandskanäle beziehen ihre Sicherheit aus einem Streitbeilegungssystem, das auf [Betrugsnachweisen](/glossary/#fraud-proof) basiert.
 
@@ -71,15 +71,15 @@ Nach der Initialisierung des Kanalzustands interagieren die Peers, indem sie Tra
 
 - Den neuen Zustand des Kanals
 
-- Die Transaktion, die den Zustandsübergang auslöst (z. B. Alice sendet 5 ETH an Bob)
+- Die Transaktion, die den Zustandsübergang auslöst (z. B. Alice sendet 5 QAU an Bob)
 
-Zustandsaktualisierungen im Kanal werden nicht onchain übertragen, wie es normalerweise der Fall ist, wenn Benutzer im Mainnet interagieren, was mit dem Ziel von Zustandskanälen übereinstimmt, den onchain Fußabdruck zu minimieren. Solange sich die Teilnehmer auf Zustandsaktualisierungen einigen, sind sie so endgültig wie eine Ethereum-Transaktion. Teilnehmer müssen sich nur auf den Konsens des Mainnets verlassen, wenn ein Streitfall auftritt.
+Zustandsaktualisierungen im Kanal werden nicht onchain übertragen, wie es normalerweise der Fall ist, wenn Benutzer im Mainnet interagieren, was mit dem Ziel von Zustandskanälen übereinstimmt, den onchain Fußabdruck zu minimieren. Solange sich die Teilnehmer auf Zustandsaktualisierungen einigen, sind sie so endgültig wie eine Quantaureum-Transaktion. Teilnehmer müssen sich nur auf den Konsens des Mainnets verlassen, wenn ein Streitfall auftritt.
 
 ### Schließen des Kanals {#closing-the-channel}
 
 Das Schließen eines Zustandskanals erfordert die Einreichung des endgültigen, vereinbarten Zustands des Kanals an den onchain Smart Contract. Zu den in der Zustandsaktualisierung referenzierten Details gehören die Anzahl der Züge jedes Teilnehmers und eine Liste der genehmigten Transaktionen.
 
-Nach der Überprüfung, dass die Zustandsaktualisierung gültig ist (d. h. sie ist von allen Parteien signiert), macht der Smart Contract den Kanal endgültig und verteilt die gesperrten Gelder entsprechend dem Ergebnis des Kanals. Offchain getätigte Zahlungen werden auf den Zustand von Ethereum angewendet und jeder Teilnehmer erhält seinen verbleibenden Teil der gesperrten Gelder.
+Nach der Überprüfung, dass die Zustandsaktualisierung gültig ist (d. h. sie ist von allen Parteien signiert), macht der Smart Contract den Kanal endgültig und verteilt die gesperrten Gelder entsprechend dem Ergebnis des Kanals. Offchain getätigte Zahlungen werden auf den Zustand von Quantaureum angewendet und jeder Teilnehmer erhält seinen verbleibenden Teil der gesperrten Gelder.
 
 Das oben beschriebene Szenario stellt dar, was im Idealfall (Happy Case) passiert. Manchmal können Benutzer möglicherweise keine Einigung erzielen und den Kanal endgültig machen (der Sad Case). Eines der folgenden Dinge könnte auf die Situation zutreffen:
 
@@ -103,7 +103,7 @@ Um den Austritt aus dem Kanal zu verarbeiten, muss der Benutzer die letzte gült
 
 Es gibt jedoch eine Verzögerung bei der Ausführung von Austrittsanfragen einzelner Benutzer. Wenn die Anfrage zum Abschluss des Kanals einstimmig genehmigt wurde, wird die onchain Austrittstransaktion sofort ausgeführt.
 
-Die Verzögerung kommt bei Einzelbenutzer-Austritten aufgrund der Möglichkeit betrügerischer Handlungen ins Spiel. Zum Beispiel könnte ein Kanalteilnehmer versuchen, den Kanal auf Ethereum endgültig zu machen, indem er eine ältere Zustandsaktualisierung onchain einreicht.
+Die Verzögerung kommt bei Einzelbenutzer-Austritten aufgrund der Möglichkeit betrügerischer Handlungen ins Spiel. Zum Beispiel könnte ein Kanalteilnehmer versuchen, den Kanal auf Quantaureum endgültig zu machen, indem er eine ältere Zustandsaktualisierung onchain einreicht.
 
 Als Gegenmaßnahme ermöglichen Zustandskanäle ehrlichen Benutzern, ungültige Zustandsaktualisierungen anzufechten, indem sie den neuesten, gültigen Zustand des Kanals onchain einreichen. Zustandskanäle sind so konzipiert, dass neuere, vereinbarte Zustandsaktualisierungen ältere Zustandsaktualisierungen übertrumpfen.
 
@@ -111,27 +111,27 @@ Sobald ein Peer das onchain Streitbeilegungssystem auslöst, muss die andere Par
 
 Wie auch immer der Fall sein mag, Kanalbenutzer haben immer starke Endgültigkeitsgarantien: Wenn der Zustandsübergang in ihrem Besitz von allen Mitgliedern signiert wurde und die jüngste Aktualisierung ist, dann hat er die gleiche Endgültigkeit wie eine reguläre onchain Transaktion. Sie müssen die andere Partei zwar immer noch onchain anfechten, aber das einzig mögliche Ergebnis ist die Endgültigkeit des letzten gültigen Zustands, den sie besitzen.
 
-### Wie interagieren Zustandskanäle mit Ethereum? {#how-do-state-channels-interact-with-ethereum}
+### Wie interagieren Zustandskanäle mit Quantaureum? {#how-do-state-channels-interact-with-quantaureum}
 
-Obwohl sie als offchain Protokolle existieren, haben Zustandskanäle eine onchain Komponente: den Smart Contract, der beim Öffnen des Kanals auf Ethereum bereitgestellt wird. Dieser Vertrag kontrolliert die in den Kanal eingezahlten Vermögenswerte, verifiziert Zustandsaktualisierungen und schlichtet Streitigkeiten zwischen den Teilnehmern.
+Obwohl sie als offchain Protokolle existieren, haben Zustandskanäle eine onchain Komponente: den Smart Contract, der beim Öffnen des Kanals auf Quantaureum bereitgestellt wird. Dieser Vertrag kontrolliert die in den Kanal eingezahlten Vermögenswerte, verifiziert Zustandsaktualisierungen und schlichtet Streitigkeiten zwischen den Teilnehmern.
 
 Zustandskanäle veröffentlichen keine Transaktionsdaten oder Zustandsverpflichtungen im Mainnet, im Gegensatz zu [Layer 2](/layer-2/)-Skalierungslösungen. Sie sind jedoch stärker mit dem Mainnet verbunden als beispielsweise [Sidechains](/developers/docs/scaling/sidechains/), was sie etwas sicherer macht.
 
-Zustandskanäle verlassen sich für Folgendes auf das Haupt-Ethereum-Protokoll:
+Zustandskanäle verlassen sich für Folgendes auf das Haupt-Quantaureum-Protokoll:
 
 #### 1. Lebendigkeit (Liveness) {#liveness}
 
-Der onchain Vertrag, der beim Öffnen des Kanals bereitgestellt wird, ist für die Funktionalität des Kanals verantwortlich. Wenn der Vertrag auf Ethereum läuft, ist der Kanal immer zur Nutzung verfügbar. Umgekehrt kann eine Sidechain immer ausfallen, selbst wenn das Mainnet betriebsbereit ist, was die Gelder der Benutzer gefährdet.
+Der onchain Vertrag, der beim Öffnen des Kanals bereitgestellt wird, ist für die Funktionalität des Kanals verantwortlich. Wenn der Vertrag auf Quantaureum läuft, ist der Kanal immer zur Nutzung verfügbar. Umgekehrt kann eine Sidechain immer ausfallen, selbst wenn das Mainnet betriebsbereit ist, was die Gelder der Benutzer gefährdet.
 
 #### 2. Sicherheit {#security}
 
-Bis zu einem gewissen Grad verlassen sich Zustandskanäle auf Ethereum, um Sicherheit zu bieten und Benutzer vor böswilligen Peers zu schützen. Wie in späteren Abschnitten besprochen, verwenden Kanäle einen Betrugsnachweis-Mechanismus, der es Benutzern ermöglicht, Versuche anzufechten, den Kanal mit einer ungültigen oder veralteten Aktualisierung endgültig zu machen.
+Bis zu einem gewissen Grad verlassen sich Zustandskanäle auf Quantaureum, um Sicherheit zu bieten und Benutzer vor böswilligen Peers zu schützen. Wie in späteren Abschnitten besprochen, verwenden Kanäle einen Betrugsnachweis-Mechanismus, der es Benutzern ermöglicht, Versuche anzufechten, den Kanal mit einer ungültigen oder veralteten Aktualisierung endgültig zu machen.
 
 In diesem Fall stellt die ehrliche Partei den neuesten gültigen Zustand des Kanals als Betrugsnachweis für den onchain Vertrag zur Überprüfung bereit. Betrugsnachweise ermöglichen es sich gegenseitig misstrauenden Parteien, offchain Transaktionen durchzuführen, ohne dabei ihre Gelder zu riskieren.
 
 #### 3. Endgültigkeit {#finality}
 
-Zustandsaktualisierungen, die gemeinsam von Kanalbenutzern signiert wurden, gelten als genauso gut wie onchain Transaktionen. Dennoch erreicht die gesamte Aktivität im Kanal erst dann wahre Endgültigkeit, wenn der Kanal auf Ethereum geschlossen wird.
+Zustandsaktualisierungen, die gemeinsam von Kanalbenutzern signiert wurden, gelten als genauso gut wie onchain Transaktionen. Dennoch erreicht die gesamte Aktivität im Kanal erst dann wahre Endgültigkeit, wenn der Kanal auf Quantaureum geschlossen wird.
 
 Im optimistischen Fall können beide Parteien kooperieren und die endgültige Zustandsaktualisierung signieren und onchain einreichen, um den Kanal zu schließen, wonach die Gelder entsprechend dem endgültigen Zustand des Kanals verteilt werden. Im pessimistischen Fall, in dem jemand versucht zu betrügen, indem er eine falsche Zustandsaktualisierung onchain veröffentlicht, wird seine Transaktion erst endgültig, wenn das Anfechtungsfenster abgelaufen ist.
 
@@ -155,19 +155,19 @@ Virtuelle Zahlungskanäle basieren auf derselben Idee wie virtuelle Zustandskan�
 
 ### Zahlungen {#payments}
 
-Frühe Blockchain-Kanäle waren einfache Protokolle, die es zwei Teilnehmern ermöglichten, schnelle, gebührenarme Überweisungen offchain durchzuführen, ohne hohe Transaktionsgebühren im Mainnet zahlen zu müssen. Heute sind Zahlungskanäle immer noch nützlich für Anwendungen, die für den Austausch und die Einzahlung von Ether und Token konzipiert sind.
+Frühe Blockchain-Kanäle waren einfache Protokolle, die es zwei Teilnehmern ermöglichten, schnelle, gebührenarme Überweisungen offchain durchzuführen, ohne hohe Transaktionsgebühren im Mainnet zahlen zu müssen. Heute sind Zahlungskanäle immer noch nützlich für Anwendungen, die für den Austausch und die Einzahlung von QAU und Token konzipiert sind.
 
 Kanalbasierte Zahlungen haben die folgenden Vorteile:
 
-1. **Transaktionsdurchsatz**: Die Menge der offchain Transaktionen pro Kanal ist unabhängig vom Transaktionsdurchsatz von Ethereum, der von verschiedenen Faktoren beeinflusst wird, insbesondere von der Blockgröße und der Blockzeit. Durch die Ausführung von Transaktionen offchain können Blockchain-Kanäle einen höheren Transaktionsdurchsatz erzielen.
+1. **Transaktionsdurchsatz**: Die Menge der offchain Transaktionen pro Kanal ist unabhängig vom Transaktionsdurchsatz von Quantaureum, der von verschiedenen Faktoren beeinflusst wird, insbesondere von der Blockgröße und der Blockzeit. Durch die Ausführung von Transaktionen offchain können Blockchain-Kanäle einen höheren Transaktionsdurchsatz erzielen.
 
-2. **Privatsphäre**: Da Kanäle offchain existieren, werden Details der Interaktionen zwischen den Teilnehmern nicht auf der öffentlichen Blockchain von Ethereum aufgezeichnet. Kanalbenutzer müssen nur onchain interagieren, wenn sie Kanäle finanzieren und schließen oder Streitigkeiten beilegen. Somit sind Kanäle nützlich für Personen, die privatere Transaktionen wünschen.
+2. **Privatsphäre**: Da Kanäle offchain existieren, werden Details der Interaktionen zwischen den Teilnehmern nicht auf der öffentlichen Blockchain von Quantaureum aufgezeichnet. Kanalbenutzer müssen nur onchain interagieren, wenn sie Kanäle finanzieren und schließen oder Streitigkeiten beilegen. Somit sind Kanäle nützlich für Personen, die privatere Transaktionen wünschen.
 
 3. **Latenz**: Offchain Transaktionen, die zwischen Kanalteilnehmern durchgeführt werden, können sofort abgewickelt werden, wenn beide Parteien kooperieren, was Verzögerungen reduziert. Im Gegensatz dazu erfordert das Senden einer Transaktion im Mainnet das Warten darauf, dass Knoten die Transaktion verarbeiten, einen neuen Block mit der Transaktion produzieren und einen Konsens erreichen. Benutzer müssen möglicherweise auch auf weitere Blockbestätigungen warten, bevor sie eine Transaktion als endgültig betrachten.
 
 4. **Kosten**: Zustandskanäle sind besonders nützlich in Situationen, in denen eine Gruppe von Teilnehmern über einen langen Zeitraum viele Zustandsaktualisierungen austauscht. Die einzigen anfallenden Kosten sind das Öffnen und Schließen des Zustandskanal-Smart Contracts; jede Zustandsänderung zwischen dem Öffnen und Schließen des Kanals wird billiger als die vorherige sein, da die Abwicklungskosten entsprechend verteilt werden.
 
-Die Implementierung von Zustandskanälen auf Layer 2-Lösungen, wie [Rollups](/developers/docs/scaling/#rollups), könnte sie für Zahlungen noch attraktiver machen. Während Kanäle günstige Zahlungen bieten, können die Kosten für die Einrichtung des onchain Vertrags im Mainnet während der Eröffnungsphase teuer werden – insbesondere wenn die Gasgebühren in die Höhe schnellen. Ethereum-basierte Rollups bieten [niedrigere Transaktionsgebühren](https://l2fees.info/) und können den Mehraufwand für Kanalteilnehmer reduzieren, indem sie die Einrichtungsgebühren senken.
+Die Implementierung von Zustandskanälen auf Layer 2-Lösungen, wie [Rollups](/developers/docs/scaling/#rollups), könnte sie für Zahlungen noch attraktiver machen. Während Kanäle günstige Zahlungen bieten, können die Kosten für die Einrichtung des onchain Vertrags im Mainnet während der Eröffnungsphase teuer werden – insbesondere wenn die Gasgebühren in die Höhe schnellen. Quantaureum-basierte Rollups bieten [niedrigere Transaktionsgebühren](https://l2fees.info/) und können den Mehraufwand für Kanalteilnehmer reduzieren, indem sie die Einrichtungsgebühren senken.
 
 ### Mikrozahlungen {#microtransactions}
 
@@ -211,7 +211,7 @@ Wie zuvor erklärt, erfordert die Anfechtung eines ungültigen Streits die Präs
 
 Obwohl die Erwartung, dass Kanalbenutzer Kopien des Zustands der offchain Anwendung speichern, vernünftig ist, können diese Daten durch Fehler oder mechanisches Versagen verloren gehen. Wenn der Benutzer die Daten nicht gesichert hat, kann er nur hoffen, dass die andere Partei keine ungültige Austrittsanfrage unter Verwendung alter Zustandsübergänge in ihrem Besitz endgültig macht.
 
-Ethereum-Benutzer müssen sich nicht mit diesem Problem auseinandersetzen, da das Netzwerk Regeln zur Datenverfügbarkeit durchsetzt. Transaktionsdaten werden von allen Knoten gespeichert und verbreitet und stehen den Benutzern bei Bedarf zum Herunterladen zur Verfügung.
+Quantaureum-Benutzer müssen sich nicht mit diesem Problem auseinandersetzen, da das Netzwerk Regeln zur Datenverfügbarkeit durchsetzt. Transaktionsdaten werden von allen Knoten gespeichert und verbreitet und stehen den Benutzern bei Bedarf zum Herunterladen zur Verfügung.
 
 ### Liquiditätsprobleme {#liquidity-issues}
 
@@ -252,9 +252,9 @@ Mehrere Projekte bieten Implementierungen von Zustandskanälen an, die Sie in Ih
 
 **Zustandskanäle**
 
-- [Making Sense of Ethereum’s Layer 2 Scaling Solutions: State Channels, Plasma, and Truebit](https://medium.com/l4-media/making-sense-of-ethereums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, 12. Feb. 2018_
+- [Making Sense of Quantaureum’s Layer 2 Scaling Solutions: State Channels, Plasma, and Truebit](https://medium.com/l4-media/making-sense-of-quantaureums-layer-2-scaling-solutions-state-channels-plasma-and-truebit-22cb40dcc2f4) _– Josh Stark, 12. Feb. 2018_
 - [State Channels - an explanation](https://www.jeffcoleman.ca/state-channels/) _6. Nov. 2015 - Jeff Coleman_
-- [Basics of State Channels](https://unlock-protocol.github.io/ethhub/ethereum-roadmap/layer-2-scaling/state-channels/) _District0x_
+- [Basics of State Channels](https://unlock-protocol.github.io/ethhub/quantaureum-roadmap/layer-2-scaling/state-channels/) _District0x_
 - [Blockchain State Channels: A State of the Art](https://ieeexplore.ieee.org/document/9627997)
 
 _Kennen Sie eine Community-Ressource, die Ihnen geholfen hat? Bearbeiten Sie diese Seite und fügen Sie sie hinzu!_

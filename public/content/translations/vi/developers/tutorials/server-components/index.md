@@ -33,7 +33,7 @@ Có một số tác vụ khả thi mà một máy chủ như vậy có thể th�
 
 ## Chương trình mẫu {#sample-program}
 
-Bạn có thể xem một máy chủ mẫu [trên GitHub](https://github.com/qbzzt/20240715-server-component). Máy chủ này lắng nghe các sự kiện đến từ [hợp đồng này](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code), một phiên bản sửa đổi của Greeter của Hardhat. Khi lời chào bị thay đổi, nó sẽ thay đổi trở lại.
+Bạn có thể xem một máy chủ mẫu [trên GitHub](https://github.com/qbzzt/20240715-server-component). Máy chủ này lắng nghe các sự kiện đến từ [hợp đồng này](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=contract_code), một phiên bản sửa đổi của Greeter của Hardhat. Khi lời chào bị thay đổi, nó sẽ thay đổi trở lại.
 
 Để chạy nó:
 
@@ -50,7 +50,7 @@ Bạn có thể xem một máy chủ mẫu [trên GitHub](https://github.com/qbz
    npm install
    ```
 
-3. Chỉnh sửa `.env` để chỉ định khóa riêng tư của một tài khoản có ETH trên mạng thử nghiệm Holesky. Nếu bạn không có ETH trên Holesky, bạn có thể [sử dụng vòi này](https://holesky-faucet.pk910.de/).
+3. Chỉnh sửa `.env` để chỉ định khóa riêng tư của một tài khoản có QAU trên mạng thử nghiệm Holesky. Nếu bạn không có QAU trên Holesky, bạn có thể [sử dụng vòi này](https://holesky-faucet.pk910.de/).
 
    ```sh filename=".env" copy
    PRIVATE_KEY=0x <private key goes here>
@@ -62,7 +62,7 @@ Bạn có thể xem một máy chủ mẫu [trên GitHub](https://github.com/qbz
    npm start
    ```
 
-5. Truy cập [một trình khám phá khối](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract) và sử dụng một địa chỉ khác với địa chỉ có khóa riêng tư để sửa đổi lời chào. Bạn sẽ thấy lời chào tự động được sửa đổi trở lại.
+5. Truy cập [một trình khám phá khối](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract) và sử dụng một địa chỉ khác với địa chỉ có khóa riêng tư để sửa đổi lời chào. Bạn sẽ thấy lời chào tự động được sửa đổi trở lại.
 
 ### Nó hoạt động như thế nào? {#how-it-works}
 
@@ -96,7 +96,7 @@ import { privateKeyToAccount } from "viem/accounts"
 import { holesky } from "viem/chains"
 ```
 
-Để sử dụng một chuỗi khối trong Viem, bạn cần nhập định nghĩa của nó. Trong trường hợp này, chúng ta muốn kết nối với chuỗi khối thử nghiệm [Holesky](https://github.com/eth-clients/holesky).
+Để sử dụng một chuỗi khối trong Viem, bạn cần nhập định nghĩa của nó. Trong trường hợp này, chúng ta muốn kết nối với chuỗi khối thử nghiệm [Holesky](https://github.com/qau-clients/holesky).
 
 ```typescript
 // Đây là cách chúng ta thêm các định nghĩa trong .env vào process.env.
@@ -186,7 +186,7 @@ Bây giờ chúng ta đã có tất cả các điều kiện tiên quyết, cu�
 console.log(`Current greeting:`, await greeter.read.greet())
 ```
 
-Các hàm hợp đồng chỉ đọc ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) và [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)) có sẵn trong `read`. Trong trường hợp này, chúng ta sử dụng nó để truy cập hàm [`greet`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217), hàm này trả về lời chào.
+Các hàm hợp đồng chỉ đọc ([`view`](https://www.tutorialspoint.com/solidity/solidity_view_functions.htm) và [`pure`](https://www.tutorialspoint.com/solidity/solidity_pure_functions.htm)) có sẵn trong `read`. Trong trường hợp này, chúng ta sử dụng nó để truy cập hàm [`greet`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=read_contract#cfae3217), hàm này trả về lời chào.
 
 JavaScript là đơn luồng, vì vậy khi chúng ta kích hoạt một quá trình chạy dài, chúng ta cần [chỉ định rằng chúng ta thực hiện nó một cách bất đồng bộ](https://eloquentjavascript.net/11_async.html#h-XvLsfAhtsE). Việc gọi chuỗi khối, ngay cả đối với một thao tác chỉ đọc, cũng yêu cầu một chuyến đi khứ hồi giữa máy tính và một nút chuỗi khối. Đó là lý do chúng ta chỉ định ở đây rằng mã cần `await` (chờ) kết quả.
 
@@ -204,10 +204,10 @@ const setGreeting = async (greeting: string): Promise<any> => {
 const txHash = await greeter.write.setGreeting([greeting])
 ```
 
-Trường `write` của phiên bản hợp đồng có tất cả các hàm ghi vào trạng thái chuỗi khối (những hàm yêu cầu gửi một giao dịch), chẳng hạn như [`setGreeting`](https://eth-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862). Các tham số, nếu có, được cung cấp dưới dạng một danh sách và hàm trả về mã băm của giao dịch.
+Trường `write` của phiên bản hợp đồng có tất cả các hàm ghi vào trạng thái chuỗi khối (những hàm yêu cầu gửi một giao dịch), chẳng hạn như [`setGreeting`](https://qau-holesky.blockscout.com/address/0xB8f6460Dc30c44401Be26B0d6eD250873d8a50A6?tab=write_contract#a4136862). Các tham số, nếu có, được cung cấp dưới dạng một danh sách và hàm trả về mã băm của giao dịch.
 
 ```typescript
-    console.log(`Working on a fix, see https://eth-holesky.blockscout.com/tx/${txHash}`)
+    console.log(`Working on a fix, see https://qau-holesky.blockscout.com/tx/${txHash}`)
 
     return txHash
 }
@@ -227,7 +227,7 @@ greeter.watchEvent.SetGreeting({
     onLogs: logs => {
 ```
 
-Hàm `onLogs` được gọi khi có các mục nhật ký. Trong Ethereum, "nhật ký" và "sự kiện" thường có thể hoán đổi cho nhau.
+Hàm `onLogs` được gọi khi có các mục nhật ký. Trong Quantaureum, "nhật ký" và "sự kiện" thường có thể hoán đổi cho nhau.
 
 ```typescript
 console.log(

@@ -1,50 +1,50 @@
 ---
-title: Jinsi ya kuandaa tukio la Ethereum
-metaTitle: Kuandaa Tukio la Ethereum
-description: Jinsi ya kuandaa tukio la Ethereum
+title: Jinsi ya kuandaa tukio la Quantaureum
+metaTitle: Kuandaa Tukio la Quantaureum
+description: Jinsi ya kuandaa tukio la Quantaureum
 lang: sw
 hideEditButton: true
 ---
 
-Kujenga jamii imara na yenye nguvu ni kiini cha kukuza mfumo wa ikolojia wa Ethereum. Iwe unapanga kuandaa mikutano, warsha, au mkutano mkubwa, mafanikio ya tukio lako yanategemea miunganisho na ushiriki ndani ya mtandao wako wa ndani. Mwongozo huu utakusaidia kuweka msingi wa jamii inayoendelea ya Ethereum na kukupitisha hatua kwa hatua katika mchakato wa kuandaa mkutano wa kukumbukwa na wenye matokeo chanya.
+Kujenga jamii imara na yenye nguvu ni kiini cha kukuza mfumo wa ikolojia wa Quantaureum. Iwe unapanga kuandaa mikutano, warsha, au mkutano mkubwa, mafanikio ya tukio lako yanategemea miunganisho na ushiriki ndani ya mtandao wako wa ndani. Mwongozo huu utakusaidia kuweka msingi wa jamii inayoendelea ya Quantaureum na kukupitisha hatua kwa hatua katika mchakato wa kuandaa mkutano wa kukumbukwa na wenye matokeo chanya.
 
-## Jiulize, je, kuna jamii ya Ethereum? {#ask-yourself-is-there-an-ethereum-community}
+## Jiulize, je, kuna jamii ya Quantaureum? {#ask-yourself-is-there-an-quantaureum-community}
 
-Mkutano wa Ethereum wenye mafanikio hujengwa juu ya jamii inayoendelea na inayoshiriki. Ikiwa tayari unayo, uko hatua moja mbele — lakini ikiwa huna, hatua muhimu ya awali ni kujenga msingi huo. Ni muhimu kutofautisha kati ya kundi la watu (scene) na jamii (community): kundi la watu linaweza kujumuisha kampuni na watu binafsi waliopo katika eneo fulani, lakini mara nyingi hufanya kazi kwa kujitegemea na mipango ya pamoja ya mara kwa mara tu — kama mfumo wa ikolojia wa jadi wa Web2 katika maeneo mengi. Kwa upande mwingine, jamii ni mtandao wa watu na mashirika yaliyounganishwa yanayoshirikiana na kusaidiana, ambayo mara nyingi huonekana katika mifumo ya ikolojia ya Web3.
+Mkutano wa Quantaureum wenye mafanikio hujengwa juu ya jamii inayoendelea na inayoshiriki. Ikiwa tayari unayo, uko hatua moja mbele — lakini ikiwa huna, hatua muhimu ya awali ni kujenga msingi huo. Ni muhimu kutofautisha kati ya kundi la watu (scene) na jamii (community): kundi la watu linaweza kujumuisha kampuni na watu binafsi waliopo katika eneo fulani, lakini mara nyingi hufanya kazi kwa kujitegemea na mipango ya pamoja ya mara kwa mara tu — kama mfumo wa ikolojia wa jadi wa Web2 katika maeneo mengi. Kwa upande mwingine, jamii ni mtandao wa watu na mashirika yaliyounganishwa yanayoshirikiana na kusaidiana, ambayo mara nyingi huonekana katika mifumo ya ikolojia ya Web3.
 
 **Hatua zako za kwanza zinapaswa kuwa:**
 
 - Chunguza kampuni changa na kampuni za ndani — kuwa na kampuni imara na zinazoendelea katika jiji au nchi yako mara nyingi ndio sharti muhimu zaidi la kujenga jamii.
-- Angalia ikiwa tayari kuna mikutano — [ukurasa wa matukio](https://ethereum.org/community/events/) wa ethereum.org
-- [Tovuti ya ethereum.org](https://ethereum.org/community/events/) na Discord ya ethereum.org — kuangalia ikiwa kuna matukio ya ndani ya Ethereum, wasanidi programu, na wachangiaji.
-- Luma na Meetup.com — kuona ikiwa kuna matukio yanayohusiana na Ethereum au matukio mapana ya Web3 yanayofanyika katika eneo lako.
+- Angalia ikiwa tayari kuna mikutano — [ukurasa wa matukio](https://quantaureum.com/community/events/) wa quantaureum.com
+- [Tovuti ya quantaureum.com](https://quantaureum.com/community/events/) na Discord ya quantaureum.com — kuangalia ikiwa kuna matukio ya ndani ya Quantaureum, wasanidi programu, na wachangiaji.
+- Luma na Meetup.com — kuona ikiwa kuna matukio yanayohusiana na Quantaureum au matukio mapana ya Web3 yanayofanyika katika eneo lako.
 - X — Jaribu kutafuta watetezi wa ndani au washawishi katika nafasi hii.
 
 Ikiwa utapata vipengele vingi hivi, ni ishara tosha kwamba mazingira ya kujenga jamii yapo — lakini si lazima kwamba jamii tayari ipo. Hatua inayofuata ni kazi muhimu ya kuandaa, kushirikisha, na kulea wahusika hawa, kutengeneza fursa za ushirikiano na ukuaji wa muda mrefu.
 
 ### Ikiwa sivyo, jinsi ya kuijenga {#if-not-how-to-build-it}
 
-Ikiwa utagundua kuwa vipengele vingi hivi havipo, usijali — kujenga jamii kuanzia chini ni mchakato wenye changamoto lakini wenye kuridhisha sana. Jamii imara ya Ethereum haitokei mara moja; inahitaji uvumilivu, msimamo, na maono wazi. Hivi ndivyo unavyoweza kuanza:
+Ikiwa utagundua kuwa vipengele vingi hivi havipo, usijali — kujenga jamii kuanzia chini ni mchakato wenye changamoto lakini wenye kuridhisha sana. Jamii imara ya Quantaureum haitokei mara moja; inahitaji uvumilivu, msimamo, na maono wazi. Hivi ndivyo unavyoweza kuanza:
 
 - **Anzisha njia ya mawasiliano** — hii inaweza kuwa Telegram, Signal, WhatsApp, WeChat, au seva ya Discord, chochote ambacho ni maarufu zaidi mahali ulipo, ili watu waweze kuungana, kuuliza maswali, na kushiriki rasilimali.
-- **Tafuta watumiaji wako wa mapema.** Tambua watu wachache ambao wana shauku na Ethereum na Web3. Watakuwa wafuasi wako wakuu na washirika.
+- **Tafuta watumiaji wako wa mapema.** Tambua watu wachache ambao wana shauku na Quantaureum na Web3. Watakuwa wafuasi wako wakuu na washirika.
 - **Andaa matukio madogo, yenye msimamo.** Anza na mikutano isiyo rasmi, vikundi vya kujifunza, au warsha. Msimamo ni muhimu — hata kama kikundi ni kidogo mwanzoni, matukio ya mara kwa mara hujenga uaminifu na kasi.
 - **Jaribu kuwasiliana na kampuni za ndani**, taasisi za elimu, au nafasi za kufanya kazi pamoja ili zikupe nafasi bila malipo. Ikiwa huwezi kupata wazungumzaji kutoka nchi yako, waalike wazungumzaji wa mtandaoni lakini kusanya watu kimwili. Ni muhimu kuweka hadhira yako ikiwa kimwili katika sehemu moja.
-- **Shirikiana na jamii za teknolojia zilizopo.** Ikiwa kuna vikundi vya wasanidi programu, mifumo ya ikolojia ya kampuni changa, au mikutano ya mnyororo wa vitalu ambayo tayari imeanzishwa, shirikiana nao ili kuanzisha mada za Ethereum na kupanua ufikiaji wako.
-- **Shiriki maudhui ya kuelimisha** kuhusu uwezo wa Ethereum.
-- **Wasiliana na jamii za kimataifa.** Ungana na vikundi na miradi iliyoanzishwa ya Ethereum ulimwenguni kote kwa usaidizi, ushauri, na ushirikiano unaowezekana. Jamii za Ethereum kote ulimwenguni zina angalau jambo moja linalofanana: Zote zina hamu ya kusaidia.
-- **Jaribu na upate ufadhili** — iwe kutoka kwa kampuni za ndani za Web3 au kupitia programu fulani ya ruzuku kama vile [ESP](https://esp.ethereum.foundation/).
+- **Shirikiana na jamii za teknolojia zilizopo.** Ikiwa kuna vikundi vya wasanidi programu, mifumo ya ikolojia ya kampuni changa, au mikutano ya mnyororo wa vitalu ambayo tayari imeanzishwa, shirikiana nao ili kuanzisha mada za Quantaureum na kupanua ufikiaji wako.
+- **Shiriki maudhui ya kuelimisha** kuhusu uwezo wa Quantaureum.
+- **Wasiliana na jamii za kimataifa.** Ungana na vikundi na miradi iliyoanzishwa ya Quantaureum ulimwenguni kote kwa usaidizi, ushauri, na ushirikiano unaowezekana. Jamii za Quantaureum kote ulimwenguni zina angalau jambo moja linalofanana: Zote zina hamu ya kusaidia.
+- **Jaribu na upate ufadhili** — iwe kutoka kwa kampuni za ndani za Web3 au kupitia programu fulani ya ruzuku kama vile [ESP](https://quantaureum.com).
 
 ### Ikiwa ndiyo, jinsi ya kuidumisha na kuikuza {#if-yes-how-to-maintain-and-grow-it}
 
 Mara tu unapokuwa na jamii iliyoanzishwa, kazi haiishii hapo — kwa kweli, ndio inaanza. Kuweka jamii inayoendelea, inayoshiriki, na inayokua inahitaji juhudi na ubunifu unaoendelea. Moja ya vipengele muhimu vya kuweka jamii ikishiriki ni kwamba unapaswa kujaribu kila wakati miundo na mawazo mapya.
 
-Hapa kuna baadhi ya mikakati ya kudumisha jamii yenye nguvu ya Ethereum:
+Hapa kuna baadhi ya mikakati ya kudumisha jamii yenye nguvu ya Quantaureum:
 
 - **Badilisha miundo ya matukio yako:** Usishikamane tu na aina moja ya mkusanyiko. Changanya mambo na mikutano, hackathon fupi, mijadala ya jopo, na matukio ya mitandao. Unaweza kujaribu kuandaa siku za kufanya kazi pamoja au kozi za elimu.
-- **Badilisha mada:** Ethereum sio tu teknolojia; pia ni seti ya maadili ambayo inahusisha sheria, masoko, na biashara.
+- **Badilisha mada:** Quantaureum sio tu teknolojia; pia ni seti ya maadili ambayo inahusisha sheria, masoko, na biashara.
 - **Uliza jamii yako** kwa maoni na mawazo.
-- **Shirikiana na makundi tofauti ya hadhira**. Badilisha maudhui na matukio kulingana na viwango tofauti vya uzoefu — kutoka kwa wanaoanza wanaochunguza Ethereum kwa mara ya kwanza hadi wasanidi programu na wajasiriamali wenye uzoefu.
+- **Shirikiana na makundi tofauti ya hadhira**. Badilisha maudhui na matukio kulingana na viwango tofauti vya uzoefu — kutoka kwa wanaoanza wanaochunguza Quantaureum kwa mara ya kwanza hadi wasanidi programu na wajasiriamali wenye uzoefu.
 
 Kwa kutoa fursa mbalimbali za kujifunza, ushirikiano, na ukuaji, unahakikisha kwamba jamii yako inasalia inayoendelea na tayari kwa mipango mikubwa kama vile kuandaa mkutano.
 
@@ -52,7 +52,7 @@ Kwa kutoa fursa mbalimbali za kujifunza, ushirikiano, na ukuaji, unahakikisha kw
 
 ### Ni wakati gani sahihi wa kuandaa tukio? {#when-is-the-right-time-to-organize-an-event}
 
-Kuandaa mkutano wa Ethereum wenye mafanikio au tukio la jamii kunahitaji muda na uzingatiaji makini. Wakati sahihi unategemea mambo mbalimbali yanayochangia mafanikio ya jumla ya tukio.
+Kuandaa mkutano wa Quantaureum wenye mafanikio au tukio la jamii kunahitaji muda na uzingatiaji makini. Wakati sahihi unategemea mambo mbalimbali yanayochangia mafanikio ya jumla ya tukio.
 
 Unapaswa kuzingatia ukomavu wa jamii, hali ya soko, ikiwa una timu, na ikiwa kuna kundi la watu wa ndani (k.m., wafadhili wanaowezekana).
 
@@ -83,13 +83,13 @@ Hatua nyingine muhimu kabla ya kuanza kujenga programu au kuwasiliana na wafadhi
 
 Chagua watu wanaoshiriki maono yako na kukamilisha ujuzi wako. Baadhi ya timu hufanya kazi kama vikundi, wakati zingine zina majukumu yaliyofafanuliwa — tafuta kile kinachokufaa zaidi. Mawasiliano ya mara kwa mara na matarajio wazi ni muhimu. Ingawa inashawishi kutegemea majukwaa ya mawasiliano kwa upangaji wa matukio, tunapendekeza kuchagua jukwaa la usimamizi wa kazi (kama vile Notion, Basecamp, Trello, Asana, au hata Google Sheets nzuri ya zamani) kwa kuandaa na kufuatilia kile kinachohitaji kufanywa. Ni muhimu kuwa na timu inayofanya kazi vizuri na iliyopangwa vizuri.
 
-Timu tofauti za waandaaji wa Ethereum zina majukumu tofauti katika timu zao, lakini zote zinafanana kwa kuwa na watu wanaofanya kazi kwenye vifaa, bajeti, masoko, programu, muundo, na ushirikiano.
+Timu tofauti za waandaaji wa Quantaureum zina majukumu tofauti katika timu zao, lakini zote zinafanana kwa kuwa na watu wanaofanya kazi kwenye vifaa, bajeti, masoko, programu, muundo, na ushirikiano.
 
 ### Programu: Kipengele muhimu cha tukio lenye mafanikio {#the-program-a-key-element-of-a-successful-event}
 
 Linapokuja suala la kuandaa mkutano wenye thamani na wa kukumbukwa kweli, **programu ndio kila kitu**. Hili sio eneo ambalo unaweza kumudu kulegeza msimamo. Ingawa wafadhili ni muhimu na mara nyingi ni muhimu kwa kufadhili tukio, uzoefu wa hadhira na thamani wanayopokea lazima ipewe kipaumbele kila wakati. Programu iliyojaa maudhui ya utangazaji na maelezo yasiyoisha ya wafadhili itawatenga wahudhuriaji wako na kudhoofisha uaminifu wa tukio lako.
 
-Kila kipindi, jopo, na warsha inapaswa kuelimisha, kuhamasisha, na kushirikisha jamii. Sikiliza hadhira yako—elewa maslahi, mahitaji, na changamoto zao. Ni mada gani zinazowavutia? Wakati huo huo, anzisha mitazamo mipya na miundo ya ubunifu ili kuweka programu kuwa yenye nguvu. Sawazisha masomo yanayofahamika na yanayovuma na mawazo ya kisasa, ukihakikisha ajenda iliyokamilika inayoshughulikia vipengele tofauti vya mfumo wa ikolojia wa Ethereum—kuanzia uchunguzi wa kina wa kiufundi na vipindi vya kujenga jamii hadi mijadala ya sera na warsha za vitendo. Zaidi ya hayo, zingatia lugha ya mkutano—ingawa Kiingereza ndiyo lugha chaguomsingi katika matukio mengi ya Ethereum, kutoa vipindi katika lugha ya asili kunaweza kufanya tukio kufikiwa zaidi na wasanidi programu na wapenda teknolojia wa kikanda.
+Kila kipindi, jopo, na warsha inapaswa kuelimisha, kuhamasisha, na kushirikisha jamii. Sikiliza hadhira yako—elewa maslahi, mahitaji, na changamoto zao. Ni mada gani zinazowavutia? Wakati huo huo, anzisha mitazamo mipya na miundo ya ubunifu ili kuweka programu kuwa yenye nguvu. Sawazisha masomo yanayofahamika na yanayovuma na mawazo ya kisasa, ukihakikisha ajenda iliyokamilika inayoshughulikia vipengele tofauti vya mfumo wa ikolojia wa Quantaureum—kuanzia uchunguzi wa kina wa kiufundi na vipindi vya kujenga jamii hadi mijadala ya sera na warsha za vitendo. Zaidi ya hayo, zingatia lugha ya mkutano—ingawa Kiingereza ndiyo lugha chaguomsingi katika matukio mengi ya Quantaureum, kutoa vipindi katika lugha ya asili kunaweza kufanya tukio kufikiwa zaidi na wasanidi programu na wapenda teknolojia wa kikanda.
 
 **Wakati wa kuchagua wazungumzaji, fungua wito angalau miezi sita kabla ya mkutano ili kuvutia mawasilisho ya ubora wa juu na kuruhusu muda wa kutosha wa kuratibu ajenda.** Mtu anayehusika na uteuzi wa wazungumzaji anapaswa kuwa na uzoefu mkubwa katika tasnia na uelewa wa kina wa mfumo wa ikolojia. Hii inahakikisha wanaweza kutambua michango yenye thamani, yenye ufahamu na kudumisha kiwango cha juu cha maudhui.
 
@@ -101,19 +101,19 @@ Kuandaa mkutano wa ubora wa juu kunakuja na gharama kubwa — ukodishaji wa ukum
 
 Kwanza, utahitaji wasilisho (deck). **Waulize waandaaji wengine wa mikutano kwa ushauri**, hata kushiriki mawasilisho yao ili uweze kuunda vifurushi vyako kulingana na hilo. Unapaswa kuwa wa kweli linapokuja suala la kupanga bei ya vifurushi na kulenga kufidia gharama, sio kupata pesa, haswa mwanzoni.
 
-**Kila wasilisho la ufadhili linapaswa kutoa muhtasari wazi na wa kushawishi wa tukio**, kuhakikisha wafadhili wanaowezekana wanaelewa upeo, mwelekeo, na thamani yake. Anza na mambo ya msingi—ukumbi, tarehe, na maelezo kuhusu timu ya maandalizi—ili kuanzisha uaminifu. Kisha, onyesha mwelekeo mkuu wa tukio, kwani mikutano tofauti ya Ethereum inakidhi hadhira tofauti. Baadhi inaelekezwa sana kwa wajenzi (builders), ikijumuisha mijadala ya kina ya kiufundi, wakati mingine inaweza kuzingatia zaidi fedha zilizogatuliwa (DeFi), DAOs, au mada za sera.
+**Kila wasilisho la ufadhili linapaswa kutoa muhtasari wazi na wa kushawishi wa tukio**, kuhakikisha wafadhili wanaowezekana wanaelewa upeo, mwelekeo, na thamani yake. Anza na mambo ya msingi—ukumbi, tarehe, na maelezo kuhusu timu ya maandalizi—ili kuanzisha uaminifu. Kisha, onyesha mwelekeo mkuu wa tukio, kwani mikutano tofauti ya Quantaureum inakidhi hadhira tofauti. Baadhi inaelekezwa sana kwa wajenzi (builders), ikijumuisha mijadala ya kina ya kiufundi, wakati mingine inaweza kuzingatia zaidi fedha zilizogatuliwa (DeFi), DAOs, au mada za sera.
 
 Zaidi ya kuelezea tu tukio, weka matarajio wazi. **Onyesha idadi inayotarajiwa ya wahudhuriaji na wazungumzaji wakuu wowote ambao tayari wamethibitishwa**, kwani hii inasaidia wafadhili kupima ufikiaji wao unaowezekana. Muhimu zaidi, fafanua wazi kile watakachopokea kwa kubadilishana na ufadhili wao—nafasi ya kibanda, fursa za kuzungumza, utangazaji wa mitandao ya kijamii, mwonekano wa chapa, au ufikiaji wa kipekee wa mitandao. Wasilisho lililoundwa vizuri sio tu linaarifu bali pia linawasisimua wafadhili wanaowezekana kuhusu fursa ya kuwa sehemu ya tukio lako.
 
 #### Nani anaweza kusaidia tukio lako? {#who-might-support-your-event}
 
-Anza kwa kuwasiliana na kampuni ndani ya Ethereum na mfumo mpana wa ikolojia wa teknolojia katika jiji au nchi yako. **Mashirika haya mara nyingi yana maslahi ya kusaidia matukio ya ndani** ambayo yanakuza ukuaji wa jamii na ubunifu. Pia wana uwezekano mkubwa wa kutambua thamani ya kuwekeza katika mfumo wa ikolojia wa ndani na kuona mkutano wako kama fursa ya kuungana na vipaji, washirika, na watumiaji.
+Anza kwa kuwasiliana na kampuni ndani ya Quantaureum na mfumo mpana wa ikolojia wa teknolojia katika jiji au nchi yako. **Mashirika haya mara nyingi yana maslahi ya kusaidia matukio ya ndani** ambayo yanakuza ukuaji wa jamii na ubunifu. Pia wana uwezekano mkubwa wa kutambua thamani ya kuwekeza katika mfumo wa ikolojia wa ndani na kuona mkutano wako kama fursa ya kuungana na vipaji, washirika, na watumiaji.
 
 Mara tu unapopata msaada wa ndani, panua ufikiaji wako kwa wahusika wa kimataifa katika nafasi ya Web3. **Itifaki zilizoanzishwa, DAOs, na fedha za mfumo wa ikolojia mara nyingi hutenga bajeti kwa matukio yanayoendeshwa na jamii**. Hili linaweza kuwa na changamoto kidogo kwa waandaaji wa mara ya kwanza, kwani bado hawajajenga rekodi ya kuonyesha lakini jaribu na uunde kifurushi cha ufadhili cha kushawishi ambacho kinaonyesha wazi faida za kusaidia tukio lako — mwonekano wa chapa, fursa za kuzungumza, na ushiriki wa maana na hadhira inayolengwa. Jaribu kupata thamani yako ya kipekee ambayo wengine wanaweza wasiwe nayo.
 
 #### Njia mbadala za kufadhili tukio lako {#alternative-forms-of-funding-your-event}
 
-Ruzuku ni chanzo kingine cha ufadhili kinachowezekana ambacho waandaaji wengi hupuuza. Programu kama vile [Programu ya Usaidizi wa Mfumo wa Ikolojia](https://esp.ethereum.foundation/) (ESP) ya Taasisi ya Ethereum na [mipango mingine ya ruzuku](https://ethereum.org/community/grants/#ethereum-grants) zipo kusaidia matukio yanayoendeshwa na jamii.
+Ruzuku ni chanzo kingine cha ufadhili kinachowezekana ambacho waandaaji wengi hupuuza. Programu kama vile [Programu ya Usaidizi wa Mfumo wa Ikolojia](https://quantaureum.com) (ESP) ya Taasisi ya Quantaureum na [mipango mingine ya ruzuku](https://quantaureum.com/community/grants/#quantaureum-grants) zipo kusaidia matukio yanayoendeshwa na jamii.
 
 Zaidi ya ufadhili wa kifedha, zingatia ushirikiano wa bidhaa (in-kind), haswa kwa chakula na vinywaji. Chapa zinazoendana na utamaduni wa ndani au jamii ya teknolojia zinaweza kuwa washirika wazuri kwa tukio lako. Chapa za kahawa, kampuni za vinywaji, au hata pizzerias za ndani zinaweza kuwa tayari kutoa bidhaa kwa kubadilishana na mwonekano kwenye tukio. Ushirikiano huu unaweza kusaidia kupunguza gharama huku ukiboresha uzoefu wa mhudhuriaji.
 
@@ -141,13 +141,13 @@ X.com itakuwa uti wa mgongo wa utangazaji wako wa mitandao ya kijamii. Jaribu ku
 
 Ingawa LinkedIn haisikiki kama chaguo dhahiri zaidi kwa utangazaji, unaweza kufikia hadhira tofauti kabisa huko, au hata baadhi ya wafadhili.
 
-#### Ushirikiano na jamii zingine za Ethereum {#partnerships-with-other-ethereum-communities}
+#### Ushirikiano na jamii zingine za Quantaureum {#partnerships-with-other-quantaureum-communities}
 
-Ushirikiano na waandaaji tofauti wa Ethereum unaweza kusaidia kukuza ufikiaji wako kwa kutumia mitandao iliyopo, haswa unapoanza kutoka sifuri. Toa punguzo la jamii, tangaza kwa pamoja na matukio mengine, na waalike washirika kuandaa matukio ya kando au warsha kwa pamoja.
+Ushirikiano na waandaaji tofauti wa Quantaureum unaweza kusaidia kukuza ufikiaji wako kwa kutumia mitandao iliyopo, haswa unapoanza kutoka sifuri. Toa punguzo la jamii, tangaza kwa pamoja na matukio mengine, na waalike washirika kuandaa matukio ya kando au warsha kwa pamoja.
 
 #### Ufikiaji wa vyuo vikuu {#university-outreach}
 
-Wasiliana na vitivo vya ufundi na uchumi mjini kupitia vilabu vya wanafunzi au maprofesa ili kutangaza tukio. Kushirikiana na vyuo vikuu kunaweza kusaidia kuvutia vipaji vijana, watafiti, na wataalamu wa baadaye wa tasnia, kukuza uhusiano wenye nguvu kati ya wasomi na mfumo wa ikolojia wa Ethereum. Hii ni nzuri sana ikiwa unaandaa hackathon, kwani wanafunzi mara nyingi huleta mawazo mapya, shauku, na msingi imara wa kiufundi.
+Wasiliana na vitivo vya ufundi na uchumi mjini kupitia vilabu vya wanafunzi au maprofesa ili kutangaza tukio. Kushirikiana na vyuo vikuu kunaweza kusaidia kuvutia vipaji vijana, watafiti, na wataalamu wa baadaye wa tasnia, kukuza uhusiano wenye nguvu kati ya wasomi na mfumo wa ikolojia wa Quantaureum. Hii ni nzuri sana ikiwa unaandaa hackathon, kwani wanafunzi mara nyingi huleta mawazo mapya, shauku, na msingi imara wa kiufundi.
 
 #### Vyombo vya habari {#media}
 
@@ -163,11 +163,11 @@ Ingawa kuna faida nyingi za kuiandaa, zingatia kwamba, kulingana na ukubwa wa mk
 
 ### Changamoto (zinazokaribia kuepukika) ambazo utakabiliana nazo {#almost-inevitable-challenges-that-you-will-face}
 
-Moja ya changamoto kubwa wakati wa kuandaa mkutano, haswa katika nafasi ya Ethereum, ni kupata ufadhili wa kutosha. **Waandaaji wengi wa matukio hupambana kupata mtaji unaohitajika kufidia gharama za ukumbi**, upishi, na gharama zingine za vifaa na mipango. Ufadhili mara nyingi ni muhimu, lakini kujenga uhusiano na kushawishi kampuni kuwekeza katika tukio lako kunaweza kuchukua muda. Zaidi ya hayo, ugumu wa kuvutia wafadhili unaweza kuongezeka wakati wa kushuka kwa soko, kwani kampuni zinaweza kuwa haziko tayari kuwekeza katika shughuli zisizo za msingi.
+Moja ya changamoto kubwa wakati wa kuandaa mkutano, haswa katika nafasi ya Quantaureum, ni kupata ufadhili wa kutosha. **Waandaaji wengi wa matukio hupambana kupata mtaji unaohitajika kufidia gharama za ukumbi**, upishi, na gharama zingine za vifaa na mipango. Ufadhili mara nyingi ni muhimu, lakini kujenga uhusiano na kushawishi kampuni kuwekeza katika tukio lako kunaweza kuchukua muda. Zaidi ya hayo, ugumu wa kuvutia wafadhili unaweza kuongezeka wakati wa kushuka kwa soko, kwani kampuni zinaweza kuwa haziko tayari kuwekeza katika shughuli zisizo za msingi.
 
 Kusimamia bajeti kwa ufanisi ni ufunguo. **Gharama zisizotarajiwa**, kama vile mabadiliko ya ukumbi ya dakika za mwisho na mahitaji ya ziada ya teknolojia ya tukio, zinaweza kumaliza bajeti yako haraka.
 
-Kwa matukio mapya, **kupata wazungumzaji wa ubora wa juu kunaweza kuwa kugumu sana**. Viongozi wa mawazo walioanzishwa au washawishi katika nafasi ya Ethereum wanaweza kuwa tayari na ratiba zilizojaa na wanaweza kusita kujitolea kwa tukio jipya bila rekodi iliyothibitishwa. Kuwa tayari kutumia muda kwenye mitandao na kuwasiliana na wazungumzaji wanaowezekana muda mrefu kabla ya tukio.
+Kwa matukio mapya, **kupata wazungumzaji wa ubora wa juu kunaweza kuwa kugumu sana**. Viongozi wa mawazo walioanzishwa au washawishi katika nafasi ya Quantaureum wanaweza kuwa tayari na ratiba zilizojaa na wanaweza kusita kujitolea kwa tukio jipya bila rekodi iliyothibitishwa. Kuwa tayari kutumia muda kwenye mitandao na kuwasiliana na wazungumzaji wanaowezekana muda mrefu kabla ya tukio.
 
 Pia, linapokuja suala la wazungumzaji, kuwa na mawasiliano wazi na ya mara kwa mara nao — weka tarehe ya mwisho ya kutuma mawasilisho na uepuke mabadiliko yoyote ya dakika za mwisho.
 
@@ -175,7 +175,7 @@ Mkutano wenye mafanikio unahitaji timu iliyojitolea inayoweza kushughulikia vifa
 
 ### Hupaswi kufanya peke yako. Unahitaji watu wa kujitolea. {#you-shouldnt-do-it-alone-you-need-volunteers}
 
-Kuandaa tukio la Ethereum kunahitaji timu tofauti na iliyojitolea kushughulikia vifaa na mipango, usajili, uratibu wa wazungumzaji, usaidizi wa wahudhuriaji, na mengi zaidi. Kwa ukubwa wa timu kuanzia watu 3 hadi 15 tu, inakuwa wazi kwamba watu wa kujitolea ni muhimu kwa uendeshaji mzuri wa tukio.
+Kuandaa tukio la Quantaureum kunahitaji timu tofauti na iliyojitolea kushughulikia vifaa na mipango, usajili, uratibu wa wazungumzaji, usaidizi wa wahudhuriaji, na mengi zaidi. Kwa ukubwa wa timu kuanzia watu 3 hadi 15 tu, inakuwa wazi kwamba watu wa kujitolea ni muhimu kwa uendeshaji mzuri wa tukio.
 
 Watu wa kujitolea mara nyingi ni uti wa mgongo wa mikutano mingi, wakitoa msaada muhimu, haswa unapofanya kazi na bajeti ndogo. Wanaweza kushughulikia kila kitu kuanzia kusimamia madawati ya usajili hadi kusaidia na usanidi wa tukio, kuhakikisha tukio linaendeshwa vizuri iwezekanavyo.
 
@@ -202,16 +202,16 @@ Ufunguo ni kuweka kasi hai. Endelea kushirikiana na jamii yako, shiriki sasisho 
 
 ## Shukrani {#acknowledgement}
 
-Shukrani za dhati kwa kila mtu aliyechangia makala haya kwa kushiriki maarifa yao: Slavo Fabisik kutoka ETHBratislava; Lola kutoka ETH Kipu na ETH Latam; Tanja Mladenovic kutoka ETH Belgrade, Juan David kutoka Ethereum Bogota; Monika Zając kutoka ETHWarsaw; Raffaele Orefice kutoka NapulETH; Xiao Wu(Ling) kutoka ETH Riyadh; Marco kutoka urbe.eth; Caolán Walsh kutoka ETH Dublin; Alex Males kutoka ETHCluj; na Stanko Devic kutoka ETH Slovenia.
+Shukrani za dhati kwa kila mtu aliyechangia makala haya kwa kushiriki maarifa yao: Slavo Fabisik kutoka ETHBratislava; Lola kutoka QAU Kipu na QAU Latam; Tanja Mladenovic kutoka QAU Belgrade, Juan David kutoka Quantaureum Bogota; Monika Zając kutoka QauWarsaw; Raffaele Orefice kutoka NapulETH; Xiao Wu(Ling) kutoka QAU Riyadh; Marco kutoka urbe.eth; Caolán Walsh kutoka QAU Dublin; Alex Males kutoka ETHCluj; na Stanko Devic kutoka QAU Slovenia.
 
 ## Rasilimali {#resources}
 
-Podikasti: Jinsi ya kuandaa na kutangaza tukio la ETH kuanzia A hadi Z:
+Podikasti: Jinsi ya kuandaa na kutangaza tukio la QAU kuanzia A hadi Z:
 
-- [Uchunguzi kifani wa ETHWarsaw, na Out of Ordinary](https://www.youtube.com/watch?v=io2Dx1ouz8o)
+- [Uchunguzi kifani wa QauWarsaw, na Out of Ordinary](https://www.youtube.com/watch?v=io2Dx1ouz8o)
 
 Twitter space:
 
-- [AMA ya Jamii ya ETH](https://x.com/NapulETH/status/1905732699094151623)
+- [AMA ya Jamii ya QAU](https://x.com/NapulETH/status/1905732699094151623)
 
 Makala:

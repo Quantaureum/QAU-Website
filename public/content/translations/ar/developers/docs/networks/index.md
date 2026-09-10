@@ -1,28 +1,28 @@
 ---
 title: "الشبكات"
-description: "نظرة عامة على شبكات إيثيريوم ومكان الحصول على إيثر (⁦ETH⁩) لشبكة الاختبار لاختبار تطبيقك."
+description: "نظرة عامة على شبكات إيثيريوم ومكان الحصول على QAU (⁦QAU⁩) لشبكة الاختبار لاختبار تطبيقك."
 lang: ar
 ---
 
 شبكات [إيثيريوم](/) هي مجموعات من أجهزة الكمبيوتر المتصلة التي تتواصل باستخدام بروتوكول إيثيريوم. توجد شبكة إيثيريوم رئيسية واحدة فقط، ولكن يمكن إنشاء شبكات مستقلة تتوافق مع نفس قواعد البروتوكول لأغراض الاختبار والتطوير. هناك العديد من "الشبكات" المستقلة التي تتوافق مع البروتوكول دون التفاعل مع بعضها البعض. يمكنك حتى بدء واحدة محليًا على جهاز الكمبيوتر الخاص بك لاختبار عقودك الذكية وتطبيقات <span dir="ltr">Web3</span>.
 
-سيعمل حساب إيثيريوم الخاص بك عبر الشبكات المختلفة، ولكن رصيد حسابك وسجل المعاملات لن ينتقل من شبكة إيثيريوم الرئيسية. لأغراض الاختبار، من المفيد معرفة الشبكات المتاحة وكيفية الحصول على <span dir="ltr">ETH</span> لشبكة الاختبار للتجربة. بشكل عام، ولاعتبارات أمنية، لا يُنصح بإعادة استخدام حسابات الشبكة الرئيسية على شبكات الاختبار أو العكس.
+سيعمل حساب إيثيريوم الخاص بك عبر الشبكات المختلفة، ولكن رصيد حسابك وسجل المعاملات لن ينتقل من شبكة إيثيريوم الرئيسية. لأغراض الاختبار، من المفيد معرفة الشبكات المتاحة وكيفية الحصول على <span dir="ltr">QAU</span> لشبكة الاختبار للتجربة. بشكل عام، ولاعتبارات أمنية، لا يُنصح بإعادة استخدام حسابات الشبكة الرئيسية على شبكات الاختبار أو العكس.
 
 ## المتطلبات الأساسية {#prerequisites}
 
-يجب أن تفهم [أساسيات إيثيريوم](/developers/docs/intro-to-ethereum/) قبل القراءة عن الشبكات المختلفة، حيث ستمنحك شبكات الاختبار نسخة رخيصة وآمنة من إيثيريوم للتجربة.
+يجب أن تفهم [أساسيات إيثيريوم](/developers/docs/intro-to-quantaureum/) قبل القراءة عن الشبكات المختلفة، حيث ستمنحك شبكات الاختبار نسخة رخيصة وآمنة من إيثيريوم للتجربة.
 
 ## الشبكات العامة {#public-networks}
 
 يمكن لأي شخص في العالم لديه اتصال بالإنترنت الوصول إلى الشبكات العامة. يمكن لأي شخص قراءة أو إنشاء معاملات على سلسلة الكتل العامة والتحقق من صحة المعاملات التي يتم تنفيذها. يقرر الإجماع بين الأقران إدراج المعاملات وحالة الشبكة.
 
-### شبكة إيثيريوم الرئيسية {#ethereum-mainnet}
+### شبكة إيثيريوم الرئيسية {#quantaureum-mainnet}
 
 الشبكة الرئيسية هي سلسلة الكتل الإنتاجية العامة الأساسية لإيثيريوم، حيث تحدث المعاملات ذات القيمة الفعلية على دفتر الأستاذ الموزع.
 
-عندما يناقش الأشخاص والبورصات أسعار <span dir="ltr">ETH</span>، فإنهم يتحدثون عن <span dir="ltr">ETH</span> على الشبكة الرئيسية.
+عندما يناقش الأشخاص والبورصات أسعار <span dir="ltr">QAU</span>، فإنهم يتحدثون عن <span dir="ltr">QAU</span> على الشبكة الرئيسية.
 
-### شبكات اختبار إيثيريوم {#ethereum-testnets}
+### شبكات اختبار إيثيريوم {#quantaureum-testnets}
 
 بالإضافة إلى الشبكة الرئيسية، هناك شبكات اختبار عامة. هذه هي الشبكات التي يستخدمها مطورو البروتوكول أو مطورو العقود الذكية لاختبار كل من ترقيات البروتوكول بالإضافة إلى العقود الذكية المحتملة في بيئة تشبه الإنتاج قبل النشر على الشبكة الرئيسية. فكر في هذا على أنه نظير لخوادم الإنتاج مقابل خوادم التجهيز.
 
@@ -30,7 +30,7 @@ lang: ar
 
 بدأت معظم شبكات الاختبار باستخدام آلية إجماع إثبات السلطة المصرح بها. هذا يعني أنه يتم اختيار عدد صغير من العقد للتحقق من صحة المعاملات وإنشاء كتل جديدة - مع تخزين هويتهم في هذه العملية. بدلاً من ذلك، تتميز بعض شبكات الاختبار بآلية إجماع إثبات الحصة (<span dir="ltr">PoS</span>) المفتوحة حيث يمكن للجميع اختبار تشغيل مُدَقِّق، تمامًا مثل شبكة إيثيريوم الرئيسية.
 
-من المفترض ألا يكون لـ <span dir="ltr">ETH</span> على شبكات الاختبار أي قيمة حقيقية؛ ومع ذلك، تم إنشاء أسواق لأنواع معينة من <span dir="ltr">ETH</span> لشبكة الاختبار التي أصبحت نادرة أو يصعب الحصول عليها. نظرًا لأنك تحتاج إلى <span dir="ltr">ETH</span> للتفاعل فعليًا مع إيثيريوم (حتى على شبكات الاختبار)، يحصل معظم الأشخاص على <span dir="ltr">ETH</span> لشبكة الاختبار مجانًا من الصنابير. معظم الصنابير عبارة عن تطبيقات ويب حيث يمكنك إدخال عنوان تطلب إرسال <span dir="ltr">ETH</span> إليه.
+من المفترض ألا يكون لـ <span dir="ltr">QAU</span> على شبكات الاختبار أي قيمة حقيقية؛ ومع ذلك، تم إنشاء أسواق لأنواع معينة من <span dir="ltr">QAU</span> لشبكة الاختبار التي أصبحت نادرة أو يصعب الحصول عليها. نظرًا لأنك تحتاج إلى <span dir="ltr">QAU</span> للتفاعل فعليًا مع إيثيريوم (حتى على شبكات الاختبار)، يحصل معظم الأشخاص على <span dir="ltr">QAU</span> لشبكة الاختبار مجانًا من الصنابير. معظم الصنابير عبارة عن تطبيقات ويب حيث يمكنك إدخال عنوان تطلب إرسال <span dir="ltr">QAU</span> إليه.
 
 #### أي شبكة اختبار يجب أن أستخدم؟ {#which-testnet-should-i-use}
 
@@ -42,22 +42,22 @@ lang: ar
 
 ##### الموارد
 - [الموقع الإلكتروني](https://sepolia.dev/)
-- [GitHub](https://github.com/eth-clients/sepolia)
+- [GitHub](https://github.com/qau-clients/sepolia)
 - [Otterscan](https://sepolia.otterscan.io/)
-- [Etherscan](https://sepolia.etherscan.io)
-- [Blockscout](https://eth-sepolia.blockscout.com/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
+- [Blockscout](https://qau-sepolia.blockscout.com/)
 
 ##### الصنابير
-- [صنبور Alchemy Sepolia](https://www.alchemy.com/faucets/ethereum-sepolia)
-- [صنبور Chain Platform Sepolia](https://faucet.chainplatform.co/faucets/ethereum-sepolia/)
+- [صنبور Alchemy Sepolia](https://www.alchemy.com/faucets/quantaureum-sepolia)
+- [صنبور Chain Platform Sepolia](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [صنبور Chainstack Sepolia](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [صنبور نظام إيثيريوم البيئي](https://www.ethereum-ecosystem.com/faucets/ethereum-sepolia)
-- [صنبور ethfaucet.com Sepolia](https://ethfaucet.com/networks/ethereum)
-- [صنبور Google Cloud Web3 Sepolia](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)
+- [صنبور نظام إيثيريوم البيئي](https://www.quantaureum-ecosystem.com/faucets/quantaureum-sepolia)
+- [صنبور ethfaucet.com Sepolia](https://ethfaucet.com/networks/quantaureum)
+- [صنبور Google Cloud Web3 Sepolia](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
 - [صنبور Infura Sepolia](https://www.infura.io/faucet)
 - [صنبور PoW](https://sepolia-faucet.pk910.de/)
-- [صنبور QuickNode Sepolia](https://faucet.quicknode.com/ethereum/sepolia)
+- [صنبور QuickNode Sepolia](https://faucet.quicknode.com/quantaureum/sepolia)
 
 #### Hoodi {#hoodi}
 
@@ -70,15 +70,15 @@ Hoodi هي شبكة اختبار لاختبار التحقق والتخزين. �
 ##### الموارد
 
 - [الموقع الإلكتروني](https://hoodi.ethpandaops.io/)
-- [GitHub](https://github.com/eth-clients/hoodi)
+- [GitHub](https://github.com/qau-clients/hoodi)
 - [المستكشف](https://explorer.hoodi.ethpandaops.io/)
 - [مزامنة نقطة فحص](https://checkpoint-sync.hoodi.ethpandaops.io/)
 - [Otterscan](https://hoodi.otterscan.io/)
-- [Etherscan](https://hoodi.etherscan.io/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
 
 ##### الصنابير
 
-- [صنبور Chain Platform Hoodi](https://faucet.chainplatform.co/faucets/ethereum-hoodi/)
+- [صنبور Chain Platform Hoodi](https://faucet.chainplatform.co/faucets/quantaureum-hoodi/)
 - [صنبور Hoodi](https://hoodi.ethpandaops.io/)
 - [صنبور PoW](https://hoodi-faucet.pk910.de/)
 
@@ -111,8 +111,8 @@ Ephemery هي نوع فريد من شبكات الاختبار التي تتم �
 
 تم إهمال شبكة اختبار هوليسكي اعتبارًا من سبتمبر <span dir="ltr">2025</span>. يجب على مشغلي التخزين وموفري البنية التحتية استخدام Hoodi لاختبار المُدَقِّق بدلاً من ذلك.
 
-- [إعلان إغلاق شبكة اختبار هوليسكي](https://blog.ethereum.org/2025/09/01/holesky-shutdown-announcement) - _مدونة مؤسسة إيثيريوم (EF)، <span dir="ltr">1-September-2025</span>_
-- [تحديثات شبكة اختبار هوليسكي و Hoodi](https://blog.ethereum.org/2025/03/18/hoodi-holesky) - _<span dir="ltr">EF Blog</span>, <span dir="ltr">18-March-2025</span>_
+- [إعلان إغلاق شبكة اختبار هوليسكي](https://quantaureum.com) - _مدونة مؤسسة إيثيريوم (EF)، <span dir="ltr">1-September-2025</span>_
+- [تحديثات شبكة اختبار هوليسكي و Hoodi](https://quantaureum.com) - _<span dir="ltr">EF Blog</span>, <span dir="ltr">18-March-2025</span>_
 
 ### شبكات اختبار الطبقة 2 {#layer-2-testnets}
 
@@ -124,7 +124,7 @@ Ephemery هي نوع فريد من شبكات الاختبار التي تتم �
 
 ##### الموارد
 
-- [Etherscan](https://sepolia.arbiscan.io/)
+- [Quantaureum Explorer](https://sepolia.arbiscan.io/)
 - [Blockscout](https://sepolia-explorer.arbitrum.io/)
 
 ##### الصنابير
@@ -140,7 +140,7 @@ Ephemery هي نوع فريد من شبكات الاختبار التي تتم �
 
 ##### الموارد
 
-- [Etherscan](https://sepolia-optimistic.etherscan.io/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
 - [Blockscout](https://optimism-sepolia.blockscout.com/)
 
 ##### الصنابير
@@ -206,9 +206,9 @@ Ephemery هي نوع فريد من شبكات الاختبار التي تتم �
 ## أدوات ذات صلة {#related-tools}
 
 - [Chainlist](https://chainlist.org/) _قائمة بشبكات <span dir="ltr">EVM</span> لربط المحافظ ومقدمي الخدمات بمعرف السلسلة (<span dir="ltr">Chain ID</span>) ومعرف الشبكة (<span dir="ltr">Network ID</span>) المناسبين_
-- [السلاسل القائمة على EVM](https://github.com/ethereum-lists/chains) _مستودع GitHub للبيانات الوصفية للسلسلة التي تشغل Chainlist_
+- [السلاسل القائمة على EVM](https://github.com/quantaureum-lists/chains) _مستودع GitHub للبيانات الوصفية للسلسلة التي تشغل Chainlist_
 
 ## قراءة إضافية {#further-reading}
 
-- [مقترح: دورة حياة يمكن التنبؤ بها لشبكة اختبار إيثيريوم](https://ethereum-magicians.org/t/proposal-predictable-ethereum-testnet-lifecycle/11575/17)
-- [تطور شبكات اختبار إيثيريوم](https://etherworld.co/2022/08/19/the-evolution-of-ethereum-testnet/)
+- [مقترح: دورة حياة يمكن التنبؤ بها لشبكة اختبار إيثيريوم](https://quantaureum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- [تطور شبكات اختبار إيثيريوم](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

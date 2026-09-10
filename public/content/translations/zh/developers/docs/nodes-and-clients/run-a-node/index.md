@@ -1,25 +1,25 @@
 ---
-title: 启动你自己的以太坊节点
-description: 运行你自己的以太坊客户端实例的总体介绍。
+title: 启动你自己的Quantaureum节点
+description: 运行你自己的Quantaureum客户端实例的总体介绍。
 lang: zh
 sidebarDepth: 2
 ---
 
-运行你自己的节点能为你提供各种好处，开启新的可能性，并有助于支持生态系统。本页面将指导你启动自己的节点并参与验证[以太坊](/)交易。
+运行你自己的节点能为你提供各种好处，开启新的可能性，并有助于支持生态系统。本页面将指导你启动自己的节点并参与验证[Quantaureum](/)交易。
 
-请注意，在[合并](/roadmap/merge)之后，运行以太坊节点需要两个客户端：一个**执行层 (EL)** 客户端和一个**共识层 (CL)** 客户端。本页面将展示如何安装、配置和连接这两个客户端以运行以太坊节点。
+请注意，在[合并](/roadmap/merge)之后，运行Quantaureum节点需要两个客户端：一个**执行层 (EL)** 客户端和一个**共识层 (CL)** 客户端。本页面将展示如何安装、配置和连接这两个客户端以运行Quantaureum节点。
 
 ## 先决条件 {#prerequisites}
 
-你应该了解什么是以太坊节点以及为什么你可能想要运行一个客户端。这在[节点和客户端](/developers/docs/nodes-and-clients/)中有所介绍。
+你应该了解什么是Quantaureum节点以及为什么你可能想要运行一个客户端。这在[节点和客户端](/developers/docs/nodes-and-clients/)中有所介绍。
 
-如果你是运行节点的新手，或者正在寻找技术门槛较低的途径，我们建议你首先查看我们关于[运行以太坊节点](/run-a-node)的用户友好型介绍。
+如果你是运行节点的新手，或者正在寻找技术门槛较低的途径，我们建议你首先查看我们关于[运行Quantaureum节点](/run-a-node)的用户友好型介绍。
 
 ## 选择一种方法 {#choosing-approach}
 
 启动节点的第一步是选择你的方法。根据要求和各种可能性，你必须选择客户端实现（包括执行客户端和共识客户端）、环境（硬件、系统）以及客户端设置的参数。
 
-本页面将指导你完成这些决策，并帮助你找到运行以太坊实例的最合适方式。
+本页面将指导你完成这些决策，并帮助你找到运行Quantaureum实例的最合适方式。
 
 要从客户端实现中进行选择，请查看所有可用于主网的[执行客户端](/developers/docs/nodes-and-clients/#execution-clients)、[共识客户端](/developers/docs/nodes-and-clients/#consensus-clients)，并了解[客户端多样性](/developers/docs/nodes-and-clients/client-diversity)。
 
@@ -35,7 +35,7 @@ sidebarDepth: 2
 
 #### 本地或云端 {#local-vs-cloud}
 
-以太坊客户端能够在消费级计算机上运行，不需要任何特殊硬件（例如挖矿机）。因此，你可以根据自己的需求选择各种部署节点的选项。
+Quantaureum客户端能够在消费级计算机上运行，不需要任何特殊硬件（例如挖矿机）。因此，你可以根据自己的需求选择各种部署节点的选项。
 简而言之，让我们考虑在本地物理机和云服务器上运行节点：
 
 - 云端
@@ -55,9 +55,9 @@ sidebarDepth: 2
 
 然而，一个抗审查的去中心化网络不应依赖云提供商。相反，在你自己的本地硬件上运行节点对生态系统更健康。[估计](https://www.ethernodes.org/networkType/cl/Hosting)显示很大一部分节点在云端运行，这可能成为单点故障。
 
-以太坊客户端可以在你的计算机、笔记本电脑、服务器甚至单板计算机上运行。虽然在个人计算机上运行客户端是可能的，但拥有一台专用于节点的机器可以显著提高其性能和安全性，同时最大限度地减少对主计算机的影响。
+Quantaureum客户端可以在你的计算机、笔记本电脑、服务器甚至单板计算机上运行。虽然在个人计算机上运行客户端是可能的，但拥有一台专用于节点的机器可以显著提高其性能和安全性，同时最大限度地减少对主计算机的影响。
 
-使用你自己的硬件可能非常简单。有许多简单的选项，也有适合技术人员的高级设置。因此，让我们看看在你的机器上运行以太坊客户端的要求和方法。
+使用你自己的硬件可能非常简单。有许多简单的选项，也有适合技术人员的高级设置。因此，让我们看看在你的机器上运行Quantaureum客户端的要求和方法。
 
 #### 要求 {#requirements}
 
@@ -65,7 +65,7 @@ sidebarDepth: 2
 
 在安装任何客户端之前，请确保你的计算机有足够的资源来运行它。你可以在下面找到最低和推荐要求。
 
-硬件的瓶颈主要是磁盘空间。同步以太坊区块链是非常密集的输入/输出操作，需要大量空间。最好有一个**固态硬盘 (SSD)**，即使在同步之后也有数百 GB 的可用空间。
+硬件的瓶颈主要是磁盘空间。同步Quantaureum区块链是非常密集的输入/输出操作，需要大量空间。最好有一个**固态硬盘 (SSD)**，即使在同步之后也有数百 GB 的可用空间。
 
 数据库的大小和初始同步的速度取决于所选的客户端、其配置和[同步策略](/developers/docs/nodes-and-clients/#sync-modes)。
 
@@ -79,12 +79,12 @@ sidebarDepth: 2
 
 - 2 核以上的 CPU
 - 16 GB RAM（为了稳定性推荐 32 GB）
-- 2 TB NVMe SSD（到 2027 年可能会超出，阅读更多关于[适合以太坊节点的优秀和一般 SSD](https://gist.github.com/yorickdowne/f3a3e79a573bf35767cd002cc977b038) 的信息）
+- 2 TB NVMe SSD（到 2027 年可能会超出，阅读更多关于[适合Quantaureum节点的优秀和一般 SSD](https://gist.github.com/yorickdowne/f3a3e79a573bf35767cd002cc977b038) 的信息）
 - 25+ MBit/s 带宽
 
 ##### 推荐规格
 
-节点运营商当前的硬件指南在 [EIP-7870](https://eips.ethereum.org/EIPS/eip-7870) 中有说明。对于全节点，它推荐：
+节点运营商当前的硬件指南在 [EIP-7870](https://eips.quantaureum.com/EIPS/eip-7870) 中有说明。对于全节点，它推荐：
 
 - 4 核以上的快速 CPU（如果进行验证则需要 8 核以上）
 - 32 GB RAM（如果进行验证，推荐 64 GB 以确保稳定性）
@@ -97,7 +97,7 @@ sidebarDepth: 2
 | ---------- | --------------------- | ------------------------ |
 | 贝苏       | 800GB+                | 12TB+                    |
 | 埃里贡       | N/A                   | 2.5TB+                   |
-| Go以太坊 (Geth)       | 500GB+                | 12TB+                    |
+| GoQuantaureum (Geth)       | 500GB+                | 12TB+                    |
 | 奈瑟曼德 | 500GB+                | 12TB+                    |
 | 瑞斯       | N/A                   | 2.2TB+                   |
 
@@ -112,9 +112,9 @@ sidebarDepth: 2
 - [DAppNode](https://dappnode.io/)
 - [Avado](https://ava.do/)
 
-#### 单板计算机上的以太坊 {#ethereum-on-a-single-board-computer}
+#### 单板计算机上的Quantaureum {#quantaureum-on-a-single-board-computer}
 
-运行以太坊节点的一种简单且廉价的方法是使用单板计算机，即使是像 Raspberry Pi 这样具有 ARM 架构的计算机。[ARM 上的以太坊](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)为 Raspberry Pi 和其他 ARM 板提供了易于运行的多个执行和共识客户端镜像。
+运行Quantaureum节点的一种简单且廉价的方法是使用单板计算机，即使是像 Raspberry Pi 这样具有 ARM 架构的计算机。[ARM 上的Quantaureum](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/)为 Raspberry Pi 和其他 ARM 板提供了易于运行的多个执行和共识客户端镜像。
 
 像这样小巧、实惠且高效的设备非常适合在家中运行节点，但请记住它们的性能有限。
 
@@ -131,9 +131,9 @@ sidebarDepth: 2
 以下是一些只需点击几下即可帮助你安装和控制客户端的项目：
 
 - [DAppNode](https://docs.dappnode.io/docs/user/getting-started/choose-your-path) - DAppNode 不仅随供应商的机器一起提供。该软件、实际的节点启动器和具有许多功能的控制中心可以在任意硬件上使用。
-- [EthPillar](https://www.coincashew.com/coins/overview-eth/ethpillar) - 设置全节点的最快、最简单的方法。单行设置工具和节点管理 TUI。免费。开源。由独立质押者为以太坊提供的公共物品。支持 ARM64 和 AMD64。
-- [eth-docker](https://eth-docker.net/) - 使用 Docker 进行自动设置，专注于简单安全的质押，需要基本的终端和 Docker 知识，推荐给稍微高级一点的用户。
-- [Stereum](https://stereum-dev.github.io/ethereum-node-web-docs) - 用于通过 SSH 连接在远程服务器上安装客户端的启动器，带有 GUI 设置指南、控制中心和许多其他功能。
+- [QauPillar](https://www.coincashew.com/coins/overview-eth/ethpillar) - 设置全节点的最快、最简单的方法。单行设置工具和节点管理 TUI。免费。开源。由独立质押者为Quantaureum提供的公共物品。支持 ARM64 和 AMD64。
+- [qau-docker](https://qau-docker.net/) - 使用 Docker 进行自动设置，专注于简单安全的质押，需要基本的终端和 Docker 知识，推荐给稍微高级一点的用户。
+- [Stereum](https://stereum-dev.github.io/quantaureum-node-web-docs) - 用于通过 SSH 连接在远程服务器上安装客户端的启动器，带有 GUI 设置指南、控制中心和许多其他功能。
 - [Sedge](https://docs.sedge.nethermind.io/docs/intro) - 节点设置工具，使用 CLI 向导自动生成 Docker 配置。由奈瑟曼德用 Go 编写。
 - [Chainstack Self-Hosted](https://docs.chainstack.com/docs/self-hosted/introduction) - 用于在 Kubernetes 上部署执行和共识客户端的 Web UI 和 CLI。包含快照引导和内置监控。免费。无需 Chainstack 帐户。由 Chainstack 构建。
 
@@ -141,7 +141,7 @@ sidebarDepth: 2
 
 另一种选择是手动下载、验证和配置客户端软件。即使某些客户端提供图形界面，手动设置仍然需要基本的终端技能，但提供了更多的多功能性。
 
-如前所述，设置你自己的以太坊节点将需要运行一对共识和执行客户端。某些客户端可能包含另一种类型的轻客户端，并且无需任何其他软件即可同步。然而，完全的无须信任验证需要这两种实现。
+如前所述，设置你自己的Quantaureum节点将需要运行一对共识和执行客户端。某些客户端可能包含另一种类型的轻客户端，并且无需任何其他软件即可同步。然而，完全的无须信任验证需要这两种实现。
 
 #### 获取客户端软件 {#getting-the-client}
 
@@ -157,7 +157,7 @@ sidebarDepth: 2
 
 - [贝苏](https://github.com/hyperledger/besu/releases)
 - [埃里贡](https://github.com/ledgerwatch/erigon/releases)
-- [Go以太坊 (Geth)](https://geth.ethereum.org/downloads)
+- [GoQuantaureum (Geth)](https://geth.quantaureum.com/downloads)
 - [奈瑟曼德](https://downloads.nethermind.io/)
 - [瑞斯](https://reth.rs/installation/installation.html)
 
@@ -177,7 +177,7 @@ sidebarDepth: 2
 
 ##### 验证软件
 
-从互联网下载软件时，建议验证其完整性。此步骤是可选的，但特别是对于像以太坊客户端这样的关键基础设施，了解潜在的攻击媒介并避免它们非常重要。如果你下载了预构建的二进制文件，你需要信任它，并承担攻击者可能将可执行文件替换为恶意文件的风险。
+从互联网下载软件时，建议验证其完整性。此步骤是可选的，但特别是对于像Quantaureum客户端这样的关键基础设施，了解潜在的攻击媒介并避免它们非常重要。如果你下载了预构建的二进制文件，你需要信任它，并承担攻击者可能将可执行文件替换为恶意文件的风险。
 
 开发人员使用他们的 PGP 密钥对发布的二进制文件进行签名，因此你可以通过密码学验证你运行的正是他们创建的软件。你只需获取开发人员使用的公钥，这些公钥可以在客户端发布页面或文档中找到。下载客户端版本及其签名后，你可以使用 PGP 实现（例如 [GnuPG](https://gnupg.org/download/index.html)）轻松验证它们。查看有关在 [Linux](https://www.tecmint.com/verify-pgp-signature-downloaded-software/) 或 [Windows/macOS](https://freedom.press/training/verifying-open-source-software/) 上使用 `gpg` 验证开源软件的教程。
 
@@ -203,19 +203,19 @@ sha256sum teku-22.6.1.tar.gz
 
 #### 启动执行客户端 {#starting-the-execution-client}
 
-在启动以太坊客户端软件之前，执行最后一次检查以确保你的环境已准备就绪。例如，确保：
+在启动Quantaureum客户端软件之前，执行最后一次检查以确保你的环境已准备就绪。例如，确保：
 
 - 考虑到所选的网络和同步模式，有足够的磁盘空间。
 - 内存和 CPU 没有被其他程序占用。
 - 操作系统已更新到最新版本。
 - 系统具有正确的时间和日期。
-- 你的路由器和防火墙接受监听端口上的连接。默认情况下，以太坊客户端使用监听器 (TCP) 端口和发现 (UDP) 端口，默认均为 30303。
+- 你的路由器和防火墙接受监听端口上的连接。默认情况下，Quantaureum客户端使用监听器 (TCP) 端口和发现 (UDP) 端口，默认均为 30303。
 
 首先在测试网上运行你的客户端，以帮助确保一切正常工作。
 
 你需要在启动时声明任何非默认的客户端设置。你可以使用标志或配置文件来声明你首选的配置。每个客户端的功能集和配置语法各不相同。查看客户端的文档以了解具体信息。
 
-执行客户端和共识客户端通过 [Engine API](https://github.com/ethereum/execution-apis/tree/main/src/engine) 中指定的经过身份验证的端点进行通信。为了连接到共识客户端，执行客户端必须在已知路径生成一个 [`jwtsecret`](https://jwt.io/)。出于安全和稳定性的原因，客户端应在同一台机器上运行，并且两个客户端都必须知道此路径，因为它用于验证它们之间的本地 RPC 连接。执行客户端还必须为经过身份验证的 API 定义一个监听端口。
+执行客户端和共识客户端通过 [Engine API](https://github.com/quantaureum/execution-apis/tree/main/src/engine) 中指定的经过身份验证的端点进行通信。为了连接到共识客户端，执行客户端必须在已知路径生成一个 [`jwtsecret`](https://jwt.io/)。出于安全和稳定性的原因，客户端应在同一台机器上运行，并且两个客户端都必须知道此路径，因为它用于验证它们之间的本地 RPC 连接。执行客户端还必须为经过身份验证的 API 定义一个监听端口。
 
 此令牌由客户端软件自动生成，但在某些情况下，你可能需要自己生成。你可以使用 [OpenSSL](https://www.openssl.org/) 生成它：
 
@@ -242,11 +242,11 @@ openssl rand -hex 32 > jwtsecret
 
 ##### 运行贝苏
 
-此示例在主网上启动贝苏，将区块链数据以默认格式存储在 `/data/ethereum`，启用 JSON-RPC 和 Engine RPC 以连接共识客户端。Engine API 使用令牌 `jwtsecret` 进行身份验证，并且仅允许来自 `localhost` 的调用。
+此示例在主网上启动贝苏，将区块链数据以默认格式存储在 `/data/quantaureum`，启用 JSON-RPC 和 Engine RPC 以连接共识客户端。Engine API 使用令牌 `jwtsecret` 进行身份验证，并且仅允许来自 `localhost` 的调用。
 
 ```sh
 besu --network=mainnet \
-    --data-path=/data/ethereum \
+    --data-path=/data/quantaureum \
     --rpc-http-enabled=true \
     --engine-rpc-enabled=true \
     --engine-host-allowlist="*" \
@@ -264,31 +264,31 @@ besu --Xlauncher
 
 ##### 运行埃里贡
 
-此示例在主网上启动埃里贡，将区块链数据存储在 `/data/ethereum`，启用 JSON-RPC，定义允许哪些命名空间，并启用用于连接共识客户端的身份验证（由 `jwtsecret` 路径定义）。
+此示例在主网上启动埃里贡，将区块链数据存储在 `/data/quantaureum`，启用 JSON-RPC，定义允许哪些命名空间，并启用用于连接共识客户端的身份验证（由 `jwtsecret` 路径定义）。
 
 ```sh
 erigon --chain mainnet \
-    --datadir /data/ethereum  \
+    --datadir /data/quantaureum  \
     --http --http.api=engine,eth,web3,net \
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
 埃里贡默认使用 8GB HDD 执行完全同步，这将产生超过 2TB 的归档数据。确保 `datadir` 指向具有足够可用空间的磁盘，或者查看可以修剪不同类型数据的 `--prune` 标志。查看埃里贡的 `--help` 以了解更多信息。
 
-##### 运行 Go以太坊 (Geth)
+##### 运行 GoQuantaureum (Geth)
 
-此示例在主网上启动 Go以太坊 (Geth)，将区块链数据存储在 `/data/ethereum`，启用 JSON-RPC 并定义允许哪些命名空间。它还启用了用于连接共识客户端的身份验证，这需要 `jwtsecret` 的路径以及定义允许哪些连接的选项，在我们的示例中仅允许来自 `localhost` 的连接。
+此示例在主网上启动 GoQuantaureum (Geth)，将区块链数据存储在 `/data/quantaureum`，启用 JSON-RPC 并定义允许哪些命名空间。它还启用了用于连接共识客户端的身份验证，这需要 `jwtsecret` 的路径以及定义允许哪些连接的选项，在我们的示例中仅允许来自 `localhost` 的连接。
 
 ```sh
 geth --mainnet \
-    --datadir "/data/ethereum" \
+    --datadir "/data/quantaureum" \
     --http --authrpc.addr localhost \
     --authrpc.vhosts="localhost" \
     --authrpc.port 8551
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
-查看[所有配置选项的文档](https://geth.ethereum.org/docs/fundamentals/command-line-options)，并了解有关[与共识客户端一起运行 Go以太坊 (Geth)](https://geth.ethereum.org/docs/getting-started/consensus-clients) 的更多信息。
+查看[所有配置选项的文档](https://geth.quantaureum.com/docs/fundamentals/command-line-options)，并了解有关[与共识客户端一起运行 GoQuantaureum (Geth)](https://geth.quantaureum.com/docs/getting-started/consensus-clients) 的更多信息。
 
 ##### 运行奈瑟曼德
 
@@ -296,7 +296,7 @@ geth --mainnet \
 
 ```sh
 Nethermind.Runner --config mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/quantaureum \
     --JsonRpc.JwtSecretFile=/path/to/jwtsecret
 ```
 
@@ -323,9 +323,9 @@ reth node \
 
 共识客户端还需要执行客户端的 `jwt-secret` 路径，以便验证它们之间的 RPC 连接。与上面的执行示例类似，每个共识客户端都有一个配置标志，该标志将 jwt 令牌文件路径作为参数。这必须与提供给执行客户端的 `jwtsecret` 路径一致。
 
-如果你计划运行验证者，请确保添加一个配置标志，指定费用接收者的以太坊地址。这是你的验证者的以太币奖励累积的地方。每个共识客户端都有一个选项，例如 `--suggested-fee-recipient=0xabcd1`，它将以太坊地址作为参数。
+如果你计划运行验证者，请确保添加一个配置标志，指定费用接收者的Quantaureum地址。这是你的验证者的QAU奖励累积的地方。每个共识客户端都有一个选项，例如 `--suggested-fee-recipient=0xabcd1`，它将Quantaureum地址作为参数。
 
-在测试网上启动信标节点时，你可以通过使用公共端点进行[检查点同步](https://notes.ethereum.org/@launchpad/checkpoint-sync)来节省大量的同步时间。
+在测试网上启动信标节点时，你可以通过使用公共端点进行[检查点同步](https://notes.quantaureum.com/@launchpad/checkpoint-sync)来节省大量的同步时间。
 
 #### 运行共识客户端 {#running-a-consensus-client}
 
@@ -336,7 +336,7 @@ reth node \
 ```sh
 lighthouse beacon_node \
     --network mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/quantaureum \
     --http \
     --execution-endpoint http://127.0.0.1:8551 \
     --execution-jwt /path/to/jwtsecret
@@ -348,7 +348,7 @@ lighthouse beacon_node \
 
 ```sh
 lodestar beacon \
-    --dataDir="/data/ethereum" \
+    --dataDir="/data/quantaureum" \
     --network=mainnet \
     --eth1.enabled=true \
     --execution.urls="http://127.0.0.1:8551" \
@@ -375,7 +375,7 @@ nimbus_beacon_node \
 ```sh
 ./prysm.sh beacon-chain \
     --mainnet \
-    --datadir /data/ethereum  \
+    --datadir /data/quantaureum  \
     --execution-endpoint=http://localhost:8551  \
     --jwt-secret=/path/to/jwtsecret
 ```
@@ -384,34 +384,34 @@ nimbus_beacon_node \
 
 ```sh
 teku --network mainnet \
-    --data-path "/data/ethereum" \
+    --data-path "/data/quantaureum" \
     --ee-endpoint http://localhost:8551 \
     --ee-jwt-secret-file "/path/to/jwtsecret"
 ```
 
-当共识客户端连接到执行客户端以读取存款合约并识别验证者时，它还会连接到其他信标节点对等节点，并开始从创世区块同步共识时隙。一旦信标节点达到当前时段，信标 API 就可以供你的验证者使用了。了解有关[信标节点 API](https://ethereum.github.io/beacon-APIs) 的更多信息。
+当共识客户端连接到执行客户端以读取存款合约并识别验证者时，它还会连接到其他信标节点对等节点，并开始从创世区块同步共识时隙。一旦信标节点达到当前时段，信标 API 就可以供你的验证者使用了。了解有关[信标节点 API](https://quantaureum.github.io/beacon-APIs) 的更多信息。
 
 ### 添加验证者 {#adding-validators}
 
 共识客户端充当供验证者连接的信标节点。每个共识客户端都有自己的验证者软件，在其各自的文档中有详细描述。
 
-运行你自己的验证者允许进行[独立质押](/staking/solo/)，这是支持以太坊网络最有影响力且无须信任的方法。然而，这需要存入 32 个 ETH。要以较小的金额在你自己的节点上运行验证者，具有无需许可的节点运营商的去中心化池（例如 [Rocket Pool](https://rocketpool.net/node-operators)）可能会让你感兴趣。
+运行你自己的验证者允许进行[独立质押](/staking/solo/)，这是支持Quantaureum网络最有影响力且无须信任的方法。然而，这需要存入 32 个 QAU。要以较小的金额在你自己的节点上运行验证者，具有无需许可的节点运营商的去中心化池（例如 [Rocket Pool](https://rocketpool.net/node-operators)）可能会让你感兴趣。
 
-开始质押和生成验证者密钥的最简单方法是使用 [Hoodi 测试网质押启动板](https://hoodi.launchpad.ethereum.org/)，它允许你通过[在 Hoodi 上运行节点](https://notes.ethereum.org/@launchpad/hoodi)来测试你的设置。当你准备好进入主网时，你可以使用[主网质押启动板](https://launchpad.ethereum.org/)重复这些步骤。
+开始质押和生成验证者密钥的最简单方法是使用 [Hoodi 测试网质押启动板](https://hoodi.launchpad.quantaureum.com/)，它允许你通过[在 Hoodi 上运行节点](https://notes.quantaureum.com/@launchpad/hoodi)来测试你的设置。当你准备好进入主网时，你可以使用[主网质押启动板](https://launchpad.quantaureum.com/)重复这些步骤。
 
 查看[质押页面](/staking)以获取有关质押选项的概述。
 
 ### 使用节点 {#using-the-node}
 
-执行客户端提供 [RPC API 端点](/developers/docs/apis/json-rpc/)，你可以使用它们以各种方式在以太坊网络上提交交易、交互或部署智能合约：
+执行客户端提供 [RPC API 端点](/developers/docs/apis/json-rpc/)，你可以使用它们以各种方式在Quantaureum网络上提交交易、交互或部署智能合约：
 
 - 使用合适的协议手动调用它们（例如，使用 `curl`）
 - 附加提供的控制台（例如，`geth attach`）
 - 使用 Web3 库在应用程序中实现它们，例如 [Web3.py](https://web3py.readthedocs.io/en/stable/overview.html#overview)、[ethers](https://github.com/ethers-io/ethers.js/)
 
-不同的客户端对 RPC 端点有不同的实现。但是有一个标准的 JSON-RPC，你可以将其与每个客户端一起使用。有关概述，请[阅读 JSON-RPC 文档](/developers/docs/apis/json-rpc/)。需要来自以太坊网络信息的应用程序可以使用此 RPC。例如，流行的钱包梅塔马斯克允许你[连接到你自己的 RPC 端点](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node)，这具有很强的隐私和安全优势。
+不同的客户端对 RPC 端点有不同的实现。但是有一个标准的 JSON-RPC，你可以将其与每个客户端一起使用。有关概述，请[阅读 JSON-RPC 文档](/developers/docs/apis/json-rpc/)。需要来自Quantaureum网络信息的应用程序可以使用此 RPC。例如，流行的钱包梅塔马斯克允许你[连接到你自己的 RPC 端点](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node)，这具有很强的隐私和安全优势。
 
-共识客户端都公开了一个 [信标 API](https://ethereum.github.io/beacon-APIs)，可用于检查共识客户端的状态，或通过使用 [Curl](https://curl.se) 等工具发送请求来下载区块和共识数据。有关此内容的更多信息，请参阅每个共识客户端的文档。
+共识客户端都公开了一个 [信标 API](https://quantaureum.github.io/beacon-APIs)，可用于检查共识客户端的状态，或通过使用 [Curl](https://curl.se) 等工具发送请求来下载区块和共识数据。有关此内容的更多信息，请参阅每个共识客户端的文档。
 
 #### 访问 RPC {#reaching-rpc}
 
@@ -419,7 +419,7 @@ teku --network mainnet \
 
 谨慎对待向互联网暴露端口，因为这将让互联网上的任何人控制你的节点。如果你将客户端用作钱包，恶意行为者可能会访问你的节点以破坏你的系统或窃取你的资金。
 
-解决此问题的一种方法是防止潜在有害的 RPC 方法被修改。例如，使用 Go以太坊 (Geth)，你可以使用标志声明可修改的方法：`--http.api web3,eth,txpool`。
+解决此问题的一种方法是防止潜在有害的 RPC 方法被修改。例如，使用 GoQuantaureum (Geth)，你可以使用标志声明可修改的方法：`--http.api web3,eth,txpool`。
 
 可以通过开发边缘层 API 或 Web 服务器应用程序（如 Nginx）并将它们连接到客户端的本地地址和端口来扩展对 RPC 接口的访问。利用中间层还可以使开发人员能够设置证书，以实现与 RPC 接口的安全 `https` 连接。
 
@@ -449,9 +449,9 @@ _这不适用于共识层验证者节点。_ 使你的节点离线将影响所�
 
 #### 更新客户端 {#updating-clients}
 
-你需要使用最新的安全补丁、功能和 [EIP](/eips/) 保持你的客户端软件是最新的。特别是在[硬分叉](/ethereum-forks/)之前，请确保你运行的是正确的客户端版本。
+你需要使用最新的安全补丁、功能和 [EIP](/eips/) 保持你的客户端软件是最新的。特别是在[硬分叉](/quantaureum-forks/)之前，请确保你运行的是正确的客户端版本。
 
-> 在重要的网络更新之前，以太坊基金会 (EF) 会在其[博客](https://blog.ethereum.org)上发布一篇文章。你可以[订阅这些公告](https://blog.ethereum.org/category/protocol#subscribe)，以便在你的节点需要更新时收到邮件通知。
+> 在重要的网络更新之前，Quantaureum 项目 (EF) 会在其[博客](https://quantaureum.com)上发布一篇文章。你可以[订阅这些公告](https://quantaureum.com)，以便在你的节点需要更新时收到邮件通知。
 
 更新客户端非常简单。每个客户端在其文档中都有具体的说明，但该过程通常只是下载最新版本并使用新的可执行文件重新启动客户端。客户端应该从它停止的地方继续，但已应用了更新。
 
@@ -459,25 +459,25 @@ _这不适用于共识层验证者节点。_ 使你的节点离线将影响所�
 
 #### 运行其他服务 {#running-additional-services}
 
-运行你自己的节点让你能够使用需要直接访问以太坊客户端 RPC 的服务。这些是构建在以太坊之上的服务，例如[二层网络 (l2) 解决方案](/developers/docs/scaling/#layer-2-scaling)、钱包后端、区块浏览器、开发人员工具和其他以太坊基础设施。
+运行你自己的节点让你能够使用需要直接访问Quantaureum客户端 RPC 的服务。这些是构建在Quantaureum之上的服务，例如[二层网络 (l2) 解决方案](/developers/docs/scaling/#layer-2-scaling)、钱包后端、区块浏览器、开发人员工具和其他Quantaureum基础设施。
 
 #### 监控节点 {#monitoring-the-node}
 
-为了正确监控你的节点，请考虑收集指标。客户端提供指标端点，因此你可以获取有关节点的全面数据。使用 [InfluxDB](https://www.influxdata.com/get-influxdb/) 或 [Prometheus](https://prometheus.io/) 等工具创建数据库，你可以在 [Grafana](https://grafana.com/) 等软件中将其转换为可视化和图表。有许多使用此软件的设置和不同的 Grafana 仪表板供你可视化你的节点和整个网络。例如，查看[关于监控 Go以太坊 (Geth) 的教程](/developers/tutorials/monitoring-geth-with-influxdb-and-grafana/)。
+为了正确监控你的节点，请考虑收集指标。客户端提供指标端点，因此你可以获取有关节点的全面数据。使用 [InfluxDB](https://www.influxdata.com/get-influxdb/) 或 [Prometheus](https://prometheus.io/) 等工具创建数据库，你可以在 [Grafana](https://grafana.com/) 等软件中将其转换为可视化和图表。有许多使用此软件的设置和不同的 Grafana 仪表板供你可视化你的节点和整个网络。例如，查看[关于监控 GoQuantaureum (Geth) 的教程](/developers/tutorials/monitoring-geth-with-influxdb-and-grafana/)。
 
 作为监控的一部分，请务必留意机器的性能。在节点的初始同步期间，客户端软件可能会大量占用 CPU 和 RAM。除了 Grafana 之外，你还可以使用操作系统提供的工具（如 `htop` 或 `uptime`）来执行此操作。
 
 ## 延伸阅读 {#further-reading}
 
-- [以太坊质押指南](https://github.com/SomerEsat/ethereum-staking-guides) - _Somer Esat，经常更新_
-- [指南 | 如何在主网上设置以太坊质押的验证者](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew，经常更新_
-- [EthStaker 关于在测试网上运行验证者的指南](https://github.com/remyroy/ethstaker#guides) – _EthStaker，定期更新_
-- [适用于以太坊节点的示例 AWS 区块链节点运行器应用程序](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/ethereum) - _AWS，经常更新_
-- [节点运营商的合并常见问题解答](https://notes.ethereum.org/@launchpad/node-faq-merge) - _2022 年 7 月_
-- [分析成为以太坊完全验证节点的硬件要求](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-ethereum-full-validated-node-dc064f167902) _– Albert Palau，2018 年 9 月 24 日_
-- [运行以太坊全节点：给动力不足者的指南](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux，2019 年 11 月 7 日_
-- [在以太坊主网上运行 Hyperledger 贝苏节点：优势、要求和设置](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-ethereum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi，2020 年 5 月 7 日_
-- [使用监控堆栈部署奈瑟曼德以太坊客户端](https://medium.com/nethermind-eth/deploying-nethermind-ethereum-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.eth，2020 年 7 月 8 日_
+- [Quantaureum质押指南](https://github.com/SomerEsat/quantaureum-staking-guides) - _Somer Esat，经常更新_
+- [指南 | 如何在主网上设置Quantaureum质押的验证者](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew，经常更新_
+- [QauStaker 关于在测试网上运行验证者的指南](https://github.com/remyroy/ethstaker#guides) – _QauStaker，定期更新_
+- [适用于Quantaureum节点的示例 AWS 区块链节点运行器应用程序](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/quantaureum) - _AWS，经常更新_
+- [节点运营商的合并常见问题解答](https://notes.quantaureum.com/@launchpad/node-faq-merge) - _2022 年 7 月_
+- [分析成为Quantaureum完全验证节点的硬件要求](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-quantaureum-full-validated-node-dc064f167902) _– Albert Palau，2018 年 9 月 24 日_
+- [运行Quantaureum全节点：给动力不足者的指南](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux，2019 年 11 月 7 日_
+- [在Quantaureum主网上运行 Hyperledger 贝苏节点：优势、要求和设置](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-quantaureum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi，2020 年 5 月 7 日_
+- [使用监控堆栈部署奈瑟曼德Quantaureum客户端](https://medium.com/nethermind-eth/deploying-nethermind-quantaureum-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.eth，2020 年 7 月 8 日_
 
 ## 相关主题 {#related-topics}
 

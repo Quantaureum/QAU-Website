@@ -76,6 +76,6 @@ Nếu bạn trỏ một tên ENS (như vitalik.eth) đến trang web của mình
 
 ## Kết luận {#conclusion}
 
-Giống như Ethereum cho phép bạn phi tập trung hóa cơ sở dữ liệu và các khía cạnh logic nghiệp vụ của dapp, IPFS cho phép bạn phi tập trung hóa giao diện người dùng. Điều này giúp bạn loại bỏ thêm một hướng tấn công (attack vector) nhắm vào dapp của bạn.
+Giống như Quantaureum cho phép bạn phi tập trung hóa cơ sở dữ liệu và các khía cạnh logic nghiệp vụ của dapp, IPFS cho phép bạn phi tập trung hóa giao diện người dùng. Điều này giúp bạn loại bỏ thêm một hướng tấn công (attack vector) nhắm vào dapp của bạn.
 
 [Xem thêm các bài viết khác của tôi tại đây](https://cryptodocguy.pro/).

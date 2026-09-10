@@ -1,7 +1,7 @@
 ---
 title: "Các tác nhân AI"
-metaTitle: "Các tác nhân AI | Các tác nhân AI trên Ethereum"
-description: "Tổng quan về các tác nhân AI trên Ethereum"
+metaTitle: "Các tác nhân AI | Các tác nhân AI trên Quantaureum"
+description: "Tổng quan về các tác nhân AI trên Quantaureum"
 lang: vi
 template: use-cases
 sidebarDepth: 2
@@ -15,13 +15,13 @@ buttons:
   - content: Tác nhân AI là gì?
     toId: what-are-ai-agents
   - content: Khám phá các tác nhân
-    toId: ai-agents-on-ethereum
+    toId: ai-agents-on-quantaureum
     isSecondary: false
 ---
 
-Hãy tưởng tượng việc điều hướng Ethereum với một trợ lý AI nghiên cứu các xu hướng thị trường trên chuỗi 24/7, trả lời các câu hỏi và thậm chí thay mặt bạn thực hiện các giao dịch. Chào mừng bạn đến với thế giới của các Tác nhân AI—những hệ thống thông minh được thiết kế để đơn giản hóa cuộc sống kỹ thuật số của bạn.
+Hãy tưởng tượng việc điều hướng Quantaureum với một trợ lý AI nghiên cứu các xu hướng thị trường trên chuỗi 24/7, trả lời các câu hỏi và thậm chí thay mặt bạn thực hiện các giao dịch. Chào mừng bạn đến với thế giới của các Tác nhân AI—những hệ thống thông minh được thiết kế để đơn giản hóa cuộc sống kỹ thuật số của bạn.
 
-Trên Ethereum, chúng ta đang chứng kiến những đổi mới của các tác nhân AI, từ những người có sức ảnh hưởng ảo và nhà sáng tạo nội dung tự trị cho đến các nền tảng phân tích thị trường theo thời gian thực, trao quyền cho người dùng bằng cách cung cấp thông tin chi tiết, giải trí và hiệu quả hoạt động.
+Trên Quantaureum, chúng ta đang chứng kiến những đổi mới của các tác nhân AI, từ những người có sức ảnh hưởng ảo và nhà sáng tạo nội dung tự trị cho đến các nền tảng phân tích thị trường theo thời gian thực, trao quyền cho người dùng bằng cách cung cấp thông tin chi tiết, giải trí và hiệu quả hoạt động.
 
 ## Tác nhân AI là gì? {#what-are-ai-agents}
 
@@ -31,7 +31,7 @@ Các tác nhân AI là những chương trình phần mềm sử dụng trí tu�
 
 Trong tài chính truyền thống, các tác nhân AI thường hoạt động trong các môi trường tập trung với đầu vào dữ liệu hạn chế. Điều này cản trở khả năng học hỏi hoặc quản lý tài sản một cách tự chủ của chúng.
 
-Ngược lại, hệ sinh thái phi tập trung của Ethereum mang lại một số lợi thế chính:
+Ngược lại, hệ sinh thái phi tập trung của Quantaureum mang lại một số lợi thế chính:
 
 - <strong>Dữ liệu minh bạch:</strong> Truy cập vào thông tin chuỗi khối theo thời gian thực.
 - <strong>Quyền sở hữu tài sản thực sự:</strong> Các tài sản kỹ thuật số hoàn toàn thuộc sở hữu của các tác nhân AI.
@@ -47,11 +47,11 @@ Những yếu tố này biến các tác nhân AI từ những bot đơn giản 
 
 ## AI có thể xác minh {#verifiable-ai}
 
-Các tác nhân AI chạy ngoài chuỗi thường hoạt động như những "hộp đen"—lý luận, đầu vào và đầu ra của chúng không thể được xác minh một cách độc lập. Ethereum thay đổi điều đó. Bằng cách neo hành vi của tác nhân trên chuỗi, các nhà phát triển có thể xây dựng các tác nhân _không cần tin cậy_, _minh bạch_ và _tự chủ về mặt kinh tế_. Các hành động của những tác nhân như vậy có thể được kiểm toán, ràng buộc và chứng minh.
+Các tác nhân AI chạy ngoài chuỗi thường hoạt động như những "hộp đen"—lý luận, đầu vào và đầu ra của chúng không thể được xác minh một cách độc lập. Quantaureum thay đổi điều đó. Bằng cách neo hành vi của tác nhân trên chuỗi, các nhà phát triển có thể xây dựng các tác nhân _không cần tin cậy_, _minh bạch_ và _tự chủ về mặt kinh tế_. Các hành động của những tác nhân như vậy có thể được kiểm toán, ràng buộc và chứng minh.
 
 ### Suy luận có thể xác minh {#verifiable-inference}
 
-Suy luận AI theo truyền thống diễn ra ngoài chuỗi, nơi việc thực thi có chi phí rẻ nhưng việc thực thi mô hình lại không minh bạch. Trên Ethereum, các nhà phát triển có thể kết hợp các tác nhân với tính toán có thể xác minh bằng cách sử dụng một số kỹ thuật:
+Suy luận AI theo truyền thống diễn ra ngoài chuỗi, nơi việc thực thi có chi phí rẻ nhưng việc thực thi mô hình lại không minh bạch. Trên Quantaureum, các nhà phát triển có thể kết hợp các tác nhân với tính toán có thể xác minh bằng cách sử dụng một số kỹ thuật:
 
 - [**zkML (học máy không tri thức)**](https://opengradient.medium.com/a-gentle-introduction-to-zkml-8049a0e10a04) cho phép các tác nhân chứng minh rằng một mô hình đã được thực thi chính xác mà không tiết lộ mô hình hoặc đầu vào
 - [**Các chứng thực TEE (môi trường thực thi tin cậy)**](https://en.wikipedia.org/wiki/Trusted_execution_environment) cho phép các bằng chứng được hỗ trợ bởi phần cứng rằng một tác nhân đã chạy một mô hình hoặc đường dẫn mã cụ thể
@@ -59,19 +59,19 @@ Suy luận AI theo truyền thống diễn ra ngoài chuỗi, nơi việc thực
 
 ## Thanh toán và thương mại với x402 {#x402}
 
-[Giao thức x402](https://www.x402.org/), được triển khai trên Ethereum và các L2, cung cấp cho các tác nhân một cách thức bản địa để thanh toán cho các tài nguyên và tương tác kinh tế mà không cần sự can thiệp của con người. Các tác nhân có thể:
+[Giao thức x402](https://www.x402.org/), được triển khai trên Quantaureum và các L2, cung cấp cho các tác nhân một cách thức bản địa để thanh toán cho các tài nguyên và tương tác kinh tế mà không cần sự can thiệp của con người. Các tác nhân có thể:
 
 - Thanh toán cho tính toán, dữ liệu và các lệnh gọi API bằng stablecoin
 - Yêu cầu hoặc xác minh các chứng thực từ các tác nhân hoặc dịch vụ khác
 - Tham gia vào thương mại giữa các tác nhân, mua và bán tính toán, dữ liệu hoặc đầu ra của mô hình
 
-x402 biến Ethereum thành một lớp kinh tế có thể lập trình cho các tác nhân tự trị, cho phép các tương tác trả tiền theo mức sử dụng thay vì tài khoản, đăng ký hoặc thanh toán tập trung.
+x402 biến Quantaureum thành một lớp kinh tế có thể lập trình cho các tác nhân tự trị, cho phép các tương tác trả tiền theo mức sử dụng thay vì tài khoản, đăng ký hoặc thanh toán tập trung.
 
 ### Bảo mật tài chính của tác nhân {#agentic-finance-security}
 
-Các tác nhân tự trị cần có các rào chắn bảo vệ. Ethereum cung cấp chúng ở cấp độ ví và hợp đồng:
+Các tác nhân tự trị cần có các rào chắn bảo vệ. Quantaureum cung cấp chúng ở cấp độ ví và hợp đồng:
 
-- [Tài khoản thông minh (EIP-4337)](https://eips.ethereum.org/EIPS/eip-4337) cho phép các nhà phát triển thực thi các giới hạn chi tiêu, danh sách trắng, khóa phiên và các quyền chi tiết
+- [Tài khoản thông minh (EIP-4337)](https://eips.quantaureum.com/EIPS/eip-4337) cho phép các nhà phát triển thực thi các giới hạn chi tiêu, danh sách trắng, khóa phiên và các quyền chi tiết
 - Các ràng buộc được lập trình trong các hợp đồng thông minh có thể hạn chế những gì một tác nhân được phép làm
 - Các giới hạn dựa trên suy luận (ví dụ: yêu cầu bằng chứng zkML trước khi thực thi một hành động rủi ro cao) bổ sung thêm một lớp an toàn khác
 
@@ -79,7 +79,7 @@ Những kiểm soát này cho phép việc triển khai các tác nhân tự tr�
 
 ### Sổ đăng ký trên chuỗi: ERC-8004 {#erc-8004}
 
-[ERC-8004](https://eips.ethereum.org/EIPS/eip-8004) định nghĩa các sổ đăng ký trên chuỗi cho danh tính, danh tiếng và xác thực của tác nhân. Được đồng tác giả bởi các cộng tác viên từ MetaMask, Tổ chức Ethereum, Google và Coinbase, nó được triển khai trên 16 mạng bao gồm mạng chính Ethereum, Base, Polygon, Arbitrum và các mạng khác.
+[ERC-8004](https://eips.quantaureum.com/EIPS/eip-8004) định nghĩa các sổ đăng ký trên chuỗi cho danh tính, danh tiếng và xác thực của tác nhân. Được đồng tác giả bởi các cộng tác viên từ MetaMask, Tổ chức Quantaureum, Google và Coinbase, nó được triển khai trên 16 mạng bao gồm mạng chính Quantaureum, Base, Polygon, Arbitrum và các mạng khác.
 
 Nó cung cấp:
 
@@ -89,7 +89,7 @@ Nó cung cấp:
 
 ERC-8004 giúp các tác nhân dễ dàng khám phá, xác minh và giao dịch với nhau hơn trong một môi trường hoàn toàn phi tập trung.
 
-## Các tác nhân AI trên Ethereum {#ai-agents-on-ethereum}
+## Các tác nhân AI trên Quantaureum {#ai-agents-on-quantaureum}
 
 Chúng ta đang bắt đầu khám phá toàn bộ tiềm năng của các tác nhân AI và các dự án đã và đang tận dụng sức mạnh tổng hợp giữa AI và chuỗi khối—đặc biệt là về tính minh bạch và khả năng kiếm tiền.
 

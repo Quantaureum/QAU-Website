@@ -13,7 +13,7 @@ published: 2026-04-01
 
 ایک [پچھلے مضمون](/developers/tutorials/gasless/) میں <span dir="ltr">EIP-712</span> دستخطوں کا استعمال کرتے ہوئے آپ کی اپنی ایپلیکیشن تک گیس کے بغیر رسائی کے استعمال پر تبادلہ خیال کیا گیا تھا، لیکن یہ آپ کے اپنے سمارٹ کنٹریکٹس تک محدود ہے۔ [اکاؤنٹ کی تجرید](/roadmap/account-abstraction/) کا استعمال کرتے ہوئے، ہم ایسے سمارٹ کنٹریکٹ والیٹس بنا سکتے ہیں جو دو قسم کی ٹرانزیکشنز کو قبول کرتے ہیں اور انہیں مطلوبہ منزل تک پہنچاتے ہیں:
 
-- کسی مخصوص <span dir="ltr">EOA</span> کے ذریعے بھیجی گئی ٹرانزیکشنز (جن کے لیے اس <span dir="ltr">EOA</span> کے پاس <span dir="ltr">ETH</span> ہونا ضروری ہے)
+- کسی مخصوص <span dir="ltr">EOA</span> کے ذریعے بھیجی گئی ٹرانزیکشنز (جن کے لیے اس <span dir="ltr">EOA</span> کے پاس <span dir="ltr">QAU</span> ہونا ضروری ہے)
 - کہیں سے بھی بھیجی گئی ٹرانزیکشنز، لیکن اسی <span dir="ltr">EOA</span> کے ذریعے دستخط شدہ۔
 
 اس طرح، ہم کسی اکاؤنٹ کو اثاثے (ٹوکنز وغیرہ) رکھنے اور وہ تمام افعال انجام دینے کے لیے گیس کے بغیر طریقہ فراہم کر سکتے ہیں جو گیس والا <span dir="ltr">EOA</span> کر سکتا ہے۔
@@ -38,7 +38,7 @@ published: 2026-04-01
    npm install
    ```
 
-3. `SEPOLIA_PRIVATE_KEY` کو ایسے والیٹ پر سیٹ کرنے کے لیے `.env` میں ترمیم کریں جس کے پاس <span dir="ltr">Sepolia</span> پر <span dir="ltr">ETH</span> ہو۔ اگر آپ کو <span dir="ltr">Sepolia ETH</span> کی ضرورت ہے، تو اسے حاصل کرنے کے لیے [فوسٹ کا استعمال کریں](/developers/docs/networks/#sepolia)۔ مثالی طور پر، یہ نجی کلید اس کلید سے مختلف ہونی چاہیے جو آپ کے براؤزر والیٹ میں ہے۔
+3. `SEPOLIA_PRIVATE_KEY` کو ایسے والیٹ پر سیٹ کرنے کے لیے `.env` میں ترمیم کریں جس کے پاس <span dir="ltr">Sepolia</span> پر <span dir="ltr">QAU</span> ہو۔ اگر آپ کو <span dir="ltr">Sepolia QAU</span> کی ضرورت ہے، تو اسے حاصل کرنے کے لیے [فوسٹ کا استعمال کریں](/developers/docs/networks/#sepolia)۔ مثالی طور پر، یہ نجی کلید اس کلید سے مختلف ہونی چاہیے جو آپ کے براؤزر والیٹ میں ہے۔
 
 4. سرور شروع کریں۔
 
@@ -54,9 +54,9 @@ published: 2026-04-01
 
 8. آپ دیکھ سکتے ہیں کہ صارف پراکسی کب تعینات ہوتی ہے کیونکہ **UserProxy access** کے آگے ایک پتہ ہوتا ہے۔ اگر آپ نے 24 سیکنڈ (2 بلاکس) انتظار کیا اور یہ اب بھی نہیں ہوا ہے، تو تبدیلیوں کا پتہ لگانے میں کوئی مسئلہ ہو سکتا ہے۔
 
-   اگر ایسا ہے، تو [<span dir="ltr">Sepolia</span> ایکسپلورر](https://eth-sepolia.blockscout.com/) پر جائیں اور وہ تعیناتی ٹرانزیکشن ہیش درج کریں جو آپ کو `npm run dev` پر سرور آؤٹ پٹ میں نظر آتا ہے۔ اس کا پتہ دیکھنے کے لیے بنائے گئے کنٹریکٹ پر کلک کریں، پھر اسے کاپی کریں۔ پتے کو _Or enter existing proxy address_ فیلڈ میں پیسٹ کریں، پھر **Set proxy address** پر کلک کریں۔
+   اگر ایسا ہے، تو [<span dir="ltr">Sepolia</span> ایکسپلورر](https://qau-sepolia.blockscout.com/) پر جائیں اور وہ تعیناتی ٹرانزیکشن ہیش درج کریں جو آپ کو `npm run dev` پر سرور آؤٹ پٹ میں نظر آتا ہے۔ اس کا پتہ دیکھنے کے لیے بنائے گئے کنٹریکٹ پر کلک کریں، پھر اسے کاپی کریں۔ پتے کو _Or enter existing proxy address_ فیلڈ میں پیسٹ کریں، پھر **Set proxy address** پر کلک کریں۔
 
-9. ٹوکن حاصل کرنے کے لیے <span dir="ltr">ERC-20</span> کنٹریکٹ کے [`faucet`](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd) فنکشن کو کال جمع کرانے کے لیے **Request more tokens for proxy** پر کلک کریں۔ والیٹ میں دستخط کی **تصدیق کریں**۔ یقیناً، ٹوکن صارف کے پتے پر نہیں بلکہ پراکسی کے پتے پر پہنچتے ہیں۔
+9. ٹوکن حاصل کرنے کے لیے <span dir="ltr">ERC-20</span> کنٹریکٹ کے [`faucet`](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd) فنکشن کو کال جمع کرانے کے لیے **Request more tokens for proxy** پر کلک کریں۔ والیٹ میں دستخط کی **تصدیق کریں**۔ یقیناً، ٹوکن صارف کے پتے پر نہیں بلکہ پراکسی کے پتے پر پہنچتے ہیں۔
 
 10. نیچے سکرول کریں اور _Last transaction:_ کے نیچے دیے گئے لنک پر کلک کریں۔ یہ آپ کو `faucet` ٹرانزیکشن دکھانے کے لیے براؤزر کھول دے گا۔
 
@@ -81,7 +81,7 @@ contract UserProxy {
     uint public nonce = 0;
 ```
 
-مالک کی شناخت اور پیغامات کو دہرائے جانے سے روکنے کے لیے ایک [نانس](https://en.wikipedia.org/wiki/Cryptographic_nonce)۔ چونکہ نانس ایک `public` متغیر ہے، اس لیے <span dir="ltr">Solidity</span> کمپائلر ایک ویو فنکشن، [`nonce()`](https://eth-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0) بھی بناتا ہے، جو آف چین کوڈ کو اس کی قدر پڑھنے کی اجازت دیتا ہے۔
+مالک کی شناخت اور پیغامات کو دہرائے جانے سے روکنے کے لیے ایک [نانس](https://en.wikipedia.org/wiki/Cryptographic_nonce)۔ چونکہ نانس ایک `public` متغیر ہے، اس لیے <span dir="ltr">Solidity</span> کمپائلر ایک ویو فنکشن، [`nonce()`](https://qau-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0) بھی بناتا ہے، جو آف چین کوڈ کو اس کی قدر پڑھنے کی اجازت دیتا ہے۔
 
 ```solidity
     bytes32 private constant SIGNED_ACCESS_TYPEHASH =
@@ -93,7 +93,7 @@ contract UserProxy {
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-[<span dir="ltr">EIP-712</span> دستخطوں](https://eips.ethereum.org/EIPS/eip-712) کی تصدیق کے لیے درکار معلومات۔
+[<span dir="ltr">EIP-712</span> دستخطوں](https://eips.quantaureum.com/EIPS/eip-712) کی تصدیق کے لیے درکار معلومات۔
 
 ```solidity
     constructor(address owner_) {
@@ -117,7 +117,7 @@ contract UserProxy {
     }
 ```
 
-[ڈومین الگ کرنے والا](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator)۔ اس کا حساب کمپائل کے وقت نہیں لگایا جا سکتا، کیونکہ یہ چین <span dir="ltr">ID</span> اور کنٹریکٹ کے پتے پر منحصر ہے۔ یہ کسی <span dir="ltr">UserProxy</span> کے لیے دوسرے کے لیے تیار کردہ پیغام سے بے وقوف بننا ناممکن بنا دیتا ہے۔
+[ڈومین الگ کرنے والا](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator)۔ اس کا حساب کمپائل کے وقت نہیں لگایا جا سکتا، کیونکہ یہ چین <span dir="ltr">ID</span> اور کنٹریکٹ کے پتے پر منحصر ہے۔ یہ کسی <span dir="ltr">UserProxy</span> کے لیے دوسرے کے لیے تیار کردہ پیغام سے بے وقوف بننا ناممکن بنا دیتا ہے۔
 
 ```solidity
     event CallResult(address target, bytes returnData);
@@ -130,7 +130,7 @@ contract UserProxy {
             external returns (bytes memory) {
 ```
 
-اس فنکشن کو مالک براہ راست کال کر سکتا ہے۔ اگر کوئی ریلے دستیاب نہیں ہیں، تو مالک اب بھی بلاک چین پر براہ راست اثاثوں تک رسائی حاصل کر سکتا ہے (اگر صارف کے پاس <span dir="ltr">ETH</span> ہے)۔
+اس فنکشن کو مالک براہ راست کال کر سکتا ہے۔ اگر کوئی ریلے دستیاب نہیں ہیں، تو مالک اب بھی بلاک چین پر براہ راست اثاثوں تک رسائی حاصل کر سکتا ہے (اگر صارف کے پاس <span dir="ltr">QAU</span> ہے)۔
 
 ```solidity
         require(msg.sender == OWNER, "Only owner can call");
@@ -220,7 +220,7 @@ contract UserProxy {
 }
 ```
 
-یہ تقریباً ایک جیسی اقسام ہیں جو آپ کو کنٹریکٹ سے <span dir="ltr">ETH</span> منتقل کرنے کی بھی اجازت دیتی ہیں۔
+یہ تقریباً ایک جیسی اقسام ہیں جو آپ کو کنٹریکٹ سے <span dir="ltr">QAU</span> منتقل کرنے کی بھی اجازت دیتی ہیں۔
 
 ### ریلے کرنے والا {#relayer}
 
@@ -285,7 +285,7 @@ const start = async () => {
   app.post("/server/deploy", async (req, res) => {
 ```
 
-یہ وہ کوڈ ہے جو پراکسی کو تعینات کرنے کی درخواستوں کو سنبھالتا ہے۔ نوٹ کریں کہ ہم یہاں [ڈینائل آف سروس](https://en.wikipedia.org/wiki/Denial-of-service_attack) حملوں کا شکار ہو سکتے ہیں کیونکہ ایک حملہ آور ہمیں پراکسی تعینات کرنے کی درخواستوں کے ساتھ اس وقت تک سپیم کر سکتا ہے جب تک کہ ہمارا <span dir="ltr">ETH</span> ختم نہ ہو جائے۔ پروڈکشن سسٹم پر، ہم شاید یہ تقاضا کریں گے کہ پراکسی تعینات کرنے کی درخواست پر دستخط کیے جائیں اور دستخط کنندہ ایک موجودہ گاہک ہو۔
+یہ وہ کوڈ ہے جو پراکسی کو تعینات کرنے کی درخواستوں کو سنبھالتا ہے۔ نوٹ کریں کہ ہم یہاں [ڈینائل آف سروس](https://en.wikipedia.org/wiki/Denial-of-service_attack) حملوں کا شکار ہو سکتے ہیں کیونکہ ایک حملہ آور ہمیں پراکسی تعینات کرنے کی درخواستوں کے ساتھ اس وقت تک سپیم کر سکتا ہے جب تک کہ ہمارا <span dir="ltr">QAU</span> ختم نہ ہو جائے۔ پروڈکشن سسٹم پر، ہم شاید یہ تقاضا کریں گے کہ پراکسی تعینات کرنے کی درخواست پر دستخط کیے جائیں اور دستخط کنندہ ایک موجودہ گاہک ہو۔
 
 ```js
     try {
@@ -408,7 +408,7 @@ import UserProxy from '../../contracts/out/UserProxy.sol/UserProxy.json'
 import Erc20 from '../../contracts/out/Faucet.sol/FaucetToken.json'
 ```
 
-[یہ کنٹریکٹ](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract) زیادہ تر ایک عام <span dir="ltr">ERC-20</span> کنٹریکٹ ہے، جس میں ایک اہم فنکشن، `faucet()` کا اضافہ کیا گیا ہے۔ یہ فنکشن جانچ کے مقاصد کے لیے ان ٹوکنز کی درخواست کرنے والے کسی بھی شخص کو ٹوکن دیتا ہے۔
+[یہ کنٹریکٹ](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract) زیادہ تر ایک عام <span dir="ltr">ERC-20</span> کنٹریکٹ ہے، جس میں ایک اہم فنکشن، `faucet()` کا اضافہ کیا گیا ہے۔ یہ فنکشن جانچ کے مقاصد کے لیے ان ٹوکنز کی درخواست کرنے والے کسی بھی شخص کو ٹوکن دیتا ہے۔
 
 ```js
 const erc20Addrs = {
@@ -423,7 +423,7 @@ const erc20Addrs = {
 const Address = ({ address }) => {
    if (!address) return null
    return (
-      <a href={`https://eth-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
+      <a href={`https://qau-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
    )
 }
 ```
@@ -736,7 +736,7 @@ const Token = () => {
          { txHash && (
             <>
                <h4>Last transaction:</h4>
-               <a href={`https://eth-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
+               <a href={`https://qau-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
                  {txHash}
                </a>
             </>

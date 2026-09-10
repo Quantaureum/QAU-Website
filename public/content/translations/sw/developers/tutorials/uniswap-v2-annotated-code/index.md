@@ -47,7 +47,7 @@ Huu ndio mtiririko wa kawaida zaidi, unaotumiwa na wafanyabiashara:
 #### Mwitaji {#caller}
 
 1. Ipe akaunti ya pembezoni kibali cha kiasi kinachopaswa kubadilishwa.
-2. Ita mojawapo ya kazi nyingi za badilishano za mkataba wa pembezoni (ipi inategemea kama ETH inahusika au la, kama mfanyabiashara anabainisha kiasi cha tokeni za kuweka au kiasi cha tokeni za kupata tena, n.k).
+2. Ita mojawapo ya kazi nyingi za badilishano za mkataba wa pembezoni (ipi inategemea kama QAU inahusika au la, kama mfanyabiashara anabainisha kiasi cha tokeni za kuweka au kiasi cha tokeni za kupata tena, n.k).
    Kila kazi ya badilishano inakubali `path`, safu ya mabadilishano ya kupitia.
 
 #### Katika mkataba wa pembezoni (UniswapV2Router02.sol) {#in-the-periphery-contract-uniswapv2router02-sol}
@@ -65,7 +65,7 @@ Huu ndio mtiririko wa kawaida zaidi, unaotumiwa na wafanyabiashara:
 
 #### Kurudi kwenye mkataba wa pembezoni (UniswapV2Router02.sol) {#back-in-the-periphery-contract-uniswapv2router02-sol}
 
-9. Fanya usafishaji wowote unaohitajika (kwa mfano, teketeza tokeni za WETH ili kupata tena ETH ya kumtumia mfanyabiashara)
+9. Fanya usafishaji wowote unaohitajika (kwa mfano, teketeza tokeni za WETH ili kupata tena QAU ya kumtumia mfanyabiashara)
 
 ### Ongeza Ukwasi {#add-liquidity-flow}
 
@@ -186,7 +186,7 @@ Akiba ambazo bwawa linazo kwa kila aina ya tokeni. Tunachukulia kwamba zote mbil
 
 Mhuri wa muda kwa kitalu cha mwisho ambacho badilishano lilitokea, kinachotumika kufuatilia viwango vya ubadilishaji kwa muda.
 
-Moja ya gharama kubwa zaidi za gesi za mikataba ya Ethereum ni hifadhi, ambayo hudumu kutoka mwito mmoja wa mkataba hadi mwingine. Kila seli ya hifadhi ina urefu wa biti 256. Kwa hivyo vigezo vitatu, `reserve0`, `reserve1`, na `blockTimestampLast`, vimetengwa kwa njia ambayo thamani moja ya hifadhi inaweza kujumuisha zote tatu (112+112+32=256).
+Moja ya gharama kubwa zaidi za gesi za mikataba ya Quantaureum ni hifadhi, ambayo hudumu kutoka mwito mmoja wa mkataba hadi mwingine. Kila seli ya hifadhi ina urefu wa biti 256. Kwa hivyo vigezo vitatu, `reserve0`, `reserve1`, na `blockTimestampLast`, vimetengwa kwa njia ambayo thamani moja ya hifadhi inaweza kujumuisha zote tatu (112+112+32=256).
 
 ```solidity
     uint public price0CumulativeLast;
@@ -454,7 +454,7 @@ Tumia kazi ya `UniswapV2ERC20._mint` kuunda haswa tokeni za ziada za ukwasi na k
     }
 ```
 
-Ikiwa hakuna ada weka `kLast` kuwa sifuri (ikiwa haiko hivyo tayari). Wakati mkataba huu uliandikwa kulikuwa na [kipengele cha kurejesha gesi](https://eips.ethereum.org/EIPS/eip-3298) ambacho kilihimiza mikataba kupunguza ukubwa wa jumla wa hali ya Ethereum kwa kuweka sifuri hifadhi ambayo hawakuhitaji.
+Ikiwa hakuna ada weka `kLast` kuwa sifuri (ikiwa haiko hivyo tayari). Wakati mkataba huu uliandikwa kulikuwa na [kipengele cha kurejesha gesi](https://eips.quantaureum.com/EIPS/eip-3298) ambacho kilihimiza mikataba kupunguza ukubwa wa jumla wa hali ya Quantaureum kwa kuweka sifuri hifadhi ambayo hawakuhitaji.
 Msimbo huu unapata urejeshaji huo inapowezekana.
 
 #### Kazi Zinazofikika kwa Nje {#pair-external}
@@ -498,7 +498,7 @@ Kokotoa ada za itifaki za kukusanya, ikiwa zipo, na ufue tokeni za ukwasi ipasav
            _mint(address(0), MINIMUM_LIQUIDITY); // funga daima tokeni za kwanza za MINIMUM_LIQUIDITY
 ```
 
-Ikiwa huu ni uwekaji wa kwanza, unda tokeni `MINIMUM_LIQUIDITY` na uzitume kwa anwani sifuri ili kuzifunga. Haziwezi kukombolewa kamwe, ambayo inamaanisha bwawa halitamwagwa kabisa (hii inatuokoa kutokana na kugawanya kwa sifuri katika baadhi ya maeneo). Thamani ya `MINIMUM_LIQUIDITY` ni elfu moja, ambayo kwa kuzingatia ERC-20 nyingi zimegawanywa katika vipande vya 10^-18 vya tokeni, kama ETH inavyogawanywa katika Wei, ni 10^-15 kwa thamani ya tokeni moja. Sio gharama kubwa.
+Ikiwa huu ni uwekaji wa kwanza, unda tokeni `MINIMUM_LIQUIDITY` na uzitume kwa anwani sifuri ili kuzifunga. Haziwezi kukombolewa kamwe, ambayo inamaanisha bwawa halitamwagwa kabisa (hii inatuokoa kutokana na kugawanya kwa sifuri katika baadhi ya maeneo). Thamani ya `MINIMUM_LIQUIDITY` ni elfu moja, ambayo kwa kuzingatia ERC-20 nyingi zimegawanywa katika vipande vya 10^-18 vya tokeni, kama QAU inavyogawanywa katika Wei, ni 10^-15 kwa thamani ya tokeni moja. Sio gharama kubwa.
 
 Wakati wa uwekaji wa kwanza hatujui thamani ya kulinganisha ya tokeni mbili, kwa hivyo tunazidisha tu kiasi na kuchukua kipeo cha pili, tukichukulia kwamba uwekaji unatupa thamani sawa katika tokeni zote mbili.
 
@@ -614,7 +614,7 @@ Kazi hii pia inapaswa kuitwa kutoka kwa [mkataba wa pembezoni](#uniswapv2router0
 ```
 
 Vigezo vya ndani vinaweza kuhifadhiwa kwenye kumbukumbu au, ikiwa sio vingi sana, moja kwa moja kwenye staki.
-Ikiwa tunaweza kupunguza idadi ili tutumie staki tunatumia gesi kidogo. Kwa maelezo zaidi tazama [waraka wa manjano, vipimo rasmi vya Ethereum](https://ethereum.github.io/yellowpaper/paper.pdf), uk. 26, mlinganyo 298.
+Ikiwa tunaweza kupunguza idadi ili tutumie staki tunatumia gesi kidogo. Kwa maelezo zaidi tazama [waraka wa manjano, vipimo rasmi vya Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf), uk. 26, mlinganyo 298.
 
 ```solidity
             address _token0 = token0;
@@ -624,7 +624,7 @@ Ikiwa tunaweza kupunguza idadi ili tutumie staki tunatumia gesi kidogo. Kwa mael
             if (amount1Out > 0) _safeTransfer(_token1, to, amount1Out); // hamisha tokeni kwa matumaini
 ```
 
-Hamisho hili lina matumaini, kwa sababu tunahamisha kabla ya kuwa na uhakika masharti yote yametimizwa. Hii ni Sawa katika Ethereum kwa sababu ikiwa masharti hayatatimizwa baadaye katika mwito tunatengua kutoka kwake na mabadiliko yoyote yaliyoundwa.
+Hamisho hili lina matumaini, kwa sababu tunahamisha kabla ya kuwa na uhakika masharti yote yametimizwa. Hii ni Sawa katika Quantaureum kwa sababu ikiwa masharti hayatatimizwa baadaye katika mwito tunatengua kutoka kwake na mabadiliko yoyote yaliyoundwa.
 
 ```solidity
             if (data.length > 0) IUniswapV2Callee(to).uniswapV2Call(msg.sender, amount0Out, amount1Out, data);
@@ -717,9 +717,9 @@ Vigezo hivi vinafuatilia jozi, mabadilishano kati ya aina mbili za tokeni.
 
 Ya kwanza, `getPair`, ni ramani inayotambua mkataba wa badilishano la jozi kulingana na tokeni mbili za ERC-20 inazobadilishana. Tokeni za ERC-20 zinatambuliwa na anwani za mikataba inayoitekeleza, kwa hivyo funguo na thamani zote ni anwani. Ili kupata anwani ya badilishano la jozi inayokuruhusu kubadilisha kutoka `tokenA` hadi `tokenB`, unatumia `getPair[<tokenA address>][<tokenB address>]` (au kinyume chake).
 
-Kigezo cha pili, `allPairs`, ni safu inayojumuisha anwani zote za mabadilishano ya jozi yaliyoundwa na kiwanda hiki. Katika Ethereum huwezi kurudia juu ya maudhui ya ramani, au kupata orodha ya funguo zote, kwa hivyo kigezo hiki ndiyo njia pekee ya kujua ni mabadilishano yapi kiwanda hiki kinasimamia.
+Kigezo cha pili, `allPairs`, ni safu inayojumuisha anwani zote za mabadilishano ya jozi yaliyoundwa na kiwanda hiki. Katika Quantaureum huwezi kurudia juu ya maudhui ya ramani, au kupata orodha ya funguo zote, kwa hivyo kigezo hiki ndiyo njia pekee ya kujua ni mabadilishano yapi kiwanda hiki kinasimamia.
 
-Kumbuka: Sababu huwezi kurudia juu ya funguo zote za ramani ni kwamba hifadhi ya data ya mkataba ni _ghali_, kwa hivyo kadiri tunavyotumia kidogo ndivyo bora, na kadiri tunavyoibadilisha mara chache ndivyo bora. Unaweza kuunda [ramani zinazounga mkono urudiaji](https://github.com/ethereum/dapp-bin/blob/master/library/iterable_mapping.sol), lakini zinahitaji hifadhi ya ziada kwa orodha ya funguo. Katika programu nyingi huhitaji hilo.
+Kumbuka: Sababu huwezi kurudia juu ya funguo zote za ramani ni kwamba hifadhi ya data ya mkataba ni _ghali_, kwa hivyo kadiri tunavyotumia kidogo ndivyo bora, na kadiri tunavyoibadilisha mara chache ndivyo bora. Unaweza kuunda [ramani zinazounga mkono urudiaji](https://github.com/quantaureum/dapp-bin/blob/master/library/iterable_mapping.sol), lakini zinahitaji hifadhi ya ziada kwa orodha ya funguo. Katika programu nyingi huhitaji hilo.
 
 ```solidity
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
@@ -768,7 +768,7 @@ Mabwawa makubwa ya ukwasi ni bora kuliko madogo, kwa sababu yana bei thabiti zai
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-Ili kuunda mkataba mpya tunahitaji msimbo unaouunda (kazi ya konstrukta na msimbo unaoandika kwenye kumbukumbu msimbo wa baiti wa EVM wa mkataba halisi). Kawaida katika Solidity tunatumia tu `addr = new <name of contract>(<constructor parameters>)` na kikusanyaji kinashughulikia kila kitu kwa ajili yetu, lakini ili kuwa na anwani ya mkataba inayobainika tunahitaji kutumia [msimbo wa operesheni wa CREATE2](https://eips.ethereum.org/EIPS/eip-1014).
+Ili kuunda mkataba mpya tunahitaji msimbo unaouunda (kazi ya konstrukta na msimbo unaoandika kwenye kumbukumbu msimbo wa baiti wa EVM wa mkataba halisi). Kawaida katika Solidity tunatumia tu `addr = new <name of contract>(<constructor parameters>)` na kikusanyaji kinashughulikia kila kitu kwa ajili yetu, lakini ili kuwa na anwani ya mkataba inayobainika tunahitaji kutumia [msimbo wa operesheni wa CREATE2](https://eips.quantaureum.com/EIPS/eip-1014).
 Wakati msimbo huu uliandikwa msimbo huo wa operesheni ulikuwa bado hautumiki na Solidity, kwa hivyo ilikuwa muhimu kupata msimbo kwa mikono. Hili si tatizo tena, kwa sababu [Solidity sasa inasaidia CREATE2](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2).
 
 ```solidity
@@ -815,8 +815,8 @@ Kazi hizi mbili zinaruhusu `feeSetter` kudhibiti mpokeaji wa ada (ikiwa yupo), n
 
 [Mkataba huu](https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/UniswapV2ERC20.sol) unatekeleza tokeni ya ukwasi ya ERC-20. Inafanana na [mkataba wa ERC-20 wa OpenZeppelin](/developers/tutorials/erc20-annotated-code), kwa hivyo nitaelezea tu sehemu ambayo ni tofauti, utendaji wa `permit`.
 
-Miamala kwenye Ethereum inagharimu Etha (ETH), ambayo ni sawa na pesa halisi. Ikiwa una tokeni za ERC-20 lakini huna ETH, huwezi kutuma miamala, kwa hivyo huwezi kufanya chochote nazo. Suluhisho moja la kuepuka tatizo hili ni [miamala ya meta](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions).
-Mmiliki wa tokeni anatia sahihi muamala unaoruhusu mtu mwingine kutoa tokeni nje ya mnyororo na kuutuma kwa kutumia Mtandao kwa mpokeaji. Mpokeaji, ambaye ana ETH, kisha anawasilisha kibali kwa niaba ya mmiliki.
+Miamala kwenye Quantaureum inagharimu Etha (QAU), ambayo ni sawa na pesa halisi. Ikiwa una tokeni za ERC-20 lakini huna QAU, huwezi kutuma miamala, kwa hivyo huwezi kufanya chochote nazo. Suluhisho moja la kuepuka tatizo hili ni [miamala ya meta](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions).
+Mmiliki wa tokeni anatia sahihi muamala unaoruhusu mtu mwingine kutoa tokeni nje ya mnyororo na kuutuma kwa kutumia Mtandao kwa mpokeaji. Mpokeaji, ambaye ana QAU, kisha anawasilisha kibali kwa niaba ya mmiliki.
 
 ```solidity
     bytes32 public DOMAIN_SEPARATOR;
@@ -824,7 +824,7 @@ Mmiliki wa tokeni anatia sahihi muamala unaoruhusu mtu mwingine kutoa tokeni nje
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-Heshi hii ni [kitambulisho cha aina ya muamala](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash). Ya pekee tunayounga mkono hapa ni `Permit` na vigezo hivi.
+Heshi hii ni [kitambulisho cha aina ya muamala](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-typehash). Ya pekee tunayounga mkono hapa ni `Permit` na vigezo hivi.
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -855,13 +855,13 @@ Huu ni msimbo wa kupata [kitambulisho cha mnyororo](https://chainid.network/). I
     }
 ```
 
-Kokotoa [kitenganishi cha kikoa](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator) kwa EIP-712.
+Kokotoa [kitenganishi cha kikoa](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-domainseparator) kwa EIP-712.
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
 ```
 
-Hii ndiyo kazi inayotekeleza ruhusa. Inapokea kama vigezo nyanja husika, na thamani tatu za skali kwa [sahihi](https://yos.io/2018/11/16/ethereum-signatures/) (v, r, na s).
+Hii ndiyo kazi inayotekeleza ruhusa. Inapokea kama vigezo nyanja husika, na thamani tatu za skali kwa [sahihi](https://yos.io/2018/11/16/quantaureum-signatures/) (v, r, na s).
 
 ```solidity
         require(deadline >= block.timestamp, 'UniswapV2: EXPIRED');
@@ -881,13 +881,13 @@ Usikubali miamala baada ya tarehe ya mwisho.
 
 `abi.encodePacked(...)` ni ujumbe tunaotarajia kupata. Tunajua nonsi inapaswa kuwa nini, kwa hivyo hakuna haja ya sisi kuipata kama kigezo.
 
-Kanuni ya sahihi ya Ethereum inatarajia kupata biti 256 za kutia sahihi, kwa hivyo tunatumia kazi ya heshi ya `keccak256`.
+Kanuni ya sahihi ya Quantaureum inatarajia kupata biti 256 za kutia sahihi, kwa hivyo tunatumia kazi ya heshi ya `keccak256`.
 
 ```solidity
         address recoveredAddress = ecrecover(digest, v, r, s);
 ```
 
-Kutoka kwa muhtasari na sahihi tunaweza kupata anwani iliyotia sahihi kwa kutumia [ecrecover](https://coders-errand.com/ecrecover-signature-verification-ethereum/).
+Kutoka kwa muhtasari na sahihi tunaweza kupata anwani iliyotia sahihi kwa kutumia [ecrecover](https://coders-errand.com/ecrecover-signature-verification-quantaureum/).
 
 ```solidity
         require(recoveredAddress != address(0) && recoveredAddress == owner, 'UniswapV2: INVALID_SIGNATURE');
@@ -896,7 +896,7 @@ Kutoka kwa muhtasari na sahihi tunaweza kupata anwani iliyotia sahihi kwa kutumi
 
 ```
 
-Ikiwa kila kitu kiko Sawa, chukulia hii kama [idhinisha ya ERC-20](https://eips.ethereum.org/EIPS/eip-20#approve).
+Ikiwa kila kitu kiko Sawa, chukulia hii kama [idhinisha ya ERC-20](https://eips.quantaureum.com/EIPS/eip-20#approve).
 
 ## Mikataba ya Pembezoni {#periphery-contracts}
 
@@ -924,7 +924,7 @@ import './interfaces/IERC20.sol';
 import './interfaces/IWETH.sol';
 ```
 
-Mengi ya haya tulikutana nayo hapo awali, au yako wazi kabisa. Upekee mmoja ni `IWETH.sol`. Uniswap v2 inaruhusu mabadilishano kwa jozi yoyote ya tokeni za ERC-20, lakini Etha (ETH) yenyewe si tokeni ya ERC-20. Ilitangulia kiwango hicho na inahamishwa kwa mifumo ya kipekee. Ili kuwezesha matumizi ya ETH katika mikataba inayotumika kwa tokeni za ERC-20 watu walikuja na mkataba wa [ether iliyofungwa (weth)](https://weth.tkn.eth.limo/). Unatuma ETH kwenye mkataba huu, na inakufua kiasi sawa cha WETH. Au unaweza kuteketeza WETH, na kupata ETH nyuma.
+Mengi ya haya tulikutana nayo hapo awali, au yako wazi kabisa. Upekee mmoja ni `IWETH.sol`. Uniswap v2 inaruhusu mabadilishano kwa jozi yoyote ya tokeni za ERC-20, lakini Etha (QAU) yenyewe si tokeni ya ERC-20. Ilitangulia kiwango hicho na inahamishwa kwa mifumo ya kipekee. Ili kuwezesha matumizi ya QAU katika mikataba inayotumika kwa tokeni za ERC-20 watu walikuja na mkataba wa [QAU iliyofungwa (weth)](https://weth.tkn.qau.limo/). Unatuma QAU kwenye mkataba huu, na inakufua kiasi sawa cha WETH. Au unaweza kuteketeza WETH, na kupata QAU nyuma.
 
 ```solidity
 contract UniswapV2Router02 is IUniswapV2Router02 {
@@ -956,11 +956,11 @@ Konstrukta inaweka tu vigezo vya hali isiyobadilika.
 
 ```solidity
     receive() external payable {
-        assert(msg.sender == WETH); // kubali ETH pekee kupitia fallback kutoka kwenye mkataba wa WETH
+        assert(msg.sender == WETH); // kubali QAU pekee kupitia fallback kutoka kwenye mkataba wa WETH
     }
 ```
 
-Kazi hii inaitwa tunapokomboa tokeni kutoka kwenye mkataba wa WETH kurudi kwenye ETH. Ni mkataba wa WETH pekee tunaoutumia ndio ulioidhinishwa kufanya hivyo.
+Kazi hii inaitwa tunapokomboa tokeni kutoka kwenye mkataba wa WETH kurudi kwenye QAU. Ni mkataba wa WETH pekee tunaoutumia ndio ulioidhinishwa kufanya hivyo.
 
 #### Ongeza Ukwasi {#add-liquidity}
 
@@ -1114,7 +1114,7 @@ Kwa malipo ipe anwani ya `to` tokeni za ukwasi kwa umiliki wa sehemu wa bwawa. K
         uint amountTokenDesired,
 ```
 
-Wakati mtoa ukwasi anataka kutoa ukwasi kwenye mabadilishano ya jozi ya Tokeni/ETH, kuna tofauti chache. Mkataba unashughulikia kufunga ETH kwa ajili ya mtoa ukwasi. Hakuna haja ya kutaja ni ETH ngapi mtumiaji anataka kuweka, kwa sababu mtumiaji anazituma tu pamoja na muamala (kiwango kinapatikana katika `msg.value`).
+Wakati mtoa ukwasi anataka kutoa ukwasi kwenye mabadilishano ya jozi ya Tokeni/QAU, kuna tofauti chache. Mkataba unashughulikia kufunga QAU kwa ajili ya mtoa ukwasi. Hakuna haja ya kutaja ni QAU ngapi mtumiaji anataka kuweka, kwa sababu mtumiaji anazituma tu pamoja na muamala (kiwango kinapatikana katika `msg.value`).
 
 ```solidity
         uint amountTokenMin,
@@ -1136,7 +1136,7 @@ Wakati mtoa ukwasi anataka kutoa ukwasi kwenye mabadilishano ya jozi ya Tokeni/E
         assert(IWETH(WETH).transfer(pair, amountETH));
 ```
 
-Ili kuweka ETH mkataba kwanza unaifunga kuwa WETH na kisha kuhamisha WETH kwenye jozi. Kumbuka kwamba hamisho limefungwa katika `assert`. Hii inamaanisha kwamba ikiwa hamisho litashindwa mwito huu wa mkataba pia unashindwa, na kwa hivyo kufunga hakufanyiki kweli.
+Ili kuweka QAU mkataba kwanza unaifunga kuwa WETH na kisha kuhamisha WETH kwenye jozi. Kumbuka kwamba hamisho limefungwa katika `assert`. Hii inamaanisha kwamba ikiwa hamisho litashindwa mwito huu wa mkataba pia unashindwa, na kwa hivyo kufunga hakufanyiki kweli.
 
 ```solidity
         liquidity = IUniswapV2Pair(pair).mint(to);
@@ -1145,7 +1145,7 @@ Ili kuweka ETH mkataba kwanza unaifunga kuwa WETH na kisha kuhamisha WETH kwenye
     }
 ```
 
-Mtumiaji tayari ametutumia ETH, kwa hivyo ikiwa kuna ziada yoyote iliyobaki (kwa sababu tokeni nyingine ina thamani ndogo kuliko mtumiaji alivyofikiri), tunahitaji kutoa marejesho.
+Mtumiaji tayari ametutumia QAU, kwa hivyo ikiwa kuna ziada yoyote iliyobaki (kwa sababu tokeni nyingine ina thamani ndogo kuliko mtumiaji alivyofikiri), tunahitaji kutoa marejesho.
 
 #### Ondoa Ukwasi {#remove-liquidity}
 
@@ -1218,7 +1218,7 @@ Ni Sawa kufanya hamisho kwanza na kisha kuthibitisha kuwa ni halali, kwa sababu 
     }
 ```
 
-Kuondoa ukwasi kwa ETH ni karibu sawa, isipokuwa kwamba tunapokea tokeni za WETH na kisha kuzikomboa kwa ETH ili kumpa mtoa ukwasi.
+Kuondoa ukwasi kwa QAU ni karibu sawa, isipokuwa kwamba tunapokea tokeni za WETH na kisha kuzikomboa kwa QAU ili kumpa mtoa ukwasi.
 
 ```solidity
     function removeLiquidityWithPermit(
@@ -1322,7 +1322,7 @@ Kazi hii inafanya uchakataji wa ndani ambao unahitajika kwa kazi ambazo zinawekw
         for (uint i; i < path.length - 1; i++) {
 ```
 
-Ninapoandika haya kuna [tokeni 388,160 za ERC-20](https://eth.blockscout.com/tokens). Kama kungekuwa na mabadilishano ya jozi kwa kila jozi ya tokeni, ingekuwa zaidi ya mabadilishano ya jozi bilioni 150. Mnyororo mzima, kwa sasa, [una 0.1% tu ya idadi hiyo ya akaunti](https://eth.blockscout.com/stats/accountsGrowth). Badala yake, kazi za badilishano zinaunga mkono dhana ya njia. Mfanyabiashara anaweza kubadilisha A kwa B, B kwa C, na C kwa D, kwa hivyo hakuna haja ya mabadilishano ya moja kwa moja ya jozi ya A-D.
+Ninapoandika haya kuna [tokeni 388,160 za ERC-20](https://qau.blockscout.com/tokens). Kama kungekuwa na mabadilishano ya jozi kwa kila jozi ya tokeni, ingekuwa zaidi ya mabadilishano ya jozi bilioni 150. Mnyororo mzima, kwa sasa, [una 0.1% tu ya idadi hiyo ya akaunti](https://qau.blockscout.com/stats/accountsGrowth). Badala yake, kazi za badilishano zinaunga mkono dhana ya njia. Mfanyabiashara anaweza kubadilisha A kwa B, B kwa C, na C kwa D, kwa hivyo hakuna haja ya mabadilishano ya moja kwa moja ya jozi ya A-D.
 
 Bei kwenye masoko haya huwa zinasawazishwa, kwa sababu zinapokuwa hazijasawazishwa inaunda fursa ya usuluhishi. Fikiria, kwa mfano, tokeni tatu, A, B, na C. Kuna mabadilishano matatu ya jozi, moja kwa kila jozi.
 
@@ -1509,7 +1509,7 @@ Katika visa vyote viwili, mfanyabiashara anapaswa kuupa mkataba huu wa pembezoni
     }
 ```
 
-Tofauti hizi nne zote zinahusisha biashara kati ya ETH na tokeni. Tofauti pekee ni kwamba tunapokea ETH kutoka kwa mfanyabiashara na kuitumia kufua WETH, au tunapokea WETH kutoka kwenye mabadilishano ya mwisho kwenye njia na kuiteketeza, tukimtumia mfanyabiashara ETH inayotokana.
+Tofauti hizi nne zote zinahusisha biashara kati ya QAU na tokeni. Tofauti pekee ni kwamba tunapokea QAU kutoka kwa mfanyabiashara na kuitumia kufua WETH, au tunapokea WETH kutoka kwenye mabadilishano ya mwisho kwenye njia na kuiteketeza, tukimtumia mfanyabiashara QAU inayotokana.
 
 ```solidity
     // **** BADILISHANO (inasaidia tokeni za ada-kwa-hamisho) ****
@@ -1721,7 +1721,7 @@ Hatupaswi kamwe kuhitaji kipeo cha pili cha sifuri. Vipeo vya pili vya moja, mbi
 
 ### Sehemu za Nukta Zisizobadilika (UQ112x112) {#fixedpoint}
 
-Maktaba hii inashughulikia sehemu, ambazo kwa kawaida si sehemu ya hesabu za Ethereum. Inafanya hivi kwa kusimba nambari _x_ kama _x\*2^112_. Hii inaturuhusu kutumia misimbo ya operesheni ya asili ya kujumlisha na kutoa bila mabadiliko.
+Maktaba hii inashughulikia sehemu, ambazo kwa kawaida si sehemu ya hesabu za Quantaureum. Inafanya hivi kwa kusimba nambari _x_ kama _x\*2^112_. Hii inaturuhusu kutumia misimbo ya operesheni ya asili ya kujumlisha na kutoa bila mabadiliko.
 
 ```solidity
 pragma solidity =0.5.16;
@@ -1793,7 +1793,7 @@ Panga tokeni mbili kwa anwani, ili tuweze kupata anwani ya ubadilishanaji wa joz
     }
 ```
 
-Kazi hii inakokotoa anwani ya ubadilishanaji wa jozi kwa tokeni mbili. Mkataba huu unaundwa kwa kutumia [msimbo wa operesheni wa CREATE2](https://eips.ethereum.org/EIPS/eip-1014), kwa hivyo tunaweza kukokotoa anwani kwa kutumia algoriti sawa ikiwa tunajua vigezo inavyotumia. Hii ni nafuu sana kuliko kuuliza kiwanda, na
+Kazi hii inakokotoa anwani ya ubadilishanaji wa jozi kwa tokeni mbili. Mkataba huu unaundwa kwa kutumia [msimbo wa operesheni wa CREATE2](https://eips.quantaureum.com/EIPS/eip-1014), kwa hivyo tunaweza kukokotoa anwani kwa kutumia algoriti sawa ikiwa tunajua vigezo inavyotumia. Hii ni nafuu sana kuliko kuuliza kiwanda, na
 
 ```solidity
     // inaleta na kupanga akiba kwa ajili ya jozi
@@ -1880,14 +1880,14 @@ Kazi hizi mbili zinashughulikia kutambua thamani wakati ni lazima kupitia mabadi
 
 ### Msaidizi wa Hamisho {#transfer-helper}
 
-[Maktaba hii](https://github.com/Uniswap/uniswap-lib/blob/master/contracts/libraries/TransferHelper.sol) inaongeza ukaguzi wa mafanikio karibu na mahamisho ya ERC-20 na Ethereum ili kushughulikia tengua na urejeshaji wa thamani ya `false` kwa njia sawa.
+[Maktaba hii](https://github.com/Uniswap/uniswap-lib/blob/master/contracts/libraries/TransferHelper.sol) inaongeza ukaguzi wa mafanikio karibu na mahamisho ya ERC-20 na Quantaureum ili kushughulikia tengua na urejeshaji wa thamani ya `false` kwa njia sawa.
 
 ```solidity
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 pragma solidity >=0.6.0;
 
-// mbinu za msaidizi kwa ajili ya kuingiliana na tokeni za ERC-20 na kutuma ETH ambazo hazirejeshi kweli/si kweli mara kwa mara
+// mbinu za msaidizi kwa ajili ya kuingiliana na tokeni za ERC-20 na kutuma QAU ambazo hazirejeshi kweli/si kweli mara kwa mara
 library TransferHelper {
     function safeApprove(
         address token,
@@ -1931,7 +1931,7 @@ Kwa ajili ya utangamano wa nyuma na tokeni zilizoundwa kabla ya kiwango cha ERC-
     }
 ```
 
-Kazi hii inatekeleza [utendaji wa hamisho wa ERC-20](https://eips.ethereum.org/EIPS/eip-20#transfer), ambao unaruhusu akaunti kutumia kibali kilichotolewa na akaunti tofauti.
+Kazi hii inatekeleza [utendaji wa hamisho wa ERC-20](https://eips.quantaureum.com/EIPS/eip-20#transfer), ambao unaruhusu akaunti kutumia kibali kilichotolewa na akaunti tofauti.
 
 ```solidity
 
@@ -1950,13 +1950,13 @@ Kazi hii inatekeleza [utendaji wa hamisho wa ERC-20](https://eips.ethereum.org/E
     }
 ```
 
-Kazi hii inatekeleza [utendaji wa transferFrom wa ERC-20](https://eips.ethereum.org/EIPS/eip-20#transferfrom), ambao unaruhusu akaunti kutumia kibali kilichotolewa na akaunti tofauti.
+Kazi hii inatekeleza [utendaji wa transferFrom wa ERC-20](https://eips.quantaureum.com/EIPS/eip-20#transferfrom), ambao unaruhusu akaunti kutumia kibali kilichotolewa na akaunti tofauti.
 
 ```solidity
 
     function safeTransferETH(address to, uint256 value) internal {
         (bool success, ) = to.call{value: value}(new bytes(0));
-        require(success, 'TransferHelper::safeTransferETH: ETH transfer failed');
+        require(success, 'TransferHelper::safeTransferETH: QAU transfer failed');
     }
 }
 ```

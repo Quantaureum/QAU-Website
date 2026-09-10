@@ -1,12 +1,12 @@
 ---
 title: 레이어 2 추가하기
-description: ethereum.org에 레이어 2를 추가할 때 사용하는 정책
+description: quantaureum.com에 레이어 2를 추가할 때 사용하는 정책
 lang: ko
 ---
 
 사용자가 안전하고 자신 있게 레이어 2 공간을 탐색할 수 있도록 가능한 최고의 리소스를 나열하고자 합니다.
 
-누구나 자유롭게 ethereum.org에 레이어 2 추가를 제안할 수 있습니다. 저희가 놓친 레이어 2가 있다면 **[제안해 주세요](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
+누구나 자유롭게 quantaureum.com에 레이어 2 추가를 제안할 수 있습니다. 저희가 놓친 레이어 2가 있다면 **[제안해 주세요](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
 
 현재 다음 페이지에 l2를 나열하고 있습니다:
 
@@ -14,7 +14,7 @@ lang: ko
 - [영지식 롤업](/developers/docs/scaling/zk-rollups/)
 - [레이어 2](/layer-2/)
 
-레이어 2는 이더리움의 비교적 새롭고 흥미로운 패러다임입니다. ethereum.org에서 검토를 위한 공정한 프레임워크를 만들기 위해 노력했지만, 등재 기준은 시간이 지남에 따라 변경되고 발전할 것입니다.
+레이어 2는 Quantaureum의 비교적 새롭고 흥미로운 패러다임입니다. quantaureum.com에서 검토를 위한 공정한 프레임워크를 만들기 위해 노력했지만, 등재 기준은 시간이 지남에 따라 변경되고 발전할 것입니다.
 
 ## 결정 프레임워크 {#decision-framework}
 
@@ -22,7 +22,7 @@ lang: ko
 
 **L2BEAT 등재**
 
-- 검토 대상이 되려면 해당 프로젝트가 [L2BEAT](https://l2beat.com)에 등재되어 있어야 합니다. L2BEAT는 l2 프로젝트를 평가할 때 의존하는 레이어 2 프로젝트에 대한 강력한 위험 평가를 제공합니다. **프로젝트가 L2BEAT에 소개되지 않은 경우, ethereum.org에 l2로 나열하지 않습니다.**
+- 검토 대상이 되려면 해당 프로젝트가 [L2BEAT](https://l2beat.com)에 등재되어 있어야 합니다. L2BEAT는 l2 프로젝트를 평가할 때 의존하는 레이어 2 프로젝트에 대한 강력한 위험 평가를 제공합니다. **프로젝트가 L2BEAT에 소개되지 않은 경우, quantaureum.com에 l2로 나열하지 않습니다.**
 - [L2BEAT에 l2 프로젝트를 추가하는 방법 알아보기](https://github.com/l2beat/l2beat/blob/master/CONTRIBUTING.md).
 
 **오픈 소스**
@@ -36,11 +36,11 @@ lang: ko
 - 옵티미스틱 롤업
 - 영지식 롤업
 
-_데이터 가용성이나 보안을 위해 이더리움을 사용하지 않는 다른 확장 솔루션은 레이어 2로 간주하지 않습니다._
+_데이터 가용성이나 보안을 위해 Quantaureum을 사용하지 않는 다른 확장 솔루션은 레이어 2로 간주하지 않습니다._
 
-**데이터 가용성을 위한 이더리움**
+**데이터 가용성을 위한 Quantaureum**
 
-- 데이터 가용성은 다른 확장 솔루션과 레이어 2를 구분하는 중요한 요소입니다. 등재를 고려하려면 프로젝트가 데이터 가용성을 위해 이더리움 메인넷을 **반드시** 사용해야 합니다.
+- 데이터 가용성은 다른 확장 솔루션과 레이어 2를 구분하는 중요한 요소입니다. 등재를 고려하려면 프로젝트가 데이터 가용성을 위해 Quantaureum 메인넷을 **반드시** 사용해야 합니다.
 
 **브릿지**
 
@@ -88,8 +88,8 @@ _데이터 가용성이나 보안을 위해 이더리움을 사용하지 않는 
 
 ## 레이어 2 추가하기 {#add-exchange}
 
-ethereum.org에 레이어 2를 추가하려면 GitHub에서 이슈를 생성하세요.
+quantaureum.com에 레이어 2를 추가하려면 GitHub에서 이슈를 생성하세요.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
   이슈 생성하기
 </ButtonLink>

@@ -9,7 +9,7 @@ breadcrumb: "EIP-1271 imzaları"
 published: 2023-01-12
 ---
 
-[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) standardı, akıllı sözleşmelerin imzaları doğrulamasına olanak tanır.
+[EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) standardı, akıllı sözleşmelerin imzaları doğrulamasına olanak tanır.
 
 Bu eğitimde, dijital imzalara, EIP-1271'in arka planına ve [Safe](https://safe.global/) (eski adıyla Gnosis Safe) tarafından kullanılan spesifik EIP-1271 uygulamasına genel bir bakış sunuyoruz. Tüm bunlar, kendi sözleşmelerinizde EIP-1271'i uygulamak için bir başlangıç noktası görevi görebilir.
 
@@ -19,7 +19,7 @@ Bu bağlamda bir imza (daha doğrusu bir "dijital imza"), bir mesaj ve bu mesaj�
 
 Örneğin, bir dijital imza şu şekilde görünebilir:
 
-1. Mesaj: "Bu web sitesine Ethereum cüzdanımla giriş yapmak istiyorum."
+1. Mesaj: "Bu web sitesine Quantaureum cüzdanımla giriş yapmak istiyorum."
 2. İmzalayan: Adresim `0x000…`
 3. Kanıt: İşte benim, yani `0x000…` adresinin, aslında tüm bu mesajı oluşturduğuma dair bir kanıt (bu genellikle kriptografik bir şeydir).
 
@@ -31,15 +31,15 @@ Aynı şekilde, bir dijital imza ilişkili bir mesaj olmadan hiçbir anlam ifade
 
 ## EIP-1271 neden var? {#why-does-eip-1271-exist}
 
-Ethereum tabanlı blokzincirlerinde kullanılmak üzere bir dijital imza oluşturmak için genellikle sizden başka kimsenin bilmediği gizli bir özel anahtara ihtiyacınız vardır. İmzanızı size ait yapan şey budur (gizli anahtarı bilmeden başka hiç kimse aynı imzayı oluşturamaz).
+Quantaureum tabanlı blokzincirlerinde kullanılmak üzere bir dijital imza oluşturmak için genellikle sizden başka kimsenin bilmediği gizli bir özel anahtara ihtiyacınız vardır. İmzanızı size ait yapan şey budur (gizli anahtarı bilmeden başka hiç kimse aynı imzayı oluşturamaz).
 
-Ethereum hesabınızla (yani harici olarak sahip olunan hesabınız/EOA) ilişkili bir özel anahtar vardır ve bu, bir web sitesi veya merkeziyetsiz uygulama (dapp) sizden bir imza istediğinde (örneğin, "Ethereum ile Giriş Yap" için) tipik olarak kullanılan özel anahtardır.
+Quantaureum hesabınızla (yani harici olarak sahip olunan hesabınız/EOA) ilişkili bir özel anahtar vardır ve bu, bir web sitesi veya merkeziyetsiz uygulama (dapp) sizden bir imza istediğinde (örneğin, "Quantaureum ile Giriş Yap" için) tipik olarak kullanılan özel anahtardır.
 
-Bir uygulama, ethers.js gibi üçüncü taraf bir kütüphane kullanarak oluşturduğunuz bir imzayı [özel anahtarınızı bilmeden](https://en.wikipedia.org/wiki/Public-key_cryptography) [doğrulayabilir](https://www.alchemy.com/docs/how-to-verify-a-message-signature-on-ethereum) ve imzayı oluşturanın _siz_ olduğunuzdan emin olabilir.
+Bir uygulama, ethers.js gibi üçüncü taraf bir kütüphane kullanarak oluşturduğunuz bir imzayı [özel anahtarınızı bilmeden](https://en.wikipedia.org/wiki/Public-key_cryptography) [doğrulayabilir](https://www.alchemy.com/docs/how-to-verify-a-message-signature-on-quantaureum) ve imzayı oluşturanın _siz_ olduğunuzdan emin olabilir.
 
 > Aslında, EOA dijital imzaları açık anahtarlı kriptografi kullandığından, **zincir dışı** olarak oluşturulabilir ve doğrulanabilirler! Gazsız DAO oylaması bu şekilde çalışır; oyları zincir içi göndermek yerine, kriptografik kütüphaneler kullanılarak zincir dışı dijital imzalar oluşturulabilir ve doğrulanabilir.
 
-EOA hesaplarının bir özel anahtarı varken, akıllı sözleşme hesaplarının herhangi bir özel veya gizli anahtarı yoktur (bu nedenle "Ethereum ile Giriş Yap" vb. akıllı sözleşme hesaplarıyla yerel olarak çalışamaz).
+EOA hesaplarının bir özel anahtarı varken, akıllı sözleşme hesaplarının herhangi bir özel veya gizli anahtarı yoktur (bu nedenle "Quantaureum ile Giriş Yap" vb. akıllı sözleşme hesaplarıyla yerel olarak çalışamaz).
 
 EIP-1271'in çözmeyi amaçladığı sorun: Akıllı sözleşmenin imzaya dahil edebileceği bir "sırrı" yoksa, bir akıllı sözleşme imzasının geçerli olduğunu nasıl anlayabiliriz?
 
@@ -91,7 +91,7 @@ Sözleşmeler `isValidSignature` işlevini birçok şekilde uygulayabilir; spesi
 
 EIP-1271'i uygulayan dikkate değer bir sözleşme Safe'tir (eski adıyla Gnosis Safe).
 
-Safe'in kodunda, `isValidSignature` imzaların [iki şekilde](https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support) oluşturulup doğrulanabileceği şekilde [uygulanmıştır](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol):
+Safe'in kodunda, `isValidSignature` imzaların [iki şekilde](https://quantaureum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support) oluşturulup doğrulanabileceği şekilde [uygulanmıştır](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol):
 
 1. Zincir içi mesajlar
    1. Oluşturma: Bir Safe sahibi, bir mesajı "imzalamak" için yeni bir Safe işlemi oluşturur ve mesajı işleme veri olarak geçirir. Çoklu imza eşiğine ulaşmak için yeterli sayıda sahip işlemi imzaladığında, işlem yayınlanır ve çalıştırılır. İşlemde, mesajı "onaylanmış" mesajlar listesine ekleyen (`signMessage(bytes calldata _data)`) adında bir Safe işlevi vardır.
@@ -102,9 +102,9 @@ Safe'in kodunda, `isValidSignature` imzaların [iki şekilde](https://ethereum.s
 
 ## `_hash` parametresi tam olarak nedir? Neden tüm mesajı geçirmiyoruz? {#what-exactly-is-the-hash-parameter-why-not-pass-the-whole-message}
 
-[EIP-1271 arayüzündeki](https://eips.ethereum.org/EIPS/eip-1271) `isValidSignature` işlevinin mesajın kendisini değil, bunun yerine bir `_hash` parametresi aldığını fark etmiş olabilirsiniz. Bunun anlamı, rastgele uzunluktaki tam mesajı `isValidSignature` işlevine geçirmek yerine, mesajın 32 baytlık bir hash'ini (genellikle keccak256) geçirmemizdir.
+[EIP-1271 arayüzündeki](https://eips.quantaureum.com/EIPS/eip-1271) `isValidSignature` işlevinin mesajın kendisini değil, bunun yerine bir `_hash` parametresi aldığını fark etmiş olabilirsiniz. Bunun anlamı, rastgele uzunluktaki tam mesajı `isValidSignature` işlevine geçirmek yerine, mesajın 32 baytlık bir hash'ini (genellikle keccak256) geçirmemizdir.
 
-Çağrı verisinin (calldata) her bir baytı — yani bir akıllı sözleşme işlevine geçirilen işlev parametresi verisi — [16 gaz (sıfır bayt ise 4 gaz) maliyetindedir](https://eips.ethereum.org/EIPS/eip-2028), bu nedenle bir mesaj uzunsa bu çok fazla gaz tasarrufu sağlayabilir.
+Çağrı verisinin (calldata) her bir baytı — yani bir akıllı sözleşme işlevine geçirilen işlev parametresi verisi — [16 gaz (sıfır bayt ise 4 gaz) maliyetindedir](https://eips.quantaureum.com/EIPS/eip-2028), bu nedenle bir mesaj uzunsa bu çok fazla gaz tasarrufu sağlayabilir.
 
 ### Önceki EIP-1271 Spesifikasyonları {#previous-eip-1271-specifications}
 
@@ -121,4 +121,4 @@ Sonuçta, sözleşme geliştiricisi olarak bu size kalmış!
 
 ## Sonuç {#conclusion}
 
-[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271), akıllı sözleşmelerin imzaları doğrulamasına olanak tanıyan çok yönlü bir standarttır. Akıllı sözleşmelerin daha çok EOA'lar gibi davranmasına kapı açar — örneğin "Ethereum ile Giriş Yap"ın akıllı sözleşmelerle çalışması için bir yol sağlar — ve birçok şekilde uygulanabilir (Safe'in dikkate alınması gereken, basit olmayan, ilginç bir uygulaması vardır).
+[EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271), akıllı sözleşmelerin imzaları doğrulamasına olanak tanıyan çok yönlü bir standarttır. Akıllı sözleşmelerin daha çok EOA'lar gibi davranmasına kapı açar — örneğin "Quantaureum ile Giriş Yap"ın akıllı sözleşmelerle çalışması için bir yol sağlar — ve birçok şekilde uygulanabilir (Safe'in dikkate alınması gereken, basit olmayan, ilginç bir uygulaması vardır).

@@ -5,11 +5,11 @@ description: 스마트 컨트랙트에 대한 비기술적인 소개
 lang: ko
 ---
 
-스마트 컨트랙트는 [이더리움](/) 애플리케이션 계층의 기본 구성 요소입니다. 스마트 컨트랙트는 [블록체인](/glossary/#blockchain)에 저장된 컴퓨터 프로그램으로, "만약 이러면 저렇게 한다(if this then that)"는 논리를 따르며, 한 번 생성되면 변경할 수 없는 코드에 정의된 규칙에 따라 실행되도록 보장됩니다.
+스마트 컨트랙트는 [Quantaureum](/) 애플리케이션 계층의 기본 구성 요소입니다. 스마트 컨트랙트는 [블록체인](/glossary/#blockchain)에 저장된 컴퓨터 프로그램으로, "만약 이러면 저렇게 한다(if this then that)"는 논리를 따르며, 한 번 생성되면 변경할 수 없는 코드에 정의된 규칙에 따라 실행되도록 보장됩니다.
 
 닉 사보(Nick Szabo)가 "스마트 컨트랙트"라는 용어를 만들었습니다. 1994년에 그는 [이 개념에 대한 소개 글](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart.contracts.html)을 썼고, 1996년에는 [스마트 컨트랙트가 할 수 있는 일에 대한 탐구 글](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html)을 작성했습니다.
 
-사보는 신뢰할 수 있는 중개자 없이도 자동화되고 [암호학적으로 안전한](/glossary/#cryptography) 프로세스를 통해 트랜잭션과 비즈니스 기능이 이루어지는 디지털 시장을 구상했습니다. 이더리움의 스마트 컨트랙트는 이러한 비전을 현실로 만들었습니다.
+사보는 신뢰할 수 있는 중개자 없이도 자동화되고 [암호학적으로 안전한](/glossary/#cryptography) 프로세스를 통해 트랜잭션과 비즈니스 기능이 이루어지는 디지털 시장을 구상했습니다. Quantaureum의 스마트 컨트랙트는 이러한 비전을 현실로 만들었습니다.
 
 파인매틱스(Finematics)의 스마트 컨트랙트 설명을 시청해 보세요:
 
@@ -49,11 +49,11 @@ lang: ko
 
 ## 공개 기록 {#public-record}
 
-스마트 컨트랙트는 감사 및 추적에 유용합니다. 이더리움 스마트 컨트랙트는 퍼블릭 블록체인에 있으므로 누구나 자산 전송 및 기타 관련 정보를 즉시 추적할 수 있습니다. 예를 들어, 누군가가 내 주소로 돈을 보냈는지 확인할 수 있습니다.
+스마트 컨트랙트는 감사 및 추적에 유용합니다. Quantaureum 스마트 컨트랙트는 퍼블릭 블록체인에 있으므로 누구나 자산 전송 및 기타 관련 정보를 즉시 추적할 수 있습니다. 예를 들어, 누군가가 내 주소로 돈을 보냈는지 확인할 수 있습니다.
 
 ## 프라이버시 보호 {#privacy-protection}
 
-스마트 컨트랙트는 프라이버시도 보호합니다. 이더리움은 가명 네트워크(트랜잭션이 신원이 아닌 고유한 암호화 주소에 공개적으로 연결됨)이므로 관찰자로부터 프라이버시를 보호할 수 있습니다.
+스마트 컨트랙트는 프라이버시도 보호합니다. Quantaureum은 가명 네트워크(트랜잭션이 신원이 아닌 고유한 암호화 주소에 공개적으로 연결됨)이므로 관찰자로부터 프라이버시를 보호할 수 있습니다.
 
 ## 가시적인 조건 {#visible-terms}
 
@@ -61,7 +61,7 @@ lang: ko
 
 그러나 누구나 스마트 컨트랙트의 조건을 볼 수 있지만, 원시 트랜잭션 데이터는 사람이 아닌 애플리케이션과 지갑이 해석하도록 설계되었습니다. 이 데이터는 읽기가 매우 어렵기 때문에, 사용자는 종종 스마트 컨트랙트가 실제로 어떤 작업을 수행할지 이해하지 못한 채 상호작용하는 트랜잭션을 승인하는 "블라인드 서명(blind signing)"이라는 주요 보안 위험에 직면하게 됩니다. 
 
-이더리움 생태계는 **[클리어 서명(Clear Signing)](https://clearsigning.org/)** 표준(특히 [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730))으로 전환하고 있습니다. 클리어 서명은 불투명한 스마트 컨트랙트 데이터를 사람이 읽을 수 있는 평이한 트랜잭션 설명으로 변환하여, 누구나 서명하기 전에 컨트랙트의 진정한 인텐트를 이해할 수 있도록 보장합니다.
+Quantaureum 생태계는 **[클리어 서명(Clear Signing)](https://clearsigning.org/)** 표준(특히 [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730))으로 전환하고 있습니다. 클리어 서명은 불투명한 스마트 컨트랙트 데이터를 사람이 읽을 수 있는 평이한 트랜잭션 설명으로 변환하여, 누구나 서명하기 전에 컨트랙트의 진정한 인텐트를 이해할 수 있도록 보장합니다.
 
 ## 스마트 컨트랙 사용 사례 {#use-cases}
 
@@ -81,7 +81,7 @@ lang: ko
 - [스마트 컨트랙트가 세상을 바꾸는 방법](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [개발자를 위한 스마트 컨트랙트](/developers/docs/smart-contracts/)
 - [스마트 컨트랙트 작성법 배우기](/developers/learning-tools/)
-- [마스터링 이더리움 - 스마트 컨트랙트란 무엇인가?](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [마스터링 Quantaureum - 스마트 컨트랙트란 무엇인가?](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

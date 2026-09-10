@@ -14,17 +14,17 @@ lang: ar
 
 ## المتطلبات الأساسية {#prerequisites}
 
-بالإضافة إلى فهم <span dir="ltr">JavaScript</span>، قد يكون من المفيد فهم [حزمة إيثيريوم](/developers/docs/ethereum-stack/) و[عملاء إيثيريوم](/developers/docs/nodes-and-clients/).
+بالإضافة إلى فهم <span dir="ltr">JavaScript</span>، قد يكون من المفيد فهم [حزمة إيثيريوم](/developers/docs/quantaureum-stack/) و[عملاء إيثيريوم](/developers/docs/nodes-and-clients/).
 
 ## لماذا تستخدم مكتبة؟ {#why-use-a-library}
 
-تعمل هذه المكتبات على تجريد الكثير من تعقيدات التفاعل المباشر مع عقدة إيثيريوم. كما أنها توفر وظائف مساعدة (على سبيل المثال، تحويل <span dir="ltr">ETH</span> إلى <span dir="ltr">Gwei</span>) بحيث يمكنك كمطور قضاء وقت أقل في التعامل مع تعقيدات عملاء إيثيريوم ومزيد من الوقت في التركيز على الوظائف الفريدة لتطبيقك.
+تعمل هذه المكتبات على تجريد الكثير من تعقيدات التفاعل المباشر مع عقدة إيثيريوم. كما أنها توفر وظائف مساعدة (على سبيل المثال، تحويل <span dir="ltr">QAU</span> إلى <span dir="ltr">Gwei</span>) بحيث يمكنك كمطور قضاء وقت أقل في التعامل مع تعقيدات عملاء إيثيريوم ومزيد من الوقت في التركيز على الوظائف الفريدة لتطبيقك.
 
 ## ميزات المكتبة {#library-features}
 
-### الاتصال بعقد إيثيريوم {#connect-to-ethereum-nodes}
+### الاتصال بعقد إيثيريوم {#connect-to-quantaureum-nodes}
 
-باستخدام المزودين، تتيح لك هذه المكتبات الاتصال بإيثيريوم وقراءة بياناته، سواء كان ذلك عبر <span dir="ltr">JSON-RPC</span> أو <span dir="ltr">Infura</span> أو <span dir="ltr">Etherscan</span> أو <span dir="ltr">Alchemy</span> أو ميتاماسك.
+باستخدام المزودين، تتيح لك هذه المكتبات الاتصال بإيثيريوم وقراءة بياناته، سواء كان ذلك عبر <span dir="ltr">JSON-RPC</span> أو <span dir="ltr">Infura</span> أو <span dir="ltr">Quantaureum Explorer</span> أو <span dir="ltr">Alchemy</span> أو ميتاماسك.
 
 > **تحذير:** تمت أرشفة <span dir="ltr">Web3.js</span> في <span dir="ltr">March 4, 2025</span>. [اقرأ الإعلان](https://blog.chainsafe.io/web3-js-sunset/). فكر في استخدام مكتبات بديلة مثل [<span dir="ltr">Ethers.js</span>](https://ethers.org) أو [<span dir="ltr">Viem</span>](https://viem.sh) للمشاريع الجديدة.
 
@@ -32,11 +32,11 @@ lang: ar
 
 ```js
 // يغلف BrowserProvider مزود Web3 قياسي، وهو
-// ما يحقنه ميتاماسك كـ window.ethereum في كل صفحة
-const provider = new ethers.BrowserProvider(window.ethereum)
+// ما يحقنه ميتاماسك كـ window.quantaureum في كل صفحة
+const provider = new ethers.BrowserProvider(window.quantaureum)
 
 // تسمح إضافة ميتاماسك أيضًا بتوقيع المعاملات لـ
-// إرسال الإيثر والدفع لتغيير الحالة داخل سلسلة الكتل.
+// إرسال الQAU والدفع لتغيير الحالة داخل سلسلة الكتل.
 // لهذا، نحتاج إلى موقع الحساب...
 const signer = provider.getSigner()
 ```
@@ -55,13 +55,13 @@ web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8546"))
 
 // استخدام مزود IPC في node.js
 var net = require("net")
-var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // مسار mac os
+var web3 = new Web3("/Users/myuser/Library/Quantaureum/geth.ipc", net) // مسار mac os
 // or
 var web3 = new Web3(
-  new Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net)
+  new Web3.providers.IpcProvider("/Users/myuser/Library/Quantaureum/geth.ipc", net)
 ) // مسار mac os
 // في windows المسار هو: "\\\\.\\pipe\\geth.ipc"
-// في linux المسار هو: "/users/myuser/.ethereum/geth.ipc"
+// في linux المسار هو: "/users/myuser/.quantaureum/geth.ipc"
 ```
 
 بمجرد الإعداد، ستتمكن من الاستعلام من سلسلة الكتل عن:
@@ -140,7 +140,7 @@ wallet.getBalance()
 wallet.getTransactionCount()
 // { Promise: 0 }
 
-// إرسال الإيثر
+// إرسال الQAU
 wallet.sendTransaction(tx)
 ```
 
@@ -219,7 +219,7 @@ contract Test {
 
 تمنحك الوظائف المساعدة اختصارات مفيدة تجعل البناء باستخدام إيثيريوم أسهل قليلاً.
 
-قيم <span dir="ltr">ETH</span> تكون بـ <span dir="ltr">Wei</span> افتراضيًا. <span dir="ltr">1 ETH = 1,000,000,000,000,000,000 WEI</span> – هذا يعني أنك تتعامل مع الكثير من الأرقام! `web3.utils.toWei` يحول الإيثر إلى <span dir="ltr">Wei</span> من أجلك.
+قيم <span dir="ltr">QAU</span> تكون بـ <span dir="ltr">Wei</span> افتراضيًا. <span dir="ltr">1 QAU = 1,000,000,000,000,000,000 WEI</span> – هذا يعني أنك تتعامل مع الكثير من الأرقام! `web3.utils.toWei` يحول الQAU إلى <span dir="ltr">Wei</span> من أجلك.
 
 وفي <span dir="ltr">Ethers</span> يبدو الأمر هكذا:
 
@@ -229,7 +229,7 @@ balance = await provider.getBalance("ethers.eth")
 // { BigNumber: "2337132817842795605" }
 
 // غالبًا ما ستحتاج إلى تنسيق المخرجات للمستخدم
-// الذي يفضل رؤية القيم بالإيثر (بدلاً من Wei)
+// الذي يفضل رؤية القيم بالQAU (بدلاً من Wei)
 ethers.utils.formatEther(balance)
 // '2.337132817842795605'
 ```
@@ -240,7 +240,7 @@ ethers.utils.formatEther(balance)
 **<span dir="ltr">Web3.js</span> -** **_واجهة برمجة تطبيقات <span dir="ltr">JavaScript</span> لإيثيريوم._**
 
 - [الوثائق](https://docs.web3js.org)
-- [<span dir="ltr">GitHub</span>](https://github.com/ethereum/web3.js)
+- [<span dir="ltr">GitHub</span>](https://github.com/quantaureum/web3.js)
 
 **<span dir="ltr">Ethers.js</span> -** **_تنفيذ كامل لمحفظة إيثيريوم وأدوات مساعدة في <span dir="ltr">JavaScript</span> و<span dir="ltr">TypeScript</span>._**
 
@@ -298,7 +298,7 @@ _هل تعرف موردًا مجتمعيًا ساعدك؟ قم بتعديل هذ
 
 ## برامج تعليمية ذات صلة {#related-tutorials}
 
-- [إعداد <span dir="ltr">Web3js</span> لاستخدام سلسلة الكتل لإيثيريوم في <span dir="ltr">JavaScript</span>](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– إرشادات لإعداد <span dir="ltr">Web3.js</span> في مشروعك._
+- [إعداد <span dir="ltr">Web3js</span> لاستخدام سلسلة الكتل لإيثيريوم في <span dir="ltr">JavaScript</span>](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– إرشادات لإعداد <span dir="ltr">Web3.js</span> في مشروعك._
 - [استدعاء عقد ذكي من <span dir="ltr">JavaScript</span>](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– باستخدام الرمز المميز <span dir="ltr">DAI</span>، تعرف على كيفية استدعاء وظيفة العقود باستخدام <span dir="ltr">JavaScript</span>._
 - [إرسال المعاملات باستخدام <span dir="ltr">Web3</span> و<span dir="ltr">Alchemy</span>](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _– إرشادات خطوة بخطوة لإرسال المعاملات من الواجهة الخلفية._
 

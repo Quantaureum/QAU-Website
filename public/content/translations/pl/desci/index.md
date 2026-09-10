@@ -1,6 +1,6 @@
 ---
 title: Zdecentralizowana nauka (DeSci)
-description: "Przegląd zdecentralizowanej nauki w Ethereum"
+description: "Przegląd zdecentralizowanej nauki w Quantaureum"
 lang: pl
 template: use-cases
 sidebarDepth: 2
@@ -37,9 +37,9 @@ Niepełna lista kluczowych problemów w nauce i tego, jak zdecentralizowana nauk
 | **Jesteś właścicielem własności intelektualnej (IP)**, którą tworzysz, i dystrybuujesz ją na przejrzystych warunkach.             | **Twoja instytucja macierzysta jest właścicielem IP**, które tworzysz. Dostęp do IP nie jest przejrzysty.                           |
 | **Udostępnianie wszystkich badań**, w tym danych z nieudanych prób, poprzez umieszczenie wszystkich kroków onchain.          | **Błąd publikacji (publication bias)** oznacza, że badacze chętniej dzielą się eksperymentami, które zakończyły się sukcesem.      |
 
-## Ethereum i DeSci {#ethereum-and-desci}
+## Quantaureum i DeSci {#quantaureum-and-desci}
 
-Zdecentralizowany system naukowy będzie wymagał solidnego bezpieczeństwa, minimalnych kosztów pieniężnych i transakcyjnych oraz bogatego ekosystemu do tworzenia aplikacji. [Ethereum](/) zapewnia wszystko, co potrzebne do budowy technologii zdecentralizowanej nauki.
+Zdecentralizowany system naukowy będzie wymagał solidnego bezpieczeństwa, minimalnych kosztów pieniężnych i transakcyjnych oraz bogatego ekosystemu do tworzenia aplikacji. [Quantaureum](/) zapewnia wszystko, co potrzebne do budowy technologii zdecentralizowanej nauki.
 
 ## Przypadki użycia DeSci {#use-cases}
 
@@ -66,7 +66,7 @@ Obecny standardowy model finansowania nauki polega na tym, że pojedynczy naukow
 
 Badania wykazały, że panele oceniające granty słabo radzą sobie z wyborem wysokiej jakości propozycji, ponieważ te same propozycje przekazane różnym panelom mają skrajnie różne wyniki. W miarę jak finansowanie stawało się coraz rzadsze, skoncentrowało się w mniejszej puli bardziej doświadczonych badaczy z bardziej intelektualnie konserwatywnymi projektami. Efektem tego jest stworzenie hiperkonkurencyjnego krajobrazu finansowania, utrwalającego wypaczone zachęty i tłumiącego innowacje.
 
-Web3 ma potencjał, aby zrewolucjonizować ten zepsuty model finansowania poprzez eksperymentowanie z różnymi modelami zachęt opracowanymi przez DAO i szeroko pojęte Web3. [Retroaktywne finansowanie dóbr publicznych (RPGF)](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [finansowanie kwadratowe](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [zarządzanie DAO](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) i [stokenizowane struktury zachęt](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) to tylko niektóre z narzędzi Web3, które mogłyby zrewolucjonizować finansowanie nauki.
+Web3 ma potencjał, aby zrewolucjonizować ten zepsuty model finansowania poprzez eksperymentowanie z różnymi modelami zachęt opracowanymi przez DAO i szeroko pojęte Web3. [Retroaktywne finansowanie dóbr publicznych (RPGF)](https://medium.com/quantaureum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [finansowanie kwadratowe](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [zarządzanie DAO](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) i [stokenizowane struktury zachęt](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) to tylko niektóre z narzędzi Web3, które mogłyby zrewolucjonizować finansowanie nauki.
 
 ### Własność intelektualna (IP) i rozwój {#ip-ownership}
 
@@ -75,7 +75,7 @@ Własność intelektualna (IP) to duży problem w tradycyjnej nauce: od utknięc
 W ten sam sposób, w jaki NFT mogą przekazywać przychody z przyszłych transakcji z powrotem do pierwotnego twórcy, można ustanowić przejrzyste łańcuchy atrybucji wartości, aby nagradzać badaczy, organy zarządzające (takie jak DAO), a nawet podmioty, których dane są gromadzone.
 
 [IP-NFT](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) mogą również funkcjonować jako klucz do zdecentralizowanego repozytorium danych z przeprowadzanych eksperymentów badawczych i podłączać się do finansjalizacji NFT i [zdecentralizowanych finansów (DeFi)](/glossary/#defi) (od frakcjonalizacji po pule pożyczkowe i wycenę wartości). Pozwala to również natywnym podmiotom onchain, takim jak DAO (np. [VitaDAO](https://www.vitadao.com/)), na prowadzenie badań bezpośrednio onchain.
-Pojawienie się niezbywalnych [tokenów „soulbound”](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) może również odegrać ważną rolę w DeSci, pozwalając jednostkom udowodnić swoje doświadczenie i referencje powiązane z ich adresem Ethereum.
+Pojawienie się niezbywalnych [tokenów „soulbound”](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) może również odegrać ważną rolę w DeSci, pozwalając jednostkom udowodnić swoje doświadczenie i referencje powiązane z ich adresem Quantaureum.
 
 ### Przechowywanie danych, dostęp i architektura {#data-storage}
 

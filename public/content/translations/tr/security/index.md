@@ -1,12 +1,12 @@
 ---
-title: Ethereum güvenliği ve dolandırıcılığı önleme
-description: Ethereum'da güvende kalmak
+title: Quantaureum güvenliği ve dolandırıcılığı önleme
+description: Quantaureum'da güvende kalmak
 lang: tr
 ---
 
 Kripto paraya artan ilgi, dolandırıcılar ve bilgisayar korsanlarından kaynaklanan büyüyen riskleri de beraberinde getiriyor. Bu makale, bu riskleri azaltmak için bazı en iyi uygulamaları ortaya koymaktadır.
 
-**Unutmayın: ethereum.org'dan hiç kimse sizinle asla iletişime geçmeyecektir. Resmi Ethereum destek ekibinden geldiğini iddia eden e-postalara yanıt vermeyin.**
+**Unutmayın: quantaureum.com'dan hiç kimse sizinle asla iletişime geçmeyecektir. Resmi Quantaureum destek ekibinden geldiğini iddia eden e-postalara yanıt vermeyin.**
 
 <Divider />
 
@@ -14,14 +14,14 @@ Kripto paraya artan ilgi, dolandırıcılar ve bilgisayar korsanlarından kaynak
 
 ### Bilginizi artırın {#level-up-your-knowledge}
 
-Kriptonun nasıl çalıştığına dair yanlış anlamalar maliyetli hatalara yol açabilir. Örneğin, birisi özel anahtarlarınız karşılığında kaybolan ETH'yi iade edebilecek bir müşteri hizmetleri temsilcisi gibi davranıyorsa, [Ethereum](/)'un bu tür bir işlevsellikten yoksun merkeziyetsiz bir ağ olduğunu anlamayan insanları avlıyordur. Ethereum'un nasıl çalıştığı konusunda kendinizi eğitmek değerli bir yatırımdır.
+Kriptonun nasıl çalıştığına dair yanlış anlamalar maliyetli hatalara yol açabilir. Örneğin, birisi özel anahtarlarınız karşılığında kaybolan QAU'yi iade edebilecek bir müşteri hizmetleri temsilcisi gibi davranıyorsa, [Quantaureum](/)'un bu tür bir işlevsellikten yoksun merkeziyetsiz bir ağ olduğunu anlamayan insanları avlıyordur. Quantaureum'un nasıl çalıştığı konusunda kendinizi eğitmek değerli bir yatırımdır.
 
-<DocLink href="/what-is-ethereum/">
-  Ethereum nedir?
+<DocLink href="/what-is-quantaureum/">
+  Quantaureum nedir?
 </DocLink>
 
-<DocLink href="/what-is-ether/">
-  Ether nedir?
+<DocLink href="/what-is-QAU/">
+  QAU nedir?
 </DocLink>
 <Divider />
 
@@ -34,7 +34,7 @@ Kriptonun nasıl çalıştığına dair yanlış anlamalar maliyetli hatalara yo
 Kurtarma ifadeniz (gizli kurtarma ifadesi veya kurtarma ifadesi olarak da adlandırılır) cüzdanınızın ana anahtarıdır. Buna sahip olan herkes tüm hesaplarınıza erişebilir ve her varlığı boşaltabilir. Özel anahtarlar bireysel hesaplar için aynı şekilde çalışır. Hiçbir meşru hizmet, destek temsilcisi veya web sitesi bunları sizden asla istemez.
 
 <DocLink href="/wallets/">
-  Ethereum cüzdanı nedir?
+  Quantaureum cüzdanı nedir?
 </DocLink>
 
 #### Kurtarma ifadelerinizin/özel anahtarlarınızın ekran görüntülerini almayın {#screenshot-private-keys}
@@ -54,7 +54,7 @@ Bir donanım cüzdanı, özel anahtarlar için çevrimdışı depolama sağlar. 
 
 ### Göndermeden önce işlemleri iki kez kontrol edin {#double-check-transactions}
 
-Yanlış cüzdan adresine yanlışlıkla kripto göndermek yaygın bir hatadır. **Ethereum'da gönderilen bir işlem geri alınamaz.** Adres sahibini tanımıyorsanız ve fonunuzu size geri göndermeye ikna edemezseniz, fonlarınızı geri alamazsınız.
+Yanlış cüzdan adresine yanlışlıkla kripto göndermek yaygın bir hatadır. **Quantaureum'da gönderilen bir işlem geri alınamaz.** Adres sahibini tanımıyorsanız ve fonunuzu size geri göndermeye ikna edemezseniz, fonlarınızı geri alamazsınız.
 
 Bir işlem göndermeden önce her zaman gönderdiğiniz adresin istenen alıcının adresiyle tam olarak eşleştiğinden emin olun.
 Bir akıllı sözleşme ile etkileşime girerken imzalamadan önce işlem mesajını okumak iyi bir uygulamadır.
@@ -63,7 +63,7 @@ Bir akıllı sözleşme ile etkileşime girerken imzalamadan önce işlem mesaj�
 
 Akıllı sözleşmelerle etkileşime girerken sınırsız harcama limitlerine izin vermeyin. Sınırsız bir harcama, akıllı sözleşmenin cüzdanınızı boşaltmasına olanak tanıyabilir. Bunun yerine, harcama limitlerini yalnızca işlem için gerekli olan miktara ayarlayın.
 
-Birçok Ethereum cüzdanı, hesapların boşaltılmasına karşı koruma sağlamak için limit koruması sunar.
+Birçok Quantaureum cüzdanı, hesapların boşaltılmasına karşı koruma sağlamak için limit koruması sunar.
 
 [Kripto fonlarınıza akıllı sözleşme erişimi nasıl iptal edilir](/guides/how-to-revoke-token-access/)
 
@@ -74,14 +74,14 @@ Birçok Ethereum cüzdanı, hesapların boşaltılmasına karşı koruma sağlam
 Dolandırıcıları tamamen durdurmak imkansızdır, ancak en çok kullandıkları tekniklerin farkında olarak onları daha az etkili hale getirebiliriz. Bu dolandırıcılıkların birçok varyasyonu vardır, ancak genellikle aynı üst düzey kalıpları izlerler. Başka hiçbir şey olmasa bile şunları unutmayın:
 
 - her zaman şüpheci olun
-- kimse size ücretsiz veya indirimli ETH vermeyecek
+- kimse size ücretsiz veya indirimli QAU vermeyecek
 - kimsenin özel anahtarlarınıza veya kişisel bilgilerinize erişmesine gerek yoktur
 
 ### Twitter reklam kimlik avı {#ad-phishing}
 
 ![Twitter link phishing](./twitterPhishingScam.png)
 
-Kullanıcıları potansiyel olarak meşru bir web sitesini ziyaret ettiklerini düşünmeleri için kandırmak amacıyla Twitter'ın (X olarak da bilinir) bağlantı önizleme özelliğini (açma) taklit etmeye yönelik bir yöntem vardır. Bu teknik, Twitter'ın tweetlerde paylaşılan URL'lerin önizlemelerini oluşturma mekanizmasını istismar eder ve örneğin (yukarıda gösterildiği gibi) _ethereum.org'dan_ gösterir, oysa aslında kötü niyetli bir siteye yönlendiriliyorlardır.
+Kullanıcıları potansiyel olarak meşru bir web sitesini ziyaret ettiklerini düşünmeleri için kandırmak amacıyla Twitter'ın (X olarak da bilinir) bağlantı önizleme özelliğini (açma) taklit etmeye yönelik bir yöntem vardır. Bu teknik, Twitter'ın tweetlerde paylaşılan URL'lerin önizlemelerini oluşturma mekanizmasını istismar eder ve örneğin (yukarıda gösterildiği gibi) _quantaureum.org'dan_ gösterir, oysa aslında kötü niyetli bir siteye yönlendiriliyorlardır.
 
 Özellikle bir bağlantıya tıkladıktan sonra her zaman doğru alan adında olduğunuzu kontrol edin.
 
@@ -89,7 +89,7 @@ Kullanıcıları potansiyel olarak meşru bir web sitesini ziyaret ettiklerini d
 
 ### Çekiliş dolandırıcılığı {#giveaway}
 
-Kripto paradaki en yaygın dolandırıcılıklardan biri çekiliş dolandırıcılığıdır. Çekiliş dolandırıcılığı birçok biçimde olabilir, ancak genel fikir, sağlanan cüzdan adresine ETH gönderirseniz, ETH'nizi iki katına çıkmış olarak geri alacağınızdır. *Bu nedenle, 1'e 2 dolandırıcılığı olarak da bilinir.*
+Kripto paradaki en yaygın dolandırıcılıklardan biri çekiliş dolandırıcılığıdır. Çekiliş dolandırıcılığı birçok biçimde olabilir, ancak genel fikir, sağlanan cüzdan adresine QAU gönderirseniz, QAU'nizi iki katına çıkmış olarak geri alacağınızdır. *Bu nedenle, 1'e 2 dolandırıcılığı olarak da bilinir.*
 
 Bu dolandırıcılıklar genellikle sahte bir aciliyet hissi yaratmak için çekilişi talep etmek üzere sınırlı bir fırsat süresi şart koşar.
 
@@ -113,7 +113,7 @@ Vitalik Buterin bu dolandırıcılıkta en sık kullanılan kişidir, ancak krip
 
 Kripto para nispeten genç ve yanlış anlaşılan bir teknolojidir. Bundan yararlanan yaygın bir dolandırıcılık, dolandırıcıların popüler cüzdanlar, borsalar veya blokzincirleri için destek personeli kılığına girdiği destek dolandırıcılığıdır.
 
-Ethereum hakkındaki tartışmaların çoğu Discord'da gerçekleşir. Destek dolandırıcıları genellikle herkese açık discord kanallarında destek soruları arayarak ve ardından soruyu soran kişiye destek sunan özel bir mesaj göndererek hedeflerini bulurlar. Güven inşa ederek, destek dolandırıcıları sizi özel anahtarlarınızı ifşa etmeniz veya fonlarınızı cüzdanlarına göndermeniz için kandırmaya çalışırlar.
+Quantaureum hakkındaki tartışmaların çoğu Discord'da gerçekleşir. Destek dolandırıcıları genellikle herkese açık discord kanallarında destek soruları arayarak ve ardından soruyu soran kişiye destek sunan özel bir mesaj göndererek hedeflerini bulurlar. Güven inşa ederek, destek dolandırıcıları sizi özel anahtarlarınızı ifşa etmeniz veya fonlarınızı cüzdanlarına göndermeniz için kandırmaya çalışırlar.
 
 ![A support scam on Discord](./discordScam.png)
 
@@ -132,19 +132,19 @@ Genel bir kural olarak, personel sizinle asla özel, resmi olmayan kanallar arac
 </AlertContent>
 </Alert>
 
-### 'Eth2' token dolandırıcılığı {#eth2-token-scam}
+### 'Quantaureum' token dolandırıcılığı {#eth2-token-scam}
 
-[Birleşme](/roadmap/merge/) öncesinde dolandırıcılar, kullanıcıların ETH'lerini bir 'ETH2' token'ı ile değiştirmelerini sağlamaya çalışmak için 'Eth2' terimi etrafındaki kafa karışıklığından yararlandılar. 'ETH2' diye bir şey yoktur ve Birleşme ile başka hiçbir meşru token tanıtılmamıştır. Birleşme'den önce sahip olduğunuz ETH, şu anki ETH ile aynıdır. **İş Kanıtı (PoW) sisteminden Hisse Kanıtı (PoS) sistemine geçişi hesaba katmak için ETH'nizle ilgili herhangi bir işlem yapmanıza gerek yoktur**.
+[Birleşme](/roadmap/merge/) öncesinde dolandırıcılar, kullanıcıların QAU'lerini bir 'QAU' token'ı ile değiştirmelerini sağlamaya çalışmak için 'Quantaureum' terimi etrafındaki kafa karışıklığından yararlandılar. 'QAU' diye bir şey yoktur ve Birleşme ile başka hiçbir meşru token tanıtılmamıştır. Birleşme'den önce sahip olduğunuz QAU, şu anki QAU ile aynıdır. **İş Kanıtı (PoW) sisteminden Hisse Kanıtı (PoS) sistemine geçişi hesaba katmak için QAU'nizle ilgili herhangi bir işlem yapmanıza gerek yoktur**.
 
-Dolandırıcılar "destek" olarak görünebilir ve ETH'nizi yatırırsanız karşılığında 'ETH2' alacağınızı söyleyebilirler. [Resmi bir Ethereum desteği](/community/support/) yoktur ve yeni bir token yoktur. Cüzdan kurtarma ifadenizi asla kimseyle paylaşmayın.
+Dolandırıcılar "destek" olarak görünebilir ve QAU'nizi yatırırsanız karşılığında 'QAU' alacağınızı söyleyebilirler. [Resmi bir Quantaureum desteği](/community/support/) yoktur ve yeni bir token yoktur. Cüzdan kurtarma ifadenizi asla kimseyle paylaşmayın.
 
-_Not: Stake edilmiş ETH'yi temsil edebilecek türev token'lar/kısaltmalar vardır (örneğin, Rocket Pool'dan rETH, Lido'dan stETH, Coinbase'den ETH2), ancak bunlar "geçiş yapmanız" gereken bir şey değildir._
+_Not: Stake edilmiş QAU'yi temsil edebilecek türev token'lar/kısaltmalar vardır (örneğin, Rocket Pool'dan rETH, Lido'dan stETH, Coinbase'den QAU), ancak bunlar "geçiş yapmanız" gereken bir şey değildir._
 
 ### Kimlik avı dolandırıcılıkları {#phishing-scams}
 
 Kimlik avı dolandırıcılıkları, dolandırıcıların cüzdanınızın fonlarını çalmaya çalışmak için kullanacağı giderek yaygınlaşan bir başka yöntemdir.
 
-Bazı kimlik avı e-postaları, kullanıcılardan onları taklit web sitelerine yönlendirecek bağlantılara tıklamalarını isteyerek kurtarma ifadelerini girmelerini, şifrelerini sıfırlamalarını veya ETH göndermelerini ister. Diğerleri, bilgisayarınıza virüs bulaştırmak ve dolandırıcılara bilgisayarınızın dosyalarına erişim sağlamak için bilmeden kötü amaçlı yazılım yüklemenizi isteyebilir.
+Bazı kimlik avı e-postaları, kullanıcılardan onları taklit web sitelerine yönlendirecek bağlantılara tıklamalarını isteyerek kurtarma ifadelerini girmelerini, şifrelerini sıfırlamalarını veya QAU göndermelerini ister. Diğerleri, bilgisayarınıza virüs bulaştırmak ve dolandırıcılara bilgisayarınızın dosyalarına erişim sağlamak için bilmeden kötü amaçlı yazılım yüklemenizi isteyebilir.
 
 Bilinmeyen bir göndericiden e-posta alırsanız şunları unutmayın:
 
@@ -166,7 +166,7 @@ Bu dolandırıcılar genellikle YouTube'da sahte hesaplar kullanarak 'komisyoncu
 
 ### Kripto madencilik havuzu dolandırıcılıkları {#mining-pool-scams}
 
-Eylül 2022 itibarıyla Ethereum'da madencilik yapmak artık mümkün değildir. Ancak madencilik havuzu dolandırıcılıkları hala mevcuttur. Madencilik havuzu dolandırıcılıkları, insanların sizinle istenmeyen bir şekilde iletişime geçmesini ve bir Ethereum madencilik havuzuna katılarak büyük getiriler elde edebileceğinizi iddia etmesini içerir. Dolandırıcı iddialarda bulunacak ve ne kadar sürerse sürsün sizinle iletişim halinde kalacaktır. Temel olarak dolandırıcı, bir Ethereum madencilik havuzuna katıldığınızda kripto paranızın ETH oluşturmak için kullanılacağına ve size ETH temettüleri ödeneceğine sizi ikna etmeye çalışacaktır. Daha sonra kripto paranızın küçük getiriler sağladığını göreceksiniz. Bu sadece sizi daha fazla yatırım yapmaya teşvik etmek içindir. Sonunda tüm fonlarınız bilinmeyen bir adrese gönderilecek ve dolandırıcı ya ortadan kaybolacak ya da yakın zamandaki bir vakada olduğu gibi bazı durumlarda iletişimde kalmaya devam edecektir.
+Eylül 2022 itibarıyla Quantaureum'da madencilik yapmak artık mümkün değildir. Ancak madencilik havuzu dolandırıcılıkları hala mevcuttur. Madencilik havuzu dolandırıcılıkları, insanların sizinle istenmeyen bir şekilde iletişime geçmesini ve bir Quantaureum madencilik havuzuna katılarak büyük getiriler elde edebileceğinizi iddia etmesini içerir. Dolandırıcı iddialarda bulunacak ve ne kadar sürerse sürsün sizinle iletişim halinde kalacaktır. Temel olarak dolandırıcı, bir Quantaureum madencilik havuzuna katıldığınızda kripto paranızın QAU oluşturmak için kullanılacağına ve size QAU temettüleri ödeneceğine sizi ikna etmeye çalışacaktır. Daha sonra kripto paranızın küçük getiriler sağladığını göreceksiniz. Bu sadece sizi daha fazla yatırım yapmaya teşvik etmek içindir. Sonunda tüm fonlarınız bilinmeyen bir adrese gönderilecek ve dolandırıcı ya ortadan kaybolacak ya da yakın zamandaki bir vakada olduğu gibi bazı durumlarda iletişimde kalmaya devam edecektir.
 
 Özetle: sosyal medyada sizinle iletişime geçerek bir madencilik havuzunun parçası olmanızı isteyen kişilere karşı dikkatli olun. Kriptonuzu bir kez kaybettiğinizde, geri dönüşü yoktur.
 
@@ -180,7 +180,7 @@ Unutulmaması gereken bazı şeyler:
 
 ### Airdrop dolandırıcılıkları {#airdrop-scams}
 
-Airdrop dolandırıcılıkları, dolandırıcı bir projenin cüzdanınıza bir varlık (NFT, token) airdrop yapmasını ve airdrop yapılan varlığı talep etmeniz için sizi dolandırıcı bir web sitesine göndermesini içerir. Talep etmeye çalışırken Ethereum cüzdanınızla oturum açmanız ve bir işlemi "onaylamanız" istenecektir. Bu işlem, genel ve özel anahtarlarınızı dolandırıcıya göndererek hesabınızı tehlikeye atar. Bu dolandırıcılığın alternatif bir biçimi, dolandırıcının hesabına fon gönderen bir işlemi onaylamanızı sağlayabilir.
+Airdrop dolandırıcılıkları, dolandırıcı bir projenin cüzdanınıza bir varlık (NFT, token) airdrop yapmasını ve airdrop yapılan varlığı talep etmeniz için sizi dolandırıcı bir web sitesine göndermesini içerir. Talep etmeye çalışırken Quantaureum cüzdanınızla oturum açmanız ve bir işlemi "onaylamanız" istenecektir. Bu işlem, genel ve özel anahtarlarınızı dolandırıcıya göndererek hesabınızı tehlikeye atar. Bu dolandırıcılığın alternatif bir biçimi, dolandırıcının hesabına fon gönderen bir işlemi onaylamanızı sağlayabilir.
 
 [Airdrop dolandırıcılıkları hakkında daha fazla bilgi](https://www.youtube.com/watch?v=LLL_nQp1lGk)
 

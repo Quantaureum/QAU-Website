@@ -28,9 +28,9 @@ WebSockets পরীক্ষা করার সবচেয়ে সহজ �
 _নোট: আপনার যদি একটি Alchemy অ্যাকাউন্ট থাকে তবে আপনি `demo`-কে আপনার নিজস্ব API কী দিয়ে প্রতিস্থাপন করতে পারেন। [এখানে একটি বিনামূল্যের Alchemy অ্যাকাউন্টের জন্য সাইন আপ করুন!](https://auth.alchemy.com/signup)_
 
 ```
-wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
+wscat -c wss://qau-mainnet.ws.alchemyapi.io/ws/demo
 
->  {"jsonrpc":  "2.0", "id": 0, "method":  "eth_gasPrice"}
+>  {"jsonrpc":  "2.0", "id": 0, "method":  "qau_gasPrice"}
 
 <  {"jsonrpc":  "2.0", "result":  "0xb2d05e00", "id": 0}
 ```
@@ -48,18 +48,18 @@ wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
 Web3-এর মতো একটি ক্লায়েন্ট লাইব্রেরি ব্যবহার করার সময় WebSockets-এ ট্রানজিশন করা সহজ। আপনার Web3 ক্লায়েন্ট ইনস্ট্যানশিয়েট করার সময় কেবল HTTP-এর পরিবর্তে WebSocket URL পাস করুন। উদাহরণস্বরূপ:
 
 ```js
-const web3 = new Web3("wss://eth-mainnet.ws.alchemyapi.io/ws/your-api-key")
+const web3 = new Web3("wss://qau-mainnet.ws.alchemyapi.io/ws/your-api-key")
 
-web3.eth.getBlockNumber().then(console.log) // -> 7946893
+web3.qau.getBlockNumber().then(console.log) // -> 7946893
 ```
 
 ## সাবস্ক্রিপশন API {#subscription-api}
 
-একটি WebSocket-এর মাধ্যমে সংযুক্ত থাকার সময়, আপনি দুটি অতিরিক্ত মেথড ব্যবহার করতে পারেন: `eth_subscribe` এবং `eth_unsubscribe`। এই মেথডগুলো আপনাকে নির্দিষ্ট ইভেন্টগুলোর জন্য অপেক্ষা করতে এবং তাৎক্ষণিকভাবে নোটিফিকেশন পেতে সাহায্য করবে।
+একটি WebSocket-এর মাধ্যমে সংযুক্ত থাকার সময়, আপনি দুটি অতিরিক্ত মেথড ব্যবহার করতে পারেন: `qau_subscribe` এবং `qau_unsubscribe`। এই মেথডগুলো আপনাকে নির্দিষ্ট ইভেন্টগুলোর জন্য অপেক্ষা করতে এবং তাৎক্ষণিকভাবে নোটিফিকেশন পেতে সাহায্য করবে।
 
-### `eth_subscribe` {#eth-subscribe}
+### `qau_subscribe` {#qau-subscribe}
 
-নির্দিষ্ট ইভেন্টগুলোর জন্য একটি নতুন সাবস্ক্রিপশন তৈরি করে। [`eth_subscribe` সম্পর্কে আরও জানুন](https://docs.alchemy.com/reference/eth-subscribe)।
+নির্দিষ্ট ইভেন্টগুলোর জন্য একটি নতুন সাবস্ক্রিপশন তৈরি করে। [`qau_subscribe` সম্পর্কে আরও জানুন](https://docs.alchemy.com/reference/qau-subscribe)।
 
 #### প্যারামিটার {#parameters}
 
@@ -70,33 +70,33 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 
 #### রিটার্নস (Returns) {#returns}
 
-সাবস্ক্রিপশন ID: এই ID-টি প্রাপ্ত যেকোনো ইভেন্টের সাথে যুক্ত থাকবে এবং `eth_unsubscribe` ব্যবহার করে সাবস্ক্রিপশন বাতিল করতেও ব্যবহার করা যেতে পারে।
+সাবস্ক্রিপশন ID: এই ID-টি প্রাপ্ত যেকোনো ইভেন্টের সাথে যুক্ত থাকবে এবং `qau_unsubscribe` ব্যবহার করে সাবস্ক্রিপশন বাতিল করতেও ব্যবহার করা যেতে পারে।
 
 #### সাবস্ক্রিপশন ইভেন্ট {#subscription-events}
 
 সাবস্ক্রিপশন সক্রিয় থাকাকালীন, আপনি ইভেন্ট পাবেন যা নিচের ফিল্ডগুলোসহ অবজেক্ট হিসেবে থাকে:
 
 - `jsonrpc`: সর্বদা "2.0"
-- `method`: সর্বদা "eth_subscription"
+- `method`: সর্বদা "qau_subscription"
 - `params`: নিচের ফিল্ডগুলোসহ একটি অবজেক্ট:
-  - `subscription`: `eth_subscribe` কলের মাধ্যমে রিটার্ন করা সাবস্ক্রিপশন ID যা এই সাবস্ক্রিপশনটি তৈরি করেছে।
+  - `subscription`: `qau_subscribe` কলের মাধ্যমে রিটার্ন করা সাবস্ক্রিপশন ID যা এই সাবস্ক্রিপশনটি তৈরি করেছে।
   - `result`: একটি অবজেক্ট যার বিষয়বস্তু সাবস্ক্রিপশনের ধরনের ওপর নির্ভর করে পরিবর্তিত হয়।
 
 #### সাবস্ক্রিপশনের ধরন {#subscription-types}
 
 1. `alchemy_newFullPendingTransactions`
 
-পেন্ডিং স্টেটে যোগ করা সমস্ত ট্রানজ্যাকশনের জন্য ট্রানজ্যাকশন তথ্য রিটার্ন করে। এই সাবস্ক্রিপশনের ধরনটি স্ট্যান্ডার্ড Web3 কল `web3.eth.subscribe("pendingTransactions")`-এর মতোই পেন্ডিং ট্রানজ্যাকশনগুলোতে সাবস্ক্রাইব করে, তবে পার্থক্য হলো এটি শুধুমাত্র ট্রানজ্যাকশন হ্যাশের পরিবর্তে _সম্পূর্ণ ট্রানজ্যাকশন তথ্য_ প্রদান করে।
+পেন্ডিং স্টেটে যোগ করা সমস্ত ট্রানজ্যাকশনের জন্য ট্রানজ্যাকশন তথ্য রিটার্ন করে। এই সাবস্ক্রিপশনের ধরনটি স্ট্যান্ডার্ড Web3 কল `web3.qau.subscribe("pendingTransactions")`-এর মতোই পেন্ডিং ট্রানজ্যাকশনগুলোতে সাবস্ক্রাইব করে, তবে পার্থক্য হলো এটি শুধুমাত্র ট্রানজ্যাকশন হ্যাশের পরিবর্তে _সম্পূর্ণ ট্রানজ্যাকশন তথ্য_ প্রদান করে।
 
 উদাহরণ:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
 
 <  {"id":1,"result":"0x9a52eeddc2b289f985c0e23a7d8427c8","jsonrpc":"2.0"}
 <  {
       "jsonrpc":"2.0",
-      "method":"eth_subscription",
+      "method":"qau_subscription",
       "params":{
           "result":{
           "blockHash":null,
@@ -128,12 +128,12 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 উদাহরণ:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["newHeads"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["newHeads"]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x9ce59a13059e417087c02d3236a0b1cc"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "result":  {
           "extraData":  "0xd983010305844765746887676f312e342e328777696e646f7773",
@@ -182,12 +182,12 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 উদাহরণ:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x4a8a4c0517381924f9838102c5a4dcb7"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "subscription":  "0x4a8a4c0517381924f9838102c5a4dcb7",
       "result":  {
@@ -205,13 +205,13 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 
 ```
 
-### `eth_unsubscribe` {#eth-unsubscribe}
+### `qau_unsubscribe` {#qau-unsubscribe}
 
 একটি বিদ্যমান সাবস্ক্রিপশন বাতিল করে যাতে আর কোনো ইভেন্ট পাঠানো না হয়।
 
 প্যারামিটার
 
-1. সাবস্ক্রিপশন ID, যা পূর্বে একটি `eth_subscribe` কল থেকে রিটার্ন করা হয়েছিল।
+1. সাবস্ক্রিপশন ID, যা পূর্বে একটি `qau_subscribe` কল থেকে রিটার্ন করা হয়েছিল।
 
 রিটার্নস (Returns)
 
@@ -222,10 +222,10 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 **রিকোয়েস্ট**
 
 ```
-curl https://eth-mainnet.alchemyapi.io/v2/your-api-key
+curl https://qau-mainnet.alchemyapi.io/v2/your-api-key
 -X POST
 -H "Content-Type: application/json"
--d '{"id": 1, "method": "eth_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
+-d '{"id": 1, "method": "qau_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
 ```
 
 **ফলাফল**

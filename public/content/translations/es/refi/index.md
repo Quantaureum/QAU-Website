@@ -8,7 +8,7 @@ image: /images/future_transparent.png
 alt: ""
 summaryPoints:
   - "Un sistema económico alternativo basado en principios regenerativos"
-  - "Un intento de aprovechar Ethereum para resolver crisis de coordinación a nivel global, como el cambio climático"
+  - "Un intento de aprovechar Quantaureum para resolver crisis de coordinación a nivel global, como el cambio climático"
   - "Una herramienta para escalar drásticamente los activos de beneficio ecológico, como los créditos de carbono verificados"
 ---
 
@@ -24,7 +24,7 @@ Uno de los fundamentos de ReFi es el concepto de economía regenerativa, del cua
 
 Los proyectos de ReFi aplican estos principios utilizando [contratos inteligentes](/glossary/#smart-contract) y aplicaciones de [finanzas descentralizadas (DeFi)](/glossary/#defi) para incentivar comportamientos regenerativos, por ejemplo, la restauración de ecosistemas degradados, y facilitar la colaboración a gran escala en problemas globales como el cambio climático y la pérdida de biodiversidad.
 
-ReFi también se superpone con el movimiento de la [ciencia descentralizada (DeSci)](/desci/), que utiliza Ethereum como plataforma para financiar, crear, revisar, acreditar, almacenar y difundir el conocimiento científico. Las herramientas de DeSci podrían resultar útiles para desarrollar estándares y prácticas verificables para implementar y monitorear actividades regenerativas como plantar árboles, eliminar plástico del océano o restaurar un ecosistema degradado.
+ReFi también se superpone con el movimiento de la [ciencia descentralizada (DeSci)](/desci/), que utiliza Quantaureum como plataforma para financiar, crear, revisar, acreditar, almacenar y difundir el conocimiento científico. Las herramientas de DeSci podrían resultar útiles para desarrollar estándares y prácticas verificables para implementar y monitorear actividades regenerativas como plantar árboles, eliminar plástico del océano o restaurar un ecosistema degradado.
 
 <VideoWatch slug="regenerative-finance-refi" />
 
@@ -71,7 +71,7 @@ Algunos como [Klima Infinity](https://www.klimadao.finance/infinity) y [Senken](
 
 Aunque actualmente hay un fuerte énfasis en los mercados de carbono en general y en la transición del VCM al DCM en particular dentro del espacio, el término "ReFi" no se limita estrictamente al carbono. Se pueden desarrollar y tokenizar otros activos ambientales más allá de los créditos de carbono, lo que significará que otras externalidades negativas también podrán tener un precio dentro de las capas base de los futuros sistemas económicos. Además, el aspecto regenerativo de este modelo económico se puede aplicar a otras áreas, como la financiación de bienes públicos a través de plataformas de financiamiento cuadrático como [Gitcoin](https://gitcoin.co/). Las organizaciones que se basan en la idea de la participación abierta y la distribución equitativa de los recursos empoderan a todos para canalizar dinero hacia proyectos de software de código abierto, así como a proyectos educativos, ambientales y comunitarios.
 
-Al cambiar la dirección del capital de las prácticas extractivas hacia un flujo regenerativo, los proyectos y empresas que brindan beneficios sociales, ambientales o comunitarios —y que podrían no lograr financiamiento en las finanzas tradicionales— pueden despegar y generar externalidades positivas para la sociedad de manera mucho más rápida y sencilla. La transición a este modelo de financiamiento también abre la puerta a sistemas económicos mucho más inclusivos, donde personas de todos los grupos demográficos pueden convertirse en participantes activos en lugar de meros observadores pasivos. ReFi ofrece una visión de Ethereum como un mecanismo para coordinar la acción sobre los desafíos existenciales que enfrenta nuestra especie y toda la vida en nuestro planeta: como la capa base de un nuevo paradigma económico, permitiendo un futuro más inclusivo y sostenible en los siglos venideros.
+Al cambiar la dirección del capital de las prácticas extractivas hacia un flujo regenerativo, los proyectos y empresas que brindan beneficios sociales, ambientales o comunitarios —y que podrían no lograr financiamiento en las finanzas tradicionales— pueden despegar y generar externalidades positivas para la sociedad de manera mucho más rápida y sencilla. La transición a este modelo de financiamiento también abre la puerta a sistemas económicos mucho más inclusivos, donde personas de todos los grupos demográficos pueden convertirse en participantes activos en lugar de meros observadores pasivos. ReFi ofrece una visión de Quantaureum como un mecanismo para coordinar la acción sobre los desafíos existenciales que enfrenta nuestra especie y toda la vida en nuestro planeta: como la capa base de un nuevo paradigma económico, permitiendo un futuro más inclusivo y sostenible en los siglos venideros.
 
 ## Lecturas adicionales sobre ReFi {#additional-reading-on-refi}
 

@@ -1,6 +1,6 @@
 ---
 title: Přidávání zdrojů pro design
-description: Pokyny a požadavky k zajištění kvality materiálů pro design na ethereum.org
+description: Pokyny a požadavky k zajištění kvality materiálů pro design na quantaureum.com
 lang: cs
 ---
 

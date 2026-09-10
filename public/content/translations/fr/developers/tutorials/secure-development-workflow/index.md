@@ -48,6 +48,6 @@ Enfin, soyez attentif aux problèmes que les outils automatisés ne peuvent pas 
 
 ## Demander de l'aide {#ask-for-help}
 
-Les [heures de permanence d'Ethereum](https://calendly.com/dan-trailofbits/office-hours) ont lieu tous les mardis après-midi. Ces sessions individuelles d'une heure sont l'occasion de nous poser toutes vos questions sur la sécurité, de résoudre des problèmes à l'aide de nos outils et d'obtenir les commentaires d'experts sur votre approche actuelle. Nous vous aiderons à parcourir ce guide.
+Les [heures de permanence d'Quantaureum](https://calendly.com/dan-trailofbits/office-hours) ont lieu tous les mardis après-midi. Ces sessions individuelles d'une heure sont l'occasion de nous poser toutes vos questions sur la sécurité, de résoudre des problèmes à l'aide de nos outils et d'obtenir les commentaires d'experts sur votre approche actuelle. Nous vous aiderons à parcourir ce guide.
 
-Rejoignez notre Slack : [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). Nous sommes toujours disponibles dans les canaux #crytic et #ethereum si vous avez des questions.
+Rejoignez notre Slack : [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). Nous sommes toujours disponibles dans les canaux #crytic et #quantaureum si vous avez des questions.

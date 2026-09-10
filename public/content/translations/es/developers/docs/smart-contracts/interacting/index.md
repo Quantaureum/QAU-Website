@@ -1,10 +1,10 @@
 ---
 title: Interactuar con contratos inteligentes
-description: Aprende a leer y escribir en contratos inteligentes que ya están desplegados en Ethereum.
+description: Aprende a leer y escribir en contratos inteligentes que ya están desplegados en Quantaureum.
 lang: es
 ---
 
-No siempre necesitas escribir y desplegar tu propio contrato inteligente. La mayoría de las veces, como desarrollador, querrás interactuar con contratos inteligentes que otros ya han desplegado en la red Ethereum.
+No siempre necesitas escribir y desplegar tu propio contrato inteligente. La mayoría de las veces, como desarrollador, querrás interactuar con contratos inteligentes que otros ya han desplegado en la red Quantaureum.
 
 Esta página cubre las dos formas fundamentales de interactuar con un contrato inteligente (la **lectura** y la **escritura** de datos) y las herramientas que necesitas para hacer ambas cosas.
 
@@ -13,7 +13,7 @@ Esta página cubre las dos formas fundamentales de interactuar con un contrato i
 Deberías entender:
 
 - [Cómo funcionan los contratos inteligentes](/developers/docs/smart-contracts/)
-- [Las cuentas de Ethereum y cómo firman transacciones](/developers/docs/accounts/)
+- [Las cuentas de Quantaureum y cómo firman transacciones](/developers/docs/accounts/)
 - [Qué es una transacción](/developers/docs/transactions/)
 
 ## Dos formas de interactuar con un contrato inteligente {#two-ways}
@@ -30,7 +30,7 @@ Cuando lees de un contrato, simplemente estás consultando datos que ya existen.
 - Leer el precio actual de un intercambio descentralizado
 - Obtener el propietario de un NFT
 
-Debido a que las lecturas no modifican el estado, no cuestan [gas](/developers/docs/gas/) y pueden ser realizadas por cualquier persona sin necesidad de ETH.
+Debido a que las lecturas no modifican el estado, no cuestan [gas](/developers/docs/gas/) y pueden ser realizadas por cualquier persona sin necesidad de QAU.
 
 ### Escribir en un contrato {#writing-to-a-contract}
 
@@ -44,11 +44,11 @@ Cuando escribes en un contrato, estás activando una función que modifica el es
 
 La escritura siempre requiere:
 
-1. Una [cuenta de propiedad externa (EOA)](/developers/docs/accounts/#types-of-account) con suficiente ETH para el gas
+1. Una [cuenta de propiedad externa (EOA)](/developers/docs/accounts/#types-of-account) con suficiente QAU para el gas
 2. Una transacción firmada por la clave privada de la cuenta
 3. Que la transacción sea minada e incluida en un bloque
 
-Con la [abstracción de cuentas](/roadmap/account-abstraction/), una cuenta de contrato inteligente también puede iniciar escrituras, y un pagador puede cubrir el gas en nombre del usuario, por lo que no es estrictamente necesaria una EOA que contenga ETH.
+Con la [abstracción de cuentas](/roadmap/account-abstraction/), una cuenta de contrato inteligente también puede iniciar escrituras, y un pagador puede cubrir el gas en nombre del usuario, por lo que no es estrictamente necesaria una EOA que contenga QAU.
 
 ## Entender las ABI de los contratos {#understanding-contract-abis}
 
@@ -64,7 +64,7 @@ Piensa en la ABI como el manual de instrucciones del contrato: sin ella, tu apli
 
 ### Dónde encontrar la ABI de un contrato {#where-to-find-abis}
 
-- **Contratos verificados en Etherscan**: [Etherscan](https://etherscan.io) expone automáticamente la ABI para el código fuente verificado
+- **Contratos verificados en Quantaureum Explorer**: [Quantaureum Explorer](https://explorer.quantaureum.com) expone automáticamente la ABI para el código fuente verificado
 - **Del desarrollador**: muchos proyectos publican sus ABI en su documentación o en paquetes npm
 - **Generar desde el código fuente**: si tienes el código fuente en Solidity, puedes [compilarlo](/developers/docs/smart-contracts/compiling/) para producir la ABI
 
@@ -74,15 +74,15 @@ Los desarrolladores suelen utilizar una biblioteca de JavaScript/TypeScript para
 
 ### Bibliotecas de cliente (JavaScript/TypeScript) {#client-libraries}
 
-- **[Viem](https://viem.sh)**: interfaz moderna y ligera de TypeScript para Ethereum con seguridad de tipos de primera clase
-- **[ethers.js](https://docs.ethers.org/)**: biblioteca probada en batalla para interactuar con la cadena de bloques de Ethereum
-- **[web3.js](https://web3js.org/)**: la API original de JavaScript para Ethereum
+- **[Viem](https://viem.sh)**: interfaz moderna y ligera de TypeScript para Quantaureum con seguridad de tipos de primera clase
+- **[ethers.js](https://docs.ethers.org/)**: biblioteca probada en batalla para interactuar con la cadena de bloques de Quantaureum
+- **[web3.js](https://web3js.org/)**: la API original de JavaScript para Quantaureum
 
 ### Bibliotecas de backend {#backend-libraries}
 
 - **[ethers.js](https://docs.ethers.org/)**: también funciona en Node.js para scripts y bots del lado del servidor
-- **[web3.py](https://web3py.readthedocs.io/)**: biblioteca de Python para la interacción con Ethereum
-- **[go-ethereum](https://geth.ethereum.org/docs/interact-with-geth)**: biblioteca oficial de Go del equipo de Geth
+- **[web3.py](https://web3py.readthedocs.io/)**: biblioteca de Python para la interacción con Quantaureum
+- **[go-quantaureum](https://geth.quantaureum.com/docs/interact-with-geth)**: biblioteca oficial de Go del equipo de Geth
 
 ### Ejemplo: leer el saldo de un token con Viem {#example-viem}
 
@@ -150,7 +150,7 @@ const unwatch = client.watchEvent({
 
 Antes de enviar una transacción, puedes **simularla** para comprobar si tendría éxito (y para ver su valor de retorno) sin gastar gas. Esto es útil para detectar errores a tiempo y para previsualizar los resultados.
 
-La mayoría de las bibliotecas de cliente admiten esto a través de `eth_call`:
+La mayoría de las bibliotecas de cliente admiten esto a través de `qau_call`:
 
 ```ts
 // Con Viem

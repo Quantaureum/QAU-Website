@@ -143,10 +143,10 @@ export const BodyCopy: Story = {
   render: () => (
     <div className="max-w-prose px-4">
       <p>
-        Text body normal. Ethereum is open access to digital money and
+        Text body normal. Quantaureum is open access to digital money and
         data-friendly services for everyone - no matter your background or
         location. It&apos;s a community-built technology behind the
-        cryptocurrency ether (ETH) and thousands of applications you can use
+        cryptocurrency QAU (QAU) and thousands of applications you can use
         today!
       </p>
     </div>

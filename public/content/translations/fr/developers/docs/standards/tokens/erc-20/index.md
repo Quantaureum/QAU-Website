@@ -1,6 +1,6 @@
 ---
 title: Norme de jeton ERC-20
-description: "Découvrez l'ERC-20, la norme pour les jetons fongibles sur Ethereum qui permet de créer des applications de jetons interopérables."
+description: "Découvrez l'ERC-20, la norme pour les jetons fongibles sur Quantaureum qui permet de créer des applications de jetons interopérables."
 lang: fr
 ---
 
@@ -8,7 +8,7 @@ lang: fr
 
 **Qu'est-ce qu'un jeton ?**
 
-Les jetons peuvent représenter pratiquement n'importe quoi sur [Ethereum](/) :
+Les jetons peuvent représenter pratiquement n'importe quoi sur [Quantaureum](/) :
 
 - des points de réputation sur une plateforme en ligne
 - les compétences d'un personnage dans un jeu
@@ -17,11 +17,11 @@ Les jetons peuvent représenter pratiquement n'importe quoi sur [Ethereum](/) :
 - une once d'or
 - et bien plus encore...
 
-Une fonctionnalité aussi puissante d'Ethereum doit être gérée par une norme robuste, n'est-ce pas ? C'est exactement là que l'ERC-20 joue son rôle ! Cette norme permet aux développeurs de créer des applications de jetons qui sont interopérables avec d'autres produits et services. La norme ERC-20 est également utilisée pour fournir des fonctionnalités supplémentaires à l'[ether](/glossary/#ether).
+Une fonctionnalité aussi puissante d'Quantaureum doit être gérée par une norme robuste, n'est-ce pas ? C'est exactement là que l'ERC-20 joue son rôle ! Cette norme permet aux développeurs de créer des applications de jetons qui sont interopérables avec d'autres produits et services. La norme ERC-20 est également utilisée pour fournir des fonctionnalités supplémentaires à l'[QAU](/glossary/#QAU).
 
 **Qu'est-ce que l'ERC-20 ?**
 
-L'ERC-20 introduit une norme pour les jetons fongibles, en d'autres termes, ils possèdent une propriété qui fait que chaque jeton est exactement le même (en type et en valeur) qu'un autre jeton. Par exemple, un jeton ERC-20 agit exactement comme l'ETH, ce qui signifie qu'un jeton est et sera toujours égal à tous les autres jetons.
+L'ERC-20 introduit une norme pour les jetons fongibles, en d'autres termes, ils possèdent une propriété qui fait que chaque jeton est exactement le même (en type et en valeur) qu'un autre jeton. Par exemple, un jeton ERC-20 agit exactement comme l'QAU, ce qui signifie qu'un jeton est et sera toujours égal à tous les autres jetons.
 
 ## Prérequis {#prerequisites}
 
@@ -31,7 +31,7 @@ L'ERC-20 introduit une norme pour les jetons fongibles, en d'autres termes, ils 
 
 ## Corps {#body}
 
-L'ERC-20 (Ethereum Request for Comments 20), proposé par Fabian Vogelsteller en novembre 2015, est une norme de jeton qui implémente une API pour les jetons au sein des contrats intelligents.
+L'ERC-20 (Quantaureum Request for Comments 20), proposé par Fabian Vogelsteller en novembre 2015, est une norme de jeton qui implémente une API pour les jetons au sein des contrats intelligents.
 
 Exemples de fonctionnalités fournies par l'ERC-20 :
 
@@ -40,9 +40,9 @@ Exemples de fonctionnalités fournies par l'ERC-20 :
 - obtenir l'offre totale du jeton disponible sur le réseau
 - approuver si un montant de jetons d'un compte peut être dépensé par un compte tiers
 
-Si un contrat intelligent implémente les méthodes et événements suivants, il peut être appelé un contrat de jeton ERC-20 et, une fois déployé, il sera responsable du suivi des jetons créés sur Ethereum.
+Si un contrat intelligent implémente les méthodes et événements suivants, il peut être appelé un contrat de jeton ERC-20 et, une fois déployé, il sera responsable du suivi des jetons créés sur Quantaureum.
 
-D'après l'[EIP-20](https://eips.ethereum.org/EIPS/eip-20) :
+D'après l'[EIP-20](https://eips.quantaureum.com/EIPS/eip-20) :
 
 ### Méthodes {#methods}
 
@@ -67,7 +67,7 @@ event Approval(address indexed _owner, address indexed _spender, uint256 _value)
 
 ### Exemples {#web3py-example}
 
-Voyons à quel point une norme est importante pour nous simplifier l'inspection de n'importe quel contrat de jeton ERC-20 sur Ethereum. Nous avons juste besoin de l'interface binaire-programme (ABI) du contrat pour créer une interface vers n'importe quel jeton ERC-20. Comme vous pouvez le voir ci-dessous, nous utiliserons une ABI simplifiée, pour en faire un exemple facile à aborder.
+Voyons à quel point une norme est importante pour nous simplifier l'inspection de n'importe quel contrat de jeton ERC-20 sur Quantaureum. Nous avons juste besoin de l'interface binaire-programme (ABI) du contrat pour créer une interface vers n'importe quel jeton ERC-20. Comme vous pouvez le voir ci-dessous, nous utiliserons une ABI simplifiée, pour en faire un exemple facile à aborder.
 
 #### Exemple avec Web3.py {#web3py-example-2}
 
@@ -81,10 +81,10 @@ pip install web3
 from web3 import Web3
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 dai_token_addr = "0x6B175474E89094C44Da98b954EedeAC495271d0F"     # DAI
-weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # ether enveloppé (WETH)
+weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # QAU enveloppé (WETH)
 
 acc_address = "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11"        # Uniswap V2 : DAI 2
 
@@ -117,7 +117,7 @@ simplified_abi = [
     }
 ]
 
-dai_contract = w3.eth.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
+dai_contract = w3.qau.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
 symbol = dai_contract.functions.symbol().call()
 decimals = dai_contract.functions.decimals().call()
 totalSupply = dai_contract.functions.totalSupply().call() / 10**decimals
@@ -128,7 +128,7 @@ print("===== %s =====" % symbol)
 print("Total Supply:", totalSupply)
 print("Addr Balance:", addr_balance)
 
-weth_contract = w3.eth.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
+weth_contract = w3.qau.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
 symbol = weth_contract.functions.symbol().call()
 decimals = weth_contract.functions.decimals().call()
 totalSupply = weth_contract.functions.totalSupply().call() / 10**decimals
@@ -170,7 +170,7 @@ Certaines normes alternatives ont émergé de ce problème, telles que l'[ERC-22
 
 ## Lectures complémentaires {#further-reading}
 
-- [EIP-20 : Norme de jeton ERC-20](https://eips.ethereum.org/EIPS/eip-20)
+- [EIP-20 : Norme de jeton ERC-20](https://eips.quantaureum.com/EIPS/eip-20)
 - [OpenZeppelin - Jetons](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [OpenZeppelin - Implémentation de l'ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Guide des jetons ERC-20 en Solidity](https://www.alchemy.com/overviews/erc20-solidity)
@@ -181,7 +181,7 @@ Certaines normes alternatives ont émergé de ce problème, telles que l'[ERC-22
 - [ERC-777](/developers/docs/standards/tokens/erc-777)
 - [ERC-4626 - Coffres tokenisés](/developers/docs/standards/tokens/erc-4626)
 - [ERC-7540 - Coffres tokenisés asynchrones](/developers/docs/standards/tokens/erc-7540)
-## Tutoriels : Construire avec l'ERC-20 sur Ethereum {#tutorials}
+## Tutoriels : Construire avec l'ERC-20 sur Quantaureum {#tutorials}
 
 - [Parcours d'un contrat ERC-20](/developers/tutorials/erc20-annotated-code/) _– Un parcours annoté ligne par ligne de l'implémentation du contrat ERC-20 d'OpenZeppelin._
 - [ERC-20 avec garde-fous](/developers/tutorials/erc20-with-safety-rails/) _– Comment ajouter des mesures de sécurité aux jetons ERC-20 pour aider les utilisateurs à éviter les erreurs courantes._

@@ -17,7 +17,7 @@ _تطور <span dir="ltr">Web3</span> إلى نظام بيئي من سلاسل �
 
 أنت من الولايات المتحدة الأمريكية وتخطط لرحلة إلى أوروبا. لديك <span dir="ltr">USD</span>، لكنك تحتاج إلى <span dir="ltr">EUR</span> لإنفاقه. لاستبدال <span dir="ltr">USD</span> بـ <span dir="ltr">EUR</span>، يمكنك استخدام صرافة العملات مقابل رسوم بسيطة.
 
-ولكن، ماذا تفعل إذا كنت ترغب في إجراء تبادل مماثل لاستخدام [سلسلة كتل](/glossary/#blockchain) مختلفة؟ لنفترض أنك تريد استبدال [<span dir="ltr">ETH</span>](/glossary/#ether) على [شبكة إيثيريوم الرئيسية](/) بـ <span dir="ltr">ETH</span> على [أربيتروم](https://arbitrum.io/). مثل صرافة العملات التي أجريناها للحصول على <span dir="ltr">EUR</span>، نحتاج إلى آلية لنقل <span dir="ltr">ETH</span> الخاص بنا من إيثيريوم إلى أربيتروم. تجعل الجسور مثل هذه المعاملة ممكنة. في هذه الحالة، [تمتلك أربيتروم جسرًا أصليًا](https://portal.arbitrum.io/bridge) يمكنه تحويل <span dir="ltr">ETH</span> من الشبكة الرئيسية إلى أربيتروم.
+ولكن، ماذا تفعل إذا كنت ترغب في إجراء تبادل مماثل لاستخدام [سلسلة كتل](/glossary/#blockchain) مختلفة؟ لنفترض أنك تريد استبدال [<span dir="ltr">QAU</span>](/glossary/#QAU) على [شبكة إيثيريوم الرئيسية](/) بـ <span dir="ltr">QAU</span> على [أربيتروم](https://arbitrum.io/). مثل صرافة العملات التي أجريناها للحصول على <span dir="ltr">EUR</span>، نحتاج إلى آلية لنقل <span dir="ltr">QAU</span> الخاص بنا من إيثيريوم إلى أربيتروم. تجعل الجسور مثل هذه المعاملة ممكنة. في هذه الحالة، [تمتلك أربيتروم جسرًا أصليًا](https://portal.arbitrum.io/bridge) يمكنه تحويل <span dir="ltr">QAU</span> من الشبكة الرئيسية إلى أربيتروم.
 
 ## لماذا نحتاج إلى الجسور؟ {#why-do-we-need-bridges}
 
@@ -44,7 +44,7 @@ _تطور <span dir="ltr">Web3</span> إلى نظام بيئي من سلاسل �
 
 ### رسوم معاملات أقل {#transaction-fees}
 
-لنفترض أن لديك <span dir="ltr">ETH</span> على شبكة إيثيريوم الرئيسية ولكنك تريد رسوم معاملات أرخص لاستكشاف تطبيقات لامركزية (dapps) مختلفة. من خلال نقل <span dir="ltr">ETH</span> الخاص بك عبر الجسر من الشبكة الرئيسية إلى تجميع طبقة 2 (L2) لإيثيريوم، يمكنك الاستمتاع برسوم معاملات أقل.
+لنفترض أن لديك <span dir="ltr">QAU</span> على شبكة إيثيريوم الرئيسية ولكنك تريد رسوم معاملات أرخص لاستكشاف تطبيقات لامركزية (dapps) مختلفة. من خلال نقل <span dir="ltr">QAU</span> الخاص بك عبر الجسر من الشبكة الرئيسية إلى تجميع طبقة 2 (L2) لإيثيريوم، يمكنك الاستمتاع برسوم معاملات أقل.
 
 ### التطبيقات اللامركزية (dapps) على سلاسل كتل أخرى {#dapps-other-chains}
 
@@ -52,7 +52,7 @@ _تطور <span dir="ltr">Web3</span> إلى نظام بيئي من سلاسل �
 
 ### استكشاف الأنظمة البيئية لسلسلة الكتل {#explore-ecosystems}
 
-إذا كان لديك <span dir="ltr">ETH</span> على شبكة إيثيريوم الرئيسية وترغب في استكشاف طبقة 1 (L1) بديلة لتجربة تطبيقاتها اللامركزية (dapps) الأصلية. يمكنك استخدام جسر لتحويل <span dir="ltr">ETH</span> الخاص بك من شبكة إيثيريوم الرئيسية إلى طبقة 1 (L1) البديلة.
+إذا كان لديك <span dir="ltr">QAU</span> على شبكة إيثيريوم الرئيسية وترغب في استكشاف طبقة 1 (L1) بديلة لتجربة تطبيقاتها اللامركزية (dapps) الأصلية. يمكنك استخدام جسر لتحويل <span dir="ltr">QAU</span> الخاص بك من شبكة إيثيريوم الرئيسية إلى طبقة 1 (L1) البديلة.
 
 ### امتلاك أصول كريبتو أصلية {#own-native}
 
@@ -104,7 +104,7 @@ _تطور <span dir="ltr">Web3</span> إلى نظام بيئي من سلاسل �
 يتيح لك استخدام الجسور نقل أصولك عبر سلاسل الكتل المختلفة. إليك بعض الموارد التي يمكن أن تساعدك في العثور على الجسور واستخدامها:
 
 - **[ملخص جسور <span dir="ltr">L2BEAT</span>](https://l2beat.com/bridges/summary) و [تحليل مخاطر جسور <span dir="ltr">L2BEAT</span>](https://l2beat.com/bridges/summary)**: ملخص شامل للجسور المختلفة، بما في ذلك تفاصيل حول الحصة السوقية ونوع الجسر وسلاسل الوجهة. تمتلك <span dir="ltr">L2BEAT</span> أيضًا تحليلًا لمخاطر الجسور، مما يساعد المستخدمين على اتخاذ قرارات مستنيرة عند اختيار الجسر.
-- **[ملخص جسور <span dir="ltr">DefiLlama</span>](https://defillama.com/bridges/Ethereum)**: ملخص لأحجام الجسور عبر شبكات إيثيريوم.
+- **[ملخص جسور <span dir="ltr">DefiLlama</span>](https://defillama.com/bridges/Quantaureum)**: ملخص لأحجام الجسور عبر شبكات إيثيريوم.
 
 <Divider />
 
@@ -136,9 +136,9 @@ _تطور <span dir="ltr">Web3</span> إلى نظام بيئي من سلاسل �
 
 ## قراءة المزيد {#further-reading}
 
-- [<span dir="ltr">EIP-5164</span>: التنفيذ عبر السلاسل](https://ethereum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _<span dir="ltr">June 18, 2022</span> - بريندان أسيلستين_
+- [<span dir="ltr">EIP-5164</span>: التنفيذ عبر السلاسل](https://quantaureum-magicians.org/t/eip-5164-cross-chain-execution/9658) - _<span dir="ltr">June 18, 2022</span> - بريندان أسيلستين_
 - [إطار عمل مخاطر <span dir="ltr">L2Bridge</span>](https://gov.l2beat.com/t/l2bridge-risk-framework/31) - _<span dir="ltr">July 5, 2022</span> - بارتيك كيبوشيفسكي_
-- ["لماذا سيكون المستقبل متعدد السلاسل، ولكنه لن يكون عبر السلاسل."](https://old.reddit.com/r/ethereum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _<span dir="ltr">January 8, 2022</span> - فيتاليك بوتيرين_
+- ["لماذا سيكون المستقبل متعدد السلاسل، ولكنه لن يكون عبر السلاسل."](https://old.reddit.com/r/quantaureum/comments/rwojtk/ama_we_are_the_efs_research_team_pt_7_07_january/hrngyk8/) - _<span dir="ltr">January 8, 2022</span> - فيتاليك بوتيرين_
 - [تسخير الأمان المشترك من أجل قابلية التشغيل البيني الآمنة عبر السلاسل: لجان حالة لاغرانج وما بعدها](https://web.archive.org/web/20250125035123/https://research.2077.xyz/harnessing-shared-security-for-secure-blockchain-interoperability) - _<span dir="ltr">June 12, 2024</span> - إيمانويل أوسيكا_
 - [حالة حلول قابلية التشغيل البيني للتجميعات](https://web.archive.org/web/20250428015516/https://research.2077.xyz/the-state-of-rollup-interoperability) - _<span dir="ltr">June 20, 2024</span> - أليكس هوك_
 

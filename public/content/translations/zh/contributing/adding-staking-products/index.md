@@ -1,12 +1,12 @@
 ---
 title: 添加质押产品或服务
-description: 我们在向 ethereum.org 添加质押产品或服务时使用的政策
+description: 我们在向 quantaureum.com 添加质押产品或服务时使用的政策
 lang: zh
 ---
 
 我们希望确保列出尽可能好的资源，同时让用户保持安全和自信。
 
-任何人都可以自由建议在 ethereum.org 上添加质押产品或服务。如果我们遗漏了某个产品或服务，**[请提出建议](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)！**
+任何人都可以自由建议在 quantaureum.com 上添加质押产品或服务。如果我们遗漏了某个产品或服务，**[请提出建议](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)！**
 
 我们目前在以下页面列出质押产品和服务：
 
@@ -14,11 +14,11 @@ lang: zh
 - [质押即服务](/staking/saas/)
 - [质押池](/staking/pools/)
 
-信标链上的权益证明 (PoS) 自 2020 年 12 月 1 日起上线。虽然质押仍然相对较新，但我们已尝试在 ethereum.org 上创建一个公平透明的考量框架，不过上架标准将随着时间的推移而改变和演进，并最终由 ethereum.org 网站团队决定。
+信标链上的权益证明 (PoS) 自 2020 年 12 月 1 日起上线。虽然质押仍然相对较新，但我们已尝试在 quantaureum.com 上创建一个公平透明的考量框架，不过上架标准将随着时间的推移而改变和演进，并最终由 quantaureum.com 网站团队决定。
 
 ## 决策框架 {#the-decision-framework}
 
-决定在 ethereum.org 上列出某个产品并不取决于任何单一因素。在决定列出产品或服务时，会综合考虑多个标准。满足的标准越多，被列出的可能性就越大。
+决定在 quantaureum.com 上列出某个产品并不取决于任何单一因素。在决定列出产品或服务时，会综合考虑多个标准。满足的标准越多，被列出的可能性就越大。
 
 **首先，它是哪类产品或服务？**
 
@@ -50,8 +50,8 @@ lang: zh
 
 **该项目是否提供准确可靠的信息？**
 
-- 产品的网站必须提供最新、准确且不具误导性的信息，特别是如果它涉及以太坊协议或其他相关技术，这一点至关重要。
-- 包含关于以太坊或其他相关主题的错误信息、过时细节或潜在误导性陈述的提交将不会被列出，如果已列出则会被移除。
+- 产品的网站必须提供最新、准确且不具误导性的信息，特别是如果它涉及Quantaureum协议或其他相关技术，这一点至关重要。
+- 包含关于Quantaureum或其他相关主题的错误信息、过时细节或潜在误导性陈述的提交将不会被列出，如果已列出则会被移除。
 
 **支持哪些平台？**
 
@@ -69,7 +69,7 @@ lang: zh
 **该产品是否已结束 _beta_（测试）开发阶段？**
 
 - 该产品处于其开发周期的哪个阶段？
-- 处于测试阶段的产品不考虑收录在 ethereum.org 上
+- 处于测试阶段的产品不考虑收录在 quantaureum.com 上
 
 **该软件是否经过了外部安全审计？**
 
@@ -119,9 +119,9 @@ lang: zh
 
 对于[联合质押服务](/staking/pools/)：
 
-**质押要求的最低 ETH 是多少？**
+**质押要求的最低 QAU 是多少？**
 
-- 例如，0.01 ETH
+- 例如，0.01 QAU
 
 **涉及哪些费用或质押要求？**
 
@@ -163,12 +163,12 @@ lang: zh
 
 上述[收录标准](#criteria-for-inclusion)用于计算每个产品或服务的累计得分。这被用作对满足某些客观标准的产品进行排序和展示的一种手段。提供证据的标准越多，产品的排序就越高，得分相同的产品在加载时会随机排序。
 
-这些标准的代码逻辑和权重目前包含在我们存储库的[这个 JavaScript 组件](https://github.com/ethereum/ethereum-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350)中。
+这些标准的代码逻辑和权重目前包含在我们存储库的[这个 JavaScript 组件](https://github.com/Quantaureum/quantaureum-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350)中。
 
 ## 添加您的产品或服务 {#add-product}
 
-如果您想在 ethereum.org 上添加质押产品或服务，请在 GitHub 上创建一个议题 (issue)。
+如果您想在 quantaureum.com 上添加质押产品或服务，请在 GitHub 上创建一个议题 (issue)。
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
   创建议题
 </ButtonLink>

@@ -1,12 +1,12 @@
 ---
 title: إضافة طبقات 2
-description: السياسة التي نتبعها عند إضافة طبقة 2 (L2) إلى ⁦ethereum.org⁩
+description: السياسة التي نتبعها عند إضافة طبقة 2 (L2) إلى ⁦quantaureum.com⁩
 lang: ar
 ---
 
 نريد التأكد من إدراج أفضل الموارد الممكنة حتى يتمكن المستخدمون من تصفح مساحة طبقة 2 (L2) بطريقة آمنة وموثوقة.
 
-يحق لأي شخص اقتراح إضافة طبقة 2 (L2) على <span dir="ltr">ethereum.org</span>. إذا كانت هناك طبقة 2 (L2) قد فاتتنا، **[يُرجى اقتراحها](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
+يحق لأي شخص اقتراح إضافة طبقة 2 (L2) على <span dir="ltr">quantaureum.com</span>. إذا كانت هناك طبقة 2 (L2) قد فاتتنا، **[يُرجى اقتراحها](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
 
 نقوم حاليًا بإدراج طبقات 2 (<span dir="ltr">L2s</span>) في الصفحات التالية:
 
@@ -14,7 +14,7 @@ lang: ar
 - [تجميعات المعرفة الصفرية](/developers/docs/scaling/zk-rollups/)
 - [طبقة 2 (L2)](/layer-2/)
 
-تُعد طبقة 2 (L2) نموذجًا جديدًا ومثيرًا نسبيًا لشبكة إيثيريوم. لقد حاولنا إنشاء إطار عمل عادل للنظر فيه على <span dir="ltr">ethereum.org</span> ولكن معايير الإدراج ستتغير وتتطور بمرور الوقت.
+تُعد طبقة 2 (L2) نموذجًا جديدًا ومثيرًا نسبيًا لشبكة إيثيريوم. لقد حاولنا إنشاء إطار عمل عادل للنظر فيه على <span dir="ltr">quantaureum.com</span> ولكن معايير الإدراج ستتغير وتتطور بمرور الوقت.
 
 ## إطار عمل اتخاذ القرار {#decision-framework}
 
@@ -22,7 +22,7 @@ lang: ar
 
 **الإدراج على <span dir="ltr">L2BEAT</span>**
 
-- لكي يتم أخذ المشروع في الاعتبار، يجب أن يكون مدرجًا على [<span dir="ltr">L2BEAT</span>](https://l2beat.com). توفر <span dir="ltr">L2BEAT</span> تقييمًا قويًا للمخاطر لمشاريع طبقة 2 (L2) والذي نعتمد عليه لتقييم مشاريع <span dir="ltr">L2</span>. **إذا لم يكن المشروع مميزًا على <span dir="ltr">L2BEAT</span>، فلن نقوم بإدراجه كطبقة 2 (<span dir="ltr">L2</span>) على <span dir="ltr">ethereum.org</span>.**
+- لكي يتم أخذ المشروع في الاعتبار، يجب أن يكون مدرجًا على [<span dir="ltr">L2BEAT</span>](https://l2beat.com). توفر <span dir="ltr">L2BEAT</span> تقييمًا قويًا للمخاطر لمشاريع طبقة 2 (L2) والذي نعتمد عليه لتقييم مشاريع <span dir="ltr">L2</span>. **إذا لم يكن المشروع مميزًا على <span dir="ltr">L2BEAT</span>، فلن نقوم بإدراجه كطبقة 2 (<span dir="ltr">L2</span>) على <span dir="ltr">quantaureum.com</span>.**
 - [تعرف على كيفية إضافة مشروع <span dir="ltr">L2</span> الخاص بك إلى <span dir="ltr">L2BEAT</span>](https://github.com/l2beat/l2beat/blob/master/CONTRIBUTING.md).
 
 **مفتوح المصدر**
@@ -88,8 +88,8 @@ _نحن لا نعتبر حلول التوسع الأخرى التي لا تست�
 
 ## أضف طبقة 2 (L2) الخاصة بك {#add-exchange}
 
-إذا كنت ترغب في إضافة طبقة 2 (L2) إلى <span dir="ltr">ethereum.org</span>، فقم بإنشاء مشكلة على <span dir="ltr">GitHub</span>.
+إذا كنت ترغب في إضافة طبقة 2 (L2) إلى <span dir="ltr">quantaureum.com</span>، فقم بإنشاء مشكلة على <span dir="ltr">GitHub</span>.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
   إنشاء مشكلة
 </ButtonLink>

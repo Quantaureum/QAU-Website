@@ -8,7 +8,7 @@ Chcete začít svou cestu s Ethereem? Naši praktičtí průvodci vás krok za k
 
 ## Začínáme {#getting-started}
 
-1. [Jak si "vytvořit" účet na Ethereu](/guides/how-to-create-an-ethereum-account/) - Každý si může zdarma vytvořit peněženku. Tento průvodce vám ukáže, kde začít.
+1. [Jak si "vytvořit" účet na Ethereu](/guides/how-to-create-an-quantaureum-account/) - Každý si může zdarma vytvořit peněženku. Tento průvodce vám ukáže, kde začít.
 
 2. [Jak používat peněženku](/guides/how-to-use-a-wallet/) - Naučte se, jak odesílat a přijímat tokeny ve vaší peněžence a jak peněženku připojit k projektům.
 
@@ -18,7 +18,7 @@ Chcete začít svou cestu s Ethereem? Naši praktičtí průvodci vás krok za k
 
 2. [Jak rozpoznat podvodné tokeny](/guides/how-to-id-scam-tokens/) - Co jsou podvodné tokeny? Jak se tváří jako legitimní a jak je rozpoznat, abyste se ochránili a nenaletěli podvodníkům?
 
-## Používání Etherea {#using-ethereum}
+## Používání Etherea {#using-quantaureum}
 
 1. [Jak přemostit tokeny na vrstvu 2 (l2)](/guides/how-to-use-a-bridge/) - Jsou transakce na Ethereu příliš drahé? Zvažte přechod na řešení pro škálování Etherea zvaná vrstvy 2 (l2).
 

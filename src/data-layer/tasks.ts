@@ -15,9 +15,9 @@ import { fetchApps } from "./fetchers/fetchApps"
 import { fetchBlobStats } from "./fetchers/fetchBlobStats"
 import { fetchCalendarEvents } from "./fetchers/fetchCalendarEvents"
 import { fetchCommunityPicks } from "./fetchers/fetchCommunityPicks"
-import { fetchEthereumMarketcap } from "./fetchers/fetchEthereumMarketcap"
-import { fetchEthereumStablecoinsMcap } from "./fetchers/fetchEthereumStablecoinsMcap"
-import { fetchEthPrice } from "./fetchers/fetchEthPrice"
+import { fetchQuantaureumMarketcap } from "./fetchers/fetchQuantaureumMarketcap"
+import { fetchQuantaureumStablecoinsMcap } from "./fetchers/fetchQuantaureumStablecoinsMcap"
+import { fetchQauPrice } from "./fetchers/fetchQauPrice"
 import { fetchEvents } from "./fetchers/fetchEvents"
 import { fetchGasPrice } from "./fetchers/fetchGasPrice"
 import { fetchGFIs } from "./fetchers/fetchGFIs"
@@ -33,7 +33,7 @@ import { fetchQuizStats } from "./fetchers/fetchQuizStats"
 import { fetchRSS } from "./fetchers/fetchRSS"
 import { fetchStablecoinsData } from "./fetchers/fetchStablecoinsData"
 import { fetchStakedPercentage } from "./fetchers/fetchStakedPercentage"
-import { fetchTotalEthStaked } from "./fetchers/fetchTotalEthStaked"
+import { fetchTotalQauStaked } from "./fetchers/fetchTotalQauStaked"
 import { fetchTotalValueLocked } from "./fetchers/fetchTotalValueLocked"
 import { fetchTranslationGlossary } from "./fetchers/fetchTranslationGlossary"
 import { fetchVideoThumbnails } from "./fetchers/fetchVideoThumbnails"
@@ -56,12 +56,12 @@ export const KEYS = {
   GITHUB_REPO_DATA: "fetch-github-repo-data",
   EVENTS: "fetch-events",
   BLOB_STATS: "fetch-blob-stats",
-  ETHEREUM_MARKETCAP: "fetch-ethereum-marketcap",
-  ETHEREUM_STABLECOINS_MCAP: "fetch-ethereum-stablecoins-mcap",
-  ETH_PRICE: "fetch-eth-price",
+  QUANTAUREUM_MARKETCAP: "fetch-quantaureum-marketcap",
+  QUANTAUREUM_STABLECOINS_MCAP: "fetch-quantaureum-stablecoins-mcap",
+  ETH_PRICE: "fetch-qau-price",
   GAS_PRICE: "fetch-gas-price",
   STAKED_PERCENTAGE: "fetch-staked-percentage",
-  TOTAL_ETH_STAKED: "fetch-total-eth-staked",
+  TOTAL_ETH_STAKED: "fetch-total-qau-staked",
   TOTAL_VALUE_LOCKED: "fetch-total-value-locked",
   STABLECOINS_DATA: "fetch-stablecoins-data",
   ACCOUNT_HOLDERS: "fetch-account-holders",
@@ -99,11 +99,11 @@ const DAILY: TaskDef[] = [
 ]
 
 const HOURLY: TaskDef[] = [
-  [KEYS.ETHEREUM_MARKETCAP, fetchEthereumMarketcap],
-  [KEYS.ETHEREUM_STABLECOINS_MCAP, fetchEthereumStablecoinsMcap],
-  [KEYS.ETH_PRICE, fetchEthPrice],
+  [KEYS.QUANTAUREUM_MARKETCAP, fetchQuantaureumMarketcap],
+  [KEYS.QUANTAUREUM_STABLECOINS_MCAP, fetchQuantaureumStablecoinsMcap],
+  [KEYS.ETH_PRICE, fetchQauPrice],
   [KEYS.GAS_PRICE, fetchGasPrice],
-  [KEYS.TOTAL_ETH_STAKED, fetchTotalEthStaked],
+  [KEYS.TOTAL_ETH_STAKED, fetchTotalQauStaked],
   [KEYS.TOTAL_VALUE_LOCKED, fetchTotalValueLocked],
   [KEYS.STABLECOINS_DATA, fetchStablecoinsData],
 ]

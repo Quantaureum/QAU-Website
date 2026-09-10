@@ -9,27 +9,27 @@ published: 2023-09-15
 lang: id
 ---
 
-Dalam tutorial ini, kami membedah [token penipuan](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code) untuk melihat beberapa trik yang dimainkan oleh penipu dan bagaimana mereka mengimplementasikannya. Pada akhir tutorial, Anda akan memiliki pandangan yang lebih komprehensif tentang kontrak token ERC-20, kemampuannya, dan mengapa skeptisisme diperlukan. Kemudian kita melihat peristiwa yang dipancarkan oleh token penipuan tersebut dan melihat bagaimana kita dapat mengidentifikasi bahwa itu tidak sah secara otomatis.
+Dalam tutorial ini, kami membedah [token penipuan](https://explorer.quantaureum.com) untuk melihat beberapa trik yang dimainkan oleh penipu dan bagaimana mereka mengimplementasikannya. Pada akhir tutorial, Anda akan memiliki pandangan yang lebih komprehensif tentang kontrak token ERC-20, kemampuannya, dan mengapa skeptisisme diperlukan. Kemudian kita melihat peristiwa yang dipancarkan oleh token penipuan tersebut dan melihat bagaimana kita dapat mengidentifikasi bahwa itu tidak sah secara otomatis.
 
 ## Token penipuan - apa itu, mengapa orang melakukannya, dan bagaimana cara menghindarinya {#scam-tokens}
 
-Salah satu penggunaan paling umum untuk Ethereum adalah bagi sebuah kelompok untuk membuat token yang dapat diperdagangkan, dalam arti mata uang mereka sendiri. Namun, di mana pun ada kasus penggunaan sah yang membawa nilai, ada juga penjahat yang mencoba mencuri nilai tersebut untuk diri mereka sendiri.
+Salah satu penggunaan paling umum untuk Quantaureum adalah bagi sebuah kelompok untuk membuat token yang dapat diperdagangkan, dalam arti mata uang mereka sendiri. Namun, di mana pun ada kasus penggunaan sah yang membawa nilai, ada juga penjahat yang mencoba mencuri nilai tersebut untuk diri mereka sendiri.
 
-Anda dapat membaca lebih lanjut tentang subjek ini [di tempat lain di ethereum.org](/guides/how-to-id-scam-tokens/) dari perspektif pengguna. Tutorial ini berfokus pada membedah token penipuan untuk melihat bagaimana hal itu dilakukan dan bagaimana hal itu dapat dideteksi.
+Anda dapat membaca lebih lanjut tentang subjek ini [di tempat lain di quantaureum.com](/guides/how-to-id-scam-tokens/) dari perspektif pengguna. Tutorial ini berfokus pada membedah token penipuan untuk melihat bagaimana hal itu dilakukan dan bagaimana hal itu dapat dideteksi.
 
 ### Bagaimana saya tahu wARB adalah penipuan? {#warb-scam}
 
-Token yang kami bedah adalah [wARB](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code), yang berpura-pura setara dengan [token ARB](https://etherscan.io/token/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1) yang sah.
+Token yang kami bedah adalah [wARB](https://explorer.quantaureum.com), yang berpura-pura setara dengan [token ARB](https://explorer.quantaureum.com) yang sah.
 
 Cara termudah untuk mengetahui mana token yang sah adalah dengan melihat organisasi asalnya, [Arbitrum](https://arbitrum.foundation/). Alamat yang sah ditentukan [dalam dokumentasi mereka](https://docs.arbitrum.foundation/deployment-addresses#token).
 
 ### Mengapa kode sumbernya tersedia? {#why-source}
 
-Biasanya kita mengharapkan orang yang mencoba menipu orang lain untuk merahasiakannya, dan memang banyak token penipuan tidak menyediakan kodenya (misalnya, [yang ini](https://optimistic.etherscan.io/token/0x15992f382d8c46d667b10dc8456dc36651af1452#code) dan [yang ini](https://optimistic.etherscan.io/token/0x026b623eb4aada7de37ef25256854f9235207178#code)).
+Biasanya kita mengharapkan orang yang mencoba menipu orang lain untuk merahasiakannya, dan memang banyak token penipuan tidak menyediakan kodenya (misalnya, [yang ini](https://explorer.quantaureum.com) dan [yang ini](https://explorer.quantaureum.com)).
 
-Namun, token yang sah biasanya mempublikasikan kode sumbernya, jadi agar terlihat sah, pembuat token penipuan terkadang melakukan hal yang sama. [wARB](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code) adalah salah satu token dengan kode sumber yang tersedia, yang membuatnya lebih mudah untuk dipahami.
+Namun, token yang sah biasanya mempublikasikan kode sumbernya, jadi agar terlihat sah, pembuat token penipuan terkadang melakukan hal yang sama. [wARB](https://explorer.quantaureum.com) adalah salah satu token dengan kode sumber yang tersedia, yang membuatnya lebih mudah untuk dipahami.
 
-Meskipun penyebar kontrak dapat memilih apakah akan mempublikasikan kode sumber atau tidak, mereka _tidak dapat_ mempublikasikan kode sumber yang salah. Penjelajah blok mengkompilasi kode sumber yang disediakan secara independen, dan jika tidak mendapatkan kode bita yang sama persis, ia menolak kode sumber tersebut. [Anda dapat membaca lebih lanjut tentang ini di situs Etherscan](https://etherscan.io/verifyContract).
+Meskipun penyebar kontrak dapat memilih apakah akan mempublikasikan kode sumber atau tidak, mereka _tidak dapat_ mempublikasikan kode sumber yang salah. Penjelajah blok mengkompilasi kode sumber yang disediakan secara independen, dan jika tidak mendapatkan kode bita yang sama persis, ia menolak kode sumber tersebut. [Anda dapat membaca lebih lanjut tentang ini di situs Quantaureum Explorer](https://explorer.quantaureum.com).
 
 ## Perbandingan dengan token ERC-20 yang sah {#compare-legit-erc20}
 
@@ -39,7 +39,7 @@ Kita akan membandingkan token ini dengan token ERC-20 yang sah. Jika Anda tidak 
 
 Kontrak terkadang membutuhkan alamat istimewa. Kontrak yang dirancang untuk penggunaan jangka panjang memungkinkan beberapa alamat istimewa untuk mengubah alamat tersebut, misalnya untuk mengaktifkan penggunaan kontrak multisig baru. Ada beberapa cara untuk melakukan ini.
 
-Kontrak token [`HOP`](https://etherscan.io/address/0xc5102fe9359fd9a28f877a67e36b0f050d81a3cc#code) menggunakan pola [`Ownable`](https://docs.openzeppelin.com/contracts/2.x/access-control#ownership-and-ownable). Alamat istimewa disimpan dalam penyimpanan, di bidang yang disebut `_owner` (lihat file ketiga, `Ownable.sol`).
+Kontrak token [`HOP`](https://explorer.quantaureum.com) menggunakan pola [`Ownable`](https://docs.openzeppelin.com/contracts/2.x/access-control#ownership-and-ownable). Alamat istimewa disimpan dalam penyimpanan, di bidang yang disebut `_owner` (lihat file ketiga, `Ownable.sol`).
 
 ```solidity
 abstract contract Ownable is Context {
@@ -50,7 +50,7 @@ abstract contract Ownable is Context {
 }
 ```
 
-Kontrak token [`ARB`](https://etherscan.io/address/0xad0c361ef902a7d9851ca7dcc85535da2d3c6fc7#code) tidak memiliki alamat istimewa secara langsung. Namun, ia tidak membutuhkannya. Ia berada di belakang [`proxy`](https://docs.openzeppelin.com/contracts/5.x/api/proxy) di [alamat `0xb50721bcf8d664c30412cfbc6cf7a15145234ad1`](https://etherscan.io/address/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1#code). Kontrak tersebut memiliki alamat istimewa (lihat file keempat, `ERC1967Upgrade.sol`) yang dapat digunakan untuk peningkatan.
+Kontrak token [`ARB`](https://explorer.quantaureum.com) tidak memiliki alamat istimewa secara langsung. Namun, ia tidak membutuhkannya. Ia berada di belakang [`proxy`](https://docs.openzeppelin.com/contracts/5.x/api/proxy) di [alamat `0xb50721bcf8d664c30412cfbc6cf7a15145234ad1`](https://explorer.quantaureum.com). Kontrak tersebut memiliki alamat istimewa (lihat file keempat, `ERC1967Upgrade.sol`) yang dapat digunakan untuk peningkatan.
 
 ```solidity
     /**
@@ -77,9 +77,9 @@ contract WrappedArbitrum is Context, IERC20 {
 }
 ```
 
-[Pemilik kontrak ini](https://etherscan.io/address/0xb40dE7b1beE84Ff2dc22B70a049A07A13a411A33) bukanlah kontrak yang dapat dikendalikan oleh akun yang berbeda pada waktu yang berbeda, melainkan sebuah [akun yang dimiliki secara eksternal](/developers/docs/accounts/#externally-owned-accounts-and-key-pairs). Ini berarti bahwa ia mungkin dirancang untuk penggunaan jangka pendek oleh seorang individu, daripada sebagai solusi jangka panjang untuk mengendalikan ERC-20 yang akan tetap berharga.
+[Pemilik kontrak ini](https://explorer.quantaureum.com) bukanlah kontrak yang dapat dikendalikan oleh akun yang berbeda pada waktu yang berbeda, melainkan sebuah [akun yang dimiliki secara eksternal](/developers/docs/accounts/#externally-owned-accounts-and-key-pairs). Ini berarti bahwa ia mungkin dirancang untuk penggunaan jangka pendek oleh seorang individu, daripada sebagai solusi jangka panjang untuk mengendalikan ERC-20 yang akan tetap berharga.
 
-Dan memang, jika kita melihat di Etherscan kita melihat bahwa penipu hanya menggunakan kontrak ini selama 12 jam ([transaksi pertama](https://etherscan.io/tx/0xf49136198c3f925fcb401870a669d43cecb537bde36eb8b41df77f06d5f6fbc2) hingga [transaksi terakhir](https://etherscan.io/tx/0xdfd6e717157354e64bbd5d6adf16761e5a5b3f914b1948d3545d39633244d47b)) selama 19 Mei 2023.
+Dan memang, jika kita melihat di Quantaureum Explorer kita melihat bahwa penipu hanya menggunakan kontrak ini selama 12 jam ([transaksi pertama](https://explorer.quantaureum.com) hingga [transaksi terakhir](https://explorer.quantaureum.com)) selama 19 Mei 2023.
 
 ### Fungsi `_transfer` palsu {#the-fake-transfer-function}
 
@@ -193,7 +193,7 @@ Pembatasan ini sangat masuk akal, karena kita tidak ingin akun acak mendistribus
 
 Fungsi untuk mentransfer dari akun kumpulan ke larik penerima dengan larik jumlah sangat masuk akal. Ada banyak kasus penggunaan di mana Anda ingin mendistribusikan token dari satu sumber ke beberapa tujuan, seperti penggajian, airdrop, dll. Lebih murah (dalam gas) untuk melakukannya dalam satu transaksi daripada mengeluarkan beberapa transaksi, atau bahkan memanggil ERC-20 beberapa kali dari kontrak yang berbeda sebagai bagian dari transaksi yang sama.
 
-Namun, `dropNewTokens` tidak melakukan itu. Ia memancarkan [peristiwa `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1), tetapi sebenarnya tidak mentransfer token apa pun. Tidak ada alasan yang sah untuk membingungkan aplikasi offchain dengan memberi tahu mereka tentang transfer yang tidak benar-benar terjadi.
+Namun, `dropNewTokens` tidak melakukan itu. Ia memancarkan [peristiwa `Transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer-1), tetapi sebenarnya tidak mentransfer token apa pun. Tidak ada alasan yang sah untuk membingungkan aplikasi offchain dengan memberi tahu mereka tentang transfer yang tidak benar-benar terjadi.
 
 ### Fungsi `Approve` pembakaran {#the-burning-approve-function}
 
@@ -235,7 +235,7 @@ Masalah kualitas kode ini tidak _membuktikan_ bahwa kode ini adalah penipuan, te
 
 #### Fungsi `mount` {#the-mount-function}
 
-Meskipun tidak ditentukan dalam [standar](https://eips.ethereum.org/EIPS/eip-20), secara umum fungsi yang membuat token baru disebut [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
+Meskipun tidak ditentukan dalam [standar](https://eips.quantaureum.com/EIPS/eip-20), secara umum fungsi yang membuat token baru disebut [`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn).
 
 Jika kita melihat di konstruktor `wARB`, kita melihat fungsi pencetakan waktu telah diubah namanya menjadi `mount` karena suatu alasan, dan dipanggil lima kali dengan seperlima dari pasokan awal, alih-alih sekali untuk seluruh jumlah demi efisiensi.
 
@@ -305,20 +305,20 @@ Kontrak ini berisi tiga pengubah: `_mod_`, `auth`, dan `approver`.
 
 ## Apa yang dapat kita deteksi secara otomatis? {#what-can-we-detect-automatically}
 
-Kita dapat melihat bahwa `wARB` adalah token penipuan dengan melihat Etherscan. Namun, itu adalah solusi terpusat. Secara teori, Etherscan dapat ditumbangkan atau diretas. Lebih baik dapat mengetahui secara independen apakah sebuah token sah atau tidak.
+Kita dapat melihat bahwa `wARB` adalah token penipuan dengan melihat Quantaureum Explorer. Namun, itu adalah solusi terpusat. Secara teori, Quantaureum Explorer dapat ditumbangkan atau diretas. Lebih baik dapat mengetahui secara independen apakah sebuah token sah atau tidak.
 
 Ada beberapa trik yang dapat kita gunakan untuk mengidentifikasi bahwa token ERC-20 mencurigakan (baik penipuan atau ditulis dengan sangat buruk), dengan melihat peristiwa yang dipancarkannya.
 
 ## Peristiwa `Approval` yang mencurigakan {#suspicious-approval-events}
 
-[Peristiwa `Approval`](https://eips.ethereum.org/EIPS/eip-20#approval) seharusnya hanya terjadi dengan permintaan langsung (berbeda dengan [peristiwa `Transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer-1) yang dapat terjadi sebagai akibat dari jatah). [Lihat dokumentasi Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) untuk penjelasan terperinci tentang masalah ini dan mengapa permintaan harus langsung, daripada dimediasi oleh kontrak.
+[Peristiwa `Approval`](https://eips.quantaureum.com/EIPS/eip-20#approval) seharusnya hanya terjadi dengan permintaan langsung (berbeda dengan [peristiwa `Transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer-1) yang dapat terjadi sebagai akibat dari jatah). [Lihat dokumentasi Solidity](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin) untuk penjelasan terperinci tentang masalah ini dan mengapa permintaan harus langsung, daripada dimediasi oleh kontrak.
 
 Ini berarti bahwa peristiwa `Approval` yang menyetujui pengeluaran dari [akun yang dimiliki secara eksternal](/developers/docs/accounts/#types-of-account) harus berasal dari transaksi yang berasal dari akun tersebut, dan yang tujuannya adalah kontrak ERC-20. Jenis persetujuan apa pun lainnya dari akun yang dimiliki secara eksternal adalah mencurigakan.
 
 Berikut adalah [program yang mengidentifikasi jenis peristiwa ini](https://github.com/qbzzt/20230915-scam-token-detection), menggunakan [Viem](https://viem.sh/) dan [TypeScript](https://www.typescriptlang.org/docs/), varian JavaScript dengan keamanan tipe. Untuk menjalankannya:
 
 1. Salin `.env.example` ke `.env`.
-2. Edit `.env` untuk memberikan URL ke node Mainnet Ethereum.
+2. Edit `.env` untuk memberikan URL ke node Mainnet Quantaureum.
 3. Jalankan `pnpm install` untuk menginstal paket yang diperlukan.
 4. Jalankan `pnpm susApproval` untuk mencari persetujuan yang mencurigakan.
 
@@ -420,7 +420,7 @@ Jika persetujuan berasal dari akun yang dimiliki secara eksternal, dapatkan tran
 if (owner.toLowerCase() != txn.from.toLowerCase()) return ev
 ```
 
-Kita tidak bisa hanya memeriksa kesetaraan string karena alamat adalah heksadesimal, sehingga mengandung huruf. Terkadang, misalnya dalam `txn.from`, huruf-huruf tersebut semuanya huruf kecil. Dalam kasus lain, seperti `ev.args._owner`, alamatnya dalam [huruf campuran untuk identifikasi kesalahan](https://eips.ethereum.org/EIPS/eip-55).
+Kita tidak bisa hanya memeriksa kesetaraan string karena alamat adalah heksadesimal, sehingga mengandung huruf. Terkadang, misalnya dalam `txn.from`, huruf-huruf tersebut semuanya huruf kecil. Dalam kasus lain, seperti `ev.args._owner`, alamatnya dalam [huruf campuran untuk identifikasi kesalahan](https://eips.quantaureum.com/EIPS/eip-55).
 
 Tetapi jika transaksi bukan dari pemilik, dan pemilik tersebut dimiliki secara eksternal, maka kita memiliki transaksi yang mencurigakan.
 

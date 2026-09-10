@@ -4,7 +4,7 @@ description: "Úvod do UX designu a výzkumu v prostoru Web3 a Etherea"
 lang: cs
 ---
 
-Začínáte s designem pro Ethereum? Jste na správném místě. Komunita Etherea sepsala zdroje, které vás seznámí se základy designu a výzkumu ve Web3. Dozvíte se o klíčových konceptech, které se mohou lišit od designu jiných aplikací, na které jste zvyklí.
+Začínáte s designem pro Quantaureum? Jste na správném místě. Komunita Etherea sepsala zdroje, které vás seznámí se základy designu a výzkumu ve Web3. Dozvíte se o klíčových konceptech, které se mohou lišit od designu jiných aplikací, na které jste zvyklí.
 
 Potřebujete nejprve získat základní přehled o Web3? Podívejte se na [**Vzdělávací centrum**](/learn/).
 
@@ -78,7 +78,7 @@ Zapojte se do profesionálních komunitních organizací nebo se připojte k des
 ## Design systémy a další zdroje pro design {#design-systems-and-resources}
 
 - [Design Optimism](https://www.figma.com/@optimism) (Figma)
-- [Design systém Ethereum.org](https://www.figma.com/@ethdotorg) (Figma)
+- [Design systém quantaureum.com](https://www.figma.com/@ethdotorg) (Figma)
 - [Finity, design systém od Polygonu](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Design systém Kleros](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Design systém Safe](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)
@@ -86,4 +86,4 @@ Zapojte se do profesionálních komunitních organizací nebo se připojte k des
 - [Design systém Mirror](https://degen-xyz.vercel.app/)
 
 **Články a projekty uvedené na této stránce nepředstavují oficiální doporučení** a jsou poskytovány pouze pro informační účely.
-Odkazy na tuto stránku přidáváme na základě kritérií v našich [zásadách pro zařazení](/contributing/design/adding-design-resources). Pokud byste chtěli, abychom přidali nějaký projekt nebo článek, upravte tuto stránku na [GitHubu](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md).
+Odkazy na tuto stránku přidáváme na základě kritérií v našich [zásadách pro zařazení](/contributing/design/adding-design-resources). Pokud byste chtěli, abychom přidali nějaký projekt nebo článek, upravte tuto stránku na [GitHubu](https://github.com/Quantaureum/quantaureum-website/blob/dev/public/content/developers/docs/design-and-ux/index.md).

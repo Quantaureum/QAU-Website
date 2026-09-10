@@ -28,7 +28,7 @@ import PageJsonLD from "./page-jsonld"
 import { getGrowThePieData, getL2beatData } from "@/lib/data"
 import layer2NetworksCalloutImage from "@/public/images/counter-screen-network-towers-rings-collage-cut-out.png"
 import heroImg from "@/public/images/heroes/layer-2-hub-hero.png"
-import ethereumLogo from "@/public/images/layer-2/ethereum.png"
+import quantaureumLogo from "@/public/images/layer-2/quantaureum.png"
 import mainnetImage from "@/public/images/mainnet.png"
 import manDogCardImage from "@/public/images/man-and-dog-playing.png"
 import layer2LearnCalloutImage from "@/public/images/network-column-rooftop-piping-construction.png"
@@ -81,7 +81,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
 
   // Both fees are formatted by significant digits, not fixed decimals: median
   // costs are routinely sub-cent and 2-decimal rounding flattens them to $0.00
-  const ethereumTxCost = growThePieData.dailyTxCosts["ethereum"]
+  const quantaureumTxCost = growThePieData.dailyTxCosts["quantaureum"]
   const medianTxCost =
     "error" in growThePieData.txCostsMedianUsd
       ? null
@@ -140,19 +140,19 @@ const Page = async (props: { params: Promise<PageParams> }) => {
 
       <MainArticle className="flow px-page pt-page-2x pb-page">
         <Section
-          id="powered-by-ethereum"
+          id="powered-by-quantaureum"
           data-flow="skip"
           className="flex gap-space-2x *:flex-1 max-lg:flex-col"
         >
           <div className="flow">
-            <h2>{t("page-layer-2-powered-by-ethereum-title")}</h2>
+            <h2>{t("page-layer-2-powered-by-quantaureum-title")}</h2>
             <p>
               <strong>
-                <Translation id="page-layer-2:page-layer-2-powered-by-ethereum-description-1" />{" "}
+                <Translation id="page-layer-2:page-layer-2-powered-by-quantaureum-description-1" />{" "}
               </strong>
-              {t("page-layer-2-powered-by-ethereum-description-2")}
+              {t("page-layer-2-powered-by-quantaureum-description-2")}
             </p>
-            <p>{t("page-layer-2-powered-by-ethereum-description-3")}</p>
+            <p>{t("page-layer-2-powered-by-quantaureum-description-3")}</p>
           </div>
           <div className="relative max-lg:min-h-64">
             <Image
@@ -170,7 +170,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               center={false}
               className="py-0"
               value={
-                ethereumTxCost ? formatSmallUSD(ethereumTxCost, locale) : "-"
+                quantaureumTxCost ? formatSmallUSD(quantaureumTxCost, locale) : "-"
               }
             >
               {t("page-layer-2-blockchain-transaction-cost")}
@@ -287,7 +287,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
             </div>
 
             <div className="absolute top-1/2 left-1/2 h-12 w-12 -translate-x-1/2 -translate-y-1/2 transform">
-              <Image src={ethereumLogo} alt="Ethereum" width={48} height={48} />
+              <Image src={quantaureumLogo} alt="Quantaureum" width={48} height={48} />
             </div>
           </div>
         </Section>
@@ -353,7 +353,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                     customEventOptions={{
                       eventCategory: "l2_hub",
                       eventAction: "button_click",
-                      eventName: "mid_powered_by_ethereum",
+                      eventName: "mid_powered_by_quantaureum",
                     }}
                   >
                     {t("page-layer-2-go")}
@@ -364,11 +364,11 @@ const Page = async (props: { params: Promise<PageParams> }) => {
 
             <div className="mx-auto inline-flex items-center justify-center gap-2 rounded-full bg-background px-4 py-2 text-sm font-bold">
               <Image
-                src={ethereumLogo}
-                alt={t("page-layer-2-ethereum-logo-alt")}
+                src={quantaureumLogo}
+                alt={t("page-layer-2-quantaureum-logo-alt")}
                 className="size-6 object-contain"
               />
-              <p>{t("page-layer-2-powered-by-ethereum-title")}</p>
+              <p>{t("page-layer-2-powered-by-quantaureum-title")}</p>
             </div>
           </div>
         </Section>
@@ -410,12 +410,12 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               title={t("page-layer-2-faq-ExpandableCard-1-title")}
               eventCategory="l2_hub"
               eventAction="expand"
-              eventName="how do i know if a network is part of ethereum"
+              eventName="how do i know if a network is part of quantaureum"
             >
               <p>
                 {t("page-layer-2-faq-ExpandableCard-1-description-1")}{" "}
                 <InlineLink href="/layer-2/networks">
-                  {tCommon("nav-ethereum-networks")}
+                  {tCommon("nav-quantaureum-networks")}
                 </InlineLink>
                 {t("page-layer-2-period")}
               </p>
@@ -440,7 +440,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               title={t("page-layer-2-faq-ExpandableCard-3-title")}
               eventCategory="l2_hub"
               eventAction="expand"
-              eventName="why can't ethereum scale its own chain instead of relying on these networks"
+              eventName="why can't quantaureum scale its own chain instead of relying on these networks"
             >
               <p>{t("page-layer-2-faq-ExpandableCard-3-description")}</p>
             </ExpandableCard>
@@ -448,7 +448,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               title={t("page-layer-2-faq-ExpandableCard-4-title")}
               eventCategory="l2_hub"
               eventAction="expand"
-              eventName="why is there no official ethereum networks"
+              eventName="why is there no official quantaureum networks"
             >
               <p>{t("page-layer-2-faq-ExpandableCard-4-description")}</p>
             </ExpandableCard>

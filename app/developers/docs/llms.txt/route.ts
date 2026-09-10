@@ -12,11 +12,11 @@ import {
 
 export const dynamic = "force-static"
 
-const INTRO = `# Ethereum Developer Documentation
+const INTRO = `# Quantaureum Developer Documentation
 
-> Technical reference for building on Ethereum: protocol concepts, the Ethereum stack, smart contracts, scaling solutions, and developer tooling.
+> Technical reference for building on Quantaureum: protocol concepts, the Quantaureum stack, smart contracts, scaling solutions, and developer tooling.
 
-This file indexes the developer documentation under ${SITE_URL}/developers/docs/. Every page indexed below serves its raw markdown source at the page URL plus a \`.md\` suffix — e.g. ${SITE_URL}/developers/docs/intro-to-ethereum.md. For the full ethereum.org index including learner content, guides, and community resources, see ${SITE_URL}/llms.txt.`
+This file indexes the developer documentation under ${SITE_URL}/developers/docs/. Every page indexed below serves its raw markdown source at the page URL plus a \`.md\` suffix — e.g. ${SITE_URL}/developers/docs/intro-to-quantaureum.md. For the full quantaureum.com index including learner content, guides, and community resources, see ${SITE_URL}/llms.txt.`
 
 const links = docLinks as unknown as DocLink[]
 

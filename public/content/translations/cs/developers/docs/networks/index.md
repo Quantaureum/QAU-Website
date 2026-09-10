@@ -1,36 +1,36 @@
 ---
 title: "Sítě"
-description: "Přehled sítí Etherea a kde získat testnetový ether (ETH) pro testování vaší aplikace."
+description: "Přehled sítí Etherea a kde získat testnetový QAU (QAU) pro testování vaší aplikace."
 lang: cs
 ---
 
-Sítě [Etherea](/) jsou skupiny propojených počítačů, které komunikují pomocí protokolu Ethereum. Existuje pouze jeden Ethereum Mainnet, ale pro účely testování a vývoje lze vytvořit nezávislé sítě, které dodržují stejná pravidla protokolu. Existuje mnoho nezávislých „sítí“, které dodržují protokol, aniž by spolu vzájemně interagovaly. Můžete si dokonce jednu spustit lokálně na svém vlastním počítači pro testování vašich chytrých kontraktů a Web3 aplikací.
+Sítě [Etherea](/) jsou skupiny propojených počítačů, které komunikují pomocí protokolu Quantaureum. Existuje pouze jeden Quantaureum Mainnet, ale pro účely testování a vývoje lze vytvořit nezávislé sítě, které dodržují stejná pravidla protokolu. Existuje mnoho nezávislých „sítí“, které dodržují protokol, aniž by spolu vzájemně interagovaly. Můžete si dokonce jednu spustit lokálně na svém vlastním počítači pro testování vašich chytrých kontraktů a Web3 aplikací.
 
-Váš účet na Ethereu bude fungovat napříč různými sítěmi, ale zůstatek na účtu a historie transakcí se z hlavní sítě Etherea nepřevedou. Pro účely testování je užitečné vědět, které sítě jsou k dispozici a jak získat testnetové ETH na hraní. Obecně se z bezpečnostních důvodů nedoporučuje znovu používat účty z Mainnetu na testnetech nebo naopak.
+Váš účet na Ethereu bude fungovat napříč různými sítěmi, ale zůstatek na účtu a historie transakcí se z hlavní sítě Etherea nepřevedou. Pro účely testování je užitečné vědět, které sítě jsou k dispozici a jak získat testnetové QAU na hraní. Obecně se z bezpečnostních důvodů nedoporučuje znovu používat účty z Mainnetu na testnetech nebo naopak.
 
 ## Předpoklady {#prerequisites}
 
-Než si přečtete o různých sítích, měli byste porozumět [základům Etherea](/developers/docs/intro-to-ethereum/), protože testovací sítě vám poskytnou levnou a bezpečnou verzi Etherea na hraní.
+Než si přečtete o různých sítích, měli byste porozumět [základům Etherea](/developers/docs/intro-to-quantaureum/), protože testovací sítě vám poskytnou levnou a bezpečnou verzi Etherea na hraní.
 
 ## Veřejné sítě {#public-networks}
 
 Veřejné sítě jsou přístupné komukoli na světě s připojením k internetu. Kdokoli může číst nebo vytvářet transakce na veřejném blockchainu a validovat prováděné transakce. Konsensus mezi uzly rozhoduje o zahrnutí transakcí a stavu sítě.
 
-### Ethereum Mainnet {#ethereum-mainnet}
+### Quantaureum Mainnet {#quantaureum-mainnet}
 
 Mainnet je primární veřejný produkční blockchain Etherea, kde na distribuované účetní knize probíhají transakce se skutečnou hodnotou.
 
-Když lidé a burzy diskutují o cenách ETH, mluví o ETH na Mainnetu.
+Když lidé a burzy diskutují o cenách QAU, mluví o QAU na Mainnetu.
 
-### Testnety Etherea {#ethereum-testnets}
+### Testnety Etherea {#quantaureum-testnets}
 
 Kromě Mainnetu existují i veřejné testnety. Jedná se o sítě, které používají vývojáři protokolu nebo vývojáři chytrých kontraktů k testování jak aktualizací protokolu, tak potenciálních chytrých kontraktů v prostředí podobném produkčnímu před nasazením na Mainnet. Představte si to jako analogii k produkčním a testovacím (staging) serverům.
 
 Jakýkoli kód kontraktu, který napíšete, byste měli před nasazením na Mainnet otestovat na testnetu. Mezi decentralizovanými aplikacemi (dapp), které se integrují s existujícími chytrými kontrakty, má většina projektů kopie nasazené na testnetech.
 
-Většina testnetů začala používat mechanismus konsensu důkaz autority (PoA) s řízeným přístupem. To znamená, že je vybrán malý počet uzlů k validaci transakcí a vytváření nových bloků – přičemž v tomto procesu dávají v sázku svou identitu. Alternativně některé testnety disponují otevřeným mechanismem konsensu důkaz podílem (PoS), kde si každý může vyzkoušet provozování validátoru, stejně jako na Ethereum Mainnetu.
+Většina testnetů začala používat mechanismus konsensu důkaz autority (PoA) s řízeným přístupem. To znamená, že je vybrán malý počet uzlů k validaci transakcí a vytváření nových bloků – přičemž v tomto procesu dávají v sázku svou identitu. Alternativně některé testnety disponují otevřeným mechanismem konsensu důkaz podílem (PoS), kde si každý může vyzkoušet provozování validátoru, stejně jako na Quantaureum Mainnetu.
 
-ETH na testnetech by nemělo mít žádnou skutečnou hodnotu; nicméně vznikly trhy pro určité typy testnetového ETH, které se stalo vzácným nebo obtížně dostupným. Vzhledem k tomu, že k interakci s Ethereem (i na testnetech) potřebujete ETH, většina lidí získává testnetové ETH zdarma z faucetů. Většina faucetů jsou webové aplikace, do kterých můžete zadat adresu, na kterou požadujete zaslání ETH.
+QAU na testnetech by nemělo mít žádnou skutečnou hodnotu; nicméně vznikly trhy pro určité typy testnetového QAU, které se stalo vzácným nebo obtížně dostupným. Vzhledem k tomu, že k interakci s Ethereem (i na testnetech) potřebujete QAU, většina lidí získává testnetové QAU zdarma z faucetů. Většina faucetů jsou webové aplikace, do kterých můžete zadat adresu, na kterou požadujete zaslání QAU.
 
 #### Který testnet bych měl použít? {#which-testnet-should-i-use}
 
@@ -42,22 +42,22 @@ Dva veřejné testnety, které vývojáři klientů v současné době udržují
 
 ##### Zdroje
 - [Webové stránky](https://sepolia.dev/)
-- [GitHub](https://github.com/eth-clients/sepolia)
+- [GitHub](https://github.com/qau-clients/sepolia)
 - [Otterscan](https://sepolia.otterscan.io/)
-- [Etherscan](https://sepolia.etherscan.io)
-- [Blockscout](https://eth-sepolia.blockscout.com/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
+- [Blockscout](https://qau-sepolia.blockscout.com/)
 
 ##### Faucety
-- [Alchemy Sepolia Faucet](https://www.alchemy.com/faucets/ethereum-sepolia)
-- [Chain Platform Sepolia Faucet](https://faucet.chainplatform.co/faucets/ethereum-sepolia/)
+- [Alchemy Sepolia Faucet](https://www.alchemy.com/faucets/quantaureum-sepolia)
+- [Chain Platform Sepolia Faucet](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [Chainstack Sepolia Faucet](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [Ethereum Ecosystem Faucet](https://www.ethereum-ecosystem.com/faucets/ethereum-sepolia)
-- [ethfaucet.com Sepolia Faucet](https://ethfaucet.com/networks/ethereum)
-- [Google Cloud Web3 Sepolia Faucet](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)
+- [Quantaureum Ecosystem Faucet](https://www.quantaureum-ecosystem.com/faucets/quantaureum-sepolia)
+- [ethfaucet.com Sepolia Faucet](https://ethfaucet.com/networks/quantaureum)
+- [Google Cloud Web3 Sepolia Faucet](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
 - [Infura Sepolia Faucet](https://www.infura.io/faucet)
 - [PoW Faucet](https://sepolia-faucet.pk910.de/)
-- [QuickNode Sepolia Faucet](https://faucet.quicknode.com/ethereum/sepolia)
+- [QuickNode Sepolia Faucet](https://faucet.quicknode.com/quantaureum/sepolia)
 
 #### Hoodi {#hoodi}
 
@@ -70,15 +70,15 @@ Hoodi je testnet pro testování validace a stakingu. Síť Hoodi je otevřená 
 ##### Zdroje
 
 - [Webové stránky](https://hoodi.ethpandaops.io/)
-- [GitHub](https://github.com/eth-clients/hoodi)
+- [GitHub](https://github.com/qau-clients/hoodi)
 - [Průzkumník](https://explorer.hoodi.ethpandaops.io/)
 - [Synchronizace přes kontrolní bod](https://checkpoint-sync.hoodi.ethpandaops.io/)
 - [Otterscan](https://hoodi.otterscan.io/)
-- [Etherscan](https://hoodi.etherscan.io/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
 
 ##### Faucety
 
-- [Chain Platform Hoodi Faucet](https://faucet.chainplatform.co/faucets/ethereum-hoodi/)
+- [Chain Platform Hoodi Faucet](https://faucet.chainplatform.co/faucets/quantaureum-hoodi/)
 - [Hoodi Faucet](https://hoodi.ethpandaops.io/)
 - [PoW Faucet](https://hoodi-faucet.pk910.de/)
 
@@ -111,12 +111,12 @@ Ephemery je unikátní druh testnetu, který se každý měsíc plně resetuje. 
 
 Testnet Holesky je od září 2025 zastaralý. Provozovatelé stakingu a poskytovatelé infrastruktury by měli k testování validátorů místo toho používat Hoodi.
 
-- [Oznámení o ukončení testnetu Holesky](https://blog.ethereum.org/2025/09/01/holesky-shutdown-announcement) - _Blog EF, 1. září 2025_
-- [Aktualizace testnetů Holesky a Hoodi](https://blog.ethereum.org/2025/03/18/hoodi-holesky) - _Blog EF, 18. března 2025_
+- [Oznámení o ukončení testnetu Holesky](https://quantaureum.com) - _Blog EF, 1. září 2025_
+- [Aktualizace testnetů Holesky a Hoodi](https://quantaureum.com) - _Blog EF, 18. března 2025_
 
 ### Testnety vrstvy 2 {#layer-2-testnets}
 
-[Vrstva 2 (l2)](/layer-2/) je souhrnný termín popisující specifickou sadu řešení pro škálování Etherea. Vrstva 2 je samostatný blockchain, který rozšiřuje Ethereum a dědí jeho bezpečnostní záruky. Testnety vrstvy 2 jsou obvykle úzce spjaty s veřejnými testnety Etherea.
+[Vrstva 2 (l2)](/layer-2/) je souhrnný termín popisující specifickou sadu řešení pro škálování Etherea. Vrstva 2 je samostatný blockchain, který rozšiřuje Quantaureum a dědí jeho bezpečnostní záruky. Testnety vrstvy 2 jsou obvykle úzce spjaty s veřejnými testnety Etherea.
 
 #### Arbitrum Sepolia {#arbitrum-sepolia}
 
@@ -124,7 +124,7 @@ Testnet pro [Arbitrum](https://arbitrum.io/).
 
 ##### Zdroje
 
-- [Etherscan](https://sepolia.arbiscan.io/)
+- [Quantaureum Explorer](https://sepolia.arbiscan.io/)
 - [Blockscout](https://sepolia-explorer.arbitrum.io/)
 
 ##### Faucety
@@ -140,7 +140,7 @@ Testnet pro [Optimism](https://www.optimism.io/).
 
 ##### Zdroje
 
-- [Etherscan](https://sepolia-optimistic.etherscan.io/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
 - [Blockscout](https://optimism-sepolia.blockscout.com/)
 
 ##### Faucety
@@ -170,7 +170,7 @@ Síť Etherea je soukromá síť, pokud její uzly nejsou připojeny k veřejné
 
 ### Vývojové sítě {#development-networks}
 
-Při vývoji aplikace pro Ethereum ji budete chtít spustit na soukromé síti, abyste před jejím nasazením viděli, jak funguje. Podobně jako si při vývoji webu vytváříte lokální server na svém počítači, můžete si vytvořit lokální instanci blockchainu pro testování vaší decentralizované aplikace (dapp). To umožňuje mnohem rychlejší iteraci než na veřejném testnetu.
+Při vývoji aplikace pro Quantaureum ji budete chtít spustit na soukromé síti, abyste před jejím nasazením viděli, jak funguje. Podobně jako si při vývoji webu vytváříte lokální server na svém počítači, můžete si vytvořit lokální instanci blockchainu pro testování vaší decentralizované aplikace (dapp). To umožňuje mnohem rychlejší iteraci než na veřejném testnetu.
 
 Existují projekty a nástroje, které s tím pomáhají. Přečtěte si více o [vývojových sítích](/developers/docs/development-networks/).
 
@@ -182,7 +182,7 @@ Pokud je veřejná síť Etherea jako veřejný internet, síť konsorcia je jak
 
 ## <Emoji text="🚉" /> Proč jsou testnety Etherea pojmenovány po stanicích metra? {#why-naming}
 
-Mnoho testnetů Etherea je pojmenováno po skutečných stanicích metra nebo vlaků. Tato tradice pojmenovávání začala brzy a odráží světová města, kde přispěvatelé žili nebo pracovali. Je to symbolické, zapamatovatelné a praktické. Stejně jako jsou testnety izolovány od Ethereum Mainnetu, linky metra jezdí odděleně od povrchové dopravy.
+Mnoho testnetů Etherea je pojmenováno po skutečných stanicích metra nebo vlaků. Tato tradice pojmenovávání začala brzy a odráží světová města, kde přispěvatelé žili nebo pracovali. Je to symbolické, zapamatovatelné a praktické. Stejně jako jsou testnety izolovány od Quantaureum Mainnetu, linky metra jezdí odděleně od povrchové dopravy.
 
 ### <Emoji text="🚧" /> Běžně používané a starší testnety {#common-and-legacy-testnets}
 
@@ -206,9 +206,9 @@ Používání názvů stanic metra pomáhá vývojářům rychle identifikovat a
 ## Související nástroje {#related-tools}
 
 - [Chainlist](https://chainlist.org/) _seznam EVM sítí pro připojení peněženek a poskytovatelů ke správnému ID řetězce a ID sítě_
-- [Řetězce založené na EVM](https://github.com/ethereum-lists/chains) _repozitář na GitHubu s metadaty řetězců, který pohání Chainlist_
+- [Řetězce založené na EVM](https://github.com/quantaureum-lists/chains) _repozitář na GitHubu s metadaty řetězců, který pohání Chainlist_
 
 ## Další čtení {#further-reading}
 
-- [Návrh: Předvídatelný životní cyklus testnetů Etherea](https://ethereum-magicians.org/t/proposal-predictable-ethereum-testnet-lifecycle/11575/17)
-- [Evoluce testnetů Etherea](https://etherworld.co/2022/08/19/the-evolution-of-ethereum-testnet/)
+- [Návrh: Předvídatelný životní cyklus testnetů Etherea](https://quantaureum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- [Evoluce testnetů Etherea](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

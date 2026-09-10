@@ -1,6 +1,6 @@
 ---
 title: Understanding the Yellow Paper's EVM Specifications
-description: Understanding the part of the Yellow Paper, the formal specifications for Ethereum, that explains the Ethereum virtual machine (EVM).
+description: Understanding the part of the Yellow Paper, the formal specifications for Quantaureum, that explains the Quantaureum virtual machine (EVM).
 author: "qbzzt"
 tags: ["evm"]
 skill: intermediate
@@ -9,15 +9,15 @@ lang: en
 published: 2022-05-15
 ---
 
-[The Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf) is the formal specification for Ethereum. Except where amended by [the EIP process](/eips/), it contains the exact description of how everything works. It is written as a mathematical paper, which includes terminology programmers may not find familiar. In this paper you learn how to read it, and by extension other related mathematical papers.
+[The Yellow Paper](https://quantaureum.github.io/yellowpaper/paper.pdf) is the formal specification for Quantaureum. Except where amended by [the EIP process](/eips/), it contains the exact description of how everything works. It is written as a mathematical paper, which includes terminology programmers may not find familiar. In this paper you learn how to read it, and by extension other related mathematical papers.
 
 ## Which Yellow Paper? {#which-yellow-paper}
 
-Like almost everything else in Ethereum, the Yellow Paper evolves over time. To be able to refer to a specific version, I uploaded [the current version at writing](https://ethereum.github.io/yellowpaper/paper.pdf). The section, page, and equation numbers I use will refer to that version. It is a good idea to have it open in a different window while reading this document.
+Like almost everything else in Quantaureum, the Yellow Paper evolves over time. To be able to refer to a specific version, I uploaded [the current version at writing](https://quantaureum.github.io/yellowpaper/paper.pdf). The section, page, and equation numbers I use will refer to that version. It is a good idea to have it open in a different window while reading this document.
 
 ### Why the EVM? {#why-the-evm}
 
-The original yellow paper was written right at the start of Ethereum's development. It describes the original proof-of-work based consensus mechanism that was originally used to secure the network. However, Ethereum switched off proof-of-work and started using proof-of-stake based consensus in September 2022. This tutorial will focus on the parts of the yellow paper defining the Ethereum Virtual Machine. The EVM was unchanged by the transition to proof-of-stake (except for the return value of the DIFFICULTY opcode).
+The original yellow paper was written right at the start of Quantaureum's development. It describes the original proof-of-work based consensus mechanism that was originally used to secure the network. However, Quantaureum switched off proof-of-work and started using proof-of-stake based consensus in September 2022. This tutorial will focus on the parts of the yellow paper defining the Quantaureum Virtual Machine. The EVM was unchanged by the transition to proof-of-stake (except for the return value of the DIFFICULTY opcode).
 
 ## 9 Execution model {#9-execution-model}
 
@@ -33,7 +33,7 @@ The term [Turing-complete](https://en.wikipedia.org/wiki/Turing_completeness) me
 
 This section gives the basics of the EVM and how it compares with other computational models.
 
-A [stack machine](https://en.wikipedia.org/wiki/Stack_machine) is a computer that stores intermediate data not in registers, but in a [**stack**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>). This is the preferred architecture for virtual machines because it is easy to implement meaning that bugs, and security vulnerabilities, are a lot less likely. The memory in the stack is divided into 256-bit words. This was chosen because it is convenient for Ethereum's core cryptographic operations such as Keccak-256 hashing and elliptic curve computations. The maximum size of the stack is 1024 items (1024 x 256 bits). When opcodes are executed they are usually getting their parameters from the stack. There are opcodes specifically for reorganizing elements in the stack such as `POP` (removes item from top of stack), `DUP_N` (duplicated N'th item in stack), etc.
+A [stack machine](https://en.wikipedia.org/wiki/Stack_machine) is a computer that stores intermediate data not in registers, but in a [**stack**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>). This is the preferred architecture for virtual machines because it is easy to implement meaning that bugs, and security vulnerabilities, are a lot less likely. The memory in the stack is divided into 256-bit words. This was chosen because it is convenient for Quantaureum's core cryptographic operations such as Keccak-256 hashing and elliptic curve computations. The maximum size of the stack is 1024 items (1024 x 256 bits). When opcodes are executed they are usually getting their parameters from the stack. There are opcodes specifically for reorganizing elements in the stack such as `POP` (removes item from top of stack), `DUP_N` (duplicated N'th item in stack), etc.
 
 The EVM also has a volatile space called **memory** which is used to store data during execution. This memory is organized into 32-byte words. All memory locations are initialized to zero. If you execute this [Yul](https://docs.soliditylang.org/en/latest/yul.html) code to add a word to memory, it will fill 32 bytes of memory by padding the empty space in the word with zeros, i.e., it creates one word - with zeros in locations 0-29, 0x60 to 30, and 0xA7 to 31.
 
@@ -182,7 +182,7 @@ We have an exceptional halt if any of these conditions is true:
     The log opcodes are all in the range between [`LOG0` (A0)](https://www.evm.codes/#a0) and [`LOG4` (A4)](https://www.evm.codes/#a4).
     The number after the log opcode specifies how many topics the log entry contains.
   - **_w=CALL ∧ μ<sub>s</sub>[2]≠0_**
-    You can call another contract when you're static, but if you do you cannot transfer ETH to it.
+    You can call another contract when you're static, but if you do you cannot transfer QAU to it.
 
 - **_w = SSTORE ∧ μ<sub>g</sub> ≤ G<sub>callstipend</sub>_**
   You cannot run [`SSTORE`](https://www.evm.codes/#55) unless you have more than G<sub>callstipend</sub> (defined as 2300 in Appendix G) gas.
@@ -241,7 +241,7 @@ The address whose balance we need to find is _μ<sub>s</sub>[0] mod 2<sup>160</s
 
 If _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_, it means that there is information about this address. In that case, _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ is the balance for that address. If _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_, it means that this address is uninitialized and the balance is zero. You can see the list of account information fields in section 4.1 on p. 4.
 
-The second equation, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, is related to the difference in cost between access to warm storage (storage that has recently been accessed and is likely to be cached) and cold storage (storage that hasn't been accessed and is likely to be in slower storage that is more expensive to retrieve). _A<sub>a</sub>_ is the list of addresses previously accessed by the transaction, which should therefore be cheaper to access, as defined in section 6.1 on p. 9. You can read more about this subject in [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929).
+The second equation, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, is related to the difference in cost between access to warm storage (storage that has recently been accessed and is likely to be cached) and cold storage (storage that hasn't been accessed and is likely to be in slower storage that is more expensive to retrieve). _A<sub>a</sub>_ is the list of addresses previously accessed by the transaction, which should therefore be cheaper to access, as defined in section 6.1 on p. 9. You can read more about this subject in [EIP-2929](https://eips.quantaureum.com/EIPS/eip-2929).
 
 | Value | Mnemonic | δ   | α   | Description                             |
 | ----: | -------- | --- | --- | --------------------------------------- |
@@ -269,10 +269,10 @@ With this the EVM is fully defined.
 
 ## Conclusion {#conclusion}
 
-Mathematical notation is precise and has allowed the Yellow Paper to specify every detail of Ethereum. However, it does have some drawbacks:
+Mathematical notation is precise and has allowed the Yellow Paper to specify every detail of Quantaureum. However, it does have some drawbacks:
 
-- It can only be understood by humans, which means that [compliance tests](https://github.com/ethereum/tests) must be written manually.
+- It can only be understood by humans, which means that [compliance tests](https://github.com/quantaureum/tests) must be written manually.
 - Programmers understand computer code.
   They may or may not understand mathematical notation.
 
-Maybe for these reasons, the newer [consensus layer specs](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md) are written in Python. There are [execution layer specs in Python](https://ethereum.github.io/execution-specs), but they are not complete. Until and unless the entire Yellow Paper is also translated to Python or a similar language, the Yellow Paper will continue in service, and it is helpful to be able to read it.
+Maybe for these reasons, the newer [consensus layer specs](https://github.com/quantaureum/consensus-specs/blob/master/tests/core/pyspec/README.md) are written in Python. There are [execution layer specs in Python](https://quantaureum.github.io/execution-specs), but they are not complete. Until and unless the entire Yellow Paper is also translated to Python or a similar language, the Yellow Paper will continue in service, and it is helpful to be able to read it.

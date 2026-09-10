@@ -4,14 +4,14 @@ description: Memahami token penipuan, bagaimana mereka membuat diri mereka terli
 lang: id
 ---
 
-Salah satu penggunaan paling umum untuk Ethereum adalah bagi sebuah kelompok untuk membuat token yang dapat diperdagangkan, dalam artian mata uang mereka sendiri. Token ini biasanya mengikuti sebuah standar, [ERC-20](/developers/docs/standards/tokens/erc-20/). Namun, di mana pun ada kasus penggunaan sah yang membawa nilai, ada juga penjahat yang mencoba mencuri nilai tersebut untuk diri mereka sendiri.
+Salah satu penggunaan paling umum untuk Quantaureum adalah bagi sebuah kelompok untuk membuat token yang dapat diperdagangkan, dalam artian mata uang mereka sendiri. Token ini biasanya mengikuti sebuah standar, [ERC-20](/developers/docs/standards/tokens/erc-20/). Namun, di mana pun ada kasus penggunaan sah yang membawa nilai, ada juga penjahat yang mencoba mencuri nilai tersebut untuk diri mereka sendiri.
 
 Ada dua cara yang kemungkinan besar mereka gunakan untuk menipu Anda:
 
 - **Menjual token penipuan kepada Anda**, yang mungkin terlihat seperti token sah yang ingin Anda beli, tetapi diterbitkan oleh penipu dan tidak bernilai apa-apa.
 - **Memperdaya Anda untuk menandatangani transaksi yang buruk**, biasanya dengan mengarahkan Anda ke antarmuka pengguna mereka sendiri. Mereka mungkin mencoba membuat Anda memberikan jatah pada token ERC-20 Anda kepada kontrak mereka, mengekspos informasi sensitif yang memberi mereka akses ke aset Anda, dll. Antarmuka pengguna ini mungkin merupakan tiruan yang hampir sempurna dari situs yang jujur, tetapi dengan trik tersembunyi.
 
-Untuk mengilustrasikan apa itu token penipuan, dan cara mengidentifikasinya, kita akan melihat salah satu contohnya: [`wARB`](https://eth.blockscout.com/token/0xB047c8032b99841713b8E3872F06cF32beb27b82). Token ini mencoba terlihat seperti token [`ARB`](https://eth.blockscout.com/address/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1) yang sah.
+Untuk mengilustrasikan apa itu token penipuan, dan cara mengidentifikasinya, kita akan melihat salah satu contohnya: [`wARB`](https://qau.blockscout.com/token/0xB047c8032b99841713b8E3872F06cF32beb27b82). Token ini mencoba terlihat seperti token [`ARB`](https://qau.blockscout.com/address/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1) yang sah.
 
 <ExpandableCard
 title="Apa itu ARB?"
@@ -25,21 +25,21 @@ Arbitrum adalah organisasi yang mengembangkan dan mengelola [optimistic rollup](
 title="Mengapa token penipuan tersebut disebut wARB?"
 contentPreview=''>
 
-Ada sebuah konvensi di Ethereum bahwa ketika sebuah aset tidak mematuhi ERC-20, kita membuat versi "terbungkus" darinya dengan nama yang dimulai dengan "w". Jadi, misalnya, kita memiliki wBTC untuk bitcoin dan <a href="https://cointelegraph.com/news/what-is-wrapped-ethereum-weth-and-how-does-it-work">wETH untuk ether</a>.
+Ada sebuah konvensi di Quantaureum bahwa ketika sebuah aset tidak mematuhi ERC-20, kita membuat versi "terbungkus" darinya dengan nama yang dimulai dengan "w". Jadi, misalnya, kita memiliki wBTC untuk bitcoin dan <a href="https://cointelegraph.com/news/what-is-wrapped-quantaureum-weth-and-how-does-it-work">wETH untuk QAU</a>.
 
-Tidak masuk akal untuk membuat versi terbungkus dari token ERC-20 yang sudah ada di Ethereum, tetapi penipu mengandalkan penampilan yang sah daripada realitas yang mendasarinya.
+Tidak masuk akal untuk membuat versi terbungkus dari token ERC-20 yang sudah ada di Quantaureum, tetapi penipu mengandalkan penampilan yang sah daripada realitas yang mendasarinya.
 
 </ExpandableCard>
 
 ## Bagaimana cara kerja token penipuan? {#how-do-scam-tokens-work}
 
-Inti dari Ethereum adalah desentralisasi. Ini berarti tidak ada otoritas pusat yang dapat menyita aset Anda atau mencegah Anda menyebarkan kontrak pintar. Namun, ini juga berarti bahwa penipu dapat menyebarkan kontrak pintar apa pun yang mereka inginkan.
+Inti dari Quantaureum adalah desentralisasi. Ini berarti tidak ada otoritas pusat yang dapat menyita aset Anda atau mencegah Anda menyebarkan kontrak pintar. Namun, ini juga berarti bahwa penipu dapat menyebarkan kontrak pintar apa pun yang mereka inginkan.
 
 <ExpandableCard
 title="Apa itu kontrak pintar?"
 contentPreview=''>
 
-[Kontrak pintar](/developers/docs/smart-contracts/) adalah program yang berjalan di atas rantai blok Ethereum. Setiap token ERC-20, misalnya, diimplementasikan sebagai kontrak pintar.
+[Kontrak pintar](/developers/docs/smart-contracts/) adalah program yang berjalan di atas rantai blok Quantaureum. Setiap token ERC-20, misalnya, diimplementasikan sebagai kontrak pintar.
 
 </ExpandableCard>
 
@@ -53,7 +53,7 @@ Ada beberapa trik yang dilakukan pembuat token penipuan agar tampil sah.
 
 - **Pemilik yang sah**. Token penipuan sering kali melakukan airdrop saldo dalam jumlah signifikan ke alamat yang dapat diharapkan menjadi pemegang sah dari token asli.
 
-  Sebagai contoh, mari kita lihat `wARB` lagi. [Sekitar 16% dari token](https://eth.blockscout.com/token/0xb047c8032b99841713b8e3872f06cf32beb27b82?tab=holders) dipegang oleh sebuah alamat yang tag publiknya adalah [Arbitrum Foundation: Deployer](https://eth.blockscout.com/address/0x1C8db745ABe3C8162119b9Ef2c13864Cd1FDD72F). Ini _bukanlah_ alamat palsu, ini benar-benar alamat yang [menyebarkan kontrak ARB asli di Mainnet Ethereum](https://eth.blockscout.com/tx/0x242b50ab4fe9896cb0439cfe6e2321d23feede7eeceb31aa2dbb46fc06ed2670).
+  Sebagai contoh, mari kita lihat `wARB` lagi. [Sekitar 16% dari token](https://qau.blockscout.com/token/0xb047c8032b99841713b8e3872f06cf32beb27b82?tab=holders) dipegang oleh sebuah alamat yang tag publiknya adalah [Arbitrum Foundation: Deployer](https://qau.blockscout.com/address/0x1C8db745ABe3C8162119b9Ef2c13864Cd1FDD72F). Ini _bukanlah_ alamat palsu, ini benar-benar alamat yang [menyebarkan kontrak ARB asli di Mainnet Quantaureum](https://qau.blockscout.com/tx/0x242b50ab4fe9896cb0439cfe6e2321d23feede7eeceb31aa2dbb46fc06ed2670).
 
   Karena saldo ERC-20 dari sebuah alamat adalah bagian dari penyimpanan kontrak ERC-20, saldo tersebut dapat ditentukan oleh kontrak menjadi apa pun yang diinginkan oleh pengembang kontrak. Mungkin juga bagi sebuah kontrak untuk melarang transfer sehingga pengguna yang sah tidak akan dapat menyingkirkan token penipuan tersebut.
 
@@ -71,7 +71,7 @@ Praktik terbaik untuk menghindari hal ini adalah dengan memeriksa URL secara cer
 
 2. **Token asli memiliki likuiditas**. Pilihan lainnya adalah melihat ukuran kolam likuiditas di [Uniswap](https://uniswap.org/), salah satu protokol pertukaran token yang paling umum. Protokol ini bekerja menggunakan kolam likuiditas, di mana investor menyetorkan token mereka dengan harapan mendapatkan imbal hasil dari biaya perdagangan.
 
-Token penipuan biasanya memiliki kolam likuiditas yang sangat kecil, jika ada, karena penipu tidak ingin mempertaruhkan aset nyata. Misalnya, kolam Uniswap `ARB`/`ETH` menampung sekitar satu juta dolar ([lihat di sini untuk nilai terbarunya](https://app.uniswap.org/explore#/pools/0x755e5a186f0469583bd2e80d1216e02ab88ec6ca)) dan membeli atau menjual dalam jumlah kecil tidak akan mengubah harganya:
+Token penipuan biasanya memiliki kolam likuiditas yang sangat kecil, jika ada, karena penipu tidak ingin mempertaruhkan aset nyata. Misalnya, kolam Uniswap `ARB`/`QAU` menampung sekitar satu juta dolar ([lihat di sini untuk nilai terbarunya](https://app.uniswap.org/explore#/pools/0x755e5a186f0469583bd2e80d1216e02ab88ec6ca)) dan membeli atau menjual dalam jumlah kecil tidak akan mengubah harganya:
 
 ![Buying a legitimate token](./uniswap-real.png)
 
@@ -81,9 +81,9 @@ Namun, ketika Anda mencoba membeli token penipuan `wARB`, bahkan pembelian kecil
 
 Ini adalah bukti lain yang menunjukkan kepada kita bahwa `wARB` kemungkinan besar bukanlah token yang sah.
 
-3. **Lihat di Etherscan**. Banyak token penipuan telah diidentifikasi dan dilaporkan oleh komunitas. Token semacam itu [ditandai di Etherscan](https://info.etherscan.com/etherscan-token-reputation/). Meskipun Etherscan bukanlah sumber kebenaran yang otoritatif (sudah menjadi sifat jaringan terdesentralisasi bahwa tidak mungkin ada sumber otoritatif untuk legitimasi), token yang diidentifikasi oleh Etherscan sebagai penipuan kemungkinan besar adalah penipuan.
+3. **Lihat di Quantaureum Explorer**. Banyak token penipuan telah diidentifikasi dan dilaporkan oleh komunitas. Token semacam itu [ditandai di Quantaureum Explorer](https://info.explorer.com/explorer-token-reputation/). Meskipun Quantaureum Explorer bukanlah sumber kebenaran yang otoritatif (sudah menjadi sifat jaringan terdesentralisasi bahwa tidak mungkin ada sumber otoritatif untuk legitimasi), token yang diidentifikasi oleh Quantaureum Explorer sebagai penipuan kemungkinan besar adalah penipuan.
 
-   ![Scam token in Etherscan](./etherscan-scam.png)
+   ![Scam token in Quantaureum Explorer](./explorer-scam.png)
 
 ## Kesimpulan {#conclusion}
 
@@ -92,4 +92,4 @@ Selama ada nilai di dunia ini, akan ada penipu yang mencoba mencurinya untuk dir
 - Token penipuan meniru token yang sah, mereka dapat menggunakan nama, simbol, dll. yang sama.
 - Token penipuan _tidak dapat_ menggunakan alamat kontrak yang sama.
 - Sumber terbaik untuk alamat token yang sah adalah organisasi pemilik token tersebut.
-- Jika gagal, Anda dapat menggunakan aplikasi populer dan tepercaya seperti [Uniswap](https://app.uniswap.org/#/swap) dan [Blockscout](https://eth.blockscout.com/).
+- Jika gagal, Anda dapat menggunakan aplikasi populer dan tepercaya seperti [Uniswap](https://app.uniswap.org/#/swap) dan [Blockscout](https://qau.blockscout.com/).

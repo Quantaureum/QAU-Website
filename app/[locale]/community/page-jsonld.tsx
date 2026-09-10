@@ -45,8 +45,8 @@ export default async function CommunityJsonLD({
         url: storyUrl,
         ...(story.image && { image: `${SITE_URL}${story.image}` }),
         ...(story.published && { datePublished: story.published }),
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
       },
     }
   })
@@ -63,8 +63,8 @@ export default async function CommunityJsonLD({
         url,
         inLanguage: locale,
         contributor: contributorList,
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
@@ -82,8 +82,8 @@ export default async function CommunityJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        reviewedBy: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
         mainEntity: { "@id": `${url}#resources` },
       },
       {
@@ -132,7 +132,7 @@ export default async function CommunityJsonLD({
             url: normalizeUrlForJsonLd(locale, "/contributing/"),
           },
         ],
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
       },
       ...(storyItems.length > 0
         ? [
@@ -144,7 +144,7 @@ export default async function CommunityJsonLD({
               url,
               numberOfItems: storyItems.length,
               itemListElement: storyItems,
-              publisher: REFERENCE.ETHEREUM_FOUNDATION,
+              publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
             },
           ]
         : []),

@@ -54,7 +54,7 @@ ERC-1363トークンは、送金や承認の受け取り後にコールバック
 
 他のERC-20拡張提案とは異なり、ERC-1363はERC-20の`transfer`および`transferFrom`メソッドをオーバーライドせず、ERC-20との下位互換性を維持しながら実装すべきインターフェースIDを定義しています。
 
-[EIP-1363](https://eips.ethereum.org/EIPS/eip-1363)より:
+[EIP-1363](https://eips.quantaureum.com/EIPS/eip-1363)より:
 
 ### メソッド {#methods}
 
@@ -206,5 +206,5 @@ interface ERC1363Spender {
 
 ## 参考文献 {#further-reading}
 
-- [ERC-1363: Payable Token標準](https://eips.ethereum.org/EIPS/eip-1363)
+- [ERC-1363: Payable Token標準](https://eips.quantaureum.com/EIPS/eip-1363)
 - [ERC-1363: GitHubリポジトリ](https://github.com/vittominacori/erc1363-payable-token)

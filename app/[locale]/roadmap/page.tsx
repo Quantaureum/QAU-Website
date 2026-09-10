@@ -50,7 +50,7 @@ import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 import ReleaseCarousel from "./_components/ReleaseCarousel"
 import RoadmapPageJsonLD from "./page-jsonld"
 
-import ethBlocksImg from "@/public/images/developers-eth-blocks.png"
+import qauBlocksImg from "@/public/images/developers-qau-blocks.png"
 import communityHeroImg from "@/public/images/heroes/community-hero.png"
 import communityHeroPortraitImg from "@/public/images/heroes/community-hero-portrait.png"
 import roadmapHeroImg from "@/public/images/heroes/roadmap-hub-hero.jpg"
@@ -305,7 +305,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
           >
             <div className="grid place-items-center p-space lg:sticky lg:top-24">
               <Image
-                src={ethBlocksImg}
+                src={qauBlocksImg}
                 alt={t("page-roadmap-blocks-alt")}
                 className="max-h-68 w-auto object-contain lg:max-h-128"
                 sizes="(max-width: 992px) calc(100vw - 64px), (max-width: 1536px) 50vw, 720px"

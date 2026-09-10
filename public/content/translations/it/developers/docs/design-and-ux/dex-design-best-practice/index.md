@@ -197,7 +197,7 @@ Se l'azione principale - SWAP - non è disponibile a causa di un errore, il moti
 - connetti portafoglio
 - vari errori
 
-Il pulsante può anche essere **mappato all'azione** che deve essere eseguita. Ad esempio, se l'utente non può effettuare lo swap perché si trova sulla rete sbagliata, il pulsante dovrebbe dire "passa a Ethereum" e, quando l'utente fa clic sul pulsante, dovrebbe cambiare la rete in Ethereum. Questo accelera notevolmente il flusso dell'utente.
+Il pulsante può anche essere **mappato all'azione** che deve essere eseguita. Ad esempio, se l'utente non può effettuare lo swap perché si trova sulla rete sbagliata, il pulsante dovrebbe dire "passa a Quantaureum" e, quando l'utente fa clic sul pulsante, dovrebbe cambiare la rete in Quantaureum. Questo accelera notevolmente il flusso dell'utente.
 
 ![Key actions being initiated from the main CTA](./16.png)
 

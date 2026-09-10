@@ -15,11 +15,11 @@
     "hash": "6a9b2131",
     "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAACXBIWXMAAAPoAAAD6AG1e1JrAAABqElEQVR4nIWP3StkYRzHf2VviRu5IEqKXKxSLrhQKOXChdx5abxseYkxU14mpfwFmwsvkZdoVzucmWWwbXbFtkqK/0CUG8yEOex5ZuY4vr7nDLncX32e53fO83x+33NEZBLvzEBSFyFpJHMZkvsFUvgNUrIOKQ9CarYgtcQ1B+lZg/T+oSMTXKbJbJIP8xywxAErkLyvkCJ/ckDFd0h1CFL/A9L0C9K2B+k6sAd85jJFODWFyRkUs5icQzl/FfJRg5QxvXIzmd7wE9LyOzng0749gJ8tFNMpZDOtgGnFlEoplVOqolTH1MZdSDPFTkreQ4jnL8RNLs51zMwdo7XLj27PBly9Gtr6NHS4XxnQ0OkNoIO0ezX0jIbg4j67eoKzGx1imgYCoVMMjGjwjW/A4wuw98M9vOb0Nu6hdQevT8PwWBD9g35owRMoZUCuI1E8GgZiMR2WZTmYiTjeSqkHPD2ZTp9IxJxzu/7RuaIr4bsoovojwuEIDBXjJROGoWCaFkULuv7AZwPxuOns9nsbpRTudf5C5PbOObDrGf+v59dLO0c3WNi+xAtCmInR7RkMVwAAAABJRU5ErkJggg=="
   },
-  "/content/developers/tutorials/how-to-write-and-deploy-an-nft/etherscan-sepoila-contract-creation.png": {
+  "/content/developers/tutorials/how-to-write-and-deploy-an-nft/explorer-sepoila-contract-creation.png": {
     "hash": "c8218aae",
     "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAICAYAAADwdn+XAAAACXBIWXMAABYlAAAWJQFJUiTwAAABtElEQVR4nGWQz0vTcRjHP0f/BA8OkggveUs86W6BdCiWHdRMF0gOdOQlKWERBeokCtpB0FiS9c0vLt3Xb4PRflhM92WHaGWCOIeIujZFbM4gdL7y8wm6eHgdns/zed7P+/2I8xdq6HX3USjscFwun+FXscjh4W/+HB3xfjaIruvEYjGCxhyaNoVoab3JHVcPQ8NeItEYi0lLkVhYVKS/ff9fyyFJKBwmFAqfCs0jLtbW0tBox2Y7h9t9l/GXfoUc2t0pUFPfSNP1FizLUg60dzozholhhlQtXvh8+P2vyP3Mk1nLsrT0g6/pNKuZDNu5HF3dPbR3ONWb7GWzWdWTzpJWCiFz+EbH2Nvfp3/AQ2DuA+nlFfL5PB8jEQLTAe7d97C5nVPWHwx6mQqanJyUlaiIRuOMT0yqD223nDz1jTKfTKkts4ahrD4aGmF9c4uJ129odnbj16YplUoqlpBZpYCMII85qQdIpL4oAdM0icc/8cT7jNX1DZX5xm0XHu9zDg6K/44oj/Lw8SAOh4NKWzXNrR10drmUG7vdzqW6OqqqbFy95uBy0xWEqDhF8DmR4K2m8RdjYnqSdSiarQAAAABJRU5ErkJggg=="
   },
-  "/content/developers/tutorials/how-to-write-and-deploy-an-nft/etherscan-sepolia-tx-details.png": {
+  "/content/developers/tutorials/how-to-write-and-deploy-an-nft/explorer-sepolia-tx-details.png": {
     "hash": "b02d3bd9",
     "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAICAYAAADwdn+XAAAACXBIWXMAABYlAAAWJQFJUiTwAAABbElEQVR4nHWQT0sCURTFB9r1CVq0qVWLvkdriaaghYsIE6RNi1poZkmaLUpQ26QG4WiURjJIZqMxJZp/BtuEJqjNaGSzS3SVnJwHDrnowI/3uPe98965lEYzj4uLS3S7XSj66fdHSCQ4MMEgvD4/rDYHYrdxUrtPpZAvFEBNTE6BGhvH9s4e2l8y6o33ERpik9TL5QqSfBq5fBEc94C7RBL84xOogTA9M4v9XSuymWdI0oeKcvEvoigRU6VXqVSRTmdAsSwLz7ETbDiM19IL2FgMAYZBNBqF33+GU6+XEAqFSMxhNEXfnQ6o8wADnucx1KHbjWWtFiaTCYIgoFavD14WCUONGGRzucHBktrMFwXYDxxwudwIR67x2W7jPxEDZaKyLKvFmzgHh8dHMNqOYHeeQGw11X6v10NNapG9Eom6ikRIZoPBgFWdHptGM9Y3tqBd0YGmadCLS2TVrelhtlgwp1lQJk9+Vn2r4hccA5/Fj3nx1AAAAABJRU5ErkJggg=="
   },
@@ -31,11 +31,11 @@
     "hash": "e393f93c",
     "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAIAAAC0SDtlAAAACXBIWXMAAAsTAAALEwEAmpwYAAABYklEQVR4nEVOPUvEQBCdXyF2drZWdjYWFjYiijYW2licnXAI1wjqTxBs/AHaqKWNiCCWIgp3qDlzyWWzub3kNpu42U1ymjjJFQ6P+Xoz8wYANgBWAVYA1mFqG6Z3YGYXZvdgbh/mm7DQguVjWDrcbDS3Dk6gcQYqjYSgSvlFocdjpZVAj0gkz3U8zhMlBSaxTLmI4jAAl3ovr++X1w9a52mW9x0SRfH45xf7UqqiLBkbKqXLsuCcm1YfQsGvbu4W11ojHqraZG1apyqp8rqTqEzjACEUFQbGR0epCE/2rP4EqPNl9hCTEpN2u/1pdCn1qpdMy+2ZX5RYyBFCBowFQWCapmVZWDqOg3HA/KHvk3qBMuaPeGW1D/GZbykRWZaKKAqj0OfhMBBBMCLErRRwh1DqOC4CS9uudJB7fjPxJL6HbDVD0HuThX94HsMJw+jatnP/1LGdqomHOPfPLx6PTm//ABqOZMR6pXKuAAAAAElFTkSuQmCC"
   },
-  "/content/developers/tutorials/how-to-write-and-deploy-an-nft/etherscan-goerli-contract-creation.png": {
+  "/content/developers/tutorials/how-to-write-and-deploy-an-nft/explorer-goerli-contract-creation.png": {
     "hash": "70f486f3",
     "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAHCAYAAAABIM1CAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABSklEQVR4nFVQz0sCYRD9/pXqmJcu3jpEtaSHLtUfkFJERBpIIJZJ17BV21Ck3CLJWnORjvljpUuhuSZ0ylo7J6xhf8CrGTBo4PHNN8y892aEEAIjo2OwbRvfgwEoKKeoVqtQFAX5QgHxeALBUAi74TDqjQYsywLNigmnEy6XG37/FpY9Xni8K4y9yD5K5co/GEYNWj4PVT1nUhIQs5L0W1CZ0TTNPweE104H4w4HN1IePZTx2euh8/bOIBJxlr1E46kJXddxVyqxCjUTiHDT5+M1yhUDaxt+yLEjHERjOE6luVdI7nlMTk1jYXEJgcA279o022i3X5i43/9i1W73g9+hM3JQLN5CnJxmmPkip2FGmkMynWEFqq+u+yArKW6OJhQWoSFaJbgTwZV2A0HHabWe2U6tds8XJpA6ger0PjzWOR/+c9calGQKP1obTZPybvqVAAAAAElFTkSuQmCC"
   },
-  "/content/developers/tutorials/how-to-write-and-deploy-an-nft/etherscan-goerli-tx-details.png": {
+  "/content/developers/tutorials/how-to-write-and-deploy-an-nft/explorer-goerli-tx-details.png": {
     "hash": "8201d105",
     "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAICAYAAADwdn+XAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA+0lEQVR4nGNgYGD5z8DA8D84JPT/qdOnwfj8+Qv/T585C6ZhGCaHjFevXfufYfrUmf9729v/L1+06P/jR4/+f/706f+9e/fAbBANw9jA/fsP/jNkpKf/X7duHVjg3bt3/wMjwv8XFRX9nzJ5Mhg3Njb+nzBhAlgOHbx6/fo/Q1hY2P9z587BDQiJiPpvbW0L9xI+ADZg/vyFKKbnFZb8j0vJ/B8SGfc/Njnj/+SpU/+v27QJtwGz58xB8SPI+SBDQZLv338Ay7189RK3AZEREf8XAwMQBqytrf+Li4v/9/Dw+L8Jh80oBkyfNe//zt37wCGKjGFRhy6OrgYAZlatsju+fscAAAAASUVORK5CYII="
   }

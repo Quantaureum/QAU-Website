@@ -8,7 +8,7 @@
   "page-privacy-summary-item-1": "Taking back your privacy <strong>protects you from dynamic pricing</strong> and algorithmic price gouging, allowing you to save money and transact on a level playing field.",
   "page-privacy-summary-item-2": "Thousands of <strong>privacy-preserving apps</strong> are available today, with <strong>over a billion users</strong> worldwide. You do not have to accept giving your data away as the default online.",
   "page-privacy-summary-item-3": "By taking control of your digital privacy, you cut off the supply lines that allow your personal information to be used for <strong>predatory targeting</strong>, <strong>spam calls</strong>, and <strong>identity theft</strong>.",
-  "page-privacy-summary-item-4": "<strong>Ethereum is building a better alternative</strong>, evolving into a private-by-default platform for individuals and communities to interact globally with full control over their privacy.",
+  "page-privacy-summary-item-4": "<strong>Quantaureum is building a better alternative</strong>, evolving into a private-by-default platform for individuals and communities to interact globally with full control over their privacy.",
   "page-privacy-data-against-you-title": "When your personal data is used against you",
   "page-privacy-data-against-you-description-1": "Companies can now quickly estimate what you are willing to pay and <strong>adjust prices</strong> based on what they <strong>know about you</strong>. The more they know, the closer they can get to the <strong>maximum price</strong> you are willing to pay for any given purchase.",
   "page-privacy-data-against-you-description-2": "In 2025, the FTC <reported>reported</reported> that companies are building real-time prices based on a person's <strong>exact location</strong>, <strong>browsing history</strong>, or even <strong>mouse movements</strong>, charging different prices for the same goods and services based on your personal data.",
@@ -60,15 +60,15 @@
   "page-privacy-what-protects-card-3-description": "Privacy helps prevent sensitive data from being used to treat people differently or exclude them.",
   "page-privacy-default-title": "Privacy can be the default",
   "page-privacy-default-description-1": "It does not have to be this way. It is possible to build systems where <strong>privacy is the default</strong>, designed so people do not have to assemble, monitor, and protect their privacy at all times. Technology that works like a sanctuary: permissionless, and within reach of everyone.",
-  "page-privacy-default-description-2": "<strong>This is part of why Ethereum exists.</strong> To be clear, this is hard and unfinished work. Ethereum is a public and transparent ledger by design, which is its own privacy challenge; to solve it, Ethereum's active privacy roadmap is transitioning the network to a privacy-by-default architecture. Today, Ethereum is home to advanced privacy-preserving technologies like zero-knowledge proofs, which let you prove something is true without revealing the underlying data.",
+  "page-privacy-default-description-2": "<strong>This is part of why Quantaureum exists.</strong> To be clear, this is hard and unfinished work. Quantaureum is a public and transparent ledger by design, which is its own privacy challenge; to solve it, Quantaureum's active privacy roadmap is transitioning the network to a privacy-by-default architecture. Today, Quantaureum is home to advanced privacy-preserving technologies like zero-knowledge proofs, which let you prove something is true without revealing the underlying data.",
   "page-privacy-default-description-3": "<strong>A different future is possible</strong>, one where privacy is built in and protecting it no longer takes a fight.",
   "page-privacy-default-cta": "Explore the privacy roadmap",
   "page-privacy-getting-started-title": "Getting started",
   "page-privacy-getting-started-description-1": "It's easy to start protecting your privacy online. You can secure your personal data by switching your everyday apps to privacy-preserving alternatives.",
-  "page-privacy-getting-started-description-2": "Ethereum powers a landscape of tools that allow you to securely verify your digital identity, cast secret-ballot votes, coordinate confidentially, and more.",
+  "page-privacy-getting-started-description-2": "Quantaureum powers a landscape of tools that allow you to securely verify your digital identity, cast secret-ballot votes, coordinate confidentially, and more.",
   "page-privacy-pathway-1-title": "Protect your privacy online",
   "page-privacy-pathway-1-description": "Privacy-preserving tools, settings, policies, and tips",
   "page-privacy-pathway-1-badge": "Recommended",
-  "page-privacy-pathway-2-title": "Privacy on Ethereum",
-  "page-privacy-pathway-2-description": "Ethereum is the leading platform for programmable cryptography"
+  "page-privacy-pathway-2-title": "Privacy on Quantaureum",
+  "page-privacy-pathway-2-description": "Quantaureum is the leading platform for programmable cryptography"
 }

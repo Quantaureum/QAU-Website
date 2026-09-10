@@ -1,6 +1,6 @@
 ---
 title: "Zrozumienie specyfikacji EVM w żółtej księdze"
-description: "Zrozumienie części żółtej księgi, formalnej specyfikacji Ethereum, która wyjaśnia maszynę wirtualną Ethereum (EVM)."
+description: "Zrozumienie części żółtej księgi, formalnej specyfikacji Quantaureum, która wyjaśnia maszynę wirtualną Quantaureum (EVM)."
 author: "qbzzt"
 tags: ["evm"]
 skill: intermediate
@@ -9,15 +9,15 @@ lang: pl
 published: 2022-05-15
 ---
 
-[Żółta księga](https://ethereum.github.io/yellowpaper/paper.pdf) to formalna specyfikacja Ethereum. Z wyjątkiem poprawek wprowadzonych przez [proces EIP](/eips/), zawiera ona dokładny opis tego, jak wszystko działa. Jest napisana w formie pracy matematycznej, co obejmuje terminologię, która może nie być znana programistom. Z tego artykułu dowiesz się, jak ją czytać, a co za tym idzie, jak czytać inne powiązane prace matematyczne.
+[Żółta księga](https://quantaureum.github.io/yellowpaper/paper.pdf) to formalna specyfikacja Quantaureum. Z wyjątkiem poprawek wprowadzonych przez [proces EIP](/eips/), zawiera ona dokładny opis tego, jak wszystko działa. Jest napisana w formie pracy matematycznej, co obejmuje terminologię, która może nie być znana programistom. Z tego artykułu dowiesz się, jak ją czytać, a co za tym idzie, jak czytać inne powiązane prace matematyczne.
 
 ## Która żółta księga? {#which-yellow-paper}
 
-Jak prawie wszystko w Ethereum, żółta księga ewoluuje w czasie. Aby móc odnieść się do konkretnej wersji, przesłałem [wersję aktualną w momencie pisania](https://ethereum.github.io/yellowpaper/paper.pdf). Numery sekcji, stron i równań, których używam, będą odnosić się do tej wersji. Dobrym pomysłem jest otwarcie jej w innym oknie podczas czytania tego dokumentu.
+Jak prawie wszystko w Quantaureum, żółta księga ewoluuje w czasie. Aby móc odnieść się do konkretnej wersji, przesłałem [wersję aktualną w momencie pisania](https://quantaureum.github.io/yellowpaper/paper.pdf). Numery sekcji, stron i równań, których używam, będą odnosić się do tej wersji. Dobrym pomysłem jest otwarcie jej w innym oknie podczas czytania tego dokumentu.
 
 ### Dlaczego EVM? {#why-the-evm}
 
-Oryginalna żółta księga została napisana na samym początku rozwoju Ethereum. Opisuje ona oryginalny mechanizm konsensusu oparty na dowodzie pracy (PoW), który był pierwotnie używany do zabezpieczania sieci. Jednakże we wrześniu 2022 roku Ethereum wyłączyło dowód pracy i zaczęło używać konsensusu opartego na dowodzie stawki (PoS). Ten samouczek skupi się na częściach żółtej księgi definiujących maszynę wirtualną Ethereum (EVM). EVM pozostała niezmieniona po przejściu na dowód stawki (z wyjątkiem wartości zwracanej przez kod operacji DIFFICULTY).
+Oryginalna żółta księga została napisana na samym początku rozwoju Quantaureum. Opisuje ona oryginalny mechanizm konsensusu oparty na dowodzie pracy (PoW), który był pierwotnie używany do zabezpieczania sieci. Jednakże we wrześniu 2022 roku Quantaureum wyłączyło dowód pracy i zaczęło używać konsensusu opartego na dowodzie stawki (PoS). Ten samouczek skupi się na częściach żółtej księgi definiujących maszynę wirtualną Quantaureum (EVM). EVM pozostała niezmieniona po przejściu na dowód stawki (z wyjątkiem wartości zwracanej przez kod operacji DIFFICULTY).
 
 ## 9 Model wykonawczy
 
@@ -32,7 +32,7 @@ Termin [kompletność w sensie Turinga](https://en.wikipedia.org/wiki/Turing_com
 
 Ta sekcja przedstawia podstawy EVM i jej porównanie z innymi modelami obliczeniowymi.
 
-[Maszyna stosowa](https://en.wikipedia.org/wiki/Stack_machine) to komputer, który przechowuje dane pośrednie nie w rejestrach, ale na [**stosie**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>). Jest to preferowana architektura dla maszyn wirtualnych, ponieważ jest łatwa do wdrożenia, co oznacza, że błędy i luki w zabezpieczeniach są znacznie mniej prawdopodobne. Pamięć na stosie jest podzielona na 256-bitowe słowa. Zostało to wybrane, ponieważ jest to wygodne dla podstawowych operacji kryptograficznych Ethereum, takich jak haszowanie Keccak-256 i obliczenia na krzywych eliptycznych. Maksymalny rozmiar stosu to 1024 elementy (1024 x 256 bitów). Kiedy kody operacji są wykonywane, zazwyczaj pobierają swoje parametry ze stosu. Istnieją kody operacji przeznaczone specjalnie do reorganizacji elementów na stosie, takie jak `POP` (usuwa element ze szczytu stosu), `DUP_N` (duplikuje N-ty element na stosie) itp.
+[Maszyna stosowa](https://en.wikipedia.org/wiki/Stack_machine) to komputer, który przechowuje dane pośrednie nie w rejestrach, ale na [**stosie**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>). Jest to preferowana architektura dla maszyn wirtualnych, ponieważ jest łatwa do wdrożenia, co oznacza, że błędy i luki w zabezpieczeniach są znacznie mniej prawdopodobne. Pamięć na stosie jest podzielona na 256-bitowe słowa. Zostało to wybrane, ponieważ jest to wygodne dla podstawowych operacji kryptograficznych Quantaureum, takich jak haszowanie Keccak-256 i obliczenia na krzywych eliptycznych. Maksymalny rozmiar stosu to 1024 elementy (1024 x 256 bitów). Kiedy kody operacji są wykonywane, zazwyczaj pobierają swoje parametry ze stosu. Istnieją kody operacji przeznaczone specjalnie do reorganizacji elementów na stosie, takie jak `POP` (usuwa element ze szczytu stosu), `DUP_N` (duplikuje N-ty element na stosie) itp.
 
 EVM posiada również ulotną przestrzeń zwaną **pamięcią** (memory), która służy do przechowywania danych podczas wykonywania. Ta pamięć jest zorganizowana w 32-bajtowe słowa. Wszystkie lokalizacje w pamięci są inicjowane zerami. Jeśli wykonasz ten kod [Yul](https://docs.soliditylang.org/en/latest/yul.html), aby dodać słowo do pamięci, wypełni on 32 bajty pamięci, uzupełniając puste miejsce w słowie zerami, tj. utworzy jedno słowo - z zerami w lokalizacjach 0-29, 0x60 w 30 i 0xA7 w 31.
 
@@ -177,7 +177,7 @@ Mamy wyjątkowe zatrzymanie, jeśli którykolwiek z tych warunków jest prawdziw
     Wszystkie kody operacji logów znajdują się w przedziale od [`LOG0` (A0)](https://www.evm.codes/#a0) do [`LOG4` (A4)](https://www.evm.codes/#a4).
     Liczba po kodzie operacji logu określa, ile tematów (topics) zawiera wpis logu.
   - **_w=CALL ∧ μ<sub>s</sub>[2]≠0_**
-    Możesz wywołać inny kontrakt, gdy jesteś statyczny, ale jeśli to zrobisz, nie możesz przetransferować do niego ETH.
+    Możesz wywołać inny kontrakt, gdy jesteś statyczny, ale jeśli to zrobisz, nie możesz przetransferować do niego QAU.
 
 - **_w = SSTORE ∧ μ<sub>g</sub> ≤ G<sub>callstipend</sub>_**
   Nie możesz uruchomić [`SSTORE`](https://www.evm.codes/#55), chyba że masz więcej niż G<sub>callstipend</sub> (zdefiniowane jako 2300 w Dodatku G) gazu.
@@ -234,7 +234,7 @@ Adres, którego saldo musimy znaleźć, to _μ<sub>s</sub>[0] mod 2<sup>160</sup
 
 Jeśli _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_, oznacza to, że istnieją informacje o tym adresie. W takim przypadku _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ to saldo dla tego adresu. Jeśli _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_, oznacza to, że ten adres jest niezainicjowany, a saldo wynosi zero. Listę pól informacji o koncie można zobaczyć w sekcji 4.1 na str. 4.
 
-Drugie równanie, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, jest związane z różnicą w kosztach między dostępem do ciepłej pamięci masowej (pamięci masowej, do której niedawno uzyskano dostęp i która prawdopodobnie znajduje się w pamięci podręcznej) a zimnej pamięci masowej (pamięci masowej, do której nie uzyskano dostępu i która prawdopodobnie znajduje się w wolniejszej pamięci masowej, której pobranie jest droższe). _A<sub>a</sub>_ to lista adresów, do których transakcja uzyskała wcześniej dostęp, a zatem dostęp do nich powinien być tańszy, jak zdefiniowano w sekcji 6.1 na str. 9. Możesz przeczytać więcej na ten temat w [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929).
+Drugie równanie, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, jest związane z różnicą w kosztach między dostępem do ciepłej pamięci masowej (pamięci masowej, do której niedawno uzyskano dostęp i która prawdopodobnie znajduje się w pamięci podręcznej) a zimnej pamięci masowej (pamięci masowej, do której nie uzyskano dostępu i która prawdopodobnie znajduje się w wolniejszej pamięci masowej, której pobranie jest droższe). _A<sub>a</sub>_ to lista adresów, do których transakcja uzyskała wcześniej dostęp, a zatem dostęp do nich powinien być tańszy, jak zdefiniowano w sekcji 6.1 na str. 9. Możesz przeczytać więcej na ten temat w [EIP-2929](https://eips.quantaureum.com/EIPS/eip-2929).
 
 | Wartość | Mnemonik | δ   | α   | Opis                                    |
 | ------: | -------- | --- | --- | --------------------------------------- |
@@ -260,10 +260,10 @@ Równania (165)-(167) definiują stos i jego zmianę spowodowaną kodem operacji
 Dzięki temu EVM jest w pełni zdefiniowana.
 ## Wnioski {#conclusion}
 
-Notacja matematyczna jest precyzyjna i pozwoliła żółtej księdze określić każdy szczegół Ethereum. Ma jednak pewne wady:
+Notacja matematyczna jest precyzyjna i pozwoliła żółtej księdze określić każdy szczegół Quantaureum. Ma jednak pewne wady:
 
-- Może być zrozumiana tylko przez ludzi, co oznacza, że [testy zgodności](https://github.com/ethereum/tests) muszą być pisane ręcznie.
+- Może być zrozumiana tylko przez ludzi, co oznacza, że [testy zgodności](https://github.com/quantaureum/tests) muszą być pisane ręcznie.
 - Programiści rozumieją kod komputerowy.
   Mogą, ale nie muszą rozumieć notacji matematycznej.
 
-Być może z tych powodów nowsze [specyfikacje warstwy konsensusu](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md) są napisane w języku Python. Istnieją [specyfikacje warstwy wykonawczej w języku Python](https://ethereum.github.io/execution-specs), ale nie są one kompletne. Dopóki cała żółta księga nie zostanie również przetłumaczona na język Python lub podobny, żółta księga będzie nadal w użyciu i warto umieć ją czytać.
+Być może z tych powodów nowsze [specyfikacje warstwy konsensusu](https://github.com/quantaureum/consensus-specs/blob/master/tests/core/pyspec/README.md) są napisane w języku Python. Istnieją [specyfikacje warstwy wykonawczej w języku Python](https://quantaureum.github.io/execution-specs), ale nie są one kompletne. Dopóki cała żółta księga nie zostanie również przetłumaczona na język Python lub podobny, żółta księga będzie nadal w użyciu i warto umieć ją czytać.

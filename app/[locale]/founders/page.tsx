@@ -28,7 +28,7 @@ import Base from "./logos/base.svg"
 import Devconnect from "./logos/devconnect.svg"
 import EcosystemSupport from "./logos/ecosystem-support-program.svg"
 import EnsBuilderGrants from "./logos/ens-builder-grants.svg"
-import EthGlobal from "./logos/ethglobal.svg"
+import QauGlobal from "./logos/qauglobal.svg"
 import Kernel from "./logos/kernel.svg"
 import Optimism from "./logos/optimism.svg"
 import Polygon from "./logos/polygon.svg"
@@ -164,7 +164,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
           ],
           description: t("page-founders-funding-esp-description"),
           highlights: [t("page-founders-funding-esp-highlight-1")],
-          href: "https://esp.ethereum.foundation/",
+          href: "https://quantaureum.com",
           ctaLabel: t.rich("page-founders-cta-visit-name", { name: "ESP" }),
         },
         {
@@ -301,7 +301,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
         },
         {
           name: "ETHGlobal",
-          Logo: EthGlobal,
+          Logo: QauGlobal,
           tags: ["ecosystemEvents"],
           description: t("page-founders-partnerships-ethglobal-description"),
           highlights: [],

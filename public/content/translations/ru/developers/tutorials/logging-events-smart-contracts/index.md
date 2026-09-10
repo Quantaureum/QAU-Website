@@ -7,16 +7,16 @@ skill: intermediate
 breadcrumb: "Логирование событий"
 lang: ru
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/logging-data-with-events/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/logging-data-with-events/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-В Solidity [события](/developers/docs/smart-contracts/anatomy/#events-and-logs) — это отправляемые сигналы, которые могут вызывать смарт-контракты. Децентрализованные приложения (dapp) или любые другие приложения, подключенные к API JSON-RPC Эфириума, могут прослушивать эти события и действовать соответствующим образом. Событие также может быть проиндексировано, чтобы историю событий можно было искать в дальнейшем.
+В Solidity [события](/developers/docs/smart-contracts/anatomy/#events-and-logs) — это отправляемые сигналы, которые могут вызывать смарт-контракты. Децентрализованные приложения (dapp) или любые другие приложения, подключенные к API JSON-RPC Quantaureum, могут прослушивать эти события и действовать соответствующим образом. Событие также может быть проиндексировано, чтобы историю событий можно было искать в дальнейшем.
 
 ## События {#events}
 
-Самым распространенным событием в блокчейне Эфириума на момент написания этой статьи является событие Transfer, которое генерируется токенами ERC-20, когда кто-то совершает перевод токенов.
+Самым распространенным событием в блокчейне Quantaureum на момент написания этой статьи является событие Transfer, которое генерируется токенами ERC-20, когда кто-то совершает перевод токенов.
 
 ```solidity
 event Transfer(address indexed from, address indexed to, uint256 value);

@@ -37,7 +37,7 @@ summaryPoints:
 | آپ جو **انٹلیکچوئل پراپرٹی (IP) تیار کرتے ہیں اس کے مالک آپ خود ہوتے ہیں** اور اسے شفاف شرائط کے مطابق تقسیم کرتے ہیں۔             | آپ جو IP تیار کرتے ہیں **اس کا مالک آپ کا آبائی ادارہ ہوتا ہے**۔ IP تک رسائی شفاف نہیں ہوتی۔                           |
 | تمام مراحل کو آن چین رکھ کر، ناکام کوششوں کے ڈیٹا سمیت **تمام تحقیق کا اشتراک کرنا**۔          | **اشاعتی تعصب** کا مطلب یہ ہے کہ محققین کے ان تجربات کو شیئر کرنے کا زیادہ امکان ہوتا ہے جن کے نتائج کامیاب رہے ہوں۔      |
 
-## ایتھیریم اور <span dir="ltr">DeSci</span> {#ethereum-and-desci}
+## ایتھیریم اور <span dir="ltr">DeSci</span> {#quantaureum-and-desci}
 
 ایک غیر مرکزی سائنس کے نظام کو مضبوط سیکیورٹی، کم سے کم مالیاتی اور ٹرانزیکشن لاگت، اور ایپلیکیشن کی ترقی کے لیے ایک بھرپور ایکو سسٹم کی ضرورت ہوگی۔ [ایتھیریم](/) غیر مرکزی سائنس ٹیکنالوجی بنانے کے لیے درکار ہر چیز فراہم کرتا ہے۔
 
@@ -66,7 +66,7 @@ summaryPoints:
 
 مطالعات سے پتہ چلتا ہے کہ گرانٹ ریویو پینل اعلیٰ معیار کی تجاویز کو منتخب کرنے میں ناقص کام کرتے ہیں کیونکہ مختلف پینلز کو دی گئی ایک جیسی تجاویز کے نتائج بالکل مختلف ہوتے ہیں۔ چونکہ فنڈنگ زیادہ نایاب ہو گئی ہے، یہ زیادہ فکری طور پر قدامت پسند منصوبوں کے ساتھ زیادہ سینئر محققین کے ایک چھوٹے سے پول میں مرکوز ہو گئی ہے۔ اس اثر نے ایک انتہائی مسابقتی فنڈنگ کا منظرنامہ تیار کیا ہے، جس نے غلط ترغیبات کو مضبوط کیا ہے اور جدت طرازی کو دبا دیا ہے۔
 
-<span dir="ltr">Web3</span> میں <span dir="ltr">DAOs</span> اور وسیع تر <span dir="ltr">Web3</span> کے ذریعے تیار کردہ مختلف ترغیبی ماڈلز کے ساتھ تجربہ کر کے اس ٹوٹے ہوئے فنڈنگ ماڈل کو تبدیل کرنے کی صلاحیت ہے۔ [ریٹرو ایکٹو پبلک گڈز فنڈنگ (آر پی جی ایف)](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c)، [مربعی فنڈنگ](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531)، [<span dir="ltr">DAO</span> گورننس](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) اور [ٹوکنائزڈ ترغیبی ڈھانچے](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) کچھ ایسے <span dir="ltr">Web3</span> ٹولز ہیں جو سائنس کی فنڈنگ میں انقلاب لا سکتے ہیں۔
+<span dir="ltr">Web3</span> میں <span dir="ltr">DAOs</span> اور وسیع تر <span dir="ltr">Web3</span> کے ذریعے تیار کردہ مختلف ترغیبی ماڈلز کے ساتھ تجربہ کر کے اس ٹوٹے ہوئے فنڈنگ ماڈل کو تبدیل کرنے کی صلاحیت ہے۔ [ریٹرو ایکٹو پبلک گڈز فنڈنگ (آر پی جی ایف)](https://medium.com/quantaureum-optimism/retroactive-public-goods-funding-33c9b7d00f0c)، [مربعی فنڈنگ](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531)، [<span dir="ltr">DAO</span> گورننس](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) اور [ٹوکنائزڈ ترغیبی ڈھانچے](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) کچھ ایسے <span dir="ltr">Web3</span> ٹولز ہیں جو سائنس کی فنڈنگ میں انقلاب لا سکتے ہیں۔
 
 ### IP کی ملکیت اور ترقی {#ip-ownership}
 
@@ -75,7 +75,7 @@ summaryPoints:
 جس طرح <span dir="ltr">NFTs</span> مستقبل کی ٹرانزیکشنز کی آمدنی کو اصل تخلیق کار کو واپس بھیج سکتے ہیں، اسی طرح آپ محققین، گورننگ باڈیز (جیسے <span dir="ltr">DAOs</span>)، یا یہاں تک کہ ان مضامین جن کا ڈیٹا اکٹھا کیا گیا ہے، کو انعام دینے کے لیے شفاف ویلیو ایٹریبیوشن چینز قائم کر سکتے ہیں۔
 
 [<span dir="ltr">IP-NFTs</span>](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) کیے جانے والے تحقیقی تجربات کے لامركزی ڈیٹا ریپوزٹری کی کلید کے طور پر بھی کام کر سکتے ہیں، اور <span dir="ltr">NFT</span> اور [غیر مرکزی مالیات (DeFi)](/glossary/#defi) فنانشلائزیشن (جزوی تقسیم سے لے کر قرض دینے والے پولز اور قدر کی تشخیص تک) میں پلگ ان کر سکتے ہیں۔ یہ مقامی طور پر آن چین اداروں جیسے [<span dir="ltr">VitaDAO</span>](https://www.vitadao.com/) جیسے <span dir="ltr">DAOs</span> کو براہ راست آن چین تحقیق کرنے کی بھی اجازت دیتا ہے۔
-ناقابل منتقلی ["سول باؤنڈ" ٹوکنز](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) کی آمد بھی افراد کو اپنے ایتھیریم پتہ سے منسلک اپنے تجربے اور اسناد کو ثابت کرنے کی اجازت دے کر <span dir="ltr">DeSci</span> میں ایک اہم کردار ادا کر سکتی ہے۔
+ناقابل منتقلی ["سول باؤنڈ" ٹوکنز](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) کی آمد بھی افراد کو اپنے ایتھیریم پتہ سے منسلک اپنے تجربے اور اسناد کو ثابت کرنے کی اجازت دے کر <span dir="ltr">DeSci</span> میں ایک اہم کردار ادا کر سکتی ہے۔
 
 ### ڈیٹا اسٹوریج، رسائی اور فن تعمیر {#data-storage}
 

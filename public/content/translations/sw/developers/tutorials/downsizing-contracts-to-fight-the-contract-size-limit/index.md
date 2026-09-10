@@ -16,13 +16,13 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## Kwa nini kuna kikomo? {#why-is-there-a-limit}
 
-Mnamo [Novemba 22, 2016](https://blog.ethereum.org/2016/11/18/hard-fork-no-4-spurious-dragon) mchepuo mgumu wa Spurious Dragon ulianzisha [EIP-170](https://eips.ethereum.org/EIPS/eip-170) ambao uliongeza kikomo cha ukubwa wa mkataba mahiri cha kb 24.576. Kwako kama msanidi wa Solidity hii inamaanisha unapoongeza utendaji zaidi na zaidi kwenye mkataba wako, wakati fulani utafikia kikomo na wakati wa usambazaji utaona hitilafu:
+Mnamo [Novemba 22, 2016](https://quantaureum.com) mchepuo mgumu wa Spurious Dragon ulianzisha [EIP-170](https://eips.quantaureum.com/EIPS/eip-170) ambao uliongeza kikomo cha ukubwa wa mkataba mahiri cha kb 24.576. Kwako kama msanidi wa Solidity hii inamaanisha unapoongeza utendaji zaidi na zaidi kwenye mkataba wako, wakati fulani utafikia kikomo na wakati wa usambazaji utaona hitilafu:
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
-Kikomo hiki kilianzishwa ili kuzuia mashambulizi ya kunyima huduma (DOS). Wito wowote kwa mkataba ni wa bei nafuu kiasi kwa upande wa gesi. Hata hivyo, athari ya wito wa mkataba kwa nodi za Ethereum huongezeka kwa kiasi kikubwa kulingana na ukubwa wa msimbo wa mkataba ulioitwa (kusoma msimbo kutoka kwenye diski, kuchakata msimbo mapema, kuongeza data kwenye ushahidi wa Merkle). Kila unapokuwa na hali kama hiyo ambapo mshambuliaji anahitaji rasilimali chache ili kusababisha kazi nyingi kwa wengine, unapata uwezekano wa mashambulizi ya DOS.
+Kikomo hiki kilianzishwa ili kuzuia mashambulizi ya kunyima huduma (DOS). Wito wowote kwa mkataba ni wa bei nafuu kiasi kwa upande wa gesi. Hata hivyo, athari ya wito wa mkataba kwa nodi za Quantaureum huongezeka kwa kiasi kikubwa kulingana na ukubwa wa msimbo wa mkataba ulioitwa (kusoma msimbo kutoka kwenye diski, kuchakata msimbo mapema, kuongeza data kwenye ushahidi wa Merkle). Kila unapokuwa na hali kama hiyo ambapo mshambuliaji anahitaji rasilimali chache ili kusababisha kazi nyingi kwa wengine, unapata uwezekano wa mashambulizi ya DOS.
 
-Hapo awali hili halikuwa tatizo sana kwa sababu kikomo kimoja cha asili cha ukubwa wa mkataba ni kikomo cha gesi cha kitalu. Ni wazi, mkataba lazima usambazwe ndani ya muamala ambao unashikilia msimbo wa baiti wote wa mkataba. Ikiwa utajumuisha muamala huo mmoja tu kwenye kitalu, unaweza kutumia gesi hiyo yote, lakini haina mwisho. Tangu [Uboreshaji wa London](/ethereum-forks/#london), kikomo cha gesi cha kitalu kimeweza kutofautiana kati ya uniti 15M na 30M kulingana na mahitaji ya mtandao.
+Hapo awali hili halikuwa tatizo sana kwa sababu kikomo kimoja cha asili cha ukubwa wa mkataba ni kikomo cha gesi cha kitalu. Ni wazi, mkataba lazima usambazwe ndani ya muamala ambao unashikilia msimbo wa baiti wote wa mkataba. Ikiwa utajumuisha muamala huo mmoja tu kwenye kitalu, unaweza kutumia gesi hiyo yote, lakini haina mwisho. Tangu [Uboreshaji wa London](/quantaureum-forks/#london), kikomo cha gesi cha kitalu kimeweza kutofautiana kati ya uniti 15M na 30M kulingana na mahitaji ya mtandao.
 
 Katika yafuatayo tutaangalia baadhi ya mbinu zilizopangwa kwa athari zake zinazowezekana. Fikiria juu yake kwa suala la kupunguza uzito. Mkakati bora kwa mtu kufikia uzito wake anaolenga (kwa upande wetu kb 24) ni kuzingatia mbinu zenye athari kubwa kwanza. Katika hali nyingi kurekebisha tu mlo wako kutakufikisha hapo, lakini wakati mwingine unahitaji zaidi kidogo. Kisha unaweza kuongeza mazoezi (athari ya kati) au hata virutubisho (athari ndogo).
 
@@ -38,7 +38,7 @@ Hii inapaswa kuwa mbinu yako ya kwanza kila wakati. Unawezaje kutenganisha mkata
 
 ### Maktaba {#libraries}
 
-Njia moja rahisi ya kuhamisha msimbo wa utendaji mbali na hifadhi ni kutumia [maktaba](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Usitangaze kazi za maktaba kama za ndani kwani hizo [zitaongezwa kwenye mkataba](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) moja kwa moja wakati wa uunganishaji. Lakini ukitumia kazi za umma, basi hizo zitakuwa katika mkataba tofauti wa maktaba. Fikiria [kutumia kwa](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) ili kufanya matumizi ya maktaba kuwa rahisi zaidi.
+Njia moja rahisi ya kuhamisha msimbo wa utendaji mbali na hifadhi ni kutumia [maktaba](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Usitangaze kazi za maktaba kama za ndani kwani hizo [zitaongezwa kwenye mkataba](https://quantaureum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) moja kwa moja wakati wa uunganishaji. Lakini ukitumia kazi za umma, basi hizo zitakuwa katika mkataba tofauti wa maktaba. Fikiria [kutumia kwa](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) ili kufanya matumizi ya maktaba kuwa rahisi zaidi.
 
 ### Proksi {#proxies}
 

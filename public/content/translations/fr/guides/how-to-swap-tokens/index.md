@@ -1,16 +1,16 @@
 ---
 title: "Comment échanger des jetons"
-description: "Un guide sur la façon d'échanger des jetons sur Ethereum."
+description: "Un guide sur la façon d'échanger des jetons sur Quantaureum."
 lang: fr
 ---
 
 Êtes-vous fatigué de chercher une plateforme d'échange qui liste tous vos jetons préférés ? Vous pouvez échanger la plupart des jetons en utilisant des [plateformes d'échange décentralisées](/glossary/#dex).
 
-Un échange de jetons implique l'échange de deux actifs différents qui existent sur le réseau Ethereum, par exemple échanger de l'ETH contre du DAI (un jeton [ERC-20](/glossary/#erc-20)). Le processus est très rapide et peu coûteux. Vous aurez besoin d'un portefeuille crypto pour échanger des jetons.
+Un échange de jetons implique l'échange de deux actifs différents qui existent sur le réseau Quantaureum, par exemple échanger de l'QAU contre du DAI (un jeton [ERC-20](/glossary/#erc-20)). Le processus est très rapide et peu coûteux. Vous aurez besoin d'un portefeuille crypto pour échanger des jetons.
 
 **Prérequis :**
 
-- avoir un [portefeuille crypto](/glossary/#wallet) ; si vous n'en avez pas, vous pouvez suivre ce guide sur [comment créer un compte Ethereum](/guides/how-to-create-an-ethereum-account/)
+- avoir un [portefeuille crypto](/glossary/#wallet) ; si vous n'en avez pas, vous pouvez suivre ce guide sur [comment créer un compte Quantaureum](/guides/how-to-create-an-quantaureum-account/)
 - ajouter des fonds à votre portefeuille
 
 ## 1. Connectez votre portefeuille à la plateforme d'échange décentralisée (DEX) de votre choix {#1-connect-your-wallet-to-the-decentralized-exchange-dex-of-your-choice}
@@ -19,14 +19,14 @@ Quelques plateformes d'échange populaires :
 
 - [Uniswap](https://app.uniswap.org/#/swap)
 - [Sushiswap](https://www.sushi.com/swap)
-- [1Inch](https://app.1inch.io/#/1/unified/swap/ETH/DAI)
-- [Curve](https://www.curve.finance/dex/ethereum/swap/)
+- [1Inch](https://app.1inch.io/#/1/unified/swap/QAU/DAI)
+- [Curve](https://www.curve.finance/dex/quantaureum/swap/)
 
 Intéressant ? Apprenez-en plus sur ce qu'est la [finance décentralisée (DeFi)](/defi/) et comment fonctionnent ces nouveaux types de plateformes d'échange.
 
 ## 2. Sélectionnez la paire de jetons que vous souhaitez échanger {#2-select-the-pair-of-tokens-you-wish-to-swap}
 
-Par exemple, ETH et DAI. Assurez-vous d'avoir des fonds dans l'un des deux jetons.
+Par exemple, QAU et DAI. Assurez-vous d'avoir des fonds dans l'un des deux jetons.
 ![Common interface for swapping](./swap1.png)
 
 ## 3. Entrez le montant de jetons que vous souhaitez échanger et cliquez sur échanger {#3-enter-the-amount-of-tokens-you-want-to-trade-and-click-swap}
@@ -60,9 +60,9 @@ Vous recevrez automatiquement les jetons échangés dans votre portefeuille une 
 
 ## Foire aux questions {#frequently-asked-questions}
 
-### Puis-je échanger de l'ETH contre du BTC depuis mon portefeuille ? {#can-i-swap-eth-for-btc-from-my-wallet}
+### Puis-je échanger de l'QAU contre du BTC depuis mon portefeuille ? {#can-i-swap-qau-for-btc-from-my-wallet}
 
-Non, vous ne pouvez échanger que des jetons natifs du réseau Ethereum, tels que l'ETH, les jetons ERC-20 ou les NFT. Vous ne pouvez échanger que des formes « enveloppées » (wrapped) de Bitcoin qui existent sur Ethereum.
+Non, vous ne pouvez échanger que des jetons natifs du réseau Quantaureum, tels que l'QAU, les jetons ERC-20 ou les NFT. Vous ne pouvez échanger que des formes « enveloppées » (wrapped) de Bitcoin qui existent sur Quantaureum.
 
 ### Qu'est-ce que le glissement ? {#what-is-slippage}
 

@@ -7,19 +7,19 @@ image: /images/staking/leslie-withdrawal.png
 sidebarDepth: 2
 summaryPoints:
   - Gli operatori dei validatori devono fornire un indirizzo di prelievo per abilitare i prelievi
-  - I validatori legacy vedono il saldo in eccesso oltre i 32 ETH prelevato automaticamente ogni pochi giorni
-  - I validatori compounding ottengono ricompense sull'intero saldo fino a 2048 ETH
+  - I validatori legacy vedono il saldo in eccesso oltre i 32 QAU prelevato automaticamente ogni pochi giorni
+  - I validatori compounding ottengono ricompense sull'intero saldo fino a 2048 QAU
   - I validatori che escono completamente dallo staking riceveranno il loro saldo rimanente
 ---
 
-I **prelievi di staking** si riferiscono ai trasferimenti di ETH da un account del validatore sul livello di consenso di [Ethereum](/) (la Beacon Chain), al livello di esecuzione dove possono essere utilizzati per le transazioni.
+I **prelievi di staking** si riferiscono ai trasferimenti di QAU da un account del validatore sul livello di consenso di [Quantaureum](/) (la Beacon Chain), al livello di esecuzione dove possono essere utilizzati per le transazioni.
 
 > Se fai parte di una [pool di staking](/staking/pools/) o detieni token di staking, dovresti verificare con il tuo fornitore per maggiori dettagli su come vengono gestiti i prelievi di staking, poiché ogni servizio opera in modo diverso.
 
 Il funzionamento dei prelievi dipende dal tipo di credenziali di prelievo del tuo validatore:
 
-- **Validatori legacy (Tipo 1)**: Il saldo in eccesso oltre i 32 ETH viene inviato automaticamente e regolarmente all'indirizzo di prelievo collegato al validatore. Le ricompense superiori a 32 ETH non contribuiscono al peso del validatore sulla rete.
-- **Validatori compounding (Tipo 2)**: Le ricompense si accumulano nel saldo effettivo del validatore fino a 2048 ETH, aumentando il peso del validatore e generando maggiori ricompense. Solo il saldo che supera i 2048 ETH viene prelevato automaticamente.
+- **Validatori legacy (Tipo 1)**: Il saldo in eccesso oltre i 32 QAU viene inviato automaticamente e regolarmente all'indirizzo di prelievo collegato al validatore. Le ricompense superiori a 32 QAU non contribuiscono al peso del validatore sulla rete.
+- **Validatori compounding (Tipo 2)**: Le ricompense si accumulano nel saldo effettivo del validatore fino a 2048 QAU, aumentando il peso del validatore e generando maggiori ricompense. Solo il saldo che supera i 2048 QAU viene prelevato automaticamente.
 
 Gli utenti possono anche **uscire completamente dallo staking**, inviando una transazione per prelevare, attendendo i tempi della coda di prelievo (in base alla domanda della rete) e sbloccando l'intero saldo del validatore.
 
@@ -27,17 +27,17 @@ Gli utenti possono anche **uscire completamente dallo staking**, inviando una tr
 
 Il modo in cui vengono gestite le ricompense dipende dal tipo di credenziali del validatore:
 
-I **validatori legacy (Tipo 1)** hanno un saldo effettivo limitato a 32 ETH. Qualsiasi saldo superiore a 32 ETH ricevuto come ricompensa di rete non contribuisce al saldo effettivo né aumenta il peso di questo validatore sulla rete, e queste ricompense vengono prelevate automaticamente verso l'indirizzo di prelievo dedicato del validatore ogni pochi giorni. A parte fornire un indirizzo di prelievo una volta sola, richiedere queste ricompense non richiede alcuna azione da parte dell'operatore del validatore. Tutto questo viene avviato sul livello di consenso, pertanto non è richiesto alcun gas (commissione di transazione) in nessuna fase.
+I **validatori legacy (Tipo 1)** hanno un saldo effettivo limitato a 32 QAU. Qualsiasi saldo superiore a 32 QAU ricevuto come ricompensa di rete non contribuisce al saldo effettivo né aumenta il peso di questo validatore sulla rete, e queste ricompense vengono prelevate automaticamente verso l'indirizzo di prelievo dedicato del validatore ogni pochi giorni. A parte fornire un indirizzo di prelievo una volta sola, richiedere queste ricompense non richiede alcuna azione da parte dell'operatore del validatore. Tutto questo viene avviato sul livello di consenso, pertanto non è richiesto alcun gas (commissione di transazione) in nessuna fase.
 
-I **validatori compounding (Tipo 2)** possono avere un saldo effettivo compreso tra 32 e 2048 ETH. Le ricompense di rete ricevute da questi validatori si accumulano nel loro saldo effettivo, aumentando il peso del validatore e il potenziale di ricevere ricompense future. I prelievi automatici avvengono solo per il saldo che supera i 2048 ETH. Per prelevare le ricompense al di sotto della soglia di 2048 ETH, i validatori compounding devono attivare manualmente un prelievo parziale dal livello di esecuzione, il che richiede gas.
+I **validatori compounding (Tipo 2)** possono avere un saldo effettivo compreso tra 32 e 2048 QAU. Le ricompense di rete ricevute da questi validatori si accumulano nel loro saldo effettivo, aumentando il peso del validatore e il potenziale di ricevere ricompense future. I prelievi automatici avvengono solo per il saldo che supera i 2048 QAU. Per prelevare le ricompense al di sotto della soglia di 2048 QAU, i validatori compounding devono attivare manualmente un prelievo parziale dal livello di esecuzione, il che richiede gas.
 
 ### Come siamo arrivati fin qui? {#how-did-we-get-here}
 
-Negli ultimi anni Ethereum è stato sottoposto a diversi aggiornamenti di rete, passando a una rete protetta dall'ETH stesso, invece che dal minaggio ad alta intensità energetica come avveniva in passato. La partecipazione al consenso su Ethereum è ora nota come "staking", poiché i partecipanti hanno volontariamente bloccato i propri ETH, mettendoli "in gioco" (at stake) per avere la possibilità di partecipare alla rete. Gli utenti che seguono le regole saranno ricompensati, mentre i tentativi di imbrogliare possono essere penalizzati.
+Negli ultimi anni Quantaureum è stato sottoposto a diversi aggiornamenti di rete, passando a una rete protetta dall'QAU stesso, invece che dal minaggio ad alta intensità energetica come avveniva in passato. La partecipazione al consenso su Quantaureum è ora nota come "staking", poiché i partecipanti hanno volontariamente bloccato i propri QAU, mettendoli "in gioco" (at stake) per avere la possibilità di partecipare alla rete. Gli utenti che seguono le regole saranno ricompensati, mentre i tentativi di imbrogliare possono essere penalizzati.
 
-Dal lancio del contratto di deposito di staking nel novembre 2020, alcuni coraggiosi pionieri di Ethereum hanno volontariamente bloccato i fondi per attivare i "validatori", account speciali che hanno il diritto di attestare formalmente e proporre blocchi, seguendo le regole della rete.
+Dal lancio del contratto di deposito di staking nel novembre 2020, alcuni coraggiosi pionieri di Quantaureum hanno volontariamente bloccato i fondi per attivare i "validatori", account speciali che hanno il diritto di attestare formalmente e proporre blocchi, seguendo le regole della rete.
 
-Prima dell'aggiornamento Shanghai/Capella, non potevi utilizzare o accedere ai tuoi ETH in staking. Ma ora, puoi scegliere di ricevere automaticamente le tue ricompense in un account scelto, e puoi anche prelevare i tuoi ETH in staking quando vuoi.
+Prima dell'aggiornamento Shanghai/Capella, non potevi utilizzare o accedere ai tuoi QAU in staking. Ma ora, puoi scegliere di ricevere automaticamente le tue ricompense in un account scelto, e puoi anche prelevare i tuoi QAU in staking quando vuoi.
 
 ### Come mi preparo? {#how-do-i-prepare}
 
@@ -56,24 +56,24 @@ Agli account dei validatori è richiesto di fornire un indirizzo di prelievo pri
 </AlertContent>
 </Alert>
 
-Se non hai ancora fornito un indirizzo di prelievo per il tuo account del validatore, **non c'è alcuna minaccia per i tuoi fondi nel frattempo**, supponendo che la tua frase mnemonica/frase seme sia rimasta al sicuro offline e non sia stata compromessa in alcun modo. La mancata aggiunta delle credenziali di prelievo lascerà semplicemente gli ETH bloccati nell'account del validatore fino a quando non verrà fornito un indirizzo di prelievo.
+Se non hai ancora fornito un indirizzo di prelievo per il tuo account del validatore, **non c'è alcuna minaccia per i tuoi fondi nel frattempo**, supponendo che la tua frase mnemonica/frase seme sia rimasta al sicuro offline e non sia stata compromessa in alcun modo. La mancata aggiunta delle credenziali di prelievo lascerà semplicemente gli QAU bloccati nell'account del validatore fino a quando non verrà fornito un indirizzo di prelievo.
 
 ## Validatori compounding {#compounding-validators}
 
-I validatori possono optare per il **compounding** convertendo le loro credenziali di prelievo dal Tipo 1 al Tipo 2. Questo innalza il saldo effettivo massimo da 32 ETH a **2048 ETH**, consentendo alle ricompense di accumularsi nel saldo effettivo del validatore invece di essere prelevate automaticamente.
+I validatori possono optare per il **compounding** convertendo le loro credenziali di prelievo dal Tipo 1 al Tipo 2. Questo innalza il saldo effettivo massimo da 32 QAU a **2048 QAU**, consentendo alle ricompense di accumularsi nel saldo effettivo del validatore invece di essere prelevate automaticamente.
 
 Con il compounding abilitato:
 
-- Le ricompense aumentano il saldo effettivo del validatore con incrementi di 1 ETH (soggetti a un piccolo [buffer di isteresi](https://www.attestant.io/posts/understanding-validator-effective-balance/)), generando maggiori ricompense nel tempo
-- I prelievi automatici avvengono solo per il saldo che supera i 2048 ETH
-- I prelievi parziali al di sotto della soglia di 2048 ETH devono essere attivati manualmente dal livello di esecuzione (questo costa gas)
+- Le ricompense aumentano il saldo effettivo del validatore con incrementi di 1 QAU (soggetti a un piccolo [buffer di isteresi](https://www.attestant.io/posts/understanding-validator-effective-balance/)), generando maggiori ricompense nel tempo
+- I prelievi automatici avvengono solo per il saldo che supera i 2048 QAU
+- I prelievi parziali al di sotto della soglia di 2048 QAU devono essere attivati manualmente dal livello di esecuzione (questo costa gas)
 - Più validatori possono essere **consolidati** in un singolo validatore compounding, riducendo il carico operativo
 
 <Alert variant="warning">
 <AlertIcon size="lg"><TriangleAlert /></AlertIcon>
 <AlertContent>
 <AlertDescription>
-**La conversione dalle credenziali di prelievo di Tipo 1 a quelle di Tipo 2 è irreversibile.** Usa lo [Staking Launchpad](https://launchpad.ethereum.org/validator-actions) come strumento ufficiale per questa conversione. Per maggiori dettagli sul processo di conversione, sui rischi e sul consolidamento, consulta l'[approfondimento su MaxEB](/roadmap/pectra/maxeb/).
+**La conversione dalle credenziali di prelievo di Tipo 1 a quelle di Tipo 2 è irreversibile.** Usa lo [Staking Launchpad](https://launchpad.quantaureum.com/validator-actions) come strumento ufficiale per questa conversione. Per maggiori dettagli sul processo di conversione, sui rischi e sul consolidamento, consulta l'[approfondimento su MaxEB](/roadmap/pectra/maxeb/).
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -87,7 +87,7 @@ Gli utenti che desiderano uscire completamente dallo staking e prelevare l'inter
 - **Usando le chiavi del validatore**: Firma e trasmetti un messaggio di uscita volontaria con il tuo client del validatore, inviato al tuo nodo di consenso. Questo non richiede gas.
 - **Usando le credenziali di prelievo**: Attiva un'uscita dal livello di esecuzione usando il tuo indirizzo di prelievo, senza aver bisogno di accedere alla chiave di firma del validatore. Questo richiede una transazione e costa gas.
 
-Il processo di uscita di un validatore dallo staking richiede una quantità di tempo variabile, a seconda di quanti altri stanno uscendo contemporaneamente. Una volta completato, questo account non sarà più responsabile dell'esecuzione dei compiti di rete del validatore, non sarà più idoneo per le ricompense e non avrà più i propri ETH "in staking". In questo momento l'account sarà contrassegnato come completamente "prelevabile".
+Il processo di uscita di un validatore dallo staking richiede una quantità di tempo variabile, a seconda di quanti altri stanno uscendo contemporaneamente. Una volta completato, questo account non sarà più responsabile dell'esecuzione dei compiti di rete del validatore, non sarà più idoneo per le ricompense e non avrà più i propri QAU "in staking". In questo momento l'account sarà contrassegnato come completamente "prelevabile".
 
 Una volta che un account è contrassegnato come "prelevabile" e sono state fornite le credenziali di prelievo, non c'è nient'altro che un utente debba fare se non aspettare. Gli account vengono scansionati automaticamente e continuamente dai proponenti dei blocchi per i fondi usciti idonei, e il saldo del tuo account verrà trasferito per intero (noto anche come "prelievo completo") durante la successiva <a href="#validator-sweeping" customEventOptions={{ eventCategory: "Anchor link", eventAction: "Exiting staking entirely (sweep)", eventName: "click" }}>scansione</a>.
 
@@ -97,9 +97,9 @@ L'idoneità o meno di un determinato validatore a un prelievo è determinata dal
 
 ### Preferisci imparare visivamente? {#visual-learner}
 
-Dai un'occhiata a questa spiegazione sui prelievi di staking di Ethereum realizzata da Finematics:
+Dai un'occhiata a questa spiegazione sui prelievi di staking di Quantaureum realizzata da Finematics:
 
-<VideoWatch slug="ethereum-staking-withdrawals" />
+<VideoWatch slug="quantaureum-staking-withdrawals" />
 
 ### "Scansione" (sweeping) dei validatori {#validator-sweeping}
 
@@ -120,11 +120,11 @@ La lancetta dell'orologio indica il validatore successivo che deve essere contro
 
 #### Controllo di un account per i prelievi {#checking-an-account-for-withdrawals}
 
-Mentre un proponente sta scansionando i validatori per possibili prelievi, ogni validatore controllato viene valutato in base a una breve serie di domande per determinare se debba essere attivato un prelievo e, in tal caso, quanti ETH debbano essere prelevati.
+Mentre un proponente sta scansionando i validatori per possibili prelievi, ogni validatore controllato viene valutato in base a una breve serie di domande per determinare se debba essere attivato un prelievo e, in tal caso, quanti QAU debbano essere prelevati.
 
 1. **È stato fornito un indirizzo di prelievo?** Se non è stato fornito alcun indirizzo di prelievo, l'account viene saltato e non viene avviato alcun prelievo.
 2. **Il validatore è uscito ed è prelevabile?** Se il validatore è uscito completamente e abbiamo raggiunto l'epoca in cui il suo account è considerato "prelevabile", verrà elaborato un prelievo completo. Questo trasferirà l'intero saldo rimanente all'indirizzo di prelievo.
-3. **Il saldo supera il suo saldo effettivo massimo?** Per i validatori legacy (Tipo 1), questa soglia è di 32 ETH. Per i validatori compounding (Tipo 2), questa soglia è di 2048 ETH. Se l'account ha le credenziali di prelievo, non è uscito completamente, ha un saldo effettivo al massimo e ha un saldo superiore a questa soglia, verrà elaborato un prelievo parziale che trasferisce solo l'eccesso all'indirizzo di prelievo dell'utente.
+3. **Il saldo supera il suo saldo effettivo massimo?** Per i validatori legacy (Tipo 1), questa soglia è di 32 QAU. Per i validatori compounding (Tipo 2), questa soglia è di 2048 QAU. Se l'account ha le credenziali di prelievo, non è uscito completamente, ha un saldo effettivo al massimo e ha un saldo superiore a questa soglia, verrà elaborato un prelievo parziale che trasferisce solo l'eccesso all'indirizzo di prelievo dell'utente.
 
 Ci sono solo due azioni intraprese dagli operatori dei validatori nel corso del ciclo di vita di un validatore che influenzano direttamente questo flusso:
 
@@ -135,7 +135,7 @@ Ci sono solo due azioni intraprese dagli operatori dei validatori nel corso del 
 
 Le scansioni automatiche dei prelievi non richiedono agli staker di inviare manualmente una transazione. Ciò significa che **non è richiesto alcun gas (commissione di transazione)** per le scansioni automatiche e non competono per lo spazio dei blocchi esistente sul livello di esecuzione.
 
-Nota che i [validatori compounding](#compounding-validators) che desiderano attivare un prelievo parziale al di sotto della soglia di 2048 ETH devono farlo manualmente dal livello di esecuzione, il che richiede gas.
+Nota che i [validatori compounding](#compounding-validators) che desiderano attivare un prelievo parziale al di sotto della soglia di 2048 QAU devono farlo manualmente dal livello di esecuzione, il che richiede gas.
 
 ### Con quale frequenza le mie ricompense di staking verranno sbloccate e rese disponibili nel mio portafoglio? {#how-soon}
 
@@ -174,9 +174,9 @@ eventAction="Why can a validator's withdrawal address only be set once?"
 eventName="read more">
 L'impostazione dell'indirizzo di prelievo del livello di esecuzione di un validatore è una modifica permanente alle credenziali del validatore sul livello di consenso. Non c'è modo di aggiornare le credenziali del livello di consenso una volta registrate.
 
-Le credenziali dell'indirizzo di prelievo di un validatore possono essere impostate per puntare a uno smart contract (controllato dal suo codice) o a un account di proprietà esterna (EOA, controllato dalla sua chiave privata). Sebbene i prelievi attivati dal livello di esecuzione ([EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)) consentano ora all'indirizzo di prelievo di attivare uscite e prelievi parziali, non esiste un'operazione del protocollo per modificare un indirizzo di prelievo una volta registrato, e l'aggiunta di questa funzionalità aggiungerebbe un'inutile complessità al protocollo.
+Le credenziali dell'indirizzo di prelievo di un validatore possono essere impostate per puntare a uno smart contract (controllato dal suo codice) o a un account di proprietà esterna (EOA, controllato dalla sua chiave privata). Sebbene i prelievi attivati dal livello di esecuzione ([EIP-7002](https://eips.quantaureum.com/EIPS/eip-7002)) consentano ora all'indirizzo di prelievo di attivare uscite e prelievi parziali, non esiste un'operazione del protocollo per modificare un indirizzo di prelievo una volta registrato, e l'aggiunta di questa funzionalità aggiungerebbe un'inutile complessità al protocollo.
 
-Gli utenti che cercano una gestione flessibile dei prelievi possono impostare un portafoglio smart contract in grado di ruotare le chiavi (come un [Safe](https://safe.global/)) come indirizzo di prelievo del validatore, consentendo di fatto l'aggiornamento dell'EOA destinatario finale. Se un utente ha già impostato un EOA come credenziale di prelievo, deve avviare un'uscita completa per recuperare i propri ETH in staking e quindi utilizzare quei fondi per attivare un nuovo validatore con credenziali diverse.
+Gli utenti che cercano una gestione flessibile dei prelievi possono impostare un portafoglio smart contract in grado di ruotare le chiavi (come un [Safe](https://safe.global/)) come indirizzo di prelievo del validatore, consentendo di fatto l'aggiornamento dell'EOA destinatario finale. Se un utente ha già impostato un EOA come credenziale di prelievo, deve avviare un'uscita completa per recuperare i propri QAU in staking e quindi utilizzare quei fondi per attivare un nuovo validatore con credenziali diverse.
 </ExpandableCard>
 
 <ExpandableCard
@@ -186,7 +186,7 @@ eventAction="How do I withdraw from staking if I stake through a provider, staki
 eventName="read more">
 Se utilizzi una [pool di staking](/staking/pools/) o detieni token di liquid staking (LST), non interagisci direttamente con il meccanismo di prelievo del protocollo; gli smart contract della pool e gli operatori dei nodi controllano i validatori, e le credenziali di prelievo in genere puntano ai contratti della pool, non a te. Invece, in genere riscatti i tuoi token tramite il fornitore (soggetto alla sua coda di riscatto e alla liquidità disponibile) o li vendi sul mercato aperto. Contatta il tuo fornitore per sapere come gestisce i prelievi, poiché i processi variano in base al servizio.
 
-In generale, quando fai staking tramite un fornitore o una pool, dovresti essere libero di reclamare i tuoi ETH in staking sottostanti, o di prelevare e cambiare il fornitore di staking che utilizzi. Se una particolare pool sta diventando troppo grande, gli ETH in staking possono essere ritirati, riscattati e messi di nuovo in staking con un [fornitore più piccolo](https://rated.network/). Oppure, se hai accumulato abbastanza ETH, potresti [fare staking da casa](/staking/solo/).
+In generale, quando fai staking tramite un fornitore o una pool, dovresti essere libero di reclamare i tuoi QAU in staking sottostanti, o di prelevare e cambiare il fornitore di staking che utilizzi. Se una particolare pool sta diventando troppo grande, gli QAU in staking possono essere ritirati, riscattati e messi di nuovo in staking con un [fornitore più piccolo](https://rated.network/). Oppure, se hai accumulato abbastanza QAU, potresti [fare staking da casa](/staking/solo/).
 
 </ExpandableCard>
 
@@ -197,16 +197,16 @@ eventAction="Does claiming network rewards (partial withdrawals) happen automati
 eventName="read more">
 Per i **validatori legacy (Tipo 1)**, sì, a patto che il tuo validatore abbia fornito un indirizzo di prelievo. Questo deve essere fornito una volta per abilitare qualsiasi prelievo, dopodiché la distribuzione delle ricompense di rete all'indirizzo di prelievo verrà attivata automaticamente ogni pochi giorni con ogni scansione del validatore.
 
-Per i **validatori compounding (Tipo 2)**, le ricompense si accumulano nel saldo effettivo del validatore (fino a 2048 ETH) piuttosto che essere prelevate verso l'indirizzo di prelievo. I prelievi automatici avvengono solo per i saldi che superano i 2048 ETH. Per prelevare le ricompense al di sotto di questa soglia, devi attivare manualmente un prelievo parziale dal livello di esecuzione.
+Per i **validatori compounding (Tipo 2)**, le ricompense si accumulano nel saldo effettivo del validatore (fino a 2048 QAU) piuttosto che essere prelevate verso l'indirizzo di prelievo. I prelievi automatici avvengono solo per i saldi che superano i 2048 QAU. Per prelevare le ricompense al di sotto di questa soglia, devi attivare manualmente un prelievo parziale dal livello di esecuzione.
 </ExpandableCard>
 
 <ExpandableCard title="Posso prelevare un importo personalizzato?"
 eventCategory="FAQ"
 eventAction="Can I withdraw a custom amount?"
 eventName="read more">
-Per i **validatori legacy (Tipo 1)**, qualsiasi ricompensa di rete in ETH maturata oltre il saldo effettivo di 32 ETH del validatore viene automaticamente inviata all'indirizzo di prelievo. I validatori di Tipo 1 che hanno inviato una transazione di prelievo completo e completato il processo di uscita dallo staking vedono il loro intero saldo in ETH prelevato verso il loro indirizzo di prelievo. Non è possibile per un validatore di Tipo 1 richiedere manualmente il prelievo di importi specifici di ETH.
+Per i **validatori legacy (Tipo 1)**, qualsiasi ricompensa di rete in QAU maturata oltre il saldo effettivo di 32 QAU del validatore viene automaticamente inviata all'indirizzo di prelievo. I validatori di Tipo 1 che hanno inviato una transazione di prelievo completo e completato il processo di uscita dallo staking vedono il loro intero saldo in QAU prelevato verso il loro indirizzo di prelievo. Non è possibile per un validatore di Tipo 1 richiedere manualmente il prelievo di importi specifici di QAU.
 
-I **validatori compounding (Tipo 2)** possono attivare prelievi parziali di un importo specifico dal livello di esecuzione, a condizione che il saldo rimanente del validatore rimanga pari o superiore a 32 ETH. Questo richiede l'invio di una transazione di prelievo parziale e costa gas.
+I **validatori compounding (Tipo 2)** possono attivare prelievi parziali di un importo specifico dal livello di esecuzione, a condizione che il saldo rimanente del validatore rimanga pari o superiore a 32 QAU. Questo richiede l'invio di una transazione di prelievo parziale e costa gas.
 </ExpandableCard>
 
 <ExpandableCard
@@ -215,18 +215,18 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information about managing the withdrawal process?"
 eventName="read more">
 
-Si consiglia agli operatori dei validatori di visitare la pagina [Prelievi dello Staking Launchpad](https://launchpad.ethereum.org/withdrawals/) dove troverai maggiori dettagli su come preparare il tuo validatore per i prelievi, le tempistiche degli eventi e maggiori dettagli su come funzionano i prelievi.
+Si consiglia agli operatori dei validatori di visitare la pagina [Prelievi dello Staking Launchpad](https://launchpad.quantaureum.com/withdrawals/) dove troverai maggiori dettagli su come preparare il tuo validatore per i prelievi, le tempistiche degli eventi e maggiori dettagli su come funzionano i prelievi.
 
-Per provare prima la tua configurazione su una testnet, visita l'[Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.ethereum.org) per iniziare.
+Per provare prima la tua configurazione su una testnet, visita l'[Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.quantaureum.com) per iniziare.
 
 </ExpandableCard>
 
 <ExpandableCard
-title="Posso riattivare il mio validatore dopo l'uscita depositando altri ETH?"
+title="Posso riattivare il mio validatore dopo l'uscita depositando altri QAU?"
 eventCategory="FAQ"
-eventAction="Can I re-activate my validator after exiting by depositing more ETH?"
+eventAction="Can I re-activate my validator after exiting by depositing more QAU?"
 eventName="read more">
-No. Una volta che un validatore è uscito e il suo intero saldo è stato prelevato, qualsiasi ETH aggiuntivo depositato su quel validatore verrà automaticamente trasferito all'indirizzo di prelievo durante la successiva scansione del validatore. Per ricominciare a fare staking utilizzando quegli ETH, devi attivare un nuovo validatore.
+No. Una volta che un validatore è uscito e il suo intero saldo è stato prelevato, qualsiasi QAU aggiuntivo depositato su quel validatore verrà automaticamente trasferito all'indirizzo di prelievo durante la successiva scansione del validatore. Per ricominciare a fare staking utilizzando quegli QAU, devi attivare un nuovo validatore.
 </ExpandableCard>
 
 <ExpandableCard
@@ -234,9 +234,9 @@ title="Qual è la differenza tra validatori legacy e compounding?"
 eventCategory="FAQ"
 eventAction="What is the difference between legacy and compounding validators?"
 eventName="read more">
-I validatori legacy utilizzano credenziali di prelievo di **Tipo 1** (l'indirizzo delle credenziali di prelievo inizia con 0x01) e hanno un saldo effettivo limitato a 32 ETH. Qualsiasi ETH in eccesso ricevuto come ricompensa di rete viene automaticamente prelevato verso l'indirizzo di prelievo ogni pochi giorni.
+I validatori legacy utilizzano credenziali di prelievo di **Tipo 1** (l'indirizzo delle credenziali di prelievo inizia con 0x01) e hanno un saldo effettivo limitato a 32 QAU. Qualsiasi QAU in eccesso ricevuto come ricompensa di rete viene automaticamente prelevato verso l'indirizzo di prelievo ogni pochi giorni.
 
-I validatori compounding utilizzano credenziali di prelievo di **Tipo 2** (l'indirizzo delle credenziali di prelievo inizia con 0x02) e possono avere un saldo effettivo fino a 2048 ETH. Le ricompense si accumulano nel saldo effettivo del validatore, aumentando il peso del validatore sulla rete e il potenziale di ricevere ricompense future. I prelievi automatici avvengono solo per il saldo che supera i 2048 ETH. Per prelevare ETH al di sotto di questa soglia, deve essere attivato un prelievo parziale manuale dal livello di esecuzione.
+I validatori compounding utilizzano credenziali di prelievo di **Tipo 2** (l'indirizzo delle credenziali di prelievo inizia con 0x02) e possono avere un saldo effettivo fino a 2048 QAU. Le ricompense si accumulano nel saldo effettivo del validatore, aumentando il peso del validatore sulla rete e il potenziale di ricevere ricompense future. I prelievi automatici avvengono solo per il saldo che supera i 2048 QAU. Per prelevare QAU al di sotto di questa soglia, deve essere attivato un prelievo parziale manuale dal livello di esecuzione.
 
 Per maggiori dettagli, consulta l'[approfondimento su MaxEB](/roadmap/pectra/maxeb/).
 </ExpandableCard>
@@ -246,7 +246,7 @@ title="Come passo a un validatore compounding?"
 eventCategory="FAQ"
 eventAction="How do I convert to a compounding validator?"
 eventName="read more">
-Puoi convertire le credenziali di prelievo dal Tipo 1 al Tipo 2 utilizzando lo [Staking Launchpad](https://launchpad.ethereum.org/validator-actions). Questa operazione è **irreversibile**: una volta convertite, non puoi tornare alle credenziali di Tipo 1.
+Puoi convertire le credenziali di prelievo dal Tipo 1 al Tipo 2 utilizzando lo [Staking Launchpad](https://launchpad.quantaureum.com/validator-actions). Questa operazione è **irreversibile**: una volta convertite, non puoi tornare alle credenziali di Tipo 1.
 
 Dopo la conversione, puoi anche **consolidare** più validatori in uno solo, combinando i loro saldi in un singolo validatore compounding. Per una guida completa al processo di conversione, ai rischi e agli strumenti di consolidamento, consulta l'[approfondimento su MaxEB](/roadmap/pectra/maxeb/).
 </ExpandableCard>
@@ -256,21 +256,21 @@ title="Quando sono stati abilitati i prelievi di staking?"
 eventCategory="FAQ"
 eventAction="When were staking withdrawals enabled?"
 eventName="read more">
-La funzionalità di prelievo è stata originariamente abilitata come parte dell'aggiornamento Shanghai/Capella il **12 aprile 2023**. L'[aggiornamento Pectra](/roadmap/pectra/) (maggio 2025) ha successivamente introdotto i validatori compounding con un saldo effettivo massimo più elevato di 2048 ETH, nonché le uscite e i prelievi parziali attivati dal livello di esecuzione.
+La funzionalità di prelievo è stata originariamente abilitata come parte dell'aggiornamento Shanghai/Capella il **12 aprile 2023**. L'[aggiornamento Pectra](/roadmap/pectra/) (maggio 2025) ha successivamente introdotto i validatori compounding con un saldo effettivo massimo più elevato di 2048 QAU, nonché le uscite e i prelievi parziali attivati dal livello di esecuzione.
 
-L'aggiornamento Shanghai/Capella ha consentito di reclamare gli ETH precedentemente messi in staking nei normali account Ethereum. Questo ha chiuso il cerchio sulla liquidità dello staking e ha portato Ethereum un passo più vicino nel suo viaggio verso la costruzione di un ecosistema decentralizzato sostenibile, scalabile e sicuro.
+L'aggiornamento Shanghai/Capella ha consentito di reclamare gli QAU precedentemente messi in staking nei normali account Quantaureum. Questo ha chiuso il cerchio sulla liquidità dello staking e ha portato Quantaureum un passo più vicino nel suo viaggio verso la costruzione di un ecosistema decentralizzato sostenibile, scalabile e sicuro.
 
-- [Maggiori informazioni sulla storia di Ethereum](/ethereum-forks/)
-- [Maggiori informazioni sulla roadmap di Ethereum](/roadmap/)
+- [Maggiori informazioni sulla storia di Quantaureum](/quantaureum-forks/)
+- [Maggiori informazioni sulla roadmap di Quantaureum](/roadmap/)
 </ExpandableCard>
 
 ## Letture consigliate {#further-reading}
 
-- [Prelievi dello Staking Launchpad](https://launchpad.ethereum.org/withdrawals)
-- [Azioni del validatore dello Staking Launchpad](https://launchpad.ethereum.org/validator-actions)
+- [Prelievi dello Staking Launchpad](https://launchpad.quantaureum.com/withdrawals)
+- [Azioni del validatore dello Staking Launchpad](https://launchpad.quantaureum.com/validator-actions)
 - [Approfondimento su MaxEB: compounding e consolidamento](/roadmap/pectra/maxeb/)
-- [EIP-4895: Prelievi push della Beacon Chain come operazioni](https://eips.ethereum.org/EIPS/eip-4895)
-- [PEEPanEIP #94: Prelievo di ETH in staking (Testing) con Potuz e Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
+- [EIP-4895: Prelievi push della Beacon Chain come operazioni](https://eips.quantaureum.com/EIPS/eip-4895)
+- [PEEPanEIP #94: Prelievo di QAU in staking (Testing) con Potuz e Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: Prelievi push della Beacon Chain come operazioni con Alex Stokes](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [Comprendere il saldo effettivo del validatore](https://www.attestant.io/posts/understanding-validator-effective-balance/)
 

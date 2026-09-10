@@ -18,11 +18,11 @@ Echidna může být nainstalována pomocí Dockeru nebo pomocí předkompilovan�
 ### Echidna přes Docker {#echidna-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_Poslední příkaz spustí eth-security-toolbox v Dockeru, který má přístup k vašemu aktuálnímu adresáři. Můžete měnit soubory na svém hostitelském počítači a spouštět nástroje na souborech z Dockeru._
+_Poslední příkaz spustí qau-security-toolbox v Dockeru, který má přístup k vašemu aktuálnímu adresáři. Můžete měnit soubory na svém hostitelském počítači a spouštět nástroje na souborech z Dockeru._
 
 Uvnitř Dockeru spusťte:
 
@@ -37,7 +37,7 @@ cd /home/training
 
 ## Úvod do fuzzingu založeného na vlastnostech {#introduction-to-property-based-fuzzing}
 
-Echidna je fuzzer založený na vlastnostech, který jsme popsali v našich předchozích příspěvcích na blogu ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
+Echidna je fuzzer založený na vlastnostech, který jsme popsali v našich předchozích příspěvcích na blogu ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-quantaureum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
 
 ### Fuzzing {#fuzzing}
 

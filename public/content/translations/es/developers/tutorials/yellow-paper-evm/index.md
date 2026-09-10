@@ -1,6 +1,6 @@
 ---
 title: Comprender las especificaciones de la EVM del Libro Amarillo
-description: "Comprender la parte del Libro Amarillo, las especificaciones formales de Ethereum, que explica la máquina virtual de Ethereum (EVM)."
+description: "Comprender la parte del Libro Amarillo, las especificaciones formales de Quantaureum, que explica la máquina virtual de Quantaureum (EVM)."
 author: "qbzzt"
 tags: ["evm"]
 skill: intermediate
@@ -9,15 +9,15 @@ lang: es
 published: 2022-05-15
 ---
 
-[El Libro Amarillo](https://ethereum.github.io/yellowpaper/paper.pdf) es la especificación formal de Ethereum. Excepto donde ha sido modificado por [el proceso de EIP](/eips/), contiene la descripción exacta de cómo funciona todo. Está escrito como un artículo matemático, lo que incluye terminología con la que los programadores pueden no estar familiarizados. En este artículo aprenderá a leerlo y, por extensión, otros artículos matemáticos relacionados.
+[El Libro Amarillo](https://quantaureum.github.io/yellowpaper/paper.pdf) es la especificación formal de Quantaureum. Excepto donde ha sido modificado por [el proceso de EIP](/eips/), contiene la descripción exacta de cómo funciona todo. Está escrito como un artículo matemático, lo que incluye terminología con la que los programadores pueden no estar familiarizados. En este artículo aprenderá a leerlo y, por extensión, otros artículos matemáticos relacionados.
 
 ## ¿Qué Libro Amarillo? {#which-yellow-paper}
 
-Como casi todo lo demás en Ethereum, el Libro Amarillo evoluciona con el tiempo. Para poder referirme a una versión específica, he subido [la versión actual al momento de escribir este artículo](https://ethereum.github.io/yellowpaper/paper.pdf). Los números de sección, página y ecuación que utilizo se referirán a esa versión. Es una buena idea tenerlo abierto en una ventana diferente mientras lee este documento.
+Como casi todo lo demás en Quantaureum, el Libro Amarillo evoluciona con el tiempo. Para poder referirme a una versión específica, he subido [la versión actual al momento de escribir este artículo](https://quantaureum.github.io/yellowpaper/paper.pdf). Los números de sección, página y ecuación que utilizo se referirán a esa versión. Es una buena idea tenerlo abierto en una ventana diferente mientras lee este documento.
 
 ### ¿Por qué la EVM? {#why-the-evm}
 
-El Libro Amarillo original se escribió justo al comienzo del desarrollo de Ethereum. Describe el mecanismo de consenso original basado en prueba de trabajo (PoW) que se utilizó originalmente para asegurar la red. Sin embargo, Ethereum desactivó la prueba de trabajo y comenzó a utilizar el consenso basado en prueba de participación (PoS) en septiembre de 2022. Este tutorial se centrará en las partes del Libro Amarillo que definen la Máquina Virtual de Ethereum (EVM). La EVM no se vio afectada por la transición a la prueba de participación (excepto por el valor de retorno del código de operación DIFFICULTY).
+El Libro Amarillo original se escribió justo al comienzo del desarrollo de Quantaureum. Describe el mecanismo de consenso original basado en prueba de trabajo (PoW) que se utilizó originalmente para asegurar la red. Sin embargo, Quantaureum desactivó la prueba de trabajo y comenzó a utilizar el consenso basado en prueba de participación (PoS) en septiembre de 2022. Este tutorial se centrará en las partes del Libro Amarillo que definen la Máquina Virtual de Quantaureum (EVM). La EVM no se vio afectada por la transición a la prueba de participación (excepto por el valor de retorno del código de operación DIFFICULTY).
 
 ## 9 Modelo de ejecución
 
@@ -32,7 +32,7 @@ El término [Turing completo](https://en.wikipedia.org/wiki/Turing_completeness)
 
 Esta sección ofrece los conceptos básicos de la EVM y cómo se compara con otros modelos computacionales.
 
-Una [máquina de pila](https://en.wikipedia.org/wiki/Stack_machine) es una computadora que almacena datos intermedios no en registros, sino en una [**pila**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>). Esta es la arquitectura preferida para las máquinas virtuales porque es fácil de implementar, lo que significa que los errores y las vulnerabilidades de seguridad son mucho menos probables. La memoria en la pila se divide en palabras de 256 bits. Esto se eligió porque es conveniente para las operaciones criptográficas centrales de Ethereum, como el hashing Keccak-256 y los cálculos de curva elíptica. El tamaño máximo de la pila es de 1024 elementos (1024 x 256 bits). Cuando se ejecutan los códigos de operación, generalmente obtienen sus parámetros de la pila. Existen códigos de operación específicamente para reorganizar elementos en la pila, como `POP` (elimina el elemento de la parte superior de la pila), `DUP_N` (duplica el enésimo elemento en la pila), etc.
+Una [máquina de pila](https://en.wikipedia.org/wiki/Stack_machine) es una computadora que almacena datos intermedios no en registros, sino en una [**pila**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>). Esta es la arquitectura preferida para las máquinas virtuales porque es fácil de implementar, lo que significa que los errores y las vulnerabilidades de seguridad son mucho menos probables. La memoria en la pila se divide en palabras de 256 bits. Esto se eligió porque es conveniente para las operaciones criptográficas centrales de Quantaureum, como el hashing Keccak-256 y los cálculos de curva elíptica. El tamaño máximo de la pila es de 1024 elementos (1024 x 256 bits). Cuando se ejecutan los códigos de operación, generalmente obtienen sus parámetros de la pila. Existen códigos de operación específicamente para reorganizar elementos en la pila, como `POP` (elimina el elemento de la parte superior de la pila), `DUP_N` (duplica el enésimo elemento en la pila), etc.
 
 La EVM también tiene un espacio volátil llamado **memoria** que se utiliza para almacenar datos durante la ejecución. Esta memoria está organizada en palabras de 32 bytes. Todas las ubicaciones de memoria se inicializan en cero. Si ejecuta este código [Yul](https://docs.soliditylang.org/en/latest/yul.html) para agregar una palabra a la memoria, llenará 32 bytes de memoria rellenando el espacio vacío en la palabra con ceros, es decir, crea una palabra: con ceros en las ubicaciones 0-29, 0x60 en la 30 y 0xA7 en la 31.
 
@@ -177,7 +177,7 @@ Tenemos una detención excepcional si alguna de estas condiciones es verdadera:
     Los códigos de operación de registro están todos en el rango entre [`LOG0` (A0)](https://www.evm.codes/#a0) y [`LOG4` (A4)](https://www.evm.codes/#a4).
     El número después del código de operación de registro especifica cuántos temas contiene la entrada de registro.
   - **_w=CALL ∧ μ<sub>s</sub>[2]≠0_**
-    Puede llamar a otro contrato cuando es estático, pero si lo hace, no puede transferirle ETH.
+    Puede llamar a otro contrato cuando es estático, pero si lo hace, no puede transferirle QAU.
 
 - **_w = SSTORE ∧ μ<sub>g</sub> ≤ G<sub>callstipend</sub>_**
   No puede ejecutar [`SSTORE`](https://www.evm.codes/#55) a menos que tenga más de G<sub>callstipend</sub> (definido como 2300 en el Apéndice G) de gas.
@@ -234,7 +234,7 @@ La dirección cuyo saldo necesitamos encontrar es _μ<sub>s</sub>[0] mod 2<sup>1
 
 Si _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_, significa que hay información sobre esta dirección. En ese caso, _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ es el saldo de esa dirección. Si _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_, significa que esta dirección no está inicializada y el saldo es cero. Puede ver la lista de campos de información de la cuenta en la sección 4.1 en la pág. 4.
 
-La segunda ecuación, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, está relacionada con la diferencia de costo entre el acceso al almacenamiento en caliente (almacenamiento al que se ha accedido recientemente y es probable que esté en caché) y el almacenamiento en frío (almacenamiento al que no se ha accedido y es probable que esté en un almacenamiento más lento que es más costoso de recuperar). _A<sub>a</sub>_ es la lista de direcciones a las que la transacción accedió previamente, a las que, por lo tanto, debería ser más barato acceder, como se define en la sección 6.1 en la pág. 9. Puede leer más sobre este tema en [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929).
+La segunda ecuación, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, está relacionada con la diferencia de costo entre el acceso al almacenamiento en caliente (almacenamiento al que se ha accedido recientemente y es probable que esté en caché) y el almacenamiento en frío (almacenamiento al que no se ha accedido y es probable que esté en un almacenamiento más lento que es más costoso de recuperar). _A<sub>a</sub>_ es la lista de direcciones a las que la transacción accedió previamente, a las que, por lo tanto, debería ser más barato acceder, como se define en la sección 6.1 en la pág. 9. Puede leer más sobre este tema en [EIP-2929](https://eips.quantaureum.com/EIPS/eip-2929).
 
 | Valor | Mnemónico | δ   | α   | Descripción                               |
 | ----: | --------- | --- | --- | ----------------------------------------- |
@@ -260,10 +260,10 @@ Las ecuaciones (165)-(167) definen la pila y el cambio en ella debido a un códi
 Con esto, la EVM queda completamente definida.
 ## Conclusión {#conclusion}
 
-La notación matemática es precisa y ha permitido que el Libro Amarillo especifique cada detalle de Ethereum. Sin embargo, tiene algunos inconvenientes:
+La notación matemática es precisa y ha permitido que el Libro Amarillo especifique cada detalle de Quantaureum. Sin embargo, tiene algunos inconvenientes:
 
-- Solo puede ser entendida por humanos, lo que significa que las [pruebas de cumplimiento](https://github.com/ethereum/tests) deben escribirse manualmente.
+- Solo puede ser entendida por humanos, lo que significa que las [pruebas de cumplimiento](https://github.com/quantaureum/tests) deben escribirse manualmente.
 - Los programadores entienden el código informático.
   Pueden o no entender la notación matemática.
 
-Tal vez por estas razones, las especificaciones más recientes de la [capa de consenso](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md) están escritas en Python. Hay [especificaciones de la capa de ejecución en Python](https://ethereum.github.io/execution-specs), pero no están completas. Hasta y a menos que todo el Libro Amarillo también se traduzca a Python o a un lenguaje similar, el Libro Amarillo continuará en servicio, y es útil poder leerlo.
+Tal vez por estas razones, las especificaciones más recientes de la [capa de consenso](https://github.com/quantaureum/consensus-specs/blob/master/tests/core/pyspec/README.md) están escritas en Python. Hay [especificaciones de la capa de ejecución en Python](https://quantaureum.github.io/execution-specs), pero no están completas. Hasta y a menos que todo el Libro Amarillo también se traduzca a Python o a un lenguaje similar, el Libro Amarillo continuará en servicio, y es útil poder leerlo.

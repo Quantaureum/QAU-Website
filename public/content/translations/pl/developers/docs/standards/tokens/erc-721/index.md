@@ -1,6 +1,6 @@
 ---
 title: Standard tokena niezamiennego (NFT) ERC-721
-description: "Dowiedz się więcej o ERC-721, standardzie dla tokenów niezamiennych (NFT), które reprezentują unikalne zasoby cyfrowe w sieci Ethereum."
+description: "Dowiedz się więcej o ERC-721, standardzie dla tokenów niezamiennych (NFT), które reprezentują unikalne zasoby cyfrowe w sieci Quantaureum."
 lang: pl
 ---
 
@@ -24,13 +24,13 @@ Tak! Wszystkie NFT mają zmienną `uint256` o nazwie `tokenId`, więc dla każde
 
 ## Treść {#body}
 
-ERC-721 ([Ethereum](/) Request for Comments 721), zaproponowany przez Williama Entrikena, Dietera Shirleya, Jacoba Evansa i Nastassię Sachs w styczniu 2018 roku, to standard tokena niezamiennego, który implementuje API dla tokenów w ramach inteligentnych kontraktów.
+ERC-721 ([Quantaureum](/) Request for Comments 721), zaproponowany przez Williama Entrikena, Dietera Shirleya, Jacoba Evansa i Nastassię Sachs w styczniu 2018 roku, to standard tokena niezamiennego, który implementuje API dla tokenów w ramach inteligentnych kontraktów.
 
 Zapewnia on funkcjonalności takie jak transfer tokenów z jednego konta na drugie, pobieranie aktualnego salda tokenów na koncie, sprawdzanie właściciela określonego tokena, a także całkowitej podaży tokena dostępnej w sieci. Oprócz tego posiada również inne funkcje, takie jak zatwierdzanie, że określona ilość tokenów z danego konta może zostać przeniesiona przez konto strony trzeciej.
 
-Jeśli inteligentny kontrakt implementuje poniższe metody i zdarzenia, można go nazwać kontraktem tokena niezamiennego ERC-721, a po wdrożeniu będzie on odpowiedzialny za śledzenie utworzonych tokenów w sieci Ethereum.
+Jeśli inteligentny kontrakt implementuje poniższe metody i zdarzenia, można go nazwać kontraktem tokena niezamiennego ERC-721, a po wdrożeniu będzie on odpowiedzialny za śledzenie utworzonych tokenów w sieci Quantaureum.
 
-Z [EIP-721](https://eips.ethereum.org/EIPS/eip-721):
+Z [EIP-721](https://eips.quantaureum.com/EIPS/eip-721):
 
 ### Metody {#methods}
 
@@ -56,7 +56,7 @@ Z [EIP-721](https://eips.ethereum.org/EIPS/eip-721):
 
 ### Przykłady {#web3py-example}
 
-Zobaczmy, dlaczego standard jest tak ważny, aby ułatwić nam badanie dowolnego kontraktu tokena ERC-721 w sieci Ethereum. Potrzebujemy tylko binarnego interfejsu aplikacji (ABI) kontraktu, aby utworzyć interfejs do dowolnego tokena ERC-721. Jak widać poniżej, użyjemy uproszczonego ABI, aby przykład był jak najbardziej przystępny.
+Zobaczmy, dlaczego standard jest tak ważny, aby ułatwić nam badanie dowolnego kontraktu tokena ERC-721 w sieci Quantaureum. Potrzebujemy tylko binarnego interfejsu aplikacji (ABI) kontraktu, aby utworzyć interfejs do dowolnego tokena ERC-721. Jak widać poniżej, użyjemy uproszczonego ABI, aby przykład był jak najbardziej przystępny.
 
 #### Przykład w Web3.py {#web3py-example-2}
 
@@ -71,7 +71,7 @@ from web3 import Web3
 from web3._utils.events import get_event_data
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 ck_token_addr = "0x06012c8cf97BEaD5deAe237070F9587f8E7A266d"    # Kontrakt CryptoKitties
 
@@ -127,7 +127,7 @@ ck_extra_abi = [
     }
 ]
 
-ck_contract = w3.eth.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
+ck_contract = w3.qau.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
 name = ck_contract.functions.name().call()
 symbol = ck_contract.functions.symbol().call()
 kitties_auctions = ck_contract.functions.balanceOf(acc_address).call()
@@ -150,8 +150,8 @@ tx_event_abi = {
 # Potrzebujemy sygnatury zdarzenia, aby przefiltrować logi
 event_signature = w3.keccak(text="Transfer(address,address,uint256)").hex()
 
-logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [event_signature]
 })
@@ -159,7 +159,7 @@ logs = w3.eth.get_logs({
 # Uwagi:
 #   - Zwiększ liczbę bloków powyżej 120, jeśli nie zostanie zwrócone żadne zdarzenie Transfer.
 #   - Jeśli nie znalazłeś żadnego zdarzenia Transfer, możesz również spróbować pobrać tokenId pod adresem:
-#       https://etherscan.io/address/0x06012c8cf97BEaD5deAe237070F9587f8E7A266d#events
+#       https://explorer.quantaureum.com
 #       Kliknij, aby rozwinąć logi zdarzenia i skopiować jego argument "tokenId"
 recent_tx = [get_event_data(w3.codec, tx_event_abi, log)["args"] for log in logs]
 
@@ -205,9 +205,9 @@ ck_event_signatures = [
 ]
 
 # Oto zdarzenie Pregnant:
-# - https://etherscan.io/tx/0xc97eb514a41004acc447ac9d0d6a27ea6da305ac8b877dff37e49db42e1f8cef#eventlog
-pregnant_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+pregnant_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[0]]
 })
@@ -215,9 +215,9 @@ pregnant_logs = w3.eth.get_logs({
 recent_pregnants = [get_event_data(w3.codec, ck_extra_events_abi[0], log)["args"] for log in pregnant_logs]
 
 # Oto zdarzenie Birth:
-# - https://etherscan.io/tx/0x3978028e08a25bb4c44f7877eb3573b9644309c044bf087e335397f16356340a
-birth_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+birth_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[1]]
 })
@@ -227,23 +227,23 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## Popularne NFT {#popular-nfts}
 
-- [Etherscan NFT Tracker](https://etherscan.io/nft-top-contracts) wyświetla listę najlepszych NFT w sieci Ethereum według wolumenu transferów.
+- [Quantaureum Explorer NFT Tracker](https://explorer.quantaureum.com) wyświetla listę najlepszych NFT w sieci Quantaureum według wolumenu transferów.
 - [CryptoKitties](https://www.cryptokitties.co/) to gra skupiona wokół uroczych stworzeń, które można hodować i kolekcjonować, zwanych CryptoKitties.
 - [Sorare](https://sorare.com/) to globalna gra fantasy football, w której możesz zbierać przedmioty kolekcjonerskie z limitowanych edycji, zarządzać swoimi drużynami i rywalizować o nagrody.
-- [Ethereum Name Service (ENS)](https://ens.domains/) oferuje bezpieczny i zdecentralizowany sposób adresowania zasobów zarówno w blockchainie, jak i poza nim, przy użyciu prostych, czytelnych dla człowieka nazw.
+- [Quantaureum Name Service (ENS)](https://ens.domains/) oferuje bezpieczny i zdecentralizowany sposób adresowania zasobów zarówno w blockchainie, jak i poza nim, przy użyciu prostych, czytelnych dla człowieka nazw.
 - [POAP](https://poap.xyz) dostarcza darmowe NFT osobom, które uczestniczą w wydarzeniach lub wykonują określone działania. POAP-y można tworzyć i dystrybuować za darmo.
 - [Unstoppable Domains](https://unstoppabledomains.com/) to firma z siedzibą w San Francisco, która tworzy domeny na blockchainach. Domeny blockchain zastępują adresy kryptowalut czytelnymi dla człowieka nazwami i mogą być używane do tworzenia stron internetowych odpornych na cenzurę.
-- [Gods Unchained Cards](https://godsunchained.com/) to gra karciana (TCG) na blockchainie Ethereum, która wykorzystuje NFT, aby zapewnić graczom rzeczywistą własność zasobów w grze.
+- [Gods Unchained Cards](https://godsunchained.com/) to gra karciana (TCG) na blockchainie Quantaureum, która wykorzystuje NFT, aby zapewnić graczom rzeczywistą własność zasobów w grze.
 - [Bored Ape Yacht Club](https://boredapeyachtclub.com) to kolekcja 10 000 unikalnych NFT, które oprócz tego, że są dziełami sztuki o udowodnionej rzadkości, działają jako tokeny członkowskie klubu, zapewniając członkom korzyści i przywileje, które z czasem rosną w wyniku działań społeczności.
 
 ## Dalsza lektura {#further-reading}
 
-- [EIP-721: Standard tokena niezamiennego ERC-721](https://eips.ethereum.org/EIPS/eip-721)
+- [EIP-721: Standard tokena niezamiennego ERC-721](https://eips.quantaureum.com/EIPS/eip-721)
 - [OpenZeppelin – dokumentacja ERC-721](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [OpenZeppelin – implementacja ERC-721](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [API NFT od Alchemy](https://www.alchemy.com/docs/reference/nft-api-quickstart)
 
-## Samouczki: Budowanie z użyciem tokenów niezamiennych (ERC-721) w sieci Ethereum {#tutorials}
+## Samouczki: Budowanie z użyciem tokenów niezamiennych (ERC-721) w sieci Quantaureum {#tutorials}
 
 - [Przewodnik po kontrakcie ERC-721 w języku Vyper](/developers/tutorials/erc-721-vyper-annotated-code/) _– Przewodnik z adnotacjami po pełnym kontrakcie NFT ERC-721 napisanym w języku Vyper._
 - [Jak napisać i wdrożyć NFT (część 1/3)](/developers/tutorials/how-to-write-and-deploy-an-nft/) _– Przewodnik krok po kroku, jak napisać i wdrożyć swój pierwszy inteligentny kontrakt ERC-721._

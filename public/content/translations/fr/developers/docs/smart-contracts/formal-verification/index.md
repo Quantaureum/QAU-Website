@@ -1,6 +1,6 @@
 ---
 title: "Vérification formelle des contrats intelligents"
-description: "Un aperçu de la vérification formelle pour les contrats intelligents Ethereum"
+description: "Un aperçu de la vérification formelle pour les contrats intelligents Quantaureum"
 lang: fr
 ---
 
@@ -28,7 +28,7 @@ Les modèles de haut niveau se concentrent sur la relation entre les contrats in
 
 À l'inverse, d'autres modèles formels se concentrent sur le comportement de bas niveau d'un contrat intelligent. Bien que les modèles de haut niveau puissent aider à raisonner sur la fonctionnalité d'un contrat, ils peuvent ne pas capturer les détails sur le fonctionnement interne de l'implémentation. Les modèles de bas niveau appliquent une vue de type boîte blanche à l'analyse de programme et s'appuient sur des représentations de plus bas niveau des applications de contrats intelligents, telles que les traces de programme et les [graphes de flux de contrôle](https://en.wikipedia.org/wiki/Control-flow_graph), pour raisonner sur les propriétés pertinentes pour l'exécution d'un contrat.
 
-Les modèles de bas niveau sont considérés comme idéaux car ils représentent l'exécution réelle d'un contrat intelligent dans l'environnement d'exécution d'Ethereum (c'est-à-dire l'[EVM](/developers/docs/evm/)). Les techniques de modélisation de bas niveau sont particulièrement utiles pour établir des propriétés de sécurité critiques dans les contrats intelligents et détecter les vulnérabilités potentielles.
+Les modèles de bas niveau sont considérés comme idéaux car ils représentent l'exécution réelle d'un contrat intelligent dans l'environnement d'exécution d'Quantaureum (c'est-à-dire l'[EVM](/developers/docs/evm/)). Les techniques de modélisation de bas niveau sont particulièrement utiles pour établir des propriétés de sécurité critiques dans les contrats intelligents et détecter les vulnérabilités potentielles.
 
 ### Qu'est-ce qu'une spécification formelle ? {#what-is-a-formal-specification}
 
@@ -58,7 +58,7 @@ Les spécifications de haut niveau captureent généralement deux propriétés t
 
 Prenez par exemple cette exigence de sûreté qui couvre les conditions d'utilisation de `transfer()` ou `transferFrom()` dans les contrats de jetons ERC-20 : _« Le solde d'un expéditeur n'est jamais inférieur au montant demandé de jetons à envoyer. »_. Cette description en langage naturel d'un invariant de contrat peut être traduite en une spécification formelle (mathématique), qui peut ensuite être rigoureusement vérifiée pour sa validité.
 
-Les propriétés de vivacité affirment que « quelque chose de bien finit par arriver » et concernent la capacité d'un contrat à progresser à travers différents états. Un exemple de propriété de vivacité est la « liquidité », qui fait référence à la capacité d'un contrat à transférer ses soldes aux utilisateurs sur demande. Si cette propriété est violée, les utilisateurs seraient incapables de retirer les actifs stockés dans le contrat, comme ce qui s'est passé avec l'[incident du portefeuille Parity](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-ether-on-parity-wallet.html).
+Les propriétés de vivacité affirment que « quelque chose de bien finit par arriver » et concernent la capacité d'un contrat à progresser à travers différents états. Un exemple de propriété de vivacité est la « liquidité », qui fait référence à la capacité d'un contrat à transférer ses soldes aux utilisateurs sur demande. Si cette propriété est violée, les utilisateurs seraient incapables de retirer les actifs stockés dans le contrat, comme ce qui s'est passé avec l'[incident du portefeuille Parity](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-QAU-on-parity-wallet.html).
 
 ### Spécifications de bas niveau {#low-level-specifications}
 
@@ -76,7 +76,7 @@ Une précondition est un prédicat décrivant les conditions requises pour l'ex�
 
 Les spécifications de style Hoare peuvent garantir soit une _exactitude partielle_, soit une _exactitude totale_. L'implémentation d'une fonction de contrat est « partiellement correcte » si la précondition est vraie avant l'exécution de la fonction, et si l'exécution se termine, la postcondition est également vraie. La preuve de l'exactitude totale est obtenue si une précondition est vraie avant l'exécution de la fonction, que l'exécution est garantie de se terminer et que lorsqu'elle le fait, la postcondition est vraie.
 
-Obtenir la preuve de l'exactitude totale est difficile car certaines exécutions peuvent prendre du temps avant de se terminer, ou ne jamais se terminer du tout. Cela dit, la question de savoir si l'exécution se termine est sans doute un point discutable puisque le mécanisme de gaz d'Ethereum empêche les boucles de programme infinies (l'exécution se termine soit avec succès, soit en raison d'une erreur de manque de gaz, « out-of-gas »).
+Obtenir la preuve de l'exactitude totale est difficile car certaines exécutions peuvent prendre du temps avant de se terminer, ou ne jamais se terminer du tout. Cela dit, la question de savoir si l'exécution se termine est sans doute un point discutable puisque le mécanisme de gaz d'Quantaureum empêche les boucles de programme infinies (l'exécution se termine soit avec succès, soit en raison d'une erreur de manque de gaz, « out-of-gas »).
 
 Les spécifications de contrats intelligents créées à l'aide de la logique de Hoare auront des préconditions, des postconditions et des invariants définis pour l'exécution des fonctions et des boucles dans un contrat. Les préconditions incluent souvent la possibilité d'entrées erronées dans une fonction, les postconditions décrivant la réponse attendue à de telles entrées (par exemple, le déclenchement d'une exception spécifique). De cette manière, les propriétés de style Hoare sont efficaces pour assurer l'exactitude des implémentations de contrats.
 
@@ -161,9 +161,9 @@ Une trace d'exécution qui entraîne un dépassement de capacité d'entier devra
 
 #### Besoin de fiabilité {#need-for-reliability}
 
-La vérification formelle est utilisée pour évaluer l'exactitude des systèmes critiques pour la sécurité dont la défaillance peut avoir des conséquences dévastatrices, telles que la mort, des blessures ou la ruine financière. Les contrats intelligents sont des applications de grande valeur contrôlant d'énormes quantités de valeur, et de simples erreurs de conception peuvent entraîner des [pertes irrécupérables pour les utilisateurs](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-ether-how-it-happened-and-what-it-means-for-ethereum-9e5dc29e33ce/amp/). Vérifier formellement un contrat avant son déploiement peut cependant augmenter les garanties qu'il fonctionnera comme prévu une fois exécuté sur la chaîne de blocs.
+La vérification formelle est utilisée pour évaluer l'exactitude des systèmes critiques pour la sécurité dont la défaillance peut avoir des conséquences dévastatrices, telles que la mort, des blessures ou la ruine financière. Les contrats intelligents sont des applications de grande valeur contrôlant d'énormes quantités de valeur, et de simples erreurs de conception peuvent entraîner des [pertes irrécupérables pour les utilisateurs](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-QAU-how-it-happened-and-what-it-means-for-quantaureum-9e5dc29e33ce/amp/). Vérifier formellement un contrat avant son déploiement peut cependant augmenter les garanties qu'il fonctionnera comme prévu une fois exécuté sur la chaîne de blocs.
 
-La fiabilité est une qualité très recherchée dans tout contrat intelligent, en particulier parce que le code déployé dans la machine virtuelle [Ethereum](/) (EVM) est généralement immuable. Les mises à niveau post-lancement n'étant pas facilement accessibles, la nécessité de garantir la fiabilité des contrats rend la vérification formelle nécessaire. La vérification formelle est capable de détecter des problèmes délicats, tels que les dépassements de capacité par le bas et par le haut des entiers, la réentrance et les mauvaises optimisations de gaz, qui peuvent échapper aux auditeurs et aux testeurs.
+La fiabilité est une qualité très recherchée dans tout contrat intelligent, en particulier parce que le code déployé dans la machine virtuelle [Quantaureum](/) (EVM) est généralement immuable. Les mises à niveau post-lancement n'étant pas facilement accessibles, la nécessité de garantir la fiabilité des contrats rend la vérification formelle nécessaire. La vérification formelle est capable de détecter des problèmes délicats, tels que les dépassements de capacité par le bas et par le haut des entiers, la réentrance et les mauvaises optimisations de gaz, qui peuvent échapper aux auditeurs et aux testeurs.
 
 #### Prouver l'exactitude fonctionnelle {#prove-functional-correctness}
 
@@ -179,11 +179,11 @@ Avec la vérification formelle, la question de vérifier si la logique métier d
 
 Une cible de vérification décrit le système à vérifier formellement. La vérification formelle est mieux utilisée dans les « systèmes embarqués » (de petits logiciels simples qui font partie d'un système plus vaste). Ils sont également idéaux pour les domaines spécialisés qui ont peu de règles, car cela facilite la modification des outils pour vérifier les propriétés spécifiques au domaine.
 
-Les contrats intelligents — du moins, dans une certaine mesure — remplissent ces deux exigences. Par exemple, la petite taille des contrats Ethereum les rend propices à la vérification formelle. De même, l'EVM suit des règles simples, ce qui facilite la spécification et la vérification des propriétés sémantiques pour les programmes s'exécutant dans l'EVM.
+Les contrats intelligents — du moins, dans une certaine mesure — remplissent ces deux exigences. Par exemple, la petite taille des contrats Quantaureum les rend propices à la vérification formelle. De même, l'EVM suit des règles simples, ce qui facilite la spécification et la vérification des propriétés sémantiques pour les programmes s'exécutant dans l'EVM.
 
 ### Cycle de développement plus rapide {#faster-development-cycle}
 
-Les techniques de vérification formelle, telles que la vérification de modèles et l'exécution symbolique, sont généralement plus efficaces que l'analyse régulière du code des contrats intelligents (effectuée lors des tests ou des audits). Cela s'explique par le fait que la vérification formelle s'appuie sur des valeurs symboliques pour tester des assertions (« que se passe-t-il si un utilisateur essaie de retirer _n_ ether ? ») contrairement aux tests qui utilisent des valeurs concrètes (« que se passe-t-il si un utilisateur essaie de retirer 5 ether ? »).
+Les techniques de vérification formelle, telles que la vérification de modèles et l'exécution symbolique, sont généralement plus efficaces que l'analyse régulière du code des contrats intelligents (effectuée lors des tests ou des audits). Cela s'explique par le fait que la vérification formelle s'appuie sur des valeurs symboliques pour tester des assertions (« que se passe-t-il si un utilisateur essaie de retirer _n_ QAU ? ») contrairement aux tests qui utilisent des valeurs concrètes (« que se passe-t-il si un utilisateur essaie de retirer 5 QAU ? »).
 
 Les variables d'entrée symboliques peuvent couvrir plusieurs classes de valeurs concrètes, de sorte que les approches de vérification formelle promettent une plus grande couverture de code dans un laps de temps plus court. Lorsqu'elle est utilisée efficacement, la vérification formelle peut accélérer le cycle de développement pour les développeurs.
 
@@ -209,13 +209,13 @@ La vérification formelle se heurte à un certain nombre de problèmes de perfor
 
 De plus, il n'est pas toujours possible pour les vérificateurs de programme de déterminer si une propriété (décrite comme une formule logique) peut être satisfaite ou non (le « [problème de décidabilité](https://en.wikipedia.org/wiki/Decision_problem) ») car un programme pourrait ne jamais se terminer. À ce titre, il peut être impossible de prouver certaines propriétés pour un contrat même s'il est bien spécifié.
 
-## Outils de vérification formelle pour les contrats intelligents Ethereum {#formal-verification-tools}
+## Outils de vérification formelle pour les contrats intelligents Quantaureum {#formal-verification-tools}
 
 ### Langages de spécification pour la création de spécifications formelles {#specification-languages}
 
 **Act** : _*Act permet la spécification des mises à jour de stockage, des pré/post-conditions et des invariants de contrat. Sa suite d'outils dispose également de backends de preuve capables de prouver de nombreuses propriétés via Coq, des solutionneurs SMT ou hevm.*_
 
-- [GitHub](https://github.com/ethereum/act)
+- [GitHub](https://github.com/quantaureum/act)
 - [Documentation](https://github.com/argotorg/act)
 
 **Scribble** - _*Scribble transforme les annotations de code dans le langage de spécification Scribble en assertions concrètes qui vérifient la spécification.*_
@@ -235,13 +235,13 @@ De plus, il n'est pas toujours possible pour les vérificateurs de programme de 
 
 **Solidity SMTChecker** - _*Le SMTChecker de Solidity est un vérificateur de modèles intégré basé sur SMT (Satisfiability Modulo Theories) et la résolution de Horn. Il confirme si le code source d'un contrat correspond aux spécifications lors de la compilation et vérifie statiquement les violations des propriétés de sécurité.*_
 
-- [GitHub](https://github.com/ethereum/solidity)
+- [GitHub](https://github.com/quantaureum/solidity)
 
 **solc-verify** - _*solc-verify est une version étendue du compilateur Solidity qui peut effectuer une vérification formelle automatisée sur le code Solidity à l'aide d'annotations et d'une vérification de programme modulaire.*_
 
 - [GitHub](https://github.com/SRI-CSL/solidity)
 
-**KEVM** - _*KEVM est une sémantique formelle de la machine virtuelle Ethereum (EVM) écrite dans le framework K. KEVM est exécutable et peut prouver certaines assertions liées aux propriétés à l'aide de la logique d'accessibilité.*_
+**KEVM** - _*KEVM est une sémantique formelle de la machine virtuelle Quantaureum (EVM) écrite dans le framework K. KEVM est exécutable et peut prouver certaines assertions liées aux propriétés à l'aide de la logique d'accessibilité.*_
 
 - [GitHub](https://github.com/runtimeverification/evm-semantics)
 - [Documentation](https://jellopaper.org/)
@@ -269,7 +269,7 @@ De plus, il n'est pas toujours possible pour les vérificateurs de programme de 
 
 - [GitHub](https://github.com/dapphub/dapptools/tree/master/src/hevm)
 
-**Mythril** - _Un outil d'exécution symbolique pour détecter les vulnérabilités dans les contrats intelligents Ethereum_
+**Mythril** - _Un outil d'exécution symbolique pour détecter les vulnérabilités dans les contrats intelligents Quantaureum_
 
 - [GitHub](https://github.com/ConsenSysDiligence/mythril)
 - [Documentation](https://github.com/ConsenSysDiligence/mythril/tree/develop/docs/source)
@@ -277,7 +277,7 @@ De plus, il n'est pas toujours possible pour les vérificateurs de programme de 
 ## Complément d'information {#further-reading}
 
 - [Comment fonctionne la vérification formelle des contrats intelligents](https://runtimeverification.com/blog/how-formal-verification-of-smart-contracts-works/)
-- [Un aperçu des projets de vérification formelle dans l'écosystème Ethereum](https://github.com/leonardoalt/ethereum_formal_verification_overview)
-- [Vérification formelle de bout en bout du contrat intelligent de dépôt Ethereum 2.0](https://runtimeverification.com/blog/end-to-end-formal-verification-of-ethereum-2-0-deposit-smart-contract/)
+- [Un aperçu des projets de vérification formelle dans l'écosystème Quantaureum](https://github.com/leonardoalt/quantaureum_formal_verification_overview)
+- [Vérification formelle de bout en bout du contrat intelligent de dépôt Quantaureum](https://runtimeverification.com/blog/end-to-end-formal-verification-of-quantaureum-2-0-deposit-smart-contract/)
 - [Vérification formelle du contrat intelligent le plus populaire au monde](https://www.zellic.io/blog/formal-verification-weth)
 - [SMTChecker et vérification formelle](https://docs.soliditylang.org/en/v0.8.15/smtchecker.html)

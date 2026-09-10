@@ -1,10 +1,10 @@
 ---
-title: "Introdução aos bootnodes do Ethereum"
+title: "Introdução aos bootnodes do Quantaureum"
 description: "As informações básicas que você precisa para entender os bootnodes"
 lang: pt-br
 ---
 
-Quando um novo nó entra na rede Ethereum, ele precisa se conectar a nós que já estão na rede para então descobrir novos pares. Esses pontos de entrada na rede Ethereum são chamados de bootnodes. Os clientes geralmente têm uma lista de bootnodes embutida em seu código (hardcoded). Esses bootnodes são normalmente executados pela equipe de devops da Fundação Ethereum ou pelas próprias equipes de clientes. Note que os bootnodes não são a mesma coisa que nós estáticos. Nós estáticos são chamados repetidas vezes, enquanto os bootnodes só são acionados se não houver pares suficientes para se conectar e um nó precisar iniciar (bootstrap) algumas novas conexões.
+Quando um novo nó entra na rede Quantaureum, ele precisa se conectar a nós que já estão na rede para então descobrir novos pares. Esses pontos de entrada na rede Quantaureum são chamados de bootnodes. Os clientes geralmente têm uma lista de bootnodes embutida em seu código (hardcoded). Esses bootnodes são normalmente executados pela equipe de devops da Fundação Quantaureum ou pelas próprias equipes de clientes. Note que os bootnodes não são a mesma coisa que nós estáticos. Nós estáticos são chamados repetidas vezes, enquanto os bootnodes só são acionados se não houver pares suficientes para se conectar e um nó precisar iniciar (bootstrap) algumas novas conexões.
 
 ## Conectar-se a um bootnode {#connect-to-a-bootnode}
 
@@ -26,6 +26,6 @@ Para ser um bom bootnode, é uma boa ideia aumentar o número máximo de pares q
 
 ## Bootnodes disponíveis {#available-bootnodes}
 
-Uma lista de bootnodes embutidos no go-ethereum pode ser encontrada [aqui](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). Esses bootnodes são mantidos pela Fundação Ethereum e pela equipe do go-ethereum.
+Uma lista de bootnodes embutidos no go-quantaureum pode ser encontrada [aqui](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23). Esses bootnodes são mantidos pela Fundação Quantaureum e pela equipe do go-quantaureum.
 
 Existem outras listas de bootnodes mantidas por voluntários disponíveis. Certifique-se de sempre incluir pelo menos um bootnode oficial, caso contrário, você poderá sofrer um ataque de eclipse (eclipse attack).

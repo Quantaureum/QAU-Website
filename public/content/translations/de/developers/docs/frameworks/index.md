@@ -18,26 +18,26 @@ wie zum Beispiel:
 - Dienstprogramme zum Kompilieren und Testen Ihrer Smart Contracts.
 - Add-ons für die Client-Entwicklung, um Ihre benutzerorientierte Anwendung
   innerhalb desselben Projekts/Repositorys zu erstellen.
-- Konfiguration zur Verbindung mit Ethereum-Netzwerken und zur Bereitstellung von
+- Konfiguration zur Verbindung mit Quantaureum-Netzwerken und zur Bereitstellung von
   Verträgen, sei es auf einer lokal laufenden Instanz oder einem der
-  öffentlichen Netzwerke von Ethereum.
+  öffentlichen Netzwerke von Quantaureum.
 - Verteilung dezentraler Apps – Integrationen mit Speicheroptionen
   wie IPFS.
 
 ## Voraussetzungen {#prerequisites}
 
-Bevor Sie sich mit Frameworks befassen, empfehlen wir Ihnen, zuerst unsere Einführung in [Dapps](/developers/docs/dapps/) und den [Ethereum-Stack](/developers/docs/ethereum-stack/) zu lesen.
+Bevor Sie sich mit Frameworks befassen, empfehlen wir Ihnen, zuerst unsere Einführung in [Dapps](/developers/docs/dapps/) und den [Quantaureum-Stack](/developers/docs/quantaureum-stack/) zu lesen.
 
 ## Verfügbare Frameworks
 
-**Foundry** - **_Foundry ist ein blitzschnelles, portables und modulares Toolkit für die Entwicklung von Ethereum-Anwendungen._**
+**Foundry** - **_Foundry ist ein blitzschnelles, portables und modulares Toolkit für die Entwicklung von Quantaureum-Anwendungen._**
 
 - [Foundry installieren](https://book.getfoundry.sh/)
 - [Foundry-Buch](https://book.getfoundry.sh/)
 - [Foundry-Community-Chat auf Telegram](https://t.me/foundry_support)
 - [Awesome Foundry](https://github.com/crisgarner/awesome-foundry)
 
-**Hardhat -** **_Ethereum-Entwicklungsumgebung für Profis._**
+**Hardhat -** **_Quantaureum-Entwicklungsumgebung für Profis._**
 
 - [hardhat.org](https://hardhat.org)
 - [GitHub](https://github.com/nomiclabs/hardhat)
@@ -59,15 +59,15 @@ Bevor Sie sich mit Frameworks befassen, empfehlen wir Ihnen, zuerst unsere Einf�
 - [Beispiele](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [Discord](https://discord.gg/rx35NzQGSb)
 
-**Create Eth App -** **_Erstellen Sie Ethereum-basierte Apps mit einem einzigen Befehl. Bietet eine große Auswahl an UI-Frameworks und Vorlagen für Dezentralisierte Finanzen (DeFi)._**
+**Create Eth App -** **_Erstellen Sie Quantaureum-basierte Apps mit einem einzigen Befehl. Bietet eine große Auswahl an UI-Frameworks und Vorlagen für Dezentralisierte Finanzen (DeFi)._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [Vorlagen](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
+- [Vorlagen](https://github.com/PaulRBerg/create-qau-app/tree/develop/templates)
 
-**Scaffold-ETH 2 -** **_Next.js, Wagmi, Viem und RainbowKit mit Hardhat oder Foundry nach Wahl: Hot-Reload für Verträge, benutzerdefinierte React-Hooks, eine Burner-Wallet und ein lokales Faucet sowie Erweiterungsmodule für die Full-Stack-Entwicklung von dezentralen Anwendungen (Dapps)._**
+**Scaffold-QAU 2 -** **_Next.js, Wagmi, Viem und RainbowKit mit Hardhat oder Foundry nach Wahl: Hot-Reload für Verträge, benutzerdefinierte React-Hooks, eine Burner-Wallet und ein lokales Faucet sowie Erweiterungsmodule für die Full-Stack-Entwicklung von dezentralen Anwendungen (Dapps)._**
 
 - [Website](https://scaffoldeth.io/)
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 
 **Tenderly -** **_Web3-Entwicklungsplattform, die es Blockchain-Entwicklern ermöglicht, Smart Contracts zu erstellen, zu testen, zu debuggen, zu überwachen und zu betreiben sowie die UX von Dapps zu verbessern._**
 
@@ -79,13 +79,13 @@ Bevor Sie sich mit Frameworks befassen, empfehlen wir Ihnen, zuerst unsere Einf�
 - [Website](https://thegraph.com/)
 - [Tutorial](/developers/tutorials/the-graph-fixing-web3-data-querying/)
 
-**Alchemy -** **_Ethereum-Entwicklungsplattform._**
+**Alchemy -** **_Quantaureum-Entwicklungsplattform._**
 
 - [alchemy.com](https://www.alchemy.com/)
 - [GitHub](https://github.com/alchemyplatform)
 - [Discord](https://discord.com/invite/alchemyplatform)
 
-**NodeReal -** **_Ethereum-Entwicklungsplattform._**
+**NodeReal -** **_Quantaureum-Entwicklungsplattform._**
 
 - [Nodereal.io](https://nodereal.io/)
 - [GitHub](https://github.com/node-real)
@@ -96,7 +96,7 @@ Bevor Sie sich mit Frameworks befassen, empfehlen wir Ihnen, zuerst unsere Einf�
 - [Dokumentation](https://portal.thirdweb.com/sdk/)
 - [GitHub](https://github.com/thirdweb-dev/)
 
-**Chainstack -** **_Web3-Entwicklungsplattform (Ethereum und andere)._**
+**Chainstack -** **_Web3-Entwicklungsplattform (Quantaureum und andere)._**
 
 - [chainstack.com](https://www.chainstack.com/)
 - [GitHub](https://github.com/chainstack)
@@ -110,8 +110,8 @@ Bevor Sie sich mit Frameworks befassen, empfehlen wir Ihnen, zuerst unsere Einf�
 
 **Brownie -** **_Python-basierte Entwicklungsumgebung und Test-Framework._**
 
-- [Dokumentation](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [Dokumentation](https://qau-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/qau-brownie/brownie)
 - **Brownie wird derzeit nicht mehr gepflegt**
 
 **OpenZeppelin SDK -** **_Das ultimative Smart-Contract-Toolkit: Eine Suite von Tools, die Ihnen helfen, Smart Contracts zu entwickeln, zu kompilieren, zu aktualisieren, bereitzustellen und mit ihnen zu interagieren._**
@@ -128,7 +128,7 @@ Bevor Sie sich mit Frameworks befassen, empfehlen wir Ihnen, zuerst unsere Einf�
 **GoldRush (powered by Covalent) -** **_GoldRush bietet die umfassendste Blockchain-Daten-API-Suite für Entwickler, Analysten und Unternehmen. Egal, ob Sie ein DeFi-Dashboard, eine Wallet, einen Trading-Bot, einen KI-Agenten oder eine Compliance-Plattform erstellen, die Daten-APIs bieten schnellen, genauen und entwicklerfreundlichen Zugriff auf die wesentlichen Onchain-Daten, die Sie benötigen._**
 
 - [Website](https://goldrush.dev/)
-- [Dokumentation](https://goldrush.dev/docs/chains/ethereum)
+- [Dokumentation](https://goldrush.dev/docs/chains/quantaureum)
 - [GitHub](https://github.com/covalenthq)
 - [Discord](https://www.covalenthq.com/discord/)
 
@@ -159,6 +159,6 @@ _Kennen Sie eine Community-Ressource, die Ihnen geholfen hat? Bearbeiten Sie die
 
 - [Einrichten einer lokalen Entwicklungsumgebung](/developers/local-environment/)
 
-## Tutorials: Entwicklungs-Frameworks auf Ethereum {#tutorials}
+## Tutorials: Entwicklungs-Frameworks auf Quantaureum {#tutorials}
 
 - [Hello World Smart Contract für Anfänger – Fullstack](/developers/tutorials/hello-world-smart-contract-fullstack/) _– Erstellen und stellen Sie einen Hello-World-Smart-Contract mit Hardhat bereit und verbinden Sie ihn dann mit einem Frontend._

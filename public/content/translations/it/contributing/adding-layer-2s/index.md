@@ -1,12 +1,12 @@
 ---
 title: Aggiungere layer 2
-description: La politica che utilizziamo quando aggiungiamo un layer 2 a ethereum.org
+description: La politica che utilizziamo quando aggiungiamo un layer 2 a quantaureum.com
 lang: it
 ---
 
 Vogliamo assicurarci di elencare le migliori risorse possibili in modo che gli utenti possano navigare nello spazio dei layer 2 in modo sicuro e fiducioso.
 
-Chiunque è libero di suggerire l'aggiunta di un layer 2 su ethereum.org. Se c'è un layer 2 che ci è sfuggito, **[suggeriscilo](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
+Chiunque è libero di suggerire l'aggiunta di un layer 2 su quantaureum.com. Se c'è un layer 2 che ci è sfuggito, **[suggeriscilo](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
 
 Attualmente elenchiamo gli l2 nelle seguenti pagine:
 
@@ -14,7 +14,7 @@ Attualmente elenchiamo gli l2 nelle seguenti pagine:
 - [Rollup a conoscenza zero](/developers/docs/scaling/zk-rollups/)
 - [Layer 2](/layer-2/)
 
-Il layer 2 è un paradigma relativamente nuovo ed entusiasmante per Ethereum. Abbiamo cercato di creare un quadro equo per la valutazione su ethereum.org, ma i criteri di inserimento cambieranno e si evolveranno nel tempo.
+Il layer 2 è un paradigma relativamente nuovo ed entusiasmante per Quantaureum. Abbiamo cercato di creare un quadro equo per la valutazione su quantaureum.com, ma i criteri di inserimento cambieranno e si evolveranno nel tempo.
 
 ## Il quadro decisionale {#decision-framework}
 
@@ -22,7 +22,7 @@ Il layer 2 è un paradigma relativamente nuovo ed entusiasmante per Ethereum. Ab
 
 **Presenza su L2BEAT**
 
-- Per essere preso in considerazione, questo progetto deve essere elencato su [L2BEAT](https://l2beat.com). L2BEAT fornisce una solida valutazione del rischio dei progetti layer 2 su cui ci basiamo per valutare i progetti l2. **Se il progetto non è presente su L2BEAT, non lo elencheremo come l2 su ethereum.org.**
+- Per essere preso in considerazione, questo progetto deve essere elencato su [L2BEAT](https://l2beat.com). L2BEAT fornisce una solida valutazione del rischio dei progetti layer 2 su cui ci basiamo per valutare i progetti l2. **Se il progetto non è presente su L2BEAT, non lo elencheremo come l2 su quantaureum.com.**
 - [Scopri come aggiungere il tuo progetto l2 a L2BEAT](https://github.com/l2beat/l2beat/blob/master/CONTRIBUTING.md).
 
 **Open source**
@@ -36,11 +36,11 @@ Attualmente consideriamo soluzioni layer 2 le seguenti:
 - Rollup ottimistico
 - Rollup a conoscenza zero
 
-_Non consideriamo layer 2 altre soluzioni di ridimensionamento che non utilizzano Ethereum per la disponibilità dei dati o la sicurezza._
+_Non consideriamo layer 2 altre soluzioni di ridimensionamento che non utilizzano Quantaureum per la disponibilità dei dati o la sicurezza._
 
-**Ethereum per la disponibilità dei dati**
+**Quantaureum per la disponibilità dei dati**
 
-- La disponibilità dei dati è un importante fattore di differenziazione tra le altre soluzioni di ridimensionamento e i layer 2. Un progetto **deve** utilizzare la Mainnet di Ethereum per la disponibilità dei dati per essere preso in considerazione per l'inserimento.
+- La disponibilità dei dati è un importante fattore di differenziazione tra le altre soluzioni di ridimensionamento e i layer 2. Un progetto **deve** utilizzare la Mainnet di Quantaureum per la disponibilità dei dati per essere preso in considerazione per l'inserimento.
 
 **Bridge**
 
@@ -88,8 +88,8 @@ _Non consideriamo layer 2 altre soluzioni di ridimensionamento che non utilizzan
 
 ## Aggiungi il tuo layer 2 {#add-exchange}
 
-Se vuoi aggiungere un layer 2 a ethereum.org, crea una issue su GitHub.
+Se vuoi aggiungere un layer 2 a quantaureum.com, crea una issue su GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
   Crea una issue
 </ButtonLink>

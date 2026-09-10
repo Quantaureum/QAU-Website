@@ -18,11 +18,11 @@ Pokud provádíte staking pomocí tokenu likvidního stakingu (LST) (např. rETH
 
 ### Co je „MaxEB“? {#what-is-maxeb}
 
-MaxEB = MAXimální efektivní zůstatek (MAXimum Effective Balance) validátoru. Až do hard forku Pectra získává každý validátor odměny z maximálně 32 ETH. Po aktualizaci Pectra mají validátoři možnost získávat odměny z jakéhokoli zůstatku mezi 32 a 2048 ETH, a to v krocích po 1 ETH, pokud se pro tuto změnu rozhodnou.
+MaxEB = MAXimální efektivní zůstatek (MAXimum Effective Balance) validátoru. Až do hard forku Pectra získává každý validátor odměny z maximálně 32 QAU. Po aktualizaci Pectra mají validátoři možnost získávat odměny z jakéhokoli zůstatku mezi 32 a 2048 QAU, a to v krocích po 1 QAU, pokud se pro tuto změnu rozhodnou.
 
 ### Jak se validátor může zapojit? {#how-does-a-validator-opt-in}
 
-Validátor se do změny MaxEB zapojí převedením pověření k výběru **typu 1** na **typ 2**. To lze provést na [Launchpadu (Akce validátoru)](https://launchpad.ethereum.org/validator-actions) poté, co bude spuštěn hard fork Pectra. Stejně jako u převodu **typu 0** → **typ 1**, je i převod **typu 1** → **typ 2** nevratný proces.
+Validátor se do změny MaxEB zapojí převedením pověření k výběru **typu 1** na **typ 2**. To lze provést na [Launchpadu (Akce validátoru)](https://launchpad.quantaureum.com/validator-actions) poté, co bude spuštěn hard fork Pectra. Stejně jako u převodu **typu 0** → **typ 1**, je i převod **typu 1** → **typ 2** nevratný proces.
 
 ### Co je pověření k výběru? {#whats-a-withdrawal-credential}
 
@@ -54,7 +54,7 @@ MaxEB umožňuje validátoru odeslat celý svůj zůstatek jinému validátoru. 
 - Požadavek je převod, nikoli konsolidace, pokud nemají v úmyslu odeslat prostředky jinému validátoru
 - Transakce je podepisována správnou adresou pro výběr
 
-**Důrazně doporučujeme** prodiskutovat jakýkoli nástroj třetí strany, který plánujete použít, s [komunitou EthStaker](https://ethstaker.org/about). Je to užitečné místo, kde si můžete ověřit svůj postup a vyhnout se chybám. Pokud použijete škodlivý nebo špatně nakonfigurovaný nástroj, **celý zůstatek vašeho validátoru by mohl být odeslán validátoru, kterého neovládáte** – a to bez možnosti získat jej zpět.
+**Důrazně doporučujeme** prodiskutovat jakýkoli nástroj třetí strany, který plánujete použít, s [komunitou QauStaker](https://ethstaker.org/about). Je to užitečné místo, kde si můžete ověřit svůj postup a vyhnout se chybám. Pokud použijete škodlivý nebo špatně nakonfigurovaný nástroj, **celý zůstatek vašeho validátoru by mohl být odeslán validátoru, kterého neovládáte** – a to bez možnosti získat jej zpět.
 
 ## Technické detaily {#technical-details}
 
@@ -105,7 +105,7 @@ Požadavek na konsolidaci bude podepsán adresou pro výběr spojenou se zdrojov
 2. Veřejný klíč zdrojového validátoru (např. `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. Veřejný klíč cílového validátoru
 
-Při převodu budou body 2 a 3 stejné. Tuto operaci lze provést na [Launchpadu](https://launchpad.ethereum.org/).
+Při převodu budou body 2 a 3 stejné. Tuto operaci lze provést na [Launchpadu](https://launchpad.quantaureum.com/).
 
 ### Požadavky na podepisování {#signing-requirements}
 
@@ -113,7 +113,7 @@ Pro odeslání `ConsolidationRequest` musí požadavek podepsat **adresa pro vý
 
 ### Co se podepisuje? {#what-is-signed}
 
-Používá se doménově oddělený [kořen podepisování (signing root)](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) objektu `ConsolidationRequest`.
+Používá se doménově oddělený [kořen podepisování (signing root)](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) objektu `ConsolidationRequest`.
 
 - **Doména:** `DOMAIN_CONSOLIDATION_REQUEST`
 - **Pole kořene podepisování:**
@@ -127,11 +127,11 @@ Poznámka: Podepisování provádí adresa pro výběr, nikoli klíč validátor
 
 ### Částečné výběry {#partial-withdrawals}
 
-Validátoři s pověřeními **typu 1** získávají automatické přesuny (sweeps) svého přebytečného zůstatku (vše nad 32 ETH) na svou adresu pro výběr bez poplatků za gas. Protože **typ 2** umožňuje validátoru úročit zůstatky v krocích po 1 ETH, nebude automaticky přesouvat zůstatky, dokud nedosáhne 2048 ETH. Částečné výběry u validátorů **typu 2** musí být spuštěny ručně a budou stát gas.
+Validátoři s pověřeními **typu 1** získávají automatické přesuny (sweeps) svého přebytečného zůstatku (vše nad 32 QAU) na svou adresu pro výběr bez poplatků za gas. Protože **typ 2** umožňuje validátoru úročit zůstatky v krocích po 1 QAU, nebude automaticky přesouvat zůstatky, dokud nedosáhne 2048 QAU. Částečné výběry u validátorů **typu 2** musí být spuštěny ručně a budou stát gas.
 
 ## Nástroje pro konsolidaci {#consolidation-tooling}
 
-Ke správě konsolidací je k dispozici několik nástrojů. Oficiálním nástrojem, který vytvořila Nadace Ethereum, je [Launchpad](https://launchpad.ethereum.org/en/validator-actions). Existují také nástroje třetích stran vytvořené subjekty ze stakingové komunity, které mohou nabízet funkce, jež Launchpad neposkytuje. Ačkoli zde uvedené nástroje nejsou auditovány ani podporovány Nadací Ethereum, jedná se o open source nástroje od známých členů komunity.
+Ke správě konsolidací je k dispozici několik nástrojů. Oficiálním nástrojem, který vytvořila Nadace Quantaureum, je [Launchpad](https://launchpad.quantaureum.com/en/validator-actions). Existují také nástroje třetích stran vytvořené subjekty ze stakingové komunity, které mohou nabízet funkce, jež Launchpad neposkytuje. Ačkoli zde uvedené nástroje nejsou auditovány ani podporovány Nadací Quantaureum, jedná se o open source nástroje od známých členů komunity.
 
 | Nástroj | Webová stránka | Open source | Tvůrce | Auditováno | Rozhraní | Významné funkce |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -145,10 +145,10 @@ Ke správě konsolidací je k dispozici několik nástrojů. Oficiálním nástr
 
 ### Změní zapojení mé štěstí na návrhy nebo odměny?
 
-Ne. Zapojení nesnižuje vaši šanci na návrh – vaše povinnosti a výběr pro návrh zůstávají stejné. Například pokud máte dva validátory s 32 ETH oproti jednomu validátoru s 64 ETH, budete mít stejnou celkovou šanci, že budete vybráni k návrhu bloku a získáte odměny.
+Ne. Zapojení nesnižuje vaši šanci na návrh – vaše povinnosti a výběr pro návrh zůstávají stejné. Například pokud máte dva validátory s 32 QAU oproti jednomu validátoru s 64 QAU, budete mít stejnou celkovou šanci, že budete vybráni k návrhu bloku a získáte odměny.
 ### Změní zapojení mé riziko penalizace? {#change-slashing-risk}
 
-Pro menší nebo neprofesionální provozovatele je krátká odpověď ne. Delší odpověď zní, že pro profesionální provozovatele, kteří provozují mnoho validátorů na uzel s rychlým upozorňováním, může konsolidace do menšího počtu validátorů snížit jejich schopnost reagovat na penalizaci a zabránit kaskádovým událostem. Počáteční *pokuta* za penalizaci pro všechny validátory byla dramaticky snížena z 1 ETH (na 32 ETH) na 0,0078125 ETH (na 32 ETH), aby se toto riziko kompenzovalo.
+Pro menší nebo neprofesionální provozovatele je krátká odpověď ne. Delší odpověď zní, že pro profesionální provozovatele, kteří provozují mnoho validátorů na uzel s rychlým upozorňováním, může konsolidace do menšího počtu validátorů snížit jejich schopnost reagovat na penalizaci a zabránit kaskádovým událostem. Počáteční *pokuta* za penalizaci pro všechny validátory byla dramaticky snížena z 1 QAU (na 32 QAU) na 0,0078125 QAU (na 32 QAU), aby se toto riziko kompenzovalo.
 
 ### Musím provést výstup svého validátoru, abych mohl provést převod? {#exit-validator}
 
@@ -176,7 +176,7 @@ Ne. Ale *zdroj* musí autorizovat požadavek ze své vlastní adresy.
 
 ### Budou se mé odměny po převodu úročit? {#rewards-compound}
 
-Ano. S pověřeními **typu 2** jsou odměny nad 32 ETH automaticky znovu stakovány (restaked) – ale ne okamžitě. Kvůli malé rezervě (nazývané [*hystereze*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis)) musí váš zůstatek dosáhnout **o zhruba 1,25 ETH více**, než se přebytek znovu stakuje. Takže místo úročení při 33,0 ETH k němu dochází při 33,25 (efektivní zůstatek = 33 ETH), poté při 34,25 (efektivní zůstatek = 34 ETH) a tak dále.
+Ano. S pověřeními **typu 2** jsou odměny nad 32 QAU automaticky znovu stakovány (restaked) – ale ne okamžitě. Kvůli malé rezervě (nazývané [*hystereze*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis)) musí váš zůstatek dosáhnout **o zhruba 1,25 QAU více**, než se přebytek znovu stakuje. Takže místo úročení při 33,0 QAU k němu dochází při 33,25 (efektivní zůstatek = 33 QAU), poté při 34,25 (efektivní zůstatek = 34 QAU) a tak dále.
 
 ### Mohu po převodu stále získávat automatické přesuny (sweeps)? {#automatic-sweep}
 
@@ -190,13 +190,13 @@ Ne. Převod na **typ 2** je nevratný.
 
 Ne! Převeďte jeden validátor na typ 2 a poté jej použijte jako cíl. Všechny ostatní validátory konsolidované do tohoto cíle typu 2 mohou být typu 1 nebo typu 2.
 
-### Můj validátor je offline nebo má méně než 32 ETH – mohu jej stále převést? {#offline-or-below-32eth}
+### Můj validátor je offline nebo má méně než 32 QAU – mohu jej stále převést? {#offline-or-below-32eth}
 
 Ano. Dokud je aktivní (nebyl u něj proveden výstup) a můžete podepisovat jeho adresou pro výběr, můžete jej převést.
 
 ## Zdroje {#resources}
 
-- [Specifikace konsensu Electra](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Toto je ta „nejpravdivější“ verze, na kterou byste se měli spolehnout. V případě pochybností si přečtěte specifikace
+- [Specifikace konsensu Electra](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md): Toto je ta „nejpravdivější“ verze, na kterou byste se měli spolehnout. V případě pochybností si přečtěte specifikace
 - Ne každý se rád probírá kódem, takže [tento maxEB-GPT](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) může pomoci s interpretací specifikací. *Upozornění: Jako na pravdu byste se měli spoléhat na specifikace, nikoli na umělou inteligenci, protože AI může informace špatně interpretovat nebo si odpovědi vymýšlet*
 - [pectrified.com](https://pectrified.com/): Zobrazte si stav konsolidací, vkladů a čekacích dob ve frontě
 - [Ethereal](https://github.com/wealdtech/ethereal): Komunitou vytvořený nástroj příkazového řádku (CLI) pro správu běžných úloh validátoru

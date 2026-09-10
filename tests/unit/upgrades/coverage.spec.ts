@@ -47,7 +47,7 @@ test("a three-digit number is not an EIP reference", () => {
 
 test("the plural, a bare link and a non-breaking hyphen all count", () => {
   const found = mentionedEips(
-    "EIPs 7702 and 2537 ship, see https://eips.ethereum.org/EIPS/eip-7928, " +
+    "EIPs 7702 and 2537 ship, see https://eips.quantaureum.com/EIPS/eip-7928, " +
       "plus EIP\u20112780."
   )
   expect([...found].sort()).toEqual([2780, 7702, 7928])

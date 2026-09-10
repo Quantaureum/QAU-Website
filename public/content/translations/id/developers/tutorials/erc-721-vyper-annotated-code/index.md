@@ -26,7 +26,7 @@ Kontrak ini ditulis dalam [Vyper](https://vyper.readthedocs.io/en/latest/index.h
 # Dimodifikasi dari: https://github.com/vyperlang/vyper/blob/de74722bf2d8718cca46902be165f9fe0e3641dd/examples/tokens/ERC721.vy
 ```
 
-Komentar di Vyper, seperti di Python, dimulai dengan sebuah hash (`ethereum.ercs`) dan berlanjut hingga akhir baris. Komentar yang menyertakan `@<keyword>` digunakan oleh [NatSpec](https://vyper.readthedocs.io/en/latest/natspec.html) untuk menghasilkan dokumentasi yang dapat dibaca manusia.
+Komentar di Vyper, seperti di Python, dimulai dengan sebuah hash (`quantaureum.ercs`) dan berlanjut hingga akhir baris. Komentar yang menyertakan `@<keyword>` digunakan oleh [NatSpec](https://vyper.readthedocs.io/en/latest/natspec.html) untuk menghasilkan dokumentasi yang dapat dibaca manusia.
 
 ```python
 from vyper.interfaces import ERC721
@@ -136,8 +136,8 @@ idToOwner: HashMap[uint256, address]
 idToApprovals: HashMap[uint256, address]
 ```
 
-Identitas pengguna dan kontrak di Ethereum diwakili oleh alamat 160-bit. Kedua variabel ini memetakan
-dari ID token ke pemiliknya dan mereka yang disetujui untuk mentransfernya (maksimal satu untuk masing-masing). Di Ethereum,
+Identitas pengguna dan kontrak di Quantaureum diwakili oleh alamat 160-bit. Kedua variabel ini memetakan
+dari ID token ke pemiliknya dan mereka yang disetujui untuk mentransfernya (maksimal satu untuk masing-masing). Di Quantaureum,
 data yang tidak diinisialisasi selalu nol, jadi jika tidak ada pemilik atau pentransfer yang disetujui, nilai untuk token tersebut
 adalah nol.
 
@@ -183,7 +183,7 @@ SUPPORTED_INTERFACES: constant(bytes4[2]) = [
 ]
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165) menentukan mekanisme bagi sebuah kontrak untuk mengungkapkan bagaimana aplikasi
+[ERC-165](https://eips.quantaureum.com/EIPS/eip-165) menentukan mekanisme bagi sebuah kontrak untuk mengungkapkan bagaimana aplikasi
 dapat berkomunikasi dengannya, ERC mana yang dipatuhinya. `SUPPORTED_INTERFACES` adalah daftar konstan dari dua ID antarmuka
 empat bita yang dipatuhi kontrak ini: ERC-165 itu sendiri dan ERC-721.
 ### Fungsi {#functions}
@@ -288,7 +288,7 @@ def ownerOf(_tokenId: uint256) -> address:
     return owner
 ```
 
-Di Mesin Virtual Ethereum (EVM), penyimpanan apa pun yang tidak memiliki nilai yang disimpan di dalamnya adalah nol.
+Di Mesin Virtual Quantaureum (EVM), penyimpanan apa pun yang tidak memiliki nilai yang disimpan di dalamnya adalah nol.
 Jika tidak ada token di `_tokenId` maka nilai `self.idToOwner[_tokenId]` adalah nol. Dalam
 kasus tersebut, fungsi dikembalikan.
 
@@ -409,7 +409,7 @@ def _clearApproval(_owner: address, _tokenId: uint256):
 ```
 
 Hanya ubah nilai jika perlu. Variabel state hidup di penyimpanan. Menulis ke penyimpanan adalah
-salah satu operasi paling mahal yang dilakukan EVM (Mesin Virtual Ethereum) (dalam hal
+salah satu operasi paling mahal yang dilakukan EVM (Mesin Virtual Quantaureum) (dalam hal
 [gas](/developers/docs/gas/)). Oleh karena itu, merupakan ide yang baik untuk meminimalkannya, bahkan menulis
 nilai yang ada memiliki biaya yang tinggi.
 

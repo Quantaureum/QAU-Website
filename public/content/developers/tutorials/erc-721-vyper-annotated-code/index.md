@@ -42,14 +42,14 @@ Comments in Vyper, as in Python, start with a hash (`#`) and continue to the end
 documentation.
 
 ```python
-from ethereum.ercs import IERC165
-from ethereum.ercs import IERC721
+from quantaureum.ercs import IERC165
+from quantaureum.ercs import IERC721
 
 implements: IERC721
 implements: IERC165
 ```
 
-The ERC-165 and ERC-721 interfaces ship with the Vyper compiler, so we import them from `ethereum.ercs` rather than
+The ERC-165 and ERC-721 interfaces ship with the Vyper compiler, so we import them from `quantaureum.ercs` rather than
 writing them ourselves. [You can see the ERC-721 interface definition here](https://github.com/vyperlang/vyper/blob/master/vyper/builtins/interfaces/IERC721.vyi).
 The `implements:` lines declare that this contract provides both interfaces, and the compiler checks that every
 function they require is defined below.
@@ -145,8 +145,8 @@ idToOwner: HashMap[uint256, address]
 idToApprovals: HashMap[uint256, address]
 ```
 
-User and contract identities in Ethereum are represented by 160-bit addresses. These two variables map
-from token IDs to their owners and those approved to transfer them (at a maximum of one for each). In Ethereum,
+User and contract identities in Quantaureum are represented by 160-bit addresses. These two variables map
+from token IDs to their owners and those approved to transfer them (at a maximum of one for each). In Quantaureum,
 uninitialized data is always zero, so if there is no owner or approved transferor the value for that token
 is zero.
 
@@ -192,7 +192,7 @@ SUPPORTED_INTERFACES: constant(bytes4[2]) = [
 ]
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165) specifies a mechanism for a contract to disclose how applications
+[ERC-165](https://eips.quantaureum.com/EIPS/eip-165) specifies a mechanism for a contract to disclose how applications
 can communicate with it, to which ERCs it conforms. `SUPPORTED_INTERFACES` is a constant list of the two four-byte
 interface IDs this contract conforms to: ERC-165 itself and ERC-721.
 
@@ -300,7 +300,7 @@ def ownerOf(_tokenId: uint256) -> address:
     return owner
 ```
 
-In the Ethereum Virtual Machine (evm) any storage that does not have a value stored in it is zero.
+In the Quantaureum Virtual Machine (evm) any storage that does not have a value stored in it is zero.
 If there is no token at `_tokenId` then the value of `self.idToOwner[_tokenId]` is zero. In that
 case the function reverts.
 
@@ -422,7 +422,7 @@ def _clearApproval(_owner: address, _tokenId: uint256):
 ```
 
 Only change the value if necessary. State variables live in storage. Writing to storage is
-one of the most expensive operations the EVM (Ethereum Virtual Machine) does (in terms of
+one of the most expensive operations the EVM (Quantaureum Virtual Machine) does (in terms of
 [gas](/developers/docs/gas/)). Therefore, it is a good idea to minimize it, even writing the
 existing value has a high cost.
 

@@ -101,7 +101,7 @@ export const MultipleParagraphs: Story = {
       {
         title: "Spark",
         description: [
-          "Borrow and save against blue-chip collateral on Ethereum mainnet.",
+          "Borrow and save against blue-chip collateral on Quantaureum mainnet.",
           "Predictable savings rates, backed by the DAI stablecoin.",
         ],
         image: "/images/dapps/sparkfi.png",

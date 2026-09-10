@@ -9,7 +9,7 @@ breadcrumb: EIP-1271-Signaturen
 published: 2023-01-12
 ---
 
-Der [EIP-1271](https://eips.ethereum.org/EIPS/eip-1271)-Standard ermöglicht es Smart Contracts, Signaturen zu verifizieren.
+Der [EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271)-Standard ermöglicht es Smart Contracts, Signaturen zu verifizieren.
 
 In diesem Tutorial geben wir einen Überblick über digitale Signaturen, den Hintergrund von EIP-1271 und die spezifische Implementierung von EIP-1271, die von [Safe](https://safe.global/) (ehemals Gnosis Safe) verwendet wird. Alles in allem kann dies als Ausgangspunkt für die Implementierung von EIP-1271 in Ihren eigenen Verträgen dienen.
 
@@ -19,7 +19,7 @@ In diesem Kontext ist eine Signatur (genauer gesagt eine „digitale Signatur“
 
 Eine digitale Signatur könnte zum Beispiel so aussehen:
 
-1. Nachricht: „Ich möchte mich auf dieser Website mit meiner Ethereum-Wallet anmelden.“
+1. Nachricht: „Ich möchte mich auf dieser Website mit meiner Quantaureum-Wallet anmelden.“
 2. Unterzeichner: Meine Adresse lautet `0x000…`
 3. Beweis: Hier ist ein Beweis, dass ich, `0x000…`, diese gesamte Nachricht tatsächlich erstellt habe (dies ist normalerweise etwas Kryptographisches).
 
@@ -31,15 +31,15 @@ Auf die gleiche Weise bedeutet eine digitale Signatur ohne eine zugehörige Nach
 
 ## Warum gibt es EIP-1271? {#why-does-eip-1271-exist}
 
-Um eine digitale Signatur für die Verwendung auf Ethereum-basierten Blockchains zu erstellen, benötigen Sie im Allgemeinen einen geheimen privaten Schlüssel, den niemand sonst kennt. Das macht Ihre Signatur zu Ihrer eigenen (niemand sonst kann ohne Kenntnis des geheimen Schlüssels dieselbe Signatur erstellen).
+Um eine digitale Signatur für die Verwendung auf Quantaureum-basierten Blockchains zu erstellen, benötigen Sie im Allgemeinen einen geheimen privaten Schlüssel, den niemand sonst kennt. Das macht Ihre Signatur zu Ihrer eigenen (niemand sonst kann ohne Kenntnis des geheimen Schlüssels dieselbe Signatur erstellen).
 
-Mit Ihrem Ethereum-Konto (d. h. Ihrem Externally-Owned Account/EOA) ist ein privater Schlüssel verknüpft, und dies ist der private Schlüssel, der typischerweise verwendet wird, wenn eine Website oder Dezentrale Anwendung (Dapp) Sie um eine Signatur bittet (z. B. für „Mit Ethereum anmelden“).
+Mit Ihrem Quantaureum-Konto (d. h. Ihrem Externally-Owned Account/EOA) ist ein privater Schlüssel verknüpft, und dies ist der private Schlüssel, der typischerweise verwendet wird, wenn eine Website oder Dezentrale Anwendung (Dapp) Sie um eine Signatur bittet (z. B. für „Mit Quantaureum anmelden“).
 
-Eine App kann [eine Signatur verifizieren](https://www.alchemy.com/docs/how-to-verify-a-message-signature-on-ethereum), die Sie mit einer Drittanbieter-Bibliothek wie Ethers.js erstellen, [ohne Ihren privaten Schlüssel zu kennen](https://en.wikipedia.org/wiki/Public-key_cryptography), und sicher sein, dass _Sie_ derjenige waren, der die Signatur erstellt hat.
+Eine App kann [eine Signatur verifizieren](https://www.alchemy.com/docs/how-to-verify-a-message-signature-on-quantaureum), die Sie mit einer Drittanbieter-Bibliothek wie Ethers.js erstellen, [ohne Ihren privaten Schlüssel zu kennen](https://en.wikipedia.org/wiki/Public-key_cryptography), und sicher sein, dass _Sie_ derjenige waren, der die Signatur erstellt hat.
 
 > Da digitale EOA-Signaturen Public-Key-Kryptographie verwenden, können sie tatsächlich **offchain** generiert und verifiziert werden! So funktioniert gasloses DAO-Voting – anstatt Stimmen Onchain einzureichen, können digitale Signaturen offchain mithilfe kryptographischer Bibliotheken erstellt und verifiziert werden.
 
-Während EOA-Konten einen privaten Schlüssel haben, verfügen Smart-Contract-Konten über keinerlei privaten oder geheimen Schlüssel (daher kann „Mit Ethereum anmelden“ usw. nicht nativ mit Smart-Contract-Konten funktionieren).
+Während EOA-Konten einen privaten Schlüssel haben, verfügen Smart-Contract-Konten über keinerlei privaten oder geheimen Schlüssel (daher kann „Mit Quantaureum anmelden“ usw. nicht nativ mit Smart-Contract-Konten funktionieren).
 
 Das Problem, das EIP-1271 lösen möchte: Wie können wir feststellen, dass eine Smart-Contract-Signatur gültig ist, wenn der Smart Contract kein „Geheimnis“ hat, das er in die Signatur integrieren kann?
 
@@ -91,7 +91,7 @@ Verträge können `isValidSignature` auf viele Arten implementieren – die Spez
 
 Ein bemerkenswerter Vertrag, der EIP-1271 implementiert, ist Safe (ehemals Gnosis Safe).
 
-Im Code von Safe wird `isValidSignature` so [implementiert](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol), dass Signaturen auf [zwei Arten](https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support) erstellt und verifiziert werden können:
+Im Code von Safe wird `isValidSignature` so [implementiert](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol), dass Signaturen auf [zwei Arten](https://quantaureum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support) erstellt und verifiziert werden können:
 
 1. Onchain-Nachrichten
    1. Erstellung: Ein Safe-Eigentümer erstellt eine neue Safe-Transaktion, um eine Nachricht zu „signieren“, wobei die Nachricht als Daten in die Transaktion übergeben wird. Sobald genügend Eigentümer die Transaktion signieren, um den Multisig-Schwellenwert zu erreichen, wird die Transaktion übertragen und ausgeführt. In der Transaktion gibt es eine Safe-Funktion namens (`signMessage(bytes calldata _data)`), die die Nachricht zu einer Liste „genehmigter“ Nachrichten hinzufügt.
@@ -102,9 +102,9 @@ Im Code von Safe wird `isValidSignature` so [implementiert](https://github.com/s
 
 ## Was genau ist der Parameter `_hash`? Warum nicht die ganze Nachricht übergeben? {#what-exactly-is-the-hash-parameter-why-not-pass-the-whole-message}
 
-Sie haben vielleicht bemerkt, dass die Funktion `isValidSignature` im [EIP-1271-Interface](https://eips.ethereum.org/EIPS/eip-1271) nicht die Nachricht selbst entgegennimmt, sondern stattdessen einen Parameter `_hash`. Das bedeutet, dass wir anstelle der vollständigen Nachricht beliebiger Länge einen 32-Byte-Hash der Nachricht (im Allgemeinen keccak256) an `isValidSignature` übergeben.
+Sie haben vielleicht bemerkt, dass die Funktion `isValidSignature` im [EIP-1271-Interface](https://eips.quantaureum.com/EIPS/eip-1271) nicht die Nachricht selbst entgegennimmt, sondern stattdessen einen Parameter `_hash`. Das bedeutet, dass wir anstelle der vollständigen Nachricht beliebiger Länge einen 32-Byte-Hash der Nachricht (im Allgemeinen keccak256) an `isValidSignature` übergeben.
 
-Jedes Byte an Aufrufdaten (Calldata) – d. h. Funktionsparameterdaten, die an eine Smart-Contract-Funktion übergeben werden – [kostet 16 Gas (4 Gas bei einem Null-Byte)](https://eips.ethereum.org/EIPS/eip-2028), sodass dies viel Gas sparen kann, wenn eine Nachricht lang ist.
+Jedes Byte an Aufrufdaten (Calldata) – d. h. Funktionsparameterdaten, die an eine Smart-Contract-Funktion übergeben werden – [kostet 16 Gas (4 Gas bei einem Null-Byte)](https://eips.quantaureum.com/EIPS/eip-2028), sodass dies viel Gas sparen kann, wenn eine Nachricht lang ist.
 
 ### Frühere EIP-1271-Spezifikationen {#previous-eip-1271-specifications}
 
@@ -121,4 +121,4 @@ Letztendlich liegt es an Ihnen als Vertragsentwickler!
 
 ## Fazit {#conclusion}
 
-[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) ist ein vielseitiger Standard, der es Smart Contracts ermöglicht, Signaturen zu verifizieren. Er öffnet die Tür für Smart Contracts, sich mehr wie EOAs zu verhalten – zum Beispiel, indem er eine Möglichkeit bietet, dass „Mit Ethereum anmelden“ mit Smart Contracts funktioniert – und er kann auf viele Arten implementiert werden (wobei Safe eine nicht triviale, interessante Implementierung aufweist, die man in Betracht ziehen sollte).
+[EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) ist ein vielseitiger Standard, der es Smart Contracts ermöglicht, Signaturen zu verifizieren. Er öffnet die Tür für Smart Contracts, sich mehr wie EOAs zu verhalten – zum Beispiel, indem er eine Möglichkeit bietet, dass „Mit Quantaureum anmelden“ mit Smart Contracts funktioniert – und er kann auf viele Arten implementiert werden (wobei Safe eine nicht triviale, interessante Implementierung aufweist, die man in Betracht ziehen sollte).

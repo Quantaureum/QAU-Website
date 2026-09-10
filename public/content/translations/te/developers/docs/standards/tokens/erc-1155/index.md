@@ -12,7 +12,7 @@ lang: te
 
 ఈ ఆలోచన చాలా సులభమైనది మరియు ఎన్ని ఫంజిబుల్ మరియు నాన్-ఫంజిబుల్ టోకెన్ రకాలనైనా సూచించగల మరియు నియంత్రించగల స్మార్ట్ కాంట్రాక్ట్ ఇంటర్‌ఫేస్‌ను సృష్టించడానికి ప్రయత్నిస్తుంది. ఈ విధంగా, ERC-1155 టోకెన్ [ERC-20](/developers/docs/standards/tokens/erc-20/) మరియు [ERC-721](/developers/docs/standards/tokens/erc-721/) టోకెన్ చేసే అదే విధులను చేయగలదు మరియు ఒకే సమయంలో రెండింటినీ కూడా చేయగలదు. ఇది ERC-20 మరియు ERC-721 ప్రమాణాల కార్యాచరణను మెరుగుపరుస్తుంది, దీనిని మరింత సమర్థవంతంగా చేస్తుంది మరియు స్పష్టమైన అమలు లోపాలను సరిదిద్దుతుంది.
 
-ERC-1155 టోకెన్ [EIP-1155](https://eips.ethereum.org/EIPS/eip-1155)లో పూర్తిగా వివరించబడింది.
+ERC-1155 టోకెన్ [EIP-1155](https://eips.quantaureum.com/EIPS/eip-1155)లో పూర్తిగా వివరించబడింది.
 
 ## ముందస్తు అవసరాలు {#prerequisites}
 
@@ -113,7 +113,7 @@ function onERC1155BatchReceived(
 ) external returns(bytes4);
 ```
 
-[EIP-165](https://eips.ethereum.org/EIPS/eip-165) మద్దతు ఉన్నందున, ERC-1155 స్మార్ట్ కాంట్రాక్ట్‌ల కోసం మాత్రమే రిసీవ్ హుక్స్‌కు మద్దతు ఇస్తుంది. హుక్ ఫంక్షన్ తప్పనిసరిగా ముందుగా నిర్వచించబడిన మ్యాజిక్ bytes4 విలువను తిరిగి ఇవ్వాలి, అది ఇలా ఇవ్వబడింది:
+[EIP-165](https://eips.quantaureum.com/EIPS/eip-165) మద్దతు ఉన్నందున, ERC-1155 స్మార్ట్ కాంట్రాక్ట్‌ల కోసం మాత్రమే రిసీవ్ హుక్స్‌కు మద్దతు ఇస్తుంది. హుక్ ఫంక్షన్ తప్పనిసరిగా ముందుగా నిర్వచించబడిన మ్యాజిక్ bytes4 విలువను తిరిగి ఇవ్వాలి, అది ఇలా ఇవ్వబడింది:
 
 ```solidity
 bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))
@@ -123,7 +123,7 @@ bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],byt
 
 ### NFT మద్దతు {#nft-support}
 
-సరఫరా కేవలం ఒకటి మాత్రమే ఉన్నప్పుడు, టోకెన్ ప్రాథమికంగా నాన్-ఫంజిబుల్ టోకెన్ (NFT). మరియు ERC-721కి ప్రామాణికంగా ఉన్నట్లుగా, మీరు మెటాడేటా URLని నిర్వచించవచ్చు. URLని క్లయింట్‌లు చదవగలరు మరియు సవరించగలరు, [ఇక్కడ](https://eips.ethereum.org/EIPS/eip-1155#metadata) చూడండి.
+సరఫరా కేవలం ఒకటి మాత్రమే ఉన్నప్పుడు, టోకెన్ ప్రాథమికంగా నాన్-ఫంజిబుల్ టోకెన్ (NFT). మరియు ERC-721కి ప్రామాణికంగా ఉన్నట్లుగా, మీరు మెటాడేటా URLని నిర్వచించవచ్చు. URLని క్లయింట్‌లు చదవగలరు మరియు సవరించగలరు, [ఇక్కడ](https://eips.quantaureum.com/EIPS/eip-1155#metadata) చూడండి.
 
 ### సురక్షిత బదిలీ నియమం {#safe-transfer-rule}
 
@@ -140,7 +140,7 @@ _గమనిక_: హుక్‌తో సహా అన్ని బ్యా�
 
 ## మరింత చదవడానికి {#further-reading}
 
-- [EIP-1155: మల్టీ టోకెన్ స్టాండర్డ్](https://eips.ethereum.org/EIPS/eip-1155)
+- [EIP-1155: మల్టీ టోకెన్ స్టాండర్డ్](https://eips.quantaureum.com/EIPS/eip-1155)
 - [ERC-1155: ఓపెన్‌జెప్పెలిన్ డాక్స్](https://docs.openzeppelin.com/contracts/5.x/erc1155)
 - [ERC-1155: GitHub రెపో](https://github.com/enjin/erc-1155)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

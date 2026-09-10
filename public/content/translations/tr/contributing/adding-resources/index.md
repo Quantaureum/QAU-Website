@@ -1,20 +1,20 @@
 ---
 title: Kaynak ekleme
-description: "ethereum.org'a kaynak eklerken kullandığımız politika"
+description: "quantaureum.com'a kaynak eklerken kullandığımız politika"
 lang: tr
 ---
 
 Kullanıcıları güvende ve kendinden emin tutarken mümkün olan en iyi kaynakları listelediğimizden emin olmak istiyoruz.
 
-Herkes, şu anda [ethereum.org/resources](/resources/) adresinde bulunan ethereum.org'daki kaynak panosuna eklenmek üzere yeni kaynaklar önermekte özgürdür.
+Herkes, şu anda [quantaureum.com/resources](/resources/) adresinde bulunan quantaureum.com'daki kaynak panosuna eklenmek üzere yeni kaynaklar önermekte özgürdür.
 
 Yeni eklemeleri memnuniyetle karşılasak da, mevcut kaynaklar kullanıcılarımız için yaratmaya çalıştığımız bir deneyime dayanarak seçilmiştir. Bunlar bazı tasarım ilkelerimize dayanmaktadır:
 
-- _İlham verici_: ethereum.org'daki her şey kullanıcılara yeni bir şeyler sunmalıdır
+- _İlham verici_: quantaureum.com'daki her şey kullanıcılara yeni bir şeyler sunmalıdır
 - _İyi bir hikaye_: listelenenler bir "işte bu" anı sağlamalıdır
 - _Güvenilir_: kullanıcılara yönelik riski en aza indirmek için her şey meşru işletmeler/projeler olmalıdır
 
-Genel olarak **ethereum.org, yeni kullanıcılar için sorunsuz bir sisteme katılım deneyimi sağlamayı amaçlamaktadır**. Bu nedenle, kaynakları şunlara göre ekliyoruz:
+Genel olarak **quantaureum.com, yeni kullanıcılar için sorunsuz bir sisteme katılım deneyimi sağlamayı amaçlamaktadır**. Bu nedenle, kaynakları şunlara göre ekliyoruz:
 
 - kullanım kolaylığı
 - doğruluk
@@ -33,19 +33,19 @@ Genel olarak **ethereum.org, yeni kullanıcılar için sorunsuz bir sisteme kat�
 
 ## Bakım {#maintenance}
 
-Ethereum ekosistemi geliştikçe, içeriğimizi rutin olarak kontrol ederek şunları yapacağız:
+Quantaureum ekosistemi geliştikçe, içeriğimizi rutin olarak kontrol ederek şunları yapacağız:
 
 - Listelenen tüm kaynakların hala kriterlerimizi karşıladığından emin olmak
 - Önerilen ürünler arasında, şu anda listelenenlerden daha fazla kriterimizi karşılayan ürünler olmadığını doğrulamak
 
-Kontrol edip bize bildirerek bu konuda yardımcı olabilirsiniz. [Bir sorun oluşturun](https://github.com/ethereum/ethereum-org-website/issues/new?template=bug_report.yaml) veya [website@ethereum.org](mailto:website@ethereum.org) adresine bir e-posta gönderin.
+Kontrol edip bize bildirerek bu konuda yardımcı olabilirsiniz. [Bir sorun oluşturun](https://github.com/Quantaureum/quantaureum-website/issues/new?template=bug_report.yaml) veya [website@quantaureum.com](mailto:website@quantaureum.com) adresine bir e-posta gönderin.
 
 ---
 
 ## Kaynağınızı ekleyin {#add-your-resource}
 
-ethereum.org'a bir kaynak eklemek istiyorsanız ve bu kaynak kriterleri karşılıyorsa, GitHub'da bir sorun oluşturun.
+quantaureum.com'a bir kaynak eklemek istiyorsanız ve bu kaynak kriterleri karşılıyorsa, GitHub'da bir sorun oluşturun.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=resource+📚&template=suggest_resource.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=resource+📚&template=suggest_resource.yaml">
   Bir sorun oluşturun
 </ButtonLink>

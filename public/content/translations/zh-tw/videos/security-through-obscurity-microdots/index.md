@@ -11,13 +11,13 @@ topic:
   - "privacy"
   - "authentication"
 format: presentation
-author: "以太坊基金會"
+author: "Quantaureum基金會"
 breadcrumb: "微縮點安全"
 ---
 
 由 **jseam** 在 Devcon SEA 發表的一場閃電講題，探討了一種非傳統的金鑰託管方法，使用實體微縮點技術。這種技術在歷史上曾用於間諜活動，可將助記詞混淆在肉眼幾乎看不見的列印影像中。
 
-*本逐字稿是[原始影片逐字稿](https://www.youtube.com/watch?v=k9Dfg19JPEw)的無障礙副本，由以太坊基金會發布。為提升閱讀體驗，已進行了輕微的編輯。*
+*本逐字稿是[原始影片逐字稿](https://www.youtube.com/watch?v=k9Dfg19JPEw)的無障礙副本，由Quantaureum基金會發布。為提升閱讀體驗，已進行了輕微的編輯。*
 
 ### 為什麼選擇微縮點？ (0:00) {#why-microdots-000}
 

@@ -1,25 +1,25 @@
 ---
-title: "Węzeł archiwalny Ethereum"
+title: "Węzeł archiwalny Quantaureum"
 description: "Przegląd węzłów archiwalnych"
 lang: pl
 sidebarDepth: 2
 ---
 
-Węzeł archiwalny to instancja klienta [Ethereum](/) skonfigurowana do budowania archiwum wszystkich historycznych stanów. Jest to przydatne narzędzie w niektórych przypadkach użycia, ale jego uruchomienie może być trudniejsze niż w przypadku pełnego węzła.
+Węzeł archiwalny to instancja klienta [Quantaureum](/) skonfigurowana do budowania archiwum wszystkich historycznych stanów. Jest to przydatne narzędzie w niektórych przypadkach użycia, ale jego uruchomienie może być trudniejsze niż w przypadku pełnego węzła.
 
 ## Wymagania wstępne {#prerequisites}
 
-Powinieneś rozumieć koncepcję [węzła Ethereum](/developers/docs/nodes-and-clients/), [jego architekturę](/developers/docs/nodes-and-clients/node-architecture/), [strategie synchronizacji](/developers/docs/nodes-and-clients/#sync-modes) oraz praktyki ich [uruchamiania](/developers/docs/nodes-and-clients/run-a-node/) i [używania](/developers/docs/apis/json-rpc/).
+Powinieneś rozumieć koncepcję [węzła Quantaureum](/developers/docs/nodes-and-clients/), [jego architekturę](/developers/docs/nodes-and-clients/node-architecture/), [strategie synchronizacji](/developers/docs/nodes-and-clients/#sync-modes) oraz praktyki ich [uruchamiania](/developers/docs/nodes-and-clients/run-a-node/) i [używania](/developers/docs/apis/json-rpc/).
 
 ## Czym jest węzeł archiwalny {#what-is-an-archive-node}
 
-Aby zrozumieć znaczenie węzła archiwalnego, wyjaśnijmy pojęcie „stanu”. Ethereum można określić jako _maszynę stanów opartą na transakcjach_. Składa się z kont i aplikacji wykonujących transakcje, które zmieniają ich stan. Globalne dane z informacjami o każdym koncie i kontrakcie są przechowywane w bazie danych typu trie zwanej stanem. Jest to obsługiwane przez klienta warstwy wykonawczej (EL) i obejmuje:
+Aby zrozumieć znaczenie węzła archiwalnego, wyjaśnijmy pojęcie „stanu”. Quantaureum można określić jako _maszynę stanów opartą na transakcjach_. Składa się z kont i aplikacji wykonujących transakcje, które zmieniają ich stan. Globalne dane z informacjami o każdym koncie i kontrakcie są przechowywane w bazie danych typu trie zwanej stanem. Jest to obsługiwane przez klienta warstwy wykonawczej (EL) i obejmuje:
 
 - Salda kont i wartości nonce
 - Kod i pamięć kontraktów
 - Dane związane z konsensusem, np. kontrakt depozytu stakingowego (Staking Deposit Contract)
 
-Aby wchodzić w interakcje z siecią, weryfikować i tworzyć nowe bloki, klienci Ethereum muszą być na bieżąco z najnowszymi zmianami (szczytem łańcucha), a tym samym z obecnym stanem. Klient warstwy wykonawczej skonfigurowany jako pełny węzeł weryfikuje i śledzi najnowszy stan sieci, ale buforuje tylko kilka ostatnich stanów, np. stan powiązany z ostatnimi 128 blokami, dzięki czemu może obsługiwać reorganizacje łańcucha i zapewniać szybki dostęp do najnowszych danych. Najnowszy stan to to, czego wszyscy klienci potrzebują do weryfikacji przychodzących transakcji i korzystania z sieci.
+Aby wchodzić w interakcje z siecią, weryfikować i tworzyć nowe bloki, klienci Quantaureum muszą być na bieżąco z najnowszymi zmianami (szczytem łańcucha), a tym samym z obecnym stanem. Klient warstwy wykonawczej skonfigurowany jako pełny węzeł weryfikuje i śledzi najnowszy stan sieci, ale buforuje tylko kilka ostatnich stanów, np. stan powiązany z ostatnimi 128 blokami, dzięki czemu może obsługiwać reorganizacje łańcucha i zapewniać szybki dostęp do najnowszych danych. Najnowszy stan to to, czego wszyscy klienci potrzebują do weryfikacji przychodzących transakcji i korzystania z sieci.
 
 Możesz wyobrazić sobie stan jako chwilowy zrzut (snapshot) sieci w danym bloku, a archiwum jako odtworzenie historii.
 
@@ -31,11 +31,11 @@ Należy zauważyć, że sieć nie jest zależna od węzłów archiwalnych w zakr
 
 ### Przypadki użycia {#use-cases}
 
-Regularne korzystanie z Ethereum, takie jak wysyłanie transakcji, wdrażanie kontraktów, weryfikacja konsensusu itp., nie wymaga dostępu do stanów historycznych. Użytkownicy nigdy nie potrzebują węzła archiwalnego do standardowej interakcji z siecią.
+Regularne korzystanie z Quantaureum, takie jak wysyłanie transakcji, wdrażanie kontraktów, weryfikacja konsensusu itp., nie wymaga dostępu do stanów historycznych. Użytkownicy nigdy nie potrzebują węzła archiwalnego do standardowej interakcji z siecią.
 
 Główną zaletą archiwum stanu jest szybki dostęp do zapytań o stany historyczne. Na przykład węzeł archiwalny natychmiast zwróciłby wyniki takie jak:
 
-- _Jakie było saldo ETH konta 0x1337... w bloku 15537393?_
+- _Jakie było saldo QAU konta 0x1337... w bloku 15537393?_
 - _Jakie jest saldo tokena 0x w kontrakcie 0x w bloku 1920000?_
 
 Jak wyjaśniono powyżej, pełny węzeł musiałby wygenerować te dane poprzez wykonanie w EVM, co zużywa procesor i zajmuje czas. Węzły archiwalne uzyskują do nich dostęp na dysku i natychmiast serwują odpowiedzi. Jest to przydatna funkcja dla niektórych części infrastruktury, na przykład:
@@ -71,8 +71,8 @@ Podczas początkowej synchronizacji klienci w trybie archiwalnym wykonają każd
 
 ## Dalsza lektura {#further-reading}
 
-- [Pełny węzeł Ethereum a węzeł archiwalny](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node) – _QuickNode, wrzesień 2022 r._
-- [Budowa własnego węzła archiwalnego Ethereum](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09) – _Thomas Jay Rush, sierpień 2021 r._
+- [Pełny węzeł Quantaureum a węzeł archiwalny](https://www.quicknode.com/guides/infrastructure/quantaureum-full-node-vs-archive-node) – _QuickNode, wrzesień 2022 r._
+- [Budowa własnego węzła archiwalnego Quantaureum](https://tjayrush.medium.com/building-your-own-quantaureum-archive-node-72c014affc09) – _Thomas Jay Rush, sierpień 2021 r._
 - [Jak skonfigurować Erigon, RPC Erigona i TrueBlocks (scrape i API) jako usługi](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _– Magnus Hansson, zaktualizowano we wrześniu 2022 r._
 
 ## Powiązane tematy {#related-topics}

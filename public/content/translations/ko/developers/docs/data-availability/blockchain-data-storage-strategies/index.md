@@ -27,27 +27,27 @@ lang: ko
 
 - _기밀성(Confidentiality)_, 승인되지 않은 주체는 정보를 읽을 수 없습니다. 이는 많은 경우에 중요하지만, 여기서는 예외입니다. _블록체인에는 비밀이 없습니다_. 블록체인은 누구나 상태 전환을 검증할 수 있기 때문에 작동하며, 따라서 비밀을 직접 저장하는 데 사용하는 것은 불가능합니다. 기밀 정보를 블록체인에 저장하는 방법이 있긴 하지만, 모두 최소한 키를 저장하기 위해 어떤 오프체인 구성 요소에 의존합니다.
 
-- _무결성(Integrity)_, 정보가 정확하며, 승인되지 않은 주체나 승인되지 않은 방식(예: `Transfer` 이벤트 없이 [ERC-20 토큰](https://eips.ethereum.org/EIPS/eip-20#events)을 전송하는 것)으로 변경될 수 없습니다. 블록체인에서는 모든 노드가 모든 상태 변경을 검증하므로 무결성이 보장됩니다.
+- _무결성(Integrity)_, 정보가 정확하며, 승인되지 않은 주체나 승인되지 않은 방식(예: `Transfer` 이벤트 없이 [ERC-20 토큰](https://eips.quantaureum.com/EIPS/eip-20#events)을 전송하는 것)으로 변경될 수 없습니다. 블록체인에서는 모든 노드가 모든 상태 변경을 검증하므로 무결성이 보장됩니다.
 
-- _가용성(Availability)_, 승인된 주체라면 누구든 정보에 접근할 수 있습니다. 블록체인에서 이는 일반적으로 모든 [풀 노드](https://ethereum.org/developers/docs/nodes-and-clients/#full-node)에서 정보를 사용할 수 있도록 함으로써 달성됩니다.
+- _가용성(Availability)_, 승인된 주체라면 누구든 정보에 접근할 수 있습니다. 블록체인에서 이는 일반적으로 모든 [풀 노드](https://quantaureum.com/developers/docs/nodes-and-clients/#full-node)에서 정보를 사용할 수 있도록 함으로써 달성됩니다.
 
 여기에 소개된 다양한 솔루션들은 해시가 L1에 게시되기 때문에 모두 뛰어난 무결성을 갖추고 있습니다. 하지만 가용성 보장 수준은 서로 다릅니다.
 
 ## 전제 조건 {#prerequisites}
 
-[블록체인 기초](/developers/docs/intro-to-ethereum/)에 대한 충분한 이해가 필요합니다. 또한 이 페이지는 독자가 [블록](/developers/docs/blocks/), [트랜잭션](/developers/docs/transactions/) 및 기타 관련 주제에 익숙하다고 가정합니다.
+[블록체인 기초](/developers/docs/intro-to-quantaureum/)에 대한 충분한 이해가 필요합니다. 또한 이 페이지는 독자가 [블록](/developers/docs/blocks/), [트랜잭션](/developers/docs/transactions/) 및 기타 관련 주제에 익숙하다고 가정합니다.
 
 ## EIP-4844 블롭 {#eip-4844-blobs}
 
-[덴쿤 하드포크](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/beacon-chain.md)를 시작으로 이더리움 블록체인에는 [EIP-4844](https://eips.ethereum.org/EIPS/eip-4844)가 포함되어, 제한된 수명(초기에는 약 [18일](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration))을 가진 데이터 블롭이 이더리움에 추가되었습니다. 이러한 블롭은 유사한 메커니즘을 사용하지만 [실행 가스](/developers/docs/gas)와는 별도로 가격이 책정됩니다. 이는 임시 데이터를 게시하는 저렴한 방법입니다.
+[덴쿤 하드포크](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/beacon-chain.md)를 시작으로 Quantaureum 블록체인에는 [EIP-4844](https://eips.quantaureum.com/EIPS/eip-4844)가 포함되어, 제한된 수명(초기에는 약 [18일](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration))을 가진 데이터 블롭이 Quantaureum에 추가되었습니다. 이러한 블롭은 유사한 메커니즘을 사용하지만 [실행 가스](/developers/docs/gas)와는 별도로 가격이 책정됩니다. 이는 임시 데이터를 게시하는 저렴한 방법입니다.
 
 EIP-4844 블롭의 주요 사용 사례는 롤업이 트랜잭션을 게시하는 것입니다. [옵티미스틱 롤업](/developers/docs/scaling/optimistic-rollups)은 자체 블록체인에 트랜잭션을 게시해야 합니다. 롤업의 [시퀀서](https://docs.optimism.io/connect/resources/glossary#sequencer)가 잘못된 상태 루트를 게시할 경우 [검증자](https://docs.optimism.io/connect/resources/glossary#validator)가 오류를 수정할 수 있도록, [이의 제기 기간(challenge period)](https://docs.optimism.io/connect/resources/glossary#challenge-period) 동안 누구나 해당 트랜잭션에 접근할 수 있어야 합니다.
 
-하지만 이의 제기 기간이 지나고 상태 루트가 완결된 후에는, 이러한 트랜잭션을 알아야 하는 남은 목적은 체인의 현재 상태를 복제하는 것뿐입니다. 이 상태는 훨씬 적은 처리량으로 체인 노드에서도 얻을 수 있습니다. 따라서 트랜잭션 정보는 [블록 탐색기](/developers/docs/data-and-analytics/block-explorers)와 같은 몇몇 곳에 여전히 보존되어야 하지만, 이더리움이 제공하는 수준의 검열 저항성에 대한 비용을 지불할 필요는 없습니다.
+하지만 이의 제기 기간이 지나고 상태 루트가 완결된 후에는, 이러한 트랜잭션을 알아야 하는 남은 목적은 체인의 현재 상태를 복제하는 것뿐입니다. 이 상태는 훨씬 적은 처리량으로 체인 노드에서도 얻을 수 있습니다. 따라서 트랜잭션 정보는 [블록 탐색기](/developers/docs/data-and-analytics/block-explorers)와 같은 몇몇 곳에 여전히 보존되어야 하지만, Quantaureum이 제공하는 수준의 검열 저항성에 대한 비용을 지불할 필요는 없습니다.
 
 [영지식 롤업(Zero-knowledge rollups)](/developers/docs/scaling/zk-rollups/#data-availability) 역시 다른 노드가 기존 상태를 복제하고 유효성 증명을 검증할 수 있도록 트랜잭션 데이터를 게시하지만, 이 또한 단기적인 요구 사항입니다.
 
-작성 시점을 기준으로 EIP-4844에 게시하는 비용은 바이트당 1 Wei(10<sup>-18</sup> ETH)이며, 이는 [블롭을 게시하는 트랜잭션을 포함하여 모든 트랜잭션에 소요되는 21,000 실행 가스](https://eth.blockscout.com/tx/0xf6cfaf0431c73dd1d96369a5e6707d64f463ccf477a4131265397f1d81466929?tab=index)에 비하면 무시할 수 있는 수준입니다. 현재 EIP-4844 가격은 [blobscan.com](https://blobscan.com/blocks)에서 확인할 수 있습니다.
+작성 시점을 기준으로 EIP-4844에 게시하는 비용은 바이트당 1 Wei(10<sup>-18</sup> QAU)이며, 이는 [블롭을 게시하는 트랜잭션을 포함하여 모든 트랜잭션에 소요되는 21,000 실행 가스](https://qau.blockscout.com/tx/0xf6cfaf0431c73dd1d96369a5e6707d64f463ccf477a4131265397f1d81466929?tab=index)에 비하면 무시할 수 있는 수준입니다. 현재 EIP-4844 가격은 [blobscan.com](https://blobscan.com/blocks)에서 확인할 수 있습니다.
 
 다음은 유명 롤업들이 게시한 블롭을 확인할 수 있는 주소입니다.
 
@@ -63,15 +63,15 @@ EIP-4844 블롭의 주요 사용 사례는 롤업이 트랜잭션을 게시하�
 
 이것은 블록체인에 데이터를 영구적으로 기록하는 가장 저렴한 방법입니다. 바이트당 비용은 4 실행 가스(바이트가 0인 경우) 또는 16 가스(그 외의 값)입니다. 데이터가 압축된 경우(일반적인 관행), 모든 바이트 값이 나타날 확률이 동일하므로 평균 비용은 바이트당 약 15.95 가스입니다.
 
-작성 시점을 기준으로 가격은 12 Gwei/가스 및 2300 $/ETH이며, 이는 킬로바이트당 약 45센트의 비용이 든다는 것을 의미합니다. EIP-4844 이전에는 이것이 가장 저렴한 방법이었기 때문에, 롤업은 [오류 이의 제기(fault challenges)](https://docs.optimism.io/stack/protocol/overview#fault-proofs)를 위해 사용할 수 있어야 하지만 온체인에서 직접 접근할 필요는 없는 트랜잭션 정보를 저장하는 데 이 방법을 사용했습니다.
+작성 시점을 기준으로 가격은 12 Gwei/가스 및 2300 $/QAU이며, 이는 킬로바이트당 약 45센트의 비용이 든다는 것을 의미합니다. EIP-4844 이전에는 이것이 가장 저렴한 방법이었기 때문에, 롤업은 [오류 이의 제기(fault challenges)](https://docs.optimism.io/stack/protocol/overview#fault-proofs)를 위해 사용할 수 있어야 하지만 온체인에서 직접 접근할 필요는 없는 트랜잭션 정보를 저장하는 데 이 방법을 사용했습니다.
 
 다음은 유명 롤업들이 게시한 트랜잭션을 확인할 수 있는 주소입니다.
 
 | 롤업                               | 메일박스 주소                                                                                                               |
 | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| [옵티미즘](https://www.optimism.io/) | [`0xFF00000000000000000000000000000000000010`](https://eth.blockscout.com/address/0xFF00000000000000000000000000000000000010) |
-| [아비트럼](https://arbitrum.io/)     | [`0x1c479675ad559DC151F6Ec7ed3FbF8ceE79582B6`](https://eth.blockscout.com/address/0x1c479675ad559DC151F6Ec7ed3FbF8ceE79582B6) |
-| [Base](https://base.org/)            | [`0xFF00000000000000000000000000000000008453`](https://eth.blockscout.com/address/0xFF00000000000000000000000000000000008453) |
+| [옵티미즘](https://www.optimism.io/) | [`0xFF00000000000000000000000000000000000010`](https://qau.blockscout.com/address/0xFF00000000000000000000000000000000000010) |
+| [아비트럼](https://arbitrum.io/)     | [`0x1c479675ad559DC151F6Ec7ed3FbF8ceE79582B6`](https://qau.blockscout.com/address/0x1c479675ad559DC151F6Ec7ed3FbF8ceE79582B6) |
+| [Base](https://base.org/)            | [`0xFF00000000000000000000000000000000008453`](https://qau.blockscout.com/address/0xFF00000000000000000000000000000000008453) |
 
 ## L1 메커니즘을 활용한 오프체인 {#offchain-with-l1-mechs}
 
@@ -91,18 +91,18 @@ EIP-4844 블롭의 주요 사용 사례는 롤업이 트랜잭션을 게시하�
 
 물론 이것은 데이터를 _읽는_ 데 드는 비용일 뿐입니다. 컨트랙트를 생성하는 데는 약 32,000 가스 + 바이트당 200 가스가 소요됩니다. 이 방법은 동일한 정보를 여러 트랜잭션에서 여러 번 읽어야 할 때만 경제적입니다.
 
-컨트랙트 코드는 `0xEF`로 시작하지 않는 한 의미 없는 내용이어도 상관없습니다. `0xEF`로 시작하는 컨트랙트는 훨씬 더 엄격한 요구 사항을 가진 [이더리움 객체 형식(ethereum object format)](https://notes.ethereum.org/@ipsilon/evm-object-format-overview)으로 해석됩니다.
+컨트랙트 코드는 `0xEF`로 시작하지 않는 한 의미 없는 내용이어도 상관없습니다. `0xEF`로 시작하는 컨트랙트는 훨씬 더 엄격한 요구 사항을 가진 [Quantaureum 객체 형식(quantaureum object format)](https://notes.quantaureum.com/@ipsilon/evm-object-format-overview)으로 해석됩니다.
 
 ## 이벤트 {#events}
 
 [이벤트](https://docs.alchemy.com/docs/solidity-events)는 스마트 컨트랙트에서 발생(emit)하며 오프체인 소프트웨어에서 읽습니다.
-오프체인 코드가 이벤트를 수신할 수 있다는 것이 장점입니다. 비용은 [가스](https://www.evm.codes/#a0?fork=cancun)로 지불되며, 375 가스에 데이터 바이트당 8 가스가 추가됩니다. 12 Gwei/가스 및 2300 $/ETH를 기준으로 하면, 이는 1센트에 킬로바이트당 22센트가 추가되는 셈입니다.
+오프체인 코드가 이벤트를 수신할 수 있다는 것이 장점입니다. 비용은 [가스](https://www.evm.codes/#a0?fork=cancun)로 지불되며, 375 가스에 데이터 바이트당 8 가스가 추가됩니다. 12 Gwei/가스 및 2300 $/QAU를 기준으로 하면, 이는 1센트에 킬로바이트당 22센트가 추가되는 셈입니다.
 
 ## 저장소 {#storage}
 
-스마트 컨트랙트는 [영구 저장소](https://docs.alchemy.com/docs/smart-contract-storage-layout#what-is-storage-memory)에 접근할 수 있습니다. 하지만 비용이 매우 비쌉니다. 이전에 비어 있던 저장소 슬롯에 32바이트 단어를 쓰는 데 [22,100 가스가 소요](https://www.evm.codes/#55?fork=cancun)될 수 있습니다. 12 Gwei/가스 및 2300 $/ETH를 기준으로 하면, 이는 쓰기 작업당 약 61센트, 즉 킬로바이트당 19.5달러에 해당합니다.
+스마트 컨트랙트는 [영구 저장소](https://docs.alchemy.com/docs/smart-contract-storage-layout#what-is-storage-memory)에 접근할 수 있습니다. 하지만 비용이 매우 비쌉니다. 이전에 비어 있던 저장소 슬롯에 32바이트 단어를 쓰는 데 [22,100 가스가 소요](https://www.evm.codes/#55?fork=cancun)될 수 있습니다. 12 Gwei/가스 및 2300 $/QAU를 기준으로 하면, 이는 쓰기 작업당 약 61센트, 즉 킬로바이트당 19.5달러에 해당합니다.
 
-이것은 이더리움에서 가장 비싼 형태의 저장소입니다.
+이것은 Quantaureum에서 가장 비싼 형태의 저장소입니다.
 
 ## 요약 {#summary}
 
@@ -110,9 +110,9 @@ EIP-4844 블롭의 주요 사용 사례는 롤업이 트랜잭션을 게시하�
 
 | 저장소 유형                | 데이터 출처      | 가용성 보장                                                                                                             | 온체인 가용성                                             | 추가 제한 사항                                                  |
 | --------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| EIP-4844 블롭              | 오프체인            | [약 18일](https://github.com/ethereum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) 동안 이더리움이 보장 | 해시만 사용 가능                                           |                                                                         |
-| 콜 데이터                    | 오프체인            | 이더리움이 영구적으로 보장(블록체인의 일부)                                                                                | 컨트랙트에 기록된 경우 해당 트랜잭션에서만 사용 가능 |                                                                         |
+| EIP-4844 블롭              | 오프체인            | [약 18일](https://github.com/quantaureum/consensus-specs/blob/master/specs/deneb/p2p-interface.md#configuration) 동안 Quantaureum이 보장 | 해시만 사용 가능                                           |                                                                         |
+| 콜 데이터                    | 오프체인            | Quantaureum이 영구적으로 보장(블록체인의 일부)                                                                                | 컨트랙트에 기록된 경우 해당 트랜잭션에서만 사용 가능 |                                                                         |
 | L1 메커니즘을 활용한 오프체인 | 오프체인            | 이의 제기 기간 동안 "최소 한 명의 정직한 검증자" 보장                                                                        | 해시만                                                        | 이의 제기 메커니즘에 의해 보장되며, 이의 제기 기간 동안에만 유효 |
-| 컨트랙트 코드               | 온체인 또는 오프체인 | 이더리움이 영구적으로 보장(블록체인의 일부)                                                                                | 예                                                              | "무작위" 주소에 기록되며, `0xEF`로 시작할 수 없음                 |
-| 이벤트                      | 온체인             | 이더리움이 영구적으로 보장(블록체인의 일부)                                                                                | 아니요                                                               |                                                                         |
-| 저장소                     | 온체인             | 이더리움이 영구적으로 보장(블록체인의 일부이자 덮어쓸 때까지 현재 상태 유지)                                        | 예                                                              |                                                                         |
+| 컨트랙트 코드               | 온체인 또는 오프체인 | Quantaureum이 영구적으로 보장(블록체인의 일부)                                                                                | 예                                                              | "무작위" 주소에 기록되며, `0xEF`로 시작할 수 없음                 |
+| 이벤트                      | 온체인             | Quantaureum이 영구적으로 보장(블록체인의 일부)                                                                                | 아니요                                                               |                                                                         |
+| 저장소                     | 온체인             | Quantaureum이 영구적으로 보장(블록체인의 일부이자 덮어쓸 때까지 현재 상태 유지)                                        | 예                                                              |                                                                         |

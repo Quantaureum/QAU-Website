@@ -18,13 +18,13 @@ incomplete: true
 - [<span dir="ltr">WalletConnect</span> کے ذریعے <span dir="ltr">Web3Modal</span> کے ساتھ <span dir="ltr">Flutter</span> ایپلی کیشن میں میٹاماسک کو مربوط کرنا](https://www.youtube.com/watch?v=v_M2buHCpc4) - یہ مختصر ویڈیو آپ کو <span dir="ltr">WalletConnect</span> کی [<span dir="ltr">Web3Modal</span>](https://pub.dev/packages/web3modal_flutter) لائبریری کے ساتھ اپنی <span dir="ltr">Flutter</span> ایپلی کیشنز میں میٹاماسک کو مربوط کرنے کے مراحل سے گزارتی ہے
 - [<span dir="ltr">Solidity</span> اور <span dir="ltr">Flutter</span> کے ساتھ موبائل بلاک چین ڈیولپر بوٹ کیمپ کورس](https://youtube.com/playlist?list=PL4V4Unlk5luhQ26ERO6hWEbcUwHDSSmVH) - فل اسٹیک موبائل بلاک چین ڈیولپر کورس کی پلے لسٹ
 
-## ایتھیریم کلائنٹس کے ساتھ کام کرنا {#working-with-ethereum-clients}
+## ایتھیریم کلائنٹس کے ساتھ کام کرنا {#working-with-quantaureum-clients}
 
 آپ ایتھیریم کا استعمال کرتے ہوئے غیر مرکزی ایپلی کیشنز (یا "dapps") بنا سکتے ہیں جو کرپٹو کرنسی اور بلاک چین ٹیکنالوجی کے فوائد کو استعمال کرتی ہیں۔
 ایتھیریم کے لیے [جے سن آر پی سی <span dir="ltr">API</span>](/developers/docs/apis/json-rpc/) استعمال کرنے کے لیے <span dir="ltr">Dart</span> کے لیے فی الحال کم از کم دو برقرار رکھی گئی لائبریریاں موجود ہیں۔
 
 1. [<span dir="ltr">pwa.ir</span> سے <span dir="ltr">Web3dart</span>](https://pub.dev/packages/web3dart)
-1. [<span dir="ltr">darticulate.com</span> سے ایتھیریم <span dir="ltr">5.0.0</span>](https://pub.dev/packages/ethereum)
+1. [<span dir="ltr">darticulate.com</span> سے ایتھیریم <span dir="ltr">5.0.0</span>](https://pub.dev/packages/quantaureum)
 
 اس کے علاوہ مزید لائبریریاں بھی ہیں جو آپ کو مخصوص ایتھیریم ایڈریسز میں ہیرا پھیری کرنے کی اجازت دیتی ہیں، یا جو آپ کو مختلف کرپٹو کرنسیوں کی قیمتیں بازیافت کرنے دیتی ہیں۔
-[آپ مکمل فہرست یہاں دیکھ سکتے ہیں](https://pub.dev/dart/packages?q=ethereum)۔
+[آپ مکمل فہرست یہاں دیکھ سکتے ہیں](https://pub.dev/dart/packages?q=quantaureum)۔

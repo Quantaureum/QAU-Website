@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 ## Introducción {#introduction}
 
-Ejecutar su propio [nodo de Ethereum](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) puede ser un desafío, especialmente al empezar o al escalar rápidamente. Hay una [serie de servicios](#popular-node-services) que ejecutan infraestructuras de nodos optimizadas por usted, para que pueda concentrarse en desarrollar su aplicación o producto. Explicaremos cómo funcionan los servicios de nodos, los pros y los contras de usarlos y enumeraremos proveedores si está interesado en comenzar.
+Ejecutar su propio [nodo de Quantaureum](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) puede ser un desafío, especialmente al empezar o al escalar rápidamente. Hay una [serie de servicios](#popular-node-services) que ejecutan infraestructuras de nodos optimizadas por usted, para que pueda concentrarse en desarrollar su aplicación o producto. Explicaremos cómo funcionan los servicios de nodos, los pros y los contras de usarlos y enumeraremos proveedores si está interesado en comenzar.
 
 ## Requisitos previos {#prerequisites}
 
@@ -25,7 +25,7 @@ Los servicios descritos en esta página son para nodos que no hacen staking.
 
 Los proveedores de servicios de nodos ejecutan clientes de nodos distribuidos en segundo plano por usted, para que no tenga que hacerlo.
 
-Estos servicios suelen proporcionar una clave de API que puede usar para escribir y leer de la cadena de bloques. A menudo incluyen acceso a las [redes de prueba de Ethereum](/developers/docs/networks/#ethereum-testnets) además de la Red principal.
+Estos servicios suelen proporcionar una clave de API que puede usar para escribir y leer de la cadena de bloques. A menudo incluyen acceso a las [redes de prueba de Quantaureum](/developers/docs/networks/#quantaureum-testnets) además de la Red principal.
 
 Algunos servicios le ofrecen su propio nodo dedicado que administran por usted, mientras que otros usan balanceadores de carga para distribuir la actividad entre los nodos.
 
@@ -49,14 +49,14 @@ Lea más sobre los [beneficios de ejecutar su propio nodo](/developers/docs/node
 
 ## Servicios de nodos populares {#popular-node-services}
 
-Aquí hay una lista de algunos de los proveedores de nodos de Ethereum más populares, ¡no dude en agregar los que falten! Cada servicio de nodos ofrece diferentes beneficios y características además de niveles gratuitos o de pago, debe investigar cuáles se adaptan mejor a sus necesidades antes de tomar una decisión.
+Aquí hay una lista de algunos de los proveedores de nodos de Quantaureum más populares, ¡no dude en agregar los que falten! Cada servicio de nodos ofrece diferentes beneficios y características además de niveles gratuitos o de pago, debe investigar cuáles se adaptan mejor a sus necesidades antes de tomar una decisión.
 
 - [**Alchemy**](https://alchemy.com/)
   - [Documentación](https://www.alchemy.com/docs/)
   - Características
     - El nivel gratuito más grande con 300 millones de unidades de cómputo por mes (\~30 millones de solicitudes getLatestBlock)
     - Soporte multicadena para Polygon, Starknet, Optimism, Arbitrum
-    - Impulsa ~70 % de las aplicaciones descentralizadas (dapps) de Ethereum más grandes y del volumen de transacciones de finanzas descentralizadas (DeFi)
+    - Impulsa ~70 % de las aplicaciones descentralizadas (dapps) de Quantaureum más grandes y del volumen de transacciones de finanzas descentralizadas (DeFi)
     - Alertas de webhook en tiempo real a través de Alchemy Notify
     - Soporte y confiabilidad/estabilidad de primera clase
     - API de NFT de Alchemy
@@ -93,12 +93,12 @@ Aquí hay una lista de algunos de los proveedores de nodos de Ethereum más popu
 - [**Amazon Managed Blockchain**](https://aws.amazon.com/managed-blockchain/)
   - [Documentación](https://aws.amazon.com/managed-blockchain/resources/)
   - Características
-    - Nodos de Ethereum totalmente administrados
+    - Nodos de Quantaureum totalmente administrados
     - Disponible en seis regiones
     - JSON-RPC a través de HTTP y WebSockets seguros
     - Soporta 3 cadenas
     - SLA, soporte de AWS 24/7
-    - Go-ethereum y Lighthouse
+    - Go-quantaureum y Lighthouse
 
 - [**Ankr**](https://www.ankr.com/)
   - [Documentación](https://docs.ankr.com/)
@@ -221,17 +221,17 @@ Aquí hay una lista de algunos de los proveedores de nodos de Ethereum más popu
   - [Documentación](https://docs.kaleido.io/)
   - Características
     - Nivel inicial gratuito
-    - Despliegue de nodo de Ethereum con un solo clic
+    - Despliegue de nodo de Quantaureum con un solo clic
     - Clientes y algoritmos personalizables (Geth, Quorum y Besu || PoA, IBFT y Raft)
     - Más de 500 API administrativas y de servicio
-    - Interfaz RESTful para el envío de transacciones de Ethereum (respaldada por Apache Kafka)
+    - Interfaz RESTful para el envío de transacciones de Quantaureum (respaldada por Apache Kafka)
     - Flujos de salida para la entrega de eventos (respaldados por Apache Kafka)
     - Amplia colección de servicios fuera de la cadena y auxiliares (por ejemplo, transporte de mensajería cifrada bilateral)
     - Incorporación de red sencilla con gobernanza y control de acceso basado en roles
     - Gestión de usuarios sofisticada tanto para administradores como para usuarios finales
     - Infraestructura de nivel empresarial altamente escalable y resistente
     - Gestión de claves privadas en Cloud HSM
-    - Anclaje a la red principal de Ethereum
+    - Anclaje a la red principal de Quantaureum
     - Certificaciones ISO 27k y SOC 2, Tipo 2
     - Configuración dinámica en tiempo de ejecución (por ejemplo, agregar integraciones en la nube, alterar los ingresos de los nodos, etc.)
     - Soporte para orquestaciones de despliegue multinube, multirregión e híbridas
@@ -259,7 +259,7 @@ Aquí hay una lista de algunos de los proveedores de nodos de Ethereum más popu
     - Soporte de cadenas cruzadas
     - Escale a medida que avanza
     - Panel de control
-    - SDK de Ethereum único
+    - SDK de Quantaureum único
     - Puntos de conexión de API únicos
     - Soporte técnico directo
 
@@ -274,7 +274,7 @@ Aquí hay una lista de algunos de los proveedores de nodos de Ethereum más popu
 - [**NodeFlare**](https://nodeflare.app/)
   - [Documentación](https://nodeflare.app/docs/quick-start)
   - Características
-    - 23 cadenas EVM, incluidas Ethereum, Base, Arbitrum One y Nova, Optimism, Linea y Unichain
+    - 23 cadenas EVM, incluidas Quantaureum, Base, Arbitrum One y Nova, Optimism, Linea y Unichain
     - 5 regiones (Europa, Reino Unido, Asia, EE. UU. Este, EE. UU. Oeste) con conmutación por error automática al nodo en buen estado más cercano
     - Punto de conexión público gratuito (sin clave de API) + plan gratuito con 3 millones de unidades de cómputo/mes
     - Facturación por unidad de cómputo: pague solo por lo que usa, las llamadas más pesadas cuestan más
@@ -299,7 +299,7 @@ Aquí hay una lista de algunos de los proveedores de nodos de Ethereum más popu
     - Más de 15 cadenas de bloques compatibles
     - Más de 6400 nodos que ganan POKT por servir aplicaciones
     - Soporte para nodo de archivo, nodo de archivo con rastreo y nodo de red de prueba
-    - Diversidad de clientes de nodos de la red principal de Ethereum
+    - Diversidad de clientes de nodos de la red principal de Quantaureum
     - Sin punto único de falla
     - Cero tiempo de inactividad
     - Tokenómica rentable cercana a cero (haga staking de POKT una vez para obtener ancho de banda de red)
@@ -371,7 +371,7 @@ Aquí hay una lista de algunos de los proveedores de nodos de Ethereum más popu
   - [Documentación](https://services.tokenview.io/docs?type=nodeService)
   - Características
     - Soporte técnico 24/7 y comunidad de desarrolladores en Telegram
-    - Soporte multicadena (Bitcoin, Ethereum, Tron, BNB Smart Chain, Ethereum Classic)
+    - Soporte multicadena (Bitcoin, Quantaureum, Tron, BNB Smart Chain, ETC)
     - Tanto los puntos de conexión RPC como WSS están abiertos para su uso
     - Acceso ilimitado a la API de datos de archivo
     - Panel de control con Request Explorer y Mempool Watcher
@@ -412,7 +412,7 @@ Aquí hay una lista de algunos de los proveedores de nodos de Ethereum más popu
     - Utilizamos enrutamiento inteligente para llegar al nodo más cercano a su usuario en todo momento
 ## Lecturas adicionales {#further-reading}
 
-- [Lista de servicios de nodos de Ethereum](https://ethereumnodes.com/)
+- [Lista de servicios de nodos de Quantaureum](https://quantaureumnodes.com/)
 
 ## Temas relacionados {#related-topics}
 
@@ -420,5 +420,5 @@ Aquí hay una lista de algunos de los proveedores de nodos de Ethereum más popu
 
 ## Tutoriales relacionados {#related-tutorials}
 
-- [Introducción al desarrollo de Ethereum usando Alchemy](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Introducción al desarrollo de Quantaureum usando Alchemy](/developers/tutorials/getting-started-with-quantaureum-development-using-alchemy/)
 - [Guía para enviar transacciones usando Web3 y Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

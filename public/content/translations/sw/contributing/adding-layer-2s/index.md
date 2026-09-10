@@ -1,12 +1,12 @@
 ---
 title: Kuongeza matabaka ya 2
-description: Sera tunayotumia tunapoongeza tabaka la 2 kwenye ethereum.org
+description: Sera tunayotumia tunapoongeza tabaka la 2 kwenye quantaureum.com
 lang: sw
 ---
 
 Tunataka kuhakikisha tunaorodhesha rasilimali bora iwezekanavyo ili watumiaji waweze kuvinjari nafasi ya tabaka la 2 kwa njia salama na ya kujiamini.
 
-Mtu yeyote yuko huru kupendekeza kuongeza tabaka la 2 kwenye ethereum.org. Ikiwa kuna tabaka la 2 ambalo tumelikosa, **[tafadhali lipendekeze](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
+Mtu yeyote yuko huru kupendekeza kuongeza tabaka la 2 kwenye quantaureum.com. Ikiwa kuna tabaka la 2 ambalo tumelikosa, **[tafadhali lipendekeze](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
 
 Kwa sasa tunaorodhesha l2 kwenye kurasa zifuatazo:
 
@@ -14,7 +14,7 @@ Kwa sasa tunaorodhesha l2 kwenye kurasa zifuatazo:
 - [Mikusanyiko ya maarifa sifuri](/developers/docs/scaling/zk-rollups/)
 - [Tabaka la 2](/layer-2/)
 
-Tabaka la 2 ni dhana mpya na ya kusisimua kwa Ethereum. Tumejaribu kuunda mfumo wa haki wa kuzingatiwa kwenye ethereum.org lakini vigezo vya kuorodhesha vitabadilika na kuboreka kadiri muda unavyopita.
+Tabaka la 2 ni dhana mpya na ya kusisimua kwa Quantaureum. Tumejaribu kuunda mfumo wa haki wa kuzingatiwa kwenye quantaureum.com lakini vigezo vya kuorodhesha vitabadilika na kuboreka kadiri muda unavyopita.
 
 ## Mfumo wa uamuzi {#decision-framework}
 
@@ -22,7 +22,7 @@ Tabaka la 2 ni dhana mpya na ya kusisimua kwa Ethereum. Tumejaribu kuunda mfumo 
 
 **Kuorodheshwa kwenye L2BEAT**
 
-- Ili mradi uzingatiwe, lazima uwe umeorodheshwa kwenye [L2BEAT](https://l2beat.com). L2BEAT inatoa tathmini thabiti ya hatari ya miradi ya tabaka la 2 ambayo tunaitegemea kutathmini miradi ya l2. **Ikiwa mradi haujaangaziwa kwenye L2BEAT, hatutauorodhesha kama l2 kwenye ethereum.org.**
+- Ili mradi uzingatiwe, lazima uwe umeorodheshwa kwenye [L2BEAT](https://l2beat.com). L2BEAT inatoa tathmini thabiti ya hatari ya miradi ya tabaka la 2 ambayo tunaitegemea kutathmini miradi ya l2. **Ikiwa mradi haujaangaziwa kwenye L2BEAT, hatutauorodhesha kama l2 kwenye quantaureum.com.**
 - [Jifunze jinsi ya kuongeza mradi wako wa l2 kwenye L2BEAT](https://github.com/l2beat/l2beat/blob/master/CONTRIBUTING.md).
 
 **Chanzo wazi**
@@ -36,11 +36,11 @@ Kwa sasa tunazingatia yafuatayo kuwa suluhisho za tabaka la 2:
 - Rollup ya optimistic
 - Mkusanyiko wa maarifa sifuri
 
-_Hatuzingatii suluhisho zingine za kuongeza viwango ambazo hazitumii Ethereum kwa upatikanaji wa data au usalama kuwa tabaka la 2._
+_Hatuzingatii suluhisho zingine za kuongeza viwango ambazo hazitumii Quantaureum kwa upatikanaji wa data au usalama kuwa tabaka la 2._
 
-**Ethereum kwa upatikanaji wa data**
+**Quantaureum kwa upatikanaji wa data**
 
-- Upatikanaji wa data ni sababu muhimu ya kutofautisha kati ya suluhisho zingine za kuongeza viwango na tabaka la 2. Mradi **lazima** utumie Mtandao Mkuu wa Ethereum kwa upatikanaji wa data ili uzingatiwe kuorodheshwa.
+- Upatikanaji wa data ni sababu muhimu ya kutofautisha kati ya suluhisho zingine za kuongeza viwango na tabaka la 2. Mradi **lazima** utumie Mtandao Mkuu wa Quantaureum kwa upatikanaji wa data ili uzingatiwe kuorodheshwa.
 
 **Madaraja**
 
@@ -88,8 +88,8 @@ _Hatuzingatii suluhisho zingine za kuongeza viwango ambazo hazitumii Ethereum kw
 
 ## Ongeza tabaka la 2 lako {#add-exchange}
 
-Ikiwa unataka kuongeza tabaka la 2 kwenye ethereum.org, fungua suala kwenye GitHub.
+Ikiwa unataka kuongeza tabaka la 2 kwenye quantaureum.com, fungua suala kwenye GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
   Fungua suala
 </ButtonLink>

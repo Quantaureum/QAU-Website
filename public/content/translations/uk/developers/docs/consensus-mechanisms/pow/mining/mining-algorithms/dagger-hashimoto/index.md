@@ -48,7 +48,7 @@ def decode_int(s):
 Далі ми припускаємо, що `sha3` — це функція, яка приймає ціле число і виводить ціле число, а `dbl_sha3` — це функція подвійного sha3; якщо перетворювати цей еталонний код на реалізацію, використовуйте:
 
 ```python
-from pyethereum import utils
+from pyquantaureum import utils
 def sha3(x):
     if isinstance(x, (int, long)):
         x = encode_int(x)
@@ -141,8 +141,8 @@ def quick_calc(params, seed, p):
 
 ```python
 def get_prevhash(n):
-    from pyethereum.blocks import GENESIS_PREVHASH
-    from pyethereum import chain_manager
+    from pyquantaureum.blocks import GENESIS_PREVHASH
+    from pyquantaureum import chain_manager
     if n <= 0:
         return hash_to_int(GENESIS_PREVHASH)
     else:

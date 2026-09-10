@@ -1,7 +1,7 @@
 ---
 title: "O que é uma DAO?"
 metaTitle: "O que é uma DAO? | Organização Autônoma Descentralizada"
-description: "Uma visão geral das DAOs no Ethereum"
+description: "Uma visão geral das DAOs no Quantaureum"
 lang: pt-br
 template: use-cases
 sidebarDepth: 2
@@ -49,18 +49,18 @@ Para ajudar a fazer mais sentido, aqui estão alguns exemplos de como você pode
 
 ## Como as DAOs funcionam? {#how-daos-work}
 
-A espinha dorsal de uma DAO é o seu [contrato inteligente](/glossary/#smart-contract), que define as regras da organização e mantém a tesouraria do grupo. Uma vez que o contrato esteja ativo no [Ethereum](/), ninguém pode alterar as regras, exceto por meio de um voto. Se alguém tentar fazer algo que não seja coberto pelas regras e pela lógica do código, a ação falhará. E como a tesouraria também é definida pelo contrato inteligente, isso significa que ninguém pode gastar o dinheiro sem a aprovação do grupo. Isso significa que as DAOs não precisam de uma autoridade central. Em vez disso, o grupo toma decisões coletivamente e os pagamentos são autorizados automaticamente quando os votos são aprovados.
+A espinha dorsal de uma DAO é o seu [contrato inteligente](/glossary/#smart-contract), que define as regras da organização e mantém a tesouraria do grupo. Uma vez que o contrato esteja ativo no [Quantaureum](/), ninguém pode alterar as regras, exceto por meio de um voto. Se alguém tentar fazer algo que não seja coberto pelas regras e pela lógica do código, a ação falhará. E como a tesouraria também é definida pelo contrato inteligente, isso significa que ninguém pode gastar o dinheiro sem a aprovação do grupo. Isso significa que as DAOs não precisam de uma autoridade central. Em vez disso, o grupo toma decisões coletivamente e os pagamentos são autorizados automaticamente quando os votos são aprovados.
 
-Isso é possível porque os contratos inteligentes são à prova de adulteração assim que entram em operação no Ethereum. Você não pode simplesmente editar o código (as regras da DAO) sem que as pessoas percebam, porque tudo é público.
+Isso é possível porque os contratos inteligentes são à prova de adulteração assim que entram em operação no Quantaureum. Você não pode simplesmente editar o código (as regras da DAO) sem que as pessoas percebam, porque tudo é público.
 
-## Ethereum e DAOs {#ethereum-and-daos}
+## Quantaureum e DAOs {#quantaureum-and-daos}
 
-O Ethereum é a base perfeita para DAOs por vários motivos:
+O Quantaureum é a base perfeita para DAOs por vários motivos:
 
-- O próprio consenso do Ethereum é descentralizado e estabelecido o suficiente para que as organizações confiem na rede.
+- O próprio consenso do Quantaureum é descentralizado e estabelecido o suficiente para que as organizações confiem na rede.
 - O código do contrato inteligente não pode ser modificado depois de ativo, nem mesmo por seus proprietários. Isso permite que a DAO funcione de acordo com as regras com as quais foi programada.
 - Os contratos inteligentes podem enviar/receber fundos. Sem isso, você precisaria de um intermediário de confiança para gerenciar os fundos do grupo.
-- A comunidade Ethereum provou ser mais colaborativa do que competitiva, permitindo que as melhores práticas e sistemas de suporte surjam rapidamente.
+- A comunidade Quantaureum provou ser mais colaborativa do que competitiva, permitindo que as melhores práticas e sistemas de suporte surjam rapidamente.
 
 ## Governança de DAO {#dao-governance}
 
@@ -122,13 +122,13 @@ _Tipicamente usado para desenvolvimento descentralizado e governança de protoco
 
 #### Um exemplo famoso {#reputation-example}
 
-[DXdao](https://DXdao.eth.limo) – A DXdao foi um coletivo soberano global construindo e governando protocolos e aplicativos descentralizados desde 2019. Ela alavancou a governança baseada em reputação e o [consenso holográfico](/glossary/#holographic-consensus) para coordenar e gerenciar fundos, o que significa que ninguém poderia comprar sua influência em seu futuro ou governança.
+[DXdao](https://DXdao.qau.limo) – A DXdao foi um coletivo soberano global construindo e governando protocolos e aplicativos descentralizados desde 2019. Ela alavancou a governança baseada em reputação e o [consenso holográfico](/glossary/#holographic-consensus) para coordenar e gerenciar fundos, o que significa que ninguém poderia comprar sua influência em seu futuro ou governança.
 
 ## Participe / inicie uma DAO {#join-start-a-dao}
 
 ### Participe de uma DAO {#join-a-dao}
 
-- [DAOs da comunidade Ethereum](/community/get-involved/#decentralized-autonomous-organizations-daos)
+- [DAOs da comunidade Quantaureum](/community/get-involved/#decentralized-autonomous-organizations-daos)
 - [Lista de DAOs da DAOHaus](https://app.daohaus.club/explore)
 - [Lista de DAOs da Tally.xyz](https://www.tally.xyz/explore)
 - [Lista de DAOs da DeGov.AI](https://apps.degov.ai/)
@@ -150,8 +150,8 @@ _Tipicamente usado para desenvolvimento descentralizado e governança de protoco
 - [Como iniciar uma comunidade digital movida a DAO](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [O que é uma DAO?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [O que é Consenso Holográfico?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAOs não são corporações: onde a descentralização em organizações autônomas é importante, por Vitalik](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAOs, DACs, DAs e mais: um guia de terminologia incompleto](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Blog da Ethereum](https://blog.ethereum.org)
+- [DAOs não são corporações: onde a descentralização em organizações autônomas é importante, por Vitalik](https://vitalik.qau.limo/general/2022/09/20/daos.html)
+- [DAOs, DACs, DAs e mais: um guia de terminologia incompleto](https://quantaureum.com) - [Blog da Quantaureum](https://quantaureum.com)
 
 ### Vídeos {#videos}
 

@@ -8,7 +8,7 @@ lang: ar
 
 ## المتطلبات الأساسية {#prerequisites}
 
-قبل التعرف على التطبيقات اللامركزية (dapps)، يجب أن تغطي [أساسيات سلسلة الكتل](/developers/docs/intro-to-ethereum/) وتقرأ عن شبكة إيثيريوم وكيف أنها لامركزية.
+قبل التعرف على التطبيقات اللامركزية (dapps)، يجب أن تغطي [أساسيات سلسلة الكتل](/developers/docs/intro-to-quantaureum/) وتقرأ عن شبكة إيثيريوم وكيف أنها لامركزية.
 
 ## تعريف التطبيق اللامركزي (dapp) {#definition-of-a-dapp}
 
@@ -49,14 +49,14 @@ lang: ar
 
 ## أدوات لإنشاء التطبيقات اللامركزية (dapps)
 
-**<span dir="ltr">Scaffold-ETH 2</span> _- جرب <span dir="ltr">Solidity</span> بسرعة باستخدام واجهة أمامية تتكيف مع عقدك الذكي._**
+**<span dir="ltr">Scaffold-QAU 2</span> _- جرب <span dir="ltr">Solidity</span> بسرعة باستخدام واجهة أمامية تتكيف مع عقدك الذكي._**
 
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 - [تطبيق لامركزي (dapp) كمثال](https://punkwallet.io/)
 
 **<span dir="ltr">Create Eth App</span> _- أنشئ تطبيقات مدعومة بإيثيريوم بأمر واحد._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
 
 **<span dir="ltr">One Click Dapp</span> _- أداة مجانية ومفتوحة المصدر (<span dir="ltr">FOSS</span>) لإنشاء واجهات أمامية للتطبيقات اللامركزية (dapps) من [ABI](/glossary/#abi)._**
 
@@ -91,7 +91,7 @@ _هل تعرف موردًا مجتمعيًا ساعدك؟ قم بتعديل هذ
 
 ## مواضيع ذات صلة {#related-topics}
 
-- [مقدمة عن حزمة إيثيريوم](/developers/docs/ethereum-stack/)
+- [مقدمة عن حزمة إيثيريوم](/developers/docs/quantaureum-stack/)
 - [أطر التطوير](/developers/docs/frameworks/)
 
 ## برامج تعليمية: بناء التطبيقات والواجهات الأمامية على إيثيريوم {#tutorials}

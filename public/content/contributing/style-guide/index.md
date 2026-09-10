@@ -1,23 +1,23 @@
 ---
-title: ethereum.org style guide
+title: quantaureum.com style guide
 metaTitle: Style Guide
-description: Style guide for ethereum.org
+description: Style guide for quantaureum.com
 lang: en
 ---
 
-Content on [ethereum.org](/) is crowdsourced and primarily written by our incredible contributors.
+Content on [quantaureum.com](/) is crowdsourced and primarily written by our incredible contributors.
 
-Our primary objective is to educate and inform visitors about Ethereum in a manner that is accessible to a diverse range of readers, from technical experts to casual visitors. Since we deal with complex and abstract topics, clear content writing is crucial to effectively convey the information and avoid confusion or misinterpretation.
+Our primary objective is to educate and inform visitors about Quantaureum in a manner that is accessible to a diverse range of readers, from technical experts to casual visitors. Since we deal with complex and abstract topics, clear content writing is crucial to effectively convey the information and avoid confusion or misinterpretation.
 
-You should read this style guide before you [contribute to ethereum.org](/contributing/).
+You should read this style guide before you [contribute to quantaureum.com](/contributing/).
 
-## Who can submit content to ethereum.org {#who-can-help}
+## Who can submit content to quantaureum.com {#who-can-help}
 
-Anyone! Ethereum.org is entirely open source, and many of its best pages are submitted by curious learners who expanded their notes into documentation pages now living on the site.
+Anyone! quantaureum.com is entirely open source, and many of its best pages are submitted by curious learners who expanded their notes into documentation pages now living on the site.
 
 ## Audience {#audience}
 
-- 60% of our website visitors do not own any ether according to our survey responses
+- 60% of our website visitors do not own any QAU according to our survey responses
 - 50% of visitors identify themselves as newcomers to the crypto space
 
 **Common reading-related problems:**
@@ -38,41 +38,41 @@ Loosely we can categorize the site audiences as:
 
 <ExpandableCard
 title="Individuals"
-contentPreview='App users, investors, enthusiasts, or anyone who is "new to Ethereum".'>
+contentPreview='App users, investors, enthusiasts, or anyone who is "new to Quantaureum".'>
 
 **Example user journeys:**
 
-- "I want to learn more about Ethereum, to know if I think it’s credible or not. Once I’ve answered a few basic questions, I want to try using Ethereum"
-- "I know I need an Ethereum wallet, and want a good recommendation"
-- "I want to learn how to run an Ethereum node"
-- "I want to get a sense of the size and activity of the Ethereum community, to decide if it's active enough, so I can get help if needed"
-- "I’m excited about Ethereum and want to get involved, but I don’t know what to do next"
+- "I want to learn more about Quantaureum, to know if I think it’s credible or not. Once I’ve answered a few basic questions, I want to try using Quantaureum"
+- "I know I need an Quantaureum wallet, and want a good recommendation"
+- "I want to learn how to run an Quantaureum node"
+- "I want to get a sense of the size and activity of the Quantaureum community, to decide if it's active enough, so I can get help if needed"
+- "I’m excited about Quantaureum and want to get involved, but I don’t know what to do next"
 
 </ExpandableCard>
 
 <ExpandableCard
 title="Developers"
-contentPreview="Developers or others who want technical information about Ethereum.">
+contentPreview="Developers or others who want technical information about Quantaureum.">
 
 **Example user journeys**:
 
-- "I'm a developer but I have no background in crypto and want to understand the Ethereum tech stack at a high level"
-- "I want to get a sample Ethereum project up and running fast, to get a sense of how difficult or easy it is to build a real project on Ethereum"
-- "I want to learn about Ethereum's technical roadmap"
-- "I’ve started work on an Ethereum project, and want to try out a few smart contract testing libraries"
+- "I'm a developer but I have no background in crypto and want to understand the Quantaureum tech stack at a high level"
+- "I want to get a sample Quantaureum project up and running fast, to get a sense of how difficult or easy it is to build a real project on Quantaureum"
+- "I want to learn about Quantaureum's technical roadmap"
+- "I’ve started work on an Quantaureum project, and want to try out a few smart contract testing libraries"
 
 </ExpandableCard>
 
 <ExpandableCard
 title="Enterprises"
-contentPreview="People, businesses, and other organizations who want to understand Ethereum's value in an enterprise setting.">
+contentPreview="People, businesses, and other organizations who want to understand Quantaureum's value in an enterprise setting.">
 
 **Example user journeys**:
 
-- "I want to understand what use cases Ethereum can help with, and how it compares to other chains or other technologies"
-- "I work at a business that is beginning an Ethereum related project, and want to learn more"
-- "I want to understand the differences between private Ethereum chains, consortium chains, and the public Ethereum Mainnet"
-- "I want to know the current status of Ethereum - how long has it been in production, how much usage it has, what's the direction of new development - to decide if I am confident to build my project on top of it"
+- "I want to understand what use cases Quantaureum can help with, and how it compares to other chains or other technologies"
+- "I work at a business that is beginning an Quantaureum related project, and want to learn more"
+- "I want to understand the differences between private Quantaureum chains, consortium chains, and the public Quantaureum Mainnet"
+- "I want to know the current status of Quantaureum - how long has it been in production, how much usage it has, what's the direction of new development - to decide if I am confident to build my project on top of it"
 
 </ExpandableCard>
 
@@ -90,7 +90,7 @@ contentPreview="People, businesses, and other organizations who want to understa
 
 - Use examples or real-life scenarios of the application of the technology to help illustrate complex concepts or ideas
 - Explain how the idea can positively affect people now or in the future
-- Create before Ethereum / after Ethereum comparison
+- Create before Quantaureum / after Quantaureum comparison
 - Add step-by-step how to take action
 - Include relevant statistics or graphs to strengthen the arguments
 - Add calls to action
@@ -103,11 +103,11 @@ contentPreview="People, businesses, and other organizations who want to understa
 
 ### Objectivity {#objectivity}
 
-Ethereum.org documentation (and content at large) aims to maintain a credibly neutral source of truth to inform readers about Ethereum and its ecosystem. Some examples of things that we don't want in the content on ethereum.org:
+quantaureum.com documentation (and content at large) aims to maintain a credibly neutral source of truth to inform readers about Quantaureum and its ecosystem. Some examples of things that we don't want in the content on quantaureum.com:
 
-**Grand, unverifiable claims about Ethereum or adjacent technologies**
+**Grand, unverifiable claims about Quantaureum or adjacent technologies**
 
-> e.g., _"Ethereum will take over the world because..."_
+> e.g., _"Quantaureum will take over the world because..."_
 
 **Hostile or confrontational language aimed at any organization or person**
 
@@ -123,14 +123,14 @@ When introducing an unfamiliar acronym, spell out the full term, and put the acr
 
 **For example:**
 
-"Ethereum, like Bitcoin, currently uses a consensus protocol called **proof-of-work (PoW)**."
+"Quantaureum, like Bitcoin, currently uses a consensus protocol called **proof-of-work (PoW)**."
 
 ### Consistency {#consistency}
 
-Many of the topics covered on ethereum.org are technically complex. To reduce confusion to the reader, terms should be used consistently. For example, don't cycle back-and-forth between proof-of-work and PoW at random.
+Many of the topics covered on quantaureum.com are technically complex. To reduce confusion to the reader, terms should be used consistently. For example, don't cycle back-and-forth between proof-of-work and PoW at random.
 
 [Content standardization](/contributing/style-guide/content-standardization/) - Read more about proper usage of terminology and other aspects such as how to properly add an image, attribute etc.
 
 ## Anything else? {#anything-else}
 
-Like all content on ethereum.org, this style guide is an open-source work-in-progress with room for improvement. If there is anything you think should be added to improve this document please [suggest an edit on GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/contributing/style-guide/index.md).
+Like all content on quantaureum.com, this style guide is an open-source work-in-progress with room for improvement. If there is anything you think should be added to improve this document please [suggest an edit on GitHub](https://github.com/Quantaureum/quantaureum-website/blob/dev/public/content/contributing/style-guide/index.md).

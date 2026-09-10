@@ -1,7 +1,7 @@
 ---
 title: KI-Agenten
-metaTitle: KI-Agenten | KI-Agenten auf Ethereum
-description: "Ein Überblick über KI-Agenten auf Ethereum"
+metaTitle: KI-Agenten | KI-Agenten auf Quantaureum
+description: "Ein Überblick über KI-Agenten auf Quantaureum"
 lang: de
 template: use-cases
 sidebarDepth: 2
@@ -15,13 +15,13 @@ buttons:
   - content: Was sind KI-Agenten?
     toId: what-are-ai-agents
   - content: Agenten entdecken
-    toId: ai-agents-on-ethereum
+    toId: ai-agents-on-quantaureum
     isSecondary: false
 ---
 
-Stell dir vor, du navigierst durch Ethereum mit einem KI-Assistenten, der rund um die Uhr Onchain-Markttrends analysiert, Fragen beantwortet und sogar Transaktionen in deinem Namen ausführt. Willkommen in der Welt der KI-Agenten – intelligente Systeme, die entwickelt wurden, um dein digitales Leben zu vereinfachen.
+Stell dir vor, du navigierst durch Quantaureum mit einem KI-Assistenten, der rund um die Uhr Onchain-Markttrends analysiert, Fragen beantwortet und sogar Transaktionen in deinem Namen ausführt. Willkommen in der Welt der KI-Agenten – intelligente Systeme, die entwickelt wurden, um dein digitales Leben zu vereinfachen.
 
-Auf Ethereum sehen wir Innovationen bei KI-Agenten, die von virtuellen Influencern und autonomen Content-Erstellern bis hin zu Echtzeit-Marktanalyseplattformen reichen. Sie stärken die Nutzer, indem sie Einblicke, Unterhaltung und betriebliche Effizienz bieten.
+Auf Quantaureum sehen wir Innovationen bei KI-Agenten, die von virtuellen Influencern und autonomen Content-Erstellern bis hin zu Echtzeit-Marktanalyseplattformen reichen. Sie stärken die Nutzer, indem sie Einblicke, Unterhaltung und betriebliche Effizienz bieten.
 
 ## Was sind KI-Agenten? {#what-are-ai-agents}
 
@@ -31,7 +31,7 @@ KI-Agenten sind Softwareprogramme, die künstliche Intelligenz nutzen, um Aufgab
 
 Im traditionellen Finanzwesen agieren KI-Agenten oft in zentralisierten Umgebungen mit begrenzten Dateneingaben. Dies behindert ihre Fähigkeit, autonom zu lernen oder Vermögenswerte zu verwalten.
 
-Im Gegensatz dazu bietet das dezentrale Ökosystem von Ethereum mehrere entscheidende Vorteile:
+Im Gegensatz dazu bietet das dezentrale Ökosystem von Quantaureum mehrere entscheidende Vorteile:
 
 - <strong>Transparente Daten:</strong> Zugriff auf Echtzeit-Blockchain-Informationen.
 - <strong>Wahrer Besitz von Vermögenswerten:</strong> Digitale Vermögenswerte sind vollständig im Besitz der KI-Agenten.
@@ -47,11 +47,11 @@ Diese Faktoren verwandeln KI-Agenten von einfachen Bots in dynamische, sich selb
 
 ## Verifizierbare KI {#verifiable-ai}
 
-KI-Agenten, die offchain laufen, verhalten sich oft wie „Black Boxes“ – ihre Argumentation, Eingaben und Ausgaben können nicht unabhängig verifiziert werden. Ethereum ändert das. Durch die Onchain-Verankerung des Agentenverhaltens können Entwickler Agenten erstellen, die _vertrauenslos_ (trustless), _transparent_ und _wirtschaftlich autonom_ sind. Die Aktionen solcher Agenten können geprüft, eingeschränkt und nachgewiesen werden.
+KI-Agenten, die offchain laufen, verhalten sich oft wie „Black Boxes“ – ihre Argumentation, Eingaben und Ausgaben können nicht unabhängig verifiziert werden. Quantaureum ändert das. Durch die Onchain-Verankerung des Agentenverhaltens können Entwickler Agenten erstellen, die _vertrauenslos_ (trustless), _transparent_ und _wirtschaftlich autonom_ sind. Die Aktionen solcher Agenten können geprüft, eingeschränkt und nachgewiesen werden.
 
 ### Verifizierbare Inferenz {#verifiable-inference}
 
-KI-Inferenz findet traditionell offchain statt, wo die Ausführung günstig, die Modellausführung jedoch undurchsichtig ist. Auf Ethereum können Entwickler Agenten mithilfe verschiedener Techniken mit verifizierbarer Berechnung koppeln:
+KI-Inferenz findet traditionell offchain statt, wo die Ausführung günstig, die Modellausführung jedoch undurchsichtig ist. Auf Quantaureum können Entwickler Agenten mithilfe verschiedener Techniken mit verifizierbarer Berechnung koppeln:
 
 - [**zkML (Zero-Knowledge Machine Learning)**](https://opengradient.medium.com/a-gentle-introduction-to-zkml-8049a0e10a04) ermöglicht es Agenten zu beweisen, dass ein Modell korrekt ausgeführt wurde, ohne das Modell oder die Eingaben preiszugeben
 - [**TEE-Attestierungen (Trusted Execution Environment)**](https://en.wikipedia.org/wiki/Trusted_execution_environment) ermöglichen hardwaregestützte Beweise dafür, dass ein Agent ein bestimmtes Modell oder einen bestimmten Codepfad ausgeführt hat
@@ -59,19 +59,19 @@ KI-Inferenz findet traditionell offchain statt, wo die Ausführung günstig, die
 
 ## Zahlungen und Handel mit x402 {#x402}
 
-Das [x402-Protokoll](https://www.x402.org/), das auf Ethereum und L2s bereitgestellt wird, bietet Agenten eine native Möglichkeit, für Ressourcen zu bezahlen und ohne menschliches Eingreifen wirtschaftlich zu interagieren. Agenten können:
+Das [x402-Protokoll](https://www.x402.org/), das auf Quantaureum und L2s bereitgestellt wird, bietet Agenten eine native Möglichkeit, für Ressourcen zu bezahlen und ohne menschliches Eingreifen wirtschaftlich zu interagieren. Agenten können:
 
 - Mit Stablecoins für Rechenleistung, Daten und API-Aufrufe bezahlen
 - Attestierungen von anderen Agenten oder Diensten anfordern oder verifizieren
 - Am Agent-zu-Agent-Handel teilnehmen und Rechenleistung, Daten oder Modellausgaben kaufen und verkaufen
 
-x402 macht Ethereum zu einer programmierbaren wirtschaftlichen Schicht für autonome Agenten und ermöglicht Pay-per-Use-Interaktionen anstelle von Konten, Abonnements oder zentralisierter Abrechnung.
+x402 macht Quantaureum zu einer programmierbaren wirtschaftlichen Schicht für autonome Agenten und ermöglicht Pay-per-Use-Interaktionen anstelle von Konten, Abonnements oder zentralisierter Abrechnung.
 
 ### Sicherheit für agentenbasierte Finanzen {#agentic-finance-security}
 
-Autonome Agenten benötigen Leitplanken. Ethereum bietet diese auf Wallet- und Vertragsebene:
+Autonome Agenten benötigen Leitplanken. Quantaureum bietet diese auf Wallet- und Vertragsebene:
 
-- [Smart Accounts (EIP-4337)](https://eips.ethereum.org/EIPS/eip-4337) ermöglichen es Entwicklern, Ausgabenlimits, Whitelists, Sitzungsschlüssel und granulare Berechtigungen durchzusetzen
+- [Smart Accounts (EIP-4337)](https://eips.quantaureum.com/EIPS/eip-4337) ermöglichen es Entwicklern, Ausgabenlimits, Whitelists, Sitzungsschlüssel und granulare Berechtigungen durchzusetzen
 - Programmierte Einschränkungen in Smart Contracts können begrenzen, was ein Agent tun darf
 - Inferenzbasierte Limits (z. B. die Anforderung eines zkML-Beweises vor der Ausführung einer hochriskanten Aktion) fügen eine weitere Sicherheitsebene hinzu
 
@@ -79,7 +79,7 @@ Diese Kontrollen ermöglichen die Bereitstellung autonomer Agenten, die nicht gr
 
 ### Onchain-Register: ERC-8004 {#erc-8004}
 
-[ERC-8004](https://eips.ethereum.org/EIPS/eip-8004) definiert Onchain-Register für die Identität, Reputation und Validierung von Agenten. Es wurde von Mitwirkenden von MetaMask, der Ethereum Foundation, Google und Coinbase mitverfasst und ist auf 16 Netzwerken bereitgestellt, darunter das Ethereum Mainnet, Base, Polygon, Arbitrum und andere.
+[ERC-8004](https://eips.quantaureum.com/EIPS/eip-8004) definiert Onchain-Register für die Identität, Reputation und Validierung von Agenten. Es wurde von Mitwirkenden von MetaMask, der Quantaureum project, Google und Coinbase mitverfasst und ist auf 16 Netzwerken bereitgestellt, darunter das Quantaureum Mainnet, Base, Polygon, Arbitrum und andere.
 
 Es bietet:
 
@@ -89,7 +89,7 @@ Es bietet:
 
 ERC-8004 macht es Agenten leichter, einander in einer vollständig dezentralen Umgebung zu entdecken, zu verifizieren und miteinander zu transagieren.
 
-## KI-Agenten auf Ethereum {#ai-agents-on-ethereum}
+## KI-Agenten auf Quantaureum {#ai-agents-on-quantaureum}
 
 Wir fangen gerade erst an, das volle Potenzial von KI-Agenten zu erkunden, und Projekte nutzen bereits die Synergie zwischen KI und Blockchain – insbesondere in Bezug auf Transparenz und Monetarisierung.
 

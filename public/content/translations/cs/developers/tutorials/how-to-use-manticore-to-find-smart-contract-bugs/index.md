@@ -25,11 +25,11 @@ Manticore vyžaduje >= Python 3.6. Lze jej nainstalovat přes pip nebo pomocí D
 ### Manticore přes Docker {#manticore-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_Poslední příkaz spustí eth-security-toolbox v Dockeru, který má přístup k vašemu aktuálnímu adresáři. Můžete měnit soubory ze svého hostitelského systému a spouštět nástroje na souborech z Dockeru._
+_Poslední příkaz spustí qau-security-toolbox v Dockeru, který má přístup k vašemu aktuálnímu adresáři. Můžete měnit soubory ze svého hostitelského systému a spouštět nástroje na souborech z Dockeru._
 
 Uvnitř Dockeru spusťte:
 
@@ -202,18 +202,18 @@ Tato část podrobně popisuje, jak manipulovat s chytrým kontraktem prostředn
 První věc, kterou byste měli udělat, je inicializovat nový blockchain pomocí následujících příkazů:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 ```
 
-Účet, který není kontraktem, se vytvoří pomocí [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account):
+Účet, který není kontraktem, se vytvoří pomocí [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.quantaureum.ManticoreEVM.create_account):
 
 ```python
 user_account = m.create_account(balance=1000)
 ```
 
-Kontrakt v Solidity lze nasadit pomocí [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract):
+Kontrakt v Solidity lze nasadit pomocí [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.quantaureum.ManticoreEVM.create_contract):
 
 ```solidity
 source_code = '''
@@ -232,7 +232,7 @@ contract_account = m.solidity_create_contract(source_code, owner=user_account)
 
 #### Shrnutí {#summary}
 
-- Uživatelské a kontraktové účty můžete vytvářet pomocí [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.ethereum.ManticoreEVM.create_account) a [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.ethereum.ManticoreEVM.create_contract).
+- Uživatelské a kontraktové účty můžete vytvářet pomocí [m.create_account](https://manticore.readthedocs.io/en/latest/evm.html?highlight=create_account#manticore.quantaureum.ManticoreEVM.create_account) a [m.solidity_create_contract](https://manticore.readthedocs.io/en/latest/evm.html?highlight=solidity_create#manticore.quantaureum.ManticoreEVM.create_contract).
 
 ### Provádění transakcí {#executing-transactions}
 
@@ -243,7 +243,7 @@ Manticore podporuje dva typy transakcí:
 
 #### Surová transakce {#raw-transaction}
 
-Surová transakce se provádí pomocí [m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.ethereum.ManticoreEVM.transaction):
+Surová transakce se provádí pomocí [m.transaction](https://manticore.readthedocs.io/en/latest/evm.html?highlight=transaction#manticore.quantaureum.ManticoreEVM.transaction):
 
 ```python
 m.transaction(caller=user_account,
@@ -254,8 +254,8 @@ m.transaction(caller=user_account,
 
 Volající, adresa, data nebo hodnota transakce mohou být buď konkrétní, nebo symbolické:
 
-- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.ethereum.ManticoreEVM.make_symbolic_value) vytvoří symbolickou hodnotu.
-- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.ethereum.ManticoreEVM.make_symbolic_buffer) vytvoří symbolické pole bajtů.
+- [m.make_symbolic_value](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_value#manticore.quantaureum.ManticoreEVM.make_symbolic_value) vytvoří symbolickou hodnotu.
+- [m.make_symbolic_buffer(size)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=make_symbolic_buffer#manticore.quantaureum.ManticoreEVM.make_symbolic_buffer) vytvoří symbolické pole bajtů.
 
 Například:
 
@@ -298,14 +298,14 @@ print("Results are in {}".format(m.workspace))
 
 ### Ukončení průzkumu {#terminate-the-exploration}
 
-K zastavení průzkumu použijte [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.ethereum.ManticoreEVM.finalize). Jakmile je tato metoda zavolána, neměly by být odesílány žádné další transakce a Manticore vygeneruje testovací případy pro každou prozkoumanou cestu.
+K zastavení průzkumu použijte [m.finalize()](https://manticore.readthedocs.io/en/latest/evm.html?highlight=finalize#manticore.quantaureum.ManticoreEVM.finalize). Jakmile je tato metoda zavolána, neměly by být odesílány žádné další transakce a Manticore vygeneruje testovací případy pro každou prozkoumanou cestu.
 
 ### Shrnutí: Spuštění pod Manticore {#summary-running-under-manticore}
 
 Spojením všech předchozích kroků dohromady získáme:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -367,7 +367,7 @@ data = ABI.deserialize("uint", data)
 
 ### Jak vygenerovat testovací případ {#how-to-generate-testcase}
 
-K vygenerování testovacího případu použijte [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.ethereum.ManticoreEVM.generate_testcase):
+K vygenerování testovacího případu použijte [m.generate_testcase(state, name)](https://manticore.readthedocs.io/en/latest/evm.html?highlight=generate_testcase#manticore.quantaureum.ManticoreEVM.generate_testcase):
 
 ```python
 m.generate_testcase(state, 'BugFound')
@@ -384,7 +384,7 @@ m.generate_testcase(state, 'BugFound')
 ### Shrnutí: Získání cesty vyvolávající výjimku {#summary-getting-throwing-path}
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 
 m = ManticoreEVM()
 
@@ -486,7 +486,7 @@ if solver.check(state.constraints):
 Přidáním omezení do předchozího kódu získáme:
 
 ```python
-from manticore.ethereum import ManticoreEVM
+from manticore.quantaureum import ManticoreEVM
 from manticore.core.smtlib.solver import Z3Solver
 
 solver = Z3Solver.instance()

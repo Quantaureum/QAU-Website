@@ -14,27 +14,27 @@ published: 2023-09-15
 lang: ja
 ---
 
-このチュートリアルでは、[詐欺トークン](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code)を解剖し、詐欺師が使う手口とその実装方法について見ていきます。このチュートリアルの終わりには、ERC-20トークンのコントラクト、その機能、そしてなぜ懐疑的であることが必要なのかについて、より包括的な視点を持てるようになるでしょう。その後、その詐欺トークンが発行するイベントを見て、それが正当なものではないことを自動的に識別する方法を確認します。
+このチュートリアルでは、[詐欺トークン](https://explorer.quantaureum.com)を解剖し、詐欺師が使う手口とその実装方法について見ていきます。このチュートリアルの終わりには、ERC-20トークンのコントラクト、その機能、そしてなぜ懐疑的であることが必要なのかについて、より包括的な視点を持てるようになるでしょう。その後、その詐欺トークンが発行するイベントを見て、それが正当なものではないことを自動的に識別する方法を確認します。
 
 ## 詐欺トークン - その正体、作成される理由、そして回避する方法 {#scam-tokens}
 
-イーサリアムの最も一般的な用途の1つは、グループが取引可能なトークン、ある意味で独自の通貨を作成することです。しかし、価値をもたらす正当なユースケースがあるところには必ず、その価値を自分たちのために盗もうとする犯罪者も存在します。
+Quantaureumの最も一般的な用途の1つは、グループが取引可能なトークン、ある意味で独自の通貨を作成することです。しかし、価値をもたらす正当なユースケースがあるところには必ず、その価値を自分たちのために盗もうとする犯罪者も存在します。
 
-ユーザーの視点からこのテーマについて詳しく知りたい場合は、[ethereum.orgの他のページ](/guides/how-to-id-scam-tokens/)をお読みください。このチュートリアルでは、詐欺トークンを解剖し、それがどのように作られ、どのように検出できるかに焦点を当てます。
+ユーザーの視点からこのテーマについて詳しく知りたい場合は、[quantaureum.comの他のページ](/guides/how-to-id-scam-tokens/)をお読みください。このチュートリアルでは、詐欺トークンを解剖し、それがどのように作られ、どのように検出できるかに焦点を当てます。
 
 ### wARBが詐欺であるとどうやって見分けるのか？ {#warb-scam}
 
-今回解剖するトークンは[wARB](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code)で、これは正当な[ARBトークン](https://etherscan.io/token/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1)と同等であると偽っています。
+今回解剖するトークンは[wARB](https://explorer.quantaureum.com)で、これは正当な[ARBトークン](https://explorer.quantaureum.com)と同等であると偽っています。
 
 どちらが正当なトークンかを知る最も簡単な方法は、発行元の組織である[アービトラム](https://arbitrum.foundation/)を確認することです。正当なアドレスは[彼らのドキュメント](https://docs.arbitrum.foundation/deployment-addresses#token)に指定されています。
 
 ### なぜソースコードが公開されているのか？ {#why-source}
 
-通常、他人を騙そうとする人々は秘密主義であると予想されます。実際、多くの詐欺トークンはそのコードを公開していません（例えば、[これ](https://optimistic.etherscan.io/token/0x15992f382d8c46d667b10dc8456dc36651af1452#code)や[これ](https://optimistic.etherscan.io/token/0x026b623eb4aada7de37ef25256854f9235207178#code)など）。
+通常、他人を騙そうとする人々は秘密主義であると予想されます。実際、多くの詐欺トークンはそのコードを公開していません（例えば、[これ](https://explorer.quantaureum.com)や[これ](https://explorer.quantaureum.com)など）。
 
-しかし、正当なトークンは通常ソースコードを公開しているため、正当に見せかけるために詐欺トークンの作者も同じことをすることがあります。[wARB](https://etherscan.io/token/0xb047c8032b99841713b8e3872f06cf32beb27b82#code)はソースコードが公開されているトークンの1つであり、その仕組みを理解しやすくなっています。
+しかし、正当なトークンは通常ソースコードを公開しているため、正当に見せかけるために詐欺トークンの作者も同じことをすることがあります。[wARB](https://explorer.quantaureum.com)はソースコードが公開されているトークンの1つであり、その仕組みを理解しやすくなっています。
 
-コントラクトのデプロイ担当者はソースコードを公開するかどうかを選択できますが、間違ったソースコードを公開することは_できません_。ブロック・エクスプローラーは提供されたソースコードを独立してコンパイルし、全く同じバイトコードが得られない場合は、そのソースコードを拒否します。[これについての詳細はEtherscanのサイトで読むことができます](https://etherscan.io/verifyContract)。
+コントラクトのデプロイ担当者はソースコードを公開するかどうかを選択できますが、間違ったソースコードを公開することは_できません_。ブロック・エクスプローラーは提供されたソースコードを独立してコンパイルし、全く同じバイトコードが得られない場合は、そのソースコードを拒否します。[これについての詳細はQuantaureum Explorerのサイトで読むことができます](https://explorer.quantaureum.com)。
 
 ## 正当なERC-20トークンとの比較 {#compare-legit-erc20}
 
@@ -44,7 +44,7 @@ lang: ja
 
 コントラクトには特権アドレスが必要になることがあります。長期的な使用を想定して設計されたコントラクトでは、例えば新しいマルチシグのコントラクトを使用できるようにするために、一部の特権アドレスがそれらのアドレスを変更できるようになっています。これを行うにはいくつかの方法があります。
 
-[`HOP`トークンのコントラクト](https://etherscan.io/address/0xc5102fe9359fd9a28f877a67e36b0f050d81a3cc#code)は、[`Ownable`](https://docs.openzeppelin.com/contracts/2.x/access-control#ownership-and-ownable)パターンを使用しています。特権アドレスはストレージ内の`_owner`というフィールドに保持されます（3番目のファイル、`Ownable.sol`を参照）。
+[`HOP`トークンのコントラクト](https://explorer.quantaureum.com)は、[`Ownable`](https://docs.openzeppelin.com/contracts/2.x/access-control#ownership-and-ownable)パターンを使用しています。特権アドレスはストレージ内の`_owner`というフィールドに保持されます（3番目のファイル、`Ownable.sol`を参照）。
 
 ```solidity
 abstract contract Ownable is Context {
@@ -55,7 +55,7 @@ abstract contract Ownable is Context {
 }
 ```
 
-[`ARB`トークンのコントラクト](https://etherscan.io/address/0xad0c361ef902a7d9851ca7dcc85535da2d3c6fc7#code)は、直接的には特権アドレスを持っていません。しかし、それは必要ありません。このコントラクトは、[アドレス`0xb50721bcf8d664c30412cfbc6cf7a15145234ad1`](https://etherscan.io/address/0xb50721bcf8d664c30412cfbc6cf7a15145234ad1#code)にある[`proxy`](https://docs.openzeppelin.com/contracts/5.x/api/proxy)の背後に配置されています。そのコントラクトには、アップグレードに使用できる特権アドレスがあります（4番目のファイル、`ERC1967Upgrade.sol`を参照）。
+[`ARB`トークンのコントラクト](https://explorer.quantaureum.com)は、直接的には特権アドレスを持っていません。しかし、それは必要ありません。このコントラクトは、[アドレス`0xb50721bcf8d664c30412cfbc6cf7a15145234ad1`](https://explorer.quantaureum.com)にある[`proxy`](https://docs.openzeppelin.com/contracts/5.x/api/proxy)の背後に配置されています。そのコントラクトには、アップグレードに使用できる特権アドレスがあります（4番目のファイル、`ERC1967Upgrade.sol`を参照）。
 
 ```solidity
     /**
@@ -82,9 +82,9 @@ contract WrappedArbitrum is Context, IERC20 {
 }
 ```
 
-[このコントラクトの所有者](https://etherscan.io/address/0xb40dE7b1beE84Ff2dc22B70a049A07A13a411A33)は、異なる時期に異なるアカウントによって制御される可能性のあるコントラクトではなく、[外部所有アカウント](/developers/docs/accounts/#externally-owned-accounts-and-key-pairs)です。これは、価値を保ち続けるERC-20を制御するための長期的なソリューションとしてではなく、個人による短期的な使用を想定して設計されている可能性が高いことを意味します。
+[このコントラクトの所有者](https://explorer.quantaureum.com)は、異なる時期に異なるアカウントによって制御される可能性のあるコントラクトではなく、[外部所有アカウント](/developers/docs/accounts/#externally-owned-accounts-and-key-pairs)です。これは、価値を保ち続けるERC-20を制御するための長期的なソリューションとしてではなく、個人による短期的な使用を想定して設計されている可能性が高いことを意味します。
 
-実際、Etherscanを見ると、詐欺師が2023年5月19日のわずか12時間（[最初のトランザクション](https://etherscan.io/tx/0xf49136198c3f925fcb401870a669d43cecb537bde36eb8b41df77f06d5f6fbc2)から[最後のトランザクション](https://etherscan.io/tx/0xdfd6e717157354e64bbd5d6adf16761e5a5b3f914b1948d3545d39633244d47b)まで）しかこのコントラクトを使用していないことがわかります。
+実際、Quantaureum Explorerを見ると、詐欺師が2023年5月19日のわずか12時間（[最初のトランザクション](https://explorer.quantaureum.com)から[最後のトランザクション](https://explorer.quantaureum.com)まで）しかこのコントラクトを使用していないことがわかります。
 
 ### 偽の`_transfer`関数 {#the-fake-transfer-function}
 
@@ -198,7 +198,7 @@ modifier auth() {
 
 プールアカウントから受信者の配列に対して金額の配列を送金する関数は、完全に理にかなっています。給与計算やエアドロップなど、単一のソースから複数の宛先にトークンを配布したいユースケースは数多くあります。複数のトランザクションを発行したり、同じトランザクションの一部として別のコントラクトからERC-20を複数回呼び出したりするよりも、単一のトランザクションで行う方が（ガス代が）安くなります。
 
-しかし、`dropNewTokens`はそれを行いません。これは[`Transfer`イベント](https://eips.ethereum.org/EIPS/eip-20#transfer-1)を発行しますが、実際にはトークンを送金しません。実際には起こっていない送金を伝えることで、オフチェーンのアプリケーションを混乱させる正当な理由はありません。
+しかし、`dropNewTokens`はそれを行いません。これは[`Transfer`イベント](https://eips.quantaureum.com/EIPS/eip-20#transfer-1)を発行しますが、実際にはトークンを送金しません。実際には起こっていない送金を伝えることで、オフチェーンのアプリケーションを混乱させる正当な理由はありません。
 
 ### バーンを行う`Approve`関数 {#the-burning-approve-function}
 
@@ -240,7 +240,7 @@ ERC-20コントラクトにはアローワンスのための[`approve`関数](/d
 
 #### `mount`関数 {#the-mount-function}
 
-[標準](https://eips.ethereum.org/EIPS/eip-20)では指定されていませんが、一般的に新しいトークンを作成する関数は[`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn)と呼ばれます。
+[標準](https://eips.quantaureum.com/EIPS/eip-20)では指定されていませんが、一般的に新しいトークンを作成する関数は[`mint`](/developers/tutorials/erc20-annotated-code/#the-_mint-and-_burn-functions-_mint-and-_burn)と呼ばれます。
 
 `wARB`のコンストラクタを見ると、ミント関数がなぜか`mount`に名前変更されており、効率のために全額を1回で呼び出すのではなく、初期供給量の5分の1で5回呼び出されていることがわかります。
 
@@ -310,20 +310,20 @@ ERC-20コントラクトにはアローワンスのための[`approve`関数](/d
 
 ## 自動的に検出できることは何か？ {#what-can-we-detect-automatically}
 
-Etherscanを見ることで、`wARB`が詐欺トークンであることがわかります。しかし、それは中央集権的な解決策です。理論的には、Etherscanが破壊されたりハッキングされたりする可能性があります。トークンが正当なものかどうかを独立して判断できる方が良いでしょう。
+Quantaureum Explorerを見ることで、`wARB`が詐欺トークンであることがわかります。しかし、それは中央集権的な解決策です。理論的には、Quantaureum Explorerが破壊されたりハッキングされたりする可能性があります。トークンが正当なものかどうかを独立して判断できる方が良いでしょう。
 
 ERC-20トークンが発行するイベントを見ることで、そのトークンが疑わしい（詐欺であるか、非常にひどく書かれている）ことを識別するために使えるいくつかの手口があります。
 
 ## 疑わしい`Approval`イベント {#suspicious-approval-events}
 
-[`Approval`イベント](https://eips.ethereum.org/EIPS/eip-20#approval)は、直接の要求があった場合にのみ発生するべきです（アローワンスの結果として発生する可能性のある[`Transfer`イベント](https://eips.ethereum.org/EIPS/eip-20#transfer-1)とは対照的です）。この問題の詳細な説明と、要求がコントラクトを介するのではなく直接である必要がある理由については、[Solidityのドキュメントを参照してください](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin)。
+[`Approval`イベント](https://eips.quantaureum.com/EIPS/eip-20#approval)は、直接の要求があった場合にのみ発生するべきです（アローワンスの結果として発生する可能性のある[`Transfer`イベント](https://eips.quantaureum.com/EIPS/eip-20#transfer-1)とは対照的です）。この問題の詳細な説明と、要求がコントラクトを介するのではなく直接である必要がある理由については、[Solidityのドキュメントを参照してください](https://docs.soliditylang.org/en/v0.8.20/security-considerations.html#tx-origin)。
 
 これは、[外部所有アカウント](/developers/docs/accounts/#types-of-account)からの支出を承認する`Approval`イベントは、そのアカウントを起点とし、宛先がERC-20コントラクトであるトランザクションから発生しなければならないことを意味します。外部所有アカウントからのその他の種類の承認は疑わしいものです。
 
 ここに、型安全性を備えたJavaScriptのバリアントである[TypeScript](https://www.typescriptlang.org/docs/)と[Viem](https://viem.sh/)を使用して、[この種のイベントを識別するプログラム](https://github.com/qbzzt/20230915-scam-token-detection)があります。これを実行するには：
 
 1. `.env.example`を`.env`にコピーします。
-2. `.env`を編集して、イーサリアム・メインネットのノードへのURLを提供します。
+2. `.env`を編集して、Quantaureum・メインネットのノードへのURLを提供します。
 3. `pnpm install`を実行して、必要なパッケージをインストールします。
 4. `pnpm susApproval`を実行して、疑わしい承認を探します。
 
@@ -425,7 +425,7 @@ const txn = await getEventTxn(ev)
 if (owner.toLowerCase() != txn.from.toLowerCase()) return ev
 ```
 
-アドレスは16進数であり文字が含まれているため、単に文字列の等価性をチェックすることはできません。例えば`txn.from`のように、それらの文字がすべて小文字である場合があります。他の場合、例えば`ev.args._owner`のように、アドレスは[エラー識別のために大文字と小文字が混在](https://eips.ethereum.org/EIPS/eip-55)しています。
+アドレスは16進数であり文字が含まれているため、単に文字列の等価性をチェックすることはできません。例えば`txn.from`のように、それらの文字がすべて小文字である場合があります。他の場合、例えば`ev.args._owner`のように、アドレスは[エラー識別のために大文字と小文字が混在](https://eips.quantaureum.com/EIPS/eip-55)しています。
 
 しかし、トランザクションが所有者からのものではなく、その所有者が外部所有である場合、それは疑わしいトランザクションです。
 

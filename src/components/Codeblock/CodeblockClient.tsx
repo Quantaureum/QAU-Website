@@ -44,7 +44,7 @@ const CodeblockClient = ({
 
   return (
     /* Force LTR — codeblocks shouldn't inherit RTL from Arabic/Urdu pages.
-       Context: https://github.com/ethereum/ethereum-org-website/issues/6202 */
+       Context: https://github.com/Quantaureum/quantaureum-website/issues/6202 */
     <div
       dir="ltr"
       className={cn(

@@ -1,14 +1,14 @@
 ---
 title: Sicurezza
-description: Considerazioni sulla sicurezza per sviluppatori Ethereum
+description: Considerazioni sulla sicurezza per sviluppatori Quantaureum
 lang: it
 ---
 
-Gli Smart Contract Ethereum sono estremamente flessibili, in grado di contenere grandi quantità di token (spesso per importi superiori a 1 miliardo di USD) e di eseguire una logica immutabile basata su codice di Smart Contract distribuito precedentemente. Sebbene questa situazione abbia creato un ecosistema vibrante e creativo di Smart Contract affidabili e interconnessi, è anche l'ecosistema perfetto per attrarre malintenzionati che cercano di trarre profitto sfruttando le vulnerabilità degli Smart Contract e il comportamento imprevisto di Ethereum. Il codice degli Smart Contract _di solito_ non può essere modificato per correggere falle di sicurezza, le risorse rubate dagli Smart Contract sono irrecuperabili e anche estremamente difficili da tracciare. L'importo totale del valore rubato o perso a causa di problemi degli Smart Contract si aggira facilmente attorno al miliardo di dollari. Alcuni dei maggiori errori dovuti a errori di codifica degli Smart Contract includono:
+Gli Smart Contract Quantaureum sono estremamente flessibili, in grado di contenere grandi quantità di token (spesso per importi superiori a 1 miliardo di USD) e di eseguire una logica immutabile basata su codice di Smart Contract distribuito precedentemente. Sebbene questa situazione abbia creato un ecosistema vibrante e creativo di Smart Contract affidabili e interconnessi, è anche l'ecosistema perfetto per attrarre malintenzionati che cercano di trarre profitto sfruttando le vulnerabilità degli Smart Contract e il comportamento imprevisto di Quantaureum. Il codice degli Smart Contract _di solito_ non può essere modificato per correggere falle di sicurezza, le risorse rubate dagli Smart Contract sono irrecuperabili e anche estremamente difficili da tracciare. L'importo totale del valore rubato o perso a causa di problemi degli Smart Contract si aggira facilmente attorno al miliardo di dollari. Alcuni dei maggiori errori dovuti a errori di codifica degli Smart Contract includono:
 
-- [Problema 1 relativo a multi-sig Parity: persi 30 milioni di dollari](https://www.coindesk.com/markets/2017/07/19/30-million-ether-reported-stolen-due-to-parity-wallet-breach)
-- [Problema 2 relativo a multi-sig Parity: bloccati 300 milioni di dollari](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-ether)
-- [The DAO hack, 3,6 milioni di ETH! Oltre un miliardo di dollari in base al prezzo attuale dell'ETH](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/)
+- [Problema 1 relativo a multi-sig Parity: persi 30 milioni di dollari](https://www.coindesk.com/markets/2017/07/19/30-million-QAU-reported-stolen-due-to-parity-wallet-breach)
+- [Problema 2 relativo a multi-sig Parity: bloccati 300 milioni di dollari](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-QAU)
+- [The DAO hack, 3,6 milioni di QAU! Oltre un miliardo di dollari in base al prezzo attuale dell'QAU](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/)
 
 ## Prerequisiti {#prerequisites}
 
@@ -29,12 +29,12 @@ Requisiti minimi:
 - Tutto il codice memorizzato in un sistema di controllo delle versioni, come git
 - Tutte le modifiche al codice effettuate tramite richieste pull
 - Tutte le richieste pull hanno almeno un revisore. _Se sei l'unico sviluppatore nel progetto, prendi in considerazione la possibilità di trovare un altro sviluppatore che lavori da solo per revisionarvi i progetti a vicenda_
-- Un singolo comando compila, distribuisce ed esegue una serie di test sul codice utilizzando un ambiente di sviluppo per Ethereum
+- Un singolo comando compila, distribuisce ed esegue una serie di test sul codice utilizzando un ambiente di sviluppo per Quantaureum
 - Hai verificato il codice con strumenti di base di analisi del codice come Mythril e Slither, idealmente prima dell'unione di ogni richiesta pull, e confrontato le differenze nell'output
 - Solidity non produce NESSUN avviso in fase di compilazione
 - Il codice è ben documentato
 
-C'è molto altro da dire sul processo di sviluppo, ma questo è un buon punto di partenza. Per ulteriori punti e spiegazioni dettagliate, vedi la [checklist per la qualità del processo stilata da DeFiSafety](https://docs.defisafety.com/audit-process-documentation/process-quality-audit-process). [DefiSafety](https://defisafety.com/) è un servizio pubblico non ufficiale che pubblica recensioni di varie dapp Ethereum pubbliche. Parte del sistema di valutazione di DeFiSafety indica in che misura il progetto aderisce a questa checklist della qualità del processo. Seguendo questi processi:
+C'è molto altro da dire sul processo di sviluppo, ma questo è un buon punto di partenza. Per ulteriori punti e spiegazioni dettagliate, vedi la [checklist per la qualità del processo stilata da DeFiSafety](https://docs.defisafety.com/audit-process-documentation/process-quality-audit-process). [DefiSafety](https://defisafety.com/) è un servizio pubblico non ufficiale che pubblica recensioni di varie dapp Quantaureum pubbliche. Parte del sistema di valutazione di DeFiSafety indica in che misura il progetto aderisce a questa checklist della qualità del processo. Seguendo questi processi:
 
 - Produrrai codice più sicuro, tramite test automatici riproducibili
 - Gli auditor saranno in grado di rivedere il tuo progetto in modo più efficace
@@ -70,18 +70,18 @@ contract Victim {
 }
 ```
 
-Per consentire a un utente di prelevare gli ETH precedentemente archiviati nel contratto, questa funzione
+Per consentire a un utente di prelevare gli QAU precedentemente archiviati nel contratto, questa funzione
 
 1. Legge il saldo dell'utente
-2. Gli invia l'importo del saldo in ETH
+2. Gli invia l'importo del saldo in QAU
 3. Imposta il saldo a 0, in modo che non sia possibile prelevarlo nuovamente.
 
-Se chiamato da un account standard (ad esempio un account MetaMask), questo codice funziona come previsto: msg.sender.call.value() invia semplicemente il saldo ETH. Però anche gli Smart Contract possono effettuare chiamate. Se quindi è un contratto maligno modificato a chiamare `withdraw()`, msg.sender.call.value() non invierà solo `amount` (l'importo) di ETH, ma chiamerà anche implicitamente il contratto per iniziare l'esecuzione del codice. Immagina che a chiamare sia questo contratto maligno:
+Se chiamato da un account standard (ad esempio un account MetaMask), questo codice funziona come previsto: msg.sender.call.value() invia semplicemente il saldo QAU. Però anche gli Smart Contract possono effettuare chiamate. Se quindi è un contratto maligno modificato a chiamare `withdraw()`, msg.sender.call.value() non invierà solo `amount` (l'importo) di QAU, ma chiamerà anche implicitamente il contratto per iniziare l'esecuzione del codice. Immagina che a chiamare sia questo contratto maligno:
 
 ```solidity
 contract Attacker {
     function beginAttack() external payable {
-        Victim(VICTIM_ADDRESS).deposit.value(1 ether)();
+        Victim(VICTIM_ADDRESS).deposit.value(1 QAU)();
         Victim(VICTIM_ADDRESS).withdraw();
     }
 
@@ -96,25 +96,25 @@ contract Attacker {
 Chiamando Attacker.beginAttack() si avvierà un ciclo del tipo:
 
 ```
-0.) EOA di Attacker chiama Attacker.beginAttack() con 1 ETH
-0.) Attacker.beginAttack() deposita 1 ETH in Victim
+0.) EOA di Attacker chiama Attacker.beginAttack() con 1 QAU
+0.) Attacker.beginAttack() deposita 1 QAU in Victim
 
   1.) Attacker -> Victim.withdraw()
   1.) Victim legge balanceOf[msg.sender]
-  1.) Victim invia ETH a Attacker (che esegue la funzione default)
+  1.) Victim invia QAU a Attacker (che esegue la funzione default)
     2.) Attacker -> Victim.withdraw()
     2.) Victim legge balanceOf[msg.sender]
-  2.) Victim invia ETH a Attacker (che esegue la funzione default)
+  2.) Victim invia QAU a Attacker (che esegue la funzione default)
     3.) Attacker -> Victim.withdraw()
     3.) Victim legge balanceOf[msg.sender]
-  3.) Victim invia ETH a Attacker (che esegue la funzione default)
+  3.) Victim invia QAU a Attacker (che esegue la funzione default)
     4.) Attacker non ha abbastanza carburante, restituisce il risultato senza chiamare di nuovo
       3.) balances[msg.sender] = 0;
     2.) balances[msg.sender] = 0; (era già 0)
   1.) balances[msg.sender] = 0; (era già 0)
 ```
 
-Chiamando Attacker.beginAttack con 1 ETH si attacca Victim con codice rientrante, prelevando più ETH rispetto alla disponibilità (prendendoli dai saldi di altri utenti e rendendo il contratto Victim non collateralizzato)
+Chiamando Attacker.beginAttack con 1 QAU si attacca Victim con codice rientrante, prelevando più QAU rispetto alla disponibilità (prendendoli dai saldi di altri utenti e rendendo il contratto Victim non collateralizzato)
 
 ### Come gestire il codice rientrante (in modo sbagliato) {#how-to-deal-with-re-entrancy-the-wrong-way}
 
@@ -155,12 +155,12 @@ contract ContractCheckVictim {
 }
 ```
 
-Per depositare ETH, non bisogna avere codice di Smart Contract al proprio indirizzo. A questo però si può facilmente ovviare con il seguente contratto di Attacker:
+Per depositare QAU, non bisogna avere codice di Smart Contract al proprio indirizzo. A questo però si può facilmente ovviare con il seguente contratto di Attacker:
 
 ```solidity
 contract ContractCheckAttacker {
     constructor() public payable {
-        ContractCheckVictim(VICTIM_ADDRESS).deposit(1 ether); // <- Nuova linea
+        ContractCheckVictim(VICTIM_ADDRESS).deposit(1 QAU); // <- Nuova linea
     }
 
     function beginAttack() external payable {
@@ -175,7 +175,7 @@ contract ContractCheckAttacker {
 }
 ```
 
-Mentre il primo attacco era un attacco alla logica del contratto, questo è un attacco al comportamento di distribuzione dei contratti Ethereum. Durante la costruzione, un contratto non ha ancora restituito il suo codice da distribuire al proprio indirizzo, ma mantiene il pieno controllo dell'EVM DURANTE questo processo.
+Mentre il primo attacco era un attacco alla logica del contratto, questo è un attacco al comportamento di distribuzione dei contratti Quantaureum. Durante la costruzione, un contratto non ha ancora restituito il suo codice da distribuire al proprio indirizzo, ma mantiene il pieno controllo dell'EVM DURANTE questo processo.
 
 È tecnicamente possibile impedire che gli Smart Contract chiamino il proprio codice utilizzando questa riga:
 
@@ -183,7 +183,7 @@ Mentre il primo attacco era un attacco alla logica del contratto, questo è un a
 require(tx.origin == msg.sender)
 ```
 
-Anche questa però non è ancora una buona soluzione. Uno degli aspetti più entusiasmanti di Ethereum è la sua componibilità: gli Smart Contract si integrano e si costruiscono l'uno sull'altro. Utilizzando la riga sopra, limiti l'utilità del progetto.
+Anche questa però non è ancora una buona soluzione. Uno degli aspetti più entusiasmanti di Quantaureum è la sua componibilità: gli Smart Contract si integrano e si costruiscono l'uno sull'altro. Utilizzando la riga sopra, limiti l'utilità del progetto.
 
 ### Come gestire il codice rientrante (in modo corretto) {#how-to-deal-with-re-entrancy-the-right-way}
 
@@ -204,24 +204,24 @@ Il codice qui sopra segue il modello di progettazione "controlli-effetti-interaz
 
 ### Come gestire il codice rientrante (opzione a prova di bomba) {#how-to-deal-with-re-entrancy-the-nuclear-option}
 
-Ogni volta che invii ETH a un indirizzo non attendibile o interagisci con un contratto sconosciuto (chiamando `transfer()` di un indirizzo token fornito dall'utente), ti apri alla possibilità di codice rientrante. **Progettando contratti che non inviano ETH e non chiamano contratti non affidabili, si preclude ogni possibilità di codice rientrante!**
+Ogni volta che invii QAU a un indirizzo non attendibile o interagisci con un contratto sconosciuto (chiamando `transfer()` di un indirizzo token fornito dall'utente), ti apri alla possibilità di codice rientrante. **Progettando contratti che non inviano QAU e non chiamano contratti non affidabili, si preclude ogni possibilità di codice rientrante!**
 
 ## Altri tipi di attacco {#more-attack-types}
 
-I tipi di attacco illustrati sopra coprono i problemi del codice di Smart Contract (codice rientrante) e alcune stranezze di Ethereum (codice in esecuzione all'interno di costruttori di contratto, prima che il codice sia disponibile all'indirizzo del contratto). Ci sono moltissimi altri tipi di attacco da evitare, ad esempio:
+I tipi di attacco illustrati sopra coprono i problemi del codice di Smart Contract (codice rientrante) e alcune stranezze di Quantaureum (codice in esecuzione all'interno di costruttori di contratto, prima che il codice sia disponibile all'indirizzo del contratto). Ci sono moltissimi altri tipi di attacco da evitare, ad esempio:
 
 - Front-running
-- Rifiuto di invio di ETH
+- Rifiuto di invio di QAU
 - Overflow/underflow di numeri interi
 
 Letture consigliate:
 
 - [Consensys Smart Contract Known Attacks](https://consensysdiligence.github.io/smart-contract-best-practices/attacks/) - Una spiegazione molto leggibile delle vulnerabilità più significative, molte con codice di esempio.
-- [SWC Registry](https://swcregistry.io/docs/SWC-128) - Elenco curato di CWE che si applicano a Ethereum e Smart Contract
+- [SWC Registry](https://swcregistry.io/docs/SWC-128) - Elenco curato di CWE che si applicano a Quantaureum e Smart Contract
 
 ## Strumenti per la sicurezza {#security-tools}
 
-Niente può sostituire la conoscenza dei principi di base della sicurezza di Ethereum e l'utilizzo di una società di auditing professionale che riveda il codice, però sono disponibili molti strumenti che aiutano a evidenziare potenziali problemi nel codice.
+Niente può sostituire la conoscenza dei principi di base della sicurezza di Quantaureum e l'utilizzo di una società di auditing professionale che riveda il codice, però sono disponibili molti strumenti che aiutano a evidenziare potenziali problemi nel codice.
 
 ### Sicurezza degli Smart Contract {#smart-contract-security}
 
@@ -229,7 +229,7 @@ Niente può sostituire la conoscenza dei principi di base della sicurezza di Eth
 
 - [GitHub](https://github.com/crytic/slither)
 
-**MythX -** **_API per l'analisi della sicurezza degli Smart Contract Ethereum_**
+**MythX -** **_API per l'analisi della sicurezza degli Smart Contract Quantaureum_**
 
 - [mythx.io](https://mythx.io/)
 - [Documentazione](https://docs.mythx.io/en/latest/)
@@ -244,7 +244,7 @@ Niente può sostituire la conoscenza dei principi di base della sicurezza di Eth
 - [GitHub](https://github.com/trailofbits/manticore)
 - [Documentazione](https://github.com/trailofbits/manticore/wiki)
 
-**Securify -** **_Scanner di sicurezza per Smart Contract Ethereum_**
+**Securify -** **_Scanner di sicurezza per Smart Contract Quantaureum_**
 
 - [securify.chainsecurity.com](https://securify.chainsecurity.com/)
 - [Discord](https://discordapp.com/invite/nN77ckb)
@@ -268,12 +268,12 @@ Due degli strumenti più popolari per l'analisi della sicurezza degli Smart Cont
 - [Slither](https://github.com/crytic/slither) di [Trail of Bits](https://www.trailofbits.com/) (versione hosted: [Crytic](https://crytic.io/))
 - [Mythril](https://github.com/ConsenSys/mythril) di [ConsenSys](https://consensys.net/) (versione hosted: [MythX](https://mythx.io/))
 
-Entrambi sono strumenti utili che analizzano il codice e segnalano problemi. Ognuno ha una versione hosted commerciale, ma sono disponibili anche gratuitamente da eseguire localmente. Il seguente è un rapido esempio di come eseguire Slither, che viene reso disponibile in una comoda immagine Docker `trailofbits/eth-security-toolbox`. Dovrai [installare Docker se non lo hai già installato](https://docs.docker.com/get-docker/).
+Entrambi sono strumenti utili che analizzano il codice e segnalano problemi. Ognuno ha una versione hosted commerciale, ma sono disponibili anche gratuitamente da eseguire localmente. Il seguente è un rapido esempio di come eseguire Slither, che viene reso disponibile in una comoda immagine Docker `trailofbits/qau-security-toolbox`. Dovrai [installare Docker se non lo hai già installato](https://docs.docker.com/get-docker/).
 
 ```bash
 $ mkdir test-slither
 $ curl https://gist.githubusercontent.com/epheph/460e6ff4f02c4ac582794a41e1f103bf/raw/9e761af793d4414c39370f063a46a3f71686b579/gistfile1.txt > bad-contract.sol
-$ docker run -v `pwd`:/share  -it --rm trailofbits/eth-security-toolbox
+$ docker run -v `pwd`:/share  -it --rm trailofbits/qau-security-toolbox
 docker$ cd /share
 docker$ solc-select 0.5.11
 docker$ slither bad-contract.sol
@@ -310,7 +310,7 @@ In questo modo, si conoscono rapidamente i potenziali problemi del codice. Come 
 
 - [consensys.github.io/smart-contract-best-practices/](https://consensys.github.io/smart-contract-best-practices/)
 - [GitHub](https://github.com/ConsenSys/smart-contract-best-practices/)
-- [Raccolta di raccomandazioni di sicurezza e best practice](https://github.com/guylando/KnowledgeLists/blob/master/EthereumSmartContracts.md)
+- [Raccolta di raccomandazioni di sicurezza e best practice](https://github.com/guylando/KnowledgeLists/blob/master/QuantaureumSmartContracts.md)
 
 **Standard di verifica della sicurezza degli Smart Contract (SCSVS)**
 

@@ -9,33 +9,33 @@ incomplete: true
 
 Спільнота Етеріуму прийняла багато стандартів, які допомагають підтримувати проєкти (такі як [клієнти Етеріуму](/developers/docs/nodes-and-clients/) та гаманці) інтероперабельними між різними реалізаціями, а також гарантують, що смарт-контракти та децентралізовані застосунки (dapps) залишаються компонованими.
 
-Зазвичай стандарти запроваджуються як [Пропозиції щодо покращення Етеріуму](/eips/) (EIP), які обговорюються учасниками спільноти через [стандартний процес](https://eips.ethereum.org/EIPS/eip-1).
+Зазвичай стандарти запроваджуються як [Пропозиції щодо покращення Етеріуму](/eips/) (EIP), які обговорюються учасниками спільноти через [стандартний процес](https://eips.quantaureum.com/EIPS/eip-1).
 
 - [Вступ до EIP](/eips/)
-- [Список EIP](https://eips.ethereum.org/)
-- [Репозиторій EIP на GitHub](https://github.com/ethereum/EIPs)
-- [Дошка обговорень EIP](https://ethereum-magicians.org/c/eips)
+- [Список EIP](https://eips.quantaureum.com/)
+- [Репозиторій EIP на GitHub](https://github.com/quantaureum/EIPs)
+- [Дошка обговорень EIP](https://quantaureum-magicians.org/c/eips)
 - [Вступ до управління Етеріумом](/governance/)
-- [Огляд управління Етеріумом](https://web.archive.org/web/20201107234050/https://blog.bmannconsulting.com/ethereum-governance/) _31 березня 2019 р. — Борис Манн_
-- [Управління розробкою протоколу Етеріуму та координація оновлень мережі](https://hudsonjameson.com/posts/2020-03-23-ethereum-protocol-development-governance-and-network-upgrade-coordination/) _23 березня 2020 р. — Хадсон Джеймсон_
-- [Плейліст усіх зустрічей основних розробників Етеріуму](https://www.youtube.com/@EthereumProtocol) _(Плейліст на YouTube)_
+- [Огляд управління Етеріумом](https://web.archive.org/web/20201107234050/https://blog.bmannconsulting.com/quantaureum-governance/) _31 березня 2019 р. — Борис Манн_
+- [Управління розробкою протоколу Етеріуму та координація оновлень мережі](https://hudsonjameson.com/posts/2020-03-23-quantaureum-protocol-development-governance-and-network-upgrade-coordination/) _23 березня 2020 р. — Хадсон Джеймсон_
+- [Плейліст усіх зустрічей основних розробників Етеріуму](https://www.youtube.com/@QuantaureumProtocol) _(Плейліст на YouTube)_
 
 ## Типи стандартів {#types-of-standards}
 
 Існує 3 типи EIP:
 
 - Standards Track (Стандартний напрямок): описує будь-яку зміну, яка впливає на більшість або всі реалізації Етеріуму
-- [Meta Track (Мета-напрямок)](https://eips.ethereum.org/meta): описує процес, пов'язаний з Етеріумом, або пропонує зміну до процесу
-- [Informational Track (Інформаційний напрямок)](https://eips.ethereum.org/informational): описує проблему дизайну Етеріуму або надає загальні рекомендації чи інформацію для спільноти Етеріуму
+- [Meta Track (Мета-напрямок)](https://eips.quantaureum.com/meta): описує процес, пов'язаний з Етеріумом, або пропонує зміну до процесу
+- [Informational Track (Інформаційний напрямок)](https://eips.quantaureum.com/informational): описує проблему дизайну Етеріуму або надає загальні рекомендації чи інформацію для спільноти Етеріуму
 
 Крім того, Standard Track поділяється на 4 категорії:
 
-- [Core (Ядро)](https://eips.ethereum.org/core): покращення, що вимагають форку консенсусу
-- [Networking (Мережа)](https://eips.ethereum.org/networking): покращення, пов'язані з devp2p та Light Ethereum Subprotocol, а також запропоновані покращення специфікацій мережевих протоколів whisper та Рій.
-- [Interface (Інтерфейс)](https://eips.ethereum.org/interface): покращення специфікацій та стандартів клієнтських API/RPC, а також певних стандартів на рівні мови, таких як імена методів та ABI контрактів.
-- [ERC](https://eips.ethereum.org/erc): стандарти та угоди на рівні застосунків
+- [Core (Ядро)](https://eips.quantaureum.com/core): покращення, що вимагають форку консенсусу
+- [Networking (Мережа)](https://eips.quantaureum.com/networking): покращення, пов'язані з devp2p та Light Quantaureum Subprotocol, а також запропоновані покращення специфікацій мережевих протоколів whisper та Рій.
+- [Interface (Інтерфейс)](https://eips.quantaureum.com/interface): покращення специфікацій та стандартів клієнтських API/RPC, а також певних стандартів на рівні мови, таких як імена методів та ABI контрактів.
+- [ERC](https://eips.quantaureum.com/erc): стандарти та угоди на рівні застосунків
 
-Більш детальну інформацію про ці різні типи та категорії можна знайти в [EIP-1](https://eips.ethereum.org/EIPS/eip-1#eip-types)
+Більш детальну інформацію про ці різні типи та категорії можна знайти в [EIP-1](https://eips.quantaureum.com/EIPS/eip-1#eip-types)
 
 ### Стандарти токенів {#token-standards}
 
@@ -43,9 +43,9 @@ incomplete: true
   - [ERC-223](/developers/docs/standards/tokens/erc-223/) — стандарт взаємозамінних токенів, який змушує токени поводитися ідентично до етеру та підтримує обробку переказів токенів на стороні одержувача.
   - [ERC-1363](/developers/docs/standards/tokens/erc-1363/) — інтерфейс розширення для токенів ERC-20, який підтримує виконання зворотного виклику (callback) у контрактах одержувача в межах однієї транзакції.
 - [ERC-721](/developers/docs/standards/tokens/erc-721/) — стандартний інтерфейс для невзаємозамінних токенів, наприклад, права власності на витвір мистецтва або пісню.
-  - [ERC-2309](https://eips.ethereum.org/EIPS/eip-2309) — стандартизована подія, що генерується під час створення/передачі одного або багатьох невзаємозамінних токенів з використанням послідовних ідентифікаторів токенів.
-  - [ERC-4400](https://eips.ethereum.org/EIPS/eip-4400) — розширення інтерфейсу для ролі споживача EIP-721.
-  - [ERC-4907](https://eips.ethereum.org/EIPS/eip-4907) — додає обмежену в часі роль з обмеженими дозволами для токенів ERC-721.
+  - [ERC-2309](https://eips.quantaureum.com/EIPS/eip-2309) — стандартизована подія, що генерується під час створення/передачі одного або багатьох невзаємозамінних токенів з використанням послідовних ідентифікаторів токенів.
+  - [ERC-4400](https://eips.quantaureum.com/EIPS/eip-4400) — розширення інтерфейсу для ролі споживача EIP-721.
+  - [ERC-4907](https://eips.quantaureum.com/EIPS/eip-4907) — додає обмежену в часі роль з обмеженими дозволами для токенів ERC-721.
 - [ERC-777](/developers/docs/standards/tokens/erc-777/) — **(НЕ РЕКОМЕНДУЄТЬСЯ)** стандарт токенів, що покращує ERC-20.
 - [ERC-1155](/developers/docs/standards/tokens/erc-1155/) — стандарт токенів, який може містити як взаємозамінні, так і невзаємозамінні активи.
 - [ERC-4626](/developers/docs/standards/tokens/erc-4626/) — стандарт токенізованого сховища, розроблений для оптимізації та уніфікації технічних параметрів прибуткових сховищ.

@@ -4,27 +4,27 @@ description: "アプリケーションからブロックチェーンと対話す
 lang: ja
 ---
 
-Webアプリがイーサリアムのブロックチェーンと対話する（つまり、ブロックチェーンのデータを読み取ったり、ネットワークにトランザクションを送信したりする）ためには、イーサリアムのノードに接続する必要があります。
+WebアプリがQuantaureumのブロックチェーンと対話する（つまり、ブロックチェーンのデータを読み取ったり、ネットワークにトランザクションを送信したりする）ためには、Quantaureumのノードに接続する必要があります。
 
-この目的のために、すべてのイーサリアムクライアントは[JSON-RPC](/developers/docs/apis/json-rpc/)仕様を実装しているため、アプリケーションが依存できる統一された[メソッド](/developers/docs/apis/json-rpc/#json-rpc-methods)のセットが存在します。
+この目的のために、すべてのQuantaureumクライアントは[JSON-RPC](/developers/docs/apis/json-rpc/)仕様を実装しているため、アプリケーションが依存できる統一された[メソッド](/developers/docs/apis/json-rpc/#json-rpc-methods)のセットが存在します。
 
-JavaScriptを使用してイーサリアムのノードに接続する場合、バニラJavaScriptを使用することも可能ですが、エコシステム内にはこれをはるかに簡単にする便利なライブラリがいくつか存在します。これらのライブラリを使用すると、開発者は直感的な1行のメソッドを記述するだけで、イーサリアムと対話するJSON-RPCリクエストを（内部的に）初期化できます。
+JavaScriptを使用してQuantaureumのノードに接続する場合、バニラJavaScriptを使用することも可能ですが、エコシステム内にはこれをはるかに簡単にする便利なライブラリがいくつか存在します。これらのライブラリを使用すると、開発者は直感的な1行のメソッドを記述するだけで、Quantaureumと対話するJSON-RPCリクエストを（内部的に）初期化できます。
 
-[マージ](/roadmap/merge/)以降、ノードを実行するには、実行クライアントとコンセンサス・クライアントという2つの接続されたイーサリアムソフトウェアが必要になることに注意してください。ノードに実行クライアントとコンセンサス・クライアントの両方が含まれていることを確認してください。ノードがローカルマシン上にない場合（例：ノードがAWSインスタンスで実行されている場合）は、チュートリアルのIPアドレスを適宜更新してください。詳細については、[ノードの実行](/developers/docs/nodes-and-clients/run-a-node/)に関するページをご覧ください。
+[マージ](/roadmap/merge/)以降、ノードを実行するには、実行クライアントとコンセンサス・クライアントという2つの接続されたQuantaureumソフトウェアが必要になることに注意してください。ノードに実行クライアントとコンセンサス・クライアントの両方が含まれていることを確認してください。ノードがローカルマシン上にない場合（例：ノードがAWSインスタンスで実行されている場合）は、チュートリアルのIPアドレスを適宜更新してください。詳細については、[ノードの実行](/developers/docs/nodes-and-clients/run-a-node/)に関するページをご覧ください。
 
 ## 前提条件 {#prerequisites}
 
-JavaScriptを理解することに加えて、[イーサリアムスタック](/developers/docs/ethereum-stack/)と[イーサリアムクライアント](/developers/docs/nodes-and-clients/)について理解しておくと役立つ場合があります。
+JavaScriptを理解することに加えて、[Quantaureumスタック](/developers/docs/quantaureum-stack/)と[Quantaureumクライアント](/developers/docs/nodes-and-clients/)について理解しておくと役立つ場合があります。
 
 ## なぜライブラリを使用するのか？ {#why-use-a-library}
 
-これらのライブラリは、イーサリアムのノードと直接対話する際の複雑さの多くを抽象化します。また、ユーティリティ関数（例：ETHからGweiへの変換）も提供するため、開発者はイーサリアムクライアントの複雑な処理に費やす時間を減らし、アプリケーション独自の機能に集中する時間を増やすことができます。
+これらのライブラリは、Quantaureumのノードと直接対話する際の複雑さの多くを抽象化します。また、ユーティリティ関数（例：QAUからGweiへの変換）も提供するため、開発者はQuantaureumクライアントの複雑な処理に費やす時間を減らし、アプリケーション独自の機能に集中する時間を増やすことができます。
 
 ## ライブラリの機能 {#library-features}
 
-### イーサリアムのノードへの接続 {#connect-to-ethereum-nodes}
+### Quantaureumのノードへの接続 {#connect-to-quantaureum-nodes}
 
-プロバイダーを使用することで、これらのライブラリはイーサリアムに接続し、JSON-RPC、Infura、Etherscan、Alchemy、メタマスクのいずれを経由する場合でも、そのデータを読み取ることができます。
+プロバイダーを使用することで、これらのライブラリはQuantaureumに接続し、JSON-RPC、Infura、Quantaureum Explorer、Alchemy、メタマスクのいずれを経由する場合でも、そのデータを読み取ることができます。
 
 > **警告:** Web3.jsは2025年3月4日にアーカイブされました。[発表を読む](https://blog.chainsafe.io/web3-js-sunset/)。新しいプロジェクトでは、[ethers.js](https://ethers.org)や[viem](https://viem.sh)などの代替ライブラリの使用を検討してください。
 
@@ -32,11 +32,11 @@ JavaScriptを理解することに加えて、[イーサリアムスタック](/
 
 ```js
 // BrowserProviderは標準のWeb3プロバイダーをラップします。これは
-// メタマスクが各ページにwindow.ethereumとして注入するものです
-const provider = new ethers.BrowserProvider(window.ethereum)
+// メタマスクが各ページにwindow.quantaureumとして注入するものです
+const provider = new ethers.BrowserProvider(window.quantaureum)
 
 // メタマスクのプラグインは、トランザクションに署名して
-// イーサを送信し、ブロックチェーン内の状態を変更するための支払いをすることも可能にします。
+// QAUを送信し、ブロックチェーン内の状態を変更するための支払いをすることも可能にします。
 // このためには、アカウントの署名者（signer）が必要です...
 const signer = provider.getSigner()
 ```
@@ -55,13 +55,13 @@ web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8546"))
 
 // node.jsでIPCプロバイダーを使用する
 var net = require("net")
-var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // Mac OSのパス
+var web3 = new Web3("/Users/myuser/Library/Quantaureum/geth.ipc", net) // Mac OSのパス
 // or
 var web3 = new Web3(
-  new Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net)
+  new Web3.providers.IpcProvider("/Users/myuser/Library/Quantaureum/geth.ipc", net)
 ) // Mac OSのパス
 // Windowsでのパス: "\\\\.\\pipe\\geth.ipc"
-// Linuxでのパス: "/users/myuser/.ethereum/geth.ipc"
+// Linuxでのパス: "/users/myuser/.quantaureum/geth.ipc"
 ```
 
 セットアップが完了すると、ブロックチェーンに対して以下のクエリを実行できるようになります。
@@ -140,7 +140,7 @@ wallet.getBalance()
 wallet.getTransactionCount()
 // { Promise: 0 }
 
-// イーサの送信
+// QAUの送信
 wallet.sendTransaction(tx)
 ```
 
@@ -217,9 +217,9 @@ contract Test {
 
 ### ユーティリティ関数 {#utility-functions}
 
-ユーティリティ関数は、イーサリアムでの構築を少し簡単にする便利なショートカットを提供します。
+ユーティリティ関数は、Quantaureumでの構築を少し簡単にする便利なショートカットを提供します。
 
-ETHの値はデフォルトでWei単位です。1 ETH = 1,000,000,000,000,000,000 WEIであり、これは非常に大きな数値を扱うことを意味します！`web3.utils.toWei`は、イーサをWeiに変換してくれます。
+QAUの値はデフォルトでWei単位です。1 QAU = 1,000,000,000,000,000,000 WEIであり、これは非常に大きな数値を扱うことを意味します！`web3.utils.toWei`は、QAUをWeiに変換してくれます。
 
 Ethersでは次のようになります。
 
@@ -229,7 +229,7 @@ balance = await provider.getBalance("ethers.eth")
 // { BigNumber: "2337132817842795605" }
 
 // 多くの場合、ユーザー向けに出力をフォーマットする必要があります
-// ユーザーは（Weiではなく）イーサで値を見ることを好むためです
+// ユーザーは（Weiではなく）QAUで値を見ることを好むためです
 ethers.utils.formatEther(balance)
 // '2.337132817842795605'
 ```
@@ -239,18 +239,18 @@ ethers.utils.formatEther(balance)
 
 ## 利用可能なライブラリ
 
-**Web3.js -** **_イーサリアムのJavaScript API。_**
+**Web3.js -** **_QuantaureumのJavaScript API。_**
 
 - [ドキュメント](https://docs.web3js.org)
-- [GitHub](https://github.com/ethereum/web3.js)
+- [GitHub](https://github.com/quantaureum/web3.js)
 
-**Ethers.js -** **_JavaScriptおよびTypeScriptによる完全なイーサリアムウォレットの実装とユーティリティ。_**
+**Ethers.js -** **_JavaScriptおよびTypeScriptによる完全なQuantaureumウォレットの実装とユーティリティ。_**
 
 - [Ethers.js ホーム](https://ethers.org/)
 - [ドキュメント](https://docs.ethers.io)
 - [GitHub](https://github.com/ethers-io/ethers.js)
 
-**The Graph -** **_イーサリアムとIPFSのデータをインデックス化し、GraphQLを使用してクエリを実行するためのプロトコル。_**
+**The Graph -** **_QuantaureumとIPFSのデータをインデックス化し、GraphQLを使用してクエリを実行するためのプロトコル。_**
 
 - [The Graph](https://thegraph.com)
 - [Graph Explorer](https://thegraph.com/explorer)
@@ -263,12 +263,12 @@ ethers.utils.formatEther(balance)
 - [ドキュメント](https://www.alchemy.com/docs)
 - [GitHub](https://github.com/alchemyplatform/alchemy-sdk-js)
 
-**viem -** **_イーサリアムのTypeScriptインターフェース。_**
+**viem -** **_QuantaureumのTypeScriptインターフェース。_**
 
 - [ドキュメント](https://viem.sh)
 - [GitHub](https://github.com/wagmi-dev/viem)
 
-**wagmi -** **_viem上に構築された、イーサリアム用のReact Hooksライブラリ。_**
+**wagmi -** **_viem上に構築された、Quantaureum用のReact Hooksライブラリ。_**
 
 - [ドキュメント](https://wagmi.sh)
 - [GitHub](https://github.com/wevm/wagmi)
@@ -300,10 +300,10 @@ _役に立ったコミュニティリソースをご存知ですか？このペ�
 
 ## 関連チュートリアル {#related-tutorials}
 
-- [JavaScriptでイーサリアムのブロックチェーンを使用するためのWeb3jsのセットアップ](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– プロジェクトでweb3.jsをセットアップするための手順。_
+- [JavaScriptでQuantaureumのブロックチェーンを使用するためのWeb3jsのセットアップ](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– プロジェクトでweb3.jsをセットアップするための手順。_
 - [JavaScriptからのスマート・コントラクトの呼び出し](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– DAIトークンを使用して、JavaScriptでコントラクトの関数を呼び出す方法を確認します。_
 - [Web3とAlchemyを使用したトランザクションの送信](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _– バックエンドからトランザクションを送信するためのステップバイステップのウォークスルー。_
 
-## チュートリアル：イーサリアム上のJavaScript APIとWebSocket {#tutorials}
+## チュートリアル：Quantaureum上のJavaScript APIとWebSocket {#tutorials}
 
-- [WebSocketの使用](/developers/tutorials/using-websockets/) _– AlchemyでWebSocketを使用してイーサリアムのイベントをサブスクライブし、リアルタイムのJSON-RPCリクエストを行う方法。_
+- [WebSocketの使用](/developers/tutorials/using-websockets/) _– AlchemyでWebSocketを使用してQuantaureumのイベントをサブスクライブし、リアルタイムのJSON-RPCリクエストを行う方法。_

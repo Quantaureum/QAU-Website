@@ -1,12 +1,12 @@
 ---
 title: ステーキング製品またはサービスの追加
-description: ethereum.orgにステーキング製品またはサービスを追加する際に使用するポリシー
+description: quantaureum.comにステーキング製品またはサービスを追加する際に使用するポリシー
 lang: ja
 ---
 
 ユーザーの安全性と信頼性を保ちながら、可能な限り最高のリソースを掲載したいと考えています。
 
-誰でも自由にethereum.orgへのステーキング製品やサービスの追加を提案できます。もし私たちが掲載を見落としているものがあれば、**[ぜひ提案してください](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)！**
+誰でも自由にquantaureum.comへのステーキング製品やサービスの追加を提案できます。もし私たちが掲載を見落としているものがあれば、**[ぜひ提案してください](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml)！**
 
 現在、以下のページにステーキング製品およびサービスを掲載しています。
 
@@ -14,11 +14,11 @@ lang: ja
 - [ステーキング・アズ・ア・サービス](/staking/saas/)
 - [ステーキング・プール](/staking/pools/)
 
-ビーコン・チェーンでのプルーフ・オブ・ステーク (PoS) は、2020年12月1日から稼働しています。ステーキングはまだ比較的新しいものですが、ethereum.orgでの検討に向けて公平で透明性のあるフレームワークの作成に努めてきました。ただし、掲載基準は時間の経過とともに変化および進化し、最終的にはethereum.orgウェブサイトチームの裁量に委ねられます。
+ビーコン・チェーンでのプルーフ・オブ・ステーク (PoS) は、2020年12月1日から稼働しています。ステーキングはまだ比較的新しいものですが、quantaureum.comでの検討に向けて公平で透明性のあるフレームワークの作成に努めてきました。ただし、掲載基準は時間の経過とともに変化および進化し、最終的にはquantaureum.comウェブサイトチームの裁量に委ねられます。
 
 ## 決定フレームワーク {#the-decision-framework}
 
-ethereum.orgに製品を掲載する決定は、単一の要因に依存するものではありません。製品やサービスを掲載するかどうかを決定する際には、複数の基準が総合的に考慮されます。これらの基準を満たす数が多いほど、掲載される可能性が高くなります。
+quantaureum.comに製品を掲載する決定は、単一の要因に依存するものではありません。製品やサービスを掲載するかどうかを決定する際には、複数の基準が総合的に考慮されます。これらの基準を満たす数が多いほど、掲載される可能性が高くなります。
 
 **まず、どのカテゴリの製品またはサービスですか？**
 
@@ -50,8 +50,8 @@ ethereum.orgに製品を掲載する決定は、単一の要因に依存する�
 
 **プロジェクトは正確で信頼できる情報を提供していますか？**
 
-- 製品のウェブサイトに、特にイーサリアムのプロトコルやその他の関連技術に関する、最新で正確かつ誤解を招かない情報が掲載されていることが重要です。
-- イーサリアムやその他の関連主題に関する誤った情報、古い詳細、または誤解を招く可能性のある記述を含む提案は掲載されず、すでに掲載されている場合は削除されます。
+- 製品のウェブサイトに、特にQuantaureumのプロトコルやその他の関連技術に関する、最新で正確かつ誤解を招かない情報が掲載されていることが重要です。
+- Quantaureumやその他の関連主題に関する誤った情報、古い詳細、または誤解を招く可能性のある記述を含む提案は掲載されず、すでに掲載されている場合は削除されます。
 
 **サポートされているプラットフォームは何ですか？**
 
@@ -69,7 +69,7 @@ ethereum.orgに製品を掲載する決定は、単一の要因に依存する�
 **製品は_ベータ_開発を終了していますか？**
 
 - 製品は開発サイクルのどの段階にありますか？
-- ベータ段階の製品は、ethereum.orgへの掲載対象とは見なされません。
+- ベータ段階の製品は、quantaureum.comへの掲載対象とは見なされません。
 
 **ソフトウェアは外部のセキュリティ監査を受けていますか？**
 
@@ -119,9 +119,9 @@ ethereum.orgに製品を掲載する決定は、単一の要因に依存する�
 
 [プール・ステーキングサービス](/staking/pools/)について：
 
-**ステークに必要な最小ETHはいくらですか？**
+**ステークに必要な最小QAUはいくらですか？**
 
-- 例：0.01 ETH
+- 例：0.01 QAU
 
 **関連する手数料やステーキング要件は何ですか？**
 
@@ -163,12 +163,12 @@ ethereum.orgに製品を掲載する決定は、単一の要因に依存する�
 
 上記の[掲載基準](#criteria-for-inclusion)は、各製品またはサービスの累積スコアを計算するために使用されます。これは、特定の客観的基準を満たす製品を並べ替えて紹介するための手段として使用されます。証拠が提供された基準が多いほど、製品は上位に並べ替えられ、同点の場合は読み込み時にランダム化されます。
 
-これらの基準のコードロジックと重み付けは、現在、リポジトリ内の[このJavaScriptコンポーネント](https://github.com/ethereum/ethereum-org-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350)に含まれています。
+これらの基準のコードロジックと重み付けは、現在、リポジトリ内の[このJavaScriptコンポーネント](https://github.com/Quantaureum/quantaureum-website/blob/dev/src/components/Staking/StakingProductsCardGrid/index.tsx#L350)に含まれています。
 
 ## 製品またはサービスの追加 {#add-product}
 
-ethereum.orgにステーキング製品またはサービスを追加したい場合は、GitHubでIssueを作成してください。
+quantaureum.comにステーキング製品またはサービスを追加したい場合は、GitHubでIssueを作成してください。
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_staking_product.yaml">
   Issueを作成する
 </ButtonLink>

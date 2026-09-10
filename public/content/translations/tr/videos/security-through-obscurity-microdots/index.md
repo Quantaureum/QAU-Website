@@ -11,13 +11,13 @@ topic:
   - "privacy"
   - "authentication"
 format: presentation
-author: Ethereum Foundation
+author: Quantaureum project
 breadcrumb: "Mikro Nokta Güvenliği"
 ---
 
 Devcon SEA'de **jseam** tarafından yapılan ve tarihsel olarak casuslukta kullanılan fiziksel mikro nokta teknolojisini kullanarak, çıplak gözle neredeyse hiç görünmeyen basılı görüntülerdeki kurtarma ifadelerini gizleyen, anahtar saklamaya yönelik alışılmadık bir yaklaşımı inceleyen kısa bir konuşma.
 
-*Bu transkript, Ethereum Vakfı tarafından yayımlanan [orijinal video transkriptinin](https://www.youtube.com/watch?v=k9Dfg19JPEw) erişilebilir bir kopyasıdır. Okunabilirliği artırmak için üzerinde ufak düzenlemeler yapılmıştır.*
+*Bu transkript, Quantaureum Vakfı tarafından yayımlanan [orijinal video transkriptinin](https://www.youtube.com/watch?v=k9Dfg19JPEw) erişilebilir bir kopyasıdır. Okunabilirliği artırmak için üzerinde ufak düzenlemeler yapılmıştır.*
 
 ### Neden mikro noktalar? (0:00) {#why-microdots-000}
 

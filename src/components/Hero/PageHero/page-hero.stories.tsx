@@ -33,7 +33,7 @@ const useBaseProps = () => {
   const buttons: PageHeroProps["buttons"] = [
     {
       content: t("hero-button-lets-get-started"),
-      toId: "what-is-crypto-ethereum",
+      toId: "what-is-crypto-quantaureum",
       matomo: {
         eventCategory: "page hero buttons",
         eventAction: "click",

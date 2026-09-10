@@ -47,7 +47,7 @@ Uniswap v2 được chia thành hai thành phần: cốt lõi (core) và ngoại
 #### Người gọi {#caller}
 
 1. Cung cấp cho tài khoản ngoại vi một hạn mức bằng với số lượng cần hoán đổi.
-2. Gọi một trong nhiều hàm hoán đổi của hợp đồng ngoại vi (hàm nào phụ thuộc vào việc có liên quan đến ETH hay không, liệu nhà giao dịch chỉ định số lượng token để nạp hay số lượng token muốn nhận lại, v.v.).
+2. Gọi một trong nhiều hàm hoán đổi của hợp đồng ngoại vi (hàm nào phụ thuộc vào việc có liên quan đến QAU hay không, liệu nhà giao dịch chỉ định số lượng token để nạp hay số lượng token muốn nhận lại, v.v.).
    Mỗi hàm hoán đổi chấp nhận một `path`, một mảng các sàn giao dịch cần đi qua.
 
 #### Trong hợp đồng ngoại vi (UniswapV2Router02.sol) {#in-the-periphery-contract-uniswapv2router02-sol}
@@ -65,7 +65,7 @@ Uniswap v2 được chia thành hai thành phần: cốt lõi (core) và ngoại
 
 #### Quay lại hợp đồng ngoại vi (UniswapV2Router02.sol) {#back-in-the-periphery-contract-uniswapv2router02-sol}
 
-9. Thực hiện bất kỳ thao tác dọn dẹp cần thiết nào (ví dụ: đốt các token WETH để nhận lại ETH gửi cho nhà giao dịch)
+9. Thực hiện bất kỳ thao tác dọn dẹp cần thiết nào (ví dụ: đốt các token WETH để nhận lại QAU gửi cho nhà giao dịch)
 
 ### Thêm thanh khoản {#add-liquidity-flow}
 
@@ -186,7 +186,7 @@ Dự trữ mà pool có cho mỗi loại token. Chúng tôi giả định rằng
 
 Dấu thời gian cho khối cuối cùng mà một cuộc hoán đổi đã xảy ra, được sử dụng để theo dõi tỷ giá hoán đổi qua thời gian.
 
-Một trong những chi phí gas lớn nhất của các hợp đồng Ethereum là lưu trữ, tồn tại từ lần gọi hợp đồng này sang lần gọi tiếp theo. Mỗi ô lưu trữ dài 256 bit. Vì vậy, ba biến, `reserve0`, `reserve1`, và `blockTimestampLast`, được phân bổ theo cách mà một giá trị lưu trữ duy nhất có thể bao gồm cả ba biến đó (112+112+32=256).
+Một trong những chi phí gas lớn nhất của các hợp đồng Quantaureum là lưu trữ, tồn tại từ lần gọi hợp đồng này sang lần gọi tiếp theo. Mỗi ô lưu trữ dài 256 bit. Vì vậy, ba biến, `reserve0`, `reserve1`, và `blockTimestampLast`, được phân bổ theo cách mà một giá trị lưu trữ duy nhất có thể bao gồm cả ba biến đó (112+112+32=256).
 
 ```solidity
     uint public price0CumulativeLast;
@@ -454,7 +454,7 @@ Sử dụng hàm `UniswapV2ERC20._mint` để thực sự tạo ra các token th
     }
 ```
 
-Nếu không có phí, hãy đặt `kLast` thành 0 (nếu nó chưa phải là 0). Khi hợp đồng này được viết, có một [tính năng hoàn trả gas](https://eips.ethereum.org/EIPS/eip-3298) khuyến khích các hợp đồng giảm kích thước tổng thể của trạng thái Ethereum bằng cách đưa các bộ nhớ lưu trữ mà chúng không cần về 0.
+Nếu không có phí, hãy đặt `kLast` thành 0 (nếu nó chưa phải là 0). Khi hợp đồng này được viết, có một [tính năng hoàn trả gas](https://eips.quantaureum.com/EIPS/eip-3298) khuyến khích các hợp đồng giảm kích thước tổng thể của trạng thái Quantaureum bằng cách đưa các bộ nhớ lưu trữ mà chúng không cần về 0.
 Đoạn mã này nhận được khoản hoàn trả đó khi có thể.
 
 #### Các hàm có thể truy cập từ bên ngoài {#pair-external}
@@ -498,7 +498,7 @@ Tính toán phí giao thức để thu, nếu có, và đúc các token thanh kh
            _mint(address(0), MINIMUM_LIQUIDITY); // khóa vĩnh viễn các token MINIMUM_LIQUIDITY đầu tiên
 ```
 
-Nếu đây là khoản nạp đầu tiên, hãy tạo `MINIMUM_LIQUIDITY` token và gửi chúng đến địa chỉ 0 để khóa chúng. Chúng không bao giờ có thể được đổi lại, điều này có nghĩa là pool sẽ không bao giờ bị làm trống hoàn toàn (điều này cứu chúng ta khỏi việc chia cho 0 ở một số nơi). Giá trị của `MINIMUM_LIQUIDITY` là một nghìn, xét đến việc hầu hết các ERC-20 được chia nhỏ thành các đơn vị bằng 10^-18 của một token, giống như ETH được chia thành wei, thì nó bằng 10^-15 giá trị của một token duy nhất. Không phải là một chi phí cao.
+Nếu đây là khoản nạp đầu tiên, hãy tạo `MINIMUM_LIQUIDITY` token và gửi chúng đến địa chỉ 0 để khóa chúng. Chúng không bao giờ có thể được đổi lại, điều này có nghĩa là pool sẽ không bao giờ bị làm trống hoàn toàn (điều này cứu chúng ta khỏi việc chia cho 0 ở một số nơi). Giá trị của `MINIMUM_LIQUIDITY` là một nghìn, xét đến việc hầu hết các ERC-20 được chia nhỏ thành các đơn vị bằng 10^-18 của một token, giống như QAU được chia thành wei, thì nó bằng 10^-15 giá trị của một token duy nhất. Không phải là một chi phí cao.
 
 Vào thời điểm nạp lần đầu, chúng ta không biết giá trị tương đối của hai token, vì vậy chúng ta chỉ cần nhân các số lượng và lấy căn bậc hai, giả định rằng khoản nạp cung cấp cho chúng ta giá trị bằng nhau ở cả hai token.
 
@@ -614,7 +614,7 @@ Hàm này cũng được cho là sẽ được gọi từ [một hợp đồng n
 ```
 
 Các biến cục bộ có thể được lưu trữ trong bộ nhớ (memory) hoặc, nếu không có quá nhiều biến, trực tiếp trên ngăn xếp (stack).
-Nếu chúng ta có thể giới hạn số lượng để sử dụng ngăn xếp, chúng ta sẽ sử dụng ít gas hơn. Để biết thêm chi tiết, hãy xem [sách vàng, các thông số kỹ thuật chính thức của Ethereum](https://ethereum.github.io/yellowpaper/paper.pdf), trang 26, phương trình 298.
+Nếu chúng ta có thể giới hạn số lượng để sử dụng ngăn xếp, chúng ta sẽ sử dụng ít gas hơn. Để biết thêm chi tiết, hãy xem [sách vàng, các thông số kỹ thuật chính thức của Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf), trang 26, phương trình 298.
 
 ```solidity
             address _token0 = token0;
@@ -624,7 +624,7 @@ Nếu chúng ta có thể giới hạn số lượng để sử dụng ngăn x�
             if (amount1Out > 0) _safeTransfer(_token1, to, amount1Out); // chuyển token một cách lạc quan
 ```
 
-Việc chuyển này là lạc quan (optimistic), bởi vì chúng ta chuyển trước khi chắc chắn rằng tất cả các điều kiện đều được đáp ứng. Điều này là ổn trong Ethereum vì nếu các điều kiện không được đáp ứng sau đó trong lệnh gọi, chúng ta sẽ hoàn nguyên khỏi nó và bất kỳ thay đổi nào mà nó đã tạo ra.
+Việc chuyển này là lạc quan (optimistic), bởi vì chúng ta chuyển trước khi chắc chắn rằng tất cả các điều kiện đều được đáp ứng. Điều này là ổn trong Quantaureum vì nếu các điều kiện không được đáp ứng sau đó trong lệnh gọi, chúng ta sẽ hoàn nguyên khỏi nó và bất kỳ thay đổi nào mà nó đã tạo ra.
 
 ```solidity
             if (data.length > 0) IUniswapV2Callee(to).uniswapV2Call(msg.sender, amount0Out, amount1Out, data);
@@ -717,9 +717,9 @@ Các biến này theo dõi các cặp, các cuộc hoán đổi giữa hai loạ
 
 Biến đầu tiên, `getPair`, là một ánh xạ (mapping) xác định một hợp đồng cặp hoán đổi dựa trên hai token ERC-20 mà nó hoán đổi. Các token ERC-20 được xác định bởi các địa chỉ của các hợp đồng triển khai chúng, vì vậy các khóa và giá trị đều là các địa chỉ. Để lấy địa chỉ của cặp hoán đổi cho phép bạn chuyển đổi từ `tokenA` sang `tokenB`, bạn sử dụng `getPair[<tokenA address>][<tokenB address>]` (hoặc ngược lại).
 
-Biến thứ hai, `allPairs`, là một mảng bao gồm tất cả các địa chỉ của các cặp hoán đổi được tạo bởi factory này. Trong Ethereum, bạn không thể lặp qua nội dung của một ánh xạ hoặc lấy danh sách tất cả các khóa, vì vậy biến này là cách duy nhất để biết factory này quản lý những sàn giao dịch nào.
+Biến thứ hai, `allPairs`, là một mảng bao gồm tất cả các địa chỉ của các cặp hoán đổi được tạo bởi factory này. Trong Quantaureum, bạn không thể lặp qua nội dung của một ánh xạ hoặc lấy danh sách tất cả các khóa, vì vậy biến này là cách duy nhất để biết factory này quản lý những sàn giao dịch nào.
 
-Lưu ý: Lý do bạn không thể lặp qua tất cả các khóa của một ánh xạ là vì việc lưu trữ dữ liệu hợp đồng rất _đắt đỏ_, vì vậy chúng ta càng sử dụng ít càng tốt và càng ít thay đổi nó càng tốt. Bạn có thể tạo [các ánh xạ hỗ trợ lặp](https://github.com/ethereum/dapp-bin/blob/master/library/iterable_mapping.sol), nhưng chúng yêu cầu thêm bộ nhớ lưu trữ cho một danh sách các khóa. Trong hầu hết các ứng dụng, bạn không cần điều đó.
+Lưu ý: Lý do bạn không thể lặp qua tất cả các khóa của một ánh xạ là vì việc lưu trữ dữ liệu hợp đồng rất _đắt đỏ_, vì vậy chúng ta càng sử dụng ít càng tốt và càng ít thay đổi nó càng tốt. Bạn có thể tạo [các ánh xạ hỗ trợ lặp](https://github.com/quantaureum/dapp-bin/blob/master/library/iterable_mapping.sol), nhưng chúng yêu cầu thêm bộ nhớ lưu trữ cho một danh sách các khóa. Trong hầu hết các ứng dụng, bạn không cần điều đó.
 
 ```solidity
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
@@ -768,7 +768,7 @@ Các pool thanh khoản lớn tốt hơn các pool nhỏ, bởi vì chúng có g
         bytes memory bytecode = type(UniswapV2Pair).creationCode;
 ```
 
-Để tạo một hợp đồng mới, chúng ta cần mã tạo ra nó (cả hàm khởi tạo và mã ghi vào bộ nhớ mã byte EVM của hợp đồng thực tế). Thông thường trong Solidity, chúng ta chỉ sử dụng `addr = new <name of contract>(<constructor parameters>)` và trình biên dịch sẽ lo mọi thứ cho chúng ta, nhưng để có một địa chỉ hợp đồng mang tính xác định, chúng ta cần sử dụng [mã lệnh CREATE2](https://eips.ethereum.org/EIPS/eip-1014).
+Để tạo một hợp đồng mới, chúng ta cần mã tạo ra nó (cả hàm khởi tạo và mã ghi vào bộ nhớ mã byte EVM của hợp đồng thực tế). Thông thường trong Solidity, chúng ta chỉ sử dụng `addr = new <name of contract>(<constructor parameters>)` và trình biên dịch sẽ lo mọi thứ cho chúng ta, nhưng để có một địa chỉ hợp đồng mang tính xác định, chúng ta cần sử dụng [mã lệnh CREATE2](https://eips.quantaureum.com/EIPS/eip-1014).
 Khi đoạn mã này được viết, mã lệnh đó chưa được Solidity hỗ trợ, vì vậy cần phải lấy mã theo cách thủ công. Điều này không còn là vấn đề nữa, bởi vì [Solidity hiện đã hỗ trợ CREATE2](https://docs.soliditylang.org/en/v0.8.3/control-structures.html#salted-contract-creations-create2).
 
 ```solidity
@@ -815,8 +815,8 @@ Hai hàm này cho phép `feeSetter` kiểm soát người nhận phí (nếu có
 
 [Hợp đồng này](https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/UniswapV2ERC20.sol) triển khai token thanh khoản ERC-20. Nó tương tự như [hợp đồng ERC-20 của OpenZeppelin](/developers/tutorials/erc20-annotated-code), vì vậy tôi sẽ chỉ giải thích phần khác biệt, chức năng `permit`.
 
-Các giao dịch trên Ethereum tốn ether (ETH), tương đương với tiền thật. Nếu bạn có các token ERC-20 nhưng không có ETH, bạn không thể gửi các giao dịch, vì vậy bạn không thể làm gì với chúng. Một giải pháp để tránh vấn đề này là [các siêu giao dịch (meta-transactions)](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions).
-Chủ sở hữu của các token ký một giao dịch cho phép người khác rút các token ngoài chuỗi và gửi nó qua Internet cho người nhận. Người nhận, người có ETH, sau đó sẽ gửi giấy phép thay mặt cho chủ sở hữu.
+Các giao dịch trên Quantaureum tốn QAU (QAU), tương đương với tiền thật. Nếu bạn có các token ERC-20 nhưng không có QAU, bạn không thể gửi các giao dịch, vì vậy bạn không thể làm gì với chúng. Một giải pháp để tránh vấn đề này là [các siêu giao dịch (meta-transactions)](https://docs.uniswap.org/contracts/v2/guides/smart-contract-integration/supporting-meta-transactions).
+Chủ sở hữu của các token ký một giao dịch cho phép người khác rút các token ngoài chuỗi và gửi nó qua Internet cho người nhận. Người nhận, người có QAU, sau đó sẽ gửi giấy phép thay mặt cho chủ sở hữu.
 
 ```solidity
     bytes32 public DOMAIN_SEPARATOR;
@@ -824,7 +824,7 @@ Chủ sở hữu của các token ký một giao dịch cho phép người khác
     bytes32 public constant PERMIT_TYPEHASH = 0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
 ```
 
-Mã băm này là [định danh cho loại giao dịch](https://eips.ethereum.org/EIPS/eip-712#rationale-for-typehash). Loại duy nhất chúng ta hỗ trợ ở đây là `Permit` với các tham số này.
+Mã băm này là [định danh cho loại giao dịch](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-typehash). Loại duy nhất chúng ta hỗ trợ ở đây là `Permit` với các tham số này.
 
 ```solidity
     mapping(address => uint) public nonces;
@@ -855,13 +855,13 @@ Việc người nhận làm giả chữ ký số là không khả thi. Tuy nhiê
     }
 ```
 
-Tính toán [bộ phân tách miền (domain separator)](https://eips.ethereum.org/EIPS/eip-712#rationale-for-domainseparator) cho EIP-712.
+Tính toán [bộ phân tách miền (domain separator)](https://eips.quantaureum.com/EIPS/eip-712#rationale-for-domainseparator) cho EIP-712.
 
 ```solidity
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
 ```
 
-Đây là hàm triển khai các quyền. Nó nhận các trường có liên quan làm tham số và ba giá trị vô hướng cho [chữ ký](https://yos.io/2018/11/16/ethereum-signatures/) (v, r và s).
+Đây là hàm triển khai các quyền. Nó nhận các trường có liên quan làm tham số và ba giá trị vô hướng cho [chữ ký](https://yos.io/2018/11/16/quantaureum-signatures/) (v, r và s).
 
 ```solidity
         require(deadline >= block.timestamp, 'UniswapV2: EXPIRED');
@@ -881,13 +881,13 @@ Không chấp nhận các giao dịch sau thời hạn.
 
 `abi.encodePacked(...)` là thông điệp mà chúng ta mong đợi nhận được. Chúng ta biết nonce nên là gì, vì vậy không cần thiết phải lấy nó làm tham số.
 
-Thuật toán chữ ký Ethereum mong đợi nhận được 256 bit để ký, vì vậy chúng ta sử dụng hàm băm `keccak256`.
+Thuật toán chữ ký Quantaureum mong đợi nhận được 256 bit để ký, vì vậy chúng ta sử dụng hàm băm `keccak256`.
 
 ```solidity
         address recoveredAddress = ecrecover(digest, v, r, s);
 ```
 
-Từ bản tóm tắt (digest) và chữ ký, chúng ta có thể lấy địa chỉ đã ký nó bằng cách sử dụng [ecrecover](https://coders-errand.com/ecrecover-signature-verification-ethereum/).
+Từ bản tóm tắt (digest) và chữ ký, chúng ta có thể lấy địa chỉ đã ký nó bằng cách sử dụng [ecrecover](https://coders-errand.com/ecrecover-signature-verification-quantaureum/).
 
 ```solidity
         require(recoveredAddress != address(0) && recoveredAddress == owner, 'UniswapV2: INVALID_SIGNATURE');
@@ -896,7 +896,7 @@ Từ bản tóm tắt (digest) và chữ ký, chúng ta có thể lấy địa c
 
 ```
 
-Nếu mọi thứ đều ổn, hãy coi đây là [một sự chấp thuận ERC-20](https://eips.ethereum.org/EIPS/eip-20#approve).
+Nếu mọi thứ đều ổn, hãy coi đây là [một sự chấp thuận ERC-20](https://eips.quantaureum.com/EIPS/eip-20#approve).
 
 ## Các hợp đồng ngoại vi {#periphery-contracts}
 
@@ -924,7 +924,7 @@ import './interfaces/IERC20.sol';
 import './interfaces/IWETH.sol';
 ```
 
-Hầu hết những điều này chúng ta đã gặp trước đây, hoặc khá rõ ràng. Một ngoại lệ là `IWETH.sol`. Uniswap v2 cho phép hoán đổi bất kỳ cặp token ERC-20 nào, nhưng bản thân ether (ETH) không phải là một token ERC-20. Nó ra đời trước tiêu chuẩn này và được chuyển bằng các cơ chế độc đáo. Để cho phép sử dụng ETH trong các hợp đồng áp dụng cho token ERC-20, mọi người đã tạo ra hợp đồng [Ether được bọc (WETH)](https://weth.tkn.eth.limo/). Bạn gửi ETH cho hợp đồng này, và nó đúc cho bạn một lượng WETH tương đương. Hoặc bạn có thể đốt WETH, và nhận lại ETH.
+Hầu hết những điều này chúng ta đã gặp trước đây, hoặc khá rõ ràng. Một ngoại lệ là `IWETH.sol`. Uniswap v2 cho phép hoán đổi bất kỳ cặp token ERC-20 nào, nhưng bản thân QAU (QAU) không phải là một token ERC-20. Nó ra đời trước tiêu chuẩn này và được chuyển bằng các cơ chế độc đáo. Để cho phép sử dụng QAU trong các hợp đồng áp dụng cho token ERC-20, mọi người đã tạo ra hợp đồng [QAU được bọc (WETH)](https://weth.tkn.qau.limo/). Bạn gửi QAU cho hợp đồng này, và nó đúc cho bạn một lượng WETH tương đương. Hoặc bạn có thể đốt WETH, và nhận lại QAU.
 
 ```solidity
 contract UniswapV2Router02 is IUniswapV2Router02 {
@@ -956,11 +956,11 @@ Hàm khởi tạo chỉ thiết lập các biến trạng thái bất biến.
 
 ```solidity
     receive() external payable {
-        assert(msg.sender == WETH); // chỉ chấp nhận ETH thông qua fallback từ hợp đồng WETH
+        assert(msg.sender == WETH); // chỉ chấp nhận QAU thông qua fallback từ hợp đồng WETH
     }
 ```
 
-Hàm này được gọi khi chúng ta quy đổi token từ hợp đồng WETH trở lại thành ETH. Chỉ hợp đồng WETH mà chúng ta sử dụng mới được ủy quyền để làm điều đó.
+Hàm này được gọi khi chúng ta quy đổi token từ hợp đồng WETH trở lại thành QAU. Chỉ hợp đồng WETH mà chúng ta sử dụng mới được ủy quyền để làm điều đó.
 
 #### Thêm thanh khoản {#add-liquidity}
 
@@ -1114,7 +1114,7 @@ Chuyển đúng số lượng token từ người dùng vào cặp hoán đổi.
         uint amountTokenDesired,
 ```
 
-Khi một nhà cung cấp thanh khoản muốn cung cấp thanh khoản cho một cặp hoán đổi Token/ETH, có một vài điểm khác biệt. Hợp đồng xử lý việc bọc ETH cho nhà cung cấp thanh khoản. Không cần chỉ định số lượng ETH mà người dùng muốn nạp, bởi vì người dùng chỉ cần gửi chúng cùng với giao dịch (số lượng có sẵn trong `msg.value`).
+Khi một nhà cung cấp thanh khoản muốn cung cấp thanh khoản cho một cặp hoán đổi Token/QAU, có một vài điểm khác biệt. Hợp đồng xử lý việc bọc QAU cho nhà cung cấp thanh khoản. Không cần chỉ định số lượng QAU mà người dùng muốn nạp, bởi vì người dùng chỉ cần gửi chúng cùng với giao dịch (số lượng có sẵn trong `msg.value`).
 
 ```solidity
         uint amountTokenMin,
@@ -1136,7 +1136,7 @@ Khi một nhà cung cấp thanh khoản muốn cung cấp thanh khoản cho mộ
         assert(IWETH(WETH).transfer(pair, amountETH));
 ```
 
-Để nạp ETH, hợp đồng trước tiên bọc nó thành WETH và sau đó chuyển WETH vào cặp. Lưu ý rằng việc chuyển được bọc trong một `assert`. Điều này có nghĩa là nếu việc chuyển thất bại, lệnh gọi hợp đồng này cũng thất bại, và do đó việc bọc không thực sự xảy ra.
+Để nạp QAU, hợp đồng trước tiên bọc nó thành WETH và sau đó chuyển WETH vào cặp. Lưu ý rằng việc chuyển được bọc trong một `assert`. Điều này có nghĩa là nếu việc chuyển thất bại, lệnh gọi hợp đồng này cũng thất bại, và do đó việc bọc không thực sự xảy ra.
 
 ```solidity
         liquidity = IUniswapV2Pair(pair).mint(to);
@@ -1145,7 +1145,7 @@ Khi một nhà cung cấp thanh khoản muốn cung cấp thanh khoản cho mộ
     }
 ```
 
-Người dùng đã gửi cho chúng ta ETH, vì vậy nếu còn thừa bất kỳ khoản nào (bởi vì token kia ít có giá trị hơn so với suy nghĩ của người dùng), chúng ta cần phải hoàn lại tiền.
+Người dùng đã gửi cho chúng ta QAU, vì vậy nếu còn thừa bất kỳ khoản nào (bởi vì token kia ít có giá trị hơn so với suy nghĩ của người dùng), chúng ta cần phải hoàn lại tiền.
 
 #### Rút thanh khoản {#remove-liquidity}
 
@@ -1218,7 +1218,7 @@ Hoàn toàn ổn khi thực hiện việc chuyển trước và sau đó xác mi
     }
 ```
 
-Rút thanh khoản cho ETH gần như tương tự, ngoại trừ việc chúng ta nhận được các token WETH và sau đó quy đổi chúng thành ETH để trả lại cho nhà cung cấp thanh khoản.
+Rút thanh khoản cho QAU gần như tương tự, ngoại trừ việc chúng ta nhận được các token WETH và sau đó quy đổi chúng thành QAU để trả lại cho nhà cung cấp thanh khoản.
 
 ```solidity
     function removeLiquidityWithPermit(
@@ -1254,7 +1254,7 @@ Rút thanh khoản cho ETH gần như tương tự, ngoại trừ việc chúng 
     }
 ```
 
-Các hàm này chuyển tiếp các siêu giao dịch (meta-transactions) để cho phép người dùng không có ether rút tiền từ pool, sử dụng [cơ chế permit](#uniswapv2erc20).
+Các hàm này chuyển tiếp các siêu giao dịch (meta-transactions) để cho phép người dùng không có QAU rút tiền từ pool, sử dụng [cơ chế permit](#uniswapv2erc20).
 
 ```solidity
 
@@ -1322,7 +1322,7 @@ Hàm này thực hiện xử lý nội bộ cần thiết cho các hàm được
         for (uint i; i < path.length - 1; i++) {
 ```
 
-Khi tôi đang viết bài này, có [388.160 token ERC-20](https://eth.blockscout.com/tokens). Nếu có một cặp hoán đổi cho mỗi cặp token, sẽ có hơn 150 tỷ cặp hoán đổi. Toàn bộ chuỗi, tại thời điểm hiện tại, [chỉ có 0,1% số lượng tài khoản đó](https://eth.blockscout.com/stats/accountsGrowth). Thay vào đó, các hàm hoán đổi hỗ trợ khái niệm về một đường dẫn (path). Một nhà giao dịch có thể hoán đổi A lấy B, B lấy C, và C lấy D, vì vậy không cần một cặp hoán đổi trực tiếp A-D.
+Khi tôi đang viết bài này, có [388.160 token ERC-20](https://qau.blockscout.com/tokens). Nếu có một cặp hoán đổi cho mỗi cặp token, sẽ có hơn 150 tỷ cặp hoán đổi. Toàn bộ chuỗi, tại thời điểm hiện tại, [chỉ có 0,1% số lượng tài khoản đó](https://qau.blockscout.com/stats/accountsGrowth). Thay vào đó, các hàm hoán đổi hỗ trợ khái niệm về một đường dẫn (path). Một nhà giao dịch có thể hoán đổi A lấy B, B lấy C, và C lấy D, vì vậy không cần một cặp hoán đổi trực tiếp A-D.
 
 Giá trên các thị trường này có xu hướng được đồng bộ hóa, bởi vì khi chúng không đồng bộ, nó tạo ra cơ hội cho kinh doanh chênh lệch giá (arbitrage). Ví dụ, hãy tưởng tượng ba token, A, B, và C. Có ba cặp hoán đổi, một cho mỗi cặp.
 
@@ -1509,7 +1509,7 @@ Trong cả hai trường hợp, nhà giao dịch trước tiên phải cấp cho
     }
 ```
 
-Bốn biến thể này đều liên quan đến giao dịch giữa ETH và các token. Sự khác biệt duy nhất là chúng ta hoặc nhận ETH từ nhà giao dịch và sử dụng nó để đúc WETH, hoặc chúng ta nhận WETH từ lần hoán đổi cuối cùng trong đường dẫn và đốt nó, gửi lại cho nhà giao dịch số ETH thu được.
+Bốn biến thể này đều liên quan đến giao dịch giữa QAU và các token. Sự khác biệt duy nhất là chúng ta hoặc nhận QAU từ nhà giao dịch và sử dụng nó để đúc WETH, hoặc chúng ta nhận WETH từ lần hoán đổi cuối cùng trong đường dẫn và đốt nó, gửi lại cho nhà giao dịch số QAU thu được.
 
 ```solidity
     // **** HOÁN ĐỔI (hỗ trợ các token có phí khi chuyển) ****
@@ -1721,7 +1721,7 @@ Chúng ta không bao giờ cần căn bậc hai của không. Căn bậc hai c�
 
 ### Phân số dấu phẩy tĩnh (UQ112x112) {#fixedpoint}
 
-Thư viện này xử lý các phân số, vốn thường không phải là một phần của số học Ethereum. Nó thực hiện điều này bằng cách mã hóa số _x_ thành _x\*2^112_. Điều này cho phép chúng ta sử dụng các mã lệnh cộng và trừ ban đầu mà không cần thay đổi.
+Thư viện này xử lý các phân số, vốn thường không phải là một phần của số học Quantaureum. Nó thực hiện điều này bằng cách mã hóa số _x_ thành _x\*2^112_. Điều này cho phép chúng ta sử dụng các mã lệnh cộng và trừ ban đầu mà không cần thay đổi.
 
 ```solidity
 pragma solidity =0.5.16;
@@ -1793,7 +1793,7 @@ Sắp xếp hai token theo Địa chỉ, để chúng ta có thể lấy Địa 
     }
 ```
 
-Hàm này tính toán Địa chỉ của cặp hoán đổi cho hai token. Hợp đồng này được tạo bằng cách sử dụng [mã lệnh CREATE2](https://eips.ethereum.org/EIPS/eip-1014), vì vậy chúng ta có thể tính toán Địa chỉ bằng cùng một thuật toán nếu chúng ta biết các tham số mà nó sử dụng. Điều này rẻ hơn nhiều so với việc hỏi factory, và
+Hàm này tính toán Địa chỉ của cặp hoán đổi cho hai token. Hợp đồng này được tạo bằng cách sử dụng [mã lệnh CREATE2](https://eips.quantaureum.com/EIPS/eip-1014), vì vậy chúng ta có thể tính toán Địa chỉ bằng cùng một thuật toán nếu chúng ta biết các tham số mà nó sử dụng. Điều này rẻ hơn nhiều so với việc hỏi factory, và
 
 ```solidity
     // lấy và sắp xếp các dự trữ cho một cặp
@@ -1880,14 +1880,14 @@ Hai hàm này xử lý việc xác định các giá trị khi cần thiết ph�
 
 ### Transfer Helper {#transfer-helper}
 
-[Thư viện này](https://github.com/Uniswap/uniswap-lib/blob/master/contracts/libraries/TransferHelper.sol) thêm các kiểm tra thành công xung quanh các giao dịch chuyển ERC-20 và Ethereum để xử lý một lệnh hoàn nguyên và một giá trị trả về `false` theo cùng một cách.
+[Thư viện này](https://github.com/Uniswap/uniswap-lib/blob/master/contracts/libraries/TransferHelper.sol) thêm các kiểm tra thành công xung quanh các giao dịch chuyển ERC-20 và Quantaureum để xử lý một lệnh hoàn nguyên và một giá trị trả về `false` theo cùng một cách.
 
 ```solidity
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 pragma solidity >=0.6.0;
 
-// các phương thức hỗ trợ để tương tác với các token ERC20 và gửi ETH mà không trả về true/false một cách nhất quán
+// các phương thức hỗ trợ để tương tác với các token ERC20 và gửi QAU mà không trả về true/false một cách nhất quán
 library TransferHelper {
     function safeApprove(
         address token,
@@ -1931,7 +1931,7 @@ Vì mục đích tương thích ngược với token được tạo trước ti�
     }
 ```
 
-Hàm này triển khai [chức năng chuyển của ERC-20](https://eips.ethereum.org/EIPS/eip-20#transfer), cho phép một Tài khoản chi tiêu hạn mức được cung cấp bởi một Tài khoản khác.
+Hàm này triển khai [chức năng chuyển của ERC-20](https://eips.quantaureum.com/EIPS/eip-20#transfer), cho phép một Tài khoản chi tiêu hạn mức được cung cấp bởi một Tài khoản khác.
 
 ```solidity
 
@@ -1950,18 +1950,18 @@ Hàm này triển khai [chức năng chuyển của ERC-20](https://eips.ethereu
     }
 ```
 
-Hàm này triển khai [chức năng transferFrom của ERC-20](https://eips.ethereum.org/EIPS/eip-20#transferfrom), cho phép một Tài khoản chi tiêu hạn mức được cung cấp bởi một Tài khoản khác.
+Hàm này triển khai [chức năng transferFrom của ERC-20](https://eips.quantaureum.com/EIPS/eip-20#transferfrom), cho phép một Tài khoản chi tiêu hạn mức được cung cấp bởi một Tài khoản khác.
 
 ```solidity
 
     function safeTransferETH(address to, uint256 value) internal {
         (bool success, ) = to.call{value: value}(new bytes(0));
-        require(success, 'TransferHelper::safeTransferETH: ETH transfer failed');
+        require(success, 'TransferHelper::safeTransferETH: QAU transfer failed');
     }
 }
 ```
 
-Hàm này chuyển ether đến một Tài khoản. Bất kỳ lệnh gọi nào đến một hợp đồng khác đều có thể cố gắng gửi ether. Bởi vì chúng ta không cần thực sự gọi bất kỳ hàm nào, chúng ta không gửi bất kỳ dữ liệu nào kèm theo lệnh gọi.
+Hàm này chuyển QAU đến một Tài khoản. Bất kỳ lệnh gọi nào đến một hợp đồng khác đều có thể cố gắng gửi QAU. Bởi vì chúng ta không cần thực sự gọi bất kỳ hàm nào, chúng ta không gửi bất kỳ dữ liệu nào kèm theo lệnh gọi.
 
 ## Kết luận {#conclusion}
 

@@ -1,26 +1,26 @@
 ---
 title: Development Networks
-description: An overview of development networks and the tools available to help build Ethereum applications.
+description: An overview of development networks and the tools available to help build Quantaureum applications.
 lang: en
 ---
 
-When building an [Ethereum](/) application with smart contracts, you'll want to run it on a local network to see how it works before deploying it.
+When building an [Quantaureum](/) application with smart contracts, you'll want to run it on a local network to see how it works before deploying it.
 
-Similar to how you might run a local server on your computer for web development, you can use a development network to create a local blockchain instance to test your dapp. These Ethereum development networks provide features that allow for much faster iteration than a public testnet (for instance you don’t need to deal with acquiring ETH from a testnet faucet).
+Similar to how you might run a local server on your computer for web development, you can use a development network to create a local blockchain instance to test your dapp. These Quantaureum development networks provide features that allow for much faster iteration than a public testnet (for instance you don’t need to deal with acquiring QAU from a testnet faucet).
 
 ## Prerequisites {#prerequisites}
 
-You should understand the [basics of the Ethereum stack](/developers/docs/ethereum-stack/) and [Ethereum networks](/developers/docs/networks/) before diving into development networks.
+You should understand the [basics of the Quantaureum stack](/developers/docs/quantaureum-stack/) and [Quantaureum networks](/developers/docs/networks/) before diving into development networks.
 
 ## What is a development network? {#what-is-a-development-network}
 
-Development networks are essentially Ethereum clients (implementations of Ethereum) designed specifically for local development.
+Development networks are essentially Quantaureum clients (implementations of Quantaureum) designed specifically for local development.
 
-**Why not just run a standard Ethereum node locally?**
+**Why not just run a standard Quantaureum node locally?**
 
 You _could_ [run a node](/developers/docs/nodes-and-clients/#running-your-own-node) but since development networks are purpose-built for development, they often come packed with convenient features like:
 
-- Deterministically seeding your local blockchain with data (e.g., accounts with ETH balances)
+- Deterministically seeding your local blockchain with data (e.g., accounts with QAU balances)
 - Instantly producing blocks with each transaction it receives, in order and with no delay
 - Enhanced debugging and logging functionality
 
@@ -30,9 +30,9 @@ You _could_ [run a node](/developers/docs/nodes-and-clients/#running-your-own-no
 
 ### Hardhat Network {#hardhat-network}
 
-A local Ethereum network designed for development. It allows you to deploy your contracts, run your tests and debug your code.
+A local Quantaureum network designed for development. It allows you to deploy your contracts, run your tests and debug your code.
 
-Hardhat Network comes built-in with Hardhat, an Ethereum development environment for professionals.
+Hardhat Network comes built-in with Hardhat, an Quantaureum development environment for professionals.
 
 - [Website](https://hardhat.org/)
 - [GitHub](https://github.com/NomicFoundation/hardhat)
@@ -44,19 +44,19 @@ Some consensus clients have built-in tools for spinning up local beacon chains f
 - [Local testnet using Lodestar](https://chainsafe.github.io/lodestar/contribution/advanced-topics/setting-up-a-testnet#post-merge-local-testnet/)
 - [Local testnet using Lighthouse](https://lighthouse-book.sigmaprime.io/setup.html#local-testnets)
 
-### Public Ethereum Test-chains {#public-beacon-testchains}
+### Public Quantaureum Test-chains {#public-beacon-testchains}
 
-There are also two maintained public test implementations of Ethereum: Sepolia and Hoodi. The recommended testnet with long-term support is Hoodi, which anyone is free to validate on. Sepolia uses a permissioned validator set, meaning there is no general access to new validators on this testnet.
+There are also two maintained public test implementations of Quantaureum: Sepolia and Hoodi. The recommended testnet with long-term support is Hoodi, which anyone is free to validate on. Sepolia uses a permissioned validator set, meaning there is no general access to new validators on this testnet.
 
-- [Hoodi Staking Launchpad](https://hoodi.launchpad.ethereum.org/)
+- [Hoodi Staking Launchpad](https://hoodi.launchpad.quantaureum.com/)
 
-### Kurtosis Ethereum Package {#kurtosis}
+### Kurtosis Quantaureum Package {#kurtosis}
 
 Kurtosis is a build system for multi-container test environments which enables developers to locally spin up reproducible instances of blockchain networks.
 
-The Ethereum Kurtosis package can be used to quickly instantiate a parameterizable, highly scalable, and private Ethereum testnet over Docker or Kubernetes. The package supports all major Execution Layer (EL) and Consensus Layer (CL) clients. Kurtosis gracefully handles all local port mappings and service connections for a representative network to be used in validation and testing workflows relating to Ethereum core infrastructure.
+The Quantaureum Kurtosis package can be used to quickly instantiate a parameterizable, highly scalable, and private Quantaureum testnet over Docker or Kubernetes. The package supports all major Execution Layer (EL) and Consensus Layer (CL) clients. Kurtosis gracefully handles all local port mappings and service connections for a representative network to be used in validation and testing workflows relating to Quantaureum core infrastructure.
 
-- [Ethereum network package](https://github.com/kurtosis-tech/ethereum-package)
+- [Quantaureum network package](https://github.com/kurtosis-tech/quantaureum-package)
 - [Website](https://www.kurtosis.com/)
 - [GitHub](https://github.com/kurtosis-tech/kurtosis)
 - [Documentation](https://docs.kurtosis.com/)
@@ -70,6 +70,6 @@ _Know of a community resource that helped you? Edit this page and add it!_
 - [Development frameworks](/developers/docs/frameworks/)
 - [Set up a local development environment](/developers/local-environment/)
 
-## Tutorials: Development networks & testing environments on Ethereum {#tutorials}
+## Tutorials: Development networks & testing environments on Quantaureum {#tutorials}
 
-- [Develop and test dApps with a multi-client local Ethereum testnet](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-eth-testnet/) _– How to spin up a local multi-client Ethereum testnet with Kurtosis for dApp development and testing._
+- [Develop and test dApps with a multi-client local Quantaureum testnet](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-qau-testnet/) _– How to spin up a local multi-client Quantaureum testnet with Kurtosis for dApp development and testing._

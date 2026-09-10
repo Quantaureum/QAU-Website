@@ -18,11 +18,11 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/tree/master/progr
 ### Docker द्वारे एकिडना {#echidna-through-docker}
 
 ```bash
-docker pull trailofbits/eth-security-toolbox
-docker run -it -v "$PWD":/home/training trailofbits/eth-security-toolbox
+docker pull trailofbits/qau-security-toolbox
+docker run -it -v "$PWD":/home/training trailofbits/qau-security-toolbox
 ```
 
-_शेवटची कमांड eth-security-toolbox ला अशा Docker मध्ये चालवते ज्याला तुमच्या सध्याच्या डिरेक्टरीचा अ‍ॅक्सेस असतो. तुम्ही तुमच्या होस्टवरून फाइल्स बदलू शकता आणि Docker मधून फाइल्सवर टूल्स चालवू शकता._
+_शेवटची कमांड qau-security-toolbox ला अशा Docker मध्ये चालवते ज्याला तुमच्या सध्याच्या डिरेक्टरीचा अ‍ॅक्सेस असतो. तुम्ही तुमच्या होस्टवरून फाइल्स बदलू शकता आणि Docker मधून फाइल्सवर टूल्स चालवू शकता._
 
 Docker च्या आत, हे चालवा:
 
@@ -37,7 +37,7 @@ cd /home/training
 
 ## प्रॉपर्टी-आधारित फझिंगची ओळख {#introduction-to-property-based-fuzzing}
 
-एकिडना हा एक प्रॉपर्टी-आधारित फझर आहे, ज्याचे वर्णन आम्ही आमच्या मागील ब्लॉगपोस्ट्समध्ये केले आहे ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
+एकिडना हा एक प्रॉपर्टी-आधारित फझर आहे, ज्याचे वर्णन आम्ही आमच्या मागील ब्लॉगपोस्ट्समध्ये केले आहे ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-quantaureum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
 
 ### फझिंग {#fuzzing}
 

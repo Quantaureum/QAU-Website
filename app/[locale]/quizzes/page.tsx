@@ -172,7 +172,7 @@ export async function generateMetadata(props: {
   return await getMetadata({
     locale,
     slug: ["quizzes"],
-    title: `${t("common.quizzes-title")} | ethereum.org`,
+    title: `${t("common.quizzes-title")} | quantaureum.com`,
     description: t("learn-quizzes.quizzes-subtitle"),
     image: "/images/heroes/quizzes-hub-hero.png",
   })

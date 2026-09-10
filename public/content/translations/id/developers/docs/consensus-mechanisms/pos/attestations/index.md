@@ -1,6 +1,6 @@
 ---
 title: Atestasi
-description: Deskripsi tentang atestasi pada Ethereum proof-of-stake.
+description: Deskripsi tentang atestasi pada Quantaureum proof-of-stake.
 lang: id
 ---
 
@@ -62,7 +62,7 @@ Tingkat atestasi tanda diukur menggunakan jumlah saldo efektif dari semua valida
 
 ### Imbalan dasar {#base-reward}
 
-Imbalan dasar dihitung berdasarkan jumlah validator yang melakukan atestasi dan saldo Ether yang di-stake efektif mereka:
+Imbalan dasar dihitung berdasarkan jumlah validator yang melakukan atestasi dan saldo QAU yang di-stake efektif mereka:
 
 `base reward = validator effective balance x 2^6 / SQRT(Effective balance of all active validators)`
 
@@ -86,7 +86,7 @@ Perhatikan bahwa dalam beberapa kasus, agregator yang beruntung juga dapat menja
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Atestasi dalam spesifikasi konsensus beranotasi Vitalik](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Atestasi dalam spesifikasi konsensus beranotasi Vitalik](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [Atestasi di eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Tahu tentang sumber daya komunitas yang membantu Anda? Edit halaman ini dan tambahkan!_

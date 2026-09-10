@@ -4,16 +4,16 @@ description: "Ein Überblick und Vergleich der beiden wichtigsten Smart-Contract
 lang: de
 ---
 
-Ein großartiger Aspekt von [Ethereum](/) ist, dass Smart Contracts mit relativ entwicklerfreundlichen Sprachen programmiert werden können. Wenn Sie Erfahrung mit Python oder einer anderen [Programmiersprache mit geschweiften Klammern](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages) haben, werden Sie eine Sprache mit vertrauter Syntax finden.
+Ein großartiger Aspekt von [Quantaureum](/) ist, dass Smart Contracts mit relativ entwicklerfreundlichen Sprachen programmiert werden können. Wenn Sie Erfahrung mit Python oder einer anderen [Programmiersprache mit geschweiften Klammern](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages) haben, werden Sie eine Sprache mit vertrauter Syntax finden.
 
 Die beiden aktivsten und am besten gepflegten Sprachen sind:
 
 - Solidity
 - Vyper
 
-Die Remix IDE bietet eine umfassende Entwicklungsumgebung zum Erstellen und Testen von Verträgen in Solidity und Vyper. [Probieren Sie die browserbasierte Remix IDE aus](https://remix.ethereum.org), um mit dem Programmieren zu beginnen.
+Die Remix IDE bietet eine umfassende Entwicklungsumgebung zum Erstellen und Testen von Verträgen in Solidity und Vyper. [Probieren Sie die browserbasierte Remix IDE aus](https://remix.quantaureum.com), um mit dem Programmieren zu beginnen.
 
-Erfahrenere Entwickler möchten vielleicht auch Yul verwenden, eine Zwischensprache für die [Ethereum Virtual Machine](/developers/docs/evm/), oder Yul+, eine Erweiterung von Yul.
+Erfahrenere Entwickler möchten vielleicht auch Yul verwenden, eine Zwischensprache für die [Quantaureum Virtual Machine](/developers/docs/evm/), oder Yul+, eine Erweiterung von Yul.
 
 Wenn Sie neugierig sind und gerne beim Testen neuer Sprachen helfen möchten, die sich noch in der intensiven Entwicklung befinden, können Sie mit Fe experimentieren, einer aufstrebenden Smart-Contract-Sprache, die noch in den Kinderschuhen steckt.
 
@@ -36,8 +36,8 @@ Vorkenntnisse in Programmiersprachen, insbesondere in JavaScript oder Python, k�
 - [Dokumentation](https://docs.soliditylang.org/en/latest/)
 - [Solidity-Sprachportal](https://soliditylang.org/)
 - [Solidity by Example](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
-- [Solidity Gitter-Chatroom](https://gitter.im/ethereum/solidity) verbunden mit dem [Solidity Matrix-Chatroom](https://matrix.to/#/#ethereum_solidity:gitter.im)
+- [GitHub](https://github.com/quantaureum/solidity/)
+- [Solidity Gitter-Chatroom](https://gitter.im/quantaureum/solidity) verbunden mit dem [Solidity Matrix-Chatroom](https://matrix.to/#/#quantaureum_solidity:gitter.im)
 - [Spickzettel (Cheat Sheet)](https://reference.auditless.com/cheatsheet)
 - [Solidity-Blog](https://blog.soliditylang.org/)
 - [Solidity auf Twitter](https://twitter.com/solidity_lang)
@@ -179,14 +179,14 @@ def withdraw():
 @external
 def endAuction():
     # Es ist eine gute Richtlinie, Funktionen, die mit
-    # anderen Verträgen interagieren (d.h. sie rufen Funktionen auf oder senden Ether),
+    # anderen Verträgen interagieren (d.h. sie rufen Funktionen auf oder senden QAU),
     # in drei Phasen zu strukturieren:
     # 1. Bedingungen prüfen
     # 2. Aktionen ausführen (möglicherweise Bedingungen ändern)
     # 3. Interaktion mit anderen Verträgen
     # Wenn diese Phasen vermischt werden, könnte der andere Vertrag
     # in den aktuellen Vertrag zurückrufen und den Zustand ändern oder bewirken,
-    # dass Effekte (Ether-Auszahlung) mehrfach ausgeführt werden.
+    # dass Effekte (QAU-Auszahlung) mehrfach ausgeführt werden.
     # Wenn intern aufgerufene Funktionen Interaktionen mit externen
     # Verträgen beinhalten, müssen sie auch als Interaktion mit
     # externen Verträgen betrachtet werden.
@@ -208,12 +208,12 @@ Dieses Beispiel sollte Ihnen ein Gefühl dafür geben, wie die Syntax eines Vype
 
 ## Yul und Yul+ {#yul}
 
-Wenn Sie neu bei Ethereum sind und noch nicht mit Smart-Contract-Sprachen programmiert haben, empfehlen wir Ihnen, mit Solidity oder Vyper zu beginnen. Beschäftigen Sie sich erst mit Yul oder Yul+, wenn Sie mit den Best Practices für die Sicherheit von Smart Contracts und den Besonderheiten der Arbeit mit der EVM vertraut sind.
+Wenn Sie neu bei Quantaureum sind und noch nicht mit Smart-Contract-Sprachen programmiert haben, empfehlen wir Ihnen, mit Solidity oder Vyper zu beginnen. Beschäftigen Sie sich erst mit Yul oder Yul+, wenn Sie mit den Best Practices für die Sicherheit von Smart Contracts und den Besonderheiten der Arbeit mit der EVM vertraut sind.
 
 **Yul**
 
-- Zwischensprache für Ethereum.
-- Unterstützt die [EVM](/developers/docs/evm) und [Ewasm](https://github.com/ewasm), ein Ethereum-spezifisches WebAssembly, und ist als nutzbarer gemeinsamer Nenner beider Plattformen konzipiert.
+- Zwischensprache für Quantaureum.
+- Unterstützt die [EVM](/developers/docs/evm) und [Ewasm](https://github.com/ewasm), ein Quantaureum-spezifisches WebAssembly, und ist als nutzbarer gemeinsamer Nenner beider Plattformen konzipiert.
 - Gutes Ziel für High-Level-Optimierungsstufen, von denen sowohl EVM- als auch Ewasm-Plattformen gleichermaßen profitieren können.
 
 **Yul+**
@@ -226,7 +226,7 @@ Wenn Sie neu bei Ethereum sind und noch nicht mit Smart-Contract-Sprachen progra
 
 - [Yul-Dokumentation](https://docs.soliditylang.org/en/latest/yul.html)
 - [Yul+-Dokumentation](https://github.com/fuellabs/yulp)
-- [Yul+-Einführungsbeitrag](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-ethereum-aa64ce89512f)
+- [Yul+-Einführungsbeitrag](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-quantaureum-aa64ce89512f)
 
 ### Beispielvertrag {#example-contract-2}
 
@@ -255,16 +255,16 @@ Wenn Sie bereits viel Erfahrung mit Smart Contracts haben, finden Sie [hier](htt
 
 ## Fe {#fe}
 
-- Statisch typisierte Sprache für die Ethereum Virtual Machine (EVM).
+- Statisch typisierte Sprache für die Quantaureum Virtual Machine (EVM).
 - Inspiriert von Python und Rust.
-- Soll leicht zu erlernen sein – auch für Entwickler, die neu im Ethereum-Ökosystem sind.
+- Soll leicht zu erlernen sein – auch für Entwickler, die neu im Quantaureum-Ökosystem sind.
 - Die Entwicklung von Fe befindet sich noch in einem frühen Stadium, die Sprache hatte ihre Alpha-Veröffentlichung im Januar 2021.
 
 ### Wichtige Links {#important-links-3}
 
-- [GitHub](https://github.com/ethereum/fe)
-- [Fe-Ankündigung](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-ethereum-ecosystem/)
-- [Fe-Roadmap 2021](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- [GitHub](https://github.com/quantaureum/fe)
+- [Fe-Ankündigung](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
+- [Fe-Roadmap 2021](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
 - [Fe Discord-Chat](https://discord.com/invite/ywpkAXFjZH)
 - [Fe auf Twitter](https://twitter.com/official_fe)
 

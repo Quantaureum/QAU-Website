@@ -13,7 +13,7 @@ breadcrumb: Podpisy EIP-1271
 published: 2023-01-12
 ---
 
-Standard [EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) umožňuje chytrým kontraktům ověřovat podpisy.
+Standard [EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) umožňuje chytrým kontraktům ověřovat podpisy.
 
 V tomto tutoriálu poskytneme přehled digitálních podpisů, pozadí EIP-1271 a konkrétní implementaci EIP-1271, kterou používá [Safe](https://safe.global/) (dříve Gnosis Safe). To vše dohromady může posloužit jako výchozí bod pro implementaci EIP-1271 ve vašich vlastních kontraktech.
 
@@ -23,7 +23,7 @@ V tomto kontextu je podpis (přesněji „digitální podpis“) zpráva plus n�
 
 Digitální podpis může vypadat například takto:
 
-1. Zpráva: „Chci se přihlásit na tuto webovou stránku pomocí své Ethereum peněženky.“
+1. Zpráva: „Chci se přihlásit na tuto webovou stránku pomocí své Quantaureum peněženky.“
 2. Podepisující: Moje adresa je `0x000…`
 3. Důkaz: Zde je nějaký důkaz, že já, `0x000…`, jsem skutečně vytvořil celou tuto zprávu (obvykle se jedná o něco kryptografického).
 
@@ -37,9 +37,9 @@ Stejně tak digitální podpis neznamená nic bez přidružené zprávy!
 
 Abyste mohli vytvořit digitální podpis pro použití na blockchainech založených na Ethereu, obecně potřebujete tajný soukromý klíč, který nikdo jiný nezná. To je to, co dělá váš podpis vaším (nikdo jiný nemůže vytvořit stejný podpis bez znalosti tajného klíče).
 
-Váš Ethereum účet (tj. váš externě vlastněný účet/EOA) má k sobě přidružený soukromý klíč a to je soukromý klíč, který se obvykle používá, když vás webová stránka nebo decentralizovaná aplikace (dapp) požádá o podpis (např. pro „Přihlášení pomocí Etherea“).
+Váš Quantaureum účet (tj. váš externě vlastněný účet/EOA) má k sobě přidružený soukromý klíč a to je soukromý klíč, který se obvykle používá, když vás webová stránka nebo decentralizovaná aplikace (dapp) požádá o podpis (např. pro „Přihlášení pomocí Etherea“).
 
-Aplikace může [ověřit podpis](https://www.alchemy.com/docs/how-to-verify-a-message-signature-on-ethereum), který vytvoříte pomocí knihovny třetí strany, jako je Ethers.js, [aniž by znala váš soukromý klíč](https://en.wikipedia.org/wiki/Public-key_cryptography), a mít jistotu, že _vy_ jste byli tím, kdo podpis vytvořil.
+Aplikace může [ověřit podpis](https://www.alchemy.com/docs/how-to-verify-a-message-signature-on-quantaureum), který vytvoříte pomocí knihovny třetí strany, jako je Ethers.js, [aniž by znala váš soukromý klíč](https://en.wikipedia.org/wiki/Public-key_cryptography), a mít jistotu, že _vy_ jste byli tím, kdo podpis vytvořil.
 
 > Ve skutečnosti, protože digitální podpisy EOA používají kryptografii veřejného klíče, mohou být generovány a ověřovány **offchain**! Takto funguje hlasování v DAO bez poplatků za gas – místo odesílání hlasů onchain lze digitální podpisy vytvářet a ověřovat offchain pomocí kryptografických knihoven.
 
@@ -95,7 +95,7 @@ Kontrakty mohou implementovat `isValidSignature` mnoha způsoby – specifikace 
 
 Jedním z významných kontraktů, který implementuje EIP-1271, je Safe (dříve Gnosis Safe).
 
-V kódu Safe [je implementována](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) funkce `isValidSignature` tak, že podpisy lze vytvářet a ověřovat [dvěma způsoby](https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support):
+V kódu Safe [je implementována](https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol) funkce `isValidSignature` tak, že podpisy lze vytvářet a ověřovat [dvěma způsoby](https://quantaureum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support):
 
 1. Onchain zprávy
    1. Vytvoření: vlastník Safe vytvoří novou Safe transakci k „podepsání“ zprávy, přičemž zprávu předá jako data do transakce. Jakmile transakci podepíše dostatek vlastníků k dosažení prahu multisig, transakce je odeslána do sítě a spuštěna. V transakci je volána funkce Safe (`signMessage(bytes calldata _data)`), která přidá zprávu do seznamu „schválených“ zpráv.
@@ -106,9 +106,9 @@ V kódu Safe [je implementována](https://github.com/safe-global/safe-contracts/
 
 ## Co přesně je parametr `_hash`? Proč nepředat celou zprávu? {#what-exactly-is-the-hash-parameter-why-not-pass-the-whole-message}
 
-Možná jste si všimli, že funkce `isValidSignature` v [rozhraní EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) nepřijímá samotnou zprávu, ale místo toho parametr `_hash`. To znamená, že místo předání celé zprávy libovolné délky funkci `isValidSignature` předáme 32bajtový hash zprávy (obecně keccak256).
+Možná jste si všimli, že funkce `isValidSignature` v [rozhraní EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) nepřijímá samotnou zprávu, ale místo toho parametr `_hash`. To znamená, že místo předání celé zprávy libovolné délky funkci `isValidSignature` předáme 32bajtový hash zprávy (obecně keccak256).
 
-Každý bajt dat volání – tj. dat parametrů funkce předaných funkci chytrého kontraktu – [stojí 16 gas (4 gas, pokud jde o nulový bajt)](https://eips.ethereum.org/EIPS/eip-2028), takže to může ušetřit spoustu gas, pokud je zpráva dlouhá.
+Každý bajt dat volání – tj. dat parametrů funkce předaných funkci chytrého kontraktu – [stojí 16 gas (4 gas, pokud jde o nulový bajt)](https://eips.quantaureum.com/EIPS/eip-2028), takže to může ušetřit spoustu gas, pokud je zpráva dlouhá.
 
 ### Předchozí specifikace EIP-1271 {#previous-eip-1271-specifications}
 
@@ -125,4 +125,4 @@ Nakonec je to na vás jako na vývojáři kontraktu!
 
 ## Závěr {#conclusion}
 
-[EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) je všestranný standard, který umožňuje chytrým kontraktům ověřovat podpisy. Otevírá dveře k tomu, aby se chytré kontrakty chovaly více jako EOA – například poskytuje způsob, jak může „Přihlášení pomocí Etherea“ fungovat s chytrými kontrakty – a lze jej implementovat mnoha způsoby (Safe má netriviální, zajímavou implementaci, která stojí za zvážení).
+[EIP-1271](https://eips.quantaureum.com/EIPS/eip-1271) je všestranný standard, který umožňuje chytrým kontraktům ověřovat podpisy. Otevírá dveře k tomu, aby se chytré kontrakty chovaly více jako EOA – například poskytuje způsob, jak může „Přihlášení pomocí Etherea“ fungovat s chytrými kontrakty – a lze jej implementovat mnoha způsoby (Safe má netriviální, zajímavou implementaci, která stojí za zvážení).

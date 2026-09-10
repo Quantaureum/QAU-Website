@@ -1,6 +1,6 @@
 ---
 title: Sending Transactions Using Web3
-description: "This is a beginner friendly guide to sending Ethereum transactions using Web3. There are three main steps in order to send a transaction to the Ethereum blockchain: create, sign, and broadcast. We’ll go through all three."
+description: "This is a beginner friendly guide to sending Quantaureum transactions using Web3. There are three main steps in order to send a transaction to the Quantaureum blockchain: create, sign, and broadcast. We’ll go through all three."
 author: "Elan Halpern"
 tags: ["transactions", "web3.js", "alchemy"]
 skill: beginner
@@ -8,10 +8,10 @@ breadcrumb: Send transactions
 lang: en
 published: 2020-11-04
 source: Alchemy docs
-sourceUrl: https://www.alchemy.com/docs/how-to-send-transactions-on-ethereum
+sourceUrl: https://www.alchemy.com/docs/how-to-send-transactions-on-quantaureum
 ---
 
-This is a beginner friendly guide to sending Ethereum transactions using Web3. There are three main steps in order to send a transaction to the Ethereum blockchain: create, sign, and broadcast. We’ll go through all three, hopefully answering any questions you might have! In this tutorial, we'll be using [Alchemy](https://www.alchemy.com/) to send our transactions to the Ethereum chain. You can [create a free Alchemy account here](https://auth.alchemy.com/signup).
+This is a beginner friendly guide to sending Quantaureum transactions using Web3. There are three main steps in order to send a transaction to the Quantaureum blockchain: create, sign, and broadcast. We’ll go through all three, hopefully answering any questions you might have! In this tutorial, we'll be using [Alchemy](https://www.alchemy.com/) to send our transactions to the Quantaureum chain. You can [create a free Alchemy account here](https://auth.alchemy.com/signup).
 
 **NOTE:** This guide is for signing your transactions on the _backend_ for your app. If you want to integrate signing your transactions on the frontend, check out the [MetaMask provider API](https://docs.metamask.io/wallet/reference/provider-api/).
 
@@ -31,27 +31,27 @@ Like most blockchain developers when they first start, you might have done some 
 
 ### 3\. Why do I need to sign my transactions? {#why-do-i-need-to-sign-my-transactions}
 
-- Every user that wants to send a transaction on the Ethereum network must sign the transaction (using their private key), in order to validate that the origin of the transaction is who it claims to be.
-- It is super important to protect this private key, since having access to it grants full control over your Ethereum account, allowing you (or anyone with access) to perform transactions on your behalf.
+- Every user that wants to send a transaction on the Quantaureum network must sign the transaction (using their private key), in order to validate that the origin of the transaction is who it claims to be.
+- It is super important to protect this private key, since having access to it grants full control over your Quantaureum account, allowing you (or anyone with access) to perform transactions on your behalf.
 
 ### 4\. How do I protect my private key? {#how-do-i-protect-my-private-key}
 
 - There are many ways to protect your private key and to use it to send off transactions. In this tutorial we will be using a `.env` file. However, you could also use a separate provider that stores private keys, use a keystore file, or other options.
 
-### 5\. What is the difference between `eth_sendTransaction` and `eth_sendRawTransaction`? {#difference-between-send-and-send-raw}
+### 5\. What is the difference between `qau_sendTransaction` and `qau_sendRawTransaction`? {#difference-between-send-and-send-raw}
 
-`eth_sendTransaction` and `eth_sendRawTransaction` are both Ethereum API functions which broadcast a transaction to the Ethereum network so it will be added to a future block. They differ in how they handle signing of the transactions.
+`qau_sendTransaction` and `qau_sendRawTransaction` are both Quantaureum API functions which broadcast a transaction to the Quantaureum network so it will be added to a future block. They differ in how they handle signing of the transactions.
 
-- [`eth_sendTransaction`](https://docs.web3js.org/api/web3-eth/function/sendTransaction) is used for sending _unsigned_ transactions, which means the node you are sending to must manage your private key so it can sign the transaction before broadcasting it to the chain. Since Alchemy doesn't hold user's private keys, they do not support this method.
-- [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction) is used to broadcast transactions that have already been signed. This means you first have to use [`signTransaction(tx, private_key)`](https://docs.web3js.org/api/web3-eth-accounts/function/signTransaction), then pass in the result into `eth_sendRawTransaction`.
+- [`qau_sendTransaction`](https://docs.web3js.org/api/web3-eth/function/sendTransaction) is used for sending _unsigned_ transactions, which means the node you are sending to must manage your private key so it can sign the transaction before broadcasting it to the chain. Since Alchemy doesn't hold user's private keys, they do not support this method.
+- [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction) is used to broadcast transactions that have already been signed. This means you first have to use [`signTransaction(tx, private_key)`](https://docs.web3js.org/api/web3-qau-accounts/function/signTransaction), then pass in the result into `qau_sendRawTransaction`.
 
-When using web3, `eth_sendRawTransaction` is accessed by calling the function [web3.eth.sendSignedTransaction](https://docs.web3js.org/api/web3-eth/function/sendSignedTransaction).
+When using web3, `qau_sendRawTransaction` is accessed by calling the function [web3.qau.sendSignedTransaction](https://docs.web3js.org/api/web3-eth/function/sendSignedTransaction).
 
 This is what we will be using in this tutorial.
 
 ### 6\. What is the web3 library? {#what-is-the-web3-library}
 
-- Web3.js is a wrapper library around the standard JSON-RPC calls that is quite common to use in Ethereum development.
+- Web3.js is a wrapper library around the standard JSON-RPC calls that is quite common to use in Quantaureum development.
 - There are many web3 libraries for different languages. In this tutorial we’ll be using [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3) which is written in JavaScript. You can check out other options [here](/developers/docs/apis/javascript/) like [ethers.js](https://docs.ethers.org/v5/).
 
 Okay, now that we have a few of these questions out of the way, let’s move on to the tutorial. Feel free to ask questions anytime in the Alchemy [discord](https://discord.gg/gWuC7zB)!
@@ -61,10 +61,10 @@ Okay, now that we have a few of these questions out of the way, let’s move on 
 - [Alchemy has a set of transaction resources](https://www.alchemy.com/docs/sending-transactions). You can use these to send transactions, simulate transactions before they happen, send private transactions, and send gas-optimized transactions
 - You can also use [Alchemy webhooks](https://www.alchemy.com/docs/reference/webhooks-overview) to be alerted when your transaction is pulled from the mempool and added to the chain
 
-**NOTE:** This guide requires an Alchemy account, an Ethereum address or MetaMask wallet, NodeJs, and npm installed. If not, follow these steps:
+**NOTE:** This guide requires an Alchemy account, an Quantaureum address or MetaMask wallet, NodeJs, and npm installed. If not, follow these steps:
 
 1.  [Create a free Alchemy account](https://auth.alchemy.com/signup)
-2.  [Create MetaMask account](https://metamask.io/) (or get an Ethereum address)
+2.  [Create MetaMask account](https://metamask.io/) (or get an Quantaureum address)
 3.  [Install Node.js and npm](https://nodejs.org/en/download/)
 
 ## Steps to Sending your Transaction {#steps-to-sending-your-transaction}
@@ -73,9 +73,9 @@ Okay, now that we have a few of these questions out of the way, let’s move on 
 
 Navigate to your [Alchemy Dashboard](https://dashboard.alchemy.com/) and create a new app, choosing Sepolia (or any other testnet) for your network.
 
-### 2\. Request ETH from the Sepolia faucet {#request-eth-from-sepolia-faucet}
+### 2\. Request QAU from the Sepolia faucet {#request-qau-from-sepolia-faucet}
 
-Follow the instructions on the [Alchemy Sepolia faucet](https://www.sepoliafaucet.com/) to receive ETH. Make sure to include your **Sepolia** Ethereum address (from MetaMask) and not another network. After following the instructions, double-check that you’ve received the ETH in your wallet.
+Follow the instructions on the [Alchemy Sepolia faucet](https://www.sepoliafaucet.com/) to receive QAU. Make sure to include your **Sepolia** Quantaureum address (from MetaMask) and not another network. After following the instructions, double-check that you’ve received the QAU in your wallet.
 
 ### 3\. Create a new project directory and `cd` into it {#create-a-new-project-direction}
 
@@ -90,7 +90,7 @@ cd sendtx-example
 
 Run the following command in your project directory to install [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3):
 
-Note, if you'd like to use the ethers.js library, [follow the instructions here](https://www.alchemy.com/docs/how-to-send-transactions-on-ethereum).
+Note, if you'd like to use the ethers.js library, [follow the instructions here](https://www.alchemy.com/docs/how-to-send-transactions-on-quantaureum).
 
 ```
 npm install @alch/alchemy-web3
@@ -126,7 +126,7 @@ Don't commit <code>.env</code>! Please make sure never to share or expose your <
 
 ### 7\. Create `sendTx.js` file {#create-sendtx-js}
 
-Great, now that we have our sensitive data protected in a `.env` file, let’s start coding. For our send transaction example, we’ll be sending ETH back to the Sepolia faucet.
+Great, now that we have our sensitive data protected in a `.env` file, let’s start coding. For our send transaction example, we’ll be sending QAU back to the Sepolia faucet.
 
 Create a `sendTx.js` file, which is where we will configure and send our example transaction, and add the following lines of code to it:
 
@@ -138,19 +138,19 @@ async function main() {
     const web3 = createAlchemyWeb3(API_URL);
     const myAddress = '0x610Ae88399fc1687FA7530Aac28eC2539c7d6d63' //TODO: replace this address with your own public address
 
-    const nonce = await web3.eth.getTransactionCount(myAddress, 'latest'); // nonce starts counting from 0
+    const nonce = await web3.qau.getTransactionCount(myAddress, 'latest'); // nonce starts counting from 0
 
     const transaction = {
      'to': '0x31B98D14007bDEe637298086988A0bBd31184523', // faucet address to return eth
-     'value': 1000000000000000000, // 1 ETH
+     'value': 1000000000000000000, // 1 QAU
      'gas': 30000,
      'nonce': nonce,
      // optional data field to send message or execute smart contract
     };
 
-    const signedTx = await web3.eth.accounts.signTransaction(transaction, PRIVATE_KEY);
+    const signedTx = await web3.qau.accounts.signTransaction(transaction, PRIVATE_KEY);
 
-    web3.eth.sendSignedTransaction(signedTx.rawTransaction, function(error, hash) {
+    web3.qau.sendSignedTransaction(signedTx.rawTransaction, function(error, hash) {
     if (!error) {
       console.log("🎉 The hash of your transaction is: ", hash, "\n Check Alchemy's Mempool to view the status of your transaction!");
     } else {
@@ -166,21 +166,21 @@ Be sure to replace the address on **line 6** with your own public address.
 
 Now, before we jump into running this code, let's talk about some of the components here.
 
-- `nonce` : The nonce specification is used to keep track of the number of transactions sent from your address. We need this for security purposes and to prevent replay attacks. To get the number of transactions sent from your address we use [getTransactionCount](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-count).
+- `nonce` : The nonce specification is used to keep track of the number of transactions sent from your address. We need this for security purposes and to prevent replay attacks. To get the number of transactions sent from your address we use [getTransactionCount](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-count).
 - `transaction`: The transaction object has a few aspects we need to specify
-  - `to`: This is the address we want to send ETH to. In this case, we are sending ETH back to the [Sepolia faucet](https://sepoliafaucet.com/) we initially requested from.
-  - `value`: This is the amount we wish to send, specified in Wei where 10^18 Wei = 1 ETH
-  - `gas`: There are many ways to determine the right amount of gas to include with your transaction. Alchemy supports [webhooks](https://www.alchemy.com/docs/reference/webhooks-overview) that can notify you about onchain activity. For Mainnet transactions, it's good practice to check current gas conditions to determine the right amount of gas to include. 21000 is the minimum amount of gas an operation on Ethereum will use, so to ensure our transaction will be executed we put 30000 here.
+  - `to`: This is the address we want to send QAU to. In this case, we are sending QAU back to the [Sepolia faucet](https://sepoliafaucet.com/) we initially requested from.
+  - `value`: This is the amount we wish to send, specified in Wei where 10^18 Wei = 1 QAU
+  - `gas`: There are many ways to determine the right amount of gas to include with your transaction. Alchemy supports [webhooks](https://www.alchemy.com/docs/reference/webhooks-overview) that can notify you about onchain activity. For Mainnet transactions, it's good practice to check current gas conditions to determine the right amount of gas to include. 21000 is the minimum amount of gas an operation on Quantaureum will use, so to ensure our transaction will be executed we put 30000 here.
   - `nonce`: see above nonce definition. Nonce starts counting from zero.
   - [OPTIONAL] data: Used for sending additional information with your transfer, or calling a smart contract, not required for balance transfers, check out the note below.
 - `signedTx`: To sign our transaction object we will use the `signTransaction` method with our `PRIVATE_KEY`
 - `sendSignedTransaction`: Once we have a signed transaction, we can send it off to be included in a subsequent block by using `sendSignedTransaction`
 
 **A Note on data**
-There are a two main types of transactions that can be sent in Ethereum.
+There are a two main types of transactions that can be sent in Quantaureum.
 
-- Balance transfer: Send ETH from one address to another. No data field required, however, if you'd like to send additional information alongside your transaction, you can include that information in HEX format in this field.
-  - For example, let's say we wanted to write the hash of an IPFS document to the Ethereum chain in order to give it an immutable timestamp. Our data field should then look like data: `web3.utils.toHex(‘IPFS hash‘)`. And now anyone can query the chain and see when that document was added.
+- Balance transfer: Send QAU from one address to another. No data field required, however, if you'd like to send additional information alongside your transaction, you can include that information in HEX format in this field.
+  - For example, let's say we wanted to write the hash of an IPFS document to the Quantaureum chain in order to give it an immutable timestamp. Our data field should then look like data: `web3.utils.toHex(‘IPFS hash‘)`. And now anyone can query the chain and see when that document was added.
 - Smart contract transaction: Execute some smart contract code on the chain. In this case, the data field should contain the smart function you wish to execute, alongside any parameters.
   - For a practical example, check out the [Hello World Smart Contract tutorial](/developers/tutorials/hello-world-smart-contract/).
 
@@ -200,9 +200,9 @@ To view the details of your transaction once you’ve found it, select the tx ha
 
 ![Mempool watcher screenshot](./mempool.png)
 
-From there you can view your transaction on Etherscan by clicking on the icon circled in red!
+From there you can view your transaction on Quantaureum Explorer by clicking on the icon circled in red!
 
-**Yippieeee! You just sent your first Ethereum transaction using Alchemy 🎉**
+**Yippieeee! You just sent your first Quantaureum transaction using Alchemy 🎉**
 
 _For feedback and suggestions about this guide, please message Elan on Alchemy’s [Discord](https://discord.gg/A39JVCM)!_
 

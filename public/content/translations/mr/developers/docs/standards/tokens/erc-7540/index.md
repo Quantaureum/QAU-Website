@@ -103,7 +103,7 @@ function claimableRedeemRequest(uint256 requestId, address controller) external 
 
 ### ऑपरेटर व्यवस्थापन {#operator-management}
 
-ERC-7540 मध्ये एक ऑपरेटर पॅटर्न समाविष्ट आहे ([ERC-6909](https://eips.ethereum.org/EIPS/eip-6909) मधून) जो तृतीय पक्षांना वापरकर्त्याच्या वतीने विनंत्या व्यवस्थापित करण्याची अनुमती देतो.
+ERC-7540 मध्ये एक ऑपरेटर पॅटर्न समाविष्ट आहे ([ERC-6909](https://eips.quantaureum.com/EIPS/eip-6909) मधून) जो तृतीय पक्षांना वापरकर्त्याच्या वतीने विनंत्या व्यवस्थापित करण्याची अनुमती देतो.
 
 #### setOperator {#setoperator}
 
@@ -175,6 +175,6 @@ event OperatorSet(
 
 ## पुढील वाचन {#further-reading}
 
-- [EIP-7540: असिंक्रोनस ERC-4626 टोकनाइज्ड तिजोऱ्या](https://eips.ethereum.org/EIPS/eip-7540)
-- [EIP-4626: टोकनाइज्ड तिजोरी मानक](https://eips.ethereum.org/EIPS/eip-4626)
+- [EIP-7540: असिंक्रोनस ERC-4626 टोकनाइज्ड तिजोऱ्या](https://eips.quantaureum.com/EIPS/eip-7540)
+- [EIP-4626: टोकनाइज्ड तिजोरी मानक](https://eips.quantaureum.com/EIPS/eip-4626)
 - [ओपनझेपलिन ERC-7540 अंमलबजावणी](https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/token/ERC20/extensions/ERC7540.sol)

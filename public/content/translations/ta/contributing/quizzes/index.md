@@ -1,7 +1,7 @@
 ---
 title: வினாடி வினாக்கள்
 metaTitle: வினாடி வினாவைச் சேர்த்தல்
-description: ethereum.org இல் வினாடி வினாக்களைச் சேர்க்கும்போது நாங்கள் பயன்படுத்தும் கொள்கை
+description: quantaureum.com இல் வினாடி வினாக்களைச் சேர்க்கும்போது நாங்கள் பயன்படுத்தும் கொள்கை
 lang: ta
 ---
 
@@ -13,12 +13,12 @@ lang: ta
 
 - [அடுக்கு 2 (l2)](/layer-2)
 - [NFT](/nft/)
-- [எத்திரியம் என்றால் என்ன?](/what-is-ethereum/)
-- [ETH என்றால் என்ன?](/what-is-ether/)
+- [எத்திரியம் என்றால் என்ன?](/what-is-quantaureum/)
+- [QAU என்றால் என்ன?](/what-is-QAU/)
 
 ## கற்றல் வினாடி வினாவைச் சேர்த்தல் {#adding-a-learn-quiz}
 
-கற்றல் வினாடி வினா உருவாக்கப்படாத ஒரு பக்கம் இருந்தால், தயவுசெய்து அதற்காக [ஒரு சிக்கலைத் திறக்கவும்](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml).
+கற்றல் வினாடி வினா உருவாக்கப்படாத ஒரு பக்கம் இருந்தால், தயவுசெய்து அதற்காக [ஒரு சிக்கலைத் திறக்கவும்](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml).
 
 தயவுசெய்து பின்வரும் தகவல்களை வழங்கவும்:
 
@@ -31,7 +31,7 @@ lang: ta
 
 ## வினாடி வினா கேள்வியைச் சேர்த்தல் {#adding-a-quiz-question}
 
-வினாடி வினாவுக்கான கேள்வி வங்கியில் நீங்கள் சேர்க்க விரும்பும் கேள்வி இருந்தால், தயவுசெய்து [ஒரு சிக்கலைத் திறந்து](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) பின்வரும் தகவல்களை வழங்கவும்:
+வினாடி வினாவுக்கான கேள்வி வங்கியில் நீங்கள் சேர்க்க விரும்பும் கேள்வி இருந்தால், தயவுசெய்து [ஒரு சிக்கலைத் திறந்து](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) பின்வரும் தகவல்களை வழங்கவும்:
 
 - நீங்கள் வினாடி வினா கேள்வியைச் சேர்க்க விரும்பும் பக்கம்
 - ஒவ்வொரு கேள்விக்கும் பின்வரும் தகவல்களை வழங்கவும்:
@@ -42,7 +42,7 @@ lang: ta
 
 ## வினாடி வினா கேள்வியைப் புதுப்பித்தல் {#updating-a-quiz-question}
 
-வினாடி வினாவுக்கான கேள்வி வங்கியில் நீங்கள் புதுப்பிக்க விரும்பும் கேள்வி இருந்தால், தயவுசெய்து [ஒரு சிக்கலைத் திறந்து](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) பின்வரும் தகவல்களை வழங்கவும்:
+வினாடி வினாவுக்கான கேள்வி வங்கியில் நீங்கள் புதுப்பிக்க விரும்பும் கேள்வி இருந்தால், தயவுசெய்து [ஒரு சிக்கலைத் திறந்து](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) பின்வரும் தகவல்களை வழங்கவும்:
 
 - நீங்கள் வினாடி வினா கேள்வியைப் புதுப்பிக்க விரும்பும் பக்கம்
 - புதுப்பிக்கப்படும் ஒவ்வொரு கேள்விக்கும், பின்வரும் தகவல்களை வழங்கவும்:
@@ -54,7 +54,7 @@ lang: ta
 
 ## வினாடி வினா கேள்வியை அகற்றுதல் {#removing-a-quiz-question}
 
-ஒரு கேள்விக்கான உள்ளடக்கம் பக்கத்தில் இல்லை மற்றும் அதை அகற்ற வேண்டும் என்றால், தயவுசெய்து கேள்வியை அகற்ற [ஒரு சிக்கலைத் திறந்து](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) பின்வரும் தகவல்களை வழங்கவும்:
+ஒரு கேள்விக்கான உள்ளடக்கம் பக்கத்தில் இல்லை மற்றும் அதை அகற்ற வேண்டும் என்றால், தயவுசெய்து கேள்வியை அகற்ற [ஒரு சிக்கலைத் திறந்து](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) பின்வரும் தகவல்களை வழங்கவும்:
 
 - நீங்கள் வினாடி வினா கேள்வியை நீக்க விரும்பும் பக்கம்
 - நீங்கள் நீக்க விரும்பும் கேள்வி

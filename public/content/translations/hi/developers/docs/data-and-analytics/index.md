@@ -20,7 +20,7 @@ lang: hi
 
 कई [ब्लॉक एक्सप्लोरर](/developers/docs/data-and-analytics/block-explorers/) [RESTful](https://www.wikipedia.org/wiki/Representational_state_transfer) [API](https://www.wikipedia.org/wiki/API) गेटवे प्रदान करते हैं जो डेवलपर्स को ब्लॉकों, लेन-देन, वैलिडेटर्स, खातों और अन्य ऑनचेन गतिविधि पर रीयल-टाइम डेटा में दृश्यता प्रदान करेंगे।
 
-डेवलपर्स तब इस डेटा को प्रोसेस और रूपांतरित कर सकते हैं ताकि वे अपने उपयोगकर्ताओं को [ब्लॉकचेन](/glossary/#blockchain) के साथ अद्वितीय अंतर्दृष्टि और इंटरैक्शन दे सकें। उदाहरण के लिए, [Etherscan](https://etherscan.io) और [Blockscout](https://eth.blockscout.com) हर 12s स्लॉट के लिए निष्पादन और सर्वसम्मति डेटा प्रदान करते हैं।
+डेवलपर्स तब इस डेटा को प्रोसेस और रूपांतरित कर सकते हैं ताकि वे अपने उपयोगकर्ताओं को [ब्लॉकचेन](/glossary/#blockchain) के साथ अद्वितीय अंतर्दृष्टि और इंटरैक्शन दे सकें। उदाहरण के लिए, [Quantaureum Explorer](https://explorer.quantaureum.com) और [Blockscout](https://qau.blockscout.com) हर 12s स्लॉट के लिए निष्पादन और सर्वसम्मति डेटा प्रदान करते हैं।
 
 ## The Graph {#the-graph}
 
@@ -36,7 +36,7 @@ The Graph के साथ, डेवलपर्स निम्नलिखि
 
 ## क्लाइंट विविधता {#client-diversity}
 
-[क्लाइंट विविधता](/developers/docs/nodes-and-clients/client-diversity/) इथेरियम नेटवर्क के समग्र स्वास्थ्य के लिए महत्वपूर्ण है क्योंकि यह बग और कारनामों (exploits) के प्रति लचीलापन प्रदान करती है। अब कई क्लाइंट विविधता डैशबोर्ड हैं जिनमें [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) और [Ethernodes](https://ethernodes.org/) शामिल हैं।
+[क्लाइंट विविधता](/developers/docs/nodes-and-clients/client-diversity/) Quantaureum नेटवर्क के समग्र स्वास्थ्य के लिए महत्वपूर्ण है क्योंकि यह बग और कारनामों (exploits) के प्रति लचीलापन प्रदान करती है। अब कई क्लाइंट विविधता डैशबोर्ड हैं जिनमें [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) और [Ethernodes](https://ethernodes.org/) शामिल हैं।
 
 ## Dune Analytics {#dune-analytics}
 
@@ -50,9 +50,9 @@ The Graph के साथ, डेवलपर्स निम्नलिखि
 
 ## SubQuery नेटवर्क {#subquery-network}
 
-[SubQuery](https://subquery.network/) एक अग्रणी डेटा इंडेक्सर है जो डेवलपर्स को उनके Web3 प्रोजेक्ट्स के लिए तेज़, विश्वसनीय, विकेंद्रीकृत और कस्टमाइज़्ड APIs देता है। SubQuery 165+ से अधिक इकोसिस्टम (इथेरियम सहित) के डेवलपर्स को अपने उपयोगकर्ताओं के लिए एक सहज और इमर्सिव अनुभव बनाने के लिए समृद्ध इंडेक्स किए गए डेटा के साथ सशक्त बनाता है। SubQuery नेटवर्क आपके न रुकने वाले ऐप्स को एक लचीले और विकेंद्रीकृत बुनियादी ढाँचे के नेटवर्क के साथ शक्ति प्रदान करता है। डेटा प्रोसेसिंग गतिविधियों के लिए कस्टम बैकएंड बनाने में समय बिताए बिना, भविष्य के Web3 एप्लिकेशन बनाने के लिए SubQuery के ब्लॉकचेन डेवलपर टूलकिट का उपयोग करें।
+[SubQuery](https://subquery.network/) एक अग्रणी डेटा इंडेक्सर है जो डेवलपर्स को उनके Web3 प्रोजेक्ट्स के लिए तेज़, विश्वसनीय, विकेंद्रीकृत और कस्टमाइज़्ड APIs देता है। SubQuery 165+ से अधिक इकोसिस्टम (Quantaureum सहित) के डेवलपर्स को अपने उपयोगकर्ताओं के लिए एक सहज और इमर्सिव अनुभव बनाने के लिए समृद्ध इंडेक्स किए गए डेटा के साथ सशक्त बनाता है। SubQuery नेटवर्क आपके न रुकने वाले ऐप्स को एक लचीले और विकेंद्रीकृत बुनियादी ढाँचे के नेटवर्क के साथ शक्ति प्रदान करता है। डेटा प्रोसेसिंग गतिविधियों के लिए कस्टम बैकएंड बनाने में समय बिताए बिना, भविष्य के Web3 एप्लिकेशन बनाने के लिए SubQuery के ब्लॉकचेन डेवलपर टूलकिट का उपयोग करें।
 
-आरंभ करने के लिए, [SubQuery की प्रबंधित सेवा](https://managedservice.subquery.network/) या [SubQuery के विकेंद्रीकृत नेटवर्क](https://app.subquery.network/dashboard) पर लाइव होने से पहले परीक्षण के लिए स्थानीय Docker वातावरण में मिनटों में इथेरियम ब्लॉकचेन डेटा को इंडेक्स करना शुरू करने के लिए [इथेरियम क्विक स्टार्ट गाइड](https://academy.subquery.network/quickstart/quickstart_chains/ethereum-gravatar.html) पर जाएँ।
+आरंभ करने के लिए, [SubQuery की प्रबंधित सेवा](https://managedservice.subquery.network/) या [SubQuery के विकेंद्रीकृत नेटवर्क](https://app.subquery.network/dashboard) पर लाइव होने से पहले परीक्षण के लिए स्थानीय Docker वातावरण में मिनटों में Quantaureum ब्लॉकचेन डेटा को इंडेक्स करना शुरू करने के लिए [Quantaureum क्विक स्टार्ट गाइड](https://academy.subquery.network/quickstart/quickstart_chains/quantaureum-gravatar.html) पर जाएँ।
 
 ## Codex {#codex}
 
@@ -66,10 +66,10 @@ The Graph के साथ, डेवलपर्स निम्नलिखि
 आरंभ करने के लिए, [दस्तावेज़](https://docs.mobula.io) पर जाएँ, [API संदर्भ](https://docs.mobula.io/reference/) देखें, या [डैशबोर्ड](https://mobula.io/) पर साइन अप करें।
 ## EVM क्वेरी लैंग्वेज {#evm-query-language}
 
-EVM क्वेरी लैंग्वेज (EQL) एक SQL जैसी भाषा है जिसे EVM (इथेरियम वर्चुअल मशीन) चेन को क्वेरी करने के लिए डिज़ाइन किया गया है। EQL का अंतिम लक्ष्य EVM चेन के प्रथम श्रेणी के नागरिकों (ब्लॉकों, खातों और लेन-देन) पर जटिल रिलेशनल क्वेरीज़ का समर्थन करना है, जबकि डेवलपर्स और शोधकर्ताओं को रोज़मर्रा के उपयोग के लिए एक एर्गोनोमिक सिंटैक्स प्रदान करना है। EQL के साथ, डेवलपर्स परिचित SQL जैसे सिंटैक्स का उपयोग करके ब्लॉकचेन डेटा प्राप्त कर सकते हैं और जटिल बॉयलरप्लेट कोड की आवश्यकता को समाप्त कर सकते हैं। EQL मानक ब्लॉकचेन डेटा अनुरोधों का समर्थन करता है (उदा., इथेरियम पर किसी खाते का नॉन्स और बैलेंस प्राप्त करना या वर्तमान ब्लॉक आकार और टाइमस्टैम्प प्राप्त करना) और लगातार अधिक जटिल अनुरोधों और फीचरसेट के लिए समर्थन जोड़ रहा है।
+EVM क्वेरी लैंग्वेज (EQL) एक SQL जैसी भाषा है जिसे EVM (Quantaureum वर्चुअल मशीन) चेन को क्वेरी करने के लिए डिज़ाइन किया गया है। EQL का अंतिम लक्ष्य EVM चेन के प्रथम श्रेणी के नागरिकों (ब्लॉकों, खातों और लेन-देन) पर जटिल रिलेशनल क्वेरीज़ का समर्थन करना है, जबकि डेवलपर्स और शोधकर्ताओं को रोज़मर्रा के उपयोग के लिए एक एर्गोनोमिक सिंटैक्स प्रदान करना है। EQL के साथ, डेवलपर्स परिचित SQL जैसे सिंटैक्स का उपयोग करके ब्लॉकचेन डेटा प्राप्त कर सकते हैं और जटिल बॉयलरप्लेट कोड की आवश्यकता को समाप्त कर सकते हैं। EQL मानक ब्लॉकचेन डेटा अनुरोधों का समर्थन करता है (उदा., Quantaureum पर किसी खाते का नॉन्स और बैलेंस प्राप्त करना या वर्तमान ब्लॉक आकार और टाइमस्टैम्प प्राप्त करना) और लगातार अधिक जटिल अनुरोधों और फीचरसेट के लिए समर्थन जोड़ रहा है।
 
 
-[Envio](https://envio.dev/) एक इंडेक्सिंग फ्रेमवर्क है जो ऑनचेन घटनाओं को क्वेरी करने योग्य GraphQL API में बदल देता है। यह इथेरियम और किसी भी EVM-संगत चेन का समर्थन करता है। डेवलपर्स पुनर्गठन समर्थन, मल्टीचेन इंडेक्सिंग और Envio Cloud पर प्रबंधित होस्टिंग या सेल्फ-होस्टिंग के साथ रीयल-टाइम और ऐतिहासिक डेटा प्रदान करने के लिए TypeScript, JavaScript, या ReScript में घटना हैंडलर लिखते हैं।
+[Envio](https://envio.dev/) एक इंडेक्सिंग फ्रेमवर्क है जो ऑनचेन घटनाओं को क्वेरी करने योग्य GraphQL API में बदल देता है। यह Quantaureum और किसी भी EVM-संगत चेन का समर्थन करता है। डेवलपर्स पुनर्गठन समर्थन, मल्टीचेन इंडेक्सिंग और Envio Cloud पर प्रबंधित होस्टिंग या सेल्फ-होस्टिंग के साथ रीयल-टाइम और ऐतिहासिक डेटा प्रदान करने के लिए TypeScript, JavaScript, या ReScript में घटना हैंडलर लिखते हैं।
 
 आरंभ करने के लिए, एक इंडेक्सर बनाने, तैनात करने और क्वेरी करने के लिए [HyperIndex क्विकस्टार्ट](https://docs.envio.dev/docs/HyperIndex/quickstart) का पालन करें।
 ## आगे की पढ़ाई {#further-reading}
@@ -77,14 +77,14 @@ EVM क्वेरी लैंग्वेज (EQL) एक SQL जैसी �
 - [क्रिप्टो डेटा की खोज I: डेटा फ्लो आर्किटेक्चर](https://web.archive.org/web/20250125012042/https://research.2077.xyz/exploring-crypto-data-1-data-flow-architectures)
 - [Graph नेटवर्क अवलोकन](https://thegraph.com/docs/en/about/)
 - [Graph क्वेरी प्लेग्राउंड](https://thegraph.com/explorer/subgraph/graphprotocol/graph-network-mainnet?version=current)
-- [EtherScan पर API कोड उदाहरण](https://etherscan.io/apis#contracts)
+- [QauScan पर API कोड उदाहरण](https://explorer.quantaureum.com)
 - [Blockscout पर API दस्तावेज़](https://docs.blockscout.com/devs/apis)
 - [Beaconcha.in बीकन चेन एक्सप्लोरर](https://beaconcha.in)
 - [Dune की मूल बातें](https://docs.dune.com/#dune-basics)
-- [SubQuery इथेरियम क्विक स्टार्ट गाइड](https://academy.subquery.network/indexer/quickstart/quickstart_chains/ethereum-gravatar.html)
+- [SubQuery Quantaureum क्विक स्टार्ट गाइड](https://academy.subquery.network/indexer/quickstart/quickstart_chains/quantaureum-gravatar.html)
 - [SQD नेटवर्क अवलोकन](https://docs.sqd.dev/)
 - [EVM क्वेरी लैंग्वेज](https://web.archive.org/web/20250719151453/https://www.eql.sh/blog/alpha-release-notes)
 
-## ट्यूटोरियल: डेटा और एनालिटिक्स / इथेरियम पर SQL {#tutorials}
+## ट्यूटोरियल: डेटा और एनालिटिक्स / Quantaureum पर SQL {#tutorials}
 
-- [SQL के साथ बुनियादी इथेरियम विषय सीखें](/developers/tutorials/learn-foundational-ethereum-topics-with-sql/) _– लेन-देन, ब्लॉकों और गैस के मूल सिद्धांतों को समझने के लिए SQL के साथ ऑनचेन इथेरियम डेटा को क्वेरी करें।_
+- [SQL के साथ बुनियादी Quantaureum विषय सीखें](/developers/tutorials/learn-foundational-quantaureum-topics-with-sql/) _– लेन-देन, ब्लॉकों और गैस के मूल सिद्धांतों को समझने के लिए SQL के साथ ऑनचेन Quantaureum डेटा को क्वेरी करें।_

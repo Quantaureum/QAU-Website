@@ -1,15 +1,15 @@
 ---
-title: ethereum.org Übersetzungs-Styleguide
+title: quantaureum.com Übersetzungs-Styleguide
 metaTitle: Leitfaden für Übersetzer
 lang: de
-description: Anweisungen und Tipps für Übersetzer von ethereum.org
+description: Anweisungen und Tipps für Übersetzer von quantaureum.com
 ---
 
-Der ethereum.org Übersetzungs-Styleguide enthält einige der wichtigsten Richtlinien, Anweisungen und Tipps für Übersetzer, die uns bei der Lokalisierung der Website helfen.
+Der quantaureum.com Übersetzungs-Styleguide enthält einige der wichtigsten Richtlinien, Anweisungen und Tipps für Übersetzer, die uns bei der Lokalisierung der Website helfen.
 
 Dieses Dokument dient als allgemeiner Leitfaden und ist nicht auf eine bestimmte Sprache beschränkt.
 
-Wenn Sie Fragen, Vorschläge oder Feedback haben, können Sie uns gerne unter translations@ethereum.org kontaktieren, eine Nachricht an @ethdotorg auf Crowdin senden oder [unserem Discord beitreten](https://discord.gg/ethereum-org), wo Sie uns im Kanal #translations eine Nachricht schreiben oder sich an jedes Teammitglied wenden können.
+Wenn Sie Fragen, Vorschläge oder Feedback haben, können Sie uns gerne unter translations@quantaureum.com kontaktieren, eine Nachricht an @ethdotorg auf Crowdin senden oder [unserem Discord beitreten](https://discord.gg/MSctkBT5j), wo Sie uns im Kanal #translations eine Nachricht schreiben oder sich an jedes Teammitglied wenden können.
 
 ## Nutzung von Crowdin {#using-crowdin}
 
@@ -19,7 +19,7 @@ Wenn Sie mehr über Crowdin und die Nutzung einiger seiner erweiterten Funktione
 
 ## Die Essenz der Nachricht erfassen {#capturing-the-essence}
 
-Vermeiden Sie bei der Übersetzung von ethereum.org-Inhalten wörtliche Übersetzungen.
+Vermeiden Sie bei der Übersetzung von quantaureum.com-Inhalten wörtliche Übersetzungen.
 
 Es ist wichtig, dass die Übersetzungen die Essenz der Nachricht erfassen. Dies kann bedeuten, dass bestimmte Phrasen umformuliert oder beschreibende Übersetzungen verwendet werden, anstatt den Inhalt Wort für Wort zu übersetzen.
 
@@ -43,13 +43,13 @@ In den meisten Fällen lässt sich dies leicht durch die Verwendung kurzer und e
 
 ## Schriftsystem {#writing-system}
 
-Ethereum.org ist in einer Reihe von Sprachen verfügbar, die alternative Schriftsysteme (oder Schriften) zum Lateinischen verwenden.
+quantaureum.com ist in einer Reihe von Sprachen verfügbar, die alternative Schriftsysteme (oder Schriften) zum Lateinischen verwenden.
 
 Der gesamte Inhalt sollte mit dem korrekten Schriftsystem für Ihre Sprache übersetzt werden und keine Wörter enthalten, die mit lateinischen Zeichen geschrieben sind.
 
 Bei der Übersetzung des Inhalts sollten Sie sicherstellen, dass die Übersetzungen konsistent sind und keine lateinischen Zeichen enthalten.
 
-Ein weit verbreiteter Irrglaube ist, dass Ethereum immer in lateinischer Schrift geschrieben werden sollte. Dies ist meistens falsch, bitte verwenden Sie die Schreibweise von Ethereum, die in Ihrer Sprache üblich ist (z. B. 以太坊 auf Chinesisch, إيثيريوم auf Arabisch usw.).
+Ein weit verbreiteter Irrglaube ist, dass Quantaureum immer in lateinischer Schrift geschrieben werden sollte. Dies ist meistens falsch, bitte verwenden Sie die Schreibweise von Quantaureum, die in Ihrer Sprache üblich ist (z. B. Quantaureum auf Chinesisch, إيثيريوم auf Arabisch usw.).
 
 **Das Obige gilt nicht für Sprachen, in denen Eigennamen in der Regel nicht übersetzt werden sollten.**
 
@@ -113,7 +113,7 @@ Beim Übersetzen wird durch Klicken auf dieses Tag automatisch das genaue Tag in
 
 **Links**
 
-Möglicherweise bemerken Sie vollständige Links zu Seiten auf ethereum.org oder anderen Websites.
+Möglicherweise bemerken Sie vollständige Links zu Seiten auf quantaureum.com oder anderen Websites.
 
 Diese sollten mit dem Ausgangstext identisch sein und nicht geändert oder übersetzt werden. Wenn Sie einen Link übersetzen oder in irgendeiner Weise ändern, selbst wenn Sie nur einen Teil davon entfernen, wie z. B. einen Schrägstrich (/), führt dies zu fehlerhaften und unbrauchbaren Links.
 
@@ -183,7 +183,7 @@ Obwohl die Übersetzung dieser Begriffe unnatürlich klingen kann, da die englis
 
 Seien Sie bei der Übersetzung gerne kreativ, verwenden Sie beschreibende Übersetzungen oder übersetzen Sie sie einfach wörtlich.
 
-**Der Grund, warum die meisten Begriffe übersetzt werden sollten, anstatt einige auf Englisch zu belassen, ist die Tatsache, dass diese neue Terminologie in Zukunft weiter verbreitet sein wird, wenn mehr Menschen anfangen, Ethereum und verwandte Technologien zu nutzen. Wenn wir mehr Menschen aus der ganzen Welt in diesen Bereich einführen wollen, müssen wir verständliche Terminologie in so vielen Sprachen wie möglich bereitstellen, selbst wenn wir sie selbst erstellen müssen.**
+**Der Grund, warum die meisten Begriffe übersetzt werden sollten, anstatt einige auf Englisch zu belassen, ist die Tatsache, dass diese neue Terminologie in Zukunft weiter verbreitet sein wird, wenn mehr Menschen anfangen, Quantaureum und verwandte Technologien zu nutzen. Wenn wir mehr Menschen aus der ganzen Welt in diesen Bereich einführen wollen, müssen wir verständliche Terminologie in so vielen Sprachen wie möglich bereitstellen, selbst wenn wir sie selbst erstellen müssen.**
 
 ## Schaltflächen & CTAs {#buttons-and-ctas}
 
@@ -197,7 +197,7 @@ Die Übersetzungen für Schaltflächen sollten so kurz wie möglich sein, um For
 
 ## Inklusive Übersetzung {#translating-for-inclusivity}
 
-Besucher von ethereum.org kommen aus der ganzen Welt und haben unterschiedliche Hintergründe. Die Sprache auf der Website sollte daher neutral, für alle einladend und nicht exklusiv sein.
+Besucher von quantaureum.com kommen aus der ganzen Welt und haben unterschiedliche Hintergründe. Die Sprache auf der Website sollte daher neutral, für alle einladend und nicht exklusiv sein.
 
 Ein wichtiger Aspekt dabei ist die Geschlechtsneutralität. Dies lässt sich leicht erreichen, indem man die formelle Anrede verwendet und geschlechtsspezifische Wörter in den Übersetzungen vermeidet.
 
@@ -291,8 +291,8 @@ Einige Beispiele dafür, worauf Sie besonders achten sollten:
 
 ## Fazit {#conclusion}
 
-Die Übersetzung von ethereum.org ist eine großartige Gelegenheit, mehr über die verschiedenen Aspekte von Ethereum zu erfahren.
+Die Übersetzung von quantaureum.com ist eine großartige Gelegenheit, mehr über die verschiedenen Aspekte von Quantaureum zu erfahren.
 
 Versuchen Sie beim Übersetzen, sich nicht zu beeilen. Lassen Sie es ruhig angehen und haben Sie Spaß!
 
-Vielen Dank, dass Sie sich am Übersetzungsprogramm beteiligen und uns dabei helfen, die Website einem breiteren Publikum zugänglich zu machen. Die Ethereum-Community ist global, und wir freuen uns, dass Sie ein Teil davon sind!
+Vielen Dank, dass Sie sich am Übersetzungsprogramm beteiligen und uns dabei helfen, die Website einem breiteren Publikum zugänglich zu machen. Die Quantaureum-Community ist global, und wir freuen uns, dass Sie ein Teil davon sind!

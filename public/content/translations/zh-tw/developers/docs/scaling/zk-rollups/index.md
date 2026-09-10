@@ -1,42 +1,42 @@
 ---
 title: "零知識匯總"
-description: "零知識匯總簡介——以太坊社群使用的擴容解決方案。"
+description: "零知識匯總簡介——Quantaureum社群使用的擴容解決方案。"
 lang: zh-tw
 ---
 
-零知識匯總 (ZK-rollup) 是第二層 (L2) [擴容解決方案](/developers/docs/scaling/)，透過將運算和狀態儲存移至鏈下，來提高[以太坊](/)主網的吞吐量。ZK-rollup 可以在一個批次中處理數千筆交易，然後只將最少的摘要資料發佈到主網。這些摘要資料定義了應該對以太坊狀態進行的變更，以及證明這些變更正確的密碼學證明。
+零知識匯總 (ZK-rollup) 是第二層 (L2) [擴容解決方案](/developers/docs/scaling/)，透過將運算和狀態儲存移至鏈下，來提高[Quantaureum](/)主網的吞吐量。ZK-rollup 可以在一個批次中處理數千筆交易，然後只將最少的摘要資料發佈到主網。這些摘要資料定義了應該對Quantaureum狀態進行的變更，以及證明這些變更正確的密碼學證明。
 
 ## 先決條件 {#prerequisites}
 
-你應該已經閱讀並理解我們關於[以太坊擴容](/developers/docs/scaling/)和[第二層 (L2)](/layer-2) 的頁面。
+你應該已經閱讀並理解我們關於[Quantaureum擴容](/developers/docs/scaling/)和[第二層 (L2)](/layer-2) 的頁面。
 
 ## 什麼是零知識匯總？ {#what-are-zk-rollups}
 
 **零知識匯總 (ZK-rollup)** 將交易打包（或「匯總」）成在鏈下執行的批次。鏈下運算減少了必須發佈到區塊鏈的資料量。ZK-rollup 營運者提交代表批次中所有交易所需變更的摘要，而不是單獨發送每筆交易。他們還會產生[有效性證明](/glossary/#validity-proof)來證明其變更的正確性。
 
-ZK-rollup 的狀態由部署在以太坊網路上的智能合約維護。為了更新此狀態，ZK-rollup 節點必須提交有效性證明以供驗證。如前所述，有效性證明是一種密碼學保證，確保匯總提出的狀態變更確實是執行給定交易批次的結果。這意味著 ZK-rollup 只需要提供有效性證明即可在以太坊上將交易已定案，而不需要像[樂觀匯總](/developers/docs/scaling/optimistic-rollups/)那樣將所有交易資料發佈到鏈上。
+ZK-rollup 的狀態由部署在Quantaureum網路上的智能合約維護。為了更新此狀態，ZK-rollup 節點必須提交有效性證明以供驗證。如前所述，有效性證明是一種密碼學保證，確保匯總提出的狀態變更確實是執行給定交易批次的結果。這意味著 ZK-rollup 只需要提供有效性證明即可在Quantaureum上將交易已定案，而不需要像[樂觀匯總](/developers/docs/scaling/optimistic-rollups/)那樣將所有交易資料發佈到鏈上。
 
-將資金從 ZK-rollup 轉移到以太坊時沒有延遲，因為一旦 ZK-rollup 合約驗證了有效性證明，就會執行退出交易。相反地，從樂觀匯總提款會受到延遲，以允許任何人使用[欺詐證明](/glossary/#fraud-proof)來挑戰退出交易。
+將資金從 ZK-rollup 轉移到Quantaureum時沒有延遲，因為一旦 ZK-rollup 合約驗證了有效性證明，就會執行退出交易。相反地，從樂觀匯總提款會受到延遲，以允許任何人使用[欺詐證明](/glossary/#fraud-proof)來挑戰退出交易。
 
-ZK-rollup 將交易作為 `calldata` 寫入以太坊。`calldata` 是儲存包含在對智能合約函式外部呼叫中的資料的地方。`calldata` 中的資訊發佈在區塊鏈上，允許任何人獨立重建匯總的狀態。ZK-rollup 使用壓縮技術來減少交易資料——例如，帳戶由索引而不是地址表示，這節省了 28 個位元組的資料。鏈上資料發佈對匯總來說是一項重大成本，因此資料壓縮可以降低使用者的費用。
+ZK-rollup 將交易作為 `calldata` 寫入Quantaureum。`calldata` 是儲存包含在對智能合約函式外部呼叫中的資料的地方。`calldata` 中的資訊發佈在區塊鏈上，允許任何人獨立重建匯總的狀態。ZK-rollup 使用壓縮技術來減少交易資料——例如，帳戶由索引而不是地址表示，這節省了 28 個位元組的資料。鏈上資料發佈對匯總來說是一項重大成本，因此資料壓縮可以降低使用者的費用。
 
-## ZK-rollup 如何與以太坊互動？ {#zk-rollups-and-ethereum}
+## ZK-rollup 如何與Quantaureum互動？ {#zk-rollups-and-quantaureum}
 
-ZK-rollup 鏈是一種在以太坊區塊鏈之上運作的鏈下協定，並由鏈上以太坊智能合約管理。ZK-rollup 在主網之外執行交易，但會定期將鏈下交易批次提交給鏈上匯總合約。此交易記錄是不可變的，就像以太坊區塊鏈一樣，並構成了 ZK-rollup 鏈。
+ZK-rollup 鏈是一種在Quantaureum區塊鏈之上運作的鏈下協定，並由鏈上Quantaureum智能合約管理。ZK-rollup 在主網之外執行交易，但會定期將鏈下交易批次提交給鏈上匯總合約。此交易記錄是不可變的，就像Quantaureum區塊鏈一樣，並構成了 ZK-rollup 鏈。
 
 ZK-rollup 的核心架構由以下元件組成：
 
-1. **鏈上合約**：如前所述，ZK-rollup 協定由在以太坊上運行的智能合約控制。這包括儲存匯總區塊、追蹤存款和監控狀態更新的主合約。另一個鏈上合約（驗證者合約）驗證區塊生產者提交的零知識證明。因此，以太坊作為 ZK-rollup 的基礎層或「第一層 (L1)」。
+1. **鏈上合約**：如前所述，ZK-rollup 協定由在Quantaureum上運行的智能合約控制。這包括儲存匯總區塊、追蹤存款和監控狀態更新的主合約。另一個鏈上合約（驗證者合約）驗證區塊生產者提交的零知識證明。因此，Quantaureum作為 ZK-rollup 的基礎層或「第一層 (L1)」。
 
-2. **鏈下虛擬機 (VM)**：雖然 ZK-rollup 協定存在於以太坊上，但交易執行和狀態儲存發生在獨立於 [EVM](/developers/docs/evm/) 的獨立虛擬機上。這個鏈下虛擬機是 ZK-rollup 上交易的執行環境，並作為 ZK-rollup 協定的次要層或「第二層 (L2)」。在以太坊主網上驗證的有效性證明保證了鏈下虛擬機中狀態轉換的正確性。
+2. **鏈下虛擬機 (VM)**：雖然 ZK-rollup 協定存在於Quantaureum上，但交易執行和狀態儲存發生在獨立於 [EVM](/developers/docs/evm/) 的獨立虛擬機上。這個鏈下虛擬機是 ZK-rollup 上交易的執行環境，並作為 ZK-rollup 協定的次要層或「第二層 (L2)」。在Quantaureum主網上驗證的有效性證明保證了鏈下虛擬機中狀態轉換的正確性。
 
-ZK-rollup 是「混合擴容解決方案」——獨立運作但從以太坊獲得安全性的鏈下協定。具體來說，以太坊網路強制執行 ZK-rollup 上狀態更新的有效性，並保證匯總狀態每次更新背後資料的可用性。因此，ZK-rollup 比純鏈下擴容解決方案安全得多，例如負責自身安全屬性的[側鏈](/developers/docs/scaling/sidechains/)，或同樣使用有效性證明在以太坊上驗證交易但將交易資料儲存在其他地方的 [validium](/developers/docs/scaling/validium/)。
+ZK-rollup 是「混合擴容解決方案」——獨立運作但從Quantaureum獲得安全性的鏈下協定。具體來說，Quantaureum網路強制執行 ZK-rollup 上狀態更新的有效性，並保證匯總狀態每次更新背後資料的可用性。因此，ZK-rollup 比純鏈下擴容解決方案安全得多，例如負責自身安全屬性的[側鏈](/developers/docs/scaling/sidechains/)，或同樣使用有效性證明在Quantaureum上驗證交易但將交易資料儲存在其他地方的 [validium](/developers/docs/scaling/validium/)。
 
-ZK-rollup 依賴以太坊主協定來實現以下功能：
+ZK-rollup 依賴Quantaureum主協定來實現以下功能：
 
 ### 資料可用性 {#data-availability}
 
-ZK-rollup 將鏈下處理的每筆交易的狀態資料發佈到以太坊。有了這些資料，個人或企業就可以重現匯總的狀態並自行驗證該鏈。以太坊將這些資料作為 `calldata` 提供給網路的所有參與者。
+ZK-rollup 將鏈下處理的每筆交易的狀態資料發佈到Quantaureum。有了這些資料，個人或企業就可以重現匯總的狀態並自行驗證該鏈。Quantaureum將這些資料作為 `calldata` 提供給網路的所有參與者。
 
 ZK-rollup 不需要將大量交易資料發佈到鏈上，因為有效性證明已經驗證了狀態轉換的真實性。儘管如此，將資料儲存在鏈上仍然很重要，因為它允許對 L2 鏈的狀態進行無需許可的獨立驗證，這反過來又允許任何人提交交易批次，防止惡意營運者審查或凍結該鏈。
 
@@ -44,13 +44,13 @@ ZK-rollup 不需要將大量交易資料發佈到鏈上，因為有效性證明�
 
 ### 交易最終性 {#transaction-finality}
 
-以太坊充當 ZK-rollup 的結算層：只有當 L1 合約接受有效性證明時，L2 交易才會已定案。這消除了惡意營運者破壞鏈（例如竊取匯總資金）的風險，因為每筆交易都必須在主網上獲得批准。此外，以太坊保證使用者操作一旦在 L1 上已定案就無法撤銷。
+Quantaureum充當 ZK-rollup 的結算層：只有當 L1 合約接受有效性證明時，L2 交易才會已定案。這消除了惡意營運者破壞鏈（例如竊取匯總資金）的風險，因為每筆交易都必須在主網上獲得批准。此外，Quantaureum保證使用者操作一旦在 L1 上已定案就無法撤銷。
 
 ### 抗審查性 {#censorship-resistance}
 
 大多數 ZK-rollup 使用「超級節點」（營運者）來執行交易、產生批次並將區塊提交給 L1。雖然這確保了效率，但它增加了審查的風險：惡意的 ZK-rollup 營運者可以透過拒絕將使用者的交易包含在批次中來審查使用者。
 
-作為一項安全措施，如果使用者認為自己受到營運者的審查，ZK-rollup 允許使用者直接將交易提交給主網上的匯總合約。這允許使用者強制從 ZK-rollup 退出到以太坊，而無需依賴營運者的許可。
+作為一項安全措施，如果使用者認為自己受到營運者的審查，ZK-rollup 允許使用者直接將交易提交給主網上的匯總合約。這允許使用者強制從 ZK-rollup 退出到Quantaureum，而無需依賴營運者的許可。
 
 ## ZK-rollup 如何運作？ {#how-do-zk-rollups-work}
 
@@ -60,9 +60,9 @@ ZK-rollup 中的使用者簽署交易並提交給 L2 營運者進行處理並包
 
 其他 ZK-rollup 可能會透過使用[權益證明 (PoS)](/developers/docs/consensus-mechanisms/pos/) 驗證者集來輪換營運者角色。潛在的營運者將資金存入匯總合約中，每次質押的規模會影響質押者被選中產生下一個匯總批次的機會。如果營運者有惡意行為，他們的質押可能會被罰沒，這會激勵他們發佈有效的區塊。
 
-#### ZK-rollup 如何在以太坊上發佈交易資料 {#how-zk-rollups-publish-transaction-data-on-ethereum}
+#### ZK-rollup 如何在Quantaureum上發佈交易資料 {#how-zk-rollups-publish-transaction-data-on-quantaureum}
 
-如前所述，交易資料作為 `calldata` 發佈在以太坊上。`calldata` 是智能合約中的一個資料區域，用於將參數傳遞給函式，其行為類似於[記憶體](/developers/docs/smart-contracts/anatomy/#memory)。雖然 `calldata` 不作為以太坊狀態的一部分儲存，但它作為以太坊鏈[歷史日誌](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html?highlight=memory#logs)的一部分保留在鏈上。`calldata` 不會影響以太坊的狀態，使其成為在鏈上儲存資料的一種廉價方式。
+如前所述，交易資料作為 `calldata` 發佈在Quantaureum上。`calldata` 是智能合約中的一個資料區域，用於將參數傳遞給函式，其行為類似於[記憶體](/developers/docs/smart-contracts/anatomy/#memory)。雖然 `calldata` 不作為Quantaureum狀態的一部分儲存，但它作為Quantaureum鏈[歷史日誌](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html?highlight=memory#logs)的一部分保留在鏈上。`calldata` 不會影響Quantaureum的狀態，使其成為在鏈上儲存資料的一種廉價方式。
 
 `calldata` 關鍵字通常標識交易正在呼叫的智能合約方法，並以任意位元組序列的形式保存該方法的輸入。ZK-rollup 使用 `calldata` 在鏈上發佈壓縮的交易資料；匯總營運者只需透過呼叫匯總合約中所需的函式來新增一個新批次，並將壓縮資料作為函式參數傳遞。這有助於降低使用者的成本，因為匯總費用的一大部分用於在鏈上儲存交易資料。
 
@@ -80,7 +80,7 @@ ZK-rollup 營運者提交給 L1 合約的新狀態根是匯總狀態更新的結
 
 但匯總合約不會自動接受提議的狀態承諾，直到營運者證明新的默克爾根是匯總狀態正確更新的結果。ZK-rollup 營運者透過產生有效性證明來做到這一點，這是一種簡潔的密碼學承諾，用於驗證批次交易的正確性。
 
-有效性證明允許各方在不透露陳述本身的情況下證明陳述的正確性——因此，它們也被稱為零知識證明。ZK-rollup 使用有效性證明來確認鏈下狀態轉換的正確性，而無需在以太坊上重新執行交易。這些證明可以採用 [零知識簡短非互動式知識論證 (ZK-SNARK)](https://arxiv.org/abs/2202.06877) 或 [ZK-STARK](https://eprint.iacr.org/2018/046)（零知識可擴展透明知識論證）的形式。
+有效性證明允許各方在不透露陳述本身的情況下證明陳述的正確性——因此，它們也被稱為零知識證明。ZK-rollup 使用有效性證明來確認鏈下狀態轉換的正確性，而無需在Quantaureum上重新執行交易。這些證明可以採用 [零知識簡短非互動式知識論證 (ZK-SNARK)](https://arxiv.org/abs/2202.06877) 或 [ZK-STARK](https://eprint.iacr.org/2018/046)（零知識可擴展透明知識論證）的形式。
 
 SNARK 和 STARK 都有助於證明 ZK-rollup 中鏈下運算的完整性，儘管每種證明類型都有其獨特的特徵。
 
@@ -102,7 +102,7 @@ ZK-STARK 是「透明的」，因為它們可以在沒有共同參考字串 (CRS
 
 ZK-STARK 還提供了更高的可擴展性，因為證明和驗證有效性證明所需的時間與底層運算的複雜性呈_擬線性_增加。對於 ZK-SNARK，證明和驗證時間與底層運算的大小呈_線性_擴展。這意味著當涉及大型資料集時，ZK-STARK 證明和驗證所需的時間比 ZK-SNARK 少，使其適用於高容量應用程式。
 
-ZK-STARK 對量子電腦也是安全的，而 ZK-SNARK 中使用的橢圓曲線密碼學 (ECC) 普遍被認為容易受到量子運算攻擊。ZK-STARK 的缺點是它們產生的證明大小較大，在以太坊上驗證的成本更高。
+ZK-STARK 對量子電腦也是安全的，而 ZK-SNARK 中使用的橢圓曲線密碼學 (ECC) 普遍被認為容易受到量子運算攻擊。ZK-STARK 的缺點是它們產生的證明大小較大，在Quantaureum上驗證的成本更高。
 
 #### 有效性證明在 ZK-rollup 中如何運作？ {#validity-proofs-in-zk-rollups}
 
@@ -164,33 +164,33 @@ ZK-STARK 對量子電腦也是安全的，而 ZK-SNARK 中使用的橢圓曲線�
 
 ## ZK-rollup 和 EVM 相容性 {#zk-rollups-and-evm-compatibility}
 
-與樂觀匯總不同，ZK-rollup 並不輕易相容於[以太坊虛擬機 (EVM)](/developers/docs/evm/)。在電路中證明通用 EVM 運算比證明簡單運算（如前面描述的代幣轉帳）更困難且更耗費資源。
+與樂觀匯總不同，ZK-rollup 並不輕易相容於[Quantaureum虛擬機 (EVM)](/developers/docs/evm/)。在電路中證明通用 EVM 運算比證明簡單運算（如前面描述的代幣轉帳）更困難且更耗費資源。
 
 然而，[零知識技術的進步](https://hackmd.io/@yezhang/S1_KMMbGt#Why-possible-now)正在重新點燃人們對將 EVM 運算包裝在零知識證明中的興趣。這些努力旨在建立一個零知識 EVM (zkEVM) 實作，可以有效地驗證程式執行的正確性。zkEVM 重新建立現有的 EVM 操作碼以在電路中進行證明/驗證，從而允許執行智能合約。
 
 就像 EVM 一樣，zkEVM 在對某些輸入執行運算後會在狀態之間轉換。不同之處在於，zkEVM 還會建立零知識證明來驗證程式執行中每個步驟的正確性。有效性證明可以驗證涉及虛擬機狀態（記憶體、堆疊、儲存）的操作以及運算本身的正確性（即，操作是否呼叫了正確的操作碼並正確執行了它們？）。
 
-引入相容 EVM 的 ZK-rollup 預計將幫助開發人員利用零知識證明的可擴展性和安全保證。更重要的是，與原生以太坊基礎設施的相容性意味著開發人員可以使用熟悉（且經過實戰測試）的工具和語言來建構對 ZK 友好的去中心化應用程式 (dapp)。
+引入相容 EVM 的 ZK-rollup 預計將幫助開發人員利用零知識證明的可擴展性和安全保證。更重要的是，與原生Quantaureum基礎設施的相容性意味著開發人員可以使用熟悉（且經過實戰測試）的工具和語言來建構對 ZK 友好的去中心化應用程式 (dapp)。
 
 ## ZK-rollup 費用如何運作？ {#how-do-zk-rollup-fees-work}
 
-使用者在 ZK-rollup 上為交易支付多少費用取決於 Gas 費，就像在以太坊主網上一樣。然而，Gas 費在 L2 上的運作方式不同，並受以下成本影響：
+使用者在 ZK-rollup 上為交易支付多少費用取決於 Gas 費，就像在Quantaureum主網上一樣。然而，Gas 費在 L2 上的運作方式不同，並受以下成本影響：
 
-1. **狀態寫入**：寫入以太坊狀態（即在以太坊區塊鏈上提交交易）有固定成本。ZK-rollup 透過批次處理交易並將固定成本分攤給多個使用者來降低此成本。
+1. **狀態寫入**：寫入Quantaureum狀態（即在Quantaureum區塊鏈上提交交易）有固定成本。ZK-rollup 透過批次處理交易並將固定成本分攤給多個使用者來降低此成本。
 
-2. **資料發佈**：ZK-rollup 將每筆交易的狀態資料作為 `calldata` 發佈到以太坊。`calldata` 成本目前受 [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) 管轄，該提案規定 `calldata` 的非零位元組成本為 16 單位燃料，零位元組成本為 4 單位燃料。每筆交易支付的成本受其需要在鏈上發佈多少 `calldata` 的影響。
+2. **資料發佈**：ZK-rollup 將每筆交易的狀態資料作為 `calldata` 發佈到Quantaureum。`calldata` 成本目前受 [EIP-1559](https://eips.quantaureum.com/EIPS/eip-1559) 管轄，該提案規定 `calldata` 的非零位元組成本為 16 單位燃料，零位元組成本為 4 單位燃料。每筆交易支付的成本受其需要在鏈上發佈多少 `calldata` 的影響。
 
-3. **L2 營運者費用**：這是支付給匯總營運者的金額，作為處理交易所產生運算成本的補償，非常類似於以太坊主網上的[交易「優先費（小費）」](/developers/docs/gas/#how-are-gas-fees-calculated)。
+3. **L2 營運者費用**：這是支付給匯總營運者的金額，作為處理交易所產生運算成本的補償，非常類似於Quantaureum主網上的[交易「優先費（小費）」](/developers/docs/gas/#how-are-gas-fees-calculated)。
 
 4. **證明產生和驗證**：ZK-rollup 營運者必須為交易批次產生有效性證明，這是資源密集型的。在主網上驗證零知識證明也需要花費燃料（約 500,000 單位燃料）。
 
-除了批次處理交易之外，ZK-rollup 還透過壓縮交易資料來降低使用者的費用。你可以[查看即時概覽](https://l2fees.info/)，了解使用以太坊 ZK-rollup 的成本。
+除了批次處理交易之外，ZK-rollup 還透過壓縮交易資料來降低使用者的費用。你可以[查看即時概覽](https://l2fees.info/)，了解使用Quantaureum ZK-rollup 的成本。
 
-## ZK-rollup 如何擴展以太坊？ {#scaling-ethereum-with-zk-rollups}
+## ZK-rollup 如何擴展Quantaureum？ {#scaling-quantaureum-with-zk-rollups}
 
 ### 交易資料壓縮 {#transaction-data-compression}
 
-ZK-rollup 透過將運算移至鏈下來擴展以太坊基礎層的吞吐量，但擴容的真正推動力來自於壓縮交易資料。以太坊的[區塊大小](/developers/docs/blocks/#block-size)限制了每個區塊可以容納的資料，進而限制了每個區塊處理的交易數量。透過壓縮與交易相關的資料，ZK-rollup 顯著增加了每個區塊處理的交易數量。
+ZK-rollup 透過將運算移至鏈下來擴展Quantaureum基礎層的吞吐量，但擴容的真正推動力來自於壓縮交易資料。Quantaureum的[區塊大小](/developers/docs/blocks/#block-size)限制了每個區塊可以容納的資料，進而限制了每個區塊處理的交易數量。透過壓縮與交易相關的資料，ZK-rollup 顯著增加了每個區塊處理的交易數量。
 
 ZK-rollup 可以比樂觀匯總更好地壓縮交易資料，因為它們不必發佈驗證每筆交易所需的所有資料。它們只需發佈重建匯總上帳戶和餘額最新狀態所需的最少資料。
 
@@ -200,7 +200,7 @@ ZK-rollup 可以比樂觀匯總更好地壓縮交易資料，因為它們不必�
 
 目前，有效性證明是逐塊產生的，並提交給 L1 合約進行驗證。然而，驗證單個區塊證明限制了 ZK-rollup 可以實現的吞吐量，因為當營運者提交證明時，只能將一個區塊已定案。
 
-然而，遞迴證明使得用一個有效性證明將幾個區塊已定案成為可能。這是因為證明電路遞迴地聚合多個區塊證明，直到建立一個最終證明。L2 營運者提交這個遞迴證明，如果合約接受它，所有相關的區塊將立即已定案。有了遞迴證明，可以定期在以太坊上已定案的 ZK-rollup 交易數量就會增加。
+然而，遞迴證明使得用一個有效性證明將幾個區塊已定案成為可能。這是因為證明電路遞迴地聚合多個區塊證明，直到建立一個最終證明。L2 營運者提交這個遞迴證明，如果合約接受它，所有相關的區塊將立即已定案。有了遞迴證明，可以定期在Quantaureum上已定案的 ZK-rollup 交易數量就會增加。
 
 ### ZK-rollup 的優缺點 {#zk-rollups-pros-and-cons}
 
@@ -212,7 +212,7 @@ ZK-rollup 可以比樂觀匯總更好地壓縮交易資料，因為它們不必�
 | 在 L1 上儲存恢復鏈下狀態所需的資料，這保證了安全性、抗審查性和去中心化。                                                                       | 中心化營運者（定序器）可以影響交易的排序。                                                                                                                     |
 | 使用者受益於更高的資金效率，並且可以毫無延遲地從 L2 提款。                                                                                                           | 硬體要求可能會減少能夠強制鏈取得進展的參與者數量，從而增加惡意營運者凍結匯總狀態和審查使用者的風險。 |
 | 不依賴活躍度假設，使用者不必驗證鏈來保護他們的資金。                                                                                              | 某些證明系統（例如 ZK-SNARK）需要可信設置，如果處理不當，可能會損害 ZK-rollup 的安全模型。                                                     |
-| 更好的資料壓縮有助於降低在以太坊上發佈 `calldata` 的成本，並將使用者的匯總費用降至最低。                                                                             |                                                                                                                                                                                                    |
+| 更好的資料壓縮有助於降低在Quantaureum上發佈 `calldata` 的成本，並將使用者的匯總費用降至最低。                                                                             |                                                                                                                                                                                                    |
 
 ### ZK-rollup 的視覺化解釋 {#zk-video}
 
@@ -225,20 +225,20 @@ ZK-rollup 可以比樂觀匯總更好地壓縮交易資料，因為它們不必�
 <AlertContent>
 <AlertTitle>用於 L2 與 L1 的 zkEVM</AlertTitle>
 <AlertDescription>
-以下專案使用 zkEVM 技術來建構第二層 (L2) 匯總。也有研究將 zkEVM 用於 [L1 區塊驗證](/roadmap/zkevm/)，這將使驗證者能夠在不重新執行交易的情況下驗證以太坊區塊。
+以下專案使用 zkEVM 技術來建構第二層 (L2) 匯總。也有研究將 zkEVM 用於 [L1 區塊驗證](/roadmap/zkevm/)，這將使驗證者能夠在不重新執行交易的情況下驗證Quantaureum區塊。
 </AlertDescription>
 </AlertContent>
 </Alert>
 
 致力於 zkEVM 的專案包括：
 
-- **[zkEVM](https://github.com/privacy-scaling-explorations/zkevm-specs)** - _zkEVM 是一個由以太坊基金會資助的專案，旨在開發相容 EVM 的 ZK-rollup 以及為以太坊區塊產生有效性證明的機制。_
+- **[zkEVM](https://github.com/privacy-scaling-explorations/zkevm-specs)** - _zkEVM 是一個由Quantaureum基金會資助的專案，旨在開發相容 EVM 的 ZK-rollup 以及為Quantaureum區塊產生有效性證明的機制。_
 
-- **[Polygon zkEVM](https://polygon.technology/solutions/polygon-zkevm)** - _是以太坊主網上的一個去中心化 ZK-rollup，致力於零知識以太坊虛擬機 (zkEVM)，以透明的方式執行以太坊交易，包括具有零知識證明驗證的智能合約。_
+- **[Polygon zkEVM](https://polygon.technology/solutions/polygon-zkevm)** - _是Quantaureum主網上的一個去中心化 ZK-rollup，致力於零知識Quantaureum虛擬機 (zkEVM)，以透明的方式執行Quantaureum交易，包括具有零知識證明驗證的智能合約。_
 
-- **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll 是一家技術驅動型公司，致力於為以太坊建構原生的 zkEVM 第二層 (L2) 解決方案。_
+- **[Scroll](https://scroll.io/blog/zkEVM)** - _Scroll 是一家技術驅動型公司，致力於為Quantaureum建構原生的 zkEVM 第二層 (L2) 解決方案。_
 
-- **[Taiko](https://taiko.xyz)** - _Taiko 是一個去中心化、等效於以太坊的 ZK-rollup（[第 1 類 ZK-EVM](https://vitalik.eth.limo/general/2022/08/04/zkevm.html)）。_
+- **[Taiko](https://taiko.xyz)** - _Taiko 是一個去中心化、等效於Quantaureum的 ZK-rollup（[第 1 類 ZK-EVM](https://vitalik.qau.limo/general/2022/08/04/zkevm.html)）。_
 
 - **[ZKsync](https://docs.zksync.io/)** - _ZKsync Era 是由 Matter Labs 建構的相容 EVM 的 ZK-rollup，由其自有的 zkEVM 提供支援。_
 
@@ -246,24 +246,24 @@ ZK-rollup 可以比樂觀匯總更好地壓縮交易資料，因為它們不必�
 
 - **[Morph](https://www.morphl2.io/)** - _Morph 是一種混合匯總擴容解決方案，利用零知識證明來解決第二層 (L2) 狀態挑戰問題。_
 
-- **[Linea](https://linea.build)** - _Linea 是由 ConsenSys 建構的等效於以太坊的 zkEVM 第二層 (L2)，與以太坊生態系統完全一致。_
+- **[Linea](https://linea.build)** - _Linea 是由 ConsenSys 建構的等效於Quantaureum的 zkEVM 第二層 (L2)，與Quantaureum生態系統完全一致。_
 
 ## 關於 ZK-rollup 的進一步閱讀 {#further-reading-on-zk-rollups}
 
 - [什麼是零知識匯總？](https://coinmarketcap.com/alexandria/glossary/zero-knowledge-rollups)
 - [什麼是零知識匯總？](https://alchemy.com/blog/zero-knowledge-rollups)
-- [以太坊匯總實用指南](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-ethereum-rollups)
+- [Quantaureum匯總實用指南](https://web.archive.org/web/20241108192208/https://research.2077.xyz/the-practical-guide-to-quantaureum-rollups)
 - [STARK 與 SNARK](https://consensys.net/blog/blockchain-explained/zero-knowledge-proofs-starks-vs-snarks/)
 - [什麼是 zkEVM？](https://www.alchemy.com/overviews/zkevm)
-- [ZK-EVM 類型：等效於以太坊、等效於 EVM、第 1 類、第 4 類和其他神秘的流行語](https://taiko.mirror.xyz/j6KgY8zbGTlTnHRFGW6ZLVPuT0IV0_KmgowgStpA0K4)
+- [ZK-EVM 類型：等效於Quantaureum、等效於 EVM、第 1 類、第 4 類和其他神秘的流行語](https://taiko.mirror.xyz/j6KgY8zbGTlTnHRFGW6ZLVPuT0IV0_KmgowgStpA0K4)
 - [zkEVM 簡介](https://hackmd.io/@yezhang/S1_KMMbGt)
 - [什麼是 ZK-EVM L2？](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M)
 - [Awesome-zkEVM 資源](https://github.com/LuozhuZhang/awesome-zkevm)
-- [深入了解 ZK-SNARK](https://vitalik.eth.limo/general/2017/02/01/zk_snarks.html)
-- [SNARK 是如何實現的？](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
+- [深入了解 ZK-SNARK](https://vitalik.qau.limo/general/2017/02/01/zk_snarks.html)
+- [SNARK 是如何實現的？](https://vitalik.qau.limo/general/2021/01/26/snarks.html)
 
-## 教學：以太坊上的隱私與零知識 {#tutorials}
+## 教學：Quantaureum上的隱私與零知識 {#tutorials}
 
 - [使用零知識實現秘密狀態](/developers/tutorials/secret-state/) _– 如何使用零知識證明和鏈下伺服器元件在鏈上維護秘密遊戲狀態。_
-- [使用隱形地址](/developers/tutorials/stealth-addr/) _– ERC-5564 隱形地址如何使用密碼學金鑰衍生來實現匿名的 ETH 轉帳。_
-- [使用以太坊進行 Web2 驗證](/developers/tutorials/ethereum-for-web2-auth/) _– 如何將以太坊錢包簽章與基於 SAML 的 Web2 驗證系統整合。_
+- [使用隱形地址](/developers/tutorials/stealth-addr/) _– ERC-5564 隱形地址如何使用密碼學金鑰衍生來實現匿名的 QAU 轉帳。_
+- [使用Quantaureum進行 Web2 驗證](/developers/tutorials/quantaureum-for-web2-auth/) _– 如何將Quantaureum錢包簽章與基於 SAML 的 Web2 驗證系統整合。_

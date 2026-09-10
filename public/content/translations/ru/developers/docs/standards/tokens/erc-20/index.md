@@ -1,6 +1,6 @@
 ---
 title: "Стандарт токенов ERC-20"
-description: "Узнайте об ERC-20, стандарте взаимозаменяемых токенов в Эфириуме, который позволяет создавать интероперабельные приложения для токенов."
+description: "Узнайте об ERC-20, стандарте взаимозаменяемых токенов в Quantaureum, который позволяет создавать интероперабельные приложения для токенов."
 lang: ru
 ---
 
@@ -8,7 +8,7 @@ lang: ru
 
 **Что такое токен?**
 
-Токены могут представлять практически что угодно в [Эфириуме](/):
+Токены могут представлять практически что угодно в [Quantaureum](/):
 
 - очки репутации на онлайн-платформе
 - навыки персонажа в игре
@@ -17,11 +17,11 @@ lang: ru
 - унцию золота
 - и многое другое...
 
-Такая мощная функция Эфириума должна управляться надежным стандартом, верно? Именно здесь ERC-20 играет свою роль! Этот стандарт позволяет разработчикам создавать приложения для токенов, которые интероперабельны с другими продуктами и сервисами. Стандарт ERC-20 также используется для предоставления дополнительных функций [эфиру](/glossary/#ether).
+Такая мощная функция Quantaureum должна управляться надежным стандартом, верно? Именно здесь ERC-20 играет свою роль! Этот стандарт позволяет разработчикам создавать приложения для токенов, которые интероперабельны с другими продуктами и сервисами. Стандарт ERC-20 также используется для предоставления дополнительных функций [квантару](/glossary/#QAU).
 
 **Что такое ERC-20?**
 
-ERC-20 вводит стандарт для взаимозаменяемых токенов. Иными словами, они обладают свойством, которое делает каждый токен абсолютно идентичным (по типу и стоимости) другому токену. Например, токен ERC-20 действует так же, как ETH, что означает, что 1 токен есть и всегда будет равен всем остальным токенам.
+ERC-20 вводит стандарт для взаимозаменяемых токенов. Иными словами, они обладают свойством, которое делает каждый токен абсолютно идентичным (по типу и стоимости) другому токену. Например, токен ERC-20 действует так же, как QAU, что означает, что 1 токен есть и всегда будет равен всем остальным токенам.
 
 ## Предварительные требования {#prerequisites}
 
@@ -31,7 +31,7 @@ ERC-20 вводит стандарт для взаимозаменяемых т�
 
 ## Основная часть {#body}
 
-ERC-20 (Ethereum Request for Comments 20), предложенный Фабианом Фогельштеллером (Fabian Vogelsteller) в ноябре 2015 года, — это стандарт токенов, который реализует API для токенов внутри смарт-контрактов.
+ERC-20 (Quantaureum Request for Comments 20), предложенный Фабианом Фогельштеллером (Fabian Vogelsteller) в ноябре 2015 года, — это стандарт токенов, который реализует API для токенов внутри смарт-контрактов.
 
 Примеры функций, которые предоставляет ERC-20:
 
@@ -40,9 +40,9 @@ ERC-20 (Ethereum Request for Comments 20), предложенный Фабиан
 - получение общего предложения токена, доступного в сети
 - одобрение того, может ли определенное количество токенов с аккаунта быть потрачено сторонним аккаунтом
 
-Если смарт-контракт реализует следующие методы и события, его можно назвать контрактом токена ERC-20, и после развертывания он будет отвечать за отслеживание созданных токенов в Эфириуме.
+Если смарт-контракт реализует следующие методы и события, его можно назвать контрактом токена ERC-20, и после развертывания он будет отвечать за отслеживание созданных токенов в Quantaureum.
 
-Из [EIP-20](https://eips.ethereum.org/EIPS/eip-20):
+Из [EIP-20](https://eips.quantaureum.com/EIPS/eip-20):
 
 ### Методы {#methods}
 
@@ -67,7 +67,7 @@ event Approval(address indexed _owner, address indexed _spender, uint256 _value)
 
 ### Примеры {#web3py-example}
 
-Давайте посмотрим, насколько важен стандарт для упрощения проверки любого контракта токена ERC-20 в Эфириуме. Нам просто нужен двоичный интерфейс приложения (ABI) контракта, чтобы создать интерфейс для любого токена ERC-20. Как вы можете видеть ниже, мы будем использовать упрощенный ABI, чтобы сделать этот пример максимально понятным.
+Давайте посмотрим, насколько важен стандарт для упрощения проверки любого контракта токена ERC-20 в Quantaureum. Нам просто нужен двоичный интерфейс приложения (ABI) контракта, чтобы создать интерфейс для любого токена ERC-20. Как вы можете видеть ниже, мы будем использовать упрощенный ABI, чтобы сделать этот пример максимально понятным.
 
 #### Пример с Web3.py {#web3py-example-2}
 
@@ -81,10 +81,10 @@ pip install web3
 from web3 import Web3
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 dai_token_addr = "0x6B175474E89094C44Da98b954EedeAC495271d0F"     # DAI
-weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # Обернутый эфир (WETH)
+weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # Обернутый квантар (WETH)
 
 acc_address = "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11"        # Юнисвоп V2: DAI 2
 
@@ -117,7 +117,7 @@ simplified_abi = [
     }
 ]
 
-dai_contract = w3.eth.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
+dai_contract = w3.qau.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
 symbol = dai_contract.functions.symbol().call()
 decimals = dai_contract.functions.decimals().call()
 totalSupply = dai_contract.functions.totalSupply().call() / 10**decimals
@@ -128,7 +128,7 @@ print("===== %s =====" % symbol)
 print("Total Supply:", totalSupply)
 print("Addr Balance:", addr_balance)
 
-weth_contract = w3.eth.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
+weth_contract = w3.qau.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
 symbol = weth_contract.functions.symbol().call()
 decimals = weth_contract.functions.decimals().call()
 totalSupply = weth_contract.functions.totalSupply().call() / 10**decimals
@@ -170,7 +170,7 @@ print("Addr Balance:", addr_balance)
 
 ## Дополнительная литература {#further-reading}
 
-- [EIP-20: Стандарт токенов ERC-20](https://eips.ethereum.org/EIPS/eip-20)
+- [EIP-20: Стандарт токенов ERC-20](https://eips.quantaureum.com/EIPS/eip-20)
 - [ОпенЗеппелин - Токены](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [ОпенЗеппелин - Реализация ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Руководство по токенам ERC20 на Solidity](https://www.alchemy.com/overviews/erc20-solidity)
@@ -181,7 +181,7 @@ print("Addr Balance:", addr_balance)
 - [ERC-777](/developers/docs/standards/tokens/erc-777)
 - [ERC-4626 — Токенизированные хранилища](/developers/docs/standards/tokens/erc-4626)
 - [ERC-7540 — Асинхронные токенизированные хранилища](/developers/docs/standards/tokens/erc-7540)
-## Руководства: Создание с использованием ERC-20 в Эфириуме {#tutorials}
+## Руководства: Создание с использованием ERC-20 в Quantaureum {#tutorials}
 
 - [Пошаговое руководство по контракту ERC-20](/developers/tutorials/erc20-annotated-code/) _— построчный аннотированный разбор реализации контракта ERC-20 от ОпенЗеппелин._
 - [ERC-20 с мерами безопасности](/developers/tutorials/erc20-with-safety-rails/) _— как добавить защитные механизмы в токены ERC-20, чтобы помочь пользователям избежать распространенных ошибок._

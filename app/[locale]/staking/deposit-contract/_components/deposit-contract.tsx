@@ -231,7 +231,7 @@ const DepositContract = () => {
           )}
         </CopyToClipboard>
         <InlineLink
-          href={`https://eth.blockscout.com/address/${DEPOSIT_CONTRACT_ADDRESS}`}
+          href={`https://qau.blockscout.com/address/${DEPOSIT_CONTRACT_ADDRESS}`}
         >
           {t("page-staking-deposit-contract-blockexplorer")}
         </InlineLink>

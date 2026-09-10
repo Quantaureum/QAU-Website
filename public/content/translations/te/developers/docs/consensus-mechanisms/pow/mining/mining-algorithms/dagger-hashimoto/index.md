@@ -48,7 +48,7 @@ def decode_int(s):
 తరువాత `sha3` అనేది ఒక పూర్ణాంకాన్ని తీసుకుని పూర్ణాంకాన్ని అవుట్‌పుట్ చేసే ఫంక్షన్ అని, మరియు `dbl_sha3` అనేది డబుల్-sha3 ఫంక్షన్ అని మేము ఊహిస్తాము; ఈ రిఫరెన్స్ కోడ్‌ను అమలులోకి మార్చినట్లయితే దీన్ని ఉపయోగించండి:
 
 ```python
-from pyethereum import utils
+from pyquantaureum import utils
 def sha3(x):
     if isinstance(x, (int, long)):
         x = encode_int(x)
@@ -141,8 +141,8 @@ def quick_calc(params, seed, p):
 
 ```python
 def get_prevhash(n):
-    from pyethereum.blocks import GENESIS_PREVHASH
-    from pyethereum import chain_manager
+    from pyquantaureum.blocks import GENESIS_PREVHASH
+    from pyquantaureum import chain_manager
     if n <= 0:
         return hash_to_int(GENESIS_PREVHASH)
     else:

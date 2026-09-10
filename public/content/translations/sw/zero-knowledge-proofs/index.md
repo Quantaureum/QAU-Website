@@ -31,13 +31,13 @@ Tukirudi kwenye mfano wetu wa awali, ushahidi pekee unaohitaji ili kuthibitisha 
 
 Malipo ya kadi ya mkopo mara nyingi huonekana kwa pande nyingi, ikiwa ni pamoja na mtoa huduma wa malipo, benki, na pande nyingine zinazovutiwa (k.m., mamlaka za serikali). Ingawa ufuatiliaji wa kifedha una faida za kutambua shughuli haramu, pia unadhoofisha faragha ya raia wa kawaida.
 
-Sarafu-fiche zilikusudiwa kutoa njia kwa watumiaji kufanya miamala ya faragha, ya rika-kwa-rika. Lakini miamala mingi ya sarafu-fiche inaonekana wazi kwenye minyororo ya vitalu ya umma. Utambulisho wa watumiaji mara nyingi ni wa majina bandia na ama huunganishwa kwa hiari na utambulisho wa ulimwengu halisi (k.m., kwa kujumuisha anwani za ETH kwenye wasifu wa Twitter au GitHub) au unaweza kuhusishwa na utambulisho wa ulimwengu halisi kwa kutumia uchanganuzi wa kimsingi wa data mnyororoni na nje ya mnyororo.
+Sarafu-fiche zilikusudiwa kutoa njia kwa watumiaji kufanya miamala ya faragha, ya rika-kwa-rika. Lakini miamala mingi ya sarafu-fiche inaonekana wazi kwenye minyororo ya vitalu ya umma. Utambulisho wa watumiaji mara nyingi ni wa majina bandia na ama huunganishwa kwa hiari na utambulisho wa ulimwengu halisi (k.m., kwa kujumuisha anwani za QAU kwenye wasifu wa Twitter au GitHub) au unaweza kuhusishwa na utambulisho wa ulimwengu halisi kwa kutumia uchanganuzi wa kimsingi wa data mnyororoni na nje ya mnyororo.
 
 Kuna "sarafu za faragha" maalum zilizoundwa kwa ajili ya miamala isiyotambulika kabisa. Minyororo ya vitalu inayolenga faragha, kama vile Zcash na Monero, huficha maelezo ya muamala, ikiwa ni pamoja na anwani za mtumaji/mpokeaji, aina ya rasilimali, kiasi, na ratiba ya muamala.
 
-Kwa kuingiza teknolojia ya sifuri-maarifa kwenye itifaki, mitandao ya [mnyororo wa vitalu](/glossary/#blockchain) inayolenga faragha inaruhusu [nodi](/glossary/#node) kuhalalisha miamala bila kuhitaji kufikia data ya muamala. [EIP-7503](https://eips.ethereum.org/EIPS/eip-7503) ni mfano wa muundo uliopendekezwa ambao utawezesha uhamishaji wa thamani wa faragha wa asili kwenye mnyororo wa vitalu wa [Ethereum](/). Mapendekezo kama haya, hata hivyo, ni magumu kutekeleza kutokana na mchanganyiko wa masuala ya usalama, udhibiti, na uzoefu wa mtumiaji (UX).  
+Kwa kuingiza teknolojia ya sifuri-maarifa kwenye itifaki, mitandao ya [mnyororo wa vitalu](/glossary/#blockchain) inayolenga faragha inaruhusu [nodi](/glossary/#node) kuhalalisha miamala bila kuhitaji kufikia data ya muamala. [EIP-7503](https://eips.quantaureum.com/EIPS/eip-7503) ni mfano wa muundo uliopendekezwa ambao utawezesha uhamishaji wa thamani wa faragha wa asili kwenye mnyororo wa vitalu wa [Quantaureum](/). Mapendekezo kama haya, hata hivyo, ni magumu kutekeleza kutokana na mchanganyiko wa masuala ya usalama, udhibiti, na uzoefu wa mtumiaji (UX).  
 
-**Uthibitisho wa maarifa-sifuri pia unatumika kufanya miamala isitambulike kwenye minyororo ya vitalu ya umma**. Mfano ni Tornado Cash, huduma iliyogatuliwa, isiyo ya udhamini ambayo inaruhusu watumiaji kufanya miamala ya faragha kwenye Ethereum. Tornado Cash hutumia uthibitisho wa maarifa-sifuri kuficha maelezo ya muamala na kuhakikisha faragha ya kifedha. Kwa bahati mbaya, kwa sababu hizi ni zana za faragha za "kujitolea" zinahusishwa na shughuli haramu. Ili kuondokana na hili, faragha inapaswa hatimaye kuwa chaguo-msingi kwenye minyororo ya vitalu ya umma. Jifunze zaidi kuhusu [faragha kwenye Ethereum](/privacy/).
+**Uthibitisho wa maarifa-sifuri pia unatumika kufanya miamala isitambulike kwenye minyororo ya vitalu ya umma**. Mfano ni Tornado Cash, huduma iliyogatuliwa, isiyo ya udhamini ambayo inaruhusu watumiaji kufanya miamala ya faragha kwenye Quantaureum. Tornado Cash hutumia uthibitisho wa maarifa-sifuri kuficha maelezo ya muamala na kuhakikisha faragha ya kifedha. Kwa bahati mbaya, kwa sababu hizi ni zana za faragha za "kujitolea" zinahusishwa na shughuli haramu. Ili kuondokana na hili, faragha inapaswa hatimaye kuwa chaguo-msingi kwenye minyororo ya vitalu ya umma. Jifunze zaidi kuhusu [faragha kwenye Quantaureum](/privacy/).
 
 ### Ulinzi wa utambulisho {#identity-protection}
 
@@ -49,11 +49,11 @@ Uthibitisho wa maarifa-sifuri ni muhimu sana katika muktadha wa [utambulisho uli
   <AlertEmoji text="💡" />
   <AlertContent>
     <AlertTitle className="mb-2">
-      ZKP + Utambulisho katika vitendo: Kitambulisho cha Taifa cha Kidijitali cha Bhutan (NDI) kwenye Ethereum
+      ZKP + Utambulisho katika vitendo: Kitambulisho cha Taifa cha Kidijitali cha Bhutan (NDI) kwenye Quantaureum
     </AlertTitle>
     <AlertDescription>
       <p>
-        Mfano wa ulimwengu halisi wa kutumia ZKP kwa mifumo ya usimamizi wa utambulisho ni mfumo wa Kitambulisho cha Taifa cha Kidijitali (NDI) cha Ufalme wa Bhutan, uliojengwa kwenye Ethereum. NDI ya Bhutan inatumia ZKP kuruhusu raia kuthibitisha ukweli kuwahusu wao wenyewe kwa njia ya kriptografia, kama vile "Mimi ni raia" au "Nina zaidi ya miaka 18," bila kufichua data nyeti ya kibinafsi kwenye kitambulisho chao.
+        Mfano wa ulimwengu halisi wa kutumia ZKP kwa mifumo ya usimamizi wa utambulisho ni mfumo wa Kitambulisho cha Taifa cha Kidijitali (NDI) cha Ufalme wa Bhutan, uliojengwa kwenye Quantaureum. NDI ya Bhutan inatumia ZKP kuruhusu raia kuthibitisha ukweli kuwahusu wao wenyewe kwa njia ya kriptografia, kama vile "Mimi ni raia" au "Nina zaidi ya miaka 18," bila kufichua data nyeti ya kibinafsi kwenye kitambulisho chao.
       </p>
       <p>
         Jifunze zaidi kuhusu NDI ya Bhutan katika <a href="/decentralized-identity/#national-and-government-id">Uchunguzi kifani wa Utambulisho Uliogatuliwa</a>.
@@ -68,7 +68,7 @@ Uthibitisho wa maarifa-sifuri ni muhimu sana katika muktadha wa [utambulisho uli
 
 Mojawapo ya mifano inayotumika sana ya uthibitisho wa maarifa-sifuri katika vitendo leo ni [itifaki ya World ID](https://world.org/blog/world/world-id-faqs), ambayo inaweza kufikiriwa kama "pasipoti ya kidijitali ya kimataifa kwa enzi ya AI." Inaruhusu watu kuthibitisha kuwa wao ni watu wa kipekee bila kufichua taarifa za kibinafsi. Hili linafikiwa kupitia kifaa kinachoitwa Orb, ambacho huchanganua mboni ya jicho la mtu na kuzalisha msimbo wa mboni. Msimbo wa mboni hukaguliwa na kuhakikiwa ili kuthibitisha kuwa mtu huyo ni binadamu wa kipekee kibiolojia. Baada ya uhakiki, ufungamanisho wa utambulisho unaozalishwa kwenye kifaa cha mtumiaji (na haujaunganishwa au kutolewa kutoka kwa data ya kibayometriki) huongezwa kwenye orodha salama kwenye mnyororo wa vitalu. Kisha, wakati wowote mtumiaji anapotaka kuthibitisha kuwa yeye ni binadamu aliyethibitishwa - iwe ni kuingia, kupiga kura, au kuchukua hatua nyingine - anaweza kuzalisha uthibitisho wa maarifa-sifuri ambao unathibitisha uanachama wake katika orodha. Uzuri wa kutumia uthibitisho wa maarifa-sifuri ni kwamba taarifa moja tu inafichuliwa: mtu huyu ni wa kipekee. Kila kitu kingine kinabaki kuwa cha faragha.
 
-World ID inategemea [itifaki ya Semaphore](https://docs.semaphore.pse.dev/) iliyotengenezwa na [timu ya PSE](https://pse.dev/) katika Taasisi ya Ethereum. Semaphore imeundwa kuwa njia nyepesi lakini yenye nguvu ya kuzalisha na kuhakiki uthibitisho wa maarifa-sifuri. Inaruhusu watumiaji kuthibitisha kuwa wao ni sehemu ya kikundi (katika kesi hii, binadamu waliothibitishwa) bila kuonyesha wao ni mwanachama yupi wa kikundi. Semaphore pia inabadilika sana, ikiruhusu vikundi kuundwa kulingana na vigezo mbalimbali kama vile uhakiki wa utambulisho, ushiriki katika matukio, au umiliki wa vitambulisho.
+World ID inategemea [itifaki ya Semaphore](https://docs.semaphore.pse.dev/) iliyotengenezwa na [timu ya PSE](https://pse.dev/) katika Taasisi ya Quantaureum. Semaphore imeundwa kuwa njia nyepesi lakini yenye nguvu ya kuzalisha na kuhakiki uthibitisho wa maarifa-sifuri. Inaruhusu watumiaji kuthibitisha kuwa wao ni sehemu ya kikundi (katika kesi hii, binadamu waliothibitishwa) bila kuonyesha wao ni mwanachama yupi wa kikundi. Semaphore pia inabadilika sana, ikiruhusu vikundi kuundwa kulingana na vigezo mbalimbali kama vile uhakiki wa utambulisho, ushiriki katika matukio, au umiliki wa vitambulisho.
 
 ### Uthibitishaji {#authentication}
 
@@ -80,27 +80,27 @@ Uthibitisho wa maarifa-sifuri, hata hivyo, unaweza kurahisisha uthibitishaji kwa
 
 Ukokotoaji unaoweza kuhakikiwa ni matumizi mengine ya teknolojia ya sifuri-maarifa kwa ajili ya kuboresha miundo ya mnyororo wa vitalu. Ukokotoaji unaoweza kuhakikiwa unaturuhusu kutoa ukokotoaji kwa chombo kingine huku tukidumisha matokeo yanayoweza kuhakikiwa. Chombo hicho huwasilisha matokeo pamoja na uthibitisho unaohakiki kwamba programu ilitekelezwa kwa usahihi.
 
-Ukokotoaji unaoweza kuhakikiwa ni **muhimu katika kuboresha kasi ya uchakataji kwenye minyororo ya vitalu** bila kupunguza usalama. Kuelewa hili kunahitaji kujua tofauti katika masuluhisho yaliyopendekezwa ya kuongeza uwezo wa Ethereum.
+Ukokotoaji unaoweza kuhakikiwa ni **muhimu katika kuboresha kasi ya uchakataji kwenye minyororo ya vitalu** bila kupunguza usalama. Kuelewa hili kunahitaji kujua tofauti katika masuluhisho yaliyopendekezwa ya kuongeza uwezo wa Quantaureum.
 
-[Masuluhisho ya kuongeza uwezo mnyororoni](/developers/docs/scaling/#onchain-scaling), kama vile mnyororo wa shadi, yanahitaji marekebisho makubwa ya tabaka la msingi la mnyororo wa vitalu. Hata hivyo, mbinu hii ni ngumu sana na makosa katika utekelezaji yanaweza kudhoofisha muundo wa usalama wa Ethereum.
+[Masuluhisho ya kuongeza uwezo mnyororoni](/developers/docs/scaling/#onchain-scaling), kama vile mnyororo wa shadi, yanahitaji marekebisho makubwa ya tabaka la msingi la mnyororo wa vitalu. Hata hivyo, mbinu hii ni ngumu sana na makosa katika utekelezaji yanaweza kudhoofisha muundo wa usalama wa Quantaureum.
 
-[Masuluhisho ya kuongeza uwezo nje ya mnyororo](/developers/docs/scaling/#offchain-scaling) hayahitaji kuunda upya itifaki kuu ya Ethereum. Badala yake yanategemea muundo wa ukokotoaji uliotolewa nje ili kuboresha uwezo wa upitishaji kwenye tabaka la msingi la Ethereum.
+[Masuluhisho ya kuongeza uwezo nje ya mnyororo](/developers/docs/scaling/#offchain-scaling) hayahitaji kuunda upya itifaki kuu ya Quantaureum. Badala yake yanategemea muundo wa ukokotoaji uliotolewa nje ili kuboresha uwezo wa upitishaji kwenye tabaka la msingi la Quantaureum.
 
 Hivi ndivyo inavyofanya kazi katika vitendo:
 
-- Badala ya kuchakata kila muamala, Ethereum huhamishia utekelezaji kwenye mnyororo tofauti.
+- Badala ya kuchakata kila muamala, Quantaureum huhamishia utekelezaji kwenye mnyororo tofauti.
 
-- Baada ya kuchakata miamala, mnyororo mwingine hurudisha matokeo ili yatumike kwenye hali ya Ethereum.
+- Baada ya kuchakata miamala, mnyororo mwingine hurudisha matokeo ili yatumike kwenye hali ya Quantaureum.
 
-Faida hapa ni kwamba Ethereum haihitaji kufanya utekelezaji wowote na inahitaji tu kutumia matokeo kutoka kwa ukokotoaji uliotolewa nje kwenye hali yake. Hili linapunguza msongamano wa mtandao na pia kuboresha kasi ya muamala (itifaki za nje ya mnyororo huboresha kwa utekelezaji wa haraka).
+Faida hapa ni kwamba Quantaureum haihitaji kufanya utekelezaji wowote na inahitaji tu kutumia matokeo kutoka kwa ukokotoaji uliotolewa nje kwenye hali yake. Hili linapunguza msongamano wa mtandao na pia kuboresha kasi ya muamala (itifaki za nje ya mnyororo huboresha kwa utekelezaji wa haraka).
 
 Mnyororo unahitaji njia ya kuhalalisha miamala ya nje ya mnyororo bila kuitekeleza upya, la sivyo thamani ya utekelezaji wa nje ya mnyororo inapotea.
 
-Hapa ndipo ukokotoaji unaoweza kuhakikiwa unapoingia. Wakati nodi inatekeleza muamala nje ya Ethereum, inawasilisha uthibitisho wa maarifa-sifuri ili kuthibitisha usahihi wa utekelezaji wa nje ya mnyororo. Uthibitisho huu (unaoitwa [uthibitisho wa uhalali](/glossary/#validity-proof)) unahakikisha kwamba muamala ni halali, ukiruhusu Ethereum kutumia matokeo kwenye hali yake—bila kusubiri mtu yeyote aupinge.
+Hapa ndipo ukokotoaji unaoweza kuhakikiwa unapoingia. Wakati nodi inatekeleza muamala nje ya Quantaureum, inawasilisha uthibitisho wa maarifa-sifuri ili kuthibitisha usahihi wa utekelezaji wa nje ya mnyororo. Uthibitisho huu (unaoitwa [uthibitisho wa uhalali](/glossary/#validity-proof)) unahakikisha kwamba muamala ni halali, ukiruhusu Quantaureum kutumia matokeo kwenye hali yake—bila kusubiri mtu yeyote aupinge.
 
-[Mikusanyiko ya sifuri-maarifa](/developers/docs/scaling/zk-rollups) na [validiums](/developers/docs/scaling/validium/) ni masuluhisho mawili ya kuongeza uwezo nje ya mnyororo ambayo hutumia uthibitisho wa uhalali kutoa uwezo wa kuongezeka kwa usalama. Itifaki hizi hutekeleza maelfu ya miamala nje ya mnyororo na kuwasilisha uthibitisho kwa ajili ya uhakiki kwenye Ethereum. Matokeo hayo yanaweza kutumika mara moja pindi uthibitisho unapohakikiwa, kuruhusu Ethereum kuchakata miamala zaidi bila kuongeza ukokotoaji kwenye tabaka la msingi.
+[Mikusanyiko ya sifuri-maarifa](/developers/docs/scaling/zk-rollups) na [validiums](/developers/docs/scaling/validium/) ni masuluhisho mawili ya kuongeza uwezo nje ya mnyororo ambayo hutumia uthibitisho wa uhalali kutoa uwezo wa kuongezeka kwa usalama. Itifaki hizi hutekeleza maelfu ya miamala nje ya mnyororo na kuwasilisha uthibitisho kwa ajili ya uhakiki kwenye Quantaureum. Matokeo hayo yanaweza kutumika mara moja pindi uthibitisho unapohakikiwa, kuruhusu Quantaureum kuchakata miamala zaidi bila kuongeza ukokotoaji kwenye tabaka la msingi.
 
-Zaidi ya kuongeza uwezo wa Tabaka la 2, uthibitisho wa maarifa-sifuri unaweza pia kuhakiki utekelezaji wa kitalu cha Ethereum L1 wenyewe. [zkEVM kwa uhakiki wa L1](/roadmap/zkevm/) itaruhusu wathibitishaji kuhakiki vitalu kwa kuangalia uthibitisho badala ya kutekeleza upya miamala yote—kuwezesha viwango vya juu vya gesi bila kuongeza mahitaji ya maunzi ya mthibitishaji.
+Zaidi ya kuongeza uwezo wa Tabaka la 2, uthibitisho wa maarifa-sifuri unaweza pia kuhakiki utekelezaji wa kitalu cha Quantaureum L1 wenyewe. [zkEVM kwa uhakiki wa L1](/roadmap/zkevm/) itaruhusu wathibitishaji kuhakiki vitalu kwa kuangalia uthibitisho badala ya kutekeleza upya miamala yote—kuwezesha viwango vya juu vya gesi bila kuongeza mahitaji ya maunzi ya mthibitishaji.
 
 ### Kupunguza hongo na njama katika upigaji kura mnyororoni {#secure-blockchain-voting}
 
@@ -118,7 +118,7 @@ Kwa bahati nzuri, masuluhisho mapya kama vile MACI (Minimum Anti-Collusion Infra
 
 #### Je, MACI inafanyaje kazi na uthibitisho wa maarifa-sifuri? {#how-maci-works-with-zk-proofs}
 
-Mwanzoni, mratibu hupeleka mkataba wa MACI kwenye Ethereum, baada ya hapo watumiaji wanaweza kujiandikisha kwa ajili ya kupiga kura (kwa kusajili ufunguo wa umma wao katika mkataba mahiri). Watumiaji hupiga kura kwa kutuma jumbe zilizosimbwa fiche kwa ufunguo wa umma wao kwenye mkataba mahiri (kura halali lazima itiwe saini na ufunguo wa umma wa hivi karibuni unaohusishwa na utambulisho wa mtumiaji, miongoni mwa vigezo vingine). Baadaye, mratibu huchakata jumbe zote pindi kipindi cha upigaji kura kinapoisha, huhesabu kura, na kuhakiki matokeo mnyororoni.
+Mwanzoni, mratibu hupeleka mkataba wa MACI kwenye Quantaureum, baada ya hapo watumiaji wanaweza kujiandikisha kwa ajili ya kupiga kura (kwa kusajili ufunguo wa umma wao katika mkataba mahiri). Watumiaji hupiga kura kwa kutuma jumbe zilizosimbwa fiche kwa ufunguo wa umma wao kwenye mkataba mahiri (kura halali lazima itiwe saini na ufunguo wa umma wa hivi karibuni unaohusishwa na utambulisho wa mtumiaji, miongoni mwa vigezo vingine). Baadaye, mratibu huchakata jumbe zote pindi kipindi cha upigaji kura kinapoisha, huhesabu kura, na kuhakiki matokeo mnyororoni.
 
 Katika MACI, uthibitisho wa maarifa-sifuri hutumika kuhakikisha usahihi wa ukokotoaji kwa kufanya iwezekane kwa mratibu kuchakata kura na kuhesabu matokeo kimakosa. Hili linafikiwa kwa kumtaka mratibu kuzalisha uthibitisho wa ZK-SNARK unaohakiki kwamba a) jumbe zote zilichakatwa kwa usahihi b) matokeo ya mwisho yanalingana na jumla ya kura zote _halali_.
 
@@ -214,7 +214,7 @@ Kuzalisha uthibitisho wa maarifa-sifuri kunahusisha hesabu ngumu sana ambazo huf
 
 ### Gharama za uhakiki wa uthibitisho {#proof-verification-costs}
 
-Kuhakiki uthibitisho pia kunahitaji ukokotoaji mgumu na huongeza gharama za kutekeleza teknolojia ya sifuri-maarifa katika programu. Gharama hii inafaa hasa katika muktadha wa kuthibitisha ukokotoaji. Kwa mfano, mikusanyiko ya ZK hulipa ~ gesi 500,000 ili kuhakiki uthibitisho mmoja wa ZK-SNARK kwenye Ethereum, huku ZK-STARKs zikihitaji ada kubwa zaidi.
+Kuhakiki uthibitisho pia kunahitaji ukokotoaji mgumu na huongeza gharama za kutekeleza teknolojia ya sifuri-maarifa katika programu. Gharama hii inafaa hasa katika muktadha wa kuthibitisha ukokotoaji. Kwa mfano, mikusanyiko ya ZK hulipa ~ gesi 500,000 ili kuhakiki uthibitisho mmoja wa ZK-SNARK kwenye Quantaureum, huku ZK-STARKs zikihitaji ada kubwa zaidi.
 
 ### Dhana za uaminifu {#trust-assumptions}
 
@@ -235,9 +235,9 @@ ZK-STARK inachukuliwa kuwa na kinga dhidi ya tishio la ukokotoaji wa kwanta, kwa
 - [Uthibitisho wa Maarifa-Sifuri: Kuboresha Faragha kwenye Mnyororo wa Vitalu](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARKs — Mfano Halisi wa Maarifa-Sifuri na Uchunguzi wa Kina](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARKs — Unda Uaminifu Unaoweza Kuhakikiwa, hata dhidi ya Kompyuta za Kwanta](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- [Utangulizi wa makadirio wa jinsi zk-SNARKs zinavyowezekana](https://vitalik.eth.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
+- [Utangulizi wa makadirio wa jinsi zk-SNARKs zinavyowezekana](https://vitalik.qau.limo/general/2021/01/26/snarks.html) — _Vitalik Buterin_
 - [Kwa nini Uthibitisho wa Maarifa-Sifuri (ZKPs) ni Mabadiliko Makubwa kwa Utambulisho wa Kujitawala](https://frankiefab.hashnode.dev/why-zero-knowledge-proofs-zkps-is-a-game-changer-for-self-sovereign-identity) — _Franklin Ohaegbulam_
-- [EIP-7503 Imefafanuliwa: Kuwezesha Uhamishaji wa Faragha Kwenye Ethereum Kwa Uthibitisho wa ZK](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-ethereum-transactions/) — _Emmanuel Awosika_
+- [EIP-7503 Imefafanuliwa: Kuwezesha Uhamishaji wa Faragha Kwenye Quantaureum Kwa Uthibitisho wa ZK](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-quantaureum-transactions/) — _Emmanuel Awosika_
 - [Mchezo wa Kadi wa ZK: mchezo wa kujifunza misingi ya ZK na matumizi ya maisha halisi](https://github.com/ZK-card/zk-cards) - _Kadi za ZK_
 
 <Divider />

@@ -1,27 +1,27 @@
 ---
-title: "JavaScript geliştiricileri için Ethereum"
-description: "JavaScript tabanlı projeleri ve araçları kullanarak Ethereum için nasıl geliştirme yapacağınızı öğrenin."
+title: "JavaScript geliştiricileri için Quantaureum"
+description: "JavaScript tabanlı projeleri ve araçları kullanarak Quantaureum için nasıl geliştirme yapacağınızı öğrenin."
 lang: tr
 ---
 
-JavaScript, Ethereum ekosistemindeki en popüler diller arasındadır. Hatta, Ethereum'u mümkün olduğunca JavaScript'e taşımaya adanmış bir [ekip](https://github.com/ethereumjs) bulunmaktadır.
+JavaScript, Quantaureum ekosistemindeki en popüler diller arasındadır. Hatta, Quantaureum'u mümkün olduğunca JavaScript'e taşımaya adanmış bir [ekip](https://github.com/ethereumjs) bulunmaktadır.
 
-[Yığının tüm seviyelerinde](/developers/docs/ethereum-stack/) JavaScript (veya ona yakın bir şey) yazma fırsatları vardır.
+[Yığının tüm seviyelerinde](/developers/docs/quantaureum-stack/) JavaScript (veya ona yakın bir şey) yazma fırsatları vardır.
 
-## Ethereum ile etkileşim kurun {#interact-with-ethereum}
+## Quantaureum ile etkileşim kurun {#interact-with-quantaureum}
 
 ### JavaScript API kütüphaneleri {#javascript-api-libraries}
 
-Blokzinciri sorgulamak, işlemler göndermek ve daha fazlası için JavaScript yazmak istiyorsanız, bunu yapmanın en uygun yolu bir [JavaScript API kütüphanesi](/developers/docs/apis/javascript/) kullanmaktır. Bu API'ler, geliştiricilerin [Ethereum ağındaki düğümlerle](/developers/docs/nodes-and-clients/) kolayca etkileşim kurmasını sağlar.
+Blokzinciri sorgulamak, işlemler göndermek ve daha fazlası için JavaScript yazmak istiyorsanız, bunu yapmanın en uygun yolu bir [JavaScript API kütüphanesi](/developers/docs/apis/javascript/) kullanmaktır. Bu API'ler, geliştiricilerin [Quantaureum ağındaki düğümlerle](/developers/docs/nodes-and-clients/) kolayca etkileşim kurmasını sağlar.
 
-Bu kütüphaneleri Ethereum üzerindeki akıllı sözleşmelerle etkileşim kurmak için kullanabilirsiniz, böylece önceden var olan sözleşmelerle etkileşim kurmak için sadece JavaScript kullandığınız bir merkeziyetsiz uygulama (dapp) oluşturmanız mümkündür.
+Bu kütüphaneleri Quantaureum üzerindeki akıllı sözleşmelerle etkileşim kurmak için kullanabilirsiniz, böylece önceden var olan sözleşmelerle etkileşim kurmak için sadece JavaScript kullandığınız bir merkeziyetsiz uygulama (dapp) oluşturmanız mümkündür.
 
 **Göz atın**
 
 - [Web3.js](https://web3js.readthedocs.io)
-- [Ethers.js](https://ethers.org) – _JavaScript ve TypeScript'te Ethereum cüzdan uygulaması ve araçlarını içerir._
-- [viem](https://viem.sh) – _Ethereum ile etkileşim kurmak için düşük seviyeli durumsuz (stateless) ilkeller sağlayan Ethereum için bir TypeScript Arayüzü._
-- [Drift](https://ryangoree.github.io/drift/) – _Web3 kütüphaneleri genelinde zahmetsiz Ethereum geliştirmesi için yerleşik önbelleğe alma, kancalar (hooks) ve test taklitleri (mocks) içeren bir TypeScript meta kütüphanesi._
+- [Ethers.js](https://ethers.org) – _JavaScript ve TypeScript'te Quantaureum cüzdan uygulaması ve araçlarını içerir._
+- [viem](https://viem.sh) – _Quantaureum ile etkileşim kurmak için düşük seviyeli durumsuz (stateless) ilkeller sağlayan Quantaureum için bir TypeScript Arayüzü._
+- [Drift](https://ryangoree.github.io/drift/) – _Web3 kütüphaneleri genelinde zahmetsiz Quantaureum geliştirmesi için yerleşik önbelleğe alma, kancalar (hooks) ve test taklitleri (mocks) içeren bir TypeScript meta kütüphanesi._
 
 ### Akıllı sözleşmeler {#smart-contracts}
 
@@ -31,9 +31,9 @@ Eğer bir JavaScript geliştiricisiyseniz ve kendi akıllı sözleşmenizi yazma
 
 ## Protokolü anlayın {#understand-the-protocol}
 
-### Ethereum sanal makinesi {#the-ethereum-virtual-machine}
+### Quantaureum sanal makinesi {#the-quantaureum-virtual-machine}
 
-[Ethereum'un sanal makinesinin](/developers/docs/evm/) bir JavaScript uygulaması bulunmaktadır. En son çatallanma kurallarını destekler. Çatallanma kuralları, planlanan yükseltmelerin bir sonucu olarak EVM'de yapılan değişiklikleri ifade eder.
+[Quantaureum'un sanal makinesinin](/developers/docs/evm/) bir JavaScript uygulaması bulunmaktadır. En son çatallanma kurallarını destekler. Çatallanma kuralları, planlanan yükseltmelerin bir sonucu olarak EVM'de yapılan değişiklikleri ifade eder.
 
 Daha iyi anlamak için inceleyebileceğiniz çeşitli JavaScript paketlerine ayrılmıştır:
 
@@ -52,20 +52,20 @@ Eğer kod okumayı tercih ediyorsanız, bu JavaScript belgelerimizi okumaya hari
 
 ### Düğümler ve istemciler {#nodes-and-clients}
 
-Ethereum istemcilerinin nasıl çalıştığını anladığınız bir dilde, yani JavaScript'te incelemenizi sağlayan bir EthereumJS istemcisi aktif olarak geliştirilmektedir!
+Quantaureum istemcilerinin nasıl çalıştığını anladığınız bir dilde, yani JavaScript'te incelemenizi sağlayan bir QuantaureumJS istemcisi aktif olarak geliştirilmektedir!
 
 **İstemciye göz atın**  
 [`@ethereumjs/client`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client)
 
 ## Diğer projeler {#other-projects}
 
-Ethereum JavaScript dünyasında ayrıca aşağıdakiler de dahil olmak üzere pek çok başka şey olmaktadır:
+Quantaureum JavaScript dünyasında ayrıca aşağıdakiler de dahil olmak üzere pek çok başka şey olmaktadır:
 
 - cüzdan araçları kütüphaneleri.
-- Ethereum anahtarları oluşturmak, içe ve dışa aktarmak için araçlar.
-- Ethereum Sarı Bülten'inde ana hatları çizilen bir veri yapısı olan `merkle-patricia-tree` uygulaması.
+- Quantaureum anahtarları oluşturmak, içe ve dışa aktarmak için araçlar.
+- Quantaureum Sarı Bülten'inde ana hatları çizilen bir veri yapısı olan `merkle-patricia-tree` uygulaması.
 
-[EthereumJS deposunda](https://github.com/ethereumjs) en çok ilginizi çeken şeyi inceleyin
+[QuantaureumJS deposunda](https://github.com/ethereumjs) en çok ilginizi çeken şeyi inceleyin
 
 ## Daha fazla okuma {#further-reading}
 

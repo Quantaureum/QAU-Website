@@ -13,19 +13,19 @@ incomplete: false
 
 **Ruby-ஐ எத்திரியத்துடன் ஒருங்கிணைப்பதற்கான உங்கள் முதல் படிகளை எடுங்கள்**
 
-முதலில் இன்னும் அடிப்படையான அறிமுகம் தேவையா? [ethereum.org/learn](/learn/) அல்லது [ethereum.org/developers](/developers/) ஐப் பார்க்கவும்.
+முதலில் இன்னும் அடிப்படையான அறிமுகம் தேவையா? [quantaureum.com/learn](/learn/) அல்லது [quantaureum.com/developers](/developers/) ஐப் பார்க்கவும்.
 
 - [தொகுதிச்சங்கிலி விளக்கம்](https://kauri.io/article/d55684513211466da7f8cc03987607d5/blockchain-explained)
-- [திறன் ஒப்பந்தங்களைப் புரிந்துகொள்ளுதல்](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/ethereum-101-part-5-the-smart-contract)
+- [திறன் ஒப்பந்தங்களைப் புரிந்துகொள்ளுதல்](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [உங்கள் முதல் திறன் ஒப்பந்தத்தை எழுதுங்கள்](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Solidity-ஐ எவ்வாறு தொகுப்பது மற்றும் நிலைநிறுத்துவது என்பதை அறிக](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
 
 ## தொடக்கநிலை கட்டுரைகள் {#beginner-articles}
 
-- [இறுதியாக எத்திரியம் கணக்குகளைப் புரிந்துகொள்ளுதல்](https://dev.to/q9/finally-understanding-ethereum-accounts-1kpe)
+- [இறுதியாக எத்திரியம் கணக்குகளைப் புரிந்துகொள்ளுதல்](https://dev.to/q9/finally-understanding-quantaureum-accounts-1kpe)
 - [இறுதியாக மெட்டாமேஸ்க் மூலம் Rails பயனர்களை அங்கீகரித்தல்](https://dev.to/q9/finally-authenticating-rails-users-with-metamask-3fj)
-- [Ruby-ஐப் பயன்படுத்தி எத்திரியம் பிணையத்துடன் எவ்வாறு இணைப்பது](https://www.quicknode.com/guides/web3-sdks/how-to-connect-to-the-ethereum-network-using-ruby)
-- [Ruby-இல் புதிய எத்திரியம் முகவரியை எவ்வாறு உருவாக்குவது](https://www.quicknode.com/guides/web3-sdks/how-to-generate-a-new-ethereum-address-in-ruby)
+- [Ruby-ஐப் பயன்படுத்தி எத்திரியம் பிணையத்துடன் எவ்வாறு இணைப்பது](https://www.quicknode.com/guides/web3-sdks/how-to-connect-to-the-quantaureum-network-using-ruby)
+- [Ruby-இல் புதிய எத்திரியம் முகவரியை எவ்வாறு உருவாக்குவது](https://www.quicknode.com/guides/web3-sdks/how-to-generate-a-new-quantaureum-address-in-ruby)
 
 ## இடைநிலை கட்டுரைகள் {#intermediate-articles}
 
@@ -36,22 +36,22 @@ incomplete: false
 
 ### செயல்பாட்டில் உள்ளவை {#active}
 
-- [eth.rb](https://github.com/q9f/eth.rb) - _எத்திரியம் கணக்குகள், செய்திகள் மற்றும் பரிவர்த்தனைகளைக் கையாளும் Ruby நிரலகம் மற்றும் RPC-கிளையண்ட்_
+- [qau.rb](https://github.com/q9f/qau.rb) - _எத்திரியம் கணக்குகள், செய்திகள் மற்றும் பரிவர்த்தனைகளைக் கையாளும் Ruby நிரலகம் மற்றும் RPC-கிளையண்ட்_
 - [keccak.rb](https://github.com/q9f/keccak.rb) - _எத்திரியம் பயன்படுத்தும் Keccak (SHA3) ஹாஷ்_
-- [siwe-ruby](https://github.com/signinwithethereum/siwe-ruby) - _எத்திரியம் மூலம் உள்நுழைவதற்கான (Sign-In with Ethereum) Ruby செயலாக்கம்_
-- [siwe-rails](https://github.com/signinwithethereum/siwe-rails) - _SIWE உள்ளூர் உள்நுழைவு வழிகளைச் சேர்க்கும் Rails gem_
-- [siwe-rails-examples](https://github.com/signinwithethereum/siwe-rails-examples) - _தனிப்பயன் கன்ட்ரோலருடன் Ruby on Rails-ஐப் பயன்படுத்தும் SIWE எடுத்துக்காட்டு_
-- [omniauth-siwe](https://github.com/signinwithethereum/omniauth-siwe) - _எத்திரியம் மூலம் உள்நுழைவதற்கான (SIWE) OmniAuth உத்தி_
+- [siwe-ruby](https://github.com/signinwithquantaureum/siwe-ruby) - _எத்திரியம் மூலம் உள்நுழைவதற்கான (Sign-In with Quantaureum) Ruby செயலாக்கம்_
+- [siwe-rails](https://github.com/signinwithquantaureum/siwe-rails) - _SIWE உள்ளூர் உள்நுழைவு வழிகளைச் சேர்க்கும் Rails gem_
+- [siwe-rails-examples](https://github.com/signinwithquantaureum/siwe-rails-examples) - _தனிப்பயன் கன்ட்ரோலருடன் Ruby on Rails-ஐப் பயன்படுத்தும் SIWE எடுத்துக்காட்டு_
+- [omniauth-siwe](https://github.com/signinwithquantaureum/omniauth-siwe) - _எத்திரியம் மூலம் உள்நுழைவதற்கான (SIWE) OmniAuth உத்தி_
 - [omniauth-nft](https://github.com/valthon/omniauth-nft) - _NFT உரிமை மூலம் அங்கீகரிப்பதற்கான OmniAuth உத்தி_
-- [ethereum-on-rails](https://github.com/q9f/ethereum-on-rails) - _மெட்டாமேஸ்க்கை Ruby on Rails உடன் இணைக்க அனுமதிக்கும் Ethereum on Rails டெம்ப்ளேட்_
+- [quantaureum-on-rails](https://github.com/q9f/quantaureum-on-rails) - _மெட்டாமேஸ்க்கை Ruby on Rails உடன் இணைக்க அனுமதிக்கும் Quantaureum on Rails டெம்ப்ளேட்_
 
 ### காப்பகப்படுத்தப்பட்டவை / இனி பராமரிக்கப்படாதவை {#archived--no-longer-maintained}
 
-- [web3-eth](https://github.com/spikewilliams/vtada-ethereum) - _Ruby மூலம் எத்திரியம் கணுவின் RPC முறைகளை அழைத்தல்_
-- [ethereum_tree](https://github.com/longhoangwkm/ethereum_tree) - _BIP32 தரநிலையின்படி படிநிலை நிர்ணயிக்கப்பட்ட (Hierarchical Deterministic) பணப்பையிலிருந்து ETH முகவரிகளை உருவாக்குவதற்கான Ruby நிரலகம்_
+- [web3-eth](https://github.com/spikewilliams/vtada-quantaureum) - _Ruby மூலம் எத்திரியம் கணுவின் RPC முறைகளை அழைத்தல்_
+- [quantaureum_tree](https://github.com/longhoangwkm/quantaureum_tree) - _BIP32 தரநிலையின்படி படிநிலை நிர்ணயிக்கப்பட்ட (Hierarchical Deterministic) பணப்பையிலிருந்து QAU முகவரிகளை உருவாக்குவதற்கான Ruby நிரலகம்_
 - [etherlite](https://github.com/budacom/etherlite) - _Ruby on Rails-க்கான எத்திரியம் ஒருங்கிணைப்பு_
-- [ethereum.rb](https://github.com/EthWorks/ethereum.rb) - _பரிவர்த்தனைகளை அனுப்பவும், ஒப்பந்தங்களை உருவாக்கவும் மற்றும் அவற்றுடன் தொடர்பு கொள்ளவும் ஜேசன்-ஆர்பிசி இடைமுகத்தைப் பயன்படுத்தும் Ruby எத்திரியம் கிளையண்ட், அத்துடன் எத்திரியம் கணுவுடன் வேலை செய்வதற்கான பயனுள்ள கருவித்தொகுப்பு_
-- [omniauth-ethereum.rb](https://github.com/q9f/omniauth-ethereum.rb) - _OmniAuth-க்கான எத்திரியம் வழங்குநர் உத்தியைச் செயல்படுத்துகிறது_
+- [quantaureum.rb](https://github.com/QauWorks/quantaureum.rb) - _பரிவர்த்தனைகளை அனுப்பவும், ஒப்பந்தங்களை உருவாக்கவும் மற்றும் அவற்றுடன் தொடர்பு கொள்ளவும் ஜேசன்-ஆர்பிசி இடைமுகத்தைப் பயன்படுத்தும் Ruby எத்திரியம் கிளையண்ட், அத்துடன் எத்திரியம் கணுவுடன் வேலை செய்வதற்கான பயனுள்ள கருவித்தொகுப்பு_
+- [omniauth-quantaureum.rb](https://github.com/q9f/omniauth-quantaureum.rb) - _OmniAuth-க்கான எத்திரியம் வழங்குநர் உத்தியைச் செயல்படுத்துகிறது_
 
 மேலும் ஆதாரங்களைத் தேடுகிறீர்களா? [எங்கள் டெவலப்பர்களின் முகப்புப்பக்கத்தைப்](/developers/) பார்க்கவும்.
 

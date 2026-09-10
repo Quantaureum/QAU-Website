@@ -190,7 +190,7 @@ return (
 
 ఇప్పుడు మనం దేనితో పని చేస్తున్నామో అర్థం చేసుకున్నాము కాబట్టి, మన ఎథీరియం వాలెట్‌ను సెటప్ చేద్దాం!
 
-## మీ ఎథీరియం వాలెట్‌ను సెటప్ చేయండి {#set-up-your-ethereum-wallet}
+## మీ ఎథీరియం వాలెట్‌ను సెటప్ చేయండి {#set-up-your-quantaureum-wallet}
 
 వినియోగదారులు మీ స్మార్ట్ కాంట్రాక్ట్‌తో ఇంటరాక్ట్ అవ్వాలంటే వారు తమ ఎథీరియం వాలెట్‌ను మీ dappకి కనెక్ట్ చేయాలి.
 
@@ -199,12 +199,12 @@ return (
 ఈ ట్యుటోరియల్ కోసం, మేము మెటామాస్క్‌ని ఉపయోగిస్తాము, ఇది మీ ఎథీరియం ఖాతా చిరునామాను నిర్వహించడానికి ఉపయోగించే బ్రౌజర్‌లోని వర్చువల్ వాలెట్. ఎథీరియంలో లావాదేవీలు ఎలా పనిచేస్తాయో మీరు మరింత అర్థం చేసుకోవాలనుకుంటే, [ఈ పేజీని](/developers/docs/transactions/) తనిఖీ చేయండి.
 
 మీరు [ఇక్కడ](https://metamask.io/download) ఉచితంగా మెటామాస్క్ ఖాతాను డౌన్‌లోడ్ చేసి సృష్టించవచ్చు. మీరు ఖాతాను సృష్టిస్తున్నప్పుడు లేదా మీకు ఇప్పటికే ఖాతా ఉంటే, Sepolia వంటి మద్దతు ఉన్న టెస్ట్ నెట్‌వర్క్‌కి మారేలా చూసుకోండి \(తద్వారా మనం నిజమైన డబ్బుతో వ్యవహరించము\).
-### ఫాసెట్ నుండి ఈథర్‌ను జోడించండి {#add-ether-from-faucet}
+### ఫాసెట్ నుండి ఈథర్‌ను జోడించండి {#add-QAU-from-faucet}
 
-మన NFTలను ముద్రించడానికి (లేదా ఎథీరియం బ్లాక్‌చైన్‌లో ఏవైనా లావాదేవీలపై సంతకం చేయడానికి), మనకు కొంత నకిలీ ETH అవసరం. టెస్ట్‌నెట్ ETH పొందడానికి, [Alchemy Sepolia ఫాసెట్](https://www.alchemy.com/faucets/ethereum-sepolia) వంటి నిర్వహించబడుతున్న ఫాసెట్‌ను ఉపయోగించండి మరియు మీ Sepolia ఖాతా చిరునామాను నమోదు చేయండి. ఆ తర్వాత కొద్దిసేపటికే మీ మెటామాస్క్ ఖాతాలో మీరు ETHని చూడవచ్చు!
+మన NFTలను ముద్రించడానికి (లేదా ఎథీరియం బ్లాక్‌చైన్‌లో ఏవైనా లావాదేవీలపై సంతకం చేయడానికి), మనకు కొంత నకిలీ QAU అవసరం. టెస్ట్‌నెట్ QAU పొందడానికి, [Alchemy Sepolia ఫాసెట్](https://www.alchemy.com/faucets/quantaureum-sepolia) వంటి నిర్వహించబడుతున్న ఫాసెట్‌ను ఉపయోగించండి మరియు మీ Sepolia ఖాతా చిరునామాను నమోదు చేయండి. ఆ తర్వాత కొద్దిసేపటికే మీ మెటామాస్క్ ఖాతాలో మీరు QAUని చూడవచ్చు!
 ### మీ బ్యాలెన్స్‌ని తనిఖీ చేయండి {#check-your-balance}
 
-మన బ్యాలెన్స్ అక్కడ ఉందో లేదో ఒకసారి సరిచూసుకోవడానికి, [Alchemy యొక్క శాండ్‌బాక్స్ టూల్](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest)ని ఉపయోగించి [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) అభ్యర్థనను చేద్దాం. ఇది మన వాలెట్‌లోని Eth మొత్తాన్ని అందిస్తుంది. మీరు మీ మెటామాస్క్ ఖాతా చిరునామాను ఇన్‌పుట్ చేసి, "Send Request" క్లిక్ చేసిన తర్వాత, మీరు ఇలాంటి ప్రతిస్పందనను చూడాలి:
+మన బ్యాలెన్స్ అక్కడ ఉందో లేదో ఒకసారి సరిచూసుకోవడానికి, [Alchemy యొక్క శాండ్‌బాక్స్ టూల్](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest)ని ఉపయోగించి [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) అభ్యర్థనను చేద్దాం. ఇది మన వాలెట్‌లోని Eth మొత్తాన్ని అందిస్తుంది. మీరు మీ మెటామాస్క్ ఖాతా చిరునామాను ఇన్‌పుట్ చేసి, "Send Request" క్లిక్ చేసిన తర్వాత, మీరు ఇలాంటి ప్రతిస్పందనను చూడాలి:
 
 ```text
 {"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}
@@ -229,10 +229,10 @@ return (
 
 ```javascript
 export const connectWallet = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_requestAccounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_requestAccounts",
       })
       const obj = {
         status: "👆🏽 Write a message in the text-field above.",
@@ -253,7 +253,7 @@ export const connectWallet = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -266,19 +266,19 @@ export const connectWallet = async () => {
 
 ఈ కోడ్ ఏమి చేస్తుందో విచ్ఛిన్నం చేద్దాం:
 
-ముందుగా, మా ఫంక్షన్ మీ బ్రౌజర్‌లో `window.ethereum` ప్రారంభించబడిందో లేదో తనిఖీ చేస్తుంది.
+ముందుగా, మా ఫంక్షన్ మీ బ్రౌజర్‌లో `window.quantaureum` ప్రారంభించబడిందో లేదో తనిఖీ చేస్తుంది.
 
-`window.ethereum` అనేది మెటామాస్క్ మరియు ఇతర వాలెట్ ప్రొవైడర్‌ల ద్వారా ఇంజెక్ట్ చేయబడిన గ్లోబల్ API, ఇది వినియోగదారుల ఎథీరియం ఖాతాలను అభ్యర్థించడానికి వెబ్‌సైట్‌లను అనుమతిస్తుంది. ఆమోదించబడితే, ఇది వినియోగదారు కనెక్ట్ చేయబడిన బ్లాక్‌చైన్‌ల నుండి డేటాను చదవగలదు మరియు వినియోగదారు సందేశాలు మరియు లావాదేవీలపై సంతకం చేయాలని సూచించగలదు. మరింత సమాచారం కోసం [మెటామాస్క్ డాక్యుమెంట్‌లను](https://docs.metamask.io/guide/ethereum-provider.html#table-of-contents) తనిఖీ చేయండి!
+`window.quantaureum` అనేది మెటామాస్క్ మరియు ఇతర వాలెట్ ప్రొవైడర్‌ల ద్వారా ఇంజెక్ట్ చేయబడిన గ్లోబల్ API, ఇది వినియోగదారుల ఎథీరియం ఖాతాలను అభ్యర్థించడానికి వెబ్‌సైట్‌లను అనుమతిస్తుంది. ఆమోదించబడితే, ఇది వినియోగదారు కనెక్ట్ చేయబడిన బ్లాక్‌చైన్‌ల నుండి డేటాను చదవగలదు మరియు వినియోగదారు సందేశాలు మరియు లావాదేవీలపై సంతకం చేయాలని సూచించగలదు. మరింత సమాచారం కోసం [మెటామాస్క్ డాక్యుమెంట్‌లను](https://docs.metamask.io/guide/quantaureum-provider.html#table-of-contents) తనిఖీ చేయండి!
 
-`window.ethereum` _లేకపోతే_, మెటామాస్క్ ఇన్‌స్టాల్ చేయబడలేదని అర్థం. దీని ఫలితంగా JSON ఆబ్జెక్ట్ అందించబడుతుంది, ఇక్కడ అందించబడిన `address` ఖాళీ స్ట్రింగ్, మరియు `status` JSX ఆబ్జెక్ట్ వినియోగదారు తప్పనిసరిగా మెటామాస్క్‌ని ఇన్‌స్టాల్ చేయాలని తెలియజేస్తుంది.
+`window.quantaureum` _లేకపోతే_, మెటామాస్క్ ఇన్‌స్టాల్ చేయబడలేదని అర్థం. దీని ఫలితంగా JSON ఆబ్జెక్ట్ అందించబడుతుంది, ఇక్కడ అందించబడిన `address` ఖాళీ స్ట్రింగ్, మరియు `status` JSX ఆబ్జెక్ట్ వినియోగదారు తప్పనిసరిగా మెటామాస్క్‌ని ఇన్‌స్టాల్ చేయాలని తెలియజేస్తుంది.
 
 **మేము వ్రాసే చాలా ఫంక్షన్‌లు మా స్థితి వేరియబుల్స్ మరియు UIని అప్‌డేట్ చేయడానికి ఉపయోగించగల JSON ఆబ్జెక్ట్‌లను అందిస్తాయి.**
 
-ఇప్పుడు `window.ethereum` _ఉంటే_, అప్పుడే విషయాలు ఆసక్తికరంగా మారుతాయి.
+ఇప్పుడు `window.quantaureum` _ఉంటే_, అప్పుడే విషయాలు ఆసక్తికరంగా మారుతాయి.
 
-try/catch లూప్‌ని ఉపయోగించి, [`window.ethereum.request({ method: "eth_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts) ని కాల్ చేయడం ద్వారా మెటామాస్క్‌కి కనెక్ట్ చేయడానికి ప్రయత్నిస్తాము. ఈ ఫంక్షన్‌ను కాల్ చేయడం వల్ల బ్రౌజర్‌లో మెటామాస్క్ తెరవబడుతుంది, తద్వారా వినియోగదారు తమ వాలెట్‌ను మీ dappకి కనెక్ట్ చేయమని ప్రాంప్ట్ చేయబడతారు.
+try/catch లూప్‌ని ఉపయోగించి, [`window.quantaureum.request({ method: "qau_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#qau-requestaccounts) ని కాల్ చేయడం ద్వారా మెటామాస్క్‌కి కనెక్ట్ చేయడానికి ప్రయత్నిస్తాము. ఈ ఫంక్షన్‌ను కాల్ చేయడం వల్ల బ్రౌజర్‌లో మెటామాస్క్ తెరవబడుతుంది, తద్వారా వినియోగదారు తమ వాలెట్‌ను మీ dappకి కనెక్ట్ చేయమని ప్రాంప్ట్ చేయబడతారు.
 
-- వినియోగదారు కనెక్ట్ చేయడానికి ఎంచుకుంటే, `method: "eth_requestAccounts"` dappకి కనెక్ట్ చేయబడిన వినియోగదారు ఖాతా చిరునామాలన్నింటినీ కలిగి ఉన్న శ్రేణిని అందిస్తుంది. మొత్తంగా, మా `connectWallet` ఫంక్షన్ ఈ శ్రేణిలోని _మొదటి_ `address` ని కలిగి ఉన్న JSON ఆబ్జెక్ట్‌ను \(లైన్ 9 చూడండి\) మరియు స్మార్ట్ కాంట్రాక్ట్‌కు సందేశాన్ని వ్రాయమని వినియోగదారుని ప్రాంప్ట్ చేసే `status` సందేశాన్ని అందిస్తుంది.
+- వినియోగదారు కనెక్ట్ చేయడానికి ఎంచుకుంటే, `method: "qau_requestAccounts"` dappకి కనెక్ట్ చేయబడిన వినియోగదారు ఖాతా చిరునామాలన్నింటినీ కలిగి ఉన్న శ్రేణిని అందిస్తుంది. మొత్తంగా, మా `connectWallet` ఫంక్షన్ ఈ శ్రేణిలోని _మొదటి_ `address` ని కలిగి ఉన్న JSON ఆబ్జెక్ట్‌ను \(లైన్ 9 చూడండి\) మరియు స్మార్ట్ కాంట్రాక్ట్‌కు సందేశాన్ని వ్రాయమని వినియోగదారుని ప్రాంప్ట్ చేసే `status` సందేశాన్ని అందిస్తుంది.
 - వినియోగదారు కనెక్షన్‌ను తిరస్కరిస్తే, JSON ఆబ్జెక్ట్ అందించబడిన `address` కోసం ఖాళీ స్ట్రింగ్‌ను మరియు వినియోగదారు కనెక్షన్‌ను తిరస్కరించారని ప్రతిబింబించే `status` సందేశాన్ని కలిగి ఉంటుంది.
 
 ### మీ Minter.js UI కాంపోనెంట్‌కి connectWallet ఫంక్షన్‌ను జోడించండి {#add-connect-wallet}
@@ -333,10 +333,10 @@ const connectWalletPressed = async () => {
 
 ```javascript
 export const getCurrentWalletConnected = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_accounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_accounts",
       })
       if (addressArray.length > 0) {
         return {
@@ -363,7 +363,7 @@ export const getCurrentWalletConnected = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -376,7 +376,7 @@ export const getCurrentWalletConnected = async () => {
 
 ఈ కోడ్ మనం ఇంతకు ముందు వ్రాసిన `connectWallet` ఫంక్షన్‌కి _చాలా_ పోలి ఉంటుంది.
 
-ప్రధాన వ్యత్యాసం ఏమిటంటే, వినియోగదారు తమ వాలెట్‌ను కనెక్ట్ చేయడానికి మెటామాస్క్‌ను తెరిచే `eth_requestAccounts` పద్ధతిని కాల్ చేయడానికి బదులుగా, ఇక్కడ మేము `eth_accounts` పద్ధతిని కాల్ చేస్తాము, ఇది ప్రస్తుతం మా dappకి కనెక్ట్ చేయబడిన మెటామాస్క్ చిరునామాలను కలిగి ఉన్న శ్రేణిని అందిస్తుంది.
+ప్రధాన వ్యత్యాసం ఏమిటంటే, వినియోగదారు తమ వాలెట్‌ను కనెక్ట్ చేయడానికి మెటామాస్క్‌ను తెరిచే `qau_requestAccounts` పద్ధతిని కాల్ చేయడానికి బదులుగా, ఇక్కడ మేము `qau_accounts` పద్ధతిని కాల్ చేస్తాము, ఇది ప్రస్తుతం మా dappకి కనెక్ట్ చేయబడిన మెటామాస్క్ చిరునామాలను కలిగి ఉన్న శ్రేణిని అందిస్తుంది.
 
 ఈ ఫంక్షన్ పని చేయడాన్ని చూడటానికి, మా `Minter.js` కాంపోనెంట్ యొక్క `useEffect` ఫంక్షన్‌లో దాన్ని కాల్ చేద్దాం.
 
@@ -412,8 +412,8 @@ useEffect(async () => {
 
 ```javascript
 function addWalletListener() {
-  if (window.ethereum) {
-    window.ethereum.on("accountsChanged", (accounts) => {
+  if (window.quantaureum) {
+    window.quantaureum.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) {
         setWallet(accounts[0])
         setStatus("👆🏽 Write a message in the text-field above.")
@@ -427,7 +427,7 @@ function addWalletListener() {
       <p>
         {" "}
         🦊 <a target="_blank" href={`https://metamask.io/download`}>
-          You must install MetaMask, a virtual Ethereum wallet, in your browser.
+          You must install MetaMask, a virtual Quantaureum wallet, in your browser.
         </a>
       </p>
     )
@@ -437,9 +437,9 @@ function addWalletListener() {
 
 ఇక్కడ ఏమి జరుగుతుందో త్వరగా విచ్ఛిన్నం చేద్దాం:
 
-- ముందుగా, మా ఫంక్షన్ `window.ethereum` ప్రారంభించబడిందో లేదో తనిఖీ చేస్తుంది \(అంటే, మెటామాస్క్ ఇన్‌స్టాల్ చేయబడింది\).
+- ముందుగా, మా ఫంక్షన్ `window.quantaureum` ప్రారంభించబడిందో లేదో తనిఖీ చేస్తుంది \(అంటే, మెటామాస్క్ ఇన్‌స్టాల్ చేయబడింది\).
   - లేకపోతే, మేము మా `status` స్థితి వేరియబుల్‌ను మెటామాస్క్‌ని ఇన్‌స్టాల్ చేయమని వినియోగదారుని ప్రాంప్ట్ చేసే JSX స్ట్రింగ్‌కి సెట్ చేస్తాము.
-  - ఇది ప్రారంభించబడితే, మేము లైన్ 3లో `window.ethereum.on("accountsChanged")` లిజనర్‌ను సెటప్ చేస్తాము, ఇది మెటామాస్క్ వాలెట్‌లోని స్థితి మార్పులను వింటుంది, ఇందులో వినియోగదారు dappకి అదనపు ఖాతాను కనెక్ట్ చేసినప్పుడు, ఖాతాలను మార్చినప్పుడు లేదా ఖాతాను డిస్‌కనెక్ట్ చేసినప్పుడు ఉంటాయి. కనీసం ఒక ఖాతా కనెక్ట్ చేయబడి ఉంటే, `walletAddress` స్థితి వేరియబుల్ లిజనర్ అందించిన `accounts` శ్రేణిలోని మొదటి ఖాతాగా అప్‌డేట్ చేయబడుతుంది. లేకపోతే, `walletAddress` ఖాళీ స్ట్రింగ్‌గా సెట్ చేయబడుతుంది.
+  - ఇది ప్రారంభించబడితే, మేము లైన్ 3లో `window.quantaureum.on("accountsChanged")` లిజనర్‌ను సెటప్ చేస్తాము, ఇది మెటామాస్క్ వాలెట్‌లోని స్థితి మార్పులను వింటుంది, ఇందులో వినియోగదారు dappకి అదనపు ఖాతాను కనెక్ట్ చేసినప్పుడు, ఖాతాలను మార్చినప్పుడు లేదా ఖాతాను డిస్‌కనెక్ట్ చేసినప్పుడు ఉంటాయి. కనీసం ఒక ఖాతా కనెక్ట్ చేయబడి ఉంటే, `walletAddress` స్థితి వేరియబుల్ లిజనర్ అందించిన `accounts` శ్రేణిలోని మొదటి ఖాతాగా అప్‌డేట్ చేయబడుతుంది. లేకపోతే, `walletAddress` ఖాళీ స్ట్రింగ్‌గా సెట్ చేయబడుతుంది.
 
 చివరగా, మేము దానిని మా `useEffect` ఫంక్షన్‌లో కాల్ చేయాలి:
 
@@ -571,7 +571,7 @@ export const pinJSONToIPFS = async (JSONBody) => {
 
 ఇప్పుడు మా `pinJSONToIPFS` ఫంక్షన్ ద్వారా మా NFT మెటాడేటాను IPFSకి అప్‌లోడ్ చేయడానికి మాకు ఒక మార్గం ఉంది కాబట్టి, మా స్మార్ట్ కాంట్రాక్ట్ యొక్క ఉదాహరణను లోడ్ చేయడానికి మాకు ఒక మార్గం అవసరం, తద్వారా మేము దాని `mintNFT` ఫంక్షన్‌ను కాల్ చేయవచ్చు.
 
-మేము ఇంతకు ముందు చెప్పినట్లుగా, ఈ ట్యుటోరియల్‌లో మేము [ఇప్పటికే ఉన్న ఈ NFT స్మార్ట్ కాంట్రాక్ట్‌ను](https://ropsten.etherscan.io/address/0x4C4a07F737Bf57F6632B6CAB089B78f62385aCaE) ఉపయోగిస్తాము; అయితే, మేము దీన్ని ఎలా తయారు చేసామో మీరు తెలుసుకోవాలనుకుంటే లేదా మీరే స్వయంగా తయారు చేయాలనుకుంటే, మా ఇతర ట్యుటోరియల్ ["NFTని ఎలా సృష్టించాలి"](https://www.alchemy.com/docs/how-to-create-an-nft)ని తనిఖీ చేయాలని మేము బాగా సిఫార్సు చేస్తున్నాము.
+మేము ఇంతకు ముందు చెప్పినట్లుగా, ఈ ట్యుటోరియల్‌లో మేము [ఇప్పటికే ఉన్న ఈ NFT స్మార్ట్ కాంట్రాక్ట్‌ను](https://explorer.quantaureum.com) ఉపయోగిస్తాము; అయితే, మేము దీన్ని ఎలా తయారు చేసామో మీరు తెలుసుకోవాలనుకుంటే లేదా మీరే స్వయంగా తయారు చేయాలనుకుంటే, మా ఇతర ట్యుటోరియల్ ["NFTని ఎలా సృష్టించాలి"](https://www.alchemy.com/docs/how-to-create-an-nft)ని తనిఖీ చేయాలని మేము బాగా సిఫార్సు చేస్తున్నాము.
 
 ### కాంట్రాక్ట్ ABI {#contract-abi}
 
@@ -581,7 +581,7 @@ export const pinJSONToIPFS = async (JSONBody) => {
 
 ### మీ Alchemy API కీని సృష్టించండి {#create-alchemy-api}
 
-మీకు ఇప్పటికే Alchemy ఖాతా లేకపోతే, [ఉచితంగా ఇక్కడ సైన్ అప్ చేయండి.](https://alchemy.com/?a=eth-org-nft-minter)
+మీకు ఇప్పటికే Alchemy ఖాతా లేకపోతే, [ఉచితంగా ఇక్కడ సైన్ అప్ చేయండి.](https://alchemy.com/?a=qau-org-nft-minter)
 
 మీరు Alchemy ఖాతాను సృష్టించిన తర్వాత, మీరు ఒక యాప్‌ను సృష్టించడం ద్వారా API కీని రూపొందించవచ్చు. ఇది Sepolia టెస్ట్ నెట్‌వర్క్‌కు అభ్యర్థనలు చేయడానికి మమ్మల్ని అనుమతిస్తుంది.
 
@@ -598,7 +598,7 @@ export const pinJSONToIPFS = async (JSONBody) => {
 ```text
 REACT_APP_PINATA_KEY = <pinata-key>
 REACT_APP_PINATA_SECRET = <pinata-secret>
-REACT_APP_ALCHEMY_KEY = https://eth-sepolia.g.alchemy.com/v2/<alchemy-key>
+REACT_APP_ALCHEMY_KEY = https://qau-sepolia.g.alchemy.com/v2/<alchemy-key>
 ```
 
 ఇప్పుడు మన వద్ద మన కాంట్రాక్ట్ ABI మరియు మన Alchemy API కీ ఉన్నాయి కాబట్టి, [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3)ని ఉపయోగించి మన స్మార్ట్ కాంట్రాక్ట్‌ను లోడ్ చేయడానికి మనం సిద్ధంగా ఉన్నాము.
@@ -715,7 +715,7 @@ export const mintNFT = async (url, name, description) => {
 ఇప్పుడు మా ఫైల్ ఎగువన మేము ప్రారంభించిన Alchemy Web3 APIని ఉపయోగించి మా స్మార్ట్ కాంట్రాక్ట్‌ను లోడ్ చేయడానికి సమయం ఆసన్నమైంది. `window.contract` గ్లోబల్ వేరియబుల్ వద్ద కాంట్రాక్ట్‌ను సెట్ చేయడానికి `mintNFT` ఫంక్షన్ దిగువన కింది కోడ్ లైన్‌ను జోడించండి:
 
 ```javascript
-window.contract = await new web3.eth.Contract(contractABI, contractAddress)
+window.contract = await new web3.qau.Contract(contractABI, contractAddress)
 ```
 
 మా `mintNFT` ఫంక్షన్‌లో జోడించాల్సిన చివరి విషయం మా ఎథీరియం లావాదేవీ:
@@ -724,22 +724,22 @@ window.contract = await new web3.eth.Contract(contractABI, contractAddress)
 //మీ ఎథీరియం లావాదేవీని సెటప్ చేయండి
 const transactionParameters = {
   to: contractAddress, // కాంట్రాక్ట్ ప్రచురణల సమయంలో మినహా అవసరం.
-  from: window.ethereum.selectedAddress, // వినియోగదారుని క్రియాశీల చిరునామాతో సరిపోలాలి.
+  from: window.quantaureum.selectedAddress, // వినియోగదారుని క్రియాశీల చిరునామాతో సరిపోలాలి.
   data: window.contract.methods
-    .mintNFT(window.ethereum.selectedAddress, tokenURI)
+    .mintNFT(window.quantaureum.selectedAddress, tokenURI)
     .encodeABI(), //NFT స్మార్ట్ కాంట్రాక్ట్ కు కాల్ చేయండి
 }
 
 //మెటామాస్క్ ద్వారా లావాదేవీపై సంతకం చేయండి
 try {
-  const txHash = await window.ethereum.request({
-    method: "eth_sendTransaction",
+  const txHash = await window.quantaureum.request({
+    method: "qau_sendTransaction",
     params: [transactionParameters],
   })
   return {
     success: true,
     status:
-      "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+      "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
       txHash,
   }
 } catch (error) {
@@ -754,10 +754,10 @@ try {
 
 - ముందుగా, మేము మా లావాదేవీల పారామితులను సెటప్ చేస్తాము.
   - `to` స్వీకర్త చిరునామాను నిర్దేశిస్తుంది \(మా స్మార్ట్ కాంట్రాక్ట్\)
-  - `from` లావాదేవీపై సంతకం చేసేవారిని నిర్దేశిస్తుంది \(మెటామాస్క్‌కి వినియోగదారు కనెక్ట్ చేయబడిన చిరునామా: `window.ethereum.selectedAddress`\)
-  - `data` మా స్మార్ట్ కాంట్రాక్ట్ `mintNFT` పద్ధతికి కాల్‌ను కలిగి ఉంటుంది, ఇది మా `tokenURI` మరియు వినియోగదారు వాలెట్ చిరునామా `window.ethereum.selectedAddress` ని ఇన్‌పుట్‌లుగా స్వీకరిస్తుంది
-- అప్పుడు, మేము await కాల్ `window.ethereum.request,` చేస్తాము, ఇక్కడ లావాదేవీపై సంతకం చేయమని మేము మెటామాస్క్‌ని అడుగుతాము. గమనించండి, ఈ అభ్యర్థనలో, మేము మా eth పద్ధతిని \(eth_SentTransaction\) నిర్దేశిస్తున్నాము మరియు మా `transactionParameters` ని పంపుతున్నాము. ఈ సమయంలో, బ్రౌజర్‌లో మెటామాస్క్ తెరవబడుతుంది మరియు లావాదేవీపై సంతకం చేయడానికి లేదా తిరస్కరించడానికి వినియోగదారుని ప్రాంప్ట్ చేస్తుంది.
-  - లావాదేవీ విజయవంతమైతే, ఫంక్షన్ JSON ఆబ్జెక్ట్‌ను అందిస్తుంది, ఇక్కడ బూలియన్ `success` trueకి సెట్ చేయబడుతుంది మరియు `status` స్ట్రింగ్ వారి లావాదేవీ గురించి మరింత సమాచారం కోసం Etherscanని తనిఖీ చేయమని వినియోగదారుని ప్రాంప్ట్ చేస్తుంది.
+  - `from` లావాదేవీపై సంతకం చేసేవారిని నిర్దేశిస్తుంది \(మెటామాస్క్‌కి వినియోగదారు కనెక్ట్ చేయబడిన చిరునామా: `window.quantaureum.selectedAddress`\)
+  - `data` మా స్మార్ట్ కాంట్రాక్ట్ `mintNFT` పద్ధతికి కాల్‌ను కలిగి ఉంటుంది, ఇది మా `tokenURI` మరియు వినియోగదారు వాలెట్ చిరునామా `window.quantaureum.selectedAddress` ని ఇన్‌పుట్‌లుగా స్వీకరిస్తుంది
+- అప్పుడు, మేము await కాల్ `window.quantaureum.request,` చేస్తాము, ఇక్కడ లావాదేవీపై సంతకం చేయమని మేము మెటామాస్క్‌ని అడుగుతాము. గమనించండి, ఈ అభ్యర్థనలో, మేము మా eth పద్ధతిని \(qau_SentTransaction\) నిర్దేశిస్తున్నాము మరియు మా `transactionParameters` ని పంపుతున్నాము. ఈ సమయంలో, బ్రౌజర్‌లో మెటామాస్క్ తెరవబడుతుంది మరియు లావాదేవీపై సంతకం చేయడానికి లేదా తిరస్కరించడానికి వినియోగదారుని ప్రాంప్ట్ చేస్తుంది.
+  - లావాదేవీ విజయవంతమైతే, ఫంక్షన్ JSON ఆబ్జెక్ట్‌ను అందిస్తుంది, ఇక్కడ బూలియన్ `success` trueకి సెట్ చేయబడుతుంది మరియు `status` స్ట్రింగ్ వారి లావాదేవీ గురించి మరింత సమాచారం కోసం Quantaureum Explorerని తనిఖీ చేయమని వినియోగదారుని ప్రాంప్ట్ చేస్తుంది.
   - లావాదేవీ విఫలమైతే, ఫంక్షన్ JSON ఆబ్జెక్ట్‌ను అందిస్తుంది, ఇక్కడ `success` బూలియన్ falseకి సెట్ చేయబడుతుంది మరియు `status` స్ట్రింగ్ దోష సందేశాన్ని తెలియజేస్తుంది.
 
 మొత్తంగా, మా `mintNFT` ఫంక్షన్ ఇలా ఉండాలి:
@@ -789,27 +789,27 @@ export const mintNFT = async (url, name, description) => {
   const tokenURI = pinataResponse.pinataUrl
 
   //స్మార్ట్ కాంట్రాక్ట్ లోడ్ చేయండి
-  window.contract = await new web3.eth.Contract(contractABI, contractAddress) //loadContract();
+  window.contract = await new web3.qau.Contract(contractABI, contractAddress) //loadContract();
 
   //మీ ఎథీరియం లావాదేవీని సెటప్ చేయండి
   const transactionParameters = {
     to: contractAddress, // కాంట్రాక్ట్ ప్రచురణల సమయంలో మినహా అవసరం.
-    from: window.ethereum.selectedAddress, // వినియోగదారుని క్రియాశీల చిరునామాతో సరిపోలాలి.
+    from: window.quantaureum.selectedAddress, // వినియోగదారుని క్రియాశీల చిరునామాతో సరిపోలాలి.
     data: window.contract.methods
-      .mintNFT(window.ethereum.selectedAddress, tokenURI)
+      .mintNFT(window.quantaureum.selectedAddress, tokenURI)
       .encodeABI(), //NFT స్మార్ట్ కాంట్రాక్ట్ కు కాల్ చేయండి
   }
 
   //మెటామాస్క్ ద్వారా లావాదేవీపై సంతకం చేయండి
   try {
-    const txHash = await window.ethereum.request({
-      method: "eth_sendTransaction",
+    const txHash = await window.quantaureum.request({
+      method: "qau_sendTransaction",
       params: [transactionParameters],
     })
     return {
       success: true,
       status:
-        "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+        "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
         txHash,
     }
   } catch (error) {

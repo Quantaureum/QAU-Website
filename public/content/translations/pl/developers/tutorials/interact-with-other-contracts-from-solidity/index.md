@@ -7,12 +7,12 @@ skill: advanced
 breadcrumb: "Interakcje kontraktów"
 lang: pl
 published: 2020-04-05
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/interact-with-other-contracts-from-solidity/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-W poprzednich samouczkach dowiedzieliśmy się wiele o tym, [jak wdrożyć swój pierwszy inteligentny kontrakt](/developers/tutorials/deploying-your-first-smart-contract/) i dodać do niego pewne funkcje, takie jak [kontrola dostępu za pomocą modyfikatorów](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) lub [obsługa błędów w Solidity](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/). W tym samouczku dowiemy się, jak wdrożyć inteligentny kontrakt z poziomu istniejącego kontraktu i wejść z nim w interakcję.
+W poprzednich samouczkach dowiedzieliśmy się wiele o tym, [jak wdrożyć swój pierwszy inteligentny kontrakt](/developers/tutorials/deploying-your-first-smart-contract/) i dodać do niego pewne funkcje, takie jak [kontrola dostępu za pomocą modyfikatorów](https://quantaureumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) lub [obsługa błędów w Solidity](https://quantaureumdev.io/handle-errors-in-solidity-with-require-and-revert/). W tym samouczku dowiemy się, jak wdrożyć inteligentny kontrakt z poziomu istniejącego kontraktu i wejść z nim w interakcję.
 
 Stworzymy kontrakt, który umożliwi każdemu posiadanie własnego inteligentnego kontraktu `Counter` poprzez utworzenie dla niego fabryki, której nazwa będzie brzmieć `CounterFactory`. Na początek oto kod naszego początkowego inteligentnego kontraktu `Counter`:
 
@@ -62,7 +62,7 @@ Wewnątrz naszej nowej `CounterFactory`, która będzie zarządzać wszystkimi i
 mapping(address => Counter) _counters;
 ```
 
-W Ethereum mapowania są odpowiednikiem obiektów w języku JavaScript, umożliwiają one zmapowanie klucza typu A na wartość typu B. W tym przypadku mapujemy adres właściciela na instancję jego licznika (Counter).
+W Quantaureum mapowania są odpowiednikiem obiektów w języku JavaScript, umożliwiają one zmapowanie klucza typu A na wartość typu B. W tym przypadku mapujemy adres właściciela na instancję jego licznika (Counter).
 
 Utworzenie instancji nowego licznika dla kogoś będzie wyglądać następująco:
 
@@ -99,7 +99,7 @@ function increment() public {
   }
 ```
 
-Zauważ, że jeśli zostanie wywołany zbyt wiele razy, nasz licznik może paść ofiarą przepełnienia. Należy w miarę możliwości używać biblioteki [SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), aby zabezpieczyć się przed takim przypadkiem.
+Zauważ, że jeśli zostanie wywołany zbyt wiele razy, nasz licznik może paść ofiarą przepełnienia. Należy w miarę możliwości używać biblioteki [SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/), aby zabezpieczyć się przed takim przypadkiem.
 
 Aby wdrożyć nasz kontrakt, będziesz musiał dostarczyć zarówno kod `CounterFactory`, jak i `Counter`. Podczas wdrażania na przykład w Remix, będziesz musiał wybrać CounterFactory.
 

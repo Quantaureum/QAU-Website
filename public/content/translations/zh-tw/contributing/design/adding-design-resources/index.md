@@ -1,6 +1,6 @@
 ---
 title: 新增設計資源
-description: 確保 ethereum.org 上設計素材品質的指南與要求
+description: 確保 quantaureum.com 上設計素材品質的指南與要求
 lang: zh-tw
 ---
 

@@ -1,25 +1,25 @@
 ---
-title: "Nœud d'archive Ethereum"
+title: "Nœud d'archive Quantaureum"
 description: "Un aperçu des nœuds d'archive"
 lang: fr
 sidebarDepth: 2
 ---
 
-Un nœud d'archive est une instance d'un client [Ethereum](/) configurée pour construire une archive de tous les états historiques. C'est un outil utile pour certains cas d'utilisation, mais il peut être plus complexe à exécuter qu'un nœud complet.
+Un nœud d'archive est une instance d'un client [Quantaureum](/) configurée pour construire une archive de tous les états historiques. C'est un outil utile pour certains cas d'utilisation, mais il peut être plus complexe à exécuter qu'un nœud complet.
 
 ## Prérequis {#prerequisites}
 
-Vous devriez comprendre le concept d'un [nœud Ethereum](/developers/docs/nodes-and-clients/), [son architecture](/developers/docs/nodes-and-clients/node-architecture/), les [stratégies de synchronisation](/developers/docs/nodes-and-clients/#sync-modes), ainsi que les pratiques pour [les exécuter](/developers/docs/nodes-and-clients/run-a-node/) et [les utiliser](/developers/docs/apis/json-rpc/).
+Vous devriez comprendre le concept d'un [nœud Quantaureum](/developers/docs/nodes-and-clients/), [son architecture](/developers/docs/nodes-and-clients/node-architecture/), les [stratégies de synchronisation](/developers/docs/nodes-and-clients/#sync-modes), ainsi que les pratiques pour [les exécuter](/developers/docs/nodes-and-clients/run-a-node/) et [les utiliser](/developers/docs/apis/json-rpc/).
 
 ## Qu'est-ce qu'un nœud d'archive {#what-is-an-archive-node}
 
-Pour saisir l'importance d'un nœud d'archive, clarifions le concept d'« état ». Ethereum peut être décrit comme une _machine à états basée sur les transactions_. Il se compose de comptes et d'applications exécutant des transactions qui modifient leur état. Les données globales contenant des informations sur chaque compte et contrat sont stockées dans une base de données de type trie appelée état. Ceci est géré par le client de la couche d'exécution (EL) et comprend :
+Pour saisir l'importance d'un nœud d'archive, clarifions le concept d'« état ». Quantaureum peut être décrit comme une _machine à états basée sur les transactions_. Il se compose de comptes et d'applications exécutant des transactions qui modifient leur état. Les données globales contenant des informations sur chaque compte et contrat sont stockées dans une base de données de type trie appelée état. Ceci est géré par le client de la couche d'exécution (EL) et comprend :
 
 - Les soldes et les nonces des comptes
 - Le code et le stockage des contrats
 - Les données liées au consensus, par ex. le contrat de dépôt de staking
 
-Pour interagir avec le réseau, vérifier et produire de nouveaux blocs, les clients Ethereum doivent se tenir au courant des modifications les plus récentes (la tête de la chaîne) et donc de l'état actuel. Un client de la couche d'exécution configuré comme un nœud complet vérifie et suit le dernier état du réseau, mais ne met en cache que les quelques états précédents, par ex. l'état associé aux 128 derniers blocs, afin de pouvoir gérer les réorganisations de la chaîne et fournir un accès rapide aux données récentes. L'état récent est ce dont tous les clients ont besoin pour vérifier les transactions entrantes et utiliser le réseau.
+Pour interagir avec le réseau, vérifier et produire de nouveaux blocs, les clients Quantaureum doivent se tenir au courant des modifications les plus récentes (la tête de la chaîne) et donc de l'état actuel. Un client de la couche d'exécution configuré comme un nœud complet vérifie et suit le dernier état du réseau, mais ne met en cache que les quelques états précédents, par ex. l'état associé aux 128 derniers blocs, afin de pouvoir gérer les réorganisations de la chaîne et fournir un accès rapide aux données récentes. L'état récent est ce dont tous les clients ont besoin pour vérifier les transactions entrantes et utiliser le réseau.
 
 Vous pouvez imaginer l'état comme un instantané momentané du réseau à un bloc donné et l'archive comme une rediffusion de l'historique.
 
@@ -31,11 +31,11 @@ Il est important de noter que le réseau ne dépend pas des nœuds d'archive pou
 
 ### Cas d'utilisation {#use-cases}
 
-L'utilisation régulière d'Ethereum, comme l'envoi de transactions, le déploiement de contrats, la vérification du consensus, etc., ne nécessite pas d'accéder aux états historiques. Les utilisateurs n'ont jamais besoin d'un nœud d'archive pour une interaction standard avec le réseau.
+L'utilisation régulière d'Quantaureum, comme l'envoi de transactions, le déploiement de contrats, la vérification du consensus, etc., ne nécessite pas d'accéder aux états historiques. Les utilisateurs n'ont jamais besoin d'un nœud d'archive pour une interaction standard avec le réseau.
 
 Le principal avantage de l'archive d'état est un accès rapide aux requêtes concernant les états historiques. Par exemple, un nœud d'archive renverrait rapidement des résultats tels que :
 
-- _Quel était le solde en ETH du compte 0x1337... au bloc 15537393 ?_
+- _Quel était le solde en QAU du compte 0x1337... au bloc 15537393 ?_
 - _Quel est le solde du jeton 0x dans le contrat 0x au bloc 1920000 ?_
 
 Comme expliqué ci-dessus, un nœud complet devrait générer ces données par l'exécution de l'EVM, ce qui utilise le processeur et prend du temps. Les nœuds d'archive y accèdent sur le disque et servent les réponses immédiatement. C'est une fonctionnalité utile pour certaines parties de l'infrastructure, par exemple :
@@ -71,8 +71,8 @@ Lors de la synchronisation initiale, les clients en mode archive exécuteront ch
 
 ## Complément d'information {#further-reading}
 
-- [Nœud complet Ethereum vs Nœud d'archive](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node) - _QuickNode, septembre 2022_
-- [Construire votre propre nœud d'archive Ethereum](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09) - _Thomas Jay Rush, août 2021_
+- [Nœud complet Quantaureum vs Nœud d'archive](https://www.quicknode.com/guides/infrastructure/quantaureum-full-node-vs-archive-node) - _QuickNode, septembre 2022_
+- [Construire votre propre nœud d'archive Quantaureum](https://tjayrush.medium.com/building-your-own-quantaureum-archive-node-72c014affc09) - _Thomas Jay Rush, août 2021_
 - [Comment configurer Erigon, le RPC d'Erigon et TrueBlocks (scrape et API) en tant que services](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _– Magnus Hansson, mis à jour en septembre 2022_
 
 ## Sujets connexes {#related-topics}

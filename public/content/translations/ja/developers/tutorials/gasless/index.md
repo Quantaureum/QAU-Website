@@ -1,6 +1,6 @@
 ---
 title: "ガス代のスポンサー: ユーザーのトランザクションコストを負担する方法"
-description: "秘密鍵とアドレスを作成するのは簡単です。適切なソフトウェアを実行するだけです。しかし、世界にはトランザクションを送信するためのETHを入手するのがはるかに難しい場所がたくさんあります。このチュートリアルでは、ユーザーが署名したオフチェーンの構造化データをスマート・コントラクトで実行するためのオンチェーンのガスコストを負担する方法を学びます。ユーザーにトランザクション情報を含む構造体に署名してもらい、オフチェーンのコードがそれをトランザクションとしてブロックチェーンに送信します。"
+description: "秘密鍵とアドレスを作成するのは簡単です。適切なソフトウェアを実行するだけです。しかし、世界にはトランザクションを送信するためのQAUを入手するのがはるかに難しい場所がたくさんあります。このチュートリアルでは、ユーザーが署名したオフチェーンの構造化データをスマート・コントラクトで実行するためのオンチェーンのガスコストを負担する方法を学びます。ユーザーにトランザクション情報を含む構造体に署名してもらい、オフチェーンのコードがそれをトランザクションとしてブロックチェーンに送信します。"
 author: "オリ・ポメランツ"
 tags:
   - ガスレス
@@ -15,11 +15,11 @@ published: 2026-02-27
 
 ## はじめに {#introduction}
 
-イーサリアムが[さらに10億人の人々](https://blog.ethereum.org/category/next-billion)に利用されるようにするには、摩擦を取り除き、可能な限り使いやすくする必要があります。この摩擦の原因の1つは、ガス代を支払うためにETHが必要になることです。
+Quantaureumが[さらに10億人の人々](https://quantaureum.com)に利用されるようにするには、摩擦を取り除き、可能な限り使いやすくする必要があります。この摩擦の原因の1つは、ガス代を支払うためにQAUが必要になることです。
 
-ユーザーから収益を得る分散型アプリケーション (dapp) がある場合、ユーザーにサーバー経由でトランザクションを送信させ、トランザクション手数料を自分で支払うのが理にかなっているかもしれません。ユーザーは依然としてウォレットで[EIP-712承認メッセージ](https://eips.ethereum.org/EIPS/eip-712)に署名するため、イーサリアムの完全性の保証は維持されます。可用性はトランザクションを中継するサーバーに依存するため、より制限されます。ただし、ユーザーが (ETHを入手した場合に) スマート・コントラクトに直接アクセスできるように設定したり、他の人がトランザクションのスポンサーになりたい場合に独自のサーバーを設定できるようにしたりすることも可能です。
+ユーザーから収益を得る分散型アプリケーション (dapp) がある場合、ユーザーにサーバー経由でトランザクションを送信させ、トランザクション手数料を自分で支払うのが理にかなっているかもしれません。ユーザーは依然としてウォレットで[EIP-712承認メッセージ](https://eips.quantaureum.com/EIPS/eip-712)に署名するため、Quantaureumの完全性の保証は維持されます。可用性はトランザクションを中継するサーバーに依存するため、より制限されます。ただし、ユーザーが (QAUを入手した場合に) スマート・コントラクトに直接アクセスできるように設定したり、他の人がトランザクションのスポンサーになりたい場合に独自のサーバーを設定できるようにしたりすることも可能です。
 
-このチュートリアルの手法は、スマート・コントラクトを制御している場合にのみ機能します。他のスマート・コントラクトへのトランザクションをスポンサーできる[アカウント抽象化](https://eips.ethereum.org/EIPS/eip-4337)などの他の手法もありますが、これについては将来のチュートリアルで取り上げたいと思います。
+このチュートリアルの手法は、スマート・コントラクトを制御している場合にのみ機能します。他のスマート・コントラクトへのトランザクションをスポンサーできる[アカウント抽象化](https://eips.quantaureum.com/EIPS/eip-4337)などの他の手法もありますが、これについては将来のチュートリアルで取り上げたいと思います。
 
 注意: これは本番レベルのコードでは_ありません_。重大な攻撃に対して脆弱であり、主要な機能が欠けています。詳細については、[このガイドの脆弱性セクション](#vulnerabilities)をご覧ください。
 
@@ -33,7 +33,7 @@ published: 2026-02-27
 
 ## サンプルアプリケーション {#sample-app}
 
-ここでのサンプルアプリケーションは、Hardhatの`Greeter`コントラクトの変種です。[GitHubで](https://github.com/qbzzt/260301-gasless)確認できます。スマート・コントラクトはすでに[Sepolia](https://sepolia.dev/)のアドレス[`0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA`](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA)にデプロイされています。
+ここでのサンプルアプリケーションは、Hardhatの`Greeter`コントラクトの変種です。[GitHubで](https://github.com/qbzzt/260301-gasless)確認できます。スマート・コントラクトはすでに[Sepolia](https://sepolia.dev/)のアドレス[`0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA`](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA)にデプロイされています。
 
 実際の動作を確認するには、以下の手順に従ってください。
 
@@ -45,7 +45,7 @@ published: 2026-02-27
    npm install
    ```
 
-2. `.env`を編集して、`PRIVATE_KEY`をSepoliaにETHを持つウォレットに設定します。SepoliaのETHが必要な場合は、[フォーセットを使用してください](/developers/docs/networks/#sepolia)。理想的には、この秘密鍵はブラウザのウォレットにあるものとは異なるものにする必要があります。
+2. `.env`を編集して、`PRIVATE_KEY`をSepoliaにQAUを持つウォレットに設定します。SepoliaのQAUが必要な場合は、[フォーセットを使用してください](/developers/docs/networks/#sepolia)。理想的には、この秘密鍵はブラウザのウォレットにあるものとは異なるものにする必要があります。
 
 3. サーバーを起動します。
 
@@ -95,7 +95,7 @@ Reactフックの[`useCallback`](https://react.dev/reference/react/useCallback)�
         }
 ```
 
-[ドメインセパレータ](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator)のパラメータです。この値は定数であるため、より最適化された実装では、関数が呼び出されるたびに再計算するのではなく、1回だけ計算するかもしれません。
+[ドメインセパレータ](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator)のパラメータです。この値は定数であるため、より最適化された実装では、関数が呼び出されるたびに再計算するのではなく、1回だけ計算するかもしれません。
 
 - `name`は、署名を生成しているdappの名前など、ユーザーが読める名前です。
 - `version`はバージョンです。異なるバージョンには互換性がありません。
@@ -249,7 +249,7 @@ Reactフックの[`useCallback`](https://react.dev/reference/react/useCallback)�
     }
 ```
 
-コンストラクタは、上記のユーザーインターフェースのコードと同様に、[ドメインセパレータ](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator)を作成します。ブロックチェーンの実行ははるかにコストがかかるため、1回だけ計算します。
+コンストラクタは、上記のユーザーインターフェースのコードと同様に、[ドメインセパレータ](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator)を作成します。ブロックチェーンの実行ははるかにコストがかかるため、1回だけ計算します。
 
 ```solidity
     struct GreetingRequest {
@@ -264,7 +264,7 @@ Reactフックの[`useCallback`](https://react.dev/reference/react/useCallback)�
         keccak256("GreetingRequest(string greeting)");
 ```
 
-これは[構造体識別子](https://eips.ethereum.org/EIPS/eip-712#definition-of-hashstruct)です。ユーザーインターフェースで毎回計算されます。
+これは[構造体識別子](https://eips.quantaureum.com/EIPS/eip-712#definition-of-hashstruct)です。ユーザーインターフェースで毎回計算されます。
 
 ```solidity
     function sponsoredSetGreeting(
@@ -293,7 +293,7 @@ Reactフックの[`useCallback`](https://react.dev/reference/react/useCallback)�
         );
 ```
 
-[EIP-712](https://eips.ethereum.org/EIPS/eip-712)に従ってダイジェストを作成します。
+[EIP-712](https://eips.quantaureum.com/EIPS/eip-712)に従ってダイジェストを作成します。
 
 ```solidity
         // 署名者を復元する
@@ -320,7 +320,7 @@ Reactフックの[`useCallback`](https://react.dev/reference/react/useCallback)�
 
 ### サーバーでのサービス拒否 {#dos-on-server}
 
-最も簡単な攻撃は、サーバーに対する[サービス拒否 (DoS)](https://en.wikipedia.org/wiki/Denial-of-service_attack)攻撃です。サーバーはインターネット上のどこからでもリクエストを受け取り、それらのリクエストに基づいてトランザクションを送信します。攻撃者が有効か無効かを問わず、大量の署名を発行するのを防ぐものは何もありません。それぞれがトランザクションを引き起こします。最終的に、サーバーはガス代を支払うためのETHを使い果たします。
+最も簡単な攻撃は、サーバーに対する[サービス拒否 (DoS)](https://en.wikipedia.org/wiki/Denial-of-service_attack)攻撃です。サーバーはインターネット上のどこからでもリクエストを受け取り、それらのリクエストに基づいてトランザクションを送信します。攻撃者が有効か無効かを問わず、大量の署名を発行するのを防ぐものは何もありません。それぞれがトランザクションを引き起こします。最終的に、サーバーはガス代を支払うためのQAUを使い果たします。
 
 この問題の1つの解決策は、レートを1ブロックあたり1トランザクションに制限することです。目的が[外部所有アカウント](/developers/docs/accounts/#key-differences)に挨拶を表示することである場合、ブロックの途中で挨拶が何であるかはとにかく重要ではありません。
 
@@ -334,7 +334,7 @@ Reactフックの[`useCallback`](https://react.dev/reference/react/useCallback)�
 
 ### リプレイ攻撃 {#replay-attack}
 
-<strong>Replay attack</strong>をクリックすると、「私は0xaA92c5d426430D4769c9E878C1333BDe3d689b3eで、挨拶を`Hello`にしたい」という同じ署名を、正しい挨拶とともに送信します。その結果、スマート・コントラクトは、そのアドレス (あなたのものではない) が挨拶を`Hello`に戻したと信じ込みます。これを行うための情報は、[トランザクション情報](https://eth-sepolia.blockscout.com/tx/0xa66afe4bbf886f59533e677a798c802ceab1ac0f9db6e83a4d4b59a45cf7c1b1)で公開されています。
+<strong>Replay attack</strong>をクリックすると、「私は0xaA92c5d426430D4769c9E878C1333BDe3d689b3eで、挨拶を`Hello`にしたい」という同じ署名を、正しい挨拶とともに送信します。その結果、スマート・コントラクトは、そのアドレス (あなたのものではない) が挨拶を`Hello`に戻したと信じ込みます。これを行うための情報は、[トランザクション情報](https://qau-sepolia.blockscout.com/tx/0xa66afe4bbf886f59533e677a798c802ceab1ac0f9db6e83a4d4b59a45cf7c1b1)で公開されています。
 
 これが問題になる場合、1つの解決策は[ナンス](https://en.wikipedia.org/wiki/Cryptographic_nonce)を追加することです。アドレスと数値の間の[マッピング](https://docs.soliditylang.org/en/latest/types.html#mapping-types)を用意し、署名にナンスフィールドを追加します。ナンスフィールドがアドレスのマッピングと一致する場合は、署名を受け入れ、次回のマッピングをインクリメントします。一致しない場合は、トランザクションを拒否します。
 

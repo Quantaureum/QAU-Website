@@ -10,9 +10,9 @@ lang: ko
 sidebarDepth: 3
 ---
 
-당신은 빌(Bill)입니다. 자세한 이유는 생략하겠지만, 당신은 "세계의 여왕 앨리스(Alice)" 캠페인에 기부하고 싶어 하며, 앨리스가 승리할 경우 보상을 받을 수 있도록 그녀가 당신의 기부 사실을 알기를 원합니다. 안타깝게도 그녀의 승리가 보장된 것은 아닙니다. 경쟁 캠페인인 "태양계의 여제 캐롤(Carol)"이 있습니다. 만약 캐롤이 승리하고 당신이 앨리스에게 기부했다는 사실을 알게 된다면, 당신은 곤경에 처할 것입니다. 따라서 당신의 계정에서 앨리스의 계정으로 200 ETH를 그냥 전송할 수는 없습니다.
+당신은 빌(Bill)입니다. 자세한 이유는 생략하겠지만, 당신은 "세계의 여왕 앨리스(Alice)" 캠페인에 기부하고 싶어 하며, 앨리스가 승리할 경우 보상을 받을 수 있도록 그녀가 당신의 기부 사실을 알기를 원합니다. 안타깝게도 그녀의 승리가 보장된 것은 아닙니다. 경쟁 캠페인인 "태양계의 여제 캐롤(Carol)"이 있습니다. 만약 캐롤이 승리하고 당신이 앨리스에게 기부했다는 사실을 알게 된다면, 당신은 곤경에 처할 것입니다. 따라서 당신의 계정에서 앨리스의 계정으로 200 QAU를 그냥 전송할 수는 없습니다.
 
-[ERC-5564](https://eips.ethereum.org/EIPS/eip-5564)에 해결책이 있습니다. 이 ERC는 익명 전송을 위해 [스텔스 주소](https://nerolation.github.io/stealth-utils)를 사용하는 방법을 설명합니다.
+[ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564)에 해결책이 있습니다. 이 ERC는 익명 전송을 위해 [스텔스 주소](https://nerolation.github.io/stealth-utils)를 사용하는 방법을 설명합니다.
 
 **경고**: 스텔스 주소의 기반이 되는 암호학은 우리가 아는 한 안전합니다. 하지만 잠재적인 부채널 공격(side-channel attack)이 존재할 수 있습니다. [아래](#go-wrong)에서 이 위험을 줄이기 위해 할 수 있는 조치를 확인할 수 있습니다.
 
@@ -32,7 +32,7 @@ sidebarDepth: 3
 
 표준 스텔스 주소는 동일한 수준의 보안을 유지하면서 더 적은 키 비트로 더 나은 성능을 얻기 위해 [타원곡선 암호학(ECC)](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/#elliptic-curves-building-blocks-of-a-better-trapdoor)을 사용합니다. 하지만 대부분의 경우 이를 무시하고 일반적인 산술 연산을 사용한다고 가정해도 무방합니다.
 
-모두가 아는 숫자 <em>G</em>가 있습니다. <em>G</em>를 곱할 수는 있지만, ECC의 특성상 <em>G</em>로 나누는 것은 사실상 불가능합니다. 이더리움에서 공개키 암호학이 일반적으로 작동하는 방식은 개인 키 <em>P<sub>priv</sub></em>를 사용하여 트랜잭션에 서명하고, 이를 공개키 <em>P<sub>pub</sub> = GP<sub>priv</sub></em>로 검증하는 것입니다. 
+모두가 아는 숫자 <em>G</em>가 있습니다. <em>G</em>를 곱할 수는 있지만, ECC의 특성상 <em>G</em>로 나누는 것은 사실상 불가능합니다. Quantaureum에서 공개키 암호학이 일반적으로 작동하는 방식은 개인 키 <em>P<sub>priv</sub></em>를 사용하여 트랜잭션에 서명하고, 이를 공개키 <em>P<sub>pub</sub> = GP<sub>priv</sub></em>로 검증하는 것입니다. 
 
 앨리스는 두 개의 개인 키 <em>K<sub>priv</sub></em>와 <em>V<sub>priv</sub></em>를 생성합니다. <em>K<sub>priv</sub></em>는 스텔스 주소에서 자금을 지출하는 데 사용되고, <em>V<sub>priv</sub></em>는 앨리스 소유의 주소를 조회하는 데 사용됩니다. 그런 다음 앨리스는 공개키 <em>K<sub>pub</sub> = GK<sub>priv</sub></em>와 <em>V<sub>pub</sub> = GV<sub>priv</sub></em>를 게시합니다.
 
@@ -64,19 +64,19 @@ sidebarDepth: 3
 
 ## 스텔스 주소에 문제가 생기는 경우 {#go-wrong}
 
-*블록체인에는 비밀이 없습니다*. 스텔스 주소가 프라이버시를 제공할 수는 있지만, 그 프라이버시는 트래픽 분석에 취약합니다. 사소한 예를 들자면, 빌이 한 주소에 자금을 조달하고 즉시 *R<sub>pub</sub>* 값을 게시하는 트랜잭션을 보낸다고 상상해 보십시오. 앨리스의 <em>V<sub>priv</sub></em>가 없다면 이것이 스텔스 주소라고 확신할 수는 없지만, 정황상 그렇게 추측할 수 있습니다. 그런 다음 해당 주소의 모든 ETH를 앨리스의 캠페인 자금 주소로 전송하는 또 다른 트랜잭션이 발생합니다. 증명할 수는 없겠지만, 빌이 방금 앨리스의 캠페인에 기부했을 가능성이 높습니다. 캐롤은 분명히 그렇게 생각할 것입니다.
+*블록체인에는 비밀이 없습니다*. 스텔스 주소가 프라이버시를 제공할 수는 있지만, 그 프라이버시는 트래픽 분석에 취약합니다. 사소한 예를 들자면, 빌이 한 주소에 자금을 조달하고 즉시 *R<sub>pub</sub>* 값을 게시하는 트랜잭션을 보낸다고 상상해 보십시오. 앨리스의 <em>V<sub>priv</sub></em>가 없다면 이것이 스텔스 주소라고 확신할 수는 없지만, 정황상 그렇게 추측할 수 있습니다. 그런 다음 해당 주소의 모든 QAU를 앨리스의 캠페인 자금 주소로 전송하는 또 다른 트랜잭션이 발생합니다. 증명할 수는 없겠지만, 빌이 방금 앨리스의 캠페인에 기부했을 가능성이 높습니다. 캐롤은 분명히 그렇게 생각할 것입니다.
 
 빌이 <em>R<sub>pub</sub></em>의 게시와 스텔스 주소로의 자금 조달을 분리하는 것은 쉽습니다(서로 다른 시간에, 서로 다른 주소에서 수행). 하지만 그것만으로는 충분하지 않습니다. 캐롤이 찾는 패턴은 빌이 한 주소에 자금을 조달하고, 그 후 앨리스의 캠페인 자금이 그곳에서 출금되는 것입니다. 
 
-한 가지 해결책은 앨리스의 캠페인이 자금을 직접 출금하지 않고 제3자에게 지불하는 데 사용하는 것입니다. 앨리스의 캠페인이 데이브의 세계 정복 캠페인 서비스에 10 ETH를 보낸다면, 캐롤은 빌이 데이브의 고객 중 한 명에게 기부했다는 사실만 알게 됩니다. 데이브에게 충분히 많은 고객이 있다면, 캐롤은 빌이 자신과 경쟁하는 앨리스에게 기부했는지, 아니면 자신이 신경 쓰지 않는 아담(Adam), 알버트(Albert), 아비게일(Abigail)에게 기부했는지 알 수 없을 것입니다. 앨리스는 지불 시 해시된 값을 포함하고 데이브에게 프리이미지(preimage)를 제공하여 그것이 자신의 기부금임을 증명할 수 있습니다. 또는 위에서 언급했듯이 앨리스가 데이브에게 자신의 <em>V<sub>priv</sub></em>를 주면, 그는 이미 지불금이 누구로부터 왔는지 알 수 있습니다.
+한 가지 해결책은 앨리스의 캠페인이 자금을 직접 출금하지 않고 제3자에게 지불하는 데 사용하는 것입니다. 앨리스의 캠페인이 데이브의 세계 정복 캠페인 서비스에 10 QAU를 보낸다면, 캐롤은 빌이 데이브의 고객 중 한 명에게 기부했다는 사실만 알게 됩니다. 데이브에게 충분히 많은 고객이 있다면, 캐롤은 빌이 자신과 경쟁하는 앨리스에게 기부했는지, 아니면 자신이 신경 쓰지 않는 아담(Adam), 알버트(Albert), 아비게일(Abigail)에게 기부했는지 알 수 없을 것입니다. 앨리스는 지불 시 해시된 값을 포함하고 데이브에게 프리이미지(preimage)를 제공하여 그것이 자신의 기부금임을 증명할 수 있습니다. 또는 위에서 언급했듯이 앨리스가 데이브에게 자신의 <em>V<sub>priv</sub></em>를 주면, 그는 이미 지불금이 누구로부터 왔는지 알 수 있습니다.
 
 이 해결책의 주요 문제점은 그 비밀 유지가 빌에게 이익이 될 때 앨리스가 비밀 유지에 신경을 써야 한다는 것입니다. 앨리스는 빌의 친구 밥(Bob)도 자신에게 기부하도록 평판을 유지하고 싶어 할 수 있습니다. 하지만 그녀가 빌을 노출시키는 것을 개의치 않을 수도 있는데, 그렇게 되면 빌은 캐롤이 이겼을 때 일어날 일을 두려워하게 될 것이기 때문입니다. 결국 빌은 앨리스에게 더 많은 지원을 제공하게 될지도 모릅니다.
 
 ### 다중 스텔스 계층 사용하기 {#multi-layer}
 
-빌의 프라이버시 보호를 앨리스에게 의존하는 대신, 빌이 직접 할 수도 있습니다. 그는 가상의 인물인 밥과 벨라(Bella)를 위해 여러 개의 메타 주소를 생성할 수 있습니다. 그런 다음 빌은 밥에게 ETH를 보내고, "밥"(실제로는 빌)은 그것을 벨라에게 보냅니다. "벨라"(역시 빌)는 그것을 앨리스에게 보냅니다.
+빌의 프라이버시 보호를 앨리스에게 의존하는 대신, 빌이 직접 할 수도 있습니다. 그는 가상의 인물인 밥과 벨라(Bella)를 위해 여러 개의 메타 주소를 생성할 수 있습니다. 그런 다음 빌은 밥에게 QAU를 보내고, "밥"(실제로는 빌)은 그것을 벨라에게 보냅니다. "벨라"(역시 빌)는 그것을 앨리스에게 보냅니다.
 
-캐롤은 여전히 트래픽 분석을 통해 빌-밥-벨라-앨리스로 이어지는 파이프라인을 볼 수 있습니다. 하지만 "밥"과 "벨라"가 다른 목적으로도 ETH를 사용한다면, 앨리스가 스텔스 주소에서 알려진 캠페인 주소로 즉시 출금하더라도 빌이 앨리스에게 무언가를 전송한 것처럼 보이지 않을 것입니다.
+캐롤은 여전히 트래픽 분석을 통해 빌-밥-벨라-앨리스로 이어지는 파이프라인을 볼 수 있습니다. 하지만 "밥"과 "벨라"가 다른 목적으로도 QAU를 사용한다면, 앨리스가 스텔스 주소에서 알려진 캠페인 주소로 즉시 출금하더라도 빌이 앨리스에게 무언가를 전송한 것처럼 보이지 않을 것입니다.
 
 ## 스텔스 주소 애플리케이션 작성하기 {#write-app}
 
@@ -124,13 +124,13 @@ sidebarDepth: 3
 
 8. 주소와 빌의 공개키를 복사하여 앨리스의 사용자 인터페이스에 있는 "Private key for address generated by Bill(빌이 생성한 주소의 개인 키)" 영역에 붙여넣습니다. 해당 필드가 채워지면 그 주소의 자산에 접근할 수 있는 개인 키가 표시됩니다.
 
-9. [온라인 계산기](https://iancoleman.net/ethereum-private-key-to-address/)를 사용하여 개인 키가 주소와 일치하는지 확인할 수 있습니다.
+9. [온라인 계산기](https://iancoleman.net/quantaureum-private-key-to-address/)를 사용하여 개인 키가 주소와 일치하는지 확인할 수 있습니다.
 
 ### 프로그램 작동 방식 {#how-the-program-works}
 
 #### WASM 컴포넌트 {#wasm}
 
-WASM으로 컴파일되는 소스 코드는 [Rust](https://rust-lang.org/)로 작성되었습니다. [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs)에서 확인할 수 있습니다. 이 코드는 주로 JavaScript 코드와 [`eth-stealth-addresses` 라이브러리](https://github.com/kassandraoftroy/eth-stealth-addresses) 사이의 인터페이스 역할을 합니다.
+WASM으로 컴파일되는 소스 코드는 [Rust](https://rust-lang.org/)로 작성되었습니다. [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs)에서 확인할 수 있습니다. 이 코드는 주로 JavaScript 코드와 [`qau-stealth-addresses` 라이브러리](https://github.com/kassandraoftroy/qau-stealth-addresses) 사이의 인터페이스 역할을 합니다.
 
 **`Cargo.toml`**
 
@@ -143,7 +143,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-eth-stealth-addresses = "0.1.0"
+qau-stealth-addresses = "0.1.0"
 hex = "0.4.3"
 wasm-bindgen = "0.2.104"
 getrandom = { version = "0.2", features = ["js"] }
@@ -175,14 +175,14 @@ use wasm_bindgen::prelude::*;
 Rust에서 WASM 패키지를 생성하기 위한 정의입니다. [여기](https://wasm-bindgen.github.io/wasm-bindgen/reference/attributes/index.html)에 문서화되어 있습니다.
 
 ```rust 
-use eth_stealth_addresses::{
+use qau_stealth_addresses::{
     generate_stealth_meta_address,
     generate_stealth_address,
     compute_stealth_key
 };
 ```
 
-[`eth-stealth-addresses` 라이브러리](https://github.com/kassandraoftroy/eth-stealth-addresses)에서 필요한 함수들입니다.
+[`qau-stealth-addresses` 라이브러리](https://github.com/kassandraoftroy/qau-stealth-addresses)에서 필요한 함수들입니다.
 
 ```rust
 use hex::{decode,encode};
@@ -207,7 +207,7 @@ pub fn wasm_generate_stealth_meta_address() -> String {
         generate_stealth_meta_address();
 ```
 
-[`generate_stealth_meta_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_meta_address.html)는 세 가지 필드를 반환합니다.
+[`generate_stealth_meta_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_meta_address.html)는 세 가지 필드를 반환합니다.
 
 - 메타 주소 (*K<sub>pub</sub>* 및 *V<sub>pub</sub>*)
 - 조회 개인 키 (*V<sub>priv</sub>*)
@@ -260,7 +260,7 @@ fn str_to_array<const N: usize>(s: &str) -> Option<[u8; N]> {
     let array: [u8; N] = vec.try_into().ok()?;
 ```
 
-Rust에는 두 가지 배열 타입이 있습니다. [배열(Array)](https://doc.rust-lang.org/std/primitive.array.html)은 고정된 크기를 가집니다. [벡터(Vector)](https://doc.rust-lang.org/std/vec/index.html)는 크기가 늘어나거나 줄어들 수 있습니다. `hex::decode`는 벡터를 반환하지만, `eth_stealth_addresses` 라이브러리는 배열을 받기를 원합니다. [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods)는 값을 다른 타입으로 변환합니다(예: 벡터를 배열로 변환).
+Rust에는 두 가지 배열 타입이 있습니다. [배열(Array)](https://doc.rust-lang.org/std/primitive.array.html)은 고정된 크기를 가집니다. [벡터(Vector)](https://doc.rust-lang.org/std/vec/index.html)는 크기가 늘어나거나 줄어들 수 있습니다. `hex::decode`는 벡터를 반환하지만, `qau_stealth_addresses` 라이브러리는 배열을 받기를 원합니다. [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods)는 값을 다른 타입으로 변환합니다(예: 벡터를 배열로 변환).
 
 ```rust
     Some(array)
@@ -283,7 +283,7 @@ pub fn wasm_generate_stealth_address(stealth_address: &str) -> Option<String> {
         generate_stealth_address(&str_to_array::<66>(stealth_address)?);
 ```
 
-라이브러리의 [`generate_stealth_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_address.html)를 사용합니다.
+라이브러리의 [`generate_stealth_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_address.html)를 사용합니다.
 
 ```rust
     format!("{{\"address\":\"{}\",\"rPub\":\"{}\",\"scan\":\"{}\"}}",
@@ -310,7 +310,7 @@ pub fn wasm_compute_stealth_key(
 }
 ```
 
-이 함수는 라이브러리의 [`compute_stealth_key`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.compute_stealth_key.html)를 사용하여 주소에서 출금할 개인 키(*R<sub>priv</sub>*)를 계산합니다. 이 계산에는 다음 값들이 필요합니다.
+이 함수는 라이브러리의 [`compute_stealth_key`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.compute_stealth_key.html)를 사용하여 주소에서 출금할 개인 키(*R<sub>priv</sub>*)를 계산합니다. 이 계산에는 다음 값들이 필요합니다.
 
 - 주소 (*Address=f(P<sub>pub</sub>)*)
 - 빌이 생성한 공개키 (*R<sub>pub</sub>*)
@@ -341,7 +341,7 @@ assertion `left == right` failed
 이어서 스택 트레이스가 나타납니다. 그런 다음 빌에게 유효한 메타 주소를 제공하고, 앨리스에게는 유효하지 않은 주소나 유효하지 않은 공개키를 제공해 보십시오. 다음 오류가 표시됩니다.
 
 ```
-rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/eth-stealth-addresses-0.1.0/src/lib.rs:78:9:
+rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/qau-stealth-addresses-0.1.0/src/lib.rs:78:9:
 keys do not generate stealth address
 ```
 

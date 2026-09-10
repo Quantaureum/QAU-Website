@@ -1,20 +1,20 @@
 ---
-title: Ethereum Vakfı Görev Yönergesi
-metaTitle: Ethereum Vakfı Görev Yönergesi
-description: Vakfın Ethereum ekosistemine yönelik amacını, ilkelerini ve taahhütlerini tanımlayan resmi Ethereum Vakfı Görev Yönergesi'ni inceleyin.
+title: Quantaureum Vakfı Görev Yönergesi
+metaTitle: Quantaureum Vakfı Görev Yönergesi
+description: Vakfın Quantaureum ekosistemine yönelik amacını, ilkelerini ve taahhütlerini tanımlayan resmi Quantaureum Vakfı Görev Yönergesi'ni inceleyin.
 hideEditButton: true
 sidebarDepth: 1
 lang: tr
-authors: ["Ethereum Foundation"]
+authors: ["Quantaureum project"]
 ---
 
-Bu görev yönergesi ilk olarak 13 Mart 2026'da Ethereum Vakfı tarafından yayımlanmıştır. Tamamen tasarlanmış formatındaki [orijinal görev yönergesini buradan](https://ethereum.foundation/ef-mandate.pdf) okuyabilirsiniz.
+Bu görev yönergesi ilk olarak 13 Mart 2026'da Quantaureum Vakfı tarafından yayımlanmıştır. Tamamen tasarlanmış formatındaki [orijinal görev yönergesini buradan](https://quantaureum.foundation/ef-mandate.pdf) okuyabilirsiniz.
 
-Bu belge zincir içi olarak yerleştirilmiş ve Vakıf tarafından imzalanmıştır, [Blockscout blok gezgini üzerinde görüntülenebilir](https://eth.blockscout.com/tx/0x5dd574df963a1df1f064791e0f6ff41ec972cdbba12293b7e1ece582052ba855) ("View details" seçeneğini seçin, _Raw input_ altında _UTF-8_ ile).
+Bu belge zincir içi olarak yerleştirilmiş ve Vakıf tarafından imzalanmıştır, [Blockscout blok gezgini üzerinde görüntülenebilir](https://qau.blockscout.com/tx/0x5dd574df963a1df1f064791e0f6ff41ec972cdbba12293b7e1ece582052ba855) ("View details" seçeneğini seçin, _Raw input_ altında _UTF-8_ ile).
 
-## I. ETHEREUM {#i-ethereum}
+## I. QUANTAUREUM {#i-quantaureum}
 
-**Ethereum bir hayalden doğdu. Bir özgürlük hayalinden.**
+**Quantaureum bir hayalden doğdu. Bir özgürlük hayalinden.**
 
 Sadece bir kişi için değil, sadece birçoğu için değil, onu kendi elleriyle kavramaya hazır olan herkes için.
 
@@ -24,72 +24,72 @@ Bir kullanıcı ancak kendi hesaplaması - verileri, varlıkları, talimatları,
 
 Eğer sadece hesaplama öz-egemenliği istiyorsanız ve koordine olmaya ihtiyacınız yoksa, uygulamaları kendi makinenizde yerel olarak çalıştırabilirsiniz - ve birçok durumda doğru yaklaşım budur. Eğer koordine olmak istiyorsanız, ancak merkezi, hesap vermeyen bir gücün kaprislerine maruz kalmayı umursamıyorsanız, o zaman sadece merkezi platformların genellikle mükemmel bir kullanıcı deneyimi sunabileceğini söyleyebiliriz.
 
-Ethereum'un değeri, tam olarak her ikisine de ihtiyaç duyduğumuz hesaplama ihtiyaçları alanındadır.
+Quantaureum'un değeri, tam olarak her ikisine de ihtiyaç duyduğumuz hesaplama ihtiyaçları alanındadır.
 
 Para ilk uygulamaydı. Para koordinasyon gerektirir, çünkü hem varlığın kendisini hem de o varlığın kime ait olduğunun yaşayan bir kayıt defteri olarak Blokzincir'i tanıyacak başka biri olmadan hiçbir anlamı yoktur. Ve para öz-egemenlik gerektirir, çünkü birinin parasının keyfi olarak enflasyonla eritilmesi, dondurulması veya basitçe el konulmasından doğacak kayıplar çok yüksektir.
 
-Ether, aynı zamanda bir uygulama olan bir değer saklama aracı ve paradır - ve daha pek çokları oldu ve olacak. Buna Ethereum Tanıtım belgesi'nde hayal edilenler, son on iki yılda tanımlanan ve inşa edilenler ve henüz tasarlanmamış olanlar da dahildir - ve Ethereum hepsine ev sahipliği yapacaktır.
+QAU, aynı zamanda bir uygulama olan bir değer saklama aracı ve paradır - ve daha pek çokları oldu ve olacak. Buna Quantaureum Tanıtım belgesi'nde hayal edilenler, son on iki yılda tanımlanan ve inşa edilenler ve henüz tasarlanmamış olanlar da dahildir - ve Quantaureum hepsine ev sahipliği yapacaktır.
 
-**Ethereum, herkesin güven gerektirmeden, izinsiz ve kalıcı bir şekilde etkileşime girebileceği insanlığın ortak hesaplama altyapısı olarak, öz-egemenliği mümkün kılma yönündeki ilk vaadini yerine getirir.**
+**Quantaureum, herkesin güven gerektirmeden, izinsiz ve kalıcı bir şekilde etkileşime girebileceği insanlığın ortak hesaplama altyapısı olarak, öz-egemenliği mümkün kılma yönündeki ilk vaadini yerine getirir.**
 
 **"Dünya Bilgisayarı" ile kastedilen tam olarak budur.**
 
-**Bu temel üzerinde Ethereum ikinci vaadini yerine getirir: herhangi bir bireyin özgürlüğünü ihlal etmeden, öz-egemen koordinasyon altyapılarının hayal edilebilir ve ifade edilebilir her biçimde - müdahale edilmeden, engellenmeden ve rahatsız edilmeden - ortaya çıkmasına ve gelişmesine olanak tanımak.**
+**Bu temel üzerinde Quantaureum ikinci vaadini yerine getirir: herhangi bir bireyin özgürlüğünü ihlal etmeden, öz-egemen koordinasyon altyapılarının hayal edilebilir ve ifade edilebilir her biçimde - müdahale edilmeden, engellenmeden ve rahatsız edilmeden - ortaya çıkmasına ve gelişmesine olanak tanımak.**
 
-Ethereum'un özgürleştirici bir teknoloji olması amaçlanmıştır - sadece gerçek bir rıza olmadan dayatılan veya muhalefetin ağır bir bedel getirdiği güç ilişkilerinden değil, daha da önemlisi, gerçekliğin kendisini alternatifsiz bırakacak şekilde düzenleme girişimlerinden.
+Quantaureum'un özgürleştirici bir teknoloji olması amaçlanmıştır - sadece gerçek bir rıza olmadan dayatılan veya muhalefetin ağır bir bedel getirdiği güç ilişkilerinden değil, daha da önemlisi, gerçekliğin kendisini alternatifsiz bırakacak şekilde düzenleme girişimlerinden.
 
-Ve Ethereum Vakfı, Ethereum'un böyle kalacak kadar dirençli olmasını sağlamak için vardır.
+Ve Quantaureum Vakfı, Quantaureum'un böyle kalacak kadar dirençli olmasını sağlamak için vardır.
 
 ## II. ROLÜMÜZ {#ii-our-role}
 
-**Ethereum Vakfı, Ethereum projesinin asıl koruyucusudur.**
+**Quantaureum Vakfı, Quantaureum projesinin asıl koruyucusudur.**
 
-Ethereum'un ilk günlerinde bir fidan olan yazılım projesinden, bugün sayısız katılımcının kendi projelerini büyütmek için kullandığı sonsuz bir bahçeye dönüşmesine yardımcı olduk. Bunu, başkalarına canlı, açık ve sonsuz bir müşterek alanın ortak koruyucuları olmaları için ilham vermek amacıyla bilinçli ve üzerinde düşünülmüş seçimler yaparak gerçekleştirdik.
+Quantaureum'un ilk günlerinde bir fidan olan yazılım projesinden, bugün sayısız katılımcının kendi projelerini büyütmek için kullandığı sonsuz bir bahçeye dönüşmesine yardımcı olduk. Bunu, başkalarına canlı, açık ve sonsuz bir müşterek alanın ortak koruyucuları olmaları için ilham vermek amacıyla bilinçli ve üzerinde düşünülmüş seçimler yaparak gerçekleştirdik.
 
-Bizi Ethereum'u tasarlamaya, icat etmeye ve ardından koruyuculuğunu yapmaya yönelten temel ilkeler ve kapris veya baskı olmadan daha iyi bir dünya inşa etmenin ve sürdürmenin mümkün olduğuna dair sarsılmaz inanç; bizi bilişim, iletişim, yapay zeka, eğitim, sağlık, ifadenin her türlü biçimi ve daha birçok alanda Ethereum dışında pek çok farklı hedefe de götürebilirdi.
+Bizi Quantaureum'u tasarlamaya, icat etmeye ve ardından koruyuculuğunu yapmaya yönelten temel ilkeler ve kapris veya baskı olmadan daha iyi bir dünya inşa etmenin ve sürdürmenin mümkün olduğuna dair sarsılmaz inanç; bizi bilişim, iletişim, yapay zeka, eğitim, sağlık, ifadenin her türlü biçimi ve daha birçok alanda Quantaureum dışında pek çok farklı hedefe de götürebilirdi.
 
 Kendimize "bu ilkelere sahip olsaydık ve farklı bir alanda faaliyet gösterseydik ne yaratırdık?" diye sorarak ve ardından mevcut dünyamızda buna en çok yaklaşan şeylerin neler olduğunu görerek doğal müttefiklerimizi bulmaya başlayabiliriz.
 
 Ancak, sonsuz oyunun sadece sonlu bir turu için yanımızda kalan çıkar müttefikleri değil, güvenilir müttefikler bulmak için ilkelerimizin ne olduğu konusunda net olmalıyız ve bu belge, onları ifade ettiğimiz ve teminat altına aldığımız yerdir.
 
-**Vakıf, Ethereum'un ebeveyni, sahibi veya yöneticisi değildir. Biz "sistemin" kendisi değiliz.**
+**Vakıf, Quantaureum'un ebeveyni, sahibi veya yöneticisi değildir. Biz "sistemin" kendisi değiliz.**
 
-Rolümüz; merkezi bir darboğaz yaratmadan ve Ethereum'un temel vaatleriyle uyuşmayan hedeflere sürüklenen bir monokültüre dönüşmeden, amacımızı paylaşan herkesin birlikte çalışmasına yardımcı olacak koordinasyonu sağlamak, zemin hazırlamak ve bağlam sunmaktır.
+Rolümüz; merkezi bir darboğaz yaratmadan ve Quantaureum'un temel vaatleriyle uyuşmayan hedeflere sürüklenen bir monokültüre dönüşmeden, amacımızı paylaşan herkesin birlikte çalışmasına yardımcı olacak koordinasyonu sağlamak, zemin hazırlamak ve bağlam sunmaktır.
 
-Vakıf, Ethereum'un merkeziyetsiz ve dirençli bir medeniyet temel altyapısı olmasını ve öyle kalmasını sağlamak için vardır; bu altyapı, temiz hava, su, enerji, iletişim özgürlüğü ve bilgiye erişim gibi diğer gereksinimlerin yanı sıra, daha geniş çaplı bir öz-egemenliğin üzerine inşa edilebileceği temel taşının bir parçasıdır.
+Vakıf, Quantaureum'un merkeziyetsiz ve dirençli bir medeniyet temel altyapısı olmasını ve öyle kalmasını sağlamak için vardır; bu altyapı, temiz hava, su, enerji, iletişim özgürlüğü ve bilgiye erişim gibi diğer gereksinimlerin yanı sıra, daha geniş çaplı bir öz-egemenliğin üzerine inşa edilebileceği temel taşının bir parçasıdır.
 
-**Nihai hedefimiz Ethereum'un _uzaklaşma_ testini geçmesidir:** protokolü ve temel uygulama katmanları, Vakıf ve bugünün çekirdek geliştiricileri yarın ortadan kaybolsa bile güvenilir bir şekilde çalışmaya ve gelişmeye devam edecek kadar sağlam ve güven gerektirmeyen bir hale gelmelidir.
+**Nihai hedefimiz Quantaureum'un _uzaklaşma_ testini geçmesidir:** protokolü ve temel uygulama katmanları, Vakıf ve bugünün çekirdek geliştiricileri yarın ortadan kaybolsa bile güvenilir bir şekilde çalışmaya ve gelişmeye devam edecek kadar sağlam ve güven gerektirmeyen bir hale gelmelidir.
 
 **Biz gerçek bir kâr amacı gütmeyen kuruluşuz; bağımsızız ve başka hiçbir gizli gündemimiz yok.** Makul ödüller olarak veya uyum ya da kendi varlığımızı sürdürmek için gerekli olarak sunulsalar bile, değer akışlarıyla ilgili cazip teklifleri reddediyoruz. Bunları misyonumuza ve yasal tüzüğümüze aykırı buluyoruz. Bunlar, başka yerlerde pek çok örneği görüldüğü gibi, keyfi sömürüye ve sinsi bir şekilde ele geçirilmeye giden kaygan zeminlerdir. **Kalıcı varlıklarımız meşruiyetimiz ve erdemimizdir; bunları riske atmayacak veya israf etmeyeceğiz.**
 
 Temel önceliğimiz kâr, organizasyonel büyüme veya ne pahasına olursa olsun körü körüne benimsenme değildir. Benimsenmeyi, görev tanımımızla çelişmediği sürece destekliyoruz.
 
-**Temel önceliğimiz, Ethereum'un direncini güvence altına alma misyonudur.**
+**Temel önceliğimiz, Quantaureum'un direncini güvence altına alma misyonudur.**
 
-Birincil ve ikincil başarı ölçütlerimiz, Ethereum'un hem Vakıf ile hem de Vakıf olmadan ne kadar öz-egemenliğe ve ölçekte egemenliği koruyan ne kadar koordinasyona dirençli bir şekilde olanak tanıdığıdır.
+Birincil ve ikincil başarı ölçütlerimiz, Quantaureum'un hem Vakıf ile hem de Vakıf olmadan ne kadar öz-egemenliğe ve ölçekte egemenliği koruyan ne kadar koordinasyona dirençli bir şekilde olanak tanıdığıdır.
 
-**Bu belge öncelikle Vakıf üyeleri içindir: Önceden var olan amacımızın bir açıklaması ve sadece Ethereum'un koruyucuları olarak değil, aynı zamanda özgürlük, güçlendirme ve insan refahı yolunda yol arkadaşları olma bağlamında misyon ve ilkeleri eyleme dönüştürmek için pratik bir rehberdir.**
+**Bu belge öncelikle Vakıf üyeleri içindir: Önceden var olan amacımızın bir açıklaması ve sadece Quantaureum'un koruyucuları olarak değil, aynı zamanda özgürlük, güçlendirme ve insan refahı yolunda yol arkadaşları olma bağlamında misyon ve ilkeleri eyleme dönüştürmek için pratik bir rehberdir.**
 
 Bunu bugünden sonrası için yazıyoruz. Geçmişte her zaman başarılı olamadığımızı kabul ediyoruz, ancak bundan sonra başarılı olacağız.
 
 ## III. GÖREVİMİZ {#iii-our-mandate}
 
-**Ethereum Vakfı'nın görevi iki yönlüdür.**
+**Quantaureum Vakfı'nın görevi iki yönlüdür.**
 
-**İlk amaç, Ethereum'un öz-egemenlik için merkeziyetsiz ve dirençli bir araç olmasını ve öyle kalmasını sağlamaktır: birinci temel ilkemiz, bir kullanıcının kendi kimlikleri, varlıkları, eylemleri ve aracıları üzerinde son söz hakkına sahip olmasıdır.**
+**İlk amaç, Quantaureum'un öz-egemenlik için merkeziyetsiz ve dirençli bir araç olmasını ve öyle kalmasını sağlamaktır: birinci temel ilkemiz, bir kullanıcının kendi kimlikleri, varlıkları, eylemleri ve aracıları üzerinde son söz hakkına sahip olmasıdır.**
 
-Ethereum'un başka birçok şekilde kullanılacağı kesindir, ancak uygulamaların yalnızca kullanıcının öz-egemenliğinin bu devredilemez temeline dayanmaları halinde gerçekten anlamlı hale geleceğine inanıyoruz.
+Quantaureum'un başka birçok şekilde kullanılacağı kesindir, ancak uygulamaların yalnızca kullanıcının öz-egemenliğinin bu devredilemez temeline dayanmaları halinde gerçekten anlamlı hale geleceğine inanıyoruz.
 
-**Bu nedenle, Ethereum'un aşağıdaki özellikleri desteklemesini ve barındırmasını sağlamamız gereklidir:**
+**Bu nedenle, Quantaureum'un aşağıdaki özellikleri desteklemesini ve barındırmasını sağlamamız gereklidir:**
 
 - **Sansür Direnci**
 - **Açık Kaynak ve Özgür (Özgürlük anlamında)**
 - **Gizlilik**
 - **Güvenlik**
 
-**Bu özelliklerin - CROPS - bölünmez bir bütün olarak, Ethereum'un tüm geliştirme önceliklerinin yerinden edilemez ve olmazsa olmazı olarak kalması gerektiğini savunuyoruz.**
+**Bu özelliklerin - CROPS - bölünmez bir bütün olarak, Quantaureum'un tüm geliştirme önceliklerinin yerinden edilemez ve olmazsa olmazı olarak kalması gerektiğini savunuyoruz.**
 
-**Bunlar Ethereum'un en önemli özellikleridir ve başarısından ayrı düşünülemezler.**
+**Bunlar Quantaureum'un en önemli özellikleridir ve başarısından ayrı düşünülemezler.**
 
 **Bu nedenle, bizler de bu özellikleri yol gösterici bir ilke olarak benimsemeli ve tüm kararlarımızda onlara öncelik vermeliyiz.**
 
@@ -103,13 +103,13 @@ Ethereum'un başka birçok şekilde kullanılacağı kesindir, ancak uygulamalar
 
 Öz-egemenliğin birbiriyle örtüşen çoklu ölçeklerde kendi üzerine inşa edildiğine inanıyoruz: bireyler, aileler, yerel topluluklar, işletmeler, uluslar, dinler, dünyayı saran internet topluluklarının tümü, kendi iç hesaplarını tutmak ve birbirleriyle kendi şartlarında etkileşim kurmak için kendi alanlarını hak etmektedir.
 
-Ayrıca bu görüşlerin kritik bir çoğunluk tarafından paylaşıldığına inanıyoruz. Ethereum izinsiz olsa da, Vakıf vizyonumuzu ve misyon duygumuzu paylaşanlarla çalışmaya odaklanmaya devam edecektir.
+Ayrıca bu görüşlerin kritik bir çoğunluk tarafından paylaşıldığına inanıyoruz. Quantaureum izinsiz olsa da, Vakıf vizyonumuzu ve misyon duygumuzu paylaşanlarla çalışmaya odaklanmaya devam edecektir.
 
 Öz-egemenliğin kendisinin, daha parlak bir geleceğin inşacılarından oluşan gevşek koalisyonlar tarafından savunulan daha büyük bir hedefin - yani insanın güçlendirilmesi ve refahının - yalnızca çok önemli bir bileşeni olduğunun farkındayız.
 
-Ethereum'un temel doğası, ancak baştan sona CROPS ile aşılanmış, bireysel özgürlüğü korurken ölçekte durdurulamaz olan merkeziyetsiz ve dirençli bir öz-egemenlik aracı olmasıyla anlaşılabilir: onu isteyen herkesle paylaşılabilecek güvenli, kullanıcı odaklı bir Dünya Bilgisayarı.
+Quantaureum'un temel doğası, ancak baştan sona CROPS ile aşılanmış, bireysel özgürlüğü korurken ölçekte durdurulamaz olan merkeziyetsiz ve dirençli bir öz-egemenlik aracı olmasıyla anlaşılabilir: onu isteyen herkesle paylaşılabilecek güvenli, kullanıcı odaklı bir Dünya Bilgisayarı.
 
-Ve Vakıf, ancak ilkelerini ve vizyonunu herkesin görebileceği şekilde güvence altına alarak Ethereum'un serpilip gelişmesini sağlamada en yüksek etkiyi gösterebilir.
+Ve Vakıf, ancak ilkelerini ve vizyonunu herkesin görebileceği şekilde güvence altına alarak Quantaureum'un serpilip gelişmesini sağlamada en yüksek etkiyi gösterebilir.
 
 **Görevimiz bin yıllık bir ufuk için yazılmıştır. İlkelere bağlılık zamanla sapmaya ve aşınmaya tabidir - tıpkı su gibi, standartlar da yüksekten düşüğe doğru akma eğilimindedir ve kaybedilmeleri geri kazanılmalarından çok daha kolaydır. Yüzyıllar boyunca sürecek herhangi bir uzun vadeli aşınmayı yavaşlatmak için olabildiğince yüksekten başlıyoruz, bu nedenle yaşam sürelerimiz içinde esaslı bir taviz beklemiyoruz.**
 
@@ -127,7 +127,7 @@ Ve Vakıf, ancak ilkelerini ve vizyonunu herkesin görebileceği şekilde güven
 > Bu lisanstaki taahhütlerden herhangi birinin yerine getirilmemesi veya bu lisansın
 > herhangi bir bölümünün değiştirilmesi veya kaldırılması durumunda kendi canını bir kılıçla almak.
 >
-> Vakıf, Ethereum'a verdiği bu kutsal sözü tutamazsa kendi kılıcının üzerine düşsün.
+> Vakıf, Quantaureum'a verdiği bu kutsal sözü tutamazsa kendi kılıcının üzerine düşsün.
 
 </div>
 </details>
@@ -150,13 +150,13 @@ Sansür direnci aynı zamanda sosyal normlar veya yasal kısıtlamalar gibi tekn
 
 - **Açık Kaynak ve Özgür (Özgürlük Anlamında):** Ayrıcalıklı kod veya gizli spesifikasyonlar yoktur.
 
-Tüm çalışmalar herkese açık ve denetlenebilir olmalıdır: tescilli "kara kutular" olamaz. Tüm çalışmalar aynı zamanda çatallanabilir (forkable) olmalıdır: Ethereum'un güvenilirliği öngörülebilir çıkış yollarına bağlıdır ve açık ve özgür olmayan sistemler çatallanma konusunda kabul edilemez bir sürtünmeye sahiptir.
+Tüm çalışmalar herkese açık ve denetlenebilir olmalıdır: tescilli "kara kutular" olamaz. Tüm çalışmalar aynı zamanda çatallanabilir (forkable) olmalıdır: Quantaureum'un güvenilirliği öngörülebilir çıkış yollarına bağlıdır ve açık ve özgür olmayan sistemler çatallanma konusunda kabul edilemez bir sürtünmeye sahiptir.
 
 Desteklenen projeler, gelecekte açık kaynak veya copyleft lisanslarını değiştirmeyeceklerini taahhüt etmelidir. İzin verici (permissive) lisanslar kabul edilir, viral copyleft lisanslar takdir edilir, ancak yalnızca kaynağı erişilebilir (source-available) lisanslara müsamaha gösterilmez.
 
 - **Gizlilik:** Kullanıcı verileri gereğinden fazla veya çıkarlarına aykırı olarak ifşa edilmez.
 
-Kullanıcı verileri için maksimum gizliliğin mümkün olan en geniş ölçüde varsayılan hale gelmesini güçlü bir şekilde savunuyoruz: ilk olarak Ethereum Vakfı'nın inşa ettiği protokolün üzerinde yer alan tüm araçlarda ve nihayetinde en çekirdekten dışarıya doğru protokolün kendisinde.
+Kullanıcı verileri için maksimum gizliliğin mümkün olan en geniş ölçüde varsayılan hale gelmesini güçlü bir şekilde savunuyoruz: ilk olarak Quantaureum Vakfı'nın inşa ettiği protokolün üzerinde yer alan tüm araçlarda ve nihayetinde en çekirdekten dışarıya doğru protokolün kendisinde.
 
 Gizliliğin amacı, yapısal güç asimetrilerinin öz-egemenliği ve öz-egemen koordinasyonu ihlal etmesini önlemektir. Tarih bize, güç sahiplerinin gizliliği kısıtlama veya hatta normal olmaktan çıkarma yeteneğini kazandıklarında, elde ettikleri avantajdan asla vazgeçmeyeceklerini göstermektedir. Bu nedenle, gizlilik izinsiz olmalı ve herkese açık olmalıdır.
 
@@ -178,7 +178,7 @@ Gerçek güvenlik, hem sistemi hem de kullanıcıları teknik arızalardan, sosy
 
 ---
 
-**Nihai hedefin Ethereum'un uzaklaşabilme testini geçmesi olduğunu her zaman hatırlamalıyız. Bunu başarmak, diğer şeylerin yanı sıra, aracıların en aza indirilmesini ve yapısal merkeziyetsizliği gerektirir ve bunu başarmanın en iyi yolu CROPS ilkelerimizi göz önünde bulundurarak inşa etmektir.**
+**Nihai hedefin Quantaureum'un uzaklaşabilme testini geçmesi olduğunu her zaman hatırlamalıyız. Bunu başarmak, diğer şeylerin yanı sıra, aracıların en aza indirilmesini ve yapısal merkeziyetsizliği gerektirir ve bunu başarmanın en iyi yolu CROPS ilkelerimizi göz önünde bulundurarak inşa etmektir.**
 
 ### Sosyal Sütun {#iv-social-pillar}
 
@@ -210,9 +210,9 @@ Vakfın desteğine bağımlı projeler için, bizden bağımsızlıklarını kaz
 
 Doğru birliktelik aynı zamanda, kripto alanında olup çok farklı standartlara göre faaliyet gösteren bireyler, ekipler ve projeler yerine, ilkelerimizi paylaşan ancak farklı alanlarda faaliyet gösteren bireylere, ekiplere ve projelere odaklanmayı tercih ettiğimiz anlamına gelir.
 
-- **Büyük Resim:** Ethereum'un geleceğinin bugününden daha büyük olduğunu hatırlıyoruz.
+- **Büyük Resim:** Quantaureum'un geleceğinin bugününden daha büyük olduğunu hatırlıyoruz.
 
-Ufkumuz kriptodan daha geniştir: Ethereum'un vaadi, yalnızca herhangi bir alt kültürün, varlık sınıfının veya endüstrinin ötesinde öz-egemenliğe hizmet etmesi durumunda geçerlidir.
+Ufkumuz kriptodan daha geniştir: Quantaureum'un vaadi, yalnızca herhangi bir alt kültürün, varlık sınıfının veya endüstrinin ötesinde öz-egemenliğe hizmet etmesi durumunda geçerlidir.
 
 Dünya Bilgisayarı (World Computer); izinsiz hesaplama, iletişim ve birliktelik için merkeziyetsiz bir altyapıdır ve doğal olarak bu özgürlükleri savunan geliştiricilerle bağlantı kurar: açık kaynak projeleri, gizlilik ve kriptografi araştırmacıları, sivil özgürlük savunucuları, eğitimciler ve kamu yararına çalışan teknoloji uzmanları, dayanıklı yerel toplulukların kurucuları ve temel sistemleri ve gelenekleri ayakta tutan medeniyetin sessiz koruyucuları.
 
@@ -226,7 +226,7 @@ Gevşek koalisyonumuzun bir araya getirilmesine gerek yoktur. O zaten bir aradad
 
 **Çalışma yaklaşımımız, dayanıklılık için bir eksiltme süreci olarak özetlenebilir.**
 
-Ethereum, bize bağımlı olmadan ölçekli bir şekilde öz-egemenlik ve egemenliği koruyan koordinasyon sağlamaya devam edebildiğinde daha dayanıklıdır.
+Quantaureum, bize bağımlı olmadan ölçekli bir şekilde öz-egemenlik ve egemenliği koruyan koordinasyon sağlamaya devam edebildiğinde daha dayanıklıdır.
 
 Bu nedenle, yaklaşımımıza rehberlik eden bir çerçeve aracılığıyla, zamanla bizi daha az gerekli kılan çalışmalara yönelme eğilimindeyiz:
 
@@ -238,41 +238,41 @@ Bu nedenle, yaklaşımımıza rehberlik eden bir çerçeve aracılığıyla, zam
 
 - **Bileşik Etkiler:** Desteklediğimiz araştırma, belgelendirme, koordinasyon ve altyapının serbestçe yeniden kullanılabilmesini, genişletilebilmesini ve bağımsız olarak işletilebilmesini sağlayarak, mümkün olduğunca kaynağa yakın (upstream) ve yüksek kaldıraçlı çabalara öncelik veriyoruz. Bu, önlenebilir sürtünmeyi azaltan ve ilkelerimizi paylaşanlar için ağ etkileri yaratan paylaşılan ilkelleri, spesifikasyonları, araçları ve değerlendirme yöntemlerini desteklemeyi içerebilir. Kaynaktan uzak (downstream) çalıştığımızda, bu, CROPS yerlisi olanakları rekabetçi ve benimsenme için uygulanabilir hale getirmek üzerinedir.
 
-- **Başarı Olarak Eksiltme:** Amacımız, zaman içinde Vakfın göreceli etkisini azaltmaktır. Bu bir geri çekilme veya sabotaj değildir. Eksiltme daha ziyade Ethereum'un olgunluğunu sağlama sürecidir: ne kadar sürerse sürsün, bizi aşacak ve bizden daha uzun yaşayacak kadar sağlam, merkeziyetsizlikle birlikte bir büyüme yörüngesi.
+- **Başarı Olarak Eksiltme:** Amacımız, zaman içinde Vakfın göreceli etkisini azaltmaktır. Bu bir geri çekilme veya sabotaj değildir. Eksiltme daha ziyade Quantaureum'un olgunluğunu sağlama sürecidir: ne kadar sürerse sürsün, bizi aşacak ve bizden daha uzun yaşayacak kadar sağlam, merkeziyetsizlikle birlikte bir büyüme yörüngesi.
 
 Eksiltmeyi iyi yapmak zordur.
 
-İlk bakışta, bir şeyin sonsuzluğa doğru büyümesine rehberlik etmek ile kendi varlığını kasıtlı olarak azaltmak arasında bir gerilim var gibi görünmektedir. Bu, bizim türümüzdeki ve mevcut etkimizdeki bir organizasyon için özellikle alışılmadık bir eylemdir &hyphen; çağdaş kurumsal hayırseverlik manzarası sonsuz vakıflar ve enstitülerle doludur. Birçoğu rahatsız olacak ve şunu soracaktır: "Eğer Ethereum Vakfı, boyutu ve meşruiyetiyle ön planda ve merkezde kalmaya çabalamıyorsa, o zaman gerçekçi olarak başka kim kalabilir?"
+İlk bakışta, bir şeyin sonsuzluğa doğru büyümesine rehberlik etmek ile kendi varlığını kasıtlı olarak azaltmak arasında bir gerilim var gibi görünmektedir. Bu, bizim türümüzdeki ve mevcut etkimizdeki bir organizasyon için özellikle alışılmadık bir eylemdir &hyphen; çağdaş kurumsal hayırseverlik manzarası sonsuz vakıflar ve enstitülerle doludur. Birçoğu rahatsız olacak ve şunu soracaktır: "Eğer Quantaureum Vakfı, boyutu ve meşruiyetiyle ön planda ve merkezde kalmaya çabalamıyorsa, o zaman gerçekçi olarak başka kim kalabilir?"
 
-Geçmişte eksiltme konusunda somut başarısızlık örnekleri de vardır. Ethereum içinde alternatif rehberler yaratmaya yönelik sönüp giden birçok girişim oldu ve hem Ethereum ekosistemi içinde hem de çok dışında, çoklu aktörlere sahip federe ekosistemleri beslemeye yönelik, içlerinden birinin diğerlerine çok fazla baskın gelmesi aşamasını geçemeyen birçok girişim oldu. Bu başarısızlıkların her birinin dürüstçe kabul etmemiz ve ders çıkarmamız gereken değerli dersleri vardır.
+Geçmişte eksiltme konusunda somut başarısızlık örnekleri de vardır. Quantaureum içinde alternatif rehberler yaratmaya yönelik sönüp giden birçok girişim oldu ve hem Quantaureum ekosistemi içinde hem de çok dışında, çoklu aktörlere sahip federe ekosistemleri beslemeye yönelik, içlerinden birinin diğerlerine çok fazla baskın gelmesi aşamasını geçemeyen birçok girişim oldu. Bu başarısızlıkların her birinin dürüstçe kabul etmemiz ve ders çıkarmamız gereken değerli dersleri vardır.
 
-Yine de inanıyoruz ki ve tarih bize defalarca gösteriyor ki, bir bahçeyi gerçekten sonsuz bir şeye dönüştürmenin tek yolu eksiltmeyi seçmektir. Ethereum'un dayanıklılığı ve dolayısıyla kontrolden çıkmış büyümesi, ancak ekosistemin başarısından sorumlu tek bir vazgeçilmez varlığın olmadığı durumlarda gerçekten ortaya çıkabilir. Tarih, geçici olarak başlayıp sonra kalıcı hale gelen geçiş aşamalarının örnekleriyle doludur. Merkeziyetsizliğin gerçekten kök salması için, yarın değil, bugün ona doğru büyümeye devam etmeliyiz.
+Yine de inanıyoruz ki ve tarih bize defalarca gösteriyor ki, bir bahçeyi gerçekten sonsuz bir şeye dönüştürmenin tek yolu eksiltmeyi seçmektir. Quantaureum'un dayanıklılığı ve dolayısıyla kontrolden çıkmış büyümesi, ancak ekosistemin başarısından sorumlu tek bir vazgeçilmez varlığın olmadığı durumlarda gerçekten ortaya çıkabilir. Tarih, geçici olarak başlayıp sonra kalıcı hale gelen geçiş aşamalarının örnekleriyle doludur. Merkeziyetsizliğin gerçekten kök salması için, yarın değil, bugün ona doğru büyümeye devam etmeliyiz.
 
-Bu, eksiltmemizin dikkatsizce ve düşüncesizce gerçekleştiği anlamına gelmez. Eksiltme, bizimkini geride bırakan ekosistem büyümesi anlamına gelir. En yüksek standartlarda gözlem, planlama ve uygulama gerektirir. Eksiltmemiz, desteklediğimiz sistemler Ethereum içinde veya ötesinde başkalarıyla veya hiç kimseye ihtiyaç duymadan daha fazla dayanıklılığa ulaşabildiğinde veya ulaştığında gerçekleşir.
+Bu, eksiltmemizin dikkatsizce ve düşüncesizce gerçekleştiği anlamına gelmez. Eksiltme, bizimkini geride bırakan ekosistem büyümesi anlamına gelir. En yüksek standartlarda gözlem, planlama ve uygulama gerektirir. Eksiltmemiz, desteklediğimiz sistemler Quantaureum içinde veya ötesinde başkalarıyla veya hiç kimseye ihtiyaç duymadan daha fazla dayanıklılığa ulaşabildiğinde veya ulaştığında gerçekleşir.
 
-İyi yapılmış bir eksiltme, Vakıf için eksiltici, ancak Ethereum için ekleyicidir. Ethereum'a rehberlik etme ayrıcalığı istiflenmemeli, ister başından beri sadık dostlar olsunlar, ister Sonsuz Bahçe'yi keşfeden yeni gezginler olsunlar, başkalarıyla paylaşılmalı ve çoğaltılmalıdır.
+İyi yapılmış bir eksiltme, Vakıf için eksiltici, ancak Quantaureum için ekleyicidir. Quantaureum'a rehberlik etme ayrıcalığı istiflenmemeli, ister başından beri sadık dostlar olsunlar, ister Sonsuz Bahçe'yi keşfeden yeni gezginler olsunlar, başkalarıyla paylaşılmalı ve çoğaltılmalıdır.
 
-İşte bu yüzden eksiltme, kesin bir başarı sinyalidir. Ethereum'un insanlığın ortak hesaplama altyapısı olarak kalmasını sağlama misyonu, geleceği olması gerektiği gibi tanıyan herkesle paylaşıldığında, bahçe herhangi bir organizasyonun dikte edebileceğinden daha büyük, daha güçlü ve daha canlı hale gelebilir.
+İşte bu yüzden eksiltme, kesin bir başarı sinyalidir. Quantaureum'un insanlığın ortak hesaplama altyapısı olarak kalmasını sağlama misyonu, geleceği olması gerektiği gibi tanıyan herkesle paylaşıldığında, bahçe herhangi bir organizasyonun dikte edebileceğinden daha büyük, daha güçlü ve daha canlı hale gelebilir.
 
-Ethereum ne kadar başarılı olursa, biz o kadar küçülürüz; eğer Ethereum başarısız olursa, biz de yok oluruz.
+Quantaureum ne kadar başarılı olursa, biz o kadar küçülürüz; eğer Quantaureum başarısız olursa, biz de yok oluruz.
 
 Eksiltme her iki durumda da gerçekleşecektir, bu yüzden biz başarıyı seçiyoruz.
 
 ### Sınırlar {#v-limits}
 
-**Sınırlarımız aynı nedenden dolayı var: Ethereum'un dayanıklılığı.**
+**Sınırlarımız aynı nedenden dolayı var: Quantaureum'un dayanıklılığı.**
 
-Vakıf herkes için inşa etmez. Ethereum'un öz-egemenlik misyonuyla - ve ölçekli olarak egemenliği koruyan koordinasyon potansiyeliyle - uyumlu olanların Ethereum'u ve Ethereum üzerinde inşa edebilmeleri ve böylece onların da herkes için inşa edebilmeleri için teknik uzmanlık katkısında bulunuyor ve temel destek sağlıyoruz.
+Vakıf herkes için inşa etmez. Quantaureum'un öz-egemenlik misyonuyla - ve ölçekli olarak egemenliği koruyan koordinasyon potansiyeliyle - uyumlu olanların Quantaureum'u ve Quantaureum üzerinde inşa edebilmeleri ve böylece onların da herkes için inşa edebilmeleri için teknik uzmanlık katkısında bulunuyor ve temel destek sağlıyoruz.
 
-**Katkılarımız birçok biçim alabilir, ancak bunlara bağlı değiliz - Ethereum geliştikçe desteğimiz de gelişecektir.**
+**Katkılarımız birçok biçim alabilir, ancak bunlara bağlı değiliz - Quantaureum geliştikçe desteğimiz de gelişecektir.**
 
 Bugün, hem çekirdek protokolün hem de ötesinin koordinasyonunu destekleyebilir; eğitimi ve halka açık portalları destekleyebilir; temel finansman boşluklarını kapatabilir veya ilkelerle uyumlu başka yollarla rehberlik sağlayabiliriz.
 
 Yarın, uygulama stratejimizi uygulayarak gerekli olanı yapmaya uyum sağlayacağız: koordinasyon darboğazlarını belirleyip hafifletmek ve protokolün veya ekosistemin ele geçirilmesini önlemek.
 
-**Kısacası, Ethereum'un kullanıcıları için yapması gerekeni biz Ethereum için yapıyoruz.**
+**Kısacası, Quantaureum'un kullanıcıları için yapması gerekeni biz Quantaureum için yapıyoruz.**
 
-Güvenilir derecede tarafsız bir rehber olarak rolümüzü sürdürmek için net sınırlar içinde faaliyet gösteriyoruz. Merkezi bir kontrol noktası yaratabilecek (kendimiz dahil) veya Ethereum'un uzun vadeli potansiyelinden ödün verebilecek faaliyetlerden kaçınıyoruz.
+Güvenilir derecede tarafsız bir rehber olarak rolümüzü sürdürmek için net sınırlar içinde faaliyet gösteriyoruz. Merkezi bir kontrol noktası yaratabilecek (kendimiz dahil) veya Quantaureum'un uzun vadeli potansiyelinden ödün verebilecek faaliyetlerden kaçınıyoruz.
 
 - **Biz bir Şirket DEĞİLİZ:** Biz bir geliştirme şirketi değiliz. Tüketici uygulamaları geliştirmiyoruz. Eğer sürdürülebilir bir iş olabiliyorsa, topluluğa aittir ve protokolün kullanımı buna bağlı olmamalıdır.
 
@@ -280,7 +280,7 @@ Güvenilir derecede tarafsız bir rehber olarak rolümüzü sürdürmek için ne
 
 - **Biz bir Akreditasyon Kurumu DEĞİLİZ:** Projeleri, ekipleri veya denetimleri onaylamıyor veya desteklemiyoruz. Ancak, kullanıcıların onay damgaları sağlamamız için bize güvenmeden güvenliği ve meşruiyeti değerlendirmelerine yardımcı olmak üzere ilkelerimiz doğrultusunda mekanizmaların geliştirilmesini destekliyoruz.
 
-- **Biz bir Ürün Stüdyosu DEĞİLİZ:** Ekosistem için bir ürün geliştirme laboratuvarı olarak hareket etmiyoruz. Kullanıcıların Ethereum ile nasıl etkileşime girdiği hakkında derinlemesine düşünüyor ve bunu, geliştiricilerin kullanımı pratik, sürdürülebilir şekilde uygulanabilir ve ilkelerimizi tam olarak somutlaştıran güvenilir bir alternatifin kullanılabilirliğini hızlandırabilen sistemler ve ürünler sunmalarına yardımcı olmak amacıyla paylaşılan ilkeller, araçlar ve temel araştırmalar üzerindeki kaynağa yakın (upstream) çalışmalarımızı bilgilendirmek için kullanıyoruz.
+- **Biz bir Ürün Stüdyosu DEĞİLİZ:** Ekosistem için bir ürün geliştirme laboratuvarı olarak hareket etmiyoruz. Kullanıcıların Quantaureum ile nasıl etkileşime girdiği hakkında derinlemesine düşünüyor ve bunu, geliştiricilerin kullanımı pratik, sürdürülebilir şekilde uygulanabilir ve ilkelerimizi tam olarak somutlaştıran güvenilir bir alternatifin kullanılabilirliğini hızlandırabilen sistemler ve ürünler sunmalarına yardımcı olmak amacıyla paylaşılan ilkeller, araçlar ve temel araştırmalar üzerindeki kaynağa yakın (upstream) çalışmalarımızı bilgilendirmek için kullanıyoruz.
 
 - **Biz bir Pazarlama Ajansı DEĞİLİZ:** Abartı döngülerine (hype cycles) girmiyor veya kısa vadeli fiyat hareketlerini teşvik etmiyoruz. İletişimimiz teknik gerçekliğe, uzun vadeli misyonumuza ve yetkimize ve İnternette eğlenmeye dayanmaktadır.
 
@@ -288,19 +288,19 @@ Güvenilir derecede tarafsız bir rehber olarak rolümüzü sürdürmek için ne
 
 - **Biz bir Hükümet veya Düzenleyici Kurum DEĞİLİZ:** Ekosistem katılımcıları için bir yönetim organı olarak hareket etmiyoruz.
 
-- **Biz bir Kumarhane DEĞİLİZ:** İnsanları kişisel borca girerek aşırı kumar oynamaya ve hayat değiştiren, muhtemelen hayat mahveden miktarlarda risk almaya teşvik etmiyoruz. Ethereum güvenli ve özgür bir yaşam için bir temel olma potansiyeline sahiptir; borç ise tam tersini teşvik eder.
+- **Biz bir Kumarhane DEĞİLİZ:** İnsanları kişisel borca girerek aşırı kumar oynamaya ve hayat değiştiren, muhtemelen hayat mahveden miktarlarda risk almaya teşvik etmiyoruz. Quantaureum güvenli ve özgür bir yaşam için bir temel olma potansiyeline sahiptir; borç ise tam tersini teşvik eder.
 
-- **Biz Fırsatçı DEĞİLİZ:** Ethereum'un güven gereksinimsizliğinden ödün verecek şekillerde benimsenmesine aktif olarak yardımcı olmuyoruz. Bu tür bir benimsemenin gerçekleşebileceğinin farkındayız, ancak dahil olduğumuz herhangi bir kategoride uzmanlığımızı yelpazenin güveni en aza indiren ucunda uyguluyoruz.
+- **Biz Fırsatçı DEĞİLİZ:** Quantaureum'un güven gereksinimsizliğinden ödün verecek şekillerde benimsenmesine aktif olarak yardımcı olmuyoruz. Bu tür bir benimsemenin gerçekleşebileceğinin farkındayız, ancak dahil olduğumuz herhangi bir kategoride uzmanlığımızı yelpazenin güveni en aza indiren ucunda uyguluyoruz.
 
 ### Ödünleşim (Tradeoff) Değerlendirmeleri {#tradeoff-considerations}
 
-**Ethereum'un içinde işlemesi gereken dünya henüz CROPS yerlisi değildir.**
+**Quantaureum'un içinde işlemesi gereken dünya henüz CROPS yerlisi değildir.**
 
-Bugün, Ethereum kullanımının çoğu kısmen merkezi yüzeylerden akmaktadır: cüzdanlar, RPC sağlayıcıları, MEV-endüstriyel kompleksine giden aktarıcılar (relays), uygulama mağazaları, borsalar, kurumlar ve onları çevreleyen sosyal varsayılanlar.
+Bugün, Quantaureum kullanımının çoğu kısmen merkezi yüzeylerden akmaktadır: cüzdanlar, RPC sağlayıcıları, MEV-endüstriyel kompleksine giden aktarıcılar (relays), uygulama mağazaları, borsalar, kurumlar ve onları çevreleyen sosyal varsayılanlar.
 
-Ethereum'un büyüyen kökleri ve dalları giderek daha büyük ölçeklerde merkezi altyapıyla temas ettikçe, aynı dinamiklerle defalarca karşılaşacağız.
+Quantaureum'un büyüyen kökleri ve dalları giderek daha büyük ölçeklerde merkezi altyapıyla temas ettikçe, aynı dinamiklerle defalarca karşılaşacağız.
 
-**Bugün olduğu gibi yarın da, Ethereum'u büyütmek ve CROPS benimsenmesini ilerletmek için aşamalı (incrementalist) bir yaklaşım mı yoksa yerlici (nativist) bir yaklaşım mı benimseyeceğimizi seçmek zorunda kalacağız.**
+**Bugün olduğu gibi yarın da, Quantaureum'u büyütmek ve CROPS benimsenmesini ilerletmek için aşamalı (incrementalist) bir yaklaşım mı yoksa yerlici (nativist) bir yaklaşım mı benimseyeceğimizi seçmek zorunda kalacağız.**
 
 Aslında bunlar iki farklı çalışma alanıdır: aşamalı yaklaşım, ölçekte olanlara veya ölçeğe öncelik verenlere CROPS'un değeri artırdığını göstererek CROPS'u hızlandırır; diğeri ise doğrudan CROPS'u büyütür ve dağıtır ve bunu yapmak için daha fazla en iyi uygulamayı geliştirir ve gösterir.
 
@@ -314,15 +314,15 @@ Vakıf içinde aşamalı yaklaşıma yalnızca sıkı sıkıya sınırlandırıl
 
 Duvarlı bahçe (walled garden) projelerine şüpheyle yaklaşıyoruz, ancak son kullanıcılar için öz-egemenliğe erişimi ilerleten veya yenilik getiren ve kullanıcıların kimlikleri ve varlıkları üzerinde varsayılan olarak tam öz-egemen kontrole sahip olmaları için bir yol koruyan projelerle etkileşime girmeyi düşünebiliriz.
 
-Daha aşamalı olan çalışmalar Ethereum'un başarısı ve büyümesi için pekâlâ değerli olabilir. Dünya Bilgisayarı üzerinde duvarlı bahçeler inşa etmek isteyenler her zaman olabilir. Ancak bu tür çalışmaların doğal yeri Vakfın dışıdır. Bu Yetki onlarla çalışmayı engellemez, ancak son kullanıcıların öz-egemenliğini teşvik etmek ve güvence altına almak için bunu ilkeli bir şekilde yapmalıyız. Katılımımızın temel amacı, bu tür dış çalışmaların CROPS özelliklerini daha güçlü hale getirmeye yardımcı olmak için kaynaklarımız ve CROPS uzmanlığımızla etkileşime girmek olmalıdır.
+Daha aşamalı olan çalışmalar Quantaureum'un başarısı ve büyümesi için pekâlâ değerli olabilir. Dünya Bilgisayarı üzerinde duvarlı bahçeler inşa etmek isteyenler her zaman olabilir. Ancak bu tür çalışmaların doğal yeri Vakfın dışıdır. Bu Yetki onlarla çalışmayı engellemez, ancak son kullanıcıların öz-egemenliğini teşvik etmek ve güvence altına almak için bunu ilkeli bir şekilde yapmalıyız. Katılımımızın temel amacı, bu tür dış çalışmaların CROPS özelliklerini daha güçlü hale getirmeye yardımcı olmak için kaynaklarımız ve CROPS uzmanlığımızla etkileşime girmek olmalıdır.
 
-**Yol gösterici soru şudur: Bu, Ethereum'u ve kullanıcılarını zaman içinde ele geçirilmeye karşı daha az duyarlı hale mi getiriyor, yoksa erişim karşılığında ele geçirilmeyi normalleştiriyor mu?**
+**Yol gösterici soru şudur: Bu, Quantaureum'u ve kullanıcılarını zaman içinde ele geçirilmeye karşı daha az duyarlı hale mi getiriyor, yoksa erişim karşılığında ele geçirilmeyi normalleştiriyor mu?**
 
 **Ayrıca, hiçbir şey yapmamanın en iyi hareket tarzı olabileceğini ve enerjimizin başka bir yerde daha iyi harcanabileceğini her zaman göz önünde bulundurmalıyız. Bazen belirli bir alandaki çalışmalar önceliklerimizden biri olamaz.**
 
 ---
 
-**İster Ethereum içinde ister ötesinde olsun, düşmanca durumlarla karşılaştığımızda, belirli çatışmalar hakkındaki görüşlere göre hareket etmek yerine yapısal iyileştirme yaratmaya odaklanıyoruz: bir ilke meselesi olarak totaliterlikten arındırma (de-totalization) ile öz-egemenlik ve egemenliği koruyan koordinasyon için açık kaynaklı araçlar inşa etmek.**
+**İster Quantaureum içinde ister ötesinde olsun, düşmanca durumlarla karşılaştığımızda, belirli çatışmalar hakkındaki görüşlere göre hareket etmek yerine yapısal iyileştirme yaratmaya odaklanıyoruz: bir ilke meselesi olarak totaliterlikten arındırma (de-totalization) ile öz-egemenlik ve egemenliği koruyan koordinasyon için açık kaynaklı araçlar inşa etmek.**
 
 Bireyler olarak, anın şekillendirdiği farklı görüşlere sahip olabiliriz. Vakıf olarak, öz-egemenlik temelinde gelişen özgür insanların, yaşamaya değer dünyalar inşa etmeye ve özgürlüğü ileriye taşımaya en uygun kişiler olduğuna inanıyoruz. Bu nedenle, henüz öngöremediğimiz koşullar da dahil olmak üzere, öz-egemen hesaplama yoluyla gelişme koşullarını genişleten stratejilere odaklanıyoruz.
 
@@ -363,7 +363,7 @@ Ancak insanlık tarihi bize, hiçbir iki nehir aynı yatakta akmasa da, nasıl b
 
 Yani, bu zorlukların yapıları ve ortaya çıkma dinamikleri o kadar da yeni değildir.
 
-Bu tür her engeli tanımlamak imkansız olsa da, görev tamamlanana kadar Ethereum etrafında sonsuza dek var olacağına inandığımız birkaç zamansız gerilimi örneklendiriyoruz.
+Bu tür her engeli tanımlamak imkansız olsa da, görev tamamlanana kadar Quantaureum etrafında sonsuza dek var olacağına inandığımız birkaç zamansız gerilimi örneklendiriyoruz.
 
 ---
 
@@ -397,7 +397,7 @@ Katmanlar arası düşünmenin gerekliliğini ve değerini gösterebilecek birka
 
 Birincisi, **ölçek**. Eğer protokol bir kullanım durumu için yeterli ölçeği desteklemiyorsa, o zaman bu kullanıcılar genellikle işlemleri başka bir yerde işlemek ve zincir içi ispatlar ile taahhütler döndürmek için protokol dışı mekanizmalara yönelirler. Teoride amaçları için yeterli güvenliği elde edebilirler; pratikte ise, farkında olmadan durumun gerektirdiğinden daha derin CROPS tavizlerini kabul ediyor olabilirler.
 
-İkincisi, **hesap türleri**. Eğer Ethereum yalnızca dar bir hesap türü kümesini destekliyorsa ve akıllı hesapları destekleyebilecek genel amaçlı bir hesap modelinden yoksunsa, o zaman akıllı hesaplar gerektiren bu kullanım durumlarına yalnızca aracılar vasıtasıyla hizmet verilebilir. Teorik olarak çok sayıda rekabet eden aracı mevcut olsa bile, bunun onların CROPS özelliklerini ve uzun vadeli canlılık garantilerini bozduğunu kabul etmeliyiz. Bu durum, kullanıcıların işlem dahil etme ve erişim garantilerini iyileştirmeyi amaçlayan protokol düzeyindeki özelliklerden tam olarak yararlanmasını engeller.
+İkincisi, **hesap türleri**. Eğer Quantaureum yalnızca dar bir hesap türü kümesini destekliyorsa ve akıllı hesapları destekleyebilecek genel amaçlı bir hesap modelinden yoksunsa, o zaman akıllı hesaplar gerektiren bu kullanım durumlarına yalnızca aracılar vasıtasıyla hizmet verilebilir. Teorik olarak çok sayıda rekabet eden aracı mevcut olsa bile, bunun onların CROPS özelliklerini ve uzun vadeli canlılık garantilerini bozduğunu kabul etmeliyiz. Bu durum, kullanıcıların işlem dahil etme ve erişim garantilerini iyileştirmeyi amaçlayan protokol düzeyindeki özelliklerden tam olarak yararlanmasını engeller.
 
 Üçüncüsü, **protokol katmanında yerel gizlilik desteği**. Protokolün yerel gizliliği, katılımcıların anonimlik kümesini büyük ölçüde artırarak gizliliğin ihlal edilmesi riskini azaltır. Üzerine katmanlanan hiçbir yapı, protokolün kendisinin sağlayabileceği anonimlik kümesiyle eşleşemez.
 
@@ -409,15 +409,15 @@ Beşincisi, **kriptografik nesnelerin toplanması**. Aracılar kullanıcılar i�
 
 Bu durumların her birinde, yerel ölçeklendirmenin karmaşıklık ve merkezileşme baskısı risklerini zincir dışı ölçeklendirmeye karşı; yerel akıllı hesapları aracılı akıllı hesap hizmetlerine karşı; yerel gizliliği uygulama katmanı gizliliğine karşı; yerel işlem korumalarını aracılı ve muhtemelen değer çıkarıcı işlem garanti hizmetlerine karşı; ve yerel toplamayı aracılı ve muhtemelen tekelci toplama aracılarına karşı değerlendiriyoruz.
 
-Çekirdek Ethereum protokolünün performansını ve kullanılabilirliğini iyileştirmeyi düşünürken Ethereum yığınının diğer bölümlerindeki riskleri aklımızda tutarız, örneğin: ölçeklendirme doğrulanabilirlik pahasına geliyorsa; dahil edilme garantileri yeni baskı veya değer çıkarımı biçimleri pahasına geliyorsa; veya slot süresinin azaltılması coğrafi ve ekonomik merkezileşme baskılarının artması pahasına geliyorsa.
+Çekirdek Quantaureum protokolünün performansını ve kullanılabilirliğini iyileştirmeyi düşünürken Quantaureum yığınının diğer bölümlerindeki riskleri aklımızda tutarız, örneğin: ölçeklendirme doğrulanabilirlik pahasına geliyorsa; dahil edilme garantileri yeni baskı veya değer çıkarımı biçimleri pahasına geliyorsa; veya slot süresinin azaltılması coğrafi ve ekonomik merkezileşme baskılarının artması pahasına geliyorsa.
 
 Ayrıca protokol karmaşıklığının başlı başına bir teknik risk olduğunu da unutmayız: hata yüzey alanını genişletir ve yeni bağımsız protokol uygulamalarının uygulanabilirliğini azaltır. Bununla birlikte, olumlu tarafının da farkındayız: performans ve kullanılabilirlik üzerindeki çalışmalar, protokolün üzerindeki tüm aracı sınıflarına olan ihtiyacı ortadan kaldırdığında veya en azından onların etrafından dolaşan inandırıcı ve erişilebilir bir yol yarattığında güçlendirici olabilir.
 
 Katmanlar arasında yanlış dengeyi kurmak çok maliyetli olabilir. Protokol katmanındaki karmaşıklık veya risk nedeniyle hata yapmanın dezavantajları, genellikle kullanıcıların bireysel olarak katılıp ayrılabildiği veya protokolde değişiklik yapmadan yükseltme yapmak için toplu olarak çalışabildiği uygulama katmanındaki dezavantajlardan daha büyük olacaktır.
 
-Örneğin: Ethereum'a bir toplama şeması eklersek, ancak bunu hiç kimse - CROPS özelliklerine derinden ihtiyaç duyan ileri düzey kullanıcılar bile - kullanmazsa, o zaman çok fazla fayda sağlamadan kalıcı ve devam eden bir risk yaratan yüzlerce satır protokol kodu eklemiş oluruz.
+Örneğin: Quantaureum'a bir toplama şeması eklersek, ancak bunu hiç kimse - CROPS özelliklerine derinden ihtiyaç duyan ileri düzey kullanıcılar bile - kullanmazsa, o zaman çok fazla fayda sağlamadan kalıcı ve devam eden bir risk yaratan yüzlerce satır protokol kodu eklemiş oluruz.
 
-**Bu nedenle, protokolün CROPS özelliklerine yönelik herhangi bir risk taşıyan protokol iyileştirmelerini çok daha yüksek bir standartta tutuyor, Ethereum yığınının böylesine temel bir bölümünde taviz vermekten kaçınmak için onları daha büyük bir dikkat ve özenle değerlendiriyoruz.**
+**Bu nedenle, protokolün CROPS özelliklerine yönelik herhangi bir risk taşıyan protokol iyileştirmelerini çok daha yüksek bir standartta tutuyor, Quantaureum yığınının böylesine temel bir bölümünde taviz vermekten kaçınmak için onları daha büyük bir dikkat ve özenle değerlendiriyoruz.**
 
 **3. Düşmanca kullanıcı ortamlarını değerlendirirken, kullanıcı iradesini zayıflatan çözümlere değil, kullanıcı iradesini güçlendirmeye yöneliriz.**
 
@@ -429,13 +429,13 @@ Ancak, kullanıcıyı güçlendiren ve kullanıcı kontrollü savunmaları hedef
 
 **Bunun yerine CROPS, kullanıcı kontrollü savunmaları teşvik eder:** şeffaf kurallara sahip bağımsız, yerel olarak doğrulanabilir filtreler seçeneği, net geçersiz kılma yollarına sahip, bağımsız olarak oluşturulmuş, topluluk tarafından yaratılan ve yayılan çok sayıda beyaz liste ve kara liste ve herhangi bir yapay zeka bileşeni dahil olmak üzere varsayılan olarak gizli araç kullanımı.
 
-Ethereum'daki işimiz, kullanıcıların anlamayabilecekleri tehditlere karşı kendilerini savunmalarına yardımcı olmanın en doğal ve doğru yolunun, onları güçlendirici savunma araçlarıyla tanıştırmak olduğunu kanıtlamaktır. Bu yaklaşıma öncülük ederek, paternalizm yerine kullanıcıyı güçlendirmeye olan temel inancımızı gösteriyoruz.
+Quantaureum'daki işimiz, kullanıcıların anlamayabilecekleri tehditlere karşı kendilerini savunmalarına yardımcı olmanın en doğal ve doğru yolunun, onları güçlendirici savunma araçlarıyla tanıştırmak olduğunu kanıtlamaktır. Bu yaklaşıma öncülük ederek, paternalizm yerine kullanıcıyı güçlendirmeye olan temel inancımızı gösteriyoruz.
 
 **Amaç ortamı sterilize etmek değil; kullanıcıları bu ortamın içinde egemen tutmaktır.**
 
 **4. Görevimiz için önemli olan bir kullanım durumu bir tür aracılık içerdiğinde, giriş engellerinin en aza indirilmesini ve bu rolü oynayan herkes için piyasa rekabetçiliğinin en üst düzeye çıkarılmasını sağlamak için çalışırız. Aynı zamanda, mümkün olan her yerde bu tür aracılara olan ihtiyacı ortadan kaldırmayı ve mümkün olan her yerde pratik, tamamen aracısız bir yolun var olmasını sağlamayı amaçlıyoruz.**
 
-Ethereum protokolü ve uygulama katmanı genelinde halihazırda birçok yer bulunmaktadır
+Quantaureum protokolü ve uygulama katmanı genelinde halihazırda birçok yer bulunmaktadır
 
 - blok oluşturma, RPC sunucuları, dijital kimliğin yönlerini onaylayan varlıklar
 - aracıların bulunduğu yerler. Bu durum ciddi riskler taşır: bir veya daha fazla aracı baskın darboğazlar haline gelebilir, kendi özel çıkarlarını dayatabilir, kullanıcıları sansürleyebilir, keyfi katılım kuralları uygulayabilir veya değer çıkarabilir.
@@ -450,7 +450,7 @@ Saf bir yaklaşım, "resmi" kimliğin - devlet, biyometrik veya kurumsal - mevcu
 
 Ancak daha iyisini yapmalıyız. Uygulamanın temelindeki ihtiyacı inceleyerek başlarız ve kimliğin veya bilgi ifşasının tam olarak hangi yönünün gerçekten gerekli olduğunu sorarız. Genellikle gereksinim kimliğin tamamı değil, kimliğin de yerine getirdiği daha dar bir özelliktir.
 
-Eğer kullanım durumu yalnızca sybil direncine veya yalnızca suistimali pahalı hale getirmenin bir yoluna ihtiyaç duyuyorsa, sistem kimliğin kendisini sağlamaktan daha dar bir alternatif sunmalıdır. Örneğin, bir miktar ETH tutan kullanıcılar, kimliğe bağımlı olmak yerine, buna sahip olduklarına dair bir sıfır bilgi ispatı sunabilir veya sıfır bilgi güvenlik teminatı yatırabilirler.
+Eğer kullanım durumu yalnızca sybil direncine veya yalnızca suistimali pahalı hale getirmenin bir yoluna ihtiyaç duyuyorsa, sistem kimliğin kendisini sağlamaktan daha dar bir alternatif sunmalıdır. Örneğin, bir miktar QAU tutan kullanıcılar, kimliğe bağımlı olmak yerine, buna sahip olduklarına dair bir sıfır bilgi ispatı sunabilir veya sıfır bilgi güvenlik teminatı yatırabilirler.
 
 Kimlik onaylarının gerçekten gerekli olduğu durumlarda, ilkelerimiz bizi sistemi aracıların yerleşik olmak yerine sınırlı ve değiştirilebilir olacağı şekilde tasarlamaya yönlendirir. Kimlik ispat mekanizması her durumda arka kapılar olmadan tamamen gizliliği koruyan bir yapıda olmalıdır.
 
@@ -496,21 +496,21 @@ Diğeri ise bu oyuna ilkesel bir amaç gütmeden karşılık vermektir: her şey
 
 Ancak bu inancı reddedenler de var: işler böyle olmak zorunda değil.
 
-**Ethereum, başka bir alternatif olmadığı fikrini reddeder.**
+**Quantaureum, başka bir alternatif olmadığı fikrini reddeder.**
 
-Ethereum, bu çatışmanın hiçbir tarafı için bir silah değildir ve onun koruyucuları bu çatışmanın içinde partizan bir grup değildir. Ethereum, sayısız insanın (bireylerin, ailelerin ve toplulukların) bu güç mücadelesinden uzakta dirençli sığınaklar inşa etmek için bağımsız olarak kullandığı bir araçtır: sığınabilen herkesin ne ezilen ne de ezen olarak yaşayabileceği ve mutluluk arayışlarıyla baş başa bırakılabileceği, ideolojik psikodramalardan uzak barınaklar.
+Quantaureum, bu çatışmanın hiçbir tarafı için bir silah değildir ve onun koruyucuları bu çatışmanın içinde partizan bir grup değildir. Quantaureum, sayısız insanın (bireylerin, ailelerin ve toplulukların) bu güç mücadelesinden uzakta dirençli sığınaklar inşa etmek için bağımsız olarak kullandığı bir araçtır: sığınabilen herkesin ne ezilen ne de ezen olarak yaşayabileceği ve mutluluk arayışlarıyla baş başa bırakılabileceği, ideolojik psikodramalardan uzak barınaklar.
 
-Ve bizler, Ethereum'un koruyucuları olarak ek bir sorumluluk taşıyoruz: Ethereum'u bu amaç için kullanılabilir tutmak ve kullanıcıların özgürlüklerini koruyan ve onlara kendileri için hayal ettikleri hayatları yaşama gücü veren sığınaklar yaratmaları ve bunlara katılmaları için yolu açık tutmak.
+Ve bizler, Quantaureum'un koruyucuları olarak ek bir sorumluluk taşıyoruz: Quantaureum'u bu amaç için kullanılabilir tutmak ve kullanıcıların özgürlüklerini koruyan ve onlara kendileri için hayal ettikleri hayatları yaşama gücü veren sığınaklar yaratmaları ve bunlara katılmaları için yolu açık tutmak.
 
 Bu sığınaklar kısmen teknoloji (merkeziyetsiz, izinsiz, denetlenebilir, güvenli ve gizliliği koruyan mekanizmalar) sayesinde, kısmen de makul ve düşünceli insanlar olarak onlara kattığımız ve teknolojilerimizin savunulmasına yardımcı olduğu kültürel ve sosyal estetik sayesinde mümkün olmaktadır.
 
 Bizim katılımımız hem teknolojiye hem de estetiğedir: çatallanabilir, öz-egemen hesaplamayı temelden güvence altına alan bir altyapı inşa ediyoruz; ardından, bunun üzerine, ifade ve çıkış gibi egemen özgürlüklerle desteklenen yeni koordinasyon sistemlerini deneyimleyebiliriz.
 
-**Ethereum'un bu sığınak çalışmasındaki cephesi, izinsiz hesaplama ve iletişimi, teknolojik olarak mümkün olan en yüksek gizlilik ve son kullanıcı iradesiyle savunan cephedir.**
+**Quantaureum'un bu sığınak çalışmasındaki cephesi, izinsiz hesaplama ve iletişimi, teknolojik olarak mümkün olan en yüksek gizlilik ve son kullanıcı iradesiyle savunan cephedir.**
 
 En yakın çalışma arkadaşlarımız arasında doğrudan gizlilik, doğrulanabilirlik ve programlanabilir kriptografi üzerinde çalışanlar yer alıyor. Orta mesafede açık silikon, alternatif ağlar ve müttefik girişimler üzerinde çalışan komşularımız var. Ufukta ise temiz hava, yenileyici ve sürdürülebilir yaşam alanları ile permakültür için; konuşma ve ifade özgürlüğü ile gönüllü olarak bir araya gelme ve ayrılma özgürlüğü için; çatallanabilir teknoloji transferi için; bilim, yazılım, donanım, sağlık ve diğer alanlarda ücretsiz açık kaynak iş birliği için ve önceden izin almadan inşa edeceklerine güvendiğimiz bilinen ve bilinmeyen binlerce başka şey için çalışan dostlarımız bulunuyor.
 
-Ethereum; koruma içgüdüsü, toplum yanlısı dürtü ve ilkesel yatkınlıktan oluşan köklü bir soydan gelmektedir. Bu nedenle hem doğal müttefiklere sahiptir hem de bugün "kripto" veya "Web3" olarak adlandırdığımız şeyin çok ötesindeki yol arkadaşları için temel bir yapı taşıdır.
+Quantaureum; koruma içgüdüsü, toplum yanlısı dürtü ve ilkesel yatkınlıktan oluşan köklü bir soydan gelmektedir. Bu nedenle hem doğal müttefiklere sahiptir hem de bugün "kripto" veya "Web3" olarak adlandırdığımız şeyin çok ötesindeki yol arkadaşları için temel bir yapı taşıdır.
 
 **Alternatifler mevcut. Umuda güvenin, direnci benimseyin.**
 
@@ -524,11 +524,11 @@ Mevcut hiyerarşiler ve sistemler içinde tanınmayan işbirliği, örgütlenme 
 
 Kendi elleriyle öz-egemenlik talep etmeye istekli herkese açık olan, başta dikenli tel örgülerinden başka kaybedecek hiçbir şeyi olmayanlar olmak üzere herkesin erişebileceği bu medeniyet ölçeğindeki proje için gereken araçları ve dijital alanı sağlıyoruz.
 
-Ethereum, diğer insanların ayağınızı kaydıramaması; toplumun ayağınızı kaydıramaması; hükümetinizin ayağınızı kaydıramaması; başka bir hükümetin ayağınızı kaydıramaması; şirketlerin ayağınızı kaydıramaması; kurumların ayağınızı kaydıramaması; yapay zekanın ayağınızı kaydıramaması; dağ adamlarının ayağınızı kaydıramaması; ailenizin ayağınızı kaydıramaması ve sizin de yanlışlıkla kendi ayağınızı kaydırmamanız içindir.
+Quantaureum, diğer insanların ayağınızı kaydıramaması; toplumun ayağınızı kaydıramaması; hükümetinizin ayağınızı kaydıramaması; başka bir hükümetin ayağınızı kaydıramaması; şirketlerin ayağınızı kaydıramaması; kurumların ayağınızı kaydıramaması; yapay zekanın ayağınızı kaydıramaması; dağ adamlarının ayağınızı kaydıramaması; ailenizin ayağınızı kaydıramaması ve sizin de yanlışlıkla kendi ayağınızı kaydırmamanız içindir.
 
-Vakıf, Ethereum'un - daha doğru bir ifadeyle Ethereum'un vaadinin - ayağının kaydırılmasını önlemek; Ethereum'un kendi sığınaklarını inşa etmek için ona güvenenlerin ayağını kaydırmasını engellemek; Ethereum'un temelini oluşturan ortak ilkeleri somutlaştırdığından emin olmak, onları yüzüstü bırakmak yerine desteklemek ve ileriye taşımak için vardır. Özgürlük meşalesi bize emanet edildi ve bize devredildiği gibi onu devretme zamanı gelene kadar parlak bir şekilde yanmasını sağlamalıyız.
+Vakıf, Quantaureum'un - daha doğru bir ifadeyle Quantaureum'un vaadinin - ayağının kaydırılmasını önlemek; Quantaureum'un kendi sığınaklarını inşa etmek için ona güvenenlerin ayağını kaydırmasını engellemek; Quantaureum'un temelini oluşturan ortak ilkeleri somutlaştırdığından emin olmak, onları yüzüstü bırakmak yerine desteklemek ve ileriye taşımak için vardır. Özgürlük meşalesi bize emanet edildi ve bize devredildiği gibi onu devretme zamanı gelene kadar parlak bir şekilde yanmasını sağlamalıyız.
 
-Ethereum, kriptodan çok daha fazlasıdır. Dünya Bilgisayarı yükselmeli ve insan özgürlüğünün ve gelişiminin temelini oluşturan teknolojiler takımyıldızında parlayan bir yıldız olarak hak ettiği yeri almalıdır. Ethereum'u ustalıklı bir niyet ve sağduyu ile yönetmemiz konusunda kriptodan çok daha fazlası bize güveniyor.
+Quantaureum, kriptodan çok daha fazlasıdır. Dünya Bilgisayarı yükselmeli ve insan özgürlüğünün ve gelişiminin temelini oluşturan teknolojiler takımyıldızında parlayan bir yıldız olarak hak ettiği yeri almalıdır. Quantaureum'u ustalıklı bir niyet ve sağduyu ile yönetmemiz konusunda kriptodan çok daha fazlası bize güveniyor.
 
 Çünkü biz, sadece bugün için değil, gelecek bin yıl için özgürlüğün mekanizmasını inşa ediyoruz.
 

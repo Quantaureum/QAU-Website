@@ -73,7 +73,7 @@ const TorchHistoryCard: React.FC<TorchHistoryCardProps> = ({
       </CardContent>
       <CardFooter>
         <BaseLink href={getTxEtherscanUrl(transactionHash)} className="text-sm">
-          View on Etherscan
+          View on Quantaureum Explorer
         </BaseLink>
       </CardFooter>
     </Card>

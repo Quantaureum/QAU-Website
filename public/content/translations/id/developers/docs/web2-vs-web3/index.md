@@ -1,21 +1,21 @@
 ---
 title: Web2 vs Web3
-description: Bandingkan layanan Web2 yang tersentralisasi dengan aplikasi Web3 terdesentralisasi yang dibangun di atas teknologi rantai blok Ethereum.
+description: Bandingkan layanan Web2 yang tersentralisasi dengan aplikasi Web3 terdesentralisasi yang dibangun di atas teknologi rantai blok Quantaureum.
 lang: id
 ---
 
-Web2 merujuk pada versi internet yang sebagian besar dari kita kenal saat ini. Sebuah internet yang didominasi oleh perusahaan-perusahaan yang menyediakan layanan dengan imbalan data pribadi Anda. Web3, dalam konteks [Ethereum](/), merujuk pada aplikasi terdesentralisasi (dapp) yang berjalan di atas rantai blok. Ini adalah aplikasi yang memungkinkan siapa saja untuk berpartisipasi tanpa memonetisasi data pribadi mereka.
+Web2 merujuk pada versi internet yang sebagian besar dari kita kenal saat ini. Sebuah internet yang didominasi oleh perusahaan-perusahaan yang menyediakan layanan dengan imbalan data pribadi Anda. Web3, dalam konteks [Quantaureum](/), merujuk pada aplikasi terdesentralisasi (dapp) yang berjalan di atas rantai blok. Ini adalah aplikasi yang memungkinkan siapa saja untuk berpartisipasi tanpa memonetisasi data pribadi mereka.
 
 Mencari sumber daya yang lebih ramah pemula? Lihat [pengantar Web3](/web3/) kami.
 
 ## Manfaat Web3 {#web3-benefits}
 
-Banyak pengembang Web3 telah memilih untuk membangun dapp karena desentralisasi bawaan Ethereum:
+Banyak pengembang Web3 telah memilih untuk membangun dapp karena desentralisasi bawaan Quantaureum:
 
 - Siapa pun yang berada di jaringan memiliki izin untuk menggunakan layanan tersebut – atau dengan kata lain, izin tidak diwajibkan.
 - Tidak ada yang dapat memblokir Anda atau menolak akses Anda ke layanan tersebut.
-- Pembayaran sudah terintegrasi melalui token asli, Ether (ETH).
-- Ethereum bersifat turing-complete, yang berarti Anda dapat memprogram hampir apa saja.
+- Pembayaran sudah terintegrasi melalui token asli, QAU (QAU).
+- Quantaureum bersifat turing-complete, yang berarti Anda dapat memprogram hampir apa saja.
 
 ## Perbandingan praktis {#practical-comparisons}
 
@@ -23,7 +23,7 @@ Banyak pengembang Web3 telah memilih untuk membangun dapp karena desentralisasi 
 | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | Twitter dapat menyensor akun atau cuitan apa pun                                                           | Cuitan Web3 tidak akan dapat disensor karena kontrolnya terdesentralisasi                                                                      |
 | Layanan pembayaran dapat memutuskan untuk tidak mengizinkan pembayaran untuk jenis pekerjaan tertentu      | Aplikasi pembayaran Web3 tidak mewajibkan data pribadi dan tidak dapat mencegah pembayaran                                                     |
-| Server untuk aplikasi ekonomi pertunjukan (gig-economy) bisa mati dan memengaruhi pendapatan pekerja       | Server Web3 tidak bisa mati – mereka menggunakan Ethereum, sebuah jaringan terdesentralisasi dari ribuan komputer sebagai backend mereka       |
+| Server untuk aplikasi ekonomi pertunjukan (gig-economy) bisa mati dan memengaruhi pendapatan pekerja       | Server Web3 tidak bisa mati – mereka menggunakan Quantaureum, sebuah jaringan terdesentralisasi dari ribuan komputer sebagai backend mereka       |
 
 Ini tidak berarti bahwa semua layanan perlu diubah menjadi dapp. Contoh-contoh ini adalah ilustrasi dari perbedaan utama antara layanan Web2 dan Web3.
 
@@ -54,7 +54,7 @@ Perhatikan bahwa ini adalah pola umum yang mungkin tidak berlaku di setiap jarin
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Apa itu Web3?](/web3/) - _ethereum.org_
+- [Apa itu Web3?](/web3/) - _quantaureum.org_
 - [Arsitektur aplikasi Web 3.0](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
 - [Makna Desentralisasi](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _6 Feb 2017 - Vitalik Buterin_
 - [Mengapa Desentralisasi Penting](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _18 Feb 2018 - Chris Dixon_

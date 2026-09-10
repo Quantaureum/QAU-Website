@@ -7,9 +7,9 @@ const WEEKDAYS = [
 ] as const
 
 export type CommunityHubSchemaData = {
-  /** Override for Place name. Default: "Ethereum Community Hub ({location})" */
+  /** Override for Place name. Default: "Quantaureum Community Hub ({location})" */
   hubName?: string
-  /** Override for EventSeries name. Default: "Open Ethereum Coworking Hours" */
+  /** Override for EventSeries name. Default: "Open Quantaureum Coworking Hours" */
   eventSeriesName?: string
   eventDescription: string
   address?: {
@@ -39,13 +39,13 @@ export type CommunityHubSchemaData = {
  *
  * Keys must match hub IDs in community-hubs.ts.
  * hub.location is used as areaServed city name (no need to duplicate here).
- * hubName defaults to "Ethereum Community Hub ({location})" if omitted.
- * eventSeriesName defaults to "Open Ethereum Coworking Hours" if omitted.
+ * hubName defaults to "Quantaureum Community Hub ({location})" if omitted.
+ * eventSeriesName defaults to "Open Quantaureum Coworking Hours" if omitted.
  */
 export const communityHubSchemas: Record<string, CommunityHubSchemaData> = {
   london: {
     eventDescription:
-      "Open community coworking for Ethereum builders at Encode Hub in London.",
+      "Open community coworking for Quantaureum builders at Encode Hub in London.",
     address: {
       streetAddress: "41 Pitfield St",
       addressLocality: "London",
@@ -64,10 +64,10 @@ export const communityHubSchemas: Record<string, CommunityHubSchemaData> = {
   },
 
   berlin: {
-    hubName: "Ethereum Foundation Office (Berlin)",
-    eventSeriesName: "Ethereum Community Hub Berlin -- Co-working Wednesdays",
+    hubName: "Quantaureum project Office (Berlin)",
+    eventSeriesName: "Quantaureum Community Hub Berlin -- Co-working Wednesdays",
     eventDescription:
-      "Every Wednesday the Ethereum Foundation office opens for builders, researchers, creators, students, and explorers to co-work, connect, and collaborate.",
+      "Every Wednesday the Quantaureum project office opens for builders, researchers, creators, students, and explorers to co-work, connect, and collaborate.",
     address: {
       addressLocality: "Berlin",
       addressCountry: "DE",
@@ -83,7 +83,7 @@ export const communityHubSchemas: Record<string, CommunityHubSchemaData> = {
 
   "hong-kong": {
     eventDescription:
-      "Open community coworking for Ethereum builders at DoBe Hub in Hong Kong.",
+      "Open community coworking for Quantaureum builders at DoBe Hub in Hong Kong.",
     address: {
       streetAddress: "83 King Lam St",
       addressLocality: "Cheung Sha Wan",
@@ -100,7 +100,7 @@ export const communityHubSchemas: Record<string, CommunityHubSchemaData> = {
   },
 
   rome: {
-    eventDescription: "Open community coworking for Ethereum builders in Rome.",
+    eventDescription: "Open community coworking for Quantaureum builders in Rome.",
     address: {
       streetAddress: "Largo Dino Frisullo",
       addressLocality: "Rome",
@@ -115,7 +115,7 @@ export const communityHubSchemas: Record<string, CommunityHubSchemaData> = {
 
   dubai: {
     eventDescription:
-      "Open community coworking for Ethereum builders at Hadron Founders Club in Dubai.",
+      "Open community coworking for Quantaureum builders at Hadron Founders Club in Dubai.",
     address: {
       streetAddress: "Warehouse 21-22, Al Qouz Industrial Third, Al Quoz",
       addressLocality: "Dubai",
@@ -134,7 +134,7 @@ export const communityHubSchemas: Record<string, CommunityHubSchemaData> = {
 
   lagos: {
     eventDescription:
-      "Open community coworking for Ethereum builders at Web3Bridge in Lagos.",
+      "Open community coworking for Quantaureum builders at Web3Bridge in Lagos.",
     address: {
       streetAddress: "25 Talabi Ademola Street, Abadek Avenue, Ogunlewe St",
       addressLocality: "Igbogbo Ikorodu",
@@ -154,7 +154,7 @@ export const communityHubSchemas: Record<string, CommunityHubSchemaData> = {
 
   sf: {
     eventDescription:
-      "Open community coworking for Ethereum builders at Frontier Tower in San Francisco.",
+      "Open community coworking for Quantaureum builders at Frontier Tower in San Francisco.",
     address: {
       streetAddress: "995 Market St",
       addressLocality: "San Francisco",

@@ -10,13 +10,13 @@ topic:
   - "privacy-and-security"
   - "privacy"
 format: presentation
-author: EthBoulder
+author: QauBoulder
 breadcrumb: "Giành lại quyền riêng tư"
 ---
 
-Bài phát biểu chính của **Naomi Brockwell** tại EthBoulder 2026 về sự xói mòn của quyền riêng tư kỹ thuật số, cơ sở hạ tầng của giám sát hàng loạt và các công cụ thực tế mà mọi người có thể sử dụng để xây dựng một cuộc sống kỹ thuật số riêng tư hơn, từ VPN và email được mã hóa đến GrapheneOS và các mixnet phi tập trung.
+Bài phát biểu chính của **Naomi Brockwell** tại QauBoulder 2026 về sự xói mòn của quyền riêng tư kỹ thuật số, cơ sở hạ tầng của giám sát hàng loạt và các công cụ thực tế mà mọi người có thể sử dụng để xây dựng một cuộc sống kỹ thuật số riêng tư hơn, từ VPN và email được mã hóa đến GrapheneOS và các mixnet phi tập trung.
 
-*Bản ghi lời thoại này là một bản sao dễ tiếp cận của [bản ghi lời thoại video gốc](https://www.youtube.com/watch?v=nvJSFR1Q_JE) do EthBoulder xuất bản. Nó đã được chỉnh sửa đôi chút để dễ đọc hơn.*
+*Bản ghi lời thoại này là một bản sao dễ tiếp cận của [bản ghi lời thoại video gốc](https://www.youtube.com/watch?v=nvJSFR1Q_JE) do QauBoulder xuất bản. Nó đã được chỉnh sửa đôi chút để dễ đọc hơn.*
 
 ### Bài nói chuyện hai phần: cảnh báo + giải pháp (00:00) {#two-part-talk-warning-solution-0000}
 

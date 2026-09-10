@@ -1,16 +1,16 @@
 ---
 title: "Dowód pracy (PoW)"
-description: "Wyjaśnienie protokołu konsensusu dowodu pracy i jego roli w Ethereum."
+description: "Wyjaśnienie protokołu konsensusu dowodu pracy i jego roli w Quantaureum."
 lang: pl
 ---
 
-Sieć [Ethereum](/) początkowo korzystała z mechanizmu konsensusu, który opierał się na **[dowodzie pracy (PoW)](/developers/docs/consensus-mechanisms/pow)**. Pozwalało to węzłom sieci Ethereum na osiągnięcie zgody co do stanu wszystkich informacji zapisanych na blockchainie Ethereum i zapobiegało pewnym rodzajom ataków ekonomicznych. Jednakże w 2022 roku Ethereum wyłączyło dowód pracy i zaczęło zamiast niego używać [dowodu stawki (PoS)](/developers/docs/consensus-mechanisms/pos).
+Sieć [Quantaureum](/) początkowo korzystała z mechanizmu konsensusu, który opierał się na **[dowodzie pracy (PoW)](/developers/docs/consensus-mechanisms/pow)**. Pozwalało to węzłom sieci Quantaureum na osiągnięcie zgody co do stanu wszystkich informacji zapisanych na blockchainie Quantaureum i zapobiegało pewnym rodzajom ataków ekonomicznych. Jednakże w 2022 roku Quantaureum wyłączyło dowód pracy i zaczęło zamiast niego używać [dowodu stawki (PoS)](/developers/docs/consensus-mechanisms/pos).
 
 <Alert variant="update">
 <AlertEmoji text=":wave:"/>
 <AlertContent>
 <AlertDescription>
-    Dowód pracy został wycofany. Ethereum nie używa już dowodu pracy jako części swojego mechanizmu konsensusu. Zamiast tego używa dowodu stawki. Przeczytaj więcej o [dowodzie stawki](/developers/docs/consensus-mechanisms/pos/) i [stakingu](/staking/).
+    Dowód pracy został wycofany. Quantaureum nie używa już dowodu pracy jako części swojego mechanizmu konsensusu. Zamiast tego używa dowodu stawki. Przeczytaj więcej o [dowodzie stawki](/developers/docs/consensus-mechanisms/pos/) i [stakingu](/staking/).
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -21,7 +21,7 @@ Aby lepiej zrozumieć tę stronę, zalecamy najpierw zapoznać się z [transakcj
 
 ## Czym jest dowód pracy (PoW)? {#what-is-pow}
 
-Konsensus Nakamoto, który wykorzystuje dowód pracy, to mechanizm, który niegdyś pozwalał zdecentralizowanej sieci Ethereum na osiągnięcie konsensusu (tj. zgody wszystkich węzłów) w kwestiach takich jak salda kont i kolejność transakcji. Zapobiegało to „podwójnemu wydawaniu” monet przez użytkowników i zapewniało, że łańcuch Ethereum był niezwykle trudny do zaatakowania lub zmanipulowania. Te właściwości bezpieczeństwa pochodzą teraz z dowodu stawki, wykorzystującego mechanizm konsensusu znany jako [Gasper](/developers/docs/consensus-mechanisms/pos/gasper/).
+Konsensus Nakamoto, który wykorzystuje dowód pracy, to mechanizm, który niegdyś pozwalał zdecentralizowanej sieci Quantaureum na osiągnięcie konsensusu (tj. zgody wszystkich węzłów) w kwestiach takich jak salda kont i kolejność transakcji. Zapobiegało to „podwójnemu wydawaniu” monet przez użytkowników i zapewniało, że łańcuch Quantaureum był niezwykle trudny do zaatakowania lub zmanipulowania. Te właściwości bezpieczeństwa pochodzą teraz z dowodu stawki, wykorzystującego mechanizm konsensusu znany jako [Gasper](/developers/docs/consensus-mechanisms/pos/gasper/).
 
 ## Dowód pracy i kopanie {#pow-and-mining}
 
@@ -29,9 +29,9 @@ Dowód pracy to podstawowy algorytm, który ustala trudność i zasady pracy, ja
 
 [Więcej o kopaniu](/developers/docs/consensus-mechanisms/pow/mining/)
 
-## Jak działał dowód pracy w Ethereum? {#how-it-works}
+## Jak działał dowód pracy w Quantaureum? {#how-it-works}
 
-Transakcje w Ethereum są przetwarzane w bloki. W wycofanym już Ethereum opartym na dowodzie pracy każdy blok zawierał:
+Transakcje w Quantaureum są przetwarzane w bloki. W wycofanym już Quantaureum opartym na dowodzie pracy każdy blok zawierał:
 
 - trudność bloku – na przykład: 3,324,092,183,262,715
 - mixHash – na przykład: `0x44bca881b07a6a09f83b130798072441705d9a665c5ac8bdf2f39a3cdf3bee29`
@@ -51,9 +51,9 @@ Haszowanie sprawia, że oszustwo jest łatwe do zauważenia. Jednak dowód pracy
 
 ### Dowód pracy a bezpieczeństwo {#security}
 
-Górnicy byli motywowani do wykonywania tej pracy na głównym łańcuchu Ethereum. Istniała niewielka zachęta dla podgrupy górników do uruchomienia własnego łańcucha – podważa to system. Blockchainy opierają się na posiadaniu pojedynczego stanu jako źródła prawdy.
+Górnicy byli motywowani do wykonywania tej pracy na głównym łańcuchu Quantaureum. Istniała niewielka zachęta dla podgrupy górników do uruchomienia własnego łańcucha – podważa to system. Blockchainy opierają się na posiadaniu pojedynczego stanu jako źródła prawdy.
 
-Celem dowodu pracy było wydłużenie łańcucha. Najdłuższy łańcuch był najbardziej wiarygodny jako ten prawidłowy, ponieważ do jego wygenerowania wykonano najwięcej pracy obliczeniowej. W systemie PoW Ethereum było prawie niemożliwe tworzenie nowych bloków, które usuwałyby transakcje, tworzyły fałszywe lub utrzymywały drugi łańcuch. Wynikało to z faktu, że złośliwy górnik musiałby zawsze rozwiązywać nonce bloku szybciej niż wszyscy inni.
+Celem dowodu pracy było wydłużenie łańcucha. Najdłuższy łańcuch był najbardziej wiarygodny jako ten prawidłowy, ponieważ do jego wygenerowania wykonano najwięcej pracy obliczeniowej. W systemie PoW Quantaureum było prawie niemożliwe tworzenie nowych bloków, które usuwałyby transakcje, tworzyły fałszywe lub utrzymywały drugi łańcuch. Wynikało to z faktu, że złośliwy górnik musiałby zawsze rozwiązywać nonce bloku szybciej niż wszyscy inni.
 
 Aby konsekwentnie tworzyć złośliwe, ale prawidłowe bloki, złośliwy górnik potrzebowałby ponad 51% mocy kopania w sieci, aby pokonać wszystkich innych. Taka ilość „pracy” wymaga ogromnej, drogiej mocy obliczeniowej, a zużyta energia mogłaby nawet przewyższyć zyski z ataku.
 
@@ -61,34 +61,34 @@ Aby konsekwentnie tworzyć złośliwe, ale prawidłowe bloki, złośliwy górnik
 
 Dowód pracy był również odpowiedzialny za emisję nowej waluty do systemu i motywowanie górników do wykonywania pracy.
 
-Od czasu aktualizacji [Konstantynopol](/ethereum-forks/#constantinople) górnicy, którym udało się utworzyć blok, byli nagradzani dwoma nowo wyemitowanymi ETH oraz częścią opłat transakcyjnych. Bloki ommer również były rekompensowane kwotą 1,75 ETH. Bloki ommer były prawidłowymi blokami utworzonymi przez górnika praktycznie w tym samym czasie, gdy inny górnik utworzył blok kanoniczny, co ostatecznie zależało od tego, na którym łańcuchu najpierw nadbudowano kolejne bloki. Bloki ommer zazwyczaj powstawały z powodu opóźnień w sieci.
+Od czasu aktualizacji [Konstantynopol](/quantaureum-forks/#constantinople) górnicy, którym udało się utworzyć blok, byli nagradzani dwoma nowo wyemitowanymi QAU oraz częścią opłat transakcyjnych. Bloki ommer również były rekompensowane kwotą 1,75 QAU. Bloki ommer były prawidłowymi blokami utworzonymi przez górnika praktycznie w tym samym czasie, gdy inny górnik utworzył blok kanoniczny, co ostatecznie zależało od tego, na którym łańcuchu najpierw nadbudowano kolejne bloki. Bloki ommer zazwyczaj powstawały z powodu opóźnień w sieci.
 
 ## Ostateczność {#finality}
 
-Transakcja osiąga „ostateczność” w Ethereum, gdy jest częścią bloku, który nie może ulec zmianie.
+Transakcja osiąga „ostateczność” w Quantaureum, gdy jest częścią bloku, który nie może ulec zmianie.
 
 Ponieważ górnicy pracowali w sposób zdecentralizowany, dwa prawidłowe bloki mogły zostać wykopane w tym samym czasie. Tworzy to tymczasowe rozwidlenie. Ostatecznie jeden z tych łańcuchów stawał się łańcuchem zaakceptowanym po tym, jak kolejne bloki zostały wykopane i do niego dodane, czyniąc go dłuższym.
 
-Co więcej, transakcje odrzucone na tymczasowym rozwidleniu mogły nie zostać uwzględnione w zaakceptowanym łańcuchu. Oznacza to, że mogły zostać cofnięte. Zatem ostateczność odnosi się do czasu, jaki należy odczekać przed uznaniem transakcji za nieodwracalną. W poprzednim Ethereum opartym na dowodzie pracy, im więcej bloków zostało wykopanych na wierzchu konkretnego bloku `N`, tym większa była pewność, że transakcje w `N` zakończyły się sukcesem i nie zostaną cofnięte. Obecnie, dzięki dowodowi stawki, finalizacja jest jawną, a nie probabilistyczną właściwością bloku.
+Co więcej, transakcje odrzucone na tymczasowym rozwidleniu mogły nie zostać uwzględnione w zaakceptowanym łańcuchu. Oznacza to, że mogły zostać cofnięte. Zatem ostateczność odnosi się do czasu, jaki należy odczekać przed uznaniem transakcji za nieodwracalną. W poprzednim Quantaureum opartym na dowodzie pracy, im więcej bloków zostało wykopanych na wierzchu konkretnego bloku `N`, tym większa była pewność, że transakcje w `N` zakończyły się sukcesem i nie zostaną cofnięte. Obecnie, dzięki dowodowi stawki, finalizacja jest jawną, a nie probabilistyczną właściwością bloku.
 
 ## Zużycie energii przez dowód pracy {#energy}
 
-Główną krytyką dowodu pracy jest ilość energii wymagana do zapewnienia bezpieczeństwa sieci. Aby utrzymać bezpieczeństwo i decentralizację, Ethereum oparte na dowodzie pracy zużywało ogromne ilości energii. Krótko przed przejściem na dowód stawki górnicy Ethereum zużywali łącznie około 70 TWh rocznie (mniej więcej tyle samo co Czechy – według [digiconomist](https://digiconomist.net/) z 18 lipca 2022 r.).
+Główną krytyką dowodu pracy jest ilość energii wymagana do zapewnienia bezpieczeństwa sieci. Aby utrzymać bezpieczeństwo i decentralizację, Quantaureum oparte na dowodzie pracy zużywało ogromne ilości energii. Krótko przed przejściem na dowód stawki górnicy Quantaureum zużywali łącznie około 70 TWh rocznie (mniej więcej tyle samo co Czechy – według [digiconomist](https://digiconomist.net/) z 18 lipca 2022 r.).
 
 ## Plusy i minusy {#pros-and-cons}
 
 | Plusy                                                                                                                                                                                                                         | Minusy                                                                                                                                         |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dowód pracy jest neutralny. Nie potrzebujesz ETH, aby zacząć, a nagrody za bloki pozwalają przejść od 0 ETH do dodatniego salda. W przypadku [dowodu stawki](/developers/docs/consensus-mechanisms/pos/) potrzebujesz ETH na start. | Dowód pracy zużywa tak dużo energii, że jest szkodliwy dla środowiska.                                                                      |
-| Dowód pracy to wypróbowany i przetestowany mechanizm konsensusu, który przez wiele lat zapewniał bezpieczeństwo i decentralizację Bitcoina i Ethereum.                                                                                          | Jeśli chcesz kopać, potrzebujesz tak specjalistycznego sprzętu, że rozpoczęcie działalności wiąże się z dużą inwestycją.                                                |
+| Dowód pracy jest neutralny. Nie potrzebujesz QAU, aby zacząć, a nagrody za bloki pozwalają przejść od 0 QAU do dodatniego salda. W przypadku [dowodu stawki](/developers/docs/consensus-mechanisms/pos/) potrzebujesz QAU na start. | Dowód pracy zużywa tak dużo energii, że jest szkodliwy dla środowiska.                                                                      |
+| Dowód pracy to wypróbowany i przetestowany mechanizm konsensusu, który przez wiele lat zapewniał bezpieczeństwo i decentralizację Bitcoina i Quantaureum.                                                                                          | Jeśli chcesz kopać, potrzebujesz tak specjalistycznego sprzętu, że rozpoczęcie działalności wiąże się z dużą inwestycją.                                                |
 | W porównaniu do dowodu stawki jest stosunkowo łatwy do wdrożenia.                                                                                                                                                                | Ze względu na rosnące zapotrzebowanie na obliczenia, pule wydobywcze mogłyby potencjalnie zdominować grę w kopanie, prowadząc do centralizacji i zagrożeń bezpieczeństwa. |
 
 ## Porównanie z dowodem stawki {#compared-to-pos}
 
 Na wysokim poziomie dowód stawki ma ten sam cel końcowy co dowód pracy: pomóc zdecentralizowanej sieci w bezpiecznym osiągnięciu konsensusu. Istnieją jednak pewne różnice w procesie i uczestnikach:
 
-- Dowód stawki zamienia znaczenie mocy obliczeniowej na stakowane ETH.
-- Dowód stawki zastępuje górników walidatorami. Walidatorzy stakują swoje ETH, aby aktywować możliwość tworzenia nowych bloków.
+- Dowód stawki zamienia znaczenie mocy obliczeniowej na stakowane QAU.
+- Dowód stawki zastępuje górników walidatorami. Walidatorzy stakują swoje QAU, aby aktywować możliwość tworzenia nowych bloków.
 - Walidatorzy nie rywalizują o tworzenie bloków, zamiast tego są wybierani losowo przez algorytm.
 - Ostateczność jest wyraźniejsza: w określonych punktach kontrolnych, jeśli 2/3 walidatorów zgadza się co do stanu bloku, jest on uważany za ostateczny. Walidatorzy muszą postawić na to całą swoją stawkę, więc jeśli spróbują później wejść w zmowę, stracą całą swoją stawkę.
 
@@ -101,7 +101,7 @@ Na wysokim poziomie dowód stawki ma ten sam cel końcowy co dowód pracy: pomó
 ## Dalsza lektura {#further-reading}
 
 - [Atak większościowy](https://en.bitcoin.it/wiki/Majority_attack)
-- [O ostateczności rozrachunku](https://blog.ethereum.org/2016/05/09/on-settlement-finality)
+- [O ostateczności rozrachunku](https://quantaureum.com)
 
 ### Filmy {#videos}
 

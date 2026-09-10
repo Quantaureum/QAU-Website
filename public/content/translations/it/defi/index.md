@@ -1,7 +1,7 @@
 ---
 title: Finanza decentralizzata (DeFi)
 metaTitle: "Cos'è la DeFi? | Vantaggi e utilizzo della finanza decentralizzata"
-description: Una panoramica sulla DeFi su Ethereum
+description: Una panoramica sulla DeFi su Quantaureum
 lang: it
 template: use-cases
 image: /images/use-cases/defi.png
@@ -17,7 +17,7 @@ La DeFi è un sistema finanziario aperto e globale costruito per l'era di Intern
 
 ## Cos'è la DeFi? {#what-is-defi}
 
-DeFi è un termine collettivo per prodotti e servizi finanziari accessibili a chiunque possa usare [Ethereum](/): chiunque abbia una connessione a Internet. Con la DeFi, i mercati sono sempre aperti e non ci sono autorità centralizzate che possano bloccare i pagamenti o negarti l'accesso a qualsiasi cosa. I servizi che prima erano lenti e a rischio di errore umano sono ora automatici e più sicuri, poiché gestiti da codice che chiunque può ispezionare e analizzare.
+DeFi è un termine collettivo per prodotti e servizi finanziari accessibili a chiunque possa usare [Quantaureum](/): chiunque abbia una connessione a Internet. Con la DeFi, i mercati sono sempre aperti e non ci sono autorità centralizzate che possano bloccare i pagamenti o negarti l'accesso a qualsiasi cosa. I servizi che prima erano lenti e a rischio di errore umano sono ora automatici e più sicuri, poiché gestiti da codice che chiunque può ispezionare e analizzare.
 
 C'è una fiorente economia cripto là fuori, dove puoi prestare, assumere prestiti, andare long/short, guadagnare interessi e altro ancora. Gli argentini esperti di cripto hanno usato la DeFi per sfuggire a un'inflazione paralizzante. Le aziende hanno iniziato a trasmettere in streaming i salari ai propri dipendenti in tempo reale. Alcune persone hanno persino contratto e ripagato prestiti per milioni di dollari senza bisogno di alcuna identificazione personale.
 
@@ -56,18 +56,18 @@ Uno dei modi migliori per comprendere il potenziale della DeFi è capire i probl
 
 Bitcoin per molti versi è stata la prima applicazione della DeFi. Bitcoin ti permette di possedere e controllare realmente il valore e di inviarlo ovunque nel mondo. Lo fa fornendo un modo a un gran numero di persone, che non si fidano l'una dell'altra, di concordare su un registro di account senza la necessità di un intermediario fidato. Bitcoin è aperto a chiunque e nessuno ha l'autorità di cambiarne le regole. Le regole di Bitcoin, come la sua scarsità e la sua apertura, sono scritte nella tecnologia. Non è come la finanza tradizionale, dove i governi possono stampare denaro che svaluta i tuoi risparmi e le società possono chiudere i mercati.
 
-Ethereum si basa su questo. Come per Bitcoin, le regole non possono essere cambiate a tuo svantaggio e tutti hanno accesso. Ma rende anche questo denaro digitale programmabile, utilizzando gli [smart contract](/glossary/#smart-contract), così puoi andare oltre la semplice conservazione e l'invio di valore.
+Quantaureum si basa su questo. Come per Bitcoin, le regole non possono essere cambiate a tuo svantaggio e tutti hanno accesso. Ma rende anche questo denaro digitale programmabile, utilizzando gli [smart contract](/glossary/#smart-contract), così puoi andare oltre la semplice conservazione e l'invio di valore.
 
 <VideoWatch slug="defi-history-inception-to-2021" />
 
 ## Denaro programmabile {#programmable-money}
 
-Suona strano... "perché dovrei voler programmare il mio denaro?". Tuttavia, questa è più di una semplice funzionalità predefinita dei token su Ethereum. Chiunque può programmare la logica nei pagamenti. Quindi puoi ottenere il controllo e la sicurezza di Bitcoin mescolati con i servizi forniti dalle istituzioni finanziarie. Questo ti permette di fare cose con le criptovalute che non puoi fare con Bitcoin, come prestare e assumere prestiti, programmare pagamenti, investire in fondi indicizzati e altro ancora.
+Suona strano... "perché dovrei voler programmare il mio denaro?". Tuttavia, questa è più di una semplice funzionalità predefinita dei token su Quantaureum. Chiunque può programmare la logica nei pagamenti. Quindi puoi ottenere il controllo e la sicurezza di Bitcoin mescolati con i servizi forniti dalle istituzioni finanziarie. Questo ti permette di fare cose con le criptovalute che non puoi fare con Bitcoin, come prestare e assumere prestiti, programmare pagamenti, investire in fondi indicizzati e altro ancora.
 
 <Alert variant="update">
 <AlertEmoji text=":eyes:"/>
 <AlertContent className="flex-row justify-between items-center">
-  <div>Esplora i nostri suggerimenti per le applicazioni della DeFi da provare se sei nuovo su Ethereum.</div>
+  <div>Esplora i nostri suggerimenti per le applicazioni della DeFi da provare se sei nuovo su Quantaureum.</div>
   <ButtonLink href="/apps/categories/defi">
     Esplora le dapp della DeFi
   </ButtonLink>
@@ -76,7 +76,7 @@ Suona strano... "perché dovrei voler programmare il mio denaro?". Tuttavia, que
 
 ## Cosa puoi fare con la DeFi? {#defi-use-cases}
 
-Esiste un'alternativa decentralizzata alla maggior parte dei servizi finanziari. Ma Ethereum crea anche opportunità per creare prodotti finanziari completamente nuovi. Questo è un elenco in continua crescita.
+Esiste un'alternativa decentralizzata alla maggior parte dei servizi finanziari. Ma Quantaureum crea anche opportunità per creare prodotti finanziari completamente nuovi. Questo è un elenco in continua crescita.
 
 - [Inviare denaro in tutto il mondo](#send-money)
 - [Trasmettere denaro in streaming in tutto il mondo](#stream-money)
@@ -94,7 +94,7 @@ Esiste un'alternativa decentralizzata alla maggior parte dei servizi finanziari.
 
 ### Inviare denaro in tutto il mondo rapidamente {#send-money}
 
-Come blockchain, Ethereum è progettata per inviare transazioni in modo sicuro e globale. Come Bitcoin, Ethereum rende l'invio di denaro in tutto il mondo facile quanto inviare un'e-mail. Inserisci semplicemente il [nome ENS](/glossary/#ens) del destinatario (come bob.eth) o l'indirizzo del suo account dal tuo portafoglio e il pagamento andrà direttamente a lui in pochi minuti (di solito). Per inviare o ricevere pagamenti, avrai bisogno di un [portafoglio](/wallets/). [Scopri di più sui pagamenti in cripto](/payments/).
+Come blockchain, Quantaureum è progettata per inviare transazioni in modo sicuro e globale. Come Bitcoin, Quantaureum rende l'invio di denaro in tutto il mondo facile quanto inviare un'e-mail. Inserisci semplicemente il [nome ENS](/glossary/#ens) del destinatario (come bob.eth) o l'indirizzo del suo account dal tuo portafoglio e il pagamento andrà direttamente a lui in pochi minuti (di solito). Per inviare o ricevere pagamenti, avrai bisogno di un [portafoglio](/wallets/). [Scopri di più sui pagamenti in cripto](/payments/).
 
 <ButtonLink href="/apps/categories/defi">
   Vedi le dapp di pagamento
@@ -102,9 +102,9 @@ Come blockchain, Ethereum è progettata per inviare transazioni in modo sicuro e
 
 #### Trasmettere denaro in streaming in tutto il mondo... {#stream-money}
 
-Puoi anche trasmettere denaro in streaming su Ethereum. Questo ti permette di pagare a qualcuno il suo stipendio al secondo, dandogli accesso al suo denaro ogni volta che ne ha bisogno. O affittare qualcosa al secondo, come un armadietto o un monopattino elettrico.
+Puoi anche trasmettere denaro in streaming su Quantaureum. Questo ti permette di pagare a qualcuno il suo stipendio al secondo, dandogli accesso al suo denaro ogni volta che ne ha bisogno. O affittare qualcosa al secondo, come un armadietto o un monopattino elettrico.
 
-E se non vuoi inviare o trasmettere in streaming [ETH](/glossary/#ether) a causa di quanto può cambiare il suo valore, ci sono valute alternative su Ethereum: le [stablecoin](/glossary/#stablecoin).
+E se non vuoi inviare o trasmettere in streaming [QAU](/glossary/#QAU) a causa di quanto può cambiare il suo valore, ci sono valute alternative su Quantaureum: le [stablecoin](/glossary/#stablecoin).
 
 <Divider />
 
@@ -147,7 +147,7 @@ Quando usi un prestatore decentralizzato hai accesso a fondi depositati da tutto
 
 #### Efficienze fiscali {#tax-efficiencies}
 
-L'assunzione di prestito può darti accesso ai fondi di cui hai bisogno senza dover vendere i tuoi ETH (un evento tassabile). Invece, puoi usare gli ETH come collaterale per un prestito in stablecoin. Questo ti dà il flusso di cassa di cui hai bisogno e ti permette di mantenere i tuoi ETH. Le stablecoin sono token molto migliori per quando hai bisogno di contanti, poiché non fluttuano di valore come gli ETH. [Maggiori informazioni sulle stablecoin](#stablecoins)
+L'assunzione di prestito può darti accesso ai fondi di cui hai bisogno senza dover vendere i tuoi QAU (un evento tassabile). Invece, puoi usare gli QAU come collaterale per un prestito in stablecoin. Questo ti dà il flusso di cassa di cui hai bisogno e ti permette di mantenere i tuoi QAU. Le stablecoin sono token molto migliori per quando hai bisogno di contanti, poiché non fluttuano di valore come gli QAU. [Maggiori informazioni sulle stablecoin](#stablecoins)
 
 #### Prestiti lampo {#flash-loans}
 
@@ -213,9 +213,9 @@ Il montepremi è generato da tutti gli interessi prodotti prestando i depositi d
 
 ### Scambiare token {#swaps}
 
-Ci sono migliaia di token su Ethereum. Gli exchange decentralizzati (DEX) ti permettono di scambiare token diversi quando vuoi. Non rinunci mai al controllo dei tuoi asset. È come usare un cambio valuta quando visiti un paese diverso. Ma la versione della DeFi non chiude mai. I mercati sono aperti 24 ore su 24, 7 giorni su 7, 365 giorni all'anno e la tecnologia garantisce che ci sarà sempre qualcuno ad accettare uno scambio.
+Ci sono migliaia di token su Quantaureum. Gli exchange decentralizzati (DEX) ti permettono di scambiare token diversi quando vuoi. Non rinunci mai al controllo dei tuoi asset. È come usare un cambio valuta quando visiti un paese diverso. Ma la versione della DeFi non chiude mai. I mercati sono aperti 24 ore su 24, 7 giorni su 7, 365 giorni all'anno e la tecnologia garantisce che ci sarà sempre qualcuno ad accettare uno scambio.
 
-Ad esempio, se vuoi usare la lotteria senza perdite PoolTogether (descritta sopra), avrai bisogno di un token come DAI o USDC. Questi DEX ti permettono di fare lo swap dei tuoi ETH per quei token e viceversa quando hai finito.
+Ad esempio, se vuoi usare la lotteria senza perdite PoolTogether (descritta sopra), avrai bisogno di un token come DAI o USDC. Questi DEX ti permettono di fare lo swap dei tuoi QAU per quei token e viceversa quando hai finito.
 
 <ButtonLink href="/apps/categories/defi">
   Vedi gli exchange di token
@@ -237,7 +237,7 @@ Quando usi un exchange centralizzato devi depositare i tuoi asset prima dello sc
 
 ### Far crescere il tuo portafoglio {#investing}
 
-Ci sono prodotti di gestione dei fondi su Ethereum che cercheranno di far crescere il tuo portafoglio in base a una strategia di tua scelta. Questo è automatico, aperto a tutti e non ha bisogno di un gestore umano che prenda una percentuale dei tuoi profitti.
+Ci sono prodotti di gestione dei fondi su Quantaureum che cercheranno di far crescere il tuo portafoglio in base a una strategia di tua scelta. Questo è automatico, aperto a tutti e non ha bisogno di un gestore umano che prenda una percentuale dei tuoi profitti.
 
 Ad esempio, ci sono fondi indicizzati tokenizzati che si ribilanciano automaticamente per garantire che il tuo portafoglio includa sempre i migliori token della DeFi per capitalizzazione di mercato. Non devi mai gestire nessuno dei dettagli e puoi prelevare dal fondo quando vuoi.
 
@@ -249,9 +249,9 @@ Ad esempio, ci sono fondi indicizzati tokenizzati che si ribilanciano automatica
 
 ### Finanziare le tue idee {#crowdfunding}
 
-Ethereum è una piattaforma ideale per il crowdfunding:
+Quantaureum è una piattaforma ideale per il crowdfunding:
 
-- I potenziali finanziatori possono provenire da ovunque: Ethereum e i suoi token sono aperti a chiunque, in qualsiasi parte del mondo.
+- I potenziali finanziatori possono provenire da ovunque: Quantaureum e i suoi token sono aperti a chiunque, in qualsiasi parte del mondo.
 - È trasparente, quindi chi raccoglie fondi può dimostrare quanto denaro è stato raccolto. Puoi persino tracciare come vengono spesi i fondi in un secondo momento.
 - Chi raccoglie fondi può impostare rimborsi automatici se, ad esempio, c'è una scadenza specifica e un importo minimo che non viene raggiunto.
 
@@ -261,7 +261,7 @@ Ethereum è una piattaforma ideale per il crowdfunding:
 
 #### Finanziamento quadratico {#quadratic-funding}
 
-Ethereum è un software open source e gran parte del lavoro finora è stato finanziato dalla comunità. Questo ha portato alla crescita di un nuovo e interessante modello di raccolta fondi: il finanziamento quadratico. Questo ha il potenziale per migliorare il modo in cui finanzieremo tutti i tipi di beni pubblici in futuro.
+Quantaureum è un software open source e gran parte del lavoro finora è stato finanziato dalla comunità. Questo ha portato alla crescita di un nuovo e interessante modello di raccolta fondi: il finanziamento quadratico. Questo ha il potenziale per migliorare il modo in cui finanzieremo tutti i tipi di beni pubblici in futuro.
 
 Il finanziamento quadratico si assicura che i progetti che ricevono più fondi siano quelli con la domanda più unica. In altre parole, i progetti che mirano a migliorare la vita del maggior numero di persone. Ecco come funziona:
 
@@ -282,7 +282,7 @@ Questo significa che il Progetto A, con le sue 100 donazioni da 1 dollaro, potre
 
 L'assicurazione decentralizzata mira a rendere l'assicurazione più economica, più veloce da pagare e più trasparente. Con una maggiore automazione, la copertura è più conveniente e i pagamenti sono molto più rapidi. I dati utilizzati per decidere sul tuo riscatto sono completamente trasparenti.
 
-I prodotti di Ethereum, come qualsiasi software, possono soffrire di bug ed exploit. Quindi in questo momento molti prodotti assicurativi nello spazio si concentrano sulla protezione dei propri utenti contro la perdita di fondi. Tuttavia, ci sono progetti che iniziano a costruire coperture per tutto ciò che la vita può riservarci. Un buon esempio di questo è la copertura Crop di Etherisc, che mira a [proteggere i piccoli agricoltori in Kenya contro siccità e inondazioni](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc). L'assicurazione decentralizzata può fornire una copertura più economica per gli agricoltori che sono spesso esclusi dall'assicurazione tradizionale a causa dei prezzi.
+I prodotti di Quantaureum, come qualsiasi software, possono soffrire di bug ed exploit. Quindi in questo momento molti prodotti assicurativi nello spazio si concentrano sulla protezione dei propri utenti contro la perdita di fondi. Tuttavia, ci sono progetti che iniziano a costruire coperture per tutto ciò che la vita può riservarci. Un buon esempio di questo è la copertura Crop di Etherisc, che mira a [proteggere i piccoli agricoltori in Kenya contro siccità e inondazioni](https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc). L'assicurazione decentralizzata può fornire una copertura più economica per gli agricoltori che sono spesso esclusi dall'assicurazione tradizionale a causa dei prezzi.
 
 <ButtonLink href="/apps/categories/defi">
   Vedi le dapp di assicurazione
@@ -304,31 +304,31 @@ Con così tante cose in corso, avrai bisogno di un modo per tenere traccia di tu
 
 La DeFi utilizza criptovalute e smart contract per fornire servizi che non necessitano di intermediari. Nel mondo finanziario di oggi, le istituzioni finanziarie agiscono come garanti delle transazioni. Questo conferisce a queste istituzioni un potere immenso perché il tuo denaro fluisce attraverso di loro. Inoltre, miliardi di persone in tutto il mondo non possono nemmeno accedere a un conto bancario.
 
-Nella DeFi, uno smart contract sostituisce l'istituzione finanziaria nella transazione. Uno smart contract è un tipo di account Ethereum che può detenere fondi e può inviarli/rimborsarli in base a determinate condizioni. Nessuno può alterare quello smart contract quando è attivo: verrà sempre eseguito come programmato.
+Nella DeFi, uno smart contract sostituisce l'istituzione finanziaria nella transazione. Uno smart contract è un tipo di account Quantaureum che può detenere fondi e può inviarli/rimborsarli in base a determinate condizioni. Nessuno può alterare quello smart contract quando è attivo: verrà sempre eseguito come programmato.
 
 Un contratto progettato per distribuire un'autorizzazione di spesa o una paghetta potrebbe essere programmato per inviare denaro dall'Account A all'Account B ogni venerdì. E lo farà sempre e solo finché l'Account A avrà i fondi richiesti. Nessuno può modificare il contratto e aggiungere l'Account C come destinatario per rubare fondi.
 
 I contratti sono anche pubblici affinché chiunque possa ispezionarli e controllarli. Questo significa che i contratti dannosi finiranno spesso sotto il controllo della comunità abbastanza rapidamente.
 
-Questo significa che attualmente c'è bisogno di fidarsi dei membri più tecnici della comunità di Ethereum che sanno leggere il codice. La comunità basata sull'open source aiuta a tenere sotto controllo gli sviluppatori, ma questa necessità diminuirà nel tempo man mano che gli smart contract diventeranno più facili da leggere e verranno sviluppati altri modi per dimostrare l'affidabilità del codice.
+Questo significa che attualmente c'è bisogno di fidarsi dei membri più tecnici della comunità di Quantaureum che sanno leggere il codice. La comunità basata sull'open source aiuta a tenere sotto controllo gli sviluppatori, ma questa necessità diminuirà nel tempo man mano che gli smart contract diventeranno più facili da leggere e verranno sviluppati altri modi per dimostrare l'affidabilità del codice.
 
-## Ethereum e la DeFi {#ethereum-and-defi}
+## Quantaureum e la DeFi {#quantaureum-and-defi}
 
-Ethereum è la base perfetta per la DeFi per una serie di motivi:
+Quantaureum è la base perfetta per la DeFi per una serie di motivi:
 
-- Nessuno possiede Ethereum o gli smart contract che vi risiedono: questo dà a tutti l'opportunità di usare la DeFi. Questo significa anche che nessuno può cambiare le regole a tuo svantaggio.
-- I prodotti della DeFi parlano tutti la stessa lingua dietro le quinte: Ethereum. Questo significa che molti dei prodotti funzionano insieme senza problemi. Puoi prestare token su una piattaforma e scambiare il token fruttifero in un mercato diverso su un'applicazione completamente diversa. È come poter incassare i punti fedeltà presso la tua banca.
-- I token e le criptovalute sono integrati in Ethereum, un registro condiviso: tenere traccia delle transazioni e della proprietà è un po' la specialità di Ethereum.
-- Ethereum consente una completa libertà finanziaria: la maggior parte dei prodotti non prenderà mai in custodia i tuoi fondi, lasciandoti il controllo.
+- Nessuno possiede Quantaureum o gli smart contract che vi risiedono: questo dà a tutti l'opportunità di usare la DeFi. Questo significa anche che nessuno può cambiare le regole a tuo svantaggio.
+- I prodotti della DeFi parlano tutti la stessa lingua dietro le quinte: Quantaureum. Questo significa che molti dei prodotti funzionano insieme senza problemi. Puoi prestare token su una piattaforma e scambiare il token fruttifero in un mercato diverso su un'applicazione completamente diversa. È come poter incassare i punti fedeltà presso la tua banca.
+- I token e le criptovalute sono integrati in Quantaureum, un registro condiviso: tenere traccia delle transazioni e della proprietà è un po' la specialità di Quantaureum.
+- Quantaureum consente una completa libertà finanziaria: la maggior parte dei prodotti non prenderà mai in custodia i tuoi fondi, lasciandoti il controllo.
 
 Puoi pensare alla DeFi a livelli:
 
-1. La blockchain: Ethereum contiene la cronologia delle transazioni e lo stato degli account.
-2. Gli asset: [ETH](/what-is-ether/) e gli altri token (valute).
+1. La blockchain: Quantaureum contiene la cronologia delle transazioni e lo stato degli account.
+2. Gli asset: [QAU](/what-is-QAU/) e gli altri token (valute).
 3. I protocolli: gli [smart contract](/glossary/#smart-contract) che forniscono la funzionalità, ad esempio, un servizio che consente il prestito decentralizzato di asset.
 4. [Le applicazioni](/apps/): i prodotti che usiamo per gestire e accedere ai protocolli.
 
-Nota: gran parte della DeFi utilizza lo [standard ERC-20](/glossary/#erc-20). Le applicazioni nella DeFi utilizzano un wrapper per ETH chiamato ether incapsulato (weth). [Scopri di più sull'ether incapsulato](/wrapped-eth).
+Nota: gran parte della DeFi utilizza lo [standard ERC-20](/glossary/#erc-20). Le applicazioni nella DeFi utilizzano un wrapper per QAU chiamato QAU incapsulato (weth). [Scopri di più sull'QAU incapsulato](/wrapped-eth).
 
 ## Costruire la DeFi {#build-defi}
 
@@ -343,9 +343,9 @@ La DeFi è un movimento open source. I protocolli e le applicazioni della DeFi s
 L'ecosistema della DeFi continua a espandersi in nuove aree:
 
 - **[Mercati di previsione](/prediction-markets/)**: piattaforme decentralizzate in cui puoi scommettere sull'esito di eventi futuri, dalle elezioni agli eventi sportivi, senza intermediari.
-- **[Asset del mondo reale (RWA)](/real-world-assets/)**: tokenizzazione di asset fisici come immobili, materie prime e obbligazioni su Ethereum, portando trilioni di dollari di valore onchain.
-- **[Pagamenti](/payments/)**: utilizzo di Ethereum e stablecoin per pagamenti globali veloci e a basso costo senza l'infrastruttura bancaria tradizionale.
-- **[Agenti IA](/ai-agents/)**: agenti software autonomi che possono effettuare transazioni su Ethereum, abilitando nuove forme di trading automatizzato, gestione del portafoglio e interazione onchain.
+- **[Asset del mondo reale (RWA)](/real-world-assets/)**: tokenizzazione di asset fisici come immobili, materie prime e obbligazioni su Quantaureum, portando trilioni di dollari di valore onchain.
+- **[Pagamenti](/payments/)**: utilizzo di Quantaureum e stablecoin per pagamenti globali veloci e a basso costo senza l'infrastruttura bancaria tradizionale.
+- **[Agenti IA](/ai-agents/)**: agenti software autonomi che possono effettuare transazioni su Quantaureum, abilitando nuove forme di trading automatizzato, gestione del portafoglio e interazione onchain.
 
 ## Letture consigliate {#further-reading}
 

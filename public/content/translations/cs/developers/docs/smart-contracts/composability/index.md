@@ -49,11 +49,11 @@ Ve scénáři, kdy nemáte dostatek prostředků na pokrytí obchodu, může bý
 
 Vrátíme-li se k našemu původnímu příkladu, arbitrážní obchodník si může vzít velkou bleskovou půjčku, koupit tokeny na `exchange B`, prodat je na `exchange A`, splatit kapitál + úroky a ponechat si zisk, a to vše v rámci stejné transakce. Tato složitá logika vyžaduje kombinování volání více kontraktů, což by nebylo možné, kdyby chytrým kontraktům chyběla interoperabilita.
 
-## Příklady skládatelnosti v Ethereu {#composability-in-ethereum}
+## Příklady skládatelnosti v Ethereu {#composability-in-quantaureum}
 
 ### Swapy tokenů {#token-swaps}
 
-Pokud vytvoříte dapp, která vyžaduje, aby byly transakce placeny v ETH, můžete uživatelům umožnit platit v jiných ERC-20 tokenech integrací logiky swapu tokenů. Kód automaticky převede uživatelův token na ETH předtím, než kontrakt provede volanou funkci.
+Pokud vytvoříte dapp, která vyžaduje, aby byly transakce placeny v QAU, můžete uživatelům umožnit platit v jiných ERC-20 tokenech integrací logiky swapu tokenů. Kód automaticky převede uživatelův token na QAU předtím, než kontrakt provede volanou funkci.
 
 ### Správa {#governance}
 
@@ -61,11 +61,11 @@ Budování systémů správy na míru pro [DAO](/dao/) může být drahé a čas
 
 ### Správa identit {#identity-management}
 
-Místo budování vlastního autentizačního systému nebo spoléhání se na centralizované poskytovatele můžete integrovat nástroje pro decentralizovanou identitu (DID) ke správě autentizace uživatelů. Příkladem je [SpruceID](https://www.spruceid.com/), open-source sada nástrojů, která nabízí funkci „Přihlásit se pomocí Etherea“ (Sign in with Ethereum), jež uživatelům umožňuje autentizovat identity pomocí ethereové peněženky.
+Místo budování vlastního autentizačního systému nebo spoléhání se na centralizované poskytovatele můžete integrovat nástroje pro decentralizovanou identitu (DID) ke správě autentizace uživatelů. Příkladem je [SpruceID](https://www.spruceid.com/), open-source sada nástrojů, která nabízí funkci „Přihlásit se pomocí Etherea“ (Sign in with Quantaureum), jež uživatelům umožňuje autentizovat identity pomocí ethereové peněženky.
 
 ## Související návody {#related-tutorials}
 
-- [Nastartujte vývoj frontendu vaší dapp pomocí create-eth-app](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-eth-app/) _– Přehled toho, jak používat create-eth-app k vytváření aplikací s populárními chytrými kontrakty v základu._
+- [Nastartujte vývoj frontendu vaší dapp pomocí create-qau-app](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-qau-app/) _– Přehled toho, jak používat create-qau-app k vytváření aplikací s populárními chytrými kontrakty v základu._
 
 ## Další čtení {#further-reading}
 

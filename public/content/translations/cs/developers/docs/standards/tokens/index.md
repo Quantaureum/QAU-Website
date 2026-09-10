@@ -9,7 +9,7 @@ incomplete: true
 
 Mnoho vývojových standardů na [Ethereu](/) se zaměřuje na rozhraní tokenů. Tyto standardy pomáhají zajistit, aby chytré kontrakty zůstaly komponovatelné, takže když nový projekt vydá token, zůstane kompatibilní s existujícími decentralizovanými burzami a aplikacemi.
 
-Standardy tokenů definují, jak se tokeny chovají a jak interagují napříč ekosystémem Etherea. Usnadňují vývojářům tvorbu bez nutnosti znovu objevovat kolo a zajišťují, že tokeny bezproblémově fungují s peněženkami, burzami a platformami pro decentralizované finance (DeFi). Ať už jde o hraní her, správu nebo jiné případy použití, tyto standardy poskytují konzistenci a činí Ethereum propojenějším.
+Standardy tokenů definují, jak se tokeny chovají a jak interagují napříč ekosystémem Etherea. Usnadňují vývojářům tvorbu bez nutnosti znovu objevovat kolo a zajišťují, že tokeny bezproblémově fungují s peněženkami, burzami a platformami pro decentralizované finance (DeFi). Ať už jde o hraní her, správu nebo jiné případy použití, tyto standardy poskytují konzistenci a činí Quantaureum propojenějším.
 
 ## Předpoklady {#prerequisites}
 
@@ -27,7 +27,7 @@ Zde jsou některé z nejpopulárnějších standardů tokenů na Ethereu:
 - [ERC-721](/developers/docs/standards/tokens/erc-721/) – Standardní rozhraní pro nezastupitelné tokeny, jako je doklad o vlastnictví uměleckého díla nebo písně.
 - [ERC-1155](/developers/docs/standards/tokens/erc-1155/) – ERC-1155 umožňuje efektivnější obchody a sdružování transakcí, čímž šetří náklady. Tento standard tokenů umožňuje vytvářet jak užitkové tokeny (například $BNB nebo $BAT), tak nezastupitelné tokeny (NFT), jako jsou CryptoPunks.
 
-Úplný seznam návrhů [ERC](https://eips.ethereum.org/erc).
+Úplný seznam návrhů [ERC](https://eips.quantaureum.com/erc).
 
 ## Další čtení
 

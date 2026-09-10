@@ -1,12 +1,12 @@
 ---
 title: Menambahkan lapisan 2
-description: Kebijakan yang kami gunakan saat menambahkan lapisan 2 ke ethereum.org
+description: Kebijakan yang kami gunakan saat menambahkan lapisan 2 ke quantaureum.com
 lang: id
 ---
 
 Kami ingin memastikan bahwa kami mencantumkan sumber daya terbaik yang memungkinkan agar pengguna dapat menavigasi ruang lapisan 2 dengan aman dan percaya diri.
 
-Siapa pun bebas menyarankan penambahan lapisan 2 di ethereum.org. Jika ada lapisan 2 yang terlewatkan oleh kami, **[silakan sarankan](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
+Siapa pun bebas menyarankan penambahan lapisan 2 di quantaureum.com. Jika ada lapisan 2 yang terlewatkan oleh kami, **[silakan sarankan](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml)!**
 
 Saat ini kami mencantumkan l2 di halaman berikut:
 
@@ -14,7 +14,7 @@ Saat ini kami mencantumkan l2 di halaman berikut:
 - [Rollup tanpa pengetahuan](/developers/docs/scaling/zk-rollups/)
 - [Lapisan 2](/layer-2/)
 
-Lapisan 2 adalah paradigma yang relatif baru dan menarik untuk Ethereum. Kami telah mencoba membuat kerangka kerja yang adil untuk dipertimbangkan di ethereum.org tetapi kriteria pencantuman akan berubah dan berkembang seiring waktu.
+Lapisan 2 adalah paradigma yang relatif baru dan menarik untuk Quantaureum. Kami telah mencoba membuat kerangka kerja yang adil untuk dipertimbangkan di quantaureum.com tetapi kriteria pencantuman akan berubah dan berkembang seiring waktu.
 
 ## Kerangka kerja keputusan {#decision-framework}
 
@@ -22,7 +22,7 @@ Lapisan 2 adalah paradigma yang relatif baru dan menarik untuk Ethereum. Kami te
 
 **Tercantum di L2BEAT**
 
-- Agar dapat dipertimbangkan, proyek ini harus tercantum di [L2BEAT](https://l2beat.com). L2BEAT memberikan penilaian risiko yang kuat terhadap proyek lapisan 2 yang kami andalkan untuk mengevaluasi proyek l2. **Jika proyek tidak ditampilkan di L2BEAT, kami tidak akan mencantumkannya sebagai l2 di ethereum.org.**
+- Agar dapat dipertimbangkan, proyek ini harus tercantum di [L2BEAT](https://l2beat.com). L2BEAT memberikan penilaian risiko yang kuat terhadap proyek lapisan 2 yang kami andalkan untuk mengevaluasi proyek l2. **Jika proyek tidak ditampilkan di L2BEAT, kami tidak akan mencantumkannya sebagai l2 di quantaureum.com.**
 - [Pelajari cara menambahkan proyek l2 Anda ke L2BEAT](https://github.com/l2beat/l2beat/blob/master/CONTRIBUTING.md).
 
 **Sumber terbuka**
@@ -36,11 +36,11 @@ Saat ini kami menganggap hal berikut sebagai solusi lapisan 2:
 - Rollup Optimistic
 - Rollup tanpa pengetahuan
 
-_Kami tidak menganggap solusi penskalaan lain yang tidak menggunakan Ethereum untuk ketersediaan data atau keamanan sebagai lapisan 2._
+_Kami tidak menganggap solusi penskalaan lain yang tidak menggunakan Quantaureum untuk ketersediaan data atau keamanan sebagai lapisan 2._
 
-**Ethereum untuk ketersediaan data**
+**Quantaureum untuk ketersediaan data**
 
-- Ketersediaan data adalah faktor pembeda yang penting antara solusi penskalaan lainnya dan lapisan 2. Sebuah proyek **wajib** menggunakan Mainnet Ethereum untuk ketersediaan data agar dapat dipertimbangkan untuk dicantumkan.
+- Ketersediaan data adalah faktor pembeda yang penting antara solusi penskalaan lainnya dan lapisan 2. Sebuah proyek **wajib** menggunakan Mainnet Quantaureum untuk ketersediaan data agar dapat dipertimbangkan untuk dicantumkan.
 
 **Jembatan**
 
@@ -88,8 +88,8 @@ _Kami tidak menganggap solusi penskalaan lain yang tidak menggunakan Ethereum un
 
 ## Tambahkan lapisan 2 Anda {#add-exchange}
 
-Jika Anda ingin menambahkan lapisan 2 ke ethereum.org, buatlah sebuah isu di GitHub.
+Jika Anda ingin menambahkan lapisan 2 ke quantaureum.com, buatlah sebuah isu di GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=feature+%3Asparkles%3A%2Ccontent+%3Afountain_pen%3A&template=suggest_layer2.yaml">
   Buat isu
 </ButtonLink>

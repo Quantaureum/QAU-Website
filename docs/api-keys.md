@@ -6,7 +6,7 @@ This project uses two separate `.env.local` files:
 
 | File                        | Purpose                                                                           |
 | --------------------------- | --------------------------------------------------------------------------------- |
-| `.env.local` (root)         | Main Next.js app (Algolia, Etherscan, Matomo, etc.)                               |
+| `.env.local` (root)         | Main Next.js app (Algolia, Quantaureum Explorer, Matomo, etc.)                               |
 | `src/data-layer/.env.local` | Data-layer module and Trigger.dev tasks (CoinGecko, Beaconcha.in, Dune, S3, etc.) |
 
 Some variables like `GITHUB_TOKEN_READ_ONLY` and Sentry config are shared and should be set in both files.
@@ -31,12 +31,12 @@ We recommend setting this up when running the project locally, as we use the Git
 GITHUB_TOKEN_READ_ONLY=48f84de812090000demo00000000697cf6e6a059
 ```
 
-### 2. Add Etherscan API token (free)
+### 2. Add Quantaureum Explorer API token (free)
 
-> - [Create an account](https://etherscan.io/) on Etherscan
+> - [Create an account](https://explorer.quantaureum.com) on Quantaureum Explorer
 > - Navigate to your Account Settings page
 > - In the sidebar, click on 'API-KEYs' and add a new token
-> - Copy & paste your API-Key Token from Etherscan into `.env.local`
+> - Copy & paste your API-Key Token from Quantaureum Explorer into `.env.local`
 
 ```sh
 # .env.local Example:

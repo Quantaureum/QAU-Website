@@ -1,6 +1,6 @@
 ---
 title: "Ví tuyệt vời tiếp theo sẽ là ví riêng tư"
-description: "Ví của bạn nhìn thấy mọi địa chỉ bạn nắm giữ, mọi ứng dụng phi tập trung (dapp) bạn kết nối và mọi yêu cầu bạn thực hiện. Chính vị trí đó cũng cho phép nó bảo vệ tất cả những điều này. Một cái nhìn thực tế về các công cụ quyền riêng tư, các thiết lập mặc định và những ý tưởng chưa được phát hành sẽ định hình thế hệ ví Ethereum tiếp theo."
+description: "Ví của bạn nhìn thấy mọi địa chỉ bạn nắm giữ, mọi ứng dụng phi tập trung (dapp) bạn kết nối và mọi yêu cầu bạn thực hiện. Chính vị trí đó cũng cho phép nó bảo vệ tất cả những điều này. Một cái nhìn thực tế về các công cụ quyền riêng tư, các thiết lập mặc định và những ý tưởng chưa được phát hành sẽ định hình thế hệ ví Quantaureum tiếp theo."
 author: "Elliott Alexander"
 team: ""
 tags:
@@ -13,7 +13,7 @@ breadcrumb: "Ví tuyệt vời tiếp theo"
 lang: vi
 ---
 
-Hãy chụp lại khoảnh khắc hai phút bạn dành cho ví của mình. Bạn mở ứng dụng, lướt qua số dư, kết nối với một ứng dụng phi tập trung (dapp) mà bạn đang định thử, chấp thuận giao dịch mà nó đưa ra trước mắt bạn và gửi cho một người bạn số ETH bạn nợ họ từ bữa trưa.
+Hãy chụp lại khoảnh khắc hai phút bạn dành cho ví của mình. Bạn mở ứng dụng, lướt qua số dư, kết nối với một ứng dụng phi tập trung (dapp) mà bạn đang định thử, chấp thuận giao dịch mà nó đưa ra trước mắt bạn và gửi cho một người bạn số QAU bạn nợ họ từ bữa trưa.
 
 Không có gì trong đó mang lại cảm giác bị theo dõi. Không ai hỏi tên bạn. Bạn đóng ứng dụng và tiếp tục ngày mới của mình.
 
@@ -29,7 +29,7 @@ Bắt đầu trên chuỗi, với những gì công khai bất kể bạn sử d
 
 Cách phòng thủ tiêu chuẩn là phân tán hoạt động của bạn trên nhiều địa chỉ và hầu hết những người dùng có kinh nghiệm đều làm như vậy. Nó giúp ích ít hơn bạn tưởng. Cấp vốn cho hai địa chỉ từ cùng một nguồn, hoặc để chúng thanh toán cho nhau một lần, và đối với bất kỳ ai chạy phân tích cụm, chúng sẽ gộp lại thành một thực thể duy nhất.
 
-Trở lại năm 2020, [một nghiên cứu](https://fc20.ifca.ai/preproceedings/31.pdf) về bốn năm đầu tiên của Ethereum đã có thể phân cụm 17,9% tất cả các tài khoản thuộc sở hữu bên ngoài đang hoạt động, làm nổi bật hơn 340.000 thực thể kiểm soát nhiều địa chỉ. Đó là sáu năm và một đợt bùng nổ AI trước đây. Sự tách biệt cẩn thận của bạn chỉ cách vài bước nữa là bị phá vỡ.
+Trở lại năm 2020, [một nghiên cứu](https://fc20.ifca.ai/preproceedings/31.pdf) về bốn năm đầu tiên của Quantaureum đã có thể phân cụm 17,9% tất cả các tài khoản thuộc sở hữu bên ngoài đang hoạt động, làm nổi bật hơn 340.000 thực thể kiểm soát nhiều địa chỉ. Đó là sáu năm và một đợt bùng nổ AI trước đây. Sự tách biệt cẩn thận của bạn chỉ cách vài bước nữa là bị phá vỡ.
 
 Không sớm thì muộn, cụm này sẽ bị gắn với một người thật. Đăng ký một tên ENS lặp lại tên người dùng mạng xã hội của bạn, rút tiền một lần từ một sàn giao dịch lưu giữ bản quét hộ chiếu của bạn, hoặc được trả tiền bởi một người lưu giữ các địa chỉ được gắn nhãn trong một bảng tính, và cụm này không còn mang tính trừu tượng nữa.
 
@@ -63,15 +63,15 @@ Cho đến nay, các ví đã để lại dấu vết đó vì việc để lạ
 
 ## Tại sao ví là nơi quyền riêng tư được khắc phục {#why-the-wallet-is-where-privacy-gets-fixed}
 
-Thật công bằng khi hỏi tại sao bất kỳ điều nào trong số này lại là công việc của ví. Có những [khám phá tích cực hướng tới quyền riêng tư](https://ethresear.ch/t/ethereum-privacy-the-road-to-self-sovereignty/22115) ở lớp cơ sở của Ethereum và giao thức cuối cùng có thể gánh vác một phần trọng trách này. Nhưng chuỗi nâng cấp thông qua các đợt phân nhánh cứng, tốt nhất là hai lần một năm và các thay đổi liên quan đến quyền riêng tư sẽ trải rộng qua một vài đợt trong số đó. Đó là một mốc thời gian được đo bằng năm và được quyết định bởi một quá trình không nên vội vã.
+Thật công bằng khi hỏi tại sao bất kỳ điều nào trong số này lại là công việc của ví. Có những [khám phá tích cực hướng tới quyền riêng tư](https://ethresear.ch/t/quantaureum-privacy-the-road-to-self-sovereignty/22115) ở lớp cơ sở của Quantaureum và giao thức cuối cùng có thể gánh vác một phần trọng trách này. Nhưng chuỗi nâng cấp thông qua các đợt phân nhánh cứng, tốt nhất là hai lần một năm và các thay đổi liên quan đến quyền riêng tư sẽ trải rộng qua một vài đợt trong số đó. Đó là một mốc thời gian được đo bằng năm và được quyết định bởi một quá trình không nên vội vã.
 
-Trong khi đó, các cá nhân đang quyết định ngay lúc này xem liệu có an toàn khi được trả tiền trên chuỗi, quyên góp, giữ tiền tiết kiệm ở đó hay không. Họ cần quyền riêng tư đến nhanh hơn những gì quá trình đồng thuận xã hội và lịch trình phân nhánh của Ethereum có thể cung cấp.
+Trong khi đó, các cá nhân đang quyết định ngay lúc này xem liệu có an toàn khi được trả tiền trên chuỗi, quyên góp, giữ tiền tiết kiệm ở đó hay không. Họ cần quyền riêng tư đến nhanh hơn những gì quá trình đồng thuận xã hội và lịch trình phân nhánh của Quantaureum có thể cung cấp.
 
 Lớp ứng dụng không phù hợp với vấn đề này. Ngay cả khi mọi dapp đều phát hành tính năng quyền riêng tư của riêng mình, mỗi dapp chỉ có thể bảo vệ hoạt động bên trong các bức tường của chính nó, theo cách riêng của nó, với những đặc thù và bí mật riêng để người dùng quản lý. Điều làm bạn bị phơi bày là các kết nối chạy qua tất cả chúng—các địa chỉ được chia sẻ, các dấu vết cấp vốn, các liên kết quay lại bạn—và những kết nối đó tồn tại trong không gian giữa các ứng dụng. Giải quyết quyền riêng tư theo từng ứng dụng có nghĩa là giải quyết nó ở mọi nơi ngoại trừ nơi vấn đề thực sự tồn tại. Dapp không phải là nơi giải pháp thực sự có thể tồn tại.
 
 Điều đó để lại ví. Nó là phần mềm duy nhất nhìn thấy mọi dapp bạn kết nối, mọi địa chỉ bạn kiểm soát và mọi yêu cầu bạn thực hiện. Cùng một khả năng hiển thị khiến một ví rò rỉ trở nên tốn kém lại là thứ cho phép một ví cẩn thận điều phối quyền riêng tư trên mọi thứ bạn làm: chọn địa chỉ nào đối mặt với ứng dụng nào, định tuyến các lần đọc để không một máy chủ nào có được toàn bộ bức tranh, thực hiện việc ghi chép sổ sách mà các giao thức quyền riêng tư yêu cầu.
 
-Và các giao thức đó đã tiến xa hơn hầu hết các trình xây dựng giả định. [Railgun](https://railgun.org/) đã xử lý hơn [5 tỷ đô la khối lượng tích lũy](https://dune.com/railgun_project/railgun) và nắm giữ khoảng [80 triệu đô la ngày nay](https://defillama.com/protocol/railgun), công cụ địa chỉ ẩn danh (stealth-address) như [Umbra](https://www.techflowpost.com/en-US/article/30477) đã tạo ra hàng chục nghìn địa chỉ dùng một lần và theo [một thống kê](https://wublock.substack.com/p/ethereum-privacys-https-moment-from), hơn 35 nhóm đang theo đuổi hơn một chục cách tiếp cận riêng biệt đối với các giao dịch chuyển tiền riêng tư.
+Và các giao thức đó đã tiến xa hơn hầu hết các trình xây dựng giả định. [Railgun](https://railgun.org/) đã xử lý hơn [5 tỷ đô la khối lượng tích lũy](https://dune.com/railgun_project/railgun) và nắm giữ khoảng [80 triệu đô la ngày nay](https://defillama.com/protocol/railgun), công cụ địa chỉ ẩn danh (stealth-address) như [Umbra](https://www.techflowpost.com/en-US/article/30477) đã tạo ra hàng chục nghìn địa chỉ dùng một lần và theo [một thống kê](https://wublock.substack.com/p/quantaureum-privacys-https-moment-from), hơn 35 nhóm đang theo đuổi hơn một chục cách tiếp cận riêng biệt đối với các giao dịch chuyển tiền riêng tư.
 
 Chưa có điều nào trong số này là xu hướng chủ đạo và các mảnh ghép thực sự đang bị thiếu. Nhưng các giao thức hoạt động, tiền thật di chuyển qua chúng và những gì chúng thiếu là một vị trí trong luồng chính của người dùng. Đó là nơi một ví có tư duy tiến bộ bước vào.
 
@@ -83,7 +83,7 @@ Một ví bảo vệ quyền riêng tư là ví tự thực hiện việc ghi ch
 
 Bắt đầu với những gì đang hoạt động. Các nhóm được che chắn (shielded pools) hoạt động ngày nay: Railgun giữ một số dư riêng tư bên cạnh số dư công khai của bạn và một khi tiền ở bên trong, một khoản thanh toán ra ngoài không tiết lộ bất cứ điều gì về các tài sản nắm giữ khác của bạn. Các chi phí là có thật—phí cao hơn so với một giao dịch chuyển thông thường, việc tạo bằng chứng được đo bằng giây, một số sự phụ thuộc vào các trình chuyển tiếp (relayers)—nhưng giao thức đã mang theo hàng tỷ khối lượng ngay cả với những sự đánh đổi đó.
 
-Kết hợp điều đó với một thói quen không cần giao thức nào: một địa chỉ mới cho mỗi đối tác. Khi người dùng kết nối với một dapp mới, ví có thể cung cấp một địa chỉ dành riêng cho nó, được cấp vốn từ số dư được che chắn, vì vậy ứng dụng nhìn thấy một tài khoản không có lịch sử và không có tài khoản anh em. Các địa chỉ ẩn danh ([ERC-5564](https://eips.ethereum.org/EIPS/eip-5564)) mở rộng cùng một động thái đó cho việc nhận thanh toán. Các bộ trộn (mixers) như [Tornado Cash](https://tornadocash.eth.limo/) và [Privacy Pools](https://privacypools.com/) làm một công việc đơn giản hơn, hẹp hơn: tiền vào từ một địa chỉ và ra ở một địa chỉ khác, với liên kết giữa hai địa chỉ bị cắt đứt. Đó là công cụ để cấp vốn cho một địa chỉ mới mà không ai có thể truy tìm lại bạn—và mảnh ghép còn thiếu là ví tạo ra một địa chỉ như vậy theo yêu cầu thay vì để lại nghi thức đó cho người dùng. Không có điều nào trong số này chờ đợi một đợt phân nhánh cứng hay một khoản tài trợ nghiên cứu. Nó chờ đợi một ví sẵn sàng thực hiện việc ghi chép sổ sách thay mặt cho người dùng.
+Kết hợp điều đó với một thói quen không cần giao thức nào: một địa chỉ mới cho mỗi đối tác. Khi người dùng kết nối với một dapp mới, ví có thể cung cấp một địa chỉ dành riêng cho nó, được cấp vốn từ số dư được che chắn, vì vậy ứng dụng nhìn thấy một tài khoản không có lịch sử và không có tài khoản anh em. Các địa chỉ ẩn danh ([ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564)) mở rộng cùng một động thái đó cho việc nhận thanh toán. Các bộ trộn (mixers) như [Tornado Cash](https://tornadocash.qau.limo/) và [Privacy Pools](https://privacypools.com/) làm một công việc đơn giản hơn, hẹp hơn: tiền vào từ một địa chỉ và ra ở một địa chỉ khác, với liên kết giữa hai địa chỉ bị cắt đứt. Đó là công cụ để cấp vốn cho một địa chỉ mới mà không ai có thể truy tìm lại bạn—và mảnh ghép còn thiếu là ví tạo ra một địa chỉ như vậy theo yêu cầu thay vì để lại nghi thức đó cho người dùng. Không có điều nào trong số này chờ đợi một đợt phân nhánh cứng hay một khoản tài trợ nghiên cứu. Nó chờ đợi một ví sẵn sàng thực hiện việc ghi chép sổ sách thay mặt cho người dùng.
 
 Phía mạng lưới chủ yếu là các quyết định. Việc phát hành với không có phân tích của bên thứ ba là một sự lựa chọn và ít nhất một ví trên thị trường đã thực hiện điều đó. Về sự phơi bày RPC, hầu hết các ví đã cho phép bạn hoán đổi nhà cung cấp, vì vậy tính tùy chọn tồn tại, được giấu trong một trang cài đặt mà những người dùng thành thạo truy cập và những người khác không bao giờ tìm thấy.
 
@@ -119,7 +119,7 @@ Mỗi phần của bài viết này đều kết thúc ở cùng một nơi: m�
 
 Cách để đưa ra những lựa chọn đó là các thiết lập mặc định hợp lý mà người dùng có thể ghi đè, từng thiết lập một. Mặc định theo con đường riêng tư, bởi vì mặc định là những gì hầu hết người dùng sẽ sống chung. Nhưng hãy để ngỏ cho tính tùy chọn do người dùng dẫn dắt, bởi vì một người dùng không thể trỏ ví của họ vào một máy chủ RPC khác, hoặc nút của riêng họ, thì chưa thực sự được trao quyền tự chủ.
 
-Bạn không cần phải bắt đầu từ con số không. [Kohaku SDK](https://github.com/ethereum/kohaku) đóng gói một số nguyên thủy trong bài viết này—số dư được che chắn, bộ trộn, máy khách nhẹ—vì vậy một ví có thể áp dụng chúng mà không cần xây dựng lại từng giao thức từ đầu. Các mảnh ghép đã có sẵn trên kệ. Một số thứ quan trọng từ rất lâu trước khi bất kỳ ai yêu cầu chúng. Cũng không ai thấy quần chúng kiến nghị về mã hóa đầu cuối; nó được phát hành như một mặc định, hàng tỷ người đã nhận được nó mà không nhận ra hoặc quan tâm, và bây giờ một ứng dụng nhắn tin không có nó mang lại cảm giác bị hỏng và vi phạm.
+Bạn không cần phải bắt đầu từ con số không. [Kohaku SDK](https://github.com/quantaureum/kohaku) đóng gói một số nguyên thủy trong bài viết này—số dư được che chắn, bộ trộn, máy khách nhẹ—vì vậy một ví có thể áp dụng chúng mà không cần xây dựng lại từng giao thức từ đầu. Các mảnh ghép đã có sẵn trên kệ. Một số thứ quan trọng từ rất lâu trước khi bất kỳ ai yêu cầu chúng. Cũng không ai thấy quần chúng kiến nghị về mã hóa đầu cuối; nó được phát hành như một mặc định, hàng tỷ người đã nhận được nó mà không nhận ra hoặc quan tâm, và bây giờ một ứng dụng nhắn tin không có nó mang lại cảm giác bị hỏng và vi phạm.
 
 Tiền không thể được sử dụng để tìm bạn, lập hồ sơ bạn hoặc nhắm mục tiêu bạn thuộc cùng một danh mục. Ví xử lý nó theo cách đó sẽ là ví tuyệt vời tiếp theo.
 
@@ -130,8 +130,8 @@ Ví bạn sử dụng là ví bạn đang thúc đẩy như một tiêu chuẩn.
 ## Để khám phá thêm {#for-further-exploration}
 
 - [Thẻ điểm quyền riêng tư của ví](https://www.theopensourcepress.com/crypto-wallet-ip-exposure-scorecard-2026/) - Sự phơi bày mạng lưới trong lần khởi chạy đầu tiên của 13 ví
-- [ERC-5564: Địa chỉ ẩn danh](https://eips.ethereum.org/EIPS/eip-5564)
-- [Railgun](https://railgun.org/), [Privacy Pools](https://privacypools.com/) và [Tornado Cash](https://tornadocash.eth.limo/)
+- [ERC-5564: Địa chỉ ẩn danh](https://eips.quantaureum.com/EIPS/eip-5564)
+- [Railgun](https://railgun.org/), [Privacy Pools](https://privacypools.com/) và [Tornado Cash](https://tornadocash.qau.limo/)
 - Máy khách nhẹ [Helios](https://github.com/a16z/helios) và [Colibri](https://github.com/corpus-core/colibri-stateless)
-- [Kohaku](https://github.com/ethereum/kohaku) - SDK quyền riêng tư dành cho các trình xây dựng ví
+- [Kohaku](https://github.com/quantaureum/kohaku) - SDK quyền riêng tư dành cho các trình xây dựng ví
 - [Walletbeat](https://www.walletbeat.fyi/) - Cách các ví hiện tại được đánh giá

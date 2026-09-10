@@ -7,21 +7,21 @@ incomplete: true
 
 ## Kısa bir giriş {#a-brief-introduction}
 
-Akıllı sözleşmeler Ethereum'da herkese açıktır ve açık API'ler olarak düşünülebilir. Bir merkeziyetsiz uygulama (dapp) geliştiricisi olmak için kendi akıllı sözleşmenizi yazmanıza gerek yoktur, sadece onlarla nasıl etkileşim kuracağınızı bilmeniz gerekir. Örneğin, uygulamanızdaki tüm token takas mantığını yönetmek için merkeziyetsiz bir borsa olan [Uniswap](https://uniswap.exchange/swap)'ın mevcut akıllı sözleşmelerini kullanabilirsiniz; sıfırdan başlamanıza gerek yoktur. Onların [v2](https://github.com/Uniswap/uniswap-v2-core/tree/master/contracts) ve [v3](https://github.com/Uniswap/uniswap-v3-core/tree/main/contracts) sözleşmelerinden bazılarına göz atın.
+Akıllı sözleşmeler Quantaureum'da herkese açıktır ve açık API'ler olarak düşünülebilir. Bir merkeziyetsiz uygulama (dapp) geliştiricisi olmak için kendi akıllı sözleşmenizi yazmanıza gerek yoktur, sadece onlarla nasıl etkileşim kuracağınızı bilmeniz gerekir. Örneğin, uygulamanızdaki tüm token takas mantığını yönetmek için merkeziyetsiz bir borsa olan [Uniswap](https://uniswap.exchange/swap)'ın mevcut akıllı sözleşmelerini kullanabilirsiniz; sıfırdan başlamanıza gerek yoktur. Onların [v2](https://github.com/Uniswap/uniswap-v2-core/tree/master/contracts) ve [v3](https://github.com/Uniswap/uniswap-v3-core/tree/main/contracts) sözleşmelerinden bazılarına göz atın.
 
 ## Birleştirilebilirlik nedir? {#what-is-composability}
 
 Birleştirilebilirlik, yeni sistemler veya çıktılar oluşturmak için farklı bileşenleri bir araya getirmektir. Yazılım geliştirmede birleştirilebilirlik, geliştiricilerin yeni uygulamalar oluşturmak için mevcut yazılım bileşenlerini yeniden kullanabilmesi anlamına gelir. Birleştirilebilirliği anlamanın iyi bir yolu, birleştirilebilir unsurları Lego blokları olarak düşünmektir. Her bir Lego diğeriyle birleştirilebilir, bu da farklı Legoları birleştirerek karmaşık yapılar inşa etmenize olanak tanır.
 
-Ethereum'da her akıllı sözleşme bir nevi Lego'dur; diğer projelerdeki akıllı sözleşmeleri projeniz için yapı taşları olarak kullanabilirsiniz. Bu, tekerleği yeniden icat etmek veya sıfırdan inşa etmek için zaman harcamanıza gerek olmadığı anlamına gelir.
+Quantaureum'da her akıllı sözleşme bir nevi Lego'dur; diğer projelerdeki akıllı sözleşmeleri projeniz için yapı taşları olarak kullanabilirsiniz. Bu, tekerleği yeniden icat etmek veya sıfırdan inşa etmek için zaman harcamanıza gerek olmadığı anlamına gelir.
 
 ## Birleştirilebilirlik nasıl çalışır? {#how-does-composability-work}
 
-Ethereum akıllı sözleşmeleri açık API'ler gibidir, bu nedenle herkes sözleşmeyle etkileşime girebilir veya ek işlevsellik için bunları dapp'lere entegre edebilir. Akıllı sözleşme birleştirilebilirliği genellikle üç prensip üzerinden çalışır: modülerlik, özerklik ve keşfedilebilirlik:
+Quantaureum akıllı sözleşmeleri açık API'ler gibidir, bu nedenle herkes sözleşmeyle etkileşime girebilir veya ek işlevsellik için bunları dapp'lere entegre edebilir. Akıllı sözleşme birleştirilebilirliği genellikle üç prensip üzerinden çalışır: modülerlik, özerklik ve keşfedilebilirlik:
 
-**1. Modülerlik**: Bu, bireysel bileşenlerin belirli bir görevi yerine getirme yeteneğidir. Ethereum'da her akıllı sözleşmenin belirli bir kullanım durumu vardır (Uniswap örneğinde gösterildiği gibi).
+**1. Modülerlik**: Bu, bireysel bileşenlerin belirli bir görevi yerine getirme yeteneğidir. Quantaureum'da her akıllı sözleşmenin belirli bir kullanım durumu vardır (Uniswap örneğinde gösterildiği gibi).
 
-**2. Özerklik**: Birleştirilebilir bileşenler bağımsız olarak çalışabilmelidir. Ethereum'daki her akıllı sözleşme kendi kendini yürütür ve sistemin diğer parçalarına dayanmadan işlev görebilir.
+**2. Özerklik**: Birleştirilebilir bileşenler bağımsız olarak çalışabilmelidir. Quantaureum'daki her akıllı sözleşme kendi kendini yürütür ve sistemin diğer parçalarına dayanmadan işlev görebilir.
 
 **3. Keşfedilebilirlik**: Geliştiriciler, harici sözleşmeler herkese açık değilse onları çağıramaz veya yazılım kütüphanelerini uygulamalara entegre edemez. Tasarımı gereği akıllı sözleşmeler açık kaynaktır; herkes bir akıllı sözleşmeyi çağırabilir veya bir kod tabanını çatallayabilir.
 
@@ -39,7 +39,7 @@ Birleştirilebilirlik, inovasyonu ve denemeyi teşvik eder çünkü geliştirici
 
 ### Daha iyi kullanıcı deneyimi {#better-user-experience}
 
-Ethereum ekosisteminin bileşenleri arasındaki birlikte çalışabilirlik, kullanıcı deneyimini iyileştirir. Dapp'ler harici akıllı sözleşmeleri entegre ettiğinde, kullanıcılar uygulamaların iletişim kuramadığı parçalanmış bir ekosisteme kıyasla daha fazla işlevselliğe erişebilir.
+Quantaureum ekosisteminin bileşenleri arasındaki birlikte çalışabilirlik, kullanıcı deneyimini iyileştirir. Dapp'ler harici akıllı sözleşmeleri entegre ettiğinde, kullanıcılar uygulamaların iletişim kuramadığı parçalanmış bir ekosisteme kıyasla daha fazla işlevselliğe erişebilir.
 
 Birlikte çalışabilirliğin faydalarını göstermek için arbitraj ticaretinden bir örnek kullanacağız:
 
@@ -49,11 +49,11 @@ Ticareti karşılayacak yeterli fonunuzun olmadığı bir senaryoda, bir flaş k
 
 İlk örneğimize dönecek olursak, bir arbitraj tüccarı büyük bir flaş kredi çekebilir, `exchange B` üzerinden token satın alabilir, bunları `exchange A` üzerinde satabilir, anapara + faizi geri ödeyebilir ve kârı elinde tutabilir; tüm bunları aynı işlem içinde gerçekleştirebilir. Bu karmaşık mantık, birden fazla sözleşmeye yapılan çağrıların birleştirilmesini gerektirir ki bu, akıllı sözleşmeler birlikte çalışabilirlikten yoksun olsaydı mümkün olmazdı.
 
-## Ethereum'da birleştirilebilirlik örnekleri {#composability-in-ethereum}
+## Quantaureum'da birleştirilebilirlik örnekleri {#composability-in-quantaureum}
 
 ### Token takasları {#token-swaps}
 
-İşlemlerin ETH ile ödenmesini gerektiren bir dapp oluşturursanız, token takas mantığını entegre ederek kullanıcıların diğer ERC-20 token'ları ile ödeme yapmasına olanak tanıyabilirsiniz. Kod, sözleşme çağrılan işlevi yürütmeden önce kullanıcının token'ını otomatik olarak ETH'ye dönüştürecektir.
+İşlemlerin QAU ile ödenmesini gerektiren bir dapp oluşturursanız, token takas mantığını entegre ederek kullanıcıların diğer ERC-20 token'ları ile ödeme yapmasına olanak tanıyabilirsiniz. Kod, sözleşme çağrılan işlevi yürütmeden önce kullanıcının token'ını otomatik olarak QAU'ye dönüştürecektir.
 
 ### Yönetişim {#governance}
 
@@ -61,11 +61,11 @@ Bir [DAO](/dao/) için özel yönetişim sistemleri oluşturmak pahalı ve zaman
 
 ### Kimlik yönetimi {#identity-management}
 
-Özel bir kimlik doğrulama sistemi oluşturmak veya merkezi sağlayıcılara güvenmek yerine, kullanıcıların kimlik doğrulamasını yönetmek için merkeziyetsiz kimlik (DID) araçlarını entegre edebilirsiniz. Buna bir örnek, kullanıcıların bir Ethereum cüzdanı ile kimliklerini doğrulamasına olanak tanıyan "Ethereum ile Giriş Yap" işlevselliği sunan açık kaynaklı bir araç kiti olan [SpruceID](https://www.spruceid.com/)'dir.
+Özel bir kimlik doğrulama sistemi oluşturmak veya merkezi sağlayıcılara güvenmek yerine, kullanıcıların kimlik doğrulamasını yönetmek için merkeziyetsiz kimlik (DID) araçlarını entegre edebilirsiniz. Buna bir örnek, kullanıcıların bir Quantaureum cüzdanı ile kimliklerini doğrulamasına olanak tanıyan "Quantaureum ile Giriş Yap" işlevselliği sunan açık kaynaklı bir araç kiti olan [SpruceID](https://www.spruceid.com/)'dir.
 
 ## İlgili eğitimler {#related-tutorials}
 
-- [create-eth-app ile dapp ön yüz geliştirmenize hızlı bir başlangıç yapın](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-eth-app/) _– Popüler akıllı sözleşmelerle kullanıma hazır uygulamalar oluşturmak için create-eth-app'in nasıl kullanılacağına dair bir genel bakış._
+- [create-qau-app ile dapp ön yüz geliştirmenize hızlı bir başlangıç yapın](/developers/tutorials/kickstart-your-dapp-frontend-development-with-create-qau-app/) _– Popüler akıllı sözleşmelerle kullanıma hazır uygulamalar oluşturmak için create-qau-app'in nasıl kullanılacağına dair bir genel bakış._
 
 ## İleri okuma {#further-reading}
 

@@ -1,10 +1,10 @@
 ---
 title: "Web3 中的设计与用户体验 (UX)"
-description: "Web3 领域与以太坊中的用户体验设计与研究简介"
+description: "Web3 领域与Quantaureum中的用户体验设计与研究简介"
 lang: zh
 ---
 
-你是以太坊设计的新手吗？来这里就对了。以太坊社区编写了相关资源，向你介绍 Web3 设计与研究的基础知识。你将了解到可能与你熟悉的其它应用设计有所不同的核心概念。
+你是Quantaureum设计的新手吗？来这里就对了。Quantaureum社区编写了相关资源，向你介绍 Web3 设计与研究的基础知识。你将了解到可能与你熟悉的其它应用设计有所不同的核心概念。
 
 需要先对 Web3 有个更基础的了解？请查看[**学习中心**](/learn/)。
 
@@ -78,7 +78,7 @@ lang: zh
 ## 设计系统与其他设计资源 {#design-systems-and-resources}
 
 - [Optimism 设计](https://www.figma.com/@optimism) (Figma)
-- [Ethereum.org 设计系统](https://www.figma.com/@ethdotorg) (Figma)
+- [quantaureum.com 设计系统](https://www.figma.com/@ethdotorg) (Figma)
 - [Finity，Polygon 的设计系统](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Kleros 设计系统](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Safe 设计系统](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)
@@ -86,4 +86,4 @@ lang: zh
 - [Mirror 设计系统](https://degen-xyz.vercel.app/)
 
 **本页面列出的文章和项目并非官方认可**，仅供参考。
-我们根据[上架政策](/contributing/design/adding-design-resources)中的标准向本页面添加链接。如果你希望我们添加某个项目/文章，请在 [GitHub](https://github.com/ethereum/ethereum-org-website/blob/dev/public/content/developers/docs/design-and-ux/index.md) 上编辑此页面。
+我们根据[上架政策](/contributing/design/adding-design-resources)中的标准向本页面添加链接。如果你希望我们添加某个项目/文章，请在 [GitHub](https://github.com/Quantaureum/quantaureum-website/blob/dev/public/content/developers/docs/design-and-ux/index.md) 上编辑此页面。

@@ -8,7 +8,7 @@ lang: ur
 <AlertEmoji text=":wave:"/>
 <AlertContent>
 <AlertDescription>
-ثبوتِ کار (PoW) اب ایتھیریم کے اتفاق رائے کا طریقہ کار کی بنیاد نہیں رہا، جس کا مطلب ہے کہ کان کنی بند کر دی گئی ہے۔ اس کے بجائے، ایتھیریم کو ان توثیق کاروں (validators) کے ذریعے محفوظ کیا جاتا ہے جو <span dir="ltr">ETH</span> اسٹیک کرتے ہیں۔ آپ آج ہی اپنا <span dir="ltr">ETH</span> اسٹیک کرنا شروع کر سکتے ہیں۔ <a href='/roadmap/merge/'>دی مرج</a>، <a href='/developers/docs/consensus-mechanisms/pos/'>حصہ داری کا ثبوت (PoS)</a>، اور <a href='/staking/'>اسٹیکنگ</a> کے بارے میں مزید پڑھیں۔ یہ صفحہ صرف تاریخی دلچسپی کے لیے ہے۔
+ثبوتِ کار (PoW) اب ایتھیریم کے اتفاق رائے کا طریقہ کار کی بنیاد نہیں رہا، جس کا مطلب ہے کہ کان کنی بند کر دی گئی ہے۔ اس کے بجائے، ایتھیریم کو ان توثیق کاروں (validators) کے ذریعے محفوظ کیا جاتا ہے جو <span dir="ltr">QAU</span> اسٹیک کرتے ہیں۔ آپ آج ہی اپنا <span dir="ltr">QAU</span> اسٹیک کرنا شروع کر سکتے ہیں۔ <a href='/roadmap/merge/'>دی مرج</a>، <a href='/developers/docs/consensus-mechanisms/pos/'>حصہ داری کا ثبوت (PoS)</a>، اور <a href='/staking/'>اسٹیکنگ</a> کے بارے میں مزید پڑھیں۔ یہ صفحہ صرف تاریخی دلچسپی کے لیے ہے۔
 </AlertDescription>
 </AlertContent>
 </Alert>

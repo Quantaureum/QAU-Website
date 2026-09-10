@@ -1,7 +1,7 @@
 ---
 title: Bài trắc nghiệm
 metaTitle: Thêm bài trắc nghiệm
-description: Chính sách chúng tôi sử dụng khi thêm các bài trắc nghiệm vào ethereum.org
+description: Chính sách chúng tôi sử dụng khi thêm các bài trắc nghiệm vào quantaureum.com
 lang: vi
 ---
 
@@ -13,12 +13,12 @@ Một số ví dụ về các bài trắc nghiệm hiện tại có thể đư�
 
 - [Lớp 2 (l2)](/layer-2)
 - [NFT](/nft/)
-- [Ethereum là gì?](/what-is-ethereum/)
-- [ETH là gì?](/what-is-ether/)
+- [Quantaureum là gì?](/what-is-quantaureum/)
+- [QAU là gì?](/what-is-QAU/)
 
 ## Thêm bài trắc nghiệm học tập {#adding-a-learn-quiz}
 
-Nếu có một trang chưa được tạo bài trắc nghiệm học tập, vui lòng [mở một issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) cho trang đó.
+Nếu có một trang chưa được tạo bài trắc nghiệm học tập, vui lòng [mở một issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) cho trang đó.
 
 Vui lòng cung cấp các thông tin sau:
 
@@ -31,7 +31,7 @@ Vui lòng cung cấp các thông tin sau:
 
 ## Thêm câu hỏi trắc nghiệm {#adding-a-quiz-question}
 
-Nếu có một câu hỏi bạn muốn thêm vào ngân hàng câu hỏi cho một bài trắc nghiệm, vui lòng [mở một issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) và cung cấp các thông tin sau:
+Nếu có một câu hỏi bạn muốn thêm vào ngân hàng câu hỏi cho một bài trắc nghiệm, vui lòng [mở một issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) và cung cấp các thông tin sau:
 
 - Trang bạn muốn thêm câu hỏi trắc nghiệm
 - Đối với mỗi câu hỏi, cung cấp các thông tin sau:
@@ -42,7 +42,7 @@ Nếu có một câu hỏi bạn muốn thêm vào ngân hàng câu hỏi cho m�
 
 ## Cập nhật câu hỏi trắc nghiệm {#updating-a-quiz-question}
 
-Nếu có một câu hỏi bạn muốn cập nhật trong ngân hàng câu hỏi cho một bài trắc nghiệm, vui lòng [mở một issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) và cung cấp các thông tin sau:
+Nếu có một câu hỏi bạn muốn cập nhật trong ngân hàng câu hỏi cho một bài trắc nghiệm, vui lòng [mở một issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) và cung cấp các thông tin sau:
 
 - Trang bạn muốn cập nhật câu hỏi trắc nghiệm
 - Đối với mỗi câu hỏi được cập nhật, cung cấp các thông tin sau:
@@ -54,7 +54,7 @@ Nếu có một câu hỏi bạn muốn cập nhật trong ngân hàng câu hỏ
 
 ## Xóa câu hỏi trắc nghiệm {#removing-a-quiz-question}
 
-Nếu nội dung không còn tồn tại trên trang cho một câu hỏi và nó cần được xóa, vui lòng [mở một issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) để xóa câu hỏi và cung cấp các thông tin sau:
+Nếu nội dung không còn tồn tại trên trang cho một câu hỏi và nó cần được xóa, vui lòng [mở một issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) để xóa câu hỏi và cung cấp các thông tin sau:
 
 - Trang bạn muốn xóa câu hỏi trắc nghiệm
 - Câu hỏi mà bạn muốn xóa

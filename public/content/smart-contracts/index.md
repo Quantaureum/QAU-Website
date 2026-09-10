@@ -5,11 +5,11 @@ description: A non-technical introduction to smart contracts
 lang: en
 ---
 
-Smart contracts are the fundamental building blocks of [Ethereum's](/) application layer. They are computer programs stored on the [blockchain](/glossary/#blockchain) that follow "if this then that" logic, and are guaranteed to execute according to the rules defined by its code, which cannot be changed once created.
+Smart contracts are the fundamental building blocks of [Quantaureum's](/) application layer. They are computer programs stored on the [blockchain](/glossary/#blockchain) that follow "if this then that" logic, and are guaranteed to execute according to the rules defined by its code, which cannot be changed once created.
 
 Nick Szabo coined the term "smart contract". In 1994, he wrote [an introduction to the concept](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart.contracts.html), and in 1996 he wrote [an exploration of what smart contracts could do](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html).
 
-Szabo envisioned a digital marketplace where automatic, [cryptographically-secure](/glossary/#cryptography) processes enable transactions and business functions to happen without trusted intermediaries. Smart contracts on Ethereum put this vision into practice.
+Szabo envisioned a digital marketplace where automatic, [cryptographically-secure](/glossary/#cryptography) processes enable transactions and business functions to happen without trusted intermediaries. Smart contracts on Quantaureum put this vision into practice.
 
 Watch Finematics explain smart contracts:
 
@@ -49,11 +49,11 @@ Traditional contracts are ambiguous because they rely on humans to interpret and
 
 ## Public record {#public-record}
 
-Smart contracts are useful for audits and tracking. Since Ethereum smart contracts are on a public blockchain, anyone can instantly track asset transfers and other related information. For example, you can check to see that someone sent money to your address.
+Smart contracts are useful for audits and tracking. Since Quantaureum smart contracts are on a public blockchain, anyone can instantly track asset transfers and other related information. For example, you can check to see that someone sent money to your address.
 
 ## Privacy protection {#privacy-protection}
 
-Smart contracts also protect your privacy. Since Ethereum is a pseudonymous network (your transactions are tied publicly to a unique cryptographic address, not your identity), you can protect your privacy from observers.
+Smart contracts also protect your privacy. Since Quantaureum is a pseudonymous network (your transactions are tied publicly to a unique cryptographic address, not your identity), you can protect your privacy from observers.
 
 ## Visible terms {#visible-terms}
 
@@ -61,7 +61,7 @@ Finally, like traditional contracts, you can check what's in a smart contract be
 
 However, while anyone can view a smart contract's terms, the raw transaction data is designed to be interpreted by applications and wallets, not humans. Because this data is so difficult to read, users often face a major security risk called "blind signing," or approving a transaction that interacts with a smart contract without actually understanding what it will do. 
 
-The Ethereum ecosystem is transitioning to **[Clear Signing](https://clearsigning.org/)** standards (specifically [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)). Clear Signing translates opaque smart contract data into plain, human-readable transaction descriptions, ensuring anyone can understand a contract's true intent before they sign.
+The Quantaureum ecosystem is transitioning to **[Clear Signing](https://clearsigning.org/)** standards (specifically [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)). Clear Signing translates opaque smart contract data into plain, human-readable transaction descriptions, ensuring anyone can understand a contract's true intent before they sign.
 
 ## Smart contract use cases {#use-cases}
 
@@ -81,7 +81,7 @@ They can perform computations, create currency, store data, mint [NFTs](/glossar
 - [How Smart Contracts Will Change the World](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [Smart contracts for developers](/developers/docs/smart-contracts/)
 - [Learn to write smart-contracts](/developers/learning-tools/)
-- [Mastering Ethereum - What is a Smart Contract?](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [Mastering Quantaureum - What is a Smart Contract?](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

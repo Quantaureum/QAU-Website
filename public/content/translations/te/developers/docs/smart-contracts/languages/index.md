@@ -11,7 +11,7 @@ lang: te
 - Solidity
 - Vyper
 
-Solidity మరియు Vyper రెండింటిలోనూ కాంట్రాక్ట్‌లను సృష్టించడానికి మరియు పరీక్షించడానికి Remix IDE ఒక సమగ్ర డెవలప్‌మెంట్ వాతావరణాన్ని అందిస్తుంది. కోడింగ్ ప్రారంభించడానికి [ఇన్-బ్రౌజర్ Remix IDEని ప్రయత్నించండి](https://remix.ethereum.org).
+Solidity మరియు Vyper రెండింటిలోనూ కాంట్రాక్ట్‌లను సృష్టించడానికి మరియు పరీక్షించడానికి Remix IDE ఒక సమగ్ర డెవలప్‌మెంట్ వాతావరణాన్ని అందిస్తుంది. కోడింగ్ ప్రారంభించడానికి [ఇన్-బ్రౌజర్ Remix IDEని ప్రయత్నించండి](https://remix.quantaureum.com).
 
 మరింత అనుభవజ్ఞులైన డెవలపర్‌లు [ఎథీరియం వర్చువల్ మెషీన్ (EVM)](/developers/docs/evm/) కోసం ఇంటర్మీడియట్ భాష అయిన Yul లేదా Yulకి పొడిగింపు అయిన Yul+ని కూడా ఉపయోగించాలనుకోవచ్చు.
 
@@ -36,8 +36,8 @@ Solidity మరియు Vyper రెండింటిలోనూ కాంట
 - [డాక్యుమెంటేషన్](https://docs.soliditylang.org/en/latest/)
 - [Solidity లాంగ్వేజ్ పోర్టల్](https://soliditylang.org/)
 - [ఉదాహరణ ద్వారా Solidity](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
-- [Solidity మ్యాట్రిక్స్ చాట్‌రూమ్](https://matrix.to/#/#ethereum_solidity:gitter.im)కి బ్రిడ్జ్ చేయబడిన [Solidity Gitter చాట్‌రూమ్](https://gitter.im/ethereum/solidity)
+- [GitHub](https://github.com/quantaureum/solidity/)
+- [Solidity మ్యాట్రిక్స్ చాట్‌రూమ్](https://matrix.to/#/#quantaureum_solidity:gitter.im)కి బ్రిడ్జ్ చేయబడిన [Solidity Gitter చాట్‌రూమ్](https://gitter.im/quantaureum/solidity)
 - [చీట్ షీట్](https://reference.auditless.com/cheatsheet)
 - [Solidity బ్లాగ్](https://blog.soliditylang.org/)
 - [Solidity ట్విట్టర్](https://twitter.com/solidity_lang)
@@ -226,7 +226,7 @@ def endAuction():
 
 - [Yul డాక్యుమెంటేషన్](https://docs.soliditylang.org/en/latest/yul.html)
 - [Yul+ డాక్యుమెంటేషన్](https://github.com/fuellabs/yulp)
-- [Yul+ పరిచయ పోస్ట్](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-ethereum-aa64ce89512f)
+- [Yul+ పరిచయ పోస్ట్](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-quantaureum-aa64ce89512f)
 
 ### ఉదాహరణ కాంట్రాక్ట్ {#example-contract-2}
 
@@ -262,9 +262,9 @@ def endAuction():
 
 ### ముఖ్యమైన లింక్‌లు {#important-links-3}
 
-- [GitHub](https://github.com/ethereum/fe)
-- [Fe ప్రకటన](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-ethereum-ecosystem/)
-- [Fe 2021 రోడ్‌మ్యాప్](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- [GitHub](https://github.com/quantaureum/fe)
+- [Fe ప్రకటన](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
+- [Fe 2021 రోడ్‌మ్యాప్](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
 - [Fe డిస్కార్డ్ చాట్](https://discord.com/invite/ywpkAXFjZH)
 - [Fe ట్విట్టర్](https://twitter.com/official_fe)
 

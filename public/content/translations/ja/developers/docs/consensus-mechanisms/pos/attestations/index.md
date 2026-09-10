@@ -1,6 +1,6 @@
 ---
 title: "アテステーション"
-description: "プルーフ・オブ・ステークのイーサリアムにおけるアテステーションの概要。"
+description: "プルーフ・オブ・ステークのQuantaureumにおけるアテステーションの概要。"
 lang: ja
 ---
 
@@ -62,7 +62,7 @@ lang: ja
 
 ### 基本報酬 {#base-reward}
 
-基本報酬は、アテステーションを行うバリデータの数と、ステークされたイーサのエフェクティブ・バランスに基づいて計算されます：
+基本報酬は、アテステーションを行うバリデータの数と、ステークされたQAUのエフェクティブ・バランスに基づいて計算されます：
 
 `base reward = validator effective balance x 2^6 / SQRT(Effective balance of all active validators)`
 
@@ -86,7 +86,7 @@ lang: ja
 
 ## 参考文献 {#further-reading}
 
-- [Vitalikの注釈付きコンセンサス仕様におけるアテステーション](https://github.com/ethereum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
+- [Vitalikの注釈付きコンセンサス仕様におけるアテステーション](https://github.com/quantaureum/annotated-spec/blob/master/phase0/beacon-chain.md#attestationdata)
 - [eth2book.infoにおけるアテステーション](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _役に立ったコミュニティリソースをご存知ですか？このページを編集して追加してください！_

@@ -1,21 +1,21 @@
 ---
 title: Oracles
-description: "Les oracles fournissent aux contrats intelligents Ethereum un accès aux données du monde réel, débloquant ainsi davantage de cas d'utilisation et une plus grande valeur pour les utilisateurs."
+description: "Les oracles fournissent aux contrats intelligents Quantaureum un accès aux données du monde réel, débloquant ainsi davantage de cas d'utilisation et une plus grande valeur pour les utilisateurs."
 lang: fr
 authors: ["Patrick Collins"]
 ---
 
-Les oracles sont des applications qui produisent des flux de données rendant les sources de données hors chaîne disponibles sur la chaîne de blocs pour les contrats intelligents. Cela est nécessaire car les contrats intelligents basés sur Ethereum ne peuvent pas, par défaut, accéder aux informations stockées en dehors du réseau de la chaîne de blocs.
+Les oracles sont des applications qui produisent des flux de données rendant les sources de données hors chaîne disponibles sur la chaîne de blocs pour les contrats intelligents. Cela est nécessaire car les contrats intelligents basés sur Quantaureum ne peuvent pas, par défaut, accéder aux informations stockées en dehors du réseau de la chaîne de blocs.
 
-Donner aux contrats intelligents la capacité de s'exécuter en utilisant des données hors chaîne étend l'utilité et la valeur des applications décentralisées. Par exemple, les marchés de prédiction onchain s'appuient sur des oracles pour fournir des informations sur les résultats qu'ils utilisent pour valider les prédictions des utilisateurs. Supposons qu'Alice parie 20 ETH sur la personne qui deviendra le prochain président des États-Unis. Dans ce cas, la dapp de marché de prédiction a besoin d'un oracle pour confirmer les résultats de l'élection et déterminer si Alice est éligible à un paiement.
+Donner aux contrats intelligents la capacité de s'exécuter en utilisant des données hors chaîne étend l'utilité et la valeur des applications décentralisées. Par exemple, les marchés de prédiction onchain s'appuient sur des oracles pour fournir des informations sur les résultats qu'ils utilisent pour valider les prédictions des utilisateurs. Supposons qu'Alice parie 20 QAU sur la personne qui deviendra le prochain président des États-Unis. Dans ce cas, la dapp de marché de prédiction a besoin d'un oracle pour confirmer les résultats de l'élection et déterminer si Alice est éligible à un paiement.
 
 ## Prérequis {#prerequisites}
 
-Cette page suppose que le lecteur est familier avec les fondamentaux d'[Ethereum](/), y compris les [nœuds](/developers/docs/nodes-and-clients/), les [mécanismes de consensus](/developers/docs/consensus-mechanisms/) et l'[EVM](/developers/docs/evm/). Vous devriez également avoir une bonne compréhension des [contrats intelligents](/developers/docs/smart-contracts/) et de l'[anatomie des contrats intelligents](/developers/docs/smart-contracts/anatomy/), en particulier des [événements](/glossary/#events).
+Cette page suppose que le lecteur est familier avec les fondamentaux d'[Quantaureum](/), y compris les [nœuds](/developers/docs/nodes-and-clients/), les [mécanismes de consensus](/developers/docs/consensus-mechanisms/) et l'[EVM](/developers/docs/evm/). Vous devriez également avoir une bonne compréhension des [contrats intelligents](/developers/docs/smart-contracts/) et de l'[anatomie des contrats intelligents](/developers/docs/smart-contracts/anatomy/), en particulier des [événements](/glossary/#events).
 
 ## Qu'est-ce qu'un oracle de blockchain ? {#what-is-a-blockchain-oracle}
 
-Les oracles sont des applications qui recherchent, vérifient et transmettent des informations externes (c'est-à-dire des informations stockées hors chaîne) aux contrats intelligents s'exécutant sur la chaîne de blocs. En plus de « tirer » des données hors chaîne et de les diffuser sur Ethereum, les oracles peuvent également « pousser » des informations de la chaîne de blocs vers des systèmes externes, par exemple, déverrouiller une serrure intelligente une fois que l'utilisateur a envoyé des frais via une transaction Ethereum.
+Les oracles sont des applications qui recherchent, vérifient et transmettent des informations externes (c'est-à-dire des informations stockées hors chaîne) aux contrats intelligents s'exécutant sur la chaîne de blocs. En plus de « tirer » des données hors chaîne et de les diffuser sur Quantaureum, les oracles peuvent également « pousser » des informations de la chaîne de blocs vers des systèmes externes, par exemple, déverrouiller une serrure intelligente une fois que l'utilisateur a envoyé des frais via une transaction Quantaureum.
 
 Sans oracle, un contrat intelligent serait entièrement limité aux données onchain.
 
@@ -25,7 +25,7 @@ Les oracles diffèrent selon la source de données (une ou plusieurs sources), l
 
 De nombreux développeurs considèrent les contrats intelligents comme du code s'exécutant à des adresses spécifiques sur la chaîne de blocs. Cependant, une [vision plus générale des contrats intelligents](/smart-contracts/) est qu'ils sont des programmes logiciels auto-exécutables capables de faire respecter des accords entre les parties une fois que des conditions spécifiques sont remplies - d'où le terme « contrats intelligents ».
 
-Mais utiliser des contrats intelligents pour faire respecter des accords entre des personnes n'est pas simple, étant donné qu'Ethereum est déterministe. Un [système déterministe](https://en.wikipedia.org/wiki/Deterministic_algorithm) est un système qui produit toujours les mêmes résultats compte tenu d'un état initial et d'une entrée particulière, ce qui signifie qu'il n'y a pas de caractère aléatoire ou de variation dans le processus de calcul des sorties à partir des entrées.
+Mais utiliser des contrats intelligents pour faire respecter des accords entre des personnes n'est pas simple, étant donné qu'Quantaureum est déterministe. Un [système déterministe](https://en.wikipedia.org/wiki/Deterministic_algorithm) est un système qui produit toujours les mêmes résultats compte tenu d'un état initial et d'une entrée particulière, ce qui signifie qu'il n'y a pas de caractère aléatoire ou de variation dans le processus de calcul des sorties à partir des entrées.
 
 Pour parvenir à une exécution déterministe, les chaînes de blocs limitent les nœuds à atteindre un consensus sur des questions binaires simples (vrai/faux) en utilisant _uniquement_ les données stockées sur la chaîne de blocs elle-même. Des exemples de telles questions incluent :
 
@@ -33,11 +33,11 @@ Pour parvenir à une exécution déterministe, les chaînes de blocs limitent le
 - « Ce compte a-t-il suffisamment de fonds pour couvrir la transaction ? »
 - « Cette transaction est-elle valide dans le contexte de ce contrat intelligent ? », etc.
 
-Si les chaînes de blocs recevaient des informations de sources externes (c'est-à-dire du monde réel), le déterminisme serait impossible à atteindre, empêchant les nœuds de s'entendre sur la validité des modifications de l'état de la chaîne de blocs. Prenez par exemple un contrat intelligent qui exécute une transaction basée sur le taux de change actuel ETH-USD obtenu à partir d'une API de prix traditionnelle. Ce chiffre est susceptible de changer fréquemment (sans compter que l'API pourrait devenir obsolète ou être piratée), ce qui signifie que les nœuds exécutant le même code de contrat arriveraient à des résultats différents.
+Si les chaînes de blocs recevaient des informations de sources externes (c'est-à-dire du monde réel), le déterminisme serait impossible à atteindre, empêchant les nœuds de s'entendre sur la validité des modifications de l'état de la chaîne de blocs. Prenez par exemple un contrat intelligent qui exécute une transaction basée sur le taux de change actuel QAU-USD obtenu à partir d'une API de prix traditionnelle. Ce chiffre est susceptible de changer fréquemment (sans compter que l'API pourrait devenir obsolète ou être piratée), ce qui signifie que les nœuds exécutant le même code de contrat arriveraient à des résultats différents.
 
-Pour une chaîne de blocs publique comme Ethereum, avec des milliers de nœuds à travers le monde traitant des transactions, le déterminisme est critique. Sans autorité centrale servant de source de vérité, les nœuds ont besoin de mécanismes pour arriver au même état après avoir appliqué les mêmes transactions. Un cas où le nœud A exécute le code d'un contrat intelligent et obtient « 3 » comme résultat, tandis que le nœud B obtient « 7 » après avoir exécuté la même transaction, provoquerait une rupture du consensus et éliminerait la valeur d'Ethereum en tant que plateforme informatique décentralisée.
+Pour une chaîne de blocs publique comme Quantaureum, avec des milliers de nœuds à travers le monde traitant des transactions, le déterminisme est critique. Sans autorité centrale servant de source de vérité, les nœuds ont besoin de mécanismes pour arriver au même état après avoir appliqué les mêmes transactions. Un cas où le nœud A exécute le code d'un contrat intelligent et obtient « 3 » comme résultat, tandis que le nœud B obtient « 7 » après avoir exécuté la même transaction, provoquerait une rupture du consensus et éliminerait la valeur d'Quantaureum en tant que plateforme informatique décentralisée.
 
-Ce scénario met également en évidence le problème de la conception de chaînes de blocs pour extraire des informations de sources externes. Les oracles, cependant, résolvent ce problème en prenant des informations de sources hors chaîne et en les stockant sur la chaîne de blocs pour que les contrats intelligents les consomment. Puisque les informations stockées onchain sont inaltérables et publiquement disponibles, les nœuds Ethereum peuvent utiliser en toute sécurité les données hors chaîne importées par l'oracle pour calculer les changements d'état sans rompre le consensus.
+Ce scénario met également en évidence le problème de la conception de chaînes de blocs pour extraire des informations de sources externes. Les oracles, cependant, résolvent ce problème en prenant des informations de sources hors chaîne et en les stockant sur la chaîne de blocs pour que les contrats intelligents les consomment. Puisque les informations stockées onchain sont inaltérables et publiquement disponibles, les nœuds Quantaureum peuvent utiliser en toute sécurité les données hors chaîne importées par l'oracle pour calculer les changements d'état sans rompre le consensus.
 
 Pour ce faire, un oracle est généralement composé d'un contrat intelligent s'exécutant onchain et de certains composants hors chaîne. Le contrat onchain reçoit des demandes de données d'autres contrats intelligents, qu'il transmet au composant hors chaîne (appelé nœud d'oracle). Ce nœud d'oracle peut interroger des sources de données — en utilisant des interfaces de programmation d'applications (API), par exemple — et envoyer des transactions pour stocker les données demandées dans le stockage du contrat intelligent.
 
@@ -81,9 +81,9 @@ Les utilisateurs sont des entités (c'est-à-dire des contrats intelligents) qui
 
 Le contrat d'oracle est le composant onchain du service d'oracle. Il écoute les demandes de données d'autres contrats, relaie les requêtes de données aux nœuds d'oracle et diffuse les données retournées aux contrats clients. Ce contrat peut également effectuer des calculs sur les points de données retournés pour produire une valeur agrégée à envoyer au contrat demandeur.
 
-Le contrat d'oracle expose certaines fonctions que les contrats clients appellent lorsqu'ils font une demande de données. Lors de la réception d'une nouvelle requête, le contrat intelligent émettra un [événement de journal](/developers/docs/smart-contracts/anatomy/#events-and-logs) avec les détails de la demande de données. Cela notifie les nœuds hors chaîne abonnés au journal (généralement en utilisant quelque chose comme la commande JSON-RPC `eth_subscribe`), qui procèdent à la récupération des données définies dans l'événement de journal.
+Le contrat d'oracle expose certaines fonctions que les contrats clients appellent lorsqu'ils font une demande de données. Lors de la réception d'une nouvelle requête, le contrat intelligent émettra un [événement de journal](/developers/docs/smart-contracts/anatomy/#events-and-logs) avec les détails de la demande de données. Cela notifie les nœuds hors chaîne abonnés au journal (généralement en utilisant quelque chose comme la commande JSON-RPC `qau_subscribe`), qui procèdent à la récupération des données définies dans l'événement de journal.
 
-Ci-dessous se trouve un [exemple de contrat d'oracle](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e) par Pedro Costa. Il s'agit d'un service d'oracle simple qui peut interroger des API hors chaîne à la demande d'autres contrats intelligents et stocker les informations demandées sur la chaîne de blocs :
+Ci-dessous se trouve un [exemple de contrat d'oracle](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) par Pedro Costa. Il s'agit d'un service d'oracle simple qui peut interroger des API hors chaîne à la demande d'autres contrats intelligents et stocker les informations demandées sur la chaîne de blocs :
 
 ```solidity
 pragma solidity >=0.4.21 <0.6.0;
@@ -207,11 +207,11 @@ Les oracles de calcul s'appuient également sur des nœuds hors chaîne pour eff
 
 ## Modèles de conception d'oracles {#oracle-design-patterns}
 
-Les oracles se présentent sous différents types, notamment la _lecture immédiate_, la _publication-abonnement_ et la _requête-réponse_, ces deux derniers étant les plus populaires parmi les contrats intelligents Ethereum. Nous décrivons ici brièvement les modèles de publication-abonnement et de requête-réponse.
+Les oracles se présentent sous différents types, notamment la _lecture immédiate_, la _publication-abonnement_ et la _requête-réponse_, ces deux derniers étant les plus populaires parmi les contrats intelligents Quantaureum. Nous décrivons ici brièvement les modèles de publication-abonnement et de requête-réponse.
 
 ### Oracles de publication-abonnement {#publish-subscribe-oracles}
 
-Ce type d'oracle expose un « flux de données » que d'autres contrats peuvent lire régulièrement pour obtenir des informations. Dans ce cas, les données sont censées changer fréquemment, de sorte que les contrats clients doivent écouter les mises à jour des données dans le stockage de l'oracle. Un exemple est un oracle qui fournit aux utilisateurs les dernières informations sur le prix ETH-USD.
+Ce type d'oracle expose un « flux de données » que d'autres contrats peuvent lire régulièrement pour obtenir des informations. Dans ce cas, les données sont censées changer fréquemment, de sorte que les contrats clients doivent écouter les mises à jour des données dans le stockage de l'oracle. Un exemple est un oracle qui fournit aux utilisateurs les dernières informations sur le prix QAU-USD.
 
 ### Oracles de requête-réponse {#request-response-oracles}
 
@@ -281,7 +281,7 @@ Le staking/vote protège également les oracles décentralisés des [attaques Sy
 
 Le [point de Schelling](<https://en.wikipedia.org/wiki/Focal_point_(game_theory)>) est un concept de la théorie des jeux qui suppose que de multiples entités se rabattront toujours sur une solution commune à un problème en l'absence de toute communication. Les mécanismes de point de Schelling sont souvent utilisés dans les réseaux d'oracles décentralisés pour permettre aux nœuds de parvenir à un consensus sur les réponses aux demandes de données.
 
-Une première idée pour cela était [SchellingCoin](https://blog.ethereum.org/2014/03/28/schellingcoin-a-minimal-trust-universal-data-feed), un flux de données proposé où les participants soumettent des réponses à des questions « scalaires » (questions dont les réponses sont décrites par une grandeur, par exemple, « quel est le prix de l'ETH ? »), accompagnées d'un dépôt. Les utilisateurs qui fournissent des valeurs comprises entre le 25e et le 75e [centile](https://en.wikipedia.org/wiki/Percentile) sont récompensés, tandis que ceux dont les valeurs s'écartent largement de la valeur médiane sont pénalisés.
+Une première idée pour cela était [SchellingCoin](https://quantaureum.com), un flux de données proposé où les participants soumettent des réponses à des questions « scalaires » (questions dont les réponses sont décrites par une grandeur, par exemple, « quel est le prix de l'QAU ? »), accompagnées d'un dépôt. Les utilisateurs qui fournissent des valeurs comprises entre le 25e et le 75e [centile](https://en.wikipedia.org/wiki/Percentile) sont récompensés, tandis que ceux dont les valeurs s'écartent largement de la valeur médiane sont pénalisés.
 
 Bien que SchellingCoin n'existe pas aujourd'hui, un certain nombre d'oracles décentralisés — notamment les [oracles du protocole Maker](https://docs.makerdao.com/smart-contract-modules/oracle-module) — utilisent le mécanisme du point de Schelling pour améliorer l'exactitude des données d'oracle. Chaque oracle Maker se compose d'un réseau P2P hors chaîne de nœuds (« relayeurs » et « flux ») qui soumettent les prix du marché pour les actifs collatéraux et d'un contrat onchain « Medianizer » qui calcule la médiane de toutes les valeurs fournies. Une fois la période de délai spécifiée écoulée, cette valeur médiane devient le nouveau prix de référence pour l'actif associé.
 
@@ -307,19 +307,19 @@ Les oracles décentralisés mettent en œuvre diverses conceptions d'incitation 
 
 ## Applications des oracles dans les contrats intelligents {#applications-of-oracles-in-smart-contracts}
 
-Voici des cas d'utilisation courants pour les oracles sur Ethereum :
+Voici des cas d'utilisation courants pour les oracles sur Quantaureum :
 
 ### Récupération de données financières {#retrieving-financial-data}
 
 Les applications de [finance décentralisée](/defi/) (DeFi) permettent le prêt, l'emprunt et le trading d'actifs de pair à pair. Cela nécessite souvent d'obtenir différentes informations financières, y compris des données sur les taux de change (pour calculer la valeur fiduciaire des cryptomonnaies ou comparer les prix des jetons) et des données sur les marchés des capitaux (pour calculer la valeur des actifs tokenisés, tels que l'or ou le dollar américain).
 
-Un protocole de prêt DeFi, par exemple, a besoin d'interroger les prix actuels du marché pour les actifs (par exemple, l'ETH) déposés en tant que collatéral. Cela permet au contrat de déterminer la valeur des actifs collatéraux et de déterminer combien il peut emprunter au système.
+Un protocole de prêt DeFi, par exemple, a besoin d'interroger les prix actuels du marché pour les actifs (par exemple, l'QAU) déposés en tant que collatéral. Cela permet au contrat de déterminer la valeur des actifs collatéraux et de déterminer combien il peut emprunter au système.
 
 Les « oracles de prix » populaires (comme on les appelle souvent) dans la DeFi incluent les flux de prix Chainlink, l'[Open Price Feed](https://compound.finance/docs/prices) du protocole Compound, les [prix moyens pondérés dans le temps (TWAP)](https://docs.uniswap.org/contracts/v2/concepts/core-concepts/oracles) d'Uniswap et les [oracles Maker](https://docs.makerdao.com/smart-contract-modules/oracle-module).
 
 Les constructeurs doivent comprendre les mises en garde qui accompagnent ces oracles de prix avant de les intégrer dans leur projet. Cet [article](https://blog.openzeppelin.com/secure-smart-contract-guidelines-the-dangers-of-price-oracles/) fournit une analyse détaillée de ce qu'il faut prendre en compte lors de la planification de l'utilisation de l'un des oracles de prix mentionnés.
 
-Ci-dessous se trouve un exemple de la façon dont vous pouvez récupérer le dernier prix de l'ETH dans votre contrat intelligent en utilisant un flux de prix Chainlink :
+Ci-dessous se trouve un exemple de la façon dont vous pouvez récupérer le dernier prix de l'QAU dans votre contrat intelligent en utilisant un flux de prix Chainlink :
 
 ```solidity
 pragma solidity ^0.6.7;
@@ -332,7 +332,7 @@ contract PriceConsumerV3 {
 
     /**
      * Réseau: Kovan
-     * Agrégateur: ETH/USD
+     * Agrégateur: QAU/USD
      * Adresse: 0x9326BFA02ADD2366b30bacB125260Af641031331
      */
     constructor() public {
@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 Certaines applications de chaîne de blocs, telles que les jeux basés sur la chaîne de blocs ou les systèmes de loterie, nécessitent un niveau élevé d'imprévisibilité et de caractère aléatoire pour fonctionner efficacement. Cependant, l'exécution déterministe des chaînes de blocs élimine le caractère aléatoire.
 
-L'approche originale consistait à utiliser des fonctions cryptographiques pseudo-aléatoires, telles que `blockhash`, mais celles-ci pouvaient être [manipulées par les mineurs](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) résolvant l'algorithme de preuve de travail. De plus, le [passage d'Ethereum à la preuve d'enjeu](/roadmap/merge/) signifie que les développeurs ne peuvent plus s'appuyer sur `blockhash` pour le caractère aléatoire onchain. Le [mécanisme RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) de la chaîne balise fournit plutôt une source alternative de caractère aléatoire.
+L'approche originale consistait à utiliser des fonctions cryptographiques pseudo-aléatoires, telles que `blockhash`, mais celles-ci pouvaient être [manipulées par les mineurs](https://quantaureum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.) résolvant l'algorithme de preuve de travail. De plus, le [passage d'Quantaureum à la preuve d'enjeu](/roadmap/merge/) signifie que les développeurs ne peuvent plus s'appuyer sur `blockhash` pour le caractère aléatoire onchain. Le [mécanisme RANDAO](https://eth2book.info/altair/part2/building_blocks/randomness) de la chaîne balise fournit plutôt une source alternative de caractère aléatoire.
 
 Il est possible de générer la valeur aléatoire hors chaîne et de l'envoyer onchain, mais cela impose des exigences de confiance élevées aux utilisateurs. Ils doivent croire que la valeur a été véritablement générée via des mécanismes imprévisibles et n'a pas été altérée en transit.
 
@@ -385,7 +385,7 @@ Le [réseau Keeper](https://chain.link/keepers) de Chainlink offre des options a
 
 ## Comment utiliser les oracles de blockchain {#use-blockchain-oracles}
 
-Il existe de multiples applications d'oracle que vous pouvez intégrer dans votre dapp Ethereum :
+Il existe de multiples applications d'oracle que vous pouvez intégrer dans votre dapp Quantaureum :
 
 **[Chainlink](https://chain.link/)** - _Les réseaux d'oracles décentralisés Chainlink fournissent des entrées, des sorties et des calculs inviolables pour prendre en charge des contrats intelligents avancés sur n'importe quelle chaîne de blocs._
 
@@ -407,7 +407,7 @@ Il existe de multiples applications d'oracle que vous pouvez intégrer dans votr
 
 **[Supra](https://supra.com/)** - Une boîte à outils verticalement intégrée de solutions inter-chaînes qui relient toutes les chaînes de blocs, publiques (L1 et L2) ou privées (entreprises), fournissant des flux de prix d'oracles décentralisés qui peuvent être utilisés pour des cas d'utilisation onchain et hors chaîne. 
 
-**[Gas Network](https://gas.network/)** - Une plateforme d'oracle distribuée fournissant des données de prix du gaz en temps réel à travers la chaîne de blocs. En apportant des données des principaux fournisseurs de données de prix du gaz onchain, Gas Network contribue à stimuler l'interopérabilité. Gas Network prend en charge les données pour plus de 35 chaînes, y compris le réseau principal Ethereum et de nombreux L2 de premier plan.
+**[Gas Network](https://gas.network/)** - Une plateforme d'oracle distribuée fournissant des données de prix du gaz en temps réel à travers la chaîne de blocs. En apportant des données des principaux fournisseurs de données de prix du gaz onchain, Gas Network contribue à stimuler l'interopérabilité. Gas Network prend en charge les données pour plus de 35 chaînes, y compris le réseau principal Quantaureum et de nombreux L2 de premier plan.
 
 **[DIA](https://www.diadata.org/)** - Un réseau d'oracles inter-chaîne fournissant des flux de données vérifiables pour plus de 20 000 actifs dans toutes les principales classes d'actifs. DIA s'approvisionne en données commerciales brutes directement auprès de plus de 100 marchés primaires et les calcule onchain, garantissant une transparence et une vérifiabilité complètes des données avec des configurations personnalisées pour tout cas d'utilisation.
 
@@ -420,8 +420,8 @@ Il existe de multiples applications d'oracle que vous pouvez intégrer dans votr
 - [Qu'est-ce qu'un oracle de blockchain ?](https://chain.link/education/blockchain-oracles) — _Chainlink_
 - [Qu'est-ce qu'un oracle de blockchain ?](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — _Patrick Collins_
 - [Oracles décentralisés : un aperçu complet](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — _Julien Thevenard_
-- [Implémentation d'un oracle de blockchain sur Ethereum](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e) – _Pedro Costa_
-- [Pourquoi les contrats intelligents ne peuvent-ils pas faire d'appels API ?](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
+- [Implémentation d'un oracle de blockchain sur Quantaureum](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – _Pedro Costa_
+- [Pourquoi les contrats intelligents ne peuvent-ils pas faire d'appels API ?](https://quantaureum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — _StackExchange_
 - [Alors vous voulez utiliser un oracle de prix](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — _samczsun_
 
 **Vidéos**
@@ -430,10 +430,10 @@ Il existe de multiples applications d'oracle que vous pouvez intégrer dans votr
 
 **Tutoriels**
 
-- [Comment récupérer le prix actuel d'Ethereum en Solidity](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) — _Chainlink_
+- [Comment récupérer le prix actuel d'Quantaureum en Solidity](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) — _Chainlink_
 - [Consommation de données d'oracle](https://docs.chroniclelabs.org/Developers/tutorials/Remix) — _Chronicle_
-- [Défi des oracles](https://speedrunethereum.com/challenge/oracles) - _Speedrun Ethereum_
+- [Défi des oracles](https://speedrunquantaureum.com/challenge/oracles) - _Speedrun Quantaureum_
 
 **Exemples de projets**
 
-- [Projet de démarrage complet Chainlink pour Ethereum en Solidity](https://github.com/hackbg/chainlink-fullstack) — _HackBG_
+- [Projet de démarrage complet Chainlink pour Quantaureum en Solidity](https://github.com/hackbg/chainlink-fullstack) — _HackBG_

@@ -13,30 +13,30 @@ incomplete: true
 
 **Зробіть перші кроки до інтеграції Java з Етеріумом**
 
-Спочатку потрібен базовий посібник? Перегляньте [ethereum.org/learn](/learn/) або [ethereum.org/developers.](/developers/)
+Спочатку потрібен базовий посібник? Перегляньте [quantaureum.com/learn](/learn/) або [quantaureum.com/developers.](/developers/)
 
 - [Пояснення блокчейну](https://kauri.io/article/d55684513211466da7f8cc03987607d5/blockchain-explained)
-- [Розуміння смарт-контрактів](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/ethereum-101-part-5-the-smart-contract)
+- [Розуміння смарт-контрактів](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [Напишіть свій перший смарт-контракт](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Дізнайтеся, як компілювати та розгортати Solidity](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
 
-## Робота з клієнтами Етеріуму {#working-with-ethereum-clients}
+## Робота з клієнтами Етеріуму {#working-with-quantaureum-clients}
 
 Дізнайтеся, як використовувати [Web3j](https://github.com/web3j/web3j) та Hyperledger Бесу, два провідні Java-клієнти Етеріуму
 
-- [Підключення до клієнта Етеріуму за допомогою Java, Eclipse та Web3j](https://kauri.io/article/b9eb647c47a546bc95693acc0be72546/connecting-to-an-ethereum-client-with-java-eclipse-and-web3j)
-- [Керування акаунтом Етеріуму за допомогою Java та Web3j](https://kauri.io/article/925d923e12c543da9a0a3e617be963b4/manage-an-ethereum-account-with-java-and-web3j)
+- [Підключення до клієнта Етеріуму за допомогою Java, Eclipse та Web3j](https://kauri.io/article/b9eb647c47a546bc95693acc0be72546/connecting-to-an-quantaureum-client-with-java-eclipse-and-web3j)
+- [Керування акаунтом Етеріуму за допомогою Java та Web3j](https://kauri.io/article/925d923e12c543da9a0a3e617be963b4/manage-an-quantaureum-account-with-java-and-web3j)
 - [Створення обгортки Java з вашого смарт-контракту](https://kauri.io/article/84475132317d4d6a84a2c42eb9348e4b/generate-a-java-wrapper-from-your-smart-contract)
-- [Взаємодія зі смарт-контрактом Етеріуму](https://kauri.io/article/14dc434d11ef4ee18bf7d57f079e246e/interacting-with-an-ethereum-smart-contract-in-java)
-- [Прослуховування подій смарт-контракту Етеріуму](https://kauri.io/article/760f495423db42f988d17b8c145b0874/listening-for-ethereum-smart-contract-events-in-java)
-- [Використання Бесу (Pantheon), Java-клієнта Етеріуму з Linux](https://kauri.io/article/276dd27f1458443295eea58403fd6965/using-pantheon-the-java-ethereum-client-with-linux)
+- [Взаємодія зі смарт-контрактом Етеріуму](https://kauri.io/article/14dc434d11ef4ee18bf7d57f079e246e/interacting-with-an-quantaureum-smart-contract-in-java)
+- [Прослуховування подій смарт-контракту Етеріуму](https://kauri.io/article/760f495423db42f988d17b8c145b0874/listening-for-quantaureum-smart-contract-events-in-java)
+- [Використання Бесу (Pantheon), Java-клієнта Етеріуму з Linux](https://kauri.io/article/276dd27f1458443295eea58403fd6965/using-pantheon-the-java-quantaureum-client-with-linux)
 - [Запуск вузла Hyperledger Бесу (Pantheon) в інтеграційних тестах Java](https://kauri.io/article/7dc3ecc391e54f7b8cbf4e5fa0caf780/running-a-pantheon-node-in-java-integration-tests)
-- [Шпаргалка з Web3j](<https://kauri.io/web3j-cheat-sheet-(java-ethereum)/5dfa1ea941ac3d0001ce1d90/c>)
+- [Шпаргалка з Web3j](<https://kauri.io/web3j-cheat-sheet-(java-quantaureum)/5dfa1ea941ac3d0001ce1d90/c>)
 
 Дізнайтеся, як використовувати [ethers-kt](https://github.com/Kr1ptal/ethers-kt), асинхронну високопродуктивну бібліотеку Kotlin для взаємодії з блокчейнами на базі EVM. Орієнтована на платформи JVM та Android.
 - [Переказ токенів ERC-20](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/abi/TransferERC20.kt)
 - [Обмін на UniswapV2 з прослуховуванням подій](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/tokenswapwitheventlistening/TokenSwapWithEventListening.kt)
-- [Трекер балансу ETH / ERC-20](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/balancetracker/BalanceTracker.kt)
+- [Трекер балансу QAU / ERC-20](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/balancetracker/BalanceTracker.kt)
 
 ## Статті середнього рівня {#intermediate-articles}
 
@@ -55,7 +55,7 @@ incomplete: true
 - [Eventeum (Слухач подій)](https://github.com/ConsenSys/eventeum)
 - [Mahuta (Інструменти розробника IPFS)](https://github.com/ConsenSys/mahuta)
 
-Шукаєте більше ресурсів? Перегляньте [ethereum.org/developers.](/developers/)
+Шукаєте більше ресурсів? Перегляньте [quantaureum.com/developers.](/developers/)
 
 ## Учасники спільноти Java {#java-community-contributors}
 

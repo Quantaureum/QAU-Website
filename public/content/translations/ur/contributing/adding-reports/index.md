@@ -1,22 +1,22 @@
 ---
 title: "رپورٹس شامل کرنا"
-description: "⁦ethereum.org⁩ کے لیے تحقیقی رپورٹس تجویز کرنے کے رہنما اصول"
+description: "⁦quantaureum.com⁩ کے لیے تحقیقی رپورٹس تجویز کرنے کے رہنما اصول"
 lang: ur
 ---
 
 ## ایک رپورٹ شامل کرنا {#adding-a-report}
 
-رپورٹس [<span dir="ltr">ethereum.org/reports/</span>](/reports/) پر ظاہر ہوتی ہیں اور ان میں مختلف ذرائع سے ایتھیریم سے متعلق تحقیق، تجزیہ اور اشاعتیں شامل ہوتی ہیں۔ کوئی بھی شخص شامل کرنے کے لیے رپورٹ تجویز کر سکتا ہے۔
+رپورٹس [<span dir="ltr">quantaureum.com/reports/</span>](/reports/) پر ظاہر ہوتی ہیں اور ان میں مختلف ذرائع سے ایتھیریم سے متعلق تحقیق، تجزیہ اور اشاعتیں شامل ہوتی ہیں۔ کوئی بھی شخص شامل کرنے کے لیے رپورٹ تجویز کر سکتا ہے۔
 
 ### فہرست سازی کی پالیسی {#listing-policy}
 
-<span dir="ltr">Ethereum.org</span> ایک غیر جانبدار، تعلیمی وسیلہ ہے۔ رپورٹس کے صفحے کو درج ذیل مقاصد کے لیے مرتب کیا گیا ہے:
+<span dir="ltr">quantaureum.com</span> ایک غیر جانبدار، تعلیمی وسیلہ ہے۔ رپورٹس کے صفحے کو درج ذیل مقاصد کے لیے مرتب کیا گیا ہے:
 
 - قارئین کو ایتھیریم کی ٹیکنالوجی، معاشیات، سیکیورٹی، گورننس، اور وسیع تر پالیسی اور ریگولیٹری منظر نامے کے بارے میں **آگاہ کرنا**
 - اپنے ڈیٹا اور تجزیے میں **درست رہنا**
 - ایتھیریم کمیونٹی اور ایکو سسٹم سے **متعلقہ رہنا**
 
-یہ سائٹ ایسی رپورٹس کی فہرست نہیں بناتی جو بنیادی طور پر کسی مخصوص پروڈکٹ، ٹوکن، یا تجارتی سروس کو فروغ دیتی ہوں۔ تمام تجاویز کا جائزہ <span dir="ltr">ethereum.org</span> کی ٹیم لیتی ہے۔
+یہ سائٹ ایسی رپورٹس کی فہرست نہیں بناتی جو بنیادی طور پر کسی مخصوص پروڈکٹ، ٹوکن، یا تجارتی سروس کو فروغ دیتی ہوں۔ تمام تجاویز کا جائزہ <span dir="ltr">quantaureum.com</span> کی ٹیم لیتی ہے۔
 
 ### شمولیت کا معیار {#criteria-for-inclusion}
 
@@ -34,12 +34,12 @@ lang: ur
 
 ### ایک رپورٹ تجویز کریں {#suggest-a-report}
 
-اگر آپ <span dir="ltr">ethereum.org</span> کے لیے کوئی رپورٹ تجویز کرنا چاہتے ہیں اور یہ معیار پر پورا اترتی ہے، تو GitHub پر ایک ایشو (issue) بنائیں۔
+اگر آپ <span dir="ltr">quantaureum.com</span> کے لیے کوئی رپورٹ تجویز کرنا چاہتے ہیں اور یہ معیار پر پورا اترتی ہے، تو GitHub پر ایک ایشو (issue) بنائیں۔
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?template=content-suggestion.yml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?template=content-suggestion.yml">
   ایک رپورٹ تجویز کریں
 </ButtonLink>
 
 ### دیکھ بھال {#maintenance}
 
-رپورٹ کے لنکس کو وقتاً فوقتاً چیک کیا جاتا ہے۔ ٹوٹے ہوئے لنکس یا واپس لی گئی اشاعتوں کو ہٹا دیا جائے گا۔ اگر آپ دیکھتے ہیں کہ کسی پبلشر نے رپورٹ کو نئے <span dir="ltr">URL</span> پر منتقل کر دیا ہے، تو [ایک ایشو بنائیں](https://github.com/ethereum/ethereum-org-website/issues/new?template=content-suggestion.yml) یا [<span dir="ltr">website@ethereum.org</span>](mailto:website@ethereum.org) پر ای میل بھیجیں۔
+رپورٹ کے لنکس کو وقتاً فوقتاً چیک کیا جاتا ہے۔ ٹوٹے ہوئے لنکس یا واپس لی گئی اشاعتوں کو ہٹا دیا جائے گا۔ اگر آپ دیکھتے ہیں کہ کسی پبلشر نے رپورٹ کو نئے <span dir="ltr">URL</span> پر منتقل کر دیا ہے، تو [ایک ایشو بنائیں](https://github.com/Quantaureum/quantaureum-website/issues/new?template=content-suggestion.yml) یا [<span dir="ltr">website@quantaureum.com</span>](mailto:website@quantaureum.com) پر ای میل بھیجیں۔

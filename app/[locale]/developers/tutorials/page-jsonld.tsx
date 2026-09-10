@@ -40,8 +40,8 @@ export default async function TutorialsPageJsonLD({
         url,
         inLanguage: locale,
         contributor: contributorList,
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
@@ -65,8 +65,8 @@ export default async function TutorialsPageJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        reviewedBy: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
         mainEntity: { "@id": `${url}#tutorials` },
       },
       {
@@ -91,20 +91,20 @@ export default async function TutorialsPageJsonLD({
                   ? tutorial.description.slice(0, 57) + "..."
                   : tutorial.description,
               url: normalizeUrlForJsonLd(locale, tutorial.href),
-              provider: REFERENCE.ETHEREUM_FOUNDATION,
+              provider: REFERENCE.QUANTAUREUM_FOUNDATION,
               courseMode: "online",
               educationalLevel: tutorial.skill ?? "beginner",
               inLanguage: locale,
               isAccessibleForFree: true,
               about: [
-                "Ethereum Development",
+                "Quantaureum Development",
                 "Smart Contracts",
                 "Blockchain Programming",
                 "Web3",
               ],
             },
           })),
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
       },
     ],
   }

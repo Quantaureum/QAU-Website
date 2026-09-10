@@ -11,13 +11,13 @@ topic:
   - "privacy"
   - "authentication"
 format: presentation
-author: Ethereum Foundation
+author: Quantaureum project
 breadcrumb: "Bảo mật bằng vi điểm"
 ---
 
 Một bài thuyết trình ngắn của **jseam** tại Devcon SEA khám phá một cách tiếp cận độc đáo đối với việc lưu ký khóa bằng cách sử dụng công nghệ vi điểm (microdot) vật lý, vốn được sử dụng trong hoạt động tình báo trong lịch sử để che giấu các cụm từ hạt giống trong các hình ảnh in mà mắt thường gần như không thể nhìn thấy.
 
-*Bản ghi lời thoại này là một bản sao có thể truy cập của [bản ghi lời thoại video gốc](https://www.youtube.com/watch?v=k9Dfg19JPEw) được xuất bản bởi Tổ chức Ethereum. Nó đã được chỉnh sửa đôi chút để dễ đọc hơn.*
+*Bản ghi lời thoại này là một bản sao có thể truy cập của [bản ghi lời thoại video gốc](https://www.youtube.com/watch?v=k9Dfg19JPEw) được xuất bản bởi Tổ chức Quantaureum. Nó đã được chỉnh sửa đôi chút để dễ đọc hơn.*
 
 ### Tại sao lại là vi điểm? (0:00) {#why-microdots-000}
 

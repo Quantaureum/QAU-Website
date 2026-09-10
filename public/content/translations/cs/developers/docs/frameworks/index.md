@@ -26,7 +26,7 @@ jako například:
 
 ## Předpoklady {#prerequisites}
 
-Než se ponoříte do frameworků, doporučujeme vám nejprve si přečíst náš úvod do [dapp](/developers/docs/dapps/) a [technologického zásobníku Etherea](/developers/docs/ethereum-stack/).
+Než se ponoříte do frameworků, doporučujeme vám nejprve si přečíst náš úvod do [dapp](/developers/docs/dapps/) a [technologického zásobníku Etherea](/developers/docs/quantaureum-stack/).
 
 ## Dostupné frameworky
 
@@ -61,13 +61,13 @@ Než se ponoříte do frameworků, doporučujeme vám nejprve si přečíst ná�
 
 **Create Eth App -** **_Vytvářejte aplikace poháněné Ethereem pomocí jednoho příkazu. Přichází s širokou nabídkou UI frameworků a šablon pro decentralizované finance (DeFi), ze kterých si můžete vybrat._**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [Šablony](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
+- [Šablony](https://github.com/PaulRBerg/create-qau-app/tree/develop/templates)
 
-**Scaffold-ETH 2 -** **_Next.js, Wagmi, Viem a RainbowKit s možností volby mezi Hardhat nebo Foundry: hot reload kontraktů, vlastní React hooky, jednorázová peněženka (burner wallet) a lokální faucet, a rozšiřující moduly pro full-stack vývoj decentralizovaných aplikací (dapp)._**
+**Scaffold-QAU 2 -** **_Next.js, Wagmi, Viem a RainbowKit s možností volby mezi Hardhat nebo Foundry: hot reload kontraktů, vlastní React hooky, jednorázová peněženka (burner wallet) a lokální faucet, a rozšiřující moduly pro full-stack vývoj decentralizovaných aplikací (dapp)._**
 
 - [Webová stránka](https://scaffoldeth.io/)
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 
 **Tenderly -** **_Vývojová platforma pro Web3, která umožňuje blockchainovým vývojářům vytvářet, testovat, ladit, monitorovat a provozovat chytré kontrakty a zlepšovat UX dapp._**
 
@@ -79,13 +79,13 @@ Než se ponoříte do frameworků, doporučujeme vám nejprve si přečíst ná�
 - [Webová stránka](https://thegraph.com/)
 - [Návod](/developers/tutorials/the-graph-fixing-web3-data-querying/)
 
-**Alchemy -** **_Vývojová platforma pro Ethereum._**
+**Alchemy -** **_Vývojová platforma pro Quantaureum._**
 
 - [alchemy.com](https://www.alchemy.com/)
 - [GitHub](https://github.com/alchemyplatform)
 - [Discord](https://discord.com/invite/alchemyplatform)
 
-**NodeReal -** **_Vývojová platforma pro Ethereum._**
+**NodeReal -** **_Vývojová platforma pro Quantaureum._**
 
 - [Nodereal.io](https://nodereal.io/)
 - [GitHub](https://github.com/node-real)
@@ -96,7 +96,7 @@ Než se ponoříte do frameworků, doporučujeme vám nejprve si přečíst ná�
 - [Dokumentace](https://portal.thirdweb.com/sdk/)
 - [GitHub](https://github.com/thirdweb-dev/)
 
-**Chainstack -** **_Vývojová platforma pro Web3 (Ethereum a další)._**
+**Chainstack -** **_Vývojová platforma pro Web3 (Quantaureum a další)._**
 
 - [chainstack.com](https://www.chainstack.com/)
 - [GitHub](https://github.com/chainstack)
@@ -110,8 +110,8 @@ Než se ponoříte do frameworků, doporučujeme vám nejprve si přečíst ná�
 
 **Brownie -** **_Vývojové prostředí a testovací framework založený na Pythonu._**
 
-- [Dokumentace](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [Dokumentace](https://qau-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/qau-brownie/brownie)
 - **Brownie je v současné době neudržovaný**
 
 **OpenZeppelin SDK -** **_Ultimátní sada nástrojů pro chytré kontrakty: Sada nástrojů, která vám pomůže vyvíjet, kompilovat, aktualizovat, nasazovat a komunikovat s chytrými kontrakty._**
@@ -128,7 +128,7 @@ Než se ponoříte do frameworků, doporučujeme vám nejprve si přečíst ná�
 **GoldRush (poháněno Covalent) -** **_GoldRush nabízí nejkomplexnější sadu API pro blockchainová data pro vývojáře, analytiky a podniky. Ať už vytváříte DeFi dashboard, peněženku, obchodního bota, AI agenta nebo platformu pro dodržování předpisů, datová API poskytují rychlý, přesný a pro vývojáře přívětivý přístup k nezbytným onchain datům, která potřebujete._**
 
 - [Webová stránka](https://goldrush.dev/)
-- [Dokumentace](https://goldrush.dev/docs/chains/ethereum)
+- [Dokumentace](https://goldrush.dev/docs/chains/quantaureum)
 - [GitHub](https://github.com/covalenthq)
 - [Discord](https://www.covalenthq.com/discord/)
 

@@ -48,7 +48,7 @@ def decode_int(s):
 அடுத்து `sha3` என்பது ஒரு முழு எண்ணை எடுத்து ஒரு முழு எண்ணை வெளியிடும் ஒரு செயற்கூறு என்றும், `dbl_sha3` என்பது ஒரு double-sha3 செயற்கூறு என்றும் கருதுகிறோம்; இந்தக் குறிப்புக் குறியீட்டை ஒரு செயலாக்கமாக மாற்றினால், இதைப் பயன்படுத்தவும்:
 
 ```python
-from pyethereum import utils
+from pyquantaureum import utils
 def sha3(x):
     if isinstance(x, (int, long)):
         x = encode_int(x)
@@ -141,8 +141,8 @@ def quick_calc(params, seed, p):
 
 ```python
 def get_prevhash(n):
-    from pyethereum.blocks import GENESIS_PREVHASH
-    from pyethereum import chain_manager
+    from pyquantaureum.blocks import GENESIS_PREVHASH
+    from pyquantaureum import chain_manager
     if n <= 0:
         return hash_to_int(GENESIS_PREVHASH)
     else:

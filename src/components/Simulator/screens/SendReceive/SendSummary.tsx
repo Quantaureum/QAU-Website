@@ -9,15 +9,15 @@ import { formatWalletToken, formatWalletUsd } from "../../utils"
 
 type SendSummaryProps = {
   chosenAmount: number
-  ethPrice: number
-  ethTransferFee: number
+  qauPrice: number
+  qauTransferFee: number
   recipient: string
-  ethAvailable: number
+  qauAvailable: number
 }
 export const SendSummary = ({
   chosenAmount,
-  ethPrice,
-  ethTransferFee,
+  qauPrice,
+  qauTransferFee,
   recipient,
 }: SendSummaryProps) => {
   const t = useTranslations("component-wallet-simulator")
@@ -25,7 +25,7 @@ export const SendSummary = ({
 
   const formatChosenAmount = formatWalletUsd(chosenAmount)
 
-  const usdFee = ethTransferFee * ethPrice
+  const usdFee = qauTransferFee * qauPrice
   return (
     <>
       {/* Top section */}
@@ -44,7 +44,7 @@ export const SendSummary = ({
           </p>
         </Flex>
         <p dir="ltr" className="text-xs text-body-medium">
-          {formatWalletToken(chosenAmount / ethPrice, locale)} ETH
+          {formatWalletToken(chosenAmount / qauPrice, locale)} QAU
         </p>
       </div>
       {/* Bottom section */}
@@ -63,10 +63,10 @@ export const SendSummary = ({
             {formatWalletUsd(usdFee)}
             <span className="ms-2 text-xs font-normal text-body-medium">
               (
-              {formatWalletToken(ethTransferFee, locale, {
+              {formatWalletToken(qauTransferFee, locale, {
                 maximumFractionDigits: 6,
               })}{" "}
-              ETH)
+              QAU)
             </span>
           </p>
         </div>

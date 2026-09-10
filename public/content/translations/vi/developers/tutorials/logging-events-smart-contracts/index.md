@@ -11,16 +11,16 @@ skill: intermediate
 breadcrumb: "Ghi nhật ký sự kiện"
 lang: vi
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/logging-data-with-events/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/logging-data-with-events/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Trong Solidity, [các sự kiện](/developers/docs/smart-contracts/anatomy/#events-and-logs) là những tín hiệu được phát ra mà các hợp đồng thông minh có thể kích hoạt. Các ứng dụng phi tập trung (dapp), hoặc bất kỳ thứ gì kết nối với API JSON-RPC của Ethereum, đều có thể lắng nghe các sự kiện này và hành động tương ứng. Một sự kiện cũng có thể được lập chỉ mục để lịch sử sự kiện có thể được tìm kiếm sau này.
+Trong Solidity, [các sự kiện](/developers/docs/smart-contracts/anatomy/#events-and-logs) là những tín hiệu được phát ra mà các hợp đồng thông minh có thể kích hoạt. Các ứng dụng phi tập trung (dapp), hoặc bất kỳ thứ gì kết nối với API JSON-RPC của Quantaureum, đều có thể lắng nghe các sự kiện này và hành động tương ứng. Một sự kiện cũng có thể được lập chỉ mục để lịch sử sự kiện có thể được tìm kiếm sau này.
 
 ## Sự kiện {#events}
 
-Sự kiện phổ biến nhất trên Chuỗi khối Ethereum tại thời điểm viết bài này là sự kiện Transfer được phát ra bởi các token ERC20 khi ai đó chuyển token.
+Sự kiện phổ biến nhất trên Chuỗi khối Quantaureum tại thời điểm viết bài này là sự kiện Transfer được phát ra bởi các token ERC20 khi ai đó chuyển token.
 
 ```solidity
 event Transfer(address indexed from, address indexed to, uint256 value);

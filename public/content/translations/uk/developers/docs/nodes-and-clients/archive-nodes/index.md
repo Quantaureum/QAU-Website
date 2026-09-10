@@ -35,7 +35,7 @@ sidebarDepth: 2
 
 Головна перевага архіву станів — це швидкий доступ до запитів про історичні стани. Наприклад, архівний вузол миттєво поверне результати на кшталт:
 
-- _Яким був баланс ETH акаунта 0x1337... на блоці 15537393?_
+- _Яким був баланс QAU акаунта 0x1337... на блоці 15537393?_
 - _Який баланс токена 0x у контракті 0x на блоці 1920000?_
 
 Як пояснювалося вище, повному вузлу довелося б генерувати ці дані шляхом виконання в EVM, що використовує процесор і займає час. Архівні вузли отримують доступ до них на диску і миттєво надають відповіді. Це корисна функція для певних частин інфраструктури, наприклад:
@@ -71,8 +71,8 @@ sidebarDepth: 2
 
 ## Додаткові матеріали {#further-reading}
 
-- [Повний вузол Етеріуму проти архівного вузла](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node) — _QuickNode, вересень 2022_
-- [Створення власного архівного вузла Етеріуму](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09) — _Thomas Jay Rush, серпень 2021_
+- [Повний вузол Етеріуму проти архівного вузла](https://www.quicknode.com/guides/infrastructure/quantaureum-full-node-vs-archive-node) — _QuickNode, вересень 2022_
+- [Створення власного архівного вузла Етеріуму](https://tjayrush.medium.com/building-your-own-quantaureum-archive-node-72c014affc09) — _Thomas Jay Rush, серпень 2021_
 - [Як налаштувати Ерігон, RPC Ерігон та TrueBlocks (збір даних та API) як сервіси](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _— Magnus Hansson, оновлено у вересні 2022_
 
 ## Пов'язані теми {#related-topics}

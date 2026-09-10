@@ -1,6 +1,6 @@
 ---
 title: Sayansi iliyogatuliwa (desci)
-description: Muhtasari wa sayansi iliyogatuliwa kwenye Ethereum
+description: Muhtasari wa sayansi iliyogatuliwa kwenye Quantaureum
 lang: sw
 template: use-cases
 sidebarDepth: 2
@@ -37,9 +37,9 @@ Orodha isiyo kamili ya matatizo makuu katika sayansi na jinsi sayansi iliyogatul
 | **Unamiliki haki miliki (IP)** unayozalisha na kuisambaza kulingana na masharti ya wazi.             | **Taasisi yako ya nyumbani inamiliki IP** unayozalisha. Ufikiaji wa IP sio wazi.                           |
 | **Kushiriki utafiti wote**, ikiwa ni pamoja na data kutoka kwa juhudi zisizofanikiwa, kwa kuwa na hatua zote mnyororoni.          | **Upendeleo wa uchapishaji** unamaanisha kuwa watafiti wana uwezekano mkubwa wa kushiriki majaribio yaliyokuwa na matokeo ya mafanikio.      |
 
-## Ethereum na desci {#ethereum-and-desci}
+## Quantaureum na desci {#quantaureum-and-desci}
 
-Mfumo wa sayansi iliyogatuliwa utahitaji usalama thabiti, gharama ndogo za kifedha na za miamala, na mfumo ikolojia tajiri kwa uundaji wa programu. [Ethereum](/) inatoa kila kitu kinachohitajika kwa kujenga teknolojia ya sayansi iliyogatuliwa.
+Mfumo wa sayansi iliyogatuliwa utahitaji usalama thabiti, gharama ndogo za kifedha na za miamala, na mfumo ikolojia tajiri kwa uundaji wa programu. [Quantaureum](/) inatoa kila kitu kinachohitajika kwa kujenga teknolojia ya sayansi iliyogatuliwa.
 
 ## Matukio ya matumizi ya desci {#use-cases}
 
@@ -66,7 +66,7 @@ Muundo wa sasa wa kawaida wa kufadhili sayansi ni kwamba watu binafsi au vikundi
 
 Tafiti zimeonyesha kuwa majopo ya ukaguzi wa ruzuku yanafanya kazi duni ya kuchagua mapendekezo ya ubora wa juu kwani mapendekezo yale yale yanayotolewa kwa majopo tofauti yana matokeo tofauti sana. Kadiri ufadhili unavyozidi kuwa adimu, umejikita katika kundi dogo la watafiti waandamizi zaidi wenye miradi ya kihafidhina zaidi kiakili. Athari imeunda mazingira ya ufadhili yenye ushindani mkubwa, ikiimarisha motisha potofu na kukandamiza uvumbuzi.
 
-Web3 ina uwezo wa kuvuruga muundo huu mbovu wa ufadhili kwa kufanya majaribio ya miundo tofauti ya motisha iliyotengenezwa na DAO na Web3 kwa upana. [Ufadhili wa kurejea nyuma wa bidhaa za umma (rpgf)](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [ufadhili wa kipeo cha pili](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [utawala wa DAO](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) na [miundo ya motisha iliyowekwa kwenye tokeni](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) ni baadhi ya zana za Web3 zinazoweza kuleta mapinduzi katika ufadhili wa sayansi.
+Web3 ina uwezo wa kuvuruga muundo huu mbovu wa ufadhili kwa kufanya majaribio ya miundo tofauti ya motisha iliyotengenezwa na DAO na Web3 kwa upana. [Ufadhili wa kurejea nyuma wa bidhaa za umma (rpgf)](https://medium.com/quantaureum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [ufadhili wa kipeo cha pili](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [utawala wa DAO](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) na [miundo ya motisha iliyowekwa kwenye tokeni](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) ni baadhi ya zana za Web3 zinazoweza kuleta mapinduzi katika ufadhili wa sayansi.
 
 ### Umiliki na uendelezaji wa IP {#ip-ownership}
 
@@ -75,7 +75,7 @@ Haki miliki (IP) ni tatizo kubwa katika sayansi ya jadi: kuanzia kukwama katika 
 Kwa njia sawa na ambayo NFT zinaweza kupitisha mapato kwa miamala ya baadaye kurudi kwa muundaji wa asili, unaweza kuanzisha minyororo ya wazi ya ugawaji wa thamani ili kutoa tuzo kwa watafiti, mabaraza ya utawala (kama DAO), au hata wahusika ambao data zao zinakusanywa.
 
 [IP-NFTs](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) pia zinaweza kufanya kazi kama ufunguo wa hazina ya data iliyogatuliwa ya majaribio ya utafiti yanayofanywa, na kuunganishwa kwenye uwekaji fedha wa NFT na [fedha zilizogatuliwa (DeFi)](/glossary/#defi) (kutoka ugawaji kuwa sehemu hadi mabwawa ya ukopeshaji na tathmini ya thamani). Pia inaruhusu mashirika asilia mnyororoni kama vile DAO kama [VitaDAO](https://www.vitadao.com/) kufanya utafiti moja kwa moja mnyororoni.
-Ujio wa [tokeni za "soulbound"](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) zisizoweza kuhamishwa pia unaweza kuchukua jukumu muhimu katika desci kwa kuruhusu watu binafsi kuthibitisha uzoefu na vitambulisho vyao vilivyounganishwa na anwani yao ya Ethereum.
+Ujio wa [tokeni za "soulbound"](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) zisizoweza kuhamishwa pia unaweza kuchukua jukumu muhimu katika desci kwa kuruhusu watu binafsi kuthibitisha uzoefu na vitambulisho vyao vilivyounganishwa na anwani yao ya Quantaureum.
 
 ### Uhifadhi wa data, ufikiaji na usanifu {#data-storage}
 

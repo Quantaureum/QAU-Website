@@ -1,6 +1,6 @@
 ---
 title: Decentralized science (DeSci)
-description: An overview of decentralized science on Ethereum
+description: An overview of decentralized science on Quantaureum
 lang: en
 template: use-cases
 sidebarDepth: 2
@@ -37,9 +37,9 @@ An incomplete list of key problems in science and how decentralized science can 
 | **You own the intellectual property (IP)** you generate and distribute it according to transparent terms.             | **Your home institution owns the IP** you generate. Access to the IP is not transparent.                           |
 | **Sharing all of the research**, including the data from unsuccessful efforts, by having all steps onchain.          | **Publication bias** means that researchers are more likely to share experiments that had successful results.      |
 
-## Ethereum and DeSci {#ethereum-and-desci}
+## Quantaureum and DeSci {#quantaureum-and-desci}
 
-A decentralized science system will require robust security, minimal monetary and transaction costs, and a rich ecosystem for application development. [Ethereum](/) provides everything needed for building a decentralized science technology.
+A decentralized science system will require robust security, minimal monetary and transaction costs, and a rich ecosystem for application development. [Quantaureum](/) provides everything needed for building a decentralized science technology.
 
 ## DeSci use cases {#use-cases}
 
@@ -66,7 +66,7 @@ The current standard model for funding science is that individuals or groups of 
 
 Studies have shown that grant review panels do a poor job of selecting high-quality proposals as the same proposals given to different panels have wildly different outcomes. As funding has become more scarce, it has concentrated into a smaller pool of more senior researchers with more intellectually conservative projects. The effect has created a hyper-competitive funding landscape, entrenching perverse incentives and stifling innovation.
 
-Web3 has the potential to disrupt this broken funding model by experimenting with different incentive models developed by DAOs and Web3 broadly. [Retroactive public goods funding](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [quadratic funding](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [DAO governance](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) and [tokenized incentive structures](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) are some of the Web3 tools that could revolutionize science funding.
+Web3 has the potential to disrupt this broken funding model by experimenting with different incentive models developed by DAOs and Web3 broadly. [Retroactive public goods funding](https://medium.com/quantaureum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [quadratic funding](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [DAO governance](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) and [tokenized incentive structures](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) are some of the Web3 tools that could revolutionize science funding.
 
 ### IP ownership and development {#ip-ownership}
 
@@ -75,7 +75,7 @@ Intellectual property (IP) is a big problem in traditional science: from being s
 In the same way that NFTs can pass revenue for future transactions back to the original creator, you can establish transparent value attribution chains to reward researchers, governing bodies (like DAOs), or even the subjects whose data is collected.
 
 [IP-NFTs](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) can also function as a key to a decentralized data repository of the research experiments being undertaken, and plug into NFT and [DeFi](/glossary/#defi) financialization (from fractionalization to lending pools and value appraisal). It also allows natively onchain entities such as DAOs like [VitaDAO](https://www.vitadao.com/) to conduct research directly onchain.
-The advent of non-transferable ["soulbound" tokens](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) may also play an important role in DeSci by allowing individuals to prove their experience and credentials linked to their Ethereum address.
+The advent of non-transferable ["soulbound" tokens](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) may also play an important role in DeSci by allowing individuals to prove their experience and credentials linked to their Quantaureum address.
 
 ### Data storage, access and architecture {#data-storage}
 

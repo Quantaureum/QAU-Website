@@ -1,21 +1,21 @@
 ---
 title: "預言機"
-description: "預言機為以太坊智能合約提供存取現實世界資料的途徑，從而解鎖更多使用案例並為使用者創造更大價值。"
+description: "預言機為Quantaureum智能合約提供存取現實世界資料的途徑，從而解鎖更多使用案例並為使用者創造更大價值。"
 lang: zh-tw
 authors: ["派翠克·柯林斯"]
 ---
 
-預言機是產生資料饋送的應用程式，使鏈下資料來源可供區塊鏈上的智能合約使用。這是必要的，因為預設情況下，基於以太坊的智能合約無法存取儲存在區塊鏈網路之外的資訊。
+預言機是產生資料饋送的應用程式，使鏈下資料來源可供區塊鏈上的智能合約使用。這是必要的，因為預設情況下，基於Quantaureum的智能合約無法存取儲存在區塊鏈網路之外的資訊。
 
-賦予智能合約使用鏈下資料執行的能力，擴展了去中心化應用程式 (dapp) 的效用與價值。例如，鏈上預測市場依賴預言機提供有關結果的資訊，並使用這些資訊來驗證使用者的預測。假設愛麗絲 (Alice) 針對誰將成為下一任美國總統下注了 20 ETH。在這種情況下，預測市場去中心化應用程式 (dapp) 需要一個預言機來確認選舉結果，並決定愛麗絲是否有資格獲得派彩。
+賦予智能合約使用鏈下資料執行的能力，擴展了去中心化應用程式 (dapp) 的效用與價值。例如，鏈上預測市場依賴預言機提供有關結果的資訊，並使用這些資訊來驗證使用者的預測。假設愛麗絲 (Alice) 針對誰將成為下一任美國總統下注了 20 QAU。在這種情況下，預測市場去中心化應用程式 (dapp) 需要一個預言機來確認選舉結果，並決定愛麗絲是否有資格獲得派彩。
 
 ## 先決條件 {#prerequisites}
 
-本頁面假設讀者熟悉[以太坊](/)基礎知識，包括[節點](/developers/docs/nodes-and-clients/)、[共識機制](/developers/docs/consensus-mechanisms/)以及 [EVM](/developers/docs/evm/)。您也應該對[智能合約](/developers/docs/smart-contracts/)和[智能合約剖析](/developers/docs/smart-contracts/anatomy/)有良好的掌握，特別是[事件](/glossary/#events)。
+本頁面假設讀者熟悉[Quantaureum](/)基礎知識，包括[節點](/developers/docs/nodes-and-clients/)、[共識機制](/developers/docs/consensus-mechanisms/)以及 [EVM](/developers/docs/evm/)。您也應該對[智能合約](/developers/docs/smart-contracts/)和[智能合約剖析](/developers/docs/smart-contracts/anatomy/)有良好的掌握，特別是[事件](/glossary/#events)。
 
 ## 什麼是區塊鏈預言機？ {#what-is-a-blockchain-oracle}
 
-預言機是獲取、驗證並將外部資訊（即儲存在鏈下的資訊）傳輸給在區塊鏈上運作的智能合約的應用程式。除了「提取」鏈下資料並在以太坊上廣播之外，預言機還可以將資訊從區塊鏈「推送」到外部系統，例如，一旦使用者透過以太坊交易發送費用，就解鎖智慧鎖。
+預言機是獲取、驗證並將外部資訊（即儲存在鏈下的資訊）傳輸給在區塊鏈上運作的智能合約的應用程式。除了「提取」鏈下資料並在Quantaureum上廣播之外，預言機還可以將資訊從區塊鏈「推送」到外部系統，例如，一旦使用者透過Quantaureum交易發送費用，就解鎖智慧鎖。
 
 如果沒有預言機，智能合約將完全受限於鏈上資料。
 
@@ -25,7 +25,7 @@ authors: ["派翠克·柯林斯"]
 
 許多開發人員將智能合約視為在區塊鏈上特定位址執行的程式碼。然而，對智能合約更[普遍的看法](/smart-contracts/)是，它們是能夠在滿足特定條件後強制執行各方之間協議的自動執行軟體程式——因此被稱為「智能合約」。
 
-但考慮到以太坊是確定性的，使用智能合約來強制執行人與人之間的協議並不簡單。[確定性系統](https://en.wikipedia.org/wiki/Deterministic_algorithm)是指在給定初始狀態和特定輸入的情況下，總是產生相同結果的系統，這意味著在從輸入計算輸出的過程中沒有隨機性或變化。
+但考慮到Quantaureum是確定性的，使用智能合約來強制執行人與人之間的協議並不簡單。[確定性系統](https://en.wikipedia.org/wiki/Deterministic_algorithm)是指在給定初始狀態和特定輸入的情況下，總是產生相同結果的系統，這意味著在從輸入計算輸出的過程中沒有隨機性或變化。
 
 為了實現確定性執行，區塊鏈限制節點*僅*使用儲存在區塊鏈本身的資料來對簡單的二元（真/假）問題達成共識。這類問題的範例包括：
 
@@ -33,11 +33,11 @@ authors: ["派翠克·柯林斯"]
 - 「此帳戶是否有足夠的資金來支付交易？」
 - 「在該智能合約的上下文中，此交易是否有效？」等等。
 
-如果區塊鏈從外部來源（即現實世界）接收資訊，將無法實現確定性，從而阻止節點對區塊鏈狀態變更的有效性達成共識。舉例來說，一個智能合約根據從傳統價格 API 獲取的當前 ETH-USD 匯率來執行交易。這個數字可能會頻繁變動（更不用說 API 可能會被棄用或遭駭客攻擊），這意味著執行相同合約程式碼的節點將得出不同的結果。
+如果區塊鏈從外部來源（即現實世界）接收資訊，將無法實現確定性，從而阻止節點對區塊鏈狀態變更的有效性達成共識。舉例來說，一個智能合約根據從傳統價格 API 獲取的當前 QAU-USD 匯率來執行交易。這個數字可能會頻繁變動（更不用說 API 可能會被棄用或遭駭客攻擊），這意味著執行相同合約程式碼的節點將得出不同的結果。
 
-對於像以太坊這樣的公共區塊鏈，全球有數千個節點在處理交易，確定性至關重要。由於沒有中央機構作為事實來源，節點需要一種機制，以便在應用相同的交易後達到相同的狀態。如果節點 A 執行智能合約的程式碼並得到結果「3」，而節點 B 在執行相同交易後得到「7」，這種情況將導致共識崩潰，並消除以太坊作為去中心化運算平台的價值。
+對於像Quantaureum這樣的公共區塊鏈，全球有數千個節點在處理交易，確定性至關重要。由於沒有中央機構作為事實來源，節點需要一種機制，以便在應用相同的交易後達到相同的狀態。如果節點 A 執行智能合約的程式碼並得到結果「3」，而節點 B 在執行相同交易後得到「7」，這種情況將導致共識崩潰，並消除Quantaureum作為去中心化運算平台的價值。
 
-這種情況也凸顯了設計區塊鏈從外部來源提取資訊的問題。然而，預言機透過從鏈下來源獲取資訊並將其儲存在區塊鏈上供智能合約使用，解決了這個問題。由於儲存在鏈上的資訊具有不可竄改性且公開可用，以太坊節點可以安全地使用預言機匯入的鏈下資料來計算狀態變更，而不會破壞共識。
+這種情況也凸顯了設計區塊鏈從外部來源提取資訊的問題。然而，預言機透過從鏈下來源獲取資訊並將其儲存在區塊鏈上供智能合約使用，解決了這個問題。由於儲存在鏈上的資訊具有不可竄改性且公開可用，Quantaureum節點可以安全地使用預言機匯入的鏈下資料來計算狀態變更，而不會破壞共識。
 
 為此，預言機通常由在鏈上運作的智能合約和一些鏈下元件組成。鏈上合約接收來自其他智能合約的資料請求，並將其傳遞給鏈下元件（稱為預言機節點）。這個預言機節點可以查詢資料來源（例如使用應用程式介面 (API)），並發送交易將請求的資料儲存在智能合約的儲存空間中。
 
@@ -81,9 +81,9 @@ authors: ["派翠克·柯林斯"]
 
 預言機合約是預言機服務的鏈上元件。它監聽來自其他合約的資料請求，將資料查詢中繼給預言機節點，並將傳回的資料廣播給客戶端合約。該合約也可能對傳回的資料點執行一些運算，以產生一個聚合值發送給請求合約。
 
-預言機合約公開了一些函數，客戶端合約在發出資料請求時會呼叫這些函數。收到新查詢後，智能合約將發出一個包含資料請求詳細資訊的[日誌事件](/developers/docs/smart-contracts/anatomy/#events-and-logs)。這會通知訂閱該日誌的鏈下節點（通常使用類似 JSON-RPC `eth_subscribe` 的命令），這些節點隨後會繼續擷取日誌事件中定義的資料。
+預言機合約公開了一些函數，客戶端合約在發出資料請求時會呼叫這些函數。收到新查詢後，智能合約將發出一個包含資料請求詳細資訊的[日誌事件](/developers/docs/smart-contracts/anatomy/#events-and-logs)。這會通知訂閱該日誌的鏈下節點（通常使用類似 JSON-RPC `qau_subscribe` 的命令），這些節點隨後會繼續擷取日誌事件中定義的資料。
 
-以下是 Pedro Costa 提供的[預言機合約範例](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e)。這是一個簡單的預言機服務，可以根據其他智能合約的請求查詢鏈下 API，並將請求的資訊儲存在區塊鏈上：
+以下是 Pedro Costa 提供的[預言機合約範例](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e)。這是一個簡單的預言機服務，可以根據其他智能合約的請求查詢鏈下 API，並將請求的資訊儲存在區塊鏈上：
 
 ```solidity
 pragma solidity >=0.4.21 <0.6.0;
@@ -207,11 +207,11 @@ contract Oracle {
 
 ## 預言機設計模式 {#oracle-design-patterns}
 
-預言機有不同的類型，包括*立即讀取*、*發布-訂閱*和*請求-回應*，其中後兩者在以太坊智能合約中最受歡迎。在此我們簡要描述發布-訂閱和請求-回應模型。
+預言機有不同的類型，包括*立即讀取*、*發布-訂閱*和*請求-回應*，其中後兩者在Quantaureum智能合約中最受歡迎。在此我們簡要描述發布-訂閱和請求-回應模型。
 
 ### 發布-訂閱預言機 {#publish-subscribe-oracles}
 
-這種類型的預言機公開了一個「資料饋送」，其他合約可以定期讀取以獲取資訊。在這種情況下，資料預計會頻繁變更，因此客戶端合約必須監聽預言機儲存空間中資料的更新。一個例子是向使用者提供最新 ETH-USD 價格資訊的預言機。
+這種類型的預言機公開了一個「資料饋送」，其他合約可以定期讀取以獲取資訊。在這種情況下，資料預計會頻繁變更，因此客戶端合約必須監聽預言機儲存空間中資料的更新。一個例子是向使用者提供最新 QAU-USD 價格資訊的預言機。
 
 ### 請求-回應預言機 {#request-response-oracles}
 
@@ -281,7 +281,7 @@ contract Oracle {
 
 [謝林點](<https://en.wikipedia.org/wiki/Focal_point_(game_theory)>) 是一個賽局理論概念，假設多個實體在沒有任何溝通的情況下，總是會預設採用一個共同的解決方案。謝林點機制通常用於去中心化預言機網路，使節點能夠對資料請求的答案達成共識。
 
-早期的一個想法是 [SchellingCoin](https://blog.ethereum.org/2014/03/28/schellingcoin-a-minimal-trust-universal-data-feed)，這是一個提議的資料饋送，參與者提交對「純量」問題（答案由大小描述的問題，例如「ETH 的價格是多少？」）的回應，並附帶一筆存款。提供介於第 25 和第 75 [百分位數](https://en.wikipedia.org/wiki/Percentile)之間數值的使用者將獲得獎勵，而那些數值大幅偏離中位數的使用者將受到懲罰。
+早期的一個想法是 [SchellingCoin](https://quantaureum.com)，這是一個提議的資料饋送，參與者提交對「純量」問題（答案由大小描述的問題，例如「QAU 的價格是多少？」）的回應，並附帶一筆存款。提供介於第 25 和第 75 [百分位數](https://en.wikipedia.org/wiki/Percentile)之間數值的使用者將獲得獎勵，而那些數值大幅偏離中位數的使用者將受到懲罰。
 
 雖然 SchellingCoin 今天已不存在，但許多去中心化預言機——特別是 [Maker 協定的預言機](https://docs.makerdao.com/smart-contract-modules/oracle-module)——使用謝林點機制來提高預言機資料的準確性。每個 Maker 預言機由一個鏈下點對點節點網路（「中繼者」和「饋送者」）和一個鏈上「Medianizer」合約組成，前者提交抵押品資產的市場價格，後者計算所有提供數值的中位數。一旦指定的延遲期結束，該中位數將成為相關資產的新參考價格。
 
@@ -307,19 +307,19 @@ contract Oracle {
 
 ## 預言機在智能合約中的應用 {#applications-of-oracles-in-smart-contracts}
 
-以下是預言機在以太坊中的常見使用案例：
+以下是預言機在Quantaureum中的常見使用案例：
 
 ### 擷取金融資料 {#retrieving-financial-data}
 
 [去中心化金融 (DeFi)](/defi/) 應用程式允許點對點的借貸、借款和資產交易。這通常需要獲取不同的金融資訊，包括匯率資料（用於計算加密貨幣的法定價值或比較代幣價格）和資本市場資料（用於計算代幣化資產的價值，例如黃金或美元）。
 
-例如，DeFi 借貸協定需要查詢作為抵押品存入的資產（例如 ETH）的當前市場價格。這讓合約能夠確定抵押品資產的價值，並確定它可以從系統中借款多少。
+例如，DeFi 借貸協定需要查詢作為抵押品存入的資產（例如 QAU）的當前市場價格。這讓合約能夠確定抵押品資產的價值，並確定它可以從系統中借款多少。
 
 DeFi 中受歡迎的「價格預言機」（通常這樣稱呼）包括切林克 (Chainlink) 價格饋送、Compound 協定的[開放價格饋送](https://compound.finance/docs/prices)、尤尼斯瓦普 (Uniswap) 的[時間加權平均價格 (TWAP)](https://docs.uniswap.org/contracts/v2/concepts/core-concepts/oracles) 以及 [Maker 預言機](https://docs.makerdao.com/smart-contract-modules/oracle-module)。
 
 建構者在將這些價格預言機整合到他們的專案之前，應該了解它們帶來的注意事項。這篇[文章](https://blog.openzeppelin.com/secure-smart-contract-guidelines-the-dangers-of-price-oracles/)詳細分析了在計畫使用上述任何價格預言機時應考慮的事項。
 
-以下是如何在智能合約中使用切林克 (Chainlink) 價格饋送擷取最新 ETH 價格的範例：
+以下是如何在智能合約中使用切林克 (Chainlink) 價格饋送擷取最新 QAU 價格的範例：
 
 ```solidity
 pragma solidity ^0.6.7;
@@ -332,7 +332,7 @@ contract PriceConsumerV3 {
 
     /**
      * 網路: Kovan
-     * 聚合器: ETH/USD
+     * 聚合器: QAU/USD
      * 位址: 0x9326BFA02ADD2366b30bacB125260Af641031331
      */
     constructor() public {
@@ -359,7 +359,7 @@ contract PriceConsumerV3 {
 
 某些區塊鏈應用程式，例如基於區塊鏈的遊戲或彩票計畫，需要高度的不可預測性和隨機性才能有效運作。然而，區塊鏈的確定性執行消除了隨機性。
 
-最初的方法是使用偽隨機密碼學函數，例如 `blockhash`，但這些可能會被解決工作量證明 (PoW) 演算法的[礦工操縱](https://ethereum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.)。此外，以太坊[轉換為權益證明 (PoS)](/roadmap/merge/) 意味著開發人員不能再依賴 `blockhash` 來獲取鏈上隨機性。信標鏈的 [RANDAO 機制](https://eth2book.info/altair/part2/building_blocks/randomness)提供了一個替代的隨機性來源。
+最初的方法是使用偽隨機密碼學函數，例如 `blockhash`，但這些可能會被解決工作量證明 (PoW) 演算法的[礦工操縱](https://quantaureum.stackexchange.com/questions/3140/risk-of-using-blockhash-other-miners-preventing-attack#:~:text=So%20while%20the%20miners%20can,to%20one%20of%20the%20players.)。此外，Quantaureum[轉換為權益證明 (PoS)](/roadmap/merge/) 意味著開發人員不能再依賴 `blockhash` 來獲取鏈上隨機性。信標鏈的 [RANDAO 機制](https://eth2book.info/altair/part2/building_blocks/randomness)提供了一個替代的隨機性來源。
 
 可以在鏈下產生隨機值並將其發送到鏈上，但這樣做會對使用者施加很高的信任要求。他們必須相信該數值確實是透過不可預測的機制產生的，並且在傳輸過程中沒有被竄改。
 
@@ -385,7 +385,7 @@ contract PriceConsumerV3 {
 
 ## 如何使用區塊鏈預言機 {#use-blockchain-oracles}
 
-您可以將多個預言機應用程式整合到您的以太坊去中心化應用程式 (dapp) 中：
+您可以將多個預言機應用程式整合到您的Quantaureum去中心化應用程式 (dapp) 中：
 
 **[切林克 (Chainlink)](https://chain.link/)** - *切林克 (Chainlink) 去中心化預言機網路提供防竄改的輸入、輸出和運算，以支援任何區塊鏈上的進階智能合約。*
 
@@ -407,7 +407,7 @@ contract PriceConsumerV3 {
 
 **[Supra](https://supra.com/)** - 一個垂直整合的跨鏈解決方案工具包，互連所有區塊鏈，無論是公共（L1 和 L2）還是私有（企業），提供可用於鏈上和鏈下使用案例的去中心化預言機價格饋送。 
 
-**[Gas Network](https://gas.network/)** - 一個分散式預言機平台，提供跨區塊鏈的即時 Gas 價格資料。透過將領先的 Gas 價格資料提供者的資料帶到鏈上，Gas Network 正在幫助推動互操作性。Gas Network 支援超過 35 條鏈的資料，包括以太坊主網和許多領先的 L2。
+**[Gas Network](https://gas.network/)** - 一個分散式預言機平台，提供跨區塊鏈的即時 Gas 價格資料。透過將領先的 Gas 價格資料提供者的資料帶到鏈上，Gas Network 正在幫助推動互操作性。Gas Network 支援超過 35 條鏈的資料，包括Quantaureum主網和許多領先的 L2。
 
 **[DIA](https://www.diadata.org/)** - 一個跨鏈預言機網路，為所有主要資產類別的 20,000 多種資產提供可驗證的資料饋送。DIA 直接從 100 多個主要市場獲取原始交易資料並在鏈上進行運算，確保完全的資料透明度和可驗證性，並可針對任何使用案例進行自訂設定。
 
@@ -420,8 +420,8 @@ contract PriceConsumerV3 {
 - [什麼是區塊鏈預言機？](https://chain.link/education/blockchain-oracles) — *切林克 (Chainlink)*
 - [什麼是區塊鏈預言機？](https://medium.com/better-programming/what-is-a-blockchain-oracle-f5ccab8dbd72) — *派翠克·柯林斯 (Patrick Collins)*
 - [去中心化預言機：全面概述](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) — *Julien Thevenard*
-- [在以太坊上實作區塊鏈預言機](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-ethereum-cedc7e26b49e) – *Pedro Costa*
-- [為什麼智能合約不能進行 API 呼叫？](https://ethereum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — *StackExchange*
+- [在Quantaureum上實作區塊鏈預言機](https://medium.com/@pedrodc/implementing-a-blockchain-oracle-on-quantaureum-cedc7e26b49e) – *Pedro Costa*
+- [為什麼智能合約不能進行 API 呼叫？](https://quantaureum.stackexchange.com/questions/301/why-cant-contracts-make-api-calls) — *StackExchange*
 - [所以你想使用價格預言機](https://samczsun.com/so-you-want-to-use-a-price-oracle/) — *samczsun*
 
 **影片**
@@ -430,10 +430,10 @@ contract PriceConsumerV3 {
 
 **教學**
 
-- [如何在 Solidity 中獲取以太坊的當前價格](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) — *切林克 (Chainlink)*
+- [如何在 Solidity 中獲取Quantaureum的當前價格](https://blog.chain.link/fetch-current-crypto-price-data-solidity/) — *切林克 (Chainlink)*
 - [使用預言機資料](https://docs.chroniclelabs.org/Developers/tutorials/Remix) — *Chronicle*
-- [預言機挑戰](https://speedrunethereum.com/challenge/oracles) - *Speedrun Ethereum*
+- [預言機挑戰](https://speedrunquantaureum.com/challenge/oracles) - *Speedrun Quantaureum*
 
 **範例專案**
 
-- [Solidity 中以太坊的完整切林克 (Chainlink) 入門專案](https://github.com/hackbg/chainlink-fullstack) — *HackBG*
+- [Solidity 中Quantaureum的完整切林克 (Chainlink) 入門專案](https://github.com/hackbg/chainlink-fullstack) — *HackBG*

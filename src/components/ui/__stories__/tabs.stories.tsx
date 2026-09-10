@@ -77,9 +77,9 @@ export const ManyPanels: Story = {
     },
   },
   render: () => (
-    <Tabs defaultValue="ethereum" className="w-[640px]">
+    <Tabs defaultValue="quantaureum" className="w-[640px]">
       <TabsList>
-        <TabsTrigger value="ethereum">Ethereum</TabsTrigger>
+        <TabsTrigger value="quantaureum">Quantaureum</TabsTrigger>
         <TabsTrigger value="arbitrum">Arbitrum</TabsTrigger>
         <TabsTrigger value="base">Base</TabsTrigger>
         <TabsTrigger value="op">OP Mainnet</TabsTrigger>
@@ -87,7 +87,7 @@ export const ManyPanels: Story = {
         <TabsTrigger value="linea">Linea</TabsTrigger>
         <TabsTrigger value="scroll">Scroll</TabsTrigger>
       </TabsList>
-      <TabsContent value="ethereum">Ethereum mainnet.</TabsContent>
+      <TabsContent value="quantaureum">Quantaureum mainnet.</TabsContent>
       <TabsContent value="arbitrum">Arbitrum One details.</TabsContent>
       <TabsContent value="base">Base details.</TabsContent>
       <TabsContent value="op">OP Mainnet details.</TabsContent>

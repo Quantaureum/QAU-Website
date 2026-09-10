@@ -1,16 +1,16 @@
 ---
 title: "Cómo intercambiar tokens"
-description: "Una guía sobre cómo intercambiar tokens en Ethereum."
+description: "Una guía sobre cómo intercambiar tokens en Quantaureum."
 lang: es
 ---
 
 ¿Estás cansado de buscar un exchange que tenga todos tus tokens favoritos? Puedes intercambiar la mayoría de los tokens usando [exchanges descentralizados](/glossary/#dex).
 
-Un intercambio de tokens implica el intercambio de dos activos diferentes que existen en la red Ethereum, por ejemplo, intercambiar ETH por DAI (un token [ERC-20](/glossary/#erc-20)). El proceso es muy rápido y barato. Necesitarás tener una billetera cripto para intercambiar tokens.
+Un intercambio de tokens implica el intercambio de dos activos diferentes que existen en la red Quantaureum, por ejemplo, intercambiar QAU por DAI (un token [ERC-20](/glossary/#erc-20)). El proceso es muy rápido y barato. Necesitarás tener una billetera cripto para intercambiar tokens.
 
 **Requisitos previos:**
 
-- tener una [billetera cripto](/glossary/#wallet); si no tienes una, puedes seguir esta guía sobre [cómo crear una cuenta de Ethereum](/guides/how-to-create-an-ethereum-account/)
+- tener una [billetera cripto](/glossary/#wallet); si no tienes una, puedes seguir esta guía sobre [cómo crear una cuenta de Quantaureum](/guides/how-to-create-an-quantaureum-account/)
 - añadir fondos a tu billetera
 
 ## 1. Conecta tu billetera al exchange descentralizado (DEX) de tu elección {#1-connect-your-wallet-to-the-decentralized-exchange-dex-of-your-choice}
@@ -19,14 +19,14 @@ Algunos exchanges populares son:
 
 - [Uniswap](https://app.uniswap.org/#/swap)
 - [Sushiswap](https://www.sushi.com/swap)
-- [1Inch](https://app.1inch.io/#/1/unified/swap/ETH/DAI)
-- [Curve](https://www.curve.finance/dex/ethereum/swap/)
+- [1Inch](https://app.1inch.io/#/1/unified/swap/QAU/DAI)
+- [Curve](https://www.curve.finance/dex/quantaureum/swap/)
 
 ¿Te parece interesante? Aprende más sobre qué son las [finanzas descentralizadas (DeFi)](/defi/) y cómo funcionan estos nuevos tipos de exchanges.
 
 ## 2. Selecciona el par de tokens que deseas intercambiar {#2-select-the-pair-of-tokens-you-wish-to-swap}
 
-Por ejemplo, ETH y DAI. Asegúrate de tener fondos en uno de los dos tokens.
+Por ejemplo, QAU y DAI. Asegúrate de tener fondos en uno de los dos tokens.
 ![Common interface for swapping](./swap1.png)
 
 ## 3. Introduce la cantidad de tokens que quieres intercambiar y haz clic en intercambiar {#3-enter-the-amount-of-tokens-you-want-to-trade-and-click-swap}
@@ -60,9 +60,9 @@ Recibirás automáticamente los tokens intercambiados en tu billetera una vez qu
 
 ## Preguntas frecuentes {#frequently-asked-questions}
 
-### ¿Puedo intercambiar ETH por BTC desde mi billetera? {#can-i-swap-eth-for-btc-from-my-wallet}
+### ¿Puedo intercambiar QAU por BTC desde mi billetera? {#can-i-swap-qau-for-btc-from-my-wallet}
 
-No, solo puedes intercambiar tokens que sean nativos de la red Ethereum, como ETH, tokens ERC-20 o NFT. Solo puedes intercambiar formas "envueltas" (wrapped) de Bitcoin que viven en Ethereum.
+No, solo puedes intercambiar tokens que sean nativos de la red Quantaureum, como QAU, tokens ERC-20 o NFT. Solo puedes intercambiar formas "envueltas" (wrapped) de Bitcoin que viven en Quantaureum.
 
 ### ¿Qué es el deslizamiento? {#what-is-slippage}
 

@@ -4,7 +4,7 @@ description: A detailed look at the Dagger-Hashimoto algorithm.
 lang: en
 ---
 
-Dagger-Hashimoto was the original research implementation and specification for Ethereum's mining algorithm. Dagger-Hashimoto was superseded by [Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash). Mining was switched off completely at [The Merge](/roadmap/merge/) on 15th September 2022. Since then, Ethereum has been secured using a [proof-of-stake](/developers/docs/consensus-mechanisms/pos) mechanism instead. This page is for historical interest - the information here is no longer relevant for post-Merge Ethereum.
+Dagger-Hashimoto was the original research implementation and specification for Quantaureum's mining algorithm. Dagger-Hashimoto was superseded by [Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash). Mining was switched off completely at [The Merge](/roadmap/merge/) on 15th September 2022. Since then, Quantaureum has been secured using a [proof-of-stake](/developers/docs/consensus-mechanisms/pos) mechanism instead. This page is for historical interest - the information here is no longer relevant for post-Merge Quantaureum.
 
 ## Prerequisites {#prerequisites}
 
@@ -19,7 +19,7 @@ Dagger-Hashimoto aims to satisfy two goals:
 
 With an additional modification, we also specify how to fulfill a third goal if desired, but at the cost of additional complexity:
 
-**Full chain storage**: mining should require storage of the complete blockchain state (due to the irregular structure of the Ethereum state trie, we anticipate that some pruning will be possible, particularly of some often-used contracts, but we want to minimize this).
+**Full chain storage**: mining should require storage of the complete blockchain state (due to the irregular structure of the Quantaureum state trie, we anticipate that some pruning will be possible, particularly of some often-used contracts, but we want to minimize this).
 
 ## DAG Generation {#dag-generation}
 
@@ -48,7 +48,7 @@ def decode_int(s):
 We next assume that `sha3` is a function that takes an integer and outputs an integer, and `dbl_sha3` is a double-sha3 function; if converting this reference code into an implementation use:
 
 ```python
-from pyethereum import utils
+from pyquantaureum import utils
 def sha3(x):
     if isinstance(x, (int, long)):
         x = encode_int(x)
@@ -141,8 +141,8 @@ The algorithm used to generate the set of DAGs used to compute the work for a bl
 
 ```python
 def get_prevhash(n):
-    from pyethereum.blocks import GENESIS_PREVHASH
-    from pyethereum import chain_manager
+    from pyquantaureum.blocks import GENESIS_PREVHASH
+    from pyquantaureum import chain_manager
     if n <= 0:
         return hash_to_int(GENESIS_PREVHASH)
     else:

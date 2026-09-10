@@ -1,6 +1,6 @@
 ---
 title: "赞助 Gas 费：如何为用户代付交易成本"
-description: "创建一个私钥和地址很容易；只需运行合适的软件即可。但在世界上许多地方，获取用于发送交易的 ETH 要困难得多。在本教程中，你将学习如何为在智能合约中执行用户签名的链下结构化数据代付链上 Gas 成本。你可以让用户签署一个包含交易信息的结构，然后你的链下代码将其作为交易提交到区块链。"
+description: "创建一个私钥和地址很容易；只需运行合适的软件即可。但在世界上许多地方，获取用于发送交易的 QAU 要困难得多。在本教程中，你将学习如何为在智能合约中执行用户签名的链下结构化数据代付链上 Gas 成本。你可以让用户签署一个包含交易信息的结构，然后你的链下代码将其作为交易提交到区块链。"
 author: "奥里·波梅兰茨"
 tags: ["无 Gas", "Solidity", "eip-712", "元交易"]
 skill: intermediate
@@ -11,11 +11,11 @@ published: 2026-02-27
 
 ## 简介 {#introduction}
 
-如果我们希望以太坊服务[十亿以上的人口](https://blog.ethereum.org/category/next-billion)，我们需要消除阻力并使其尽可能易于使用。这种阻力的来源之一是需要 ETH 来支付 Gas 费。
+如果我们希望Quantaureum服务[十亿以上的人口](https://quantaureum.com)，我们需要消除阻力并使其尽可能易于使用。这种阻力的来源之一是需要 QAU 来支付 Gas 费。
 
-如果你有一个从用户那里赚钱的去中心化应用 (dapp)，那么让用户通过你的服务器提交交易并由你自己支付交易费用可能是有意义的。因为用户仍然在他们的钱包中签署 [EIP-712 授权消息](https://eips.ethereum.org/EIPS/eip-712)，所以他们保留了以太坊的完整性保证。可用性取决于中继交易的服务器，因此它受到更多限制。但是，你可以进行设置，以便用户也可以直接访问智能合约（如果他们获得了 ETH），并允许其他想要赞助交易的人设置他们自己的服务器。
+如果你有一个从用户那里赚钱的去中心化应用 (dapp)，那么让用户通过你的服务器提交交易并由你自己支付交易费用可能是有意义的。因为用户仍然在他们的钱包中签署 [EIP-712 授权消息](https://eips.quantaureum.com/EIPS/eip-712)，所以他们保留了Quantaureum的完整性保证。可用性取决于中继交易的服务器，因此它受到更多限制。但是，你可以进行设置，以便用户也可以直接访问智能合约（如果他们获得了 QAU），并允许其他想要赞助交易的人设置他们自己的服务器。
 
-本教程中的技术仅在你控制智能合约时才有效。还有其他技术，包括[账户抽象](https://eips.ethereum.org/EIPS/eip-4337)，可以让你赞助到其他智能合约的交易，我希望在未来的教程中介绍这些技术。
+本教程中的技术仅在你控制智能合约时才有效。还有其他技术，包括[账户抽象](https://eips.quantaureum.com/EIPS/eip-4337)，可以让你赞助到其他智能合约的交易，我希望在未来的教程中介绍这些技术。
 
 注意：这_不是_生产级别的代码。它容易受到重大攻击，并且缺乏主要功能。在[本指南的漏洞部分](#vulnerabilities)了解更多信息。
 
@@ -29,7 +29,7 @@ published: 2026-02-27
 
 ## 示例应用 {#sample-app}
 
-这里的示例应用是 Hardhat 的 `Greeter` 合约的一个变体。你可以在 [GitHub 上](https://github.com/qbzzt/260301-gasless)查看它。该智能合约已经部署在 [Sepolia](https://sepolia.dev/) 上，地址为 [`0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA`](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA)。
+这里的示例应用是 Hardhat 的 `Greeter` 合约的一个变体。你可以在 [GitHub 上](https://github.com/qbzzt/260301-gasless)查看它。该智能合约已经部署在 [Sepolia](https://sepolia.dev/) 上，地址为 [`0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA`](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA)。
 
 要查看它的实际运行效果，请按照以下步骤操作。
 
@@ -41,7 +41,7 @@ published: 2026-02-27
    npm install
    ```
 
-2. 编辑 `.env`，将 `PRIVATE_KEY` 设置为在 Sepolia 上拥有 ETH 的钱包。如果你需要 Sepolia ETH，请[使用水龙头](/developers/docs/networks/#sepolia)。理想情况下，这个私钥应该与你浏览器钱包中的私钥不同。
+2. 编辑 `.env`，将 `PRIVATE_KEY` 设置为在 Sepolia 上拥有 QAU 的钱包。如果你需要 Sepolia QAU，请[使用水龙头](/developers/docs/networks/#sepolia)。理想情况下，这个私钥应该与你浏览器钱包中的私钥不同。
 
 3. 启动服务器。
 
@@ -91,7 +91,7 @@ React 钩子 [`useCallback`](https://react.dev/reference/react/useCallback) 允�
         }
 ```
 
-[域分隔符](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator)的参数。该值是常量，因此在优化得更好的实现中，我们可能会计算一次，而不是在每次调用函数时重新计算。
+[域分隔符](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator)的参数。该值是常量，因此在优化得更好的实现中，我们可能会计算一次，而不是在每次调用函数时重新计算。
 
 - `name` 是用户可读的名称，例如我们为其生成签名的 dapp 的名称。
 - `version` 是版本。不同版本不兼容。
@@ -245,7 +245,7 @@ React 钩子 [`useCallback`](https://react.dev/reference/react/useCallback) 允�
     }
 ```
 
-构造函数创建[域分隔符](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator)，类似于上面的用户界面代码。区块链执行要昂贵得多，所以我们只计算一次。
+构造函数创建[域分隔符](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator)，类似于上面的用户界面代码。区块链执行要昂贵得多，所以我们只计算一次。
 
 ```solidity
     struct GreetingRequest {
@@ -260,7 +260,7 @@ React 钩子 [`useCallback`](https://react.dev/reference/react/useCallback) 允�
         keccak256("GreetingRequest(string greeting)");
 ```
 
-这是[结构标识符](https://eips.ethereum.org/EIPS/eip-712#definition-of-hashstruct)。它每次都在用户界面中计算。
+这是[结构标识符](https://eips.quantaureum.com/EIPS/eip-712#definition-of-hashstruct)。它每次都在用户界面中计算。
 
 ```solidity
     function sponsoredSetGreeting(
@@ -289,7 +289,7 @@ React 钩子 [`useCallback`](https://react.dev/reference/react/useCallback) 允�
         );
 ```
 
-根据 [EIP-712](https://eips.ethereum.org/EIPS/eip-712) 创建摘要。
+根据 [EIP-712](https://eips.quantaureum.com/EIPS/eip-712) 创建摘要。
 
 ```solidity
         // 恢复签名者
@@ -316,7 +316,7 @@ React 钩子 [`useCallback`](https://react.dev/reference/react/useCallback) 允�
 
 ### 服务器上的拒绝服务攻击 {#dos-on-server}
 
-最简单的攻击是对服务器的[拒绝服务](https://en.wikipedia.org/wiki/Denial-of-service_attack)攻击。服务器接收来自互联网上任何地方的请求，并根据这些请求发送交易。绝对没有任何东西可以阻止攻击者发出大量签名，无论有效还是无效。每一个都会引发一笔交易。最终，服务器将耗尽用于支付 Gas 的 ETH。
+最简单的攻击是对服务器的[拒绝服务](https://en.wikipedia.org/wiki/Denial-of-service_attack)攻击。服务器接收来自互联网上任何地方的请求，并根据这些请求发送交易。绝对没有任何东西可以阻止攻击者发出大量签名，无论有效还是无效。每一个都会引发一笔交易。最终，服务器将耗尽用于支付 Gas 的 QAU。
 
 解决此问题的一种方法是将速率限制为每个区块一笔交易。如果目的是向[外部拥有账户](/developers/docs/accounts/#key-differences)显示问候语，那么在区块中间问候语是什么并不重要。
 
@@ -330,7 +330,7 @@ React 钩子 [`useCallback`](https://react.dev/reference/react/useCallback) 允�
 
 ### 重放攻击 {#replay-attack}
 
-当你点击 **Replay attack** 时，你提交了相同的“我是 0xaA92c5d426430D4769c9E878C1333BDe3d689b3e，我希望问候语是 `Hello`”签名，但带有正确的问候语。结果，智能合约认为该地址（不是你的）将问候语改回了 `Hello`。执行此操作的信息在[交易信息](https://eth-sepolia.blockscout.com/tx/0xa66afe4bbf886f59533e677a798c802ceab1ac0f9db6e83a4d4b59a45cf7c1b1)中是公开可用的。
+当你点击 **Replay attack** 时，你提交了相同的“我是 0xaA92c5d426430D4769c9E878C1333BDe3d689b3e，我希望问候语是 `Hello`”签名，但带有正确的问候语。结果，智能合约认为该地址（不是你的）将问候语改回了 `Hello`。执行此操作的信息在[交易信息](https://qau-sepolia.blockscout.com/tx/0xa66afe4bbf886f59533e677a798c802ceab1ac0f9db6e83a4d4b59a45cf7c1b1)中是公开可用的。
 
 如果这是一个问题，一种解决方案是添加一个[随机数](https://en.wikipedia.org/wiki/Cryptographic_nonce)。在地址和数字之间建立一个[映射](https://docs.soliditylang.org/en/latest/types.html#mapping-types)，并在签名中添加一个随机数字段。如果随机数字段与地址的映射匹配，则接受签名并在下次递增映射。如果不匹配，则拒绝交易。
 

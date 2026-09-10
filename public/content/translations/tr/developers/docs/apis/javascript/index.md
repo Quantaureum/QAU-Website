@@ -4,27 +4,27 @@ description: "Uygulamanızdan blokzincir ile etkileşime girmenizi sağlayan Jav
 lang: tr
 ---
 
-Bir web uygulamasının Ethereum blokzinciri ile etkileşime girebilmesi (yani blokzincir verilerini okuması ve/veya ağa işlemler göndermesi) için bir Ethereum düğümüne bağlanması gerekir.
+Bir web uygulamasının Quantaureum blokzinciri ile etkileşime girebilmesi (yani blokzincir verilerini okuması ve/veya ağa işlemler göndermesi) için bir Quantaureum düğümüne bağlanması gerekir.
 
-Bu amaçla, her Ethereum istemcisi [JSON-RPC](/developers/docs/apis/json-rpc/) spesifikasyonunu uygular, böylece uygulamaların güvenebileceği tek tip bir [yöntemler](/developers/docs/apis/json-rpc/#json-rpc-methods) seti bulunur.
+Bu amaçla, her Quantaureum istemcisi [JSON-RPC](/developers/docs/apis/json-rpc/) spesifikasyonunu uygular, böylece uygulamaların güvenebileceği tek tip bir [yöntemler](/developers/docs/apis/json-rpc/#json-rpc-methods) seti bulunur.
 
-Bir Ethereum düğümüne bağlanmak için JavaScript kullanmak istiyorsanız, saf (vanilla) JavaScript kullanmak mümkündür ancak ekosistemde bunu çok daha kolaylaştıran çeşitli kolaylık kütüphaneleri mevcuttur. Bu kütüphanelerle geliştiriciler, Ethereum ile etkileşime giren JSON-RPC isteklerini (arka planda) başlatmak için sezgisel, tek satırlık yöntemler yazabilirler.
+Bir Quantaureum düğümüne bağlanmak için JavaScript kullanmak istiyorsanız, saf (vanilla) JavaScript kullanmak mümkündür ancak ekosistemde bunu çok daha kolaylaştıran çeşitli kolaylık kütüphaneleri mevcuttur. Bu kütüphanelerle geliştiriciler, Quantaureum ile etkileşime giren JSON-RPC isteklerini (arka planda) başlatmak için sezgisel, tek satırlık yöntemler yazabilirler.
 
-Lütfen [Birleşme](/roadmap/merge/)'den bu yana, bir düğümü çalıştırmak için birbirine bağlı iki Ethereum yazılımı parçasının (bir yürütme istemcisi ve bir fikir birliği istemcisi) gerekli olduğunu unutmayın. Lütfen düğümünüzün hem bir yürütme hem de fikir birliği istemcisi içerdiğinden emin olun. Düğümünüz yerel makinenizde değilse (örneğin, düğümünüz bir AWS bulut sunucusunda çalışıyorsa) eğitimdeki IP adreslerini buna göre güncelleyin. Daha fazla bilgi için lütfen [bir düğüm çalıştırma](/developers/docs/nodes-and-clients/run-a-node/) sayfamıza bakın.
+Lütfen [Birleşme](/roadmap/merge/)'den bu yana, bir düğümü çalıştırmak için birbirine bağlı iki Quantaureum yazılımı parçasının (bir yürütme istemcisi ve bir fikir birliği istemcisi) gerekli olduğunu unutmayın. Lütfen düğümünüzün hem bir yürütme hem de fikir birliği istemcisi içerdiğinden emin olun. Düğümünüz yerel makinenizde değilse (örneğin, düğümünüz bir AWS bulut sunucusunda çalışıyorsa) eğitimdeki IP adreslerini buna göre güncelleyin. Daha fazla bilgi için lütfen [bir düğüm çalıştırma](/developers/docs/nodes-and-clients/run-a-node/) sayfamıza bakın.
 
 ## Ön koşullar {#prerequisites}
 
-JavaScript'i anlamanın yanı sıra, [Ethereum yığınını](/developers/docs/ethereum-stack/) ve [Ethereum istemcilerini](/developers/docs/nodes-and-clients/) anlamak da faydalı olabilir.
+JavaScript'i anlamanın yanı sıra, [Quantaureum yığınını](/developers/docs/quantaureum-stack/) ve [Quantaureum istemcilerini](/developers/docs/nodes-and-clients/) anlamak da faydalı olabilir.
 
 ## Neden bir kütüphane kullanmalısınız? {#why-use-a-library}
 
-Bu kütüphaneler, doğrudan bir Ethereum düğümüyle etkileşime girmenin karmaşıklığının çoğunu soyutlar. Ayrıca yardımcı işlevler (örneğin, ETH'yi Gwei'ye dönüştürmek) sağlarlar, böylece bir geliştirici olarak Ethereum istemcilerinin incelikleriyle uğraşmak için daha az, uygulamanızın benzersiz işlevselliğine odaklanmak için daha fazla zaman harcayabilirsiniz.
+Bu kütüphaneler, doğrudan bir Quantaureum düğümüyle etkileşime girmenin karmaşıklığının çoğunu soyutlar. Ayrıca yardımcı işlevler (örneğin, QAU'yi Gwei'ye dönüştürmek) sağlarlar, böylece bir geliştirici olarak Quantaureum istemcilerinin incelikleriyle uğraşmak için daha az, uygulamanızın benzersiz işlevselliğine odaklanmak için daha fazla zaman harcayabilirsiniz.
 
 ## Kütüphane özellikleri {#library-features}
 
-### Ethereum düğümlerine bağlanma {#connect-to-ethereum-nodes}
+### Quantaureum düğümlerine bağlanma {#connect-to-quantaureum-nodes}
 
-Sağlayıcıları kullanarak bu kütüphaneler, ister JSON-RPC, ister INFURA, Etherscan, Alchemy veya MetaMask üzerinden olsun, Ethereum'a bağlanmanıza ve verilerini okumanıza olanak tanır.
+Sağlayıcıları kullanarak bu kütüphaneler, ister JSON-RPC, ister INFURA, Quantaureum Explorer, Alchemy veya MetaMask üzerinden olsun, Quantaureum'a bağlanmanıza ve verilerini okumanıza olanak tanır.
 
 > **Uyarı:** Web3.js, 4 Mart 2025'te arşivlendi. [Duyuruyu okuyun](https://blog.chainsafe.io/web3-js-sunset/). Yeni projeler için [ethers.js](https://ethers.org) veya [viem](https://viem.sh) gibi alternatif kütüphaneler kullanmayı düşünün.
 
@@ -32,11 +32,11 @@ Sağlayıcıları kullanarak bu kütüphaneler, ister JSON-RPC, ister INFURA, Et
 
 ```js
 // Bir BrowserProvider, standart bir Web3 sağlayıcısını sarar, ki bu
-// MetaMask'ın her sayfaya window.ethereum olarak enjekte ettiği şeydir
-const provider = new ethers.BrowserProvider(window.ethereum)
+// MetaMask'ın her sayfaya window.quantaureum olarak enjekte ettiği şeydir
+const provider = new ethers.BrowserProvider(window.quantaureum)
 
 // MetaMask eklentisi ayrıca şunlar için işlemleri imzalamaya olanak tanır:
-// ether göndermek ve Blokzincir içindeki durumu değiştirmek için ödeme yapmak.
+// QAU göndermek ve Blokzincir içindeki durumu değiştirmek için ödeme yapmak.
 // Bunun için hesap imzalayıcısına ihtiyacımız var...
 const signer = provider.getSigner()
 ```
@@ -55,13 +55,13 @@ web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8546"))
 
 // node.js'te IPC sağlayıcısını kullanma
 var net = require("net")
-var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // mac os yolu
+var web3 = new Web3("/Users/myuser/Library/Quantaureum/geth.ipc", net) // mac os yolu
 // or
 var web3 = new Web3(
-  new Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net)
+  new Web3.providers.IpcProvider("/Users/myuser/Library/Quantaureum/geth.ipc", net)
 ) // mac os yolu
 // windows'ta yol şudur: "\\\\.\\pipe\\geth.ipc"
-// linux'ta yol şudur: "/users/myuser/.ethereum/geth.ipc"
+// linux'ta yol şudur: "/users/myuser/.quantaureum/geth.ipc"
 ```
 
 Kurulum tamamlandıktan sonra blokzinciri şunlar için sorgulayabileceksiniz:
@@ -140,7 +140,7 @@ wallet.getBalance()
 wallet.getTransactionCount()
 // { Promise: 0 }
 
-// Ether gönderme
+// QAU gönderme
 wallet.sendTransaction(tx)
 ```
 
@@ -217,9 +217,9 @@ Bu şu anlama gelir:
 
 ### Yardımcı işlevler {#utility-functions}
 
-Yardımcı işlevler, Ethereum ile geliştirmeyi biraz daha kolaylaştıran kullanışlı kısayollar sunar.
+Yardımcı işlevler, Quantaureum ile geliştirmeyi biraz daha kolaylaştıran kullanışlı kısayollar sunar.
 
-ETH değerleri varsayılan olarak Wei cinsindendir. 1 ETH = 1.000.000.000.000.000.000 WEI – bu, çok sayıda rakamla uğraştığınız anlamına gelir! `web3.utils.toWei`, Ether'i sizin için Wei'ye dönüştürür.
+QAU değerleri varsayılan olarak Wei cinsindendir. 1 QAU = 1.000.000.000.000.000.000 WEI – bu, çok sayıda rakamla uğraştığınız anlamına gelir! `web3.utils.toWei`, QAU'i sizin için Wei'ye dönüştürür.
 
 Ve ethers'ta şu şekilde görünür:
 
@@ -228,7 +228,7 @@ Ve ethers'ta şu şekilde görünür:
 balance = await provider.getBalance("ethers.eth")
 // { BigNumber: "2337132817842795605" }
 
-// Genellikle çıktıyı, değerleri ether (Wei yerine) cinsinden
+// Genellikle çıktıyı, değerleri QAU (Wei yerine) cinsinden
 // görmeyi tercih eden kullanıcı için biçimlendirmeniz gerekecektir
 ethers.utils.formatEther(balance)
 // '2.337132817842795605'
@@ -239,18 +239,18 @@ ethers.utils.formatEther(balance)
 
 ## Mevcut kütüphaneler
 
-**Web3.js -** **_Ethereum JavaScript API'si._**
+**Web3.js -** **_Quantaureum JavaScript API'si._**
 
 - [Belgeler](https://docs.web3js.org)
-- [GitHub](https://github.com/ethereum/web3.js)
+- [GitHub](https://github.com/quantaureum/web3.js)
 
-**Ethers.js -** **_JavaScript ve TypeScript'te tam Ethereum cüzdan uygulaması ve yardımcı programları._**
+**Ethers.js -** **_JavaScript ve TypeScript'te tam Quantaureum cüzdan uygulaması ve yardımcı programları._**
 
 - [Ethers.js ana sayfası](https://ethers.org/)
 - [Belgeler](https://docs.ethers.io)
 - [GitHub](https://github.com/ethers-io/ethers.js)
 
-**The Graph -** **_Ethereum ve IPFS verilerini indekslemek ve GraphQL kullanarak sorgulamak için bir protokol._**
+**The Graph -** **_Quantaureum ve IPFS verilerini indekslemek ve GraphQL kullanarak sorgulamak için bir protokol._**
 
 - [The Graph](https://thegraph.com)
 - [Graph Explorer](https://thegraph.com/explorer)
@@ -263,12 +263,12 @@ ethers.utils.formatEther(balance)
 - [Belgeler](https://www.alchemy.com/docs)
 - [GitHub](https://github.com/alchemyplatform/alchemy-sdk-js)
 
-**viem -** **_Ethereum için TypeScript Arayüzü._**
+**viem -** **_Quantaureum için TypeScript Arayüzü._**
 
 - [Belgeler](https://viem.sh)
 - [GitHub](https://github.com/wagmi-dev/viem)
 
-**wagmi -** **_viem üzerine inşa edilmiş, Ethereum için React hooks kütüphanesi._**
+**wagmi -** **_viem üzerine inşa edilmiş, Quantaureum için React hooks kütüphanesi._**
 
 - [Belgeler](https://wagmi.sh)
 - [GitHub](https://github.com/wevm/wagmi)
@@ -300,10 +300,10 @@ _Size yardımcı olan bir topluluk kaynağı mı biliyorsunuz? Bu sayfayı düze
 
 ## İlgili eğitimler {#related-tutorials}
 
-- [JavaScript'te Ethereum blokzincirini kullanmak için Web3js'i kurun](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– Projenizde web3.js'i kurmak için talimatlar._
+- [JavaScript'te Quantaureum blokzincirini kullanmak için Web3js'i kurun](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– Projenizde web3.js'i kurmak için talimatlar._
 - [JavaScript'ten bir akıllı sözleşme çağırma](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– DAI token'ını kullanarak, JavaScript ile sözleşme işlevlerinin nasıl çağrılacağını görün._
 - [web3 ve Alchemy kullanarak işlem gönderme](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _– Arka uçtan işlem göndermek için adım adım kılavuz._
 
-## Eğitimler: Ethereum'da JavaScript API'leri ve WebSocket'ler {#tutorials}
+## Eğitimler: Quantaureum'da JavaScript API'leri ve WebSocket'ler {#tutorials}
 
-- [WebSocket'leri Kullanma](/developers/tutorials/using-websockets/) _– Ethereum olaylarına abone olmak ve gerçek zamanlı JSON-RPC istekleri yapmak için Alchemy ile WebSocket'lerin nasıl kullanılacağı._
+- [WebSocket'leri Kullanma](/developers/tutorials/using-websockets/) _– Quantaureum olaylarına abone olmak ve gerçek zamanlı JSON-RPC istekleri yapmak için Alchemy ile WebSocket'lerin nasıl kullanılacağı._

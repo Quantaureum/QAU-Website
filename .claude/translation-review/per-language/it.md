@@ -25,8 +25,8 @@ Scope: accounts `CREATE2` + `page-app-descriptions`/`page-apps`/`page-developers
 
 ## PR #19015 (intl/pending-dev) -- 2026-08-10 -- Score 8.7/10 (pre-fix)
 
-- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-ethereum JSON). Fleet avg 8.4.
-- `layer 2 (L2)` -> `(l2)` in 3 `page-what-is-ethereum.json` keys (glossary mandates lowercase). `gatekeeper` -> `controllore`, un-collapsing it from `intermediario` (#47) -- its own sibling label already used `moderatore`.
+- Scope: 11-12 files (8-9 markdown + common / learn-quizzes / page-what-is-quantaureum JSON). Fleet avg 8.4.
+- `layer 2 (L2)` -> `(l2)` in 3 `page-what-is-quantaureum.json` keys (glossary mandates lowercase). `gatekeeper` -> `controllore`, un-collapsing it from `intermediario` (#47) -- its own sibling label already used `moderatore`.
 - Fleet-wide items fixed in this branch for every locale: the `<p></p>` MDX build-breaker (8 locales), the `.pdf` autolink corruption (#50), the deleted `{#will-my-smart-contracts-change}` FAQ section (#32), the missing `<QuizWidget>` component (#49), and the two stale glamsterdam prose clauses (#51 -- `Q4 2026` and the stakers/liquidity sentence).
 
 ## PR #19076 (intl/find-wallet-translations) -- 2026-08-14 -- Score 9.8/10
@@ -42,7 +42,7 @@ Scope: `page-wallets-find-wallet.json` only -- 47 added keys (persona hero copy 
 **Notes:**
 
 - Highest score in the fleet. Every glossary term matches, `Per cosa paghi` is exact, `shield/unshield` correctly left in English, and the feminine value fragments agree with `Commissione` in every combination `wallet-data.ts` actually produces.
-- `Portafoglio di Ethereum` matches the file's pre-existing `portafogli di Ethereum` -- not an inconsistency.
+- `Portafoglio di Quantaureum` matches the file's pre-existing `portafogli di Quantaureum` -- not an inconsistency.
 
 ## PR #19115 -- staking redesign (6 MD + 1 JSON), 2026-08-19
 

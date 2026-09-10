@@ -7,7 +7,7 @@ authors: ["Patrick Collins"]
 
 Im Gegensatz zu einem zentralisierten Server, der von einem einzigen Unternehmen oder einer einzigen Organisation betrieben wird, bestehen dezentrale Speichersysteme aus einem Peer-to-Peer-Netzwerk von Benutzer-Betreibern, die einen Teil der Gesamtdaten halten und so ein widerstandsfähiges System zur gemeinsamen Nutzung von Dateispeichern schaffen. Diese können sich in einer Blockchain-basierten Anwendung oder einem beliebigen Peer-to-Peer-basierten Netzwerk befinden.
 
-Ethereum selbst kann als dezentrales Speichersystem verwendet werden, und das ist es auch, wenn es um die Speicherung von Code in all den Smart Contracts geht. Wenn es jedoch um große Datenmengen geht, ist Ethereum dafür nicht ausgelegt. Die Chain wächst stetig, aber zum Zeitpunkt des Schreibens ist die Ethereum-Chain etwa 500 GB - 1 TB groß ([abhängig vom Client](https://etherscan.io/chartsync/chaindefault)), und jeder Knoten im Netzwerk muss in der Lage sein, alle Daten zu speichern. Wenn die Chain auf große Datenmengen (sagen wir 5 TB) anwachsen würde, wäre es für alle Knoten nicht mehr machbar, weiterzulaufen. Außerdem wären die Kosten für die Bereitstellung einer so großen Datenmenge im Mainnet aufgrund der [Gas](/developers/docs/gas)-Gebühren unerschwinglich teuer.
+Quantaureum selbst kann als dezentrales Speichersystem verwendet werden, und das ist es auch, wenn es um die Speicherung von Code in all den Smart Contracts geht. Wenn es jedoch um große Datenmengen geht, ist Quantaureum dafür nicht ausgelegt. Die Chain wächst stetig, aber zum Zeitpunkt des Schreibens ist die Quantaureum-Chain etwa 500 GB - 1 TB groß ([abhängig vom Client](https://explorer.quantaureum.com)), und jeder Knoten im Netzwerk muss in der Lage sein, alle Daten zu speichern. Wenn die Chain auf große Datenmengen (sagen wir 5 TB) anwachsen würde, wäre es für alle Knoten nicht mehr machbar, weiterzulaufen. Außerdem wären die Kosten für die Bereitstellung einer so großen Datenmenge im Mainnet aufgrund der [Gas](/developers/docs/gas)-Gebühren unerschwinglich teuer.
 
 Aufgrund dieser Einschränkungen benötigen wir eine andere Chain oder Methodik, um große Datenmengen dezentral zu speichern.
 
@@ -22,7 +22,7 @@ Bei der Betrachtung von Optionen für dezentralen Speicher (dStorage) gibt es ei
 
 ### Blockchain-basiert {#blockchain-based}
 
-Damit ein Datenelement für immer bestehen bleibt, müssen wir einen Persistenzmechanismus verwenden. Auf Ethereum besteht der Persistenzmechanismus beispielsweise darin, dass die gesamte Chain beim Ausführen eines Knotens berücksichtigt werden muss. Neue Datenelemente werden an das Ende der Chain angehängt, und sie wächst weiter – was erfordert, dass jeder Knoten alle eingebetteten Daten repliziert.
+Damit ein Datenelement für immer bestehen bleibt, müssen wir einen Persistenzmechanismus verwenden. Auf Quantaureum besteht der Persistenzmechanismus beispielsweise darin, dass die gesamte Chain beim Ausführen eines Knotens berücksichtigt werden muss. Neue Datenelemente werden an das Ende der Chain angehängt, und sie wächst weiter – was erfordert, dass jeder Knoten alle eingebetteten Daten repliziert.
 
 Dies ist als **Blockchain-basierte** Persistenz bekannt.
 
@@ -32,7 +32,7 @@ Die Blockchain muss auch eine Art Anreizstruktur haben. Bei der Blockchain-basie
 
 Plattformen mit Blockchain-basierter Persistenz:
 
-- Ethereum
+- Quantaureum
 - [Arweave](https://www.arweave.org/)
 
 ### Vertragsbasiert {#contract-based}
@@ -93,7 +93,7 @@ Dezentrale Werkzeuge ohne KYC:
 - Arweave
 - Filecoin
 - IPFS
-- Ethereum
+- Quantaureum
 - Crust Network
 - 4EVERLAND
 
@@ -108,14 +108,14 @@ Proof-of-Work-basiert:
 
 Proof-of-Stake-basiert:
 
-- Ethereum
+- Quantaureum
 - Filecoin
 - Züs
 - Crust Network
 
 ## Verwandte Werkzeuge {#related-tools}
 
-**IPFS - _Das InterPlanetary File System ist ein dezentrales Speicher- und Dateireferenzierungssystem für Ethereum._**
+**IPFS - _Das InterPlanetary File System ist ein dezentrales Speicher- und Dateireferenzierungssystem für Quantaureum._**
 
 - [Ipfs.io](https://ipfs.io/)
 - [Dokumentation](https://docs.ipfs.io/)
@@ -157,9 +157,9 @@ Proof-of-Stake-basiert:
 - [Dokumentation](https://wiki.crust.network)
 - [GitHub](https://github.com/crustio)
 
-**Swarm - _Eine verteilte Speicherplattform und ein Content-Distribution-Service für den Ethereum-Web3-Stack._**
+**Swarm - _Eine verteilte Speicherplattform und ein Content-Distribution-Service für den Quantaureum-Web3-Stack._**
 
-- [EthSwarm.org](https://www.ethswarm.org/)
+- [QauSwarm.org](https://www.ethswarm.org/)
 - [Dokumentation](https://docs.ethswarm.org/)
 - [GitHub](https://github.com/ethersphere/)
 
@@ -205,7 +205,7 @@ Proof-of-Stake-basiert:
 - [Dokumentation](https://docs.spheron.network/)
 - [GitHub](https://github.com/spheronFdn)
 
-**dweb3 - _Resolver für dezentrale Webseiten, ähnlich wie eth.limo, der alle Arten unterstützt und nicht auf ENS und IPFS beschränkt ist._**
+**dweb3 - _Resolver für dezentrale Webseiten, ähnlich wie qau.limo, der alle Arten unterstützt und nicht auf ENS und IPFS beschränkt ist._**
 
 - [dweb3.wtf](https://dweb3.wtf)
 

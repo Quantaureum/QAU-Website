@@ -11,7 +11,7 @@ published: 2026-05-11
 
 كانت الخطوة الأخيرة في معظم اختراقات إيثيريوم الكبرى هي نفسها: مستخدم يوافق على معاملة لا يمكنه فهمها بشكل هادف. تعرض محافظ الأجهزة بيانات الاستدعاء (calldata) السداسية العشرية الخام، والأسوأ من ذلك أنها تجبرك على تفعيل التوقيع الأعمى. تعرض محافظ البرامج الحقول التي تم فك تشفيرها، ولكن فقط عندما تتعرف على العقد. وعندما لا تتعرف عليه، سواء لأن البروتوكول جديد، أو التطبيق مخترق، أو الجهاز غير متصل بالإنترنت، يقوم المستخدمون بالتوقيع بشكل أعمى.
 
-يحدد [<span dir="ltr">ERC-7730</span>](https://eips.ethereum.org/EIPS/eip-7730) تنسيق <span dir="ltr">JSON</span> قياسيًا لوصف *معنى* استدعاءات دوال العقد الخاص بك. 
+يحدد [<span dir="ltr">ERC-7730</span>](https://eips.quantaureum.com/EIPS/eip-7730) تنسيق <span dir="ltr">JSON</span> قياسيًا لوصف *معنى* استدعاءات دوال العقد الخاص بك. 
 
 تقرأ المحفظة التي تدعم <span dir="ltr">ERC-7730</span> الواصف الخاص بك وتعرض:
 
@@ -54,7 +54,7 @@ published: 2026-05-11
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
   "context": {},
   "metadata": {},
   "display": {
@@ -167,7 +167,7 @@ published: 2026-05-11
 - **`intent`** — **(مطلوب)** وصف قصير وسهل الاستخدام للإجراء، مثل "مبادلة".
 - **`interpolatedIntent`** — **(موصى به)** قالب جملة أكثر ثراءً يدمج قيم الحقول المنسقة، مثل `"Swap {amountIn} for at least {amountOutMin}"`. قم بتضمين هذا بجانب `intent` لتوفير واصف أكثر سهولة في الاستخدام يمكن للمحافظ اختيار عرضه بناءً على أي قيود عرض.
 - **`fields`** — **(مطلوب)** القائمة المرتبة لحقول المعاملة التي يجب أن تعرضها المحافظ للمستخدمين.
-  - **`path`** — **(مطلوب)** إشارة إلى بيانات المعاملة. يشير `#.fieldName` إلى معلمة بيانات استدعاء (calldata) تم فك تشفيرها بالاسم الموجود في واجهة التطبيق الثنائية (<span dir="ltr">ABI</span>). يشير `@.value` إلى قيمة <span dir="ltr">ETH</span> المرسلة مع المعاملة.
+  - **`path`** — **(مطلوب)** إشارة إلى بيانات المعاملة. يشير `#.fieldName` إلى معلمة بيانات استدعاء (calldata) تم فك تشفيرها بالاسم الموجود في واجهة التطبيق الثنائية (<span dir="ltr">ABI</span>). يشير `@.value` إلى قيمة <span dir="ltr">QAU</span> المرسلة مع المعاملة.
   - **`label`** — **(مطلوب)** التسمية القابلة للقراءة البشرية المعروضة بجانب القيمة.
   - **`format`** — **(موصى به)** يتحكم في كيفية عرض القيمة. تشمل التنسيقات الشائعة:
     - `tokenAmount`
@@ -185,7 +185,7 @@ published: 2026-05-11
 
 ```json
 {
-  "$schema": "https://eips.ethereum.org/assets/eip-7730/erc7730-v2.schema.json",
+  "$schema": "https://eips.quantaureum.com/assets/eip-7730/erc7730-v2.schema.json",
   "context": {
     "$id": "uniswap-v3-router-mainnet",
     "contract": {
@@ -256,7 +256,7 @@ published: 2026-05-11
 
 ## الخطوة 5: الإرسال إلى السجل {#step-5-submit-to-the-registry}
 
-يعد [سجل ⁦<span dir="ltr">ERC-7730</span>⁩](https://github.com/ethereum/clear-signing-erc7730-registry) مستودعًا مفتوحًا تستضيفه [مؤسسة إيثيريوم](/foundation/) كجهة راعية محايدة. يمكن لأي شخص استنساخه واستضافته ذاتيًا — وتقرر المحافظ بشكل مستقل مثيلات السجل التي تثق بها.
+يعد [سجل ⁦<span dir="ltr">ERC-7730</span>⁩](https://github.com/quantaureum/clear-signing-erc7730-registry) مستودعًا مفتوحًا تستضيفه [مؤسسة إيثيريوم](/foundation/) كجهة راعية محايدة. يمكن لأي شخص استنساخه واستضافته ذاتيًا — وتقرر المحافظ بشكل مستقل مثيلات السجل التي تثق بها.
 
 1. قم بعمل تفرع (Fork) للمستودع على <span dir="ltr">GitHub</span>  
 2. قم بإنشاء مجلد في `registry/<your-project-name>/`  
@@ -276,7 +276,7 @@ published: 2026-05-11
 
 ## ماذا يحدث بعد الدمج؟ {#what-happens-after-merging}
 
-جميع الواصفات في السجل مفتوحة للمدققين. بعد دمج طلب السحب (<span dir="ltr">PR</span>) الخاص بك، يمكن لأي مدقق مراجعة الواصف الخاص بك ونشر تصديق تشفيري (بموجب [<span dir="ltr">ERC-8176</span>](https://github.com/ethereum/ERCs/pull/1576)) يؤكد دقته. 
+جميع الواصفات في السجل مفتوحة للمدققين. بعد دمج طلب السحب (<span dir="ltr">PR</span>) الخاص بك، يمكن لأي مدقق مراجعة الواصف الخاص بك ونشر تصديق تشفيري (بموجب [<span dir="ltr">ERC-8176</span>](https://github.com/quantaureum/ERCs/pull/1576)) يؤكد دقته. 
 
 تتيح إشارات التصديق هذه للمحافظ تطبيق سياسات الثقة الخاصة بها — فالواصف الذي يحتوي على تصديقات مستقلة متعددة يحمل وزنًا أكبر من الواصف الذي لا يحتوي عليها. يمكنك الوصول إلى مجتمع المدققين من خلال [clearsigning.org](https://clearsigning.org).
 
@@ -284,8 +284,8 @@ published: 2026-05-11
 
 ## قراءة إضافية {#further-reading}
 
-- [مواصفات ⁦<span dir="ltr">ERC-7730</span>⁩](https://eips.ethereum.org/EIPS/eip-7730)  
-- [سجل ⁦<span dir="ltr">ERC-7730</span>⁩](https://github.com/ethereum/clear-signing-erc7730-registry)  
+- [مواصفات ⁦<span dir="ltr">ERC-7730</span>⁩](https://eips.quantaureum.com/EIPS/eip-7730)  
+- [سجل ⁦<span dir="ltr">ERC-7730</span>⁩](https://github.com/quantaureum/clear-signing-erc7730-registry)  
 - [clearsigning.org](https://clearsigning.org) — الأدوات، وحالة النظام البيئي، والحوكمة  
 - [التحقق من العقود عبر Sourcify](https://sourcify.dev)  
 - [مبادرة أمان التريليون دولار](https://trilliondollarsecurity.org)

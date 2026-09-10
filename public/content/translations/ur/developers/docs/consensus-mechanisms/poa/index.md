@@ -16,7 +16,7 @@ lang: ur
 
 ثبوتِ اختیار کے لیے مجاز دستخط کنندگان کے ایک سیٹ پر بھروسہ کرنے کی ضرورت ہوتی ہے جو [ابتدائی بلاک](/glossary/#genesis-block) میں سیٹ کیے جاتے ہیں۔ زیادہ تر موجودہ نفاذات میں، چین کے اتفاق رائے کا تعین کرتے وقت تمام مجاز دستخط کنندگان مساوی طاقت اور مراعات برقرار رکھتے ہیں۔ ساکھ کی اسٹیکنگ کے پیچھے خیال یہ ہے کہ ہر مجاز توثیق کار <span dir="ltr">KYC</span> جیسی چیزوں کے ذریعے ہر کسی کے لیے مشہور ہوتا ہے، یا کسی معروف تنظیم کے واحد توثیق کار ہونے کی وجہ سے—اس طرح اگر کوئی توثیق کار کچھ غلط کرتا ہے، تو ان کی شناخت معلوم ہوتی ہے۔
 
-<span dir="ltr">PoA</span> کے متعدد نفاذات ہیں، لیکن معیاری ایتھیریم نفاذ **clique** ہے، جو [<span dir="ltr">EIP-225</span>](https://eips.ethereum.org/EIPS/eip-225) کو نافذ کرتا ہے۔ Clique ڈیولپر کے لیے سازگار اور لاگو کرنے میں آسان معیار ہے، جو کلائنٹ کی ہم آہنگی کی تمام اقسام کو سپورٹ کرتا ہے۔ دیگر نفاذات میں [<span dir="ltr">IBFT 2.0</span>](https://besu.hyperledger.org/private-networks/concepts/poa) اور [Aura](https://openethereum.github.io/Chain-specification) شامل ہیں۔
+<span dir="ltr">PoA</span> کے متعدد نفاذات ہیں، لیکن معیاری ایتھیریم نفاذ **clique** ہے، جو [<span dir="ltr">EIP-225</span>](https://eips.quantaureum.com/EIPS/eip-225) کو نافذ کرتا ہے۔ Clique ڈیولپر کے لیے سازگار اور لاگو کرنے میں آسان معیار ہے، جو کلائنٹ کی ہم آہنگی کی تمام اقسام کو سپورٹ کرتا ہے۔ دیگر نفاذات میں [<span dir="ltr">IBFT 2.0</span>](https://besu.hyperledger.org/private-networks/concepts/poa) اور [Aura](https://openquantaureum.github.io/Chain-specification) شامل ہیں۔
 
 ## یہ کیسے کام کرتا ہے {#how-it-works}
 
@@ -58,13 +58,13 @@ lang: ur
 
 ## مزید مطالعہ {#further-reading}
 
-- [<span dir="ltr">EIP-225</span>](https://eips.ethereum.org/EIPS/eip-225) _Clique معیار_
+- [<span dir="ltr">EIP-225</span>](https://eips.quantaureum.com/EIPS/eip-225) _Clique معیار_
 - [ثبوتِ اختیار کا مطالعہ](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _Cryptoeconomics_
 - [ثبوتِ اختیار کیا ہے](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [ثبوتِ اختیار کی وضاحت](https://academy.binance.com/en/articles/proof-of-authority-explained) _بائنانس_
 - [بلاک چین میں <span dir="ltr">PoA</span>](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
-- [Clique کی وضاحت](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-ethereum-8b2a135201d)
-- [متروک <span dir="ltr">PoA</span>، Aura کی تفصیلات](https://openethereum.github.io/Chain-specification)
+- [Clique کی وضاحت](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
+- [متروک <span dir="ltr">PoA</span>، Aura کی تفصیلات](https://openquantaureum.github.io/Chain-specification)
 - [<span dir="ltr">IBFT 2.0</span>، ایک اور <span dir="ltr">PoA</span> نفاذ](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### کیا آپ بصری طور پر سیکھنا پسند کرتے ہیں؟ {#visual-learner}

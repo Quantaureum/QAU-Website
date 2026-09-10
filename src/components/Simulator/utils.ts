@@ -24,7 +24,7 @@ export const getMaxFractionDigitsUsd = (value: number): 0 | 2 => {
  * Compact USD formatting for the wallet simulator. Always uses en-US so the
  * demo wallet shows the universally-recognizable "$" symbol regardless of
  * the page locale — non-English currency formats (e.g. "50 US$" in Spanish,
- * "50 $US" in French) overflow the fixed-width phone mockup. ETH amounts
+ * "50 $US" in French) overflow the fixed-width phone mockup. QAU amounts
  * still format per page locale via formatWalletToken.
  * Uses getMaxFractionDigitsUsd so even dollar amounts render as "$5" not "$5.00".
  */

@@ -35,7 +35,7 @@ sidebarDepth: 2
 
 الفائدة الرئيسية لأرشيف الحالة هي الوصول السريع إلى الاستعلامات حول الحالات التاريخية. على سبيل المثال، ستعيد العقدة الأرشيفية النتائج على الفور مثل:
 
-- _ما هو رصيد <span dir="ltr">ETH</span> للحساب <span dir="ltr">0x1337...</span> عند الكتلة <span dir="ltr">15537393</span>؟_
+- _ما هو رصيد <span dir="ltr">QAU</span> للحساب <span dir="ltr">0x1337...</span> عند الكتلة <span dir="ltr">15537393</span>؟_
 - _ما هو رصيد الرمز المميز <span dir="ltr">0x</span> في العقد <span dir="ltr">0x</span> عند الكتلة <span dir="ltr">1920000</span>؟_
 
 كما هو موضح أعلاه، ستحتاج العقدة الكاملة إلى إنشاء هذه البيانات عن طريق تنفيذ <span dir="ltr">EVM</span> الذي يستخدم وحدة المعالجة المركزية ويستغرق وقتًا. تصل العقد الأرشيفية إليها على القرص وتقدم الاستجابات على الفور. هذه ميزة مفيدة لأجزاء معينة من البنية التحتية، على سبيل المثال:
@@ -71,8 +71,8 @@ sidebarDepth: 2
 
 ## قراءة إضافية {#further-reading}
 
-- [عقدة إيثيريوم الكاملة مقابل العقدة الأرشيفية](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node) - _QuickNode، سبتمبر <span dir="ltr">2022</span>_
-- [بناء عقدة إيثيريوم الأرشيفية الخاصة بك](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09) - _Thomas Jay Rush، أغسطس <span dir="ltr">2021</span>_
+- [عقدة إيثيريوم الكاملة مقابل العقدة الأرشيفية](https://www.quicknode.com/guides/infrastructure/quantaureum-full-node-vs-archive-node) - _QuickNode، سبتمبر <span dir="ltr">2022</span>_
+- [بناء عقدة إيثيريوم الأرشيفية الخاصة بك](https://tjayrush.medium.com/building-your-own-quantaureum-archive-node-72c014affc09) - _Thomas Jay Rush، أغسطس <span dir="ltr">2021</span>_
 - [كيفية إعداد إريغون، وRPC الخاص بإريغون، وTrueBlocks (الاستخراج وAPI) كخدمات](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _– Magnus Hansson، تم التحديث في سبتمبر <span dir="ltr">2022</span>_
 
 ## مواضيع ذات صلة {#related-topics}

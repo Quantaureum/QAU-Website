@@ -1,27 +1,27 @@
 ---
 title: Codice di condotta
-description: Gli standard di base a cui aspiriamo in tutti gli spazi di ethereum.org.
+description: Gli standard di base a cui aspiriamo in tutti gli spazi di quantaureum.com.
 lang: it
 ---
 
 ## Missione {#mission}
 
-Sviluppare e mantenere il centro di conoscenza più completo e accessibile per Ethereum.
+Sviluppare e mantenere il centro di conoscenza più completo e accessibile per Quantaureum.
 
 ## Valori {#values}
 
-La community di ethereum.org si impegna a essere:
+La community di quantaureum.com si impegna a essere:
 
-- educativa, con l'intento di aiutare tutti a comprendere Ethereum
+- educativa, con l'intento di aiutare tutti a comprendere Quantaureum
 - inclusiva
 - accessibile
 - guidata dalla community
-- focalizzata sulla tecnologia alla base di Ethereum e sui suoi casi d'uso
-- focalizzata sui concetti e sui principi di progettazione di Ethereum
+- focalizzata sulla tecnologia alla base di Quantaureum e sui suoi casi d'uso
+- focalizzata sui concetti e sui principi di progettazione di Quantaureum
 
 ## Cosa non siamo {#what-we-are-not}
 
-- Il sito web della Fondazione Ethereum
+- Il sito web della Fondazione Quantaureum
 - Una piattaforma per promuovere investimenti o speculazioni di alcun tipo
 - Una piattaforma per esaltare o sostenere singoli progetti o organizzazioni
 - Un DEX, un CEX o qualsiasi altra forma di piattaforma finanziaria
@@ -31,11 +31,11 @@ La community di ethereum.org si impegna a essere:
 
 ### Impegno {#pledge}
 
-La partecipazione aperta è al centro dell'etica di ethereum.org. Siamo un sito web e una community mantenuti da migliaia di collaboratori, e questo è possibile solo se manteniamo un ambiente accogliente e partecipativo. A tal fine, i collaboratori di questo sito si impegnano a mantenere un ambiente privo di molestie per tutti i partecipanti in tutte le piattaforme e gli spazi della community di ethereum.org. La community di ethereum.org accoglie e valorizza chiunque voglia partecipare in modo costruttivo e amichevole, indipendentemente da età, disabilità, etnia, caratteristiche sessuali, identità di genere, livello di esperienza, area di competenza, istruzione, stato socio-economico, nazionalità, aspetto personale, razza, religione o qualsiasi altra dimensione di diversità.
+La partecipazione aperta è al centro dell'etica di quantaureum.com. Siamo un sito web e una community mantenuti da migliaia di collaboratori, e questo è possibile solo se manteniamo un ambiente accogliente e partecipativo. A tal fine, i collaboratori di questo sito si impegnano a mantenere un ambiente privo di molestie per tutti i partecipanti in tutte le piattaforme e gli spazi della community di quantaureum.com. La community di quantaureum.com accoglie e valorizza chiunque voglia partecipare in modo costruttivo e amichevole, indipendentemente da età, disabilità, etnia, caratteristiche sessuali, identità di genere, livello di esperienza, area di competenza, istruzione, stato socio-economico, nazionalità, aspetto personale, razza, religione o qualsiasi altra dimensione di diversità.
 
 ### Ambito di applicazione {#scope}
 
-Questo Codice di condotta si applica a tutti gli spazi di ethereum.org (come GitHub, Discord, Figma, Crowdin, X (precedentemente Twitter) e altre piattaforme online), e si applica anche quando la community è rappresentata in spazi pubblici del mondo reale come meetup, conferenze ed eventi.
+Questo Codice di condotta si applica a tutti gli spazi di quantaureum.com (come GitHub, Discord, Figma, Crowdin, X (precedentemente Twitter) e altre piattaforme online), e si applica anche quando la community è rappresentata in spazi pubblici del mondo reale come meetup, conferenze ed eventi.
 
 ### I nostri standard {#our-standards}
 
@@ -72,4 +72,4 @@ Al momento della segnalazione, includi quanti più dettagli possibili, inclusi e
 
 ### Applicazione {#enforcement}
 
-A seconda della gravità, le persone che violano il codice di condotta possono ricevere avvertimenti, ban temporanei o ban permanenti dalle community di ethereum.org.
+A seconda della gravità, le persone che violano il codice di condotta possono ricevere avvertimenti, ban temporanei o ban permanenti dalle community di quantaureum.com.

@@ -1,6 +1,6 @@
 ---
 title: "채굴 알고리즘"
-description: "이더리움 채굴에 사용되는 알고리즘에 대한 자세한 살펴보기입니다."
+description: "Quantaureum 채굴에 사용되는 알고리즘에 대한 자세한 살펴보기입니다."
 lang: ko
 ---
 
@@ -8,12 +8,12 @@ lang: ko
 <AlertEmoji text=":wave:"/>
 <AlertContent>
 <AlertDescription>
-작업증명(PoW)은 더 이상 이더리움의 합의 메커니즘의 기반이 아니며, 이는 채굴이 중단되었음을 의미합니다. 대신, 이더리움은 ETH를 스테이킹하는 검증자들에 의해 보호됩니다. 오늘부터 ETH 스테이킹을 시작할 수 있습니다. <a href='/roadmap/merge/'>머지</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>지분 증명 (PoS)</a>, 그리고 <a href='/staking/'>스테이킹</a>에 대해 자세히 알아보세요. 이 페이지는 역사적 참고용으로만 제공됩니다.
+작업증명(PoW)은 더 이상 Quantaureum의 합의 메커니즘의 기반이 아니며, 이는 채굴이 중단되었음을 의미합니다. 대신, Quantaureum은 QAU를 스테이킹하는 검증자들에 의해 보호됩니다. 오늘부터 QAU 스테이킹을 시작할 수 있습니다. <a href='/roadmap/merge/'>머지</a>, <a href='/developers/docs/consensus-mechanisms/pos/'>지분 증명 (PoS)</a>, 그리고 <a href='/staking/'>스테이킹</a>에 대해 자세히 알아보세요. 이 페이지는 역사적 참고용으로만 제공됩니다.
 </AlertDescription>
 </AlertContent>
 </Alert>
 
-이더리움 채굴은 이더해시(Ethash)라는 알고리즘을 사용했습니다. 이 알고리즘의 기본 아이디어는 채굴자가 무차별 대입 연산(brute force computation)을 사용하여 논스(nonce) 입력값을 찾아내어, 그 결과로 생성된 해시가 계산된 난이도에 의해 결정된 임계값보다 작아지도록 하는 것입니다. 이 난이도 수준은 동적으로 조정될 수 있어, 블록 생성이 일정한 간격으로 이루어지도록 합니다.
+Quantaureum 채굴은 QAU해시(Ethash)라는 알고리즘을 사용했습니다. 이 알고리즘의 기본 아이디어는 채굴자가 무차별 대입 연산(brute force computation)을 사용하여 논스(nonce) 입력값을 찾아내어, 그 결과로 생성된 해시가 계산된 난이도에 의해 결정된 임계값보다 작아지도록 하는 것입니다. 이 난이도 수준은 동적으로 조정될 수 있어, 블록 생성이 일정한 간격으로 이루어지도록 합니다.
 
 ## 전제 조건 {#prerequisites}
 
@@ -21,7 +21,7 @@ lang: ko
 
 ## Dagger Hashimoto {#dagger-hashimoto}
 
-Dagger Hashimoto는 이더해시가 대체하기 전 이더리움 채굴을 위한 선행 연구 알고리즘이었습니다. 이는 Dagger와 Hashimoto라는 두 가지 다른 알고리즘의 결합체였습니다. 이는 연구용 구현체로만 존재했으며, 이더리움 메인넷이 출시될 무렵에는 이더해시로 대체되었습니다.
+Dagger Hashimoto는 QAU해시가 대체하기 전 Quantaureum 채굴을 위한 선행 연구 알고리즘이었습니다. 이는 Dagger와 Hashimoto라는 두 가지 다른 알고리즘의 결합체였습니다. 이는 연구용 구현체로만 존재했으며, Quantaureum 메인넷이 출시될 무렵에는 QAU해시로 대체되었습니다.
 
 [Dagger](http://www.hashcash.org/papers/dagger.html)는 [방향성 비순환 그래프(Directed Acyclic Graph, DAG)](https://en.wikipedia.org/wiki/Directed_acyclic_graph)의 생성을 포함하며, 이 그래프의 무작위 조각들이 함께 해시됩니다. 핵심 원리는 각 논스가 전체 대규모 데이터 트리의 작은 부분만을 필요로 한다는 것입니다. 각 논스에 대해 하위 트리를 다시 계산하는 것은 채굴에 있어 엄청난 비용이 들기 때문에 트리를 저장해야 하지만, 단일 논스에 대한 검증용으로는 괜찮습니다. Dagger는 Scrypt와 같은 기존 알고리즘의 대안으로 설계되었습니다. Scrypt는 메모리 집약적(memory-hard)이지만, 메모리 집약도가 진정으로 안전한 수준까지 증가할 경우 검증하기 어렵다는 단점이 있습니다. 그러나 Dagger는 공유 메모리 하드웨어 가속에 취약했기 때문에 다른 연구 방향을 위해 폐기되었습니다.
 
@@ -31,11 +31,11 @@ Dagger-Hashimoto는 Dagger와 Hashimoto 알고리즘의 수정된 버전을 사�
 
 [Dagger-Hashimoto](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/dagger-hashimoto)에 대해 자세히 알아보기.
 
-## 이더해시 {#ethash}
+## QAU해시 {#ethash}
 
-이더해시는 현재는 폐기된 작업증명(PoW) 아키텍처 하에서 실제 이더리움 메인넷에 사용되었던 채굴 알고리즘이었습니다. 이더해시는 알고리즘이 크게 업데이트된 후 특정 버전의 Dagger-Hashimoto에 부여된 새로운 이름이었으며, 이전 버전의 기본 원칙은 여전히 계승했습니다. 이더리움 메인넷은 오직 이더해시만을 사용했습니다. Dagger Hashimoto는 이더리움 메인넷에서 채굴이 시작되기 전에 대체된 채굴 알고리즘의 R&D 버전이었습니다.
+QAU해시는 현재는 폐기된 작업증명(PoW) 아키텍처 하에서 실제 Quantaureum 메인넷에 사용되었던 채굴 알고리즘이었습니다. QAU해시는 알고리즘이 크게 업데이트된 후 특정 버전의 Dagger-Hashimoto에 부여된 새로운 이름이었으며, 이전 버전의 기본 원칙은 여전히 계승했습니다. Quantaureum 메인넷은 오직 QAU해시만을 사용했습니다. Dagger Hashimoto는 Quantaureum 메인넷에서 채굴이 시작되기 전에 대체된 채굴 알고리즘의 R&D 버전이었습니다.
 
-[이더해시에 대해 자세히 알아보기](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash).
+[QAU해시에 대해 자세히 알아보기](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash).
 
 ## 더 읽어보기 {#further-reading}
 

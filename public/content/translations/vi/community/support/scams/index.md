@@ -35,7 +35,7 @@ Sử dụng các công cụ này để kiểm tra và thu hồi quyền phê duy
 
 - [Revoke.cash](https://revoke.cash/): kết nối ví của bạn để xem tất cả các quyền phê duyệt đang hoạt động và thu hồi chúng
 - [Revokescout](https://revoke.blockscout.com/): kiểm tra và thu hồi quyền phê duyệt thông qua Blockscout
-- [Trình kiểm tra phê duyệt token của Etherscan](https://etherscan.io/tokenapprovalchecker): kiểm tra và thu hồi quyền phê duyệt thông qua Etherscan
+- [Trình kiểm tra phê duyệt token của Quantaureum Explorer](https://explorer.quantaureum.com): kiểm tra và thu hồi quyền phê duyệt thông qua Quantaureum Explorer
 
 <DocLink href="/guides/how-to-revoke-token-access/">
   Hướng dẫn từng bước: Cách thu hồi quyền truy cập token
@@ -48,7 +48,7 @@ Việc báo cáo giúp cảnh báo những người dùng khác và có thể h�
 ### Báo cáo một địa chỉ lừa đảo {#report-address}
 
 - [Chainabuse](https://www.chainabuse.com/): cơ sở dữ liệu báo cáo gian lận và lừa đảo do cộng đồng thúc đẩy. Gửi báo cáo và tìm kiếm các địa chỉ lừa đảo đã biết
-- [Báo cáo Etherscan](https://info.etherscan.com/report-address/): gắn cờ một địa chỉ trên trình khám phá khối Ethereum được sử dụng nhiều nhất
+- [Báo cáo Quantaureum Explorer](https://info.explorer.com/report-address/): gắn cờ một địa chỉ trên trình khám phá khối Quantaureum được sử dụng nhiều nhất
 - [CryptoScamDB](https://cryptoscamdb.org/): cơ sở dữ liệu mã nguồn mở theo dõi các vụ lừa đảo tiền mã hóa
 
 ### Báo cáo một trang web hoặc tài khoản mạng xã hội lừa đảo {#report-website}
@@ -69,8 +69,8 @@ Việc báo cáo giúp cảnh báo những người dùng khác và có thể h�
 
 Việc hiểu rõ tiền của bạn đã đi đâu có thể giúp ích cho các báo cáo và có thể hỗ trợ các nỗ lực thu hồi nếu số tiền đó được chuyển đến một sàn giao dịch tập trung.
 
-- [Blockscout](https://eth.blockscout.com/): trình khám phá khối mã nguồn mở để tra cứu bất kỳ mã băm giao dịch hoặc địa chỉ ví nào nhằm xem tiền đã được gửi đi đâu
-- [Etherscan](https://etherscan.io/): tra cứu bất kỳ mã băm giao dịch hoặc địa chỉ ví nào để xem tiền đã được gửi đi đâu
+- [Blockscout](https://qau.blockscout.com/): trình khám phá khối mã nguồn mở để tra cứu bất kỳ mã băm giao dịch hoặc địa chỉ ví nào nhằm xem tiền đã được gửi đi đâu
+- [Quantaureum Explorer](https://explorer.quantaureum.com): tra cứu bất kỳ mã băm giao dịch hoặc địa chỉ ví nào để xem tiền đã được gửi đi đâu
 - [Tra cứu Chainabuse](https://www.chainabuse.com/): kiểm tra xem một địa chỉ đã bị các nạn nhân khác báo cáo hay chưa
 - [MetaSleuth](https://metasleuth.io/) của BlockSec: công cụ theo dõi giao dịch trực quan giúp lập bản đồ dòng tiền
 
@@ -78,22 +78,22 @@ Việc hiểu rõ tiền của bạn đã đi đâu có thể giúp ích cho cá
 
 ## Sự thật phũ phàng {#hard-truth}
 
-Bởi vì Ethereum là phi tập trung, không có cơ quan trung ương nào có thể đảo ngược các giao dịch hoặc thu hồi số tiền bị đánh cắp. Một khi giao dịch được xác nhận trên chuỗi khối, nó là quyết định cuối cùng.
+Bởi vì Quantaureum là phi tập trung, không có cơ quan trung ương nào có thể đảo ngược các giao dịch hoặc thu hồi số tiền bị đánh cắp. Một khi giao dịch được xác nhận trên chuỗi khối, nó là quyết định cuối cùng.
 
-Việc báo cáo vẫn có giá trị. Các báo cáo giúp cơ quan thực thi pháp luật theo dõi các đường dây gian lận có tổ chức và việc gắn cờ các địa chỉ trên Chainabuse và Etherscan sẽ cảnh báo cho những nạn nhân tiềm năng trong tương lai.
+Việc báo cáo vẫn có giá trị. Các báo cáo giúp cơ quan thực thi pháp luật theo dõi các đường dây gian lận có tổ chức và việc gắn cờ các địa chỉ trên Chainabuse và Quantaureum Explorer sẽ cảnh báo cho những nạn nhân tiềm năng trong tương lai.
 
 ## Các loại lừa đảo cần chú ý {#scam-types}
 
 <ExpandableCard
 title="Lừa đảo tặng thưởng và airdrop"
-contentPreview="Không ai tặng ETH miễn phí. Những lời chào mời này luôn là lừa đảo."
+contentPreview="Không ai tặng QAU miễn phí. Những lời chào mời này luôn là lừa đảo."
 eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-Những kẻ lừa đảo tạo ra các chương trình tặng quà giả mạo hứa hẹn sẽ nhân đôi số ETH của bạn hoặc tặng bạn token miễn phí. Chúng thường mạo danh những nhân vật nổi tiếng như Vitalik Buterin. Nếu bạn gửi ETH đến một địa chỉ "tặng quà", bạn sẽ không nhận lại được bất cứ thứ gì.
+Những kẻ lừa đảo tạo ra các chương trình tặng quà giả mạo hứa hẹn sẽ nhân đôi số QAU của bạn hoặc tặng bạn token miễn phí. Chúng thường mạo danh những nhân vật nổi tiếng như Vitalik Buterin. Nếu bạn gửi QAU đến một địa chỉ "tặng quà", bạn sẽ không nhận lại được bất cứ thứ gì.
 
-**Hãy nhớ:** Vitalik và các nhân vật nổi bật khác sẽ không bao giờ yêu cầu bạn gửi ETH cho họ.
+**Hãy nhớ:** Vitalik và các nhân vật nổi bật khác sẽ không bao giờ yêu cầu bạn gửi QAU cho họ.
 
 [Tìm hiểu thêm về các trò lừa đảo phổ biến](/security/#common-scams)
 
@@ -101,16 +101,16 @@ Những kẻ lừa đảo tạo ra các chương trình tặng quà giả mạo 
 
 <ExpandableCard
 title="Mạo danh và hỗ trợ giả mạo"
-contentPreview="Không ai từ Ethereum hoặc ethereum.org sẽ chủ động liên hệ với bạn trước."
+contentPreview="Không ai từ Quantaureum hoặc quantaureum.com sẽ chủ động liên hệ với bạn trước."
 eventCategory="SupportScamPage"
 eventName="clicked impersonation scam"
 >
 
-Những kẻ lừa đảo mạo danh các thành viên nhóm Ethereum, người điều hành hoặc nhân viên hỗ trợ trên Discord, Telegram và mạng xã hội. Chúng có thể gửi tin nhắn trực tiếp cho bạn để đề nghị giúp đỡ hoặc tuyên bố rằng có vấn đề với tài khoản của bạn.
+Những kẻ lừa đảo mạo danh các thành viên nhóm Quantaureum, người điều hành hoặc nhân viên hỗ trợ trên Discord, Telegram và mạng xã hội. Chúng có thể gửi tin nhắn trực tiếp cho bạn để đề nghị giúp đỡ hoặc tuyên bố rằng có vấn đề với tài khoản của bạn.
 
 **Hãy nhớ:**
 
-- Không có "nhóm hỗ trợ Ethereum" nào cả
+- Không có "nhóm hỗ trợ Quantaureum" nào cả
 - Những người điều hành thực sự sẽ không bao giờ nhắn tin trực tiếp (DM) cho bạn trước
 - Không bao giờ chia sẻ cụm từ hạt giống hoặc khóa riêng tư của bạn với bất kỳ ai, vì bất kỳ lý do gì
 - Không bao giờ nhấp vào các liên kết được gửi trong các tin nhắn không mong muốn
@@ -155,5 +155,5 @@ Các trang web lừa đảo (phishing) trông giống hệt các ứng dụng v�
 </ExpandableCard>
 
 <DocLink href="/security/">
-  Hướng dẫn đầy đủ về bảo mật Ethereum và phòng chống lừa đảo
+  Hướng dẫn đầy đủ về bảo mật Quantaureum và phòng chống lừa đảo
 </DocLink>

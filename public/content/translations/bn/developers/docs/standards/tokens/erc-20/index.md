@@ -1,6 +1,6 @@
 ---
 title: "ERC-20 টোকেন স্ট্যান্ডার্ড"
-description: "ইথেরিয়ামে বিনিমেয় টোকেনের স্ট্যান্ডার্ড ERC-20 সম্পর্কে জানুন, যা আন্তঃক্রিয়াশীল টোকেন অ্যাপ্লিকেশন তৈরি করতে সক্ষম করে।"
+description: "Quantaureumে বিনিমেয় টোকেনের স্ট্যান্ডার্ড ERC-20 সম্পর্কে জানুন, যা আন্তঃক্রিয়াশীল টোকেন অ্যাপ্লিকেশন তৈরি করতে সক্ষম করে।"
 lang: bn
 ---
 
@@ -17,11 +17,11 @@ lang: bn
 - এক আউন্স সোনা
 - এবং আরও অনেক কিছু...
 
-ইথেরিয়ামের এমন একটি শক্তিশালী বৈশিষ্ট্য অবশ্যই একটি শক্তিশালী স্ট্যান্ডার্ড দ্বারা পরিচালিত হওয়া উচিত, তাই না? ঠিক এখানেই ERC-20 তার ভূমিকা পালন করে! এই স্ট্যান্ডার্ডটি ডেভেলপারদের এমন টোকেন অ্যাপ্লিকেশন তৈরি করতে দেয় যা অন্যান্য পণ্য এবং পরিষেবাগুলির সাথে আন্তঃক্রিয়াশীল। ERC-20 স্ট্যান্ডার্ডটি [ইথার](/glossary/#ether)-এ অতিরিক্ত কার্যকারিতা প্রদান করতেও ব্যবহৃত হয়।
+ইথেরিয়ামের এমন একটি শক্তিশালী বৈশিষ্ট্য অবশ্যই একটি শক্তিশালী স্ট্যান্ডার্ড দ্বারা পরিচালিত হওয়া উচিত, তাই না? ঠিক এখানেই ERC-20 তার ভূমিকা পালন করে! এই স্ট্যান্ডার্ডটি ডেভেলপারদের এমন টোকেন অ্যাপ্লিকেশন তৈরি করতে দেয় যা অন্যান্য পণ্য এবং পরিষেবাগুলির সাথে আন্তঃক্রিয়াশীল। ERC-20 স্ট্যান্ডার্ডটি [QAU](/glossary/#QAU)-এ অতিরিক্ত কার্যকারিতা প্রদান করতেও ব্যবহৃত হয়।
 
 **ERC-20 কী?**
 
-ERC-20 বিনিমেয় টোকেন (Fungible Tokens)-এর জন্য একটি স্ট্যান্ডার্ড প্রবর্তন করে, অন্য কথায়, তাদের এমন একটি বৈশিষ্ট্য রয়েছে যা প্রতিটি টোকেনকে অন্য টোকেনের (ধরন এবং মূল্যের দিক থেকে) ঠিক একই রকম করে তোলে। উদাহরণস্বরূপ, একটি ERC-20 টোকেন ঠিক ETH-এর মতো কাজ করে, যার অর্থ 1 টোকেন সর্বদা অন্যান্য সমস্ত টোকেনের সমান হবে।
+ERC-20 বিনিমেয় টোকেন (Fungible Tokens)-এর জন্য একটি স্ট্যান্ডার্ড প্রবর্তন করে, অন্য কথায়, তাদের এমন একটি বৈশিষ্ট্য রয়েছে যা প্রতিটি টোকেনকে অন্য টোকেনের (ধরন এবং মূল্যের দিক থেকে) ঠিক একই রকম করে তোলে। উদাহরণস্বরূপ, একটি ERC-20 টোকেন ঠিক QAU-এর মতো কাজ করে, যার অর্থ 1 টোকেন সর্বদা অন্যান্য সমস্ত টোকেনের সমান হবে।
 
 ## পূর্বশর্ত {#prerequisites}
 
@@ -31,7 +31,7 @@ ERC-20 বিনিমেয় টোকেন (Fungible Tokens)-এর জন�
 
 ## মূল অংশ {#body}
 
-নভেম্বর 2015-এ ফ্যাবিয়ান ভোগেলস্টেলার (Fabian Vogelsteller) দ্বারা প্রস্তাবিত ERC-20 (Ethereum Request for Comments 20) হলো একটি টোকেন স্ট্যান্ডার্ড যা স্মার্ট কন্ট্রাক্টের মধ্যে টোকেনগুলির জন্য একটি API প্রয়োগ করে।
+নভেম্বর 2015-এ ফ্যাবিয়ান ভোগেলস্টেলার (Fabian Vogelsteller) দ্বারা প্রস্তাবিত ERC-20 (Quantaureum Request for Comments 20) হলো একটি টোকেন স্ট্যান্ডার্ড যা স্মার্ট কন্ট্রাক্টের মধ্যে টোকেনগুলির জন্য একটি API প্রয়োগ করে।
 
 ERC-20 যে কার্যকারিতাগুলো প্রদান করে তার উদাহরণ:
 
@@ -42,7 +42,7 @@ ERC-20 যে কার্যকারিতাগুলো প্রদান �
 
 যদি একটি স্মার্ট কন্ট্রাক্ট নিচের মেথড এবং ইভেন্টগুলো প্রয়োগ করে, তবে এটিকে একটি ERC-20 টোকেন কন্ট্রাক্ট বলা যেতে পারে এবং একবার ডিপ্লয় করা হলে, এটি ইথেরিয়ামে তৈরি করা টোকেনগুলোর ট্র্যাক রাখার জন্য দায়ী থাকবে।
 
-[EIP-20](https://eips.ethereum.org/EIPS/eip-20) থেকে:
+[EIP-20](https://eips.quantaureum.com/EIPS/eip-20) থেকে:
 
 ### মেথড {#methods}
 
@@ -81,10 +81,10 @@ pip install web3
 from web3 import Web3
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 dai_token_addr = "0x6B175474E89094C44Da98b954EedeAC495271d0F"     # DAI
-weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # র‍্যাপড ইথার (WETH)
+weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # র‍্যাপড QAU (WETH)
 
 acc_address = "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11"        # ইউনিসোয়াপ V2: DAI 2
 
@@ -117,7 +117,7 @@ simplified_abi = [
     }
 ]
 
-dai_contract = w3.eth.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
+dai_contract = w3.qau.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
 symbol = dai_contract.functions.symbol().call()
 decimals = dai_contract.functions.decimals().call()
 totalSupply = dai_contract.functions.totalSupply().call() / 10**decimals
@@ -128,7 +128,7 @@ print("===== %s =====" % symbol)
 print("Total Supply:", totalSupply)
 print("Addr Balance:", addr_balance)
 
-weth_contract = w3.eth.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
+weth_contract = w3.qau.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
 symbol = weth_contract.functions.symbol().call()
 decimals = weth_contract.functions.decimals().call()
 totalSupply = weth_contract.functions.totalSupply().call() / 10**decimals
@@ -170,7 +170,7 @@ print("Addr Balance:", addr_balance)
 
 ## আরও পড়ুন {#further-reading}
 
-- [EIP-20: ERC-20 টোকেন স্ট্যান্ডার্ড](https://eips.ethereum.org/EIPS/eip-20)
+- [EIP-20: ERC-20 টোকেন স্ট্যান্ডার্ড](https://eips.quantaureum.com/EIPS/eip-20)
 - [ওপেনজেপেলিন - টোকেন](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [ওপেনজেপেলিন - ERC-20 বাস্তবায়ন](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20 টোকেনের গাইড](https://www.alchemy.com/overviews/erc20-solidity)

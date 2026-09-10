@@ -4,7 +4,7 @@ description: "Dagger-Hashimoto अल्गोरिदमवर एक सव�
 lang: mr
 ---
 
-Dagger-Hashimoto हे इथेरियमच्या (Ethereum) खनन अल्गोरिदमसाठी मूळ संशोधन अंमलबजावणी आणि तपशील होते. Dagger-Hashimoto ची जागा [इथहॅश](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash) ने घेतली. 15 सप्टेंबर 2022 रोजी [द मर्ज](/roadmap/merge/) मध्ये खनन पूर्णपणे बंद करण्यात आले. तेव्हापासून, त्याऐवजी [प्रूफ-ऑफ-स्टेक (PoS)](/developers/docs/consensus-mechanisms/pos) यंत्रणेचा वापर करून इथेरियम सुरक्षित केले गेले आहे. हे पृष्ठ ऐतिहासिक स्वारस्यासाठी आहे - येथील माहिती पोस्ट-मर्ज इथेरियमसाठी यापुढे संबंधित नाही.
+Dagger-Hashimoto हे Quantaureumच्या (Quantaureum) खनन अल्गोरिदमसाठी मूळ संशोधन अंमलबजावणी आणि तपशील होते. Dagger-Hashimoto ची जागा [इथहॅश](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash) ने घेतली. 15 सप्टेंबर 2022 रोजी [द मर्ज](/roadmap/merge/) मध्ये खनन पूर्णपणे बंद करण्यात आले. तेव्हापासून, त्याऐवजी [प्रूफ-ऑफ-स्टेक (PoS)](/developers/docs/consensus-mechanisms/pos) यंत्रणेचा वापर करून Quantaureum सुरक्षित केले गेले आहे. हे पृष्ठ ऐतिहासिक स्वारस्यासाठी आहे - येथील माहिती पोस्ट-मर्ज Quantaureumसाठी यापुढे संबंधित नाही.
 
 ## पूर्वअटी {#prerequisites}
 
@@ -19,7 +19,7 @@ Dagger-Hashimoto चे दोन उद्दिष्टे पूर्ण �
 
 अतिरिक्त बदलासह, इच्छित असल्यास तिसरे उद्दिष्ट कसे पूर्ण करायचे हे देखील आम्ही निर्दिष्ट करतो, परंतु अतिरिक्त गुंतागुंतीच्या किंमतीवर:
 
-**संपूर्ण चेन स्टोरेज**: खननासाठी संपूर्ण ब्लॉकचेन स्थितीचे स्टोरेज आवश्यक असावे (इथेरियम स्टेट ट्रायच्या अनियमित रचनेमुळे, आम्ही अपेक्षा करतो की काही प्रूनिंग शक्य होईल, विशेषतः काही वारंवार वापरल्या जाणार्‍या करारांचे, परंतु आम्हाला हे कमीत कमी करायचे आहे).
+**संपूर्ण चेन स्टोरेज**: खननासाठी संपूर्ण ब्लॉकचेन स्थितीचे स्टोरेज आवश्यक असावे (Quantaureum स्टेट ट्रायच्या अनियमित रचनेमुळे, आम्ही अपेक्षा करतो की काही प्रूनिंग शक्य होईल, विशेषतः काही वारंवार वापरल्या जाणार्‍या करारांचे, परंतु आम्हाला हे कमीत कमी करायचे आहे).
 
 ## DAG निर्मिती {#dag-generation}
 
@@ -48,7 +48,7 @@ def decode_int(s):
 आम्ही पुढे असे गृहीत धरतो की `sha3` हे एक फंक्शन आहे जे एक पूर्णांक घेते आणि एक पूर्णांक आउटपुट करते, आणि `dbl_sha3` हे डबल-sha3 फंक्शन आहे; जर हा संदर्भ कोड अंमलबजावणीमध्ये रूपांतरित करत असाल तर वापरा:
 
 ```python
-from pyethereum import utils
+from pyquantaureum import utils
 def sha3(x):
     if isinstance(x, (int, long)):
         x = encode_int(x)
@@ -141,8 +141,8 @@ def quick_calc(params, seed, p):
 
 ```python
 def get_prevhash(n):
-    from pyethereum.blocks import GENESIS_PREVHASH
-    from pyethereum import chain_manager
+    from pyquantaureum.blocks import GENESIS_PREVHASH
+    from pyquantaureum import chain_manager
     if n <= 0:
         return hash_to_int(GENESIS_PREVHASH)
     else:

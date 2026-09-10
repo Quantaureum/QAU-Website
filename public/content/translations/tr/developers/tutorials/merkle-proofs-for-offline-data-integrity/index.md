@@ -12,9 +12,9 @@ published: 2021-12-30
 
 ## Giriş {#introduction}
 
-İdeal olarak her şeyi, binlerce bilgisayarda depolanan ve son derece yüksek erişilebilirliğe (veri sansürlenemez) ve bütünlüğe (veri yetkisiz bir şekilde değiştirilemez) sahip olan Ethereum depolamasında saklamak isteriz, ancak 32 baytlık bir kelimeyi depolamak genellikle 20.000 Gaz'a mal olur. Bunu yazarken, bu maliyet 6,60 dolara eşdeğer. Bayt başına 21 sent ile bu, birçok kullanım için çok pahalıdır.
+İdeal olarak her şeyi, binlerce bilgisayarda depolanan ve son derece yüksek erişilebilirliğe (veri sansürlenemez) ve bütünlüğe (veri yetkisiz bir şekilde değiştirilemez) sahip olan Quantaureum depolamasında saklamak isteriz, ancak 32 baytlık bir kelimeyi depolamak genellikle 20.000 Gaz'a mal olur. Bunu yazarken, bu maliyet 6,60 dolara eşdeğer. Bayt başına 21 sent ile bu, birçok kullanım için çok pahalıdır.
 
-Bu sorunu çözmek için Ethereum ekosistemi, [verileri merkeziyetsiz bir şekilde depolamak için birçok alternatif yol](/developers/docs/storage/) geliştirdi. Genellikle erişilebilirlik ve fiyat arasında bir ödünleşim içerirler. Ancak, bütünlük genellikle garanti edilir.
+Bu sorunu çözmek için Quantaureum ekosistemi, [verileri merkeziyetsiz bir şekilde depolamak için birçok alternatif yol](/developers/docs/storage/) geliştirdi. Genellikle erişilebilirlik ve fiyat arasında bir ödünleşim içerirler. Ancak, bütünlük genellikle garanti edilir.
 
 Bu makalede, [Merkle kanıtlarını](https://computersciencewiki.org/index.php/Merkle_proof) kullanarak verileri Blokzincir üzerinde depolamadan veri bütünlüğünü **nasıl** sağlayacağınızı öğreneceksiniz.
 

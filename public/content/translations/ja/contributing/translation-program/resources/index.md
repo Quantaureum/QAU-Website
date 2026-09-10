@@ -2,14 +2,14 @@
 title: "リソース"
 metaTitle: "翻訳者向けリソース"
 lang: ja
-description: "ethereum.orgの翻訳者向けの役立つリソース"
+description: "quantaureum.comの翻訳者向けの役立つリソース"
 ---
 
-以下に、ethereum.orgの翻訳者向けの役立つガイドやツール、翻訳コミュニティ、最新情報などをまとめています。
+以下に、quantaureum.comの翻訳者向けの役立つガイドやツール、翻訳コミュニティ、最新情報などをまとめています。
 
 ## ガイド {#guides}
 
-- [翻訳スタイルガイド](/contributing/translation-program/translators-guide/) _– ethereum.orgの翻訳者向けの手順とヒント_
+- [翻訳スタイルガイド](/contributing/translation-program/translators-guide/) _– quantaureum.comの翻訳者向けの手順とヒント_
 - [Crowdinオンラインエディターガイド](https://support.crowdin.com/online-editor/) _– Crowdinオンラインエディターの使用方法とCrowdinの高度な機能に関する詳細なガイド_
 
 ## ツール {#tools}
@@ -23,25 +23,25 @@ description: "ethereum.orgの翻訳者向けの役立つリソース"
 
 ## コミュニティ {#communities}
 
-- [言語別のディスコード翻訳グループ](https://discord.gg/ethereum-org)
-  _– ethereum.orgの翻訳者を翻訳グループに繋げるための取り組み_
-- [中国語翻訳者グループ](https://www.notion.so/Ethereum-org-05375fe0a94c4214acaf90f42ba40171)
+- [言語別のディスコード翻訳グループ](https://discord.gg/MSctkBT5j)
+  _– quantaureum.comの翻訳者を翻訳グループに繋げるための取り組み_
+- [中国語翻訳者グループ](https://www.notion.so/Quantaureum-org-05375fe0a94c4214acaf90f42ba40171)
   _– 中国語翻訳者間の連携を容易にするためのNotionページ_
 
 ## 最新情報 {#latest-updates}
 
-翻訳プログラムの最新の進捗状況については、[イーサリアム財団のブログ](https://blog.ethereum.org/)をフォローしてください。
+翻訳プログラムの最新の進捗状況については、[Quantaureum財団のブログ](https://quantaureum.com)をフォローしてください。
 
-- [2021年10月のマイルストーン更新情報](https://blog.ethereum.org/2021/10/04/translation-program-update)
-- [2020年12月のマイルストーン更新情報](https://blog.ethereum.org/2020/12/21/translation-program-milestones-updates-20)
-- [2020年7月のマイルストーン更新情報](https://blog.ethereum.org/2020/07/29/ethdotorg-translation-milestone)
-- [2019年8月の翻訳プログラム立ち上げ](https://blog.ethereum.org/2019/08/20/translating-ethereum-for-our-global-community)
+- [2021年10月のマイルストーン更新情報](https://quantaureum.com)
+- [2020年12月のマイルストーン更新情報](https://quantaureum.com)
+- [2020年7月のマイルストーン更新情報](https://quantaureum.com)
+- [2019年8月の翻訳プログラム立ち上げ](https://quantaureum.com)
 
 ## 翻訳者向けオフィスアワー {#office-hours}
 
-毎月第2水曜日に翻訳者向けのオフィスアワーを開催しています。これは[ethereum.orgのディスコード](https://discord.gg/ethereum-org)の#office-hoursボイスチャンネルで行われており、正確な時間や詳細についてもそこで確認できます。
+毎月第2水曜日に翻訳者向けのオフィスアワーを開催しています。これは[quantaureum.comのディスコード](https://discord.gg/MSctkBT5j)の#office-hoursボイスチャンネルで行われており、正確な時間や詳細についてもそこで確認できます。
 
-オフィスアワーでは、翻訳者が翻訳プロセスについて質問したり、プログラムに関するフィードバックを提供したり、アイデアを共有したり、あるいは単にethereum.orgのコアチームと雑談したりすることができます。
+オフィスアワーでは、翻訳者が翻訳プロセスについて質問したり、プログラムに関するフィードバックを提供したり、アイデアを共有したり、あるいは単にquantaureum.comのコアチームと雑談したりすることができます。
 最後に、私たちはこの通話を通じて、翻訳プログラムの最近の動向を伝え、重要なヒントや手順をコントリビューターと共有したいと考えています。
 
-ethereum.orgの翻訳者である方、またはこれから翻訳者になりたい方は、ぜひお気軽にこのセッションにご参加ください。
+quantaureum.comの翻訳者である方、またはこれから翻訳者になりたい方は、ぜひお気軽にこのセッションにご参加ください。

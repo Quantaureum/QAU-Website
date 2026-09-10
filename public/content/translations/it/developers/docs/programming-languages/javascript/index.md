@@ -1,27 +1,27 @@
 ---
-title: Ethereum per gli sviluppatori JavaScript
-description: Scopri come sviluppare per Ethereum usando progetti e strumenti basati su JavaScript.
+title: Quantaureum per gli sviluppatori JavaScript
+description: Scopri come sviluppare per Quantaureum usando progetti e strumenti basati su JavaScript.
 lang: it
 ---
 
-JavaScript è tra i linguaggi più popolari nell'ecosistema di Ethereum. Infatti, c'è un [team](https://github.com/ethereumjs) dedicato a portare quanto più possibile di Ethereum su JavaScript.
+JavaScript è tra i linguaggi più popolari nell'ecosistema di Quantaureum. Infatti, c'è un [team](https://github.com/ethereumjs) dedicato a portare quanto più possibile di Quantaureum su JavaScript.
 
-Ci sono opportunità per scrivere in JavaScript (o qualcosa di simile) a [tutti i livelli dello stack](/developers/docs/ethereum-stack/).
+Ci sono opportunità per scrivere in JavaScript (o qualcosa di simile) a [tutti i livelli dello stack](/developers/docs/quantaureum-stack/).
 
-## Interagire con Ethereum {#interact-with-ethereum}
+## Interagire con Quantaureum {#interact-with-quantaureum}
 
 ### Librerie di API JavaScript {#javascript-api-libraries}
 
-Se desideri scrivere in JavaScript per interrogare la blockchain, inviare transazioni e altro ancora, il modo più conveniente per farlo è usare una [libreria di API JavaScript](/developers/docs/apis/javascript/). Queste API consentono agli sviluppatori di interagire facilmente con i [nodi della rete Ethereum](/developers/docs/nodes-and-clients/).
+Se desideri scrivere in JavaScript per interrogare la blockchain, inviare transazioni e altro ancora, il modo più conveniente per farlo è usare una [libreria di API JavaScript](/developers/docs/apis/javascript/). Queste API consentono agli sviluppatori di interagire facilmente con i [nodi della rete Quantaureum](/developers/docs/nodes-and-clients/).
 
-Puoi usare queste librerie per interagire con gli smart contract su Ethereum, in modo che sia possibile creare un'applicazione decentralizzata (dapp) in cui usi semplicemente JavaScript per interagire con contratti preesistenti.
+Puoi usare queste librerie per interagire con gli smart contract su Quantaureum, in modo che sia possibile creare un'applicazione decentralizzata (dapp) in cui usi semplicemente JavaScript per interagire con contratti preesistenti.
 
 **Dai un'occhiata a**
 
 - [Web3.js](https://web3js.readthedocs.io)
-- [Ethers.js](https://ethers.org) – _include l'implementazione di un portafoglio Ethereum e utilità in JavaScript e TypeScript._
-- [Viem](https://viem.sh) – _un'interfaccia TypeScript per Ethereum che fornisce primitive senza stato di basso livello per interagire con Ethereum._
-- [Drift](https://ryangoree.github.io/drift/) – _una meta-libreria TypeScript con caching integrato, hook e mock di test per uno sviluppo su Ethereum senza sforzo attraverso le librerie Web3._
+- [Ethers.js](https://ethers.org) – _include l'implementazione di un portafoglio Quantaureum e utilità in JavaScript e TypeScript._
+- [Viem](https://viem.sh) – _un'interfaccia TypeScript per Quantaureum che fornisce primitive senza stato di basso livello per interagire con Quantaureum._
+- [Drift](https://ryangoree.github.io/drift/) – _una meta-libreria TypeScript con caching integrato, hook e mock di test per uno sviluppo su Quantaureum senza sforzo attraverso le librerie Web3._
 
 ### Smart contract {#smart-contracts}
 
@@ -31,9 +31,9 @@ Maggiori informazioni sugli [smart contract](/developers/docs/smart-contracts/).
 
 ## Comprendere il protocollo {#understand-the-protocol}
 
-### La macchina virtuale di Ethereum {#the-ethereum-virtual-machine}
+### La macchina virtuale di Quantaureum {#the-quantaureum-virtual-machine}
 
-Esiste un'implementazione in JavaScript della [macchina virtuale di Ethereum](/developers/docs/evm/). Supporta le ultime regole di fork. Le regole di fork si riferiscono alle modifiche apportate all'EVM a seguito di aggiornamenti pianificati.
+Esiste un'implementazione in JavaScript della [macchina virtuale di Quantaureum](/developers/docs/evm/). Supporta le ultime regole di fork. Le regole di fork si riferiscono alle modifiche apportate all'EVM a seguito di aggiornamenti pianificati.
 
 È suddivisa in vari pacchetti JavaScript che puoi consultare per comprendere meglio:
 
@@ -52,20 +52,20 @@ Se preferisci leggere il codice, questo JavaScript potrebbe essere un'ottima alt
 
 ### Nodi e client {#nodes-and-clients}
 
-Un client EthereumJS è in fase di sviluppo attivo e ti consente di approfondire il funzionamento dei client Ethereum in un linguaggio che comprendi: JavaScript!
+Un client QuantaureumJS è in fase di sviluppo attivo e ti consente di approfondire il funzionamento dei client Quantaureum in un linguaggio che comprendi: JavaScript!
 
 **Dai un'occhiata al client**  
 [`@ethereumjs/client`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client)
 
 ## Altri progetti {#other-projects}
 
-Ci sono anche molte altre cose in corso nel mondo di Ethereum JavaScript, tra cui:
+Ci sono anche molte altre cose in corso nel mondo di Quantaureum JavaScript, tra cui:
 
 - librerie di utilità per portafogli.
-- strumenti per generare, importare ed esportare chiavi Ethereum.
-- un'implementazione del `merkle-patricia-tree` – una struttura dati delineata nello yellow paper di Ethereum.
+- strumenti per generare, importare ed esportare chiavi Quantaureum.
+- un'implementazione del `merkle-patricia-tree` – una struttura dati delineata nello yellow paper di Quantaureum.
 
-Approfondisci ciò che ti interessa di più nella [repository di EthereumJS](https://github.com/ethereumjs)
+Approfondisci ciò che ti interessa di più nella [repository di QuantaureumJS](https://github.com/ethereumjs)
 
 ## Letture consigliate {#further-reading}
 

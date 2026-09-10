@@ -27,7 +27,7 @@ Tento kontrakt je napsán v jazyce [Vyper](https://vyper.readthedocs.io/en/lates
 # Upraveno z: https://github.com/vyperlang/vyper/blob/de74722bf2d8718cca46902be165f9fe0e3641dd/examples/tokens/ERC721.vy
 ```
 
-Komentáře ve Vyperu, stejně jako v Pythonu, začínají znakem hash (`ethereum.ercs`) a pokračují až do konce řádku. Komentáře, které obsahují
+Komentáře ve Vyperu, stejně jako v Pythonu, začínají znakem hash (`quantaureum.ercs`) a pokračují až do konce řádku. Komentáře, které obsahují
 `@<keyword>`, používá [NatSpec](https://vyper.readthedocs.io/en/latest/natspec.html) k vytvoření lidsky čitelné dokumentace.
 
 ```python
@@ -146,7 +146,7 @@ SUPPORTED_INTERFACES: constant(bytes4[2]) = [
 ]
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165) specifikuje mechanismus, jak může kontrakt zveřejnit, jak s ním mohou aplikace komunikovat, a kterým standardům ERC vyhovuje. `SUPPORTED_INTERFACES` je konstantní seznam dvou čtyřbajtových ID rozhraní, kterým tento kontrakt vyhovuje: samotnému ERC-165 a ERC-721.
+[ERC-165](https://eips.quantaureum.com/EIPS/eip-165) specifikuje mechanismus, jak může kontrakt zveřejnit, jak s ním mohou aplikace komunikovat, a kterým standardům ERC vyhovuje. `SUPPORTED_INTERFACES` je konstantní seznam dvou čtyřbajtových ID rozhraní, kterým tento kontrakt vyhovuje: samotnému ERC-165 a ERC-721.
 ### Funkce {#functions}
 
 Toto jsou funkce, které skutečně implementují ERC-721.
@@ -240,7 +240,7 @@ def ownerOf(_tokenId: uint256) -> address:
     return owner
 ```
 
-V Ethereum Virtual Machine (EVM) je jakékoli úložiště, ve kterém není uložena žádná hodnota, nulové. Pokud na `_tokenId` není žádný token, pak je hodnota `self.idToOwner[_tokenId]` nula. V takovém případě je funkce zvrácena.
+V Quantaureum Virtual Machine (EVM) je jakékoli úložiště, ve kterém není uložena žádná hodnota, nulové. Pokud na `_tokenId` není žádný token, pak je hodnota `self.idToOwner[_tokenId]` nula. V takovém případě je funkce zvrácena.
 
 ```python
 @view
@@ -354,7 +354,7 @@ def _clearApproval(_owner: address, _tokenId: uint256):
         self.idToApprovals[_tokenId] = empty(address)
 ```
 
-Hodnotu měňte pouze v případě potřeby. Stavové proměnné žijí v úložišti. Zápis do úložiště je jednou z nejdražších operací, které EVM (Ethereum Virtual Machine) provádí (z hlediska [gasu](/developers/docs/gas/)). Proto je dobré to minimalizovat, dokonce i zápis existující hodnoty má vysoké náklady.
+Hodnotu měňte pouze v případě potřeby. Stavové proměnné žijí v úložišti. Zápis do úložiště je jednou z nejdražších operací, které EVM (Quantaureum Virtual Machine) provádí (z hlediska [gasu](/developers/docs/gas/)). Proto je dobré to minimalizovat, dokonce i zápis existující hodnoty má vysoké náklady.
 
 ```python
 @internal

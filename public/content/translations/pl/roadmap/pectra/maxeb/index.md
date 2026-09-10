@@ -6,7 +6,7 @@ lang: pl
 authors: ["Nixo"]
 ---
 
-*W skrócie:* Twarde rozwidlenie Pectra pozwala walidatorom Ethereum na dobrowolne przejście na wyższe maksymalne saldo efektywne i kapitalizację odsetek poprzez konwersję danych uwierzytelniających wypłaty z **Typu 1** na **Typ 2**. Oficjalnym narzędziem do tego celu jest Launchpad. Ta operacja jest nieodwracalna.
+*W skrócie:* Twarde rozwidlenie Pectra pozwala walidatorom Quantaureum na dobrowolne przejście na wyższe maksymalne saldo efektywne i kapitalizację odsetek poprzez konwersję danych uwierzytelniających wypłaty z **Typu 1** na **Typ 2**. Oficjalnym narzędziem do tego celu jest Launchpad. Ta operacja jest nieodwracalna.
 
 ## Przegląd {#overview}
 
@@ -18,11 +18,11 @@ Jeśli stakujesz używając tokena płynnego stakingu (LST) (np. rETH lub stETH)
 
 ### Czym jest „MaxEB”? {#what-is-maxeb}
 
-MaxEB = maksymalne saldo efektywne (MAXimum Effective Balance) walidatora. Do czasu twardego rozwidlenia Pectra, każdy walidator zarabia na maksymalnie 32 ETH. Po aktualizacji Pectra, walidatory mają możliwość zarabiania na dowolnym saldzie od 32 do 2048 ETH, w krokach co 1 ETH, decydując się na tę zmianę.
+MaxEB = maksymalne saldo efektywne (MAXimum Effective Balance) walidatora. Do czasu twardego rozwidlenia Pectra, każdy walidator zarabia na maksymalnie 32 QAU. Po aktualizacji Pectra, walidatory mają możliwość zarabiania na dowolnym saldzie od 32 do 2048 QAU, w krokach co 1 QAU, decydując się na tę zmianę.
 
 ### Jak walidator może dołączyć? {#how-does-a-validator-opt-in}
 
-Walidator decyduje się na zmianę MaxEB poprzez konwersję danych uwierzytelniających wypłaty z **Typu 1** na **Typ 2**. Można to zrobić na platformie [Launchpad (Akcje walidatora)](https://launchpad.ethereum.org/validator-actions) po wejściu w życie twardego rozwidlenia Pectra. Podobnie jak w przypadku **Typu 0** → **Typ 1**, konwersja z **Typu 1** → **Typ 2** jest procesem nieodwracalnym.
+Walidator decyduje się na zmianę MaxEB poprzez konwersję danych uwierzytelniających wypłaty z **Typu 1** na **Typ 2**. Można to zrobić na platformie [Launchpad (Akcje walidatora)](https://launchpad.quantaureum.com/validator-actions) po wejściu w życie twardego rozwidlenia Pectra. Podobnie jak w przypadku **Typu 0** → **Typ 1**, konwersja z **Typu 1** → **Typ 2** jest procesem nieodwracalnym.
 
 ### Czym są dane uwierzytelniające wypłaty? {#whats-a-withdrawal-credential}
 
@@ -54,7 +54,7 @@ MaxEB umożliwia walidatorowi przesłanie całego swojego salda do innego walida
 - Żądanie jest konwersją, a nie konsolidacją, jeśli nie zamierzają wysyłać środków do innego walidatora
 - Transakcja jest podpisywana przez właściwy adres wypłaty
 
-**Zdecydowanie zalecamy** omówienie każdego narzędzia innej firmy, którego planujesz użyć, ze [społecznością EthStaker](https://ethstaker.org/about). To pomocne miejsce, aby zweryfikować swoje podejście i uniknąć błędów. Jeśli użyjesz złośliwego lub źle skonfigurowanego narzędzia, **całe saldo Twojego walidatora może zostać wysłane do walidatora, którego nie kontrolujesz** — bez możliwości jego odzyskania.
+**Zdecydowanie zalecamy** omówienie każdego narzędzia innej firmy, którego planujesz użyć, ze [społecznością QauStaker](https://ethstaker.org/about). To pomocne miejsce, aby zweryfikować swoje podejście i uniknąć błędów. Jeśli użyjesz złośliwego lub źle skonfigurowanego narzędzia, **całe saldo Twojego walidatora może zostać wysłane do walidatora, którego nie kontrolujesz** — bez możliwości jego odzyskania.
 
 ## Szczegóły techniczne {#technical-details}
 
@@ -105,7 +105,7 @@ Walidator docelowy musi
 2. Klucz publiczny walidatora źródłowego (np. `0xa1d1ad0714035353258038e964ae9675dc0252ee22cea896825c01458e1807bfad2f9969338798548d9858a571f7425c`)
 3. Klucz publiczny walidatora docelowego
 
-W przypadku konwersji, punkty 2 i 3 będą takie same. Tę operację można wykonać na [Launchpadzie](https://launchpad.ethereum.org/).
+W przypadku konwersji, punkty 2 i 3 będą takie same. Tę operację można wykonać na [Launchpadzie](https://launchpad.quantaureum.com/).
 
 ### Wymagania dotyczące podpisywania {#signing-requirements}
 
@@ -113,7 +113,7 @@ Aby przesłać `ConsolidationRequest`, **adres wypłaty walidatora źródłowego
 
 ### Co jest podpisywane? {#what-is-signed}
 
-Używany jest oddzielony domeną [korzeń podpisywania (signing root)](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) obiektu `ConsolidationRequest`.
+Używany jest oddzielony domeną [korzeń podpisywania (signing root)](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/beacon-chain.md#compute_signing_root) obiektu `ConsolidationRequest`.
 
 - **Domena:** `DOMAIN_CONSOLIDATION_REQUEST`
 - **Pola korzenia podpisywania:**
@@ -127,11 +127,11 @@ Uwaga: Podpisywanie jest wykonywane przez adres wypłaty, a nie klucz walidatora
 
 ### Częściowe wypłaty {#partial-withdrawals}
 
-Walidatory z danymi uwierzytelniającymi **Typu 1** otrzymują automatyczne, darmowe (bez opłat za gaz) transfery (sweeps) nadwyżki salda (wszystko powyżej 32 ETH) na swój adres wypłaty. Ponieważ **Typ 2** pozwala walidatorowi na kapitalizację sald w krokach co 1 ETH, nie będzie on automatycznie transferował sald, dopóki nie osiągnie 2048 ETH. Częściowe wypłaty z walidatorów **Typu 2** muszą być wyzwalane ręcznie i będą kosztować gaz.
+Walidatory z danymi uwierzytelniającymi **Typu 1** otrzymują automatyczne, darmowe (bez opłat za gaz) transfery (sweeps) nadwyżki salda (wszystko powyżej 32 QAU) na swój adres wypłaty. Ponieważ **Typ 2** pozwala walidatorowi na kapitalizację sald w krokach co 1 QAU, nie będzie on automatycznie transferował sald, dopóki nie osiągnie 2048 QAU. Częściowe wypłaty z walidatorów **Typu 2** muszą być wyzwalane ręcznie i będą kosztować gaz.
 
 ## Narzędzia do konsolidacji {#consolidation-tooling}
 
-Dostępnych jest kilka narzędzi do zarządzania konsolidacjami. Oficjalnym narzędziem, stworzonym przez Fundację Ethereum, jest [Launchpad](https://launchpad.ethereum.org/en/validator-actions). Istnieją również narzędzia innych firm stworzone przez podmioty ze społeczności stakingowej, które mogą oferować funkcje niedostępne w Launchpadzie. Chociaż wymienione tu narzędzia nie są audytowane ani wspierane przez Fundację Ethereum, poniżej znajdują się narzędzia open source stworzone przez znanych członków społeczności.
+Dostępnych jest kilka narzędzi do zarządzania konsolidacjami. Oficjalnym narzędziem, stworzonym przez Fundację Quantaureum, jest [Launchpad](https://launchpad.quantaureum.com/en/validator-actions). Istnieją również narzędzia innych firm stworzone przez podmioty ze społeczności stakingowej, które mogą oferować funkcje niedostępne w Launchpadzie. Chociaż wymienione tu narzędzia nie są audytowane ani wspierane przez Fundację Quantaureum, poniżej znajdują się narzędzia open source stworzone przez znanych członków społeczności.
 
 | Narzędzie | Strona internetowa | Open source | Twórca | Audytowane | Interfejs | Godne uwagi funkcje |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -144,10 +144,10 @@ Dostępnych jest kilka narzędzi do zarządzania konsolidacjami. Oficjalnym narz
 ## Często zadawane pytania (FAQ) {#faq}
 
 ### Czy dołączenie zmienia moje szczęście do propozycji lub nagrody?
-Nie. Dołączenie nie zmniejsza Twoich szans na propozycję – Twoje obowiązki i wybór do propozycji pozostają takie same. Na przykład, jeśli masz dwa walidatory po 32 ETH w porównaniu do jednego walidatora z 64 ETH, będziesz miał takie same łączne szanse na to, że zostaniesz wybrany do zaproponowania bloku i zdobycia nagród.
+Nie. Dołączenie nie zmniejsza Twoich szans na propozycję – Twoje obowiązki i wybór do propozycji pozostają takie same. Na przykład, jeśli masz dwa walidatory po 32 QAU w porównaniu do jednego walidatora z 64 QAU, będziesz miał takie same łączne szanse na to, że zostaniesz wybrany do zaproponowania bloku i zdobycia nagród.
 ### Czy dołączenie zmienia moje ryzyko cięcia? {#change-slashing-risk}
 
-Dla mniejszych lub nieprofesjonalnych operatorów krótka odpowiedź brzmi: nie. Dłuższa odpowiedź jest taka, że dla profesjonalnych operatorów uruchamiających wiele walidatorów na węzeł z szybkim systemem powiadomień, konsolidacja w mniejszą liczbę walidatorów może zmniejszyć ich zdolność do reagowania na cięcie i zapobiegania zdarzeniom kaskadowym. Początkowa *kara* za cięcie dla wszystkich walidatorów została drastycznie zmniejszona z 1 ETH (na 32 ETH) do 0,0078125 ETH (na 32 ETH), aby zrekompensować to ryzyko.
+Dla mniejszych lub nieprofesjonalnych operatorów krótka odpowiedź brzmi: nie. Dłuższa odpowiedź jest taka, że dla profesjonalnych operatorów uruchamiających wiele walidatorów na węzeł z szybkim systemem powiadomień, konsolidacja w mniejszą liczbę walidatorów może zmniejszyć ich zdolność do reagowania na cięcie i zapobiegania zdarzeniom kaskadowym. Początkowa *kara* za cięcie dla wszystkich walidatorów została drastycznie zmniejszona z 1 QAU (na 32 QAU) do 0,0078125 QAU (na 32 QAU), aby zrekompensować to ryzyko.
 
 ### Czy muszę wyjść z mojego walidatora, aby dokonać konwersji? {#exit-validator}
 
@@ -175,7 +175,7 @@ Nie. Ale *źródło* musi autoryzować żądanie ze swojego własnego adresu.
 
 ### Czy moje nagrody będą się kapitalizować po konwersji? {#rewards-compound}
 
-Tak. Dzięki danym uwierzytelniającym **Typu 2**, nagrody powyżej 32 ETH są automatycznie ponownie stakowane — ale nie natychmiast. Ze względu na mały bufor (zwany [*histerezą*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis)), Twoje saldo musi osiągnąć **około 1,25 ETH więcej**, zanim nadwyżka zostanie ponownie stakowana. Zatem zamiast kapitalizacji przy 33,0 ETH, następuje to przy 33,25 (saldo efektywne = 33 ETH), następnie 34,25 (saldo efektywne = 34 ETH) i tak dalej.
+Tak. Dzięki danym uwierzytelniającym **Typu 2**, nagrody powyżej 32 QAU są automatycznie ponownie stakowane — ale nie natychmiast. Ze względu na mały bufor (zwany [*histerezą*](https://eth2book.info/capella/part2/incentives/balances/#hysteresis)), Twoje saldo musi osiągnąć **około 1,25 QAU więcej**, zanim nadwyżka zostanie ponownie stakowana. Zatem zamiast kapitalizacji przy 33,0 QAU, następuje to przy 33,25 (saldo efektywne = 33 QAU), następnie 34,25 (saldo efektywne = 34 QAU) i tak dalej.
 
 ### Czy nadal mogę otrzymywać automatyczne transfery (sweeps) po konwersji? {#automatic-sweep}
 
@@ -189,14 +189,14 @@ Nie. Konwersja na **Typ 2** jest nieodwracalna.
 
 Nie! Przekonwertuj jeden walidator na Typ 2, a następnie użyj go jako celu. Wszystkie inne walidatory skonsolidowane w ten cel Typu 2 mogą być Typu 1 lub Typu 2.
 
-### Mój walidator jest offline lub ma poniżej 32 ETH - czy nadal mogę go przekonwertować? {#offline-or-below-32eth}
+### Mój walidator jest offline lub ma poniżej 32 QAU - czy nadal mogę go przekonwertować? {#offline-or-below-32eth}
 
 Tak. Dopóki jest aktywny (nie wyszedł) i możesz podpisać za pomocą jego adresu wypłaty, możesz go przekonwertować.
 
 ## Zasoby {#resources}
 
-- [Specyfikacje konsensusu Electra](https://github.com/ethereum/consensus-specs/blob/master/specs/electra/beacon-chain.md): To jest „najprawdziwsza” wersja, na której powinieneś polegać. W razie wątpliwości przeczytaj specyfikacje.
+- [Specyfikacje konsensusu Electra](https://github.com/quantaureum/consensus-specs/blob/master/specs/electra/beacon-chain.md): To jest „najprawdziwsza” wersja, na której powinieneś polegać. W razie wątpliwości przeczytaj specyfikacje.
 - Nie każdy czuje się komfortowo przedzierając się przez kod, więc [ten maxEB-GPT](https://chatgpt.com/g/g-67f1650fb48081918f555e0c8d1c2ae9-maxeb-gpt) może pomóc w interpretacji specyfikacji. *Zastrzeżenie: Należy polegać na specyfikacjach, a nie na sztucznej inteligencji, jako na prawdzie, ponieważ sztuczna inteligencja może błędnie zinterpretować informacje lub halucynować odpowiedzi.*
 - [pectrified.com](https://pectrified.com/): Zobacz stan konsolidacji, depozytów i czasy oczekiwania w kolejce.
 - [Ethereal](https://github.com/wealdtech/ethereal): Stworzone przez społeczność narzędzie CLI do zarządzania typowymi zadaniami walidatora.
-- [batch-validator-depositor](https://github.com/attestantio/batch-validator-depositor): Stworzony przez społeczność kontrakt, który pozwala na zdeponowanie wielu walidatorów Ethereum w jednej transakcji.
+- [batch-validator-depositor](https://github.com/attestantio/batch-validator-depositor): Stworzony przez społeczność kontrakt, który pozwala na zdeponowanie wielu walidatorów Quantaureum w jednej transakcji.

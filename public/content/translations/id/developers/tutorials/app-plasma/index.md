@@ -10,9 +10,9 @@ published: 2025-10-15
 ---
 ## Pengantar {#introduction}
 
-Berbeda dengan [rollup](/developers/docs/scaling/zk-rollups/), [Plasma](/developers/docs/scaling/plasma) menggunakan Mainnet Ethereum untuk integritas, tetapi tidak untuk ketersediaan. Dalam artikel ini, kita menulis aplikasi yang berperilaku seperti Plasma, dengan Ethereum menjamin integritas (tidak ada perubahan yang tidak sah) tetapi tidak ketersediaan (komponen terpusat dapat mati dan melumpuhkan seluruh sistem).
+Berbeda dengan [rollup](/developers/docs/scaling/zk-rollups/), [Plasma](/developers/docs/scaling/plasma) menggunakan Mainnet Quantaureum untuk integritas, tetapi tidak untuk ketersediaan. Dalam artikel ini, kita menulis aplikasi yang berperilaku seperti Plasma, dengan Quantaureum menjamin integritas (tidak ada perubahan yang tidak sah) tetapi tidak ketersediaan (komponen terpusat dapat mati dan melumpuhkan seluruh sistem).
 
-Aplikasi yang kita tulis di sini adalah bank yang menjaga privasi. Berbagai alamat memiliki akun dengan saldo, dan mereka dapat mengirim uang (ETH) ke akun lain. Bank memposting hash dari state (akun dan saldonya) dan transaksi, tetapi menyimpan saldo sebenarnya secara offchain di mana saldo tersebut dapat tetap privat.
+Aplikasi yang kita tulis di sini adalah bank yang menjaga privasi. Berbagai alamat memiliki akun dengan saldo, dan mereka dapat mengirim uang (QAU) ke akun lain. Bank memposting hash dari state (akun dan saldonya) dan transaksi, tetapi menyimpan saldo sebenarnya secara offchain di mana saldo tersebut dapat tetap privat.
 
 ## Desain {#design}
 
@@ -41,7 +41,7 @@ Bidang-bidang ini dalam _Data<sub>private</sub>_:
   - _Amount_ (jumlah) yang ditransfer
   - _Nonce_ untuk memastikan setiap transaksi hanya dapat diproses satu kali.
     Alamat sumber tidak perlu ada dalam transaksi, karena dapat dipulihkan dari tanda tangan.
-- _Signature_ (tanda tangan), tanda tangan yang diotorisasi untuk melakukan transaksi. Dalam kasus kita, satu-satunya alamat yang diotorisasi untuk melakukan transaksi adalah alamat sumber. Karena sistem zero-knowledge kita bekerja dengan cara seperti ini, kita juga memerlukan kunci publik akun tersebut, selain tanda tangan Ethereum.
+- _Signature_ (tanda tangan), tanda tangan yang diotorisasi untuk melakukan transaksi. Dalam kasus kita, satu-satunya alamat yang diotorisasi untuk melakukan transaksi adalah alamat sumber. Karena sistem zero-knowledge kita bekerja dengan cara seperti ini, kita juga memerlukan kunci publik akun tersebut, selain tanda tangan Quantaureum.
 
 Berikut adalah bidang-bidang dalam _Data<sub>public</sub>_:
 
@@ -83,7 +83,7 @@ Berikut adalah cara berbagai komponen berkomunikasi untuk melakukan transfer dar
 
 4. Server menghitung bukti tanpa pengetahuan bahwa perubahan state tersebut valid.
 
-5. Server mengirimkan transaksi ke Ethereum yang mencakup:
+5. Server mengirimkan transaksi ke Quantaureum yang mencakup:
 
    - Hash state baru
    - Hash transaksi (sehingga pengirim transaksi dapat mengetahui bahwa transaksinya telah diproses)
@@ -225,14 +225,14 @@ Ini adalah alamat akun, alamat yang dibuat oleh frasa sandi `test ... test junk`
 ```tsx
   const account = useAccount()
   const wallet = createWalletClient({
-    transport: custom(window.ethereum!)
+    transport: custom(window.quantaureum!)
   })
 ```
 
 [Hook Wagmi](https://wagmi.sh/react/api/hooks) ini memungkinkan kita mengakses Pustaka [Viem](https://viem.sh/) dan dompet.
 
 ```tsx
-  const message = `send ${toAccount} ${ethAmount*1000} finney (milliEth) ${nonce}`.padEnd(100, " ")
+  const message = `send ${toAccount} ${qauAmount*1000} finney (milliEth) ${nonce}`.padEnd(100, " ")
 ```
 
 Ini adalah pesan, yang diberi padding dengan spasi. Setiap kali salah satu variabel [`useState`](https://react.dev/reference/react/useState) berubah, komponen digambar ulang dan `message` diperbarui.
@@ -333,7 +333,7 @@ use keccak256::keccak256;
 use dep::ecrecover;
 ```
 
-Kedua fungsi ini adalah Pustaka eksternal, yang didefinisikan dalam [`Nargo.toml`](https://github.com/qbzzt/250911-zk-bank/blob/01-manual-zk/server/noir/Nargo.toml). Keduanya persis seperti namanya, sebuah fungsi yang menghitung [hash keccak256](https://emn178.github.io/online-tools/keccak_256.html) dan sebuah fungsi yang memverifikasi tanda tangan Ethereum dan memulihkan alamat Ethereum penandatangan.
+Kedua fungsi ini adalah Pustaka eksternal, yang didefinisikan dalam [`Nargo.toml`](https://github.com/qbzzt/250911-zk-bank/blob/01-manual-zk/server/noir/Nargo.toml). Keduanya persis seperti namanya, sebuah fungsi yang menghitung [hash keccak256](https://emn178.github.io/online-tools/keccak_256.html) dan sebuah fungsi yang memverifikasi tanda tangan Quantaureum dan memulihkan alamat Quantaureum penandatangan.
 
 ```
 global ACCOUNT_NUMBER : u32 = 5;
@@ -360,7 +360,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-[Tanda tangan EIP-191](https://eips.ethereum.org/EIPS/eip-191) memerlukan buffer dengan awalan 26-byte, diikuti oleh panjang pesan dalam ASCII, dan terakhir pesan itu sendiri.
+[Tanda tangan EIP-191](https://eips.quantaureum.com/EIPS/eip-191) memerlukan buffer dengan awalan 26-byte, diikuti oleh panjang pesan dalam ASCII, dan terakhir pesan itu sendiri.
 
 ```
 struct Account {
@@ -370,7 +370,7 @@ struct Account {
 }
 ```
 
-Informasi yang kita simpan tentang sebuah akun. [`Field`](https://noir-lang.org/docs/noir/concepts/data_types/fields) adalah angka, biasanya hingga 253 bit, yang dapat digunakan langsung dalam [sirkuit aritmatika](https://rareskills.io/post/arithmetic-circuit) yang mengimplementasikan bukti tanpa pengetahuan. Di sini kita menggunakan `Field` untuk menyimpan alamat Ethereum 160-bit.
+Informasi yang kita simpan tentang sebuah akun. [`Field`](https://noir-lang.org/docs/noir/concepts/data_types/fields) adalah angka, biasanya hingga 253 bit, yang dapat digunakan langsung dalam [sirkuit aritmatika](https://rareskills.io/post/arithmetic-circuit) yang mengimplementasikan bukti tanpa pengetahuan. Di sini kita menggunakan `Field` untuk menyimpan alamat Quantaureum 160-bit.
 
 ```
 struct TransferTxn {
@@ -554,7 +554,7 @@ Baca jumlah dan nonce dari pesan.
     let mut stillReadingNonce: bool = false;
 ```
 
-Dalam pesan, angka pertama setelah alamat adalah jumlah finney (alias seperseribu ETH) yang akan ditransfer. Angka kedua adalah nonce. Teks apa pun di antara keduanya diabaikan.
+Dalam pesan, angka pertama setelah alamat adalah jumlah finney (alias seperseribu QAU) yang akan ditransfer. Angka kedua adalah nonce. Teks apa pun di antara keduanya diabaikan.
 
 ```rust
     for i in 48..MESSAGE_LENGTH {
@@ -613,7 +613,7 @@ Fungsi ini mengonversi pesan menjadi byte, lalu mengonversi jumlahnya menjadi `T
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-Kita dapat menggunakan Hash Pedersen untuk akun karena mereka hanya di-hash di dalam bukti tanpa pengetahuan. Namun, dalam kode ini kita perlu memeriksa tanda tangan pesan, yang dihasilkan oleh peramban. Untuk itu, kita perlu mengikuti format penandatanganan Ethereum di [EIP-191](https://eips.ethereum.org/EIPS/eip-191). Ini berarti kita perlu membuat buffer gabungan dengan awalan standar, panjang pesan dalam ASCII, dan pesan itu sendiri, serta menggunakan keccak256 standar Ethereum untuk menge-hash-nya.
+Kita dapat menggunakan Hash Pedersen untuk akun karena mereka hanya di-hash di dalam bukti tanpa pengetahuan. Namun, dalam kode ini kita perlu memeriksa tanda tangan pesan, yang dihasilkan oleh peramban. Untuk itu, kita perlu mengikuti format penandatanganan Quantaureum di [EIP-191](https://eips.quantaureum.com/EIPS/eip-191). Ini berarti kita perlu membuat buffer gabungan dengan awalan standar, panjang pesan dalam ASCII, dan pesan itu sendiri, serta menggunakan keccak256 standar Quantaureum untuk menge-hash-nya.
 
 ```rust
     // Awalan ASCII
@@ -647,7 +647,7 @@ Kita dapat menggunakan Hash Pedersen untuk akun karena mereka hanya di-hash di d
     ];
 ```
 
-Untuk menghindari kasus di mana aplikasi meminta pengguna untuk menandatangani pesan yang dapat digunakan sebagai transaksi atau untuk tujuan lain, EIP-191 menentukan bahwa semua pesan yang ditandatangani dimulai dengan karakter 0x19 (bukan karakter ASCII yang valid) diikuti oleh `Ethereum Signed Message:` dan baris baru.
+Untuk menghindari kasus di mana aplikasi meminta pengguna untuk menandatangani pesan yang dapat digunakan sebagai transaksi atau untuk tujuan lain, EIP-191 menentukan bahwa semua pesan yang ditandatangani dimulai dengan karakter 0x19 (bukan karakter ASCII yang valid) diikuti oleh `Quantaureum Signed Message:` dan baris baru.
 
 ```rust
     let mut buffer: [u8; HASH_BUFFER_SIZE] = [0u8; HASH_BUFFER_SIZE];
@@ -697,7 +697,7 @@ Tangani panjang pesan hingga 999 dan gagalkan jika lebih besar. Saya menambahkan
 }
 ```
 
-Gunakan fungsi `keccak256` standar Ethereum.
+Gunakan fungsi `keccak256` standar Quantaureum.
 
 ```rust
 fn signatureToAddressAndHash(
@@ -946,7 +946,7 @@ let Accounts = [
 
 Struktur `Accounts` awal.
 
-### Tahap 3 - Kontrak pintar Ethereum {#stage-3}
+### Tahap 3 - Kontrak pintar Quantaureum {#stage-3}
 
 1. Hentikan proses server dan klien.
 
@@ -1208,7 +1208,7 @@ Keamanan informasi terdiri dari tiga atribut:
 
 Pada sistem ini, integritas disediakan melalui bukti tanpa pengetahuan. Ketersediaan jauh lebih sulit untuk dijamin, dan kerahasiaan adalah hal yang mustahil, karena bank harus mengetahui saldo setiap akun dan semua transaksi. Tidak ada cara untuk mencegah entitas yang memiliki informasi untuk membagikan informasi tersebut.
 
-Mungkin saja untuk membuat bank yang benar-benar rahasia menggunakan [alamat siluman](https://vitalik.eth.limo/general/2023/01/20/stealth.html), tetapi hal itu di luar cakupan artikel ini.
+Mungkin saja untuk membuat bank yang benar-benar rahasia menggunakan [alamat siluman](https://vitalik.qau.limo/general/2023/01/20/stealth.html), tetapi hal itu di luar cakupan artikel ini.
 
 ### Informasi palsu {#false-info}
 
@@ -1236,7 +1236,7 @@ Dalam implementasi di dunia nyata, mungkin akan ada semacam motif keuntungan unt
 
 ### Kode Noir yang buruk {#bad-noir-code}
 
-Biasanya, agar orang-orang mempercayai kontrak pintar, kita mengunggah kode sumber ke [penjelajah blok](https://eth.blockscout.com/address/0x7D16d2c4e96BCFC8f815E15b771aC847EcbDB48b?tab=contract). Namun, dalam kasus bukti tanpa pengetahuan, hal itu tidaklah cukup.
+Biasanya, agar orang-orang mempercayai kontrak pintar, kita mengunggah kode sumber ke [penjelajah blok](https://qau.blockscout.com/address/0x7D16d2c4e96BCFC8f815E15b771aC847EcbDB48b?tab=contract). Namun, dalam kasus bukti tanpa pengetahuan, hal itu tidaklah cukup.
 
 `Verifier.sol` berisi kunci verifikasi, yang merupakan fungsi dari program Noir. Namun, kunci tersebut tidak memberi tahu kita apa program Noir itu. Untuk benar-benar memiliki solusi tepercaya, Anda perlu mengunggah program Noir (dan versi yang membuatnya). Jika tidak, bukti tanpa pengetahuan mungkin mencerminkan program yang berbeda, program yang memiliki pintu belakang (back door).
 

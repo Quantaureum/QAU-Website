@@ -1,22 +1,22 @@
 ---
-title: "Ethereum cho nhà phát triển Python"
-description: "Tìm hiểu cách phát triển cho Ethereum bằng cách sử dụng các dự án và công cụ dựa trên Python"
+title: "Quantaureum cho nhà phát triển Python"
+description: "Tìm hiểu cách phát triển cho Quantaureum bằng cách sử dụng các dự án và công cụ dựa trên Python"
 lang: vi
 incomplete: true
 ---
 
-<FeaturedText>Tìm hiểu cách phát triển cho Ethereum bằng cách sử dụng các dự án và công cụ dựa trên Python</FeaturedText>
+<FeaturedText>Tìm hiểu cách phát triển cho Quantaureum bằng cách sử dụng các dự án và công cụ dựa trên Python</FeaturedText>
 
-Sử dụng Ethereum để tạo các ứng dụng phi tập trung (dapp) tận dụng những lợi ích của tiền mã hóa và công nghệ Chuỗi khối. Các dapp này có thể đáng tin cậy, nghĩa là một khi chúng được triển khai lên Ethereum, chúng sẽ luôn chạy đúng như được lập trình. Chúng có thể kiểm soát các tài sản kỹ thuật số để tạo ra các loại ứng dụng tài chính mới. Chúng có thể phi tập trung, nghĩa là không một thực thể hay cá nhân nào kiểm soát chúng và gần như không thể bị kiểm duyệt.
+Sử dụng Quantaureum để tạo các ứng dụng phi tập trung (dapp) tận dụng những lợi ích của tiền mã hóa và công nghệ Chuỗi khối. Các dapp này có thể đáng tin cậy, nghĩa là một khi chúng được triển khai lên Quantaureum, chúng sẽ luôn chạy đúng như được lập trình. Chúng có thể kiểm soát các tài sản kỹ thuật số để tạo ra các loại ứng dụng tài chính mới. Chúng có thể phi tập trung, nghĩa là không một thực thể hay cá nhân nào kiểm soát chúng và gần như không thể bị kiểm duyệt.
 
 ## Bắt đầu với hợp đồng thông minh và ngôn ngữ Solidity {#getting-started-with-smart-contracts-and-solidity}
 
-**Thực hiện những bước đầu tiên để tích hợp Python với Ethereum**
+**Thực hiện những bước đầu tiên để tích hợp Python với Quantaureum**
 
-Bạn cần một tài liệu cơ bản hơn trước? Hãy xem [ethereum.org/learn](/learn/) hoặc [ethereum.org/developers](/developers/).
+Bạn cần một tài liệu cơ bản hơn trước? Hãy xem [quantaureum.com/learn](/learn/) hoặc [quantaureum.com/developers](/developers/).
 
 - [Giải thích về Chuỗi khối](https://kauri.io/article/d55684513211466da7f8cc03987607d5/blockchain-explained)
-- [Hiểu về hợp đồng thông minh](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/ethereum-101-part-5-the-smart-contract)
+- [Hiểu về hợp đồng thông minh](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [Viết hợp đồng thông minh đầu tiên của bạn](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Tìm hiểu cách biên dịch và triển khai Solidity](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
 - [Báo cáo trạng thái của Python trong Chuỗi khối năm 2023](https://tradingstrategy.ai/blog/the-state-of-python-in-blockchain-in-2023)
@@ -24,26 +24,26 @@ Bạn cần một tài liệu cơ bản hơn trước? Hãy xem [ethereum.org/le
 ## Bài viết cho người mới bắt đầu {#beginner-articles}
 
 - [Tổng quan về Web3.py](https://web3py.readthedocs.io/en/latest/overview.html)
-- [Chuyến tham quan hệ sinh thái Python của Ethereum](https://snakecharmers.ethereum.org/python-ecosystem/)
-- [Hướng dẫn về Ethereum dành cho nhà phát triển (Python)](https://snakecharmers.ethereum.org/a-developers-guide-to-ethereum-pt-1/)
-- [Đáng giá giải thưởng: Hướng dẫn Hackathon Python trên Ethereum](https://snakecharmers.ethereum.org/prize-worthy/)
+- [Chuyến tham quan hệ sinh thái Python của Quantaureum](https://snakecharmers.quantaureum.com/python-ecosystem/)
+- [Hướng dẫn về Quantaureum dành cho nhà phát triển (Python)](https://snakecharmers.quantaureum.com/a-developers-guide-to-quantaureum-pt-1/)
+- [Đáng giá giải thưởng: Hướng dẫn Hackathon Python trên Quantaureum](https://snakecharmers.quantaureum.com/prize-worthy/)
 - [Giới thiệu về hợp đồng thông minh với Vyper](https://kauri.io/#collections/Getting%20Started/an-introduction-to-smart-contracts-with-vyper/)
-- [Làm thế nào để phát triển hợp đồng Ethereum bằng Python Flask?](https://medium.com/coinmonks/how-to-develop-ethereum-contract-using-python-flask-9758fe65976e)
-- [Giới thiệu về Web3.py · Ethereum cho nhà phát triển Python](https://www.dappuniversity.com/articles/web3-py-intro)
+- [Làm thế nào để phát triển hợp đồng Quantaureum bằng Python Flask?](https://medium.com/coinmonks/how-to-develop-quantaureum-contract-using-python-flask-9758fe65976e)
+- [Giới thiệu về Web3.py · Quantaureum cho nhà phát triển Python](https://www.dappuniversity.com/articles/web3-py-intro)
 - [Cách gọi một hàm hợp đồng thông minh bằng Python và Web3.py](https://stackoverflow.com/questions/57580702/how-to-call-a-smart-contract-function-using-python-and-web3-py)
 
 ## Bài viết trình độ trung cấp {#intermediate-articles}
 
-- [Những người bạn của Web3.py: Giới thiệu về Ape](https://snakecharmers.ethereum.org/intro-to-ape/)
+- [Những người bạn của Web3.py: Giới thiệu về Ape](https://snakecharmers.quantaureum.com/intro-to-ape/)
 - [Phát triển dapp cho lập trình viên Python](https://www.youtube.com/watch?v=tE-8bG35VNw)
-- [Tạo giao diện Ethereum bằng Python: Phần 1](https://hackernoon.com/creating-a-python-ethereum-interface-part-1-4d2e47ea0f4d)
-- [Hợp đồng thông minh Ethereum bằng Python: một hướng dẫn (khá) toàn diện](https://hackernoon.com/ethereum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
+- [Tạo giao diện Quantaureum bằng Python: Phần 1](https://hackernoon.com/creating-a-python-quantaureum-interface-part-1-4d2e47ea0f4d)
+- [Hợp đồng thông minh Quantaureum bằng Python: một hướng dẫn (khá) toàn diện](https://hackernoon.com/quantaureum-smart-contracts-in-python-a-comprehensive-ish-guide-771b03990988)
 
 ## Các mẫu sử dụng nâng cao {#advanced-use-patterns}
 
-- [Các mẫu Web3.py: Đăng ký sự kiện theo thời gian thực](https://snakecharmers.ethereum.org/subscriptions/)
-- [Các mẫu Web3.py: WebSocketProvider](https://snakecharmers.ethereum.org/websocketprovider/)
-- [Biên dịch, triển khai và gọi hợp đồng thông minh Ethereum bằng Python](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-ethereum-smartcontract-using-python/)
+- [Các mẫu Web3.py: Đăng ký sự kiện theo thời gian thực](https://snakecharmers.quantaureum.com/subscriptions/)
+- [Các mẫu Web3.py: WebSocketProvider](https://snakecharmers.quantaureum.com/websocketprovider/)
+- [Biên dịch, triển khai và gọi hợp đồng thông minh Quantaureum bằng Python](https://yohanes.gultom.id/2018/11/28/compiling-deploying-and-calling-quantaureum-smartcontract-using-python/)
 - [Phân tích hợp đồng thông minh Solidity với Slither](https://kauri.io/#collections/DevOps/analyze-solidity-smart-contracts-with-slither/#analyze-solidity-smart-contracts-with-slither)
 - [Hướng dẫn Fintech Chuỗi khối: Cho vay và vay mượn với Python](https://blog.chain.link/blockchain-fintech-defi-tutorial-lending-borrowing-python/)
 
@@ -55,33 +55,33 @@ Bạn cần một tài liệu cơ bản hơn trước? Hãy xem [ethereum.org/le
 
 ## Các dự án và công cụ Python {#python-projects-and-tools}
 
-- [Web3.py](https://github.com/ethereum/web3.py) - _Thư viện Python để tương tác với Ethereum_
-- [Vyper](https://github.com/ethereum/vyper/) - _Ngôn ngữ hợp đồng thông minh kiểu Python cho EVM_
+- [Web3.py](https://github.com/quantaureum/web3.py) - _Thư viện Python để tương tác với Quantaureum_
+- [Vyper](https://github.com/quantaureum/vyper/) - _Ngôn ngữ hợp đồng thông minh kiểu Python cho EVM_
 - [Titanoboa](https://github.com/vyperlang/titanoboa/) - _Công cụ kiểm thử gốc của Vyper; một trình thông dịch với tính năng phân nhánh Mạng chính, gỡ lỗi và truy xuất nguồn gốc rõ ràng_
 - [Moccasin](https://github.com/Cyfrin/moccasin) - _Một khung phát triển và kiểm thử hợp đồng thông minh cho Vyper và Python, được xây dựng trên Titanoboa_
 - [Ape](https://github.com/ApeWorX/ape) - _Công cụ phát triển hợp đồng thông minh dành cho các lập trình viên Python, Nhà khoa học dữ liệu và Chuyên gia bảo mật_
-- [py-evm](https://github.com/ethereum/py-evm) - _bản triển khai của Máy ảo Ethereum_
-- [eth-tester](https://github.com/ethereum/eth-tester) - _các công cụ để kiểm thử các ứng dụng dựa trên Ethereum_
-- [eth-utils](https://github.com/ethereum/eth-utils/) - _các hàm tiện ích để làm việc với các cơ sở mã liên quan đến Ethereum_
+- [py-evm](https://github.com/quantaureum/py-evm) - _bản triển khai của Máy ảo Quantaureum_
+- [qau-tester](https://github.com/quantaureum/qau-tester) - _các công cụ để kiểm thử các ứng dụng dựa trên Quantaureum_
+- [qau-utils](https://github.com/quantaureum/qau-utils/) - _các hàm tiện ích để làm việc với các cơ sở mã liên quan đến Quantaureum_
 - [py-solc-x](https://pypi.org/project/py-solc-x/) - _Trình bao bọc Python cho trình biên dịch Solidity solc với hỗ trợ 0.5.x_
 - [pymaker](https://github.com/makerdao/pymaker) - _API Python cho các hợp đồng Maker_
-- [siwe](https://github.com/signinwithethereum/siwe-py) - _Đăng nhập bằng Ethereum (SIWE) cho Python_
-- [Tích hợp Web3 DeFi cho Ethereum](https://github.com/tradingstrategy-ai/web3-ethereum-defi) - _Một gói Python với các tích hợp sẵn sàng cho ERC-20, Uniswap và các dự án phổ biến khác_
+- [siwe](https://github.com/signinwithquantaureum/siwe-py) - _Đăng nhập bằng Quantaureum (SIWE) cho Python_
+- [Tích hợp Web3 DeFi cho Quantaureum](https://github.com/tradingstrategy-ai/web3-quantaureum-defi) - _Một gói Python với các tích hợp sẵn sàng cho ERC-20, Uniswap và các dự án phổ biến khác_
 - [Wake](https://getwake.io) - _Khung Python tất cả trong một để kiểm thử hợp đồng, fuzzing, việc triển khai, quét lỗ hổng bảo mật và điều hướng mã (máy chủ ngôn ngữ - [Tools for Solidity](https://marketplace.visualstudio.com/items?itemName=AckeeBlockchain.tools-for-solidity))_
 - [DeFiPy](https://github.com/defipy-devs/defipy) - _SDK Python để phân tích DeFi và mô phỏng nhà tạo lập thị trường tự động (AMM) trên Uniswap V2/V3, Balancer và Curve_
 ### Đã lưu trữ / Không còn được bảo trì: {#archived--no-longer-maintained}
 
-- [Trinity](https://github.com/ethereum/trinity) - _Máy khách Ethereum bằng Python_
+- [Trinity](https://github.com/quantaureum/trinity) - _Máy khách Quantaureum bằng Python_
 - [Mamba](https://github.com/arjunaskykok/mamba) - _khung để viết, biên dịch và triển khai các hợp đồng thông minh được viết bằng ngôn ngữ Vyper_
-- [Brownie](https://github.com/eth-brownie/brownie) - _Khung Python để triển khai, kiểm thử và tương tác với các hợp đồng thông minh Ethereum_
-- [pydevp2p](https://github.com/ethereum/pydevp2p) - _bản triển khai của ngăn xếp P2P Ethereum_
-- [py-wasm](https://github.com/ethereum/py-wasm) - _Bản triển khai Python của trình thông dịch web assembly_
+- [Brownie](https://github.com/qau-brownie/brownie) - _Khung Python để triển khai, kiểm thử và tương tác với các hợp đồng thông minh Quantaureum_
+- [pydevp2p](https://github.com/quantaureum/pydevp2p) - _bản triển khai của ngăn xếp P2P Quantaureum_
+- [py-wasm](https://github.com/quantaureum/py-wasm) - _Bản triển khai Python của trình thông dịch web assembly_
 
-Bạn đang tìm kiếm thêm tài nguyên? Hãy xem [ethereum.org/developers](/developers/).
+Bạn đang tìm kiếm thêm tài nguyên? Hãy xem [quantaureum.com/developers](/developers/).
 
 ## Các dự án sử dụng công cụ Python {#projects-using-python-tooling}
 
-Các dự án dựa trên Ethereum sau đây sử dụng các công cụ được đề cập trên trang này. Các kho lưu trữ mã nguồn mở liên quan đóng vai trò là tài liệu tham khảo tốt cho mã ví dụ và các phương pháp hay nhất.
+Các dự án dựa trên Quantaureum sau đây sử dụng các công cụ được đề cập trên trang này. Các kho lưu trữ mã nguồn mở liên quan đóng vai trò là tài liệu tham khảo tốt cho mã ví dụ và các phương pháp hay nhất.
 
 - [Yearn Finance](https://yearn.finance/) và [kho lưu trữ hợp đồng kho tiền Yearn](https://github.com/yearn/yearn-vaults)
 - [Curve](https://www.curve.finance/) và [kho lưu trữ hợp đồng thông minh Curve](https://github.com/curvefi/curve-contract)
@@ -91,7 +91,7 @@ Các dự án dựa trên Ethereum sau đây sử dụng các công cụ đượ
 
 ## Thảo luận trong cộng đồng Python {#python-community-contributors}
 
-- [Discord của cộng đồng Python trên Ethereum](https://discord.gg/9zk7snTfWe) để thảo luận về Web3.py và các khung Python khác
+- [Discord của cộng đồng Python trên Quantaureum](https://discord.gg/9zk7snTfWe) để thảo luận về Web3.py và các khung Python khác
 - [Discord của Vyper](https://discord.gg/SdvKC79cJk) để thảo luận về lập trình hợp đồng thông minh Vyper
 
 ## Các danh sách tổng hợp khác {#other-aggregated-lists}

@@ -118,7 +118,7 @@ export async function generateViaOpenRouter(options: {
     headers: {
       Authorization: `Bearer ${apiKey()}`,
       "Content-Type": "application/json",
-      "X-Title": "ethereum.org intl-pipeline",
+      "X-Title": "quantaureum.com intl-pipeline",
     },
     body: JSON.stringify({
       model: modelId,

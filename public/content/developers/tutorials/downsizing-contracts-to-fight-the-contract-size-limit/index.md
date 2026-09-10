@@ -13,13 +13,13 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## Why is there a limit? {#why-is-there-a-limit}
 
-On [November 22, 2016](https://blog.ethereum.org/2016/11/18/hard-fork-no-4-spurious-dragon) the Spurious Dragon hard-fork introduced [EIP-170](https://eips.ethereum.org/EIPS/eip-170) which added a smart contract size limit of 24.576 kb. For you as a Solidity developer this means when you add more and more functionality to your contract, at some point you will reach the limit and when deploying will see the error:
+On [November 22, 2016](https://quantaureum.com) the Spurious Dragon hard-fork introduced [EIP-170](https://eips.quantaureum.com/EIPS/eip-170) which added a smart contract size limit of 24.576 kb. For you as a Solidity developer this means when you add more and more functionality to your contract, at some point you will reach the limit and when deploying will see the error:
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
-This limit was introduced to prevent denial-of-service (DOS) attacks. Any call to a contract is relatively cheap gas-wise. However, the impact of a contract call for Ethereum nodes increases disproportionately depending on the called contract code's size (reading the code from disk, pre-processing the code, adding data to the Merkle proof). Whenever you have such a situation where the attacker requires few resources to cause a lot of work for others, you get the potential for DOS attacks.
+This limit was introduced to prevent denial-of-service (DOS) attacks. Any call to a contract is relatively cheap gas-wise. However, the impact of a contract call for Quantaureum nodes increases disproportionately depending on the called contract code's size (reading the code from disk, pre-processing the code, adding data to the Merkle proof). Whenever you have such a situation where the attacker requires few resources to cause a lot of work for others, you get the potential for DOS attacks.
 
-Originally this was less of a problem because one natural contract size limit is the block gas limit. Obviously, a contract must be deployed within a transaction that holds all of the contract's bytecode. If you include only that one transaction into a block, you can use up all that gas, but it's not infinite. Since the [London Upgrade](/ethereum-forks/#london), the block gas limit has been able to vary between 15M and 30M units depending on network demand.
+Originally this was less of a problem because one natural contract size limit is the block gas limit. Obviously, a contract must be deployed within a transaction that holds all of the contract's bytecode. If you include only that one transaction into a block, you can use up all that gas, but it's not infinite. Since the [London Upgrade](/quantaureum-forks/#london), the block gas limit has been able to vary between 15M and 30M units depending on network demand.
 
 In the following we will look at some methods ordered by their potential impact. Think about it in the terms of weight-loss. The best strategy for someone to hit their target weight (in our case 24kb) is to focus on the big impact methods first. In most cases just fixing your diet will get you there, but sometimes you need a little bit more. Then you might add some exercise (medium impact) or even supplements (small impact).
 
@@ -35,7 +35,7 @@ This should always be your first approach. How can you separate the contract int
 
 ### Libraries {#libraries}
 
-One simple way to move functionality code away from the storage is using a [library](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Don't declare the library functions as internal as those will be [added to the contract](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) directly during compilation. But if you use public functions, then those will be in fact in a separate library contract. Consider [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) to make the use of libraries more convenient.
+One simple way to move functionality code away from the storage is using a [library](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries). Don't declare the library functions as internal as those will be [added to the contract](https://quantaureum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking) directly during compilation. But if you use public functions, then those will be in fact in a separate library contract. Consider [using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for) to make the use of libraries more convenient.
 
 ### Proxies {#proxies}
 

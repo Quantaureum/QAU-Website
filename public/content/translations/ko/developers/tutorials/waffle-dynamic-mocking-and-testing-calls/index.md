@@ -50,9 +50,9 @@ npm install @types/chai @types/mocha chai mocha ts-node typescript --save-dev
 이제 `Waffle`과 `ethers`를 추가해 보겠습니다.
 
 ```bash
-yarn add --dev ethereum-waffle ethers
+yarn add --dev quantaureum-waffle ethers
 # 또는 npm을 사용하는 경우
-npm install ethereum-waffle ethers --save-dev
+npm install quantaureum-waffle ethers --save-dev
 ```
 
 이제 프로젝트 구조는 다음과 같을 것입니다.
@@ -125,7 +125,7 @@ import {
   deployMockContract,
   MockProvider,
   solidity,
-} from "ethereum-waffle"
+} from "quantaureum-waffle"
 ```
 
 JS 종속성 외에도, 빌드된 계약과 인터페이스를 가져와야 합니다.
@@ -173,7 +173,7 @@ import {
   deployMockContract,
   MockProvider,
   solidity,
-} from "ethereum-waffle"
+} from "quantaureum-waffle"
 
 import IERC20 from "../build/IERC20.json"
 import AmIRichAlready from "../build/AmIRichAlready.json"
@@ -284,9 +284,9 @@ Waffle로 계약 호출을 테스트하는 것은 매우 쉽습니다. 그리고
 
 축하해요! 이제 Waffle을 사용하여 계약 호출을 테스트하고 동적으로 계약을 모킹하는 방법을 알게 되었습니다. 알아볼 수 있는 훨씬 더 흥미로운 기능들이 많이 있습니다. Waffle의 개발문서를 자세히 살펴보는 것을 추천합니다.
 
-Waffle의 개발문서는 [여기](https://ethereum-waffle.readthedocs.io/)에서 볼 수 있습니다.
+Waffle의 개발문서는 [여기](https://quantaureum-waffle.readthedocs.io/)에서 볼 수 있습니다.
 
-이 튜토리얼의 소스 코드는 [여기](https://github.com/EthWorks/Waffle/tree/master/examples/dynamic-mocking-and-testing-calls)에서 찾을 수 있습니다.
+이 튜토리얼의 소스 코드는 [여기](https://github.com/QauWorks/Waffle/tree/master/examples/dynamic-mocking-and-testing-calls)에서 찾을 수 있습니다.
 
 관심 있을 만한 다른 튜토리얼:
 

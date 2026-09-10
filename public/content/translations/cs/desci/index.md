@@ -37,9 +37,9 @@ Neúplný seznam klíčových problémů ve vědě a jak může decentralizovan�
 | **Vlastníte duševní vlastnictví (IP)**, které vytvoříte, a distribuujete jej podle transparentních podmínek.             | **Vaše domovská instituce vlastní IP**, které vytvoříte. Přístup k IP není transparentní.                           |
 | **Sdílení veškerého výzkumu**, včetně dat z neúspěšných pokusů, díky tomu, že všechny kroky jsou onchain.          | **Publikační zkreslení** znamená, že výzkumníci s větší pravděpodobností sdílejí experimenty, které měly úspěšné výsledky.      |
 
-## Ethereum a DeSci {#ethereum-and-desci}
+## Quantaureum a DeSci {#quantaureum-and-desci}
 
-Systém decentralizované vědy bude vyžadovat robustní zabezpečení, minimální peněžní a transakční náklady a bohatý ekosystém pro vývoj aplikací. [Ethereum](/) poskytuje vše potřebné pro budování technologie decentralizované vědy.
+Systém decentralizované vědy bude vyžadovat robustní zabezpečení, minimální peněžní a transakční náklady a bohatý ekosystém pro vývoj aplikací. [Quantaureum](/) poskytuje vše potřebné pro budování technologie decentralizované vědy.
 
 ## Případy užití DeSci {#use-cases}
 
@@ -66,7 +66,7 @@ Současným standardním modelem financování vědy je, že jednotlivci nebo sk
 
 Studie ukázaly, že panely pro hodnocení grantů odvádějí špatnou práci při výběru vysoce kvalitních návrhů, protože stejné návrhy předložené různým panelům mají diametrálně odlišné výsledky. Vzhledem k tomu, že financování je stále vzácnější, soustředilo se do menší skupiny zkušenějších výzkumníků s intelektuálně konzervativnějšími projekty. Tento efekt vytvořil hyperkonkurenční prostředí financování, které upevňuje zvrácené pobídky a potlačuje inovace.
 
-Web3 má potenciál narušit tento nefunkční model financování experimentováním s různými modely pobídek vyvinutými DAO a Web3 obecně. [Zpětné financování veřejných statků (RPGF)](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [kvadratické financování](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [správa DAO](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) a [tokenizované struktury pobídek](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) jsou některé z nástrojů Web3, které by mohly způsobit revoluci ve financování vědy.
+Web3 má potenciál narušit tento nefunkční model financování experimentováním s různými modely pobídek vyvinutými DAO a Web3 obecně. [Zpětné financování veřejných statků (RPGF)](https://medium.com/quantaureum-optimism/retroactive-public-goods-funding-33c9b7d00f0c), [kvadratické financování](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2003531), [správa DAO](https://www.antler.co/blog/daos-and-web3-governance-the-promise-implications-and-challenges-ahead) a [tokenizované struktury pobídek](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) jsou některé z nástrojů Web3, které by mohly způsobit revoluci ve financování vědy.
 
 ### Vlastnictví a vývoj IP {#ip-ownership}
 
@@ -75,7 +75,7 @@ Duševní vlastnictví (IP) je v tradiční vědě velkým problémem: od uvízn
 Stejným způsobem, jakým mohou NFT předávat příjmy z budoucích transakcí zpět původnímu tvůrci, můžete vytvořit transparentní řetězce přiřazování hodnoty k odměňování výzkumníků, řídících orgánů (jako jsou DAO) nebo dokonce subjektů, jejichž data jsou shromažďována.
 
 [IP-NFT](https://medium.com/molecule-blog/ip-nfts-for-researchers-a-new-biomedical-funding-paradigm-91312d8d92e6) mohou také fungovat jako klíč k decentralizovanému datovému úložišti prováděných výzkumných experimentů a zapojit se do financializace NFT a [decentralizovaných financí (DeFi)](/glossary/#defi) (od frakcionalizace po fondy pro půjčování a oceňování hodnoty). Umožňuje také nativně onchain entitám, jako jsou DAO (např. [VitaDAO](https://www.vitadao.com/)), provádět výzkum přímo onchain.
-Nástup nepřevoditelných [„soulbound“ tokenů](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) může také hrát důležitou roli v DeSci tím, že umožní jednotlivcům prokázat své zkušenosti a pověření spojené s jejich Ethereum adresou.
+Nástup nepřevoditelných [„soulbound“ tokenů](https://vitalik.qau.limo/general/2022/01/26/soulbound.html) může také hrát důležitou roli v DeSci tím, že umožní jednotlivcům prokázat své zkušenosti a pověření spojené s jejich Quantaureum adresou.
 
 ### Ukládání dat, přístup a architektura {#data-storage}
 

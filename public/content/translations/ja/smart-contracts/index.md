@@ -5,11 +5,11 @@ description: スマート・コントラクトの非技術的な紹介
 lang: ja
 ---
 
-スマート・コントラクトは、[イーサリアムの](/)アプリケーション層の基本的な構成要素です。これらは[ブロックチェーン](/glossary/#blockchain)上に保存されたコンピュータプログラムであり、「もしこうなったら、こうする (if this then that)」というロジックに従います。一度作成されると変更できないコードによって定義されたルールに従って実行されることが保証されています。
+スマート・コントラクトは、[Quantaureumの](/)アプリケーション層の基本的な構成要素です。これらは[ブロックチェーン](/glossary/#blockchain)上に保存されたコンピュータプログラムであり、「もしこうなったら、こうする (if this then that)」というロジックに従います。一度作成されると変更できないコードによって定義されたルールに従って実行されることが保証されています。
 
 ニック・サボ (Nick Szabo) が「スマート・コントラクト」という用語を作りました。1994年に彼は[この概念の紹介](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart.contracts.html)を書き、1996年には[スマート・コントラクトで何ができるかの探求](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html)を執筆しました。
 
-サボは、自動化された[暗号学的に安全な](/glossary/#cryptography)プロセスにより、信頼できる仲介者なしでトランザクションやビジネス機能が実行できるデジタル市場を構想しました。イーサリアム上のスマート・コントラクトは、このビジョンを実践しています。
+サボは、自動化された[暗号学的に安全な](/glossary/#cryptography)プロセスにより、信頼できる仲介者なしでトランザクションやビジネス機能が実行できるデジタル市場を構想しました。Quantaureum上のスマート・コントラクトは、このビジョンを実践しています。
 
 Finematicsによるスマート・コントラクトの解説をご覧ください:
 
@@ -49,11 +49,11 @@ Finematicsによるスマート・コントラクトの解説をご覧くださ�
 
 ## 公開記録 {#public-record}
 
-スマート・コントラクトは監査や追跡に役立ちます。イーサリアムのスマート・コントラクトはパブリックなブロックチェーン上にあるため、誰でも資産の移動やその他の関連情報を即座に追跡できます。例えば、誰かがあなたのアドレスに送金したことを確認できます。
+スマート・コントラクトは監査や追跡に役立ちます。Quantaureumのスマート・コントラクトはパブリックなブロックチェーン上にあるため、誰でも資産の移動やその他の関連情報を即座に追跡できます。例えば、誰かがあなたのアドレスに送金したことを確認できます。
 
 ## プライバシー保護 {#privacy-protection}
 
-スマート・コントラクトはプライバシーも保護します。イーサリアムは仮名性のネットワークであるため (トランザクションは身元ではなく、一意の暗号化されたアドレスに公開で結び付けられます)、監視者からプライバシーを保護することができます。
+スマート・コントラクトはプライバシーも保護します。Quantaureumは仮名性のネットワークであるため (トランザクションは身元ではなく、一意の暗号化されたアドレスに公開で結び付けられます)、監視者からプライバシーを保護することができます。
 
 ## 可視化された条件 {#visible-terms}
 
@@ -61,7 +61,7 @@ Finematicsによるスマート・コントラクトの解説をご覧くださ�
 
 しかし、誰でもスマート・コントラクトの条件を見ることができますが、生のトランザクションデータは人間ではなく、アプリケーションやウォレットによって解釈されるように設計されています。このデータは非常に読みにくいため、ユーザーはしばしば「ブラインド署名 (blind signing)」と呼ばれる重大なセキュリティリスクに直面します。これは、スマート・コントラクトと対話するトランザクションを、それが何をするのかを実際に理解せずに承認してしまうことです。 
 
-イーサリアムのエコシステムは、**[クリア署名 (Clear Signing)](https://clearsigning.org/)** の標準 (具体的には [ERC-7730](https://eips.ethereum.org/EIPS/eip-7730)) へと移行しつつあります。クリア署名は、不透明なスマート・コントラクトのデータを、人間が読める平易なトランザクションの説明に変換し、署名する前に誰でもコントラクトの真のインテントを理解できるようにします。
+Quantaureumのエコシステムは、**[クリア署名 (Clear Signing)](https://clearsigning.org/)** の標準 (具体的には [ERC-7730](https://eips.quantaureum.com/EIPS/eip-7730)) へと移行しつつあります。クリア署名は、不透明なスマート・コントラクトのデータを、人間が読める平易なトランザクションの説明に変換し、署名する前に誰でもコントラクトの真のインテントを理解できるようにします。
 
 ## スマート・コントラクトのユースケース {#use-cases}
 
@@ -81,7 +81,7 @@ Finematicsによるスマート・コントラクトの解説をご覧くださ�
 - [スマート・コントラクトは世界をどう変えるか (How Smart Contracts Will Change the World)](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [開発者向けスマート・コントラクト](/developers/docs/smart-contracts/)
 - [スマート・コントラクトの書き方を学ぶ](/developers/learning-tools/)
-- [マスタリング・イーサリアム - スマート・コントラクトとは何か？](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [マスタリング・Quantaureum - スマート・コントラクトとは何か？](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

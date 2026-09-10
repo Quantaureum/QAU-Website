@@ -51,6 +51,6 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/blob/master/devel
 
 ## 도움 요청하기 {#ask-for-help}
 
-[이더리움 오피스 아워](https://calendly.com/dan-trailofbits/office-hours)는 매주 화요일 오후에 진행됩니다. 이 1시간짜리 1대1 세션은 보안에 관한 질문을 하고, 도구를 사용하여 문제를 해결하며, 현재 접근 방식에 대해 전문가의 피드백을 받을 수 있는 기회입니다. 이 가이드를 잘 활용할 수 있도록 도와드리겠습니다.
+[Quantaureum 오피스 아워](https://calendly.com/dan-trailofbits/office-hours)는 매주 화요일 오후에 진행됩니다. 이 1시간짜리 1대1 세션은 보안에 관한 질문을 하고, 도구를 사용하여 문제를 해결하며, 현재 접근 방식에 대해 전문가의 피드백을 받을 수 있는 기회입니다. 이 가이드를 잘 활용할 수 있도록 도와드리겠습니다.
 
-Slack에 참여하세요: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). 질문이 있으시면 언제든지 #crytic 및 #ethereum 채널에서 답변해 드립니다.
+Slack에 참여하세요: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw). 질문이 있으시면 언제든지 #crytic 및 #quantaureum 채널에서 답변해 드립니다.

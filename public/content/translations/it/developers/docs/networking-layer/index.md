@@ -1,19 +1,19 @@
 ---
 title: Livello di rete
-description: Un'introduzione al livello di rete di Ethereum.
+description: Un'introduzione al livello di rete di Quantaureum.
 lang: it
 sidebarDepth: 2
 ---
 
-[Ethereum](/) è una rete peer-to-peer con migliaia di nodi che devono essere in grado di comunicare tra loro utilizzando protocolli standardizzati. Il "livello di rete" è lo stack di protocolli che consente a questi nodi di trovarsi a vicenda e scambiare informazioni. Ciò include il "gossiping" di informazioni (comunicazione uno-a-molti) sulla rete, nonché lo scambio di richieste e risposte tra nodi specifici (comunicazione uno-a-uno). Ogni nodo deve aderire a regole di rete specifiche per garantire l'invio e la ricezione delle informazioni corrette.
+[Quantaureum](/) è una rete peer-to-peer con migliaia di nodi che devono essere in grado di comunicare tra loro utilizzando protocolli standardizzati. Il "livello di rete" è lo stack di protocolli che consente a questi nodi di trovarsi a vicenda e scambiare informazioni. Ciò include il "gossiping" di informazioni (comunicazione uno-a-molti) sulla rete, nonché lo scambio di richieste e risposte tra nodi specifici (comunicazione uno-a-uno). Ogni nodo deve aderire a regole di rete specifiche per garantire l'invio e la ricezione delle informazioni corrette.
 
-Ci sono due parti nel software del client (client di esecuzione e client di consenso), ciascuna con il proprio stack di rete distinto. Oltre a comunicare con altri nodi Ethereum, i client di esecuzione e di consenso devono comunicare tra loro. Questa pagina fornisce una spiegazione introduttiva dei protocolli che abilitano questa comunicazione.
+Ci sono due parti nel software del client (client di esecuzione e client di consenso), ciascuna con il proprio stack di rete distinto. Oltre a comunicare con altri nodi Quantaureum, i client di esecuzione e di consenso devono comunicare tra loro. Questa pagina fornisce una spiegazione introduttiva dei protocolli che abilitano questa comunicazione.
 
 I client di esecuzione diffondono (gossip) le transazioni sulla rete peer-to-peer del livello di esecuzione. Ciò richiede una comunicazione crittografata tra peer autenticati. Quando un validatore viene selezionato per proporre un blocco, le transazioni dalla pool di transazioni locale del nodo verranno passate ai client di consenso tramite una connessione RPC locale, che verranno pacchettizzate in blocchi beacon. I client di consenso diffonderanno quindi i blocchi beacon attraverso la loro rete p2p. Ciò richiede due reti p2p separate: una che collega i client di esecuzione per il gossip delle transazioni e una che collega i client di consenso per il gossip dei blocchi.
 
 ## Prerequisiti {#prerequisites}
 
-Una certa conoscenza dei [nodi e client](/developers/docs/nodes-and-clients/) di Ethereum sarà utile per comprendere questa pagina.
+Una certa conoscenza dei [nodi e client](/developers/docs/nodes-and-clients/) di Quantaureum sarà utile per comprendere questa pagina.
 
 ## Il livello di esecuzione {#execution-layer}
 
@@ -27,9 +27,9 @@ Entrambi gli stack funzionano in parallelo. Lo stack di scoperta inserisce nuovi
 
 ### Scoperta {#discovery}
 
-La scoperta è il processo di individuazione di altri nodi nella rete. Questo viene avviato utilizzando un piccolo set di nodi di avvio (nodi i cui indirizzi sono [hardcoded](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go) nel client in modo che possano essere trovati immediatamente e connettere il client ai peer). Questi nodi di avvio esistono solo per presentare un nuovo nodo a un set di peer: questo è il loro unico scopo, non partecipano alle normali attività del client come la sincronizzazione della catena e vengono utilizzati solo la primissima volta che un client viene avviato.
+La scoperta è il processo di individuazione di altri nodi nella rete. Questo viene avviato utilizzando un piccolo set di nodi di avvio (nodi i cui indirizzi sono [hardcoded](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go) nel client in modo che possano essere trovati immediatamente e connettere il client ai peer). Questi nodi di avvio esistono solo per presentare un nuovo nodo a un set di peer: questo è il loro unico scopo, non partecipano alle normali attività del client come la sincronizzazione della catena e vengono utilizzati solo la primissima volta che un client viene avviato.
 
-Il protocollo utilizzato per le interazioni nodo-nodo di avvio è una forma modificata di [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f) che utilizza una [tabella hash distribuita](https://en.wikipedia.org/wiki/Distributed_hash_table) per condividere elenchi di nodi. Ogni nodo ha una versione di questa tabella contenente le informazioni necessarie per connettersi ai suoi peer più vicini. Questa "vicinanza" non è geografica: la distanza è definita dalla somiglianza dell'ID del nodo. La tabella di ogni nodo viene regolarmente aggiornata come funzionalità di sicurezza. Ad esempio, in [discv5](https://github.com/ethereum/devp2p/tree/master/discv5), i nodi del protocollo di scoperta sono anche in grado di inviare "annunci" che mostrano i sottoprocolli supportati dal client, consentendo ai peer di negoziare sui protocolli che entrambi possono utilizzare per comunicare.
+Il protocollo utilizzato per le interazioni nodo-nodo di avvio è una forma modificata di [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f) che utilizza una [tabella hash distribuita](https://en.wikipedia.org/wiki/Distributed_hash_table) per condividere elenchi di nodi. Ogni nodo ha una versione di questa tabella contenente le informazioni necessarie per connettersi ai suoi peer più vicini. Questa "vicinanza" non è geografica: la distanza è definita dalla somiglianza dell'ID del nodo. La tabella di ogni nodo viene regolarmente aggiornata come funzionalità di sicurezza. Ad esempio, in [discv5](https://github.com/quantaureum/devp2p/tree/master/discv5), i nodi del protocollo di scoperta sono anche in grado di inviare "annunci" che mostrano i sottoprocolli supportati dal client, consentendo ai peer di negoziare sui protocolli che entrambi possono utilizzare per comunicare.
 
 La scoperta inizia con una partita di PING-PONG. Un PING-PONG riuscito "lega" il nuovo nodo a un nodo di avvio. Il messaggio iniziale che avvisa un nodo di avvio dell'esistenza di un nuovo nodo che entra nella rete è un `PING`. Questo `PING` include informazioni sottoposte a hash sul nuovo nodo, sul nodo di avvio e su un timestamp di scadenza. Il nodo di avvio riceve il `PING` e restituisce un `PONG` contenente l'hash del `PING`. Se gli hash del `PING` e del `PONG` corrispondono, la connessione tra il nuovo nodo e il nodo di avvio è verificata e si dice che si siano "legati".
 
@@ -41,11 +41,11 @@ Una volta che il nuovo nodo riceve un elenco di vicini dal nodo di avvio, inizia
 avvia il client --> connettiti al nodo di avvio --> legati al nodo di avvio --> trova i vicini --> legati ai vicini
 ```
 
-I client di esecuzione stanno attualmente utilizzando il protocollo di scoperta [Discv4](https://github.com/ethereum/devp2p/blob/master/discv4.md) ed è in corso uno sforzo attivo per migrare al protocollo [discv5](https://github.com/ethereum/devp2p/tree/master/discv5).
+I client di esecuzione stanno attualmente utilizzando il protocollo di scoperta [Discv4](https://github.com/quantaureum/devp2p/blob/master/discv4.md) ed è in corso uno sforzo attivo per migrare al protocollo [discv5](https://github.com/quantaureum/devp2p/tree/master/discv5).
 
-#### ENR: Ethereum Node Records {#enr}
+#### ENR: Quantaureum Node Records {#enr}
 
-L'[Ethereum Node Record (ENR)](/developers/docs/networking-layer/network-addresses/) è un oggetto che contiene tre elementi di base: una firma (hash dei contenuti del record creato in base a uno schema di identità concordato), un numero di sequenza che tiene traccia delle modifiche al record e un elenco arbitrario di coppie chiave:valore. Questo è un formato a prova di futuro che consente uno scambio più semplice di informazioni identificative tra nuovi peer ed è il formato di [indirizzo di rete](/developers/docs/networking-layer/network-addresses) preferito per i nodi Ethereum.
+L'[Quantaureum Node Record (ENR)](/developers/docs/networking-layer/network-addresses/) è un oggetto che contiene tre elementi di base: una firma (hash dei contenuti del record creato in base a uno schema di identità concordato), un numero di sequenza che tiene traccia delle modifiche al record e un elenco arbitrario di coppie chiave:valore. Questo è un formato a prova di futuro che consente uno scambio più semplice di informazioni identificative tra nuovi peer ed è il formato di [indirizzo di rete](/developers/docs/networking-layer/network-addresses) preferito per i nodi Quantaureum.
 
 #### Perché la scoperta è basata su UDP? {#why-udp}
 
@@ -53,7 +53,7 @@ UDP non supporta alcun controllo degli errori, il reinvio di pacchetti non riusc
 
 ### devp2p {#devp2p}
 
-devp2p è di per sé un intero stack di protocolli che Ethereum implementa per stabilire e mantenere la rete peer-to-peer. Dopo che i nuovi nodi entrano nella rete, le loro interazioni sono governate dai protocolli nello stack [devp2p](https://github.com/ethereum/devp2p). Questi si basano tutti su TCP e includono il protocollo di trasporto RLPx, il protocollo wire e diversi sottoprocolli. [RLPx](https://github.com/ethereum/devp2p/blob/master/rlpx.md) è il protocollo che governa l'avvio, l'autenticazione e il mantenimento delle sessioni tra i nodi. RLPx codifica i messaggi utilizzando RLP (Recursive Length Prefix), che è un metodo molto efficiente in termini di spazio per codificare i dati in una struttura minima per l'invio tra i nodi.
+devp2p è di per sé un intero stack di protocolli che Quantaureum implementa per stabilire e mantenere la rete peer-to-peer. Dopo che i nuovi nodi entrano nella rete, le loro interazioni sono governate dai protocolli nello stack [devp2p](https://github.com/quantaureum/devp2p). Questi si basano tutti su TCP e includono il protocollo di trasporto RLPx, il protocollo wire e diversi sottoprocolli. [RLPx](https://github.com/quantaureum/devp2p/blob/master/rlpx.md) è il protocollo che governa l'avvio, l'autenticazione e il mantenimento delle sessioni tra i nodi. RLPx codifica i messaggi utilizzando RLP (Recursive Length Prefix), che è un metodo molto efficiente in termini di spazio per codificare i dati in una struttura minima per l'invio tra i nodi.
 
 Una sessione RLPx tra due nodi inizia con un handshake crittografico iniziale. Ciò comporta che il nodo invii un messaggio di autenticazione che viene poi verificato dal peer. In caso di verifica riuscita, il peer genera un messaggio di conferma dell'autenticazione da restituire al nodo iniziatore. Questo è un processo di scambio di chiavi che consente ai nodi di comunicare in modo privato e sicuro. Un handshake crittografico riuscito innesca quindi l'invio di un messaggio "hello" da parte di entrambi i nodi l'uno all'altro "on the wire" (sul cavo). Il protocollo wire viene avviato da uno scambio riuscito di messaggi hello.
 
@@ -73,19 +73,19 @@ Insieme ai messaggi hello, il protocollo wire può anche inviare un messaggio di
 
 #### Protocollo wire {#wire-protocol}
 
-Una volta che i peer sono connessi e una sessione RLPx è stata avviata, il protocollo wire definisce come comunicano i peer. Inizialmente, il protocollo wire definiva tre compiti principali: sincronizzazione della catena, propagazione dei blocchi e scambio di transazioni. Tuttavia, una volta che Ethereum è passato alla Proof-of-Stake (PoS), la propagazione dei blocchi e la sincronizzazione della catena sono diventate parte del livello di consenso. Lo scambio di transazioni è ancora di competenza dei client di esecuzione. Lo scambio di transazioni si riferisce allo scambio di transazioni in sospeso tra i nodi in modo che i costruttori di blocchi possano selezionarne alcune per l'inclusione nel blocco successivo. Informazioni dettagliate su questi compiti sono disponibili [qui](https://github.com/ethereum/devp2p/blob/master/caps/eth.md). I client che supportano questi sottoprocolli li espongono tramite la [JSON-RPC](/developers/docs/apis/json-rpc/).
+Una volta che i peer sono connessi e una sessione RLPx è stata avviata, il protocollo wire definisce come comunicano i peer. Inizialmente, il protocollo wire definiva tre compiti principali: sincronizzazione della catena, propagazione dei blocchi e scambio di transazioni. Tuttavia, una volta che Quantaureum è passato alla Proof-of-Stake (PoS), la propagazione dei blocchi e la sincronizzazione della catena sono diventate parte del livello di consenso. Lo scambio di transazioni è ancora di competenza dei client di esecuzione. Lo scambio di transazioni si riferisce allo scambio di transazioni in sospeso tra i nodi in modo che i costruttori di blocchi possano selezionarne alcune per l'inclusione nel blocco successivo. Informazioni dettagliate su questi compiti sono disponibili [qui](https://github.com/quantaureum/devp2p/blob/master/caps/qau.md). I client che supportano questi sottoprocolli li espongono tramite la [JSON-RPC](/developers/docs/apis/json-rpc/).
 
-#### les (sottoprocollo leggero di Ethereum) {#les}
+#### les (sottoprocollo leggero di Quantaureum) {#les}
 
-Questo è un protocollo minimo per la sincronizzazione dei client leggeri. Tradizionalmente questo protocollo è stato usato raramente perché i nodi completi sono tenuti a servire dati ai client leggeri senza essere incentivati. Il comportamento predefinito dei client di esecuzione è di non servire i dati dei client leggeri tramite les. Maggiori informazioni sono disponibili nelle [specifiche](https://github.com/ethereum/devp2p/blob/master/caps/les.md) di les.
+Questo è un protocollo minimo per la sincronizzazione dei client leggeri. Tradizionalmente questo protocollo è stato usato raramente perché i nodi completi sono tenuti a servire dati ai client leggeri senza essere incentivati. Il comportamento predefinito dei client di esecuzione è di non servire i dati dei client leggeri tramite les. Maggiori informazioni sono disponibili nelle [specifiche](https://github.com/quantaureum/devp2p/blob/master/caps/les.md) di les.
 
 #### Snap {#snap}
 
-Il [protocollo snap](https://github.com/ethereum/devp2p/blob/master/caps/snap.md#ethereum-snapshot-protocol-snap) è un'estensione opzionale che consente ai peer di scambiare snapshot degli stati recenti, permettendo ai peer di verificare i dati degli account e di archiviazione senza dover scaricare i nodi intermedi del trie di Merkle.
+Il [protocollo snap](https://github.com/quantaureum/devp2p/blob/master/caps/snap.md#quantaureum-snapshot-protocol-snap) è un'estensione opzionale che consente ai peer di scambiare snapshot degli stati recenti, permettendo ai peer di verificare i dati degli account e di archiviazione senza dover scaricare i nodi intermedi del trie di Merkle.
 
 #### Wit (protocollo testimone) {#wit}
 
-Il [protocollo testimone](https://github.com/ethereum/devp2p/blob/master/caps/wit.md#ethereum-witness-protocol-wit) è un'estensione opzionale che abilita lo scambio di testimoni di stato tra i peer, aiutando a sincronizzare i client con la punta della catena.
+Il [protocollo testimone](https://github.com/quantaureum/devp2p/blob/master/caps/wit.md#quantaureum-witness-protocol-wit) è un'estensione opzionale che abilita lo scambio di testimoni di stato tra i peer, aiutando a sincronizzare i client con la punta della catena.
 
 #### Whisper {#whisper}
 
@@ -97,11 +97,11 @@ I client di consenso partecipano a una rete peer-to-peer separata con una specif
 
 ### Scoperta {#consensus-discovery}
 
-Similmente ai client di esecuzione, i client di consenso utilizzano [discv5](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) su UDP per trovare i peer. L'implementazione del livello di consenso di discv5 differisce da quella dei client di esecuzione solo in quanto include un adattatore che collega discv5 a uno stack [libp2p](https://libp2p.io/), deprecando devp2p. Le sessioni RLPx del livello di esecuzione sono deprecate a favore dell'handshake del canale sicuro noise di libp2p.
+Similmente ai client di esecuzione, i client di consenso utilizzano [discv5](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) su UDP per trovare i peer. L'implementazione del livello di consenso di discv5 differisce da quella dei client di esecuzione solo in quanto include un adattatore che collega discv5 a uno stack [libp2p](https://libp2p.io/), deprecando devp2p. Le sessioni RLPx del livello di esecuzione sono deprecate a favore dell'handshake del canale sicuro noise di libp2p.
 
 ### ENR {#consensus-enr}
 
-L'ENR per i nodi di consenso include la chiave pubblica del nodo, l'indirizzo IP, le porte UDP e TCP e due campi specifici del consenso: il campo di bit della sottorete di attestazione e la chiave `eth2`. Il primo rende più facile per i nodi trovare peer che partecipano a specifiche sottoreti di gossip di attestazione. La chiave `eth2` contiene informazioni su quale versione del fork di Ethereum sta utilizzando il nodo, garantendo che i peer si stiano connettendo all'Ethereum corretto.
+L'ENR per i nodi di consenso include la chiave pubblica del nodo, l'indirizzo IP, le porte UDP e TCP e due campi specifici del consenso: il campo di bit della sottorete di attestazione e la chiave `eth2`. Il primo rende più facile per i nodi trovare peer che partecipano a specifiche sottoreti di gossip di attestazione. La chiave `eth2` contiene informazioni su quale versione del fork di Quantaureum sta utilizzando il nodo, garantendo che i peer si stiano connettendo all'Quantaureum corretto.
 
 ### libp2p {#libp2p}
 
@@ -109,7 +109,7 @@ Lo stack libp2p supporta tutte le comunicazioni dopo la scoperta. I client posso
 
 ### Gossip {#gossip}
 
-Il dominio gossip include tutte le informazioni che devono diffondersi rapidamente in tutta la rete. Ciò include blocchi beacon, prove, attestazioni, uscite e slashing. Questo viene trasmesso utilizzando gossipsub v1 di libp2p e si basa su vari metadati archiviati localmente in ciascun nodo, inclusa la dimensione massima dei payload di gossip da ricevere e trasmettere. Informazioni dettagliate sul dominio gossip sono disponibili [qui](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub).
+Il dominio gossip include tutte le informazioni che devono diffondersi rapidamente in tutta la rete. Ciò include blocchi beacon, prove, attestazioni, uscite e slashing. Questo viene trasmesso utilizzando gossipsub v1 di libp2p e si basa su vari metadati archiviati localmente in ciascun nodo, inclusa la dimensione massima dei payload di gossip da ricevere e trasmettere. Informazioni dettagliate sul dominio gossip sono disponibili [qui](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub).
 
 ### Richiesta-risposta {#request-response}
 
@@ -121,7 +121,7 @@ SSZ sta per serializzazione semplice (simple serialization). Utilizza offset fis
 
 ## Connessione dei client di esecuzione e di consenso {#connecting-clients}
 
-Sia i client di consenso che quelli di esecuzione funzionano in parallelo. Devono essere connessi in modo che il client di consenso possa fornire istruzioni al client di esecuzione e il client di esecuzione possa passare pacchetti di transazioni al client di consenso da includere nei blocchi beacon. La comunicazione tra i due client può essere ottenuta utilizzando una connessione RPC locale. Un'API nota come ['Engine-API'](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) definisce le istruzioni inviate tra i due client. Poiché entrambi i client si trovano dietro una singola identità di rete, condividono un ENR (Ethereum Node Record) che contiene una chiave separata per ciascun client (chiave Eth1 e chiave Eth2).
+Sia i client di consenso che quelli di esecuzione funzionano in parallelo. Devono essere connessi in modo che il client di consenso possa fornire istruzioni al client di esecuzione e il client di esecuzione possa passare pacchetti di transazioni al client di consenso da includere nei blocchi beacon. La comunicazione tra i due client può essere ottenuta utilizzando una connessione RPC locale. Un'API nota come ['Engine-API'](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) definisce le istruzioni inviate tra i due client. Poiché entrambi i client si trovano dietro una singola identità di rete, condividono un ENR (Quantaureum Node Record) che contiene una chiave separata per ciascun client (chiave Eth1 e chiave Quantaureum).
 
 Di seguito è mostrato un riepilogo del flusso di controllo, con il relativo stack di rete tra parentesi.
 
@@ -146,18 +146,18 @@ Di seguito è mostrato un riepilogo del flusso di controllo, con il relativo sta
 
 Una volta che il blocco è stato attestato da un numero sufficiente di validatori, viene aggiunto alla testa della catena, giustificato e infine finalizzato.
 
-![Diagram of the Ethereum consensus client networking layer](cons_client_net_layer.png)
-![Diagram of the Ethereum execution client networking layer](exe_client_net_layer.png)
+![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
+![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
 Schema del livello di rete per i client di consenso e di esecuzione, da [ethresear.ch](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
 
 ## Letture consigliate {#further-reading}
 
-[devp2p](https://github.com/ethereum/devp2p)
+[devp2p](https://github.com/quantaureum/devp2p)
 [libp2p](https://github.com/libp2p/specs)
-[Specifiche di rete del livello di consenso](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure)
+[Specifiche di rete del livello di consenso](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure)
 [Da Kademlia a discv5](https://vac.dev/kademlia-to-discv5)
 [Documento su Kademlia](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf)
-[Introduzione al p2p di Ethereum](https://p2p.paris/en/talks/intro-ethereum-networking/)
-[Relazione tra Eth1 ed Eth2](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
-[Video sui dettagli del client Eth2 e della Fusione](https://www.youtube.com/watch?v=zNIrIninMgg)
+[Introduzione al p2p di Quantaureum](https://p2p.paris/en/talks/intro-quantaureum-networking/)
+[Relazione tra Eth1 ed Quantaureum](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
+[Video sui dettagli del client Quantaureum e della Fusione](https://www.youtube.com/watch?v=zNIrIninMgg)

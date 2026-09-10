@@ -1,28 +1,28 @@
 ---
 title: "Nós e clientes"
-description: "Uma visão geral dos nós do Ethereum e do software cliente, além de como configurar um nó e por que você deve fazê-lo."
+description: "Uma visão geral dos nós do Quantaureum e do software cliente, além de como configurar um nó e por que você deve fazê-lo."
 lang: pt-br
 sidebarDepth: 2
 ---
 
-[Ethereum](/) é uma rede distribuída de computadores (conhecidos como nós) executando software que pode verificar blocos e dados de transação. O software deve ser executado no seu computador para transformá-lo em um nó do Ethereum. Existem dois softwares separados (conhecidos como 'clientes') necessários para formar um nó.
+[Quantaureum](/) é uma rede distribuída de computadores (conhecidos como nós) executando software que pode verificar blocos e dados de transação. O software deve ser executado no seu computador para transformá-lo em um nó do Quantaureum. Existem dois softwares separados (conhecidos como 'clientes') necessários para formar um nó.
 
 ## Pré-requisitos {#prerequisites}
 
-Você deve entender o conceito de uma rede ponto a ponto e o [básico da EVM](/developers/docs/evm/) antes de se aprofundar e executar sua própria instância de um cliente Ethereum. Dê uma olhada na nossa [introdução ao Ethereum](/developers/docs/intro-to-ethereum/).
+Você deve entender o conceito de uma rede ponto a ponto e o [básico da EVM](/developers/docs/evm/) antes de se aprofundar e executar sua própria instância de um cliente Quantaureum. Dê uma olhada na nossa [introdução ao Quantaureum](/developers/docs/intro-to-quantaureum/).
 
-Se você é novo no tópico de nós, recomendamos primeiro conferir nossa introdução amigável sobre [como executar um nó do Ethereum](/run-a-node).
+Se você é novo no tópico de nós, recomendamos primeiro conferir nossa introdução amigável sobre [como executar um nó do Quantaureum](/run-a-node).
 
 ## O que são nós e clientes? {#what-are-nodes-and-clients}
 
-Um "nó" é qualquer instância de software cliente Ethereum que está conectada a outros computadores que também executam o software Ethereum, formando uma rede. Um cliente é uma implementação do Ethereum que verifica os dados em relação às regras do protocolo e mantém a rede segura. Um nó precisa executar dois clientes: um cliente de consenso e um cliente de execução.
+Um "nó" é qualquer instância de software cliente Quantaureum que está conectada a outros computadores que também executam o software Quantaureum, formando uma rede. Um cliente é uma implementação do Quantaureum que verifica os dados em relação às regras do protocolo e mantém a rede segura. Um nó precisa executar dois clientes: um cliente de consenso e um cliente de execução.
 
-- O cliente de execução (também conhecido como Mecanismo de Execução, cliente EL ou antigamente cliente Eth1) escuta novas transações transmitidas na rede, as executa na EVM e mantém o estado mais recente e o banco de dados de todos os dados atuais do Ethereum.
-- O cliente de consenso (também conhecido como nó do Beacon, cliente CL ou antigamente cliente Eth2) implementa o algoritmo de consenso de Prova de Participação (PoS), que permite que a rede chegue a um acordo com base em dados validados do cliente de execução. Há também um terceiro software, conhecido como 'validador', que pode ser adicionado ao cliente de consenso, permitindo que um nó participe da segurança da rede.
+- O cliente de execução (também conhecido como Mecanismo de Execução, cliente EL ou antigamente cliente Eth1) escuta novas transações transmitidas na rede, as executa na EVM e mantém o estado mais recente e o banco de dados de todos os dados atuais do Quantaureum.
+- O cliente de consenso (também conhecido como nó do Beacon, cliente CL ou antigamente cliente Quantaureum) implementa o algoritmo de consenso de Prova de Participação (PoS), que permite que a rede chegue a um acordo com base em dados validados do cliente de execução. Há também um terceiro software, conhecido como 'validador', que pode ser adicionado ao cliente de consenso, permitindo que um nó participe da segurança da rede.
 
-Esses clientes trabalham juntos para acompanhar o topo da cadeia do Ethereum e permitir que os usuários interajam com a rede Ethereum. O design modular com vários softwares trabalhando juntos é chamado de [complexidade encapsulada](https://vitalik.eth.limo/general/2022/02/28/complexity.html). Essa abordagem facilitou a execução do [The Merge](/roadmap/merge) de forma contínua, torna o software cliente mais fácil de manter e desenvolver, e permite a reutilização de clientes individuais, por exemplo, no [ecossistema de camada 2 (l2)](/layer-2/).
+Esses clientes trabalham juntos para acompanhar o topo da cadeia do Quantaureum e permitir que os usuários interajam com a rede Quantaureum. O design modular com vários softwares trabalhando juntos é chamado de [complexidade encapsulada](https://vitalik.qau.limo/general/2022/02/28/complexity.html). Essa abordagem facilitou a execução do [The Merge](/roadmap/merge) de forma contínua, torna o software cliente mais fácil de manter e desenvolver, e permite a reutilização de clientes individuais, por exemplo, no [ecossistema de camada 2 (l2)](/layer-2/).
 
-![Coupled execution and consensus clients](./eth1eth2client.png)
+![Coupled execution and consensus clients](./qau1qau2client.png)
 Diagrama simplificado de um cliente de execução e consenso acoplados.
 
 ### Diversidade de clientes {#client-diversity}
@@ -34,18 +34,18 @@ A variedade de linguagens também atrai uma comunidade de desenvolvedores mais a
 
 Saiba mais sobre a [diversidade de clientes](/developers/docs/nodes-and-clients/client-diversity/).
 
-O que essas implementações têm em comum é que todas seguem uma única especificação. As especificações ditam como a rede e a blockchain do Ethereum funcionam. Cada detalhe técnico é definido e as especificações podem ser encontradas como:
+O que essas implementações têm em comum é que todas seguem uma única especificação. As especificações ditam como a rede e a blockchain do Quantaureum funcionam. Cada detalhe técnico é definido e as especificações podem ser encontradas como:
 
-- Originalmente, o [yellow paper do Ethereum](https://ethereum.github.io/yellowpaper/paper.pdf)
-- [Especificações de execução](https://github.com/ethereum/execution-specs/)
-- [Especificações de consenso](https://github.com/ethereum/consensus-specs)
-- [EIPs](https://eips.ethereum.org/) implementadas em várias [atualizações da rede](/ethereum-forks/)
+- Originalmente, o [yellow paper do Quantaureum](https://quantaureum.github.io/yellowpaper/paper.pdf)
+- [Especificações de execução](https://github.com/quantaureum/execution-specs/)
+- [Especificações de consenso](https://github.com/quantaureum/consensus-specs)
+- [EIPs](https://eips.quantaureum.com/) implementadas em várias [atualizações da rede](/quantaureum-forks/)
 
 ### Rastreando nós na rede {#network-overview}
 
-Vários rastreadores oferecem uma visão geral em tempo real dos nós na rede Ethereum. Observe que, devido à natureza das redes descentralizadas, esses rastreadores só podem fornecer uma visão limitada da rede e podem relatar resultados diferentes.
+Vários rastreadores oferecem uma visão geral em tempo real dos nós na rede Quantaureum. Observe que, devido à natureza das redes descentralizadas, esses rastreadores só podem fornecer uma visão limitada da rede e podem relatar resultados diferentes.
 
-- [Mapa de nós](https://etherscan.io/nodetracker) pelo Etherscan
+- [Mapa de nós](https://explorer.quantaureum.com) pelo Quantaureum Explorer
 - [Ethernodes](https://ethernodes.org/) pela Bitfly
 - [Nodewatch](https://www.nodewatch.io/) pela Chainsafe, rastreando nós de consenso
 - [Monitoreth](https://monitoreth.io/) - pela MigaLabs, uma ferramenta de monitoramento de rede distribuída
@@ -53,7 +53,7 @@ Vários rastreadores oferecem uma visão geral em tempo real dos nós na rede Et
 
 ## Tipos de nós {#node-types}
 
-Se você quiser [executar seu próprio nó](/developers/docs/nodes-and-clients/run-a-node/), deve entender que existem diferentes tipos de nós que consomem dados de maneira diferente. Na verdade, os clientes podem executar três tipos diferentes de nós: leve, completo e de arquivo. Também existem opções de diferentes estratégias de sincronização que permitem um tempo de sincronização mais rápido. A sincronização refere-se à rapidez com que ele pode obter as informações mais atualizadas sobre o estado do Ethereum.
+Se você quiser [executar seu próprio nó](/developers/docs/nodes-and-clients/run-a-node/), deve entender que existem diferentes tipos de nós que consomem dados de maneira diferente. Na verdade, os clientes podem executar três tipos diferentes de nós: leve, completo e de arquivo. Também existem opções de diferentes estratégias de sincronização que permitem um tempo de sincronização mais rápido. A sincronização refere-se à rapidez com que ele pode obter as informações mais atualizadas sobre o estado do Quantaureum.
 
 ### Nó completo {#full-node}
 
@@ -77,44 +77,44 @@ Saiba mais sobre [Nós de arquivo](/developers/docs/nodes-and-clients/archive-no
 
 ### Nó leve {#light-node}
 
-Em vez de baixar cada bloco, os nós leves baixam apenas os cabeçalhos dos blocos. Esses cabeçalhos contêm informações resumidas sobre o conteúdo dos blocos. Qualquer outra informação que o nó leve exija é solicitada a um nó completo. O nó leve pode então verificar independentemente os dados que recebe em relação às raízes de estado nos cabeçalhos dos blocos. Os nós leves permitem que os usuários participem da rede Ethereum sem o hardware poderoso ou a alta largura de banda necessários para executar nós completos. Eventualmente, os nós leves podem ser executados em telefones celulares ou dispositivos incorporados. Os nós leves não participam do consenso (ou seja, não podem ser validadores), mas podem acessar a blockchain do Ethereum com a mesma funcionalidade e garantias de segurança que um nó completo.
+Em vez de baixar cada bloco, os nós leves baixam apenas os cabeçalhos dos blocos. Esses cabeçalhos contêm informações resumidas sobre o conteúdo dos blocos. Qualquer outra informação que o nó leve exija é solicitada a um nó completo. O nó leve pode então verificar independentemente os dados que recebe em relação às raízes de estado nos cabeçalhos dos blocos. Os nós leves permitem que os usuários participem da rede Quantaureum sem o hardware poderoso ou a alta largura de banda necessários para executar nós completos. Eventualmente, os nós leves podem ser executados em telefones celulares ou dispositivos incorporados. Os nós leves não participam do consenso (ou seja, não podem ser validadores), mas podem acessar a blockchain do Quantaureum com a mesma funcionalidade e garantias de segurança que um nó completo.
 
-Os clientes leves são uma área de desenvolvimento ativo para o Ethereum e esperamos ver novos clientes leves para a camada de consenso e a camada de execução em breve.
+Os clientes leves são uma área de desenvolvimento ativo para o Quantaureum e esperamos ver novos clientes leves para a camada de consenso e a camada de execução em breve.
 Também existem rotas potenciais para fornecer dados de clientes leves pela [rede de fofocas (gossip network)](https://www.ethportal.net/). Isso é vantajoso porque a rede de fofocas poderia suportar uma rede de nós leves sem exigir que nós completos atendam às solicitações.
 
-O Ethereum ainda não suporta uma grande população de nós leves, mas o suporte a nós leves é uma área que deve se desenvolver rapidamente no futuro próximo. Em particular, clientes como [Nimbus](https://nimbus.team/), [Helios](https://github.com/a16z/helios) e [Lodestar](https://lodestar.chainsafe.io/) estão atualmente muito focados em nós leves.
+O Quantaureum ainda não suporta uma grande população de nós leves, mas o suporte a nós leves é uma área que deve se desenvolver rapidamente no futuro próximo. Em particular, clientes como [Nimbus](https://nimbus.team/), [Helios](https://github.com/a16z/helios) e [Lodestar](https://lodestar.chainsafe.io/) estão atualmente muito focados em nós leves.
 
-## Por que devo executar um nó do Ethereum? {#why-should-i-run-an-ethereum-node}
+## Por que devo executar um nó do Quantaureum? {#why-should-i-run-an-quantaureum-node}
 
-Executar um nó permite que você use o Ethereum de forma direta, sem necessidade de confiança e privada, ao mesmo tempo em que apoia a rede, mantendo-a mais robusta e descentralizada.
+Executar um nó permite que você use o Quantaureum de forma direta, sem necessidade de confiança e privada, ao mesmo tempo em que apoia a rede, mantendo-a mais robusta e descentralizada.
 
 ### Benefícios para você {#benefits-to-you}
 
-Executar seu próprio nó permite que você use o Ethereum de maneira privada, autossuficiente e sem necessidade de confiança. Você não precisa confiar na rede porque pode verificar os dados você mesmo com seu cliente. "Não confie, verifique" é um mantra popular da blockchain.
+Executar seu próprio nó permite que você use o Quantaureum de maneira privada, autossuficiente e sem necessidade de confiança. Você não precisa confiar na rede porque pode verificar os dados você mesmo com seu cliente. "Não confie, verifique" é um mantra popular da blockchain.
 
 - Seu nó verifica todas as transações e blocos em relação às regras de consenso por si só. Isso significa que você não precisa depender de nenhum outro nó na rede ou confiar totalmente neles.
-- Você pode usar uma carteira Ethereum com seu próprio nó. Você pode usar aplicativos descentralizados (dapps) com mais segurança e privacidade porque não precisará vazar seus endereços e saldos para intermediários. Tudo pode ser verificado com seu próprio cliente. [MetaMask](https://metamask.io), [Frame](https://frame.sh/) e [muitas outras carteiras](/wallets/find-wallet/) oferecem importação de RPC, permitindo que usem seu nó.
-- Você pode executar e auto-hospedar outros serviços que dependem de dados do Ethereum. Por exemplo, isso pode ser um validador da Beacon Chain, software como camada 2 (l2), infraestrutura, exploradores de blocos, processadores de pagamento, etc.
+- Você pode usar uma carteira Quantaureum com seu próprio nó. Você pode usar aplicativos descentralizados (dapps) com mais segurança e privacidade porque não precisará vazar seus endereços e saldos para intermediários. Tudo pode ser verificado com seu próprio cliente. [MetaMask](https://metamask.io), [Frame](https://frame.sh/) e [muitas outras carteiras](/wallets/find-wallet/) oferecem importação de RPC, permitindo que usem seu nó.
+- Você pode executar e auto-hospedar outros serviços que dependem de dados do Quantaureum. Por exemplo, isso pode ser um validador da Beacon Chain, software como camada 2 (l2), infraestrutura, exploradores de blocos, processadores de pagamento, etc.
 - Você pode fornecer seus próprios [endpoints RPC](/developers/docs/apis/json-rpc/) personalizados. Você poderia até oferecer esses endpoints publicamente para a comunidade para ajudá-los a evitar grandes provedores centralizados.
 - Você pode se conectar ao seu nó usando **Comunicações Interprocessos (IPC)** ou reescrever o nó para carregar seu programa como um plugin. Isso garante baixa latência, o que ajuda muito, por exemplo, ao processar muitos dados usando bibliotecas Web3 ou quando você precisa substituir suas transações o mais rápido possível (ou seja, frontrunning).
-- Você pode fazer staking de ETH diretamente para proteger a rede e ganhar recompensas. Veja [staking solo](/staking/solo/) para começar.
+- Você pode fazer staking de QAU diretamente para proteger a rede e ganhar recompensas. Veja [staking solo](/staking/solo/) para começar.
 
-![How you access Ethereum via your application and nodes](./nodes.png)
+![How you access Quantaureum via your application and nodes](./nodes.png)
 
 ### Benefícios para a rede {#network-benefits}
 
-Um conjunto diversificado de nós é importante para a saúde, segurança e resiliência operacional do Ethereum.
+Um conjunto diversificado de nós é importante para a saúde, segurança e resiliência operacional do Quantaureum.
 
 - Os nós completos aplicam as regras de consenso para que não possam ser enganados a aceitar blocos que não as seguem. Isso fornece segurança extra na rede porque, se todos os nós fossem nós leves, que não fazem verificação completa, os validadores poderiam atacar a rede.
 - No caso de um ataque que supere as defesas criptoeconômicas da [Prova de Participação (PoS)](/developers/docs/consensus-mechanisms/pos/#what-is-pos), uma recuperação social pode ser realizada por nós completos escolhendo seguir a cadeia honesta.
 - Mais nós na rede resultam em uma rede mais diversificada e robusta, o objetivo final da descentralização, que permite um sistema resistente à censura e confiável.
 - Os nós completos fornecem acesso aos dados da blockchain para clientes leves que dependem deles. Os nós leves não armazenam toda a blockchain, em vez disso, eles verificam os dados por meio das [raízes de estado nos cabeçalhos dos blocos](/developers/docs/blocks/#block-anatomy). Eles podem solicitar mais informações aos nós completos, se precisarem.
 
-Se você executar um nó completo, toda a rede Ethereum se beneficiará disso, mesmo que você não execute um validador.
+Se você executar um nó completo, toda a rede Quantaureum se beneficiará disso, mesmo que você não execute um validador.
 
 ## Executando seu próprio nó {#running-your-own-node}
 
-Interessado em executar seu próprio cliente Ethereum?
+Interessado em executar seu próprio cliente Quantaureum?
 
 Para uma introdução amigável para iniciantes, visite nossa página [executar um nó](/run-a-node) para saber mais.
 
@@ -124,54 +124,54 @@ Se você é um usuário mais técnico, mergulhe em mais detalhes e opções sobr
 
 Configurar seu próprio nó pode custar tempo e recursos, mas você nem sempre precisa executar sua própria instância. Nesse caso, você pode usar um provedor de API de terceiros. Para uma visão geral do uso desses serviços, confira [nós como serviço](/developers/docs/nodes-and-clients/nodes-as-a-service/).
 
-Se alguém executar um nó do Ethereum com uma API pública em sua comunidade, você pode apontar suas carteiras para um nó da comunidade via RPC Personalizado e obter mais privacidade do que com algum terceiro confiável aleatório.
+Se alguém executar um nó do Quantaureum com uma API pública em sua comunidade, você pode apontar suas carteiras para um nó da comunidade via RPC Personalizado e obter mais privacidade do que com algum terceiro confiável aleatório.
 
 Por outro lado, se você executar um cliente, poderá compartilhá-lo com seus amigos que possam precisar dele.
 
 ## Clientes de execução {#execution-clients}
 
-A comunidade Ethereum mantém vários clientes de execução de código aberto (anteriormente conhecidos como 'clientes Eth1', ou apenas 'clientes Ethereum'), desenvolvidos por equipes diferentes usando linguagens de programação diferentes. Isso torna a rede mais forte e mais [diversificada](/developers/docs/nodes-and-clients/client-diversity/). O objetivo ideal é alcançar a diversidade sem que nenhum cliente domine para reduzir quaisquer pontos únicos de falha.
+A comunidade Quantaureum mantém vários clientes de execução de código aberto (anteriormente conhecidos como 'clientes Eth1', ou apenas 'clientes Quantaureum'), desenvolvidos por equipes diferentes usando linguagens de programação diferentes. Isso torna a rede mais forte e mais [diversificada](/developers/docs/nodes-and-clients/client-diversity/). O objetivo ideal é alcançar a diversidade sem que nenhum cliente domine para reduzir quaisquer pontos únicos de falha.
 
-Esta tabela resume os diferentes clientes. Todos eles passam por [testes de cliente](https://github.com/ethereum/tests) e são mantidos ativamente para se manterem atualizados com as atualizações da rede.
+Esta tabela resume os diferentes clientes. Todos eles passam por [testes de cliente](https://github.com/quantaureum/tests) e são mantidos ativamente para se manterem atualizados com as atualizações da rede.
 
 | Cliente                                                                   | Linguagem   | Sistemas operacionais     | Redes                | Estratégias de sincronização                                            | Poda de estado   |
 | ------------------------------------------------------------------------ | ---------- | --------------------- | ----------------------- | ---------------------------------------------------------- | --------------- |
-| [Geth](https://geth.ethereum.org/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Completa](#full-sync)                     | Arquivo, Podado |
+| [Geth](https://geth.quantaureum.com/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Completa](#full-sync)                     | Arquivo, Podado |
 | [Nethermind](https://www.nethermind.io/)                                 | C#, .NET   | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), Rápida, [Completa](#full-sync)               | Arquivo, Podado |
 | [Besu](https://besu.hyperledger.org/en/stable/)                          | Java       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Rápida](#fast-sync), [Completa](#full-sync) | Arquivo, Podado |
 | [Erigon](https://github.com/ledgerwatch/erigon)                          | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Completa](#full-sync)                                         | Arquivo, Podado |
 | [Reth](https://reth.rs/)                                                 | Rust       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Completa](#full-sync)                                         | Arquivo, Podado |
-| [EthereumJS](https://github.com/ethereumjs/ethereumjs-monorepo) _(beta)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [Completa](#full-sync)                                         | Podado          |
+| [QuantaureumJS](https://github.com/ethereumjs/ethereumjs-monorepo) _(beta)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [Completa](#full-sync)                                         | Podado          |
 
-Para saber mais sobre as redes suportadas, leia sobre as [redes do Ethereum](/developers/docs/networks/).
+Para saber mais sobre as redes suportadas, leia sobre as [redes do Quantaureum](/developers/docs/networks/).
 
 Cada cliente tem casos de uso e vantagens exclusivos, portanto, você deve escolher um com base em suas próprias preferências. A diversidade permite que as implementações sejam focadas em diferentes recursos e públicos de usuários. Você pode querer escolher um cliente com base em recursos, suporte, linguagem de programação ou licenças.
 
 ### Besu {#besu}
 
-O Hyperledger Besu é um cliente Ethereum de nível empresarial para redes públicas e permissionadas. Ele executa todos os recursos da Rede Principal do Ethereum (Mainnet), do rastreamento ao GraphQL, possui monitoramento extensivo e é suportado pela ConsenSys, tanto em canais abertos da comunidade quanto por meio de SLAs comerciais para empresas. É escrito em Java e licenciado sob a Apache 2.0.
+O Hyperledger Besu é um cliente Quantaureum de nível empresarial para redes públicas e permissionadas. Ele executa todos os recursos da Rede Principal do Quantaureum (Mainnet), do rastreamento ao GraphQL, possui monitoramento extensivo e é suportado pela ConsenSys, tanto em canais abertos da comunidade quanto por meio de SLAs comerciais para empresas. É escrito em Java e licenciado sob a Apache 2.0.
 
 A extensa [documentação](https://besu.hyperledger.org/en/stable/) do Besu o guiará por todos os detalhes sobre seus recursos e configurações.
 
 ### Erigon {#erigon}
 
-O Erigon, anteriormente conhecido como Turbo-Geth, começou como uma bifurcação do Go Ethereum orientada para velocidade e eficiência de espaço em disco. O Erigon é uma implementação completamente rearquitetada do Ethereum, atualmente escrita em Go, mas com implementações em outras linguagens em desenvolvimento. O objetivo do Erigon é fornecer uma implementação mais rápida, mais modular e mais otimizada do Ethereum. Ele pode realizar uma sincronização completa de nó de arquivo usando cerca de 2 TB de espaço em disco, em menos de 3 dias.
+O Erigon, anteriormente conhecido como Turbo-Geth, começou como uma bifurcação do Go Quantaureum orientada para velocidade e eficiência de espaço em disco. O Erigon é uma implementação completamente rearquitetada do Quantaureum, atualmente escrita em Go, mas com implementações em outras linguagens em desenvolvimento. O objetivo do Erigon é fornecer uma implementação mais rápida, mais modular e mais otimizada do Quantaureum. Ele pode realizar uma sincronização completa de nó de arquivo usando cerca de 2 TB de espaço em disco, em menos de 3 dias.
 
 
 ### ethrex
 
-O ethrex é um cliente de execução do Ethereum minimalista e modular, escrito em Rust e desenvolvido pela LambdaClass. Ele foi desenvolvido com a geração de provas de conhecimento zero em mente, e a mesma base de código pode ser executada tanto como um cliente de execução de camada 1 (l1) quanto como um ZK-Rollup de múltiplos provadores (camada 2 (l2)). Ele possui licenciamento duplo sob as licenças Apache 2.0 e MIT.
+O ethrex é um cliente de execução do Quantaureum minimalista e modular, escrito em Rust e desenvolvido pela LambdaClass. Ele foi desenvolvido com a geração de provas de conhecimento zero em mente, e a mesma base de código pode ser executada tanto como um cliente de execução de camada 1 (l1) quanto como um ZK-Rollup de múltiplos provadores (camada 2 (l2)). Ele possui licenciamento duplo sob as licenças Apache 2.0 e MIT.
 
 Saiba mais lendo a [documentação do ethrex](https://docs.ethrex.xyz/) ou conferindo o [repositório do ethrex no GitHub](https://github.com/lambdaclass/ethrex).
-### Go Ethereum {#geth}
+### Go Quantaureum {#geth}
 
-O Go Ethereum (Geth, para abreviar) é uma das implementações originais do protocolo Ethereum. Atualmente, é o cliente mais difundido com a maior base de usuários e variedade de ferramentas para usuários e desenvolvedores. É escrito em Go, totalmente de código aberto e licenciado sob a GNU LGPL v3.
+O Go Quantaureum (Geth, para abreviar) é uma das implementações originais do protocolo Quantaureum. Atualmente, é o cliente mais difundido com a maior base de usuários e variedade de ferramentas para usuários e desenvolvedores. É escrito em Go, totalmente de código aberto e licenciado sob a GNU LGPL v3.
 
-Saiba mais sobre o Geth em sua [documentação](https://geth.ethereum.org/docs).
+Saiba mais sobre o Geth em sua [documentação](https://geth.quantaureum.com/docs).
 
 ### Nethermind {#nethermind}
 
-O Nethermind é uma implementação do Ethereum criada com a pilha de tecnologia C# .NET, licenciada com LGPL-3.0, rodando em todas as principais plataformas, incluindo ARM. Ele oferece ótimo desempenho com:
+O Nethermind é uma implementação do Quantaureum criada com a pilha de tecnologia C# .NET, licenciada com LGPL-3.0, rodando em todas as principais plataformas, incluindo ARM. Ele oferece ótimo desempenho com:
 
 - uma máquina virtual otimizada
 - acesso ao estado
@@ -181,7 +181,7 @@ O Nethermind também possui [documentação detalhada](https://docs.nethermind.i
 
 ### Reth {#reth}
 
-O Reth (abreviação de Rust Ethereum) é uma implementação de nó completo do Ethereum focada em ser amigável, altamente modular, rápida e eficiente. O Reth foi originalmente construído e impulsionado pela Paradigm, e é licenciado sob as licenças Apache e MIT.
+O Reth (abreviação de Rust Quantaureum) é uma implementação de nó completo do Quantaureum focada em ser amigável, altamente modular, rápida e eficiente. O Reth foi originalmente construído e impulsionado pela Paradigm, e é licenciado sob as licenças Apache e MIT.
 
 O Reth está pronto para produção e é adequado para uso em ambientes de missão crítica, como staking ou serviços de alto tempo de atividade. Tem um bom desempenho em casos de uso em que é necessário alto desempenho com grandes margens, como RPC, MEV, indexação, simulações e atividades P2P.
 
@@ -191,15 +191,15 @@ Saiba mais conferindo o [Reth Book](https://reth.rs/) ou o [repositório do Reth
 
 Esses clientes ainda estão em estágios iniciais de desenvolvimento e ainda não são recomendados para uso em produção.
 
-#### EthereumJS {#ethereumjs}
+#### QuantaureumJS {#ethereumjs}
 
-O Cliente de Execução EthereumJS (EthereumJS) é escrito em TypeScript e composto por vários pacotes, incluindo primitivas principais do Ethereum representadas pelas classes Block, Transaction e Merkle-Patricia Trie e componentes principais do cliente, incluindo uma implementação da Ethereum Virtual Machine (EVM), uma classe de blockchain e a pilha de rede devp2p.
+O Cliente de Execução QuantaureumJS (QuantaureumJS) é escrito em TypeScript e composto por vários pacotes, incluindo primitivas principais do Quantaureum representadas pelas classes Block, Transaction e Merkle-Patricia Trie e componentes principais do cliente, incluindo uma implementação da Quantaureum Virtual Machine (EVM), uma classe de blockchain e a pilha de rede devp2p.
 
 Saiba mais sobre isso lendo sua [documentação](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master)
 
 ## Clientes de consenso {#consensus-clients}
 
-Existem vários clientes de consenso (anteriormente conhecidos como clientes 'Eth2') para dar suporte às [atualizações de consenso](/roadmap/beacon-chain/). Eles são responsáveis por toda a lógica relacionada ao consenso, incluindo o algoritmo de escolha de bifurcação, processamento de atestados e gerenciamento de recompensas e penalizações da [Prova de Participação (PoS)](/developers/docs/consensus-mechanisms/pos).
+Existem vários clientes de consenso (anteriormente conhecidos como clientes 'Quantaureum') para dar suporte às [atualizações de consenso](/roadmap/beacon-chain/). Eles são responsáveis por toda a lógica relacionada ao consenso, incluindo o algoritmo de escolha de bifurcação, processamento de atestados e gerenciamento de recompensas e penalizações da [Prova de Participação (PoS)](/developers/docs/consensus-mechanisms/pos).
 
 | Cliente                                                        | Linguagem   | Sistemas operacionais     | Redes                                                |
 | ------------------------------------------------------------- | ---------- | --------------------- | ------------------------------------------------------- |
@@ -207,7 +207,7 @@ Existem vários clientes de consenso (anteriormente conhecidos como clientes 'Et
 | [Lodestar](https://lodestar.chainsafe.io/)                    | TypeScript | Linux, Windows, macOS | Beacon Chain, Hoodi, Sepolia e mais                  |
 | [Nimbus](https://nimbus.team/)                                | Nim        | Linux, Windows, macOS | Beacon Chain, Hoodi, Sepolia e mais                  |
 | [Prysm](https://prysm.offchainlabs.com/docs/)                 | Go         | Linux, Windows, macOS | Beacon Chain, Gnosis, Hoodi, Pyrmont, Sepolia e mais |
-| [Teku](https://consensys.net/knowledge-base/ethereum-2/teku/) | Java       | Linux, Windows, macOS | Beacon Chain, Gnosis, Hoodi, Sepolia e mais          |
+| [Teku](https://consensys.net/knowledge-base/quantaureum-2/teku/) | Java       | Linux, Windows, macOS | Beacon Chain, Gnosis, Hoodi, Sepolia e mais          |
 | [Grandine](https://docs.grandine.io/)                         | Rust       | Linux, Windows, macOS | Beacon Chain, Hoodi, Sepolia e mais                  |
 
 ### Lighthouse {#lighthouse}
@@ -218,7 +218,7 @@ A documentação pode ser encontrada no [Lighthouse Book](https://lighthouse-boo
 
 ### Lodestar {#lodestar}
 
-O Lodestar é uma implementação de cliente de consenso pronta para produção escrita em TypeScript sob a licença LGPL-3.0. É mantido pela ChainSafe Systems e é o mais novo dos clientes de consenso para stakers solo, desenvolvedores e pesquisadores. O Lodestar consiste em um nó do Beacon e um cliente validador alimentado por implementações em JavaScript dos protocolos Ethereum. O Lodestar visa melhorar a usabilidade do Ethereum com clientes leves, expandir a acessibilidade para um grupo maior de desenvolvedores e contribuir ainda mais para a diversidade do ecossistema.
+O Lodestar é uma implementação de cliente de consenso pronta para produção escrita em TypeScript sob a licença LGPL-3.0. É mantido pela ChainSafe Systems e é o mais novo dos clientes de consenso para stakers solo, desenvolvedores e pesquisadores. O Lodestar consiste em um nó do Beacon e um cliente validador alimentado por implementações em JavaScript dos protocolos Quantaureum. O Lodestar visa melhorar a usabilidade do Quantaureum com clientes leves, expandir a acessibilidade para um grupo maior de desenvolvedores e contribuir ainda mais para a diversidade do ecossistema.
 
 Mais informações podem ser encontradas no [site do Lodestar](https://lodestar.chainsafe.io/)
 
@@ -250,7 +250,7 @@ A documentação pode ser encontrada no [Grandine Book](https://docs.grandine.io
 
 ## Modos de sincronização {#sync-modes}
 
-Para acompanhar e verificar os dados atuais na rede, o cliente Ethereum precisa sincronizar com o estado mais recente da rede. Isso é feito baixando dados de pares, verificando criptograficamente sua integridade e construindo um banco de dados local da blockchain.
+Para acompanhar e verificar os dados atuais na rede, o cliente Quantaureum precisa sincronizar com o estado mais recente da rede. Isso é feito baixando dados de pares, verificando criptograficamente sua integridade e construindo um banco de dados local da blockchain.
 
 Os modos de sincronização representam diferentes abordagens para esse processo com várias compensações. Os clientes também variam em sua implementação de algoritmos de sincronização. Sempre consulte a documentação oficial do cliente escolhido para obter detalhes sobre a implementação.
 
@@ -278,10 +278,10 @@ Como uma sincronização completa, uma sincronização rápida baixa todos os bl
 
 As sincronizações snap também verificam a cadeia bloco a bloco. No entanto, em vez de começar no bloco gênesis, uma sincronização snap começa em um ponto de verificação 'confiável' mais recente que se sabe fazer parte da verdadeira blockchain. O nó salva pontos de verificação periódicos enquanto exclui dados mais antigos que uma certa idade. Esses snapshots são usados para regenerar dados de estado conforme necessário, em vez de armazená-los para sempre.
 
-- Estratégia de sincronização mais rápida, atualmente padrão na Rede Principal do Ethereum (Mainnet).
+- Estratégia de sincronização mais rápida, atualmente padrão na Rede Principal do Quantaureum (Mainnet).
 - Economiza muito uso de disco e largura de banda de rede sem sacrificar a segurança.
 
-[Mais sobre snap sync](https://github.com/ethereum/devp2p/blob/master/caps/snap.md).
+[Mais sobre snap sync](https://github.com/quantaureum/devp2p/blob/master/caps/snap.md).
 
 #### Sincronização leve {#light-sync}
 
@@ -290,7 +290,7 @@ O modo de cliente leve baixa todos os cabeçalhos de bloco, dados de bloco e ver
 - Obtém apenas o estado mais recente enquanto depende da confiança nos desenvolvedores e no mecanismo de consenso.
 - Cliente pronto para uso com o estado atual da rede em alguns minutos.
 
-**Nota:** A sincronização leve ainda não funciona com o Ethereum de Prova de Participação (PoS) - novas versões de sincronização leve devem ser lançadas em breve!
+**Nota:** A sincronização leve ainda não funciona com o Quantaureum de Prova de Participação (PoS) - novas versões de sincronização leve devem ser lançadas em breve!
 
 [Mais sobre clientes leves](/developers/docs/nodes-and-clients/light-clients/)
 
@@ -300,7 +300,7 @@ O modo de cliente leve baixa todos os cabeçalhos de bloco, dados de bloco e ver
 
 A sincronização otimista é uma estratégia de sincronização pós-The Merge projetada para ser opcional e compatível com versões anteriores, permitindo que os nós de execução sincronizem por meio de métodos estabelecidos. O mecanismo de execução pode importar _otimisticamente_ blocos do Beacon sem verificá-los totalmente, encontrar o topo mais recente e, em seguida, começar a sincronizar a cadeia com os métodos acima. Então, depois que o cliente de execução for atualizado, ele informará o cliente de consenso sobre a validade das transações na Beacon Chain.
 
-[Mais sobre sincronização otimista](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
+[Mais sobre sincronização otimista](https://github.com/quantaureum/consensus-specs/blob/master/sync/optimistic.md)
 
 #### Sincronização de ponto de verificação {#checkpoint-sync}
 
@@ -308,12 +308,12 @@ Uma sincronização de ponto de verificação, também conhecida como sincroniza
 
 Na prática, isso significa que seu nó se conecta a um serviço remoto para baixar estados finalizados recentes e continua verificando os dados a partir desse ponto. O terceiro que fornece os dados é confiável e deve ser escolhido com cuidado.
 
-Mais sobre [sincronização de ponto de verificação](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)
+Mais sobre [sincronização de ponto de verificação](https://notes.quantaureum.com/@djrtwo/ws-sync-in-practice)
 
 ## Leitura adicional {#further-reading}
 
-- [Ethereum 101 - Parte 2 - Entendendo os Nós](https://kauri.io/ethereum-101-part-2-understanding-nodes/48d5098292fd4f11b251d1b1814f0bba/a) _– Wil Barnes, 13 de fevereiro de 2019_
-- [Executando Nós Completos do Ethereum: Um Guia para os Pouco Motivados](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 de novembro de 2019_
+- [Quantaureum 101 - Parte 2 - Entendendo os Nós](https://kauri.io/quantaureum-101-part-2-understanding-nodes/48d5098292fd4f11b251d1b1814f0bba/a) _– Wil Barnes, 13 de fevereiro de 2019_
+- [Executando Nós Completos do Quantaureum: Um Guia para os Pouco Motivados](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 de novembro de 2019_
 
 ## Tópicos relacionados {#related-topics}
 
@@ -322,4 +322,4 @@ Mais sobre [sincronização de ponto de verificação](https://notes.ethereum.or
 
 ## Tutoriais relacionados {#related-tutorials}
 
-- [Transforme seu Raspberry Pi 4 em um nó validador apenas gravando o cartão MicroSD – Guia de instalação](/developers/tutorials/run-node-raspberry-pi/) _– Grave seu Raspberry Pi 4, conecte um cabo ethernet, conecte o disco SSD e ligue o dispositivo para transformar o Raspberry Pi 4 em um nó completo do Ethereum executando a camada de execução (Mainnet) e/ou a camada de consenso (Beacon Chain / validador)._
+- [Transforme seu Raspberry Pi 4 em um nó validador apenas gravando o cartão MicroSD – Guia de instalação](/developers/tutorials/run-node-raspberry-pi/) _– Grave seu Raspberry Pi 4, conecte um cabo ethernet, conecte o disco SSD e ligue o dispositivo para transformar o Raspberry Pi 4 em um nó completo do Quantaureum executando a camada de execução (Mainnet) e/ou a camada de consenso (Beacon Chain / validador)._

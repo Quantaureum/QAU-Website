@@ -61,8 +61,8 @@ export default async function DevelopersToolsToolJsonLD({
         url: url,
         inLanguage: locale,
         contributor: contributorList,
-        author: [REFERENCE.ETHEREUM_COMMUNITY],
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
+        author: [REFERENCE.QUANTAUREUM_COMMUNITY],
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         // Mirrors the visible breadcrumb (flat URL, no category crumb).
         breadcrumb: {
           "@type": "BreadcrumbList",
@@ -70,7 +70,7 @@ export default async function DevelopersToolsToolJsonLD({
             {
               "@type": "ListItem",
               position: 1,
-              name: "ethereum.org",
+              name: "quantaureum.com",
               item: normalizeUrlForJsonLd(locale, "/"),
             },
             {
@@ -93,8 +93,8 @@ export default async function DevelopersToolsToolJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        reviewedBy: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
         mainEntity: { "@id": `${url}#tool` },
       },
       {

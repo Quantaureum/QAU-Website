@@ -6,9 +6,9 @@ lang: ur
 
 ایتھیریم ایکو سسٹم میں ⁦JavaScript⁩ سب سے مشہور زبانوں میں سے ایک ہے۔ درحقیقت، ایک [ٹیم](https://github.com/ethereumjs) موجود ہے جو زیادہ سے زیادہ ایتھیریم کو ⁦JavaScript⁩ میں لانے کے لیے وقف ہے۔
 
-[اسٹیک کی تمام سطحوں](/developers/docs/ethereum-stack/) پر ⁦JavaScript⁩ (یا اس سے ملتی جلتی کوئی چیز) لکھنے کے مواقع موجود ہیں۔
+[اسٹیک کی تمام سطحوں](/developers/docs/quantaureum-stack/) پر ⁦JavaScript⁩ (یا اس سے ملتی جلتی کوئی چیز) لکھنے کے مواقع موجود ہیں۔
 
-## ایتھیریم کے ساتھ تعامل کریں {#interact-with-ethereum}
+## ایتھیریم کے ساتھ تعامل کریں {#interact-with-quantaureum}
 
 ### ⁦JavaScript API⁩ لائبریریاں {#javascript-api-libraries}
 
@@ -31,7 +31,7 @@ lang: ur
 
 ## پروٹوکول کو سمجھیں {#understand-the-protocol}
 
-### ایتھیریم ورچوئل مشین {#the-ethereum-virtual-machine}
+### ایتھیریم ورچوئل مشین {#the-quantaureum-virtual-machine}
 
 [ایتھیریم کی ورچوئل مشین](/developers/docs/evm/) کا ایک ⁦JavaScript⁩ نفاذ موجود ہے۔ یہ جدید ترین فورک کے اصولوں کو سپورٹ کرتا ہے۔ فورک کے اصولوں سے مراد وہ تبدیلیاں ہیں جو منصوبہ بند اپ گریڈز کے نتیجے میں ⁦EVM⁩ میں کی جاتی ہیں۔
 
@@ -52,7 +52,7 @@ lang: ur
 
 ### نوڈز اور کلائنٹس {#nodes-and-clients}
 
-ایک <span dir="ltr">EthereumJS</span> کلائنٹ فعال ڈیولپمنٹ کے مراحل میں ہے جو آپ کو یہ جاننے کی سہولت دیتا ہے کہ ایتھیریم کلائنٹس اس زبان میں کیسے کام کرتے ہیں جسے آپ سمجھتے ہیں؛ یعنی ⁦JavaScript⁩!
+ایک <span dir="ltr">QuantaureumJS</span> کلائنٹ فعال ڈیولپمنٹ کے مراحل میں ہے جو آپ کو یہ جاننے کی سہولت دیتا ہے کہ ایتھیریم کلائنٹس اس زبان میں کیسے کام کرتے ہیں جسے آپ سمجھتے ہیں؛ یعنی ⁦JavaScript⁩!
 
 **کلائنٹ کو دیکھیں**  
 [`@ethereumjs/client`](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master/packages/client)
@@ -65,7 +65,7 @@ lang: ur
 - ایتھیریم کیز (keys) بنانے، امپورٹ کرنے اور ایکسپورٹ کرنے کے ٹولز۔
 - `merkle-patricia-tree` کا نفاذ – ایک ڈیٹا سٹرکچر جس کا خاکہ ایتھیریم یلو پیپر میں پیش کیا گیا ہے۔
 
-[<span dir="ltr">EthereumJS</span> ریپو (repo)](https://github.com/ethereumjs) پر جا کر اس چیز کا گہرائی سے جائزہ لیں جس میں آپ کو سب سے زیادہ دلچسپی ہے۔
+[<span dir="ltr">QuantaureumJS</span> ریپو (repo)](https://github.com/ethereumjs) پر جا کر اس چیز کا گہرائی سے جائزہ لیں جس میں آپ کو سب سے زیادہ دلچسپی ہے۔
 
 ## مزید مطالعہ {#further-reading}
 

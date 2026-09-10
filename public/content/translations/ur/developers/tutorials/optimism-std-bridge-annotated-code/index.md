@@ -14,7 +14,7 @@ lang: ur
 اس کے ساتھ ہی، تمام ڈیٹا لیئر ۱ (l1) پر لکھا جاتا ہے تاکہ مین نیٹ کی سالمیت اور دستیابی کی تمام ضمانتوں کے ساتھ ہر چیز کو ثابت اور دوبارہ تشکیل دیا جا سکے۔
 
 آپٹیمزم (یا کسی دوسری لیئر ۲ (l2)) پر لیئر ۱ (l1) کے اثاثے استعمال کرنے کے لیے، اثاثوں کو [پل](/bridges/#prerequisites) کرنے کی ضرورت ہوتی ہے۔
-اسے حاصل کرنے کا ایک طریقہ یہ ہے کہ صارفین لیئر ۱ (l1) پر اثاثوں (جن میں <span dir="ltr">ETH</span> اور [<span dir="ltr">ERC-20</span> ٹوکنز](/developers/docs/standards/tokens/erc-20/) سب سے عام ہیں) کو مقفل کریں، اور لیئر ۲ (l2) پر استعمال کرنے کے لیے مساوی اثاثے حاصل کریں۔
+اسے حاصل کرنے کا ایک طریقہ یہ ہے کہ صارفین لیئر ۱ (l1) پر اثاثوں (جن میں <span dir="ltr">QAU</span> اور [<span dir="ltr">ERC-20</span> ٹوکنز](/developers/docs/standards/tokens/erc-20/) سب سے عام ہیں) کو مقفل کریں، اور لیئر ۲ (l2) پر استعمال کرنے کے لیے مساوی اثاثے حاصل کریں۔
 بالآخر، جس کے پاس بھی یہ اثاثے ہوں گے وہ انہیں واپس لیئر ۱ (l1) پر پل کرنا چاہے گا۔
 ایسا کرتے وقت، اثاثوں کو لیئر ۲ (l2) پر جلایا جاتا ہے اور پھر لیئر ۱ (l1) پر صارف کو واپس جاری کر دیا جاتا ہے۔
 
@@ -35,7 +35,7 @@ lang: ur
 1. اگر کوئی <span dir="ltr">ERC-20</span> جمع کر رہا ہے، تو جمع کنندہ پل کو جمع کی جانے والی رقم خرچ کرنے کا الاؤنس دیتا ہے۔
 2. جمع کنندہ لیئر ۱ (l1) پل کو کال کرتا ہے (`depositERC20`، `depositERC20To`، `depositETH`، یا `depositETHTo`)
 3. لیئر ۱ (l1) پل، پل کیے گئے اثاثے کا قبضہ لے لیتا ہے
-   - <span dir="ltr">ETH</span>: اثاثہ جمع کنندہ کی جانب سے کال کے حصے کے طور پر منتقل کیا جاتا ہے
+   - <span dir="ltr">QAU</span>: اثاثہ جمع کنندہ کی جانب سے کال کے حصے کے طور پر منتقل کیا جاتا ہے
    - <span dir="ltr">ERC-20</span>: اثاثہ پل کی جانب سے جمع کنندہ کے فراہم کردہ الاؤنس کا استعمال کرتے ہوئے خود کو منتقل کیا جاتا ہے
 4. لیئر ۱ (l1) پل کراس ڈومین پیغام کے طریقہ کار کا استعمال کرتے ہوئے لیئر ۲ (l2) پل پر `finalizeDeposit` کو کال کرتا ہے
 
@@ -46,7 +46,7 @@ lang: ur
    - اصل میں لیئر ۱ (l1) پر موجود پل سے تھی
 6. لیئر ۲ (l2) پل چیک کرتا ہے کہ آیا لیئر ۲ (l2) پر <span dir="ltr">ERC-20</span> ٹوکن کنٹریکٹ درست ہے:
    - لیئر ۲ (l2) کنٹریکٹ رپورٹ کرتا ہے کہ اس کا لیئر ۱ (l1) ہم منصب وہی ہے جہاں سے لیئر ۱ (l1) پر ٹوکن آئے تھے
-   - لیئر ۲ (l2) کنٹریکٹ رپورٹ کرتا ہے کہ یہ درست انٹرفیس کو سپورٹ کرتا ہے ([<span dir="ltr">ERC-165</span> کا استعمال کرتے ہوئے](https://eips.ethereum.org/EIPS/eip-165))۔
+   - لیئر ۲ (l2) کنٹریکٹ رپورٹ کرتا ہے کہ یہ درست انٹرفیس کو سپورٹ کرتا ہے ([<span dir="ltr">ERC-165</span> کا استعمال کرتے ہوئے](https://eips.quantaureum.com/EIPS/eip-165))۔
 7. اگر لیئر ۲ (l2) کنٹریکٹ درست ہے، تو اسے مناسب پتے پر مناسب تعداد میں ٹوکنز ڈھالنے کے لیے کال کریں۔ اگر نہیں، تو صارف کو لیئر ۱ (l1) پر ٹوکنز کا دعویٰ کرنے کی اجازت دینے کے لیے انخلا کا عمل شروع کریں۔
 
 ### انخلا کا فلو {#withdrawal-flow}
@@ -62,7 +62,7 @@ lang: ur
 4. لیئر ۱ (l1) پل تصدیق کرتا ہے کہ `finalizeETHWithdrawal` یا `finalizeERC20Withdrawal` کی کال جائز ہے:
    - کراس ڈومین پیغام کے طریقہ کار سے آئی ہے
    - اصل میں لیئر ۲ (l2) پر موجود پل سے تھی
-5. لیئر ۱ (l1) پل مناسب اثاثہ (<span dir="ltr">ETH</span> یا <span dir="ltr">ERC-20</span>) کو مناسب پتے پر منتقل کرتا ہے
+5. لیئر ۱ (l1) پل مناسب اثاثہ (<span dir="ltr">QAU</span> یا <span dir="ltr">ERC-20</span>) کو مناسب پتے پر منتقل کرتا ہے
 
 ## لیئر ۱ کا کوڈ {#layer-1-code}
 
@@ -70,7 +70,7 @@ lang: ur
 
 ### IL1ERC20Bridge {#il1erc20bridge}
 
-[اس انٹرفیس کی تعریف یہاں کی گئی ہے](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol)۔
+[اس انٹرفیس کی تعریف یہاں کی گئی ہے](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol)۔
 اس میں <span dir="ltr">ERC-20</span> ٹوکنز کو پل کرنے کے لیے درکار فنکشنز اور تعریفیں شامل ہیں۔
 
 ```solidity
@@ -236,12 +236,12 @@ interface IL1ERC20Bridge {
 
 ### IL1StandardBridge {#il1standardbridge}
 
-[اس انٹرفیس کی تعریف یہاں کی گئی ہے](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol)۔
-اس فائل میں <span dir="ltr">ETH</span> کے لیے ایونٹ اور فنکشن کی تعریفیں شامل ہیں۔
+[اس انٹرفیس کی تعریف یہاں کی گئی ہے](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol)۔
+اس فائل میں <span dir="ltr">QAU</span> کے لیے ایونٹ اور فنکشن کی تعریفیں شامل ہیں۔
 یہ تعریفیں اوپر <span dir="ltr">ERC-20</span> کے لیے `IL1ERC20Bridge` میں بیان کردہ تعریفوں سے بہت ملتی جلتی ہیں۔
 
 پل کا انٹرفیس دو فائلوں کے درمیان تقسیم کیا گیا ہے کیونکہ کچھ <span dir="ltr">ERC-20</span> ٹوکنز کو کسٹم پروسیسنگ کی ضرورت ہوتی ہے اور انہیں معیاری پل کے ذریعے نہیں سنبھالا جا سکتا۔
-اس طرح وہ کسٹم پل جو ایسے ٹوکن کو سنبھالتا ہے وہ `IL1ERC20Bridge` کو نافذ کر سکتا ہے اور اسے <span dir="ltr">ETH</span> کو بھی پل کرنے کی ضرورت نہیں ہوتی۔
+اس طرح وہ کسٹم پل جو ایسے ٹوکن کو سنبھالتا ہے وہ `IL1ERC20Bridge` کو نافذ کر سکتا ہے اور اسے <span dir="ltr">QAU</span> کو بھی پل کرنے کی ضرورت نہیں ہوتی۔
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -279,7 +279,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
      ********************/
 
     /**
-     * @dev کالر کے لیئر ۲ (l2) بیلنس میں ETH کی کچھ رقم جمع کریں۔
+     * @dev کالر کے لیئر ۲ (l2) بیلنس میں QAU کی کچھ رقم جمع کریں۔
             .
             .
             .
@@ -287,7 +287,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
     function depositETH(uint32 _l2Gas, bytes calldata _data) external payable;
 
     /**
-     * @dev وصول کنندہ کے لیئر ۲ (l2) بیلنس میں ETH کی کچھ رقم جمع کریں۔
+     * @dev وصول کنندہ کے لیئر ۲ (l2) بیلنس میں QAU کی کچھ رقم جمع کریں۔
             .
             .
             .
@@ -304,7 +304,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
 
     /**
      * @dev لیئر ۲ (l2) سے لیئر ۱ (l1) تک انخلا مکمل کریں، اور وصول کنندہ کے
-     * لیئر ۱ (l1) ETH ٹوکن کے بیلنس میں فنڈز کریڈٹ کریں۔ چونکہ صرف xDomainMessenger اس فنکشن کو کال کر سکتا ہے، اس لیے اسے کبھی بھی
+     * لیئر ۱ (l1) QAU ٹوکن کے بیلنس میں فنڈز کریڈٹ کریں۔ چونکہ صرف xDomainMessenger اس فنکشن کو کال کر سکتا ہے، اس لیے اسے کبھی بھی
      * انخلا کے حتمی ہونے سے پہلے کال نہیں کیا جائے گا۔
                 .
                 .
@@ -321,7 +321,7 @@ interface IL1StandardBridge is IL1ERC20Bridge {
 
 ### CrossDomainEnabled {#crossdomainenabled}
 
-[یہ کنٹریکٹ](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) دونوں پلوں ([لیئر ۱ (l1)](#the-l1-bridge-contract) اور [لیئر ۲ (l2)](#l2-bridge-code)) کو وراثت میں ملا ہے تاکہ دوسری لیئر کو پیغامات بھیجے جا سکیں۔
+[یہ کنٹریکٹ](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) دونوں پلوں ([لیئر ۱ (l1)](#the-l1-bridge-contract) اور [لیئر ۲ (l2)](#l2-bridge-code)) کو وراثت میں ملا ہے تاکہ دوسری لیئر کو پیغامات بھیجے جا سکیں۔
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -331,7 +331,7 @@ pragma solidity >0.5.0 <0.9.0;
 import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 ```
 
-[یہ انٹرفیس](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) کنٹریکٹ کو بتاتا ہے کہ کراس ڈومین میسنجر کا استعمال کرتے ہوئے دوسری لیئر کو پیغامات کیسے بھیجنے ہیں۔
+[یہ انٹرفیس](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) کنٹریکٹ کو بتاتا ہے کہ کراس ڈومین میسنجر کا استعمال کرتے ہوئے دوسری لیئر کو پیغامات کیسے بھیجنے ہیں۔
 یہ کراس ڈومین میسنجر ایک بالکل الگ سسٹم ہے، اور اس پر ایک الگ مضمون بنتا ہے، جو مجھے امید ہے کہ میں مستقبل میں لکھوں گا۔
 
 ```solidity
@@ -398,7 +398,7 @@ contract CrossDomainEnabled {
         );
 ```
 
-جس طریقے سے کراس ڈومین میسنجر وہ پتہ فراہم کرتا ہے جس نے دوسری لیئر کے ساتھ پیغام بھیجا تھا وہ [`.xDomainMessageSender()` فنکشن](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128) ہے۔
+جس طریقے سے کراس ڈومین میسنجر وہ پتہ فراہم کرتا ہے جس نے دوسری لیئر کے ساتھ پیغام بھیجا تھا وہ [`.xDomainMessageSender()` فنکشن](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128) ہے۔
 جب تک اسے اس ٹرانزیکشن میں کال کیا جاتا ہے جو پیغام کے ذریعے شروع کی گئی تھی، یہ یہ معلومات فراہم کر سکتا ہے۔
 
 ہمیں یہ یقینی بنانے کی ضرورت ہے کہ ہمیں موصول ہونے والا پیغام دوسرے پل سے آیا ہے۔
@@ -462,7 +462,7 @@ contract CrossDomainEnabled {
 
 ### لیئر ۱ کا پل کنٹریکٹ {#the-l1-bridge-contract}
 
-[اس کنٹریکٹ کا سورس کوڈ یہاں ہے](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol)۔
+[اس کنٹریکٹ کا سورس کوڈ یہاں ہے](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol)۔
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -484,7 +484,7 @@ import { IL1ERC20Bridge } from "./IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "../../L2/messaging/IL2ERC20Bridge.sol";
 ```
 
-[یہ انٹرفیس](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) ہمیں لیئر ۲ (l2) پر معیاری پل کو کنٹرول کرنے کے لیے پیغامات بنانے کی اجازت دیتا ہے۔
+[یہ انٹرفیس](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) ہمیں لیئر ۲ (l2) پر معیاری پل کو کنٹرول کرنے کے لیے پیغامات بنانے کی اجازت دیتا ہے۔
 
 ```solidity
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -504,7 +504,7 @@ import { CrossDomainEnabled } from "../../libraries/bridge/CrossDomainEnabled.so
 import { Lib_PredeployAddresses } from "../../libraries/constants/Lib_PredeployAddresses.sol";
 ```
 
-[`Lib_PredeployAddresses`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) میں لیئر ۲ (l2) کنٹریکٹس کے پتے ہیں جن کا پتہ ہمیشہ ایک ہی ہوتا ہے۔ اس میں لیئر ۲ (l2) پر معیاری پل شامل ہے۔
+[`Lib_PredeployAddresses`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) میں لیئر ۲ (l2) کنٹریکٹس کے پتے ہیں جن کا پتہ ہمیشہ ایک ہی ہوتا ہے۔ اس میں لیئر ۲ (l2) پر معیاری پل شامل ہے۔
 
 ```solidity
 import { Address } from "@openzeppelin/contracts/utils/Address.sol";
@@ -518,7 +518,7 @@ import { Address } from "@openzeppelin/contracts/utils/Address.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[<span dir="ltr">ERC-20</span> معیار](https://eips.ethereum.org/EIPS/eip-20) کنٹریکٹ کے لیے ناکامی کی اطلاع دینے کے دو طریقوں کو سپورٹ کرتا ہے:
+[<span dir="ltr">ERC-20</span> معیار](https://eips.quantaureum.com/EIPS/eip-20) کنٹریکٹ کے لیے ناکامی کی اطلاع دینے کے دو طریقوں کو سپورٹ کرتا ہے:
 
 1. ریورٹ
 2. `false` واپس کریں
@@ -528,7 +528,7 @@ import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.s
 ```solidity
 /**
  * @title L1StandardBridge
- * @dev لیئر ۱ (l1) ETH اور ERC-20 پل ایک کنٹریکٹ ہے جو جمع شدہ لیئر ۱ (l1) فنڈز اور معیاری
+ * @dev لیئر ۱ (l1) QAU اور ERC-20 پل ایک کنٹریکٹ ہے جو جمع شدہ لیئر ۱ (l1) فنڈز اور معیاری
  * ٹوکنز کو اسٹور کرتا ہے جو لیئر ۲ (l2) پر استعمال میں ہیں۔ یہ متعلقہ لیئر ۲ (l2) پل کو ہم آہنگ کرتا ہے، اسے جمع ہونے کی اطلاع دیتا ہے
  * اور نئے حتمی انخلا کے لیے اسے سنتا ہے۔
  *
@@ -641,7 +641,7 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
 
 ```solidity
     /**
-     * @dev کالر کے لیئر ۲ (l2) بیلنس میں ETH کی کچھ رقم جمع کرنے کے لیے
+     * @dev کالر کے لیئر ۲ (l2) بیلنس میں QAU کی کچھ رقم جمع کرنے کے لیے
      * اس فنکشن کو بغیر کسی ڈیٹا کے کال کیا جا سکتا ہے۔
      * چونکہ وصول کرنے والا فنکشن ڈیٹا نہیں لیتا، اس لیے ایک محتاط
      * ڈیفالٹ رقم لیئر ۲ (l2) کو بھیج دی جاتی ہے۔
@@ -674,11 +674,11 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
     }
 ```
 
-یہ دونوں فنکشنز `_initiateETHDeposit` کے گرد ریپرز ہیں، وہ فنکشن جو اصل <span dir="ltr">ETH</span> جمع کرنے کو سنبھالتا ہے۔
+یہ دونوں فنکشنز `_initiateETHDeposit` کے گرد ریپرز ہیں، وہ فنکشن جو اصل <span dir="ltr">QAU</span> جمع کرنے کو سنبھالتا ہے۔
 
 ```solidity
     /**
-     * @dev ETH کو اسٹور کر کے اور لیئر ۲ (l2) ETH گیٹ وے کو جمع ہونے کی اطلاع دے کر
+     * @dev QAU کو اسٹور کر کے اور لیئر ۲ (l2) QAU گیٹ وے کو جمع ہونے کی اطلاع دے کر
      * جمع کرنے کی منطق انجام دیتا ہے۔
      * @param _from لیئر ۱ (l1) پر جمع کی گئی رقم نکالنے کے لیے اکاؤنٹ۔
      * @param _to لیئر ۲ (l2) پر جمع کی گئی رقم دینے کے لیے اکاؤنٹ۔
@@ -713,14 +713,14 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
         );
 ```
 
-یہاں پیغام ان پیرامیٹرز کے ساتھ [`finalizeDeposit` فنکشن](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) کو کال کرنا ہے:
+یہاں پیغام ان پیرامیٹرز کے ساتھ [`finalizeDeposit` فنکشن](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) کو کال کرنا ہے:
 
 | پیرامیٹر | ویلیو | مطلب |
 | --------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| \_l1Token | address(0) | لیئر ۱ (l1) پر <span dir="ltr">ETH</span> (جو کہ <span dir="ltr">ERC-20</span> ٹوکن نہیں ہے) کی نمائندگی کرنے کے لیے خصوصی ویلیو |
-| \_l2Token | Lib_PredeployAddresses.OVM_ETH | لیئر ۲ (l2) کنٹریکٹ جو آپٹیمزم پر <span dir="ltr">ETH</span> کا انتظام کرتا ہے، `0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000` (یہ کنٹریکٹ صرف اندرونی آپٹیمزم کے استعمال کے لیے ہے) |
-| \_from | \_from | لیئر ۱ (l1) پر وہ پتہ جو <span dir="ltr">ETH</span> بھیجتا ہے |
-| \_to | \_to | لیئر ۲ (l2) پر وہ پتہ جو <span dir="ltr">ETH</span> وصول کرتا ہے |
+| \_l1Token | address(0) | لیئر ۱ (l1) پر <span dir="ltr">QAU</span> (جو کہ <span dir="ltr">ERC-20</span> ٹوکن نہیں ہے) کی نمائندگی کرنے کے لیے خصوصی ویلیو |
+| \_l2Token | Lib_PredeployAddresses.OVM_ETH | لیئر ۲ (l2) کنٹریکٹ جو آپٹیمزم پر <span dir="ltr">QAU</span> کا انتظام کرتا ہے، `0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000` (یہ کنٹریکٹ صرف اندرونی آپٹیمزم کے استعمال کے لیے ہے) |
+| \_from | \_from | لیئر ۱ (l1) پر وہ پتہ جو <span dir="ltr">QAU</span> بھیجتا ہے |
+| \_to | \_to | لیئر ۲ (l2) پر وہ پتہ جو <span dir="ltr">QAU</span> وصول کرتا ہے |
 | amount | msg.value | بھیجے گئے <span dir="ltr">Wei</span> کی مقدار (جو پہلے ہی پل کو بھیجی جا چکی ہے) |
 | \_data | \_data | جمع کرنے کے ساتھ منسلک کرنے کے لیے اضافی ڈیٹا |
 
@@ -793,7 +793,7 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
 
 یہ فنکشن اوپر دیے گئے `_initiateETHDeposit` سے ملتا جلتا ہے، جس میں چند اہم فرق ہیں۔
 پہلا فرق یہ ہے کہ یہ فنکشن ٹوکن کے پتے اور منتقل کی جانے والی رقم کو پیرامیٹرز کے طور پر وصول کرتا ہے۔
-<span dir="ltr">ETH</span> کے معاملے میں پل کی کال میں پہلے ہی پل کے اکاؤنٹ (`msg.value`) میں اثاثے کی منتقلی شامل ہوتی ہے۔
+<span dir="ltr">QAU</span> کے معاملے میں پل کی کال میں پہلے ہی پل کے اکاؤنٹ (`msg.value`) میں اثاثے کی منتقلی شامل ہوتی ہے۔
 
 ```solidity
         // جب لیئر ۱ (l1) پر جمع شروع کیا جاتا ہے، تو لیئر ۱ (l1) پل مستقبل کے لیے فنڈز اپنے پاس منتقل کر لیتا ہے
@@ -803,7 +803,7 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
         IERC20(_l1Token).safeTransferFrom(_from, address(this), _amount);
 ```
 
-<span dir="ltr">ERC-20</span> ٹوکن کی منتقلی <span dir="ltr">ETH</span> سے مختلف عمل کی پیروی کرتی ہے:
+<span dir="ltr">ERC-20</span> ٹوکن کی منتقلی <span dir="ltr">QAU</span> سے مختلف عمل کی پیروی کرتی ہے:
 
 1. صارف (`_from`) پل کو مناسب ٹوکن منتقل کرنے کا الاؤنس دیتا ہے۔
 2. صارف ٹوکن کنٹریکٹ کے پتے، رقم وغیرہ کے ساتھ پل کو کال کرتا ہے۔
@@ -862,17 +862,17 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
 ```
 
 یقینی بنائیں کہ یہ ایک _جائز_ پیغام ہے، جو کراس ڈومین میسنجر سے آ رہا ہے اور لیئر ۲ (l2) ٹوکن پل سے شروع ہو رہا ہے۔
-یہ فنکشن پل سے <span dir="ltr">ETH</span> نکالنے کے لیے استعمال ہوتا ہے، اس لیے ہمیں یہ یقینی بنانا ہوگا کہ اسے صرف مجاز کالر کے ذریعے ہی کال کیا جائے۔
+یہ فنکشن پل سے <span dir="ltr">QAU</span> نکالنے کے لیے استعمال ہوتا ہے، اس لیے ہمیں یہ یقینی بنانا ہوگا کہ اسے صرف مجاز کالر کے ذریعے ہی کال کیا جائے۔
 
 ```solidity
         // سلدر-disable-next-line مکرر داخلہ-events
         (bool success, ) = _to.call{ value: _amount }(new bytes(0));
 ```
 
-<span dir="ltr">ETH</span> منتقل کرنے کا طریقہ یہ ہے کہ وصول کنندہ کو `msg.value` میں <span dir="ltr">Wei</span> کی مقدار کے ساتھ کال کی جائے۔
+<span dir="ltr">QAU</span> منتقل کرنے کا طریقہ یہ ہے کہ وصول کنندہ کو `msg.value` میں <span dir="ltr">Wei</span> کی مقدار کے ساتھ کال کی جائے۔
 
 ```solidity
-        require(success, "TransferHelper::safeTransferETH: ETH transfer failed");
+        require(success, "TransferHelper::safeTransferETH: QAU transfer failed");
 
         // سلدر-disable-next-line مکرر داخلہ-events
         emit ETHWithdrawalFinalized(_from, _to, _amount, _data);
@@ -916,14 +916,14 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
 
 
     /*****************************
-     * عارضی - ETH کی منتقلی *
+     * عارضی - QAU کی منتقلی *
      *****************************/
 
     /**
-     * @dev اکاؤنٹ میں ETH بیلنس کا اضافہ کرتا ہے۔ اس کا مقصد ETH کو
+     * @dev اکاؤنٹ میں QAU بیلنس کا اضافہ کرتا ہے۔ اس کا مقصد QAU کو
      * پرانے گیٹ وے سے نئے گیٹ وے پر منتقل کرنے کی اجازت دینا ہے۔
      * نوٹ: یہ صرف ایک اپ گریڈ کے لیے چھوڑا گیا ہے تاکہ ہم پرانے کنٹریکٹ سے
-     * منتقل شدہ ETH وصول کر سکیں
+     * منتقل شدہ QAU وصول کر سکیں
      */
     function donateETH() external payable {}
 }
@@ -932,7 +932,7 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
 پل کا ایک ابتدائی نفاذ تھا۔
 جب ہم اس نفاذ سے اس کی طرف منتقل ہوئے، تو ہمیں تمام اثاثوں کو منتقل کرنا پڑا۔
 <span dir="ltr">ERC-20</span> ٹوکنز کو صرف منتقل کیا جا سکتا ہے۔
-تاہم، کسی کنٹریکٹ میں <span dir="ltr">ETH</span> منتقل کرنے کے لیے آپ کو اس کنٹریکٹ کی منظوری کی ضرورت ہوتی ہے، جو کہ `donateETH` ہمیں فراہم کرتا ہے۔
+تاہم، کسی کنٹریکٹ میں <span dir="ltr">QAU</span> منتقل کرنے کے لیے آپ کو اس کنٹریکٹ کی منظوری کی ضرورت ہوتی ہے، جو کہ `donateETH` ہمیں فراہم کرتا ہے۔
 
 ## لیئر ۲ پر <span dir="ltr">ERC-20</span> ٹوکنز {#erc-20-tokens-on-l2}
 
@@ -944,7 +944,7 @@ contract L1StandardBridge is IL1StandardBridge, CrossDomainEnabled {
 
 ### IL2StandardERC20 {#il2standarderc20}
 
-لیئر ۲ (l2) پر ہر <span dir="ltr">ERC-20</span> ٹوکن جو معیاری پل کا استعمال کرتا ہے اسے [یہ انٹرفیس](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol) فراہم کرنے کی ضرورت ہوتی ہے، جس میں وہ فنکشنز اور ایونٹس ہوتے ہیں جن کی معیاری پل کو ضرورت ہوتی ہے۔
+لیئر ۲ (l2) پر ہر <span dir="ltr">ERC-20</span> ٹوکن جو معیاری پل کا استعمال کرتا ہے اسے [یہ انٹرفیس](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol) فراہم کرنے کی ضرورت ہوتی ہے، جس میں وہ فنکشنز اور ایونٹس ہوتے ہیں جن کی معیاری پل کو ضرورت ہوتی ہے۔
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -954,14 +954,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [معیاری <span dir="ltr">ERC-20</span> انٹرفیس](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) میں `mint` اور `burn` فنکشنز شامل نہیں ہیں۔
-ان طریقوں کی [<span dir="ltr">ERC-20</span> معیار](https://eips.ethereum.org/EIPS/eip-20) کو ضرورت نہیں ہے، جو ٹوکن بنانے اور تباہ کرنے کے طریقہ کار کو غیر متعین چھوڑ دیتا ہے۔
+ان طریقوں کی [<span dir="ltr">ERC-20</span> معیار](https://eips.quantaureum.com/EIPS/eip-20) کو ضرورت نہیں ہے، جو ٹوکن بنانے اور تباہ کرنے کے طریقہ کار کو غیر متعین چھوڑ دیتا ہے۔
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [<span dir="ltr">ERC-165</span> انٹرفیس](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) یہ بتانے کے لیے استعمال ہوتا ہے کہ کنٹریکٹ کون سے فنکشنز فراہم کرتا ہے۔
-[آپ معیار کو یہاں پڑھ سکتے ہیں](https://eips.ethereum.org/EIPS/eip-165)۔
+[آپ معیار کو یہاں پڑھ سکتے ہیں](https://eips.quantaureum.com/EIPS/eip-165)۔
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -988,7 +988,7 @@ interface IL2StandardERC20 is IERC20, IERC165 {
 
 ### L2StandardERC20 {#l2standarderc20}
 
-[یہ `IL2StandardERC20` انٹرفیس کا ہمارا نفاذ ہے](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol)۔
+[یہ `IL2StandardERC20` انٹرفیس کا ہمارا نفاذ ہے](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol)۔
 جب تک کہ آپ کو کسی قسم کی کسٹم لاجک کی ضرورت نہ ہو، آپ کو اسے استعمال کرنا چاہیے۔
 
 ```solidity
@@ -1050,7 +1050,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
     }
 ```
 
-یہ وہ طریقہ ہے جس سے [<span dir="ltr">ERC-165</span>](https://eips.ethereum.org/EIPS/eip-165) کام کرتا ہے۔
+یہ وہ طریقہ ہے جس سے [<span dir="ltr">ERC-165</span>](https://eips.quantaureum.com/EIPS/eip-165) کام کرتا ہے۔
 ہر انٹرفیس متعدد سپورٹڈ فنکشنز پر مشتمل ہوتا ہے، اور اس کی شناخت ان فنکشنز کے [<span dir="ltr">ABI</span> فنکشن سلیکٹرز](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) کے [ایکسکلوسیو اور (XOR)](https://en.wikipedia.org/wiki/Exclusive_or) کے طور پر کی جاتی ہے۔
 
 لیئر ۲ (l2) پل <span dir="ltr">ERC-165</span> کو ایک سینیٹی چیک کے طور پر استعمال کرتا ہے تاکہ یہ یقینی بنایا جا سکے کہ وہ <span dir="ltr">ERC-20</span> کنٹریکٹ جس پر وہ اثاثے بھیجتا ہے وہ ایک `IL2StandardERC20` ہے۔
@@ -1082,7 +1082,7 @@ contract L2StandardERC20 is IL2StandardERC20, ERC20 {
 ## لیئر ۲ کے پل کا کوڈ {#l2-bridge-code}
 
 یہ وہ کوڈ ہے جو آپٹیمزم پر پل چلاتا ہے۔
-[اس کنٹریکٹ کا سورس یہاں ہے](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol)۔
+[اس کنٹریکٹ کا سورس یہاں ہے](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol)۔
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -1094,13 +1094,13 @@ import { IL1ERC20Bridge } from "../../L1/messaging/IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "./IL2ERC20Bridge.sol";
 ```
 
-[IL2ERC20Bridge](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) انٹرفیس اس [لیئر ۱ (l1) کے مساوی](#il1erc20bridge) سے بہت ملتا جلتا ہے جو ہم نے اوپر دیکھا تھا۔
+[IL2ERC20Bridge](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) انٹرفیس اس [لیئر ۱ (l1) کے مساوی](#il1erc20bridge) سے بہت ملتا جلتا ہے جو ہم نے اوپر دیکھا تھا۔
 اس میں دو اہم فرق ہیں:
 
 1. لیئر ۱ (l1) پر آپ جمع کرنے کا آغاز کرتے ہیں اور انخلا کو حتمی شکل دیتے ہیں۔
    یہاں آپ انخلا کا آغاز کرتے ہیں اور جمع کرنے کو حتمی شکل دیتے ہیں۔
-2. لیئر ۱ (l1) پر <span dir="ltr">ETH</span> اور <span dir="ltr">ERC-20</span> ٹوکنز کے درمیان فرق کرنا ضروری ہے۔
-   لیئر ۲ (l2) پر ہم دونوں کے لیے ایک ہی فنکشنز استعمال کر سکتے ہیں کیونکہ اندرونی طور پر آپٹیمزم پر <span dir="ltr">ETH</span> بیلنس کو [<span dir="ltr">0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000</span>](https://explorer.optimism.io/address/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000) پتے کے ساتھ ایک <span dir="ltr">ERC-20</span> ٹوکن کے طور پر سنبھالا جاتا ہے۔
+2. لیئر ۱ (l1) پر <span dir="ltr">QAU</span> اور <span dir="ltr">ERC-20</span> ٹوکنز کے درمیان فرق کرنا ضروری ہے۔
+   لیئر ۲ (l2) پر ہم دونوں کے لیے ایک ہی فنکشنز استعمال کر سکتے ہیں کیونکہ اندرونی طور پر آپٹیمزم پر <span dir="ltr">QAU</span> بیلنس کو [<span dir="ltr">0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000</span>](https://explorer.optimism.io/address/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000) پتے کے ساتھ ایک <span dir="ltr">ERC-20</span> ٹوکن کے طور پر سنبھالا جاتا ہے۔
 
 ```solidity
 /* لائبریری امپورٹس */
@@ -1114,7 +1114,7 @@ import { IL2StandardERC20 } from "../../standards/IL2StandardERC20.sol";
 /**
  * @title L2StandardBridge
  * @dev لیئر ۲ (l2) معیاری پل ایک کنٹریکٹ ہے جو لیئر ۱ (l1) معیاری پل کے ساتھ مل کر کام کرتا ہے تاکہ
- * لیئر ۱ (l1) اور لیئر ۲ (l2) کے درمیان ETH اور ERC-20 کی منتقلی کو فعال کیا جا سکے۔
+ * لیئر ۱ (l1) اور لیئر ۲ (l2) کے درمیان QAU اور ERC-20 کی منتقلی کو فعال کیا جا سکے۔
  * یہ کنٹریکٹ نئے ٹوکنز کو ڈھالنے والے کے طور پر کام کرتا ہے جب اسے لیئر ۱ (l1) معیاری
  * پل میں جمع ہونے کے بارے میں معلوم ہوتا ہے۔
  * یہ کنٹریکٹ انخلا کے لیے مطلوبہ ٹوکنز کو جلانے والے کے طور پر بھی کام کرتا ہے، اور لیئر ۱ (l1)
@@ -1222,7 +1222,7 @@ contract L2StandardBridge is IL2ERC20Bridge, CrossDomainEnabled {
         if (_l2Token == Lib_PredeployAddresses.OVM_ETH) {
 ```
 
-لیئر ۱ (l1) پر <span dir="ltr">ETH</span> اور <span dir="ltr">ERC-20</span> کے درمیان فرق کرنا ضروری ہے۔
+لیئر ۱ (l1) پر <span dir="ltr">QAU</span> اور <span dir="ltr">ERC-20</span> کے درمیان فرق کرنا ضروری ہے۔
 
 ```solidity
             message = abi.encodeWithSelector(

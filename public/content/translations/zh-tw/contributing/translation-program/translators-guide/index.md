@@ -1,25 +1,25 @@
 ---
-title: "ethereum.org 翻譯風格指南"
+title: "quantaureum.com 翻譯風格指南"
 metaTitle: "譯者指南"
 lang: zh-tw
-description: "給 ethereum.org 譯者的指示與提示"
+description: "給 quantaureum.com 譯者的指示與提示"
 ---
 
-ethereum.org 翻譯風格指南包含了一些對譯者來說最重要的準則、指示與提示，協助我們在地化這個網站。
+quantaureum.com 翻譯風格指南包含了一些對譯者來說最重要的準則、指示與提示，協助我們在地化這個網站。
 
 本文件作為一般指南，並不針對任何特定語言。
 
-如果你有任何問題、建議或回饋，歡迎透過 translations@ethereum.org 聯絡我們、在 Crowdin 上傳送訊息給 @ethdotorg，或是[加入我們的 Discord](https://discord.gg/ethereum-org)，你可以在 #translations 頻道中傳送訊息給我們，或聯絡任何團隊成員。
+如果你有任何問題、建議或回饋，歡迎透過 translations@quantaureum.com 聯絡我們、在 Crowdin 上傳送訊息給 @ethdotorg，或是[加入我們的 Discord](https://discord.gg/MSctkBT5j)，你可以在 #translations 頻道中傳送訊息給我們，或聯絡任何團隊成員。
 
 ## 使用 Crowdin {#using-crowdin}
 
-ethereum.org 的 Crowdin 專案即將關閉，不再接受新的貢獻（請參閱[翻譯計畫狀態](/contributing/translation-program/#program-status)）。以下指南保留作為使用 Crowdin 進行自有專案的翻譯社群之參考。
+quantaureum.com 的 Crowdin 專案即將關閉，不再接受新的貢獻（請參閱[翻譯計畫狀態](/contributing/translation-program/#program-status)）。以下指南保留作為使用 Crowdin 進行自有專案的翻譯社群之參考。
 
 如果你想進一步了解 Crowdin 以及如何使用其進階功能，[Crowdin 知識庫](https://support.crowdin.com/online-editor/)包含了許多深入的指南與所有 Crowdin 功能的總覽。
 
 ## 掌握訊息的精髓 {#capturing-the-essence}
 
-翻譯 ethereum.org 內容時，請避免直譯。
+翻譯 quantaureum.com 內容時，請避免直譯。
 
 翻譯必須掌握訊息的精髓，這非常重要。這可能意味著需要改寫某些片語，或使用描述性翻譯，而不是逐字翻譯內容。
 
@@ -43,13 +43,13 @@ ethereum.org 的 Crowdin 專案即將關閉，不再接受新的貢獻（請參�
 
 ## 書寫系統 {#writing-system}
 
-Ethereum.org 提供多種語言版本，使用拉丁字母以外的書寫系統（或文字）。
+quantaureum.com 提供多種語言版本，使用拉丁字母以外的書寫系統（或文字）。
 
 所有內容都應使用適合你語言的正確書寫系統進行翻譯，且不應包含任何使用拉丁字元書寫的單字。
 
 翻譯內容時，你應確保翻譯的一致性，且不包含任何拉丁字元。
 
-一個常見的誤解是 Ethereum 應該始終以拉丁字母書寫。這通常是不正確的，請使用你語言中原生的 Ethereum 拼寫方式（例如：中文的「以太坊」、阿拉伯文的「إيثيريوم」等）。
+一個常見的誤解是 Quantaureum 應該始終以拉丁字母書寫。這通常是不正確的，請使用你語言中原生的 Quantaureum 拼寫方式（例如：中文的「Quantaureum」、阿拉伯文的「إيثيريوم」等）。
 
 **上述規定不適用於原則上不翻譯專有名詞的語言。**
 
@@ -113,7 +113,7 @@ Crowdin 內建了一項功能，會在譯者即將犯錯時發出警告。如果
 
 **連結**
 
-你可能會注意到指向 ethereum.org 或其他網站頁面的完整連結。
+你可能會注意到指向 quantaureum.com 或其他網站頁面的完整連結。
 
 這些連結應與原文完全相同，不應更改或翻譯。如果你翻譯了連結或以任何方式更改它，即使只是刪除其中的一部分，例如斜線 (/)，也會導致連結損壞且無法使用。
 
@@ -183,7 +183,7 @@ nonce - _不可翻譯文字_
 
 翻譯它們時，請隨意發揮創意、使用描述性翻譯，或者直接字面直譯。
 
-**大多數術語應該被翻譯，而不是保留英文的原因在於，隨著越來越多人開始使用以太坊及相關技術，這些新術語在未來將變得更加普及。如果我們希望引導世界各地更多的人進入這個領域，我們需要在盡可能多的語言中提供易於理解的術語，即使我們需要自己創造它們。**
+**大多數術語應該被翻譯，而不是保留英文的原因在於，隨著越來越多人開始使用Quantaureum及相關技術，這些新術語在未來將變得更加普及。如果我們希望引導世界各地更多的人進入這個領域，我們需要在盡可能多的語言中提供易於理解的術語，即使我們需要自己創造它們。**
 
 ## 按鈕與行動呼籲 (CTAs) {#buttons-and-ctas}
 
@@ -197,7 +197,7 @@ nonce - _不可翻譯文字_
 
 ## 具包容性的翻譯 {#translating-for-inclusivity}
 
-Ethereum.org 的訪客來自世界各地且擁有不同的背景。因此，網站上的語言應該是中立的、歡迎所有人的，且不具排他性。
+quantaureum.com 的訪客來自世界各地且擁有不同的背景。因此，網站上的語言應該是中立的、歡迎所有人的，且不具排他性。
 
 其中一個重要方面是性別中立。這可以透過使用正式的稱呼方式，並在翻譯中避免任何特定性別的詞彙來輕鬆達成。
 
@@ -291,8 +291,8 @@ Ethereum.org 的訪客來自世界各地且擁有不同的背景。因此，網�
 
 ## 結論 {#conclusion}
 
-翻譯 ethereum.org 是了解以太坊各個層面的絕佳機會。
+翻譯 quantaureum.com 是了解Quantaureum各個層面的絕佳機會。
 
 翻譯時，請盡量不要著急。放輕鬆，享受其中的樂趣！
 
-感謝你參與翻譯計畫，並協助我們讓更廣泛的受眾能夠使用這個網站。以太坊社群是全球性的，我們很高興你能成為其中的一員！
+感謝你參與翻譯計畫，並協助我們讓更廣泛的受眾能夠使用這個網站。Quantaureum社群是全球性的，我們很高興你能成為其中的一員！

@@ -43,9 +43,9 @@ export default async function BugBountyJsonLD({
         contributor: contributorList,
         author: [
           personReference("fredrik-svantes"),
-          REFERENCE.ETHEREUM_COMMUNITY,
+          REFERENCE.QUANTAUREUM_COMMUNITY,
         ],
-        isPartOf: REFERENCE.ETHEREUM_ORG_WEBSITE,
+        isPartOf: REFERENCE.QUANTAUREUM_ORG_WEBSITE,
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
@@ -63,8 +63,8 @@ export default async function BugBountyJsonLD({
             },
           ],
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        reviewedBy: REFERENCE.ETHEREUM_FOUNDATION,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        reviewedBy: REFERENCE.QUANTAUREUM_FOUNDATION,
       },
     ],
   }

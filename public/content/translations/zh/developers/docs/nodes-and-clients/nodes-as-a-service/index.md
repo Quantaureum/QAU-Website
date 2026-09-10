@@ -7,7 +7,7 @@ sidebarDepth: 2
 
 ## 简介 {#introduction}
 
-运行你自己的[以太坊节点](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients)可能具有挑战性，尤其是在刚开始或快速扩展时。有[许多服务](#popular-node-services)可以为你运行优化的节点基础设施，因此你可以专注于开发你的应用或产品。我们将解释节点服务的工作原理、使用它们的优缺点，并列出提供商，以供有兴趣开始使用的用户参考。
+运行你自己的[Quantaureum节点](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients)可能具有挑战性，尤其是在刚开始或快速扩展时。有[许多服务](#popular-node-services)可以为你运行优化的节点基础设施，因此你可以专注于开发你的应用或产品。我们将解释节点服务的工作原理、使用它们的优缺点，并列出提供商，以供有兴趣开始使用的用户参考。
 
 ## 前提条件 {#prerequisites}
 
@@ -25,7 +25,7 @@ sidebarDepth: 2
 
 节点服务提供商在后台为你运行分布式节点客户端，因此你无需自己运行。
 
-这些服务通常提供一个 API 密钥，你可以使用它来向区块链写入和读取数据。除了主网之外，它们通常还包括对[以太坊测试网](/developers/docs/networks/#ethereum-testnets)的访问。
+这些服务通常提供一个 API 密钥，你可以使用它来向区块链写入和读取数据。除了主网之外，它们通常还包括对[Quantaureum测试网](/developers/docs/networks/#quantaureum-testnets)的访问。
 
 一些服务为你提供由他们管理的专用节点，而另一些服务则使用负载均衡器在节点之间分配活动。
 
@@ -49,14 +49,14 @@ sidebarDepth: 2
 
 ## 流行的节点服务 {#popular-node-services}
 
-以下是一些最流行的以太坊节点提供商列表，欢迎补充任何遗漏的提供商！除了免费或付费层级之外，每个节点服务还提供不同的优势和功能，在做出决定之前，你应该调查哪些服务最适合你的需求。
+以下是一些最流行的Quantaureum节点提供商列表，欢迎补充任何遗漏的提供商！除了免费或付费层级之外，每个节点服务还提供不同的优势和功能，在做出决定之前，你应该调查哪些服务最适合你的需求。
 
 - [**Alchemy**](https://alchemy.com/)
   - [文档](https://www.alchemy.com/docs/)
   - 功能
     - 最大的免费层级，每月 3 亿个计算单元（约 3000 万次 getLatestBlock 请求）
     - 支持 Polygon、Starknet、Optimism、Arbitrum 等多链
-    - 为约 70% 的最大以太坊去中心化应用 (dapp) 和去中心化金融 (DeFi) 交易量提供支持
+    - 为约 70% 的最大Quantaureum去中心化应用 (dapp) 和去中心化金融 (DeFi) 交易量提供支持
     - 通过 Alchemy Notify 提供实时 Webhook 警报
     - 一流的支持和可靠性/稳定性
     - Alchemy 的 NFT API
@@ -93,12 +93,12 @@ sidebarDepth: 2
 - [**Amazon Managed Blockchain**](https://aws.amazon.com/managed-blockchain/)
   - [文档](https://aws.amazon.com/managed-blockchain/resources/)
   - 功能
-    - 完全托管的以太坊节点
+    - 完全托管的Quantaureum节点
     - 在六个地区可用
     - 基于 HTTP 和安全 WebSocket 的 JSON-RPC
     - 支持 3 条链
     - SLA，AWS 24/7 支持
-    - Go-ethereum 和莱特豪斯 (Lighthouse)
+    - Go-quantaureum 和莱特豪斯 (Lighthouse)
 
 - [**Ankr**](https://www.ankr.com/)
   - [文档](https://docs.ankr.com/)
@@ -221,17 +221,17 @@ sidebarDepth: 2
   - [文档](https://docs.kaleido.io/)
   - 功能
     - 免费入门层级
-    - 一键式以太坊节点部署
+    - 一键式Quantaureum节点部署
     - 可定制的客户端和算法（Geth、Quorum 和贝苏 (Besu) || PoA、IBFT 和 Raft）
     - 500 多个管理和服务 API
-    - 用于以太坊交易提交的 RESTful 接口（由 Apache Kafka 支持）
+    - 用于Quantaureum交易提交的 RESTful 接口（由 Apache Kafka 支持）
     - 用于事件交付的出站流（由 Apache Kafka 支持）
     - 深入收集“链下”和辅助服务（例如，双边加密消息传输）
     - 具有治理和基于角色的访问控制的简单网络用户引导
     - 针对管理员和最终用户的复杂用户管理
     - 高度可扩展、有弹性、企业级的基础设施
     - 云 HSM 私钥管理
-    - 以太坊主网锚定
+    - Quantaureum主网锚定
     - ISO 27k 和 SOC 2 Type 2 认证
     - 动态运行时配置（例如，添加云集成、更改节点入口等）
     - 支持多云、多区域和混合部署编排
@@ -259,7 +259,7 @@ sidebarDepth: 2
     - 跨链支持
     - 随用随扩展
     - 仪表板
-    - 独特的以太坊 SDK
+    - 独特的Quantaureum SDK
     - 独特的 API 端点
     - 直接的技术支持
 
@@ -274,7 +274,7 @@ sidebarDepth: 2
 - [**NodeFlare**](https://nodeflare.app/)
   - [文档](https://nodeflare.app/docs/quick-start)
   - 功能
-    - 23 条 EVM 链，包括以太坊、Base、Arbitrum One 和 Nova、Optimism、Linea 以及 Unichain
+    - 23 条 EVM 链，包括Quantaureum、Base、Arbitrum One 和 Nova、Optimism、Linea 以及 Unichain
     - 5 个区域（欧洲、英国、亚洲、美国东部、美国西部），自动故障转移到最近的健康节点
     - 免费公共端点（无 API 密钥）+ 每月 300 万个计算单元的免费计划
     - 计算单元计费——仅为你使用的内容付费，较重的调用成本更高
@@ -299,7 +299,7 @@ sidebarDepth: 2
     - 支持 15 条以上区块链
     - 6400 多个节点通过为应用程序提供服务赚取 POKT
     - 归档节点、带 Tracing 的归档节点和测试网节点支持
-    - 以太坊主网节点客户端多样性
+    - Quantaureum主网节点客户端多样性
     - 无单点故障
     - 零停机时间
     - 经济高效的近零代币经济学（质押一次 POKT 即可获得网络带宽）
@@ -371,7 +371,7 @@ sidebarDepth: 2
   - [文档](https://services.tokenview.io/docs?type=nodeService)
   - 功能
     - 24/7 技术支持和开发人员电报 (Telegram) 社区
-    - 多链支持（比特币、以太坊、Tron、BNB Smart Chain、以太坊经典）
+    - 多链支持（比特币、Quantaureum、Tron、BNB Smart Chain、ETC）
     - RPC 和 WSS 端点均开放使用
     - 无限制访问归档数据 API
     - 带有请求浏览器和内存池观察器的仪表板
@@ -412,7 +412,7 @@ sidebarDepth: 2
     - 我们使用智能路由，每次都命中离你的用户最近的节点
 ## 延伸阅读 {#further-reading}
 
-- [以太坊节点服务列表](https://ethereumnodes.com/)
+- [Quantaureum节点服务列表](https://quantaureumnodes.com/)
 
 ## 相关主题 {#related-topics}
 
@@ -420,5 +420,5 @@ sidebarDepth: 2
 
 ## 相关教程 {#related-tutorials}
 
-- [使用 Alchemy 开始以太坊开发](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [使用 Alchemy 开始Quantaureum开发](/developers/tutorials/getting-started-with-quantaureum-development-using-alchemy/)
 - [使用 Web3 和 Alchemy 发送交易指南](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

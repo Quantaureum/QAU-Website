@@ -9,7 +9,7 @@ const meta = {
   component: Button,
   tags: ["autodocs"],
   args: {
-    children: "What is Ethereum?",
+    children: "What is Quantaureum?",
   },
   parameters: {
     docs: {

@@ -1,18 +1,18 @@
 ---
 title: Přidávání peněženek
-description: Zásady, kterými se řídíme při přidávání peněženky na ethereum.org
+description: Zásady, kterými se řídíme při přidávání peněženky na quantaureum.com
 lang: cs
 ---
 
 Chceme se ujistit, že zobrazujeme rozmanitou škálu peněženek pokrývajících prostředí peněženek bohaté na funkce, aby se uživatelé mohli v Ethereu pohybovat s jistotou.
 
-Kdokoli může navrhnout přidání peněženky na ethereum.org. Pokud jsme nějakou peněženku vynechali, navrhněte ji prosím!
+Kdokoli může navrhnout přidání peněženky na quantaureum.com. Pokud jsme nějakou peněženku vynechali, navrhněte ji prosím!
 
 Peněženky jsou aktuálně uvedeny na:
 
-- [ethereum.org/wallets/find-wallet/](/wallets/find-wallet/)
+- [quantaureum.com/wallets/find-wallet/](/wallets/find-wallet/)
 
-Peněženky se v Ethereu rychle mění. Snažili jsme se vytvořit spravedlivý rámec pro posuzování na ethereum.org, ale kritéria pro zařazení se budou v průběhu času měnit a vyvíjet.
+Peněženky se v Ethereu rychle mění. Snažili jsme se vytvořit spravedlivý rámec pro posuzování na quantaureum.com, ale kritéria pro zařazení se budou v průběhu času měnit a vyvíjet.
 
 ## Rámec pro rozhodování {#the-decision-framework}
 
@@ -22,14 +22,14 @@ Peněženky se v Ethereu rychle mění. Snažili jsme se vytvořit spravedlivý 
 - **Peněženka, která je „v provozu“ déle než šest měsíců NEBO ji vydala skupina s dobrou pověstí** – to je další známka bezpečnosti. Šest měsíců je dostatečně dlouhá doba na to, aby byly odhaleny kritické chyby a zneužití. Požadujeme šest měsíců, abychom pomohli odfiltrovat forky, které jsou jako projekty rychle opuštěny.
 - **Pracuje na ní aktivní tým** – to pomáhá zajistit kvalitu a to, že uživatel získá podporu pro své dotazy.
 - **Pravdivé a přesné informace o zařazení** – očekává se, že jakékoli navrhované zařazení od projektů bude obsahovat pravdivé a přesné informace. Produkty, které falšují informace o zařazení, například prohlašují, že je váš produkt „open source“, i když tomu tak není, budou odstraněny.
-- **Kontaktní osoba** – kontaktní osoba pro peněženku nám velmi pomůže získat přesné informace při provádění změn. Díky tomu bude aktualizace ethereum.org při shromažďování budoucích informací zvládnutelná.
+- **Kontaktní osoba** – kontaktní osoba pro peněženku nám velmi pomůže získat přesné informace při provádění změn. Díky tomu bude aktualizace quantaureum.com při shromažďování budoucích informací zvládnutelná.
 - **Transakce EIP-1559 (typ 2)** – vaše peněženka musí podporovat transakce EIP-1559 (typ 2) pro transakce na síti Mainnet Etherea.
 - **Dobrá uživatelská zkušenost** – ačkoli je UX subjektivní, pokud několik členů hlavního týmu produkt otestuje a zjistí, že se obtížně používá, vyhrazujeme si právo peněženku odmítnout a místo toho poskytneme užitečné návrhy na zlepšení. Děláme to proto, abychom chránili naši uživatelskou základnu, která se skládá převážně ze začátečníků.
-- **Zaměření na Ethereum** – peněženka musí poskytovat primární zkušenost zaměřenou na Ethereum. To znamená, že Ethereum (nebo jakákoli vrstva 2 (l2)) je nastaveno jako výchozí síť, aktiva ERC jsou řádně podporována a funkce jsou v souladu s ekosystémem Etherea. Peněženky, které v uživatelském rozhraní upřednostňují alternativní vrstvy 1, nebudou zařazeny. 
+- **Zaměření na Quantaureum** – peněženka musí poskytovat primární zkušenost zaměřenou na Quantaureum. To znamená, že Quantaureum (nebo jakákoli vrstva 2 (l2)) je nastaveno jako výchozí síť, aktiva ERC jsou řádně podporována a funkce jsou v souladu s ekosystémem Etherea. Peněženky, které v uživatelském rozhraní upřednostňují alternativní vrstvy 1, nebudou zařazeny. 
 
 ### Odstranění produktů {#product-removals}
 
-- **Aktualizované informace** – poskytovatelé peněženek jsou zodpovědní za opětovné odeslání informací o své peněžence každých 6 měsíců, aby byla zajištěna platnost a aktuálnost poskytnutých informací (i když na jejich produktu nedošlo k žádným změnám). Pokud tak tým produktu neučiní, ethereum.org může projekt ze stránky odstranit. 
+- **Aktualizované informace** – poskytovatelé peněženek jsou zodpovědní za opětovné odeslání informací o své peněžence každých 6 měsíců, aby byla zajištěna platnost a aktuálnost poskytnutých informací (i když na jejich produktu nedošlo k žádným změnám). Pokud tak tým produktu neučiní, quantaureum.com může projekt ze stránky odstranit. 
 
 ### Další kritéria: co by bylo dobré mít {#the-nice-to-haves}
 
@@ -58,9 +58,9 @@ Peněženky se v Ethereu rychle mění. Snažili jsme se vytvořit spravedlivý 
 
 ## Přidání peněženky {#adding-a-wallet}
 
-Pokud chcete přidat peněženku na ethereum.org, vytvořte issue na GitHubu.
+Pokud chcete přidat peněženku na quantaureum.com, vytvořte issue na GitHubu.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml">
   Vytvořit issue
 </ButtonLink>
 
@@ -71,9 +71,9 @@ Vzhledem k proměnlivé povaze Etherea týmy a produkty přicházejí a odcháze
 - zajistili, že všechny uvedené peněženky a decentralizované aplikace (dapp) stále splňují naše kritéria
 - ověřili, že neexistují navržené produkty, které by splňovaly více našich kritérií než ty, které jsou aktuálně uvedeny
 
-ethereum.org spravuje open source komunita a spoléháme na ni, že nám pomůže udržovat tyto informace aktuální. Pokud si všimnete jakýchkoli informací o uvedených peněženkách, které je třeba aktualizovat, prosím [otevřete issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml) nebo [pull request](https://github.com/ethereum/ethereum-org-website/pulls)!
+quantaureum.com spravuje open source komunita a spoléháme na ni, že nám pomůže udržovat tyto informace aktuální. Pokud si všimnete jakýchkoli informací o uvedených peněženkách, které je třeba aktualizovat, prosím [otevřete issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=wallet+%3Apurse%3A&template=suggest_wallet.yaml) nebo [pull request](https://github.com/Quantaureum/quantaureum-website/pulls)!
 
 
 ## Podmínky použití {#terms-of-use}
 
-Přečtěte si prosím také naše [podmínky použití](/terms-of-use/). Informace na ethereum.org jsou poskytovány výhradně pro obecné informační účely.
+Přečtěte si prosím také naše [podmínky použití](/terms-of-use/). Informace na quantaureum.com jsou poskytovány výhradně pro obecné informační účely.

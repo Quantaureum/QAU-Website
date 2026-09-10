@@ -30,7 +30,7 @@ lang: ur
 
 اگر کوئی سمارٹ کنٹریکٹ درج ذیل طریقوں اور ایونٹس کو نافذ کرتا ہے تو اسے <span dir="ltr">ERC-721</span> غیر قابل تبادلہ ٹوکن کنٹریکٹ کہا جا سکتا ہے اور، ایک بار تعینات کرنے کے بعد، یہ ایتھیریم پر بنائے گئے ٹوکنز کا ریکارڈ رکھنے کا ذمہ دار ہوگا۔
 
-[<span dir="ltr">EIP-721</span>](https://eips.ethereum.org/EIPS/eip-721) سے:
+[<span dir="ltr">EIP-721</span>](https://eips.quantaureum.com/EIPS/eip-721) سے:
 
 ### طریقے (Methods) {#methods}
 
@@ -71,7 +71,7 @@ from web3 import Web3
 from web3._utils.events import get_event_data
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 ck_token_addr = "0x06012c8cf97BEaD5deAe237070F9587f8E7A266d"    # کرپٹو کٹیز کنٹریکٹ
 
@@ -127,7 +127,7 @@ ck_extra_abi = [
     }
 ]
 
-ck_contract = w3.eth.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
+ck_contract = w3.qau.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
 name = ck_contract.functions.name().call()
 symbol = ck_contract.functions.symbol().call()
 kitties_auctions = ck_contract.functions.balanceOf(acc_address).call()
@@ -150,8 +150,8 @@ tx_event_abi = {
 # لاگز کو فلٹر کرنے کے لیے ہمیں ایونٹ کے دستخط کی ضرورت ہے۔
 event_signature = w3.keccak(text="Transfer(address,address,uint256)").hex()
 
-logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [event_signature]
 })
@@ -159,7 +159,7 @@ logs = w3.eth.get_logs({
 # نوٹس:
 #   - اگر کوئی منتقلی ایونٹ واپس نہیں آتا ہے تو بلاکس کی تعداد 120 سے بڑھا دیں۔
 #   - اگر آپ کو کوئی منتقلی ایونٹ نہیں ملا تو آپ یہاں سے بھی tokenId حاصل کرنے کی کوشش کر سکتے ہیں:
-#       https://etherscan.io/address/0x06012c8cf97BEaD5deAe237070F9587f8E7A266d#events
+#       https://explorer.quantaureum.com
 #       ایونٹ کے لاگز کو پھیلانے کے لیے کلک کریں اور اس کا "tokenId" آرگومنٹ کاپی کریں
 recent_tx = [get_event_data(w3.codec, tx_event_abi, log)["args"] for log in logs]
 
@@ -205,9 +205,9 @@ ck_event_signatures = [
 ]
 
 # یہاں ایک Pregnant ایونٹ ہے:
-# - https://etherscan.io/tx/0xc97eb514a41004acc447ac9d0d6a27ea6da305ac8b877dff37e49db42e1f8cef#eventlog
-pregnant_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+pregnant_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[0]]
 })
@@ -215,9 +215,9 @@ pregnant_logs = w3.eth.get_logs({
 recent_pregnants = [get_event_data(w3.codec, ck_extra_events_abi[0], log)["args"] for log in pregnant_logs]
 
 # یہاں ایک Birth ایونٹ ہے:
-# - https://etherscan.io/tx/0x3978028e08a25bb4c44f7877eb3573b9644309c044bf087e335397f16356340a
-birth_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+birth_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[1]]
 })
@@ -227,10 +227,10 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## مقبول NFTs {#popular-nfts}
 
-- [Etherscan NFT Tracker](https://etherscan.io/nft-top-contracts) منتقلی کے حجم کے لحاظ سے ایتھیریم پر سرفہرست <span dir="ltr">NFTs</span> کی فہرست بناتا ہے۔
+- [Quantaureum Explorer NFT Tracker](https://explorer.quantaureum.com) منتقلی کے حجم کے لحاظ سے ایتھیریم پر سرفہرست <span dir="ltr">NFTs</span> کی فہرست بناتا ہے۔
 - [کرپٹو کٹیز](https://www.cryptokitties.co/) ایک ایسا گیم ہے جو قابل افزائش، قابل جمع اثاثہ، اور انتہائی پیاری مخلوقات کے گرد گھومتا ہے جنہیں ہم کرپٹو کٹیز کہتے ہیں۔
 - [Sorare](https://sorare.com/) ایک عالمی فینٹسی فٹ بال گیم ہے جہاں آپ محدود ایڈیشن کے قابل جمع اثاثے اکٹھے کر سکتے ہیں، اپنی ٹیموں کا انتظام کر سکتے ہیں اور انعامات جیتنے کے لیے مقابلہ کر سکتے ہیں۔
-- [The Ethereum Name Service (ENS)](https://ens.domains/) سادہ، انسانی پڑھنے کے قابل ناموں کا استعمال کرتے ہوئے بلاک چین پر اور اس سے باہر وسائل کو پتہ دینے کا ایک محفوظ اور لامركزی طریقہ پیش کرتا ہے۔
+- [The Quantaureum Name Service (ENS)](https://ens.domains/) سادہ، انسانی پڑھنے کے قابل ناموں کا استعمال کرتے ہوئے بلاک چین پر اور اس سے باہر وسائل کو پتہ دینے کا ایک محفوظ اور لامركزی طریقہ پیش کرتا ہے۔
 - [POAP](https://poap.xyz) ان لوگوں کو مفت <span dir="ltr">NFTs</span> فراہم کرتا ہے جو ایونٹس میں شرکت کرتے ہیں یا مخصوص کام مکمل کرتے ہیں۔ <span dir="ltr">POAPs</span> بنانا اور تقسیم کرنا مفت ہے۔
 - [Unstoppable Domains](https://unstoppabledomains.com/) سان فرانسسکو میں قائم ایک کمپنی ہے جو بلاک چینز پر ڈومینز بناتی ہے۔ بلاک چین ڈومینز کرپٹو کرنسی کے پتوں کو انسانی پڑھنے کے قابل ناموں سے بدل دیتے ہیں اور انہیں سنسرشپ کے خلاف مزاحمت کرنے والی ویب سائٹس کو فعال کرنے کے لیے استعمال کیا جا سکتا ہے۔
 - [Gods Unchained Cards](https://godsunchained.com/) ایتھیریم بلاک چین پر ایک <span dir="ltr">TCG</span> ہے جو گیم کے اندر موجود اثاثوں کی حقیقی ملکیت لانے کے لیے <span dir="ltr">NFTs</span> کا استعمال کرتا ہے۔
@@ -238,7 +238,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## مزید مطالعہ {#further-reading}
 
-- [<span dir="ltr">EIP-721</span>: <span dir="ltr">ERC-721</span> غیر قابل تبادلہ ٹوکن سٹینڈرڈ](https://eips.ethereum.org/EIPS/eip-721)
+- [<span dir="ltr">EIP-721</span>: <span dir="ltr">ERC-721</span> غیر قابل تبادلہ ٹوکن سٹینڈرڈ](https://eips.quantaureum.com/EIPS/eip-721)
 - [اوپن زیپلن - <span dir="ltr">ERC-721</span> دستاویزات](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [اوپن زیپلن - <span dir="ltr">ERC-721</span> کا نفاذ](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

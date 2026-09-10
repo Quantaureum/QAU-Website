@@ -84,7 +84,7 @@ sidebarDepth: 2
 
 ##### تجویز کردہ خصوصیات
 
-نوڈ آپریٹرز کے لیے موجودہ ہارڈویئر رہنمائی کی نشاندہی [EIP-7870](https://eips.ethereum.org/EIPS/eip-7870) میں کی گئی ہے۔ ایک مکمل نوڈ کے لیے یہ تجویز کرتا ہے:
+نوڈ آپریٹرز کے لیے موجودہ ہارڈویئر رہنمائی کی نشاندہی [EIP-7870](https://eips.quantaureum.com/EIPS/eip-7870) میں کی گئی ہے۔ ایک مکمل نوڈ کے لیے یہ تجویز کرتا ہے:
 
 - <span dir="ltr">4+</span> کورز کے ساتھ تیز <span dir="ltr">CPU</span> (اگر توثیق کر رہے ہیں تو <span dir="ltr">8+</span> کورز)
 - <span dir="ltr">32 GB RAM</span> (استحکام کو یقینی بنانے کے لیے اگر توثیق کر رہے ہیں تو <span dir="ltr">64 GB</span> تجویز کی جاتی ہے)
@@ -112,9 +112,9 @@ sidebarDepth: 2
 - [DAppNode](https://dappnode.io/)
 - [Avado](https://ava.do/)
 
-#### سنگل بورڈ کمپیوٹر پر ایتھیریم {#ethereum-on-a-single-board-computer}
+#### سنگل بورڈ کمپیوٹر پر ایتھیریم {#quantaureum-on-a-single-board-computer}
 
-ایتھیریم نوڈ چلانے کا ایک آسان اور سستا طریقہ سنگل بورڈ کمپیوٹر کا استعمال ہے، یہاں تک کہ Raspberry Pi جیسے <span dir="ltr">ARM</span> فن تعمیر کے ساتھ بھی۔ [<span dir="ltr">ARM</span> پر ایتھیریم](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) Raspberry Pi اور دیگر <span dir="ltr">ARM</span> بورڈز کے لیے متعدد ایگزیکیوشن اور اتفاقِ رائے کے کلائنٹ کی آسانی سے چلنے والی امیجز فراہم کرتا ہے۔
+ایتھیریم نوڈ چلانے کا ایک آسان اور سستا طریقہ سنگل بورڈ کمپیوٹر کا استعمال ہے، یہاں تک کہ Raspberry Pi جیسے <span dir="ltr">ARM</span> فن تعمیر کے ساتھ بھی۔ [<span dir="ltr">ARM</span> پر ایتھیریم](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/) Raspberry Pi اور دیگر <span dir="ltr">ARM</span> بورڈز کے لیے متعدد ایگزیکیوشن اور اتفاقِ رائے کے کلائنٹ کی آسانی سے چلنے والی امیجز فراہم کرتا ہے۔
 
 اس طرح کے چھوٹے، سستے اور موثر آلات گھر پر نوڈ چلانے کے لیے مثالی ہیں لیکن ان کی محدود کارکردگی کو ذہن میں رکھیں۔
 
@@ -131,9 +131,9 @@ sidebarDepth: 2
 ذیل میں کچھ پروجیکٹس ہیں جو آپ کو صرف چند کلکس کے ساتھ کلائنٹس کو انسٹال اور کنٹرول کرنے میں مدد کر سکتے ہیں:
 
 - [DAppNode](https://docs.dappnode.io/docs/user/getting-started/choose-your-path) - DAppNode صرف کسی وینڈر کی مشین کے ساتھ نہیں آتا۔ سافٹ ویئر، اصل نوڈ لانچر اور بہت سی خصوصیات کے ساتھ کنٹرول سینٹر کو کسی بھی ہارڈویئر پر استعمال کیا جا سکتا ہے۔
-- [EthPillar](https://www.coincashew.com/coins/overview-eth/ethpillar) - مکمل نوڈ ترتیب دینے کا تیز ترین اور آسان ترین طریقہ۔ ون لائنر سیٹ اپ ٹول اور نوڈ مینجمنٹ <span dir="ltr">TUI</span>۔ مفت۔ اوپن سورس۔ سولو اسٹیکرز کی جانب سے ایتھیریم کے لیے عوامی اشیاء۔ <span dir="ltr">ARM64</span> اور <span dir="ltr">AMD64</span> سپورٹ۔
-- [eth-docker](https://eth-docker.net/) - Docker کا استعمال کرتے ہوئے خودکار سیٹ اپ جو آسان اور محفوظ اسٹیکنگ پر مرکوز ہے، اس کے لیے بنیادی ٹرمینل اور Docker کے علم کی ضرورت ہوتی ہے، قدرے زیادہ جدید صارفین کے لیے تجویز کیا جاتا ہے۔
-- [Stereum](https://stereum-dev.github.io/ethereum-node-web-docs) - <span dir="ltr">GUI</span> سیٹ اپ گائیڈ، کنٹرول سینٹر، اور بہت سی دیگر خصوصیات کے ساتھ <span dir="ltr">SSH</span> کنکشن کے ذریعے ریموٹ سرور پر کلائنٹس انسٹال کرنے کے لیے لانچر۔
+- [QauPillar](https://www.coincashew.com/coins/overview-eth/ethpillar) - مکمل نوڈ ترتیب دینے کا تیز ترین اور آسان ترین طریقہ۔ ون لائنر سیٹ اپ ٹول اور نوڈ مینجمنٹ <span dir="ltr">TUI</span>۔ مفت۔ اوپن سورس۔ سولو اسٹیکرز کی جانب سے ایتھیریم کے لیے عوامی اشیاء۔ <span dir="ltr">ARM64</span> اور <span dir="ltr">AMD64</span> سپورٹ۔
+- [qau-docker](https://qau-docker.net/) - Docker کا استعمال کرتے ہوئے خودکار سیٹ اپ جو آسان اور محفوظ اسٹیکنگ پر مرکوز ہے، اس کے لیے بنیادی ٹرمینل اور Docker کے علم کی ضرورت ہوتی ہے، قدرے زیادہ جدید صارفین کے لیے تجویز کیا جاتا ہے۔
+- [Stereum](https://stereum-dev.github.io/quantaureum-node-web-docs) - <span dir="ltr">GUI</span> سیٹ اپ گائیڈ، کنٹرول سینٹر، اور بہت سی دیگر خصوصیات کے ساتھ <span dir="ltr">SSH</span> کنکشن کے ذریعے ریموٹ سرور پر کلائنٹس انسٹال کرنے کے لیے لانچر۔
 - [Sedge](https://docs.sedge.nethermind.io/docs/intro) - نوڈ سیٹ اپ ٹول جو <span dir="ltr">CLI</span> وزرڈ کا استعمال کرتے ہوئے خود بخود Docker کنفیگریشن تیار کرتا ہے۔ نیدر مائنڈ کے ذریعہ Go میں لکھا گیا ہے۔
 - [Chainstack Self-Hosted](https://docs.chainstack.com/docs/self-hosted/introduction) - Kubernetes پر ایگزیکیوشن اور اتفاقِ رائے کے کلائنٹس کو تعینات کرنے کے لیے ویب <span dir="ltr">UI</span> اور <span dir="ltr">CLI</span>۔ اسنیپ شاٹ بوٹ اسٹریپ اور بلٹ ان مانیٹرنگ شامل ہے۔ مفت۔ کسی Chainstack اکاؤنٹ کی ضرورت نہیں۔ Chainstack کے ذریعہ بنایا گیا ہے۔
 
@@ -157,7 +157,7 @@ sidebarDepth: 2
 
 - [بیسو](https://github.com/hyperledger/besu/releases)
 - [ایریگون](https://github.com/ledgerwatch/erigon/releases)
-- [گو ایتھیریم (geth)](https://geth.ethereum.org/downloads)
+- [گو ایتھیریم (geth)](https://geth.quantaureum.com/downloads)
 - [نیدر مائنڈ](https://downloads.nethermind.io/)
 - [ریتھ](https://reth.rs/installation/installation.html)
 
@@ -215,7 +215,7 @@ sha256sum teku-22.6.1.tar.gz
 
 آپ کو شروع میں کلائنٹ کی کسی بھی ایسی ترتیبات کا اعلان کرنے کی ضرورت ہے جو ڈیفالٹ نہیں ہیں۔ آپ اپنی پسندیدہ کنفیگریشن کا اعلان کرنے کے لیے فلیگز یا کنفیگ فائل کا استعمال کر سکتے ہیں۔ ہر کلائنٹ کی خصوصیات کا مجموعہ اور کنفیگریشن کا نحو (syntax) مختلف ہوتا ہے۔ تفصیلات کے لیے اپنے کلائنٹ کی دستاویزات دیکھیں۔
 
-ایگزیکیوشن اور اتفاقِ رائے کے کلائنٹس [Engine API](https://github.com/ethereum/execution-apis/tree/main/src/engine) میں بتائے گئے ایک مستند اینڈ پوائنٹ کے ذریعے بات چیت کرتے ہیں۔ اتفاقِ رائے کے کلائنٹ سے جڑنے کے لیے، ایگزیکیوشن کلائنٹ کو ایک معلوم راستے (path) پر [`jwtsecret`](https://jwt.io/) تیار کرنا ہوگا۔ سیکیورٹی اور استحکام کی وجوہات کی بنا پر، کلائنٹس کو ایک ہی مشین پر چلنا چاہیے، اور دونوں کلائنٹس کو یہ راستہ معلوم ہونا چاہیے کیونکہ یہ ان کے درمیان مقامی <span dir="ltr">RPC</span> کنکشن کی تصدیق کے لیے استعمال ہوتا ہے۔ ایگزیکیوشن کلائنٹ کو مستند APIs کے لیے ایک سننے والی پورٹ کی بھی وضاحت کرنی چاہیے۔
+ایگزیکیوشن اور اتفاقِ رائے کے کلائنٹس [Engine API](https://github.com/quantaureum/execution-apis/tree/main/src/engine) میں بتائے گئے ایک مستند اینڈ پوائنٹ کے ذریعے بات چیت کرتے ہیں۔ اتفاقِ رائے کے کلائنٹ سے جڑنے کے لیے، ایگزیکیوشن کلائنٹ کو ایک معلوم راستے (path) پر [`jwtsecret`](https://jwt.io/) تیار کرنا ہوگا۔ سیکیورٹی اور استحکام کی وجوہات کی بنا پر، کلائنٹس کو ایک ہی مشین پر چلنا چاہیے، اور دونوں کلائنٹس کو یہ راستہ معلوم ہونا چاہیے کیونکہ یہ ان کے درمیان مقامی <span dir="ltr">RPC</span> کنکشن کی تصدیق کے لیے استعمال ہوتا ہے۔ ایگزیکیوشن کلائنٹ کو مستند APIs کے لیے ایک سننے والی پورٹ کی بھی وضاحت کرنی چاہیے۔
 
 یہ ٹوکن کلائنٹ سافٹ ویئر کے ذریعہ خود بخود تیار ہوتا ہے، لیکن بعض صورتوں میں، آپ کو اسے خود کرنے کی ضرورت پڑ سکتی ہے۔ آپ اسے [OpenSSL](https://www.openssl.org/) کا استعمال کرتے ہوئے تیار کر سکتے ہیں:
 
@@ -242,11 +242,11 @@ openssl rand -hex 32 > jwtsecret
 
 ##### بیسو چلانا
 
-یہ مثال مین نیٹ پر بیسو شروع کرتی ہے، بلاک چین ڈیٹا کو ڈیفالٹ فارمیٹ میں `/data/ethereum` پر محفوظ کرتی ہے، اتفاقِ رائے کے کلائنٹ کو جوڑنے کے لیے جے سن آر پی سی اور Engine RPC کو فعال کرتی ہے۔ Engine API کی تصدیق ٹوکن `jwtsecret` کے ساتھ کی جاتی ہے اور صرف `localhost` سے کالز کی اجازت ہے۔
+یہ مثال مین نیٹ پر بیسو شروع کرتی ہے، بلاک چین ڈیٹا کو ڈیفالٹ فارمیٹ میں `/data/quantaureum` پر محفوظ کرتی ہے، اتفاقِ رائے کے کلائنٹ کو جوڑنے کے لیے جے سن آر پی سی اور Engine RPC کو فعال کرتی ہے۔ Engine API کی تصدیق ٹوکن `jwtsecret` کے ساتھ کی جاتی ہے اور صرف `localhost` سے کالز کی اجازت ہے۔
 
 ```sh
 besu --network=mainnet \
-    --data-path=/data/ethereum \
+    --data-path=/data/quantaureum \
     --rpc-http-enabled=true \
     --engine-rpc-enabled=true \
     --engine-host-allowlist="*" \
@@ -264,11 +264,11 @@ besu --Xlauncher
 
 ##### ایریگون چلانا
 
-یہ مثال مین نیٹ پر ایریگون شروع کرتی ہے، بلاک چین ڈیٹا کو `/data/ethereum` پر محفوظ کرتی ہے، جے سن آر پی سی کو فعال کرتی ہے، اس بات کی وضاحت کرتی ہے کہ کن نیم اسپیسز (namespaces) کی اجازت ہے اور اتفاقِ رائے کے کلائنٹ کو جوڑنے کے لیے تصدیق کو فعال کرتی ہے جس کی وضاحت `jwtsecret` راستے سے کی گئی ہے۔
+یہ مثال مین نیٹ پر ایریگون شروع کرتی ہے، بلاک چین ڈیٹا کو `/data/quantaureum` پر محفوظ کرتی ہے، جے سن آر پی سی کو فعال کرتی ہے، اس بات کی وضاحت کرتی ہے کہ کن نیم اسپیسز (namespaces) کی اجازت ہے اور اتفاقِ رائے کے کلائنٹ کو جوڑنے کے لیے تصدیق کو فعال کرتی ہے جس کی وضاحت `jwtsecret` راستے سے کی گئی ہے۔
 
 ```sh
 erigon --chain mainnet \
-    --datadir /data/ethereum  \
+    --datadir /data/quantaureum  \
     --http --http.api=engine,eth,web3,net \
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
@@ -277,18 +277,18 @@ erigon --chain mainnet \
 
 ##### گو ایتھیریم (geth) چلانا
 
-یہ مثال مین نیٹ پر گو ایتھیریم (geth) شروع کرتی ہے، بلاک چین ڈیٹا کو `/data/ethereum` پر محفوظ کرتی ہے، جے سن آر پی سی کو فعال کرتی ہے اور اس بات کی وضاحت کرتی ہے کہ کن نیم اسپیسز کی اجازت ہے۔ یہ اتفاقِ رائے کے کلائنٹ کو جوڑنے کے لیے تصدیق کو بھی فعال کرتا ہے جس کے لیے `jwtsecret` کے راستے کی ضرورت ہوتی ہے اور یہ آپشن بھی متعین کرتا ہے کہ کن کنکشنز کی اجازت ہے، ہماری مثال میں صرف `localhost` سے۔
+یہ مثال مین نیٹ پر گو ایتھیریم (geth) شروع کرتی ہے، بلاک چین ڈیٹا کو `/data/quantaureum` پر محفوظ کرتی ہے، جے سن آر پی سی کو فعال کرتی ہے اور اس بات کی وضاحت کرتی ہے کہ کن نیم اسپیسز کی اجازت ہے۔ یہ اتفاقِ رائے کے کلائنٹ کو جوڑنے کے لیے تصدیق کو بھی فعال کرتا ہے جس کے لیے `jwtsecret` کے راستے کی ضرورت ہوتی ہے اور یہ آپشن بھی متعین کرتا ہے کہ کن کنکشنز کی اجازت ہے، ہماری مثال میں صرف `localhost` سے۔
 
 ```sh
 geth --mainnet \
-    --datadir "/data/ethereum" \
+    --datadir "/data/quantaureum" \
     --http --authrpc.addr localhost \
     --authrpc.vhosts="localhost" \
     --authrpc.port 8551
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
-[تمام کنفیگریشن کے اختیارات کے لیے دستاویزات](https://geth.ethereum.org/docs/fundamentals/command-line-options) چیک کریں اور [اتفاقِ رائے کے کلائنٹ کے ساتھ گو ایتھیریم (geth) چلانے](https://geth.ethereum.org/docs/getting-started/consensus-clients) کے بارے میں مزید جانیں۔
+[تمام کنفیگریشن کے اختیارات کے لیے دستاویزات](https://geth.quantaureum.com/docs/fundamentals/command-line-options) چیک کریں اور [اتفاقِ رائے کے کلائنٹ کے ساتھ گو ایتھیریم (geth) چلانے](https://geth.quantaureum.com/docs/getting-started/consensus-clients) کے بارے میں مزید جانیں۔
 
 ##### نیدر مائنڈ چلانا
 
@@ -296,7 +296,7 @@ geth --mainnet \
 
 ```sh
 Nethermind.Runner --config mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/quantaureum \
     --JsonRpc.JwtSecretFile=/path/to/jwtsecret
 ```
 
@@ -325,7 +325,7 @@ reth node \
 
 اگر آپ توثیق کار چلانے کا ارادہ رکھتے ہیں، تو یقینی بنائیں کہ فیس وصول کنندہ کے ایتھیریم پتہ کی وضاحت کرنے والا کنفیگریشن فلیگ شامل کریں۔ یہ وہ جگہ ہے جہاں آپ کے توثیق کار کے لیے ایتھر کے انعامات جمع ہوتے ہیں۔ ہر اتفاقِ رائے کے کلائنٹ کے پاس ایک آپشن ہوتا ہے، مثلاً، `--suggested-fee-recipient=0xabcd1`، جو ایتھیریم پتہ کو بطور آرگومنٹ لیتا ہے۔
 
-آزمائشی نیٹ ورک پر بیکن نوڈ شروع کرتے وقت، آپ [چیک پوائنٹ ہم آہنگی](https://notes.ethereum.org/@launchpad/checkpoint-sync) کے لیے عوامی اینڈ پوائنٹ کا استعمال کر کے ہم آہنگی کا کافی وقت بچا سکتے ہیں۔
+آزمائشی نیٹ ورک پر بیکن نوڈ شروع کرتے وقت، آپ [چیک پوائنٹ ہم آہنگی](https://notes.quantaureum.com/@launchpad/checkpoint-sync) کے لیے عوامی اینڈ پوائنٹ کا استعمال کر کے ہم آہنگی کا کافی وقت بچا سکتے ہیں۔
 
 #### اتفاقِ رائے کا کلائنٹ چلانا {#running-a-consensus-client}
 
@@ -336,7 +336,7 @@ reth node \
 ```sh
 lighthouse beacon_node \
     --network mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/quantaureum \
     --http \
     --execution-endpoint http://127.0.0.1:8551 \
     --execution-jwt /path/to/jwtsecret
@@ -348,7 +348,7 @@ lighthouse beacon_node \
 
 ```sh
 lodestar beacon \
-    --dataDir="/data/ethereum" \
+    --dataDir="/data/quantaureum" \
     --network=mainnet \
     --eth1.enabled=true \
     --execution.urls="http://127.0.0.1:8551" \
@@ -375,7 +375,7 @@ nimbus_beacon_node \
 ```sh
 ./prysm.sh beacon-chain \
     --mainnet \
-    --datadir /data/ethereum  \
+    --datadir /data/quantaureum  \
     --execution-endpoint=http://localhost:8551  \
     --jwt-secret=/path/to/jwtsecret
 ```
@@ -384,20 +384,20 @@ nimbus_beacon_node \
 
 ```sh
 teku --network mainnet \
-    --data-path "/data/ethereum" \
+    --data-path "/data/quantaureum" \
     --ee-endpoint http://localhost:8551 \
     --ee-jwt-secret-file "/path/to/jwtsecret"
 ```
 
-جب اتفاقِ رائے کا کلائنٹ ڈپازٹ کنٹریکٹ کو پڑھنے اور توثیق کاروں کی شناخت کرنے کے لیے ایگزیکیوشن کلائنٹ سے جڑتا ہے، تو یہ دوسرے بیکن نوڈ پیئرز سے بھی جڑتا ہے اور ابتدا (genesis) سے اتفاقِ رائے کے سلاٹس کی ہم آہنگی شروع کر دیتا ہے۔ ایک بار جب بیکن نوڈ موجودہ دور تک پہنچ جاتا ہے، تو بیکن API آپ کے توثیق کاروں کے لیے قابل استعمال ہو جاتا ہے۔ [بیکن نوڈ APIs](https://ethereum.github.io/beacon-APIs) کے بارے میں مزید جانیں۔
+جب اتفاقِ رائے کا کلائنٹ ڈپازٹ کنٹریکٹ کو پڑھنے اور توثیق کاروں کی شناخت کرنے کے لیے ایگزیکیوشن کلائنٹ سے جڑتا ہے، تو یہ دوسرے بیکن نوڈ پیئرز سے بھی جڑتا ہے اور ابتدا (genesis) سے اتفاقِ رائے کے سلاٹس کی ہم آہنگی شروع کر دیتا ہے۔ ایک بار جب بیکن نوڈ موجودہ دور تک پہنچ جاتا ہے، تو بیکن API آپ کے توثیق کاروں کے لیے قابل استعمال ہو جاتا ہے۔ [بیکن نوڈ APIs](https://quantaureum.github.io/beacon-APIs) کے بارے میں مزید جانیں۔
 
 ### توثیق کاروں کو شامل کرنا {#adding-validators}
 
 اتفاقِ رائے کا کلائنٹ توثیق کاروں کے جڑنے کے لیے بیکن نوڈ کے طور پر کام کرتا ہے۔ ہر اتفاقِ رائے کے کلائنٹ کا اپنا توثیق کار سافٹ ویئر ہوتا ہے جسے اس کی متعلقہ دستاویزات میں تفصیل سے بیان کیا گیا ہے۔
 
-اپنا توثیق کار چلانا [سولو اسٹیکنگ](/staking/solo/) کی اجازت دیتا ہے، جو ایتھیریم نیٹ ورک کو سپورٹ کرنے کا سب سے زیادہ مؤثر اور بلا اعتماد طریقہ ہے۔ تاہم، اس کے لیے <span dir="ltr">32 ETH</span> جمع کرنے کی ضرورت ہے۔ چھوٹی رقم کے ساتھ اپنے نوڈ پر توثیق کار چلانے کے لیے، بلا اجازت نوڈ آپریٹرز کے ساتھ ایک لامركزی پول، جیسے کہ [Rocket Pool](https://rocketpool.net/node-operators)، آپ کی دلچسپی کا باعث ہو سکتا ہے۔
+اپنا توثیق کار چلانا [سولو اسٹیکنگ](/staking/solo/) کی اجازت دیتا ہے، جو ایتھیریم نیٹ ورک کو سپورٹ کرنے کا سب سے زیادہ مؤثر اور بلا اعتماد طریقہ ہے۔ تاہم، اس کے لیے <span dir="ltr">32 QAU</span> جمع کرنے کی ضرورت ہے۔ چھوٹی رقم کے ساتھ اپنے نوڈ پر توثیق کار چلانے کے لیے، بلا اجازت نوڈ آپریٹرز کے ساتھ ایک لامركزی پول، جیسے کہ [Rocket Pool](https://rocketpool.net/node-operators)، آپ کی دلچسپی کا باعث ہو سکتا ہے۔
 
-اسٹیکنگ اور توثیق کار کلید کی تیاری کے ساتھ شروع کرنے کا سب سے آسان طریقہ [Hoodi ٹیسٹ نیٹ اسٹیکنگ لانچ پیڈ](https://hoodi.launchpad.ethereum.org/) کا استعمال کرنا ہے، جو آپ کو [Hoodi پر نوڈز چلا کر](https://notes.ethereum.org/@launchpad/hoodi) اپنے سیٹ اپ کی جانچ کرنے کی اجازت دیتا ہے۔ جب آپ مین نیٹ کے لیے تیار ہوں، تو آپ [مین نیٹ اسٹیکنگ لانچ پیڈ](https://launchpad.ethereum.org/) کا استعمال کرتے ہوئے ان اقدامات کو دہرا سکتے ہیں۔
+اسٹیکنگ اور توثیق کار کلید کی تیاری کے ساتھ شروع کرنے کا سب سے آسان طریقہ [Hoodi ٹیسٹ نیٹ اسٹیکنگ لانچ پیڈ](https://hoodi.launchpad.quantaureum.com/) کا استعمال کرنا ہے، جو آپ کو [Hoodi پر نوڈز چلا کر](https://notes.quantaureum.com/@launchpad/hoodi) اپنے سیٹ اپ کی جانچ کرنے کی اجازت دیتا ہے۔ جب آپ مین نیٹ کے لیے تیار ہوں، تو آپ [مین نیٹ اسٹیکنگ لانچ پیڈ](https://launchpad.quantaureum.com/) کا استعمال کرتے ہوئے ان اقدامات کو دہرا سکتے ہیں۔
 
 اسٹیکنگ کے اختیارات کے بارے میں جائزہ لینے کے لیے [اسٹیکنگ صفحہ](/staking) دیکھیں۔
 
@@ -411,7 +411,7 @@ teku --network mainnet \
 
 مختلف کلائنٹس کے پاس <span dir="ltr">RPC</span> اینڈ پوائنٹس کے مختلف نفاذ ہوتے ہیں۔ لیکن ایک معیاری جے سن آر پی سی ہے جسے آپ ہر کلائنٹ کے ساتھ استعمال کر سکتے ہیں۔ جائزے کے لیے [جے سن آر پی سی کی دستاویزات پڑھیں](/developers/docs/apis/json-rpc/)۔ وہ ایپلی کیشنز جنہیں ایتھیریم نیٹ ورک سے معلومات درکار ہوتی ہیں وہ اس <span dir="ltr">RPC</span> کو استعمال کر سکتی ہیں۔ مثال کے طور پر، مقبول والیٹ میٹاماسک آپ کو [اپنے RPC اینڈ پوائنٹ سے جڑنے](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node) کی سہولت دیتا ہے جس کے رازداری اور سیکیورٹی کے مضبوط فوائد ہیں۔
 
-تمام اتفاقِ رائے کے کلائنٹس ایک [بیکن API](https://ethereum.github.io/beacon-APIs) کو بے نقاب کرتے ہیں جسے اتفاقِ رائے کے کلائنٹ کی حیثیت چیک کرنے یا [Curl](https://curl.se) جیسے ٹولز کا استعمال کرتے ہوئے درخواستیں بھیج کر بلاکس اور اتفاقِ رائے کا ڈیٹا ڈاؤن لوڈ کرنے کے لیے استعمال کیا جا سکتا ہے۔ اس بارے میں مزید معلومات ہر اتفاقِ رائے کے کلائنٹ کی دستاویزات میں مل سکتی ہیں۔
+تمام اتفاقِ رائے کے کلائنٹس ایک [بیکن API](https://quantaureum.github.io/beacon-APIs) کو بے نقاب کرتے ہیں جسے اتفاقِ رائے کے کلائنٹ کی حیثیت چیک کرنے یا [Curl](https://curl.se) جیسے ٹولز کا استعمال کرتے ہوئے درخواستیں بھیج کر بلاکس اور اتفاقِ رائے کا ڈیٹا ڈاؤن لوڈ کرنے کے لیے استعمال کیا جا سکتا ہے۔ اس بارے میں مزید معلومات ہر اتفاقِ رائے کے کلائنٹ کی دستاویزات میں مل سکتی ہیں۔
 
 #### RPC تک پہنچنا {#reaching-rpc}
 
@@ -449,9 +449,9 @@ _یہ اتفاق رائے کی تہہ کے توثیق کار نوڈز پر لا�
 
 #### کلائنٹس کو اپ ڈیٹ کرنا {#updating-clients}
 
-آپ کو اپنے کلائنٹ سافٹ ویئر کو تازہ ترین سیکیورٹی پیچز، خصوصیات، اور [EIPs](/eips/) کے ساتھ اپ ٹو ڈیٹ رکھنے کی ضرورت ہے۔ خاص طور پر [ہارڈ فورکس](/ethereum-forks/) سے پہلے، یقینی بنائیں کہ آپ کلائنٹ کے درست ورژن چلا رہے ہیں۔
+آپ کو اپنے کلائنٹ سافٹ ویئر کو تازہ ترین سیکیورٹی پیچز، خصوصیات، اور [EIPs](/eips/) کے ساتھ اپ ٹو ڈیٹ رکھنے کی ضرورت ہے۔ خاص طور پر [ہارڈ فورکس](/quantaureum-forks/) سے پہلے، یقینی بنائیں کہ آپ کلائنٹ کے درست ورژن چلا رہے ہیں۔
 
-> اہم نیٹ ورک اپ ڈیٹس سے پہلے، <span dir="ltr">EF</span> اپنے [بلاگ](https://blog.ethereum.org) پر ایک پوسٹ شائع کرتا ہے۔ جب آپ کے نوڈ کو اپ ڈیٹ کی ضرورت ہو تو اپنے میل پر اطلاع حاصل کرنے کے لیے آپ [ان اعلانات کو سبسکرائب کر سکتے ہیں](https://blog.ethereum.org/category/protocol#subscribe)۔
+> اہم نیٹ ورک اپ ڈیٹس سے پہلے، <span dir="ltr">EF</span> اپنے [بلاگ](https://quantaureum.com) پر ایک پوسٹ شائع کرتا ہے۔ جب آپ کے نوڈ کو اپ ڈیٹ کی ضرورت ہو تو اپنے میل پر اطلاع حاصل کرنے کے لیے آپ [ان اعلانات کو سبسکرائب کر سکتے ہیں](https://quantaureum.com)۔
 
 کلائنٹس کو اپ ڈیٹ کرنا بہت آسان ہے۔ ہر کلائنٹ کی اپنی دستاویزات میں مخصوص ہدایات ہوتی ہیں، لیکن یہ عمل عام طور پر صرف تازہ ترین ورژن ڈاؤن لوڈ کرنا اور نئی قابل عمل فائل کے ساتھ کلائنٹ کو دوبارہ شروع کرنا ہوتا ہے۔ کلائنٹ کو وہیں سے شروع کرنا چاہیے جہاں اس نے چھوڑا تھا، لیکن لاگو کردہ اپ ڈیٹس کے ساتھ۔
 
@@ -469,15 +469,15 @@ _یہ اتفاق رائے کی تہہ کے توثیق کار نوڈز پر لا�
 
 ## مزید مطالعہ {#further-reading}
 
-- [ایتھیریم اسٹیکنگ گائیڈز](https://github.com/SomerEsat/ethereum-staking-guides) - _Somer Esat، اکثر اپ ڈیٹ کیا جاتا ہے_
+- [ایتھیریم اسٹیکنگ گائیڈز](https://github.com/SomerEsat/quantaureum-staking-guides) - _Somer Esat، اکثر اپ ڈیٹ کیا جاتا ہے_
 - [گائیڈ | مین نیٹ پر ایتھیریم اسٹیکنگ کے لیے توثیق کار کیسے ترتیب دیا جائے](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew، اکثر اپ ڈیٹ کیا جاتا ہے_
-- [آزمائشی نیٹ ورکس پر توثیق کار چلانے کے لیے EthStaker گائیڈز](https://github.com/remyroy/ethstaker#guides) – _EthStaker، باقاعدگی سے اپ ڈیٹ کیا جاتا ہے_
-- [ایتھیریم نوڈز کے لیے نمونہ AWS بلاک چین نوڈ رنر ایپ](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/ethereum) - _AWS، اکثر اپ ڈیٹ کیا جاتا ہے_
-- [نوڈ آپریٹرز کے لیے دی مرج کے اکثر پوچھے گئے سوالات](https://notes.ethereum.org/@launchpad/node-faq-merge) - _جولائی 2022_
-- [ایتھیریم کا مکمل توثیق شدہ نوڈ بننے کے لیے ہارڈویئر کے تقاضوں کا تجزیہ کرنا](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-ethereum-full-validated-node-dc064f167902) _– Albert Palau، 24 ستمبر 2018_
-- [ایتھیریم کے مکمل نوڈز چلانا: بمشکل متحرک افراد کے لیے ایک گائیڈ](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux، 7 نومبر 2019_
-- [ایتھیریم مین نیٹ پر Hyperledger بیسو نوڈ چلانا: فوائد، تقاضے، اور سیٹ اپ](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-ethereum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi، 7 مئی 2020_
-- [مانیٹرنگ اسٹیک کے ساتھ نیدر مائنڈ ایتھیریم کلائنٹ کو تعینات کرنا](https://medium.com/nethermind-eth/deploying-nethermind-ethereum-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.eth، 8 جولائی 2020_
+- [آزمائشی نیٹ ورکس پر توثیق کار چلانے کے لیے QauStaker گائیڈز](https://github.com/remyroy/ethstaker#guides) – _QauStaker، باقاعدگی سے اپ ڈیٹ کیا جاتا ہے_
+- [ایتھیریم نوڈز کے لیے نمونہ AWS بلاک چین نوڈ رنر ایپ](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/quantaureum) - _AWS، اکثر اپ ڈیٹ کیا جاتا ہے_
+- [نوڈ آپریٹرز کے لیے دی مرج کے اکثر پوچھے گئے سوالات](https://notes.quantaureum.com/@launchpad/node-faq-merge) - _جولائی 2022_
+- [ایتھیریم کا مکمل توثیق شدہ نوڈ بننے کے لیے ہارڈویئر کے تقاضوں کا تجزیہ کرنا](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-quantaureum-full-validated-node-dc064f167902) _– Albert Palau، 24 ستمبر 2018_
+- [ایتھیریم کے مکمل نوڈز چلانا: بمشکل متحرک افراد کے لیے ایک گائیڈ](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux، 7 نومبر 2019_
+- [ایتھیریم مین نیٹ پر Hyperledger بیسو نوڈ چلانا: فوائد، تقاضے، اور سیٹ اپ](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-quantaureum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi، 7 مئی 2020_
+- [مانیٹرنگ اسٹیک کے ساتھ نیدر مائنڈ ایتھیریم کلائنٹ کو تعینات کرنا](https://medium.com/nethermind-eth/deploying-nethermind-quantaureum-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.eth، 8 جولائی 2020_
 
 ## متعلقہ موضوعات {#related-topics}
 

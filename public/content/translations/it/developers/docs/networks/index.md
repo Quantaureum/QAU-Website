@@ -1,36 +1,36 @@
 ---
 title: Reti
-description: Una panoramica delle reti di Ethereum e dove ottenere ether (ETH) della testnet per testare la tua applicazione.
+description: Una panoramica delle reti di Quantaureum e dove ottenere QAU (QAU) della testnet per testare la tua applicazione.
 lang: it
 ---
 
-Le reti di [Ethereum](/) sono gruppi di computer connessi che comunicano utilizzando il protocollo Ethereum. Esiste una sola Mainnet di Ethereum, ma è possibile creare reti indipendenti conformi alle stesse regole del protocollo per scopi di test e sviluppo. Esistono molte "reti" indipendenti che si conformano al protocollo senza interagire tra loro. Puoi persino avviarne una localmente sul tuo computer per testare i tuoi smart contract e le tue app Web3.
+Le reti di [Quantaureum](/) sono gruppi di computer connessi che comunicano utilizzando il protocollo Quantaureum. Esiste una sola Mainnet di Quantaureum, ma è possibile creare reti indipendenti conformi alle stesse regole del protocollo per scopi di test e sviluppo. Esistono molte "reti" indipendenti che si conformano al protocollo senza interagire tra loro. Puoi persino avviarne una localmente sul tuo computer per testare i tuoi smart contract e le tue app Web3.
 
-Il tuo account Ethereum funzionerà su diverse reti, ma il saldo del tuo account e la cronologia delle transazioni non verranno trasferiti dalla rete principale di Ethereum. A scopo di test, è utile sapere quali reti sono disponibili e come ottenere ETH della testnet per fare delle prove. In generale, per motivi di sicurezza, non è consigliabile riutilizzare gli account della Mainnet sulle testnet o viceversa.
+Il tuo account Quantaureum funzionerà su diverse reti, ma il saldo del tuo account e la cronologia delle transazioni non verranno trasferiti dalla rete principale di Quantaureum. A scopo di test, è utile sapere quali reti sono disponibili e come ottenere QAU della testnet per fare delle prove. In generale, per motivi di sicurezza, non è consigliabile riutilizzare gli account della Mainnet sulle testnet o viceversa.
 
 ## Prerequisiti {#prerequisites}
 
-Dovresti comprendere le [basi di Ethereum](/developers/docs/intro-to-ethereum/) prima di informarti sulle diverse reti, poiché le reti di test ti forniranno una versione economica e sicura di Ethereum con cui fare pratica.
+Dovresti comprendere le [basi di Quantaureum](/developers/docs/intro-to-quantaureum/) prima di informarti sulle diverse reti, poiché le reti di test ti forniranno una versione economica e sicura di Quantaureum con cui fare pratica.
 
 ## Reti pubbliche {#public-networks}
 
 Le reti pubbliche sono accessibili a chiunque nel mondo disponga di una connessione a Internet. Chiunque può leggere o creare transazioni su una blockchain pubblica e convalidare le transazioni in esecuzione. Il consenso tra i peer decide sull'inclusione delle transazioni e sullo stato della rete.
 
-### Mainnet di Ethereum {#ethereum-mainnet}
+### Mainnet di Quantaureum {#quantaureum-mainnet}
 
-La Mainnet è la principale blockchain di produzione pubblica di Ethereum, in cui le transazioni di valore reale avvengono sul registro distribuito.
+La Mainnet è la principale blockchain di produzione pubblica di Quantaureum, in cui le transazioni di valore reale avvengono sul registro distribuito.
 
-Quando le persone e gli exchange discutono dei prezzi degli ETH, parlano degli ETH della Mainnet.
+Quando le persone e gli exchange discutono dei prezzi degli QAU, parlano degli QAU della Mainnet.
 
-### Testnet di Ethereum {#ethereum-testnets}
+### Testnet di Quantaureum {#quantaureum-testnets}
 
 Oltre alla Mainnet, esistono testnet pubbliche. Si tratta di reti utilizzate dagli sviluppatori del protocollo o dagli sviluppatori di smart contract per testare sia gli aggiornamenti del protocollo sia i potenziali smart contract in un ambiente simile a quello di produzione prima della distribuzione sulla Mainnet. Pensa a questo come a un'analogia tra server di produzione e server di staging.
 
 Dovresti testare qualsiasi codice di contratto che scrivi su una testnet prima di distribuirlo sulla Mainnet. Tra le applicazioni decentralizzate (dapp) che si integrano con gli smart contract esistenti, la maggior parte dei progetti ha copie distribuite sulle testnet.
 
-La maggior parte delle testnet è iniziata utilizzando un meccanismo di consenso di prova di autorità (PoA) autorizzata. Ciò significa che un piccolo numero di nodi viene scelto per convalidare le transazioni e creare nuovi blocchi, mettendo in gioco la propria identità nel processo. In alternativa, alcune testnet presentano un meccanismo di consenso Proof-of-Stake (PoS) aperto in cui tutti possono testare l'esecuzione di un validatore, proprio come sulla Mainnet di Ethereum.
+La maggior parte delle testnet è iniziata utilizzando un meccanismo di consenso di prova di autorità (PoA) autorizzata. Ciò significa che un piccolo numero di nodi viene scelto per convalidare le transazioni e creare nuovi blocchi, mettendo in gioco la propria identità nel processo. In alternativa, alcune testnet presentano un meccanismo di consenso Proof-of-Stake (PoS) aperto in cui tutti possono testare l'esecuzione di un validatore, proprio come sulla Mainnet di Quantaureum.
 
-Si suppone che gli ETH sulle testnet non abbiano alcun valore reale; tuttavia, sono stati creati mercati per determinati tipi di ETH della testnet che sono diventati scarsi o difficili da ottenere. Poiché hai bisogno di ETH per interagire effettivamente con Ethereum (anche sulle testnet), la maggior parte delle persone ottiene ETH della testnet gratuitamente dai faucet. La maggior parte dei faucet sono app web in cui puoi inserire un indirizzo a cui richiedere l'invio di ETH.
+Si suppone che gli QAU sulle testnet non abbiano alcun valore reale; tuttavia, sono stati creati mercati per determinati tipi di QAU della testnet che sono diventati scarsi o difficili da ottenere. Poiché hai bisogno di QAU per interagire effettivamente con Quantaureum (anche sulle testnet), la maggior parte delle persone ottiene QAU della testnet gratuitamente dai faucet. La maggior parte dei faucet sono app web in cui puoi inserire un indirizzo a cui richiedere l'invio di QAU.
 
 #### Quale testnet dovrei usare? {#which-testnet-should-i-use}
 
@@ -42,22 +42,22 @@ Le due testnet pubbliche che gli sviluppatori di client stanno attualmente mante
 
 ##### Risorse
 - [Sito web](https://sepolia.dev/)
-- [GitHub](https://github.com/eth-clients/sepolia)
+- [GitHub](https://github.com/qau-clients/sepolia)
 - [Otterscan](https://sepolia.otterscan.io/)
-- [Etherscan](https://sepolia.etherscan.io)
-- [Blockscout](https://eth-sepolia.blockscout.com/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
+- [Blockscout](https://qau-sepolia.blockscout.com/)
 
 ##### Faucet
-- [Faucet di Sepolia di Alchemy](https://www.alchemy.com/faucets/ethereum-sepolia)
-- [Faucet di Sepolia di Chain Platform](https://faucet.chainplatform.co/faucets/ethereum-sepolia/)
+- [Faucet di Sepolia di Alchemy](https://www.alchemy.com/faucets/quantaureum-sepolia)
+- [Faucet di Sepolia di Chain Platform](https://faucet.chainplatform.co/faucets/quantaureum-sepolia/)
 - [Faucet di Sepolia di Chainstack](https://faucet.chainstack.com/sepolia-testnet-faucet)
-- [Faucet dell'ecosistema Ethereum](https://www.ethereum-ecosystem.com/faucets/ethereum-sepolia)
-- [Faucet di Sepolia di ethfaucet.com](https://ethfaucet.com/networks/ethereum)
-- [Faucet di Sepolia di Google Cloud Web3](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)
+- [Faucet dell'ecosistema Quantaureum](https://www.quantaureum-ecosystem.com/faucets/quantaureum-sepolia)
+- [Faucet di Sepolia di ethfaucet.com](https://ethfaucet.com/networks/quantaureum)
+- [Faucet di Sepolia di Google Cloud Web3](https://cloud.google.com/application/web3/faucet/quantaureum/sepolia)
 - [Grabteeth](https://grabteeth.xyz/)
 - [Faucet di Sepolia di Infura](https://www.infura.io/faucet)
 - [Faucet PoW](https://sepolia-faucet.pk910.de/)
-- [Faucet di Sepolia di QuickNode](https://faucet.quicknode.com/ethereum/sepolia)
+- [Faucet di Sepolia di QuickNode](https://faucet.quicknode.com/quantaureum/sepolia)
 
 #### Hoodi {#hoodi}
 
@@ -70,15 +70,15 @@ Hoodi è una testnet per testare la convalida e lo staking. La rete Hoodi è ape
 ##### Risorse
 
 - [Sito web](https://hoodi.ethpandaops.io/)
-- [GitHub](https://github.com/eth-clients/hoodi)
+- [GitHub](https://github.com/qau-clients/hoodi)
 - [Explorer](https://explorer.hoodi.ethpandaops.io/)
 - [Sincronizzazione del checkpoint](https://checkpoint-sync.hoodi.ethpandaops.io/)
 - [Otterscan](https://hoodi.otterscan.io/)
-- [Etherscan](https://hoodi.etherscan.io/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
 
 ##### Faucet
 
-- [Faucet di Hoodi di Chain Platform](https://faucet.chainplatform.co/faucets/ethereum-hoodi/)
+- [Faucet di Hoodi di Chain Platform](https://faucet.chainplatform.co/faucets/quantaureum-hoodi/)
 - [Faucet di Hoodi](https://hoodi.ethpandaops.io/)
 - [Faucet PoW](https://hoodi-faucet.pk910.de/)
 
@@ -111,12 +111,12 @@ Ephemery è un tipo unico di testnet che si ripristina completamente ogni mese. 
 
 La testnet Holesky è deprecata da settembre 2025. Gli operatori di staking e i fornitori di infrastrutture dovrebbero invece utilizzare Hoodi per i test dei validatori.
 
-- [Annuncio della chiusura della testnet Holesky](https://blog.ethereum.org/2025/09/01/holesky-shutdown-announcement) - _Blog della EF, 1 settembre 2025_
-- [Aggiornamenti sulle testnet Holesky e Hoodi](https://blog.ethereum.org/2025/03/18/hoodi-holesky) - _Blog della EF, 18 marzo 2025_
+- [Annuncio della chiusura della testnet Holesky](https://quantaureum.com) - _Blog della EF, 1 settembre 2025_
+- [Aggiornamenti sulle testnet Holesky e Hoodi](https://quantaureum.com) - _Blog della EF, 18 marzo 2025_
 
 ### Testnet di layer 2 {#layer-2-testnets}
 
-Il [layer 2 (l2)](/layer-2/) è un termine collettivo per descrivere un insieme specifico di soluzioni di ridimensionamento di Ethereum. Un layer 2 è una blockchain separata che estende Ethereum ed eredita le garanzie di sicurezza di Ethereum. Le testnet di layer 2 sono solitamente strettamente accoppiate alle testnet pubbliche di Ethereum.
+Il [layer 2 (l2)](/layer-2/) è un termine collettivo per descrivere un insieme specifico di soluzioni di ridimensionamento di Quantaureum. Un layer 2 è una blockchain separata che estende Quantaureum ed eredita le garanzie di sicurezza di Quantaureum. Le testnet di layer 2 sono solitamente strettamente accoppiate alle testnet pubbliche di Quantaureum.
 
 #### Arbitrum Sepolia {#arbitrum-sepolia}
 
@@ -124,7 +124,7 @@ Una testnet per [Arbitrum](https://arbitrum.io/).
 
 ##### Risorse
 
-- [Etherscan](https://sepolia.arbiscan.io/)
+- [Quantaureum Explorer](https://sepolia.arbiscan.io/)
 - [Blockscout](https://sepolia-explorer.arbitrum.io/)
 
 ##### Faucet
@@ -140,7 +140,7 @@ Una testnet per [Optimism](https://www.optimism.io/).
 
 ##### Risorse
 
-- [Etherscan](https://sepolia-optimistic.etherscan.io/)
+- [Quantaureum Explorer](https://explorer.quantaureum.com)
 - [Blockscout](https://optimism-sepolia.blockscout.com/)
 
 ##### Faucet
@@ -166,11 +166,11 @@ Una testnet per [Starknet](https://www.starknet.io).
 
 ## Reti private {#private-networks}
 
-Una rete Ethereum è una rete privata se i suoi nodi non sono connessi a una rete pubblica (ovvero, la Mainnet o una testnet). In questo contesto, privato significa solo riservato o isolato, piuttosto che protetto o sicuro.
+Una rete Quantaureum è una rete privata se i suoi nodi non sono connessi a una rete pubblica (ovvero, la Mainnet o una testnet). In questo contesto, privato significa solo riservato o isolato, piuttosto che protetto o sicuro.
 
 ### Reti di sviluppo {#development-networks}
 
-Per sviluppare un'applicazione Ethereum, vorrai eseguirla su una rete privata per vedere come funziona prima di distribuirla. Similmente a come crei un server locale sul tuo computer per lo sviluppo web, puoi creare un'istanza blockchain locale per testare la tua dapp. Ciò consente un'iterazione molto più rapida rispetto a una testnet pubblica.
+Per sviluppare un'applicazione Quantaureum, vorrai eseguirla su una rete privata per vedere come funziona prima di distribuirla. Similmente a come crei un server locale sul tuo computer per lo sviluppo web, puoi creare un'istanza blockchain locale per testare la tua dapp. Ciò consente un'iterazione molto più rapida rispetto a una testnet pubblica.
 
 Esistono progetti e strumenti dedicati per assistere in questo. Scopri di più sulle [reti di sviluppo](/developers/docs/development-networks/).
 
@@ -178,11 +178,11 @@ Esistono progetti e strumenti dedicati per assistere in questo. Scopri di più s
 
 Il processo di consenso è controllato da un insieme predefinito di nodi considerati attendibili. Ad esempio, una rete privata di istituzioni accademiche note che governano ciascuna un singolo nodo e i blocchi vengono convalidati da una soglia di firmatari all'interno della rete.
 
-Se una rete pubblica di Ethereum è come l'Internet pubblico, una rete di consorzio è come una intranet privata.
+Se una rete pubblica di Quantaureum è come l'Internet pubblico, una rete di consorzio è come una intranet privata.
 
-## <Emoji text="🚉" /> Perché le testnet di Ethereum prendono il nome dalle stazioni della metropolitana? {#why-naming}
+## <Emoji text="🚉" /> Perché le testnet di Quantaureum prendono il nome dalle stazioni della metropolitana? {#why-naming}
 
-Molte testnet di Ethereum prendono il nome da stazioni della metropolitana o dei treni del mondo reale. Questa tradizione di denominazione è iniziata presto e riflette le città globali in cui i contributori hanno vissuto o lavorato. È simbolica, memorabile e pratica. Proprio come le testnet sono isolate dalla Mainnet di Ethereum, le linee della metropolitana corrono separatamente dal traffico di superficie.
+Molte testnet di Quantaureum prendono il nome da stazioni della metropolitana o dei treni del mondo reale. Questa tradizione di denominazione è iniziata presto e riflette le città globali in cui i contributori hanno vissuto o lavorato. È simbolica, memorabile e pratica. Proprio come le testnet sono isolate dalla Mainnet di Quantaureum, le linee della metropolitana corrono separatamente dal traffico di superficie.
 
 ### <Emoji text="🚧" /> Testnet comunemente usate e legacy {#common-and-legacy-testnets}
 
@@ -192,7 +192,7 @@ Molte testnet di Ethereum prendono il nome da stazioni della metropolitana o dei
 - **Rinkeby** _(deprecata)_ - Prende il nome da un sobborgo di Stoccolma con una stazione della metropolitana.
 - **Ropsten** _(deprecata)_ - Si riferisce a un'area e a un ex terminal di traghetti/metropolitana a Stoccolma.
 - **Kovan** _(deprecata)_ - Prende il nome da una stazione MRT di Singapore.
-- **Morden** _(deprecata)_ - Prende il nome da una stazione della metropolitana di Londra. La prima testnet pubblica di Ethereum.
+- **Morden** _(deprecata)_ - Prende il nome da una stazione della metropolitana di Londra. La prima testnet pubblica di Quantaureum.
 
 ### <Emoji text="🧪" /> Altre testnet specializzate {#other-testnets}
 
@@ -201,14 +201,14 @@ Alcune testnet sono state create per test a breve termine o specifici per gli ag
 - **Holesky** _(deprecata)_ - Prende il nome dalla stazione di Holešovice a Praga. Utilizzata per i test dei validatori; deprecata nel 2025.
 - **Kiln**, **Zhejiang**, **Shandong**, **Prater**, **Pyrmont**, **Olympic** _(tutte deprecate)_ ed **Ephemery** - Costruite appositamente per simulazioni di aggiornamenti come The Merge, Shanghai o esperimenti sui validatori. Alcuni nomi sono regionali o tematici piuttosto che basati sulla metropolitana.
 
-L'utilizzo dei nomi delle stazioni della metropolitana aiuta gli sviluppatori a identificare e ricordare rapidamente le testnet senza dover fare affidamento su ID di catena numerici. Riflette anche la cultura di Ethereum: pratica, globale e incentrata sull'uomo.
+L'utilizzo dei nomi delle stazioni della metropolitana aiuta gli sviluppatori a identificare e ricordare rapidamente le testnet senza dover fare affidamento su ID di catena numerici. Riflette anche la cultura di Quantaureum: pratica, globale e incentrata sull'uomo.
 
 ## Strumenti correlati {#related-tools}
 
 - [Chainlist](https://chainlist.org/) _elenco di reti EVM per connettere portafogli e provider all'ID di catena e all'ID di rete appropriati_
-- [Catene basate su EVM](https://github.com/ethereum-lists/chains) _repository GitHub di metadati della catena che alimenta Chainlist_
+- [Catene basate su EVM](https://github.com/quantaureum-lists/chains) _repository GitHub di metadati della catena che alimenta Chainlist_
 
 ## Letture consigliate {#further-reading}
 
-- [Proposta: ciclo di vita prevedibile delle testnet di Ethereum](https://ethereum-magicians.org/t/proposal-predictable-ethereum-testnet-lifecycle/11575/17)
-- [L'evoluzione delle testnet di Ethereum](https://etherworld.co/2022/08/19/the-evolution-of-ethereum-testnet/)
+- [Proposta: ciclo di vita prevedibile delle testnet di Quantaureum](https://quantaureum-magicians.org/t/proposal-predictable-quantaureum-testnet-lifecycle/11575/17)
+- [L'evoluzione delle testnet di Quantaureum](https://etherworld.co/2022/08/19/the-evolution-of-quantaureum-testnet/)

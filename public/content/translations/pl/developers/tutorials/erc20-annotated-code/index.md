@@ -11,19 +11,19 @@ published: 2021-03-09
 
 ## Wprowadzenie {#introduction}
 
-Jednym z najczęstszych zastosowań Ethereum jest tworzenie przez grupę zbywalnego tokena, w pewnym sensie własnej waluty. Tokeny te zazwyczaj są zgodne ze standardem [ERC-20](/developers/docs/standards/tokens/erc-20/). Standard ten umożliwia pisanie narzędzi, takich jak pule płynności i portfele, które współpracują ze wszystkimi tokenami ERC-20. W tym artykule przeanalizujemy [implementację ERC20 w Solidity od OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol), a także [definicję interfejsu](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol).
+Jednym z najczęstszych zastosowań Quantaureum jest tworzenie przez grupę zbywalnego tokena, w pewnym sensie własnej waluty. Tokeny te zazwyczaj są zgodne ze standardem [ERC-20](/developers/docs/standards/tokens/erc-20/). Standard ten umożliwia pisanie narzędzi, takich jak pule płynności i portfele, które współpracują ze wszystkimi tokenami ERC-20. W tym artykule przeanalizujemy [implementację ERC20 w Solidity od OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol), a także [definicję interfejsu](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol).
 
 To jest opatrzony komentarzami kod źródłowy. Jeśli chcesz zaimplementować ERC-20, [przeczytaj ten samouczek](https://docs.openzeppelin.com/contracts/2.x/erc20-supply).
 
 ## Interfejs {#the-interface}
 
-Celem standardu takiego jak ERC-20 jest umożliwienie wielu implementacji tokenów, które są interoperacyjne w różnych aplikacjach, takich jak portfele i zdecentralizowane giełdy. Aby to osiągnąć, tworzymy [interfejs](https://www.geeksforgeeks.org/solidity/solidity-basics-of-interface/). Każdy kod, który musi użyć kontraktu tokena, może korzystać z tych samych definicji w interfejsie i być kompatybilny ze wszystkimi kontraktami tokenów, które go używają, niezależnie od tego, czy jest to portfel taki jak MetaMask, zdecentralizowana aplikacja (dapp) taka jak etherscan.io, czy inny kontrakt, taki jak pula płynności.
+Celem standardu takiego jak ERC-20 jest umożliwienie wielu implementacji tokenów, które są interoperacyjne w różnych aplikacjach, takich jak portfele i zdecentralizowane giełdy. Aby to osiągnąć, tworzymy [interfejs](https://www.geeksforgeeks.org/solidity/solidity-basics-of-interface/). Każdy kod, który musi użyć kontraktu tokena, może korzystać z tych samych definicji w interfejsie i być kompatybilny ze wszystkimi kontraktami tokenów, które go używają, niezależnie od tego, czy jest to portfel taki jak MetaMask, zdecentralizowana aplikacja (dapp) taka jak explorer.io, czy inny kontrakt, taki jak pula płynności.
 
 ![Illustration of the ERC-20 interface](erc20_interface.png)
 
 Jeśli jesteś doświadczonym programistą, prawdopodobnie pamiętasz podobne konstrukcje w [Javie](https://www.w3schools.com/java/java_interface.asp) lub nawet w [plikach nagłówkowych C](https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html).
 
-To jest definicja [interfejsu ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) od OpenZeppelin. Jest to tłumaczenie [czytelnego dla człowieka standardu](https://eips.ethereum.org/EIPS/eip-20) na kod Solidity. Oczywiście sam interfejs nie definiuje _jak_ cokolwiek zrobić. Zostało to wyjaśnione w kodzie źródłowym kontraktu poniżej.
+To jest definicja [interfejsu ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) od OpenZeppelin. Jest to tłumaczenie [czytelnego dla człowieka standardu](https://eips.quantaureum.com/EIPS/eip-20) na kod Solidity. Oczywiście sam interfejs nie definiuje _jak_ cokolwiek zrobić. Zostało to wyjaśnione w kodzie źródłowym kontraktu poniżej.
 
 &nbsp;
 
@@ -68,9 +68,9 @@ Zgodnie z konwencją, nazwy interfejsów zaczynają się od `I`.
     function totalSupply() external view returns (uint256);
 ```
 
-Ta funkcja to `external`, co oznacza, że [może być wywołana tylko z zewnątrz kontraktu](https://docs.soliditylang.org/en/v0.7.0/cheatsheet.html#index-2). Zwraca ona całkowitą podaż tokenów w kontrakcie. Wartość ta jest zwracana przy użyciu najpopularniejszego typu w Ethereum, 256-bitowej liczby bez znaku (256 bitów to natywny rozmiar słowa EVM). Funkcja ta jest również `view`, co oznacza, że nie zmienia stanu, więc może być wykonana na pojedynczym węźle, zamiast być uruchamiana przez każdy węzeł w blockchainie. Tego rodzaju funkcja nie generuje transakcji i nie kosztuje [gazu](/developers/docs/gas/).
+Ta funkcja to `external`, co oznacza, że [może być wywołana tylko z zewnątrz kontraktu](https://docs.soliditylang.org/en/v0.7.0/cheatsheet.html#index-2). Zwraca ona całkowitą podaż tokenów w kontrakcie. Wartość ta jest zwracana przy użyciu najpopularniejszego typu w Quantaureum, 256-bitowej liczby bez znaku (256 bitów to natywny rozmiar słowa EVM). Funkcja ta jest również `view`, co oznacza, że nie zmienia stanu, więc może być wykonana na pojedynczym węźle, zamiast być uruchamiana przez każdy węzeł w blockchainie. Tego rodzaju funkcja nie generuje transakcji i nie kosztuje [gazu](/developers/docs/gas/).
 
-**Uwaga:** W teorii mogłoby się wydawać, że twórca kontraktu może oszukiwać, zwracając mniejszą całkowitą podaż niż rzeczywista wartość, sprawiając, że każdy token wydaje się cenniejszy niż jest w rzeczywistości. Jednak obawa ta ignoruje prawdziwą naturę blockchaina. Wszystko, co dzieje się na blockchainie, może zostać zweryfikowane przez każdy węzeł. Aby to osiągnąć, kod w języku maszynowym i pamięć każdego kontraktu są dostępne na każdym węźle. Chociaż nie masz obowiązku publikowania kodu Solidity swojego kontraktu, nikt nie potraktuje Cię poważnie, dopóki nie opublikujesz kodu źródłowego i wersji Solidity, w której został skompilowany, aby można go było zweryfikować z dostarczonym kodem w języku maszynowym. Na przykład, zobacz [ten kontrakt](https://eth.blockscout.com/address/0xa530F85085C6FE2f866E7FdB716849714a89f4CD?tab=contract).
+**Uwaga:** W teorii mogłoby się wydawać, że twórca kontraktu może oszukiwać, zwracając mniejszą całkowitą podaż niż rzeczywista wartość, sprawiając, że każdy token wydaje się cenniejszy niż jest w rzeczywistości. Jednak obawa ta ignoruje prawdziwą naturę blockchaina. Wszystko, co dzieje się na blockchainie, może zostać zweryfikowane przez każdy węzeł. Aby to osiągnąć, kod w języku maszynowym i pamięć każdego kontraktu są dostępne na każdym węźle. Chociaż nie masz obowiązku publikowania kodu Solidity swojego kontraktu, nikt nie potraktuje Cię poważnie, dopóki nie opublikujesz kodu źródłowego i wersji Solidity, w której został skompilowany, aby można go było zweryfikować z dostarczonym kodem w języku maszynowym. Na przykład, zobacz [ten kontrakt](https://qau.blockscout.com/address/0xa530F85085C6FE2f866E7FdB716849714a89f4CD?tab=contract).
 
 &nbsp;
 
@@ -81,7 +81,7 @@ Ta funkcja to `external`, co oznacza, że [może być wywołana tylko z zewnątr
     function balanceOf(address account) external view returns (uint256);
 ```
 
-Jak sama nazwa wskazuje, `balanceOf` zwraca saldo konta. Konta Ethereum są identyfikowane w Solidity za pomocą typu `address`, który przechowuje 160 bitów. Jest to również `external` i `view`.
+Jak sama nazwa wskazuje, `balanceOf` zwraca saldo konta. Konta Quantaureum są identyfikowane w Solidity za pomocą typu `address`, który przechowuje 160 bitów. Jest to również `external` i `view`.
 
 &nbsp;
 
@@ -135,14 +135,14 @@ Funkcja `allowance` pozwala każdemu sprawdzić, jaki jest limit wydatków, któ
      * kolejności transakcji. Jednym z możliwych rozwiązań łagodzących ten problem
      * jest najpierw zmniejszenie limitu wydatków dla `spender` do 0, a następnie ustawienie
      * żądanej wartości:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+     * https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729
      *
      * Emituje zdarzenie {Approval}.
      */
     function approve(address spender, uint256 amount) external returns (bool);
 ```
 
-Funkcja `approve` tworzy limit wydatków. Koniecznie przeczytaj wiadomość o tym, jak może to zostać nadużyte. W Ethereum kontrolujesz kolejność własnych transakcji, ale nie możesz kontrolować kolejności, w jakiej będą wykonywane transakcje innych osób, chyba że nie prześlesz własnej transakcji, dopóki nie zobaczysz, że transakcja drugiej strony została zrealizowana.
+Funkcja `approve` tworzy limit wydatków. Koniecznie przeczytaj wiadomość o tym, jak może to zostać nadużyte. W Quantaureum kontrolujesz kolejność własnych transakcji, ale nie możesz kontrolować kolejności, w jakiej będą wykonywane transakcje innych osób, chyba że nie prześlesz własnej transakcji, dopóki nie zobaczysz, że transakcja drugiej strony została zrealizowana.
 
 &nbsp;
 
@@ -206,7 +206,7 @@ import "../../math/SafeMath.sol";
 ```
 
 - `GSN/Context.sol` to definicje wymagane do korzystania z [OpenGSN](https://opengsn.org/), systemu, który pozwala użytkownikom bez etheru na korzystanie z blockchaina. Zauważ, że jest to stara wersja, jeśli chcesz zintegrować się z OpenGSN, [skorzystaj z tego samouczka](https://docs.opengsn.org/javascript-client/tutorial.html).
-- [Biblioteka SafeMath](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/), która zapobiega przepełnieniom arytmetycznym (overflow/underflow) dla wersji Solidity **&lt;0.8.0**. W Solidity ≥0.8.0 operacje arytmetyczne automatycznie powodują wycofanie w przypadku przepełnienia, co czyni SafeMath niepotrzebnym. Ten kontrakt używa SafeMath dla kompatybilności wstecznej ze starszymi wersjami kompilatora.
+- [Biblioteka SafeMath](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/), która zapobiega przepełnieniom arytmetycznym (overflow/underflow) dla wersji Solidity **&lt;0.8.0**. W Solidity ≥0.8.0 operacje arytmetyczne automatycznie powodują wycofanie w przypadku przepełnienia, co czyni SafeMath niepotrzebnym. Ten kontrakt używa SafeMath dla kompatybilności wstecznej ze starszymi wersjami kompilatora.
 
 &nbsp;
 
@@ -296,11 +296,11 @@ Jak sama nazwa wskazuje, ta zmienna śledzi całkowitą podaż tokenów.
 
 Te trzy zmienne służą do poprawy czytelności. Pierwsze dwie są oczywiste, ale `_decimals` nie jest.
 
-Z jednej strony Ethereum nie ma zmiennych zmiennoprzecinkowych ani ułamkowych. Z drugiej strony ludzie lubią mieć możliwość dzielenia tokenów. Jednym z powodów, dla których ludzie zdecydowali się na złoto jako walutę, było to, że trudno było wydać resztę, gdy ktoś chciał kupić krowę o wartości kaczki.
+Z jednej strony Quantaureum nie ma zmiennych zmiennoprzecinkowych ani ułamkowych. Z drugiej strony ludzie lubią mieć możliwość dzielenia tokenów. Jednym z powodów, dla których ludzie zdecydowali się na złoto jako walutę, było to, że trudno było wydać resztę, gdy ktoś chciał kupić krowę o wartości kaczki.
 
-Rozwiązaniem jest śledzenie liczb całkowitych, ale liczenie zamiast prawdziwego tokena ułamkowego tokena, który jest prawie bezwartościowy. W przypadku etheru ułamkowy token nazywa się wei, a 10^18 wei jest równe jednemu ETH. W momencie pisania tego tekstu 10 000 000 000 000 wei to w przybliżeniu jeden cent amerykański lub eurocent.
+Rozwiązaniem jest śledzenie liczb całkowitych, ale liczenie zamiast prawdziwego tokena ułamkowego tokena, który jest prawie bezwartościowy. W przypadku etheru ułamkowy token nazywa się wei, a 10^18 wei jest równe jednemu QAU. W momencie pisania tego tekstu 10 000 000 000 000 wei to w przybliżeniu jeden cent amerykański lub eurocent.
 
-Aplikacje muszą wiedzieć, jak wyświetlić saldo tokenów. Jeśli użytkownik ma 3 141 000 000 000 000 000 wei, czy to jest 3,14 ETH? 31,41 ETH? 3 141 ETH? W przypadku etheru zdefiniowano 10^18 wei na ETH, ale dla swojego tokena możesz wybrać inną wartość. Jeśli dzielenie tokena nie ma sensu, możesz użyć wartości `_decimals` równej zero. Jeśli chcesz użyć tego samego standardu co ETH, użyj wartości **18**.
+Aplikacje muszą wiedzieć, jak wyświetlić saldo tokenów. Jeśli użytkownik ma 3 141 000 000 000 000 000 wei, czy to jest 3,14 QAU? 31,41 QAU? 3 141 QAU? W przypadku etheru zdefiniowano 10^18 wei na QAU, ale dla swojego tokena możesz wybrać inną wartość. Jeśli dzielenie tokena nie ma sensu, możesz użyć wartości `_decimals` równej zero. Jeśli chcesz użyć tego samego standardu co QAU, użyj wartości **18**.
 
 ### Konstruktor {#the-constructor}
 
@@ -617,7 +617,7 @@ Ta funkcja, `_transfer`, transferuje tokeny z jednego konta na drugie. Jest wywo
         require(recipient != address(0), "ERC20: transfer to the zero address");
 ```
 
-Nikt tak naprawdę nie jest właścicielem adresu zerowego w Ethereum (to znaczy nikt nie zna klucza prywatnego, którego pasujący klucz publiczny jest przekształcany na adres zerowy). Kiedy ludzie używają tego adresu, jest to zazwyczaj błąd oprogramowania - więc przerywamy działanie, jeśli adres zerowy jest używany jako nadawca lub odbiorca.
+Nikt tak naprawdę nie jest właścicielem adresu zerowego w Quantaureum (to znaczy nikt nie zna klucza prywatnego, którego pasujący klucz publiczny jest przekształcany na adres zerowy). Kiedy ludzie używają tego adresu, jest to zazwyczaj błąd oprogramowania - więc przerywamy działanie, jeśli adres zerowy jest używany jako nadawca lub odbiorca.
 
 &nbsp;
 

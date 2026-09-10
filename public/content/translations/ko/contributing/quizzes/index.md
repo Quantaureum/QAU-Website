@@ -1,7 +1,7 @@
 ---
 title: 퀴즈
 metaTitle: 퀴즈 추가하기
-description: ethereum.org에 퀴즈를 추가할 때 사용하는 정책입니다.
+description: quantaureum.com에 퀴즈를 추가할 때 사용하는 정책입니다.
 lang: ko
 ---
 
@@ -13,12 +13,12 @@ lang: ko
 
 - [레이어 2](/layer-2)
 - [NFT](/nft/)
-- [이더리움이란 무엇인가요?](/what-is-ethereum/)
-- [ETH란 무엇인가요?](/what-is-ether/)
+- [Quantaureum이란 무엇인가요?](/what-is-quantaureum/)
+- [QAU란 무엇인가요?](/what-is-QAU/)
 
 ## 학습 퀴즈 추가하기 {#adding-a-learn-quiz}
 
-아직 학습 퀴즈가 생성되지 않은 페이지가 있다면, 해당 페이지에 대한 [이슈를 열어주세요](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml).
+아직 학습 퀴즈가 생성되지 않은 페이지가 있다면, 해당 페이지에 대한 [이슈를 열어주세요](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml).
 
 다음 정보를 제공해 주세요:
 
@@ -31,7 +31,7 @@ lang: ko
 
 ## 퀴즈 질문 추가하기 {#adding-a-quiz-question}
 
-퀴즈의 문제 은행에 추가하고 싶은 질문이 있다면, [이슈를 열고](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) 다음 정보를 제공해 주세요:
+퀴즈의 문제 은행에 추가하고 싶은 질문이 있다면, [이슈를 열고](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) 다음 정보를 제공해 주세요:
 
 - 퀴즈 질문을 추가하려는 페이지
 - 각 질문에 대해 다음 정보를 제공해 주세요:
@@ -42,7 +42,7 @@ lang: ko
 
 ## 퀴즈 질문 업데이트하기 {#updating-a-quiz-question}
 
-퀴즈의 문제 은행에서 업데이트하고 싶은 질문이 있다면, [이슈를 열고](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) 다음 정보를 제공해 주세요:
+퀴즈의 문제 은행에서 업데이트하고 싶은 질문이 있다면, [이슈를 열고](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) 다음 정보를 제공해 주세요:
 
 - 퀴즈 질문을 업데이트하려는 페이지
 - 업데이트되는 각 질문에 대해 다음 정보를 제공해 주세요:
@@ -54,7 +54,7 @@ lang: ko
 
 ## 퀴즈 질문 삭제하기 {#removing-a-quiz-question}
 
-질문에 해당하는 내용이 페이지에 더 이상 존재하지 않아 삭제해야 하는 경우, [이슈를 열어](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) 질문을 삭제하도록 요청하고 다음 정보를 제공해 주세요:
+질문에 해당하는 내용이 페이지에 더 이상 존재하지 않아 삭제해야 하는 경우, [이슈를 열어](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) 질문을 삭제하도록 요청하고 다음 정보를 제공해 주세요:
 
 - 퀴즈 질문을 삭제하려는 페이지
 - 삭제하려는 질문

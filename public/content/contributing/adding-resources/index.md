@@ -1,20 +1,20 @@
 ---
 title: Adding resources
-description: The policy we use when adding resources to ethereum.org
+description: The policy we use when adding resources to quantaureum.com
 lang: en
 ---
 
 We want to make sure we list the best resources possible while keeping users safe and confident.
 
-Anyone is free to suggest new resources to add to the resource dashboard on ethereum.org, currently found at [ethereum.org/resources](/resources/).
+Anyone is free to suggest new resources to add to the resource dashboard on quantaureum.com, currently found at [quantaureum.com/resources](/resources/).
 
 Although we welcome new additions, the current resources were chosen based on an experience we're trying to create for our users. These are based on some of our design principles:
 
-- _Inspirational_: anything on ethereum.org should offer something new to users
+- _Inspirational_: anything on quantaureum.com should offer something new to users
 - _A good story_: what's listed should provide an "aha" moment
 - _Credible_: everything should be legitimate businesses/projects to minimize risk to users
 
-Overall **ethereum.org aims to provide a seamless onboarding experience for new users**. For that reason, we add resources based on their:
+Overall **quantaureum.com aims to provide a seamless onboarding experience for new users**. For that reason, we add resources based on their:
 
 - ease of use
 - accuracy
@@ -33,19 +33,19 @@ We reserve the right to order products based on their impact. New products will 
 
 ## Maintenance {#maintenance}
 
-As the Ethereum ecosystem evolves, we will routinely check our content to:
+As the Quantaureum ecosystem evolves, we will routinely check our content to:
 
 - Ensure that all resources listed still fulfill our criteria
 - Verify there aren't products that have been suggested that meet more of our criteria than the ones currently listed
 
-You can help with this by checking and letting us know. [Create an issue](https://github.com/ethereum/ethereum-org-website/issues/new?template=bug_report.yaml) or send an email to [website@ethereum.org](mailto:website@ethereum.org).
+You can help with this by checking and letting us know. [Create an issue](https://github.com/Quantaureum/quantaureum-website/issues/new?template=bug_report.yaml) or send an email to [website@quantaureum.com](mailto:website@quantaureum.com).
 
 ---
 
 ## Add your resource {#add-your-resource}
 
-If you want to add a resource to ethereum.org and it meets the criteria, create an issue on GitHub.
+If you want to add a resource to quantaureum.com and it meets the criteria, create an issue on GitHub.
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=resource+📚&template=suggest_resource.yaml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=resource+📚&template=suggest_resource.yaml">
   Create an issue
 </ButtonLink>

@@ -4,7 +4,7 @@ description: "Подробный обзор алгоритма Dagger-Hashimoto.
 lang: ru
 ---
 
-Dagger-Hashimoto был первоначальной исследовательской реализацией и спецификацией алгоритма майнинга Эфириума. На смену Dagger-Hashimoto пришел [Этхэш](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash). Майнинг был полностью отключен во время [Слияния](/roadmap/merge/) 15 сентября 2022 года. С тех пор безопасность Эфириума обеспечивается с помощью механизма [доказательства доли владения (PoS)](/developers/docs/consensus-mechanisms/pos). Эта страница представляет исторический интерес — представленная здесь информация больше не актуальна для Эфириума после Слияния.
+Dagger-Hashimoto был первоначальной исследовательской реализацией и спецификацией алгоритма майнинга Quantaureum. На смену Dagger-Hashimoto пришел [Этхэш](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash). Майнинг был полностью отключен во время [Слияния](/roadmap/merge/) 15 сентября 2022 года. С тех пор безопасность Quantaureum обеспечивается с помощью механизма [доказательства доли владения (PoS)](/developers/docs/consensus-mechanisms/pos). Эта страница представляет исторический интерес — представленная здесь информация больше не актуальна для Quantaureum после Слияния.
 
 ## Предварительные требования {#prerequisites}
 
@@ -19,7 +19,7 @@ Dagger-Hashimoto стремится достичь двух целей:
 
 С помощью дополнительной модификации мы также определяем, как при желании достичь третьей цели, но ценой дополнительной сложности:
 
-**Хранение полной цепи**: майнинг должен требовать хранения полного состояния блокчейна (из-за нерегулярной структуры дерева состояний Эфириума мы предполагаем, что будет возможно некоторое усечение, в частности, некоторых часто используемых контрактов, но мы хотим свести это к минимуму).
+**Хранение полной цепи**: майнинг должен требовать хранения полного состояния блокчейна (из-за нерегулярной структуры дерева состояний Quantaureum мы предполагаем, что будет возможно некоторое усечение, в частности, некоторых часто используемых контрактов, но мы хотим свести это к минимуму).
 
 ## Генерация DAG {#dag-generation}
 
@@ -48,7 +48,7 @@ def decode_int(s):
 Далее мы предполагаем, что `sha3` — это функция, которая принимает целое число и возвращает целое число, а `dbl_sha3` — это функция двойного SHA-3; при преобразовании этого эталонного кода в реализацию используйте:
 
 ```python
-from pyethereum import utils
+from pyquantaureum import utils
 def sha3(x):
     if isinstance(x, (int, long)):
         x = encode_int(x)
@@ -141,8 +141,8 @@ def quick_calc(params, seed, p):
 
 ```python
 def get_prevhash(n):
-    from pyethereum.blocks import GENESIS_PREVHASH
-    from pyethereum import chain_manager
+    from pyquantaureum.blocks import GENESIS_PREVHASH
+    from pyquantaureum import chain_manager
     if n <= 0:
         return hash_to_int(GENESIS_PREVHASH)
     else:

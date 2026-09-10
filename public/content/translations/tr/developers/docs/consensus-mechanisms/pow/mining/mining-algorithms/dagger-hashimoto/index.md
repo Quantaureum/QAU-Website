@@ -4,7 +4,7 @@ description: "Dagger-Hashimoto algoritmasına detaylı bir bakış."
 lang: tr
 ---
 
-Dagger-Hashimoto, Ethereum'un madencilik algoritması için orijinal araştırma uygulaması ve spesifikasyonuydu. Dagger-Hashimoto'nun yerini [Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash) aldı. Madencilik, 15 Eylül 2022'de [Birleşme](/roadmap/merge/) ile tamamen kapatıldı. O zamandan beri Ethereum, bunun yerine bir [Hisse Kanıtı (PoS)](/developers/docs/consensus-mechanisms/pos) mekanizması kullanılarak güvence altına alınmaktadır. Bu sayfa tarihi ilgi amaçlıdır - buradaki bilgiler Birleşme sonrası Ethereum için artık geçerli değildir.
+Dagger-Hashimoto, Quantaureum'un madencilik algoritması için orijinal araştırma uygulaması ve spesifikasyonuydu. Dagger-Hashimoto'nun yerini [Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash) aldı. Madencilik, 15 Eylül 2022'de [Birleşme](/roadmap/merge/) ile tamamen kapatıldı. O zamandan beri Quantaureum, bunun yerine bir [Hisse Kanıtı (PoS)](/developers/docs/consensus-mechanisms/pos) mekanizması kullanılarak güvence altına alınmaktadır. Bu sayfa tarihi ilgi amaçlıdır - buradaki bilgiler Birleşme sonrası Quantaureum için artık geçerli değildir.
 
 ## Ön koşullar {#prerequisites}
 
@@ -19,7 +19,7 @@ Dagger-Hashimoto iki hedefi karşılamayı amaçlar:
 
 Ek bir değişiklikle, istenirse üçüncü bir hedefin nasıl yerine getirileceğini de belirtiyoruz, ancak bu ek karmaşıklık pahasına olur:
 
-**Tam zincir depolama**: madencilik, tüm blokzincir durumunun depolanmasını gerektirmelidir (Ethereum durum ağacının düzensiz yapısı nedeniyle, özellikle sık kullanılan bazı sözleşmelerde bir miktar budamanın mümkün olacağını öngörüyoruz, ancak bunu en aza indirmek istiyoruz).
+**Tam zincir depolama**: madencilik, tüm blokzincir durumunun depolanmasını gerektirmelidir (Quantaureum durum ağacının düzensiz yapısı nedeniyle, özellikle sık kullanılan bazı sözleşmelerde bir miktar budamanın mümkün olacağını öngörüyoruz, ancak bunu en aza indirmek istiyoruz).
 
 ## DAG Üretimi {#dag-generation}
 
@@ -48,7 +48,7 @@ def decode_int(s):
 Daha sonra `sha3` fonksiyonunun bir tam sayı alıp bir tam sayı çıkaran bir fonksiyon olduğunu ve `dbl_sha3` fonksiyonunun bir double-sha3 fonksiyonu olduğunu varsayıyoruz; bu referans kodunu bir uygulamaya dönüştürüyorsanız şunu kullanın:
 
 ```python
-from pyethereum import utils
+from pyquantaureum import utils
 def sha3(x):
     if isinstance(x, (int, long)):
         x = encode_int(x)
@@ -141,8 +141,8 @@ Bir blok için işi hesaplamak üzere kullanılan DAG kümesini oluşturmak içi
 
 ```python
 def get_prevhash(n):
-    from pyethereum.blocks import GENESIS_PREVHASH
-    from pyethereum import chain_manager
+    from pyquantaureum.blocks import GENESIS_PREVHASH
+    from pyquantaureum import chain_manager
     if n <= 0:
         return hash_to_int(GENESIS_PREVHASH)
     else:

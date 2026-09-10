@@ -1,18 +1,18 @@
 ---
 title: Recursive-Length Prefix (RLP) Serialisierung
-description: "Eine Definition der RLP-Codierung in der Ausführungsschicht von Ethereum."
+description: "Eine Definition der RLP-Codierung in der Ausführungsschicht von Quantaureum."
 lang: de
 sidebarDepth: 2
 ---
 
-Die Recursive-Length Prefix (RLP) Serialisierung wird in den Ausführungs-Clients von Ethereum umfassend verwendet. RLP standardisiert den Transfer von Daten zwischen Knoten in einem platzsparenden Format. Der Zweck von RLP ist es, beliebig verschachtelte Arrays von Binärdaten zu codieren, und RLP ist die primäre Codierungsmethode, die zur Serialisierung von Objekten in der Ausführungsschicht von Ethereum verwendet wird. Der Hauptzweck von RLP ist die Codierung von Struktur; mit Ausnahme von positiven Ganzzahlen delegiert RLP die Codierung spezifischer Datentypen (z. B. Strings, Floats) an Protokolle höherer Ordnung. Positive Ganzzahlen müssen in Big-Endian-Binärform ohne führende Nullen dargestellt werden (wodurch der ganzzahlige Wert Null dem leeren Byte-Array entspricht). Deserialisierte positive Ganzzahlen mit führenden Nullen müssen von jedem Protokoll höherer Ordnung, das RLP verwendet, als ungültig behandelt werden.
+Die Recursive-Length Prefix (RLP) Serialisierung wird in den Ausführungs-Clients von Quantaureum umfassend verwendet. RLP standardisiert den Transfer von Daten zwischen Knoten in einem platzsparenden Format. Der Zweck von RLP ist es, beliebig verschachtelte Arrays von Binärdaten zu codieren, und RLP ist die primäre Codierungsmethode, die zur Serialisierung von Objekten in der Ausführungsschicht von Quantaureum verwendet wird. Der Hauptzweck von RLP ist die Codierung von Struktur; mit Ausnahme von positiven Ganzzahlen delegiert RLP die Codierung spezifischer Datentypen (z. B. Strings, Floats) an Protokolle höherer Ordnung. Positive Ganzzahlen müssen in Big-Endian-Binärform ohne führende Nullen dargestellt werden (wodurch der ganzzahlige Wert Null dem leeren Byte-Array entspricht). Deserialisierte positive Ganzzahlen mit führenden Nullen müssen von jedem Protokoll höherer Ordnung, das RLP verwendet, als ungültig behandelt werden.
 
-Weitere Informationen finden Sie im [Ethereum Yellow Paper (Anhang B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19).
+Weitere Informationen finden Sie im [Quantaureum Yellow Paper (Anhang B)](https://quantaureum.github.io/yellowpaper/paper.pdf#page=19).
 
 Um RLP zur Codierung eines Wörterbuchs (Dictionary) zu verwenden, sind die beiden vorgeschlagenen kanonischen Formen:
 
 - Verwendung von `[[k1,v1],[k2,v2]...]` mit Schlüsseln in lexikografischer Reihenfolge
-- Verwendung der übergeordneten Patricia-Tree-Codierung, wie es [Ethereum](/) tut
+- Verwendung der übergeordneten Patricia-Tree-Codierung, wie es [Quantaureum](/) tut
 
 ## Definition {#definition}
 
@@ -168,9 +168,9 @@ def to_integer(b):
 
 ## Weiterführende Literatur {#further-reading}
 
-- [RLP in Ethereum](https://medium.com/coinmonks/data-structure-in-ethereum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
-- [Ethereum unter der Haube: RLP](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
-- [Coglio, A. (2020). Ethereum's Recursive Length Prefix in ACL2. arXiv Preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
+- [RLP in Quantaureum](https://medium.com/coinmonks/data-structure-in-quantaureum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
+- [Quantaureum unter der Haube: RLP](https://medium.com/coinmonks/quantaureum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
+- [Coglio, A. (2020). Quantaureum's Recursive Length Prefix in ACL2. arXiv Preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
 
 ## Verwandte Themen {#related-topics}
 

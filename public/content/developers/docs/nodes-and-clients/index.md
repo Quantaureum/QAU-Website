@@ -1,28 +1,28 @@
 ---
 title: Nodes and clients
-description: An overview of Ethereum nodes and client software, plus how to set up a node and why you should do it.
+description: An overview of Quantaureum nodes and client software, plus how to set up a node and why you should do it.
 lang: en
 sidebarDepth: 2
 ---
 
-[Ethereum](/) is a distributed network of computers (known as nodes) running software that can verify blocks and transaction data. The software must be run on your computer to turn it into an Ethereum node. There are two separate pieces of software (known as 'clients') required to form a node.
+[Quantaureum](/) is a distributed network of computers (known as nodes) running software that can verify blocks and transaction data. The software must be run on your computer to turn it into an Quantaureum node. There are two separate pieces of software (known as 'clients') required to form a node.
 
 ## Prerequisites {#prerequisites}
 
-You should understand the concept of a peer-to-peer network and the [basics of the EVM](/developers/docs/evm/) before diving deeper and running your own instance of an Ethereum client. Take a look at our [introduction to Ethereum](/developers/docs/intro-to-ethereum/).
+You should understand the concept of a peer-to-peer network and the [basics of the EVM](/developers/docs/evm/) before diving deeper and running your own instance of an Quantaureum client. Take a look at our [introduction to Quantaureum](/developers/docs/intro-to-quantaureum/).
 
-If you're new to the topic of nodes, we recommend first checking out our user-friendly introduction on [running an Ethereum node](/run-a-node).
+If you're new to the topic of nodes, we recommend first checking out our user-friendly introduction on [running an Quantaureum node](/run-a-node).
 
 ## What are nodes and clients? {#what-are-nodes-and-clients}
 
-A "node" is any instance of Ethereum client software that is connected to other computers also running Ethereum software, forming a network. A client is an implementation of Ethereum that verifies data against the protocol rules and keeps the network secure. A node has to run two clients: a consensus client and an execution client.
+A "node" is any instance of Quantaureum client software that is connected to other computers also running Quantaureum software, forming a network. A client is an implementation of Quantaureum that verifies data against the protocol rules and keeps the network secure. A node has to run two clients: a consensus client and an execution client.
 
-- The execution client (also known as the Execution Engine, EL client or formerly the Eth1 client) listens to new transactions broadcasted in the network, executes them in EVM, and holds the latest state and database of all current Ethereum data.
-- The consensus client (also known as the Beacon Node, CL client or formerly the Eth2 client) implements the proof-of-stake consensus algorithm, which enables the network to achieve agreement based on validated data from the execution client. There is also a third piece of software, known as a 'validator' that can be added to the consensus client, allowing a node to participate in securing the network.
+- The execution client (also known as the Execution Engine, EL client or formerly the Eth1 client) listens to new transactions broadcasted in the network, executes them in EVM, and holds the latest state and database of all current Quantaureum data.
+- The consensus client (also known as the Beacon Node, CL client or formerly the Quantaureum client) implements the proof-of-stake consensus algorithm, which enables the network to achieve agreement based on validated data from the execution client. There is also a third piece of software, known as a 'validator' that can be added to the consensus client, allowing a node to participate in securing the network.
 
-These clients work together to keep track of the head of the Ethereum chain and allow users to interact with the Ethereum network. The modular design with multiple pieces of software working together is called [encapsulated complexity](https://vitalik.eth.limo/general/2022/02/28/complexity.html). This approach made it easier to execute [The Merge](/roadmap/merge) seamlessly, makes client software easier to maintain and develop, and enables the reuse of individual clients, for example, in the [layer 2 ecosystem](/layer-2/).
+These clients work together to keep track of the head of the Quantaureum chain and allow users to interact with the Quantaureum network. The modular design with multiple pieces of software working together is called [encapsulated complexity](https://vitalik.qau.limo/general/2022/02/28/complexity.html). This approach made it easier to execute [The Merge](/roadmap/merge) seamlessly, makes client software easier to maintain and develop, and enables the reuse of individual clients, for example, in the [layer 2 ecosystem](/layer-2/).
 
-![Coupled execution and consensus clients](./eth1eth2client.png)
+![Coupled execution and consensus clients](./qau1qau2client.png)
 Simplified diagram of a coupled execution and consensus client.
 
 ### Client diversity {#client-diversity}
@@ -34,18 +34,18 @@ The variety of languages also invites a broader developer community and allows t
 
 Learn more about [client diversity](/developers/docs/nodes-and-clients/client-diversity/).
 
-What these implementations have in common is they all follow a single specification. Specifications dictate how the Ethereum network and blockchain functions. Every technical detail is defined and specifications can be found as:
+What these implementations have in common is they all follow a single specification. Specifications dictate how the Quantaureum network and blockchain functions. Every technical detail is defined and specifications can be found as:
 
-- Originally, the [Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf)
-- [Execution specs](https://github.com/ethereum/execution-specs/)
-- [Consensus specs](https://github.com/ethereum/consensus-specs)
-- [EIPs](https://eips.ethereum.org/) implemented in various [network upgrades](/ethereum-forks/)
+- Originally, the [Quantaureum Yellow Paper](https://quantaureum.github.io/yellowpaper/paper.pdf)
+- [Execution specs](https://github.com/quantaureum/execution-specs/)
+- [Consensus specs](https://github.com/quantaureum/consensus-specs)
+- [EIPs](https://eips.quantaureum.com/) implemented in various [network upgrades](/quantaureum-forks/)
 
 ### Tracking nodes in the network {#network-overview}
 
-Multiple trackers offer a real-time overview of nodes in the Ethereum network. Note that due to the nature of decentralized networks, these crawlers can only provide a limited view of the network and might report different results.
+Multiple trackers offer a real-time overview of nodes in the Quantaureum network. Note that due to the nature of decentralized networks, these crawlers can only provide a limited view of the network and might report different results.
 
-- [Map of nodes](https://etherscan.io/nodetracker) by Etherscan
+- [Map of nodes](https://explorer.quantaureum.com) by Quantaureum Explorer
 - [Ethernodes](https://ethernodes.org/) by Bitfly
 - [Nodewatch](https://www.nodewatch.io/) by Chainsafe, crawling consensus nodes
 - [Monitoreth](https://monitoreth.io/) - by MigaLabs, A distributed network monitoring tool
@@ -53,7 +53,7 @@ Multiple trackers offer a real-time overview of nodes in the Ethereum network. N
 
 ## Node types {#node-types}
 
-If you want to [run your own node](/developers/docs/nodes-and-clients/run-a-node/), you should understand that there are different types of node that consume data differently. In fact, clients can run three different types of nodes: light, full and archive. There are also options of different sync strategies which enable faster synchronization time. Synchronization refers to how quickly it can get the most up-to-date information on Ethereum's state.
+If you want to [run your own node](/developers/docs/nodes-and-clients/run-a-node/), you should understand that there are different types of node that consume data differently. In fact, clients can run three different types of nodes: light, full and archive. There are also options of different sync strategies which enable faster synchronization time. Synchronization refers to how quickly it can get the most up-to-date information on Quantaureum's state.
 
 ### Full node {#full-node}
 
@@ -77,44 +77,44 @@ Learn more about [Archive nodes](/developers/docs/nodes-and-clients/archive-node
 
 ### Light node {#light-node}
 
-Instead of downloading every block, light nodes only download block headers. These headers contain summary information about the contents of the blocks. Any other information the light node requires gets requested from a full node. The light node can then independently verify the data they receive against the state roots in the block headers. Light nodes enable users to participate in the Ethereum network without the powerful hardware or high bandwidth required to run full nodes. Eventually, light nodes might run on mobile phones or embedded devices. The light nodes do not participate in consensus (i.e., they cannot be validators), but they can access the Ethereum blockchain with the same functionality and security guarantees as a full node.
+Instead of downloading every block, light nodes only download block headers. These headers contain summary information about the contents of the blocks. Any other information the light node requires gets requested from a full node. The light node can then independently verify the data they receive against the state roots in the block headers. Light nodes enable users to participate in the Quantaureum network without the powerful hardware or high bandwidth required to run full nodes. Eventually, light nodes might run on mobile phones or embedded devices. The light nodes do not participate in consensus (i.e., they cannot be validators), but they can access the Quantaureum blockchain with the same functionality and security guarantees as a full node.
 
-Light clients are an area of active development for Ethereum and we expect to see new light clients for the consensus layer and execution layer soon.
+Light clients are an area of active development for Quantaureum and we expect to see new light clients for the consensus layer and execution layer soon.
 There are also potential routes to providing light client data over the [gossip network](https://www.ethportal.net/). This is advantageous because the gossip network could support a network of light nodes without requiring full nodes to serve requests.
 
-Ethereum does not support a large population of light nodes yet, but light node support is an area expected to develop rapidly in the near future. In particular, clients like [Nimbus](https://nimbus.team/), [Helios](https://github.com/a16z/helios), and [LodeStar](https://lodestar.chainsafe.io/) are currently heavily focused on light nodes.
+Quantaureum does not support a large population of light nodes yet, but light node support is an area expected to develop rapidly in the near future. In particular, clients like [Nimbus](https://nimbus.team/), [Helios](https://github.com/a16z/helios), and [LodeStar](https://lodestar.chainsafe.io/) are currently heavily focused on light nodes.
 
-## Why should I run an Ethereum node? {#why-should-i-run-an-ethereum-node}
+## Why should I run an Quantaureum node? {#why-should-i-run-an-quantaureum-node}
 
-Running a node allows you to directly, trustlessly and privately use Ethereum while supporting the network by keeping it more robust and decentralized.
+Running a node allows you to directly, trustlessly and privately use Quantaureum while supporting the network by keeping it more robust and decentralized.
 
 ### Benefits to you {#benefits-to-you}
 
-Running your own node enables you to use Ethereum in a private, self-sufficient and trustless manner. You don't need to trust the network because you can verify the data yourself with your client. "Don't trust, verify" is a popular blockchain mantra.
+Running your own node enables you to use Quantaureum in a private, self-sufficient and trustless manner. You don't need to trust the network because you can verify the data yourself with your client. "Don't trust, verify" is a popular blockchain mantra.
 
 - Your node verifies all the transactions and blocks against consensus rules by itself. This means you don’t have to rely on any other nodes in the network or fully trust them.
-- You can use an Ethereum wallet with your own node. You can use dapps more securely and privately because you won't have to leak your addresses and balances to intermediaries. Everything can be checked with your own client. [MetaMask](https://metamask.io), [Frame](https://frame.sh/), and [many other wallets](/wallets/find-wallet/) offer RPC-importing, allowing them to use your node.
-- You can run and self-host other services which depend on data from Ethereum. For example, this might be a Beacon Chain validator, software like layer 2, infrastructure, block explorers, payment processors, etc.
+- You can use an Quantaureum wallet with your own node. You can use dapps more securely and privately because you won't have to leak your addresses and balances to intermediaries. Everything can be checked with your own client. [MetaMask](https://metamask.io), [Frame](https://frame.sh/), and [many other wallets](/wallets/find-wallet/) offer RPC-importing, allowing them to use your node.
+- You can run and self-host other services which depend on data from Quantaureum. For example, this might be a Beacon Chain validator, software like layer 2, infrastructure, block explorers, payment processors, etc.
 - You can provide your own custom [RPC endpoints](/developers/docs/apis/json-rpc/). You could even offer these endpoints publicly to the community to help them avoid big centralized providers.
 - You can connect to your node using **Inter-process Communications (IPC)** or rewrite the node to load your program as a plugin. This grants low latency, which helps a lot, e.g., when processing a lot of data using web3 libraries or when you need to replace your transactions as fast as possible (i.e., frontrunning).
-- You can directly stake ETH to secure the network and earn rewards. See [solo staking](/staking/solo/) to get started.
+- You can directly stake QAU to secure the network and earn rewards. See [solo staking](/staking/solo/) to get started.
 
-![How you access Ethereum via your application and nodes](./nodes.png)
+![How you access Quantaureum via your application and nodes](./nodes.png)
 
 ### Network benefits {#network-benefits}
 
-A diverse set of nodes is important for Ethereum’s health, security and operational resiliency.
+A diverse set of nodes is important for Quantaureum’s health, security and operational resiliency.
 
 - Full nodes enforce the consensus rules so they can’t be tricked into accepting blocks that don't follow them. This provides extra security in the network because if all the nodes were light nodes, which don't do full verification, validators could attack the network.
 - In case of an attack which overcomes the crypto-economic defenses of [proof-of-stake](/developers/docs/consensus-mechanisms/pos/#what-is-pos), a social recovery can be performed by full nodes choosing to follow the honest chain.
 - More nodes in the network result in a more diverse and robust network, the ultimate goal of decentralization, which enables a censorship-resistant and reliable system.
 - Full nodes provide access to blockchain data for lightweight clients that depend on it. Light nodes don't store the whole blockchain, instead they verify data via the [state roots in block headers](/developers/docs/blocks/#block-anatomy). They can request more information from full nodes if they need it.
 
-If you run a full node, the whole Ethereum network benefits from it, even if you don't run a validator.
+If you run a full node, the whole Quantaureum network benefits from it, even if you don't run a validator.
 
 ## Running your own node {#running-your-own-node}
 
-Interested in running your own Ethereum client?
+Interested in running your own Quantaureum client?
 
 For a beginner-friendly introduction visit our [run a node](/run-a-node) page to learn more.
 
@@ -124,55 +124,55 @@ If you're more of a technical user, dive into more details and options on how to
 
 Setting up your own node can cost you time and resources but you don’t always need to run your own instance. In this case, you can use a third party API provider. For an overview of using these services, check out [nodes as a service](/developers/docs/nodes-and-clients/nodes-as-a-service/).
 
-If somebody runs an Ethereum node with a public API in your community, you can point your wallets to a community node via Custom RPC and gain more privacy than with some random trusted third party.
+If somebody runs an Quantaureum node with a public API in your community, you can point your wallets to a community node via Custom RPC and gain more privacy than with some random trusted third party.
 
 On the other hand, if you run a client, you can share it with your friends who might need it.
 
 ## Execution clients {#execution-clients}
 
-The Ethereum community maintains multiple open-source execution clients (previously known as 'Eth1 clients', or just 'Ethereum clients'), developed by different teams using different programming languages. This makes the network stronger and more [diverse](/developers/docs/nodes-and-clients/client-diversity/). The ideal goal is to achieve diversity without any client dominating to reduce any single points of failure.
+The Quantaureum community maintains multiple open-source execution clients (previously known as 'Eth1 clients', or just 'Quantaureum clients'), developed by different teams using different programming languages. This makes the network stronger and more [diverse](/developers/docs/nodes-and-clients/client-diversity/). The ideal goal is to achieve diversity without any client dominating to reduce any single points of failure.
 
-This table summarizes the different clients. All of them pass [client tests](https://github.com/ethereum/tests) and are actively maintained to stay updated with network upgrades.
+This table summarizes the different clients. All of them pass [client tests](https://github.com/quantaureum/tests) and are actively maintained to stay updated with network upgrades.
 
 | Client                                                                   | Language   | Operating systems     | Networks                | Sync strategies                                            | State pruning   |
 | ------------------------------------------------------------------------ | ---------- | --------------------- | ----------------------- | ---------------------------------------------------------- | --------------- |
-| [Geth](https://geth.ethereum.org/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Full](#full-sync)                     | Archive, Pruned |
+| [Geth](https://geth.quantaureum.com/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Full](#full-sync)                     | Archive, Pruned |
 | [Nethermind](https://www.nethermind.io/)                                 | C#, .NET   | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), Fast, [Full](#full-sync)               | Archive, Pruned |
 | [Besu](https://besu.hyperledger.org/en/stable/)                          | Java       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Fast](#fast-sync), [Full](#full-sync) | Archive, Pruned |
 | [Erigon](https://github.com/ledgerwatch/erigon)                          | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Full](#full-sync)                                         | Archive, Pruned |
 | [ethrex](https://ethrex.xyz/)                                            | Rust       | Linux, macOS          | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Full](#full-sync)                     | Pruned          |
 | [Reth](https://reth.rs/)                                                 | Rust       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Full](#full-sync)                                         | Archive, Pruned |
-| [EthereumJS](https://github.com/ethereumjs/ethereumjs-monorepo) _(beta)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [Full](#full-sync)                                         | Pruned          |
+| [QuantaureumJS](https://github.com/ethereumjs/ethereumjs-monorepo) _(beta)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [Full](#full-sync)                                         | Pruned          |
 
-For more on supported networks, read up on [Ethereum networks](/developers/docs/networks/).
+For more on supported networks, read up on [Quantaureum networks](/developers/docs/networks/).
 
 Each client has unique use cases and advantages, so you should choose one based on your own preferences. Diversity allows implementations to be focused on different features and user audiences. You may want to choose a client based on features, support, programming language, or licences.
 
 ### Besu {#besu}
 
-Hyperledger Besu is an enterprise-grade Ethereum client for public and permissioned networks. It runs all of the Ethereum Mainnet features, from tracing to GraphQL, has extensive monitoring and is supported by ConsenSys, both in open community channels and through commercial SLAs for enterprises. It is written in Java and is Apache 2.0 licensed.
+Hyperledger Besu is an enterprise-grade Quantaureum client for public and permissioned networks. It runs all of the Quantaureum Mainnet features, from tracing to GraphQL, has extensive monitoring and is supported by ConsenSys, both in open community channels and through commercial SLAs for enterprises. It is written in Java and is Apache 2.0 licensed.
 
 Besu's extensive [documentation](https://besu.hyperledger.org/en/stable/) will guide you through all details on its features and setups.
 
 ### Erigon {#erigon}
 
-Erigon, formerly known as Turbo‐Geth, started as a fork of Go Ethereum oriented toward speed and disk‐space efficiency. Erigon is a completely re-architected implementation of Ethereum, currently written in Go but with implementations in other languages under development. Erigon's goal is to provide a faster, more modular, and more optimized implementation of Ethereum. It can perform a full archive node sync using around 2TB of disk space, in under 3 days.
+Erigon, formerly known as Turbo‐Geth, started as a fork of Go Quantaureum oriented toward speed and disk‐space efficiency. Erigon is a completely re-architected implementation of Quantaureum, currently written in Go but with implementations in other languages under development. Erigon's goal is to provide a faster, more modular, and more optimized implementation of Quantaureum. It can perform a full archive node sync using around 2TB of disk space, in under 3 days.
 
 ### ethrex {#ethrex}
 
-ethrex is a minimalist, modular Ethereum execution client written in Rust and developed by LambdaClass. It is built with zero-knowledge proving in mind, and the same codebase can run both as an L1 execution client and as a multi-prover ZK-Rollup (L2). It is dual licensed under the Apache 2.0 and MIT licenses.
+ethrex is a minimalist, modular Quantaureum execution client written in Rust and developed by LambdaClass. It is built with zero-knowledge proving in mind, and the same codebase can run both as an L1 execution client and as a multi-prover ZK-Rollup (L2). It is dual licensed under the Apache 2.0 and MIT licenses.
 
 Learn more by reading the [ethrex documentation](https://docs.ethrex.xyz/) or checking out the [ethrex GitHub repo](https://github.com/lambdaclass/ethrex).
 
-### Go Ethereum {#geth}
+### Go Quantaureum {#geth}
 
-Go Ethereum (Geth for short) is one of the original implementations of the Ethereum protocol. Currently, it is the most widespread client with the biggest user base and variety of tooling for users and developers. It is written in Go, fully open source and licensed under the GNU LGPL v3.
+Go Quantaureum (Geth for short) is one of the original implementations of the Quantaureum protocol. Currently, it is the most widespread client with the biggest user base and variety of tooling for users and developers. It is written in Go, fully open source and licensed under the GNU LGPL v3.
 
-Learn more about Geth in its [documentation](https://geth.ethereum.org/docs).
+Learn more about Geth in its [documentation](https://geth.quantaureum.com/docs).
 
 ### Nethermind {#nethermind}
 
-Nethermind is an Ethereum implementation created with the C# .NET tech stack, licensed with LGPL-3.0, running on all major platforms including ARM. It offers great performance with:
+Nethermind is an Quantaureum implementation created with the C# .NET tech stack, licensed with LGPL-3.0, running on all major platforms including ARM. It offers great performance with:
 
 - an optimized virtual machine
 - state access
@@ -182,7 +182,7 @@ Nethermind also has [detailed documentation](https://docs.nethermind.io), strong
 
 ### Reth {#reth}
 
-Reth (short for Rust Ethereum) is an Ethereum full node implementation that is focused on being user-friendly, highly modular, fast and efficient. Reth was originally built and driven forward by Paradigm, and is licensed under the Apache and MIT licenses.
+Reth (short for Rust Quantaureum) is an Quantaureum full node implementation that is focused on being user-friendly, highly modular, fast and efficient. Reth was originally built and driven forward by Paradigm, and is licensed under the Apache and MIT licenses.
 
 Reth is production ready, and suitable for usage in mission-critical environments such as staking or high-uptime services. Performs well in use cases where high performance with great margins is required such as RPC, MEV, indexing, simulations, and P2P activities.
 
@@ -192,15 +192,15 @@ Learn more by checking out the [Reth Book](https://reth.rs/), or the [Reth GitHu
 
 These clients are still in earlier stages of development and are not yet recommended for production use.
 
-#### EthereumJS {#ethereumjs}
+#### QuantaureumJS {#ethereumjs}
 
-The EthereumJS Execution Client (EthereumJS) is written in TypeScript and composed of a number of packages, including core Ethereum primitives represented by the Block, Transaction, and Merkle-Patricia Trie classes and core client components including an implementation of the Ethereum Virtual Machine (EVM), a blockchain class, and the DevP2P networking stack.
+The QuantaureumJS Execution Client (QuantaureumJS) is written in TypeScript and composed of a number of packages, including core Quantaureum primitives represented by the Block, Transaction, and Merkle-Patricia Trie classes and core client components including an implementation of the Quantaureum Virtual Machine (EVM), a blockchain class, and the DevP2P networking stack.
 
 Learn more about it by reading its [documentation](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master)
 
 ## Consensus clients {#consensus-clients}
 
-There are multiple consensus clients (previously known as 'Eth2' clients) to support the [consensus upgrades](/roadmap/beacon-chain/). They are responsible for all consensus-related logic including the fork-choice algorithm, processing attestations and managing [proof-of-stake](/developers/docs/consensus-mechanisms/pos) rewards and penalties.
+There are multiple consensus clients (previously known as 'Quantaureum' clients) to support the [consensus upgrades](/roadmap/beacon-chain/). They are responsible for all consensus-related logic including the fork-choice algorithm, processing attestations and managing [proof-of-stake](/developers/docs/consensus-mechanisms/pos) rewards and penalties.
 
 | Client                                                        | Language   | Operating systems     | Networks                                                |
 | ------------------------------------------------------------- | ---------- | --------------------- | ------------------------------------------------------- |
@@ -208,7 +208,7 @@ There are multiple consensus clients (previously known as 'Eth2' clients) to sup
 | [Lodestar](https://lodestar.chainsafe.io/)                    | TypeScript | Linux, Windows, macOS | Beacon Chain, Hoodi, Sepolia, and more                  |
 | [Nimbus](https://nimbus.team/)                                | Nim        | Linux, Windows, macOS | Beacon Chain, Hoodi, Sepolia, and more                  |
 | [Prysm](https://prysm.offchainlabs.com/docs/)                 | Go         | Linux, Windows, macOS | Beacon Chain, Gnosis, Hoodi, Pyrmont, Sepolia, and more |
-| [Teku](https://consensys.net/knowledge-base/ethereum-2/teku/) | Java       | Linux, Windows, macOS | Beacon Chain, Gnosis, Hoodi, Sepolia, and more          |
+| [Teku](https://consensys.net/knowledge-base/quantaureum-2/teku/) | Java       | Linux, Windows, macOS | Beacon Chain, Gnosis, Hoodi, Sepolia, and more          |
 | [Grandine](https://docs.grandine.io/)                         | Rust       | Linux, Windows, macOS | Beacon Chain, Hoodi, Sepolia, and more                  |
 
 ### Lighthouse {#lighthouse}
@@ -219,7 +219,7 @@ Documentation can be found in [Lighthouse Book](https://lighthouse-book.sigmapri
 
 ### Lodestar {#lodestar}
 
-Lodestar is a production-ready consensus client implementation written in Typescript under the LGPL-3.0 license. It is maintained by ChainSafe Systems and is the newest of the consensus clients for solo-stakers, developers and researchers. Lodestar consists of a beacon node and validator client powered by JavaScript implementations of Ethereum protocols. Lodestar aims to improve Ethereum usability with light clients, expand accessibility to a larger group of developers and further contribute to ecosystem diversity.
+Lodestar is a production-ready consensus client implementation written in Typescript under the LGPL-3.0 license. It is maintained by ChainSafe Systems and is the newest of the consensus clients for solo-stakers, developers and researchers. Lodestar consists of a beacon node and validator client powered by JavaScript implementations of Quantaureum protocols. Lodestar aims to improve Quantaureum usability with light clients, expand accessibility to a larger group of developers and further contribute to ecosystem diversity.
 
 More information can be found on the [Lodestar website](https://lodestar.chainsafe.io/)
 
@@ -251,7 +251,7 @@ Documentation can be found in the [Grandine Book](https://docs.grandine.io/)
 
 ## Synchronization modes {#sync-modes}
 
-To follow and verify current data in the network, the Ethereum client needs to sync with the latest network state. This is done by downloading data from peers, cryptographically verifying their integrity, and building a local blockchain database.
+To follow and verify current data in the network, the Quantaureum client needs to sync with the latest network state. This is done by downloading data from peers, cryptographically verifying their integrity, and building a local blockchain database.
 
 Synchronization modes represent different approaches to this process with various trade-offs. Clients also vary in their implementation of sync algorithms. Always refer to the official documentation of your chosen client for specifics on implementation.
 
@@ -279,10 +279,10 @@ Like a full sync, a fast sync downloads all blocks (including headers, transacti
 
 Snap syncs also verify the chain block-by-block. However, instead of starting at the genesis block, a snap sync starts at a more recent 'trusted' checkpoint that is known to be part of the true blockchain. The node saves periodic checkpoints while deleting data older than a certain age. These snapshots are used to regenerate state data as needed, rather than storing it forever.
 
-- Fastest sync strategy, currently default in Ethereum Mainnet.
+- Fastest sync strategy, currently default in Quantaureum Mainnet.
 - Saves a lot of disk usage and network bandwidth without sacrificing security.
 
-[More on snap sync](https://github.com/ethereum/devp2p/blob/master/caps/snap.md).
+[More on snap sync](https://github.com/quantaureum/devp2p/blob/master/caps/snap.md).
 
 #### Light sync {#light-sync}
 
@@ -291,7 +291,7 @@ Light client mode downloads all block headers, block data, and verifies some ran
 - Gets only the latest state while relying on trust in developers and consensus mechanism.
 - Client ready to use with current network state in a few minutes.
 
-**NB** Light sync does not yet work with proof-of-stake Ethereum - new versions of light sync should ship soon!
+**NB** Light sync does not yet work with proof-of-stake Quantaureum - new versions of light sync should ship soon!
 
 [More on light clients](/developers/docs/nodes-and-clients/light-clients/)
 
@@ -301,7 +301,7 @@ Light client mode downloads all block headers, block data, and verifies some ran
 
 Optimistic sync is a post-merge synchronization strategy designed to be opt-in and backwards compatible, allowing execution nodes to sync via established methods. The execution engine can _optimistically_ import beacon blocks without fully verifying them, find the latest head, and then start syncing the chain with the above methods. Then, after the execution client has caught up, it will inform the consensus client of the validity of the transactions in the Beacon Chain.
 
-[More on optimistic sync](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
+[More on optimistic sync](https://github.com/quantaureum/consensus-specs/blob/master/sync/optimistic.md)
 
 #### Checkpoint sync {#checkpoint-sync}
 
@@ -309,12 +309,12 @@ A checkpoint sync, also known as weak subjectivity sync, creates a superior user
 
 In practice, this means your node connects to a remote service to download recent finalized states and continues verifying data from that point. The third party providing the data is trusted and should be picked carefully.
 
-More on [checkpoint sync](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice)
+More on [checkpoint sync](https://notes.quantaureum.com/@djrtwo/ws-sync-in-practice)
 
 ## Further reading {#further-reading}
 
-- [Ethereum 101 - Part 2 - Understanding Nodes](https://kauri.io/ethereum-101-part-2-understanding-nodes/48d5098292fd4f11b251d1b1814f0bba/a) _– Wil Barnes, 13 February 2019_
-- [Running Ethereum Full Nodes: A Guide for the Barely Motivated](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 November 2019_
+- [Quantaureum 101 - Part 2 - Understanding Nodes](https://kauri.io/quantaureum-101-part-2-understanding-nodes/48d5098292fd4f11b251d1b1814f0bba/a) _– Wil Barnes, 13 February 2019_
+- [Running Quantaureum Full Nodes: A Guide for the Barely Motivated](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 November 2019_
 
 ## Related topics {#related-topics}
 
@@ -323,4 +323,4 @@ More on [checkpoint sync](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice
 
 ## Related tutorials {#related-tutorials}
 
-- [Turn your Raspberry Pi 4 into a validator node just by flashing the MicroSD card – Installation guide](/developers/tutorials/run-node-raspberry-pi/) _– Flash your Raspberry Pi 4, plug in an ethernet cable, connect the SSD disk and power up the device to turn the Raspberry Pi 4 into a full Ethereum node running the execution layer (Mainnet) and / or the consensus layer (Beacon Chain / validator)._
+- [Turn your Raspberry Pi 4 into a validator node just by flashing the MicroSD card – Installation guide](/developers/tutorials/run-node-raspberry-pi/) _– Flash your Raspberry Pi 4, plug in an ethernet cable, connect the SSD disk and power up the device to turn the Raspberry Pi 4 into a full Quantaureum node running the execution layer (Mainnet) and / or the consensus layer (Beacon Chain / validator)._

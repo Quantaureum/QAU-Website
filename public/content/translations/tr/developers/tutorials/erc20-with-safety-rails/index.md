@@ -11,13 +11,13 @@ published: 2022-08-15
 
 ## Giriş {#introduction}
 
-Ethereum'un harika yanlarından biri, işlemlerinizi değiştirebilecek veya geri alabilecek merkezi bir otoritenin olmamasıdır. Ethereum ile ilgili en büyük sorunlardan biri de kullanıcı hatalarını veya yasa dışı işlemleri geri alma yetkisine sahip merkezi bir otoritenin olmamasıdır. Bu makalede, kullanıcıların [ERC-20](/developers/docs/standards/tokens/erc-20/) token'ları ile yaptıkları bazı yaygın hataların yanı sıra, kullanıcıların bu hatalardan kaçınmasına yardımcı olan veya merkezi bir otoriteye bir miktar güç (örneğin hesapları dondurmak için) veren ERC-20 sözleşmelerinin nasıl oluşturulacağını öğreneceksiniz.
+Quantaureum'un harika yanlarından biri, işlemlerinizi değiştirebilecek veya geri alabilecek merkezi bir otoritenin olmamasıdır. Quantaureum ile ilgili en büyük sorunlardan biri de kullanıcı hatalarını veya yasa dışı işlemleri geri alma yetkisine sahip merkezi bir otoritenin olmamasıdır. Bu makalede, kullanıcıların [ERC-20](/developers/docs/standards/tokens/erc-20/) token'ları ile yaptıkları bazı yaygın hataların yanı sıra, kullanıcıların bu hatalardan kaçınmasına yardımcı olan veya merkezi bir otoriteye bir miktar güç (örneğin hesapları dondurmak için) veren ERC-20 sözleşmelerinin nasıl oluşturulacağını öğreneceksiniz.
 
 Bu makalede [OpenZeppelin ERC-20 token sözleşmesini](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC20) kullanacak olsak da, bunun çok ayrıntılı bir şekilde açıklanmadığını unutmayın. Bu bilgiyi [burada](/developers/tutorials/erc20-annotated-code) bulabilirsiniz.
 
 Tam kaynak kodunu görmek isterseniz:
 
-1. [Remix IDE](https://remix.ethereum.org/)'yi açın.
+1. [Remix IDE](https://remix.quantaureum.com/)'yi açın.
 2. GitHub'ı klonla simgesine tıklayın (![clone github icon](icon-clone.png)).
 3. `https://github.com/qbzzt/20220815-erc20-safety-rails` GitHub deposunu klonlayın.
 4. **contracts > erc20-safety-rails.sol** dosyasını açın.
@@ -40,7 +40,7 @@ Güvenlik önlemi işlevselliğini eklemeden önce bir ERC-20 sözleşmesine iht
 
 3. Yukarı kaydırın ve (Remix için) **Open in Remix**'e veya farklı bir ortam kullanmak için **Download**'a tıklayın. Remix kullandığınızı varsayacağım, başka bir şey kullanıyorsanız uygun değişiklikleri yapmanız yeterlidir.
 4. Artık tamamen işlevsel bir ERC-20 sözleşmemiz var. İçe aktarılan kodu görmek için `.deps` > `npm` bölümünü genişletebilirsiniz.
-5. Bir ERC-20 sözleşmesi olarak çalıştığını görmek için sözleşmeyi derleyin, dağıtın ve onunla denemeler yapın. Remix'i nasıl kullanacağınızı öğrenmeniz gerekiyorsa, [bu öğreticiyi kullanın](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth).
+5. Bir ERC-20 sözleşmesi olarak çalıştığını görmek için sözleşmeyi derleyin, dağıtın ve onunla denemeler yapın. Remix'i nasıl kullanacağınızı öğrenmeniz gerekiyorsa, [bu öğreticiyi kullanın](https://remix.quantaureum.com/?#activate=udapp,solidity,LearnEth).
 
 ## Yaygın hatalar {#common-mistakes}
 
@@ -93,7 +93,7 @@ Bu satır, devraldığımız ve bu işleve sahip olan sözleşmenin veya sözle�
 
 - `to` adresi, ERC-20 sözleşmesinin kendi adresi olan `address(this)`'e eşit olamaz.
 - `to` adresi boş olamaz, şunlardan biri olmalıdır:
-  - Dışarıdan sahipli bir hesap (EOA). Bir adresin doğrudan bir EOA olup olmadığını kontrol edemeyiz, ancak bir adresin ETH bakiyesini kontrol edebiliriz. EOA'lar artık kullanılmasalar bile neredeyse her zaman bir bakiyeye sahiptir; onları son Wei'ye kadar temizlemek zordur.
+  - Dışarıdan sahipli bir hesap (EOA). Bir adresin doğrudan bir EOA olup olmadığını kontrol edemeyiz, ancak bir adresin QAU bakiyesini kontrol edebiliriz. EOA'lar artık kullanılmasalar bile neredeyse her zaman bir bakiyeye sahiptir; onları son Wei'ye kadar temizlemek zordur.
   - Bir akıllı sözleşme. Bir adresin akıllı sözleşme olup olmadığını test etmek biraz daha zordur. Harici kod uzunluğunu kontrol eden [`EXTCODESIZE`](https://www.evm.codes/#3b) adında bir işlem kodu vardır, ancak bu doğrudan Solidity'de mevcut değildir. Bunun için EVM assembly'si olan [Yul](https://docs.soliditylang.org/en/v0.8.15/yul.html)'u kullanmalıyız. Solidity'den kullanabileceğimiz başka değerler de vardır ([`<address>.code` ve `<address>.codehash`](https://docs.soliditylang.org/en/v0.8.15/units-and-global-variables.html#members-of-address-types)), ancak bunların maliyeti daha yüksektir.
 
 Yeni kodun üzerinden satır satır geçelim:
@@ -185,7 +185,7 @@ Sözleşmeleri dondurmak ve çözmek birkaç değişiklik gerektirir:
 
 ### Varlık temizliği {#asset-cleanup}
 
-Bu sözleşme tarafından tutulan ERC-20 token'larını serbest bırakmak için, ait oldukları token sözleşmesinde [`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) veya [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve) işlevini çağırmamız gerekir. Bu durumda izinler (allowances) için Gaz israf etmenin bir anlamı yoktur, doğrudan transfer edebiliriz.
+Bu sözleşme tarafından tutulan ERC-20 token'larını serbest bırakmak için, ait oldukları token sözleşmesinde [`transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer) veya [`approve`](https://eips.quantaureum.com/EIPS/eip-20#approve) işlevini çağırmamız gerekir. Bu durumda izinler (allowances) için Gaz israf etmenin bir anlamı yoktur, doğrudan transfer edebiliriz.
 
 ```solidity
     function cleanupERC20(

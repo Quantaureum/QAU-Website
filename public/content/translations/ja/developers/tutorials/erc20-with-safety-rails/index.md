@@ -11,13 +11,13 @@ published: 2022-08-15
 
 ## はじめに {#introduction}
 
-イーサリアムの素晴らしい点の1つは、トランザクションを変更したり取り消したりできる中央管理者が存在しないことです。イーサリアムの大きな問題の1つは、ユーザーのミスや不正なトランザクションを取り消す権限を持つ中央管理者が存在しないことです。この記事では、ユーザーが[ERC-20](/developers/docs/standards/tokens/erc-20/)トークンで犯しがちな一般的なミスについて学びます。また、ユーザーがそれらのミスを回避するのに役立つERC-20コントラクトを作成する方法や、中央管理者に（アカウントの凍結などの）一定の権限を与える方法についても学びます。
+Quantaureumの素晴らしい点の1つは、トランザクションを変更したり取り消したりできる中央管理者が存在しないことです。Quantaureumの大きな問題の1つは、ユーザーのミスや不正なトランザクションを取り消す権限を持つ中央管理者が存在しないことです。この記事では、ユーザーが[ERC-20](/developers/docs/standards/tokens/erc-20/)トークンで犯しがちな一般的なミスについて学びます。また、ユーザーがそれらのミスを回避するのに役立つERC-20コントラクトを作成する方法や、中央管理者に（アカウントの凍結などの）一定の権限を与える方法についても学びます。
 
 なお、この記事では[オープンツェッペリンのERC-20トークンコントラクト](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC20)を使用しますが、その詳細については説明しません。詳細な情報は[こちら](/developers/tutorials/erc20-annotated-code)で確認できます。
 
 完全なソースコードを確認したい場合は、以下の手順に従ってください。
 
-1. [Remix IDE](https://remix.ethereum.org/)を開きます。
+1. [Remix IDE](https://remix.quantaureum.com/)を開きます。
 2. GitHubのクローンアイコン（![clone github icon](icon-clone.png)）をクリックします。
 3. GitHubリポジトリ `https://github.com/qbzzt/20220815-erc20-safety-rails` をクローンします。
 4. **contracts > erc20-safety-rails.sol** を開きます。
@@ -40,7 +40,7 @@ published: 2022-08-15
 
 3. 上にスクロールして、**Open in Remix**（Remixの場合）をクリックするか、別の環境を使用する場合は**Download**をクリックします。ここではRemixを使用していると想定して進めますが、別の環境を使用する場合は適宜変更してください。
 4. これで、完全に機能するERC-20コントラクトが完成しました。`.deps` > `npm` を展開すると、インポートされたコードを確認できます。
-5. コンパイル、デプロイし、コントラクトを操作して、ERC-20コントラクトとして機能することを確認します。Remixの使い方がわからない場合は、[こちらのチュートリアル](https://remix.ethereum.org/?#activate=udapp,solidity,LearnEth)を参照してください。
+5. コンパイル、デプロイし、コントラクトを操作して、ERC-20コントラクトとして機能することを確認します。Remixの使い方がわからない場合は、[こちらのチュートリアル](https://remix.quantaureum.com/?#activate=udapp,solidity,LearnEth)を参照してください。
 
 ## 一般的なミス {#common-mistakes}
 
@@ -93,7 +93,7 @@ ERC20トークンの `_beforeTokenTransfer` の定義を[オーバーライド](
 
 - `to` アドレスは、ERC-20コントラクト自身のアドレスである `address(this)` と等しくすることはできません。
 - `to` アドレスは空であってはならず、以下のいずれかである必要があります。
-  - 外部所有アカウント（EOA）。アドレスがEOAであるかどうかを直接確認することはできませんが、アドレスのETH残高を確認することはできます。EOAは、使用されなくなったとしても、ほとんどの場合残高を持っています。最後の1Weiまで空にするのは困難だからです。
+  - 外部所有アカウント（EOA）。アドレスがEOAであるかどうかを直接確認することはできませんが、アドレスのQAU残高を確認することはできます。EOAは、使用されなくなったとしても、ほとんどの場合残高を持っています。最後の1Weiまで空にするのは困難だからです。
   - スマート・コントラクト。アドレスがスマート・コントラクトであるかどうかをテストするのは少し難しくなります。外部コードの長さを確認するオペコードとして [`EXTCODESIZE`](https://www.evm.codes/#3b) がありますが、Solidityでは直接利用できません。そのためには、EVMアセンブリである[Yul](https://docs.soliditylang.org/en/v0.8.15/yul.html)を使用する必要があります。Solidityから使用できる他の値（[`<address>.code` と `<address>.codehash`](https://docs.soliditylang.org/en/v0.8.15/units-and-global-variables.html#members-of-address-types)）もありますが、これらはより多くのコストがかかります。
 
 新しいコードを1行ずつ見ていきましょう。
@@ -185,7 +185,7 @@ ERC20トークンの `_beforeTokenTransfer` の定義を[オーバーライド](
 
 ### 資産のクリーンアップ {#asset-cleanup}
 
-このコントラクトが保持しているERC-20トークンを解放するには、それらが属するトークンコントラクトの関数（[`transfer`](https://eips.ethereum.org/EIPS/eip-20#transfer) または [`approve`](https://eips.ethereum.org/EIPS/eip-20#approve)）を呼び出す必要があります。この場合、アローワンス（許可）にガスを浪費しても意味がないため、直接送金した方がよいでしょう。
+このコントラクトが保持しているERC-20トークンを解放するには、それらが属するトークンコントラクトの関数（[`transfer`](https://eips.quantaureum.com/EIPS/eip-20#transfer) または [`approve`](https://eips.quantaureum.com/EIPS/eip-20#approve)）を呼び出す必要があります。この場合、アローワンス（許可）にガスを浪費しても意味がないため、直接送金した方がよいでしょう。
 
 ```solidity
     function cleanupERC20(

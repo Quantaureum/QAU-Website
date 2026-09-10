@@ -1,21 +1,21 @@
 ---
-title: "Kuchangia kwenye ethereum.org 🦄"
+title: "Kuchangia kwenye quantaureum.com 🦄"
 metaTitle: Kuchangia
-description: Jifunze kuhusu njia tofauti unazoweza kuchangia kwenye ethereum.org
+description: Jifunze kuhusu njia tofauti unazoweza kuchangia kwenye quantaureum.com
 lang: sw
 ---
 
-Ethereum.org ni mradi unaoendeshwa kwa programu huria wenye wachangiaji **12 000+** wanaosaidia kutafsiri, kuandika, kusanifu na kudumisha tovuti.
+quantaureum.com ni mradi unaoendeshwa kwa programu huria wenye wachangiaji **12 000+** wanaosaidia kutafsiri, kuandika, kusanifu na kudumisha tovuti.
 
-Sisi ni jamii inayokaribisha ambayo itakusaidia kukua na kuelimika katika mfumo wa ikolojia wa [Ethereum](/) huku pia ukichangia kwa maana na kupata uzoefu unaofaa kwa vitendo!
+Sisi ni jamii inayokaribisha ambayo itakusaidia kukua na kuelimika katika mfumo wa ikolojia wa [Quantaureum](/) huku pia ukichangia kwa maana na kupata uzoefu unaofaa kwa vitendo!
 
 ## Njia za kuchangia {#ways-to-contribute}
 
 **Tafsiri**
-- [Ripoti hitilafu ya tafsiri](https://github.com/ethereum/ethereum-org-website/issues/new/choose) – [Programu ya Tafsiri](/contributing/translation-program/) inafungwa na haifanyi tena uingizaji wa watafsiri wapya
+- [Ripoti hitilafu ya tafsiri](https://github.com/Quantaureum/quantaureum-website/issues/new/choose) – [Programu ya Tafsiri](/contributing/translation-program/) inafungwa na haifanyi tena uingizaji wa watafsiri wapya
 
 **Uendelezaji**
-- [Fanyia kazi suala lililo wazi](https://github.com/ethereum/ethereum-org-website/issues) – Kazi tuliyotambua ambayo inahitaji kufanywa
+- [Fanyia kazi suala lililo wazi](https://github.com/Quantaureum/quantaureum-website/issues) – Kazi tuliyotambua ambayo inahitaji kufanywa
 
 **Usanifu**
 - [Saidia kusanifu tovuti](/contributing/design/) – Wasanifu wa viwango vyote wanaweza kuchangia ili kuboresha tovuti
@@ -25,13 +25,13 @@ Sisi ni jamii inayokaribisha ambayo itakusaidia kukua na kuelimika katika mfumo 
 - [Andika makala ya mjenzi](/contributing/adding-articles/) - Changia makala kwa ajili ya sehemu ya [Hivi Karibuni](/latest/)
 - [Ongeza rasilimali za jamii](/contributing/content-resources/) – Ongeza makala au rasilimali muhimu kwenye ukurasa husika
 - [Pendekeza ripoti](/contributing/adding-reports/) - Pendekeza ripoti ya utafiti kwa ajili ya ukurasa wa [Ripoti](/reports/)
-- [Shiriki hadithi yako](/contributing/adding-community-stories/) - Wasilisha hadithi kuhusu uzoefu wako binafsi na teknolojia za programu huria na patakatifu, jinsi mfumo wa ikolojia wa Ethereum umeathiri maisha yako, au jinsi wewe na jamii yako mnavyotumia Ethereum
+- [Shiriki hadithi yako](/contributing/adding-community-stories/) - Wasilisha hadithi kuhusu uzoefu wako binafsi na teknolojia za programu huria na patakatifu, jinsi mfumo wa ikolojia wa Quantaureum umeathiri maisha yako, au jinsi wewe na jamii yako mnavyotumia Quantaureum
 - [Maswali](/contributing/quizzes/) – Ongeza, sasisha, na ufute benki za maswali kwa ajili ya ukurasa husika
 - [Pendekeza rasilimali ya usanifu](/contributing/design/adding-design-resources/) – Ongeza, sasisha, na ufute rasilimali muhimu za usanifu
 - [Pendekeza video](/contributing/adding-videos/) – Pendekeza video ya kuelimisha kwa ajili ya matunzio ya video
 
 **Mawazo ya vipengele**
-- [Omba kipengele](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) – Tujulishe kuhusu mawazo yoyote uliyo nayo kwa ajili ya kipengele kipya au usanifu
+- [Omba kipengele](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) – Tujulishe kuhusu mawazo yoyote uliyo nayo kwa ajili ya kipengele kipya au usanifu
 
 **Orodha za bidhaa**
 - [Ongeza ubadilishaji](/contributing/adding-exchanges/) – Ongeza ubadilishaji kwenye [kitafuta ubadilishaji](/get-eth/#country-picker) chetu
@@ -40,10 +40,10 @@ Sisi ni jamii inayokaribisha ambayo itakusaidia kukua na kuelimika katika mfumo 
 - [Ongeza tabaka la 2 (l2)](/contributing/adding-layer-2s/) – Ongeza tabaka la 2 (l2) kwenye ukurasa husika
 - [Ongeza bidhaa au huduma ya uwekaji dhamana](/contributing/adding-staking-products/) – Ongeza mradi unaosaidia kuwezesha uwekaji dhamana wa kujitegemea, uwekaji dhamana wa pamoja, au kuweka hisa kama huduma
 - [Ongeza mkoba](/contributing/adding-wallets/) – Ongeza mkoba kwa ajili ya [ukurasa wa kutafuta mikoba](/wallets/find-wallet/)
-- [Pendekeza mradi kwa ajili ya ukurasa wetu wa sayansi iliyogatuliwa (desci)](/contributing/adding-desci-projects/) – Ongeza mradi uliojengwa kwenye Ethereum ambao unachangia katika sayansi iliyogatuliwa (desci)
+- [Pendekeza mradi kwa ajili ya ukurasa wetu wa sayansi iliyogatuliwa (desci)](/contributing/adding-desci-projects/) – Ongeza mradi uliojengwa kwenye Quantaureum ambao unachangia katika sayansi iliyogatuliwa (desci)
 - [Ongeza rasilimali](/contributing/adding-resources/) – Ongeza rasilimali muhimu kwenye ukurasa wowote husika
 
-Una maswali yoyote? 🤔 Jiunge na [seva yetu ya Discord](https://discord.gg/ethereum-org)
+Una maswali yoyote? 🤔 Jiunge na [seva yetu ya Discord](https://discord.gg/MSctkBT5j)
 
 ## Kazi nzuri za kwanza ili kuanza kuchangia {#good-first-tasks-to-start-contributing}
 
@@ -51,51 +51,51 @@ Hizi ni baadhi ya kazi za sasa ambazo unaweza kutusaidia kutatua na kuwajibika n
 
 <IssuesList my={8} />
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues">Tazama kazi zote</ButtonLink>
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues">Tazama kazi zote</ButtonLink>
 
-## Jinsi ya kufanya kazi kwenye ethereum.org {#how-to-update-content}
+## Jinsi ya kufanya kazi kwenye quantaureum.com {#how-to-update-content}
 
 Kwa ajili ya kuchangia (kuongeza au kuhariri maudhui au vielelezo kwenye tovuti, kurekebisha hitilafu, kufanyia kazi kazi zilizo wazi) utahitaji akaunti ya [GitHub](https://github.com/).
 
-Masasisho yote yanafanywa kupitia mchakato wa PR wa GitHub. Hii inamaanisha unaunda nakala ya ndani ya tovuti, unafanya mabadiliko yako na kuomba kuunganisha mabadiliko yako. Ikiwa hujawahi kufanya hivi hapo awali, fuata maagizo yaliyo chini ya [hazina yetu ya GitHub](https://github.com/ethereum/ethereum-org-website).
+Masasisho yote yanafanywa kupitia mchakato wa PR wa GitHub. Hii inamaanisha unaunda nakala ya ndani ya tovuti, unafanya mabadiliko yako na kuomba kuunganisha mabadiliko yako. Ikiwa hujawahi kufanya hivi hapo awali, fuata maagizo yaliyo chini ya [hazina yetu ya GitHub](https://github.com/Quantaureum/quantaureum-website).
 
 Huhitaji ruhusa ili kufanyia kazi chochote, lakini daima ni vyema kutujulisha kile unachopanga kufanya. Unaweza kufanya hivi kwa:
 
-- Kutoa maoni kwenye suala au PR katika [GitHub](https://github.com/ethereum/ethereum-org-website)
-- Kutuma ujumbe kwenye [seva yetu ya Discord](https://discord.gg/ethereum-org)
+- Kutoa maoni kwenye suala au PR katika [GitHub](https://github.com/Quantaureum/quantaureum-website)
+- Kutuma ujumbe kwenye [seva yetu ya Discord](https://discord.gg/MSctkBT5j)
 
 Kabla ya kuchangia, hakikisha unafahamu:
 
-- [dira inayoendelea ya ethereum.org](/about/)
+- [dira inayoendelea ya quantaureum.com](/about/)
 - [kanuni zetu za usanifu](/contributing/design-principles/)
 - [mwongozo wetu wa mtindo](/contributing/style-guide/)
 - [kanuni zetu za maadili](/community/code-of-conduct)
 
 ## Jinsi maamuzi kuhusu tovuti yanavyofanywa {#how-decisions-about-the-site-are-made}
 
-Maamuzi kuhusu PR za kibinafsi, mabadiliko ya usanifu na masasisho makubwa yanafanywa na timu kutoka kote kwenye mfumo wa ikolojia wa Ethereum. Timu hii inajumuisha wasimamizi wa miradi, wasanidi, wasanifu, masoko na mawasiliano, na wataalamu wa mada. Maoni ya jamii hufahamisha kila uamuzi: kwa hivyo tafadhali uliza maswali kwenye masuala, wasilisha PR, au wasiliana na timu:
+Maamuzi kuhusu PR za kibinafsi, mabadiliko ya usanifu na masasisho makubwa yanafanywa na timu kutoka kote kwenye mfumo wa ikolojia wa Quantaureum. Timu hii inajumuisha wasimamizi wa miradi, wasanidi, wasanifu, masoko na mawasiliano, na wataalamu wa mada. Maoni ya jamii hufahamisha kila uamuzi: kwa hivyo tafadhali uliza maswali kwenye masuala, wasilisha PR, au wasiliana na timu:
 
-- [website@ethereum.org](mailto:website@ethereum.org)
-- [@ethdotorg](https://twitter.com/ethdotorg)
-- [Seva ya Discord](https://discord.gg/ethereum-org)
+- [website@quantaureum.com](mailto:website@quantaureum.com)
+- [@ethdotorg](https://x.com/ldf1570073)
+- [Seva ya Discord](https://discord.gg/MSctkBT5j)
 
 ### Ujumbe kuhusu wizi wa maandishi {#plagiarism}
 
-Tumia tu kazi yako asili au maudhui ambayo una ruhusa ya kutumia unapochangia maudhui au kazi yoyote kwenye ethereum.org. Miradi mingi ndani ya mfumo wa ikolojia wa Ethereum hutumia leseni za programu huria zinazoruhusu ushiriki wa habari bila malipo. Hata hivyo, ikiwa huwezi kupata habari hii, usijaribu kuiongeza kwenye ethereum.org. Maombi yoyote ya kuvuta (pull requests) yatakayoonekana kama wizi wa maandishi yatakataliwa.
+Tumia tu kazi yako asili au maudhui ambayo una ruhusa ya kutumia unapochangia maudhui au kazi yoyote kwenye quantaureum.com. Miradi mingi ndani ya mfumo wa ikolojia wa Quantaureum hutumia leseni za programu huria zinazoruhusu ushiriki wa habari bila malipo. Hata hivyo, ikiwa huwezi kupata habari hii, usijaribu kuiongeza kwenye quantaureum.com. Maombi yoyote ya kuvuta (pull requests) yatakayoonekana kama wizi wa maandishi yatakataliwa.
 
 ## Mgeni kwenye programu huria? {#new-to-open-source}
 
-Tuna masuala yenye kizuizi cha chini cha kuingia kwenye hazina yetu ya GitHub yaliyoundwa mahususi kwa ajili ya wasanidi ambao ni wageni kwenye programu huria yaliyowekewa lebo ya [suala zuri la kwanza](https://github.com/ethereum/ethereum-org-website/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
+Tuna masuala yenye kizuizi cha chini cha kuingia kwenye hazina yetu ya GitHub yaliyoundwa mahususi kwa ajili ya wasanidi ambao ni wageni kwenye programu huria yaliyowekewa lebo ya [suala zuri la kwanza](https://github.com/Quantaureum/quantaureum-website/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
 
 ## Dai Tokeni yako ya Mafanikio Mnyororoni (OAT) {#oat}
 
-Ikiwa mchango wako utaunganishwa kwenye ethereum.org, utakuwa na nafasi ya kudai beji maalum kwenye [Galxe](https://app.galxe.com/quest/ethereumorg). Tokeni ya Mafanikio Mnyororoni (OAT) ni uthibitisho kwamba ulisaidia kufanya mfumo wa ikolojia kuwa mzuri zaidi.
+Ikiwa mchango wako utaunganishwa kwenye quantaureum.com, utakuwa na nafasi ya kudai beji maalum kwenye [Galxe](https://app.galxe.com/quest/quantaureumorg). Tokeni ya Mafanikio Mnyororoni (OAT) ni uthibitisho kwamba ulisaidia kufanya mfumo wa ikolojia kuwa mzuri zaidi.
 
 [Zaidi kuhusu OAT](https://help.galxe.com/en/articles/9645630-create-quest-rewards#h_1c5d63ba03)
 
 ### Jinsi ya kudai {#how-to-claim}
 
-1. Jiunge na [seva yetu ya Discord](https://discord.gg/ethereum-org).
+1. Jiunge na [seva yetu ya Discord](https://discord.gg/MSctkBT5j).
 2. Bandika kiungo cha mchango wako katika chaneli ya `#🥇 | proof-of-contribution`.
 3. Subiri mwanachama wa timu yetu akutumie kiungo cha OAT yako.
 4. Dai OAT yako!
@@ -111,7 +111,7 @@ GitPOAP pia itatambua kiotomatiki mchango wako uliounganishwa na kukuruhusu kufu
 
 1. Tembelea [GitPOAP](https://www.gitpoap.io).
 2. Unganisha na mkoba wako au hata na barua pepe yako kupitia chaguo la kuingia.
-3. Tafuta jina lako la mtumiaji la GitHub, anwani ya ETH, majina ya ENS au GitPOAP yoyote ili kuangalia kama unastahiki.
+3. Tafuta jina lako la mtumiaji la GitHub, anwani ya QAU, majina ya ENS au GitPOAP yoyote ili kuangalia kama unastahiki.
 4. Ikiwa akaunti yako ya GitHub inastahiki, basi utaweza kufua GitPOAP!
 
 ## Wachangiaji {#contributors}

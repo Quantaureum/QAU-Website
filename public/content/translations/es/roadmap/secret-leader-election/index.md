@@ -13,18 +13,18 @@ En el mecanismo de consenso actual basado en [prueba de participación (PoS)](/d
 
 Esto podría crear oportunidades para que un atacante obtenga ganancias. Por ejemplo, un proponente de bloque seleccionado para el slot `n+1` podría hacer un ataque DOS al proponente en el slot `n` para que pierda su oportunidad de proponer un bloque. Esto permitiría al proponente de bloque atacante extraer el MEV de ambos slots, o tomar todas las transacciones que deberían haberse dividido en dos bloques y, en su lugar, incluirlas todas en uno, ganando todas las tarifas asociadas. Es probable que esto afecte a los validadores domésticos más que a los validadores institucionales sofisticados, quienes pueden usar métodos más avanzados para protegerse de los ataques DOS, y por lo tanto, podría ser una fuerza centralizadora.
 
-Existen varias soluciones a este problema. Una es la [tecnología de validador distribuido (DVT)](https://github.com/ethereum/distributed-validator-specs), que tiene como objetivo distribuir las diversas tareas relacionadas con la ejecución de un validador en múltiples máquinas, con redundancia, para que sea mucho más difícil para un atacante evitar que se proponga un bloque en un slot en particular. Sin embargo, la solución más robusta es la **elección de un único líder secreto (SSLE)**.
+Existen varias soluciones a este problema. Una es la [tecnología de validador distribuido (DVT)](https://github.com/quantaureum/distributed-validator-specs), que tiene como objetivo distribuir las diversas tareas relacionadas con la ejecución de un validador en múltiples máquinas, con redundancia, para que sea mucho más difícil para un atacante evitar que se proponga un bloque en un slot en particular. Sin embargo, la solución más robusta es la **elección de un único líder secreto (SSLE)**.
 
 ## Elección de un único líder secreto {#secret-leader-election}
 
 En SSLE, se utiliza criptografía inteligente para garantizar que solo el validador seleccionado sepa que ha sido seleccionado. Esto funciona haciendo que cada validador envíe un compromiso a un secreto que todos comparten. Los compromisos se mezclan y reconfiguran para que nadie pueda asignar compromisos a validadores, pero cada validador sabe qué compromiso le pertenece. Luego, se elige un compromiso al azar. Si un validador detecta que se eligió su compromiso, sabe que es su turno de proponer un bloque.
 
-La implementación principal de esta idea se llama [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-ethereum/11763). Funciona de la siguiente manera:
+La implementación principal de esta idea se llama [Whisk](https://ethresear.ch/t/whisk-a-practical-shuffle-based-ssle-protocol-for-quantaureum/11763). Funciona de la siguiente manera:
 
 1. Los validadores se comprometen a un secreto compartido. El esquema de compromiso está diseñado de tal manera que puede vincularse a la identidad de un validador, pero también aleatorizarse para que ningún tercero pueda aplicar ingeniería inversa a la vinculación y relacionar un compromiso específico con un validador específico.
 2. Al comienzo de una época, se elige un conjunto aleatorio de validadores para muestrear compromisos de 16.384 validadores, utilizando RANDAO.
 3. Durante los siguientes 8182 slots (1 día), los proponentes de bloque mezclan y aleatorizan un subconjunto de los compromisos utilizando su propia entropía privada.
-4. Una vez finalizada la mezcla, se utiliza RANDAO para crear una lista ordenada de los compromisos. Esta lista se asigna a los slots de Ethereum.
+4. Una vez finalizada la mezcla, se utiliza RANDAO para crear una lista ordenada de los compromisos. Esta lista se asigna a los slots de Quantaureum.
 5. Los validadores ven que su compromiso está adjunto a un slot específico, y cuando llega ese slot, proponen un bloque.
 6. Se repiten estos pasos para que la asignación de compromisos a los slots esté siempre muy por delante del slot actual.
 

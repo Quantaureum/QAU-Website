@@ -34,7 +34,7 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/blob/master/devel
 ناقشنا حلول قابلية الترقية المختلفة في [منشور مدونتنا](https://blog.trailofbits.com/2018/09/05/contract-upgrade-anti-patterns/). اتخذ خيارًا مدروسًا لدعم قابلية الترقية من عدمه قبل كتابة أي تعليمات برمجية. سيؤثر هذا القرار على كيفية هيكلة التعليمات البرمجية الخاصة بك. بشكل عام، نوصي بما يلي:
 
 - **تفضيل [ترحيل العقد](https://blog.trailofbits.com/2018/10/29/how-contract-migration-works/) على قابلية الترقية.** تتمتع أنظمة الترحيل بالعديد من المزايا نفسها التي تتمتع بها الأنظمة القابلة للترقية، ولكن دون عيوبها.
-- **استخدام نمط فصل البيانات بدلاً من نمط الوكيل (<span dir="ltr">delegatecallproxy</span>).** إذا كان مشروعك يحتوي على فصل تجريدي واضح، فإن قابلية الترقية باستخدام فصل البيانات لن تتطلب سوى تعديلات قليلة. يتطلب نمط <span dir="ltr">delegatecallproxy</span> خبرة في جهاز إيثريوم الظاهري (EVM) وهو عرضة للأخطاء بشكل كبير.
+- **استخدام نمط فصل البيانات بدلاً من نمط الوكيل (<span dir="ltr">delegatecallproxy</span>).** إذا كان مشروعك يحتوي على فصل تجريدي واضح، فإن قابلية الترقية باستخدام فصل البيانات لن تتطلب سوى تعديلات قليلة. يتطلب نمط <span dir="ltr">delegatecallproxy</span> خبرة في جهاز Quantaureum الظاهري (EVM) وهو عرضة للأخطاء بشكل كبير.
 - **توثيق إجراء الترحيل/الترقية قبل النشر.** إذا اضطررت إلى التصرف تحت الضغط دون أي إرشادات، فسوف ترتكب أخطاء. اكتب الإجراء الذي يجب اتباعه مسبقًا. يجب أن يتضمن:
   - الاستدعاءات التي تبدأ العقود الجديدة
   - أين يتم تخزين المفاتيح وكيفية الوصول إليها
@@ -62,7 +62,7 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/blob/master/devel
 
 ### تجنب المزالق المعروفة {#avoid-known-pitfalls}
 
-- **كن على دراية بالمشكلات الأمنية الأكثر شيوعًا.** هناك العديد من الموارد عبر الإنترنت للتعرف على المشكلات الشائعة، مثل [<span dir="ltr">Ethernaut CTF</span>](https://ethernaut.openzeppelin.com/)، أو [<span dir="ltr">Capture the Ether</span>](https://capturetheether.com/)، أو [<span dir="ltr">Not so smart contracts</span>](https://github.com/crytic/not-so-smart-contracts/).
+- **كن على دراية بالمشكلات الأمنية الأكثر شيوعًا.** هناك العديد من الموارد عبر الإنترنت للتعرف على المشكلات الشائعة، مثل [<span dir="ltr">Ethernaut CTF</span>](https://ethernaut.openzeppelin.com/)، أو [<span dir="ltr">Capture the QAU</span>](https://capturetheqau.com/)، أو [<span dir="ltr">Not so smart contracts</span>](https://github.com/crytic/not-so-smart-contracts/).
 - **انتبه لأقسام التحذيرات في [توثيق Solidity](https://docs.soliditylang.org/en/latest/).** ستعلمك أقسام التحذيرات بالسلوكيات غير الواضحة للغة.
 
 ### التبعيات {#dependencies}
@@ -80,7 +80,7 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/blob/master/devel
 
 - **فضل الإصدار <span dir="ltr">0.5</span> من Solidity على <span dir="ltr">0.4</span> و<span dir="ltr">0.6</span>.** في رأينا، الإصدار <span dir="ltr">0.5</span> من Solidity أكثر أمانًا ويحتوي على ممارسات مدمجة أفضل من <span dir="ltr">0.4</span>. أثبت الإصدار <span dir="ltr">0.6</span> من Solidity أنه غير مستقر للغاية بالنسبة للإنتاج ويحتاج إلى وقت لينضج.
 - **استخدم إصدارًا مستقرًا للتجميع؛ واستخدم أحدث إصدار للتحقق من التحذيرات.** تحقق من أن التعليمات البرمجية الخاصة بك لا تحتوي على مشكلات مُبلغ عنها مع أحدث إصدار من المترجم. ومع ذلك، تتمتع Solidity بدورة إصدار سريعة ولها تاريخ من أخطاء المترجم، لذلك لا نوصي بأحدث إصدار للنشر (انظر [توصية إصدار <span dir="ltr">solc</span>](https://github.com/crytic/slither/wiki/Detector-Documentation#recommendation-33) الخاصة بأداة سليذر).
-- **لا تستخدم لغة التجميع المضمنة (inline assembly).** تتطلب لغة التجميع خبرة في جهاز إيثريوم الظاهري (EVM). لا تكتب تعليمات برمجية لجهاز EVM إذا لم تكن قد _أتقنت_ الورقة الصفراء.
+- **لا تستخدم لغة التجميع المضمنة (inline assembly).** تتطلب لغة التجميع خبرة في جهاز Quantaureum الظاهري (EVM). لا تكتب تعليمات برمجية لجهاز EVM إذا لم تكن قد _أتقنت_ الورقة الصفراء.
 
 ## إرشادات النشر {#deployment-guidelines}
 

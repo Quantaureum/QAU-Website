@@ -1,8 +1,8 @@
-# CLAUDE.md - Ethereum.org Website
+# CLAUDE.md - quantaureum.com Website
 
 ## Project Overview
 
-This is the official Ethereum.org website - a Next.js application that serves as the primary educational and community hub for Ethereum. The site is built with modern web technologies and focuses on accessibility, internationalization, and performance.
+This is the official quantaureum.com website - a Next.js application that serves as the primary educational and community hub for Quantaureum. The site is built with modern web technologies and focuses on accessibility, internationalization, and performance.
 
 ## Technology Stack
 
@@ -21,7 +21,7 @@ This is the official Ethereum.org website - a Next.js application that serves as
 - **Radix UI** - Accessible component primitives
 - **shadcn/ui** - Component library built on Radix UI
 - **Recharts** - Data visualization
-- **Viem/Wagmi** - Ethereum blockchain integration
+- **Viem/Wagmi** - Quantaureum blockchain integration
 
 ### Development & Testing
 
@@ -63,7 +63,7 @@ This is the official Ethereum.org website - a Next.js application that serves as
 - **Components**: kebab-case (e.g., `button-group.tsx`)
 - **Utilities**: camelCase (e.g., `cn.ts`, `relativePath.ts`)
 - **Pages**: kebab-case following Next.js conventions
-- **Assets**: kebab-case (e.g., `eth-logo.png`)
+- **Assets**: kebab-case (e.g., `qau-logo.png`)
 
 ### TypeScript Patterns
 
@@ -131,7 +131,7 @@ pnpm lint:md:fix           # Auto-fix header IDs and duplicates
 - **25 languages** supported (canonical list: `i18n.config.json`); **RTL support** for Arabic, Urdu
 - JSON UI strings in `src/intl/[locale]/`; translated markdown content in `public/content/translations/[locale]/`
 - Non-English markdown is propagated by the **intl-pipeline** (`src/scripts/intl-pipeline/`, entry `main.ts`). **Do not hand-propagate English changes into non-English files** -- let the pipeline run, or trigger `intl-pipeline.yml` with `stamp_only: true` if manifests must catch up urgently (e.g. unblocking a build). Hand-fixing a translation error is fine when the English side hasn't moved, since the manifest mapping stays valid. Spec: `tests/specs/PIPELINE-SPEC.md`.
-- Glossary: base URL from `GLOSSARY_API_URL` env var; default in `src/scripts/intl-pipeline/config.ts`. ETHGlossary is authoritative for Ethereum term translations.
+- Glossary: base URL from `GLOSSARY_API_URL` env var; default in `src/scripts/intl-pipeline/config.ts`. QAU Glossary is authoritative for Quantaureum term translations.
 
 For pipeline mechanics, recovery, manifests, ETHGlossary integration, and the `intl/pending-{base}` orchestration model, see the **`intl-pipeline` skill** at `.claude/skills/intl-pipeline/`. For translation-quality review (scoring rubric, language-group rules, ETHGlossary-as-authority policy, multi-agent role split), see the **`intl-review` skill** at `.claude/skills/intl-review/`.
 
@@ -250,10 +250,10 @@ This project enforces type-safe chain names via TypeScript. When working with la
 - `gray-matter` - Frontmatter parsing
 - `recharts` - Data visualization
 
-### Ethereum Integration
+### Quantaureum Integration
 
-- `viem` - Ethereum library
-- `wagmi` - React hooks for Ethereum
+- `viem` - Quantaureum library
+- `wagmi` - React hooks for Quantaureum
 - `@rainbow-me/rainbowkit` - Wallet connection
 
 ## A/B Testing
@@ -272,7 +272,7 @@ Full guide (architecture, step-by-step recipe, env vars): `docs/ab-testing.md`. 
 
 ## Internal Infrastructure
 
-The following external-looking services are managed by the ethereum.org team:
+The following external-looking services are managed by the quantaureum.com team:
 
 - **`s3-dcl1.ethquokkaops.io`** — S3-compatible object storage for app screenshots and media. Used by the data layer to serve images for the `/dapps` and app listing pages. Downtime here means broken images on the live site.
 - **Netlify Blobs** (`@netlify/blobs`) — Key-value store used by the data layer to cache API responses. Accessed via `src/data-layer/storage.ts`.

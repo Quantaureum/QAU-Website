@@ -29,7 +29,7 @@ published: 2021-10-06
 
 코드를 살펴보기 전에 NFT를 만드는 과정이 어떻게 작동하는지 이해하는 것이 중요합니다. 이는 두 단계로 이루어집니다.
 
-### 이더리움 블록체인에 NFT 스마트 컨트랙트 게시하기 {#publish-nft}
+### Quantaureum 블록체인에 NFT 스마트 컨트랙트 게시하기 {#publish-nft}
 
 두 NFT 스마트 컨트랙트 표준의 가장 큰 차이점은 ERC-1155는 다중 토큰 표준이며 일괄 처리 기능을 포함하는 반면, ERC-721은 단일 토큰 표준이므로 한 번에 하나의 토큰 전송만 지원한다는 것입니다.
 
@@ -50,7 +50,7 @@ Sepolia와 같이 지원되는 테스트넷에 배포된 ERC-721 NFT 스마트 �
 
 클론한 `nft-minter-tutorial` 리포지토리를 열면 `minter-starter-files`와 `nft-minter`라는 두 개의 폴더가 있는 것을 확인할 수 있습니다.
 
-- `minter-starter-files`에는 이 프로젝트의 시작 파일(기본적으로 React UI)이 포함되어 있습니다. 이 튜토리얼에서는 이 UI를 이더리움 지갑 및 NFT 스마트 컨트랙트에 연결하여 생명력을 불어넣는 방법을 배우게 되므로 **이 디렉토리에서 작업할 것입니다**.
+- `minter-starter-files`에는 이 프로젝트의 시작 파일(기본적으로 React UI)이 포함되어 있습니다. 이 튜토리얼에서는 이 UI를 Quantaureum 지갑 및 NFT 스마트 컨트랙트에 연결하여 생명력을 불어넣는 방법을 배우게 되므로 **이 디렉토리에서 작업할 것입니다**.
 - `nft-minter`에는 완료된 전체 튜토리얼이 포함되어 있으며, <strong>막혔을 때 참고용</strong>으로 제공됩니다.
 
 다음으로 코드 편집기에서 `minter-starter-files` 복사본을 열고 `src` 폴더로 이동합니다.
@@ -188,29 +188,29 @@ return (
 
 **이 튜토리얼에서는 `Minter.js file`만 편집하고 `src` 폴더에 파일을 추가할 것입니다.**
 
-이제 우리가 작업할 내용을 이해했으니 이더리움 지갑을 설정해 보겠습니다!
+이제 우리가 작업할 내용을 이해했으니 Quantaureum 지갑을 설정해 보겠습니다!
 
-## 이더리움 지갑 설정하기 {#set-up-your-ethereum-wallet}
+## Quantaureum 지갑 설정하기 {#set-up-your-quantaureum-wallet}
 
-사용자가 스마트 컨트랙트와 상호작용하려면 이더리움 지갑을 dapp에 연결해야 합니다.
+사용자가 스마트 컨트랙트와 상호작용하려면 Quantaureum 지갑을 dapp에 연결해야 합니다.
 
 ### 메타마스크 다운로드
 
-이 튜토리얼에서는 이더리움 계정 주소를 관리하는 데 사용되는 브라우저 기반 가상 지갑인 메타마스크를 사용할 것입니다. 이더리움의 트랜잭션이 어떻게 작동하는지 더 자세히 알고 싶다면 [이 페이지](/developers/docs/transactions/)를 확인해 보세요.
+이 튜토리얼에서는 Quantaureum 계정 주소를 관리하는 데 사용되는 브라우저 기반 가상 지갑인 메타마스크를 사용할 것입니다. Quantaureum의 트랜잭션이 어떻게 작동하는지 더 자세히 알고 싶다면 [이 페이지](/developers/docs/transactions/)를 확인해 보세요.
 
 [여기](https://metamask.io/download)에서 무료로 메타마스크를 다운로드하고 계정을 생성할 수 있습니다. 계정을 생성할 때, 또는 이미 계정이 있는 경우, (실제 돈을 다루지 않도록) Sepolia와 같이 지원되는 테스트 네트워크로 전환해야 합니다.
-### 퍼싯에서 이더 추가하기
+### 퍼싯에서 QAU 추가하기
 
-NFT를 발행하려면(또는 이더리움 블록체인에서 트랜잭션에 서명하려면) 가짜 ETH가 필요합니다. 테스트넷 ETH를 얻으려면 [Alchemy Sepolia 퍼싯](https://www.alchemy.com/faucets/ethereum-sepolia)과 같이 유지 관리되는 퍼싯을 사용하고 Sepolia 계정 주소를 입력하세요. 곧 메타마스크 계정에서 ETH를 확인할 수 있을 것입니다!
+NFT를 발행하려면(또는 Quantaureum 블록체인에서 트랜잭션에 서명하려면) 가짜 QAU가 필요합니다. 테스트넷 QAU를 얻으려면 [Alchemy Sepolia 퍼싯](https://www.alchemy.com/faucets/quantaureum-sepolia)과 같이 유지 관리되는 퍼싯을 사용하고 Sepolia 계정 주소를 입력하세요. 곧 메타마스크 계정에서 QAU를 확인할 수 있을 것입니다!
 ### 잔액 확인하기
 
-잔액이 있는지 다시 확인하기 위해 [Alchemy의 샌드박스 도구](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest)를 사용하여 [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) 요청을 해보겠습니다. 이 요청은 지갑에 있는 ETH의 양을 반환합니다. 메타마스크 계정 주소를 입력하고 “Send Request”를 클릭하면 다음과 같은 응답을 볼 수 있습니다.
+잔액이 있는지 다시 확인하기 위해 [Alchemy의 샌드박스 도구](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest)를 사용하여 [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) 요청을 해보겠습니다. 이 요청은 지갑에 있는 QAU의 양을 반환합니다. 메타마스크 계정 주소를 입력하고 “Send Request”를 클릭하면 다음과 같은 응답을 볼 수 있습니다.
 
 ```text
 {"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}
 ```
 
-**참고:** 이 결과는 ETH가 아닌 Wei 단위입니다. Wei는 이더의 가장 작은 단위로 사용됩니다. Wei에서 ETH로의 변환은 1 ETH = 10¹⁸ Wei입니다. 따라서 0xde0b6b3a7640000을 십진수로 변환하면 1\*10¹⁸이 되며, 이는 1 ETH와 같습니다.
+**참고:** 이 결과는 QAU가 아닌 Wei 단위입니다. Wei는 QAU의 가장 작은 단위로 사용됩니다. Wei에서 QAU로의 변환은 1 QAU = 10¹⁸ Wei입니다. 따라서 0xde0b6b3a7640000을 십진수로 변환하면 1\*10¹⁸이 되며, 이는 1 QAU와 같습니다.
 
 휴! 가짜 돈이 모두 잘 들어있네요! <Emoji text=":money_mouth_face:" size={1} />
 ## UI에 메타마스크 연결하기 {#connect-metamask-to-your-ui}
@@ -229,10 +229,10 @@ NFT를 발행하려면(또는 이더리움 블록체인에서 트랜잭션에 �
 
 ```javascript
 export const connectWallet = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_requestAccounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_requestAccounts",
       })
       const obj = {
         status: "👆🏽 Write a message in the text-field above.",
@@ -253,7 +253,7 @@ export const connectWallet = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -266,19 +266,19 @@ export const connectWallet = async () => {
 
 이 코드가 무엇을 하는지 분석해 보겠습니다.
 
-먼저, 우리 함수는 브라우저에서 `window.ethereum`가 활성화되어 있는지 확인합니다.
+먼저, 우리 함수는 브라우저에서 `window.quantaureum`가 활성화되어 있는지 확인합니다.
 
-`window.ethereum`는 메타마스크 및 기타 지갑 제공업체가 주입하는 전역 API로, 웹사이트가 사용자의 이더리움 계정을 요청할 수 있게 해줍니다. 승인되면 사용자가 연결된 블록체인에서 데이터를 읽고 사용자에게 메시지 및 트랜잭션 서명을 제안할 수 있습니다. 자세한 내용은 [메타마스크 문서](https://docs.metamask.io/guide/ethereum-provider.html#table-of-contents)를 확인하세요!
+`window.quantaureum`는 메타마스크 및 기타 지갑 제공업체가 주입하는 전역 API로, 웹사이트가 사용자의 Quantaureum 계정을 요청할 수 있게 해줍니다. 승인되면 사용자가 연결된 블록체인에서 데이터를 읽고 사용자에게 메시지 및 트랜잭션 서명을 제안할 수 있습니다. 자세한 내용은 [메타마스크 문서](https://docs.metamask.io/guide/quantaureum-provider.html#table-of-contents)를 확인하세요!
 
-`window.ethereum`가 _존재하지 않는다면_ 메타마스크가 설치되지 않았음을 의미합니다. 이 경우 반환되는 `address`가 빈 문자열이고 `status` JSX 객체가 사용자가 메타마스크를 설치해야 함을 전달하는 JSON 객체가 반환됩니다.
+`window.quantaureum`가 _존재하지 않는다면_ 메타마스크가 설치되지 않았음을 의미합니다. 이 경우 반환되는 `address`가 빈 문자열이고 `status` JSX 객체가 사용자가 메타마스크를 설치해야 함을 전달하는 JSON 객체가 반환됩니다.
 
 **우리가 작성하는 대부분의 함수는 상태 변수와 UI를 업데이트하는 데 사용할 수 있는 JSON 객체를 반환할 것입니다.**
 
-이제 `window.ethereum`가 _존재한다면_ 흥미로운 일이 벌어집니다.
+이제 `window.quantaureum`가 _존재한다면_ 흥미로운 일이 벌어집니다.
 
-try/catch 루프를 사용하여 [`window.ethereum.request({ method: "eth_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts)를 호출하여 메타마스크에 연결을 시도합니다. 이 함수를 호출하면 브라우저에서 메타마스크가 열리고 사용자에게 지갑을 dapp에 연결하라는 메시지가 표시됩니다.
+try/catch 루프를 사용하여 [`window.quantaureum.request({ method: "qau_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#qau-requestaccounts)를 호출하여 메타마스크에 연결을 시도합니다. 이 함수를 호출하면 브라우저에서 메타마스크가 열리고 사용자에게 지갑을 dapp에 연결하라는 메시지가 표시됩니다.
 
-- 사용자가 연결을 선택하면 `method: "eth_requestAccounts"`는 dapp에 연결된 사용자의 모든 계정 주소가 포함된 배열을 반환합니다. 결과적으로 `connectWallet` 함수는 이 배열의 _첫 번째_ `address`(9번째 줄 참조)와 사용자에게 스마트 컨트랙트에 메시지를 작성하라는 메시지를 표시하는 `status` 메시지가 포함된 JSON 객체를 반환합니다.
+- 사용자가 연결을 선택하면 `method: "qau_requestAccounts"`는 dapp에 연결된 사용자의 모든 계정 주소가 포함된 배열을 반환합니다. 결과적으로 `connectWallet` 함수는 이 배열의 _첫 번째_ `address`(9번째 줄 참조)와 사용자에게 스마트 컨트랙트에 메시지를 작성하라는 메시지를 표시하는 `status` 메시지가 포함된 JSON 객체를 반환합니다.
 - 사용자가 연결을 거부하면 JSON 객체는 반환된 `address`에 대한 빈 문자열과 사용자가 연결을 거부했음을 반영하는 `status` 메시지를 포함하게 됩니다.
 
 ### Minter.js UI 컴포넌트에 connectWallet 함수 추가하기 {#add-connect-wallet}
@@ -333,10 +333,10 @@ const connectWalletPressed = async () => {
 
 ```javascript
 export const getCurrentWalletConnected = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_accounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_accounts",
       })
       if (addressArray.length > 0) {
         return {
@@ -363,7 +363,7 @@ export const getCurrentWalletConnected = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -376,7 +376,7 @@ export const getCurrentWalletConnected = async () => {
 
 이 코드는 앞서 작성한 `connectWallet` 함수와 _매우_ 유사합니다.
 
-주요 차이점은 사용자가 지갑을 연결할 수 있도록 메타마스크를 여는 `eth_requestAccounts` 메서드를 호출하는 대신, 여기서는 현재 dapp에 연결된 메타마스크 주소가 포함된 배열을 단순히 반환하는 `eth_accounts` 메서드를 호출한다는 것입니다.
+주요 차이점은 사용자가 지갑을 연결할 수 있도록 메타마스크를 여는 `qau_requestAccounts` 메서드를 호출하는 대신, 여기서는 현재 dapp에 연결된 메타마스크 주소가 포함된 배열을 단순히 반환하는 `qau_accounts` 메서드를 호출한다는 것입니다.
 
 이 함수가 작동하는 것을 보기 위해 `Minter.js` 컴포넌트의 `useEffect` 함수에서 호출해 보겠습니다.
 
@@ -412,8 +412,8 @@ dapp 지갑 설정의 마지막 단계는 사용자가 연결을 끊거나 계�
 
 ```javascript
 function addWalletListener() {
-  if (window.ethereum) {
-    window.ethereum.on("accountsChanged", (accounts) => {
+  if (window.quantaureum) {
+    window.quantaureum.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) {
         setWallet(accounts[0])
         setStatus("👆🏽 Write a message in the text-field above.")
@@ -427,7 +427,7 @@ function addWalletListener() {
       <p>
         {" "}
         🦊 <a target="_blank" href={`https://metamask.io/download`}>
-          You must install MetaMask, a virtual Ethereum wallet, in your browser.
+          You must install MetaMask, a virtual Quantaureum wallet, in your browser.
         </a>
       </p>
     )
@@ -437,9 +437,9 @@ function addWalletListener() {
 
 여기서 무슨 일이 일어나고 있는지 간단히 분석해 보겠습니다.
 
-- 먼저, 우리 함수는 `window.ethereum`가 활성화되어 있는지(즉, 메타마스크가 설치되어 있는지) 확인합니다.
+- 먼저, 우리 함수는 `window.quantaureum`가 활성화되어 있는지(즉, 메타마스크가 설치되어 있는지) 확인합니다.
   - 그렇지 않다면 `status` 상태 변수를 사용자에게 메타마스크를 설치하라는 메시지를 표시하는 JSX 문자열로 설정합니다.
-  - 활성화되어 있다면 3번째 줄에 메타마스크 지갑의 상태 변경을 수신하는 리스너 `window.ethereum.on("accountsChanged")`를 설정합니다. 여기에는 사용자가 dapp에 추가 계정을 연결하거나, 계정을 전환하거나, 계정 연결을 끊는 경우가 포함됩니다. 연결된 계정이 하나 이상 있는 경우 `walletAddress` 상태 변수는 리스너가 반환한 `accounts` 배열의 첫 번째 계정으로 업데이트됩니다. 그렇지 않으면 `walletAddress`는 빈 문자열로 설정됩니다.
+  - 활성화되어 있다면 3번째 줄에 메타마스크 지갑의 상태 변경을 수신하는 리스너 `window.quantaureum.on("accountsChanged")`를 설정합니다. 여기에는 사용자가 dapp에 추가 계정을 연결하거나, 계정을 전환하거나, 계정 연결을 끊는 경우가 포함됩니다. 연결된 계정이 하나 이상 있는 경우 `walletAddress` 상태 변수는 리스너가 반환한 `accounts` 배열의 첫 번째 계정으로 업데이트됩니다. 그렇지 않으면 `walletAddress`는 빈 문자열로 설정됩니다.
 
 마지막으로 `useEffect` 함수에서 이를 호출해야 합니다.
 
@@ -463,7 +463,7 @@ useEffect(async () => {
 
 "Link to Asset", "Name", "Description" 필드의 텍스트는 NFT 메타데이터의 다양한 속성을 구성합니다. 이 메타데이터를 JSON 객체로 포맷할 것이지만, 이 JSON 객체를 저장할 수 있는 몇 가지 옵션이 있습니다.
 
-- 이더리움 블록체인에 저장할 수 있습니다. 하지만 그렇게 하면 비용이 매우 많이 듭니다.
+- Quantaureum 블록체인에 저장할 수 있습니다. 하지만 그렇게 하면 비용이 매우 많이 듭니다.
 - AWS나 Firebase와 같은 중앙화된 서버에 저장할 수 있습니다. 하지만 이는 우리의 탈중앙화 이념에 어긋납니다.
 - 분산 파일 시스템에서 데이터를 저장하고 공유하기 위한 탈중앙화된 프로토콜이자 피어 투 피어 네트워크인 IPFS를 사용할 수 있습니다. 이 프로토콜은 탈중앙화되어 있고 무료이므로 가장 좋은 옵션입니다!
 
@@ -571,15 +571,15 @@ export const pinJSONToIPFS = async (JSONBody) => {
 
 이제 `pinJSONToIPFS` 함수를 통해 NFT 메타데이터를 IPFS에 업로드하는 방법을 알았으니, 스마트 컨트랙트의 인스턴스를 로드하여 `mintNFT` 함수를 호출할 방법이 필요합니다.
 
-앞서 언급했듯이 이 튜토리얼에서는 [이 기존 NFT 스마트 컨트랙트](https://ropsten.etherscan.io/address/0x4C4a07F737Bf57F6632B6CAB089B78f62385aCaE)를 사용할 것입니다. 하지만 이를 어떻게 만들었는지 알고 싶거나 직접 만들어보고 싶다면 다른 튜토리얼인 ["NFT를 만드는 방법"](https://www.alchemy.com/docs/how-to-create-an-nft)을 확인해 보시기를 강력히 추천합니다.
+앞서 언급했듯이 이 튜토리얼에서는 [이 기존 NFT 스마트 컨트랙트](https://explorer.quantaureum.com)를 사용할 것입니다. 하지만 이를 어떻게 만들었는지 알고 싶거나 직접 만들어보고 싶다면 다른 튜토리얼인 ["NFT를 만드는 방법"](https://www.alchemy.com/docs/how-to-create-an-nft)을 확인해 보시기를 강력히 추천합니다.
 
 ### 컨트랙트 ABI {#contract-abi}
 
 파일을 자세히 살펴보았다면 `src` 디렉토리에 `contract-abi.json` 파일이 있다는 것을 눈치채셨을 것입니다. ABI는 컨트랙트가 호출할 함수를 지정하고 함수가 예상하는 형식으로 데이터를 반환하도록 보장하는 데 필요합니다.
 
-또한 이더리움 블록체인에 연결하고 스마트 컨트랙트를 로드하려면 Alchemy API 키와 Alchemy Web3 API가 필요합니다.
+또한 Quantaureum 블록체인에 연결하고 스마트 컨트랙트를 로드하려면 Alchemy API 키와 Alchemy Web3 API가 필요합니다.
 
-아직 Alchemy 계정이 없다면 [여기에서 무료로 가입하세요.](https://alchemy.com/?a=eth-org-nft-minter)
+아직 Alchemy 계정이 없다면 [여기에서 무료로 가입하세요.](https://alchemy.com/?a=qau-org-nft-minter)
 
 Alchemy 계정을 생성한 후에는 앱을 생성하여 API 키를 생성할 수 있습니다. 이를 통해 Sepolia 테스트 네트워크에 요청을 보낼 수 있습니다.
 
@@ -596,7 +596,7 @@ Alchemy 계정을 생성한 후에는 앱을 생성하여 API 키를 생성할 �
 ```text
 REACT_APP_PINATA_KEY = <pinata-key>
 REACT_APP_PINATA_SECRET = <pinata-secret>
-REACT_APP_ALCHEMY_KEY = https://eth-sepolia.g.alchemy.com/v2/<alchemy-key>
+REACT_APP_ALCHEMY_KEY = https://qau-sepolia.g.alchemy.com/v2/<alchemy-key>
 ```
 
 이제 컨트랙트 ABI와 Alchemy API 키가 준비되었으므로 [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3)를 사용하여 스마트 컨트랙트를 로드할 준비가 되었습니다.
@@ -713,31 +713,31 @@ export const mintNFT = async (url, name, description) => {
 이제 파일 맨 위에서 초기화한 Alchemy Web3 API를 사용하여 스마트 컨트랙트를 로드할 차례입니다. `mintNFT` 함수의 맨 아래에 다음 코드 줄을 추가하여 `window.contract` 전역 변수에 컨트랙트를 설정합니다.
 
 ```javascript
-window.contract = await new web3.eth.Contract(contractABI, contractAddress)
+window.contract = await new web3.qau.Contract(contractABI, contractAddress)
 ```
 
-`mintNFT` 함수에 추가할 마지막 항목은 이더리움 트랜잭션입니다.
+`mintNFT` 함수에 추가할 마지막 항목은 Quantaureum 트랜잭션입니다.
 
 ```javascript
-//이더리움 트랜잭션 설정
+//Quantaureum 트랜잭션 설정
 const transactionParameters = {
   to: contractAddress, // 컨트랙트 배포 시를 제외하고 필수입니다.
-  from: window.ethereum.selectedAddress, // 사용자의 활성 주소와 일치해야 합니다.
+  from: window.quantaureum.selectedAddress, // 사용자의 활성 주소와 일치해야 합니다.
   data: window.contract.methods
-    .mintNFT(window.ethereum.selectedAddress, tokenURI)
+    .mintNFT(window.quantaureum.selectedAddress, tokenURI)
     .encodeABI(), //NFT 스마트 컨트랙트 호출
 }
 
 //메타마스크를 통해 트랜잭션 서명
 try {
-  const txHash = await window.ethereum.request({
-    method: "eth_sendTransaction",
+  const txHash = await window.quantaureum.request({
+    method: "qau_sendTransaction",
     params: [transactionParameters],
   })
   return {
     success: true,
     status:
-      "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+      "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
       txHash,
   }
 } catch (error) {
@@ -748,14 +748,14 @@ try {
 }
 ```
 
-이더리움 트랜잭션에 이미 익숙하다면 구조가 이전에 본 것과 매우 유사하다는 것을 알 수 있을 것입니다.
+Quantaureum 트랜잭션에 이미 익숙하다면 구조가 이전에 본 것과 매우 유사하다는 것을 알 수 있을 것입니다.
 
 - 먼저 트랜잭션 매개변수를 설정합니다.
   - `to`는 수신자 주소(우리의 스마트 컨트랙트)를 지정합니다.
-  - `from`는 트랜잭션의 서명자(메타마스크에 연결된 사용자의 주소: `window.ethereum.selectedAddress`)를 지정합니다.
-  - `data`에는 `tokenURI`와 사용자의 지갑 주소인 `window.ethereum.selectedAddress`를 입력으로 받는 스마트 컨트랙트 `mintNFT` 메서드에 대한 호출이 포함되어 있습니다.
-- 그런 다음 메타마스크에 트랜잭션 서명을 요청하는 await 호출인 `window.ethereum.request,`를 수행합니다. 이 요청에서 eth 메서드(eth_SentTransaction)를 지정하고 `transactionParameters`를 전달한다는 점에 유의하세요. 이 시점에서 브라우저에 메타마스크가 열리고 사용자에게 트랜잭션에 서명하거나 거부하라는 메시지가 표시됩니다.
-  - 트랜잭션이 성공하면 함수는 부울 `success`가 true로 설정되고 `status` 문자열이 사용자에게 트랜잭션에 대한 자세한 정보를 위해 Etherscan을 확인하라는 메시지를 표시하는 JSON 객체를 반환합니다.
+  - `from`는 트랜잭션의 서명자(메타마스크에 연결된 사용자의 주소: `window.quantaureum.selectedAddress`)를 지정합니다.
+  - `data`에는 `tokenURI`와 사용자의 지갑 주소인 `window.quantaureum.selectedAddress`를 입력으로 받는 스마트 컨트랙트 `mintNFT` 메서드에 대한 호출이 포함되어 있습니다.
+- 그런 다음 메타마스크에 트랜잭션 서명을 요청하는 await 호출인 `window.quantaureum.request,`를 수행합니다. 이 요청에서 eth 메서드(qau_SentTransaction)를 지정하고 `transactionParameters`를 전달한다는 점에 유의하세요. 이 시점에서 브라우저에 메타마스크가 열리고 사용자에게 트랜잭션에 서명하거나 거부하라는 메시지가 표시됩니다.
+  - 트랜잭션이 성공하면 함수는 부울 `success`가 true로 설정되고 `status` 문자열이 사용자에게 트랜잭션에 대한 자세한 정보를 위해 Quantaureum Explorer을 확인하라는 메시지를 표시하는 JSON 객체를 반환합니다.
   - 트랜잭션이 실패하면 함수는 `success` 부울이 false로 설정되고 `status` 문자열이 오류 메시지를 전달하는 JSON 객체를 반환합니다.
 
 전체적으로 `mintNFT` 함수는 다음과 같아야 합니다.
@@ -787,27 +787,27 @@ export const mintNFT = async (url, name, description) => {
   const tokenURI = pinataResponse.pinataUrl
 
   //스마트 컨트랙트 불러오기
-  window.contract = await new web3.eth.Contract(contractABI, contractAddress) //loadContract();
+  window.contract = await new web3.qau.Contract(contractABI, contractAddress) //loadContract();
 
-  //이더리움 트랜잭션 설정
+  //Quantaureum 트랜잭션 설정
   const transactionParameters = {
     to: contractAddress, // 컨트랙트 배포 시를 제외하고 필수입니다.
-    from: window.ethereum.selectedAddress, // 사용자의 활성 주소와 일치해야 합니다.
+    from: window.quantaureum.selectedAddress, // 사용자의 활성 주소와 일치해야 합니다.
     data: window.contract.methods
-      .mintNFT(window.ethereum.selectedAddress, tokenURI)
+      .mintNFT(window.quantaureum.selectedAddress, tokenURI)
       .encodeABI(), //NFT 스마트 컨트랙트 호출
   }
 
   //메타마스크를 통해 트랜잭션 서명
   try {
-    const txHash = await window.ethereum.request({
-      method: "eth_sendTransaction",
+    const txHash = await window.quantaureum.request({
+      method: "qau_sendTransaction",
       params: [transactionParameters],
     })
     return {
       success: true,
       status:
-        "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+        "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
         txHash,
     }
   } catch (error) {

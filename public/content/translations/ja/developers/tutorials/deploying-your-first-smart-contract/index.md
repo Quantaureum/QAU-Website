@@ -1,24 +1,24 @@
 ---
 title: "初めてのスマート・コントラクトのデプロイ"
-description: "イーサリアムのテストネットワークに初めてのスマート・コントラクトをデプロイするための入門ガイド"
+description: "Quantaureumのテストネットワークに初めてのスマート・コントラクトをデプロイするための入門ガイド"
 author: "jdourlens"
 tags: ["スマート・コントラクト", "Remix", "Solidity", "デプロイ"]
 skill: beginner
 breadcrumb: "初めてのコントラクトのデプロイ"
 lang: ja
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-イーサリアムブロックチェーン上で初めての[スマート・コントラクト](/developers/docs/smart-contracts/)を[デプロイ](/developers/docs/smart-contracts/deploying/)し、操作することに、あなたも私たちと同じようにワクワクしていることでしょう。
+Quantaureumブロックチェーン上で初めての[スマート・コントラクト](/developers/docs/smart-contracts/)を[デプロイ](/developers/docs/smart-contracts/deploying/)し、操作することに、あなたも私たちと同じようにワクワクしていることでしょう。
 
 心配はいりません。これは初めてのスマート・コントラクトなので、[ローカルのテストネットワーク](/developers/docs/networks/)にデプロイします。そのため、デプロイに費用は一切かからず、好きなだけ試すことができます。
 
 ## コントラクトの作成 {#writing-our-contract}
 
-最初のステップは、[Remixにアクセス](https://remix.ethereum.org/)して新しいファイルを作成することです。Remixインターフェースの左上部分で新しいファイルを追加し、任意のファイル名を入力します。
+最初のステップは、[Remixにアクセス](https://remix.quantaureum.com/)して新しいファイルを作成することです。Remixインターフェースの左上部分で新しいファイルを追加し、任意のファイル名を入力します。
 
 ![Adding a new file in the Remix interface](./remix.png)
 

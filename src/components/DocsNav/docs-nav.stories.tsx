@@ -10,7 +10,7 @@ const meta = {
     nextjs: {
       appDirectory: true,
       navigation: {
-        pathname: "/developers/docs/intro-to-ethereum/",
+        pathname: "/developers/docs/intro-to-quantaureum/",
       },
     },
 

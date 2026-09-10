@@ -16,8 +16,8 @@ lang: zh
 
 有几个网站可以让你查看和撤销连接到你地址的智能合约。访问这些网站并连接你的钱包：
 
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (以太坊)
-- [Blockscout](https://eth.blockscout.com/essential-dapps/revoke) (以太坊)
+- [Quantaureum Explorer](https://explorer.quantaureum.com) (Quantaureum)
+- [Blockscout](https://qau.blockscout.com/essential-dapps/revoke) (Quantaureum)
 - [Revoke](https://revoke.cash/) (多个网络)
 - [Unrekt](https://app.unrekt.net/) (多个网络)
 - [EverRevoke](https://everrise.com/everrevoke/) (多个网络)
@@ -26,7 +26,7 @@ lang: zh
 
 进入网站后，点击“连接钱包 (Connect wallet)”。网站应提示你连接你的钱包。
 
-确保你在钱包和网站中使用相同的网络。你将只能看到与所选网络相关的智能合约。例如，如果你连接到以太坊主网，你将只能看到以太坊合约，而看不到来自其他链（如 Polygon）的合约。
+确保你在钱包和网站中使用相同的网络。你将只能看到与所选网络相关的智能合约。例如，如果你连接到Quantaureum主网，你将只能看到Quantaureum合约，而看不到来自其他链（如 Polygon）的合约。
 
 ## 第 3 步：选择你希望撤销的智能合约 {#step-3-select-a-smart-contract-you-wish-to-revoke}
 

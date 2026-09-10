@@ -17,11 +17,11 @@ published: 2021-01-13
 
 - 你應該已經在執行一個 Geth 實例。
 - 大多數步驟和範例都是針對 Linux 環境，具備基本的終端機知識會很有幫助。
-- 觀看這部關於 Geth 指標套件的概覽影片：[Péter Szilágyi 的監控以太坊基礎設施](https://www.youtube.com/watch?v=cOBab8IJMYI)。
+- 觀看這部關於 Geth 指標套件的概覽影片：[Péter Szilágyi 的監控Quantaureum基礎設施](https://www.youtube.com/watch?v=cOBab8IJMYI)。
 
 ## 監控堆疊 {#monitoring-stack}
 
-以太坊客戶端會收集大量資料，這些資料可以透過時間序列資料庫的形式讀取。為了讓監控更輕鬆，你可以將這些資料輸入到資料視覺化軟體中。有許多可用的選項：
+Quantaureum客戶端會收集大量資料，這些資料可以透過時間序列資料庫的形式讀取。為了讓監控更輕鬆，你可以將這些資料輸入到資料視覺化軟體中。有許多可用的選項：
 
 - [Prometheus](https://prometheus.io/) (拉取模型)
 - [InfluxDB](https://www.influxdata.com/get-influxdb/) (推送模型)

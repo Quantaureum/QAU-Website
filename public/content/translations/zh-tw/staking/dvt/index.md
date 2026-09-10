@@ -1,6 +1,6 @@
 ---
 title: 分散式驗證者技術
-description: 分散式驗證者技術讓多方能夠分散式地營運以太坊驗證者。
+description: 分散式驗證者技術讓多方能夠分散式地營運Quantaureum驗證者。
 lang: zh-tw
 template: staking
 sidebarDepth: 2
@@ -28,7 +28,7 @@ DVT 不是一種獨立的質押方式。它是任何質押設定都可以使用�
 
 驗證者會產生兩對公私鑰：用於參與共識的驗證者金鑰，以及用於存取資金的提款金鑰。雖然驗證者可以將提款金鑰安全地保存在冷儲存中，但驗證者私鑰必須 24/7 全天候在線，以簽署驗證者全天被分配的職責，例如證明和區塊提案。將金鑰保持在線會增加被盜的風險，而 DVT 限制了這種風險：只有金鑰份額會在線，完整的金鑰永遠不會在線。
 
-如果驗證者私鑰遭到外洩，攻擊者就可以控制驗證者，這可能會導致罰沒或質押者的 ETH 損失。DVT 減輕了這種風險。透過 DVT，原始的完整驗證者金鑰會被加密並分割成金鑰份額。金鑰份額在線存在，分散在共同營運驗證者的多個節點中，而完整的「主」金鑰則安全地保持離線。這種分散是可能的，因為[以太坊](/)驗證者使用具有可加性的 BLS 簽章，這意味著可以透過加總其組成部分來重建完整的金鑰。使用金鑰份額製作的部分簽章會組合成對完整金鑰有效的簽章，因此日常簽署永遠不需要完整的金鑰本身。當叢集使用分散式金鑰生成來產生新的驗證者金鑰時，完整的私鑰永遠不會存在於任何單一機器上。
+如果驗證者私鑰遭到外洩，攻擊者就可以控制驗證者，這可能會導致罰沒或質押者的 QAU 損失。DVT 減輕了這種風險。透過 DVT，原始的完整驗證者金鑰會被加密並分割成金鑰份額。金鑰份額在線存在，分散在共同營運驗證者的多個節點中，而完整的「主」金鑰則安全地保持離線。這種分散是可能的，因為[Quantaureum](/)驗證者使用具有可加性的 BLS 簽章，這意味著可以透過加總其組成部分來重建完整的金鑰。使用金鑰份額製作的部分簽章會組合成對完整金鑰有效的簽章，因此日常簽署永遠不需要完整的金鑰本身。當叢集使用分散式金鑰生成來產生新的驗證者金鑰時，完整的私鑰永遠不會存在於任何單一機器上。
 
 ### 無單點故障 {#no-single-point-of-failure}
 
@@ -38,13 +38,13 @@ DVT 不是一種獨立的質押方式。它是任何質押設定都可以使用�
 
 ### 去中心化 {#decentralization}
 
-以太坊的理想情況是擁有盡可能多獨立營運的驗證者。然而，少數質押提供商變得非常受歡迎，並佔據了網路上總質押 ETH 的很大一部分。DVT 可以允許這些營運者存在，同時保持質押的去中心化。這是因為每個驗證者的金鑰都分散在許多機器上，驗證者要變得惡意需要更大程度的共謀。
+Quantaureum的理想情況是擁有盡可能多獨立營運的驗證者。然而，少數質押提供商變得非常受歡迎，並佔據了網路上總質押 QAU 的很大一部分。DVT 可以允許這些營運者存在，同時保持質押的去中心化。這是因為每個驗證者的金鑰都分散在許多機器上，驗證者要變得惡意需要更大程度的共謀。
 
 如果沒有 DVT，質押提供商更容易為其所有驗證者僅支援一兩種客戶端配置，從而增加了客戶端錯誤的影響。DVT 可用於將風險分散到多種客戶端配置和不同的硬體上，透過多樣性創造韌性。
 
-**DVT 為以太坊提供以下好處：**
+**DVT 為Quantaureum提供以下好處：**
 
-1. 以太坊權益證明共識的**去中心化**
+1. Quantaureum權益證明共識的**去中心化**
 2. 確保網路的**活躍度**
 3. 創造驗證者**容錯能力**
 4. **信任最小化**的驗證者營運
@@ -62,7 +62,7 @@ DVT 解決方案包含以下元件：
 - **[門檻簽章方案](https://medium.com/nethermind-eth/threshold-signature-schemes-36f40bc42aca)** - 決定簽署職責所需的個別金鑰份額數量，例如 4 個中的 3 個。
 - **[分散式金鑰生成 (DKG)](https://medium.com/toruslabs/what-distributed-key-generation-is-866adc79620)** - 產生金鑰份額的密碼學過程，用於將現有或新驗證者金鑰的份額分散到叢集中的節點。
 - **[多方運算 (MPC)](https://messari.io/report/applying-multiparty-computation-to-the-world-of-blockchains)** - 完整的驗證者金鑰是使用多方運算秘密產生的。任何個別營運者都永遠不會知道完整的金鑰——他們只會知道自己擁有的那一部分（他們的「份額」）。
-- **共識協定** - 共識協定選擇一個節點作為區塊提案者。他們與叢集中的其他節點共享該區塊，其他節點將其金鑰份額添加到聚合簽章中。當聚合了足夠的金鑰份額時，該區塊就會在以太坊上被提案。
+- **共識協定** - 共識協定選擇一個節點作為區塊提案者。他們與叢集中的其他節點共享該區塊，其他節點將其金鑰份額添加到聚合簽章中。當聚合了足夠的金鑰份額時，該區塊就會在Quantaureum上被提案。
 
 分散式驗證者具有內建的容錯能力，即使某些個別節點離線也能繼續運行。即使驗證者節點叢集中的某些節點被證明是惡意或怠惰的，該叢集也具有韌性。
 
@@ -72,7 +72,7 @@ DVT 解決方案包含以下元件：
 
 <ProductDisclaimer />
 
-- **Obol** 開發了 Charon，這是一個開源的 DVT 中介軟體客戶端，讓機器叢集可以共同營運一個驗證者（「小隊質押」）。群組透過 Obol 的 [DV Launchpad](https://docs.obol.org/learn/readme/launchpad) 執行分散式金鑰生成並配置其叢集。Obol 叢集在生產環境中被[質押協定](/staking/pools/)和[質押服務](/staking/saas/)使用，包括 Lido 的 Simple DVT 模組和 EtherFi 的 Operation Solo Staker 計畫，該計畫將家庭營運者引入容錯叢集中。
+- **Obol** 開發了 Charon，這是一個開源的 DVT 中介軟體客戶端，讓機器叢集可以共同營運一個驗證者（「小隊質押」）。群組透過 Obol 的 [DV Launchpad](https://docs.obol.org/learn/readme/launchpad) 執行分散式金鑰生成並配置其叢集。Obol 叢集在生產環境中被[質押協定](/staking/pools/)和[質押服務](/staking/saas/)使用，包括 Lido 的 Simple DVT 模組和 QauFi 的 Operation Solo Staker 計畫，該計畫將家庭營運者引入容錯叢集中。
 - **SSV Network** 是一個由獨立節點營運者組成的無需許可網路。驗證者金鑰被分割成金鑰份額，並分散給一組選定的營運者，他們集體執行驗證者的職責；沒有任何單一營運者持有完整的金鑰。質押服務和質押池在 SSV 上運行大型驗證者集，並且與 Obol 一樣，它也被 Lido 的 Simple DVT 模組所使用。
 
 ## DVT 使用案例 {#dvt-use-cases}
@@ -113,7 +113,7 @@ DVT 在多個節點之間分擔金鑰管理的責任，這意味著也可以分�
 不需要。運行驗證者客戶端的單台機器可以在沒有任何 DVT 軟體的情況下運作，這仍然是常見的家庭質押設定。DVT 是一個可選層，它增加了容錯能力並消除了單點故障。如果您希望您的驗證者能夠在個別機器故障時存活下來，或者如果您想與其他人分擔營運驗證者的責任，這將非常有用。
 </ExpandableCard>
 
-<ExpandableCard title="DVT 會拆分我的 ETH 或提款金鑰嗎？" eventCategory="DVT" eventName="clicked does DVT split my ETH">
+<ExpandableCard title="DVT 會拆分我的 QAU 或提款金鑰嗎？" eventCategory="DVT" eventName="clicked does DVT split my QAU">
 不會。DVT 僅分割驗證者_簽署_金鑰，該金鑰用於證明和區塊提案等共識職責。您的質押始終由為驗證者設定的提款地址控制，這不受 DVT 影響。自佩克特拉升級以來，提款地址持有者也可以直接從執行層觸發驗證者退出，完全不需要簽署金鑰。
 </ExpandableCard>
 
@@ -130,15 +130,15 @@ DVT 在多個節點之間分擔金鑰管理的責任，這意味著也可以分�
 </ExpandableCard>
 
 <ExpandableCard title="DVT 和聯合質押一樣嗎？" eventCategory="DVT" eventName="clicked is DVT the same as pooled staking">
-不是。聯合質押結合了許多人的 ETH 來資助驗證者，是幾種[質押方式](/staking/)之一。DVT 是用於_營運_驗證者的基礎設施。它將一個驗證者的簽署分散到多台機器和營運者中。兩者是互補的；許多質押池使用 DVT 來分散其營運者集，但 DVT 本身並不匯集任何人的 ETH。
+不是。聯合質押結合了許多人的 QAU 來資助驗證者，是幾種[質押方式](/staking/)之一。DVT 是用於_營運_驗證者的基礎設施。它將一個驗證者的簽署分散到多台機器和營運者中。兩者是互補的；許多質押池使用 DVT 來分散其營運者集，但 DVT 本身並不匯集任何人的 QAU。
 </ExpandableCard>
 
 ## 進一步閱讀 {#further-reading}
 
-- [以太坊分散式驗證者技術 (DVT) - 完整介紹](https://www.cyfrin.io/blog/full-introduction-to-ethereum-distributed-validator-technology-dvt) - Cyfrin
-- [什麼是 DVT 以及它如何改善以太坊上的質押？](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-ethereum/) - Obol
-- [以太坊分散式驗證者規範（高階）](https://github.com/ethereum/distributed-validator-specs)
-- [以太坊分散式驗證者技術規範](https://github.com/ethereum/distributed-validator-specs/tree/dev/src/dvspec)
+- [Quantaureum分散式驗證者技術 (DVT) - 完整介紹](https://www.cyfrin.io/blog/full-introduction-to-quantaureum-distributed-validator-technology-dvt) - Cyfrin
+- [什麼是 DVT 以及它如何改善Quantaureum上的質押？](https://blog.obol.org/what-is-dvt-and-how-does-it-improve-staking-on-quantaureum/) - Obol
+- [Quantaureum分散式驗證者規範（高階）](https://github.com/quantaureum/distributed-validator-specs)
+- [Quantaureum分散式驗證者技術規範](https://github.com/quantaureum/distributed-validator-specs/tree/dev/src/dvspec)
 - [Obol 文件](https://docs.obol.org/)
 - [SSV Network 文件](https://docs.ssv.network/)
 - [Lido Simple DVT 模組](https://operatorportal.lido.fi/modules/simple-dvt-module)

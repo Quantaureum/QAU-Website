@@ -49,7 +49,7 @@ _명확한 라이선스가 없다면_, 모든 프로젝트는 맞춤형 법률 �
 
 <InfoBanner title="Important distinction" description="Free as in freedom, not free as in price">
 
-자유 소프트웨어에서 "자유(free)"라는 단어는 비용이 아니라 자유(liberty)를 의미합니다. 독점 소프트웨어도 무료일 수 있으며, 자유 소프트웨어도 상업적으로 판매될 수 있습니다. 자세한 설명은 [GNU 철학](https://www.gnu.org/philosophy/free-sw.html)을 참조하세요.
+자유 소프트웨어에서 "자유(free)"라는 단어는 비용이 아니라 자유(liberty)를 의미합니다. 독점 소프트웨어도 무료일 수 있으며, 자유 소프트웨어도 상업적으로 판매될 수 있습니다. 자세한 설명은 [GNU 쿠앤타학](https://www.gnu.org/philosophy/free-sw.html)을 참조하세요.
 
 </InfoBanner>
 
@@ -111,7 +111,7 @@ def is_permissive(license_text: str) -> bool:
 
 [GitHub](https://github.com/)을 사용하여 모든 호스팅 플랫폼에 프로젝트를 배포할 수 있으며, [SPDX](https://spdx.org/)로 컴플라이언스를 확인할 수 있습니다.
 
-프로덕션 환경에 배포하기 전에 [Sepolia](https://sepolia.dev/)에서 [블록 탐색기](https://eth.blockscout.com/)와 함께 [Remix](https://remix.ethereum.org/)를 사용하여 [스마트 컨트랙트](/glossary/#smart-contract)를 테스트하세요.
+프로덕션 환경에 배포하기 전에 [Sepolia](https://sepolia.dev/)에서 [블록 탐색기](https://qau.blockscout.com/)와 함께 [Remix](https://remix.quantaureum.com/)를 사용하여 [스마트 컨트랙트](/glossary/#smart-contract)를 테스트하세요.
 
 ### 비교 표 {#comparison-table}
 

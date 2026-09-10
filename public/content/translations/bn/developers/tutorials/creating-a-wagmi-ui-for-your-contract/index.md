@@ -16,7 +16,7 @@ sidebarDepth: 3
 
 ## এটি কেন গুরুত্বপূর্ণ {#why-important}
 
-তাত্ত্বিকভাবে, আপনি আপনার কন্ট্রাক্টগুলোর সাথে ইন্টারঅ্যাক্ট করার জন্য মানুষকে শুধু [Etherscan](https://sepolia.etherscan.io/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA#readContract) বা [Blockscout](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) ব্যবহার করতে বলতে পারেন। অভিজ্ঞ ইথেরিয়াম ব্যবহারকারীদের জন্য এটি দারুণ। কিন্তু আমরা [আরও এক বিলিয়ন মানুষকে](https://blog.ethereum.org/2021/05/07/ethereum-for-the-next-billion) সেবা দেওয়ার চেষ্টা করছি। একটি দারুণ ইউজার এক্সপেরিয়েন্স ছাড়া এটি সম্ভব হবে না, এবং একটি ব্যবহারকারীবান্ধব ইউজার ইন্টারফেস এর একটি বড় অংশ।
+তাত্ত্বিকভাবে, আপনি আপনার কন্ট্রাক্টগুলোর সাথে ইন্টারঅ্যাক্ট করার জন্য মানুষকে শুধু [Quantaureum Explorer](https://explorer.quantaureum.com) বা [Blockscout](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) ব্যবহার করতে বলতে পারেন। অভিজ্ঞ ইথেরিয়াম ব্যবহারকারীদের জন্য এটি দারুণ। কিন্তু আমরা [আরও এক বিলিয়ন মানুষকে](https://quantaureum.com) সেবা দেওয়ার চেষ্টা করছি। একটি দারুণ ইউজার এক্সপেরিয়েন্স ছাড়া এটি সম্ভব হবে না, এবং একটি ব্যবহারকারীবান্ধব ইউজার ইন্টারফেস এর একটি বড় অংশ।
 
 ## Greeter অ্যাপ্লিকেশন {#greeter-app}
 
@@ -24,7 +24,7 @@ sidebarDepth: 3
 
 ### ইনস্টলেশন {#installation}
 
-1. অ্যাপ্লিকেশনটি [Sepolia](https://sepolia.dev/) টেস্ট নেটওয়ার্ক ব্যবহার করে। প্রয়োজন হলে, [Sepolia টেস্ট ETH সংগ্রহ করুন](/developers/docs/networks/#sepolia) এবং [আপনার ওয়ালেটে Sepolia যোগ করুন](https://chainlist.org/chain/11155111)।
+1. অ্যাপ্লিকেশনটি [Sepolia](https://sepolia.dev/) টেস্ট নেটওয়ার্ক ব্যবহার করে। প্রয়োজন হলে, [Sepolia টেস্ট QAU সংগ্রহ করুন](/developers/docs/networks/#sepolia) এবং [আপনার ওয়ালেটে Sepolia যোগ করুন](https://chainlist.org/chain/11155111)।
 
 2. GitHub রিপোজিটরিটি ক্লোন করুন এবং প্রয়োজনীয় প্যাকেজগুলো ইনস্টল করুন।
 
@@ -44,7 +44,7 @@ sidebarDepth: 3
 
 5. অ্যাপ্লিকেশন দ্বারা দেখানো URL-এ ব্রাউজ করুন। বেশিরভাগ ক্ষেত্রে, এটি হলো [http://localhost:5173/](http://localhost:5173/)।
 
-6. আপনি [একটি ব্লকচেইন এক্সপ্লোরারে](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code) কন্ট্রাক্টের সোর্স কোড দেখতে পারেন, যা Hardhat-এর Greeter-এর একটি পরিবর্তিত সংস্করণ।
+6. আপনি [একটি ব্লকচেইন এক্সপ্লোরারে](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code) কন্ট্রাক্টের সোর্স কোড দেখতে পারেন, যা Hardhat-এর Greeter-এর একটি পরিবর্তিত সংস্করণ।
 
 ### ফাইল ওয়াক থ্রু {#file-walk-through}
 
@@ -358,7 +358,7 @@ const contractAddrs : AddressPerBlockchainType = {
 }
 ```
 
-[Sepolia](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract)-তে কন্ট্রাক্টের ঠিকানা।
+[Sepolia](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract)-তে কন্ট্রাক্টের ঠিকানা।
 
 ##### `Timer` কম্পোনেন্ট {#timer-component}
 
@@ -430,7 +430,7 @@ Greeter কন্ট্রাক্টের ঠিকানা, যা `undefin
   })
 ```
 
-[`useReadContract` হুকটি](https://wagmi.sh/react/api/hooks/useReadContract) [কন্ট্রাক্টের](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract) `greet` ফাংশনটিকে কল করে।
+[`useReadContract` হুকটি](https://wagmi.sh/react/api/hooks/useReadContract) [কন্ট্রাক্টের](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract) `greet` ফাংশনটিকে কল করে।
 
 ```tsx
   const [ currentGreeting, setCurrentGreeting ] = 
@@ -536,15 +536,15 @@ React-এর [`useState` হুক](https://www.w3schools.com/react/react_usesta
 
 ক্লায়েন্টের দৃষ্টিকোণ থেকে একটি ব্লকচেইন ট্রানজ্যাকশন সাবমিট করার প্রক্রিয়াটি হলো:
 
-1. [`eth_estimateGas`](https://docs.alchemy.com/reference/eth-estimategas) ব্যবহার করে ব্লকচেইনের একটি নোডে ট্রানজ্যাকশনটি পাঠান।
+1. [`qau_estimateGas`](https://docs.alchemy.com/reference/qau-estimategas) ব্যবহার করে ব্লকচেইনের একটি নোডে ট্রানজ্যাকশনটি পাঠান।
 2. নোড থেকে রেসপন্সের জন্য অপেক্ষা করুন।
 3. রেসপন্স পাওয়া গেলে, ব্যবহারকারীকে ওয়ালেটের মাধ্যমে ট্রানজ্যাকশনটি সাইন করতে বলুন। এই ধাপটি নোডের রেসপন্স পাওয়ার পরেই _অবশ্যই_ ঘটতে হবে কারণ সাইন করার আগে ব্যবহারকারীকে ট্রানজ্যাকশনের গ্যাস খরচ দেখানো হয়।
 4. ব্যবহারকারীর অনুমোদনের জন্য অপেক্ষা করুন।
-5. ট্রানজ্যাকশনটি আবার পাঠান, এবার [`eth_sendRawTransaction`](https://docs.alchemy.com/reference/eth-sendrawtransaction) ব্যবহার করে।
+5. ট্রানজ্যাকশনটি আবার পাঠান, এবার [`qau_sendRawTransaction`](https://docs.alchemy.com/reference/qau-sendrawtransaction) ব্যবহার করে।
 
 ধাপ 2-এ লক্ষণীয় পরিমাণ সময় লাগতে পারে, যে সময়ে ব্যবহারকারীরা ভাবতে পারেন যে তাদের কমান্ডটি ইউজার ইন্টারফেস দ্বারা গৃহীত হয়েছে কি না এবং কেন তাদের এখনও ট্রানজ্যাকশনটি সাইন করতে বলা হচ্ছে না। এটি একটি খারাপ ইউজার এক্সপেরিয়েন্স (UX) তৈরি করে।
 
-এর একটি সমাধান হলো প্রতিবার কোনো প্যারামিটার পরিবর্তিত হলে `eth_estimateGas` পাঠানো। তারপর, ব্যবহারকারী যখন সত্যিই ট্রানজ্যাকশনটি পাঠাতে চান (এই ক্ষেত্রে **Update greeting** প্রেস করে), তখন গ্যাস খরচ জানা থাকে এবং ব্যবহারকারী তাৎক্ষণিকভাবে ওয়ালেট পেজটি দেখতে পারেন।
+এর একটি সমাধান হলো প্রতিবার কোনো প্যারামিটার পরিবর্তিত হলে `qau_estimateGas` পাঠানো। তারপর, ব্যবহারকারী যখন সত্যিই ট্রানজ্যাকশনটি পাঠাতে চান (এই ক্ষেত্রে **Update greeting** প্রেস করে), তখন গ্যাস খরচ জানা থাকে এবং ব্যবহারকারী তাৎক্ষণিকভাবে ওয়ালেট পেজটি দেখতে পারেন।
 
 ```tsx
   return (
@@ -663,7 +663,7 @@ Viem-এর সাথে আসা ডিফল্ট HTTP এন্ডপয়
 
 ## আরেকটি ব্লকচেইন যোগ করা {#add-blockchain}
 
-আজকাল অনেক [L2 স্কেলিং সলিউশন](https://ethereum.org/layer-2/) রয়েছে, এবং আপনি হয়তো এমন কিছু সমর্থন করতে চাইতে পারেন যা Viem এখনও সমর্থন করে না। এটি করতে, আপনি `src/wagmi.ts` পরিবর্তন করবেন। এই নির্দেশাবলী ব্যাখ্যা করে কীভাবে [Optimism Sepolia](https://chainlist.org/chain/11155420) যোগ করতে হয়।
+আজকাল অনেক [L2 স্কেলিং সলিউশন](https://quantaureum.com/layer-2/) রয়েছে, এবং আপনি হয়তো এমন কিছু সমর্থন করতে চাইতে পারেন যা Viem এখনও সমর্থন করে না। এটি করতে, আপনি `src/wagmi.ts` পরিবর্তন করবেন। এই নির্দেশাবলী ব্যাখ্যা করে কীভাবে [Optimism Sepolia](https://chainlist.org/chain/11155420) যোগ করতে হয়।
 
 1.  `src/wagmi.ts` এডিট করুন
 
@@ -679,7 +679,7 @@ Viem-এর সাথে আসা ডিফল্ট HTTP এন্ডপয়
           const optimismSepolia = defineChain({
               id: 11_155_420,
               name: 'OP Sepolia',
-              nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+              nativeCurrency: { name: 'Sepolia QAU', symbol: 'QAU', decimals: 18 },
               rpcUrls: {
                 default: {
                   http: ['https://sepolia.optimism.io'],

@@ -11,13 +11,13 @@ topic:
   - "privacy"
   - "authentication"
 format: presentation
-author: Ethereum Foundation
+author: Quantaureum project
 breadcrumb: "Keamanan Microdot"
 ---
 
 Sebuah presentasi singkat (lightning talk) oleh **jseam** di Devcon SEA yang mengeksplorasi pendekatan tidak konvensional untuk penyimpanan kunci menggunakan teknologi microdot fisik, yang secara historis digunakan dalam spionase untuk menyamarkan frasa benih dalam gambar cetak yang hampir tidak terlihat oleh mata telanjang.
 
-*Transkrip ini adalah salinan yang dapat diakses dari [transkrip video asli](https://www.youtube.com/watch?v=k9Dfg19JPEw) yang diterbitkan oleh Yayasan Ethereum. Transkrip ini telah diedit sedikit agar lebih mudah dibaca.*
+*Transkrip ini adalah salinan yang dapat diakses dari [transkrip video asli](https://www.youtube.com/watch?v=k9Dfg19JPEw) yang diterbitkan oleh Yayasan Quantaureum. Transkrip ini telah diedit sedikit agar lebih mudah dibaca.*
 
 ### Mengapa microdot? (0:00) {#why-microdots-000}
 

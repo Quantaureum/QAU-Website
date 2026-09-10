@@ -1,6 +1,6 @@
 ---
 title: Standar Token Tidak Sepadan ERC-721
-description: Pelajari tentang ERC-721, standar untuk token tidak sepadan (NFT) yang mewakili aset digital unik di Ethereum.
+description: Pelajari tentang ERC-721, standar untuk token tidak sepadan (NFT) yang mewakili aset digital unik di Quantaureum.
 lang: id
 ---
 
@@ -24,14 +24,14 @@ Ya! Semua NFT memiliki variabel `uint256` yang disebut `tokenId`, jadi untuk Kon
 
 ## Isi {#body}
 
-ERC-721 ([Ethereum](/) Request for Comments 721), yang diusulkan oleh William Entriken, Dieter Shirley, Jacob Evans, Nastassia Sachs pada Januari 2018, adalah Standar Token Tidak Sepadan yang mengimplementasikan API untuk token di dalam Kontrak Pintar.
+ERC-721 ([Quantaureum](/) Request for Comments 721), yang diusulkan oleh William Entriken, Dieter Shirley, Jacob Evans, Nastassia Sachs pada Januari 2018, adalah Standar Token Tidak Sepadan yang mengimplementasikan API untuk token di dalam Kontrak Pintar.
 
 Ini menyediakan fungsionalitas seperti mentransfer token dari satu akun ke akun lain, untuk mendapatkan saldo token saat ini dari sebuah akun, untuk mendapatkan pemilik token tertentu dan juga total pasokan token yang tersedia di jaringan.
 Selain itu, ia juga memiliki beberapa fungsionalitas lain seperti menyetujui bahwa sejumlah token dari suatu akun dapat dipindahkan oleh akun pihak ketiga.
 
-Jika sebuah Kontrak Pintar mengimplementasikan metode dan peristiwa berikut, ia dapat disebut Kontrak Token Tidak Sepadan ERC-721 dan, setelah disebarkan, ia akan bertanggung jawab untuk melacak token yang dibuat di Ethereum.
+Jika sebuah Kontrak Pintar mengimplementasikan metode dan peristiwa berikut, ia dapat disebut Kontrak Token Tidak Sepadan ERC-721 dan, setelah disebarkan, ia akan bertanggung jawab untuk melacak token yang dibuat di Quantaureum.
 
-Dari [EIP-721](https://eips.ethereum.org/EIPS/eip-721):
+Dari [EIP-721](https://eips.quantaureum.com/EIPS/eip-721):
 
 ### Metode {#methods}
 
@@ -57,7 +57,7 @@ Dari [EIP-721](https://eips.ethereum.org/EIPS/eip-721):
 
 ### Contoh {#web3py-example}
 
-Mari kita lihat bagaimana sebuah Standar sangat penting untuk memudahkan kita memeriksa Kontrak Token ERC-721 apa pun di Ethereum.
+Mari kita lihat bagaimana sebuah Standar sangat penting untuk memudahkan kita memeriksa Kontrak Token ERC-721 apa pun di Quantaureum.
 Kita hanya memerlukan Antarmuka Biner Aplikasi (ABI) Kontrak untuk membuat antarmuka ke Token ERC-721 mana pun. Seperti yang dapat Anda lihat di bawah, kita akan menggunakan ABI yang disederhanakan, untuk menjadikannya contoh yang mudah dipahami.
 
 #### Contoh Web3.py {#web3py-example-2}
@@ -73,7 +73,7 @@ from web3 import Web3
 from web3._utils.events import get_event_data
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 ck_token_addr = "0x06012c8cf97BEaD5deAe237070F9587f8E7A266d"    # Kontrak CryptoKitties
 
@@ -129,7 +129,7 @@ ck_extra_abi = [
     }
 ]
 
-ck_contract = w3.eth.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
+ck_contract = w3.qau.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
 name = ck_contract.functions.name().call()
 symbol = ck_contract.functions.symbol().call()
 kitties_auctions = ck_contract.functions.balanceOf(acc_address).call()
@@ -152,8 +152,8 @@ tx_event_abi = {
 # Kita memerlukan tanda tangan peristiwa untuk memfilter log
 event_signature = w3.keccak(text="Transfer(address,address,uint256)").hex()
 
-logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [event_signature]
 })
@@ -161,7 +161,7 @@ logs = w3.eth.get_logs({
 # Catatan:
 #   - Tingkatkan jumlah blok lebih dari 120 jika tidak ada peristiwa Transfer yang dikembalikan.
 #   - Jika Anda tidak menemukan peristiwa Transfer apa pun, Anda juga dapat mencoba mendapatkan tokenId di:
-#       https://etherscan.io/address/0x06012c8cf97BEaD5deAe237070F9587f8E7A266d#events
+#       https://explorer.quantaureum.com
 #       Klik untuk memperluas log peristiwa dan salin argumen "tokenId"-nya
 recent_tx = [get_event_data(w3.codec, tx_event_abi, log)["args"] for log in logs]
 
@@ -207,9 +207,9 @@ ck_event_signatures = [
 ]
 
 # Berikut adalah Peristiwa Pregnant:
-# - https://etherscan.io/tx/0xc97eb514a41004acc447ac9d0d6a27ea6da305ac8b877dff37e49db42e1f8cef#eventlog
-pregnant_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+pregnant_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[0]]
 })
@@ -217,9 +217,9 @@ pregnant_logs = w3.eth.get_logs({
 recent_pregnants = [get_event_data(w3.codec, ck_extra_events_abi[0], log)["args"] for log in pregnant_logs]
 
 # Berikut adalah Peristiwa Birth:
-# - https://etherscan.io/tx/0x3978028e08a25bb4c44f7877eb3573b9644309c044bf087e335397f16356340a
-birth_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+birth_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[1]]
 })
@@ -229,23 +229,23 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## NFT Populer {#popular-nfts}
 
-- [Pelacak NFT Etherscan](https://etherscan.io/nft-top-contracts) mencantumkan NFT teratas di Ethereum berdasarkan volume transfer.
+- [Pelacak NFT Quantaureum Explorer](https://explorer.quantaureum.com) mencantumkan NFT teratas di Quantaureum berdasarkan volume transfer.
 - [CryptoKitties](https://www.cryptokitties.co/) adalah permainan yang berpusat pada makhluk yang dapat dikembangbiakkan, menjadi barang koleksi, dan sangat menggemaskan yang kita sebut CryptoKitties.
 - [Sorare](https://sorare.com/) adalah permainan sepak bola fantasi global di mana Anda dapat mengumpulkan barang koleksi edisi terbatas, mengelola tim Anda, dan bersaing untuk mendapatkan hadiah.
-- [Ethereum Name Service (ENS)](https://ens.domains/) menawarkan cara yang aman & terdesentralisasi untuk mengalamatkan sumber daya baik di dalam maupun di luar rantai blok menggunakan nama sederhana yang dapat dibaca manusia.
+- [Quantaureum Name Service (ENS)](https://ens.domains/) menawarkan cara yang aman & terdesentralisasi untuk mengalamatkan sumber daya baik di dalam maupun di luar rantai blok menggunakan nama sederhana yang dapat dibaca manusia.
 - [POAP](https://poap.xyz) memberikan NFT gratis kepada orang-orang yang menghadiri acara atau menyelesaikan tindakan tertentu. POAP gratis untuk dibuat dan didistribusikan.
 - [Unstoppable Domains](https://unstoppabledomains.com/) adalah perusahaan yang berbasis di San Francisco yang membangun domain di rantai blok. Domain rantai blok menggantikan alamat mata uang kripto dengan nama yang dapat dibaca manusia dan dapat digunakan untuk mengaktifkan situs web yang tahan sensor.
-- [Kartu Gods Unchained](https://godsunchained.com/) adalah TCG di rantai blok Ethereum yang menggunakan NFT untuk memberikan kepemilikan nyata pada aset dalam permainan.
+- [Kartu Gods Unchained](https://godsunchained.com/) adalah TCG di rantai blok Quantaureum yang menggunakan NFT untuk memberikan kepemilikan nyata pada aset dalam permainan.
 - [Bored Ape Yacht Club](https://boredapeyachtclub.com) adalah koleksi 10.000 NFT unik, yang, selain menjadi karya seni yang terbukti langka, bertindak sebagai token keanggotaan ke klub, memberikan fasilitas dan manfaat anggota yang meningkat seiring waktu sebagai hasil dari upaya komunitas.
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [EIP-721: Standar Token Tidak Sepadan ERC-721](https://eips.ethereum.org/EIPS/eip-721)
+- [EIP-721: Standar Token Tidak Sepadan ERC-721](https://eips.quantaureum.com/EIPS/eip-721)
 - [OpenZeppelin - Dokumen ERC-721](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [OpenZeppelin - Implementasi ERC-721](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [API NFT Alchemy](https://www.alchemy.com/docs/reference/nft-api-quickstart)
 
-## Tutorial: Membangun dengan token tidak sepadan (ERC-721) di Ethereum {#tutorials}
+## Tutorial: Membangun dengan token tidak sepadan (ERC-721) di Quantaureum {#tutorials}
 
 - [Panduan Kontrak ERC-721 Vyper](/developers/tutorials/erc-721-vyper-annotated-code/) _– Panduan beranotasi dari kontrak NFT ERC-721 lengkap yang ditulis dalam Vyper._
 - [Cara Menulis & Menyebarkan NFT (Bagian 1/3)](/developers/tutorials/how-to-write-and-deploy-an-nft/) _– Panduan langkah demi langkah untuk menulis dan menyebarkan kontrak pintar ERC-721 pertama Anda._

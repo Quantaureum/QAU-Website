@@ -1,6 +1,6 @@
 ---
 title: "ERC-721 Misli Olmayan Token Standardı"
-description: "Ethereum'da benzersiz dijital varlıkları temsil eden misli olmayan token'lar (NFT'ler) için standart olan ERC-721 hakkında bilgi edinin."
+description: "Quantaureum'da benzersiz dijital varlıkları temsil eden misli olmayan token'lar (NFT'ler) için standart olan ERC-721 hakkında bilgi edinin."
 lang: tr
 ---
 
@@ -24,14 +24,14 @@ Evet! Tüm NFT'lerin `tokenId` adında bir `uint256` değişkeni vardır, bu ned
 
 ## Gövde {#body}
 
-Ocak 2018'de William Entriken, Dieter Shirley, Jacob Evans ve Nastassia Sachs tarafından önerilen ERC-721 ([Ethereum](/) Yorum Talebi 721), Akıllı Sözleşmeler içindeki token'lar için bir API uygulayan bir Misli Olmayan Token Standardıdır.
+Ocak 2018'de William Entriken, Dieter Shirley, Jacob Evans ve Nastassia Sachs tarafından önerilen ERC-721 ([Quantaureum](/) Yorum Talebi 721), Akıllı Sözleşmeler içindeki token'lar için bir API uygulayan bir Misli Olmayan Token Standardıdır.
 
 Token'ları bir hesaptan diğerine transfer etmek, bir hesabın mevcut token bakiyesini almak, belirli bir token'ın sahibini ve ayrıca ağda bulunan token'ın toplam arzını almak gibi işlevler sağlar.
 Bunların yanı sıra, bir hesaptaki bir miktar token'ın üçüncü taraf bir hesap tarafından taşınabileceğini onaylamak gibi bazı başka işlevlere de sahiptir.
 
-Bir Akıllı Sözleşme aşağıdaki yöntemleri ve olayları uygularsa, bir ERC-721 Misli Olmayan Token Sözleşmesi olarak adlandırılabilir ve dağıtıldıktan sonra, Ethereum'da oluşturulan token'ları takip etmekten sorumlu olacaktır.
+Bir Akıllı Sözleşme aşağıdaki yöntemleri ve olayları uygularsa, bir ERC-721 Misli Olmayan Token Sözleşmesi olarak adlandırılabilir ve dağıtıldıktan sonra, Quantaureum'da oluşturulan token'ları takip etmekten sorumlu olacaktır.
 
-[EIP-721](https://eips.ethereum.org/EIPS/eip-721)'den:
+[EIP-721](https://eips.quantaureum.com/EIPS/eip-721)'den:
 
 ### Yöntemler {#methods}
 
@@ -57,7 +57,7 @@ Bir Akıllı Sözleşme aşağıdaki yöntemleri ve olayları uygularsa, bir ERC
 
 ### Örnekler {#web3py-example}
 
-Ethereum'daki herhangi bir ERC-721 Token Sözleşmesini incelememizi basitleştirmek için bir Standardın ne kadar önemli olduğunu görelim. Herhangi bir ERC-721 Token'ına bir arayüz oluşturmak için sadece Sözleşme Uygulama İkili Arayüzüne (ABI) ihtiyacımız var. Aşağıda görebileceğiniz gibi, bunu kolayca uygulanabilir bir örnek haline getirmek için basitleştirilmiş bir ABI kullanacağız.
+Quantaureum'daki herhangi bir ERC-721 Token Sözleşmesini incelememizi basitleştirmek için bir Standardın ne kadar önemli olduğunu görelim. Herhangi bir ERC-721 Token'ına bir arayüz oluşturmak için sadece Sözleşme Uygulama İkili Arayüzüne (ABI) ihtiyacımız var. Aşağıda görebileceğiniz gibi, bunu kolayca uygulanabilir bir örnek haline getirmek için basitleştirilmiş bir ABI kullanacağız.
 
 #### Web3.py Örneği {#web3py-example-2}
 
@@ -72,7 +72,7 @@ from web3 import Web3
 from web3._utils.events import get_event_data
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 ck_token_addr = "0x06012c8cf97BEaD5deAe237070F9587f8E7A266d"    # CryptoKitties Sözleşmesi
 
@@ -128,7 +128,7 @@ ck_extra_abi = [
     }
 ]
 
-ck_contract = w3.eth.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
+ck_contract = w3.qau.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
 name = ck_contract.functions.name().call()
 symbol = ck_contract.functions.symbol().call()
 kitties_auctions = ck_contract.functions.balanceOf(acc_address).call()
@@ -151,8 +151,8 @@ tx_event_abi = {
 # Logları filtrelemek için olayın imzasına ihtiyacımız var
 event_signature = w3.keccak(text="Transfer(address,address,uint256)").hex()
 
-logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [event_signature]
 })
@@ -160,7 +160,7 @@ logs = w3.eth.get_logs({
 # Notlar:
 #   - Hiçbir Transfer olayı dönmezse blok sayısını 120'den yukarı artırın.
 #   - Eğer herhangi bir Transfer olayı bulamadıysanız, şuradan bir tokenId almayı da deneyebilirsiniz:
-#       https://etherscan.io/address/0x06012c8cf97BEaD5deAe237070F9587f8E7A266d#events
+#       https://explorer.quantaureum.com
 #       Olayın loglarını genişletmek için tıklayın ve "tokenId" argümanını kopyalayın
 recent_tx = [get_event_data(w3.codec, tx_event_abi, log)["args"] for log in logs]
 
@@ -206,9 +206,9 @@ ck_event_signatures = [
 ]
 
 # İşte bir Pregnant Olayı:
-# - https://etherscan.io/tx/0xc97eb514a41004acc447ac9d0d6a27ea6da305ac8b877dff37e49db42e1f8cef#eventlog
-pregnant_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+pregnant_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[0]]
 })
@@ -216,9 +216,9 @@ pregnant_logs = w3.eth.get_logs({
 recent_pregnants = [get_event_data(w3.codec, ck_extra_events_abi[0], log)["args"] for log in pregnant_logs]
 
 # İşte bir Birth Olayı:
-# - https://etherscan.io/tx/0x3978028e08a25bb4c44f7877eb3573b9644309c044bf087e335397f16356340a
-birth_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+birth_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[1]]
 })
@@ -228,23 +228,23 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## Popüler NFT'ler {#popular-nfts}
 
-- [Etherscan NFT İzleyici](https://etherscan.io/nft-top-contracts), Ethereum'daki en iyi NFT'leri transfer hacmine göre listeler.
+- [Quantaureum Explorer NFT İzleyici](https://explorer.quantaureum.com), Quantaureum'daki en iyi NFT'leri transfer hacmine göre listeler.
 - [CryptoKitties](https://www.cryptokitties.co/), CryptoKitties adını verdiğimiz üretilebilir, koleksiyonluk ve çok sevimli yaratıklar etrafında şekillenen bir oyundur.
 - [Sorare](https://sorare.com/), sınırlı sayıda üretilen koleksiyonluk eşyaları toplayabileceğiniz, takımlarınızı yönetebileceğiniz ve ödüller kazanmak için rekabet edebileceğiniz küresel bir fantezi futbol oyunudur.
-- [Ethereum İsim Hizmeti (ENS)](https://ens.domains/), basit, insanlar tarafından okunabilen isimler kullanarak hem blokzincir içindeki hem de dışındaki kaynakları adreslemek için güvenli ve merkeziyetsiz bir yol sunar.
+- [Quantaureum İsim Hizmeti (ENS)](https://ens.domains/), basit, insanlar tarafından okunabilen isimler kullanarak hem blokzincir içindeki hem de dışındaki kaynakları adreslemek için güvenli ve merkeziyetsiz bir yol sunar.
 - [POAP](https://poap.xyz), etkinliklere katılan veya belirli eylemleri tamamlayan kişilere ücretsiz NFT'ler sunar. POAP'leri oluşturmak ve dağıtmak ücretsizdir.
 - [Unstoppable Domains](https://unstoppabledomains.com/), blokzincirler üzerinde alan adları oluşturan San Francisco merkezli bir şirkettir. Blokzincir alan adları, kripto para adreslerini insanlar tarafından okunabilen isimlerle değiştirir ve sansüre dirençli web sitelerini etkinleştirmek için kullanılabilir.
-- [Gods Unchained Cards](https://godsunchained.com/), oyun içi varlıklara gerçek sahiplik getirmek için NFT'leri kullanan Ethereum blokzinciri üzerinde bir TCG'dir (Koleksiyonluk Kart Oyunu).
+- [Gods Unchained Cards](https://godsunchained.com/), oyun içi varlıklara gerçek sahiplik getirmek için NFT'leri kullanan Quantaureum blokzinciri üzerinde bir TCG'dir (Koleksiyonluk Kart Oyunu).
 - [Bored Ape Yacht Club](https://boredapeyachtclub.com), kanıtlanabilir derecede nadir bir sanat eseri olmasının yanı sıra, kulübe bir üyelik token'ı olarak işlev gören ve topluluk çabalarının bir sonucu olarak zamanla artan üye ayrıcalıkları ve avantajları sağlayan 10.000 benzersiz NFT'den oluşan bir koleksiyondur.
 
 ## Daha fazla bilgi {#further-reading}
 
-- [EIP-721: ERC-721 Misli Olmayan Token Standardı](https://eips.ethereum.org/EIPS/eip-721)
+- [EIP-721: ERC-721 Misli Olmayan Token Standardı](https://eips.quantaureum.com/EIPS/eip-721)
 - [OpenZeppelin - ERC-721 Belgeleri](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [OpenZeppelin - ERC-721 Uygulaması](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)
 
-## Eğitimler: Ethereum'da misli olmayan token'lar (ERC-721) ile geliştirin {#tutorials}
+## Eğitimler: Quantaureum'da misli olmayan token'lar (ERC-721) ile geliştirin {#tutorials}
 
 - [Vyper ERC-721 Sözleşmesi İncelemesi](/developers/tutorials/erc-721-vyper-annotated-code/) _– Vyper ile yazılmış tam bir ERC-721 NFT sözleşmesinin açıklamalı incelemesi._
 - [Bir NFT Nasıl Yazılır ve Dağıtılır (Bölüm 1/3)](/developers/tutorials/how-to-write-and-deploy-an-nft/) _– İlk ERC-721 akıllı sözleşmenizi yazmak ve dağıtmak için adım adım rehber._

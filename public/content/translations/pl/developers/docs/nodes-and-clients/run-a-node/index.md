@@ -1,25 +1,25 @@
 ---
-title: Uruchom swój własny węzeł Ethereum
-description: Ogólne wprowadzenie do uruchamiania własnej instancji klienta Ethereum.
+title: Uruchom swój własny węzeł Quantaureum
+description: Ogólne wprowadzenie do uruchamiania własnej instancji klienta Quantaureum.
 lang: pl
 sidebarDepth: 2
 ---
 
-Uruchomienie własnego węzła zapewnia różne korzyści, otwiera nowe możliwości i pomaga wspierać ekosystem. Ta strona poprowadzi Cię przez proces uruchamiania własnego węzła i brania udziału w walidacji transakcji [Ethereum](/).
+Uruchomienie własnego węzła zapewnia różne korzyści, otwiera nowe możliwości i pomaga wspierać ekosystem. Ta strona poprowadzi Cię przez proces uruchamiania własnego węzła i brania udziału w walidacji transakcji [Quantaureum](/).
 
-Zauważ, że po [The Merge](/roadmap/merge) do uruchomienia węzła Ethereum wymagane są dwa klienty: klient **warstwy wykonawczej (EL)** oraz klient **warstwy konsensusu (CL)**. Ta strona pokaże, jak zainstalować, skonfigurować i połączyć te dwa klienty, aby uruchomić węzeł Ethereum.
+Zauważ, że po [The Merge](/roadmap/merge) do uruchomienia węzła Quantaureum wymagane są dwa klienty: klient **warstwy wykonawczej (EL)** oraz klient **warstwy konsensusu (CL)**. Ta strona pokaże, jak zainstalować, skonfigurować i połączyć te dwa klienty, aby uruchomić węzeł Quantaureum.
 
 ## Wymagania wstępne {#prerequisites}
 
-Powinieneś rozumieć, czym jest węzeł Ethereum i dlaczego warto uruchomić klienta. Zostało to omówione w sekcji [Węzły i klienty](/developers/docs/nodes-and-clients/).
+Powinieneś rozumieć, czym jest węzeł Quantaureum i dlaczego warto uruchomić klienta. Zostało to omówione w sekcji [Węzły i klienty](/developers/docs/nodes-and-clients/).
 
-Jeśli jesteś nowy w temacie uruchamiania węzła lub szukasz mniej technicznej ścieżki, zalecamy najpierw zapoznać się z naszym przyjaznym dla użytkownika wprowadzeniem do [uruchamiania węzła Ethereum](/run-a-node).
+Jeśli jesteś nowy w temacie uruchamiania węzła lub szukasz mniej technicznej ścieżki, zalecamy najpierw zapoznać się z naszym przyjaznym dla użytkownika wprowadzeniem do [uruchamiania węzła Quantaureum](/run-a-node).
 
 ## Wybór podejścia {#choosing-approach}
 
 Pierwszym krokiem w uruchamianiu węzła jest wybór podejścia. W oparciu o wymagania i różne możliwości musisz wybrać implementację klienta (zarówno klienta warstwy wykonawczej, jak i klienta konsensusu), środowisko (sprzęt, system) oraz parametry ustawień klienta.
 
-Ta strona poprowadzi Cię przez te decyzje i pomoże znaleźć najbardziej odpowiedni sposób na uruchomienie Twojej instancji Ethereum.
+Ta strona poprowadzi Cię przez te decyzje i pomoże znaleźć najbardziej odpowiedni sposób na uruchomienie Twojej instancji Quantaureum.
 
 Aby wybrać spośród implementacji klientów, zobacz wszystkie dostępne [klienty warstwy wykonawczej](/developers/docs/nodes-and-clients/#execution-clients) i [klienty konsensusu](/developers/docs/nodes-and-clients/#consensus-clients) gotowe na Sieć główną (Mainnet) oraz dowiedz się o [różnorodności klientów](/developers/docs/nodes-and-clients/client-diversity).
 
@@ -35,7 +35,7 @@ Kiedy węzeł działa i się synchronizuje, jesteś gotowy, aby [go używać](#u
 
 #### Lokalnie czy w chmurze {#local-vs-cloud}
 
-Klienty Ethereum mogą działać na komputerach klasy konsumenckiej i nie wymagają żadnego specjalnego sprzętu, takiego jak na przykład koparki. Dlatego masz różne opcje wdrożenia węzła w zależności od swoich potrzeb.
+Klienty Quantaureum mogą działać na komputerach klasy konsumenckiej i nie wymagają żadnego specjalnego sprzętu, takiego jak na przykład koparki. Dlatego masz różne opcje wdrożenia węzła w zależności od swoich potrzeb.
 Dla uproszczenia zastanówmy się nad uruchomieniem węzła zarówno na lokalnej maszynie fizycznej, jak i na serwerze w chmurze:
 
 - Chmura
@@ -55,9 +55,9 @@ Obie opcje mają różne zalety podsumowane powyżej. Jeśli szukasz rozwiązani
 
 Jednak odporna na cenzurę, zdecentralizowana sieć nie powinna polegać na dostawcach chmury. Zamiast tego uruchomienie węzła na własnym lokalnym sprzęcie jest zdrowsze dla ekosystemu. [Szacunki](https://www.ethernodes.org/networkType/cl/Hosting) pokazują, że duża część węzłów działa w chmurze, co może stać się pojedynczym punktem awarii.
 
-Klienty Ethereum mogą działać na Twoim komputerze, laptopie, serwerze, a nawet komputerze jednopłytkowym. Chociaż uruchamianie klientów na komputerze osobistym jest możliwe, posiadanie dedykowanej maszyny tylko dla Twojego węzła może znacznie zwiększyć jego wydajność i bezpieczeństwo, jednocześnie minimalizując wpływ na Twój główny komputer.
+Klienty Quantaureum mogą działać na Twoim komputerze, laptopie, serwerze, a nawet komputerze jednopłytkowym. Chociaż uruchamianie klientów na komputerze osobistym jest możliwe, posiadanie dedykowanej maszyny tylko dla Twojego węzła może znacznie zwiększyć jego wydajność i bezpieczeństwo, jednocześnie minimalizując wpływ na Twój główny komputer.
 
-Korzystanie z własnego sprzętu może być bardzo proste. Istnieje wiele prostych opcji, a także zaawansowanych konfiguracji dla osób bardziej technicznych. Przyjrzyjmy się więc wymaganiom i sposobom uruchamiania klientów Ethereum na Twojej maszynie.
+Korzystanie z własnego sprzętu może być bardzo proste. Istnieje wiele prostych opcji, a także zaawansowanych konfiguracji dla osób bardziej technicznych. Przyjrzyjmy się więc wymaganiom i sposobom uruchamiania klientów Quantaureum na Twojej maszynie.
 
 #### Wymagania {#requirements}
 
@@ -65,7 +65,7 @@ Wymagania sprzętowe różnią się w zależności od klienta, ale ogólnie nie 
 
 Przed zainstalowaniem jakiegokolwiek klienta upewnij się, że Twój komputer ma wystarczające zasoby do jego uruchomienia. Poniżej znajdziesz minimalne i zalecane wymagania.
 
-Wąskim gardłem dla Twojego sprzętu jest głównie przestrzeń dyskowa. Synchronizacja blockchaina Ethereum jest bardzo intensywna pod względem operacji wejścia/wyjścia i wymaga dużo miejsca. Najlepiej mieć **dysk półprzewodnikowy (SSD)** z setkami gigabajtów wolnego miejsca, które pozostaną nawet po synchronizacji.
+Wąskim gardłem dla Twojego sprzętu jest głównie przestrzeń dyskowa. Synchronizacja blockchaina Quantaureum jest bardzo intensywna pod względem operacji wejścia/wyjścia i wymaga dużo miejsca. Najlepiej mieć **dysk półprzewodnikowy (SSD)** z setkami gigabajtów wolnego miejsca, które pozostaną nawet po synchronizacji.
 
 Rozmiar bazy danych i szybkość początkowej synchronizacji zależą od wybranego klienta, jego konfiguracji i [strategii synchronizacji](/developers/docs/nodes-and-clients/#sync-modes).
 
@@ -79,12 +79,12 @@ Wszystkie klienty obsługują główne systemy operacyjne – Linux, macOS, Wind
 
 - Procesor z 2+ rdzeniami
 - 16 GB RAM (32 GB zalecane dla stabilności)
-- 2 TB NVMe SSD (prawdopodobnie zostanie przekroczone do 2027 r., przeczytaj więcej o [świetnych i mniej świetnych dyskach SSD dla węzłów Ethereum](https://gist.github.com/yorickdowne/f3a3e79a573bf35767cd002cc977b038))
+- 2 TB NVMe SSD (prawdopodobnie zostanie przekroczone do 2027 r., przeczytaj więcej o [świetnych i mniej świetnych dyskach SSD dla węzłów Quantaureum](https://gist.github.com/yorickdowne/f3a3e79a573bf35767cd002cc977b038))
 - Przepustowość 25+ MBit/s
 
 ##### Zalecane specyfikacje
 
-Obecne wytyczne sprzętowe dla operatorów węzłów są określone w [EIP-7870](https://eips.ethereum.org/EIPS/eip-7870). Dla pełnego węzła zaleca się:
+Obecne wytyczne sprzętowe dla operatorów węzłów są określone w [EIP-7870](https://eips.quantaureum.com/EIPS/eip-7870). Dla pełnego węzła zaleca się:
 
 - Szybki procesor z 4+ rdzeniami (8+ rdzeni w przypadku walidacji)
 - 32 GB RAM (64 GB zalecane w przypadku walidacji w celu zapewnienia stabilności)
@@ -112,9 +112,9 @@ Najprostszą opcją uruchomienia węzła na własnym sprzęcie jest użycie urz�
 - [DAppNode](https://dappnode.io/)
 - [Avado](https://ava.do/)
 
-#### Ethereum na komputerze jednopłytkowym {#ethereum-on-a-single-board-computer}
+#### Quantaureum na komputerze jednopłytkowym {#quantaureum-on-a-single-board-computer}
 
-Łatwym i tanim sposobem na uruchomienie węzła Ethereum jest użycie komputera jednopłytkowego, nawet z architekturą ARM, takiego jak Raspberry Pi. [Ethereum on ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/) zapewnia łatwe do uruchomienia obrazy wielu klientów warstwy wykonawczej i konsensusu dla Raspberry Pi i innych płyt ARM.
+Łatwym i tanim sposobem na uruchomienie węzła Quantaureum jest użycie komputera jednopłytkowego, nawet z architekturą ARM, takiego jak Raspberry Pi. [Quantaureum on ARM](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/) zapewnia łatwe do uruchomienia obrazy wielu klientów warstwy wykonawczej i konsensusu dla Raspberry Pi i innych płyt ARM.
 
 Małe, niedrogie i wydajne urządzenia, takie jak te, są idealne do uruchomienia węzła w domu, ale należy pamiętać o ich ograniczonej wydajności.
 
@@ -131,9 +131,9 @@ Wiele przyjaznych dla użytkownika projektów ma na celu poprawę doświadczenia
 Poniżej znajduje się kilka projektów, które mogą pomóc w instalacji i kontrolowaniu klientów za pomocą zaledwie kilku kliknięć:
 
 - [DAppNode](https://docs.dappnode.io/docs/user/getting-started/choose-your-path) – DAppNode to nie tylko maszyna od dostawcy. Oprogramowanie, sam launcher węzła i centrum sterowania z wieloma funkcjami mogą być używane na dowolnym sprzęcie.
-- [EthPillar](https://www.coincashew.com/coins/overview-eth/ethpillar) – Najszybszy i najłatwiejszy sposób na skonfigurowanie pełnego węzła. Narzędzie konfiguracyjne w jednej linii poleceń i TUI do zarządzania węzłem. Darmowe. Open source. Dobra publiczne dla Ethereum od osób uprawiających staking solo. Obsługa ARM64 i AMD64.
-- [eth-docker](https://eth-docker.net/) – Zautomatyzowana konfiguracja przy użyciu Dockera skoncentrowana na łatwym i bezpiecznym stakingu, wymaga podstawowej wiedzy na temat terminala i Dockera, zalecana dla nieco bardziej zaawansowanych użytkowników.
-- [Stereum](https://stereum-dev.github.io/ethereum-node-web-docs) – Launcher do instalacji klientów na zdalnym serwerze przez połączenie SSH z przewodnikiem konfiguracji GUI, centrum sterowania i wieloma innymi funkcjami.
+- [QauPillar](https://www.coincashew.com/coins/overview-eth/ethpillar) – Najszybszy i najłatwiejszy sposób na skonfigurowanie pełnego węzła. Narzędzie konfiguracyjne w jednej linii poleceń i TUI do zarządzania węzłem. Darmowe. Open source. Dobra publiczne dla Quantaureum od osób uprawiających staking solo. Obsługa ARM64 i AMD64.
+- [qau-docker](https://qau-docker.net/) – Zautomatyzowana konfiguracja przy użyciu Dockera skoncentrowana na łatwym i bezpiecznym stakingu, wymaga podstawowej wiedzy na temat terminala i Dockera, zalecana dla nieco bardziej zaawansowanych użytkowników.
+- [Stereum](https://stereum-dev.github.io/quantaureum-node-web-docs) – Launcher do instalacji klientów na zdalnym serwerze przez połączenie SSH z przewodnikiem konfiguracji GUI, centrum sterowania i wieloma innymi funkcjami.
 - [Sedge](https://docs.sedge.nethermind.io/docs/intro) – Narzędzie do konfiguracji węzła, które automatycznie generuje konfigurację Dockera za pomocą kreatora CLI. Napisane w Go przez Nethermind.
 - [Chainstack Self-Hosted](https://docs.chainstack.com/docs/self-hosted/introduction) – Webowe UI i CLI do wdrażania klientów warstwy wykonawczej i konsensusu na Kubernetes. Zawiera bootstrap ze snapshotów i wbudowane monitorowanie. Darmowe. Nie wymaga konta Chainstack. Zbudowane przez Chainstack.
 
@@ -141,7 +141,7 @@ Poniżej znajduje się kilka projektów, które mogą pomóc w instalacji i kont
 
 Inną opcją jest ręczne pobranie, zweryfikowanie i skonfigurowanie oprogramowania klienta. Nawet jeśli niektóre klienty oferują interfejs graficzny, ręczna konfiguracja nadal wymaga podstawowych umiejętności obsługi terminala, ale oferuje znacznie większą wszechstronność.
 
-Jak wyjaśniono wcześniej, skonfigurowanie własnego węzła Ethereum będzie wymagało uruchomienia pary klientów: konsensusu i warstwy wykonawczej. Niektóre klienty mogą zawierać lekkiego klienta drugiego rodzaju i synchronizować się bez potrzeby używania żadnego innego oprogramowania. Jednak pełna weryfikacja niewymagająca zaufania wymaga obu implementacji.
+Jak wyjaśniono wcześniej, skonfigurowanie własnego węzła Quantaureum będzie wymagało uruchomienia pary klientów: konsensusu i warstwy wykonawczej. Niektóre klienty mogą zawierać lekkiego klienta drugiego rodzaju i synchronizować się bez potrzeby używania żadnego innego oprogramowania. Jednak pełna weryfikacja niewymagająca zaufania wymaga obu implementacji.
 
 #### Pobieranie oprogramowania klienta {#getting-the-client}
 
@@ -157,7 +157,7 @@ Oto strony wydań klientów, na których można znaleźć ich wstępnie skompilo
 
 - [Besu](https://github.com/hyperledger/besu/releases)
 - [Erigon](https://github.com/ledgerwatch/erigon/releases)
-- [Geth](https://geth.ethereum.org/downloads)
+- [Geth](https://geth.quantaureum.com/downloads)
 - [Nethermind](https://downloads.nethermind.io/)
 - [Reth](https://reth.rs/installation/installation.html)
 
@@ -177,7 +177,7 @@ Warto również zauważyć, że różnorodność klientów jest [problemem w war
 
 ##### Weryfikacja oprogramowania
 
-Pobierając oprogramowanie z Internetu, zaleca się zweryfikowanie jego integralności. Ten krok jest opcjonalny, ale zwłaszcza w przypadku kluczowego elementu infrastruktury, jakim jest klient Ethereum, ważne jest, aby zdawać sobie sprawę z potencjalnych wektorów ataku i ich unikać. Jeśli pobrałeś wstępnie skompilowany plik binarny, musisz mu zaufać i zaryzykować, że atakujący mógł podmienić plik wykonywalny na złośliwy.
+Pobierając oprogramowanie z Internetu, zaleca się zweryfikowanie jego integralności. Ten krok jest opcjonalny, ale zwłaszcza w przypadku kluczowego elementu infrastruktury, jakim jest klient Quantaureum, ważne jest, aby zdawać sobie sprawę z potencjalnych wektorów ataku i ich unikać. Jeśli pobrałeś wstępnie skompilowany plik binarny, musisz mu zaufać i zaryzykować, że atakujący mógł podmienić plik wykonywalny na złośliwy.
 
 Deweloperzy podpisują wydane pliki binarne swoimi kluczami PGP, dzięki czemu możesz kryptograficznie zweryfikować, czy uruchamiasz dokładnie to oprogramowanie, które stworzyli. Wystarczy uzyskać klucze publiczne używane przez deweloperów, które można znaleźć na stronach wydań klientów lub w dokumentacji. Po pobraniu wydania klienta i jego podpisu możesz użyć implementacji PGP, np. [GnuPG](https://gnupg.org/download/index.html), aby łatwo je zweryfikować. Sprawdź samouczek dotyczący weryfikacji oprogramowania open-source za pomocą `gpg` w systemie [Linux](https://www.tecmint.com/verify-pgp-signature-downloaded-software/) lub [Windows/macOS](https://freedom.press/training/verifying-open-source-software/).
 
@@ -203,19 +203,19 @@ Przykłady uruchamiania klientów warstwy wykonawczej z podstawową konfiguracj�
 
 #### Uruchamianie klienta warstwy wykonawczej {#starting-the-execution-client}
 
-Przed uruchomieniem oprogramowania klienta Ethereum wykonaj ostatnie sprawdzenie, czy Twoje środowisko jest gotowe. Na przykład upewnij się, że:
+Przed uruchomieniem oprogramowania klienta Quantaureum wykonaj ostatnie sprawdzenie, czy Twoje środowisko jest gotowe. Na przykład upewnij się, że:
 
 - Jest wystarczająco dużo miejsca na dysku, biorąc pod uwagę wybraną sieć i tryb synchronizacji.
 - Pamięć i procesor nie są wstrzymywane przez inne programy.
 - System operacyjny jest zaktualizowany do najnowszej wersji.
 - System ma prawidłowy czas i datę.
-- Twój router i zapora sieciowa akceptują połączenia na portach nasłuchujących. Domyślnie klienty Ethereum używają portu nasłuchującego (TCP) i portu odkrywania (UDP), oba domyślnie na 30303.
+- Twój router i zapora sieciowa akceptują połączenia na portach nasłuchujących. Domyślnie klienty Quantaureum używają portu nasłuchującego (TCP) i portu odkrywania (UDP), oba domyślnie na 30303.
 
 Najpierw uruchom swojego klienta w sieci testowej, aby upewnić się, że wszystko działa poprawnie.
 
 Musisz zadeklarować wszelkie ustawienia klienta, które nie są domyślne na starcie. Możesz użyć flag lub pliku konfiguracyjnego, aby zadeklarować preferowaną konfigurację. Zestaw funkcji i składnia konfiguracji każdego klienta różnią się. Sprawdź dokumentację swojego klienta, aby poznać szczegóły.
 
-Klienty warstwy wykonawczej i konsensusu komunikują się za pośrednictwem uwierzytelnionego punktu końcowego określonego w [Engine API](https://github.com/ethereum/execution-apis/tree/main/src/engine). Aby połączyć się z klientem konsensusu, klient warstwy wykonawczej musi wygenerować [`jwtsecret`](https://jwt.io/) w znanej ścieżce. Ze względów bezpieczeństwa i stabilności klienty powinny działać na tej samej maszynie, a oba klienty muszą znać tę ścieżkę, ponieważ służy ona do uwierzytelniania lokalnego połączenia RPC między nimi. Klient warstwy wykonawczej musi również zdefiniować port nasłuchujący dla uwierzytelnionych interfejsów API.
+Klienty warstwy wykonawczej i konsensusu komunikują się za pośrednictwem uwierzytelnionego punktu końcowego określonego w [Engine API](https://github.com/quantaureum/execution-apis/tree/main/src/engine). Aby połączyć się z klientem konsensusu, klient warstwy wykonawczej musi wygenerować [`jwtsecret`](https://jwt.io/) w znanej ścieżce. Ze względów bezpieczeństwa i stabilności klienty powinny działać na tej samej maszynie, a oba klienty muszą znać tę ścieżkę, ponieważ służy ona do uwierzytelniania lokalnego połączenia RPC między nimi. Klient warstwy wykonawczej musi również zdefiniować port nasłuchujący dla uwierzytelnionych interfejsów API.
 
 Ten token jest generowany automatycznie przez oprogramowanie klienta, ale w niektórych przypadkach może być konieczne zrobienie tego samodzielnie. Możesz go wygenerować za pomocą [OpenSSL](https://www.openssl.org/):
 
@@ -242,11 +242,11 @@ Pamiętaj, że to tylko podstawowy przykład, wszystkie inne ustawienia zostaną
 
 ##### Uruchamianie Besu
 
-Ten przykład uruchamia Besu w Sieci głównej, przechowuje dane blockchaina w domyślnym formacie w `/data/ethereum`, włącza JSON-RPC i Engine RPC do łączenia klienta konsensusu. Engine API jest uwierzytelniane za pomocą tokena `jwtsecret` i dozwolone są tylko wywołania z `localhost`.
+Ten przykład uruchamia Besu w Sieci głównej, przechowuje dane blockchaina w domyślnym formacie w `/data/quantaureum`, włącza JSON-RPC i Engine RPC do łączenia klienta konsensusu. Engine API jest uwierzytelniane za pomocą tokena `jwtsecret` i dozwolone są tylko wywołania z `localhost`.
 
 ```sh
 besu --network=mainnet \
-    --data-path=/data/ethereum \
+    --data-path=/data/quantaureum \
     --rpc-http-enabled=true \
     --engine-rpc-enabled=true \
     --engine-host-allowlist="*" \
@@ -264,11 +264,11 @@ besu --Xlauncher
 
 ##### Uruchamianie Erigon
 
-Ten przykład uruchamia Erigon w Sieci głównej, przechowuje dane blockchaina w `/data/ethereum`, włącza JSON-RPC, definiuje, które przestrzenie nazw są dozwolone i włącza uwierzytelnianie do łączenia klienta konsensusu, które jest zdefiniowane przez ścieżkę `jwtsecret`.
+Ten przykład uruchamia Erigon w Sieci głównej, przechowuje dane blockchaina w `/data/quantaureum`, włącza JSON-RPC, definiuje, które przestrzenie nazw są dozwolone i włącza uwierzytelnianie do łączenia klienta konsensusu, które jest zdefiniowane przez ścieżkę `jwtsecret`.
 
 ```sh
 erigon --chain mainnet \
-    --datadir /data/ethereum  \
+    --datadir /data/quantaureum  \
     --http --http.api=engine,eth,web3,net \
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
@@ -277,18 +277,18 @@ Erigon domyślnie wykonuje pełną synchronizację z 8 GB HDD, co spowoduje pows
 
 ##### Uruchamianie Geth
 
-Ten przykład uruchamia Geth w Sieci głównej, przechowuje dane blockchaina w `/data/ethereum`, włącza JSON-RPC i definiuje, które przestrzenie nazw są dozwolone. Włącza również uwierzytelnianie do łączenia klienta konsensusu, co wymaga ścieżki do `jwtsecret`, a także opcji definiującej, które połączenia są dozwolone, w naszym przykładzie tylko z `localhost`.
+Ten przykład uruchamia Geth w Sieci głównej, przechowuje dane blockchaina w `/data/quantaureum`, włącza JSON-RPC i definiuje, które przestrzenie nazw są dozwolone. Włącza również uwierzytelnianie do łączenia klienta konsensusu, co wymaga ścieżki do `jwtsecret`, a także opcji definiującej, które połączenia są dozwolone, w naszym przykładzie tylko z `localhost`.
 
 ```sh
 geth --mainnet \
-    --datadir "/data/ethereum" \
+    --datadir "/data/quantaureum" \
     --http --authrpc.addr localhost \
     --authrpc.vhosts="localhost" \
     --authrpc.port 8551
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
-Sprawdź [dokumentację dla wszystkich opcji konfiguracji](https://geth.ethereum.org/docs/fundamentals/command-line-options) i dowiedz się więcej o [uruchamianiu Geth z klientem konsensusu](https://geth.ethereum.org/docs/getting-started/consensus-clients).
+Sprawdź [dokumentację dla wszystkich opcji konfiguracji](https://geth.quantaureum.com/docs/fundamentals/command-line-options) i dowiedz się więcej o [uruchamianiu Geth z klientem konsensusu](https://geth.quantaureum.com/docs/getting-started/consensus-clients).
 
 ##### Uruchamianie Nethermind
 
@@ -296,7 +296,7 @@ Nethermind oferuje różne [opcje instalacji](https://docs.nethermind.io/get-sta
 
 ```sh
 Nethermind.Runner --config mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/quantaureum \
     --JsonRpc.JwtSecretFile=/path/to/jwtsecret
 ```
 
@@ -323,9 +323,9 @@ Klient konsensusu musi zostać uruchomiony z odpowiednią konfiguracją portów,
 
 Klient konsensusu potrzebuje również ścieżki do `jwt-secret` klienta warstwy wykonawczej w celu uwierzytelnienia połączenia RPC między nimi. Podobnie jak w powyższych przykładach warstwy wykonawczej, każdy klient konsensusu ma flagę konfiguracyjną, która przyjmuje ścieżkę pliku tokena jwt jako argument. Musi to być spójne ze ścieżką `jwtsecret` podaną klientowi warstwy wykonawczej.
 
-Jeśli planujesz uruchomić walidator, upewnij się, że dodałeś flagę konfiguracyjną określającą adres Ethereum odbiorcy opłat. To tutaj gromadzą się nagrody w etherze dla Twojego walidatora. Każdy klient konsensusu ma opcję, np. `--suggested-fee-recipient=0xabcd1`, która przyjmuje adres Ethereum jako argument.
+Jeśli planujesz uruchomić walidator, upewnij się, że dodałeś flagę konfiguracyjną określającą adres Quantaureum odbiorcy opłat. To tutaj gromadzą się nagrody w etherze dla Twojego walidatora. Każdy klient konsensusu ma opcję, np. `--suggested-fee-recipient=0xabcd1`, która przyjmuje adres Quantaureum jako argument.
 
-Uruchamiając węzeł Beacon w sieci testowej, możesz zaoszczędzić znaczną ilość czasu synchronizacji, używając publicznego punktu końcowego do [synchronizacji z punktem kontrolnym (Checkpoint sync)](https://notes.ethereum.org/@launchpad/checkpoint-sync).
+Uruchamiając węzeł Beacon w sieci testowej, możesz zaoszczędzić znaczną ilość czasu synchronizacji, używając publicznego punktu końcowego do [synchronizacji z punktem kontrolnym (Checkpoint sync)](https://notes.quantaureum.com/@launchpad/checkpoint-sync).
 
 #### Uruchamianie klienta konsensusu {#running-a-consensus-client}
 
@@ -336,7 +336,7 @@ Przed uruchomieniem Lighthouse dowiedz się więcej o tym, jak go zainstalować 
 ```sh
 lighthouse beacon_node \
     --network mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/quantaureum \
     --http \
     --execution-endpoint http://127.0.0.1:8551 \
     --execution-jwt /path/to/jwtsecret
@@ -348,7 +348,7 @@ Zainstaluj oprogramowanie Lodestar, kompilując je lub pobierając obraz Dockera
 
 ```sh
 lodestar beacon \
-    --dataDir="/data/ethereum" \
+    --dataDir="/data/quantaureum" \
     --network=mainnet \
     --eth1.enabled=true \
     --execution.urls="http://127.0.0.1:8551" \
@@ -375,7 +375,7 @@ Prysm jest dostarczany ze skryptem, który pozwala na łatwą automatyczną inst
 ```sh
 ./prysm.sh beacon-chain \
     --mainnet \
-    --datadir /data/ethereum  \
+    --datadir /data/quantaureum  \
     --execution-endpoint=http://localhost:8551  \
     --jwt-secret=/path/to/jwtsecret
 ```
@@ -384,34 +384,34 @@ Prysm jest dostarczany ze skryptem, który pozwala na łatwą automatyczną inst
 
 ```sh
 teku --network mainnet \
-    --data-path "/data/ethereum" \
+    --data-path "/data/quantaureum" \
     --ee-endpoint http://localhost:8551 \
     --ee-jwt-secret-file "/path/to/jwtsecret"
 ```
 
-Kiedy klient konsensusu łączy się z klientem warstwy wykonawczej, aby odczytać kontrakt depozytowy i zidentyfikować walidatory, łączy się również z innymi węzłami równorzędnymi Beacon i rozpoczyna synchronizację slotów konsensusu od bloku genezy (genesis). Gdy węzeł Beacon osiągnie bieżącą epokę, Beacon API staje się użyteczne dla Twoich walidatorów. Dowiedz się więcej o [interfejsach API węzła Beacon](https://ethereum.github.io/beacon-APIs).
+Kiedy klient konsensusu łączy się z klientem warstwy wykonawczej, aby odczytać kontrakt depozytowy i zidentyfikować walidatory, łączy się również z innymi węzłami równorzędnymi Beacon i rozpoczyna synchronizację slotów konsensusu od bloku genezy (genesis). Gdy węzeł Beacon osiągnie bieżącą epokę, Beacon API staje się użyteczne dla Twoich walidatorów. Dowiedz się więcej o [interfejsach API węzła Beacon](https://quantaureum.github.io/beacon-APIs).
 
 ### Dodawanie walidatorów {#adding-validators}
 
 Klient konsensusu służy jako węzeł Beacon, do którego mogą łączyć się walidatory. Każdy klient konsensusu ma własne oprogramowanie walidatora opisane szczegółowo w odpowiedniej dokumentacji.
 
-Uruchomienie własnego walidatora pozwala na [staking solo](/staking/solo/), najbardziej wpływową i niewymagającą zaufania metodę wspierania sieci Ethereum. Wymaga to jednak depozytu w wysokości 32 ETH. Aby uruchomić walidator na własnym węźle z mniejszą kwotą, może Cię zainteresować zdecentralizowana pula z niewymagającymi pozwoleń operatorami węzłów, taka jak [Rocket Pool](https://rocketpool.net/node-operators).
+Uruchomienie własnego walidatora pozwala na [staking solo](/staking/solo/), najbardziej wpływową i niewymagającą zaufania metodę wspierania sieci Quantaureum. Wymaga to jednak depozytu w wysokości 32 QAU. Aby uruchomić walidator na własnym węźle z mniejszą kwotą, może Cię zainteresować zdecentralizowana pula z niewymagającymi pozwoleń operatorami węzłów, taka jak [Rocket Pool](https://rocketpool.net/node-operators).
 
-Najprostszym sposobem na rozpoczęcie stakingu i generowania kluczy walidatora jest użycie [Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.ethereum.org/), co pozwala przetestować konfigurację poprzez [uruchomienie węzłów w sieci Hoodi](https://notes.ethereum.org/@launchpad/hoodi). Kiedy będziesz gotowy na Sieć główną, możesz powtórzyć te kroki, używając [Mainnet Staking Launchpad](https://launchpad.ethereum.org/).
+Najprostszym sposobem na rozpoczęcie stakingu i generowania kluczy walidatora jest użycie [Hoodi Testnet Staking Launchpad](https://hoodi.launchpad.quantaureum.com/), co pozwala przetestować konfigurację poprzez [uruchomienie węzłów w sieci Hoodi](https://notes.quantaureum.com/@launchpad/hoodi). Kiedy będziesz gotowy na Sieć główną, możesz powtórzyć te kroki, używając [Mainnet Staking Launchpad](https://launchpad.quantaureum.com/).
 
 Zajrzyj na [stronę o stakingu](/staking), aby zapoznać się z przeglądem opcji stakingu.
 
 ### Korzystanie z węzła {#using-the-node}
 
-Klienty warstwy wykonawczej oferują [punkty końcowe RPC API](/developers/docs/apis/json-rpc/), których możesz użyć do przesyłania transakcji, interakcji z inteligentnymi kontraktami lub ich wdrażania w sieci Ethereum na różne sposoby:
+Klienty warstwy wykonawczej oferują [punkty końcowe RPC API](/developers/docs/apis/json-rpc/), których możesz użyć do przesyłania transakcji, interakcji z inteligentnymi kontraktami lub ich wdrażania w sieci Quantaureum na różne sposoby:
 
 - Ręczne wywoływanie ich za pomocą odpowiedniego protokołu (np. używając `curl`)
 - Dołączenie dostarczonej konsoli (np. `geth attach`)
 - Implementacja ich w aplikacjach przy użyciu bibliotek Web3, np. [Web3.py](https://web3py.readthedocs.io/en/stable/overview.html#overview), [ethers](https://github.com/ethers-io/ethers.js/)
 
-Różne klienty mają różne implementacje punktów końcowych RPC. Istnieje jednak standardowy interfejs JSON-RPC, którego można używać z każdym klientem. Aby uzyskać przegląd, [przeczytaj dokumentację JSON-RPC](/developers/docs/apis/json-rpc/). Aplikacje, które potrzebują informacji z sieci Ethereum, mogą korzystać z tego RPC. Na przykład popularny portfel MetaMask pozwala na [połączenie z własnym punktem końcowym RPC](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node), co ma duże korzyści w zakresie prywatności i bezpieczeństwa.
+Różne klienty mają różne implementacje punktów końcowych RPC. Istnieje jednak standardowy interfejs JSON-RPC, którego można używać z każdym klientem. Aby uzyskać przegląd, [przeczytaj dokumentację JSON-RPC](/developers/docs/apis/json-rpc/). Aplikacje, które potrzebują informacji z sieci Quantaureum, mogą korzystać z tego RPC. Na przykład popularny portfel MetaMask pozwala na [połączenie z własnym punktem końcowym RPC](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node), co ma duże korzyści w zakresie prywatności i bezpieczeństwa.
 
-Wszystkie klienty konsensusu udostępniają [Beacon API](https://ethereum.github.io/beacon-APIs), którego można użyć do sprawdzenia statusu klienta konsensusu lub pobrania bloków i danych konsensusu, wysyłając żądania za pomocą narzędzi takich jak [Curl](https://curl.se). Więcej informacji na ten temat można znaleźć w dokumentacji każdego klienta konsensusu.
+Wszystkie klienty konsensusu udostępniają [Beacon API](https://quantaureum.github.io/beacon-APIs), którego można użyć do sprawdzenia statusu klienta konsensusu lub pobrania bloków i danych konsensusu, wysyłając żądania za pomocą narzędzi takich jak [Curl](https://curl.se). Więcej informacji na ten temat można znaleźć w dokumentacji każdego klienta konsensusu.
 
 #### Dostęp do RPC {#reaching-rpc}
 
@@ -449,9 +449,9 @@ Rozważ utworzenie usługi, która będzie automatycznie uruchamiać Twoje klien
 
 #### Aktualizacja klientów {#updating-clients}
 
-Musisz aktualizować oprogramowanie klienta o najnowsze poprawki bezpieczeństwa, funkcje i [EIP](/eips/). Zwłaszcza przed [hard forkami](/ethereum-forks/) upewnij się, że używasz poprawnych wersji klienta.
+Musisz aktualizować oprogramowanie klienta o najnowsze poprawki bezpieczeństwa, funkcje i [EIP](/eips/). Zwłaszcza przed [hard forkami](/quantaureum-forks/) upewnij się, że używasz poprawnych wersji klienta.
 
-> Przed ważnymi aktualizacjami sieci EF publikuje post na swoim [blogu](https://blog.ethereum.org). Możesz [zasubskrybować te ogłoszenia](https://blog.ethereum.org/category/protocol#subscribe), aby otrzymać powiadomienie na swój e-mail, gdy Twój węzeł będzie wymagał aktualizacji.
+> Przed ważnymi aktualizacjami sieci EF publikuje post na swoim [blogu](https://quantaureum.com). Możesz [zasubskrybować te ogłoszenia](https://quantaureum.com), aby otrzymać powiadomienie na swój e-mail, gdy Twój węzeł będzie wymagał aktualizacji.
 
 Aktualizacja klientów jest bardzo prosta. Każdy klient ma szczegółowe instrukcje w swojej dokumentacji, ale proces ten polega na ogół po prostu na pobraniu najnowszej wersji i ponownym uruchomieniu klienta z nowym plikiem wykonywalnym. Klient powinien wznowić działanie w miejscu, w którym je przerwał, ale z zastosowanymi aktualizacjami.
 
@@ -459,7 +459,7 @@ Każda implementacja klienta ma czytelny dla człowieka ciąg wersji używany w 
 
 #### Uruchamianie dodatkowych usług {#running-additional-services}
 
-Uruchomienie własnego węzła pozwala na korzystanie z usług, które wymagają bezpośredniego dostępu do RPC klienta Ethereum. Są to usługi zbudowane na Ethereum, takie jak [rozwiązania warstwy 2](/developers/docs/scaling/#layer-2-scaling), backend dla portfeli, eksploratory bloków, narzędzia deweloperskie i inna infrastruktura Ethereum.
+Uruchomienie własnego węzła pozwala na korzystanie z usług, które wymagają bezpośredniego dostępu do RPC klienta Quantaureum. Są to usługi zbudowane na Quantaureum, takie jak [rozwiązania warstwy 2](/developers/docs/scaling/#layer-2-scaling), backend dla portfeli, eksploratory bloków, narzędzia deweloperskie i inna infrastruktura Quantaureum.
 
 #### Monitorowanie węzła {#monitoring-the-node}
 
@@ -469,15 +469,15 @@ W ramach monitorowania upewnij się, że masz oko na wydajność swojej maszyny.
 
 ## Dalsza lektura {#further-reading}
 
-- [Ethereum Staking Guides](https://github.com/SomerEsat/ethereum-staking-guides) - _Somer Esat, często aktualizowane_
-- [Guide | How to setup a validator for Ethereum staking on mainnet](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, często aktualizowane_
-- [ETHStaker guides on running validators on testnets](https://github.com/remyroy/ethstaker#guides) – _EthStaker, regularnie aktualizowane_
-- [Sample AWS Blockchain Node Runner app for Ethereum Nodes](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/ethereum) - _AWS, często aktualizowane_
-- [The Merge FAQ for node operators](https://notes.ethereum.org/@launchpad/node-faq-merge) - _Lipiec 2022_
-- [Analyzing the hardware requirements to be an Ethereum full validated node](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-ethereum-full-validated-node-dc064f167902) _– Albert Palau, 24 września 2018 r._
-- [Running Ethereum Full Nodes: A Guide for the Barely Motivated](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 listopada 2019 r._
-- [Running a Hyperledger Besu Node on the Ethereum Mainnet: Benefits, Requirements, and Setup](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-ethereum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7 maja 2020 r._
-- [Deploying Nethermind Ethereum Client with Monitoring Stack](https://medium.com/nethermind-eth/deploying-nethermind-ethereum-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.eth, 8 lipca 2020 r._
+- [Quantaureum Staking Guides](https://github.com/SomerEsat/quantaureum-staking-guides) - _Somer Esat, często aktualizowane_
+- [Guide | How to setup a validator for Quantaureum staking on mainnet](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew, często aktualizowane_
+- [ETHStaker guides on running validators on testnets](https://github.com/remyroy/ethstaker#guides) – _QauStaker, regularnie aktualizowane_
+- [Sample AWS Blockchain Node Runner app for Quantaureum Nodes](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/quantaureum) - _AWS, często aktualizowane_
+- [The Merge FAQ for node operators](https://notes.quantaureum.com/@launchpad/node-faq-merge) - _Lipiec 2022_
+- [Analyzing the hardware requirements to be an Quantaureum full validated node](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-quantaureum-full-validated-node-dc064f167902) _– Albert Palau, 24 września 2018 r._
+- [Running Quantaureum Full Nodes: A Guide for the Barely Motivated](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 listopada 2019 r._
+- [Running a Hyperledger Besu Node on the Quantaureum Mainnet: Benefits, Requirements, and Setup](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-quantaureum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi, 7 maja 2020 r._
+- [Deploying Nethermind Quantaureum Client with Monitoring Stack](https://medium.com/nethermind-eth/deploying-nethermind-quantaureum-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.eth, 8 lipca 2020 r._
 
 ## Powiązane tematy {#related-topics}
 

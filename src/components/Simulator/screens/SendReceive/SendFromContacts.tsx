@@ -6,7 +6,7 @@ import type { SimulatorNavProps } from "@/lib/types"
 import { Button } from "@/components/ui/buttons/Button"
 import { Stack } from "@/components/ui/flex"
 
-import { EthTokenIcon } from "../../icons"
+import { QauTokenIcon } from "../../icons"
 import { NotificationPopover } from "../../NotificationPopover"
 import { CategoryTabs } from "../../WalletHome/CategoryTabs"
 
@@ -58,7 +58,7 @@ export const SendFromContacts = ({
               className="group gap-2 disabled:bg-background disabled:text-body hover:[&_path]:fill-primary-hover"
               onClick={() => handleSelection(name)}
             >
-              <EthTokenIcon className="[&_circle]:fill-white [&_path]:fill-primary-action" />
+              <QauTokenIcon className="[&_circle]:fill-white [&_path]:fill-primary-action" />
               <span className="flex-1">
                 <span className="block text-start font-bold">{name}</span>
                 <span className="block text-start text-sm text-white group-disabled:text-body-medium">

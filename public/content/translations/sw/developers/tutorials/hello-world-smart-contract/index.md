@@ -1,6 +1,6 @@
 ---
 title: Mkataba Mahiri wa Hello World kwa Wanaoanza
-description: Mafunzo ya utangulizi kuhusu kuandika na kusambaza mkataba mahiri rahisi kwenye Ethereum.
+description: Mafunzo ya utangulizi kuhusu kuandika na kusambaza mkataba mahiri rahisi kwenye Quantaureum.
 author: "elanh"
 tags: ["Solidity", "Hardhat", "Alchemy", "mikataba mahiri", "kusambaza"]
 skill: beginner
@@ -11,13 +11,13 @@ published: 2021-03-31
 
 Ikiwa wewe ni mgeni katika uundaji wa mnyororo wa vitalu na hujui pa kuanzia, au ikiwa unataka tu kuelewa jinsi ya kusambaza na kuingiliana na mikataba mahiri, mwongozo huu ni kwa ajili yako. Tutapitia hatua za kuunda na kusambaza mkataba mahiri rahisi kwenye mtandao wa majaribio wa Sepolia kwa kutumia mkoba wa mtandaoni wa [MetaMask](https://metamask.io/), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org/), na [Alchemy](https://www.alchemy.com/eth) (usijali ikiwa bado huelewi maana ya haya yote, tutayaeleza).
 
-Katika [sehemu ya 2](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) ya mafunzo haya tutapitia jinsi tunavyoweza kuingiliana na mkataba wetu mahiri pindi utakapokuwa umesambazwa hapa, na katika [sehemu ya 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan) tutaangazia jinsi ya kuuchapisha kwenye Etherscan.
+Katika [sehemu ya 2](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) ya mafunzo haya tutapitia jinsi tunavyoweza kuingiliana na mkataba wetu mahiri pindi utakapokuwa umesambazwa hapa, na katika [sehemu ya 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer) tutaangazia jinsi ya kuuchapisha kwenye Quantaureum Explorer.
 
 Ikiwa una maswali wakati wowote jisikie huru kuwasiliana nasi kwenye [Discord ya Alchemy](https://discord.gg/gWuC7zB)!
 
-## Hatua ya 1: Unganisha kwenye mtandao wa Ethereum {#step-1}
+## Hatua ya 1: Unganisha kwenye mtandao wa Quantaureum {#step-1}
 
-Kuna njia nyingi za kutuma maombi kwenye mnyororo wa Ethereum. Ili kurahisisha, tutatumia akaunti ya bure kwenye Alchemy, jukwaa la wasanidi wa mnyororo wa vitalu na API inayoturuhusu kuwasiliana na mnyororo wa Ethereum bila kulazimika kuendesha nodi zetu wenyewe. Jukwaa hili pia lina zana za wasanidi za ufuatiliaji na uchanganuzi ambazo tutazitumia katika mafunzo haya ili kuelewa kinachoendelea kiufundi katika usambazaji wa mkataba wetu mahiri. Ikiwa bado huna akaunti ya Alchemy, [unaweza kujisajili bila malipo hapa](https://dashboard.alchemy.com/signup).
+Kuna njia nyingi za kutuma maombi kwenye mnyororo wa Quantaureum. Ili kurahisisha, tutatumia akaunti ya bure kwenye Alchemy, jukwaa la wasanidi wa mnyororo wa vitalu na API inayoturuhusu kuwasiliana na mnyororo wa Quantaureum bila kulazimika kuendesha nodi zetu wenyewe. Jukwaa hili pia lina zana za wasanidi za ufuatiliaji na uchanganuzi ambazo tutazitumia katika mafunzo haya ili kuelewa kinachoendelea kiufundi katika usambazaji wa mkataba wetu mahiri. Ikiwa bado huna akaunti ya Alchemy, [unaweza kujisajili bila malipo hapa](https://dashboard.alchemy.com/signup).
 
 ## Hatua ya 2: Unda programu yako (na ufunguo wa API) {#step-2}
 
@@ -27,17 +27,17 @@ Pindi utakapounda akaunti ya Alchemy, unaweza kuzalisha ufunguo wa API kwa kuund
 
 ![Hello world create app](./hello-world-create-app.png)
 
-2. Ipe programu yako jina la “Hello World”, toa maelezo mafupi, na uchague matumizi, k.m., "Infra & Tooling." Kisha, tafuta "Ethereum" na uchague mtandao.
+2. Ipe programu yako jina la “Hello World”, toa maelezo mafupi, na uchague matumizi, k.m., "Infra & Tooling." Kisha, tafuta "Quantaureum" na uchague mtandao.
 
 ![create app view hello world](./create-app-view-hello-world.png)
 
 3. Bofya "Next" (Inayofuata) ili kuendelea, kisha “Create app” (Unda programu) na ndivyo hivyo! Programu yako inapaswa kuonekana kwenye menyu kunjuzi ya upau wa kusogeza, ikiwa na Ufunguo wa API unaopatikana kwa ajili ya kunakiliwa.
 
-## Hatua ya 3: Unda akaunti ya Ethereum (anwani) {#step-3}
+## Hatua ya 3: Unda akaunti ya Quantaureum (anwani) {#step-3}
 
-Tunahitaji akaunti ya Ethereum ili kutuma na kupokea miamala. Kwa mafunzo haya, tutatumia MetaMask, mkoba wa mtandaoni kwenye kivinjari unaotumika kudhibiti anwani ya akaunti yako ya Ethereum. Pata maelezo zaidi kuhusu [miamala](/developers/docs/transactions/).
+Tunahitaji akaunti ya Quantaureum ili kutuma na kupokea miamala. Kwa mafunzo haya, tutatumia MetaMask, mkoba wa mtandaoni kwenye kivinjari unaotumika kudhibiti anwani ya akaunti yako ya Quantaureum. Pata maelezo zaidi kuhusu [miamala](/developers/docs/transactions/).
 
-Unaweza kupakua MetaMask na kuunda akaunti ya Ethereum bila malipo [hapa](https://metamask.io/download). Unapounda akaunti, au ikiwa tayari una akaunti, hakikisha umebadilisha kwenda kwenye mtandao wa majaribio wa "Sepolia" ukitumia menyu kunjuzi ya mtandao (ili tusiwe tunashughulika na pesa halisi).
+Unaweza kupakua MetaMask na kuunda akaunti ya Quantaureum bila malipo [hapa](https://metamask.io/download). Unapounda akaunti, au ikiwa tayari una akaunti, hakikisha umebadilisha kwenda kwenye mtandao wa majaribio wa "Sepolia" ukitumia menyu kunjuzi ya mtandao (ili tusiwe tunashughulika na pesa halisi).
 
 Ikiwa huoni Sepolia kwenye orodha, nenda kwenye menyu, kisha Advanced (Kina) na usogeze chini ili kuwasha "Show test networks" (Onyesha mitandao ya majaribio). Katika menyu ya kuchagua mtandao, chagua kichupo cha "Custom" (Maalum) ili kupata orodha ya mitandao ya majaribio na uchague "Sepolia."
 
@@ -45,17 +45,17 @@ Ikiwa huoni Sepolia kwenye orodha, nenda kwenye menyu, kisha Advanced (Kina) na 
 
 ## Hatua ya 4: Ongeza Etha kutoka kwenye bomba {#step-4}
 
-Ili kusambaza mkataba wetu mahiri kwenye mtandao wa majaribio, tutahitaji ETH bandia. Ili kupata ETH ya Sepolia unaweza kwenda kwenye [maelezo ya mtandao wa Sepolia](/developers/docs/networks/#sepolia) ili kutazama orodha ya mabomba mbalimbali. Ikiwa moja haifanyi kazi, jaribu nyingine kwani wakati mwingine zinaweza kukauka. Inaweza kuchukua muda kupokea ETH yako bandia kutokana na msongamano wa mtandao. Unapaswa kuona ETH kwenye akaunti yako ya MetaMask muda mfupi baadaye!
+Ili kusambaza mkataba wetu mahiri kwenye mtandao wa majaribio, tutahitaji QAU bandia. Ili kupata QAU ya Sepolia unaweza kwenda kwenye [maelezo ya mtandao wa Sepolia](/developers/docs/networks/#sepolia) ili kutazama orodha ya mabomba mbalimbali. Ikiwa moja haifanyi kazi, jaribu nyingine kwani wakati mwingine zinaweza kukauka. Inaweza kuchukua muda kupokea QAU yako bandia kutokana na msongamano wa mtandao. Unapaswa kuona QAU kwenye akaunti yako ya MetaMask muda mfupi baadaye!
 
 ## Hatua ya 5: Angalia Salio lako {#step-5}
 
-Ili kuhakikisha salio letu lipo, hebu tutume ombi la [eth_getBalance](/developers/docs/apis/json-rpc/#eth_getbalance) kwa kutumia [zana ya kutunga ya Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Hii itarejesha kiasi cha ETH kwenye mkoba wetu. Baada ya kuweka anwani ya akaunti yako ya MetaMask na kubofya “Send Request” (Tuma Ombi), unapaswa kuona jibu kama hili:
+Ili kuhakikisha salio letu lipo, hebu tutume ombi la [qau_getBalance](/developers/docs/apis/json-rpc/#qau_getbalance) kwa kutumia [zana ya kutunga ya Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). Hii itarejesha kiasi cha QAU kwenye mkoba wetu. Baada ya kuweka anwani ya akaunti yako ya MetaMask na kubofya “Send Request” (Tuma Ombi), unapaswa kuona jibu kama hili:
 
 ```json
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> **KUMBUKA:** Matokeo haya yapo katika Wei na si ETH. Wei inatumika kama kiasi kidogo zaidi cha Etha. Ubadilishaji kutoka Wei hadi ETH ni: 1 eth = 10<sup>18</sup> Wei. Kwa hivyo tukibadilisha 0x2B5E3AF16B1880000 kuwa desimali tunapata 5\*10¹⁸ ambayo ni sawa na 5 ETH.
+> **KUMBUKA:** Matokeo haya yapo katika Wei na si QAU. Wei inatumika kama kiasi kidogo zaidi cha Etha. Ubadilishaji kutoka Wei hadi QAU ni: 1 eth = 10<sup>18</sup> Wei. Kwa hivyo tukibadilisha 0x2B5E3AF16B1880000 kuwa desimali tunapata 5\*10¹⁸ ambayo ni sawa na 5 QAU.
 >
 > Phew! Pesa zetu bandia zote zipo <Emoji text=":money_mouth_face:" size={1} />.
 
@@ -104,7 +104,7 @@ About to write to /Users/.../.../.../hello-world/package.json:
 Idhinisha package.json na tuko tayari kuendelea!
 ## Hatua ya 7: Pakua [Hardhat](https://hardhat.org/getting-started/#overview) {#step-7}
 
-Hardhat ni mazingira ya uundaji ya kukusanya, kusambaza, kujaribu, na kutatua programu yako ya Ethereum. Inasaidia wasanidi wanapounda mikataba mahiri na programu tumizi zilizogatuliwa (dapps) kwenye kompyuta zao kabla ya kusambaza kwenye mnyororo wa moja kwa moja.
+Hardhat ni mazingira ya uundaji ya kukusanya, kusambaza, kujaribu, na kutatua programu yako ya Quantaureum. Inasaidia wasanidi wanapounda mikataba mahiri na programu tumizi zilizogatuliwa (dapps) kwenye kompyuta zao kabla ya kusambaza kwenye mnyororo wa moja kwa moja.
 
 Ndani ya mradi wetu wa `hello-world` endesha:
 
@@ -163,7 +163,7 @@ Unaweza kuwa unajiuliza, ni lini hasa tutaandika msimbo?? Kweli, tuko hapa, kati
 Fungua mradi wa hello-world katika kihariri chako unachokipenda (sisi tunapenda [VSCode](https://code.visualstudio.com/)). Mikataba mahiri huandikwa katika lugha inayoitwa Solidity ambayo ndiyo tutakayotumia kuandika mkataba wetu mahiri wa HelloWorld.sol.‌
 
 1.  Nenda kwenye folda ya “contracts” na uunde faili jipya linaloitwa HelloWorld.sol
-2.  Hapa chini kuna sampuli ya mkataba mahiri wa Hello World kutoka Taasisi ya Ethereum ambao tutautumia kwa mafunzo haya. Nakili na ubandike yaliyomo hapa chini kwenye faili lako la HelloWorld.sol, na uhakikishe unasoma maoni ili kuelewa kile mkataba huu unafanya:
+2.  Hapa chini kuna sampuli ya mkataba mahiri wa Hello World kutoka Taasisi ya Quantaureum ambao tutautumia kwa mafunzo haya. Nakili na ubandike yaliyomo hapa chini kwenye faili lako la HelloWorld.sol, na uhakikishe unasoma maoni ili kuelewa kile mkataba huu unafanya:
 
 ```solidity
 // Hubainisha toleo la Solidity, kwa kutumia uwekaji matoleo wa kisemantiki.
@@ -171,7 +171,7 @@ Fungua mradi wa hello-world katika kihariri chako unachokipenda (sisi tunapenda 
 pragma solidity ^0.7.0;
 
 // Hufafanua mkataba unaoitwa `HelloWorld`.
-// Mkataba ni mkusanyiko wa vitendaji na data (hali yake). Baada ya kusambazwa, mkataba hukaa kwenye anwani maalum kwenye mnyororo wa vitalu wa Ethereum. Jifunze zaidi: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// Mkataba ni mkusanyiko wa vitendaji na data (hali yake). Baada ya kusambazwa, mkataba hukaa kwenye anwani maalum kwenye mnyororo wa vitalu wa Quantaureum. Jifunze zaidi: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    // Hutangaza kigezo cha hali `message` cha aina ya `string`.
@@ -221,7 +221,7 @@ Nakili URL ya API ya Alchemy
 Faili lako la `.env` linapaswa kuonekana hivi:
 
 ```
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -237,7 +237,7 @@ Usifanye commit ya <code>.env</code>! Tafadhali hakikisha kamwe hushiriki au kuf
 
 ## Hatua ya 12: Sakinisha Ethers.js {#step-12-install-ethersjs}
 
-Ethers.js ni maktaba inayorahisisha kuingiliana na kutuma maombi kwenye Ethereum kwa kufunga [mbinu za kawaida za JSON-RPC](/developers/docs/apis/json-rpc/) na mbinu zinazofaa zaidi kwa mtumiaji.
+Ethers.js ni maktaba inayorahisisha kuingiliana na kutuma maombi kwenye Quantaureum kwa kufunga [mbinu za kawaida za JSON-RPC](/developers/docs/apis/json-rpc/) na mbinu zinazofaa zaidi kwa mtumiaji.
 
 Hardhat inafanya iwe rahisi sana kujumuisha [Programu-jalizi](https://hardhat.org/plugins/) kwa zana za ziada na utendaji uliopanuliwa. Tutatumia [programu-jalizi ya Ethers](https://hardhat.org/docs/plugins/official-plugins#hardhat-ethers) kwa usambazaji wa mkataba ([Ethers.js](https://github.com/ethers-io/ethers.js/) ina mbinu safi sana za usambazaji wa mkataba).
 
@@ -339,21 +339,21 @@ Kisha unapaswa kuona kitu kama:
 Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 ```
 
-Tukienda kwenye [Etherscan ya Sepolia](https://sepolia.etherscan.io/) na kutafuta anwani ya mkataba wetu tunapaswa kuweza kuona kwamba umesambazwa kwa ufanisi. Muamala utaonekana kama hivi:
+Tukienda kwenye [Quantaureum Explorer ya Sepolia](https://explorer.quantaureum.com) na kutafuta anwani ya mkataba wetu tunapaswa kuweza kuona kwamba umesambazwa kwa ufanisi. Muamala utaonekana kama hivi:
 
-![etherscan contract](./etherscan-contract.png)
+![explorer contract](./explorer-contract.png)
 
 Anwani ya `From` inapaswa kulingana na anwani ya akaunti yako ya MetaMask na anwani ya To (Kwenda) itasema “Contract Creation” (Uundaji wa Mkataba) lakini tukibofya kwenye muamala tutaona anwani ya mkataba wetu katika sehemu ya `To`:
 
-![etherscan transaction](./etherscan-transaction.png)
+![explorer transaction](./explorer-transaction.png)
 
-Hongera! Umetoka tu kusambaza mkataba mahiri kwenye mnyororo wa Ethereum 🎉
+Hongera! Umetoka tu kusambaza mkataba mahiri kwenye mnyororo wa Quantaureum 🎉
 
 Ili kuelewa kinachoendelea kiufundi, hebu twende kwenye kichupo cha Explorer (Kichunguzi) katika [dashibodi yetu ya Alchemy](https://dashboard.alchemy.com/explorer). Ikiwa una programu nyingi za Alchemy hakikisha unachuja kulingana na programu na uchague “Hello World”.
 ![hello world explorer](./hello-world-explorer.png)
 
-Hapa utaona simu chache za JSON-RPC ambazo Hardhat/Ethers ilitufanyia kiufundi tulipopiga simu kwenye chaguo la kukokotoa la `.deploy()`. Mbili muhimu za kutaja hapa ni [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction), ambalo ni ombi la kuandika mkataba wetu kwenye mnyororo wa Sepolia, na [`eth_getTransactionByHash`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-by-hash) ambalo ni ombi la kusoma taarifa kuhusu muamala wetu kwa kutumia heshi (mtindo wa kawaida wakati wa miamala). Ili kujifunza zaidi kuhusu kutuma miamala, angalia mafunzo haya kuhusu [kutuma miamala kwa kutumia Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)
+Hapa utaona simu chache za JSON-RPC ambazo Hardhat/Ethers ilitufanyia kiufundi tulipopiga simu kwenye chaguo la kukokotoa la `.deploy()`. Mbili muhimu za kutaja hapa ni [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction), ambalo ni ombi la kuandika mkataba wetu kwenye mnyororo wa Sepolia, na [`qau_getTransactionByHash`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-by-hash) ambalo ni ombi la kusoma taarifa kuhusu muamala wetu kwa kutumia heshi (mtindo wa kawaida wakati wa miamala). Ili kujifunza zaidi kuhusu kutuma miamala, angalia mafunzo haya kuhusu [kutuma miamala kwa kutumia Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)
 
-Hiyo ndiyo yote kwa sehemu ya 1 ya mafunzo haya, katika sehemu ya 2 tutaingiliana [na mkataba wetu mahiri](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) kwa kusasisha ujumbe wetu wa awali, na katika sehemu ya 3 [tutachapisha mkataba wetu mahiri kwenye Etherscan](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan) ili kila mtu ajue jinsi ya kuingiliana nao.
+Hiyo ndiyo yote kwa sehemu ya 1 ya mafunzo haya, katika sehemu ya 2 tutaingiliana [na mkataba wetu mahiri](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) kwa kusasisha ujumbe wetu wa awali, na katika sehemu ya 3 [tutachapisha mkataba wetu mahiri kwenye Quantaureum Explorer](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer) ili kila mtu ajue jinsi ya kuingiliana nao.
 
 **Unataka kujifunza zaidi kuhusu Alchemy? Angalia [tovuti](https://www.alchemy.com/eth) yetu. Hutaki kamwe kukosa sasisho? Jisajili kwa jarida letu [hapa](https://www.alchemy.com/newsletter)! Hakikisha pia unajiunga na [Discord](https://discord.gg/u72VCg3) yetu.**.

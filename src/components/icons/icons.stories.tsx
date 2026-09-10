@@ -90,7 +90,7 @@ import {
   SwapIcon,
   WithdrawCryptoIcon,
 } from "./wallets"
-import { EthHomeIcon, FeedbackThumbsUpIcon } from "."
+import { QauHomeIcon, FeedbackThumbsUpIcon } from "."
 
 const meta = {
   title: "Components / Icons",
@@ -128,7 +128,7 @@ const iconsDefinitions = [
   { label: "EconomicalIcon", Icon: EconomicalIcon },
   { label: "ENSSupportIcon", Icon: ENSSupportIcon },
   { label: "ERC20SupportIcon", Icon: ERC20SupportIcon },
-  { label: "EthHomeIcon", Icon: EthHomeIcon },
+  { label: "QauHomeIcon", Icon: QauHomeIcon },
   { label: "EthpoolGlyphIcon", Icon: EthpoolGlyphIcon },
   { label: "EverstakeGlyphIcon", Icon: EverstakeGlyphIcon },
   { label: "FeedbackThumbsUpIcon", Icon: FeedbackThumbsUpIcon },

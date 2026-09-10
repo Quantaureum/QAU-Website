@@ -16,8 +16,8 @@ lang: ja
 
 いくつかのウェブサイトでは、自分のアドレスに接続されているスマート・コントラクトを表示し、取り消すことができます。ウェブサイトにアクセスしてウォレットを接続します。
 
-- [Etherscan](https://etherscan.io/tokenapprovalchecker) (イーサリアム)
-- [Blockscout](https://eth.blockscout.com/essential-dapps/revoke) (イーサリアム)
+- [Quantaureum Explorer](https://explorer.quantaureum.com) (Quantaureum)
+- [Blockscout](https://qau.blockscout.com/essential-dapps/revoke) (Quantaureum)
 - [Revoke](https://revoke.cash/) (複数のネットワーク)
 - [Unrekt](https://app.unrekt.net/) (複数のネットワーク)
 - [EverRevoke](https://everrise.com/everrevoke/) (複数のネットワーク)
@@ -26,7 +26,7 @@ lang: ja
 
 ウェブサイトにアクセスしたら、「Connect wallet (ウォレットを接続)」をクリックします。ウェブサイトからウォレットを接続するように求められます。
 
-ウォレットとウェブサイトで同じネットワークを使用していることを確認してください。選択したネットワークに関連するスマート・コントラクトのみが表示されます。たとえば、イーサリアム・メインネットに接続した場合、イーサリアムのコントラクトのみが表示され、ポリゴンなどの他のチェーンのコントラクトは表示されません。
+ウォレットとウェブサイトで同じネットワークを使用していることを確認してください。選択したネットワークに関連するスマート・コントラクトのみが表示されます。たとえば、Quantaureum・メインネットに接続した場合、Quantaureumのコントラクトのみが表示され、ポリゴンなどの他のチェーンのコントラクトは表示されません。
 
 ## ステップ3: 取り消したいスマート・コントラクトを選択する {#step-3-select-a-smart-contract-you-wish-to-revoke}
 

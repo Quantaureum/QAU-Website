@@ -28,9 +28,9 @@ published: 2020-12-01
 _Примітка: якщо у вас є акаунт Alchemy, ви можете замінити `demo` на власний ключ API. [Зареєструйте безкоштовний акаунт Alchemy тут!](https://auth.alchemy.com/signup)_
 
 ```
-wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
+wscat -c wss://qau-mainnet.ws.alchemyapi.io/ws/demo
 
->  {"jsonrpc":  "2.0", "id": 0, "method":  "eth_gasPrice"}
+>  {"jsonrpc":  "2.0", "id": 0, "method":  "qau_gasPrice"}
 
 <  {"jsonrpc":  "2.0", "result":  "0xb2d05e00", "id": 0}
 ```
@@ -48,18 +48,18 @@ wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
 Перехід на WebSockets під час використання клієнтської бібліотеки, такої як Web3, є простим. Просто передайте URL-адресу WebSocket замість HTTP під час створення екземпляра вашого клієнта Web3. Наприклад:
 
 ```js
-const web3 = new Web3("wss://eth-mainnet.ws.alchemyapi.io/ws/your-api-key")
+const web3 = new Web3("wss://qau-mainnet.ws.alchemyapi.io/ws/your-api-key")
 
-web3.eth.getBlockNumber().then(console.log) // -> 7946893
+web3.qau.getBlockNumber().then(console.log) // -> 7946893
 ```
 
 ## API підписок {#subscription-api}
 
-Під час підключення через WebSocket ви можете використовувати два додаткові методи: `eth_subscribe` та `eth_unsubscribe`. Ці методи дозволять вам прослуховувати певні події та негайно отримувати сповіщення.
+Під час підключення через WebSocket ви можете використовувати два додаткові методи: `qau_subscribe` та `qau_unsubscribe`. Ці методи дозволять вам прослуховувати певні події та негайно отримувати сповіщення.
 
-### `eth_subscribe` {#eth-subscribe}
+### `qau_subscribe` {#qau-subscribe}
 
-Створює нову підписку на вказані події. [Дізнайтеся більше про `eth_subscribe`](https://docs.alchemy.com/reference/eth-subscribe).
+Створює нову підписку на вказані події. [Дізнайтеся більше про `qau_subscribe`](https://docs.alchemy.com/reference/qau-subscribe).
 
 #### Параметри {#parameters}
 
@@ -70,33 +70,33 @@ web3.eth.getBlockNumber().then(console.log) // -> 7946893
 
 #### Повертає {#returns}
 
-ID підписки: Цей ідентифікатор буде додано до будь-яких отриманих подій, і його також можна використовувати для скасування підписки за допомогою `eth_unsubscribe`.
+ID підписки: Цей ідентифікатор буде додано до будь-яких отриманих подій, і його також можна використовувати для скасування підписки за допомогою `qau_unsubscribe`.
 
 #### Події підписки {#subscription-events}
 
 Поки підписка активна, ви отримуватимете події, які є об'єктами з такими полями:
 
 - `jsonrpc`: Завжди "2.0"
-- `method`: Завжди "eth_subscription"
+- `method`: Завжди "qau_subscription"
 - `params`: Об'єкт із такими полями:
-  - `subscription`: ID підписки, повернутий викликом `eth_subscribe`, який створив цю підписку.
+  - `subscription`: ID підписки, повернутий викликом `qau_subscribe`, який створив цю підписку.
   - `result`: Об'єкт, вміст якого змінюється залежно від типу підписки.
 
 #### Типи підписок {#subscription-types}
 
 1. `alchemy_newFullPendingTransactions`
 
-Повертає інформацію про транзакцію для всіх транзакцій, які додаються до стану очікування. Цей тип підписки підписується на транзакції в очікуванні, подібно до стандартного виклику Web3 `web3.eth.subscribe("pendingTransactions")`, але відрізняється тим, що він видає _повну інформацію про транзакцію_, а не лише хеші транзакцій.
+Повертає інформацію про транзакцію для всіх транзакцій, які додаються до стану очікування. Цей тип підписки підписується на транзакції в очікуванні, подібно до стандартного виклику Web3 `web3.qau.subscribe("pendingTransactions")`, але відрізняється тим, що він видає _повну інформацію про транзакцію_, а не лише хеші транзакцій.
 
 Приклад:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
 
 <  {"id":1,"result":"0x9a52eeddc2b289f985c0e23a7d8427c8","jsonrpc":"2.0"}
 <  {
       "jsonrpc":"2.0",
-      "method":"eth_subscription",
+      "method":"qau_subscription",
       "params":{
           "result":{
           "blockHash":null,
@@ -128,12 +128,12 @@ ID підписки: Цей ідентифікатор буде додано д�
 Приклад:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["newHeads"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["newHeads"]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x9ce59a13059e417087c02d3236a0b1cc"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "result":  {
           "extraData":  "0xd983010305844765746887676f312e342e328777696e646f7773",
@@ -182,12 +182,12 @@ ID підписки: Цей ідентифікатор буде додано д�
 Приклад:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x4a8a4c0517381924f9838102c5a4dcb7"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "subscription":  "0x4a8a4c0517381924f9838102c5a4dcb7",
       "result":  {
@@ -205,13 +205,13 @@ ID підписки: Цей ідентифікатор буде додано д�
 
 ```
 
-### `eth_unsubscribe` {#eth-unsubscribe}
+### `qau_unsubscribe` {#qau-unsubscribe}
 
 Скасовує існуючу підписку, щоб подальші події не надсилалися.
 
 Параметри
 
-1. ID підписки, який раніше був повернутий викликом `eth_subscribe`.
+1. ID підписки, який раніше був повернутий викликом `qau_subscribe`.
 
 Повертає
 
@@ -222,10 +222,10 @@ ID підписки: Цей ідентифікатор буде додано д�
 **Запит**
 
 ```
-curl https://eth-mainnet.alchemyapi.io/v2/your-api-key
+curl https://qau-mainnet.alchemyapi.io/v2/your-api-key
 -X POST
 -H "Content-Type: application/json"
--d '{"id": 1, "method": "eth_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
+-d '{"id": 1, "method": "qau_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
 ```
 
 **Результат**

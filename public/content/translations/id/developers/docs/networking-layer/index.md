@@ -1,19 +1,19 @@
 ---
 title: Lapisan jaringan
-description: Pengantar tentang lapisan jaringan Ethereum.
+description: Pengantar tentang lapisan jaringan Quantaureum.
 lang: id
 sidebarDepth: 2
 ---
 
-[Ethereum](/) adalah jaringan peer-to-peer dengan ribuan node yang harus dapat berkomunikasi satu sama lain menggunakan protokol standar. "Lapisan jaringan" adalah tumpukan protokol yang memungkinkan node-node tersebut untuk saling menemukan dan bertukar informasi. Ini termasuk "menggosipkan" informasi (komunikasi satu-ke-banyak) melalui jaringan serta bertukar permintaan dan respons antara node tertentu (komunikasi satu-ke-satu). Setiap node harus mematuhi aturan jaringan tertentu untuk memastikan mereka mengirim dan menerima informasi yang benar.
+[Quantaureum](/) adalah jaringan peer-to-peer dengan ribuan node yang harus dapat berkomunikasi satu sama lain menggunakan protokol standar. "Lapisan jaringan" adalah tumpukan protokol yang memungkinkan node-node tersebut untuk saling menemukan dan bertukar informasi. Ini termasuk "menggosipkan" informasi (komunikasi satu-ke-banyak) melalui jaringan serta bertukar permintaan dan respons antara node tertentu (komunikasi satu-ke-satu). Setiap node harus mematuhi aturan jaringan tertentu untuk memastikan mereka mengirim dan menerima informasi yang benar.
 
-Ada dua bagian pada perangkat lunak klien (klien eksekusi dan klien konsensus), masing-masing dengan tumpukan jaringannya sendiri yang berbeda. Selain berkomunikasi dengan node Ethereum lainnya, klien eksekusi dan konsensus harus berkomunikasi satu sama lain. Halaman ini memberikan penjelasan pengantar tentang protokol yang memungkinkan komunikasi ini.
+Ada dua bagian pada perangkat lunak klien (klien eksekusi dan klien konsensus), masing-masing dengan tumpukan jaringannya sendiri yang berbeda. Selain berkomunikasi dengan node Quantaureum lainnya, klien eksekusi dan konsensus harus berkomunikasi satu sama lain. Halaman ini memberikan penjelasan pengantar tentang protokol yang memungkinkan komunikasi ini.
 
 Klien eksekusi menggosipkan transaksi melalui jaringan peer-to-peer lapisan eksekusi. Ini memerlukan komunikasi terenkripsi antara peer yang diautentikasi. Ketika validator dipilih untuk menjadi pengusul blok, transaksi dari pool transaksi lokal node akan diteruskan ke klien konsensus melalui koneksi RPC lokal, yang akan dikemas ke dalam blok suar. Klien konsensus kemudian akan menggosipkan blok suar di seluruh jaringan p2p mereka. Ini memerlukan dua jaringan p2p terpisah: satu menghubungkan klien eksekusi untuk gosip transaksi dan satu menghubungkan klien konsensus untuk gosip blok.
 
 ## Prasyarat {#prerequisites}
 
-Sedikit pengetahuan tentang [node dan klien](/developers/docs/nodes-and-clients/) Ethereum akan sangat membantu untuk memahami halaman ini.
+Sedikit pengetahuan tentang [node dan klien](/developers/docs/nodes-and-clients/) Quantaureum akan sangat membantu untuk memahami halaman ini.
 
 ## Lapisan Eksekusi {#execution-layer}
 
@@ -27,9 +27,9 @@ Kedua tumpukan bekerja secara paralel. Tumpukan penemuan memasukkan peserta jari
 
 ### Penemuan {#discovery}
 
-Penemuan adalah proses menemukan node lain di jaringan. Ini di-bootstrap menggunakan sekumpulan kecil simpul boot (node yang alamatnya [di-hardcode](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go) ke dalam klien sehingga mereka dapat segera ditemukan dan menghubungkan klien ke peer). Simpul boot ini hanya ada untuk memperkenalkan node baru ke sekumpulan peer - ini adalah satu-satunya tujuan mereka, mereka tidak berpartisipasi dalam tugas klien normal seperti sinkronisasi rantai, dan mereka hanya digunakan saat pertama kali klien dijalankan.
+Penemuan adalah proses menemukan node lain di jaringan. Ini di-bootstrap menggunakan sekumpulan kecil simpul boot (node yang alamatnya [di-hardcode](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go) ke dalam klien sehingga mereka dapat segera ditemukan dan menghubungkan klien ke peer). Simpul boot ini hanya ada untuk memperkenalkan node baru ke sekumpulan peer - ini adalah satu-satunya tujuan mereka, mereka tidak berpartisipasi dalam tugas klien normal seperti sinkronisasi rantai, dan mereka hanya digunakan saat pertama kali klien dijalankan.
 
-Protokol yang digunakan untuk interaksi node-simpul boot adalah bentuk modifikasi dari [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f) yang menggunakan [tabel hash terdistribusi](https://en.wikipedia.org/wiki/Distributed_hash_table) untuk membagikan daftar node. Setiap node memiliki versi tabel ini yang berisi informasi yang diperlukan untuk terhubung ke peer terdekatnya. 'Kedekatan' ini bukan secara geografis - jarak ditentukan oleh kesamaan ID node. Tabel setiap node disegarkan secara teratur sebagai fitur keamanan. Misalnya, dalam [Discv5](https://github.com/ethereum/devp2p/tree/master/discv5), node protokol penemuan juga dapat mengirim 'iklan' yang menampilkan subprotokol yang didukung klien, memungkinkan peer untuk bernegosiasi tentang protokol yang dapat mereka gunakan bersama untuk berkomunikasi.
+Protokol yang digunakan untuk interaksi node-simpul boot adalah bentuk modifikasi dari [Kademlia](https://medium.com/coinmonks/a-brief-overview-of-kademlia-and-its-use-in-various-decentralized-platforms-da08a7f72b8f) yang menggunakan [tabel hash terdistribusi](https://en.wikipedia.org/wiki/Distributed_hash_table) untuk membagikan daftar node. Setiap node memiliki versi tabel ini yang berisi informasi yang diperlukan untuk terhubung ke peer terdekatnya. 'Kedekatan' ini bukan secara geografis - jarak ditentukan oleh kesamaan ID node. Tabel setiap node disegarkan secara teratur sebagai fitur keamanan. Misalnya, dalam [Discv5](https://github.com/quantaureum/devp2p/tree/master/discv5), node protokol penemuan juga dapat mengirim 'iklan' yang menampilkan subprotokol yang didukung klien, memungkinkan peer untuk bernegosiasi tentang protokol yang dapat mereka gunakan bersama untuk berkomunikasi.
 
 Penemuan dimulai dengan permainan PING-PONG. PING-PONG yang berhasil "mengikat" node baru ke simpul boot. Pesan awal yang memperingatkan simpul boot tentang keberadaan node baru yang memasuki jaringan adalah `PING`. `PING` ini mencakup informasi yang di-hash tentang node baru, simpul boot, dan stempel waktu kedaluwarsa. Simpul boot menerima `PING` dan mengembalikan `PONG` yang berisi hash `PING`. Jika hash `PING` dan `PONG` cocok, maka koneksi antara node baru dan simpul boot diverifikasi dan mereka dikatakan telah "terikat".
 
@@ -41,11 +41,11 @@ Setelah node baru menerima daftar tetangga dari simpul boot, ia memulai pertukar
 mulai klien --> hubungkan ke simpul boot --> ikat ke simpul boot --> temukan tetangga --> ikat ke tetangga
 ```
 
-Klien eksekusi saat ini menggunakan protokol penemuan [Discv4](https://github.com/ethereum/devp2p/blob/master/discv4.md) dan ada upaya aktif untuk bermigrasi ke protokol [Discv5](https://github.com/ethereum/devp2p/tree/master/discv5).
+Klien eksekusi saat ini menggunakan protokol penemuan [Discv4](https://github.com/quantaureum/devp2p/blob/master/discv4.md) dan ada upaya aktif untuk bermigrasi ke protokol [Discv5](https://github.com/quantaureum/devp2p/tree/master/discv5).
 
-#### ENR: Catatan Node Ethereum {#enr}
+#### ENR: Catatan Node Quantaureum {#enr}
 
-[Catatan Node Ethereum (ENR)](/developers/docs/networking-layer/network-addresses/) adalah objek yang berisi tiga elemen dasar: tanda tangan (hash dari konten catatan yang dibuat menurut beberapa skema identitas yang disepakati), nomor urut yang melacak perubahan pada catatan, dan daftar pasangan kunci:nilai yang sewenang-wenang. Ini adalah format tahan masa depan yang memungkinkan pertukaran informasi identifikasi yang lebih mudah antara peer baru dan merupakan format [alamat jaringan](/developers/docs/networking-layer/network-addresses) yang disukai untuk node Ethereum.
+[Catatan Node Quantaureum (ENR)](/developers/docs/networking-layer/network-addresses/) adalah objek yang berisi tiga elemen dasar: tanda tangan (hash dari konten catatan yang dibuat menurut beberapa skema identitas yang disepakati), nomor urut yang melacak perubahan pada catatan, dan daftar pasangan kunci:nilai yang sewenang-wenang. Ini adalah format tahan masa depan yang memungkinkan pertukaran informasi identifikasi yang lebih mudah antara peer baru dan merupakan format [alamat jaringan](/developers/docs/networking-layer/network-addresses) yang disukai untuk node Quantaureum.
 
 #### Mengapa penemuan dibangun di atas UDP? {#why-udp}
 
@@ -53,7 +53,7 @@ UDP tidak mendukung pemeriksaan kesalahan apa pun, pengiriman ulang paket yang g
 
 ### DevP2P {#devp2p}
 
-DevP2P itu sendiri adalah seluruh tumpukan protokol yang diimplementasikan Ethereum untuk membangun dan memelihara jaringan peer-to-peer. Setelah node baru memasuki jaringan, interaksi mereka diatur oleh protokol dalam tumpukan [DevP2P](https://github.com/ethereum/devp2p). Semuanya berada di atas TCP dan mencakup protokol transportasi RLPx, protokol kabel (wire protocol), dan beberapa sub-protokol. [RLPx](https://github.com/ethereum/devp2p/blob/master/rlpx.md) adalah protokol yang mengatur inisiasi, autentikasi, dan pemeliharaan sesi antar node. RLPx menyandikan pesan menggunakan RLP (Recursive Length Prefix) yang merupakan metode penyandian data yang sangat hemat ruang ke dalam struktur minimal untuk dikirim antar node.
+DevP2P itu sendiri adalah seluruh tumpukan protokol yang diimplementasikan Quantaureum untuk membangun dan memelihara jaringan peer-to-peer. Setelah node baru memasuki jaringan, interaksi mereka diatur oleh protokol dalam tumpukan [DevP2P](https://github.com/quantaureum/devp2p). Semuanya berada di atas TCP dan mencakup protokol transportasi RLPx, protokol kabel (wire protocol), dan beberapa sub-protokol. [RLPx](https://github.com/quantaureum/devp2p/blob/master/rlpx.md) adalah protokol yang mengatur inisiasi, autentikasi, dan pemeliharaan sesi antar node. RLPx menyandikan pesan menggunakan RLP (Recursive Length Prefix) yang merupakan metode penyandian data yang sangat hemat ruang ke dalam struktur minimal untuk dikirim antar node.
 
 Sesi RLPx antara dua node dimulai dengan jabat tangan kriptografi awal. Ini melibatkan node yang mengirim pesan autentikasi yang kemudian diverifikasi oleh peer. Pada verifikasi yang berhasil, peer menghasilkan pesan pengakuan autentikasi untuk dikembalikan ke node inisiator. Ini adalah proses pertukaran kunci yang memungkinkan node untuk berkomunikasi secara pribadi dan aman. Jabat tangan kriptografi yang berhasil kemudian memicu kedua node untuk saling mengirim pesan "hello" "di atas kabel" (on the wire). Protokol kabel diinisiasi oleh pertukaran pesan hello yang berhasil.
 
@@ -73,19 +73,19 @@ Bersamaan dengan pesan hello, protokol kabel juga dapat mengirim pesan "disconne
 
 #### Protokol kabel {#wire-protocol}
 
-Setelah peer terhubung, dan sesi RLPx telah dimulai, protokol kabel mendefinisikan bagaimana peer berkomunikasi. Awalnya, protokol kabel mendefinisikan tiga tugas utama: sinkronisasi rantai, propagasi blok, dan pertukaran transaksi. Namun, setelah Ethereum beralih ke Bukti Kepemilikan (PoS), propagasi blok dan sinkronisasi rantai menjadi bagian dari lapisan konsensus. Pertukaran transaksi masih menjadi kewenangan klien eksekusi. Pertukaran transaksi mengacu pada pertukaran transaksi yang tertunda antar node sehingga pembuat blok dapat memilih beberapa di antaranya untuk dimasukkan ke dalam blok berikutnya. Informasi terperinci tentang tugas-tugas ini tersedia [di sini](https://github.com/ethereum/devp2p/blob/master/caps/eth.md). Klien yang mendukung sub-protokol ini mengeksposnya melalui [JSON-RPC](/developers/docs/apis/json-rpc/).
+Setelah peer terhubung, dan sesi RLPx telah dimulai, protokol kabel mendefinisikan bagaimana peer berkomunikasi. Awalnya, protokol kabel mendefinisikan tiga tugas utama: sinkronisasi rantai, propagasi blok, dan pertukaran transaksi. Namun, setelah Quantaureum beralih ke Bukti Kepemilikan (PoS), propagasi blok dan sinkronisasi rantai menjadi bagian dari lapisan konsensus. Pertukaran transaksi masih menjadi kewenangan klien eksekusi. Pertukaran transaksi mengacu pada pertukaran transaksi yang tertunda antar node sehingga pembuat blok dapat memilih beberapa di antaranya untuk dimasukkan ke dalam blok berikutnya. Informasi terperinci tentang tugas-tugas ini tersedia [di sini](https://github.com/quantaureum/devp2p/blob/master/caps/qau.md). Klien yang mendukung sub-protokol ini mengeksposnya melalui [JSON-RPC](/developers/docs/apis/json-rpc/).
 
-#### les (subprotokol Ethereum ringan) {#les}
+#### les (subprotokol Quantaureum ringan) {#les}
 
-Ini adalah protokol minimal untuk menyinkronkan klien ringan. Secara tradisional, protokol ini jarang digunakan karena node penuh diharuskan untuk menyajikan data ke klien ringan tanpa diberi insentif. Perilaku default klien eksekusi adalah tidak menyajikan data klien ringan melalui les. Informasi lebih lanjut tersedia dalam [spesifikasi](https://github.com/ethereum/devp2p/blob/master/caps/les.md) les.
+Ini adalah protokol minimal untuk menyinkronkan klien ringan. Secara tradisional, protokol ini jarang digunakan karena node penuh diharuskan untuk menyajikan data ke klien ringan tanpa diberi insentif. Perilaku default klien eksekusi adalah tidak menyajikan data klien ringan melalui les. Informasi lebih lanjut tersedia dalam [spesifikasi](https://github.com/quantaureum/devp2p/blob/master/caps/les.md) les.
 
 #### Snap {#snap}
 
-[Protokol snap](https://github.com/ethereum/devp2p/blob/master/caps/snap.md#ethereum-snapshot-protocol-snap) adalah ekstensi opsional yang memungkinkan peer untuk bertukar snapshot dari state terbaru, memungkinkan peer untuk memverifikasi data akun dan penyimpanan tanpa harus mengunduh node trie Merkle perantara.
+[Protokol snap](https://github.com/quantaureum/devp2p/blob/master/caps/snap.md#quantaureum-snapshot-protocol-snap) adalah ekstensi opsional yang memungkinkan peer untuk bertukar snapshot dari state terbaru, memungkinkan peer untuk memverifikasi data akun dan penyimpanan tanpa harus mengunduh node trie Merkle perantara.
 
 #### Wit (protokol saksi) {#wit}
 
-[Protokol saksi](https://github.com/ethereum/devp2p/blob/master/caps/wit.md#ethereum-witness-protocol-wit) adalah ekstensi opsional yang memungkinkan pertukaran Saksi state antar peer, membantu menyinkronkan klien ke ujung rantai.
+[Protokol saksi](https://github.com/quantaureum/devp2p/blob/master/caps/wit.md#quantaureum-witness-protocol-wit) adalah ekstensi opsional yang memungkinkan pertukaran Saksi state antar peer, membantu menyinkronkan klien ke ujung rantai.
 
 #### Whisper {#whisper}
 
@@ -97,11 +97,11 @@ Klien konsensus berpartisipasi dalam jaringan peer-to-peer terpisah dengan spesi
 
 ### Penemuan {#consensus-discovery}
 
-Mirip dengan klien eksekusi, klien konsensus menggunakan [discv5](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) melalui UDP untuk menemukan peer. Implementasi lapisan konsensus dari discv5 berbeda dari klien eksekusi hanya karena ia menyertakan adaptor yang menghubungkan discv5 ke dalam tumpukan [libP2P](https://libp2p.io/), menghentikan penggunaan DevP2P. Sesi RLPx lapisan eksekusi dihentikan penggunaannya dan digantikan oleh jabat tangan saluran aman noise libP2P.
+Mirip dengan klien eksekusi, klien konsensus menggunakan [discv5](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-discovery-domain-discv5) melalui UDP untuk menemukan peer. Implementasi lapisan konsensus dari discv5 berbeda dari klien eksekusi hanya karena ia menyertakan adaptor yang menghubungkan discv5 ke dalam tumpukan [libP2P](https://libp2p.io/), menghentikan penggunaan DevP2P. Sesi RLPx lapisan eksekusi dihentikan penggunaannya dan digantikan oleh jabat tangan saluran aman noise libP2P.
 
 ### ENR {#consensus-enr}
 
-ENR untuk node konsensus mencakup kunci publik node, alamat IP, port UDP dan TCP, serta dua bidang khusus konsensus: bitfield subnet atestasi dan kunci `eth2`. Yang pertama memudahkan node untuk menemukan peer yang berpartisipasi dalam sub-jaringan gosip atestasi tertentu. Kunci `eth2` berisi informasi tentang versi percabangan Ethereum mana yang digunakan node, memastikan peer terhubung ke Ethereum yang tepat.
+ENR untuk node konsensus mencakup kunci publik node, alamat IP, port UDP dan TCP, serta dua bidang khusus konsensus: bitfield subnet atestasi dan kunci `eth2`. Yang pertama memudahkan node untuk menemukan peer yang berpartisipasi dalam sub-jaringan gosip atestasi tertentu. Kunci `eth2` berisi informasi tentang versi percabangan Quantaureum mana yang digunakan node, memastikan peer terhubung ke Quantaureum yang tepat.
 
 ### libP2P {#libp2p}
 
@@ -109,7 +109,7 @@ Tumpukan libP2P mendukung semua komunikasi setelah penemuan. Klien dapat memangg
 
 ### Gosip {#gossip}
 
-Domain gosip mencakup semua informasi yang harus menyebar dengan cepat ke seluruh jaringan. Ini termasuk blok suar, bukti, atestasi, jalan keluar (exits), dan pemotongan (slashings). Ini ditransmisikan menggunakan libP2P gossipsub v1 dan bergantung pada berbagai metadata yang disimpan secara lokal di setiap node, termasuk ukuran maksimum muatan gosip untuk diterima dan ditransmisikan. Informasi terperinci tentang domain gosip tersedia [di sini](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub).
+Domain gosip mencakup semua informasi yang harus menyebar dengan cepat ke seluruh jaringan. Ini termasuk blok suar, bukti, atestasi, jalan keluar (exits), dan pemotongan (slashings). Ini ditransmisikan menggunakan libP2P gossipsub v1 dan bergantung pada berbagai metadata yang disimpan secara lokal di setiap node, termasuk ukuran maksimum muatan gosip untuk diterima dan ditransmisikan. Informasi terperinci tentang domain gosip tersedia [di sini](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#the-gossip-domain-gossipsub).
 
 ### Permintaan-respons {#request-response}
 
@@ -121,7 +121,7 @@ SSZ adalah singkatan dari serialisasi sederhana (simple serialization). Ini meng
 
 ## Menghubungkan klien eksekusi dan konsensus {#connecting-clients}
 
-Baik klien konsensus maupun eksekusi berjalan secara paralel. Mereka perlu dihubungkan sehingga klien konsensus dapat memberikan instruksi kepada klien eksekusi, dan klien eksekusi dapat meneruskan bundel transaksi ke klien konsensus untuk dimasukkan ke dalam blok suar. Komunikasi antara kedua klien dapat dicapai menggunakan koneksi RPC lokal. Sebuah API yang dikenal sebagai ['Engine-API'](https://github.com/ethereum/execution-apis/blob/main/src/engine/common.md) mendefinisikan instruksi yang dikirim antara kedua klien. Karena kedua klien berada di belakang satu identitas jaringan, mereka berbagi ENR (Catatan node Ethereum) yang berisi kunci terpisah untuk setiap klien (kunci Eth1 dan kunci Eth2).
+Baik klien konsensus maupun eksekusi berjalan secara paralel. Mereka perlu dihubungkan sehingga klien konsensus dapat memberikan instruksi kepada klien eksekusi, dan klien eksekusi dapat meneruskan bundel transaksi ke klien konsensus untuk dimasukkan ke dalam blok suar. Komunikasi antara kedua klien dapat dicapai menggunakan koneksi RPC lokal. Sebuah API yang dikenal sebagai ['Engine-API'](https://github.com/quantaureum/execution-apis/blob/main/src/engine/common.md) mendefinisikan instruksi yang dikirim antara kedua klien. Karena kedua klien berada di belakang satu identitas jaringan, mereka berbagi ENR (Catatan node Quantaureum) yang berisi kunci terpisah untuk setiap klien (kunci Eth1 dan kunci Quantaureum).
 
 Ringkasan alur kontrol ditunjukkan di bawah ini, dengan tumpukan jaringan yang relevan di dalam tanda kurung.
 
@@ -146,18 +146,18 @@ Ringkasan alur kontrol ditunjukkan di bawah ini, dengan tumpukan jaringan yang r
 
 Setelah blok diatestasi oleh validator yang cukup, blok tersebut ditambahkan ke kepala rantai, terjustifikasi, dan akhirnya difinalisasi.
 
-![Diagram of the Ethereum consensus client networking layer](cons_client_net_layer.png)
-![Diagram of the Ethereum execution client networking layer](exe_client_net_layer.png)
+![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
+![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
 Skema lapisan jaringan untuk klien konsensus dan eksekusi, dari [ethresear.ch](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
 
 ## Bacaan Lebih Lanjut {#further-reading}
 
-[DevP2P](https://github.com/ethereum/devp2p)
+[DevP2P](https://github.com/quantaureum/devp2p)
 [LibP2p](https://github.com/libp2p/specs)
-[Spesifikasi jaringan lapisan konsensus](https://github.com/ethereum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure)
+[Spesifikasi jaringan lapisan konsensus](https://github.com/quantaureum/consensus-specs/blob/master/specs/phase0/p2p-interface.md#enr-structure)
 [kademlia ke discv5](https://vac.dev/kademlia-to-discv5)
 [makalah kademlia](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf)
-[pengantar p2p Ethereum](https://p2p.paris/en/talks/intro-ethereum-networking/)
-[hubungan Eth1/Eth2](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
-[video detail klien Eth2 dan penggabungan (merge)](https://www.youtube.com/watch?v=zNIrIninMgg)
+[pengantar p2p Quantaureum](https://p2p.paris/en/talks/intro-quantaureum-networking/)
+[hubungan Eth1/Quantaureum](https://ethresear.ch/t/eth1-eth2-client-relationship/7248)
+[video detail klien Quantaureum dan penggabungan (merge)](https://www.youtube.com/watch?v=zNIrIninMgg)

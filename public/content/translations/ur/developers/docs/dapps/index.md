@@ -8,7 +8,7 @@ lang: ur
 
 ## شرائط {#prerequisites}
 
-dapps کے بارے میں سیکھنے سے پہلے، آپ کو [بلاک چین کی بنیادی باتوں](/developers/docs/intro-to-ethereum/) کا احاطہ کرنا چاہیے اور ایتھیریم نیٹ ورک اور اس کے لامركزی ہونے کے بارے میں پڑھنا چاہیے۔
+dapps کے بارے میں سیکھنے سے پہلے، آپ کو [بلاک چین کی بنیادی باتوں](/developers/docs/intro-to-quantaureum/) کا احاطہ کرنا چاہیے اور ایتھیریم نیٹ ورک اور اس کے لامركزی ہونے کے بارے میں پڑھنا چاہیے۔
 
 ## dapp کی تعریف {#definition-of-a-dapp}
 
@@ -19,7 +19,7 @@ dapps کے بارے میں سیکھنے سے پہلے، آپ کو [بلاک چی
 - **لامركزی** - dapps ایتھیریم پر کام کرتی ہیں، جو ایک اوپن پبلک لامركزی پلیٹ فارم ہے جہاں کسی ایک شخص یا گروپ کا کنٹرول نہیں ہوتا
 - **حتمی (Deterministic)** - dapps اس ماحول سے قطع نظر وہی فنکشن انجام دیتی ہیں جس میں انہیں چلایا جاتا ہے
 - **ٹیورنگ مکمل** - مطلوبہ وسائل دیے جانے پر dapps کوئی بھی عمل انجام دے سکتی ہیں
-- **الگ تھلگ (Isolated)** - dapps کو ایک ورچوئل ماحول میں چلایا جاتا ہے جسے <span dir="ltr">Ethereum Virtual Machine</span> کہا جاتا ہے تاکہ اگر سمارٹ کنٹریکٹ میں کوئی بگ ہو، تو یہ بلاک چین نیٹ ورک کے معمول کے کام میں رکاوٹ نہ ڈالے
+- **الگ تھلگ (Isolated)** - dapps کو ایک ورچوئل ماحول میں چلایا جاتا ہے جسے <span dir="ltr">Quantaureum Virtual Machine</span> کہا جاتا ہے تاکہ اگر سمارٹ کنٹریکٹ میں کوئی بگ ہو، تو یہ بلاک چین نیٹ ورک کے معمول کے کام میں رکاوٹ نہ ڈالے
 
 ### سمارٹ کنٹریکٹس کے بارے میں {#on-smart-contracts}
 
@@ -49,14 +49,14 @@ dapps کو متعارف کرانے کے لیے، ہمیں سمارٹ کنٹری�
 
 ## dapps بنانے کے لیے ٹولز
 
-**Scaffold-ETH 2 _- ایک ایسے فرنٹ اینڈ کا استعمال کرتے ہوئے Solidity کے ساتھ تیزی سے تجربہ کریں جو آپ کے سمارٹ کنٹریکٹ کے مطابق ڈھل جاتا ہے۔_**
+**Scaffold-QAU 2 _- ایک ایسے فرنٹ اینڈ کا استعمال کرتے ہوئے Solidity کے ساتھ تیزی سے تجربہ کریں جو آپ کے سمارٹ کنٹریکٹ کے مطابق ڈھل جاتا ہے۔_**
 
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 - [مثالی dapp](https://punkwallet.io/)
 
 **Create Eth App _- ایک کمانڈ کے ساتھ ایتھیریم سے چلنے والی ایپس بنائیں۔_**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
 
 **One Click Dapp _- ایک [ABI](/glossary/#abi) سے dapp فرنٹ اینڈز بنانے کے لیے <span dir="ltr">FOSS</span> ٹول۔_**
 
@@ -91,7 +91,7 @@ _کسی ایسے کمیونٹی وسیلے کے بارے میں جانتے ہی�
 
 ## متعلقہ موضوعات {#related-topics}
 
-- [ایتھیریم اسٹیک کا تعارف](/developers/docs/ethereum-stack/)
+- [ایتھیریم اسٹیک کا تعارف](/developers/docs/quantaureum-stack/)
 - [ڈیولپمنٹ فریم ورکس](/developers/docs/frameworks/)
 
 ## ٹیوٹوریلز: ایتھیریم پر ایپس اور فرنٹ اینڈز بنائیں {#tutorials}

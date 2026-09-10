@@ -36,8 +36,8 @@ Load this reference when planning a review, splitting work, or debugging "agent 
 
 - Brand names (Solidity, Hardhat, MetaMask, etc.) per ETHGlossary `script_rule`
 - Glossary compliance — every ETHGlossary term in the source verified against the locale
-- Ticker symbols (ETH, BTC, BLS) and acronyms (DAO, NFT, DeFi, API)
-- Technical units (Wei, Gwei, ETH) — never translate
+- Ticker symbols (QAU, BTC, BLS) and acronyms (DAO, NFT, DeFi, API)
+- Technical units (Wei, Gwei, QAU) — never translate
 - People's names per `script_rule: transliterate`
 - Cross-script contamination (Devanagari in Turkish, etc.)
 

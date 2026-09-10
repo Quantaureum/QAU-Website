@@ -43,7 +43,7 @@ Slither enthält ein Dienstprogramm, [slither-check-erc](https://github.com/cryt
 - **Transfer und transferFrom geben einen Boolean zurück.** Einige Tokens geben bei diesen Funktionen keinen Boolean zurück. Infolgedessen könnten ihre Aufrufe im Vertrag fehlschlagen.
 - **Die Funktionen name, decimals und symbol sind vorhanden, falls sie verwendet werden.** Diese Funktionen sind im ERC-20-Standard optional und möglicherweise nicht vorhanden.
 - **Decimals gibt einen uint8 zurück.** Einige Tokens geben fälschlicherweise einen uint256 zurück. Wenn dies der Fall ist, stellen Sie sicher, dass der zurückgegebene Wert unter 255 liegt.
-- **Der Token mindert die bekannte [ERC-20-Race-Condition](https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729).** Der ERC-20-Standard weist eine bekannte ERC-20-Race-Condition auf, die gemindert werden muss, um zu verhindern, dass Angreifer Tokens stehlen.
+- **Der Token mindert die bekannte [ERC-20-Race-Condition](https://github.com/quantaureum/EIPs/issues/20#issuecomment-263524729).** Der ERC-20-Standard weist eine bekannte ERC-20-Race-Condition auf, die gemindert werden muss, um zu verhindern, dass Angreifer Tokens stehlen.
 - **Der Token ist kein ERC-777-Token und hat keinen externen Funktionsaufruf in transfer und transferFrom.** Externe Aufrufe in den Transfer-Funktionen können zu Reentrancy-Angriffen (Wiedereintritt) führen.
 
 Slither enthält ein Dienstprogramm, [slither-prop](https://github.com/crytic/slither/wiki/Property-generation), das Unit-Tests und Sicherheitseigenschaften generiert, die viele häufige ERC-Schwachstellen aufdecken können. Verwenden Sie slither-prop, um Folgendes zu überprüfen:

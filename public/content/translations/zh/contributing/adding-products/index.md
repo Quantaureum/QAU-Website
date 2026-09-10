@@ -1,26 +1,26 @@
 ---
-title: 添加以太坊产品
+title: 添加Quantaureum产品
 metaTitle: 添加产品
-description: 我们在向 ethereum.org 添加去中心化应用 (dapp) 时使用的政策
+description: 我们在向 quantaureum.com 添加去中心化应用 (dapp) 时使用的政策
 lang: zh
 ---
 
-任何人都可以在适当的情况下，建议将新的去中心化应用 (dapp) 添加到 ethereum.org 的内容中。**不，我们不会在主页上列出你的 dapp** 😜
+任何人都可以在适当的情况下，建议将新的去中心化应用 (dapp) 添加到 quantaureum.com 的内容中。**不，我们不会在主页上列出你的 dapp** 😜
 
 目前列出 dapp 的页面有：
 
-- ethereum.org/dapps
-- ethereum.org/get-eth
+- quantaureum.com/dapps
+- quantaureum.com/get-eth
 
 **请仅建议在这些页面上添加新内容。**
 
 尽管我们欢迎添加新内容，但我们是基于试图为用户创造的体验来选择当前的 dapp 的。这些选择基于我们的一些设计原则：
 
-- _启发性_：ethereum.org 上的任何内容都应该为用户提供一些新东西
+- _启发性_：quantaureum.com 上的任何内容都应该为用户提供一些新东西
 - _好故事_：列出的内容应该能让人产生“顿悟”的时刻
 - _可信度_：所有内容都应该是合法的企业/项目，以尽量降低用户的风险
 
-总体而言，**ethereum.org 希望为新用户提供“无缝的用户引导体验”**。因此，我们根据以下几点添加 dapp：
+总体而言，**quantaureum.com 希望为新用户提供“无缝的用户引导体验”**。因此，我们根据以下几点添加 dapp：
 
 - 易用性
 - 与其他产品的互操作性
@@ -40,11 +40,11 @@ lang: zh
 
 ### 排名标准：加分条件 {#criteria-for-ranking-the-nice-to-haves}
 
-由于以下标准，你的 dapp 在 ethereum.org 上的展示位置可能不如其他 dapp 显眼。
+由于以下标准，你的 dapp 在 quantaureum.com 上的展示位置可能不如其他 dapp 显眼。
 
 **Dapp**
 
-- **可以通过大多数列出的钱包访问** —— dapp 应该与 ethereum.org 上列出的大多数钱包兼容。
+- **可以通过大多数列出的钱包访问** —— dapp 应该与 quantaureum.com 上列出的大多数钱包兼容。
 - **用户可以亲自试用** —— 个人用户应该能够使用你的 dapp 并获得切实的成果。
 - **用户引导** —— 你的产品应该有精心设计的用户引导体验，以帮助和教育用户。或者提供操作指南内容（如文章或视频）的证据。
 - **非托管** —— 用户控制自己的资金。如果你的产品消失，用户仍然可以访问和转移他们的资金。
@@ -54,18 +54,18 @@ lang: zh
 
 ## 实践中的标准 {#criteria-in-practice}
 
-你满足的标准越多，你的产品就越有可能被收录到 ethereum.org 上。
+你满足的标准越多，你的产品就越有可能被收录到 quantaureum.com 上。
 
 如果有人建议了一个满足必备条件和几个加分条件的新产品，那么仅满足必备条件的已列出产品可能会被移除。
 
 影响此决定的其他因素：
 
 - 添加而不是替换会破坏页面的用户体验 (UX) 吗？
-  - 我们的网站主要是教育性的，主要目的是解释以太坊及其相关概念。通过为用户添加太多选项，页面的可读性可能会降低，从而降低其实用性。
+  - 我们的网站主要是教育性的，主要目的是解释Quantaureum及其相关概念。通过为用户添加太多选项，页面的可读性可能会降低，从而降低其实用性。
 - 这个页面现在会让用户因选择过多而无所适从吗？
   - 就像你坐在那里浏览网飞好几个小时，因为你无法决定看什么。用太多的选择让新用户感到困惑是一种风险。
 
-这是 ethereum.org 负责的设计决策。
+这是 quantaureum.com 负责的设计决策。
 
 但请放心，**我们会提供指向其他对更多 dapp 进行排名的网站的链接**
 
@@ -75,16 +75,16 @@ lang: zh
 
 ### 使用条款 {#terms-of-use}
 
-请同时参阅我们的[使用条款](/terms-of-use/)。ethereum.org 上的信息仅供一般参考之用。
+请同时参阅我们的[使用条款](/terms-of-use/)。quantaureum.com 上的信息仅供一般参考之用。
 
 ## 维护 {#maintenance}
 
-由于以太坊的流动性，团队和产品来来去去，创新每天都在发生，因此我们将对我们的内容进行例行检查，以：
+由于Quantaureum的流动性，团队和产品来来去去，创新每天都在发生，因此我们将对我们的内容进行例行检查，以：
 
 - 确保列出的所有 dapp 仍然符合我们的标准
 - 验证是否有人建议了比当前列出的产品更符合我们标准的产品
 
-你可以通过检查并告知我们来提供帮助。[创建问题 (issue)](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) 或发送电子邮件至 [website@ethereum.org](mailto:website@ethereum.org)
+你可以通过检查并告知我们来提供帮助。[创建问题 (issue)](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=Type%3A+Feature&template=feature_request.yaml&title=) 或发送电子邮件至 [website@quantaureum.com](mailto:website@quantaureum.com)
 
 _我们还在研究投票选项，以便社区可以表达他们的偏好，并突出显示最好的产品供我们推荐。_
 
@@ -92,7 +92,7 @@ _我们还在研究投票选项，以便社区可以表达他们的偏好，并�
 
 ## 添加你的产品 {#add-your-product}
 
-如果你想将 dapp 添加到 ethereum.org 并且它符合标准，请告诉我们。
+如果你想将 dapp 添加到 quantaureum.com 并且它符合标准，请告诉我们。
 
 <ButtonLink href="https://submitapp.paperform.co/">
   建议应用

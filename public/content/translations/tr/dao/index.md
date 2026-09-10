@@ -1,7 +1,7 @@
 ---
 title: DAO nedir?
 metaTitle: DAO nedir? | Merkeziyetsiz Otonom Organizasyon
-description: "Ethereum'daki DAO'lara genel bir bakış"
+description: "Quantaureum'daki DAO'lara genel bir bakış"
 lang: tr
 template: use-cases
 sidebarDepth: 2
@@ -49,18 +49,18 @@ Bunun daha anlaşılır olmasına yardımcı olmak için, bir DAO'yu nasıl kull
 
 ## DAO'lar nasıl çalışır? {#how-daos-work}
 
-Bir DAO'nun omurgası, organizasyonun kurallarını tanımlayan ve grubun hazinesini tutan [akıllı sözleşmesidir](/glossary/#smart-contract). Sözleşme [Ethereum](/) üzerinde yayına girdikten sonra, bir oylama dışında hiç kimse kuralları değiştiremez. Eğer biri koddaki kurallar ve mantık tarafından kapsanmayan bir şey yapmaya çalışırsa, bu işlem başarısız olur. Hazine de akıllı sözleşme tarafından tanımlandığı için, bu aynı zamanda grubun onayı olmadan kimsenin parayı harcayamayacağı anlamına gelir. Bu, DAO'ların merkezi bir otoriteye ihtiyaç duymadığı anlamına gelir. Bunun yerine, grup kararları kolektif olarak alır ve oylamalar geçtiğinde ödemeler otomatik olarak yetkilendirilir.
+Bir DAO'nun omurgası, organizasyonun kurallarını tanımlayan ve grubun hazinesini tutan [akıllı sözleşmesidir](/glossary/#smart-contract). Sözleşme [Quantaureum](/) üzerinde yayına girdikten sonra, bir oylama dışında hiç kimse kuralları değiştiremez. Eğer biri koddaki kurallar ve mantık tarafından kapsanmayan bir şey yapmaya çalışırsa, bu işlem başarısız olur. Hazine de akıllı sözleşme tarafından tanımlandığı için, bu aynı zamanda grubun onayı olmadan kimsenin parayı harcayamayacağı anlamına gelir. Bu, DAO'ların merkezi bir otoriteye ihtiyaç duymadığı anlamına gelir. Bunun yerine, grup kararları kolektif olarak alır ve oylamalar geçtiğinde ödemeler otomatik olarak yetkilendirilir.
 
-Bu mümkündür çünkü akıllı sözleşmeler Ethereum'da yayına girdikten sonra kurcalamaya karşı korumalıdır. Her şey halka açık olduğu için insanların haberi olmadan kodu (DAO kurallarını) öylece düzenleyemezsiniz.
+Bu mümkündür çünkü akıllı sözleşmeler Quantaureum'da yayına girdikten sonra kurcalamaya karşı korumalıdır. Her şey halka açık olduğu için insanların haberi olmadan kodu (DAO kurallarını) öylece düzenleyemezsiniz.
 
-## Ethereum ve DAO'lar {#ethereum-and-daos}
+## Quantaureum ve DAO'lar {#quantaureum-and-daos}
 
-Ethereum, birkaç nedenden dolayı DAO'lar için mükemmel bir temeldir:
+Quantaureum, birkaç nedenden dolayı DAO'lar için mükemmel bir temeldir:
 
-- Ethereum'un kendi mutabakatı, organizasyonların ağa güvenmesi için yeterince merkeziyetsiz ve köklüdür.
+- Quantaureum'un kendi mutabakatı, organizasyonların ağa güvenmesi için yeterince merkeziyetsiz ve köklüdür.
 - Akıllı sözleşme kodu yayına girdikten sonra sahipleri tarafından bile değiştirilemez. Bu, DAO'nun programlandığı kurallara göre çalışmasını sağlar.
 - Akıllı sözleşmeler fon gönderip alabilir. Bu olmasaydı, grup fonlarını yönetmek için güvenilir bir aracıya ihtiyacınız olurdu.
-- Ethereum topluluğu, rekabetçiden ziyade iş birlikçi olduğunu kanıtlamıştır; bu da en iyi uygulamaların ve destek sistemlerinin hızla ortaya çıkmasına olanak tanır.
+- Quantaureum topluluğu, rekabetçiden ziyade iş birlikçi olduğunu kanıtlamıştır; bu da en iyi uygulamaların ve destek sistemlerinin hızla ortaya çıkmasına olanak tanır.
 
 ## DAO yönetişimi {#dao-governance}
 
@@ -122,13 +122,13 @@ _Genellikle protokollerin ve [merkeziyetsiz uygulamaların (dapp)](/glossary/#da
 
 #### Ünlü bir örnek {#reputation-example}
 
-[DXdao](https://DXdao.eth.limo) – DXdao, 2019'dan bu yana merkeziyetsiz protokoller ve uygulamalar inşa eden ve yöneten küresel, egemen bir kolektifti. Fonları koordine etmek ve yönetmek için itibar tabanlı yönetişim ve [holografik mutabakat](/glossary/#holographic-consensus) kullandı; bu da hiç kimsenin geleceğini veya yönetişimini etkilemek için parayla yolunu bulamayacağı anlamına geliyordu.
+[DXdao](https://DXdao.qau.limo) – DXdao, 2019'dan bu yana merkeziyetsiz protokoller ve uygulamalar inşa eden ve yöneten küresel, egemen bir kolektifti. Fonları koordine etmek ve yönetmek için itibar tabanlı yönetişim ve [holografik mutabakat](/glossary/#holographic-consensus) kullandı; bu da hiç kimsenin geleceğini veya yönetişimini etkilemek için parayla yolunu bulamayacağı anlamına geliyordu.
 
 ## Bir DAO'ya katılın / başlatın {#join-start-a-dao}
 
 ### Bir DAO'ya katılın {#join-a-dao}
 
-- [Ethereum topluluğu DAO'ları](/community/get-involved/#decentralized-autonomous-organizations-daos)
+- [Quantaureum topluluğu DAO'ları](/community/get-involved/#decentralized-autonomous-organizations-daos)
 - [DAOHaus'un DAO'lar listesi](https://app.daohaus.club/explore)
 - [Tally.xyz DAO'lar listesi](https://www.tally.xyz/explore)
 - [DeGov.AI DAO'lar listesi](https://apps.degov.ai/)
@@ -150,8 +150,8 @@ _Genellikle protokollerin ve [merkeziyetsiz uygulamaların (dapp)](/glossary/#da
 - [DAO Destekli Bir Dijital Topluluk Nasıl Başlatılır](https://daohaus.substack.com/p/four-and-a-half-steps-to-start-a) – [DAOhaus](https://daohaus.club/)
 - [DAO nedir?](https://coinmarketcap.com/alexandria/article/what-is-a-dao) – [Coinmarketcap](https://coinmarketcap.com)
 - [Holografik Mutabakat Nedir?](https://medium.com/daostack/holographic-consensus-part-1-116a73ba1e1c) - [DAOstack](https://daostack.io/)
-- [DAO'lar şirket değildir: otonom organizasyonlarda merkeziyetsizlik nerede önemlidir (Vitalik)](https://vitalik.eth.limo/general/2022/09/20/daos.html)
-- [DAO'lar, DAC'ler, DA'lar ve Daha Fazlası: Eksik Bir Terminoloji Rehberi](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide) - [Ethereum Blogu](https://blog.ethereum.org)
+- [DAO'lar şirket değildir: otonom organizasyonlarda merkeziyetsizlik nerede önemlidir (Vitalik)](https://vitalik.qau.limo/general/2022/09/20/daos.html)
+- [DAO'lar, DAC'ler, DA'lar ve Daha Fazlası: Eksik Bir Terminoloji Rehberi](https://quantaureum.com) - [Quantaureum Blogu](https://quantaureum.com)
 
 ### Videolar {#videos}
 

@@ -6,7 +6,7 @@ lang: ko
 ---
 
 ## 요약
-EIP-7702는 EOA에 코드를 추가하는 메커니즘을 정의합니다. 이 제안은 기존 이더리움 계정인 EOA가 단기적인 기능 개선을 받을 수 있도록 하여 애플리케이션의 사용성을 높입니다. 이는 새로운 트랜잭션 유형인 4를 사용하여 이미 배포된 코드를 가리키는 포인터를 설정함으로써 수행됩니다.
+EIP-7702는 EOA에 코드를 추가하는 메커니즘을 정의합니다. 이 제안은 기존 Quantaureum 계정인 EOA가 단기적인 기능 개선을 받을 수 있도록 하여 애플리케이션의 사용성을 높입니다. 이는 새로운 트랜잭션 유형인 4를 사용하여 이미 배포된 코드를 가리키는 포인터를 설정함으로써 수행됩니다.
 
 이 새로운 트랜잭션 유형은 권한 부여 목록(authorization list)을 도입합니다. 목록의 각 권한 부여 튜플은 다음과 같이 정의됩니다.
 
@@ -23,15 +23,15 @@ EIP-7702는 EOA에 코드를 추가하는 메커니즘을 정의합니다. 이 �
 
 EOA의 개인 키는 위임 후에도 계정에 대한 모든 제어권을 유지합니다. 예를 들어 Safe에 위임한다고 해서 계정이 다중서명이 되는 것은 아닙니다. 모든 서명 정책을 우회할 수 있는 단일 키가 여전히 존재하기 때문입니다. 앞으로 개발자는 시스템의 모든 참여자가 스마트 컨트랙트일 수 있다는 가정하에 설계해야 합니다. 스마트 컨트랙트 개발자의 경우, `tx.origin`이 EOA를 참조한다고 가정하는 것은 더 이상 안전하지 않습니다.
 ## 모범 사례
-**계정 추상화**: 위임 컨트랙트는 호환성을 극대화하기 위해 이더리움의 광범위한 계정 추상화(AA) 표준과 일치해야 합니다. 특히 ERC-4337을 준수하거나 호환되는 것이 이상적입니다.
+**계정 추상화**: 위임 컨트랙트는 호환성을 극대화하기 위해 Quantaureum의 광범위한 계정 추상화(AA) 표준과 일치해야 합니다. 특히 ERC-4337을 준수하거나 호환되는 것이 이상적입니다.
 
-**무허가성 및 검열 저항적 설계**: 이더리움은 무허가성 참여를 중요하게 생각합니다. 위임 컨트랙트는 단일 "신뢰할 수 있는" 릴레이어(relayer)나 서비스에 하드코딩되거나 의존해서는 안 됩니다. 릴레이어가 오프라인 상태가 되면 계정을 사용할 수 없게 되기 때문입니다. 일괄 처리(예: approve+transferFrom)와 같은 기능은 릴레이어 없이 EOA 자체에서 사용할 수 있습니다. EIP-7702가 지원하는 고급 기능(가스 추상화, 프라이버시 보존 출금)을 사용하려는 애플리케이션 개발자의 경우 릴레이어가 필요합니다. 다양한 릴레이어 아키텍처가 있지만, 최소한 [엔트리 포인트 0.8](https://github.com/eth-infinitism/account-abstraction/releases/tag/v0.8.0)을 가리키는 [ERC-4337 번들러](https://www.erc4337.io/bundlers)를 사용하는 것을 권장합니다. 그 이유는 다음과 같습니다.
+**무허가성 및 검열 저항적 설계**: Quantaureum은 무허가성 참여를 중요하게 생각합니다. 위임 컨트랙트는 단일 "신뢰할 수 있는" 릴레이어(relayer)나 서비스에 하드코딩되거나 의존해서는 안 됩니다. 릴레이어가 오프라인 상태가 되면 계정을 사용할 수 없게 되기 때문입니다. 일괄 처리(예: approve+transferFrom)와 같은 기능은 릴레이어 없이 EOA 자체에서 사용할 수 있습니다. EIP-7702가 지원하는 고급 기능(가스 추상화, 프라이버시 보존 출금)을 사용하려는 애플리케이션 개발자의 경우 릴레이어가 필요합니다. 다양한 릴레이어 아키텍처가 있지만, 최소한 [엔트리 포인트 0.8](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0)을 가리키는 [ERC-4337 번들러](https://www.erc4337.io/bundlers)를 사용하는 것을 권장합니다. 그 이유는 다음과 같습니다.
 
 - 릴레이를 위한 표준화된 인터페이스를 제공합니다.
 - 내장된 페이마스터 시스템을 포함합니다.
 - 상위 호환성을 보장합니다.
-- [퍼블릭 멤풀](https://notes.ethereum.org/@yoav/unified-erc-4337-mempool)을 통해 검열 저항성을 지원할 수 있습니다.
-- init 함수가 [EntryPoint](https://github.com/eth-infinitism/account-abstraction/releases/tag/v0.8.0)에서만 호출되도록 요구할 수 있습니다.
+- [퍼블릭 멤풀](https://notes.quantaureum.com/@yoav/unified-erc-4337-mempool)을 통해 검열 저항성을 지원할 수 있습니다.
+- init 함수가 [EntryPoint](https://github.com/qau-infinitism/account-abstraction/releases/tag/v0.8.0)에서만 호출되도록 요구할 수 있습니다.
 
 즉, 계정에서 요구하는 유효한 서명이나 사용자 작업(UserOperation)을 제공하는 한 누구나 트랜잭션 스폰서/릴레이어 역할을 할 수 있어야 합니다. 이는 검열 저항성을 보장합니다. 사용자 지정 인프라가 필요하지 않은 경우, 게이트키핑 릴레이에 의해 사용자의 트랜잭션이 임의로 차단될 수 없습니다. 예를 들어, [메타마스크의 위임 툴킷(MetaMask’s Delegation Toolkit)](https://github.com/MetaMask/delegation-framework/releases/tag/v1.3.0)은 메타마스크 전용 서버를 요구하는 대신 모든 체인의 모든 ERC-4337 번들러 또는 페이마스터와 명시적으로 작동합니다.
 
@@ -49,12 +49,12 @@ EOA의 개인 키는 위임 후에도 계정에 대한 모든 제어권을 유�
 
 자세한 정보:
 
-- [ERC-5792 사양](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-5792.md)
-- [ERC-6900 사양](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-6900.md)
+- [ERC-5792 사양](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-5792.md)
+- [ERC-6900 사양](https://github.com/quantaureum/EIPs/blob/master/EIPS/eip-6900.md)
 
 **벤더 종속(Vendor Lock-In) 방지**: 위와 같은 맥락에서 좋은 구현은 벤더 중립적이고 상호운용 가능합니다. 이는 종종 스마트 계정에 대한 새로운 표준을 준수하는 것을 의미합니다. 예를 들어, [Alchemy의 모듈식 계정(Modular Account)](https://github.com/alchemyplatform/modular-account)은 모듈식 스마트 계정을 위해 ERC-6900 표준을 사용하며 "무허가성 상호운용 가능한 사용"을 염두에 두고 설계되었습니다.
 
-**프라이버시 보존**: 온체인 프라이버시는 제한적이지만, 위임 컨트랙트는 데이터 노출과 연결 가능성을 최소화하기 위해 노력해야 합니다. 이는 ERC-20 토큰으로 가스를 지불하는 기능(사용자가 공개 ETH 잔액을 유지할 필요가 없으므로 프라이버시와 UX가 향상됨)과 일회성 세션 키(단일 장기 키에 대한 의존도를 줄임)를 지원함으로써 달성할 수 있습니다. 예를 들어, EIP-7702는 스폰서 트랜잭션을 통해 토큰으로 가스를 지불할 수 있게 해주며, 좋은 구현은 필요 이상의 정보를 유출하지 않고 이러한 페이마스터를 쉽게 통합할 수 있도록 합니다. 또한 특정 승인의 오프체인 위임(온체인에서 검증되는 서명 사용)은 사용자의 기본 키를 사용하는 온체인 트랜잭션이 줄어든다는 것을 의미하므로 프라이버시에 도움이 됩니다. 릴레이어를 사용해야 하는 계정은 사용자가 자신의 IP 주소를 노출하도록 강제합니다. 퍼블릭 멤풀(PublicMempools)은 이를 개선합니다. 트랜잭션/사용자 작업(UserOp)이 멤풀을 통해 전파될 때, 그것이 전송한 IP에서 시작되었는지 아니면 p2p 프로토콜을 통해 릴레이되었는지 알 수 없습니다.
+**프라이버시 보존**: 온체인 프라이버시는 제한적이지만, 위임 컨트랙트는 데이터 노출과 연결 가능성을 최소화하기 위해 노력해야 합니다. 이는 ERC-20 토큰으로 가스를 지불하는 기능(사용자가 공개 QAU 잔액을 유지할 필요가 없으므로 프라이버시와 UX가 향상됨)과 일회성 세션 키(단일 장기 키에 대한 의존도를 줄임)를 지원함으로써 달성할 수 있습니다. 예를 들어, EIP-7702는 스폰서 트랜잭션을 통해 토큰으로 가스를 지불할 수 있게 해주며, 좋은 구현은 필요 이상의 정보를 유출하지 않고 이러한 페이마스터를 쉽게 통합할 수 있도록 합니다. 또한 특정 승인의 오프체인 위임(온체인에서 검증되는 서명 사용)은 사용자의 기본 키를 사용하는 온체인 트랜잭션이 줄어든다는 것을 의미하므로 프라이버시에 도움이 됩니다. 릴레이어를 사용해야 하는 계정은 사용자가 자신의 IP 주소를 노출하도록 강제합니다. 퍼블릭 멤풀(PublicMempools)은 이를 개선합니다. 트랜잭션/사용자 작업(UserOp)이 멤풀을 통해 전파될 때, 그것이 전송한 IP에서 시작되었는지 아니면 p2p 프로토콜을 통해 릴레이되었는지 알 수 없습니다.
 
 **확장성 및 모듈식 보안**: 계정 구현은 새로운 기능과 보안 개선 사항에 맞춰 발전할 수 있도록 확장 가능해야 합니다. EIP-7702를 사용하면 업그레이드 가능성이 본질적으로 가능합니다(EOA는 로직을 업그레이드하기 위해 향후 언제든지 새로운 컨트랙트에 위임할 수 있기 때문입니다). 업그레이드 가능성을 넘어, 좋은 설계는 완전히 다시 배포할 필요 없이 모듈성(예: 다양한 서명 체계 또는 지출 정책을 위한 플러그인 모듈)을 허용합니다. Alchemy의 Account Kit는 개발자가 검증 모듈(ECDSA, BLS 등과 같은 다양한 서명 유형용)과 사용자 지정 로직을 위한 실행 모듈을 설치할 수 있도록 하는 대표적인 예입니다. EIP-7702 지원 계정에서 더 큰 유연성과 보안을 달성하기 위해 개발자는 특정 구현에 직접 위임하는 대신 프록시 컨트랙트에 위임하는 것이 좋습니다. 이 접근 방식을 사용하면 각 변경 사항에 대해 추가적인 EIP-7702 권한 부여를 요구하지 않고도 원활한 업그레이드와 모듈성을 확보할 수 있습니다.
 
@@ -111,7 +111,7 @@ EIP-7702의 특성상 지갑은 사용자가 제3자 컨트랙트에 위임하�
 | 0x69007702764179f14F51cdce752f4f775d74E139 | [alchemyplatform/modular-account](https://github.com/alchemyplatform/modular-account)                                                      | [감사](https://github.com/alchemyplatform/modular-account/tree/develop/audits)                                                                                |
 | 0x5A7FC11397E9a8AD41BF10bf13F22B0a63f96f6d | [AmbireTech/ambire-common](https://github.com/AmbireTech/ambire-common/blob/feature/eip-7702/contracts/AmbireAccount7702.sol)              | [감사](https://github.com/AmbireTech/ambire-common/tree/feature/eip-7702/audits)                                                                              |
 | 0x63c0c19a282a1b52b07dd5a65b58948a07dae32b | [MetaMask/delegation-framework](https://github.com/MetaMask/delegation-framework)                                                          | [감사](https://github.com/MetaMask/delegation-framework/tree/main/audits)                                                                                     |
-| 0x4Cd241E8d1510e30b2076397afc7508Ae59C66c9 | [Ethereum Foundation AA team](https://github.com/eth-infinitism/account-abstraction/blob/develop/contracts/accounts/Simple7702Account.sol) | [감사](https://github.com/eth-infinitism/account-abstraction/blob/develop/audits/SpearBit%20Account%20Abstraction%20Security%20Review%20-%20Mar%202025.pdf) |
+| 0x4Cd241E8d1510e30b2076397afc7508Ae59C66c9 | [Quantaureum project AA team](https://github.com/qau-infinitism/account-abstraction/blob/develop/contracts/accounts/Simple7702Account.sol) | [감사](https://github.com/qau-infinitism/account-abstraction/blob/develop/audits/SpearBit%20Account%20Abstraction%20Security%20Review%20-%20Mar%202025.pdf) |
 | 0x17c11FDdADac2b341F2455aFe988fec4c3ba26e3 | [Luganodes/Pectra-Batch-Contract](https://github.com/Luganodes/Pectra-Batch-Contract)                                                      | [감사](https://certificate.quantstamp.com/full/luganodes-pectra-batch-contract/23f0765f-969a-4798-9edd-188d276c4a2b/index.html)                             |
 ## 하드웨어 월렛 가이드라인 {#hardware-wallet-guidelines}
 

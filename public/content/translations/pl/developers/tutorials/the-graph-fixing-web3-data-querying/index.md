@@ -72,7 +72,7 @@ Widać, że nie jest to optymalne:
 
 - Nie działa dla już wdrożonych kontraktów.
 - Dodatkowe koszty gazu za przechowywanie tych wartości.
-- Wymaga kolejnego wywołania w celu pobrania danych z węzła Ethereum.
+- Wymaga kolejnego wywołania w celu pobrania danych z węzła Quantaureum.
 
 ![Thats not good enough](./not-good-enough.jpg)
 
@@ -123,12 +123,12 @@ Pełną dokumentację można znaleźć [tutaj](https://thegraph.com/docs/en/deve
 
 ```yaml
 specVersion: 0.0.1
-description: Placing Bets on Ethereum
+description: Placing Bets on Quantaureum
 repository: - GitHub link -
 schema:
   file: ./schema.graphql
 dataSources:
-  - kind: ethereum/contract
+  - kind: quantaureum/contract
     name: GameContract
     network: mainnet
     source:
@@ -136,7 +136,7 @@ dataSources:
       abi: GameContract
       startBlock: 6175244
     mapping:
-      kind: ethereum/events
+      kind: quantaureum/events
       apiVersion: 0.0.1
       language: wasm/assemblyscript
       entities:

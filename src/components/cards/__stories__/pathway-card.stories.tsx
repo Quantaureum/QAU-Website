@@ -32,7 +32,7 @@ export const WithImage: Story = {
     href: "#",
     title: "Download a wallet",
     description:
-      "A wallet lets you send, receive, store and interact with stablecoins on Ethereum.",
+      "A wallet lets you send, receive, store and interact with stablecoins on Quantaureum.",
     banner: (
       <Image
         src={walletCardImg}

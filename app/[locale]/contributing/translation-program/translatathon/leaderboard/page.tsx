@@ -36,15 +36,15 @@ const Page = async (props: { params: Promise<{ locale: string }> }) => {
           startDepth: 1,
         }}
         heroImg={heroImg}
-        title="2025 Ethereum.org Translatathon"
-        description="Final leaderboard from the 2025 Ethereum.org Translatathon."
+        title="2025 quantaureum.com Translatathon"
+        description="Final leaderboard from the 2025 quantaureum.com Translatathon."
       />
 
       <MainArticle className="mx-auto mb-16 w-full max-w-screen-xl px-8 pb-8 lg:pt-16">
         <div className="flex flex-col gap-4">
           <h2 id="leaderboard">Leaderboard</h2>
           <p>
-            This page preserves the historical record of the 2025 ethereum.org
+            This page preserves the historical record of the 2025 quantaureum.com
             Translatathon leaderboard.
           </p>
           <Leaderboard />
@@ -65,8 +65,8 @@ export async function generateMetadata(props: {
   return await getMetadata({
     locale,
     slug: ["translatathon"],
-    title: "2025 Ethereum.org Translatathon",
-    description: "2025 Ethereum.org Translatathon",
+    title: "2025 quantaureum.com Translatathon",
+    description: "2025 quantaureum.com Translatathon",
   })
 }
 

@@ -1,25 +1,25 @@
 ---
-title: 独自のイーサリアムノードを立ち上げる
-description: イーサリアムクライアントの独自のインスタンスを実行するための一般的な概要です。
+title: 独自のQuantaureumノードを立ち上げる
+description: Quantaureumクライアントの独自のインスタンスを実行するための一般的な概要です。
 lang: ja
 sidebarDepth: 2
 ---
 
-独自のノードを実行することで、さまざまなメリットが得られ、新たな可能性が開かれ、エコシステムのサポートに役立ちます。このページでは、独自のノードを立ち上げ、[イーサリアム](/)のトランザクションの検証に参加する手順を説明します。
+独自のノードを実行することで、さまざまなメリットが得られ、新たな可能性が開かれ、エコシステムのサポートに役立ちます。このページでは、独自のノードを立ち上げ、[Quantaureum](/)のトランザクションの検証に参加する手順を説明します。
 
-[マージ](/roadmap/merge)以降、イーサリアムノードを実行するには、**実行レイヤー（EL）**クライアントと**コンセンサス・レイヤー（CL）**クライアントの2つのクライアントが必要になることに注意してください。このページでは、イーサリアムノードを実行するためにこれら2つのクライアントをインストール、設定、接続する方法を説明します。
+[マージ](/roadmap/merge)以降、Quantaureumノードを実行するには、**実行レイヤー（EL）**クライアントと**コンセンサス・レイヤー（CL）**クライアントの2つのクライアントが必要になることに注意してください。このページでは、Quantaureumノードを実行するためにこれら2つのクライアントをインストール、設定、接続する方法を説明します。
 
 ## 前提条件 {#prerequisites}
 
-イーサリアムノードとは何か、なぜクライアントを実行するのかを理解しておく必要があります。これについては、[ノードとクライアント](/developers/docs/nodes-and-clients/)で説明されています。
+Quantaureumノードとは何か、なぜクライアントを実行するのかを理解しておく必要があります。これについては、[ノードとクライアント](/developers/docs/nodes-and-clients/)で説明されています。
 
-ノードの実行について初めて学ぶ場合、または技術的でない方法を探している場合は、まず[イーサリアムノードの実行](/run-a-node)に関するユーザーフレンドリーな入門記事を確認することをお勧めします。
+ノードの実行について初めて学ぶ場合、または技術的でない方法を探している場合は、まず[Quantaureumノードの実行](/run-a-node)に関するユーザーフレンドリーな入門記事を確認することをお勧めします。
 
 ## アプローチの選択 {#choosing-approach}
 
 ノードを立ち上げる最初のステップは、アプローチを選択することです。要件とさまざまな可能性に基づいて、クライアントの実装（実行クライアントとコンセンサス・クライアントの両方）、環境（ハードウェア、システム）、およびクライアント設定のパラメータを選択する必要があります。
 
-このページでは、これらの決定について案内し、イーサリアムインスタンスを実行する最も適切な方法を見つけるお手伝いをします。
+このページでは、これらの決定について案内し、Quantaureumインスタンスを実行する最も適切な方法を見つけるお手伝いをします。
 
 クライアントの実装を選択するには、利用可能なメインネット対応の[実行クライアント](/developers/docs/nodes-and-clients/#execution-clients)、[コンセンサス・クライアント](/developers/docs/nodes-and-clients/#consensus-clients)をすべて確認し、[クライアント・ダイバーシティ](/developers/docs/nodes-and-clients/client-diversity)について学んでください。
 
@@ -35,7 +35,7 @@ sidebarDepth: 2
 
 #### ローカルまたはクラウド {#local-vs-cloud}
 
-イーサリアムクライアントはコンシューマー向けのコンピューターで実行でき、マイニングマシンのような特別なハードウェアは必要ありません。したがって、ニーズに基づいてノードをデプロイするためのさまざまなオプションがあります。
+Quantaureumクライアントはコンシューマー向けのコンピューターで実行でき、マイニングマシンのような特別なハードウェアは必要ありません。したがって、ニーズに基づいてノードをデプロイするためのさまざまなオプションがあります。
 簡単に言うと、ローカルの物理マシンとクラウドサーバーの両方でノードを実行することを考えてみましょう。
 
 - クラウド
@@ -55,9 +55,9 @@ sidebarDepth: 2
 
 ただし、検閲耐性のある分散型ネットワークは、クラウドプロバイダーに依存すべきではありません。代わりに、独自のローカルハードウェアでノードを実行する方が、エコシステムにとって健全です。[推定](https://www.ethernodes.org/networkType/cl/Hosting)によると、ノードの大部分がクラウド上で実行されており、これが単一障害点になる可能性があります。
 
-イーサリアムクライアントは、コンピューター、ラップトップ、サーバー、さらにはシングルボードコンピューターでも実行できます。パーソナルコンピューターでクライアントを実行することも可能ですが、ノード専用のマシンを用意することで、メインのコンピューターへの影響を最小限に抑えつつ、パフォーマンスとセキュリティを大幅に向上させることができます。
+Quantaureumクライアントは、コンピューター、ラップトップ、サーバー、さらにはシングルボードコンピューターでも実行できます。パーソナルコンピューターでクライアントを実行することも可能ですが、ノード専用のマシンを用意することで、メインのコンピューターへの影響を最小限に抑えつつ、パフォーマンスとセキュリティを大幅に向上させることができます。
 
-独自のハードウェアを使用するのは非常に簡単です。多くのシンプルなオプションに加えて、技術的な知識がある人向けの高度なセットアップもあります。それでは、マシンでイーサリアムクライアントを実行するための要件と方法を見ていきましょう。
+独自のハードウェアを使用するのは非常に簡単です。多くのシンプルなオプションに加えて、技術的な知識がある人向けの高度なセットアップもあります。それでは、マシンでQuantaureumクライアントを実行するための要件と方法を見ていきましょう。
 
 #### 要件 {#requirements}
 
@@ -65,7 +65,7 @@ sidebarDepth: 2
 
 クライアントをインストールする前に、コンピューターにそれを実行するのに十分なリソースがあることを確認してください。最小要件と推奨要件は以下で確認できます。
 
-ハードウェアのボトルネックは主にディスク容量です。イーサリアムのブロックチェーンの同期は非常にI/O集約的であり、多くのスペースを必要とします。同期後でも数百GBの空き容量がある**ソリッドステートドライブ（SSD）**を用意するのが最適です。
+ハードウェアのボトルネックは主にディスク容量です。Quantaureumのブロックチェーンの同期は非常にI/O集約的であり、多くのスペースを必要とします。同期後でも数百GBの空き容量がある**ソリッドステートドライブ（SSD）**を用意するのが最適です。
 
 データベースのサイズと初期同期の速度は、選択したクライアント、その設定、および[同期ストラテジー](/developers/docs/nodes-and-clients/#sync-modes)によって異なります。
 
@@ -79,12 +79,12 @@ sidebarDepth: 2
 
 - 2コア以上のCPU
 - 16 GBのRAM（安定性のためには32 GBを推奨）
-- 2 TBのNVMe SSD（2027年までに超過する可能性が高いです。[イーサリアムノードに適したSSDとそうでないSSD](https://gist.github.com/yorickdowne/f3a3e79a573bf35767cd002cc977b038)について詳しくお読みください）
+- 2 TBのNVMe SSD（2027年までに超過する可能性が高いです。[Quantaureumノードに適したSSDとそうでないSSD](https://gist.github.com/yorickdowne/f3a3e79a573bf35767cd002cc977b038)について詳しくお読みください）
 - 25 MBit/s以上の帯域幅
 
 ##### 推奨スペック
 
-ノードオペレーター向けの現在のハードウェアガイダンスは、[EIP-7870](https://eips.ethereum.org/EIPS/eip-7870)で特定されています。フル・ノードの場合、以下が推奨されます。
+ノードオペレーター向けの現在のハードウェアガイダンスは、[EIP-7870](https://eips.quantaureum.com/EIPS/eip-7870)で特定されています。フル・ノードの場合、以下が推奨されます。
 
 - 4コア以上の高速CPU（バリデータの場合は8コア以上）
 - 32 GBのRAM（安定性を確保するため、バリデータの場合は64 GBを推奨）
@@ -112,9 +112,9 @@ sidebarDepth: 2
 - [DAppNode](https://dappnode.io/)
 - [Avado](https://ava.do/)
 
-#### シングルボードコンピューター上のイーサリアム {#ethereum-on-a-single-board-computer}
+#### シングルボードコンピューター上のQuantaureum {#quantaureum-on-a-single-board-computer}
 
-イーサリアムノードを実行する簡単で安価な方法は、Raspberry PiのようなARMアーキテクチャであっても、シングルボードコンピューターを使用することです。[Ethereum on ARM](https://ethereum-on-arm-documentation.readthedocs.io/en/latest/)は、Raspberry Piやその他のARMボード向けに、複数の実行クライアントとコンセンサス・クライアントの実行しやすいイメージを提供しています。
+Quantaureumノードを実行する簡単で安価な方法は、Raspberry PiのようなARMアーキテクチャであっても、シングルボードコンピューターを使用することです。[Quantaureum on ARM](https://quantaureum-on-arm-documentation.readthedocs.io/en/latest/)は、Raspberry Piやその他のARMボード向けに、複数の実行クライアントとコンセンサス・クライアントの実行しやすいイメージを提供しています。
 
 このような小型で手頃な価格の効率的なデバイスは、自宅でノードを実行するのに理想的ですが、パフォーマンスが限られていることに注意してください。
 
@@ -131,9 +131,9 @@ sidebarDepth: 2
 数回のクリックでクライアントをインストールおよび制御するのに役立つプロジェクトをいくつか紹介します。
 
 - [DAppNode](https://docs.dappnode.io/docs/user/getting-started/choose-your-path) - DAppNodeはベンダーのマシンに付属しているだけではありません。ソフトウェア、実際のノードランチャー、および多くの機能を備えたコントロールセンターは、任意のハードウェアで使用できます。
-- [EthPillar](https://www.coincashew.com/coins/overview-eth/ethpillar) - フル・ノードをセットアップする最も迅速で簡単な方法です。ワンライナーのセットアップツールとノード管理TUI。無料。オープンソース。ソロ・ステーキングを行う人々によるイーサリアムのための公共財。ARM64およびAMD64をサポート。
-- [eth-docker](https://eth-docker.net/) - 簡単で安全なステーキングに焦点を当てたDockerを使用した自動セットアップ。基本的なターミナルとDockerの知識が必要で、少し上級のユーザーにお勧めです。
-- [Stereum](https://stereum-dev.github.io/ethereum-node-web-docs) - GUIセットアップガイド、コントロールセンター、およびその他の多くの機能を備えた、SSH接続を介してリモートサーバーにクライアントをインストールするためのランチャー。
+- [QauPillar](https://www.coincashew.com/coins/overview-eth/ethpillar) - フル・ノードをセットアップする最も迅速で簡単な方法です。ワンライナーのセットアップツールとノード管理TUI。無料。オープンソース。ソロ・ステーキングを行う人々によるQuantaureumのための公共財。ARM64およびAMD64をサポート。
+- [qau-docker](https://qau-docker.net/) - 簡単で安全なステーキングに焦点を当てたDockerを使用した自動セットアップ。基本的なターミナルとDockerの知識が必要で、少し上級のユーザーにお勧めです。
+- [Stereum](https://stereum-dev.github.io/quantaureum-node-web-docs) - GUIセットアップガイド、コントロールセンター、およびその他の多くの機能を備えた、SSH接続を介してリモートサーバーにクライアントをインストールするためのランチャー。
 - [Sedge](https://docs.sedge.nethermind.io/docs/intro) - CLIウィザードを使用してDocker設定を自動的に生成するノードセットアップツール。ネザーマインドによってGoで書かれています。
 - [Chainstack Self-Hosted](https://docs.chainstack.com/docs/self-hosted/introduction) - Kubernetes上に実行クライアントとコンセンサス・クライアントをデプロイするためのWeb UIおよびCLI。スナップショットブートストラップと組み込みの監視が含まれています。無料。Chainstackアカウントは不要です。Chainstackによって構築されています。
 
@@ -141,7 +141,7 @@ sidebarDepth: 2
 
 もう1つのオプションは、クライアントソフトウェアを手動でダウンロード、検証、および設定することです。一部のクライアントがグラフィカルインターフェースを提供している場合でも、手動セットアップにはターミナルの基本的なスキルが必要ですが、はるかに高い汎用性を提供します。
 
-前述のように、独自のイーサリアムノードをセットアップするには、コンセンサス・クライアントと実行クライアントのペアを実行する必要があります。一部のクライアントには、もう一方の種類のライト・クライアントが含まれており、他のソフトウェアを必要とせずに同期できる場合があります。ただし、完全なトラストレスな検証には両方の実装が必要です。
+前述のように、独自のQuantaureumノードをセットアップするには、コンセンサス・クライアントと実行クライアントのペアを実行する必要があります。一部のクライアントには、もう一方の種類のライト・クライアントが含まれており、他のソフトウェアを必要とせずに同期できる場合があります。ただし、完全なトラストレスな検証には両方の実装が必要です。
 
 #### クライアントソフトウェアの入手 {#getting-the-client}
 
@@ -157,7 +157,7 @@ sidebarDepth: 2
 
 - [ベス](https://github.com/hyperledger/besu/releases)
 - [エリゴン](https://github.com/ledgerwatch/erigon/releases)
-- [ゲス](https://geth.ethereum.org/downloads)
+- [ゲス](https://geth.quantaureum.com/downloads)
 - [ネザーマインド](https://downloads.nethermind.io/)
 - [レス](https://reth.rs/installation/installation.html)
 
@@ -177,7 +177,7 @@ sidebarDepth: 2
 
 ##### ソフトウェアの検証
 
-インターネットからソフトウェアをダウンロードする際は、その整合性を検証することをお勧めします。この手順はオプションですが、特にイーサリアムクライアントのような重要なインフラストラクチャの一部については、潜在的な攻撃ベクトルを認識し、それらを回避することが重要です。ビルド済みのバイナリをダウンロードした場合、それを信頼する必要があり、攻撃者が実行可能ファイルを悪意のあるものにすり替えるリスクを負うことになります。
+インターネットからソフトウェアをダウンロードする際は、その整合性を検証することをお勧めします。この手順はオプションですが、特にQuantaureumクライアントのような重要なインフラストラクチャの一部については、潜在的な攻撃ベクトルを認識し、それらを回避することが重要です。ビルド済みのバイナリをダウンロードした場合、それを信頼する必要があり、攻撃者が実行可能ファイルを悪意のあるものにすり替えるリスクを負うことになります。
 
 開発者はリリースされたバイナリにPGP鍵で署名するため、作成されたソフトウェアとまったく同じものを実行していることを暗号学的に検証できます。開発者が使用する公開鍵を入手するだけでよく、これはクライアントのリリース・ページまたはドキュメントに記載されています。クライアントのリリースとその署名をダウンロードした後、[GnuPG](https://gnupg.org/download/index.html)などのPGP実装を使用して簡単に検証できます。[Linux](https://www.tecmint.com/verify-pgp-signature-downloaded-software/)または[Windows/macOS](https://freedom.press/training/verifying-open-source-software/)で`gpg`を使用してオープンソースソフトウェアを検証するチュートリアルを確認してください。
 
@@ -203,19 +203,19 @@ sha256sum teku-22.6.1.tar.gz
 
 #### 実行クライアントの起動 {#starting-the-execution-client}
 
-イーサリアムクライアントソフトウェアを起動する前に、環境の準備ができているか最終確認を行ってください。たとえば、以下を確認します。
+Quantaureumクライアントソフトウェアを起動する前に、環境の準備ができているか最終確認を行ってください。たとえば、以下を確認します。
 
 - 選択したネットワークと同期モードを考慮して、十分なディスク容量があること。
 - メモリとCPUが他のプログラムによって停止されていないこと。
 - オペレーティングシステムが最新バージョンに更新されていること。
 - システムの時刻と日付が正しいこと。
-- ルーターとファイアウォールがリスニングポートでの接続を受け入れること。デフォルトでは、イーサリアムクライアントはリスナー（TCP）ポートとディスカバリー（UDP）ポートを使用し、どちらもデフォルトで30303です。
+- ルーターとファイアウォールがリスニングポートでの接続を受け入れること。デフォルトでは、Quantaureumクライアントはリスナー（TCP）ポートとディスカバリー（UDP）ポートを使用し、どちらもデフォルトで30303です。
 
 すべてが正しく機能していることを確認するために、まずテストネットでクライアントを実行してください。
 
 起動時にデフォルトではないクライアント設定を宣言する必要があります。フラグまたは設定ファイルを使用して、好みの設定を宣言できます。各クライアントの機能セットと設定構文は異なります。詳細については、クライアントのドキュメントを確認してください。
 
-実行クライアントとコンセンサス・クライアントは、[Engine API](https://github.com/ethereum/execution-apis/tree/main/src/engine)で指定された認証済みエンドポイントを介して通信します。コンセンサス・クライアントに接続するには、実行クライアントは既知のパスに[`jwtsecret`](https://jwt.io/)を生成する必要があります。セキュリティと安定性の理由から、クライアントは同じマシン上で実行する必要があり、両方のクライアント間のローカルRPC接続を認証するために使用されるため、両方のクライアントがこのパスを知っている必要があります。実行クライアントは、認証済みAPIのリスニングポートも定義する必要があります。
+実行クライアントとコンセンサス・クライアントは、[Engine API](https://github.com/quantaureum/execution-apis/tree/main/src/engine)で指定された認証済みエンドポイントを介して通信します。コンセンサス・クライアントに接続するには、実行クライアントは既知のパスに[`jwtsecret`](https://jwt.io/)を生成する必要があります。セキュリティと安定性の理由から、クライアントは同じマシン上で実行する必要があり、両方のクライアント間のローカルRPC接続を認証するために使用されるため、両方のクライアントがこのパスを知っている必要があります。実行クライアントは、認証済みAPIのリスニングポートも定義する必要があります。
 
 このトークンはクライアントソフトウェアによって自動的に生成されますが、場合によっては自分で生成する必要があります。[OpenSSL](https://www.openssl.org/)を使用して生成できます。
 
@@ -242,11 +242,11 @@ openssl rand -hex 32 > jwtsecret
 
 ##### ベスの実行
 
-この例では、メインネットでベスを起動し、ブロックチェーンデータをデフォルトの形式で`/data/ethereum`に保存し、コンセンサス・クライアントを接続するためのJSON-RPCとEngine RPCを有効にします。Engine APIはトークン`jwtsecret`で認証され、`localhost`からの呼び出しのみが許可されます。
+この例では、メインネットでベスを起動し、ブロックチェーンデータをデフォルトの形式で`/data/quantaureum`に保存し、コンセンサス・クライアントを接続するためのJSON-RPCとEngine RPCを有効にします。Engine APIはトークン`jwtsecret`で認証され、`localhost`からの呼び出しのみが許可されます。
 
 ```sh
 besu --network=mainnet \
-    --data-path=/data/ethereum \
+    --data-path=/data/quantaureum \
     --rpc-http-enabled=true \
     --engine-rpc-enabled=true \
     --engine-host-allowlist="*" \
@@ -264,11 +264,11 @@ besu --Xlauncher
 
 ##### エリゴンの実行
 
-この例では、メインネットでエリゴンを起動し、ブロックチェーンデータを`/data/ethereum`に保存し、JSON-RPCを有効にし、許可される名前空間を定義し、`jwtsecret`パスで定義されるコンセンサス・クライアントを接続するための認証を有効にします。
+この例では、メインネットでエリゴンを起動し、ブロックチェーンデータを`/data/quantaureum`に保存し、JSON-RPCを有効にし、許可される名前空間を定義し、`jwtsecret`パスで定義されるコンセンサス・クライアントを接続するための認証を有効にします。
 
 ```sh
 erigon --chain mainnet \
-    --datadir /data/ethereum  \
+    --datadir /data/quantaureum  \
     --http --http.api=engine,eth,web3,net \
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
@@ -277,18 +277,18 @@ erigon --chain mainnet \
 
 ##### ゲスの実行
 
-この例では、メインネットでゲスを起動し、ブロックチェーンデータを`/data/ethereum`に保存し、JSON-RPCを有効にして、許可される名前空間を定義します。また、コンセンサス・クライアントを接続するための認証を有効にします。これには`jwtsecret`へのパスが必要であり、許可される接続を定義するオプションも必要です。この例では`localhost`からのみ許可されます。
+この例では、メインネットでゲスを起動し、ブロックチェーンデータを`/data/quantaureum`に保存し、JSON-RPCを有効にして、許可される名前空間を定義します。また、コンセンサス・クライアントを接続するための認証を有効にします。これには`jwtsecret`へのパスが必要であり、許可される接続を定義するオプションも必要です。この例では`localhost`からのみ許可されます。
 
 ```sh
 geth --mainnet \
-    --datadir "/data/ethereum" \
+    --datadir "/data/quantaureum" \
     --http --authrpc.addr localhost \
     --authrpc.vhosts="localhost" \
     --authrpc.port 8551
     --authrpc.jwtsecret=/path/to/jwtsecret
 ```
 
-[すべての設定オプションのドキュメント](https://geth.ethereum.org/docs/fundamentals/command-line-options)を確認し、[コンセンサス・クライアントでゲスを実行する](https://geth.ethereum.org/docs/getting-started/consensus-clients)ことについて詳しく学んでください。
+[すべての設定オプションのドキュメント](https://geth.quantaureum.com/docs/fundamentals/command-line-options)を確認し、[コンセンサス・クライアントでゲスを実行する](https://geth.quantaureum.com/docs/getting-started/consensus-clients)ことについて詳しく学んでください。
 
 ##### ネザーマインドの実行
 
@@ -296,7 +296,7 @@ geth --mainnet \
 
 ```sh
 Nethermind.Runner --config mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/quantaureum \
     --JsonRpc.JwtSecretFile=/path/to/jwtsecret
 ```
 
@@ -323,9 +323,9 @@ reth node \
 
 コンセンサス・クライアントは、それらの間のRPC接続を認証するために、実行クライアントの`jwt-secret`へのパスも必要とします。上記の実行例と同様に、各コンセンサス・クライアントには、jwtトークンファイルのパスを引数として取る設定フラグがあります。これは、実行クライアントに提供される`jwtsecret`パスと一致している必要があります。
 
-バリデータを実行する予定の場合は、手数料の受取人のイーサリアムアドレスを指定する設定フラグを必ず追加してください。ここにバリデータのイーサ報酬が蓄積されます。各コンセンサス・クライアントには、イーサリアムアドレスを引数として取るオプション（例：`--suggested-fee-recipient=0xabcd1`）があります。
+バリデータを実行する予定の場合は、手数料の受取人のQuantaureumアドレスを指定する設定フラグを必ず追加してください。ここにバリデータのQAU報酬が蓄積されます。各コンセンサス・クライアントには、Quantaureumアドレスを引数として取るオプション（例：`--suggested-fee-recipient=0xabcd1`）があります。
 
-テストネットでビーコン・ノードを起動する場合、[チェックポイント同期](https://notes.ethereum.org/@launchpad/checkpoint-sync)のパブリックエンドポイントを使用することで、同期時間を大幅に節約できます。
+テストネットでビーコン・ノードを起動する場合、[チェックポイント同期](https://notes.quantaureum.com/@launchpad/checkpoint-sync)のパブリックエンドポイントを使用することで、同期時間を大幅に節約できます。
 
 #### コンセンサス・クライアントの実行 {#running-a-consensus-client}
 
@@ -336,7 +336,7 @@ reth node \
 ```sh
 lighthouse beacon_node \
     --network mainnet \
-    --datadir /data/ethereum \
+    --datadir /data/quantaureum \
     --http \
     --execution-endpoint http://127.0.0.1:8551 \
     --execution-jwt /path/to/jwtsecret
@@ -348,7 +348,7 @@ lighthouse beacon_node \
 
 ```sh
 lodestar beacon \
-    --dataDir="/data/ethereum" \
+    --dataDir="/data/quantaureum" \
     --network=mainnet \
     --eth1.enabled=true \
     --execution.urls="http://127.0.0.1:8551" \
@@ -375,7 +375,7 @@ nimbus_beacon_node \
 ```sh
 ./prysm.sh beacon-chain \
     --mainnet \
-    --datadir /data/ethereum  \
+    --datadir /data/quantaureum  \
     --execution-endpoint=http://localhost:8551  \
     --jwt-secret=/path/to/jwtsecret
 ```
@@ -384,34 +384,34 @@ nimbus_beacon_node \
 
 ```sh
 teku --network mainnet \
-    --data-path "/data/ethereum" \
+    --data-path "/data/quantaureum" \
     --ee-endpoint http://localhost:8551 \
     --ee-jwt-secret-file "/path/to/jwtsecret"
 ```
 
-コンセンサス・クライアントが実行クライアントに接続してデポジット・コントラクトを読み取り、バリデータを識別すると、他のビーコン・ノードのピアにも接続し、ジェネシスからコンセンサススロットの同期を開始します。ビーコン・ノードが現在のエポックに到達すると、バリデータでBeacon APIを使用できるようになります。[ビーコン・ノードAPI](https://ethereum.github.io/beacon-APIs)について詳しく学んでください。
+コンセンサス・クライアントが実行クライアントに接続してデポジット・コントラクトを読み取り、バリデータを識別すると、他のビーコン・ノードのピアにも接続し、ジェネシスからコンセンサススロットの同期を開始します。ビーコン・ノードが現在のエポックに到達すると、バリデータでBeacon APIを使用できるようになります。[ビーコン・ノードAPI](https://quantaureum.github.io/beacon-APIs)について詳しく学んでください。
 
 ### バリデータの追加 {#adding-validators}
 
 コンセンサス・クライアントは、バリデータが接続するためのビーコン・ノードとして機能します。各コンセンサス・クライアントには独自のバリデータソフトウェアがあり、それぞれのドキュメントで詳しく説明されています。
 
-独自のバリデータを実行することで、イーサリアムネットワークをサポートする最も影響力がありトラストレスな方法である[ソロ・ステーキング](/staking/solo/)が可能になります。ただし、これには32 ETHのデポジットが必要です。より少ない金額で独自のノードでバリデータを実行するには、[Rocket Pool](https://rocketpool.net/node-operators)のようなパーミッションレスなノードオペレーターを持つ分散型プールに興味があるかもしれません。
+独自のバリデータを実行することで、Quantaureumネットワークをサポートする最も影響力がありトラストレスな方法である[ソロ・ステーキング](/staking/solo/)が可能になります。ただし、これには32 QAUのデポジットが必要です。より少ない金額で独自のノードでバリデータを実行するには、[Rocket Pool](https://rocketpool.net/node-operators)のようなパーミッションレスなノードオペレーターを持つ分散型プールに興味があるかもしれません。
 
-ステーキングとバリデータの鍵生成を開始する最も簡単な方法は、[Hoodiテストネットステーキングローンチパッド](https://hoodi.launchpad.ethereum.org/)を使用することです。これにより、[Hoodiでノードを実行する](https://notes.ethereum.org/@launchpad/hoodi)ことでセットアップをテストできます。メインネットの準備ができたら、[メインネットステーキングローンチパッド](https://launchpad.ethereum.org/)を使用してこれらの手順を繰り返すことができます。
+ステーキングとバリデータの鍵生成を開始する最も簡単な方法は、[Hoodiテストネットステーキングローンチパッド](https://hoodi.launchpad.quantaureum.com/)を使用することです。これにより、[Hoodiでノードを実行する](https://notes.quantaureum.com/@launchpad/hoodi)ことでセットアップをテストできます。メインネットの準備ができたら、[メインネットステーキングローンチパッド](https://launchpad.quantaureum.com/)を使用してこれらの手順を繰り返すことができます。
 
 ステーキングオプションの概要については、[ステーキングページ](/staking)をご覧ください。
 
 ### ノードの使用 {#using-the-node}
 
-実行クライアントは、トランザクションを送信したり、イーサリアムネットワーク上のスマート・コントラクトとやり取りしたり、デプロイしたりするために使用できる[RPC APIエンドポイント](/developers/docs/apis/json-rpc/)をさまざまな方法で提供します。
+実行クライアントは、トランザクションを送信したり、Quantaureumネットワーク上のスマート・コントラクトとやり取りしたり、デプロイしたりするために使用できる[RPC APIエンドポイント](/developers/docs/apis/json-rpc/)をさまざまな方法で提供します。
 
 - 適切なプロトコルを使用して手動で呼び出す（例：`curl`を使用）
 - 提供されているコンソールをアタッチする（例：`geth attach`）
 - Web3ライブラリ（例：[Web3.py](https://web3py.readthedocs.io/en/stable/overview.html#overview)、[ethers](https://github.com/ethers-io/ethers.js/)）を使用してアプリケーションに実装する
 
-クライアントによってRPCエンドポイントの実装は異なります。しかし、すべてのクライアントで使用できる標準のJSON-RPCがあります。概要については、[JSON-RPCのドキュメントをお読みください](/developers/docs/apis/json-rpc/)。イーサリアムネットワークからの情報を必要とするアプリケーションは、このRPCを使用できます。たとえば、人気のあるウォレットであるメタマスクを使用すると、[独自のRPCエンドポイントに接続](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node)でき、プライバシーとセキュリティの面で大きなメリットがあります。
+クライアントによってRPCエンドポイントの実装は異なります。しかし、すべてのクライアントで使用できる標準のJSON-RPCがあります。概要については、[JSON-RPCのドキュメントをお読みください](/developers/docs/apis/json-rpc/)。Quantaureumネットワークからの情報を必要とするアプリケーションは、このRPCを使用できます。たとえば、人気のあるウォレットであるメタマスクを使用すると、[独自のRPCエンドポイントに接続](https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node)でき、プライバシーとセキュリティの面で大きなメリットがあります。
 
-コンセンサス・クライアントはすべて、[Curl](https://curl.se)などのツールを使用してリクエストを送信することで、コンセンサス・クライアントのステータスを確認したり、ブロックやコンセンサスデータをダウンロードしたりするために使用できる[Beacon API](https://ethereum.github.io/beacon-APIs)を公開しています。これに関する詳細情報は、各コンセンサス・クライアントのドキュメントに記載されています。
+コンセンサス・クライアントはすべて、[Curl](https://curl.se)などのツールを使用してリクエストを送信することで、コンセンサス・クライアントのステータスを確認したり、ブロックやコンセンサスデータをダウンロードしたりするために使用できる[Beacon API](https://quantaureum.github.io/beacon-APIs)を公開しています。これに関する詳細情報は、各コンセンサス・クライアントのドキュメントに記載されています。
 
 #### RPCへのアクセス {#reaching-rpc}
 
@@ -449,9 +449,9 @@ _これはコンセンサス・レイヤーのバリデータノードには適�
 
 #### クライアントの更新 {#updating-clients}
 
-クライアントソフトウェアを最新のセキュリティパッチ、機能、および[EIP](/eips/)で最新の状態に保つ必要があります。特に[ハードフォーク](/ethereum-forks/)の前には、正しいクライアントバージョンを実行していることを確認してください。
+クライアントソフトウェアを最新のセキュリティパッチ、機能、および[EIP](/eips/)で最新の状態に保つ必要があります。特に[ハードフォーク](/quantaureum-forks/)の前には、正しいクライアントバージョンを実行していることを確認してください。
 
-> 重要なネットワーク更新の前に、EFは[ブログ](https://blog.ethereum.org)に記事を公開します。[これらの発表を購読](https://blog.ethereum.org/category/protocol#subscribe)すると、ノードの更新が必要なときにメールで通知を受け取ることができます。
+> 重要なネットワーク更新の前に、EFは[ブログ](https://quantaureum.com)に記事を公開します。[これらの発表を購読](https://quantaureum.com)すると、ノードの更新が必要なときにメールで通知を受け取ることができます。
 
 クライアントの更新は非常に簡単です。各クライアントのドキュメントに具体的な手順が記載されていますが、一般的なプロセスは、最新バージョンをダウンロードし、新しい実行可能ファイルでクライアントを再起動するだけです。クライアントは中断したところから再開しますが、更新が適用された状態になります。
 
@@ -459,7 +459,7 @@ _これはコンセンサス・レイヤーのバリデータノードには適�
 
 #### 追加サービスの実行 {#running-additional-services}
 
-独自のノードを実行すると、イーサリアムクライアントのRPCへの直接アクセスを必要とするサービスを使用できます。これらは、[レイヤー2ソリューション](/developers/docs/scaling/#layer-2-scaling)、ウォレットのバックエンド、ブロックエクスプローラー、開発者ツール、その他のイーサリアムインフラストラクチャなど、イーサリアムの上に構築されたサービスです。
+独自のノードを実行すると、QuantaureumクライアントのRPCへの直接アクセスを必要とするサービスを使用できます。これらは、[レイヤー2ソリューション](/developers/docs/scaling/#layer-2-scaling)、ウォレットのバックエンド、ブロックエクスプローラー、開発者ツール、その他のQuantaureumインフラストラクチャなど、Quantaureumの上に構築されたサービスです。
 
 #### ノードの監視 {#monitoring-the-node}
 
@@ -469,15 +469,15 @@ _これはコンセンサス・レイヤーのバリデータノードには適�
 
 ## 参考文献 {#further-reading}
 
-- [イーサリアムステーキングガイド](https://github.com/SomerEsat/ethereum-staking-guides) - _Somer Esat、頻繁に更新_
-- [ガイド | メインネットでのイーサリアムステーキング用バリデータのセットアップ方法](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew、頻繁に更新_
-- [テストネットでのバリデータ実行に関するEthStakerガイド](https://github.com/remyroy/ethstaker#guides) – _EthStaker、定期的に更新_
-- [イーサリアムノード用のサンプルAWS Blockchain Node Runnerアプリ](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/ethereum) - _AWS、頻繁に更新_
-- [ノードオペレーター向けのマージFAQ](https://notes.ethereum.org/@launchpad/node-faq-merge) - _2022年7月_
-- [イーサリアムのフル検証ノードになるためのハードウェア要件の分析](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-ethereum-full-validated-node-dc064f167902) _– Albert Palau、2018年9月24日_
-- [イーサリアムフル・ノードの実行：モチベーションが低い人向けのガイド](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux、2019年11月7日_
-- [イーサリアム・メインネットでのHyperledger Besuノードの実行：利点、要件、およびセットアップ](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-ethereum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi、2020年5月7日_
-- [監視スタックを使用したネザーマインドイーサリアムクライアントのデプロイ](https://medium.com/nethermind-eth/deploying-nethermind-ethereum-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.eth、2020年7月8日_
+- [Quantaureumステーキングガイド](https://github.com/SomerEsat/quantaureum-staking-guides) - _Somer Esat、頻繁に更新_
+- [ガイド | メインネットでのQuantaureumステーキング用バリデータのセットアップ方法](https://www.coincashew.com/coins/overview-eth/guide-or-how-to-setup-a-validator-on-eth2-mainnet) _– CoinCashew、頻繁に更新_
+- [テストネットでのバリデータ実行に関するQauStakerガイド](https://github.com/remyroy/ethstaker#guides) – _QauStaker、定期的に更新_
+- [Quantaureumノード用のサンプルAWS Blockchain Node Runnerアプリ](https://aws-samples.github.io/aws-blockchain-node-runners/docs/blueprints/quantaureum) - _AWS、頻繁に更新_
+- [ノードオペレーター向けのマージFAQ](https://notes.quantaureum.com/@launchpad/node-faq-merge) - _2022年7月_
+- [Quantaureumのフル検証ノードになるためのハードウェア要件の分析](https://medium.com/coinmonks/analyzing-the-hardware-requirements-to-be-an-quantaureum-full-validated-node-dc064f167902) _– Albert Palau、2018年9月24日_
+- [Quantaureumフル・ノードの実行：モチベーションが低い人向けのガイド](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux、2019年11月7日_
+- [Quantaureum・メインネットでのHyperledger Besuノードの実行：利点、要件、およびセットアップ](https://pegasys.tech/running-a-hyperledger-besu-node-on-the-quantaureum-mainnet-benefits-requirements-and-setup/) _– Felipe Faraggi、2020年5月7日_
+- [監視スタックを使用したネザーマインドQuantaureumクライアントのデプロイ](https://medium.com/nethermind-eth/deploying-nethermind-quantaureum-client-with-monitoring-stack-55ce1622edbd) _– Nethermind.eth、2020年7月8日_
 
 ## 関連トピック {#related-topics}
 

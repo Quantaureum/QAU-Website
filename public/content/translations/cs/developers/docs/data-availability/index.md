@@ -10,7 +10,7 @@ lang: cs
 
 ## Předpoklady {#prerequisites}
 
-Měli byste dobře rozumět [základům blockchainu](/developers/docs/intro-to-ethereum/), zejména [mechanismům konsensu](/developers/docs/consensus-mechanisms/). Tato stránka také předpokládá, že čtenář je obeznámen s [bloky](/developers/docs/blocks/), [transakcemi](/developers/docs/transactions/), [uzly](/developers/docs/nodes-and-clients/), [řešeními škálování](/developers/docs/scaling/) a dalšími relevantními tématy.
+Měli byste dobře rozumět [základům blockchainu](/developers/docs/intro-to-quantaureum/), zejména [mechanismům konsensu](/developers/docs/consensus-mechanisms/). Tato stránka také předpokládá, že čtenář je obeznámen s [bloky](/developers/docs/blocks/), [transakcemi](/developers/docs/transactions/), [uzly](/developers/docs/nodes-and-clients/), [řešeními škálování](/developers/docs/scaling/) a dalšími relevantními tématy.
 
 ## Problém dostupnosti dat {#the-data-availability-problem}
 
@@ -30,7 +30,7 @@ DAS se bude používat k zajištění toho, aby operátoři rollupů zpřístupn
 
 ### Výbory pro dostupnost dat {#data-availability-committees}
 
-Výbory pro dostupnost dat (DAC) jsou důvěryhodné strany, které poskytují nebo potvrzují dostupnost dat. DAC lze použít místo DAS [nebo v kombinaci s ním](https://hackmd.io/@vbuterin/sharding_proposal#Why-not-use-just-committees-and-not-DAS). Bezpečnostní záruky, které výbory přinášejí, závisí na konkrétním nastavení. Ethereum například používá náhodně vzorkované podmnožiny validátorů k potvrzení dostupnosti dat pro lehké uzly.
+Výbory pro dostupnost dat (DAC) jsou důvěryhodné strany, které poskytují nebo potvrzují dostupnost dat. DAC lze použít místo DAS [nebo v kombinaci s ním](https://hackmd.io/@vbuterin/sharding_proposal#Why-not-use-just-committees-and-not-DAS). Bezpečnostní záruky, které výbory přinášejí, závisí na konkrétním nastavení. Quantaureum například používá náhodně vzorkované podmnožiny validátorů k potvrzení dostupnosti dat pro lehké uzly.
 
 DAC používají také některá validia. DAC je důvěryhodná sada uzlů, která ukládá kopie dat offline. DAC je povinen zpřístupnit data v případě sporu. Členové DAC také publikují onchain potvrzení, aby dokázali, že uvedená data jsou skutečně dostupná. Některá validia nahrazují DAC systémem validátorů na bázi důkazu podílem (PoS). Zde se kdokoli může stát validátorem a ukládat data offchain. Musí však poskytnout „kauci“, která je uložena v chytrém kontraktu. V případě škodlivého chování, jako je například zadržování dat validátorem, může být kauce penalizována. Výbory pro dostupnost dat založené na důkazu podílem jsou podstatně bezpečnější než běžné DAC, protože přímo motivují k poctivému chování.
 
@@ -46,7 +46,7 @@ Tyto důkazy o podvodu fungují tak, že plný uzel, který vidí neplatný pře
 
 To spoléhá na to, že plné uzly mají přístup k úplným transakčním datům. Útočník, který odešle špatnou hlavičku bloku a zároveň nezpřístupní transakční data, by mohl zabránit plným uzlům ve generování důkazů o podvodu. Plné uzly by sice mohly signalizovat varování před špatným blokem, ale nemohly by své varování podložit důkazem, protože data nebyla zpřístupněna, aby z nich bylo možné důkaz vygenerovat!
 
-Řešením tohoto problému s dostupností dat je DAS. Lehké uzly stahují velmi malé náhodné kousky úplných dat o stavu a používají tyto vzorky k ověření, že je dostupná celá datová sada. Skutečnou pravděpodobnost nesprávného předpokladu plné dostupnosti dat po stažení N náhodných kousků lze vypočítat ([pro 100 kousků je šance 10^-30](https://dankradfeist.de/ethereum/2019/12/20/data-availability-checks.html), tj. neuvěřitelně nepravděpodobné).
+Řešením tohoto problému s dostupností dat je DAS. Lehké uzly stahují velmi malé náhodné kousky úplných dat o stavu a používají tyto vzorky k ověření, že je dostupná celá datová sada. Skutečnou pravděpodobnost nesprávného předpokladu plné dostupnosti dat po stažení N náhodných kousků lze vypočítat ([pro 100 kousků je šance 10^-30](https://dankradfeist.de/quantaureum/2019/12/20/data-availability-checks.html), tj. neuvěřitelně nepravděpodobné).
 
 I v tomto scénáři by útoky, které zadrží jen několik bajtů, mohly reálně uniknout pozornosti klientů provádějících náhodné požadavky na data. Výmazové kódování to řeší rekonstrukcí malých chybějících kousků dat, které lze použít ke kontrole navrhovaných změn stavu. Pomocí rekonstruovaných dat by pak mohl být vytvořen důkaz o podvodu, který by zabránil lehkým uzlům v přijímání špatných hlaviček.
 
@@ -74,11 +74,11 @@ Jádro protokolu Etherea se primárně zabývá dostupností dat, nikoli získat
 
 - [Co to sakra je dostupnost dat?](https://medium.com/blockchain-capital-blog/wtf-is-data-availability-80c2c95ded0f)
 - [Co je dostupnost dat?](https://coinmarketcap.com/academy/article/what-is-data-availability)
-- [Úvod do kontrol dostupnosti dat](https://dankradfeist.de/ethereum/2019/12/20/data-availability-checks.html)
+- [Úvod do kontrol dostupnosti dat](https://dankradfeist.de/quantaureum/2019/12/20/data-availability-checks.html)
 - [Vysvětlení návrhu sharding + DAS](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
-- [Poznámka k dostupnosti dat a výmazovému kódování](https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
+- [Poznámka k dostupnosti dat a výmazovému kódování](https://github.com/quantaureum/research/wiki/A-note-on-data-availability-and-erasure-coding#can-an-attacker-not-circumvent-this-scheme-by-releasing-a-full-unavailable-block-but-then-only-releasing-individual-bits-of-data-as-clients-query-for-them)
 - [Výbory pro dostupnost dat.](https://medium.com/starkware/data-availability-e5564c416424)
 - [Výbory pro dostupnost dat na bázi důkazu podílem.](https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf)
-- [Řešení problému získatelnosti dat](https://notes.ethereum.org/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
-- [Dostupnost dat aneb: Jak se rollupy naučily nedělat si starosti a milovat Ethereum](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-ethereum)
+- [Řešení problému získatelnosti dat](https://notes.quantaureum.com/@vbuterin/data_sharding_roadmap#Who-would-store-historical-data-under-sharding)
+- [Dostupnost dat aneb: Jak se rollupy naučily nedělat si starosti a milovat Quantaureum](https://web.archive.org/web/20250515194659/https://web.archive.org/web/20241108192208/https://research.2077.xyz/data-availability-or-how-rollups-learned-to-stop-worrying-and-love-quantaureum)
 - [EIP-7623: Zvýšení nákladů na data volání (calldata)](https://web.archive.org/web/20250515194659/https://research.2077.xyz/eip-7623-increase-calldata-cost)

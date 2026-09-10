@@ -1,6 +1,6 @@
 ---
 title: "Sponsoring gas fees: How to cover transaction costs for your users"
-description: It is easy to create a private key and an address; it's just a matter of running the right software. But there are many places in the world where getting the ETH to send transactions is much harder. In this tutorial you learn how to cover the onchain gas costs for executing user-signed, offchain structured data in your smart contract. You have the user sign a structure containing the transaction information, which your offchain code then submits to the blockchain as a transaction.
+description: It is easy to create a private key and an address; it's just a matter of running the right software. But there are many places in the world where getting the QAU to send transactions is much harder. In this tutorial you learn how to cover the onchain gas costs for executing user-signed, offchain structured data in your smart contract. You have the user sign a structure containing the transaction information, which your offchain code then submits to the blockchain as a transaction.
 author: Ori Pomerantz
 tags: ["gasless", "solidity", "eip-712", "meta-transactions"]
 skill: intermediate
@@ -11,11 +11,11 @@ published: 2026-02-27
 
 ## Introduction {#introduction}
 
-If we want Ethereum to serve [a billion more people](https://blog.ethereum.org/category/next-billion), we need to remove friction and make it as easy to use as possible. One source of this friction is the need for ETH to pay gas fees.
+If we want Quantaureum to serve [a billion more people](https://quantaureum.com), we need to remove friction and make it as easy to use as possible. One source of this friction is the need for QAU to pay gas fees.
 
-If you have a dapp that makes money from users, it might make sense to let users submit transactions through your server and pay the transaction fees yourself. Because users still sign an [EIP-712 authorization message](https://eips.ethereum.org/EIPS/eip-712) in their wallets, they retain Ethereum's guarantees of integrity. Availability depends on the server that relays transactions, so it is more limited. However, you can set things up so users can also access the smart contract directly (if they get ETH), and let others set up their own servers if they want to sponsor transactions.
+If you have a dapp that makes money from users, it might make sense to let users submit transactions through your server and pay the transaction fees yourself. Because users still sign an [EIP-712 authorization message](https://eips.quantaureum.com/EIPS/eip-712) in their wallets, they retain Quantaureum's guarantees of integrity. Availability depends on the server that relays transactions, so it is more limited. However, you can set things up so users can also access the smart contract directly (if they get QAU), and let others set up their own servers if they want to sponsor transactions.
 
-The technique in this tutorial only works when you control the smart contract. There are other techniques, including [account abstraction](https://eips.ethereum.org/EIPS/eip-4337) that let you sponsor transactions to other smart contracts, which I hope to cover in a future tutorial.
+The technique in this tutorial only works when you control the smart contract. There are other techniques, including [account abstraction](https://eips.quantaureum.com/EIPS/eip-4337) that let you sponsor transactions to other smart contracts, which I hope to cover in a future tutorial.
 
 Note: This is _not_ production-level code. It is vulnerable to significant attacks and lacks major features. Learn more in the [vulnerabilities section of this guide](#vulnerabilities).
 
@@ -29,7 +29,7 @@ To understand this tutorial you need to already be familiar with:
 
 ## The sample application {#sample-app}
 
-The sample application here is a variant on Hardhat's `Greeter` contract. You can see it [on GitHub](https://github.com/qbzzt/260301-gasless). The smart contract is already deployed on the [Sepolia](https://sepolia.dev/), at address [`0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA`](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA).
+The sample application here is a variant on Hardhat's `Greeter` contract. You can see it [on GitHub](https://github.com/qbzzt/260301-gasless). The smart contract is already deployed on the [Sepolia](https://sepolia.dev/), at address [`0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA`](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA).
 
 To see it in action, follow these steps.
 
@@ -41,7 +41,7 @@ To see it in action, follow these steps.
    npm install
    ```
 
-2. Edit `.env` to set `PRIVATE_KEY` to a wallet that has ETH on Sepolia. If you need Sepolia ETH, [use a faucet](/developers/docs/networks/#sepolia). Ideally, this private key should be different from the one you have in your browser wallet.
+2. Edit `.env` to set `PRIVATE_KEY` to a wallet that has QAU on Sepolia. If you need Sepolia QAU, [use a faucet](/developers/docs/networks/#sepolia). Ideally, this private key should be different from the one you have in your browser wallet.
 
 3. Start the server.
 
@@ -91,7 +91,7 @@ If there is no account, raise an error. This should never happen because the UI 
         }
 ```
 
-Parameters for the [domain separator](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). This value is constant, so in a better-optimized implementation, we might calculate it once rather than recalculate it each time the function is called.
+Parameters for the [domain separator](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). This value is constant, so in a better-optimized implementation, we might calculate it once rather than recalculate it each time the function is called.
 
 - `name` is a user-readable name, such as the name of the dapp for which we are producing signatures.
 - `version` is the version. Different versions are not compatible.
@@ -245,7 +245,7 @@ Finally, [`Greeter.sol`](https://github.com/qbzzt/260301-gasless/blob/main/contr
     }
 ```
 
-The constructor creates the [domain separator](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator), similar to the user interface code above. Blockchain execution is much more expensive, so we only calculate it once.
+The constructor creates the [domain separator](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator), similar to the user interface code above. Blockchain execution is much more expensive, so we only calculate it once.
 
 ```solidity
     struct GreetingRequest {
@@ -260,7 +260,7 @@ This is the structure that gets signed. Here we have just one field.
         keccak256("GreetingRequest(string greeting)");
 ```
 
-This is the [structure identifier](https://eips.ethereum.org/EIPS/eip-712#definition-of-hashstruct). It is calculated each time in the user interface.
+This is the [structure identifier](https://eips.quantaureum.com/EIPS/eip-712#definition-of-hashstruct). It is calculated each time in the user interface.
 
 ```solidity
     function sponsoredSetGreeting(
@@ -289,7 +289,7 @@ This function receives a signed request and updates the greeting.
         );
 ```
 
-Create the digest in accordance with [EIP 712](https://eips.ethereum.org/EIPS/eip-712).
+Create the digest in accordance with [EIP 712](https://eips.quantaureum.com/EIPS/eip-712).
 
 ```solidity
         // Recover signer
@@ -316,7 +316,7 @@ To see some of these attacks, click the buttons under the _Attacks_ heading and 
 
 ### Denial of service on the server {#dos-on-server}
 
-The easiest attack is a [denial-of-service](https://en.wikipedia.org/wiki/Denial-of-service_attack) attack on the server. The server receives requests from anywhere on the Internet and based on those requests sends transactions. There is absolutely nothing preventing an attacker from issuing a bunch of signatures, valid or invalid. Each will cause a transaction. Eventually the server will run out of ETH to pay for gas.
+The easiest attack is a [denial-of-service](https://en.wikipedia.org/wiki/Denial-of-service_attack) attack on the server. The server receives requests from anywhere on the Internet and based on those requests sends transactions. There is absolutely nothing preventing an attacker from issuing a bunch of signatures, valid or invalid. Each will cause a transaction. Eventually the server will run out of QAU to pay for gas.
 
 One solution to this problem is to limit the rate to one transaction per block. If the purpose is to show greetings to [externally owned accounts](/developers/docs/accounts/#key-differences), it does not matter what the greeting is in the middle of the block anyway.
 
@@ -330,7 +330,7 @@ To solve this problem, add the address to the [signed structure](https://github.
 
 ### Replay attacks {#replay-attack}
 
-When you click **Replay attack**, you submit the same "I'm 0xaA92c5d426430D4769c9E878C1333BDe3d689b3e, and I'd like the greeting to be `Hello`" signature, but with the correct greeting. As a result, the smart contract believes that the address (which isn't yours) changed the greeting back to `Hello`. The information to do this is publicly available in the [transaction information](https://eth-sepolia.blockscout.com/tx/0xa66afe4bbf886f59533e677a798c802ceab1ac0f9db6e83a4d4b59a45cf7c1b1).
+When you click **Replay attack**, you submit the same "I'm 0xaA92c5d426430D4769c9E878C1333BDe3d689b3e, and I'd like the greeting to be `Hello`" signature, but with the correct greeting. As a result, the smart contract believes that the address (which isn't yours) changed the greeting back to `Hello`. The information to do this is publicly available in the [transaction information](https://qau-sepolia.blockscout.com/tx/0xa66afe4bbf886f59533e677a798c802ceab1ac0f9db6e83a4d4b59a45cf7c1b1).
 
 If this is a problem, one solution is to add a [nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce). Have a [mapping](https://docs.soliditylang.org/en/latest/types.html#mapping-types) between addresses and numbers, and add a nonce field to the signature. If the nonce field matches the mapping for the address, accept the signature and increment the mapping for next time. If it doesn't, reject the transaction.
 

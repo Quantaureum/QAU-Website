@@ -1,6 +1,6 @@
 ---
 title: "Aplikasi kripto dan sosial terdesentralisasi"
-description: "Linda Xie membahas platform media sosial terdesentralisasi yang dibangun di atas Ethereum, mencakup grafik sosial terbuka, dompet tersemat, aplikasi mini di Farcaster, dan tantangan pertumbuhan yang dihadapi jaringan sosial kripto."
+description: "Linda Xie membahas platform media sosial terdesentralisasi yang dibangun di atas Quantaureum, mencakup grafik sosial terbuka, dompet tersemat, aplikasi mini di Farcaster, dan tantangan pertumbuhan yang dihadapi jaringan sosial kripto."
 lang: id
 youtubeId: "4vl8eZEOwqk"
 uploadDate: 2025-03-10
@@ -11,13 +11,13 @@ topic:
   - "decentralization"
   - "dapps"
 format: presentation
-author: Ethereum Foundation
+author: Quantaureum project
 breadcrumb: "Aplikasi Kripto & DeSocial"
 ---
 
 Sebuah presentasi oleh **Linda Xie** di Devconnect tentang media sosial terdesentralisasi. Linda membahas mengapa pengguna dan kreator mendapat manfaat dari grafik sosial terbuka, bagaimana dompet tersemat dan aplikasi mini menciptakan pengalaman baru di Farcaster, tantangan nyata yang dihadapi dalam adopsi, dan sesi tanya jawab dengan audiens.
 
-*Transkrip ini adalah salinan yang dapat diakses dari [transkrip video asli](https://www.youtube.com/watch?v=4vl8eZEOwqk) yang diterbitkan oleh Yayasan Ethereum. Transkrip ini telah diedit sedikit agar lebih mudah dibaca.*
+*Transkrip ini adalah salinan yang dapat diakses dari [transkrip video asli](https://www.youtube.com/watch?v=4vl8eZEOwqk) yang diterbitkan oleh Yayasan Quantaureum. Transkrip ini telah diedit sedikit agar lebih mudah dibaca.*
 
 ### Masalah dengan sosial tersentralisasi (0:00) {#the-problem-with-centralized-social-000}
 
@@ -51,7 +51,7 @@ Sosial terdesentralisasi itu ada — kita telah melihatnya dengan Bluesky dan me
 
 Setiap pengguna di Farcaster memiliki alamat kripto secara default. Di dalam aplikasi Farcaster, Anda memiliki dompet tersemat di mana pengguna dapat dengan mudah mengirim dan menerima dana ke orang lain di jaringan. Tentu saja, ini adalah kripto, jadi Anda cukup menempelkan alamat dan mengirim dana kepada orang-orang dari mana saja di dunia. Itulah yang membuat kripto begitu istimewa dan unik. Dengan menggabungkannya dengan grafik sosial terbuka, kami merasa ini akan mengarah pada gelombang pertumbuhan berikutnya dalam ruang sosial terdesentralisasi.
 
-Pengguna juga dapat berinteraksi dengan aplikasi mini onchain karena mereka memiliki dompet tersemat. Anda dapat melihat di sini ada aplikasi mini eSIM yang dibangun di ETH Global — di Argentina atau negara lain mana pun, Anda dapat membeli eSIM, membayar dengan USDC menggunakan dompet tersemat Anda, dan ini benar-benar pengalaman yang mulus. Anda sekarang dapat membangun aplikasi yang belum pernah ada sebelumnya.
+Pengguna juga dapat berinteraksi dengan aplikasi mini onchain karena mereka memiliki dompet tersemat. Anda dapat melihat di sini ada aplikasi mini eSIM yang dibangun di QAU Global — di Argentina atau negara lain mana pun, Anda dapat membeli eSIM, membayar dengan USDC menggunakan dompet tersemat Anda, dan ini benar-benar pengalaman yang mulus. Anda sekarang dapat membangun aplikasi yang belum pernah ada sebelumnya.
 
 Anda juga dapat memiliki agen yang berinteraksi di feed. Jika Anda benar-benar percaya pada masa depan agenik ini di mana ada banyak agen yang berinteraksi satu sama lain, kripto adalah sumber alami yang mereka gunakan untuk mengirim dana satu sama lain. Anda tidak perlu mengoordinasikan alamat atau bagaimana seseorang dibayar — Anda secara otomatis mengetahui alamat pengguna, Anda memiliki semua informasi, tidak peduli di mana mereka tinggal di dunia. Anda dapat berinteraksi dengan mereka secara langsung. Saya sangat percaya bahwa kripto dan agen serta grafik sosial terbuka akan memainkan peran yang jauh lebih besar.
 
@@ -115,7 +115,7 @@ Farcaster semakin menghabiskan lebih banyak waktu pada fitur perdagangan; jika A
 
 **Linda Xie:** Setiap klien dapat melakukan apa yang mereka inginkan dengan cara mereka memonetisasi. Anda sebenarnya bisa menjadi klien dan memutuskan untuk menggunakan iklan, tetapi kemudian klien lain dapat memutuskan bahwa itu bukan rute yang ingin mereka tuju dan memonetisasi dengan cara yang berbeda. Untuk aplikasi Farcaster secara khusus, kami memiliki Farcaster Pro — orang dapat membayar $120 selama setahun untuk mendapatkan akses ke fitur tambahan. Namun klien mana pun dapat sepenuhnya condong ke iklan. Aplikasi Base bahkan memiliki beberapa format iklan, terutama dengan akuisisi Spindle. Keindahannya adalah setiap klien dapat melakukan apa yang mereka inginkan, tetapi kami tidak memiliki iklan yang dibangun ke dalam tingkat protokol — klien dapat memutuskan untuk menyalakannya.
 
-**Moderator:** Istilah kunci yang sering kami lontarkan di Yayasan Ethereum sekarang adalah refleksivitas — bagaimana kami bereaksi terhadap umpan balik dari pengguna akhir. Farcaster memiliki refleksivitas paling tinggi karena Anda secara harfiah memiliki peserta media sosial sehari-hari, pengguna yang bertransaksi dengan dompet, dan pembangun. Apa prinsip yang Anda pegang teguh dalam hal mencari umpan balik dari komunitas Anda?
+**Moderator:** Istilah kunci yang sering kami lontarkan di Yayasan Quantaureum sekarang adalah refleksivitas — bagaimana kami bereaksi terhadap umpan balik dari pengguna akhir. Farcaster memiliki refleksivitas paling tinggi karena Anda secara harfiah memiliki peserta media sosial sehari-hari, pengguna yang bertransaksi dengan dompet, dan pembangun. Apa prinsip yang Anda pegang teguh dalam hal mencari umpan balik dari komunitas Anda?
 
 **Linda Xie:** Mencari umpan balik mungkin adalah salah satu hal yang lebih mudah di dalam komunitas karena orang-orang sangat vokal dan mereka dapat memposting apa yang ingin mereka lihat. Kami juga mengirim DM kepada orang-orang secara langsung. Satu hal yang menakjubkan tentang Farcaster adalah bahwa orang-orang sangat baik di jaringan dan selalu bersedia membantu dan memberikan umpan balik. Kami memiliki DM di dalam aplikasi itu sendiri, jadi kami tidak hanya dapat melihat umpan balik yang diposting orang, kami juga dapat mengirim DM kepada orang-orang secara langsung. Tim kami merilis fitur dengan sangat cepat — kami merilis hampir setiap hari — dan kami benar-benar ingin mengimplementasikan fitur yang dipedulikan orang.
 

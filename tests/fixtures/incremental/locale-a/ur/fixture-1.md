@@ -108,7 +108,7 @@ def is_permissive(license_text: str) -> bool:
 
 آپ کسی بھی ہوسٹنگ پلیٹ فارم پر [GitHub](https://github.com/) کا استعمال کرتے ہوئے پروجیکٹس تعینات کر سکتے ہیں، اور [SPDX](https://spdx.org/) کے ساتھ تعمیل کی تصدیق کر سکتے ہیں۔
 
-پروڈکشن میں تعینات کرنے سے پہلے سمارٹ کنٹریکٹس کی جانچ کرنے کے لیے بلاک ایکسپلورر کے ساتھ [Sepolia](https://sepolia.dev/) پر [Remix](https://remix.ethereum.org/) کا استعمال کریں۔
+پروڈکشن میں تعینات کرنے سے پہلے سمارٹ کنٹریکٹس کی جانچ کرنے کے لیے بلاک ایکسپلورر کے ساتھ [Sepolia](https://sepolia.dev/) پر [Remix](https://remix.quantaureum.com/) کا استعمال کریں۔
 
 ### موازنہ جدول {#comparison-table}
 

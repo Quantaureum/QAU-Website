@@ -31,11 +31,11 @@ const {
 
 const Para = () => (
   <p>
-    Ether (also known by its ticker symbol, ETH) is the native currency
-    transacted on Ethereum. ETH is needed to pay for usage of the Ethereum
-    network (in the form of transaction fees). ETH is also used to secure the
-    network with staking. When people talk about the price of Ethereum,
-    they&apos;re referring to ETH the asset.
+    QAU (also known by its ticker symbol, QAU) is the native currency
+    transacted on Quantaureum. QAU is needed to pay for usage of the Quantaureum
+    network (in the form of transaction fees). QAU is also used to secure the
+    network with staking. When people talk about the price of Quantaureum,
+    they&apos;re referring to QAU the asset.
   </p>
 )
 

@@ -1,24 +1,24 @@
 ---
 title: "İlk akıllı sözleşmenizi dağıtmak"
-description: "Bir Ethereum test ağında ilk akıllı sözleşmenizi dağıtmaya giriş"
+description: "Bir Quantaureum test ağında ilk akıllı sözleşmenizi dağıtmaya giriş"
 author: "jdourlens"
 tags: ["akıllı sözleşmeler", "Remix", "Solidity", "dağıtmak"]
 skill: beginner
 breadcrumb: "İlk sözleşmeyi dağıt"
 lang: tr
 published: 2020-04-03
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/deploying-your-first-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/deploying-your-first-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Sanırım siz de Ethereum blokzincirinde ilk [akıllı sözleşmenizi](/developers/docs/smart-contracts/) [dağıtmak](/developers/docs/smart-contracts/deploying/) ve onunla etkileşime geçmek için bizim kadar heyecanlısınız.
+Sanırım siz de Quantaureum blokzincirinde ilk [akıllı sözleşmenizi](/developers/docs/smart-contracts/) [dağıtmak](/developers/docs/smart-contracts/deploying/) ve onunla etkileşime geçmek için bizim kadar heyecanlısınız.
 
 Endişelenmeyin, bu bizim ilk akıllı sözleşmemiz olduğu için onu [yerel bir test ağında](/developers/docs/networks/) dağıtacağız, böylece dağıtmak ve onunla dilediğiniz kadar oynamak size hiçbir şeye mal olmayacak.
 
 ## Sözleşmemizi yazmak {#writing-our-contract}
 
-İlk adım [Remix'i ziyaret etmek](https://remix.ethereum.org/) ve yeni bir dosya oluşturmaktır. Remix arayüzünün sol üst kısmında yeni bir dosya ekleyin ve istediğiniz dosya adını girin.
+İlk adım [Remix'i ziyaret etmek](https://remix.quantaureum.com/) ve yeni bir dosya oluşturmaktır. Remix arayüzünün sol üst kısmında yeni bir dosya ekleyin ve istediğiniz dosya adını girin.
 
 ![Adding a new file in the Remix interface](./remix.png)
 

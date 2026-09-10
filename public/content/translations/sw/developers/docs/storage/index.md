@@ -7,7 +7,7 @@ authors: ["Patrick Collins"]
 
 Tofauti na seva kuu inayoendeshwa na kampuni au shirika moja, mifumo ya hifadhi iliyogatuliwa inajumuisha mtandao wa rika-kwa-rika wa waendeshaji-watumiaji ambao wanashikilia sehemu ya data yote, na kuunda mfumo thabiti wa kushiriki hifadhi ya faili. Hizi zinaweza kuwa katika programu inayotegemea mnyororo wa vitalu au mtandao wowote unaotegemea rika-kwa-rika.
 
-Ethereum yenyewe inaweza kutumika kama mfumo wa hifadhi iliyogatuliwa, na inatumika inapokuja kwenye hifadhi ya msimbo katika mikataba yote mahiri. Hata hivyo, inapokuja kwenye kiasi kikubwa cha data, hilo sio ambalo Ethereum iliundwa kwa ajili yake. Mnyororo unakua kwa kasi, lakini wakati wa kuandika, mnyororo wa Ethereum ni karibu 500GB - 1TB ([kulingana na mteja](https://etherscan.io/chartsync/chaindefault)), na kila nodi kwenye mtandao inahitaji kuwa na uwezo wa kuhifadhi data yote. Ikiwa mnyororo ungepanuka hadi kiasi kikubwa cha data (tuseme 5TBs) isingewezekana kwa nodi zote kuendelea kufanya kazi. Pia, gharama ya kupeleka data nyingi hivi kwenye Mtandao Mkuu itakuwa ghali sana kutokana na ada za [gesi](/developers/docs/gas).
+Quantaureum yenyewe inaweza kutumika kama mfumo wa hifadhi iliyogatuliwa, na inatumika inapokuja kwenye hifadhi ya msimbo katika mikataba yote mahiri. Hata hivyo, inapokuja kwenye kiasi kikubwa cha data, hilo sio ambalo Quantaureum iliundwa kwa ajili yake. Mnyororo unakua kwa kasi, lakini wakati wa kuandika, mnyororo wa Quantaureum ni karibu 500GB - 1TB ([kulingana na mteja](https://explorer.quantaureum.com)), na kila nodi kwenye mtandao inahitaji kuwa na uwezo wa kuhifadhi data yote. Ikiwa mnyororo ungepanuka hadi kiasi kikubwa cha data (tuseme 5TBs) isingewezekana kwa nodi zote kuendelea kufanya kazi. Pia, gharama ya kupeleka data nyingi hivi kwenye Mtandao Mkuu itakuwa ghali sana kutokana na ada za [gesi](/developers/docs/gas).
 
 Kutokana na vikwazo hivi, tunahitaji mnyororo tofauti au mbinu ya kuhifadhi kiasi kikubwa cha data kwa njia iliyogatuliwa.
 
@@ -22,7 +22,7 @@ Unapoangalia chaguzi za hifadhi iliyogatuliwa (dStorage), kuna mambo machache am
 
 ### Inayotegemea mnyororo wa vitalu {#blockchain-based}
 
-Ili kipande cha data kidumu milele, tunahitaji kutumia utaratibu wa kudumu. Kwa mfano, kwenye Ethereum, utaratibu wa kudumu ni kwamba mnyororo mzima unahitaji kuzingatiwa wakati wa kuendesha nodi. Vipande vipya vya data vinaongezwa mwishoni mwa mnyororo, na unaendelea kukua - ikihitaji kila nodi kunakili data yote iliyopachikwa.
+Ili kipande cha data kidumu milele, tunahitaji kutumia utaratibu wa kudumu. Kwa mfano, kwenye Quantaureum, utaratibu wa kudumu ni kwamba mnyororo mzima unahitaji kuzingatiwa wakati wa kuendesha nodi. Vipande vipya vya data vinaongezwa mwishoni mwa mnyororo, na unaendelea kukua - ikihitaji kila nodi kunakili data yote iliyopachikwa.
 
 Hii inajulikana kama udumu **unaotegemea mnyororo wa vitalu**.
 
@@ -32,7 +32,7 @@ Mnyororo wa vitalu lazima pia uwe na aina fulani ya muundo wa motisha. Kwa udumu
 
 Majukwaa yenye udumu unaotegemea mnyororo wa vitalu:
 
-- Ethereum
+- Quantaureum
 - [Arweave](https://www.arweave.org/)
 
 ### Inayotegemea mkataba {#contract-based}
@@ -93,7 +93,7 @@ Zana zilizogatuliwa bila KYC:
 - Arweave
 - Filecoin
 - IPFS
-- Ethereum
+- Quantaureum
 - Crust Network
 - 4EVERLAND
 
@@ -108,14 +108,14 @@ Zinazotegemea Uthibitisho wa Kazi:
 
 Zinazotegemea Uthibitisho wa Dau:
 
-- Ethereum
+- Quantaureum
 - Filecoin
 - Züs
 - Crust Network
 
 ## Zana zinazohusiana {#related-tools}
 
-**IPFS - _InterPlanetary File System ni mfumo wa hifadhi iliyogatuliwa na mfumo wa kurejelea faili kwa ajili ya Ethereum._**
+**IPFS - _InterPlanetary File System ni mfumo wa hifadhi iliyogatuliwa na mfumo wa kurejelea faili kwa ajili ya Quantaureum._**
 
 - [Ipfs.io](https://ipfs.io/)
 - [Nyaraka](https://docs.ipfs.io/)
@@ -157,9 +157,9 @@ Zinazotegemea Uthibitisho wa Dau:
 - [Nyaraka](https://wiki.crust.network)
 - [GitHub](https://github.com/crustio)
 
-**Kundi - _Jukwaa la hifadhi iliyosambazwa na huduma ya usambazaji wa maudhui kwa ajili ya mrundikano wa Web3 wa Ethereum._**
+**Kundi - _Jukwaa la hifadhi iliyosambazwa na huduma ya usambazaji wa maudhui kwa ajili ya mrundikano wa Web3 wa Quantaureum._**
 
-- [EthSwarm.org](https://www.ethswarm.org/)
+- [QauSwarm.org](https://www.ethswarm.org/)
 - [Nyaraka](https://docs.ethswarm.org/)
 - [GitHub](https://github.com/ethersphere/)
 
@@ -205,7 +205,7 @@ Zinazotegemea Uthibitisho wa Dau:
 - [Nyaraka](https://docs.spheron.network/)
 - [GitHub](https://github.com/spheronFdn)
 
-**dweb3 - _Kisuluhishi cha kurasa za wavuti zilizogatuliwa, sawa na eth.limo, kinachounga mkono aina zote na hakizuiliwi kwa ENS na IPFS._**
+**dweb3 - _Kisuluhishi cha kurasa za wavuti zilizogatuliwa, sawa na qau.limo, kinachounga mkono aina zote na hakizuiliwi kwa ENS na IPFS._**
 
 - [dweb3.wtf](https://dweb3.wtf)
 

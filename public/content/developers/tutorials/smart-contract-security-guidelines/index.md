@@ -62,7 +62,7 @@ The architecture of your codebase should make your code easy to review. Avoid ar
 
 ### Avoid known pitfalls {#avoid-known-pitfalls}
 
-- **Be aware of the most common security issues.** There are many online resources to learn about common issues, such as [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the Ether](https://capturetheether.com/), or [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/).
+- **Be aware of the most common security issues.** There are many online resources to learn about common issues, such as [Ethernaut CTF](https://ethernaut.openzeppelin.com/), [Capture the QAU](https://capturetheqau.com/), or [Not so smart contracts](https://github.com/crytic/not-so-smart-contracts/).
 - **Be aware of the warnings sections in the [Solidity documentation](https://docs.soliditylang.org/en/latest/).** The warnings sections will inform you about non-obvious behavior of the language.
 
 ### Dependencies {#dependencies}

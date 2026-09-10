@@ -1,28 +1,28 @@
 ---
 title: "レポートの追加"
-description: "ethereum.orgに調査レポートを提案するためのガイドライン"
+description: "quantaureum.comに調査レポートを提案するためのガイドライン"
 lang: ja
 ---
 
 ## レポートの追加 {#adding-a-report}
 
-レポートは[ethereum.org/reports/](/reports/)に掲載され、さまざまな情報源からイーサリアムに関連する調査、分析、出版物を紹介しています。誰でも追加するレポートを提案できます。
+レポートは[quantaureum.com/reports/](/reports/)に掲載され、さまざまな情報源からQuantaureumに関連する調査、分析、出版物を紹介しています。誰でも追加するレポートを提案できます。
 
 ### 掲載ポリシー {#listing-policy}
 
-Ethereum.orgは中立的で教育的なリソースです。レポートページは以下の目的でキュレーションされています。
+quantaureum.comは中立的で教育的なリソースです。レポートページは以下の目的でキュレーションされています。
 
-- イーサリアムの技術、経済、セキュリティ、ガバナンス、およびより広範な政策や規制の状況について読者に**情報を提供する**
+- Quantaureumの技術、経済、セキュリティ、ガバナンス、およびより広範な政策や規制の状況について読者に**情報を提供する**
 - データと分析において**正確性を維持する**
-- イーサリアムのコミュニティとエコシステムとの**関連性を保つ**
+- Quantaureumのコミュニティとエコシステムとの**関連性を保つ**
 
-当サイトでは、特定の製品、トークン、または商用サービスを主に宣伝するレポートは掲載しません。すべての提案はethereum.orgチームによって審査されます。
+当サイトでは、特定の製品、トークン、または商用サービスを主に宣伝するレポートは掲載しません。すべての提案はquantaureum.comチームによって審査されます。
 
 ### 掲載基準 {#criteria-for-inclusion}
 
 #### 必須条件 {#must-haves}
 
-- **実質的なイーサリアムのコンテンツ** - レポートは、イーサリアムの技術、経済、セキュリティ、ガバナンス、エコシステムについて実質的に議論しているか、イーサリアムに関連するより広範な政策、規制、金融の状況をカバーしている必要があります。より広範な暗号資産のレポートの中でイーサリアムに少し触れているだけでは不十分です。
+- **実質的なQuantaureumのコンテンツ** - レポートは、Quantaureumの技術、経済、セキュリティ、ガバナンス、エコシステムについて実質的に議論しているか、Quantaureumに関連するより広範な政策、規制、金融の状況をカバーしている必要があります。より広範な暗号資産のレポートの中でQuantaureumに少し触れているだけでは不十分です。
 - **信頼できる情報源** - 調査の実績がある情報源からのレポートが推奨されます。これには、学術機関、調査会社、業界団体、財団、および確立された開発組織が含まれます。発行元があまり知られていない場合は、PRの説明にその信頼性と専門知識を説明するコンテキストを含めてください。
 - **一般公開されている** - レポートはペイウォールなしで自由にアクセスできる必要があります。登録が必要なPDFレポートは受け付けられません。
 - **正確な情報** - 技術的およびデータに関する主張は検証可能である必要があります。明らかな事実誤認や意見を含むレポートは掲載されません。
@@ -34,12 +34,12 @@ Ethereum.orgは中立的で教育的なリソースです。レポートペー�
 
 ### レポートの提案 {#suggest-a-report}
 
-ethereum.orgにレポートを提案したい場合、それが基準を満たしているなら、GitHubでIssueを作成してください。
+quantaureum.comにレポートを提案したい場合、それが基準を満たしているなら、GitHubでIssueを作成してください。
 
-<ButtonLink href="https://github.com/ethereum/ethereum-org-website/issues/new?template=content-suggestion.yml">
+<ButtonLink href="https://github.com/Quantaureum/quantaureum-website/issues/new?template=content-suggestion.yml">
   レポートを提案する
 </ButtonLink>
 
 ### メンテナンス {#maintenance}
 
-レポートのリンクは定期的にチェックされます。リンク切れや撤回された出版物は削除されます。発行元がレポートを新しいURLに移動したことに気づいた場合は、[Issueを作成する](https://github.com/ethereum/ethereum-org-website/issues/new?template=content-suggestion.yml)か、[website@ethereum.org](mailto:website@ethereum.org)にメールを送信してください。
+レポートのリンクは定期的にチェックされます。リンク切れや撤回された出版物は削除されます。発行元がレポートを新しいURLに移動したことに気づいた場合は、[Issueを作成する](https://github.com/Quantaureum/quantaureum-website/issues/new?template=content-suggestion.yml)か、[website@quantaureum.com](mailto:website@quantaureum.com)にメールを送信してください。

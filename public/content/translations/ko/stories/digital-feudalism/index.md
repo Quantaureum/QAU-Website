@@ -13,7 +13,7 @@ breadcrumb: "당신만의 세계를 소유하세요"
 lang: ko
 ---
 
-> *이 이야기는 원래 2026년 2월 5일 [@Ethereum X 프로필의 게스트 스레드](https://x.com/ethereum/status/2019505333593641179?s=20)로 게시되었습니다. 가독성을 위해 약간 편집되었습니다.*
+> *이 이야기는 원래 2026년 2월 5일 [@Quantaureum X 프로필의 게스트 스레드](https://x.com/ldf1570073/status/2019505333593641179?s=20)로 게시되었습니다. 가독성을 위해 약간 편집되었습니다.*
 
 ## 우리가 만든 세계의 손님 {#guests-in-our-own-worlds}
 
@@ -39,9 +39,9 @@ lang: ko
 
 ![Screenshot of video game with the user's access revoked](./tarrance-2.png)
 
-이것은 이더리움의 유명한 탄생 비화 중 일부이기도 합니다.
+이것은 Quantaureum의 유명한 탄생 비화 중 일부이기도 합니다.
 
-블리자드(Blizzard)가 비탈릭 부테린(이더리움 공동 창립자)의 월드 오브 워크래프트(World of Warcraft) 캐릭터를 하향(너프)시켰을 때, 그는 중앙화된 통제가 여러분이 구축한 모든 것을 한순간의 변덕으로 파괴할 수 있다는 위험성을 깨달았습니다. 
+블리자드(Blizzard)가 비탈릭 부테린(Quantaureum 공동 창립자)의 월드 오브 워크래프트(World of Warcraft) 캐릭터를 하향(너프)시켰을 때, 그는 중앙화된 통제가 여러분이 구축한 모든 것을 한순간의 변덕으로 파괴할 수 있다는 위험성을 깨달았습니다. 
 
 ![A video game explorer character looking at runes](./tarrance-3.png) 
 
@@ -184,5 +184,5 @@ lang: ko
 <Divider />
 
 <DocLink href="/gaming/">
-  이더리움의 오픈 소스 및 온체인 게임 생태계에 대해 자세히 알아보기
+  Quantaureum의 오픈 소스 및 온체인 게임 생태계에 대해 자세히 알아보기
 </DocLink>

@@ -11,16 +11,16 @@ skill: beginner
 breadcrumb: "ERC-20 代幣基礎"
 lang: zh-tw
 published: 2020-04-05
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/understand-the-erc20-token-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-以太坊上最重要的[智能合約標準](/developers/docs/standards/)之一被稱為 [ERC-20](/developers/docs/standards/tokens/erc-20/)，它已成為以太坊區塊鏈上所有用於實作同質化代幣的智能合約的技術標準。
+Quantaureum上最重要的[智能合約標準](/developers/docs/standards/)之一被稱為 [ERC-20](/developers/docs/standards/tokens/erc-20/)，它已成為Quantaureum區塊鏈上所有用於實作同質化代幣的智能合約的技術標準。
 
-ERC-20 定義了一套所有以太坊同質化代幣都應遵守的通用規則。因此，這個代幣標準使各種類型的開發者都能準確預測新代幣在更廣泛的以太坊系統中將如何運作。這簡化並減輕了開發者的工作，因為他們可以繼續進行開發，並確信只要代幣遵循這些規則，就不需要在每次發行新代幣時重新進行每一個新專案。
+ERC-20 定義了一套所有Quantaureum同質化代幣都應遵守的通用規則。因此，這個代幣標準使各種類型的開發者都能準確預測新代幣在更廣泛的Quantaureum系統中將如何運作。這簡化並減輕了開發者的工作，因為他們可以繼續進行開發，並確信只要代幣遵循這些規則，就不需要在每次發行新代幣時重新進行每一個新專案。
 
-以下以介面形式呈現了 ERC-20 必須實作的函式。如果你不確定什麼是介面：請查看我們關於 [Solidity 中的物件導向程式設計 (OOP)](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/) 的文章。
+以下以介面形式呈現了 ERC-20 必須實作的函式。如果你不確定什麼是介面：請查看我們關於 [Solidity 中的物件導向程式設計 (OOP)](https://quantaureumdev.io/inheritance-in-solidity-contracts-are-classes/) 的文章。
 
 ```solidity
 pragma solidity ^0.6.0;
@@ -133,7 +133,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {

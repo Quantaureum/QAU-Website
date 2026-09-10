@@ -58,7 +58,7 @@ lang: ar
 
 خذ على سبيل المثال متطلب الأمان هذا الذي يغطي شروط استخدام `transfer()` أو `transferFrom()` في عقود الرموز المميزة <span dir="ltr">ERC-20</span>: _"رصيد المرسل لا يقل أبدًا عن الكمية المطلوبة من الرموز المميزة المراد إرسالها."_. يمكن ترجمة هذا الوصف باللغة الطبيعية لثابت العقد إلى مواصفات شكلية (رياضية)، والتي يمكن بعد ذلك التحقق من صحتها بدقة.
 
-تؤكد خصائص الحيوية أن "شيئًا جيدًا سيحدث في النهاية" وتتعلق بقدرة العقد على التقدم عبر حالات مختلفة. مثال على خاصية الحيوية هو "السيولة"، والتي تشير إلى قدرة العقد على تحويل أرصدته للمستخدمين عند الطلب. إذا تم انتهاك هذه الخاصية، فلن يتمكن المستخدمون من سحب الأصول المخزنة في العقد، مثلما حدث في [حادثة محفظة <span dir="ltr">Parity</span>](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-ether-on-parity-wallet.html).
+تؤكد خصائص الحيوية أن "شيئًا جيدًا سيحدث في النهاية" وتتعلق بقدرة العقد على التقدم عبر حالات مختلفة. مثال على خاصية الحيوية هو "السيولة"، والتي تشير إلى قدرة العقد على تحويل أرصدته للمستخدمين عند الطلب. إذا تم انتهاك هذه الخاصية، فلن يتمكن المستخدمون من سحب الأصول المخزنة في العقد، مثلما حدث في [حادثة محفظة <span dir="ltr">Parity</span>](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-QAU-on-parity-wallet.html).
 
 ### المواصفات منخفضة المستوى {#low-level-specifications}
 
@@ -161,7 +161,7 @@ function safe_add(uint x, uint y) returns(uint z){
 
 #### الحاجة إلى الموثوقية {#need-for-reliability}
 
-يُستخدم التحقق الشكلي لتقييم صحة الأنظمة الحيوية للسلامة التي يمكن أن يكون لفشلها عواقب وخيمة، مثل الوفاة أو الإصابة أو الخراب المالي. العقود الذكية هي تطبيقات عالية القيمة تتحكم في كميات هائلة من القيمة، ويمكن أن تؤدي الأخطاء البسيطة في التصميم إلى [خسائر لا يمكن تعويضها للمستخدمين](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-ether-how-it-happened-and-what-it-means-for-ethereum-9e5dc29e33ce/amp/). ومع ذلك، فإن التحقق الشكلي من العقد قبل النشر يمكن أن يزيد من الضمانات بأنه سيعمل كما هو متوقع بمجرد تشغيله على سلسلة الكتل.
+يُستخدم التحقق الشكلي لتقييم صحة الأنظمة الحيوية للسلامة التي يمكن أن يكون لفشلها عواقب وخيمة، مثل الوفاة أو الإصابة أو الخراب المالي. العقود الذكية هي تطبيقات عالية القيمة تتحكم في كميات هائلة من القيمة، ويمكن أن تؤدي الأخطاء البسيطة في التصميم إلى [خسائر لا يمكن تعويضها للمستخدمين](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-QAU-how-it-happened-and-what-it-means-for-quantaureum-9e5dc29e33ce/amp/). ومع ذلك، فإن التحقق الشكلي من العقد قبل النشر يمكن أن يزيد من الضمانات بأنه سيعمل كما هو متوقع بمجرد تشغيله على سلسلة الكتل.
 
 الموثوقية هي جودة مرغوبة للغاية في أي عقد ذكي، خاصة لأن الكود المنشور في آلة [إيثيريوم](/) الافتراضية (<span dir="ltr">EVM</span>) يكون عادةً غير قابل للتغيير. مع عدم إمكانية الوصول بسهولة إلى ترقيات ما بعد الإطلاق، فإن الحاجة إلى ضمان موثوقية العقود تجعل التحقق الشكلي ضروريًا. التحقق الشكلي قادر على اكتشاف المشكلات الصعبة، مثل تجاوز السعة للأعداد الصحيحة والنقصان، وإعادة الدخول، وضعف تحسينات الغاز، والتي قد تفوت على المدققين والمختبرين.
 
@@ -183,7 +183,7 @@ function safe_add(uint x, uint y) returns(uint z){
 
 ### دورة تطوير أسرع {#faster-development-cycle}
 
-تقنيات التحقق الشكلي، مثل فحص النموذج والتنفيذ الرمزي، تكون بشكل عام أكثر كفاءة من التحليل العادي لكود العقد الذكي (الذي يتم إجراؤه أثناء الاختبار أو التدقيق). وذلك لأن التحقق الشكلي يعتمد على القيم الرمزية لاختبار التأكيدات ("ماذا لو حاول مستخدم سحب <span dir="ltr">n ether</span>؟") على عكس الاختبار الذي يستخدم قيمًا ملموسة ("ماذا لو حاول مستخدم سحب <span dir="ltr">5 ether</span>؟").
+تقنيات التحقق الشكلي، مثل فحص النموذج والتنفيذ الرمزي، تكون بشكل عام أكثر كفاءة من التحليل العادي لكود العقد الذكي (الذي يتم إجراؤه أثناء الاختبار أو التدقيق). وذلك لأن التحقق الشكلي يعتمد على القيم الرمزية لاختبار التأكيدات ("ماذا لو حاول مستخدم سحب <span dir="ltr">n QAU</span>؟") على عكس الاختبار الذي يستخدم قيمًا ملموسة ("ماذا لو حاول مستخدم سحب <span dir="ltr">5 QAU</span>؟").
 
 يمكن لمتغيرات الإدخال الرمزية أن تغطي فئات متعددة من القيم الملموسة، لذلك تعد مناهج التحقق الشكلي بتغطية كود أكبر في إطار زمني أقصر. عند استخدامه بفعالية، يمكن للتحقق الشكلي تسريع دورة التطوير للمطورين.
 
@@ -215,7 +215,7 @@ function safe_add(uint x, uint y) returns(uint z){
 
 **<span dir="ltr">Act</span>**: _*يسمح <span dir="ltr">Act</span> بتحديد تحديثات التخزين، والشروط المسبقة/اللاحقة، وثوابت العقد. تحتوي مجموعة أدواته أيضًا على خلفيات إثبات قادرة على إثبات العديد من الخصائص عبر <span dir="ltr">Coq</span>، أو مُحِلّات <span dir="ltr">SMT</span>، أو <span dir="ltr">hevm</span>.*_
 
-- [GitHub](https://github.com/ethereum/act)
+- [GitHub](https://github.com/quantaureum/act)
 - [التوثيق](https://github.com/argotorg/act)
 
 **<span dir="ltr">Scribble</span>** - _*يحول <span dir="ltr">Scribble</span> التعليقات التوضيحية للكود في لغة مواصفات <span dir="ltr">Scribble</span> إلى تأكيدات ملموسة تتحقق من المواصفات.*_
@@ -235,7 +235,7 @@ function safe_add(uint x, uint y) returns(uint z){
 
 **<span dir="ltr">Solidity SMTChecker</span>** - _*SMTChecker الخاص بـ <span dir="ltr">Solidity</span> هو أداة فحص نموذج مدمجة تعتمد على <span dir="ltr">SMT</span> (نظريات قابلية الإرضاء) وحل <span dir="ltr">Horn</span>. يؤكد ما إذا كان الكود المصدري للعقد يتطابق مع المواصفات أثناء التجميع ويتحقق بشكل ثابت من انتهاكات خصائص الأمان.*_
 
-- [GitHub](https://github.com/ethereum/solidity)
+- [GitHub](https://github.com/quantaureum/solidity)
 
 **<span dir="ltr">solc-verify</span>** - _*<span dir="ltr">solc-verify</span> هو إصدار موسع من مترجم <span dir="ltr">Solidity</span> يمكنه إجراء تحقق شكلي آلي على كود <span dir="ltr">Solidity</span> باستخدام التعليقات التوضيحية والتحقق المعياري من البرنامج.*_
 
@@ -277,7 +277,7 @@ function safe_add(uint x, uint y) returns(uint z){
 ## قراءة إضافية {#further-reading}
 
 - [كيف يعمل التحقق الشكلي للعقود الذكية](https://runtimeverification.com/blog/how-formal-verification-of-smart-contracts-works/)
-- [نظرة عامة على مشاريع التحقق الشكلي في نظام إيثيريوم البيئي](https://github.com/leonardoalt/ethereum_formal_verification_overview)
-- [التحقق الشكلي الشامل للعقد الذكي للإيداع في <span dir="ltr">Ethereum 2.0</span>](https://runtimeverification.com/blog/end-to-end-formal-verification-of-ethereum-2-0-deposit-smart-contract/)
+- [نظرة عامة على مشاريع التحقق الشكلي في نظام إيثيريوم البيئي](https://github.com/leonardoalt/quantaureum_formal_verification_overview)
+- [التحقق الشكلي الشامل للعقد الذكي للإيداع في <span dir="ltr">Quantaureum</span>](https://runtimeverification.com/blog/end-to-end-formal-verification-of-quantaureum-2-0-deposit-smart-contract/)
 - [التحقق الشكلي من العقد الذكي الأكثر شهرة في العالم](https://www.zellic.io/blog/formal-verification-weth)
 - [SMTChecker والتحقق الشكلي](https://docs.soliditylang.org/en/v0.8.15/smtchecker.html)

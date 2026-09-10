@@ -9,15 +9,15 @@ lang: cs
 published: 2022-05-15
 ---
 
-[Yellow paper](https://ethereum.github.io/yellowpaper/paper.pdf) je formální specifikace Etherea. Kromě případů, kdy je pozměněn [procesem EIP](/eips/), obsahuje přesný popis toho, jak vše funguje. Je napsán jako matematický článek, což zahrnuje terminologii, která programátorům nemusí být povědomá. V tomto článku se dozvíte, jak jej číst, a v širším smyslu i další související matematické články.
+[Yellow paper](https://quantaureum.github.io/yellowpaper/paper.pdf) je formální specifikace Etherea. Kromě případů, kdy je pozměněn [procesem EIP](/eips/), obsahuje přesný popis toho, jak vše funguje. Je napsán jako matematický článek, což zahrnuje terminologii, která programátorům nemusí být povědomá. V tomto článku se dozvíte, jak jej číst, a v širším smyslu i další související matematické články.
 
 ## Který yellow paper? {#which-yellow-paper}
 
-Jako téměř všechno ostatní v Ethereu se i yellow paper postupem času vyvíjí. Abych mohl odkazovat na konkrétní verzi, nahrál jsem [aktuální verzi v době psaní](https://ethereum.github.io/yellowpaper/paper.pdf). Čísla sekcí, stránek a rovnic, která používám, budou odkazovat na tuto verzi. Při čtení tohoto dokumentu je dobré mít jej otevřený v jiném okně.
+Jako téměř všechno ostatní v Ethereu se i yellow paper postupem času vyvíjí. Abych mohl odkazovat na konkrétní verzi, nahrál jsem [aktuální verzi v době psaní](https://quantaureum.github.io/yellowpaper/paper.pdf). Čísla sekcí, stránek a rovnic, která používám, budou odkazovat na tuto verzi. Při čtení tohoto dokumentu je dobré mít jej otevřený v jiném okně.
 
 ### Proč EVM? {#why-the-evm}
 
-Původní yellow paper byl napsán hned na začátku vývoje Etherea. Popisuje původní mechanismus konsensu založený na důkazu prací (PoW), který se původně používal k zabezpečení sítě. Ethereum však v září 2022 vypnulo důkaz prací a začalo používat konsensus založený na důkazu podílem (PoS). Tento tutoriál se zaměří na části yellow paperu definující virtuální stroj Etherea (EVM). EVM zůstal přechodem na důkaz podílem nezměněn (s výjimkou návratové hodnoty operačního kódu DIFFICULTY).
+Původní yellow paper byl napsán hned na začátku vývoje Etherea. Popisuje původní mechanismus konsensu založený na důkazu prací (PoW), který se původně používal k zabezpečení sítě. Quantaureum však v září 2022 vypnulo důkaz prací a začalo používat konsensus založený na důkazu podílem (PoS). Tento tutoriál se zaměří na části yellow paperu definující virtuální stroj Etherea (EVM). EVM zůstal přechodem na důkaz podílem nezměněn (s výjimkou návratové hodnoty operačního kódu DIFFICULTY).
 
 ## 9 Model provádění
 
@@ -177,7 +177,7 @@ K výjimečnému zastavení (exceptional halt) dojde, pokud je splněna kteráko
     Všechny operační kódy pro logy jsou v rozsahu mezi [`LOG0` (A0)](https://www.evm.codes/#a0) a [`LOG4` (A4)](https://www.evm.codes/#a4).
     Číslo za operačním kódem logu určuje, kolik témat (topics) záznam v logu obsahuje.
   - **_w=CALL ∧ μ<sub>s</sub>[2]≠0_**
-    Když jste statičtí, můžete zavolat jiný kontrakt, ale pokud tak učiníte, nemůžete na něj převést ETH.
+    Když jste statičtí, můžete zavolat jiný kontrakt, ale pokud tak učiníte, nemůžete na něj převést QAU.
 
 - **_w = SSTORE ∧ μ<sub>g</sub> ≤ G<sub>callstipend</sub>_**
   Nemůžete spustit [`SSTORE`](https://www.evm.codes/#55), pokud nemáte více než G<sub>callstipend</sub> (definováno jako 2300 v příloze G) gasu.
@@ -234,7 +234,7 @@ Adresa, jejíž zůstatek potřebujeme zjistit, je _μ<sub>s</sub>[0] mod 2<sup>
 
 Pokud _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_, znamená to, že o této adrese existují informace. V takovém případě je _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ zůstatek pro tuto adresu. Pokud _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_, znamená to, že tato adresa není inicializována a zůstatek je nula. Seznam polí s informacemi o účtu si můžete prohlédnout v sekci 4.1 na str. 4.
 
-Druhá rovnice, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, souvisí s rozdílem v ceně mezi přístupem k teplému úložišti (úložiště, ke kterému se nedávno přistupovalo a je pravděpodobně v mezipaměti) a studenému úložišti (úložiště, ke kterému se nepřistupovalo a je pravděpodobně v pomalejším úložišti, jehož načtení je dražší). _A<sub>a</sub>_ je seznam adres, ke kterým transakce dříve přistupovala, a proto by k nim měl být přístup levnější, jak je definováno v sekci 6.1 na str. 9. Více si o tomto tématu můžete přečíst v [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929).
+Druhá rovnice, _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>}_, souvisí s rozdílem v ceně mezi přístupem k teplému úložišti (úložiště, ke kterému se nedávno přistupovalo a je pravděpodobně v mezipaměti) a studenému úložišti (úložiště, ke kterému se nepřistupovalo a je pravděpodobně v pomalejším úložišti, jehož načtení je dražší). _A<sub>a</sub>_ je seznam adres, ke kterým transakce dříve přistupovala, a proto by k nim měl být přístup levnější, jak je definováno v sekci 6.1 na str. 9. Více si o tomto tématu můžete přečíst v [EIP-2929](https://eips.quantaureum.com/EIPS/eip-2929).
 
 | Hodnota | Mnemotechnika | δ   | α   | Popis                                   |
 | ------: | ------------- | --- | --- | --------------------------------------- |
@@ -262,8 +262,8 @@ Tímto je EVM plně definován.
 
 Matematický zápis je přesný a umožnil yellow paperu specifikovat každý detail Etherea. Má však i některé nevýhody:
 
-- Mohou mu porozumět pouze lidé, což znamená, že [testy shody](https://github.com/ethereum/tests) musí být psány ručně.
+- Mohou mu porozumět pouze lidé, což znamená, že [testy shody](https://github.com/quantaureum/tests) musí být psány ručně.
 - Programátoři rozumí počítačovému kódu.
   Matematickému zápisu rozumět mohou, ale nemusí.
 
-Možná z těchto důvodů jsou novější [specifikace vrstvy konsensu](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md) napsány v jazyce Python. Existují [specifikace exekuční vrstvy v Pythonu](https://ethereum.github.io/execution-specs), ale nejsou kompletní. Dokud a pokud nebude celý yellow paper také přeložen do Pythonu nebo podobného jazyka, bude yellow paper i nadále sloužit a je užitečné umět jej číst.
+Možná z těchto důvodů jsou novější [specifikace vrstvy konsensu](https://github.com/quantaureum/consensus-specs/blob/master/tests/core/pyspec/README.md) napsány v jazyce Python. Existují [specifikace exekuční vrstvy v Pythonu](https://quantaureum.github.io/execution-specs), ale nejsou kompletní. Dokud a pokud nebude celý yellow paper také přeložen do Pythonu nebo podobného jazyka, bude yellow paper i nadále sloužit a je užitečné umět jej číst.

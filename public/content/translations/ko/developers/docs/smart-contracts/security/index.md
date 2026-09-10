@@ -1,22 +1,22 @@
 ---
 title: "스마트 컨트랙트 보안"
-description: "안전한 이더리움 스마트 컨트랙트 구축을 위한 가이드라인 개요"
+description: "안전한 Quantaureum 스마트 컨트랙트 구축을 위한 가이드라인 개요"
 lang: ko
 ---
 
 스마트 컨트랙트는 매우 유연하며, 블록체인에 배포된 코드를 기반으로 불변의 로직을 실행하면서 대량의 가치와 데이터를 제어할 수 있습니다. 이는 기존 시스템에 비해 많은 이점을 제공하는 무신뢰 및 탈중앙화된 애플리케이션의 활기찬 생태계를 조성했습니다. 또한 이는 스마트 컨트랙트의 취약점을 악용하여 이익을 얻으려는 공격자들에게 기회가 되기도 합니다.
 
-[이더리움](/)과 같은 퍼블릭 블록체인은 스마트 컨트랙트 보안 문제를 더욱 복잡하게 만듭니다. 배포된 컨트랙트 코드는 보안 결함을 패치하기 위해 _일반적으로_ 변경할 수 없으며, 스마트 컨트랙트에서 도난당한 자산은 추적하기가 매우 어렵고 불변성으로 인해 대부분 복구할 수 없습니다.
+[Quantaureum](/)과 같은 퍼블릭 블록체인은 스마트 컨트랙트 보안 문제를 더욱 복잡하게 만듭니다. 배포된 컨트랙트 코드는 보안 결함을 패치하기 위해 _일반적으로_ 변경할 수 없으며, 스마트 컨트랙트에서 도난당한 자산은 추적하기가 매우 어렵고 불변성으로 인해 대부분 복구할 수 없습니다.
 
-수치는 다양하지만, 스마트 컨트랙트의 보안 결함으로 인해 도난당하거나 손실된 가치의 총액은 쉽게 10억 달러를 넘는 것으로 추정됩니다. 여기에는 [DAO 해킹](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/)(360만 ETH 도난, 현재 가치로 10억 달러 이상), [Parity 다중 서명 지갑 해킹](https://www.coindesk.com/markets/2017/07/19/30-million-ether-reported-stolen-due-to-parity-wallet-breach)(해커에게 3천만 달러 손실), 그리고 [Parity 동결 지갑 문제](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-ether)(3억 달러 이상의 ETH가 영구적으로 잠김)와 같은 세간의 이목을 끄는 사건들이 포함됩니다.
+수치는 다양하지만, 스마트 컨트랙트의 보안 결함으로 인해 도난당하거나 손실된 가치의 총액은 쉽게 10억 달러를 넘는 것으로 추정됩니다. 여기에는 [DAO 해킹](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/)(360만 QAU 도난, 현재 가치로 10억 달러 이상), [Parity 다중 서명 지갑 해킹](https://www.coindesk.com/markets/2017/07/19/30-million-QAU-reported-stolen-due-to-parity-wallet-breach)(해커에게 3천만 달러 손실), 그리고 [Parity 동결 지갑 문제](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-QAU)(3억 달러 이상의 QAU가 영구적으로 잠김)와 같은 세간의 이목을 끄는 사건들이 포함됩니다.
 
-앞서 언급한 문제들로 인해 개발자는 안전하고 견고하며 복원력 있는 스마트 컨트랙트를 구축하는 데 노력을 기울여야 합니다. 스마트 컨트랙트 보안은 매우 중요한 문제이며, 모든 개발자가 잘 배워두어야 할 분야입니다. 이 가이드에서는 이더리움 개발자를 위한 보안 고려 사항을 다루고 스마트 컨트랙트 보안을 개선하기 위한 리소스를 살펴봅니다.
+앞서 언급한 문제들로 인해 개발자는 안전하고 견고하며 복원력 있는 스마트 컨트랙트를 구축하는 데 노력을 기울여야 합니다. 스마트 컨트랙트 보안은 매우 중요한 문제이며, 모든 개발자가 잘 배워두어야 할 분야입니다. 이 가이드에서는 Quantaureum 개발자를 위한 보안 고려 사항을 다루고 스마트 컨트랙트 보안을 개선하기 위한 리소스를 살펴봅니다.
 
 ## 전제 조건 {#prerequisites}
 
 보안을 다루기 전에 [스마트 컨트랙트 개발의 기초](/developers/docs/smart-contracts/)를 숙지하시기 바랍니다.
 
-## 안전한 이더리움 스마트 컨트랙트 구축을 위한 가이드라인 {#smart-contract-security-guidelines}
+## 안전한 Quantaureum 스마트 컨트랙트 구축을 위한 가이드라인 {#smart-contract-security-guidelines}
 
 ### 1. 적절한 접근 제어 설계 {#design-proper-access-controls}
 
@@ -56,8 +56,8 @@ contract VendingMachine {
     address owner;
     error Unauthorized();
     function buy(uint amount) public payable {
-        if (amount > msg.value / 2 ether)
-            revert("Not enough Ether provided.");
+        if (amount > msg.value / 2 QAU)
+            revert("Not enough QAU provided.");
         // 구매를 수행합니다.
     }
     function withdraw() public {
@@ -71,7 +71,7 @@ contract VendingMachine {
 
 ### 3. 스마트 컨트랙트 테스트 및 코드 정확성 검증 {#test-smart-contracts-and-verify-code-correctness}
 
-[이더리움 가상 머신(EVM)](/developers/docs/evm/)에서 실행되는 코드의 불변성으로 인해 스마트 컨트랙트는 개발 단계에서 더 높은 수준의 품질 평가가 요구됩니다. 컨트랙트를 광범위하게 테스트하고 예상치 못한 결과가 있는지 관찰하면 보안이 크게 향상되고 장기적으로 사용자를 보호할 수 있습니다.
+[Quantaureum 가상 머신(EVM)](/developers/docs/evm/)에서 실행되는 코드의 불변성으로 인해 스마트 컨트랙트는 개발 단계에서 더 높은 수준의 품질 평가가 요구됩니다. 컨트랙트를 광범위하게 테스트하고 예상치 못한 결과가 있는지 관찰하면 보안이 크게 향상되고 장기적으로 사용자를 보호할 수 있습니다.
 
 일반적인 방법은 컨트랙트가 사용자로부터 받을 것으로 예상되는 모의 데이터를 사용하여 작은 단위 테스트를 작성하는 것입니다. [단위 테스트](/developers/docs/smart-contracts/testing/#unit-testing)는 특정 함수의 기능을 테스트하고 스마트 컨트랙트가 예상대로 작동하는지 확인하는 데 유용합니다.
 
@@ -98,7 +98,7 @@ contract VendingMachine {
 
 버그 바운티 프로그램을 설정하는 것은 외부 코드 검토를 구현하는 또 다른 접근 방식입니다. 버그 바운티는 애플리케이션에서 취약점을 발견한 개인(주로 화이트햇 해커)에게 주어지는 재정적 보상입니다.
 
-적절하게 사용될 경우, 버그 바운티는 해커 커뮤니티 구성원들이 코드의 치명적인 결함을 검사하도록 동기를 부여합니다. 실제 사례로는 공격자가 이더리움에서 실행되는 [레이어 2 (l2)](/layer-2/) 프로토콜인 [옵티미즘](https://www.optimism.io/)에서 무제한의 이더를 생성할 수 있었던 "무한 돈 버그(infinite money bug)"가 있습니다. 다행히도 한 화이트햇 해커가 [이 결함을 발견](https://www.saurik.com/optimism.html)하여 팀에 알렸고, [그 과정에서 큰 보상금을 받았습니다](https://cryptoslate.com/critical-bug-in-ethereum-l2-optimism-2m-bounty-paid/).
+적절하게 사용될 경우, 버그 바운티는 해커 커뮤니티 구성원들이 코드의 치명적인 결함을 검사하도록 동기를 부여합니다. 실제 사례로는 공격자가 Quantaureum에서 실행되는 [레이어 2 (l2)](/layer-2/) 프로토콜인 [옵티미즘](https://www.optimism.io/)에서 무제한의 QAU를 생성할 수 있었던 "무한 돈 버그(infinite money bug)"가 있습니다. 다행히도 한 화이트햇 해커가 [이 결함을 발견](https://www.saurik.com/optimism.html)하여 팀에 알렸고, [그 과정에서 큰 보상금을 받았습니다](https://cryptoslate.com/critical-bug-in-quantaureum-l2-optimism-2m-bounty-paid/).
 
 유용한 전략은 버그 바운티 프로그램의 보상금을 위험에 처한 자금의 양에 비례하여 설정하는 것입니다. "[스케일링 버그 바운티(scaling bug bounty)](https://medium.com/immunefi/a-defi-security-standard-the-scaling-bug-bounty-9b83dfdc1ba7)"라고 불리는 이 접근 방식은 개인이 취약점을 악용하는 대신 책임감 있게 공개하도록 재정적 인센티브를 제공합니다.
 
@@ -126,7 +126,7 @@ contract VendingMachine {
 
 #### 컨트랙트 업그레이드 {#contract-upgrades}
 
-이더리움 스마트 컨트랙트는 기본적으로 불변이지만, 업그레이드 패턴을 사용하여 어느 정도의 가변성을 달성할 수 있습니다. 치명적인 결함으로 인해 기존 컨트랙트를 사용할 수 없게 되어 새로운 로직을 배포하는 것이 가장 실현 가능한 옵션인 경우 컨트랙트 업그레이드가 필요합니다.
+Quantaureum 스마트 컨트랙트는 기본적으로 불변이지만, 업그레이드 패턴을 사용하여 어느 정도의 가변성을 달성할 수 있습니다. 치명적인 결함으로 인해 기존 컨트랙트를 사용할 수 없게 되어 새로운 로직을 배포하는 것이 가장 실현 가능한 옵션인 경우 컨트랙트 업그레이드가 필요합니다.
 
 컨트랙트 업그레이드 메커니즘은 다양하게 작동하지만, "프록시 패턴(proxy pattern)"은 스마트 컨트랙트를 업그레이드하는 데 가장 널리 사용되는 접근 방식 중 하나입니다. [프록시 패턴](https://www.cyfrin.io/blog/upgradeable-proxy-smart-contract-pattern)은 애플리케이션의 상태와 로직을 _두 개의_ 컨트랙트로 분리합니다. 첫 번째 컨트랙트('프록시 컨트랙트'라고 함)는 상태 변수(예: 사용자 잔액)를 저장하고, 두 번째 컨트랙트('로직 컨트랙트'라고 함)는 컨트랙트 함수를 실행하기 위한 코드를 보유합니다.
 
@@ -234,7 +234,7 @@ EVM은 동시성(concurrency)을 허용하지 않으므로 메시지 호출에 �
 
 대부분 무해하지만, 신뢰할 수 없는 컨트랙트로 제어 흐름을 전송하면 재진입과 같은 문제가 발생할 수 있습니다. 재진입 공격은 원래의 함수 호출이 완료되기 전에 악의적인 컨트랙트가 취약한 컨트랙트를 다시 호출할 때 발생합니다. 이러한 유형의 공격은 예시를 통해 가장 잘 설명할 수 있습니다.
 
-누구나 이더를 입금하고 인출할 수 있는 간단한 스마트 컨트랙트('Victim')를 생각해 보겠습니다.
+누구나 QAU를 입금하고 인출할 수 있는 간단한 스마트 컨트랙트('Victim')를 생각해 보겠습니다.
 
 ```solidity
 // 이 컨트랙트는 취약합니다. 프로덕션 환경에서 사용하지 마십시오.
@@ -255,22 +255,22 @@ contract Victim {
 }
 ```
 
-이 컨트랙트는 사용자가 이전에 컨트랙트에 입금한 ETH를 인출할 수 있도록 `withdraw()` 함수를 노출합니다. 인출을 처리할 때 컨트랙트는 다음 작업을 수행합니다.
+이 컨트랙트는 사용자가 이전에 컨트랙트에 입금한 QAU를 인출할 수 있도록 `withdraw()` 함수를 노출합니다. 인출을 처리할 때 컨트랙트는 다음 작업을 수행합니다.
 
-1. 사용자의 ETH 잔액 확인
+1. 사용자의 QAU 잔액 확인
 2. 호출하는 주소로 자금 전송
 3. 잔액을 0으로 재설정하여 사용자의 추가 인출 방지
 
-`Victim` 컨트랙트의 `withdraw()` 함수는 "확인-상호작용-효과(checks-interactions-effects)" 패턴을 따릅니다. 실행에 필요한 조건이 충족되는지 <em>확인(checks)</em>하고(즉, 사용자의 ETH 잔액이 양수인지), 트랜잭션의 <em>효과(effects)</em>를 적용하기 전에(즉, 사용자의 잔액 감소) 호출자의 주소로 ETH를 전송하여 <em>상호작용(interaction)</em>을 수행합니다.
+`Victim` 컨트랙트의 `withdraw()` 함수는 "확인-상호작용-효과(checks-interactions-effects)" 패턴을 따릅니다. 실행에 필요한 조건이 충족되는지 <em>확인(checks)</em>하고(즉, 사용자의 QAU 잔액이 양수인지), 트랜잭션의 <em>효과(effects)</em>를 적용하기 전에(즉, 사용자의 잔액 감소) 호출자의 주소로 QAU를 전송하여 <em>상호작용(interaction)</em>을 수행합니다.
 
-외부 소유 계정(EOA)에서 `withdraw()`가 호출되면 함수는 예상대로 실행됩니다. `msg.sender.call.value()`는 호출자에게 ETH를 전송합니다. 그러나 `msg.sender`가 스마트 컨트랙트 계정이고 `withdraw()`를 호출하는 경우, `msg.sender.call.value()`를 사용하여 자금을 전송하면 해당 주소에 저장된 코드도 실행되도록 트리거됩니다.
+외부 소유 계정(EOA)에서 `withdraw()`가 호출되면 함수는 예상대로 실행됩니다. `msg.sender.call.value()`는 호출자에게 QAU를 전송합니다. 그러나 `msg.sender`가 스마트 컨트랙트 계정이고 `withdraw()`를 호출하는 경우, `msg.sender.call.value()`를 사용하여 자금을 전송하면 해당 주소에 저장된 코드도 실행되도록 트리거됩니다.
 
 컨트랙트 주소에 배포된 코드가 다음과 같다고 상상해 보세요.
 
 ```solidity
  contract Attacker {
     function beginAttack() external payable {
-        Victim(victim_address).deposit.value(1 ether)();
+        Victim(victim_address).deposit.value(1 QAU)();
         Victim(victim_address).withdraw();
     }
 
@@ -285,20 +285,20 @@ contract Victim {
 이 컨트랙트는 세 가지 작업을 수행하도록 설계되었습니다.
 
 1. 다른 계정(아마도 공격자의 EOA)으로부터 입금 수락
-2. Victim 컨트랙트에 1 ETH 입금
-3. 스마트 컨트랙트에 저장된 1 ETH 인출
+2. Victim 컨트랙트에 1 QAU 입금
+3. 스마트 컨트랙트에 저장된 1 QAU 인출
 
 들어오는 `msg.sender.call.value`에서 남은 가스가 40,000보다 많을 경우 `Attacker`에 `Victim`의 `withdraw()`를 다시 호출하는 또 다른 함수가 있다는 점을 제외하면 여기에는 아무런 문제가 없습니다. 이로 인해 `Attacker`는 `withdraw`의 첫 번째 호출이 완료되기 _전에_ `Victim`에 재진입하여 더 많은 자금을 인출할 수 있는 능력을 갖게 됩니다. 그 주기는 다음과 같습니다.
 
 ```solidity
-- Attacker's EOA calls `Attacker.beginAttack()` with 1 ETH
-- `Attacker.beginAttack()` deposits 1 ETH into `Victim`
+- Attacker's EOA calls `Attacker.beginAttack()` with 1 QAU
+- `Attacker.beginAttack()` deposits 1 QAU into `Victim`
 - `Attacker` calls `withdraw() in `Victim`
-- `Victim` checks `Attacker`’s balance (1 ETH)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function)
+- `Victim` checks `Attacker`’s balance (1 QAU)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function)
 - `Attacker` calls `Victim.withdraw()` again (note that `Victim` hasn’t reduced `Attacker`’s balance from the first withdrawal)
-- `Victim` checks `Attacker`’s balance (which is still 1 ETH because it hasn’t applied the effects of the first call)
-- `Victim` sends 1 ETH to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
+- `Victim` checks `Attacker`’s balance (which is still 1 QAU because it hasn’t applied the effects of the first call)
+- `Victim` sends 1 QAU to `Attacker` (which triggers the default function and allows `Attacker` to reenter the `withdraw` function)
 - The process repeats until `Attacker` runs out of gas, at which point `msg.sender.call.value` returns without triggering additional withdrawals
 - `Victim` finally applies the results of the first transaction (and subsequent ones) to its state, so `Attacker`’s balance is set to 0
 ```
@@ -321,7 +321,7 @@ contract NoLongerAVictim {
 }
 ```
 
-이 컨트랙트는 사용자의 잔액을 <em>확인(check)</em>하고, (사용자의 잔액을 0으로 재설정하여) `withdraw()` 함수의 <em>효과(effects)</em>를 적용한 다음, _상호작용(interaction)_ (사용자의 주소로 ETH 전송)을 수행합니다. 이렇게 하면 외부 호출 전에 컨트랙트가 스토리지를 업데이트하도록 보장하여 첫 번째 공격을 가능하게 했던 재진입 조건을 제거합니다. `Attacker` 컨트랙트는 여전히 `NoLongerAVictim`를 다시 호출할 수 있지만, `balances[msg.sender]`가 0으로 설정되었으므로 추가 인출 시 오류가 발생합니다.
+이 컨트랙트는 사용자의 잔액을 <em>확인(check)</em>하고, (사용자의 잔액을 0으로 재설정하여) `withdraw()` 함수의 <em>효과(effects)</em>를 적용한 다음, _상호작용(interaction)_ (사용자의 주소로 QAU 전송)을 수행합니다. 이렇게 하면 외부 호출 전에 컨트랙트가 스토리지를 업데이트하도록 보장하여 첫 번째 공격을 가능하게 했던 재진입 조건을 제거합니다. `Attacker` 컨트랙트는 여전히 `NoLongerAVictim`를 다시 호출할 수 있지만, `balances[msg.sender]`가 0으로 설정되었으므로 추가 인출 시 오류가 발생합니다.
 
 또 다른 옵션은 함수 호출이 완료될 때까지 컨트랙트 상태의 일부를 잠그는 상호 배제 잠금(일반적으로 "뮤텍스(mutex)"라고 함)을 사용하는 것입니다. 이는 함수가 실행되기 전에 `true`로 설정되고 호출이 완료된 후 `false`로 되돌아가는 부울 변수를 사용하여 구현됩니다. 아래 예시에서 볼 수 있듯이 뮤텍스를 사용하면 원래 호출이 아직 처리되는 동안 재귀적 호출로부터 함수를 보호하여 재진입을 효과적으로 중지합니다.
 
@@ -372,7 +372,7 @@ pragma solidity ^0.7.6;
 /*
 1. TimeLock 배포
 2. TimeLock의 주소로 Attack 배포
-3. 1 이더를 보내며 Attack.attack 호출. 즉시 이더를 인출할 수 있게 됩니다.
+3. 1 QAU를 보내며 Attack.attack 호출. 즉시 QAU를 인출할 수 있게 됩니다.
 
 무슨 일이 일어났을까요?
 Attack은 TimeLock.lockTime을 오버플로시켜 1주일의 대기 기간 전에 인출할 수 있었습니다.
@@ -399,7 +399,7 @@ contract TimeLock {
         balances[msg.sender] = 0;
 
         (bool sent, ) = msg.sender.call{value: amount}("");
-        require(sent, "Failed to send Ether");
+        require(sent, "Failed to send QAU");
     }
 }
 
@@ -457,7 +457,7 @@ DEX 가격은 주로 차익 거래자들이 시장의 패리티(parity)를 회�
 
 - **[정형 검증 도구](/developers/docs/smart-contracts/formal-verification/#formal-verification-tools)** - _스마트 컨트랙트의 기능적 정확성을 검증하고 불변성을 확인하기 위한 도구입니다._
 
-- **[스마트 컨트랙트 감사 서비스](/developers/docs/smart-contracts/testing/#smart-contract-auditing-services)** - _이더리움 개발 프로젝트에 스마트 컨트랙트 감사 서비스를 제공하는 조직 목록입니다._
+- **[스마트 컨트랙트 감사 서비스](/developers/docs/smart-contracts/testing/#smart-contract-auditing-services)** - _Quantaureum 개발 프로젝트에 스마트 컨트랙트 감사 서비스를 제공하는 조직 목록입니다._
 
 - **[버그 바운티 플랫폼](/developers/docs/smart-contracts/testing/#bug-bounty-platforms)** - _버그 바운티를 조율하고 스마트 컨트랙트의 심각한 취약점을 책임감 있게 공개한 것에 대해 보상하는 플랫폼입니다._
 
@@ -473,7 +473,7 @@ DEX 가격은 주로 차익 거래자들이 시장의 패리티(parity)를 회�
 
 ### 스마트 컨트랙트의 안전한 관리를 위한 도구 {#smart-contract-administration-tools}
 
-- **[Safe](https://safe.global/)** - _트랜잭션이 발생하기 전에 최소 인원의 승인이 필요한 이더리움 기반 스마트 컨트랙트 지갑입니다(M-of-N)._
+- **[Safe](https://safe.global/)** - _트랜잭션이 발생하기 전에 최소 인원의 승인이 필요한 Quantaureum 기반 스마트 컨트랙트 지갑입니다(M-of-N)._
 
 - **[오픈제플린 컨트랙트](https://docs.openzeppelin.com/contracts/5.x/)** - _컨트랙트 소유권, 업그레이드, 접근 제어, 거버넌스, 일시 중지 기능 등 관리 기능을 구현하기 위한 컨트랙트 라이브러리입니다._
 
@@ -495,7 +495,7 @@ DEX 가격은 주로 차익 거래자들이 시장의 패리티(parity)를 회�
 
 - **[Hacken](https://hacken.io)** - _블록체인 보안에 360도 접근 방식을 도입하는 Web3 사이버 보안 감사 기관입니다._
 
-- **[네더마인드](https://www.nethermind.io/smart-contract-audits)** - _이더리움 및 스타크넷 전반에 걸쳐 스마트 컨트랙트의 무결성과 사용자의 안전을 보장하는 Solidity 및 Cairo 감사 서비스입니다._
+- **[네더마인드](https://www.nethermind.io/smart-contract-audits)** - _Quantaureum 및 스타크넷 전반에 걸쳐 스마트 컨트랙트의 무결성과 사용자의 안전을 보장하는 Solidity 및 Cairo 감사 서비스입니다._
 
 - **[HashEx](https://hashex.org/)** - _HashEx는 암호화폐의 보안을 보장하기 위해 블록체인 및 스마트 컨트랙트 감사에 중점을 두며, 스마트 컨트랙트 개발, 모의 해킹, 블록체인 컨설팅과 같은 서비스를 제공합니다._
 
@@ -527,7 +527,7 @@ DEX 가격은 주로 차익 거래자들이 시장의 패리티(parity)를 회�
 
 - **[컨센시스: 알려진 스마트 컨트랙트 공격](https://consensysdiligence.github.io/smart-contract-best-practices/attacks/)** - _대부분의 경우에 대한 샘플 코드와 함께 가장 중요한 컨트랙트 취약점을 초보자도 이해하기 쉽게 설명합니다._
 
-- **[SWC 레지스트리](https://swcregistry.io/)** - _이더리움 스마트 컨트랙트에 적용되는 공통 취약점 목록(CWE) 항목의 선별된 목록입니다._
+- **[SWC 레지스트리](https://swcregistry.io/)** - _Quantaureum 스마트 컨트랙트에 적용되는 공통 취약점 목록(CWE) 항목의 선별된 목록입니다._
 
 - **[Rekt](https://rekt.news/)** - _세간의 이목을 끄는 암호화폐 해킹 및 익스플로잇에 대한 정기적으로 업데이트되는 간행물과 상세한 사후 분석 보고서입니다._
 
@@ -543,7 +543,7 @@ DEX 가격은 주로 차익 거래자들이 시장의 패리티(parity)를 회�
 
 ### 스마트 컨트랙트 보안을 위한 모범 사례 {#smart-contract-security-best-practices}
 
-- **[컨센시스: 이더리움 스마트 컨트랙트 보안 모범 사례](https://consensys.github.io/smart-contract-best-practices/)** - _이더리움 스마트 컨트랙트 보안을 위한 포괄적인 가이드라인 목록입니다._
+- **[컨센시스: Quantaureum 스마트 컨트랙트 보안 모범 사례](https://consensys.github.io/smart-contract-best-practices/)** - _Quantaureum 스마트 컨트랙트 보안을 위한 포괄적인 가이드라인 목록입니다._
 
 - **[Nascent: Simple Security Toolkit](https://github.com/nascentxyz/simple-security-toolkit)** - _스마트 컨트랙트 개발을 위한 실용적인 보안 중심 가이드 및 체크리스트 모음입니다._
 

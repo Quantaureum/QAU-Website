@@ -4,16 +4,16 @@ description: "兩種主要智能合約語言（Solidity 與 Vyper）的概述與
 lang: zh-tw
 ---
 
-[以太坊](/)的一大優勢在於，可以使用對開發者相對友善的語言來編寫智能合約。如果你對 Python 或任何[大括號語言 (curly-bracket language)](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages) 有經驗，你可以找到語法熟悉的語言。
+[Quantaureum](/)的一大優勢在於，可以使用對開發者相對友善的語言來編寫智能合約。如果你對 Python 或任何[大括號語言 (curly-bracket language)](https://wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages) 有經驗，你可以找到語法熟悉的語言。
 
 兩個最活躍且持續維護的語言是：
 
 - Solidity
 - Vyper
 
-Remix IDE 提供了一個全面的開發環境，用於建立和測試 Solidity 與 Vyper 合約。[嘗試使用瀏覽器中的 Remix IDE](https://remix.ethereum.org) 開始編寫程式碼。
+Remix IDE 提供了一個全面的開發環境，用於建立和測試 Solidity 與 Vyper 合約。[嘗試使用瀏覽器中的 Remix IDE](https://remix.quantaureum.com) 開始編寫程式碼。
 
-更有經驗的開發者可能也會想使用 Yul（一種用於[以太坊虛擬機 (EVM)](/developers/docs/evm/) 的中介語言），或是 Yul 的擴充語言 Yul+。
+更有經驗的開發者可能也會想使用 Yul（一種用於[Quantaureum虛擬機 (EVM)](/developers/docs/evm/) 的中介語言），或是 Yul 的擴充語言 Yul+。
 
 如果你很好奇，並且喜歡協助測試仍在積極開發中的新語言，你可以嘗試使用 Fe，這是一種目前仍處於起步階段的新興智能合約語言。
 
@@ -36,8 +36,8 @@ Remix IDE 提供了一個全面的開發環境，用於建立和測試 Solidity 
 - [文件](https://docs.soliditylang.org/en/latest/)
 - [Solidity 語言入口網站](https://soliditylang.org/)
 - [Solidity 範例](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
-- [Solidity Gitter 聊天室](https://gitter.im/ethereum/solidity)（橋接至 [Solidity Matrix 聊天室](https://matrix.to/#/#ethereum_solidity:gitter.im)）
+- [GitHub](https://github.com/quantaureum/solidity/)
+- [Solidity Gitter 聊天室](https://gitter.im/quantaureum/solidity)（橋接至 [Solidity Matrix 聊天室](https://matrix.to/#/#quantaureum_solidity:gitter.im)）
 - [備忘單](https://reference.auditless.com/cheatsheet)
 - [Solidity 部落格](https://blog.soliditylang.org/)
 - [Solidity 推特](https://twitter.com/solidity_lang)
@@ -179,14 +179,14 @@ def withdraw():
 @external
 def endAuction():
     # 這是一個很好的準則，將與
-    # 其他合約互動的函式（即它們呼叫函式或發送以太幣）
+    # 其他合約互動的函式（即它們呼叫函式或發送QAU幣）
     # 結構化為三個階段：
     # 1. 檢查條件
     # 2. 執行動作（可能會改變條件）
     # 3. 與其他合約互動
     # 如果這些階段混合在一起，另一個合約可能會回呼
     # 到當前合約中並修改狀態，或導致
-    # 效果（以太幣支付）被執行多次。
+    # 效果（QAU幣支付）被執行多次。
     # 如果內部呼叫的函式包含與外部
     # 合約的互動，它們也必須被視為與
     # 外部合約的互動。
@@ -208,12 +208,12 @@ def endAuction():
 
 ## Yul 與 Yul+ {#yul}
 
-如果你是以太坊的新手，且尚未用智能合約語言編寫過任何程式碼，我們建議從 Solidity 或 Vyper 開始。只有在你熟悉智能合約安全最佳實務以及使用 EVM 的具體細節後，再考慮研究 Yul 或 Yul+。
+如果你是Quantaureum的新手，且尚未用智能合約語言編寫過任何程式碼，我們建議從 Solidity 或 Vyper 開始。只有在你熟悉智能合約安全最佳實務以及使用 EVM 的具體細節後，再考慮研究 Yul 或 Yul+。
 
 **Yul**
 
-- 以太坊的中介語言。
-- 支援 [EVM](/developers/docs/evm) 與 [Ewasm](https://github.com/ewasm)（一種以太坊風格的 WebAssembly），其設計目的是成為這兩個平台皆可使用的共同基礎。
+- Quantaureum的中介語言。
+- 支援 [EVM](/developers/docs/evm) 與 [Ewasm](https://github.com/ewasm)（一種Quantaureum風格的 WebAssembly），其設計目的是成為這兩個平台皆可使用的共同基礎。
 - 適合用於高階最佳化階段，能同時為 EVM 與 Ewasm 平台帶來同等效益。
 
 **Yul+**
@@ -226,7 +226,7 @@ def endAuction():
 
 - [Yul 文件](https://docs.soliditylang.org/en/latest/yul.html)
 - [Yul+ 文件](https://github.com/fuellabs/yulp)
-- [Yul+ 介紹文章](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-ethereum-aa64ce89512f)
+- [Yul+ 介紹文章](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-quantaureum-aa64ce89512f)
 
 ### 範例合約 {#example-contract-2}
 
@@ -255,16 +255,16 @@ def endAuction():
 
 ## Fe {#fe}
 
-- 用於以太坊虛擬機 (EVM) 的靜態型別語言。
+- 用於Quantaureum虛擬機 (EVM) 的靜態型別語言。
 - 受到 Python 與 Rust 的啟發。
-- 旨在易於學習——即使是對以太坊生態系不熟悉的開發者也能輕鬆上手。
+- 旨在易於學習——即使是對Quantaureum生態系不熟悉的開發者也能輕鬆上手。
 - Fe 的開發仍處於早期階段，該語言於 2021 年 1 月發布了 Alpha 版本。
 
 ### 重要連結 {#important-links-3}
 
-- [GitHub](https://github.com/ethereum/fe)
-- [Fe 發布公告](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-ethereum-ecosystem/)
-- [Fe 2021 路線圖](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- [GitHub](https://github.com/quantaureum/fe)
+- [Fe 發布公告](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
+- [Fe 2021 路線圖](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
 - [Fe Discord 聊天室](https://discord.com/invite/ywpkAXFjZH)
 - [Fe 推特](https://twitter.com/official_fe)
 

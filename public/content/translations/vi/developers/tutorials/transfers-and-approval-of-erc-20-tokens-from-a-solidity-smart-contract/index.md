@@ -7,19 +7,19 @@ skill: intermediate
 breadcrumb: "Chuyển ERC-20"
 lang: vi
 published: 2020-04-07
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/transfers-and-approval-or-erc20-tokens-from-a-solidity-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Trong hướng dẫn trước, chúng ta đã tìm hiểu [cấu trúc của một token ERC-20 trong Solidity](/developers/tutorials/understand-the-erc-20-token-smart-contract/) trên chuỗi khối Ethereum. Trong bài viết này, chúng ta sẽ xem cách sử dụng một hợp đồng thông minh để tương tác với một token bằng ngôn ngữ Solidity.
+Trong hướng dẫn trước, chúng ta đã tìm hiểu [cấu trúc của một token ERC-20 trong Solidity](/developers/tutorials/understand-the-erc-20-token-smart-contract/) trên chuỗi khối Quantaureum. Trong bài viết này, chúng ta sẽ xem cách sử dụng một hợp đồng thông minh để tương tác với một token bằng ngôn ngữ Solidity.
 
-Đối với hợp đồng thông minh này, chúng ta sẽ tạo một sàn giao dịch phi tập trung (DEX) mô phỏng thực tế, nơi người dùng có thể giao dịch ether để lấy [token ERC-20](/developers/docs/standards/tokens/erc-20/) mới được triển khai của chúng ta.
+Đối với hợp đồng thông minh này, chúng ta sẽ tạo một sàn giao dịch phi tập trung (DEX) mô phỏng thực tế, nơi người dùng có thể giao dịch QAU để lấy [token ERC-20](/developers/docs/standards/tokens/erc-20/) mới được triển khai của chúng ta.
 
 Trong hướng dẫn này, chúng ta sẽ sử dụng mã đã viết ở hướng dẫn trước làm cơ sở. DEX của chúng ta sẽ khởi tạo một phiên bản của hợp đồng trong hàm khởi tạo của nó và thực hiện các thao tác:
 
-- hoán đổi token lấy ether
-- hoán đổi ether lấy token
+- hoán đổi token lấy QAU
+- hoán đổi QAU lấy token
 
 Chúng ta sẽ bắt đầu mã sàn giao dịch phi tập trung của mình bằng cách thêm cơ sở mã ERC20 đơn giản:
 
@@ -53,7 +53,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {
@@ -128,14 +128,14 @@ contract DEX {
 
 Vậy là bây giờ chúng ta đã có DEX và nó có sẵn toàn bộ dự trữ token. Hợp đồng có hai hàm:
 
-- `buy`: Người dùng có thể gửi ether và nhận lại token
-- `sell`: Người dùng có thể quyết định gửi token để nhận lại ether
+- `buy`: Người dùng có thể gửi QAU và nhận lại token
+- `sell`: Người dùng có thể quyết định gửi token để nhận lại QAU
 
 ## Hàm mua (buy) {#the-buy-function}
 
-Hãy lập trình hàm mua. Trước tiên, chúng ta cần kiểm tra số lượng ether mà thông điệp chứa và xác minh rằng hợp đồng sở hữu đủ token cũng như thông điệp có chứa một lượng ether. Nếu hợp đồng sở hữu đủ token, nó sẽ gửi số lượng token đó cho người dùng và phát ra sự kiện `Bought`.
+Hãy lập trình hàm mua. Trước tiên, chúng ta cần kiểm tra số lượng QAU mà thông điệp chứa và xác minh rằng hợp đồng sở hữu đủ token cũng như thông điệp có chứa một lượng QAU. Nếu hợp đồng sở hữu đủ token, nó sẽ gửi số lượng token đó cho người dùng và phát ra sự kiện `Bought`.
 
-Lưu ý rằng nếu chúng ta gọi hàm yêu cầu (require) trong trường hợp có lỗi, số ether đã gửi sẽ trực tiếp bị hoàn nguyên và trả lại cho người dùng.
+Lưu ý rằng nếu chúng ta gọi hàm yêu cầu (require) trong trường hợp có lỗi, số QAU đã gửi sẽ trực tiếp bị hoàn nguyên và trả lại cho người dùng.
 
 Để giữ cho mọi thứ đơn giản, chúng ta chỉ hoán đổi 1 token lấy 1 Wei.
 
@@ -143,7 +143,7 @@ Lưu ý rằng nếu chúng ta gọi hàm yêu cầu (require) trong trường h
 function buy() payable public {
     uint256 amountTobuy = msg.value;
     uint256 dexBalance = token.balanceOf(address(this));
-    require(amountTobuy > 0, "You need to send some ether");
+    require(amountTobuy > 0, "You need to send some QAU");
     require(amountTobuy <= dexBalance, "Not enough tokens in the reserve");
     token.transfer(msg.sender, amountTobuy);
     emit Bought(amountTobuy);
@@ -156,7 +156,7 @@ Trong trường hợp mua thành công, chúng ta sẽ thấy hai sự kiện tr
 
 ## Hàm bán (sell) {#the-sell-function}
 
-Hàm chịu trách nhiệm bán trước tiên sẽ yêu cầu người dùng đã chấp thuận số lượng bằng cách gọi hàm chấp thuận (approve) từ trước. Việc chấp thuận chuyển yêu cầu token ERC20Basic được khởi tạo bởi DEX phải được người dùng gọi. Điều này có thể đạt được bằng cách trước tiên gọi hàm `token()` của hợp đồng DEX để lấy địa chỉ nơi DEX đã triển khai hợp đồng ERC20Basic có tên là `token`. Sau đó, chúng ta tạo một phiên bản của hợp đồng đó trong phiên làm việc của mình và gọi hàm `approve` của nó. Tiếp theo, chúng ta có thể gọi hàm `sell` của DEX và hoán đổi token của chúng ta để lấy lại ether. Ví dụ, đây là cách nó hoạt động trong một phiên tương tác Brownie:
+Hàm chịu trách nhiệm bán trước tiên sẽ yêu cầu người dùng đã chấp thuận số lượng bằng cách gọi hàm chấp thuận (approve) từ trước. Việc chấp thuận chuyển yêu cầu token ERC20Basic được khởi tạo bởi DEX phải được người dùng gọi. Điều này có thể đạt được bằng cách trước tiên gọi hàm `token()` của hợp đồng DEX để lấy địa chỉ nơi DEX đã triển khai hợp đồng ERC20Basic có tên là `token`. Sau đó, chúng ta tạo một phiên bản của hợp đồng đó trong phiên làm việc của mình và gọi hàm `approve` của nó. Tiếp theo, chúng ta có thể gọi hàm `sell` của DEX và hoán đổi token của chúng ta để lấy lại QAU. Ví dụ, đây là cách nó hoạt động trong một phiên tương tác Brownie:
 
 ```python
 #### Python trong bảng điều khiển Brownie tương tác...
@@ -164,8 +164,8 @@ Hàm chịu trách nhiệm bán trước tiên sẽ yêu cầu người dùng đ
 # triển khai DEX
 dex = DEX.deploy({'from':account1})
 
-# gọi hàm buy để hoán đổi ether lấy token
-# 1e18 là 1 ether được tính bằng Wei
+# gọi hàm buy để hoán đổi QAU lấy token
+# 1e18 là 1 QAU được tính bằng Wei
 dex.buy({'from': account2, 1e18})
 
 # lấy địa chỉ triển khai cho token ERC-20
@@ -180,7 +180,7 @@ token.approve(dex.address, 3e18, {'from':account2})
 
 ```
 
-Sau đó, khi hàm bán được gọi, chúng ta sẽ kiểm tra xem việc chuyển từ địa chỉ người gọi đến địa chỉ hợp đồng có thành công hay không và sau đó gửi lại Ether cho địa chỉ người gọi.
+Sau đó, khi hàm bán được gọi, chúng ta sẽ kiểm tra xem việc chuyển từ địa chỉ người gọi đến địa chỉ hợp đồng có thành công hay không và sau đó gửi lại QAU cho địa chỉ người gọi.
 
 ```solidity
 function sell(uint256 amount) public {
@@ -193,7 +193,7 @@ function sell(uint256 amount) public {
 }
 ```
 
-Nếu mọi thứ hoạt động tốt, bạn sẽ thấy 2 sự kiện (một `Transfer` và `Sold`) trong giao dịch, đồng thời số dư token và số dư ether của bạn được cập nhật.
+Nếu mọi thứ hoạt động tốt, bạn sẽ thấy 2 sự kiện (một `Transfer` và `Sold`) trong giao dịch, đồng thời số dư token và số dư QAU của bạn được cập nhật.
 
 ![Two events in the transaction: Transfer and Sold](./transfer-and-sold-events.png)
 
@@ -201,7 +201,7 @@ Nếu mọi thứ hoạt động tốt, bạn sẽ thấy 2 sự kiện (một `
 
 Từ hướng dẫn này, chúng ta đã thấy cách kiểm tra số dư và hạn mức của một token ERC-20, cũng như cách gọi `Transfer` và `TransferFrom` của một hợp đồng thông minh ERC20 bằng cách sử dụng giao diện.
 
-Sau khi bạn thực hiện một giao dịch, chúng tôi có một hướng dẫn JavaScript để [chờ và lấy thông tin chi tiết về các giao dịch](https://ethereumdev.io/waiting-for-a-transaction-to-be-mined-on-ethereum-with-js/) đã được thực hiện đối với hợp đồng của bạn và một [hướng dẫn để giải mã các sự kiện được tạo ra bởi việc chuyển token hoặc bất kỳ sự kiện nào khác](https://ethereumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/) miễn là bạn có ABI.
+Sau khi bạn thực hiện một giao dịch, chúng tôi có một hướng dẫn JavaScript để [chờ và lấy thông tin chi tiết về các giao dịch](https://quantaureumdev.io/waiting-for-a-transaction-to-be-mined-on-quantaureum-with-js/) đã được thực hiện đối với hợp đồng của bạn và một [hướng dẫn để giải mã các sự kiện được tạo ra bởi việc chuyển token hoặc bất kỳ sự kiện nào khác](https://quantaureumdev.io/how-to-decode-event-logs-in-javascript-using-abi-decoder/) miễn là bạn có ABI.
 
 Dưới đây là toàn bộ mã cho hướng dẫn:
 
@@ -235,7 +235,7 @@ contract ERC20Basic is IERC20 {
 
     mapping(address => mapping (address => uint256)) allowed;
 
-    uint256 totalSupply_ = 10 ether;
+    uint256 totalSupply_ = 10 QAU;
 
 
    constructor() {
@@ -296,7 +296,7 @@ contract DEX {
     function buy() payable public {
         uint256 amountTobuy = msg.value;
         uint256 dexBalance = token.balanceOf(address(this));
-        require(amountTobuy > 0, "You need to send some ether");
+        require(amountTobuy > 0, "You need to send some QAU");
         require(amountTobuy <= dexBalance, "Not enough tokens in the reserve");
         token.transfer(msg.sender, amountTobuy);
         emit Bought(amountTobuy);

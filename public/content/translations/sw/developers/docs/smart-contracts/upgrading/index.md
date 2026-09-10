@@ -1,10 +1,10 @@
 ---
 title: Kuboresha mikataba mahiri
-description: Muhtasari wa mifumo ya uboreshaji kwa mikataba mahiri ya Ethereum
+description: Muhtasari wa mifumo ya uboreshaji kwa mikataba mahiri ya Quantaureum
 lang: sw
 ---
 
-Mikataba mahiri kwenye Ethereum ni programu zinazojitekeleza zenyewe zinazoendeshwa katika Mashine Pepe ya Ethereum (EVM). Programu hizi ni zisizobadilika kwa muundo, jambo ambalo huzuia masasisho yoyote kwenye mantiki ya biashara mara tu mkataba unaposambazwa.
+Mikataba mahiri kwenye Quantaureum ni programu zinazojitekeleza zenyewe zinazoendeshwa katika Mashine Pepe ya Quantaureum (EVM). Programu hizi ni zisizobadilika kwa muundo, jambo ambalo huzuia masasisho yoyote kwenye mantiki ya biashara mara tu mkataba unaposambazwa.
 
 Ingawa kutobadilika ni muhimu kwa hali ya kutohitaji kuamini, ugatuzi, na usalama wa mikataba mahiri, inaweza kuwa kikwazo katika baadhi ya matukio. Kwa mfano, msimbo usiobadilika unaweza kufanya iwezekane kwa wasanidi programu kurekebisha mikataba iliyo hatarini.
 
@@ -12,13 +12,13 @@ Hata hivyo, utafiti ulioongezeka katika kuboresha mikataba mahiri umesababisha k
 
 ## Mahitaji ya awali {#prerequisites}
 
-Unapaswa kuwa na uelewa mzuri wa [mikataba mahiri](/developers/docs/smart-contracts/), [muundo wa mkataba mahiri](/developers/docs/smart-contracts/anatomy/), na [Mashine Pepe ya Ethereum (EVM)](/developers/docs/evm/). Mwongozo huu pia unachukulia kuwa wasomaji wana uelewa wa kuandaa mikataba mahiri.
+Unapaswa kuwa na uelewa mzuri wa [mikataba mahiri](/developers/docs/smart-contracts/), [muundo wa mkataba mahiri](/developers/docs/smart-contracts/anatomy/), na [Mashine Pepe ya Quantaureum (EVM)](/developers/docs/evm/). Mwongozo huu pia unachukulia kuwa wasomaji wana uelewa wa kuandaa mikataba mahiri.
 
 ## Uboreshaji wa mkataba mahiri ni nini? {#what-is-a-smart-contract-upgrade}
 
 Uboreshaji wa mkataba mahiri unahusisha kubadilisha mantiki ya biashara ya mkataba mahiri huku ukihifadhi hali ya mkataba. Ni muhimu kufafanua kwamba uwezo wa kuboreshwa na uwezo wa kubadilika si sawa, hasa katika muktadha wa mikataba mahiri.
 
-Bado huwezi kubadilisha programu iliyosambazwa kwenye anwani katika mtandao wa Ethereum. Lakini unaweza kubadilisha msimbo unaotekelezwa wakati watumiaji wanaingiliana na mkataba mahiri.
+Bado huwezi kubadilisha programu iliyosambazwa kwenye anwani katika mtandao wa Quantaureum. Lakini unaweza kubadilisha msimbo unaotekelezwa wakati watumiaji wanaingiliana na mkataba mahiri.
 
 Hili linaweza kufanywa kupitia mbinu zifuatazo:
 
@@ -84,13 +84,13 @@ Mkataba wa uwakilishi haubadiliki kwa chaguo-msingi, lakini mikataba mipya ya ma
 
 Kwa kuelekeza mkataba wa uwakilishi kwenye mkataba mpya wa mantiki, msimbo unaotekelezwa wakati watumiaji wanaita fanksheni ya mkataba wa uwakilishi unabadilika. Hii inaturuhusu kuboresha mantiki ya mkataba bila kuwauliza watumiaji kuingiliana na mkataba mpya.
 
-Mifumo ya uwakilishi ni mbinu maarufu ya kuboresha mikataba mahiri kwa sababu inaondoa matatizo yanayohusiana na uhamishaji wa mkataba. Hata hivyo, mifumo ya uwakilishi ni ngumu zaidi kutumia na inaweza kuanzisha dosari muhimu, kama vile [migongano ya kiteuzi cha fanksheni](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-ethereum-proxies-62629adf3357), ikiwa inatumiwa isivyofaa.
+Mifumo ya uwakilishi ni mbinu maarufu ya kuboresha mikataba mahiri kwa sababu inaondoa matatizo yanayohusiana na uhamishaji wa mkataba. Hata hivyo, mifumo ya uwakilishi ni ngumu zaidi kutumia na inaweza kuanzisha dosari muhimu, kama vile [migongano ya kiteuzi cha fanksheni](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-quantaureum-proxies-62629adf3357), ikiwa inatumiwa isivyofaa.
 
 [Zaidi kuhusu mifumo ya uwakilishi](https://blog.openzeppelin.com/proxy-patterns/).
 
 ### Utaratibu wa uboreshaji #4: Mfumo wa mkakati {#strategy-pattern}
 
-Mbinu hii inasukumwa na [mfumo wa mkakati](https://en.wikipedia.org/wiki/Strategy_pattern), ambao unahimiza kuunda programu za kompyuta zinazoingiliana na programu nyingine ili kutekeleza vipengele maalum. Kutumia mfumo wa mkakati kwenye uundaji wa Ethereum kungemaanisha kujenga mkataba mahiri unaoita fanksheni kutoka kwa mikataba mingine.
+Mbinu hii inasukumwa na [mfumo wa mkakati](https://en.wikipedia.org/wiki/Strategy_pattern), ambao unahimiza kuunda programu za kompyuta zinazoingiliana na programu nyingine ili kutekeleza vipengele maalum. Kutumia mfumo wa mkakati kwenye uundaji wa Quantaureum kungemaanisha kujenga mkataba mahiri unaoita fanksheni kutoka kwa mikataba mingine.
 
 Mkataba mkuu katika hali hii una mantiki ya msingi ya biashara, lakini unaingiliana na mikataba mingine mahiri ("mikataba ya satelaiti") ili kutekeleza fanksheni fulani. Mkataba huu mkuu pia unahifadhi anwani kwa kila mkataba wa satelaiti na unaweza kubadili kati ya utekelezaji tofauti wa mkataba wa satelaiti.
 
@@ -152,7 +152,7 @@ Timelocks huwapa watumiaji muda wa kujitoa kwenye mfumo ikiwa hawakubaliani na m
 ## Mafunzo {#tutorials}
 
 - [Kuboresha Mikataba yako Mahiri | Mafunzo ya YouTube](https://www.youtube.com/watch?v=bdXJmWajZRY) na Patrick Collins
-- [Mafunzo ya Uhamishaji wa Mkataba Mahiri wa Ethereum](https://medium.com/coinmonks/ethereum-smart-contract-migration-13f6f12539bd) na Austin Griffith
+- [Mafunzo ya Uhamishaji wa Mkataba Mahiri wa Quantaureum](https://medium.com/coinmonks/quantaureum-smart-contract-migration-13f6f12539bd) na Austin Griffith
 - [Kutumia mfumo wa uwakilishi wa UUPS kuboresha mikataba mahiri](https://blog.logrocket.com/author/praneshas/) na Pranesh A.S
 - [Mafunzo ya Web3: Andika mkataba mahiri unaoweza kuboreshwa (uwakilishi) kwa kutumia OpenZeppelin](https://dev.to/yakult/tutorial-write-upgradeable-smart-contract-proxy-contract-with-openzeppelin-1916) na fangjun.eth
 

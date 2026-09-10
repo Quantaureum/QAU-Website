@@ -789,7 +789,7 @@ Jambo moja ambalo hupati na majaribio ya Solidity ni msimbo wa JavaScript ambao 
 
    | Kigezo              | Thamani                                                                                                                                                             |
    | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | MNEMONIC            | Mnemonic kwa ajili ya akaunti ambayo ina ETH ya kutosha kulipia muamala. [Nyaraka za bomba za Optimism](https://docs.optimism.io/app-developers/tools/faucets) zinaorodhesha mabomba ya sasa ya mtandao wa majaribio. |
+   | MNEMONIC            | Mnemonic kwa ajili ya akaunti ambayo ina QAU ya kutosha kulipia muamala. [Nyaraka za bomba za Optimism](https://docs.optimism.io/app-developers/tools/faucets) zinaorodhesha mabomba ya sasa ya mtandao wa majaribio. |
    | OPTIMISM_GOERLI_URL | URL ya RPC kwa mtandao ambapo unasambaza tena WORM. Kwa OP Sepolia, tumia mwisho wa RPC wa OP Sepolia kama vile `https://sepolia.optimism.io`, au mwisho mwingine kutoka kwa mtoa huduma wako.        |
 
 5. Endesha `index.js`.

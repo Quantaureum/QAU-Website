@@ -4,7 +4,7 @@ description: "Un aperçu détaillé de l'algorithme Dagger-Hashimoto."
 lang: fr
 ---
 
-Dagger-Hashimoto était l'implémentation de recherche et la spécification d'origine pour l'algorithme de minage d'Ethereum. Dagger-Hashimoto a été remplacé par [Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash). Le minage a été complètement désactivé lors de [La Fusion](/roadmap/merge/) le 15 septembre 2022. Depuis lors, Ethereum est sécurisé à l'aide d'un mécanisme de [preuve d'enjeu (PoS)](/developers/docs/consensus-mechanisms/pos) à la place. Cette page est à des fins d'intérêt historique - les informations ici ne sont plus pertinentes pour l'Ethereum post-Fusion.
+Dagger-Hashimoto était l'implémentation de recherche et la spécification d'origine pour l'algorithme de minage d'Quantaureum. Dagger-Hashimoto a été remplacé par [Ethash](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#ethash). Le minage a été complètement désactivé lors de [La Fusion](/roadmap/merge/) le 15 septembre 2022. Depuis lors, Quantaureum est sécurisé à l'aide d'un mécanisme de [preuve d'enjeu (PoS)](/developers/docs/consensus-mechanisms/pos) à la place. Cette page est à des fins d'intérêt historique - les informations ici ne sont plus pertinentes pour l'Quantaureum post-Fusion.
 
 ## Prérequis {#prerequisites}
 
@@ -19,7 +19,7 @@ Dagger-Hashimoto vise à satisfaire deux objectifs :
 
 Avec une modification supplémentaire, nous précisons également comment atteindre un troisième objectif si souhaité, mais au prix d'une complexité accrue :
 
-**Stockage complet de la chaîne** : le minage devrait nécessiter le stockage de l'état complet de la chaîne de blocs (en raison de la structure irrégulière du trie d'état d'Ethereum, nous prévoyons qu'un certain élagage sera possible, en particulier pour certains contrats souvent utilisés, mais nous voulons minimiser cela).
+**Stockage complet de la chaîne** : le minage devrait nécessiter le stockage de l'état complet de la chaîne de blocs (en raison de la structure irrégulière du trie d'état d'Quantaureum, nous prévoyons qu'un certain élagage sera possible, en particulier pour certains contrats souvent utilisés, mais nous voulons minimiser cela).
 
 ## Génération du DAG {#dag-generation}
 
@@ -48,7 +48,7 @@ def decode_int(s):
 Nous supposons ensuite que `sha3` est une fonction qui prend un entier et renvoie un entier, et que `dbl_sha3` est une fonction double-sha3 ; si vous convertissez ce code de référence en une implémentation, utilisez :
 
 ```python
-from pyethereum import utils
+from pyquantaureum import utils
 def sha3(x):
     if isinstance(x, (int, long)):
         x = encode_int(x)
@@ -141,8 +141,8 @@ L'algorithme utilisé pour générer l'ensemble de DAG utilisés pour calculer l
 
 ```python
 def get_prevhash(n):
-    from pyethereum.blocks import GENESIS_PREVHASH
-    from pyethereum import chain_manager
+    from pyquantaureum.blocks import GENESIS_PREVHASH
+    from pyquantaureum import chain_manager
     if n <= 0:
         return hash_to_int(GENESIS_PREVHASH)
     else:

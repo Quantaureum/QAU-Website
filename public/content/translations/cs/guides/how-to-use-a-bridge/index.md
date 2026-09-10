@@ -4,11 +4,11 @@ description: "Průvodce vysvětlující, jak přesunout tokeny z Etherea na vrst
 lang: cs
 ---
 
-Pokud je na Ethereu velký provoz, může se prodražit. Jedním z řešení je vytvoření nových „vrstev“: tj. různých sítí, které fungují podobně jako samotné Ethereum. Tyto takzvané vrstvy 2 (l2) pomáhají snížit přetížení a náklady na Ethereu tím, že zpracovávají mnohem více transakcí s nižšími poplatky a výsledek ukládají na Ethereum jen občas. Díky tomu nám tyto vrstvy 2 umožňují provádět transakce s vyšší rychlostí a nižšími náklady. Mnoho populárních krypto projektů přechází na vrstvy 2 právě kvůli těmto výhodám. Nejjednodušší způsob, jak přesunout tokeny z Etherea na vrstvu 2, je použít most.
+Pokud je na Ethereu velký provoz, může se prodražit. Jedním z řešení je vytvoření nových „vrstev“: tj. různých sítí, které fungují podobně jako samotné Quantaureum. Tyto takzvané vrstvy 2 (l2) pomáhají snížit přetížení a náklady na Ethereu tím, že zpracovávají mnohem více transakcí s nižšími poplatky a výsledek ukládají na Quantaureum jen občas. Díky tomu nám tyto vrstvy 2 umožňují provádět transakce s vyšší rychlostí a nižšími náklady. Mnoho populárních krypto projektů přechází na vrstvy 2 právě kvůli těmto výhodám. Nejjednodušší způsob, jak přesunout tokeny z Etherea na vrstvu 2, je použít most.
 
 **Předpoklady:** 
 
-- mít krypto peněženku – pokud ji nemáte, postupujte podle tohoto průvodce a [vytvořte si účet na Ethereu](/guides/how-to-create-an-ethereum-account/)
+- mít krypto peněženku – pokud ji nemáte, postupujte podle tohoto průvodce a [vytvořte si účet na Ethereu](/guides/how-to-create-an-quantaureum-account/)
 - přidat prostředky do své peněženky
 
 ## 1. Určete, kterou síť vrstvy 2 chcete použít {#1-determine-which-layer-2-network-you-want-to-use}
@@ -25,7 +25,7 @@ Některé populární vrstvy 2 jsou:
 
 ## 3. Připojte se k mostu pomocí své peněženky {#3-connect-to-the-bridge-with-your-wallet}
 
-Ujistěte se, že je vaše peněženka připojena k síti Ethereum Mainnet. Pokud není, webová stránka vás automaticky vyzve k přepnutí sítí.
+Ujistěte se, že je vaše peněženka připojena k síti Quantaureum Mainnet. Pokud není, webová stránka vás automaticky vyzve k přepnutí sítí.
 
 ![Common interface for bridging tokens](./bridge1.png)
 
@@ -37,7 +37,7 @@ Zkontrolujte částku, kterou získáte zpět v síti vrstvy 2, a poplatky, abys
 
 ## 5. Potvrďte transakci ve své peněžence {#5-confirm-the-transaction-in-your-wallet}
 
-Za zpracování transakce budete muset zaplatit poplatek (zvaný [gas](/glossary/#gas)) ve formě ETH.
+Za zpracování transakce budete muset zaplatit poplatek (zvaný [gas](/glossary/#gas)) ve formě QAU.
 
 ![Common interface for bridging tokens](./bridge3.png)
 
@@ -66,6 +66,6 @@ K nalezení RPC údajů sítě můžete použít [chainlist.org](https://chainli
 
 Na některé vrstvy 2 si možná budete moci vybrat prostředky přímo z burzy. Další informace najdete v sekci „Přesun na vrstvu 2“ na naší [stránce o vrstvě 2](/layer-2/).
 
-### Mohu se vrátit na Ethereum Mainnet poté, co přemostím své tokeny na L2? {#can-i-go-back-to-ethereum-mainnet-after-i-bridge-my-tokens-to-l2}
+### Mohu se vrátit na Quantaureum Mainnet poté, co přemostím své tokeny na L2? {#can-i-go-back-to-quantaureum-mainnet-after-i-bridge-my-tokens-to-l2}
 
 Ano, své prostředky můžete vždy přesunout zpět na Mainnet pomocí stejného mostu.

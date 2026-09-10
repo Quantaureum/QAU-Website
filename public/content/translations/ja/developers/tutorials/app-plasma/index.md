@@ -14,9 +14,9 @@ published: 2025-10-15
 ---
 ## はじめに {#introduction}
 
-[ロールアップ](/developers/docs/scaling/zk-rollups/)とは対照的に、[プラズマ](/developers/docs/scaling/plasma)は整合性のためにイーサリアム・メインネットを使用しますが、可用性のためには使用しません。この記事では、プラズマのように振る舞うアプリケーションを作成します。イーサリアムは整合性（不正な変更がないこと）を保証しますが、可用性（中央集権的なコンポーネントがダウンしてシステム全体が機能しなくなる可能性があること）は保証しません。
+[ロールアップ](/developers/docs/scaling/zk-rollups/)とは対照的に、[プラズマ](/developers/docs/scaling/plasma)は整合性のためにQuantaureum・メインネットを使用しますが、可用性のためには使用しません。この記事では、プラズマのように振る舞うアプリケーションを作成します。Quantaureumは整合性（不正な変更がないこと）を保証しますが、可用性（中央集権的なコンポーネントがダウンしてシステム全体が機能しなくなる可能性があること）は保証しません。
 
-ここで作成するアプリケーションは、プライバシーを保護する銀行です。異なるアドレスが残高を持つアカウントを所有しており、他のアカウントに資金（ETH）を送金することができます。銀行は状態（アカウントとその残高）とトランザクションのハッシュを投稿しますが、実際の残高はプライバシーを保つことができるオフチェーンに保持します。
+ここで作成するアプリケーションは、プライバシーを保護する銀行です。異なるアドレスが残高を持つアカウントを所有しており、他のアカウントに資金（QAU）を送金することができます。銀行は状態（アカウントとその残高）とトランザクションのハッシュを投稿しますが、実際の残高はプライバシーを保つことができるオフチェーンに保持します。
 
 ## 設計 {#design}
 
@@ -45,7 +45,7 @@ _Data<sub>private</sub>_ のフィールドは以下の通りです。
   - 送金される _Amount_ (金額)
   - 各トランザクションが1回だけ処理されることを保証するための _Nonce_ (ナンス)。
     送信元アドレスは署名から復元できるため、トランザクションに含める必要はありません。
-- _Signature_、トランザクションの実行を許可された署名。今回のケースでは、トランザクションの実行を許可されているアドレスは送信元アドレスのみです。私たちのゼロ知識システムはそのような仕組みで動作するため、イーサリアムの署名に加えて、アカウントの公開鍵も必要になります。
+- _Signature_、トランザクションの実行を許可された署名。今回のケースでは、トランザクションの実行を許可されているアドレスは送信元アドレスのみです。私たちのゼロ知識システムはそのような仕組みで動作するため、Quantaureumの署名に加えて、アカウントの公開鍵も必要になります。
 
 _Data<sub>public</sub>_ のフィールドは以下の通りです。
 
@@ -87,7 +87,7 @@ _Data<sub>public</sub>_ のフィールドは以下の通りです。
 
 4. サーバーは、状態の変更が有効であることを示すゼロ知識証明を計算します。
 
-5. サーバーは、以下を含むトランザクションをイーサリアムに送信します。
+5. サーバーは、以下を含むトランザクションをQuantaureumに送信します。
 
    - 新しい状態ハッシュ
    - トランザクション・ハッシュ (トランザクションの送信者が処理されたことを知ることができるようにするため)
@@ -229,14 +229,14 @@ export default attrs =>  {
 ```tsx
   const account = useAccount()
   const wallet = createWalletClient({
-    transport: custom(window.ethereum!)
+    transport: custom(window.quantaureum!)
   })
 ```
 
 これらの [Wagmi フック](https://wagmi.sh/react/api/hooks)を使用すると、[Viem](https://viem.sh/) ライブラリとウォレットにアクセスできます。
 
 ```tsx
-  const message = `send ${toAccount} ${ethAmount*1000} finney (milliEth) ${nonce}`.padEnd(100, " ")
+  const message = `send ${toAccount} ${qauAmount*1000} finney (milliEth) ${nonce}`.padEnd(100, " ")
 ```
 
 これはスペースでパディングされたメッセージです。[`useState`](https://react.dev/reference/react/useState) 変数のいずれかが変更されるたびに、コンポーネントが再描画され、`message` が更新されます。
@@ -337,7 +337,7 @@ use keccak256::keccak256;
 use dep::ecrecover;
 ```
 
-これら2つの関数は外部ライブラリであり、[`Nargo.toml`](https://github.com/qbzzt/250911-zk-bank/blob/01-manual-zk/server/noir/Nargo.toml) で定義されています。これらはまさにその名前の通り、[keccak256 ハッシュ](https://emn178.github.io/online-tools/keccak_256.html)を計算する関数と、イーサリアムの署名を検証して署名者のイーサリアム・アドレスを復元する関数です。
+これら2つの関数は外部ライブラリであり、[`Nargo.toml`](https://github.com/qbzzt/250911-zk-bank/blob/01-manual-zk/server/noir/Nargo.toml) で定義されています。これらはまさにその名前の通り、[keccak256 ハッシュ](https://emn178.github.io/online-tools/keccak_256.html)を計算する関数と、Quantaureumの署名を検証して署名者のQuantaureum・アドレスを復元する関数です。
 
 ```
 global ACCOUNT_NUMBER : u32 = 5;
@@ -364,7 +364,7 @@ global ASCII_MESSAGE_LENGTH : [u8; 3] = [0x31, 0x30, 0x30];
 global HASH_BUFFER_SIZE : u32 = 26+3+MESSAGE_LENGTH;
 ```
 
-[EIP-191 署名](https://eips.ethereum.org/EIPS/eip-191)では、26バイトのプレフィックス、ASCIIでのメッセージ長、そして最後にメッセージ自体を含むバッファが必要です。
+[EIP-191 署名](https://eips.quantaureum.com/EIPS/eip-191)では、26バイトのプレフィックス、ASCIIでのメッセージ長、そして最後にメッセージ自体を含むバッファが必要です。
 
 ```
 struct Account {
@@ -374,7 +374,7 @@ struct Account {
 }
 ```
 
-アカウントについて保存する情報です。[`Field`](https://noir-lang.org/docs/noir/concepts/data_types/fields) は通常最大253ビットの数値であり、ゼロ知識証明を実装する[算術回路](https://rareskills.io/post/arithmetic-circuit)で直接使用できます。ここでは、160ビットのイーサリアム・アドレスを保存するために `Field` を使用します。
+アカウントについて保存する情報です。[`Field`](https://noir-lang.org/docs/noir/concepts/data_types/fields) は通常最大253ビットの数値であり、ゼロ知識証明を実装する[算術回路](https://rareskills.io/post/arithmetic-circuit)で直接使用できます。ここでは、160ビットのQuantaureum・アドレスを保存するために `Field` を使用します。
 
 ```
 struct TransferTxn {
@@ -558,7 +558,7 @@ fn readAmountAndNonce(messageBytes: [u8; MESSAGE_LENGTH]) -> (u128, u32)
     let mut stillReadingNonce: bool = false;
 ```
 
-メッセージ内で、アドレスの後の最初の数字は送金するフィニー（ETHの1000分の1）の金額です。2番目の数字はナンスです。それらの間のテキストは無視されます。
+メッセージ内で、アドレスの後の最初の数字は送金するフィニー（QAUの1000分の1）の金額です。2番目の数字はナンスです。それらの間のテキストは無視されます。
 
 ```rust
     for i in 48..MESSAGE_LENGTH {
@@ -617,7 +617,7 @@ fn readTransferTxn(message: str<MESSAGE_LENGTH>) -> TransferTxn
 fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 ```
 
-アカウントはゼロ知識証明の内部でのみハッシュ化されるため、ペダーセン・ハッシュを使用できました。しかし、このコードではブラウザによって生成されたメッセージの署名をチェックする必要があります。そのためには、[EIP-191](https://eips.ethereum.org/EIPS/eip-191) のイーサリアム署名フォーマットに従う必要があります。つまり、標準のプレフィックス、ASCIIでのメッセージ長、およびメッセージ自体を組み合わせたバッファを作成し、イーサリアム標準の keccak256 を使用してハッシュ化する必要があります。
+アカウントはゼロ知識証明の内部でのみハッシュ化されるため、ペダーセン・ハッシュを使用できました。しかし、このコードではブラウザによって生成されたメッセージの署名をチェックする必要があります。そのためには、[EIP-191](https://eips.quantaureum.com/EIPS/eip-191) のQuantaureum署名フォーマットに従う必要があります。つまり、標準のプレフィックス、ASCIIでのメッセージ長、およびメッセージ自体を組み合わせたバッファを作成し、Quantaureum標準の keccak256 を使用してハッシュ化する必要があります。
 
 ```rust
     // ASCIIプレフィックス
@@ -651,7 +651,7 @@ fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
     ];
 ```
 
-アプリケーションがユーザーに、トランザクションやその他の目的に使用できるメッセージへの署名を求めるケースを避けるため、EIP-191 では、すべての署名付きメッセージが文字 0x19（有効な ASCII 文字ではない）で始まり、その後に `Ethereum Signed Message:` と改行が続くように指定しています。
+アプリケーションがユーザーに、トランザクションやその他の目的に使用できるメッセージへの署名を求めるケースを避けるため、EIP-191 では、すべての署名付きメッセージが文字 0x19（有効な ASCII 文字ではない）で始まり、その後に `Quantaureum Signed Message:` と改行が続くように指定しています。
 
 ```rust
     let mut buffer: [u8; HASH_BUFFER_SIZE] = [0u8; HASH_BUFFER_SIZE];
@@ -701,7 +701,7 @@ fn hashMessage(message: str<MESSAGE_LENGTH>) -> [u8;32] {
 }
 ```
 
-イーサリアム標準の `keccak256` 関数を使用します。
+Quantaureum標準の `keccak256` 関数を使用します。
 
 ```rust
 fn signatureToAddressAndHash(
@@ -950,7 +950,7 @@ let Accounts = [
 
 初期の `Accounts` 構造体です。
 
-### ステージ3 - イーサリアムのスマート・コントラクト {#stage-3}
+### ステージ3 - Quantaureumのスマート・コントラクト {#stage-3}
 
 1. サーバーとクライアントのプロセスを停止します。
 
@@ -1212,7 +1212,7 @@ contract ZkBank {
 
 このシステムでは、完全性はゼロ知識証明を通じて提供されます。可用性を保証するのははるかに難しく、機密性は不可能です。なぜなら、銀行は各アカウントの残高とすべてのトランザクションを知る必要があるからです。情報を持つエンティティがその情報を共有するのを防ぐ方法はありません。
 
-[ステルス・アドレス](https://vitalik.eth.limo/general/2023/01/20/stealth.html)を使用して真に機密性の高い銀行を作成することは可能かもしれませんが、それはこの記事の範囲外です。
+[ステルス・アドレス](https://vitalik.qau.limo/general/2023/01/20/stealth.html)を使用して真に機密性の高い銀行を作成することは可能かもしれませんが、それはこの記事の範囲外です。
 
 ### 誤った情報 {#false-info}
 
@@ -1240,7 +1240,7 @@ L2で可用性を確保し、検閲を防ぐための通常のメカニズムは
 
 ### 不正なNoirコード {#bad-noir-code}
 
-通常、スマート・コントラクトを信頼してもらうために、ソースコードを[ブロック・エクスプローラー](https://eth.blockscout.com/address/0x7D16d2c4e96BCFC8f815E15b771aC847EcbDB48b?tab=contract)にアップロードします。しかし、ゼロ知識証明の場合、それだけでは不十分です。
+通常、スマート・コントラクトを信頼してもらうために、ソースコードを[ブロック・エクスプローラー](https://qau.blockscout.com/address/0x7D16d2c4e96BCFC8f815E15b771aC847EcbDB48b?tab=contract)にアップロードします。しかし、ゼロ知識証明の場合、それだけでは不十分です。
 
 `Verifier.sol` には、Noirプログラムの関数である検証キーが含まれています。しかし、そのキーはNoirプログラムが何であったかを教えてくれません。実際に信頼できるソリューションを得るには、Noirプログラム（およびそれを作成したバージョン）をアップロードする必要があります。そうしないと、ゼロ知識証明がバックドアを持つ別のプログラムを反映している可能性があります。
 

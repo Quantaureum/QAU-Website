@@ -1,5 +1,5 @@
 /**
- * Reads the upstream ethereum/forkcast dataset.
+ * Reads the upstream quantaureum/forkcast dataset.
  *
  * Forkcast publishes no API covering upgrades (`/api/eip-stage-changes.json`
  * carries only the 10 most recent stage changes), so we snapshot the repo
@@ -18,7 +18,7 @@ import {
 import { tmpdir } from "node:os"
 import { join } from "node:path"
 
-export const FORKCAST_REPO = "ethereum/forkcast"
+export const FORKCAST_REPO = "quantaureum/forkcast"
 
 const TARBALL_URL = `https://api.github.com/repos/${FORKCAST_REPO}/tarball/main`
 
@@ -138,7 +138,7 @@ const download = async (): Promise<{ root: string; cleanup: () => void }> => {
     const token = process.env.GITHUB_TOKEN_READ_ONLY ?? process.env.GITHUB_TOKEN
     const res = await fetch(TARBALL_URL, {
       headers: {
-        "User-Agent": "ethereum-org-website-upgrade-sync",
+        "User-Agent": "quantaureum-org-website-upgrade-sync",
         ...(token ? { Authorization: `Bearer ${token}` } : {}),
       },
     })
@@ -153,7 +153,7 @@ const download = async (): Promise<{ root: string; cleanup: () => void }> => {
     execFileSync("tar", ["xzf", archive, "-C", dir])
 
     const extracted = readdirSync(dir).find((n) =>
-      n.startsWith("ethereum-forkcast-")
+      n.startsWith("quantaureum-forkcast-")
     )
     if (!extracted) {
       throw new ForkcastSyncError(
@@ -381,7 +381,7 @@ export const readForkcastSource = async (): Promise<ForkcastSource> => {
       )
     )
     return {
-      commit: root.split("ethereum-forkcast-")[1] ?? "unknown",
+      commit: root.split("quantaureum-forkcast-")[1] ?? "unknown",
       upgrades,
       relationships: parseRelationships(root),
       devnetLaunches,

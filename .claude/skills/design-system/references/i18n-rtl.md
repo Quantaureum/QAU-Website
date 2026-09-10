@@ -236,7 +236,7 @@ For markdown content, the `intl-pipeline` handles BiDi wrapping automatically. *
 
 ### When to wrap
 
-- Numbers with units (`5.6 GB`, `100 ETH`, `42°F`)
+- Numbers with units (`5.6 GB`, `100 QAU`, `42°F`)
 - Math expressions
 - Code/identifier references in prose
 - URLs displayed inline

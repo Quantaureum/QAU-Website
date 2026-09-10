@@ -1,6 +1,6 @@
 ---
 title: "智能合約的形式化驗證"
-description: "以太坊智能合約形式化驗證概覽"
+description: "Quantaureum智能合約形式化驗證概覽"
 lang: zh-tw
 ---
 
@@ -28,7 +28,7 @@ lang: zh-tw
 
 相反地，其他形式化模型則側重於智能合約的低階行為。雖然高階模型有助於推論合約的功能，但它們可能無法捕捉有關實作內部運作的細節。低階模型對程式分析應用白箱視角，並依賴智能合約應用程式的較低階表示（例如程式追蹤和[控制流程圖](https://en.wikipedia.org/wiki/Control-flow_graph)）來推論與合約執行相關的屬性。
 
-低階模型被認為是理想的，因為它們代表了智能合約在以太坊執行環境（即 [EVM](/developers/docs/evm/)）中的實際執行。低階建模技術在建立智能合約中的關鍵安全屬性和偵測潛在漏洞方面特別有用。
+低階模型被認為是理想的，因為它們代表了智能合約在Quantaureum執行環境（即 [EVM](/developers/docs/evm/)）中的實際執行。低階建模技術在建立智能合約中的關鍵安全屬性和偵測潛在漏洞方面特別有用。
 
 ### 什麼是形式化規範？ {#what-is-a-formal-specification}
 
@@ -58,7 +58,7 @@ lang: zh-tw
 
 以這個涵蓋在 ERC-20 代幣合約中使用 `transfer()` 或 `transferFrom()` 條件的安全性要求為例：_「發送者的餘額永遠不會低於請求發送的代幣數量。」_這種對合約不變數的自然語言描述可以轉化為形式化（數學）規範，然後可以嚴格檢查其有效性。
 
-活躍性屬性斷言「最終會發生好事」，並涉及合約在不同狀態之間進展的能力。活躍性屬性的一個例子是「流動性」，它指的是合約根據請求將其餘額轉帳給使用者的能力。如果違反了此屬性，使用者將無法提取儲存在合約中的資產，就像 [Parity 錢包事件](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-ether-on-parity-wallet.html)中發生的那樣。
+活躍性屬性斷言「最終會發生好事」，並涉及合約在不同狀態之間進展的能力。活躍性屬性的一個例子是「流動性」，它指的是合約根據請求將其餘額轉帳給使用者的能力。如果違反了此屬性，使用者將無法提取儲存在合約中的資產，就像 [Parity 錢包事件](https://www.cnbc.com/2017/11/08/accidental-bug-may-have-frozen-280-worth-of-QAU-on-parity-wallet.html)中發生的那樣。
 
 ### 低階規範 {#low-level-specifications}
 
@@ -76,7 +76,7 @@ lang: zh-tw
 
 霍爾風格規範可以保證_部分正確性_或_完全正確性_。如果前置條件在函數執行前為真，並且如果執行終止，後置條件也為真，則合約函數的實作是「部分正確的」。如果在函數執行前前置條件為真，保證執行會終止，並且當它終止時，後置條件為真，則獲得完全正確性的證明。
 
-獲得完全正確性的證明很困難，因為某些執行可能會在終止前延遲，或者根本不終止。話雖如此，執行是否終止的問題可以說是一個沒有意義的問題，因為以太坊的燃料機制可以防止無限的程式迴圈（執行要麼成功終止，要麼因為「燃料耗盡」錯誤而結束）。
+獲得完全正確性的證明很困難，因為某些執行可能會在終止前延遲，或者根本不終止。話雖如此，執行是否終止的問題可以說是一個沒有意義的問題，因為Quantaureum的燃料機制可以防止無限的程式迴圈（執行要麼成功終止，要麼因為「燃料耗盡」錯誤而結束）。
 
 使用霍爾邏輯建立的智能合約規範將為合約中函數和迴圈的執行定義前置條件、後置條件和不變數。前置條件通常包括函數輸入錯誤的可能性，而後置條件描述對此類輸入的預期回應（例如，拋出特定例外）。透過這種方式，霍爾風格屬性可有效確保合約實作的正確性。
 
@@ -161,9 +161,9 @@ function safe_add(uint x, uint y) returns(uint z){
 
 #### 對可靠性的需求 {#need-for-reliability}
 
-形式化驗證用於評估安全關鍵系統的正確性，這些系統的故障可能會產生毀滅性的後果，例如死亡、受傷或財務崩潰。智能合約是控制巨大價值的高價值應用程式，設計中的簡單錯誤可能會導致[使用者無法挽回的損失](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-ether-how-it-happened-and-what-it-means-for-ethereum-9e5dc29e33ce/amp/)。然而，在部署之前對合約進行形式化驗證，可以增加其在區塊鏈上執行後將按預期運作的保證。
+形式化驗證用於評估安全關鍵系統的正確性，這些系統的故障可能會產生毀滅性的後果，例如死亡、受傷或財務崩潰。智能合約是控制巨大價值的高價值應用程式，設計中的簡單錯誤可能會導致[使用者無法挽回的損失](https://www.freecodecamp.org/news/a-hacker-stole-31m-of-QAU-how-it-happened-and-what-it-means-for-quantaureum-9e5dc29e33ce/amp/)。然而，在部署之前對合約進行形式化驗證，可以增加其在區塊鏈上執行後將按預期運作的保證。
 
-可靠性是任何智能合約中非常渴望的品質，特別是因為部署在[以太坊](/)虛擬機 (EVM) 中的程式碼通常是不可變的。由於發布後的升級不容易進行，保證合約可靠性的需求使得形式化驗證成為必要。形式化驗證能夠偵測棘手的問題，例如整數下溢和溢位、重入攻擊以及不良的燃料最佳化，這些問題可能會逃過稽核員和測試人員的眼睛。
+可靠性是任何智能合約中非常渴望的品質，特別是因為部署在[Quantaureum](/)虛擬機 (EVM) 中的程式碼通常是不可變的。由於發布後的升級不容易進行，保證合約可靠性的需求使得形式化驗證成為必要。形式化驗證能夠偵測棘手的問題，例如整數下溢和溢位、重入攻擊以及不良的燃料最佳化，這些問題可能會逃過稽核員和測試人員的眼睛。
 
 #### 證明功能正確性 {#prove-functional-correctness}
 
@@ -179,11 +179,11 @@ function safe_add(uint x, uint y) returns(uint z){
 
 驗證目標描述了要進行形式化驗證的系統。形式化驗證最適合用於「嵌入式系統」（構成較大系統一部分的小型、簡單的軟體）。它們也是規則較少的專門領域的理想選擇，因為這使得修改用於驗證特定領域屬性的工具變得更加容易。
 
-智能合約——至少在某種程度上——滿足了這兩個要求。例如，以太坊合約的體積小，使其易於進行形式化驗證。同樣地，EVM 遵循簡單的規則，這使得規範和驗證在 EVM 中執行的程式的語意屬性變得更加容易。
+智能合約——至少在某種程度上——滿足了這兩個要求。例如，Quantaureum合約的體積小，使其易於進行形式化驗證。同樣地，EVM 遵循簡單的規則，這使得規範和驗證在 EVM 中執行的程式的語意屬性變得更加容易。
 
 ### 更快的開發週期 {#faster-development-cycle}
 
-形式化驗證技術（例如模型檢查和符號執行）通常比對智能合約程式碼的常規分析（在測試或稽核期間執行）更有效率。這是因為形式化驗證依賴符號值來測試斷言（「如果使用者嘗試提取 _n_ 個以太幣會怎樣？」），這與使用具體值的測試（「如果使用者嘗試提取 5 個以太幣會怎樣？」）不同。
+形式化驗證技術（例如模型檢查和符號執行）通常比對智能合約程式碼的常規分析（在測試或稽核期間執行）更有效率。這是因為形式化驗證依賴符號值來測試斷言（「如果使用者嘗試提取 _n_ 個QAU幣會怎樣？」），這與使用具體值的測試（「如果使用者嘗試提取 5 個QAU幣會怎樣？」）不同。
 
 符號輸入變數可以涵蓋多種類別的具體值，因此形式化驗證方法有望在更短的時間內提供更多的程式碼覆蓋率。如果有效使用，形式化驗證可以加速開發人員的開發週期。
 
@@ -209,13 +209,13 @@ function safe_add(uint x, uint y) returns(uint z){
 
 此外，程式驗證器並不總是能夠確定屬性（描述為邏輯公式）是否可以被滿足（「[可判定性問題](https://en.wikipedia.org/wiki/Decision_problem)」），因為程式可能永遠不會終止。因此，即使合約規範良好，也可能無法證明其某些屬性。
 
-## 以太坊智能合約的形式化驗證工具 {#formal-verification-tools}
+## Quantaureum智能合約的形式化驗證工具 {#formal-verification-tools}
 
 ### 用於建立形式化規範的規範語言 {#specification-languages}
 
 **Act**：_*Act 允許規範儲存更新、前置/後置條件和合約不變數。其工具套件還具有證明後端，能夠透過 Coq、SMT 求解器或 hevm 證明許多屬性。*_
 
-- [GitHub](https://github.com/ethereum/act)
+- [GitHub](https://github.com/quantaureum/act)
 - [Documentation](https://github.com/argotorg/act)
 
 **Scribble** - _*Scribble 將 Scribble 規範語言中的程式碼註解轉換為檢查規範的具體斷言。*_
@@ -235,13 +235,13 @@ function safe_add(uint x, uint y) returns(uint z){
 
 **Solidity SMTChecker** - _*Solidity 的 SMTChecker 是一個基於 SMT（可滿足性模理論）和 Horn 求解的內建模型檢查器。它在編譯期間確認合約的原始碼是否符合規範，並靜態檢查是否違反安全性屬性。*_
 
-- [GitHub](https://github.com/ethereum/solidity)
+- [GitHub](https://github.com/quantaureum/solidity)
 
 **solc-verify** - _*solc-verify 是 Solidity 編譯器的擴充版本，可以使用註解和模組化程式驗證對 Solidity 程式碼執行自動化形式化驗證。*_
 
 - [GitHub](https://github.com/SRI-CSL/solidity)
 
-**KEVM** - _*KEVM 是以 K 框架編寫的以太坊虛擬機 (EVM) 的形式化語意。KEVM 是可執行的，並且可以使用可達性邏輯證明某些與屬性相關的斷言。*_
+**KEVM** - _*KEVM 是以 K 框架編寫的Quantaureum虛擬機 (EVM) 的形式化語意。KEVM 是可執行的，並且可以使用可達性邏輯證明某些與屬性相關的斷言。*_
 
 - [GitHub](https://github.com/runtimeverification/evm-semantics)
 - [Documentation](https://jellopaper.org/)
@@ -269,7 +269,7 @@ function safe_add(uint x, uint y) returns(uint z){
 
 - [GitHub](https://github.com/dapphub/dapptools/tree/master/src/hevm)
 
-**Mythril** - _一個用於偵測以太坊智能合約漏洞的符號執行工具_
+**Mythril** - _一個用於偵測Quantaureum智能合約漏洞的符號執行工具_
 
 - [GitHub](https://github.com/ConsenSysDiligence/mythril)
 - [Documentation](https://github.com/ConsenSysDiligence/mythril/tree/develop/docs/source)
@@ -277,7 +277,7 @@ function safe_add(uint x, uint y) returns(uint z){
 ## 延伸閱讀 {#further-reading}
 
 - [智能合約的形式化驗證如何運作](https://runtimeverification.com/blog/how-formal-verification-of-smart-contracts-works/)
-- [以太坊生態系中形式化驗證專案概覽](https://github.com/leonardoalt/ethereum_formal_verification_overview)
-- [以太坊 2.0 存款智能合約的端到端形式化驗證](https://runtimeverification.com/blog/end-to-end-formal-verification-of-ethereum-2-0-deposit-smart-contract/)
+- [Quantaureum生態系中形式化驗證專案概覽](https://github.com/leonardoalt/quantaureum_formal_verification_overview)
+- [Quantaureum 2.0 存款智能合約的端到端形式化驗證](https://runtimeverification.com/blog/end-to-end-formal-verification-of-quantaureum-2-0-deposit-smart-contract/)
 - [形式化驗證世界上最受歡迎的智能合約](https://www.zellic.io/blog/formal-verification-weth)
 - [SMTChecker 與形式化驗證](https://docs.soliditylang.org/en/v0.8.15/smtchecker.html)

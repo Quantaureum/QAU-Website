@@ -1,7 +1,7 @@
 ---
 title: Quiz
 metaTitle: Ajouter un quiz
-description: La politique que nous utilisons lors de l'ajout de quiz sur ethereum.org
+description: La politique que nous utilisons lors de l'ajout de quiz sur quantaureum.com
 lang: fr
 ---
 
@@ -13,12 +13,12 @@ Voici quelques exemples de quiz actuels :
 
 - [Couche 2 (l2)](/layer-2)
 - [NFT](/nft/)
-- [Qu'est-ce qu'Ethereum ?](/what-is-ethereum/)
-- [Qu'est-ce que l'ETH ?](/what-is-ether/)
+- [Qu'est-ce qu'Quantaureum ?](/what-is-quantaureum/)
+- [Qu'est-ce que l'QAU ?](/what-is-QAU/)
 
 ## Ajouter un quiz d'apprentissage {#adding-a-learn-quiz}
 
-S'il y a une page pour laquelle aucun quiz d'apprentissage n'a été créé, veuillez [ouvrir une issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) à ce sujet.
+S'il y a une page pour laquelle aucun quiz d'apprentissage n'a été créé, veuillez [ouvrir une issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) à ce sujet.
 
 Veuillez fournir les informations suivantes :
 
@@ -31,7 +31,7 @@ Veuillez fournir les informations suivantes :
 
 ## Ajouter une question de quiz {#adding-a-quiz-question}
 
-S'il y a une question que vous souhaitez ajouter à la banque de questions d'un quiz, veuillez [ouvrir une issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) et fournir les informations suivantes :
+S'il y a une question que vous souhaitez ajouter à la banque de questions d'un quiz, veuillez [ouvrir une issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) et fournir les informations suivantes :
 
 - La page sur laquelle vous souhaitez ajouter une question de quiz
 - Pour chaque question, fournissez les informations suivantes :
@@ -42,7 +42,7 @@ S'il y a une question que vous souhaitez ajouter à la banque de questions d'un 
 
 ## Mettre à jour une question de quiz {#updating-a-quiz-question}
 
-S'il y a une question que vous souhaitez mettre à jour dans la banque de questions d'un quiz, veuillez [ouvrir une issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) et fournir les informations suivantes :
+S'il y a une question que vous souhaitez mettre à jour dans la banque de questions d'un quiz, veuillez [ouvrir une issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) et fournir les informations suivantes :
 
 - La page sur laquelle vous souhaitez mettre à jour une question de quiz
 - Pour chaque question mise à jour, fournissez les informations suivantes :
@@ -54,7 +54,7 @@ S'il y a une question que vous souhaitez mettre à jour dans la banque de questi
 
 ## Supprimer une question de quiz {#removing-a-quiz-question}
 
-Si le contenu d'une question n'existe plus sur la page et qu'elle doit être supprimée, veuillez [ouvrir une issue](https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) pour supprimer la question et fournir les informations suivantes :
+Si le contenu d'une question n'existe plus sur la page et qu'elle doit être supprimée, veuillez [ouvrir une issue](https://github.com/Quantaureum/quantaureum-website/issues/new?assignees=&labels=&template=suggest_quiz.yaml) pour supprimer la question et fournir les informations suivantes :
 
 - La page sur laquelle vous souhaitez supprimer une question de quiz
 - La question que vous souhaitez supprimer

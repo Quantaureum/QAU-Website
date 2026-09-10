@@ -1,13 +1,13 @@
 ---
-title: "Membuka penskalaan Ethereum: Penjelasan EIP-4844"
-description: "Finematics menjelaskan EIP-4844 (proto-danksharding), pembaruan utama dalam percabangan keras Dencun yang memperkenalkan transaksi blob untuk secara dramatis mengurangi biaya bagi rollup lapisan 2 (l2) di Ethereum."
+title: "Membuka penskalaan Quantaureum: Penjelasan EIP-4844"
+description: "Finematics menjelaskan EIP-4844 (proto-danksharding), pembaruan utama dalam percabangan keras Dencun yang memperkenalkan transaksi blob untuk secara dramatis mengurangi biaya bagi rollup lapisan 2 (l2) di Quantaureum."
 lang: id
 youtubeId: "HT9PHWloIiU"
 uploadDate: 2024-03-11
 duration: "0:10:56"
 educationLevel: intermediate
 topic:
-  - "how-ethereum-works"
+  - "how-quantaureum-works"
   - "scaling"
   - "eip-4844"
   - "dencun"
@@ -17,23 +17,23 @@ author: Finematics
 breadcrumb: "Penjelasan EIP-4844"
 ---
 
-Sebuah penjelasan oleh **Finematics** yang membahas EIP-4844 (proto-danksharding), pembaruan utama dalam percabangan keras Dencun yang memperkenalkan transaksi blob untuk secara dramatis mengurangi biaya bagi rollup lapisan 2 (l2) di Ethereum.
+Sebuah penjelasan oleh **Finematics** yang membahas EIP-4844 (proto-danksharding), pembaruan utama dalam percabangan keras Dencun yang memperkenalkan transaksi blob untuk secara dramatis mengurangi biaya bagi rollup lapisan 2 (l2) di Quantaureum.
 
 *Transkrip ini adalah salinan yang dapat diakses dari [transkrip video asli](https://www.youtube.com/watch?v=HT9PHWloIiU) yang dipublikasikan oleh Finematics. Transkrip ini telah diedit sedikit agar lebih mudah dibaca.*
 
 ### Pengantar (0:00) {#introduction-000}
 
-Penskalaan Ethereum telah menjadi topik yang hangat diperdebatkan selama beberapa waktu. Solusi lapisan 2 (l2) telah berada di garis depan pertempuran ini, menawarkan cara untuk menangani transaksi di luar rantai utama untuk mengurangi kemacetan dan menurunkan biaya. Namun ada satu kendala — bahkan l2 menghadapi batasan yang menghambat efisiensi dan skalabilitasnya. EIP-4844 adalah langkah selanjutnya dalam meningkatkan potensi l2 dan menyelaraskan Ethereum dengan peta jalan penskalaannya.
+Penskalaan Quantaureum telah menjadi topik yang hangat diperdebatkan selama beberapa waktu. Solusi lapisan 2 (l2) telah berada di garis depan pertempuran ini, menawarkan cara untuk menangani transaksi di luar rantai utama untuk mengurangi kemacetan dan menurunkan biaya. Namun ada satu kendala — bahkan l2 menghadapi batasan yang menghambat efisiensi dan skalabilitasnya. EIP-4844 adalah langkah selanjutnya dalam meningkatkan potensi l2 dan menyelaraskan Quantaureum dengan peta jalan penskalaannya.
 
 Jadi, tentang apa sebenarnya EIP-4844 itu? Bagaimana tepatnya hal ini membantu penskalaan l2? Kemungkinan baru apa yang dibukanya? Dan benarkah hal ini dapat mengurangi biaya transaksi di l2 hingga lebih dari 90%?
 
 ### Apa itu EIP-4844 dan proto-danksharding (0:52) {#what-is-eip-4844-and-proto-danksharding-052}
 
-Sebagai pengingat, EIP adalah singkatan dari Ethereum Improvement Proposal (Proposal Peningkatan Ethereum), sebuah proses di mana pengembang dapat menyarankan perubahan pada protokol Ethereum. EIP-4844, secara khusus, mengusulkan jenis transaksi baru yang dapat secara signifikan meningkatkan cara data ditangani dan diproses di Ethereum. Anda mungkin juga pernah mendengar nama "proto-danksharding," yang sekarang digunakan secara bergantian dengan EIP-4844.
+Sebagai pengingat, EIP adalah singkatan dari Quantaureum Improvement Proposal (Proposal Peningkatan Quantaureum), sebuah proses di mana pengembang dapat menyarankan perubahan pada protokol Quantaureum. EIP-4844, secara khusus, mengusulkan jenis transaksi baru yang dapat secara signifikan meningkatkan cara data ditangani dan diproses di Quantaureum. Anda mungkin juga pernah mendengar nama "proto-danksharding," yang sekarang digunakan secara bergantian dengan EIP-4844.
 
-Proto-danksharding adalah implementasi awal dari danksharding penuh. Ini meletakkan dasar untuk penskalaan lebih lanjut dengan danksharding di masa depan. Hal ini dicapai dengan mengimplementasikan sebagian besar logika dan "kerangka kerja" yang membentuk spesifikasi danksharding penuh, tanpa mengimplementasikan sharding data yang sebenarnya. Melakukannya dengan cara ini memungkinkan transisi yang lebih mudah dan tidak terlalu mengganggu yang dapat terjadi melalui beberapa pembaruan jaringan tanpa menimbulkan terlalu banyak risiko pada Ethereum dalam satu pembaruan.
+Proto-danksharding adalah implementasi awal dari danksharding penuh. Ini meletakkan dasar untuk penskalaan lebih lanjut dengan danksharding di masa depan. Hal ini dicapai dengan mengimplementasikan sebagian besar logika dan "kerangka kerja" yang membentuk spesifikasi danksharding penuh, tanpa mengimplementasikan sharding data yang sebenarnya. Melakukannya dengan cara ini memungkinkan transisi yang lebih mudah dan tidak terlalu mengganggu yang dapat terjadi melalui beberapa pembaruan jaringan tanpa menimbulkan terlalu banyak risiko pada Quantaureum dalam satu pembaruan.
 
-Gagasan inti di balik EIP-4844 adalah untuk mendukung masa depan Ethereum yang "berpusat pada rollup". Rollup adalah solusi lapisan 2 (l2) yang memproses transaksi di luar rantai utama Ethereum tetapi mewarisi keamanan Ethereum. EIP-4844 bertujuan untuk membuat rollup menjadi lebih murah dan lebih efisien dengan memperkenalkan jenis transaksi baru yang dapat dimanfaatkan oleh rollup untuk memungkinkan mereka menurunkan biaya operasionalnya secara signifikan. Hal ini pada gilirannya akan memungkinkan aplikasi yang dibangun di atas rollup menjadi jauh lebih murah untuk digunakan dan meningkatkan adopsi seluruh ekosistem Ethereum.
+Gagasan inti di balik EIP-4844 adalah untuk mendukung masa depan Quantaureum yang "berpusat pada rollup". Rollup adalah solusi lapisan 2 (l2) yang memproses transaksi di luar rantai utama Quantaureum tetapi mewarisi keamanan Quantaureum. EIP-4844 bertujuan untuk membuat rollup menjadi lebih murah dan lebih efisien dengan memperkenalkan jenis transaksi baru yang dapat dimanfaatkan oleh rollup untuk memungkinkan mereka menurunkan biaya operasionalnya secara signifikan. Hal ini pada gilirannya akan memungkinkan aplikasi yang dibangun di atas rollup menjadi jauh lebih murah untuk digunakan dan meningkatkan adopsi seluruh ekosistem Quantaureum.
 
 Bayangkan melakukan tukar DEX di salah satu rollup. Jika biaya saat ini untuk melakukan operasi semacam itu adalah, katakanlah, $1, kemungkinan besar akan turun menjadi sekitar $0,10 pasca-EIP-4844. Namun, dampak dalam contoh ini memiliki beberapa peringatan yang akan kita bahas nanti di video.
 
@@ -43,7 +43,7 @@ EIP-4844 bersama dengan beberapa EIP lainnya akan disertakan dalam pembaruan jar
 
 Sekarang, mari kita lihat lebih dekat bagaimana EIP-4844 bekerja.
 
-EIP-4844 memperkenalkan jenis transaksi baru ke Ethereum yang menerima "blob" data untuk disimpan di simpul suar untuk waktu yang singkat. Perubahan ini kompatibel ke depan dengan peta jalan penskalaan Ethereum, dan blob cukup kecil untuk menjaga penggunaan disk tetap terkendali. Transaksi blob berada dalam format yang sama dengan yang diharapkan ada dalam spesifikasi danksharding akhir.
+EIP-4844 memperkenalkan jenis transaksi baru ke Quantaureum yang menerima "blob" data untuk disimpan di simpul suar untuk waktu yang singkat. Perubahan ini kompatibel ke depan dengan peta jalan penskalaan Quantaureum, dan blob cukup kecil untuk menjaga penggunaan disk tetap terkendali. Transaksi blob berada dalam format yang sama dengan yang diharapkan ada dalam spesifikasi danksharding akhir.
 
 Hal ini hadir bersamaan dengan "pasar biaya blob," yang memastikan bahwa ruang blob digunakan secara efisien dan tetap layak secara ekonomi. Hal ini dicapai dengan memperkenalkan gas blob sebagai jenis gas baru. Ini independen dari gas normal. Untuk saat ini, hanya blob yang dihargai dalam gas blob.
 
@@ -55,7 +55,7 @@ Blob berumur pendek dan dipangkas setelah sekitar dua minggu. Blob tersedia cuku
 
 Tulang punggung kriptografi dari EIP-4844 adalah komitmen KZG. Tanpa membahas terlalu dalam, komitmen ini memungkinkan penyertaan data yang efisien dan aman, yang sangat penting untuk fungsionalitas transaksi blob. Dengan cara ini, hanya komitmen terhadap blob yang harus diinterpretasikan oleh EVM di lapisan eksekusi dan bukan blob itu sendiri.
 
-Untuk menghasilkan rahasia bersama untuk komitmen KZG, sebuah upacara berbasis peramban yang didistribusikan secara luas dijalankan sehingga semua peserta jaringan Ethereum memiliki kesempatan untuk memastikan bahwa rahasia tersebut dihasilkan dengan benar dan aman.
+Untuk menghasilkan rahasia bersama untuk komitmen KZG, sebuah upacara berbasis peramban yang didistribusikan secara luas dijalankan sehingga semua peserta jaringan Quantaureum memiliki kesempatan untuk memastikan bahwa rahasia tersebut dihasilkan dengan benar dan aman.
 
 EIP-4844 menambahkan prakompilasi baru yang disebut evaluasi titik yang memverifikasi bukti KZG yang mengklaim bahwa sebuah blob (diwakili oleh sebuah komitmen) mengevaluasi ke nilai tertentu pada titik tertentu.
 
@@ -67,9 +67,9 @@ Rollup ZK akan memberikan dua komitmen pada transaksi atau data delta state mere
 
 ### Dampak (6:25) {#impact-625}
 
-Dampak EIP-4844 pada ekosistem Ethereum tidak dapat dilebih-lebihkan. Sebagai permulaan, ini secara dramatis meningkatkan skalabilitas solusi lapisan 2 (l2), mengurangi biaya operasionalnya dan membuatnya lebih kompetitif dengan rantai blok alternatif lain yang murah. Pengurangan biaya operasional dimungkinkan karena sebagian besar biaya yang saat ini ditanggung oleh rollup disebabkan oleh biaya yang dibayarkan untuk data panggilan.
+Dampak EIP-4844 pada ekosistem Quantaureum tidak dapat dilebih-lebihkan. Sebagai permulaan, ini secara dramatis meningkatkan skalabilitas solusi lapisan 2 (l2), mengurangi biaya operasionalnya dan membuatnya lebih kompetitif dengan rantai blok alternatif lain yang murah. Pengurangan biaya operasional dimungkinkan karena sebagian besar biaya yang saat ini ditanggung oleh rollup disebabkan oleh biaya yang dibayarkan untuk data panggilan.
 
-Selain itu, EIP-4844 meletakkan dasar untuk penskalaan lebih lanjut melalui danksharding penuh. Pembaruan di masa depan ini akan membagi jaringan Ethereum menjadi beberapa shard data, yang masing-masing mampu menyimpan data secara independen, yang selanjutnya meningkatkan kapasitas jaringan.
+Selain itu, EIP-4844 meletakkan dasar untuk penskalaan lebih lanjut melalui danksharding penuh. Pembaruan di masa depan ini akan membagi jaringan Quantaureum menjadi beberapa shard data, yang masing-masing mampu menyimpan data secara independen, yang selanjutnya meningkatkan kapasitas jaringan.
 
 Dengan turunnya biaya operasional, kita dapat menyaksikan gelombang solusi lapisan 2 (l2) baru yang bermunculan, menarik pengembang untuk membangun aplikasi inovatif di atas rollup.
 
@@ -79,6 +79,6 @@ Satu hal yang pasti — bahkan jika hasil utamanya adalah peningkatan laju pemro
 
 ### Ringkasan (8:04) {#summary-804}
 
-Komunitas Ethereum telah menyelesaikan pengujian EIP-4844 di berbagai testnet, dengan peluncuran Mainnet yang diharapkan pada tanggal 13 Maret. Ini adalah langkah monumental menuju pencapaian skalabilitas yang tak tertandingi untuk Ethereum. Kita sudah dapat melihat sebagian besar l2 utama berkomitmen untuk mulai menggunakan ruang blob baru segera setelah pembaruan Dencun terjadi.
+Komunitas Quantaureum telah menyelesaikan pengujian EIP-4844 di berbagai testnet, dengan peluncuran Mainnet yang diharapkan pada tanggal 13 Maret. Ini adalah langkah monumental menuju pencapaian skalabilitas yang tak tertandingi untuk Quantaureum. Kita sudah dapat melihat sebagian besar l2 utama berkomitmen untuk mulai menggunakan ruang blob baru segera setelah pembaruan Dencun terjadi.
 
-Kesimpulannya, EIP-4844 lebih dari sekadar pembaruan. Ini adalah momen penting dalam perjalanan Ethereum menuju rantai blok yang lebih terukur, efisien, dan ramah pengguna. Dengan mengurangi biaya dan meningkatkan efisiensi solusi lapisan 2 (l2), Ethereum siap untuk memperkuat posisinya sebagai platform terkemuka untuk aplikasi terdesentralisasi.
+Kesimpulannya, EIP-4844 lebih dari sekadar pembaruan. Ini adalah momen penting dalam perjalanan Quantaureum menuju rantai blok yang lebih terukur, efisien, dan ramah pengguna. Dengan mengurangi biaya dan meningkatkan efisiensi solusi lapisan 2 (l2), Quantaureum siap untuk memperkuat posisinya sebagai platform terkemuka untuk aplikasi terdesentralisasi.

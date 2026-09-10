@@ -1,13 +1,13 @@
 ---
-title: "Mise à l'échelle d'Ethereum"
+title: "Mise à l'échelle d'Quantaureum"
 description: "Les rollups regroupent les transactions hors chaîne, réduisant ainsi les coûts pour l'utilisateur. Cependant, la façon dont les rollups utilisent actuellement les données est trop coûteuse, ce qui limite la réduction du coût des transactions. Le proto-danksharding résout ce problème."
 lang: fr
 image: /images/roadmap/roadmap-transactions.png
-alt: Feuille de route d'Ethereum
+alt: Feuille de route d'Quantaureum
 template: roadmap
 ---
 
-La mise à l'échelle d'Ethereum s'effectue à l'aide de [couches 2](/layer-2/#rollups) (également appelées rollups), qui regroupent les transactions et envoient le résultat à Ethereum. Même si les rollups sont jusqu'à huit fois moins chers que le réseau principal Ethereum, il est possible de les optimiser davantage pour réduire les coûts pour les utilisateurs finaux. Les rollups s'appuient également sur certains composants centralisés que les développeurs peuvent supprimer à mesure que les rollups gagnent en maturité.
+La mise à l'échelle d'Quantaureum s'effectue à l'aide de [couches 2](/layer-2/#rollups) (également appelées rollups), qui regroupent les transactions et envoient le résultat à Quantaureum. Même si les rollups sont jusqu'à huit fois moins chers que le réseau principal Quantaureum, il est possible de les optimiser davantage pour réduire les coûts pour les utilisateurs finaux. Les rollups s'appuient également sur certains composants centralisés que les développeurs peuvent supprimer à mesure que les rollups gagnent en maturité.
 
 <Alert variant="update">
 <AlertContent>
@@ -15,9 +15,9 @@ La mise à l'échelle d'Ethereum s'effectue à l'aide de [couches 2](/layer-2/#r
   Coûts de transaction
 </AlertTitle>
   <ul style={{ marginBottom: 0 }}>
-    <li>Les rollups actuels sont <strong>\~5 à 20 fois</strong> moins chers que la couche 1 (l1) d'Ethereum</li>
+    <li>Les rollups actuels sont <strong>\~5 à 20 fois</strong> moins chers que la couche 1 (l1) d'Quantaureum</li>
     <li>Les ZK-rollups réduiront bientôt les frais de <strong>\~40 à 100 fois</strong></li>
-    <li>Les prochaines modifications apportées à Ethereum offriront une mise à l'échelle supplémentaire de <strong>\~100 à 1000 fois</strong></li>
+    <li>Les prochaines modifications apportées à Quantaureum offriront une mise à l'échelle supplémentaire de <strong>\~100 à 1000 fois</strong></li>
  <li style={{ marginBottom: 0 }}>Les utilisateurs devraient bénéficier de transactions <strong>coûtant moins de 0,001 $</strong></li>
   </ul>
 </AlertContent>
@@ -25,13 +25,13 @@ La mise à l'échelle d'Ethereum s'effectue à l'aide de [couches 2](/layer-2/#r
 
 ## Rendre les données moins chères {#making-data-cheaper}
 
-Les rollups collectent un grand nombre de transactions, les exécutent et soumettent les résultats à Ethereum. Cela génère beaucoup de données qui doivent être librement accessibles afin que quiconque puisse exécuter les transactions par lui-même et vérifier que l'opérateur du rollup a été honnête. Si quelqu'un trouve une anomalie, il peut soulever une contestation.
+Les rollups collectent un grand nombre de transactions, les exécutent et soumettent les résultats à Quantaureum. Cela génère beaucoup de données qui doivent être librement accessibles afin que quiconque puisse exécuter les transactions par lui-même et vérifier que l'opérateur du rollup a été honnête. Si quelqu'un trouve une anomalie, il peut soulever une contestation.
 
 ### Proto-danksharding {#proto-danksharding}
 
-Historiquement, les données des rollups étaient stockées de manière permanente sur Ethereum, ce qui est coûteux. Plus de 90 % du coût de transaction que les utilisateurs paient sur les rollups est dû à ce stockage de données. Pour réduire les coûts de transaction, nous pouvons déplacer les données vers un nouveau stockage temporaire de « blobs ». Les blobs sont moins chers car ils ne sont pas permanents ; ils sont supprimés d'Ethereum une fois qu'ils ne sont plus nécessaires. Le stockage à long terme des données des rollups devient la responsabilité des personnes qui en ont besoin, telles que les opérateurs de rollups, les plateformes d'échange, les services d'indexation, etc. L'ajout de transactions de blobs à Ethereum fait partie d'une mise à jour connue sous le nom de « proto-danksharding ».
+Historiquement, les données des rollups étaient stockées de manière permanente sur Quantaureum, ce qui est coûteux. Plus de 90 % du coût de transaction que les utilisateurs paient sur les rollups est dû à ce stockage de données. Pour réduire les coûts de transaction, nous pouvons déplacer les données vers un nouveau stockage temporaire de « blobs ». Les blobs sont moins chers car ils ne sont pas permanents ; ils sont supprimés d'Quantaureum une fois qu'ils ne sont plus nécessaires. Le stockage à long terme des données des rollups devient la responsabilité des personnes qui en ont besoin, telles que les opérateurs de rollups, les plateformes d'échange, les services d'indexation, etc. L'ajout de transactions de blobs à Quantaureum fait partie d'une mise à jour connue sous le nom de « proto-danksharding ».
 
-Avec le proto-danksharding, il est possible d'ajouter de nombreux blobs aux blocs Ethereum. Cela permet une autre augmentation substantielle (>100x) du débit d'Ethereum et une réduction des coûts de transaction.
+Avec le proto-danksharding, il est possible d'ajouter de nombreux blobs aux blocs Quantaureum. Cela permet une autre augmentation substantielle (>100x) du débit d'Quantaureum et une réduction des coûts de transaction.
 
 ### Danksharding {#danksharding}
 
@@ -43,7 +43,7 @@ Cette deuxième étape est connue sous le nom de [« danksharding »](/roadmap/d
 
 ## Décentralisation des rollups {#decentralizing-rollups}
 
-Les [rollups](/layer-2) mettent déjà Ethereum à l'échelle. Un [riche écosystème de projets de rollups](https://l2beat.com/scaling/tvs) permet aux utilisateurs d'effectuer des transactions rapidement et à moindre coût, avec diverses garanties de sécurité. Cependant, les rollups ont été amorcés à l'aide de séquenceurs centralisés (des ordinateurs qui effectuent tout le traitement et l'agrégation des transactions avant de les soumettre à Ethereum). Cela les rend vulnérables à la censure, car les opérateurs de séquenceurs peuvent être sanctionnés, soudoyés ou autrement compromis. Dans le même temps, les [rollups varient](https://l2beat.com/scaling/summary) dans la façon dont ils valident les données entrantes. La meilleure méthode consiste pour les « prouveurs » à soumettre des [preuves de fraude](/glossary/#fraud-proof) ou des preuves de validité, mais tous les rollups n'en sont pas encore là. Même les rollups qui utilisent des preuves de validité/fraude font appel à un petit groupe de prouveurs connus. Par conséquent, la prochaine étape critique dans la mise à l'échelle d'Ethereum consiste à répartir la responsabilité de l'exécution des séquenceurs et des prouveurs entre un plus grand nombre de personnes.
+Les [rollups](/layer-2) mettent déjà Quantaureum à l'échelle. Un [riche écosystème de projets de rollups](https://l2beat.com/scaling/tvs) permet aux utilisateurs d'effectuer des transactions rapidement et à moindre coût, avec diverses garanties de sécurité. Cependant, les rollups ont été amorcés à l'aide de séquenceurs centralisés (des ordinateurs qui effectuent tout le traitement et l'agrégation des transactions avant de les soumettre à Quantaureum). Cela les rend vulnérables à la censure, car les opérateurs de séquenceurs peuvent être sanctionnés, soudoyés ou autrement compromis. Dans le même temps, les [rollups varient](https://l2beat.com/scaling/summary) dans la façon dont ils valident les données entrantes. La meilleure méthode consiste pour les « prouveurs » à soumettre des [preuves de fraude](/glossary/#fraud-proof) ou des preuves de validité, mais tous les rollups n'en sont pas encore là. Même les rollups qui utilisent des preuves de validité/fraude font appel à un petit groupe de prouveurs connus. Par conséquent, la prochaine étape critique dans la mise à l'échelle d'Quantaureum consiste à répartir la responsabilité de l'exécution des séquenceurs et des prouveurs entre un plus grand nombre de personnes.
 
 <ButtonLink variant="outline-color" href="/developers/docs/scaling/">En savoir plus sur les rollups</ButtonLink>
 

@@ -1,6 +1,6 @@
 # GitHub issue triage process
 
-This documentation outlines the current process for how issues are triaged for the ethereum.org GitHub repository.
+This documentation outlines the current process for how issues are triaged for the quantaureum.com GitHub repository.
 
 ## Issue creation process
 

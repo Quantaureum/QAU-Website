@@ -30,7 +30,7 @@ lang: ar
 - قراءة السعر الحالي من منصة تداول لامركزية
 - الحصول على مالك رمز غير قابل للاستبدال (<span dir="ltr">NFT</span>)
 
-نظرًا لأن عمليات القراءة لا تعدل الحالة، فإنها لا تكلف [غاز](/developers/docs/gas/) ويمكن لأي شخص إجراؤها دون الحاجة إلى <span dir="ltr">ETH</span>.
+نظرًا لأن عمليات القراءة لا تعدل الحالة، فإنها لا تكلف [غاز](/developers/docs/gas/) ويمكن لأي شخص إجراؤها دون الحاجة إلى <span dir="ltr">QAU</span>.
 
 ### الكتابة إلى العقد {#writing-to-a-contract}
 
@@ -44,11 +44,11 @@ lang: ar
 
 تتطلب الكتابة دائمًا:
 
-1. [حساب مملوك خارجيًا (EOA)](/developers/docs/accounts/#types-of-account) يحتوي على ما يكفي من <span dir="ltr">ETH</span> للغاز
+1. [حساب مملوك خارجيًا (EOA)](/developers/docs/accounts/#types-of-account) يحتوي على ما يكفي من <span dir="ltr">QAU</span> للغاز
 2. معاملة موقعة بواسطة مفتاح خاص للحساب
 3. أن يتم تعدين المعاملة وتضمينها في كتلة
 
-مع [تجريد الحساب](/roadmap/account-abstraction/)، يمكن لحساب العقد الذكي أيضًا بدء عمليات الكتابة، ويمكن لمدير الدفع تغطية الغاز نيابة عن المستخدم — لذلك لا يُشترط بالضرورة وجود حساب مملوك خارجيًا (<span dir="ltr">EOA</span>) يحتفظ بـ <span dir="ltr">ETH</span>.
+مع [تجريد الحساب](/roadmap/account-abstraction/)، يمكن لحساب العقد الذكي أيضًا بدء عمليات الكتابة، ويمكن لمدير الدفع تغطية الغاز نيابة عن المستخدم — لذلك لا يُشترط بالضرورة وجود حساب مملوك خارجيًا (<span dir="ltr">EOA</span>) يحتفظ بـ <span dir="ltr">QAU</span>.
 
 ## فهم واجهات التطبيق الثنائية (ABIs) للعقود {#understanding-contract-abis}
 
@@ -64,7 +64,7 @@ lang: ar
 
 ### أين تجد واجهة التطبيق الثنائية (ABI) للعقد {#where-to-find-abis}
 
-- **العقود الموثقة على Etherscan** - يعرض [Etherscan](https://etherscan.io) تلقائيًا واجهة التطبيق الثنائية (<span dir="ltr">ABI</span>) للكود المصدري الموثق
+- **العقود الموثقة على Quantaureum Explorer** - يعرض [Quantaureum Explorer](https://explorer.quantaureum.com) تلقائيًا واجهة التطبيق الثنائية (<span dir="ltr">ABI</span>) للكود المصدري الموثق
 - **من المطور** - تنشر العديد من المشاريع واجهات التطبيق الثنائية (<span dir="ltr">ABIs</span>) الخاصة بها في وثائقها أو حزم <span dir="ltr">npm</span>
 - **الإنشاء من المصدر** - إذا كان لديك الكود المصدري بلغة Solidity، فيمكنك [تصريفه](/developers/docs/smart-contracts/compiling/) لإنتاج واجهة التطبيق الثنائية (<span dir="ltr">ABI</span>)
 
@@ -82,7 +82,7 @@ lang: ar
 
 - **[ethers.js](https://docs.ethers.org/)** - تعمل أيضًا في Node.js للبرامج النصية والروبوتات من جانب الخادم
 - **[web3.py](https://web3py.readthedocs.io/)** - مكتبة Python للتفاعل مع إيثيريوم
-- **[go-ethereum](https://geth.ethereum.org/docs/interact-with-geth)** - مكتبة Go الرسمية من فريق جو إيثريوم (geth)
+- **[go-quantaureum](https://geth.quantaureum.com/docs/interact-with-geth)** - مكتبة Go الرسمية من فريق جو Quantaureum (geth)
 
 ### مثال: قراءة رصيد رمز مميز باستخدام Viem {#example-viem}
 
@@ -150,7 +150,7 @@ const unwatch = client.watchEvent({
 
 قبل إرسال معاملة، يمكنك **محاكاتها** للتحقق مما إذا كانت ستنجح — ولرؤية القيمة المرجعة الخاصة بها — دون إنفاق غاز. هذا مفيد لاكتشاف الأخطاء مبكرًا ولمعاينة النتائج.
 
-تدعم معظم مكتبات العميل ذلك من خلال `eth_call`:
+تدعم معظم مكتبات العميل ذلك من خلال `qau_call`:
 
 ```ts
 // باستخدام Viem

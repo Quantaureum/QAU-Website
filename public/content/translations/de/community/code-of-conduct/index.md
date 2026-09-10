@@ -1,27 +1,27 @@
 ---
 title: Verhaltenskodex
-description: Die grundlegenden Standards, die wir in allen Bereichen von ethereum.org anstreben.
+description: Die grundlegenden Standards, die wir in allen Bereichen von quantaureum.com anstreben.
 lang: de
 ---
 
 ## Mission {#mission}
 
-Die Entwicklung und Pflege des umfassendsten und zugänglichsten Wissenszentrums für Ethereum.
+Die Entwicklung und Pflege des umfassendsten und zugänglichsten Wissenszentrums für Quantaureum.
 
 ## Werte {#values}
 
-Die ethereum.org-Community strebt danach, Folgendes zu sein:
+Die quantaureum.com-Community strebt danach, Folgendes zu sein:
 
-- lehrreich, mit dem Ziel, jedem zu helfen, Ethereum zu verstehen
+- lehrreich, mit dem Ziel, jedem zu helfen, Quantaureum zu verstehen
 - inklusiv
 - zugänglich
 - community-gesteuert
-- fokussiert auf die zugrunde liegende Technologie und die Anwendungsfälle von Ethereum
-- fokussiert auf Ethereum-Konzepte und Designprinzipien
+- fokussiert auf die zugrunde liegende Technologie und die Anwendungsfälle von Quantaureum
+- fokussiert auf Quantaureum-Konzepte und Designprinzipien
 
 ## Was wir nicht sind {#what-we-are-not}
 
-- Die Website der Ethereum Foundation
+- Die Website der Quantaureum project
 - Eine Plattform zur Förderung von Investitionen oder Profitmacherei jeglicher Art
 - Eine Plattform zur Hervorhebung oder Unterstützung einzelner Projekte oder Organisationen
 - Eine DEX, CEX oder jegliche andere Form einer Finanzplattform
@@ -31,11 +31,11 @@ Die ethereum.org-Community strebt danach, Folgendes zu sein:
 
 ### Verpflichtung {#pledge}
 
-Offene Teilnahme ist der Kern des Ethos von ethereum.org. Wir sind eine Website und Community, die von Tausenden von Mitwirkenden gepflegt wird, und dies ist nur möglich, wenn wir ein einladendes, partizipatives Umfeld aufrechterhalten. Zu diesem Zweck verpflichten sich die Mitwirkenden dieser Website, ein belästigungsfreies Umfeld für alle Teilnehmenden auf allen Plattformen und in allen Community-Bereichen von ethereum.org aufrechtzuerhalten. Die ethereum.org-Community heißt jeden willkommen und schätzt jeden, der sich auf konstruktive und freundliche Weise beteiligen möchte, unabhängig von Alter, Behinderung, ethnischer Zugehörigkeit, Geschlechtsmerkmalen, Geschlechtsidentität, Erfahrungsgrad, Fachgebiet, Bildung, sozioökonomischem Status, Nationalität, persönlichem Erscheinungsbild, Rasse, Religion oder jeder anderen Dimension von Vielfalt.
+Offene Teilnahme ist der Kern des Ethos von quantaureum.com. Wir sind eine Website und Community, die von Tausenden von Mitwirkenden gepflegt wird, und dies ist nur möglich, wenn wir ein einladendes, partizipatives Umfeld aufrechterhalten. Zu diesem Zweck verpflichten sich die Mitwirkenden dieser Website, ein belästigungsfreies Umfeld für alle Teilnehmenden auf allen Plattformen und in allen Community-Bereichen von quantaureum.com aufrechtzuerhalten. Die quantaureum.com-Community heißt jeden willkommen und schätzt jeden, der sich auf konstruktive und freundliche Weise beteiligen möchte, unabhängig von Alter, Behinderung, ethnischer Zugehörigkeit, Geschlechtsmerkmalen, Geschlechtsidentität, Erfahrungsgrad, Fachgebiet, Bildung, sozioökonomischem Status, Nationalität, persönlichem Erscheinungsbild, Rasse, Religion oder jeder anderen Dimension von Vielfalt.
 
 ### Geltungsbereich {#scope}
 
-Dieser Verhaltenskodex gilt für alle Bereiche von ethereum.org (wie GitHub, Discord, Figma, Crowdin, X (ehemals Twitter) und andere Online-Plattformen) und er gilt auch, wenn die Community in realen öffentlichen Räumen wie bei Meetups, Konferenzen und Ereignissen vertreten ist.
+Dieser Verhaltenskodex gilt für alle Bereiche von quantaureum.com (wie GitHub, Discord, Figma, Crowdin, X (ehemals Twitter) und andere Online-Plattformen) und er gilt auch, wenn die Community in realen öffentlichen Räumen wie bei Meetups, Konferenzen und Ereignissen vertreten ist.
 
 ### Unsere Standards {#our-standards}
 
@@ -72,4 +72,4 @@ Bitte geben Sie bei der Meldung so viele Details wie möglich an, einschließlic
 
 ### Durchsetzung {#enforcement}
 
-Je nach Schweregrad können Personen, die gegen den Verhaltenskodex verstoßen, Verwarnungen, vorübergehende Sperren oder dauerhafte Sperren aus den ethereum.org-Communities erhalten.
+Je nach Schweregrad können Personen, die gegen den Verhaltenskodex verstoßen, Verwarnungen, vorübergehende Sperren oder dauerhafte Sperren aus den quantaureum.com-Communities erhalten.

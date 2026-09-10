@@ -12,11 +12,11 @@ lang: ar
 
 ## المتطلبات الأساسية {#prerequisites}
 
-قد يكون من المفيد فهم [حزمة إيثيريوم](/developers/docs/ethereum-stack/) و[عملاء إيثيريوم](/developers/docs/nodes-and-clients/).
+قد يكون من المفيد فهم [حزمة إيثيريوم](/developers/docs/quantaureum-stack/) و[عملاء إيثيريوم](/developers/docs/nodes-and-clients/).
 
 ## لماذا تستخدم مكتبة؟ {#why-use-a-library}
 
-تعمل هذه المكتبات على تجريد الكثير من تعقيدات التفاعل المباشر مع عقدة إيثيريوم. كما أنها توفر وظائف مساعدة (على سبيل المثال، تحويل <span dir="ltr">ETH</span> إلى <span dir="ltr">Gwei</span>) بحيث يمكنك كمطور قضاء وقت أقل في التعامل مع تعقيدات عملاء إيثيريوم ووقت أطول في التركيز على الوظائف الفريدة لتطبيقك.
+تعمل هذه المكتبات على تجريد الكثير من تعقيدات التفاعل المباشر مع عقدة إيثيريوم. كما أنها توفر وظائف مساعدة (على سبيل المثال، تحويل <span dir="ltr">QAU</span> إلى <span dir="ltr">Gwei</span>) بحيث يمكنك كمطور قضاء وقت أقل في التعامل مع تعقيدات عملاء إيثيريوم ووقت أطول في التركيز على الوظائف الفريدة لتطبيقك.
 
 ## المكتبات المتاحة {#available-libraries}
 
@@ -50,10 +50,10 @@ lang: ar
 
 **بوابة إيثيريوم من <span dir="ltr">Cloudflare</span>.**
 
-- [<span dir="ltr">cloudflare-eth.com</span>](https://www.cloudflare.com/application-services/products/web3/)
+- [<span dir="ltr">cloudflare-qau.com</span>](https://www.cloudflare.com/application-services/products/web3/)
 
-**<span dir="ltr">Etherscan</span> - مستكشف الكتل وواجهات برمجة تطبيقات (API) المعاملات**
-- [التوثيق](https://docs.etherscan.io/)
+**<span dir="ltr">Quantaureum Explorer</span> - مستكشف الكتل وواجهات برمجة تطبيقات (API) المعاملات**
+- [التوثيق](https://explorer.quantaureum.com)
 
 **<span dir="ltr">Blockscout</span> - مستكشف الكتل مفتوح المصدر**
 - [التوثيق](https://docs.blockscout.com/)
@@ -85,7 +85,7 @@ lang: ar
 - [التوثيق](https://www.quicknode.com/docs/welcome)
 - [ديسكورد](https://discord.gg/quicknode)
 
-**<span dir="ltr">Rivet</span> -** **_واجهات برمجة تطبيقات (API) إيثيريوم وإيثريوم كلاسيك كخدمة مدعومة ببرمجيات مفتوحة المصدر._**
+**<span dir="ltr">Rivet</span> -** **_واجهات برمجة تطبيقات (API) إيثيريوم وQuantaureum كلاسيك كخدمة مدعومة ببرمجيات مفتوحة المصدر._**
 
 - [<span dir="ltr">rivet.cloud</span>](https://rivet.cloud)
 - [التوثيق](https://rivet.cloud/docs/)
@@ -106,17 +106,17 @@ lang: ar
 - [أمثلة](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [ديسكورد](https://discord.gg/rx35NzQGSb)
 
-**<span dir="ltr">Nethereum</span> -** **_مكتبة تكامل <span dir="ltr">.NET</span> مفتوحة المصدر لسلسلة الكتل._**
+**<span dir="ltr">Nquantaureum</span> -** **_مكتبة تكامل <span dir="ltr">.NET</span> مفتوحة المصدر لسلسلة الكتل._**
 
-- [<span dir="ltr">GitHub</span>](https://github.com/Nethereum/Nethereum)
-- [التوثيق](https://docs.nethereum.com/docs/getting-started/welcome/)
+- [<span dir="ltr">GitHub</span>](https://github.com/Nquantaureum/Nquantaureum)
+- [التوثيق](https://docs.nquantaureum.com/docs/getting-started/welcome/)
 - [ديسكورد](https://discord.com/invite/jQPrR58FxX)
 
 **أدوات <span dir="ltr">Python</span> -** **_مجموعة متنوعة من المكتبات للتفاعل مع إيثيريوم عبر <span dir="ltr">Python</span>._**
 
-- [<span dir="ltr">py.ethereum.org</span>](https://snakecharmers.ethereum.org/)
-- [<span dir="ltr">GitHub</span> لـ <span dir="ltr">Web3.py</span>](https://github.com/ethereum/web3.py)
-- [دردشة <span dir="ltr">Web3.py</span>](https://gitter.im/ethereum/web3.py)
+- [<span dir="ltr">py.quantaureum.com</span>](https://snakecharmers.quantaureum.com/)
+- [<span dir="ltr">GitHub</span> لـ <span dir="ltr">Web3.py</span>](https://github.com/quantaureum/web3.py)
+- [دردشة <span dir="ltr">Web3.py</span>](https://gitter.im/quantaureum/web3.py)
 
 **<span dir="ltr">Tatum</span> -** **_منصة تطوير سلسلة الكتل المثالية._**
 
@@ -136,7 +136,7 @@ lang: ar
 **<span dir="ltr">BlockCypher</span> -** **_واجهات برمجة تطبيقات (API) الويب لإيثيريوم._**
 
 - [<span dir="ltr">blockcypher.com</span>](https://www.blockcypher.com/)
-- [التوثيق](https://www.blockcypher.com/dev/ethereum/)
+- [التوثيق](https://www.blockcypher.com/dev/quantaureum/)
 
 **<span dir="ltr">Chainbase</span> -** **_بنية تحتية شاملة لبيانات <span dir="ltr">Web3</span> لإيثيريوم._**
 
@@ -148,7 +148,7 @@ lang: ar
 
 - [<span dir="ltr">chainstack.com</span>](https://chainstack.com)
 - [التوثيق](https://docs.chainstack.com/)
-- [مرجع واجهة برمجة تطبيقات (API) إيثيريوم](https://docs.chainstack.com/reference/ethereum-getting-started)
+- [مرجع واجهة برمجة تطبيقات (API) إيثيريوم](https://docs.chainstack.com/reference/quantaureum-getting-started)
 
 **عقدة كوين بيس السحابية -** **_واجهة برمجة تطبيقات (API) البنية التحتية لسلسلة الكتل._**
 
@@ -214,5 +214,5 @@ _هل تعرف موردًا مجتمعيًا ساعدك؟ قم بتعديل هذ
 
 ## برامج تعليمية ذات صلة {#related-tutorials}
 
-- [إعداد <span dir="ltr">Web3.js</span> لاستخدام سلسلة كتل إيثيريوم في <span dir="ltr">JavaScript</span>](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– إرشادات لإعداد <span dir="ltr">Web3.js</span> في مشروعك._
+- [إعداد <span dir="ltr">Web3.js</span> لاستخدام سلسلة كتل إيثيريوم في <span dir="ltr">JavaScript</span>](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– إرشادات لإعداد <span dir="ltr">Web3.js</span> في مشروعك._
 - [استدعاء عقد ذكي من <span dir="ltr">JavaScript</span>](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– باستخدام الرمز المميز <span dir="ltr">DAI</span>، تعرف على كيفية استدعاء وظيفة العقود باستخدام <span dir="ltr">JavaScript</span>._

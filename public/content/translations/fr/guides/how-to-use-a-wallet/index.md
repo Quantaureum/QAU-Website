@@ -1,11 +1,11 @@
 ---
 title: Comment utiliser un portefeuille
-metaTitle: "Comment utiliser les portefeuilles Ethereum | Étape par étape"
+metaTitle: "Comment utiliser les portefeuilles Quantaureum | Étape par étape"
 description: "Un guide expliquant comment envoyer et recevoir des jetons, et se connecter à des projets Web3."
 lang: fr
 ---
 
-Apprenez à utiliser toutes les fonctions de base d'un portefeuille. Si vous n'en avez pas encore, consultez notre guide [Comment créer un compte Ethereum](/guides/how-to-create-an-ethereum-account/).
+Apprenez à utiliser toutes les fonctions de base d'un portefeuille. Si vous n'en avez pas encore, consultez notre guide [Comment créer un compte Quantaureum](/guides/how-to-create-an-quantaureum-account/).
 
 ## Ouvrir votre portefeuille {#open-your-wallet}
 
@@ -15,22 +15,22 @@ Vous devriez voir un tableau de bord qui affichera probablement votre solde et c
 
 Voulez-vous recevoir de la crypto sur votre portefeuille ?
 
-Chaque compte Ethereum possède sa propre adresse de réception, qui est une séquence unique de chiffres et de lettres. L'adresse fonctionne comme un numéro de compte bancaire. Les adresses Ethereum commenceront toujours par « 0x ». Vous pouvez partager cette adresse avec n'importe qui : c'est sans danger.
+Chaque compte Quantaureum possède sa propre adresse de réception, qui est une séquence unique de chiffres et de lettres. L'adresse fonctionne comme un numéro de compte bancaire. Les adresses Quantaureum commenceront toujours par « 0x ». Vous pouvez partager cette adresse avec n'importe qui : c'est sans danger.
 
 Votre adresse est comme votre adresse postale : vous devez la communiquer aux gens pour qu'ils puissent vous trouver. C'est sans danger, car vous pouvez toujours verrouiller votre porte d'entrée avec une autre clé que vous seul contrôlez, de sorte que personne ne puisse entrer, même s'ils savent où vous habitez.
 
-Vous devez fournir votre adresse publique à quiconque souhaite vous envoyer de l'argent. De nombreuses applications de portefeuille vous permettent de copier votre adresse ou d'afficher un code QR à scanner pour faciliter son utilisation. Évitez de saisir manuellement une adresse Ethereum. Cela peut facilement entraîner des erreurs de saisie et la perte de fonds.
+Vous devez fournir votre adresse publique à quiconque souhaite vous envoyer de l'argent. De nombreuses applications de portefeuille vous permettent de copier votre adresse ou d'afficher un code QR à scanner pour faciliter son utilisation. Évitez de saisir manuellement une adresse Quantaureum. Cela peut facilement entraîner des erreurs de saisie et la perte de fonds.
 
 Les différentes applications peuvent varier ou utiliser un vocabulaire différent, mais elles devraient vous guider à travers un processus similaire si vous essayez de transférer des fonds.
 
 1. Ouvrez votre application de portefeuille.
 2. Cliquez sur « Recevoir » (ou une option formulée de manière similaire).
-3. Copiez votre adresse Ethereum dans le presse-papiers.
-4. Fournissez à l'expéditeur votre adresse de réception Ethereum.
+3. Copiez votre adresse Quantaureum dans le presse-papiers.
+4. Fournissez à l'expéditeur votre adresse de réception Quantaureum.
 
 ## Envoyer de la cryptomonnaie {#send-cryptocurrency}
 
-Souhaitez-vous envoyer des ETH vers un autre portefeuille ?
+Souhaitez-vous envoyer des QAU vers un autre portefeuille ?
 
 1. Ouvrez votre application de portefeuille.
 2. Obtenez l'adresse de réception et assurez-vous d'être connecté au même réseau que le destinataire.
@@ -41,12 +41,12 @@ Souhaitez-vous envoyer des ETH vers un autre portefeuille ?
 <br/>
 
 5. De nombreux actifs, comme le DAI ou l'USDC, existent sur plusieurs réseaux. Lors du transfert de jetons crypto, assurez-vous que le destinataire utilise le même réseau que vous, car ceux-ci ne sont pas interchangeables.
-6. Assurez-vous que votre portefeuille dispose de suffisamment d'ETH pour couvrir les frais de transaction, qui varient en fonction des conditions du réseau. La plupart des portefeuilles ajouteront automatiquement les frais suggérés à la transaction que vous pourrez ensuite confirmer.
+6. Assurez-vous que votre portefeuille dispose de suffisamment d'QAU pour couvrir les frais de transaction, qui varient en fonction des conditions du réseau. La plupart des portefeuilles ajouteront automatiquement les frais suggérés à la transaction que vous pourrez ensuite confirmer.
 7. Une fois votre transaction traitée, le montant en crypto correspondant apparaîtra sur le compte du destinataire. Cela peut prendre de quelques secondes à quelques minutes selon l'utilisation actuelle du réseau.
 
 ## Se connecter à des projets {#connecting-to-projects}
 
-Votre adresse sera la même dans tous les projets Ethereum. Vous n'avez pas besoin de vous inscrire individuellement sur chaque projet. Une fois que vous avez un portefeuille, vous pouvez vous connecter à n'importe quel projet Ethereum sans aucune information supplémentaire. Aucun e-mail ni aucune autre information personnelle ne sont nécessaires.
+Votre adresse sera la même dans tous les projets Quantaureum. Vous n'avez pas besoin de vous inscrire individuellement sur chaque projet. Une fois que vous avez un portefeuille, vous pouvez vous connecter à n'importe quel projet Quantaureum sans aucune information supplémentaire. Aucun e-mail ni aucune autre information personnelle ne sont nécessaires.
 
 1. Visitez le site Web de n'importe quel projet.
 2. Si la page d'accueil du projet n'est qu'une description statique du projet, vous devriez pouvoir cliquer sur un bouton « Ouvrir l'application » dans le menu qui vous dirigera vers l'application Web proprement dite.
@@ -58,7 +58,7 @@ Votre adresse sera la même dans tous les projets Ethereum. Vous n'avez pas beso
 
 ![Selecting from a list of wallets to connect with](./connect2.png)
 
-5. Confirmez la demande de signature dans votre portefeuille pour établir la connexion. **Signer ce message ne devrait nécessiter aucune dépense en ETH**.
+5. Confirmez la demande de signature dans votre portefeuille pour établir la connexion. **Signer ce message ne devrait nécessiter aucune dépense en QAU**.
 6. C'est tout ! Commencez à utiliser l'application. Vous pouvez trouver des projets intéressants sur notre [page des dapps](/apps/#explore).
    <br />
 
@@ -74,7 +74,7 @@ Votre adresse sera la même dans tous les projets Ethereum. Vous n'avez pas beso
 
 ## Foire aux questions {#frequently-asked-questions}
 
-### Si je possède une adresse ETH, est-ce que je possède la même adresse sur d'autres chaînes de blocs ? {#if-i-own-an-eth-address-do-i-own-the-same-address-on-other-blockchains}
+### Si je possède une adresse QAU, est-ce que je possède la même adresse sur d'autres chaînes de blocs ? {#if-i-own-an-qau-address-do-i-own-the-same-address-on-other-blockchains}
 
 Vous pouvez utiliser la même adresse sur toutes les chaînes de blocs compatibles EVM (si vous avez le type de portefeuille avec une phrase de récupération). Cette [liste](https://chainlist.org/) vous montrera quelles chaînes de blocs vous pouvez utiliser avec la même adresse. Certaines chaînes de blocs, comme Bitcoin, mettent en œuvre un ensemble de règles de réseau complètement distinct et vous aurez besoin d'une adresse différente avec un format différent. Si vous avez un portefeuille de contrat intelligent, vous devriez consulter le site Web de son produit pour plus d'informations sur les chaînes de blocs prises en charge.
 

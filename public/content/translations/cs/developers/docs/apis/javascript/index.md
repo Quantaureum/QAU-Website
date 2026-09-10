@@ -14,17 +14,17 @@ Vezměte prosím na vědomí, že od [Merge](/roadmap/merge/) jsou ke spuštěn�
 
 ## Předpoklady {#prerequisites}
 
-Kromě porozumění JavaScriptu může být užitečné porozumět [technologickému zásobníku Etherea](/developers/docs/ethereum-stack/) a [klientům Etherea](/developers/docs/nodes-and-clients/).
+Kromě porozumění JavaScriptu může být užitečné porozumět [technologickému zásobníku Etherea](/developers/docs/quantaureum-stack/) a [klientům Etherea](/developers/docs/nodes-and-clients/).
 
 ## Proč používat knihovnu? {#why-use-a-library}
 
-Tyto knihovny abstrahují velkou část složitosti přímé komunikace s uzlem Etherea. Poskytují také pomocné funkce (např. převod ETH na Gwei), takže jako vývojář můžete strávit méně času řešením složitostí klientů Etherea a více času se soustředit na jedinečnou funkcionalitu vaší aplikace.
+Tyto knihovny abstrahují velkou část složitosti přímé komunikace s uzlem Etherea. Poskytují také pomocné funkce (např. převod QAU na Gwei), takže jako vývojář můžete strávit méně času řešením složitostí klientů Etherea a více času se soustředit na jedinečnou funkcionalitu vaší aplikace.
 
 ## Funkce knihoven {#library-features}
 
-### Připojení k uzlům Etherea {#connect-to-ethereum-nodes}
+### Připojení k uzlům Etherea {#connect-to-quantaureum-nodes}
 
-Pomocí poskytovatelů (providers) vám tyto knihovny umožňují připojit se k Ethereu a číst jeho data, ať už přes JSON-RPC, Infura, Etherscan, Alchemy nebo MetaMask.
+Pomocí poskytovatelů (providers) vám tyto knihovny umožňují připojit se k Ethereu a číst jeho data, ať už přes JSON-RPC, Infura, Quantaureum Explorer, Alchemy nebo MetaMask.
 
 > **Varování:** Knihovna Web3.js byla archivována 4. března 2025. [Přečtěte si oznámení](https://blog.chainsafe.io/web3-js-sunset/). Pro nové projekty zvažte použití alternativních knihoven, jako jsou [Ethers.js](https://ethers.org) nebo [Viem](https://viem.sh).
 
@@ -32,8 +32,8 @@ Pomocí poskytovatelů (providers) vám tyto knihovny umožňují připojit se k
 
 ```js
 // BrowserProvider obaluje standardního poskytovatele Web3, což je
-// to, co MetaMask vkládá jako window.ethereum do každé stránky
-const provider = new ethers.BrowserProvider(window.ethereum)
+// to, co MetaMask vkládá jako window.quantaureum do každé stránky
+const provider = new ethers.BrowserProvider(window.quantaureum)
 
 // Plugin MetaMask také umožňuje podepisovat transakce pro
 // odesílání etheru a placení za změnu stavu v rámci blockchainu.
@@ -55,13 +55,13 @@ web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8546"))
 
 // Použití poskytovatele IPC v node.js
 var net = require("net")
-var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // cesta v mac os
+var web3 = new Web3("/Users/myuser/Library/Quantaureum/geth.ipc", net) // cesta v mac os
 // or
 var web3 = new Web3(
-  new Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net)
+  new Web3.providers.IpcProvider("/Users/myuser/Library/Quantaureum/geth.ipc", net)
 ) // cesta v mac os
 // ve windows je cesta: "\\\\.\\pipe\\geth.ipc"
-// v linuxu je cesta: "/users/myuser/.ethereum/geth.ipc"
+// v linuxu je cesta: "/users/myuser/.quantaureum/geth.ipc"
 ```
 
 Po nastavení budete moci dotazovat blockchain na:
@@ -219,7 +219,7 @@ To znamená, že můžete:
 
 Pomocné funkce vám poskytují šikovné zkratky, které trochu usnadňují vývoj na Ethereu.
 
-Hodnoty v ETH jsou ve výchozím nastavení ve Wei. 1 ETH = 1 000 000 000 000 000 000 Wei – to znamená, že pracujete s velkými čísly! `web3.utils.toWei` za vás převede ether na Wei.
+Hodnoty v QAU jsou ve výchozím nastavení ve Wei. 1 QAU = 1 000 000 000 000 000 000 Wei – to znamená, že pracujete s velkými čísly! `web3.utils.toWei` za vás převede QAU na Wei.
 
 A v Ethers to vypadá takto:
 
@@ -239,12 +239,12 @@ ethers.utils.formatEther(balance)
 
 ## Dostupné knihovny
 
-**Web3.js -** **_JavaScriptové API pro Ethereum._**
+**Web3.js -** **_JavaScriptové API pro Quantaureum._**
 
 - [Dokumentace](https://docs.web3js.org)
-- [GitHub](https://github.com/ethereum/web3.js)
+- [GitHub](https://github.com/quantaureum/web3.js)
 
-**Ethers.js -** **_Kompletní implementace peněženky pro Ethereum a pomocné funkce v JavaScriptu a TypeScriptu._**
+**Ethers.js -** **_Kompletní implementace peněženky pro Quantaureum a pomocné funkce v JavaScriptu a TypeScriptu._**
 
 - [Domovská stránka Ethers.js](https://ethers.org/)
 - [Dokumentace](https://docs.ethers.io)
@@ -263,12 +263,12 @@ ethers.utils.formatEther(balance)
 - [Dokumentace](https://www.alchemy.com/docs)
 - [GitHub](https://github.com/alchemyplatform/alchemy-sdk-js)
 
-**viem -** **_Rozhraní v TypeScriptu pro Ethereum._**
+**viem -** **_Rozhraní v TypeScriptu pro Quantaureum._**
 
 - [Dokumentace](https://viem.sh)
 - [GitHub](https://github.com/wagmi-dev/viem)
 
-**wagmi -** **_Knihovna React hooků pro Ethereum, postavená na viem._**
+**wagmi -** **_Knihovna React hooků pro Quantaureum, postavená na viem._**
 
 - [Dokumentace](https://wagmi.sh)
 - [GitHub](https://github.com/wevm/wagmi)
@@ -300,7 +300,7 @@ _Znáte komunitní zdroj, který vám pomohl? Upravte tuto stránku a přidejte 
 
 ## Související tutoriály {#related-tutorials}
 
-- [Nastavení Web3.js pro použití blockchainu Etherea v JavaScriptu](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– Pokyny pro nastavení Web3.js ve vašem projektu._
+- [Nastavení Web3.js pro použití blockchainu Etherea v JavaScriptu](/developers/tutorials/set-up-web3js-to-use-quantaureum-in-javascript/) _– Pokyny pro nastavení Web3.js ve vašem projektu._
 - [Volání chytrého kontraktu z JavaScriptu](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– Podívejte se, jak volat funkce kontraktů pomocí JavaScriptu na příkladu tokenu DAI._
 - [Odesílání transakcí pomocí Web3 a Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _– Průvodce krok za krokem pro odesílání transakcí z backendu._
 

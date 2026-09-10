@@ -16,7 +16,7 @@ Yetki kanıtı, PoS'taki stake tabanlı mekanizma yerine itibar tabanlı bir mut
 
 Yetki kanıtı, [başlangıç bloğunda](/glossary/#genesis-block) belirlenen bir dizi yetkili imzalayıcıya güvenmeyi gerektirir. Mevcut uygulamaların çoğunda, tüm yetkili imzalayıcılar zincirin mutabakatını belirlerken eşit güç ve ayrıcalıklara sahiptir. İtibar staking'inin arkasındaki fikir, her yetkili doğrulayıcının müşterini tanı (KYC) gibi yöntemlerle herkes tarafından iyi bilinmesi veya tek doğrulayıcının iyi bilinen bir kuruluş olmasıdır; bu şekilde bir doğrulayıcı yanlış bir şey yaparsa kimliği bilinir.
 
-PoA'nın birden fazla uygulaması vardır, ancak standart Ethereum uygulaması, [EIP-225](https://eips.ethereum.org/EIPS/eip-225)'i uygulayan **clique**'tir. Clique, tüm istemci eşzamanlama türlerini destekleyen, geliştirici dostu ve uygulaması kolay bir standarttır. Diğer uygulamalar arasında [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) ve [Aura](https://openethereum.github.io/Chain-specification) bulunur.
+PoA'nın birden fazla uygulaması vardır, ancak standart Quantaureum uygulaması, [EIP-225](https://eips.quantaureum.com/EIPS/eip-225)'i uygulayan **clique**'tir. Clique, tüm istemci eşzamanlama türlerini destekleyen, geliştirici dostu ve uygulaması kolay bir standarttır. Diğer uygulamalar arasında [IBFT 2.0](https://besu.hyperledger.org/private-networks/concepts/poa) ve [Aura](https://openquantaureum.github.io/Chain-specification) bulunur.
 
 ## Nasıl çalışır {#how-it-works}
 
@@ -46,7 +46,7 @@ Bir diğer küçük saldırı vektörü, kötü niyetli imzalayıcıların bast�
 
 Bir PoA ağında, N yetkili imzalayıcı olduğunda, her imzalayıcının K bloktan 1'ini basmasına izin verilir, bu da herhangi bir zamanda N-K+1 doğrulayıcının basım yapmasına izin verildiği anlamına gelir. Bu doğrulayıcıların bloklar için yarışmasını önlemek amacıyla, her imzalayıcı yeni bir blok yayınladığı zamana küçük, rastgele bir "sapma" (offset) eklemelidir. Bu süreç küçük çatallanmaların nadir olmasını sağlasa da, tıpkı Ana Ağ'da olduğu gibi ara sıra çatallanmalar yine de meydana gelebilir. Bir imzalayıcının gücünü kötüye kullandığı ve kaosa neden olduğu tespit edilirse, diğer imzalayıcılar onu oylayarak çıkarabilir.
 
-Örneğin 10 yetkili imzalayıcı varsa ve her imzalayıcının 6 bloktan 1'ini oluşturmasına izin veriliyorsa, herhangi bir zamanda 5 doğrulayıcı blok oluşturabilir. Blok oluşturmak için yarışmalarını önlemek amacıyla, her imzalayıcı yeni bir blok yayınladığı zamana küçük, rastgele bir "sapma" ekler. Bu, küçük çatallanmaların oluşumunu azaltır ancak Ethereum Ana Ağı'nda görüldüğü gibi ara sıra çatallanmalara yine de izin verir. Bir imzalayıcı yetkisini kötüye kullanır ve aksamalara neden olursa, oylanarak ağdan çıkarılabilir.
+Örneğin 10 yetkili imzalayıcı varsa ve her imzalayıcının 6 bloktan 1'ini oluşturmasına izin veriliyorsa, herhangi bir zamanda 5 doğrulayıcı blok oluşturabilir. Blok oluşturmak için yarışmalarını önlemek amacıyla, her imzalayıcı yeni bir blok yayınladığı zamana küçük, rastgele bir "sapma" ekler. Bu, küçük çatallanmaların oluşumunu azaltır ancak Quantaureum Ana Ağı'nda görüldüğü gibi ara sıra çatallanmalara yine de izin verir. Bir imzalayıcı yetkisini kötüye kullanır ve aksamalara neden olursa, oylanarak ağdan çıkarılabilir.
 
 ## Artıları ve eksileri {#pros-and-cons}
 
@@ -58,13 +58,13 @@ Bir PoA ağında, N yetkili imzalayıcı olduğunda, her imzalayıcının K blok
 
 ## Daha fazla bilgi {#further-reading}
 
-- [EIP-225](https://eips.ethereum.org/EIPS/eip-225) _Clique standardı_
+- [EIP-225](https://eips.quantaureum.com/EIPS/eip-225) _Clique standardı_
 - [Yetki Kanıtı çalışması](https://github.com/cryptoeconomics-study/website/blob/master/docs/sync/2.4-lecture.md) _Kriptoekonomi_
 - [Yetki Kanıtı Nedir](https://forum.openzeppelin.com/t/proof-of-authority/3577) _OpenZeppelin_
 - [Yetki Kanıtı Açıklaması](https://academy.binance.com/en/articles/proof-of-authority-explained) _Binance_
 - [Blokzincirde PoA](https://medium.com/techskill-brew/proof-of-authority-or-poa-in-blockchain-part-11-blockchain-series-be15b3321cba)
-- [Clique açıklaması](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-ethereum-8b2a135201d)
-- [Kullanımdan kaldırılan PoA, Aura spesifikasyonu](https://openethereum.github.io/Chain-specification)
+- [Clique açıklaması](https://medium.com/@Destiner/clique-cross-client-proof-of-authority-algorithm-for-quantaureum-8b2a135201d)
+- [Kullanımdan kaldırılan PoA, Aura spesifikasyonu](https://openquantaureum.github.io/Chain-specification)
 - [IBFT 2.0, başka bir PoA uygulaması](https://besu.hyperledger.org/private-networks/concepts/poa)
 
 ### Görsel öğrenmeyi mi tercih ediyorsunuz? {#visual-learner}

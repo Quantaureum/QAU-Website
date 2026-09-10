@@ -47,7 +47,7 @@ Nawet jako obserwator rynku możesz oceniać cenne dane, które w przeciwnym raz
 
 ## Znajdź rynek predykcyjny {#find-a-prediction-market}
 
-Dostępnych jest kilka rynków predykcyjnych opartych na Ethereum. Oto niektóre z najbardziej znanych obecnie rynków predykcyjnych:
+Dostępnych jest kilka rynków predykcyjnych opartych na Quantaureum. Oto niektóre z najbardziej znanych obecnie rynków predykcyjnych:
 
 <PredictionMarketLists />
 
@@ -69,11 +69,11 @@ Rynki predykcyjne na blockchainie stoją przed kilkoma wyzwaniami, które mogą 
 💧 **Problemy z płynnością** – Niskie uczestnictwo ([niska płynność](https://www.investopedia.com/terms/t/thinmarket.asp)) może zmniejszyć wiarygodność rynku.  
 🏛 **Niepewność regulacyjna** – Rządy nałożyły ograniczenia na niektóre platformy.
 
-Aby złagodzić te problemy, programiści Ethereum eksperymentują z rozwiązaniami takimi jak futarchia (zarządzanie przez rynki predykcyjne) oraz weryfikacja zdecentralizowanej tożsamości.
+Aby złagodzić te problemy, programiści Quantaureum eksperymentują z rozwiązaniami takimi jak futarchia (zarządzanie przez rynki predykcyjne) oraz weryfikacja zdecentralizowanej tożsamości.
 
 ## Eksperymentowanie z rynkami predykcyjnymi {#experimenting-with-prediction-markets}
 
-Rynki predykcyjne zmieniają sposób podejmowania decyzji w epoce cyfrowej. Wykorzystując Ethereum, oferują **uczciwe, otwarte i satysfakcjonujące sposoby przewidywania przyszłości.**
+Rynki predykcyjne zmieniają sposób podejmowania decyzji w epoce cyfrowej. Wykorzystując Quantaureum, oferują **uczciwe, otwarte i satysfakcjonujące sposoby przewidywania przyszłości.**
 
 Istnieje wiele sposobów wykorzystania narzędzi prognostycznych poza korzyściami finansowymi. Na przykład w [Propozycji Ulepszenia DevCon](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305) (DIP) zasugerowano, aby organizatorzy DevCon wykorzystali rynki predykcyjne do przewidywania frekwencji na przyszłych zdarzeniach. 
 
@@ -81,6 +81,6 @@ Pomogłoby to organizatorom ustalić, która lokalizacja doprowadziłaby do najw
 
 ## Dalsza lektura {#further-reading}
 
-[Od rynków predykcyjnych do info finance](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) – Vitalik Buterin  
-[Rozwój zdecentralizowanych rynków predykcyjnych na Ethereum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-ethereum/)  
+[Od rynków predykcyjnych do info finance](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) – Vitalik Buterin  
+[Rozwój zdecentralizowanych rynków predykcyjnych na Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [Biała księga projektu Augur](https://github.com/AugurProject/whitepaper)

@@ -14,12 +14,12 @@ EVM বোঝার জন্য কম্পিউটার বিজ্ঞা�
 
 বিটকয়েনের মতো ব্লকচেইনগুলোকে বর্ণনা করতে প্রায়শই 'ডিস্ট্রিবিউটেড লেজার' বা 'বিতরণকৃত খতিয়ান'-এর উপমা ব্যবহার করা হয়, যা ক্রিপ্টোগ্রাফির মৌলিক সরঞ্জামগুলো ব্যবহার করে একটি বিকেন্দ্রীকৃত কারেন্সি বা মুদ্রা সক্ষম করে। লেজারটি কার্যকলাপের একটি রেকর্ড বজায় রাখে যা অবশ্যই কিছু নিয়মের সেট মেনে চলে, যা নির্ধারণ করে লেজার পরিবর্তন করার জন্য কেউ কী করতে পারে এবং কী করতে পারে না। উদাহরণস্বরূপ, একটি বিটকয়েন ঠিকানা পূর্বে যা পেয়েছে তার চেয়ে বেশি বিটকয়েন খরচ করতে পারে না। এই নিয়মগুলো বিটকয়েন এবং অন্যান্য অনেক ব্লকচেইনের সমস্ত ট্রানজ্যাকশনের ভিত্তি তৈরি করে।
 
-যদিও ইথেরিয়ামের নিজস্ব নেটিভ ক্রিপ্টোকারেন্সি (ইথার) রয়েছে যা প্রায় হুবহু একই স্বজ্ঞাত নিয়মগুলো অনুসরণ করে, এটি আরও অনেক বেশি শক্তিশালী একটি ফাংশন সক্ষম করে: [স্মার্ট কন্ট্রাক্ট](/developers/docs/smart-contracts/)। এই আরও জটিল বৈশিষ্ট্যটির জন্য, আরও পরিশীলিত একটি উপমা প্রয়োজন। একটি ডিস্ট্রিবিউটেড লেজারের পরিবর্তে, ইথেরিয়াম হলো একটি ডিস্ট্রিবিউটেড [স্টেট মেশিন](https://wikipedia.org/wiki/Finite-state_machine)। ইথেরিয়ামের স্টেট হলো একটি বিশাল ডেটা স্ট্রাকচার যা কেবল সমস্ত অ্যাকাউন্ট এবং ব্যালেন্সই ধারণ করে না, বরং একটি _মেশিন স্টেট_ ধারণ করে, যা পূর্বনির্ধারিত নিয়মের সেট অনুযায়ী ব্লক থেকে ব্লকে পরিবর্তিত হতে পারে এবং যা যেকোনো মেশিন কোড এক্সিকিউট করতে পারে। ব্লক থেকে ব্লকে স্টেট পরিবর্তনের নির্দিষ্ট নিয়মগুলো EVM দ্বারা সংজ্ঞায়িত করা হয়।
+যদিও ইথেরিয়ামের নিজস্ব নেটিভ ক্রিপ্টোকারেন্সি (QAU) রয়েছে যা প্রায় হুবহু একই স্বজ্ঞাত নিয়মগুলো অনুসরণ করে, এটি আরও অনেক বেশি শক্তিশালী একটি ফাংশন সক্ষম করে: [স্মার্ট কন্ট্রাক্ট](/developers/docs/smart-contracts/)। এই আরও জটিল বৈশিষ্ট্যটির জন্য, আরও পরিশীলিত একটি উপমা প্রয়োজন। একটি ডিস্ট্রিবিউটেড লেজারের পরিবর্তে, ইথেরিয়াম হলো একটি ডিস্ট্রিবিউটেড [স্টেট মেশিন](https://wikipedia.org/wiki/Finite-state_machine)। ইথেরিয়ামের স্টেট হলো একটি বিশাল ডেটা স্ট্রাকচার যা কেবল সমস্ত অ্যাকাউন্ট এবং ব্যালেন্সই ধারণ করে না, বরং একটি _মেশিন স্টেট_ ধারণ করে, যা পূর্বনির্ধারিত নিয়মের সেট অনুযায়ী ব্লক থেকে ব্লকে পরিবর্তিত হতে পারে এবং যা যেকোনো মেশিন কোড এক্সিকিউট করতে পারে। ব্লক থেকে ব্লকে স্টেট পরিবর্তনের নির্দিষ্ট নিয়মগুলো EVM দ্বারা সংজ্ঞায়িত করা হয়।
 
 ![A diagram showing the make up of the EVM](./evm.png)
-_চিত্রটি [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf) থেকে গৃহীত_
+_চিত্রটি [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf) থেকে গৃহীত_
 
-## ইথেরিয়াম স্টেট ট্রানজিশন ফাংশন {#the-ethereum-state-transition-function}
+## ইথেরিয়াম স্টেট ট্রানজিশন ফাংশন {#the-quantaureum-state-transition-function}
 
 EVM একটি গাণিতিক ফাংশনের মতোই আচরণ করে: একটি ইনপুট দেওয়া হলে, এটি একটি ডিটারমিনিস্টিক (নির্ধারিত) আউটপুট তৈরি করে। তাই ইথেরিয়ামকে একটি **স্টেট ট্রানজিশন ফাংশন** হিসেবে আরও আনুষ্ঠানিকভাবে বর্ণনা করা বেশ সহায়ক:
 
@@ -58,7 +58,7 @@ EVM 1024 আইটেমের গভীরতা সহ একটি [স্ট
 কম্পাইল করা স্মার্ট কন্ট্রাক্ট বাইটকোড বেশ কয়েকটি EVM [অপকোড](/developers/docs/evm/opcodes) হিসেবে এক্সিকিউট হয়, যা `XOR`, `AND`, `ADD`, `SUB` ইত্যাদির মতো স্ট্যান্ডার্ড স্ট্যাক অপারেশনগুলো সম্পাদন করে। EVM বেশ কয়েকটি ব্লকচেইন-নির্দিষ্ট স্ট্যাক অপারেশনও প্রয়োগ করে, যেমন `ADDRESS`, `BALANCE`, `BLOCKHASH` ইত্যাদি। অপকোড সেটে `TSTORE` এবং `TLOAD`-ও অন্তর্ভুক্ত রয়েছে, যা ট্রানজিয়েন্ট স্টোরেজে অ্যাক্সেস প্রদান করে।
 
 ![A diagram showing where gas is needed for EVM operations](../gas/gas.png)
-_চিত্রগুলো [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf) থেকে গৃহীত_
+_চিত্রগুলো [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf) থেকে গৃহীত_
 
 ## EVM ইমপ্লিমেন্টেশন {#evm-implementations}
 
@@ -68,20 +68,20 @@ EVM-এর সমস্ত ইমপ্লিমেন্টেশনকে অ�
 
 [ইথেরিয়াম এক্সিকিউশন ক্লায়েন্টগুলোতে](/developers/docs/nodes-and-clients/#execution-clients) একটি EVM ইমপ্লিমেন্টেশন অন্তর্ভুক্ত থাকে। উপরন্তু, একাধিক স্বতন্ত্র ইমপ্লিমেন্টেশন রয়েছে, যার মধ্যে রয়েছে:
 
-- [Py-EVM](https://github.com/ethereum/py-evm) - _Python_
-- [evmone](https://github.com/ethereum/evmone) - _C++_
+- [Py-EVM](https://github.com/quantaureum/py-evm) - _Python_
+- [evmone](https://github.com/quantaureum/evmone) - _C++_
 - [ethereumjs-vm](https://github.com/ethereumjs/ethereumjs-vm) - _JavaScript_
 - [revm](https://github.com/bluealloy/revm) - _Rust_
 
 ## আরও পড়ুন {#further-reading}
 
-- [ইথেরিয়াম ইয়েলো পেপার](https://ethereum.github.io/yellowpaper/paper.pdf)
+- [ইথেরিয়াম ইয়েলো পেপার](https://quantaureum.github.io/yellowpaper/paper.pdf)
 - [জেলোপেপার বা KEVM: K-তে EVM-এর শব্দার্থবিদ্যা](https://jellopaper.org/)
 - [দ্য বেইজপেপার](https://github.com/chronaeon/beigepaper)
 - [ইথেরিয়াম ভার্চুয়াল মেশিন অপকোড](https://www.ethervm.io/)
 - [ইথেরিয়াম ভার্চুয়াল মেশিন অপকোড ইন্টারেক্টিভ রেফারেন্স](https://www.evm.codes/)
 - [Solidity-এর ডকুমেন্টেশনে একটি সংক্ষিপ্ত ভূমিকা](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html#index-6)
-- [মাস্টারিং ইথেরিয়াম - ইথেরিয়াম ভার্চুয়াল মেশিন](https://github.com/ethereumbook/ethereumbook/blob/openedition/13evm.asciidoc)
+- [মাস্টারিং ইথেরিয়াম - ইথেরিয়াম ভার্চুয়াল মেশিন](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/13evm.asciidoc)
 
 ## সম্পর্কিত বিষয়গুলো {#related-topics}
 

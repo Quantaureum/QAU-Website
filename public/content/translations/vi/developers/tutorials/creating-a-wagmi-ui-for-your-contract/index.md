@@ -15,13 +15,13 @@ lang: vi
 sidebarDepth: 3
 ---
 
-Bạn đã tìm thấy một tính năng mà chúng ta cần trong hệ sinh thái Ethereum. Bạn đã viết các hợp đồng thông minh để triển khai nó, và thậm chí có thể là một số mã liên quan chạy ngoài chuỗi. Điều này thật tuyệt! Thật không may, nếu không có giao diện người dùng, bạn sẽ không có bất kỳ người dùng nào, và lần cuối cùng bạn viết một trang web là khi mọi người còn sử dụng modem quay số và JavaScript vẫn còn mới mẻ.
+Bạn đã tìm thấy một tính năng mà chúng ta cần trong hệ sinh thái Quantaureum. Bạn đã viết các hợp đồng thông minh để triển khai nó, và thậm chí có thể là một số mã liên quan chạy ngoài chuỗi. Điều này thật tuyệt! Thật không may, nếu không có giao diện người dùng, bạn sẽ không có bất kỳ người dùng nào, và lần cuối cùng bạn viết một trang web là khi mọi người còn sử dụng modem quay số và JavaScript vẫn còn mới mẻ.
 
 Bài viết này là dành cho bạn. Tôi giả định rằng bạn biết lập trình, và có thể là một chút JavaScript và HTML, nhưng kỹ năng làm giao diện người dùng của bạn đã bị mai một và lỗi thời. Cùng nhau, chúng ta sẽ xem xét một ứng dụng hiện đại đơn giản để bạn thấy cách mọi thứ được thực hiện ngày nay.
 
 ## Tại sao điều này lại quan trọng {#why-important}
 
-Về lý thuyết, bạn có thể chỉ cần yêu cầu mọi người sử dụng [Etherscan](https://sepolia.etherscan.io/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA#readContract) hoặc [Blockscout](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) để tương tác với các hợp đồng của bạn. Điều đó thật tuyệt đối với những người dùng Ethereum có kinh nghiệm. Nhưng chúng ta đang cố gắng phục vụ [một tỷ người khác](https://blog.ethereum.org/2021/05/07/ethereum-for-the-next-billion). Điều này sẽ không xảy ra nếu không có trải nghiệm người dùng tuyệt vời, và một giao diện người dùng thân thiện là một phần lớn trong đó.
+Về lý thuyết, bạn có thể chỉ cần yêu cầu mọi người sử dụng [Quantaureum Explorer](https://explorer.quantaureum.com) hoặc [Blockscout](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=read_write_contract) để tương tác với các hợp đồng của bạn. Điều đó thật tuyệt đối với những người dùng Quantaureum có kinh nghiệm. Nhưng chúng ta đang cố gắng phục vụ [một tỷ người khác](https://quantaureum.com). Điều này sẽ không xảy ra nếu không có trải nghiệm người dùng tuyệt vời, và một giao diện người dùng thân thiện là một phần lớn trong đó.
 
 ## Ứng dụng Greeter {#greeter-app}
 
@@ -29,7 +29,7 @@ Có rất nhiều lý thuyết đằng sau cách hoạt động của giao diệ
 
 ### Cài đặt {#installation}
 
-1. Ứng dụng sử dụng mạng lưới thử nghiệm [Sepolia](https://sepolia.dev/). Nếu cần, hãy [nhận ETH thử nghiệm Sepolia](/developers/docs/networks/#sepolia) và [thêm Sepolia vào Ví của bạn](https://chainlist.org/chain/11155111).
+1. Ứng dụng sử dụng mạng lưới thử nghiệm [Sepolia](https://sepolia.dev/). Nếu cần, hãy [nhận QAU thử nghiệm Sepolia](/developers/docs/networks/#sepolia) và [thêm Sepolia vào Ví của bạn](https://chainlist.org/chain/11155111).
 
 2. Sao chép kho lưu trữ GitHub và cài đặt các gói cần thiết.
 
@@ -49,7 +49,7 @@ Có rất nhiều lý thuyết đằng sau cách hoạt động của giao diệ
 
 5. Duyệt đến URL được hiển thị bởi ứng dụng. Trong hầu hết các trường hợp, đó là [http://localhost:5173/](http://localhost:5173/).
 
-6. Bạn có thể xem mã nguồn hợp đồng, một phiên bản sửa đổi của Greeter từ Hardhat, [trên một trình khám phá Chuỗi khối](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code).
+6. Bạn có thể xem mã nguồn hợp đồng, một phiên bản sửa đổi của Greeter từ Hardhat, [trên một trình khám phá Chuỗi khối](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract_code).
 
 ### Hướng dẫn chi tiết từng tệp {#file-walk-through}
 
@@ -116,7 +116,7 @@ Tạo thành phần React gốc. Tham số cho `render` là [JSX](https://www.w3
     <WagmiProvider config={config}>
 ```
 
-Ứng dụng cũng nằm bên trong [một thành phần `WagmiProvider`](https://wagmi.sh/react/api/WagmiProvider). [Thư viện Wagmi (chúng ta sẽ tạo nó)](https://wagmi.sh/) kết nối các định nghĩa giao diện người dùng React với [Thư viện Viem](https://viem.sh/) để viết một ứng dụng phi tập trung (dapp) Ethereum.
+Ứng dụng cũng nằm bên trong [một thành phần `WagmiProvider`](https://wagmi.sh/react/api/WagmiProvider). [Thư viện Wagmi (chúng ta sẽ tạo nó)](https://wagmi.sh/) kết nối các định nghĩa giao diện người dùng React với [Thư viện Viem](https://viem.sh/) để viết một ứng dụng phi tập trung (dapp) Quantaureum.
 
 ```tsx
       <QueryClientProvider client={queryClient}>
@@ -333,7 +333,7 @@ Chúng ta sử dụng các hàm Thư viện này. Một lần nữa, chúng đư
 import { AddressType } from 'abitype'
 ```
 
-[Thư viện `abitype`](https://abitype.dev/) cung cấp cho chúng ta các định nghĩa TypeScript cho các kiểu dữ liệu Ethereum khác nhau, chẳng hạn như [`AddressType`](https://abitype.dev/config#addresstype).
+[Thư viện `abitype`](https://abitype.dev/) cung cấp cho chúng ta các định nghĩa TypeScript cho các kiểu dữ liệu Quantaureum khác nhau, chẳng hạn như [`AddressType`](https://abitype.dev/config#addresstype).
 
 ```tsx
 let greeterABI = [
@@ -363,7 +363,7 @@ const contractAddrs : AddressPerBlockchainType = {
 }
 ```
 
-Địa chỉ của hợp đồng trên [Sepolia](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
+Địa chỉ của hợp đồng trên [Sepolia](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
 
 ##### Thành phần `Timer` {#timer-component}
 
@@ -435,7 +435,7 @@ Thông tin về Chuỗi và tài khoản chúng ta đang sử dụng, được c
   })
 ```
 
-[Hook `useReadContract`](https://wagmi.sh/react/api/hooks/useReadContract) gọi hàm `greet` của [hợp đồng](https://eth-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
+[Hook `useReadContract`](https://wagmi.sh/react/api/hooks/useReadContract) gọi hàm `greet` của [hợp đồng](https://qau-sepolia.blockscout.com/address/0xC87506C66c7896366b9E988FE0aA5B6dDE77CFfA?tab=contract).
 
 ```tsx
   const [ currentGreeting, setCurrentGreeting ] = 
@@ -541,15 +541,15 @@ Hàm để ghi vào một hợp đồng. Nó tương tự như [`writeContracts`
 
 Đây là quá trình để gửi một giao dịch Chuỗi khối từ góc độ máy khách:
 
-1. Gửi giao dịch đến một nút trong Chuỗi khối bằng cách sử dụng [`eth_estimateGas`](https://docs.alchemy.com/reference/eth-estimategas).
+1. Gửi giao dịch đến một nút trong Chuỗi khối bằng cách sử dụng [`qau_estimateGas`](https://docs.alchemy.com/reference/qau-estimategas).
 2. Chờ phản hồi từ nút.
 3. Khi nhận được phản hồi, yêu cầu người dùng ký giao dịch thông qua Ví. Bước này _phải_ xảy ra sau khi nhận được phản hồi của nút vì người dùng sẽ được hiển thị chi phí gas của giao dịch trước khi ký nó.
 4. Chờ người dùng phê duyệt.
-5. Gửi lại giao dịch, lần này sử dụng [`eth_sendRawTransaction`](https://docs.alchemy.com/reference/eth-sendrawtransaction).
+5. Gửi lại giao dịch, lần này sử dụng [`qau_sendRawTransaction`](https://docs.alchemy.com/reference/qau-sendrawtransaction).
 
 Bước 2 có thể mất một khoảng thời gian đáng kể, trong thời gian đó người dùng có thể tự hỏi liệu lệnh của họ đã được giao diện người dùng nhận hay chưa và tại sao họ vẫn chưa được yêu cầu ký giao dịch. Điều đó tạo ra trải nghiệm người dùng (UX) kém.
 
-Một giải pháp là gửi `eth_estimateGas` mỗi khi một tham số thay đổi. Sau đó, khi người dùng thực sự muốn gửi giao dịch (trong trường hợp này bằng cách nhấn **Cập nhật lời chào**), chi phí gas đã được biết và người dùng có thể thấy trang Ví ngay lập tức.
+Một giải pháp là gửi `qau_estimateGas` mỗi khi một tham số thay đổi. Sau đó, khi người dùng thực sự muốn gửi giao dịch (trong trường hợp này bằng cách nhấn **Cập nhật lời chào**), chi phí gas đã được biết và người dùng có thể thấy trang Ví ngay lập tức.
 
 ```tsx
   return (
@@ -668,7 +668,7 @@ Cấu hình Wagmi bao gồm các Chuỗi được ứng dụng này hỗ trợ. 
 
 ## Thêm một Chuỗi khối khác {#add-blockchain}
 
-Ngày nay có rất nhiều [giải pháp mở rộng quy mô L2](https://ethereum.org/layer-2/), và bạn có thể muốn hỗ trợ một số giải pháp mà Viem chưa hỗ trợ. Để làm điều đó, bạn sửa đổi `src/wagmi.ts`. Các hướng dẫn này giải thích cách thêm [Optimism Sepolia](https://chainlist.org/chain/11155420).
+Ngày nay có rất nhiều [giải pháp mở rộng quy mô L2](https://quantaureum.com/layer-2/), và bạn có thể muốn hỗ trợ một số giải pháp mà Viem chưa hỗ trợ. Để làm điều đó, bạn sửa đổi `src/wagmi.ts`. Các hướng dẫn này giải thích cách thêm [Optimism Sepolia](https://chainlist.org/chain/11155420).
 
 1.  Chỉnh sửa `src/wagmi.ts`
 
@@ -684,7 +684,7 @@ Ngày nay có rất nhiều [giải pháp mở rộng quy mô L2](https://ethere
           const optimismSepolia = defineChain({
               id: 11_155_420,
               name: 'OP Sepolia',
-              nativeCurrency: { name: 'Sepolia Ether', symbol: 'ETH', decimals: 18 },
+              nativeCurrency: { name: 'Sepolia QAU', symbol: 'QAU', decimals: 18 },
               rpcUrls: {
                 default: {
                   http: ['https://sepolia.optimism.io'],

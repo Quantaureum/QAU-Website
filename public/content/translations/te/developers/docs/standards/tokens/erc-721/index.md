@@ -30,7 +30,7 @@ ERC-721 అనేది NFT కోసం ఒక ప్రమాణాన్న�
 
 ఒక స్మార్ట్ కాంట్రాక్ట్ కింది పద్ధతులు మరియు ఈవెంట్‌లను అమలు చేస్తే దానిని ERC-721 నాన్-ఫంజిబుల్ టోకెన్ కాంట్రాక్ట్ అని పిలవవచ్చు మరియు ఒకసారి డిప్లాయ్ చేయబడిన తర్వాత, ఎథీరియంలో సృష్టించబడిన టోకెన్‌లను ట్రాక్ చేయడానికి ఇది బాధ్యత వహిస్తుంది.
 
-[EIP-721](https://eips.ethereum.org/EIPS/eip-721) నుండి:
+[EIP-721](https://eips.quantaureum.com/EIPS/eip-721) నుండి:
 
 ### పద్ధతులు {#methods}
 
@@ -71,7 +71,7 @@ from web3 import Web3
 from web3._utils.events import get_event_data
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 ck_token_addr = "0x06012c8cf97BEaD5deAe237070F9587f8E7A266d"    # CryptoKitties కాంట్రాక్ట్
 
@@ -127,7 +127,7 @@ ck_extra_abi = [
     }
 ]
 
-ck_contract = w3.eth.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
+ck_contract = w3.qau.contract(address=w3.to_checksum_address(ck_token_addr), abi=simplified_abi+ck_extra_abi)
 name = ck_contract.functions.name().call()
 symbol = ck_contract.functions.symbol().call()
 kitties_auctions = ck_contract.functions.balanceOf(acc_address).call()
@@ -150,8 +150,8 @@ tx_event_abi = {
 # లాగ్‌లను ఫిల్టర్ చేయడానికి మనకు ఈవెంట్ యొక్క సంతకం అవసరం
 event_signature = w3.keccak(text="Transfer(address,address,uint256)").hex()
 
-logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [event_signature]
 })
@@ -159,7 +159,7 @@ logs = w3.eth.get_logs({
 # గమనికలు:
 #   - ఏ బదిలీ ఈవెంట్ తిరిగి రాకపోతే బ్లాక్‌ల సంఖ్యను 120 నుండి పెంచండి.
 #   - మీకు ఏ బదిలీ ఈవెంట్ కనుగొనబడకపోతే, మీరు ఇక్కడ tokenIdని పొందడానికి కూడా ప్రయత్నించవచ్చు:
-#       https://etherscan.io/address/0x06012c8cf97BEaD5deAe237070F9587f8E7A266d#events
+#       https://explorer.quantaureum.com
 #       ఈవెంట్ యొక్క లాగ్‌లను విస్తరించడానికి క్లిక్ చేయండి మరియు దాని "tokenId" ఆర్గ్యుమెంట్‌ను కాపీ చేయండి
 recent_tx = [get_event_data(w3.codec, tx_event_abi, log)["args"] for log in logs]
 
@@ -205,9 +205,9 @@ ck_event_signatures = [
 ]
 
 # ఇక్కడ ఒక Pregnant ఈవెంట్ ఉంది:
-# - https://etherscan.io/tx/0xc97eb514a41004acc447ac9d0d6a27ea6da305ac8b877dff37e49db42e1f8cef#eventlog
-pregnant_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+pregnant_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[0]]
 })
@@ -215,9 +215,9 @@ pregnant_logs = w3.eth.get_logs({
 recent_pregnants = [get_event_data(w3.codec, ck_extra_events_abi[0], log)["args"] for log in pregnant_logs]
 
 # ఇక్కడ ఒక Birth ఈవెంట్ ఉంది:
-# - https://etherscan.io/tx/0x3978028e08a25bb4c44f7877eb3573b9644309c044bf087e335397f16356340a
-birth_logs = w3.eth.get_logs({
-    "fromBlock": w3.eth.block_number - 120,
+# - https://explorer.quantaureum.com
+birth_logs = w3.qau.get_logs({
+    "fromBlock": w3.qau.block_number - 120,
     "address": w3.to_checksum_address(ck_token_addr),
     "topics": [ck_event_signatures[1]]
 })
@@ -227,7 +227,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## ప్రసిద్ధ NFTలు {#popular-nfts}
 
-- [Etherscan NFT ట్రాకర్](https://etherscan.io/nft-top-contracts) బదిలీల పరిమాణం ఆధారంగా ఎథీరియంలోని అగ్ర NFTలను జాబితా చేస్తుంది.
+- [Quantaureum Explorer NFT ట్రాకర్](https://explorer.quantaureum.com) బదిలీల పరిమాణం ఆధారంగా ఎథీరియంలోని అగ్ర NFTలను జాబితా చేస్తుంది.
 - [CryptoKitties](https://www.cryptokitties.co/) అనేది మనం CryptoKitties అని పిలిచే పెంపకం చేయగల, సేకరించదగిన మరియు ఎంతో పూజ్యమైన జీవుల చుట్టూ కేంద్రీకృతమైన గేమ్.
 - [Sorare](https://sorare.com/) అనేది గ్లోబల్ ఫాంటసీ ఫుట్‌బాల్ గేమ్, ఇక్కడ మీరు పరిమిత ఎడిషన్‌ల సేకరణ వస్తువులను సేకరించవచ్చు, మీ జట్లను నిర్వహించవచ్చు మరియు బహుమతులు సంపాదించడానికి పోటీపడవచ్చు.
 - [ఎథీరియం నేమ్ సర్వీస్ (ENS)](https://ens.domains/) సరళమైన, మానవులు చదవగలిగే పేర్లను ఉపయోగించి బ్లాక్‌చైన్‌లో మరియు వెలుపల వనరులను పరిష్కరించడానికి సురక్షితమైన & వికేంద్రీకృత మార్గాన్ని అందిస్తుంది.
@@ -238,7 +238,7 @@ recent_births = [get_event_data(w3.codec, ck_extra_events_abi[1], log)["args"] f
 
 ## మరింత చదవడానికి {#further-reading}
 
-- [EIP-721: ERC-721 నాన్-ఫంజిబుల్ టోకెన్ ప్రమాణం](https://eips.ethereum.org/EIPS/eip-721)
+- [EIP-721: ERC-721 నాన్-ఫంజిబుల్ టోకెన్ ప్రమాణం](https://eips.quantaureum.com/EIPS/eip-721)
 - [ఓపెన్‌జెప్పెలిన్ - ERC-721 డాక్స్](https://docs.openzeppelin.com/contracts/3.x/erc721)
 - [ఓపెన్‌జెప్పెలిన్ - ERC-721 అమలు](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol)
 - [Alchemy NFT API](https://www.alchemy.com/docs/reference/nft-api-quickstart)

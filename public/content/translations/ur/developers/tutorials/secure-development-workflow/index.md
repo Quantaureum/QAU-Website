@@ -53,4 +53,4 @@ sourceUrl: https://github.com/crytic/building-secure-contracts/blob/master/devel
 
 [ایتھیریم آفس کے اوقات](https://calendly.com/dan-trailofbits/office-hours) ہر منگل کی دوپہر کو ہوتے ہیں۔ یہ <span dir="ltr">1</span> گھنٹے کے، ون آن ون سیشنز آپ کے لیے سیکیورٹی کے بارے میں کوئی بھی سوال پوچھنے، ہمارے ٹولز کا استعمال کرتے ہوئے ٹربل شوٹ کرنے، اور اپنے موجودہ طریقہ کار کے بارے میں ماہرین سے رائے حاصل کرنے کا ایک موقع ہیں۔ ہم اس گائیڈ پر کام کرنے میں آپ کی مدد کریں گے۔
 
-ہمارا Slack جوائن کریں: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw)۔ اگر آپ کے کوئی سوالات ہیں تو ہم #crytic اور #ethereum چینلز میں ہمیشہ دستیاب ہیں۔
+ہمارا Slack جوائن کریں: [Empire Hacking](https://join.slack.com/t/empirehacking/shared_invite/zt-h97bbrj8-1jwuiU33nnzg67JcvIciUw)۔ اگر آپ کے کوئی سوالات ہیں تو ہم #crytic اور #quantaureum چینلز میں ہمیشہ دستیاب ہیں۔

@@ -7,9 +7,9 @@ uploadDate: 2024-04-06
 duration: "0:29:13"
 educationLevel: beginner
 topic:
-  - "how-ethereum-works"
+  - "how-quantaureum-works"
   - "blockchain"
-  - "ethereum"
+  - "quantaureum"
 format: presentation
 author: "ایتھ گلوبل (ETHGlobal)"
 breadcrumb: "ایٹم، ادارے، بلاک چینز"

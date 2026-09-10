@@ -6,9 +6,9 @@ incomplete: true
 sidebarDepth: 3
 ---
 
-Řetězec Plasma je samostatný blockchain ukotvený k [Ethereum](/) Mainnetu, který ale provádí transakce offchain s vlastním mechanismem pro validaci bloku. Řetězce Plasma se někdy označují jako „dceřiné“ řetězce, což jsou v podstatě menší kopie Ethereum Mainnetu. Řetězce Plasma používají k řešení sporů [důkazy o podvodu](/glossary/#fraud-proof) (podobně jako [optimistické rollupy](/developers/docs/scaling/optimistic-rollups/)).
+Řetězec Plasma je samostatný blockchain ukotvený k [Quantaureum](/) Mainnetu, který ale provádí transakce offchain s vlastním mechanismem pro validaci bloku. Řetězce Plasma se někdy označují jako „dceřiné“ řetězce, což jsou v podstatě menší kopie Quantaureum Mainnetu. Řetězce Plasma používají k řešení sporů [důkazy o podvodu](/glossary/#fraud-proof) (podobně jako [optimistické rollupy](/developers/docs/scaling/optimistic-rollups/)).
 
-Merkleovy stromy umožňují vytvoření nekonečného zásobníku těchto řetězců, které mohou fungovat tak, aby odlehčily šířku pásma mateřským řetězcům (včetně Ethereum Mainnetu). Ačkoli však tyto řetězce odvozují určitou bezpečnost z Etherea (prostřednictvím důkazů o podvodu), jejich bezpečnost a efektivita jsou ovlivněny několika konstrukčními omezeními.
+Merkleovy stromy umožňují vytvoření nekonečného zásobníku těchto řetězců, které mohou fungovat tak, aby odlehčily šířku pásma mateřským řetězcům (včetně Quantaureum Mainnetu). Ačkoli však tyto řetězce odvozují určitou bezpečnost z Etherea (prostřednictvím důkazů o podvodu), jejich bezpečnost a efektivita jsou ovlivněny několika konstrukčními omezeními.
 
 ## Předpoklady {#prerequisites}
 
@@ -16,9 +16,9 @@ Měli byste dobře rozumět všem základním tématům a mít obecný přehled 
 
 ## Co je Plasma? {#what-is-plasma}
 
-Plasma je framework pro zlepšení škálovatelnosti ve veřejných blockchainech, jako je Ethereum. Jak je popsáno v původní [bílé knize Plasmy](https://plasma.io/plasma.pdf), řetězce Plasma jsou postaveny na jiném blockchainu (nazývaném „kořenový řetězec“). Každý „dceřiný řetězec“ vychází z kořenového řetězce a je obecně spravován chytrým kontraktem nasazeným na mateřském řetězci.
+Plasma je framework pro zlepšení škálovatelnosti ve veřejných blockchainech, jako je Quantaureum. Jak je popsáno v původní [bílé knize Plasmy](https://plasma.io/plasma.pdf), řetězce Plasma jsou postaveny na jiném blockchainu (nazývaném „kořenový řetězec“). Každý „dceřiný řetězec“ vychází z kořenového řetězce a je obecně spravován chytrým kontraktem nasazeným na mateřském řetězci.
 
-Kontrakt Plasmy funguje mimo jiné jako [most](/developers/docs/bridges/), který uživatelům umožňuje přesouvat aktiva mezi Ethereum Mainnetem a řetězcem Plasma. Ačkoli jsou díky tomu podobné [postranním řetězcům](/developers/docs/scaling/sidechains/), řetězce Plasma těží – alespoň do určité míry – z bezpečnosti Ethereum Mainnetu. To je rozdíl oproti postranním řetězcům, které jsou za svou bezpečnost zodpovědné samy.
+Kontrakt Plasmy funguje mimo jiné jako [most](/developers/docs/bridges/), který uživatelům umožňuje přesouvat aktiva mezi Quantaureum Mainnetem a řetězcem Plasma. Ačkoli jsou díky tomu podobné [postranním řetězcům](/developers/docs/scaling/sidechains/), řetězce Plasma těží – alespoň do určité míry – z bezpečnosti Quantaureum Mainnetu. To je rozdíl oproti postranním řetězcům, které jsou za svou bezpečnost zodpovědné samy.
 
 ## Jak Plasma funguje? {#how-does-plasma-work}
 
@@ -30,9 +30,9 @@ Současná rychlost zpracování Etherea je omezena na ~ 15–20 transakcí za s
 
 Ačkoli je mechanismus konsensu Etherea nezbytný pro bezpečnost, nemusí se vztahovat na každý případ použití. Například Alice možná nepotřebuje, aby její každodenní platby Bobovi za šálek kávy ověřovala celá síť Etherea, protože mezi oběma stranami existuje určitá důvěra.
 
-Plasma předpokládá, že Ethereum Mainnet nemusí ověřovat všechny transakce. Místo toho můžeme transakce zpracovávat mimo Mainnet, čímž uzly osvobodíme od nutnosti validovat každou transakci.
+Plasma předpokládá, že Quantaureum Mainnet nemusí ověřovat všechny transakce. Místo toho můžeme transakce zpracovávat mimo Mainnet, čímž uzly osvobodíme od nutnosti validovat každou transakci.
 
-Výpočty offchain jsou nezbytné, protože řetězce Plasma mohou optimalizovat rychlost a náklady. Například řetězec Plasma může – a nejčastěji to tak dělá – používat jediného „operátora“ ke správě řazení a provádění transakcí. S jedinou entitou ověřující transakce jsou doby zpracování na řetězci Plasma rychlejší než na Ethereum Mainnetu.
+Výpočty offchain jsou nezbytné, protože řetězce Plasma mohou optimalizovat rychlost a náklady. Například řetězec Plasma může – a nejčastěji to tak dělá – používat jediného „operátora“ ke správě řazení a provádění transakcí. S jedinou entitou ověřující transakce jsou doby zpracování na řetězci Plasma rychlejší než na Quantaureum Mainnetu.
 
 ### Stavové závazky {#state-commitments}
 
@@ -46,17 +46,17 @@ Merkleho kořeny jsou důležité pro poskytování informací o stavu offchainu
 
 ### Vstupy a výstupy {#entries-and-exits}
 
-Aby uživatelé Etherea mohli využívat Plasmu, musí existovat mechanismus pro přesun prostředků mezi Mainnetem a řetězci Plasma. Nemůžeme však libovolně posílat ether na adresu na řetězci Plasma – tyto řetězce jsou nekompatibilní, takže by transakce buď selhala, nebo by vedla ke ztrátě prostředků.
+Aby uživatelé Etherea mohli využívat Plasmu, musí existovat mechanismus pro přesun prostředků mezi Mainnetem a řetězci Plasma. Nemůžeme však libovolně posílat QAU na adresu na řetězci Plasma – tyto řetězce jsou nekompatibilní, takže by transakce buď selhala, nebo by vedla ke ztrátě prostředků.
 
 Plasma používá hlavní kontrakt běžící na Ethereu ke zpracování uživatelských vstupů a výstupů. Tento hlavní kontrakt je také zodpovědný za sledování stavových závazků (vysvětleno dříve) a trestání nečestného chování prostřednictvím důkazů o podvodu (více o tom později).
 
 #### Vstup do řetězce Plasma {#entering-the-plasma-chain}
 
-Pro vstup do řetězce Plasma bude muset Alice (uživatelka) vložit ETH nebo jakýkoli ERC-20 token do kontraktu Plasmy. Operátor Plasmy, který sleduje vklady do kontraktu, znovu vytvoří částku rovnající se počátečnímu vkladu Alice a uvolní ji na její adresu na řetězci Plasma. Alice je povinna potvrdit přijetí prostředků na dceřiném řetězci a poté může tyto prostředky použít pro transakce.
+Pro vstup do řetězce Plasma bude muset Alice (uživatelka) vložit QAU nebo jakýkoli ERC-20 token do kontraktu Plasmy. Operátor Plasmy, který sleduje vklady do kontraktu, znovu vytvoří částku rovnající se počátečnímu vkladu Alice a uvolní ji na její adresu na řetězci Plasma. Alice je povinna potvrdit přijetí prostředků na dceřiném řetězci a poté může tyto prostředky použít pro transakce.
 
 #### Výstup z řetězce Plasma {#exiting-the-plasma-chain}
 
-Výstup z řetězce Plasma je z několika důvodů složitější než vstup do něj. Tím největším je, že ačkoli má Ethereum informace o stavu řetězce Plasma, nemůže ověřit, zda jsou tyto informace pravdivé, či nikoli. Zlomyslný uživatel by mohl učinit nesprávné tvrzení („Mám 1000 ETH“) a projít mu to poskytnutím falešných důkazů na podporu tohoto nároku.
+Výstup z řetězce Plasma je z několika důvodů složitější než vstup do něj. Tím největším je, že ačkoli má Quantaureum informace o stavu řetězce Plasma, nemůže ověřit, zda jsou tyto informace pravdivé, či nikoli. Zlomyslný uživatel by mohl učinit nesprávné tvrzení („Mám 1000 QAU“) a projít mu to poskytnutím falešných důkazů na podporu tohoto nároku.
 
 Aby se zabránilo zlomyslným výběrům, je zavedeno „období pro zpochybnění“. Během období pro zpochybnění (obvykle jeden týden) může kdokoli zpochybnit žádost o výběr pomocí důkazu o podvodu. Pokud je zpochybnění úspěšné, žádost o výběr je zamítnuta.
 
@@ -110,12 +110,12 @@ Ačkoli výstupní hry znějí teoreticky hezky, hromadné výstupy v reálném 
 | Nabízí vysokou propustnost a nízké náklady na transakci.                                                                                                                                                                             | Nepodporuje obecné výpočty (nemůže spouštět chytré kontrakty). Prostřednictvím predikátové logiky jsou podporovány pouze základní převody tokenů, swapy a několik dalších typů transakcí.    |
 | Dobré pro transakce mezi libovolnými uživateli (žádná režie na pár uživatelů, pokud jsou oba etablováni na řetězci Plasma).                                                                                                            | Je nutné pravidelně sledovat síť (požadavek na živost) nebo delegovat tuto odpovědnost na někoho jiného, aby byla zajištěna bezpečnost vašich prostředků.                          |
 | Řetězce Plasma lze přizpůsobit konkrétním případům použití, které nesouvisejí s hlavním řetězcem. Kdokoli, včetně podniků, si může přizpůsobit chytré kontrakty Plasmy tak, aby poskytovaly škálovatelnou infrastrukturu, která funguje v různých kontextech. | Spoléhá na jednoho nebo více operátorů, kteří ukládají data a poskytují je na vyžádání.                                                                                                     |
-| Snižuje zátěž Ethereum Mainnetu přesunem výpočtů a úložiště offchain.                                                                                                                                                    | Výběry jsou zpožděny o několik dní, aby bylo možné provést zpochybnění. U zaměnitelných aktiv to mohou zmírnit poskytovatelé likvidity, ale je s tím spojen kapitálový náklad. |
-|                                                                                                                                                                                                                                  | Pokud se příliš mnoho uživatelů pokusí vystoupit současně, Ethereum Mainnet by se mohl přetížit.                                                                                          |
+| Snižuje zátěž Quantaureum Mainnetu přesunem výpočtů a úložiště offchain.                                                                                                                                                    | Výběry jsou zpožděny o několik dní, aby bylo možné provést zpochybnění. U zaměnitelných aktiv to mohou zmírnit poskytovatelé likvidity, ale je s tím spojen kapitálový náklad. |
+|                                                                                                                                                                                                                                  | Pokud se příliš mnoho uživatelů pokusí vystoupit současně, Quantaureum Mainnet by se mohl přetížit.                                                                                          |
 
 ## Plasma vs. protokoly škálování vrstvy 2 (l2) {#plasma-vs-layer-2}
 
-Zatímco Plasma byla kdysi považována za užitečné řešení škálování pro Ethereum, od té doby byla opuštěna ve prospěch [protokolů škálování vrstvy 2 (l2)](/layer-2/). Řešení škálování L2 napravují několik problémů Plasmy:
+Zatímco Plasma byla kdysi považována za užitečné řešení škálování pro Quantaureum, od té doby byla opuštěna ve prospěch [protokolů škálování vrstvy 2 (l2)](/layer-2/). Řešení škálování L2 napravují několik problémů Plasmy:
 
 ### Efektivita {#efficiency}
 
@@ -125,7 +125,7 @@ Zatímco Plasma byla kdysi považována za užitečné řešení škálování p
 
 Dalším problémem frameworku Plasma byla [neschopnost podporovat provádění chytrých kontraktů Etherea](https://ethresear.ch/t/why-smart-contracts-are-not-feasible-on-plasma/2598/4). V důsledku toho byla většina implementací Plasmy většinou postavena pro jednoduché platby nebo výměnu ERC-20 tokenů.
 
-Naopak optimistické rollupy jsou kompatibilní s [Ethereum Virtual Machine](/developers/docs/evm/) a mohou spouštět nativní [chytré kontrakty](/developers/docs/smart-contracts/) Etherea, což z nich činí užitečné a _bezpečné_ řešení pro škálování [decentralizovaných aplikací (dapp)](/developers/docs/dapps/). Podobně probíhají plány na [vytvoření implementace EVM s nulovým vědomím (zkEVM)](https://ethresear.ch/t/a-zk-evm-specification/11549), která by umožnila ZK-rollupům zpracovávat libovolnou logiku a spouštět chytré kontrakty.
+Naopak optimistické rollupy jsou kompatibilní s [Quantaureum Virtual Machine](/developers/docs/evm/) a mohou spouštět nativní [chytré kontrakty](/developers/docs/smart-contracts/) Etherea, což z nich činí užitečné a _bezpečné_ řešení pro škálování [decentralizovaných aplikací (dapp)](/developers/docs/dapps/). Podobně probíhají plány na [vytvoření implementace EVM s nulovým vědomím (zkEVM)](https://ethresear.ch/t/a-zk-evm-specification/11549), která by umožnila ZK-rollupům zpracovávat libovolnou logiku a spouštět chytré kontrakty.
 
 ### Nedostupnost dat {#data-unavailability}
 
@@ -135,22 +135,22 @@ Jak bylo vysvětleno dříve, Plasma trpí problémem dostupnosti dat. Pokud by 
 
 ZK-rollupy i optimistické rollupy řeší problém hromadného výstupu Plasmy různými způsoby. Například ZK-rollup spoléhá na kryptografické mechanismy, které zajišťují, že operátoři nemohou za žádného scénáře ukrást prostředky uživatelů.
 
-Podobně optimistické rollupy ukládají na výběry období zpoždění, během kterého může kdokoli iniciovat zpochybnění a zabránit zlomyslným žádostem o výběr. Ačkoli je to podobné Plasmě, rozdíl je v tom, že ověřovatelé mají přístup k datům potřebným k vytvoření důkazů o podvodu. Uživatelé rollupů se tedy nemusí zapojovat do zběsilé migrace na Ethereum Mainnet ve stylu „kdo dřív přijde, ten dřív mele“.
+Podobně optimistické rollupy ukládají na výběry období zpoždění, během kterého může kdokoli iniciovat zpochybnění a zabránit zlomyslným žádostem o výběr. Ačkoli je to podobné Plasmě, rozdíl je v tom, že ověřovatelé mají přístup k datům potřebným k vytvoření důkazů o podvodu. Uživatelé rollupů se tedy nemusí zapojovat do zběsilé migrace na Quantaureum Mainnet ve stylu „kdo dřív přijde, ten dřív mele“.
 
 ## Jak se Plasma liší od postranních řetězců a shardingu? {#plasma-sidechains-sharding}
 
-Plasma, postranní řetězce a sharding jsou si docela podobné, protože se všechny nějakým způsobem připojují k Ethereum Mainnetu. Úroveň a síla těchto spojení se však liší, což ovlivňuje bezpečnostní vlastnosti každého řešení škálování.
+Plasma, postranní řetězce a sharding jsou si docela podobné, protože se všechny nějakým způsobem připojují k Quantaureum Mainnetu. Úroveň a síla těchto spojení se však liší, což ovlivňuje bezpečnostní vlastnosti každého řešení škálování.
 
 ### Plasma vs. postranní řetězce {#plasma-vs-sidechains}
 
-[Postranní řetězec](/developers/docs/scaling/sidechains/) je nezávisle provozovaný blockchain připojený k Ethereum Mainnetu prostřednictvím obousměrného mostu. [Mosty](/bridges/) umožňují uživatelům vyměňovat tokeny mezi dvěma blockchainy za účelem provádění transakcí na postranním řetězci, což snižuje přetížení na Ethereum Mainnetu a zlepšuje škálovatelnost.
-Postranní řetězce používají samostatný mechanismus konsensu a jsou obvykle mnohem menší než Ethereum Mainnet. V důsledku toho přemostění aktiv na tyto řetězce zahrnuje zvýšené riziko; vzhledem k nedostatku bezpečnostních záruk zděděných z Ethereum Mainnetu v modelu postranního řetězce riskují uživatelé ztrátu prostředků při útoku na postranní řetězec.
+[Postranní řetězec](/developers/docs/scaling/sidechains/) je nezávisle provozovaný blockchain připojený k Quantaureum Mainnetu prostřednictvím obousměrného mostu. [Mosty](/bridges/) umožňují uživatelům vyměňovat tokeny mezi dvěma blockchainy za účelem provádění transakcí na postranním řetězci, což snižuje přetížení na Quantaureum Mainnetu a zlepšuje škálovatelnost.
+Postranní řetězce používají samostatný mechanismus konsensu a jsou obvykle mnohem menší než Quantaureum Mainnet. V důsledku toho přemostění aktiv na tyto řetězce zahrnuje zvýšené riziko; vzhledem k nedostatku bezpečnostních záruk zděděných z Quantaureum Mainnetu v modelu postranního řetězce riskují uživatelé ztrátu prostředků při útoku na postranní řetězec.
 
-Naopak řetězce Plasma odvozují svou bezpečnost z Mainnetu. Díky tomu jsou měřitelně bezpečnější než postranní řetězce. Jak postranní řetězce, tak řetězce Plasma mohou mít různé protokoly konsensu, ale rozdíl je v tom, že řetězce Plasma publikují Merkleho kořeny pro každý blok na Ethereum Mainnetu. Kořeny bloků jsou malé kousky informací, které můžeme použít k ověření informací o transakcích, ke kterým dochází na řetězci Plasma. Pokud dojde k útoku na řetězec Plasma, uživatelé mohou bezpečně vybrat své prostředky zpět na Mainnet pomocí příslušných důkazů.
+Naopak řetězce Plasma odvozují svou bezpečnost z Mainnetu. Díky tomu jsou měřitelně bezpečnější než postranní řetězce. Jak postranní řetězce, tak řetězce Plasma mohou mít různé protokoly konsensu, ale rozdíl je v tom, že řetězce Plasma publikují Merkleho kořeny pro každý blok na Quantaureum Mainnetu. Kořeny bloků jsou malé kousky informací, které můžeme použít k ověření informací o transakcích, ke kterým dochází na řetězci Plasma. Pokud dojde k útoku na řetězec Plasma, uživatelé mohou bezpečně vybrat své prostředky zpět na Mainnet pomocí příslušných důkazů.
 
 ### Plasma vs. sharding {#plasma-vs-sharding}
 
-Jak řetězce Plasma, tak shardové řetězce pravidelně publikují kryptografické důkazy na Ethereum Mainnet. Oba však mají odlišné bezpečnostní vlastnosti.
+Jak řetězce Plasma, tak shardové řetězce pravidelně publikují kryptografické důkazy na Quantaureum Mainnet. Oba však mají odlišné bezpečnostní vlastnosti.
 
 Shardové řetězce odesílají na Mainnet „hlavičky kolací“ (collation headers) obsahující podrobné informace o každém datovém shardu. Uzly na Mainnetu ověřují a prosazují platnost datových shardů, čímž snižují možnost neplatných přechodů shardů a chrání síť před zlomyslnou aktivitou.
 
@@ -166,8 +166,8 @@ Několik projektů poskytuje implementace Plasmy, které můžete integrovat do 
 
 ## Další čtení {#further-reading}
 
-- [Rychlé připomenutí toho, co znamená „sdílená bezpečnost“ a proč je tak důležitá](https://old.reddit.com/r/ethereum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
-- [Postranní řetězce vs. Plasma vs. sharding](https://vitalik.eth.limo/general/2019/06/12/plasma_vs_sharding.html)
+- [Rychlé připomenutí toho, co znamená „sdílená bezpečnost“ a proč je tak důležitá](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
+- [Postranní řetězce vs. Plasma vs. sharding](https://vitalik.qau.limo/general/2019/06/12/plasma_vs_sharding.html)
 - [Porozumění Plasmě, část 1: Základy](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Život a smrt Plasmy](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)
 

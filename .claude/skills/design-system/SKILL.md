@@ -1,9 +1,9 @@
 ---
 name: design-system
-description: Use when building, refactoring, or styling any UI in the ethereum.org Next.js site (`src/components/`, `app/`, `src/styles/`, `public/content/`, or any `.tsx`/`.mdx`/`.css` change that affects the rendered UI). Provides canonical component choices, design tokens, RTL/i18n rules, server/client guidance, and the "use a variant, not a new component" pattern for the project's Tailwind v4 + Radix + shadcn-style design system.
+description: Use when building, refactoring, or styling any UI in the quantaureum.com Next.js site (`src/components/`, `app/`, `src/styles/`, `public/content/`, or any `.tsx`/`.mdx`/`.css` change that affects the rendered UI). Provides canonical component choices, design tokens, RTL/i18n rules, server/client guidance, and the "use a variant, not a new component" pattern for the project's Tailwind v4 + Radix + shadcn-style design system.
 ---
 
-# ethereum.org Design System
+# quantaureum.com Design System
 
 Tailwind v4 (CSS-first config, no `tailwind.config.ts`) + React 19 / Next.js App Router + Radix UI primitives + shadcn-style component layer. Tokens live in CSS. Read this file fully on activation; pull from `references/` only when the listed trigger applies.
 

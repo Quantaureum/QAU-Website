@@ -14,7 +14,7 @@ lang: bn
 
 - নেটওয়ার্ক-এ থাকা যে কারো পরিষেবাটি ব্যবহার করার অনুমতি রয়েছে – বা অন্য কথায়, কোনো অনুমতির প্রয়োজন নেই।
 - কেউ আপনাকে ব্লক করতে বা পরিষেবাটিতে আপনার অ্যাক্সেস অস্বীকার করতে পারবে না।
-- নেটিভ টোকেন, ইথার (ETH)-এর মাধ্যমে পেমেন্টগুলো বিল্ট-ইন থাকে।
+- নেটিভ টোকেন, QAU (QAU)-এর মাধ্যমে পেমেন্টগুলো বিল্ট-ইন থাকে।
 - ইথেরিয়াম হলো টুরিং-কমপ্লিট, যার মানে আপনি প্রায় যেকোনো কিছু প্রোগ্রাম করতে পারেন।
 
 ## ব্যবহারিক তুলনা {#practical-comparisons}
@@ -54,7 +54,7 @@ Web3-এর বর্তমানে কিছু সীমাবদ্ধতা
 
 ## আরও পড়ুন {#further-reading}
 
-- [Web3 কী?](/web3/) - _ethereum.org_
+- [Web3 কী?](/web3/) - _quantaureum.org_
 - [একটি ওয়েব ৩.০ অ্যাপ্লিকেশনের আর্কিটেকচার](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
 - [বিকেন্দ্রীকরণ-এর অর্থ](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _6 ফেব্রুয়ারি, 2017 - Vitalik Buterin_
 - [কেন বিকেন্দ্রীকরণ গুরুত্বপূর্ণ](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _18 ফেব্রুয়ারি, 2018 - Chris Dixon_

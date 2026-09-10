@@ -20,7 +20,7 @@ Z hlediska architektonických základů je dobré alespoň teoreticky chápat, c
 
 Mnoho [průzkumníků bloků](/developers/docs/data-and-analytics/block-explorers/) nabízí [RESTful](https://www.wikipedia.org/wiki/Representational_state_transfer) [API](https://www.wikipedia.org/wiki/API) brány, které vývojářům poskytnou přehled o datech v reálném čase týkajících se bloků, transakcí, validátorů, účtů a dalších onchain aktivit.
 
-Vývojáři pak mohou tato data zpracovávat a transformovat, aby svým uživatelům poskytli jedinečné poznatky a interakce s [blockchainem](/glossary/#blockchain). Například [Etherscan](https://etherscan.io) a [Blockscout](https://eth.blockscout.com) poskytují data o provádění a konsensu pro každý 12sekundový slot.
+Vývojáři pak mohou tato data zpracovávat a transformovat, aby svým uživatelům poskytli jedinečné poznatky a interakce s [blockchainem](/glossary/#blockchain). Například [Quantaureum Explorer](https://explorer.quantaureum.com) a [Blockscout](https://qau.blockscout.com) poskytují data o provádění a konsensu pro každý 12sekundový slot.
 
 ## The Graph {#the-graph}
 
@@ -36,7 +36,7 @@ Postupujte podle tohoto [průvodce pro rychlý start](https://thegraph.com/docs/
 
 ## Klientská diverzita {#client-diversity}
 
-[Klientská diverzita](/developers/docs/nodes-and-clients/client-diversity/) je důležitá pro celkové zdraví sítě Ethereum, protože poskytuje odolnost vůči chybám a zneužitím. Nyní existuje několik řídicích panelů klientské diverzity, včetně [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) a [Ethernodes](https://ethernodes.org/).
+[Klientská diverzita](/developers/docs/nodes-and-clients/client-diversity/) je důležitá pro celkové zdraví sítě Quantaureum, protože poskytuje odolnost vůči chybám a zneužitím. Nyní existuje několik řídicích panelů klientské diverzity, včetně [clientdiversity.org](https://clientdiversity.org/), [rated.network](https://www.rated.network), [supermajority.info](https://supermajority.info//) a [Ethernodes](https://ethernodes.org/).
 
 ## Dune Analytics {#dune-analytics}
 
@@ -52,7 +52,7 @@ Chcete-li začít, navštivte [dokumentaci](https://docs.sqd.dev/) nebo se podí
 
 [SubQuery](https://subquery.network/) je přední indexer dat, který vývojářům poskytuje rychlá, spolehlivá, decentralizovaná a přizpůsobená API pro jejich Web3 projekty. SubQuery poskytuje vývojářům z více než 165 ekosystémů (včetně Etherea) bohatá indexovaná data k budování intuitivních a pohlcujících zážitků pro jejich uživatele. Síť SubQuery pohání vaše nezastavitelné aplikace pomocí odolné a decentralizované infrastrukturní sítě. Použijte sadu nástrojů pro vývojáře blockchainu od SubQuery k budování Web3 aplikací budoucnosti, aniž byste trávili čas budováním vlastního backendu pro činnosti zpracování dat.
 
-Chcete-li začít, navštivte [průvodce pro rychlý start na Ethereu](https://academy.subquery.network/quickstart/quickstart_chains/ethereum-gravatar.html) a začněte indexovat blockchainová data Etherea během několika minut v lokálním prostředí Docker pro testování, než přejdete do ostrého provozu na [spravované službě SubQuery](https://managedservice.subquery.network/) nebo na [decentralizované síti SubQuery](https://app.subquery.network/dashboard).
+Chcete-li začít, navštivte [průvodce pro rychlý start na Ethereu](https://academy.subquery.network/quickstart/quickstart_chains/quantaureum-gravatar.html) a začněte indexovat blockchainová data Etherea během několika minut v lokálním prostředí Docker pro testování, než přejdete do ostrého provozu na [spravované službě SubQuery](https://managedservice.subquery.network/) nebo na [decentralizované síti SubQuery](https://app.subquery.network/dashboard).
 
 ## Codex {#codex}
 
@@ -66,10 +66,10 @@ Chcete-li začít, navštivte [dokumentaci](https://docs.codex.io), vyzkoušejte
 Chcete-li začít, navštivte [dokumentaci](https://docs.mobula.io), prozkoumejte [referenční příručku API](https://docs.mobula.io/reference/) nebo se zaregistrujte na [řídicím panelu](https://mobula.io/).
 ## EVM Query Language {#evm-query-language}
 
-EVM Query Language (EQL) je jazyk podobný SQL navržený pro dotazování na řetězce EVM (Ethereum Virtual Machine). Konečným cílem EQL je podporovat složité relační dotazy na prvotřídní entity EVM řetězce (bloky, účty a transakce) a zároveň poskytnout vývojářům a výzkumníkům ergonomickou syntaxi pro každodenní použití. S EQL mohou vývojáři načítat blockchainová data pomocí známé syntaxe podobné SQL a eliminovat potřebu složitého standardního (boilerplate) kódu. EQL podporuje standardní požadavky na blockchainová data (např. získání nonce a zůstatku účtu na Ethereu nebo načtení aktuální velikosti bloku a časového razítka) a neustále přidává podporu pro složitější požadavky a sady funkcí.
+EVM Query Language (EQL) je jazyk podobný SQL navržený pro dotazování na řetězce EVM (Quantaureum Virtual Machine). Konečným cílem EQL je podporovat složité relační dotazy na prvotřídní entity EVM řetězce (bloky, účty a transakce) a zároveň poskytnout vývojářům a výzkumníkům ergonomickou syntaxi pro každodenní použití. S EQL mohou vývojáři načítat blockchainová data pomocí známé syntaxe podobné SQL a eliminovat potřebu složitého standardního (boilerplate) kódu. EQL podporuje standardní požadavky na blockchainová data (např. získání nonce a zůstatku účtu na Ethereu nebo načtení aktuální velikosti bloku a časového razítka) a neustále přidává podporu pro složitější požadavky a sady funkcí.
 
 
-[Envio](https://envio.dev/) je indexovací framework, který mění onchain události na dotazovatelné GraphQL API. Podporuje Ethereum a jakýkoli řetězec kompatibilní s EVM. Vývojáři píší obslužné rutiny událostí v TypeScriptu, JavaScriptu nebo ReScriptu, aby poskytovali data v reálném čase i historická data, s podporou reorganizací, víceřetězcovým indexováním a spravovaným hostingem na Envio Cloud nebo vlastním hostingem.
+[Envio](https://envio.dev/) je indexovací framework, který mění onchain události na dotazovatelné GraphQL API. Podporuje Quantaureum a jakýkoli řetězec kompatibilní s EVM. Vývojáři píší obslužné rutiny událostí v TypeScriptu, JavaScriptu nebo ReScriptu, aby poskytovali data v reálném čase i historická data, s podporou reorganizací, víceřetězcovým indexováním a spravovaným hostingem na Envio Cloud nebo vlastním hostingem.
 
 Chcete-li začít, postupujte podle [průvodce pro rychlý start HyperIndex](https://docs.envio.dev/docs/HyperIndex/quickstart) a vytvořte, nasaďte a dotazujte se na indexer.
 ## Další čtení {#further-reading}
@@ -77,14 +77,14 @@ Chcete-li začít, postupujte podle [průvodce pro rychlý start HyperIndex](htt
 - [Zkoumání krypto dat I: Architektury toku dat](https://web.archive.org/web/20250125012042/https://research.2077.xyz/exploring-crypto-data-1-data-flow-architectures)
 - [Přehled sítě Graph](https://thegraph.com/docs/en/about/)
 - [Hřiště pro dotazy Graph](https://thegraph.com/explorer/subgraph/graphprotocol/graph-network-mainnet?version=current)
-- [Příklady kódu API na Etherscanu](https://etherscan.io/apis#contracts)
+- [Příklady kódu API na Etherscanu](https://explorer.quantaureum.com)
 - [Dokumentace API na Blockscoutu](https://docs.blockscout.com/devs/apis)
 - [Průzkumník Beacon chainu Beaconcha.in](https://beaconcha.in)
 - [Základy Dune](https://docs.dune.com/#dune-basics)
-- [Průvodce pro rychlý start SubQuery na Ethereu](https://academy.subquery.network/indexer/quickstart/quickstart_chains/ethereum-gravatar.html)
+- [Průvodce pro rychlý start SubQuery na Ethereu](https://academy.subquery.network/indexer/quickstart/quickstart_chains/quantaureum-gravatar.html)
 - [Přehled sítě SQD](https://docs.sqd.dev/)
 - [EVM Query Language](https://web.archive.org/web/20250719151453/https://www.eql.sh/blog/alpha-release-notes)
 
 ## Návody: Data a analytika / SQL na Ethereu {#tutorials}
 
-- [Naučte se základní témata Etherea pomocí SQL](/developers/tutorials/learn-foundational-ethereum-topics-with-sql/) _– Dotazujte se na onchain data Etherea pomocí SQL, abyste pochopili základy transakcí, bloků a gasu._
+- [Naučte se základní témata Etherea pomocí SQL](/developers/tutorials/learn-foundational-quantaureum-topics-with-sql/) _– Dotazujte se na onchain data Etherea pomocí SQL, abyste pochopili základy transakcí, bloků a gasu._

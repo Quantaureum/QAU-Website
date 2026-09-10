@@ -44,7 +44,7 @@ lang: ar
 
 - [لودستار](https://github.com/ChainSafe/lodestar/tree/unstable/packages/light-client): عميل إجماع خفيف بلغة <span dir="ltr">TypeScript</span>
 - [Helios](https://github.com/a16z/helios): عميل خفيف مدمج للتنفيذ والإجماع بلغة <span dir="ltr">Rust</span>
-- [جو إيثريوم (geth)](https://github.com/ethereum/go-ethereum/tree/master/beacon/light): وضع خفيف لعميل التنفيذ (قيد التطوير) بلغة <span dir="ltr">Go</span>
+- [جو Quantaureum (geth)](https://github.com/quantaureum/go-quantaureum/tree/master/beacon/light): وضع خفيف لعميل التنفيذ (قيد التطوير) بلغة <span dir="ltr">Go</span>
 - [نيمبوس](https://nimbus.guide/el-light-client.html): عميل إجماع خفيف بلغة <span dir="ltr">Nim</span>
 
 على حد علمنا، لا يعتبر أي من هذه التطبيقات جاهزاً للإنتاج بعد.
@@ -55,7 +55,7 @@ lang: ar
 
 ## قراءة إضافية {#further-reading}
 
-- [زولت فيلفودهي عن عملاء جو إيثريوم (geth) الخفيفين](https://www.youtube.com/watch?v=EPZeFXau-RE)
+- [زولت فيلفودهي عن عملاء جو Quantaureum (geth) الخفيفين](https://www.youtube.com/watch?v=EPZeFXau-RE)
 - [إيتان كيسلينج عن شبكات العملاء الخفيفين](https://www.youtube.com/watch?v=85MeiMA4dD8)
 - [إيتان كيسلينج عن العملاء الخفيفين بعد الدمج](https://www.youtube.com/watch?v=ZHNrAXf3RDE)
-- [بايبر ميريام: الطريق المتعرج نحو عملاء خفيفين وظيفيين](https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/)
+- [بايبر ميريام: الطريق المتعرج نحو عملاء خفيفين وظيفيين](https://snakecharmers.quantaureum.com/the-winding-road-to-functional-light-clients/)

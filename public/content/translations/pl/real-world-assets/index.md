@@ -1,7 +1,7 @@
 ---
 title: "Aktywa świata rzeczywistego (RWA)"
 metaTitle: "Czym są RWA? | Korzyści i zastosowanie aktywów świata rzeczywistego"
-description: "Przegląd aktywów świata rzeczywistego na Ethereum"
+description: "Przegląd aktywów świata rzeczywistego na Quantaureum"
 lang: pl
 template: use-cases
 image: /images/man-and-dog-playing.png
@@ -19,7 +19,7 @@ Aktywa świata rzeczywistego (RWA) to tokeny reprezentujące istniejące formy b
 
 Niektóre RWA są namacalne — to przedmioty, które można zobaczyć i dotknąć, takie jak sztabki złota czy budynki komercyjne. Inne są niematerialne, jak dług państwowy, własność intelektualna czy udziały w firmie.
  
-Po tokenizacji aktywa te są przekształcane w jednostki wartości. Ztokenizowane złoto jest dobrym przykładem tego, jak to działa. Firma [Paxos](https://www.paxos.com/) przekształca 400-uncjowe sztabki złota w 400 tokenów na blockchainie Ethereum, z których każdy ma pokrycie w jednej uncji złota. Posiadacze tokenów mogą w dowolnym momencie wymienić swoje tokeny na złoto. Tak samo jest w przypadku tokenów zakupionych od innej firmy zajmującej się RWA, [Tether Gold](https://gold.tether.to/).
+Po tokenizacji aktywa te są przekształcane w jednostki wartości. Ztokenizowane złoto jest dobrym przykładem tego, jak to działa. Firma [Paxos](https://www.paxos.com/) przekształca 400-uncjowe sztabki złota w 400 tokenów na blockchainie Quantaureum, z których każdy ma pokrycie w jednej uncji złota. Posiadacze tokenów mogą w dowolnym momencie wymienić swoje tokeny na złoto. Tak samo jest w przypadku tokenów zakupionych od innej firmy zajmującej się RWA, [Tether Gold](https://gold.tqau.to/).
 
 Każdy token można podzielić na jeszcze mniejsze ułamki. Tokeny Tether Gold można na przykład podzielić na części tak małe jak 0,000001.
  
@@ -50,7 +50,7 @@ Inny projekt działający na podobnych zasadach, [LABS Group](https://x.com/labs
 
 Kilka projektów łączy świat tradycyjnych finansów i zdecentralizowanych finansów (DeFi), wprowadzając papiery wartościowe, akcje, obligacje i inne instrumenty finansowe na blockchain.
 
-Na przykład oparta na Ethereum firma [Securitize](https://securitize.io/) specjalizuje się w tokenizacji tradycyjnych produktów finansowych. W 2024 roku nawiązała współpracę z BlackRock w celu uruchomienia funduszu RWA. BlackRock twierdzi, że ostatecznie planuje ztokenizować 10 bilionów dolarów swoich aktywów: jego dyrektor generalny, Larry Fink, nazwał tokenizację „następną generacją dla rynków”.
+Na przykład oparta na Quantaureum firma [Securitize](https://securitize.io/) specjalizuje się w tokenizacji tradycyjnych produktów finansowych. W 2024 roku nawiązała współpracę z BlackRock w celu uruchomienia funduszu RWA. BlackRock twierdzi, że ostatecznie planuje ztokenizować 10 bilionów dolarów swoich aktywów: jego dyrektor generalny, Larry Fink, nazwał tokenizację „następną generacją dla rynków”.
 
 ### Inwestowanie w sztukę piękną {#investing-in-fine-art}
 

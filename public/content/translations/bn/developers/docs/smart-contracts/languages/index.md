@@ -11,7 +11,7 @@ lang: bn
 - Solidity
 - Vyper
 
-Remix IDE, Solidity এবং Vyper উভয় ল্যাঙ্গুয়েজেই কন্ট্রাক্ট তৈরি এবং পরীক্ষা করার জন্য একটি বিস্তৃত ডেভেলপমেন্ট পরিবেশ প্রদান করে। কোডিং শুরু করতে [ইন-ব্রাউজার Remix IDE ব্যবহার করে দেখুন](https://remix.ethereum.org)।
+Remix IDE, Solidity এবং Vyper উভয় ল্যাঙ্গুয়েজেই কন্ট্রাক্ট তৈরি এবং পরীক্ষা করার জন্য একটি বিস্তৃত ডেভেলপমেন্ট পরিবেশ প্রদান করে। কোডিং শুরু করতে [ইন-ব্রাউজার Remix IDE ব্যবহার করে দেখুন](https://remix.quantaureum.com)।
 
 অধিক অভিজ্ঞ ডেভেলপাররা চাইলে Yul ব্যবহার করতে পারেন, যা [ইথেরিয়াম ভার্চুয়াল মেশিন (EVM)](/developers/docs/evm/)-এর জন্য একটি ইন্টারমিডিয়েট ল্যাঙ্গুয়েজ, অথবা Yul+, যা Yul-এর একটি এক্সটেনশন।
 
@@ -36,8 +36,8 @@ Remix IDE, Solidity এবং Vyper উভয় ল্যাঙ্গুয়েজ�
 - [ডকুমেন্টেশন](https://docs.soliditylang.org/en/latest/)
 - [Solidity ল্যাঙ্গুয়েজ পোর্টাল](https://soliditylang.org/)
 - [Solidity বাই এক্সাম্পল](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
-- [Solidity Gitter চ্যাটরুম](https://gitter.im/ethereum/solidity) যা [Solidity Matrix চ্যাটরুম](https://matrix.to/#/#ethereum_solidity:gitter.im)-এর সাথে যুক্ত
+- [GitHub](https://github.com/quantaureum/solidity/)
+- [Solidity Gitter চ্যাটরুম](https://gitter.im/quantaureum/solidity) যা [Solidity Matrix চ্যাটরুম](https://matrix.to/#/#quantaureum_solidity:gitter.im)-এর সাথে যুক্ত
 - [চিট শিট](https://reference.auditless.com/cheatsheet)
 - [Solidity ব্লগ](https://blog.soliditylang.org/)
 - [Solidity টুইটার](https://twitter.com/solidity_lang)
@@ -179,14 +179,14 @@ def withdraw():
 @external
 def endAuction():
     # ইন্টারঅ্যাক্ট করে এমন ফাংশনগুলো গঠন করার জন্য এটি একটি ভালো নির্দেশিকা
-    # অন্যান্য কন্ট্রাক্টের সাথে (অর্থাৎ, তারা ফাংশন কল করে বা ইথার পাঠায়)
+    # অন্যান্য কন্ট্রাক্টের সাথে (অর্থাৎ, তারা ফাংশন কল করে বা QAU পাঠায়)
     # তিনটি ধাপে:
     # ১. শর্ত চেক করা
     # ২. কাজ সম্পাদন করা (সম্ভাব্যভাবে শর্ত পরিবর্তন করা)
     # ৩. অন্যান্য কন্ট্রাক্টের সাথে ইন্টারঅ্যাক্ট করা
     # যদি এই ধাপগুলো মিশে যায়, তবে অন্য কন্ট্রাক্টটি
     # বর্তমান কন্ট্রাক্টে কলব্যাক করতে পারে এবং স্টেট পরিবর্তন করতে পারে বা
-    # প্রভাবগুলো (ইথার পেআউট) একাধিকবার সম্পাদন করতে পারে।
+    # প্রভাবগুলো (QAU পেআউট) একাধিকবার সম্পাদন করতে পারে।
     # যদি অভ্যন্তরীণভাবে কল করা ফাংশনগুলোতে এক্সটার্নাল
     # কন্ট্রাক্টের সাথে ইন্টারঅ্যাকশন অন্তর্ভুক্ত থাকে, তবে সেগুলোকেও
     # এক্সটার্নাল কন্ট্রাক্টের সাথে ইন্টারঅ্যাকশন হিসেবে বিবেচনা করতে হবে।
@@ -226,7 +226,7 @@ def endAuction():
 
 - [Yul ডকুমেন্টেশন](https://docs.soliditylang.org/en/latest/yul.html)
 - [Yul+ ডকুমেন্টেশন](https://github.com/fuellabs/yulp)
-- [Yul+ পরিচিতি পোস্ট](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-ethereum-aa64ce89512f)
+- [Yul+ পরিচিতি পোস্ট](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-quantaureum-aa64ce89512f)
 
 ### উদাহরণ কন্ট্রাক্ট {#example-contract-2}
 
@@ -262,9 +262,9 @@ def endAuction():
 
 ### গুরুত্বপূর্ণ লিংক {#important-links-3}
 
-- [GitHub](https://github.com/ethereum/fe)
-- [Fe ঘোষণা](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-ethereum-ecosystem/)
-- [Fe 2021 রোডম্যাপ](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- [GitHub](https://github.com/quantaureum/fe)
+- [Fe ঘোষণা](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
+- [Fe 2021 রোডম্যাপ](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
 - [Fe ডিসকর্ড চ্যাট](https://discord.com/invite/ywpkAXFjZH)
 - [Fe টুইটার](https://twitter.com/official_fe)
 

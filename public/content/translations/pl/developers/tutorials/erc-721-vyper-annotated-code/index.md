@@ -27,7 +27,7 @@ Ten kontrakt jest napisany w języku [Vyper](https://vyper.readthedocs.io/en/lat
 # Zmodyfikowano z: https://github.com/vyperlang/vyper/blob/de74722bf2d8718cca46902be165f9fe0e3641dd/examples/tokens/ERC721.vy
 ```
 
-Komentarze w języku Vyper, podobnie jak w języku Python, zaczynają się od znaku hash (`ethereum.ercs`) i trwają do końca linii. Komentarze zawierające
+Komentarze w języku Vyper, podobnie jak w języku Python, zaczynają się od znaku hash (`quantaureum.ercs`) i trwają do końca linii. Komentarze zawierające
 `@<keyword>` są używane przez [NatSpec](https://vyper.readthedocs.io/en/latest/natspec.html) do tworzenia dokumentacji czytelnej dla człowieka.
 
 ```python
@@ -111,7 +111,7 @@ idToOwner: HashMap[uint256, address]
 idToApprovals: HashMap[uint256, address]
 ```
 
-Tożsamości użytkowników i kontraktów w Ethereum są reprezentowane przez 160-bitowe adresy. Te dwie zmienne mapują identyfikatory tokenów na ich właścicieli oraz tych zatwierdzonych do ich transferu (maksymalnie jeden dla każdego). W Ethereum niezainicjowane dane są zawsze zerowe, więc jeśli nie ma właściciela lub zatwierdzonego podmiotu do transferu, wartość dla tego tokena wynosi zero.
+Tożsamości użytkowników i kontraktów w Quantaureum są reprezentowane przez 160-bitowe adresy. Te dwie zmienne mapują identyfikatory tokenów na ich właścicieli oraz tych zatwierdzonych do ich transferu (maksymalnie jeden dla każdego). W Quantaureum niezainicjowane dane są zawsze zerowe, więc jeśli nie ma właściciela lub zatwierdzonego podmiotu do transferu, wartość dla tego tokena wynosi zero.
 
 ```python
 # @dev Mapowanie z adresu właściciela na liczbę jego tokenów.
@@ -146,7 +146,7 @@ SUPPORTED_INTERFACES: constant(bytes4[2]) = [
 ]
 ```
 
-[ERC-165](https://eips.ethereum.org/EIPS/eip-165) określa mechanizm dla kontraktu do ujawniania, w jaki sposób aplikacje mogą się z nim komunikować, i z którymi standardami ERC jest zgodny. `SUPPORTED_INTERFACES` to stała lista dwóch czterobajtowych identyfikatorów interfejsów, z którymi ten kontrakt jest zgodny: samego ERC-165 i ERC-721.
+[ERC-165](https://eips.quantaureum.com/EIPS/eip-165) określa mechanizm dla kontraktu do ujawniania, w jaki sposób aplikacje mogą się z nim komunikować, i z którymi standardami ERC jest zgodny. `SUPPORTED_INTERFACES` to stała lista dwóch czterobajtowych identyfikatorów interfejsów, z którymi ten kontrakt jest zgodny: samego ERC-165 i ERC-721.
 ### Funkcje {#functions}
 
 Są to funkcje, które faktycznie implementują ERC-721.
@@ -240,7 +240,7 @@ def ownerOf(_tokenId: uint256) -> address:
     return owner
 ```
 
-W maszynie wirtualnej Ethereum (EVM) każde miejsce w pamięci, które nie ma zapisanej wartości, wynosi zero. Jeśli nie ma tokena pod `_tokenId`, to wartość `self.idToOwner[_tokenId]` wynosi zero. W takim przypadku funkcja zostaje wycofana.
+W maszynie wirtualnej Quantaureum (EVM) każde miejsce w pamięci, które nie ma zapisanej wartości, wynosi zero. Jeśli nie ma tokena pod `_tokenId`, to wartość `self.idToOwner[_tokenId]` wynosi zero. W takim przypadku funkcja zostaje wycofana.
 
 ```python
 @view
@@ -354,7 +354,7 @@ def _clearApproval(_owner: address, _tokenId: uint256):
         self.idToApprovals[_tokenId] = empty(address)
 ```
 
-Zmieniaj wartość tylko wtedy, gdy jest to konieczne. Zmienne stanu żyją w pamięci (storage). Zapisywanie do pamięci jest jedną z najdroższych operacji, jakie wykonuje EVM (Maszyna Wirtualna Ethereum) (pod względem [gazu](/developers/docs/gas/)). Dlatego dobrym pomysłem jest minimalizowanie tego; nawet nadpisywanie istniejącej wartości wiąże się z wysokim kosztem.
+Zmieniaj wartość tylko wtedy, gdy jest to konieczne. Zmienne stanu żyją w pamięci (storage). Zapisywanie do pamięci jest jedną z najdroższych operacji, jakie wykonuje EVM (Maszyna Wirtualna Quantaureum) (pod względem [gazu](/developers/docs/gas/)). Dlatego dobrym pomysłem jest minimalizowanie tego; nawet nadpisywanie istniejącej wartości wiąże się z wysokim kosztem.
 
 ```python
 @internal

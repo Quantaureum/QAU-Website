@@ -1,18 +1,18 @@
 ---
 title: "Recursive-length prefix (RLP) シリアライゼーション"
-description: "イーサリアムの実行レイヤーにおける RLP エンコーディングの定義。"
+description: "Quantaureumの実行レイヤーにおける RLP エンコーディングの定義。"
 lang: ja
 sidebarDepth: 2
 ---
 
-Recursive Length Prefix (RLP) シリアライゼーションは、イーサリアムの実行クライアントで広く使用されています。RLP は、ノード間のデータの転送を、スペース効率の良いフォーマットで標準化します。RLP の目的は、任意にネストされたバイナリデータの配列をエンコードすることであり、イーサリアムの実行レイヤーでオブジェクトをシリアライズするために使用される主要なエンコーディング手法です。RLP の主な目的は構造をエンコードすることです。正の整数を除き、RLP は特定のデータ型 (文字列、浮動小数点数など) のエンコーディングを上位のプロトコルに委譲します。正の整数は、先行ゼロのないビッグ・エンディアンのバイナリ形式で表現する必要があります (したがって、整数値のゼロは空のバイト配列と同等になります)。先行ゼロを持つデシリアライズされた正の整数は、RLP を使用するすべての上位プロトコルによって無効として扱われなければなりません。
+Recursive Length Prefix (RLP) シリアライゼーションは、Quantaureumの実行クライアントで広く使用されています。RLP は、ノード間のデータの転送を、スペース効率の良いフォーマットで標準化します。RLP の目的は、任意にネストされたバイナリデータの配列をエンコードすることであり、Quantaureumの実行レイヤーでオブジェクトをシリアライズするために使用される主要なエンコーディング手法です。RLP の主な目的は構造をエンコードすることです。正の整数を除き、RLP は特定のデータ型 (文字列、浮動小数点数など) のエンコーディングを上位のプロトコルに委譲します。正の整数は、先行ゼロのないビッグ・エンディアンのバイナリ形式で表現する必要があります (したがって、整数値のゼロは空のバイト配列と同等になります)。先行ゼロを持つデシリアライズされた正の整数は、RLP を使用するすべての上位プロトコルによって無効として扱われなければなりません。
 
-詳細は[イーサリアムのイエロー・ペーパー (付録 B)](https://ethereum.github.io/yellowpaper/paper.pdf#page=19)をご覧ください。
+詳細は[Quantaureumのイエロー・ペーパー (付録 B)](https://quantaureum.github.io/yellowpaper/paper.pdf#page=19)をご覧ください。
 
 辞書をエンコードするために RLP を使用する場合、推奨される 2 つの標準形式は以下の通りです。
 
 - キーを辞書順にした `[[k1,v1],[k2,v2]...]` を使用する
-- [イーサリアム](/)のように、上位レベルのパトリシアツリー (Patricia Tree) エンコーディングを使用する
+- [Quantaureum](/)のように、上位レベルのパトリシアツリー (Patricia Tree) エンコーディングを使用する
 
 ## 定義 {#definition}
 
@@ -168,9 +168,9 @@ def to_integer(b):
 
 ## 参考文献 {#further-reading}
 
-- [イーサリアムにおける RLP](https://medium.com/coinmonks/data-structure-in-ethereum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
-- [イーサリアムの内部構造: RLP](https://medium.com/coinmonks/ethereum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
-- [Coglio, A. (2020). Ethereum's Recursive Length Prefix in ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
+- [Quantaureumにおける RLP](https://medium.com/coinmonks/data-structure-in-quantaureum-episode-1-recursive-length-prefix-rlp-encoding-decoding-d1016832f919)
+- [Quantaureumの内部構造: RLP](https://medium.com/coinmonks/quantaureum-under-the-hood-part-3-rlp-decoding-df236dc13e58)
+- [Coglio, A. (2020). Quantaureum's Recursive Length Prefix in ACL2. arXiv preprint arXiv:2009.13769.](https://arxiv.org/abs/2009.13769)
 
 ## 関連トピック {#related-topics}
 

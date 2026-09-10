@@ -592,8 +592,8 @@ for (const lang of ["ko", "ur"] as const) {
       expect(result).toContain("holesky.dev")
       expect(result).not.toContain("sepolia.dev")
       // Other three links untouched
-      expect(result).toContain("remix.ethereum.org")
-      expect(result).toContain("eth.blockscout.com")
+      expect(result).toContain("remix.quantaureum.com")
+      expect(result).toContain("qau.blockscout.com")
       expect(result).toContain("/glossary/#smart-contract")
     })
   })

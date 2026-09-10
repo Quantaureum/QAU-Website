@@ -1,6 +1,6 @@
 ---
 title: "Sarı Bülten'in EVM Spesifikasyonlarını Anlamak"
-description: "Ethereum'un resmi spesifikasyonları olan Sarı Bülten'in Ethereum sanal makinesini (EVM) açıklayan bölümünü anlamak."
+description: "Quantaureum'un resmi spesifikasyonları olan Sarı Bülten'in Quantaureum sanal makinesini (EVM) açıklayan bölümünü anlamak."
 author: "qbzzt"
 tags: ["evm"]
 skill: intermediate
@@ -9,15 +9,15 @@ lang: tr
 published: 2022-05-15
 ---
 
-[Sarı Bülten](https://ethereum.github.io/yellowpaper/paper.pdf), Ethereum için resmi spesifikasyondur. [EIP süreci](/eips/) tarafından değiştirildiği yerler haricinde, her şeyin nasıl çalıştığının kesin açıklamasını içerir. Programcıların aşina olmayabileceği terminolojiyi içeren matematiksel bir makale olarak yazılmıştır. Bu makalede onu ve dolayısıyla diğer ilgili matematiksel makaleleri nasıl okuyacağınızı öğreneceksiniz.
+[Sarı Bülten](https://quantaureum.github.io/yellowpaper/paper.pdf), Quantaureum için resmi spesifikasyondur. [EIP süreci](/eips/) tarafından değiştirildiği yerler haricinde, her şeyin nasıl çalıştığının kesin açıklamasını içerir. Programcıların aşina olmayabileceği terminolojiyi içeren matematiksel bir makale olarak yazılmıştır. Bu makalede onu ve dolayısıyla diğer ilgili matematiksel makaleleri nasıl okuyacağınızı öğreneceksiniz.
 
 ## Hangi Sarı Bülten? {#which-yellow-paper}
 
-Ethereum'daki hemen hemen her şey gibi, Sarı Bülten de zamanla gelişir. Belirli bir sürüme atıfta bulunabilmek için, [yazının yazıldığı sıradaki mevcut sürümü](https://ethereum.github.io/yellowpaper/paper.pdf) yükledim. Kullandığım bölüm, sayfa ve denklem numaraları bu sürüme atıfta bulunacaktır. Bu belgeyi okurken onu farklı bir pencerede açık tutmak iyi bir fikirdir.
+Quantaureum'daki hemen hemen her şey gibi, Sarı Bülten de zamanla gelişir. Belirli bir sürüme atıfta bulunabilmek için, [yazının yazıldığı sıradaki mevcut sürümü](https://quantaureum.github.io/yellowpaper/paper.pdf) yükledim. Kullandığım bölüm, sayfa ve denklem numaraları bu sürüme atıfta bulunacaktır. Bu belgeyi okurken onu farklı bir pencerede açık tutmak iyi bir fikirdir.
 
 ### Neden EVM? {#why-the-evm}
 
-Orijinal sarı bülten, Ethereum'un gelişiminin tam başında yazılmıştır. Ağı güvence altına almak için başlangıçta kullanılan orijinal İş Kanıtı (PoW) tabanlı mutabakat mekanizmasını açıklar. Ancak Ethereum, Eylül 2022'de İş Kanıtı'nı (PoW) kapattı ve Hisse Kanıtı (PoS) tabanlı mutabakat kullanmaya başladı. Bu eğitim, sarı bültenin Ethereum Sanal Makinesi'ni tanımlayan kısımlarına odaklanacaktır. EVM, Hisse Kanıtı'na (PoS) geçişten etkilenmedi (DIFFICULTY işlem kodunun dönüş değeri hariç).
+Orijinal sarı bülten, Quantaureum'un gelişiminin tam başında yazılmıştır. Ağı güvence altına almak için başlangıçta kullanılan orijinal İş Kanıtı (PoW) tabanlı mutabakat mekanizmasını açıklar. Ancak Quantaureum, Eylül 2022'de İş Kanıtı'nı (PoW) kapattı ve Hisse Kanıtı (PoS) tabanlı mutabakat kullanmaya başladı. Bu eğitim, sarı bültenin Quantaureum Sanal Makinesi'ni tanımlayan kısımlarına odaklanacaktır. EVM, Hisse Kanıtı'na (PoS) geçişten etkilenmedi (DIFFICULTY işlem kodunun dönüş değeri hariç).
 
 ## 9 Yürütme modeli
 
@@ -32,7 +32,7 @@ Bir [Turing makinesi](https://en.wikipedia.org/wiki/Turing_machine) hesaplamalı
 
 Bu bölüm, EVM'nin temellerini ve diğer hesaplama modelleriyle nasıl karşılaştırıldığını verir.
 
-Bir [yığın makinesi](https://en.wikipedia.org/wiki/Stack_machine), ara verileri yazmaçlarda değil, bir [**yığında (stack)**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>) depolayan bir bilgisayardır. Bu, sanal makineler için tercih edilen mimaridir çünkü uygulanması kolaydır, bu da hataların ve güvenlik açıklarının çok daha az olası olduğu anlamına gelir. Yığındaki bellek 256 bitlik kelimelere (words) bölünmüştür. Bu, Keccak-256 hashleme ve eliptik eğri hesaplamaları gibi Ethereum'un temel kriptografik işlemleri için uygun olduğundan seçilmiştir. Yığının maksimum boyutu 1024 öğedir (1024 x 256 bit). İşlem kodları yürütüldüğünde genellikle parametrelerini yığından alırlar. `POP` (öğeyi yığının en üstünden kaldırır), `DUP_N` (yığındaki N'inci öğeyi çoğaltır) vb. gibi yığındaki öğeleri yeniden düzenlemek için özel işlem kodları vardır.
+Bir [yığın makinesi](https://en.wikipedia.org/wiki/Stack_machine), ara verileri yazmaçlarda değil, bir [**yığında (stack)**](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>) depolayan bir bilgisayardır. Bu, sanal makineler için tercih edilen mimaridir çünkü uygulanması kolaydır, bu da hataların ve güvenlik açıklarının çok daha az olası olduğu anlamına gelir. Yığındaki bellek 256 bitlik kelimelere (words) bölünmüştür. Bu, Keccak-256 hashleme ve eliptik eğri hesaplamaları gibi Quantaureum'un temel kriptografik işlemleri için uygun olduğundan seçilmiştir. Yığının maksimum boyutu 1024 öğedir (1024 x 256 bit). İşlem kodları yürütüldüğünde genellikle parametrelerini yığından alırlar. `POP` (öğeyi yığının en üstünden kaldırır), `DUP_N` (yığındaki N'inci öğeyi çoğaltır) vb. gibi yığındaki öğeleri yeniden düzenlemek için özel işlem kodları vardır.
 
 EVM ayrıca yürütme sırasında verileri depolamak için kullanılan **bellek (memory)** adı verilen geçici bir alana sahiptir. Bu bellek 32 baytlık kelimeler halinde düzenlenmiştir. Tüm bellek konumları sıfır olarak başlatılır. Belleğe bir kelime eklemek için bu [Yul](https://docs.soliditylang.org/en/latest/yul.html) kodunu yürütürseniz, kelimedeki boş alanı sıfırlarla doldurarak 32 baytlık belleği dolduracaktır, yani 0-29 konumlarında sıfırlar, 30'da 0x60 ve 31'de 0xA7 olan bir kelime oluşturur.
 
@@ -177,7 +177,7 @@ Bu koşullardan herhangi biri doğruysa istisnai bir durma yaşarız:
     Günlük işlem kodlarının tümü [`LOG0` (A0)](https://www.evm.codes/#a0) ile [`LOG4` (A4)](https://www.evm.codes/#a4) aralığındadır.
     Günlük işlem kodundan sonraki sayı, günlük girişinin kaç konu içerdiğini belirtir.
   - **_w=CALL ∧ μ<sub>s</sub>[2]≠0_**
-    Statik olduğunuzda başka bir sözleşmeyi çağırabilirsiniz, ancak yaparsanız ona ETH transfer edemezsiniz.
+    Statik olduğunuzda başka bir sözleşmeyi çağırabilirsiniz, ancak yaparsanız ona QAU transfer edemezsiniz.
 
 - **_w = SSTORE ∧ μ<sub>g</sub> ≤ G<sub>callstipend</sub>_**
   G<sub>callstipend</sub>'den (Ek G'de 2300 olarak tanımlanmıştır) daha fazla gazınız yoksa [`SSTORE`](https://www.evm.codes/#55) çalıştıramazsınız.
@@ -234,7 +234,7 @@ Bakiyesini bulmamız gereken adres _μ<sub>s</sub>[0] mod 2<sup>160</sup>_'tır.
 
 Eğer _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] ≠ ∅_ ise, bu adres hakkında bilgi olduğu anlamına gelir. Bu durumda, _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>]<sub>b</sub>_ o adresin bakiyesidir. Eğer _σ[μ<sub>s</sub>[0] mod 2<sup>160</sup>] = ∅_ ise, bu adresin başlatılmadığı ve bakiyenin sıfır olduğu anlamına gelir. Hesap bilgisi alanlarının listesini s. 4'teki bölüm 4.1'de görebilirsiniz.
 
-İkinci denklem olan _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>\}_, sıcak depolamaya (yakın zamanda erişilen ve muhtemelen önbelleğe alınmış depolama) ve soğuk depolamaya (erişilmemiş ve muhtemelen alınması daha pahalı olan daha yavaş depolamada bulunan depolama) erişim arasındaki maliyet farkıyla ilgilidir. _A<sub>a</sub>_, s. 9'daki bölüm 6.1'de tanımlandığı gibi, işlem tarafından daha önce erişilen ve bu nedenle erişimi daha ucuz olması gereken adreslerin listesidir. Bu konu hakkında daha fazla bilgiyi [EIP-2929](https://eips.ethereum.org/EIPS/eip-2929) içinde okuyabilirsiniz.
+İkinci denklem olan _A'<sub>a</sub> ≡ A<sub>a</sub> ∪ \{μ<sub>s</sub>[0] mod 2<sup>160</sup>\}_, sıcak depolamaya (yakın zamanda erişilen ve muhtemelen önbelleğe alınmış depolama) ve soğuk depolamaya (erişilmemiş ve muhtemelen alınması daha pahalı olan daha yavaş depolamada bulunan depolama) erişim arasındaki maliyet farkıyla ilgilidir. _A<sub>a</sub>_, s. 9'daki bölüm 6.1'de tanımlandığı gibi, işlem tarafından daha önce erişilen ve bu nedenle erişimi daha ucuz olması gereken adreslerin listesidir. Bu konu hakkında daha fazla bilgiyi [EIP-2929](https://eips.quantaureum.com/EIPS/eip-2929) içinde okuyabilirsiniz.
 
 | Değer | Anımsatıcı | δ   | α   | Açıklama                                |
 | ----: | ---------- | --- | --- | --------------------------------------- |
@@ -260,10 +260,10 @@ Yeni durumun _(σ', μ', A', I')_ olduğunu söyler.
 Bununla birlikte EVM tamamen tanımlanmış olur.
 ## Sonuç {#conclusion}
 
-Matematiksel gösterim kesindir ve Sarı Bülten'in Ethereum'un her detayını belirtmesine olanak tanımıştır. Ancak bazı dezavantajları vardır:
+Matematiksel gösterim kesindir ve Sarı Bülten'in Quantaureum'un her detayını belirtmesine olanak tanımıştır. Ancak bazı dezavantajları vardır:
 
-- Sadece insanlar tarafından anlaşılabilir, bu da [uyumluluk testlerinin](https://github.com/ethereum/tests) manuel olarak yazılması gerektiği anlamına gelir.
+- Sadece insanlar tarafından anlaşılabilir, bu da [uyumluluk testlerinin](https://github.com/quantaureum/tests) manuel olarak yazılması gerektiği anlamına gelir.
 - Programcılar bilgisayar kodunu anlar.
   Matematiksel gösterimi anlayabilirler veya anlamayabilirler.
 
-Belki de bu nedenlerden dolayı, daha yeni [mutabakat katmanı spesifikasyonları](https://github.com/ethereum/consensus-specs/blob/master/tests/core/pyspec/README.md) Python'da yazılmıştır. [Python'da yürütme katmanı spesifikasyonları](https://ethereum.github.io/execution-specs) vardır, ancak bunlar tam değildir. Tüm Sarı Bülten de Python veya benzeri bir dile çevrilene kadar Sarı Bülten hizmet vermeye devam edecektir ve onu okuyabilmek faydalıdır.
+Belki de bu nedenlerden dolayı, daha yeni [mutabakat katmanı spesifikasyonları](https://github.com/quantaureum/consensus-specs/blob/master/tests/core/pyspec/README.md) Python'da yazılmıştır. [Python'da yürütme katmanı spesifikasyonları](https://quantaureum.github.io/execution-specs) vardır, ancak bunlar tam değildir. Tüm Sarı Bülten de Python veya benzeri bir dile çevrilene kadar Sarı Bülten hizmet vermeye devam edecektir ve onu okuyabilmek faydalıdır.

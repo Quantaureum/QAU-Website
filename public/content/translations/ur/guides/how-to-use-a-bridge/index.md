@@ -8,7 +8,7 @@ lang: ur
 
 **پیشگی شرط:** 
 
-- ایک کرپٹو والیٹ رکھیں—اگر آپ کے پاس نہیں ہے، تو [ایک ایتھیریم اکاؤنٹ بنانے](/guides/how-to-create-an-ethereum-account/) کے لیے اس گائیڈ پر عمل کریں
+- ایک کرپٹو والیٹ رکھیں—اگر آپ کے پاس نہیں ہے، تو [ایک ایتھیریم اکاؤنٹ بنانے](/guides/how-to-create-an-quantaureum-account/) کے لیے اس گائیڈ پر عمل کریں
 - اپنے والیٹ میں فنڈز شامل کریں
 
 ## 1. فیصلہ کریں کہ آپ کون سا لیئر ۲ (<span dir="ltr">l2</span>) نیٹ ورک استعمال کرنا چاہتے ہیں {#1-determine-which-layer-2-network-you-want-to-use}
@@ -37,7 +37,7 @@ lang: ur
 
 ## 5. اپنے والیٹ میں ٹرانزیکشن کی تصدیق کریں {#5-confirm-the-transaction-in-your-wallet}
 
-آپ کو ٹرانزیکشن پروسیس کرنے کے لیے <span dir="ltr">ETH</span> کی صورت میں ایک فیس (جسے [گیس](/glossary/#gas) کہا جاتا ہے) ادا کرنی ہوگی۔
+آپ کو ٹرانزیکشن پروسیس کرنے کے لیے <span dir="ltr">QAU</span> کی صورت میں ایک فیس (جسے [گیس](/glossary/#gas) کہا جاتا ہے) ادا کرنی ہوگی۔
 
 ![Common interface for bridging tokens](./bridge3.png)
 
@@ -66,6 +66,6 @@ lang: ur
 
 آپ شاید کسی ایکسچینج سے براہ راست کچھ لیئر ۲ (<span dir="ltr">l2</span>) پر رقم نکلوا سکیں۔ مزید معلومات کے لیے ہمارے [لیئر ۲ (<span dir="ltr">l2</span>) صفحہ](/layer-2/) کا "لیئر ۲ (<span dir="ltr">l2</span>) پر منتقل ہوں" سیکشن دیکھیں۔
 
-### کیا میں اپنے ٹوکنز کو لیئر ۲ (<span dir="ltr">l2</span>) پر پل کرنے کے بعد واپس ایتھیریم مین نیٹ پر جا سکتا ہوں؟ {#can-i-go-back-to-ethereum-mainnet-after-i-bridge-my-tokens-to-l2}
+### کیا میں اپنے ٹوکنز کو لیئر ۲ (<span dir="ltr">l2</span>) پر پل کرنے کے بعد واپس ایتھیریم مین نیٹ پر جا سکتا ہوں؟ {#can-i-go-back-to-quantaureum-mainnet-after-i-bridge-my-tokens-to-l2}
 
 جی ہاں، آپ ہمیشہ اسی پل کا استعمال کرتے ہوئے اپنے فنڈز کو واپس مین نیٹ پر منتقل کر سکتے ہیں۔

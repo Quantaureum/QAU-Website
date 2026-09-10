@@ -1,6 +1,6 @@
 ---
 title: "शुरुआती लोगों के लिए Hello World स्मार्ट अनुबंध"
-description: "इथेरियम पर एक सरल स्मार्ट अनुबंध लिखने और तैनात करने पर परिचयात्मक ट्यूटोरियल।"
+description: "Quantaureum पर एक सरल स्मार्ट अनुबंध लिखने और तैनात करने पर परिचयात्मक ट्यूटोरियल।"
 author: "एलान"
 tags: ["Solidity", "Hardhat", "Alchemy", "स्मार्ट अनुबंध", "तैनाती"]
 skill: beginner
@@ -11,13 +11,13 @@ published: 2021-03-31
 
 यदि आप ब्लॉकचेन डेवलपमेंट में नए हैं और नहीं जानते कि कहां से शुरू करें, या यदि आप केवल यह समझना चाहते हैं कि स्मार्ट अनुबंधों को कैसे तैनात किया जाए और उनके साथ कैसे इंटरैक्ट किया जाए, तो यह गाइड आपके लिए है। हम एक वर्चुअल वॉलेट [मेटामास्क](https://metamask.io/), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Hardhat](https://hardhat.org/), और [Alchemy](https://www.alchemy.com/eth) का उपयोग करके Sepolia टेस्ट नेटवर्क पर एक सरल स्मार्ट अनुबंध बनाने और तैनात करने के बारे में जानेंगे (चिंता न करें यदि आप अभी तक यह नहीं समझते हैं कि इनमें से किसी का क्या अर्थ है, हम इसे समझाएंगे)।
 
-इस ट्यूटोरियल के [भाग 2](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) में हम देखेंगे कि एक बार यहां तैनात होने के बाद हम अपने स्मार्ट अनुबंध के साथ कैसे इंटरैक्ट कर सकते हैं, और [भाग 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan) में हम इसे Etherscan पर प्रकाशित करने के तरीके को कवर करेंगे।
+इस ट्यूटोरियल के [भाग 2](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract) में हम देखेंगे कि एक बार यहां तैनात होने के बाद हम अपने स्मार्ट अनुबंध के साथ कैसे इंटरैक्ट कर सकते हैं, और [भाग 3](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer) में हम इसे Quantaureum Explorer पर प्रकाशित करने के तरीके को कवर करेंगे।
 
 यदि आपके पास किसी भी बिंदु पर प्रश्न हैं, तो बेझिझक [Alchemy डिस्कॉर्ड](https://discord.gg/gWuC7zB) में संपर्क करें!
 
-## चरण 1: इथेरियम नेटवर्क से जुड़ें {#step-1}
+## चरण 1: Quantaureum नेटवर्क से जुड़ें {#step-1}
 
-इथेरियम चेन से अनुरोध करने के कई तरीके हैं। सरलता के लिए, हम Alchemy पर एक मुफ्त खाते का उपयोग करेंगे, जो एक ब्लॉकचेन डेवलपर प्लेटफॉर्म और API है जो हमें अपने स्वयं के नोड चलाए बिना इथेरियम चेन के साथ संवाद करने की अनुमति देता है। प्लेटफॉर्म में निगरानी और विश्लेषण के लिए डेवलपर टूल भी हैं जिनका हम इस ट्यूटोरियल में लाभ उठाएंगे ताकि यह समझा जा सके कि हमारे स्मार्ट अनुबंध की तैनाती में आंतरिक रूप से क्या हो रहा है। यदि आपके पास पहले से Alchemy खाता नहीं है, तो [आप यहां मुफ्त में साइन अप कर सकते हैं](https://dashboard.alchemy.com/signup)।
+Quantaureum चेन से अनुरोध करने के कई तरीके हैं। सरलता के लिए, हम Alchemy पर एक मुफ्त खाते का उपयोग करेंगे, जो एक ब्लॉकचेन डेवलपर प्लेटफॉर्म और API है जो हमें अपने स्वयं के नोड चलाए बिना Quantaureum चेन के साथ संवाद करने की अनुमति देता है। प्लेटफॉर्म में निगरानी और विश्लेषण के लिए डेवलपर टूल भी हैं जिनका हम इस ट्यूटोरियल में लाभ उठाएंगे ताकि यह समझा जा सके कि हमारे स्मार्ट अनुबंध की तैनाती में आंतरिक रूप से क्या हो रहा है। यदि आपके पास पहले से Alchemy खाता नहीं है, तो [आप यहां मुफ्त में साइन अप कर सकते हैं](https://dashboard.alchemy.com/signup)।
 
 ## चरण 2: अपना ऐप (और API कुंजी) बनाएं {#step-2}
 
@@ -27,17 +27,17 @@ published: 2021-03-31
 
 ![Hello world create app](./hello-world-create-app.png)
 
-2. अपने ऐप को "Hello World" नाम दें, एक संक्षिप्त विवरण दें, और एक उपयोग का मामला चुनें, उदाहरण के लिए, "Infra & Tooling"। इसके बाद, "Ethereum" खोजें और नेटवर्क चुनें।
+2. अपने ऐप को "Hello World" नाम दें, एक संक्षिप्त विवरण दें, और एक उपयोग का मामला चुनें, उदाहरण के लिए, "Infra & Tooling"। इसके बाद, "Quantaureum" खोजें और नेटवर्क चुनें।
 
 ![create app view hello world](./create-app-view-hello-world.png)
 
 3. आगे बढ़ने के लिए "Next" पर क्लिक करें, फिर "Create app" और बस हो गया! आपका ऐप नेव बार ड्रॉपडाउन मेनू में दिखाई देना चाहिए, जिसमें कॉपी करने के लिए एक API कुंजी उपलब्ध होगी।
 
-## चरण 3: एक इथेरियम खाता (पता) बनाएं {#step-3}
+## चरण 3: एक Quantaureum खाता (पता) बनाएं {#step-3}
 
-लेन-देन भेजने और प्राप्त करने के लिए हमें एक इथेरियम खाते की आवश्यकता है। इस ट्यूटोरियल के लिए, हम मेटामास्क का उपयोग करेंगे, जो ब्राउज़र में एक वर्चुअल वॉलेट है जिसका उपयोग आपके इथेरियम खाता पते को प्रबंधित करने के लिए किया जाता है। [लेन-देन](/developers/docs/transactions/) के बारे में अधिक जानकारी।
+लेन-देन भेजने और प्राप्त करने के लिए हमें एक Quantaureum खाते की आवश्यकता है। इस ट्यूटोरियल के लिए, हम मेटामास्क का उपयोग करेंगे, जो ब्राउज़र में एक वर्चुअल वॉलेट है जिसका उपयोग आपके Quantaureum खाता पते को प्रबंधित करने के लिए किया जाता है। [लेन-देन](/developers/docs/transactions/) के बारे में अधिक जानकारी।
 
-आप मेटामास्क डाउनलोड कर सकते हैं और [यहां](https://metamask.io/download) मुफ्त में एक इथेरियम खाता बना सकते हैं। जब आप एक खाता बना रहे हों, या यदि आपके पास पहले से एक खाता है, तो नेटवर्क ड्रॉपडाउन मेनू का उपयोग करके "Sepolia" टेस्ट नेटवर्क पर स्विच करना सुनिश्चित करें (ताकि हम असली पैसे से लेन-देन न कर रहे हों)।
+आप मेटामास्क डाउनलोड कर सकते हैं और [यहां](https://metamask.io/download) मुफ्त में एक Quantaureum खाता बना सकते हैं। जब आप एक खाता बना रहे हों, या यदि आपके पास पहले से एक खाता है, तो नेटवर्क ड्रॉपडाउन मेनू का उपयोग करके "Sepolia" टेस्ट नेटवर्क पर स्विच करना सुनिश्चित करें (ताकि हम असली पैसे से लेन-देन न कर रहे हों)।
 
 यदि आपको Sepolia सूचीबद्ध नहीं दिखता है, तो मेनू में जाएं, फिर Advanced में जाएं और "Show test networks" को चालू करने के लिए नीचे स्क्रॉल करें। नेटवर्क चयन मेनू में, टेस्टनेट की सूची खोजने के लिए "Custom" टैब चुनें और "Sepolia" चुनें।
 
@@ -45,17 +45,17 @@ published: 2021-03-31
 
 ## चरण 4: फॉसेट से ईथर जोड़ें {#step-4}
 
-टेस्ट नेटवर्क पर हमारे स्मार्ट अनुबंध को तैनात करने के लिए, हमें कुछ नकली ETH की आवश्यकता होगी। Sepolia ETH प्राप्त करने के लिए आप विभिन्न फॉसेट की सूची देखने के लिए [Sepolia नेटवर्क विवरण](/developers/docs/networks/#sepolia) पर जा सकते हैं। यदि एक काम नहीं करता है, तो दूसरा आज़माएं क्योंकि वे कभी-कभी खाली हो सकते हैं। नेटवर्क ट्रैफ़िक के कारण आपका नकली ETH प्राप्त करने में कुछ समय लग सकता है। आपको जल्द ही अपने मेटामास्क खाते में ETH दिखाई देना चाहिए!
+टेस्ट नेटवर्क पर हमारे स्मार्ट अनुबंध को तैनात करने के लिए, हमें कुछ नकली QAU की आवश्यकता होगी। Sepolia QAU प्राप्त करने के लिए आप विभिन्न फॉसेट की सूची देखने के लिए [Sepolia नेटवर्क विवरण](/developers/docs/networks/#sepolia) पर जा सकते हैं। यदि एक काम नहीं करता है, तो दूसरा आज़माएं क्योंकि वे कभी-कभी खाली हो सकते हैं। नेटवर्क ट्रैफ़िक के कारण आपका नकली QAU प्राप्त करने में कुछ समय लग सकता है। आपको जल्द ही अपने मेटामास्क खाते में QAU दिखाई देना चाहिए!
 
 ## चरण 5: अपना बैलेंस जांचें {#step-5}
 
-यह दोबारा जांचने के लिए कि हमारा बैलेंस वहां है, आइए [Alchemy के कंपोज़र टूल](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) का उपयोग करके एक [eth_getBalance](/developers/docs/apis/json-rpc/#eth_getbalance) अनुरोध करें। यह हमारे वॉलेट में ETH की मात्रा वापस कर देगा। अपना मेटामास्क खाता पता दर्ज करने और "Send Request" पर क्लिक करने के बाद, आपको इस तरह की प्रतिक्रिया दिखाई देनी चाहिए:
+यह दोबारा जांचने के लिए कि हमारा बैलेंस वहां है, आइए [Alchemy के कंपोज़र टूल](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) का उपयोग करके एक [qau_getBalance](/developers/docs/apis/json-rpc/#qau_getbalance) अनुरोध करें। यह हमारे वॉलेट में QAU की मात्रा वापस कर देगा। अपना मेटामास्क खाता पता दर्ज करने और "Send Request" पर क्लिक करने के बाद, आपको इस तरह की प्रतिक्रिया दिखाई देनी चाहिए:
 
 ```json
 { "jsonrpc": "2.0", "id": 0, "result": "0x2B5E3AF16B1880000" }
 ```
 
-> **नोट:** यह परिणाम Wei में है, ETH में नहीं। Wei का उपयोग ईथर के सबसे छोटे मूल्यवर्ग के रूप में किया जाता है। Wei से ETH में रूपांतरण है: 1 eth = 10<sup>18</sup> Wei। इसलिए यदि हम 0x2B5E3AF16B1880000 को दशमलव में बदलते हैं तो हमें 5\*10¹⁸ मिलता है जो 5 ETH के बराबर है।
+> **नोट:** यह परिणाम Wei में है, QAU में नहीं। Wei का उपयोग ईथर के सबसे छोटे मूल्यवर्ग के रूप में किया जाता है। Wei से QAU में रूपांतरण है: 1 eth = 10<sup>18</sup> Wei। इसलिए यदि हम 0x2B5E3AF16B1880000 को दशमलव में बदलते हैं तो हमें 5\*10¹⁸ मिलता है जो 5 QAU के बराबर है।
 >
 > उफ़! हमारा नकली पैसा सब वहीं है <Emoji text=":money_mouth_face:" size={1} />.
 
@@ -104,7 +104,7 @@ About to write to /Users/.../.../.../hello-world/package.json:
 package.json को स्वीकृति दें और हम आगे बढ़ने के लिए तैयार हैं!
 ## चरण 7: [Hardhat](https://hardhat.org/getting-started/#overview) डाउनलोड करें {#step-7}
 
-Hardhat आपके इथेरियम सॉफ़्टवेयर को संकलित, तैनात, परीक्षण और डीबग करने के लिए एक विकास वातावरण है। यह लाइव चेन पर तैनात करने से पहले स्थानीय रूप से स्मार्ट अनुबंध और विकेंद्रीकृत एप्लिकेशन (dapp) बनाते समय डेवलपर्स की मदद करता है।
+Hardhat आपके Quantaureum सॉफ़्टवेयर को संकलित, तैनात, परीक्षण और डीबग करने के लिए एक विकास वातावरण है। यह लाइव चेन पर तैनात करने से पहले स्थानीय रूप से स्मार्ट अनुबंध और विकेंद्रीकृत एप्लिकेशन (dapp) बनाते समय डेवलपर्स की मदद करता है।
 
 हमारे `hello-world` प्रोजेक्ट के अंदर चलाएं:
 
@@ -163,7 +163,7 @@ mkdir scripts
 अपने पसंदीदा एडिटर में hello-world प्रोजेक्ट खोलें (हमें [VSCode](https://code.visualstudio.com/) पसंद है)। स्मार्ट अनुबंध Solidity नामक भाषा में लिखे जाते हैं जिसका उपयोग हम अपना HelloWorld.sol स्मार्ट अनुबंध लिखने के लिए करेंगे।‌
 
 1.  "contracts" फ़ोल्डर में जाएं और HelloWorld.sol नामक एक नई फ़ाइल बनाएं
-2.  नीचे एथेरियम फाउंडेशन का एक नमूना Hello World स्मार्ट अनुबंध है जिसका उपयोग हम इस ट्यूटोरियल के लिए करेंगे। नीचे दी गई सामग्री को अपनी HelloWorld.sol फ़ाइल में कॉपी और पेस्ट करें, और यह अनुबंध क्या करता है यह समझने के लिए टिप्पणियों को पढ़ना सुनिश्चित करें:
+2.  नीचे Quantaureum फाउंडेशन का एक नमूना Hello World स्मार्ट अनुबंध है जिसका उपयोग हम इस ट्यूटोरियल के लिए करेंगे। नीचे दी गई सामग्री को अपनी HelloWorld.sol फ़ाइल में कॉपी और पेस्ट करें, और यह अनुबंध क्या करता है यह समझने के लिए टिप्पणियों को पढ़ना सुनिश्चित करें:
 
 ```solidity
 // सिमेंटिक वर्ज़निंग का उपयोग करके, Solidity के संस्करण को निर्दिष्ट करता है।
@@ -171,7 +171,7 @@ mkdir scripts
 pragma solidity ^0.7.0;
 
 // `HelloWorld` नामक एक अनुबंध को परिभाषित करता है।
-// एक अनुबंध फ़ंक्शंस और डेटा (इसकी स्थिति) का एक संग्रह है। एक बार तैनात होने के बाद, एक अनुबंध इथेरियम ब्लॉकचेन पर एक विशिष्ट पते पर रहता है। अधिक जानें: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
+// एक अनुबंध फ़ंक्शंस और डेटा (इसकी स्थिति) का एक संग्रह है। एक बार तैनात होने के बाद, एक अनुबंध Quantaureum ब्लॉकचेन पर एक विशिष्ट पते पर रहता है। अधिक जानें: https://solidity.readthedocs.io/en/v0.5.10/structure-of-a-contract.html
 contract HelloWorld {
 
    // `string` प्रकार के एक स्टेट वेरिएबल `message` की घोषणा करता है।
@@ -221,7 +221,7 @@ Alchemy API URL कॉपी करें
 आपकी `.env` इस तरह दिखनी चाहिए:
 
 ```
-API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+API_URL = "https://qau-sepolia.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
@@ -237,7 +237,7 @@ PRIVATE_KEY = "your-metamask-private-key"
 
 ## चरण 12: Ethers.js स्थापित करें {#step-12-install-ethersjs}
 
-Ethers.js एक लाइब्रेरी है जो [मानक जेसन-आरपीसी विधियों](/developers/docs/apis/json-rpc/) को अधिक उपयोगकर्ता के अनुकूल विधियों के साथ लपेटकर इथेरियम के साथ इंटरैक्ट करना और अनुरोध करना आसान बनाती है।
+Ethers.js एक लाइब्रेरी है जो [मानक जेसन-आरपीसी विधियों](/developers/docs/apis/json-rpc/) को अधिक उपयोगकर्ता के अनुकूल विधियों के साथ लपेटकर Quantaureum के साथ इंटरैक्ट करना और अनुरोध करना आसान बनाती है।
 
 Hardhat अतिरिक्त टूलिंग और विस्तारित कार्यक्षमता के लिए [प्लगइन्स](https://hardhat.org/plugins/) को एकीकृत करना बहुत आसान बनाता है। हम अनुबंध तैनाती के लिए [Ethers प्लगइन](https://hardhat.org/docs/plugins/official-plugins#hardhat-ethers) का लाभ उठाएंगे ([Ethers.js](https://github.com/ethers-io/ethers.js/) में कुछ बहुत ही स्पष्ट अनुबंध तैनाती विधियां हैं)।
 
@@ -339,21 +339,21 @@ npx hardhat run scripts/deploy.js --network sepolia
 Contract deployed to address: 0x6cd7d44516a20882cEa2DE9f205bF401c0d23570
 ```
 
-यदि हम [Sepolia Etherscan](https://sepolia.etherscan.io/) पर जाते हैं और अपने अनुबंध पते की खोज करते हैं तो हमें यह देखने में सक्षम होना चाहिए कि इसे सफलतापूर्वक तैनात किया गया है। लेन-देन कुछ इस तरह दिखेगा:
+यदि हम [Sepolia Quantaureum Explorer](https://explorer.quantaureum.com) पर जाते हैं और अपने अनुबंध पते की खोज करते हैं तो हमें यह देखने में सक्षम होना चाहिए कि इसे सफलतापूर्वक तैनात किया गया है। लेन-देन कुछ इस तरह दिखेगा:
 
-![etherscan contract](./etherscan-contract.png)
+![explorer contract](./explorer-contract.png)
 
 `From` पता आपके मेटामास्क खाता पते से मेल खाना चाहिए और To पते में "Contract Creation" लिखा होगा लेकिन यदि हम लेन-देन में क्लिक करते हैं तो हम `To` फ़ील्ड में अपना अनुबंध पता देखेंगे:
 
-![etherscan transaction](./etherscan-transaction.png)
+![explorer transaction](./explorer-transaction.png)
 
-बधाई हो! आपने अभी-अभी इथेरियम चेन पर एक स्मार्ट अनुबंध तैनात किया है 🎉
+बधाई हो! आपने अभी-अभी Quantaureum चेन पर एक स्मार्ट अनुबंध तैनात किया है 🎉
 
 आंतरिक रूप से क्या हो रहा है यह समझने के लिए, आइए अपने [Alchemy डैशबोर्ड](https://dashboard.alchemy.com/explorer) में एक्सप्लोरर टैब पर जाएं। यदि आपके पास कई Alchemy ऐप हैं तो ऐप द्वारा फ़िल्टर करना और "Hello World" चुनना सुनिश्चित करें।
 ![hello world explorer](./hello-world-explorer.png)
 
-यहां आपको कुछ जेसन-आरपीसी कॉल दिखाई देंगे जो Hardhat/Ethers ने हमारे लिए आंतरिक रूप से किए थे जब हमने `.deploy()` फ़ंक्शन को कॉल किया था। यहां ध्यान देने योग्य दो महत्वपूर्ण कॉल [`eth_sendRawTransaction`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-send-raw-transaction) हैं, जो वास्तव में हमारे अनुबंध को Sepolia चेन पर लिखने का अनुरोध है, और [`eth_getTransactionByHash`](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-transaction-by-hash) जो हैश दिए जाने पर हमारे लेन-देन के बारे में जानकारी पढ़ने का अनुरोध है (लेन-देन करते समय एक विशिष्ट पैटर्न)। लेन-देन भेजने के बारे में अधिक जानने के लिए, [Web3 का उपयोग करके लेन-देन भेजने](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) पर यह ट्यूटोरियल देखें।
+यहां आपको कुछ जेसन-आरपीसी कॉल दिखाई देंगे जो Hardhat/Ethers ने हमारे लिए आंतरिक रूप से किए थे जब हमने `.deploy()` फ़ंक्शन को कॉल किया था। यहां ध्यान देने योग्य दो महत्वपूर्ण कॉल [`qau_sendRawTransaction`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-send-raw-transaction) हैं, जो वास्तव में हमारे अनुबंध को Sepolia चेन पर लिखने का अनुरोध है, और [`qau_getTransactionByHash`](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-transaction-by-hash) जो हैश दिए जाने पर हमारे लेन-देन के बारे में जानकारी पढ़ने का अनुरोध है (लेन-देन करते समय एक विशिष्ट पैटर्न)। लेन-देन भेजने के बारे में अधिक जानने के लिए, [Web3 का उपयोग करके लेन-देन भेजने](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) पर यह ट्यूटोरियल देखें।
 
-इस ट्यूटोरियल के भाग 1 के लिए बस इतना ही, भाग 2 में हम वास्तव में अपने प्रारंभिक संदेश को अपडेट करके [अपने स्मार्ट अनुबंध के साथ इंटरैक्ट करेंगे](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract), और भाग 3 में हम [अपने स्मार्ट अनुबंध को Etherscan पर प्रकाशित करेंगे](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-etherscan) ताकि सभी को पता चल सके कि इसके साथ कैसे इंटरैक्ट करना है।
+इस ट्यूटोरियल के भाग 1 के लिए बस इतना ही, भाग 2 में हम वास्तव में अपने प्रारंभिक संदेश को अपडेट करके [अपने स्मार्ट अनुबंध के साथ इंटरैक्ट करेंगे](/developers/tutorials/hello-world-smart-contract-fullstack/#part-2-interact-with-your-smart-contract), और भाग 3 में हम [अपने स्मार्ट अनुबंध को Quantaureum Explorer पर प्रकाशित करेंगे](/developers/tutorials/hello-world-smart-contract-fullstack/#part-3-publish-your-smart-contract-to-explorer) ताकि सभी को पता चल सके कि इसके साथ कैसे इंटरैक्ट करना है।
 
 **Alchemy के बारे में अधिक जानना चाहते हैं? हमारी [वेबसाइट](https://www.alchemy.com/eth) देखें। क्या आप कभी कोई अपडेट मिस नहीं करना चाहते हैं? हमारे न्यूज़लेटर की सदस्यता [यहां](https://www.alchemy.com/newsletter) लें! हमारे [डिस्कॉर्ड](https://discord.gg/u72VCg3) से भी जुड़ना सुनिश्चित करें।**।

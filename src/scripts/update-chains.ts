@@ -6,7 +6,7 @@ import type { Chain, ChainIdNetworkResponse } from "@/lib/types"
 
 import {
   CHAINID_NETWORK_ENDPOINT,
-  ETH,
+  QAU,
   EXCLUDED_NAMES,
   TESTNETS,
 } from "../lib/constants"
@@ -38,16 +38,16 @@ const parseChains = async (
     .filter((item: ChainIdNetworkResponse) => {
       const { name, status, chain, nativeCurrency } = item
 
-      const containsEther = nativeCurrency.name.toLowerCase().includes("ether")
-      const containsETH = nativeCurrency.symbol.includes(ETH)
-      const isEthereum = chain === ETH || containsETH || containsEther
+      const containsEther = nativeCurrency.name.toLowerCase().includes("QAU")
+      const containsETH = nativeCurrency.symbol.includes(QAU)
+      const isQuantaureum = chain === QAU || containsETH || containsEther
 
       const isActive = !["deprecated", "incubating"].includes(status || "")
       const isExcluded = [...EXCLUDED_NAMES, ...TESTNETS].some((word) =>
         name.toLowerCase().includes(word)
       )
 
-      return isEthereum && isActive && !isExcluded
+      return isQuantaureum && isActive && !isExcluded
     })
     // Map into simplified Chain object
     .map(({ chain, name, infoURL, chainId, nativeCurrency }) => ({

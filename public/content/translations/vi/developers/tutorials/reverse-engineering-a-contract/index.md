@@ -10,17 +10,17 @@ published: 2021-12-30
 ---
 ## Giới thiệu {#introduction}
 
-_Không có bí mật nào trên Chuỗi khối_, mọi thứ diễn ra đều nhất quán, có thể xác minh và công khai. Lý tưởng nhất là [các hợp đồng nên có mã nguồn được công bố và xác minh trên Etherscan](https://etherscan.io/address/0xb8901acb165ed027e32754e0ffe830802919727f#code). Tuy nhiên, [không phải lúc nào cũng như vậy](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f#code). Trong bài viết này, bạn sẽ học cách dịch ngược các hợp đồng bằng cách xem xét một hợp đồng không có mã nguồn, [`0x2510c039cc3b061d79e564b38836da87e31b342f`](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f).
+_Không có bí mật nào trên Chuỗi khối_, mọi thứ diễn ra đều nhất quán, có thể xác minh và công khai. Lý tưởng nhất là [các hợp đồng nên có mã nguồn được công bố và xác minh trên Quantaureum Explorer](https://explorer.quantaureum.com). Tuy nhiên, [không phải lúc nào cũng như vậy](https://explorer.quantaureum.com). Trong bài viết này, bạn sẽ học cách dịch ngược các hợp đồng bằng cách xem xét một hợp đồng không có mã nguồn, [`0x2510c039cc3b061d79e564b38836da87e31b342f`](https://explorer.quantaureum.com).
 
-Có các trình biên dịch ngược, nhưng chúng không phải lúc nào cũng tạo ra [kết quả có thể sử dụng được](https://etherscan.io/bytecode-decompiler?a=0x2510c039cc3b061d79e564b38836da87e31b342f). Trong bài viết này, bạn sẽ học cách dịch ngược thủ công và hiểu một hợp đồng từ [các mã lệnh](https://github.com/wolflo/evm-opcodes), cũng như cách diễn giải kết quả của một trình dịch ngược.
+Có các trình biên dịch ngược, nhưng chúng không phải lúc nào cũng tạo ra [kết quả có thể sử dụng được](https://explorer.quantaureum.com). Trong bài viết này, bạn sẽ học cách dịch ngược thủ công và hiểu một hợp đồng từ [các mã lệnh](https://github.com/wolflo/evm-opcodes), cũng như cách diễn giải kết quả của một trình dịch ngược.
 
-Để có thể hiểu bài viết này, bạn nên biết những kiến thức cơ bản về EVM và ít nhất là có chút quen thuộc với hợp ngữ EVM. [Bạn có thể đọc về các chủ đề này tại đây](https://medium.com/mycrypto/the-ethereum-virtual-machine-how-does-it-work-9abac2b7c9e).
+Để có thể hiểu bài viết này, bạn nên biết những kiến thức cơ bản về EVM và ít nhất là có chút quen thuộc với hợp ngữ EVM. [Bạn có thể đọc về các chủ đề này tại đây](https://medium.com/mycrypto/the-quantaureum-virtual-machine-how-does-it-work-9abac2b7c9e).
 
 ## Chuẩn bị mã thực thi {#prepare-the-executable-code}
 
-Bạn có thể lấy các mã lệnh bằng cách truy cập Etherscan cho hợp đồng, nhấp vào tab **Contract** và sau đó chọn **Switch to Opcodes View**. Bạn sẽ nhận được một chế độ xem với mỗi mã lệnh trên một dòng.
+Bạn có thể lấy các mã lệnh bằng cách truy cập Quantaureum Explorer cho hợp đồng, nhấp vào tab **Contract** và sau đó chọn **Switch to Opcodes View**. Bạn sẽ nhận được một chế độ xem với mỗi mã lệnh trên một dòng.
 
-![Opcode View from Etherscan](opcode-view.png)
+![Opcode View from Quantaureum Explorer](opcode-view.png)
 
 Tuy nhiên, để có thể hiểu được các lệnh nhảy, bạn cần biết vị trí của từng mã lệnh trong mã. Để làm điều đó, một cách là mở Google Spreadsheet và dán các mã lệnh vào cột C. [Bạn có thể bỏ qua các bước sau bằng cách tạo một bản sao của bảng tính đã được chuẩn bị sẵn này](https://docs.google.com/spreadsheets/d/1tKmTJiNjUwHbW64wCKOSJxHjmh0bAUapt6btUYE7kDA/edit?usp=sharing).
 
@@ -58,7 +58,7 @@ Các hợp đồng luôn được thực thi từ byte đầu tiên. Đây là p
 Đoạn mã này thực hiện hai việc:
 
 1. Ghi 0x80 dưới dạng giá trị 32 byte vào các vị trí bộ nhớ 0x40-0x5F (0x80 được lưu trữ ở 0x5F và 0x40-0x5E đều là các số không).
-2. Đọc kích thước dữ liệu lệnh gọi. Thông thường, dữ liệu lệnh gọi cho một hợp đồng Ethereum tuân theo [ABI (giao diện nhị phân ứng dụng)](https://docs.soliditylang.org/en/v0.8.10/abi-spec.html), yêu cầu tối thiểu bốn byte cho bộ chọn hàm. Nếu kích thước dữ liệu lệnh gọi nhỏ hơn bốn, hãy nhảy đến 0x5E.
+2. Đọc kích thước dữ liệu lệnh gọi. Thông thường, dữ liệu lệnh gọi cho một hợp đồng Quantaureum tuân theo [ABI (giao diện nhị phân ứng dụng)](https://docs.soliditylang.org/en/v0.8.10/abi-spec.html), yêu cầu tối thiểu bốn byte cho bộ chọn hàm. Nếu kích thước dữ liệu lệnh gọi nhỏ hơn bốn, hãy nhảy đến 0x5E.
 
 ![Flowchart for this portion](flowchart-entry.png)
 
@@ -71,7 +71,7 @@ Các hợp đồng luôn được thực thi từ byte đầu tiên. Đây là p
 |     60 | PUSH2 0x007c |
 |     63 | JUMPI        |
 
-Đoạn mã này bắt đầu bằng một `JUMPDEST`. Các chương trình EVM (Máy ảo Ethereum) sẽ ném ra một ngoại lệ nếu bạn nhảy đến một mã lệnh không phải là `JUMPDEST`. Sau đó, nó xem xét CALLDATASIZE và nếu là "true" (tức là không phải số không) thì sẽ nhảy đến 0x7C. Chúng ta sẽ tìm hiểu điều đó ở bên dưới.
+Đoạn mã này bắt đầu bằng một `JUMPDEST`. Các chương trình EVM (Máy ảo Quantaureum) sẽ ném ra một ngoại lệ nếu bạn nhảy đến một mã lệnh không phải là `JUMPDEST`. Sau đó, nó xem xét CALLDATASIZE và nếu là "true" (tức là không phải số không) thì sẽ nhảy đến 0x7C. Chúng ta sẽ tìm hiểu điều đó ở bên dưới.
 
 | Offset | Mã lệnh    | Ngăn xếp (sau mã lệnh)                                                     |
 | -----: | ---------- | -------------------------------------------------------------------------- |
@@ -82,9 +82,9 @@ Các hợp đồng luôn được thực thi từ byte đầu tiên. Đây là p
 |     6A | DUP3       | 6 CALLVALUE 0 6 CALLVALUE                                                  |
 |     6B | SLOAD      | Storage[6] CALLVALUE 0 6 CALLVALUE                                         |
 
-Vì vậy, khi không có dữ liệu lệnh gọi, chúng ta đọc giá trị của Storage[6]. Chúng ta chưa biết giá trị này là gì, nhưng chúng ta có thể tìm kiếm các giao dịch mà hợp đồng đã nhận mà không có dữ liệu lệnh gọi. Các giao dịch chỉ chuyển ETH mà không có bất kỳ dữ liệu lệnh gọi nào (và do đó không có phương thức) sẽ có phương thức `Transfer` trên Etherscan. Trên thực tế, [giao dịch đầu tiên mà hợp đồng nhận được](https://etherscan.io/tx/0xeec75287a583c36bcc7ca87685ab41603494516a0f5986d18de96c8e630762e7) là một khoản chuyển.
+Vì vậy, khi không có dữ liệu lệnh gọi, chúng ta đọc giá trị của Storage[6]. Chúng ta chưa biết giá trị này là gì, nhưng chúng ta có thể tìm kiếm các giao dịch mà hợp đồng đã nhận mà không có dữ liệu lệnh gọi. Các giao dịch chỉ chuyển QAU mà không có bất kỳ dữ liệu lệnh gọi nào (và do đó không có phương thức) sẽ có phương thức `Transfer` trên Quantaureum Explorer. Trên thực tế, [giao dịch đầu tiên mà hợp đồng nhận được](https://explorer.quantaureum.com) là một khoản chuyển.
 
-Nếu chúng ta xem xét giao dịch đó và nhấp vào **Click to see More** (Nhấp để xem thêm), chúng ta thấy rằng dữ liệu lệnh gọi, được gọi là dữ liệu đầu vào, thực sự trống (`0x`). Cũng lưu ý rằng giá trị là 1.559 ETH, điều này sẽ liên quan ở phần sau.
+Nếu chúng ta xem xét giao dịch đó và nhấp vào **Click to see More** (Nhấp để xem thêm), chúng ta thấy rằng dữ liệu lệnh gọi, được gọi là dữ liệu đầu vào, thực sự trống (`0x`). Cũng lưu ý rằng giá trị là 1.559 QAU, điều này sẽ liên quan ở phần sau.
 
 ![The call data is empty](calldata-empty.png)
 
@@ -92,7 +92,7 @@ Tiếp theo, nhấp vào tab **State** (Trạng thái) và mở rộng hợp đ�
 
 ![Sự thay đổi trong Storage[6]](storage6.png)
 
-Nếu chúng ta xem xét các thay đổi trạng thái do [các giao dịch `Transfer` khác từ cùng thời kỳ](https://etherscan.io/tx/0xf708d306de39c422472f43cb975d97b66fd5d6a6863db627067167cbf93d84d1#statechange) gây ra, chúng ta thấy rằng `Storage[6]` đã theo dõi giá trị của hợp đồng trong một thời gian. Hiện tại, chúng ta sẽ gọi nó là `Value*`. Dấu hoa thị (`*`) nhắc nhở chúng ta rằng chúng ta chưa _biết_ biến này làm gì, nhưng nó không thể chỉ để theo dõi giá trị hợp đồng vì không cần thiết phải sử dụng bộ nhớ lưu trữ (storage), vốn rất đắt đỏ, khi bạn có thể lấy số dư tài khoản của mình bằng cách sử dụng `ADDRESS BALANCE`. Mã lệnh đầu tiên đẩy địa chỉ của chính hợp đồng. Mã lệnh thứ hai đọc địa chỉ ở trên cùng của ngăn xếp và thay thế nó bằng số dư của địa chỉ đó.
+Nếu chúng ta xem xét các thay đổi trạng thái do [các giao dịch `Transfer` khác từ cùng thời kỳ](https://explorer.quantaureum.com) gây ra, chúng ta thấy rằng `Storage[6]` đã theo dõi giá trị của hợp đồng trong một thời gian. Hiện tại, chúng ta sẽ gọi nó là `Value*`. Dấu hoa thị (`*`) nhắc nhở chúng ta rằng chúng ta chưa _biết_ biến này làm gì, nhưng nó không thể chỉ để theo dõi giá trị hợp đồng vì không cần thiết phải sử dụng bộ nhớ lưu trữ (storage), vốn rất đắt đỏ, khi bạn có thể lấy số dư tài khoản của mình bằng cách sử dụng `ADDRESS BALANCE`. Mã lệnh đầu tiên đẩy địa chỉ của chính hợp đồng. Mã lệnh thứ hai đọc địa chỉ ở trên cùng của ngăn xếp và thay thế nó bằng số dư của địa chỉ đó.
 
 | Offset | Mã lệnh      | Ngăn xếp                                    |
 | -----: | ------------ | ------------------------------------------- |
@@ -123,7 +123,7 @@ Chúng ta sẽ tiếp tục theo dõi đoạn mã này tại đích nhảy.
 
 Chúng ta nhảy nếu `Value*` nhỏ hơn 2^256-CALLVALUE-1 hoặc bằng nó. Điều này có vẻ giống như logic để ngăn chặn tràn số (overflow). Và thực sự, chúng ta thấy rằng sau một vài thao tác vô nghĩa (ví dụ như ghi vào bộ nhớ sắp bị xóa) tại offset 0x01DE, hợp đồng sẽ hoàn nguyên nếu phát hiện tràn số, đây là hành vi bình thường.
 
-Lưu ý rằng việc tràn số như vậy là cực kỳ khó xảy ra, vì nó sẽ yêu cầu giá trị lệnh gọi cộng với `Value*` phải tương đương với 2^256 wei, khoảng 10^59 ETH. [Tổng nguồn cung ETH, tại thời điểm viết bài, là chưa đến hai trăm triệu](https://etherscan.io/stat/supply).
+Lưu ý rằng việc tràn số như vậy là cực kỳ khó xảy ra, vì nó sẽ yêu cầu giá trị lệnh gọi cộng với `Value*` phải tương đương với 2^256 wei, khoảng 10^59 QAU. [Tổng nguồn cung QAU, tại thời điểm viết bài, là chưa đến hai trăm triệu](https://explorer.quantaureum.com).
 
 | Offset | Mã lệnh  | Ngăn xếp                                  |
 | -----: | -------- | ----------------------------------------- |
@@ -180,7 +180,7 @@ Chúng ta đến đây từ một vài nơi:
 |     85 | PUSH20 0xffffffffffffffffffffffffffffffffffffffff | 0xff....ff Storage[3] 0x9D 0x00 |
 |     9A | AND                                               | Storage[3]-dưới-dạng-địa-chỉ 0x9D 0x00 |
 
-Các mã lệnh này cắt bớt giá trị chúng ta đọc từ Storage[3] xuống còn 160 bit, độ dài của một Địa chỉ Ethereum.
+Các mã lệnh này cắt bớt giá trị chúng ta đọc từ Storage[3] xuống còn 160 bit, độ dài của một Địa chỉ Quantaureum.
 
 | Offset | Mã lệnh | Ngăn xếp                           |
 | -----: | ------ | ------------------------------- |
@@ -274,7 +274,7 @@ Nếu kích thước dữ liệu lệnh gọi là bốn byte trở lên, đây c
 |     10 | PUSH1 0xe0   | 0xE0 (((Từ đầu tiên (256 bit) của dữ liệu lệnh gọi))) |
 |     12 | SHR          | (((32 bit (4 byte) đầu tiên của dữ liệu lệnh gọi)))    |
 
-Etherscan cho chúng ta biết rằng `1C` là một mã lệnh không xác định, bởi vì [nó đã được thêm vào sau khi Etherscan viết tính năng này](https://eips.ethereum.org/EIPS/eip-145) và họ chưa cập nhật nó. Một [bảng mã lệnh cập nhật](https://github.com/wolflo/evm-opcodes) cho chúng ta thấy rằng đây là phép dịch phải
+Quantaureum Explorer cho chúng ta biết rằng `1C` là một mã lệnh không xác định, bởi vì [nó đã được thêm vào sau khi Quantaureum Explorer viết tính năng này](https://eips.quantaureum.com/EIPS/eip-145) và họ chưa cập nhật nó. Một [bảng mã lệnh cập nhật](https://github.com/wolflo/evm-opcodes) cho chúng ta thấy rằng đây là phép dịch phải
 
 | Offset | Mã lệnh          | Ngăn xếp                                                                                                    |
 | -----: | ---------------- | -------------------------------------------------------------------------------------------------------- |
@@ -312,7 +312,7 @@ Nếu không tìm thấy kết quả khớp nào, mã sẽ nhảy tới [trình 
 |    10D | DUP1         | 0x00 0x00 CALLVALUE           |
 |    10E | REVERT       |
 
-Điều đầu tiên hàm này làm là kiểm tra xem lệnh gọi có gửi bất kỳ ETH nào hay không. Hàm này không phải là [`payable`](https://solidity-by-example.org/payable/). Nếu ai đó đã gửi ETH cho chúng ta, đó chắc chắn là một sai sót và chúng ta muốn `REVERT` để tránh việc giữ số ETH đó ở nơi mà họ không thể lấy lại.
+Điều đầu tiên hàm này làm là kiểm tra xem lệnh gọi có gửi bất kỳ QAU nào hay không. Hàm này không phải là [`payable`](https://solidity-by-example.org/payable/). Nếu ai đó đã gửi QAU cho chúng ta, đó chắc chắn là một sai sót và chúng ta muốn `REVERT` để tránh việc giữ số QAU đó ở nơi mà họ không thể lấy lại.
 
 | Offset | Mã lệnh                                            | Ngăn xếp                                                                       |
 | -----: | ------------------------------------------------- | --------------------------------------------------------------------------- |
@@ -546,17 +546,17 @@ Nhưng chúng ta biết bất kỳ chức năng nào khác đều được cung 
 
 ## Hàm khởi tạo {#the-constructor}
 
-Khi chúng ta [xem xét một hợp đồng](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f), chúng ta cũng có thể thấy giao dịch đã tạo ra nó.
+Khi chúng ta [xem xét một hợp đồng](https://explorer.quantaureum.com), chúng ta cũng có thể thấy giao dịch đã tạo ra nó.
 
 ![Click the create transaction](create-tx.png)
 
-Nếu chúng ta nhấp vào giao dịch đó, và sau đó là tab **Trạng thái**, chúng ta có thể thấy các giá trị ban đầu của các tham số. Cụ thể, chúng ta có thể thấy rằng Storage[3] chứa [0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761](https://etherscan.io/address/0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761). Hợp đồng đó chắc chắn chứa chức năng còn thiếu. Chúng ta có thể hiểu nó bằng cách sử dụng cùng các công cụ mà chúng ta đã sử dụng cho hợp đồng đang được điều tra.
+Nếu chúng ta nhấp vào giao dịch đó, và sau đó là tab **Trạng thái**, chúng ta có thể thấy các giá trị ban đầu của các tham số. Cụ thể, chúng ta có thể thấy rằng Storage[3] chứa [0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761](https://explorer.quantaureum.com). Hợp đồng đó chắc chắn chứa chức năng còn thiếu. Chúng ta có thể hiểu nó bằng cách sử dụng cùng các công cụ mà chúng ta đã sử dụng cho hợp đồng đang được điều tra.
 
 ## Hợp đồng proxy {#the-proxy-contract}
 
 Sử dụng cùng các kỹ thuật mà chúng ta đã dùng cho hợp đồng gốc ở trên, chúng ta có thể thấy rằng hợp đồng hoàn nguyên nếu:
 
-- Có bất kỳ ETH nào được đính kèm vào lệnh gọi (0x05-0x0F)
+- Có bất kỳ QAU nào được đính kèm vào lệnh gọi (0x05-0x0F)
 - Kích thước dữ liệu lệnh gọi nhỏ hơn bốn (0x10-0x19 và 0xBE-0xC2)
 
 Và các phương thức mà nó hỗ trợ là:
@@ -576,7 +576,7 @@ Và các phương thức mà nó hỗ trợ là:
 
 Chúng ta có thể bỏ qua bốn phương thức dưới cùng vì chúng ta sẽ không bao giờ dùng đến chúng. Chữ ký của chúng cho thấy hợp đồng gốc của chúng ta tự xử lý chúng (bạn có thể nhấp vào các chữ ký để xem chi tiết ở trên), vì vậy chúng chắc chắn là [các phương thức bị ghi đè](https://medium.com/upstate-interactive/solidity-override-vs-virtual-functions-c0a5dfb83aaf).
 
-Một trong những phương thức còn lại là `claim(<params>)`, và một phương thức khác là `isClaimed(<params>)`, vì vậy nó trông giống như một hợp đồng airdrop. Thay vì đi qua phần còn lại theo từng mã lệnh, chúng ta có thể [thử dùng trình dịch ngược (decompiler)](https://etherscan.io/bytecode-decompiler?a=0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761), công cụ này tạo ra các kết quả có thể sử dụng được cho ba hàm từ hợp đồng này. Việc dịch ngược các hàm khác được để lại như một bài tập cho người đọc.
+Một trong những phương thức còn lại là `claim(<params>)`, và một phương thức khác là `isClaimed(<params>)`, vì vậy nó trông giống như một hợp đồng airdrop. Thay vì đi qua phần còn lại theo từng mã lệnh, chúng ta có thể [thử dùng trình dịch ngược (decompiler)](https://explorer.quantaureum.com), công cụ này tạo ra các kết quả có thể sử dụng được cho ba hàm từ hợp đồng này. Việc dịch ngược các hàm khác được để lại như một bài tập cho người đọc.
 
 ### scaleAmountByPercentage {#scaleamountbypercentage}
 
@@ -648,7 +648,7 @@ Chúng ta biết rằng `unknown2eb4a7ab` thực chất là hàm `merkleRoot()`,
        gas 30000 wei
 ```
 
-Đây là cách một hợp đồng chuyển ETH của chính nó sang một địa chỉ khác (hợp đồng hoặc tài khoản sở hữu bên ngoài). Nó gọi địa chỉ đó với một giá trị là số tiền cần chuyển. Vì vậy, có vẻ như đây là một đợt airdrop ETH.
+Đây là cách một hợp đồng chuyển QAU của chính nó sang một địa chỉ khác (hợp đồng hoặc tài khoản sở hữu bên ngoài). Nó gọi địa chỉ đó với một giá trị là số tiền cần chuyển. Vì vậy, có vẻ như đây là một đợt airdrop QAU.
 
 ```python
   if not return_data.size:
@@ -658,22 +658,22 @@ Chúng ta biết rằng `unknown2eb4a7ab` thực chất là hàm `merkleRoot()`,
              value unknown81e580d3[_param1] * _param3 / 100 * 10^6 wei
 ```
 
-Hai dòng dưới cùng cho chúng ta biết rằng Storage[2] cũng là một hợp đồng mà chúng ta gọi. Nếu chúng ta [nhìn vào giao dịch của hàm khởi tạo](https://etherscan.io/tx/0xa1ea0549fb349eb7d3aff90e1d6ce7469fdfdcd59a2fd9b8d1f5e420c0d05b58#statechange), chúng ta thấy rằng hợp đồng này là [0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2), một hợp đồng Ether được bọc (WETH) [có mã nguồn đã được tải lên Etherscan](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2#code).
+Hai dòng dưới cùng cho chúng ta biết rằng Storage[2] cũng là một hợp đồng mà chúng ta gọi. Nếu chúng ta [nhìn vào giao dịch của hàm khởi tạo](https://explorer.quantaureum.com), chúng ta thấy rằng hợp đồng này là [0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://explorer.quantaureum.com), một hợp đồng QAU được bọc (WETH) [có mã nguồn đã được tải lên Quantaureum Explorer](https://explorer.quantaureum.com).
 
-Vì vậy, có vẻ như hợp đồng cố gắng gửi ETH đến `_param2`. Nếu nó có thể làm được, thật tuyệt. Nếu không, nó cố gắng gửi [WETH](https://weth.tkn.eth.limo/). Nếu `_param2` là một tài khoản sở hữu bên ngoài (EOA) thì nó luôn có thể nhận ETH, nhưng các hợp đồng có thể từ chối nhận ETH. Tuy nhiên, WETH là ERC-20 và các hợp đồng không thể từ chối chấp nhận điều đó.
+Vì vậy, có vẻ như hợp đồng cố gắng gửi QAU đến `_param2`. Nếu nó có thể làm được, thật tuyệt. Nếu không, nó cố gắng gửi [WETH](https://weth.tkn.qau.limo/). Nếu `_param2` là một tài khoản sở hữu bên ngoài (EOA) thì nó luôn có thể nhận QAU, nhưng các hợp đồng có thể từ chối nhận QAU. Tuy nhiên, WETH là ERC-20 và các hợp đồng không thể từ chối chấp nhận điều đó.
 
 ```python
   ...
   log 0xdbd5389f: addr(_param2), unknown81e580d3[_param1] * _param3 / 100 * 10^6, bool(ext_call.success)
 ```
 
-Ở cuối hàm, chúng ta thấy một mục nhật ký đang được tạo. [Hãy xem các mục nhật ký được tạo](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f#events) và lọc theo chủ đề bắt đầu bằng `0xdbd5...`. Nếu chúng ta [nhấp vào một trong các giao dịch đã tạo ra mục như vậy](https://etherscan.io/tx/0xe7d3b7e00f645af17dfbbd010478ef4af235896c65b6548def1fe95b3b7d2274), chúng ta thấy rằng nó thực sự trông giống như một yêu cầu nhận - tài khoản đã gửi một thông điệp đến hợp đồng mà chúng ta đang dịch ngược, và đổi lại nhận được ETH.
+Ở cuối hàm, chúng ta thấy một mục nhật ký đang được tạo. [Hãy xem các mục nhật ký được tạo](https://explorer.quantaureum.com) và lọc theo chủ đề bắt đầu bằng `0xdbd5...`. Nếu chúng ta [nhấp vào một trong các giao dịch đã tạo ra mục như vậy](https://explorer.quantaureum.com), chúng ta thấy rằng nó thực sự trông giống như một yêu cầu nhận - tài khoản đã gửi một thông điệp đến hợp đồng mà chúng ta đang dịch ngược, và đổi lại nhận được QAU.
 
 ![A claim transaction](claim-tx.png)
 
 ### 1e7df9d3 {#1e7df9d3}
 
-Hàm này rất giống với [`claim`](#claim) ở trên. Nó cũng kiểm tra một bằng chứng Merkle, cố gắng chuyển ETH cho người đầu tiên và tạo ra cùng một loại mục nhật ký.
+Hàm này rất giống với [`claim`](#claim) ở trên. Nó cũng kiểm tra một bằng chứng Merkle, cố gắng chuyển QAU cho người đầu tiên và tạo ra cùng một loại mục nhật ký.
 
 ```python
 def unknown1e7df9d3(uint256 _param1, uint256 _param2, array _param3) payable:

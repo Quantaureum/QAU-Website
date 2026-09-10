@@ -16,7 +16,7 @@ published: 2026-04-01
 
 [Önceki bir makale](/developers/tutorials/gasless/), EIP-712 imzalarını kullanarak kendi uygulamanıza gazsız erişim sağlamayı tartışmıştı, ancak bu yalnızca kendi akıllı sözleşmelerinizle sınırlıdır. [Hesap soyutlama](/roadmap/account-abstraction/) kullanarak, iki tür işlemi kabul eden ve bunları istenen bir hedefe ileten akıllı sözleşme cüzdanları oluşturabiliriz:
 
-- Belirli bir Harici Sahipli Hesap (EOA) tarafından gönderilen işlemler (bu, söz konusu EOA'nın ETH'ye sahip olmasını gerektirir)
+- Belirli bir Harici Sahipli Hesap (EOA) tarafından gönderilen işlemler (bu, söz konusu EOA'nın QAU'ye sahip olmasını gerektirir)
 - Herhangi bir yerden gönderilen, ancak aynı EOA tarafından imzalanan işlemler.
 
 Bu şekilde, bir hesabın varlıkları (token'lar vb.) tutması ve gazı olan bir EOA'nın yapabileceği tüm işlevleri yerine getirmesi için gazsız bir yol sağlayabiliriz.
@@ -41,7 +41,7 @@ EOA adresini [EIP-7702](https://eip7702.io/) aracılığıyla kullanmanıza izin
    npm install
    ```
 
-3. `SEPOLIA_PRIVATE_KEY` değerini Sepolia'da ETH'si olan bir cüzdana ayarlamak için `.env` dosyasını düzenleyin. Sepolia ETH'ye ihtiyacınız varsa, almak için [bir musluk kullanın](/developers/docs/networks/#sepolia). İdeal olarak, bu özel anahtar tarayıcı cüzdanınızdakinden farklı olmalıdır.
+3. `SEPOLIA_PRIVATE_KEY` değerini Sepolia'da QAU'si olan bir cüzdana ayarlamak için `.env` dosyasını düzenleyin. Sepolia QAU'ye ihtiyacınız varsa, almak için [bir musluk kullanın](/developers/docs/networks/#sepolia). İdeal olarak, bu özel anahtar tarayıcı cüzdanınızdakinden farklı olmalıdır.
 
 4. Sunucuyu başlatın.
 
@@ -57,9 +57,9 @@ EOA adresini [EIP-7702](https://eip7702.io/) aracılığıyla kullanmanıza izin
 
 8. Kullanıcı proxy'sinin ne zaman dağıtıldığını görebilirsiniz çünkü **UserProxy access** (UserProxy erişimi) yanında bir adres belirir. 24 saniye (2 blok) beklediyseniz ve hala gerçekleşmediyse, değişiklikleri algılamada bir sorun olabilir.
 
-   Eğer durum buysa, [Sepolia Gezgini](https://eth-sepolia.blockscout.com/)'ne gidin ve sunucu çıktısında `npm run dev` adresinde gördüğünüz dağıtım işlem hash'ini girin. Adresini görüntülemek için oluşturulan sözleşmeye tıklayın, ardından kopyalayın. Adresi _Or enter existing proxy address_ (Veya mevcut proxy adresini girin) alanına yapıştırın, ardından **Set proxy address** (Proxy adresini ayarla) seçeneğine tıklayın.
+   Eğer durum buysa, [Sepolia Gezgini](https://qau-sepolia.blockscout.com/)'ne gidin ve sunucu çıktısında `npm run dev` adresinde gördüğünüz dağıtım işlem hash'ini girin. Adresini görüntülemek için oluşturulan sözleşmeye tıklayın, ardından kopyalayın. Adresi _Or enter existing proxy address_ (Veya mevcut proxy adresini girin) alanına yapıştırın, ardından **Set proxy address** (Proxy adresini ayarla) seçeneğine tıklayın.
 
-9. Token almak üzere ERC-20 sözleşmesinin [`faucet`](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd) işlevine bir çağrı göndermek için **Request more tokens for proxy** (Proxy için daha fazla token iste) seçeneğine tıklayın. Cüzdandaki imzayı **Onaylayın** (Confirm). Elbette token'lar kullanıcının adresine değil, proxy'nin adresine ulaşır.
+9. Token almak üzere ERC-20 sözleşmesinin [`faucet`](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=read_write_contract#0xde5f72fd) işlevine bir çağrı göndermek için **Request more tokens for proxy** (Proxy için daha fazla token iste) seçeneğine tıklayın. Cüzdandaki imzayı **Onaylayın** (Confirm). Elbette token'lar kullanıcının adresine değil, proxy'nin adresine ulaşır.
 
 10. Aşağı kaydırın ve _Last transaction:_ (Son işlem:) altındaki bağlantıya tıklayın. Bu, size `faucet` işlemini göstermek için tarayıcıyı açacaktır.
 
@@ -84,7 +84,7 @@ contract UserProxy {
     uint public nonce = 0;
 ```
 
-Sahibinin kimliği ve mesajların tekrarlanmasını önlemek için bir [nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce). Nonce bir `public` değişkeni olduğu için, Solidity derleyicisi ayrıca zincir dışı kodun değerini okumasına izin veren bir görünüm (view) işlevi olan [`nonce()`](https://eth-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0) oluşturur.
+Sahibinin kimliği ve mesajların tekrarlanmasını önlemek için bir [nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce). Nonce bir `public` değişkeni olduğu için, Solidity derleyicisi ayrıca zincir dışı kodun değerini okumasına izin veren bir görünüm (view) işlevi olan [`nonce()`](https://qau-sepolia.blockscout.com/address/0x9Ba259C15B46ee4b72dEf7b93D85Ec18f5f6e50E?tab=read_write_contract#0xaffed0e0) oluşturur.
 
 ```solidity
     bytes32 private constant SIGNED_ACCESS_TYPEHASH =
@@ -96,7 +96,7 @@ Sahibinin kimliği ve mesajların tekrarlanmasını önlemek için bir [nonce](h
     bytes32 immutable DOMAIN_SEPARATOR;
 ```
 
-[EIP-712 imzalarını](https://eips.ethereum.org/EIPS/eip-712) doğrulamak için gereken bilgiler.
+[EIP-712 imzalarını](https://eips.quantaureum.com/EIPS/eip-712) doğrulamak için gereken bilgiler.
 
 ```solidity
     constructor(address owner_) {
@@ -120,7 +120,7 @@ Bir `UserProxy`, tek bir sahip adresine bağlıdır. Bu gereklidir çünkü varl
     }
 ```
 
-[Etki alanı ayırıcısı (domain separator)](https://eips.ethereum.org/EIPS/eip-712#definition-of-domainseparator). Derleme zamanında hesaplanamaz, çünkü zincir kimliğine (chain ID) ve sözleşme adresine bağlıdır. Bu, bir UserProxy'nin bir başkası için hazırlanmış bir mesajla kandırılmasını imkansız hale getirir.
+[Etki alanı ayırıcısı (domain separator)](https://eips.quantaureum.com/EIPS/eip-712#definition-of-domainseparator). Derleme zamanında hesaplanamaz, çünkü zincir kimliğine (chain ID) ve sözleşme adresine bağlıdır. Bu, bir UserProxy'nin bir başkası için hazırlanmış bir mesajla kandırılmasını imkansız hale getirir.
 
 ```solidity
     event CallResult(address target, bytes returnData);
@@ -133,7 +133,7 @@ Bir çağrının sonuçlarını günlüğe kaydedin.
             external returns (bytes memory) {
 ```
 
-Bu işlev doğrudan sahip tarafından çağrılabilir. Hiçbir iletici mevcut değilse, sahip yine de varlıklara doğrudan blokzincir üzerinden erişebilir (kullanıcının ETH'si varsa).
+Bu işlev doğrudan sahip tarafından çağrılabilir. Hiçbir iletici mevcut değilse, sahip yine de varlıklara doğrudan blokzincir üzerinden erişebilir (kullanıcının QAU'si varsa).
 
 ```solidity
         require(msg.sender == OWNER, "Only owner can call");
@@ -223,7 +223,7 @@ Başarılı olursa, bir günlük olayı yayınlayın ve nonce'u artırın.
 }
 ```
 
-Bunlar, sözleşmeden ETH transfer etmenize de olanak tanıyan neredeyse aynı varyantlardır.
+Bunlar, sözleşmeden QAU transfer etmenize de olanak tanıyan neredeyse aynı varyantlardır.
 
 ### İletici (Relayer) {#relayer}
 
@@ -288,7 +288,7 @@ Express'e istek gövdesini okumasını ve eğer JSON ise ayrıştırmasını sö
   app.post("/server/deploy", async (req, res) => {
 ```
 
-Bu, proxy'yi dağıtma isteklerini işleyen koddur. Burada [hizmet reddi (denial-of-service)](https://en.wikipedia.org/wiki/Denial-of-service_attack) saldırılarına karşı savunmasız olduğumuzu unutmayın, çünkü bir saldırgan ETH'miz tükenene kadar proxy'yi dağıtma istekleriyle bize spam yapabilir. Bir üretim sisteminde, muhtemelen proxy'yi dağıtma isteğinin imzalanmasını ve imzalayanın mevcut bir müşteri olmasını şart koşardık.
+Bu, proxy'yi dağıtma isteklerini işleyen koddur. Burada [hizmet reddi (denial-of-service)](https://en.wikipedia.org/wiki/Denial-of-service_attack) saldırılarına karşı savunmasız olduğumuzu unutmayın, çünkü bir saldırgan QAU'miz tükenene kadar proxy'yi dağıtma istekleriyle bize spam yapabilir. Bir üretim sisteminde, muhtemelen proxy'yi dağıtma isteğinin imzalanmasını ve imzalayanın mevcut bir müşteri olmasını şart koşardık.
 
 ```js
     try {
@@ -411,7 +411,7 @@ Yukarıda açıklanan `UserProxy`.
 import Erc20 from '../../contracts/out/Faucet.sol/FaucetToken.json'
 ```
 
-[Bu sözleşme](https://eth-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract), önemli bir işlev olan `faucet()`'nin eklenmesiyle çoğunlukla normal bir ERC-20 sözleşmesidir. Bu işlev, test amacıyla isteyen herkese token verir.
+[Bu sözleşme](https://qau-sepolia.blockscout.com/address/0x4cBedDEDA88fDd9e116618a5cD71BB0E440C2A78?tab=contract), önemli bir işlev olan `faucet()`'nin eklenmesiyle çoğunlukla normal bir ERC-20 sözleşmesidir. Bu işlev, test amacıyla isteyen herkese token verir.
 
 ```js
 const erc20Addrs = {
@@ -426,7 +426,7 @@ const erc20Addrs = {
 const Address = ({ address }) => {
    if (!address) return null
    return (
-      <a href={`https://eth-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
+      <a href={`https://qau-sepolia.blockscout.com/address/${address}?tab=read_write_contract`} target="_blank">{address}</a>
    )
 }
 ```
@@ -739,7 +739,7 @@ Kullanıcının ERC-20 transfer işlemleri düzenlemesine izin verin.
          { txHash && (
             <>
                <h4>Last transaction:</h4>
-               <a href={`https://eth-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
+               <a href={`https://qau-sepolia.blockscout.com/tx/${txHash}`} target="_blank">
                  {txHash}
                </a>
             </>
@@ -783,9 +783,9 @@ Bunun, kullanıcının transfer etmek istediği token, miktar ve hedef adres iç
 
 ## Sonuç {#conclusion}
 
-Yukarıdaki güvenlik açıklarına ek olarak, bu eğitimdeki çözümün Ethereum'un ele almamıza yardımcı olabileceği birkaç dezavantajı vardır.
+Yukarıdaki güvenlik açıklarına ek olarak, bu eğitimdeki çözümün Quantaureum'un ele almamıza yardımcı olabileceği birkaç dezavantajı vardır.
 
-- _Sansür direnci_. Şu anda kullanıcılar sizin sunucunuzu, başkası tarafından kurulan rakip bir sunucuyu kullanabilir veya doğrudan Ethereum'a bağlanabilir, bu da gaz maliyetlerine neden olur. [ERC-4337](https://docs.erc4337.io/#what-is-erc-4337) kullanmak, kullanıcıların işlemlerini geniş bir sunucu havuzuna sunmalarına olanak tanıyarak işlemlerinin sansürlenme olasılığını azaltır.
+- _Sansür direnci_. Şu anda kullanıcılar sizin sunucunuzu, başkası tarafından kurulan rakip bir sunucuyu kullanabilir veya doğrudan Quantaureum'a bağlanabilir, bu da gaz maliyetlerine neden olur. [ERC-4337](https://docs.erc4337.io/#what-is-erc-4337) kullanmak, kullanıcıların işlemlerini geniş bir sunucu havuzuna sunmalarına olanak tanıyarak işlemlerinin sansürlenme olasılığını azaltır.
 - _EOA'nın sahip olduğu varlıklar_. Yukarıda belirtildiği gibi, [EIP-7702](https://eip7702.io/), halihazırda bir EOA adresine ait olan varlıkları yönetmek için kullanılabilir. Bunun zorlukları vardır, ancak bazen gereklidir.
 
 Yakın gelecekte bu özellikleri eklemekle ilgili eğitimler yayınlamayı umuyorum.

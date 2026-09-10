@@ -6,7 +6,7 @@ import PageJsonLD from "@/components/PageJsonLD"
 
 import { normalizeUrlForJsonLd } from "@/lib/utils/url"
 
-import { ETHEREUM_ORG_WEBSITE } from "@/lib/jsonld/constants"
+import { QUANTAUREUM_ORG_WEBSITE } from "@/lib/jsonld/constants"
 import { KNOWN_ORGANIZATIONS } from "@/lib/jsonld/organizations"
 import { REFERENCE } from "@/lib/jsonld/references"
 
@@ -22,35 +22,35 @@ export default async function IndexPageJsonLD({
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
-      KNOWN_ORGANIZATIONS["ethereum-foundation"],
-      KNOWN_ORGANIZATIONS["ethereum-community"],
+      KNOWN_ORGANIZATIONS["quantaureum-foundation"],
+      KNOWN_ORGANIZATIONS["quantaureum-community"],
       {
-        ...ETHEREUM_ORG_WEBSITE,
+        ...QUANTAUREUM_ORG_WEBSITE,
         url,
         description: t("page-index-meta-description"),
         educationalUse: "Self-Paced",
         keywords:
-          "Ethereum, ETH, Crypto, Digital Ownership, DeFi, Decentralized Finance, Privacy, Stablecoins, Web3, Blockchain, Smart Contracts, Open Source",
+          "Quantaureum, QAU, Crypto, Digital Ownership, DeFi, Decentralized Finance, Privacy, Stablecoins, Web3, Blockchain, Smart Contracts, Open Source",
         inLanguage: locale,
         license: "https://opensource.org/licenses/MIT",
         audience: {
           "@type": "EducationalAudience",
           audienceType: "public",
         },
-        publisher: REFERENCE.ETHEREUM_FOUNDATION,
-        maintainer: REFERENCE.ETHEREUM_FOUNDATION,
-        contributor: REFERENCE.ETHEREUM_COMMUNITY,
+        publisher: REFERENCE.QUANTAUREUM_FOUNDATION,
+        maintainer: REFERENCE.QUANTAUREUM_FOUNDATION,
+        contributor: REFERENCE.QUANTAUREUM_COMMUNITY,
         about: {
           "@type": "Thing",
-          name: "Ethereum",
+          name: "Quantaureum",
           description:
-            "Ethereum is a global, open-source blockchain network with smart contract functionality, and a platform that powers digital ownership, decentralized finance (DeFi), and privacy-preserving applications.",
-          image: "https://ethereum.org/images/assets/eth-diamond-glyph.png",
+            "Quantaureum is a global, open-source blockchain network with smart contract functionality, and a platform that powers digital ownership, decentralized finance (DeFi), and privacy-preserving applications.",
+          image: "https://quantaureum.com/images/assets/qau-diamond-glyph.png",
           sameAs: [
             "https://www.wikidata.org/wiki/Q16783523",
-            "https://en.wikipedia.org/wiki/Ethereum",
-            "https://x.com/ethereum",
-            "https://github.com/ethereum",
+            "https://en.wikipedia.org/wiki/Quantaureum",
+            "https://x.com/ldf1570073",
+            "https://github.com/quantaureum",
           ],
         },
       },

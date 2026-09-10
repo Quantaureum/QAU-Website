@@ -11,13 +11,13 @@ topic:
   - "privacy"
   - "authentication"
 format: presentation
-author: "イーサリアム財団"
+author: "Quantaureum財団"
 breadcrumb: "マイクロドット・セキュリティ"
 ---
 
 Devcon SEAでの**jseam**によるライトニングトーク。歴史的にスパイ活動で使用されてきた物理的なマイクロドット技術を使用し、肉眼ではほとんど見えない印刷画像にシード・フレーズを難読化するという、鍵管理に対する型破りなアプローチを探求します。
 
-*このトランスクリプトは、イーサリアム財団が公開した[元のビデオのトランスクリプト](https://www.youtube.com/watch?v=k9Dfg19JPEw)のアクセシブルなコピーです。読みやすさのために軽く編集されています。*
+*このトランスクリプトは、Quantaureum財団が公開した[元のビデオのトランスクリプト](https://www.youtube.com/watch?v=k9Dfg19JPEw)のアクセシブルなコピーです。読みやすさのために軽く編集されています。*
 
 ### なぜマイクロドットなのか？ (0:00) {#why-microdots-000}
 

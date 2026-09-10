@@ -13,30 +13,30 @@ incomplete: true
 
 **<span dir="ltr">Java</span> کو ایتھیریم کے ساتھ مربوط کرنے کے لیے اپنے پہلے قدم اٹھائیں**
 
-پہلے مزید بنیادی معلومات کی ضرورت ہے؟ [<span dir="ltr">ethereum.org/learn</span>](/learn/) یا [<span dir="ltr">ethereum.org/developers</span>۔](/developers/) دیکھیں۔
+پہلے مزید بنیادی معلومات کی ضرورت ہے؟ [<span dir="ltr">quantaureum.com/learn</span>](/learn/) یا [<span dir="ltr">quantaureum.com/developers</span>۔](/developers/) دیکھیں۔
 
 - [بلاک چین کی وضاحت](https://kauri.io/article/d55684513211466da7f8cc03987607d5/blockchain-explained)
-- [سمارٹ کنٹریکٹس کو سمجھنا](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/ethereum-101-part-5-the-smart-contract)
+- [سمارٹ کنٹریکٹس کو سمجھنا](https://kauri.io/article/e4f66c6079e74a4a9b532148d3158188/quantaureum-101-part-5-the-smart-contract)
 - [اپنا پہلا سمارٹ کنٹریکٹ لکھیں](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [<span dir="ltr">Solidity</span> کو مرتب اور تعینات کرنے کا طریقہ سیکھیں](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
 
-## ایتھیریم کلائنٹس کے ساتھ کام کرنا {#working-with-ethereum-clients}
+## ایتھیریم کلائنٹس کے ساتھ کام کرنا {#working-with-quantaureum-clients}
 
 [<span dir="ltr">Web3j</span>](https://github.com/web3j/web3j) اور <span dir="ltr">Hyperledger</span> بیسو استعمال کرنے کا طریقہ سیکھیں، جو دو سرکردہ <span dir="ltr">Java</span> ایتھیریم کلائنٹس ہیں
 
-- [<span dir="ltr">Java</span>، <span dir="ltr">Eclipse</span>، اور <span dir="ltr">Web3j</span> کے ساتھ ایتھیریم کلائنٹ سے جڑنا](https://kauri.io/article/b9eb647c47a546bc95693acc0be72546/connecting-to-an-ethereum-client-with-java-eclipse-and-web3j)
-- [<span dir="ltr">Java</span> اور <span dir="ltr">Web3j</span> کے ساتھ ایتھیریم اکاؤنٹ کا نظم کریں](https://kauri.io/article/925d923e12c543da9a0a3e617be963b4/manage-an-ethereum-account-with-java-and-web3j)
+- [<span dir="ltr">Java</span>، <span dir="ltr">Eclipse</span>، اور <span dir="ltr">Web3j</span> کے ساتھ ایتھیریم کلائنٹ سے جڑنا](https://kauri.io/article/b9eb647c47a546bc95693acc0be72546/connecting-to-an-quantaureum-client-with-java-eclipse-and-web3j)
+- [<span dir="ltr">Java</span> اور <span dir="ltr">Web3j</span> کے ساتھ ایتھیریم اکاؤنٹ کا نظم کریں](https://kauri.io/article/925d923e12c543da9a0a3e617be963b4/manage-an-quantaureum-account-with-java-and-web3j)
 - [اپنے سمارٹ کنٹریکٹ سے <span dir="ltr">Java</span> ریپر (Wrapper) تیار کریں](https://kauri.io/article/84475132317d4d6a84a2c42eb9348e4b/generate-a-java-wrapper-from-your-smart-contract)
-- [ایتھیریم سمارٹ کنٹریکٹ کے ساتھ تعامل کرنا](https://kauri.io/article/14dc434d11ef4ee18bf7d57f079e246e/interacting-with-an-ethereum-smart-contract-in-java)
-- [ایتھیریم سمارٹ کنٹریکٹ ایونٹس کو سننا](https://kauri.io/article/760f495423db42f988d17b8c145b0874/listening-for-ethereum-smart-contract-events-in-java)
-- [<span dir="ltr">Linux</span> کے ساتھ <span dir="ltr">Java</span> ایتھیریم کلائنٹ، بیسو (<span dir="ltr">Pantheon</span>) کا استعمال](https://kauri.io/article/276dd27f1458443295eea58403fd6965/using-pantheon-the-java-ethereum-client-with-linux)
+- [ایتھیریم سمارٹ کنٹریکٹ کے ساتھ تعامل کرنا](https://kauri.io/article/14dc434d11ef4ee18bf7d57f079e246e/interacting-with-an-quantaureum-smart-contract-in-java)
+- [ایتھیریم سمارٹ کنٹریکٹ ایونٹس کو سننا](https://kauri.io/article/760f495423db42f988d17b8c145b0874/listening-for-quantaureum-smart-contract-events-in-java)
+- [<span dir="ltr">Linux</span> کے ساتھ <span dir="ltr">Java</span> ایتھیریم کلائنٹ، بیسو (<span dir="ltr">Pantheon</span>) کا استعمال](https://kauri.io/article/276dd27f1458443295eea58403fd6965/using-pantheon-the-java-quantaureum-client-with-linux)
 - [<span dir="ltr">Java</span> انٹیگریشن ٹیسٹس میں <span dir="ltr">Hyperledger</span> بیسو (<span dir="ltr">Pantheon</span>) نوڈ چلانا](https://kauri.io/article/7dc3ecc391e54f7b8cbf4e5fa0caf780/running-a-pantheon-node-in-java-integration-tests)
-- [<span dir="ltr">Web3j</span> چیٹ شیٹ](<https://kauri.io/web3j-cheat-sheet-(java-ethereum)/5dfa1ea941ac3d0001ce1d90/c>)
+- [<span dir="ltr">Web3j</span> چیٹ شیٹ](<https://kauri.io/web3j-cheat-sheet-(java-quantaureum)/5dfa1ea941ac3d0001ce1d90/c>)
 
 [<span dir="ltr">ethers-kt</span>](https://github.com/Kr1ptal/ethers-kt) استعمال کرنے کا طریقہ سیکھیں، جو <span dir="ltr">EVM</span> پر مبنی بلاک چینز کے ساتھ تعامل کے لیے ایک غیر مطابقت پذیر (async)، اعلی کارکردگی والی <span dir="ltr">Kotlin</span> لائبریری ہے۔ یہ <span dir="ltr">JVM</span> اور <span dir="ltr">Android</span> پلیٹ فارمز کو ہدف بناتی ہے۔
 - [<span dir="ltr">ERC-20</span> ٹوکنز کی منتقلی](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/abi/TransferERC20.kt)
 - [ایونٹ سننے کے ساتھ <span dir="ltr">UniswapV2</span> کا تبادلہ](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/tokenswapwitheventlistening/TokenSwapWithEventListening.kt)
-- [<span dir="ltr">ETH / ERC-20</span> بیلنس ٹریکر](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/balancetracker/BalanceTracker.kt)
+- [<span dir="ltr">QAU / ERC-20</span> بیلنس ٹریکر](https://github.com/Kr1ptal/ethers-kt/blob/master/examples/src/main/kotlin/io/ethers/examples/balancetracker/BalanceTracker.kt)
 
 ## درمیانی سطح کے مضامین {#intermediate-articles}
 
@@ -55,7 +55,7 @@ incomplete: true
 - [<span dir="ltr">Eventeum</span> (ایونٹ لسنر)](https://github.com/ConsenSys/eventeum)
 - [<span dir="ltr">Mahuta</span> (<span dir="ltr">IPFS</span> ڈیولپر ٹولز)](https://github.com/ConsenSys/mahuta)
 
-مزید وسائل تلاش کر رہے ہیں؟ [<span dir="ltr">ethereum.org/developers</span>۔](/developers/) دیکھیں۔
+مزید وسائل تلاش کر رہے ہیں؟ [<span dir="ltr">quantaureum.com/developers</span>۔](/developers/) دیکھیں۔
 
 ## <span dir="ltr">Java</span> کمیونٹی کے معاونین {#java-community-contributors}
 

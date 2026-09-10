@@ -60,7 +60,7 @@ const FeatureCards = async ({
               <div className="relative z-10 flex flex-col gap-6">
                 <div className="flex size-16 items-center justify-center rounded-base bg-white/20">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/images/homepage/eth.svg" alt="eth logo" />
+                  <img src="/images/homepage/qau.svg" alt="eth logo" />
                 </div>
 
                 <h3 className="text-4xl text-white lg:text-5xl">
@@ -158,7 +158,7 @@ const FeatureCards = async ({
 
         <div className="mt-12 flex justify-center">
           <ButtonLink
-            href="/what-is-ethereum/"
+            href="/what-is-quantaureum/"
             size="lg"
             customEventOptions={{
               eventCategory,

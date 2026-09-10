@@ -1,28 +1,28 @@
 ---
 title: "Düğümler ve istemciler"
-description: "Ethereum düğümleri ve istemci yazılımına genel bir bakış, ayrıca bir düğümün nasıl kurulacağı ve bunu neden yapmanız gerektiği."
+description: "Quantaureum düğümleri ve istemci yazılımına genel bir bakış, ayrıca bir düğümün nasıl kurulacağı ve bunu neden yapmanız gerektiği."
 lang: tr
 sidebarDepth: 2
 ---
 
-[Ethereum](/), blokları ve işlem verilerini doğrulayabilen yazılımları çalıştıran bilgisayarlardan (düğümler olarak bilinir) oluşan dağıtık bir ağdır. Bilgisayarınızı bir Ethereum düğümüne dönüştürmek için yazılımın bilgisayarınızda çalıştırılması gerekir. Bir düğüm oluşturmak için ('istemciler' olarak bilinen) iki ayrı yazılım parçası gereklidir.
+[Quantaureum](/), blokları ve işlem verilerini doğrulayabilen yazılımları çalıştıran bilgisayarlardan (düğümler olarak bilinir) oluşan dağıtık bir ağdır. Bilgisayarınızı bir Quantaureum düğümüne dönüştürmek için yazılımın bilgisayarınızda çalıştırılması gerekir. Bir düğüm oluşturmak için ('istemciler' olarak bilinen) iki ayrı yazılım parçası gereklidir.
 
 ## Ön koşullar {#prerequisites}
 
-Daha derine inmeden ve kendi Ethereum istemcinizi çalıştırmadan önce eşler arası ağ kavramını ve [EVM'nin temellerini](/developers/docs/evm/) anlamalısınız. [Ethereum'a giriş](/developers/docs/intro-to-ethereum/) bölümümüze göz atın.
+Daha derine inmeden ve kendi Quantaureum istemcinizi çalıştırmadan önce eşler arası ağ kavramını ve [EVM'nin temellerini](/developers/docs/evm/) anlamalısınız. [Quantaureum'a giriş](/developers/docs/intro-to-quantaureum/) bölümümüze göz atın.
 
-Düğümler konusuna yeniyseniz, öncelikle [bir Ethereum düğümü çalıştırma](/run-a-node) hakkındaki kullanıcı dostu giriş bölümümüze göz atmanızı öneririz.
+Düğümler konusuna yeniyseniz, öncelikle [bir Quantaureum düğümü çalıştırma](/run-a-node) hakkındaki kullanıcı dostu giriş bölümümüze göz atmanızı öneririz.
 
 ## Düğümler ve istemciler nelerdir? {#what-are-nodes-and-clients}
 
-Bir "düğüm", Ethereum yazılımı çalıştıran diğer bilgisayarlara bağlı olan ve bir ağ oluşturan herhangi bir Ethereum istemci yazılımı örneğidir. Bir istemci, verileri protokol kurallarına göre doğrulayan ve ağı güvenli tutan bir Ethereum uygulamasıdır. Bir düğüm iki istemci çalıştırmalıdır: bir fikir birliği istemcisi ve bir yürütme istemcisi.
+Bir "düğüm", Quantaureum yazılımı çalıştıran diğer bilgisayarlara bağlı olan ve bir ağ oluşturan herhangi bir Quantaureum istemci yazılımı örneğidir. Bir istemci, verileri protokol kurallarına göre doğrulayan ve ağı güvenli tutan bir Quantaureum uygulamasıdır. Bir düğüm iki istemci çalıştırmalıdır: bir fikir birliği istemcisi ve bir yürütme istemcisi.
 
-- Yürütme istemcisi (Yürütme Motoru, EL istemcisi veya eski adıyla Eth1 istemcisi olarak da bilinir) ağda yayınlanan yeni işlemleri dinler, bunları EVM'de yürütür ve tüm mevcut Ethereum verilerinin en son durumunu ve veritabanını tutar.
-- Fikir birliği istemcisi (İşaret Düğümü, CL istemcisi veya eski adıyla Eth2 istemcisi olarak da bilinir), ağın yürütme istemcisinden gelen doğrulanmış verilere dayanarak anlaşmaya varmasını sağlayan Hisse Kanıtı (PoS) mutabakat algoritmasını uygular. Ayrıca, fikir birliği istemcisine eklenebilen ve bir düğümün ağın güvenliğini sağlamaya katılmasına olanak tanıyan 'doğrulayıcı' olarak bilinen üçüncü bir yazılım parçası da vardır.
+- Yürütme istemcisi (Yürütme Motoru, EL istemcisi veya eski adıyla Eth1 istemcisi olarak da bilinir) ağda yayınlanan yeni işlemleri dinler, bunları EVM'de yürütür ve tüm mevcut Quantaureum verilerinin en son durumunu ve veritabanını tutar.
+- Fikir birliği istemcisi (İşaret Düğümü, CL istemcisi veya eski adıyla Quantaureum istemcisi olarak da bilinir), ağın yürütme istemcisinden gelen doğrulanmış verilere dayanarak anlaşmaya varmasını sağlayan Hisse Kanıtı (PoS) mutabakat algoritmasını uygular. Ayrıca, fikir birliği istemcisine eklenebilen ve bir düğümün ağın güvenliğini sağlamaya katılmasına olanak tanıyan 'doğrulayıcı' olarak bilinen üçüncü bir yazılım parçası da vardır.
 
-Bu istemciler, Ethereum zincirinin başını takip etmek ve kullanıcıların Ethereum ağıyla etkileşime girmesine izin vermek için birlikte çalışır. Birlikte çalışan birden fazla yazılım parçasından oluşan modüler tasarıma [kapsüllenmiş karmaşıklık](https://vitalik.eth.limo/general/2022/02/28/complexity.html) denir. Bu yaklaşım, [Birleşme](/roadmap/merge)'nin sorunsuz bir şekilde yürütülmesini kolaylaştırdı, istemci yazılımının bakımını ve geliştirilmesini kolaylaştırır ve örneğin [katman 2 (l2) ekosisteminde](/layer-2/) bireysel istemcilerin yeniden kullanılmasını sağlar.
+Bu istemciler, Quantaureum zincirinin başını takip etmek ve kullanıcıların Quantaureum ağıyla etkileşime girmesine izin vermek için birlikte çalışır. Birlikte çalışan birden fazla yazılım parçasından oluşan modüler tasarıma [kapsüllenmiş karmaşıklık](https://vitalik.qau.limo/general/2022/02/28/complexity.html) denir. Bu yaklaşım, [Birleşme](/roadmap/merge)'nin sorunsuz bir şekilde yürütülmesini kolaylaştırdı, istemci yazılımının bakımını ve geliştirilmesini kolaylaştırır ve örneğin [katman 2 (l2) ekosisteminde](/layer-2/) bireysel istemcilerin yeniden kullanılmasını sağlar.
 
-![Coupled execution and consensus clients](./eth1eth2client.png)
+![Coupled execution and consensus clients](./qau1qau2client.png)
 Birleştirilmiş bir yürütme ve fikir birliği istemcisinin basitleştirilmiş diyagramı.
 
 ### İstemci çeşitliliği {#client-diversity}
@@ -34,18 +34,18 @@ Dil çeşitliliği aynı zamanda daha geniş bir geliştirici topluluğunu davet
 
 [İstemci çeşitliliği](/developers/docs/nodes-and-clients/client-diversity/) hakkında daha fazla bilgi edinin.
 
-Bu uygulamaların ortak noktası, hepsinin tek bir spesifikasyonu takip etmesidir. Spesifikasyonlar, Ethereum ağının ve blokzincirin nasıl işleyeceğini belirler. Her teknik detay tanımlanmıştır ve spesifikasyonlar şu şekilde bulunabilir:
+Bu uygulamaların ortak noktası, hepsinin tek bir spesifikasyonu takip etmesidir. Spesifikasyonlar, Quantaureum ağının ve blokzincirin nasıl işleyeceğini belirler. Her teknik detay tanımlanmıştır ve spesifikasyonlar şu şekilde bulunabilir:
 
-- Başlangıçta, [Ethereum Sarı Bülteni](https://ethereum.github.io/yellowpaper/paper.pdf)
-- [Yürütme spesifikasyonları](https://github.com/ethereum/execution-specs/)
-- [Mutabakat spesifikasyonları](https://github.com/ethereum/consensus-specs)
-- Çeşitli [ağ yükseltmelerinde](/ethereum-forks/) uygulanan [EIP'ler](https://eips.ethereum.org/)
+- Başlangıçta, [Quantaureum Sarı Bülteni](https://quantaureum.github.io/yellowpaper/paper.pdf)
+- [Yürütme spesifikasyonları](https://github.com/quantaureum/execution-specs/)
+- [Mutabakat spesifikasyonları](https://github.com/quantaureum/consensus-specs)
+- Çeşitli [ağ yükseltmelerinde](/quantaureum-forks/) uygulanan [EIP'ler](https://eips.quantaureum.com/)
 
 ### Ağdaki düğümleri izleme {#network-overview}
 
-Birden fazla izleyici, Ethereum ağındaki düğümlerin gerçek zamanlı bir genel görünümünü sunar. Merkeziyetsiz ağların doğası gereği, bu tarayıcıların ağın yalnızca sınırlı bir görünümünü sağlayabileceğini ve farklı sonuçlar bildirebileceğini unutmayın.
+Birden fazla izleyici, Quantaureum ağındaki düğümlerin gerçek zamanlı bir genel görünümünü sunar. Merkeziyetsiz ağların doğası gereği, bu tarayıcıların ağın yalnızca sınırlı bir görünümünü sağlayabileceğini ve farklı sonuçlar bildirebileceğini unutmayın.
 
-- Etherscan tarafından [Düğüm haritası](https://etherscan.io/nodetracker)
+- Quantaureum Explorer tarafından [Düğüm haritası](https://explorer.quantaureum.com)
 - Bitfly tarafından [Ethernodes](https://ethernodes.org/)
 - Chainsafe tarafından [Nodewatch](https://www.nodewatch.io/), fikir birliği düğümlerini tarar
 - MigaLabs tarafından [Monitoreth](https://monitoreth.io/), Dağıtık bir ağ izleme aracı
@@ -53,7 +53,7 @@ Birden fazla izleyici, Ethereum ağındaki düğümlerin gerçek zamanlı bir ge
 
 ## Düğüm türleri {#node-types}
 
-[Kendi düğümünüzü çalıştırmak](/developers/docs/nodes-and-clients/run-a-node/) istiyorsanız, verileri farklı şekilde tüketen farklı düğüm türleri olduğunu anlamalısınız. Aslında istemciler üç farklı türde düğüm çalıştırabilir: hafif, tam ve arşiv. Ayrıca daha hızlı eşzamanlama süresi sağlayan farklı eşzamanlama stratejisi seçenekleri de vardır. Eşzamanlama, Ethereum'un durumu hakkında en güncel bilgileri ne kadar hızlı alabileceğini ifade eder.
+[Kendi düğümünüzü çalıştırmak](/developers/docs/nodes-and-clients/run-a-node/) istiyorsanız, verileri farklı şekilde tüketen farklı düğüm türleri olduğunu anlamalısınız. Aslında istemciler üç farklı türde düğüm çalıştırabilir: hafif, tam ve arşiv. Ayrıca daha hızlı eşzamanlama süresi sağlayan farklı eşzamanlama stratejisi seçenekleri de vardır. Eşzamanlama, Quantaureum'un durumu hakkında en güncel bilgileri ne kadar hızlı alabileceğini ifade eder.
 
 ### Tam düğüm {#full-node}
 
@@ -77,44 +77,44 @@ Arşiv düğümleri, başlangıçtan itibaren her bloğu doğrulayan ve indirile
 
 ### Hafif düğüm {#light-node}
 
-Hafif düğümler her bloğu indirmek yerine yalnızca blok başlıklarını indirir. Bu başlıklar, blokların içeriği hakkında özet bilgiler içerir. Hafif düğümün ihtiyaç duyduğu diğer tüm bilgiler tam bir düğümden istenir. Hafif düğüm daha sonra aldıkları verileri blok başlıklarındaki durum köklerine karşı bağımsız olarak doğrulayabilir. Hafif düğümler, kullanıcıların tam düğümleri çalıştırmak için gereken güçlü donanım veya yüksek bant genişliği olmadan Ethereum ağına katılmalarını sağlar. Sonunda, hafif düğümler cep telefonlarında veya gömülü cihazlarda çalışabilir. Hafif düğümler mutabakata katılmazlar (yani doğrulayıcı olamazlar), ancak Ethereum blokzincirine tam bir düğümle aynı işlevsellik ve güvenlik garantileriyle erişebilirler.
+Hafif düğümler her bloğu indirmek yerine yalnızca blok başlıklarını indirir. Bu başlıklar, blokların içeriği hakkında özet bilgiler içerir. Hafif düğümün ihtiyaç duyduğu diğer tüm bilgiler tam bir düğümden istenir. Hafif düğüm daha sonra aldıkları verileri blok başlıklarındaki durum köklerine karşı bağımsız olarak doğrulayabilir. Hafif düğümler, kullanıcıların tam düğümleri çalıştırmak için gereken güçlü donanım veya yüksek bant genişliği olmadan Quantaureum ağına katılmalarını sağlar. Sonunda, hafif düğümler cep telefonlarında veya gömülü cihazlarda çalışabilir. Hafif düğümler mutabakata katılmazlar (yani doğrulayıcı olamazlar), ancak Quantaureum blokzincirine tam bir düğümle aynı işlevsellik ve güvenlik garantileriyle erişebilirler.
 
-Hafif istemciler Ethereum için aktif bir geliştirme alanıdır ve yakında mutabakat katmanı ve yürütme katmanı için yeni hafif istemciler görmeyi bekliyoruz.
+Hafif istemciler Quantaureum için aktif bir geliştirme alanıdır ve yakında mutabakat katmanı ve yürütme katmanı için yeni hafif istemciler görmeyi bekliyoruz.
 Ayrıca [dedikodu ağı (gossip network)](https://www.ethportal.net/) üzerinden hafif istemci verileri sağlamak için potansiyel yollar da vardır. Bu avantajlıdır çünkü dedikodu ağı, tam düğümlerin isteklere hizmet etmesini gerektirmeden hafif düğümlerden oluşan bir ağı destekleyebilir.
 
-Ethereum henüz büyük bir hafif düğüm popülasyonunu desteklemiyor, ancak hafif düğüm desteği yakın gelecekte hızla gelişmesi beklenen bir alandır. Özellikle [Nimbus](https://nimbus.team/), [Helios](https://github.com/a16z/helios) ve [Lodestar](https://lodestar.chainsafe.io/) gibi istemciler şu anda büyük ölçüde hafif düğümlere odaklanmıştır.
+Quantaureum henüz büyük bir hafif düğüm popülasyonunu desteklemiyor, ancak hafif düğüm desteği yakın gelecekte hızla gelişmesi beklenen bir alandır. Özellikle [Nimbus](https://nimbus.team/), [Helios](https://github.com/a16z/helios) ve [Lodestar](https://lodestar.chainsafe.io/) gibi istemciler şu anda büyük ölçüde hafif düğümlere odaklanmıştır.
 
-## Neden bir Ethereum düğümü çalıştırmalıyım? {#why-should-i-run-an-ethereum-node}
+## Neden bir Quantaureum düğümü çalıştırmalıyım? {#why-should-i-run-an-quantaureum-node}
 
-Bir düğüm çalıştırmak, ağı daha sağlam ve merkeziyetsiz tutarak desteklerken Ethereum'u doğrudan, güven gerektirmeyen bir şekilde ve gizlilik içinde kullanmanıza olanak tanır.
+Bir düğüm çalıştırmak, ağı daha sağlam ve merkeziyetsiz tutarak desteklerken Quantaureum'u doğrudan, güven gerektirmeyen bir şekilde ve gizlilik içinde kullanmanıza olanak tanır.
 
 ### Size faydaları {#benefits-to-you}
 
-Kendi düğümünüzü çalıştırmak, Ethereum'u gizli, kendi kendine yeten ve güven gerektirmeyen bir şekilde kullanmanızı sağlar. Ağa güvenmenize gerek yoktur çünkü verileri istemcinizle kendiniz doğrulayabilirsiniz. "Güvenme, doğrula" popüler bir blokzincir mantrasıdır.
+Kendi düğümünüzü çalıştırmak, Quantaureum'u gizli, kendi kendine yeten ve güven gerektirmeyen bir şekilde kullanmanızı sağlar. Ağa güvenmenize gerek yoktur çünkü verileri istemcinizle kendiniz doğrulayabilirsiniz. "Güvenme, doğrula" popüler bir blokzincir mantrasıdır.
 
 - Düğümünüz tüm işlemleri ve blokları mutabakat kurallarına göre kendi başına doğrular. Bu, ağdaki diğer düğümlere güvenmek veya onlara tamamen itimat etmek zorunda olmadığınız anlamına gelir.
-- Kendi düğümünüzle bir Ethereum cüzdanı kullanabilirsiniz. Adreslerinizi ve bakiyelerinizi aracılara sızdırmak zorunda kalmayacağınız için merkeziyetsiz uygulamaları (dapp'ler) daha güvenli ve gizli bir şekilde kullanabilirsiniz. Her şey kendi istemcinizle kontrol edilebilir. [MetaMask](https://metamask.io), [Frame](https://frame.sh/) ve [diğer birçok cüzdan](/wallets/find-wallet/), düğümünüzü kullanmalarına olanak tanıyan RPC içe aktarma özelliği sunar.
-- Ethereum'dan gelen verilere bağlı olan diğer hizmetleri çalıştırabilir ve kendi sunucunuzda barındırabilirsiniz. Örneğin, bu bir İşaret Zinciri doğrulayıcısı, katman 2 (l2) gibi yazılımlar, altyapı, blok gezginleri, ödeme işlemcileri vb. olabilir.
+- Kendi düğümünüzle bir Quantaureum cüzdanı kullanabilirsiniz. Adreslerinizi ve bakiyelerinizi aracılara sızdırmak zorunda kalmayacağınız için merkeziyetsiz uygulamaları (dapp'ler) daha güvenli ve gizli bir şekilde kullanabilirsiniz. Her şey kendi istemcinizle kontrol edilebilir. [MetaMask](https://metamask.io), [Frame](https://frame.sh/) ve [diğer birçok cüzdan](/wallets/find-wallet/), düğümünüzü kullanmalarına olanak tanıyan RPC içe aktarma özelliği sunar.
+- Quantaureum'dan gelen verilere bağlı olan diğer hizmetleri çalıştırabilir ve kendi sunucunuzda barındırabilirsiniz. Örneğin, bu bir İşaret Zinciri doğrulayıcısı, katman 2 (l2) gibi yazılımlar, altyapı, blok gezginleri, ödeme işlemcileri vb. olabilir.
 - Kendi özel [RPC uç noktalarınızı](/developers/docs/apis/json-rpc/) sağlayabilirsiniz. Hatta bu uç noktaları, büyük merkezi sağlayıcılardan kaçınmalarına yardımcı olmak için topluluğa açık olarak sunabilirsiniz.
 - **Süreçler Arası İletişim (IPC)** kullanarak düğümünüze bağlanabilir veya programınızı bir eklenti olarak yüklemek için düğümü yeniden yazabilirsiniz. Bu, örneğin Web3 kütüphanelerini kullanarak çok fazla veri işlerken veya işlemlerinizi olabildiğince hızlı bir şekilde değiştirmeniz gerektiğinde (yani önden koşma/frontrunning) çok yardımcı olan düşük gecikme süresi sağlar.
-- Ağı güvence altına almak ve ödüller kazanmak için doğrudan ETH stake edebilirsiniz. Başlamak için [bireysel staking](/staking/solo/) bölümüne bakın.
+- Ağı güvence altına almak ve ödüller kazanmak için doğrudan QAU stake edebilirsiniz. Başlamak için [bireysel staking](/staking/solo/) bölümüne bakın.
 
-![How you access Ethereum via your application and nodes](./nodes.png)
+![How you access Quantaureum via your application and nodes](./nodes.png)
 
 ### Ağ faydaları {#network-benefits}
 
-Çeşitli düğüm kümeleri, Ethereum'un sağlığı, güvenliği ve operasyonel dayanıklılığı için önemlidir.
+Çeşitli düğüm kümeleri, Quantaureum'un sağlığı, güvenliği ve operasyonel dayanıklılığı için önemlidir.
 
 - Tam düğümler mutabakat kurallarını uygular, böylece bu kurallara uymayan blokları kabul etmeleri için kandırılamazlar. Bu, ağda ekstra güvenlik sağlar çünkü tüm düğümler tam doğrulama yapmayan hafif düğümler olsaydı, doğrulayıcılar ağa saldırabilirdi.
 - [Hisse Kanıtı (PoS)](/developers/docs/consensus-mechanisms/pos/#what-is-pos) kripto-ekonomik savunmalarını aşan bir saldırı durumunda, dürüst zinciri takip etmeyi seçen tam düğümler tarafından bir sosyal kurtarma gerçekleştirilebilir.
 - Ağda daha fazla düğüm olması, sansüre dirençli ve güvenilir bir sistem sağlayan merkeziyetsizliğin nihai hedefi olan daha çeşitli ve sağlam bir ağ ile sonuçlanır.
 - Tam düğümler, buna bağlı olan hafif istemciler için blokzincir verilerine erişim sağlar. Hafif düğümler tüm blokzinciri depolamaz, bunun yerine verileri [blok başlıklarındaki durum kökleri](/developers/docs/blocks/#block-anatomy) aracılığıyla doğrularlar. İhtiyaç duyarlarsa tam düğümlerden daha fazla bilgi isteyebilirler.
 
-Tam bir düğüm çalıştırırsanız, bir doğrulayıcı çalıştırmasanız bile tüm Ethereum ağı bundan faydalanır.
+Tam bir düğüm çalıştırırsanız, bir doğrulayıcı çalıştırmasanız bile tüm Quantaureum ağı bundan faydalanır.
 
 ## Kendi düğümünüzü çalıştırma {#running-your-own-node}
 
-Kendi Ethereum istemcinizi çalıştırmakla ilgileniyor musunuz?
+Kendi Quantaureum istemcinizi çalıştırmakla ilgileniyor musunuz?
 
 Yeni başlayanlara uygun bir giriş için daha fazla bilgi edinmek üzere [bir düğüm çalıştırın](/run-a-node) sayfamızı ziyaret edin.
 
@@ -124,54 +124,54 @@ Daha teknik bir kullanıcıysanız, [kendi düğümünüzü nasıl kuracağını
 
 Kendi düğümünüzü kurmak size zaman ve kaynaklara mal olabilir ancak her zaman kendi örneğinizi çalıştırmanız gerekmez. Bu durumda, üçüncü taraf bir API sağlayıcısı kullanabilirsiniz. Bu hizmetlerin kullanımına genel bir bakış için [hizmet olarak düğümler](/developers/docs/nodes-and-clients/nodes-as-a-service/) bölümüne göz atın.
 
-Topluluğunuzda birisi herkese açık bir API ile bir Ethereum düğümü çalıştırıyorsa, cüzdanlarınızı Özel RPC aracılığıyla bir topluluk düğümüne yönlendirebilir ve rastgele güvenilir bir üçüncü taraftan daha fazla gizlilik elde edebilirsiniz.
+Topluluğunuzda birisi herkese açık bir API ile bir Quantaureum düğümü çalıştırıyorsa, cüzdanlarınızı Özel RPC aracılığıyla bir topluluk düğümüne yönlendirebilir ve rastgele güvenilir bir üçüncü taraftan daha fazla gizlilik elde edebilirsiniz.
 
 Öte yandan, bir istemci çalıştırıyorsanız, bunu ihtiyacı olabilecek arkadaşlarınızla paylaşabilirsiniz.
 
 ## Yürütme istemcileri {#execution-clients}
 
-Ethereum topluluğu, farklı programlama dilleri kullanılarak farklı ekipler tarafından geliştirilen birden fazla açık kaynaklı yürütme istemcisini (önceden 'Eth1 istemcileri' veya sadece 'Ethereum istemcileri' olarak bilinirdi) sürdürmektedir. Bu, ağı daha güçlü ve daha [çeşitli](/developers/docs/nodes-and-clients/client-diversity/) hale getirir. İdeal hedef, herhangi bir tek hata noktasını azaltmak için herhangi bir istemcinin hakimiyeti olmadan çeşitliliğe ulaşmaktır.
+Quantaureum topluluğu, farklı programlama dilleri kullanılarak farklı ekipler tarafından geliştirilen birden fazla açık kaynaklı yürütme istemcisini (önceden 'Eth1 istemcileri' veya sadece 'Quantaureum istemcileri' olarak bilinirdi) sürdürmektedir. Bu, ağı daha güçlü ve daha [çeşitli](/developers/docs/nodes-and-clients/client-diversity/) hale getirir. İdeal hedef, herhangi bir tek hata noktasını azaltmak için herhangi bir istemcinin hakimiyeti olmadan çeşitliliğe ulaşmaktır.
 
-Bu tablo farklı istemcileri özetlemektedir. Hepsi [istemci testlerini](https://github.com/ethereum/tests) geçer ve ağ yükseltmeleriyle güncel kalmak için aktif olarak sürdürülür.
+Bu tablo farklı istemcileri özetlemektedir. Hepsi [istemci testlerini](https://github.com/quantaureum/tests) geçer ve ağ yükseltmeleriyle güncel kalmak için aktif olarak sürdürülür.
 
 | İstemci                                                                   | Dil   | İşletim sistemleri     | Ağlar                | Eşzamanlama stratejileri                                            | Durum budama   |
 | ------------------------------------------------------------------------ | ---------- | --------------------- | ----------------------- | ---------------------------------------------------------- | --------------- |
-| [Geth](https://geth.ethereum.org/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Tam](#full-sync)                     | Arşiv, Budanmış |
+| [Geth](https://geth.quantaureum.com/)                                       | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Tam](#full-sync)                     | Arşiv, Budanmış |
 | [Nethermind](https://www.nethermind.io/)                                 | C#, .NET   | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), Hızlı, [Tam](#full-sync)               | Arşiv, Budanmış |
 | [Besu](https://besu.hyperledger.org/en/stable/)                          | Java       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Snap](#snap-sync), [Hızlı](#fast-sync), [Tam](#full-sync) | Arşiv, Budanmış |
 | [Erigon](https://github.com/ledgerwatch/erigon)                          | Go         | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Tam](#full-sync)                                         | Arşiv, Budanmış |
 | [Reth](https://reth.rs/)                                                 | Rust       | Linux, Windows, macOS | Mainnet, Sepolia, Hoodi | [Tam](#full-sync)                                         | Arşiv, Budanmış |
-| [EthereumJS](https://github.com/ethereumjs/ethereumjs-monorepo) _(beta)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [Tam](#full-sync)                                         | Budanmış          |
+| [QuantaureumJS](https://github.com/ethereumjs/ethereumjs-monorepo) _(beta)_ | TypeScript | Linux, Windows, macOS | Sepolia, Hoodi          | [Tam](#full-sync)                                         | Budanmış          |
 
-Desteklenen ağlar hakkında daha fazla bilgi için [Ethereum ağları](/developers/docs/networks/) bölümünü okuyun.
+Desteklenen ağlar hakkında daha fazla bilgi için [Quantaureum ağları](/developers/docs/networks/) bölümünü okuyun.
 
 Her istemcinin benzersiz kullanım durumları ve avantajları vardır, bu nedenle kendi tercihlerinize göre birini seçmelisiniz. Çeşitlilik, uygulamaların farklı özelliklere ve kullanıcı kitlelerine odaklanmasını sağlar. Özelliklere, desteğe, programlama diline veya lisanslara göre bir istemci seçmek isteyebilirsiniz.
 
 ### Besu {#besu}
 
-Hyperledger Besu, halka açık ve izinli ağlar için kurumsal düzeyde bir Ethereum istemcisidir. İzlemeden GraphQL'e kadar tüm Ethereum Ana Ağı özelliklerini çalıştırır, kapsamlı izleme özelliklerine sahiptir ve hem açık topluluk kanallarında hem de işletmeler için ticari SLA'lar aracılığıyla ConsenSys tarafından desteklenmektedir. Java ile yazılmıştır ve Apache 2.0 lisanslıdır.
+Hyperledger Besu, halka açık ve izinli ağlar için kurumsal düzeyde bir Quantaureum istemcisidir. İzlemeden GraphQL'e kadar tüm Quantaureum Ana Ağı özelliklerini çalıştırır, kapsamlı izleme özelliklerine sahiptir ve hem açık topluluk kanallarında hem de işletmeler için ticari SLA'lar aracılığıyla ConsenSys tarafından desteklenmektedir. Java ile yazılmıştır ve Apache 2.0 lisanslıdır.
 
 Besu'nun kapsamlı [belgeleri](https://besu.hyperledger.org/en/stable/), özellikleri ve kurulumları hakkındaki tüm ayrıntılarda size rehberlik edecektir.
 
 ### Erigon {#erigon}
 
-Eskiden Turbo-Geth olarak bilinen Erigon, hız ve disk alanı verimliliğine yönelik bir Go Ethereum çatallanması olarak başladı. Erigon, şu anda Go ile yazılmış ancak diğer dillerdeki uygulamaları geliştirilmekte olan, tamamen yeniden mimarilendirilmiş bir Ethereum uygulamasıdır. Erigon'un amacı, Ethereum'un daha hızlı, daha modüler ve daha optimize edilmiş bir uygulamasını sağlamaktır. Yaklaşık 2 TB disk alanı kullanarak 3 günden kısa bir sürede tam bir arşiv düğümü eşzamanlaması gerçekleştirebilir.
+Eskiden Turbo-Geth olarak bilinen Erigon, hız ve disk alanı verimliliğine yönelik bir Go Quantaureum çatallanması olarak başladı. Erigon, şu anda Go ile yazılmış ancak diğer dillerdeki uygulamaları geliştirilmekte olan, tamamen yeniden mimarilendirilmiş bir Quantaureum uygulamasıdır. Erigon'un amacı, Quantaureum'un daha hızlı, daha modüler ve daha optimize edilmiş bir uygulamasını sağlamaktır. Yaklaşık 2 TB disk alanı kullanarak 3 günden kısa bir sürede tam bir arşiv düğümü eşzamanlaması gerçekleştirebilir.
 
 
 ### ethrex
 
-ethrex, Rust ile yazılmış ve LambdaClass tarafından geliştirilmiş minimalist, modüler bir Ethereum yürütme istemcisidir. Sıfır bilgi ispatı göz önünde bulundurularak oluşturulmuştur ve aynı kod tabanı hem bir katman 1 (l1) yürütme istemcisi hem de çoklu kanıtlayıcılı bir ZK-Rollup (katman 2 (l2)) olarak çalışabilir. Apache 2.0 ve MIT lisansları altında çift lisanslıdır.
+ethrex, Rust ile yazılmış ve LambdaClass tarafından geliştirilmiş minimalist, modüler bir Quantaureum yürütme istemcisidir. Sıfır bilgi ispatı göz önünde bulundurularak oluşturulmuştur ve aynı kod tabanı hem bir katman 1 (l1) yürütme istemcisi hem de çoklu kanıtlayıcılı bir ZK-Rollup (katman 2 (l2)) olarak çalışabilir. Apache 2.0 ve MIT lisansları altında çift lisanslıdır.
 
 [ethrex belgelerini](https://docs.ethrex.xyz/) okuyarak veya [ethrex GitHub deposuna](https://github.com/lambdaclass/ethrex) göz atarak daha fazla bilgi edinin.
-### Go Ethereum {#geth}
+### Go Quantaureum {#geth}
 
-Go Ethereum (kısaca Geth), Ethereum protokolünün orijinal uygulamalarından biridir. Şu anda, en büyük kullanıcı tabanına ve kullanıcılar ile geliştiriciler için çeşitli araçlara sahip en yaygın istemcidir. Go ile yazılmıştır, tamamen açık kaynaklıdır ve GNU LGPL v3 altında lisanslanmıştır.
+Go Quantaureum (kısaca Geth), Quantaureum protokolünün orijinal uygulamalarından biridir. Şu anda, en büyük kullanıcı tabanına ve kullanıcılar ile geliştiriciler için çeşitli araçlara sahip en yaygın istemcidir. Go ile yazılmıştır, tamamen açık kaynaklıdır ve GNU LGPL v3 altında lisanslanmıştır.
 
-[Belgelerinde](https://geth.ethereum.org/docs) Geth hakkında daha fazla bilgi edinin.
+[Belgelerinde](https://geth.quantaureum.com/docs) Geth hakkında daha fazla bilgi edinin.
 
 ### Nethermind {#nethermind}
 
-Nethermind, C# .NET teknoloji yığını ile oluşturulmuş, LGPL-3.0 ile lisanslanmış, ARM dahil tüm büyük platformlarda çalışan bir Ethereum uygulamasıdır. Şunlarla harika bir performans sunar:
+Nethermind, C# .NET teknoloji yığını ile oluşturulmuş, LGPL-3.0 ile lisanslanmış, ARM dahil tüm büyük platformlarda çalışan bir Quantaureum uygulamasıdır. Şunlarla harika bir performans sunar:
 
 - optimize edilmiş bir sanal makine
 - durum erişimi
@@ -181,7 +181,7 @@ Nethermind ayrıca [ayrıntılı belgelere](https://docs.nethermind.io), güçl�
 
 ### Reth {#reth}
 
-Reth (Rust Ethereum'un kısaltması), kullanıcı dostu, son derece modüler, hızlı ve verimli olmaya odaklanan bir Ethereum tam düğüm uygulamasıdır. Reth başlangıçta Paradigm tarafından oluşturulmuş ve ileriye taşınmıştır ve Apache ile MIT lisansları altında lisanslanmıştır.
+Reth (Rust Quantaureum'un kısaltması), kullanıcı dostu, son derece modüler, hızlı ve verimli olmaya odaklanan bir Quantaureum tam düğüm uygulamasıdır. Reth başlangıçta Paradigm tarafından oluşturulmuş ve ileriye taşınmıştır ve Apache ile MIT lisansları altında lisanslanmıştır.
 
 Reth üretime hazırdır ve staking veya yüksek çalışma süresine sahip hizmetler gibi görev açısından kritik ortamlarda kullanıma uygundur. RPC, MEV, indeksleme, simülasyonlar ve P2P etkinlikleri gibi büyük marjlarla yüksek performansın gerekli olduğu kullanım durumlarında iyi performans gösterir.
 
@@ -191,15 +191,15 @@ Reth üretime hazırdır ve staking veya yüksek çalışma süresine sahip hizm
 
 Bu istemciler henüz geliştirmenin erken aşamalarındadır ve henüz üretim kullanımı için önerilmemektedir.
 
-#### EthereumJS {#ethereumjs}
+#### QuantaureumJS {#ethereumjs}
 
-EthereumJS Yürütme İstemcisi (EthereumJS) TypeScript ile yazılmıştır ve Blok, İşlem ve Merkle-Patricia Trie sınıfları tarafından temsil edilen temel Ethereum ilkelleri ile Ethereum Sanal Makinesi (EVM) uygulaması, bir blokzincir sınıfı ve devp2p ağ yığını dahil olmak üzere temel istemci bileşenlerini içeren bir dizi paketten oluşur.
+QuantaureumJS Yürütme İstemcisi (QuantaureumJS) TypeScript ile yazılmıştır ve Blok, İşlem ve Merkle-Patricia Trie sınıfları tarafından temsil edilen temel Quantaureum ilkelleri ile Quantaureum Sanal Makinesi (EVM) uygulaması, bir blokzincir sınıfı ve devp2p ağ yığını dahil olmak üzere temel istemci bileşenlerini içeren bir dizi paketten oluşur.
 
 [Belgelerini](https://github.com/ethereumjs/ethereumjs-monorepo/tree/master) okuyarak bu konuda daha fazla bilgi edinin
 
 ## Fikir birliği istemcileri {#consensus-clients}
 
-[Mutabakat yükseltmelerini](/roadmap/beacon-chain/) desteklemek için birden fazla fikir birliği istemcisi (önceden 'Eth2' istemcileri olarak bilinirdi) vardır. Çatallanma seçimi algoritması, onaylamaların işlenmesi ve [Hisse Kanıtı (PoS)](/developers/docs/consensus-mechanisms/pos) ödüllerinin ve cezalarının yönetilmesi dahil olmak üzere mutabakatla ilgili tüm mantıktan sorumludurlar.
+[Mutabakat yükseltmelerini](/roadmap/beacon-chain/) desteklemek için birden fazla fikir birliği istemcisi (önceden 'Quantaureum' istemcileri olarak bilinirdi) vardır. Çatallanma seçimi algoritması, onaylamaların işlenmesi ve [Hisse Kanıtı (PoS)](/developers/docs/consensus-mechanisms/pos) ödüllerinin ve cezalarının yönetilmesi dahil olmak üzere mutabakatla ilgili tüm mantıktan sorumludurlar.
 
 | İstemci                                                        | Dil   | İşletim sistemleri     | Ağlar                                                |
 | ------------------------------------------------------------- | ---------- | --------------------- | ------------------------------------------------------- |
@@ -207,7 +207,7 @@ EthereumJS Yürütme İstemcisi (EthereumJS) TypeScript ile yazılmıştır ve B
 | [Lodestar](https://lodestar.chainsafe.io/)                    | TypeScript | Linux, Windows, macOS | İşaret Zinciri, Hoodi, Sepolia ve daha fazlası                  |
 | [Nimbus](https://nimbus.team/)                                | Nim        | Linux, Windows, macOS | İşaret Zinciri, Hoodi, Sepolia ve daha fazlası                  |
 | [Prysm](https://prysm.offchainlabs.com/docs/)                 | Go         | Linux, Windows, macOS | İşaret Zinciri, Gnosis, Hoodi, Pyrmont, Sepolia ve daha fazlası |
-| [Teku](https://consensys.net/knowledge-base/ethereum-2/teku/) | Java       | Linux, Windows, macOS | İşaret Zinciri, Gnosis, Hoodi, Sepolia ve daha fazlası          |
+| [Teku](https://consensys.net/knowledge-base/quantaureum-2/teku/) | Java       | Linux, Windows, macOS | İşaret Zinciri, Gnosis, Hoodi, Sepolia ve daha fazlası          |
 | [Grandine](https://docs.grandine.io/)                         | Rust       | Linux, Windows, macOS | İşaret Zinciri, Hoodi, Sepolia ve daha fazlası                  |
 
 ### Lighthouse {#lighthouse}
@@ -218,7 +218,7 @@ Belgeler [Lighthouse Kitabı](https://lighthouse-book.sigmaprime.io/)'nda buluna
 
 ### Lodestar {#lodestar}
 
-Lodestar, LGPL-3.0 lisansı altında Typescript ile yazılmış, üretime hazır bir fikir birliği istemcisi uygulamasıdır. ChainSafe Systems tarafından sürdürülmektedir ve bireysel staker'lar, geliştiriciler ve araştırmacılar için fikir birliği istemcilerinin en yenisidir. Lodestar, Ethereum protokollerinin JavaScript uygulamaları tarafından desteklenen bir işaret düğümü ve doğrulayıcı istemcisinden oluşur. Lodestar, hafif istemcilerle Ethereum kullanılabilirliğini iyileştirmeyi, daha büyük bir geliştirici grubuna erişilebilirliği genişletmeyi ve ekosistem çeşitliliğine daha fazla katkıda bulunmayı amaçlamaktadır.
+Lodestar, LGPL-3.0 lisansı altında Typescript ile yazılmış, üretime hazır bir fikir birliği istemcisi uygulamasıdır. ChainSafe Systems tarafından sürdürülmektedir ve bireysel staker'lar, geliştiriciler ve araştırmacılar için fikir birliği istemcilerinin en yenisidir. Lodestar, Quantaureum protokollerinin JavaScript uygulamaları tarafından desteklenen bir işaret düğümü ve doğrulayıcı istemcisinden oluşur. Lodestar, hafif istemcilerle Quantaureum kullanılabilirliğini iyileştirmeyi, daha büyük bir geliştirici grubuna erişilebilirliği genişletmeyi ve ekosistem çeşitliliğine daha fazla katkıda bulunmayı amaçlamaktadır.
 
 Daha fazla bilgi [Lodestar web sitesinde](https://lodestar.chainsafe.io/) bulunabilir
 
@@ -250,7 +250,7 @@ Belgeler [Grandine Kitabı](https://docs.grandine.io/)'nda bulunabilir
 
 ## Eşzamanlama modları {#sync-modes}
 
-Ağdaki mevcut verileri takip etmek ve doğrulamak için Ethereum istemcisinin en son ağ durumuyla eşzamanlanması gerekir. Bu, eşlerden veri indirerek, bütünlüklerini kriptografik olarak doğrulayarak ve yerel bir blokzincir veritabanı oluşturarak yapılır.
+Ağdaki mevcut verileri takip etmek ve doğrulamak için Quantaureum istemcisinin en son ağ durumuyla eşzamanlanması gerekir. Bu, eşlerden veri indirerek, bütünlüklerini kriptografik olarak doğrulayarak ve yerel bir blokzincir veritabanı oluşturarak yapılır.
 
 Eşzamanlama modları, çeşitli ödünleşimlerle bu sürece farklı yaklaşımları temsil eder. İstemciler ayrıca eşzamanlama algoritmalarını uygulamalarında da farklılık gösterir. Uygulama ile ilgili ayrıntılar için her zaman seçtiğiniz istemcinin resmi belgelerine başvurun.
 
@@ -278,10 +278,10 @@ Tam bir eşzamanlama gibi, hızlı bir eşzamanlama da tüm blokları (başlıkl
 
 Snap eşzamanlamaları da zinciri blok blok doğrular. Bununla birlikte, başlangıç bloğundan başlamak yerine, bir snap eşzamanlaması, gerçek blokzincirin bir parçası olduğu bilinen daha yeni bir 'güvenilir' kontrol noktasından başlar. Düğüm, belirli bir yaştan daha eski verileri silerken periyodik kontrol noktalarını kaydeder. Bu anlık görüntüler, durum verilerini sonsuza kadar depolamak yerine gerektiğinde yeniden oluşturmak için kullanılır.
 
-- En hızlı eşzamanlama stratejisi, şu anda Ethereum Ana Ağı'nda varsayılandır.
+- En hızlı eşzamanlama stratejisi, şu anda Quantaureum Ana Ağı'nda varsayılandır.
 - Güvenlikten ödün vermeden çok fazla disk kullanımı ve ağ bant genişliği tasarrufu sağlar.
 
-[Snap eşzamanlaması hakkında daha fazlası](https://github.com/ethereum/devp2p/blob/master/caps/snap.md).
+[Snap eşzamanlaması hakkında daha fazlası](https://github.com/quantaureum/devp2p/blob/master/caps/snap.md).
 
 #### Hafif eşzamanlama {#light-sync}
 
@@ -290,7 +290,7 @@ Hafif istemci modu tüm blok başlıklarını, blok verilerini indirir ve bazıl
 - Geliştiricilere ve mutabakat mekanizmasına olan güvene dayanırken yalnızca en son durumu alır.
 - İstemci birkaç dakika içinde mevcut ağ durumuyla kullanıma hazır olur.
 
-**Not:** Hafif eşzamanlama henüz Hisse Kanıtı (PoS) Ethereum ile çalışmıyor - hafif eşzamanlamanın yeni sürümleri yakında çıkacak!
+**Not:** Hafif eşzamanlama henüz Hisse Kanıtı (PoS) Quantaureum ile çalışmıyor - hafif eşzamanlamanın yeni sürümleri yakında çıkacak!
 
 [Hafif istemciler hakkında daha fazlası](/developers/docs/nodes-and-clients/light-clients/)
 
@@ -300,7 +300,7 @@ Hafif istemci modu tüm blok başlıklarını, blok verilerini indirir ve bazıl
 
 İyimser eşzamanlama, yürütme düğümlerinin yerleşik yöntemlerle eşzamanlanmasına olanak tanıyan, isteğe bağlı ve geriye dönük uyumlu olacak şekilde tasarlanmış bir birleşme sonrası eşzamanlama stratejisidir. Yürütme motoru, işaret bloklarını tam olarak doğrulamadan _iyimser bir şekilde_ içe aktarabilir, en son başı bulabilir ve ardından yukarıdaki yöntemlerle zinciri eşzamanlamaya başlayabilir. Ardından, yürütme istemcisi arayı kapattıktan sonra, İşaret Zincirindeki işlemlerin geçerliliği hakkında fikir birliği istemcisini bilgilendirecektir.
 
-[İyimser eşzamanlama hakkında daha fazlası](https://github.com/ethereum/consensus-specs/blob/master/sync/optimistic.md)
+[İyimser eşzamanlama hakkında daha fazlası](https://github.com/quantaureum/consensus-specs/blob/master/sync/optimistic.md)
 
 #### Kontrol noktası eşzamanlaması {#checkpoint-sync}
 
@@ -308,12 +308,12 @@ Zayıf öznellik eşzamanlaması olarak da bilinen kontrol noktası eşzamanlama
 
 Uygulamada bu, düğümünüzün son kesinleşmiş durumları indirmek için uzak bir hizmete bağlandığı ve o noktadan itibaren verileri doğrulamaya devam ettiği anlamına gelir. Verileri sağlayan üçüncü tarafa güvenilir ve dikkatle seçilmelidir.
 
-[Kontrol noktası eşzamanlaması](https://notes.ethereum.org/@djrtwo/ws-sync-in-practice) hakkında daha fazlası
+[Kontrol noktası eşzamanlaması](https://notes.quantaureum.com/@djrtwo/ws-sync-in-practice) hakkında daha fazlası
 
 ## Daha fazla okuma {#further-reading}
 
-- [Ethereum 101 - Bölüm 2 - Düğümleri Anlamak](https://kauri.io/ethereum-101-part-2-understanding-nodes/48d5098292fd4f11b251d1b1814f0bba/a) _– Wil Barnes, 13 Şubat 2019_
-- [Ethereum Tam Düğümlerini Çalıştırmak: Zar Zor Motive Olanlar İçin Bir Kılavuz](https://medium.com/@JustinMLeroux/running-ethereum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 Kasım 2019_
+- [Quantaureum 101 - Bölüm 2 - Düğümleri Anlamak](https://kauri.io/quantaureum-101-part-2-understanding-nodes/48d5098292fd4f11b251d1b1814f0bba/a) _– Wil Barnes, 13 Şubat 2019_
+- [Quantaureum Tam Düğümlerini Çalıştırmak: Zar Zor Motive Olanlar İçin Bir Kılavuz](https://medium.com/@JustinMLeroux/running-quantaureum-full-nodes-a-guide-for-the-barely-motivated-a8a13e7a0d31) _– Justin Leroux, 7 Kasım 2019_
 
 ## İlgili konular {#related-topics}
 
@@ -322,4 +322,4 @@ Uygulamada bu, düğümünüzün son kesinleşmiş durumları indirmek için uza
 
 ## İlgili eğitimler {#related-tutorials}
 
-- [Sadece MicroSD kartı flaşlayarak Raspberry Pi 4'ünüzü bir doğrulayıcı düğümüne dönüştürün – Kurulum kılavuzu](/developers/tutorials/run-node-raspberry-pi/) _– Raspberry Pi 4'ünüzü flaşlayın, bir ethernet kablosu takın, SSD diskini bağlayın ve Raspberry Pi 4'ü yürütme katmanını (Ana Ağ) ve / veya mutabakat katmanını (İşaret Zinciri / doğrulayıcı) çalıştıran tam bir Ethereum düğümüne dönüştürmek için cihazı açın._
+- [Sadece MicroSD kartı flaşlayarak Raspberry Pi 4'ünüzü bir doğrulayıcı düğümüne dönüştürün – Kurulum kılavuzu](/developers/tutorials/run-node-raspberry-pi/) _– Raspberry Pi 4'ünüzü flaşlayın, bir ethernet kablosu takın, SSD diskini bağlayın ve Raspberry Pi 4'ü yürütme katmanını (Ana Ağ) ve / veya mutabakat katmanını (İşaret Zinciri / doğrulayıcı) çalıştıran tam bir Quantaureum düğümüne dönüştürmek için cihazı açın._

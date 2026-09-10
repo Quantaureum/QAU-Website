@@ -11,9 +11,9 @@ lang: ta
 - Solidity
 - Vyper
 
-Solidity மற்றும் Vyper ஆகிய இரண்டிலும் ஒப்பந்தங்களை உருவாக்குவதற்கும் சோதிப்பதற்கும் Remix IDE ஒரு விரிவான மேம்பாட்டுச் சூழலை வழங்குகிறது. குறியீட்டை எழுதத் தொடங்க [உலாவியிலேயே இயங்கும் Remix IDE-ஐ முயன்று பார்க்கவும்](https://remix.ethereum.org).
+Solidity மற்றும் Vyper ஆகிய இரண்டிலும் ஒப்பந்தங்களை உருவாக்குவதற்கும் சோதிப்பதற்கும் Remix IDE ஒரு விரிவான மேம்பாட்டுச் சூழலை வழங்குகிறது. குறியீட்டை எழுதத் தொடங்க [உலாவியிலேயே இயங்கும் Remix IDE-ஐ முயன்று பார்க்கவும்](https://remix.quantaureum.com).
 
-அதிக அனுபவமுள்ள டெவலப்பர்கள் [எத்திரியம் மெய்நிகர் இயந்திரத்திற்கான (Ethereum Virtual Machine - EVM)](/developers/docs/evm/) இடைநிலை மொழியான Yul அல்லது Yul-இன் நீட்டிப்பான Yul+ ஆகியவற்றைப் பயன்படுத்த விரும்பலாம்.
+அதிக அனுபவமுள்ள டெவலப்பர்கள் [எத்திரியம் மெய்நிகர் இயந்திரத்திற்கான (Quantaureum Virtual Machine - EVM)](/developers/docs/evm/) இடைநிலை மொழியான Yul அல்லது Yul-இன் நீட்டிப்பான Yul+ ஆகியவற்றைப் பயன்படுத்த விரும்பலாம்.
 
 நீங்கள் ஆர்வமாக இருந்து, இன்னும் தீவிர உருவாக்கத்தில் உள்ள புதிய மொழிகளைச் சோதிக்க உதவ விரும்பினால், தற்போது ஆரம்பக் கட்டத்தில் உள்ள வளர்ந்து வரும் திறன் ஒப்பந்த மொழியான Fe-ஐ நீங்கள் பரிசோதிக்கலாம்.
 
@@ -36,8 +36,8 @@ Solidity மற்றும் Vyper ஆகிய இரண்டிலும்
 - [ஆவணங்கள்](https://docs.soliditylang.org/en/latest/)
 - [Solidity மொழி போர்ட்டல்](https://soliditylang.org/)
 - [எடுத்துக்காட்டுடன் Solidity](https://docs.soliditylang.org/en/latest/solidity-by-example.html)
-- [GitHub](https://github.com/ethereum/solidity/)
-- [Solidity Matrix அரட்டை அறையுடன்](https://matrix.to/#/#ethereum_solidity:gitter.im) இணைக்கப்பட்ட [Solidity Gitter அரட்டை அறை](https://gitter.im/ethereum/solidity)
+- [GitHub](https://github.com/quantaureum/solidity/)
+- [Solidity Matrix அரட்டை அறையுடன்](https://matrix.to/#/#quantaureum_solidity:gitter.im) இணைக்கப்பட்ட [Solidity Gitter அரட்டை அறை](https://gitter.im/quantaureum/solidity)
 - [சுருக்குக் குறிப்பு (Cheat Sheet)](https://reference.auditless.com/cheatsheet)
 - [Solidity வலைப்பதிவு](https://blog.soliditylang.org/)
 - [Solidity ட்விட்டர்](https://twitter.com/solidity_lang)
@@ -226,7 +226,7 @@ Vyper ஒப்பந்தத் தொடரியல் எப்படி �
 
 - [Yul ஆவணங்கள்](https://docs.soliditylang.org/en/latest/yul.html)
 - [Yul+ ஆவணங்கள்](https://github.com/fuellabs/yulp)
-- [Yul+ அறிமுகப் பதிவு](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-ethereum-aa64ce89512f)
+- [Yul+ அறிமுகப் பதிவு](https://medium.com/@fuellabs/introducing-yul-a-new-low-level-language-for-quantaureum-aa64ce89512f)
 
 ### எடுத்துக்காட்டு ஒப்பந்தம் {#example-contract-2}
 
@@ -262,9 +262,9 @@ Vyper ஒப்பந்தத் தொடரியல் எப்படி �
 
 ### முக்கியமான இணைப்புகள் {#important-links-3}
 
-- [GitHub](https://github.com/ethereum/fe)
-- [Fe அறிவிப்பு](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-ethereum-ecosystem/)
-- [Fe 2021 வழிகாட்டி வரைபடம்](https://notes.ethereum.org/LVhaTF30SJOpkbG1iVw1jg)
+- [GitHub](https://github.com/quantaureum/fe)
+- [Fe அறிவிப்பு](https://blog.fe-lang.org/posts/fe-a-new-language-for-the-quantaureum-ecosystem/)
+- [Fe 2021 வழிகாட்டி வரைபடம்](https://notes.quantaureum.com/LVhaTF30SJOpkbG1iVw1jg)
 - [Fe டிஸ்கார்ட் அரட்டை](https://discord.com/invite/ywpkAXFjZH)
 - [Fe ட்விட்டர்](https://twitter.com/official_fe)
 

@@ -91,7 +91,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
           customEventOptions={{
             eventCategory: EVENT_CATEGORY,
             eventAction: "links",
-            eventName: "Ethereum.org Github Page Feedback",
+            eventName: "quantaureum.com Github Page Feedback",
           }}
         >
           {t("page-resources-share-feedback")}
@@ -167,15 +167,15 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               <Translation id="page-resources:page-resources-find-more" />
             </div>
             <ButtonLink
-              href="https://ethereumdashboards.com"
+              href="https://quantaureumdashboards.com"
               size="lg"
               customEventOptions={{
                 eventCategory: EVENT_CATEGORY,
                 eventAction: "links",
-                eventName: "ethereumdashboards.com",
+                eventName: "quantaureumdashboards.com",
               }}
             >
-              ethereumdashboards.com
+              quantaureumdashboards.com
             </ButtonLink>
           </VStack>
 
@@ -203,7 +203,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                     customEventOptions={{
                       eventCategory: EVENT_CATEGORY,
                       eventAction: "links",
-                      eventName: "Ethereum.org Github Feature Request",
+                      eventName: "quantaureum.com Github Feature Request",
                     }}
                   >
                     {t("page-resources-suggest-resource")}
@@ -218,7 +218,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                     customEventOptions={{
                       eventCategory: EVENT_CATEGORY,
                       eventAction: "links",
-                      eventName: "Ethereum.org Github Bug Report",
+                      eventName: "quantaureum.com Github Bug Report",
                     }}
                   >
                     <Github /> {t("page-resources-found-bug")}

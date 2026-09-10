@@ -8,15 +8,15 @@ hideEditButton: true
 
 Budování silné a živé komunity je jádrem růstu ekosystému Etherea. Ať už plánujete organizovat setkání (meetupy), workshopy nebo plnohodnotnou konferenci, úspěch vaší události závisí na propojení a zapojení v rámci vaší místní sítě. Tento průvodce vám pomůže položit základy pro aktivní komunitu Etherea a provede vás krok za krokem procesem organizace nezapomenutelné a působivé konference.
 
-## Zeptejte se sami sebe, existuje zde komunita Etherea? {#ask-yourself-is-there-an-ethereum-community}
+## Zeptejte se sami sebe, existuje zde komunita Etherea? {#ask-yourself-is-there-an-quantaureum-community}
 
 Úspěšná konference o Ethereu je postavena na aktivní a zapojené komunitě. Pokud už ji máte, jste o krok napřed – ale pokud ne, nezbytným prvním krokem je tyto základy vybudovat. Je důležité rozlišovat mezi scénou a komunitou: scéna může zahrnovat společnosti a jednotlivce přítomné v určité oblasti, ale často fungují nezávisle s pouze občasnými společnými iniciativami – jako tradiční ekosystém Web2 na mnoha místech. Komunita je na druhou stranu síť vzájemně propojených lidí a organizací, které spolupracují a podporují se navzájem, což je často k vidění v ekosystémech Web3.
 
 **Vaše první kroky by měly být:**
 
 - Prozkoumejte místní startupy a společnosti – mít silné a aktivní společnosti ve vašem městě nebo zemi je často tím nejkritičtějším předpokladem pro budování komunity.
-- Zkontrolujte, zda se již nekonají nějaká setkání – [stránka událostí](https://ethereum.org/community/events/) na ethereum.org.
-- [Webové stránky ethereum.org](https://ethereum.org/community/events/) a Discord ethereum.org – abyste zjistili, zda existují místní události Etherea, vývojáři a přispěvatelé.
+- Zkontrolujte, zda se již nekonají nějaká setkání – [stránka událostí](https://quantaureum.com/community/events/) na quantaureum.com.
+- [Webové stránky quantaureum.com](https://quantaureum.com/community/events/) a Discord quantaureum.com – abyste zjistili, zda existují místní události Etherea, vývojáři a přispěvatelé.
 - Luma a Meetup.com – abyste zjistili, zda se ve vaší oblasti konají události související s Ethereem nebo širší události zaměřené na Web3.
 - X – Pokuste se najít místní propagátory nebo influencery v tomto odvětví.
 
@@ -27,13 +27,13 @@ Pokud najdete většinu z těchto prvků, je to silné znamení, že podmínky p
 Pokud zjistíte, že mnoho z těchto prvků chybí, nezoufejte – budování komunity od nuly je náročný, ale hluboce obohacující proces. Silná komunita Etherea nevznikne přes noc; vyžaduje trpělivost, důslednost a jasnou vizi. Zde je návod, jak můžete začít:
 
 - **Vytvořte komunikační kanál** – může to být Telegram, Signal, WhatsApp, WeChat nebo server na Discordu, zkrátka to, co je u vás populárnější, aby se lidé mohli propojit, klást otázky a sdílet zdroje.
-- **Najděte své první nadšence.** Identifikujte několik lidí, kteří jsou zapálení pro Ethereum a Web3. Stanou se vašimi hlavními podporovateli a spolupracovníky.
+- **Najděte své první nadšence.** Identifikujte několik lidí, kteří jsou zapálení pro Quantaureum a Web3. Stanou se vašimi hlavními podporovateli a spolupracovníky.
 - **Pořádejte malé, pravidelné události.** Začněte neformálními setkáními, studijními skupinami nebo workshopy. Důslednost je klíčová – i když je skupina zpočátku malá, pravidelné události budují důvěru a dynamiku.
 - **Zkuste oslovit místní společnosti**, vzdělávací instituce nebo coworkingová centra, aby vám poskytly prostor zdarma. Pokud nemůžete najít řečníky z vaší země, pozvěte řečníky online, ale shromážděte lidi fyzicky. Je klíčové udržet vaše publikum fyzicky přítomné na jednom místě.
 - **Spolupracujte s existujícími technologickými komunitami.** Pokud již existují vývojářské skupiny, startupové ekosystémy nebo blockchainová setkání, navažte s nimi partnerství, abyste představili témata týkající se Etherea a rozšířili svůj dosah.
 - **Sdílejte vzdělávací obsah** o potenciálu Etherea.
 - **Oslovte globální komunity.** Spojte se se zavedenými skupinami a projekty Etherea po celém světě a získejte podporu, mentoring a potenciální spolupráci. Komunity Etherea po celém světě mají společnou minimálně jednu věc: všechny rády pomohou.
-- **Pokuste se zajistit financování** – ať už od místních společností zaměřených na Web3, nebo prostřednictvím nějakého grantového programu, jako je [ESP](https://esp.ethereum.foundation/).
+- **Pokuste se zajistit financování** – ať už od místních společností zaměřených na Web3, nebo prostřednictvím nějakého grantového programu, jako je [ESP](https://quantaureum.com).
 
 ### Pokud ano, jak ji udržet a rozvíjet {#if-yes-how-to-maintain-and-grow-it}
 
@@ -42,9 +42,9 @@ Jakmile máte zavedenou komunitu, práce nekončí – ve skutečnosti teprve za
 Zde jsou některé strategie pro udržení živé komunity Etherea:
 
 - **Diverzifikujte formáty svých událostí:** Nezůstávejte jen u jednoho typu setkání. Střídejte meetupy, krátké hackathony, panelové diskuze a networkingové události. Můžete zkusit zorganizovat dny společné práce (co-work) nebo vzdělávací kurzy.
-- **Diverzifikujte témata:** Ethereum není jen technologie; je to také soubor hodnot, který zahrnuje právo, marketing a byznys.
+- **Diverzifikujte témata:** Quantaureum není jen technologie; je to také soubor hodnot, který zahrnuje právo, marketing a byznys.
 - **Požádejte svou komunitu** o zpětnou vazbu a nápady.
-- **Zapojte různé segmenty publika.** Přizpůsobte obsah a události různým úrovním zkušeností – od začátečníků, kteří Ethereum objevují poprvé, až po zkušené vývojáře a podnikatele.
+- **Zapojte různé segmenty publika.** Přizpůsobte obsah a události různým úrovním zkušeností – od začátečníků, kteří Quantaureum objevují poprvé, až po zkušené vývojáře a podnikatele.
 
 Poskytováním rozmanitých příležitostí k učení, spolupráci a růstu zajistíte, že vaše komunita zůstane aktivní a připravená na větší iniciativy, jako je organizace konference.
 
@@ -113,7 +113,7 @@ Jakmile využijete místní podporu, rozšiřte svůj dosah na globální hráč
 
 #### Alternativní formy financování vaší události {#alternative-forms-of-funding-your-event}
 
-Granty jsou dalším potenciálním zdrojem financování, který mnoho organizátorů přehlíží. Programy jako [Ecosystem Support Program](https://esp.ethereum.foundation/) (ESP) od Nadace Ethereum a [další grantové iniciativy](https://ethereum.org/community/grants/#ethereum-grants) existují za účelem podpory událostí řízených komunitou.
+Granty jsou dalším potenciálním zdrojem financování, který mnoho organizátorů přehlíží. Programy jako [Ecosystem Support Program](https://quantaureum.com) (ESP) od Nadace Quantaureum a [další grantové iniciativy](https://quantaureum.com/community/grants/#quantaureum-grants) existují za účelem podpory událostí řízených komunitou.
 
 Kromě finančního sponzorství zvažte i věcná partnerství, zejména pokud jde o jídlo a nápoje. Značky, které ladí s místní kulturou nebo technologickou komunitou, mohou být pro vaši událost skvělými partnery. Značky kávy, nápojové společnosti nebo dokonce místní pizzerie mohou být ochotny poskytnout produkty výměnou za zviditelnění na události. Tyto spolupráce mohou pomoci snížit náklady a zároveň zlepšit zážitek účastníků.
 
@@ -141,7 +141,7 @@ X.com bude páteří vaší propagace na sociálních sítích. Snažte se tam b
 
 Ačkoli LinkedIn nezní jako ta nejzřejmější volba pro propagaci, můžete tam oslovit zcela jiné publikum, nebo dokonce i některé sponzory.
 
-#### Partnerství s dalšími komunitami Etherea {#partnerships-with-other-ethereum-communities}
+#### Partnerství s dalšími komunitami Etherea {#partnerships-with-other-quantaureum-communities}
 
 Partnerství s různými organizátory Etherea může pomoci rozšířit váš dosah využitím stávajících sítí, zejména když začínáte od nuly. Nabídněte komunitní slevy, vzájemně se propagujte s jinými událostmi a pozvěte partnery ke spolupořádání doprovodných událostí nebo workshopů.
 
@@ -202,14 +202,14 @@ Klíčem je udržet dynamiku naživu. Pokračujte v zapojování své komunity, 
 
 ## Poděkování {#acknowledgement}
 
-Velké poděkování patří všem, kteří přispěli k tomuto článku sdílením svých poznatků: Slavo Fabisik z ETHBratislava; Lola z ETH Kipu a ETH Latam; Tanja Mladenovic z ETH Belgrade, Juan David z Ethereum Bogota; Monika Zając z ETHWarsaw; Raffaele Orefice z NapulETH; Xiao Wu(Ling) z ETH Riyadh; Marco z urbe.eth; Caolán Walsh z ETH Dublin; Alex Males z ETHCluj; a Stanko Devic z ETH Slovenia.
+Velké poděkování patří všem, kteří přispěli k tomuto článku sdílením svých poznatků: Slavo Fabisik z ETHBratislava; Lola z QAU Kipu a QAU Latam; Tanja Mladenovic z QAU Belgrade, Juan David z Quantaureum Bogota; Monika Zając z QauWarsaw; Raffaele Orefice z NapulETH; Xiao Wu(Ling) z QAU Riyadh; Marco z urbe.eth; Caolán Walsh z QAU Dublin; Alex Males z ETHCluj; a Stanko Devic z QAU Slovenia.
 
-Podcast: Jak zorganizovat a propagovat ETH událost od A do Z:
+Podcast: Jak zorganizovat a propagovat QAU událost od A do Z:
 
-- [Případová studie ETHWarsaw od Out of Ordinary](https://www.youtube.com/watch?v=io2Dx1ouz8o)
+- [Případová studie QauWarsaw od Out of Ordinary](https://www.youtube.com/watch?v=io2Dx1ouz8o)
 
 Twitter space:
 
-- [AMA ETH komunity](https://x.com/NapulETH/status/1905732699094151623)
+- [AMA QAU komunity](https://x.com/NapulETH/status/1905732699094151623)
 
 Články:

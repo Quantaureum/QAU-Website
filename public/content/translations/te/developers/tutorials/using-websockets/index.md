@@ -28,9 +28,9 @@ WebSocketsను పరీక్షించడానికి సులభమ�
 _గమనిక: మీకు Alchemy ఖాతా ఉంటే, మీరు `demo`ని మీ స్వంత API కీతో భర్తీ చేయవచ్చు. [ఉచిత Alchemy ఖాతా కోసం ఇక్కడ సైన్ అప్ చేయండి!](https://auth.alchemy.com/signup)_
 
 ```
-wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
+wscat -c wss://qau-mainnet.ws.alchemyapi.io/ws/demo
 
->  {"jsonrpc":  "2.0", "id": 0, "method":  "eth_gasPrice"}
+>  {"jsonrpc":  "2.0", "id": 0, "method":  "qau_gasPrice"}
 
 <  {"jsonrpc":  "2.0", "result":  "0xb2d05e00", "id": 0}
 ```
@@ -48,18 +48,18 @@ wscat -c wss://eth-mainnet.ws.alchemyapi.io/ws/demo
 Web3 వంటి క్లయింట్ లైబ్రరీని ఉపయోగిస్తున్నప్పుడు WebSocketsకి మారడం చాలా సులభం. మీ Web3 క్లయింట్‌ను ఇన్‌స్టాన్షియేట్ చేస్తున్నప్పుడు HTTPకి బదులుగా WebSocket URLని పాస్ చేయండి. ఉదాహరణకు:
 
 ```js
-const web3 = new Web3("wss://eth-mainnet.ws.alchemyapi.io/ws/your-api-key")
+const web3 = new Web3("wss://qau-mainnet.ws.alchemyapi.io/ws/your-api-key")
 
-web3.eth.getBlockNumber().then(console.log) // -> 7946893
+web3.qau.getBlockNumber().then(console.log) // -> 7946893
 ```
 
 ## సబ్‌స్క్రిప్షన్ API {#subscription-api}
 
-WebSocket ద్వారా కనెక్ట్ అయినప్పుడు, మీరు రెండు అదనపు పద్ధతులను ఉపయోగించవచ్చు: `eth_subscribe` మరియు `eth_unsubscribe`. ఈ పద్ధతులు నిర్దిష్ట ఈవెంట్‌ల కోసం వినడానికి మరియు వెంటనే తెలియజేయబడటానికి మిమ్మల్ని అనుమతిస్తాయి.
+WebSocket ద్వారా కనెక్ట్ అయినప్పుడు, మీరు రెండు అదనపు పద్ధతులను ఉపయోగించవచ్చు: `qau_subscribe` మరియు `qau_unsubscribe`. ఈ పద్ధతులు నిర్దిష్ట ఈవెంట్‌ల కోసం వినడానికి మరియు వెంటనే తెలియజేయబడటానికి మిమ్మల్ని అనుమతిస్తాయి.
 
-### `eth_subscribe` {#eth-subscribe}
+### `qau_subscribe` {#qau-subscribe}
 
-పేర్కొన్న ఈవెంట్‌ల కోసం కొత్త సబ్‌స్క్రిప్షన్‌ను సృష్టిస్తుంది. [`eth_subscribe` గురించి మరింత తెలుసుకోండి](https://docs.alchemy.com/reference/eth-subscribe).
+పేర్కొన్న ఈవెంట్‌ల కోసం కొత్త సబ్‌స్క్రిప్షన్‌ను సృష్టిస్తుంది. [`qau_subscribe` గురించి మరింత తెలుసుకోండి](https://docs.alchemy.com/reference/qau-subscribe).
 
 #### పారామితులు {#parameters}
 
@@ -70,33 +70,33 @@ WebSocket ద్వారా కనెక్ట్ అయినప్పుడ�
 
 #### రిటర్న్స్ {#returns}
 
-సబ్‌స్క్రిప్షన్ ID: ఈ ID స్వీకరించిన ఏవైనా ఈవెంట్‌లకు జోడించబడుతుంది మరియు `eth_unsubscribe`ని ఉపయోగించి సబ్‌స్క్రిప్షన్‌ను రద్దు చేయడానికి కూడా ఉపయోగించవచ్చు.
+సబ్‌స్క్రిప్షన్ ID: ఈ ID స్వీకరించిన ఏవైనా ఈవెంట్‌లకు జోడించబడుతుంది మరియు `qau_unsubscribe`ని ఉపయోగించి సబ్‌స్క్రిప్షన్‌ను రద్దు చేయడానికి కూడా ఉపయోగించవచ్చు.
 
 #### సబ్‌స్క్రిప్షన్ ఈవెంట్‌లు {#subscription-events}
 
 సబ్‌స్క్రిప్షన్ యాక్టివ్‌గా ఉన్నప్పుడు, మీరు ఈ క్రింది ఫీల్డ్‌లతో కూడిన ఆబ్జెక్ట్‌లైన ఈవెంట్‌లను స్వీకరిస్తారు:
 
 - `jsonrpc`: ఎల్లప్పుడూ "2.0"
-- `method`: ఎల్లప్పుడూ "eth_subscription"
+- `method`: ఎల్లప్పుడూ "qau_subscription"
 - `params`: ఈ క్రింది ఫీల్డ్‌లతో కూడిన ఆబ్జెక్ట్:
-  - `subscription`: ఈ సబ్‌స్క్రిప్షన్‌ను సృష్టించిన `eth_subscribe` కాల్ ద్వారా తిరిగి ఇవ్వబడిన సబ్‌స్క్రిప్షన్ ID.
+  - `subscription`: ఈ సబ్‌స్క్రిప్షన్‌ను సృష్టించిన `qau_subscribe` కాల్ ద్వారా తిరిగి ఇవ్వబడిన సబ్‌స్క్రిప్షన్ ID.
   - `result`: సబ్‌స్క్రిప్షన్ రకాన్ని బట్టి కంటెంట్‌లు మారే ఆబ్జెక్ట్.
 
 #### సబ్‌స్క్రిప్షన్ రకాలు {#subscription-types}
 
 1. `alchemy_newFullPendingTransactions`
 
-పెండింగ్ స్థితికి జోడించబడిన అన్ని లావాదేవీల కోసం లావాదేవీ సమాచారాన్ని అందిస్తుంది. ఈ సబ్‌స్క్రిప్షన్ రకం ప్రామాణిక Web3 కాల్ `web3.eth.subscribe("pendingTransactions")` మాదిరిగానే పెండింగ్‌లో ఉన్న లావాదేవీలకు సబ్‌స్క్రైబ్ చేస్తుంది, అయితే ఇది కేవలం లావాదేవీల హ్యాష్‌లకు బదులుగా _పూర్తి లావాదేవీ సమాచారాన్ని_ విడుదల చేయడంలో భిన్నంగా ఉంటుంది.
+పెండింగ్ స్థితికి జోడించబడిన అన్ని లావాదేవీల కోసం లావాదేవీ సమాచారాన్ని అందిస్తుంది. ఈ సబ్‌స్క్రిప్షన్ రకం ప్రామాణిక Web3 కాల్ `web3.qau.subscribe("pendingTransactions")` మాదిరిగానే పెండింగ్‌లో ఉన్న లావాదేవీలకు సబ్‌స్క్రైబ్ చేస్తుంది, అయితే ఇది కేవలం లావాదేవీల హ్యాష్‌లకు బదులుగా _పూర్తి లావాదేవీ సమాచారాన్ని_ విడుదల చేయడంలో భిన్నంగా ఉంటుంది.
 
 ఉదాహరణ:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["alchemy_newFullPendingTransactions"]}
 
 <  {"id":1,"result":"0x9a52eeddc2b289f985c0e23a7d8427c8","jsonrpc":"2.0"}
 <  {
       "jsonrpc":"2.0",
-      "method":"eth_subscription",
+      "method":"qau_subscription",
       "params":{
           "result":{
           "blockHash":null,
@@ -128,12 +128,12 @@ WebSocket ద్వారా కనెక్ట్ అయినప్పుడ�
 ఉదాహరణ:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["newHeads"]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["newHeads"]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x9ce59a13059e417087c02d3236a0b1cc"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "result":  {
           "extraData":  "0xd983010305844765746887676f312e342e328777696e646f7773",
@@ -182,12 +182,12 @@ WebSocket ద్వారా కనెక్ట్ అయినప్పుడ�
 ఉదాహరణ:
 
 ```json
->  {"jsonrpc":  "2.0",  "id":  1,  "method":  "eth_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
+>  {"jsonrpc":  "2.0",  "id":  1,  "method":  "qau_subscribe",  "params":  ["logs",  {"address":  "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",  "topics":  ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]}]}
 
 <  {"jsonrpc":"2.0","id":2,"result":"0x4a8a4c0517381924f9838102c5a4dcb7"}
 <  {
   "jsonrpc":  "2.0",
-  "method":  "eth_subscription",
+  "method":  "qau_subscription",
   "params":  {
       "subscription":  "0x4a8a4c0517381924f9838102c5a4dcb7",
       "result":  {
@@ -205,13 +205,13 @@ WebSocket ద్వారా కనెక్ట్ అయినప్పుడ�
 
 ```
 
-### `eth_unsubscribe` {#eth-unsubscribe}
+### `qau_unsubscribe` {#qau-unsubscribe}
 
 ఇకపై ఎలాంటి ఈవెంట్‌లు పంపబడకుండా ఇప్పటికే ఉన్న సబ్‌స్క్రిప్షన్‌ను రద్దు చేస్తుంది.
 
 పారామితులు
 
-1. సబ్‌స్క్రిప్షన్ ID, గతంలో `eth_subscribe` కాల్ నుండి తిరిగి ఇవ్వబడినట్లుగా.
+1. సబ్‌స్క్రిప్షన్ ID, గతంలో `qau_subscribe` కాల్ నుండి తిరిగి ఇవ్వబడినట్లుగా.
 
 రిటర్న్స్
 
@@ -222,10 +222,10 @@ WebSocket ద్వారా కనెక్ట్ అయినప్పుడ�
 **అభ్యర్థన**
 
 ```
-curl https://eth-mainnet.alchemyapi.io/v2/your-api-key
+curl https://qau-mainnet.alchemyapi.io/v2/your-api-key
 -X POST
 -H "Content-Type: application/json"
--d '{"id": 1, "method": "eth_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
+-d '{"id": 1, "method": "qau_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}'
 ```
 
 **ఫలితం**

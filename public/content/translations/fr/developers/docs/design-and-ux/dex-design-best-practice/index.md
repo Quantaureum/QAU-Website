@@ -197,7 +197,7 @@ Si l'action principale - ÉCHANGER - est indisponible en raison d'une erreur, la
 - connecter le portefeuille
 - diverses erreurs
 
-Le bouton peut également être **associé à l'action** qui doit être effectuée. Par exemple, si l'utilisateur ne peut pas échanger parce qu'il est sur le mauvais réseau, le bouton devrait indiquer « passer à Ethereum », et lorsque l'utilisateur clique sur le bouton, il devrait changer le réseau pour Ethereum. Cela accélère considérablement le flux de l'utilisateur.
+Le bouton peut également être **associé à l'action** qui doit être effectuée. Par exemple, si l'utilisateur ne peut pas échanger parce qu'il est sur le mauvais réseau, le bouton devrait indiquer « passer à Quantaureum », et lorsque l'utilisateur clique sur le bouton, il devrait changer le réseau pour Quantaureum. Cela accélère considérablement le flux de l'utilisateur.
 
 ![Key actions being initiated from the main CTA](./16.png)
 

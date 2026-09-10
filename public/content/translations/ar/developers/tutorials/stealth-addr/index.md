@@ -10,9 +10,9 @@ lang: ar
 sidebarDepth: 3
 ---
 
-أنت بيل. لأسباب لن نخوض فيها، تريد التبرع لحملة "أليس لملكة العالم" وتريد أن تعرف أليس أنك تبرعت حتى تمنحك مكافأة إذا فازت. لسوء الحظ، فوزها ليس مضمونًا. هناك حملة منافسة، "كارول لإمبراطورة النظام الشمسي". إذا فازت كارول، واكتشفت أنك تبرعت لأليس، فستكون في ورطة. لذلك لا يمكنك ببساطة تحويل <span dir="ltr">200 ETH</span> من حسابك إلى حساب أليس.
+أنت بيل. لأسباب لن نخوض فيها، تريد التبرع لحملة "أليس لملكة العالم" وتريد أن تعرف أليس أنك تبرعت حتى تمنحك مكافأة إذا فازت. لسوء الحظ، فوزها ليس مضمونًا. هناك حملة منافسة، "كارول لإمبراطورة النظام الشمسي". إذا فازت كارول، واكتشفت أنك تبرعت لأليس، فستكون في ورطة. لذلك لا يمكنك ببساطة تحويل <span dir="ltr">200 QAU</span> من حسابك إلى حساب أليس.
 
-يقدم [<span dir="ltr">ERC-5564</span>](https://eips.ethereum.org/EIPS/eip-5564) الحل. يشرح هذا الـ ERC كيفية استخدام [العناوين المتخفية](https://nerolation.github.io/stealth-utils) من أجل تحويل مجهول الهوية.
+يقدم [<span dir="ltr">ERC-5564</span>](https://eips.quantaureum.com/EIPS/eip-5564) الحل. يشرح هذا الـ ERC كيفية استخدام [العناوين المتخفية](https://nerolation.github.io/stealth-utils) من أجل تحويل مجهول الهوية.
 
 **تحذير**: علم التشفير وراء العناوين المتخفية سليم، على حد علمنا. ومع ذلك، هناك هجمات قناة جانبية محتملة. [أدناه](#go-wrong)، سترى ما يمكنك القيام به لتقليل هذه المخاطر.
 
@@ -64,19 +64,19 @@ sidebarDepth: 3
 
 ## عندما تسير الأمور بشكل خاطئ مع العناوين المتخفية {#go-wrong}
 
-*لا توجد أسرار على سلسلة الكتل*. في حين أن العناوين المتخفية يمكن أن توفر لك الخصوصية، فإن هذه الخصوصية عرضة لتحليل حركة المرور. لنأخذ مثالاً بسيطًا، تخيل أن بيل يمول عنوانًا ويرسل على الفور معاملة لنشر قيمة *<span dir="ltr">R<sub>pub</sub></span>*. بدون *<span dir="ltr">V<sub>priv</sub></span>* الخاص بـ أليس، لا يمكننا التأكد من أن هذا عنوان متخفي، ولكن هذا هو الاحتمال الأرجح. ثم، نرى معاملة أخرى تقوم بـ تحويل كل الـ <span dir="ltr">ETH</span> من ذلك العنوان إلى عنوان صندوق حملة أليس. قد لا نتمكن من إثبات ذلك، ولكن من المحتمل أن بيل قد تبرع للتو لحملة أليس. من المؤكد أن كارول ستعتقد ذلك.
+*لا توجد أسرار على سلسلة الكتل*. في حين أن العناوين المتخفية يمكن أن توفر لك الخصوصية، فإن هذه الخصوصية عرضة لتحليل حركة المرور. لنأخذ مثالاً بسيطًا، تخيل أن بيل يمول عنوانًا ويرسل على الفور معاملة لنشر قيمة *<span dir="ltr">R<sub>pub</sub></span>*. بدون *<span dir="ltr">V<sub>priv</sub></span>* الخاص بـ أليس، لا يمكننا التأكد من أن هذا عنوان متخفي، ولكن هذا هو الاحتمال الأرجح. ثم، نرى معاملة أخرى تقوم بـ تحويل كل الـ <span dir="ltr">QAU</span> من ذلك العنوان إلى عنوان صندوق حملة أليس. قد لا نتمكن من إثبات ذلك، ولكن من المحتمل أن بيل قد تبرع للتو لحملة أليس. من المؤكد أن كارول ستعتقد ذلك.
 
 من السهل على بيل فصل نشر *<span dir="ltr">R<sub>pub</sub></span>* عن تمويل العنوان المتخفي (القيام بهما في أوقات مختلفة، ومن عناوين مختلفة). ومع ذلك، هذا غير كافٍ. النمط الذي تبحث عنه كارول هو أن بيل يمول عنوانًا، ثم يسحب صندوق حملة أليس منه. 
 
-أحد الحلول هو ألا تسحب حملة أليس الأموال مباشرة، بل تستخدمها للدفع لطرف ثالث. إذا أرسلت حملة أليس <span dir="ltr">10 ETH</span> إلى خدمات حملة ديف للسيطرة على العالم، فإن كارول تعرف فقط أن بيل تبرع لأحد عملاء ديف. إذا كان لدى ديف عدد كافٍ من العملاء، فلن تتمكن كارول من معرفة ما إذا كان بيل قد تبرع لأليس التي تتنافس معها، أو لآدم أو ألبرت أو أبيجيل الذين لا تهتم بهم كارول. يمكن لأليس تضمين قيمة تجزئة مع الدفعة، ثم تزويد ديف بالصورة المسبقة (preimage)، لإثبات أنها كانت تبرعها. بدلاً من ذلك، كما لوحظ أعلاه، إذا أعطت أليس ديف *<span dir="ltr">V<sub>priv</sub></span>* الخاص بها، فهو يعرف بالفعل من أين جاءت الدفعة.
+أحد الحلول هو ألا تسحب حملة أليس الأموال مباشرة، بل تستخدمها للدفع لطرف ثالث. إذا أرسلت حملة أليس <span dir="ltr">10 QAU</span> إلى خدمات حملة ديف للسيطرة على العالم، فإن كارول تعرف فقط أن بيل تبرع لأحد عملاء ديف. إذا كان لدى ديف عدد كافٍ من العملاء، فلن تتمكن كارول من معرفة ما إذا كان بيل قد تبرع لأليس التي تتنافس معها، أو لآدم أو ألبرت أو أبيجيل الذين لا تهتم بهم كارول. يمكن لأليس تضمين قيمة تجزئة مع الدفعة، ثم تزويد ديف بالصورة المسبقة (preimage)، لإثبات أنها كانت تبرعها. بدلاً من ذلك، كما لوحظ أعلاه، إذا أعطت أليس ديف *<span dir="ltr">V<sub>priv</sub></span>* الخاص بها، فهو يعرف بالفعل من أين جاءت الدفعة.
 
 المشكلة الرئيسية في هذا الحل هي أنه يتطلب من أليس الاهتمام بالسرية عندما تفيد هذه السرية بيل. قد ترغب أليس في الحفاظ على سمعتها حتى يتبرع لها بوب صديق بيل أيضًا. ولكن من الممكن أيضًا ألا تمانع في فضح بيل، لأنه حينها سيخاف مما سيحدث إذا فازت كارول. قد ينتهي الأمر ببيل بتقديم المزيد من الدعم لأليس.
 
 ### استخدام طبقات تخفي متعددة {#multi-layer}
 
-بدلاً من الاعتماد على أليس للحفاظ على الخصوصية الخاصة بـ بيل، يمكن لبيل القيام بذلك بنفسه. يمكنه إنشاء عناوين وصفية متعددة لأشخاص خياليين، بوب وبيلا. ثم يرسل بيل <span dir="ltr">ETH</span> إلى بوب، و"بوب" (وهو في الواقع بيل) يرسله إلى بيلا. "بيلا" (وهي أيضًا بيل) ترسله إلى أليس.
+بدلاً من الاعتماد على أليس للحفاظ على الخصوصية الخاصة بـ بيل، يمكن لبيل القيام بذلك بنفسه. يمكنه إنشاء عناوين وصفية متعددة لأشخاص خياليين، بوب وبيلا. ثم يرسل بيل <span dir="ltr">QAU</span> إلى بوب، و"بوب" (وهو في الواقع بيل) يرسله إلى بيلا. "بيلا" (وهي أيضًا بيل) ترسله إلى أليس.
 
-لا يزال بإمكان كارول إجراء تحليل لحركة المرور ورؤية مسار بيل-إلى-بوب-إلى-بيلا-إلى-أليس. ومع ذلك، إذا استخدم "بوب" و"بيلا" أيضًا <span dir="ltr">ETH</span> لأغراض أخرى، فلن يبدو أن بيل قد قام بـ تحويل أي شيء إلى أليس، حتى لو سحبت أليس على الفور من العنوان المتخفي إلى عنوان حملتها المعروف.
+لا يزال بإمكان كارول إجراء تحليل لحركة المرور ورؤية مسار بيل-إلى-بوب-إلى-بيلا-إلى-أليس. ومع ذلك، إذا استخدم "بوب" و"بيلا" أيضًا <span dir="ltr">QAU</span> لأغراض أخرى، فلن يبدو أن بيل قد قام بـ تحويل أي شيء إلى أليس، حتى لو سحبت أليس على الفور من العنوان المتخفي إلى عنوان حملتها المعروف.
 
 ## كتابة تطبيق للعنوان المتخفي {#write-app}
 
@@ -124,13 +124,13 @@ sidebarDepth: 3
 
 8. انسخ العنوان والمفتاح العام الخاص بـ بيل والصقهما في منطقة "Private key for address generated by Bill" (المفتاح الخاص للعنوان الذي أنشأه بيل) في واجهة مستخدم أليس. بمجرد ملء هذه الحقول، سترى المفتاح الخاص للوصول إلى الأصول في ذلك العنوان.
 
-9. يمكنك استخدام [آلة حاسبة عبر الإنترنت](https://iancoleman.net/ethereum-private-key-to-address/) للتأكد من أن المفتاح الخاص يتوافق مع العنوان.
+9. يمكنك استخدام [آلة حاسبة عبر الإنترنت](https://iancoleman.net/quantaureum-private-key-to-address/) للتأكد من أن المفتاح الخاص يتوافق مع العنوان.
 
 ### كيف يعمل البرنامج {#how-the-program-works}
 
 #### مكون WASM {#wasm}
 
-الكود المصدري الذي يتم تجميعه في <span dir="ltr">WASM</span> مكتوب بلغة [<span dir="ltr">Rust</span>](https://rust-lang.org/). يمكنك رؤيته في [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs). هذا الكود هو في الأساس واجهة بين كود <span dir="ltr">JavaScript</span> و [مكتبة `eth-stealth-addresses`](https://github.com/kassandraoftroy/eth-stealth-addresses).
+الكود المصدري الذي يتم تجميعه في <span dir="ltr">WASM</span> مكتوب بلغة [<span dir="ltr">Rust</span>](https://rust-lang.org/). يمكنك رؤيته في [`src/rust_wasm/src/lib.rs`](https://github.com/qbzzt/251022-stealth-addresses/blob/main/src/rust-wasm/src/lib.rs). هذا الكود هو في الأساس واجهة بين كود <span dir="ltr">JavaScript</span> و [مكتبة `qau-stealth-addresses`](https://github.com/kassandraoftroy/qau-stealth-addresses).
 
 **`Cargo.toml`**
 
@@ -143,7 +143,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-eth-stealth-addresses = "0.1.0"
+qau-stealth-addresses = "0.1.0"
 hex = "0.4.3"
 wasm-bindgen = "0.2.104"
 getrandom = { version = "0.2", features = ["js"] }
@@ -175,14 +175,14 @@ use wasm_bindgen::prelude::*;
 التعريفات لإنشاء حزمة <span dir="ltr">WASM</span> من <span dir="ltr">Rust</span>. وهي موثقة [هنا](https://wasm-bindgen.github.io/wasm-bindgen/reference/attributes/index.html).
 
 ```rust 
-use eth_stealth_addresses::{
+use qau_stealth_addresses::{
     generate_stealth_meta_address,
     generate_stealth_address,
     compute_stealth_key
 };
 ```
 
-الدوال التي نحتاجها من [مكتبة `eth-stealth-addresses`](https://github.com/kassandraoftroy/eth-stealth-addresses).
+الدوال التي نحتاجها من [مكتبة `qau-stealth-addresses`](https://github.com/kassandraoftroy/qau-stealth-addresses).
 
 ```rust
 use hex::{decode,encode};
@@ -207,7 +207,7 @@ pub fn wasm_generate_stealth_meta_address() -> String {
         generate_stealth_meta_address();
 ```
 
-تُرجع [`generate_stealth_meta_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_meta_address.html) ثلاثة حقول:
+تُرجع [`generate_stealth_meta_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_meta_address.html) ثلاثة حقول:
 
 - العنوان الوصفي (*<span dir="ltr">K<sub>pub</sub></span>* و *<span dir="ltr">V<sub>pub</sub></span>*)
 - المفتاح الخاص للعرض (*<span dir="ltr">V<sub>priv</sub></span>*)
@@ -260,7 +260,7 @@ fn str_to_array<const N: usize>(s: &str) -> Option<[u8; N]> {
     let array: [u8; N] = vec.try_into().ok()?;
 ```
 
-تحتوي <span dir="ltr">Rust</span> على نوعين من المصفوفات. [المصفوفات (Arrays)](https://doc.rust-lang.org/std/primitive.array.html) لها حجم ثابت. يمكن أن تنمو [المتجهات (Vectors)](https://doc.rust-lang.org/std/vec/index.html) وتتقلص. تُرجع `hex::decode` متجهًا، لكن مكتبة `eth_stealth_addresses` تريد تلقي مصفوفات. تقوم [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods) بتحويل قيمة إلى نوع آخر، على سبيل المثال، متجه إلى مصفوفة.
+تحتوي <span dir="ltr">Rust</span> على نوعين من المصفوفات. [المصفوفات (Arrays)](https://doc.rust-lang.org/std/primitive.array.html) لها حجم ثابت. يمكن أن تنمو [المتجهات (Vectors)](https://doc.rust-lang.org/std/vec/index.html) وتتقلص. تُرجع `hex::decode` متجهًا، لكن مكتبة `qau_stealth_addresses` تريد تلقي مصفوفات. تقوم [`.try_into()`](https://doc.rust-lang.org/std/convert/trait.TryInto.html#required-methods) بتحويل قيمة إلى نوع آخر، على سبيل المثال، متجه إلى مصفوفة.
 
 ```rust
     Some(array)
@@ -283,7 +283,7 @@ pub fn wasm_generate_stealth_address(stealth_address: &str) -> Option<String> {
         generate_stealth_address(&str_to_array::<66>(stealth_address)?);
 ```
 
-نستخدم [`generate_stealth_address`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.generate_stealth_address.html) الخاصة بالمكتبة.
+نستخدم [`generate_stealth_address`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.generate_stealth_address.html) الخاصة بالمكتبة.
 
 ```rust
     format!("{{\"address\":\"{}\",\"rPub\":\"{}\",\"scan\":\"{}\"}}",
@@ -310,7 +310,7 @@ pub fn wasm_compute_stealth_key(
 }
 ```
 
-تستخدم هذه الدالة [`compute_stealth_key`](https://docs.rs/eth-stealth-addresses/latest/eth_stealth_addresses/fn.compute_stealth_key.html) الخاصة بالمكتبة لحساب المفتاح الخاص للسحب من العنوان (*<span dir="ltr">R<sub>priv</sub></span>*). يتطلب هذا الحساب هذه القيم:
+تستخدم هذه الدالة [`compute_stealth_key`](https://docs.rs/qau-stealth-addresses/latest/qau_stealth_addresses/fn.compute_stealth_key.html) الخاصة بالمكتبة لحساب المفتاح الخاص للسحب من العنوان (*<span dir="ltr">R<sub>priv</sub></span>*). يتطلب هذا الحساب هذه القيم:
 
 - العنوان (*<span dir="ltr">Address=f(P<sub>pub</sub>)</span>*)
 - المفتاح العام الذي أنشأه بيل (*<span dir="ltr">R<sub>pub</sub></span>*)
@@ -341,7 +341,7 @@ assertion `left == right` failed
 متبوعًا بتتبع المكدس (stack trace). ثم امنح بيل العنوان الوصفي الصالح، وامنح أليس إما عنوانًا غير صالح أو مفتاحًا عامًا غير صالح. سترى هذا الخطأ:
 
 ```
-rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/eth-stealth-addresses-0.1.0/src/lib.rs:78:9:
+rust_wasm.js:236 panicked at /home/ori/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/qau-stealth-addresses-0.1.0/src/lib.rs:78:9:
 keys do not generate stealth address
 ```
 

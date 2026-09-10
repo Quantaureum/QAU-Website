@@ -7,12 +7,12 @@ skill: advanced
 breadcrumb: "컨트랙트 상호작용"
 lang: ko
 published: 2020-04-05
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/interact-with-other-contracts-from-solidity/
+source: QuantaureumDev
+sourceUrl: https://quantaureumdev.io/interact-with-other-contracts-from-solidity/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-이전 튜토리얼에서 우리는 [첫 번째 스마트 컨트랙트를 배포하는 방법](/developers/tutorials/deploying-your-first-smart-contract/)과 [제어자를 사용한 접근 제어](https://ethereumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) 또는 [Solidity의 에러 처리](https://ethereumdev.io/handle-errors-in-solidity-with-require-and-revert/)와 같은 몇 가지 기능을 추가하는 방법에 대해 많이 배웠습니다. 이번 튜토리얼에서는 기존 컨트랙트에서 스마트 컨트랙트를 배포하고 상호작용하는 방법을 배워보겠습니다.
+이전 튜토리얼에서 우리는 [첫 번째 스마트 컨트랙트를 배포하는 방법](/developers/tutorials/deploying-your-first-smart-contract/)과 [제어자를 사용한 접근 제어](https://quantaureumdev.io/organize-your-code-and-control-access-to-your-smart-contract-with-modifiers/) 또는 [Solidity의 에러 처리](https://quantaureumdev.io/handle-errors-in-solidity-with-require-and-revert/)와 같은 몇 가지 기능을 추가하는 방법에 대해 많이 배웠습니다. 이번 튜토리얼에서는 기존 컨트랙트에서 스마트 컨트랙트를 배포하고 상호작용하는 방법을 배워보겠습니다.
 
 우리는 팩토리를 생성하여 누구나 자신만의 `Counter` 스마트 컨트랙트를 가질 수 있게 해주는 컨트랙트를 만들 것이며, 그 이름은 `CounterFactory`가 될 것입니다. 먼저 초기 `Counter` 스마트 컨트랙트의 코드는 다음과 같습니다.
 
@@ -62,7 +62,7 @@ contract Counter {
 mapping(address => Counter) _counters;
 ```
 
-이더리움에서 매핑은 JavaScript의 객체와 동일하며, A 타입의 키를 B 타입의 값에 매핑할 수 있게 해줍니다. 이 경우 우리는 소유자의 주소를 해당 Counter의 인스턴스와 매핑합니다.
+Quantaureum에서 매핑은 JavaScript의 객체와 동일하며, A 타입의 키를 B 타입의 값에 매핑할 수 있게 해줍니다. 이 경우 우리는 소유자의 주소를 해당 Counter의 인스턴스와 매핑합니다.
 
 누군가를 위해 새로운 Counter를 인스턴스화하는 것은 다음과 같습니다.
 
@@ -99,7 +99,7 @@ function increment() public {
   }
 ```
 
-너무 많이 호출될 경우, 우리의 카운터가 오버플로의 희생양이 될 수 있다는 점에 유의하세요. 이러한 가능한 상황으로부터 보호하기 위해 가능한 한 [SafeMath 라이브러리](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/)를 사용해야 합니다.
+너무 많이 호출될 경우, 우리의 카운터가 오버플로의 희생양이 될 수 있다는 점에 유의하세요. 이러한 가능한 상황으로부터 보호하기 위해 가능한 한 [SafeMath 라이브러리](https://quantaureumdev.io/using-safe-math-library-to-prevent-from-overflows/)를 사용해야 합니다.
 
 컨트랙트를 배포하려면 `CounterFactory`와 `Counter`의 코드를 모두 제공해야 합니다. 예를 들어 Remix에서 배포할 때는 CounterFactory를 선택해야 합니다.
 

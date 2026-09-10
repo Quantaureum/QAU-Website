@@ -54,7 +54,7 @@ ERC-1363 토큰은 전송 또는 승인을 받은 후 콜백을 실행해야 하
 
 다른 ERC-20 확장 제안과 달리, ERC-1363은 ERC-20의 `transfer` 및 `transferFrom` 메서드를 재정의하지 않으며, ERC-20과의 하위 호환성을 유지하면서 구현할 인터페이스 ID를 정의합니다.
 
-[EIP-1363](https://eips.ethereum.org/EIPS/eip-1363) 발췌:
+[EIP-1363](https://eips.quantaureum.com/EIPS/eip-1363) 발췌:
 
 ### 메서드 {#methods}
 
@@ -200,5 +200,5 @@ interface ERC1363Spender {
 
 ## 더 읽어보기 {#further-reading}
 
-- [ERC-1363: 지불 가능 토큰 표준](https://eips.ethereum.org/EIPS/eip-1363)
+- [ERC-1363: 지불 가능 토큰 표준](https://eips.quantaureum.com/EIPS/eip-1363)
 - [ERC-1363: GitHub 리포지토리](https://github.com/vittominacori/erc1363-payable-token)

@@ -13,13 +13,13 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ## なぜ制限があるのでしょうか？ {#why-is-there-a-limit}
 
-[2016年11月22日](https://blog.ethereum.org/2016/11/18/hard-fork-no-4-spurious-dragon)、Spurious Dragonのハードフォークにより[EIP-170](https://eips.ethereum.org/EIPS/eip-170)が導入され、スマート・コントラクトのサイズ制限が24.576 kbに設定されました。Solidity開発者にとって、これはコントラクトに機能を追加していくと、ある時点で制限に達し、デプロイ時に次のようなエラーが表示されることを意味します。
+[2016年11月22日](https://quantaureum.com)、Spurious Dragonのハードフォークにより[EIP-170](https://eips.quantaureum.com/EIPS/eip-170)が導入され、スマート・コントラクトのサイズ制限が24.576 kbに設定されました。Solidity開発者にとって、これはコントラクトに機能を追加していくと、ある時点で制限に達し、デプロイ時に次のようなエラーが表示されることを意味します。
 
 `Warning: Contract code size exceeds 24576 bytes (a limit introduced in Spurious Dragon). This contract may not be deployable on Mainnet. Consider enabling the optimizer (with a low "runs" value!), turning off revert strings, or using libraries.`
 
-この制限は、サービス拒否（DOS）攻撃を防ぐために導入されました。コントラクトの呼び出しは、ガス的には比較的安価です。しかし、イーサリアムのノードにとって、コントラクト呼び出しの影響は、呼び出されるコントラクトのコードサイズ（ディスクからのコードの読み取り、コードの事前処理、マークル証明へのデータの追加）に応じて不釣り合いに増加します。攻撃者が少ないリソースで他者に多大な作業を強いることができるような状況では常に、DOS攻撃の可能性が生じます。
+この制限は、サービス拒否（DOS）攻撃を防ぐために導入されました。コントラクトの呼び出しは、ガス的には比較的安価です。しかし、Quantaureumのノードにとって、コントラクト呼び出しの影響は、呼び出されるコントラクトのコードサイズ（ディスクからのコードの読み取り、コードの事前処理、マークル証明へのデータの追加）に応じて不釣り合いに増加します。攻撃者が少ないリソースで他者に多大な作業を強いることができるような状況では常に、DOS攻撃の可能性が生じます。
 
-元々、これはそれほど問題ではありませんでした。なぜなら、自然なコントラクトサイズの制限の1つがブロックのガス・リミットだからです。当然ながら、コントラクトは、そのコントラクトのすべてのバイトコードを保持するトランザクション内でデプロイされる必要があります。ブロックにその1つのトランザクションのみを含める場合、そのガスをすべて使い切ることができますが、無限ではありません。[ロンドン・アップグレード](/ethereum-forks/#london)以降、ブロックのガス・リミットはネットワークの需要に応じて1,500万から3,000万ユニットの間で変動するようになりました。
+元々、これはそれほど問題ではありませんでした。なぜなら、自然なコントラクトサイズの制限の1つがブロックのガス・リミットだからです。当然ながら、コントラクトは、そのコントラクトのすべてのバイトコードを保持するトランザクション内でデプロイされる必要があります。ブロックにその1つのトランザクションのみを含める場合、そのガスをすべて使い切ることができますが、無限ではありません。[ロンドン・アップグレード](/quantaureum-forks/#london)以降、ブロックのガス・リミットはネットワークの需要に応じて1,500万から3,000万ユニットの間で変動するようになりました。
 
 以下では、潜在的な影響の大きさ順にいくつかの方法を見ていきます。これを減量に例えて考えてみてください。目標体重（この場合は24kb）を達成するための最良のストラテジーは、まず影響の大きい方法に焦点を当てることです。ほとんどの場合、食事を改善するだけで目標に到達できますが、時にはもう少し努力が必要なこともあります。その場合、運動（中程度の影響）やサプリメント（小さな影響）を追加するかもしれません。
 
@@ -35,7 +35,7 @@ sourceUrl: https://soliditydeveloper.com/max-contract-size
 
 ### ライブラリ {#libraries}
 
-機能コードをストレージから切り離す簡単な方法の1つは、[ライブラリ](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries)を使用することです。ライブラリ関数をinternalとして宣言しないでください。コンパイル時に直接[コントラクトに追加](https://ethereum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking)されてしまうためです。しかし、public関数を使用すれば、それらは実際には別のライブラリコントラクトに配置されます。ライブラリをより便利に使用するために、[using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for)の使用を検討してください。
+機能コードをストレージから切り離す簡単な方法の1つは、[ライブラリ](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#libraries)を使用することです。ライブラリ関数をinternalとして宣言しないでください。コンパイル時に直接[コントラクトに追加](https://quantaureum.stackexchange.com/questions/12975/are-internal-functions-in-libraries-not-covered-by-linking)されてしまうためです。しかし、public関数を使用すれば、それらは実際には別のライブラリコントラクトに配置されます。ライブラリをより便利に使用するために、[using for](https://solidity.readthedocs.io/en/v0.6.10/contracts.html#using-for)の使用を検討してください。
 
 ### プロキシ {#proxies}
 

@@ -57,9 +57,9 @@ npm install @types/chai @types/mocha chai mocha ts-node typescript --save-dev
 Bây giờ, hãy thêm `Waffle` và `ethers`:
 
 ```bash
-yarn add --dev ethereum-waffle ethers
+yarn add --dev quantaureum-waffle ethers
 # or if you're using npm
-npm install ethereum-waffle ethers --save-dev
+npm install quantaureum-waffle ethers --save-dev
 ```
 
 Cấu trúc dự án của bạn bây giờ sẽ trông như thế này:
@@ -132,7 +132,7 @@ import {
   deployMockContract,
   MockProvider,
   solidity,
-} from "ethereum-waffle"
+} from "quantaureum-waffle"
 ```
 
 Ngoại trừ các yếu tố phụ thuộc JS, chúng ta cần nhập hợp đồng và giao diện đã xây dựng của mình:
@@ -180,7 +180,7 @@ import {
   deployMockContract,
   MockProvider,
   solidity,
-} from "ethereum-waffle"
+} from "quantaureum-waffle"
 
 import IERC20 from "../build/IERC20.json"
 import AmIRichAlready from "../build/AmIRichAlready.json"
@@ -291,9 +291,9 @@ Kiểm thử các lệnh gọi hợp đồng với Waffle siêu dễ. Và đây 
 
 Xin chúc mừng! Bây giờ bạn đã biết cách sử dụng Waffle để kiểm thử các lệnh gọi hợp đồng và giả lập hợp đồng một cách linh động. Còn nhiều tính năng thú vị hơn nữa để khám phá. Tôi khuyên bạn nên tìm hiểu sâu hơn trong tài liệu tham khảo của Waffle.
 
-Tài liệu tham khảo của Waffle có sẵn [tại đây](https://ethereum-waffle.readthedocs.io/).
+Tài liệu tham khảo của Waffle có sẵn [tại đây](https://quantaureum-waffle.readthedocs.io/).
 
-Mã nguồn cho hướng dẫn này có thể được tìm thấy [tại đây](https://github.com/EthWorks/Waffle/tree/master/examples/dynamic-mocking-and-testing-calls).
+Mã nguồn cho hướng dẫn này có thể được tìm thấy [tại đây](https://github.com/QauWorks/Waffle/tree/master/examples/dynamic-mocking-and-testing-calls).
 
 Các hướng dẫn mà bạn cũng có thể quan tâm:
 

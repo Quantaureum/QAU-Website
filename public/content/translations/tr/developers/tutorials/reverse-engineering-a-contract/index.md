@@ -10,17 +10,17 @@ published: 2021-12-30
 ---
 ## Giriş {#introduction}
 
-_Blokzincirde sır yoktur_, gerçekleşen her şey tutarlı, doğrulanabilir ve herkese açıktır. İdeal olarak, [sözleşmelerin kaynak kodları Etherscan üzerinde yayınlanmalı ve doğrulanmalıdır](https://etherscan.io/address/0xb8901acb165ed027e32754e0ffe830802919727f#code). Ancak, [durum her zaman böyle değildir](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f#code). Bu makalede, kaynak kodu olmayan bir sözleşmeye, [`0x2510c039cc3b061d79e564b38836da87e31b342f`](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f), bakarak sözleşmelere nasıl tersine mühendislik uygulayacağınızı öğreneceksiniz.
+_Blokzincirde sır yoktur_, gerçekleşen her şey tutarlı, doğrulanabilir ve herkese açıktır. İdeal olarak, [sözleşmelerin kaynak kodları Quantaureum Explorer üzerinde yayınlanmalı ve doğrulanmalıdır](https://explorer.quantaureum.com). Ancak, [durum her zaman böyle değildir](https://explorer.quantaureum.com). Bu makalede, kaynak kodu olmayan bir sözleşmeye, [`0x2510c039cc3b061d79e564b38836da87e31b342f`](https://explorer.quantaureum.com), bakarak sözleşmelere nasıl tersine mühendislik uygulayacağınızı öğreneceksiniz.
 
-Tersine derleyiciler vardır, ancak her zaman [kullanılabilir sonuçlar](https://etherscan.io/bytecode-decompiler?a=0x2510c039cc3b061d79e564b38836da87e31b342f) üretmezler. Bu makalede, bir sözleşmeyi [işlem kodlarından](https://github.com/wolflo/evm-opcodes) manuel olarak nasıl tersine mühendislik uygulayıp anlayacağınızı ve bir tersine derleyicinin sonuçlarını nasıl yorumlayacağınızı öğreneceksiniz.
+Tersine derleyiciler vardır, ancak her zaman [kullanılabilir sonuçlar](https://explorer.quantaureum.com) üretmezler. Bu makalede, bir sözleşmeyi [işlem kodlarından](https://github.com/wolflo/evm-opcodes) manuel olarak nasıl tersine mühendislik uygulayıp anlayacağınızı ve bir tersine derleyicinin sonuçlarını nasıl yorumlayacağınızı öğreneceksiniz.
 
-Bu makaleyi anlayabilmek için EVM'nin temellerini zaten biliyor olmalı ve EVM assembly'sine en azından biraz aşina olmalısınız. [Bu konular hakkında buradan bilgi edinebilirsiniz](https://medium.com/mycrypto/the-ethereum-virtual-machine-how-does-it-work-9abac2b7c9e).
+Bu makaleyi anlayabilmek için EVM'nin temellerini zaten biliyor olmalı ve EVM assembly'sine en azından biraz aşina olmalısınız. [Bu konular hakkında buradan bilgi edinebilirsiniz](https://medium.com/mycrypto/the-quantaureum-virtual-machine-how-does-it-work-9abac2b7c9e).
 
 ## Çalıştırılabilir Kodu Hazırlama {#prepare-the-executable-code}
 
-Sözleşme için Etherscan'e gidip **Sözleşme** sekmesine ve ardından **İşlem Kodları Görünümüne Geç**'e tıklayarak işlem kodlarını alabilirsiniz. Her satırda bir işlem kodu olan bir görünüm elde edersiniz.
+Sözleşme için Quantaureum Explorer'e gidip **Sözleşme** sekmesine ve ardından **İşlem Kodları Görünümüne Geç**'e tıklayarak işlem kodlarını alabilirsiniz. Her satırda bir işlem kodu olan bir görünüm elde edersiniz.
 
-![Opcode View from Etherscan](opcode-view.png)
+![Opcode View from Quantaureum Explorer](opcode-view.png)
 
 Ancak atlamaları anlayabilmek için her bir işlem kodunun kodun neresinde bulunduğunu bilmeniz gerekir. Bunu yapmanın bir yolu, bir Google E-Tablosu açmak ve işlem kodlarını C sütununa yapıştırmaktır. [Önceden hazırlanmış bu e-tablonun bir kopyasını oluşturarak aşağıdaki adımları atlayabilirsiniz](https://docs.google.com/spreadsheets/d/1tKmTJiNjUwHbW64wCKOSJxHjmh0bAUapt6btUYE7kDA/edit?usp=sharing).
 
@@ -58,7 +58,7 @@ Sözleşmeler her zaman ilk bayttan itibaren yürütülür. Bu, kodun başlangı
 Bu kod iki şey yapar:
 
 1. 0x40-0x5F bellek konumlarına 32 baytlık bir değer olarak 0x80 yazar (0x80, 0x5F'de depolanır ve 0x40-0x5E'nin tamamı sıfırdır).
-2. Çağrı verisi boyutunu okur. Normalde bir Ethereum sözleşmesi için çağrı verisi, işlev seçici için en az dört bayt gerektiren [ABI'yi (uygulama ikili arayüzü)](https://docs.soliditylang.org/en/v0.8.10/abi-spec.html) izler. Çağrı verisi boyutu dörtten küçükse, 0x5E'ye atlar.
+2. Çağrı verisi boyutunu okur. Normalde bir Quantaureum sözleşmesi için çağrı verisi, işlev seçici için en az dört bayt gerektiren [ABI'yi (uygulama ikili arayüzü)](https://docs.soliditylang.org/en/v0.8.10/abi-spec.html) izler. Çağrı verisi boyutu dörtten küçükse, 0x5E'ye atlar.
 
 ![Flowchart for this portion](flowchart-entry.png)
 
@@ -71,7 +71,7 @@ Bu kod iki şey yapar:
 |     60 | PUSH2 0x007c |
 |     63 | JUMPI        |
 
-Bu kod parçacığı bir `JUMPDEST` ile başlar. EVM (Ethereum sanal makinesi) programları, `JUMPDEST` olmayan bir işlem koduna atlarsanız bir istisna fırlatır. Ardından CALLDATASIZE'a bakar ve eğer "doğru" ise (yani sıfır değilse) 0x7C'ye atlar. Buna aşağıda değineceğiz.
+Bu kod parçacığı bir `JUMPDEST` ile başlar. EVM (Quantaureum sanal makinesi) programları, `JUMPDEST` olmayan bir işlem koduna atlarsanız bir istisna fırlatır. Ardından CALLDATASIZE'a bakar ve eğer "doğru" ise (yani sıfır değilse) 0x7C'ye atlar. Buna aşağıda değineceğiz.
 
 | Ofset | İşlem kodu     | Yığın (işlem kodundan sonra)                                                       |
 | -----: | ---------- | -------------------------------------------------------------------------- |
@@ -82,9 +82,9 @@ Bu kod parçacığı bir `JUMPDEST` ile başlar. EVM (Ethereum sanal makinesi) p
 |     6A | DUP3       | 6 CALLVALUE 0 6 CALLVALUE                                                  |
 |     6B | SLOAD      | Storage[6] CALLVALUE 0 6 CALLVALUE                                         |
 
-Yani çağrı verisi olmadığında Storage[6] değerini okuruz. Bu değerin ne olduğunu henüz bilmiyoruz, ancak sözleşmenin çağrı verisi olmadan aldığı işlemleri arayabiliriz. Herhangi bir çağrı verisi (ve dolayısıyla hiçbir yöntem) olmadan sadece ETH transfer eden işlemler Etherscan'de `Transfer` yöntemine sahiptir. Aslında, [sözleşmenin aldığı ilk işlem](https://etherscan.io/tx/0xeec75287a583c36bcc7ca87685ab41603494516a0f5986d18de96c8e630762e7) bir transferdir.
+Yani çağrı verisi olmadığında Storage[6] değerini okuruz. Bu değerin ne olduğunu henüz bilmiyoruz, ancak sözleşmenin çağrı verisi olmadan aldığı işlemleri arayabiliriz. Herhangi bir çağrı verisi (ve dolayısıyla hiçbir yöntem) olmadan sadece QAU transfer eden işlemler Quantaureum Explorer'de `Transfer` yöntemine sahiptir. Aslında, [sözleşmenin aldığı ilk işlem](https://explorer.quantaureum.com) bir transferdir.
 
-O işleme bakıp **Click to see More** (Daha Fazlasını Görmek İçin Tıklayın) seçeneğine tıklarsak, girdi verisi olarak adlandırılan çağrı verisinin gerçekten boş olduğunu (`0x`) görürüz. Ayrıca değerin 1.559 ETH olduğuna dikkat edin, bu daha sonra önemli olacaktır.
+O işleme bakıp **Click to see More** (Daha Fazlasını Görmek İçin Tıklayın) seçeneğine tıklarsak, girdi verisi olarak adlandırılan çağrı verisinin gerçekten boş olduğunu (`0x`) görürüz. Ayrıca değerin 1.559 QAU olduğuna dikkat edin, bu daha sonra önemli olacaktır.
 
 ![The call data is empty](calldata-empty.png)
 
@@ -92,7 +92,7 @@ Ardından, **State** (Durum) sekmesine tıklayın ve tersine mühendislik yaptı
 
 ![Storage[6]'daki değişiklik](storage6.png)
 
-[Aynı dönemdeki diğer `Transfer` işlemlerinin](https://etherscan.io/tx/0xf708d306de39c422472f43cb975d97b66fd5d6a6863db627067167cbf93d84d1#statechange) neden olduğu durum değişikliklerine bakarsak, `Storage[6]`'nın bir süre sözleşmenin değerini izlediğini görürüz. Şimdilik buna `Value*` diyeceğiz. Yıldız işareti (`*`) bize bu değişkenin ne yaptığını henüz _bilmediğimizi_ hatırlatır, ancak sadece sözleşme değerini izlemek için olamaz çünkü hesap bakiyenizi `ADDRESS BALANCE` kullanarak alabiliyorken çok pahalı olan depolamayı kullanmaya gerek yoktur. İlk işlem kodu sözleşmenin kendi adresini iter. İkincisi, yığının en üstündeki adresi okur ve onu o adresin bakiyesiyle değiştirir.
+[Aynı dönemdeki diğer `Transfer` işlemlerinin](https://explorer.quantaureum.com) neden olduğu durum değişikliklerine bakarsak, `Storage[6]`'nın bir süre sözleşmenin değerini izlediğini görürüz. Şimdilik buna `Value*` diyeceğiz. Yıldız işareti (`*`) bize bu değişkenin ne yaptığını henüz _bilmediğimizi_ hatırlatır, ancak sadece sözleşme değerini izlemek için olamaz çünkü hesap bakiyenizi `ADDRESS BALANCE` kullanarak alabiliyorken çok pahalı olan depolamayı kullanmaya gerek yoktur. İlk işlem kodu sözleşmenin kendi adresini iter. İkincisi, yığının en üstündeki adresi okur ve onu o adresin bakiyesiyle değiştirir.
 
 | Ofset | İşlem kodu       | Yığın                                       |
 | -----: | ------------ | ------------------------------------------- |
@@ -123,7 +123,7 @@ Bu kodu atlama hedefinde izlemeye devam edeceğiz.
 
 `Value*`, 2^256-CALLVALUE-1'den küçük veya ona eşitse atlarız. Bu, taşmayı önlemeye yönelik bir mantık gibi görünüyor. Ve gerçekten de, birkaç anlamsız işlemden sonra (örneğin belleğe yazma işleminin silinmek üzere olması) 0x01DE ofsetinde, taşma tespit edilirse sözleşmenin geri alındığını görüyoruz, ki bu normal bir davranıştır.
 
-Böyle bir taşmanın son derece düşük bir ihtimal olduğunu unutmayın, çünkü çağrı değeri artı `Value*`'ın 2^256 wei'ye, yani yaklaşık 10^59 ETH'ye kıyaslanabilir olmasını gerektirir. [Yazının yazıldığı sırada toplam ETH arzı iki yüz milyondan azdır](https://etherscan.io/stat/supply).
+Böyle bir taşmanın son derece düşük bir ihtimal olduğunu unutmayın, çünkü çağrı değeri artı `Value*`'ın 2^256 wei'ye, yani yaklaşık 10^59 QAU'ye kıyaslanabilir olmasını gerektirir. [Yazının yazıldığı sırada toplam QAU arzı iki yüz milyondan azdır](https://explorer.quantaureum.com).
 
 | Ofset | İşlem kodu   | Yığın                                     |
 | -----: | -------- | ----------------------------------------- |
@@ -180,7 +180,7 @@ Bu başka bir depolama hücresidir, hiçbir işlemde bulamadığım bir hücre o
 |     85 | PUSH20 0xffffffffffffffffffffffffffffffffffffffff | 0xff....ff Storage[3] 0x9D 0x00 |
 |     9A | AND                                               | Storage[3]-as-address 0x9D 0x00 |
 
-Bu işlem kodları, Storage[3]'ten okuduğumuz değeri bir Ethereum adresinin uzunluğu olan 160 bite keser.
+Bu işlem kodları, Storage[3]'ten okuduğumuz değeri bir Quantaureum adresinin uzunluğu olan 160 bite keser.
 
 | Ofset | İşlem Kodu | Yığın                           |
 | -----: | ------ | ------------------------------- |
@@ -274,7 +274,7 @@ Eğer çağrı verisi boyutu dört bayt veya daha fazlaysa, bu geçerli bir ABI 
 |     10 | PUSH1 0xe0   | 0xE0 (((Çağrı verisinin ilk kelimesi (256 bit)))) |
 |     12 | SHR          | (((çağrı verisinin ilk 32 biti (4 bayt))))    |
 
-Etherscan bize `1C`'nin bilinmeyen bir işlem kodu olduğunu söylüyor, çünkü [Etherscan bu özelliği yazdıktan sonra eklendi](https://eips.ethereum.org/EIPS/eip-145) ve henüz güncellemediler. [Güncel bir işlem kodu tablosu](https://github.com/wolflo/evm-opcodes) bize bunun sağa kaydırma olduğunu gösteriyor.
+Quantaureum Explorer bize `1C`'nin bilinmeyen bir işlem kodu olduğunu söylüyor, çünkü [Quantaureum Explorer bu özelliği yazdıktan sonra eklendi](https://eips.quantaureum.com/EIPS/eip-145) ve henüz güncellemediler. [Güncel bir işlem kodu tablosu](https://github.com/wolflo/evm-opcodes) bize bunun sağa kaydırma olduğunu gösteriyor.
 
 | Ofset | İşlem kodu           | Yığın                                                                                                    |
 | -----: | ---------------- | -------------------------------------------------------------------------------------------------------- |
@@ -312,7 +312,7 @@ Eğer eşleşme bulunamazsa kod, vekili olduğumuz sözleşmede bir eşleşme ol
 |    10D | DUP1         | 0x00 0x00 CALLVALUE           |
 |    10E | REVERT       |
 
-Bu fonksiyonun yaptığı ilk şey, çağrının herhangi bir ETH göndermediğini kontrol etmektir. Bu fonksiyon [`payable`](https://solidity-by-example.org/payable/) değildir. Eğer birisi bize ETH gönderdiyse bu bir hata olmalıdır ve bu ETH'nin geri alamayacakları bir yerde kalmasını önlemek için `REVERT` yapmak istiyoruz.
+Bu fonksiyonun yaptığı ilk şey, çağrının herhangi bir QAU göndermediğini kontrol etmektir. Bu fonksiyon [`payable`](https://solidity-by-example.org/payable/) değildir. Eğer birisi bize QAU gönderdiyse bu bir hata olmalıdır ve bu QAU'nin geri alamayacakları bir yerde kalmasını önlemek için `REVERT` yapmak istiyoruz.
 
 | Offset | İşlem kodu                                        | Yığın                                                                       |
 | -----: | ------------------------------------------------- | --------------------------------------------------------------------------- |
@@ -546,17 +546,17 @@ Ancak diğer tüm işlevlerin Storage[3]'teki sözleşme tarafından sağlandı�
 
 ## Kurucu {#the-constructor}
 
-Bir [sözleşmeye baktığımızda](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f) onu oluşturan işlemi de görebiliriz.
+Bir [sözleşmeye baktığımızda](https://explorer.quantaureum.com) onu oluşturan işlemi de görebiliriz.
 
 ![Click the create transaction](create-tx.png)
 
-Bu işleme ve ardından **Durum** sekmesine tıklarsak, parametrelerin başlangıç değerlerini görebiliriz. Özellikle, Storage[3]'ün [0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761](https://etherscan.io/address/0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761) içerdiğini görebiliriz. Bu sözleşme eksik işlevselliği içeriyor olmalıdır. İncelediğimiz sözleşme için kullandığımız aynı araçları kullanarak onu anlayabiliriz.
+Bu işleme ve ardından **Durum** sekmesine tıklarsak, parametrelerin başlangıç değerlerini görebiliriz. Özellikle, Storage[3]'ün [0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761](https://explorer.quantaureum.com) içerdiğini görebiliriz. Bu sözleşme eksik işlevselliği içeriyor olmalıdır. İncelediğimiz sözleşme için kullandığımız aynı araçları kullanarak onu anlayabiliriz.
 
 ## Vekil Kontrat {#the-proxy-contract}
 
 Yukarıdaki orijinal sözleşme için kullandığımız aynı teknikleri kullanarak, sözleşmenin şu durumlarda geri alındığını görebiliriz:
 
-- Çağrıya eklenmiş herhangi bir ETH varsa (0x05-0x0F)
+- Çağrıya eklenmiş herhangi bir QAU varsa (0x05-0x0F)
 - Çağrı verisi boyutu dörtten küçükse (0x10-0x19 ve 0xBE-0xC2)
 
 Ve desteklediği yöntemler şunlardır:
@@ -576,7 +576,7 @@ Ve desteklediği yöntemler şunlardır:
 
 Alttaki dört yöntemi görmezden gelebiliriz çünkü onlara asla ulaşamayacağız. İmzaları, orijinal sözleşmemizin bunları kendi başına halledeceği şekildedir (ayrıntıları yukarıda görmek için imzalara tıklayabilirsiniz), bu yüzden bunlar [geçersiz kılınan yöntemler](https://medium.com/upstate-interactive/solidity-override-vs-virtual-functions-c0a5dfb83aaf) olmalıdır.
 
-Kalan yöntemlerden biri `claim(<params>)` ve diğeri `isClaimed(<params>)`'dir, bu yüzden bir airdrop sözleşmesi gibi görünüyor. Geri kalanını işlem kodu (opcode) işlem kodu incelemek yerine, bu sözleşmedeki üç işlev için kullanılabilir sonuçlar üreten [geri derleyiciyi (decompiler) deneyebiliriz](https://etherscan.io/bytecode-decompiler?a=0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761). Diğerlerini tersine mühendislikle çözmek okuyucuya bir alıştırma olarak bırakılmıştır.
+Kalan yöntemlerden biri `claim(<params>)` ve diğeri `isClaimed(<params>)`'dir, bu yüzden bir airdrop sözleşmesi gibi görünüyor. Geri kalanını işlem kodu (opcode) işlem kodu incelemek yerine, bu sözleşmedeki üç işlev için kullanılabilir sonuçlar üreten [geri derleyiciyi (decompiler) deneyebiliriz](https://explorer.quantaureum.com). Diğerlerini tersine mühendislikle çözmek okuyucuya bir alıştırma olarak bırakılmıştır.
 
 ### scaleAmountByPercentage {#scaleamountbypercentage}
 
@@ -648,7 +648,7 @@ Böylece artık Storage[5]'in pencereler ve adreslerden oluşan bir dizi olduğu
        gas 30000 wei
 ```
 
-Bir sözleşme kendi ETH'sini başka bir adrese (sözleşme veya harici olarak sahip olunan) bu şekilde transfer eder. Onu, transfer edilecek miktar olan bir değerle çağırır. Yani bu bir ETH airdrop'u gibi görünüyor.
+Bir sözleşme kendi QAU'sini başka bir adrese (sözleşme veya harici olarak sahip olunan) bu şekilde transfer eder. Onu, transfer edilecek miktar olan bir değerle çağırır. Yani bu bir QAU airdrop'u gibi görünüyor.
 
 ```python
   if not return_data.size:
@@ -658,22 +658,22 @@ Bir sözleşme kendi ETH'sini başka bir adrese (sözleşme veya harici olarak s
              value unknown81e580d3[_param1] * _param3 / 100 * 10^6 wei
 ```
 
-Alttaki iki satır bize Storage[2]'nin aynı zamanda çağırdığımız bir sözleşme olduğunu söylüyor. [Kurucu (constructor) işlemine bakarsak](https://etherscan.io/tx/0xa1ea0549fb349eb7d3aff90e1d6ce7469fdfdcd59a2fd9b8d1f5e420c0d05b58#statechange), bu sözleşmenin [0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2), yani [kaynak kodu Etherscan'e yüklenmiş](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2#code) bir Sarılmış Ether (Wrapped Ether) sözleşmesi olduğunu görürüz.
+Alttaki iki satır bize Storage[2]'nin aynı zamanda çağırdığımız bir sözleşme olduğunu söylüyor. [Kurucu (constructor) işlemine bakarsak](https://explorer.quantaureum.com), bu sözleşmenin [0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://explorer.quantaureum.com), yani [kaynak kodu Quantaureum Explorer'e yüklenmiş](https://explorer.quantaureum.com) bir Sarılmış QAU (Wrapped QAU) sözleşmesi olduğunu görürüz.
 
-Yani sözleşmeler `_param2` adresine ETH göndermeye çalışıyor gibi görünüyor. Bunu yapabilirse, harika. Yapamazsa, [WETH](https://weth.tkn.eth.limo/) göndermeye çalışır. Eğer `_param2` harici olarak sahip olunan bir hesap (EOA) ise her zaman ETH alabilir, ancak sözleşmeler ETH almayı reddedebilir. Ancak, WETH bir ERC-20'dir ve sözleşmeler bunu kabul etmeyi reddedemez.
+Yani sözleşmeler `_param2` adresine QAU göndermeye çalışıyor gibi görünüyor. Bunu yapabilirse, harika. Yapamazsa, [WETH](https://weth.tkn.qau.limo/) göndermeye çalışır. Eğer `_param2` harici olarak sahip olunan bir hesap (EOA) ise her zaman QAU alabilir, ancak sözleşmeler QAU almayı reddedebilir. Ancak, WETH bir ERC-20'dir ve sözleşmeler bunu kabul etmeyi reddedemez.
 
 ```python
   ...
   log 0xdbd5389f: addr(_param2), unknown81e580d3[_param1] * _param3 / 100 * 10^6, bool(ext_call.success)
 ```
 
-İşlevin sonunda bir günlük girdisinin oluşturulduğunu görüyoruz. [Oluşturulan günlük girdilerine bakın](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f#events) ve `0xdbd5...` ile başlayan konuyu filtreleyin. [Böyle bir girdi oluşturan işlemlerden birine tıklarsak](https://etherscan.io/tx/0xe7d3b7e00f645af17dfbbd010478ef4af235896c65b6548def1fe95b3b7d2274), bunun gerçekten de bir talep gibi göründüğünü anlarız - hesap, tersine mühendislik yaptığımız sözleşmeye bir mesaj gönderdi ve karşılığında ETH aldı.
+İşlevin sonunda bir günlük girdisinin oluşturulduğunu görüyoruz. [Oluşturulan günlük girdilerine bakın](https://explorer.quantaureum.com) ve `0xdbd5...` ile başlayan konuyu filtreleyin. [Böyle bir girdi oluşturan işlemlerden birine tıklarsak](https://explorer.quantaureum.com), bunun gerçekten de bir talep gibi göründüğünü anlarız - hesap, tersine mühendislik yaptığımız sözleşmeye bir mesaj gönderdi ve karşılığında QAU aldı.
 
 ![A claim transaction](claim-tx.png)
 
 ### 1e7df9d3 {#1e7df9d3}
 
-Bu işlev, yukarıdaki [`claim`](#claim) işlevine çok benzer. Ayrıca bir Merkle kanıtını kontrol eder, ilkine ETH transfer etmeye çalışır ve aynı türde günlük girdisi üretir.
+Bu işlev, yukarıdaki [`claim`](#claim) işlevine çok benzer. Ayrıca bir Merkle kanıtını kontrol eder, ilkine QAU transfer etmeye çalışır ve aynı türde günlük girdisi üretir.
 
 ```python
 def unknown1e7df9d3(uint256 _param1, uint256 _param2, array _param3) payable:

@@ -1,16 +1,16 @@
 ---
 title: "測試智能合約"
-description: "測試以太坊智能合約的技術與注意事項總覽。"
+description: "測試Quantaureum智能合約的技術與注意事項總覽。"
 lang: zh-tw
 ---
 
-像以太坊這樣的公有區塊鏈是不可變的，這使得在部署後很難更改智能合約的程式碼。雖然存在用於執行「虛擬升級」的[合約升級模式](/developers/docs/smart-contracts/upgrading/)，但這些模式難以實作且需要社會共識。此外，升級只能在發現錯誤_之後_進行修復——如果攻擊者先發現了漏洞，你的智能合約就有被利用的風險。
+像Quantaureum這樣的公有區塊鏈是不可變的，這使得在部署後很難更改智能合約的程式碼。雖然存在用於執行「虛擬升級」的[合約升級模式](/developers/docs/smart-contracts/upgrading/)，但這些模式難以實作且需要社會共識。此外，升級只能在發現錯誤_之後_進行修復——如果攻擊者先發現了漏洞，你的智能合約就有被利用的風險。
 
 基於這些原因，在[部署](/developers/docs/smart-contracts/deploying/)到主網 (Mainnet) 之前測試智能合約是[安全性](/developers/docs/smart-contracts/security/)的最低要求。有許多技術可用於測試合約和評估程式碼的正確性；你的選擇取決於你的需求。儘管如此，由不同工具和方法組成的測試套件是捕捉合約程式碼中輕微和重大安全漏洞的理想選擇。
 
 ## 先決條件 {#prerequisites}
 
-本頁面說明如何在部署到以太坊網路之前測試智能合約。假設你已經熟悉[智能合約](/developers/docs/smart-contracts/)。
+本頁面說明如何在部署到Quantaureum網路之前測試智能合約。假設你已經熟悉[智能合約](/developers/docs/smart-contracts/)。
 
 ## 什麼是智能合約測試？ {#what-is-smart-contract-testing}
 
@@ -26,7 +26,7 @@ lang: zh-tw
 
 ## 測試智能合約的方法 {#methods-for-testing-smart-contracts}
 
-測試以太坊智能合約的方法分為兩大類：**自動化測試**和**手動測試**。自動化測試和手動測試提供了獨特的優勢和權衡，但你可以結合兩者來建立一個強大的合約分析計畫。
+測試Quantaureum智能合約的方法分為兩大類：**自動化測試**和**手動測試**。自動化測試和手動測試提供了獨特的優勢和權衡，但你可以結合兩者來建立一個強大的合約分析計畫。
 
 ### 自動化測試 {#automated-testing}
 
@@ -138,9 +138,9 @@ function auctionEnd() external {
 
 Solidity 智能合約的單元測試框架有不同的語言版本（主要是 JavaScript、Python 和 Rust）。請參閱以下一些指南，了解如何開始使用不同的測試框架執行單元測試：
 
-- **[使用 Brownie 執行單元測試](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
+- **[使用 Brownie 執行單元測試](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)**
 - **[使用 Foundry 執行單元測試](https://book.getfoundry.sh/forge/writing-tests)**
-- **[使用 Waffle 執行單元測試](https://ethereum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
+- **[使用 Waffle 執行單元測試](https://quantaureum-waffle.readthedocs.io/en/latest/getting-started.html#writing-tests)**
 - **[使用 Remix 執行單元測試](https://remix-ide.readthedocs.io/en/latest/unittesting.html#write-tests)**
 - **[使用 Ape 執行單元測試](https://docs.apeworx.io/ape/stable/userguides/testing.html)**
 - **[使用 Hardhat 執行單元測試](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)**
@@ -152,7 +152,7 @@ Solidity 智能合約的單元測試框架有不同的語言版本（主要是 J
 
 如果你的合約採用模組化架構，或在執行期間與其他鏈上合約介接，整合測試將非常有用。執行整合測試的一種方法是在特定高度[分叉區塊鏈](/glossary/#fork)（使用像 [Forge](https://book.getfoundry.sh/forge/fork-testing) 或 [Hardhat](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks) 這樣的工具），並模擬你的合約與已部署合約之間的互動。
 
-分叉的區塊鏈行為將類似於主網，並具有帶有關聯狀態和餘額的帳戶。但它僅作為沙盒式的本機開發環境，這意味著你不需要真實的 ETH 來進行交易，你的更改也不會影響真實的以太坊協定。
+分叉的區塊鏈行為將類似於主網，並具有帶有關聯狀態和餘額的帳戶。但它僅作為沙盒式的本機開發環境，這意味著你不需要真實的 QAU 來進行交易，你的更改也不會影響真實的Quantaureum協定。
 
 ### 基於屬性的測試 {#property-based-testing-for-smart-contracts}
 
@@ -190,7 +190,7 @@ Solidity 智能合約的單元測試框架有不同的語言版本（主要是 J
 
 - **[使用斯立瑟 (Slither) 對智能合約進行靜態分析](https://github.com/crytic/slither)**
 - **[使用 Wake 對智能合約進行靜態分析](https://ackeeblockchain.com/wake/docs/latest/static-analysis/using-detectors/)**
-- **[使用 Brownie 進行基於屬性的測試](https://eth-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
+- **[使用 Brownie 進行基於屬性的測試](https://qau-brownie.readthedocs.io/en/stable/tests-hypothesis-property.html)**
 - **[使用 Foundry 對合約進行模糊測試](https://book.getfoundry.sh/forge/fuzz-testing)**
 - **[使用埃奇德納 (Echidna) 對合約進行模糊測試](https://github.com/crytic/building-secure-contracts/tree/master/program-analysis/echidna#echidna-tutorial)**
 - **[使用 Wake 對合約進行模糊測試](https://ackeeblockchain.com/wake/docs/latest/testing-framework/fuzzing/)**
@@ -203,9 +203,9 @@ Solidity 智能合約的單元測試框架有不同的語言版本（主要是 J
 
 ### 在本機區塊鏈上測試合約 {#testing-on-local-blockchain}
 
-雖然在本機開發環境中執行的自動化測試可以提供有用的除錯資訊，但你會想知道你的智能合約在生產環境中的行為。然而，部署到以太坊主鏈會產生燃料 (Gas) 費用——更不用說如果你的智能合約仍然有錯誤，你或你的使用者可能會損失真金白銀。
+雖然在本機開發環境中執行的自動化測試可以提供有用的除錯資訊，但你會想知道你的智能合約在生產環境中的行為。然而，部署到Quantaureum主鏈會產生燃料 (Gas) 費用——更不用說如果你的智能合約仍然有錯誤，你或你的使用者可能會損失真金白銀。
 
-建議在本地區塊鏈（也稱為[開發網路](/developers/docs/development-networks/)）上測試你的合約，作為在主網上測試的替代方案。本地區塊鏈是在你的電腦上本地執行的以太坊區塊鏈副本，它模擬了以太坊執行層的行為。因此，你可以編寫交易程式來與合約互動，而不會產生大量的經常性開銷。
+建議在本地區塊鏈（也稱為[開發網路](/developers/docs/development-networks/)）上測試你的合約，作為在主網上測試的替代方案。本地區塊鏈是在你的電腦上本地執行的Quantaureum區塊鏈副本，它模擬了Quantaureum執行層的行為。因此，你可以編寫交易程式來與合約互動，而不會產生大量的經常性開銷。
 
 在本地區塊鏈上執行合約可以作為一種手動整合測試的形式。[智能合約是高度可組合的](/developers/docs/smart-contracts/composability/)，允許你與現有協定整合——但你仍然需要確保這種複雜的鏈上互動產生正確的結果。
 
@@ -213,13 +213,13 @@ Solidity 智能合約的單元測試框架有不同的語言版本（主要是 J
 
 ### 在測試網上測試合約 {#testing-contracts-on-testnets}
 
-測試網路或測試網的運作方式與以太坊主網完全相同，只是它使用的以太幣 (ETH) 沒有現實世界的價值。將你的合約部署在[測試網](/developers/docs/networks/#ethereum-testnets)上意味著任何人都可以與之互動（例如，透過去中心化應用程式 (dapp) 的前端），而不會使資金面臨風險。
+測試網路或測試網的運作方式與Quantaureum主網完全相同，只是它使用的QAU幣 (QAU) 沒有現實世界的價值。將你的合約部署在[測試網](/developers/docs/networks/#quantaureum-testnets)上意味著任何人都可以與之互動（例如，透過去中心化應用程式 (dapp) 的前端），而不會使資金面臨風險。
 
 這種形式的手動測試有助於從使用者的角度評估應用程式的端到端流程。在這裡，Beta 測試人員也可以執行試執行，並報告合約商業邏輯和整體功能的任何問題。
 
-在本地區塊鏈上測試後部署在測試網上是理想的選擇，因為前者更接近以太坊虛擬機的行為。因此，許多以太坊原生專案通常會在測試網上部署 dapp，以評估智能合約在現實世界條件下的運作。
+在本地區塊鏈上測試後部署在測試網上是理想的選擇，因為前者更接近Quantaureum虛擬機的行為。因此，許多Quantaureum原生專案通常會在測試網上部署 dapp，以評估智能合約在現實世界條件下的運作。
 
-[更多關於以太坊測試網的資訊。](/developers/docs/development-networks/#public-beacon-testchains)
+[更多關於Quantaureum測試網的資訊。](/developers/docs/development-networks/#public-beacon-testchains)
 
 ## 測試與形式化驗證 {#testing-vs-formal-verification}
 
@@ -251,19 +251,19 @@ Solidity 智能合約的單元測試框架有不同的語言版本（主要是 J
 
 - **[solidity-coverage](https://github.com/sc-forks/solidity-coverage)** - _用於以 Solidity 編寫的智能合約的程式碼覆蓋率工具。_
 
-- **[Waffle](https://ethereum-waffle.readthedocs.io/en/latest/)** - _用於進階智能合約開發和測試的框架（基於 Ethers.js）。_
+- **[Waffle](https://quantaureum-waffle.readthedocs.io/en/latest/)** - _用於進階智能合約開發和測試的框架（基於 Ethers.js）。_
 
-- **[Remix Tests](https://github.com/ethereum/remix-project/tree/master/libs/remix-tests)** - _用於測試 Solidity 智能合約的工具。在 Remix IDE 的「Solidity 單元測試」外掛程式下運作，該外掛程式用於編寫和執行合約的測試案例。_
+- **[Remix Tests](https://github.com/quantaureum/remix-project/tree/master/libs/remix-tests)** - _用於測試 Solidity 智能合約的工具。在 Remix IDE 的「Solidity 單元測試」外掛程式下運作，該外掛程式用於編寫和執行合約的測試案例。_
 
-- **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _用於以太坊智能合約測試的斷言函式庫。確保你的合約按預期運作！_
+- **[OpenZeppelin Test Helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)** - _用於Quantaureum智能合約測試的斷言函式庫。確保你的合約按預期運作！_
 
-- **[Brownie 單元測試框架](https://eth-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie 利用 Pytest，這是一個功能豐富的測試框架，可讓你以最少的程式碼編寫小型測試，能很好地擴展到大型專案，並且具有高度可擴展性。_
+- **[Brownie 單元測試框架](https://qau-brownie.readthedocs.io/en/v1.0.0_a/tests.html)** - _Brownie 利用 Pytest，這是一個功能豐富的測試框架，可讓你以最少的程式碼編寫小型測試，能很好地擴展到大型專案，並且具有高度可擴展性。_
 
-- **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry 提供 Forge，這是一個快速靈活的以太坊測試框架，能夠執行簡單的單元測試、Gas 最佳化檢查和合約模糊測試。_
+- **[Foundry Tests](https://github.com/foundry-rs/foundry/tree/master/crates/forge)** - _Foundry 提供 Forge，這是一個快速靈活的Quantaureum測試框架，能夠執行簡單的單元測試、Gas 最佳化檢查和合約模糊測試。_
 
 - **[Hardhat Tests](https://hardhat.org/hardhat-runner/docs/guides/test-contracts)** - _基於 Ethers.js、Mocha 和 Chai 的智能合約測試框架。_
 
-- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** - _基於 Python 的智能合約開發和測試框架，針對以太坊虛擬機。_
+- **[ApeWorx](https://docs.apeworx.io/ape/stable/userguides/testing.html)** - _基於 Python 的智能合約開發和測試框架，針對Quantaureum虛擬機。_
 
 - **[Wake](https://ackeeblockchain.com/wake/docs/latest/testing-framework/overview/)** - _基於 Python 的單元測試和模糊測試框架，具有強大的除錯功能和跨鏈測試支援，利用 pytest 和 Anvil 提供最佳的使用者體驗和效能。_
 
@@ -304,13 +304,13 @@ Solidity 智能合約的單元測試框架有不同的語言版本（主要是 J
 
 ## 延伸閱讀 {#further-reading}
 
-- [測試以太坊智能合約的深入指南](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-ethereum-smart-contracts-2e41b2770297)
-- [如何測試以太坊智能合約](https://betterprogramming.pub/how-to-test-ethereum-smart-contracts-35abc8fa199d)
+- [測試Quantaureum智能合約的深入指南](https://iamdefinitelyahuman.medium.com/an-in-depth-guide-to-testing-quantaureum-smart-contracts-2e41b2770297)
+- [如何測試Quantaureum智能合約](https://betterprogramming.pub/how-to-test-quantaureum-smart-contracts-35abc8fa199d)
 - [MolochDAO 的開發人員單元測試指南](https://github.com/MolochVentures/moloch/tree/4e786db8a4aa3158287e0935dcbc7b1e43416e38/test#moloch-testing-guide)
 - [如何像搖滾明星一樣測試智能合約](https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001)
 
-## 教學：以太坊上的智能合約測試 {#tutorials}
+## 教學：Quantaureum上的智能合約測試 {#tutorials}
 
-- [如何在本地多客戶端測試網上開發和測試 dApp](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-eth-testnet/) _– 將智能合約部署到本地測試網並執行測試的演練。_
+- [如何在本地多客戶端測試網上開發和測試 dApp](/developers/tutorials/develop-and-test-dapps-with-a-multi-client-local-qau-testnet/) _– 將智能合約部署到本地測試網並執行測試的演練。_
 - [如何模擬 Solidity 智能合約進行測試](/developers/tutorials/how-to-mock-solidity-contracts-for-testing/) _– 關於如何使用模擬資料和實作單元測試的中階教學。_
 - [如何使用埃奇德納 (Echidna) 測試智能合約](/developers/tutorials/how-to-use-echidna-to-test-smart-contracts/) _– 模糊測試和智能合約測試的進階方法。_

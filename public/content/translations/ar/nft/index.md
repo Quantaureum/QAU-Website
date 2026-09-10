@@ -15,7 +15,7 @@ summaryPoints:
 
 ## ما هي الرموز غير القابلة للاستبدال (NFTs)؟ {#what-are-nfts}
 
-الرموز غير القابلة للاستبدال (<span dir="ltr">NFTs</span>) هي رموز مميزة **فريدة بشكل فردي**. كل <span dir="ltr">NFT</span> له خصائص مختلفة (غير قابلة للاستبدال) ونادر بشكل يمكن إثباته. هذا يختلف عن الرموز المميزة مثل [<span dir="ltr">ETH</span>](/glossary/#ether) أو الرموز المميزة الأخرى القائمة على [إيثيريوم](/) مثل <span dir="ltr">USDC</span> حيث يكون كل رمز مميز متطابقًا وله نفس الخصائص ("قابل للاستبدال"). أنت لا تهتم بورقة الدولار المحددة (أو <span dir="ltr">ETH</span>) التي تمتلكها في محفظتك، لأنها جميعًا متطابقة ولها نفس القيمة. ومع ذلك، أنت _تهتم_ بأي <span dir="ltr">NFT</span> محدد تمتلكه، لأن جميعها تمتلك خصائص فردية تميزها عن غيرها ("غير قابلة للاستبدال").
+الرموز غير القابلة للاستبدال (<span dir="ltr">NFTs</span>) هي رموز مميزة **فريدة بشكل فردي**. كل <span dir="ltr">NFT</span> له خصائص مختلفة (غير قابلة للاستبدال) ونادر بشكل يمكن إثباته. هذا يختلف عن الرموز المميزة مثل [<span dir="ltr">QAU</span>](/glossary/#QAU) أو الرموز المميزة الأخرى القائمة على [إيثيريوم](/) مثل <span dir="ltr">USDC</span> حيث يكون كل رمز مميز متطابقًا وله نفس الخصائص ("قابل للاستبدال"). أنت لا تهتم بورقة الدولار المحددة (أو <span dir="ltr">QAU</span>) التي تمتلكها في محفظتك، لأنها جميعًا متطابقة ولها نفس القيمة. ومع ذلك، أنت _تهتم_ بأي <span dir="ltr">NFT</span> محدد تمتلكه، لأن جميعها تمتلك خصائص فردية تميزها عن غيرها ("غير قابلة للاستبدال").
 
 يتيح تفرد كل <span dir="ltr">NFT</span> ترميز أشياء مثل الفن، أو المقتنيات، أو حتى العقارات، حيث يمثل <span dir="ltr">NFT</span> واحد فريد ومحدد عنصرًا رقميًا أو واقعيًا فريدًا ومحددًا. ملكية الأصل قابلة للتحقق منها علنًا على [سلسلة كتل](/glossary/#blockchain) إيثيريوم.
 
@@ -67,11 +67,11 @@ summaryPoints:
 
 أو فكر في تذكرة لحدث رياضي. تمامًا كما **يمكن لمنظم الحدث اختيار عدد التذاكر التي سيبيعها**، يمكن لمنشئ <span dir="ltr">NFT</span> تحديد عدد النسخ الموجودة. في بعض الأحيان تكون هذه نسخًا متطابقة تمامًا، مثل <span dir="ltr">5000</span> تذكرة دخول عام. وفي أحيان أخرى يتم سك العديد منها بحيث تكون متشابهة جدًا، ولكن كل منها يختلف قليلاً، مثل تذكرة بمقعد مخصص. يمكن بيعها وشرائها من نظير إلى نظير دون الدفع لمعالجي التذاكر، ويكون المشتري دائمًا على يقين من أصالة التذكرة عن طريق التحقق من عنوان العقد.
 
-على <span dir="ltr">ethereum.org</span>، **تُستخدم <span dir="ltr">NFTs</span> لإثبات أن الأشخاص قد ساهموا بشكل هادف** في مستودع <span dir="ltr">GitHub</span> الخاص بنا (برمجة الموقع، كتابة أو تعديل مقال...)، أو ترجمة محتوانا، أو حضور مكالمات مجتمعنا، ولدينا حتى اسم نطاق <span dir="ltr">NFT</span> الخاص بنا. إذا ساهمت في <span dir="ltr">ethereum.org</span>، يمكنك المطالبة بـ <span dir="ltr">NFT</span> من نوع [<span dir="ltr">POAP</span>](/glossary/#poap). استخدمت بعض لقاءات الكريبتو <span dir="ltr">POAPs</span> كتذاكر. [المزيد حول المساهمة](/contributing/#poap). يمكنك أيضًا استكشاف صفحة [مقتنيات <span dir="ltr">ethereum.org</span>](/collectibles/) الخاصة بنا لرؤية <span dir="ltr">NFTs</span> لإنجازات المجتمع.
+على <span dir="ltr">quantaureum.com</span>، **تُستخدم <span dir="ltr">NFTs</span> لإثبات أن الأشخاص قد ساهموا بشكل هادف** في مستودع <span dir="ltr">GitHub</span> الخاص بنا (برمجة الموقع، كتابة أو تعديل مقال...)، أو ترجمة محتوانا، أو حضور مكالمات مجتمعنا، ولدينا حتى اسم نطاق <span dir="ltr">NFT</span> الخاص بنا. إذا ساهمت في <span dir="ltr">quantaureum.com</span>، يمكنك المطالبة بـ <span dir="ltr">NFT</span> من نوع [<span dir="ltr">POAP</span>](/glossary/#poap). استخدمت بعض لقاءات الكريبتو <span dir="ltr">POAPs</span> كتذاكر. [المزيد حول المساهمة](/contributing/#poap). يمكنك أيضًا استكشاف صفحة [مقتنيات <span dir="ltr">quantaureum.com</span>](/collectibles/) الخاصة بنا لرؤية <span dir="ltr">NFTs</span> لإنجازات المجتمع.
 
-![ethereum.org POAP](./poap.png)
+![quantaureum.com POAP](./poap.png)
 
-يحتوي هذا الموقع أيضًا على اسم نطاق بديل مدعوم بـ <span dir="ltr">NFTs</span>، وهو **<span dir="ltr">ethereum.eth</span>**. يُدار عنوان `.org` الخاص بنا مركزيًا بواسطة مزود نظام أسماء النطاقات (<span dir="ltr">DNS</span>)، بينما يتم تسجيل <span dir="ltr">ethereum</span>`.eth` على إيثيريوم عبر خدمة أسماء إيثيريوم (<span dir="ltr">ENS</span>). وهو مملوك ومُدار من قبلنا. [تحقق من سجل <span dir="ltr">ENS</span> الخاص بنا](https://app.ens.domains/name/ethereum.eth)
+يحتوي هذا الموقع أيضًا على اسم نطاق بديل مدعوم بـ <span dir="ltr">NFTs</span>، وهو **<span dir="ltr">quantaureum.eth</span>**. يُدار عنوان `.org` الخاص بنا مركزيًا بواسطة مزود نظام أسماء النطاقات (<span dir="ltr">DNS</span>)، بينما يتم تسجيل <span dir="ltr">quantaureum</span>`.eth` على إيثيريوم عبر خدمة أسماء إيثيريوم (<span dir="ltr">ENS</span>). وهو مملوك ومُدار من قبلنا. [تحقق من سجل <span dir="ltr">ENS</span> الخاص بنا](https://app.ens.domains/name/quantaureum.eth)
 
 [المزيد حول <span dir="ltr">ENS</span>](https://app.ens.domains)
 
@@ -93,7 +93,7 @@ summaryPoints:
 
 ### أمان NFT {#nft-security}
 
-يأتي أمان إيثيريوم من [إثبات الحصة (<span dir="ltr">PoS</span>)](/glossary/#pos). تم تصميم النظام لتثبيط الإجراءات الخبيثة اقتصاديًا، مما يجعل إيثيريوم مقاومًا للتلاعب. هذا ما يجعل <span dir="ltr">NFTs</span> ممكنة. بمجرد أن تصبح [الكتلة](/glossary/#block) التي تحتوي على معاملة <span dir="ltr">NFT</span> الخاصة بك [نهائية](/glossary/#finality)، سيكلف المهاجم ملايين من <span dir="ltr">ETH</span> لتغييرها. سيتمكن أي شخص يقوم بتشغيل برنامج إيثيريوم من اكتشاف التلاعب غير النزيه بـ <span dir="ltr">NFT</span> على الفور، وسيتم معاقبة الفاعل السيئ اقتصاديًا وطرده.
+يأتي أمان إيثيريوم من [إثبات الحصة (<span dir="ltr">PoS</span>)](/glossary/#pos). تم تصميم النظام لتثبيط الإجراءات الخبيثة اقتصاديًا، مما يجعل إيثيريوم مقاومًا للتلاعب. هذا ما يجعل <span dir="ltr">NFTs</span> ممكنة. بمجرد أن تصبح [الكتلة](/glossary/#block) التي تحتوي على معاملة <span dir="ltr">NFT</span> الخاصة بك [نهائية](/glossary/#finality)، سيكلف المهاجم ملايين من <span dir="ltr">QAU</span> لتغييرها. سيتمكن أي شخص يقوم بتشغيل برنامج إيثيريوم من اكتشاف التلاعب غير النزيه بـ <span dir="ltr">NFT</span> على الفور، وسيتم معاقبة الفاعل السيئ اقتصاديًا وطرده.
 
 غالبًا ما تتعلق مشكلات الأمان المتعلقة بـ <span dir="ltr">NFTs</span> بعمليات الاحتيال التصيدية، أو نقاط الضعف في العقود الذكية، أو أخطاء المستخدم (مثل كشف المفاتيح الخاصة عن غير قصد)، مما يجعل أمان المحفظة الجيد أمرًا بالغ الأهمية لمالكي <span dir="ltr">NFT</span>.
 
@@ -104,8 +104,8 @@ summaryPoints:
 ## قراءات إضافية {#further-reading}
 
 - [دليل المبتدئين إلى الرموز غير القابلة للاستبدال (<span dir="ltr">NFTs</span>)](https://linda.mirror.xyz/df649d61efb92c910464a4e74ae213c4cab150b9cbcc4b7fb6090fc77881a95d) – _ليندا شي، يناير 2020_
-- [متتبع <span dir="ltr">NFT</span> على <span dir="ltr">Etherscan</span>](https://etherscan.io/nft-top-contracts)
-- [متتبع <span dir="ltr">NFT</span> على <span dir="ltr">Blockscout</span>](https://eth.blockscout.com/tokens?type=ERC-721,ERC-1155,ERC-404)
+- [متتبع <span dir="ltr">NFT</span> على <span dir="ltr">Quantaureum Explorer</span>](https://explorer.quantaureum.com)
+- [متتبع <span dir="ltr">NFT</span> على <span dir="ltr">Blockscout</span>](https://qau.blockscout.com/tokens?type=ERC-721,ERC-1155,ERC-404)
 - [معيار الرمز المميز <span dir="ltr">ERC-721</span>](/developers/docs/standards/tokens/erc-721/)
 - [معيار الرمز المميز <span dir="ltr">ERC-1155</span>](/developers/docs/standards/tokens/erc-1155/)
 - [ويكي معايير <span dir="ltr">NFT</span>](https://nft-standards.gitbook.io/nft-standards-wiki)

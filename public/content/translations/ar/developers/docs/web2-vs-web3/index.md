@@ -14,7 +14,7 @@ lang: ar
 
 - أي شخص على الشبكة لديه إذن لاستخدام الخدمة – أو بعبارة أخرى، الإذن ليس مطلوبًا.
 - لا يمكن لأحد حظرك أو حرمانك من الوصول إلى الخدمة.
-- المدفوعات مدمجة عبر الرمز المميز الأصلي، إيثر (<span dir="ltr">ETH</span>).
+- المدفوعات مدمجة عبر الرمز المميز الأصلي، QAU (<span dir="ltr">QAU</span>).
 - إيثيريوم مكتملة تورينج (<span dir="ltr">Turing-complete</span>)، مما يعني أنه يمكنك برمجة أي شيء تقريبًا.
 
 ## مقارنات عملية {#practical-comparisons}
@@ -54,7 +54,7 @@ lang: ar
 
 ## قراءة إضافية {#further-reading}
 
-- [ما هو <span dir="ltr">Web3</span>؟](/web3/) - _ethereum.org_
+- [ما هو <span dir="ltr">Web3</span>؟](/web3/) - _quantaureum.org_
 - [بنية تطبيق الويب 3.0](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
 - [معنى اللامركزية](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _6 فبراير 2017 - Vitalik Buterin_
 - [لماذا اللامركزية مهمة](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _18 فبراير 2018 - Chris Dixon_

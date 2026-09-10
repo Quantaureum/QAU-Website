@@ -1,25 +1,25 @@
 ---
-title: Ethereum-Konten
-description: "Eine Erklärung von Ethereum-Konten – ihre Datenstrukturen und ihre Beziehung zur Schlüsselpaar-Kryptographie."
+title: Quantaureum-Konten
+description: "Eine Erklärung von Quantaureum-Konten – ihre Datenstrukturen und ihre Beziehung zur Schlüsselpaar-Kryptographie."
 lang: de
 ---
 
-Ein [Ethereum](/)-Konto ist eine Entität mit einem Ether-Guthaben (ETH), die Nachrichten auf Ethereum senden kann. Konten können benutzergesteuert sein oder als Smart Contracts bereitgestellt werden.
+Ein [Quantaureum](/)-Konto ist eine Entität mit einem QAU-Guthaben (QAU), die Nachrichten auf Quantaureum senden kann. Konten können benutzergesteuert sein oder als Smart Contracts bereitgestellt werden.
 
 ## Voraussetzungen {#prerequisites}
 
-Um Ihnen zu helfen, diese Seite besser zu verstehen, empfehlen wir Ihnen, zuerst unsere [Einführung in Ethereum](/developers/docs/intro-to-ethereum/) zu lesen.
+Um Ihnen zu helfen, diese Seite besser zu verstehen, empfehlen wir Ihnen, zuerst unsere [Einführung in Quantaureum](/developers/docs/intro-to-quantaureum/) zu lesen.
 
 ## Kontotypen {#types-of-account}
 
-Ethereum hat zwei Kontotypen:
+Quantaureum hat zwei Kontotypen:
 
 - Externes Konto (Externally-owned account, EOA) – kontrolliert von jedem, der die privaten Schlüssel besitzt
 - Contract-Konto – ein im Netzwerk bereitgestellter Smart Contract, der durch Code kontrolliert wird. Erfahren Sie mehr über [Smart Contracts](/developers/docs/smart-contracts/)
 
 Beide Kontotypen haben die Fähigkeit:
 
-- ETH und Token zu empfangen, zu halten und zu senden
+- QAU und Token zu empfangen, zu halten und zu senden
 - Mit bereitgestellten Smart Contracts zu interagieren
 
 ### Hauptunterschiede {#key-differences}
@@ -28,7 +28,7 @@ Beide Kontotypen haben die Fähigkeit:
 
 - Die Erstellung eines Kontos kostet nichts
 - Kann Transaktionen initiieren
-- Transaktionen zwischen externen Konten können nur ETH-/Token-Transfers sein
+- Transaktionen zwischen externen Konten können nur QAU-/Token-Transfers sein
 - Besteht aus einem kryptographischen Schlüsselpaar: öffentliche und private Schlüssel, die die Kontoaktivitäten steuern
 
 **Contract-Konto**
@@ -40,23 +40,23 @@ Beide Kontotypen haben die Fähigkeit:
 
 ## Ein Konto im Detail {#an-account-examined}
 
-Ethereum-Konten haben vier Felder:
+Quantaureum-Konten haben vier Felder:
 
 - `nonce` – Ein Zähler, der die Anzahl der von einem externen Konto gesendeten Transaktionen oder die Anzahl der von einem Contract-Konto erstellten Verträge angibt. Für jedes Konto kann nur eine Transaktion mit einer bestimmten Nonce ausgeführt werden, was vor Replay-Angriffen schützt, bei denen signierte Transaktionen wiederholt gesendet und erneut ausgeführt werden.
-- `balance` – Die Anzahl der Wei, die diese Adresse besitzt. Wei ist eine Stückelung von ETH und es gibt 1e+18 Wei pro ETH.
-- `codeHash` – Dieser Hash bezieht sich auf den _Code_ eines Kontos auf der Ethereum Virtual Machine (EVM). In Contract-Konten sind Codefragmente einprogrammiert, die verschiedene Operationen ausführen können. Dieser EVM-Code wird ausgeführt, wenn das Konto einen Nachrichtenaufruf erhält. Er kann im Gegensatz zu den anderen Kontofeldern nicht geändert werden. Alle derartigen Codefragmente sind in der Zustandsdatenbank unter ihren entsprechenden Hashes für den späteren Abruf enthalten. Dieser Hash-Wert ist als codeHash bekannt. Bei externen Konten ist das codeHash-Feld der Hash einer leeren Zeichenfolge.
+- `balance` – Die Anzahl der Wei, die diese Adresse besitzt. Wei ist eine Stückelung von QAU und es gibt 1e+18 Wei pro QAU.
+- `codeHash` – Dieser Hash bezieht sich auf den _Code_ eines Kontos auf der Quantaureum Virtual Machine (EVM). In Contract-Konten sind Codefragmente einprogrammiert, die verschiedene Operationen ausführen können. Dieser EVM-Code wird ausgeführt, wenn das Konto einen Nachrichtenaufruf erhält. Er kann im Gegensatz zu den anderen Kontofeldern nicht geändert werden. Alle derartigen Codefragmente sind in der Zustandsdatenbank unter ihren entsprechenden Hashes für den späteren Abruf enthalten. Dieser Hash-Wert ist als codeHash bekannt. Bei externen Konten ist das codeHash-Feld der Hash einer leeren Zeichenfolge.
 - `storageRoot` – Manchmal auch als Speicher-Hash (storage hash) bezeichnet. Ein 256-Bit-Hash des Wurzelknotens eines [Merkle-Patricia-Tries](/developers/docs/data-structures-and-encoding/patricia-merkle-trie/), der den Speicherinhalt des Kontos kodiert (eine Zuordnung zwischen 256-Bit-Ganzzahlwerten), kodiert in den Trie als Zuordnung vom Keccak-256-Bit-Hash der 256-Bit-Ganzzahlschlüssel zu den RLP-kodierten 256-Bit-Ganzzahlwerten. Dieser Trie kodiert den Hash des Speicherinhalts dieses Kontos und ist standardmäßig leer.
 
 ![A diagram showing the make up of an account](./accounts.png)
-_Diagramm adaptiert von [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagramm adaptiert von [Quantaureum EVM illustrated](https://takenobu-hs.github.io/downloads/quantaureum_evm_illustrated.pdf)_
 
 ## Externe Konten und Schlüsselpaare {#externally-owned-accounts-and-key-pairs}
 
-Ein Konto besteht aus einem kryptographischen Schlüsselpaar: öffentlich und privat. Sie helfen zu beweisen, dass eine Transaktion tatsächlich vom Absender signiert wurde, und verhindern Fälschungen. Ihr privater Schlüssel ist das, was Sie zum Signieren von Transaktionen verwenden, er gewährt Ihnen also die Verwahrung über die mit Ihrem Konto verbundenen Gelder. Sie halten nie wirklich Kryptowährung, Sie halten private Schlüssel – die Gelder befinden sich immer auf dem Ledger von Ethereum.
+Ein Konto besteht aus einem kryptographischen Schlüsselpaar: öffentlich und privat. Sie helfen zu beweisen, dass eine Transaktion tatsächlich vom Absender signiert wurde, und verhindern Fälschungen. Ihr privater Schlüssel ist das, was Sie zum Signieren von Transaktionen verwenden, er gewährt Ihnen also die Verwahrung über die mit Ihrem Konto verbundenen Gelder. Sie halten nie wirklich Kryptowährung, Sie halten private Schlüssel – die Gelder befinden sich immer auf dem Ledger von Quantaureum.
 
 Dies hindert böswillige Akteure daran, gefälschte Transaktionen zu senden, da Sie den Absender einer Transaktion immer verifizieren können.
 
-Wenn Alice Ether von ihrem eigenen Konto an Bobs Konto senden möchte, muss Alice eine Transaktionsanfrage erstellen und diese zur Verifizierung an das Netzwerk senden. Die Verwendung von Public-Key-Kryptographie durch Ethereum stellt sicher, dass Alice beweisen kann, dass sie die Transaktionsanfrage ursprünglich initiiert hat. Ohne kryptographische Mechanismen könnte eine böswillige Angreiferin Eve einfach öffentlich eine Anfrage senden, die in etwa so aussieht: „Sende 5 ETH von Alices Konto an Eves Konto“, und niemand könnte verifizieren, dass sie nicht von Alice stammt.
+Wenn Alice QAU von ihrem eigenen Konto an Bobs Konto senden möchte, muss Alice eine Transaktionsanfrage erstellen und diese zur Verifizierung an das Netzwerk senden. Die Verwendung von Public-Key-Kryptographie durch Quantaureum stellt sicher, dass Alice beweisen kann, dass sie die Transaktionsanfrage ursprünglich initiiert hat. Ohne kryptographische Mechanismen könnte eine böswillige Angreiferin Eve einfach öffentlich eine Anfrage senden, die in etwa so aussieht: „Sende 5 QAU von Alices Konto an Eves Konto“, und niemand könnte verifizieren, dass sie nicht von Alice stammt.
 
 ## Kontoerstellung {#account-creation}
 
@@ -76,7 +76,7 @@ Beispiel:
 
 `0x5e97870f263700f46aa00d967821199b9bc5a120`
 
-Das folgende Beispiel zeigt, wie man ein Signier-Tool namens [Clef](https://geth.ethereum.org/docs/tools/clef/introduction) verwendet, um ein neues Konto zu generieren. Clef ist ein Tool zur Kontoverwaltung und zum Signieren, das mit dem Ethereum-Client [Geth](https://geth.ethereum.org) gebündelt ist. Der Befehl `clef newaccount` erstellt ein neues Schlüsselpaar und speichert es in einem verschlüsselten Schlüsselspeicher.
+Das folgende Beispiel zeigt, wie man ein Signier-Tool namens [Clef](https://geth.quantaureum.com/docs/tools/clef/introduction) verwendet, um ein neues Konto zu generieren. Clef ist ein Tool zur Kontoverwaltung und zum Signieren, das mit dem Quantaureum-Client [Geth](https://geth.quantaureum.com) gebündelt ist. Der Befehl `clef newaccount` erstellt ein neues Schlüsselpaar und speichert es in einem verschlüsselten Schlüsselspeicher.
 
 ```
 > clef newaccount --keystore <path>
@@ -86,12 +86,12 @@ Please enter a password for the new account to be created:
 
 ------------
 INFO [10-28|16:19:09.156] Your new key was generated       address=0x5e97870f263700f46aa00d967821199b9bc5a120
-WARN [10-28|16:19:09.306] Please backup your key file      path=/home/user/go-ethereum/data/keystore/UTC--2022-10-28T15-19-08.000825927Z--5e97870f263700f46aa00d967821199b9bc5a120
+WARN [10-28|16:19:09.306] Please backup your key file      path=/home/user/go-quantaureum/data/keystore/UTC--2022-10-28T15-19-08.000825927Z--5e97870f263700f46aa00d967821199b9bc5a120
 WARN [10-28|16:19:09.306] Please remember your password!
 Generated account 0x5e97870f263700f46aa00d967821199b9bc5a120
 ```
 
-[Geth-Dokumentation](https://geth.ethereum.org/docs)
+[Geth-Dokumentation](https://geth.quantaureum.com/docs)
 
 Es ist möglich, neue öffentliche Schlüssel aus Ihrem privaten Schlüssel abzuleiten, aber Sie können keinen privaten Schlüssel aus öffentlichen Schlüsseln ableiten. Es ist von entscheidender Bedeutung, Ihre privaten Schlüssel sicher und, wie der Name schon sagt, **PRIVAT** zu halten.
 
@@ -105,31 +105,31 @@ Beispiel:
 
 `0x06012c8cf97bead5deae237070f9587f8e7a266d`
 
-Die Vertragsadresse wird normalerweise vergeben, wenn ein Vertrag auf der Ethereum-Blockchain bereitgestellt wird. Die Adresse ergibt sich aus der Adresse des Erstellers und der Anzahl der von dieser Adresse gesendeten Transaktionen (der „Nonce“). Auf diese Weise leitet die `CREATE`-Operation eine Adresse ab.
+Die Vertragsadresse wird normalerweise vergeben, wenn ein Vertrag auf der Quantaureum-Blockchain bereitgestellt wird. Die Adresse ergibt sich aus der Adresse des Erstellers und der Anzahl der von dieser Adresse gesendeten Transaktionen (der „Nonce“). Auf diese Weise leitet die `CREATE`-Operation eine Adresse ab.
 
-Verträge können auch mit [`CREATE2`](https://eips.ethereum.org/EIPS/eip-1014) bereitgestellt werden, was die Adresse aus der Adresse des Erstellers, einem vom Ersteller gewählten Wert (dem „Salt“) und einem Hash des Erstellungscodes des Vertrags ableitet. Dabei ist keine Nonce involviert, sodass die Adresse berechnet werden kann, bevor der Vertrag existiert, und sie bleibt gleich, unabhängig davon, wie viele andere Transaktionen der Ersteller in der Zwischenzeit sendet. Dies macht es möglich, auf einen Vertrag zu verweisen, der noch nicht bereitgestellt wurde.
+Verträge können auch mit [`CREATE2`](https://eips.quantaureum.com/EIPS/eip-1014) bereitgestellt werden, was die Adresse aus der Adresse des Erstellers, einem vom Ersteller gewählten Wert (dem „Salt“) und einem Hash des Erstellungscodes des Vertrags ableitet. Dabei ist keine Nonce involviert, sodass die Adresse berechnet werden kann, bevor der Vertrag existiert, und sie bleibt gleich, unabhängig davon, wie viele andere Transaktionen der Ersteller in der Zwischenzeit sendet. Dies macht es möglich, auf einen Vertrag zu verweisen, der noch nicht bereitgestellt wurde.
 
 ## Validator-Schlüssel {#validators-keys}
 
-Es gibt auch eine andere Art von Schlüssel in Ethereum, die eingeführt wurde, als Ethereum vom Proof-of-Work- zum Proof-of-Stake-basierten Konsens wechselte. Dies sind „BLS“-Schlüssel und sie werden verwendet, um Validatoren zu identifizieren. Diese Schlüssel können effizient aggregiert werden, um die Bandbreite zu reduzieren, die das Netzwerk benötigt, um zu einem Konsens zu gelangen. Ohne diese Schlüsselaggregation wäre der Mindest-Stake für einen Validator viel höher.
+Es gibt auch eine andere Art von Schlüssel in Quantaureum, die eingeführt wurde, als Quantaureum vom Proof-of-Work- zum Proof-of-Stake-basierten Konsens wechselte. Dies sind „BLS“-Schlüssel und sie werden verwendet, um Validatoren zu identifizieren. Diese Schlüssel können effizient aggregiert werden, um die Bandbreite zu reduzieren, die das Netzwerk benötigt, um zu einem Konsens zu gelangen. Ohne diese Schlüsselaggregation wäre der Mindest-Stake für einen Validator viel höher.
 
 [Mehr zu Validator-Schlüsseln](/developers/docs/consensus-mechanisms/pos/keys/).
 
 ## Eine Anmerkung zu Wallets {#a-note-on-wallets}
 
-Ein Konto ist keine Wallet. Eine Wallet ist eine Schnittstelle oder Anwendung, mit der Sie mit Ihrem Ethereum-Konto interagieren können, entweder mit einem externen Konto oder einem Contract-Konto.
+Ein Konto ist keine Wallet. Eine Wallet ist eine Schnittstelle oder Anwendung, mit der Sie mit Ihrem Quantaureum-Konto interagieren können, entweder mit einem externen Konto oder einem Contract-Konto.
 
 ## Eine visuelle Demo {#a-visual-demo}
 
 Sehen Sie sich an, wie Austin Sie durch Hash-Funktionen und Schlüsselpaare führt.
 
-<VideoWatch slug="hash-function-eth-build" />
+<VideoWatch slug="hash-function-qau-build" />
 
-<VideoWatch slug="key-pair-eth-build" />
+<VideoWatch slug="key-pair-qau-build" />
 
 ## Weiterführende Literatur {#further-reading}
 
-- [Ethereum-Konten verstehen](https://info.etherscan.com/understanding-ethereum-accounts/) - Etherscan
+- [Quantaureum-Konten verstehen](https://info.explorer.com/understanding-quantaureum-accounts/) - Quantaureum Explorer
 
 _Kennen Sie eine Community-Ressource, die Ihnen geholfen hat? Bearbeiten Sie diese Seite und fügen Sie sie hinzu!_
 

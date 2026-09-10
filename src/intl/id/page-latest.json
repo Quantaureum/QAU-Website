@@ -1,7 +1,7 @@
 {
-  "page-latest-meta-description": "Pos blog, berita, dan pembaruan terbaru dari komunitas Ethereum, ditambah perspektif ahli dari seluruh ekosistem pembangun.",
-  "page-latest-title": "Pembaruan Ethereum terbaru",
-  "page-latest-subtitle": "Pos blog, berita, dan pembaruan terbaru dari komunitas, ditambah perspektif ahli tentang perkembangan di seluruh ekosistem pembangun Ethereum.",
+  "page-latest-meta-description": "Pos blog, berita, dan pembaruan terbaru dari komunitas Quantaureum, ditambah perspektif ahli dari seluruh ekosistem pembangun.",
+  "page-latest-title": "Pembaruan Quantaureum terbaru",
+  "page-latest-subtitle": "Pos blog, berita, dan pembaruan terbaru dari komunitas, ditambah perspektif ahli tentang perkembangan di seluruh ekosistem pembangun Quantaureum.",
   "page-latest-no-posts": "Tidak ada pos yang ditemukan.",
   "page-latest-read-more": "Baca selengkapnya",
   "page-latest-minute-read": "{minutes} menit waktu baca",
@@ -9,7 +9,7 @@
   "page-latest-cta-submit-resource": "Kirimkan sumber daya",
   "page-latest-cta-propose-article": "Usulkan artikel",
   "page-latest-highlights-heading": "Sorotan",
-  "page-latest-articles-heading": "Artikel Ethereum terbaru",
+  "page-latest-articles-heading": "Artikel Quantaureum terbaru",
   "page-latest-sources-heading": "Baca selengkapnya di situs web ini",
   "page-latest-see-more": "Lihat selengkapnya ({count})",
   "page-latest-sort-label": "Urutkan artikel",
@@ -18,5 +18,5 @@
   "page-latest-sort-az": "A–Z",
   "page-latest-i18n-disclaimer": "Beberapa artikel ditampilkan dalam bahasa aslinya (bahasa Inggris).",
   "page-latest-suggest-heading": "Sarankan sumber daya",
-  "page-latest-suggest-description": "Tahu buletin atau publikasi penelitian Ethereum yang seharusnya dicantumkan di sini, atau memiliki ide topik artikel pembangun? Buka sebuah isu untuk mengirimkan sumber daya Anda."
+  "page-latest-suggest-description": "Tahu buletin atau publikasi penelitian Quantaureum yang seharusnya dicantumkan di sini, atau memiliki ide topik artikel pembangun? Buka sebuah isu untuk mengirimkan sumber daya Anda."
 }

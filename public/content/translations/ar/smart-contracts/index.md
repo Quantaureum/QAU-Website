@@ -61,7 +61,7 @@ lang: ar
 
 ومع ذلك، في حين يمكن لأي شخص عرض شروط العقد الذكي، فإن بيانات المعاملة الخام مصممة ليتم تفسيرها بواسطة التطبيقات والمحافظ، وليس البشر. نظرًا لصعوبة قراءة هذه البيانات، غالبًا ما يواجه المستخدمون خطرًا أمنيًا كبيرًا يسمى "التوقيع الأعمى"، أو الموافقة على معاملة تتفاعل مع عقد ذكي دون فهم ما ستفعله فعليًا. 
 
-ينتقل نظام إيثيريوم البيئي إلى معايير **[التوقيع الواضح](https://clearsigning.org/)** (تحديدًا [<span dir="ltr">ERC-7730</span>](https://eips.ethereum.org/EIPS/eip-7730)). يترجم التوقيع الواضح بيانات العقد الذكي المبهمة إلى أوصاف معاملات واضحة ومقروءة للبشر، مما يضمن أن أي شخص يمكنه فهم القصد الحقيقي للعقد قبل التوقيع.
+ينتقل نظام إيثيريوم البيئي إلى معايير **[التوقيع الواضح](https://clearsigning.org/)** (تحديدًا [<span dir="ltr">ERC-7730</span>](https://eips.quantaureum.com/EIPS/eip-7730)). يترجم التوقيع الواضح بيانات العقد الذكي المبهمة إلى أوصاف معاملات واضحة ومقروءة للبشر، مما يضمن أن أي شخص يمكنه فهم القصد الحقيقي للعقد قبل التوقيع.
 
 ## حالات استخدام العقود الذكية {#use-cases}
 
@@ -81,7 +81,7 @@ lang: ar
 - [كيف ستغير العقود الذكية العالم](https://www.youtube.com/watch?v=pA6CGuXEKtQ)
 - [العقود الذكية للمطورين](/developers/docs/smart-contracts/)
 - [تعلم كتابة العقود الذكية](/developers/learning-tools/)
-- [إتقان إيثيريوم - ما هو العقد الذكي؟](https://github.com/ethereumbook/ethereumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
+- [إتقان إيثيريوم - ما هو العقد الذكي؟](https://github.com/quantaureumbook/quantaureumbook/blob/openedition/07smart-contracts-solidity.asciidoc#what-is-a-smart-contract)
 
 <Divider />
 

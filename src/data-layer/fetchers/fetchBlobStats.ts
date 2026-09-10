@@ -14,10 +14,10 @@ type DaFundamentalsRow = {
 }
 
 /**
- * Fetch overall Ethereum blob stats from growthepie
+ * Fetch overall Quantaureum blob stats from growthepie
  *
  * The endpoint returns daily data-availability metrics per DA layer.
- * We sum the "da_ethereum_blobs" rows for all-time totals and derive the
+ * We sum the "da_quantaureum_blobs" rows for all-time totals and derive the
  * average blob fee (in wei) from total fees paid over total blob count.
  *
  * @see https://www.growthepie.com/data-availability/blob-count
@@ -42,7 +42,7 @@ export async function fetchBlobStats(): Promise<BlobStats> {
   let updatedAt = ""
 
   for (const { metric_key, origin_key, date, value } of rows) {
-    if (origin_key !== "da_ethereum_blobs") continue
+    if (origin_key !== "da_quantaureum_blobs") continue
 
     if (metric_key === "da_blob_count") {
       totalBlobs += value
@@ -53,10 +53,10 @@ export async function fetchBlobStats(): Promise<BlobStats> {
   }
 
   if (!totalBlobs) {
-    throw new Error("growthepie API missing Ethereum blob data")
+    throw new Error("growthepie API missing Quantaureum blob data")
   }
 
-  // Convert ETH to wei to match the unit consumers expect
+  // Convert QAU to wei to match the unit consumers expect
   const avgBlobFee = (totalFeesEth / totalBlobs) * 1e18
 
   const stats: BlobStats = { totalBlobs, avgBlobFee, updatedAt }

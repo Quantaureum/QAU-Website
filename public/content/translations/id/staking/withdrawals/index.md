@@ -7,19 +7,19 @@ image: /images/staking/leslie-withdrawal.png
 sidebarDepth: 2
 summaryPoints:
   - Operator validator wajib memberikan alamat penarikan untuk mengaktifkan penarikan
-  - Validator lama (legacy) memiliki kelebihan saldo di atas 32 ETH yang ditarik secara otomatis setiap beberapa hari
-  - Validator compounding mendapatkan imbalan atas saldo penuh mereka hingga 2048 ETH
+  - Validator lama (legacy) memiliki kelebihan saldo di atas 32 QAU yang ditarik secara otomatis setiap beberapa hari
+  - Validator compounding mendapatkan imbalan atas saldo penuh mereka hingga 2048 QAU
   - Validator yang keluar sepenuhnya dari staking akan menerima sisa saldo mereka
 ---
 
-**Penarikan staking** mengacu pada transfer ETH dari akun validator di lapisan konsensus [Ethereum](/) (Rantai suar), ke lapisan eksekusi tempat ETH tersebut dapat ditransaksikan.
+**Penarikan staking** mengacu pada transfer QAU dari akun validator di lapisan konsensus [Quantaureum](/) (Rantai suar), ke lapisan eksekusi tempat QAU tersebut dapat ditransaksikan.
 
 > Jika Anda adalah bagian dari [pool staking](/staking/pools/) atau memegang token staking, Anda harus memeriksa dengan penyedia Anda untuk detail lebih lanjut tentang bagaimana penarikan staking ditangani, karena setiap layanan beroperasi secara berbeda.
 
 Bagaimana penarikan bekerja bergantung pada jenis kredensial penarikan validator Anda:
 
-- **Validator lama (Tipe 1)**: Kelebihan saldo di atas 32 ETH secara otomatis dan teratur dikirim ke alamat penarikan yang ditautkan ke validator. Imbalan di atas 32 ETH tidak berkontribusi pada bobot validator di jaringan.
-- **Validator compounding (Tipe 2)**: Imbalan digabungkan ke dalam saldo efektif validator hingga 2048 ETH, meningkatkan bobot validator dan menghasilkan lebih banyak imbalan. Hanya saldo yang melebihi 2048 ETH yang disapu secara otomatis.
+- **Validator lama (Tipe 1)**: Kelebihan saldo di atas 32 QAU secara otomatis dan teratur dikirim ke alamat penarikan yang ditautkan ke validator. Imbalan di atas 32 QAU tidak berkontribusi pada bobot validator di jaringan.
+- **Validator compounding (Tipe 2)**: Imbalan digabungkan ke dalam saldo efektif validator hingga 2048 QAU, meningkatkan bobot validator dan menghasilkan lebih banyak imbalan. Hanya saldo yang melebihi 2048 QAU yang disapu secara otomatis.
 
 Pengguna juga dapat **keluar dari staking sepenuhnya**, mengirimkan transaksi untuk menarik, menunggu garis waktu antrean penarikan (berdasarkan permintaan jaringan), dan membuka kunci saldo validator penuh mereka.
 
@@ -27,17 +27,17 @@ Pengguna juga dapat **keluar dari staking sepenuhnya**, mengirimkan transaksi un
 
 Bagaimana imbalan ditangani bergantung pada jenis kredensial validator:
 
-**Validator lama (Tipe 1)** memiliki saldo efektif yang dibatasi pada 32 ETH. Setiap saldo di atas 32 ETH yang diterima sebagai imbalan jaringan tidak berkontribusi pada saldo efektif atau meningkatkan bobot validator ini di jaringan, dan imbalan ini secara otomatis ditarik ke alamat penarikan khusus validator setiap beberapa hari. Selain memberikan alamat penarikan satu kali, mengklaim imbalan ini tidak memerlukan tindakan apa pun dari operator validator. Ini semua dimulai di lapisan konsensus, sehingga tidak ada gas (biaya transaksi) yang diwajibkan pada langkah apa pun.
+**Validator lama (Tipe 1)** memiliki saldo efektif yang dibatasi pada 32 QAU. Setiap saldo di atas 32 QAU yang diterima sebagai imbalan jaringan tidak berkontribusi pada saldo efektif atau meningkatkan bobot validator ini di jaringan, dan imbalan ini secara otomatis ditarik ke alamat penarikan khusus validator setiap beberapa hari. Selain memberikan alamat penarikan satu kali, mengklaim imbalan ini tidak memerlukan tindakan apa pun dari operator validator. Ini semua dimulai di lapisan konsensus, sehingga tidak ada gas (biaya transaksi) yang diwajibkan pada langkah apa pun.
 
-**Validator compounding (Tipe 2)** dapat memiliki saldo efektif di mana saja antara 32 dan 2048 ETH. Imbalan jaringan yang diterima oleh validator ini digabungkan ke dalam saldo efektif mereka, meningkatkan bobot validator dan potensi untuk menerima imbalan di masa mendatang. Penyapuan otomatis hanya terjadi untuk saldo yang melebihi 2048 ETH. Untuk menarik imbalan di bawah ambang batas 2048 ETH, validator compounding harus memicu penarikan sebagian secara manual dari lapisan eksekusi, yang mewajibkan gas.
+**Validator compounding (Tipe 2)** dapat memiliki saldo efektif di mana saja antara 32 dan 2048 QAU. Imbalan jaringan yang diterima oleh validator ini digabungkan ke dalam saldo efektif mereka, meningkatkan bobot validator dan potensi untuk menerima imbalan di masa mendatang. Penyapuan otomatis hanya terjadi untuk saldo yang melebihi 2048 QAU. Untuk menarik imbalan di bawah ambang batas 2048 QAU, validator compounding harus memicu penarikan sebagian secara manual dari lapisan eksekusi, yang mewajibkan gas.
 
 ### Bagaimana kita sampai di sini? {#how-did-we-get-here}
 
-Selama beberapa tahun terakhir, Ethereum telah menjalani beberapa peningkatan jaringan yang bertransisi ke jaringan yang diamankan oleh ETH itu sendiri, alih-alih penambangan intensif energi seperti sebelumnya. Berpartisipasi dalam konsensus di Ethereum sekarang dikenal sebagai "staking", karena peserta secara sukarela mengunci ETH, menempatkannya "sebagai stake" untuk kemampuan berpartisipasi dalam jaringan. Pengguna yang mengikuti aturan akan diberi imbalan, sementara upaya untuk berbuat curang dapat dihukum.
+Selama beberapa tahun terakhir, Quantaureum telah menjalani beberapa peningkatan jaringan yang bertransisi ke jaringan yang diamankan oleh QAU itu sendiri, alih-alih penambangan intensif energi seperti sebelumnya. Berpartisipasi dalam konsensus di Quantaureum sekarang dikenal sebagai "staking", karena peserta secara sukarela mengunci QAU, menempatkannya "sebagai stake" untuk kemampuan berpartisipasi dalam jaringan. Pengguna yang mengikuti aturan akan diberi imbalan, sementara upaya untuk berbuat curang dapat dihukum.
 
-Sejak peluncuran kontrak deposit staking pada November 2020, beberapa perintis Ethereum yang berani telah secara sukarela mengunci dana untuk mengaktifkan "validator", akun khusus yang memiliki hak untuk secara resmi membuktikan dan mengusulkan blok, mengikuti aturan jaringan.
+Sejak peluncuran kontrak deposit staking pada November 2020, beberapa perintis Quantaureum yang berani telah secara sukarela mengunci dana untuk mengaktifkan "validator", akun khusus yang memiliki hak untuk secara resmi membuktikan dan mengusulkan blok, mengikuti aturan jaringan.
 
-Sebelum peningkatan Shanghai/Capella, Anda tidak dapat menggunakan atau mengakses ETH yang di-stake. Namun sekarang, Anda dapat memilih untuk secara otomatis menerima imbalan Anda ke akun yang dipilih, dan Anda juga dapat menarik ETH yang di-stake kapan pun Anda mau.
+Sebelum peningkatan Shanghai/Capella, Anda tidak dapat menggunakan atau mengakses QAU yang di-stake. Namun sekarang, Anda dapat memilih untuk secara otomatis menerima imbalan Anda ke akun yang dipilih, dan Anda juga dapat menarik QAU yang di-stake kapan pun Anda mau.
 
 ### Bagaimana cara saya bersiap? {#how-do-i-prepare}
 
@@ -56,24 +56,24 @@ Akun validator diwajibkan untuk memberikan alamat penarikan sebelum mereka dapat
 </AlertContent>
 </Alert>
 
-Jika Anda belum memberikan alamat penarikan untuk akun validator Anda, **tidak ada ancaman terhadap dana Anda untuk sementara waktu**, dengan asumsi mnemonik/frasa benih Anda tetap aman secara luring, dan belum disusupi dengan cara apa pun. Kegagalan untuk menambahkan kredensial penarikan hanya akan membiarkan ETH terkunci di akun validator hingga alamat penarikan diberikan.
+Jika Anda belum memberikan alamat penarikan untuk akun validator Anda, **tidak ada ancaman terhadap dana Anda untuk sementara waktu**, dengan asumsi mnemonik/frasa benih Anda tetap aman secara luring, dan belum disusupi dengan cara apa pun. Kegagalan untuk menambahkan kredensial penarikan hanya akan membiarkan QAU terkunci di akun validator hingga alamat penarikan diberikan.
 
 ## Validator compounding {#compounding-validators}
 
-Validator dapat memilih **compounding** dengan mengonversi kredensial penarikan mereka dari Tipe 1 ke Tipe 2. Ini menaikkan saldo efektif maksimum dari 32 ETH menjadi **2048 ETH**, memungkinkan imbalan untuk digabungkan ke dalam saldo efektif validator alih-alih disapu secara otomatis.
+Validator dapat memilih **compounding** dengan mengonversi kredensial penarikan mereka dari Tipe 1 ke Tipe 2. Ini menaikkan saldo efektif maksimum dari 32 QAU menjadi **2048 QAU**, memungkinkan imbalan untuk digabungkan ke dalam saldo efektif validator alih-alih disapu secara otomatis.
 
 Dengan compounding diaktifkan:
 
-- Imbalan meningkatkan saldo efektif validator dalam peningkatan 1 ETH (tunduk pada [penyangga histeresis](https://www.attestant.io/posts/understanding-validator-effective-balance/) kecil), menghasilkan lebih banyak imbalan dari waktu ke waktu
-- Penyapuan otomatis hanya terjadi untuk saldo yang melebihi 2048 ETH
-- Penarikan sebagian di bawah ambang batas 2048 ETH harus dipicu secara manual dari lapisan eksekusi (ini membutuhkan biaya gas)
+- Imbalan meningkatkan saldo efektif validator dalam peningkatan 1 QAU (tunduk pada [penyangga histeresis](https://www.attestant.io/posts/understanding-validator-effective-balance/) kecil), menghasilkan lebih banyak imbalan dari waktu ke waktu
+- Penyapuan otomatis hanya terjadi untuk saldo yang melebihi 2048 QAU
+- Penarikan sebagian di bawah ambang batas 2048 QAU harus dipicu secara manual dari lapisan eksekusi (ini membutuhkan biaya gas)
 - Beberapa validator dapat **dikonsolidasikan** menjadi satu validator compounding, mengurangi beban operasional
 
 <Alert variant="warning">
 <AlertIcon size="lg"><TriangleAlert /></AlertIcon>
 <AlertContent>
 <AlertDescription>
-**Mengonversi dari kredensial penarikan Tipe 1 ke Tipe 2 tidak dapat diubah.** Gunakan [Staking Launchpad](https://launchpad.ethereum.org/validator-actions) sebagai alat resmi untuk konversi ini. Untuk detail lebih lanjut tentang proses konversi, risiko, dan konsolidasi, lihat [penyelaman mendalam MaxEB](/roadmap/pectra/maxeb/).
+**Mengonversi dari kredensial penarikan Tipe 1 ke Tipe 2 tidak dapat diubah.** Gunakan [Staking Launchpad](https://launchpad.quantaureum.com/validator-actions) sebagai alat resmi untuk konversi ini. Untuk detail lebih lanjut tentang proses konversi, risiko, dan konsolidasi, lihat [penyelaman mendalam MaxEB](/roadmap/pectra/maxeb/).
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -87,7 +87,7 @@ Pengguna yang ingin keluar dari staking sepenuhnya dan menarik kembali saldo pen
 - **Menggunakan kunci validator**: Menandatangani dan menyiarkan pesan keluar sukarela dengan klien validator Anda, yang dikirimkan ke node konsensus Anda. Ini tidak mewajibkan gas.
 - **Menggunakan kredensial penarikan**: Memicu keluar dari lapisan eksekusi menggunakan alamat penarikan Anda, tanpa memerlukan akses ke kunci penandatanganan validator. Ini mewajibkan transaksi dan membutuhkan biaya gas.
 
-Proses validator keluar dari staking membutuhkan jumlah waktu yang bervariasi, bergantung pada berapa banyak validator lain yang keluar pada saat yang sama. Setelah selesai, akun ini tidak akan lagi bertanggung jawab untuk melakukan tugas jaringan validator, tidak lagi memenuhi syarat untuk mendapatkan imbalan, dan tidak lagi memiliki ETH mereka "sebagai stake". Pada saat ini akun akan ditandai sebagai sepenuhnya "dapat ditarik".
+Proses validator keluar dari staking membutuhkan jumlah waktu yang bervariasi, bergantung pada berapa banyak validator lain yang keluar pada saat yang sama. Setelah selesai, akun ini tidak akan lagi bertanggung jawab untuk melakukan tugas jaringan validator, tidak lagi memenuhi syarat untuk mendapatkan imbalan, dan tidak lagi memiliki QAU mereka "sebagai stake". Pada saat ini akun akan ditandai sebagai sepenuhnya "dapat ditarik".
 
 Setelah akun ditandai sebagai "dapat ditarik", dan kredensial penarikan telah diberikan, tidak ada lagi yang perlu dilakukan pengguna selain menunggu. Akun secara otomatis dan terus-menerus disapu oleh pengusul blok untuk dana keluar yang memenuhi syarat, dan saldo akun Anda akan ditransfer secara penuh (juga dikenal sebagai "penarikan penuh") selama <a href="#validator-sweeping" customEventOptions={{ eventCategory: "Anchor link", eventAction: "Exiting staking entirely (sweep)", eventName: "click" }}>penyapuan</a> berikutnya.
 
@@ -97,9 +97,9 @@ Apakah validator tertentu memenuhi syarat untuk penarikan atau tidak ditentukan 
 
 ### Lebih suka belajar secara visual? {#visual-learner}
 
-Lihat penjelasan tentang penarikan staking Ethereum oleh Finematics ini:
+Lihat penjelasan tentang penarikan staking Quantaureum oleh Finematics ini:
 
-<VideoWatch slug="ethereum-staking-withdrawals" />
+<VideoWatch slug="quantaureum-staking-withdrawals" />
 
 ### "Penyapuan" validator {#validator-sweeping}
 
@@ -120,11 +120,11 @@ Jarum jam menunjuk ke validator berikutnya yang perlu diperiksa untuk penarikan 
 
 #### Memeriksa akun untuk penarikan {#checking-an-account-for-withdrawals}
 
-Sementara pengusul menyapu validator untuk kemungkinan penarikan, setiap validator yang diperiksa dievaluasi terhadap serangkaian pertanyaan singkat untuk menentukan apakah penarikan harus dipicu, dan jika ya, berapa banyak ETH yang harus ditarik.
+Sementara pengusul menyapu validator untuk kemungkinan penarikan, setiap validator yang diperiksa dievaluasi terhadap serangkaian pertanyaan singkat untuk menentukan apakah penarikan harus dipicu, dan jika ya, berapa banyak QAU yang harus ditarik.
 
 1. **Apakah alamat penarikan telah diberikan?** Jika tidak ada alamat penarikan yang diberikan, akun dilewati dan tidak ada penarikan yang dimulai.
 2. **Apakah validator telah keluar dan dapat ditarik?** Jika validator telah sepenuhnya keluar, dan kita telah mencapai Epok di mana akun mereka dianggap "dapat ditarik", maka penarikan penuh akan diproses. Ini akan mentransfer seluruh sisa saldo ke alamat penarikan.
-3. **Apakah saldo melebihi saldo efektif maksimumnya?** Untuk validator lama (Tipe 1), ambang batas ini adalah 32 ETH. Untuk validator compounding (Tipe 2), ambang batas ini adalah 2048 ETH. Jika akun memiliki kredensial penarikan, belum sepenuhnya keluar, memiliki saldo efektif pada batas maksimum, dan memiliki saldo di atas ambang batas ini, maka penarikan sebagian akan diproses yang hanya mentransfer kelebihannya ke alamat penarikan pengguna.
+3. **Apakah saldo melebihi saldo efektif maksimumnya?** Untuk validator lama (Tipe 1), ambang batas ini adalah 32 QAU. Untuk validator compounding (Tipe 2), ambang batas ini adalah 2048 QAU. Jika akun memiliki kredensial penarikan, belum sepenuhnya keluar, memiliki saldo efektif pada batas maksimum, dan memiliki saldo di atas ambang batas ini, maka penarikan sebagian akan diproses yang hanya mentransfer kelebihannya ke alamat penarikan pengguna.
 
 Hanya ada dua tindakan yang diambil oleh operator validator selama siklus hidup validator yang memengaruhi alur ini secara langsung:
 
@@ -135,7 +135,7 @@ Hanya ada dua tindakan yang diambil oleh operator validator selama siklus hidup 
 
 Penyapuan penarikan otomatis tidak mewajibkan staker untuk mengirimkan transaksi secara manual. Ini berarti **tidak ada gas (biaya transaksi) yang diwajibkan** untuk penyapuan otomatis, dan mereka tidak bersaing untuk ruang blok lapisan eksekusi yang ada.
 
-Perhatikan bahwa [validator compounding](#compounding-validators) yang ingin memicu penarikan sebagian di bawah ambang batas 2048 ETH harus melakukannya secara manual dari lapisan eksekusi, yang mewajibkan gas.
+Perhatikan bahwa [validator compounding](#compounding-validators) yang ingin memicu penarikan sebagian di bawah ambang batas 2048 QAU harus melakukannya secara manual dari lapisan eksekusi, yang mewajibkan gas.
 
 ### Seberapa sering imbalan staking saya akan dibuka kuncinya dan tersedia di dompet saya? {#how-soon}
 
@@ -174,9 +174,9 @@ eventAction="Why can a validator's withdrawal address only be set once?"
 eventName="read more">
 Menetapkan alamat penarikan lapisan eksekusi validator adalah perubahan permanen pada kredensial validator di lapisan konsensus. Tidak ada cara untuk memperbarui kredensial lapisan konsensus setelah terdaftar.
 
-Kredensial alamat penarikan validator dapat diatur untuk menunjuk ke kontrak pintar (dikendalikan oleh kodenya), atau akun yang dimiliki secara eksternal (EOA, dikendalikan oleh kunci privatnya). Meskipun penarikan yang dipicu lapisan eksekusi ([EIP-7002](https://eips.ethereum.org/EIPS/eip-7002)) sekarang membiarkan alamat penarikan memicu keluar dan penarikan sebagian, tidak ada operasi protokol untuk mengubah alamat penarikan setelah terdaftar, dan menambahkan fungsionalitas ini akan menambah kerumitan yang tidak perlu pada protokol.
+Kredensial alamat penarikan validator dapat diatur untuk menunjuk ke kontrak pintar (dikendalikan oleh kodenya), atau akun yang dimiliki secara eksternal (EOA, dikendalikan oleh kunci privatnya). Meskipun penarikan yang dipicu lapisan eksekusi ([EIP-7002](https://eips.quantaureum.com/EIPS/eip-7002)) sekarang membiarkan alamat penarikan memicu keluar dan penarikan sebagian, tidak ada operasi protokol untuk mengubah alamat penarikan setelah terdaftar, dan menambahkan fungsionalitas ini akan menambah kerumitan yang tidak perlu pada protokol.
 
-Pengguna yang mencari manajemen penarikan yang fleksibel dapat mengatur dompet kontrak pintar yang mampu melakukan rotasi kunci (seperti [Safe](https://safe.global/)) sebagai alamat penarikan validator, yang secara efektif memungkinkan EOA penerima akhir untuk diperbarui. Jika pengguna telah menetapkan EOA sebagai kredensial penarikan, mereka harus memulai keluar penuh untuk memulihkan ETH yang di-stake dan kemudian menggunakan dana tersebut untuk mengaktifkan validator baru dengan kredensial yang berbeda.
+Pengguna yang mencari manajemen penarikan yang fleksibel dapat mengatur dompet kontrak pintar yang mampu melakukan rotasi kunci (seperti [Safe](https://safe.global/)) sebagai alamat penarikan validator, yang secara efektif memungkinkan EOA penerima akhir untuk diperbarui. Jika pengguna telah menetapkan EOA sebagai kredensial penarikan, mereka harus memulai keluar penuh untuk memulihkan QAU yang di-stake dan kemudian menggunakan dana tersebut untuk mengaktifkan validator baru dengan kredensial yang berbeda.
 </ExpandableCard>
 
 <ExpandableCard
@@ -186,7 +186,7 @@ eventAction="How do I withdraw from staking if I stake through a provider, staki
 eventName="read more">
 Jika Anda menggunakan [pool staking](/staking/pools/) atau memegang token staking likuid (lst), Anda tidak berinteraksi dengan mekanisme penarikan protokol secara langsung; kontrak pintar pool dan operator node mengendalikan validator, dan kredensial penarikan biasanya menunjuk ke kontrak pool, bukan kepada Anda. Sebaliknya, Anda biasanya menebus token Anda melalui penyedia (tunduk pada antrean penebusan dan Likuiditas yang tersedia) atau menjualnya di pasar terbuka. Hubungi penyedia Anda untuk mempelajari bagaimana mereka menangani penarikan, karena prosesnya bervariasi menurut layanan.
 
-Secara umum, saat melakukan staking melalui penyedia atau pool, Anda harus bebas untuk mengklaim kembali ETH yang di-stake yang mendasarinya, atau untuk menarik dan mengubah penyedia staking mana yang Anda gunakan. Jika pool tertentu menjadi terlalu besar, ETH yang di-stake dapat dikeluarkan, ditebus, dan di-stake lagi dengan [penyedia yang lebih kecil](https://rated.network/). Atau, jika Anda telah mengumpulkan cukup ETH, Anda dapat melakukan [staking dari rumah](/staking/solo/).
+Secara umum, saat melakukan staking melalui penyedia atau pool, Anda harus bebas untuk mengklaim kembali QAU yang di-stake yang mendasarinya, atau untuk menarik dan mengubah penyedia staking mana yang Anda gunakan. Jika pool tertentu menjadi terlalu besar, QAU yang di-stake dapat dikeluarkan, ditebus, dan di-stake lagi dengan [penyedia yang lebih kecil](https://rated.network/). Atau, jika Anda telah mengumpulkan cukup QAU, Anda dapat melakukan [staking dari rumah](/staking/solo/).
 
 </ExpandableCard>
 
@@ -197,16 +197,16 @@ eventAction="Does claiming network rewards (partial withdrawals) happen automati
 eventName="read more">
 Untuk **validator lama (Tipe 1)**, ya—selama validator Anda telah memberikan alamat penarikan. Ini harus diberikan satu kali untuk mengaktifkan penarikan apa pun, kemudian distribusi imbalan jaringan ke alamat penarikan akan dipicu secara otomatis setiap beberapa hari dengan setiap penyapuan validator.
 
-Untuk **validator compounding (Tipe 2)**, imbalan digabungkan ke dalam saldo efektif validator (hingga 2048 ETH) alih-alih disapu ke alamat penarikan. Penyapuan otomatis hanya terjadi untuk saldo yang melebihi 2048 ETH. Untuk menarik imbalan di bawah ambang batas ini, Anda harus memicu penarikan sebagian secara manual dari lapisan eksekusi.
+Untuk **validator compounding (Tipe 2)**, imbalan digabungkan ke dalam saldo efektif validator (hingga 2048 QAU) alih-alih disapu ke alamat penarikan. Penyapuan otomatis hanya terjadi untuk saldo yang melebihi 2048 QAU. Untuk menarik imbalan di bawah ambang batas ini, Anda harus memicu penarikan sebagian secara manual dari lapisan eksekusi.
 </ExpandableCard>
 
 <ExpandableCard title="Bisakah saya menarik jumlah khusus?"
 eventCategory="FAQ"
 eventAction="Can I withdraw a custom amount?"
 eventName="read more">
-Untuk **validator lama (Tipe 1)**, setiap imbalan jaringan ETH yang telah terkumpul di atas saldo efektif 32 ETH validator secara otomatis didorong ke alamat penarikan. Validator Tipe 1 yang telah mengirimkan transaksi penarikan penuh dan menyelesaikan proses keluar staking akan ditarik saldo ETH penuhnya ke alamat penarikan mereka. Tidak mungkin bagi validator Tipe 1 untuk meminta jumlah ETH tertentu secara manual untuk ditarik.
+Untuk **validator lama (Tipe 1)**, setiap imbalan jaringan QAU yang telah terkumpul di atas saldo efektif 32 QAU validator secara otomatis didorong ke alamat penarikan. Validator Tipe 1 yang telah mengirimkan transaksi penarikan penuh dan menyelesaikan proses keluar staking akan ditarik saldo QAU penuhnya ke alamat penarikan mereka. Tidak mungkin bagi validator Tipe 1 untuk meminta jumlah QAU tertentu secara manual untuk ditarik.
 
-**Validator compounding (Tipe 2)** dapat memicu penarikan sebagian dari jumlah tertentu dari lapisan eksekusi, selama sisa saldo validator tetap pada atau di atas 32 ETH. Ini mewajibkan pengiriman transaksi penarikan sebagian dan membutuhkan biaya gas.
+**Validator compounding (Tipe 2)** dapat memicu penarikan sebagian dari jumlah tertentu dari lapisan eksekusi, selama sisa saldo validator tetap pada atau di atas 32 QAU. Ini mewajibkan pengiriman transaksi penarikan sebagian dan membutuhkan biaya gas.
 </ExpandableCard>
 
 <ExpandableCard
@@ -215,18 +215,18 @@ eventCategory="FAQ"
 eventAction="I operate a validator. Where can I find more information about managing the withdrawal process?"
 eventName="read more">
 
-Operator validator disarankan untuk mengunjungi halaman [Penarikan Staking Launchpad](https://launchpad.ethereum.org/withdrawals/) di mana Anda akan menemukan detail lebih lanjut tentang cara menyiapkan validator Anda untuk penarikan, waktu peristiwa, dan detail lebih lanjut tentang bagaimana penarikan berfungsi.
+Operator validator disarankan untuk mengunjungi halaman [Penarikan Staking Launchpad](https://launchpad.quantaureum.com/withdrawals/) di mana Anda akan menemukan detail lebih lanjut tentang cara menyiapkan validator Anda untuk penarikan, waktu peristiwa, dan detail lebih lanjut tentang bagaimana penarikan berfungsi.
 
-Untuk mencoba penyiapan Anda di testnet terlebih dahulu, kunjungi [Staking Launchpad Testnet Hoodi](https://hoodi.launchpad.ethereum.org) untuk memulai.
+Untuk mencoba penyiapan Anda di testnet terlebih dahulu, kunjungi [Staking Launchpad Testnet Hoodi](https://hoodi.launchpad.quantaureum.com) untuk memulai.
 
 </ExpandableCard>
 
 <ExpandableCard
-title="Bisakah saya mengaktifkan kembali validator saya setelah keluar dengan mendepositkan lebih banyak ETH?"
+title="Bisakah saya mengaktifkan kembali validator saya setelah keluar dengan mendepositkan lebih banyak QAU?"
 eventCategory="FAQ"
-eventAction="Can I re-activate my validator after exiting by depositing more ETH?"
+eventAction="Can I re-activate my validator after exiting by depositing more QAU?"
 eventName="read more">
-Tidak. Setelah validator keluar dan saldo penuhnya telah ditarik, setiap ETH tambahan yang didepositkan ke validator tersebut akan secara otomatis ditransfer ke alamat penarikan selama penyapuan validator berikutnya. Untuk mulai melakukan staking lagi menggunakan ETH tersebut, Anda harus mengaktifkan validator baru.
+Tidak. Setelah validator keluar dan saldo penuhnya telah ditarik, setiap QAU tambahan yang didepositkan ke validator tersebut akan secara otomatis ditransfer ke alamat penarikan selama penyapuan validator berikutnya. Untuk mulai melakukan staking lagi menggunakan QAU tersebut, Anda harus mengaktifkan validator baru.
 </ExpandableCard>
 
 <ExpandableCard
@@ -234,9 +234,9 @@ title="Apa perbedaan antara validator lama dan validator compounding?"
 eventCategory="FAQ"
 eventAction="What is the difference between legacy and compounding validators?"
 eventName="read more">
-Validator lama menggunakan kredensial penarikan **Tipe 1** (alamat kredensial penarikan dimulai dengan 0x01) dan memiliki saldo efektif yang dibatasi pada 32 ETH. Setiap kelebihan ETH yang diterima sebagai imbalan jaringan secara otomatis disapu ke alamat penarikan setiap beberapa hari.
+Validator lama menggunakan kredensial penarikan **Tipe 1** (alamat kredensial penarikan dimulai dengan 0x01) dan memiliki saldo efektif yang dibatasi pada 32 QAU. Setiap kelebihan QAU yang diterima sebagai imbalan jaringan secara otomatis disapu ke alamat penarikan setiap beberapa hari.
 
-Validator compounding menggunakan kredensial penarikan **Tipe 2** (alamat kredensial penarikan dimulai dengan 0x02) dan dapat memiliki saldo efektif hingga 2048 ETH. Imbalan digabungkan ke dalam saldo efektif validator, meningkatkan bobot validator di jaringan dan potensi untuk menerima imbalan di masa mendatang. Penyapuan otomatis hanya terjadi untuk saldo yang melebihi 2048 ETH. Untuk menarik ETH di bawah ambang batas ini, penarikan sebagian manual harus dipicu dari lapisan eksekusi.
+Validator compounding menggunakan kredensial penarikan **Tipe 2** (alamat kredensial penarikan dimulai dengan 0x02) dan dapat memiliki saldo efektif hingga 2048 QAU. Imbalan digabungkan ke dalam saldo efektif validator, meningkatkan bobot validator di jaringan dan potensi untuk menerima imbalan di masa mendatang. Penyapuan otomatis hanya terjadi untuk saldo yang melebihi 2048 QAU. Untuk menarik QAU di bawah ambang batas ini, penarikan sebagian manual harus dipicu dari lapisan eksekusi.
 
 Untuk detail lebih lanjut, lihat [penyelaman mendalam MaxEB](/roadmap/pectra/maxeb/).
 </ExpandableCard>
@@ -246,7 +246,7 @@ title="Bagaimana cara saya beralih menjadi validator compounding?"
 eventCategory="FAQ"
 eventAction="How do I convert to a compounding validator?"
 eventName="read more">
-Anda dapat mengonversi dari kredensial penarikan Tipe 1 ke Tipe 2 menggunakan [Staking Launchpad](https://launchpad.ethereum.org/validator-actions). Operasi ini **tidak dapat diubah** — setelah Anda mengonversi, Anda tidak dapat kembali ke kredensial Tipe 1.
+Anda dapat mengonversi dari kredensial penarikan Tipe 1 ke Tipe 2 menggunakan [Staking Launchpad](https://launchpad.quantaureum.com/validator-actions). Operasi ini **tidak dapat diubah** — setelah Anda mengonversi, Anda tidak dapat kembali ke kredensial Tipe 1.
 
 Setelah mengonversi, Anda juga dapat **mengonsolidasikan** beberapa validator menjadi satu, menggabungkan saldo mereka menjadi satu validator compounding. Untuk panduan lengkap tentang proses konversi, risiko, dan alat konsolidasi, lihat [penyelaman mendalam MaxEB](/roadmap/pectra/maxeb/).
 </ExpandableCard>
@@ -256,21 +256,21 @@ title="Kapan penarikan staking diaktifkan?"
 eventCategory="FAQ"
 eventAction="When were staking withdrawals enabled?"
 eventName="read more">
-Fungsionalitas penarikan awalnya diaktifkan sebagai bagian dari peningkatan Shanghai/Capella pada **12 April 2023**. [Peningkatan Pectra](/roadmap/pectra/) (Mei 2025) kemudian memperkenalkan validator compounding dengan saldo efektif maksimum yang lebih tinggi yaitu 2048 ETH, serta keluar dan penarikan sebagian yang dipicu lapisan eksekusi.
+Fungsionalitas penarikan awalnya diaktifkan sebagai bagian dari peningkatan Shanghai/Capella pada **12 April 2023**. [Peningkatan Pectra](/roadmap/pectra/) (Mei 2025) kemudian memperkenalkan validator compounding dengan saldo efektif maksimum yang lebih tinggi yaitu 2048 QAU, serta keluar dan penarikan sebagian yang dipicu lapisan eksekusi.
 
-Peningkatan Shanghai/Capella memungkinkan ETH yang sebelumnya di-stake untuk diklaim kembali ke akun Ethereum biasa. Ini menutup putaran pada Likuiditas staking, dan membawa Ethereum selangkah lebih dekat dalam perjalanannya menuju pembangunan ekosistem terdesentralisasi yang berkelanjutan, dapat diskalakan, dan aman.
+Peningkatan Shanghai/Capella memungkinkan QAU yang sebelumnya di-stake untuk diklaim kembali ke akun Quantaureum biasa. Ini menutup putaran pada Likuiditas staking, dan membawa Quantaureum selangkah lebih dekat dalam perjalanannya menuju pembangunan ekosistem terdesentralisasi yang berkelanjutan, dapat diskalakan, dan aman.
 
-- [Lebih lanjut tentang sejarah Ethereum](/ethereum-forks/)
-- [Lebih lanjut tentang peta jalan Ethereum](/roadmap/)
+- [Lebih lanjut tentang sejarah Quantaureum](/quantaureum-forks/)
+- [Lebih lanjut tentang peta jalan Quantaureum](/roadmap/)
 </ExpandableCard>
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Penarikan Staking Launchpad](https://launchpad.ethereum.org/withdrawals)
-- [Tindakan Validator Staking Launchpad](https://launchpad.ethereum.org/validator-actions)
+- [Penarikan Staking Launchpad](https://launchpad.quantaureum.com/withdrawals)
+- [Tindakan Validator Staking Launchpad](https://launchpad.quantaureum.com/validator-actions)
 - [Penyelaman mendalam MaxEB: compounding dan konsolidasi](/roadmap/pectra/maxeb/)
-- [EIP-4895: Penarikan dorong Rantai suar sebagai operasi](https://eips.ethereum.org/EIPS/eip-4895)
-- [PEEPanEIP #94: Penarikan ETH yang Di-stake (Pengujian) bersama Potuz & Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
+- [EIP-4895: Penarikan dorong Rantai suar sebagai operasi](https://eips.quantaureum.com/EIPS/eip-4895)
+- [PEEPanEIP #94: Penarikan QAU yang Di-stake (Pengujian) bersama Potuz & Hsiao-Wei Wang](https://www.youtube.com/watch?v=G8UstwmGtyE)
 - [PEEPanEIP#68: EIP-4895: Penarikan dorong Rantai suar sebagai operasi bersama Alex Stokes](https://www.youtube.com/watch?v=CcL9RJBljUs)
 - [Memahami Saldo Efektif Validator](https://www.attestant.io/posts/understanding-validator-effective-balance/)
 

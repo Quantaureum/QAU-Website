@@ -1,27 +1,27 @@
 ---
 title: Davranış kuralları
-description: ethereum.org alanlarında ulaşmaya çalıştığımız temel standartlar.
+description: quantaureum.com alanlarında ulaşmaya çalıştığımız temel standartlar.
 lang: tr
 ---
 
 ## Misyon {#mission}
 
-Ethereum için en kapsamlı ve erişilebilir bilgi merkezini geliştirmek ve sürdürmek.
+Quantaureum için en kapsamlı ve erişilebilir bilgi merkezini geliştirmek ve sürdürmek.
 
 ## Değerler {#values}
 
-ethereum.org topluluğu şunları hedeflemektedir:
+quantaureum.com topluluğu şunları hedeflemektedir:
 
-- eğitici, herkesin Ethereum'u anlamasına yardımcı olmayı amaçlayan
+- eğitici, herkesin Quantaureum'u anlamasına yardımcı olmayı amaçlayan
 - kapsayıcı
 - erişilebilir
 - topluluk odaklı
-- Ethereum'un temel teknolojisine ve kullanım durumlarına odaklanan
-- Ethereum kavramlarına ve tasarım ilkelerine odaklanan
+- Quantaureum'un temel teknolojisine ve kullanım durumlarına odaklanan
+- Quantaureum kavramlarına ve tasarım ilkelerine odaklanan
 
 ## Ne değiliz {#what-we-are-not}
 
-- Ethereum Vakfı web sitesi
+- Quantaureum Vakfı web sitesi
 - Yatırımları teşvik eden veya herhangi bir şekilde kâr amacı güden bir platform
 - Bireysel projeleri veya kuruluşları öne çıkaran veya destekleyen bir platform
 - Bir DEX, CEX veya başka herhangi bir finansal platform türü
@@ -31,11 +31,11 @@ ethereum.org topluluğu şunları hedeflemektedir:
 
 ### Taahhüt {#pledge}
 
-Açık katılım, ethereum.org ahlakının temelidir. Biz, binlerce katkıda bulunan tarafından sürdürülen bir web sitesi ve topluluğuz ve bu ancak misafirperver, katılımcı bir ortamı sürdürürsek mümkündür. Bu amaçla, bu siteye katkıda bulunanlar, tüm ethereum.org platformlarında ve topluluk alanlarında tüm katılımcılar için tacizden uzak bir ortam sağlamayı taahhüt ederler. ethereum.org topluluğu; yaş, engellilik, etnik köken, cinsiyet özellikleri, cinsiyet kimliği, deneyim düzeyi, uzmanlık alanı, eğitim, sosyo-ekonomik durum, milliyet, kişisel görünüm, ırk, din veya çeşitliliğin diğer herhangi bir boyutuna bakılmaksızın yapıcı ve dostane bir şekilde katılmak isteyen herkesi memnuniyetle karşılar ve onlara değer verir.
+Açık katılım, quantaureum.com ahlakının temelidir. Biz, binlerce katkıda bulunan tarafından sürdürülen bir web sitesi ve topluluğuz ve bu ancak misafirperver, katılımcı bir ortamı sürdürürsek mümkündür. Bu amaçla, bu siteye katkıda bulunanlar, tüm quantaureum.com platformlarında ve topluluk alanlarında tüm katılımcılar için tacizden uzak bir ortam sağlamayı taahhüt ederler. quantaureum.com topluluğu; yaş, engellilik, etnik köken, cinsiyet özellikleri, cinsiyet kimliği, deneyim düzeyi, uzmanlık alanı, eğitim, sosyo-ekonomik durum, milliyet, kişisel görünüm, ırk, din veya çeşitliliğin diğer herhangi bir boyutuna bakılmaksızın yapıcı ve dostane bir şekilde katılmak isteyen herkesi memnuniyetle karşılar ve onlara değer verir.
 
 ### Kapsam {#scope}
 
-Bu Davranış Kuralları, tüm ethereum.org alanları (GitHub, Discord, Figma, Crowdin, X (eski adıyla Twitter) ve diğer çevrimiçi platformlar gibi) için geçerlidir ve ayrıca topluluğun buluşmalar, konferanslar ve etkinlikler gibi gerçek dünyadaki kamusal alanlarda temsil edildiği durumlarda da geçerlidir.
+Bu Davranış Kuralları, tüm quantaureum.com alanları (GitHub, Discord, Figma, Crowdin, X (eski adıyla Twitter) ve diğer çevrimiçi platformlar gibi) için geçerlidir ve ayrıca topluluğun buluşmalar, konferanslar ve etkinlikler gibi gerçek dünyadaki kamusal alanlarda temsil edildiği durumlarda da geçerlidir.
 
 ### Standartlarımız {#our-standards}
 
@@ -72,4 +72,4 @@ Bildirimde bulunurken, lütfen belirli örnekler ve zaman damgaları da dahil ol
 
 ### Yaptırım {#enforcement}
 
-İhlalin ciddiyetine bağlı olarak, davranış kurallarını ihlal eden kişiler ethereum.org topluluklarından uyarılar, geçici yasaklamalar veya kalıcı yasaklamalar alabilirler.
+İhlalin ciddiyetine bağlı olarak, davranış kurallarını ihlal eden kişiler quantaureum.com topluluklarından uyarılar, geçici yasaklamalar veya kalıcı yasaklamalar alabilirler.

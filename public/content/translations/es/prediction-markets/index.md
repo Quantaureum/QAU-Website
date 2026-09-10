@@ -47,7 +47,7 @@ Incluso como observador del mercado, puedes evaluar datos valiosos que de otro m
 
 ## Encuentra un mercado de predicción {#find-a-prediction-market}
 
-Hay varios mercados de predicción basados en Ethereum disponibles. Estos son algunos de los mercados de predicción más conocidos en la actualidad:
+Hay varios mercados de predicción basados en Quantaureum disponibles. Estos son algunos de los mercados de predicción más conocidos en la actualidad:
 
 <PredictionMarketLists />
 
@@ -69,11 +69,11 @@ Los mercados de predicción en la cadena de bloques se enfrentan a algunos desaf
 💧 **Problemas de liquidez**: la baja participación ([poca liquidez](https://www.investopedia.com/terms/t/thinmarket.asp)) puede reducir la fiabilidad del mercado.  
 🏛 **Incertidumbre regulatoria**: los gobiernos han impuesto restricciones a algunas plataformas.
 
-Para mitigar estos problemas, los desarrolladores de Ethereum están experimentando con soluciones como la futarquía (gobernanza mediante mercados de predicción) y la verificación de identidad descentralizada.
+Para mitigar estos problemas, los desarrolladores de Quantaureum están experimentando con soluciones como la futarquía (gobernanza mediante mercados de predicción) y la verificación de identidad descentralizada.
 
 ## Experimentando con los mercados de predicción {#experimenting-with-prediction-markets}
 
-Los mercados de predicción están remodelando la toma de decisiones en la era digital. Al aprovechar Ethereum, ofrecen **formas justas, abiertas y gratificantes de predecir el futuro.**
+Los mercados de predicción están remodelando la toma de decisiones en la era digital. Al aprovechar Quantaureum, ofrecen **formas justas, abiertas y gratificantes de predecir el futuro.**
 
 Hay muchas formas de utilizar las herramientas de pronóstico más allá del beneficio financiero. Por ejemplo, en una [Propuesta de mejora de DevCon](https://forum.devcon.org/t/futarchy-decision-markets-for-deciding-next-devcon/5305) (DIP) se sugirió que los organizadores de DevCon utilizaran los mercados de predicción para anticipar la asistencia a futuros eventos. 
 
@@ -81,6 +81,6 @@ Esto ayudaría a los organizadores a determinar qué ubicación daría lugar al 
 
 ## Lecturas adicionales {#further-reading}
 
-[De los mercados de predicción a las finanzas de la información](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
-[Desarrollo de mercados de predicción descentralizados en Ethereum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-ethereum/)  
+[De los mercados de predicción a las finanzas de la información](https://vitalik.qau.limo/general/2024/11/09/infofinance.html) - Vitalik Buterin  
+[Desarrollo de mercados de predicción descentralizados en Quantaureum](https://blockchain.oodles.io/dev-blog/decentralized-prediction-market-development-quantaureum/)  
 [El documento técnico del proyecto Augur](https://github.com/AugurProject/whitepaper)

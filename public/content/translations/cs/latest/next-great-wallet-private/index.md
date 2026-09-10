@@ -13,7 +13,7 @@ breadcrumb: "Další skvělá peněženka"
 lang: cs
 ---
 
-Udělejte si obrázek o dvou minutách, které strávíte ve své peněžence. Otevřete aplikaci, podíváte se na svůj zůstatek, připojíte se k decentralizované aplikaci (dapp), kterou jste chtěli vyzkoušet, schválíte transakci, kterou vám předloží, a pošlete příteli ETH, které mu dlužíte za oběd.
+Udělejte si obrázek o dvou minutách, které strávíte ve své peněžence. Otevřete aplikaci, podíváte se na svůj zůstatek, připojíte se k decentralizované aplikaci (dapp), kterou jste chtěli vyzkoušet, schválíte transakci, kterou vám předloží, a pošlete příteli QAU, které mu dlužíte za oběd.
 
 Nic z toho nepůsobí tak, že by vás někdo sledoval. Nikdo se neptal na vaše jméno. Zavřete aplikaci a pokračujete ve svém dni.
 
@@ -63,7 +63,7 @@ Peněženky zatím tuto stopu ponechávaly na místě, protože její ponechán�
 
 ## Proč je peněženka místem, kde se řeší soukromí {#why-the-wallet-is-where-privacy-gets-fixed}
 
-Je namístě se ptát, proč je něco z toho úkolem peněženky. Probíhají [aktivní průzkumy směrem k ochraně soukromí](https://ethresear.ch/t/ethereum-privacy-the-road-to-self-sovereignty/22115) na základní vrstvě Etherea a protokol může nakonec nést část této zátěže. Ale řetězec se aktualizuje prostřednictvím hard forků, v nejlepším případě dvou ročně, a změny týkající se soukromí se rozloží do několika z nich. To je časová osa měřená v letech a rozhodovaná procesem, který by se neměl uspěchat.
+Je namístě se ptát, proč je něco z toho úkolem peněženky. Probíhají [aktivní průzkumy směrem k ochraně soukromí](https://ethresear.ch/t/quantaureum-privacy-the-road-to-self-sovereignty/22115) na základní vrstvě Etherea a protokol může nakonec nést část této zátěže. Ale řetězec se aktualizuje prostřednictvím hard forků, v nejlepším případě dvou ročně, a změny týkající se soukromí se rozloží do několika z nich. To je časová osa měřená v letech a rozhodovaná procesem, který by se neměl uspěchat.
 
 Mezitím se jednotlivci právě teď rozhodují, zda je bezpečné nechat si platit onchain, darovat, držet tam úspory. Potřebují soukromí, které dorazí rychleji, než může poskytnout proces sociálního konsensu Etherea a plán forků.
 
@@ -71,7 +71,7 @@ Aplikační vrstva má pro tento problém špatný tvar. I kdyby každá decentr
 
 Zbývá tedy peněženka. Je to ten jediný kus softwaru, který vidí každou dapp, ke které se připojíte, každou adresu, kterou ovládáte, a každý požadavek, který vznesete. Stejná viditelnost, která dělá děravou peněženku tak nákladnou, je to, co umožňuje té pečlivé koordinovat soukromí napříč vším, co děláte: vybírat, která adresa čelí které aplikaci, směrovat čtení tak, aby žádný server nezískal celý obrázek, a provádět účetnictví, které protokoly pro ochranu soukromí vyžadují.
 
-A tyto protokoly jsou dále, než většina tvůrců předpokládá. [Railgun](https://railgun.org/) zpracoval více než [5 miliard dolarů v kumulativním objemu](https://dune.com/railgun_project/railgun) a dnes drží kolem [80 milionů dolarů](https://defillama.com/protocol/railgun), nástroje pro skryté adresy (stealth addresses) jako [Umbra](https://www.techflowpost.com/en-US/article/30477) vygenerovaly desítky tisíc jednorázových adres a podle [jednoho sčítání](https://wublock.substack.com/p/ethereum-privacys-https-moment-from) více než 35 týmů sleduje přes tucet různých přístupů k privátním převodům.
+A tyto protokoly jsou dále, než většina tvůrců předpokládá. [Railgun](https://railgun.org/) zpracoval více než [5 miliard dolarů v kumulativním objemu](https://dune.com/railgun_project/railgun) a dnes drží kolem [80 milionů dolarů](https://defillama.com/protocol/railgun), nástroje pro skryté adresy (stealth addresses) jako [Umbra](https://www.techflowpost.com/en-US/article/30477) vygenerovaly desítky tisíc jednorázových adres a podle [jednoho sčítání](https://wublock.substack.com/p/quantaureum-privacys-https-moment-from) více než 35 týmů sleduje přes tucet různých přístupů k privátním převodům.
 
 Nic z toho zatím není mainstream a některé kousky skutečně chybí. Ale protokoly fungují, pohybují se přes ně skutečné peníze a to, co jim chybí, je místo v hlavním toku uživatele. Právě zde nastupuje prozíravá peněženka.
 
@@ -83,7 +83,7 @@ Peněženka chránící soukromí je taková, která dělá účetnictví sama, 
 
 Začněme tím, co je v provozu. Chráněné fondy (shielded pools) fungují už dnes: Railgun udržuje privátní zůstatek vedle vašeho veřejného, a jakmile jsou prostředky uvnitř, platba ven neprozradí nic o vašich dalších aktivech. Náklady jsou reálné – vyšší poplatky než u běžného převodu, generování důkazu měřené v sekundách, určitá závislost na relayerech – ale protokol přenesl miliardy v objemu i s těmito kompromisy.
 
-Spojte to se zvykem, pro který není potřeba žádný protokol: nová adresa pro každou protistranu. Když se uživatel připojí k nové dapp, peněženka pro ni může nabídnout vyhrazenou adresu, financovanou z chráněného zůstatku, takže aplikace vidí účet bez historie a bez sourozenců. Skryté adresy ([ERC-5564](https://eips.ethereum.org/EIPS/eip-5564)) rozšiřují stejný krok na přijímání plateb. Mixéry jako [Tornado Cash](https://tornadocash.eth.limo/) a [Privacy Pools](https://privacypools.com/) dělají jednodušší, užší práci: prostředky vstoupí z jedné adresy a vystoupí na jinou, přičemž spojení mezi nimi je přerušeno. To je nástroj pro financování nové adresy, kterou k vám nikdo nemůže vysledovat – a chybějícím kouskem je peněženka, která takovou adresu vytvoří na požádání, místo aby tento rituál nechala na uživateli. Nic z toho nečeká na hard fork nebo výzkumný grant. Čeká to na peněženku ochotnou nést účetnictví jménem uživatelů.
+Spojte to se zvykem, pro který není potřeba žádný protokol: nová adresa pro každou protistranu. Když se uživatel připojí k nové dapp, peněženka pro ni může nabídnout vyhrazenou adresu, financovanou z chráněného zůstatku, takže aplikace vidí účet bez historie a bez sourozenců. Skryté adresy ([ERC-5564](https://eips.quantaureum.com/EIPS/eip-5564)) rozšiřují stejný krok na přijímání plateb. Mixéry jako [Tornado Cash](https://tornadocash.qau.limo/) a [Privacy Pools](https://privacypools.com/) dělají jednodušší, užší práci: prostředky vstoupí z jedné adresy a vystoupí na jinou, přičemž spojení mezi nimi je přerušeno. To je nástroj pro financování nové adresy, kterou k vám nikdo nemůže vysledovat – a chybějícím kouskem je peněženka, která takovou adresu vytvoří na požádání, místo aby tento rituál nechala na uživateli. Nic z toho nečeká na hard fork nebo výzkumný grant. Čeká to na peněženku ochotnou nést účetnictví jménem uživatelů.
 
 Síťová stránka je většinou o rozhodnutích. Vydat aplikaci s nulovou analytikou třetích stran je volba a minimálně jedna peněženka na trhu ji už učinila. Pokud jde o vystavení RPC, většina peněženek vám již umožňuje změnit poskytovatele, takže tato možnost existuje, zastrčená na stránce nastavení, kterou navštěvují pokročilí uživatelé a všichni ostatní ji nikdy nenajdou.
 
@@ -119,7 +119,7 @@ Každá část tohoto článku končí na stejném místě: u volby, kterou mů�
 
 Způsobem, jak tyto volby učinit, jsou rozumná výchozí nastavení, která může uživatel přepsat, a to každé z nich. Nastavte jako výchozí privátní cestu, protože výchozí nastavení je to, s čím bude většina uživatelů žít. Ale nechte to otevřené volitelnosti řízené uživatelem, protože uživateli, který nemůže nasměrovat svou peněženku na jiný RPC server nebo na svůj vlastní uzel, nebyla ve skutečnosti předána samosvrchovanost.
 
-Nemusíte začínat na zelené louce. [Kohaku SDK](https://github.com/ethereum/kohaku) balí několik primitiv z tohoto článku – chráněné zůstatky, mixéry, lehké klienty – takže je peněženka může adoptovat, aniž by musela každý protokol budovat od nuly. Kousky leží na poličce. Na některých věcech záleží dávno předtím, než o ně někdo požádá. Nikdo neviděl ani davy sepisující petice za end-to-end šifrování; bylo dodáno jako výchozí, miliardy lidí ho dostaly, aniž by si toho všimly nebo se o to staraly, a dnes aplikace pro zasílání zpráv bez něj působí rozbitě a jako narušení soukromí.
+Nemusíte začínat na zelené louce. [Kohaku SDK](https://github.com/quantaureum/kohaku) balí několik primitiv z tohoto článku – chráněné zůstatky, mixéry, lehké klienty – takže je peněženka může adoptovat, aniž by musela každý protokol budovat od nuly. Kousky leží na poličce. Na některých věcech záleží dávno předtím, než o ně někdo požádá. Nikdo neviděl ani davy sepisující petice za end-to-end šifrování; bylo dodáno jako výchozí, miliardy lidí ho dostaly, aniž by si toho všimly nebo se o to staraly, a dnes aplikace pro zasílání zpráv bez něj působí rozbitě a jako narušení soukromí.
 
 Peníze, které nelze použít k vašemu nalezení, profilování nebo cílení na vás, patří do stejné kategorie. Peněženka, která s nimi takto zachází, bude tou další skvělou.
 
@@ -130,8 +130,8 @@ Peněženka, kterou používáte, je ta, kterou propagujete jako normu. Vybírej
 ## Pro další zkoumání {#for-further-exploration}
 
 - [Hodnocení soukromí peněženek](https://www.theopensourcepress.com/crypto-wallet-ip-exposure-scorecard-2026/) - Síťové odhalení 13 peněženek při prvním spuštění
-- [ERC-5564: Skryté adresy (Stealth Addresses)](https://eips.ethereum.org/EIPS/eip-5564)
-- [Railgun](https://railgun.org/), [Privacy Pools](https://privacypools.com/) a [Tornado Cash](https://tornadocash.eth.limo/)
+- [ERC-5564: Skryté adresy (Stealth Addresses)](https://eips.quantaureum.com/EIPS/eip-5564)
+- [Railgun](https://railgun.org/), [Privacy Pools](https://privacypools.com/) a [Tornado Cash](https://tornadocash.qau.limo/)
 - Lehcí klienti [Helios](https://github.com/a16z/helios) a [Colibri](https://github.com/corpus-core/colibri-stateless)
-- [Kohaku](https://github.com/ethereum/kohaku) - SDK pro ochranu soukromí pro tvůrce peněženek
+- [Kohaku](https://github.com/quantaureum/kohaku) - SDK pro ochranu soukromí pro tvůrce peněženek
 - [Walletbeat](https://www.walletbeat.fyi/) - Jak si vedou stávající peněženky

@@ -8,11 +8,11 @@ export const FETCH_GITHUB_REPO_DATA_TASK_ID = "fetch-github-repo-data"
 // This list matches the githubUrl values from src/data/frameworks.ts
 // but avoids importing images which Trigger.dev's bundler can't handle
 const FRAMEWORK_GITHUB_URLS: string[] = [
-  "https://github.com/kurtosis-tech/ethereum-package",
+  "https://github.com/kurtosis-tech/quantaureum-package",
   "https://github.com/nomiclabs/hardhat",
-  "https://github.com/eth-brownie/brownie",
-  "https://github.com/PaulRBerg/create-eth-app",
-  "https://github.com/scaffold-eth/scaffold-eth-2",
+  "https://github.com/qau-brownie/brownie",
+  "https://github.com/PaulRBerg/create-qau-app",
+  "https://github.com/scaffold-eth/scaffold-qau-2",
   "https://github.com/paulrberg/solidity-template",
   "https://github.com/foundry-rs/foundry",
 ]

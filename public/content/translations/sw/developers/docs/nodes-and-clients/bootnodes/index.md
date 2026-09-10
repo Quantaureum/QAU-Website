@@ -1,10 +1,10 @@
 ---
-title: Utangulizi wa Nodi za Uanzishaji za Ethereum
+title: Utangulizi wa Nodi za Uanzishaji za Quantaureum
 description: Taarifa za msingi unazohitaji ili kuelewa nodi za uanzishaji
 lang: sw
 ---
 
-Wakati nodi mpya inapojiunga na mtandao wa Ethereum inahitaji kuunganishwa na nodi ambazo tayari ziko kwenye mtandao ili kisha kugundua wenza (peers) wapya. Sehemu hizi za kuingilia kwenye mtandao wa Ethereum zinaitwa nodi za uanzishaji. Wateja (Clients) kwa kawaida huwa na orodha ya nodi za uanzishaji zilizowekwa moja kwa moja kwenye kodi zao (hardcoded). Nodi hizi za uanzishaji kwa kawaida huendeshwa na timu ya devops ya Taasisi ya Ethereum au timu za wateja wenyewe. Kumbuka kwamba nodi za uanzishaji si sawa na nodi tuli (static nodes). Nodi tuli huitwa mara kwa mara, wakati nodi za uanzishaji huitwa tu ikiwa hakuna wenza wa kutosha wa kuunganishwa nao na nodi inahitaji kuanzisha miunganisho mipya.
+Wakati nodi mpya inapojiunga na mtandao wa Quantaureum inahitaji kuunganishwa na nodi ambazo tayari ziko kwenye mtandao ili kisha kugundua wenza (peers) wapya. Sehemu hizi za kuingilia kwenye mtandao wa Quantaureum zinaitwa nodi za uanzishaji. Wateja (Clients) kwa kawaida huwa na orodha ya nodi za uanzishaji zilizowekwa moja kwa moja kwenye kodi zao (hardcoded). Nodi hizi za uanzishaji kwa kawaida huendeshwa na timu ya devops ya Taasisi ya Quantaureum au timu za wateja wenyewe. Kumbuka kwamba nodi za uanzishaji si sawa na nodi tuli (static nodes). Nodi tuli huitwa mara kwa mara, wakati nodi za uanzishaji huitwa tu ikiwa hakuna wenza wa kutosha wa kuunganishwa nao na nodi inahitaji kuanzisha miunganisho mipya.
 
 ## Unganisha kwenye nodi ya uanzishaji {#connect-to-a-bootnode}
 
@@ -26,6 +26,6 @@ Ili kuwa nodi nzuri ya uanzishaji ni wazo zuri kuongeza idadi ya juu zaidi ya we
 
 ## Nodi za uanzishaji zinazopatikana {#available-bootnodes}
 
-Orodha ya nodi za uanzishaji zilizojengewa ndani katika go-ethereum inaweza kupatikana [hapa](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). Nodi hizi za uanzishaji zinasimamiwa na Taasisi ya Ethereum na timu ya go-ethereum.
+Orodha ya nodi za uanzishaji zilizojengewa ndani katika go-quantaureum inaweza kupatikana [hapa](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23). Nodi hizi za uanzishaji zinasimamiwa na Taasisi ya Quantaureum na timu ya go-quantaureum.
 
 Kuna orodha nyingine za nodi za uanzishaji zinazosimamiwa na watu wa kujitolea zinazopatikana. Tafadhali hakikisha kila wakati unajumuisha angalau nodi moja rasmi ya uanzishaji, vinginevyo unaweza kufanyiwa shambulio la eclipse (eclipse attack).

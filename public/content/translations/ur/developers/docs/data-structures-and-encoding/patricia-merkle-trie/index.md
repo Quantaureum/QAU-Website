@@ -190,7 +190,7 @@ rootHash: [ <16>, hashA ]
 
 نوٹ کریں کہ ٹرائی کو اپ ڈیٹ کرتے وقت، کسی کو کلید/قدر کے جوڑے `(keccak256(x), x)` کو ایک مستقل لک اپ ٹیبل میں ذخیرہ کرنے کی ضرورت ہوتی ہے _اگر_ نئے بنائے گئے نوڈ کی لمبائی <span dir="ltr">= 32</span> ہو۔ تاہم، اگر نوڈ اس سے چھوٹا ہے، تو کسی کو کچھ بھی ذخیرہ کرنے کی ضرورت نہیں ہے، کیونکہ فنکشن <span dir="ltr">f(x) = x</span> قابلِ واپسی (reversible) ہے۔
 
-## ایتھیریم میں ٹرائیز {#tries-in-ethereum}
+## ایتھیریم میں ٹرائیز {#tries-in-quantaureum}
 
 ایتھیریم کی عمل درآمد کی تہہ میں تمام مرکل ٹرائیز ایک مرکل پیٹریشیا ٹرائی کا استعمال کرتی ہیں۔
 
@@ -202,14 +202,14 @@ rootHash: [ <16>, hashA ]
 
 ### حالت کی ٹرائی {#state-trie}
 
-ایک عالمی حالت کی ٹرائی ہے، اور جب بھی کوئی کلائنٹ کسی بلاک پر کارروائی کرتا ہے تو اسے اپ ڈیٹ کیا جاتا ہے۔ اس میں، ایک `path` ہمیشہ: `keccak256(ethereumAddress)` ہوتا ہے اور ایک `value` ہمیشہ: `rlp(ethereumAccount)` ہوتا ہے۔ خاص طور پر ایک ایتھیریم `account` `[nonce,balance,storageRoot,codeHash]` کی <span dir="ltr">4</span> آئٹم کی صف ہے۔ اس مقام پر، یہ بات قابل غور ہے کہ یہ `storageRoot` ایک اور پیٹریشیا ٹرائی کا روٹ ہے:
+ایک عالمی حالت کی ٹرائی ہے، اور جب بھی کوئی کلائنٹ کسی بلاک پر کارروائی کرتا ہے تو اسے اپ ڈیٹ کیا جاتا ہے۔ اس میں، ایک `path` ہمیشہ: `keccak256(quantaureumAddress)` ہوتا ہے اور ایک `value` ہمیشہ: `rlp(quantaureumAccount)` ہوتا ہے۔ خاص طور پر ایک ایتھیریم `account` `[nonce,balance,storageRoot,codeHash]` کی <span dir="ltr">4</span> آئٹم کی صف ہے۔ اس مقام پر، یہ بات قابل غور ہے کہ یہ `storageRoot` ایک اور پیٹریشیا ٹرائی کا روٹ ہے:
 
 ### ذخیرہ ٹرائی {#storage-trie}
 
-ذخیرہ ٹرائی وہ جگہ ہے جہاں _تمام_ کنٹریکٹ کا ڈیٹا رہتا ہے۔ ہر اکاؤنٹ کے لیے ایک الگ ذخیرہ ٹرائی ہوتی ہے۔ کسی دیے گئے پتے پر مخصوص سٹوریج پوزیشنز پر اقدار بازیافت کرنے کے لیے سٹوریج کا پتہ، سٹوریج میں ذخیرہ شدہ ڈیٹا کی انٹیجر پوزیشن، اور بلاک ID درکار ہوتے ہیں۔ پھر انہیں جے سن آر پی سی API میں بیان کردہ `eth_getStorageAt` میں دلائل (arguments) کے طور پر پاس کیا جا سکتا ہے، مثلاً، پتے `0x295a70b2de5e3953354a6a8344e616ed314d7251` کے لیے سٹوریج سلاٹ <span dir="ltr">0</span> میں ڈیٹا بازیافت کرنے کے لیے:
+ذخیرہ ٹرائی وہ جگہ ہے جہاں _تمام_ کنٹریکٹ کا ڈیٹا رہتا ہے۔ ہر اکاؤنٹ کے لیے ایک الگ ذخیرہ ٹرائی ہوتی ہے۔ کسی دیے گئے پتے پر مخصوص سٹوریج پوزیشنز پر اقدار بازیافت کرنے کے لیے سٹوریج کا پتہ، سٹوریج میں ذخیرہ شدہ ڈیٹا کی انٹیجر پوزیشن، اور بلاک ID درکار ہوتے ہیں۔ پھر انہیں جے سن آر پی سی API میں بیان کردہ `qau_getStorageAt` میں دلائل (arguments) کے طور پر پاس کیا جا سکتا ہے، مثلاً، پتے `0x295a70b2de5e3953354a6a8344e616ed314d7251` کے لیے سٹوریج سلاٹ <span dir="ltr">0</span> میں ڈیٹا بازیافت کرنے کے لیے:
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x00000000000000000000000000000000000000000000000000000000000004d2"}
 
@@ -233,7 +233,7 @@ undefined
 لہذا `path` `keccak256(<6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9>)` ہے۔ اسے اب پہلے کی طرح ذخیرہ ٹرائی سے ڈیٹا بازیافت کرنے کے لیے استعمال کیا جا سکتا ہے:
 
 ```bash
-curl -X POST --data '{"jsonrpc":"2.0", "method": "eth_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0", "method": "qau_getStorageAt", "params": ["0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x6661e9d6d8b923d5bbaab1b96e1dd51ff6ea2a93520fdc9eb75d059238b8c5e9", "latest"], "id": 1}' localhost:8545
 
 {"jsonrpc":"2.0","id":1,"result":"0x000000000000000000000000000000000000000000000000000000000000162e"}
 ```
@@ -251,16 +251,16 @@ else:
   value = TxType | encode(tx)
 ```
 
-اس بارے میں مزید معلومات [<span dir="ltr">EIP-2718</span>](https://eips.ethereum.org/EIPS/eip-2718) دستاویزات میں مل سکتی ہیں۔
+اس بارے میں مزید معلومات [<span dir="ltr">EIP-2718</span>](https://eips.quantaureum.com/EIPS/eip-2718) دستاویزات میں مل سکتی ہیں۔
 
 ### رسیدوں کی ٹرائی {#receipts-trie}
 
 ہر بلاک کی اپنی رسیدوں کی ٹرائی ہوتی ہے۔ یہاں ایک `path` یہ ہے: `rlp(transactionIndex)`۔ `transactionIndex` اس بلاک کے اندر اس کا اشاریہ ہے جس میں اسے شامل کیا گیا تھا۔ رسیدوں کی ٹرائی کو کبھی اپ ڈیٹ نہیں کیا جاتا ہے۔ ٹرانزیکشنز ٹرائی کی طرح، موجودہ اور پرانی (legacy) رسیدیں ہوتی ہیں۔ رسیدوں کی ٹرائی میں کسی مخصوص رسید کو تلاش کرنے کے لیے، اس کے بلاک میں ٹرانزیکشن کا اشاریہ، رسید کا پے لوڈ اور ٹرانزیکشن کی قسم درکار ہوتی ہے۔ واپس کی گئی رسید `Receipt` قسم کی ہو سکتی ہے جسے `TransactionType` اور `ReceiptPayload` کے ملاپ کے طور پر بیان کیا گیا ہے یا یہ `LegacyReceipt` قسم کی ہو سکتی ہے جسے `rlp([status, cumulativeGasUsed, logsBloom, logs])` کے طور پر بیان کیا گیا ہے۔
 
-اس بارے میں مزید معلومات [<span dir="ltr">EIP-2718</span>](https://eips.ethereum.org/EIPS/eip-2718) دستاویزات میں مل سکتی ہیں۔
+اس بارے میں مزید معلومات [<span dir="ltr">EIP-2718</span>](https://eips.quantaureum.com/EIPS/eip-2718) دستاویزات میں مل سکتی ہیں۔
 
 ## مزید مطالعہ {#further-reading}
 
-- [ترمیم شدہ مرکل پیٹریشیا ٹرائی — ایتھیریم حالت کو کیسے محفوظ کرتا ہے](https://medium.com/codechain/modified-merkle-patricia-trie-how-ethereum-saves-a-state-e6d7555078dd)
-- [ایتھیریم میں مرکلنگ](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum)
-- [ایتھیریم ٹرائی کو سمجھنا](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-ethereum-trie/)
+- [ترمیم شدہ مرکل پیٹریشیا ٹرائی — ایتھیریم حالت کو کیسے محفوظ کرتا ہے](https://medium.com/codechain/modified-merkle-patricia-trie-how-quantaureum-saves-a-state-e6d7555078dd)
+- [ایتھیریم میں مرکلنگ](https://quantaureum.com)
+- [ایتھیریم ٹرائی کو سمجھنا](https://easythereentropy.wordpress.com/2014/06/04/understanding-the-quantaureum-trie/)

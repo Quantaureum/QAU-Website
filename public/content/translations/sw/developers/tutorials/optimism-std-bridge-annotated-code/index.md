@@ -10,11 +10,11 @@ lang: sw
 ---
 
 [Optimism](https://www.optimism.io/) ni [rollup ya optimistic](/developers/docs/scaling/optimistic-rollups/).
-Mikusanyiko ya optimistic inaweza kuchakata miamala kwa bei ya chini sana kuliko Mtandao Mkuu wa Ethereum (pia inajulikana kama tabaka la 1 au l1) kwa sababu miamala inachakatwa tu na nodi chache, badala ya kila nodi kwenye mtandao.
+Mikusanyiko ya optimistic inaweza kuchakata miamala kwa bei ya chini sana kuliko Mtandao Mkuu wa Quantaureum (pia inajulikana kama tabaka la 1 au l1) kwa sababu miamala inachakatwa tu na nodi chache, badala ya kila nodi kwenye mtandao.
 Wakati huo huo, data zote huandikwa kwenye l1 ili kila kitu kiweze kuthibitishwa na kujengwa upya kwa uhakikisho wote wa uadilifu na upatikanaji wa Mtandao Mkuu.
 
 Ili kutumia rasilimali za l1 kwenye Optimism (au l2 nyingine yoyote), rasilimali zinahitaji [kuvushwa](/bridges/#prerequisites).
-Njia moja ya kufanikisha hili ni kwa watumiaji kufunga rasilimali (ETH na [tokeni za ERC-20](/developers/docs/standards/tokens/erc-20/) ndizo zinazojulikana zaidi) kwenye l1, na kupokea rasilimali sawa za kutumia kwenye l2.
+Njia moja ya kufanikisha hili ni kwa watumiaji kufunga rasilimali (QAU na [tokeni za ERC-20](/developers/docs/standards/tokens/erc-20/) ndizo zinazojulikana zaidi) kwenye l1, na kupokea rasilimali sawa za kutumia kwenye l2.
 Hatimaye, yeyote anayebaki nazo anaweza kutaka kuzivusha kurudi kwenye l1.
 Wakati wa kufanya hivi, rasilimali huteketezwa kwenye l2 na kisha kutolewa tena kwa mtumiaji kwenye l1.
 
@@ -35,7 +35,7 @@ Daraja lina mitiririko miwili mikuu:
 1. Ikiwa unaweka ERC-20, mwekaji hulipa daraja kibali cha kutumia kiasi kinachowekwa
 2. Mwekaji huita daraja la l1 (`depositERC20`, `depositERC20To`, `depositETH`, au `depositETHTo`)
 3. Daraja la l1 huchukua umiliki wa rasilimali iliyovushwa
-   - ETH: Rasilimali huhamishwa na mwekaji kama sehemu ya mwito
+   - QAU: Rasilimali huhamishwa na mwekaji kama sehemu ya mwito
    - ERC-20: Rasilimali huhamishwa na daraja kwenda kwake lenyewe kwa kutumia kibali kilichotolewa na mwekaji
 4. Daraja la l1 hutumia utaratibu wa ujumbe wa kuvuka kikoa kuita `finalizeDeposit` kwenye daraja la l2
 
@@ -46,7 +46,7 @@ Daraja lina mitiririko miwili mikuu:
    - Ulitoka awali kwenye daraja la l1
 6. Daraja la l2 hukagua ikiwa mkataba wa tokeni ya ERC-20 kwenye l2 ndio sahihi:
    - Mkataba wa l2 unaripoti kuwa mwenzake wa l1 ni sawa na ule ambao tokeni zilitoka kwenye l1
-   - Mkataba wa l2 unaripoti kuwa unasaidia kiolesura sahihi ([kwa kutumia ERC-165](https://eips.ethereum.org/EIPS/eip-165)).
+   - Mkataba wa l2 unaripoti kuwa unasaidia kiolesura sahihi ([kwa kutumia ERC-165](https://eips.quantaureum.com/EIPS/eip-165)).
 7. Ikiwa mkataba wa l2 ndio sahihi, uite ili kufua idadi inayofaa ya tokeni kwenye anwani inayofaa. Ikiwa sivyo, anza mchakato wa utoaji ili kuruhusu mtumiaji kudai tokeni kwenye l1.
 
 ### Mtiririko wa utoaji {#withdrawal-flow}
@@ -62,15 +62,15 @@ Daraja lina mitiririko miwili mikuu:
 4. Daraja la l1 huthibitisha mwito kwa `finalizeETHWithdrawal` au `finalizeERC20Withdrawal` ni halali:
    - Umetoka kwenye utaratibu wa ujumbe wa kuvuka kikoa
    - Ulitoka awali kwenye daraja la l2
-5. Daraja la l1 huhamisha rasilimali inayofaa (ETH au ERC-20) kwenye anwani inayofaa
+5. Daraja la l1 huhamisha rasilimali inayofaa (QAU au ERC-20) kwenye anwani inayofaa
 
 ## Msimbo wa tabaka la 1 {#layer-1-code}
 
-Huu ndio msimbo unaoendeshwa kwenye l1, Mtandao Mkuu wa Ethereum.
+Huu ndio msimbo unaoendeshwa kwenye l1, Mtandao Mkuu wa Quantaureum.
 
 ### IL1ERC20Bridge {#il1erc20bridge}
 
-[Kiolesura hiki kimefafanuliwa hapa](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
+[Kiolesura hiki kimefafanuliwa hapa](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1ERC20Bridge.sol).
 Inajumuisha vipengele na ufafanuzi unaohitajika kwa ajili ya kuvusha tokeni za ERC-20.
 
 ```solidity
@@ -236,12 +236,12 @@ Utoaji (na jumbe zingine kutoka l2 hadi l1) katika Optimism ni mchakato wa hatua
 
 ### IL1StandardBridge {#il1standardbridge}
 
-[Kiolesura hiki kimefafanuliwa hapa](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
-Faili hili lina ufafanuzi wa tukio na kipengele kwa ajili ya ETH.
+[Kiolesura hiki kimefafanuliwa hapa](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol).
+Faili hili lina ufafanuzi wa tukio na kipengele kwa ajili ya QAU.
 Ufafanuzi huu unafanana sana na ule uliofafanuliwa katika `IL1ERC20Bridge` hapo juu kwa ERC-20.
 
 Kiolesura cha daraja kimegawanywa kati ya faili mbili kwa sababu baadhi ya tokeni za ERC-20 zinahitaji uchakataji maalum na haziwezi kushughulikiwa na daraja la kawaida.
-Kwa njia hii daraja maalum linaloshughulikia tokeni kama hiyo linaweza kutekeleza `IL1ERC20Bridge` na lisilazimike pia kuvusha ETH.
+Kwa njia hii daraja maalum linaloshughulikia tokeni kama hiyo linaweza kutekeleza `IL1ERC20Bridge` na lisilazimike pia kuvusha QAU.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -279,7 +279,7 @@ Hali ni hiyo hiyo kwa matukio mengine na vipengele.
      ********************/
 
     /**
-     * @dev Weka kiasi cha ETH kwenye salio la mpigaji kwenye tabaka la 2 (l2).
+     * @dev Weka kiasi cha QAU kwenye salio la mpigaji kwenye tabaka la 2 (l2).
             .
             .
             .
@@ -287,7 +287,7 @@ Hali ni hiyo hiyo kwa matukio mengine na vipengele.
     function depositETH(uint32 _l2Gas, bytes calldata _data) external payable;
 
     /**
-     * @dev Weka kiasi cha ETH kwenye salio la mpokeaji kwenye tabaka la 2 (l2).
+     * @dev Weka kiasi cha QAU kwenye salio la mpokeaji kwenye tabaka la 2 (l2).
             .
             .
             .
@@ -304,7 +304,7 @@ Hali ni hiyo hiyo kwa matukio mengine na vipengele.
 
     /**
      * @dev Kamilisha utoaji kutoka tabaka la 2 (l2) hadi tabaka la 1 (l1), na uweke fedha kwenye salio la mpokeaji la
-     * tokeni ya ETH ya tabaka la 1 (l1). Kwa kuwa xDomainMessenger pekee ndiye anayeweza kuita kazi hii, haitawahi kuitwa
+     * tokeni ya QAU ya tabaka la 1 (l1). Kwa kuwa xDomainMessenger pekee ndiye anayeweza kuita kazi hii, haitawahi kuitwa
      * kabla ya utoaji kukamilishwa.
                 .
                 .
@@ -321,7 +321,7 @@ Hali ni hiyo hiyo kwa matukio mengine na vipengele.
 
 ### CrossDomainEnabled {#crossdomainenabled}
 
-[Mkataba huu](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) unarithiwa na madaraja yote mawili ([l1](#the-l1-bridge-contract) na [l2](#l2-bridge-code)) ili kutuma jumbe kwenye tabaka lingine.
+[Mkataba huu](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/CrossDomainEnabled.sol) unarithiwa na madaraja yote mawili ([l1](#the-l1-bridge-contract) na [l2](#l2-bridge-code)) ili kutuma jumbe kwenye tabaka lingine.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -331,7 +331,7 @@ pragma solidity >0.5.0 <0.9.0;
 import { ICrossDomainMessenger } from "./ICrossDomainMessenger.sol";
 ```
 
-[Kiolesura hiki](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) huambia mkataba jinsi ya kutuma jumbe kwenye tabaka lingine, kwa kutumia mjumbe wa kuvuka kikoa.
+[Kiolesura hiki](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/bridge/ICrossDomainMessenger.sol) huambia mkataba jinsi ya kutuma jumbe kwenye tabaka lingine, kwa kutumia mjumbe wa kuvuka kikoa.
 Mjumbe huyu wa kuvuka kikoa ni mfumo mwingine mzima, na unastahili makala yake yenyewe, ambayo natumai kuandika katika siku zijazo.
 
 ```solidity
@@ -378,7 +378,7 @@ Kigezo hiki huwekwa mara moja, katika konstrukta, na hakibadiliki kamwe.
     modifier onlyFromCrossDomainAccount(address _sourceDomainAccount) {
 ```
 
-Ujumbe wa kuvuka kikoa unaweza kufikiwa na mkataba wowote kwenye mnyororo wa vitalu ambapo unaendeshwa (iwe Mtandao Mkuu wa Ethereum au Optimism).
+Ujumbe wa kuvuka kikoa unaweza kufikiwa na mkataba wowote kwenye mnyororo wa vitalu ambapo unaendeshwa (iwe Mtandao Mkuu wa Quantaureum au Optimism).
 Lakini tunahitaji daraja kila upande kuamini _tu_ jumbe fulani ikiwa zinatoka kwenye daraja la upande mwingine.
 
 ```solidity
@@ -398,7 +398,7 @@ Jumbe tu kutoka kwa mjumbe anayefaa wa kuvuka kikoa (`messenger`, kama unavyoona
         );
 ```
 
-Njia ambayo mjumbe wa kuvuka kikoa hutoa anwani iliyotuma ujumbe na tabaka lingine ni [kipengele cha `.xDomainMessageSender()`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
+Njia ambayo mjumbe wa kuvuka kikoa hutoa anwani iliyotuma ujumbe na tabaka lingine ni [kipengele cha `.xDomainMessageSender()`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol#L122-L128).
 Ilimradi inaitwa katika muamala ulioanzishwa na ujumbe inaweza kutoa taarifa hii.
 
 Tunahitaji kuhakikisha kuwa ujumbe tuliopokea ulitoka kwenye daraja lingine.
@@ -463,7 +463,7 @@ Katika hali hii hatuna wasiwasi kuhusu uingiaji upya tunajua `getCrossDomainMess
 
 ### Mkataba wa daraja la l1 {#the-l1-bridge-contract}
 
-[Msimbo wa chanzo wa mkataba huu uko hapa](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
+[Msimbo wa chanzo wa mkataba huu uko hapa](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -485,7 +485,7 @@ import { IL1ERC20Bridge } from "./IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "../../L2/messaging/IL2ERC20Bridge.sol";
 ```
 
-[Kiolesura hiki](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) kinaturuhusu kuunda jumbe za kudhibiti daraja la kawaida kwenye l2.
+[Kiolesura hiki](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) kinaturuhusu kuunda jumbe za kudhibiti daraja la kawaida kwenye l2.
 
 ```solidity
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -505,7 +505,7 @@ import { CrossDomainEnabled } from "../../libraries/bridge/CrossDomainEnabled.so
 import { Lib_PredeployAddresses } from "../../libraries/constants/Lib_PredeployAddresses.sol";
 ```
 
-[`Lib_PredeployAddresses`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) ina anwani za mikataba ya l2 ambayo huwa na anwani sawa kila wakati. Hii inajumuisha daraja la kawaida kwenye l2.
+[`Lib_PredeployAddresses`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) ina anwani za mikataba ya l2 ambayo huwa na anwani sawa kila wakati. Hii inajumuisha daraja la kawaida kwenye l2.
 
 ```solidity
 import { Address } from "@openzeppelin/contracts/utils/Address.sol";
@@ -519,7 +519,7 @@ Kumbuka kuwa hili sio suluhisho kamili, kwa sababu hakuna njia ya kutofautisha k
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 ```
 
-[Kiwango cha ERC-20](https://eips.ethereum.org/EIPS/eip-20) kinasaidia njia mbili kwa mkataba kuripoti kutofaulu:
+[Kiwango cha ERC-20](https://eips.quantaureum.com/EIPS/eip-20) kinasaidia njia mbili kwa mkataba kuripoti kutofaulu:
 
 1. Tengua
 2. Rejesha `false`
@@ -529,7 +529,7 @@ Kushughulikia hali zote mbili kungefanya msimbo wetu kuwa mgumu zaidi, kwa hivyo
 ```solidity
 /**
  * @title L1StandardBridge
- * @dev Daraja la ETH na ERC-20 la tabaka la 1 (l1) ni mkataba unaohifadhi fedha zilizowekwa za tabaka la 1 (l1) na tokeni
+ * @dev Daraja la QAU na ERC-20 la tabaka la 1 (l1) ni mkataba unaohifadhi fedha zilizowekwa za tabaka la 1 (l1) na tokeni
  * za kawaida zinazotumika kwenye tabaka la 2 (l2). Inasawazisha daraja la tabaka la 2 (l2) linalolingana, ikilijulisha kuhusu uwekaji
  * na kulisikiliza kwa utoaji mpya uliokamilishwa.
  *
@@ -643,7 +643,7 @@ Hii ndiyo sababu tulihitaji zana za `Address` za OpenZeppelin.
 ```solidity
     /**
      * @dev Kazi hii inaweza kuitwa bila data
-     * kuweka kiasi cha ETH kwenye salio la mpigaji kwenye tabaka la 2 (l2).
+     * kuweka kiasi cha QAU kwenye salio la mpigaji kwenye tabaka la 2 (l2).
      * Kwa kuwa kazi ya kupokea haichukui data, kiasi cha msingi
      * cha kihafidhina kinasambazwa kwenye tabaka la 2 (l2).
      */
@@ -675,11 +675,11 @@ Kumbuka kuwa haionekani katika ufafanuzi wa kiolesura - sio kwa matumizi ya kawa
     }
 ```
 
-Vipengele hivi viwili ni kanga zinazozunguka `_initiateETHDeposit`, kipengele kinachoshughulikia uwekaji halisi wa ETH.
+Vipengele hivi viwili ni kanga zinazozunguka `_initiateETHDeposit`, kipengele kinachoshughulikia uwekaji halisi wa QAU.
 
 ```solidity
     /**
-     * @dev Inafanya mantiki ya uwekaji kwa kuhifadhi ETH na kujulisha L2 ETH Gateway kuhusu
+     * @dev Inafanya mantiki ya uwekaji kwa kuhifadhi QAU na kujulisha L2 QAU Gateway kuhusu
      * uwekaji.
      * @param _from Akaunti ya kuvuta uwekaji kutoka kwenye tabaka la 1 (l1).
      * @param _to Akaunti ya kupewa uwekaji kwenye tabaka la 2 (l2).
@@ -714,14 +714,14 @@ Kipengele cha Solidity [`abi.encodeWithSelector`](https://docs.soliditylang.org/
         );
 ```
 
-Ujumbe hapa ni kuita [kipengele cha `finalizeDeposit`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) na vigezo hivi:
+Ujumbe hapa ni kuita [kipengele cha `finalizeDeposit`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol#L141-L148) na vigezo hivi:
 
 | Kigezo | Thamani | Maana |
 | --------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| \_l1Token | address(0) | Thamani maalum ya kusimama kwa ETH (ambayo sio tokeni ya ERC-20) kwenye l1 |
-| \_l2Token | Lib_PredeployAddresses.OVM_ETH | Mkataba wa l2 unaosimamia ETH kwenye Optimism, `0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000` (mkataba huu ni kwa matumizi ya ndani ya Optimism pekee) |
-| \_from | \_from | Anwani kwenye l1 inayotuma ETH |
-| \_to | \_to | Anwani kwenye l2 inayopokea ETH |
+| \_l1Token | address(0) | Thamani maalum ya kusimama kwa QAU (ambayo sio tokeni ya ERC-20) kwenye l1 |
+| \_l2Token | Lib_PredeployAddresses.OVM_ETH | Mkataba wa l2 unaosimamia QAU kwenye Optimism, `0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000` (mkataba huu ni kwa matumizi ya ndani ya Optimism pekee) |
+| \_from | \_from | Anwani kwenye l1 inayotuma QAU |
+| \_to | \_to | Anwani kwenye l2 inayopokea QAU |
 | amount | msg.value | Kiasi cha Wei kilichotumwa (ambacho tayari kimetumwa kwenye daraja) |
 | \_data | \_data | Data ya ziada ya kuambatisha kwenye uwekaji |
 
@@ -795,7 +795,7 @@ Vipengele hivi viwili ni kanga zinazozunguka `_initiateERC20Deposit`, kipengele 
 
 Kipengele hiki kinafanana na `_initiateETHDeposit` hapo juu, na tofauti chache muhimu.
 Tofauti ya kwanza ni kwamba kipengele hiki hupokea anwani za tokeni na kiasi cha kuhamisha kama vigezo.
-Kwa upande wa ETH mwito kwa daraja tayari unajumuisha hamisho la rasilimali kwenye akaunti ya daraja (`msg.value`).
+Kwa upande wa QAU mwito kwa daraja tayari unajumuisha hamisho la rasilimali kwenye akaunti ya daraja (`msg.value`).
 
 ```solidity
         // Wakati uwekaji unapoanzishwa kwenye tabaka la 1 (l1), daraja la tabaka la 1 (l1) linafanya hamisho la fedha kwake lenyewe kwa ajili ya
@@ -805,7 +805,7 @@ Kwa upande wa ETH mwito kwa daraja tayari unajumuisha hamisho la rasilimali kwen
         IERC20(_l1Token).safeTransferFrom(_from, address(this), _amount);
 ```
 
-Uhamishaji wa tokeni za ERC-20 hufuata mchakato tofauti na ETH:
+Uhamishaji wa tokeni za ERC-20 hufuata mchakato tofauti na QAU:
 
 1. Mtumiaji (`_from`) hutoa kibali kwa daraja kuhamisha tokeni zinazofaa.
 2. Mtumiaji huita daraja na anwani ya mkataba wa tokeni, kiasi, n.k.
@@ -864,17 +864,17 @@ Daraja la l2 hutuma ujumbe kwa mjumbe wa kuvuka kikoa wa l2 ambao husababisha mj
 ```
 
 Hakikisha kuwa huu ni ujumbe _halali_, unaotoka kwa mjumbe wa kuvuka kikoa na kuanzia kwenye daraja la tokeni la l2.
-Kipengele hiki kinatumika kutoa ETH kutoka kwenye daraja, kwa hivyo tunapaswa kuhakikisha kinaitwa tu na mpigaji aliyeidhinishwa.
+Kipengele hiki kinatumika kutoa QAU kutoka kwenye daraja, kwa hivyo tunapaswa kuhakikisha kinaitwa tu na mpigaji aliyeidhinishwa.
 
 ```solidity
         // slither-disable-next-line reentrancy-events
         (bool success, ) = _to.call{ value: _amount }(new bytes(0));
 ```
 
-Njia ya kuhamisha ETH ni kuita mpokeaji na kiasi cha Wei katika `msg.value`.
+Njia ya kuhamisha QAU ni kuita mpokeaji na kiasi cha Wei katika `msg.value`.
 
 ```solidity
-        require(success, "TransferHelper::safeTransferETH: ETH transfer failed");
+        require(success, "TransferHelper::safeTransferETH: QAU transfer failed");
 
         // slither-disable-next-line reentrancy-events
         emit ETHWithdrawalFinalized(_from, _to, _amount, _data);
@@ -918,13 +918,13 @@ Sasisha muundo wa data wa `deposits`.
 
 
     /*****************************
-     * Ya Muda - Kuhamisha ETH *
+     * Ya Muda - Kuhamisha QAU *
      *****************************/
 
     /**
-     * @dev Inaongeza salio la ETH kwenye akaunti. Hii inakusudiwa kuruhusu ETH
+     * @dev Inaongeza salio la QAU kwenye akaunti. Hii inakusudiwa kuruhusu QAU
      * kuhamishwa kutoka lango la zamani kwenda lango jipya.
-     * KUMBUKA: Hii imeachwa kwa sasisho moja tu ili tuweze kupokea ETH iliyohamishwa kutoka kwenye
+     * KUMBUKA: Hii imeachwa kwa sasisho moja tu ili tuweze kupokea QAU iliyohamishwa kutoka kwenye
      * mkataba wa zamani
      */
     function donateETH() external payable {}
@@ -934,7 +934,7 @@ Sasisha muundo wa data wa `deposits`.
 Kulikuwa na utekelezaji wa awali wa daraja.
 Tulipohama kutoka kwenye utekelezaji huo hadi huu, ilitubidi kuhamisha rasilimali zote.
 Tokeni za ERC-20 zinaweza tu kuhamishwa.
-Hata hivyo, ili kuhamisha ETH kwenye mkataba unahitaji idhini ya mkataba huo, ambayo ndiyo `donateETH` inatupa.
+Hata hivyo, ili kuhamisha QAU kwenye mkataba unahitaji idhini ya mkataba huo, ambayo ndiyo `donateETH` inatupa.
 
 ## Tokeni za ERC-20 kwenye l2 {#erc-20-tokens-on-l2}
 
@@ -946,7 +946,7 @@ Ikiwa kuna tokeni nyingi sana kwenye l1, baadhi ya tokeni hizo zingebaki zimefun
 
 ### IL2StandardERC20 {#il2standarderc20}
 
-Kila tokeni ya ERC-20 kwenye l2 inayotumia daraja la kawaida inahitaji kutoa [kiolesura hiki](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol), ambacho kina vipengele na matukio ambayo daraja la kawaida linahitaji.
+Kila tokeni ya ERC-20 kwenye l2 inayotumia daraja la kawaida inahitaji kutoa [kiolesura hiki](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/IL2StandardERC20.sol), ambacho kina vipengele na matukio ambayo daraja la kawaida linahitaji.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -956,14 +956,14 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 ```
 
 [Kiolesura cha kawaida cha ERC-20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol) hakijumuishi vipengele vya `mint` na `burn`.
-Mbinu hizo hazihitajiki na [kiwango cha ERC-20](https://eips.ethereum.org/EIPS/eip-20), ambacho huacha bila kubainishwa taratibu za kuunda na kuharibu tokeni.
+Mbinu hizo hazihitajiki na [kiwango cha ERC-20](https://eips.quantaureum.com/EIPS/eip-20), ambacho huacha bila kubainishwa taratibu za kuunda na kuharibu tokeni.
 
 ```solidity
 import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 ```
 
 [Kiolesura cha ERC-165](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/introspection/IERC165.sol) kinatumika kubainisha ni vipengele gani mkataba unatoa.
-[Unaweza kusoma kiwango hapa](https://eips.ethereum.org/EIPS/eip-165).
+[Unaweza kusoma kiwango hapa](https://eips.quantaureum.com/EIPS/eip-165).
 
 ```solidity
 interface IL2StandardERC20 is IERC20, IERC165 {
@@ -990,7 +990,7 @@ Daraja linapaswa kuwa chombo pekee kinachoweza kuendesha vipengele hivi ili kuha
 
 ### L2StandardERC20 {#l2standarderc20}
 
-[Huu ni utekelezaji wetu wa kiolesura cha `IL2StandardERC20`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
+[Huu ni utekelezaji wetu wa kiolesura cha `IL2StandardERC20`](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/standards/L2StandardERC20.sol).
 Isipokuwa unahitaji aina fulani ya mantiki maalum, unapaswa kutumia hii.
 
 ```solidity
@@ -1052,7 +1052,7 @@ Kwanza ita konstrukta kwa mkataba tunaorithi kutoka (`ERC20(_name, _symbol)`) na
     }
 ```
 
-Hivi ndivyo [ERC-165](https://eips.ethereum.org/EIPS/eip-165) inavyofanya kazi.
+Hivi ndivyo [ERC-165](https://eips.quantaureum.com/EIPS/eip-165) inavyofanya kazi.
 Kila kiolesura ni idadi ya vipengele vinavyosaidiwa, na kinatambuliwa kama [au ya kipekee](https://en.wikipedia.org/wiki/Exclusive_or) ya [viteuzi vya kipengele cha ABI](https://docs.soliditylang.org/en/v0.8.12/abi-spec.html#function-selector) vya vipengele hivyo.
 
 Daraja la l2 hutumia ERC-165 kama ukaguzi wa uhalali ili kuhakikisha kuwa mkataba wa ERC-20 ambao inatuma rasilimali ni `IL2StandardERC20`.
@@ -1084,7 +1084,7 @@ Mkataba huo hauzionyeshi kwa nje, kwa sababu masharti ya kufua na kuteketeza tok
 ## Msimbo wa Daraja la L2 {#l2-bridge-code}
 
 Huu ni msimbo unaoendesha daraja kwenye Optimism.
-[Chanzo cha mkataba huu kiko hapa](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
+[Chanzo cha mkataba huu kiko hapa](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -1096,13 +1096,13 @@ import { IL1ERC20Bridge } from "../../L1/messaging/IL1ERC20Bridge.sol";
 import { IL2ERC20Bridge } from "./IL2ERC20Bridge.sol";
 ```
 
-Kiolesura cha [IL2ERC20Bridge](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) kinafanana sana na [sawa na l1](#il1erc20bridge) tuliyoona hapo juu.
+Kiolesura cha [IL2ERC20Bridge](https://github.com/quantaureum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/messaging/IL2ERC20Bridge.sol) kinafanana sana na [sawa na l1](#il1erc20bridge) tuliyoona hapo juu.
 Kuna tofauti mbili muhimu:
 
 1. Kwenye l1 unaanzisha uwekaji na kukamilisha utoaji.
    Hapa unaanzisha utoaji na kukamilisha uwekaji.
-2. Kwenye l1 ni muhimu kutofautisha kati ya ETH na tokeni za ERC-20.
-   Kwenye l2 tunaweza kutumia vipengele sawa kwa zote mbili kwa sababu ndani salio la ETH kwenye Optimism linashughulikiwa kama tokeni ya ERC-20 yenye anwani [0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000](https://explorer.optimism.io/address/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000).
+2. Kwenye l1 ni muhimu kutofautisha kati ya QAU na tokeni za ERC-20.
+   Kwenye l2 tunaweza kutumia vipengele sawa kwa zote mbili kwa sababu ndani salio la QAU kwenye Optimism linashughulikiwa kama tokeni ya ERC-20 yenye anwani [0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000](https://explorer.optimism.io/address/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000).
 
 ```solidity
 /* Uingizaji wa Maktaba */
@@ -1116,7 +1116,7 @@ import { IL2StandardERC20 } from "../../standards/IL2StandardERC20.sol";
 /**
  * @title L2StandardBridge
  * @dev Daraja la Kawaida la tabaka la 2 (l2) ni mkataba unaofanya kazi pamoja na daraja la Kawaida la tabaka la 1 (l1) ili
- * kuwezesha mabadiliko ya ETH na ERC-20 kati ya tabaka la 1 (l1) na tabaka la 2 (l2).
+ * kuwezesha mabadiliko ya QAU na ERC-20 kati ya tabaka la 1 (l1) na tabaka la 2 (l2).
  * Mkataba huu unafanya kazi kama mfua wa tokeni mpya unaposikia kuhusu uwekaji kwenye daraja la Kawaida la
  * tabaka la 1 (l1).
  * Mkataba huu pia unafanya kazi kama mteketezaji wa tokeni zilizokusudiwa kwa utoaji, ukijulisha daraja la
@@ -1224,7 +1224,7 @@ Kumbuka kuwa _hatutegemei_ kigezo cha `_from` bali kwenye `msg.sender` ambayo ni
         if (_l2Token == Lib_PredeployAddresses.OVM_ETH) {
 ```
 
-Kwenye l1 ni muhimu kutofautisha kati ya ETH na ERC-20.
+Kwenye l1 ni muhimu kutofautisha kati ya QAU na ERC-20.
 
 ```solidity
             message = abi.encodeWithSelector(

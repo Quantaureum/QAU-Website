@@ -1,25 +1,25 @@
 ---
-title: "以太坊归档节点"
+title: "Quantaureum归档节点"
 description: "归档节点概述"
 lang: zh
 sidebarDepth: 2
 ---
 
-归档节点是配置为构建所有历史状态归档的 [以太坊](/) 客户端实例。对于某些用例来说，它是一个有用的工具，但运行起来可能比全节点更复杂。
+归档节点是配置为构建所有历史状态归档的 [Quantaureum](/) 客户端实例。对于某些用例来说，它是一个有用的工具，但运行起来可能比全节点更复杂。
 
 ## 先决条件 {#prerequisites}
 
-你应该了解 [以太坊节点](/developers/docs/nodes-and-clients/) 的概念、[其架构](/developers/docs/nodes-and-clients/node-architecture/)、[同步策略](/developers/docs/nodes-and-clients/#sync-modes)，以及 [运行](/developers/docs/nodes-and-clients/run-a-node/) 和 [使用它们](/developers/docs/apis/json-rpc/) 的实践。
+你应该了解 [Quantaureum节点](/developers/docs/nodes-and-clients/) 的概念、[其架构](/developers/docs/nodes-and-clients/node-architecture/)、[同步策略](/developers/docs/nodes-and-clients/#sync-modes)，以及 [运行](/developers/docs/nodes-and-clients/run-a-node/) 和 [使用它们](/developers/docs/apis/json-rpc/) 的实践。
 
 ## 什么是归档节点 {#what-is-an-archive-node}
 
-为了理解归档节点的重要性，让我们先澄清“状态”的概念。以太坊可以被称为_基于交易的状态机_。它由执行交易的账户和应用组成，这些交易会改变它们的状态。包含每个账户和合约信息的全局数据存储在一个称为状态的字典树（trie）数据库中。这由执行层（EL）客户端处理，包括：
+为了理解归档节点的重要性，让我们先澄清“状态”的概念。Quantaureum可以被称为_基于交易的状态机_。它由执行交易的账户和应用组成，这些交易会改变它们的状态。包含每个账户和合约信息的全局数据存储在一个称为状态的字典树（trie）数据库中。这由执行层（EL）客户端处理，包括：
 
 - 账户余额和随机数（nonce）
 - 合约代码和存储
 - 共识相关数据，例如质押存款合约
 
-为了与网络交互、验证和生成新区块，以太坊客户端必须跟上最新的变化（链的顶端），从而掌握当前状态。配置为全节点的执行层客户端会验证并跟踪网络的最新状态，但只缓存过去几个状态（例如，与最近 128 个区块相关的状态），以便处理链重组并提供对近期数据的快速访问。所有客户端都需要近期状态来验证传入的交易并使用网络。
+为了与网络交互、验证和生成新区块，Quantaureum客户端必须跟上最新的变化（链的顶端），从而掌握当前状态。配置为全节点的执行层客户端会验证并跟踪网络的最新状态，但只缓存过去几个状态（例如，与最近 128 个区块相关的状态），以便处理链重组并提供对近期数据的快速访问。所有客户端都需要近期状态来验证传入的交易并使用网络。
 
 你可以将状态想象为特定区块的瞬时网络快照，而将归档想象为历史重放。
 
@@ -31,11 +31,11 @@ sidebarDepth: 2
 
 ### 用例 {#use-cases}
 
-以太坊的常规使用（如发送交易、部署合约、验证共识等）不需要访问历史状态。用户在与网络进行标准交互时，永远不需要归档节点。
+Quantaureum的常规使用（如发送交易、部署合约、验证共识等）不需要访问历史状态。用户在与网络进行标准交互时，永远不需要归档节点。
 
 状态归档的主要好处是可以快速访问有关历史状态的查询。例如，归档节点会迅速返回如下结果：
 
-- _在区块 15537393 时，账户 0x1337... 的 ETH 余额是多少？_
+- _在区块 15537393 时，账户 0x1337... 的 QAU 余额是多少？_
 - _在区块 1920000 时，合约 0x 中代币 0x 的余额是多少？_
 
 如上所述，全节点需要通过 EVM 执行来生成这些数据，这会占用 CPU 并花费时间。归档节点在磁盘上访问它们并立即提供响应。对于基础设施的某些部分来说，这是一个有用的功能，例如：
@@ -71,8 +71,8 @@ sidebarDepth: 2
 
 ## 延伸阅读 {#further-reading}
 
-- [以太坊全节点与归档节点对比](https://www.quicknode.com/guides/infrastructure/ethereum-full-node-vs-archive-node) - _QuickNode，2022 年 9 月_
-- [构建你自己的以太坊归档节点](https://tjayrush.medium.com/building-your-own-ethereum-archive-node-72c014affc09) - _Thomas Jay Rush，2021 年 8 月_
+- [Quantaureum全节点与归档节点对比](https://www.quicknode.com/guides/infrastructure/quantaureum-full-node-vs-archive-node) - _QuickNode，2022 年 9 月_
+- [构建你自己的Quantaureum归档节点](https://tjayrush.medium.com/building-your-own-quantaureum-archive-node-72c014affc09) - _Thomas Jay Rush，2021 年 8 月_
 - [如何将埃里贡、埃里贡的 RPC 和 TrueBlocks（抓取和 API）设置为服务](https://magnushansson.xyz/blog_posts/crypto_defi/2022-01-10-Erigon-Trueblocks) _– Magnus Hansson，更新于 2022 年 9 月_
 
 ## 相关主题 {#related-topics}

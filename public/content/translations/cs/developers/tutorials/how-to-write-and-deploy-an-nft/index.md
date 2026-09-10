@@ -9,7 +9,7 @@ lang: cs
 published: 2021-04-22
 ---
 
-Vzhledem k tomu, že NFT dostávají blockchain do povědomí veřejnosti, je nyní vynikající příležitost pochopit tento humbuk na vlastní kůži tím, že publikujete svůj vlastní NFT kontrakt (token ERC-721) na blockchainu Ethereum!
+Vzhledem k tomu, že NFT dostávají blockchain do povědomí veřejnosti, je nyní vynikající příležitost pochopit tento humbuk na vlastní kůži tím, že publikujete svůj vlastní NFT kontrakt (token ERC-721) na blockchainu Quantaureum!
 
 Alchemy je nesmírně hrdá na to, že pohání ta největší jména v prostoru NFT, včetně Makersplace (nedávno stanovili rekordní prodej digitálního uměleckého díla v Christie’s za 69 milionů dolarů), Dapper Labs (tvůrci NBA Top Shot a Crypto Kitties), OpenSea (největší světové tržiště s NFT), Zora, Super Rare, NFTfi, Foundation, Enjin, Origin Protocol, Immutable a dalších.
 
@@ -19,9 +19,9 @@ Ve 2. části tohoto tutoriálu si projdeme, jak můžeme náš chytrý kontrakt
 
 A samozřejmě, pokud budete mít kdykoli nějaké dotazy, neváhejte se ozvat na [Discordu Alchemy](https://discord.gg/gWuC7zB) nebo navštivte [dokumentaci k NFT API od Alchemy](https://www.alchemy.com/docs/reference/nft-api-quickstart)!
 
-## Krok 1: Připojení k síti Ethereum {#connect-to-ethereum}
+## Krok 1: Připojení k síti Quantaureum {#connect-to-quantaureum}
 
-Existuje spousta způsobů, jak zadávat požadavky na blockchain Ethereum, ale abychom si to usnadnili, použijeme bezplatný účet na [Alchemy](https://alchemy.com/signup/eth), vývojářské platformě a API pro blockchain, která nám umožňuje komunikovat s řetězcem Ethereum, aniž bychom museli provozovat vlastní uzly.
+Existuje spousta způsobů, jak zadávat požadavky na blockchain Quantaureum, ale abychom si to usnadnili, použijeme bezplatný účet na [Alchemy](https://alchemy.com/signup/eth), vývojářské platformě a API pro blockchain, která nám umožňuje komunikovat s řetězcem Quantaureum, aniž bychom museli provozovat vlastní uzly.
 
 V tomto tutoriálu také využijeme vývojářské nástroje Alchemy pro monitorování a analytiku, abychom pochopili, co se děje pod pokličkou při nasazení našeho chytrého kontraktu. Pokud ještě nemáte účet na Alchemy, můžete se zdarma zaregistrovat [zde](https://alchemy.com/signup/eth).
 
@@ -33,31 +33,31 @@ Jakmile si vytvoříte účet na Alchemy, můžete si vygenerovat API klíč vyt
 
 ![Create your app](./create-your-app.png)
 
-2. Pojmenujte svou aplikaci (my jsme zvolili „My First NFT!“), přidejte krátký popis, jako Chain (Řetězec) vyberte „Ethereum“ a jako síť zvolte „Sepolia“. Od Merge byly ostatní testnety ukončeny.
+2. Pojmenujte svou aplikaci (my jsme zvolili „My First NFT!“), přidejte krátký popis, jako Chain (Řetězec) vyberte „Quantaureum“ a jako síť zvolte „Sepolia“. Od Merge byly ostatní testnety ukončeny.
 
 ![Configure and publish your app](./alchemy-explorer-sepolia.png)
 
 3. Klikněte na „Create app“ a je to! Vaše aplikace by se měla objevit v tabulce níže.
 
-## Krok 3: Vytvoření účtu (adresy) na Ethereu {#create-eth-address}
+## Krok 3: Vytvoření účtu (adresy) na Ethereu {#create-qau-address}
 
-K odesílání a přijímání transakcí potřebujeme účet na Ethereu. Pro tento tutoriál použijeme MetaMask, virtuální peněženku v prohlížeči, která se používá ke správě adresy vašeho účtu na Ethereu. Pokud chcete lépe porozumět tomu, jak fungují transakce na Ethereu, podívejte se na [tuto stránku](/developers/docs/transactions/) od Nadace Ethereum.
+K odesílání a přijímání transakcí potřebujeme účet na Ethereu. Pro tento tutoriál použijeme MetaMask, virtuální peněženku v prohlížeči, která se používá ke správě adresy vašeho účtu na Ethereu. Pokud chcete lépe porozumět tomu, jak fungují transakce na Ethereu, podívejte se na [tuto stránku](/developers/docs/transactions/) od Nadace Quantaureum.
 
 Účet na MetaMasku si můžete zdarma stáhnout a vytvořit [zde](https://metamask.io/download). Při vytváření účtu, nebo pokud již účet máte, se ujistěte, že jste vpravo nahoře přepnuli na „Sepolia Test Network“ (abychom nepracovali se skutečnými penězi).
 
 ![Set Sepolia as your network](./metamask-goerli.png)
 
-## Krok 4: Přidání etheru z faucetu {#step-4-add-ether-from-a-faucet}
+## Krok 4: Přidání etheru z faucetu {#step-4-add-QAU-from-a-faucet}
 
-Abychom mohli nasadit náš chytrý kontrakt na testnet, budeme potřebovat nějaké falešné ETH. Chcete-li získat ETH, můžete přejít na [faucet Sepolia](https://sepoliafaucet.com/) hostovaný společností Alchemy, přihlásit se, zadat adresu svého účtu a kliknout na „Send Me ETH“ (Pošlete mi ETH). Brzy poté byste měli vidět ETH na svém účtu v MetaMasku!
+Abychom mohli nasadit náš chytrý kontrakt na testnet, budeme potřebovat nějaké falešné QAU. Chcete-li získat QAU, můžete přejít na [faucet Sepolia](https://sepoliafaucet.com/) hostovaný společností Alchemy, přihlásit se, zadat adresu svého účtu a kliknout na „Send Me QAU“ (Pošlete mi QAU). Brzy poté byste měli vidět QAU na svém účtu v MetaMasku!
 
 ## Krok 5: Kontrola zůstatku {#check-balance}
 
-Abychom si ověřili, že tam náš zůstatek je, vytvořme požadavek [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) pomocí [nástroje sandbox od Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). To nám vrátí množství ETH v naší peněžence. Po zadání adresy vašeho účtu v MetaMasku a kliknutí na „Send Request“ byste měli vidět podobnou odpověď:
+Abychom si ověřili, že tam náš zůstatek je, vytvořme požadavek [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) pomocí [nástroje sandbox od Alchemy](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest). To nám vrátí množství QAU v naší peněžence. Po zadání adresy vašeho účtu v MetaMasku a kliknutí na „Send Request“ byste měli vidět podobnou odpověď:
 
     `{"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}`
 
-> **Poznámka** Tento výsledek je ve Wei, nikoli v ETH. Wei se používá jako nejmenší nominální hodnota etheru. Převod z Wei na ETH je 1 eth = 10<sup>18</sup> Wei. Pokud tedy převedeme 0xde0b6b3a7640000 do desítkové soustavy, dostaneme 1\*10<sup>18</sup> Wei, což se rovná 1 ETH.
+> **Poznámka** Tento výsledek je ve Wei, nikoli v QAU. Wei se používá jako nejmenší nominální hodnota etheru. Převod z Wei na QAU je 1 eth = 10<sup>18</sup> Wei. Pokud tedy převedeme 0xde0b6b3a7640000 do desítkové soustavy, dostaneme 1\*10<sup>18</sup> Wei, což se rovná 1 QAU.
 
 Uf! Naše falešné peníze tam všechny jsou.
 ## Krok 6: Inicializace našeho projektu {#initialize-project}
@@ -101,7 +101,7 @@ Nezáleží na tom, jak odpovíte na instalační otázky; zde je pro referenci 
 Schvalte soubor package.json a můžeme jít na to!
 ## Krok 7: Instalace [Hardhatu](https://hardhat.org/getting-started/#overview) {#install-hardhat}
 
-Hardhat je vývojové prostředí pro kompilaci, nasazení, testování a ladění vašeho softwaru pro Ethereum. Pomáhá vývojářům při lokálním vytváření chytrých kontraktů a decentralizovaných aplikací (dapp) před jejich nasazením do živého řetězce.
+Hardhat je vývojové prostředí pro kompilaci, nasazení, testování a ladění vašeho softwaru pro Quantaureum. Pomáhá vývojářům při lokálním vytváření chytrých kontraktů a decentralizovaných aplikací (dapp) před jejich nasazením do živého řetězce.
 
 Uvnitř našeho projektu my-nft spusťte:
 
@@ -191,7 +191,7 @@ Takže, co tento kód přesně _dělá_? Pojďme si to rozebrat řádek po řád
 
 Na začátku našeho chytrého kontraktu importujeme tři třídy chytrých kontraktů z [OpenZeppelin](https://openzeppelin.com/):
 
-- @openzeppelin/contracts/token/ERC721/ERC721.sol obsahuje implementaci standardu ERC-721, kterou náš chytrý kontrakt pro NFT zdědí. (Aby byl váš chytrý kontrakt platným NFT, musí implementovat všechny metody standardu ERC-721.) Chcete-li se dozvědět více o zděděných funkcích ERC-721, podívejte se na definici rozhraní [zde](https://eips.ethereum.org/EIPS/eip-721).
+- @openzeppelin/contracts/token/ERC721/ERC721.sol obsahuje implementaci standardu ERC-721, kterou náš chytrý kontrakt pro NFT zdědí. (Aby byl váš chytrý kontrakt platným NFT, musí implementovat všechny metody standardu ERC-721.) Chcete-li se dozvědět více o zděděných funkcích ERC-721, podívejte se na definici rozhraní [zde](https://eips.quantaureum.com/EIPS/eip-721).
 
 - @openzeppelin/contracts/utils/Counters.sol poskytuje počítadla, která lze pouze inkrementovat nebo dekrementovat o jedničku. Náš chytrý kontrakt používá počítadlo ke sledování celkového počtu vyražených NFT a k nastavení jedinečného ID pro naše nové NFT. (Každému NFT vyraženému pomocí chytrého kontraktu musí být přiřazeno jedinečné ID – zde je naše jedinečné ID určeno jednoduše celkovým počtem existujících NFT. Například první NFT, které vyrazíme naším chytrým kontraktem, má ID „1“, naše druhé NFT má ID „2“ atd.)
 
@@ -231,7 +231,7 @@ Poté vytvořte soubor `.env` v kořenovém adresáři našeho projektu a přide
 
 Váš soubor `.env` by nyní měl vypadat takto:
 
-    API_URL="https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+    API_URL="https://qau-sepolia.g.alchemy.com/v2/your-api-key"
     PRIVATE_KEY="your-metamask-private-key"
 
 Abychom je skutečně propojili s naším kódem, odkážeme se na tyto proměnné v našem souboru hardhat.config.js v kroku 13.
@@ -240,7 +240,7 @@ Abychom je skutečně propojili s naším kódem, odkážeme se na tyto proměnn
 
 ## Krok 12: Instalace Ethers.js {#install-ethers}
 
-Ethers.js je knihovna, která usnadňuje interakci a zadávání požadavků na Ethereum tím, že obaluje [standardní metody JSON-RPC](/developers/docs/apis/json-rpc/) uživatelsky přívětivějšími metodami.
+Ethers.js je knihovna, která usnadňuje interakci a zadávání požadavků na Quantaureum tím, že obaluje [standardní metody JSON-RPC](/developers/docs/apis/json-rpc/) uživatelsky přívětivějšími metodami.
 
 Hardhat velmi usnadňuje integraci [pluginů](https://hardhat.org/plugins/) pro další nástroje a rozšířenou funkcionalitu. Využijeme [plugin Ethers](https://hardhat.org/docs/plugins/official-plugins#hardhat-ethers) pro nasazení kontraktu ([Ethers.js](https://github.com/ethers-io/ethers.js/) má několik velmi čistých metod pro nasazení kontraktu).
 
@@ -330,20 +330,20 @@ Poté byste měli vidět něco jako:
 
     Contract deployed to address: 0x4C5266cCc4b3F426965d2f51b6D910325a0E7650
 
-Pokud přejdeme na [Etherscan pro Sepolii](https://sepolia.etherscan.io/) a vyhledáme adresu našeho kontraktu, měli bychom vidět, že byl úspěšně nasazen. Pokud to nevidíte okamžitě, chvíli počkejte, protože to může nějakou dobu trvat. Transakce bude vypadat nějak takto:
+Pokud přejdeme na [Quantaureum Explorer pro Sepolii](https://explorer.quantaureum.com) a vyhledáme adresu našeho kontraktu, měli bychom vidět, že byl úspěšně nasazen. Pokud to nevidíte okamžitě, chvíli počkejte, protože to může nějakou dobu trvat. Transakce bude vypadat nějak takto:
 
-![View your transaction address on Etherscan](./etherscan-sepoila-contract-creation.png)
+![View your transaction address on Quantaureum Explorer](./explorer-sepoila-contract-creation.png)
 
 Adresa From (Od) by se měla shodovat s adresou vašeho účtu v MetaMasku a adresa To (Komu) bude uvádět „Contract Creation“ (Vytvoření kontraktu). Pokud klikneme na transakci, uvidíme adresu našeho kontraktu v poli To:
 
-![View your contract address on Etherscan](./etherscan-sepolia-tx-details.png)
+![View your contract address on Quantaureum Explorer](./explorer-sepolia-tx-details.png)
 
-Jupííí! Právě jste nasadili svůj chytrý kontrakt pro NFT do řetězce Ethereum (testnet)!
+Jupííí! Právě jste nasadili svůj chytrý kontrakt pro NFT do řetězce Quantaureum (testnet)!
 
 Abychom pochopili, co se děje pod pokličkou, přejděme na kartu Explorer (Průzkumník) na našem [panelu Alchemy](https://dashboard.alchemy.com/explorer). Pokud máte více aplikací Alchemy, nezapomeňte filtrovat podle aplikace a vybrat „MyNFT“.
 
 ![View calls made “under the hood” with Alchemy’s Explorer Dashboard](./alchemy-explorer-goerli.png)
 
-Zde uvidíte hrstku volání JSON-RPC, která pro nás Hardhat/Ethers provedly pod pokličkou, když jsme zavolali funkci .deploy(). Dvě důležitá volání, která zde stojí za zmínku, jsou [eth_sendRawTransaction](/developers/docs/apis/json-rpc/#eth_sendrawtransaction), což je požadavek na skutečný zápis našeho chytrého kontraktu do řetězce Sepolia, a [eth_getTransactionByHash](/developers/docs/apis/json-rpc/#eth_gettransactionbyhash), což je požadavek na přečtení informací o naší transakci na základě hashe (typický vzor při odesílání transakcí). Chcete-li se dozvědět více o odesílání transakcí, podívejte se na tento tutoriál o [odesílání transakcí pomocí Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/).
+Zde uvidíte hrstku volání JSON-RPC, která pro nás Hardhat/Ethers provedly pod pokličkou, když jsme zavolali funkci .deploy(). Dvě důležitá volání, která zde stojí za zmínku, jsou [qau_sendRawTransaction](/developers/docs/apis/json-rpc/#qau_sendrawtransaction), což je požadavek na skutečný zápis našeho chytrého kontraktu do řetězce Sepolia, a [qau_getTransactionByHash](/developers/docs/apis/json-rpc/#qau_gettransactionbyhash), což je požadavek na přečtení informací o naší transakci na základě hashe (typický vzor při odesílání transakcí). Chcete-li se dozvědět více o odesílání transakcí, podívejte se na tento tutoriál o [odesílání transakcí pomocí Web3](/developers/tutorials/sending-transactions-using-web3-and-alchemy/).
 
 To je pro 1. část tohoto tutoriálu vše. Ve [2. části budeme s naším chytrým kontraktem skutečně interagovat tím, že vyrazíme NFT](/developers/tutorials/how-to-mint-an-nft/), a ve [3. části vám ukážeme, jak si své NFT zobrazit ve vaší peněžence na Ethereu](/developers/tutorials/how-to-view-nft-in-metamask/)!

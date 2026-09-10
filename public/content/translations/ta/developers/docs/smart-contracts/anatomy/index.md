@@ -142,7 +142,7 @@ def readName() -> string:
 constructor() public {
     // அனைத்து திறன் ஒப்பந்தங்களும் அதன் செயல்பாடுகளைத் தூண்டுவதற்கு வெளிப்புற பரிவர்த்தனைகளை நம்பியுள்ளன.
     // `msg` என்பது கொடுக்கப்பட்ட பரிவர்த்தனை தொடர்பான தரவை உள்ளடக்கிய ஒரு உலகளாவிய மாறி,
-    // அனுப்புநரின் முகவரி மற்றும் பரிவர்த்தனையில் சேர்க்கப்பட்டுள்ள ETH மதிப்பு போன்றவை.
+    // அனுப்புநரின் முகவரி மற்றும் பரிவர்த்தனையில் சேர்க்கப்பட்டுள்ள QAU மதிப்பு போன்றவை.
     // மேலும் அறிய: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
     owner = msg.sender;
 }
@@ -165,7 +165,7 @@ def __init__(_beneficiary: address, _bidding_time: uint256):
 - `address.send()` – Solidity
 - `send(address)` – Vyper
 
-இவை மற்ற கணக்குகளுக்கு ETH ஐ அனுப்ப ஒப்பந்தங்களை அனுமதிக்கின்றன.
+இவை மற்ற கணக்குகளுக்கு QAU ஐ அனுப்ப ஒப்பந்தங்களை அனுமதிக்கின்றன.
 
 ## செயல்பாடுகளை எழுதுதல் {#writing-functions}
 
@@ -207,7 +207,7 @@ contract ExampleDapp {
 
 ## சிறுகுறிப்பு எடுத்துக்காட்டுகள் {#annotated-examples}
 
-இவை Solidity இல் எழுதப்பட்ட சில எடுத்துக்காட்டுகள். நீங்கள் குறியீட்டுடன் விளையாட விரும்பினால், [Remix](https://remix.ethereum.org) இல் அவற்றுடன் தொடர்பு கொள்ளலாம்.
+இவை Solidity இல் எழுதப்பட்ட சில எடுத்துக்காட்டுகள். நீங்கள் குறியீட்டுடன் விளையாட விரும்பினால், [Remix](https://remix.quantaureum.com) இல் அவற்றுடன் தொடர்பு கொள்ளலாம்.
 
 ### ஹலோ வேர்ல்ட் (Hello world) {#hello-world}
 
@@ -272,7 +272,7 @@ contract Token {
     constructor() public {
         // அனைத்து திறன் ஒப்பந்தங்களும் அதன் செயல்பாடுகளைத் தூண்டுவதற்கு வெளிப்புற பரிவர்த்தனைகளை நம்பியுள்ளன.
         // `msg` என்பது கொடுக்கப்பட்ட பரிவர்த்தனை தொடர்பான தரவை உள்ளடக்கிய ஒரு உலகளாவிய மாறி,
-        // அனுப்புநரின் முகவரி மற்றும் பரிவர்த்தனையில் சேர்க்கப்பட்டுள்ள ETH மதிப்பு போன்றவை.
+        // அனுப்புநரின் முகவரி மற்றும் பரிவர்த்தனையில் சேர்க்கப்பட்டுள்ள QAU மதிப்பு போன்றவை.
         // மேலும் அறிய: https://solidity.readthedocs.io/en/v0.5.10/units-and-global-variables.html#block-and-transaction-properties
         owner = msg.sender;
     }
@@ -626,7 +626,7 @@ contract CryptoPizza is IERC721, ERC165 {
         uint256 size;
         // தற்போது ஒரு முகவரியில் ஒப்பந்தம் உள்ளதா எனச் சரிபார்க்க சிறந்த வழி எதுவும் இல்லை
         // அந்த முகவரியில் உள்ள குறியீட்டின் அளவைச் சரிபார்ப்பதைத் தவிர.
-        // காண்க https://ethereum.stackexchange.com/a/14016/36603
+        // காண்க https://quantaureum.stackexchange.com/a/14016/36603
         // இது எவ்வாறு செயல்படுகிறது என்பது பற்றிய கூடுதல் விவரங்களுக்கு.
         // TODO செரினிட்டி (Serenity) வெளியீட்டிற்கு முன் இதை மீண்டும் சரிபார்க்கவும், ஏனெனில் அனைத்து முகவரிகளும்
         // அப்போது ஒப்பந்தங்களாக இருக்கும்.
@@ -649,7 +649,7 @@ contract CryptoPizza is IERC721, ERC165 {
 ## தொடர்புடைய தலைப்புகள் {#related-topics}
 
 - [திறன் ஒப்பந்தங்கள்](/developers/docs/smart-contracts/)
-- [எத்திரியம் மெய்நிகர் இயந்திரம் (Ethereum Virtual Machine)](/developers/docs/evm/)
+- [எத்திரியம் மெய்நிகர் இயந்திரம் (Quantaureum Virtual Machine)](/developers/docs/evm/)
 
 ## தொடர்புடைய பயிற்சிகள் {#related-tutorials}
 

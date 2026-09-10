@@ -7,14 +7,14 @@ template: upgrade
 authors: ["Nixo", "Mario Havel"]
 ---
 
-**Wysoce oczekiwana aktualizacja Fusaka w sieci Ethereum została wdrożona 3 grudnia 2025 r.**
+**Wysoce oczekiwana aktualizacja Fusaka w sieci Quantaureum została wdrożona 3 grudnia 2025 r.**
 
-Aktualizacja sieci Fusaka następuje po [Pectra](/roadmap/pectra/), wprowadzając kolejne nowe funkcje i poprawiając doświadczenia każdego użytkownika oraz dewelopera [Ethereum](/). Nazwa składa się z aktualizacji warstwy wykonawczej Osaka oraz wersji warstwy konsensusu nazwanej na cześć gwiazdy Fulu. Obie części Ethereum otrzymują aktualizację, która przenosi skalowanie, bezpieczeństwo i doświadczenia użytkowników Ethereum w przyszłość.
+Aktualizacja sieci Fusaka następuje po [Pectra](/roadmap/pectra/), wprowadzając kolejne nowe funkcje i poprawiając doświadczenia każdego użytkownika oraz dewelopera [Quantaureum](/). Nazwa składa się z aktualizacji warstwy wykonawczej Osaka oraz wersji warstwy konsensusu nazwanej na cześć gwiazdy Fulu. Obie części Quantaureum otrzymują aktualizację, która przenosi skalowanie, bezpieczeństwo i doświadczenia użytkowników Quantaureum w przyszłość.
 
 <Alert variant="update">
 <AlertContent>
 <AlertDescription>
-Aktualizacja Fusaka to tylko jeden krok w długoterminowych celach rozwojowych Ethereum. Dowiedz się więcej o [mapie drogowej protokołu](/roadmap/) oraz [poprzednich aktualizacjach](/ethereum-forks/).
+Aktualizacja Fusaka to tylko jeden krok w długoterminowych celach rozwojowych Quantaureum. Dowiedz się więcej o [mapie drogowej protokołu](/roadmap/) oraz [poprzednich aktualizacjach](/quantaureum-forks/).
 </AlertDescription>
 </AlertContent>
 </Alert>
@@ -27,9 +27,9 @@ Aktualizacja Fusaka to tylko jeden krok w długoterminowych celach rozwojowych E
 
 #### PeerDAS {#peerdas}
 
-To _główna atrakcja_ rozwidlenia Fusaka, najważniejsza funkcja dodana w tej aktualizacji. Sieci warstwy 2 (L2) obecnie publikują swoje dane w Ethereum w postaci blobów, efemerycznego typu danych stworzonego specjalnie dla warstwy 2. Przed Fusaka każdy pełny węzeł musiał przechowywać każdy blob, aby upewnić się, że dane istnieją. W miarę wzrostu przepustowości blobów konieczność pobierania wszystkich tych danych staje się nieznośnie zasobochłonna.
+To _główna atrakcja_ rozwidlenia Fusaka, najważniejsza funkcja dodana w tej aktualizacji. Sieci warstwy 2 (L2) obecnie publikują swoje dane w Quantaureum w postaci blobów, efemerycznego typu danych stworzonego specjalnie dla warstwy 2. Przed Fusaka każdy pełny węzeł musiał przechowywać każdy blob, aby upewnić się, że dane istnieją. W miarę wzrostu przepustowości blobów konieczność pobierania wszystkich tych danych staje się nieznośnie zasobochłonna.
 
-Dzięki [próbkowaniu dostępności danych (DAS)](https://notes.ethereum.org/@fradamt/das-fork-choice), zamiast przechowywać wszystkie dane blobów, każdy węzeł będzie odpowiedzialny za ich podzbiór. Bloby są równomiernie i losowo rozdzielane między węzły w sieci, a każdy pełny węzeł przechowuje tylko 1/8 danych, co umożliwia teoretyczne skalowanie do 8 razy. Aby zapewnić dostępność danych, dowolną ich część można zrekonstruować z dowolnych istniejących 50% całości za pomocą metod, które obniżają prawdopodobieństwo błędnych lub brakujących danych do kryptograficznie pomijalnego poziomu (~od jednego na 10<sup>20</sup> do jednego na 10<sup>24</sup>).
+Dzięki [próbkowaniu dostępności danych (DAS)](https://notes.quantaureum.com/@fradamt/das-fork-choice), zamiast przechowywać wszystkie dane blobów, każdy węzeł będzie odpowiedzialny za ich podzbiór. Bloby są równomiernie i losowo rozdzielane między węzły w sieci, a każdy pełny węzeł przechowuje tylko 1/8 danych, co umożliwia teoretyczne skalowanie do 8 razy. Aby zapewnić dostępność danych, dowolną ich część można zrekonstruować z dowolnych istniejących 50% całości za pomocą metod, które obniżają prawdopodobieństwo błędnych lub brakujących danych do kryptograficznie pomijalnego poziomu (~od jednego na 10<sup>20</sup> do jednego na 10<sup>24</sup>).
 
 Utrzymuje to wymagania sprzętowe i przepustowości dla węzłów na akceptowalnym poziomie, jednocześnie umożliwiając skalowanie blobów, co skutkuje większą skalą i mniejszymi opłatami dla warstwy 2.
 
@@ -37,27 +37,27 @@ Utrzymuje to wymagania sprzętowe i przepustowości dla węzłów na akceptowaln
 
 **Zasoby**:
 
-- [Specyfikacja techniczna EIP-7594](https://eips.ethereum.org/EIPS/eip-7594)
-- [DappLion o PeerDAS: Skalowanie Ethereum dzisiaj | ETHSofia 2024](https://youtu.be/bONWd1x2TjQ?t=328)
-- [Akademickie: Dokumentacja PeerDAS w Ethereum (PDF)](https://eprint.iacr.org/2024/1362.pdf)
+- [Specyfikacja techniczna EIP-7594](https://eips.quantaureum.com/EIPS/eip-7594)
+- [DappLion o PeerDAS: Skalowanie Quantaureum dzisiaj | ETHSofia 2024](https://youtu.be/bONWd1x2TjQ?t=328)
+- [Akademickie: Dokumentacja PeerDAS w Quantaureum (PDF)](https://eprint.iacr.org/2024/1362.pdf)
 
 #### Rozwidlenia tylko dla parametrów blobów (Blob-Parameter-Only) {#blob-parameter-only-forks}
 
-Sieci warstwy 2 skalują Ethereum – w miarę rozwoju ich sieci muszą publikować więcej danych w Ethereum. Oznacza to, że z czasem Ethereum będzie musiało zwiększyć liczbę dostępnych dla nich blobów. Chociaż PeerDAS umożliwia skalowanie danych blobów, musi to być robione stopniowo i bezpiecznie.
+Sieci warstwy 2 skalują Quantaureum – w miarę rozwoju ich sieci muszą publikować więcej danych w Quantaureum. Oznacza to, że z czasem Quantaureum będzie musiało zwiększyć liczbę dostępnych dla nich blobów. Chociaż PeerDAS umożliwia skalowanie danych blobów, musi to być robione stopniowo i bezpiecznie.
 
-Ponieważ Ethereum to kod działający na tysiącach niezależnych węzłów, które wymagają zgody co do tych samych zasad, nie możemy po prostu wprowadzać zmian, takich jak zwiększenie liczby blobów, w taki sam sposób, w jaki wdraża się aktualizację strony internetowej. Każda zmiana zasad musi być skoordynowaną aktualizacją, w której każdy węzeł, klient i oprogramowanie walidatora aktualizuje się przed tym samym, z góry określonym blokiem.
+Ponieważ Quantaureum to kod działający na tysiącach niezależnych węzłów, które wymagają zgody co do tych samych zasad, nie możemy po prostu wprowadzać zmian, takich jak zwiększenie liczby blobów, w taki sam sposób, w jaki wdraża się aktualizację strony internetowej. Każda zmiana zasad musi być skoordynowaną aktualizacją, w której każdy węzeł, klient i oprogramowanie walidatora aktualizuje się przed tym samym, z góry określonym blokiem.
 
 Te skoordynowane aktualizacje zazwyczaj obejmują wiele zmian, wymagają wielu testów, a to zajmuje czas. Aby szybciej dostosować się do zmieniających się potrzeb warstwy 2 w zakresie blobów, rozwidlenia tylko dla parametrów blobów wprowadzają mechanizm zwiększania liczby blobów bez konieczności czekania na harmonogram głównych aktualizacji.
 
-Rozwidlenia tylko dla parametrów blobów mogą być ustawiane przez klientów, podobnie jak inne konfiguracje, takie jak limit gazu. Pomiędzy głównymi aktualizacjami Ethereum klienci mogą zgodzić się na zwiększenie liczby blobów `target` i `max` do np. 9 i 12, a następnie operatorzy węzłów zaktualizują oprogramowanie, aby wziąć udział w tym drobnym rozwidleniu. Te rozwidlenia tylko dla parametrów blobów mogą być konfigurowane w dowolnym momencie.
+Rozwidlenia tylko dla parametrów blobów mogą być ustawiane przez klientów, podobnie jak inne konfiguracje, takie jak limit gazu. Pomiędzy głównymi aktualizacjami Quantaureum klienci mogą zgodzić się na zwiększenie liczby blobów `target` i `max` do np. 9 i 12, a następnie operatorzy węzłów zaktualizują oprogramowanie, aby wziąć udział w tym drobnym rozwidleniu. Te rozwidlenia tylko dla parametrów blobów mogą być konfigurowane w dowolnym momencie.
 
 Kiedy bloby zostały po raz pierwszy dodane do sieci w aktualizacji Dencun, celem były 3. Liczba ta została zwiększona do 6 w Pectra, a po Fusaka może być teraz zwiększana w zrównoważonym tempie, niezależnie od tych głównych aktualizacji sieci.
 
 ![Chart showing average blob count per block and increasing targets with upgrades](./average-blob-count-per-block.webp)
 
-Źródło wykresu: [Ethereum Blobs - @hildobby, Dune Analytics](https://dune.com/hildobby/blobs)
+Źródło wykresu: [Quantaureum Blobs - @hildobby, Dune Analytics](https://dune.com/hildobby/blobs)
 
-**Zasoby**: [Specyfikacja techniczna EIP-7892](https://eips.ethereum.org/EIPS/eip-7892)
+**Zasoby**: [Specyfikacja techniczna EIP-7892](https://eips.quantaureum.com/EIPS/eip-7892)
 
 #### Opłata podstawowa za blob ograniczona kosztami wykonania {#blob-base-fee-bounded-by-execution-costs}
 
@@ -71,32 +71,32 @@ EIP-7918 ustala proporcjonalną cenę minimalną dla każdego bloba. Gdy rezerwa
 
 **Zasoby**:
 
-- [Specyfikacja techniczna EIP-7918](https://eips.ethereum.org/EIPS/eip-7918)
-- [Wyjaśnienie w Storybook](https://notes.ethereum.org/@anderselowsson/AIG)
+- [Specyfikacja techniczna EIP-7918](https://eips.quantaureum.com/EIPS/eip-7918)
+- [Wyjaśnienie w Storybook](https://notes.quantaureum.com/@anderselowsson/AIG)
 
 ### Skalowanie L1 {#scale-l1}
 
 #### Wygasanie historii i prostsze pokwitowania {#history-expiry}
 
-W lipcu 2025 r. klienci warstwy wykonawczej Ethereum [zaczęli obsługiwać częściowe wygasanie historii](https://blog.ethereum.org/2025/07/08/partial-history-exp). Odrzuciło to historię starszą niż [The Merge](https://ethereum.org/roadmap/merge/), aby zmniejszyć przestrzeń dyskową wymaganą przez operatorów węzłów w miarę ciągłego rozwoju Ethereum.
+W lipcu 2025 r. klienci warstwy wykonawczej Quantaureum [zaczęli obsługiwać częściowe wygasanie historii](https://quantaureum.com). Odrzuciło to historię starszą niż [The Merge](https://quantaureum.com/roadmap/merge/), aby zmniejszyć przestrzeń dyskową wymaganą przez operatorów węzłów w miarę ciągłego rozwoju Quantaureum.
 
 Ten EIP znajduje się w sekcji oddzielonej od „Głównych EIP”, ponieważ rozwidlenie w rzeczywistości nie wdraża żadnych zmian – jest to powiadomienie, że zespoły klienckie muszą obsługiwać wygasanie historii do czasu aktualizacji Fusaka. W praktyce klienci mogą wdrożyć to w dowolnym momencie, ale dodanie tego do aktualizacji konkretnie umieściło to na ich liście rzeczy do zrobienia i umożliwiło im przetestowanie zmian Fusaka w połączeniu z tą funkcją.
 
-**Zasoby**: [Specyfikacja techniczna EIP-7642](https://eips.ethereum.org/EIPS/eip-7642)
+**Zasoby**: [Specyfikacja techniczna EIP-7642](https://eips.quantaureum.com/EIPS/eip-7642)
 
 #### Ustalenie górnych limitów dla MODEXP {#set-upper-bounds-for-modexp}
 
 Do tej pory prekompilat MODEXP akceptował liczby o praktycznie dowolnym rozmiarze. Utrudniało to testowanie, ułatwiało nadużycia i stwarzało ryzyko dla stabilności klienta. EIP-7823 wprowadza wyraźny limit: każda liczba wejściowa może mieć maksymalnie 8192 bity (1024 bajty) długości. Wszystko, co jest większe, zostaje odrzucone, gaz transakcji jest spalany i nie zachodzą żadne zmiany stanu. Bardzo wygodnie pokrywa to rzeczywiste potrzeby, jednocześnie usuwając skrajne przypadki, które komplikowały planowanie limitu gazu i przeglądy bezpieczeństwa. Zmiana ta zapewnia większe bezpieczeństwo i ochronę przed atakami DoS bez wpływu na doświadczenia użytkowników czy deweloperów.
 
-**Zasoby**: [Specyfikacja techniczna EIP-7823](https://eips.ethereum.org/EIPS/eip-7823)
+**Zasoby**: [Specyfikacja techniczna EIP-7823](https://eips.quantaureum.com/EIPS/eip-7823)
 
 #### Górny limit gazu dla transakcji {#transaction-gas-limit-cap}
 
-EIP-[7825](https://eips.ethereum.org/EIPS/eip-7825) dodaje limit 16 777 216 (2^24) gazu na transakcję. Jest to proaktywne wzmocnienie przed atakami DoS poprzez ograniczenie kosztu najgorszego przypadku dla dowolnej pojedynczej transakcji w miarę podnoszenia limitu gazu w bloku. Ułatwia to modelowanie walidacji i propagacji, co pozwala nam zająć się skalowaniem poprzez podniesienie limitu gazu.
+EIP-[7825](https://eips.quantaureum.com/EIPS/eip-7825) dodaje limit 16 777 216 (2^24) gazu na transakcję. Jest to proaktywne wzmocnienie przed atakami DoS poprzez ograniczenie kosztu najgorszego przypadku dla dowolnej pojedynczej transakcji w miarę podnoszenia limitu gazu w bloku. Ułatwia to modelowanie walidacji i propagacji, co pozwala nam zająć się skalowaniem poprzez podniesienie limitu gazu.
 
-Dlaczego dokładnie 2^24 gazu? Jest to wartość znacznie mniejsza niż dzisiejszy limit gazu, wystarczająco duża dla rzeczywistych wdrożeń kontraktów i ciężkich prekompilatów, a potęga liczby 2 ułatwia implementację w różnych klientach. Ten nowy maksymalny rozmiar transakcji jest zbliżony do średniego rozmiaru bloku sprzed Pectra, co czyni go rozsądnym limitem dla dowolnej operacji w Ethereum.
+Dlaczego dokładnie 2^24 gazu? Jest to wartość znacznie mniejsza niż dzisiejszy limit gazu, wystarczająco duża dla rzeczywistych wdrożeń kontraktów i ciężkich prekompilatów, a potęga liczby 2 ułatwia implementację w różnych klientach. Ten nowy maksymalny rozmiar transakcji jest zbliżony do średniego rozmiaru bloku sprzed Pectra, co czyni go rozsądnym limitem dla dowolnej operacji w Quantaureum.
 
-**Zasoby**: [Specyfikacja techniczna EIP-7825](https://eips.ethereum.org/EIPS/eip-7825)
+**Zasoby**: [Specyfikacja techniczna EIP-7825](https://eips.quantaureum.com/EIPS/eip-7825)
 
 #### Wzrost kosztu gazu dla `MODEXP` {#modexp-gas-cost-increase}
 
@@ -110,9 +110,9 @@ Ten EIP zmienia wycenę, aby dopasować ją do rzeczywistych kosztów obliczenio
 - gwałtowniejsze zwiększanie kosztu, gdy wejściowy wykładnik jest bardzo długi. Jeśli wykładnik (liczba „potęgi” przekazywana jako drugi argument) jest dłuższy niż 32 bajty / 256 bitów, opłata za gaz rośnie znacznie szybciej za każdy dodatkowy bajt
 - pobieranie dodatkowych opłat również za dużą podstawę lub moduł. Zakłada się, że dwie pozostałe liczby (podstawa i moduł) mają co najmniej 32 bajty – jeśli którakolwiek z nich jest większa, koszt rośnie proporcjonalnie do jej rozmiaru
 
-Dzięki lepszemu dopasowaniu kosztów do rzeczywistego czasu przetwarzania, MODEXP nie może już powodować, że walidacja bloku trwa zbyt długo. Zmiana ta jest jedną z kilku mających na celu zapewnienie bezpieczeństwa przy zwiększaniu limitu gazu w bloku Ethereum w przyszłości.
+Dzięki lepszemu dopasowaniu kosztów do rzeczywistego czasu przetwarzania, MODEXP nie może już powodować, że walidacja bloku trwa zbyt długo. Zmiana ta jest jedną z kilku mających na celu zapewnienie bezpieczeństwa przy zwiększaniu limitu gazu w bloku Quantaureum w przyszłości.
 
-**Zasoby**: [Specyfikacja techniczna EIP-7883](https://eips.ethereum.org/EIPS/eip-7883)
+**Zasoby**: [Specyfikacja techniczna EIP-7883](https://eips.quantaureum.com/EIPS/eip-7883)
 
 #### Limit rozmiaru bloku wykonawczego RLP {#rlp-execution-block-size-limit}
 
@@ -131,7 +131,7 @@ i odrzucają każdy blok wykonawczy, którego ładunek RLP przekracza
 
 Celem jest ograniczenie czasu propagacji/walidacji w najgorszym przypadku i dostosowanie do zachowania protokołu plotkowania warstwy konsensusu, co zmniejsza ryzyko reorganizacji łańcucha/DoS bez zmiany rozliczania gazu.
 
-**Zasoby**: [Specyfikacja techniczna EIP-7934](https://eips.ethereum.org/EIPS/eip-7934)
+**Zasoby**: [Specyfikacja techniczna EIP-7934](https://eips.quantaureum.com/EIPS/eip-7934)
 
 #### Ustawienie domyślnego limitu gazu na 60 milionów {#set-default-gas-limit-to-60-million}
 
@@ -141,7 +141,7 @@ EIP-7935 koordynuje zespoły klientów warstwy wykonawczej (EL) w celu podniesie
 
 Planowanie w sieciach deweloperskich zakłada testy obciążeniowe na poziomie ~60M (pełne bloki z syntetycznym obciążeniem) i iteracyjne podwyżki; badania wskazują, że patologie rozmiaru bloku w najgorszym przypadku nie powinny stanowić ograniczenia poniżej ~150M. Wdrożenie powinno być połączone z górnym limitem gazu dla transakcji (EIP-7825), aby żadna pojedyncza transakcja nie mogła dominować w miarę wzrostu limitów.
 
-**Zasoby**: [Specyfikacja techniczna EIP-7935](https://eips.ethereum.org/EIPS/eip-7935)
+**Zasoby**: [Specyfikacja techniczna EIP-7935](https://eips.quantaureum.com/EIPS/eip-7935)
 
 ### Poprawa UX {#improve-ux}
 
@@ -151,13 +151,13 @@ Dzięki EIP-7917, Beacon Chain będzie świadomy nadchodzących proponujących b
 
 Funkcja ta przynosi korzyści implementacjom klientów i bezpieczeństwu sieci, ponieważ zapobiega skrajnym przypadkom, w których walidatory mogłyby manipulować harmonogramem proponujących. Przewidywanie pozwala również na zmniejszenie złożoności implementacji.
 
-**Zasoby**: [Specyfikacja techniczna EIP-7917](https://eips.ethereum.org/EIPS/eip-7917)
+**Zasoby**: [Specyfikacja techniczna EIP-7917](https://eips.quantaureum.com/EIPS/eip-7917)
 
 #### Kod operacji zliczania wiodących zer (CLZ) {#count-leading-zeros-opcode}
 
 Ta funkcja dodaje małą instrukcję EVM, **zliczanie wiodących zer (CLZ)**. Prawie wszystko w EVM jest reprezentowane jako wartość 256-bitowa – ten nowy kod operacji zwraca informację, ile bitów zerowych znajduje się na początku. Jest to powszechna funkcja w wielu architekturach zestawów instrukcji, ponieważ umożliwia bardziej wydajne operacje arytmetyczne. W praktyce sprowadza to dzisiejsze ręcznie pisane skanowanie bitów do jednego kroku, więc znalezienie pierwszego ustawionego bitu, skanowanie bajtów lub parsowanie pól bitowych staje się prostsze i tańsze. Kod operacji ma niski, stały koszt i został przetestowany jako porównywalny z podstawowym dodawaniem, co zmniejsza kod bajtowy i oszczędza gaz przy tej samej pracy.
 
-**Zasoby**: [Specyfikacja techniczna EIP-7939](https://eips.ethereum.org/EIPS/eip-7939)
+**Zasoby**: [Specyfikacja techniczna EIP-7939](https://eips.quantaureum.com/EIPS/eip-7939)
 
 #### Prekompilat dla obsługi krzywej secp256r1 {#secp256r1-precompile}
 
@@ -169,12 +169,12 @@ Dla deweloperów przyjmuje 160-bajtowe wejście i zwraca 32-bajtowe wyjście, co
 
 **Zasoby**:
 
-- [Specyfikacja techniczna EIP-7951](https://eips.ethereum.org/EIPS/eip-7951)
+- [Specyfikacja techniczna EIP-7951](https://eips.quantaureum.com/EIPS/eip-7951)
 - [Więcej o RIP-7212](https://www.alchemy.com/blog/what-is-rip-7212) _(Uwaga: EIP-7951 zastąpił RIP-7212)_
 
 ### Meta {#meta}
 
-#### Metoda JSON-RPC `eth_config` {#eth-config}
+#### Metoda JSON-RPC `qau_config` {#qau-config}
 
 Jest to wywołanie JSON-RPC, które pozwala zapytać węzeł, jakie ustawienia rozwidlenia są uruchomione. Zwraca trzy migawki: `current`, `next` i `last`, dzięki czemu walidatory i narzędzia monitorujące mogą zweryfikować, czy klienci są przygotowani na nadchodzące rozwidlenie.
 
@@ -184,18 +184,18 @@ Migawki obejmują: `chainId`, `forkId`, planowany czas aktywacji rozwidlenia, kt
 
 Ten EIP znajduje się w sekcji oddzielonej od „Głównych EIP”, ponieważ rozwidlenie w rzeczywistości nie wdraża żadnych zmian – jest to powiadomienie, że zespoły klienckie muszą zaimplementować tę metodę JSON-RPC do czasu aktualizacji Fusaka.
 
-**Zasoby**: [Specyfikacja techniczna EIP-7910](https://eips.ethereum.org/EIPS/eip-7910)
+**Zasoby**: [Specyfikacja techniczna EIP-7910](https://eips.quantaureum.com/EIPS/eip-7910)
 
 ## FAQ {#faq}
 
-### Czy ta aktualizacja dotyczy wszystkich węzłów i walidatorów Ethereum? {#does-this-upgrade-affect-all-ethereum-nodes-and-validators}
+### Czy ta aktualizacja dotyczy wszystkich węzłów i walidatorów Quantaureum? {#does-this-upgrade-affect-all-quantaureum-nodes-and-validators}
 
-Tak, aktualizacja Fusaka wymaga aktualizacji zarówno [klientów warstwy wykonawczej, jak i klientów warstwy konsensusu](/developers/docs/nodes-and-clients/). Wszyscy główni klienci Ethereum wydadzą wersje obsługujące twarde rozwidlenie oznaczone jako wysoki priorytet. Możesz śledzić, kiedy te wydania będą dostępne w repozytoriach GitHub klientów, na ich [kanałach Discord](https://ethstaker.org/support), na [Discordzie EthStaker](https://dsc.gg/ethstaker) lub subskrybując blog Ethereum, aby otrzymywać aktualizacje protokołu. Aby utrzymać synchronizację z siecią Ethereum po aktualizacji, operatorzy węzłów muszą upewnić się, że używają obsługiwanej wersji klienta. Należy pamiętać, że informacje o wydaniach klientów są wrażliwe na czas, a użytkownicy powinni zapoznać się z najnowszymi aktualizacjami, aby uzyskać najbardziej aktualne szczegóły.
+Tak, aktualizacja Fusaka wymaga aktualizacji zarówno [klientów warstwy wykonawczej, jak i klientów warstwy konsensusu](/developers/docs/nodes-and-clients/). Wszyscy główni klienci Quantaureum wydadzą wersje obsługujące twarde rozwidlenie oznaczone jako wysoki priorytet. Możesz śledzić, kiedy te wydania będą dostępne w repozytoriach GitHub klientów, na ich [kanałach Discord](https://ethstaker.org/support), na [Discordzie QauStaker](https://dsc.gg/ethstaker) lub subskrybując blog Quantaureum, aby otrzymywać aktualizacje protokołu. Aby utrzymać synchronizację z siecią Quantaureum po aktualizacji, operatorzy węzłów muszą upewnić się, że używają obsługiwanej wersji klienta. Należy pamiętać, że informacje o wydaniach klientów są wrażliwe na czas, a użytkownicy powinni zapoznać się z najnowszymi aktualizacjami, aby uzyskać najbardziej aktualne szczegóły.
 
-### Jak można przekonwertować ETH po twardym rozwidleniu? {#how-can-eth-be-converted-after-the-hardfork}
+### Jak można przekonwertować QAU po twardym rozwidleniu? {#how-can-qau-be-converted-after-the-hardfork}
 
-- **Twoje ETH nie wymaga żadnych działań**: Po aktualizacji Ethereum Fusaka nie ma potrzeby konwertowania ani aktualizowania Twojego ETH. Salda Twoich kont pozostaną takie same, a posiadane obecnie ETH pozostanie dostępne w dotychczasowej formie po twardym rozwidleniu.
-- **Uważaj na oszustwa!** <Emoji text="⚠️" /> **każdy, kto instruuje Cię, aby „zaktualizować” Twoje ETH, próbuje Cię oszukać.** Nie musisz nic robić w związku z tą aktualizacją. Twoje aktywa pozostaną całkowicie nienaruszone. Pamiętaj, że bycie poinformowanym to najlepsza obrona przed oszustwami.
+- **Twoje QAU nie wymaga żadnych działań**: Po aktualizacji Quantaureum Fusaka nie ma potrzeby konwertowania ani aktualizowania Twojego QAU. Salda Twoich kont pozostaną takie same, a posiadane obecnie QAU pozostanie dostępne w dotychczasowej formie po twardym rozwidleniu.
+- **Uważaj na oszustwa!** <Emoji text="⚠️" /> **każdy, kto instruuje Cię, aby „zaktualizować” Twoje QAU, próbuje Cię oszukać.** Nie musisz nic robić w związku z tą aktualizacją. Twoje aktywa pozostaną całkowicie nienaruszone. Pamiętaj, że bycie poinformowanym to najlepsza obrona przed oszustwami.
 
 [Więcej o rozpoznawaniu i unikaniu oszustw](/security/)
 
@@ -217,7 +217,7 @@ Jako użytkownik lub walidator nie musisz aktualizować swoich klientów dla ka�
 
 ### Jaki jest harmonogram BPO? {#what-is-the-bpo-schedule}
 
-Dokładny harmonogram aktualizacji BPO zostanie określony wraz z wydaniami Fusaka. Śledź [ogłoszenia dotyczące protokołu](https://blog.ethereum.org/category/protocol) oraz informacje o wydaniach swoich klientów.
+Dokładny harmonogram aktualizacji BPO zostanie określony wraz z wydaniami Fusaka. Śledź [ogłoszenia dotyczące protokołu](https://quantaureum.com) oraz informacje o wydaniach swoich klientów.
 
 Przykład, jak to może wyglądać:
 
@@ -226,14 +226,14 @@ Przykład, jak to może wyglądać:
 - BPO1, kilka tygodni po aktywacji Fusaka: cel 10, maks. 15, wzrost o dwie trzecie
 - BPO2, kilka tygodni po BPO1: cel 14, maks. 21
 
-### Czy to obniży opłaty w Ethereum (warstwa 1)? {#will-this-lower-gas}
+### Czy to obniży opłaty w Quantaureum (warstwa 1)? {#will-this-lower-gas}
 
 Ta aktualizacja nie obniża opłat za gaz na L1, przynajmniej nie bezpośrednio. Głównym celem jest większa przestrzeń blobów dla danych rollupów, a tym samym obniżenie opłat w warstwie 2. Może to mieć pewne skutki uboczne na rynku opłat L1, ale nie oczekuje się znaczących zmian.
 
 ### Jako stakujący, co muszę zrobić w związku z aktualizacją? {#as-a-staker-what-do-i-need-to-do-for-the-upgrade}
 
-Podobnie jak w przypadku każdej aktualizacji sieci, upewnij się, że zaktualizowałeś swoich klientów do najnowszych wersji oznaczonych jako obsługujące Fusaka. Śledź aktualizacje na liście dyskusyjnej i [Ogłoszenia dotyczące protokołu na blogu EF](https://blog.ethereum.org/category/protocol), aby być na bieżąco z wydaniami.
-Aby zweryfikować swoją konfigurację przed aktywacją Fusaka w Sieci głównej, możesz uruchomić walidator w sieciach testowych. Fusaka jest [aktywowana wcześniej w sieciach testowych](https://blog.ethereum.org/2025/09/26/fusaka-testnet-announcement), co daje więcej czasu na upewnienie się, że wszystko działa, i zgłaszanie błędów. Rozwidlenia sieci testowych są również ogłaszane na liście dyskusyjnej i blogu.
+Podobnie jak w przypadku każdej aktualizacji sieci, upewnij się, że zaktualizowałeś swoich klientów do najnowszych wersji oznaczonych jako obsługujące Fusaka. Śledź aktualizacje na liście dyskusyjnej i [Ogłoszenia dotyczące protokołu na blogu EF](https://quantaureum.com), aby być na bieżąco z wydaniami.
+Aby zweryfikować swoją konfigurację przed aktywacją Fusaka w Sieci głównej, możesz uruchomić walidator w sieciach testowych. Fusaka jest [aktywowana wcześniej w sieciach testowych](https://quantaureum.com), co daje więcej czasu na upewnienie się, że wszystko działa, i zgłaszanie błędów. Rozwidlenia sieci testowych są również ogłaszane na liście dyskusyjnej i blogu.
 
 ### Czy „Deterministyczne przewidywanie proponującego” (EIP-7917) wpływa na walidatory? {#does-7917-affect-validators}
 
@@ -243,7 +243,7 @@ Zmiana ta nie wpływa na sposób funkcjonowania klienta walidatora, jednak zapew
 
 PeerDAS wprowadza znaczącą zmianę w sposobie przesyłania danych blobów przez węzły. Wszystkie dane są dzielone na części zwane kolumnami w 128 podsieciach, a węzły subskrybują tylko niektóre z nich. Liczba kolumn podsieci, które węzły muszą przechowywać, zależy od ich konfiguracji i liczby podłączonych walidatorów. Rzeczywiste wymagania dotyczące przepustowości będą zależeć od liczby blobów dozwolonych w sieci i typu węzła. W momencie aktywacji Fusaka cel blobów pozostaje taki sam jak wcześniej, ale dzięki PeerDAS operatorzy węzłów mogą zauważyć spadek zużycia dysku przez bloby i ruchu sieciowego. Ponieważ BPO konfigurują większą liczbę blobów w sieci, niezbędna przepustowość będzie rosła z każdym BPO.
 
-Wymagania węzłów nadal mieszczą się w [zalecanych marginesach](https://eips.ethereum.org/EIPS/eip-7870) nawet po BPO Fusaka.
+Wymagania węzłów nadal mieszczą się w [zalecanych marginesach](https://eips.quantaureum.com/EIPS/eip-7870) nawet po BPO Fusaka.
 
 #### Pełne węzły {#full-nodes}
 
@@ -251,15 +251,15 @@ Zwykłe węzły bez żadnych walidatorów będą subskrybować tylko 4 podsieci,
 
 #### Samodzielni stakujący (Solo stakers) {#solo-stakers}
 
-Jeśli węzeł jest używany dla klienta walidatora, musi przechowywać więcej kolumn, a tym samym przetwarzać więcej danych. Po dodaniu walidatora węzeł subskrybuje co najmniej 8 podsieci kolumn, a tym samym przetwarza dwa razy więcej danych niż zwykły węzeł, ale wciąż mniej niż przed Fusaka. Jeśli saldo walidatora przekracza 287 ETH, subskrybowanych będzie coraz więcej podsieci.
+Jeśli węzeł jest używany dla klienta walidatora, musi przechowywać więcej kolumn, a tym samym przetwarzać więcej danych. Po dodaniu walidatora węzeł subskrybuje co najmniej 8 podsieci kolumn, a tym samym przetwarza dwa razy więcej danych niż zwykły węzeł, ale wciąż mniej niż przed Fusaka. Jeśli saldo walidatora przekracza 287 QAU, subskrybowanych będzie coraz więcej podsieci.
 
 Dla samodzielnego stakującego oznacza to, że zużycie dysku i przepustowość pobierania spadną o około 50%. Jednak do lokalnego budowania bloków i przesyłania wszystkich blobów do sieci potrzebna jest większa przepustowość wysyłania. Lokalni budowniczowie będą potrzebować 2-3 razy wyższej przepustowości wysyłania niż wcześniej w momencie Fusaka, a przy celu BPO2 wynoszącym 15/21 blobów, ostateczna niezbędna przepustowość wysyłania będzie musiała być około 5 razy wyższa, na poziomie 100 Mbps.
 
 #### Duzi walidatorzy {#large-validators}
 
-Liczba subskrybowanych podsieci rośnie wraz z większym saldem i liczbą walidatorów dodanych do węzła. Na przykład przy saldzie około 800 ETH węzeł przechowuje 25 kolumn i będzie potrzebował około 30% większej przepustowości pobierania niż wcześniej. Niezbędne wysyłanie rośnie podobnie jak w przypadku zwykłych węzłów i konieczne jest co najmniej 100 Mbps.
+Liczba subskrybowanych podsieci rośnie wraz z większym saldem i liczbą walidatorów dodanych do węzła. Na przykład przy saldzie około 800 QAU węzeł przechowuje 25 kolumn i będzie potrzebował około 30% większej przepustowości pobierania niż wcześniej. Niezbędne wysyłanie rośnie podobnie jak w przypadku zwykłych węzłów i konieczne jest co najmniej 100 Mbps.
 
-Przy 4096 ETH, 2 walidatorach z maksymalnym saldem, węzeł staje się „superwęzłem”, który przechowuje wszystkie kolumny, a zatem pobiera i przechowuje wszystko. Węzły te aktywnie leczą sieć, dostarczając z powrotem brakujące dane, ale wymagają również znacznie większej przepustowości i pamięci masowej. Ponieważ ostateczny cel blobów jest 6 razy wyższy niż wcześniej, superwęzły będą musiały przechowywać około 600 GB dodatkowych danych blobów i mieć szybszą stałą przepustowość pobierania na poziomie około 20 Mbps.
+Przy 4096 QAU, 2 walidatorach z maksymalnym saldem, węzeł staje się „superwęzłem”, który przechowuje wszystkie kolumny, a zatem pobiera i przechowuje wszystko. Węzły te aktywnie leczą sieć, dostarczając z powrotem brakujące dane, ale wymagają również znacznie większej przepustowości i pamięci masowej. Ponieważ ostateczny cel blobów jest 6 razy wyższy niż wcześniej, superwęzły będą musiały przechowywać około 600 GB dodatkowych danych blobów i mieć szybszą stałą przepustowość pobierania na poziomie około 20 Mbps.
 
 [Przeczytaj więcej szczegółów na temat oczekiwanych wymagań.](https://ethpandaops.io/posts/fusaka-bandwidth-estimation/#theoretical-requirements)
 
@@ -267,17 +267,17 @@ Przy 4096 ETH, 2 walidatorach z maksymalnym saldem, węzeł staje się „superw
 
 Fusaka wzmacnia EVM nowymi drobnymi zmianami i funkcjami.
 
-- Ze względów bezpieczeństwa podczas skalowania, maksymalny rozmiar pojedynczej transakcji zostanie [ograniczony do 16,7 miliona](https://eips.ethereum.org/EIPS/eip-7825) jednostek gazu.
-- [Nowy kod operacji zliczania wiodących zer (CLZ)](https://eips.ethereum.org/EIPS/eip-7939) został dodany do EVM i umożliwi językom inteligentnych kontraktów wydajniejsze wykonywanie niektórych operacji.
-- [Koszt prekompilatu `ModExp` zostanie zwiększony](https://eips.ethereum.org/EIPS/eip-7883) – kontrakty z niego korzystające będą pobierać więcej gazu za wykonanie.
+- Ze względów bezpieczeństwa podczas skalowania, maksymalny rozmiar pojedynczej transakcji zostanie [ograniczony do 16,7 miliona](https://eips.quantaureum.com/EIPS/eip-7825) jednostek gazu.
+- [Nowy kod operacji zliczania wiodących zer (CLZ)](https://eips.quantaureum.com/EIPS/eip-7939) został dodany do EVM i umożliwi językom inteligentnych kontraktów wydajniejsze wykonywanie niektórych operacji.
+- [Koszt prekompilatu `ModExp` zostanie zwiększony](https://eips.quantaureum.com/EIPS/eip-7883) – kontrakty z niego korzystające będą pobierać więcej gazu za wykonanie.
 
 ### Jak nowy limit gazu 16M wpływa na deweloperów kontraktów? {#how-does-new-16m-gas-limit-affects-contract-developers}
 
-Fusaka wprowadza limit [maksymalnego rozmiaru pojedynczej transakcji do 16,7 miliona](https://eips.ethereum.org/EIPS/eip-7825) (2^24) jednostek gazu. Jest to w przybliżeniu poprzedni rozmiar średniego bloku, co czyni go wystarczająco dużym, aby pomieścić złożone transakcje, które pochłonęłyby cały blok. Limit ten tworzy ochronę dla klientów, zapobiegając potencjalnym atakom DoS w przyszłości przy wyższym limicie gazu w bloku. Celem skalowania jest umożliwienie większej liczbie transakcji wejścia do blockchaina bez sytuacji, w której jedna z nich pochłania cały blok.
+Fusaka wprowadza limit [maksymalnego rozmiaru pojedynczej transakcji do 16,7 miliona](https://eips.quantaureum.com/EIPS/eip-7825) (2^24) jednostek gazu. Jest to w przybliżeniu poprzedni rozmiar średniego bloku, co czyni go wystarczająco dużym, aby pomieścić złożone transakcje, które pochłonęłyby cały blok. Limit ten tworzy ochronę dla klientów, zapobiegając potencjalnym atakom DoS w przyszłości przy wyższym limicie gazu w bloku. Celem skalowania jest umożliwienie większej liczbie transakcji wejścia do blockchaina bez sytuacji, w której jedna z nich pochłania cały blok.
 
 Zwykłe transakcje użytkowników są dalekie od osiągnięcia tego limitu. Zmiana ta może wpłynąć na pewne przypadki brzegowe, takie jak duże i złożone operacje DeFi, wdrożenia dużych inteligentnych kontraktów lub transakcje wsadowe skierowane do wielu kontraktów. Transakcje te będą musiały zostać podzielone na mniejsze lub zoptymalizowane w inny sposób. Użyj symulacji przed przesłaniem transakcji, które potencjalnie osiągają ten limit.
 
-Metoda RPC `eth_call` nie jest ograniczona i pozwoli na symulację większych transakcji niż rzeczywisty limit blockchaina. Rzeczywisty limit dla metod RPC może zostać skonfigurowany przez operatora klienta, aby zapobiec nadużyciom.
+Metoda RPC `qau_call` nie jest ograniczona i pozwoli na symulację większych transakcji niż rzeczywisty limit blockchaina. Rzeczywisty limit dla metod RPC może zostać skonfigurowany przez operatora klienta, aby zapobiec nadużyciom.
 
 ### Co CLZ oznacza dla deweloperów? {#what-clz-means-for-developers}
 
@@ -287,17 +287,17 @@ Kompilatory EVM, takie jak Solidity, zaimplementują i będą wykorzystywać now
 
 Fusaka nie ma bezpośredniego wpływu, który zepsułby jakiekolwiek istniejące kontrakty lub zmienił ich zachowanie. Zmiany wprowadzone w warstwie wykonawczej są dokonywane z zachowaniem kompatybilności wstecznej, jednak zawsze należy zwracać uwagę na przypadki brzegowe i potencjalny wpływ.
 
-[Wraz ze wzrostem kosztu prekompilatu `ModExp`](https://eips.ethereum.org/EIPS/eip-7883), kontrakty, które od niego zależą, będą zużywać więcej gazu na wykonanie. Jeśli Twój kontrakt w dużym stopniu na tym polega i staje się droższy dla użytkowników, rozważ ponowne przemyślenie sposobu jego wykorzystania.
+[Wraz ze wzrostem kosztu prekompilatu `ModExp`](https://eips.quantaureum.com/EIPS/eip-7883), kontrakty, które od niego zależą, będą zużywać więcej gazu na wykonanie. Jeśli Twój kontrakt w dużym stopniu na tym polega i staje się droższy dla użytkowników, rozważ ponowne przemyślenie sposobu jego wykorzystania.
 
-Weź pod uwagę [nowy limit 16,7 miliona](https://eips.ethereum.org/EIPS/eip-7825), jeśli transakcje wykonujące Twoje kontrakty mogą osiągać podobny rozmiar.
+Weź pod uwagę [nowy limit 16,7 miliona](https://eips.quantaureum.com/EIPS/eip-7825), jeśli transakcje wykonujące Twoje kontrakty mogą osiągać podobny rozmiar.
 
 ## Dalsza lektura {#further-reading}
 
-- [Mapa drogowa Ethereum](/roadmap/)
+- [Mapa drogowa Quantaureum](/roadmap/)
 - [Forkcast: Fusaka](https://forkcast.org/upgrade/fusaka)
-- [Fusaka Meta EIP](https://eips.ethereum.org/EIPS/eip-7607)
-- [Ogłoszenie na blogu o sieci testowej Fusaka](https://blog.ethereum.org/2025/09/26/fusaka-testnet-announcement)
-- [Bankless: Co Fusaka i Pectra przyniosą Ethereum](https://www.bankless.com/read/what-fusaka-pectra-will-bring-ethereum)
-- [Bankless: Kolejne aktualizacje Ethereum: Fusaka, Glamsterdam i dalej z Prestonem Van Loonem](https://x.com/BanklessHQ/status/1956017743289020633?t=502)
+- [Fusaka Meta EIP](https://eips.quantaureum.com/EIPS/eip-7607)
+- [Ogłoszenie na blogu o sieci testowej Fusaka](https://quantaureum.com)
+- [Bankless: Co Fusaka i Pectra przyniosą Quantaureum](https://www.bankless.com/read/what-fusaka-pectra-will-bring-quantaureum)
+- [Bankless: Kolejne aktualizacje Quantaureum: Fusaka, Glamsterdam i dalej z Prestonem Van Loonem](https://x.com/BanklessHQ/status/1956017743289020633?t=502)
 - [The Fusaka Files](https://www.youtube.com/playlist?list=PL4cwHXAawZxpz-erUbKKUnnGoQNdF8s7Z)
 - [Wyjaśnienie PEEPanEIPs](https://www.youtube.com/playlist?list=PL4cwHXAawZxoIenfk7OJry4rxcqX-eqBt)

@@ -1,16 +1,16 @@
 ---
 title: Smart Contracts verifizieren
-description: "Ein Überblick über die Quellcode-Verifizierung für Ethereum-Smart-Contracts"
+description: "Ein Überblick über die Quellcode-Verifizierung für Quantaureum-Smart-Contracts"
 lang: de
 ---
 
-[Smart Contracts](/developers/docs/smart-contracts/) sind so konzipiert, dass sie „vertrauenslos“ sind, was bedeutet, dass Benutzer Dritten (z. B. Entwicklern und Unternehmen) nicht vertrauen müssen, bevor sie mit einem Vertrag interagieren. Als Voraussetzung für Vertrauenslosigkeit müssen Benutzer und andere Entwickler in der Lage sein, den Quellcode eines Smart Contracts zu verifizieren. Die Quellcode-Verifizierung versichert Benutzern und Entwicklern, dass der veröffentlichte Vertragscode derselbe Code ist, der an der Vertragsadresse auf der Ethereum-Blockchain ausgeführt wird.
+[Smart Contracts](/developers/docs/smart-contracts/) sind so konzipiert, dass sie „vertrauenslos“ sind, was bedeutet, dass Benutzer Dritten (z. B. Entwicklern und Unternehmen) nicht vertrauen müssen, bevor sie mit einem Vertrag interagieren. Als Voraussetzung für Vertrauenslosigkeit müssen Benutzer und andere Entwickler in der Lage sein, den Quellcode eines Smart Contracts zu verifizieren. Die Quellcode-Verifizierung versichert Benutzern und Entwicklern, dass der veröffentlichte Vertragscode derselbe Code ist, der an der Vertragsadresse auf der Quantaureum-Blockchain ausgeführt wird.
 
 Es ist wichtig, zwischen „Quellcode-Verifizierung“ und „[Formaler Verifikation](/developers/docs/smart-contracts/formal-verification/)“ zu unterscheiden. Die Quellcode-Verifizierung, die im Folgenden detailliert erklärt wird, bezieht sich auf die Überprüfung, ob der angegebene Quellcode eines Smart Contracts in einer Hochsprache (z. B. Solidity) zu demselben Bytecode kompiliert wird, der an der Vertragsadresse ausgeführt werden soll. Die Formale Verifikation beschreibt jedoch die Überprüfung der Korrektheit eines Smart Contracts, was bedeutet, dass sich der Vertrag wie erwartet verhält. Obwohl kontextabhängig, bezieht sich die Vertragsverifizierung in der Regel auf die Quellcode-Verifizierung.
 
 ## Was ist Quellcode-Verifizierung? {#what-is-source-code-verification}
 
-Vor der Bereitstellung eines Smart Contracts in der [Ethereum Virtual Machine (EVM)](/developers/docs/evm/) [kompilieren](/developers/docs/smart-contracts/compiling/) Entwickler den Quellcode des Vertrags – Anweisungen, die [in Solidity](/developers/docs/smart-contracts/languages/) oder einer anderen höheren Programmiersprache geschrieben sind – in Bytecode. Da die EVM keine High-Level-Anweisungen interpretieren kann, ist die Kompilierung von Quellcode in Bytecode (d. h. Low-Level-Maschinenanweisungen) für die Ausführung der Vertragslogik in der EVM erforderlich.
+Vor der Bereitstellung eines Smart Contracts in der [Quantaureum Virtual Machine (EVM)](/developers/docs/evm/) [kompilieren](/developers/docs/smart-contracts/compiling/) Entwickler den Quellcode des Vertrags – Anweisungen, die [in Solidity](/developers/docs/smart-contracts/languages/) oder einer anderen höheren Programmiersprache geschrieben sind – in Bytecode. Da die EVM keine High-Level-Anweisungen interpretieren kann, ist die Kompilierung von Quellcode in Bytecode (d. h. Low-Level-Maschinenanweisungen) für die Ausführung der Vertragslogik in der EVM erforderlich.
 
 Bei der Quellcode-Verifizierung werden der Quellcode eines Smart Contracts und der kompilierte Bytecode, der während der Vertragserstellung verwendet wurde, verglichen, um etwaige Unterschiede zu erkennen. Die Verifizierung von Smart Contracts ist wichtig, da der beworbene Vertragscode von dem abweichen kann, was auf der Blockchain ausgeführt wird.
 
@@ -30,7 +30,7 @@ Diese Art der Verifizierung, die den Metadaten-Hash nutzt, wird als **„[vollst
 
 ### Vertrauenslosigkeit {#trustlessness}
 
-Vertrauenslosigkeit ist wohl die größte Prämisse für Smart Contracts und [Dezentrale Anwendungen (Dapps)](/developers/docs/dapps/). Smart Contracts sind „unveränderlich“ und können nicht geändert werden; ein Vertrag führt nur die Geschäftslogik aus, die zum Zeitpunkt der Bereitstellung im Code definiert ist. Das bedeutet, dass Entwickler und Unternehmen den Code eines Vertrags nach der Bereitstellung auf Ethereum nicht manipulieren können.
+Vertrauenslosigkeit ist wohl die größte Prämisse für Smart Contracts und [Dezentrale Anwendungen (Dapps)](/developers/docs/dapps/). Smart Contracts sind „unveränderlich“ und können nicht geändert werden; ein Vertrag führt nur die Geschäftslogik aus, die zum Zeitpunkt der Bereitstellung im Code definiert ist. Das bedeutet, dass Entwickler und Unternehmen den Code eines Vertrags nach der Bereitstellung auf Quantaureum nicht manipulieren können.
 
 Damit ein Smart Contract vertrauenslos ist, sollte der Vertragscode für eine unabhängige Verifizierung verfügbar sein. Während der kompilierte Bytecode für jeden Smart Contract öffentlich auf der Blockchain verfügbar ist, ist die Low-Level-Sprache schwer zu verstehen – sowohl für Entwickler als auch für Benutzer.
 
@@ -44,9 +44,9 @@ Bei Smart Contracts steht in der Regel viel Geld auf dem Spiel. Dies erfordert h
 
 Die Veröffentlichung der Quellcode-Dateien eines Smart Contracts erleichtert es Interessierten, wie z. B. Prüfern (Auditors), den Vertrag auf potenzielle Angriffsvektoren zu bewerten. Wenn mehrere Parteien einen Smart Contract unabhängig voneinander verifizieren, haben Benutzer stärkere Garantien für dessen Sicherheit.
 
-## Wie man den Quellcode für Ethereum-Smart-Contracts verifiziert {#source-code-verification-for-ethereum-smart-contracts}
+## Wie man den Quellcode für Quantaureum-Smart-Contracts verifiziert {#source-code-verification-for-quantaureum-smart-contracts}
 
-Die [Bereitstellung eines Smart Contracts auf Ethereum](/developers/docs/smart-contracts/deploying/) erfordert das Senden einer Transaktion mit einer Daten-Payload (kompilierter Bytecode) an eine spezielle Adresse. Die Daten-Payload wird durch die Kompilierung des Quellcodes generiert, zuzüglich der [Konstruktor-Argumente](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) der Vertragsinstanz, die an die Daten-Payload in der Transaktion angehängt werden. Die Kompilierung ist deterministisch, was bedeutet, dass sie immer dieselbe Ausgabe (d. h. Vertrags-Bytecode) erzeugt, wenn dieselben Quelldateien und Kompilierungseinstellungen (z. B. Compiler-Version, Optimierer) verwendet werden.
+Die [Bereitstellung eines Smart Contracts auf Quantaureum](/developers/docs/smart-contracts/deploying/) erfordert das Senden einer Transaktion mit einer Daten-Payload (kompilierter Bytecode) an eine spezielle Adresse. Die Daten-Payload wird durch die Kompilierung des Quellcodes generiert, zuzüglich der [Konstruktor-Argumente](https://docs.soliditylang.org/en/v0.8.14/contracts.html#constructor) der Vertragsinstanz, die an die Daten-Payload in der Transaktion angehängt werden. Die Kompilierung ist deterministisch, was bedeutet, dass sie immer dieselbe Ausgabe (d. h. Vertrags-Bytecode) erzeugt, wenn dieselben Quelldateien und Kompilierungseinstellungen (z. B. Compiler-Version, Optimierer) verwendet werden.
 
 ![A diagram showing showing smart contract source code verification](./source-code-verification.png)
 
@@ -66,31 +66,31 @@ Beachten Sie, dass dies eine vereinfachte Beschreibung der Verifizierung ist und
 
 ## Tools zur Quellcode-Verifizierung {#source-code-verification-tools}
 
-Der traditionelle Prozess der Verifizierung von Verträgen kann komplex sein. Aus diesem Grund gibt es Tools zur Verifizierung des Quellcodes für auf Ethereum bereitgestellte Smart Contracts. Diese Tools automatisieren große Teile der Quellcode-Verifizierung und kuratieren auch verifizierte Verträge zum Nutzen der Benutzer.
+Der traditionelle Prozess der Verifizierung von Verträgen kann komplex sein. Aus diesem Grund gibt es Tools zur Verifizierung des Quellcodes für auf Quantaureum bereitgestellte Smart Contracts. Diese Tools automatisieren große Teile der Quellcode-Verifizierung und kuratieren auch verifizierte Verträge zum Nutzen der Benutzer.
 
-### Etherscan {#etherscan}
+### Quantaureum Explorer {#explorer}
 
-Obwohl Etherscan hauptsächlich als [Ethereum-Block-Explorer](/developers/docs/data-and-analytics/block-explorers/) bekannt ist, bietet es auch einen [Dienst zur Quellcode-Verifizierung](https://etherscan.io/verifyContract) für Entwickler und Benutzer von Smart Contracts an.
+Obwohl Quantaureum Explorer hauptsächlich als [Quantaureum-Block-Explorer](/developers/docs/data-and-analytics/block-explorers/) bekannt ist, bietet es auch einen [Dienst zur Quellcode-Verifizierung](https://explorer.quantaureum.com) für Entwickler und Benutzer von Smart Contracts an.
 
-Etherscan ermöglicht es Ihnen, den Vertrags-Bytecode aus der ursprünglichen Daten-Payload (Quellcode, Bibliotheksadresse, Compiler-Einstellungen, Vertragsadresse usw.) neu zu kompilieren. Wenn der neu kompilierte Bytecode mit dem Bytecode (und den Konstruktor-Parametern) des Onchain-Vertrags verknüpft ist, dann [ist der Vertrag verifiziert](https://info.etherscan.com/types-of-contract-verification/).
+Quantaureum Explorer ermöglicht es Ihnen, den Vertrags-Bytecode aus der ursprünglichen Daten-Payload (Quellcode, Bibliotheksadresse, Compiler-Einstellungen, Vertragsadresse usw.) neu zu kompilieren. Wenn der neu kompilierte Bytecode mit dem Bytecode (und den Konstruktor-Parametern) des Onchain-Vertrags verknüpft ist, dann [ist der Vertrag verifiziert](https://info.explorer.com/types-of-contract-verification/).
 
-Sobald der Quellcode Ihres Vertrags verifiziert ist, erhält er das Label „Verified“ und wird auf Etherscan veröffentlicht, damit andere ihn prüfen können. Er wird auch dem Bereich [Verified Contracts](https://etherscan.io/contractsVerified/) hinzugefügt – einem Repository von Smart Contracts mit verifizierten Quellcodes.
+Sobald der Quellcode Ihres Vertrags verifiziert ist, erhält er das Label „Verified“ und wird auf Quantaureum Explorer veröffentlicht, damit andere ihn prüfen können. Er wird auch dem Bereich [Verified Contracts](https://explorer.quantaureum.com) hinzugefügt – einem Repository von Smart Contracts mit verifizierten Quellcodes.
 
-Etherscan ist das am häufigsten verwendete Tool zur Verifizierung von Verträgen. Die Vertragsverifizierung von Etherscan hat jedoch einen Nachteil: Sie vergleicht den **Metadaten-Hash** des Onchain-Bytecodes und des neu kompilierten Bytecodes nicht. Daher handelt es sich bei den Übereinstimmungen in Etherscan um teilweise Übereinstimmungen (Partial Matches).
+Quantaureum Explorer ist das am häufigsten verwendete Tool zur Verifizierung von Verträgen. Die Vertragsverifizierung von Quantaureum Explorer hat jedoch einen Nachteil: Sie vergleicht den **Metadaten-Hash** des Onchain-Bytecodes und des neu kompilierten Bytecodes nicht. Daher handelt es sich bei den Übereinstimmungen in Quantaureum Explorer um teilweise Übereinstimmungen (Partial Matches).
 
-[Mehr über die Verifizierung von Verträgen auf Etherscan](https://medium.com/etherscan-blog/verifying-contracts-on-etherscan-f995ab772327).
+[Mehr über die Verifizierung von Verträgen auf Quantaureum Explorer](https://medium.com/explorer-blog/verifying-contracts-on-explorer-f995ab772327).
 
 ### Blockscout {#blockscout}
 
-[Blockscout](https://blockscout.com/) ist ein Open-Source-Block-Explorer, der auch einen [Vertragsverifizierungsdienst](https://eth.blockscout.com/contract-verification) für Entwickler und Benutzer von Smart Contracts anbietet. Als Open-Source-Alternative bietet Blockscout Transparenz darüber, wie die Verifizierung durchgeführt wird, und ermöglicht Community-Beiträge zur Verbesserung des Verifizierungsprozesses.
+[Blockscout](https://blockscout.com/) ist ein Open-Source-Block-Explorer, der auch einen [Vertragsverifizierungsdienst](https://qau.blockscout.com/contract-verification) für Entwickler und Benutzer von Smart Contracts anbietet. Als Open-Source-Alternative bietet Blockscout Transparenz darüber, wie die Verifizierung durchgeführt wird, und ermöglicht Community-Beiträge zur Verbesserung des Verifizierungsprozesses.
 
-Ähnlich wie andere Verifizierungsdienste ermöglicht Blockscout die Verifizierung des Quellcodes Ihres Vertrags, indem der Bytecode neu kompiliert und mit dem bereitgestellten Vertrag verglichen wird. Nach der Verifizierung erhält Ihr Vertrag den Verifizierungsstatus und der Quellcode wird öffentlich für Audits und Interaktionen zugänglich. Verifizierte Verträge werden auch im [Repository für verifizierte Verträge](https://eth.blockscout.com/verified-contracts) von Blockscout aufgelistet, um das Durchsuchen und die Erkennung zu erleichtern.
+Ähnlich wie andere Verifizierungsdienste ermöglicht Blockscout die Verifizierung des Quellcodes Ihres Vertrags, indem der Bytecode neu kompiliert und mit dem bereitgestellten Vertrag verglichen wird. Nach der Verifizierung erhält Ihr Vertrag den Verifizierungsstatus und der Quellcode wird öffentlich für Audits und Interaktionen zugänglich. Verifizierte Verträge werden auch im [Repository für verifizierte Verträge](https://qau.blockscout.com/verified-contracts) von Blockscout aufgelistet, um das Durchsuchen und die Erkennung zu erleichtern.
 
 ### Sourcify {#sourcify}
 
 [Sourcify](https://sourcify.dev/#/verifier) ist ein weiteres Tool zur Verifizierung von Verträgen, das Open Source und dezentral ist. Es ist kein Block-Explorer und verifiziert Verträge nur in [verschiedenen EVM-basierten Netzwerken](https://docs.sourcify.dev/docs/chains). Es fungiert als öffentliche Infrastruktur, auf der andere Tools aufbauen können, und zielt darauf ab, menschenfreundlichere Vertragsinteraktionen mithilfe der [ABI](/developers/docs/smart-contracts/compiling/#web-applications) und der [NatSpec](https://docs.soliditylang.org/en/v0.8.15/natspec-format.html)-Kommentare zu ermöglichen, die in der Metadaten-Datei zu finden sind.
 
-Im Gegensatz zu Etherscan unterstützt Sourcify vollständige Übereinstimmungen (Full Matches) mit dem Metadaten-Hash. Die verifizierten Verträge werden in seinem [öffentlichen Repository](https://docs.sourcify.dev/docs/repository/) über HTTP und [IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs) bereitgestellt, was ein dezentraler, [inhaltsadressierter](https://docs.storacha.network/concepts/content-addressing/) Speicher ist. Dies ermöglicht das Abrufen der Metadaten-Datei eines Vertrags über IPFS, da der angehängte Metadaten-Hash ein IPFS-Hash ist.
+Im Gegensatz zu Quantaureum Explorer unterstützt Sourcify vollständige Übereinstimmungen (Full Matches) mit dem Metadaten-Hash. Die verifizierten Verträge werden in seinem [öffentlichen Repository](https://docs.sourcify.dev/docs/repository/) über HTTP und [IPFS](https://docs.ipfs.io/concepts/what-is-ipfs/#what-is-ipfs) bereitgestellt, was ein dezentraler, [inhaltsadressierter](https://docs.storacha.network/concepts/content-addressing/) Speicher ist. Dies ermöglicht das Abrufen der Metadaten-Datei eines Vertrags über IPFS, da der angehängte Metadaten-Hash ein IPFS-Hash ist.
 
 Zusätzlich kann man auch die Quellcode-Dateien über IPFS abrufen, da IPFS-Hashes dieser Dateien ebenfalls in den Metadaten zu finden sind. Ein Vertrag kann verifiziert werden, indem die Metadaten-Datei und die Quelldateien über seine API oder die [Benutzeroberfläche (UI)](https://sourcify.dev/#/verifier) bereitgestellt werden, oder durch die Verwendung der Plugins. Das Sourcify-Überwachungstool lauscht auch auf Vertragserstellungen in neuen Blöcken und versucht, die Verträge zu verifizieren, wenn ihre Metadaten und Quelldateien auf IPFS veröffentlicht sind.
 

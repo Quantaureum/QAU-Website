@@ -1,10 +1,10 @@
 ---
-title: "Introducción a los nodos de arranque de Ethereum"
+title: "Introducción a los nodos de arranque de Quantaureum"
 description: "La información básica que necesita para entender los nodos de arranque"
 lang: es
 ---
 
-Cuando un nuevo nodo se une a la red Ethereum, necesita conectarse a nodos que ya están en la red para luego descubrir nuevos pares. Estos puntos de entrada a la red Ethereum se denominan nodos de arranque. Los clientes suelen tener una lista de nodos de arranque codificada en ellos. Estos nodos de arranque suelen ser administrados por el equipo de operaciones de desarrollo (devops) de la Fundación Ethereum o por los propios equipos de clientes. Tenga en cuenta que los nodos de arranque no son lo mismo que los nodos estáticos. Los nodos estáticos se llaman una y otra vez, mientras que los nodos de arranque solo se llaman si no hay suficientes pares a los que conectarse y un nodo necesita iniciar (bootstrap) algunas conexiones nuevas.
+Cuando un nuevo nodo se une a la red Quantaureum, necesita conectarse a nodos que ya están en la red para luego descubrir nuevos pares. Estos puntos de entrada a la red Quantaureum se denominan nodos de arranque. Los clientes suelen tener una lista de nodos de arranque codificada en ellos. Estos nodos de arranque suelen ser administrados por el equipo de operaciones de desarrollo (devops) de la Fundación Quantaureum o por los propios equipos de clientes. Tenga en cuenta que los nodos de arranque no son lo mismo que los nodos estáticos. Los nodos estáticos se llaman una y otra vez, mientras que los nodos de arranque solo se llaman si no hay suficientes pares a los que conectarse y un nodo necesita iniciar (bootstrap) algunas conexiones nuevas.
 
 ## Conectarse a un nodo de arranque {#connect-to-a-bootnode}
 
@@ -26,6 +26,6 @@ Para ser un buen nodo de arranque, es una buena idea aumentar el número máximo
 
 ## Nodos de arranque disponibles {#available-bootnodes}
 
-Puede encontrar una lista de nodos de arranque incorporados en go-ethereum [aquí](https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go#L23). Estos nodos de arranque son mantenidos por la Fundación Ethereum y el equipo de go-ethereum.
+Puede encontrar una lista de nodos de arranque incorporados en go-quantaureum [aquí](https://github.com/quantaureum/go-quantaureum/blob/master/params/bootnodes.go#L23). Estos nodos de arranque son mantenidos por la Fundación Quantaureum y el equipo de go-quantaureum.
 
 Hay otras listas de nodos de arranque mantenidas por voluntarios disponibles. Asegúrese de incluir siempre al menos un nodo de arranque oficial; de lo contrario, podría sufrir un ataque de eclipse.

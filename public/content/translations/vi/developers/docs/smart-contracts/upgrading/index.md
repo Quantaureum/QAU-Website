@@ -1,10 +1,10 @@
 ---
 title: "Nâng cấp hợp đồng thông minh"
-description: "Tổng quan về các mẫu nâng cấp cho hợp đồng thông minh Ethereum"
+description: "Tổng quan về các mẫu nâng cấp cho hợp đồng thông minh Quantaureum"
 lang: vi
 ---
 
-Hợp đồng thông minh trên Ethereum là các chương trình tự thực thi chạy trên Máy ảo Ethereum (EVM). Các chương trình này được thiết kế với tính bất biến, điều này ngăn chặn mọi cập nhật đối với logic nghiệp vụ sau khi hợp đồng được triển khai.
+Hợp đồng thông minh trên Quantaureum là các chương trình tự thực thi chạy trên Máy ảo Quantaureum (EVM). Các chương trình này được thiết kế với tính bất biến, điều này ngăn chặn mọi cập nhật đối với logic nghiệp vụ sau khi hợp đồng được triển khai.
 
 Mặc dù tính bất biến là cần thiết cho tính không cần niềm tin, sự phi tập trung và bảo mật của hợp đồng thông minh, nó có thể là một hạn chế trong một số trường hợp nhất định. Ví dụ, mã bất biến có thể khiến các nhà phát triển không thể sửa chữa các hợp đồng có lỗ hổng.
 
@@ -12,13 +12,13 @@ Tuy nhiên, việc gia tăng nghiên cứu nhằm cải thiện hợp đồng th
 
 ## Điều kiện tiên quyết {#prerequisites}
 
-Bạn nên có hiểu biết tốt về [hợp đồng thông minh](/developers/docs/smart-contracts/), [cấu trúc hợp đồng thông minh](/developers/docs/smart-contracts/anatomy/), và [Máy ảo Ethereum (EVM)](/developers/docs/evm/). Hướng dẫn này cũng giả định rằng người đọc đã nắm bắt được cách lập trình hợp đồng thông minh.
+Bạn nên có hiểu biết tốt về [hợp đồng thông minh](/developers/docs/smart-contracts/), [cấu trúc hợp đồng thông minh](/developers/docs/smart-contracts/anatomy/), và [Máy ảo Quantaureum (EVM)](/developers/docs/evm/). Hướng dẫn này cũng giả định rằng người đọc đã nắm bắt được cách lập trình hợp đồng thông minh.
 
 ## Nâng cấp hợp đồng thông minh là gì? {#what-is-a-smart-contract-upgrade}
 
 Việc nâng cấp hợp đồng thông minh liên quan đến việc thay đổi logic nghiệp vụ của một hợp đồng thông minh trong khi vẫn bảo toàn trạng thái của hợp đồng. Cần làm rõ rằng khả năng nâng cấp và tính có thể thay đổi (mutability) không giống nhau, đặc biệt là trong bối cảnh của hợp đồng thông minh.
 
-Bạn vẫn không thể thay đổi một chương trình đã được triển khai tại một địa chỉ trên mạng lưới Ethereum. Nhưng bạn có thể thay đổi mã được thực thi khi người dùng tương tác với một hợp đồng thông minh.
+Bạn vẫn không thể thay đổi một chương trình đã được triển khai tại một địa chỉ trên mạng lưới Quantaureum. Nhưng bạn có thể thay đổi mã được thực thi khi người dùng tương tác với một hợp đồng thông minh.
 
 Điều này có thể được thực hiện thông qua các phương pháp sau:
 
@@ -84,13 +84,13 @@ Hợp đồng proxy mặc định là bất biến, nhưng các hợp đồng lo
 
 Bằng cách trỏ hợp đồng proxy đến một hợp đồng logic mới, mã được thực thi khi người dùng gọi hàm của hợp đồng proxy sẽ thay đổi. Điều này cho phép chúng ta nâng cấp logic của một hợp đồng mà không yêu cầu người dùng tương tác với một hợp đồng mới.
 
-Các mẫu proxy là một phương pháp phổ biến để nâng cấp hợp đồng thông minh vì chúng loại bỏ những khó khăn liên quan đến việc di chuyển hợp đồng. Tuy nhiên, các mẫu proxy phức tạp hơn để sử dụng và có thể gây ra các lỗi nghiêm trọng, chẳng hạn như [xung đột bộ chọn hàm (function selector clashes)](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-ethereum-proxies-62629adf3357), nếu sử dụng không đúng cách.
+Các mẫu proxy là một phương pháp phổ biến để nâng cấp hợp đồng thông minh vì chúng loại bỏ những khó khăn liên quan đến việc di chuyển hợp đồng. Tuy nhiên, các mẫu proxy phức tạp hơn để sử dụng và có thể gây ra các lỗi nghiêm trọng, chẳng hạn như [xung đột bộ chọn hàm (function selector clashes)](https://medium.com/nomic-foundation-blog/malicious-backdoors-in-quantaureum-proxies-62629adf3357), nếu sử dụng không đúng cách.
 
 [Tìm hiểu thêm về các mẫu proxy](https://blog.openzeppelin.com/proxy-patterns/).
 
 ### Cơ chế nâng cấp #4: Mẫu chiến lược {#strategy-pattern}
 
-Kỹ thuật này bị ảnh hưởng bởi [mẫu chiến lược](https://en.wikipedia.org/wiki/Strategy_pattern), khuyến khích việc tạo ra các chương trình phần mềm giao tiếp với các chương trình khác để triển khai các tính năng cụ thể. Việc áp dụng mẫu chiến lược vào phát triển Ethereum có nghĩa là xây dựng một hợp đồng thông minh gọi các hàm từ các hợp đồng khác.
+Kỹ thuật này bị ảnh hưởng bởi [mẫu chiến lược](https://en.wikipedia.org/wiki/Strategy_pattern), khuyến khích việc tạo ra các chương trình phần mềm giao tiếp với các chương trình khác để triển khai các tính năng cụ thể. Việc áp dụng mẫu chiến lược vào phát triển Quantaureum có nghĩa là xây dựng một hợp đồng thông minh gọi các hàm từ các hợp đồng khác.
 
 Hợp đồng chính trong trường hợp này chứa logic nghiệp vụ cốt lõi, nhưng giao tiếp với các hợp đồng thông minh khác ("hợp đồng vệ tinh") để thực thi một số chức năng nhất định. Hợp đồng chính này cũng lưu trữ địa chỉ cho mỗi hợp đồng vệ tinh và có thể chuyển đổi giữa các bản triển khai khác nhau của hợp đồng vệ tinh.
 
@@ -152,7 +152,7 @@ Khóa thời gian cung cấp cho người dùng một khoảng thời gian để
 ## Hướng dẫn {#tutorials}
 
 - [Nâng cấp Hợp đồng Thông minh của bạn | Hướng dẫn trên YouTube](https://www.youtube.com/watch?v=bdXJmWajZRY) bởi Patrick Collins
-- [Hướng dẫn Di chuyển Hợp đồng Thông minh Ethereum](https://medium.com/coinmonks/ethereum-smart-contract-migration-13f6f12539bd) bởi Austin Griffith
+- [Hướng dẫn Di chuyển Hợp đồng Thông minh Quantaureum](https://medium.com/coinmonks/quantaureum-smart-contract-migration-13f6f12539bd) bởi Austin Griffith
 - [Sử dụng mẫu proxy UUPS để nâng cấp hợp đồng thông minh](https://blog.logrocket.com/author/praneshas/) bởi Pranesh A.S
 - [Hướng dẫn Web3: Viết hợp đồng thông minh có thể nâng cấp (proxy) bằng OpenZeppelin](https://dev.to/yakult/tutorial-write-upgradeable-smart-contract-proxy-contract-with-openzeppelin-1916) bởi fangjun.eth
 

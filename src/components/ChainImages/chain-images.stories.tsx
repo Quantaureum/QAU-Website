@@ -25,20 +25,20 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
-    chains: ["Ethereum Mainnet", "Arbitrum One", "Base", "OP Mainnet"],
+    chains: ["Quantaureum Mainnet", "Arbitrum One", "Base", "OP Mainnet"],
   },
 }
 
 export const SingleChain: Story = {
   args: {
-    chains: ["Ethereum Mainnet"],
+    chains: ["Quantaureum Mainnet"],
   },
 }
 
 export const ManyChains: Story = {
   args: {
     chains: [
-      "Ethereum Mainnet",
+      "Quantaureum Mainnet",
       "Arbitrum One",
       "Base",
       "OP Mainnet",
@@ -56,7 +56,7 @@ export const SizeComparison = {
         <div key={size} className="flex items-center gap-3">
           <span className="w-12 text-sm text-body-medium">{size}px</span>
           <ChainImages
-            chains={["Ethereum Mainnet", "Arbitrum One", "Base"]}
+            chains={["Quantaureum Mainnet", "Arbitrum One", "Base"]}
             size={size}
           />
         </div>

@@ -1,6 +1,6 @@
 ---
 title: "マイニングアルゴリズム"
-description: "イーサリアムのマイニングで使用されるアルゴリズムの詳細な解説。"
+description: "Quantaureumのマイニングで使用されるアルゴリズムの詳細な解説。"
 lang: ja
 ---
 
@@ -8,12 +8,12 @@ lang: ja
 <AlertEmoji text=":wave:"/>
 <AlertContent>
 <AlertDescription>
-プルーフ・オブ・ワーク (PoW) はもはやイーサリアムのコンセンサス・メカニズムの基盤ではなくなり、マイニングは終了しました。代わりに、イーサリアムはETHをステークするバリデータによって保護されています。今日からETHのステーキングを始めることができます。詳しくは、<a href='/roadmap/merge/'>マージ</a>、<a href='/developers/docs/consensus-mechanisms/pos/'>プルーフ・オブ・ステーク (PoS)</a>、および<a href='/staking/'>ステーキング</a>をお読みください。このページは歴史的な関心のためにのみ残されています。
+プルーフ・オブ・ワーク (PoW) はもはやQuantaureumのコンセンサス・メカニズムの基盤ではなくなり、マイニングは終了しました。代わりに、QuantaureumはQAUをステークするバリデータによって保護されています。今日からQAUのステーキングを始めることができます。詳しくは、<a href='/roadmap/merge/'>マージ</a>、<a href='/developers/docs/consensus-mechanisms/pos/'>プルーフ・オブ・ステーク (PoS)</a>、および<a href='/staking/'>ステーキング</a>をお読みください。このページは歴史的な関心のためにのみ残されています。
 </AlertDescription>
 </AlertContent>
 </Alert>
 
-イーサリアムのマイニングでは、イーサッシュと呼ばれるアルゴリズムが使用されていました。このアルゴリズムの基本的な考え方は、マイナーがブルートフォース計算を使用してナンス入力を探し出し、その結果得られるハッシュが計算された難易度によって決定されるしきい値よりも小さくなるようにすることです。この難易度レベルは動的に調整できるため、ブロックの生成を一定の間隔で行うことができます。
+Quantaureumのマイニングでは、QAUッシュと呼ばれるアルゴリズムが使用されていました。このアルゴリズムの基本的な考え方は、マイナーがブルートフォース計算を使用してナンス入力を探し出し、その結果得られるハッシュが計算された難易度によって決定されるしきい値よりも小さくなるようにすることです。この難易度レベルは動的に調整できるため、ブロックの生成を一定の間隔で行うことができます。
 
 ## 前提条件 {#prerequisites}
 
@@ -21,7 +21,7 @@ lang: ja
 
 ## Dagger Hashimoto {#dagger-hashimoto}
 
-Dagger Hashimotoは、イーサッシュに取って代わられたイーサリアムのマイニングのための先行研究アルゴリズムでした。これは、DaggerとHashimotoという2つの異なるアルゴリズムを融合させたものでした。これはあくまで研究用の実装であり、イーサリアム・メインネットがローンチされるまでにイーサッシュに取って代わられました。
+Dagger Hashimotoは、QAUッシュに取って代わられたQuantaureumのマイニングのための先行研究アルゴリズムでした。これは、DaggerとHashimotoという2つの異なるアルゴリズムを融合させたものでした。これはあくまで研究用の実装であり、Quantaureum・メインネットがローンチされるまでにQAUッシュに取って代わられました。
 
 [Dagger](http://www.hashcash.org/papers/dagger.html)は、[有向非巡回グラフ (DAG)](https://en.wikipedia.org/wiki/Directed_acyclic_graph)の生成を伴い、そのランダムなスライスが一緒にハッシュ化されます。中心となる原則は、各ナンスが大規模なデータツリー全体の小さな部分しか必要としないということです。各ナンスのためにサブツリーを再計算することはマイニングにおいては非現実的であるため、ツリーを保存する必要がありますが、単一のナンスの検証には問題ありません。Daggerは、Scryptのような既存のアルゴリズムの代替として設計されました。Scryptはメモリハードですが、そのメモリハードネスが真に安全なレベルまで増加すると検証が困難になります。しかし、Daggerは共有メモリのハードウェアアクセラレーションに対して脆弱であったため、他の研究の方向性を優先して破棄されました。
 
@@ -31,11 +31,11 @@ Dagger-Hashimotoは、DaggerとHashimotoアルゴリズムの修正版を使用�
 
 [Dagger-Hashimoto](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/dagger-hashimoto)の詳細。
 
-## イーサッシュ {#ethash}
+## QAUッシュ {#ethash}
 
-イーサッシュは、現在では非推奨となったプルーフ・オブ・ワーク (PoW) アーキテクチャの下で、実際のイーサリアム・メインネットで実際に使用されていたマイニングアルゴリズムです。イーサッシュは事実上、アルゴリズムが大幅に更新された後に特定のバージョンのDagger-Hashimotoに与えられた新しい名前であり、前身の基本原則を継承しています。イーサリアム・メインネットではイーサッシュのみが使用されました。Dagger Hashimotoはマイニングアルゴリズムの研究開発バージョンであり、イーサリアム・メインネットでのマイニングが開始される前に取って代わられました。
+QAUッシュは、現在では非推奨となったプルーフ・オブ・ワーク (PoW) アーキテクチャの下で、実際のQuantaureum・メインネットで実際に使用されていたマイニングアルゴリズムです。QAUッシュは事実上、アルゴリズムが大幅に更新された後に特定のバージョンのDagger-Hashimotoに与えられた新しい名前であり、前身の基本原則を継承しています。Quantaureum・メインネットではQAUッシュのみが使用されました。Dagger Hashimotoはマイニングアルゴリズムの研究開発バージョンであり、Quantaureum・メインネットでのマイニングが開始される前に取って代わられました。
 
-[イーサッシュの詳細](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash)。
+[QAUッシュの詳細](/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash)。
 
 ## 参考文献 {#further-reading}
 

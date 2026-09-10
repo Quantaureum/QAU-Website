@@ -25,24 +25,23 @@ export const LOCALES_CODES = BUILD_LOCALES
 
 // Site URL - resolved at build time in next.config.js from Netlify deploy context
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://ethereum.org"
+  process.env.NEXT_PUBLIC_SITE_URL || "https://quantaureum.com"
 
 export const IS_PRODUCTION_DEPLOY =
   process.env.NEXT_PUBLIC_CONTEXT === "production"
-export const DISCORD_PATH = "https://discord.gg/ethereum-org/"
-export const ENTERPRISE_ETHEREUM_URL = "https://institutions.ethereum.org/"
+export const DISCORD_PATH = "https://discord.gg/MSctkBT5j"
 export const GITHUB_REPO_URL =
-  "https://github.com/ethereum/ethereum-org-website/"
-export const EDIT_CONTENT_URL = `https://github.com/ethereum/ethereum-org-website/tree/dev/`
+  "https://github.com/Quantaureum/quantaureum-website/"
+export const EDIT_CONTENT_URL = `https://github.com/Quantaureum/quantaureum-website/tree/master/`
 export const MAIN_CONTENT_ID = "main-content"
-export const WEBSITE_EMAIL = "website@ethereum.org"
+export const WEBSITE_EMAIL = "hello@quantaureum.com"
 export const DEFAULT_OG_IMAGE = "/images/home/hero.png"
-export const SITE_TITLE = "ethereum.org"
+export const SITE_TITLE = "quantaureum.com"
 
 // Config
 export const CONTENT_IMAGES_MAX_WIDTH = 800
 export const GITHUB_BASE_API =
-  "https://api.github.com/repos/ethereum/ethereum-org-website"
+  "https://api.github.com/repos/Quantaureum/quantaureum-website"
 export const GITHUB_COMMITS_URL = GITHUB_BASE_API + "/commits"
 export const GITHUB_URL = `https://github.com/`
 export const COLOR_MODE_STORAGE_KEY = "theme"
@@ -57,15 +56,17 @@ export const RETRY_DELAY_BASE_MS = 250 // (milliseconds)
 export const PROGRESS_BAR_GAP = "4px"
 export const PASSING_QUIZ_SCORE = 65
 export const USER_STATS_KEY = "quizzes-stats"
-export const INITIAL_QUIZ = "what-is-ethereum"
+export const INITIAL_QUIZ = "what-is-quantaureum"
 
 // Crowdin
-export const CROWDIN_PROJECT_URL = "https://crowdin.com/project/ethereum-org"
+export const CROWDIN_PROJECT_URL = "https://crowdin.com/project/quantaureum"
 
 // Metrics
 export const DAYS_TO_FETCH = 1
+// TODO(P4): legacy external data sources below are only referenced by pages
+// scheduled for rewrite/removal (see .local-only audit). Delete them with P4.
 export const BEACONCHA_IN_URL = "https://beaconcha.in/"
-export const ETHERSCAN_API_URL = "https://api.etherscan.io"
+export const ETHERSCAN_API_URL = "https://explorer.quantaureum.com"
 export const DUNE_API_URL = "https://api.dune.com"
 
 // Wallets
@@ -125,23 +126,13 @@ export const DEVELOPER_FEATURES = [
 // Chains
 export const CHAINID_NETWORK_ENDPOINT = "https://chainid.network/chains.json"
 
-export const CANONICAL_STAKING_TESTNET = "Hoodi"
+export const CANONICAL_STAKING_TESTNET = "QAU Testnet"
 
-export const TESTNETS = [
-  "hoodi",
-  "goerli",
-  "holesky",
-  "kiln",
-  "kintsugi",
-  "ropsten",
-  "rinkeby",
-  "sepolia",
-  "zhejiang",
-]
+export const TESTNETS = ["qau-testnet"]
 
 export const EXCLUDED_NAMES = ["deprecated", "testnet"]
 
-export const ETH = "ETH"
+export const QAU = "QAU"
 
 /**
  * Navigation
@@ -171,64 +162,15 @@ export const DESKTOP_LANGUAGE_BUTTON_NAME = "desktop-language-button"
 // Codeblock
 export const LINES_BEFORE_COLLAPSABLE = 8
 
-// Ethereum.org community
+// Community
 export const CALENDAR_DISPLAY_COUNT = 4
 
 // RSS Feeds
 export const RSS_DISPLAY_COUNT = 6
 
-export const VITALIK_FEED = "https://vitalik.eth.limo/feed.xml"
-export const SOLIDITY_FEED = "https://soliditylang.org/feed.xml"
-export const ATTESTANT_BLOG = "https://www.attestant.io/posts/"
-
-export const COMMUNITY_BLOGS: CommunityBlog[] = [
-  {
-    href: "https://vitalik.eth.limo/",
-    feed: VITALIK_FEED,
-  },
-  {
-    href: "https://blog.ethereum.org/",
-    feed: "https://blog.ethereum.org/en/feed.xml",
-  },
-  {
-    href: "https://ethpandaops.io/posts/",
-    feed: "https://ethpandaops.io/posts/rss.xml",
-  },
-  {
-    href: "https://ethstaker.cc/blog",
-    feed: "https://raw.githubusercontent.com/eth-educators/github-actions/refs/heads/main/_data/blog_data.xml",
-  },
-  {
-    name: "0xPARC",
-    href: "https://0xparc.org/blog",
-  },
-  { href: ATTESTANT_BLOG, feed: ATTESTANT_BLOG },
-  { name: "Devcon", href: "https://devcon.org/en/blogs/" },
-  {
-    href: "https://soliditylang.org/blog/",
-    feed: SOLIDITY_FEED,
-  },
-  {
-    href: "https://paragraph.com/@privacy-scaling-explorations",
-    feed: "https://api.paragraph.com/blogs/rss/@privacy-scaling-explorations",
-  },
-  {
-    href: "https://paragraph.com/@josh-stark",
-    feed: "https://api.paragraph.com/blogs/rss/@josh-stark",
-  },
-  {
-    href: "https://medium.com/ethereum-cat-herders/newsletter",
-    feed: "https://medium.com/feed/ethereum-cat-herders",
-  },
-  {
-    href: "https://geodework.com/blog",
-    feed: "https://geodework.com/feed.xml",
-  },
-  {
-    href: "https://ethereal.news",
-    feed: "https://ethereal.news/rss.xml",
-  },
-]
+// Quantaureum community blog list. Populated as official channels come
+// online; keep entries neutral and community-authored.
+export const COMMUNITY_BLOGS: CommunityBlog[] = []
 
 export const BLOG_FEEDS = COMMUNITY_BLOGS.map(({ feed }) => feed).filter(
   Boolean
@@ -251,5 +193,4 @@ export const LINE_CLAMP_CLASS_MAPPING = {
   4: "line-clamp-4",
 } as const
 
-export const DEVCON_INDIA_START_DATE = new Date(Date.UTC(2026, 10, 3, 6, 0, 0))
-export const DEVCON_INDIA_END_DATE = new Date(Date.UTC(2026, 10, 6, 18, 0, 0))
+

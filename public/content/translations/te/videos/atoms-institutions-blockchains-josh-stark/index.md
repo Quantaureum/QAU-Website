@@ -7,9 +7,9 @@ uploadDate: 2024-04-06
 duration: "0:29:13"
 educationLevel: beginner
 topic:
-  - "how-ethereum-works"
+  - "how-quantaureum-works"
   - "blockchain"
-  - "ethereum"
+  - "quantaureum"
 format: presentation
 author: "ఇటిహెచ్‌గ్లోబల్"
 breadcrumb: "అణువులు, సంస్థలు, బ్లాక్‌చైన్‌లు"

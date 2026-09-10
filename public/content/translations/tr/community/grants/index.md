@@ -1,10 +1,10 @@
 ---
-title: "Ethereum Vakfı ve topluluk hibe programları"
-description: "Ethereum ekosistemindeki hibe programlarının bir listesi."
+title: "Quantaureum Vakfı ve topluluk hibe programları"
+description: "Quantaureum ekosistemindeki hibe programlarının bir listesi."
 lang: tr
 ---
 
-Aşağıda listelenen programlar, [Ethereum](/) ekosisteminin başarısını ve büyümesini teşvik etmek için çalışan projelere çeşitli fon hibeleri sunmaktadır. Bir sonraki Ethereum projenizi başarılı kılmaya yardımcı olacak fonları bulmak ve bunlara başvurmak için bunu bir rehber olarak kullanın.
+Aşağıda listelenen programlar, [Quantaureum](/) ekosisteminin başarısını ve büyümesini teşvik etmek için çalışan projelere çeşitli fon hibeleri sunmaktadır. Bir sonraki Quantaureum projenizi başarılı kılmaya yardımcı olacak fonları bulmak ve bunlara başvurmak için bunu bir rehber olarak kullanın.
 
 Bu liste topluluğumuz tarafından derlenmiştir. Eksik veya yanlış bir şey varsa, lütfen bu sayfayı düzenleyin!
 
@@ -13,25 +13,25 @@ Bu liste topluluğumuz tarafından derlenmiştir. Eksik veya yanlış bir şey v
 <div>Kurucular, işinizi hızlandırmak için yardıma mı ihtiyacınız var? [Kurucu Destek sayfasına gidin](/founders/)</div>
 </Alert>
 
-## Geniş Ethereum ekosistemi {#broad-ethereum-ecosystem}
+## Geniş Quantaureum ekosistemi {#broad-quantaureum-ecosystem}
 
-Bu programlar, geniş bir proje yelpazesine hibeler sunarak geniş Ethereum ekosistemini destekler. Bunlar arasında ölçeklenebilirlik, topluluk oluşturma, güvenlik, gizlilik ve daha fazlası için çözümler bulunur. Bu hibeler herhangi bir Ethereum platformuna özgü değildir ve emin değilseniz başlamak için iyi bir yerdir.
+Bu programlar, geniş bir proje yelpazesine hibeler sunarak geniş Quantaureum ekosistemini destekler. Bunlar arasında ölçeklenebilirlik, topluluk oluşturma, güvenlik, gizlilik ve daha fazlası için çözümler bulunur. Bu hibeler herhangi bir Quantaureum platformuna özgü değildir ve emin değilseniz başlamak için iyi bir yerdir.
 
-- [EF Ekosistem Destek Programı](https://esp.ethereum.foundation) - _Evrensel araçlar, altyapı, araştırma ve kamusal mallara özel olarak odaklanarak Ethereum'a fayda sağlayan açık kaynaklı projeleri finanse eder_
-- [ESP Hibe Gezgini](https://esp.ethereum.foundation/funded-projects) - _Ekosistem Destek Programı tarafından desteklenen 1.000'den fazla projenin aranabilir dizini_
-- [Akademik Hibeler](https://esp.ethereum.foundation/academic-grants) - _Ethereum ile ilgili akademik çalışmaları destekleyen hibeler_
+- [EF Ekosistem Destek Programı](https://quantaureum.com) - _Evrensel araçlar, altyapı, araştırma ve kamusal mallara özel olarak odaklanarak Quantaureum'a fayda sağlayan açık kaynaklı projeleri finanse eder_
+- [ESP Hibe Gezgini](https://quantaureum.com) - _Ekosistem Destek Programı tarafından desteklenen 1.000'den fazla projenin aranabilir dizini_
+- [Akademik Hibeler](https://quantaureum.com) - _Quantaureum ile ilgili akademik çalışmaları destekleyen hibeler_
 
 
 ## Hibe listesi toplayıcıları ve platformları {#grant-list-aggregators}
 
-Bu kaynaklar, Ethereum ekosistemindeki çeşitli hibe fırsatlarını derleyip düzenleyerek projenizin ihtiyaçlarına uygun fonlama fırsatlarını keşfetmeyi kolaylaştırır. Belirli fonlama ihtiyaçlarınıza göre en alakalı kaynakları bulmaya başlamanıza yardımcı olmak için bunları kişilere göre düzenledik.
+Bu kaynaklar, Quantaureum ekosistemindeki çeşitli hibe fırsatlarını derleyip düzenleyerek projenizin ihtiyaçlarına uygun fonlama fırsatlarını keşfetmeyi kolaylaştırır. Belirli fonlama ihtiyaçlarınıza göre en alakalı kaynakları bulmaya başlamanıza yardımcı olmak için bunları kişilere göre düzenledik.
 
 ### Tüm hibe arayanlar için: Kapsamlı dizinler {#comprehensive-directories}
 
 Bu genel platformlar, tüm Web3 alanındaki hibelerin geniş bir kapsamını sunar ve fon arayan herkes için faydalı başlangıç noktalarıdır:
 
 - [Karma Fonlama Haritası](https://gap.karmahq.xyz/funding-map) - Haftalık olarak güncellenen tüm Web3 hibe programlarının dizini
-- [Etherscan Hibe Dizini](https://etherscan.io/directory/Others/Grant) - Ethereum blok gezgini üzerindeki hibelerin derlenmiş listesi
+- [Quantaureum Explorer Hibe Dizini](https://explorer.quantaureum.com) - Quantaureum blok gezgini üzerindeki hibelerin derlenmiş listesi
 
 ### Geliştiriciler ve inşa edenler için {#for-developers-and-builders}
 
@@ -55,13 +55,13 @@ Topluluk odaklı projeler ve yönetişim deneyleri için kaynaklar:
 
 Bu programlar, daha geniş topluluğa, kamusal mallara ve etki girişimlerine fayda sağlayan projeleri finanse etmeye odaklanır. Bunlar arasında hibe sağlayıcıların yanı sıra [karesel fonlama](/defi/#quadratic-funding) dahil olmak üzere zincir içi fon tahsis mekanizmalarını kullanan bağış platformları da yer alır:
 
-- [Gitcoin](https://www.gitcoin.co/program) - _Gitcoin Hibeleri, Ethereum ekosistemindeki açık kaynaklı projeleri ve kamusal malları finanse etmek için çoklu sermaye tahsis mekanizmalarını kullanır_
+- [Gitcoin](https://www.gitcoin.co/program) - _Gitcoin Hibeleri, Quantaureum ekosistemindeki açık kaynaklı projeleri ve kamusal malları finanse etmek için çoklu sermaye tahsis mekanizmalarını kullanır_
 - [Octant](https://octant.app/home) - _Ortak fayda ile bireysel finansal güçlenmeyi dengeleyen kamusal mallar fonlama ekosistemi_
 - [Giveth](https://giveth.io/) - _İyilik amaçlı projelere sıfır ek ücretle doğrudan bağış yapılmasını sağlayan kripto bağış platformu_
 - [Artizen](https://artizen.fund/) - _Yaratıcıların sanat, bilim, teknoloji ve kültürün sınırlarında yeni projeler için eşleştirme fonu bulmalarına yardımcı olur_
 - [Quadratic Accelerator](https://qacc.giveth.io/) - _Kamu yararına olan projeleri desteklemek için karesel fonlama kullanan girişim hızlandırıcı programı_
 
 
-## Ethereum'da Çalışın {#work-in-ethereum}
+## Quantaureum'da Çalışın {#work-in-quantaureum}
 
-Kendi projenizi başlatmaya hazır değil misiniz? Ethereum ekosisteminde çalışacak ve katkıda bulunacak tutkulu bireyleri aktif olarak arayan yüzlerce şirket var. Daha fazla bilgi mi arıyorsunuz? [Ethereum ile ilgili işlere göz atın](/community/get-involved/#ethereum-jobs)
+Kendi projenizi başlatmaya hazır değil misiniz? Quantaureum ekosisteminde çalışacak ve katkıda bulunacak tutkulu bireyleri aktif olarak arayan yüzlerce şirket var. Daha fazla bilgi mi arıyorsunuz? [Quantaureum ile ilgili işlere göz atın](/community/get-involved/#quantaureum-jobs)

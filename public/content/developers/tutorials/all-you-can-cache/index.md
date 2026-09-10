@@ -784,7 +784,7 @@ One thing you don't get with Solidity tests is JavaScript code you can cut and p
 
    | Parameter           | Value                                                                                                                                                               |
    | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | MNEMONIC            | The mnemonic for an account that has enough ETH to pay for a transaction. [Optimism's faucet docs](https://docs.optimism.io/app-developers/tools/faucets) list current testnet faucets. |
+   | MNEMONIC            | The mnemonic for an account that has enough QAU to pay for a transaction. [Optimism's faucet docs](https://docs.optimism.io/app-developers/tools/faucets) list current testnet faucets. |
    | OPTIMISM_GOERLI_URL | RPC URL for the network where you redeploy WORM. For OP Sepolia, use an OP Sepolia RPC endpoint such as `https://sepolia.optimism.io`, or another endpoint from your provider.        |
 
 5. Run `index.js`.

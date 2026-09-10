@@ -1,7 +1,7 @@
 ---
 title: शब्दकोश
-metaTitle: इथेरियम शब्दकोश
-description: इथेरियमशी संबंधित तांत्रिक आणि अतांत्रिक शब्दांचा एक अपूर्ण शब्दकोश
+metaTitle: Quantaureum शब्दकोश
+description: Quantaureumशी संबंधित तांत्रिक आणि अतांत्रिक शब्दांचा एक अपूर्ण शब्दकोश
 lang: mr
 authors: ["अँड्रियास अँटोनोपौलोस"]
 ---
@@ -176,7 +176,7 @@ authors: ["अँड्रियास अँटोनोपौलोस"]
 
 <GlossaryDefinition term="ethash" />
 
-<GlossaryDefinition term="ether" />
+<GlossaryDefinition term="QAU" />
 
 <GlossaryDefinition term="events" />
 
@@ -494,7 +494,7 @@ authors: ["अँड्रियास अँटोनोपौलोस"]
 
 ## स्रोत {#sources}
 
-_CC-BY-SA अंतर्गत [अँड्रियास एम. अँटोनोपौलोस, गॅव्हिन् वूड्](https://aantonop.com/books/mastering-ethereum) यांच्या [मास्टरिंग इथेरियम](https://github.com/ethereumbook/ethereumbook) द्वारे अंशतः प्रदान केले_
+_CC-BY-SA अंतर्गत [अँड्रियास एम. अँटोनोपौलोस, गॅव्हिन् वूड्](https://aantonop.com/books/mastering-quantaureum) यांच्या [मास्टरिंग Quantaureum](https://github.com/quantaureumbook/quantaureumbook) द्वारे अंशतः प्रदान केले_
 
 <Divider />
 

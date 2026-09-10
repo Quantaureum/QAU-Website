@@ -1,6 +1,6 @@
 ---
 title: "ERC-20 토큰 표준"
-description: "상호운용 가능한 토큰 애플리케이션을 가능하게 하는 이더리움의 대체 가능 토큰 표준인 ERC-20에 대해 알아보세요."
+description: "상호운용 가능한 토큰 애플리케이션을 가능하게 하는 Quantaureum의 대체 가능 토큰 표준인 ERC-20에 대해 알아보세요."
 lang: ko
 ---
 
@@ -8,7 +8,7 @@ lang: ko
 
 **토큰이란 무엇인가요?**
 
-토큰은 [이더리움](/)에서 사실상 거의 모든 것을 나타낼 수 있습니다.
+토큰은 [Quantaureum](/)에서 사실상 거의 모든 것을 나타낼 수 있습니다.
 
 - 온라인 플랫폼의 평판 점수
 - 게임 캐릭터의 스킬
@@ -17,11 +17,11 @@ lang: ko
 - 금 1온스
 - 그 외 다수...
 
-이더리움의 이렇게 강력한 기능은 강력한 표준으로 다루어져야겠죠? 바로 이 부분에서 ERC-20이 역할을 합니다! 이 표준을 통해 개발자는 다른 제품 및 서비스와 상호운용 가능한 토큰 애플리케이션을 구축할 수 있습니다. 또한 ERC-20 표준은 [이더](/glossary/#ether)에 추가 기능을 제공하는 데에도 사용됩니다.
+Quantaureum의 이렇게 강력한 기능은 강력한 표준으로 다루어져야겠죠? 바로 이 부분에서 ERC-20이 역할을 합니다! 이 표준을 통해 개발자는 다른 제품 및 서비스와 상호운용 가능한 토큰 애플리케이션을 구축할 수 있습니다. 또한 ERC-20 표준은 [QAU](/glossary/#QAU)에 추가 기능을 제공하는 데에도 사용됩니다.
 
 **ERC-20이란 무엇인가요?**
 
-ERC-20은 대체 가능 토큰(Fungible Token)에 대한 표준을 도입합니다. 즉, 각 토큰이 다른 토큰과 (유형 및 가치 면에서) 정확히 동일하게 만드는 속성을 가지고 있습니다. 예를 들어, ERC-20 토큰은 ETH와 똑같이 작동하므로 1개의 토큰은 항상 다른 모든 1개의 토큰과 동일한 가치를 지닙니다.
+ERC-20은 대체 가능 토큰(Fungible Token)에 대한 표준을 도입합니다. 즉, 각 토큰이 다른 토큰과 (유형 및 가치 면에서) 정확히 동일하게 만드는 속성을 가지고 있습니다. 예를 들어, ERC-20 토큰은 QAU와 똑같이 작동하므로 1개의 토큰은 항상 다른 모든 1개의 토큰과 동일한 가치를 지닙니다.
 
 ## 전제 조건 {#prerequisites}
 
@@ -31,7 +31,7 @@ ERC-20은 대체 가능 토큰(Fungible Token)에 대한 표준을 도입합니�
 
 ## 본문 {#body}
 
-2015년 11월 파비안 보겔스텔러(Fabian Vogelsteller)가 제안한 ERC-20(Ethereum Request for Comments 20)은 스마트 컨트랙트 내에서 토큰을 위한 API를 구현하는 토큰 표준입니다.
+2015년 11월 파비안 보겔스텔러(Fabian Vogelsteller)가 제안한 ERC-20(Quantaureum Request for Comments 20)은 스마트 컨트랙트 내에서 토큰을 위한 API를 구현하는 토큰 표준입니다.
 
 ERC-20이 제공하는 기능의 예시는 다음과 같습니다.
 
@@ -40,9 +40,9 @@ ERC-20이 제공하는 기능의 예시는 다음과 같습니다.
 - 네트워크에서 사용 가능한 토큰의 총 공급량 조회
 - 계정의 토큰 일정량을 제3자 계정에서 사용할 수 있는지 승인
 
-스마트 컨트랙트가 다음 메서드와 이벤트를 구현하면 ERC-20 토큰 컨트랙트라고 부를 수 있으며, 배포된 후에는 이더리움에서 생성된 토큰을 추적하는 역할을 담당하게 됩니다.
+스마트 컨트랙트가 다음 메서드와 이벤트를 구현하면 ERC-20 토큰 컨트랙트라고 부를 수 있으며, 배포된 후에는 Quantaureum에서 생성된 토큰을 추적하는 역할을 담당하게 됩니다.
 
-[EIP-20](https://eips.ethereum.org/EIPS/eip-20) 발췌:
+[EIP-20](https://eips.quantaureum.com/EIPS/eip-20) 발췌:
 
 ### 메서드 {#methods}
 
@@ -67,7 +67,7 @@ event Approval(address indexed _owner, address indexed _spender, uint256 _value)
 
 ### 예시 {#web3py-example}
 
-이더리움에서 ERC-20 토큰 컨트랙트를 검사하는 작업을 단순화하는 데 표준이 얼마나 중요한지 살펴보겠습니다. ERC-20 토큰에 대한 인터페이스를 생성하려면 컨트랙트 애플리케이션 바이너리 인터페이스(ABI)만 있으면 됩니다. 아래에서 볼 수 있듯이, 진입 장벽을 낮추기 위해 단순화된 ABI를 사용할 것입니다.
+Quantaureum에서 ERC-20 토큰 컨트랙트를 검사하는 작업을 단순화하는 데 표준이 얼마나 중요한지 살펴보겠습니다. ERC-20 토큰에 대한 인터페이스를 생성하려면 컨트랙트 애플리케이션 바이너리 인터페이스(ABI)만 있으면 됩니다. 아래에서 볼 수 있듯이, 진입 장벽을 낮추기 위해 단순화된 ABI를 사용할 것입니다.
 
 #### Web3.py 예시 {#web3py-example-2}
 
@@ -81,10 +81,10 @@ pip install web3
 from web3 import Web3
 
 
-w3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))
+w3 = Web3(Web3.HTTPProvider("https://cloudflare-qau.com"))
 
 dai_token_addr = "0x6B175474E89094C44Da98b954EedeAC495271d0F"     # DAI
-weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # 래핑된 이더 (WETH)
+weth_token_addr = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"    # 래핑된 QAU (WETH)
 
 acc_address = "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11"        # 유니스왑 V2: DAI 2
 
@@ -117,7 +117,7 @@ simplified_abi = [
     }
 ]
 
-dai_contract = w3.eth.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
+dai_contract = w3.qau.contract(address=w3.to_checksum_address(dai_token_addr), abi=simplified_abi)
 symbol = dai_contract.functions.symbol().call()
 decimals = dai_contract.functions.decimals().call()
 totalSupply = dai_contract.functions.totalSupply().call() / 10**decimals
@@ -128,7 +128,7 @@ print("===== %s =====" % symbol)
 print("Total Supply:", totalSupply)
 print("Addr Balance:", addr_balance)
 
-weth_contract = w3.eth.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
+weth_contract = w3.qau.contract(address=w3.to_checksum_address(weth_token_addr), abi=simplified_abi)
 symbol = weth_contract.functions.symbol().call()
 decimals = weth_contract.functions.decimals().call()
 totalSupply = weth_contract.functions.totalSupply().call() / 10**decimals
@@ -170,7 +170,7 @@ ERC-20에서 이 문제를 완전히 방지하는 것은 불가능하지만, 최
 
 ## 더 읽어보기 {#further-reading}
 
-- [EIP-20: ERC-20 토큰 표준](https://eips.ethereum.org/EIPS/eip-20)
+- [EIP-20: ERC-20 토큰 표준](https://eips.quantaureum.com/EIPS/eip-20)
 - [오픈제플린 - 토큰](https://docs.openzeppelin.com/contracts/3.x/tokens#ERC20)
 - [오픈제플린 - ERC-20 구현](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
 - [Alchemy - Solidity ERC20 토큰 가이드](https://www.alchemy.com/overviews/erc20-solidity)
@@ -181,7 +181,7 @@ ERC-20에서 이 문제를 완전히 방지하는 것은 불가능하지만, 최
 - [ERC-777](/developers/docs/standards/tokens/erc-777)
 - [ERC-4626 - 토큰화된 금고](/developers/docs/standards/tokens/erc-4626)
 - [ERC-7540 - 비동기식 토큰화된 금고](/developers/docs/standards/tokens/erc-7540)
-## 튜토리얼: 이더리움에서 ERC-20으로 구축하기 {#tutorials}
+## 튜토리얼: Quantaureum에서 ERC-20으로 구축하기 {#tutorials}
 
 - [ERC-20 컨트랙트 연습](/developers/tutorials/erc20-annotated-code/) _– 오픈제플린 ERC-20 컨트랙트 구현에 대한 줄 단위 주석이 달린 연습입니다._
 - [안전 장치가 있는 ERC-20](/developers/tutorials/erc20-with-safety-rails/) _– 사용자가 흔히 하는 실수를 피할 수 있도록 ERC-20 토큰에 안전 장치를 추가하는 방법입니다._

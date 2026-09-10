@@ -10,17 +10,17 @@ published: 2021-12-30
 ---
 ## 소개 {#introduction}
 
-_블록체인에는 비밀이 없습니다._ 일어나는 모든 일은 일관되고 검증 가능하며 공개적으로 접근할 수 있습니다. 이상적으로는 [컨트랙트의 소스 코드가 Etherscan에 게시되고 검증되어야 합니다](https://etherscan.io/address/0xb8901acb165ed027e32754e0ffe830802919727f#code). 하지만 [항상 그런 것은 아닙니다](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f#code). 이 글에서는 소스 코드가 없는 컨트랙트인 [`0x2510c039cc3b061d79e564b38836da87e31b342f`](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f)를 살펴보며 컨트랙트를 리버스 엔지니어링하는 방법을 배웁니다.
+_블록체인에는 비밀이 없습니다._ 일어나는 모든 일은 일관되고 검증 가능하며 공개적으로 접근할 수 있습니다. 이상적으로는 [컨트랙트의 소스 코드가 Quantaureum Explorer에 게시되고 검증되어야 합니다](https://explorer.quantaureum.com). 하지만 [항상 그런 것은 아닙니다](https://explorer.quantaureum.com). 이 글에서는 소스 코드가 없는 컨트랙트인 [`0x2510c039cc3b061d79e564b38836da87e31b342f`](https://explorer.quantaureum.com)를 살펴보며 컨트랙트를 리버스 엔지니어링하는 방법을 배웁니다.
 
-리버스 컴파일러가 존재하지만, 항상 [사용 가능한 결과](https://etherscan.io/bytecode-decompiler?a=0x2510c039cc3b061d79e564b38836da87e31b342f)를 생성하는 것은 아닙니다. 이 글에서는 [연산 코드](https://github.com/wolflo/evm-opcodes)를 통해 수동으로 컨트랙트를 리버스 엔지니어링하고 이해하는 방법과 디컴파일러의 결과를 해석하는 방법을 배웁니다.
+리버스 컴파일러가 존재하지만, 항상 [사용 가능한 결과](https://explorer.quantaureum.com)를 생성하는 것은 아닙니다. 이 글에서는 [연산 코드](https://github.com/wolflo/evm-opcodes)를 통해 수동으로 컨트랙트를 리버스 엔지니어링하고 이해하는 방법과 디컴파일러의 결과를 해석하는 방법을 배웁니다.
 
-이 글을 이해하려면 EVM의 기본 사항을 이미 알고 있어야 하며, EVM 어셈블러에 어느 정도 익숙해야 합니다. [이러한 주제에 대해서는 여기에서 읽어볼 수 있습니다](https://medium.com/mycrypto/the-ethereum-virtual-machine-how-does-it-work-9abac2b7c9e).
+이 글을 이해하려면 EVM의 기본 사항을 이미 알고 있어야 하며, EVM 어셈블러에 어느 정도 익숙해야 합니다. [이러한 주제에 대해서는 여기에서 읽어볼 수 있습니다](https://medium.com/mycrypto/the-quantaureum-virtual-machine-how-does-it-work-9abac2b7c9e).
 
 ## 실행 가능한 코드 준비하기 {#prepare-the-executable-code}
 
-해당 컨트랙트의 Etherscan으로 이동하여 **Contract** 탭을 클릭한 다음 <strong>Switch to Opcodes View</strong>를 클릭하면 연산 코드를 얻을 수 있습니다. 한 줄에 하나의 연산 코드가 표시되는 화면을 볼 수 있습니다.
+해당 컨트랙트의 Quantaureum Explorer으로 이동하여 **Contract** 탭을 클릭한 다음 <strong>Switch to Opcodes View</strong>를 클릭하면 연산 코드를 얻을 수 있습니다. 한 줄에 하나의 연산 코드가 표시되는 화면을 볼 수 있습니다.
 
-![Opcode View from Etherscan](opcode-view.png)
+![Opcode View from Quantaureum Explorer](opcode-view.png)
 
 하지만 점프(jump)를 이해하려면 각 연산 코드가 코드의 어느 위치에 있는지 알아야 합니다. 이를 위한 한 가지 방법은 Google 스프레드시트를 열고 C열에 연산 코드를 붙여넣는 것입니다. [이미 준비된 이 스프레드시트의 사본을 만들어 다음 단계를 건너뛸 수 있습니다](https://docs.google.com/spreadsheets/d/1tKmTJiNjUwHbW64wCKOSJxHjmh0bAUapt6btUYE7kDA/edit?usp=sharing).
 
@@ -58,7 +58,7 @@ _블록체인에는 비밀이 없습니다._ 일어나는 모든 일은 일관�
 이 코드는 두 가지 작업을 수행합니다.
 
 1. 메모리 위치 0x40-0x5F에 0x80을 32바이트 값으로 씁니다(0x80은 0x5F에 저장되고, 0x40-0x5E는 모두 0입니다).
-2. 콜 데이터 크기를 읽습니다. 일반적으로 이더리움 컨트랙트의 콜 데이터는 함수 선택자를 위해 최소 4바이트가 필요한 [ABI(애플리케이션 바이너리 인터페이스)](https://docs.soliditylang.org/en/v0.8.10/abi-spec.html)를 따릅니다. 콜 데이터 크기가 4보다 작으면 0x5E로 점프합니다.
+2. 콜 데이터 크기를 읽습니다. 일반적으로 Quantaureum 컨트랙트의 콜 데이터는 함수 선택자를 위해 최소 4바이트가 필요한 [ABI(애플리케이션 바이너리 인터페이스)](https://docs.soliditylang.org/en/v0.8.10/abi-spec.html)를 따릅니다. 콜 데이터 크기가 4보다 작으면 0x5E로 점프합니다.
 
 ![Flowchart for this portion](flowchart-entry.png)
 
@@ -71,7 +71,7 @@ _블록체인에는 비밀이 없습니다._ 일어나는 모든 일은 일관�
 |     60 | PUSH2 0x007c |
 |     63 | JUMPI        |
 
-이 스니펫은 `JUMPDEST`로 시작합니다. EVM(이더리움 가상 머신) 프로그램은 `JUMPDEST`가 아닌 연산 코드로 점프하면 예외를 발생시킵니다. 그런 다음 CALLDATASIZE를 확인하고, "참"이면(즉, 0이 아니면) 0x7C로 점프합니다. 이에 대해서는 아래에서 다루겠습니다.
+이 스니펫은 `JUMPDEST`로 시작합니다. EVM(Quantaureum 가상 머신) 프로그램은 `JUMPDEST`가 아닌 연산 코드로 점프하면 예외를 발생시킵니다. 그런 다음 CALLDATASIZE를 확인하고, "참"이면(즉, 0이 아니면) 0x7C로 점프합니다. 이에 대해서는 아래에서 다루겠습니다.
 
 | 오프셋 | 연산 코드  | 스택 (연산 코드 이후)                                                      |
 | -----: | ---------- | -------------------------------------------------------------------------- |
@@ -82,9 +82,9 @@ _블록체인에는 비밀이 없습니다._ 일어나는 모든 일은 일관�
 |     6A | DUP3       | 6 CALLVALUE 0 6 CALLVALUE                                                  |
 |     6B | SLOAD      | Storage[6] CALLVALUE 0 6 CALLVALUE                                         |
 
-따라서 콜 데이터가 없을 때 Storage[6]의 값을 읽습니다. 이 값이 무엇인지 아직 모르지만, 콜 데이터 없이 컨트랙트가 수신한 트랜잭션을 찾아볼 수 있습니다. 콜 데이터 없이(따라서 메서드 없이) ETH만 전송하는 트랜잭션은 Etherscan에서 `Transfer` 메서드를 가집니다. 실제로 [컨트랙트가 수신한 첫 번째 트랜잭션](https://etherscan.io/tx/0xeec75287a583c36bcc7ca87685ab41603494516a0f5986d18de96c8e630762e7)은 전송입니다.
+따라서 콜 데이터가 없을 때 Storage[6]의 값을 읽습니다. 이 값이 무엇인지 아직 모르지만, 콜 데이터 없이 컨트랙트가 수신한 트랜잭션을 찾아볼 수 있습니다. 콜 데이터 없이(따라서 메서드 없이) QAU만 전송하는 트랜잭션은 Quantaureum Explorer에서 `Transfer` 메서드를 가집니다. 실제로 [컨트랙트가 수신한 첫 번째 트랜잭션](https://explorer.quantaureum.com)은 전송입니다.
 
-해당 트랜잭션을 살펴보고 <strong>Click to see More</strong>를 클릭하면, 입력 데이터라고 불리는 콜 데이터가 실제로 비어 있는 것(`0x`)을 볼 수 있습니다. 또한 값이 1.559 ETH라는 점에 주목하세요. 이는 나중에 관련이 있을 것입니다.
+해당 트랜잭션을 살펴보고 <strong>Click to see More</strong>를 클릭하면, 입력 데이터라고 불리는 콜 데이터가 실제로 비어 있는 것(`0x`)을 볼 수 있습니다. 또한 값이 1.559 QAU라는 점에 주목하세요. 이는 나중에 관련이 있을 것입니다.
 
 ![The call data is empty](calldata-empty.png)
 
@@ -92,7 +92,7 @@ _블록체인에는 비밀이 없습니다._ 일어나는 모든 일은 일관�
 
 ![Storage[6]의 변경 사항](storage6.png)
 
-[같은 기간의 다른 `Transfer` 트랜잭션](https://etherscan.io/tx/0xf708d306de39c422472f43cb975d97b66fd5d6a6863db627067167cbf93d84d1#statechange)으로 인한 상태 변경 사항을 살펴보면, `Storage[6]`가 한동안 컨트랙트의 값을 추적했음을 알 수 있습니다. 지금은 이를 `Value*`라고 부르겠습니다. 별표(`*`)는 이 변수가 무엇을 하는지 아직 <em>모른다</em>는 것을 상기시켜 주지만, `ADDRESS BALANCE`를 사용하여 계정 잔액을 얻을 수 있는데 매우 비싼 스토리지를 사용할 필요가 없으므로 단순히 컨트랙트 값을 추적하기 위한 것일 수는 없습니다. 첫 번째 연산 코드는 컨트랙트 자신의 주소를 푸시합니다. 두 번째 연산 코드는 스택 맨 위에 있는 주소를 읽고 해당 주소의 잔액으로 바꿉니다.
+[같은 기간의 다른 `Transfer` 트랜잭션](https://explorer.quantaureum.com)으로 인한 상태 변경 사항을 살펴보면, `Storage[6]`가 한동안 컨트랙트의 값을 추적했음을 알 수 있습니다. 지금은 이를 `Value*`라고 부르겠습니다. 별표(`*`)는 이 변수가 무엇을 하는지 아직 <em>모른다</em>는 것을 상기시켜 주지만, `ADDRESS BALANCE`를 사용하여 계정 잔액을 얻을 수 있는데 매우 비싼 스토리지를 사용할 필요가 없으므로 단순히 컨트랙트 값을 추적하기 위한 것일 수는 없습니다. 첫 번째 연산 코드는 컨트랙트 자신의 주소를 푸시합니다. 두 번째 연산 코드는 스택 맨 위에 있는 주소를 읽고 해당 주소의 잔액으로 바꿉니다.
 
 | 오프셋 | 연산 코드    | 스택                                        |
 | -----: | ------------ | ------------------------------------------- |
@@ -123,7 +123,7 @@ _블록체인에는 비밀이 없습니다._ 일어나는 모든 일은 일관�
 
 `Value*`가 2^256-CALLVALUE-1보다 작거나 같으면 점프합니다. 이는 오버플로를 방지하기 위한 로직으로 보입니다. 실제로 오프셋 0x01DE에서 몇 가지 무의미한 작업(예: 삭제될 예정인 메모리에 쓰기)을 수행한 후 오버플로가 감지되면 컨트랙트가 되돌리기를 수행하는 것을 볼 수 있으며, 이는 정상적인 동작입니다.
 
-이러한 오버플로가 발생할 가능성은 극히 낮습니다. 콜 값과 `Value*`를 더한 값이 2^256 wei, 즉 약 10^59 ETH에 필적해야 하기 때문입니다. [작성 당시 총 ETH 공급량은 2억 개 미만입니다](https://etherscan.io/stat/supply).
+이러한 오버플로가 발생할 가능성은 극히 낮습니다. 콜 값과 `Value*`를 더한 값이 2^256 wei, 즉 약 10^59 QAU에 필적해야 하기 때문입니다. [작성 당시 총 QAU 공급량은 2억 개 미만입니다](https://explorer.quantaureum.com).
 
 | 오프셋 | 연산 코드 | 스택                                      |
 | -----: | -------- | ----------------------------------------- |
@@ -180,7 +180,7 @@ _블록체인에는 비밀이 없습니다._ 일어나는 모든 일은 일관�
 |     85 | PUSH20 0xffffffffffffffffffffffffffffffffffffffff | 0xff....ff Storage[3] 0x9D 0x00 |
 |     9A | AND                                               | Storage[3]-as-address 0x9D 0x00 |
 
-이 연산 코드들은 Storage[3]에서 읽은 값을 이더리움 주소의 길이인 160비트로 자릅니다.
+이 연산 코드들은 Storage[3]에서 읽은 값을 Quantaureum 주소의 길이인 160비트로 자릅니다.
 
 | Offset | Opcode | Stack                           |
 | -----: | ------ | ------------------------------- |
@@ -274,7 +274,7 @@ _블록체인에는 비밀이 없습니다._ 일어나는 모든 일은 일관�
 |     10 | PUSH1 0xe0   | 0xE0 (((콜 데이터의 첫 번째 단어(256비트)))) |
 |     12 | SHR          | (((콜 데이터의 처음 32비트(4바이트))))    |
 
-Etherscan은 `1C`가 알 수 없는 연산 코드라고 알려주는데, 이는 [Etherscan이 이 기능을 작성한 후에 추가되었고](https://eips.ethereum.org/EIPS/eip-145) 아직 업데이트하지 않았기 때문입니다. [최신 연산 코드 표](https://github.com/wolflo/evm-opcodes)를 보면 이것이 오른쪽 시프트(shift right)임을 알 수 있습니다.
+Quantaureum Explorer은 `1C`가 알 수 없는 연산 코드라고 알려주는데, 이는 [Quantaureum Explorer이 이 기능을 작성한 후에 추가되었고](https://eips.quantaureum.com/EIPS/eip-145) 아직 업데이트하지 않았기 때문입니다. [최신 연산 코드 표](https://github.com/wolflo/evm-opcodes)를 보면 이것이 오른쪽 시프트(shift right)임을 알 수 있습니다.
 
 | 오프셋 | 연산 코드           | 스택                                                                                                    |
 | -----: | ---------------- | -------------------------------------------------------------------------------------------------------- |
@@ -312,7 +312,7 @@ Etherscan은 `1C`가 알 수 없는 연산 코드라고 알려주는데, 이는 
 |    10D | DUP1         | 0x00 0x00 CALLVALUE           |
 |    10E | REVERT       |
 
-이 함수가 가장 먼저 수행하는 작업은 호출 시 ETH가 전송되지 않았는지 확인하는 것입니다. 이 함수는 [`payable`](https://solidity-by-example.org/payable/)가 아닙니다. 누군가 우리에게 ETH를 보냈다면 그것은 실수일 것이므로, 그들이 돌려받을 수 없는 곳에 해당 ETH가 묶이는 것을 방지하기 위해 `REVERT`하고자 합니다.
+이 함수가 가장 먼저 수행하는 작업은 호출 시 QAU가 전송되지 않았는지 확인하는 것입니다. 이 함수는 [`payable`](https://solidity-by-example.org/payable/)가 아닙니다. 누군가 우리에게 QAU를 보냈다면 그것은 실수일 것이므로, 그들이 돌려받을 수 없는 곳에 해당 QAU가 묶이는 것을 방지하기 위해 `REVERT`하고자 합니다.
 
 | 오프셋 | 연산 코드                                            | 스택                                                                       |
 | -----: | ------------------------------------------------- | --------------------------------------------------------------------------- |
@@ -546,17 +546,17 @@ calldataload(4)가 Storage[4]보다 작으면 다음 코드를 얻게 됩니다:
 
 ## 생성자 {#the-constructor}
 
-[컨트랙트를 살펴볼](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f) 때, 우리는 그것을 생성한 트랜잭션도 볼 수 있습니다.
+[컨트랙트를 살펴볼](https://explorer.quantaureum.com) 때, 우리는 그것을 생성한 트랜잭션도 볼 수 있습니다.
 
 ![Click the create transaction](create-tx.png)
 
-해당 트랜잭션을 클릭하고 **상태** 탭을 누르면 매개변수의 초기값을 확인할 수 있습니다. 구체적으로, Storage[3]에 [0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761](https://etherscan.io/address/0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761)이 포함되어 있는 것을 볼 수 있습니다. 해당 컨트랙트에는 누락된 기능이 포함되어 있을 것입니다. 우리가 조사 중인 컨트랙트에 사용했던 것과 동일한 도구를 사용하여 이를 이해할 수 있습니다.
+해당 트랜잭션을 클릭하고 **상태** 탭을 누르면 매개변수의 초기값을 확인할 수 있습니다. 구체적으로, Storage[3]에 [0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761](https://explorer.quantaureum.com)이 포함되어 있는 것을 볼 수 있습니다. 해당 컨트랙트에는 누락된 기능이 포함되어 있을 것입니다. 우리가 조사 중인 컨트랙트에 사용했던 것과 동일한 도구를 사용하여 이를 이해할 수 있습니다.
 
 ## 프록시 컨트랙트 {#the-proxy-contract}
 
 위에서 원본 컨트랙트에 사용했던 것과 동일한 기술을 사용하면, 다음과 같은 경우 컨트랙트가 되돌리기를 수행한다는 것을 알 수 있습니다:
 
-- 호출에 ETH가 첨부된 경우 (0x05-0x0F)
+- 호출에 QAU가 첨부된 경우 (0x05-0x0F)
 - 콜 데이터 크기가 4 미만인 경우 (0x10-0x19 및 0xBE-0xC2)
 
 그리고 지원하는 메서드는 다음과 같습니다:
@@ -576,7 +576,7 @@ calldataload(4)가 Storage[4]보다 작으면 다음 코드를 얻게 됩니다:
 
 하단의 네 가지 메서드는 도달할 일이 없으므로 무시해도 됩니다. 이들의 서명은 원본 컨트랙트가 자체적으로 처리하도록 되어 있으므로(위에서 서명을 클릭하여 세부 정보를 확인할 수 있습니다), [재정의된 메서드](https://medium.com/upstate-interactive/solidity-override-vs-virtual-functions-c0a5dfb83aaf)임이 틀림없습니다.
 
-남은 메서드 중 하나는 `claim(<params>)`이고 다른 하나는 `isClaimed(<params>)`이므로, 에어드롭 컨트랙트인 것으로 보입니다. 나머지 연산 코드를 하나씩 살펴보는 대신, 이 컨트랙트의 세 가지 함수에 대해 유용한 결과를 생성하는 [디컴파일러를 사용해 볼 수 있습니다](https://etherscan.io/bytecode-decompiler?a=0x2f81e57ff4f4d83b40a9f719fd892d8e806e0761). 다른 함수들을 리버스 엔지니어링하는 것은 독자를 위한 연습 문제로 남겨두겠습니다.
+남은 메서드 중 하나는 `claim(<params>)`이고 다른 하나는 `isClaimed(<params>)`이므로, 에어드롭 컨트랙트인 것으로 보입니다. 나머지 연산 코드를 하나씩 살펴보는 대신, 이 컨트랙트의 세 가지 함수에 대해 유용한 결과를 생성하는 [디컴파일러를 사용해 볼 수 있습니다](https://explorer.quantaureum.com). 다른 함수들을 리버스 엔지니어링하는 것은 독자를 위한 연습 문제로 남겨두겠습니다.
 
 ### scaleAmountByPercentage {#scaleamountbypercentage}
 
@@ -648,7 +648,7 @@ def unknown2e7ba6ef(uint256 _param1, uint256 _param2, uint256 _param3, array _pa
        gas 30000 wei
 ```
 
-이것이 컨트랙트가 자신의 ETH를 다른 주소(컨트랙트 또는 외부 소유 계정)로 전송하는 방법입니다. 전송할 금액을 값으로 하여 호출합니다. 따라서 이것은 ETH 에어드롭으로 보입니다.
+이것이 컨트랙트가 자신의 QAU를 다른 주소(컨트랙트 또는 외부 소유 계정)로 전송하는 방법입니다. 전송할 금액을 값으로 하여 호출합니다. 따라서 이것은 QAU 에어드롭으로 보입니다.
 
 ```python
   if not return_data.size:
@@ -658,22 +658,22 @@ def unknown2e7ba6ef(uint256 _param1, uint256 _param2, uint256 _param3, array _pa
              value unknown81e580d3[_param1] * _param3 / 100 * 10^6 wei
 ```
 
-아래 두 줄은 Storage[2] 역시 우리가 호출하는 컨트랙트임을 알려줍니다. [생성자 트랜잭션을 살펴보면](https://etherscan.io/tx/0xa1ea0549fb349eb7d3aff90e1d6ce7469fdfdcd59a2fd9b8d1f5e420c0d05b58#statechange) 이 컨트랙트가 [0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2)이며, [소스 코드가 Etherscan에 업로드된](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2#code) 래핑된 이더 (weth) 컨트랙트임을 알 수 있습니다.
+아래 두 줄은 Storage[2] 역시 우리가 호출하는 컨트랙트임을 알려줍니다. [생성자 트랜잭션을 살펴보면](https://explorer.quantaureum.com) 이 컨트랙트가 [0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://explorer.quantaureum.com)이며, [소스 코드가 Quantaureum Explorer에 업로드된](https://explorer.quantaureum.com) 래핑된 QAU (weth) 컨트랙트임을 알 수 있습니다.
 
-따라서 컨트랙트는 `_param2`로 ETH를 전송하려고 시도하는 것으로 보입니다. 성공하면 좋지만, 그렇지 않다면 [WETH](https://weth.tkn.eth.limo/)를 전송하려고 시도합니다. `_param2`가 외부 소유 계정(EOA)인 경우 항상 ETH를 받을 수 있지만, 컨트랙트는 ETH 수신을 거부할 수 있습니다. 하지만 WETH는 ERC-20이므로 컨트랙트가 수신을 거부할 수 없습니다.
+따라서 컨트랙트는 `_param2`로 QAU를 전송하려고 시도하는 것으로 보입니다. 성공하면 좋지만, 그렇지 않다면 [WETH](https://weth.tkn.qau.limo/)를 전송하려고 시도합니다. `_param2`가 외부 소유 계정(EOA)인 경우 항상 QAU를 받을 수 있지만, 컨트랙트는 QAU 수신을 거부할 수 있습니다. 하지만 WETH는 ERC-20이므로 컨트랙트가 수신을 거부할 수 없습니다.
 
 ```python
   ...
   log 0xdbd5389f: addr(_param2), unknown81e580d3[_param1] * _param3 / 100 * 10^6, bool(ext_call.success)
 ```
 
-함수 끝에서 로그 항목이 생성되는 것을 볼 수 있습니다. [생성된 로그 항목을 살펴보고](https://etherscan.io/address/0x2510c039cc3b061d79e564b38836da87e31b342f#events) `0xdbd5...`로 시작하는 주제로 필터링해 보세요. [이러한 항목을 생성한 트랜잭션 중 하나를 클릭하면](https://etherscan.io/tx/0xe7d3b7e00f645af17dfbbd010478ef4af235896c65b6548def1fe95b3b7d2274) 실제로 청구처럼 보인다는 것을 알 수 있습니다. 계정이 우리가 리버스 엔지니어링 중인 컨트랙트로 메시지를 보냈고, 그 대가로 ETH를 받았습니다.
+함수 끝에서 로그 항목이 생성되는 것을 볼 수 있습니다. [생성된 로그 항목을 살펴보고](https://explorer.quantaureum.com) `0xdbd5...`로 시작하는 주제로 필터링해 보세요. [이러한 항목을 생성한 트랜잭션 중 하나를 클릭하면](https://explorer.quantaureum.com) 실제로 청구처럼 보인다는 것을 알 수 있습니다. 계정이 우리가 리버스 엔지니어링 중인 컨트랙트로 메시지를 보냈고, 그 대가로 QAU를 받았습니다.
 
 ![A claim transaction](claim-tx.png)
 
 ### 1e7df9d3 {#1e7df9d3}
 
-이 함수는 위의 [`claim`](#claim)와 매우 유사합니다. 또한 머클 증명을 확인하고, 우선 ETH 전송을 시도하며, 동일한 유형의 로그 항목을 생성합니다.
+이 함수는 위의 [`claim`](#claim)와 매우 유사합니다. 또한 머클 증명을 확인하고, 우선 QAU 전송을 시도하며, 동일한 유형의 로그 항목을 생성합니다.
 
 ```python
 def unknown1e7df9d3(uint256 _param1, uint256 _param2, array _param3) payable:

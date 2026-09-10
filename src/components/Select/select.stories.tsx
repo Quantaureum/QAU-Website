@@ -30,7 +30,7 @@ export const Dropdown: Story = {
     options: [
       {
         options: [
-          { label: "Ethereum", value: "eth" },
+          { label: "Quantaureum", value: "eth" },
           { label: "Bitcoin", value: "bit" },
           { label: "Dogecoin", value: "doge" },
         ],

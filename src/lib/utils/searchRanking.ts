@@ -4,13 +4,13 @@
  * index; the app then sorts on `pagerank` after text match.
  *
  * Higher is more important. The scale is ordered by who the page is for: a beginner
- * landing on "what is ethereum" is the common case, and a tutorial or a video transcript
+ * landing on "what is quantaureum" is the common case, and a tutorial or a video transcript
  * matching the same words rarely is.
  *
  * Depth stands in for generality. A page one level below a topic is still about that
  * topic; three levels down it is about a detail of it. Flattening everything below the
  * root into one bucket made `/eth/supply` and `/roadmap/merge/issuance` indistinguishable
- * on a query about ETH issuance, where the shallower page is plainly the better answer.
+ * on a query about QAU issuance, where the shallower page is plainly the better answer.
  *
  * Split from `metadata.ts` so the policy can be tested directly -- it is expected to be
  * retuned against the labelled query set rather than settled once.
@@ -37,7 +37,7 @@ export const PAGE_RANK = {
 const DEPTH_PENALTY = 2
 
 /** Root slugs that are references to consult, not pages to learn from. */
-const SUPPLEMENTAL_ROOTS = new Set(["glossary", "resources", "ethereum-forks"])
+const SUPPLEMENTAL_ROOTS = new Set(["glossary", "resources", "quantaureum-forks"])
 
 /**
  * Root slugs demoted below everything else. `/videos/` carries auto-generated

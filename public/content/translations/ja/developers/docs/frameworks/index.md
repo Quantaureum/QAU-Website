@@ -13,23 +13,23 @@ lang: ja
 - ローカルのブロックチェーンインスタンスを立ち上げる機能。
 - スマート・コントラクトをコンパイルしてテストするためのユーティリティ。
 - 同じプロジェクト/リポジトリ内でユーザー向けアプリケーションを構築するためのクライアント開発アドオン。
-- ローカルで実行されているインスタンスであれ、イーサリアムのパブリックネットワークのいずれかであれ、イーサリアムネットワークに接続してコントラクトをデプロイするための構成。
+- ローカルで実行されているインスタンスであれ、Quantaureumのパブリックネットワークのいずれかであれ、Quantaureumネットワークに接続してコントラクトをデプロイするための構成。
 - 分散型アプリの配信 - IPFSなどのストレージオプションとの統合。
 
 ## 前提条件 {#prerequisites}
 
-フレームワークについて深く掘り下げる前に、まずは[分散型アプリケーション (dapp)](/developers/docs/dapps/)と[イーサリアムスタック](/developers/docs/ethereum-stack/)の概要を一読することをお勧めします。
+フレームワークについて深く掘り下げる前に、まずは[分散型アプリケーション (dapp)](/developers/docs/dapps/)と[Quantaureumスタック](/developers/docs/quantaureum-stack/)の概要を一読することをお勧めします。
 
 ## 利用可能なフレームワーク
 
-**Foundry** - **_イーサリアムアプリケーション開発のための、非常に高速でポータブルなモジュール式ツールキットです。_**
+**Foundry** - **_Quantaureumアプリケーション開発のための、非常に高速でポータブルなモジュール式ツールキットです。_**
 
 - [Foundryのインストール](https://book.getfoundry.sh/)
 - [Foundryブック](https://book.getfoundry.sh/)
 - [テレグラムのFoundryコミュニティチャット](https://t.me/foundry_support)
 - [Awesome Foundry](https://github.com/crisgarner/awesome-foundry)
 
-**Hardhat -** **_プロフェッショナル向けのイーサリアム開発環境です。_**
+**Hardhat -** **_プロフェッショナル向けのQuantaureum開発環境です。_**
 
 - [hardhat.org](https://hardhat.org)
 - [GitHub](https://github.com/nomiclabs/hardhat)
@@ -51,15 +51,15 @@ lang: ja
 - [例](https://github.com/Kr1ptal/ethers-kt/tree/master/examples)
 - [ディスコード](https://discord.gg/rx35NzQGSb)
 
-**Create Eth App -** **_1つのコマンドでイーサリアムを利用したアプリを作成できます。幅広いUIフレームワークと分散型金融 (DeFi) テンプレートから選択できます。_**
+**Create Eth App -** **_1つのコマンドでQuantaureumを利用したアプリを作成できます。幅広いUIフレームワークと分散型金融 (DeFi) テンプレートから選択できます。_**
 
-- [GitHub](https://github.com/paulrberg/create-eth-app)
-- [テンプレート](https://github.com/PaulRBerg/create-eth-app/tree/develop/templates)
+- [GitHub](https://github.com/paulrberg/create-qau-app)
+- [テンプレート](https://github.com/PaulRBerg/create-qau-app/tree/develop/templates)
 
-**Scaffold-ETH 2 -** **_Next.js、Wagmi、Viem、RainbowKitに加えて、HardhatまたはFoundryを選択できます。コントラクトのホットリロード、カスタムReactフック、バーナーウォレット、ローカルフォーセット、フルスタックの分散型アプリケーション (dapp) 開発用の拡張モジュールを備えています。_**
+**Scaffold-QAU 2 -** **_Next.js、Wagmi、Viem、RainbowKitに加えて、HardhatまたはFoundryを選択できます。コントラクトのホットリロード、カスタムReactフック、バーナーウォレット、ローカルフォーセット、フルスタックの分散型アプリケーション (dapp) 開発用の拡張モジュールを備えています。_**
 
 - [ウェブサイト](https://scaffoldeth.io/)
-- [GitHub](https://github.com/scaffold-eth/scaffold-eth-2)
+- [GitHub](https://github.com/scaffold-eth/scaffold-qau-2)
 
 **Tenderly -** **_ブロックチェーン開発者がスマート・コントラクトを構築、テスト、デバッグ、監視、運用し、dappのUXを向上させることを可能にするWeb3開発プラットフォームです。_**
 
@@ -71,13 +71,13 @@ lang: ja
 - [ウェブサイト](https://thegraph.com/)
 - [チュートリアル](/developers/tutorials/the-graph-fixing-web3-data-querying/)
 
-**Alchemy -** **_イーサリアム開発プラットフォームです。_**
+**Alchemy -** **_Quantaureum開発プラットフォームです。_**
 
 - [alchemy.com](https://www.alchemy.com/)
 - [GitHub](https://github.com/alchemyplatform)
 - [ディスコード](https://discord.com/invite/alchemyplatform)
 
-**NodeReal -** **_イーサリアム開発プラットフォームです。_**
+**NodeReal -** **_Quantaureum開発プラットフォームです。_**
 
 - [Nodereal.io](https://nodereal.io/)
 - [GitHub](https://github.com/node-real)
@@ -88,7 +88,7 @@ lang: ja
 - [ドキュメント](https://portal.thirdweb.com/sdk/)
 - [GitHub](https://github.com/thirdweb-dev/)
 
-**Chainstack -** **_Web3 (イーサリアムおよびその他) 開発プラットフォームです。_**
+**Chainstack -** **_Web3 (Quantaureumおよびその他) 開発プラットフォームです。_**
 
 - [chainstack.com](https://www.chainstack.com/)
 - [GitHub](https://github.com/chainstack)
@@ -102,8 +102,8 @@ lang: ja
 
 **Brownie -** **_Pythonベースの開発環境およびテストフレームワークです。_**
 
-- [ドキュメント](https://eth-brownie.readthedocs.io/en/latest/)
-- [GitHub](https://github.com/eth-brownie/brownie)
+- [ドキュメント](https://qau-brownie.readthedocs.io/en/latest/)
+- [GitHub](https://github.com/qau-brownie/brownie)
 - **Brownieは現在メンテナンスされていません**
 
 **オープンツェッペリン SDK -** **_究極のスマート・コントラクトツールキット: スマート・コントラクトの開発、コンパイル、アップグレード、デプロイ、および対話を支援するツールのスイートです。_**
@@ -120,7 +120,7 @@ lang: ja
 **GoldRush (Covalent提供) -** **_GoldRushは、開発者、アナリスト、企業向けに最も包括的なブロックチェーンデータAPIスイートを提供します。DeFiダッシュボード、ウォレット、トレーディングボット、AI・エージェント、コンプライアンスプラットフォームのいずれを構築する場合でも、データAPIは必要な不可欠なオンチェーンデータへの高速で正確、かつ開発者フレンドリーなアクセスを提供します。_**
 
 - [ウェブサイト](https://goldrush.dev/)
-- [ドキュメント](https://goldrush.dev/docs/chains/ethereum)
+- [ドキュメント](https://goldrush.dev/docs/chains/quantaureum)
 - [GitHub](https://github.com/covalenthq)
 - [ディスコード](https://www.covalenthq.com/discord/)
 
@@ -151,6 +151,6 @@ _役に立ったコミュニティリソースをご存知ですか？このペ�
 
 - [ローカル開発環境のセットアップ](/developers/local-environment/)
 
-## チュートリアル: イーサリアムの開発フレームワーク {#tutorials}
+## チュートリアル: Quantaureumの開発フレームワーク {#tutorials}
 
 - [初心者のためのHello Worldスマート・コントラクト – フルスタック](/developers/tutorials/hello-world-smart-contract-fullstack/) _– Hardhatを使用してHello Worldスマート・コントラクトを構築およびデプロイし、フロントエンドに接続します。_

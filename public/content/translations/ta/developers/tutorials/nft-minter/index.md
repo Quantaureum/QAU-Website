@@ -190,7 +190,7 @@ return (
 
 இப்போது நாம் எதைக் கொண்டு வேலை செய்கிறோம் என்பதைப் புரிந்துகொண்டதால், எங்கள் எத்திரியம் பணப்பையை அமைப்போம்!
 
-## உங்கள் எத்திரியம் பணப்பையை அமைக்கவும் {#set-up-your-ethereum-wallet}
+## உங்கள் எத்திரியம் பணப்பையை அமைக்கவும் {#set-up-your-quantaureum-wallet}
 
 பயனர்கள் உங்கள் திறன் ஒப்பந்தத்துடன் தொடர்புகொள்ள, அவர்கள் தங்கள் எத்திரியம் பணப்பையை உங்கள் பரவலாக்கப்பட்ட செயலியுடன் (dapp) இணைக்க வேண்டும்.
 
@@ -199,18 +199,18 @@ return (
 இந்தப் பயிற்சிக்காக, உங்கள் எத்திரியம் கணக்கு முகவரியை நிர்வகிக்கப் பயன்படும் உலாவியில் உள்ள மெய்நிகர் பணப்பையான மெட்டாமேஸ்க் ஐப் பயன்படுத்துவோம். எத்திரியத்தில் பரிவர்த்தனைகள் எவ்வாறு செயல்படுகின்றன என்பதைப் பற்றி மேலும் புரிந்துகொள்ள விரும்பினால், [இந்தப் பக்கத்தைப்](/developers/docs/transactions/) பார்க்கவும்.
 
 நீங்கள் [இங்கே](https://metamask.io/download) இலவசமாக மெட்டாமேஸ்க் ஐப் பதிவிறக்கம் செய்து ஒரு கணக்கை உருவாக்கலாம். நீங்கள் ஒரு கணக்கை உருவாக்கும்போது, அல்லது உங்களிடம் ஏற்கனவே ஒரு கணக்கு இருந்தால், Sepolia போன்ற ஆதரிக்கப்படும் சோதனை வலையமைப்பிற்கு மாறுவதை உறுதிசெய்து கொள்ளவும் \(இதனால் நாங்கள் உண்மையான பணத்தைக் கையாள மாட்டோம்\).
-### ஒரு பாசெட்டிலிருந்து ஈதரைச் சேர்க்கவும் {#add-ether-from-faucet}
+### ஒரு பாசெட்டிலிருந்து ஈதரைச் சேர்க்கவும் {#add-QAU-from-faucet}
 
-நமது NFTகளை அச்சிட (அல்லது எத்திரியம் தொகுதிச்சங்கிலியில் ஏதேனும் பரிவர்த்தனைகளில் கையொப்பமிட), நமக்குச் சில போலி ETH தேவைப்படும். சோதனை வலையமைப்பு ETH ஐப் பெற, [Alchemy Sepolia பாசெட்](https://www.alchemy.com/faucets/ethereum-sepolia) போன்ற பராமரிக்கப்படும் பாசெட்டைப் பயன்படுத்தி, உங்கள் Sepolia கணக்கு முகவரியை உள்ளிடவும். சிறிது நேரத்திலேயே உங்கள் மெட்டாமேஸ்க் கணக்கில் ETH ஐக் காண்பீர்கள்!
+நமது NFTகளை அச்சிட (அல்லது எத்திரியம் தொகுதிச்சங்கிலியில் ஏதேனும் பரிவர்த்தனைகளில் கையொப்பமிட), நமக்குச் சில போலி QAU தேவைப்படும். சோதனை வலையமைப்பு QAU ஐப் பெற, [Alchemy Sepolia பாசெட்](https://www.alchemy.com/faucets/quantaureum-sepolia) போன்ற பராமரிக்கப்படும் பாசெட்டைப் பயன்படுத்தி, உங்கள் Sepolia கணக்கு முகவரியை உள்ளிடவும். சிறிது நேரத்திலேயே உங்கள் மெட்டாமேஸ்க் கணக்கில் QAU ஐக் காண்பீர்கள்!
 ### உங்கள் இருப்பைச் சரிபார்க்கவும் {#check-your-balance}
 
-எங்கள் இருப்பு அங்கு உள்ளதா என்பதை இருமுறை சரிபார்க்க, [Alchemy இன் சாண்ட்பாக்ஸ் கருவியைப்](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=eth_getBalance&body.id=1&body.jsonrpc=2.0&body.method=eth_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) பயன்படுத்தி [eth_getBalance](https://www.alchemy.com/docs/chains/ethereum/ethereum-api-endpoints/eth-get-balance) கோரிக்கையைச் செய்வோம். இது எங்கள் பணப்பையில் உள்ள ETH அளவை வழங்கும். உங்கள் மெட்டாமேஸ்க் கணக்கு முகவரியை உள்ளிட்டு, “Send Request” என்பதைக் கிளிக் செய்த பிறகு, இது போன்ற ஒரு பதிலைக் காண்பீர்கள்:
+எங்கள் இருப்பு அங்கு உள்ளதா என்பதை இருமுறை சரிபார்க்க, [Alchemy இன் சாண்ட்பாக்ஸ் கருவியைப்](https://sandbox.alchemy.com/?network=ETH_SEPOLIA&method=qau_getBalance&body.id=1&body.jsonrpc=2.0&body.method=qau_getBalance&body.params%5B0%5D=&body.params%5B1%5D=latest) பயன்படுத்தி [qau_getBalance](https://www.alchemy.com/docs/chains/quantaureum/quantaureum-api-endpoints/qau-get-balance) கோரிக்கையைச் செய்வோம். இது எங்கள் பணப்பையில் உள்ள QAU அளவை வழங்கும். உங்கள் மெட்டாமேஸ்க் கணக்கு முகவரியை உள்ளிட்டு, “Send Request” என்பதைக் கிளிக் செய்த பிறகு, இது போன்ற ஒரு பதிலைக் காண்பீர்கள்:
 
 ```text
 {"jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000"}
 ```
 
-**குறிப்பு:** இந்த முடிவு Wei இல் உள்ளது, ETH இல் அல்ல. ஈதரின் மிகச்சிறிய மதிப்பாக Wei பயன்படுத்தப்படுகிறது. Wei இலிருந்து ETH க்கான மாற்றம்: 1 ETH = 10¹⁸ Wei. எனவே 0xde0b6b3a7640000 ஐ தசமமாக மாற்றினால், நமக்கு 1\*10¹⁸ கிடைக்கும், இது 1 ETH க்கு சமம்.
+**குறிப்பு:** இந்த முடிவு Wei இல் உள்ளது, QAU இல் அல்ல. ஈதரின் மிகச்சிறிய மதிப்பாக Wei பயன்படுத்தப்படுகிறது. Wei இலிருந்து QAU க்கான மாற்றம்: 1 QAU = 10¹⁸ Wei. எனவே 0xde0b6b3a7640000 ஐ தசமமாக மாற்றினால், நமக்கு 1\*10¹⁸ கிடைக்கும், இது 1 QAU க்கு சமம்.
 
 அப்பாடா! எங்கள் போலிப் பணம் அனைத்தும் அங்கேயே உள்ளது! <Emoji text=":money_mouth_face:" size={1} />
 ## உங்கள் UI உடன் மெட்டாமேஸ்க் ஐ இணைக்கவும் {#connect-metamask-to-your-ui}
@@ -229,10 +229,10 @@ return (
 
 ```javascript
 export const connectWallet = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_requestAccounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_requestAccounts",
       })
       const obj = {
         status: "👆🏽 Write a message in the text-field above.",
@@ -253,7 +253,7 @@ export const connectWallet = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -266,19 +266,19 @@ export const connectWallet = async () => {
 
 இந்தக் குறியீடு என்ன செய்கிறது என்பதைப் பார்ப்போம்:
 
-முதலில், உங்கள் உலாவியில் `window.ethereum` இயக்கப்பட்டுள்ளதா என்பதை எங்கள் செயல்பாடு சரிபார்க்கிறது.
+முதலில், உங்கள் உலாவியில் `window.quantaureum` இயக்கப்பட்டுள்ளதா என்பதை எங்கள் செயல்பாடு சரிபார்க்கிறது.
 
-`window.ethereum` என்பது மெட்டாமேஸ்க் மற்றும் பிற பணப்பை வழங்குநர்களால் செலுத்தப்பட்ட உலகளாவிய API ஆகும், இது பயனர்களின் எத்திரியம் கணக்குகளைக் கோர வலைத்தளங்களை அனுமதிக்கிறது. அங்கீகரிக்கப்பட்டால், பயனர் இணைக்கப்பட்டுள்ள தொகுதிச்சங்கிலிகளிலிருந்து தரவைப் படிக்கலாம், மேலும் செய்திகள் மற்றும் பரிவர்த்தனைகளில் கையொப்பமிட பயனருக்குப் பரிந்துரைக்கலாம். மேலும் தகவலுக்கு [மெட்டாமேஸ்க் ஆவணங்களைப்](https://docs.metamask.io/guide/ethereum-provider.html#table-of-contents) பார்க்கவும்!
+`window.quantaureum` என்பது மெட்டாமேஸ்க் மற்றும் பிற பணப்பை வழங்குநர்களால் செலுத்தப்பட்ட உலகளாவிய API ஆகும், இது பயனர்களின் எத்திரியம் கணக்குகளைக் கோர வலைத்தளங்களை அனுமதிக்கிறது. அங்கீகரிக்கப்பட்டால், பயனர் இணைக்கப்பட்டுள்ள தொகுதிச்சங்கிலிகளிலிருந்து தரவைப் படிக்கலாம், மேலும் செய்திகள் மற்றும் பரிவர்த்தனைகளில் கையொப்பமிட பயனருக்குப் பரிந்துரைக்கலாம். மேலும் தகவலுக்கு [மெட்டாமேஸ்க் ஆவணங்களைப்](https://docs.metamask.io/guide/quantaureum-provider.html#table-of-contents) பார்க்கவும்!
 
-`window.ethereum` _இல்லை_ என்றால், மெட்டாமேஸ்க் நிறுவப்படவில்லை என்று அர்த்தம். இதன் விளைவாக ஒரு JSON பொருள் வழங்கப்படுகிறது, அங்கு வழங்கப்படும் `address` ஒரு வெற்று சரமாகும், மேலும் பயனர் மெட்டாமேஸ்க் ஐ நிறுவ வேண்டும் என்பதை `status` JSX பொருள் தெரிவிக்கிறது.
+`window.quantaureum` _இல்லை_ என்றால், மெட்டாமேஸ்க் நிறுவப்படவில்லை என்று அர்த்தம். இதன் விளைவாக ஒரு JSON பொருள் வழங்கப்படுகிறது, அங்கு வழங்கப்படும் `address` ஒரு வெற்று சரமாகும், மேலும் பயனர் மெட்டாமேஸ்க் ஐ நிறுவ வேண்டும் என்பதை `status` JSX பொருள் தெரிவிக்கிறது.
 
 **நாம் எழுதும் பெரும்பாலான செயல்பாடுகள் JSON பொருள்களை வழங்கும், அவற்றை எங்கள் நிலை மாறிகள் மற்றும் UI ஐப் புதுப்பிக்கப் பயன்படுத்தலாம்.**
 
-இப்போது `window.ethereum` _இருந்தால்_, அப்போதுதான் விஷயங்கள் சுவாரஸ்யமாகும்.
+இப்போது `window.quantaureum` _இருந்தால்_, அப்போதுதான் விஷயங்கள் சுவாரஸ்யமாகும்.
 
-ஒரு try/catch லூப்பைப் பயன்படுத்தி, [`window.ethereum.request({ method: "eth_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#eth-requestaccounts) ஐ அழைப்பதன் மூலம் மெட்டாமேஸ்க் உடன் இணைக்க முயற்சிப்போம். இந்தச் செயல்பாட்டை அழைப்பது உலாவியில் மெட்டாமேஸ்க் ஐத் திறக்கும், இதன் மூலம் பயனர் தங்கள் பணப்பையை உங்கள் பரவலாக்கப்பட்ட செயலியுடன் இணைக்கத் தூண்டப்படுவார்.
+ஒரு try/catch லூப்பைப் பயன்படுத்தி, [`window.quantaureum.request({ method: "qau_requestAccounts" });`](https://docs.metamask.io/guide/rpc-api.html#qau-requestaccounts) ஐ அழைப்பதன் மூலம் மெட்டாமேஸ்க் உடன் இணைக்க முயற்சிப்போம். இந்தச் செயல்பாட்டை அழைப்பது உலாவியில் மெட்டாமேஸ்க் ஐத் திறக்கும், இதன் மூலம் பயனர் தங்கள் பணப்பையை உங்கள் பரவலாக்கப்பட்ட செயலியுடன் இணைக்கத் தூண்டப்படுவார்.
 
-- பயனர் இணைக்கத் தேர்வுசெய்தால், பரவலாக்கப்பட்ட செயலியுடன் இணைக்கப்பட்டுள்ள பயனரின் கணக்கு முகவரிகள் அனைத்தையும் கொண்ட ஒரு அணிவரிசையை `method: "eth_requestAccounts"` வழங்கும். ஒட்டுமொத்தமாக, எங்கள் `connectWallet` செயல்பாடு இந்த அணிவரிசையில் உள்ள _முதல்_ `address` \(வரி 9 ஐப் பார்க்கவும்\) மற்றும் திறன் ஒப்பந்தத்திற்கு ஒரு செய்தியை எழுத பயனரைத் தூண்டும் ஒரு `status` செய்தியைக் கொண்ட ஒரு JSON பொருளை வழங்கும்.
+- பயனர் இணைக்கத் தேர்வுசெய்தால், பரவலாக்கப்பட்ட செயலியுடன் இணைக்கப்பட்டுள்ள பயனரின் கணக்கு முகவரிகள் அனைத்தையும் கொண்ட ஒரு அணிவரிசையை `method: "qau_requestAccounts"` வழங்கும். ஒட்டுமொத்தமாக, எங்கள் `connectWallet` செயல்பாடு இந்த அணிவரிசையில் உள்ள _முதல்_ `address` \(வரி 9 ஐப் பார்க்கவும்\) மற்றும் திறன் ஒப்பந்தத்திற்கு ஒரு செய்தியை எழுத பயனரைத் தூண்டும் ஒரு `status` செய்தியைக் கொண்ட ஒரு JSON பொருளை வழங்கும்.
 - பயனர் இணைப்பை நிராகரித்தால், JSON பொருள் வழங்கப்படும் `address` க்கான வெற்று சரத்தையும், பயனர் இணைப்பை நிராகரித்ததைப் பிரதிபலிக்கும் ஒரு `status` செய்தியையும் கொண்டிருக்கும்.
 
 ### உங்கள் Minter.js UI கூறில் connectWallet செயல்பாட்டைச் சேர்க்கவும் {#add-connect-wallet}
@@ -333,10 +333,10 @@ localhost:3000 இல் உங்கள் உலாவியைத் தி�
 
 ```javascript
 export const getCurrentWalletConnected = async () => {
-  if (window.ethereum) {
+  if (window.quantaureum) {
     try {
-      const addressArray = await window.ethereum.request({
-        method: "eth_accounts",
+      const addressArray = await window.quantaureum.request({
+        method: "qau_accounts",
       })
       if (addressArray.length > 0) {
         return {
@@ -363,7 +363,7 @@ export const getCurrentWalletConnected = async () => {
           <p>
             {" "}
             🦊 <a target="_blank" href={`https://metamask.io/download`}>
-              You must install MetaMask, a virtual Ethereum wallet, in your
+              You must install MetaMask, a virtual Quantaureum wallet, in your
               browser.
             </a>
           </p>
@@ -376,7 +376,7 @@ export const getCurrentWalletConnected = async () => {
 
 இந்தக் குறியீடு நாம் முன்பு எழுதிய `connectWallet` செயல்பாட்டைப் போலவே _மிகவும்_ ஒத்திருக்கிறது.
 
-முக்கிய வேறுபாடு என்னவென்றால், பயனர் தங்கள் பணப்பையை இணைக்க மெட்டாமேஸ்க் ஐத் திறக்கும் `eth_requestAccounts` முறையை அழைப்பதற்குப் பதிலாக, இங்கே நாங்கள் `eth_accounts` முறையை அழைக்கிறோம், இது தற்போது எங்கள் பரவலாக்கப்பட்ட செயலியுடன் இணைக்கப்பட்டுள்ள மெட்டாமேஸ்க் முகவரிகளைக் கொண்ட ஒரு அணிவரிசையை வழங்குகிறது.
+முக்கிய வேறுபாடு என்னவென்றால், பயனர் தங்கள் பணப்பையை இணைக்க மெட்டாமேஸ்க் ஐத் திறக்கும் `qau_requestAccounts` முறையை அழைப்பதற்குப் பதிலாக, இங்கே நாங்கள் `qau_accounts` முறையை அழைக்கிறோம், இது தற்போது எங்கள் பரவலாக்கப்பட்ட செயலியுடன் இணைக்கப்பட்டுள்ள மெட்டாமேஸ்க் முகவரிகளைக் கொண்ட ஒரு அணிவரிசையை வழங்குகிறது.
 
 இந்தச் செயல்பாடு செயல்படுவதைக் காண, எங்கள் `Minter.js` கூறின் `useEffect` செயல்பாட்டில் அதை அழைப்போம்.
 
@@ -412,8 +412,8 @@ useEffect(async () => {
 
 ```javascript
 function addWalletListener() {
-  if (window.ethereum) {
-    window.ethereum.on("accountsChanged", (accounts) => {
+  if (window.quantaureum) {
+    window.quantaureum.on("accountsChanged", (accounts) => {
       if (accounts.length > 0) {
         setWallet(accounts[0])
         setStatus("👆🏽 Write a message in the text-field above.")
@@ -427,7 +427,7 @@ function addWalletListener() {
       <p>
         {" "}
         🦊 <a target="_blank" href={`https://metamask.io/download`}>
-          You must install MetaMask, a virtual Ethereum wallet, in your browser.
+          You must install MetaMask, a virtual Quantaureum wallet, in your browser.
         </a>
       </p>
     )
@@ -437,9 +437,9 @@ function addWalletListener() {
 
 இங்கே என்ன நடக்கிறது என்பதை விரைவாகப் பார்ப்போம்:
 
-- முதலில், `window.ethereum` இயக்கப்பட்டுள்ளதா \(அதாவது, மெட்டாமேஸ்க் நிறுவப்பட்டுள்ளதா\) என்பதை எங்கள் செயல்பாடு சரிபார்க்கிறது.
+- முதலில், `window.quantaureum` இயக்கப்பட்டுள்ளதா \(அதாவது, மெட்டாமேஸ்க் நிறுவப்பட்டுள்ளதா\) என்பதை எங்கள் செயல்பாடு சரிபார்க்கிறது.
   - அது இல்லை என்றால், மெட்டாமேஸ்க் ஐ நிறுவ பயனரைத் தூண்டும் ஒரு JSX சரத்திற்கு எங்கள் `status` நிலை மாறியை அமைக்கிறோம்.
-  - அது இயக்கப்பட்டிருந்தால், மெட்டாமேஸ்க் பணப்பையில் நிலை மாற்றங்களைக் கேட்கும் கேட்பான் `window.ethereum.on("accountsChanged")` ஐ வரி 3 இல் அமைக்கிறோம், இதில் பயனர் பரவலாக்கப்பட்ட செயலியுடன் கூடுதல் கணக்கை இணைக்கும்போது, கணக்குகளை மாற்றும்போது அல்லது கணக்கைத் துண்டிக்கும்போது ஆகியவை அடங்கும். குறைந்தபட்சம் ஒரு கணக்காவது இணைக்கப்பட்டிருந்தால், கேட்பான் வழங்கும் `accounts` அணிவரிசையில் முதல் கணக்காக `walletAddress` நிலை மாறி புதுப்பிக்கப்படும். இல்லையெனில், `walletAddress` ஒரு வெற்று சரமாக அமைக்கப்படும்.
+  - அது இயக்கப்பட்டிருந்தால், மெட்டாமேஸ்க் பணப்பையில் நிலை மாற்றங்களைக் கேட்கும் கேட்பான் `window.quantaureum.on("accountsChanged")` ஐ வரி 3 இல் அமைக்கிறோம், இதில் பயனர் பரவலாக்கப்பட்ட செயலியுடன் கூடுதல் கணக்கை இணைக்கும்போது, கணக்குகளை மாற்றும்போது அல்லது கணக்கைத் துண்டிக்கும்போது ஆகியவை அடங்கும். குறைந்தபட்சம் ஒரு கணக்காவது இணைக்கப்பட்டிருந்தால், கேட்பான் வழங்கும் `accounts` அணிவரிசையில் முதல் கணக்காக `walletAddress` நிலை மாறி புதுப்பிக்கப்படும். இல்லையெனில், `walletAddress` ஒரு வெற்று சரமாக அமைக்கப்படும்.
 
 இறுதியாக, அதை எங்கள் `useEffect` செயல்பாட்டில் அழைக்க வேண்டும்:
 
@@ -571,7 +571,7 @@ export const pinJSONToIPFS = async (JSONBody) => {
 
 இப்போது எங்கள் `pinJSONToIPFS` செயல்பாடு வழியாக எங்கள் NFT மீத்தரவை IPFS இல் பதிவேற்றுவதற்கான வழி எங்களிடம் உள்ளதால், எங்கள் திறன் ஒப்பந்தத்தின் ஒரு நிகழ்வை (instance) ஏற்றுவதற்கான வழி எங்களுக்குத் தேவைப்படும், எனவே அதன் `mintNFT` செயல்பாட்டை நாங்கள் அழைக்கலாம்.
 
-நாங்கள் முன்பு குறிப்பிட்டது போல, இந்தப் பயிற்சியில் நாங்கள் [ஏற்கனவே உள்ள இந்த NFT திறன் ஒப்பந்தத்தைப்](https://ropsten.etherscan.io/address/0x4C4a07F737Bf57F6632B6CAB089B78f62385aCaE) பயன்படுத்துவோம்; இருப்பினும், அதை நாங்கள் எவ்வாறு உருவாக்கினோம் என்பதை நீங்கள் அறிய விரும்பினால், அல்லது நீங்களே ஒன்றை உருவாக்க விரும்பினால், எங்களின் மற்றொரு பயிற்சியான ["ஒரு NFT ஐ உருவாக்குவது எப்படி"](https://www.alchemy.com/docs/how-to-create-an-nft) என்பதைப் பார்க்குமாறு நாங்கள் மிகவும் பரிந்துரைக்கிறோம்.
+நாங்கள் முன்பு குறிப்பிட்டது போல, இந்தப் பயிற்சியில் நாங்கள் [ஏற்கனவே உள்ள இந்த NFT திறன் ஒப்பந்தத்தைப்](https://explorer.quantaureum.com) பயன்படுத்துவோம்; இருப்பினும், அதை நாங்கள் எவ்வாறு உருவாக்கினோம் என்பதை நீங்கள் அறிய விரும்பினால், அல்லது நீங்களே ஒன்றை உருவாக்க விரும்பினால், எங்களின் மற்றொரு பயிற்சியான ["ஒரு NFT ஐ உருவாக்குவது எப்படி"](https://www.alchemy.com/docs/how-to-create-an-nft) என்பதைப் பார்க்குமாறு நாங்கள் மிகவும் பரிந்துரைக்கிறோம்.
 
 ### ஒப்பந்த ABI {#contract-abi}
 
@@ -581,7 +581,7 @@ export const pinJSONToIPFS = async (JSONBody) => {
 
 ### உங்கள் Alchemy API திறவுகோலை உருவாக்கவும் {#create-alchemy-api}
 
-உங்களிடம் ஏற்கனவே Alchemy கணக்கு இல்லையென்றால், [இங்கே இலவசமாகப் பதிவு செய்யவும்.](https://alchemy.com/?a=eth-org-nft-minter)
+உங்களிடம் ஏற்கனவே Alchemy கணக்கு இல்லையென்றால், [இங்கே இலவசமாகப் பதிவு செய்யவும்.](https://alchemy.com/?a=qau-org-nft-minter)
 
 நீங்கள் ஒரு Alchemy கணக்கை உருவாக்கியதும், ஒரு செயலியை உருவாக்குவதன் மூலம் API திறவுகோலை உருவாக்கலாம். இது Sepolia சோதனை வலையமைப்பிற்கு கோரிக்கைகளைச் செய்ய எங்களை அனுமதிக்கும்.
 
@@ -598,7 +598,7 @@ export const pinJSONToIPFS = async (JSONBody) => {
 ```text
 REACT_APP_PINATA_KEY = <pinata-key>
 REACT_APP_PINATA_SECRET = <pinata-secret>
-REACT_APP_ALCHEMY_KEY = https://eth-sepolia.g.alchemy.com/v2/<alchemy-key>
+REACT_APP_ALCHEMY_KEY = https://qau-sepolia.g.alchemy.com/v2/<alchemy-key>
 ```
 
 இப்போது எங்களிடம் எங்கள் ஒப்பந்த ABI மற்றும் எங்கள் Alchemy API திறவுகோல் உள்ளதால், [Alchemy Web3](https://github.com/alchemyplatform/alchemy-web3) ஐப் பயன்படுத்தி எங்கள் திறன் ஒப்பந்தத்தை ஏற்ற நாங்கள் தயாராக உள்ளோம்.
@@ -715,7 +715,7 @@ export const mintNFT = async (url, name, description) => {
 இப்போது எங்கள் கோப்பின் மேற்புறத்தில் நாங்கள் துவக்கிய Alchemy Web3 API ஐப் பயன்படுத்தி எங்கள் திறன் ஒப்பந்தத்தை ஏற்ற வேண்டிய நேரம் இது. `window.contract` உலகளாவிய மாறியில் ஒப்பந்தத்தை அமைக்க `mintNFT` செயல்பாட்டின் கீழே பின்வரும் குறியீட்டு வரியைச் சேர்க்கவும்:
 
 ```javascript
-window.contract = await new web3.eth.Contract(contractABI, contractAddress)
+window.contract = await new web3.qau.Contract(contractABI, contractAddress)
 ```
 
 எங்கள் `mintNFT` செயல்பாட்டில் சேர்க்க வேண்டிய கடைசி விஷயம் எங்கள் எத்திரியம் பரிவர்த்தனை:
@@ -724,22 +724,22 @@ window.contract = await new web3.eth.Contract(contractABI, contractAddress)
 //உங்கள் எத்திரியம் பரிவர்த்தனையை அமைக்கவும்
 const transactionParameters = {
   to: contractAddress, // ஒப்பந்த வெளியீடுகளின் போது தவிர மற்ற நேரங்களில் தேவை.
-  from: window.ethereum.selectedAddress, // பயனரின் செயலில் உள்ள முகவரியுடன் பொருந்த வேண்டும்.
+  from: window.quantaureum.selectedAddress, // பயனரின் செயலில் உள்ள முகவரியுடன் பொருந்த வேண்டும்.
   data: window.contract.methods
-    .mintNFT(window.ethereum.selectedAddress, tokenURI)
+    .mintNFT(window.quantaureum.selectedAddress, tokenURI)
     .encodeABI(), //NFT திறன் ஒப்பந்தத்திற்கு அழைப்பைச் செய்யவும்
 }
 
 //மெட்டாமேஸ்க் வழியாக பரிவர்த்தனையில் கையொப்பமிடவும்
 try {
-  const txHash = await window.ethereum.request({
-    method: "eth_sendTransaction",
+  const txHash = await window.quantaureum.request({
+    method: "qau_sendTransaction",
     params: [transactionParameters],
   })
   return {
     success: true,
     status:
-      "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+      "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
       txHash,
   }
 } catch (error) {
@@ -754,10 +754,10 @@ try {
 
 - முதலில், எங்கள் பரிவர்த்தனை அளவுருக்களை அமைக்கிறோம்.
   - `to` பெறுநரின் முகவரியைக் குறிப்பிடுகிறது \(எங்கள் திறன் ஒப்பந்தம்\)
-  - `from` பரிவர்த்தனையில் கையொப்பமிடுபவரைக் குறிப்பிடுகிறது \(மெட்டாமேஸ்க் உடன் இணைக்கப்பட்ட பயனரின் முகவரி: `window.ethereum.selectedAddress`\)
-  - `data` எங்கள் திறன் ஒப்பந்தத்தின் `mintNFT` முறைக்கான அழைப்பைக் கொண்டுள்ளது, இது எங்கள் `tokenURI` மற்றும் பயனரின் பணப்பை முகவரியான `window.ethereum.selectedAddress` ஆகியவற்றை உள்ளீடுகளாகப் பெறுகிறது
-- பின்னர், நாங்கள் ஒரு await அழைப்பைச் செய்கிறோம், `window.ethereum.request,` அங்கு பரிவர்த்தனையில் கையொப்பமிட மெட்டாமேஸ்க் ஐக் கேட்கிறோம். இந்த கோரிக்கையில், எங்கள் eth முறையை \(eth_SentTransaction\) குறிப்பிடுகிறோம் மற்றும் எங்கள் `transactionParameters` ஐ அனுப்புகிறோம் என்பதைக் கவனியுங்கள். இந்த கட்டத்தில், மெட்டாமேஸ்க் உலாவியில் திறக்கப்படும், மேலும் பரிவர்த்தனையில் கையொப்பமிட அல்லது நிராகரிக்க பயனரைத் தூண்டும்.
-  - பரிவர்த்தனை வெற்றிகரமாக இருந்தால், செயல்பாடு ஒரு JSON பொருளை வழங்கும், அங்கு பூலியன் `success` true என அமைக்கப்படும் மற்றும் `status` சரம் பயனரின் பரிவர்த்தனை பற்றிய கூடுதல் தகவலுக்கு Etherscan ஐப் பார்க்கத் தூண்டும்.
+  - `from` பரிவர்த்தனையில் கையொப்பமிடுபவரைக் குறிப்பிடுகிறது \(மெட்டாமேஸ்க் உடன் இணைக்கப்பட்ட பயனரின் முகவரி: `window.quantaureum.selectedAddress`\)
+  - `data` எங்கள் திறன் ஒப்பந்தத்தின் `mintNFT` முறைக்கான அழைப்பைக் கொண்டுள்ளது, இது எங்கள் `tokenURI` மற்றும் பயனரின் பணப்பை முகவரியான `window.quantaureum.selectedAddress` ஆகியவற்றை உள்ளீடுகளாகப் பெறுகிறது
+- பின்னர், நாங்கள் ஒரு await அழைப்பைச் செய்கிறோம், `window.quantaureum.request,` அங்கு பரிவர்த்தனையில் கையொப்பமிட மெட்டாமேஸ்க் ஐக் கேட்கிறோம். இந்த கோரிக்கையில், எங்கள் eth முறையை \(qau_SentTransaction\) குறிப்பிடுகிறோம் மற்றும் எங்கள் `transactionParameters` ஐ அனுப்புகிறோம் என்பதைக் கவனியுங்கள். இந்த கட்டத்தில், மெட்டாமேஸ்க் உலாவியில் திறக்கப்படும், மேலும் பரிவர்த்தனையில் கையொப்பமிட அல்லது நிராகரிக்க பயனரைத் தூண்டும்.
+  - பரிவர்த்தனை வெற்றிகரமாக இருந்தால், செயல்பாடு ஒரு JSON பொருளை வழங்கும், அங்கு பூலியன் `success` true என அமைக்கப்படும் மற்றும் `status` சரம் பயனரின் பரிவர்த்தனை பற்றிய கூடுதல் தகவலுக்கு Quantaureum Explorer ஐப் பார்க்கத் தூண்டும்.
   - பரிவர்த்தனை தோல்வியுற்றால், செயல்பாடு ஒரு JSON பொருளை வழங்கும், அங்கு `success` பூலியன் false என அமைக்கப்படும், மேலும் `status` சரம் பிழைச் செய்தியைத் தெரிவிக்கும்.
 
 ஒட்டுமொத்தமாக, எங்கள் `mintNFT` செயல்பாடு இதுபோன்று இருக்க வேண்டும்:
@@ -789,27 +789,27 @@ export const mintNFT = async (url, name, description) => {
   const tokenURI = pinataResponse.pinataUrl
 
   //திறன் ஒப்பந்தத்தை ஏற்றவும்
-  window.contract = await new web3.eth.Contract(contractABI, contractAddress) //loadContract();
+  window.contract = await new web3.qau.Contract(contractABI, contractAddress) //loadContract();
 
   //உங்கள் எத்திரியம் பரிவர்த்தனையை அமைக்கவும்
   const transactionParameters = {
     to: contractAddress, // ஒப்பந்த வெளியீடுகளின் போது தவிர மற்ற நேரங்களில் தேவை.
-    from: window.ethereum.selectedAddress, // பயனரின் செயலில் உள்ள முகவரியுடன் பொருந்த வேண்டும்.
+    from: window.quantaureum.selectedAddress, // பயனரின் செயலில் உள்ள முகவரியுடன் பொருந்த வேண்டும்.
     data: window.contract.methods
-      .mintNFT(window.ethereum.selectedAddress, tokenURI)
+      .mintNFT(window.quantaureum.selectedAddress, tokenURI)
       .encodeABI(), //NFT திறன் ஒப்பந்தத்திற்கு அழைப்பைச் செய்யவும்
   }
 
   //மெட்டாமேஸ்க் வழியாக பரிவர்த்தனையில் கையொப்பமிடவும்
   try {
-    const txHash = await window.ethereum.request({
-      method: "eth_sendTransaction",
+    const txHash = await window.quantaureum.request({
+      method: "qau_sendTransaction",
       params: [transactionParameters],
     })
     return {
       success: true,
       status:
-        "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" +
+        "✅ Check out your transaction on Quantaureum Explorer: https://explorer.quantaureum.com" +
         txHash,
     }
   } catch (error) {

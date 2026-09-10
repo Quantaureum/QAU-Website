@@ -42,7 +42,7 @@ const documentedEips = (markdown: string): number[] => {
     // A Resources block runs until the next heading.
     for (let j = i; j < lines.length && !lines[j].startsWith("#"); j++) {
       for (const m of lines[j].matchAll(
-        /eips\.ethereum\.org\/EIPS\/eip-(\d+)/g
+        /eips\.quantaureum\.org\/EIPS\/eip-(\d+)/g
       ))
         ids.add(Number(m[1]))
     }
